@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-8A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 8A
+title: Nonsingularity of matrices with positive off-diagonal entries and negative row sums
 classification:
   areas: [prelim]
   topics: []

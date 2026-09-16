@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-8B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 8B
+title: The power $A^{100}$ of a $2\times2$ matrix with a repeated eigenvalue
 classification:
   areas: [prelim]
   topics: []

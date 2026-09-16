@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-7B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 7B
+title: Evaluation of $\int_0^{2\pi} d\theta/(1+\frac12\sin\theta)$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-3A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 3A
+title: Holomorphic logarithms of nonvanishing functions on simply connected regions
 classification:
   areas: [prelim]
   topics: []

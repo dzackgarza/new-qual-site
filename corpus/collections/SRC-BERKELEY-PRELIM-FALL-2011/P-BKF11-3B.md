@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-3B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 3B
+title: The automorphism group of the unit disk acts transitively
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-6A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 6A
+title: Centerless groups have centerless automorphism groups
 classification:
   areas: [prelim]
   topics: []

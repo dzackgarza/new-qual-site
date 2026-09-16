@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-7A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 7A
+title: Laurent expansion of $1/(1+z)+1/(z^2-9)$ on $1<\lvert z\rvert<3$
 classification:
   areas: [prelim]
   topics: []

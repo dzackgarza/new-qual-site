@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-6B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 6B
+title: Groups of exponent $2$ are abelian but groups of exponent $3$ need not be
 classification:
   areas: [prelim]
   topics: []

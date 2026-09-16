@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-1A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 1A
+title: Volume of the intersection of two perpendicular unit cylinders
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-2A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 2A
+title: An irreducible polynomial whose roots are closed under squaring divides $x^n-1$
 classification:
   areas: [prelim]
   topics: []

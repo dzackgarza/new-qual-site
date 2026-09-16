@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-2B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 2B
+title: When $k[x]/(x^4+6x-12)$ is a field for $k=\mathbb C,\mathbb R,\mathbb Q,\mathbb F_{2011^2}$
 classification:
   areas: [prelim]
   topics: []

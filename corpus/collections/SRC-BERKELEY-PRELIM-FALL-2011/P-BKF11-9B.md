@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-9B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 9B
+title: Uniform convergence of inverses of uniformly convergent bijections
 classification:
   areas: [prelim]
   topics: []

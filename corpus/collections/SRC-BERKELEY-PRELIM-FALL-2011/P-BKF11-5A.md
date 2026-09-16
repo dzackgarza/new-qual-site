@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-5A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 5A
+title: Subseries sums fill $(0,L)$ when each term is at most the tail sum
 classification:
   areas: [prelim]
   topics: []

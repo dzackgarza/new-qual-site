@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-9A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 9A
+title: Power series coefficients of the Bessel function $J_1$
 classification:
   areas: [prelim]
   topics: []

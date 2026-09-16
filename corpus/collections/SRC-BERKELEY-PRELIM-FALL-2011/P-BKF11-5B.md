@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-5B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 5B
+title: Continuous images of compact metric spaces are closed
 classification:
   areas: [prelim]
   topics: []

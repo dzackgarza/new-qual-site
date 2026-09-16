@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-1B
 kind: problem
-title: Berkeley Fall 2011 prelim problem 1B
+title: Convergence of $\sum n^a(\log n)^b$
 classification:
   areas: [prelim]
   topics: []

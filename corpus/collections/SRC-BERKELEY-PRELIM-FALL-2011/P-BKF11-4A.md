@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF11-4A
 kind: problem
-title: Berkeley Fall 2011 prelim problem 4A
+title: Polynomials representing evaluation at $1$ are orthogonal for the weight $1-x$
 classification:
   areas: [prelim]
   topics: []
