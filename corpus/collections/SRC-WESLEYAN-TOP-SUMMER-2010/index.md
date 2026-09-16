@@ -29,7 +29,3 @@ source:
   - {id: P-WESTOP10-II3, comment: Part II Problem 3}
   - {id: P-WESTOP10-II4, comment: Part II Problem 4}
 ---
-
-::: remark
-Part II Problem 4 depends on three identification diagrams that are absent from the retained Markdown extraction. Part II Problems 1(c) and 2(b) also contain source-sensitive text noted on their cards; no inferred repair is substituted.
-:::
