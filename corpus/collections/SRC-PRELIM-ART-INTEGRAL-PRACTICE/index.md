@@ -79,9 +79,6 @@ source:
   area: prelim
 ---
 
-::: remark
-Integral Practice drill sheet; original paper not found.
-
-Tags **Used 2018** / **Used 2019** on this sheet are not exam dates.
-Distinct from `SRC-PRELIM-ART-A2355I`.
+::: {.remark}
+A drill sheet of integrals. The labels "Used 2018" and "Used 2019" on the sheet are not exam dates. The sheet is a different document from the [[SRC-PRELIM-ART-A2355I|UGA sample graduate preliminary exam]].
 :::
