@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-GM7EB
 kind: theorem
-title: Nilpotents Have All Sylows Normal
+title: A finite group is nilpotent if and only if its Sylow subgroups are normal
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-A group $G$ is nilpotent iff all of its Sylow $p\dash$subgroups are normal for every $p$ dividing $\abs{G}$.
+Let $G$ be a finite group.
+Then $G$ is [[D-53JVH|nilpotent]] if and only if, for every prime $p$ dividing $\abs{G}$, the [[D-7TQ2M|Sylow $p$-subgroup]] of $G$ is [[D-EKE4Q|normal]].
 :::

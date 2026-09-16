@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-EF2MZ
 kind: theorem
-title: Sylow 2
+title: 'Sylow''s second theorem: Sylow subgroups are conjugate'
 classification:
   areas:
   - algebra
@@ -14,8 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-All Sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
-\[
-S_p^i, S_p^j \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^i g\inv = S_p^j
-\]
+Let $G$ be a finite group and $p$ a prime.
+Any two [[D-7TQ2M|Sylow $p$-subgroups]] of $G$ are conjugate: if $P,Q\in\Syl_p(G)$, then there exists $g\in G$ with $gPg^{-1}=Q$.
 :::
