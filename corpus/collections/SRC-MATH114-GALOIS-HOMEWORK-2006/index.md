@@ -17,20 +17,32 @@ source:
   sections:
   - name: Problem set 8
     problems:
-    - P-M114-8-01
-    - P-M114-8-02
-    - P-M114-8-03
-    - P-M114-8-04
-    - P-M114-8-05
-    - P-M114-8-06
+    - id: P-M114-8-01
+      comment: Problem set 8, problem 1
+    - id: P-M114-8-02
+      comment: Problem set 8, problem 2
+    - id: P-M114-8-03
+      comment: Problem set 8, problem 3
+    - id: P-M114-8-04
+      comment: Problem set 8, problem 4
+    - id: P-M114-8-05
+      comment: Problem set 8, problem 5
+    - id: P-M114-8-06
+      comment: Problem set 8, problem 6
   - name: Problem set 9
     problems:
-    - P-M114-9-01
-    - P-M114-9-02
-    - P-M114-9-03
-    - P-M114-9-04
-    - P-M114-9-05
-    - P-M114-9-06
+    - id: P-M114-9-01
+      comment: Problem set 9, problem 1
+    - id: P-M114-9-02
+      comment: Problem set 9, problem 2
+    - id: P-M114-9-03
+      comment: Problem set 9, problem 3
+    - id: P-M114-9-04
+      comment: Problem set 9, problem 4
+    - id: P-M114-9-05
+      comment: Problem set 9, problem 5
+    - id: P-M114-9-06
+      comment: Problem set 9, problem 6
   date:
     kind: year
     year: 2006
