@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-OXNTU
 kind: theorem
-title: Mean Value Theorem
+title: Mean value theorem and Cauchy's mean value theorem
 classification:
   areas:
   - real-analysis
@@ -13,19 +13,22 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $f: [a, b] \to \RR$ is continuous on a closed interval and differentiable on $(a, b)$, then there exists $\xi \in [a, b]$ such that 
-\[
-f(b) - f(a) = f'(\xi)(b-a)
-.\]
+::: {.theorem}
+Let $a<b$ and let $f\colon [a, b] \to \RR$ be continuous on $[a,b]$ and differentiable on $(a, b)$.
 
-More generally, if $g: [a,b]\to \RR$ is similarly continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists a $\xi$ with
-\[
-\qty{ f(b) - f(c) } g'(\xi) = \qty{g(b) - g(a)} f'(\xi)
-.\]
-What this means graphically:
+1. There exists $\xi \in (a, b)$ such that
+$$
+f(b) - f(a) = f'(\xi)(b-a).
+$$
 
+2. If $g\colon [a,b]\to \RR$ is also continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $\xi\in(a,b)$ such that
+$$
+\qty{ f(b) - f(a) } g'(\xi) = \qty{g(b) - g(a)} f'(\xi).
+$$
+:::
+
+::: {.remark}
+Geometrically, (2) says that the plane curve $t\mapsto(f(t),g(t))$, $t\in[a,b]$, has a tangent vector $(f'(\xi),g'(\xi))$ at some interior parameter $\xi$ that is parallel to the chord from $(f(a),g(a))$ to $(f(b),g(b))$.
 
 ![](../../assets/figures/2021-11-09_22-20-24.png)
-
 :::
