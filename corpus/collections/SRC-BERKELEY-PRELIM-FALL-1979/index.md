@@ -48,7 +48,3 @@ source:
     term: fall
     year: 1979
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1979. Problems are listed in source order.
-:::
