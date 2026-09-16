@@ -27,12 +27,6 @@ with the projections $\pi_\alpha\colon\varprojlim A_\alpha\to A_\alpha$.
 Inverse limits are left exact: if $0\to A_\alpha\mapsvia{u_\alpha}B_\alpha\mapsvia{v_\alpha}C_\alpha$ is exact for every $\alpha\in I$ and the $u_\alpha$ and $v_\alpha$ commute with the maps of the inverse systems, then the induced sequence $0\to\varprojlim A_\alpha\mapsvia{u}\varprojlim B_\alpha\mapsvia{v}\varprojlim C_\alpha$ is exact.
 :::
 
-::: {.proof}
-The maps $u$ and $v$ act coordinatewise, so $u$ is injective and $v\circ u=0$.
-If $(b_\alpha)\in\varprojlim B_\alpha$ has $v_\alpha(b_\alpha)=0$ for all $\alpha$, then $b_\alpha=u_\alpha(a_\alpha)$ for a unique $a_\alpha\in A_\alpha$.
-For $\alpha\leq\beta$, $u_\alpha(f_{\beta\alpha}(a_\beta))=f_{\beta\alpha}(b_\beta)=b_\alpha=u_\alpha(a_\alpha)$, so injectivity of $u_\alpha$ gives $f_{\beta\alpha}(a_\beta)=a_\alpha$, and $(b_\alpha)=u((a_\alpha))$.
-:::
-
 ::: {.remark}
 For $I=\NN$, write $f_n\colon A_{n+1}\to A_n$ for the bonding maps and define $\delta\colon\prod_nA_n\to\prod_nA_n$ by $\delta((a_n)_n)\coloneqq(a_n-f_n(a_{n+1}))_n$.
 Then $\ker\delta=\varprojlim A_n$, and $\varprojlim^1A_n\coloneqq\coker\delta$.

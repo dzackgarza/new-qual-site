@@ -23,10 +23,6 @@ The $n$-cocycles form the subgroup $Z^n(X;G)\coloneqq\ker\delta^n$.
 An $n$-cochain $\psi\in C^n(X;G)$ is a cocycle if and only if $\psi(b)=0$ for every boundary $b\in\im\del_{n+1}$.
 :::
 
-::: {.proof}
-$\delta^n\psi=\psi\circ\del_{n+1}$ is zero exactly when $\psi$ vanishes on $\im\del_{n+1}$.
-:::
-
 ::: {.remark}
 With $B^n(X;G)\coloneqq\im\delta^{n-1}$ the group of [[D-D2K6Z|coboundaries]], the relation $\delta^n\circ\delta^{n-1}=0$ gives $B^n(X;G)\subseteq Z^n(X;G)$, and the singular cohomology group is $H^n(X;G)=Z^n(X;G)/B^n(X;G)$.
 :::

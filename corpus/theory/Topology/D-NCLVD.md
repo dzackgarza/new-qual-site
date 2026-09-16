@@ -34,10 +34,3 @@ Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$.
 (b) Continuous maps $r\colon X\to A$ with $r\circ\iota=\id_A$ correspond bijectively to continuous maps $\rho\colon X\to X$ with $\rho(X)=A$ and $\rho(a)=a$ for all $a\in A$, via $\rho=\iota\circ r$.
 :::
 
-::: {.proof}
-(a) For $a\in A$, $a=r(\iota(a))$ lies in the image of $r$.
-
-(b) If $r$ is a retraction, then $\rho\coloneqq\iota\circ r$ is continuous, fixes $A$ pointwise, and has image $r(X)=A$ by (a).
-Conversely, if $\rho\colon X\to X$ is continuous with $\rho(X)=A$ and $\rho|_A=\id_A$, then corestricting gives a map $r\colon X\to A$ with $\iota\circ r=\rho$, continuous because $A$ carries the subspace topology, and $r\circ\iota=\id_A$.
-The two constructions are inverse to each other because $\iota$ is injective.
-:::

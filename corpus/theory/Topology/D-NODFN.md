@@ -34,13 +34,6 @@ With the maps $\iota_\alpha$, the direct limit is the [[D-5MX7E|colimit]] of the
 Direct limits over a directed set are exact: if $A_\alpha\mapsvia{u_\alpha}B_\alpha\mapsvia{v_\alpha}C_\alpha$ is an exact sequence for each $\alpha\in I$, and the $u_\alpha$ and $v_\alpha$ commute with the maps of directed systems $(A_\alpha)$, $(B_\alpha)$, $(C_\alpha)$, then the induced sequence $\varinjlim A_\alpha\mapsvia{u}\varinjlim B_\alpha\mapsvia{v}\varinjlim C_\alpha$ is exact.
 :::
 
-::: {.proof}
-Every element of a direct limit is $[x]$ for some $x$ in one term.
-Since $v_\alpha\circ u_\alpha=0$ for every $\alpha$, $v\circ u=0$.
-Let $b\in B_\alpha$ with $v([b])=[v_\alpha(b)]=0$.
-Then $v_\beta(f_{\alpha\beta}(b))=f_{\alpha\beta}(v_\alpha(b))=0$ for some $\beta\geq\alpha$, so exactness at $B_\beta$ gives $a\in A_\beta$ with $u_\beta(a)=f_{\alpha\beta}(b)$, and $[b]=[f_{\alpha\beta}(b)]=u([a])$.
-:::
-
 ::: {.proposition}
 If a CW complex $X$ is the union of a family of subcomplexes $X_\alpha$ directed by inclusion, then the inclusions induce an isomorphism $\varinjlim_\alpha H_n(X_\alpha;G)\cong H_n(X;G)$ for every $n$ and every abelian group $G$ [@Hat02, Prop. 3.33].
 :::
