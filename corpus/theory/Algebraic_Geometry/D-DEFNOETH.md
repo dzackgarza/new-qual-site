@@ -26,6 +26,12 @@ Equivalently, every ideal of $A$ is finitely generated.
 An $A$-module $M$ is Noetherian if its submodules satisfy the same condition.
 :::
 
+::: {.definition title="Noetherian scheme"}
+A scheme $X$ is **locally Noetherian** if it can be covered by open affine subsets $\Spec A_i$ with each $A_i$ a Noetherian ring.
+It is **Noetherian** if it is locally Noetherian and quasicompact, equivalently if it has a finite such cover.
+[@Har10a, §II.3]
+:::
+
 ::: {.remark}
 The Hilbert basis theorem is what makes the condition usable: $A$ Noetherian implies $A[x]$ Noetherian, hence every finitely generated algebra over a field or over $\ZZ$ is Noetherian.
 Quotients and localisations of Noetherian rings are Noetherian; subrings need not be, and infinitely generated polynomial rings such as $k[x_1, x_2, \ldots]$ are not.
