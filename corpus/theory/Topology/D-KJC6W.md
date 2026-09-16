@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-KJC6W
 kind: definition
-title: 'Closed Sets: A set is closed if and only if its complement is open.'
+title: Closed set
 classification:
   areas:
   - topology
@@ -14,11 +14,18 @@ review: draft
 ---
 
 ::: {.definition}
-\envlist
+Let $X$ be a topological space.
+A subset $A\subseteq X$ is \dfn{closed} in $X$ if its complement $X\sm A$ is open in $X$.
+:::
 
-- A set is closed if and only if its complement is open.
+::: {.proposition}
+Let $X$ be a topological space and $A\subseteq X$.
 
-- A set is closed iff it contains all of its limit points.
+(a) $A$ is closed in $X$ if and only if $A$ contains every [[D-Y6JAS|limit point]] of $A$ in $X$.
 
-- A closed set in a subspace: $Y\subset X \implies \cl_{Y}(A) \da \cl_{X}(A)\intersect Y$.
+(b) If $Y\subseteq X$ is a subspace with the [[D-LB2LS|subspace topology]] and $A\subseteq Y$, then $A$ is closed in $Y$ if and only if $A = C\cap Y$ for some closed $C\subseteq X$, and the [[D-ASXW6|closure]] of $A$ in $Y$ is $\cl_Y(A) = \cl_X(A)\cap Y$.
+:::
+
+::: {.concept}
+See [@Mun00, §17, Theorems 17.2 and 17.4 and Corollary 17.7].
 :::
