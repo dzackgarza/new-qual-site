@@ -17,7 +17,7 @@ review: draft
 ---
 
 ::: {.theorem}
-If $X$ is a complete metric space or a locally compact Hausdorff space, then $X$ is a [[D-VFNTY|Baire space]].
+If $X$ is a complete metric space or a locally compact Hausdorff space, then $X$ is a [[D-VFNTY|Baire space]]: the intersection of countably many dense open subsets of $X$ is dense in $X$ [@Mun00].
 :::
 
 ::: {.corollary}

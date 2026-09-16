@@ -49,7 +49,7 @@ $f(x) = \sqrt x$ on $[0, 1]$ is uniformly continuous, being continuous on a comp
 
 [[T-HH3YP]]
 
-[[T-HGDAG]]
+[[FT-6WPJI]]
 
 ## Compactness
 

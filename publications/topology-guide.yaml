@@ -127,7 +127,7 @@ sections:
       - ref: T-PCL4H
       - ref: T-4RLPQ
       - ref: D-SDMMS
-      - ref: T-HGDAG
+      - ref: FT-6WPJI
   - slug: compactness
     title: Compactness
     parent: separation-and-countability
