@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-UHWNM
 kind: proposition
-title: Regularity of measure
+title: Borel measures finite on balls are outer regular by open sets and inner regular by closed sets
 classification:
   areas:
   - real-analysis
@@ -13,9 +13,10 @@ review: draft
 ---
 
 ::: {.proposition}
-If $(X, \mcb, \mu)$ is a Borel measure space where $\mu$ is finite on all balls of finite radius, then for any $E \in \mcb$ and any $\eps>0$,
+Let $X$ be a metric space with Borel $\sigma$-algebra $\mcb$, and let $\mu$ be a measure on $\mcb$ with $\mu(B)<\infty$ for every open ball $B$ of finite radius.
+Then for every $E \in \mcb$ and every $\varepsilon>0$:
 
-- There exists an open set $O$  with $E \subset O$ and $\mu(O\sm E) < \eps$
+- there exists an open set $O\subseteq X$ with $E \subseteq O$ and $\mu(O\setminus E) < \varepsilon$;
 
-- There exists a closed set $F$ with $F\subset E$ and $\mu(E\sm F) < \eps$.
+- there exists a closed set $F\subseteq X$ with $F\subseteq E$ and $\mu(E\setminus F) < \varepsilon$.
 :::
