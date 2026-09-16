@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-4KM4P
 kind: definition
-title: Simple Modules
+title: Simple modules
 classification:
   areas:
   - algebra
@@ -14,6 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-A module $M$ is **simple** iff every submodule $M' \leq M$ is either $0$ or $M$.
-A ring \( R \) is simple if and only if it is simple as an \(R\dash\)module, i.e. there are no nontrivial proper ideals.
+Let $R$ be a ring.
+An $R$-module $M$ is \dfn{simple} if every submodule $M' \leq M$ is either $0$ or $M$.
+A commutative ring $R$ is \dfn{simple} if it is simple as an $R$-module, that is, if its only ideals are $0$ and $R$.
 :::

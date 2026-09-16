@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-4DWC5
 kind: definition
-title: Resolvent of a quartic
+title: Resolvent cubic of a quartic
 classification:
   areas:
   - algebra
@@ -13,24 +13,25 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-If 
-\[
-f(x)=x^{4}+a_{3} x^{3}+a_{2} x^{2}+a_{1} x+a_{0}
-\]
-then define the **resolvent** of $f$ by
-\[
-R_{4}(t)=t^{3}-a_{2} t^{2}+\left(a_{1} a_{3}-4 a_{0}\right) t+4 a_{0} a_{2}-a_{1}^{2}-a_{0} a_{3}{ }^{2}
-.\]
+::: {.definition}
+Let $k$ be a field and let
+$$
+f(x)=x^{4}+a_{3} x^{3}+a_{2} x^{2}+a_{1} x+a_{0} \in k[x].
+$$
+The \dfn{resolvent cubic} of $f$ is
+$$
+R_{4}(t) \coloneqq t^{3}-a_{2} t^{2}+\left(a_{1} a_{3}-4 a_{0}\right) t+4 a_{0} a_{2}-a_{1}^{2}-a_{0} a_{3}^{2} \in k[t].
+$$
+:::
 
-Alternatively, it can be defined in terms of the roots $r_i$:
-\[
-\left(x-\left(r_{1} r_{2}+r_{3} r_{4}\right)\right)\left(x-\left(r_{1} r_{3}+r_{2} r_{4}\right)\right)\left(x-\left(r_{1} r_{4}+r_{2} r_{3}\right)\right)
-.\]
+::: {.proposition}
+Let $f\in k[x]$ be as in the definition, and let $r_1, r_2, r_3, r_4$ be the roots of $f$, with multiplicity, in a splitting field of $f$ over $k$.
+Then
+$$
+R_4(t) = \left(t-\left(r_{1} r_{2}+r_{3} r_{4}\right)\right)\left(t-\left(r_{1} r_{3}+r_{2} r_{4}\right)\right)\left(t-\left(r_{1} r_{4}+r_{2} r_{3}\right)\right).
+$$
+:::
 
-For depressed quartics,
-\[
-f(X)=X^{4}+c X+d \Longrightarrow R_{3}(X)=X^{3}-4 d X-c^{2}
-.\]
-
+::: {.example}
+For $f(x) = x^4 + cx + d$, that is, $a_3 = a_2 = 0$, $a_1 = c$, and $a_0 = d$, the resolvent cubic is $R_4(t) = t^3 - 4dt - c^2$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-4VC6X
 kind: definition
-title: Primitive Polynomials
+title: Primitive polynomials
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-For $R$ a UFD, a polynomial $p\in R[x]$ is **primitive** iff the greatest common divisors of its coefficients is a unit.
+Let $R$ be a [[D-INULL|unique factorization domain]].
+A polynomial $p\in R[x]$ is \dfn{primitive} if a greatest common divisor of its coefficients is a [[D-QQIQZ|unit]].
 :::
