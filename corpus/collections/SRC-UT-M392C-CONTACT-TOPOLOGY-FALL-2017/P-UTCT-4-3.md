@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-4-3
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 4.3
+title: The standard contact form on $S^3$
 classification:
   areas:
   - topology

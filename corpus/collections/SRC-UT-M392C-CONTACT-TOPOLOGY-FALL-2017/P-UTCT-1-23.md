@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-1-23
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 1.23
+title: Homotopy classes of plane fields on the lens space $L(p,q)$
 classification:
   areas:
   - topology

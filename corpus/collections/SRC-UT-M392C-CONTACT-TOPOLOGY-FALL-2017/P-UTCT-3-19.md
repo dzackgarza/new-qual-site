@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-3-19
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 3.19
+title: Half-elliptic and half-hyperbolic singularities on a piecewise graph surface
 classification:
   areas:
   - topology

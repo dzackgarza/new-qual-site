@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-3-15
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 3.15
+title: Generic characteristic foliations satisfy the hypotheses of Giroux's dividing set theorem
 classification:
   areas:
   - topology

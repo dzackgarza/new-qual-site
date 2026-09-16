@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-1-27
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 1.27
+title: Poincaré--Hopf theorem for surfaces with boundary via the relative Euler class
 classification:
   areas:
   - topology

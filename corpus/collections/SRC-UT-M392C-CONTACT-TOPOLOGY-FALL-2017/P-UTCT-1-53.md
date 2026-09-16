@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-1-53
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 1.53
+title: Contactomorphism from the cylindrically symmetric to the standard contact structure on $\mathbb R^3$
 classification:
   areas:
   - topology

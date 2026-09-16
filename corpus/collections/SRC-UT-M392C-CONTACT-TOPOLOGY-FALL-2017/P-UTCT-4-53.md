@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-4-53
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 4.53
+title: Positive and negative Hopf band open books of $S^3$ and their contact structures
 classification:
   areas:
   - topology

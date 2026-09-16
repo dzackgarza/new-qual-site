@@ -18,21 +18,30 @@ source:
   sections:
   - name: Chapter 1
     problems:
-    - P-UTCT-1-5
-    - P-UTCT-1-23
-    - P-UTCT-1-27
-    - P-UTCT-1-53
+    - id: P-UTCT-1-5
+      comment: Exercise 1.5
+    - id: P-UTCT-1-23
+      comment: Exercise 1.23
+    - id: P-UTCT-1-27
+      comment: Exercise 1.27
+    - id: P-UTCT-1-53
+      comment: Exercise 1.53
   - name: Chapter 2
     problems:
-    - P-UTCT-2-24
+    - id: P-UTCT-2-24
+      comment: Exercise 2.24
   - name: Chapter 3
     problems:
-    - P-UTCT-3-15
-    - P-UTCT-3-19
+    - id: P-UTCT-3-15
+      comment: Exercise 3.15
+    - id: P-UTCT-3-19
+      comment: Exercise 3.19
   - name: Chapter 4
     problems:
-    - P-UTCT-4-3
-    - P-UTCT-4-53
+    - id: P-UTCT-4-3
+      comment: Exercise 4.3
+    - id: P-UTCT-4-53
+      comment: Exercise 4.53
   date:
     kind: academic-term
     term: fall

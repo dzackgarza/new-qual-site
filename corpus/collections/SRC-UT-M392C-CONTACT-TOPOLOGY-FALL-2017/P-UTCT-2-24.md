@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-2-24
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 2.24
+title: Characteristic foliation of $dz+a\,dx+b\,dy$ on the $xy$-plane
 classification:
   areas:
   - topology
