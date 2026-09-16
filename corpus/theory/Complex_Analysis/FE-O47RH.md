@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FE-O47RH
 kind: example
-title: Example of a conformal map that is not injective.
+title: $e^z$ is conformal on $\CC$ but not injective
 prompts:
 - Give a conformal map that is not injective.
 classification:
@@ -16,7 +16,8 @@ review: draft
 ---
 
 ::: {.example}
-$$z\mapsto e^z$$
-
-Not injective because it is periodic, not surjective because it's never zero.
+A [[FD-GK7JE|conformal map]] need not be injective.
+The map $f\colon\CC\to\CC$, $f(z)=e^z$, is holomorphic with $f'(z)=e^z\neq0$ for all $z$, so it is conformal on $\CC$.
+It is not injective because it is periodic: $e^{z+2\pi i}=e^z$.
+It is also not surjective, since $e^z\neq0$ for all $z\in\CC$.
 :::
