@@ -40,7 +40,3 @@ source:
     term: spring
     year: 1994
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Spring 1994. Problems are listed in paper order.
-:::
