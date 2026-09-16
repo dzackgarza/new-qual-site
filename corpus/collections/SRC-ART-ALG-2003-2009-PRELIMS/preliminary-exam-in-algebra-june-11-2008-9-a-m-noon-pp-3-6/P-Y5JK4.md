@@ -6,7 +6,7 @@ title: Every Euclidean domain is a principal ideal domain, and $\mathbb{Z}[i]/(\
   has representatives of norm less than $N(\alpha)$ and is finite
 classification:
   areas:
-  - prelim
+  - algebra
   topics:
   - Euclidean Domains
   - Principal Ideal Domains
