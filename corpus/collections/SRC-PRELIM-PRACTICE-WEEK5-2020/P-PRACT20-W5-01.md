@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-01
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 1"
+title: A unique element of order $2$ is central
 classification:
   areas:
   - algebra

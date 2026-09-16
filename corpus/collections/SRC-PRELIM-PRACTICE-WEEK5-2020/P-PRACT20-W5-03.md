@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-03
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 3"
+title: $C[0,1]$ is not an integral domain
 classification:
   areas:
   - algebra

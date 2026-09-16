@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-28
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 28"
+title: Contour integral of $\sin z-\frac{\cos z}{z-\pi/4}$ around $|z|=\pi$
 classification:
   areas:
   - complex-analysis

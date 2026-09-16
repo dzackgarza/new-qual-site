@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-19
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 19"
+title: The region $|z-a|<|z-b|$ in $\mathbb C$
 classification:
   areas:
   - complex-analysis

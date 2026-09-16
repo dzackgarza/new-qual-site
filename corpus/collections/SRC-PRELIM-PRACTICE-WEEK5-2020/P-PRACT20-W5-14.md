@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-14
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 14"
+title: Which of $p$, $p+q$, $pq$, $p^q$, $q^p$ lie in a proper subgroup of $\mathbb Z$
 classification:
   areas:
   - algebra

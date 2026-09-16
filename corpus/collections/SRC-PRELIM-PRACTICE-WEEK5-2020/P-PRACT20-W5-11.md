@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-11
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 11"
+title: Kernels of homomorphisms are normal subgroups
 classification:
   areas:
   - algebra

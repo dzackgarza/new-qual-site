@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-24
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 24"
+title: Harmonic conjugate of $2x+3y$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-35
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 35"
+title: Entire functions of linear growth are linear polynomials
 classification:
   areas:
   - complex-analysis

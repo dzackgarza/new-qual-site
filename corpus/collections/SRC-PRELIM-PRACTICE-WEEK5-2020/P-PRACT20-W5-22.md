@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-22
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 22"
+title: Computing $(1+i)^{10}$
 classification:
   areas:
   - complex-analysis

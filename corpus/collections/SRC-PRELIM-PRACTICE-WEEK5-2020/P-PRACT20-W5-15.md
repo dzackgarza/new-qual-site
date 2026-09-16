@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-15
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 15"
+title: Group and ring endomorphisms of $\mathbb Z$
 classification:
   areas:
   - algebra

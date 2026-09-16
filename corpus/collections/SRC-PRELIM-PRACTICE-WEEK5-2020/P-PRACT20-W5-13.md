@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-13
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 13"
+title: Boolean rings are commutative
 classification:
   areas:
   - algebra

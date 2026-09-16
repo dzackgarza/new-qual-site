@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-12
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 12"
+title: A ring with exactly two right ideals is a division ring
 classification:
   areas:
   - algebra

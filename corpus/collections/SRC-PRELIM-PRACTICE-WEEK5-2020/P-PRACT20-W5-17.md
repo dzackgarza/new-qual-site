@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-17
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 17"
+title: A cancellative semigroup with finite cyclic subsemigroups is a group
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-29
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 29"
+title: Contour integral of $\frac{\cosh\pi z}{z(z^2+1)}$ around $|z|=2$
 classification:
   areas:
   - complex-analysis

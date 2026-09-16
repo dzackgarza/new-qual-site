@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-06
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 6"
+title: Abelian groups of order $16$ and exponent dividing $4$
 classification:
   areas:
   - algebra

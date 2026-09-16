@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-26
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 26"
+title: Contour integral of a polynomial around a circle
 classification:
   areas:
   - complex-analysis

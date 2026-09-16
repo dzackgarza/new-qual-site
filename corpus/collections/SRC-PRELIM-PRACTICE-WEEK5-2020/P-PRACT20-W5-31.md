@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-31
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 31"
+title: The integral $\int_0^{2\pi}\frac{dx}{10-8\cos x}$ by residues
 classification:
   areas:
   - complex-analysis

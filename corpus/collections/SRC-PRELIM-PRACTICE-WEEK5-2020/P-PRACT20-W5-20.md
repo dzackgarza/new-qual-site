@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-20
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 20"
+title: A polynomial in the primitive fifth root of unity $e^{2\pi i/5}$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-25
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 25"
+title: Entire $f$, $g$ with $e^f+e^g=1$ are constant
 classification:
   areas:
   - complex-analysis

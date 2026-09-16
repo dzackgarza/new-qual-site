@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-09
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 9"
+title: Possible orders of a group with an element of order $7$ and no involution
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-04
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 4"
+title: Endomorphisms of the group $\{1,i,-1,-i\}$
 classification:
   areas:
   - algebra

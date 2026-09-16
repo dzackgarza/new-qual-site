@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-21
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 21"
+title: Nonexistence of $\lim_{z\to0}\bar z^2/z^2$
 classification:
   areas:
   - complex-analysis

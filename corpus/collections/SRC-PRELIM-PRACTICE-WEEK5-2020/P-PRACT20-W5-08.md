@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-08
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 8"
+title: Automorphism and inner automorphism groups
 classification:
   areas:
   - algebra
