@@ -14,7 +14,7 @@ classification:
   - Point-Set Topology
 relations:
 - kind: variant-of
-  target: FD-QCNG5
+  target: D-EMJTU
 review: draft
 ---
 

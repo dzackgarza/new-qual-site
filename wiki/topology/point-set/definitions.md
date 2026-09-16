@@ -87,8 +87,6 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-EMJTU]]
 
-[[FD-QCNG5]] [[FD-TUK7H]]
-
 [[D-CTGON]]
 
 [[D-HQSEQ]] [[D-TNBFZ]]

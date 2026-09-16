@@ -3,6 +3,9 @@ schema: qual/card@1
 id: D-EMJTU
 kind: definition
 title: Neighborhood basis
+prompts:
+- What is a neighborhood basis at a point $x$?
+- What collection of open sets forms a neighborhood basis at $x$?
 classification:
   areas:
   - topology
