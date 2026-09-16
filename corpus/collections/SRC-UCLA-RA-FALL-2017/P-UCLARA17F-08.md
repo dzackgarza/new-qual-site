@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-08
 kind: problem
-title: UCLA analysis Fall 2017, Problem 8
+title: Uniformly continuous harmonic functions on the disk are Poisson integrals
 classification:
   areas:
   - real-analysis

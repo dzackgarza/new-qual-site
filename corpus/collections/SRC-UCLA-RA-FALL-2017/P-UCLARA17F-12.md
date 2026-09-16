@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-12
 kind: problem
-title: UCLA analysis Fall 2017, Problem 12
+title: Continuous $h$ with $g\circ h$ holomorphic is holomorphic
 classification:
   areas:
   - real-analysis

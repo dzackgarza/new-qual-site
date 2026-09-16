@@ -17,18 +17,30 @@ source:
   institution: ucla
   area: real-analysis
   problems:
-  - P-UCLARA17F-01
-  - P-UCLARA17F-02
-  - P-UCLARA17F-03
-  - P-UCLARA17F-04
-  - P-UCLARA17F-05
-  - P-UCLARA17F-06
-  - P-UCLARA17F-07
-  - P-UCLARA17F-08
-  - P-UCLARA17F-09
-  - P-UCLARA17F-10
-  - P-UCLARA17F-11
-  - P-UCLARA17F-12
+  - id: P-UCLARA17F-01
+    comment: Problem 1
+  - id: P-UCLARA17F-02
+    comment: Problem 2
+  - id: P-UCLARA17F-03
+    comment: Problem 3
+  - id: P-UCLARA17F-04
+    comment: Problem 4
+  - id: P-UCLARA17F-05
+    comment: Problem 5
+  - id: P-UCLARA17F-06
+    comment: Problem 6
+  - id: P-UCLARA17F-07
+    comment: Problem 7
+  - id: P-UCLARA17F-08
+    comment: Problem 8
+  - id: P-UCLARA17F-09
+    comment: Problem 9
+  - id: P-UCLARA17F-10
+    comment: Problem 10
+  - id: P-UCLARA17F-11
+    comment: Problem 11
+  - id: P-UCLARA17F-12
+    comment: Problem 12
   date:
     kind: academic-term
     term: fall

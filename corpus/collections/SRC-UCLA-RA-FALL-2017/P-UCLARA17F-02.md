@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-02
 kind: problem
-title: UCLA analysis Fall 2017, Problem 2
+title: Bounded almost everywhere convergent sequences in $L^2([0,1])$ converge weakly
 classification:
   areas:
   - real-analysis

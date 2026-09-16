@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-03
 kind: problem
-title: UCLA analysis Fall 2017, Problem 3
+title: Uniform convergence of distribution functions implies weak convergence of measures
 classification:
   areas:
   - real-analysis

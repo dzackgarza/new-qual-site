@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-09
 kind: problem
-title: UCLA analysis Fall 2017, Problem 9
+title: Holomorphic families of injective maps of $\mathbb C$ are affine
 classification:
   areas:
   - real-analysis

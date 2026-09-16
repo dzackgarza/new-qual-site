@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-07
 kind: problem
-title: UCLA analysis Fall 2017, Problem 7
+title: Meromorphic function with zeros at $\mathbb Z$ and poles at $\mathbb Z+\frac13$
 classification:
   areas:
   - real-analysis

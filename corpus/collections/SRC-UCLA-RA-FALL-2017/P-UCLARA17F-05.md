@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-05
 kind: problem
-title: UCLA analysis Fall 2017, Problem 5
+title: Bounded functions invariant under $x\mapsto x+1$ and $x\mapsto 2x$ are constant
 classification:
   areas:
   - real-analysis

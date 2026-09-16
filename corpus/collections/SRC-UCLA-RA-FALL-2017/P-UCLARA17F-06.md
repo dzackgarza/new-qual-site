@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-06
 kind: problem
-title: UCLA analysis Fall 2017, Problem 6
+title: $L^2$ boundedness of the truncated Riesz potential $\int_{|w-z|\le1}\frac{|f(w)|}{|w-z|}\,dA(w)$
 classification:
   areas:
   - real-analysis

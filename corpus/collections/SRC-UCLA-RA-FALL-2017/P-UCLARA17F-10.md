@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-10
 kind: problem
-title: UCLA analysis Fall 2017, Problem 10
+title: Subharmonicity of $\sum|f_n|^2$ for holomorphic $f_n$
 classification:
   areas:
   - real-analysis

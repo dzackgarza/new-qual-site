@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-04
 kind: problem
-title: UCLA analysis Fall 2017, Problem 4
+title: A bounded functional on $C([-1,1])$ mapping the unit ball onto an open set
 classification:
   areas:
   - real-analysis

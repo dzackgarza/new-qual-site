@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA17F-11
 kind: problem
-title: UCLA analysis Fall 2017, Problem 11
+title: Normalized univalent maps of the disk omit a point of modulus at most 1
 classification:
   areas:
   - real-analysis
