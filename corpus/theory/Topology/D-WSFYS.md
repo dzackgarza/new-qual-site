@@ -27,15 +27,10 @@ where $A\ast B$ is the [[D-JDDCP|free product]] and $N$ is the normal subgroup o
 Together with the homomorphisms $A\to A\ast_C B$ and $B\to A\ast_C B$ induced by the inclusions of $A$ and $B$ into $A\ast B$, the group $A\ast_C B$ is the [[D-5S7PK|pushout]] of $A\xleftarrow{i} C\xrightarrow{j} B$ in $\Grp$.
 :::
 
-::: {.theorem title="van Kampen"}
-Let $X = U_1 \union U_2$, where $U_1$ and $U_2$ are open and path-connected, $U_1\intersect U_2$ is path-connected, and $x_0\in U_1\intersect U_2$.
-Let $i\colon\pi_1(U_1\intersect U_2, x_0)\to\pi_1(U_1, x_0)$ and $j\colon\pi_1(U_1\intersect U_2, x_0)\to\pi_1(U_2, x_0)$ be induced by the inclusions.
-Then the inclusions $U_1, U_2\injects X$ induce an isomorphism
-$$
-\pi_1(U_1, x_0) \ast_{\pi_1(U_1 \intersect U_2, x_0)} \pi_1(U_2, x_0) \cong \pi_1(X, x_0).
-$$
+::: {.remark}
+By [[T-BTPU4|van Kampen's theorem]], if $X = U_1\union U_2$ with $U_1$, $U_2$ and $U_1\intersect U_2$ open and path-connected, then $\pi_1(X)$ is the free product of $\pi_1(U_1)$ and $\pi_1(U_2)$ amalgamated over $\pi_1(U_1\intersect U_2)$ [@Hat02, Theorem 1.20, p. 43].
 :::
 
 ::: {.concept}
-[@Hat02, §1.B, p. 92]; van Kampen's theorem is [@Hat02, §1.2, Theorem 1.20, p. 43].
+[@Hat02, §1.B, p. 92].
 :::
