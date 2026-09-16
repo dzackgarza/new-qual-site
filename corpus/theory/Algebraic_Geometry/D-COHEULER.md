@@ -31,6 +31,17 @@ a finite sum.
 The Hilbert polynomial of $\mcf$ is the unique $P \in \QQ[z]$ with $P(n) = \chi(\mcf(n))$ for all $n$.
 :::
 
+::: {.definition title="Arithmetic and geometric genus"}
+For $X$ projective over a field of dimension $n$, the **arithmetic genus** is $p_a(X) \da (-1)^n \qty(\chi(\OO_X) - 1)$, so $p_a(X) = 1 - \chi(\OO_X)$ for a curve.
+For $X$ nonsingular and projective over an algebraically closed field, the **geometric genus** is $p_g(X) \da h^0(X, \omega_X)$, and by Serre duality $p_g(X) = h^n(X, \OO_X)$.
+[@Har10a, §II.8, Exercise III.5.3, Corollary III.7.7]
+:::
+
+::: {.example}
+For a nonsingular projective curve, $p_a = p_g$.
+In higher dimension they differ: for a nonsingular projective surface, $p_a = h^2(\OO_X) - h^1(\OO_X) = p_g - q$ with $q = h^1(X, \OO_X)$, so an abelian surface, with $h^0(\OO_X) = h^2(\OO_X) = 1$ and $h^1(\OO_X) = 2$, has $p_g = 1$ and $p_a = -1$.
+:::
+
 ::: {.proposition}
 $\chi$ is additive: $\chi(\mcf) = \chi(\mcf') + \chi(\mcf'')$ for every short exact sequence $0 \to \mcf' \to \mcf \to \mcf'' \to 0$.
 :::
