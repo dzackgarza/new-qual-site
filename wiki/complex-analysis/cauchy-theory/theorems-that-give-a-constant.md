@@ -9,85 +9,88 @@ topics:
 
 # Theorems that give a constant
 
-"Show that $f$ is constant" is the most common sentence in a complex analysis exam, and there are about eight theorems that end it.
-Each one is triggered by a different hypothesis, so the work is matching what you were given to the theorem that consumes it.
+Each theorem below concludes that a holomorphic function is constant, and each uses a different hypothesis.
+Throughout, $\Omega\subseteq\CC$ is a connected open set.
 
-## Bounded, and entire
+## Bounded and entire
 
-**Liouville.**
-The cleanest case, and the one every other entire-function argument reduces to.
-If a problem gives you a bound on all of $\CC$ and holomorphy on all of $\CC$, this is finished.
+**Liouville's theorem.**
+A bounded entire function is constant ([[T-QHIHJ]]).
 
-Two ways the hypothesis arrives disguised:
+Two hypotheses imply boundedness of an entire function $f$:
 
-- $f$ is entire and $\lim_{z\to\infty} f(z)$ exists.
-  Then $f$ is bounded outside a large disc and continuous on it, so bounded everywhere.
+- $\lim_{z\to\infty} f(z)$ exists.
+  Then $f$ is bounded outside a large closed disc and continuous on that disc, so bounded on $\CC$.
 
-- $f$ is entire and $g(w) \da f(1/w)$ has a removable singularity at $w=0$.
-  Same conclusion, stated at infinity.
+- $g(w) \coloneqq f(1/w)$ has a removable singularity at $w=0$.
+  This is the same condition as the existence of $\lim_{z\to\infty} f(z)$.
 
 ## Entire, with polynomial growth
 
-**Cauchy's estimates**, not Liouville directly.
-If $\abs{f(z)} \leq C\abs{z}^n$ for large $\abs z$, the estimate on the $(n+1)$st derivative gives
-\[
-\abs{f^{(n+1)}(z_0)} \leq {(n+1)!\, \norm{f}_{C_R} \over R^{n+1}} \leq {(n+1)!\, CR^n \over R^{n+1}} \to 0
-,\]
+**Cauchy's estimates.**
+If $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for all large $\abs z$, then for fixed $z_0$ and large $R$ the estimate on the circle $\abs{z - z_0} = R$ gives
+$$
+\abs{f^{(n+1)}(z_0)} \leq {(n+1)!\, \norm{f}_{C_R} \over R^{n+1}} \leq {(n+1)!\, C(R+\abs{z_0})^n \over R^{n+1}} \to 0
+,$$
 so $f^{(n+1)} \equiv 0$ and $f$ is a polynomial of degree at most $n$.
-Liouville is the case $n=0$.
+Liouville's theorem is the case $n=0$.
 See [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimates and Liouville]].
 
-## $\abs f$ attains an interior maximum
+## $\abs f$ has a local maximum in $\Omega$
 
-**Maximum modulus.**
-The trigger word is *interior*: on a compact set the maximum is attained somewhere, and the theorem says it is on the boundary unless $f$ is constant.
+**Maximum modulus principle.**
+If $\abs f$ has a local maximum at a point of $\Omega$, then $f$ is constant ([[T-BYNL5]]).
+For $\Omega$ bounded and $f$ continuous on $\overline\Omega$, the maximum of $\abs f$ over $\overline\Omega$ is attained on $\bd\Omega$.
 
-The same theorem does the minimum, provided $f$ is nonvanishing: apply it to $1/f$.
-That proviso is the whole content of the minimum modulus principle, and forgetting it is the standard error.
+If $f$ does not vanish on $\Omega$, applying the maximum modulus principle to $1/f$ shows that a local minimum of $\abs f$ in $\Omega$ forces $f$ to be constant ([[T-YLI6Y]]).
+The function $f(z)=z$ on $\DD$ has a minimum of $\abs f$ at its zero $0$ and is not constant.
 
-## The image is not open
+## The image has empty interior
 
-**The open mapping theorem.**
-A nonconstant holomorphic map sends open sets to open sets, so anything that pins the image into a set with empty interior forces constancy:
+**Open mapping theorem.**
+A nonconstant holomorphic function on $\Omega$ maps open sets to open sets ([[C-FRF33]]).
+So $f$ is constant if its image has empty interior, in particular if
 
-- $f(\Omega) \subseteq \RR$, or into any line or circle.
-- $\abs f$ is constant, so the image lies in a circle.
-- $\Re f$ or $\Im f$ is constant, so the image lies in a line.
-- $f$ takes values in a discrete set.
+- $f(\Omega)$ lies in a line or a circle,
 
-This is usually faster than computing with the Cauchy–Riemann equations, which is the other route to the same conclusions.
+- $\abs f$ is constant, so that $f(\Omega)$ lies in a circle,
 
-## $f$ vanishes on a set with a limit point
+- $\Re f$ or $\Im f$ is constant, so that $f(\Omega)$ lies in a line, or
 
-**The identity principle.**
-The hypothesis is easy to miss because it is usually phrased as data rather than as a limit point: $f$ vanishes on a segment, on a convergent sequence, on an arc, on a set of positive measure in $\RR$.
-Any of those has a limit point in the domain, and the conclusion is $f\equiv 0$ on the whole connected domain.
+- $f(\Omega)$ is a discrete set.
 
-Its everyday use is transferring a real identity to $\CC$: $\sin^2 + \cos^2 = 1$ holds on $\RR$, which has limit points, hence on $\CC$.
+Each of these can also be proved from the Cauchy–Riemann equations.
+
+## $f$ vanishes on a set with a limit point in $\Omega$
+
+**Identity principle.**
+If the zero set of $f$ has a limit point in $\Omega$, then $f\equiv 0$ ([[T-SVF2W]]).
+A segment, an arc, a convergent sequence of distinct points with limit in $\Omega$, and a subset of $\RR\cap\Omega$ of positive measure each have a limit point in $\Omega$.
+
+Applied to $\sin^2 z + \cos^2 z - 1$, which vanishes on $\RR$, the identity principle gives $\sin^2 z + \cos^2 z = 1$ on $\CC$.
 See [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]].
 
-## $f'\equiv 0$ on a domain
+## $f'\equiv 0$ on $\Omega$
 
-Connectedness, and nothing more.
-Worth listing because it is the cheapest of all and is the last step of most of the arguments above: Liouville's proof ends here, and so does the polynomial-growth argument.
+If $f' \equiv 0$ on the connected open set $\Omega$, then $f$ is constant: $f$ is constant along every segment in $\Omega$, and $\Omega$ is polygonally connected.
+The proofs of Liouville's theorem and of the polynomial-growth bound end with this step.
 
-## $f$ omits two values
+## $f$ omits values
 
-**Little Picard.**
-A nonconstant entire function misses at most one point of $\CC$.
-Reach for this only when the problem is genuinely about omitted values, since [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass]] settles most such questions with an elementary proof.
+**Little Picard theorem.**
+A nonconstant entire function omits at most one value of $\CC$ ([[T-HWBWI]]).
 
-## Which hypothesis each one consumes
+If an entire function $f$ omits every value in a disc $D_r(a)$, then $g\coloneqq 1/(f-a)$ is entire with $\abs g\leq 1/r$, so $g$, and hence $f$, is constant by Liouville's theorem.
+[[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati–Weierstrass and Picard]] gives the corresponding statements near an essential singularity.
 
-| Given | Theorem | What it really needs |
+## Hypotheses
+
+| Given | Theorem | Hypotheses |
 | --- | --- | --- |
-| a bound on $\CC$ | Liouville | entire, and the bound uniform |
-| growth $\bigo(\abs z^n)$ | Cauchy estimates | the bound only for large $\abs z$ |
-| an interior max of $\abs f$ | maximum modulus | the domain connected |
-| an interior min of $\abs f$ | minimum modulus | $f$ nonvanishing |
-| image in a line or circle | open mapping | $f$ nonconstant, to contradict |
-| a zero set with a limit point | identity principle | the limit point *inside* the domain |
-| two omitted values | little Picard | entire |
-
-The last column is where these problems are actually decided.
-A missing connectedness assumption, a limit point on the boundary rather than inside, or a zero of $f$ in a minimum-modulus argument each break the theorem while leaving the statement looking true.
+| a bound on $\CC$ | Liouville | $f$ entire |
+| growth $\bigo(\abs z^n)$ | Cauchy estimates | $f$ entire; the bound for large $\abs z$ |
+| a local maximum of $\abs f$ | maximum modulus | $\Omega$ connected |
+| a local minimum of $\abs f$ | minimum modulus | $\Omega$ connected, $f$ nonvanishing |
+| image in a line or circle | open mapping | $\Omega$ connected |
+| a zero set with a limit point | identity principle | $\Omega$ connected, the limit point in $\Omega$ |
+| two omitted values | little Picard | $f$ entire |
