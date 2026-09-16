@@ -9,10 +9,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Stated the Example 3 map (absolute value on R*) in the statement, taken from the source's own solution on page 1 of Ch10PtASltns.pdf.
 ---
 
 ::: {.problem}
-Prove that the mapping given in Example 3 is a homomorphism.
+Prove that the mapping given in Example 3, the map $\phi : \mathbb{R}^* \to \mathbb{R}^*$ defined by $x \mapsto |x|$, is a homomorphism.
 :::
 
 ::: {.solution}

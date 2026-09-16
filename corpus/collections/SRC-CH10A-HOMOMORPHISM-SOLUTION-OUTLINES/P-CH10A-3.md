@@ -9,10 +9,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Stated the Example 4 map (differentiation on R[x]) in the statement, taken from the source's own solution on page 1 of Ch10PtASltns.pdf.
 ---
 
 ::: {.problem}
-Prove that the mapping given in Example 4 is a homomorphism.
+Prove that the mapping given in Example 4, the map $\phi : \mathbb{R}[x] \to \mathbb{R}[x]$ defined by $f \mapsto f'$, is a homomorphism.
 :::
 
 ::: {.solution}
