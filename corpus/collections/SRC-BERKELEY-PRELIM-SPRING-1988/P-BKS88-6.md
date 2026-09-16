@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-6
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 6
+title: Real matrices satisfying $A^2+2A+5I=0$
 classification:
   areas:
   - prelim

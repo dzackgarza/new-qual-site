@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-1
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 1
+title: Differentiability at a point from the limit of the derivative
 classification:
   areas:
   - prelim

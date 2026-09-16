@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-5
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 5
+title: Groups of order $2n$ with an inverting subgroup of index 2
 classification:
   areas:
   - prelim

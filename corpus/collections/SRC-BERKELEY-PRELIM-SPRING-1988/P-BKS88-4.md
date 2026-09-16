@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-4
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 4
+title: Analytic continuation past the boundary of a disc
 classification:
   areas:
   - prelim

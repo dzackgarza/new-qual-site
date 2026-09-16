@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-9
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 9
+title: Convergence of the Fresnel integrals
 classification:
   areas:
   - prelim

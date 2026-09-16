@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-8
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 8
+title: Integrals of $\cos n\theta/(a-\cos\theta)$ and $\sin n\theta/(a-\cos\theta)$
 classification:
   areas:
   - prelim

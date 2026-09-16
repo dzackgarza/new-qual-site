@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-2
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 2
+title: Last digit of $23^{23^{23^{23}}}$
 classification:
   areas:
   - prelim

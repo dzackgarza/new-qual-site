@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS88-3
 kind: problem
-title: Berkeley Spring 1988 preliminary exam problem 3
+title: Rational solutions of rational homogeneous linear systems
 classification:
   areas:
   - prelim
