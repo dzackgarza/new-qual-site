@@ -44,7 +44,6 @@ source:
     comment: Problems, problem 5
 ---
 
-::: remark
-The Casorati–Weierstrass and Open Mapping prompts repeat the exact 2004 Wesleyan statements and reuse those owners.
-Problem 4 is exactly the existing canonical dense-image statement `P-EMCA9`.
+::: {.remark}
+The Casorati--Weierstrass and open mapping problems repeat problems of the [[SRC-WESLEYAN-CA-SUMMER-2004|August 2004 exam]].
 :::
