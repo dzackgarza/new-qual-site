@@ -32,7 +32,7 @@ Let $R$ and $S$ be commutative rings, and $f:R\rightarrow S$ a ring homomorphism
   \[
   N=\{r\in R:r^m=0\text{ for some }m\geq 1\}.
   \]
-  $N$ is called the `\textit{nilradical}`{=tex} of $R$.
+  $N$ is called the *nilradical* of $R$.
   Prove that it is an ideal which is contained in every prime ideal.
 
 - Part (a) lets us define a function
