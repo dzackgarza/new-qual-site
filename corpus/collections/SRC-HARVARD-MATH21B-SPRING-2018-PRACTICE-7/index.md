@@ -37,6 +37,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution7.pdf` is Harvard Math 21b Spring 2018 Practice Final 7 with fourteen top-level problems. The course resource page establishes provenance. Problem 1 contains one statement inconsistent with its own worked solution, and Problems 2 and 3 depend on source images/tables that are not fully recovered; those source defects are explicit rather than silently repaired.
+::: {.remark}
+Practice Final 7 of Harvard Math 21b, Spring 2018, with fourteen problems.
 :::
