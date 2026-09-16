@@ -14,19 +14,20 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-Write
-\[
-E_{p}(z)= \begin{cases}
-1-z & n=0 \\ 
-(1-z) \exp \left(z+\frac{z^{2}}{2}+\cdots+\frac{z^{n}}{n}\right) & \text { otherwise }
-\end{cases}
-,\]
-and define the **order** of an entire function $f$ to be the infimum over $p$ where there exists some $R$ such that $\abs{f(z)} \leq e^{\abs{z}^p}$ for $\abs{z} > R$.
-Suppose $f$ is entire of order $p$, write $\ts{z_k}_{k\leq n}$ for its set of nonzero zeros repeated with multiplicity, and suppose $z=0$ is a zero of $f$ of order $m$.
-Then there is a decomposition
-\[
-f(z) = z^m e^{g(z)}\prod_{k\geq 1} E_p\qty{z\over z_k}
-,\]
-where $\deg(g) \leq p$.
+::: {.theorem}
+For an integer $p\ge0$, let $E_p$ be the canonical factor
+$$
+E_0(z)=1-z,\qquad E_p(z)=(1-z)\exp\Big(z+\frac{z^2}{2}+\cdots+\frac{z^p}{p}\Big)\quad(p\ge1).
+$$
+Let $f$ be an entire function of order $\rho<\infty$, where
+$$
+\rho\coloneqq\inf\ts{\sigma\ge0\st\text{there is }R>0\text{ with }\abs{f(z)}\le e^{\abs z^\sigma}\text{ for all }\abs z>R},
+$$
+and let $p\coloneqq\lfloor\rho\rfloor$.
+Suppose $f$ is not identically zero, has a [[D-65VIK|zero]] of order $m\ge0$ at $0$, and let $(z_k)_{k\ge1}$ be its nonzero zeros, repeated with multiplicity.
+Then there is a polynomial $g$ of degree at most $p$ such that
+$$
+f(z)=z^me^{g(z)}\prod_{k\ge1}E_p\Big(\frac{z}{z_k}\Big),
+$$
+where the product converges uniformly on compact subsets of $\CC$.
 :::

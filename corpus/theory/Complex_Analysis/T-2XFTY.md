@@ -16,8 +16,10 @@ relations:
 review: draft
 ---
 
-:::{.theorem}
-\[
-\Aut_\CC(\DD) = \ts{ z\mapsto e^{i\theta} \qty{\alpha - z \over 1 - \bar{\alpha} z} }
-.\]
+::: {.theorem}
+The group of [[D-TM4TE|biholomorphisms]] of the unit disc $\DD$ onto itself is
+$$
+\Aut(\DD)=\ts{z\mapsto e^{i\theta}\,\frac{\alpha-z}{1-\bar\alpha z}\st\theta\in\RR,\ \alpha\in\DD},
+$$
+the rotations composed with the [[D-MFPYG|Blaschke factors]] $\psi_\alpha$.
 :::

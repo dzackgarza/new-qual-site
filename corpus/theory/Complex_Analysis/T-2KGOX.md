@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-2KGOX
 kind: theorem
-title: Classification of Conformal Maps
+title: Standard conformal maps between half-planes, sectors, strips and discs
 classification:
   areas:
   - complex-analysis
@@ -13,20 +13,20 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-There are 8 major types of conformal maps:
+::: {.theorem}
+Write $\HH=\ts{\Im z>0}$ for the upper half-plane, $\DD_{1/2}=\ts{\abs z<1,\ \Im z>0}$ for the upper half-disc, $Q_1=\ts{\Re z>0,\ \Im z>0}$ for the first quadrant, $S_\beta=\ts{re^{i\theta}\st r>0,\ 0<\theta<\beta}$ for the sector of opening $\beta$, $\Sigma=\ts{0<\Im z<\pi}$ for the horizontal strip, and $\Log$ for the principal branch of the logarithm.
+Each of the following maps is a [[D-TM4TE|biholomorphism]] from the stated domain onto the stated target.
 
-| Type/Domains                                            | Formula                                   |
-| ------------                                            | -------                                   |
-| Translation                                             | $z\mapsto z + h$            |
-| Dilation                                                | $z\mapsto cz$            |
-| Rotation                                                | $z\mapsto e^{i\theta}$            |
-| Sectors to sectors                                      | $z\mapsto z^n$                            |
-| $\DD_{1\over 2} \to \HH_{1\over 2}$, the first quadrant | $z\mapsto {1+z \over 1-z}$                |
-| $\HH\to S$                                              | $z\mapsto \log(z)$                        |
-| $\DD_{1\over 2} \to L_{1\over 2}$                       | $z\mapsto \log(z)$                        |
-| $S_{1\over 2} \to \DD_{1\over 2}$                       | $z\mapsto e^{iz}$                         |
-| $\DD_{1\over 2} \to \HH$                                | $z\mapsto {1\over 2}\qty{z + {1\over z}}$ |
-| $L_{1\over 2} \to \HH$                                  | $z\mapsto \sin(z)$                        |
-
+| Domain | Target | Map |
+| --- | --- | --- |
+| $\CC$ | $\CC$ | translation $z\mapsto z+h$, $h\in\CC$ |
+| $\CC$ | $\CC$ | dilation $z\mapsto cz$, $c>0$ |
+| $\CC$ | $\CC$ | rotation $z\mapsto e^{i\theta}z$, $\theta\in\RR$ |
+| $S_{\pi/n}$, $n\ge1$ | $\HH$ | $z\mapsto z^n$ ([[PR-PDYJC]]) |
+| $\DD_{1/2}$ | $Q_1$ | $z\mapsto\frac{1+z}{1-z}$ ([[PR-PW4Z6]]) |
+| $\HH$ | $\Sigma$ | $z\mapsto\Log z$ ([[PR-XCDL5]]) |
+| $\DD_{1/2}$ | $\ts{\Re w<0,\ 0<\Im w<\pi}$ | $z\mapsto\Log z$ ([[PR-PELLF]]) |
+| $\ts{0<\Re z<\pi,\ \Im z>0}$ | $\DD_{1/2}$ | $z\mapsto e^{iz}$ |
+| $\DD_{1/2}$ | $\HH$ | $z\mapsto-\frac12\big(z+\frac1z\big)$ ([[PR-OTMIR]]) |
+| $\ts{-\frac\pi2<\Re z<\frac\pi2,\ \Im z>0}$ | $\HH$ | $z\mapsto\sin z$ |
 :::

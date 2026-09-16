@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-2OVCI
 kind: theorem
-title: Cauchy-Goursat Theorem
+title: Cauchy's theorem for simply connected regions
 classification:
   areas:
   - complex-analysis
@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem ref="CauchyTheorem"}
-If $f$ is holomorphic on a region $\Omega$ with $\pi_1 \Omega = 1$, then for any closed path $\gamma \subseteq \Omega$,
-\[ 
-\int_{\gamma} f(z) \dz = 0
-.\]
+::: {.theorem ref="CauchyTheorem"}
+Let $\Omega\subseteq\CC$ be a simply connected region and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$.
+Then for every closed piecewise $C^1$ curve $\gamma$ in $\Omega$,
+$$
+\int_\gamma f(z)\dz=0.
+$$
 :::
