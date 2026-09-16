@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-EMJTU
 kind: definition
-title: Neighborhood Basis
+title: Neighborhood basis
 classification:
   areas:
   - topology
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-If $p\in X$, a **neighborhood basis** at $p$ is a collection $\mcb_{p}$ of neighborhoods of $p$ such that if $N_{p}$ is a neighborhood of $p$, then $N_{p} \supseteq B$ for at least one $B\in \mcb_{p}$.
+Let $X$ be a topological space and $p\in X$.
+A \dfn{neighborhood basis} at $p$ is a collection $\mathcal B_p$ of [[D-JMRPA|neighborhoods]] of $p$ such that every neighborhood $N$ of $p$ contains some $B\in\mathcal B_p$.
 :::
