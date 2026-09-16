@@ -1,60 +1,61 @@
 ---
+title: Real analysis topics
 order: 10
 ---
 
-# Real Analysis Topics
+# Real analysis topics
 
-## Schedule
+## Workshop schedule
 
-- Week 1 (May 20): Preliminary Review
+- Week 1 (May 20): preliminary review
 
-  - Uniform convergence, M-Test
+  - Uniform convergence, the Weierstrass $M$-test
 
-  - Nowhere density, Baire category, Heine Borel
+  - Nowhere dense sets, Baire category, the Heine--Borel theorem
 
   - Normed spaces
 
-  - Series and sequences, convergence, small tails, limsup and liminf, Cauchy criteria for sums and integrals
+  - Sequences and series, convergence, tails, $\limsup$ and $\liminf$, Cauchy criteria for sums and integrals
 
-  - Basic inequalities (triangle, Cauchy-Schwarz)
+  - The triangle and Cauchy--Schwarz inequalities
 
-  - Tools from Calculus: MVT, Taylor's theorem & remainder
+  - The mean value theorem, Taylor's theorem and its remainder
 
   - Weierstrass approximation
 
   - Pathological functions and continuity
 
-- Week 2 (May 27): Measure Theory (Sets)
+- Week 2 (May 27): measure theory for sets
 
   - $F_\sigma$ and $G_\delta$ sets
 
-  - Sigma algebras
+  - $\sigma$-algebras
 
   - Outer measure, Lebesgue measure
 
   - Continuity of measure
 
-  - Borel-Cantelli
+  - The Borel--Cantelli lemma
 
-- Week 3 (June 3): Integration 1:
+- Week 3 (June 3): integration I
 
-  - Measurable Functions
+  - Measurable functions
 
   - Lebesgue integration, change of variables
 
   - Chebyshev's inequality
 
-  - Egorov, Lusin
+  - Egorov's and Lusin's theorems
 
-  - Types of convergence: uniform, pointwise, a.e., in measure, in norm
+  - Modes of convergence: uniform, pointwise, almost everywhere, in measure, in norm
 
-- Week 4 (June 10): Integration 2:
+- Week 4 (June 10): integration II
 
-  - Convergence Theorems (Fatou, Monotone, Dominated)
+  - Fatou's lemma, the monotone and dominated convergence theorems
 
-  - Fubini-Tonelli and repeated integration
+  - The Fubini--Tonelli theorems and iterated integration
 
-- Week 5 (June 17): Fourier Analysis
+- Week 5 (June 17): Fourier analysis
 
   - The Fourier transform
 
@@ -62,54 +63,84 @@ order: 10
 
   - Convolutions, approximations to the identity
 
-  - Trigonometric series, density of trig polynomials
+  - Trigonometric series, density of trigonometric polynomials
 
-- Week 6 (June 24): Functional Analysis 1
+- Week 6 (June 24): functional analysis I
 
-  - Banach and Hilbert Spaces, completeness
+  - Banach and Hilbert spaces, completeness
 
-  - l^p and L^p
+  - $\ell^p$ and $L^p$
 
-  - Holder
+  - Hölder's inequality
 
-  - Duals, linear functionals, operator norm
+  - Dual spaces, linear functionals, the operator norm
 
-- Week 7 (July 1): Functional Analysis 2:
+- Week 7 (July 1): functional analysis II
 
-  - $L^1$, $L^2$, $L^\infty$, Cauchy-Schwarz, Pythagoras for orthogonality
+  - $L^1$, $L^2$, $L^\infty$, the Cauchy--Schwarz inequality, the Pythagorean theorem for orthogonal vectors
 
   - Function spaces
 
-  - Plancherel, Parseval, Bessel, Riesz Representation
+  - Plancherel's theorem, Parseval's identity, Bessel's inequality, the Riesz representation theorem
 
-- Week 8 (July 8): Abstract Measures
+- Week 8 (July 8): abstract measures
 
-  - Radon-Nikodym
+  - The Radon--Nikodym theorem
 
-## References
+## Topics from other real analysis syllabi
 
-- Topics
+- Convergence theorems for integrals, Borel measures, the Riesz representation theorem
 
-  - Convergence theorems for integrals, Borel measure, Riesz representation theorem
+- $L^p$ spaces and their duals, Jensen's inequality
 
-  - L space, Duality of L space, Jensen inequality
+- The Lebesgue differentiation theorem, Fubini's theorem, Hilbert spaces
 
-  - Lebesgue differentiation theorem, Fubini theorem, Hilbert space
+- Complex measures of bounded variation, the Radon--Nikodym theorem
 
-  - Complex measures of bounded variation, Radon-Nikodym theorem.
+- Fourier series, the Fourier transform, convolution
 
-  - Fourier series, Fourier transform, convolution.
+- The heat equation, the Dirichlet problem, fundamental solutions
 
-  - Heat equation, Dirichlet problem, fundamental solutions
+- The central limit theorem, the law of large numbers, conditional probability and conditional expectation
 
-  - Central limit theorem, law of large numbers, conditional probability and conditional expectation.
+- Distributions, the Sobolev embedding theorem
 
-  - Distributions, Sobolev embedding theorem.
+- The maximum principle
 
-  - Maximum principle.
+### Measure theory
 
-  ![attachments/Untitled.png](../../../assets/attachments/Untitled.png)
+1. Outer measure, measure, measurability, $\sigma$-algebras, Lebesgue measure on $\RR^n$, Borel and Radon measures, approximation by open and closed sets.
 
-  ![attachments/Untitled%201.png](../../../assets/attachments/Untitled%201.png)
+2. Measurable functions: measurability of $\inf$, $\sup$, $\liminf$, $\limsup$ of sequences and of algebraic operations, simple functions, Lusin's and Egorov's theorems, convergence in measure and in probability.
 
-  ![attachments/Untitled%202.png](../../../assets/attachments/Untitled%202.png)
+3. Integration: the bounded convergence theorem, Fatou's lemma, the monotone convergence theorem, absolute continuity of the integral.
+
+4. Differentiation and integration: the Vitali covering lemma, almost everywhere differentiability of monotone functions, the integral of the derivative of a monotone function, functions of bounded variation, differentiation of the indefinite integral, the fundamental theorem of calculus for absolutely continuous functions.
+
+5. Product measures: the Fubini and Tonelli theorems.
+
+6. Differentiation of measures: absolute continuity of measures, the Radon--Nikodym theorem, mutually singular measures, the Lebesgue decomposition, Lebesgue points, the Lebesgue--Besicovitch theorem, signed measures.
+
+7. The Riesz representation theorem on $L^p$ for $1\leq p<\infty$, the Riesz--Markov theorem on the dual of $C_c$, the Riesz--Thorin interpolation theorem.
+
+### Functional analysis
+
+1. Hilbert spaces: direct sums, orthogonal complements, the Riesz representation theorem, orthonormal bases in the separable and non-separable cases, the Fourier basis for $L^2(\mathbb T)$, $\mathbb T = \RR/2\pi\ZZ$.
+
+2. Banach spaces: continuous linear maps, duals, direct sums and quotients, the Hahn--Banach theorem, the Baire category theorem, the Banach--Steinhaus theorem (uniform boundedness principle), the open mapping theorem.
+
+3. Topological spaces: bases and local bases, convergence, continuity, compactness, weak topologies, the weak and weak-$*$ topologies on Banach spaces, the Stone--Weierstrass theorem, the Banach--Alaoglu theorem, the Riesz--Markov theorem.
+
+4. Locally convex spaces: the Minkowski gauge, the equivalence of convex balanced absorbing neighborhoods and seminorms, the Hahn--Banach theorem, metrizability, Fréchet spaces, the Banach--Steinhaus and open mapping theorems.
+
+5. Distributions: $C^\infty(\mathbb T)$ and its dual $\mathcal D'(\mathbb T)$, Schwartz functions $\mathcal S(\RR^n)$ and tempered distributions $\mathcal S'(\RR^n)$, differentiation of distributions, multiplication of distributions by smooth functions, convergence of sequences of distributions, the distributions $(x\pm i0)^{-1}$ and $\delta_0$, support of distributions.
+
+6. Bounded operators on Banach spaces: adjoints, the spectrum, the resolvent, the spectrum of bounded self-adjoint operators on Hilbert spaces, integration and differentiation with values in Banach spaces, the spectral radius, continuous functional calculus for bounded self-adjoint operators on Hilbert spaces and the spectral measure.
+
+7. Compact operators on Banach spaces: norm closure, composition and adjoint properties, approximation by finite-rank operators in separable Hilbert spaces, the analytic Fredholm theorem, the Riesz--Schauder and Hilbert--Schmidt theorems.
+
+### Fourier analysis
+
+1. Fourier series on $\mathbb T = \RR/2\pi\ZZ$: orthogonality, $L^2$ completeness, uniform convergence and its failure, Fourier series in $C^\infty(\mathbb T)$ and $\mathcal D'(\mathbb T)$, interaction with differentiation and multiplication by $e^{i\theta}$, the Sobolev spaces $H^s(\mathbb T)$, compactness of the inclusion $H^s(\mathbb T)\subseteq H^r(\mathbb T)$ for $s>r$, the representation of distributions as derivatives of continuous functions, the Schwartz kernel theorem.
+
+2. The Fourier transform on $\RR^n$: isomorphism on $\mathcal S(\RR^n)$ and $\mathcal S'(\RR^n)$, isometry on $L^2(\RR^n)$, interaction with differentiation and multiplication by the coordinate functions $x_j$, the Fourier transform of compactly supported distributions, the Fourier transform of Gaussians and the heat equation, the Sobolev spaces $H^s(\RR^n)$ and the inclusion $H^s(\RR^n)\subseteq C^0(\RR^n)$ for $s>n/2$.
