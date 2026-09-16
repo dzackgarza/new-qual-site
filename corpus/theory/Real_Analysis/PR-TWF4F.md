@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-TWF4F
 kind: proposition
-title: An a.e. limit of $L^p$-bounded functions is $L^p$-bounded
+title: An almost everywhere limit of functions bounded in $L^p$ is bounded in $L^p$
 classification:
   areas:
   - real-analysis
@@ -14,10 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-f_k \converges{\ae}\to f \text{ and }
-\norm{f_k}_p \leq M
-\implies f\in L^p \text{ and } \norm{f}_p \leq M
-.\]
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]], $1\leq p\leq\infty$, $M\geq0$, and let $f_k\colon X\to\CC$ be measurable with $\norm{f_k}_p\leq M$ for all $k\geq1$.
+If $f_k\to f$ $\mu$-almost everywhere for a measurable $f\colon X\to\CC$, then $f\in L^p(\mu)$ and $\norm{f}_p\leq M$.
 :::
