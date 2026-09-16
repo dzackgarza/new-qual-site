@@ -22,6 +22,8 @@ Injective implies flasque implies acyclic, and the second implication is the one
 
 [[D-SHFFINE]]
 
+[[D-COHGODEMENT]]
+
 ## The two bounds
 
 [[T-COHAFF]]
@@ -42,3 +44,5 @@ Being fluent with the twisted ideal sequence is worth more than any vanishing th
 ## The six operations
 
 [[D-SHFSIX]]
+
+[[T-LADICPROPER]]

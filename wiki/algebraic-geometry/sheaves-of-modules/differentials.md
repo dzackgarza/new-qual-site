@@ -49,3 +49,7 @@ The canonical sheaf of $\PP^n$ is not computed by hand; it is read off a determi
 [[T-MODEULER]]
 
 Asked for $\Omega_{\PP^n}$, write the Euler sequence, take top exterior powers, and the answer is $\OO(-n-1)$ in one line.
+
+## The de Rham complex
+
+[[FE-DERHAMNONLIN]]

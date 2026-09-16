@@ -37,3 +37,9 @@ Asked for an example where cohomology fails to commute with base change, give a 
 ## The projection formula
 
 [[PR-SCHPROJFORM]]
+
+## Deformations
+
+[[D-COTCPLX]]
+
+[[T-DEFEXT]]

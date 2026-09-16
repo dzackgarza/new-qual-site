@@ -18,10 +18,11 @@ prompts:
 - What is a flasque sheaf?
 - Why are flasque sheaves acyclic?
 - Give an example of a flasque sheaf.
+- What is a flabby sheaf?
 ---
 
 ::: {.definition}
-$\mcf$ is *flasque* if every restriction $\mcf(U) \to \mcf(V)$, for $V \subseteq U$, is surjective.
+$\mcf$ is \dfn{flasque}, or \dfn{flabby}, if every restriction $\mcf(U) \to \mcf(V)$, for $V \subseteq U$, is surjective.
 :::
 
 ::: {.proposition}

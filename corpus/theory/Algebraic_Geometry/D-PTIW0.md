@@ -17,6 +17,7 @@ prompts:
 - Define Čech cohomology.
 - When does Čech cohomology agree with derived functor cohomology?
 - What is the Leray map, and for which covers is it an isomorphism?
+- How does Čech cohomology of a Noetherian separated scheme compare with derived functor cohomology, and with singular cohomology?
 ---
 
 ::: {.definition title="Čech complex"}
@@ -56,5 +57,11 @@ On $\PP^n$ with the standard $n+1$ charts this gives vanishing above degree $n$ 
 ::: {.remark}
 The affine hypothesis on the cover cannot be dropped, even for a Noetherian separated scheme and a quasicoherent sheaf.
 For the cover $\mcu = \{\PP^1\}$ of $\PP^1$ by itself, $\check{H}^1(\mcu, \OO(-2)) = 0$ because the Čech complex has a single term, while $H^1(\PP^1, \OO(-2)) \cong k$.
+:::
+
+::: {.remark}
+For a Noetherian separated scheme the comparison is between Čech cohomology of an affine cover and derived-functor cohomology of a quasicoherent sheaf, both in the Zariski topology; singular cohomology does not enter.
+Singular cohomology appears only for a variety $X$ over $\CC$ with its analytic topology: $H^i_{\mathrm{sing}}(X(\CC), \ZZ) \cong H^i(X^{an}, \ul{\ZZ})$.
+In the Zariski topology the constant sheaf on an irreducible space is flasque, so $H^i(X, \ul{\ZZ}) = 0$ for $i > 0$, and Zariski cohomology of constant sheaves carries no topological information.
 :::
 

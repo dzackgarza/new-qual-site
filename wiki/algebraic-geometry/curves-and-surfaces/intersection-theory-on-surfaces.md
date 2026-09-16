@@ -42,3 +42,7 @@ That signature is what makes $\NS(X)$ a hyperbolic lattice and what supplies the
 [[T-SRFNAKAI]]
 
 Ampleness on a surface is purely numerical, so it depends only on the class in $\NS(X)$, and both conditions are needed — $\pi^*H$ on a blowup has positive square but meets the exceptional curve in zero.
+
+## Chow rings in any dimension
+
+[[D-CHOWRING]]
