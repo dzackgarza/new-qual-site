@@ -18,24 +18,49 @@ Suppose that A has distinct eigenvalues $\lambda _ { 1 } , \ldots , \lambda _ { 
 :::
 
 ::: {.solution}
-We use induction on $k . { \mathrm { ~ H ~ } } k = 1$ , the claim is trivial since $\{ v _ { 1 } \}$ is always a linearly independent set when $v _ { 1 } \neq 0$ . Suppose that any set of k eigenvectors corresponding to distinct eigenvalues is linearly independent and suppose that $\{ v _ { 1 } , \ldots , v _ { k } , v _ { k + 1 } \}$ is a set of $k + 1$ eigenvectors corresponding to distinct eigenvalues $\lambda _ { 1 } , \dots , \lambda _ { k } , \lambda _ { k + 1 }$ . Let $\alpha _ { 1 } , \ldots , \alpha _ { k } , \alpha _ { k + 1 } \in \mathbb { C }$ be such that
+<1>1. The claim holds for one eigenvector.
+::: {.proof}
+An eigenvector is nonzero by definition, so $\{v_1\}$ is linearly independent.
+:::
 
+<1>2. If the claim holds for $k$ distinct eigenvalues, then it holds for $k+1$ distinct eigenvalues.
+::: {.proof}
+Suppose
 $$
-\alpha _ { 1 } v _ { 1 } + \cdot \cdot \cdot + \alpha _ { k } v _ { k } + \alpha _ { k + 1 } v _ { k + 1 } = 0 .
+\alpha_1v_1+\cdots+\alpha_kv_k+\alpha_{k+1}v_{k+1}=0,
 $$
+where
+$$
+Av_j=\lambda_jv_j
+$$
+and the $\lambda_j$ are pairwise distinct. Apply $A-\lambda_{k+1}I$. The last term vanishes and we obtain
+$$
+\sum_{j=1}^k
+\alpha_j(\lambda_j-\lambda_{k+1})v_j=0.
+$$
+By the induction hypothesis, $v_1,\dots,v_k$ are linearly independent. Hence
+$$
+\alpha_j(\lambda_j-\lambda_{k+1})=0
+\qquad(1\le j\le k).
+$$
+Since $\lambda_j\ne\lambda_{k+1}$, this gives
+$$
+\alpha_1=\cdots=\alpha_k=0.
+$$
+The original relation then reduces to
+$$
+\alpha_{k+1}v_{k+1}=0.
+$$
+Because $v_{k+1}\ne0$, we also have $\alpha_{k+1}=0$. Thus $v_1,\dots,v_{k+1}$ are linearly independent.
+:::
 
-Apply the operator $A - \lambda _ { k + 1 } I$ to this equation and use that $( A - \lambda _ { k + 1 } I ) v _ { k + 1 } = 0$ and $( A - \lambda _ { k + 1 } I ) v _ { \ell } =$ $\lambda _ { \ell } v _ { \ell } - \lambda _ { k + 1 } v _ { \ell } = ( \lambda _ { \ell } - \lambda _ { k + 1 } ) v _ { \ell }$ for $\ell = 1 , \ldots , k$ . Then we see
+<1>3. The eigenvectors $v_1,\dots,v_k$ are linearly independent for every $k\ge1$.
+::: {.proof}
+This follows from steps <1>1--<1>2 by induction on $k$.
+:::
 
-$$
-\alpha _ { 1 } ( \lambda _ { 1 } - \lambda _ { k + 1 } ) v _ { 1 } + \cdot \cdot \cdot + \alpha _ { k } ( \lambda _ { k } - \lambda _ { k + 1 } ) v _ { k } = 0 .
-$$
-
-However, these vectors are linearly independent by our inductive hypothesis.
-Thus
-
-$$
-\alpha _ { 1 } ( \lambda _ { 1 } - \lambda _ { k + 1 } ) = \cdots = \alpha _ { k } ( \lambda _ { k } - \lambda _ { k + 1 } ) = 0 .
-$$
-
-Since the eigenvalues are assumed to be distinct, we can divide by $\lambda _ { \ell } - \lambda _ { k + 1 }$ to see that $\alpha _ { \ell } = 0$ for all $\ell = 1 , \ldots , k$ . But then we have $\alpha _ { k + 1 } v _ { k + 1 } = 0$ which gives $\alpha _ { k + 1 } = 0$ as well, and we conclude that $\{ v _ { 1 } , \ldots , v _ { k } , v _ { k + 1 } \}$ is a linearly independent set.
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is exactly the required conclusion.
+:::
 :::
