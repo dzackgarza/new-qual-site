@@ -38,8 +38,6 @@ source:
   - {id: P-WESTOP06-B8, comment: Part B Problem 8}
 ---
 
-::: remark
-All sixteen top-level June 2006 problems are represented. Part A Problem 6 retains two source-sensitive assertions from the extraction rather than silently normalizing them. Part B Problem 2(c) depends on three pictured spaces whose image is absent from the retained Markdown extraction.
-
-The retained `topology_2005-2003.pdf` compilation also appends a duplicate copy of this complete sitting; it is retained here as supplemental provenance rather than generating a second set of cards.
+::: {.remark}
+Sixteen problems, in Parts A and B.
 :::
