@@ -18,6 +18,9 @@ prompts:
 - Which ideals correspond to closed subsets of $\AA^n$?
 - Which ideals correspond to irreducible closed subsets?
 - What is the coordinate ring of a closed subset, and when is it a domain?
+- Show that the algebraic sets are the closed sets of a topology on $\AA^n$.
+- Show that the maximal ideals of $k[x_1,\ldots,x_n]$ are the ideals $(x_1-a_1,\ldots,x_n-a_n)$ when $k$ is algebraically closed, and that this fails otherwise.
+- Show that every finitely generated $k$-algebra that is a domain is the coordinate ring of an affine variety.
 ---
 
 ::: {.proposition}
@@ -31,6 +34,34 @@ Under that bijection:
 | maximal | a point |
 | $(1)$ | $\emptyset$ |
 | $(0)$ | $\AA^n$ |
+:::
+
+::: {.proposition title="Operations on vanishing sets and ideals"}
+Let $\mfa, \mfa_1, \mfa_2$ and $\mfa_i$ ($i \in I$) be ideals of $A \da k[x_1,\ldots,x_n]$, and let $Y_j$ ($j \in J$) be subsets of $\AA^n$.
+Then
+\[
+\bigcap_{i \in I} V(\mfa_i) = V\Big(\sum_{i \in I} \mfa_i\Big), \qquad
+V(\mfa_1) \union V(\mfa_2) = V(\mfa_1 \mfa_2), \qquad
+\AA^n \sm V(\mfa) = \bigcup_{f \in \mfa} D(f), \qquad
+D(fg) = D(f) \intersect D(g),
+\]
+\[
+I\Big(\bigcup_{j \in J} Y_j\Big) = \bigcap_{j \in J} I(Y_j), \qquad
+V(I(Y)) = \overline{Y} \text{ for } Y \subseteq \AA^n .
+\]
+If $k$ is algebraically closed, then $V(\mfa_1) \subseteq V(\mfa_2)$ if and only if $\sqrt{\mfa_1} \supseteq \sqrt{\mfa_2}$.
+[@Har10a, §I.1]
+:::
+
+::: {.proposition title="Maximal ideals and coordinate rings"}
+Let $k$ be algebraically closed.
+The maximal ideals of $k[x_1,\ldots,x_n]$ are exactly the ideals $(x_1 - a_1, \ldots, x_n - a_n)$ with $(a_1,\ldots,a_n) \in \AA^n$, and they correspond to the points of $\AA^n$.
+For an affine variety $Y$ the coordinate ring $A(Y)$ is a finitely generated $k$-algebra and a domain; conversely, every finitely generated $k$-algebra that is a domain is $A(Y)$ for some affine variety $Y$.
+[@Har10a, §I.1]
+:::
+
+::: {.example}
+Over $k = \RR$ the ideal $(x^2+1) \subseteq \RR[x]$ is maximal and is not of the form $(x - a)$.
 :::
 
 ::: {.remark}
