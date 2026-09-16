@@ -14,5 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-For a covering space $\tilde X \mapsvia{p} X$, self-isomorphisms $f:\tilde X \to \tilde X$ of covering spaces are referred to as **deck transformations**.
+Let $p\colon \tilde X\to X$ be a [[D-ANO2D|covering space]].
+A \dfn{deck transformation} of $p$ is a [[D-9KQZT|homeomorphism]] $f\colon\tilde X\to\tilde X$ with $p\circ f = p$.
+The deck transformations of $p$ form a group $\Deck(p)$ under composition.
 :::
