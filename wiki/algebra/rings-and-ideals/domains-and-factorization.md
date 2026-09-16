@@ -93,7 +93,7 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 - In a [[D-WUGPG|Dedekind domain]] every nonzero proper ideal is a product of prime ideals, uniquely up to order.
 
-- A Noetherian local ring $(R,\mfm)$ is [[D-JSZ77|regular]] if $\dim_{R/\mfm}\mfm/\mfm^2=\dim R$.
+- A Noetherian local ring $(R,\mfm)$ is [[D-DEFREGLR|regular]] if $\dim_{R/\mfm}\mfm/\mfm^2=\dim R$.
 
 [[D-TZXBO]]
 
@@ -117,7 +117,7 @@ In a [[D-NKRGN|Euclidean domain]] the division algorithm computes greatest commo
 
 [[D-VK2KZ]]
 
-[[D-JSZ77]]
+[[D-DEFREGLR]]
 
 [[FF-CQSNC]]
 
