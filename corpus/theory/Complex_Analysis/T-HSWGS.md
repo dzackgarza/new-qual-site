@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-HSWGS
 kind: theorem
-title: Automorphisms of the disc
+title: Automorphisms of the unit disc
 classification:
   areas:
   - complex-analysis
@@ -13,10 +13,9 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-What are the automorphisms of $\DD, \CC, \CP^1$?
-For the disc, it's known:
-\[
-\Aut_\CC(\DD) = \ts{ z\mapsto e^{i\theta} \qty{\alpha - z \over 1 - \bar{\alpha} z} }
-.\]
+::: {.theorem}
+The group $\Aut_\CC(\DD)$ of [[D-TM4TE|biholomorphisms]] $\DD\to\DD$ is
+$$
+\Aut_\CC(\DD)=\Bigl\{z\mapsto e^{i\theta}\,\frac{\alpha-z}{1-\overline{\alpha}z} : \theta\in\RR,\ \alpha\in\DD\Bigr\}.
+$$
 :::
