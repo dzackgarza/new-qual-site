@@ -8,12 +8,11 @@ topics:
 
 # The residue theorem
 
-## The one integral everything reduces to
+## The integral of $z^k$ over the unit circle
 
-Every residue statement descends from a single computation on the circle.
-
-:::{.fact title="Integrating $z^k$ around $S^1$ powers residues"}
-\[
+::: {.fact title="Integral of $z^k$ over $S^1$"}
+For $k\in\ZZ$ and $\gamma(\theta) = e^{i\theta}$, $\theta\in[0,2\pi]$,
+$$
 \int_\gamma z^k \dz = \int_0^{2\pi} e^{ik\theta} ie^{i\theta} \dtheta = i\int_0^{2\pi} e^{i(k+1)\theta} \dtheta
 =
 \begin{cases}
@@ -21,28 +20,23 @@ Every residue statement descends from a single computation on the circle.
 \\
 0 & \text{else}.
 \end{cases}
-\]
+$$
 
 :::
 
-Every power except $z\inv$ integrates to zero, so integrating a Laurent series term by term keeps exactly one coefficient:
-\[
+For a Laurent series with finitely many negative terms converging on a neighborhood of $S^1$, the convergence is uniform on $S^1$, so term-by-term integration keeps only the coefficient of $z\inv$:
+$$
 \int_\gamma \sum_{k \geq -M} c_k z^k = \sum_{k \geq -M} \int_\gamma c_k z^k = 2\pi i c_{-1}
-.\]
+.$$
 
-That coefficient is the definition of the residue, and the theorem is the statement that this survives being summed over the singularities a curve encloses.
+The coefficient $c_{-1}$ of the Laurent series at a singularity is its residue, and the residue theorem sums these contributions over the singularities enclosed by a curve, weighted by winding numbers.
 
 [[T-HRPNO]]
 
-## What the residue is an invariant of
-
-:::{.warnings}
-A pedantic warning: $\Res_{z=p}(f)$ should really be $\Res_{z=p}(f\dz)$, since it is an invariant of the $1\dash$form and not of $f$ itself.
-We freely abuse notation.
+::: {.remark title="Residues of $1$-forms"}
+The residue is an invariant of the $1$-form $f\dz$ rather than of the function $f$: if $z = \varphi(w)$ with $\varphi$ biholomorphic near $w_0$ and $\varphi(w_0)=p$, then $\Res_{w=w_0} f(\varphi(w))\varphi'(w) = \Res_{z=p} f(z)$, while $\Res_{w=w_0} f(\varphi(w))$ is in general different.
+The notation $\Res_{z=p}(f)$ abbreviates $\Res_{z=p}(f\dz)$.
 
 :::
 
-## Where the theorem is used
-
-The residue theorem converts a closed contour integral into a finite sum.
-Turning a *real* integral into a closed contour integral is the other half, and which curve to close is decided on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
+Real integrals are evaluated by writing them as limits of closed contour integrals; the contours are on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
