@@ -32,8 +32,6 @@ source:
     year: 2016
 ---
 
-::: remark
-TAMU real-analysis Spring 2016. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf (Real Analysis Qualiftying Exam, January 2016; spelling as on the paper).
-Transcript: `.tmp-papers/tamu-j16.txt`. Ten numbered questions; the list follows the order on that paper.
-No holes.
+::: {.remark}
+The Texas A&M [Real Analysis Qualifying Exam, January 2016](https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf), with ten questions.
 :::
