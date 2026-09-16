@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-E2NWN
 kind: definition
-title: First Countable
+title: First countable space
 classification:
   areas:
   - topology
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A space is **first-countable** iff every point admits a countable neighborhood basis.
+A topological space $X$ is \dfn{first countable} if every point $x\in X$ has a countable [[D-EMJTU|neighborhood basis]].
 :::
