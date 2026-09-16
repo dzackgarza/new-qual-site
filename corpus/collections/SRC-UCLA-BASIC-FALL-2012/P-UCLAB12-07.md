@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-07
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 7
+title: Invertible matrices with bounded powers are diagonalizable
 classification:
   areas:
   - prelim

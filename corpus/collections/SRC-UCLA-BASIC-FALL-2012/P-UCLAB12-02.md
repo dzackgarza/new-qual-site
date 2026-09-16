@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-02
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 2
+title: Riemann integrability of monotone functions
 classification:
   areas:
   - prelim

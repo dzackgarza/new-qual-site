@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-06
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 6
+title: Equality of mixed partial derivatives via vanishing integrals over squares
 classification:
   areas:
   - prelim

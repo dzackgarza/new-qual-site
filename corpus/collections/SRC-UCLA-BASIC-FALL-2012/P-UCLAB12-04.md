@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-04
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 4
+title: Baire category theorem
 classification:
   areas:
   - prelim

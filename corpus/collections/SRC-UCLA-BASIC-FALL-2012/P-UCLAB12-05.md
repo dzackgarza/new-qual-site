@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-05
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 5
+title: $\mathbb Q$ is not a $G_\delta$ subset of $\mathbb R$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-09
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 9
+title: Least-squares minimizers form a coset of $\ker A$
 classification:
   areas:
   - prelim
