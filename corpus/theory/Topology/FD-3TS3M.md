@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-3TS3M
 kind: definition
-title: First Countable
+title: First countable space
 prompts:
 - What does it mean for a space to be first countable?
 classification:
@@ -18,5 +18,5 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **first countable** iff each $x\in X$ admits a countable neighborhood basis.
+A topological space $X$ is \dfn{first countable} if every point $x\in X$ has a countable [[D-EMJTU|neighborhood basis]].
 :::
