@@ -131,8 +131,6 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-GDXFZ]]
 
-[[D-MQSFD]]
-
 [[D-P6XCN]]
 
 [[D-EPTMG]]
