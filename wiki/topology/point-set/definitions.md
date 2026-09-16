@@ -255,8 +255,6 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-Z7I7F]]
 
-[[D-SOVXO]]
-
 [[D-IZI3T]]
 
 [[D-HFR32]]

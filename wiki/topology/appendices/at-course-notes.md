@@ -32,7 +32,7 @@ order: 200
 
   * Relative homology
 
-  * [[D-SOVXO|Homotopy]] and homotopy invariance
+  * [[D-Z7I7F|Homotopy]] and homotopy invariance
 
   * [[D-6UHU7|Deformation retracts]]
 
