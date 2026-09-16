@@ -16,7 +16,7 @@ review: draft
 
 ::: problem
 Here we give another method of calculating the Picard group of a singular curve.
-Let $X$ be a projective curve over $k$, let $\tilde X$ be its normalization, and let $\pi: \tilde X \to X$ be the projection map.
+Let $X$ be a projective curve over $k$, let $\tilde X$ be its normalization, and let $\pi: \tilde X \to X$ be the projection map (Ex. 3.8).
 For each point $P \in X$, let $\OO_P$ be its local ring, and let $\tilde\OO_P$ be the integral closure of $\OO_P$.
 We use a $*$ to denote the group of units in a ring.
 
