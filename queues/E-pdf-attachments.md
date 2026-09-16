@@ -120,11 +120,15 @@ External links that are not vendored remain on the resource pages until a delibe
   The two identified Flash defects are recorded explicitly.
   The inventory's `0 problems` and `complex-analysis` labels were stale heuristics.
 
-- [ ] [Fall_2019_Assignments.pdf](assets/attachments/extracted/Fall_2019_Assignments.md) (919L, 70 problems) — UNL — applied-algebra — August 2019 **BLOCKED 2026-09-14: MinerU Flash upload timed out while awaiting response headers; the old extraction has unknown provenance and cannot support intake.
-  No fallback extraction used.**
+- [x] [Fall_2019_Assignments.pdf](assets/attachments/extracted/Fall_2019_Assignments.md) (919L, 70 problems) — UGA — real-analysis — Fall 2019 — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (16 pages).
+  The PDF compiles Neil Lyall's UGA Math 8100 Assignments 1–8 with their extra challenge problems and a final set of extra practice problems: 67 positions (7+3, 6+3, 6+3, 7+3, 6+2, 6+1, 6+2 and 6+3).
+  They match, position for position and in source order, the canonical cards of `SRC-MATH8100-ASSIGNMENT-1` through `SRC-MATH8100-ASSIGNMENT-8`, which the compilation collection `SRC-MATH8100-FALL-2019-ASSIGNMENTS` already routes; no new cards are needed.
+  The inventory's UNL and applied-algebra labels and count of 70 were stale.
 
-- [ ] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — applied-algebra — October 23 **BLOCKED 2026-09-14: MinerU Flash upload timed out while awaiting response headers; the old extraction has unknown provenance and cannot support intake.
-  No fallback extraction used.**
+- [x] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — UGA — real-analysis — Fall 2019 — disposition 2026-09-16: reference-only intake from the Mistral OCR extraction committed in `a86d55f19` (91 pages).
+  The PDF is D. Zack Garza's written solutions to UGA Math 8100 Assignments 1–8 (handwritten for the first three, typeset from Assignment 4 on); it states no problems of its own, and the problems it solves are the cards of `SRC-MATH8100-ASSIGNMENT-1` through `SRC-MATH8100-ASSIGNMENT-8`.
+  It is listed under other solutions in `wiki/real-analysis/resources/solutions.md`.
+  The inventory's count of 15 and applied-algebra label were stale.
 
 - [x] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: UGA Fall 2019 Real Analysis; all five problems are already represented in `SRC-UGA-RA-FALL-2019`. This file is byte-identical to `Neil_Fall_2019_Solutions.pdf` (SHA-256 `a3d7d30454ada0b3a1071f234bd5b6a27b22e16cf615769b876fa8894eb2ebbc`), so no duplicate collection or provenance entry is needed.
 
