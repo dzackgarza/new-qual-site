@@ -14,5 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-For a group action $G\actson X$, the **orbit space** $X/G$ is defined as $X/\sim$  where $\forall x,y\in X, x\sim y \iff \exists g\in G \mid g.x = y$.
+Let $G$ be a group [[D-3T6O2|acting]] on a topological space $X$.
+For $x,y\in X$ write $x\sim y$ if there exists $g\in G$ with $g\cdot x=y$; this is an equivalence relation whose classes are the orbits of the action.
+The \dfn{orbit space} is the set $X/G\coloneqq X/{\sim}$ of orbits with the quotient topology: $U\subseteq X/G$ is open if and only if $q\inv(U)$ is open in $X$, where $q\colon X\to X/G$ sends $x$ to its orbit.
 :::
