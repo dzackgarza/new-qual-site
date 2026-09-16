@@ -29,9 +29,9 @@ Let $C_p$ denote the cyclic group of order $p$.
     Let $\rho_{\mathbb C}:G\rightarrow\GL_n(\mathbb C)$ denote
     $\rho$ followed by the inclusion $\GL_n(\mathbb Q)\rightarrow
     \GL_n(\mathbb C)$. Thus $\rho_{\mathbb C}$ is a representation
-    of $G$ over $\mathbb C$, called the `\textit{complexification}`{=tex}
+    of $G$ over $\mathbb C$, called the *complexification*
     of $\rho$. We say that an irreducible representation $\rho$
-    of $G$ is `\textit{absolutely irreducible}`{=tex} if its
+    of $G$ is *absolutely irreducible* if its
     complexification remains irreducible over $\mathbb C$.\\
     Now suppose $G$ is abelian and that every representation
     of $G$ over $\mathbb Q$ is absolutely irreducible. Show that
