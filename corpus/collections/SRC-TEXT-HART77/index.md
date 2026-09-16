@@ -42,7 +42,7 @@ source:
     - id: P-AGHDIMTOPOLOGY
       comment: I.1.10
     - id: P-AGHNOTLCI
-      comment: I.1.11
+      comment: I.1.11*
     - id: P-AGHREALIRRED
       comment: I.1.12
   - name: I.2
@@ -344,7 +344,7 @@ source:
     - id: P-AGH2321DVRLINE
       comment: II.3.21
     - id: P-AGH2322FIBREDIM
-      comment: II.3.22
+      comment: II.3.22*
     - id: P-AGH2323VARPRODUCT
       comment: II.3.23
   - name: II.4

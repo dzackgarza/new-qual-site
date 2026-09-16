@@ -30,6 +30,8 @@ C(Y) = \theta\inv(Y) \union \ts{(0,\ldots,0)} .
 3. Show that $\dim C(Y) = \dim Y + 1$.
 
 The projective closure $\overline{C(Y)}$ in $\PP^{n+1}$ is called the **projective cone** over $Y$.
+
+![The cone $C(Y) \subseteq \AA^3$ over a curve $Y \subseteq \PP^2$.](../../../assets/algebraic-geometry/varieties/affine-cone-over-curve-in-p2.png){width=400px}
 :::
 
 ::: solution

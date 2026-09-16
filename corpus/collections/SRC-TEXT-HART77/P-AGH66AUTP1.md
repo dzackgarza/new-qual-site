@@ -28,4 +28,6 @@ $$
    Show that $\Aut \PP^1 \cong \Aut k(x)$, the group of $k\da$automorphisms of the field $k(x)$.
 
 3. Show that every automorphism of $k(x)$ is a fractional linear transformation, and deduce that $\PGL(1) \to \Aut \PP^1$ is an isomorphism.
+
+Note: a similar result holds for $\PP^n$ (II, 7.1.1): every automorphism is given by a linear transformation of the homogeneous coordinates.
 :::

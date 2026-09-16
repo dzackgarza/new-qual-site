@@ -20,6 +20,6 @@ review: draft
    Show that $Q_1 \intersect Q_2$ is the union of a twisted cubic curve and a line.
 
 2. Even when the intersection of two varieties is a variety, the ideal of the intersection need not be the sum of the ideals.
-   Let $C \subseteq \AA^2$ be the conic given by $y = x^2$, and let $L$ be the line given by $y = 0$.
+   Let $C \subseteq \PP^2$ be the conic given by $x^2 - yz = 0$, and let $L$ be the line given by $y = 0$.
    Show that $C \intersect L$ is a single point $P$, but that $I(C) + I(L) \neq I(P)$.
 :::

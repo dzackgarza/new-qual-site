@@ -30,3 +30,8 @@ Over an infinite field pick $z$ distinct from every $p_i$ and $q_j$; then $(z,z)
 
 The product topology sees only finite unions of horizontal and vertical lines, and no curve that is not one; the Zariski topology on $\AA^2$ has a closed set for every plane curve.
 :::
+
+::: {.remark}
+Erratum: an alternative argument sometimes given uses the hyperbola $V(xy-1)$, whose projection $\pi_x(V(xy-1)) = \AA^1 \sm \ts{0}$ is not closed, and claims that projections would be closed maps if $\AA^2$ had the product topology.
+Projections from a product topology are open maps but need not be closed, so that argument does not work.
+:::

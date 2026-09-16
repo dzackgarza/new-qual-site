@@ -26,5 +26,5 @@ $$
 
 2. Show that under this correspondence the irreducible nonsingular curves of degree $d$ correspond one-to-one to the points of a nonempty Zariski-open subset of $\PP^N$.
 
-*Hint:* Use elimination theory applied to the homogeneous polynomials $\frac{\partial f}{\partial x_0}, \ldots, \frac{\partial f}{\partial x_n}$.
+*Hint:* Use elimination theory (5.7A) applied to the homogeneous polynomials $\frac{\partial f}{\partial x_0}, \ldots, \frac{\partial f}{\partial x_n}$, and use (Ex. 5.5, 5.8, 5.9).
 :::

@@ -23,4 +23,8 @@ Locate the singular points and describe the singularities of the following surfa
 2. $x^2 + y^2 = z^2$
 
 3. $xy + x^3 + y^3 = 0$
+
+Which is which in the figure?
+
+![Surface singularities: conical double point, double line, pinch point.](../../../assets/algebraic-geometry/curves-and-surfaces/surface-singularities-conical-double-line-pinch.png){width=550px}
 :::

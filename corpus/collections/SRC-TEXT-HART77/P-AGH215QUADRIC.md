@@ -25,4 +25,6 @@ Consider the surface $Q$ in $\PP^3$ defined by $xy - zw = 0$; a **surface** is a
    A **line** is a linear variety of dimension $1$.
 
 3. Show that $Q$ contains curves other than these lines, and deduce that the Zariski topology on $Q$ is not carried by $\psi$ to the product topology on $\PP^1 \times \PP^1$, where each factor has its Zariski topology.
+
+![The quadric surface $Q \subseteq \PP^3$ with the lines $L_0$ and $M_0$ of its two families.](../../../assets/algebraic-geometry/varieties/quadric-surface-in-p3-two-rulings.png){width=350px}
 :::

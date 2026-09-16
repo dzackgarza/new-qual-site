@@ -25,4 +25,8 @@ Locate the singular points of the following curves in $\AA^2$ and sketch each cu
 3. $x^3 = y^2 + x^4 + y^4$
 
 4. $x^2 y + x y^2 = x^4 + y^4$
+
+Which is which in the figure?
+
+![Singularities of plane curves: node, triple point, cusp, tacnode.](../../../assets/algebraic-geometry/curves-and-surfaces/plane-curve-singularities-node-cusp-tacnode.png){width=550px}
 :::
