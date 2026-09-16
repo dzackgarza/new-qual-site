@@ -37,4 +37,4 @@ for (const pkg of ['require', ...AllPackages]) {
 collect(TextBaseConfiguration);
 
 const target = new URL('./qualc/mathjax_commands.json', import.meta.url);
-writeFileSync(target, JSON.stringify([...names].sort(), null, 0).replace(/","/g, '",\n"').replace(/^\[/, '[\n').replace(/\]$/, '\n]\n'));
+writeFileSync(target, JSON.stringify([...names].sort(), null, 2) + '\n');
