@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-Let $X$ be a topological space and $G$ an abelian group, and let $C^n(X;G)\coloneqq\Hom(C_n(X), G)$ be the group of [[D-EILQL|$n$-cochains]], where $C_n(X)$ is the group of [[D-6BUWA|singular $n$-chains]] with boundary map $\del_n\colon C_n(X)\to C_{n-1}(X)$.
+Let $X$ be a topological space and $G$ an abelian group, and let $C^n(X;G)\coloneqq\Hom(C_n(X), G)$ be the group of $n$-cochains, where $C_n(X)$ is the group of [[D-6BUWA|singular $n$-chains]] with boundary map $\del_n\colon C_n(X)\to C_{n-1}(X)$.
 The \dfn{coboundary map} $\delta^n\colon C^n(X;G)\to C^{n+1}(X;G)$ is $\delta^n(\varphi)\coloneqq\varphi\circ\del_{n+1}$.
 An $n$-cochain $\varphi$ is a \dfn{coboundary} if $\varphi\in B^n(X;G)\coloneqq\im\delta^{n-1}$, with $B^0(X;G)\coloneqq 0$.
 :::
