@@ -15,12 +15,18 @@ source:
   source_kind: homework
   area: algebra
   problems:
-  - P-M7200E8-8
-  - P-M7200E8-9
-  - P-M7200E8-17
-  - P-M7200E8-29
-  - P-M7200E8-43
-  - P-M7200E8-47
+  - id: P-M7200E8-8
+    comment: Problem 8
+  - id: P-M7200E8-9
+    comment: Problem 9
+  - id: P-M7200E8-17
+    comment: Problem 17
+  - id: P-M7200E8-29
+    comment: Problem 29
+  - id: P-M7200E8-43
+    comment: Problem 43
+  - id: P-M7200E8-47
+    comment: Problem 47
   date:
     kind: academic-term
     term: fall
