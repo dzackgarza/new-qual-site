@@ -40,7 +40,3 @@ source:
     term: fall
     year: 1992
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1992. Problems are listed in source order. Problem 6 preserves an explicit extraction gap in its metric-comparison hypothesis.
-:::
