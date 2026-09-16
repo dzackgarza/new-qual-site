@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH10A-7
 kind: problem
-title: Chapter 10A exercise 7
+title: Composition of homomorphisms and their kernels
 classification:
   areas:
   - algebra

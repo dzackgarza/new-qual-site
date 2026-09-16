@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH10A-3
 kind: problem
-title: Chapter 10A exercise 3
+title: Differentiation is a homomorphism on $\mathbb R[x]$
 classification:
   areas:
   - algebra

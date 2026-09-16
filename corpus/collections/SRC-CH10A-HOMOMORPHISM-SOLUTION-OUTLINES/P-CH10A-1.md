@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH10A-1
 kind: problem
-title: Chapter 10A exercise 1
+title: The determinant is a homomorphism $GL(2,\mathbb R)\to\mathbb R^*$
 classification:
   areas:
   - algebra

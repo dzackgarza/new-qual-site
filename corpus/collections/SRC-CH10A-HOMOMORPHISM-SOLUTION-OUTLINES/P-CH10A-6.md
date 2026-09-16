@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH10A-6
 kind: problem
-title: Chapter 10A exercise 6
+title: Antidifferentiation as a homomorphism of the additive group of real polynomials
 classification:
   areas:
   - algebra
