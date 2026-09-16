@@ -4,7 +4,7 @@ id: FE-2UZDB
 kind: example
 title: Uniformly convergent differentiable $f_n\to f$ with $f_n'\to g$ pointwise and $g\neq f'$
 prompts:
-- Give a sequence $f_n \to f$ uniformly with $f_n' \to g$ pointwise but $g' \neq \lim f_n'$.
+- Give a sequence of differentiable functions $f_n \to f$ uniformly with $f_n' \to g$ pointwise but $g \neq f'$.
 classification:
   areas:
   - real-analysis
