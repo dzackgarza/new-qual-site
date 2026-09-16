@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YKVFQ
 kind: theorem
-title: Bolzano-Weierstrass property
+title: Bolzano--Weierstrass theorem
 classification:
   areas:
   - complex-analysis
@@ -14,6 +14,7 @@ review: draft
 ---
 
 ::: {.theorem}
-A subset of $\RR^n$ is closed and bounded iff it is sequentially compact.
-Equivalently, every bounded sequence has a convergent subsequence.
+Let $n\geq1$ and $K\subseteq\RR^n$.
+Then $K$ is closed and bounded if and only if every sequence in $K$ has a subsequence converging to a point of $K$.
+In particular, every bounded sequence in $\RR^n$ has a convergent subsequence.
 :::

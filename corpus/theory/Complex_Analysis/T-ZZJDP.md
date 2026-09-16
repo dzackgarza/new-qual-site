@@ -16,20 +16,18 @@ review: draft
 ---
 
 ::: {.theorem}
-Suppose $f$ is holomorphic on $\Omega\sm\ts{z_0}$.
-TFAE:
+Let $\Omega\subseteq\CC$ be open, let $z_0\in\Omega$, and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega\setminus\{z_0\}$.
+The following are equivalent.
 
-- $z_0$ is a pole of order $0$.
+(i) $z_0$ is a [[D-BQLJV|removable singularity]] of $f$.
 
-- $z_0$ is a removable singularity of $f$.
+(ii) $f$ is bounded on $\{z : 0<\abs{z-z_0}<\delta\}$ for some $\delta>0$.
 
-- There exists some neighborhood of $z_0$ on which $f$ is bounded.
+(iii) $(z-z_0)f(z)\to0$ as $z\to z_0$.
 
-- $(z-a)f(z) \convergesto{z\to z_0} 0$
+(iv) $f$ extends to a holomorphic function on $\Omega$.
 
-- $f$ admits a holomorphic extension $F$ to all of $\Omega$
+(v) $f$ extends to a continuous function on $\Omega$.
 
-- $f$ admits a continuous extension $F$ to all of $\Omega$.
-
-- $f$ admits a Laurent expansion about $z_0$ with vanishing principal part, i.e. $f(z) = \sum_{k\geq 0}c_k (z-z_0)^k$.
+(vi) The Laurent expansion of $f$ on a punctured disc $\{z : 0<\abs{z-z_0}<\delta\}\subseteq\Omega$ has vanishing principal part: $f(z)=\sum_{k\geq0}c_k(z-z_0)^k$ there.
 :::

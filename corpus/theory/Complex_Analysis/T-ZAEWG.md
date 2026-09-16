@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-ZAEWG
 kind: theorem
-title: Uniformization
+title: Uniformization theorem
 classification:
   areas:
   - complex-analysis
@@ -15,12 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Every Riemann surface $S$ is the quotient of a free proper holomorphic action of a group $G$ on the universal cover $\tilde S$ of $S$, so $S\cong \tilde S/G$ is a biholomorphism.
-Moreover, $\tilde S$ is biholomorphic to either
-
-- $\CP^1$
-
-- $\CC$
-
-- $\DD$
+Let $S$ be a connected Riemann surface with universal cover $\widetilde S\to S$.
+Then $\widetilde S$ is a simply connected Riemann surface, and its group $G$ of [[D-4VGAW|deck transformations]] acts on $\widetilde S$ freely and properly discontinuously by biholomorphisms, with $S$ biholomorphic to $\widetilde S/G$.
+Moreover, $\widetilde S$ is biholomorphic to exactly one of $\CP^1$, $\CC$, and $\DD$.
 :::

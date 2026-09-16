@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-XECJ3
 kind: theorem
-title: Inverse Function Theorem
+title: Inverse function theorem
 classification:
   areas:
   - complex-analysis
@@ -13,15 +13,19 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-For $f \in C^1(\RR; \RR)$ with $f'(a) \neq 0$, then $f$ is invertible in a neighborhood $U \ni a$, $g\da f\inv \in C^1(U; \RR)$, and at $b\da f(a)$ the derivative of $g$ is given by
-\[
-g'(b) = {1 \over f'(a)}
-.\]
-For $F \in C^1(\RR^n, \RR^n)$ with $D_f$ invertible in a neighborhood of $a$, so $\det(J_f)\neq 0$, then setting $b\da F(a)$,
-\[
-J_{F\inv}(q) = \qty{J_F(p)}\inv
-.\]
+::: {.theorem}
+(i) Let $I\subseteq\RR$ be an open interval, let $f\in C^1(I)$, and let $a\in I$ with $f'(a)\neq0$.
+Then there are open intervals $U\ni a$ and $V\ni b\coloneqq f(a)$ such that $f$ restricts to a bijection $U\to V$ whose inverse $g\colon V\to U$ is $C^1$, and
+$$
+g'(b)=\frac{1}{f'(a)}.
+$$
 
-The version for holomorphic functions: if $f\in \Hol(\CC; \CC)$ with $f'(p)\neq 0$ then there is a neighborhood $V\ni p$ with that $f\in \BiHol(V, f(V))$.
+(ii) Let $A\subseteq\RR^n$ be open, let $F\colon A\to\RR^n$ be $C^1$, and let $a\in A$ with $\det DF(a)\neq0$.
+Then there are open sets $U\ni a$ and $V\ni F(a)$ such that $F$ restricts to a bijection $U\to V$ whose inverse $F^{-1}\colon V\to U$ is $C^1$, and for every $p\in U$,
+$$
+D(F^{-1})(F(p))=\bigl(DF(p)\bigr)^{-1}.
+$$
+
+(iii) Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $p\in\Omega$ with $f'(p)\neq0$.
+Then there is an open set $V\ni p$ such that $f(V)$ is open and $f|_V\colon V\to f(V)$ is a [[D-TM4TE|biholomorphism]].
 :::

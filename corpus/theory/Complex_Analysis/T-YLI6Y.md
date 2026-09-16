@@ -13,7 +13,9 @@ review: draft
 ---
 
 ::: {.theorem}
-Suppose  $f$ is holomorphic and nonvanishing on $\Omega$.
-If any interior point $z_0\in \Omega^\circ$ is a relative minimum for $f$, then $f$ is constant.
-If $f$ is nonconstant, then the minimum must occur on $\bd\Omega$.
+Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomorphic]] and nonvanishing on $\Omega$.
+
+(i) If $\abs{f}$ has a local minimum at some $z_0\in\Omega$, then $f$ is constant on $\Omega$.
+
+(ii) If moreover $\Omega$ is bounded, $f$ extends continuously to $\overline{\Omega}$, and $f$ is nonconstant, then $\min_{\overline{\Omega}}\abs{f}$ is attained only at points of $\partial\Omega$.
 :::

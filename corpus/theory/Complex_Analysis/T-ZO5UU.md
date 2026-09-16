@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-ZO5UU
 kind: theorem
-title: Jordan's Lemma
+title: Jordan's lemma
 classification:
   areas:
   - complex-analysis
@@ -13,28 +13,30 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-
-For $\alpha > 0$,
-define
-\[
-C_R \da \ts{ z=Re^{it} \st t\in [0, \pi] }
-.\]
+::: {.theorem}
+For $R>0$ let $C_R$ be the upper semicircle $t\mapsto Re^{it}$, $t\in[0,\pi]$.
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_20-35-11.png)
-\[
-\abs{\int_{C_R} e^{i\alpha z} g(z) \dz} \leq \pi\alpha\inv M_R \qquad M_R \da \sup_{z\in C_R} \abs{g(z)}
-.\]
-Note that if $M_R\to 0$ as $R\to \infty$, this integral vanishes -- so this works if $M_R \in \bigo\qty{1\over R^\eps}$ for $\eps>0$.
 
-For $\alpha < 0$, the same statement holds with the contour replaced by $\tilde C_R\da \ts{Re{it} \st t\in [0, -\pi]}$.
-This is because the main estimate involves
-\[
-\cdots & \leq \lim _{R \rightarrow \infty} \int_{H_{R}} e^{-\alpha R \sin \theta}|F(z)| R d \theta
-,\]
-which goes to zero if $-\alpha n\sin(\theta)<0$, i.e. 
+Let $\alpha>0$, let $g$ be continuous on $C_R$, and let $M_R\coloneqq\sup_{z\in C_R}\abs{g(z)}$.
+Then
+$$
+\abs{\int_{C_R}e^{i\alpha z}g(z)\dz}\leq\frac{\pi}{\alpha}M_R.
+$$
+In particular, if $g$ is continuous on $\{z : \operatorname{Im}z\geq0,\ \abs{z}\geq R_0\}$ for some $R_0$ and $M_R\to0$ as $R\to\infty$, then $\int_{C_R}e^{i\alpha z}g(z)\dz\to0$.
 
-- $\alpha>0$ and $\sin(\theta)>0$, so $C_R$ is in the upper half-plane, or
-- $\alpha < 0$ and $\sin(\theta)<0$, so $C_R$ is in the lower half-plane.
+For $\alpha<0$ the same statements hold with $C_R$ replaced by the lower semicircle $t\mapsto Re^{-it}$, $t\in[0,\pi]$, and $\pi/\alpha$ replaced by $\pi/\abs{\alpha}$.
+:::
 
+::: {.proof}
+For $\alpha>0$ and $z=Re^{it}$, $\abs{e^{i\alpha z}}=e^{-\alpha R\sin t}$ and $\abs{\dz}=R\,dt$, so
+$$
+\abs{\int_{C_R}e^{i\alpha z}g(z)\dz}\leq M_R\int_0^\pi e^{-\alpha R\sin t}R\,dt=2M_R\int_0^{\pi/2}e^{-\alpha R\sin t}R\,dt.
+$$
+Since $\sin t\geq 2t/\pi$ for $t\in[0,\pi/2]$,
+$$
+\int_0^{\pi/2}e^{-\alpha R\sin t}R\,dt\leq\int_0^{\pi/2}e^{-2\alpha Rt/\pi}R\,dt\leq\frac{\pi}{2\alpha},
+$$
+which gives the bound.
+For $\alpha<0$ and $z=Re^{-it}$ with $t\in[0,\pi]$, $\abs{e^{i\alpha z}}=e^{\alpha R\sin t}=e^{-\abs{\alpha}R\sin t}$, and the same estimate applies with $\abs{\alpha}$ in place of $\alpha$.
 :::
