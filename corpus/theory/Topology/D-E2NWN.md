@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-E2NWN
 kind: definition
 title: First countable space
+prompts:
+- What does it mean for a space to be first countable?
 classification:
   areas:
   - topology

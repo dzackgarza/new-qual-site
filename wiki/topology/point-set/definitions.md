@@ -59,8 +59,6 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-E2NWN]]
 
-[[FD-3TS3M]]
-
 [[D-ZFRV4]] [[D-BUAYX]]
 
 [[D-3ZBXG]]
