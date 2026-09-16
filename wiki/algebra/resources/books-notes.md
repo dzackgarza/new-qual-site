@@ -2,25 +2,23 @@
 order: 20
 ---
 
-# Algebra Books and Notes
+# Algebra books and notes
 
 ## Books
 
-- Standards
+- General texts
 
-  - [@DF04, except chaps. 15-17]
+  - [@DF04], chapters other than 15--17
 
-  - Groups, Rings, Modules: [Cambridge Part IB lecture notes](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
+  - Groups, rings, and modules: [Cambridge Part IB lecture notes](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
 
-  - Galois Theory: [Cambridge Part II lecture notes](https://dec41.user.srcf.net/notes/II_M/galois_theory.pdf)
+  - Galois theory: [Cambridge Part II lecture notes](https://dec41.user.srcf.net/notes/II_M/galois_theory.pdf)
 
-- Extra Topics
+- Representation theory
 
-  - Serre: Representations of Finite Groups (Sections 1-6).
+  - Serre, *Linear Representations of Finite Groups*, sections 1--6.
 
-  - Fulton-Harris: Representation Theory: A First Course (Graduate Texts in Mathematics/Readings in Mathematics)
-
-  - Lie groups and algebras, Chapters 7-10.
+  - Fulton and Harris, *Representation Theory: A First Course*; chapters 7--10 treat Lie groups and Lie algebras.
 
 ## Notes
 
@@ -30,6 +28,6 @@ order: 20
 
 [[attachments/Review1.pdf|Abstract algebra test review: direct products and quotient groups]]
 
-[[attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf|Tevelev, Graduate Algebra: Numbers, Equations, Symmetries]] — graduate-algebra notes covering field extensions and Galois theory, radicals and cyclotomic fields, quadratic extensions and reciprocity, affine algebraic geometry and the Nullstellensatz, localization and Nakayama's lemma, and representations and characters of finite groups. The text includes exercise sections and sample midterms within the exposition.
+[[attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf|Tevelev, Graduate Algebra: Numbers, Equations, Symmetries]] -- graduate algebra notes covering field extensions and Galois theory, radicals and cyclotomic fields, quadratic extensions and reciprocity, affine algebraic geometry and the Nullstellensatz, localization and Nakayama's lemma, and representations and characters of finite groups. The notes include exercise sections and sample midterms.
 
 [MIT algebra qual preparation page](https://www.mit.edu/~fengt/AlgebraPrep.html)

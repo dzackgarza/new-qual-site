@@ -1,27 +1,27 @@
 ---
-title: Ring and Commutative Algebra Resources
+title: Ring and commutative algebra resources
 order: 50
 ---
 
-# Ring and Commutative Algebra Resources
+# Ring and commutative algebra resources
 
 ## Notes and review
 
-- [[SRC-UCSD-ALG-REVIEW-RINGS-MODULES|UCSD Ring and Module Theory Qual Review]], with the review PDF as collection provenance; its modified scalar-extension problem is recorded as an explicit variant card.
+- [[SRC-UCSD-ALG-REVIEW-RINGS-MODULES|UCSD ring and module theory qual review]].
 
 - [McNulty's ring-theory qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/rng.pdf)
 
-- [[SRC-UCSD-ALG-REVIEW-FIELDS|UCSD Field Theory Qual Review]].
+- [[SRC-UCSD-ALG-REVIEW-FIELDS|UCSD field theory qual review]].
 
 ## Problems
 
 - [Ring-theory qualifying-exam problems](attachments/Ring_Theory_Qual_Problems.pdf)
 
-- MIT ring theory: [problems for discussion](https://www.mit.edu/~fengt/Rings.pdf), [combined problem file](https://www.mit.edu/~fengt/RingProblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/RingsSolns.pdf).
+- MIT ring theory: [problems for discussion](https://www.mit.edu/~fengt/Rings.pdf), [combined problem file](https://www.mit.edu/~fengt/RingProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/RingsSolns.pdf).
 
-- MIT commutative algebra: [problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), [combined problem file](https://www.mit.edu/~fengt/CAlgProblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
+- MIT commutative algebra: [problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), [combined problem file](https://www.mit.edu/~fengt/CAlgProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
 
-- Extra MIT practice references: Fall 2016 A6; Spring 2015 M5.
+- Additional MIT qual problems: Fall 2016 A6; Spring 2015 M5.
 
 ## Solutions
 

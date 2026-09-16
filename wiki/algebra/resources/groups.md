@@ -1,13 +1,13 @@
 ---
-title: Group Theory Resources
+title: Group theory resources
 order: 40
 ---
 
-# Group Theory Resources
+# Group theory resources
 
 ## Notes and review
 
-- [[SRC-UCSD-ALG-REVIEW-GROUPS|UCSD Group Theory Qual Review]], with the review PDF as collection provenance and its selected exam problems linked to canonical cards.
+- [[SRC-UCSD-ALG-REVIEW-GROUPS|UCSD group theory qual review]].
 
 - [McNulty's group-theory qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/gp.pdf)
 
@@ -17,9 +17,9 @@ order: 40
 
 - [Group theory midterm (no solutions)](attachments/Group_Theory_(No_Solns).pdf)
 
-- MIT finite-group review: [problems for discussion](https://www.mit.edu/~fengt/GroupTheory.pdf), [combined problem file](https://www.mit.edu/~fengt/FiniteGroupsProblems.pdf), and [hints/solutions](https://www.mit.edu/~fengt/GroupTheorySolns.pdf).
+- MIT finite-group review: [problems for discussion](https://www.mit.edu/~fengt/GroupTheory.pdf), [combined problem file](https://www.mit.edu/~fengt/FiniteGroupsProblems.pdf), and [hints and solutions](https://www.mit.edu/~fengt/GroupTheorySolns.pdf).
 
-- Extra MIT practice references: Spring 2010 M1, Spring 2012 A10, Fall 2013 M2, Spring 2014 A5, Fall 2014 A1, Fall 2015 M1, Spring 2016 M1, Spring 2016 A3, Fall 2016 M1.
+- Additional MIT qual problems: Spring 2010 M1, Spring 2012 A10, Fall 2013 M2, Spring 2014 A5, Fall 2014 A1, Fall 2015 M1, Spring 2016 M1, Spring 2016 A3, Fall 2016 M1.
 
 ## Solutions and worked practice
 
@@ -29,7 +29,7 @@ order: 40
 
 - [Chapter 8 solutions](attachments/Ch8Sltns.pdf)
 
-- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Chapter 9 factor-group solutions]], with the retained solution PDF as collection provenance.
+- [[SRC-CH9-FACTOR-GROUP-SOLUTIONS|Chapter 9 factor-group solutions]]
 
 - [Chapter 10, part A solutions](attachments/Ch10PtASltns.pdf)
 
@@ -39,4 +39,4 @@ order: 40
 
 - [Algebra homework 4 solutions](attachments/Algebra_HW_4_Solns.pdf)
 
-- [Nilpotent Group Practice](attachments/solns7.pdf)
+- [Nilpotent group practice](attachments/solns7.pdf)

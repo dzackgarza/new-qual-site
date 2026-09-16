@@ -9,26 +9,26 @@ Books, topic lists, problem sheets, and solutions for the algebra qual.
 
 ## General
 
-- [[algebra/resources/books-notes|Books and Notes]], the annotated bibliography and local review notes.
+- [[algebra/resources/books-notes|Books and notes]] -- textbooks, lecture notes, and review notes.
 
-- [[algebra/resources/syllabus|Topics and Remarks]], the topic checklist.
+- [[algebra/resources/syllabus|Topics and remarks]] -- topic lists by subject, with textbook sections.
 
-- [[algebra/resources/problems|Problem Collections]], the local algebra problem PDFs.
+- [[algebra/resources/problems|Problem collections]] -- compiled algebra prelim collections.
 
-- [[algebra/resources/solutions-algebra|Solutions]], the solution indexes and compendia.
+- [[algebra/resources/solutions-algebra|Solutions]] -- solution collections.
 
-- [[algebra/resources/external|External Algebra Qual Resources]], qualifying-exam archives and broad external notes/problem banks.
+- [[algebra/resources/external|External algebra qual resources]] -- exam archives, problem banks, and notes hosted elsewhere.
 
 ## By topic
 
-- [[algebra/resources/groups|Group Theory Resources]].
+- [[algebra/resources/groups|Group theory resources]].
 
-- [[algebra/resources/rings-and-ideals|Ring and Commutative Algebra Resources]].
+- [[algebra/resources/rings-and-ideals|Ring and commutative algebra resources]].
 
-- [[algebra/resources/fields|Field and Galois Theory Resources]].
+- [[algebra/resources/fields|Field and Galois theory resources]].
 
-- [[algebra/resources/modules|Linear Algebra and Module Resources]].
+- [[algebra/resources/modules|Linear algebra and module resources]].
 
-- [[algebra/resources/representations|Representation Theory Resources]].
+- [[algebra/resources/representations|Representation theory resources]].
 
-Browse the [Sources listing](exams.html) by subject, institution, and year for exam collections already represented in the corpus.
+Exam collections are listed by subject, institution, and year in the [Sources listing](exams.html).
