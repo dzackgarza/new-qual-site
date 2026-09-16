@@ -8,10 +8,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Wrote the statement in math mode and added a remark that Table 5.1, which the solution's alpha labels refer to, is not in the source; page 1 of Ch7Sltns.pdf.
 ---
 
 ::: {.problem}
-Let H = {(1), (12)(34), (13)(24), (14)(23)}. Find the left cosets of H in $A _ { 4 }$ (using table 5.1).
+Let $H = \{(1), (12)(34), (13)(24), (14)(23)\}$. Find the left cosets of $H$ in $A_4$ (using table 5.1).
 :::
 
 ::: {.solution}
@@ -28,4 +33,8 @@ $$
 $$
 ( 1 3 2 ) H = \{ ( 1 3 2 ) , ( 1 4 3 ) , ( 2 3 4 ) , ( 1 2 4 ) \} = \{ \alpha _ { 9 } , \alpha _ { 1 0 } , \alpha _ { 1 1 } , \alpha _ { 1 2 } \}
 $$
+:::
+
+::: {.remark}
+The source does not reproduce table 5.1; the labels $\alpha_1, \ldots, \alpha_{12}$ in the solution refer to that table.
 :::
