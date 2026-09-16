@@ -23,7 +23,7 @@ topics:
 For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some neighborhood with property $P$; some notions, such as local connectedness, instead require a neighborhood basis of sets with property $P$ at every point.
 :::
 
-[[D-YEWUV]]
+[[D-Y6JAS]]
 
 [[D-WKURJ]]
 
@@ -74,10 +74,6 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 [[D-5VCMJ]]
 
 [[D-D7AFV]]
-
-[[D-Y6JAS]]
-
-[[FD-72JAN]]
 
 [[FD-PMA24]]
 

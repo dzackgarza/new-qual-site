@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-Y6JAS
 kind: definition
 title: Limit point
+prompts:
+- What is a limit point of a subset $A \subseteq X$?
 classification:
   areas:
   - topology
@@ -17,6 +19,7 @@ review: draft
 ::: {.definition}
 Let $X$ be a topological space, $A\subseteq X$, and $x\in X$.
 The point $x$ is a \dfn{limit point} of $A$ if every [[D-JMRPA|neighborhood]] of $x$ meets $A\sm\ts{x}$.
+A limit point is also called an accumulation point.
 :::
 
 ::: {.proposition}
