@@ -43,7 +43,7 @@ m \mapsto \operatorname{div}(\chi^m) = \sum_{\rho \in \Sigma(1)} \inp{m}{u_\rho}
 \]
 whose kernel is $M \cap \bigcap_\rho u_\rho^\perp$.
 It is injective, so both sequences are short exact, exactly when the $u_\rho$ span $N_\RR$, that is, when $X_\Sigma$ has no torus factor.
-[@Ful93, §3.3]
+[@Ful93]
 :::
 
 ::: {.proposition title="Cartier divisors as a limit over the fan"}

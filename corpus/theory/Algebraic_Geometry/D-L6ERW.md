@@ -34,7 +34,7 @@ For a coherent sheaf $\mcf$ on a closed subscheme $X \subseteq \PP^n_k$, the **H
 
 ::: {.proposition}
 For $m \gg 0$, $h_\mcf(m) = \chi(X, \mcf(m)) = P_\mcf(m)$, the value of the Hilbert polynomial of $\mcf$ ([[D-COHEULER]]), and $P_X = P_{\OO_X}$.
-[@Har10a, Theorem III.5.2, Exercise III.5.2]
+[@Har10a, Exercise III.5.2]
 :::
 
 ::: {.remark title="Reading off the coefficients"}

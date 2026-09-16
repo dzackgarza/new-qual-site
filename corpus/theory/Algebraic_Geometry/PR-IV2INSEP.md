@@ -25,7 +25,7 @@ prompts:
 ::: {.proposition}
 Let $f : X \to Y$ be a finite morphism of curves over $k = \kbar$ with $\characteristic k = p$, and suppose $k(X)/k(Y)$ is purely inseparable of degree $p^n$.
 Then $X$ and $Y$ are isomorphic as schemes, $g(X) = g(Y)$, and $f$ is the $n$-fold composite of $k$-linear Frobenius morphisms.
-[@Har10a, Proposition IV.2.5]
+[@Har10a]
 :::
 
 ::: {.remark title="Why the statement is this strong"}

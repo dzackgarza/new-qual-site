@@ -26,14 +26,14 @@ Let $\phi: A \to B$ be a ring map with $B$ integral over $\phi(A)$, and $f: \Spe
 - (Going up) If $\mfp_1 \subseteq \cdots \subseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \subseteq \cdots \subseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\phi^{-1}(\mfq_i) = \mfp_i$, then it extends to a chain $\mfq_1 \subseteq \cdots \subseteq \mfq_n$ with $\phi^{-1}(\mfq_i) = \mfp_i$ for all $i$.
 
 In particular $f$ is a closed map.
-[@AM18, Theorems 5.10 and 5.11, Exercise 5.1]
+[@AM18]
 :::
 
 ::: {.theorem title="Going down"}
 Let $A \subseteq B$ be domains with $A$ integrally closed and $B$ integral over $A$.
 If $\mfp_1 \supseteq \cdots \supseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \supseteq \cdots \supseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\mfq_i \cap A = \mfp_i$, then it extends to a chain $\mfq_1 \supseteq \cdots \supseteq \mfq_n$ with $\mfq_i \cap A = \mfp_i$.
 Going down also holds for every flat ring map $A \to B$.
-[@AM18, Theorem 5.16, Exercise 3.18]
+[@AM18]
 :::
 
 ::: {.remark}

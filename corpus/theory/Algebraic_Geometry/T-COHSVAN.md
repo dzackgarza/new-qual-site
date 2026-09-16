@@ -26,7 +26,7 @@ Then there is $n_0$ such that
 \[
 H^i(X, \mcf(n)) = 0 \quad \text{for all } i > 0 \text{ and all } n \geq n_0 .
 \]
-[@Har10a, Theorem III.5.2]
+[@Har10a]
 :::
 
 ::: {.remark}

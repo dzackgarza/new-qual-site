@@ -34,7 +34,7 @@ The Hilbert polynomial of $\mcf$ is the unique $P \in \QQ[z]$ with $P(n) = \chi(
 ::: {.definition title="Arithmetic and geometric genus"}
 For $X$ projective over a field of dimension $n$, the **arithmetic genus** is $p_a(X) \da (-1)^n \qty(\chi(\OO_X) - 1)$, so $p_a(X) = 1 - \chi(\OO_X)$ for a curve.
 For $X$ nonsingular and projective over an algebraically closed field, the **geometric genus** is $p_g(X) \da h^0(X, \omega_X)$, and by Serre duality $p_g(X) = h^n(X, \OO_X)$.
-[@Har10a, §II.8, Exercise III.5.3, Corollary III.7.7]
+[@Har10a, §II.8, Exercise III.5.3]
 :::
 
 ::: {.example}

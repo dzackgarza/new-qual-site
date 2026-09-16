@@ -38,7 +38,7 @@ If $X$ is a nonsingular projective curve over $k = \bar k$, then
 p_a(X) = p_g(X) = \dim_k H^1(X, \OO_X) ,
 \]
 the **genus** $g$ of $X$: since $h^0(\OO_X) = 1$, $p_a = 1 - \chi(\OO_X) = h^1(\OO_X)$, and Serre duality gives $h^0(\omega_X) = h^1(\OO_X)$.
-[@Har10a, Exercise III.5.3, Corollary III.7.7]
+[@Har10a, Exercise III.5.3]
 :::
 
 ::: {.proposition}
