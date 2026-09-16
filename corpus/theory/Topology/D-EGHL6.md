@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-EGHL6
 kind: definition
-title: Perfect Pairing
+title: Perfect pairing
 classification:
   areas:
   - topology
@@ -14,6 +14,11 @@ review: draft
 ---
 
 ::: {.definition}
-A pairing alone is an $R\dash$bilinear module map, or equivalently a map out of a tensor product since $p: M\tensor_{R} N \to L$ can be partially applied to yield $\phi: M \to L^N = \hom_{R}(N, L)$.
-A pairing is **perfect** when $\phi$ is an isomorphism.
+Let $R$ be a commutative ring and $M$, $N$, $L$ $R$-modules.
+A \dfn{pairing} of $M$ and $N$ with values in $L$ is an $R$-bilinear map $p\colon M\times N\to L$, equivalently an $R$-linear map $M\otimes_R N\to L$ on the [[D-DEFTENS|tensor product]].
+The pairing $p$ is \dfn{perfect} if the $R$-linear map
+$$
+\phi\colon M\to\Hom_R(N, L),\qquad \phi(m)(n)\coloneqq p(m, n),
+$$
+is an isomorphism.
 :::
