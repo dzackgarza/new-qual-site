@@ -9,10 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Checked against Chapter 3 review Question 3 in both assets/attachments/extracted/chapter-3.md and the Mistral OCR extraction of the whole book, assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md, with the book's Chapter 8 solution where they disagree. Choice (D), lost in the chapter-3.pdf extraction, is taken from the book extraction."
 ---
 
 ::: {.problem}
-What's the area of the triangle whose vertices are (0, 0, 1), (0, 2, 0), and (3, 0, 0)? (A) $\frac { 8 } { 3 }$ (B) $\frac { 7 } { 2 }$ (C) $3$ (D) [choice (D) value lost in the scan] (E) $7$
+What's the area of the triangle whose vertices are $(0,0,1)$, $(0,2,0)$, and $(3,0,0)$?
 
-![Scanned source page preserving diagrams or OCR-damaged choices for Question 3.](../../../assets/attachments/gre-math-ch3-review/page-1.png)
+(A) $\frac{8}{3}$
+(B) $\frac{7}{2}$
+(C) $3$
+(D) $6$
+(E) $7$
 :::
