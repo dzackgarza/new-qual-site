@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-NKZBT
 kind: proposition
-title: Commuting Sums with Integrals
+title: Term-by-term integration of series of functions
 classification:
   areas:
   - real-analysis
@@ -14,15 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-f_n \geq 0 \text{ and } \sum_n \int \abs{f_n} = \sum_n \norm{f_n}_{L^1} < \infty \implies \sum_n \int f_n = \int \sum_n f_n
-.\]
-If the $f_n$ are *not* necessarily non-negative, we still have
-\[  
-\ts{f_n} \subseteq L^1 \text { and }\qty{\sum\int\abs{f_n} < \infty \text { or } \int \sum \abs{f_n} < \infty }
-\implies
-\int\sum_n f_n = \sum_n \int f_n
-.\]
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]].
 
+(a) If $f_n\in$ [[D-BF5L2|$L^+$]] for $n\geq1$, then $\int_X\sum_n f_n\dmu=\sum_n\int_X f_n\dmu$ in $[0,\infty]$ [@Fol13, Theorem 2.15].
+
+(b) If $f_n\in L^1(\mu)$ for $n\geq1$ and $\sum_n\int_X\abs{f_n}\dmu<\infty$, then $\sum_n f_n$ converges almost everywhere to a function in $L^1(\mu)$ and $\int_X\sum_n f_n\dmu=\sum_n\int_X f_n\dmu$ [@Fol13, Theorem 2.25].
+:::
+
+::: {.remark}
+By (a) applied to $\abs{f_n}$, the hypothesis $\sum_n\int_X\abs{f_n}\dmu<\infty$ in (b) is the same as $\int_X\sum_n\abs{f_n}\dmu<\infty$.
 :::
