@@ -24,5 +24,5 @@ $$
 :::
 
 ::: {.remark}
-In the $\varepsilon$-$\delta$ formulation of [[D-HHVPT|continuity]], $\delta$ may depend on the point $y$; uniform continuity requires one $\delta$ for all $y\in X$.
+For continuity of $f$ at every point, the same condition is required with $\delta=\delta(\varepsilon,y)$ allowed to depend on the point $y$; uniform continuity requires one $\delta$ for all $y\in X$.
 :::
