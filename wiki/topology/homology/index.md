@@ -8,10 +8,10 @@ topics:
 
 # Homology
 
-- [[topology/homology/compute-h-star|Compute $H_*$]], the three methods and the checks.
+- [[topology/homology/compute-h-star|Compute $H_*$]]: cellular homology, Mayer--Vietoris, pairs, and consistency checks.
 
-- [[topology/homology/homology|Homology theory and computations]], the facts, the known groups, and the exact sequences.
+- [[topology/homology/homology|Homology theory and computations]]: properties of homology, computed groups, and exact sequences.
 
-- [[topology/homology/homological-algebra|Homological algebra]], the machinery underneath.
+- [[topology/homology/homological-algebra|Homological algebra]]: chain complexes, exact sequences, $\operatorname{Tor}$, and $\operatorname{Ext}$.
 
 - [[topology/homology/exercises|Exercises]].
