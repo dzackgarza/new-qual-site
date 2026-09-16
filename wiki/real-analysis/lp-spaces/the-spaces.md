@@ -44,7 +44,7 @@ For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with 
 
 [[PR-HLPMX]] [[PR-EHL3O]]
 
-[[T-5YROQ]]
+[[T-RIY2P]]
 
 [[PR-O4AY4]]
 
