@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 25).
 ---
 
 ::: {.problem}
-Let$f , g : \mathbb { C } \to \mathbb { C }$be entire. Show that if$e ^ { f ( z ) } + e ^ { g ( z ) } = 1$for all$z \in \mathbb { C }$, then f and$g$are constant.
+Let $f, g : \CC \to \CC$ be entire. Show that if $e^{f(z)} + e^{g(z)} = 1$ for all $z \in \CC$, then $f$ and $g$ are constant.
 :::

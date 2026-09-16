@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 21).
 ---
 
 ::: {.problem}
-Find$\operatorname* { l i m } _ { z \to 0 } { \frac { ( \overline { { { z } } } ) ^ { 2 } } { z ^ { 2 } } }$or show that the limit does not exist.
+Find $\displaystyle\lim_{z \to 0} \frac{(\overline{z})^2}{z^2}$ or show that the limit does not exist.
 :::

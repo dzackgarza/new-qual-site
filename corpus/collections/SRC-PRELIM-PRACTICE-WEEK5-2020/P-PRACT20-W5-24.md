@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 24).
 ---
 
 ::: {.problem}
-If$f ( z ) = ( 2 x + 3 y ) + i g ( x , y )$is analytic and$g ( 2 , 3 ) = 1$, what is$g ( x , y ) ?$
+If $f(z) = (2x + 3y) + i\,g(x, y)$ is analytic and $g(2, 3) = 1$, what is $g(x, y)$?
 :::

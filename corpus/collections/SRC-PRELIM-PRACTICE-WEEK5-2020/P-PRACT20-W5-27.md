@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 27).
 ---
 
 ::: {.problem}
-Evaluate$\int _ { 0 } ^ { 2 \pi } e ^ { e ^ { i t } } d t .$
+Evaluate $\int_0^{2\pi} e^{e^{it}}\,dt$.
 :::

@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 33).
 ---
 
 ::: {.problem}
-Evaluate the integral$\oint _ { \{ | z | = 3 \} } \frac { e ^ { \frac { 1 } { 1 - z } } } { z } d z .$
+Evaluate the integral $\oint_{\{\abs{z} = 3\}} \frac{e^{\frac{1}{1 - z}}}{z}\,dz$.
 :::

@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 30).
 ---
 
 ::: {.problem}
-Evaluate$\int _ { - \infty } ^ { \infty } { \frac { d x } { 1 + x ^ { 4 } } } .$
+Evaluate $\int_{-\infty}^{\infty} \frac{dx}{1 + x^4}$.
 :::

@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 8).
 ---
 
 ::: {.problem}
-Let G be a group and define$\operatorname { A u t } ( G )$to be the set of all isomorphisms of G to itself. Prove that$\operatorname { A u t } ( G )$is a group under the operation of functional composition. For each$g \in G ,$, define the map,$\phi _ { g } ( x ) = g x g ^ { - 1 }$for$x \in G$and let Inn$( G ) = \{ \phi _ { g } : g \in G \}$. Show that Inn(G) is a subgroup of Aut(G). What does Inn(G) look like if G is abelian?
+Let $G$ be a group and define $\Aut(G)$ to be the set of all isomorphisms of $G$ to itself. Prove that $\Aut(G)$ is a group under the operation of functional composition. For each $g \in G$, define the map $\phi_g(x) = gxg^{-1}$ for $x \in G$ and let $\operatorname{Inn}(G) = \{\phi_g : g \in G\}$. Show that $\operatorname{Inn}(G)$ is a subgroup of $\Aut(G)$. What does $\operatorname{Inn}(G)$ look like if $G$ is abelian?
 :::

@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 12).
 ---
 
 ::: {.problem}
-Let R be a ring with unity. A set$I \subset R$is said to be a right ideal of$R \operatorname { i f } \left( I , + \right)$is a subgroup of$( R , + )$and$x r \in I$whenever$x \in I$and$r \in R .$Suppose R has exactly two distinct right ideals. Show that every element in R has a multiplicative inverse (except for the additive identity).
+Let $R$ be a ring with unity. A set $I \subset R$ is said to be a right ideal of $R$ if $(I, +)$ is a subgroup of $(R, +)$ and $xr \in I$ whenever $x \in I$ and $r \in R$. Suppose $R$ has exactly two distinct right ideals. Show that every element in $R$ has a multiplicative inverse (except for the additive identity).
 :::

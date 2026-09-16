@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 26).
 ---
 
 ::: {.problem}
-Let$r > 0$and let$P : \mathbb { C } \to \mathbb { C }$be a polynomial. What is$\oint _ { \{ | z | = r \} } P ( z ) d z ?$
+Let $r > 0$ and let $P : \CC \to \CC$ be a polynomial. What is $\oint_{\{\abs{z} = r\}} P(z)\,dz$?
 :::

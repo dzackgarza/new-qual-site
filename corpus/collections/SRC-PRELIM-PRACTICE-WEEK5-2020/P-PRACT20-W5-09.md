@@ -9,12 +9,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement with clean inline math and restored the answer choices mangled into a tagged display, checked against Week5_solns.pdf page 3 (Problem 9).
 ---
 
 ::: {.problem}
-Suppose that a group has an element of order 7 but no element which is its own inverse (other than the identity). Which of the following is a possible order for this group?
+Suppose that a group has an element of order $7$ but no element which is its own inverse (other than the identity). Which of the following is a possible order for this group?
 
-$$
-\mathrm { ( a ) ~ 2 7 ~ \phantom { - } ( b ) ~ 2 8 ~ \phantom { - } ( c ) ~ 3 5 ~ \phantom { - } ( d ) ~ 3 7 }\tag{e) 42}
-$$
+(a) $27$ (b) $28$ (c) $35$ (d) $37$ (e) $42$
 :::

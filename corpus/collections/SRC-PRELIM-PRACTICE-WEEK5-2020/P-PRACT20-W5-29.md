@@ -9,8 +9,13 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rewrote the statement in clean LaTeX with spacing around inline math, checked against Week5_solns.pdf (Problem 29).
 ---
 
 ::: {.problem}
-Let C be the circle$| z | = 2$, oriented positively. Evaluate$\oint _ { c } { \frac { \cosh ( \pi z ) d z } { z ( z ^ { 2 } + 1 ) } }$
+Let $C$ be the circle $\abs{z} = 2$, oriented positively. Evaluate $\oint_C \frac{\cosh(\pi z)\,dz}{z(z^2 + 1)}$.
 :::
