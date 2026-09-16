@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-2KICH
 kind: definition
-title: Weak Topology
+title: Weak topology determined by a family of subspaces
 classification:
   areas:
   - topology
@@ -14,11 +14,15 @@ review: draft
 ---
 
 ::: {.definition}
-For $X = \Union_\alpha X_\alpha$ a space written as a union of subspaces, the **weak topology** determined by $\ts{X_\alpha}$ declares $A\subseteq X$ closed iff $A\intersect X_\alpha$ is closed in $X_\alpha$ for every $\alpha$.
-It is the finest topology making every inclusion $X_\alpha\injects X$ continuous.
-A CW complex carries the weak topology determined by its skeleta, equivalently by its closed cells.
+Let $X$ be a topological space and let $(X_\alpha)_{\alpha}$ be a family of subspaces with $X = \Union_\alpha X_\alpha$.
+The \dfn{weak topology} determined by $(X_\alpha)_\alpha$ is the topology on $X$ in which a subset $A\subseteq X$ is closed if and only if $A\intersect X_\alpha$ is closed in $X_\alpha$ for every $\alpha$.
+:::
+
+::: {.remark}
+The weak topology is the finest topology on the set $X$ for which every inclusion $X_\alpha\injects X$ is continuous.
+A [[D-ZOU5G|CW complex]] $X$ carries the weak topology determined by its skeleta $X^n$, equivalently by its closed cells.
 :::
 
 ::: {.concept}
-See Hatcher, pp. 5 and 520.
+[@Hat02, pp. 5 and 520].
 :::
