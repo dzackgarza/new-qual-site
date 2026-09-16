@@ -46,8 +46,6 @@ For example, the torus and the annulus both have Euler characteristic $0$ and ar
 
 [[PR-JL5JP]]
 
-[[PR-ZW6XI]]
-
 ### Euler characteristic
 
 [[FF-IEHB2]]
