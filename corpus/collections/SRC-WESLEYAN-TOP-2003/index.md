@@ -30,7 +30,3 @@ source:
   - P-WESTOP03-09
   - P-WESTOP03-10
 ---
-
-::: remark
-All ten June 2003 source positions are represented. The retained compilation contains a second copy of this sitting with better OCR; that copy recovers Problem 3's “open subspaces of compact Hausdorff spaces” item and Problem 5's bound $|X|\ge2^{\aleph_0}$.
-:::
