@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-VM6MJ
 kind: theorem
-title: Schwarz lemma, a useful alternative statement
+title: Schwarz lemma as a dichotomy
 classification:
   areas:
   - complex-analysis
@@ -13,10 +13,10 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $f:\DD\to \DD$ be holomorphic with $f(0) = 0$.
-Then either
+Let $f\colon\DD\to\DD$ be [[D-E7A5W|holomorphic]] with $f(0)=0$.
+Then exactly one of the following holds.
 
-- $f(z) = e^{i\theta}z$ is a rotation, or
+(i) There is $\theta\in\RR$ with $f(z)=e^{i\theta}z$ for all $z\in\DD$.
 
-- $\abs{f'(0)} < 1$ and $\abs{f(z)} < \abs{z}$ for all $z\in \DD$, noting the strict inequalities.
+(ii) $\abs{f'(0)}<1$, and $\abs{f(z)}<\abs{z}$ for all $z\in\DD\setminus\{0\}$.
 :::

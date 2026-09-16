@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-VCX3Y
 kind: theorem
-title: Argument Principle, Zeros/Poles Version
+title: Argument principle counting zeros and poles
 classification:
   areas:
   - complex-analysis
@@ -17,12 +17,11 @@ relations:
 review: draft
 ---
 
-:::{.theorem}
-For $f$ meromorphic in $\Omega$ with multisets of zeros \( Z_f \da \ts{ z_j } \) and poles \( P_f\da \ts{ p_k } \) (so repeated with multiplicity)
-for $\gamma \da \bd \Omega$ not intersecting any of the zeros or poles,
-\[
-{1\over 2\pi i} \int_\gamma \del_{\log} f(z) \dz
-&= \# Z_f - \# P_f
-,\]
-where $\# Z_f$ and $\# P_f$ are the number of zeros and poles respectively, counted with multiplicity.
+::: {.theorem}
+Let $\Omega\subseteq\CC$ be a bounded open set whose boundary $\gamma\coloneqq\partial\Omega$ consists of finitely many piecewise smooth closed curves, oriented positively with respect to $\Omega$.
+Let $f$ be [[D-7DFVJ|meromorphic]] on an open set containing $\overline{\Omega}$, with no [[D-65VIK|zeros]] or [[D-AUD6K|poles]] on $\gamma$, and let $Z_f$ and $P_f$ be the numbers of zeros and poles of $f$ in $\Omega$, counted with multiplicity.
+Then
+$$
+\frac{1}{2\pi i}\int_\gamma\frac{f'(z)}{f(z)}\dz=Z_f-P_f.
+$$
 :::

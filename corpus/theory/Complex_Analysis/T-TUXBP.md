@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-TUXBP
 kind: theorem
-title: Implicit Function Theorem
+title: Implicit function theorem for $C^r$ maps
 classification:
   areas:
   - complex-analysis
@@ -15,32 +15,32 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $A \subseteq \RR^{k+n}$ be open and $f: A \to \RR^n$ of class $C^r$.
-Write $f$ as $f(\vector x, \vector y)$ with $\vector x\in\RR^k$ and $\vector y \in \RR^n$, so that
-\[
-Df = \left[\, \dd{f}{\vector x} \quad \dd{f}{\vector y} \,\right]
-\]
-splits into a $n\times k$ block and an $n\times n$ block.
-Suppose $(\vector a, \vector b) \in A$ satisfies $f(\vector a, \vector b) = 0$ and
-\[
-\det \dd{f}{\vector y}(\vector a, \vector b) \neq 0
-.\]
-Then there is a neighbourhood $B \subseteq \RR^k$ of $\vector a$ and a unique continuous $g: B \to \RR^n$ with $g(\vector a) = \vector b$ and
-\[
-f(\vector x, g(\vector x)) = 0 \quad\text{for all } \vector x \in B
-,\]
-and this $g$ is in fact $C^r$.
+Let $k,n\geq1$ and $r\geq1$, let $A\subseteq\RR^{k+n}$ be open, and let $f\colon A\to\RR^n$ be of class $C^r$.
+Write $f(\vector x,\vector y)$ with $\vector x\in\RR^k$ and $\vector y\in\RR^n$, so that
+$$
+Df=\begin{bmatrix}\dfrac{\partial f}{\partial\vector x} & \dfrac{\partial f}{\partial\vector y}\end{bmatrix}
+$$
+splits into an $n\times k$ block and an $n\times n$ block.
+Suppose $(\vector a,\vector b)\in A$ satisfies $f(\vector a,\vector b)=0$ and
+$$
+\det\frac{\partial f}{\partial\vector y}(\vector a,\vector b)\neq0.
+$$
+Then there are a neighbourhood $B\subseteq\RR^k$ of $\vector a$ and a unique continuous $g\colon B\to\RR^n$ with $g(\vector a)=\vector b$ and
+$$
+f(\vector x,g(\vector x))=0\quad\text{for all }\vector x\in B,
+$$
+and this $g$ is of class $C^r$.
 :::
 
 ::: {.remark}
-The invertible block is the one belonging to the variables being **solved for**, not the whole derivative: $Df$ is $n\times(k+n)$ and is never square unless $k=0$.
-The count is forced, $n$ equations solve for $n$ unknowns and the other $k$ are free.
-
-Differentiating the identity gives implicit differentiation without ever computing $g$:
-\[
-\dd{f}{\vector x} + \dd{f}{\vector y}\cdot Dg = 0 \implies Dg(\vector x) = -\left[ \dd{f}{\vector y}(\vector x, g(\vector x)) \right]\inv \cdot \dd{f}{\vector x}(\vector x, g(\vector x))
-.\]
-The proof applies the inverse function theorem to $F(\vector x, \vector y) \da (\vector x, f(\vector x, \vector y))$, whose derivative is invertible exactly when $\partial f/\partial \vector y$ is.
+The invertibility hypothesis is on the $n\times n$ block $\partial f/\partial\vector y$ belonging to the variables $\vector y$ being solved for; $Df$ itself is an $n\times(k+n)$ matrix.
+Differentiating $f(\vector x,g(\vector x))=0$ gives
+$$
+\frac{\partial f}{\partial\vector x}+\frac{\partial f}{\partial\vector y}\,Dg=0,
+\qquad\text{so}\qquad
+Dg(\vector x)=-\Bigl[\frac{\partial f}{\partial\vector y}(\vector x,g(\vector x))\Bigr]^{-1}\frac{\partial f}{\partial\vector x}(\vector x,g(\vector x)).
+$$
+The proof applies the inverse function theorem to $F(\vector x,\vector y)\coloneqq(\vector x,f(\vector x,\vector y))$, whose derivative at a point is invertible if and only if $\partial f/\partial\vector y$ is invertible there.
 :::
 
 ::: {.concept}
