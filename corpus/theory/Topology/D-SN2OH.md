@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-SN2OH
 kind: definition
-title: Neighborhoods, limit points, and open, closed, perfect, bounded, and dense sets in a metric space
+title: Neighborhoods, limit points, and open and closed sets in a metric space
 classification:
   areas:
   - topology
