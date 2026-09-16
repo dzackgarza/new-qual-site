@@ -15,7 +15,7 @@ title: "Complex analysis workshop week 2: Cauchy's integral formula and residues
 
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequalities]]
 
-- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Computing integrals]]: [[complex-analysis/residues-and-contours/computing-residues|residue formulas]], the [[complex-analysis/residues-and-contours/arc-estimates|$ML$-inequality]], and [[T-ZO5UU|Jordan's lemma]]
+- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Computing integrals]] — [[complex-analysis/residues-and-contours/computing-residues|residue formulas]], the [[complex-analysis/residues-and-contours/arc-estimates|$ML$-inequality]], and [[T-ZO5UU|Jordan's lemma]]
 
 ## Review
 
@@ -85,7 +85,7 @@ If $f(z)\to0$ as $|z|\to\infty$, then $g(w)=f(1/w)$ extends holomorphically to $
 \]
 [@SS03, Proposition 1.3.1]
 
-[[T-ZO5UU|Jordan's lemma]]: let $C_R=\{Re^{i\theta}:0\le\theta\le\pi\}$ with $R>0$, and let $f(z)=e^{iaz}g(z)$ on $C_R$ with $g$ continuous and $a>0$. Then
+[[T-ZO5UU|Jordan's lemma]]. Let $C_R=\{Re^{i\theta}:0\le\theta\le\pi\}$ with $R>0$, and let $f(z)=e^{iaz}g(z)$ on $C_R$ with $g$ continuous and $a>0$. Then
 \[
 \left|\int_{C_R}f(z)\,dz\right|\le\frac\pi a\,M_R,\qquad M_R=\max_{0\le\theta\le\pi}\left|g(Re^{i\theta})\right|.
 \]
