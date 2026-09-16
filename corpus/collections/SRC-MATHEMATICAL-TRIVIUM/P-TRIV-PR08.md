@@ -19,7 +19,7 @@ audit:
   note: Replaced the missing-figure note with a description of the Figure 7 bridge circuit from Probability Problem 8 on page 27 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Consider the circuit shown in figure.
 Each of its five relays is closed with the probability $p$ independently of other relays.
 

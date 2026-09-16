@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What can you say about curves over perfect fields?
 :::

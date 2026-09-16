@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose that $K/F$ is a Galois extension of fields with $\operatorname{Gal}(K/F) \cong S_n$ for some $n \geq 2$.
 Show that there is an irreducible polynomial $f(x) \in F[x]$ with $\deg f(x) = n$ such that $K$ is the splitting field of $f(x)$ over $F$.
 :::

@@ -19,6 +19,6 @@ audit:
   note: Restored the lost prime in f'(x) and separated the three functions against Real Analysis Problem 1 on page 8 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Find $f'(x)$, if $f(x) = \log\frac{a}{x}$, $\cos\arcsin x$, $\frac{x^2+1}{x^3+1}$.
 :::

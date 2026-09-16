@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State Frobenius's Theorem classifying all finite-dimensional associative division algebras over the real numbers $\mathbb{R}$, and state the generalized Hurwitz / Adams theorem for normed / alternative division algebras.
 :::
 
-::: solution
+::: {.solution}
 There are three related statements that should be distinguished.
 
 **Frobenius' theorem.** The finite-dimensional associative division algebras over $\mathbb R$ are exactly

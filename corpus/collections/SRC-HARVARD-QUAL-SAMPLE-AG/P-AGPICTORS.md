@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Does there exist a variety $V$ with $\Pic(V) = \ZZ/3$?
 
 Does there exist a *projective* variety with $\Pic(V) = \ZZ/3$?

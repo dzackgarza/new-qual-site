@@ -18,11 +18,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 - Show that any finite abelian group is isomorphic to the direct product of its Sylow subgroups
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every finite abelian group $G$ is isomorphic to the direct product of its Sylow subgroups.
 
 <1>1. Definition of the Sylow subgroups:

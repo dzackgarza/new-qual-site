@@ -23,7 +23,7 @@ Find all real numbers $x$ for which the series $\displaystyle\sum_{n=1}^{\infty}
 [Be sure to justify your analysis.]
 :::
 
-::: solution
+::: {.solution}
 Consider
 \[
 \sum_{n=1}^\infty \frac{x^n}{\sqrt{n^2+1}}.

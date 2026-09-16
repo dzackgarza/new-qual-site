@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Prove that there do not exist real polynomials $a,b,c,d$ such that
 \[
 a(x)<b(x)<c(x)<d(x)\quad(0<x<1)

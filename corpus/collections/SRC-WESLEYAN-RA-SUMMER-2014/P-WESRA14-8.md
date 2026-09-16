@@ -15,6 +15,6 @@ audit:
   note: Checked against Problem 8 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Assuming the Radon–Nikodym theorem for finite measure spaces, prove it for $\sigma$-finite measure spaces.
 :::

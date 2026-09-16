@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 30, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 An electron can occupy one of a countable number of energy levels in atom.
 The transition probabilities from i’s to j’s level per second are given by
 

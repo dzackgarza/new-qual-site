@@ -19,11 +19,11 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 14. Deduce from Hadamard’s theorem that if $F$ is entire and of growth order $\rho$ that is non-integral, then F has infinitely many zeros.
 :::
 
-::: solution
+::: {.solution}
 Suppose, toward a contradiction, that the entire function $F$ has only finitely many zeros. Hadamard's factorization theorem then reduces to
 \[
 F(z)=e^{P(z)}Q(z),

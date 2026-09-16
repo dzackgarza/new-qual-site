@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the suspension of $\mathbb{RP}^2$, i.e.
 $$
 X = \mathbb{RP}^2 \times [0, 1] / (\mathbb{RP}^2 \times \{0\}), (\mathbb{RP}^2 \times \{1\}).

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $u$ be a real-valued continuous function on $\overline{\mathbb{D}}$, and assume that $u$ is harmonic in $\mathbb{D} \setminus \{0\}$.
 Prove that $u$ is harmonic in $\mathbb{D}$.
 
@@ -21,7 +21,7 @@ You may use without proof Laplace's equation in polar coordinates: $$r\frac{\par
 You may also use without proof the fact that a harmonic function in $\mathbb{D} \setminus \{0\}$ that depends only on $|z|$ is necessarily of the form $u(z) = a\log|z| + b$, where $a$ and $b$ are real constants.
 :::
 
-::: solution
+::: {.solution}
 Fix $0<R<1$. Let $h$ be the harmonic function on $B(0,R)$ whose boundary
 values on $|z|=R$ agree with $u$; for example, $h$ is given by the Poisson
 integral of $u|_{|z|=R}$. Put

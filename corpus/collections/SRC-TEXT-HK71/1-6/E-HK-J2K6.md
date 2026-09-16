@@ -32,7 +32,7 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 The matrix is invertible, so its reduced row echelon form is $R=I_3$. One may take $P=A^{-1}$, namely
 \[
 P=

@@ -15,7 +15,7 @@ audit:
   note: Checked against Group A, problem A2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f_0,f_1,\dots:\mathbb R^d\to\mathbb R$ be Lebesgue measurable.
 Prove that
 \[

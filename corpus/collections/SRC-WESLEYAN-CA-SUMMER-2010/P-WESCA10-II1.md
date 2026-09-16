@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 For $r>0$, let
 \[
 \gamma_r(t)=re^{it},\qquad 0\le t\le\pi.

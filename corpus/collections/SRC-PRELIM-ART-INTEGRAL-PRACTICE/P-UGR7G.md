@@ -19,14 +19,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{dx}{9+x^2}.
 \]
 :::
 
-::: solution
+::: {.solution}
 With $u=x/3$, $dx=3\,du$,
 \[
 \int\frac{dx}{9+x^2}

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R^2\to\mathbb R$ satisfy:
 
 1. for every $y_0\in\mathbb R$, the function $x\mapsto f(x,y_0)$ is continuous;

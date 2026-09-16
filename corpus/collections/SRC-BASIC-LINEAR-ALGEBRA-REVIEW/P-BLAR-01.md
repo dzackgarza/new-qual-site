@@ -15,7 +15,7 @@ audit:
   note: Checked against Review Problem 1 in the deterministic MinerU Flash extraction assets/attachments/Basic_Linear_Algebra_Review_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 u=(4,1,3),

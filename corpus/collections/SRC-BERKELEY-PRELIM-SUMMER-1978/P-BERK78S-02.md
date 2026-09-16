@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R$ be the set of $2\times2$ matrices
 \[
 \begin{pmatrix}a&-b\\ b&a\end{pmatrix},

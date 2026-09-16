@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $a,b\in\operatorname{PGL}_2(\mathbb C)$ have the same finite order $n$.
 Prove that there exists $c\in\operatorname{PGL}_2(\mathbb C)$ such that $cac^{-1}$ is a power of $b$.
 :::

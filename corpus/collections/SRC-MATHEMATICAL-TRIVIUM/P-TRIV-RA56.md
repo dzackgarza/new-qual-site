@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 56, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute the series $J ( a ) = \sum _ { n = - \infty } ^ { \infty } | 2 n + 1 | e ^ { - a | 2 n + 1 | }$ for $a > 0$
 :::

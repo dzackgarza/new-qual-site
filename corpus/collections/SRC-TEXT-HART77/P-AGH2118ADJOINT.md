@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a continuous map of topological spaces.
 Show that for any sheaf $\mcf$ on $X$ there is a natural map $f\inv f_* \mcf \to \mcf$, and for any sheaf $\mcg$ on $Y$ there is a natural map $\mcg \to f_* f\inv \mcg$.
 

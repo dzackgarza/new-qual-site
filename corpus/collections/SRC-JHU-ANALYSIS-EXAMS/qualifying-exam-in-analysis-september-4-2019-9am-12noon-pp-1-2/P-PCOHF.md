@@ -29,9 +29,9 @@ audit:
 
 Choose three of four problems and show all work with each problem on a new page.
 
-::: solution
+::: {.solution}
 <1>1. Choose a minimizing sequence.
-::: proof
+::: {.proof}
 Let $C$ be a nonempty closed convex subset of a Hilbert space $H$, and set
 \[
 d:=\inf_{x\in C}\|x\|.
@@ -43,7 +43,7 @@ Choose $x_n\in C$ so that
 :::
 
 <1>2. Prove that the minimizing sequence is Cauchy.
-::: proof
+::: {.proof}
 By convexity,
 \[
 \frac{x_n+x_m}{2}\in C,
@@ -72,7 +72,7 @@ The right-hand side tends to $0$ as $m,n\to\infty$. Thus $(x_n)$ is Cauchy.
 :::
 
 <1>3. Obtain a minimum-norm point.
-::: proof
+::: {.proof}
 Since $H$ is complete, $x_n\to x$ for some $x\in H$. Since $C$ is closed, $x\in C$. Continuity of the norm gives
 \[
 \|x\|=\lim_n\|x_n\|=d.
@@ -81,7 +81,7 @@ Thus $x$ has minimum norm in $C$.
 :::
 
 <1>4. Prove uniqueness.
-::: proof
+::: {.proof}
 Suppose $x,y\in C$ both satisfy
 \[
 \|x\|=\|y\|=d.

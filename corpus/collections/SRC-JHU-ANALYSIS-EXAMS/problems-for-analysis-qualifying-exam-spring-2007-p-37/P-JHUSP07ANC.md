@@ -24,17 +24,17 @@ audit:
   note: "Checked strictness for the removable quotient also at zero, a uniform contraction factor on the whole orbit disk and the zero initial-value case."
 ---
 
-::: problem
+::: {.problem}
 Let $f:D\to D$ be holomorphic on the unit disk, with
 $f(0)=0$, and suppose $f$ is not a rotation $z\mapsto e^{i\theta}z$.
 For $w\in D$, set $w_0=w$ and $w_{n+1}=f(w_n)$.
 Prove that $w_n\to0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The quotient $f(z)/z$ is strictly bounded by one on each compact subdisk.
 
-::: proof
+::: {.proof}
 Because $f(0)=0$, the quotient extends holomorphically
 to $h$ on $D$, with $h(0)=f'(0)$. Schwarz's lemma and
 continuity give $|h|\leq1$ on all of $D$ [@SS03].
@@ -47,7 +47,7 @@ compactness give a maximum $M_r<1$.
 
 <1>2. The iterates decay geometrically to zero.
 
-::: proof
+::: {.proof}
 If $w=0$, all iterates are zero. Otherwise let $r=|w|<1$
 and choose $q=(1+M_r)/2$, so $0<q<1$. Schwarz's lemma
 gives $|w_{n+1}|\leq|w_n|$, so the whole orbit stays in

@@ -24,7 +24,7 @@ We say that $F$ is continuous in each variable separately if for each $y_0$ in $
 Show that if $F$ is continuous, then $F$ is continuous in each variable separately.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that joint continuity of a bivariate function $F: X \times Y \to Z$ implies separate continuity in each coordinate variable.
 
 <1>1. Continuity of the slice embeddings:

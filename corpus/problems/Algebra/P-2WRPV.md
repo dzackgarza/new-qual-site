@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\phi:\ZZ^4\to\ZZ^3$ be represented in the standard bases by
 \[
 A=

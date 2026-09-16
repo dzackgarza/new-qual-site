@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R = k[x,y]$ where $k$ is a field, and let $I=(x,y)R$.
 
 - Show that `\begin{align*} 0 \to R \mapsvia{\phi} R \oplus R \mapsvia{\psi} R \to k \to 0 \end{align*}`{=tex} where $\phi(a) = (-ya,xa)$, $\psi((a,b)) = xa+yb$ for $a,b \in R$, is a projective resolution of the $R$-module $k \simeq R/I$.
@@ -26,7 +26,7 @@ Let $R = k[x,y]$ where $k$ is a field, and let $I=(x,y)R$.
 :::
 
 
-::: solution
+::: {.solution}
 Write \(\varepsilon:R\to k=R/(x,y)\) for the quotient map.
 
 First consider

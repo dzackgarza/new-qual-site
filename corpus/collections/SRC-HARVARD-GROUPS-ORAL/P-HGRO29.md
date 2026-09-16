@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group with composite order less than $60$.
 Prove that $G$ is not simple.
 :::
 
-::: solution
+::: {.solution}
 Assume throughout that $|G|=n<60$ is composite.
 
 <1>1. If $n$ is a prime power, then $G$ is not simple.
-::: proof
+::: {.proof}
 Let $n=p^a$ with $a\ge2$. A finite $p$-group has nontrivial center. If
 $Z(G)\ne G$, then $Z(G)$ is a nontrivial proper normal subgroup. If $Z(G)=G$,
 then $G$ is abelian; a finite abelian simple group has prime order, contradicting
@@ -42,7 +42,7 @@ that $p^a$ is composite.
 12,24,30,36,48,56,
 \]
 every non-prime-power composite $n<60$ forces a unique Sylow subgroup.
-::: proof
+::: {.proof}
 If $p^a\Vert n$, the number $n_p$ of Sylow $p$-subgroups must satisfy
 \[
 n_p\equiv1\pmod p,
@@ -72,7 +72,7 @@ proper normal subgroup.
 :::
 
 <1>3. A group of order $12$ is not simple.
-::: proof
+::: {.proof}
 The number $n_3$ of Sylow $3$-subgroups is $1$ or $4$. If $n_3=1$, the Sylow
 $3$-subgroup is normal. If $n_3=4$, the four Sylow $3$-subgroups contribute
 $4(3-1)=8$ nonidentity elements. Only three nonidentity elements remain, so
@@ -81,7 +81,7 @@ those same three elements. Hence the Sylow $2$-subgroup is unique and normal.
 :::
 
 <1>4. A group of order $24$ is not simple.
-::: proof
+::: {.proof}
 If the Sylow $3$-subgroup is unique, we are done. Otherwise $n_3=4$. Conjugation
 on the four Sylow $3$-subgroups gives a nontrivial homomorphism
 \[
@@ -93,7 +93,7 @@ $S_4$ is not simple because $A_4\trianglelefteq S_4$. Contradiction.
 :::
 
 <1>5. A group of order $30$ is not simple.
-::: proof
+::: {.proof}
 If neither the Sylow $5$-subgroup nor the Sylow $3$-subgroup were unique, then
 \[
 n_5=6,
@@ -107,7 +107,7 @@ Sylow subgroups is unique and normal.
 :::
 
 <1>6. A group of order $36$ is not simple.
-::: proof
+::: {.proof}
 Here $n_3=1$ or $4$. If $n_3=1$, the Sylow $3$-subgroup is normal. If $n_3=4$,
 conjugation on the four Sylow $3$-subgroups gives
 \[
@@ -122,7 +122,7 @@ Thus $G$ has a nontrivial proper normal subgroup.
 :::
 
 <1>7. A group of order $48$ is not simple.
-::: proof
+::: {.proof}
 The number $n_3$ is $1$, $4$, or $16$. If $n_3=1$, we are done. If $n_3=4$,
 the conjugation action on the four Sylow $3$-subgroups gives a nontrivial map
 $G\to S_4$; simplicity would force an embedding, impossible because
@@ -139,7 +139,7 @@ so it is unique and normal.
 :::
 
 <1>8. A group of order $56$ is not simple.
-::: proof
+::: {.proof}
 The number $n_7$ is $1$ or $8$. If $n_7=1$, the Sylow $7$-subgroup is normal.
 If $n_7=8$, the eight Sylow $7$-subgroups contribute
 \[
@@ -152,7 +152,7 @@ normal.
 :::
 
 <1>9. Therefore every group of composite order less than $60$ is not simple.
-::: proof
+::: {.proof}
 Prime-power orders are covered by <1>1. Every other composite order below $60$
 is either in the table of <1>2 or is one of the six residual orders handled in
 <1>3--<1>8.

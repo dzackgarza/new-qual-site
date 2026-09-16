@@ -33,17 +33,17 @@ $$
 $$
 :::
 
-::: hint
+::: {.hint}
 Use a keyhole contour around the positive real axis, with
 inner radius $\varepsilon$ and outer radius $R$.
 :::
 
-::: solution
+::: {.solution}
 The value is $\boxed{2\pi/\sqrt3}$.
 
 <1>1. The integral converges absolutely at both endpoints.
 
-::: proof
+::: {.proof}
 For $0<x\leq1$, the positive integrand is at most
 $x^{-1/3}$, whose integral at zero is finite. For $x\geq1$,
 it is at most $x^{-4/3}$, integrable at infinity. Write
@@ -52,7 +52,7 @@ $I=\int_0^\infty x^{-1/3}/(1+x)\,dx$.
 
 <1>2. The logarithm branch gives a keyhole residue identity.
 
-::: proof
+::: {.proof}
 Use $0<\arg z<2\pi$ and set
 $$
 F(z)=\frac{\exp(-\operatorname{Log}z/3)}{1+z}.
@@ -84,7 +84,7 @@ $$
 
 <1>3. The arcs disappear and the phase factors determine $I$.
 
-::: proof
+::: {.proof}
 The respective arc integrals have moduli bounded by
 $$
 \frac{2\pi R^{2/3}}{R-1}\longrightarrow0,

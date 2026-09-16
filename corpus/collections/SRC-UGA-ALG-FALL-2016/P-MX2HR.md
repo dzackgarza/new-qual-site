@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 a. Define what it means for a group $G$ to be *solvable*.
 
 a. Show that every group $G$ of order 36 is solvable.

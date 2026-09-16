@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define an algebraically closed field.
 Define what it means for a polynomial to split over a field.
 :::

@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 13, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $a > b > 0$ . Evaluate $\begin{array} { r } { \int _ { 0 } ^ { 2 \pi } \frac { d \theta } { ( a + b \cos \theta ) ^ { 2 } } } \end{array}$
 :::

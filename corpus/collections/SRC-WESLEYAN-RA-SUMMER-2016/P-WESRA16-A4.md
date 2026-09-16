@@ -15,7 +15,7 @@ audit:
   note: Checked against Group A, problem A4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R^d\to[0,\infty)$ be Lebesgue measurable.
 
 (a) Using

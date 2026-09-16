@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, Problem 20, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. The source also supplies Figure 3; Flash has only its image placeholder/caption. The contour is nevertheless specified textually as $L_+\cup C_R\cup L_-\cup\gamma_\epsilon$.
 ---
 
-::: problem
+::: {.problem}
 (a) Compute the integral $I _ { 1 } = \int _ { C } \frac { \mathrm { d } z } { ( z + i ) \sqrt { z } }$ , where the contour C is shown in figure 3, $C = L _ { + } \cup C _ { R } \cup L _ { - } \cup \gamma _ { \epsilon }$ , and we send the radius of $\gamma _ { \epsilon }$ to zero and the radius of $C _ { R }$ to infinity.
 Note that, because of the square root, $z = 0$ is a branch point.
 We choose to have a branch cut on the positive real axis.

@@ -27,7 +27,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 \omega(\alpha)=m\{x\in\mathbb R^n:|f(x)|>\alpha\},\qquad \alpha>0,
@@ -36,11 +36,11 @@ be the distribution function of $f\in L^p(\mathbb R^n)$, where $p>0$.
 Does $\alpha^p\omega(\alpha)$ tend to a limit as $\alpha\to0^+$? Give a proof or counterexample.
 :::
 
-::: solution
+::: {.solution}
 Yes. The limit exists and equals $0$.
 
 <1>1. Use the layer-cake identity.
-::: proof
+::: {.proof}
 For the nonnegative function $|f|^p$,
 \[
 \|f\|_p^p
@@ -54,7 +54,7 @@ Thus
 :::
 
 <1>2. Bound $\alpha^p\omega(\alpha)$ by a shrinking tail of that integral.
-::: proof
+::: {.proof}
 The distribution function $\omega$ is decreasing. Hence for $t\in[\alpha/2,\alpha]$,
 \[
 \omega(t)\ge\omega(\alpha).

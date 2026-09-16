@@ -42,7 +42,7 @@ c. Let $X = [0, 1] \subset \RR$.
     and characterize the functions of each type
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 \int f^p 
 &= \int_{x < 1} f^p + \int_{x=1}f^p + \int_{x > 1} f^p\\

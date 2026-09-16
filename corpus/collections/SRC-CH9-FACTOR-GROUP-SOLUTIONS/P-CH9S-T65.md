@@ -17,6 +17,6 @@ audit:
     MinerU Flash extraction assets/attachments/Ch9Sltns_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 If G is non-Abelian, show that Aut(G) is not cyclic.
 :::

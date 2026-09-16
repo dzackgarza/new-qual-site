@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove Liouville's theorem: suppose $f:\CC\to\CC$ is entire and bounded. 
 Use Cauchy's formula to prove that $f'\equiv 0$ and hence $f$ is constant.
 :::
 
-:::{.solution}
+::: {.solution}
 The main idea:
 \[
 \abs{f'(z)} 

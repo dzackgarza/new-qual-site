@@ -35,11 +35,11 @@ The original exercise read "Show that if $X$ is metrizable, then $X$ is compact"
 The equivalence above repairs it; the neighbouring exercises suggest the intended statement.
 :::
 
-::: solution
+::: {.solution}
 Fix a metric $d$ inducing the topology of $X$.
 
 <1>1. Compactness implies limit-point compactness.
-::: proof
+::: {.proof}
 Let $A\subseteq X$ be infinite. If $A$ had no limit point, then for each $x\in X$ there would be an open neighborhood $U_x$ with
 $$
 U_x\cap A\subseteq\{x\}.
@@ -52,7 +52,7 @@ a contradiction.
 :::
 
 <1>2. Limit-point compactness implies sequential compactness.
-::: proof
+::: {.proof}
 Let $(x_n)$ be a sequence. If its range is finite, one value occurs infinitely often and gives a constant subsequence. If its range is infinite, let $x$ be a limit point of the range.
 
 Every ball about $x$ contains infinitely many terms of the sequence: otherwise a smaller ball would meet the range in only finitely many points, contradicting that $x$ is a limit point. Inductively choose
@@ -64,7 +64,7 @@ Then $x_{n_k}\to x$.
 :::
 
 <1>3. Sequential compactness implies total boundedness.
-::: proof
+::: {.proof}
 If some $\varepsilon>0$ admitted no finite cover by $\varepsilon$-balls, choose inductively $x_{n+1}$ outside
 $$
 \bigcup_{j=1}^n B(x_j,\varepsilon).
@@ -73,7 +73,7 @@ Then $d(x_i,x_j)\ge\varepsilon$ for $i\ne j$, so the sequence has no convergent 
 :::
 
 <1>4. Sequential compactness implies the Lebesgue-number property: every open cover $\mathcal U$ has some $\delta>0$ such that every ball $B(x,\delta)$ lies in a member of $\mathcal U$.
-::: proof
+::: {.proof}
 If not, for each $n$ choose $x_n$ such that $B(x_n,1/n)$ is contained in no member of $\mathcal U$. Pass to a subsequence $x_{n_k}\to x$. Choose $U\in\mathcal U$ and $r>0$ with $B(x,r)\subseteq U$. For large $k$,
 $$
 d(x_{n_k},x)<r/2,
@@ -83,7 +83,7 @@ so $B(x_{n_k},1/n_k)\subseteq B(x,r)\subseteq U$, a contradiction.
 :::
 
 <1>5. Sequential compactness implies compactness.
-::: proof
+::: {.proof}
 Let $\mathcal U$ be an open cover and choose a Lebesgue number $\delta>0$. By total boundedness, finitely many balls
 $$
 B(x_1,\delta),\dots,B(x_m,\delta)

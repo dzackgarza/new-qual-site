@@ -29,7 +29,7 @@ Let $f: X \to Y$; suppose that $f \mid A_\alpha$ is continuous for each $\alpha$
 Show that if the family $\ts{A_\alpha}$ is locally finite and each $A_\alpha$ is closed, then $f$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Pasting Lemma for finite closed covers and locally finite closed covers, and provide a counterexample for infinite non-locally finite closed covers.
 
 <1>1. Part (a): Pasting over a finite closed cover.

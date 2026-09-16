@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 There are quasi-affine varieties which are not affine.
 Show that $X = \AA^2 \sm \ts{(0,0)}$ is not affine.
 

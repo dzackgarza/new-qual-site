@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $f$ is holomorphic iff $\delbar f = 0$.
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 2\delbar f 
 &\da (\del_x + i \del_y) (u+iv) \\

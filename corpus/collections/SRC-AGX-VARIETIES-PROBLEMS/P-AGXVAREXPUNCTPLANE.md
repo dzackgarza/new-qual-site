@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\AA^2\slice{\CC} \smz$ is not an affine variety.
 :::

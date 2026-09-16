@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $n>1$ be an integer. Prove that
 \[
 1+\frac12+\cdots+\frac1n

@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 (a) Let $I\subseteq\mathbb{C}[x,y]$ be an ideal such that $\mathrm{V}(I)=\{(0,0),(1,1)\}\subset\mathbb{C}^2$.
 Prove that the quotient ring $\mathbb{C}[x,y]/I$ is a finite-dimensional $\mathbb{C}$-vector space.
 

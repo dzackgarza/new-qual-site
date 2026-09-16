@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1([0,1], m)$, $m^2$ be Lebesgue measure on $\mathbb{R}^2$, and
 $$
 A_\varepsilon = \{(x,y) \in [0,1] \times [0,1] : |x - y| \leq \varepsilon\} \quad \text{for all } \varepsilon > 0.
@@ -35,9 +35,9 @@ Prove that
 2) $\displaystyle\lim_{\varepsilon \downarrow 0} \varepsilon^{-1} \int_{A_\varepsilon} |f(x) - f(y)|\,dm^2(x,y) = 0.$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the $4\varepsilon\|f\|_1$ estimate.
-::: proof
+::: {.proof}
 Using
 \[
 |f(x)-f(y)|\le |f(x)|+|f(y)|,
@@ -69,7 +69,7 @@ The same estimate holds for the second term by symmetry. Therefore
 :::
 
 <1>2. Rewrite the thin-strip integral using translations.
-::: proof
+::: {.proof}
 Extend $f$ by zero outside $[0,1]$, still denoting the extension by $f$. Then $f\in L^1(\mathbb R)$. With $h=y-x$, the original domain is contained in the set $|h|\le\varepsilon$, so
 \[
 \begin{aligned}
@@ -86,7 +86,7 @@ where $(\tau_hf)(x)=f(x+h)$.
 :::
 
 <1>3. Use continuity of translations in $L^1$.
-::: proof
+::: {.proof}
 It is standard that
 \[
 \|\tau_hf-f\|_1\longrightarrow0

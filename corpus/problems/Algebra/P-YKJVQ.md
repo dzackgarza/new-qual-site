@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that \( \gens{ 2, x }\normal \ZZ[x]  \) is not a principal ideal.
 :::
 

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be bounded and analytic in the half-plane
 \[
 \operatorname{Re}z>0.

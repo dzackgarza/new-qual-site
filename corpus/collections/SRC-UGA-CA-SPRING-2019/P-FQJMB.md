@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define
 
 $$
@@ -34,7 +34,7 @@ E(z)=\sum_{n=0}^{\infty} \frac{z^{n}}{n !}
 .\]
 :::
 
-::: solution
+::: {.solution}
 Write $z=x+iy$ and
 \[
 E(z)=u(x,y)+iv(x,y),

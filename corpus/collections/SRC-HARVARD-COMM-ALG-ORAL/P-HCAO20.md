@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a Cohen--Macaulay ring which is not Gorenstein.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 R=k[x,y]/(x,y)^2.
@@ -41,7 +41,7 @@ Then $R$ is Cohen--Macaulay but not Gorenstein.
 \mathfrak m=(x,y)/(x,y)^2
 \]
 and residue field $k$.
-::: proof
+::: {.proof}
 Every element of $R$ has a unique expression
 \[
 a+bx+cy,
@@ -54,7 +54,7 @@ $\mathfrak m$, so $R$ is local.
 :::
 
 <1>2. The ring $R$ is Cohen--Macaulay.
-::: proof
+::: {.proof}
 An Artinian local ring has Krull dimension $0$. Its depth is also $0$ unless it
 is the zero ring, because a regular sequence in the maximal ideal cannot have
 positive length when every element of the maximal ideal is nilpotent and hence
@@ -69,7 +69,7 @@ so $R$ is Cohen--Macaulay.
 \[
 \operatorname{Soc}(R)=0:_R\mathfrak m=\mathfrak m.
 \]
-::: proof
+::: {.proof}
 Since $\mathfrak m^2=0$, we have $\mathfrak m\subseteq0:_R\mathfrak m$.
 Conversely, if $r=a+bx+cy$ has $a\ne0$, then
 \[
@@ -79,12 +79,12 @@ so $r\notin0:_R\mathfrak m$. Hence the socle is exactly $\mathfrak m$.
 :::
 
 <1>4. The socle has $k$-dimension $2$.
-::: proof
+::: {.proof}
 The classes of $x$ and $y$ form a $k$-basis of $\mathfrak m$.
 :::
 
 <1>5. The ring $R$ is not Gorenstein.
-::: proof
+::: {.proof}
 For an Artinian local ring with residue field $k$, the Artinian Gorenstein
 criterion says that the ring is Gorenstein if and only if its socle is
 one-dimensional over $k$. By <1>4 the socle of $R$ has dimension $2$, so $R$

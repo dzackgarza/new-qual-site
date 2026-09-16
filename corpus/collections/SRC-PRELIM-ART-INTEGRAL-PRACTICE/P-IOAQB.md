@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{dx}{x(\ln x)^2},
@@ -34,7 +34,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 For the first integral, let $u=\ln x$, so $du=dx/x$:
 \[
 \int\frac{dx}{x(\ln x)^2}

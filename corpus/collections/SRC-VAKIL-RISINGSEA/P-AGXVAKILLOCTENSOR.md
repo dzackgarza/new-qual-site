@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $S\subseteq A$ is multiplicative and $M\in \mods{A}$, describe a natural isomorphism
 \[
 \eta: (S^{-1}A)\tensor_A M \to S^{-1}M
@@ -22,7 +22,7 @@ If $S\subseteq A$ is multiplicative and $M\in \mods{A}$, describe a natural isom
 of both $S^{-1}A\dash$modules and $A\dash$modules.
 :::
 
-::: solution
+::: {.solution}
 Recall the definition
 \[
 S^{-1}A &\da \ts{ {a\over s} \st a\in A,\, s\in S} / \sim \\

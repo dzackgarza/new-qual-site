@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field, let $X=\PP_k^r$, and let $Y$ be a closed subscheme of dimension $q \geq 1$, which is a complete intersection (II, Ex.
 8.4). Then:
 

@@ -41,9 +41,9 @@ $$
 (Hint: use Vitali covering lemma.)
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define the exceptional set by failure of the desired ball estimate.
-::: proof
+::: {.proof}
 Set
 \[
 E_\varepsilon
@@ -61,7 +61,7 @@ for every $r>0$.
 :::
 
 <1>2. Observe that every bad witnessing ball has small radius.
-::: proof
+::: {.proof}
 If $x\in E_\varepsilon$ and $B_r(x)$ witnesses membership, then
 \[
 \frac{Cr}{\varepsilon}<\mu(B_r(x))\le\mu(\mathbb R^n)=C.
@@ -75,7 +75,7 @@ Thus all witnessing radii are uniformly bounded.
 :::
 
 <1>3. Apply the Vitali $5r$ covering lemma.
-::: proof
+::: {.proof}
 Consider the family of all witnessing balls
 \[
 \mathcal B
@@ -109,7 +109,7 @@ Therefore
 :::
 
 <1>4. Estimate the Hausdorff $1$-content.
-::: proof
+::: {.proof}
 The balls $B_{5r_i}(x_i)$ cover $E_\varepsilon$, and
 \[
 \operatorname{diam}(B_{5r_i}(x_i))=10r_i.

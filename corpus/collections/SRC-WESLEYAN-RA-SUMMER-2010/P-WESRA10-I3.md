@@ -15,6 +15,6 @@ audit:
   note: Checked against Part I, item 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 State the spectral theorem for compact symmetric (self-adjoint) operators on a Hilbert space.
 :::

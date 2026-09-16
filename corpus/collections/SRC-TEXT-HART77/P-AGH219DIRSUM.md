@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mcf$ and $\mcg$ be sheaves on $X$.
 Show that the presheaf $U \mapsto \mcf(U) \oplus \mcg(U)$ is a sheaf.
 It is called the **direct sum** of $\mcf$ and $\mcg$ and is denoted $\mcf \oplus \mcg$.

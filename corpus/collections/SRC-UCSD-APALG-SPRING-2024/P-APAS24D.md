@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given an upper triangular matrix $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ and $\varepsilon\in\mathbb{R}$, $\varepsilon>0$, prove there exists $\eta\in\mathbb{R}$, $\eta>0$, such that the diagonal matrix $D=(d_{ij})\in M_n(\mathbb{R})=\mathbb{R}^{n\times n}$ with entries
 \[
 d_{jj}=\eta^{j-1},
@@ -29,7 +29,7 @@ where the matrix norm $\|\cdot\|$ is defined by
 for all $B\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 D=\operatorname{diag}(1,\eta,\eta^2,\ldots,\eta^{n-1}).

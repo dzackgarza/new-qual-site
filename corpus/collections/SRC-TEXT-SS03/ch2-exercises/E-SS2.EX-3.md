@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 3. Evaluate the integrals
 
 $$
@@ -25,7 +25,7 @@ $$
 by integrating $e ^ { - A z } , A = { \sqrt { a ^ { 2 } + b ^ { 2 } } }$ , over an appropriate sector with angle $\omega ,$ with cos $\omega = a / A$
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 A=\sqrt{a^2+b^2},

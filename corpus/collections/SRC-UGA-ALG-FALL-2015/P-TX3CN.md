@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group containing a proper subgroup $H \lneq G$ of finite index $[G : H] < \infty$.
 
 Prove that $G$ contains a normal subgroup $N \trianglelefteq G$ of finite index that is contained in every conjugate of $H$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the existence of the normal core $N = \operatorname{Core}_G(H) = \bigcap_{g \in G} g H g^{-1}$ using the left regular action of $G$ on the coset space $G/H$.
 
 <1>1. Permutation action on cosets:

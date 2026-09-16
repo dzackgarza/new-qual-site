@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What can you say about curves of genus $0$?
 
 Prove that such a curve is either isomorphic to $\PP^1$ or embeddable as a quadric in $\PP^2$.

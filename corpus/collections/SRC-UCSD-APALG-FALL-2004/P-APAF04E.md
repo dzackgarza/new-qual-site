@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G=\{g_1,\ldots,g_k\}$ be a finite group.
 Introduce variables $x_{g_1},\ldots,x_{g_k}$ and consider the $k\times k$ matrix
 \[

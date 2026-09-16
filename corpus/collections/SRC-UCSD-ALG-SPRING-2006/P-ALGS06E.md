@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f \in \mathbb{Z}[X] \setminus \mathbb{Z}$ such that $\gcd(f, f') = 1$.
 Let $S$ be the set of non-zero divisors in the quotient ring $\mathbb{Z}[X]/(f)$.
 

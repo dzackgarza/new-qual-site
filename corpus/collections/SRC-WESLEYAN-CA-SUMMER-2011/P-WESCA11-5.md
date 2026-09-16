@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $\gamma$ be a differentiable curve in the complex plane and let $f$ be continuous on the trace of $\gamma$.
 Define
 \[

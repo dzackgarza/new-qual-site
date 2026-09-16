@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\mathbb{C})$ be a representation of $H$.
 
 (a) Prove that for any character $\phi$ of $G$, $(\chi^{A\uparrow_H^G},\phi)_G=(\chi^A,\phi\downarrow^G_H)_H$.

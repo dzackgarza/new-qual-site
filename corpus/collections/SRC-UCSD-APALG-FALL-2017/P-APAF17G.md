@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $I\subseteq\mathbb{C}[x,y]$ be an ideal with vanishing locus
 \[
 \mathbf{V}(I)=\{(2,3)\}\subset\mathbb{C}^2.

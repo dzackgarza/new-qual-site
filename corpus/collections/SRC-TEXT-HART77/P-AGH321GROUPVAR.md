@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A **group variety** consists of a variety $Y$ together with a morphism $\mu: Y \times Y \to Y$ such that the set of points of $Y$ with the operation given by $\mu$ is a group, and such that the inverse map $y \mapsto y\inv$ is also a morphism $Y \to Y$.
 
 1. The **additive group** $\GG_a$ is the variety $\AA^1$ with the morphism $\mu: \AA^1 \times \AA^1 \to \AA^1$ defined by $\mu(a,b) = a+b$.

@@ -29,11 +29,11 @@ audit:
   note: "Compared with Groups (7) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG7, whose solution repeats this semidirect-product classification."
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order $15$ and of order $30$.
 :::
 
-::: solution
+::: {.solution}
 The only group of order $15$ is $C_{15}$. The groups
 of order $30$, up to isomorphism, are
 $$
@@ -44,7 +44,7 @@ where $D_{2m}$ denotes the dihedral group of order $2m$.
 
 <1>1. Every group of order $15$ is cyclic.
 
-::: proof
+::: {.proof}
 Sylow's theorems give $n_5\mid3$, $n_5\equiv1\pmod5$,
 and $n_3\mid5$, $n_3\equiv1\pmod3$ [@DF04].
 Thus $n_5=n_3=1$. The respective Sylow subgroups
@@ -60,7 +60,7 @@ cyclic, and a pair of generators has order $15$.
 <1>2. Every group $G$ of order $30$ is a semidirect
 product $C_{15}\rtimes C_2$.
 
-::: proof
+::: {.proof}
 Let $\lambda:G\to\operatorname{Sym}(G)$ be the action
 by left multiplication and put
 $\varepsilon=\operatorname{sgn}\circ\lambda:G\to\{1,-1\}$.
@@ -80,7 +80,7 @@ This is the asserted semidirect product.
 
 <1>3. Exactly four conjugation actions can occur.
 
-::: proof
+::: {.proof}
 Write $tat^{-1}=a^u$ for a unit $u$ modulo $15$.
 The equation $t^2=1$ forces $u^2\equiv1\pmod{15}$.
 Modulo each of $3$ and $5$, the product
@@ -108,7 +108,7 @@ groups displayed at the start, in the same order.
 
 <1>4. The four groups of order $30$ are pairwise nonisomorphic.
 
-::: proof
+::: {.proof}
 For $u=1$ the group is abelian and its center has
 order $30$. For $u\ne1$, every element outside $N$
 acts on $N$ by the same nontrivial automorphism

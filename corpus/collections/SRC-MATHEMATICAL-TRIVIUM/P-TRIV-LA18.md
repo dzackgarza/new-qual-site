@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 18, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the rotation by an angle θ around a line determined by a unit radius-vector ¯n with components $n _ { x } , n _ { y } , n _ { z }$
 
 (a) Deduce the rotation matrix that performs this rotation.

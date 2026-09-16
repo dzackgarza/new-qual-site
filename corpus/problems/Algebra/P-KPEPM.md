@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be prime and $n\ge1$. Determine all pairs $(n,p)$ for which
 \[
 \SL_n(\FF_p)

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_{-\infty}^\infty {1+x^2 \over 1+x^4}\, dx
@@ -22,7 +22,7 @@ Calculate
 
 :::
 
-::: solution
+::: {.solution}
 The integrand is even, so
 \[
 I=2\int_0^\infty\frac{1+x^2}{1+x^4}\,dx.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ and $X'$ be elliptic curves over $k$, with base points $P_0, P_0'$.
 
 a. If $f: X \to X'$ is any morphism, use (4.11) to show that $f^*: \Pic X' \to \Pic X$ induces a homomorphism $\hat{f}: (X', P_0') \to (X, P_0)$. We call this the **dual** of $f$.

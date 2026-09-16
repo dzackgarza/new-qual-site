@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the fiber product over the terminal object is the cartesian product.
 :::
 
-::: solution
+::: {.solution}
 - Recall the definition: $T$ is terminal iff every object $X$ admits a unique morphism $X\to T$.
 
 - Strategy: use both universal properties to produce an isomorphism.

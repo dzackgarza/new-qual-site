@@ -25,7 +25,7 @@ A space $Y$ is said to have the universal extension property if for each triple 
 (b) Show that if $Y$ is homeomorphic to a retract of $\mathbb{R}^J$, then $Y$ has the universal extension property.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the product space $\mathbb{R}^J$ and all retracts of $\mathbb{R}^J$ satisfy the Universal Extension Property (UEP).
 
 <1>1. Part (a): $\mathbb{R}^J$ has the Universal Extension Property.

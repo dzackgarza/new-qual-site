@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring and $\operatorname{Spec}(A)$ is the set of all prime ideals of $A$.
 For an $A$-module $M$ and $\mathfrak{p} \in \operatorname{Spec}(A)$, let $M_\mathfrak{p}$ be the localization of $M$ at $\mathfrak{p}$.
 Let

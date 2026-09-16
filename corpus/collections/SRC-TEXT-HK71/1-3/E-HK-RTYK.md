@@ -31,7 +31,7 @@ A = \left[ \begin{array}{c c c} i & - (1 + i) & 0 \\ 1 & - 2 & 1 \\ 1 & 2 i & - 
 $$
 :::
 
-::: solution
+::: {.solution}
 A row-reduced matrix row-equivalent to $A$ is
 \[
 R=\begin{bmatrix}
@@ -42,7 +42,7 @@ R=\begin{bmatrix}
 \]
 
 <1>1. Row reduction of $A$ yields $R$.
-::: proof
+::: {.proof}
 Applying elementary row operations to
 \[
 A=\begin{bmatrix}
@@ -65,7 +65,7 @@ matrix is row-equivalent to $A$.
 :::
 
 <1>2. The displayed matrix is row-reduced.
-::: proof
+::: {.proof}
 Its two nonzero rows have leading entries $1$ in columns $1$ and $2$, each
 pivot is the only nonzero entry in its column, the second pivot lies to the
 right of the first, and the zero row is last.

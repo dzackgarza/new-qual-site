@@ -24,7 +24,7 @@ audit:
   note: "Checked the hypotheses, inverse maps, degree formulas, and the distinction between K/E being Galois and E/F requiring a normal subgroup."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ and $F$ be fields, with $K$ a finite-dimensional algebraic extension of $F$.
 
 (a) Give the definition of "$K$ is a Galois extension of $F$".
@@ -32,7 +32,7 @@ Let $K$ and $F$ be fields, with $K$ a finite-dimensional algebraic extension of 
 (b) State the Fundamental Theorem of Galois Theory.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Definition for part (a).
 
 The finite extension $K/F$ is **Galois** if it is both normal and

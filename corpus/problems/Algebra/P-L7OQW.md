@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of subgroups
 \[
 H\trianglelefteq K\trianglelefteq G

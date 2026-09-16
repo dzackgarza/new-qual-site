@@ -16,7 +16,7 @@ audit:
   note: The retained PDF confirms that A is a 3-by-3 real matrix; the extraction garbled the size.
 ---
 
-:::{.problem}
+::: {.problem}
 Show that every rotation of $\mathbb R^3$ has an axis. More precisely, let $A$ be a real $3\times3$ matrix such that
 \[
 A^T=A^{-1},

@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f:\DD\to \DD$ with $f(0) = f'(0) = 0$.
 Show that $\abs{f''(0)} \leq 2$ and describe all $f$ for which this is an equality.
 
 :::
 
-:::{.solution}
+::: {.solution}
 By Schwarz, $\abs{f(z)}\leq z$.
 Write $g(z) \da f(z)/z$, then $\abs{g(z)}\leq 1$ and $g:\DD\to \DD$ is holomorphic since $f$ has a zero of order at least one at $0$.
 Note that $f(z) = c_2z^2 + \bigo(z^3)$, where $c_0 = 0$ since $f(0) = 0$ and $c_1 = 0$ since $f'(0) = 0$.

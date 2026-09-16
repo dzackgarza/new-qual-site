@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a proper, flat morphism of varieties over $k$.
 Suppose that for some point $y \in Y$ the fibre $X_y$ is smooth over $k(y)$.
 Show that there is an open neighborhood $U$ of $y$ in $Y$ such that $f: f^{-1}(U) \to U$ is smooth.

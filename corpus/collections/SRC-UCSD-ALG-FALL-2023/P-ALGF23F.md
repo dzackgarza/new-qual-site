@@ -24,7 +24,7 @@ audit:
   note: Verified Noetherianity by Hilbert's basis theorem and injectivity by stabilization of the ascending chain of kernels of iterates of the surjective endomorphism.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a finitely generated $\mathbb{Q}$-algebra, and $\phi: A \to A$ is a surjective ring homomorphism.
 
 (a) Prove that $A$ is a Noetherian ring.

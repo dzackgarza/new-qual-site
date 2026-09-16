@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb C\to\mathbb C$ be entire, and let $a,b>0$.
 
 1. If

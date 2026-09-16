@@ -21,13 +21,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $E\subset\mathbb R$ be Lebesgue measurable with $m(E)<\infty$.
 Suppose $(f_n)$ is a uniformly bounded sequence of real-valued measurable functions on $E$ and $f_n(x)\to f(x)$ for every $x\in E$.
 What relationship holds between $\int_Ef_n\,dm$ and $\int_Ef\,dm$?
 :::
 
-::: solution
+::: {.solution}
 Choose $M<\infty$ such that
 \[
 |f_n(x)|\le M

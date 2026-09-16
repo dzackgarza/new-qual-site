@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\OO_{\AA^n}$ is Noetherian.
 :::

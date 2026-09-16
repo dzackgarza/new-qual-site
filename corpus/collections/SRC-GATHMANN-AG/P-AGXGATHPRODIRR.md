@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X \subset \AA^n,\, Y\subset \AA^m$ be irreducible affine varieties, and show that $X\cross Y\subset \AA^{n+m}$ is irreducible.
 :::
 
-::: solution
+::: {.solution}
 That $X\cross Y$ is again an affine variety follows from writing $X=V(I)$ and $Y=V(J)$; then $X\cross Y = V(I+J)$ where $I+J\normal k[x_1, \cdots, x_n, y_1, \cdots, y_m]$.
 So let
 \[

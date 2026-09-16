@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Compute the following integrals.
 
 \(i\) $\displaystyle \int_0^\infty \frac{\sin x}{x} \, dx$ (ii) $\displaystyle \int_0^\infty (\frac{\sin x}{x})^2 \, dx$ (iii) $\displaystyle \int_0^\infty \frac{x^{a-1}}{(1 + x)^2} \, dx$, $0< a < 2$

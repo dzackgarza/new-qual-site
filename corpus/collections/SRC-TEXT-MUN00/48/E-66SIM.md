@@ -22,7 +22,7 @@ audit:
 Show that every locally compact Hausdorff space is a Baire space.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Baire Category Theorem for locally compact Hausdorff spaces: the intersection of any countable family of open dense sets is dense.
 
 <1>1. Setting and reduction:

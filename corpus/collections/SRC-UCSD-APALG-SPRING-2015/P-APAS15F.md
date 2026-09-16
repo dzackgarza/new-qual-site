@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Consider the matrix $A \in \mathrm{GL}_3(\mathbb{C})$ given by
 \[
 A =

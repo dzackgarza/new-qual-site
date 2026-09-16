@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Classify all abelian groups of order 9 up to isomorphism. Prove that they are not isomorphic to each other.
 (2) Classify all abelian groups of order 27 up to isomorphism, and list the non-abelian groups of order 27.
 :::
 
-::: solution
+::: {.solution}
 For order
 \[
 9=3^2,

@@ -21,17 +21,17 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify all abelian groups of order $27$.
 Prove that the groups in your classification are pairwise nonisomorphic.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every abelian group of order $27=3^3$ is isomorphic to exactly one of
 \[
 C_{27},\qquad C_9\times C_3,\qquad C_3\times C_3\times C_3.
 \]
-::: proof
+::: {.proof}
 By the structure theorem for finite abelian groups, an abelian group of order
 $3^3$ is a direct sum of cyclic $3$-power groups whose exponents correspond to
 a partition of $3$. The partitions
@@ -42,7 +42,7 @@ give exactly the three displayed groups.
 :::
 
 <1>2. The three displayed groups are pairwise nonisomorphic.
-::: proof
+::: {.proof}
 Their exponents are respectively
 \[
 27,\qquad 9,\qquad 3.

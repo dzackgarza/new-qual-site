@@ -23,7 +23,7 @@ Suppose that $U$ is an open set of $B$ that is evenly covered by $p$.
 Show that if $U$ is connected, then the partition of $p^{-1}(U)$ into slices is unique.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $U \subseteq B$ is a connected open set that is evenly covered by $p: E \to B$, then the partition of $p^{-1}(U)$ into slices is uniquely determined as the collection of connected components of $p^{-1}(U)$.
 
 <1>1. Slices over an evenly covered set:

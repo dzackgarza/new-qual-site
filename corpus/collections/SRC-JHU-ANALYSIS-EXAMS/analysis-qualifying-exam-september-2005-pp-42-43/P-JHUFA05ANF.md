@@ -32,7 +32,7 @@ $H=\{z\in\mathbb C:\operatorname{Re}z>0\}$, meaning holomorphic bijections from 
 (b) Describe all the automorphisms of C (holomorphic bijective maps from C onto C).
 :::
 
-::: solution
+::: {.solution}
 Write $D=\{w:|w|<1\}$ and
 $$
 T(z)=\frac{z-1}{z+1},\qquad T^{-1}(w)=\frac{1+w}{1-w}.
@@ -52,7 +52,7 @@ $$
 
 <1>1. Part (a) reduces to the disk automorphisms.
 
-::: proof
+::: {.proof}
 The displayed maps $T,T^{-1}$ are inverse by substitution.
 For $z\in H$ and $w\in D$,
 $$
@@ -84,7 +84,7 @@ formula for part (a), including its converse.
 
 <1>2. A plane automorphism must be a polynomial.
 
-::: proof
+::: {.proof}
 Let $F:\mathbb C\to\mathbb C$ be a holomorphic bijection.
 Its inverse is holomorphic, hence continuous, by the
 nonvanishing derivative of an injective holomorphic
@@ -111,7 +111,7 @@ Letting $R\to\infty$ shows $c_k=0$ for every $k>m$
 
 <1>3. The polynomial has degree one, and all such maps are automorphisms.
 
-::: proof
+::: {.proof}
 The polynomial cannot be constant. If its degree were
 at least two, its derivative would be a nonconstant
 polynomial, hence have a complex zero by the fundamental

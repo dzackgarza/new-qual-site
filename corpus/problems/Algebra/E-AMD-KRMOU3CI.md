@@ -26,7 +26,7 @@ audit:
 Show that every group of order $pqr$ with $p<q<r$ primes contains a normal Sylow subgroup, and hence is never simple.
 :::
 
-::: solution
+::: {.solution}
 Let $n_r$ be the number of Sylow $r$-subgroups. By Sylow,
 \[
 n_r\equiv1\pmod r,

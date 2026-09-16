@@ -15,13 +15,13 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 4. Does there exist a holomorphic surjection from the unit disc to $\mathbb { C } ?$
 
 [Hint: Move the upper half-plane “down” and then square it to get C.]
 :::
 
-::: solution
+::: {.solution}
 Yes. Let
 \[
 h(z)=i\frac{1+z}{1-z},

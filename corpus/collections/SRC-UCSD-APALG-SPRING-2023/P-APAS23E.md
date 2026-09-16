@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $D_6$ be the group of symmetries of a regular hexagon, let $S_3$ be the symmetric group on three objects, and let $C_2$ be the cyclic group of order $2$.
 
 (1) Prove that $D_6$ is isomorphic to the direct product $S_3 \times C_2$.
@@ -23,7 +23,7 @@ Let $D_6$ be the group of symmetries of a regular hexagon, let $S_3$ be the symm
 :::
 
 
-::: solution
+::: {.solution}
 Write
 \[
 D_6=\langle r,s\mid r^6=s^2=1,\ srs=r^{-1}\rangle.

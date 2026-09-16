@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)=1/(z(1+z^2))$.
 
 (a) Find a Laurent series representing $f$ for $|z|<1$.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Liouville, FTA, and power series, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find all entire functions f which satisfy $| f ( z ) | \geq | z |$ for all $z \in \mathbb { C }$ . Be sure to prove your list is complete.
 :::

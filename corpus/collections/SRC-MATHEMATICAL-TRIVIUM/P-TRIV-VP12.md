@@ -15,7 +15,7 @@ audit:
   note: Checked against Variational Principle, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Construct the functional $S [ \psi , \psi ^ { \dagger } ]$ whose variation with respect to $\psi = \psi ( \vec { r } , t )$ and $\psi ^ { \dagger } = \psi ^ { \dagger } ( \vec { r } , t )$ gives
 
 (a) the Schrodinger equation $i \hbar \frac { \partial \psi } { \partial t } = \hat { H } \psi$ and its conjugated,

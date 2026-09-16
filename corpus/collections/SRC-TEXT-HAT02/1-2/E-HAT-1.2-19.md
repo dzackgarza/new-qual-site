@@ -17,11 +17,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Show that the subspace $X \subset \mathbb{R}^3$ that is the union of the spheres $S_n$ of radius $1/n$ and center $(1/n, 0, 0)$ for $n = 1, 2, 3, \dots$ is simply-connected.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the shrinking union of 2-spheres $X = \bigcup_{n=1}^\infty S_n \subset \mathbb{R}^3$ meeting at the origin is simply connected ($\pi_1(X, 0) = 0$).
 
 <1>1. Geometry and topology of the space $X$:

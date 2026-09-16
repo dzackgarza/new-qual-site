@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F \subseteq E \subseteq K$ be a tower of fields such that $K/F$ is a finite cyclic Galois extension.
 Suppose $E/F$ is normal.
 Prove that both $E/F$ and $K/E$ are cyclic Galois extensions.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 G=\operatorname{Gal}(K/F),\qquad H=\operatorname{Gal}(K/E).

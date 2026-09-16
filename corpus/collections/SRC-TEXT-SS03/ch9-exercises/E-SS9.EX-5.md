@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 5. Let $\sigma ( z )$ be the canonical product
 
 $$
@@ -41,7 +41,7 @@ L ^ {\prime} (z) = \frac {(\sigma^ {\prime} (z)) ^ {2} - \sigma (z) \sigma^ {\pr
 $$
 :::
 
-::: solution
+::: {.solution}
 Let \(\Lambda=\{n+m\tau:n,m\in\mathbb Z\}\), with \(\Im\tau>0\). The number of lattice points in \(|\omega|\le R\) is \(O(R^2)\). Hence
 \[
 \sum_{\omega\in\Lambda\setminus\{0\}}|\omega|^{-3}<\infty,

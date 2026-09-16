@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify finite fields, their subfields, and their field extensions.
 What are the automorphisms of a finite field?
 :::

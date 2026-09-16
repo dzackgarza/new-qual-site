@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C$ be a nonsingular affine curve.
 Show that two locally free sheaves $\mathcal{E}, \mathcal{E}^{\prime}$ of the same rank are isomorphic if and only if their classes in the Grothendieck group $K(X)$ (II, Ex.
 6.10) and (II, Ex.

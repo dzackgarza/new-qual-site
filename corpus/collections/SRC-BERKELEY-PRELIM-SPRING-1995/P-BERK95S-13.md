@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $n$ be odd, and let $G\le S_n$ have order a power of $2$. Prove that there is some
 \[
 i\in\{1,\dots,n\}

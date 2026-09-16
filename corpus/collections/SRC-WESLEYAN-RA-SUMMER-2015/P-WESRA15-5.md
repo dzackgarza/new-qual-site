@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be integrable real-valued functions.
 Prove that if $f_n\to f$ almost everywhere and
 \[

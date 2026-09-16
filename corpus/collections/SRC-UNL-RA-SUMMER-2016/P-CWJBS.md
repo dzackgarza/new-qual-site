@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Assume $(X,d)$ is a compact metric space.
 
 Prove that $X$ is both complete and separable.

@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Show that any two curves in $\PP^2$ have a nonempty intersection.
 
 2. More generally, show that if $Y \subseteq \PP^n$ is a projective variety of dimension $\geq 1$ and $H$ is a hypersurface, then $Y \intersect H \neq \emptyset$.

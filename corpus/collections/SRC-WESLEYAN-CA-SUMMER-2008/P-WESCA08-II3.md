@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be analytic on a domain $D$, and suppose there is $z_0\in D$ such that
 \[
 |f(z)|\ge |f(z_0)|>0\qquad(z\in D).

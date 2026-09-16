@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Find a Laurent series converging in the annulus
 \[
 1<|z|<2

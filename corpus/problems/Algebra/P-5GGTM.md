@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that every field is simple.
 :::
 
-::: solution
+::: {.solution}
 Let $F$ be a field and let $I\trianglelefteq F$. If $I=(0)$ there is nothing to prove. Otherwise choose $0\ne x\in I$. Since $x$ is a unit,
 \[
 1=x^{-1}x\in I.

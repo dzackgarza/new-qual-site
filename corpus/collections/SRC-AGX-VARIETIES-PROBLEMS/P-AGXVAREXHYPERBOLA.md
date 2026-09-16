@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\AA^1$ is not isomorphic to $X = V(xy-1)$.
 
 Show that $X$ has two connected components in the Hausdorff topology but is irreducible in the Zariski topology.

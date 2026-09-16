@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a>0$, $a\ne2$, and let $C_a$ be the positively oriented circle $|z|=a$.
 Evaluate
 \[

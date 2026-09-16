@@ -19,7 +19,7 @@ audit:
   note: Cleaned the formula of Complex Analysis Problem 18 against page 15 of the source PDF and added a remark on the stray dx printed in the source.
 ---
 
-::: problem
+::: {.problem}
 Compute $\displaystyle\int_0^{2\pi} \frac{d\theta}{1 + a\cos\theta}\,\mathrm{d}x$ with $|a| < 1$;
 :::
 

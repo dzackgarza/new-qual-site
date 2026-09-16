@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 5. Use contour integration to show that
 
 $$
@@ -25,7 +25,7 @@ $$
 for all ξ real.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 I(\xi)=\int_{-\infty}^{\infty}\frac{e^{-2\pi i x\xi}}{(1+x^2)^2}\,dx.

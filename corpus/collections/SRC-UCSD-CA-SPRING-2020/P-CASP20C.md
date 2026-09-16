@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $a \in (-1, 1)$, let $D_a = \{z : |z| < 1, \operatorname{Im} z > a\}$.
 For each such $a$, either find a Möbius transformation of $D_a$ onto the quadrant $Q = \{w = re^{i\theta} : r > 0, 0 < \theta < \frac{\pi}{2}\}$, or show that such a transformation cannot exist.
 :::
 
-::: solution
+::: {.solution}
 The boundary of $D_a$ consists of an arc of the unit circle and a segment of
 the horizontal line $\operatorname{Im}z=a$. A Möbius transformation preserves
 angles between generalized circles. The two boundary curves of the quadrant

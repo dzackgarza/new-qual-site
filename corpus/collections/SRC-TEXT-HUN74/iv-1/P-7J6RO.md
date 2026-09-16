@@ -26,7 +26,7 @@ If $R$ has an identity, then a nonzero unitary $R\dash$module is **simple** if i
 2. If $A$ is simple, every $R-$module endomorphism is either the zero map or an isomorphism.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every simple module over a unital ring is cyclic, and prove Schur's Lemma for endomorphisms of a simple module.
 
 <1>1. Part 1: Every simple $R$-module $A$ is cyclic.

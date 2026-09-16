@@ -19,6 +19,6 @@ audit:
   note: Restored the lost arrow in phi to phi_0 against Real Analysis Problem 29 on page 10 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Is the integral $\displaystyle\int_0^{\phi} \frac{d\psi}{\sqrt{\sin^2\frac{\phi_0}{2} - \sin^2\frac{\psi}{2}}}$ convergent as $\phi \to \phi_0$?
 :::

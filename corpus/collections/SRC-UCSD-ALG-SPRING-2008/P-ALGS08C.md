@@ -24,11 +24,11 @@ audit:
   note: Checked the conjugation-action class equation and the divisibility argument for the fixed-point subgroup N cap Z(G).
 ---
 
-::: problem
+::: {.problem}
 Show that if $G$ is a group of order $p^n$, where $p$ is a prime, and $N$ is a nontrivial normal subgroup, then $N$ intersects the center of $G$ nontrivially.
 :::
 
-::: remark
+::: {.remark}
 The hypothesis that $N$ is nontrivial is necessary.
 For $N=\{1\}$, one has $N\cap Z(G)=\{1\}$, so the conclusion in the unqualified source statement fails.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an elliptic curve in $\PP^2$ given by an equation of the form
 $$
 y^2+a_1 x y+a_3 y=x^3+a_2 x^2+a_4 x+a_6 .

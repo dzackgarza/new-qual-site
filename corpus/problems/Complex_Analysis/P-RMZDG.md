@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 
 a. 
@@ -82,7 +82,7 @@ The maximum modulus principle gives the same bound on $|z|\le r$. Since $\vareps
 The ring of holomorphic functions on the connected disk is an integral domain, so one factor $f(e^{2\pi i j/N}z)$ is identically zero. Rotation is a bijection of $\DD$, hence $f\equiv0$.
 :::
 
-:::{.solution title="Part 3"}
+::: {.solution title="Part 3"}
 Consider
 \[
 f(z) \da \prod_{1\leq k \leq n} (w_k - z)

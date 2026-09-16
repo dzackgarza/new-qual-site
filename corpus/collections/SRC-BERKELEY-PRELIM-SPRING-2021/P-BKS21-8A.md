@@ -16,6 +16,6 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Find an irreducible polynomial over $\mathbb Z$ having $2\cos(2\pi/7)$ as a root, and use it to show that this number is not contained in any extension of $\mathbb Q$ whose degree is a power of $2$.
 :::

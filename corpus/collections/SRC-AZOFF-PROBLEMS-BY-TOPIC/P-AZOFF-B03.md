@@ -15,7 +15,7 @@ audit:
   note: Checked against Several variables, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb { R } ^ { 2 } \to \mathbb { R } ^ { 2 }$
 
 a) Define in terms of linear transformations, what it means for f to be differentiable at a point $( a , b ) \in \mathbb { R } ^ { 2 }$

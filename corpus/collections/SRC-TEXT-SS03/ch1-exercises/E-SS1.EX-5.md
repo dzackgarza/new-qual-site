@@ -15,7 +15,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: exercise
+::: {.exercise}
 5. A set Ω is said to be pathwise connected if any two points in Ω can be joined by a (piecewise-smooth) curve entirely contained in Ω. The purpose of this exercise is to prove that an open set Ω is pathwise connected if and only if Ω is connected.
 
 (a) Suppose first that Ω is open and pathwise connected, and that it can be written as $\Omega = \Omega _ { 1 } \cup \Omega _ { 2 }$ where $\Omega _ { 1 }$ and $\Omega _ { 2 }$ are disjoint non-empty open sets.

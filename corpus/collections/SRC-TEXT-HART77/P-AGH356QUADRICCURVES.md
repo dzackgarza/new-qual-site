@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Q$ be the nonsingular quadric surface $xy=zw$ in $X=\PP_k^3$ over a field $k$. We will consider locally principal closed subschemes $Y$ of $Q$. These correspond to Cartier divisors on $Q$ by (II, 6.17.1). On the other hand, we know that $\Pic Q \cong \ZZ \oplus \ZZ$, so we can talk about the type $(a, b)$ of $Y$ (II, 6.16) and (II, 6.6.1).
 
 Let us denote the invertible sheaf $\mcl(Y)$ by $\mco_Q(a, b)$. Thus for any $n \in \ZZ$, $\mco_Q(n)=\mco_Q(n, n)$.

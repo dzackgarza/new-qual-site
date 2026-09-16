@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the nodal cubic $X = V(x^2 - y^2(y-1))$ has a unique singular point.
 
 Show that $X$ locally has two smooth branches at zero meeting transversally.

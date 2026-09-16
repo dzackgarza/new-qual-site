@@ -19,7 +19,7 @@ audit:
   note: Removed a stray extraction digit against Variational Principle Problem 14 on page 21 of the source PDF and added a remark on the source's variable x for r.
 ---
 
-::: problem
+::: {.problem}
 Consider the functional $S[\phi, \phi^*] = 4\pi \int_{-\infty}^{\infty} dt \int_0^\infty dr\, r^2 \left(\dot{\phi}\dot{\phi}^* - \phi'\phi'^* - U(\phi\phi^*)\right)$, where $U \in C^1(\mathbb{R})$ and $\phi$ is a $C^2(\mathbb{R} \times [0, \infty))$ complex-valued function of $t$ and $x$.
 
 (a) Varying with respect to $\phi$ and $\phi^*$, obtain the Euler-Lagrange equation and its conjugated.

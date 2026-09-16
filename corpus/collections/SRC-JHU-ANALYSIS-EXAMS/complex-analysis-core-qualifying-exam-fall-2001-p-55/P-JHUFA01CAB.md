@@ -28,9 +28,9 @@ audit:
 Problem 2. Fix a real number $\alpha > 1$ . Show that the equation $z - \alpha = e ^ { - z }$ has precisely one solution in the half plane $\mathrm { R e } ( z ) > 0$ and that this solution must be real.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every right-half-plane solution lies in the disk $|z-\alpha|<1$.
-::: proof
+::: {.proof}
 If $z$ satisfies
 $$
 z-\alpha=e^{-z}
@@ -52,7 +52,7 @@ Hence every zero found in $B$ is automatically in the required half-plane.
 :::
 
 <1>2. Rouché's theorem gives exactly one solution in $B$.
-::: proof
+::: {.proof}
 Let
 $$
 F(z)=z-\alpha-e^{-z}.
@@ -70,7 +70,7 @@ Together with step <1>1, this is precisely one solution in the right half-plane.
 :::
 
 <1>3. The unique solution is real.
-::: proof
+::: {.proof}
 The equation has real coefficients in the sense that
 $$
 \overline{F(z)}=F(\overline z).

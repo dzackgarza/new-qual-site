@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and work with finite-dimensional complex representations.
 
 1. Define a representation and an irreducible representation of $G$.

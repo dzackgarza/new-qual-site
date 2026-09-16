@@ -30,10 +30,10 @@ audit:
    Prove that h is constant.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Construct an entire function whose real part is $h$.
 
-::: proof
+::: {.proof}
 Write $z=x+iy$, regard $h$ as a function of $(x,y)$, and
 define on all of $\mathbb R^2$
 $$
@@ -62,7 +62,7 @@ It is entire and has real part $h$ [@SS03].
 
 <1>2. The lower bound makes an entire exponential bounded.
 
-::: proof
+::: {.proof}
 Choose $m\in\mathbb R$ with $h(z)\geq m$ everywhere.
 Then $E(z)=e^{-H(z)}$ is entire and satisfies
 $$

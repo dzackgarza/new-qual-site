@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that open sets are dense in the Zariski topology.
 :::

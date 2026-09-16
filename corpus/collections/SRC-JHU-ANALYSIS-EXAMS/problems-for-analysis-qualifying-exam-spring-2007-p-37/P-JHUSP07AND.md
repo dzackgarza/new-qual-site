@@ -29,7 +29,7 @@ audit:
 4) Does there exist a surjective holomorphic map $f : D \to \mathbb { C }$ from the unit disc to the whole complex plane? Prove that your answer is correct.
 :::
 
-::: solution
+::: {.solution}
 Yes. One example is
 $$
 \boxed{f(z)=\frac{2z(1+z)}{(1-z)^2},\qquad |z|<1.}
@@ -37,7 +37,7 @@ $$
 
 <1>1. The disk is biholomorphic to the right half-plane.
 
-::: proof
+::: {.proof}
 The map $T(z)=(1+z)/(1-z)$ is holomorphic on the unit
 disk and satisfies
 $$
@@ -54,7 +54,7 @@ Thus $T$ maps the disk onto $H=\{t:\operatorname{Re}t>0\}$.
 
 <1>2. The polynomial $p(t)=t^2-t$ maps $H$ onto $\mathbb C$.
 
-::: proof
+::: {.proof}
 Given any $w\in\mathbb C$, the equation
 $t^2-t-w=0$ has two complex roots $t_1,t_2$, counted
 with multiplicity, and $t_1+t_2=1$ by the quadratic
@@ -65,7 +65,7 @@ and satisfies $p(t)=w$. Since $w$ was arbitrary, $p(H)=\mathbb C$.
 
 <1>3. Composition gives the required surjection.
 
-::: proof
+::: {.proof}
 The composite $p\circ T$ is holomorphic on the disk
 and surjective by the preceding two steps. Its formula is
 $$

@@ -19,7 +19,7 @@ audit:
   note: Restored the lost arrow against Complex Analysis Problem 33 on page 18 of the source PDF and added an erratum remark for the source's t > 0.
 ---
 
-::: problem
+::: {.problem}
 The Gamma function $\Gamma(z) = \int_0^\infty x^{z-1} e^{-x}\,\mathrm{d}x$ is originally defined only for $t > 0$; it can however be analytically continued to negative values of $z$.
 Show that, as $z \to -n$, where $n \in \mathbb{N}_0$, $\Gamma(z)$ has poles; compute the order and the residue of these poles.
 :::

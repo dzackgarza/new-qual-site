@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe the group of unit quaternions topologically and explain its relationship with $\SO(3)$.
 :::
 
-::: solution
+::: {.solution}
 Write the quaternion algebra as
 \[
 \HH=\{a+bi+cj+dk:a,b,c,d\in\RR\}.

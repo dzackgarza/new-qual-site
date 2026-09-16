@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be an $n$-dimensional vector space over a field $K$, and identify $M_n(K)$ with $\End_K(V)$.
 Describe the left, right, and two-sided ideals of $M_n(K)$, and identify the simple left and right ideals geometrically.
 :::

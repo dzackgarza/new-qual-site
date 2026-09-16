@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Choose any three of the following and state/define them accurately.
 For each definition give a quick example; for each theorem briefly indicate a use.
 

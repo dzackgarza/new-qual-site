@@ -15,6 +15,6 @@ audit:
   note: Checked against Probability, Problem 21, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts.
 ---
 
-::: problem
+::: {.problem}
 Find the expectation value of the area of the projection of a 3-dimensional randomly oriented cube with edge of length 1 onto a given plane.
 :::

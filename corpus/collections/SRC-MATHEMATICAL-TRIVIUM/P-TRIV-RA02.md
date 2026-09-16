@@ -19,6 +19,6 @@ audit:
   note: Restored the lost prime in f'(x) against Real Analysis Problem 2 on page 8 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Find $f'(x)$, if $f(x) = x^x$.
 :::

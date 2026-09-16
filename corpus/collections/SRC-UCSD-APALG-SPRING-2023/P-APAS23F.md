@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the $9$-element set of positions in a $3 \times 3$ matrix.
 The dihedral group $D_4$ of symmetries of a square acts on $X$ in a natural way.
 Let $\mathbb{C}[X]$ be the corresponding permutation representation and let $R \colon \mathbb{C}[X] \to \mathbb{C}[X]$ be the operator defined by
@@ -24,7 +24,7 @@ for all $v \in \mathbb{C}[X]$.
 What is the rank of the linear operator $R$?
 :::
 
-::: solution
+::: {.solution}
 The Reynolds operator is the averaging idempotent onto the invariant subspace:
 \[
 \operatorname{im}R=\mathbb C[X]^{D_4}.

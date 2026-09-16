@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is $H^* \PP^n\slice{k}$?
 :::

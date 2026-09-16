@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, Problem 25, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 (a) Matsubara summation: in statistical mechanics, one often has to carry out summations over Matsubara frequencies.
 These frequencies appear when the system is put at finite temperature, and the summation can be tedious to carry out.
 We will consider the expectation value of the number of particles of a bosonic non-interacting gas.

@@ -18,13 +18,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose that $G$ is a finite group of order 2013. Prove that $G$ has a normal subgroup $N$ of index 3 and that $N$ is a cyclic group.
 Furthermore, prove that the center of $G$ has order divisible by 11. (You will need the factorization $2013=3\cdot11\cdot61$.)
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The Sylow \(61\)-subgroup \(P_{61}\) of \(G\) is unique and hence normal.
 ::: {.proof}
 By Sylow's theorem, the number \(n_{61}\) of Sylow \(61\)-subgroups satisfies

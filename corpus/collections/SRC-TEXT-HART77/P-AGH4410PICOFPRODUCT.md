@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X$ is an elliptic curve, show that there is an exact sequence
 $$
 0 \to p_1^* \Pic X \oplus p_2^* \Pic X \to \Pic(X \times X) \to R \to 0,

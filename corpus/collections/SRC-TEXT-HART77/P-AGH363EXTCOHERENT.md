@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme, and let $\mcf, \mcg \in \Mod(X)$.
 
 a. If $\mcf, \mcg$ are both coherent, then $\mathcal{E}xt^i(\mcf, \mcg)$ is coherent, for all $i \geq 0$.

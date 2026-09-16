@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 We say a (singular) integral curve in $\PP^n$ is **strange** if there is a point which lies on all the tangent lines at nonsingular points of the curve.
 
 a. There are many singular strange curves, e.g., the curve given parametrically by $x=t, y=t^p, z=t^{2p}$ over a field of characteristic $p>0$.

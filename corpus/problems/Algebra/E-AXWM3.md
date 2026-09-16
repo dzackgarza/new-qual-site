@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 24. Prove that the Galois group of the polynomial $x^{n}-1$ over $Q$ is abelian.
 :::
 

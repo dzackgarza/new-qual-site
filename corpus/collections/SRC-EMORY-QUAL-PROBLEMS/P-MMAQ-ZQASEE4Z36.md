@@ -27,7 +27,7 @@ audit:
   note: "Compared with Real Analysis (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA3, whose solution repeats this subsequence argument."
 ---
 
-::: problem
+::: {.problem}
 1.  State the Dominated Convergence Theorem for Lebesgue integrals.
 
 2.  Let $\{f_n\}$ be a sequence of measurable functions on a

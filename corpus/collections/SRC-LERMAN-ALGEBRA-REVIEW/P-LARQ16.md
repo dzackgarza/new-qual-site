@@ -22,19 +22,19 @@ audit:
   note: "Proved both directions: F[x]-linearity implies F-linearity and intertwining, while an F-linear intertwiner commutes with every polynomial in the structure operator."
 ---
 
-::: problem
+::: {.problem}
 An $F[x]$-module is an $F$-vector space $M$ with a linear map $T_M:M\to M$, where $x\cdot m=T_M(m)$.
 Describe an $F[x]$-module homomorphism $\varphi:M\to N$ in terms of the linear maps $T_M$ and $T_N$.
 :::
 
-::: solution
+::: {.solution}
 The $F[x]$-module homomorphisms are exactly the $F$-linear maps satisfying
 $$
 \boxed{\varphi\circ T_M=T_N\circ\varphi.}
 $$
 
 <1>1. Every $F[x]$-module homomorphism is an $F$-linear intertwiner.
-::: proof
+::: {.proof}
 Let $\varphi:M\to N$ be $F[x]$-linear. Since the constants $F$ embed in $F[x]$, for $a\in F$ and $m\in M$,
 $$
 \varphi(am)=a\varphi(m),
@@ -52,7 +52,7 @@ Hence $\varphi T_M=T_N\varphi$.
 :::
 
 <1>2. Every $F$-linear intertwiner is $F[x]$-linear.
-::: proof
+::: {.proof}
 Conversely, suppose $\varphi$ is $F$-linear and
 $$
 \varphi T_M=T_N\varphi.

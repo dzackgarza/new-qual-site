@@ -15,7 +15,7 @@ audit:
   note: Checked against Integrals and Cauchy’s theorem, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $\left( f _ { n } \right)$ is a sequence of functions which are entire (=analytic throughout the complex plane).
 Suppose $\left( f _ { n } \right)$ converges pointwise to a function $g : \mathbb { C } \to \mathbb { C }$ and the convergence is uniform on each line segment in C. Show that $g$ is entire and that $f _ { n }  g$ uniformly on each compact subset of $\mathbb { C }$
 :::

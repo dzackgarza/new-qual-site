@@ -18,7 +18,7 @@ review: draft
 Prove the fundamental theorem of Algebra using the maximum modulus principle.
 :::
 
-::: solution
+::: {.solution}
 Let $p$ be a nonconstant complex polynomial. Suppose, for contradiction, that
 $p$ has no zero. Then
 \[

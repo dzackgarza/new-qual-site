@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $p(z)$ be a nonconstant complex polynomial all of whose roots satisfy
 \[
 \operatorname{Re}z>0.

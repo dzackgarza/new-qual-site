@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Expand the following functions into Laurent series in the indicated regions:
 
 (a) $\displaystyle f(z) = \frac{z^2 - 1}{ (z+2)(z+3)}, \; \; 2 < |z| < 3$, $3 < |z| < + \infty$.
@@ -26,7 +26,7 @@ Expand the following functions into Laurent series in the indicated regions:
 (b) $\displaystyle f(z) = \sin \frac{z}{1-z}, \; \; 0 < |z-1| < + \infty$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the exact Laurent series expansions for each function in the specified annular domains.
 
 <1>1. Part (a): Partial fraction decomposition of $f(z)$.

@@ -22,7 +22,7 @@ audit:
   note: "Checked additive and multiplicative closure of A+I, both-sided ideal closure where relevant, and the kernel and surjectivity of the canonical quotient map."
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a subring of a ring $R$, and let $I$ be an ideal of $R$.
 Prove that:
 
@@ -35,9 +35,9 @@ Prove that:
 4. $(A+I)/I\cong A/(A\cap I)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The set $A+I$ is a subring of $R$.
-::: proof
+::: {.proof}
 It is nonempty because $0=0+0\in A+I$. If $a+i,b+j\in A+I$, then
 $$
 (a+i)-(b+j)=(a-b)+(i-j)\in A+I
@@ -50,7 +50,7 @@ Here $ab\in A$, while $aj,ib,ij\in I$ because $I$ is a two-sided ideal of $R$. H
 :::
 
 <1>2. The intersection $A\cap I$ is an ideal of $A$.
-::: proof
+::: {.proof}
 The intersection is an additive subgroup of $A$. If $a\in A$ and $x\in A\cap I$, then $ax,xa\in A$ because $A$ is a subring, and $ax,xa\in I$ because $I$ is an ideal of $R$. Therefore
 $$
 ax,xa\in A\cap I,
@@ -59,7 +59,7 @@ so $A\cap I$ is an ideal of $A$.
 :::
 
 <1>3. The set $I$ is an ideal of $A+I$.
-::: proof
+::: {.proof}
 Certainly $I\subset A+I$, since $i=0+i$. It is already an additive subgroup. If $r=a+j\in A+I$ and $i\in I$, then
 $$
 ri=ai+ji\in I,
@@ -70,7 +70,7 @@ again because $I$ is a two-sided ideal of $R$. Hence $I\triangleleft A+I$.
 :::
 
 <1>4. The canonical map gives the quotient isomorphism.
-::: proof
+::: {.proof}
 Define
 $$
 \Phi:A\to(A+I)/I,

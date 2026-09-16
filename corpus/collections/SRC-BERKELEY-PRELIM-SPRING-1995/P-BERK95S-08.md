@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $W\subset V$ be finite-dimensional vector spaces over a field, and let $L:V\to V$ satisfy
 \[
 L(V)\subset W.

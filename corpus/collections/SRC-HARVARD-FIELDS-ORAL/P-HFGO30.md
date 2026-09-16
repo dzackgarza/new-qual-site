@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If $a$ is algebraic over $F$, prove that $[F(a):F]$ is finite.
 :::
 
-::: solution
+::: {.solution}
 Let $m_a(T)\in F[T]$ be the minimal polynomial of $a$ over $F$, and set
 \[
 d=\deg m_a.
@@ -33,7 +33,7 @@ d=\deg m_a.
 
 <1>1. Every element of $F(a)$ is represented by a polynomial in $a$ of degree
 less than $d$.
-::: proof
+::: {.proof}
 Because $m_a(a)=0$, Euclidean division gives, for every $f(T)\in F[T]$,
 \[
 f(T)=q(T)m_a(T)+r(T),
@@ -54,7 +54,7 @@ is a field. Hence $F(a)=F[a]$.
 1,a,\ldots,a^{d-1}
 \]
 form an $F$-basis of $F(a)$.
-::: proof
+::: {.proof}
 They span by <1>1. If
 \[
 c_0+c_1a+\cdots+c_{d-1}a^{d-1}=0,
@@ -68,7 +68,7 @@ vanish.
 \[
 [F(a):F]=d<\infty.
 \]
-::: proof
+::: {.proof}
 This is the dimension of the basis in <1>2.
 :::
 :::

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Show that the system
 \[
 \frac d{dt}\begin{pmatrix}x\\y\\z\end{pmatrix}

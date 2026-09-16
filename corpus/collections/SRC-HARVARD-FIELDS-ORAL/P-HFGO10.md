@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 What can be said about the degree of a field in its algebraic closure?
 :::
 

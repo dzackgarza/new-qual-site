@@ -28,7 +28,7 @@ $$
 Show that $(x_\alpha \times y_\alpha) \to x \times y$ in $X \times Y$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if nets $(x_\alpha)_{\alpha \in J}$ and $(y_\alpha)_{\alpha \in J}$ indexed by the same directed set $(J, \succeq)$ converge to $x \in X$ and $y \in Y$ respectively, then the product net $(x_\alpha, y_\alpha)_{\alpha \in J}$ converges to $(x, y)$ in the product topology on $X \times Y$.
 
 <1>1. Setting and open neighborhood reduction:

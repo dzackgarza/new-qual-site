@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 For nonzero integers $a,b,c$, show that
 \[
 \gcd(a,\operatorname{lcm}(b,c))

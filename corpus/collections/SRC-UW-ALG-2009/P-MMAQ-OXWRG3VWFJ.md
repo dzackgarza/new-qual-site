@@ -17,14 +17,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 - Classify all groups of order $2009=7^2\times 41$.
 
 - Suppose that $G$ is a group of order 2009. How many intermediate groups are there---that is, how many groups H are there with $1\subsetneq H\subsetneq G$, where both inclusions are proper?
   (There may be several cases to consider.)
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every group $G$ of order
 \[
 2009=7^2\cdot41

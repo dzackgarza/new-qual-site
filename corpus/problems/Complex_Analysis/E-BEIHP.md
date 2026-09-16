@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Set $z=e^{i\theta}$, so $\sin(\theta) = {z+z\inv\over 2i}$ and $\sin^2(\theta) = -{1\over 4}(z^{-2}-2+z^2)$.
 Then
 \[

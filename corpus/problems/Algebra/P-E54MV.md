@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that the Galois group over $\QQ$ of
 \[
 f(x)=x^3-3x-3

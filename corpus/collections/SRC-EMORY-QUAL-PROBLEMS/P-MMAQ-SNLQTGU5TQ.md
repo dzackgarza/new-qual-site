@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Carefully state Zorn's lemma and use it to prove that every vector space has a basis.
 :::
 

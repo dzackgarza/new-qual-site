@@ -20,7 +20,7 @@ Let $G \da \Gal(K/F)$ and $H \da \Gal(K/E)$, and suppose $H$ contains $N_G(P)$, 
 Prove that \( [E: F] \equiv 1 \mod p \).
 :::
 
-:::{.concept}
+::: {.concept}
 The correspondence:
 
 \begin{tikzcd}
@@ -47,7 +47,7 @@ N_G(P) = \ts{g\in G \st gPg\inv = P}
 
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Reduce to a group theory problem: $[E:F] = [G:H]$, despite the fact that $E/F$ is not necessarily Galois.

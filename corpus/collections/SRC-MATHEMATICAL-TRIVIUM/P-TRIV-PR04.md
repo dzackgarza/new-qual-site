@@ -19,7 +19,7 @@ audit:
   note: Repaired the broken range 1 <= j <= N against Probability Problem 4 on page 27 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Among $N$ tickets for $N$ students there are $n$ happy tickets.
 The students take the tickets one by one, each takes one random ticket.
 What is the probability that $j$'s student gets a happy ticket, $1 \leqslant j \leqslant N$?

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a square matrix over a field $K$.
 Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$.
 :::

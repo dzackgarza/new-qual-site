@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_\RR {1 \over (1+x^2)^2} \dx = {\pi \over 2}
 .\]
@@ -22,7 +22,7 @@ review: draft
 Use that $f(z) \sim 1/z^4$.
 :::
 
-:::{.solution}
+::: {.solution}
 
 ![](../../assets/figures/2021-07-29_18-40-40.png)
 :::

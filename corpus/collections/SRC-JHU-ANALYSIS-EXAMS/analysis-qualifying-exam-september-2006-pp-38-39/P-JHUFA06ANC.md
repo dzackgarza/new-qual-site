@@ -33,11 +33,11 @@ a) All holomorphic functions $f:\mathbb C\setminus\{0\}\to H$ are constant, wher
 b) All harmonic functions $h : \mathbb { C } \setminus [ 0 , + \infty ) \to [ 0 , 1 ]$ are constant.
 :::
 
-::: solution
+::: {.solution}
 Assertion (a) is true; assertion (b) is false.
 
 <1>1. A holomorphic map from the punctured plane into $H$ is constant.
-::: proof
+::: {.proof}
 Given such an $f$, define
 $$
 g(z)=\frac{f(z)-i}{f(z)+i}.
@@ -59,7 +59,7 @@ where $1-c\ne0$. Hence $f$ is constant, proving (a).
 :::
 
 <1>2. A branch of the argument supplies a counterexample to (b).
-::: proof
+::: {.proof}
 On $\Omega=\mathbb C\setminus[0,\infty)$ choose
 the logarithm branch
 $$

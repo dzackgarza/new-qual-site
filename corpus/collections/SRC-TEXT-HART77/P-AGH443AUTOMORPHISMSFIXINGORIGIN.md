@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let the elliptic curve $X$ be embedded in $\PP^2$ so as to have the equation $y^2=x(x-1)(x-\lambda)$.
 Show that any automorphism of $X$ leaving $P_0=(0,1,0)$ fixed is induced by an automorphism of $\PP^2$ coming from the automorphism of the affine $(x, y)$-plane given by
 $$

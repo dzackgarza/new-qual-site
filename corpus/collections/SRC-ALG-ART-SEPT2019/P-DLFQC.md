@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Work over an algebraically closed field $F$ of characteristic zero.
 
 a. Let $X$ be an affine variety with coordinate algebra $F[X]$. State the *Nullstellensatz*. Then use it to show that a subset $S \subseteq X$ is dense (in the Zariski topology) if and only if the following property holds for all $f \in F[X]$:

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the morphism
 \[
 f: \AA^2 &\to \AA^2 \\

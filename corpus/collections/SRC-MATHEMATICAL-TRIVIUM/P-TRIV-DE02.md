@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 2, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve $\left\{ { \begin{array} { l } { x ^ { \prime } ( t ) = - x ( t ) + 6 y ( t ) } \\ { y ^ { \prime } ( t ) = 2 x ( t ) + 3 y ( t ) } \end{array} } \right.$
 :::

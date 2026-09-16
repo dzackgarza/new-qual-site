@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe the subgroups of $\ZZ^3$ and the possible structures of the quotient by such a subgroup.
 :::
 

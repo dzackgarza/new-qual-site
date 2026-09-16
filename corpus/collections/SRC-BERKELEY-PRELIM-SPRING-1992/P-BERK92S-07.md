@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a_1,\dots,a_{10}$ be integers with
 \[
 1\le a_i\le25.

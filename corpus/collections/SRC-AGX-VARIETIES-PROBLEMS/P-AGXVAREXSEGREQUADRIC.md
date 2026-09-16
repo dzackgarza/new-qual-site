@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the image of the Segre embedding $\PP^1\cross \PP^1 \to \PP^3$ is the smooth quadric $V(x_0x_3 - x_1 x_2)$.
 :::

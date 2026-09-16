@@ -23,7 +23,7 @@ audit:
   note: Verified the topology axioms, including the Hausdorff compact-complement argument for arbitrary unions, and the finite-subcover proof of compactness.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a Hausdorff space, and recall that the *one-point compactification* $X^* = X \cup \{\infty\}$ (where $\infty \notin X$) is defined with the collection of open sets $\mathcal{T}^*$ such that $U \subseteq X^*$ belongs to $\mathcal{T}^*$ if and only if either:
 1. $U \subseteq X$ and $U$ is open in $X$, or
 2. $\infty \in U$ and $X \setminus U$ is a compact subset of $X$.
@@ -31,7 +31,7 @@ Let $X$ be a Hausdorff space, and recall that the *one-point compactification* $
 Prove that $\mathcal{T}^*$ defines a topology on $X^*$ and that $(X^*, \mathcal{T}^*)$ is a compact space.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\mathcal{T}^*$ satisfies the topology axioms (empty set/whole space, arbitrary unions, finite intersections) and that every open cover of $X^*$ has a finite subcover.
 
 <1>1. $\mathcal{T}^*$ contains $\emptyset$ and $X^*$:

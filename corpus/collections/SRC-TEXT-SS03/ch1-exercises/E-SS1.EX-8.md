@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 8. Suppose U and $V$ are open sets in the complex plane.
    Prove that if $f : U \to V$ and $g : V \to \mathbb { C }$ are two functions that are diferentiable (in the real sense, that is, as functions of the two real variables x and $y )$ , and $h = g \circ f$ , then
 
@@ -32,7 +32,7 @@ $$
 This is the complex version of the chain rule.
 :::
 
-::: solution
+::: {.solution}
 Write the real-differentiable map $f$ locally as a function of $z$ and $\bar z$. Its differential is
 \[
 df=f_z\,dz+f_{\bar z}\,d\bar z,

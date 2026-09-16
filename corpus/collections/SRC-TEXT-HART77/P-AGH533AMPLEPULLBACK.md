@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\pi: \tilde{X} \rightarrow X$ be a monoidal transformation, and let $D$ be a very ample divisor on $X$.
 Show that $2 \pi^* D-E$ is ample on $\tilde{X}$.
 

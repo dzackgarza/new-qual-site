@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a Noetherian ring.
 Show that every surjective ring endomorphism $f:A\to A$ is an automorphism.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 K_n=\ker(f^n),\qquad n\ge1.
@@ -41,12 +41,12 @@ Then $K_1\subseteq K_2\subseteq\cdots$ is an ascending chain of ideals.
 \[
 K_n=K_{n+1}.
 \]
-::: proof
+::: {.proof}
 This is the ascending chain condition on ideals.
 :::
 
 <1>2. The kernel of $f$ is zero.
-::: proof
+::: {.proof}
 Let $a\in\ker f$. Surjectivity of $f^n$ gives $b\in A$ with $f^n(b)=a$.
 Then
 \[

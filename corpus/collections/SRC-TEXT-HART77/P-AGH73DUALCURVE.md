@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \PP^2$ be a curve.
 Regard the set of lines in $\PP^2$ as another projective space $(\PP^2)\dual$, taking $(a_0, a_1, a_2)$ as homogeneous coordinates of the line
 $$

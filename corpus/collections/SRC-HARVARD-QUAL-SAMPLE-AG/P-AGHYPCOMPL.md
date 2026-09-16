@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Is the complement of a hypersurface in $\PP^2$ affine?
 :::

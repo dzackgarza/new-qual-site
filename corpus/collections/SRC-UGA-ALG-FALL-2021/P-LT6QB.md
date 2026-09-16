@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Recall that for a positive integer $n$, the cyclotomic field $\mathbb{Q}(\zeta_n)$ is generated over $\mathbb{Q}$ by a primitive $n$-th root of unity $\zeta_n$.
 
 (a) What is the degree $[\mathbb{Q}(\zeta_n) : \mathbb{Q}]$?
@@ -31,7 +31,7 @@ Recall that for a positive integer $n$, the cyclotomic field $\mathbb{Q}(\zeta_n
 (d) How many subfields of $\mathbb{Q}(\zeta_{2021})$ have degree 2 over $\mathbb{Q}$? *(Note that $2021 = 43 \cdot 47$).*
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the degree, Galois group, and number of quadratic subfields of the cyclotomic extension $\mathbb{Q}(\zeta_{2021})/\mathbb{Q}$.
 
 <1>1. Part (a): Degree of the Cyclotomic Extension $[\mathbb{Q}(\zeta_n) : \mathbb{Q}]$:

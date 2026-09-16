@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a real vector space.
 
 (a) Define a norm on $V$.

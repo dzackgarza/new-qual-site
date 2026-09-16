@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group (possibly infinite) and let $V$ be a finite-dimensional $G$-module over $\mathbb{C}$.
 Assume that $V$ admits a $G$-invariant inner product $\langle -, - \rangle$.
 Prove that $V$ is completely reducible.
 :::
 
-::: solution
+::: {.solution}
 Let $W\subseteq V$ be a $G$-submodule. We claim that its orthogonal complement
 \[
 W^\perp=\{v\in V: \langle v,w\rangle=0\text{ for every }w\in W\}

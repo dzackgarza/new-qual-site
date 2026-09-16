@@ -19,7 +19,7 @@ For a prime $p$, let $G$ be a finite $p\dash$group and let $N$ be a normal subgr
 Prove that $N$ is contained in the center of $G$.
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Definition of conjugacy class: $[x] = \ts{gxg\inv \st g\in G}$.
@@ -29,7 +29,7 @@ Prove that $N$ is contained in the center of $G$.
     Then $\size \OO(x) = \size G / \size \Stab(x)$, so $\size \OO(x)$ divides $\size G$.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Use that $N\normal G \iff N = \disjoint' [n_i]$ is a *disjoint* union of (full) conjugacy classes.

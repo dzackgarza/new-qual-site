@@ -28,7 +28,7 @@ audit:
   note: Verified that the free-group quotient respects the surface relator and that covering-space injectivity contradicts nonabelianity.
 ---
 
-::: problem
+::: {.problem}
 (a) Write down (without proof) a presentation for $\pi_1(\Sigma_2,p)$, where $\Sigma_2$ is a closed, connected, orientable genus $2$ surface and $p$ is any point in $\Sigma_2$.
 
 (b) Show that $\pi_1(\Sigma_2,p)$ is not abelian by showing that it surjects onto a free group of rank $2$.

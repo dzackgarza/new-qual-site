@@ -24,16 +24,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that every maximal ideal in a commutative ring with identity is prime.
 :::
 
-::: solution
+::: {.solution}
 Let $R$ be a commutative ring with identity and let $\mathfrak m$ be a maximal
 ideal.
 
 <1>1. The quotient $R/\mathfrak m$ is a field.
-::: proof
+::: {.proof}
 Let $a+\mathfrak m$ be a nonzero class, so $a\notin\mathfrak m$. The ideal
 \[
 \mathfrak m+(a)
@@ -51,7 +51,7 @@ Thus every nonzero class is invertible.
 :::
 
 <1>2. The ideal $\mathfrak m$ is prime.
-::: proof
+::: {.proof}
 Suppose $ab\in\mathfrak m$. Then in the field $R/\mathfrak m$,
 \[
 (a+\mathfrak m)(b+\mathfrak m)=0.

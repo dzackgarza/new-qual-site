@@ -41,7 +41,7 @@ E = \left\{ \frac{1}{2} \times y \;\middle|\; 0 < y < 1 \right\}.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the closure $\overline{S}$ for each subset in the dictionary order topology on $I_o^2 = [0, 1] \times [0, 1]$.
 
 <1>1. Basis for the Dictionary Order Topology on $I_o^2$:

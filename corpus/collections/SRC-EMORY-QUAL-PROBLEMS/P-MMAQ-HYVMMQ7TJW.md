@@ -30,7 +30,7 @@ audit:
   note: "Compared with Fields and Galois Theory (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF3, whose solution repeats this symmetric-group argument."
 ---
 
-::: problem
+::: {.problem}
 Fix a field $F$, a separable polynomial $f\in F[x]$ of degree $n \geq 3$, and a splitting field $L$ for $f$.
 Prove that if $[L:F] = n!$ then:
 
@@ -41,14 +41,14 @@ Prove that if $[L:F] = n!$ then:
 3. For every root $r$ of $f$, there is no field $E$ with $F \subsetneq E \subsetneq F(r)$.
 :::
 
-::: solution
+::: {.solution}
 Let $X$ be the set of the $n$ distinct roots of $f$ in $L$,
 and put $G=\operatorname{Gal}(L/F)$.
 
 <1>1. The action of $G$ on $X$ identifies it with
 the full symmetric group $\operatorname{Sym}(X)$.
 
-::: proof
+::: {.proof}
 The extension is Galois because it is the splitting
 field of a separable polynomial [@DF04]. Its automorphisms
 permute the roots. If an automorphism fixes every root,
@@ -60,7 +60,7 @@ is the whole symmetric group.
 
 <1>2. The polynomial $f$ is irreducible over $F$.
 
-::: proof
+::: {.proof}
 Choose $r\in X$ and let $m_r$ be its monic minimal
 polynomial over $F$. This polynomial divides $f$.
 For every $\sigma\in G$, applying $\sigma$ to
@@ -73,7 +73,7 @@ multiple of the irreducible polynomial $m_r$.
 
 <1>3. For each root $r$, no other root belongs to $F(r)$.
 
-::: proof
+::: {.proof}
 The subgroup $H=\operatorname{Gal}(L/F(r))$ consists
 exactly of the permutations fixing $r$. Suppose
 $s\in X\setminus\{r\}$. Since $n\geq3$, there is
@@ -86,7 +86,7 @@ does not fix $s$. Consequently $s\notin F(r)$.
 <1>4. The root field $F(r)$ has no strict intermediate
 field over $F$.
 
-::: proof
+::: {.proof}
 The point stabilizer $H$ is a maximal proper subgroup
 of $G$. Indeed, if $H\subsetneq J\leq G$, choose
 $g\in J$ moving $r$. Since $H$ permutes the remaining

@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let A be a non-degenerate matrix, and B is obtained from A by interchange two of its lines.
 How are det A and det B related?
 :::

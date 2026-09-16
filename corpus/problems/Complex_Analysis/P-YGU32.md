@@ -23,8 +23,8 @@ Find all entire functions that satisfy
 Prove this list is complete.
 :::
 
-:::{.solution}
-:::{.concept}
+::: {.solution}
+::: {.concept}
 
 :::
 - Suppose $f$ is entire and define $g(z) \definedas {z \over f(z)}$.

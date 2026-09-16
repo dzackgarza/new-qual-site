@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the set of the $20$ diagonals in a regular octogon.
 The dihedral group $D_8$ of octogon symmetries acts on $X$; let $V=\mathbb{C}[X]$ be the associated permutation representation of $D_8$.
 
@@ -27,7 +27,7 @@ R_{D_8}(v)=\frac{1}{|G|}\sum_{g\in D_8}g\cdot v.
 What is the rank of $R_{D_8}$?
 :::
 
-::: solution
+::: {.solution}
 Label the vertices of the regular octagon by the elements of \(\mathbb Z/8\mathbb Z\). An unordered pair of distinct vertices is determined up to the dihedral action by its cyclic distance
 \[
 d=\min(|i-j|,8-|i-j|).

@@ -15,6 +15,6 @@ audit:
   note: Checked against Laurent expansions and singularities, Problem 2, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the Laurent expansions of $\exp ( \textstyle { \frac { 1 } { z } } )$ and $\cos { \left( { \frac { 1 } { z } } \right) }$ about the origin.
 :::

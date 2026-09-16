@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 34, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute $\int _ { - \infty } ^ { \infty } \delta ^ { \prime \prime } ( x - 2 ) \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x$
 :::

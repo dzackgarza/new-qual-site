@@ -25,7 +25,7 @@ Prove that $a+I$ is a unit (i.e., invertible) in the quotient ring $R/I$.
 (For half credit: Prove that if $a$ and $n$ are relatively prime integers, then $a+n\mathbb{Z}$ is a unit in $\mathbb{Z}/n\mathbb{Z}$.)
 :::
 
-::: solution
+::: {.solution}
 Because $(a)+I=R$, we have $1\in(a)+I$. Hence there exist $r\in R$ and $i\in I$ such that
 \[
 ra+i=1.

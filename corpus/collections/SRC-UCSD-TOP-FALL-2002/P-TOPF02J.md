@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use transversality to prove that there is no smooth retraction $r : B^n \to S^{n-1}$, and consequently (the Brouwer fixed point theorem) that any smooth automorphism of $B^n$ has a fixed point.
 :::
 

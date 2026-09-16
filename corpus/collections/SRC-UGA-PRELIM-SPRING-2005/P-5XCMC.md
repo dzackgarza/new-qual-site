@@ -25,7 +25,7 @@ a. Prove that $A \Rightarrow B$.
 b. Give an example of open sentences $P(x)$ and $Q(x)$ to show that $B \Rightarrow A$ need not be true.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Assume $A$, and suppose $\forall x\,P(x)$.
 :::
 

@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a Principal Ideal Domain (PID) with a unique non-zero prime ideal.
 Prove that it is a PID and classify all of its ideals.
 :::
 
-::: solution
+::: {.solution}
 Fix a prime integer $p$ and let
 \[
 R=\mathbb Z_{(p)}=\left\{\frac ab\in\mathbb Q:p\nmid b\right\}.

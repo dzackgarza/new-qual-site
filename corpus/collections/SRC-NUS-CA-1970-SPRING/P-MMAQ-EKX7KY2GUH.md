@@ -16,7 +16,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 State and prove the divergence theorem on any rectangle in $\mathbb{R}^2$.
 :::
 

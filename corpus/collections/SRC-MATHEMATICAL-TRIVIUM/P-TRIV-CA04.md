@@ -15,6 +15,6 @@ audit:
   note: Checked against Complex Analysis, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute the Laurent series of $f ( z ) = \frac { e ^ { z } } { ( z - 1 ) ^ { 2 } }$ around $z _ { 0 } = 1$ give the region of convergence.
 :::

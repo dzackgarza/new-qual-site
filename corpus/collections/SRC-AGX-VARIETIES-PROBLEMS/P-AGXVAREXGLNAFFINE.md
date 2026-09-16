@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\GL_n(\CC)$ is an affine variety.
 :::

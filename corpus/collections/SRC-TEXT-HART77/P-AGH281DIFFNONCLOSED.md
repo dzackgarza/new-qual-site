@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Here we strengthen the results of the text to include information about the sheaf of differentials at a not necessarily closed point of a scheme $X$.
 
 a. Generalize (8.7) as follows. Let $B$ be a local ring containing a field $k$, and assume that the residue field $k(B) = B/\mfm$ of $B$ is a separably generated extension of $k$.

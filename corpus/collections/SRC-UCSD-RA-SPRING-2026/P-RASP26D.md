@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{M}([0,1])$ denote the space of all complex Radon measures on $[0,1]$, and $\mathcal{P}([0,1])$ the subset of probability measures.
 Let $f : [0,1] \times [0,1] \to \mathbb{R}$ be a continuous function, and let $U$ be the set of all $\mu \in \mathcal{P}([0,1])$ satisfying
 $$
@@ -32,14 +32,14 @@ $$
 Prove that $U$ is a relatively open subset of $\mathcal{P}([0,1])$ with respect to the weak* topology.
 :::
 
-::: solution
+::: {.solution}
 Fix $\mu_0\in U$ and define
 \[
 F_{\mu_0}(y):=\int_0^1 f(x,y)\,d\mu_0(x).
 \]
 
 <1>1. Obtain a uniform margin below $1$.
-::: proof
+::: {.proof}
 Because $f$ is continuous on the compact square $[0,1]^2$, it is uniformly continuous. Hence the map
 \[
 y\longmapsto f_y:=f(\cdot,y)
@@ -62,7 +62,7 @@ Put
 :::
 
 <1>2. Reduce the parameter family to finitely many weak* test functions.
-::: proof
+::: {.proof}
 The set
 \[
 K:=\{f_y:y\in[0,1]\}\subset C([0,1])
@@ -84,7 +84,7 @@ Each condition involves evaluation of the measure at one continuous function, so
 :::
 
 <1>3. Show that $V\subset U$.
-::: proof
+::: {.proof}
 Fix $\mu\in V$ and $y\in[0,1]$. Choose $j$ with
 \[
 \|f_y-f_{y_j}\|_\infty<\eta.

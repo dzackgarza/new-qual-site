@@ -23,11 +23,11 @@ audit:
   note: "Eliminated sqrt(2) after cubing x-sqrt(2), then squared once to obtain an explicit degree-six polynomial over Q."
 ---
 
-::: problem
+::: {.problem}
 Find a specific polynomial with rational coefficients having $\sqrt2+\sqrt[3]{3}$ as a root.
 :::
 
-::: solution
+::: {.solution}
 Set
 $$
 \alpha=\sqrt2+\sqrt[3]{3}.
@@ -41,7 +41,7 @@ $$
 so $\alpha=a+b$, $a^2=2$, and $b^3=3$.
 
 <1>1. Eliminate the cube root in favor of $a$ and $\alpha$.
-::: proof
+::: {.proof}
 Since
 $$
 b=\alpha-a,
@@ -62,7 +62,7 @@ $$
 :::
 
 <1>2. Eliminate $a=\sqrt2$.
-::: proof
+::: {.proof}
 Squaring the identity from step <1>1 and using $a^2=2$ yields
 $$
 (\alpha^3+6\alpha-3)^2

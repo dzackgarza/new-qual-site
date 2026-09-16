@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $s\in G$. Define $C_G(s)$, prove that it is a subgroup of $G$, and show that $\langle s\rangle\normal C_G(s)$.
 :::
 
-::: solution
+::: {.solution}
 The centralizer of $s$ in $G$ is
 \[
 C_G(s)=\{g\in G:gs=sg\}.

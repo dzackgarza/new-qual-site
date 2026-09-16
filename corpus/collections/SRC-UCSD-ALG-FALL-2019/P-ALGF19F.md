@@ -25,7 +25,7 @@ audit:
   note: Verified factor degrees by the subfield degree tower, divisibility using the field F_p[x]/(f), and the count by squarefreeness and degree bookkeeping.
 ---
 
-::: problem
+::: {.problem}
 Suppose $\ell$ and $p$ are prime and $\mathbb{F}_p$ is a finite field of order $p$.
 
 (a) Prove that the degree of an irreducible factor of $x^{p^\ell} - x$ is either $1$ or $\ell$.

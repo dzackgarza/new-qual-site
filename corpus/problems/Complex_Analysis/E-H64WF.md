@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a conformal map that sends $i\RR$ to $\abs{z-{1\over 2}} = {1\over 2}$.
 
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - The double angle formulas:
@@ -33,7 +33,7 @@ Find a conformal map that sends $i\RR$ to $\abs{z-{1\over 2}} = {1\over 2}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Idea: need the line $-i\infty\to 0 \to i\infty$ to get mapped to a circle $0\to 1\to 0$:
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-18_22-01-30.png)

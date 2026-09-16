@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f: \DD\to \DD$ with $\ts{a_k}_{k\leq n}$ the zeros of $f$ in $\DD$.
 Show that
 \[
@@ -24,7 +24,7 @@ Show that
 
 :::
 
-:::{.solution}
+::: {.solution}
 Define $\Psi(z) \da \prod_{k\leq n} \psi_{a_k}(z)$ and $g(z) \da f(z)/\Psi(z)$.
 The claim is that $\abs{g(z)} \leq 1$, which implies the result directly.
 Note that $\abs{\Psi(z)} = 1$ for $\abs{z} = 1$, so $\lim_{r\to 1^-} \abs{\Psi(re^{it})} = 1$ along any ray.

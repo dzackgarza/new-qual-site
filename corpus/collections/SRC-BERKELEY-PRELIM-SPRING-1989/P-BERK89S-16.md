@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f,g$ be entire and suppose
 \[
 f(g(z))\longrightarrow\infty

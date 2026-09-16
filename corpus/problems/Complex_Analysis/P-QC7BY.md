@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume two functions $u, v: \RR^2 \to \RR$ have continuous partial derivatives at $(x_0 ,y_0)$.
 Show that $f \definedas u + iv$ has derivative $f'(z_0)$ at $z_0 = x_0 + iy_0$ if and only if
 \[
@@ -24,7 +24,7 @@ Show that $f \definedas u + iv$ has derivative $f'(z_0)$ at $z_0 = x_0 + iy_0$ i
 .\]
 :::
 
-::: solution
+::: {.solution}
 Put $h=z-z_0$. Real differentiability at $(x_0,y_0)$ gives
 \[
 f(z_0+h)=f(z_0)+A h+B\bar h+o(|h|),

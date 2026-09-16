@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the Galois group of $\mathbb{Q}(\sqrt{2}, \sqrt{3}) / \mathbb{Q}$?
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 K=\mathbb Q(\sqrt2,\sqrt3).

@@ -23,7 +23,7 @@ audit:
   note: "Verified harmonicity directly and integrated the Cauchy--Riemann equations to obtain the harmonic conjugate."
 ---
 
-::: problem
+::: {.problem}
 Let $u:\mathbb R^2\to\mathbb R$ be defined by
 \[
 u(x,y)=x^3-3xy^2.
@@ -35,9 +35,9 @@ f(x+iy)=u(x,y)+iv(x,y)
 is analytic.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Verify that $u$ is harmonic.
-::: proof
+::: {.proof}
 We have
 $$
 u_x=3x^2-3y^2,
@@ -58,7 +58,7 @@ everywhere on $\mathbb R^2$, so $u$ is harmonic.
 :::
 
 <1>2. Solve the Cauchy--Riemann equations for $v$.
-::: proof
+::: {.proof}
 For
 $$
 f=u+iv
@@ -90,7 +90,7 @@ $$
 :::
 
 <1>3. Identify the analytic function.
-::: proof
+::: {.proof}
 Since
 $$
 (x+iy)^3

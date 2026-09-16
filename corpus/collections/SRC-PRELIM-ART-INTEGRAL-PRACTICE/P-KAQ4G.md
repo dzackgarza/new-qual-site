@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{\sin x}{\cos^2x}\,dx
@@ -31,7 +31,7 @@ Evaluate
 where $a\ne0$.
 :::
 
-::: solution
+::: {.solution}
 Using $\sin x/\cos^2x=\tan x\sec x$ and $(\sec x)'=\sec x\tan x$,
 \[
 \boxed{\int\frac{\sin x}{\cos^2x}\,dx=\sec x+C.}

@@ -30,7 +30,7 @@ audit:
   note: "Compared with Fields and Galois Theory (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF4, whose solution repeats this argument."
 ---
 
-::: problem
+::: {.problem}
 1. Show that $\sqrt{2+\sqrt{2}}$ is a root of $p(x) = x^4 - 4x^2 + 2 \in \mathbb{Q}[x]$.
 
 2. Prove that $\mathbb{Q}(\sqrt{2 + \sqrt{2}})$ is a Galois extension of $\mathbb{Q}$ and find its Galois group.
@@ -40,23 +40,23 @@ audit:
    Give an example of a proper sub-extension $\mathbb{Q} \subset L \subset K$, such that $L/\mathbb{Q}$ is Galois.
 :::
 
-::: hint
+::: {.hint}
 The number $\sqrt{2-\sqrt2}$ is another root of $p(x)$.
 :::
 
-::: remark
+::: {.remark}
 The leading term must be $x^4$. The expression
 $x^2-4x^2+2$ evaluates to $-4-3\sqrt2\ne0$
 at $x=\sqrt{2+\sqrt2}$.
 :::
 
-::: solution
+::: {.solution}
 Put $a=\sqrt{2+\sqrt2}>0$ and $b=\sqrt{2-\sqrt2}>0$.
 
 <1>1. The number $a$ has minimal polynomial
 $p(x)=x^4-4x^2+2$ over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 Since $a^2-2=\sqrt2$, squaring gives
 $(a^2-2)^2=2$, or $a^4-4a^2+2=0$.
 The polynomial is Eisenstein at two, so it is
@@ -67,7 +67,7 @@ the minimal polynomial and $[\mathbb Q(a):\mathbb Q]=4$.
 <1>2. The extension $\mathbb Q(a)/\mathbb Q$ is
 Galois with cyclic group of order four.
 
-::: proof
+::: {.proof}
 The four roots of $p$ are $a,-a,b,-b$: their squares
 are the two roots $2+\sqrt2,2-\sqrt2$ of
 $y^2-4y+2$. These four real roots are distinct.
@@ -103,7 +103,7 @@ K=\mathbb Q(c,\zeta),\qquad
 \quad c=\sqrt[3]{5}>0,\quad \zeta=e^{2\pi i/3}.
 $$
 
-::: proof
+::: {.proof}
 The roots are $c,\zeta c,\zeta^2c$. Their field
 contains $c$ and their ratio $\zeta$, so it is
 exactly $K$. Eisenstein at five makes $x^3-5$
@@ -127,7 +127,7 @@ $r^3=s^2=1$ and $srs=r^{-1}$ and generate the group.
 <1>4. A proper Galois subextension in part (3) is
 $L=\mathbb Q(\zeta)$.
 
-::: proof
+::: {.proof}
 The field $L$ is the splitting field of $x^2+x+1$,
 with two distinct roots $\zeta,\zeta^2$, so it is
 Galois over $\mathbb Q$. Its degree is two because

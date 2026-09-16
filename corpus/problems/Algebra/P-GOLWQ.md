@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that any field morphism is either 0 or injective.
 :::
 
-::: solution
+::: {.solution}
 Let $\phi:F\to R$ be a ring homomorphism with $F$ a field. Its kernel is an ideal of $F$. A field has only the ideals $(0)$ and $F$, so either
 \[
 \ker\phi=(0)

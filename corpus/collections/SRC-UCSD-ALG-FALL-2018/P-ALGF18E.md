@@ -24,7 +24,7 @@ audit:
   note: Verified the fraction-field computation, the integral nonmember T obstruction to UFD, and the degree argument excluding a one-generator Z-algebra presentation.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A := \{ a_0 + a_2 T^2 + a_3 T^3 + \cdots + a_n T^n \mid n = 0,2,3,\ldots;\; a_0,a_2,\ldots,a_n \in \mathbb{Z} \}

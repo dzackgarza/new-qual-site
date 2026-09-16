@@ -30,14 +30,14 @@ Let $G$ be a group and $A \trianglelefteq G$ be a normal abelian subgroup.
 Show that $G/A$ acts on $A$ by conjugation and construct a homomorphism $\varphi: G/A \to \mathrm{Aut}(A)$.
 :::
 
-::: solution
+::: {.solution}
 For $gA\in G/A$ and $a\in A$, define
 \[
 (gA)\cdot a=gag^{-1}.
 \]
 
 <1>1. The formula is well-defined and takes values in $A$.
-::: proof
+::: {.proof}
 Normality of $A$ gives $gag^{-1}\in A$. Suppose $gA=hA$. Then
 $h^{-1}g\in A$, so write $g=hb$ with $b\in A$. Since $A$ is abelian,
 $bab^{-1}=a$, and therefore
@@ -48,7 +48,7 @@ Thus the value depends only on the coset $gA$.
 :::
 
 <1>2. This formula defines a left action of $G/A$ on $A$.
-::: proof
+::: {.proof}
 The identity coset satisfies
 \[
 A\cdot a=a.
@@ -64,7 +64,7 @@ Hence the action axioms hold.
 
 <1>3. For each $gA\in G/A$, conjugation by $g$ restricts to an automorphism
 of $A$.
-::: proof
+::: {.proof}
 Normality shows that conjugation by $g$ maps $A$ to itself. Its inverse on $A$
 is conjugation by $g^{-1}$, so the restriction is an automorphism.
 :::
@@ -75,7 +75,7 @@ is conjugation by $g^{-1}$, so the restriction is an automorphism.
 \varphi(gA)(a)=gag^{-1},
 \]
 is a group homomorphism.
-::: proof
+::: {.proof}
 Well-definedness follows from <1>1 and the codomain assertion from <1>3. For
 $g,h\in G$ and $a\in A$,
 \[

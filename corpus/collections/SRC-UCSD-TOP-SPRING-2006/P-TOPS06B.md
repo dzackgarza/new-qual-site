@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Sigma_n$ denote the Riemann surface of genus $n$.
 Use the Euler characteristic to show that there is no finite covering map from $\Sigma_{n+1}$ to $\Sigma_n$ for $n > 2$.
 :::

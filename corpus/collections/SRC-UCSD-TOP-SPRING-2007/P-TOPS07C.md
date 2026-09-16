@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the integral homology $H_*(\mathbb{RP}^2 \times \mathbb{RP}^3; \mathbb{Z})$.
 :::
 

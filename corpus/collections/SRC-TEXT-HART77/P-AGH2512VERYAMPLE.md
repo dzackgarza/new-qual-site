@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $X$ be a scheme over a scheme $Y$, and let $\mcl, \mcm$ be two very ample invertible sheaves on $X$.
 Show that $\mcl \tensor \mcm$ is also very ample.
 *Hint:* use a Segre embedding.

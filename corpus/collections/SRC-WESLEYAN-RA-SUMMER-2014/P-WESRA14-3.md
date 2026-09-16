@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Prove that a measure $\mu$ is $\sigma$-finite if and only if there exists $f\in L^1(\mu)$ such that
 \[
 f(x)>0\qquad(x\in X).

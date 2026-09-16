@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate, on an interval where the integrand is real,
 \[
 \int\frac{x}{\sqrt{4-x^4}}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $u=x^2/2$, so $du=x\,dx$ and
 \[
 \sqrt{4-x^4}=2\sqrt{1-u^2}.

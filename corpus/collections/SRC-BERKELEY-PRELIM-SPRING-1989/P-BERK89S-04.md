@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $1<\lambda<\infty$. Prove that
 \[
 f_\lambda(z)=z+\lambda-e^z

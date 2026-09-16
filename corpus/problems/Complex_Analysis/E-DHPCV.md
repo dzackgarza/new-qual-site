@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic in a neighborhood of $\overline{D_r(z_0)}$. Show that for any $s < r$, there exists a constant $c > 0$ such that
 $$
 \|f\|_{(\infty, s)} \leq c \|f\|_{(1, r)}
@@ -31,7 +31,7 @@ $\displaystyle \|f\|_{(\infty, s)} = \sup_{z \in D_s(z_0)}|f(z)|$
 and $\displaystyle \|f\|_{(1, r)} = \iint_{D_r(z_0)} |f(z)|\,dx\,dy$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \delta=r-s>0.

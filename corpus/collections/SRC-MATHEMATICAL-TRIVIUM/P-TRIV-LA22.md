@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 22, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the transformations A, B of the vector space $\mathbb { R } ^ { n }$ sharing the same eigenvectors.
 Is this sufficient for their commutator to be zero?
 Is this necessary for their commutator to be zero?

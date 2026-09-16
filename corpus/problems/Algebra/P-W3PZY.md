@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field of characteristic $p>0$ and let $f\in F[x]$ be irreducible. Show that there are a unique integer $e\ge0$ and an irreducible separable polynomial $g\in F[x]$ such that
 \[
 f(x)=g(x^{p^e}),
@@ -23,7 +23,7 @@ f(x)=g(x^{p^e}),
 and that every root of $f$ in an algebraic closure has multiplicity $p^e$.
 :::
 
-::: solution
+::: {.solution}
 Choose $e\ge0$ maximal such that every exponent occurring in $f$ is divisible by $p^e$. Then there is a unique polynomial $g\in F[x]$ with
 \[
 f(x)=g(x^{p^e}).

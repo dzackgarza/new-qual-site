@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V,\varphi)$ be a complex representation of the symmetric group $S_n$, and let $\chi$ be its character.
 Prove that $\chi(g)\in\mathbb{R}$ for all $g\in S_n$.
 :::

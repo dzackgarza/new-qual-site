@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 A function $f:[0,1]\to\mathbb R$ is called upper semicontinuous if for every $x\in[0,1]$ and every $\varepsilon>0$ there exists $\delta>0$ such that
 \[
 |y-x|<\delta\quad\Longrightarrow\quad f(y)<f(x)+\varepsilon.

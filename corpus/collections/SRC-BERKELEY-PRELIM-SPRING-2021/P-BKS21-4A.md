@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 If $f$ is analytic from the unit disk into itself and $f(0)=0$, prove that
 \[
 |f'(0)|\le1.

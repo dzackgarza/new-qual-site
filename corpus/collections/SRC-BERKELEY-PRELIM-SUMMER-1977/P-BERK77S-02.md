@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be continuous on $\mathbb C$ and analytic on
 \[
 \{z\in\mathbb C:\operatorname{Im}z\ne0\}.

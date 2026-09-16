@@ -22,7 +22,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove that a projective $R$-module is flat.
 
 Hint: First prove the case for a free $R$-module.

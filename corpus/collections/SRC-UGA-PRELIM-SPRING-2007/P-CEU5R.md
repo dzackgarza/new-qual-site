@@ -24,7 +24,7 @@ Write the following statement in symbolic form, and then give (in symbolic form 
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let the universe be all animals, and let
 \[
 B(x),S(x),F(x),Y(x),W(x),K(x)

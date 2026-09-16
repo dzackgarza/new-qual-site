@@ -41,14 +41,14 @@ $$\sup_{z \in K} |f(z)| \leq C_K \|f\|_{L^2(U)}.$$
   If $f$ is holomorphic on $U$ and $\|f\|_{L^2(U)} < \infty$, prove that $z = 0$ is a removable singularity of $f$.
 :::
 
-::: solution
+::: {.solution}
 Write $dA=dx\,dy$. Normality here means that every sequence
 has a subsequence converging uniformly on compact subsets
 to a finite holomorphic function.
 
 <1>1. A disk contained in $U$ gives a pointwise mean-square estimate.
 
-::: proof
+::: {.proof}
 Suppose $\overline{D(a,r)}\subset U$. For $0<\rho<r$,
 Cauchy's formula at the center and Cauchy–Schwarz give
 $$
@@ -65,7 +65,7 @@ $$
 
 <1>2. The required compact-set bound holds with a constant independent of $f$.
 
-::: proof
+::: {.proof}
 For nonempty compact $K\subset U$, choose $r>0$ with
 $\overline{D(a,r)}\subset U$ for all $a\in K$.
 If $U\ne\mathbb C$, take half the distance from $K$ to
@@ -82,7 +82,7 @@ $K$ the pointwise assertion has no points to check.
 
 <1>3. The family with $L^2$ norm at most one is normal on $U$.
 
-::: proof
+::: {.proof}
 Step <1>2 makes this family uniformly bounded on every
 compact subset of $U$. Montel's theorem gives normality
 [@SS03]. This also applies when $U$ is disconnected:
@@ -104,7 +104,7 @@ $\int_U|f|^2\,dA\leq\liminf_j\int_U|f_{n_j}|^2\,dA\leq1$
 
 <1>4. Square integrability makes the isolated singularity removable.
 
-::: proof
+::: {.proof}
 Now let $U=\{0<|z|<1\}$ and $\int_U|f|^2\,dA<\infty$.
 For $0<|a|<1/2$, the closed disk of radius $r=|a|/2$
 centered at $a$ lies in $U$. Step <1>1 implies

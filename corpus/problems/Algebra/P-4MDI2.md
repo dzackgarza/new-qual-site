@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 7. If $F$ is some (not necessarily Galois) field extension over $K$ such that $[F: K]=6$ and $\operatorname{Aut}_K F \simeq S_{3}$, then $F$ is the splitting field of an irreducible cubic over $K[x]$.
 8. Recall the definition of the join $H_1\vee H_2=\langle H_1,H_2\rangle$ of two subgroups. For $F$ a finite dimensional Galois extension over $K$ and let $A$ and $B$ be intermediate extensions. Prove that
 a. $\operatorname{Aut}_{A B} F=\mathrm{Aut}_{A} F \cap \mathrm{Aut}_{B} F$

@@ -28,12 +28,12 @@ audit:
 Work problems 14, 15, 16, 17, page 557 of Dummit and Foote, then deduce Corollary 28, page 600: every finite abelian group occurs as the Galois group over $\QQ$ of some subextension of a cyclotomic extension.
 :::
 
-::: solution
+::: {.solution}
 We make explicit the number-theoretic input supplied by the cited exercise
 chain and then carry out the deduction of Corollary 28 [@DF04].
 
 <1>1. For every positive integer $m$, there are infinitely many primes $p$ with $p\equiv1\pmod m$.
-::: proof
+::: {.proof}
 The case $m=1$ is immediate, so assume $m>1$. We use the standard
 cyclotomic-polynomial fact: if a prime $q$ does not divide $m$ and
 $$
@@ -77,7 +77,7 @@ many such primes exist.
 :::
 
 <1>2. Write the given finite abelian group as a product of cyclic groups.
-::: proof
+::: {.proof}
 Let $A$ be any finite abelian group. By the structure theorem for finite
 abelian groups, there are positive integers $n_1,\ldots,n_r$ such that
 $$
@@ -87,7 +87,7 @@ We may discard any factor with $n_i=1$.
 :::
 
 <1>3. Choose distinct primes whose unit groups have the required cyclic quotients.
-::: proof
+::: {.proof}
 By step <1>1, choose distinct primes
 $$
 p_i\equiv1\pmod{n_i}
@@ -108,7 +108,7 @@ $$
 :::
 
 <1>4. Assemble the cyclic quotients inside one cyclotomic Galois group.
-::: proof
+::: {.proof}
 Put
 $$
 N=p_1p_2\cdots p_r.
@@ -137,7 +137,7 @@ $$
 :::
 
 <1>5. Apply cyclotomic Galois theory and the fundamental theorem of Galois theory.
-::: proof
+::: {.proof}
 Let
 $$
 L=\mathbf Q(\zeta_N).

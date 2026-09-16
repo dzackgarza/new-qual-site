@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a variety of dimension $\geq 2$, let $P \in Y$ be a normal point, and let $f$ be a regular function on $Y \sm \ts{P}$.
 
 1. Show that $f$ extends to a regular function on $Y$.

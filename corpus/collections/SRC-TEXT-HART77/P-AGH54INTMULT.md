@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y, Z \subseteq \AA^2$ be two distinct curves, given by equations $f = 0$ and $g = 0$.
 For $P \in Y \intersect Z$, define the *intersection multiplicity* $(Y \cdot Z)_P$ of $Y$ and $Z$ at $P$ to be the length of the $\mco_P\da$module $\mco_P / \gens{f, g}$.
 

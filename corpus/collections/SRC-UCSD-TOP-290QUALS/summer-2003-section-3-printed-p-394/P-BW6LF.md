@@ -17,10 +17,10 @@ review: draft
 Construct a space having $H_*(X) = [\ZZ, 0, 0, 0, 0, \ZZ_4, 0, \cdots]$.
 :::
 
-:::{.solution}
+::: {.solution}
 
 \envlist
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Construction of Moore Spaces

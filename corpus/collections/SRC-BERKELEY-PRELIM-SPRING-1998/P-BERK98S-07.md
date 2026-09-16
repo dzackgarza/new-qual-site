@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $A$ and $B$ are commuting $n\times n$ complex matrices. Prove that $A$ and $B$ have a common eigenvector.
 :::

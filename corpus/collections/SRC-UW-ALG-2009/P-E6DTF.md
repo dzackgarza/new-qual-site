@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group, $k$ an algebraically closed field, and $V$ an irreducible $k$-linear representation of $G$.
 
 - Show that $\hom_{kG}(V,V)$ is a division algebra with $k$ in its center.
@@ -29,7 +29,7 @@ Let $G$ be a finite group, $k$ an algebraically closed field, and $V$ an irreduc
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Every nonzero element of $\operatorname{Hom}_{kG}(V,V)$ is invertible, so $\operatorname{Hom}_{kG}(V,V)$ is a division algebra.
 ::: {.proof}
 Let $0\ne f\in\operatorname{Hom}_{kG}(V,V)$. Both $\ker f$ and $\operatorname{im}f$ are $kG$-submodules of $V$. Since $V$ is irreducible,

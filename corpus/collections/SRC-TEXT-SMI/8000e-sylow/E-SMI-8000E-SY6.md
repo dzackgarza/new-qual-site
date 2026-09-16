@@ -29,16 +29,16 @@ audit:
 Prove that $S(n)$ is not solvable if $n > 4$, assuming $A(5) \cong Icos$ (the icosahedral rotation group) and the simplicity of $Icos$.
 :::
 
-::: remark
+::: {.remark}
 The packet prints $S(5)\cong Icos$ here. Later in the same packet it explicitly
 identifies “Icos (or $A(5)$)” and asks for its simplicity. The rotational
 icosahedral group is therefore the group $A_5$, not $S_5$; the corrected
 hypothesis is stated above.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A nonabelian simple group is not solvable.
-::: proof
+::: {.proof}
 Let $H$ be nonabelian and simple. Suppose, for contradiction, that $H$ has an
 abelian normal tower
 $$
@@ -62,7 +62,7 @@ is not solvable.
 :::
 
 <1>2. Every subgroup of a solvable group is solvable.
-::: proof
+::: {.proof}
 Let
 $$
 G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_m=1
@@ -90,7 +90,7 @@ abelian. Thus the intersected tower proves that $H$ is solvable.
 :::
 
 <1>3. Embed $A_5$ in every $S_n$ for $n\ge5$ and conclude.
-::: proof
+::: {.proof}
 For $n\ge5$, let $A_5$ act on the first five letters and fix the remaining
 $n-5$ letters. This gives an injective homomorphism
 $$

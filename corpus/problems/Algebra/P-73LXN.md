@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Identify all of the elements of the Galois group of $x^p-2$ for $p$ an odd prime (note: this has a complicated presentation).
 :::
 
-::: solution
+::: {.solution}
 Let \(\alpha=2^{1/p}\) and \(\zeta=\zeta_p\). The roots of \(x^p-2\) are \(\alpha\zeta^a\) for \(a\in\mathbb F_p\), and the splitting field is
 \[
 K=\mathbb Q(\alpha,\zeta).

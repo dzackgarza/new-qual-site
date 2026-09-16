@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be prime and $F_0$ a field of characteristic zero.
 Suppose $F_0$ satisfies the following property.
 

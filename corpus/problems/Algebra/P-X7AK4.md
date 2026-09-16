@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $L/K$ be a finite separable extension which is the splitting field of a polynomial in $K[x]$. Prove
 \[
 [L:K]=|\operatorname{Gal}(L/K)|.
 \]
 :::
 
-::: solution
+::: {.solution}
 Because $L/K$ is finite and separable, the primitive element theorem gives
 \[
 L=K(\alpha)

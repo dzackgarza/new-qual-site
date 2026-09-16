@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be entire.
 
 (a) Prove that $f$ has a removable singularity at infinity if and only if $f$ is constant.

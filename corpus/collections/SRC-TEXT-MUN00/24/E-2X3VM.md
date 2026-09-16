@@ -27,7 +27,7 @@ audit:
 (d) If $\ts{A_\alpha}$ is a collection of path-connected subspaces of $X$ and if $\bigcap A_\alpha \neq \varnothing$, is $\bigcup A_\alpha$ necessarily path connected?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine and prove the preservation properties of path-connectedness under products, closures, continuous images, and non-disjoint unions.
 
 <1>1. Part (a): Arbitrary products of path-connected spaces are path-connected (YES).

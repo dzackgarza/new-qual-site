@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Recall the notions of support of a section of a sheaf, support of a sheaf, and subsheaf with supports from (Ex. 1.14) and (Ex. 1.20).
 
 a. Let $A$ be a ring, let $M$ be an $A\dash$module, let $X = \Spec A$, and let $\mcf = \tilde M$.

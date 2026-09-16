@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f(z)$ be an analytic function on $|z|<1$.
 Prove that $f(z)$ is necessarily a constant if $f(\bar{z})$ is also analytic.
 :::
 
-:::{.solution}
+::: {.solution}
 Let $\tilde f(z) \da f(\bar z)$.
 Using that $f$ is analytic iff its components solve Cauchy-Riemann, using that $f, \tilde f$ are analytic,
 \[

@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional vector space over a field $F$, and let $\omega: V \times V \to F$ be a **nondegenerate alternating bilinear form** on $V$.
 Suppose $T: V \to V$ is a linear transformation that preserves $\omega$, i.e.
 $$\omega(T(u), T(v)) = \omega(u, v) \quad \text{for all } u, v \in V.$$
 Prove that if $\lambda \in F$ (or in an algebraic closure $\bar{F}$) is an eigenvalue of $T$, then $\lambda \ne 0$ and $\lambda^{-1} = 1/\lambda$ is also an eigenvalue of $T$ (with the same algebraic and geometric multiplicity).
 :::
 
-::: solution
+::: {.solution}
 Choose a basis of $V$ and let $J$ be the matrix of $\omega$ and $M$ the matrix of $T$. Nondegeneracy of $\omega$ means that $J$ is invertible, and preservation of $\omega$ gives
 \[
 M^TJM=J.

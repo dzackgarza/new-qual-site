@@ -15,6 +15,6 @@ audit:
   note: Checked directly against the retained PDF because the extracted markdown is unreliable for this source.
 ---
 
-:::{.problem}
+::: {.problem}
 Prove the Fundamental Theorem of Algebra: every nonconstant polynomial with complex coefficients has a complex root.
 :::

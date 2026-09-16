@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the Laurent expansion of
 \[
 f(z) = {z+1 \over z(z-1)^2}
@@ -24,7 +24,7 @@ about $z=0$ and $z=1$ respectively.
 > Hint: recall that power series can be differentiated.
 :::
 
-::: solution
+::: {.solution}
 First decompose
 \[
 \frac{z+1}{z(z-1)^2}

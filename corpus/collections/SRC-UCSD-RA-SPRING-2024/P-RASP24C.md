@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $0 < \alpha \leq 1$ and let $\Lambda_\alpha([0,1])$ denote the space of Hölder continuous functions of exponent $\alpha$ on $[0,1]$.
 Specifically, $\Lambda_\alpha([0,1]) = \{f \in C([0,1]) : \|f\|_{\Lambda_\alpha} < \infty\}$ where
 $$
@@ -36,7 +36,7 @@ $$
 Show that $B$ is compact with respect to the uniform norm.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 [f]_\alpha:=\sup_{x\ne y}
@@ -46,7 +46,7 @@ Write
 \]
 
 <1>1. Verify that $\|\cdot\|_{\Lambda_\alpha}$ is a norm.
-::: proof
+::: {.proof}
 Nonnegativity and absolute homogeneity are immediate. If
 \[
 \|f\|_{\Lambda_\alpha}=0,
@@ -69,7 +69,7 @@ Hence
 :::
 
 <1>2. Prove completeness.
-::: proof
+::: {.proof}
 Let $(f_n)$ be Cauchy in $\|\cdot\|_{\Lambda_\alpha}$. For every $h\in\Lambda_\alpha([0,1])$ and $x\in[0,1]$,
 \[
 |h(x)|\le |h(0)|+[h]_\alpha |x|^\alpha
@@ -112,7 +112,7 @@ for all $n\ge N$. In particular $f\in\Lambda_\alpha([0,1])$ and $f_n\to f$ in th
 :::
 
 <1>3. Establish the Arzelà--Ascoli hypotheses for the unit ball.
-::: proof
+::: {.proof}
 If $f\in B$, then
 \[
 |f(0)|\le1,
@@ -133,7 +133,7 @@ By the Arzelà--Ascoli theorem, $B$ is relatively compact in the uniform norm.
 :::
 
 <1>4. Show that $B$ is uniformly closed.
-::: proof
+::: {.proof}
 Suppose $f_n\in B$ and $f_n\to f$ uniformly. For each fixed $x\ne y$,
 \[
 |f_n(0)|+

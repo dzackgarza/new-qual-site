@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F \subseteq K \subseteq L$ be finite-degree field extensions. For each of the following assertions, prove the statement or provide a counterexample with full justification:
 
 (a) If $L/F$ is Galois, then $K/F$ is Galois.
@@ -25,7 +25,7 @@ Let $F \subseteq K \subseteq L$ be finite-degree field extensions. For each of t
 (c) If $K/F$ and $L/K$ are both Galois, then $L/F$ is Galois.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Adjudicate the three transitivity/sub-extension assertions for Galois extensions.
 
 <1>1. Part (a): False.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Problem 7 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Using the simplest form of Cauchy's estimates, prove that every bounded entire function is constant.
 :::

@@ -19,7 +19,7 @@ audit:
   note: Stated problem 34 and the Figure 3 contour referenced by the hint, against Complex Analysis Problems 23 and 34 on pages 15-18 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Compute $\displaystyle\int_0^\infty \frac{\log x}{1 + x^\alpha}\,\mathrm{d}x$ for $\alpha \in \mathbb{N}$, $\alpha > 1$ (**hint:** solve problem 34 first.
 Now, as a contour, use a circular wegde of the complex plane that makes a $2\pi/\alpha$ angle with the positive real axis);
 

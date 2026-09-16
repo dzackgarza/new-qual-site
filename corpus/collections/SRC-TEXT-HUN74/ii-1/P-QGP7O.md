@@ -30,7 +30,7 @@ Let $G$ be a finitely generated abelian group in which no element (except 0) has
 Show that $G$ is a free abelian group.
 :::
 
-::: solution
+::: {.solution}
 Because $G$ is finitely generated and abelian, the structure theorem for
 finitely generated abelian groups applies.
 
@@ -38,13 +38,13 @@ finitely generated abelian groups applies.
 \[
 G\cong \ZZ^r\oplus \ZZ/d_1\ZZ\oplus\cdots\oplus\ZZ/d_t\ZZ.
 \]
-::: proof
+::: {.proof}
 This is the structure theorem for finitely generated abelian groups, in its
 invariant-factor (equivalently, elementary-divisor) form.
 :::
 
 <1>2. One must have $t=0$.
-::: proof
+::: {.proof}
 If $t>0$, then the element corresponding to
 \[
 (0,\ldots,0,1\bmod d_1,0,\ldots,0)
@@ -54,7 +54,7 @@ nonzero element of $G$ has finite order.
 :::
 
 <1>3. Hence $G\cong\ZZ^r$, so $G$ is free abelian.
-::: proof
+::: {.proof}
 By <1>1 and <1>2 the finite cyclic summands are absent, leaving precisely the
 free abelian group $\ZZ^r$.
 :::

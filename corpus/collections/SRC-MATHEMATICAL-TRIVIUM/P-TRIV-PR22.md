@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 22, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts.
 ---
 
-::: problem
+::: {.problem}
 A reasonable way to estimate the number of birds in a large flock is to mark some of them.
 Suppose M birds were selected, marked and then released.
 Long time after, in a sample of n randomly selected birds X had the marker.

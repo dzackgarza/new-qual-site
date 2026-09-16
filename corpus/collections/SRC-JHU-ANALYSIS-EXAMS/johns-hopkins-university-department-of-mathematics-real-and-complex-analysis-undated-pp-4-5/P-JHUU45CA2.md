@@ -34,12 +34,12 @@ $$I = \int_{-\infty}^{\infty} \frac{\sin x}{x} \, dx.$$
 - Use a contour integral to evaluate $I$.
 :::
 
-::: solution
+::: {.solution}
 The improper integral exists and equals $\boxed{\pi}$.
 
 <1>1. The integral converges as an ordinary improper Riemann integral.
 
-::: proof
+::: {.proof}
 The quotient $\sin x/x$ extends continuously across zero
 with value one. For $B>A>0$, integration by parts gives
 $$
@@ -59,7 +59,7 @@ integral, not merely a symmetric principal value.
 
 <1>2. An indented upper semicircle evaluates the half-line integral.
 
-::: proof
+::: {.proof}
 For $0<\varepsilon<R$, integrate $F(z)=e^{iz}/z$ over
 $[-R,-\varepsilon]$, the clockwise upper semicircle
 $\gamma_\varepsilon$ from $-\varepsilon$ to $\varepsilon$,

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Let $F \subseteq E$ be a field extension, and $f(x) \in F[x]$.
 Prove that
 \[

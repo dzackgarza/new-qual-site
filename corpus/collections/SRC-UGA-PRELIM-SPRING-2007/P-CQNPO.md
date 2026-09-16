@@ -33,7 +33,7 @@ d) A power series $\sum_{n=0}^\infty a_n z^n \in \mathbb{C}[[z]]$ with radius of
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. For part (a), take
 \[
 f(x)=

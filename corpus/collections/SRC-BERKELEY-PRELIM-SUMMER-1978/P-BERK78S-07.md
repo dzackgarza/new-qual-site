@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 1. Solve
    \[
    g'=2g,\qquad g(0)=a,

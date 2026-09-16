@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute $\Pic(\PP^n\slice{k})$.
 :::

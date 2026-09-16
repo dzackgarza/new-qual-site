@@ -16,12 +16,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Using mathematical induction, show that for each positive integer $n$, $$1^2 - 2^2 + 3^2 - \dots + (-1)^{n-1}n^2 = (-1)^{n-1}n(n+1)/2.$$ (Hint: in the induction step, consider separately the cases where $n$ is even or odd.)
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 S_n=1^2-2^2+3^2-\cdots+(-1)^{n-1}n^2.

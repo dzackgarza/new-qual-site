@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(a_n)$ be a sequence defined recursively by $a_1 = 1$ and $a_{n+1} = \frac{a_n}{3} + 5$ for $n \geq 1$. Prove inductively that $a_n \leq a_{n+1} \leq 10$ for each positive integer $n$. Then explain why the sequence $(a_n)$ converges and find its limit.
 :::
 
-::: solution
+::: {.solution}
 Base case: for $n=1$, we have $a_1 = 1 \leq a_2 = \frac{16} 3 \leq 10.$ Suppose this holds for $k < n$, then
 $$
 a_{n-1} \leq a_n = \frac{a_{n-1}}{3} + 5 \implies 3a_{n-1} \leq a_{n-1} + 15 \implies a_{n-1} \leq \frac{15}{2}

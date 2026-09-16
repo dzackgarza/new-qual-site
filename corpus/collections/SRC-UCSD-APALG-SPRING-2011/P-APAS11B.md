@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (d) Prove that if $\lambda(x)$ is a linear character of a finite group $G$, then for any irreducible character $\chi$ of $G$, the function $\chi^*$ defined by $\chi^*(\sigma)=\lambda(\sigma)\chi(\sigma)$ for all $\sigma\in G$ is also an irreducible character of $G$.
@@ -27,7 +27,7 @@ Show that
 \]
 :::
 
-::: solution
+::: {.solution}
 For the first assertion, let $\rho:G\to \operatorname{GL}(V)$ be an irreducible representation with character $\chi$, and let $\lambda:G\to\mathbb C^\times$ be the one-dimensional representation corresponding to the linear character $\lambda$. Define
 \[
 \rho^*(g)=\lambda(g)\rho(g).

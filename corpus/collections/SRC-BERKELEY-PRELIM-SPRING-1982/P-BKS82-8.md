@@ -15,7 +15,7 @@ audit:
   note: Transcribed from the retained PDF; the extracted markdown contains a different Problem 8.
 ---
 
-:::{.problem}
+::: {.problem}
 Evaluate by contour integration
 \[
 \int_{-\infty}^{\infty}\frac{\cos x}{x^4+1}\,dx.

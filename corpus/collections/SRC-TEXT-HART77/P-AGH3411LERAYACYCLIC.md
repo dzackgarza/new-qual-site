@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 This exercise shows that Čech cohomology will agree with the usual cohomology whenever the sheaf has no cohomology on any of the open sets.
 More precisely, let $X$ be a topological space, $\mcf$ a sheaf of abelian groups, and $\mathfrak{U}=(U_i)$ an open cover.
 Assume for any finite intersection $V=U_{i_0} \intersect \cdots \intersect U_{i_p}$ of open sets of the covering, and for any $k>0$, that $H^k(V, \ro{\mcf}{V})=0$.

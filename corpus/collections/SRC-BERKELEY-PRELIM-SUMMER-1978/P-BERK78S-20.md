@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $M_{n\times n}(\mathbb R)$ be the vector space of real $n\times n$ matrices, and define
 \[
 f:M_{n\times n}(\mathbb R)\to M_{n\times n}(\mathbb R),

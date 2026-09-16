@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For a positive integer $n$, let $d(n)$ be the number of positive divisors of $n$. Prove that
 \[
 d(n)\text{ is odd}\iff n\text{ is a perfect square}.

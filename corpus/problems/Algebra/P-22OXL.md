@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $S_{n\geq 5}$ has one normal subgroup: $A_n$.
 :::
 

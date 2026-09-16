@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Show that for each of the orders
 \[
 24,\qquad30,\qquad40,

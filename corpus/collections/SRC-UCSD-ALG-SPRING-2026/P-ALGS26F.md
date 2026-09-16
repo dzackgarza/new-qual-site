@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) = x^4 + x + 1 \in \mathbb{F}_2[x]$.
 Let $E = \mathbb{F}_2[x]/\langle f \rangle$.
 

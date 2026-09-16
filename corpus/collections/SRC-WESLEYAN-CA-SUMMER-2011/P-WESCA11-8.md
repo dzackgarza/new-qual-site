@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 8 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 How many roots of
 \[
 z^4-6z+3=0

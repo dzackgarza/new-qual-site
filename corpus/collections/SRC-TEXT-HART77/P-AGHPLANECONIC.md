@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $Y$ be the plane curve $y = x^2$, the zero set of $f = y - x^2$.
 Show that $A(Y)$ is isomorphic to a polynomial ring in one variable over $k$.
 
@@ -28,7 +28,7 @@ Show that $A(W)$ is isomorphic to $A(Y)$ or to $A(Z)$.
 Which one, and when?
 :::
 
-::: solution
+::: {.solution}
 **(a)** $A(Y) = k[x,y]/\gens{y-x^2} \cong k[t,t^2] \cong k[t]$.
 
 **(b)** $A(Z) = k[x,y]/\gens{xy-1} \cong k[x^{\pm 1}]$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Show that a morphism $f: X \to Y$ is of finite type if and only if it is locally of finite type and quasi-compact.
 
 b. Conclude that $f$ is of finite type if and only if for every open affine subset $V = \Spec B$ of $Y$, the preimage $f\inv(V)$ can be covered by a finite number of open affines $U_j = \Spec A_j$ where each $A_j$ is a finitely generated $B$-algebra.

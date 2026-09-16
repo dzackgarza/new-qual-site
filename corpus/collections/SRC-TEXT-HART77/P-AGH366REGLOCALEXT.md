@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a regular local ring, and let $M$ be a finitely generated $A$-module.
 In this case, strengthen the result (6.10A) as follows.
 

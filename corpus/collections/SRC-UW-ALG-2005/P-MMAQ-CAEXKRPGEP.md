@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Consider the ring `\begin{align*} S=C[0,1]=\{f:[0,1]\rightarrow\mathbb R:f\text{ is continuous}\} .\end{align*}`{=tex}
 
 with the usual operations of addition and multiplication of functions.
@@ -33,7 +33,7 @@ with the usual operations of addition and multiplication of functions.
   > **Hint**: As $[0,1]$ is compact, every open cover of $[0,1]$ contains a finite subcover.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A function $f\in S$ is invertible if and only if
 \[
 f(x)\ne0\qquad\text{for every }x\in[0,1].

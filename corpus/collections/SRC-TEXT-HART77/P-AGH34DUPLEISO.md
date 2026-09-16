@@ -16,6 +16,6 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the $d$-uple embedding of $\PP^n$ is an isomorphism onto its image.
 :::

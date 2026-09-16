@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $N$ be a real vector space.
 
 1. Define a norm on $N$.
@@ -40,9 +40,9 @@ Let $N$ be a real vector space.
    If $y_n=T(x_n)$ is Cauchy in $B'$, what can be concluded about $(x_n)$ in $B$, and why?
 :::
 
-::: solution
+::: {.solution}
 <1>1. Definition of a norm.
-::: proof
+::: {.proof}
 A norm on $N$ is a function $\|\cdot\|:N\to[0,\infty)$ such that for all $x,y\in N$ and all real scalars $a$,
 \[
 \|x\|=0\iff x=0,
@@ -54,7 +54,7 @@ A norm on $N$ is a function $\|\cdot\|:N\to[0,\infty)$ such that for all $x,y\in
 :::
 
 <1>2. Determine the admissible exponent.
-::: proof
+::: {.proof}
 If $\|x\|_p=|x|^p$ is a norm, absolute homogeneity requires
 \[
 |ax|^p=|a|\,|x|^p
@@ -74,12 +74,12 @@ Hence
 :::
 
 <1>3. Definition of a Banach space.
-::: proof
+::: {.proof}
 A normed vector space is a Banach space if it is complete for the metric induced by its norm, equivalently if every norm-Cauchy sequence converges in norm to an element of the space.
 :::
 
 <1>4. Hahn--Banach theorem.
-::: proof
+::: {.proof}
 One standard real form is the following.
 Let $X$ be a real normed vector space, let $M\subseteq X$ be a linear subspace, and let $f\in M^*$ be bounded.
 Then there exists $F\in X^*$ such that
@@ -91,7 +91,7 @@ F|_M=f
 :::
 
 <1>5. Pull the Cauchy sequence back through the inverse map.
-::: proof
+::: {.proof}
 The map $T:B\to B'$ is a bounded linear bijection between Banach spaces.
 By the Open Mapping Theorem, its inverse
 \[

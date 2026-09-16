@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f:X\to Y$ be a continuous map of topological spaces.
 
 a. Show that if $X$ is connected then $f(X)$ is connected.
@@ -22,7 +22,7 @@ a. Show that if $X$ is connected then $f(X)$ is connected.
 b. Show that if $X$ is irreducible then $f(X)$ is irreducible.
 :::
 
-::: solution
+::: {.solution}
 **Part a**: Toward a contradiction, if $f(X) = Y_1 {\textstyle\coprod} Y_2$ with $Y_1, Y_2$ nonempty and open in $Y$, then
 \[
 f^{-1}(f(X)) \subseteq X

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $I$ be an index set and let $a:I\to(0,\infty)$.
 
 (a) Show that
@@ -43,9 +43,9 @@ f(x):=\sum_{\substack{q\in\mathbb Q\\q\le x}}a(q).
 Show that $f$ is continuous at $x$ if and only if $x\notin\mathbb Q$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that the index set in part (a) is countable.
-::: proof
+::: {.proof}
 Put
 \[
 S:=\sum_{i\in I}a(i)<\infty
@@ -70,7 +70,7 @@ This is a countable union of finite sets, so $I$ is countable.
 :::
 
 <1>2. Show that $f$ is discontinuous at every rational point.
-::: proof
+::: {.proof}
 Fix $r\in\mathbb Q$. Since $a(r)>0$, for every $y<r$,
 \[
 f(r)-f(y)
@@ -81,7 +81,7 @@ Therefore values approaching $r$ from the left remain at least $a(r)$ below $f(r
 :::
 
 <1>3. Show that $f$ is continuous at every irrational point.
-::: proof
+::: {.proof}
 Fix $x\notin\mathbb Q$ and $\varepsilon>0$. Since the nonnegative family $(a(q))_{q\in\mathbb Q}$ is summable, there is a finite set $F\subset\mathbb Q$ such that
 \[
 \sum_{q\in\mathbb Q\setminus F}a(q)<\varepsilon.

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 - Let $\sigma = (4\, 2\, 1)(6\, 1\, 3\, 2) \in S_6$ in cycle notation.
 
   - Write $\sigma$ as a product of disjoint cycles.

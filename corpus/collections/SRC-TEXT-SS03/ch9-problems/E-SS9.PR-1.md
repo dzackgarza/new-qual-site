@@ -17,7 +17,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 1. Besides the approach in Section 1.2, there are several alternate ways of dealing with the sum $\textstyle \sum { 1 } / ( z + \omega ) ^ { 2 }$ , where $\omega = n + m \tau$ . For example, one may sum either (a) circularly, (b) first in n then in m, (c) or first in m then in n.
 
 (a) Prove that ${ \mathrm { i f ~ } } z \notin \Lambda$ , then
@@ -47,7 +47,7 @@ exists with $S _ { 3 } ( z ) = \wp ( z ) + c _ { 3 }$ , and $c _ { 3 } = \tilde 
 [Hint: To prove (a), it sufices to show that lim $. R { \longrightarrow } \infty$ $\sum { \begin{array} { r l } \end{array} } \quad 1 / ( n + m \tau ) ^ { 2 } = c _ { 1 }$ $1 \leq n ^ { 2 } + m ^ { 2 } \leq R ^ { 2 }$ exists. This is proved by a comparision with $\begin{array} { r } { \int _ { 1 \leq x ^ { 2 } + y ^ { 2 } \leq R ^ { 2 } } \frac { d x } { ( x + y \tau ) ^ { 2 } } = I ( R ) } \end{array}$ . It can be shown that $I ( R ) = 0$ , which follows because $( \overline { { x } } + y \tau ) ^ { - 2 } = - ( \partial / \partial x ) ( x + y \tau ) ^ { - 1 } . ]$
 :::
 
-::: solution
+::: {.solution}
 Write \(\Lambda=\{n+m\tau:n,m\in\mathbb Z\}\), with \(\Im\tau\ne0\). Recall
 \[
 \wp(z)=\frac1{z^2}+\sum_{\omega\in\Lambda\setminus\{0\}}

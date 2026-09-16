@@ -31,7 +31,7 @@ M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Multiply everything out to get

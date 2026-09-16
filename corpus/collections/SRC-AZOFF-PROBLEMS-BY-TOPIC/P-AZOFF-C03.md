@@ -15,7 +15,7 @@ audit:
   note: Checked against Conformal mapping, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a linear fractional transformation T which maps the open upper half plane onto the open unit disk.
 Then explicitly describe the image of the first quadrant of the unit disk under T .
 :::

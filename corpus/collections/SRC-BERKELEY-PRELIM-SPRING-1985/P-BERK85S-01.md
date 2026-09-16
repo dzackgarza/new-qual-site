@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:[0,\infty)\to\mathbb R$ be continuous and differentiable, with $f(0)=0$, and suppose $f'$ is increasing on $[0,\infty)$. Prove that
 \[
 g(x)=

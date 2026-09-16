@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that continuity of measure from above/below holds for outer measures.
 
 - Show that a countable union of null sets is null.

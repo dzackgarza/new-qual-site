@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be the $n\times n$ matrix with zeros on the main diagonal and ones everywhere else. Find the eigenvalues and eigenspaces of $A$, and compute $\det A$.
 :::

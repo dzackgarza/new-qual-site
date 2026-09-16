@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find all functions $f(z)$ that satisfy the two requirements:
 
 (i) $f(z)$ is meromorphic in the plane $\mathbb{C}$.
@@ -22,7 +22,7 @@ Find all functions $f(z)$ that satisfy the two requirements:
 (ii) There exists a constant $C > 0$ such that $|f(z) - \tan z| \leq C|f(z)|$ for all $z$ outside the poles of $f(z)$ and $\tan z$.
 :::
 
-::: solution
+::: {.solution}
 Every function
 \[
 f(z)=c\tan z,

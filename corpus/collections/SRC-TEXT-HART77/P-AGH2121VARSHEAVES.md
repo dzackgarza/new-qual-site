@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a variety over an algebraically closed field $k$, and let $\OO_X$ be the sheaf of regular functions on $X$.
 
 a. Let $Y$ be a closed subset of $X$.
@@ -44,6 +44,6 @@ e. Finally, show that in the case of (d) the sequence
 is exact.
 :::
 
-::: remark
+::: {.remark}
 Part (e) is an analogue of the first Cousin problem in several complex variables; see Gunning and Rossi.
 :::

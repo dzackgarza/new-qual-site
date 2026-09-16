@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A scheme $(X, \OO_X)$ is **reduced** if for every open set $U \subseteq X$ the ring $\OO_X(U)$ has no nilpotent elements.
 
 a. Show that $(X, \OO_X)$ is reduced if and only if for every $P \in X$ the local ring $\OO_{X, P}$ has no nilpotent elements.

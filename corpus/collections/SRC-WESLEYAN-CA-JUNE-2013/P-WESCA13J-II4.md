@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(f_n)$ and $(g_n)$ converge uniformly on a set $A$.
 Suppose both sequences are uniformly bounded: there is $M$ such that $|f_n(z)|,|g_n(z)|\le M$ for every $z\in A$ and $n$.
 Prove that $(f_ng_n)$ converges uniformly on $A$.

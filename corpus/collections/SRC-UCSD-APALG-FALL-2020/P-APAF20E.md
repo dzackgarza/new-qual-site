@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let the symmetric group $S_6$ act on the space of complex-coefficient homogeneous polynomials in $x_1,\ldots,x_6$ of degree $3$ by substitution of variables.
 Let $V$ be the subspace spanned by $\{x_i x_j x_k\mid 1\le i<j<k\le 6\}$.
 

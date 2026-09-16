@@ -20,7 +20,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X = \mathbb{RP}^3$ and $Y = S^1 \vee S^1$.
 
 (a) Let $A = X \vee Y$ be their wedge sum (one-point union).

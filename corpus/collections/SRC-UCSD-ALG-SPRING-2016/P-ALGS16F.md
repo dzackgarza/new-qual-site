@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Is the equation $x^5 - 16x + 2 = 0$ solvable in radicals?
 :::
 

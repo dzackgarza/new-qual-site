@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 a. Let $z, w \in \CC$ with $\bar z w \neq 1$.
 Prove that
 \[

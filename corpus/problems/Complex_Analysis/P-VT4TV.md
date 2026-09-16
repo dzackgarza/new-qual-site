@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find $1/\sin(z)$ using this method.
 :::
 
-:::{.solution}
+::: {.solution}
 Note that the leading coefficient of the expansion for $\sin(z)$ is 0, so this can't be inverted directly. 
 A standard trick: factor out the smallest power of $z$ to get a piece with a nonzero leading coefficient, and invert that instead.
 Write

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give a field $F$ and a polynomial $p(x)\in F[x]$ whose splitting field $E$ has no proper nontrivial intermediate extension normal over $F$.
 :::
 
-::: solution
+::: {.solution}
 We construct an example with
 \[
 \operatorname{Gal}(E/F)\cong A_5.
@@ -52,7 +52,7 @@ F=E^{A_5}.
 \[
 \operatorname{Gal}(E/F)\cong A_5.
 \]
-::: proof
+::: {.proof}
 The action is faithful because a nonidentity $h$ sends $x_1$ to the distinct
 variable $x_h$. Artin's fixed-field theorem therefore gives
 \[
@@ -62,7 +62,7 @@ and identifies the full Galois group with the acting group $A_5$.
 :::
 
 <1>2. There is a polynomial $p(x)\in F[x]$ whose splitting field is $E$.
-::: proof
+::: {.proof}
 The extension $E/F$ is finite separable, so by the primitive element theorem
 there exists $\alpha\in E$ such that
 \[
@@ -79,7 +79,7 @@ splitting field is exactly $E$.
 F\subsetneq L\subsetneq E
 \]
 is normal over $F$.
-::: proof
+::: {.proof}
 By the Galois correspondence, $L$ corresponds to
 \[
 H=\operatorname{Gal}(E/L)<A_5.

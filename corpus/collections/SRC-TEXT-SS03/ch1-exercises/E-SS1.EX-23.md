@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 23. Consider the function $f$ defined on R by
 
 $$
@@ -25,7 +25,7 @@ $$
 Prove that $f$ is indefinitely diferentiable on $\mathbb { R } ,$ and that $f ^ { ( n ) } ( 0 ) = 0$ for all $n \geq 1$ Conclude that $f$ does not have a converging power series expansion $\scriptstyle \sum _ { n = 0 } ^ { \infty } a _ { n } x ^ { n }$ for x near the origin.
 :::
 
-::: solution
+::: {.solution}
 For $x>0$, set $t=1/x$. We claim that for every $n\ge0$ there is a polynomial $P_n$ such that
 \[
 f^{(n)}(x)=P_n(1/x)e^{-1/x^2}.

@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State the definition of the splitting field of a polynomial $f(x) \in F[x]$ over a field $F$.
 Prove the existence and uniqueness (up to $F$-isomorphism) of splitting fields.
 :::
 
-::: solution
+::: {.solution}
 A splitting field of \(f\in F[x]\) is an extension \(L/F\) such that
 
 1. \(f\) splits into linear factors in \(L[x]\), and

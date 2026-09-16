@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a noetherian ring, and let $\mfa$ be an ideal of $A$.
 
 a. Show that $\Gamma_{\mfa}(\wait)$ (II, Ex.

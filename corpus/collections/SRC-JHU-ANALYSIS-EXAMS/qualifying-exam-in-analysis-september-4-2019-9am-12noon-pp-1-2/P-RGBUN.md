@@ -25,16 +25,16 @@ audit:
   note: "Checked the logarithm branch on both real segments, orientation of the small arc, the residue, absolute convergence, and both vanishing arc estimates."
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\int_0^\infty \frac{\log x}{x^2+2}\,dx$ by contour integration using the positively oriented contour from $-R$ to $R$ on the real axis, indented at the origin, and the positively oriented semicircle $|z|=R$, $\operatorname{Im}z>0$. Choose an appropriate branch of logarithm.
 :::
 
-::: solution
+::: {.solution}
 The value is $\boxed{\pi\log2/(4\sqrt2)}$.
 
 <1>1. The chosen branch gives an identity for the truncated integral.
 
-::: proof
+::: {.proof}
 Use $\operatorname{Log}z=\log|z|+i\arg z$ with
 $-\pi/2<\arg z<3\pi/2$, whose cut is the nonpositive
 imaginary axis. This branch is holomorphic on a neighborhood
@@ -68,7 +68,7 @@ $\pi(\log\sqrt2+i\pi/2)/\sqrt2$ [@SS03].
 <1>2. Both arcs vanish in the limit, and taking real parts
 determines the required integral.
 
-::: proof
+::: {.proof}
 On either upper arc, $|\arg z|\leq\pi$. On the large arc
 $\Gamma_R$, the reverse triangle inequality gives
 $|z^2+2|\geq R^2-2$, so

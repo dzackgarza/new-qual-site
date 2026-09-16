@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 19, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let ξ and η be two independent random variables taking values 1 and 0 with the probabilities p and $q = 1 - p$ correspondingly.
 Find
 

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A=(a_{ij})_{i,j=1}^r$ be a square matrix with integer entries.
 
 1. Prove that if an integer $n$ is an eigenvalue of $A$, then $n$ divides $\det A$.

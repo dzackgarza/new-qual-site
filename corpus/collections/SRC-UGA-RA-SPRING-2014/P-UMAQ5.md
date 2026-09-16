@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Give an example of a continuous function $f \in L^1(\mathbb{R})$ such that $f(x) \not\to 0$ as $|x| \to \infty$.
 
 (b) Show that if $f \in L^1(\mathbb{R})$ is *uniformly continuous*, then
@@ -25,7 +25,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct a sequence of narrowing triangular spikes of height 1 in (a), and use uniform continuity to lower-bound the integral on disjoint intervals in (b).
 
 <1>1. Part (a): Explicit counterexample for continuous $L^1$ functions.

@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 7 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Construct a Borel set $E\subset\mathbb R$ such that
 \[
 0<m(E\cap I)<m(I)

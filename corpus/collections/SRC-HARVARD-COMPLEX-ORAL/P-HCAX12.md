@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a nonconstant doubly periodic meromorphic function has equally many zeros and poles, counted with multiplicity, in a fundamental parallelogram.
 :::
 
-::: solution
+::: {.solution}
 Let $\omega_1,\omega_2$ be periods of $f$ which are linearly independent over $\mathbb R$. Translate a fundamental parallelogram if necessary so that its boundary contains no zero or pole of $f$; this is possible because the zeros and poles are discrete.
 
 Let $P$ be such a parallelogram, positively oriented. By the argument principle,

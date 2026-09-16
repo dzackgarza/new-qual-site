@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\gamma(t)$ be a piecewise smooth curve in $\mathbb{C}, t \in[0,1]$. Let $F(w)$ be a continuous function on $\gamma$. Show that $f(z)$ defined by
 \[
 f(z):=\int_{\gamma} \frac{F(w)}{w-z} d w
@@ -23,7 +23,7 @@ is analytic on the complement of the curve $\gamma$.
 
 :::
 
-:::{.solution title="Using Morera"}
+::: {.solution title="Using Morera"}
 By Morera's theorem, it suffices to show $\int_\Delta f(z) \dz = 0$ for all triangles $\Delta \subseteq \gamma^c$.
 Claim:
 \[
@@ -42,7 +42,7 @@ That the interchange of integrals is justified follows from Fubini's theorem: th
 :::
 
 
-:::{.solution title="Using limit definition"}
+::: {.solution title="Using limit definition"}
 The claim is that $f$ is complex differentiable, thus smooth, thus holomorphic and equal to its Taylor series expansion.
 The quick justification:
 \[

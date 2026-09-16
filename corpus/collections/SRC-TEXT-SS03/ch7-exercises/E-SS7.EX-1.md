@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 1. Suppose that $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of real numbers such that the partial sums
 
 $$
@@ -34,7 +34,7 @@ converges for $\operatorname { R e } ( s ) > 0$ and defines a holomorphic functi
 [Hint: Use summation by parts to compare the original (non-absolutely convergent) series to the (absolutely convergent) series $\sum A _ { n } ( n ^ { - s } - ( n + 1 ) ^ { - s } )$ . An estimate for the term in parentheses is provided by the mean value theorem. To prove that the series is analytic, show that the partial sums converge uniformly on every compact subset of the half-plane $\operatorname { R e } ( s ) > 0 . ]$
 :::
 
-::: solution
+::: {.solution}
 Let $A_n=\sum_{j=1}^n a_j$ and suppose $|A_n|\le M$. For $N\ge1$, summation by parts gives
 \[
 \sum_{n=1}^N\frac{a_n}{n^s}

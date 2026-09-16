@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a PID and $M$ a finitely generated $R\dash$module.
 
 a. Prove that there are $R\dash$submodules
@@ -32,7 +32,7 @@ b. Is the integer $n$ in part (a) uniquely determined by $M$?
 Prove your answer.
 :::
 
-::: solution
+::: {.solution}
 For (a), choose generators
 \[
 m_1,\ldots,m_n

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f$ is defined on $[-1,1]$ and $f'''$ is continuous. Show that
 \[
 \sum_{n=1}^\infty

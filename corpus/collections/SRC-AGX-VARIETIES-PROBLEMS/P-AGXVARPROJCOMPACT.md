@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that any Zariski closed subset of $\PP^n$ is compact in the Hausdorff topology.
 :::

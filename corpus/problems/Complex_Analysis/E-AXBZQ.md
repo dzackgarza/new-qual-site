@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I = \int_\RR {x\sin(x) \over 1 + x^2}\dx
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) = {ze^{iz} \over 1+z^2}$, and note that $f\in \bigo\qty{1\over z}$, so the usual semicircular contour with the ML estimate won't work.
 Claim: a semicircular contour with a better estimate *will* work:
 
@@ -51,14 +51,14 @@ I = {\pi \over e}
 .\]
 :::
 
-:::{.exercise title="$\cos(x) / i+x$"}
+::: {.exercise title="$\cos(x) / i+x$"}
 \[
 I \da \int_\RR {\cos(x) \over x+i}\dx
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note that the usual thing won't work, since ${\cos(z) \over z+i}\neq \Re\qty{e^{iz}\over z+i};$ the complex constant in the denominator throws this off!
 Instead, use $\cos(z) = {1\over 2}(e^{iz} + e^{-iz})$ to decompose into two integrals:
 \[

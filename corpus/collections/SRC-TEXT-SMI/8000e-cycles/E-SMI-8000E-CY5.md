@@ -44,21 +44,21 @@ Deduce that every permutation $m$ takes $f$ to either $f$ or $-f$, and that sett
 Call that subgroup $A(n)$.
 :::
 
-::: remark
+::: {.remark}
 The printed exercise asserts that the sign map $S_n\to\{\pm1\}$ is
 surjective without restricting $n$. For $n=1$, the group $S_1$ is trivial,
 so no map from it onto the two-element group can be surjective. The standard
 statement therefore requires $n\ge2$, as assumed above.
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 \Delta(X_1,\ldots,X_n)=\prod_{i<j}(X_i-X_j).
 $$
 
 <1>1. Every transposition sends $\Delta$ to $-\Delta$.
-::: proof
+::: {.proof}
 Consider the transposition $\tau=(ab)$, which interchanges the variables
 $X_a$ and $X_b$. The factor involving exactly these two indices changes sign:
 $$
@@ -75,7 +75,7 @@ $$
 :::
 
 <1>2. Every permutation sends $\Delta$ to either $\Delta$ or $-\Delta$.
-::: proof
+::: {.proof}
 By the preceding generation result, every $m\in S_n$ can be written as a
 product of transpositions,
 $$
@@ -96,7 +96,7 @@ $$
 :::
 
 <1>3. The sign function is a homomorphism.
-::: proof
+::: {.proof}
 For $m,n\in S_n$,
 $$
 \begin{aligned}
@@ -114,7 +114,7 @@ $$
 :::
 
 <1>4. The homomorphism is surjective for $n\ge2$.
-::: proof
+::: {.proof}
 The identity maps to $+1$, while the transposition $(12)$ maps to $-1$ by
 step <1>1. Hence both elements of $\{\pm1\}$ occur, so
 $$
@@ -124,7 +124,7 @@ is surjective.
 :::
 
 <1>5. Its kernel consists exactly of the permutations expressible as a product of an even number of transpositions.
-::: proof
+::: {.proof}
 If
 $$
 m=\tau_1\cdots\tau_r,

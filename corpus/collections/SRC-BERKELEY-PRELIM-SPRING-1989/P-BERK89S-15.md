@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $B=(b_{ij})_{i,j=1}^{20}$ be a real $20\times20$ matrix satisfying
 \[
 b_{ii}=0

@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring with identity $1 \ne 0$.
 
 (a) Give a definition for a free $R$-module.
@@ -32,7 +32,7 @@ splits.
 (d) Let $R$ be a principal ideal domain (PID). Show that any finitely generated $R$-module $M$ can be expressed as a direct sum of a torsion module and a free module. (You may assume that every finitely generated torsion-free module over a PID is free.)
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Define free and torsion-free modules, prove that free modules are projective (surjective maps split), and deduce the direct sum decomposition $M \cong \operatorname{tor}(M) \oplus F$ for finitely generated modules over PIDs.
 
 <1>1. Part (a): Definition of a free $R$-module.

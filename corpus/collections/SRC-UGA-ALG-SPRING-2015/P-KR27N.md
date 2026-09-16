@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) = x^4 - 5 \in \QQ[x]$.
 
 a. Compute the Galois group of $f$ over $\QQ$.
@@ -26,7 +26,7 @@ a. Compute the Galois group of $f$ over $\QQ$.
 b. Compute the Galois group of $f$ over $\QQ(\sqrt{5})$.
 :::
 
-::: solution
+::: {.solution}
 Let $\alpha=5^{1/4}>0$. The roots of $x^4-5$ are
 \[
 \alpha,-\alpha,i\alpha,-i\alpha,

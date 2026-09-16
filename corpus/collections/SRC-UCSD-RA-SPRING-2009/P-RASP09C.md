@@ -25,15 +25,15 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Assume that $1 \leq p < \infty$ and $(X, \mathcal{M}, \mu)$ is a measure space.
 If $f_n \to f$ in measure and $|f_n| \leq g \in L^p(X, d\mu)$ for all $n$, then $f_n \to f$ in $L^p$-norm.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Show that the limit is also dominated by $g$.
-::: proof
+::: {.proof}
 Since $f_n\to f$ in measure, there is a subsequence $(f_{n_k})$ such that
 \[
 f_{n_k}(x)\to f(x)
@@ -46,7 +46,7 @@ for almost every $x$. Therefore $f\in L^p(X,\mu)$.
 :::
 
 <1>2. Every subsequence has an $L^p$-convergent further subsequence.
-::: proof
+::: {.proof}
 Let $(f_{n_k})$ be any subsequence. It still converges to $f$ in measure, so it has a further subsequence $(f_{n_{k_j}})$ converging to $f$ almost everywhere.
 
 For this further subsequence,
@@ -66,7 +66,7 @@ that is,
 :::
 
 <1>3. Deduce convergence of the full sequence.
-::: proof
+::: {.proof}
 Suppose, toward a contradiction, that $f_n$ does not converge to $f$ in $L^p$. Then there are $\varepsilon>0$ and a subsequence $(f_{n_k})$ such that
 \[
 \|f_{n_k}-f\|_p\ge\varepsilon

@@ -25,14 +25,14 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f_n, f \in L^2(\mathbb{R})$ satisfy $f_n \to f$ weakly and $\|f_n\|_2 \to \|f\|_2$ as $n \to \infty$.
 Show that $f_n \to f$ in $L^2(\mathbb{R})$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Expand the Hilbert-space norm of the difference.
-::: proof
+::: {.proof}
 Since $L^2(\mathbb R)$ is a Hilbert space,
 \[
 \|f_n-f\|_2^2

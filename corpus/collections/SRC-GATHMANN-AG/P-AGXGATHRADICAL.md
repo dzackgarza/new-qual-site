@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine $\sqrt{I}$ for
 \[
 I\da \gens{x_1^3 - x_2^6,\, x_1 x_2 - x_2^3} \normal \CC[x_1, x_2]
 .\]
 :::
 
-::: solution
+::: {.solution}
 Let $\mci, V$ denote the maps in Hilbert's Nullstellensatz, so that
 \[
 (\mci \circ V)(I) = \sqrt{I}

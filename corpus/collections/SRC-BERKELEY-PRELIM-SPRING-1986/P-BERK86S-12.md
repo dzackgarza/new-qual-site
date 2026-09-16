@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be continuous and suppose
 \[
 f(x)\le\frac1{2h}\int_{x-h}^{x+h}f(y)\,dy

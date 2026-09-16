@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What are the integer cohomology rings of $S^2 \times S^2$ and $\mathbb{CP}^2$?
 (2) Show that there is no continuous map $f: S^2 \times S^2 \to \mathbb{CP}^2$ having **odd degree**.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $u,v\in H^2(S^2\times S^2;\mathbb Z)$ be the pullbacks of the positive generator of $H^2(S^2;\mathbb Z)$ under the two projections. Then
 $$
 H^*(S^2\times S^2;\mathbb Z)

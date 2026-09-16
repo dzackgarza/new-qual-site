@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Consider the equations
 \begin{align}
 x^2+y&=-2\\

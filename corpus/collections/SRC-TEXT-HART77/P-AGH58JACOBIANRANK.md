@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \PP^n$ be a projective variety of dimension $r$.
 Let $f_1, \ldots, f_t \in S = k[x_0, \ldots, x_n]$ be homogeneous polynomials generating the ideal of $Y$.
 Let $P \in Y$ be a point with homogeneous coordinates $P = (a_0, \ldots, a_n)$.

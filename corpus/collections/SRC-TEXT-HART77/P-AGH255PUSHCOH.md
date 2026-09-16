@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a morphism of schemes.
 
 a. Show by example that if $\mcf$ is coherent on $X$, then $f_* \mcf$ need not be coherent on $Y$, even if $X$ and $Y$ are varieties over a field $k$.

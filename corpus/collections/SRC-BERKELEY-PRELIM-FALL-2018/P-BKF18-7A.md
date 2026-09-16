@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose $A=(a_{ij})$ is a real symmetric $n\times n$ matrix with nonnegative eigenvalues.
 Show that
 \[

@@ -25,7 +25,7 @@ audit:
   note: "Checked the explicit quotient-to-image map and proved both equal cardinality and elementary-abelian structure before inferring the second isomorphism."
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an abelian group (we will write the group multiplicatively in this problem).
 For a prime number $p$, define the following subgroups of $A$: $$A^p := \{a^p : a \in A\}, \qquad A[p] := \{a \in A : a^p = 1\}.$$
 
@@ -34,10 +34,10 @@ a. Prove or give a counterexample: $A/A[p] \cong A^p$.
 b. Prove: If $A$ is finite, then $A/A^p \cong A[p]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The assertion in part (a) is true for every abelian group $A$.
 
-::: proof
+::: {.proof}
 The power map $u:A\to A$, given by $u(a)=a^p$, is a homomorphism
 because $A$ is abelian: $(ab)^p=a^pb^p$.
 Its kernel is $A[p]$ and its image is $A^p$, so these are indeed
@@ -55,7 +55,7 @@ isomorphism without any finiteness assumption.
 
 <1>2. If $A$ is finite, then $A/A^p$ and $A[p]$ have equal orders.
 
-::: proof
+::: {.proof}
 Each fiber of $u$ is a coset of $A[p]$, so counting fibers gives
 $|A|=|A[p]|\,|A^p|$. Therefore
 $$
@@ -66,7 +66,7 @@ $$
 <1>3. Under the same finiteness assumption, the groups in part (b)
 are isomorphic.
 
-::: proof
+::: {.proof}
 Both groups are abelian and have exponent dividing $p$.
 For $A[p]$ this is its defining property. For the quotient,
 $$

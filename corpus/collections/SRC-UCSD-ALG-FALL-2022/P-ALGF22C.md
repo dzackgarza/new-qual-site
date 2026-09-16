@@ -24,7 +24,7 @@ audit:
   note: Verified degree eight, the independent sign-change Galois action, and that beta = sqrt(2) + sqrt(3) + i has trivial stabilizer and therefore generates K.
 ---
 
-::: problem
+::: {.problem}
 Let $K = \mathbb{Q}(\sqrt{2}, \sqrt{3}, i)$ as a subfield of $\mathbb{C}$, where $i = \sqrt{-1}$.
 
 (a) Find, with proof, $\operatorname{Gal}(K/\mathbb{Q})$.

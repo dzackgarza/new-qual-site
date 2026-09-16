@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $(X,d)$ be a metric space.
 
 1. Define a Cauchy sequence in $(X,d)$.
@@ -33,9 +33,9 @@ Let $(X,d)$ be a metric space.
 4. State one form of Baire's category theorem.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Cauchy sequences.
-::: proof
+::: {.proof}
 A sequence $(x_n)$ in $X$ is Cauchy if for every $\varepsilon>0$ there exists $N$ such that
 \[
 m,n\ge N\quad\Longrightarrow\quad d(x_m,x_n)<\varepsilon.
@@ -43,7 +43,7 @@ m,n\ge N\quad\Longrightarrow\quad d(x_m,x_n)<\varepsilon.
 :::
 
 <1>2. Every convergent sequence is Cauchy.
-::: proof
+::: {.proof}
 Suppose $x_n\to x\in X$.
 Given $\varepsilon>0$, choose $N$ such that
 \[
@@ -57,12 +57,12 @@ Hence $(x_n)$ is Cauchy.
 :::
 
 <1>3. Completeness.
-::: proof
+::: {.proof}
 The metric space $(X,d)$ is complete if every Cauchy sequence in $X$ converges to a point of $X$.
 :::
 
 <1>4. Baire category theorem.
-::: proof
+::: {.proof}
 One standard form is: if $(X,d)$ is a nonempty complete metric space and $U_1,U_2,\ldots$ are open dense subsets of $X$, then
 \[
 \bigcap_{n=1}^\infty U_n

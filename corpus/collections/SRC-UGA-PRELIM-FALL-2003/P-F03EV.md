@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $n \times n$ matrix.
 
 a) Define what is meant by the eigenvalues and eigenvectors of $A$.
@@ -24,7 +24,7 @@ a) Define what is meant by the eigenvalues and eigenvectors of $A$.
 b) Show that if $v$ and $w$ are eigenvectors of $A$ corresponding to distinct eigenvalues $\lambda$ and $\mu$, then $v$ and $w$ are linearly independent.
 :::
 
-::: solution
+::: {.solution}
 A scalar $\lambda$ is an eigenvalue of $A$ if there exists a nonzero vector $v$ such that
 \[
 Av=\lambda v.

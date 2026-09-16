@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Compute the following integral via residues
 $$
 \int_0^\infty \frac{1 - \cos x}{x^2}\,dx.

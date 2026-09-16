@@ -15,6 +15,6 @@ audit:
   note: Checked against Variational Principle, Problem 11, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f \in C ^ { 2 } ( \bar { D } )$ be an extremum of the functional $S [ f ] = \int _ { { \cal D } } d x { \cal L } ( f , f ^ { \prime } )$ in a class of functions satisfying the boundary condition $f | _ { \partial D } = f _ { 0 } \mathrm { ~ , ~ }$ What additional condition must be imposed on $f$ to make it an extremum of $S [ f ]$ in a class of $C ^ { 2 } ( \bar { D } )$ functions with all possible boundary conditions?
 :::

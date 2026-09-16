@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(\Omega, \mathcal{B}, \mu)$ be a measure space and $f_n, f : \Omega \to \mathbb{C}$ be measurable functions.
 Determine which of the following statements are true.
 For the true statements give a brief reason and for the false statements give a counterexample.
@@ -38,9 +38,9 @@ For the true statements give a brief reason and for the false statements give a 
 4. If $\mu(\Omega) < \infty$ and $f_n \to f$ in $L^3(\mu)$, then $f_n \to f$ in $L^1(\mu)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Statement 1 is false.
-::: proof
+::: {.proof}
 Take $\Omega=[0,1]$ with Lebesgue measure and enumerate the dyadic intervals level by level:
 \[
 f_n=\mathbf1_{[j2^{-k},(j+1)2^{-k})}
@@ -55,7 +55,7 @@ For every non-dyadic $x\in[0,1]$, at each level $k$ exactly one dyadic interval 
 :::
 
 <1>2. Statement 2 is true.
-::: proof
+::: {.proof}
 Since the singleton $\{\omega_0\}$ has positive finite measure,
 \[
 \|f_n-f\|_2^2
@@ -73,7 +73,7 @@ Therefore
 :::
 
 <1>3. Statement 3 is false in general.
-::: proof
+::: {.proof}
 Take $\Omega=\mathbb R$ with Lebesgue measure,
 \[
 f_n=\mathbf1_{[n,n+1]},
@@ -89,7 +89,7 @@ for every $n$. Hence $f_n$ does not converge to $f$ in measure.
 :::
 
 <1>4. Statement 4 is true.
-::: proof
+::: {.proof}
 Let $h_n=f_n-f$. Hölder's inequality with exponents $3$ and $3/2$ gives
 \[
 \|h_n\|_1

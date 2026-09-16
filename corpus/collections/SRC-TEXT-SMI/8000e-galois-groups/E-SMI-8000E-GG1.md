@@ -30,7 +30,7 @@ audit:
 (ii) Prove that the splitting field of $X^2 + X + 1$ over $\ZZ/2$ has dimension 2, hence the Galois group is $\ZZ/2$, a solvable group. Then determine whether the root field is a radical extension under the standard definition.
 :::
 
-::: remark
+::: {.remark}
 The printed exercise asks one to prove that the root field is **not** a
 radical extension. Under the standard definition this is false: if $\alpha$
 is a nontrivial root, then $\alpha^3=1\in\mathbf F_2$. Thus
@@ -39,14 +39,14 @@ packet does not record a different convention that would change this
 conclusion.
 :::
 
-::: solution
+::: {.solution}
 Put
 $$
 k=\mathbf F_2.
 $$
 
 <1>1. The polynomial $f(X)=X^2+X+1$ is irreducible over $k$.
-::: proof
+::: {.proof}
 A quadratic polynomial over a field is reducible exactly when it has a root
 in that field. The only elements of $\mathbf F_2$ are $0$ and $1$, and
 $$
@@ -59,7 +59,7 @@ irreducible.
 :::
 
 <1>2. The quotient $k[X]/(f)$ is a field with four elements.
-::: proof
+::: {.proof}
 Because $f$ is irreducible, the ideal $(f)$ is maximal in $k[X]$, so
 $$
 K=k[X]/(f)
@@ -81,7 +81,7 @@ $$
 :::
 
 <1>3. This field is the splitting field of $f$ and has degree $2$ over $k$.
-::: proof
+::: {.proof}
 By construction,
 $$
 \alpha^2+\alpha+1=0.
@@ -105,7 +105,7 @@ $$
 :::
 
 <1>4. The Galois group is cyclic of order $2$.
-::: proof
+::: {.proof}
 The polynomial $f$ is separable: its derivative is
 $$
 f'(X)=2X+1=1.
@@ -130,7 +130,7 @@ In particular the Galois group is solvable.
 :::
 
 <1>5. Under the standard definition, the root field is a radical extension.
-::: proof
+::: {.proof}
 From
 $$
 \alpha^2+\alpha+1=0

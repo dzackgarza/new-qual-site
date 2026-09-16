@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be analytic in $\mathbb{D}$ and assume $|f(z)| \leq 1$ for all $z \in \mathbb{D}$.
 
 (a) Suppose that $f(z)$ has a zero of order $m$ at $z = 0$.
@@ -23,7 +23,7 @@ Show that $|f(z)| \leq |z|^m$.
 Show that, for $|z| \leq \sqrt{|\alpha|}$, $$|f(z)| \geq \frac{|\alpha| - |z|^2}{1 + |\alpha||z|^2}.$$
 :::
 
-::: solution
+::: {.solution}
 For part (a), write
 \[
 f(z)=z^m g(z),

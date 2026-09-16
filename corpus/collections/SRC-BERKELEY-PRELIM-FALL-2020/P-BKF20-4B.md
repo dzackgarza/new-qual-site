@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 (a) For positive integer $n$, find all poles of
 \[
 \frac{\pi}{z^n\tan(\pi z)}

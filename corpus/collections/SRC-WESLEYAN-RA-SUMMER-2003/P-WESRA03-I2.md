@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Define a measure on a measurable space $(Y,\tau(Y))$.
 :::
 
-::: solution
+::: {.solution}
 A measure on $(Y,\tau(Y))$ is a function
 \[
 \mu:\tau(Y)\to[0,\infty]

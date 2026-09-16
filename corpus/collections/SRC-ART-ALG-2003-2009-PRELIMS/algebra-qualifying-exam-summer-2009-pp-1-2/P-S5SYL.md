@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 a. Find a $2$-Sylow subgroup of $S_5$.
 
 b. Find a $5$-Sylow subgroup of $S_{15}$.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Prove that every holomorphic function is infinitely complex-differentiable.
 :::

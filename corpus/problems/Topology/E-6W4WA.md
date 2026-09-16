@@ -19,17 +19,17 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 - What does it mean for $E\subseteq X$ to be a **dense** subspace?
 :::
 
-::: solution
+::: {.solution}
 A subset $E\subseteq X$ is **dense in $X$** if
 $$
 \overline E=X.
 $$
 Equivalently, every nonempty open subset of $X$ meets $E$.
-::: proof
+::: {.proof}
 A point $x$ lies in $\overline E$ exactly when every open neighborhood of $x$ intersects $E$. Hence $\overline E=X$ exactly when every nonempty open set intersects $E$.
 :::
 :::

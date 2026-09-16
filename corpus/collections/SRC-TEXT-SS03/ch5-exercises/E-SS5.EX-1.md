@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 1. Give another proof of Jensen’s formula in the unit disc using the functions (called Blaschke factors)
 
 $$
@@ -25,7 +25,7 @@ $$
 [Hint: The function $f / ( \psi _ { z _ { 1 } } \cdot \cdot \cdot \psi _ { z _ { N } } )$ is nowhere vanishing.]
 :::
 
-::: solution
+::: {.solution}
 Let $f$ be holomorphic in a neighborhood of the closed unit disc, suppose $f(0)\ne0$, and let $z_1,\ldots,z_N$ be its zeros in $\mathbb D$, repeated according to multiplicity. For $|\alpha|<1$, the Blaschke factor
 \[
 \psi_\alpha(z)=\frac{\alpha-z}{1-\overline\alpha z}

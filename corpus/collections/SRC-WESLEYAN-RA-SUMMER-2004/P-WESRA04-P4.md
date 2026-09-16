@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f:[0,1]\to[0,1]$ be Lebesgue measurable.
 Prove that its graph
 \[
@@ -30,7 +30,7 @@ Prove that its graph
 has measure zero with respect to the completed product measure $m\times m$ on $[0,1]^2$.
 :::
 
-::: solution
+::: {.solution}
 Since Lebesgue measure is the completion of Borel measure, there exists a Borel measurable function $h:[0,1]\to[0,1]$ such that
 \[
 f=h\quad\text{almost everywhere}.

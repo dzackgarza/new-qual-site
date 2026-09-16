@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 7. The family of mappings introduced here plays an important role in complex analysis.
    These mappings, sometimes called Blaschke factors, will reappear in various applications in later chapters.
 

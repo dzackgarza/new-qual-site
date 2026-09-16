@@ -22,13 +22,13 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a Principal Ideal Domain (PID), and let $r, s \in R \setminus \{0\}$ be non-zero elements.
 Determine the **invariant factors** of the $R$-module:
 $$M = R/(r) \oplus R/(s).$$
 :::
 
-::: solution
+::: {.solution}
 The module
 \[
 M=R/(r)\oplus R/(s)

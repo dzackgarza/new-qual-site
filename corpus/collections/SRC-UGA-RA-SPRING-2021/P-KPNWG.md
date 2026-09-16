@@ -22,7 +22,7 @@ audit:
   note: Replaced the legacy DCT domination by the uniform integrable bound obtained from cos(x/n) at least cos(1) on the integration range 0<x<n.
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate the following limit, justifying each step of your calculation:
 \[
 L \da \lim_{n\to \infty} \int_0^n { \cos\qty{x\over n} \over x^2 + \cos\qty{x\over n} }\dx
@@ -30,7 +30,7 @@ L \da \lim_{n\to \infty} \int_0^n { \cos\qty{x\over n} \over x^2 + \cos\qty{x\ov
 :::
 
 
-:::{.solution}
+::: {.solution}
 For $x>0$, define
 \[
 F_n(x)=\mathbf1_{(0,n)}(x)

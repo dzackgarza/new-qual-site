@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Here we compare the class group of a projective variety $V$ to the class group of its cone (I, Ex. 2.10).
 Let $V$ be a projective variety in $\PP^n$, of dimension $\geq 1$ and nonsingular in codimension $1$.
 Let $X = C(V)$ be the affine cone over $V$ in $\AA^{n+1}$, and let $\bar X$ be its projective closure in $\PP^{n+1}$.

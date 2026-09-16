@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega \subseteq \mathbb{C}$ be an open domain, and let $\{f_n\}$ be a sequence of holomorphic functions on $\Omega$ that converges uniformly to a function $f$ on every compact subset $K \subset \Omega$.
 Prove that:
 (1) The limit function $f$ is holomorphic on $\Omega$.
 (2) The sequence of derivatives $\{f_n'\}$ converges uniformly to $f'$ on every compact subset $K \subset \Omega$ (Weierstrass Convergence Theorem).
 :::
 
-::: solution
+::: {.solution}
 <1>1. The limit $f$ is holomorphic. Fix a closed triangle $T\subset\Omega$. Since $T$ is compact, $f_n\to f$ uniformly on $T$, and therefore $f$ is continuous there. Moreover,
 \[
 \int_{\partial T}f(z)\,dz

@@ -15,7 +15,7 @@ audit:
   note: Checked against Laurent expansions and singularities, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the Laurent series for the following functions about 0 and classify their singularities there.
 
 a) $\frac { \sin ^ { 2 } z } { z }$

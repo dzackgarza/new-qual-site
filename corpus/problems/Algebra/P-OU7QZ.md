@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f\in \QQ[x]$ be an irreducible quintic with exactly two non-real roots. Prove that its Galois group over $\QQ$ is $S_5$.
 :::
 

@@ -26,7 +26,7 @@ audit:
   note: Separated the separable m-part from the purely inseparable p^i-part and identified the fixed field explicitly.
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field of characteristic $p > 0$ and let $K = k(t)$ be a purely transcendental extension in one indeterminate $t$.
 Let $n \geq 1$ be any integer, and let $L$ be the splitting field of the polynomial $x^n - t$ over $K$.
 It may be helpful in this problem to write $n = p^i m$ where $\gcd(m,p) = 1$.

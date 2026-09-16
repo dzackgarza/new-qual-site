@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a power series centered at the origin.
 Prove that $f$ has a power series expansion about any point in its disc of convergence.
 :::
 
-::: solution
+::: {.solution}
 Suppose
 \[
 f(z)=\sum_{n=0}^\infty a_nz^n

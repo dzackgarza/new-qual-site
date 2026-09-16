@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 a.
 Let $f, g\in L^1(\RR^n)$ and give a definition of $f\ast g$.
 

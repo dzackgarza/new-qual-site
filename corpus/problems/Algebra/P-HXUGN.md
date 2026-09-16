@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the relation between Euclidean domains and PIDs?
 :::
 
-::: solution
+::: {.solution}
 Every Euclidean domain is a PID. Indeed, let $R$ be Euclidean with Euclidean function $\delta$, and let $0\ne I\triangleleft R$. Choose $0\ne a\in I$ with $\delta(a)$ minimal. For any $b\in I$, Euclidean division gives
 \[
 b=qa+r,

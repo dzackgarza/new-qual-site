@@ -34,11 +34,11 @@ or
 (ii) If $k$ is a field and $f$ a polynomial of degree $\geq 1$ in $k[X]$, there is a field $E$ containing $k$ in which $f$ has at least one root.
 :::
 
-::: solution
+::: {.solution}
 We prove option (i).
 
 <1>1. Every element of $E$ satisfies a nonzero polynomial over $k$.
-::: proof
+::: {.proof}
 Let
 $$
 n=\dim_k E<\infty
@@ -69,7 +69,7 @@ Therefore $\alpha$ is algebraic over $k$.
 :::
 
 <1>2. Conclude that the extension is algebraic.
-::: proof
+::: {.proof}
 The element $\alpha\in E$ was arbitrary. Thus every element of $E$ is
 algebraic over $k$, which is exactly the statement that
 $$

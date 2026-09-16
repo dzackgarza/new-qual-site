@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash renders subpart (a) as `Does this imply that …?` with the target formula destroyed. The gap is preserved explicitly.
 ---
 
-::: problem
+::: {.problem}
 Consider the following questions for functions $F:[0,1]\to\mathbb R$.
 
 (a) Suppose $F$ is strictly increasing.

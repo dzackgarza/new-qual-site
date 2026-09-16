@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate the six rational antiderivatives
 \[
 \int\frac{x}{x-1}\,dx,
@@ -38,7 +38,7 @@ Evaluate the six rational antiderivatives
 \]
 :::
 
-::: solution
+::: {.solution}
 Using elementary partial fractions,
 \[
 \frac{x}{x-1}=1+\frac1{x-1},

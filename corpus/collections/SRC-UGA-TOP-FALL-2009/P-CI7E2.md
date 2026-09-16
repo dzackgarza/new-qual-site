@@ -28,7 +28,7 @@ audit:
   note: Replaced the unproved closed-surjection theorem by a direct saturated-neighborhood proof and verified the Hausdorff clause for both A and X/A.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a closed subset of a normal topological space $X$.
 Show that both $A$ and the quotient $X/A$ are normal.
 :::

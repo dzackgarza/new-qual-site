@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $H=G/K$ be the quotient of an abelian group $G$ by a subgroup $K$. Prove or disprove:
 
 1. If $H$ is finite cyclic, then $G$ is isomorphic to the direct product $H\times K$.

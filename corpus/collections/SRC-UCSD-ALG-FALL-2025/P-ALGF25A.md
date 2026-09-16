@@ -25,7 +25,7 @@ audit:
   note: Checked the Sylow counts, semidirect-product decomposition, and uniqueness of the nontrivial order-three action on the normal cyclic subgroup of order 65.
 ---
 
-::: problem
+::: {.problem}
 Prove that, up to isomorphism, there exist exactly two groups of order $3 \cdot 5 \cdot 13$.
 :::
 

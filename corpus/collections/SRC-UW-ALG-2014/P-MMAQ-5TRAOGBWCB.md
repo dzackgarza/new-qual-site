@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime, let $\mathbb F_p$ be the $p$-element field,
 and let $K=\mathbb F_p(t)$ be the field of rational functions in
 $t$ with coefficients in $\mathbb F_p$. Consider the polynomial $f(x)=
@@ -34,7 +34,7 @@ x^p-t\in K[x]$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The polynomial \(f(X)=X^p-t\) has no root in \(K=\mathbb F_p(t)\).
 ::: {.proof}
 Suppose \(r\in K\) satisfies \(r^p=t\). Write

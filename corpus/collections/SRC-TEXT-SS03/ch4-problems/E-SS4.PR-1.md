@@ -20,7 +20,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 1. Suppose ${ \hat { f } } ( \xi ) = O ( e ^ { - a | \xi | ^ { p } } )$ as $| \xi | \to \infty$ , for some $p > 1$ . Then f is holomorphic for all z and satisfies the growth condition
 
 $$
@@ -34,7 +34,7 @@ Note that on the one hand, when $p \longrightarrow \infty$ then $q \to 1$ , and 
 [Hint: To prove the result, use the inequality $- \xi ^ { p } + \xi u \le u ^ { q }$ , which is valid when ξ and u are non-negative. To establish this inequality, examine separately the cases $\xi ^ { p } \ge \xi u$ and $\xi ^ { p } < \xi u ;$ note also that the functions $\xi = u ^ { q - 1 }$ and $u = \xi ^ { p - 1 }$ are inverses of each other because $( p - 1 ) ( q - 1 ) = 1 . ]$
 :::
 
-::: solution
+::: {.solution}
 Let $q$ be determined by
 \[
 \frac1p+\frac1q=1.

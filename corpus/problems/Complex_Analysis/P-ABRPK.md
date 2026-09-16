@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f:\DD\to\DD$ is analytic and admits a continuous extension $\tilde f: \bar \DD \to \bar \DD$ such that $\abs{z} = 1 \implies \abs{f(z)} = 1$.
 
 a.
@@ -36,7 +36,7 @@ Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
 
 :::
 
-:::{.solution}
+::: {.solution}
 **Part 1**:
 use the reflection principle to define
 \[

@@ -25,7 +25,7 @@ audit:
   note: Checked extension of embeddings to the splitting field, both directions of the root-image assertion, the zero-root exception, and the exact fibers of the mth-power map used in the polynomial identity.
 ---
 
-::: problem
+::: {.problem}
 Suppose $F$ is a field of characteristic zero, $f \in F[x]$ is monic and irreducible, and $E$ is a splitting field of $f$ over $F$.
 Let $X := \{\alpha \in E \mid f(\alpha) = 0\}$.
 
@@ -49,7 +49,7 @@ m_{\alpha,F}(x) = m_{\alpha^m,F}(x^m);
 that means $f(x) = g(x^m)$.
 :::
 
-::: remark
+::: {.remark}
 The nonzero-root hypothesis in the root-of-unity conclusion of (b) and in (c) is necessary.
 If $\alpha=0$, monicity and irreducibility force $f(x)=x$, so $X=\{0\}$ and multiplication by every $r\in F$ preserves $X$.
 For example, over $F=\mathbb{Q}$, taking $r=2$ satisfies the scaled-root condition but $2$ is not a root of unity.

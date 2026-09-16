@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Pick four of the following results from the course and state them clearly.
 Then pick two of those four results and sketch their proofs.
 
@@ -41,7 +41,7 @@ Then pick two of those four results and sketch their proofs.
 - Riemann Mapping Theorem
 :::
 
-::: solution
+::: {.solution}
 We choose the following four results.
 
 **Cauchy's integral formula.** If $f$ is holomorphic on a neighborhood of the closed disk $\overline{B(a,R)}$, then for every $z\in B(a,R)$,

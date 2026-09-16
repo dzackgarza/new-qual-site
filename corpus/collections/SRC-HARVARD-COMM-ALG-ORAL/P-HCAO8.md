@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Give a general class of rings in which every prime ideal is maximal.
 :::
 

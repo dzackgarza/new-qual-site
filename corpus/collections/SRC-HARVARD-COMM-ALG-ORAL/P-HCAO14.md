@@ -25,18 +25,18 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be the ring of real quaternions.
 Does $R[x]$ satisfy the division algorithm?
 :::
 
-::: solution
+::: {.solution}
 Yes, for the usual polynomial ring over the quaternion division ring with a
 central indeterminate $x$. In fact one has both right and left division with
 remainder.
 
 <1>1. Right division is possible.
-::: proof
+::: {.proof}
 Let
 \[
 f=a_mx^m+\cdots+a_0,
@@ -66,7 +66,7 @@ f=qg+r,
 :::
 
 <1>2. Left division is possible as well.
-::: proof
+::: {.proof}
 At the same step choose
 \[
 c=b_n^{-1}a_m.
@@ -86,7 +86,7 @@ f=gq+r,
 
 <1>3. Thus $R[x]$ has the usual degree division algorithm, with sidedness
 specified because $R[x]$ is noncommutative.
-::: proof
+::: {.proof}
 This is exactly <1>1 and <1>2.
 :::
 :::

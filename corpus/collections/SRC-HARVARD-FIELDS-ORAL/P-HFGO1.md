@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a polynomial that is not solvable by radicals.
 :::
 
-::: solution
+::: {.solution}
 Take
 \[
 f(x)=x^5-x-1\in\mathbb Q[x].
@@ -33,7 +33,7 @@ f(x)=x^5-x-1\in\mathbb Q[x].
 Its Galois group over $\mathbb Q$ is $S_5$, so $f$ is not solvable by radicals.
 
 <1>1. The polynomial $f$ is irreducible over $\mathbb Q$.
-::: proof
+::: {.proof}
 Modulo $3$,
 \[
 \bar f(x)=x^5-x-1.
@@ -53,7 +53,7 @@ irreducible. Hence $f$ is irreducible over $\mathbb Q$ by Gauss's lemma.
 :::
 
 <1>2. The Galois group $G$ contains a transposition.
-::: proof
+::: {.proof}
 Modulo $2$,
 \[
 \bar f(x)=x^5+x+1
@@ -69,7 +69,7 @@ $(2)(3)$. The cube of such an element is a transposition.
 :::
 
 <1>3. A transitive subgroup of $S_5$ containing a transposition is $S_5$.
-::: proof
+::: {.proof}
 By <1>1, $G$ acts transitively on the five roots. Since the degree $5$ is prime,
 this action is primitive.
 
@@ -82,7 +82,7 @@ the normal closure of $\tau$ in $G$ is $S_5$, so $G=S_5$.
 :::
 
 <1>4. The polynomial $f$ is not solvable by radicals.
-::: proof
+::: {.proof}
 A polynomial over a field of characteristic $0$ is solvable by radicals only if
 its Galois group is solvable. The group $S_5$ is not solvable because it contains
 the nonabelian simple subgroup $A_5$. Hence $f$ is not solvable by radicals.

@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $(f_n)$ be a sequence of functions on $[a,b]$ converging pointwise to $f$.
 If $T_a^b(h)$ denotes the total variation of $h$ on $[a,b]$, prove that
 \[
@@ -25,7 +25,7 @@ T_a^b(f)\le \liminf_{n\to\infty}T_a^b(f_n).
 \]
 :::
 
-::: solution
+::: {.solution}
 Fix an arbitrary partition
 \[
 P:a=x_0<x_1<\cdots<x_m=b.

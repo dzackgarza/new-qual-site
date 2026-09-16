@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a morphism of finite type of noetherian schemes.
 Then the image of any constructible subset of $X$ is a constructible subset of $Y$.
 In particular $f(X)$, which need not be either open or closed, is a constructible subset of $Y$.
@@ -32,7 +32,7 @@ c. Now use noetherian induction on $Y$ to complete the proof.
 d. Give some examples of morphisms $f: X \to Y$ of varieties over an algebraically closed field $k$ showing that $f(X)$ need not be either open or closed.
 :::
 
-::: remark
+::: {.remark}
 Prove the algebraic result of (b) by induction on the number of generators of $B$ over $A$; for one generator prove it directly.
 In the application, take $b = 1$.
 This statement is Chevalley's theorem; see Cartan and Chevalley, exposé 7, and Matsumura.

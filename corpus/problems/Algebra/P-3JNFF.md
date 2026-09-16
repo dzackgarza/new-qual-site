@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find all normal subgroups of $A_4$.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes of $A_4$ have sizes
 \[
 1,\qquad 3,\qquad 4,\qquad 4.

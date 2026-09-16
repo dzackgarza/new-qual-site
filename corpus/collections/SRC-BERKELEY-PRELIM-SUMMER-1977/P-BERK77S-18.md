@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 \widehat a_0+\widehat a_1z+\cdots+\widehat a_nz^n

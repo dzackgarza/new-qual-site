@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $R$ and $S$ be commutative rings, and $f:R\rightarrow S$ a ring homomorphism.
 
 - Show that if $I$ is a prime ideal of $S$, then

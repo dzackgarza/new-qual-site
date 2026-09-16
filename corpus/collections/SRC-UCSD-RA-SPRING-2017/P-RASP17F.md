@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi \in C_c^\infty(\mathbb{R}, [0, \infty))$ satisfy $\int_\mathbb{R} \varphi \, dm = 1$ and for $\varepsilon > 0$ let $\delta_\varepsilon(x) = \frac{1}{\varepsilon}\varphi\left(\frac{x}{\varepsilon}\right)$.
 
 1. If $-\infty < a < b < \infty$ and $h_\varepsilon(x) := \mathbf{1}_{[a,b]} * \delta_\varepsilon$, show $h_\varepsilon'(x) = \delta_\varepsilon(x - a) - \delta_\varepsilon(x - b)$.
@@ -38,9 +38,9 @@ show $f$ is absolutely continuous and $f' = g$ $m$-a.e.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Differentiate the mollified indicator.
-::: proof
+::: {.proof}
 For every \(x\in\mathbb R\),
 \[
 h_\varepsilon(x)
@@ -60,7 +60,7 @@ h_\varepsilon'(x)
 :::
 
 <1>2. Construct an absolutely continuous primitive of \(g\).
-::: proof
+::: {.proof}
 Define
 \[
 G(x):=\int_0^x g(t)\,dt.
@@ -87,7 +87,7 @@ Thus the distributional derivative of \(u\) is zero.
 :::
 
 <1>3. A continuous function with zero distributional derivative is constant.
-::: proof
+::: {.proof}
 Let \(\delta_\varepsilon\) be the mollifier above. Since \(u'\) is the zero distribution,
 \[
 (u*\delta_\varepsilon)'=u'*\delta_\varepsilon=0.

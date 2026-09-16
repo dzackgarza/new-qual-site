@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Let $p$ be a prime and $\abs{G} = p^3$.
   Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 
@@ -34,7 +34,7 @@ audit:
     > Hint: Sylow and semidirect products.
 :::
 
-::: solution
+::: {.solution}
 First, every group $G$ of order $p^3$ has a normal subgroup of order $p^2$. Since $G$ is a nontrivial finite $p$-group, $Z(G)\ne1$.
 
 If $|Z(G)|\ge p^2$, then $Z(G)$ contains a subgroup of order $p^2$, and every subgroup of the center is normal.

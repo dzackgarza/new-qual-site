@@ -25,17 +25,17 @@ audit:
   note: "Checked the finite-dimensional subring argument for inverses and algebraicity, the biquadratic degree, and recovery of both radicals from the proposed generator."
 ---
 
-::: problem
+::: {.problem}
 a. Suppose $K/F$ is a field extension.
 Prove that the elements of $K$ that are algebraic over $F$ form a subfield of $K$.
 
 b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The elements algebraic over $F$ form a subfield of $K$.
 
-::: proof
+::: {.proof}
 Every element of $F$ is algebraic over $F$, being a root of
 a linear polynomial. Suppose $\alpha,\beta\in K$ are
 algebraic over $F$, with monic annihilating polynomials of
@@ -64,7 +64,7 @@ subfield assertion.
 <1>2. The field $E=\mathbb Q(\sqrt2,\sqrt3)$ has degree $4$
 over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 A square of a nonzero rational number has an even exponent
 at every prime in its factorization. Hence $2$ is not a
 rational square, and $1,\sqrt2$ are a basis of
@@ -85,7 +85,7 @@ $$
 \boxed{T^4-22T^2+25}.
 $$
 
-::: proof
+::: {.proof}
 Put $\gamma=2\sqrt2-\sqrt3$. One has
 $\gamma^2=11-4\sqrt6$, so
 $(\gamma^2-11)^2=96$. Expanding gives

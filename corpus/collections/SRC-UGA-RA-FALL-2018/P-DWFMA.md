@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $E \subseteq \mathbb{R}$ be a Lebesgue measurable set. Show that there exists a Borel set $B \subseteq E$ such that $m(E \setminus B) = 0$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every Lebesgue measurable set contains an $F_\sigma$ Borel subset differing by a set of Lebesgue measure zero, using closed approximations on finite-measure pieces.
 
 <1>1. Case 1: $E$ has finite measure ($m(E) < \infty$).

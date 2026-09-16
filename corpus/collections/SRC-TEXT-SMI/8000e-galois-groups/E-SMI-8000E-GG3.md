@@ -29,7 +29,7 @@ Find two different irreducible cubic polynomials mod 5, hence two different real
 Can you find an isomorphism between them?
 :::
 
-::: solution
+::: {.solution}
 Take
 $$
 f(X)=X^3+X+1
@@ -41,7 +41,7 @@ $$
 in $\mathbf F_5[X]$.
 
 <1>1. Both cubics are irreducible over $\mathbf F_5$.
-::: proof
+::: {.proof}
 The polynomial $f$ has no root in $\mathbf F_5$:
 $$
 f(0),f(1),f(2),f(3),f(4)=1,3,1,1,4.
@@ -61,7 +61,7 @@ root in $\mathbf F_5$, and hence is irreducible.
 :::
 
 <1>2. The two quotient fields each have $125$ elements.
-::: proof
+::: {.proof}
 Set
 $$
 K=\mathbf F_5[X]/(f),
@@ -80,7 +80,7 @@ $$
 :::
 
 <1>3. Find an explicit root of $g$ inside $K$.
-::: proof
+::: {.proof}
 Let
 $$
 \alpha=X+(f)\in K.
@@ -117,7 +117,7 @@ $$
 :::
 
 <1>4. Construct the isomorphism explicitly.
-::: proof
+::: {.proof}
 Let
 $$
 \gamma=Y+(g)\in L.

@@ -21,7 +21,7 @@ audit:
 Find a function $f: \mathbb{R} \to \mathbb{R}$ that is continuous at precisely one point.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct an explicit function $f: \mathbb{R} \to \mathbb{R}$ and prove that it is continuous at precisely one point $x = 0$.
 
 <1>1. Definition of the function $f$:

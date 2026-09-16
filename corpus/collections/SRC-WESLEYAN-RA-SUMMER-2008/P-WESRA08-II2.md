@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Give examples showing that neither of the following implications holds in general on $[0,1]$:
 
 1. convergence almost everywhere to $0$ implies convergence to $0$ in $L^1$;
@@ -29,9 +29,9 @@ Give examples showing that neither of the following implications holds in genera
 2. convergence to $0$ in $L^1$ implies convergence almost everywhere to $0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Almost-everywhere convergence need not imply $L^1$ convergence.
-::: proof
+::: {.proof}
 Let
 \[
 f_n(x):=n\mathbf1_{(0,1/n)}(x).
@@ -50,7 +50,7 @@ Hence $f_n$ does not converge to $0$ in $L^1$.
 :::
 
 <1>2. $L^1$ convergence need not imply almost-everywhere convergence.
-::: proof
+::: {.proof}
 Use the typewriter sequence.
 For $m\ge0$ and $0\le k<2^m$, define
 \[

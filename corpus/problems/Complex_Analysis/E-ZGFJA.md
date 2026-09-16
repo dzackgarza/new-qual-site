@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f:\DD\to \DD$ with $f(0) = 0$ and that there exists an $r\in (0, 1)$ with $f(r) = f(-r) = 0$.
 Show that 
 \[
@@ -23,7 +23,7 @@ Show that
 
 :::
 
-:::{.solution}
+::: {.solution}
 The key observation is that this factors:
 \[
 {z^2 - r^2 \over 1-r^2 z^2} = {r-z\over 1+rz}{-r-z\over 1-rz} = \psi_{r}(z) \psi_{-r}(z)

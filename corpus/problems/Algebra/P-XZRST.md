@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Does $L^1$ have a natural multiplication making it an algebra? Distinguish pointwise multiplication on a general measure space from convolution on a locally compact group.
 :::
 

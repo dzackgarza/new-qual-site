@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Two ideals $I$ and $J$ in $\mathbb{C}[x_1,\ldots,x_n]$ are co-maximal if and only if $I+J=\mathbb{C}[x_1,\ldots,x_n]$.
 
 (i) Prove that $I$ and $J$ are co-maximal if and only if $V(I)\cap V(J)=\emptyset$.
@@ -25,7 +25,7 @@ Show that if $I\subseteq\sqrt{J}$, then there is an $m\ge 1$ such that $I^m\subs
 (Hint: Use the Hilbert Basis Theorem.)
 :::
 
-::: solution
+::: {.solution}
 For (a)(i), note first that
 \[
 V(I)\cap V(J)=V(I+J).

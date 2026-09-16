@@ -15,7 +15,7 @@ audit:
   note: Checked against Section II, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $D\subset\mathbb C$ be a domain.
 If every function analytic in $D$ has a primitive in $D$, prove that $D$ is simply connected, where simply connected means that every cycle in $D$ is homologous to zero.
 :::

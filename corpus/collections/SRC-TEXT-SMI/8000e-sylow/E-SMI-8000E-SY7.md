@@ -30,9 +30,9 @@ audit:
 (ii) If $P$, $P'$ are any two Sylow subgroups of a group $G$, using only part (i) — and nothing else except that $P$ and $P'$ exist — prove $P$ is conjugate to $P'$, by looking at the action of $P'$ on the set $G/P$ of cosets of $P$ in $G$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For a finite $p$-group action, the number of fixed points is congruent to the size of the set modulo $p$.
-::: proof
+::: {.proof}
 Let a finite $p$-group $Q$ act on a finite set $X$. Decompose $X$ into
 $Q$-orbits. For $x\in X$, the orbit-stabilizer theorem gives
 $$
@@ -53,7 +53,7 @@ $$
 :::
 
 <1>2. Let $P'$ act on the left cosets $G/P$ by left multiplication.
-::: proof
+::: {.proof}
 Define
 $$
 x\cdot(gP)=(xg)P
@@ -75,7 +75,7 @@ $$
 :::
 
 <1>3. A fixed coset forces $P$ and $P'$ to be conjugate.
-::: proof
+::: {.proof}
 The coset $gP$ is fixed by $P'$ precisely when, for every $x\in P'$,
 $$
 xgP=gP.

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate, on intervals where the real-valued integrands are defined,
 \[
 \int\frac{dx}{x^2\sqrt{x^2-a^2}},
@@ -36,7 +36,7 @@ Also evaluate
 \]
 :::
 
-::: solution
+::: {.solution}
 For $a\ne0$,
 \[
 \frac{d}{dx}\left(\frac{\sqrt{x^2-a^2}}{a^2x}\right)

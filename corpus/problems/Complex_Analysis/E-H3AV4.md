@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\lambda = {1\over 2}\qty{1 + i \sqrt{3}}$ and find a map 
 \[
 R \da \ts{\abs{z - \lambda} < 1} \intersect \ts{\abs{z-\bar{\lambda}} < 1 } \too \DD
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 The region looks like the following:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_19-19-01.png)
@@ -34,7 +34,7 @@ f(z) \da {z\over z-1}
 
 > Note: mistake here, really we need to compose with $z\mapsto -z$ to get the picture, so take $f(z) \da {z\over 1-z}$ instead!!
 
-:::{.claim}
+::: {.claim}
 \[
 f(R) = \ts{z\st -\theta_0 < \Arg(z) < \theta_0 },\qquad \theta_0 \da {\pi \over 6}
 .\]
@@ -51,7 +51,7 @@ From here we map to the disc in three steps:
 - $z\mapsto {z-i\over z+i}$ maps $\HH\to \DD$.
 
 
-:::{.proof title="of claim"}
+::: {.proof title="of claim"}
 Since both $C_1, C_2$ pass through $0, 1$, their images become circles passing through $f(0)=0, f(1) = \infty$, so lines through the origin.
 Since $f$ fixes $\RR$ and the original region is symmetric about $\RR$, the resulting region will also be symmetric about $\RR$.
 As shown in the picture, since the interior of the region is to the left of each circle, the image will be to the left of each line.

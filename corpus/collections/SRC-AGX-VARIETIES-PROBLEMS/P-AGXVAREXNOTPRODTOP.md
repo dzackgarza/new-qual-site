@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the Zariski topology on $\AA^2\slice{k}$ is not the product topology on $\AA^1\slice{k} \cross \AA^1\slice{k}$.
 :::

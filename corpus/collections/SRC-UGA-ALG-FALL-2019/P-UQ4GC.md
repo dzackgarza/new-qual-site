@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\{e_1, \dots, e_n\}$ be a basis of a real vector space $V$, and let
 $$
 \Lambda = \left\{ \sum_{i=1}^n r_i e_i \;\middle|\; r_i \in \mathbb{Z} \right\} \cong \mathbb{Z}^n
@@ -34,7 +34,7 @@ $$
 (c) Prove that $|\Lambda^\vee / \Lambda| = |\det M|$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove lattice containment $\Lambda \subseteq \Lambda^\vee$, establish invertibility of the Gram matrix $M$, and compute the index $|\Lambda^\vee/\Lambda|$ using the Smith normal form of $M$.
 
 <1>1. Part (a): $\Lambda \subseteq \Lambda^\vee$.

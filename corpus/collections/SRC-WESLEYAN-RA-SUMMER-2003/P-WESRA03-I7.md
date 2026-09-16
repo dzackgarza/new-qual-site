@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Define what it means for a measure $\mu$ to be absolutely continuous with respect to a measure $\nu$ on $(X,\tau(X))$.
 :::
 
-::: solution
+::: {.solution}
 One writes
 \[
 \mu\ll\nu

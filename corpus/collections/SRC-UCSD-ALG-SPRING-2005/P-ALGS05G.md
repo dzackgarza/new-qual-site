@@ -24,7 +24,7 @@ audit:
   note: Ported the independently reviewed Spring 2017 proof of the identical statement; it exhibits elements of arbitrarily large degree over each prime field.
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a prime field (the rationals or a field with $p$ elements).
 Prove that the algebraic closure of $F$ is infinite-dimensional over $F$.
 :::

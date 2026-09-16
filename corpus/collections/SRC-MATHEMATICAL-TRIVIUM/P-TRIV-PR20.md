@@ -19,7 +19,7 @@ audit:
   note: Restored the unresolved variance identity in part (c) and removed a stray digit against Probability Problem 20 on page 30 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Let $\xi_1, \ldots, \xi_n, \tau$ be independent random variables, $\xi_1, \ldots, \xi_n$ have the same distribution, $\tau$ takes the values $1, \ldots, n$.
 Consider the sum of a random number of the random variables $S_\tau = \xi_1 + \ldots + \xi_\tau$.
 Show that

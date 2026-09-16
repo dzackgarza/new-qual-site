@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a ruled surface with invariant $e$ over an elliptic curve $C$, and let $\mfb$ be a divisor on $C$.
 
 a. If $\deg \mfb \geqslant e+2$, then there is a section $D \sim C_0+\mfb f$ such that $|D|$ has no base points.

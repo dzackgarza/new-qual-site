@@ -22,13 +22,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a connected topological manifold.
 (1) Prove that if $\widetilde{M}$ is an orientable connected manifold and $p: \widetilde{M} \to M$ is a $k$-fold covering map onto a **non-orientable** manifold $M$, then the covering degree $k$ must be **even** (or infinite).
 (2) Prove that if $\pi_1(M)$ has no subgroup of index $2$, then $M$ must be **orientable**.
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 w:\pi_1(M)\longrightarrow\{\pm1\}\cong\mathbb Z/2
@@ -43,7 +43,7 @@ Then
 $$
 H\subseteq\ker w.
 $$
-::: proof
+::: {.proof}
 A loop in $\widetilde M$ preserves the orientation of $\widetilde M$. Its projection therefore has trivial orientation monodromy in $M$, so its class lies in $\ker w$.
 :::
 
@@ -60,7 +60,7 @@ $$
 so $k$ is even. If $[\ker w:H]$ is infinite, then the covering has infinitely many sheets.
 
 <1>3. If $\pi_1(M)$ has no subgroup of index $2$, then $M$ is orientable.
-::: proof
+::: {.proof}
 If $M$ were non-orientable, the surjective orientation character would have kernel of index $2$, contradicting the hypothesis.
 :::
 :::

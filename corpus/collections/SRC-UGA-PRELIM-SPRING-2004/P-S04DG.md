@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Diagonalize the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & -1 \end{bmatrix}$ and use the diagonal form of $A$ to compute $A^2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The characteristic polynomial of $A$ is
 \[
 \chi_A(\lambda)=\det(\lambda I-A)=\lambda^2-9.

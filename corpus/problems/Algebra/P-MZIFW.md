@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 To which classes of operators does the classical Spectral Theorem for real symmetric matrices generalize? State the key theorems.
 :::
 

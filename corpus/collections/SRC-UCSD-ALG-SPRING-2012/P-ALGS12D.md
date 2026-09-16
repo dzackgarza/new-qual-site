@@ -24,7 +24,7 @@ audit:
   note: Reduced torsionfreeness to tensoring multiplication by a nonzero scalar and then applied the PID structure theorem.
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring.
 Recall that an $R$-module $Q$ is flat if $-\otimes_R Q$ is an exact functor; namely, given any short exact sequence of $R$-modules $0 \to M \to N \to P \to 0$, the sequence
 \[

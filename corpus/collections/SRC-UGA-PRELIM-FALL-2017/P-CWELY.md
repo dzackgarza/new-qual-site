@@ -21,7 +21,7 @@ audit:
   note: Replaced two overlapping solutions with one structured proof.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 V=\{(x,y,z)\in\mathbb R^3:3x+4y+5z=0\}.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be the algebraic set in $\PP^3$ defined by the equations
 $$
 x^2 - xz - yw = 0, \qquad yz - xw - zw = 0.

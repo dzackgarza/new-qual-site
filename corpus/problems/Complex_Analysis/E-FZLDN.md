@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Suppose $f$ is continuous and non-zero on $\overline{\DD}$ and holomorphic on $\DD$ such that $|f(z)|=1$ for all $|z|=1$.
 Show that $f$ is constant.
 
 ![image_2021-05-17-11-54-14](../../assets/Complex_Analysis/Review%20Doc/sections/figures/image_2021-05-17-11-54-14.png)
 :::
 
-::: solution
+::: {.solution}
 Since $f$ has no zeros on $\overline{\mathbb D}$, the function $1/f$ is
 holomorphic on $\mathbb D$ and continuous on $\overline{\mathbb D}$. On the
 unit circle,

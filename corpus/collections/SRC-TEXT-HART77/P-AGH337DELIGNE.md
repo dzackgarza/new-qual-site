@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a noetherian ring, let $X=\Spec A$, let $\mfa \subseteq A$ be an ideal, and let $U \subseteq X$ be the open set $X-V(\mfa)$.
 
 a. For any $A$-module $M$, establish the following formula of Deligne:

@@ -21,7 +21,7 @@ audit:
 Check the details of Example 1 of §68.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Verify the foundational details of the construction of the free product of groups $G = *_{\alpha \in J} G_\alpha$ from §68, including word reduction, the group axioms, and the universal mapping property.
 
 <1>1. Words and reduced words:

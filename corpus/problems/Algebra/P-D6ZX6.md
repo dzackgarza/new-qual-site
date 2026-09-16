@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Maximal $\implies$ prime, but generally not the converse.
 :::
 
-:::{.solution}
+::: {.solution}
 
 - Suppose $\mm$ is maximal, $ab\in \mm$, and $b\not\in \mm$.
 

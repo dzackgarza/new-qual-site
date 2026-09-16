@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 44, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 The electric field $\vec { E }$ created by a point charge q at a certain distance from it r in vacuum is given by $\vec { E } = k _ { e } q \frac { \vec { r } } { r ^ { 3 } }$ , where $k _ { e }$ is a constant.
 
 (a) Consider the charged ring of radius R with the linear charge density $\frac { d q } { d l } \equiv \rho .$ Find the total magnitude of the electric field created by this ring at a distance d from its center along the axis orthogonal to it.

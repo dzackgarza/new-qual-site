@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be complex $n\times n$ matrices satisfying
 \[
 AB=BA^2,

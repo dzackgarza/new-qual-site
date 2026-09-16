@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the surface $Q$ in $\PP^3$ defined by $xy - zw = 0$; a **surface** is a variety of dimension $2$.
 
 1. Show that $Q$ is the Segre embedding of $\PP^1 \times \PP^1$ in $\PP^3$, for a suitable choice of coordinates.

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X = [-\pi, \pi]$ and consider the Lebesgue measure.
 Let $p$ be a real number with $1 \leq p < \infty$.
 Define for each integer $k \geq 1$ that $f_k(x) = \sin(kx)$ ($x \in X$).
@@ -33,9 +33,9 @@ Define for each integer $k \geq 1$ that $f_k(x) = \sin(kx)$ ($x \in X$).
 (b) Prove that the sequence $\{f_k\}$ does not converge to $0$ strongly in $L^p(X)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove weak convergence to $0$.
-::: proof
+::: {.proof}
 Let $p'$ be the conjugate exponent, with $p'=\infty$ when $p=1$. Since $X=[-\pi,\pi]$ has finite measure,
 \[
 L^{p'}(X)\subseteq L^1(X)
@@ -57,7 +57,7 @@ Thus every continuous linear functional on $L^p(X)$ tends to $0$ on $f_k$, and t
 :::
 
 <1>2. Show that the norms do not tend to zero.
-::: proof
+::: {.proof}
 For every integer $k\ge1$,
 \[
 \begin{aligned}

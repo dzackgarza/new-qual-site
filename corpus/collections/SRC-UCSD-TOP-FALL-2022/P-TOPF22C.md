@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the Klein bottle.
 Compute the cohomology ring $H^*(K \times S^1; \mathbb{Z}_2)$.
 :::

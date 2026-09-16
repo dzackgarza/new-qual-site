@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define the Riemann zeta function, including its analytic continuation.
 :::
 
-::: solution
+::: {.solution}
 For $\operatorname{Re}s>1$, the Riemann zeta function is defined by the absolutely convergent Dirichlet series
 \[
 \zeta(s)=\sum_{n=1}^{\infty}\frac1{n^s}.

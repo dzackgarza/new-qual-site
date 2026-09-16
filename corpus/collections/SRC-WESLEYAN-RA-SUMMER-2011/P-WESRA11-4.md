@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a finite Borel measure on $\mathbb R^d$.
 For $t>0$ set
 \[

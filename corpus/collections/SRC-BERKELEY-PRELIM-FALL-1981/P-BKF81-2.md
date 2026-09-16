@@ -23,7 +23,7 @@ audit:
   note: "Integrated DF along the segment between two solutions for contractivity, then differentiated W'=F(W) to obtain exponential velocity decay and convergence."
 ---
 
-::: problem
+::: {.problem}
 Consider $x_i'=F_i(x_1,\dots,x_n)$ with $F:\mathbb R^n\to\mathbb R^n$ of class $C^1$.
 
 (a) If $\langle DF(x)z,z\rangle\le0$ for all $x,z$, show that $\|U(t)-V(t)\|^2$ is decreasing for any two solutions $U,V$.
@@ -31,9 +31,9 @@ Consider $x_i'=F_i(x_1,\dots,x_n)$ with $F:\mathbb R^n\to\mathbb R^n$ of class $
 (b) If $W(t)$ is a solution for $t>0$ and $\langle DF(x)z,z\rangle\le-\|z\|^2$, show that $W(t)$ converges to some $C\in\mathbb R^n$ as $t\to\infty$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Express the difference $F(U)-F(V)$ by integrating the derivative of $F$ along a segment.
-::: proof
+::: {.proof}
 Fix a time at which two solutions $U,V$ are defined, and put
 $$
 Z=U-V.
@@ -51,7 +51,7 @@ $$
 :::
 
 <1>2. Under the hypothesis of part (a), the squared distance between two solutions is nonincreasing.
-::: proof
+::: {.proof}
 Since
 $$
 Z'=U'-V'=F(U)-F(V),
@@ -77,7 +77,7 @@ Thus $\|U(t)-V(t)\|^2$ is nonincreasing, proving part (a).
 :::
 
 <1>3. Under the stronger hypothesis, the velocity of a solution decays exponentially.
-::: proof
+::: {.proof}
 Assume now
 $$
 \langle DF(x)z,z\rangle\le-\|z\|^2.
@@ -109,7 +109,7 @@ $$
 :::
 
 <1>4. The trajectory is Cauchy and therefore converges.
-::: proof
+::: {.proof}
 If $s>t\ge t_0$, then step <1>3 yields
 $$
 \begin{aligned}

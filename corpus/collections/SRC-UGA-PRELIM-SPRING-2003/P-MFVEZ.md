@@ -22,7 +22,7 @@ Consider the line integral $\int_C 2x\,dx + x^2y\,dy$, where $C$ is the boundary
 Evaluate the line integral (a) directly and (b) by using Green's theorem.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The value depends on the orientation of $C$. For the positive (counterclockwise) orientation,
 \[
 \int_C 2x\,dx+x^2y\,dy=\frac12.

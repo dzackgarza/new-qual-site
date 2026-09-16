@@ -24,14 +24,14 @@ audit:
   note: "Enumerated every partition of 4 and 2, checked uniqueness rather than relying only on group exponents, and canceled all free-rank and prime-power multiplicity invariants."
 ---
 
-::: problem
+::: {.problem}
 (a) How many abelian groups of order 720 are there?
 
 (b) Let $L, M, N$ be finitely generated $\mathbb{Z}$-modules, such that $L \oplus M \cong L \oplus N$.
 Prove that $M \cong N$.
 :::
 
-::: solution
+::: {.solution}
 Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
 
 <1>1. A finitely generated abelian group $A$ has a decomposition
@@ -50,7 +50,7 @@ equivalent to isomorphism.
 <1>2. There are exactly $10$ abelian groups of order $720$, up to
 isomorphism.
 
-::: proof
+::: {.proof}
 Since $720=2^4\cdot3^2\cdot5$, finiteness forces $r_A=0$,
 and the exponents of the cyclic factors for each prime must sum
 to that prime's exponent in $720$.
@@ -82,7 +82,7 @@ multiplicities.
 <1>3. Finitely generated $\mathbb Z$-modules admit cancellation
 of a common direct summand.
 
-::: proof
+::: {.proof}
 Apply step <1>1 to $L,M,N$. Combining their decompositions shows
 that direct sums add the free ranks and every prime-power
 multiplicity. Thus the isomorphism $L\oplus M\cong L\oplus N$

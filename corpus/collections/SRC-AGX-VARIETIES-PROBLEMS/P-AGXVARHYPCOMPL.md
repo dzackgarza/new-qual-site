@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Why is the complement of a hypersurface an affine variety?
 
 What is its coordinate ring?

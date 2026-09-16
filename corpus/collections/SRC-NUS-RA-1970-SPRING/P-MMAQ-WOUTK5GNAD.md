@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 If $f$ is a nonnegative measurable function on $[0, \pi]$ and $\int_0^\pi f(x)^3~dx < \infty$, show that
 \[
 \lim_{\alpha\to\infty}\int_{\theset{x:f(x)>\alpha}}f(x)^2\,dx=0.

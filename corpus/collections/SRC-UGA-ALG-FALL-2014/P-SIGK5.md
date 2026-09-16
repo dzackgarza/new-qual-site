@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $T$ be a $5\times 5$ complex matrix with characteristic polynomial $\chi(x) = (x-3)^5$ and minimal polynomial $m(x) = (x-3)^2$.
 Determine all possible Jordan forms of $T$.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial shows that the only eigenvalue is $3$, with
 algebraic multiplicity $5$. Hence every Jordan block is a Jordan block for the
 eigenvalue $3$, and the sum of the block sizes is $5$.

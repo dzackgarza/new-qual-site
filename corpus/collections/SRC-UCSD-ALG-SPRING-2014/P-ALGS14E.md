@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove that an abelian group $A$ is injective as a $\mathbb{Z}$-module if and only if it is divisible.
 :::
 

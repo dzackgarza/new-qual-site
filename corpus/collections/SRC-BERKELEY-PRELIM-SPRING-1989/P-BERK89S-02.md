@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a field and let $A\in M_n(F)$. If
 \[
 A^m=0

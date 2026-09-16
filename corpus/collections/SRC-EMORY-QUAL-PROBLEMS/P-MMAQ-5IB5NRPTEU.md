@@ -29,11 +29,11 @@ audit:
   note: "Compared with Linear Algebra (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAL2, whose solution repeats this elementary-divisor count."
 ---
 
-::: problem
+::: {.problem}
 Determine the number of conjugacy classes of $16 \times 16$ matrices with entries in $\mathbb{Q}$ and minimal polynomial $(x^2+1)^2(x^3+2)^2$.
 :::
 
-::: solution
+::: {.solution}
 There are exactly $\boxed{4}$ conjugacy classes.
 Put $p=x^2+1$ and $q=x^3+2$.
 
@@ -43,7 +43,7 @@ $$
 \qquad 4a+2b+6c+3d=16.
 $$
 
-::: proof
+::: {.proof}
 The polynomial $p$ has no rational root and is
 irreducible. The polynomial $q$ is Eisenstein at
 two and is also irreducible [@DF04]. They are
@@ -90,7 +90,7 @@ the asserted bijection.
 
 Here $C_f$ is the companion matrix of the monic polynomial $f$.
 
-::: proof
+::: {.proof}
 Since $a\geq1$, one has $6c\leq12$, so $c=1$ or $2$.
 If $c=2$, the equation becomes $4a+2b+3d=4$;
 it forces $a=1,b=d=0$.

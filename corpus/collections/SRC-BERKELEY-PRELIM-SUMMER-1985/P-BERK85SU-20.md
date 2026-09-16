@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a field of characteristic $p>0$, with $p\ne3$. If $\alpha$ is a zero of
 \[
 f(x)=x^p-x+3

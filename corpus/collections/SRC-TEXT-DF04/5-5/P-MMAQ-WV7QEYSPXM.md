@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Assume that $K$ is a cyclic group, $H$ is an arbitrary group, and $\varphi_1$
 and $\varphi_2$ are homomorphisms from $K$ into $\Aut(H)$ such that
 $\varphi_1(K)$ and $\varphi_2(K)$ are conjugate subgroups
@@ -44,7 +44,7 @@ $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2} K$.
 > Show $\psi$ is bijective by construcing a 2-sided inverse.
 :::
 
-::: solution
+::: {.solution}
 Write $K=\langle k\rangle$. Choose $\sigma\in\Aut(H)$ such that
 \[
 \sigma\varphi_1(K)\sigma^{-1}=\varphi_2(K).
@@ -60,7 +60,7 @@ $\varphi_2(K)$, so for some $a\in\ZZ$,
 \sigma\varphi_1(x)\sigma^{-1}=\varphi_2(\alpha(x))
 \qquad(x\in K).
 \]
-::: proof
+::: {.proof}
 If $K$ is infinite, the injectivity of $\varphi_1$ and $\varphi_2$ makes both
 images infinite cyclic. Since $\varphi_2(k)^a$ generates $\varphi_2(K)$, we
 must have $a=\pm1$. Take $b=a$.
@@ -91,7 +91,7 @@ of $K$.
 \Psi(h,x)=(\sigma(h),\alpha(x)),
 \]
 is an isomorphism.
-::: proof
+::: {.proof}
 For $(h,x),(h',x')\in H\rtimes_{\varphi_1}K$,
 \[
 (h,x)(h',x')=(h\varphi_1(x)(h'),xx').

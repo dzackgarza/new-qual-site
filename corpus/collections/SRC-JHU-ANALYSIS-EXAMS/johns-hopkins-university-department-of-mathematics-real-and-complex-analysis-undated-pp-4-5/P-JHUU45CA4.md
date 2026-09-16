@@ -36,14 +36,14 @@ $$(f, g) = \int_U f(z) \overline{g(z)} \, dx \, dy, \quad \forall f, g \in A^2(U
 Prove that $A^2(U)$ is a Hilbert space when equipped with this inner product.
 :::
 
-::: solution
+::: {.solution}
 Write $dA=dx\,dy$ and $\|f\|_2=(\int_U|f|^2\,dA)^{1/2}$.
 If $U$ is empty, the space consists of the unique empty
 function and is the zero Hilbert space. Assume $U\ne\varnothing$.
 
 <1>1. The displayed formula is an inner product on $A^2(U)$.
 
-::: proof
+::: {.proof}
 Linear combinations remain holomorphic, and
 $|af+bg|^2\leq2|a|^2|f|^2+2|b|^2|g|^2$ proves their
 square integrability. Thus $A^2(U)$ is a complex vector space.
@@ -61,7 +61,7 @@ not just almost everywhere. This proves positive definiteness.
 
 <1>2. The $L^2$ norm controls uniform convergence on each compact subset.
 
-::: proof
+::: {.proof}
 Let $h$ be holomorphic on $U$, and suppose
 $\overline{D(a,r)}\subset U$. Cauchy's formula and
 Cauchy–Schwarz on each circle of radius $0<\rho<r$ give
@@ -88,7 +88,7 @@ Apply this to differences of elements of $A^2(U)$.
 
 <1>3. Every Cauchy sequence in $A^2(U)$ converges in its norm.
 
-::: proof
+::: {.proof}
 Let $(f_n)$ be such a sequence. Step <1>2 makes it
 uniformly Cauchy on each compact subset of $U$. Completeness
 of $\mathbb C$ gives a pointwise limit $f$, and the same

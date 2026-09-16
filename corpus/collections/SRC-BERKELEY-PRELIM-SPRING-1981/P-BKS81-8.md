@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:[0,1]\to\mathbb R$ be continuous and let $k\in\mathbb N$.
 Prove that there is a real polynomial $P$ of degree at most $k$ which minimizes
 \[

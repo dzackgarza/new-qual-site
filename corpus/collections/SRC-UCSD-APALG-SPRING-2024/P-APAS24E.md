@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give a complete statement and proof of Schur's Lemma, in the category of complex finite-dimensional representations of finite groups.
 :::
 
-::: solution
+::: {.solution}
 **Schur's Lemma.** Let $V$ and $W$ be finite-dimensional irreducible complex representations of a finite group $G$.
 
 1. Every $G$-equivariant linear map $T\colon V\to W$ is either $0$ or an isomorphism.

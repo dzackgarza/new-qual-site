@@ -26,7 +26,7 @@ audit:
   note: Reviewed the pre-existing lower-semicontinuity proof; normalized the solution block and made explicit that the arbitrary supremum may be extended-real valued.
 ---
 
-::: problem
+::: {.problem}
 a. Let $f: \RR \to \RR$.
 Prove that
 $$
@@ -43,9 +43,9 @@ $$
 
 > Note that $\mathcal{F}$ need not be a countable family.
 :::
-::: solution
+::: {.solution}
 <1>1. Open strict superlevel sets imply lower semicontinuity.
-::: proof
+::: {.proof}
 Assume $\{f>a\}$ is open for every $a\in\mathbb R$. Fix $x$ and $a<f(x)$. Since $x\in\{f>a\}$, every sequence $y_n\to x$ is eventually in $\{f>a\}$, so
 \[
 \liminf_{n\to\infty}f(y_n)\ge a.
@@ -57,7 +57,7 @@ f(x)\le\liminf_{y\to x}f(y).
 :::
 
 <1>2. Lower semicontinuity implies open strict superlevel sets.
-::: proof
+::: {.proof}
 Assume $f(x)\le\liminf_{y\to x}f(y)$ at every $x$. If $\{f>a\}$ were not open, there would be $x\in\{f>a\}$ and a sequence $y_n\to x$ with $f(y_n)\le a$. Then
 \[
 \liminf_{n\to\infty}f(y_n)\le a<f(x),
@@ -66,7 +66,7 @@ a contradiction. Thus $\{f>a\}$ is open.
 :::
 
 <1>3. Take an arbitrary supremum.
-::: proof
+::: {.proof}
 Let
 \[
 g(x)=\sup_{f\in\mathcal F}f(x),

@@ -33,12 +33,12 @@ audit:
 (b) Does there exist a surjective holomorphic map $f : \mathbb { C } \to H ?$ Either give an example or prove that one does not exist.
 :::
 
-::: solution
+::: {.solution}
 The answer to (a) is yes; the answer to (b) is no.
 
 <1>1. The polynomial $p(z)=z^2-z$ maps $H$ onto $\mathbb C$.
 
-::: proof
+::: {.proof}
 The restriction of this polynomial to $H$ is holomorphic.
 For any $w\in\mathbb C$, let $z_1,z_2$ be the two roots,
 counted with multiplicity, of $z^2-z-w=0$. The quadratic
@@ -51,7 +51,7 @@ onto the whole plane, not only onto an open subset.
 
 <1>2. Every holomorphic map from $\mathbb C$ to $H$ is constant.
 
-::: proof
+::: {.proof}
 For such a map $f$, put
 $$
 g(z)=\frac{f(z)-1}{f(z)+1}.

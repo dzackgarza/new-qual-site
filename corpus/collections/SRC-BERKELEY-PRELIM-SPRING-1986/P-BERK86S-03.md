@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $C$ be a positively oriented simple closed contour enclosing the points $0,1,\dots,k$. Evaluate, for $k=0,1,2,\dots$,
 \[
 I_k=\int_C\frac{dz}{z(z-1)\cdots(z-k)}

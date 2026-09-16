@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Prove that if $f: X \to Y$ is a continuous map between topological spaces and $X$ is connected, then the image $f(X)$ is connected in $Y$.
 :::
 
-::: solution
+::: {.solution}
 Give $f(X)$ the subspace topology. Suppose $f(X)$ were disconnected. Then there would be nonempty disjoint open subsets $U,V\subseteq f(X)$ with
 \[
 f(X)=U\cup V.

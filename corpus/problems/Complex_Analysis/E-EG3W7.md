@@ -27,7 +27,7 @@ Let $\Omega \subseteq \mathbb{C}$ be a connected open region.
 (2) Prove that if $f, g: \Omega \to \mathbb{C}$ are holomorphic functions satisfying $f'(z) = g'(z)$ for all $z \in \Omega$, then $f(z) - g(z) = C$ for some constant $C \in \mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is holomorphic, $f'$ is holomorphic.
 
 If the zeros of $f'$ had an accumulation point in $\Omega$, the identity theorem would give

@@ -35,13 +35,13 @@ b. Show that a non-abelian simple group $G$ has no proper subgroup of index $\le
 (You may assume without proof that the alternating group $A_5$ is the smallest non-abelian simple group.)
 :::
 
-::: remark
+::: {.remark}
 The proper-subgroup qualification in part (b) is necessary:
 every group is a subgroup of itself of index $1$. Thus
 the nontrivial assertion excludes indices $2,3,4$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For part (a), the Sylow count satisfies
 $$
 1\leq n_p\leq m,\qquad n_p\mid m,\qquad
@@ -55,7 +55,7 @@ Moreover, $n_p=1$ if and only if $G$ has a normal Sylow
 $p$-subgroup. In that case this Sylow subgroup is
 characteristic. If $n_p>1$, then $n_p\geq p+1$.
 
-::: proof
+::: {.proof}
 Existence, conjugacy, divisibility, and the congruence are
 the Sylow theorems [@DF04]. The bound $n_p\leq m$
 follows from the positive divisibility $n_p\mid m$.
@@ -77,7 +77,7 @@ $p+1$.
 <1>2. A nonabelian simple group has no proper subgroup
 of index at most $4$.
 
-::: proof
+::: {.proof}
 Suppose $H<G$ has finite index $n\leq4$. Properness
 implies $2\leq n\leq4$. The action on the left cosets
 defines a homomorphism

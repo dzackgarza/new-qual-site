@@ -30,11 +30,11 @@ Let $z_0$ be a point in $U$, and suppose that $f$ is a meromorphic function on $
 Prove that there is no holomorphic function $g : U \setminus \{z_0\} \to \mathbb{C}$ such that $e^{g(z)} = f(z)$ for all $z \in U \setminus \{z_0\}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The logarithmic derivative of $f$ has a nonzero integral
 around a sufficiently small circle about its pole.
 
-::: proof
+::: {.proof}
 Let $m\geq1$ be the order of the pole. The local Laurent
 expansion gives
 $$
@@ -57,7 +57,7 @@ $$
 
 <1>2. A holomorphic logarithm would force the same integral to vanish.
 
-::: proof
+::: {.proof}
 Suppose the required $g$ existed. On the punctured disk,
 differentiation of $e^g=f$ gives $f'/f=g'$. But $g'$ has
 the single-valued primitive $g$ there, so

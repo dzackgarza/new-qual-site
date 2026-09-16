@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find all residues of the following function by writing it as a sum of principal parts at its poles:
 \[
 f(z) = {z^3 \over z^2 + 1}
@@ -22,7 +22,7 @@ f(z) = {z^3 \over z^2 + 1}
 
 :::
 
-:::{.solution}
+::: {.solution}
 Use polynomial long division to write
 \[
 z^3 = z(z^2+1) - z \implies {z^3 \over z^2 + 1} = z - {z\over z^2 + 1}

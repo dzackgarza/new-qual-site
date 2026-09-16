@@ -15,7 +15,7 @@ audit:
   note: Checked against Liouville, FTA, and power series, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose f is analytic on the open unit disk.
 Determine, with proof, which of the following are possible.
 

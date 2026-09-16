@@ -22,13 +22,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a path-connected topological space whose integer homology groups in positive dimensions are:
 $$H_0(X; \mathbb{Z}) \cong \mathbb{Z}, \qquad H_k(X; \mathbb{Z}) \cong \mathbb{Z}/k\mathbb{Z} \quad \text{for all } k \ge 1.$$
 Compute the integer homology groups $H_n(\mathbb{RP}^2 \times X; \mathbb{Z})$ for all $n \ge 0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The integral homology of $\mathbb{RP}^2$ is
 $$
 H_i(\mathbb{RP}^2;\mathbb Z)\cong

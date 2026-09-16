@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 22. If $P$ is a simply connected region bounded by a polygon with vertices $a _ { 1 } , \ldots , a _ { n }$ and angles $\alpha _ { 1 } \pi , \ldots , \alpha _ { n } \pi$ , and $F$ is a conformal map of the disc D to $P ,$ then there exist complex numbers $B _ { 1 } , \ldots , B _ { n }$ on the unit circle, and constants $c _ { 1 }$ and $c _ { 2 }$ so that
 
 $$
@@ -25,7 +25,7 @@ $$
 [Hint: This follows from the standard correspondence between H and D and an argument similar to that used in the proof of Theorem 4.7.]
 :::
 
-::: solution
+::: {.solution}
 Put $\beta_j=1-\alpha_j$. Choose a Möbius map
 \[
 \phi:\mathbb H\longrightarrow\mathbb D

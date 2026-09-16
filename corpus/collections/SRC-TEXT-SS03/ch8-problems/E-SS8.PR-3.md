@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3.* The Schwarz-Pick lemma (see Exercise 13) is the infinitesimal version of an important observation in complex analysis and geometry.
 
 For complex numbers $w \in \mathbb{C}$ and $z \in \mathbb{D}$ we define the hyperbolic length of $w$ at $z$ by
@@ -71,7 +71,7 @@ $$
 (e) Find a formula for the hyperbolic distance between any two points in the unit disc.
 :::
 
-::: solution
+::: {.solution}
 The Schwarz--Pick lemma says
 \[
 \frac{|f'(z)|}{1-|f(z)|^2}\le \frac1{1-|z|^2}.

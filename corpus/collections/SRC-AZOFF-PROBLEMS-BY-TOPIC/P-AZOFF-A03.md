@@ -15,6 +15,6 @@ audit:
   note: Checked against Compactness, connectedness, and functions of one real variable, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Give an example of a function $f:\mathbb R\to\mathbb R$ that is differentiable everywhere but whose derivative $f'$ is not continuous at $0$.
 :::

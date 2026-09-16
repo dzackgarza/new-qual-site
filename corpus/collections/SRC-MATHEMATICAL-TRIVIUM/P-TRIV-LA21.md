@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 21, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the linear transformations A, B of the vector space $\mathbb { R } ^ { n }$ . Prove that $[ A , B ] \neq c E$ , where E is the identity matrix, $c \in \mathbb { R }$
 :::

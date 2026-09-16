@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A=\begin{pmatrix} 0 & -1 \\ 1 & -1 \end{pmatrix}.
@@ -25,7 +25,7 @@ A=\begin{pmatrix} 0 & -1 \\ 1 & -1 \end{pmatrix}.
 (c) Compute the Hilbert series of $\mathbb{C}[x,y]^G$.
 :::
 
-::: solution
+::: {.solution}
 First compute
 \[
 A^2=

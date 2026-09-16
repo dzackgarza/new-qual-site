@@ -25,7 +25,7 @@ audit:
   note: Replaced the mod-2 matrix argument by the ordinary Lefschetz-number computation over Q; the wedge has no positive-degree rational homology, so every self-map has Lefschetz number 1.
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove:
 
 Every map from $\RP^2 \lor \RP^2$ to itself has a fixed point.

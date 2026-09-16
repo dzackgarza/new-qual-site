@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A curve $X$ of genus $g$ has a nonspecial divisor $D$ of degree $d$ such that $\abs{D}$ has no base points if and only if $d \geq g+1$.
 :::

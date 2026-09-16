@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Now let $Y$ be a curve in $X = \PP_k^2$, and let $\hat{X}$ be the formal completion of $X$ along $Y$.
 
 a. Use the method of (Ex.

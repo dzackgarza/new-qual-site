@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f = \frac{1}{(z-1)(z-5)}$.
 
 (a) Prove that there is a sequence of rational functions $R_n(z)$ whose poles can only occur at 2 and 6 such that $$\lim_{n \to \infty} \sup_{3 \leq |z| \leq 4} |f(z) - R_n(z)| = 0.$$
@@ -21,7 +21,7 @@ Let $f = \frac{1}{(z-1)(z-5)}$.
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 K=\{z:3\le |z|\le4\}.

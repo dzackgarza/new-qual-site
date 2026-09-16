@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $1 < p < \infty$, and $\{f_n\}_n \subset L^p([0,1], m)$ be a sequence such that $M := \sup_n \|f_n\|_p < \infty$ and $\lim_{n \to \infty} \|f_n\|_1 = 0$.
 
 1. Prove that $\lim_{n \to \infty} \|f_n\|_r = 0$ for every $r \in [1, p)$.
@@ -32,9 +32,9 @@ Let $1 < p < \infty$, and $\{f_n\}_n \subset L^p([0,1], m)$ be a sequence such t
    Prove that $\lim_{n \to \infty} \int_0^1 f_n g\,dm = 0$ for every $g \in L^q([0,1], m)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Interpolate between $L^1$ and $L^p$.
-::: proof
+::: {.proof}
 Fix $r\in[1,p)$. Choose $\theta\in(0,1]$ so that
 \[
 \frac1r=\theta+\frac{1-\theta}{p}.
@@ -58,7 +58,7 @@ Thus
 :::
 
 <1>2. Prove weak convergence in $L^p$.
-::: proof
+::: {.proof}
 Let $g\in L^q([0,1])$ and fix $\varepsilon>0$. Since bounded functions are dense in $L^q([0,1])$, choose $h\in L^\infty([0,1])$ with
 \[
 \|g-h\|_q<\frac{\varepsilon}{2M}

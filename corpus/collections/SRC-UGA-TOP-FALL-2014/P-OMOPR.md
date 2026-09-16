@@ -26,7 +26,7 @@ audit:
   note: Verified the lifting-criterion proof using pi_1(RP^2)=Z/2, pi_1(S^1)=Z, and the universal cover R to S^1.
 ---
 
-::: problem
+::: {.problem}
 Prove that every continuous map $f : \RP^2 \to S^1$ is homotopic to a constant.
 
 > Hint: think about covering spaces.

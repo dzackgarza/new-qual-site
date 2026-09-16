@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What is a valuation on a field $K$ (specifically a discrete valuation)?
 (2) Define the $p$-adic valuation $v_p$ and the $p$-adic absolute value $|\cdot|_p$ on $\mathbb{Q}$.
 (3) Define the ring of $p$-adic integers $\mathbb{Z}_p$ and the field of $p$-adic numbers $\mathbb{Q}_p$ (both algebraically via inverse limits and analytically via completion).
 :::
 
-::: solution
+::: {.solution}
 A discrete valuation on a field $K$ is a map
 \[
 v:K\to\mathbb Z\cup\{\infty\}

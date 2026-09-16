@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X = V(xy-z^2)$ and compute the class group of $X$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\ts{U_i}_{i\in I} \covers X$ be an open cover of a topological space with $U_i \intersect U_j \neq \emptyset$ for every $i, j$.
 
 a. Show that if $U_i$ is connected for every $i$ then $X$ is connected.
@@ -22,7 +22,7 @@ a. Show that if $U_i$ is connected for every $i$ then $X$ is connected.
 b. Show that if $U_i$ is irreducible for every $i$ then $X$ is irreducible.
 :::
 
-::: solution
+::: {.solution}
 **Part a**:
 Suppose toward a contradiction that $X = X_1 {\textstyle\coprod} X_2$ with $X_i$ proper, disjoint, and open.
 Since $\ts{U_i} \covers X$, for each $j\in I$ this forces $U_j \subseteq X_1$ or $U_j \subseteq X_2$, since otherwise $U_j \intersect X_1 \intersect X_2$ would be nonempty.

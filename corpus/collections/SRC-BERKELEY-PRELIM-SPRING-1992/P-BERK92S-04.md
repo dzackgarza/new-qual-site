@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Show that every infinite closed subset of $\mathbb R^n$ is the closure of a countable set.
 :::

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 The source defines, for $f\in C([0,1],\mathbb R)$,
 \[
 \|f\|:=\int_0^1 f\,dm
@@ -40,9 +40,9 @@ For comparison, also answer the completeness question for the likely corrected f
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. The printed formula does not define a norm.
-::: proof
+::: {.proof}
 A norm must be nonnegative.
 For the continuous function $f\equiv-1$,
 \[
@@ -64,7 +64,7 @@ Therefore part 2 of the source, literally interpreted as completeness with respe
 :::
 
 <1>2. With the absolute value inserted, the formula is a norm but $C([0,1])$ is not complete.
-::: proof
+::: {.proof}
 The functional
 \[
 \|f\|_1=\int_0^1|f(x)|\,dx

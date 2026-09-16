@@ -36,7 +36,7 @@ Show that the intersection of the elements of $\mathcal{B}$ belongs to $\mathcal
 (c) Show $D$ is connected.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that in a compact Hausdorff space $X$, two points $x, y \in X$ belong to the same quasicomponent if and only if they belong to the same connected component.
 
 <1>1. Part (a): Chains in $\mathcal{A}$ have lower bounds in $\mathcal{A}$.

@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Take a quadratic extension of a field of characteristic 0. Is it Galois?
 Take a degree 2 extension on top of that.
 Does it have to be Galois over the base field?
 What statement in group theory can you think of that reflects this?
 :::
 
-::: solution
+::: {.solution}
 Let $K/F$ be quadratic with $\operatorname{char}F=0$. If $K=F(\alpha)$ and the minimal polynomial of $\alpha$ is
 \[
 x^2+bx+c,

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_0^\infty \frac{x^{1/2}}{1+x^2}\,dx
@@ -20,7 +20,7 @@ Evaluate
 by complex-analytic methods.
 :::
 
-::: solution
+::: {.solution}
 Use the branch
 \[
 z^{1/2}=e^{\frac12(\log|z|+i\arg z)},

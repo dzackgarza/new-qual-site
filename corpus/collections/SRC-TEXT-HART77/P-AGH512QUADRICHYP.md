@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume $\operatorname{char} k \neq 2$, and let $f$ be a homogeneous polynomial of degree $2$ in $x_0, \ldots, x_n$.
 
 1. Show that after a suitable linear change of variables, $f$ can be brought into the form $f = x_0^2 + \cdots + x_r^2$ for some $0 \leq r \leq n$.

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the arithmetic genus of $y^3 = x^2 z$.
 :::

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 1. $\displaystyle \int \frac {\cos(x)}{\sin ^2 (x)} ~dx = \color {blue} {- \csc (x)}$
 
 - **Solution:** $\frac {\cos (x)}{\sin ^2 (x)} = \cot (x) \csc (x)$

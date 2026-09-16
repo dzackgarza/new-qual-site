@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 33, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 A helix is written in a parametric form as follows,
 
 $$

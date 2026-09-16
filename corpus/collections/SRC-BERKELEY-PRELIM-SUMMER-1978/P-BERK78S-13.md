@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R=F[x]$ be the polynomial ring over a field $F$, and let $p_1,\dots,p_n\in R$. Prove that
 \[
 \gcd(p_1,\dots,p_n)=1

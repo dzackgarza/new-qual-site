@@ -19,14 +19,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite simple group.
 Assume that every proper subgroup of $G$ is abelian.
 Prove that then $G$ is cyclic of prime order.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. We first prove the special case of Burnside's normal \(p\)-complement theorem needed below: if \(H\) is finite, \(P\in\operatorname{Syl}_p(H)\), and
 \[
 P\subseteq Z(N_H(P)),

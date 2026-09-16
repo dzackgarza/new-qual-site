@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. If $P \in Y$ and $Q \in Z$ are analytically isomorphic plane curve singularities, show that the multiplicities $\mu_P(Y)$ and $\mu_Q(Z)$ are the same.
 
 2. Let $f = f_r + f_{r+1} + \cdots \in k[[x,y]]$, and suppose the leading form $f_r$ of $f$ factors as $f_r = g_s h_t$, where $g_s$ and $h_t$ are homogeneous of degrees $s$ and $t$ respectively and have no common linear factor.

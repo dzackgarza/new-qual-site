@@ -24,7 +24,7 @@ a. Prove that if $f$ and $g$ are surjective (onto), then so is $f \circ g$.
 b. Prove or give a counterexample: If $g$ is not surjective, then $f \circ g$ is not surjective.
 :::
 
-::: solution
+::: {.solution}
 If $f$ and $g$ are surjective and $c\in C$, choose $b\in B$ with $f(b)=c$, then choose $a\in A$ with $g(a)=b$. Hence $(f\circ g)(a)=c$, so $f\circ g$ is surjective.
 
 The converse claim is false. Let

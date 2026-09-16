@@ -20,7 +20,7 @@ audit:
 Prove that the line integral $\displaystyle\int_C (x+y^3)\,dx + (e^y+3xy^2)\,dy$ is path-independent; i.e., it depends only on the endpoints of $C$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the vector field $\mathbf{F}(x, y) = (x + y^3)\mathbf{i} + (e^y + 3xy^2)\mathbf{j}$ is conservative on $\mathbb{R}^2$ by explicitly finding a scalar potential function $f(x, y)$, thereby establishing path-independence.
 
 <1>1. Construction of a potential function $f(x, y)$:

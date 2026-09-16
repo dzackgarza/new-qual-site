@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\{f_j\}$ be a sequence of functions in $AC([0,1])$ such that $f_j' \to g$ in $L^1([0,1], dx)$ and $\lim_{j \to \infty} f_j(0) = c$.
 
 (a) Show that $f(x) = \lim_{j \to \infty} f_j(x)$ exists for all $x \in [0,1]$.
@@ -31,9 +31,9 @@ Let $\{f_j\}$ be a sequence of functions in $AC([0,1])$ such that $f_j' \to g$ i
 (b) Show that $f \in AC([0,1])$ and $f' = g$ a.e. ($m$).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Identify the pointwise limit explicitly.
-::: proof
+::: {.proof}
 Since each $f_j$ is absolutely continuous,
 \[
 f_j(x)=f_j(0)+\int_0^x f_j'(t)\,dt.
@@ -58,7 +58,7 @@ The right side tends to $0$, independently of $x$. Hence $f_j\to F$ uniformly, s
 :::
 
 <1>2. Prove absolute continuity and identify the derivative.
-::: proof
+::: {.proof}
 Because $g\in L^1([0,1])$, the function
 \[
 x\longmapsto c+\int_0^x g(t)\,dt

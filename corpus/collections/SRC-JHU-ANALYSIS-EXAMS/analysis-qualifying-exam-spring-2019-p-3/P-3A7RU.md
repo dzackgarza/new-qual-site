@@ -28,14 +28,14 @@ audit:
 Show that the punctured unit disk $\{z:0<|z|<1\}$ and the annulus $\{z:1<|z|<2\}$ cannot be conformally equivalent.
 :::
 
-::: solution
+::: {.solution}
 Write $D=\{z:|z|<1\}$ and $A=\{w:1<|w|<2\}$.
 Suppose there were a biholomorphism $f:D\setminus\{0\}\to A$
 with holomorphic inverse $g:A\to D\setminus\{0\}$.
 
 <1>1. The map $f$ extends holomorphically to $D$, with its value at zero in $A$.
 
-::: proof
+::: {.proof}
 The bound $|f|<2$ makes the singularity at zero removable
 [@SS03]. Denote the extension by $F$. Continuity gives
 $1\leq|F(0)|\leq2$. The extension is nonconstant since
@@ -53,7 +53,7 @@ Thus $1<|F(0)|<2$, so $F(0)\in A$.
 
 <1>2. The inverse map gives a contradiction at the added point.
 
-::: proof
+::: {.proof}
 For every $z\in D\setminus\{0\}$, one has
 $g(F(z))=g(f(z))=z$. Since $F(0)\in A$, the map
 $g$ is continuous at $F(0)$. Letting $z\to0$ therefore gives

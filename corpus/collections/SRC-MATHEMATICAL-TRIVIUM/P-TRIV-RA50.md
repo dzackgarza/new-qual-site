@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 50, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \left\{ \begin{array} { l l } { f _ { 0 } , r \leqslant r _ { 0 } , } \\ { 0 , r > r _ { 0 } } \end{array} \right.$ in R3.
 :::

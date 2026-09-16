@@ -15,7 +15,7 @@ audit:
   note: Transcribed from the retained PDF; the extracted markdown contains a different Problem 9.
 ---
 
-:::{.problem}
+::: {.problem}
 Find the Jordan canonical form over $\mathbb R$ of
 \[
 \begin{pmatrix}

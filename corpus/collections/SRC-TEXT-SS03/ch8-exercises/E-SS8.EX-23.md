@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 23. If
 
 $$
@@ -29,7 +29,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Factor
 \[
 1-z^n=\prod_{k=0}^{n-1}(1-\omega^k z),

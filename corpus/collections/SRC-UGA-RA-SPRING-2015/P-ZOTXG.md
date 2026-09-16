@@ -27,7 +27,7 @@ audit:
   note: Corrected the sign in the translation identity used for uniform continuity.
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 
 1. Show that the convolution $f\ast g$ is well-defined, bounded, and uniformly continuous on $\RR$.
@@ -37,9 +37,9 @@ Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 \frac{d}{d x}(f * g)=f *\left(\frac{d}{d x} g\right)
 \]
 :::
-::: solution
+::: {.solution}
 <1>1. The convolution is well defined and bounded.
-::: proof
+::: {.proof}
 Let $M:=\|g\|_\infty$. For every $x\in\mathbb R$,
 \[
 \int_{\mathbb R}|f(y)g(x-y)|\,dy
@@ -52,7 +52,7 @@ Thus $(f*g)(x)$ is absolutely convergent and
 :::
 
 <1>2. The convolution is uniformly continuous.
-::: proof
+::: {.proof}
 For $h\in\mathbb R$, a change of variables gives
 \[
 (f*g)(x+h)
@@ -72,7 +72,7 @@ Translations are strongly continuous on $L^1(\mathbb R)$, so the right-hand side
 :::
 
 <1>3. Differentiate when $g\in C^1$ and $g'$ is bounded.
-::: proof
+::: {.proof}
 For $h\ne0$,
 \[
 \frac{(f*g)(x+h)-(f*g)(x)}h

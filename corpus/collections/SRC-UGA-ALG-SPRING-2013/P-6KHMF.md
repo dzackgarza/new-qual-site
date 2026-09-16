@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity $1 \ne 0$.
 
 (a) Define a **maximal ideal** and prove that $R$ contains at least one maximal ideal.
@@ -28,7 +28,7 @@ $$
 Suppose that $I = \operatorname{Ann}(\mu)$ for some non-zero element $\mu \in M \setminus \{0\}$ is maximal among all proper annihilator ideals $\{\operatorname{Ann}(m) : m \in M, \, m \ne 0\}$. Prove that $I$ is a prime ideal of $R$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Define maximal ideals and prove their existence via Zorn's Lemma in (a), characterize non-units via containment in maximal ideals in (b), and prove that maximal element-annihilators are prime ideals in (c).
 
 <1>1. Part (a): Definition of maximal ideal and existence via Zorn's Lemma.

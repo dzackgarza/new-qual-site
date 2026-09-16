@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B,C,D,E,F\in\mathbb R$. Show that
 \[
 Ax^2+2Bxy+Cy^2+2Dxz+2Eyz+Fz^2

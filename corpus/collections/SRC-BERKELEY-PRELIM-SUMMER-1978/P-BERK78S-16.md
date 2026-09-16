@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $T:\mathbb C^n\to\mathbb C^n$ be linear.
 
 1. Prove that $T$ is diagonalizable if, for every $\lambda\in\mathbb C$,

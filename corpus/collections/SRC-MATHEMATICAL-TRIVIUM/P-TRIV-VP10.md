@@ -19,7 +19,7 @@ audit:
   note: Cleaned Variational Principle Problem 10 against page 20 of the source PDF and added a remark on the stray plus sign printed in its boundary condition.
 ---
 
-::: problem
+::: {.problem}
 Consider the following problem
 $$
 \begin{cases}

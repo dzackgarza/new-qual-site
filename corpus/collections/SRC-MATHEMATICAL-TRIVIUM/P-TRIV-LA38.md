@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 38, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the matrix $A = \left[ \begin{array} { l l } { a } & { b } \\ { c } & { d } \end{array} \right] , a , b , c , d \in \mathbb { R }$ , det $A = 1$ . It transforms the basis vectors ${ \vec { e } } _ { 1 } = \left[ { \begin{array} { l } { 1 } \\ { 0 } \end{array} } \right] , { \vec { e } } _ { 2 } = \left[ { \begin{array} { l } { 0 } \\ { 1 } \end{array} } \right]$ into ${ \vec { g } } _ { 1 } = { \Big [ } { \frac { a } { c } } { \Big ] } , { \vec { g } } _ { 2 } = { \Big [ } { \frac { b } { d } } { \Big ] }$ . One can obtain a useful decomposition of A by making an inverse transformation in three steps.
 
 (a) Construct the rotation matrix $R ^ { - 1 }$ that sends $\vec { g } _ { 1 }$ to $R ^ { - 1 } ( \vec { g } _ { 1 } ) \lVert \vec { e } _ { 1 }$ . How does it act on $\vec { g } _ { 2 } ?$

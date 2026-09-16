@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Define the Borel sigma-algebra on $\mathbb R$.
 :::
 
-::: solution
+::: {.solution}
 The Borel sigma-algebra on $\mathbb R$ is the smallest sigma-algebra containing every open subset of $\mathbb R$:
 \[
 \boxed{\mathcal B(\mathbb R)=\sigma(\{U\subset\mathbb R:U\text{ open}\}).}

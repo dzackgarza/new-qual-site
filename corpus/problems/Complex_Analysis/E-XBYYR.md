@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 a. 
 State the standard Schwarz reflection principle involving reflection across the real axis.
 
@@ -31,7 +31,7 @@ Show that $f$ must be constant.
 
 :::
 
-:::{.solution}
+::: {.solution}
 **Part 1**:
 Let $\Omega = \Omega^+ \union I \union \Omega^-$ be a region symmetric about $\RR$.
 If $f$ is holomorphic on $\Omega^+$ extending continuously to $I$ and real valued on $I$, then $f$ extends to a holomorphic function $F$ on all of $\Omega$ defined on $\Omega^-$ by $F(z) = \bar{f(\bar{z})}$.

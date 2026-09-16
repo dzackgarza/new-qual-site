@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Classify all abelian groups of order 36 up to isomorphism.
 
 For the rest of the problem, assume that $G$ is a non-abelian group of order 36. You may assume that the only subgroup of order 12 in $S_4$ is $A_4$ and that $A_4$ has no subgroup of order 6.
@@ -26,7 +26,7 @@ For the rest of the problem, assume that $G$ is a non-abelian group of order 36.
 (d) Show that the dihedral group of order 36 is a non-abelian group of order 36 whose Sylow 2-subgroup is not normal.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Classify abelian groups of order 36, prove that non-abelian groups with normal Sylow 2-subgroups admit an $A_4$ quotient, prove direct product decomposition, and exhibit $D_{18}$ as a non-abelian counterexample to Sylow 2 normality.
 
 <1>1. Part (a): Classification of abelian groups of order 36.

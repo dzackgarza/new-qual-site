@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any curve $X$, the **algebraic fundamental group** $\pi_1(X)$ is defined as $\cocolim \operatorname{Gal}(K'/K)$, where $K$ is the function field of $X$, and $K'$ runs over all Galois extensions of $K$ such that the corresponding curve $X'$ is étale over $X$ (III, Ex. 10.3).
 
 Thus, for example, $\pi_1(\PP^1)=1$. (See 2.5.3)

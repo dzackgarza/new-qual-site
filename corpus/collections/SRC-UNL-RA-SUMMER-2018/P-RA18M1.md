@@ -26,7 +26,7 @@ audit:
   note: Repaired the estimate in part (i), which incorrectly replaced floor(n/2) by n/2 for odd n.
 ---
 
-:::{.problem}
+::: {.problem}
 Determine whether the following sequences converge and carefully justify your claims:
 $$(i)\quad x_n=\frac{2n\cdot n!}{n^n};\qquad
 (ii)\quad y_n=\sum_{k=1}^{n}\frac{\cos(k!)}{k(k+1)}.$$

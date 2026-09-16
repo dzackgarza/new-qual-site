@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Recall from (II, Ex. 6.10) the definition of the Grothendieck group $K(X)$ of a noetherian scheme $X$.
 
 a. Let $X$ be a projective scheme over a field $k$, and let $\mco_X(1)$ be a very ample invertible sheaf on $X$. Show that there is a (unique) additive homomorphism

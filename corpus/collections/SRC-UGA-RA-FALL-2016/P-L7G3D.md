@@ -36,7 +36,7 @@ G \definedas \theset{x\in X \suchthat x\in E_n \text{ for only finitely many  } 
 Show that $G \in \mathcal M$ and $\mu(G) = 0$.
 :::
 
-::: solution
+::: {.solution}
 
 Set
 \[

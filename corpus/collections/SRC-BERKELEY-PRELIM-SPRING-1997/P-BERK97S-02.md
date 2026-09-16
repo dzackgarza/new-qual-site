@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $(M,d)$ be a metric space and let $C\subset M$ be nonempty and closed. Define
 \[
 f(x)=\inf\{d(x,y):y\in C\}.

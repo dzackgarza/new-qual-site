@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Exhibit a sequence of functions that is not equicontinuous.
 :::
 
-:::{.solution}
+::: {.solution}
 The family $f_k(x) = x^k$ is not equicontinuous, since fixing $x_0 \in (0, 1)$ we have 
 \[
 \abs{f_k(x_0) - f_k(1)} \convergesto{k\to \infty} 1 > \eps

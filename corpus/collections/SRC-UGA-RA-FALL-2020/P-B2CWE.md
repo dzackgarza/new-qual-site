@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $\varphi \in L^1(\mathbb{R})$ with
 $$
 \int_{\mathbb{R}} \varphi(x) \, dx = \alpha.
@@ -38,7 +38,7 @@ $$
 *(You may use without proof the fact that for all $f \in L^1(\mathbb{R})$, $\lim_{y \to 0} \int_{\mathbb{R}} |f(x-y) - f(x)| \, dx = 0$.)*
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the boundedness of the family of convolution operators $A_\delta$ on $L^1(\mathbb{R})$ via Tonelli's Theorem in (a), and prove $L^1$ convergence to $\alpha f$ via the Dominated Convergence Theorem on translations in (b).
 
 <1>1. Part (a): Boundedness of $A_\delta f$ in $L^1(\mathbb{R})$.

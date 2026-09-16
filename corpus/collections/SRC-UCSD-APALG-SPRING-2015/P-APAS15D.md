@@ -13,13 +13,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $X \colon G \to \mathrm{GL}_n(\mathbb{C})$ be a complex matrix representation of $G$.
 For any $g \in G$, prove that the matrix $X(g)$ is diagonalizable.
 Is this still true if the group $G$ is infinite?
 :::
 
-::: solution
+::: {.solution}
 Let \(g\in G\). Because \(G\) is finite, \(g\) has finite order, say
 \[
 g^m=e.

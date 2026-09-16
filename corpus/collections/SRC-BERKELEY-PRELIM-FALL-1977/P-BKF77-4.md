@@ -23,11 +23,11 @@ audit:
   note: "Used finiteness of GL(V) over a finite field to force a repetition among positive powers of the invertible operator."
 ---
 
-::: problem
+::: {.problem}
 Let $P$ be a linear operator on a finite-dimensional vector space over a finite field. Show that if $P$ is invertible, then $P^n=I$ for some positive integer $n$.
 :::
 
-::: solution
+::: {.solution}
 Let the underlying field have $q$ elements and let
 $$
 d=\dim V.
@@ -40,7 +40,7 @@ elements, so in particular there are only finitely many functions
 $V\to V$, and hence only finitely many invertible linear operators on $V$.
 
 <1>1. The powers of $P$ lie in a finite group.
-::: proof
+::: {.proof}
 Because $P$ is invertible, every power
 $$
 P^k\qquad(k\ge0)
@@ -52,7 +52,7 @@ $$
 :::
 
 <1>2. Two powers must coincide.
-::: proof
+::: {.proof}
 The infinite sequence
 $$
 I,P,P^2,P^3,\ldots
@@ -68,7 +68,7 @@ $$
 :::
 
 <1>3. Cancel the smaller power.
-::: proof
+::: {.proof}
 Multiplying
 $$
 P^i=P^j

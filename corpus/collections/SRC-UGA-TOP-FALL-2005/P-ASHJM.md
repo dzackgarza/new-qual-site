@@ -27,7 +27,7 @@ audit:
   note: Verified the orientable and nonorientable cellular homology computations and the genus-two identifications.
 ---
 
-::: problem
+::: {.problem}
 State the classification theorem for surfaces (compact, without boundary, but not necessarily orientable).
 For each surface in the classification, indicate the structure of the first homology group and the value of the Euler characteristic.
 

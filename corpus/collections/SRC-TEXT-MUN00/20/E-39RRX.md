@@ -49,7 +49,7 @@ is contained in $X$; it is called the Hilbert cube.
 Compare the four topologies that $H$ inherits as a subspace of $X$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Analyze and compare the four topologies (box, $\ell^2$, uniform, product) on the Hilbert space $\ell^2$, on the subspace of finite sequences $\mathbb{R}^\infty$, and on the Hilbert cube $H$.
 
 <1>1. Part (a): Inclusions on $X = \ell^2$.

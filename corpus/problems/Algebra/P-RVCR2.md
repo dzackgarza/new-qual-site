@@ -31,7 +31,7 @@ $$a^n + c_{n-1}a^{n-1} + \cdots + c_1 a + c_0 = 0.$$
 (3) Show that if $a$ is not a zero-divisor in $R$, then $a$ is invertible in $R$.
 :::
 
-::: solution
+::: {.solution}
 Since $\dim_kR=d$, the $d+1$ elements
 \[
 1,a,a^2,\dots,a^d

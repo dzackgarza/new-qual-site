@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 24, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Show that the translation ${ \vec { x } }  { \vec { x } } + { \vec { a } }$ ,where ${ \vec { x } } , { \vec { a } } \in \mathbb R ^ { n }$ , is not a linear transformation in $\mathbb { R } ^ { n }$
 :::

@@ -35,11 +35,11 @@ Show that if $[F: K] < \infty$, then the following conditions are equivalent:
 3. $F$ is a splitting field over $K$ of some polynomial $f\in K[x]$ whose irreducible factors are separable.
 :::
 
-::: solution
+::: {.solution}
 Assume throughout that $[F:K]<\infty$.
 
 <1>1. Condition 1 implies condition 2.
-::: proof
+::: {.proof}
 Suppose $F/K$ is Galois. Then $F/K$ is separable and normal.
 
 Choose finitely many elements $\alpha_1,\ldots,\alpha_r\in F$ generating $F$
@@ -59,7 +59,7 @@ this is condition 2.
 :::
 
 <1>2. Condition 2 implies condition 3.
-::: proof
+::: {.proof}
 Suppose $F/K$ is separable and $F$ is the splitting field of
 $f\in K[x]$. Let $p\in K[x]$ be an irreducible factor of $f$. Since $f$ splits
 over $F$, the polynomial $p$ has a root $\alpha\in F$. Because $F/K$ is
@@ -69,7 +69,7 @@ of $f$ is separable, giving condition 3.
 :::
 
 <1>3. Condition 3 implies that $F/K$ is normal.
-::: proof
+::: {.proof}
 Suppose $F$ is the splitting field over $K$ of a polynomial $f\in K[x]$ whose
 irreducible factors are separable. Every splitting-field extension is normal:
 if an irreducible polynomial over $K$ has one root in $F$ among the roots used
@@ -79,7 +79,7 @@ $K$ is normal over $K$. Hence $F/K$ is normal.
 :::
 
 <1>4. Condition 3 implies that $F/K$ is separable.
-::: proof
+::: {.proof}
 Write the distinct irreducible factors of $f$ as
 \[
 p_1,\ldots,p_s.
@@ -91,13 +91,13 @@ extension of $K$. Therefore $F/K$ is separable.
 :::
 
 <1>5. Condition 3 implies condition 1.
-::: proof
+::: {.proof}
 By <1>3 and <1>4, $F/K$ is both normal and separable. Since it is finite by
 hypothesis, it is Galois.
 :::
 
 <1>6. The three conditions are equivalent.
-::: proof
+::: {.proof}
 The implications <1>1, <1>2, and <1>5 give
 \[
 1\Longrightarrow2\Longrightarrow3\Longrightarrow1.

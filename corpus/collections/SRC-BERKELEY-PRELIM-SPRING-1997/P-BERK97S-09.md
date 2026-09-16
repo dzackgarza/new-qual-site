@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R=M_n(F)$ be the ring of $n\times n$ matrices over a field $F$. If $S$ is a ring and
 \[
 h:R\to S

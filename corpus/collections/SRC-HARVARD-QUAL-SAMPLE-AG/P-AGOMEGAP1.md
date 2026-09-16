@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Calculate $H^0(\PP^1, \Omega^1)$.
 :::

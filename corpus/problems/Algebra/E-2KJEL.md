@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Determine $\operatorname{JCF}(B)$ for
 \[
 B :=
@@ -35,7 +35,7 @@ B :=
 
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 B=B_1\oplus B_2,

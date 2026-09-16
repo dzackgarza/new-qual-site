@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the structure of the multiplicative group $(\mathbb{F}_9)^\times$?
 Construct $\mathbb{F}_9$ as a quotient ring and find an explicit primitive generator of $(\mathbb{F}_9)^\times$.
 :::
 
-::: solution
+::: {.solution}
 The polynomial
 \[
 x^2+1\in\mathbb F_3[x]

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that
 $\displaystyle{f(z)=-\frac{1}{2}\left(z+\frac{1}{z}\right)}$ is a
 conformal map from the half disc 
@@ -25,7 +25,7 @@ to $\HH \da \{z=x+iy:\ y>0\}$.
 :::
 
 
-:::{.solution}
+::: {.solution}
 Consider the images of arcs $\gamma_R(t) \da Re^{it}$ for $t\in [0, \pi]$ and $0<R<1$, which fill out the upper half disc:
 \[
 f(Re^{it}) = - {1\over 2}\qty{ \qty{R+R\inv}\cos(t) + i(R-R\inv)\sin(t) } \da H_R\cos(t) + V_R\sin(t)

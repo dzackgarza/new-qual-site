@@ -23,7 +23,7 @@ audit:
   note: "Proved necessity on eigenvectors and sufficiency blockwise from the binomial formula for powers of Jordan blocks."
 ---
 
-::: problem
+::: {.problem}
 Let $T$ be an $n\times n$ complex matrix. Show that
 \[
 \lim_{k\to\infty}T^k=0
@@ -31,9 +31,9 @@ Let $T$ be an $n\times n$ complex matrix. Show that
 if and only if every eigenvalue of $T$ has absolute value less than $1$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $T^k\to0$, then every eigenvalue has absolute value less than $1$.
-::: proof
+::: {.proof}
 Let $\lambda$ be an eigenvalue of $T$, and choose a nonzero eigenvector
 $v$ with
 $$
@@ -62,7 +62,7 @@ $$
 :::
 
 <1>2. Reduce the converse to one Jordan block.
-::: proof
+::: {.proof}
 Assume every eigenvalue of $T$ has absolute value less than $1$. Over
 $\mathbb C$, write
 $$
@@ -77,7 +77,7 @@ powers tending to zero.
 :::
 
 <1>3. Powers of a Jordan block with $|\lambda|<1$ tend to zero.
-::: proof
+::: {.proof}
 Let
 $$
 J_\lambda=\lambda I+N
@@ -124,7 +124,7 @@ $$
 :::
 
 <1>4. Conclude for $T$.
-::: proof
+::: {.proof}
 Every Jordan block of $J$ has powers tending to zero by step <1>3, so
 $$
 J^k\to0.

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Let $E \subseteq [0,1]$ be Lebesgue measurable.
 Suppose there exists a fixed $\epsilon > 0$ such that $|E \cap (a,b)| \geq \epsilon|a - b|$ for all intervals $(a,b) \subseteq [0,1]$.
 Show that one must have $|E| = 1$.
@@ -32,9 +32,9 @@ Show that one must have $|E| = 1$.
 Explain why this example does not contradict part (a) above.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a) by the Lebesgue density theorem.
-::: proof
+::: {.proof}
 Suppose, toward a contradiction, that
 \[
 |E|<1.
@@ -68,7 +68,7 @@ contradicting the density limit above. Therefore
 :::
 
 <1>2. Construct a dense measurable set of intermediate measure.
-::: proof
+::: {.proof}
 Enumerate the rationals in $[0,1]$ as
 \[
 \{q_n:n\ge1\}.
@@ -98,7 +98,7 @@ Therefore
 :::
 
 <1>3. Explain why this does not contradict part (a).
-::: proof
+::: {.proof}
 Part (a) requires one fixed constant $\varepsilon>0$ such that
 \[
 |E\cap(a,b)|\ge\varepsilon|a-b|

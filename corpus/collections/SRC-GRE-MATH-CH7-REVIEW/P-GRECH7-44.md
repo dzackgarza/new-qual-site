@@ -25,6 +25,6 @@ A fair coin is flipped $10$ times. What's the probability of getting between $40
 (E) $53\%$
 :::
 
-::: remark
+::: {.remark}
 As printed, ten flips cannot produce forty heads; the book's solution treats one hundred flips.
 :::

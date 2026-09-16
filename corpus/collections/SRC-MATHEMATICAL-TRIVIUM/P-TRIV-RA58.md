@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 58, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the rubber cord with one end attached to a tree and another - to a car moving away from the tree with the velocity $V = 1 0 m / s$ At some point an ant appears on the fixed end of the cord and starts running along it with the velocity $v = 1 0 c m / s$ Will it reach the car?
 Assume the cord can be stretched up to arbitrary length.
 :::

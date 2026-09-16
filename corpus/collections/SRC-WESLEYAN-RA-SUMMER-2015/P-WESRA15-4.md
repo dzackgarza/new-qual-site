@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md. Flash renders the interval delimiters as braces; the irrational-subset and measure-$>3/4$ requirements determine $[0,1]$.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 E=[0,1]\setminus\mathbb Q.

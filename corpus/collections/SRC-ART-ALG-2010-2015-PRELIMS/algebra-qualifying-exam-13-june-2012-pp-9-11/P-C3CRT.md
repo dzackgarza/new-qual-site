@@ -26,7 +26,7 @@ audit:
   note: "Checked both ideal inclusions, the explicit lift of arbitrary residues, and the well-defined inverse on quotient classes, including an ideal equal to R."
 ---
 
-::: problem
+::: {.problem}
 Suppose that $R$ is a commutative ring with identity and $I$ and $J$ are ideals of $R$.
 Suppose that $I + J = R$.
 
@@ -36,14 +36,14 @@ b. Prove that $R/(IJ)$ is isomorphic to $R/I \oplus R/J$.
 (This is the Chinese Remainder Theorem).
 :::
 
-::: solution
+::: {.solution}
 Choose $u\in I$ and $v\in J$ such that $u+v=1$.
 The finite direct sum in the statement carries componentwise
 addition and multiplication, so it is the product ring $R/I\times R/J$.
 
 <1>1. The ideals $IJ$ and $I\cap J$ are equal.
 
-::: proof
+::: {.proof}
 Every product $ij$, with $i\in I$ and $j\in J$, belongs to
 both ideals. Their intersection is closed under finite sums,
 so $IJ\subseteq I\cap J$.
@@ -61,7 +61,7 @@ r\longmapsto(r+I,r+J)
 $$
 is a surjective ring homomorphism with kernel $IJ$.
 
-::: proof
+::: {.proof}
 Both components are quotient homomorphisms, so $\phi$ preserves
 addition, multiplication, and the identity. Its kernel is
 $I\cap J$, which equals $IJ$ by step <1>1.
@@ -81,7 +81,7 @@ $$
 \end{aligned}
 $$
 
-::: proof
+::: {.proof}
 The map $\overline\phi$ is well defined because $IJ\subseteq I\cap J$.
 It is a ring homomorphism. Changing $a$ by an element $i\in I$
 changes $av+bu$ by $iv\in IJ$; changing $b$ by $j\in J$

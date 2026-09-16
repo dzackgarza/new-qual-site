@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mcf\in \Sh(X)$ and $s\in \mcf(U)$ be a section, and define
 \[
 \supp s &\da \ts{p\in U \st s_p \neq 0} \subseteq U \\
@@ -24,7 +24,7 @@ where $s_p$ denotes the germ of $s$ in the stalk $\mcf_p$.
 Show that $\supp s$ is closed in $U$ but $\supp \mcf$ need not be closed in $X$.
 :::
 
-::: solution
+::: {.solution}
 **$\supp(s)$ is closed**:
 
 - Write

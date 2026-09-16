@@ -15,6 +15,6 @@ audit:
   note: Checked against Problem 7 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Prove that no two of the unit disk $\mathbb D$, the complex plane $\mathbb C$, and the Riemann sphere are conformally equivalent.
 :::

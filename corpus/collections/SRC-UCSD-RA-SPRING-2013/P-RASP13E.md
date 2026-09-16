@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space.
 Assume that $f : X \to \mathbb{R}$ and $f_n : X \to \mathbb{R}$ ($n = 1, 2, \ldots$) are all $\mu$-measurable and that $f_n \to f$ in measure.
 Let $p$ be a real number such that $1 \leq p < \infty$.
@@ -33,9 +33,9 @@ Assume there exists $g \in L^p(\mu)$ such that $|f_n| \leq g$ on $X$ for all $n 
 Prove that all $f$ and $f_n$ ($n = 1, 2, \ldots$) are in $L^p(\mu)$ and that $f_n \to f$ in the $L^p(\mu)$-norm.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Each $f_n$ belongs to $L^p$, and $f$ is dominated by $g$ almost everywhere.
-::: proof
+::: {.proof}
 Since $|f_n|\le g$ and $g\in L^p$,
 \[
 \|f_n\|_p^p\le\|g\|_p^p<\infty,
@@ -54,7 +54,7 @@ almost everywhere. Hence $f\in L^p$ as well.
 :::
 
 <1>2. Every subsequence has a further subsequence converging to $f$ in $L^p$.
-::: proof
+::: {.proof}
 Let $(f_{n_k})$ be any subsequence. It still converges to $f$ in measure, so there is a further subsequence $(f_{n_{k_j}})$ with
 \[
 f_{n_{k_j}}(x)\to f(x)
@@ -77,7 +77,7 @@ Thus every subsequence has a further subsequence converging to $f$ in $L^p$.
 :::
 
 <1>3. Conclude convergence of the full sequence.
-::: proof
+::: {.proof}
 Suppose, toward a contradiction, that
 \[
 \|f_n-f\|_p\not\to0.

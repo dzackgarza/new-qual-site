@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Consider the circle in the form of the abelian group $T = \mathbb{R}/\mathbb{Z}$.
 Show that there is a long exact sequence relating homology with coefficients in $\mathbb{Z}$, $\mathbb{R}$ and $T$ and use it to compute $H_*(\mathbb{RP}^\infty; T)$.
 :::

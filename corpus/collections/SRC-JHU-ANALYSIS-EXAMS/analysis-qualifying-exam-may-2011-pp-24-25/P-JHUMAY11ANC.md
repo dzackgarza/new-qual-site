@@ -29,14 +29,14 @@ audit:
    Let $P \in U$ and suppose that $f ( P ) = P$ . Prove that $| f ^ { \prime } ( P ) | \leq 1$
 :::
 
-::: hint
+::: {.hint}
 Consider the iterates $f_n=f\circ\cdots\circ f$ with $n$ factors.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The derivatives of all iterates at $P$ have a common upper bound.
 
-::: proof
+::: {.proof}
 Since $U$ is open and contains $P$, choose $r>0$ with
 $\overline{D(P,r)}\subset U$. Boundedness of $U$ gives
 a constant $M>0$ such that $|z|\leq M$ for every $z\in U$.
@@ -55,7 +55,7 @@ $$
 
 <1>2. The chain rule forces $|f'(P)|\leq1$.
 
-::: proof
+::: {.proof}
 Let $a=f'(P)$. Because every iterate fixes $P$, the
 chain rule gives $f_{n+1}'(P)=f'(P)f_n'(P)$. Starting
 with $f_1'(P)=a$, induction yields $f_n'(P)=a^n$.

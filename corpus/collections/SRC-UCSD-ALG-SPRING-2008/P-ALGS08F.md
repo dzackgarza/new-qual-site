@@ -24,7 +24,7 @@ audit:
   note: "Verified both directions: finite [L:K] gives a finite-type K-algebra, while finite generation of xL[x] forces finitely many x-coefficients to span L over K."
 ---
 
-::: problem
+::: {.problem}
 If $K$ is a subfield of $L$, show that the ring $S$ of all polynomials over $L$ with constant coefficient in $K$ is Noetherian if and only if $L$ is finite-dimensional over $K$.
 :::
 

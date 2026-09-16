@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $F$ is a field.
 Let $m \leq n$ be two positive integers and
 \[

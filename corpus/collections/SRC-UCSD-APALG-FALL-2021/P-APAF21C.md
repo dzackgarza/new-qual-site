@@ -21,7 +21,7 @@ audit:
   note: Completed the rectangular zero-block similarity statement in part (e).
 ---
 
-::: problem
+::: {.problem}
 (a) Define $A^{1/2}$ for a positive semidefinite matrix $A \in M_n(\mathbb{C})$.
 (b) Define $|A|$ for any matrix $A \in M_{m,n}(\mathbb{C})$.
 (c) Prove that the eigenvalues of $|A|$ are the singular values of $A$.

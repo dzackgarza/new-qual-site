@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring, with unity, not equal to zero.
 If $M$ and $N$ are $R$-modules, call a multilinear map $f: M \times M \times M \to N$ cyclically trilinear if $$f(a, b, c) = f(b, c, a) \qquad \text{for all } a, b, c \in M.$$
 

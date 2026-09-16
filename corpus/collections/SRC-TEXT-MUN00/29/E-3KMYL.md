@@ -26,7 +26,7 @@ Let $\ts{X_\alpha}$ be an indexed family of nonempty spaces.
 (b) Prove the converse, assuming the Tychonoff theorem.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the necessary and sufficient conditions for the Cartesian product $\prod_{\alpha \in J} X_\alpha$ of non-empty topological spaces to be locally compact.
 
 <1>1. Part (a): Necessity.

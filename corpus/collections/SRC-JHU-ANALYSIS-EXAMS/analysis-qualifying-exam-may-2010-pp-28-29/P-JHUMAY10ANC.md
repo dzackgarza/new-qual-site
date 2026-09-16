@@ -41,7 +41,7 @@ $$
 b) Show that H is a closed subspace of $L ^ { 2 } ( D )$ and hence is a Hilbert space.
 :::
 
-::: solution
+::: {.solution}
 Write $dA=dx\,dy$. We identify each function in $\mathcal H$
 with its almost-everywhere class in $L^2(D)$. This is
 injective: a continuous function nonzero at a point is
@@ -49,7 +49,7 @@ bounded away from zero on a small disk of positive area,
 so cannot be zero almost everywhere.
 
 <1>1. A disk contained in $D$ gives an $L^2$ point-evaluation estimate.
-::: proof
+::: {.proof}
 For $\overline{D(a,r)}\subset D$ and $0<\rho<r$,
 Cauchy's formula at the center and Cauchy–Schwarz give
 $$
@@ -73,7 +73,7 @@ check, and any positive $C_K$ suffices. This proves (a).
 :::
 
 <1>2. An $L^2$ limit of elements of $\mathcal H$ has a holomorphic representative.
-::: proof
+::: {.proof}
 Suppose $f_n\in\mathcal H$ and $f_n\to F$ in $L^2(D)$.
 Choose a measurable representative of $F$. The sequence
 is Cauchy in $L^2$, so step <1>1 applied to $f_n-f_m$
@@ -93,7 +93,7 @@ to $\mathcal H$ and represents the given $L^2$ limit.
 :::
 
 <1>3. The space $\mathcal H$ is a closed linear subspace and is complete.
-::: proof
+::: {.proof}
 Linear combinations of its functions are holomorphic
 and square integrable, so it is a linear subspace of
 $L^2(D)$. Step <1>2 proves that this subspace is closed.

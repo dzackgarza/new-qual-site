@@ -28,7 +28,7 @@ audit:
 Show that every non-identity element in a free group $F$ has infinite order.
 :::
 
-::: solution
+::: {.solution}
 Let $F=F(X)$ be free on $X$, and let $1\ne g\in F$. We show that $g^m\ne1$
 for every integer $m\ne0$.
 
@@ -37,7 +37,7 @@ for every integer $m\ne0$.
 g=uvu^{-1},
 \]
 where $v$ is nonempty and cyclically reduced.
-::: proof
+::: {.proof}
 Start with the reduced word for $g$. If its first letter is inverse to its last
 letter, remove those two letters and record the first letter in $u$. Repeating
 this operation must terminate because the word is finite. The remaining word
@@ -47,7 +47,7 @@ reduced and $g=uvu^{-1}$.
 :::
 
 <1>2. For every integer $m\ge1$, the word $v^m$ is reduced and nonempty.
-::: proof
+::: {.proof}
 Each copy of $v$ is reduced. At a junction between two consecutive copies, the
 last letter of one copy is followed by the first letter of the next. Since $v$
 is cyclically reduced, these letters are not inverse, so no cancellation occurs
@@ -55,7 +55,7 @@ at any junction. Hence $v^m$ is a reduced word of positive length.
 :::
 
 <1>3. For every integer $m\ge1$, one has $g^m\ne1$.
-::: proof
+::: {.proof}
 Using <1>1,
 \[
 g^m=(uvu^{-1})^m=uv^m u^{-1}.
@@ -66,7 +66,7 @@ identity.
 :::
 
 <1>4. Therefore $g$ has infinite order.
-::: proof
+::: {.proof}
 If $g$ had finite order, then $g^m=1$ for some $m\ge1$, contradicting <1>3.
 Negative exponents add no further possibility since $g^m=1$ with $m<0$ implies
 $g^{-m}=1$.

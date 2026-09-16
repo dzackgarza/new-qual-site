@@ -16,12 +16,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Find all complex numbers $z = x + iy$, $(x, y \in \mathbb{R})$, such that $e^z = 2i$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Write $z=x+iy$ with $x,y\in\mathbb R$. Then
 \[
 e^z=e^x(\cos y+i\sin y).

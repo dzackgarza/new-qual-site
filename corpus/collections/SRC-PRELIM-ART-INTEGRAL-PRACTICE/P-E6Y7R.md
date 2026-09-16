@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int x\arcsin\!\left(\frac1x\right)\,dx
@@ -39,7 +39,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 For the first integral, integration by parts with $u=\arcsin(1/x)$ and $dv=x\,dx$ gives
 \[
 \boxed{\int x\arcsin\!\left(\frac1x\right)\,dx

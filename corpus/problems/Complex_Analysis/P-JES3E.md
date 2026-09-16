@@ -19,7 +19,7 @@ audit:
   date: 2026-08-19
 ---
 
-::: problem
+::: {.problem}
 Show that the function $u=u(x,y)$ given by
 $$
 u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\quad \text{for}\ n\in {\mathbf N}

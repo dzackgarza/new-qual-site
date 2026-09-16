@@ -24,17 +24,17 @@ audit:
   note: "Checked the coset action without presupposing normality, both image-order divisibilities, and the final equality of the subgroup with the action kernel."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group and let $p$ be the smallest prime divisor of $|G|$.
 Suppose that $H$ is a subgroup of $G$ of index $p$.
 Prove that $H$ is normal.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The action on left cosets gives a homomorphism
 $\rho:G\to S_p$ whose kernel $K$ is contained in $H$.
 
-::: proof
+::: {.proof}
 There are exactly $p$ left cosets of $H$. Left multiplication
 $g\cdot(xH)=(gx)H$ is well defined and permutes these cosets.
 Composition agrees with multiplication in $G$, giving $\rho$.
@@ -46,7 +46,7 @@ This construction uses cosets as a set, not a quotient group.
 
 <1>2. The image of $\rho$ has order exactly $p$.
 
-::: proof
+::: {.proof}
 Let $m=|\rho(G)|$. The first isomorphism theorem and Lagrange's
 theorem give $m\mid |G|$ and $m\mid p!$ [@DF04].
 Every prime dividing $m$ must therefore be at least $p$, by
@@ -58,7 +58,7 @@ Transitivity and orbit-stabilizer give $p\mid m$, hence $m=p$.
 
 <1>3. The subgroup $H$ equals $K$ and is normal.
 
-::: proof
+::: {.proof}
 The index of $K$ is $[G:K]=|\rho(G)|=p$. Since $K\subseteq H$,
 index multiplication gives
 $$

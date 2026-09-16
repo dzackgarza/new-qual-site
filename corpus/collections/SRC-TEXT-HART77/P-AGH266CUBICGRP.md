@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the nonsingular plane cubic curve $y^2 z = x^3 - xz^2$ of (6.10.2).
 
 a. Show that three points $P, Q, R$ of $X$ are collinear if and only if $P + Q + R = 0$ in the group law on $X$.

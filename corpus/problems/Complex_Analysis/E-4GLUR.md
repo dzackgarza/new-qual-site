@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $\sin(z)/z$ has no poles.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Heuristic: $\sin(z)$ has a zero of order 1, so the $z$ in the denominator exactly cancels it.
 Explicitly, this is evident from the Laurent expansion about zero:
 \[

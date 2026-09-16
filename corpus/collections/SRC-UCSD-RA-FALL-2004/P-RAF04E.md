@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose that $\{\nu_n\}_{n=1}^\infty$ are complex measures and $\mu$ is a finite positive measure on a measurable space $(X, \mathcal{M})$.
 Further let $|\nu_n|$ denote the total variation measure associated to $\nu_n$.
 
@@ -34,9 +34,9 @@ Further let $|\nu_n|$ denote the total variation measure associated to $\nu_n$.
 (b) If $|\nu_n(A)| \leq \mu(A)$ and $\nu(A) := \lim_{n \to \infty} \nu_n(A)$ exists for all $A \in \mathcal{M}$, then $\nu : \mathcal{M} \to \mathbb{C}$ is a complex measure.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a).
-::: proof
+::: {.proof}
 For every $A\in\mathcal M$,
 \[
 |\nu_n(A)|\le |\nu_n|(A)\le |\nu_n|(X).
@@ -74,7 +74,7 @@ Hence $\nu$ is a complex measure.
 :::
 
 <1>2. Prove finite additivity and domination in part (b).
-::: proof
+::: {.proof}
 Since $|\nu_n(A)|\le\mu(A)$ for every $n$,
 \[
 |\nu(A)|\le\mu(A)
@@ -94,7 +94,7 @@ Thus $\nu$ is finitely additive.
 :::
 
 <1>3. Upgrade finite additivity to countable additivity.
-::: proof
+::: {.proof}
 Let $(A_k)_{k\ge1}$ be pairwise disjoint, let
 \[
 A=\bigcup_{k=1}^\infty A_k,

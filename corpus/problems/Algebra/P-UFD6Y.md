@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 Z(S_3)=\{e\}.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $z\in Z(S_3)$. If $z$ is a transposition, then it does not commute with a different transposition; for example,
 \[
 (12)(23)\ne(23)(12).

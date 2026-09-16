@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 The following result is important in studying deformations of nonsingular varieties.
 Let $k$ be an algebraically closed field, let $A$ be a finitely generated $k\dash$algebra such that $\Spec A$ is a nonsingular variety over $k$.
 Let

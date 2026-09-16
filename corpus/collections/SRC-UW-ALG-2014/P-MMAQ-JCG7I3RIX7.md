@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 - Let $G$ be a group (not necessarily finite) that contains a subgroup of index $n$.
   Show that $G$ contains a `\textit{normal}`{=tex} subgroup $N$ such that $n\leq[G:N]\leq n!$
 

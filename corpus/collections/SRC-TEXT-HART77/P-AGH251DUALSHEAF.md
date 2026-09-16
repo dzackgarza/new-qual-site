@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \OO_X)$ be a ringed space, and let $\mce$ be a locally free $\OO_X\dash$module of finite rank.
 We define the **dual** of $\mce$, denoted $\mce\dual$, to be the sheaf $\sheafhom_{\OO_X}(\mce, \OO_X)$.
 

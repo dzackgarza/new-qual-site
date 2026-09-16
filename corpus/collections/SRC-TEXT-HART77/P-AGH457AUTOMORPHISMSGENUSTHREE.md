@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Any automorphism of a curve of genus 3 is induced by an automorphism of $\PP^2$ via the canonical embedding.
 
 b. \* Assume $\characteristic k \neq 3$. If $X$ is the curve given by

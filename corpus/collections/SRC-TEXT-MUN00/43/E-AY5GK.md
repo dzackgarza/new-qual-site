@@ -37,7 +37,7 @@ Imbed $U$ in $X \times \mathbb{R}$ by setting $f(x) = x \times \phi(x)$.]
 [Hint: Let $A$ be the intersection of the open sets $U_n$, for $n \in \mathbb{Z}_+$. Consider the diagonal imbedding $f(a) = (a, a, \ldots)$ of $A$ into $\prod U_n$.] Conclude that the irrationals are topologically complete.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that topological completeness is preserved under closed subspaces, countable products, open subspaces, and $G_\delta$ subsets, and conclude that $\mathbb{R} \setminus \mathbb{Q}$ is topologically complete.
 
 <1>1. Part (a): Closed subspaces of topologically complete spaces are topologically complete.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Several variables, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 State the most general (real) version of the implicit theorem you know and outline how it can be proved from the corresponding version of the (real) inverse function theorem.
 :::

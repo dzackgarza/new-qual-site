@@ -23,7 +23,7 @@ audit:
   note: Reviewed and normalized the Cauchy--Schwarz/dyadic proof, replacing the legacy big-O notation by the required explicit harmonic lower bound.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be a non-negative Lebesgue measurable function on $[1, \infty)$.
 
 a.
@@ -55,10 +55,10 @@ for all $t\in [1, \infty)$, then
 
 :::
 
-::: solution
+::: {.solution}
 
 <1>1. Prove the product-of-averages inequality.
-::: proof
+::: {.proof}
 If either $\int_a^b f=\infty$ or $\int_a^b 1/f=\infty$, the asserted inequality is automatic in the extended sense. Otherwise $f>0$ almost everywhere on $[a,b]$. By Cauchy--Schwarz,
 \[
 (b-a)^2
@@ -75,7 +75,7 @@ Dividing by $(b-a)^2$ gives
 :::
 
 <1>2. Apply the inequality on dyadic intervals.
-::: proof
+::: {.proof}
 Take
 \[
 a=2^k,\qquad b=2^{k+1},\qquad k\ge0.

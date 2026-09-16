@@ -18,7 +18,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Write down "True" or "False" for each of the following statements.
 No justification needed.
 

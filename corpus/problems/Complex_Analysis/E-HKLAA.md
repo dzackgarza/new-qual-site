@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find a conformal map
 
 1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb H$
@@ -34,7 +34,7 @@ Find a conformal map
 
 :::
 
-:::{.solution}
+::: {.solution}
 **Part 1**:
 this is a bigon with vertices $0, \infty$, so send $0\to\infty$ with $1/z$.
 Orient $i\RR$ and the circle $S$ positively, note that both will be mapped to generalized circles.
@@ -82,12 +82,12 @@ Take $z\mapsto {z+1\over z-1}$ to obtain
 - $0\mapsto -1$
 
 
-:::{.claim}
+::: {.claim}
 $z_3\mapsto w_0$ where $\arg(w_0) = -3\pi/4$
 :::
 
 
-:::{.proof}
+::: {.proof}
 Let $z_3 = ic$ where $c\da \sqrt{2} -1$, then
 \[
 f(z_3) 

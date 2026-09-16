@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positive integer relatively prime to $q$ ($\gcd(n, q) = 1$), and let $\omega$ be a primitive $n$-th root of unity in an algebraic closure $\overline{F}$. Let $E = F(\omega) = F[\omega]$ and $k = [E : F]$.
 
 (a) Prove that $n$ divides $q^k - 1$.
@@ -24,7 +24,7 @@ Let $F = \mathbb{F}_q$ be a finite field with $q$ elements. Let $n$ be a positiv
 (c) Prove that $m = k$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the extension degree $[F(\omega) : F]$ for a primitive $n$-th root of unity over $\mathbb{F}_q$ equals the multiplicative order of $q$ modulo $n$.
 
 <1>1. Part (a): $n$ divides $q^k - 1$.

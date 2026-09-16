@@ -28,7 +28,7 @@ audit:
 Show that if $u\in F$ is algebraic of odd degree over $K$, then so is $u^2$, and moreover $K(u) = K(u^2)$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 n=[K(u):K],
@@ -36,7 +36,7 @@ n=[K(u):K],
 which is odd by hypothesis.
 
 <1>1. The element $u^2$ is algebraic over $K$.
-::: proof
+::: {.proof}
 Since $u$ is algebraic over $K$, the extension $K(u)/K$ is finite. The element
 $u^2$ belongs to the finite extension $K(u)$, so it is algebraic over $K$.
 :::
@@ -45,7 +45,7 @@ $u^2$ belongs to the finite extension $K(u)$, so it is algebraic over $K$.
 \[
 [K(u):K(u^2)]\le2.
 \]
-::: proof
+::: {.proof}
 The element $u$ is a root of
 \[
 X^2-u^2\in K(u^2)[X].
@@ -55,7 +55,7 @@ which is exactly the asserted inequality.
 :::
 
 <1>3. The degree $[K(u):K(u^2)]$ divides the odd integer $n$.
-::: proof
+::: {.proof}
 By <1>1, the tower
 \[
 K\subseteq K(u^2)\subseteq K(u)
@@ -72,7 +72,7 @@ Thus $[K(u):K(u^2)]$ divides $n$.
 \[
 [K(u):K(u^2)]=1.
 \]
-::: proof
+::: {.proof}
 By <1>2 this degree is either $1$ or $2$. By <1>3 it divides the odd integer
 $n$, so it cannot equal $2$.
 :::
@@ -81,7 +81,7 @@ $n$, so it cannot equal $2$.
 \[
 K(u)=K(u^2).
 \]
-::: proof
+::: {.proof}
 The inclusion $K(u^2)\subseteq K(u)$ is immediate. By <1>4 the extension has
 degree $1$, hence the two fields are equal.
 :::

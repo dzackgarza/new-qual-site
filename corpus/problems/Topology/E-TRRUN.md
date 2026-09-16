@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Show that a compact Hausdorff space is is metrizable iff it is second-countable.
 :::
 

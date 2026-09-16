@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 If $f: \DD_R(a)\to\DD_M(0)$ with $f(a) = 0$, then 
 \[
 \abs{f(z)}\leq {M\over R}\abs{z-a}
@@ -20,7 +20,7 @@ If $f: \DD_R(a)\to\DD_M(0)$ with $f(a) = 0$, then
 
 :::
 
-:::{.solution}
+::: {.solution}
 Set $g(z) \da {f(Rz + a) \over M}$, then $g: \DD\to \DD$ with $g(0) = f(a)/M = 0$, so unwinding Schwarz yields
 \[
 \abs{g(z)} \leq \abs{z} 

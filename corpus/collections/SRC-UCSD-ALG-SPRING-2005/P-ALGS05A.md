@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $T: M_n(\mathbb{R}) \to M_n(\mathbb{R})$ be the transformation such that
 $T(X) = \frac{1}{2}(X - X^T)$.
 

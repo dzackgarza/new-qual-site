@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define
 \[  
 G \definedas \theset{z\in \CC\suchthat \Re(z) > 0, \, \abs{z-1} > 1}
@@ -26,7 +26,7 @@ Find all of the injective conformal maps $G\to \DD$.
 These may be expressed as compositions of maps, but explain why this list is complete.
 :::
 
-::: solution
+::: {.solution}
 Interpreting a conformal map $G\to\mathbb D$ here as a biholomorphism onto
 $\mathbb D$, first construct one such map. Put
 \[

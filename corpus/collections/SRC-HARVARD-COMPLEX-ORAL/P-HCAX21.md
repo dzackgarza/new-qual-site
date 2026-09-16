@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the uniqueness statement in the Riemann mapping theorem after fixing the image of one point and the argument of the derivative there.
 :::
 
-::: solution
+::: {.solution}
 Let $\Omega\subsetneq\mathbb C$ be simply connected, fix $z_0\in\Omega$, and suppose
 \[
 f,g:\Omega\longrightarrow\mathbb D

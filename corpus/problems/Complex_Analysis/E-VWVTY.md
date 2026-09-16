@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find the radius of convergence for 
 \[
 f(z) \da \sum_{k\in \ZZ} 2^{-\abs{k}}z^k
@@ -22,7 +22,7 @@ f(z) \da \sum_{k\in \ZZ} 2^{-\abs{k}}z^k
 
 :::
 
-:::{.solution}
+::: {.solution}
 Break this up into a principal part at $z=0$ and a holomorphic part:
 \[
 f(z) = f_1(z) + f_2(z) \da \sum_{k\geq 1} 2^{-k}z^{-k} + \sum_{k\geq 0} 2^{-k}z^k

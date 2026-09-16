@@ -15,7 +15,7 @@ audit:
   note: Checked against Compactness, connectedness, and functions of one real variable, Problem 5, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md. Flash emits a control character where the prime in $f'$ occurs in the final sentence; the correction is determined by the displayed uniform-differentiability definition and the stated equivalence.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be differentiable on $[a,b]$.
 Say that $f$ is *uniformly differentiable* if for every $\varepsilon>0$ there exists $\delta>0$ such that
 \[

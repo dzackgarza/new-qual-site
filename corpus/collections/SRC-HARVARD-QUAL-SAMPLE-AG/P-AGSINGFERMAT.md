@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the singularities, if any, of the curve in $\PP^2$ defined by
 \[
 X^3 + Y^3 + Z^3 = 3CXYZ .

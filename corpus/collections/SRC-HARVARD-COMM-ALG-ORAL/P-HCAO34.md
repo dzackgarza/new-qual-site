@@ -25,27 +25,27 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a Noetherian integrally closed domain whose Krull dimension is not one.
 :::
 
-::: solution
+::: {.solution}
 Take $R=k[x,y]$ for any field $k$.
 
 <1>1. The ring $R$ is Noetherian.
-::: proof
+::: {.proof}
 The field $k$ is Noetherian, and Hilbert's basis theorem applied twice shows
 that $k[x,y]$ is Noetherian.
 :::
 
 <1>2. The ring $R$ is integrally closed.
-::: proof
+::: {.proof}
 A polynomial ring over a field is a unique factorization domain. Every UFD is
 integrally closed in its fraction field.
 :::
 
 <1>3. The Krull dimension of $R$ is at least $2$, hence is not $1$.
-::: proof
+::: {.proof}
 There is a strict chain of prime ideals
 \[
 (0)\subsetneq(x)\subsetneq(x,y).

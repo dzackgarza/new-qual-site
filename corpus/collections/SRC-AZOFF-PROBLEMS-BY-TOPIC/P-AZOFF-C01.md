@@ -15,6 +15,6 @@ audit:
   note: Checked against Conformal mapping, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map of the unit disk onto the upper half plane.
 :::

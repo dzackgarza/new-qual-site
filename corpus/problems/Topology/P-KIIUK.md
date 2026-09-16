@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Show that if $X\mapsvia{f} X^n$ is not surjective, then $f$ is nullhomotopic.
 :::
 

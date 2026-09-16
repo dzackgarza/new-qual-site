@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 
 - Let $R$ be a commutative ring with no nonzero nilpotent elements.
   Show that the only units in the polynomial ring $R[x]$ are the units of $R$, regarded as constant polynomials.
@@ -27,7 +27,7 @@ audit:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 f(x)=a_0+a_1x+\cdots+a_nx^n\in R[x]

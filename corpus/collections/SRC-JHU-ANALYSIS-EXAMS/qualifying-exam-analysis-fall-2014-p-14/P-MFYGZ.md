@@ -48,9 +48,9 @@ $$
 where A is a constant depending only on d and $\begin{array} { r } { | | f | | _ { L ^ { 1 } ( \mathbb { R } ^ { d } ) } = \int _ { \mathbb { R } ^ { d } } | f ( x ) | d x . } \end{array}$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Associate a good ball to every point of the superlevel set.
-::: proof
+::: {.proof}
 Fix $\alpha>0$ and write
 \[
 E_\alpha:=\{x\in\mathbb R^d:M_f(x)>\alpha\}.
@@ -74,7 +74,7 @@ In particular the radii of all such balls are uniformly bounded in terms of $\al
 :::
 
 <1>2. Apply the $5r$ covering lemma.
-::: proof
+::: {.proof}
 Apply the $5r$ covering lemma to the family $\{B_x:x\in E_\alpha\}$. There is a finite or countable pairwise disjoint subfamily $\{B_j\}$ such that
 \[
 E_\alpha\subseteq\bigcup_j 5B_j,
@@ -90,7 +90,7 @@ m(E_\alpha)
 :::
 
 <1>3. Use disjointness and the defining average inequality.
-::: proof
+::: {.proof}
 For each selected ball,
 \[
 \alpha\,m(B_j)<\int_{B_j}|f|.

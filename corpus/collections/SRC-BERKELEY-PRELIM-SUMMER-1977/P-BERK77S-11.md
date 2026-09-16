@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f(x,t)$ be a $C^1$ function satisfying
 \[
 \frac{\partial f}{\partial x}=\frac{\partial f}{\partial t}.

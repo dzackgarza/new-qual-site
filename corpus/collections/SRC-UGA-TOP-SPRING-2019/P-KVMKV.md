@@ -24,11 +24,11 @@ audit:
   note: Verified that the infinite discrete metric space is bounded and complete while its singleton open cover has no finite subcover.
 ---
 
-::: problem
+::: {.problem}
 Is every complete bounded metric space compact? If so, give a proof; if not, give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Disprove the claim by exhibiting an infinite discrete metric space and proving it is complete and bounded but not compact.
 
 <1>1. Counterexample definition:

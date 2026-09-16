@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Construct a non-abelian group of order $39$ or prove that no such group exists.
 :::
 

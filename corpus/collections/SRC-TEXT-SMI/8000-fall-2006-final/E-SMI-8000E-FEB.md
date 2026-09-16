@@ -41,9 +41,9 @@ Define what is meant by:
 (vi) the Galois group $\operatorname{Gal}_k(E)$, i.e. $\operatorname{Aut}_k(E)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Algebraic element.
-::: proof
+::: {.proof}
 An element $c\in E$ is **algebraic over $k$** if there exists a nonzero
 polynomial
 $$
@@ -57,7 +57,7 @@ If no such polynomial exists, $c$ is transcendental over $k$.
 :::
 
 <1>2. Minimal polynomial.
-::: proof
+::: {.proof}
 If $c$ is algebraic over $k$, its **minimal polynomial over $k$** is the
 unique monic polynomial
 $$
@@ -72,7 +72,7 @@ is divisible by $m_{c,k}$.
 :::
 
 <1>3. Separable algebraic extension.
-::: proof
+::: {.proof}
 Assume $E/k$ is algebraic. The extension is **separable** if every
 $c\in E$ has a separable minimal polynomial over $k$, i.e. the roots of
 $m_{c,k}$ in an algebraic closure are all distinct.
@@ -90,7 +90,7 @@ for every such irreducible $f$.
 :::
 
 <1>4. Normal algebraic extension.
-::: proof
+::: {.proof}
 Assume $E/k$ is algebraic and place $E$ inside an algebraic closure
 $\overline k$. The extension is **normal** if every irreducible polynomial
 $$
@@ -110,7 +110,7 @@ Thus the $k$-conjugates of all elements of $E$ remain inside $E$.
 :::
 
 <1>5. Algebraic closure.
-::: proof
+::: {.proof}
 An extension $E/k$ is an **algebraic closure of $k$** if
 
 1. $E/k$ is algebraic, and
@@ -121,7 +121,7 @@ every element of $E$ is algebraic over $k$.
 :::
 
 <1>6. Galois group $\operatorname{Gal}_k(E)$.
-::: proof
+::: {.proof}
 The group
 $$
 \operatorname{Gal}_k(E)=\operatorname{Aut}_k(E)

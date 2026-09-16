@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A scheme is **normal** if all of its local rings are integrally closed domains.
 Let $X$ be an integral scheme.
 For each open affine subset $U = \Spec A$ of $X$, let $\tilde{A}$ be the integral closure of $A$ in its quotient field, and let $\tilde{U} = \Spec \tilde{A}$.

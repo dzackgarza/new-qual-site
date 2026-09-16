@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $c_0,\dots,c_{n-1}\in\mathbb C$. Prove that every zero of
 \[
 z^n+c_{n-1}z^{n-1}+\cdots+c_1z+c_0

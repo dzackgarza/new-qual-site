@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the closure of each of $\Gamma \subset L^1(\mathbb{R}, m)$ in the Banach space norm, $\|f\|_1 := \int_\mathbb{R} |f| \, dm$, in each of the three cases listed below? Briefly justify your answer.
 
 1) $\Gamma = C_c(\mathbb{R}, \mathbb{R})$
@@ -35,9 +35,9 @@ What is the closure of each of $\Gamma \subset L^1(\mathbb{R}, m)$ in the Banach
 3) $\Gamma = \left\{f \in C_c(\mathbb{R}, \mathbb{R}) : \int_{[-1,1]} f \, dm = 0\right\}$
 :::
 
-::: solution
+::: {.solution}
 <1>1. For \(\Gamma=C_c(\mathbb R)\), the closure is all of \(L^1(\mathbb R)\).
-::: proof
+::: {.proof}
 The standard density theorem for Lebesgue spaces states that
 \[
 C_c(\mathbb R)\text{ is dense in }L^1(\mathbb R).
@@ -49,7 +49,7 @@ Hence
 :::
 
 <1>2. Imposing the point condition \(f(0)=0\) does not change the closure.
-::: proof
+::: {.proof}
 Let \(u\in C_c(\mathbb R)\). Choose continuous cutoffs \(\chi_n:\mathbb R\to[0,1]\) such that
 \[
 \chi_n(0)=0,
@@ -78,7 +78,7 @@ Thus every compactly supported continuous function lies in the \(L^1\)-closure o
 :::
 
 <1>3. Identify the closure of the zero-integral class.
-::: proof
+::: {.proof}
 Define
 \[
 L:L^1(\mathbb R)\to\mathbb R,

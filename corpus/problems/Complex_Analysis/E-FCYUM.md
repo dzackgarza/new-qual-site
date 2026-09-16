@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 \Res_{z=0} {1\over z^2 \sin(z)}
@@ -23,7 +23,7 @@ Compute
 
 :::
 
-:::{.solution}
+::: {.solution}
 First expand $(\sin(z))\inv$:
 \[
 {1\over \sin(z)}

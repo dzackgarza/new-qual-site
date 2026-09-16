@@ -22,7 +22,7 @@ Let $X$ and $X'$ denote a single set under two topologies $\mathcal{T}$ and $\ma
 If one of the spaces is Hausdorff (or regular, or normal), what does that imply about the other?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine which separation properties (Hausdorff, regular, normal) are preserved when passing to a finer topology ($\mathcal{T} \subset \mathcal{T}'$) or a coarser topology ($\mathcal{T}' \supset \mathcal{T}$), providing proofs and counterexamples.
 
 <1>1. Hausdorff property ($T_2$):

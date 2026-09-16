@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Must a polynomial of degree $n$ over a division ring have at most $n$ roots in every extending division ring?
 Prove the claim or give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 No. The quaternion division ring gives a degree-$2$ polynomial with infinitely
 many roots.
 
@@ -44,7 +44,7 @@ f(x)=x^2+1\in\mathbb R[x]\subseteq\mathbb H[x].
 \]
 
 <1>1. Every unit purely imaginary quaternion is a root of $f$.
-::: proof
+::: {.proof}
 Let
 \[
 q=bi+cj+dk
@@ -68,7 +68,7 @@ f(q)=q^2+1=0.
 
 <1>2. The polynomial $f$ has infinitely many roots in the division ring
 $\mathbb H$.
-::: proof
+::: {.proof}
 The triples $(b,c,d)$ with $b^2+c^2+d^2=1$ form the unit sphere in
 $\mathbb R^3$, so <1>1 supplies infinitely many distinct roots.
 :::

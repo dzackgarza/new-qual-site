@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space, let $\mathfrak{U} = \ts{U_i}$ be an open cover of $X$, and suppose we are given for each $i$ a sheaf $\mcf_i$ on $U_i$, and for each $i, j$ an isomorphism
 \[
 \phi_{ij}: \ro{\mcf_i}{U_i \intersect U_j} \to \ro{\mcf_j}{U_i \intersect U_j}

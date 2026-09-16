@@ -29,19 +29,19 @@ audit:
   note: "Compared with Fields and Galois Theory (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF2, whose solution repeats this Frobenius argument."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ and $L$ be finite fields with $K \subseteq L$.
 Prove that $L$ is Galois over $K$ and that $\mathrm{Gal}(L/K)$ is cyclic.
 :::
 
-::: solution
+::: {.solution}
 Write $q=|K|=p^r$, where $p$ is the characteristic,
 and put $d=[L:K]$. Counting coordinates in a $K$-basis
 gives $|L|=q^d$.
 
 <1>1. The extension $L/K$ is Galois.
 
-::: proof
+::: {.proof}
 The group $L^\times$ has order $q^d-1$, so every
 $a\in L$ satisfies $a^{q^d}=a$, also for $a=0$.
 The factor theorem and comparison of degrees give
@@ -59,7 +59,7 @@ Galois extension [@DF04].
 <1>2. The automorphism $\varphi(a)=a^q$ generates
 $\operatorname{Gal}(L/K)$ and has order $d$.
 
-::: proof
+::: {.proof}
 The characteristic-$p$ binomial identity, iterated
 $r$ times, gives $(a+b)^q=a^q+b^q$.
 Multiplication and the identity are preserved as well,

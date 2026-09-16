@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Write down the character table of the symmetric group $S_4$.
 If we let
 \[

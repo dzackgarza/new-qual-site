@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume $\operatorname{char} k \neq 2$.
 Locate the singular points of the following curves in $\AA^2$ and sketch each curve.
 

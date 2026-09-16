@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 43, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider two lines formed by intersection of the planes,
 
 $$

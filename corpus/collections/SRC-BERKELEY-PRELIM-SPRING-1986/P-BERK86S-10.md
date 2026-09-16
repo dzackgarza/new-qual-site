@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Give $\mathbb C^n$ coordinatewise addition and multiplication. Determine all surjective ring homomorphisms
 \[
 \mathbb C^n\longrightarrow\mathbb C.

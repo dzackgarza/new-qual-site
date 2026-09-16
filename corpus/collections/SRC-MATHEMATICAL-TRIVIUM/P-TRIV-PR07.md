@@ -15,6 +15,6 @@ audit:
   note: Checked against Probability, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let a, b, c be three independent random variables distributed uniformly between 0 and 1. Find the probability that the roots of the equation $a x ^ { 2 } + b x + c = 0$ are real.
 :::

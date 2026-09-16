@@ -14,16 +14,16 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G=S_5$, the symmetric group on 5 elements. Identify
 all conjugacy classes of elements in $G$, provide a representative from
 each class, and prove that this list is complete.
 :::
 
-:::{.solution}
+::: {.solution}
 
 
-:::{.claim title="1"}
+::: {.claim title="1"}
 Conjugacy classes in $S_n$ are completely
 determined by cycle type.
 :::

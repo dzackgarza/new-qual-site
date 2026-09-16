@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $\phi, \psi$ be commuting endomorphisms of a finite-dimensional vector space $E$ over a field $K$ (so $\phi \psi = \psi \phi$). Show that if both $\phi$ and $\psi$ are diagonalizable (i.e. $E$ has a basis of eigenvectors for $\psi$ and a basis of eigenvectors for $\phi$), then $E$ has a basis consisting of simultaneous eigenvectors for both $\psi$ and $\phi$.
 
 (b) Interpret the previous statement in terms of matrices similar to a diagonal matrix.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that commuting diagonalizable endomorphisms admit a simultaneous eigenbasis in (a), and express this as simultaneous diagonalizability of commuting matrices in (b).
 
 <1>1. Part (a): Invariance of eigenspaces of $\psi$ under $\phi$.

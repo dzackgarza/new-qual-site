@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Think of $\PP^1$ as $\AA^1 \union \ts{\infty}$.
 Define a *fractional linear transformation* of $\PP^1$ by sending
 $$

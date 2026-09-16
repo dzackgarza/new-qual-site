@@ -27,11 +27,11 @@ audit:
 Classify the following assertion as true, sometimes true, or false: in a factor group $G/H$, if $aH=bH$, then $|a|=|b|$.
 :::
 
-::: solution
+::: {.solution}
 The assertion is **sometimes true**.
 
 <1>1. It is true when $H$ is trivial.
-::: proof
+::: {.proof}
 If $H=\{e\}$, then
 $$
 aH=bH
@@ -40,7 +40,7 @@ implies $a=b$. Hence $|a|=|b|$.
 :::
 
 <1>2. It can fail when $H$ is nontrivial.
-::: proof
+::: {.proof}
 Take the additive group
 $$
 G=\mathbb Z_4
@@ -58,7 +58,7 @@ Thus equal cosets need not have representatives of equal order.
 :::
 
 <1>3. Conclude the classification.
-::: proof
+::: {.proof}
 Step <1>1 gives cases in which the assertion holds, while step <1>2 gives a
 case in which it fails. Therefore the correct classification is
 $$

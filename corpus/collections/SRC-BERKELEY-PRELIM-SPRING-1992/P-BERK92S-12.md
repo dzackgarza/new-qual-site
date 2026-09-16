@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a real symmetric $n\times n$ matrix with nonnegative entries. Prove that $A$ has an eigenvector whose entries are all nonnegative.
 :::

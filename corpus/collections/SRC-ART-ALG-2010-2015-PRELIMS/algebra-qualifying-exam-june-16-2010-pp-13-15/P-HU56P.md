@@ -32,11 +32,11 @@ Recall $N_G(P)$ denotes the normalizer of $P$ in $G$.
 Show that $G = KN_G(P)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For every $g\in G$, there is $k\in K$ with
 $gPg^{-1}=kPk^{-1}$.
 
-::: proof
+::: {.proof}
 Normality gives $gKg^{-1}=K$. Hence $gPg^{-1}$ is a
 subgroup of $K$. Conjugation preserves order, so it has
 order $|P|$, the largest power of $p$ dividing $|K|$.
@@ -48,7 +48,7 @@ gives an element $k\in K$ with the asserted equality
 
 <1>2. Every $g\in G$ belongs to $KN_G(P)$.
 
-::: proof
+::: {.proof}
 Choose $k$ as in step <1>1. Then
 $$
 (k^{-1}g)P(k^{-1}g)^{-1}

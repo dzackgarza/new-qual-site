@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{B}_{\mathbb{R}^n}$ be the Borel $\sigma$-algebra on $\mathbb{R}^n$ and let $\mu : \mathcal{B}_{\mathbb{R}^n} \to [0, \infty]$ be a measure such that
 
 (1) $\mu(\mathbb{R}^n) = 1$,
@@ -38,7 +38,7 @@ $$
 Hint: Start with $E \subset \overline{B_K(0)}$.
 :::
 
-::: solution
+::: {.solution}
 Suppose the conclusion were false. Then there would exist
 \[
 \varepsilon_0>0
@@ -51,7 +51,7 @@ such that for every $j\ge1$ one could find a Borel set $E_j\subset\mathbb R^n$ w
 \]
 
 <1>1. Reduce to sets inside a fixed compact ball.
-::: proof
+::: {.proof}
 Since
 \[
 \overline{B_K(0)}\uparrow\mathbb R^n
@@ -82,7 +82,7 @@ In particular each $F_j$ is nonempty.
 :::
 
 <1>2. Extract a limiting point.
-::: proof
+::: {.proof}
 Choose $x_j\in F_j$. Since all $x_j$ lie in the compact ball $\overline{B_K(0)}$, a subsequence, still denoted $(x_j)$, converges to some
 \[
 x\in\overline{B_K(0)}.
@@ -110,7 +110,7 @@ for all sufficiently large $j$. Hence
 :::
 
 <1>3. Obtain the contradiction with atomlessness.
-::: proof
+::: {.proof}
 Applying Step 2 with $r=1/m$ gives
 \[
 \mu(B_{1/m}(x))\ge\frac{\varepsilon_0}{2}

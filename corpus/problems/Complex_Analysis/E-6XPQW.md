@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 \[
 \sum_{k\in \ZZ} {1\over \qty{ k - {1\over 2}}^2 } = \pi^2
@@ -30,7 +30,7 @@ Show that
 
 :::
 
-::: solution
+::: {.solution}
 For $N\ge1$, let $Q_N$ be the positively oriented square
 \[
 |\Re z|\le N+\tfrac12,

@@ -25,7 +25,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 (b) Show by example that the union of infinitely
 many compact subsets of a metric space need not be compact. (c) If
 $(X,d)$ is a metric space and $K\subset X$ is compact, define

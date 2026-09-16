@@ -12,21 +12,21 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f \in H(\mathbb{D})$, and let $c_1, \ldots, c_n \in \mathbb{D} \setminus \{0\}$ be zeros of $f$ listed with multiplicity not exceeding their multiplicities as zeros of $f$.
 Show that if $|f(z)| \leq M$ for $|z| < 1$, then $$|f(0)| \leq M \prod_{j=1}^{n} |c_j|.$$
 
 Hint: Consider the function $g(z) = f(z) / \prod_j \phi_{c_j}(z)$, where $\phi_{c_j}$ is a one-to-one analytic map of $\mathbb{D}$ onto itself vanishing at $c_j$.
 :::
 
-::: remark
+::: {.remark}
 The official Spring 2005 source does not specify distinctness or multiplicity
 for the listed zeros. Under literal repeated enumeration the printed statement
 is false; the hypothesis above records the multiplicity condition required by
 the supplied Blaschke-product hint.
 :::
 
-::: solution
+::: {.solution}
 For $c\in\mathbb D$, put
 \[
 \phi_c(z)=\frac{z-c}{1-\overline c z}.

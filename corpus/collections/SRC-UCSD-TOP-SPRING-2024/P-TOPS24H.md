@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $M$ is a closed 4-manifold which is homotopy-equivalent to the suspension $\Sigma X$ of some path-connected topological space $X$, then $H_*(M; \mathbb{Z}) = H_*(S^4; \mathbb{Z})$ (that is, $M$ must be a homology sphere).
 :::
 

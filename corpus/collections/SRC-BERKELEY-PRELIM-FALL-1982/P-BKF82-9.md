@@ -23,7 +23,7 @@ audit:
   note: "Introduced F(t)=1+2∫_0^t f, differentiated sqrt(F), and used f²≤F to obtain (sqrt F)'≤1."
 ---
 
-::: problem
+::: {.problem}
 Let $f\ge0$ be continuous on $[0,1]$ and suppose
 \[
 f(t)^2\le1+2\int_0^t f(s)\,ds.
@@ -31,7 +31,7 @@ f(t)^2\le1+2\int_0^t f(s)\,ds.
 Show that $f(t)\le1+t$ for $t\in[0,1]$.
 :::
 
-::: solution
+::: {.solution}
 Define
 $$
 F(t)=1+2\int_0^t f(s)\,ds.
@@ -39,7 +39,7 @@ $$
 Because $f\ge0$, we have $F(t)\ge1$.
 
 <1>1. Bound the derivative of $\sqrt{F}$.
-::: proof
+::: {.proof}
 By the fundamental theorem of calculus,
 $$
 F'(t)=2f(t).
@@ -62,7 +62,7 @@ $$
 :::
 
 <1>2. Integrate the differential inequality.
-::: proof
+::: {.proof}
 Since $F(0)=1$, step <1>1 gives
 $$
 \sqrt{F(t)}-1

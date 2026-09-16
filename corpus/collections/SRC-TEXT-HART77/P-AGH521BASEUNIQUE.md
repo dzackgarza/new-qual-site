@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X$ is a birationally ruled surface, show that the curve $C$, such that $X$ is birationally equivalent to $C \times \PP^1$, is unique (up to isomorphism).
 :::

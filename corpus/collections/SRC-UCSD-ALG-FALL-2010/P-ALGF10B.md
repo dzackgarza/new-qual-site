@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Show that a group of order $2010 = 2 \cdot 3 \cdot 5 \cdot 67$ is solvable.
 :::
 

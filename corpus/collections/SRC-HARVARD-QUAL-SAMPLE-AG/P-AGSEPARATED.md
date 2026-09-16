@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What can you say about separated schemes?
 
 Let $g, h : Z \to X$ be morphisms of schemes over $Y$, via $f : X \to Y$, and suppose $g$ and $h$ agree on a dense open subset of $Z$.

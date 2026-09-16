@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f = u+iv$ is holomorphic then $u, v$ are harmonic.
 :::
 
-:::{.solution}
+::: {.solution}
 Idea: use Cauchy-Riemann, take further derivatives, and use equality of partials.
 
 - By CR, 

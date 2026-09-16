@@ -30,9 +30,9 @@ If $f$ is surjective, $f(I)$ is an ideal of $S$, and sending $I$ to $f(I)$ gives
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Without surjectivity, $f(I)$ need not be an ideal of $S$.
-::: proof
+::: {.proof}
 Take the inclusion
 $$
 f:\mathbb Z\hookrightarrow\mathbb Q
@@ -53,7 +53,7 @@ $$
 :::
 
 <1>2. If $f$ is surjective, then $f(I)$ is an ideal of $S$.
-::: proof
+::: {.proof}
 The set $f(I)$ is an additive subgroup of $S$. Let
 $$
 y=f(a)\in f(I)
@@ -74,7 +74,7 @@ so $sy\in f(I)$. Thus $f(I)$ is an ideal of $S$.
 :::
 
 <1>3. Extension followed by contraction recovers every ideal containing $\ker f$.
-::: proof
+::: {.proof}
 Assume $f$ is surjective and let
 $$
 I\supseteq\ker f.
@@ -102,7 +102,7 @@ $$
 :::
 
 <1>4. Contraction followed by extension recovers every ideal of $S$.
-::: proof
+::: {.proof}
 Let $J\subseteq S$ be an ideal. One inclusion is immediate:
 $$
 f(f^{-1}(J))\subseteq J.

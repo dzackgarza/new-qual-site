@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the homology group $H_k(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$ for all $k \geq 0$.
 :::
 

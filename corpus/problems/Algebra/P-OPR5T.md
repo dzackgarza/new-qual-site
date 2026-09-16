@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S$ be a real skew-symmetric matrix or a complex skew-Hermitian matrix. Define the Cayley transform
 \[
 U=(S+I)(S-I)^{-1}.

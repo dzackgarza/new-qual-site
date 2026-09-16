@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be continuous and satisfy
 \[
 |f(x)|\le\frac{C}{1+x^2}

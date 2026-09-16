@@ -17,14 +17,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a Noetherian ring.
 Prove that $R[x]$ and $R[[x]]$ are both Noetherian.
 (The first part of the question is asking you to prove the Hilbert Basis Theorem, not to use it!)
 :::
 
 
-::: solution
+::: {.solution}
 We prove the two assertions separately.
 
 **1. The polynomial ring \(R[x]\).** Let \(I\subseteq R[x]\) be an ideal. For \(d\ge0\), let

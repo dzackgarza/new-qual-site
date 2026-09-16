@@ -15,32 +15,32 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that the sequence $\left(1+\frac{z}{n}\right)^{n}$ converges uniformly to $e^{z}$ on compact subsets of $\mathbb{C}$. 
 
 > Hint: $e^{n \log w_{n}}=w_{n}^{n}$ and $e^{z}$ is uniform continuous on compact subsets of $\mathbb{C}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 
 Let $K$ be compact, where $z\in K\implies \abs{z} \leq R$ for some constant $R$. For the remainder of the problem, we only work in $K$.
 
-:::{.claim}
+::: {.claim}
 $f_n(z) \da n\log(1 + {z\over n}) \to z$ uniformly.
 :::
 
-:::{.claim}
+::: {.claim}
 $f_n$ are uniformly bounded on $K$.
 :::
 
 
-:::{.claim}
+::: {.claim}
 $e^z$ is uniformly continuous on $K$.
 :::
 
 
-:::{.claim}
+::: {.claim}
 If $g_n\to g$ uniformly and $F$ is uniformly continuous, then $F \circ g_n \to F\circ g$ uniformly.
 :::
 
@@ -50,7 +50,7 @@ Why these claims imply the result:
 If $f_n(z)\to z$ uniformly, both are uniformly bounded, and $e^z$ is uniformly continuous, then $e^{f(z)}\to e^z$ uniformly.
 
 
-:::{.proof title="Of first claim"}
+::: {.proof title="Of first claim"}
 We'll first show that for $w$ in a neighborhood of zero avoiding 1, there exists a constant $C$ such that
 \[
 \abs{ 1 - {\log(1+w) \over w} } \leq C\abs{w}

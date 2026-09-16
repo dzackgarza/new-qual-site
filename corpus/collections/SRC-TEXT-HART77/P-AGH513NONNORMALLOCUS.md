@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 It is a fact that any regular local ring is an integrally closed domain.
 Thus every variety has a nonempty open subset of normal points.
 

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be analytic with $|f(z)| \leq M$ in $\mathbb{D}$ and $f(0) = \alpha > 0$.
 
 (a) Show that $f(z)$ has no zeros in the disk $|z| < \alpha/M$.
@@ -20,7 +20,7 @@ Let $f(z)$ be analytic with $|f(z)| \leq M$ in $\mathbb{D}$ and $f(0) = \alpha >
 (b) Find all functions $f(z)$ (satisfying the above) such that $f(z)$ has a zero on the circle $|z| = \alpha/M$.
 :::
 
-::: solution
+::: {.solution}
 If $M=0$ there is nothing to prove, so assume $M>0$ and put
 \[
 h(z)=\frac{f(z)}M,

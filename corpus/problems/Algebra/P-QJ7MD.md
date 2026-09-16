@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Prove that every subgroup of index $2$ is normal.
 2. More generally, let $G$ be finite and let $p$ be the smallest prime dividing $|G|$. Prove that every subgroup of index $p$ is normal.
 :::

@@ -22,7 +22,7 @@ audit:
 Determine whether or not $\mathbb{R}^\omega$ is connected in the uniform topology.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\mathbb{R}^\omega$ is **not connected** (is disconnected) in the uniform topology by constructing a non-trivial clopen subset.
 
 <1>1. Definition of the uniform metric:

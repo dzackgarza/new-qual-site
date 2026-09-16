@@ -19,7 +19,7 @@ audit:
   note: Restored the values +1 or -1 and removed stray residue against Probability Problem 32 on page 32 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 It is known that the series $\sum_{n=1}^\infty \frac{1}{n}$ diverges while the series $\sum_{n=1}^\infty \frac{(-1)^n}{n}$ converges.
 One may ask about the convergence or divergence of the series $\sum_{n=1}^\infty \frac{\xi_n}{n}$, where $\xi_n$ are independent random variables taking the values $+1$ or $-1$ with the probabilities $p$ and $q = 1 - p$ correspondingly.
 

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For each standard action below, identify the orbits, stabilizers, global fixed points, kernel, and image in the relevant symmetric group:
 
 1. left translation of $G$ on itself;

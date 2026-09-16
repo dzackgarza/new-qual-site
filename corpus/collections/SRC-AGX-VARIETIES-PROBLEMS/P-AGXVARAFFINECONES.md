@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Do isomorphic varieties have isomorphic affine cones?
 :::

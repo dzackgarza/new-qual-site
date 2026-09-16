@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 3. For $n\geq 2$, consider the ring of $n \times n$ matrices over a commutative unital ring $R$, denoted $\operatorname{Mat}_{n}(R)$. Recall the determinant map $\det:\operatorname{Mat}_{n}(R)\to R$.
    For $A \in \operatorname{Mat}_{n}(R)$ also recall the definition of the classical adjoint $A^{a}$ of $A$.
    Prove that:

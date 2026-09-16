@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given $n\geq 3$, fix $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ satisfying that there exist two eigenvalues $\alpha,\beta$ of $A$ with $\alpha\neq\beta$.
 Prove there exists unitary $Q\in M_n(\mathbb{C})$ such that
 \[

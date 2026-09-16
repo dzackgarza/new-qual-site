@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $T \subset S^4$ be a (perhaps knotted) subspace homeomorphic to the $2$-torus.
 Let $N$ be a closed regular neighbourhood of $T$, so that $N$ is homotopy equivalent to $T$.
 Let $X$ be $S^4$ minus the interior of $N$, so that $X$ is a compact $4$-manifold with boundary.

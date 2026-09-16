@@ -33,7 +33,7 @@ Show that $f$ is continuous at each irrational and discontinuous at each rationa
 Can you find a sequence of continuous functions $f_n$ converging to $f$?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the modified Thomae function $f: \mathbb{R} \to \mathbb{R}$ is continuous on $\mathbb{R} \setminus \mathbb{Q}$ and discontinuous on $\mathbb{Q}$, and construct a sequence of continuous functions converging pointwise to $f$.
 
 <1>1. Continuity at every irrational point $x_0 \in \mathbb{R} \setminus \mathbb{Q}$:

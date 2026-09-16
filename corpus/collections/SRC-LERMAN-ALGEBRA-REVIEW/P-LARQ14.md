@@ -22,13 +22,13 @@ audit:
   note: "Used evaluation at 2, the factor theorem and the first isomorphism theorem."
 ---
 
-::: problem
+::: {.problem}
 Prove that $\mathbb R[x]/(x-2)\cong\mathbb R$ as rings.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Evaluation at $2$ has kernel $(x-2)$ and is surjective.
-::: proof
+::: {.proof}
 Define
 $$
 \Phi:\mathbb R[x]\to\mathbb R,
@@ -50,7 +50,7 @@ $$
 :::
 
 <1>2. The first isomorphism theorem gives the desired ring isomorphism.
-::: proof
+::: {.proof}
 Since $\operatorname{im}\Phi=\mathbb R$ and $\ker\Phi=(x-2)$,
 $$
 \mathbb R[x]/(x-2)

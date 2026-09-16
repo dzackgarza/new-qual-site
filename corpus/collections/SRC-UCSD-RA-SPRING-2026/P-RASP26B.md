@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Consider the function
 $$
 d(f, g) := \sup_{0 \leq x \leq 1} \left|\int_0^x (f(t) - g(t))\,dt\right|, \qquad f, g \in L^1([0,1]).
@@ -37,9 +37,9 @@ Let $C := \{f \in L^1([0,1]) : |f(t)| \leq 1 \text{ for a.e. } t \in [0,1]\}$.
 Hint: Let $\tilde{C} = \{F(x) := \int_0^x f : f \in C\}$ and use Arzelà-Ascoli.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that $d$ is a metric.
-::: proof
+::: {.proof}
 Nonnegativity and symmetry are immediate. For the triangle inequality, if $f,g,h\in L^1([0,1])$, then for every $x\in[0,1]$,
 \[
 \left|\int_0^x(f-h)\right|
@@ -71,7 +71,7 @@ Therefore $d$ is a metric on $L^1([0,1])$.
 :::
 
 <1>2. Identify the image of $C$ under the primitive map.
-::: proof
+::: {.proof}
 Define
 \[
 T:C\to C([0,1]),
@@ -102,7 +102,7 @@ T(C)
 :::
 
 <1>3. Observe that $T$ is an isometry.
-::: proof
+::: {.proof}
 For $f,g\in C$,
 \[
 \begin{aligned}
@@ -116,7 +116,7 @@ Thus $T$ is an isometry from $(C,d)$ onto $T(C)$ equipped with the uniform norm.
 :::
 
 <1>4. Prove compactness by Arzelà--Ascoli.
-::: proof
+::: {.proof}
 Every $F\in T(C)$ satisfies
 \[
 |F(x)|=|F(x)-F(0)|\le x\le1,

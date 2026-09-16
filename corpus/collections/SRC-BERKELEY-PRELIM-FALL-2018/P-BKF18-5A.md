@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Describe a conformal map from
 \[
 \{z:|z-4i|<4\}\cap\{z:|z-i|>1\}

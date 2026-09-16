@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Use (7.6) to show that if $X$ is a scheme of finite type over a noetherian ring $A$, and if $X$ admits an ample invertible sheaf, then $X$ is separated.
 
 b. Let $X$ be the affine line over a field $k$ with the origin doubled (4.0.1).

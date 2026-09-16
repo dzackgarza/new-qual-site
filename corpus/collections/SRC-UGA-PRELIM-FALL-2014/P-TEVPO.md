@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ and $g$ are functions mapping $\mathbb{R}$ into itself with $\lim_{x\to 0} f(x) = 0$.
 
 a. Prove from the $\varepsilon$–$\delta$ definition that if $g$ is bounded, then $\lim_{x\to 0} f(x)g(x) = 0$ as well.
@@ -22,7 +22,7 @@ a. Prove from the $\varepsilon$–$\delta$ definition that if $g$ is bounded, th
 b. Give an example to show that the boundedness hypothesis cannot be omitted from part (a).
 :::
 
-::: solution
+::: {.solution}
 Suppose $\exists M_g \suchthat \forall x,~ g(x) < M$.
 Then let $\varepsilon > 0$ be arbitrarily chosen; we want to show that there exists a $\delta$ such that $\abs{x} \leq \delta \implies \abs{f(x)g(x)} \leq \varepsilon$.
 Since $\lim_{x\to 0} f(x) = 0$, choose a $\delta_f$ such that $\abs{x} \leq \delta_f \implies \abs{f(x)} \leq \frac{\varepsilon}{M_g}$.

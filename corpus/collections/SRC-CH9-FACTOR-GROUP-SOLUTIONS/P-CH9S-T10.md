@@ -23,7 +23,7 @@ audit:
   note: Stated the permutations alpha_6, alpha_7, alpha_9, alpha_11 of Table 5.1 as identified by the source's own solution to Team Problem 10 in Ch9Sltns.pdf.
 ---
 
-::: problem
+::: {.problem}
 Let $H=\{(1),(12)(34)\}$ in $A_4$.
 
 (a) Show that $H$ is not normal in $A_4$.

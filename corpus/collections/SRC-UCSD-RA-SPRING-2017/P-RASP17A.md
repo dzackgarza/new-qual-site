@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 In each case below find $L$ (allowing for values of $\pm\infty$) and justify the calculations:
 
 1. $L = \lim_{n \to \infty} \int_0^1 \frac{\min(nx, 1)}{x} \, dx$
@@ -36,9 +36,9 @@ In each case below find $L$ (allowing for values of $\pm\infty$) and justify the
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Evaluate the first limit.
-::: proof
+::: {.proof}
 For \(n\ge1\),
 \[
 \frac{\min(nx,1)}x=
@@ -60,7 +60,7 @@ Therefore
 :::
 
 <1>2. Evaluate the oscillatory integral.
-::: proof
+::: {.proof}
 Let \(u(x)=x^{-3/2}\). Then \(u'(x)=-\frac32x^{-5/2}\in L^1([1,\infty))\). Integration by parts gives, for \(R>1\),
 \[
 \int_1^R u(x)e^{inx}\,dx
@@ -79,7 +79,7 @@ The right side tends to \(0\). Thus
 :::
 
 <1>3. Evaluate the third integral exactly.
-::: proof
+::: {.proof}
 Put \(u=n^2x^2\). Then \(du=2n^2x\,dx\), so
 \[
 \begin{aligned}

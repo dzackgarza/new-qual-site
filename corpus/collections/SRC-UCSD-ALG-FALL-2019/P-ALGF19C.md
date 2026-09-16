@@ -25,7 +25,7 @@ audit:
   note: Verified necessity by reduction modulo every prime ideal and sufficiency by showing the positive-degree part is nilpotent and summing a finite geometric inverse.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring.
 Let $A[x]$ be the ring of polynomials, $A^\times$ be the group of units of $A$, and $\mathrm{Nil}(A)$ be the nilradical of $A$.
 Prove that

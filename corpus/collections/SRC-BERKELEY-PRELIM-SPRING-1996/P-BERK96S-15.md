@@ -16,7 +16,7 @@ audit:
   note: The matrix hypotheses were checked directly on the retained PDF page.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be real $n\times n$ matrices. Suppose
 \[
 A^T=A,

@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Show that the nilradical of a commutative ring $R$ is equal to the intersection of all prime ideals of $R$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Krull's Theorem: for any commutative ring $R$, the nilradical $\operatorname{Nil}(R)$ is the intersection of all prime ideals of $R$,
 $$
 \operatorname{Nil}(R) = \bigcap_{\mathfrak{p} \in \operatorname{Spec}(R)} \mathfrak{p}.

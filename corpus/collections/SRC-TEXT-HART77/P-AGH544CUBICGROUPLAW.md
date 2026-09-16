@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Use (4.5) to prove the following lemma on cubics: If $C$ is an irreducible plane cubic curve, if $L$ is a line meeting $C$ in points $P, Q, R$, and $L^{\prime}$ is a line meeting $C$ in points $P^{\prime}, Q^{\prime}, R^{\prime}$, let $P^{\prime \prime}$ be the third intersection of the line $P P^{\prime}$ with $C$, and define $Q^{\prime \prime}, R^{\prime \prime}$ similarly.
 Then $P^{\prime \prime}, Q^{\prime \prime}, R^{\prime \prime}$ are collinear.
 

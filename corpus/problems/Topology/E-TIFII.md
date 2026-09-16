@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Show that any infinite set with the cofinite topology is compact.
 :::
 

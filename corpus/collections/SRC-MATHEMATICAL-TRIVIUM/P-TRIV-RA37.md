@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 37, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the surface area of a body formed by rotation of a curve $y = \sin x$ around x-axis in $\mathbb { R } ^ { 3 } , x \in [ 0 , \pi ]$
 :::

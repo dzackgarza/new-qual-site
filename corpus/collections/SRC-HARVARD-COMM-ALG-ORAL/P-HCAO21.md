@@ -26,7 +26,7 @@ audit:
   note: "Checked the explicit adjunction and augmentation action, proved the finite-dimensional Gorenstein self-duality through minimal resolutions rather than an uncited socle criterion, and verified the infinite-dimensional counterexample. The injective-dimension definition was cross-checked against Stacks tag 0DW6."
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a zero-dimensional Gorenstein $k$-algebra.
 What can be said about the $R$-module $\operatorname{Hom}_k(R,k)$?
 For the second question, assume that a $k$-algebra homomorphism
@@ -38,7 +38,7 @@ What is
 \]
 :::
 
-::: remark
+::: {.remark}
 A $k$-algebra structure gives a map $k\to R$, not an
 $R$-module structure on $k$. The specified augmentation
 $\varepsilon:R\to k$ is needed for the second question;
@@ -48,7 +48,7 @@ below requires finite $k$-dimension, while the adjunction
 and the computation of the displayed Hom do not.
 :::
 
-::: solution
+::: {.solution}
 Put $D=\operatorname{Hom}_k(R,k)$ with action
 $(r\varphi)(s)=\varphi(rs)$. In general, $D$ is an
 injective cogenerator. If $R$ is finite-dimensional over
@@ -70,7 +70,7 @@ $$
 \operatorname{Hom}_R(M,D)\cong\operatorname{Hom}_k(M,k).
 $$
 
-::: proof
+::: {.proof}
 Send an $R$-linear map $u:M\to D$ to
 $\lambda_u(m)=u(m)(1)$. Conversely, for a $k$-linear
 $\lambda:M\to k$, define
@@ -92,7 +92,7 @@ naturality.
 <1>2. The module $D$ is injective and separates nonzero elements
 of every $R$-module.
 
-::: proof
+::: {.proof}
 For an inclusion $M\subseteq N$, any $k$-linear functional
 on $M$ extends to $N$ by extending a vector-space basis
 [@DF04]. Through step <1>1, this says exactly that each
@@ -107,7 +107,7 @@ uses the Gorenstein or dimension hypotheses.
 <1>3. The specified augmentation gives
 $\operatorname{Hom}_R(k,D)\cong k$ explicitly.
 
-::: proof
+::: {.proof}
 Apply step <1>1 to the $R$-module $k$ defined by
 $\varepsilon$. Evaluation at $1\in k$ identifies
 $\operatorname{Hom}_k(k,k)$ with $k$. The resulting map
@@ -125,7 +125,7 @@ $R$ is finite-dimensional or Gorenstein.
 <1>4. If $A$ is a finite-dimensional local Gorenstein
 $k$-algebra, then $D_A=\operatorname{Hom}_k(A,k)\cong A$.
 
-::: proof
+::: {.proof}
 Write $\mathfrak n$ for its maximal ideal and
 $\kappa=A/\mathfrak n$. First, $\mathfrak n$ is nilpotent.
 Its powers stabilize by finite $k$-dimension, say
@@ -189,7 +189,7 @@ $\dim_kD_A=\dim_kA>0$, so its free rank is exactly one.
 <1>5. The same rank-one assertion holds for finite-dimensional
 $R$ without assuming localness.
 
-::: proof
+::: {.proof}
 There are only finitely many maximal ideals
 $\mathfrak m_1,\ldots,\mathfrak m_t$. Indeed, the Chinese
 remainder theorem gives a surjection to the product of
@@ -234,7 +234,7 @@ modules; no canonical generator is asserted.
 <1>6. In the finite-dimensional local case with residue field
 $k$, $D$ is the injective hull of $k$.
 
-::: proof
+::: {.proof}
 Let $\mathfrak m=\ker\varepsilon$. Embed $k$ in $D$ by
 $a\mapsto a\varepsilon$. Step <1>3 says that the submodule
 annihilated by $\mathfrak m$ is exactly $k\varepsilon$:
@@ -251,7 +251,7 @@ an injective hull, by the definition of an injective hull.
 <1>7. Finite $k$-dimension and the augmentation cannot be
 silently inferred from the original dimension hypothesis.
 
-::: proof
+::: {.proof}
 Take $k=\mathbb F_2$ and $R=k(t)$ with $t$ transcendental.
 This is a field, hence has Krull dimension zero. It is
 Gorenstein: as a module over itself it is injective,

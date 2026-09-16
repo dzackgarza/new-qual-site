@@ -30,7 +30,7 @@ Show that there exists a nonzero element $\alpha \in R$ such that $\alpha M \sub
 Use this to show that there exists an $R$-basis $\{e_1, \dots, e_n\}$ of $M$ and nonzero elements $\beta_1, \dots, \beta_n \in F$ such that $\{\beta_1 e_1, \dots, \beta_n e_n\}$ is an $R$-basis of $N$ (Invariant Factor Theorem for Lattices).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that finitely generated submodules of vector spaces over a PID are torsion-free hence free of rank $\le n$, and prove the simultaneous basis theorem for full-rank lattices.
 
 <1>1. Part (a): Finitely Generated $R$-Submodules of $V$ are Free of Rank $\le n$:

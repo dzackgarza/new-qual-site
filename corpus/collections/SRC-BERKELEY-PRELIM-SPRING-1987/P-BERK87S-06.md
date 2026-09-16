@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic in the open unit disk and suppose
 \[
 |f(z)|\le\frac{C}{1-|z|}

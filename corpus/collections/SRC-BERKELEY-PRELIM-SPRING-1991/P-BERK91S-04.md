@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $p$ be prime and let $R$ be a ring with identity having $p^2$ elements. Prove that $R$ is commutative.
 :::

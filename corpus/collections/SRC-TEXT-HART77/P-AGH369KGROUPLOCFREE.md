@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian, integral, separated, regular scheme.
 (We say a scheme is regular if all of its local rings are regular local rings.)
 Recall the definition of the Grothendieck group $K(X)$ from (II, Ex.

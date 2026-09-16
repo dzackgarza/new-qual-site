@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For each of the following, determine if the statement is always true or if it is false.
 If true, give a proof.
 If false, give a counterexample.
@@ -31,7 +31,7 @@ Then $f$ is constant.
 If $f(G) \subset G$ and $f(i) = i$, then $|f'(i)| \leq 1$.
 :::
 
-::: solution
+::: {.solution}
 **(a) False.** Absolute convergence of an infinite product
 $\prod(1+a_n)$ requires $\sum |a_n|<\infty$. Here
 \[

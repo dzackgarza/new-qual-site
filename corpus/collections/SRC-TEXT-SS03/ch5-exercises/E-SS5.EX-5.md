@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 5. Show that if $\alpha > 1$ , then
 
 $$

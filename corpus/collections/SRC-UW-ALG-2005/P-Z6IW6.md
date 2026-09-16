@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite abelian group.
 Let $f:\mathbb Z^m\rightarrow G$ be a surjection of abelian groups.
 We may think of $f$ as a homomorphism of $\mathbb Z$-modules.
@@ -31,7 +31,7 @@ Let $K$ be the kernel of $f$.
   Prove that $|\det A|=|G|$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The subgroup $K\le \mathbb Z^m$ is a free abelian group of rank at most $m$.
 ::: {.proof}
 Every subgroup of a finitely generated free abelian group is free abelian of rank at most the rank of the ambient group. Thus

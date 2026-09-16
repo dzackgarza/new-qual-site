@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a hyperelliptic curve can never be a complete intersection in any projective space.
 Cf.
 (Ex.

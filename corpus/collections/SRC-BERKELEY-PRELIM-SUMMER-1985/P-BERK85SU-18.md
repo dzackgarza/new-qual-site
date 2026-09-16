@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Solve the system
 \[
 \frac{dy_1}{dx}=-3y_1+10y_2,

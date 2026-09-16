@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 a. Show that every group of order $p^2$ with $p$ prime is abelian.
 
 b. State the 3 Sylow theorems.

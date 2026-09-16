@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S \da k[x_0,\ldots,x_n]$.
 Prove the **homogeneous Nullstellensatz**: if $\mfa \subseteq S$ is a homogeneous ideal and $f \in S$ is a homogeneous polynomial with $\deg f > 0$ such that $f(P) = 0$ for all $P \in Z(\mfa)$ in $\PP^n$, then $f^q \in \mfa$ for some $q > 0$.
 

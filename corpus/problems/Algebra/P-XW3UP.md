@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the stabilizer of a point $z_0 \in \mathbb{D}$ in the open unit disk under the group of conformal automorphisms $\operatorname{Aut}(\mathbb{D})$?
 Describe the group structure and express the automorphisms explicitly.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \phi_{z_0}(z)=\frac{z-z_0}{1-\overline{z_0}z}.

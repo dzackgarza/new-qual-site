@@ -31,12 +31,12 @@ Let $M$ be a left $R$-module.
 Recall that $IM$ is the submodule $$IM = \{a_1 m_1 + \cdots + a_n m_n : a_i \in I, m_i \in M\}.$$ Prove that $(R/I) \otimes_R M \cong M/IM$ as $R$-modules.
 :::
 
-::: hint
+::: {.hint}
 Construct an $R$-balanced map from $(R/I)\times M$ to $M/IM$
 and use the universal mapping property of tensor products.
 :::
 
-::: solution
+::: {.solution}
 The isomorphism and its inverse are
 $$
 \begin{aligned}
@@ -51,7 +51,7 @@ We verify these maps without assuming that $R$ is commutative.
 <1>1. The tensor product and quotient have the required left
 $R$-module structures.
 
-::: proof
+::: {.proof}
 Because $I$ is two-sided, $R/I$ is an $(R,R)$-bimodule by
 left and right multiplication. Put $T=(R/I)\otimes_R M$, using
 the right $R$-action on $R/I$ and the given left action on $M$.
@@ -74,7 +74,7 @@ left submodule, and $M/IM$ is a left quotient module.
 
 <1>2. The displayed rule defines a left $R$-linear map $\Phi$.
 
-::: proof
+::: {.proof}
 Define $\beta:(R/I)\times M\to M/IM$ by
 $\beta(a+I,m)=am+IM$. If $a$ is replaced by $a+i$ with
 $i\in I$, the value changes by $im\in IM$, so it is
@@ -96,7 +96,7 @@ $$
 <1>3. The map $\Psi$ is well defined and left $R$-linear,
 and is inverse to $\Phi$.
 
-::: proof
+::: {.proof}
 Define $\eta:M\to T$ by $\eta(m)=(1+I)\otimes m$.
 It is additive, and balancing gives
 $$

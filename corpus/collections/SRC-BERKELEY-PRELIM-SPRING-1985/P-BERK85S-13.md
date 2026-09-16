@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a\in\mathbb C$ and let $n\ge2$ be an integer. Prove that
 \[
 1+z+az^n=0

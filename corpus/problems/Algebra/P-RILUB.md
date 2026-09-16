@@ -25,7 +25,7 @@ audit:
   note: "Merge adjudication: the consolidation merge kept one branch's rewritten statement and appended both authored solutions. Restored the imported statement and kept one solution: both proofs are correct and argue identically; the retained one justifies the converse inclusion by identifying the symmetry group with the signed permutation matrices."
 ---
 
-::: problem
+::: {.problem}
 What are the polynomials in two real variables that are invariant under the action of $D_4$, the symmetry group of a square, by rotations and reflections on the plane that the two variables form?
 :::
 

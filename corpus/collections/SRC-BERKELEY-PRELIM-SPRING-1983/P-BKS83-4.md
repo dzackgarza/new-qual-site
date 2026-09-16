@@ -15,7 +15,7 @@ audit:
   note: The retained PDF itself does not contain the required diagram. In place of the figure it prints "../Fig/Pr/Sp83-4.ps not found". The statement is therefore preserved without reconstructing the missing network.
 ---
 
-:::{.problem}
+::: {.problem}
 In the triangular network in $\mathbb R^2$ referred to by the source, the points $P_0,P_1,P_2,P_3$ are respectively
 \[
 (0,0),\qquad(1,0),\qquad(0,1),\qquad(1,1).

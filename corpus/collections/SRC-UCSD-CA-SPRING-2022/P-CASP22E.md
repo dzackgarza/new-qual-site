@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be an open set, $\{f_n\}$ a sequence in $M(G)$, and $f$ a meromorphic function such that $f_n \to f$ in $M(G)$.
 Suppose $a \in G$ is a pole of $f$.
 Show that there is a sequence $\{a_n\}$ in $G$ such that $a_n \to a$ and $f_n$ has a pole at $a_n$ for sufficiently large $n$.
 :::
 
-::: solution
+::: {.solution}
 Let the pole of $f$ at $a$ have order $m$. Choose $r>0$ so small that
 $\overline{B(a,r)}\subset G$ and $a$ is the only pole of $f$ in that disk.
 The coefficient of $(z-a)^{-m}$ in the Laurent expansion of $f$ is nonzero,

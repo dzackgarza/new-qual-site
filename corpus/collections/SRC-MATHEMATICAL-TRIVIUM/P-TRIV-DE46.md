@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 46, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider an semi-infinite $( x \ge 0 )$ metal rod with conductivity κ. Find the heat distribution $u ( x , t )$ if $u ( x , 0 ) = u _ { 0 } \delta ( x )$
 :::

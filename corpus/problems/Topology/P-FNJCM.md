@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
 
 - Is $\RR$ homeomorphic to $[0, \infty)$?

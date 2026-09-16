@@ -22,7 +22,7 @@ audit:
   note: "Compared with Groups (6) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG6, whose solution repeats this counting argument."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group.
 
 1. Prove that if $H < G$ is a proper subgroup, then $G$ is not the union of conjugates of $H$.

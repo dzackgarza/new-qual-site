@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with $1\neq 0$.
 Recall that $x\in R$ is *nilpotent* iff $x^n = 0$ for some positive integer $n$.
 
@@ -38,7 +38,7 @@ d.
 Deduce from (a) and (b) that the set of nilpotent elements of $R$ is the intersection of all prime ideals of $R$.
 :::
 
-::: solution
+::: {.solution}
 (a) Let $\mathcal N$ be the set of nilpotent elements of $R$. Certainly
 $0\in\mathcal N$. If $a^m=0$ and $b^n=0$, then every term in the binomial
 expansion of

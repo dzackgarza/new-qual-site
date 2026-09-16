@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 In view of (3.10), one might ask conversely, is every plane curve with nodes a projection of a nonsingular curve in $\PP^3$?
 Show that the curve $xy+x^4+y^4=0$ (assume $\characteristic k \neq 2$) gives a counterexample.
 :::

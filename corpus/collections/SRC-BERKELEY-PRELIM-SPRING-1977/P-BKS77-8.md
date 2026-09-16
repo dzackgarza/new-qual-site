@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Find as long a list as possible of pairwise nonsimilar real matrices such that every matrix in the list has characteristic polynomial
 \[
 (x-1)^5(x+1)

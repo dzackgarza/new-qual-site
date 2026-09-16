@@ -15,6 +15,6 @@ audit:
   note: Checked against Complex Analysis, Problem 11, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 What is the image of $\{ z | \mathrm { R e } ( z ) > \mathrm { I m } ( z ) > 0 \}$ under the mapping $e ^ { z ^ { 2 } } ?$
 :::

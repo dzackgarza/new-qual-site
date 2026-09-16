@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a hypersurface defined by an equation of degree $d$ has degree $d$.
 :::

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 (a) Prove that if $G$ is finite group and $\lambda(x)$ is a linear character of $G$, then for any irreducible character $\chi$ of $G$, the function $\chi^*$ defined by $\chi^*(\sigma)=\lambda(\sigma)\chi(\sigma)$ for all $\sigma\in G$ is also an irreducible character of $G$.
 
 (b) Let $A:G\to GL_n(\mathbb{C})$ and $B:G\to GL_n(\mathbb{C})$ be two representations of a finite group $G$.

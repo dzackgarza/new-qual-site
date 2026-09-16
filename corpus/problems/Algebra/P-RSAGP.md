@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What is a bilinear form on a vector space $V$ over a field $K$?
 (2) When are two bilinear forms equivalent (congruent)?
 (3) What is an orthogonal matrix $Q \in \operatorname{O}(n)$, and what are its special geometric and algebraic properties?
 :::
 
-::: solution
+::: {.solution}
 A bilinear form on a $K$-vector space $V$ is a map
 \[
 B:V\times V\to K

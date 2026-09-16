@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a distribution on $\mathbb{R}^n$ such that the support of $F$, $\operatorname{supp}(F) = \{0\}$.
 Let $\alpha = (\alpha_1, \cdots, \alpha_n)$ with $\alpha_i$ nonnegative integers, and $\delta$ be the delta distribution centered at $0$.
 
@@ -39,9 +39,9 @@ $$
 3. There exist constants $c_\alpha$ ($|\alpha| \leq N$) such that $F = \sum_{|\alpha| \leq N} c_\alpha \partial^\alpha \delta$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A distribution supported at the origin has finite order.
-::: proof
+::: {.proof}
 Choose $\chi\in C_c^\infty(\mathbb R^n)$ with $\chi=1$ on a neighborhood of $0$, and let $K=\operatorname{supp}\chi$. Since
 \[
 \operatorname{supp}F=\{0\},
@@ -74,7 +74,7 @@ Applying this to $\psi=\chi\varphi$ and using Leibniz's rule gives, after absorb
 :::
 
 <1>2. Vanishing of the $N$-jet at the origin forces annihilation.
-::: proof
+::: {.proof}
 Suppose
 \[
 \partial^\alpha\varphi(0)=0
@@ -120,7 +120,7 @@ Letting $\varepsilon\downarrow0$ yields
 :::
 
 <1>3. Identify $F$ with a finite linear combination of derivatives of $\delta$.
-::: proof
+::: {.proof}
 Choose $\rho\in C_c^\infty(\mathbb R^n)$ with $\rho=1$ near $0$. For $|\alpha|\le N$, set
 \[
 a_\alpha

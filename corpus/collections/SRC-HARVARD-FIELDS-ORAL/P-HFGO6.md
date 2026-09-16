@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Does there exist a Galois extension whose Galois group is the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Yes. More generally, every finite group occurs as the Galois group of some
 field extension.
 
@@ -45,7 +45,7 @@ K=k(x_g:g\in Q_8).
 \]
 
 <1>1. The group $Q_8$ acts faithfully on $K$ by $k$-automorphisms.
-::: proof
+::: {.proof}
 For $h\in Q_8$, define
 \[
 h(x_g)=x_{hg}
@@ -67,7 +67,7 @@ is the fixed field, then $K/F$ is a finite Galois extension and
 \[
 \operatorname{Gal}(K/F)=Q_8.
 \]
-::: proof
+::: {.proof}
 Artin's fixed-field theorem says that if a finite group $G$ acts faithfully by
 automorphisms on a field $K$, then
 \[

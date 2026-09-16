@@ -15,7 +15,7 @@ audit:
   note: Checked against Differential Equations, Problem 25, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Prove the following properties of the Bessel functions of the first kind:
 
 (a) ${ \frac { d } { d x } } \left( x ^ { \nu } J _ { \nu } ( x ) \right) = x ^ { \nu } J _ { \nu - 1 } ( x )$

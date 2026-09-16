@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 26, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Describe the linear transformations whose invariant subspaces are
 
 (a) 3-dimensional sphere $x _ { 1 } ^ { 2 } + x _ { 2 } ^ { 2 } + x _ { 3 } ^ { 2 } = R ^ { 2 }$ in R3,

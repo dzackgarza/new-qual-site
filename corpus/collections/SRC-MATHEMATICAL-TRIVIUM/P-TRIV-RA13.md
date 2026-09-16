@@ -19,6 +19,6 @@ audit:
   note: Replaced the unresolved-extraction note with the limit displayed in Real Analysis Problem 13 on page 9 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Find $\displaystyle\lim_{x \to 0} \frac{\sin\tan x - \tan\sin x}{\arcsin\arctan x - \arctan\arcsin x}$.
 :::

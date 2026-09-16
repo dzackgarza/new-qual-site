@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Is $\PP^1 \times \PP^1$ a projective variety?
 Prove it.
 

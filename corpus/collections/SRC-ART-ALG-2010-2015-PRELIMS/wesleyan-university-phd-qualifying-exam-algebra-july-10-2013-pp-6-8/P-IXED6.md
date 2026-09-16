@@ -39,13 +39,13 @@ There is $x \in R$ with $x \equiv c \bmod (a)$ and $x \equiv d \bmod (b)$
 just in case $$c \equiv d \bmod (a) \vee (b).$$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The join is
 $$
 (a)\vee(b)=(a)+(b)=\{ua+vb:u,v\in R\}.
 $$
 
-::: proof
+::: {.proof}
 The displayed set contains zero, is closed under subtraction,
 and is closed under multiplication by any $r\in R$:
 $r(ua+vb)=(ru)a+(rv)b$. It is therefore an ideal.
@@ -58,7 +58,7 @@ hence the asserted identification with the join.
 <1>2. A greatest common divisor $g$ of $a$ and $b$ generates
 this ideal; in particular, $g=ra+sb$ for suitable $r,s\in R$.
 
-::: proof
+::: {.proof}
 Because $R$ is a PID, step <1>1 gives $(a)+(b)=(g)$ for
 some $g\in R$. This generator is nonzero because the ideal
 contains $a\ne0$. Membership of $a,b$ in $(g)$ says that
@@ -76,7 +76,7 @@ Hence any choice of gcd is a generator of the join.
 <1>3. The simultaneous congruences are solvable exactly when
 $c-d\in(a)\vee(b)$.
 
-::: proof
+::: {.proof}
 If $x$ satisfies the congruences, then
 $c-x\in(a)$ and $x-d\in(b)$. Adding gives
 $c-d\in(a)+(b)$, which is the required compatibility.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Complex Analysis, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute the Laurent series of $f ( z ) = \sin { \frac { z } { 1 - z } }$ around $z _ { 0 } = 1 ;$ give the region of convergence.
 :::

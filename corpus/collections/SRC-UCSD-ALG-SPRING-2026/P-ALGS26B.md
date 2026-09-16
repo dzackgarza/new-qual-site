@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group and $p$ is a prime divisor of $|G|$. Let
 $\operatorname{Syl}_p(G)$ denote the set of all Sylow $p$-subgroups of $G$, and
 $$

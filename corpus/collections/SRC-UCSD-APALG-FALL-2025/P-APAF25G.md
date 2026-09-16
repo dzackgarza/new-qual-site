@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V,\varphi)$ be a finite-dimensional irreducible complex representation of a finite group $G$, and let $\chi$ be its character.
 Show that for any $g_1,g_2\in G$ we have
 \[

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove Pascal's theorem: if $A, B, C, A^{\prime}, B^{\prime}, C^{\prime}$ are any six points on a conic, then the points $P=A B^{\prime} \cdot A^{\prime} B$, $Q=A C^{\prime} \cdot A^{\prime} C$, and $R=B C^{\prime} \cdot B^{\prime} C$ are collinear.
 
 ![Pascal's theorem: the six points $A, B, C, A^{\prime}, B^{\prime}, C^{\prime}$ on a conic and the collinear points $P, Q, R$.](../../../assets/algebraic-geometry/curves-and-surfaces/pascal-theorem-six-points-on-conic.png){width=350px}

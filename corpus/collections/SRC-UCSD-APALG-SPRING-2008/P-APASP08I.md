@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute the Schur function expansion of $s_{2,2} \times s_{2,1}$ by constructing the standard tableaux yielded by the Littlewood-Richardson rule.
 
 **(a)** Check your result by means of the SF package.
@@ -26,7 +26,7 @@ Compute the Schur function expansion of $s_{2,2} \times s_{2,1}$ by constructing
 **(b)** Give a representation-theoretic interpretation of the coefficients in this expansion.
 :::
 
-::: solution
+::: {.solution}
 By the Littlewood--Richardson rule,
 \[
 s_{(2,2)}s_{(2,1)}

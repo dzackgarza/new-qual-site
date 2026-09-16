@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State the Sylow theorems.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be a finite group and write
 \[
 |G|=p^n m,
@@ -34,19 +34,19 @@ Let $G$ be a finite group and write
 for a prime $p$.
 
 <1>1. Existence.
-::: proof
+::: {.proof}
 There exists a subgroup $P\le G$ of order $p^n$. Such a subgroup is called a
 Sylow $p$-subgroup.
 :::
 
 <1>2. Containment and conjugacy.
-::: proof
+::: {.proof}
 Every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup, and any two
 Sylow $p$-subgroups of $G$ are conjugate in $G$.
 :::
 
 <1>3. Number of Sylow subgroups.
-::: proof
+::: {.proof}
 If $n_p$ denotes the number of Sylow $p$-subgroups, then
 \[
 n_p\equiv1\pmod p

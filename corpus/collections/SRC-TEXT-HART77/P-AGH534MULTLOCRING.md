@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a noetherian local ring with maximal ideal $\mfm$.
 For any $l>0$, let $\psi(l)=\operatorname{length}\left(A / \mfm^l\right)$.
 We call $\psi$ the **Hilbert-Samuel function of $A$**.

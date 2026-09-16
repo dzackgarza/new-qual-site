@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. If $C$ is a curve of genus $g$, show that the diagonal $\Delta \subseteq C \times C$ has self-intersection $\Delta^2=2-2 g$. (Use the definition of $\Omega_{C / k}$ in (II, §8).)
 
 b. Let $l=C \times \mathrm{pt}$ and $m=\mathrm{pt} \times C$. If $g \geqslant 1$, show that $l, m$, and $\Delta$ are linearly independent in $\Num(C \times C)$. Thus $\Num(C \times C)$ has rank $\geqslant 3$, and in particular,

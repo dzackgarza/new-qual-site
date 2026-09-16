@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $T\colon M_n(\mathbb{R})\to M_n(\mathbb{R})$ be the transformation such that
 \[
 T(X) = \frac12\bigl(X - X^T\bigr).

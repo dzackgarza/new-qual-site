@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the following:
 
 a. Every noetherian topological space is compact.

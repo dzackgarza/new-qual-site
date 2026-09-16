@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\tilde X$ be the projective closure of $X$ and show $\tilde X = X\union \bd X$, where $\bd X = \ts{x_0 = 0} \intersect \tilde X$.
 :::

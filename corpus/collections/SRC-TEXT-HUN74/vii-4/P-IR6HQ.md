@@ -21,7 +21,7 @@ audit:
 Show that if $q$ is the minimal polynomial of a linear transformation $\phi: E\to E$ with $\dim_k E = n$ then $\deg q \leq n$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the minimal polynomial $q(x) \in k[x]$ of an endomorphism $\phi \in \operatorname{End}_k(E)$ on an $n$-dimensional vector space $E$ has degree at most $n$.
 
 <1>1. Characteristic polynomial and the Cayley–Hamilton Theorem:

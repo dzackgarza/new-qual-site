@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a scheme of finite type over an algebraically closed field $k$.
 Show that the function
 \[

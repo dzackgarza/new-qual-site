@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a Principal Ideal Domain (PID) and let $A \in M_n(R)$ be an $n \times n$ matrix representing an $R$-module homomorphism $A: R^n \to R^n$.
 Let $M = R^n / \operatorname{im}(A)$ be the cokernel module.
 Prove that the following three conditions are equivalent:
@@ -31,7 +31,7 @@ Prove that the following three conditions are equivalent:
 (3) The Smith Normal Form of $A$ has exactly $n$ non-zero invariant factors $d_1, d_2, \dots, d_n \ne 0$.
 :::
 
-::: solution
+::: {.solution}
 Take Smith normal form
 \[
 PAQ=\operatorname{diag}(d_1,\dots,d_n),

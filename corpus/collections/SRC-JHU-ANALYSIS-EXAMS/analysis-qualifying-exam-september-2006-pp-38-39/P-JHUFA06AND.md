@@ -31,11 +31,11 @@ Let $D=\{z\in\mathbb C:|z|<1\}$ and $H=\{w\in\mathbb C:\operatorname{Im}w>0\}$. 
 Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\left| f ^ { \prime } ( 0 ) \right|$
 :::
 
-::: solution
+::: {.solution}
 The maximum is $\boxed{6}$.
 
 <1>1. Schwarz's lemma gives $|f'(0)|\leq6$.
-::: proof
+::: {.proof}
 Define
 $$
 g(z)=\frac{f(z)-3i}{f(z)+3i}.
@@ -56,7 +56,7 @@ bound [@SS03].
 :::
 
 <1>2. Explicit maps attain the bound.
-::: proof
+::: {.proof}
 For $|\lambda|=1$, set
 $$
 f_\lambda(z)=3i\frac{1+\lambda z}{1-\lambda z}.

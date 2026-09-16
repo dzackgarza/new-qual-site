@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Classify all abelian groups of order $80$ up to isomorphism.
 :::

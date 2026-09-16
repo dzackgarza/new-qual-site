@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a nonsingular projective curve.
 Suppose that $X$ is a locally closed subvariety of a variety $Y$.
 Show that $X$ is in fact a closed subset of $Y$.

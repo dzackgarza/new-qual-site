@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Show that for each \( \epsilon>0 \) the following function is the Fourier transform of an $L^1(\RR^n)$ function:
 \[
 F(\xi) \da \qty{1 \over 1 + \abs{\xi}^2}^{\epsilon}

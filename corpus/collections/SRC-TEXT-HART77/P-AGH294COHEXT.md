@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use (Ex. 9.3) to prove that if
 \[
 0 \to \mcf' \to \mcf \to \mcf'' \to 0

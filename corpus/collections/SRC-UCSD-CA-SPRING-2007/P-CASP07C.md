@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be analytic in the disk $B(0, 2)$.
 Show that there is a function $g(z)$, analytic in the unit disk $\mathbb{D}$, such that the series $\sum_{n=1}^{\infty} f^{(n)}(z)$ converges to $g$ in $\mathcal{O}(\mathbb{D})$.
 :::
 
-::: solution
+::: {.solution}
 The statement is false as printed. Take
 \[
 f(z)={1\over3-z},

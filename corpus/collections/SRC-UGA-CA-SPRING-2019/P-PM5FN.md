@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R>0$. Suppose $f$ is holomorphic on $\ts{z\st \abs{z} < 3R}$. Let
 $$
 M_{R}:=\sup _{|z| \leq R}|f(z)|, \quad N_{R}:=\sup _{|z| \leq R}\left|f^{\prime}(z)\right|
@@ -29,7 +29,7 @@ Estimate $N_{R}$ in terms of $M_{2 R}$ from above.
 
 :::
 
-:::{.solution}
+::: {.solution}
 First note that by the maximum modulus principal, it suffices to consider sups on the boundary, i.e.
 \[
 M_R = \sup_{\abs{z} = R}\abs{f(z)}, \qquad N_R = \sup_{\abs{z} = R} \abs{f'(z)}

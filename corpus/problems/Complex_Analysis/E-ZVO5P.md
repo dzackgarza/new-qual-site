@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f$ has a primitive $F$ on $\Omega$ then $\displaystyle\int_\gamma f = 0$ for every closed curve $\gamma \subseteq \Omega$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Let $F$ be a primitive of $f$, so $\dd{}{z}F = f$.
 Then
 \[

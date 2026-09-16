@@ -16,7 +16,7 @@ audit:
   note: The unusual constants 85 and 77 were checked directly on the retained PDF page.
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that the initial-value problem
 \[
 \frac{dx}{dt}=3x+85\cos x,

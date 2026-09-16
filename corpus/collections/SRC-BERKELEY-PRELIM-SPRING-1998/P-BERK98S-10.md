@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 P_i=(a\cos\theta_i,b\sin\theta_i),\qquad i=1,2,3,

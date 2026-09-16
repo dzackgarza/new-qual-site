@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \PP^n$ be a nonempty algebraic set, and let $\theta: \AA^{n+1} \sm \ts{(0,\ldots,0)} \to \PP^n$ send the point with affine coordinates $(a_0,\ldots,a_n)$ to the point with homogeneous coordinates $\tv{a_0 : \cdots : a_n}$.
 The **affine cone** over $Y$ is
 \[
@@ -34,7 +34,7 @@ The projective closure $\overline{C(Y)}$ in $\PP^{n+1}$ is called the **projecti
 ![The cone $C(Y) \subseteq \AA^3$ over a curve $Y \subseteq \PP^2$.](../../../assets/algebraic-geometry/varieties/affine-cone-over-curve-in-p2.png){width=400px}
 :::
 
-::: solution
+::: {.solution}
 **Part 1.** The set $C(Y)$ is algebraic because it is of the form $C(Y) = V(I(Y))$.
 That the ideal is again $I(Y)$: a polynomial $f$ vanishing on $C(Y)$ vanishes at every $\vector{a} \neq \vector{0}$ of the cone, and reading $\vector{a}$ as homogeneous coordinates on $\PP^n$ shows $f$ vanishes on $Y$.
 Conversely, if $f \in I(Y)$ is homogeneous then $f(\lambda \vector{a}) = \lambda^{\deg f} f(\vector{a}) = 0$, so $f$ vanishes on $C(Y) \sm \ts{\vector{0}}$, and any homogeneous polynomial of positive degree vanishes at $\vector{0}$ as well.

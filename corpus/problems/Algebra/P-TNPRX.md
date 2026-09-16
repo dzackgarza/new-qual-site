@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give a necessary and sufficient condition for a cyclic group to be solvable.
 :::
 
-::: solution
+::: {.solution}
 Every cyclic group is abelian, and every abelian group is solvable: its commutator subgroup is trivial.
 
 Thus if $G$ is cyclic,

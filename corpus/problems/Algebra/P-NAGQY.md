@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For a finite group $G$, what is its complex character table? In what fields do its entries lie?
 :::
 

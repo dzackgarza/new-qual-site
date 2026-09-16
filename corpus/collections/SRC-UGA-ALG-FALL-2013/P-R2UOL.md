@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F = \FF_2$ and let $\bar F$ denote its algebraic closure.
 
 a. Show that $\bar F$ is not a finite extension of $F$.
@@ -24,7 +24,7 @@ b. Suppose that $\alpha \in \bar F$ satisfies $\alpha^{17} = 1$ and $\alpha\neq 
 Show that $F(\alpha)/F$ has degree 8.
 :::
 
-::: solution
+::: {.solution}
 (a) Suppose for contradiction that $\bar F/F$ were finite. Then $\bar F$
 would be a finite field, say with $q$ elements. Every $a\in\bar F$ satisfies
 $a^q=a$, so for every $a\in\bar F$,

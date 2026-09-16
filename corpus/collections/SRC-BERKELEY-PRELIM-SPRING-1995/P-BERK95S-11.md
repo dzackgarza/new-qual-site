@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $S\subset\mathbb R^n$ be finite with $0\in S$. Suppose $\varphi:S\to S$ satisfies
 \[
 \varphi(0)=0

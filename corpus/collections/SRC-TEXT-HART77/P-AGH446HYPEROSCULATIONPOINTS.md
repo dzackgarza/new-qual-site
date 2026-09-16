@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $X$ be a curve of genus $g$ embedded birationally in $\PP^2$ as a curve of degree $d$ with $r$ nodes. Generalize the method of (Ex. 2.3) to show that $X$ has
 $$
 6(g-1)+ 3d

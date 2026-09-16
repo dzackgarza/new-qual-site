@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a scheme.
 For any $x \in X$, let $\OO_x$ be the local ring at $x$ and $\mfm_x$ its maximal ideal.
 Define the residue field of $x$ on $X$ to be the field $k(x) = \OO_x / \mfm_x$.

@@ -23,7 +23,7 @@ audit:
   note: "Compared with Groups (9) of Arango-Piñeros, Some quals problems; corrected the misspelling clyclic; merged the duplicate P-EMAG9, whose solution repeats this element-order count."
 ---
 
-::: problem
+::: {.problem}
 1. Let $G$ be a group of order $n$.
    Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$.
    Show that $G$ is cyclic.

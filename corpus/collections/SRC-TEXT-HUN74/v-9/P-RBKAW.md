@@ -22,7 +22,7 @@ review: draft
 If $F$ is a radical extension field of $K$ and $E$ is an intermediate field, then $F$ is a radical extension of $E$.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Let $F=K(\alpha_1,\dots,\alpha_n)$ be radical over $K$ and $K\subseteq E\subseteq F$.
 Then there exist $\beta_1,\dots,\beta_m$ such that

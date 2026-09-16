@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Let $X$ be a locally path-connected topological space. Prove that:
 (1) Every open subset $U \subseteq X$ is locally path-connected.
 (2) $X$ is connected if and only if $X$ is path-connected.
@@ -29,7 +29,7 @@ Let $X$ be a locally path-connected topological space. Prove that:
 (4) Every connected component (and path component) of $X$ is open in $X$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $U\subseteq X$ be open. If $x\in U$ and $V$ is a neighborhood of $x$ in $U$, then $V$ contains an open neighborhood $V'$ of $x$ in $X$ with $V'\subseteq U$. Since $X$ is locally path-connected, $V'$ contains a path-connected open neighborhood $W$ of $x$. Thus $U$ is locally path-connected.
 
 <1>2. Every path component $P$ of $X$ is open.

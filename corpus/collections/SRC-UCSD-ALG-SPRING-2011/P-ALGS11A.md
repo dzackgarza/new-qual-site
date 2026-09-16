@@ -25,7 +25,7 @@ audit:
   note: Replaced the informal solution with a complete Sylow and semidirect-product classification, including the isomorphism of the two nontrivial actions.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group with $|G| = 117 = 9 \cdot 13$ elements which contains an element of order exactly $9$.
 Classify all such groups $G$ up to isomorphism.
 :::

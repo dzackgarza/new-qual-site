@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A, B \subset \mathbb{C}$ be two disjoint nonempty compact sets.
 Consider the following property:
 
@@ -29,7 +29,7 @@ In this case, $\mathbb{C} \setminus (A \cup B)$ is disconnected.
 (iii) Exhibit two disjoint nonempty compact sets $A, B$ for which property (P) is false.
 :::
 
-::: solution
+::: {.solution}
 (i) Let $f,g$ be entire. Since $A$ and $B$ are disjoint compact sets, define
 on $K=A\cup B$ the function
 \[

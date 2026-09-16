@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the affine cubic $X = V(x(xy-1))$ is reducible and has two irreducible components.
 :::

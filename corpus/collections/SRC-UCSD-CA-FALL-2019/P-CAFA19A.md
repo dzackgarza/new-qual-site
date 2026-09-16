@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the integral $\int_0^{\infty} \frac{x^2}{x^4 + 5x^2 + 4}\,dx$.
 :::
 
-::: solution
+::: {.solution}
 Factor
 \[
 x^4+5x^2+4=(x^2+1)(x^2+4).

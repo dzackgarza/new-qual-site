@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex components, $\mathbb{C}^n$ is the set of column vectors with $n$ complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) Let $C \in M_{m,n}$ with $\operatorname{rank}(C) = m$.
@@ -29,7 +29,7 @@ Find the complementary projection.
 Find the complementary projection associated with $A$.
 :::
 
-::: solution
+::: {.solution}
 (a) Since $\operatorname{rank}C=m$, the $m\times m$ matrix $CC^H$ is positive definite and hence invertible.
 Set
 \[

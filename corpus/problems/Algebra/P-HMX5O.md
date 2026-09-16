@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give two definitions of "induced representation".
 Why are they equivalent?
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a $2n$ dimensional compact manifold without boundary.
 Show that
 $$

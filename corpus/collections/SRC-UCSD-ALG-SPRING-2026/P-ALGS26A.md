@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a group of order $5 \cdot 7 \cdot 11$.
 
 (a) Prove that $G \cong (\mathbb{Z}/11\mathbb{Z}) \rtimes (\mathbb{Z}/35\mathbb{Z})$.

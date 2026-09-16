@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use the $\varepsilon$-$\delta$ definition of the limit to prove that
 \[
 \lim_{x\to1}\frac{x^2+1}{x}=2.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $\varepsilon>0$ and choose
 \[
 \delta=\min\left\{\frac12,\sqrt{\frac\varepsilon2}\right\}.

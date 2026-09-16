@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a $\mathbb{Z}_5$-orientable manifold.
 Show that $M$ is orientable.
 :::

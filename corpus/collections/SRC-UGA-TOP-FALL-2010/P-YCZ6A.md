@@ -26,7 +26,7 @@ audit:
     giving H_0 = H_4 = Z, H_2 = Z^2, and zero homology in all other degrees.
 ---
 
-::: problem
+::: {.problem}
 Compute the homology groups of $S^2 \times S^2$.
 :::
 

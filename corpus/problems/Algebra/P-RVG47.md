@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Do you know a Lie group that has no faithful finite-dimensional representation?
 :::
 
-::: solution
+::: {.solution}
 A standard example is the universal covering group
 \[
 G=\widetilde{\operatorname{SL}_2(\mathbb R)}.

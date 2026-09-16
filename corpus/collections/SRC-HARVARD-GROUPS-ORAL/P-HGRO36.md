@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Describe the Sylow $3$-subgroups of symmetric groups.
 :::
 
-::: solution
+::: {.solution}
 Write the base-$3$ expansion of $n$ as
 \[
 n=a_0+a_1 3+a_2 3^2+\cdots+a_r3^r,
@@ -46,7 +46,7 @@ acting independently on $a_i$ disjoint blocks of size $3^i$.
 \[
 |W_i|=3^{(3^i-1)/2}.
 \]
-::: proof
+::: {.proof}
 Set $W_1=C_3$. Recursively,
 \[
 W_i=W_{i-1}^3\rtimes C_3,
@@ -67,13 +67,13 @@ e_i=1+3+\cdots+3^{i-1}=\frac{3^i-1}{2}.
 \[
 3^{\sum_i a_i(3^i-1)/2}.
 \]
-::: proof
+::: {.proof}
 The factors act on disjoint blocks, so their product is direct and their orders
 multiply. Apply <1>1 to each of the $a_i$ copies of $W_i$.
 :::
 
 <1>3. This exponent equals $v_3(n!)$.
-::: proof
+::: {.proof}
 Legendre's formula in digit-sum form gives
 \[
 v_3(n!)=\frac{n-s_3(n)}{3-1},
@@ -91,7 +91,7 @@ This is exactly the exponent in <1>2.
 :::
 
 <1>4. Hence $P$ is a Sylow $3$-subgroup of $S_n$.
-::: proof
+::: {.proof}
 By <1>2--<1>3, $P$ has order equal to the full $3$-part of $|S_n|=n!$.
 Thus it is Sylow. Every Sylow $3$-subgroup is conjugate to such a block-wreath
 product.

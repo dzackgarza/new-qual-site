@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a discrete valuation ring containing its residue field $k$.
 Let $X = \Spec R[t]$ be the affine line over $\Spec R$.
 Show that statements (a), (d), and (e) of Hartshorne II.3.20 are false for $X$.

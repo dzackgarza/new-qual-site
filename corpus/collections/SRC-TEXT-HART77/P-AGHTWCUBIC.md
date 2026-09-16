@@ -18,7 +18,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \AA^3$ be the set $Y = \ts{ (t, t^2, t^3) \st t \in k }$.
 
 - Show that $Y$ is an affine variety of dimension $1$.
@@ -30,7 +30,7 @@ Let $Y \subseteq \AA^3$ be the set $Y = \ts{ (t, t^2, t^3) \st t \in k }$.
 We say $Y$ is given by the **parametric representation** $x = t,\ y = t^2,\ z = t^3$.
 :::
 
-::: solution
+::: {.solution}
 **The coordinate ring, and the dimension.**
 \[
 A(Y) = k[x,y,z]/\gens{y - x^2,\ z - x^3} \cong k[t, t^2, t^3] \cong k[t] ,

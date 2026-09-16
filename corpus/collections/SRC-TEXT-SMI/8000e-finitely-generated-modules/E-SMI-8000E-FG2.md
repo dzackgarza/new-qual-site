@@ -34,9 +34,9 @@ audit:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. There is exactly one abelian group of order $648$ annihilated by $6$.
-::: proof
+::: {.proof}
 Let $G$ have order
 $$
 648=2^3 3^4.
@@ -74,7 +74,7 @@ $$
 :::
 
 <1>2. Classify the seven-dimensional $k[t]$-modules annihilated by $(t-2)(t-3)$.
-::: proof
+::: {.proof}
 Put
 $$
 p(t)=(t-2)(t-3).
@@ -113,7 +113,7 @@ isomorphism classes.
 :::
 
 <1>3. Classify the $7\times7$ Jordan matrices with minimal polynomial $(t-2)(t-3)$.
-::: proof
+::: {.proof}
 A matrix with this minimal polynomial is diagonalizable because the minimal
 polynomial has distinct linear factors. Both factors must actually occur, or
 the minimal polynomial would omit one of them. Thus the matrix has $r$ copies

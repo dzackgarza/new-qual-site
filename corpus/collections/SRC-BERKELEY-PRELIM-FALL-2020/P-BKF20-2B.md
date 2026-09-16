@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Prove or give a counterexample.
 
 (a) If $\sum a_n$ and $\sum b_n$ converge, then $\sum(a_n+b_n)$ converges.

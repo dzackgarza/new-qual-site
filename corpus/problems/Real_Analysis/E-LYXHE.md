@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - If $f, g$ are compactly supported, is it necessarily the case that $f\ast g$ is compactly supported?
 
 - Show that under any of the following assumptions, $f\ast g$ vanishes at infinity:

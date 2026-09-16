@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show directly that every $k$-cycle is a product of transpositions, and determine the minimum number of transpositions needed.
 :::
 
-::: solution
+::: {.solution}
 For a $k$-cycle
 \[
 \sigma=(a_1\ a_2\ \cdots\ a_k),

@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and prove Maschke's theorem.
 What can go wrong if you work over the real field?
 What can go wrong in characteristic $p$?
 :::
 
-::: solution
+::: {.solution}
 **Maschke's theorem.** Let $G$ be finite and let $k$ be a field with
 \[
 \operatorname{char}k\nmid |G|.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p : E \to X$ be a covering space.
 
 (a) If $X$ is a manifold, prove $E$ is also.

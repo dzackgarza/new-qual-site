@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify finitely-generated modules over $\ZZ$, over PIDs, and over Dedekind rings.
 :::
 

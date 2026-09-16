@@ -15,7 +15,7 @@ audit:
   note: Checked against Group B, problem B1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal M,\mu)$ be a measure space, let $f_n:X\to\mathbb R$ be measurable, and define
 \[
 M_n=\{x:|f_n(x)|\ge2^{-n}\}.

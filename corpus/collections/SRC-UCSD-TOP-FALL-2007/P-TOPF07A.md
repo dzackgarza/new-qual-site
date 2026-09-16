@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider a solid cube.
 Four of the faces are identified together by means of rigid rotations, as pictured below.
 (For example, the face $ABCD$ is identified with $BFGC$ via an affine map preserving the order of vertices.)

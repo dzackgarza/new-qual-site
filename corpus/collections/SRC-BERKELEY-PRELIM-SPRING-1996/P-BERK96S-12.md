@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Identify the real vector space $M_{2\times2}(\mathbb R)$ with $\mathbb R^4$ and define
 \[
 F:M_{2\times2}(\mathbb R)\to M_{2\times2}(\mathbb R),

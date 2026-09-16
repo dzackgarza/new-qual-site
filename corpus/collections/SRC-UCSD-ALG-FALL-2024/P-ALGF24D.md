@@ -25,7 +25,7 @@ audit:
   note: Checked that the scalar relation first vanishes in I tensor M using part (a), then lifts through K tensor M; no finite-generation assumption on M or I is used in part (a).
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a commutative ring with identity, and suppose $M$ is a flat $A$-module.
 
 (a) Prove that, for every ideal $I$ of $A$, $I \otimes_A M \simeq IM$ with an isomorphism which sends $a \otimes x$ to $ax$ for every $a \in I$ and $x \in M$.
@@ -53,7 +53,7 @@ for every $i = 1, \ldots, n$; that means
 \]
 :::
 
-::: hint
+::: {.hint}
 Use flatness and the short exact sequence in part (b).
 :::
 

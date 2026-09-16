@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - $\ZZ$
 
 - $\ts{1}$

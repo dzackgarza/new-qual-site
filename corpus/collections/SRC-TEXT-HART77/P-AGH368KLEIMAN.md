@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the following theorem of Kleiman: if $X$ is a noetherian, integral, separated, locally factorial scheme, then every coherent sheaf on $X$ is a quotient of a locally free sheaf (of finite rank).
 
 a. First show that open sets of the form $X_s$, for various $s \in \Gamma(X, \mcl)$, and various invertible sheaves $\mcl$ on $X$, form a base for the topology of $X$.

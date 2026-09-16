@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 
 (a) Suppose $f : [0,1] \to \mathbb{C}$ is a continuous function that is differentiable a.e. with respect to Lebesgue measure.
@@ -47,9 +47,9 @@ Then $d\nu = h\,d\mu$ for some $h \in L^1(X, d\mu)$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 Let $F:[0,1]\to[0,1]$ be the Cantor--Lebesgue function. Then $F$ is continuous, differentiable almost everywhere, and
 \[
 F'(x)=0
@@ -66,7 +66,7 @@ Thus the asserted Fundamental Theorem of Calculus identity need not hold without
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 Let $a\ne b$. Since a locally compact Hausdorff space is completely regular, there is a continuous function
 \[
 f:X\to[0,1]
@@ -82,7 +82,7 @@ Hence $f(a)\ne f(b)$.
 :::
 
 <1>3. Part (c) is true.
-::: proof
+::: {.proof}
 For each $n$, the kernel
 \[
 K_n:=\ker f_n
@@ -104,7 +104,7 @@ dense in $X$. But this intersection is exactly
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 First suppose $E,F$ are measurable with
 \[
 0<\mu(E),\mu(F)<\infty.

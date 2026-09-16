@@ -18,7 +18,7 @@ audit:
   note: Replaced the migrated solution fragment, which falsely said there are no homomorphisms Z^2 -> Z/2, by the required injectivity obstruction.
 ---
 
-::: problem
+::: {.problem}
 Show that there is no covering map
 \[
 p:T^2=S^1\times S^1\longrightarrow\RP^2.

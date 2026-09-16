@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $M = ([0, 1] \times [0, 1]) / \sim$ be the standard **Möbius strip**, where $(0, y) \sim (1, 1 - y)$.
 (1) Prove that $M$ deformation-retracts onto its central circle $C = \{[(x, 1/2)] \mid x \in [0, 1]\} \cong S^1$.
 (2) Compute the fundamental group $\pi_1(M, x_0) \cong \mathbb{Z}$ and identify its generator $[\alpha]$.
 (3) Describe the boundary curve $\partial M$ and prove that the inclusion $\iota: \partial M \hookrightarrow M$ induces the map $\iota_*: \pi_1(\partial M) \to \pi_1(M)$ given by multiplication by $2$ ($[\partial M] = \alpha^2 \in \pi_1(M)$).
 :::
 
-::: solution
+::: {.solution}
 Let $q:[0,1]\times[0,1]\to M$ be the quotient map.
 
 <1>1. Define

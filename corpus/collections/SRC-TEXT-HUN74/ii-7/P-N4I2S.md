@@ -29,14 +29,14 @@ audit:
 Show that $S_n$ is solvable for $n\leq 4$ but $S_3$ and $S_4$ are not nilpotent.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The groups $S_1$ and $S_2$ are solvable.
-::: proof
+::: {.proof}
 Both are abelian, and every abelian group is solvable.
 :::
 
 <1>2. The group $S_3$ is solvable.
-::: proof
+::: {.proof}
 The chain
 \[
 S_3\trianglerighteq A_3\trianglerighteq\{e\}
@@ -51,7 +51,7 @@ which are abelian. Hence $S_3$ is solvable.
 :::
 
 <1>3. The group $S_4$ is solvable.
-::: proof
+::: {.proof}
 Let
 \[
 V=\{e,(12)(34),(13)(24),(14)(23)\}.
@@ -74,14 +74,14 @@ All factors are abelian, so $S_4$ is solvable.
 :::
 
 <1>4. The center of $S_3$ is trivial.
-::: proof
+::: {.proof}
 A central element must commute with $(12)$. Of the six elements of $S_3$, the
 centralizer of $(12)$ is $\{e,(12)\}$. But $(12)$ does not commute with $(23)$,
 so the only central element is $e$.
 :::
 
 <1>5. The center of $S_4$ is trivial.
-::: proof
+::: {.proof}
 Let $\sigma\in Z(S_4)$. Since $\sigma$ commutes with every transposition,
 \[
 \sigma(ij)\sigma^{-1}=(ij)
@@ -96,7 +96,7 @@ fixed and $\sigma=e$.
 :::
 
 <1>6. The groups $S_3$ and $S_4$ are not nilpotent.
-::: proof
+::: {.proof}
 Every nontrivial nilpotent group has nontrivial center: if its upper central
 series reaches the whole group, the first nontrivial term is contained in the
 center. By <1>4 and <1>5, both $S_3$ and $S_4$ are nontrivial with trivial

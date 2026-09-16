@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given a presheaf $\mcf$ on $X$, define a topological space $\operatorname{Spe}(\mcf)$, called the **espace étalé** of $\mcf$, as follows.
 As a set, $\operatorname{Spe}(\mcf) = \Union_{P \in X} \mcf_P$.
 Define a projection map $\pi: \operatorname{Spe}(\mcf) \to X$ by sending $s \in \mcf_P$ to $P$.
@@ -27,6 +27,6 @@ Show that the sheaf $\mcf^{+}$ associated to $\mcf$ can be described as follows:
 In particular, the original presheaf $\mcf$ was a sheaf if and only if for each $U$ the group $\mcf(U)$ equals the set of all continuous sections of $\operatorname{Spe}(\mcf)$ over $U$.
 :::
 
-::: remark
+::: {.remark}
 This exercise connects Hartshorne's definition of a sheaf with the espace étalé definition used elsewhere in the literature, for example in Godement.
 :::

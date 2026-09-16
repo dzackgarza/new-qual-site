@@ -30,17 +30,17 @@ audit:
   note: "Compared with Rings (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAR3, whose solution repeats this argument."
 ---
 
-::: problem
+::: {.problem}
 $R$ is a commutative ring with 1. Prove that if $I$ is a maximal ideal in $R$, then $R/I$ is a field.
 Prove that if $R$ is a PID, then every nonzero prime ideal in $R$ is maximal.
 Conclude that if $R$ is a PID and $p\in R$ is prime, then $R/(p)$ is a field.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $I$ is maximal in a commutative unital ring $R$,
 then $R/I$ is a field.
 
-::: proof
+::: {.proof}
 A maximal ideal is proper, so $1+I\ne0+I$.
 For a nonzero coset $a+I$, one has $a\notin I$.
 The ideal $I+(a)$ strictly contains $I$, and hence
@@ -52,7 +52,7 @@ the nonzero commutative quotient is invertible.
 
 <1>2. Every nonzero prime ideal $P$ of a PID is maximal.
 
-::: proof
+::: {.proof}
 Write $P=(a)$ with $a\ne0$. Let $J$ be an ideal
 containing $P$, and write $J=(b)$. The containment
 gives $a=bc$ for some $c\in R$.
@@ -67,7 +67,7 @@ the proper ideal $P$ and $R$, proving maximality.
 
 <1>3. If $p$ is a prime element of a PID, then $R/(p)$ is a field.
 
-::: proof
+::: {.proof}
 By definition a prime element is nonzero and not
 a unit, and $p\mid ab$ implies $p\mid a$ or
 $p\mid b$. These assertions say respectively that

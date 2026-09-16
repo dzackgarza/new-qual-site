@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 - Suppose that $G$ is a finitely generated group.
   Let $n$ be a positive integer.
   Prove that $G$ has only finitely many subgroups of index $n$

@@ -19,6 +19,6 @@ audit:
   note: Restored the garbled primes against Differential Equations Problem 14 on page 22 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Solve $y'' - 6y' + 15y = 2\sin 3t$ with $y(0) = -1$ and $y'(0) = 4$.
 :::

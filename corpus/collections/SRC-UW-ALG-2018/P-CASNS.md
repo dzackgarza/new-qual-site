@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $\alpha,\beta$ denote the unique positive real $5^{\text{th}}$ root of 7 and $4^{\text{th}}$ root of 5, respectively.
 Determine the degree of $\mathbb Q(\alpha,\beta)$ over $\mathbb Q$.
 :::

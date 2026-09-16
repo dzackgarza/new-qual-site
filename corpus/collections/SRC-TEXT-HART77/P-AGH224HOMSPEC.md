@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a ring and let $(X, \OO_X)$ be a scheme.
 Given a morphism $f: X \to \Spec A$, we have an associated map on sheaves $f^{\sharp}: \OO_{\Spec A} \to f_* \OO_X$.
 Taking global sections we obtain a homomorphism $A \to \Gamma(X, \OO_X)$.

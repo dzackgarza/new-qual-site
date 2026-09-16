@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Classify the groups of order $12$ up to isomorphism.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ have order $12=2^2\cdot3$. Sylow gives
 \[
 n_3\equiv1\pmod3,

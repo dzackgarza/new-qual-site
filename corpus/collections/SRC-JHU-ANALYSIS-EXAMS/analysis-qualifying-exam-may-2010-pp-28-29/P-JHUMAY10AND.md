@@ -34,10 +34,10 @@ $$
 Show that there exists a constant $c \in \mathbb { R }$ and a holomorphic function $f$ on $U$ such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The holomorphic gradient of $h$ has a real residue on the exterior annulus.
 
-::: proof
+::: {.proof}
 Write $z=x+iy$ and put $q(z)=h_x(z)-ih_y(z)$. The
 Cauchy–Riemann equations for $q$ are precisely
 $h_{xx}=-h_{yy}$ and $h_{xy}=h_{yx}$, so harmonicity
@@ -61,7 +61,7 @@ and $a_{-1}$ is real. Denote this real number by $a$.
 
 <1>2. Subtracting $a/z$ gives a holomorphic gradient with a single-valued primitive.
 
-::: proof
+::: {.proof}
 Set $c=-a$. The function $q+c/z=q-a/z$ has no
 $z^{-1}$ term. Define
 $$
@@ -90,7 +90,7 @@ no logarithm branch is assumed.
 
 <1>3. An additive real constant makes the real part equal to the required function.
 
-::: proof
+::: {.proof}
 Put $H(z)=h(z)+c\log|z|$. On $U$,
 $$
 (\log|z|)_x-i(\log|z|)_y

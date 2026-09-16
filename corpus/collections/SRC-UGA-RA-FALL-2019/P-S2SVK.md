@@ -23,14 +23,14 @@ audit:
   note: Reviewed the parametric-integral differentiation argument; it proves the stronger bound 1/(n+1), hence the required 1/n estimate.
 ---
 
-::: problem
+::: {.problem}
 Prove that for all $x \ne 0$ and all positive integers $n \ge 1$:
 $$
 \left| \frac{d^{n}}{d x^{n}} \left(\frac{\sin x}{x}\right) \right| \le \frac{1}{n}.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Express $\frac{\sin x}{x}$ as a parametric integral, justify differentiation under the integral sign, and bound the resulting integrand.
 
 <1>1. Parametric integral representation of $\frac{\sin x}{x}$:

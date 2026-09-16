@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A, B \in \mathbb{R}^{n \times n}$ be two real symmetric matrices.
 If $AB = BA$, show that there exists an orthogonal matrix $Q \in \mathbb{R}^{n \times n}$ such that $Q^T AQ$ and $Q^T BQ$ are both diagonal.
 :::
 
-::: solution
+::: {.solution}
 Because \(A\) is real symmetric, the spectral theorem gives an orthogonal decomposition
 \[
 \mathbb R^n=\bigoplus_{\lambda}E_\lambda,

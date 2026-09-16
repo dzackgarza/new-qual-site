@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 13. Suppose $f ( z )$ is holomorphic in a punctured disc $D _ { r } ( z _ { 0 } ) - \{ z _ { 0 } \}$ . Suppose also that
 
 $$
@@ -25,7 +25,7 @@ $$
 for some $\epsilon > 0$ , and all $z \ \mathrm { n e a r } \ z _ { 0 }$ . Show that the singularity of $f$ at $z _ { 0 }$ is removable.
 :::
 
-::: solution
+::: {.solution}
 Translate so that $z_0=0$. Write the Laurent expansion
 \[
 f(z)=\sum_{n=-\infty}^{\infty}a_n z^n

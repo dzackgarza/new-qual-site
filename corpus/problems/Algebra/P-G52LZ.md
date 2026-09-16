@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that every $p\dash$group is nilpotent.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be a finite $p$-group. Every nontrivial finite $p$-group has nontrivial center: by the class equation,
 \[
 |G|=|Z(G)|+\sum_i [G:C_G(x_i)],

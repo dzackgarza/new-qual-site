@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe the spectrum of the zero ring, and show that it is an initial object for the category of schemes.
 
 According to the conventions in use, all ring homomorphisms must take $1$ to $1$.

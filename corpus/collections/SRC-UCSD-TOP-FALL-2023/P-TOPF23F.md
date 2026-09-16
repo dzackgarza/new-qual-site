@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that for any $n \geq 1$ the natural quotient map $S^n \to \mathbb{RP}^n$ is not null-homotopic.
 :::
 

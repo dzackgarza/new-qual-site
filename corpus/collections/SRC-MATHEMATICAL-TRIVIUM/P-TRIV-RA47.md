@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 47, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a function f (x) such that its Fourier image ${ \tilde { f } } ( p ) = c f ( p )$ , where c is a constant.
 :::

@@ -16,11 +16,11 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove the formula $\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove by mathematical induction that for all integers $n \ge 1$, $$\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}.$$
 
 <1>1. Base case ($n = 1$): For $n = 1$, the left-hand side is $\sum_{i=1}^1 i^2 = 1^2 = 1$.

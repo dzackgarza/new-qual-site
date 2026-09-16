@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be a region such that $0 \notin G$ and $G$ is not simply connected.
 Show that the following are equivalent:
 
@@ -23,7 +23,7 @@ Show that the following are equivalent:
 (ii) Every $f \in H(G)$ can be approximated in $H(G)$ by rational functions with poles only in $\{0, \infty\}$.
 :::
 
-::: solution
+::: {.solution}
 We use the pole-set form of Runge's theorem: if $A\subset\mathbb C_\infty
 \setminus G$, then rational functions whose poles lie in $A$ are dense in
 $H(G)$ if and only if $A$ meets every connected component of

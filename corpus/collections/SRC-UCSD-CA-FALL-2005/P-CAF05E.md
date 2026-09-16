@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use the method of residues to compute the integral $\int_0^{\infty} \frac{\sin x}{x}\,dx$.
 Justify all your steps.
 
 Hint: Integrate the function $\frac{e^{iz}}{z}$ on an appropriate closed curve.
 :::
 
-::: solution
+::: {.solution}
 For $0<\varepsilon<R$, integrate
 \[
 F(z)=\frac{e^{iz}}z

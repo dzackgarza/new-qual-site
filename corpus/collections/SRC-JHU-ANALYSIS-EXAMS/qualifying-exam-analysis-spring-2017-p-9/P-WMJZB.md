@@ -40,9 +40,9 @@ $$
 converges to $f .$ (You may use the fact that a weakly convergent sequence is a bounded sequence.)
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a).
-::: proof
+::: {.proof}
 If $f_k\to f$ in norm, then continuity of the norm gives
 \[
 \|f_k\|\to\|f\|,
@@ -78,7 +78,7 @@ This proves the equivalence.
 :::
 
 <1>2. Prove part (b).
-::: proof
+::: {.proof}
 Suppose first that $H$ is finite dimensional, and let
 \[
 e_1,\dots,e_N
@@ -111,7 +111,7 @@ Thus $e_n\rightharpoonup0$ but not strongly.
 :::
 
 <1>3. Reduce part (c) to a weakly null bounded sequence.
-::: proof
+::: {.proof}
 Set
 \[
 u_k:=f_k-f.
@@ -139,7 +139,7 @@ for each $j<n$. Hence we can choose $k_n>k_{n-1}$ so large that
 :::
 
 <1>4. Show that the Cesàro means of the selected subsequence converge in norm.
-::: proof
+::: {.proof}
 Let
 \[
 A_n:=\frac1n\sum_{j=1}^n u_{k_j}.

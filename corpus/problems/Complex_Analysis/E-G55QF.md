@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$"}
+::: {.exercise title="$\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$"}
 Find a conformal map from $\DD^c \intersect \HH$ to $\HH$ using cross-ratios.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Idea: all cross-ratios send the complement of a positively oriented region $(a,b,c)$ to the half-hemisphere $(1,0,\infty)$ on $\CP^1$.
 So take $(i, -1, 1)\to (1,0,\infty)$:
 

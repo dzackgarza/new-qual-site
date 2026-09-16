@@ -27,7 +27,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 If True, give a brief proof.
 If False, give a counterexample.
@@ -53,9 +53,9 @@ Suppose that there is $M > 0$ such that $\|f_n\|_4 \leq M$ for every $n$.
 Then there is a subsequence $\{f_{n_k}\}$ such that $\lim_{k \to \infty} \int_X f_{n_k} g \, d\mu$ exists (as a complex number) for every $g \in L^{4/3}(X, \mu)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is true.
-::: proof
+::: {.proof}
 The assumption that $\mu(B)<\infty$ for every bounded Borel set makes $\mu$ locally finite. A locally finite Borel measure on $\mathbb R$ is a Radon measure, hence is inner regular on Borel sets. Therefore
 \[
 \mu(E)=\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}.
@@ -67,7 +67,7 @@ Every compact $K\subseteq E$ has $\mu(K)=0$ by hypothesis, so
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 Define
 \[
 \eta(x):=|f(x)|+|x|.
@@ -93,7 +93,7 @@ so $u_1$ also vanishes only at $0$. Thus the required approximation holds exactl
 :::
 
 <1>3. Part (c) is false.
-::: proof
+::: {.proof}
 Let
 \[
 X=\{1,2,3\},\qquad
@@ -128,7 +128,7 @@ contradicting $\nu(\{1\})=1$. Hence the assertion is false. The missing conditio
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 For each $n$, define
 \[
 T_n:L^{4/3}(X,\mu)\to\mathbb C,
@@ -163,7 +163,7 @@ Therefore
 :::
 
 <1>5. Part (e) is true.
-::: proof
+::: {.proof}
 For $1<p<\infty$, the Banach space $L^p(X,\mu)$ is reflexive. Hence the closed ball
 \[
 \{f\in L^4:\|f\|_4\le M\}

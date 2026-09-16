@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove that $L^\infty(X,\mathcal B,\mu)$ is complete in the $L^\infty$ norm.
 :::
 
-::: solution
+::: {.solution}
 Let $(f_n)$ be Cauchy in $L^\infty$.
 Choose a subsequence $(f_{n_k})$ such that
 \[

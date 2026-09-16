@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find all entire functions $f$ that satisfy
 \[
 \abs{f(z)} \geq e^{\abs{z}} && \forall z\in \CC
@@ -23,7 +23,7 @@ Find all entire functions $f$ that satisfy
 
 :::
 
-:::{.solution}
+::: {.solution}
 Claim: there are no such functions.
 Consider $g(z) \da f(z)/e^z$, which is entire since $e^z$ is nonvanishing.
 Now $g$ is entire and $\abs{g} \geq 1$ everywhere, so $\im(g) \intersect \DD$ is empty.

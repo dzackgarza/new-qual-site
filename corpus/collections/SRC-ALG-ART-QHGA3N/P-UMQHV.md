@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field of characteristic $p\neq 0$ and $f\in k[x]$ irreducible.
 Show that $f(x) = g(x^{p^d})$ where $g(x) \in k[x]$ is irreducible and separable.
 

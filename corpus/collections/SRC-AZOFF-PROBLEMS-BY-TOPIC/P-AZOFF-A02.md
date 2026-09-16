@@ -15,7 +15,7 @@ audit:
   note: Checked against Compactness, connectedness, and functions of one real variable, Problem 2, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f:\mathbb R\to\mathbb R$ is continuous and
 \[
 \lim_{x\to\pm\infty}f(x)=0.

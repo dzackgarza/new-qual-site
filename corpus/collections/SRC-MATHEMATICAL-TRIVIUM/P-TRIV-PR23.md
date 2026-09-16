@@ -19,7 +19,7 @@ audit:
   note: Restored the lost epsilon and removed stray residue against Probability Problem 23 on page 30 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Consider the sum $a$ of $10^N$ real numbers $a_k$, $a = \sum_{k=1}^{10^N} a_k$.
 Let $\tilde{a}_k$ be an approximation of $a_k$ with precision $10^{-m}$.
 Assume that the round-off errors $\delta_k = a_k - \tilde{a}_k$ are distributed uniformly within the interval $(-0.5 \cdot 10^{-m},\ 0.5 \cdot 10^{-m})$.

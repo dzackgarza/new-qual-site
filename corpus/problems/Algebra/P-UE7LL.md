@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p,q$ be primes and let $|G|=p^2q$. Show that $G$ has a nontrivial proper normal subgroup.
 :::
 
-::: solution
+::: {.solution}
 If $p=q$, then $G$ is a finite $p$-group. Its center is nontrivial, so $G$ has a nontrivial normal subgroup. Thus assume $p\ne q$.
 
 If $p>q$, Sylow's theorem gives

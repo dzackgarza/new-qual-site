@@ -25,12 +25,12 @@ audit:
   note: "Checked representative independence and balancing, descent through mA, both inverse identities, and the case m=1."
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a $\mathbb{Z}$-module, and suppose $m \in \mathbb{Z}^+$.
 Prove that $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$.
 :::
 
-::: solution
+::: {.solution}
 Write $T=A\otimes_{\mathbb Z}(\mathbb Z/m\mathbb Z)$
 and $\bar r=r+m\mathbb Z$. The inverse isomorphisms are
 $$
@@ -44,7 +44,7 @@ $$
 
 <1>1. The displayed formula defines a $\mathbb Z$-linear map $\Psi$.
 
-::: proof
+::: {.proof}
 The map $\beta:A\times(\mathbb Z/m\mathbb Z)\to A/mA$
 given by $\beta(a,\bar r)=ra+mA$ is independent of the
 representative $r$: replacing $r$ by $r+mk$ changes $ra$
@@ -63,7 +63,7 @@ abelian groups is $\mathbb Z$-linear, so this is a module map.
 <1>2. The formula for $\Phi$ descends to $A/mA$, and
 the maps are inverse.
 
-::: proof
+::: {.proof}
 The map $\eta:A\to T$, $a\mapsto a\otimes\bar1$,
 is additive. If $a=mb$, balancing gives
 $\eta(a)=(mb)\otimes\bar1=b\otimes\bar m=0$.

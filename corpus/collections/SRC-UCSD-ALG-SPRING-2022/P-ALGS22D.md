@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be an algebraically closed field.
 For which $m \geq 1$ is it true that every matrix $A \in M_2(F)$ such that $A^m = I$ is diagonalizable?
 (The answer may depend on the characteristic of $F$.)

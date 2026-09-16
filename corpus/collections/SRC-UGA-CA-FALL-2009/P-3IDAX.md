@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Strategy: By contradiction with Liouville's Theorem

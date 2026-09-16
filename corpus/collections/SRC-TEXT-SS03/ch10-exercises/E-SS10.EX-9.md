@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 9. Use the formula for $r _ { 2 } ( n )$ to prove the following:
 
 (a) If $n = p ,$ where p is a prime of the form $4 k + 1$ , then $r _ { 2 } ( n ) = 8$ . This implies that n can be written in a unique way as $n = n _ { 1 } ^ { 2 } + n _ { 2 } ^ { 2 }$ , except for the signs and reordering of $n _ { 1 }$ and $n _ { 2 }$ .
@@ -25,7 +25,7 @@ audit:
 (c) In general, n can be represented as the sum of two squares if and only if all the primes of the form $4 k + 3$ that arise in the prime decomposition of n occur with even exponents.
 :::
 
-::: solution
+::: {.solution}
 Use the formula
 \[
 r_2(n)=4\bigl(d_1(n)-d_3(n)\bigr),

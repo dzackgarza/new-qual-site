@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional vector space over a field $F$ and let $T: V \to V$ be a linear operator with characteristic polynomial $f(x) = \det(x I - T) \in F[x]$.
 
 (a) Show that $f(x)$ is irreducible in $F[x]$ if and only if there are no proper non-zero $T$-invariant subspaces of $V$ (i.e. $W \le V$ with $T(W) \subseteq W$ implies $W = \{0\}$ or $W = V$).
@@ -23,7 +23,7 @@ Let $V$ be a finite-dimensional vector space over a field $F$ and let $T: V \to 
 (b) If $f(x)$ is irreducible in $F[x]$ and $\operatorname{char}(F) = 0$, show that $T$ is diagonalizable over the algebraic closure $\overline{F}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the equivalence between irreducibility of the characteristic polynomial and simplicity of the $F[x]$-module $V$ in (a), and deduce diagonalizability over $\overline{F}$ in characteristic zero in (b).
 
 <1>1. Part (a) ($\implies$): If $f(x)$ is irreducible, $V$ has no proper non-zero $T$-invariant subspaces.

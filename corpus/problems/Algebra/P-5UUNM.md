@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $Z(G) \leq G$ is always characteristic.
 :::
 
-:::{.solution}
+::: {.solution}
 Let $\psi\in \Aut(G)$.
 For one containment, we can show $\psi(g) = h = h\psi(g)$ for all $\psi(g) \in \psi(G)$ and $h\in G$.
 This is a computation:

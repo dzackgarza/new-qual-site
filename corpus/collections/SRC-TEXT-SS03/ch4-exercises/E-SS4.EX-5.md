@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 5. More generally, let $R ( x ) = P ( x ) / Q ( x )$ be a rational function with (degree $Q ) \geq$ (degreeP )+2 and $Q ( x ) \neq 0$ on the real axis.
 
 (a) Prove that if $\alpha _ { 1 } , \ldots , \alpha _ { k }$ are the roots of R in the upper half-plane, then there exists polynomials $P _ { j } ( \boldsymbol { \xi } )$ of degree less than the multiplicity of $\alpha _ { j }$ so that
@@ -43,7 +43,7 @@ as $| \xi | \to \infty$ for some $a > 0$ . Determine the best possible $a \mathr
 [Hint: For part $\mathrm { ( a ) }$ , use residues. The powers of $\xi$ appear when one diferentiates the function $f ( z ) = R ( z ) e ^ { - 2 \pi i z \xi }$ (as in the formula of Theorem 1.4 in the previous chapter). For part (c) argue in the lower half-plane.]
 :::
 
-::: solution
+::: {.solution}
 Write the poles of $R=P/Q$ in the upper half-plane as $\alpha_j$, with multiplicities $m_j$. For $\xi<0$, close the contour in the upper half-plane. The assumption
 \[
 \deg Q\ge \deg P+2

@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Classify the groups of order $4$. Which of them occur as Galois groups over $\QQ$?
 :::
 
-::: solution
+::: {.solution}
 Let $G$ have order $4$. Every group of order $p^2$ is abelian, so $G$ is abelian. By the classification of finite abelian groups, there are exactly two possibilities:
 \[
 C_4,

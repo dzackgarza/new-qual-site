@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 For $x>0$, let
 \[
 f(x)=e^{x^2/2}\int_x^\infty e^{-t^2/2}\,dt.

@@ -29,7 +29,7 @@ audit:
   note: "Merged P-UHFLP, a restatement of this problem for bounded continuous functions on an arbitrary metric space; its solution repeats this Cauchy-sequence argument and was not carried."
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a compact metric space and equip the space $C_{\mathbb{R}}(X)$ of continuous functions from $X$ to $\mathbb{R}$ with the maximum norm
 $$
 \|f\|:=\max\{|f(x)|:x\in X\}.
@@ -37,7 +37,7 @@ $$
 Prove that this norm is complete.
 :::
 
-::: solution
+::: {.solution}
 The maximum exists for each $f\in C_{\mathbb{R}}(X)$ because $X$ is compact and $x\mapsto |f(x)|$ is continuous, so the expression is a genuine norm.
 
 Let $\{f_n\}$ be Cauchy in this norm.

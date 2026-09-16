@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a finite field with $q$ elements and let $V$ be a two-dimensional vector space over $F$.
 Find the number of endomorphisms of $V$ that fix at least one nonzero vector.
 :::

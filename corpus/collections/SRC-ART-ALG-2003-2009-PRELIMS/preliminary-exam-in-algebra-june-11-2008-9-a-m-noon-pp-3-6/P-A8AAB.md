@@ -25,12 +25,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a principal ideal domain and $A$ and $B$ be finitely generated $R$-modules.
 Show that if $A \oplus A \cong B \oplus B$ then $A \cong B$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A finitely generated $R$-module $M$ has a decomposition
 $$
 M\cong R^{r_M}\oplus
@@ -42,7 +42,7 @@ prime elements of $R$, the integers $r_M$ and $m_M(p,e)$ are
 nonnegative, and only finitely many $m_M(p,e)$ are nonzero.
 These integers are uniquely determined by $M$.
 
-::: proof
+::: {.proof}
 This is the elementary-divisor form of the structure theorem for
 finitely generated modules over a PID [@DF04]. Choosing one
 representative of each associate class fixes the indexing of the
@@ -53,7 +53,7 @@ elements and the displayed torsion sum is empty.
 <1>2. The assumed isomorphism implies equality of all invariants of
 $A$ and $B$, and hence $A\cong B$.
 
-::: proof
+::: {.proof}
 Taking a direct sum of two copies doubles the free rank and every
 elementary-divisor multiplicity. Thus the uniqueness in step <1>1,
 applied to $A\oplus A\cong B\oplus B$, gives

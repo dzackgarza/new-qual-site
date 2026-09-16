@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is an injective module over a ring $R$?
 State Baer's Criterion and the characterization of injective modules over PIDs (divisible modules).
 :::
 
-::: solution
+::: {.solution}
 A left $R$-module $Q$ is **injective** if every homomorphism into $Q$ defined on a submodule extends across the containing module: whenever $A\hookrightarrow B$ is injective and $f:A\to Q$ is $R$-linear, there exists $g:B\to Q$ with $g|_A=f$. Equivalently, the contravariant functor
 \[
 \operatorname{Hom}_R(-,Q)

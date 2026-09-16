@@ -25,7 +25,7 @@ audit:
   note: Verified F[a] is F[t]/(t^3-1), then used scalar extension and the two factorizations of t^3-1 according to whether the characteristic is 3.
 ---
 
-::: problem
+::: {.problem}
 Suppose $F$ is a field,
 \[
 a = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix} \in M_3(F),

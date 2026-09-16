@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n\ge3$, let $\alpha=2^{1/n}$, and let $\zeta_n$ be a primitive $n$th root of unity.
 
 1. Show that the splitting field of $x^n-2$ over $\QQ$ is

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a vector space over a field $F$, and let $L: V \to V$ be a linear operator.
 Suppose that $1$ is not an eigenvalue of $L$ (that is, $1 \notin \operatorname{spec}(L)$). Prove that $x = 0$ is the unique fixed point of $L$ (i.e. $L(x) = x \implies x = 0$). Moreover, if $V$ is finite-dimensional, show that $I - L$ is an invertible linear operator on $V$.
 :::

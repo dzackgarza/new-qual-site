@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that a field with $p^n$ elements has exactly one subfield of size $p^d$ for every $d$ dividing $n$.
 :::
 
-::: solution
+::: {.solution}
 Let $F=\mathbb F_{p^n}$. The Frobenius automorphism
 \[
 \varphi(x)=x^p

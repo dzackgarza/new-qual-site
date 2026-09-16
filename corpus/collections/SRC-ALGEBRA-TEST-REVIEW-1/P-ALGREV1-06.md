@@ -27,11 +27,11 @@ audit:
 Let $R$ be a noncommutative ring and let $Z(R)$ be its center. Prove that the additive group of $R/Z(R)$ is not cyclic.
 :::
 
-::: solution
+::: {.solution}
 Suppose for contradiction that the additive quotient $R/Z(R)$ is cyclic.
 
 <1>1. Choose a representative of an additive generator.
-::: proof
+::: {.proof}
 There is some $a\in R$ such that
 $$
 R/Z(R)=\langle a+Z(R)\rangle.
@@ -44,7 +44,7 @@ $$
 :::
 
 <1>2. Any two elements of $R$ then commute.
-::: proof
+::: {.proof}
 Take arbitrary $x,y\in R$. By step <1>1 write
 $$
 x=ma+z,
@@ -73,7 +73,7 @@ Hence $xy=yx$.
 :::
 
 <1>3. This contradicts the hypothesis that $R$ is noncommutative.
-::: proof
+::: {.proof}
 Step <1>2 shows that every pair of elements of $R$ commutes, so $R$ would be
 commutative. Therefore the assumption that $R/Z(R)$ is cyclic is impossible:
 $$

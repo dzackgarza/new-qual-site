@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Can it happen that a proper subfield of $\mathbb{C}$ is isomorphic to $\mathbb{C}$?
 How?
 :::
 
-::: solution
+::: {.solution}
 Yes.
 
 Choose a transcendence basis $B$ of $\mathbb C/\mathbb Q$. Then

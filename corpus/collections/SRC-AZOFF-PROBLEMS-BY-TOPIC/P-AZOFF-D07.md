@@ -15,6 +15,6 @@ audit:
   note: Checked against Integrals and Cauchy’s theorem, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f : \mathbb { C } \to \mathbb { C }$ is entire and $| f ( z ) | \leq | z | ^ { \frac { 1 } { 2 } }$ whenever $| z | > 1 0$ . Prove that $f$ is the zero function.
 :::

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that if \(p(x)\in\mathbb Z[x]\) is monic and \(r\in\mathbb Q\) is a root of \(p\), then \(r\in\mathbb Z\).
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 p(x)=x^n+a_{n-1}x^{n-1}+\cdots+a_0

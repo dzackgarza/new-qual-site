@@ -16,7 +16,7 @@ audit:
   note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
 ---
 
-::: problem
+::: {.problem}
 For $a > 1$ and $n = 0 , 1 , 2 , . . . ,$ evaluate the integrals
 
 $$

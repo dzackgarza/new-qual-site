@@ -38,9 +38,9 @@ E &\mapsto f(E)
   is a bijection from the class of Lebesgue measurable sets of $[0, \infty)$ to itself.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Show that null sets are preserved by $x\mapsto x^2$.
-::: proof
+::: {.proof}
 For every $M>0$, the map
 \[
 f(x)=x^2
@@ -62,7 +62,7 @@ m^*(E)=0\Longrightarrow m^*(f(E))=0.
 :::
 
 <1>2. Show that null sets are preserved by the inverse map $y\mapsto\sqrt y$.
-::: proof
+::: {.proof}
 Fix $M>0$. The function
 \[
 g(y)=\sqrt y
@@ -95,7 +95,7 @@ Thus
 :::
 
 <1>3. Show that $f$ sends Lebesgue measurable sets to Lebesgue measurable sets.
-::: proof
+::: {.proof}
 On $[0,\infty)$, $f(x)=x^2$ is a homeomorphism with inverse $g(y)=\sqrt y$. Hence $f$ and $g$ send Borel sets to Borel sets.
 
 Let $E$ be Lebesgue measurable. There is a Borel set $B$ such that
@@ -110,7 +110,7 @@ By part 1, $f(E\triangle B)$ is null, while $f(B)$ is Borel. Therefore $f(E)$ is
 :::
 
 <1>4. Conclude bijectivity on the Lebesgue sigma-algebra.
-::: proof
+::: {.proof}
 The same argument applied to the inverse homeomorphism $g(y)=\sqrt y$ shows that $g$ also sends Lebesgue measurable sets to Lebesgue measurable sets. Since $f$ and $g$ are inverse bijections of $[0,\infty)$,
 \[
 E\longmapsto f(E)

@@ -24,7 +24,7 @@ audit:
   note: "Proved density at an essential singularity by the bounded reciprocal argument, then constructed n+1 disjoint preimage neighborhoods with a common image value; no multiplicity assumption or Great Picard theorem is used."
 ---
 
-::: problem
+::: {.problem}
 Let $D=\{z\in\mathbb C:|z|<1\}$ and let $f$ be
 holomorphic on $D\setminus\{0\}$. Suppose there is a
 positive integer $n$ such that $f^{-1}(w)$ contains at
@@ -32,13 +32,13 @@ most $n$ points for every $w\in\mathbb C$. Prove that
 zero is a removable singularity or a pole.
 :::
 
-::: solution
+::: {.solution}
 Suppose, for a contradiction, that zero is an essential
 singularity. In particular $f$ is nonconstant.
 
 <1>1. The image of every punctured disk about zero is dense in $\mathbb C$.
 
-::: proof
+::: {.proof}
 Fix $0<r<1$. If $f(\{0<|z|<r\})$ were not dense,
 there would be $w\in\mathbb C$ and $\delta>0$ such that
 $|f(z)-w|\geq\delta$ throughout this punctured disk.
@@ -58,7 +58,7 @@ contradict essentiality. Thus the image must be dense.
 
 <1>2. There are $n+1$ pairwise disjoint disks whose images have nonempty intersection.
 
-::: proof
+::: {.proof}
 Choose an open disk $B_1$ with closure contained in
 $D\setminus\{0\}$. The restriction of $f$ to $B_1$ is
 nonconstant: otherwise the identity theorem on the
@@ -85,7 +85,7 @@ This completes the induction up to $k=n+1$.
 
 <1>3. The common image value contradicts the fiber bound.
 
-::: proof
+::: {.proof}
 Choose $w\in\bigcap_{j=1}^{n+1}f(B_j)$. For each $j$
 there is $z_j\in B_j$ with $f(z_j)=w$. The disks are
 disjoint, so these are $n+1$ distinct points of $f^{-1}(w)$,

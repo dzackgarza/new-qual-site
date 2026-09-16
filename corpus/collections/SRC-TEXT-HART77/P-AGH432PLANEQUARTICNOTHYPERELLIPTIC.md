@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a plane curve of degree 4.
 
 a. Show that the effective canonical divisors on $X$ are exactly the divisors $X.L$, where $L$ is a line in $\PP^2$.

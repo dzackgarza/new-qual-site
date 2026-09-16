@@ -17,11 +17,11 @@ review: draft
 Let $p,q$ be distinct primes, and let $k$ denote the smallest positive integer such that $p$ divides $q^k - 1$.
 Show that no group of order $pq^k$ is simple.
 :::
-::: problem
+::: {.problem}
 Let $p,q$ be distinct primes, and let $k$ denote the smallest positive integer such that $p\mid q^k-1$. Show that no group of order $pq^k$ is simple.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ have order $pq^k$.
 
 Let $n_p$ be the number of Sylow $p$-subgroups. Sylow gives

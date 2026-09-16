@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define the distance function between $(x_1, y_1)$ and $(x_2, y_2)$ in the plane to be
 $$
 d = \begin{cases} |y_1 - y_2| & \text{if } x_1 = x_2, \\ 1 + |y_1 - y_2| & \text{if } x_1 \neq x_2. \end{cases}
@@ -44,9 +44,9 @@ If no, find a Borel set which is not inner regular.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Verify the metric axioms.
-::: proof
+::: {.proof}
 Write a point as $(x,y)$. Then the proposed distance is
 \[
 d((x_1,y_1),(x_2,y_2))
@@ -64,7 +64,7 @@ The discrete distance and the Euclidean distance are metrics, and the sum of two
 :::
 
 <1>2. Prove local compactness.
-::: proof
+::: {.proof}
 Fix $(x_0,y_0)\in X$ and choose $0<r<1$. If
 \[
 d((x,y),(x_0,y_0))\le r,
@@ -78,7 +78,7 @@ With the induced metric this is isometric to the compact interval $[y_0-r,y_0+r]
 :::
 
 <1>3. Show that a compactly supported continuous function uses only finitely many vertical lines.
-::: proof
+::: {.proof}
 Let $K=\operatorname{supp}f$, which is compact. The balls
 \[
 B((x,y),1/3),\qquad (x,y)\in K,
@@ -94,7 +94,7 @@ F=\{x_1,\dots,x_n\}.
 :::
 
 <1>4. Identify the measure induced by $I$.
-::: proof
+::: {.proof}
 For each $x\in\mathbb R$, let $\lambda_x$ be one-dimensional Lebesgue measure on the open-and-closed vertical line $\{x\}\times\mathbb R$. Define, for Borel $E\subseteq X$,
 \[
 \nu(E):=\sum_{x\in\mathbb R}m(E_x),
@@ -113,7 +113,7 @@ Hence the Radon measure induced by the positive functional $I$ is precisely $\mu
 :::
 
 <1>5. Prove inner regularity on every Borel set.
-::: proof
+::: {.proof}
 Let $E\subseteq X$ be Borel. We show
 \[
 \mu(E)=\sup\{\mu(K):K\subseteq E,\ K\text{ compact}\}.

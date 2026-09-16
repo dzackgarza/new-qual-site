@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let a finite $p$-group $G$ act on a finite set $X$ with $p\nmid |X|$. Prove that the action has a fixed point.
 :::
 
-::: solution
+::: {.solution}
 Decompose $X$ into $G$-orbits. By orbit--stabilizer, every orbit has cardinality
 \[
 |G:G_x|,

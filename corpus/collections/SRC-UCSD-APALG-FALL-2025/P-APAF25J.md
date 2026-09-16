@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find two finite matrix groups $G,H\subseteq\mathrm{GL}_2(\mathbb{C})$ such that
 
 - $G$ and $H$ are isomorphic as abstract groups, but

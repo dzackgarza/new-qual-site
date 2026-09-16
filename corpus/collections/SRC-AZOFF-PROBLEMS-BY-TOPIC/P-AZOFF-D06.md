@@ -15,7 +15,7 @@ audit:
   note: Checked against Integrals and Cauchy’s theorem, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f$ is a continuous function on R which vanishes outside some finite interval and for each $z \subset \mathbb { C }$ define
 
 $$

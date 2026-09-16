@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 45, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find if the quadratic form $f ( \vec { x } ) = 9 x _ { 1 } ^ { 2 } + 6 x _ { 1 } x _ { 2 } + 6 x _ { 2 } ^ { 2 } + 8 x _ { 2 } x _ { 3 } + 4 x _ { 3 } ^ { 2 }$ is positive definite or not.
 :::

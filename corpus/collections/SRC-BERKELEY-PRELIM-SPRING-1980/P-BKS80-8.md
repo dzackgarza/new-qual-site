@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be complex $n\times n$ matrices. Prove or disprove each assertion:
 
 1. If $A$ and $B$ are diagonalizable, then $A+B$ is diagonalizable.

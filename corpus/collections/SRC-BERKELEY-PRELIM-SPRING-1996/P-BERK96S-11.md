@@ -16,7 +16,7 @@ audit:
   note: The retained PDF page confirms the limits phi(x)->a and phi'(x)->b as x->infinity; the extraction dropped the arrows.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\varphi\in C^1(\mathbb R)$ and suppose
 \[
 \varphi(x)\to a,

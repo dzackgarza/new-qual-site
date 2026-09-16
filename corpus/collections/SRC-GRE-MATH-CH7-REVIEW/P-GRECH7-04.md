@@ -31,6 +31,6 @@ III. the graph is a forest
 (E) I, II, and III
 :::
 
-::: remark
+::: {.remark}
 The source shows the undirected graph in a figure that is not reproduced here.
 :::

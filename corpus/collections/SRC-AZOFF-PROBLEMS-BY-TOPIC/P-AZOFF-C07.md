@@ -15,6 +15,6 @@ audit:
   note: Checked against Conformal mapping, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md. Flash reads `cone-to-one`; the surrounding conformal-mapping sentence identifies the intended phrase as `one-to-one`.
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega \subset \mathbb { C }$ be the region inside the unit circle $| z | = 1$ and outside the circle $\begin{array} { r } { | z - \frac { 1 } { 4 } | = \frac { 1 } { 4 } } \end{array}$ . Find a one-to-one conformal map of Ω onto an annulus $r < | \boldsymbol { z } | < 1$ for an appropriate value of r.
 :::

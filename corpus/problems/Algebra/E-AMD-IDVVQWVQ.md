@@ -25,7 +25,7 @@ audit:
 Show that every prime ideal is radical.
 :::
 
-::: solution
+::: {.solution}
 Let $\mathfrak p$ be a prime ideal of a commutative ring $R$. The inclusion
 \[
 \mathfrak p\subseteq\sqrt{\mathfrak p}

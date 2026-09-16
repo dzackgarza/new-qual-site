@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (a) Let $A\in M_n$. Show that if $z^HAz=0$ for all $z\in\mathbb{C}^n$ then $A=0$.
 
 (b) Give a $2\times 2$ example of $A\in M_2(\mathbb{R})$, where $A\neq 0$, but $x^TAx=0$

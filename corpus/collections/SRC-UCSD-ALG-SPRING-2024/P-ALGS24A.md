@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ and $q$ are two distinct primes and $G$ is a group of order $p^2 q$.
 Prove that $G$ is solvable.
 :::

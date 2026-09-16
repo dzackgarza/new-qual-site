@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 Show that
 
 $$
@@ -26,7 +26,7 @@ $$
 is an entire function of order $1/\alpha$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 F(z)=\sum_{n=0}^\infty \frac{z^n}{(n!)^\alpha},\qquad \alpha>0.

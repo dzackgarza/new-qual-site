@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f(x)$ and $x f(x)$ are integrable on $\mathbb{R}$ ($f, xf \in L^1(\mathbb{R})$). Define $F: \mathbb{R} \to \mathbb{R}$ by
 $$
 F(t) = \int_{-\infty}^{\infty} f(x) \cos(x t) \, dx.
@@ -25,7 +25,7 @@ F'(t) = -\int_{-\infty}^{\infty} x f(x) \sin(x t) \, dx.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that differentiation under the integral sign is valid for $F(t)$ using the difference quotient and the Dominated Convergence Theorem.
 
 <1>1. Difference quotient representation:

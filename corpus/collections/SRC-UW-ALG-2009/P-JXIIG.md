@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field of characteristic not equal to 2.
 
 - Prove that any extension $K$ of $F$ of degree 2 is of the form $F(\sqrt D)$ where $D\in F$ is not a square in $F$ and, conversely, that each such extension has degree 2 over $F$.
@@ -28,7 +28,7 @@ Let $F$ be a field of characteristic not equal to 2.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let $K/F$ be an extension of degree $2$. Then $K=F(\sqrt D)$ for some nonsquare $D\in F$.
 ::: {.proof}
 Choose $\alpha\in K\setminus F$. Since $[K:F]=2$, its minimal polynomial over $F$ has degree $2$, say

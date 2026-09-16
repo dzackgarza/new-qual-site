@@ -15,7 +15,7 @@ audit:
   note: Checked against Group B, problem B4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R\to[0,\infty)$ be measurable with $\operatorname{supp}f\subset[0,1]$.
 Put
 \[

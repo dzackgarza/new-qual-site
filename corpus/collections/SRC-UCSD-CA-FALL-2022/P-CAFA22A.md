@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be a bounded, simply connected region and let $f$ be an analytic self-map of $G$ (i.e. $f(G) \subset G$). Assume that $f$ has two fixed points.
 Show that $f(z) = z$.
 :::
 
-::: solution
+::: {.solution}
 By the Riemann mapping theorem choose a biholomorphism $\phi:G\to\mathbb D$.
 Then $F=\phi\circ f\circ\phi^{-1}$ is a holomorphic self-map of $\mathbb D$
 with two distinct fixed points $\alpha,\beta\in\mathbb D$.

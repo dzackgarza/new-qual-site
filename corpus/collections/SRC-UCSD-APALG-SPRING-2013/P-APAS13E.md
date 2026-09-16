@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a subgroup of $G$ and $A\colon H\to\mathrm{GL}_n(\mathbb{C})$ be a representation of $H$.
 Let $\chi^A\colon H\to\mathbb{C}$ be the character of $A$.
 Define $\chi^{\overline{A}}\colon G\to\mathbb{C}$ by
@@ -34,7 +34,7 @@ Define $\chi^{\overline{A}}\colon G\to\mathbb{C}$ by
 (c) State and prove the Frobenius Reciprocity Theorem.
 :::
 
-::: solution
+::: {.solution}
 Let \(V\) be the representation space of \(A\). The induced representation is
 \[
 \operatorname{Ind}_H^G V

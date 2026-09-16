@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that the centre of a group of order $p^r$ ($p$ prime) is not trivial.
 :::
 

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $S$ and $T$ be square matrices over an algebraically closed field. Suppose $S$ and $T$ have the same Jordan canonical form. Prove that $S$ and $T$ are similar.
 :::
 

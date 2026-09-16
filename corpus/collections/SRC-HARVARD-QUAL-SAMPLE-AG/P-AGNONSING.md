@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give two criteria for a curve over an algebraically closed field to be nonsingular.
 
 What is a normal domain, and how does normality relate to regular local rings?

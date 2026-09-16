@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $X$ be a topological space and let $V$ be an $n$-dimensional subspace of the real vector space of continuous functions on $X$. Prove that there are a basis
 \[
 \{f_1,\dots,f_n\}

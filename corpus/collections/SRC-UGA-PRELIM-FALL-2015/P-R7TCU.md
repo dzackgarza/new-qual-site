@@ -21,7 +21,7 @@ audit:
   note: Replaced two overlapping solutions with one structured proof.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a $3\times3$ matrix with real entries and eigenvalues $-1$, $0$, and $1$.
 Prove that $A^3=A$.
 :::

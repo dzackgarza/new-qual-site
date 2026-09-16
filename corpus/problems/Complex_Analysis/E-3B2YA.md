@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Evaluate the following integrals using Cauchy's integral formula:
 
 \[
@@ -28,7 +28,7 @@ Evaluate the following integrals using Cauchy's integral formula:
 
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 \int_{S^1} {\cos(z) \over z} \dz
 &= 2\pi i \cos(0) \\

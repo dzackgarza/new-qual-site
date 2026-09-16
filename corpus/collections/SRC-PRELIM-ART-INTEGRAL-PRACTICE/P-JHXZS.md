@@ -19,14 +19,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int 2018^x\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 \frac{d}{dx}2018^x=(\ln 2018)2018^x,

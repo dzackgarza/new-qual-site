@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a permutation is odd if and only if its disjoint-cycle decomposition contains an odd number of even-length cycles.
 :::
 

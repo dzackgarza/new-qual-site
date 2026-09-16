@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $u(x,y)$ be harmonic and have continuous partial derivatives of order three in an open disc of radius $R>0$.
 
 a.

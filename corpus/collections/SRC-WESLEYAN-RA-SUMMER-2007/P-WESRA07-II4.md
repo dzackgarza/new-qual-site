@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a finite Borel measure on $\mathbb R$.
 Suppose there is $t>0$ such that
 \[
@@ -31,7 +31,7 @@ for every Borel set $A\subset\mathbb R$.
 Prove that $\mu$ is the zero measure.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 I=[0,t).

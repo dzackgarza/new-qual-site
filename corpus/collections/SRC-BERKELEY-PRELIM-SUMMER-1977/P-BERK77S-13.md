@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic and suppose
 \[
 f(z)=1+2z+3z^2+\cdots

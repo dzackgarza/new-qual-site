@@ -30,7 +30,7 @@ audit:
   note: "Compared with Groups (5) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG5, whose solution repeats this class-equation argument."
 ---
 
-::: problem
+::: {.problem}
 1. Let $G$ be a group, and $Z(G)$ the center of $G$.
    Prove that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 
@@ -39,10 +39,10 @@ audit:
 3. Prove that a group of order $p^2$ must be abelian.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A group with cyclic quotient by its center is abelian.
 
-::: proof
+::: {.proof}
 Choose $a\in G$ whose coset generates $G/Z(G)$.
 Every element of $G$ has the form $a^i z$ for some
 integer $i$ and $z\in Z(G)$. For any two such elements,
@@ -58,7 +58,7 @@ also covers the trivial cyclic quotient by taking $a=1$.
 <1>2. A group of order $p^n$, with $n\geq1$, has
 nontrivial center.
 
-::: proof
+::: {.proof}
 Let $G$ act on itself by conjugation. The orbit of
 $x$ has size $[G:C_G(x)]$ by orbit-stabilizer, where
 $C_G(x)$ is its centralizer [@DF04]. The orbit has
@@ -74,7 +74,7 @@ so its positive order is at least $p$.
 
 <1>3. Every group of order $p^2$ is abelian.
 
-::: proof
+::: {.proof}
 By step <1>2 and Lagrange's theorem, the center has
 order $p$ or $p^2$. In the second case $Z(G)=G$,
 so the group is abelian. In the first case $G/Z(G)$

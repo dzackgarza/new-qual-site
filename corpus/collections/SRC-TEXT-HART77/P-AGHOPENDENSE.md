@@ -15,12 +15,12 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Any nonempty open subset of an irreducible topological space is dense and irreducible.
 If $Y$ is a subset of a topological space $X$ which is irreducible in its induced topology, then the closure $\bar{Y}$ is also irreducible.
 :::
 
-::: solution
+::: {.solution}
 **Density.** Let $U \subseteq X$ be open and nonempty with $X$ irreducible, and suppose $\cl_X(U) \neq X$.
 Then
 \[
@@ -33,7 +33,7 @@ Intersecting with $Y$ gives $Y = (A \intersect Y) \union (B \intersect Y)$, so b
 Then $\cl_X(Y) \subseteq \cl_X(A) = A$, so the decomposition was trivial and $\cl_X(Y)$ is irreducible.
 :::
 
-::: remark
+::: {.remark}
 Irreducible is strictly stronger than connected: connected forbids a decomposition into two proper *disjoint* closed sets, irreducible forbids it without disjointness.
 $V(xy)$ is connected and reducible.
 :::

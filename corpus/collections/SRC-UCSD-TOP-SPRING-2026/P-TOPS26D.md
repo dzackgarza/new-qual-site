@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space with homology groups
 \[
 H_k(X; \mathbb{Z}) =

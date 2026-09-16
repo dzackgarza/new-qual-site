@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\dots,\lambda_n\in\mathbb{C}$.
 If
 \[

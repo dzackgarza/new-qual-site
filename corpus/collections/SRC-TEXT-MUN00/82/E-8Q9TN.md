@@ -34,7 +34,7 @@ B_J = \bigcap_{j \in J} A_j - \bigcup_{j \notin J} \overline{C}_j.]
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the existence of a star-fine open refinement $\mathcal{B}$ of an open covering $\mathcal{A}$ (satisfying $B \cap B' \neq \varnothing \implies B \cup B' \subseteq A$ for some $A \in \mathcal{A}$) when $X$ is metrizable or compact Hausdorff.
 
 <1>1. Part (a): Case where $X$ is metrizable.

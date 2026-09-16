@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For $f : \mathbb{R} \to \mathbb{C}$ and $h \in \mathbb{R}$, denote by $\tau_h f : \mathbb{R} \to \mathbb{C}$ the function defined by $\tau_h f(x) := f(x + h)$ for all $x \in \mathbb{R}$.
 
 (a) Show that if $T$ is a distribution on $\mathbb{R}$ and $h \in \mathbb{R}$, then
@@ -42,9 +42,9 @@ Find the Fourier transform of $\tau_h T$ in terms of the Fourier transform of $T
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Translation preserves distributions.
-::: proof
+::: {.proof}
 Fix $h\in\mathbb R$. The map
 \[
 \phi\longmapsto \tau_{-h}\phi,
@@ -61,7 +61,7 @@ is linear and continuous on $C_c^\infty(\mathbb R)$. Hence $\tau_hT\in\mathcal D
 :::
 
 <1>2. Recover the distributional derivative from difference quotients.
-::: proof
+::: {.proof}
 For every test function $\phi$,
 \[
 \left(\frac{\tau_hT-T}{h}\right)(\phi)
@@ -91,7 +91,7 @@ Thus
 :::
 
 <1>3. Translation preserves tempered distributions.
-::: proof
+::: {.proof}
 If $T\in\mathcal S'(\mathbb R)$, then translation is a continuous linear automorphism of the Schwartz space. Indeed, for every pair of nonnegative integers $m,k$,
 \[
 \sup_x |x^m(\tau_{-h}\phi)^{(k)}(x)|
@@ -105,7 +105,7 @@ is continuous on $\mathcal S$, so $\tau_hT\in\mathcal S'$.
 :::
 
 <1>4. Compute the Fourier transform.
-::: proof
+::: {.proof}
 With the convention
 \[
 \widehat\phi(\xi)=\int_{\mathbb R}\phi(x)e^{-2\pi i x\xi}\,dx,

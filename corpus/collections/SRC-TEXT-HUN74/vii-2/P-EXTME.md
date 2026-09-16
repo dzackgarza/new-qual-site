@@ -26,7 +26,7 @@ audit:
   note: "Proved row-operation invariance using elementary matrices, consistency using the augmented-column rank criterion, uniqueness by rank-nullity, and the homogeneous criterion by nullity."
 ---
 
-::: problem
+::: {.problem}
 Let $A=(a_{ij})$ be an $n\times m$ matrix over a field, let
 $$
 X=(x_1,\ldots,x_m)^t,
@@ -72,9 +72,9 @@ In particular, show that if $n<m$, then the homogeneous system has a
 nontrivial solution.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The displayed scalar system is exactly the coordinate form of $AX=B$.
-::: proof
+::: {.proof}
 The $i$th entry of the product $AX$ is
 $$
 (AX)_i=\sum_{j=1}^m a_{ij}x_j.
@@ -93,7 +93,7 @@ equation.
 :::
 
 <1>2. Simultaneous elementary row operations do not change the solution set.
-::: proof
+::: {.proof}
 A sequence of elementary row operations is left multiplication by an
 invertible matrix $E$, a product of elementary matrices. Thus
 $$
@@ -114,7 +114,7 @@ the same solutions.
 :::
 
 <1>3. Consistency is equivalent to equality of the two ranks.
-::: proof
+::: {.proof}
 The equation
 $$
 AX=B
@@ -135,7 +135,7 @@ $$
 :::
 
 <1>4. A consistent system has a unique solution exactly when $\operatorname{rank}A=m$.
-::: proof
+::: {.proof}
 Assume $AX=B$ is consistent and choose one solution $X_0$. Then $X$ is any
 other solution if and only if
 $$
@@ -165,7 +165,7 @@ $$
 :::
 
 <1>5. The homogeneous system has a nontrivial solution exactly when $\operatorname{rank}A<m$.
-::: proof
+::: {.proof}
 For $B=0$, the solution set is precisely $\ker A$. It contains a nonzero
 vector if and only if
 $$
@@ -184,7 +184,7 @@ $$
 :::
 
 <1>6. More unknowns than equations force a nontrivial homogeneous solution.
-::: proof
+::: {.proof}
 Since $A$ has $n$ rows,
 $$
 \operatorname{rank}A\le n.

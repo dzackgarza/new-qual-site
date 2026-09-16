@@ -18,12 +18,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order 57.
 :::
 
 
-::: solution
+::: {.solution}
 Since
 \[
 57=3\cdot 19,

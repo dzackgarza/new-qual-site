@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Map $\DD^c \intersect \HH$ to $\HH$, sending 
 
 - $-1\to -1$
@@ -22,7 +22,7 @@ Map $\DD^c \intersect \HH$ to $\HH$, sending
 
 :::
 
-:::{.solution}
+::: {.solution}
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-13-43.png)
 

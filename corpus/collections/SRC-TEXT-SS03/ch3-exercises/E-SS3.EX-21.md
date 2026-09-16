@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 21. Certain sets have geometric properties that guarantee they are simply connected.
 
 (a) An open set $\Omega \subset \mathbb { C }$ is convex if for any two points in Ω, the straight line segment between them is contained in Ω. Prove that a convex open set is simply connected.
@@ -26,7 +26,7 @@ Conclude that the slit plane $\mathbb { C } - \{ ( - \infty , 0 ] \}$ (and more 
 (c) What are other examples of open sets that are simply connected?
 :::
 
-::: solution
+::: {.solution}
 (a) Let $\Omega$ be convex and fix $z_0\in\Omega$. For any closed curve $\gamma:[0,1]\to\Omega$, define
 \[
 H(s,t)=(1-s)\gamma(t)+sz_0,

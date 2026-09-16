@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $L$ be the splitting field of $x^{15}+2$ over $\QQ$. Prove that
 \[
 \operatorname{Gal}(L/\QQ)

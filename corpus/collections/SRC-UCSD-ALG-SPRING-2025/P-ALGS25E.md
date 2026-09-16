@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring and $\langle a_1, \ldots, a_n\rangle = A$.
 Suppose $M$ is an $A$-module and $S_{a_i} := \{1, a_i, a_i^2, \ldots\}$.
 Suppose that $S_{a_i}^{-1}M = 0$ for all $i$.

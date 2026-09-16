@@ -33,18 +33,18 @@ audit:
 (iii) Prove it for $p > n$, with $P$ a Sylow $p$-subgroup of $S(np)$.
 :::
 
-::: remark
+::: {.remark}
 The printed first part omits the condition $p>2$. For $p=2$, a Sylow
 $2$-subgroup of $S_4$ has order $8$ and is isomorphic to the nonabelian
 dihedral group $D_8$. The corrected first part is exactly the case $n=2$ of
 part (iii).
 :::
 
-::: solution
+::: {.solution}
 It is enough to prove the general assertion in part (iii).
 
 <1>1. Determine the order of a Sylow $p$-subgroup of $S_{np}$ when $p>n$.
-::: proof
+::: {.proof}
 Because $n<p$,
 $$
 np<p^2.
@@ -63,7 +63,7 @@ $$
 :::
 
 <1>2. Every nontrivial $P$-orbit on the $np$ letters has size exactly $p$.
-::: proof
+::: {.proof}
 Let $\Omega$ be the set of $np$ letters on which $S_{np}$ acts. Since $P$ is
 a $p$-group, every orbit size is a power of $p$. But
 $$
@@ -77,7 +77,7 @@ $$
 :::
 
 <1>3. The action on each nontrivial orbit has cyclic image of order $p$.
-::: proof
+::: {.proof}
 Let $O$ be a $P$-orbit of size $p$. Restriction of permutations gives a
 homomorphism
 $$
@@ -96,7 +96,7 @@ Thus $\rho_O(P)$ is cyclic.
 :::
 
 <1>4. There are exactly $n$ nontrivial orbits, and $P$ embeds in their product action.
-::: proof
+::: {.proof}
 Suppose there are $k$ nontrivial orbits
 $$
 O_1,\ldots,O_k.
@@ -130,7 +130,7 @@ $$
 :::
 
 <1>5. Conclude that $P$ is abelian.
-::: proof
+::: {.proof}
 By step <1>4, $P$ embeds in a direct product of $n$ cyclic groups of order
 $p$:
 $$

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a space obtained by attaching a $4$-ball $B^4$ to a $3$-sphere via a degree $6$ map $\varphi : \partial B^4 \to S^3$.
 Calculate the integral homology $H_*(Y \times \mathbb{RP}^2; \mathbb{Z})$.
 :::

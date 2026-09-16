@@ -20,7 +20,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove each of the following statements.
 
 (a) If $f$ is of bounded variation on $[0,1]$, then it is continuous on $[0,1]$.

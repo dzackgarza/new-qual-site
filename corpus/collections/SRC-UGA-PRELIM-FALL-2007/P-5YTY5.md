@@ -22,7 +22,7 @@ Evaluate the line integral:
 $$I = \oint_{\Delta} y \, dx + 2x \, dy.$$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Evaluate the closed line integral $\oint_\Delta y\,dx + 2x\,dy$ around the oriented triangle using Green's Theorem.
 
 <1>1. Setting up Green's Theorem:

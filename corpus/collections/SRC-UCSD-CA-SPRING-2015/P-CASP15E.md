@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that
 $$
 \pi^2\frac{\cos \pi z}{\sin^2 \pi z} = \sum_{n \in \mathbb{Z}} \frac{(-1)^n}{(z - n)^2}.
@@ -22,13 +22,13 @@ $$
 (Hint: Compare singular parts and use periodicity.)
 :::
 
-::: remark
+::: {.remark}
 The local transcription previously placed $\pi^2$ in the denominator. The
 official Spring 2015 UCSD exam has the factor $\pi^2$ multiplying
 $\cos(\pi z)/\sin^2(\pi z)$, as written here.
 :::
 
-::: solution
+::: {.solution}
 The series
 \[
 S(z)=\sum_{n\in\mathbb Z}\frac{(-1)^n}{(z-n)^2}

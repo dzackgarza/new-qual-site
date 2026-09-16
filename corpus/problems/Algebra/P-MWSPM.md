@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that a finitely generated module over a Noetherian local ring is flat iff it is free.
 :::
 

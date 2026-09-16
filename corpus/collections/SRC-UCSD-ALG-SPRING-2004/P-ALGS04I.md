@@ -23,7 +23,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $V$ and $W$ be finite-dimensional vector spaces over the field of complex numbers of dimensions $m$ and $n$.
 Use the universal mapping property to prove that $V \otimes W$ is a vector space of dimension $mn$.
 :::

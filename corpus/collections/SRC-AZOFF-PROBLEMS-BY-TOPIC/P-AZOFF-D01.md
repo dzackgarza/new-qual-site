@@ -15,7 +15,7 @@ audit:
   note: Checked against Integrals and Cauchy’s theorem, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f , g : [ 0 , 1 ] \to \mathbb { R }$ with f Riemann integrable and
 
 $$

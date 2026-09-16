@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define the commutator and the derived series. State and prove two nontrivial theorems about derived series.
 :::
 
-::: solution
+::: {.solution}
 For $x,y\in G$, the commutator is
 \[
 [x,y]=xyx^{-1}y^{-1}.

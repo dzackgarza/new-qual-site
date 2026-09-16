@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
 Let $f \in L^\infty(\mu)$ with $\|f\|_\infty > 0$.
 Define
@@ -36,9 +36,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Show that the moment ratios are increasing and bounded above.
-::: proof
+::: {.proof}
 Put
 \[
 M:=\|f\|_\infty>0,
@@ -73,7 +73,7 @@ for some $L\le M$.
 :::
 
 <1>2. Recall the finite-measure $L^k$-norm limit.
-::: proof
+::: {.proof}
 We claim
 \[
 \alpha_k^{1/k}=\|f\|_k\longrightarrow M.
@@ -107,7 +107,7 @@ Letting $a\uparrow M$ proves
 :::
 
 <1>3. Identify the ratio limit.
-::: proof
+::: {.proof}
 Since
 \[
 \alpha_k=\alpha_1\prod_{j=1}^{k-1}r_j,

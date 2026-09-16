@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is an irreducible variety? Give an example of a reducible one.
 :::
 
-::: solution
+::: {.solution}
 A nonempty topological space $X$ is **irreducible** if whenever
 \[
 X=Y\cup Z

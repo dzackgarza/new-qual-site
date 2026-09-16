@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe the cohomology rings $H^*(X \sqcup Y)$ and $H^*(X \vee Y)$ in terms of $H^*(X)$ and $H^*(Y)$.
 :::
 

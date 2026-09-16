@@ -22,7 +22,7 @@ Show that $\beta(\mathbb{Z}_+)$ has cardinality at least as great as $I^I$, wher
 [Hint: The space $I^I$ has a countable dense subset.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the Stone-Čech compactification $\beta(\mathbb{Z}_+)$ has cardinality $|\beta(\mathbb{Z}_+)| \ge |I^I| = 2^\mathfrak{c}$, where $I = [0, 1]$.
 
 <1>1. Properties of the product space $I^I$:

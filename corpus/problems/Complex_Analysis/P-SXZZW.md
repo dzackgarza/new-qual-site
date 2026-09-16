@@ -20,7 +20,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Compute
 \[
 \int_{\abs z = 1} \qty{z + {1\over z}}^{2n} {dz \over z}

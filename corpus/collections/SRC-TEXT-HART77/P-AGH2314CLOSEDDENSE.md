@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X$ is a scheme of finite type over a field, show that the closed points of $X$ are dense.
 Give an example to show that this is not true for arbitrary schemes.
 :::

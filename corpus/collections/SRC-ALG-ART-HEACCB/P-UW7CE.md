@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_n(\CC)$ with $A^2 = A$.
 Show that $A$ is similar to a diagonal matrix, and exhibit an explicit diagonal matrix similar to $A$.
 :::

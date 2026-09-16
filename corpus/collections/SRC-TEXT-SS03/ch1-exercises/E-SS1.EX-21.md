@@ -23,7 +23,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Show that for $|z|<1$,
 \[
 \frac{z}{1-z^2}

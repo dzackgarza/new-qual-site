@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite group whose order is twice an odd number. For $g\in G$, let
 \[
 \lambda_g(x)=gx

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find the number of zeros in $\abs{z} < 1$ of
 \[
 p(z) \da z^6 + 9z^4 + z^3 + 2z + 4
@@ -22,7 +22,7 @@ p(z) \da z^6 + 9z^4 + z^3 + 2z + 4
 
 :::
 
-:::{.solution}
+::: {.solution}
 Strategy: bound the difference.
 Find the big and small term:
 

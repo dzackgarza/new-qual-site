@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 34, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the matrices A, B and let $\lambda \ll 1$ be a small parameter.
 Expand the expression $e ^ { - \lambda B } A e ^ { \lambda B }$
 

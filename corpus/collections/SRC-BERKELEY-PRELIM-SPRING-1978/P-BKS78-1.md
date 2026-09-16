@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $k\ge0$ be an integer and define
 \[
 f_n(x)=\frac{x^k}{x^2+n},\qquad x\in\mathbb R,\quad n=1,2,\ldots.

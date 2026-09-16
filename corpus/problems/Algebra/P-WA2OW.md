@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For a finite group $G$ and a field $k$, describe the group algebra $k[G]$. What is special about $k=\CC$, and what changes when $\operatorname{char}k$ divides $|G|$?
 :::
 
-::: solution
+::: {.solution}
 The group algebra $k[G]$ is the $k$-vector space with basis $G$ and multiplication obtained by extending the group law $k$-bilinearly:
 \[
 \left(\sum_g a_g g\right)\left(\sum_h b_h h\right)

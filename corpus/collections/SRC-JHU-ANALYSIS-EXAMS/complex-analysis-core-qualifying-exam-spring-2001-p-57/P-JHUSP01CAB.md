@@ -32,11 +32,11 @@ audit:
 Question 2. Find the number of zeros of the function $f ( z ) = 2 z ^ { 5 } + 8 z - 1$ in the annulus $1 < | z | < 2$
 :::
 
-::: solution
+::: {.solution}
 There are exactly $\boxed{4}$ zeros in the annulus, and all are simple.
 
 <1>1. There is exactly one zero in $|z|<1$.
-::: proof
+::: {.proof}
 Let
 $$
 p(z)=2z^5+8z-1.
@@ -51,7 +51,7 @@ shows that $p$ has no zero on $|z|=1$.
 :::
 
 <1>2. There are exactly five zeros in $|z|<2$.
-::: proof
+::: {.proof}
 On $|z|=2$,
 $$
 |8z-1|\le17<64=|2z^5|.
@@ -62,7 +62,7 @@ strict inequality excludes zeros from the boundary circle.
 :::
 
 <1>3. Subtracting the two disk counts gives the annular count.
-::: proof
+::: {.proof}
 Because neither boundary circle contains a zero, every zero in $|z|<2$ lies
 either in $|z|<1$ or in $1<|z|<2$. Hence the annulus contains
 $$
@@ -72,7 +72,7 @@ zeros, counted with multiplicity.
 :::
 
 <1>4. Every root is simple, so there are four distinct annular roots.
-::: proof
+::: {.proof}
 A multiple root $a$ would satisfy $p(a)=p'(a)=0$.
 The derivative equation $10a^4+8=0$ gives $a^4=-4/5$.
 Substitution in the polynomial equation gives

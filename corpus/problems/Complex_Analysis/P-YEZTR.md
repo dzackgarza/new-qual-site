@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f$ is holomorphic on an open set containing the closed unit disk $\overline{\mathbb{D}} = \{z \in \mathbb{C} \mid |z| \le 1\}$ except for a single pole at $z_0 \in \partial\mathbb{D}$ ($|z_0| = 1$).
 Let $\sum_{n=0}^\infty a_n z^n$ be the Maclaurin series expansion of $f$ in $\mathbb{D}$.
 Prove that:
 $$\lim_{n \to \infty} \frac{a_n}{a_{n+1}} = z_0.$$
 :::
 
-::: solution
+::: {.solution}
 Let the pole at $z_0$ have order $m$. Its principal part can be written
 $$
 Q(z)=\sum_{j=1}^m\frac{c_j}{(z_0-z)^j},

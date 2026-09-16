@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with unit and let $M$ be an $R$-module.
 Define the annihilator of $M$ to be
 \[
@@ -33,7 +33,7 @@ b. Conversely, prove that every ideal in $R$ is the annihilator of some $R$-modu
 c. Give an example of a module $M$ over a ring $R$ such that each element $m \in M$ has a nontrivial annihilator $\operatorname{Ann}(m):=\{r \in R \mid r \cdot m=0\}$, but $\operatorname{Ann}(M)=\{0\}$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that module annihilators are ideals, every ideal is a module annihilator, and provide a faithful torsion module.
 
 <1>1. Part (a): $\operatorname{Ann}(M)$ is an ideal of $R$.

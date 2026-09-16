@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space, and show
 
 a. If $\ts{U_i}_{i\in I}$ is an open cover of $X$, then $\dim X = \sup_{i\in I} \dim U_i$.
@@ -23,7 +23,7 @@ b. If $X$ is an irreducible affine variety and $U\subset X$ is a nonempty open s
   Does this hold for any irreducible topological space?
 :::
 
-::: solution
+::: {.solution}
 > Strictly for notational convenience, we treat $\ts{U_i}$ as if it were a countable open cover.
 
 **Part a**:

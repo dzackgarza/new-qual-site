@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 In $\mathbb Z[x]$, show that the ideal
 \[
 I=(5,x^2+2)

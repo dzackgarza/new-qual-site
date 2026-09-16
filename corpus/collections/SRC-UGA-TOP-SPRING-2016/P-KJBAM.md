@@ -26,7 +26,7 @@ audit:
   note: Verified the four-sheeted graph covering locally at every vertex, the maximal-tree rank-five calculation, and the explicit Schreier basis of the injected subgroup.
 ---
 
-::: problem
+::: {.problem}
 Prove that the free group on two generators contains a subgroup isomorphic to the free group on five generators by constructing an appropriate covering space of $S^1 \lor S^1$.
 :::
 

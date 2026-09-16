@@ -24,7 +24,7 @@ audit:
   note: "Checked every Sylow-count possibility and proved both nontriviality and properness of the action kernel."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $p^k m$, where $p$ is a prime not dividing $m$.
 
 (a) What is a Sylow $p$-subgroup of $G$?
@@ -34,7 +34,7 @@ Let $G$ be a group of order $p^k m$, where $p$ is a prime not dividing $m$.
 (c) Show that there are no simple groups of order 132.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A Sylow $p$-subgroup is a subgroup of order $p^k$.
 Sylow's theorems assert that such subgroups exist, that every
 $p$-subgroup is contained in one, and that all Sylow $p$-subgroups
@@ -49,7 +49,7 @@ preserves its order.
 <1>2. A group of order $132=2^2\cdot3\cdot11$ has a nontrivial
 proper normal subgroup.
 
-::: proof
+::: {.proof}
 The number $n_{11}$ divides $12$ and is $1$ modulo $11$, so
 $n_{11}=1$ or $12$. In the first case the unique subgroup of
 order $11$ is the required normal subgroup.

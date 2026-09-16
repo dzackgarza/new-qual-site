@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. If $f: X \to Y$ is a morphism and $y \in Y$ a point, show that $\operatorname{sp}(X_y)$ is homeomorphic to $f\inv(y)$ with the induced topology.
 
 b. Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ be the morphism defined by sending $s \mapsto s$.

@@ -23,7 +23,7 @@ audit:
   note: Reviewed the Cesaro argument and the summation-by-parts proof of Kronecker's lemma; the proof is correct.
 ---
 
-::: problem
+::: {.problem}
 Let $(a_n)_{n=1}^\infty$ be a sequence of real numbers.
 
 (a) Prove that if $\lim_{n \to \infty} a_n = 0$, then
@@ -37,7 +37,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Cesàro limit theorem for null sequences in (a), and deduce Kronecker's Lemma via summation by parts in (b).
 
 <1>1. Part (a): Cesàro mean of a null sequence converges to 0.

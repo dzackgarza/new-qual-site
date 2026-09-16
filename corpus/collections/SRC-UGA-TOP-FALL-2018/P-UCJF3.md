@@ -28,7 +28,7 @@ audit:
   note: Verified the Lebesgue-number subdivision, transition-point paths in A intersect B, and factorization of an arbitrary based loop.
 ---
 
-::: problem
+::: {.problem}
 Prove the following portion of van Kampen's theorem.
 If
 \[

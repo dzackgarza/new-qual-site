@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite group of order $n$ and $H<G$ a proper subgroup of order $m$.
 Assume
 \[

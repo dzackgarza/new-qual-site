@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field, and let $X$ be a closed subvariety of $\PP^n_k$ which is nonsingular in codimension one (hence satisfies $(*)$).
 For any divisor $D = \sum n_i Y_i$ on $X$, define the **degree** of $D$ to be $\sum n_i \deg Y_i$, where $\deg Y_i$ is the degree of $Y_i$ considered as a projective variety itself (I, §7).
 

@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many roots of the equation $z^4 + 8z^3 + 3z^2 + 8z + 3 = 0$ lie in the right half plane?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 p(z)=z^4+8z^3+3z^2+8z+3.

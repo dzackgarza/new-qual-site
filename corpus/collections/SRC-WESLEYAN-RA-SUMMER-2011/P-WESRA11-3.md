@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 For $A\subset\mathbb R$, define the Lebesgue outer measure $m^*(A)$.
 Prove that for every sequence $(A_i)$ of subsets of $\mathbb R$,
 \[

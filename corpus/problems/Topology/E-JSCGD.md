@@ -19,12 +19,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Let $X$ be a compact topological space and let $A \subseteq X$ be a closed subset of $X$.
 Prove that $A$ is compact in the subspace topology.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $\{V_i\}_{i\in I}$ be an open cover of $A$ in the subspace topology. For each $i$, choose an open set $U_i\subseteq X$ with
 \[
 V_i=U_i\cap A.

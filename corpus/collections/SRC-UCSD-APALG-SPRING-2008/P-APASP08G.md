@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Show that
 $$
 e^{t p_1} = \sum_\lambda t^{|\lambda|}\frac{s_\lambda}{h_\lambda},
@@ -25,7 +25,7 @@ $$
 where $h_\lambda$ denotes the product of the hook lengths of $\lambda$.
 :::
 
-::: solution
+::: {.solution}
 Since $p_1=s_{(1)}$, repeated application of the Pieri rule gives
 \[
 p_1^n=s_{(1)}^n=\sum_{\lambda\vdash n} f^\lambda s_\lambda,

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose $D$ is a Noetherian integral domain, $F$ is the field of fractions of $D$, $\mathfrak{a} \subseteq D$ is an ideal of $D$, and $M$ is a finitely generated $D$-submodule of $F$.
 Suppose $\mathfrak{a}M = D$, where
 $$

@@ -19,7 +19,7 @@ audit:
   note: Removed extraction residue in the statement of Differential Equations Problem 21 against pages 23-24 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Consider Schrodinger equation for a quantum harmonic oscillator with small quartic perturbation
 $$
 \left(-\frac{1}{2}\frac{d^2}{dx^2} + \frac{x^2}{2} + \frac{g x^4}{4}\right)\psi(x) = E_0(g)\psi(x)

@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the upper half of the unit disk is conformally equivalent to the unit disk, and give an explicit conformal isomorphism.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 H=\{z\in\mathbb C:|z|<1,

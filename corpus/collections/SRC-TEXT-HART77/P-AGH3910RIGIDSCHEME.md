@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A scheme $X_0$ over a field $k$ is rigid if it has no infinitesimal deformations.
 
 a. Show that $\PP_k^1$ is rigid, using (9.13.2).

@@ -15,7 +15,7 @@ audit:
   note: Transcribed from the retained PDF; the extracted markdown contains a different Problem 3.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be complex $n\times n$ matrices. Prove that
 \[
 |\operatorname{tr}(AB^*)|^2

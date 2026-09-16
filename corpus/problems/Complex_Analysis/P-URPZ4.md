@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find the number of solutions to the following equation on $\abs{z} < 1$:
 \[
 6z^3 + 1 = -e^z
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) \da 6z^3 + 1 + e^z$.
 
 - Small: $m(z) = e^z + 1$

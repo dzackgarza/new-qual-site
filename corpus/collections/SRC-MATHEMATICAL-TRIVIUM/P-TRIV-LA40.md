@@ -19,7 +19,7 @@ audit:
   note: Labeled part (b) and cleaned both systems against Linear Algebra Problem 40 on page 6 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Solve the following systems of linear equations
 
 (a) $\begin{cases} x + y + z = 0 \\ x + 2y + 3z = 0 \\ 2x + 3y + 4z = 0 \end{cases}$

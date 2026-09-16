@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ and $B$ be the radii of convergence of $\sum a_kz^k$ and $\sum b_kz^k$.
 
 (a) Prove that the radius of convergence of $\sum a_kb_kz^k$ is at least $AB$.

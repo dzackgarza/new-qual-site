@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R^2\setminus\{(0,0)\}\to\mathbb R$ be $C^1$. Suppose there is $M>0$ such that
 \[
 \left|\frac{\partial f}{\partial x}\right|\le M,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 When is the coordinate ring $k[X]$ a domain?
 :::
 

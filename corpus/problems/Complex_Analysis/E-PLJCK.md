@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f$ is entire and suppose that for some integer $n\geq 1$,
 \[
 \lim_{z\to \infty} {f(z) \over z^n} = 0
@@ -26,7 +26,7 @@ Prove that $f$ is a polynomial of degree at most $n-1$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Choose $\abs{z}$ large enough so that $\abs{f(z)}/\abs{z}^n < \eps$.
 Then write $f(z) = \sum_{k\geq 0} c_k z^k$ and estimate
 \[

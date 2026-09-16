@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 For the following matrix
 \[
 A=\begin{bmatrix}

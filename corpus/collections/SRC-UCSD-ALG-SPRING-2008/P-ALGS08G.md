@@ -24,7 +24,7 @@ audit:
   note: Repaired the socle argument by proving left stability of the sum of copies of a minimal right ideal, using the semisimple direct-sum lemma, and then using cyclicity of A_A to force a finite direct sum.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a simple ring with identity element.
 Show that if $A$ has a minimal right ideal, then $A$ satisfies the minimum condition for right ideals.
 :::

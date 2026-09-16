@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For each of the following, determine if the statement is true or false.
 
 (a) There is a Möbius (linear fractional) transformation sending the triangle with vertices at $\{0, i, 1\}$ to that with vertices at $\{0, i, 2\}$.
@@ -29,7 +29,7 @@ Then either $f$ is constant or $f(G) \subset \mathbb{D} \setminus \{0\}$.
 (e) There is a sequence of complex numbers $\{a_n\}_{n=0}^{\infty}$ and strictly increasing sequence of integers $\{p_n\}_{n=0}^{\infty}$ with $p_n \geq n$ such that the radius of convergence of $\sum_{n=0}^{\infty} a_n z^n$ is one but that of $\sum_{n=0}^{\infty} a_n z^{p_n}$ is less than one.
 :::
 
-::: solution
+::: {.solution}
 (a) **False.** Möbius transformations are conformal and hence preserve the
 angles of a polygonal boundary. The triangle with vertices $0,i,1$ has angle
 multiset $\{\pi/2,\pi/4,\pi/4\}$, whereas the triangle with vertices

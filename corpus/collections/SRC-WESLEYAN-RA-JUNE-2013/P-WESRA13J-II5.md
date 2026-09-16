@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal B,\mu)$ satisfy $\mu(X)<\infty$.
 Let $(f_n)$ be a uniformly bounded sequence of measurable functions and suppose $f_n\to0$ in measure.
 Prove

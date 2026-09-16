@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a \in \mathbb{D}$ and set $G = \mathbb{D} \setminus \{a\}$.
 Find all analytic automorphisms of $G$, i.e., find all one-to-one and onto analytic functions from $G$ to $G$.
 Write down the expressions for such functions (can be unsimplified).
 Prove your answer.
 :::
 
-::: solution
+::: {.solution}
 Let $F:G\to G$ be an automorphism, where
 $G=\mathbb D\setminus\{a\}$. Since $F$ is bounded, the isolated singularity
 at $a$ is removable, so $F$ extends holomorphically to a map

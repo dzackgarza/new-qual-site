@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 (a) Let $(X, d)$ be a metric space, $\{x_n\}$ a sequence in $X$, and $x \in X$.
 Suppose that every subsequence of $\{x_n\}$ has a subsequence which converges to $x$.
 Show that $\{x_n\}$ converges to $x$.
@@ -26,7 +26,7 @@ Let $A := \{z \in G : \lim_{n \to \infty} f_n(z) = 0\}$ and assume that $A$ has 
 Show that $\{f_n\}$ converges uniformly on compact subsets of $G$ to $f \equiv 0$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the metric subsequence characterization of convergence in (a), and use Montel's Theorem and the Identity Theorem to prove compact convergence to 0 in (b).
 
 <1>1. Part (a): Subsequence criterion for metric convergence.

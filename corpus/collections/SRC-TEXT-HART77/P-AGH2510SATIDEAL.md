@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a ring, let $S = A[x_0, \ldots, x_r]$, and let $X = \Proj S$.
 We have seen that a homogeneous ideal $I$ in $S$ defines a closed subscheme of $X$ (Ex. 3.12), and that conversely every closed subscheme of $X$ arises in this way (5.16).
 

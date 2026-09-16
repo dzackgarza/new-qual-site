@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X$ is a topological space and $S \subseteq X$, define in terms of open subsets of $X$ what it means for $S$ **not** to be connected.
 
 Show that if $S$ is not connected, there exist non-empty subsets $A, B \subseteq X$ such that
@@ -24,7 +24,7 @@ $$
 where $\bar{A}$ and $\bar{B}$ denote the closures of $A$ and $B$ with respect to the topology on the ambient space $X$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Define disconnectedness of a subspace via ambient open sets, and construct separated sets $A, B$ whose ambient closures do not intersect the other set.
 
 <1>1. Definition of disconnected subspace in terms of open subsets of $X$:

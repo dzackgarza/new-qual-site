@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the integrals
 \[
 \int_{U(2)}\operatorname{Tr} U\,dU
@@ -26,7 +26,7 @@ U=\begin{bmatrix}u_{11}&u_{12}\\ u_{21}&u_{22}\end{bmatrix}
 against Haar measure.
 :::
 
-::: solution
+::: {.solution}
 Normalize Haar measure on \(U(2)\) to have total mass \(1\).
 
 For the first integral, the function \(U\mapsto\operatorname{Tr}U\) is the character of the defining two-dimensional representation of \(U(2)\). Averaging a character over a compact group gives the dimension of the invariant subspace. The defining representation has no nonzero invariant vector: if \(v\ne0\), then the scalar matrix \(-I\in U(2)\) sends \(v\) to \(-v\ne v\). Therefore

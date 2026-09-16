@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Again let $Y$ be a hypersurface in $X = \PP_k^N$, this time with $N \geq 2$, and let $\hat{X}$ be the formal completion of $X$ along $Y$.
 
 a. If $\mcf$ is a locally free sheaf on $X$, show that the natural map

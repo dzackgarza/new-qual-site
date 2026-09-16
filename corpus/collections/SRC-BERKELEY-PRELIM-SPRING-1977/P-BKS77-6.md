@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be the set of real $2\times2$ matrices of nonzero determinant, with ordinary matrix multiplication.
 
 1. Show that $G$ is a group.

@@ -22,7 +22,7 @@ review: draft
 (May 2016) Construct a $\Delta$-complex structure, and use it to compute the simplicial homology groups, for the connected sum of two projective planes.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Let $K=\mathbb{R}P^2\#\mathbb{R}P^2$.
 Then

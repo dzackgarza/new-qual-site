@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi \in C_c^\infty(\mathbb{R})$ and $f : \mathbb{R} \to \mathbb{R}$ be an absolutely continuous function with compact support, and $\varphi * f$ be the convolution of $\varphi$ and $f$:
 $$
 (\varphi * f)(x) := \int_{\mathbb{R}} \varphi(x - y) f(y)\,dy.
@@ -39,9 +39,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Differentiate the convolution in $x$.
-::: proof
+::: {.proof}
 Because $f$ has compact support and $\varphi'\in C_c(\mathbb R)$, differentiation under the integral is justified by dominated convergence. Thus for every $x$,
 \[
 \frac d{dx}(\varphi*f)(x)
@@ -51,7 +51,7 @@ Because $f$ has compact support and $\varphi'\in C_c(\mathbb R)$, differentiatio
 :::
 
 <1>2. Move the derivative from $\varphi$ to $f$.
-::: proof
+::: {.proof}
 Since
 \[
 \frac d{dy}\varphi(x-y)=-\varphi'(x-y),
@@ -71,7 +71,7 @@ There is no boundary term because both factors have compact support. Hence
 :::
 
 <1>3. Approximate $f$ by smooth compactly supported functions.
-::: proof
+::: {.proof}
 Let $\rho\in C_c^\infty(\mathbb R)$ be nonnegative with
 \[
 \int_{\mathbb R}\rho=1,

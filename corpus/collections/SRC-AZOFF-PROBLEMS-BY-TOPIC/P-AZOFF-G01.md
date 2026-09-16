@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate $\textstyle \int _ { 0 } ^ { \infty } { \frac { d x } { ( 1 + x ^ { 2 } ) ( 1 + 9 x ^ { 2 } ) } }$
 :::

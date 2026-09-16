@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-:::{.problem}
+::: {.problem}
 Show the following:
 
 1.  For any abelian group $A$ and any positive integer $m$,

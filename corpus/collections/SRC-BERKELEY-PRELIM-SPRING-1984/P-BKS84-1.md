@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a>0$. Evaluate
 \[
 \int_0^\infty\frac{\log x}{a^2+x^2}\,dx.

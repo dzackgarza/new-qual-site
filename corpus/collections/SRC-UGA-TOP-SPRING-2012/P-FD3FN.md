@@ -25,7 +25,7 @@ audit:
   note: Checked both normalized straight-line homotopies and the complex-linear S3 example.
 ---
 
-::: problem
+::: {.problem}
 Prove that for every continuous map $f : S^2 \to S^2$ there is some $x$ such that either $f (x) = x$ or $f (x) = -x$.
 
 > Hint: Where $A : S^2 \to S^2$ is the antipodal map, you are being asked to prove that either $f$ or $A \circ f$ has a fixed point.

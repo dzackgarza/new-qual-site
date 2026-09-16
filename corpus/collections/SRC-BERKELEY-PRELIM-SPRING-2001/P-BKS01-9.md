@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 1. Prove that an entire function with positive real part is constant.
 2. Prove the analogous result for $2\times2$ matrix functions: if
    \[

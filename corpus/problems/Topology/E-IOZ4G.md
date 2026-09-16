@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that any topological space $X$ equipped with the indiscrete (trivial) topology is separable.
 :::
 
-::: solution
+::: {.solution}
 If $X=\varnothing$, then $X$ itself is a countable dense subset. Assume $X\ne\varnothing$ and choose $x\in X$.
 
 <1>1. In the indiscrete topology, the only nonempty open set is $X$.

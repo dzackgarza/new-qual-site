@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For two ideals $J_1, J_2\normal R$, the *ideal quotient* is
 \[
 J_1 : J_2 \da \ts{f\in R \st fJ_2 \subset J_1}

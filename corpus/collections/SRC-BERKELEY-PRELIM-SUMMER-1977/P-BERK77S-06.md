@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Show that
 \[
 F(k)=\int_0^{\pi/2}\frac{dx}{\sqrt{1-k\cos^2x}},

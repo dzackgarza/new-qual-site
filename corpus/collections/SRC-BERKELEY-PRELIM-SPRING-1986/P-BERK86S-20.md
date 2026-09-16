@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Evaluate the counterclockwise contour integral
 \[
 \int_{|z|=1}\frac{dz}{(e^{2\pi z}+1)^2}.

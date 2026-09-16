@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f_n : \mathbb{D} \to \mathbb{C}$ be holomorphic functions such that
 \[
 \int_{\mathbb{D}} |f_n|\, dx\, dy \le 1, \qquad \forall n \ge 1.
@@ -21,7 +21,7 @@ Let $f_n : \mathbb{D} \to \mathbb{C}$ be holomorphic functions such that
 Show that there exists a subsequence of $\{f_n\}$ that converges locally uniformly on $\mathbb{D}$.
 :::
 
-::: solution
+::: {.solution}
 Fix a compact set $K\Subset\mathbb D$. Choose $r>0$ such that
 \[
 B(z,r)\subset\mathbb D

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 (a) Does there exist a harmonic function $u$ on $\mathbb{D}$, continuous on $\overline{\mathbb{D}}$, so that $u(e^{i\theta}) = \cos^2\theta$ for $\theta \in [0, 2\pi)$?
 If not, prove it.
 If so, what is the value $u(0)$?

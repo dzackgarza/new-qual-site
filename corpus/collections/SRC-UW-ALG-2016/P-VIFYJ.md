@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $A = \CC[x,y]/(y^2-(x-1)^3 - (x-1)^2)$.
 
 - Show that $A$ is an integral domain and sketch the $\RR$-points of $\text{Spec} A$.

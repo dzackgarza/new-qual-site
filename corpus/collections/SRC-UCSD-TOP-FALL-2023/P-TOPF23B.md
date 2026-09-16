@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the space obtained by identifying the faces of a standard cube $I^3$ in pairs, as shown.
 Compute the integral homology groups $H_*(X; \mathbb{Z})$.
 :::

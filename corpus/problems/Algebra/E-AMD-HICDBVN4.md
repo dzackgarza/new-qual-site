@@ -29,7 +29,7 @@ K[\alpha_1,\dots,\alpha_n]=K(\alpha_1,\dots,\alpha_n).
 \]
 :::
 
-::: solution
+::: {.solution}
 It is enough to prove that adjoining one algebraic element to a field already gives a field.
 
 Let $L$ be a field and let $\alpha$ be algebraic over $L$, with minimal polynomial $m_\alpha(x)\in L[x]$. Evaluation induces an isomorphism

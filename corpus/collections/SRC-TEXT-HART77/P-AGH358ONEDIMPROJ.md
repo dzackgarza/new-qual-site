@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that every one-dimensional proper scheme $X$ over an algebraically closed field $k$ is projective.
 
 a. If $X$ is irreducible and nonsingular, then $X$ is projective by (II, 6.7).

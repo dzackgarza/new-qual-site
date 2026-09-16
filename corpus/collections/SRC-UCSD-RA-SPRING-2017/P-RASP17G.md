@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $g$ be a real valued function in $L^1([0, 1], m)$ and $h : [0, 1] \to \mathbb{R}$ be a strictly increasing function such that
 $$
 \int_0^1 g(x) [h(x)]^n \, dm(x) = 0 \quad \text{for } n \in \mathbb{N}.
@@ -38,9 +38,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove the conclusion when \(h(0)>0\).
-::: proof
+::: {.proof}
 Because \(h\) is continuous and strictly increasing on \([0,1]\), it is a homeomorphism onto the compact interval
 \[
 K=[h(0),h(1)].
@@ -72,7 +72,7 @@ for every \(\phi\in C([0,1])\). Since continuous functions separate \(L^1\) func
 :::
 
 <1>2. The conclusion remains true when \(h(1/2)=0\).
-::: proof
+::: {.proof}
 Again let \(K=h([0,1])\). Now \(0\in K\). Define a finite signed Borel measure \(\nu\) on \(K\) by pushforward:
 \[
 \nu(E):=\int_{h^{-1}(E)} g(x)\,dx.

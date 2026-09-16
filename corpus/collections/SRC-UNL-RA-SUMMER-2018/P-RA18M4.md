@@ -26,7 +26,7 @@ audit:
   note: Replaced the invalid nonclosedness example, whose limit M|x| belongs to S on [0,1], by a sequence converging to an interior cusp at x=1/2.
 ---
 
-:::{.problem}
+::: {.problem}
 (a) Given a set $S$, show that the function
 $$\rho_\infty:\mathcal B(S)\times\mathcal B(S)\to\mathbb R,\qquad
 \rho_\infty(f,g):=\operatorname{lub}(\{|f(x)-g(x)|:x\in S\})$$

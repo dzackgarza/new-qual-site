@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any divisor $D$ on the surface $X$, we define its cohomology class $c(D) \in H^1\left(X, \Omega_X\right)$ by using the isomorphism $\Pic X \cong H^1\left(X, \mathcal{O}_X^*\right)$ of (III, Ex.
 4.5) and the sheaf homomorphism $d \log : \mathcal{O}^* \rightarrow \Omega_X$ (III, Ex.
 7.4c). Thus we obtain a group homomorphism $c: \Pic X \rightarrow H^1\left(X, \Omega_X\right)$.

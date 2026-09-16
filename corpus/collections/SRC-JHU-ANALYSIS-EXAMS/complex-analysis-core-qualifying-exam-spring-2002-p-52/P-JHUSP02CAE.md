@@ -28,7 +28,7 @@ audit:
 5. Let $\scriptstyle \sum _ { n = - \infty } ^ { \infty } a _ { n } z ^ { n }$ be the Laurent series expansion of $\scriptstyle { \frac { 1 } { \sin z } }$ on the annulus $\left\{ z \in \mathbb { C } : \pi < | z | < 2 \pi \right\}$ . Evaluate the coefficients $a _ { n }$ for $n < 0$
 :::
 
-::: solution
+::: {.solution}
 For $m\ge1$, the negative coefficients are
 $$
 \boxed{
@@ -39,7 +39,7 @@ a_{-(2k+1)}=-2\pi^{2k}\ (k\ge1).
 $$
 
 <1>1. A negative Laurent coefficient is a residue sum inside any circle with $\pi<r<2\pi$.
-::: proof
+::: {.proof}
 Fix $r$ with $\pi<r<2\pi$. The Laurent coefficient formula gives, for
 $m\ge1$,
 $$
@@ -55,7 +55,7 @@ sum of the residues of $z^{m-1}/\sin z$ at those three points.
 :::
 
 <1>2. The residues at $\pm\pi$ give the parity pattern.
-::: proof
+::: {.proof}
 At $z=k\pi$, the residue of $1/\sin z$ is
 $$
 \frac1{\cos(k\pi)}=(-1)^k.
@@ -71,7 +71,7 @@ $-2\pi^{m-1}$.
 :::
 
 <1>3. The origin contributes only when $m=1$.
-::: proof
+::: {.proof}
 Near zero,
 $$
 \sin z=z+O(z^3),

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian separated scheme.
 We define the **cohomological dimension** of $X$, denoted $\operatorname{cd}(X)$, to be the least integer $n$ such that $H^i(X, \mcf)=0$ for all quasi-coherent sheaves $\mcf$ and all $i>n$.
 

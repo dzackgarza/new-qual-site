@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a scheme, let $f \in \Gamma(X, \OO_X)$, and define $X_f$ to be the subset of points $x \in X$ such that the stalk $f_x$ of $f$ at $x$ is not contained in the maximal ideal $\mfm_x$ of the local ring $\OO_x$.
 
 a. If $U = \Spec B$ is an open affine subscheme of $X$ and $\bar{f} \in B = \Gamma\qty{U, \ro{\OO_X}{U}}$ is the restriction of $f$, show that $U \intersect X_f = D(\bar{f})$.

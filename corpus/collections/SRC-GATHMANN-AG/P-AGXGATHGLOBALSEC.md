@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 There is a bijection
 \[
 \ts{ \text{morphisms } X \to Y }

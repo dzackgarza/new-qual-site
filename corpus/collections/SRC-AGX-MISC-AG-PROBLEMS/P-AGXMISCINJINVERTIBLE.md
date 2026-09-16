@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral scheme.
 Prove that every nonzero morphism of invertible sheaves on $X$ is injective, and that every generically injective morphism of locally free sheaves on $X$ is injective.
 :::
 
-::: hint
+::: {.hint}
 First prove that a locally free sheaf on $X$ has no nonzero torsion subsheaf, where a torsion sheaf is one whose support has positive codimension.
 :::

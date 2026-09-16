@@ -24,11 +24,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give two examples of unique factorization domains which are not principal ideal domains.
 :::
 
-::: solution
+::: {.solution}
 Two examples are
 \[
 \mathbb Z[x]
@@ -38,13 +38,13 @@ k[x,y]
 for any field $k$.
 
 <1>1. The ring $\mathbb Z[x]$ is a UFD.
-::: proof
+::: {.proof}
 The ring $\mathbb Z$ is a UFD, and Gauss's lemma implies that a polynomial ring
 over a UFD is again a UFD.
 :::
 
 <1>2. The ring $\mathbb Z[x]$ is not a PID.
-::: proof
+::: {.proof}
 Consider the ideal
 \[
 I=(2,x).
@@ -63,13 +63,13 @@ $I$ would be the whole ring, a contradiction.
 :::
 
 <1>3. The ring $k[x,y]$ is a UFD.
-::: proof
+::: {.proof}
 The field $k$ is a UFD. Applying Gauss's lemma twice gives that
 $k[x,y]=k[x][y]$ is a UFD.
 :::
 
 <1>4. The ring $k[x,y]$ is not a PID.
-::: proof
+::: {.proof}
 The ideal
 \[
 J=(x,y)

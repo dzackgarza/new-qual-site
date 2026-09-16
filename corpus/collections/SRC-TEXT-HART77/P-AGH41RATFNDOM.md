@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a variety.
 
 1. Let $f$ and $g$ be regular functions on open subsets $U$ and $V$ of $X$, and suppose $f = g$ on $U \intersect V$.

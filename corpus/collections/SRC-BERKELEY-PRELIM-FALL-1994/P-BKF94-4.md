@@ -16,6 +16,6 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose a group $G$ has a nontrivial subgroup $H$ contained in every nontrivial subgroup of $G$. Prove that $H\subseteq Z(G)$.
 :::

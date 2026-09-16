@@ -21,7 +21,7 @@ audit:
 Give an example to show that the conclusion of the Borsuk lemma need not hold if $f$ is not injective.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Provide an explicit counterexample demonstrating that the conclusion of the Borsuk Lemma (that an image of a non-separating compact planar set does not separate the plane) fails when the continuous map $f$ is not injective.
 
 <1>1. Statement of the Borsuk Lemma:

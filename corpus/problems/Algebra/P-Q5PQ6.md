@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute all intermediate fields of
 \[
 L=\QQ(2^{1/4},\zeta_8)/\QQ.

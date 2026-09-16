@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a nonsingular real $n\times n$ matrix. Prove that there exist a unique orthogonal matrix $Q$ and a unique positive-definite symmetric matrix $B$ such that
 \[
 A=QB.

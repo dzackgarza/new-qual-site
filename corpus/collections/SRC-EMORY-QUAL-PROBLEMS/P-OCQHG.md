@@ -26,16 +26,16 @@ audit:
   note: "Checked that a finite generating set has one nonzero common denominator and that divisibility of the entire fraction field forces equality with the original ring."
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a principal ideal domain that is not a field, and write $F$ for its field of fractions.
 Prove that $F$ is not a finitely generated $R$-module.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Finite generation of $F$ would give a nonzero
 $d\in R$ with $dF\subseteq R$.
 
-::: proof
+::: {.proof}
 Suppose $F$ is generated over $R$ by finitely many
 fractions $a_i/b_i$, where $a_i,b_i\in R$ and
 $b_i\ne0$. Since $F\ne0$, the generating family
@@ -49,7 +49,7 @@ Thus $dF\subseteq R$.
 
 <1>2. This forces $R$ to be a field, a contradiction.
 
-::: proof
+::: {.proof}
 Since $d$ is a nonzero element of the field $F$,
 multiplication by $d$ is a bijection of $F$ onto
 itself: $x=d(x/d)$ for every $x\in F$. Thus

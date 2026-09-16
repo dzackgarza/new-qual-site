@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity and let $n$ be a positive integer.
 
 a. Prove that every surjective $R\dash$linear endomorphism $T: R^n \to R^n$ is injective.
@@ -27,7 +27,7 @@ a. Prove that every surjective $R\dash$linear endomorphism $T: R^n \to R^n$ is i
 b. Show that an injective $R\dash$linear endomorphism of $R^n$ need not be surjective.
 :::
 
-::: solution
+::: {.solution}
 For (a), let $A\in M_n(R)$ be the matrix of $T$ in the standard basis. Because $T$ is surjective, for each standard basis vector $e_i$ choose $v_i\in R^n$ with $T(v_i)=e_i$. Let $B$ be the matrix whose $i$th column is $v_i$. Then
 \[
 AB=I.

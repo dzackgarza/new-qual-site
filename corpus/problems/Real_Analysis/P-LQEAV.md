@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Show that for $0 < p < q \le \infty$,
 $$
 \|a\|_{\ell^q} \le \|a\|_{\ell^p}
@@ -26,7 +26,7 @@ $$
 for any sequence $a = (a_j)_{j=1}^\infty \in \mathbb{C}^\mathbb{N}$, where $\|a\|_{\ell^\infty} := \sup_j |a_j|$ and $\|a\|_{\ell^r} := \left(\sum_{j=1}^\infty |a_j|^r\right)^{1/r}$ for $r < \infty$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the sequence norm inequality $\|a\|_{\ell^q} \le \|a\|_{\ell^p}$ for $0 < p < q \le \infty$.
 
 <1>1. Case 1: $q = \infty$ (where $0 < p < \infty$).

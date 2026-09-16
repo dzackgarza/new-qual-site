@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a nonsingular projective variety over an algebraically closed field, and let $D$ be a divisor on $X$.
 For any $n > 0$ consider the complete linear system $\abs{nD}$.
 The **Riemann-Roch problem** is to determine $\dim \abs{nD}$ as a function of $n$, and in particular its behavior for large $n$.

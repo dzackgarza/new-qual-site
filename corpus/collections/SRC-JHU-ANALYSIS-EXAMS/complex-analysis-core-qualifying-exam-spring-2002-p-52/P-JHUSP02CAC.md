@@ -31,14 +31,14 @@ audit:
    Prove also that no two members in your list are biholomorphic equivalent.
 :::
 
-::: solution
+::: {.solution}
 Up to biholomorphic equivalence, the complete list is
 $$
 \boxed{\widehat{\mathbb C},\qquad \mathbb C,\qquad \Delta.}
 $$
 
 <1>1. Every simply connected region in $\widehat{\mathbb C}$ is equivalent to one of these three.
-::: proof
+::: {.proof}
 Let $U\subset\widehat{\mathbb C}$ be a nonempty simply connected region.
 
 If $U=\widehat{\mathbb C}$, it is already the first model.
@@ -62,7 +62,7 @@ These three cases exhaust the possible complements.
 :::
 
 <1>2. No two models in the list are biholomorphic.
-::: proof
+::: {.proof}
 The Riemann sphere is compact. A biholomorphism is in particular a
 homeomorphism, so it preserves compactness. Neither $\mathbb C$ nor $\Delta$
 is compact; therefore the sphere is biholomorphic to neither of them.

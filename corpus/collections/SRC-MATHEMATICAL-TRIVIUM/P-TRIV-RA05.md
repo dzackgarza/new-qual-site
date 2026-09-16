@@ -19,6 +19,6 @@ audit:
   note: Restored the exponent in sin^100 0.1, lost as sin100.1, against Real Analysis Problem 5 on page 8 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Find $\sin^{100} 0.1$ with $10\%$ accuracy.
 :::

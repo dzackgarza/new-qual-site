@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use the $\varepsilon$-$\delta$ definition to prove that
 \[
 \lim_{x\to2}\left(x+\frac1x\right)=\frac52.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $\varepsilon>0$ and choose
 \[
 \delta=\min\left\{1,\frac{2\varepsilon}{5}\right\}.

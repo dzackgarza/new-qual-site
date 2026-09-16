@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 \[
 \sum_{k\in \mathbb{Z}}{1\over (z-k)^2} = (\pi \csc(\pi z))^2 = \frac{\pi^2}{\sin^2(\pi z)}
@@ -31,7 +31,7 @@ Show that
 
 :::
 
-::: solution
+::: {.solution}
 Fix $z\notin\mathbb Z$ and consider, as a function of $w$,
 $$
 F(w)=\frac{\pi\cot(\pi w)}{(w-z)^2}.

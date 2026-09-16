@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute
 \[
 [\QQ(2^{3/2}):\QQ].

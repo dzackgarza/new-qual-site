@@ -23,16 +23,16 @@ audit:
   note: "Proved both directions of polynomial spectral mapping, using an eigenvector forward and factorization of f(z)-mu plus invertibility of products backward."
 ---
 
-::: problem
+::: {.problem}
 Let $T$ be a linear operator on a finite-dimensional complex vector space and $f$ a complex polynomial. If $\lambda$ is an eigenvalue of $T$, show that $f(\lambda)$ is an eigenvalue of $f(T)$. Is every eigenvalue of $f(T)$ obtained this way?
 :::
 
-::: solution
+::: {.solution}
 Yes. The eigenvalues of $f(T)$ are exactly the numbers $f(\lambda)$ with
 $\lambda$ an eigenvalue of $T$.
 
 <1>1. An eigenvalue of $T$ produces an eigenvalue of $f(T)$.
-::: proof
+::: {.proof}
 Let $v\ne0$ satisfy
 $$
 Tv=\lambda v.
@@ -52,7 +52,7 @@ Thus $f(\lambda)$ is an eigenvalue of $f(T)$.
 :::
 
 <1>2. Every eigenvalue of $f(T)$ arises in this way when $f$ is nonconstant.
-::: proof
+::: {.proof}
 Let $\mu$ be an eigenvalue of $f(T)$. Then
 $$
 f(T)-\mu I
@@ -75,7 +75,7 @@ $$
 :::
 
 <1>3. The constant-polynomial case gives the same conclusion.
-::: proof
+::: {.proof}
 If $f\equiv c$, then $f(T)=cI$, whose only eigenvalue is $c$. On a nonzero
 finite-dimensional complex vector space, $T$ has an eigenvalue $\lambda$, and
 $f(\lambda)=c$. Thus again every eigenvalue of $f(T)$ is obtained from an

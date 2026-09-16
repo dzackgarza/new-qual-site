@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $K\subset\mathbb R^n$ be compact, and let $\{B_j\}_{j=1}^\infty$ be a sequence of open balls covering $K$. Prove that there is $\varepsilon>0$ such that every open $\varepsilon$-ball centered at a point of $K$ is contained in one of the balls $B_j$.
 :::

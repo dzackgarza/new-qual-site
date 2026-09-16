@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the plane quartic curve $x^3 y+y^3 z+ z^3 x = 0$ over a field of characteristic 3. Show that $X$ is nonsingular, every point of $X$ is an inflection point, the dual curve $X^*$ is isomorphic to $X$, but the natural map $X \to X^*$ is purely inseparable.
 :::

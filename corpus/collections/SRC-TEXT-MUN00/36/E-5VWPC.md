@@ -25,7 +25,7 @@ Let $X$ be a normal space; let $\ts{U_1, U_2, \ldots}$ be a point-finite indexed
 Then there exists an indexed open covering $\ts{V_1, V_2, \ldots}$ of $X$ such that $\overline{V}_n \subset U_n$ for each $n$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Shrinking Lemma for countable point-finite open coverings $\{U_n\}_{n=1}^\infty$ on a normal space $X$.
 
 <1>1. Inductive construction of the family $\{V_n\}_{n=1}^\infty$:

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Is there a compact subset of $[0,1]\setminus\mathbb Q$ with positive Lebesgue measure?
 :::
 
-::: solution
+::: {.solution}
 Yes.
 Enumerate the rationals in $[0,1]$ as $(q_n)_{n\ge1}$.
 For each $n$, choose an open interval $I_n$ containing $q_n$ with

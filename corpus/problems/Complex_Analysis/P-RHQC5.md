@@ -16,13 +16,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of analytic functions on $\DD \definedas \theset{z\in \CC \suchthat \abs{z} < 1}$.
 
 Show that if $f_n\to g$ for some $g: \DD \to \CC$ uniformly on every compact $K\subset \DD$, then $g$ is analytic on $\DD$.
 :::
 
-::: solution
+::: {.solution}
 Local uniform convergence implies that $g$ is continuous. Let $T$ be any
 triangle whose closure lies in $\mathbb D$. Since $f_n\to g$ uniformly on
 $\partial T$,

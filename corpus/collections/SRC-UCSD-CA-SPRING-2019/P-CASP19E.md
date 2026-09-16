@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be an analytic function in $B(0, 2)$.
 Prove the sequence $g_N(z) := \sum_{n=1}^{N} \frac{f^{(n)}(z)}{n!}$, $N \geq 1$, converges in the space $H(\mathbb{D})$ of analytic functions on $\mathbb{D}$.
 :::
 
-::: solution
+::: {.solution}
 Fix a compact set $K\Subset\mathbb D$. Choose $r$ with
 \[
 1<r<2-\sup_{z\in K}|z|.

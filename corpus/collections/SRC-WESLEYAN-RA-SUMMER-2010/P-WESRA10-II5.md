@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 (a) Show that if $\mu(X)<\infty$, then
 \[
 L^4(X,\mathcal B,\mu)\subseteq L^3(X,\mathcal B,\mu).

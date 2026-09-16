@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathscr{P}$ be a property of morphisms of schemes such that
 
 a. a closed immersion has $\mathscr{P}$;

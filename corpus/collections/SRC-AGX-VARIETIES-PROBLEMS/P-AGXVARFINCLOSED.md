@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $f:X\to Y$ is finite and $\dim X = \dim Y$, then $f$ is closed and surjective.
 :::

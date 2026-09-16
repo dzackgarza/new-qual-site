@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $z_0$ is a pole of order $n$ of $f$, then it is a pole of order $n+k$ for $f^{(k)}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Without loss of generality suppose $z_0=0$ is the pole.
 Write $f(z) = \sum_{k\geq -N} c_k z^k$, then
 \[

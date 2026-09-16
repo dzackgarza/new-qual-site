@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G = \mathbb{C} \setminus \{0\}$, and let $h : G \to \mathbb{R}$ be harmonic.
 
 (i) Show that $g = h_x - ih_y$ is a holomorphic function in $G$, and that its residue at $0$ is a real number.
@@ -23,7 +23,7 @@ h(z) = c\log|z| + \operatorname{Re} f(z) \quad \forall z \in G.
 $$
 :::
 
-::: solution
+::: {.solution}
 Since $h$ is harmonic,
 \[
 g=h_x-ih_y=2\frac{\partial h}{\partial z}

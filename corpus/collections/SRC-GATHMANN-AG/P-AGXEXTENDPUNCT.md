@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $U \da \AA^2 \sm \ts{(0, 0)}$, an open subset of $\AA^2$.
 Prove that any regular function on $U$ extends to a regular function on all of $\AA^2$.
 :::

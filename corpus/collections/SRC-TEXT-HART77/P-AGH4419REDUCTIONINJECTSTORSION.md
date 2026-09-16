@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X, P_0$ be an elliptic curve defined over $\QQ$, represented as a curve in $\PP^2$ defined by an equation with integer coefficients.
 Then $X$ can be considered as the fibre over the generic point of a scheme $\bar{X}$ over $\Spec \ZZ$.
 Let $T \subseteq \Spec \ZZ$ be the open subset consisting of all primes $p \neq 2$ such that the fibre $X_{(p)}$ of $\bar{X}$ over $p$ is nonsingular.

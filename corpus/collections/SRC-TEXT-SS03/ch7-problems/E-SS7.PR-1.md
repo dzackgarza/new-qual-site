@@ -20,7 +20,7 @@ audit:
   note: The extracted card appends distinct later starred source problems after indexed Problem 1; the solution addresses the indexed problem.
 ---
 
-::: exercise
+::: {.exercise}
 1. Let $\textstyle F ( s ) = \sum _ { n = 1 } ^ { \infty } a _ { n } / n ^ { s }$ , where $| a _ { n } | \leq M$ for all n.
 
 (a) Then
@@ -66,7 +66,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For Problem 1(a), assume first $\sigma>1$.
 Since $|a_n|\le M$, the series for $F(\sigma+it)$ converges absolutely and uniformly in $t$.
 Hence

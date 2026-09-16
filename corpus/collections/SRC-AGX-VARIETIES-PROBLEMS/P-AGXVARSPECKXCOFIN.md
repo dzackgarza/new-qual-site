@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\Spec k[x]$ with the Zariski topology coincides with the cofinite topology.
 :::

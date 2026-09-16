@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A sheaf $\mcf$ on a topological space $X$ is **flasque** if for every inclusion $V \subseteq U$ of open sets the restriction map $\mcf(U) \to \mcf(V)$ is surjective.
 
 a. Show that a constant sheaf on an irreducible topological space is flasque.

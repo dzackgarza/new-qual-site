@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the characteristic and minimal polynomial of the Frobenius automorphism?
 :::
 
-::: solution
+::: {.solution}
 Let $F=\mathbb F_{p^n}$ and let
 \[
 \Phi:F\to F,\qquad \Phi(x)=x^p,

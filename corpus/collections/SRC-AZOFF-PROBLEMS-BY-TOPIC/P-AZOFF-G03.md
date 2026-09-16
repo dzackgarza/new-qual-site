@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \sqrt { x } } { ( x + 1 ) ^ { 2 } } } d x$
 :::

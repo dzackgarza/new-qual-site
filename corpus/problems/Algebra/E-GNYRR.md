@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Prove Cayley-Hamilton in the following way.
 Let $V=\spanof\ts{\vector v_1,\ldots,\vector v_n}$ and define
 \[

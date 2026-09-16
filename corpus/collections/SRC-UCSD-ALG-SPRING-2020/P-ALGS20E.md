@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring.
 
 (a) Let $M$ and $N$ be two submodules of an $A$-module $K$.

@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 **Part a**: for $M$ an $A\dash$module and $\phi: A\to B$ a morphism of rings, give $B\tensor_A M$ the structure of a $B\dash$module and show that it describes a functor $\mods{A}\to \mods{B}$.
 
 **Part b**: if $\psi: A\to C$ is another ring morphism, show that $B\tensor_A C$ has a ring structure.
 :::
 
-::: solution
+::: {.solution}
 **Part a**:
 
 - $B\tensor_A M$ makes sense: $B$ is a $(B, A)\dash$bimodule with the usual multiplication on the left and the right action

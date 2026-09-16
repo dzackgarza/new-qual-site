@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 What is meant by the $L^p$ norm of a function on a measure space $(Y,\tau(Y),\mu)$?
 :::
 
-::: solution
+::: {.solution}
 For $1\le p<\infty$, the $L^p$ norm of a measurable function $f$ is
 \[
 \boxed{\|f\|_p=\left(\int_Y|f|^p\,d\mu\right)^{1/p}.}

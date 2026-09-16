@@ -26,7 +26,7 @@ audit:
   note: Solved both Euler-characteristic Diophantine equations and used the compact-surface classification invariants to check completeness and nonduplication.
 ---
 
-::: problem
+::: {.problem}
 Give a list without repetitions of all compact surfaces (orientable or non-orientable and with or without boundary) that have Euler characteristic negative one.
 
 Explain why there are no repetitions on your list.

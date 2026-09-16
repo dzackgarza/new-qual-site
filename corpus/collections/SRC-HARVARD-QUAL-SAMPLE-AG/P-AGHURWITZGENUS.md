@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How do you use Hurwitz's formula to calculate the genus of a given curve?
 :::

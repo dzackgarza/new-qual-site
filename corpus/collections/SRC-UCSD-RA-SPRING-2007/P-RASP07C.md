@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 True or false.
 For each part, determine if it is always true or sometimes false.
 If true give a brief proof.
@@ -48,9 +48,9 @@ If $\|\cdot\|_1 \leq \|\cdot\|_2$, then there exists $C > 0$ such that $\|\cdot\
 (h) If $\mu_1$ and $\mu_2$ are two positive measures on a measurable space $(X, \mathcal{M})$ such that $\mu_1$ is absolutely continuous with respect to $\mu_2$, then there exists a measurable function $f$ on $X$ such that $d\mu_1 = f\,d\mu_2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 Take $X=\ell^2$ and let $x_n=e_n$, the standard unit vectors. Then $(e_n)$ is bounded, but
 \[
 \|e_n-e_m\|_2=\sqrt2
@@ -60,7 +60,7 @@ so it has no Cauchy, hence no convergent, subsequence. Completeness does not imp
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 If
 \[
 \frac d{d\xi}\widehat f=0,
@@ -76,7 +76,7 @@ Injectivity of the Fourier transform on $\mathcal S$ gives
 :::
 
 <1>3. Part (c) is false.
-::: proof
+::: {.proof}
 Let
 \[
 T=\delta_0.
@@ -89,7 +89,7 @@ but $T\ne0$.
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 The identity map
 \[
 I:(X,\|\cdot\|_2)\longrightarrow(X,\|\cdot\|_1)
@@ -101,7 +101,7 @@ is bounded because $\|x\|_1\le\|x\|_2$. It is also a bijection between Banach sp
 :::
 
 <1>5. Part (e) is false.
-::: proof
+::: {.proof}
 Take
 \[
 X=C^1([0,1]),
@@ -130,7 +130,7 @@ Thus completeness of only one norm is insufficient.
 :::
 
 <1>6. Part (f) is false.
-::: proof
+::: {.proof}
 On $X=(0,1)$ with Lebesgue measure, let
 \[
 f(x)=x^{-1/2}.
@@ -148,7 +148,7 @@ Thus $f\in L^1\setminus L^2$ even though $\mu(X)<\infty$.
 :::
 
 <1>7. Part (g) is true.
-::: proof
+::: {.proof}
 If $a=(a_n)\in\ell^1$, then
 \[
 \sup_n|a_n|\le\sum_n|a_n|=\|a\|_1.
@@ -166,7 +166,7 @@ Therefore
 :::
 
 <1>8. Part (h) is false without additional hypotheses.
-::: proof
+::: {.proof}
 Let
 \[
 X=\{x\},\qquad \mathcal M=\{\varnothing,X\},

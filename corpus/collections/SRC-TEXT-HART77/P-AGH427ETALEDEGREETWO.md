@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a curve over a field $k$ of characteristic $\neq 2$.
 We show there is a one-to-one correspondence between finite étale morphisms $f: X \to Y$ of degree 2, and 2-torsion elements of $\Pic Y$, i.e., invertible sheaves $\mcl$ on $Y$ with $\mcl^2 \cong \OO_Y$.
 

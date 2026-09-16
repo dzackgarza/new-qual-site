@@ -25,6 +25,6 @@ Which of the following graphs are isomorphic?
 (E) I, II, and III
 :::
 
-::: remark
+::: {.remark}
 The source shows the three graphs I, II and III in a figure that is not reproduced here.
 :::

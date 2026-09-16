@@ -29,8 +29,8 @@ c. Show that $f, g$ each have period one and approach zero uniformly on $0\leq x
 d. Conclude that $f = g$.
 :::
 
-:::{.solution}
-:::{.concept}
+::: {.solution}
+::: {.concept}
 Idea: show their $f-g$ is analytic by taking away all of the negative powers, and bounded by (c).
 :::
 

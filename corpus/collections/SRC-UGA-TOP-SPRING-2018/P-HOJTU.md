@@ -24,7 +24,7 @@ audit:
   note: Verified the singular boundary maps on the unique simplex in each degree and hence alternative (c).
 ---
 
-::: problem
+::: {.problem}
 It is a fact that if $X$ is a single point then $H_1(X)=0$.
 One of the following is the correct justification of this fact in terms of the singular chain complex.
 Which one is correct and why is it correct?

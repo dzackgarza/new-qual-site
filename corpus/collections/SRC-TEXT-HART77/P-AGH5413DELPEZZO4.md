@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the Del Pezzo surface of degree 4 in $\PP^4$ obtained by blowing up 5 points of $\PP^2$ (4.7).
 
 a. Show that $X$ contains 16 lines.

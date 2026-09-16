@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 44, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the quadratic form $f ( \vec { x } ) = 2 x _ { 1 } ^ { 2 } + 4 x _ { 1 } x _ { 2 } + 3 x _ { 2 } ^ { 2 } + 4 x _ { 2 } x _ { 3 } + 5 x _ { 3 } ^ { 2 }$ ,where $x _ { i } , i = 1 , 2 , 3$ are components of x in $\mathbb { R } ^ { 3 }$
 
 (a) Reduce $f ( \vec { x } )$ to the canonical form.

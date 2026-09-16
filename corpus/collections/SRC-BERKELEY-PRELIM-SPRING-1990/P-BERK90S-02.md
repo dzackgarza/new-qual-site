@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a complex $n\times n$ matrix of finite order, so that
 \[
 A^k=I

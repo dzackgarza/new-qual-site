@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V,\varphi)$ be a finite-dimensional complex representation of a finite group $G$, and let $\chi(g)=\operatorname{Tr}\varphi(g)$ be its character.
 Prove that $|\chi(g)|\leq\dim V$ for all $g\in G$, and that the bound is sharp.
 :::

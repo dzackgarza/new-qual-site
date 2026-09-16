@@ -23,7 +23,7 @@ audit:
   note: "Computed negative Laurent coefficients by integrating on a circle 1<rho<2 and summing residues at -1,0,1."
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 \cot(\pi z)=\sum_{n=-\infty}^{\infty}a_nz^n
@@ -31,14 +31,14 @@ Let
 be the Laurent expansion on $1<|z|<2$. Compute $a_n$ for $n<0$.
 :::
 
-::: solution
+::: {.solution}
 Write $n=-m$ with $m\ge1$, and choose any radius $\rho$ with
 $$
 1<\rho<2.
 $$
 
 <1>1. Express $a_{-m}$ as a contour integral.
-::: proof
+::: {.proof}
 The Laurent coefficient formula gives
 $$
 a_{-m}
@@ -55,7 +55,7 @@ $\cos(\pi k)=(-1)^k$.
 :::
 
 <1>2. Compute the coefficient $a_{-1}$.
-::: proof
+::: {.proof}
 For $m=1$, the integrand is simply $\cot(\pi z)$. Therefore
 $$
 a_{-1}
@@ -65,7 +65,7 @@ $$
 :::
 
 <1>3. Compute the coefficients $a_{-m}$ for $m>1$.
-::: proof
+::: {.proof}
 When $m>1$, multiplication by $z^{m-1}$ removes the pole at $0$, so only
 $z=\pm1$ contribute. Hence
 $$
@@ -79,7 +79,7 @@ Thus this coefficient is $2/\pi$ when $m$ is odd and $0$ when $m$ is even.
 :::
 
 <1>4. State all negative coefficients.
-::: proof
+::: {.proof}
 Combining steps <1>2 and <1>3,
 $$
 \boxed{

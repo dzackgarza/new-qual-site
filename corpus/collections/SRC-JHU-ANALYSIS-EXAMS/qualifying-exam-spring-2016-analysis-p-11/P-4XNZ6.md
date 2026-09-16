@@ -38,9 +38,9 @@ You may assume the Vitali 3-times Covering Lemma.
 State it clearly if you use it.
 :::
 
-::: solution
+::: {.solution}
 <1>1. State the covering lemma and choose a witnessing ball at each superlevel point.
-::: proof
+::: {.proof}
 We use the following Vitali $3$-times covering lemma: from any family of balls in $\mathbb R^d$ whose radii are uniformly bounded, one can choose a finite or countable pairwise disjoint subfamily $(B_j)$ such that
 \[
 \bigcup_{B\text{ in the original family}}B
@@ -64,7 +64,7 @@ so the radii of all the selected balls are uniformly bounded.
 :::
 
 <1>2. Apply the covering lemma.
-::: proof
+::: {.proof}
 Choose a pairwise disjoint subfamily $(B_j)$ as in the $3$-times covering lemma. Since every $x\in E_\alpha$ lies in one of the original balls,
 \[
 E_\alpha\subseteq\bigcup_j3B_j.
@@ -78,7 +78,7 @@ m(E_\alpha)
 :::
 
 <1>3. Use the large-average property and disjointness.
-::: proof
+::: {.proof}
 For every selected ball,
 \[
 \alpha m(B_j)<\int_{B_j}|f|.

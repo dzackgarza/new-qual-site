@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the following limit and justify your calculations:
 $$
 \lim_{n \to \infty} \int_{1}^{n} \frac{d x}{\left(1+\frac{x}{n}\right)^{n} \sqrt[n]{x}}.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Evaluate the integral limit using the Dominated Convergence Theorem on the interval $[1, \infty)$.
 
 <1>1. Extension to $[1, \infty)$ and pointwise limit:

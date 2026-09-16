@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal B,\mu)$ be a measure space and let $f:X\to\mathbb R$ be integrable.
 Prove that
 \[
@@ -30,7 +30,7 @@ Prove that
 is a countable union of sets of finite measure.
 :::
 
-::: solution
+::: {.solution}
 For $n\ge1$, set
 \[
 E_n:=\{x\in X:|f(x)|\ge 1/n\}.

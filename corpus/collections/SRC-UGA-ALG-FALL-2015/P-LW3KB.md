@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a vector space over a field $F$, and let $(\cdot, \cdot): V \times V \to F$ be a non-degenerate symmetric bilinear form on $V$. For any subspace $W \subseteq V$, define its orthogonal complement by
 $$
 W^{\perp} = \{v \in V \mid (v, w) = 0 \text{ for all } w \in W\}.
@@ -30,7 +30,7 @@ $$
 and prove that $\psi$ is an isomorphism if $\dim_F V < \infty$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove anti-monotonicity of orthogonal complements in (a), construct an injective evaluation map on quotient spaces in (b), and prove it is an isomorphism in finite dimensions by dimension counting.
 
 <1>1. Part (a): $Y \subseteq X \implies X^\perp \subseteq Y^\perp$.

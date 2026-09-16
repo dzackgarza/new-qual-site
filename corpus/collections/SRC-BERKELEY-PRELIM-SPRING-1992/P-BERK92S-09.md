@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $p$ be a nonconstant polynomial with real coefficients and only real roots. Prove that for every real $r$, the polynomial
 \[
 p-rp'

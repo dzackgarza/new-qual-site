@@ -24,19 +24,19 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $L/K$ be a Galois extension of fields, with Galois group $G = \{\sigma_1, \dots, \sigma_n\}$, and let $\alpha \in L$.
 Prove that $L = K(\alpha)$ iff $\sigma_1(\alpha), \dots, \sigma_n(\alpha)$ are distinct.
 :::
 
-::: solution
+::: {.solution}
 The finite Galois group in the hypothesis gives
 $[L:K]=|G|=n$ [@DF04]. Let $m_\alpha\in K[x]$ be the minimal
 polynomial of $\alpha$ and put $d=\deg m_\alpha=[K(\alpha):K]$.
 
 <1>1. If $L=K(\alpha)$, the $n$ displayed conjugates are distinct.
 
-::: proof
+::: {.proof}
 Suppose $\sigma_i(\alpha)=\sigma_j(\alpha)$. Every element of $K(\alpha)$
 is a rational expression in $\alpha$ with coefficients in $K$.
 Both automorphisms fix those coefficients, and their agreement on
@@ -46,7 +46,7 @@ Thus $\sigma_i=\sigma_j$, and the enumeration of $G$ gives $i=j$.
 
 <1>2. If the $n$ displayed conjugates are distinct, then $L=K(\alpha)$.
 
-::: proof
+::: {.proof}
 For each $i$, fixing the coefficients of $m_\alpha$ gives
 $$
 m_\alpha(\sigma_i(\alpha))

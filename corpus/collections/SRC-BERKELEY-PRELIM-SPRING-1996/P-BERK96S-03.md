@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Evaluate
 \[
 \int_0^{2\pi}\frac{d\theta}{2+\cos\theta}.

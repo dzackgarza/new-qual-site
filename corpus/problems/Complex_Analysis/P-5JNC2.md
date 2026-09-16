@@ -22,7 +22,7 @@ f(z) = {z + 1 \over z(z-1)}
 about $z=0$ and $z=1$ respectively.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 Let $f(z) = {z+1\over z(z-1)}$.

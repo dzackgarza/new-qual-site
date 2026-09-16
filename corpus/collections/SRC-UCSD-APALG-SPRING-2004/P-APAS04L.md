@@ -21,7 +21,7 @@ audit:
   note: Repaired the false explicit identity in part (c) and made the characteristic dependence in part (d) explicit.
 ---
 
-::: problem
+::: {.problem}
 Let $I$ and $J$ be ideals in the polynomial ring $R = k[x_1, \dots, x_n]$ where $k$ is a field.
 
 (a) Show that $\sqrt{\sqrt{I}} = \sqrt{I}$.

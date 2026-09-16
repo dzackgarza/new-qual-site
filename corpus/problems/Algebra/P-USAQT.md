@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let rings be commutative with identity.
 
 1. Show that every proper ideal is contained in a maximal ideal.
@@ -40,7 +40,7 @@ Let rings be commutative with identity.
 14. Show that a Noetherian ring has every ideal finitely generated.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $I\subsetneq R$. Consider the set of proper ideals containing $I$, ordered by inclusion. The union of a chain is again an ideal, and it is proper: if its union contained $1$, then one member of the chain would contain $1$. By Zorn's lemma there is a maximal member, i.e. a maximal ideal containing $I$.
 
 <1>2. Suppose $x$ is irreducible and

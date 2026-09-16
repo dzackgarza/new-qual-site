@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi \in C_c^\infty(\mathbb{R})$ be a smooth, compactly supported function supported in $[-N, N]$ such that $\int_\mathbb{R} \varphi(x) \, dx = 1$. For $f \in L^1(\mathbb{R})$ and $j \in \mathbb{N}$, define the mollifier sequence
 $$
 K_j(x) = j \varphi(j x), \qquad (f * K_j)(x) = \int_\mathbb{R} f(x - y) K_j(y) \, dy.
@@ -27,7 +27,7 @@ Prove:
 (b) $\lim_{j \to \infty} \|f * K_j - f\|_{L^1(\mathbb{R})} = 0$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that convolution with a smooth compactly supported mollifier yields smooth functions in (a), and that $K_j$ acts as an approximate identity in $L^1(\mathbb{R})$ in (b).
 
 <1>1. Part (a): Smoothness and support of $f * K_j$.

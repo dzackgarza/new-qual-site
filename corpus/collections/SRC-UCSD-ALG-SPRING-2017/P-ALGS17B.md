@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose that $G$ is a simple group of order $|G| = 168 = 2^3 \cdot 3 \cdot 7$.
 
 (a) Show that $G$ does not have any subgroup $H$ with index $[G:H] \leq 6$.

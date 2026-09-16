@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{R}^n \to \mathbb{R}^n$ be a continuous map.
 Suppose that there exists a uniform constant $C$ such that $\|f(\vec{x}) - \vec{x}\| \leq C$ for any $\vec{x} \in \mathbb{R}^n$.
 Prove that $f$ is surjective.

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 State the Lebesgue monotone convergence theorem in an abstract measure space.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal M,\mu)$ be a measure space, and let
 \[
 0\le f_1\le f_2\le\cdots

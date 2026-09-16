@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What are all possible orders of elements of $\SL_2(\ZZ)$?
 :::
 
-::: solution
+::: {.solution}
 The possible orders are
 \[
 1,2,3,4,6,\quad\text{and }\infty.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mco_X)$ be a ringed space, let $\mci$ be a sheaf of ideals with $\mci^2=0$, and let $X_0$ be the ringed space $(X, \mco_X/\mci)$.
 Show that there is an exact sequence of sheaves of abelian groups on $X$,
 \[

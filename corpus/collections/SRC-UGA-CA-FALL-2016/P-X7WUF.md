@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $F$ be an analytic function inside and on a simple closed
 curve $C$, except for a pole of order $m\geq 1$ at $z=a$ inside $C$.
 Prove that
@@ -28,7 +28,7 @@ $$\frac{1}{2 \pi i}\oint_{C} F(\tau) d\tau =
 where $C$ is the circle $|z|=4$.
 :::
 
-::: solution
+::: {.solution}
 Part (a) is missing the factor $1/(m-1)!$. The correct residue formula is
 \[
 \frac{1}{2\pi i}\oint_C F(\tau)\,d\tau

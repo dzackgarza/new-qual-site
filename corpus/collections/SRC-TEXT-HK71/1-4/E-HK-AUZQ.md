@@ -33,7 +33,7 @@ $$
 For which $(y_{1}, y_{2}, y_{3}, y_{4})$ does the system of equations AX = Y have a solution?
 :::
 
-::: solution
+::: {.solution}
 The system $AX=Y$ is solvable exactly for those
 $Y=(y_1,y_2,y_3,y_4)^t$ satisfying
 \[
@@ -44,7 +44,7 @@ $Y=(y_1,y_2,y_3,y_4)^t$ satisfying
 
 <1>1. Every vector in the column space of $A$ satisfies the two displayed
 relations.
-::: proof
+::: {.proof}
 The vectors
 \[
 u=(-2,-3,7,0)^t,
@@ -67,7 +67,7 @@ which are exactly the stated equations.
 :::
 
 <1>2. The two relations are also sufficient.
-::: proof
+::: {.proof}
 Row reduction shows $\operatorname{rank}A=2$. Therefore the left nullspace
 \[
 \ker(A^t)

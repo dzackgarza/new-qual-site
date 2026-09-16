@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic.
 Assume $\operatorname{Re} f(z) > 0$ for all $z \in \mathbb{D}$.
 Show that
@@ -21,7 +21,7 @@ Show that
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $a=f(0)$, so $\operatorname{Re}a>0$. The Möbius map
 \[
 \Phi(w)=\frac{w-a}{w+\overline a}

@@ -28,7 +28,7 @@ $$
 If $X$ is compact, the first two coincide, and if $X$ is discrete, the second two coincide.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the inclusions among the uniform, compact convergence, and pointwise convergence topologies on $Y^X$, and establish their equivalence under compactness and discreteness hypotheses.
 
 <1>1. Basis definitions for the three topologies: Let $f \in Y^X$ and $\varepsilon \in (0, 1]$.

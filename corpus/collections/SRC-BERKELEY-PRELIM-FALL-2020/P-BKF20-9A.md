@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 If $a,b$ are odd integers, prove that
 \[
 f(x)=x^3+ax+b

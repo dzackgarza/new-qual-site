@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a morphism of separated schemes of finite type over a noetherian scheme $S$.
 Let $Z$ be a closed subscheme of $X$ which is proper over $S$.
 Show that $f(Z)$ is closed in $Y$, and that $f(Z)$ with its image subscheme structure is proper over $S$.

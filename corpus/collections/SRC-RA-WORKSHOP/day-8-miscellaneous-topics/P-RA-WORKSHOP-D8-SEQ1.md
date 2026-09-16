@@ -26,7 +26,7 @@ What can be said about $R$ when $R_1=R_2$?
 Show by means of an example that this inequality can be strict.
 :::
 
-::: remark
+::: {.remark}
 The source page literally says “the power series series” in its opening sentence; that wording is preserved here.
 :::
 

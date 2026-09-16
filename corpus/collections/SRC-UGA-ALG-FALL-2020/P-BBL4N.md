@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $A \in \Mat(n\times n, \RR)$ be arbitrary.
 Make $\RR^n$ into an $\RR[x]\dash$module by letting $f(x).\vector{v} \da f(A)(\vector{v})$ for $f(\vector{v})\in \RR[x]$ and $\vector{v} \in \RR^n$.
 Suppose that this induces the following direct sum decomposition:

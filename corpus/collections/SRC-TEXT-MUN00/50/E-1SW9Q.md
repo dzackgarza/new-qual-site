@@ -81,7 +81,7 @@ of $X$ is closed and discrete.
 Compare Example 3 of §31.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the foundational geometric and topological properties of the Prüfer manifold $X$, showing it is a locally 2-euclidean Hausdorff space that fails to be normal.
 
 <1>1. Part (a) & (b): Geometric description and basis verification.

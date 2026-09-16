@@ -33,12 +33,12 @@ $H = \left\{ z \in \mathbb { C } : \operatorname { I m } z > 0 \right\}$ to the 
 Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $| f ^ { \prime } ( i ) |$
 :::
 
-::: solution
+::: {.solution}
 The maximum is $\boxed{3/8}$.
 
 <1>1. Normalize both the source and the target to a disk map fixing zero.
 
-::: proof
+::: {.proof}
 The maps
 $$
 \phi(z)=\frac{z-i}{z+i},\qquad
@@ -68,7 +68,7 @@ into $D$ and satisfies $F(0)=0$.
 
 <1>2. Schwarz's lemma gives the numerical bound.
 
-::: proof
+::: {.proof}
 Direct differentiation yields $\psi'(0)=2i$ and
 $T'(1/2)=4/3$. The chain rule gives
 $$
@@ -82,7 +82,7 @@ $$
 
 <1>3. The bound is attained, and the extremizers are explicit.
 
-::: proof
+::: {.proof}
 For any $\lambda\in\mathbb C$ with $|\lambda|=1$, define
 $$
 f_\lambda(z)=T^{-1}(\lambda\phi(z))

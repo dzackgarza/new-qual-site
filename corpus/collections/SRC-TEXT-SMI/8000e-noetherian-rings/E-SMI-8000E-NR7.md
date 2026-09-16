@@ -29,12 +29,12 @@ audit:
 Using Zorn's lemma, prove in any ring $R$ that every proper ideal $I$ of $R$ is contained in a maximal ideal.
 :::
 
-::: remark
+::: {.remark}
 The source says “every ideal,” but the statement necessarily excludes
 $I=R$, since maximal ideals are proper.
 :::
 
-::: solution
+::: {.solution}
 Fix a proper ideal $I\subsetneq R$ and let
 $$
 \mathcal P
@@ -43,12 +43,12 @@ $$
 ordered by inclusion.
 
 <1>1. The poset $\mathcal P$ is nonempty.
-::: proof
+::: {.proof}
 The ideal $I$ itself belongs to $\mathcal P$.
 :::
 
 <1>2. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
-::: proof
+::: {.proof}
 Let $\mathcal C\subseteq\mathcal P$ be a chain. By
 [[E-SMI-8000E-NR6]],
 $$
@@ -63,7 +63,7 @@ and it is an upper bound for the chain.
 :::
 
 <1>3. Apply Zorn's lemma.
-::: proof
+::: {.proof}
 By steps <1>1--<1>2, Zorn's lemma gives a maximal element
 $$
 \mathfrak m\in\mathcal P.

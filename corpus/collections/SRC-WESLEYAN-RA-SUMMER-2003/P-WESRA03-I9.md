@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose $f_n:\mathbb R\to\mathbb R$ are integrable and $f_n\to0$ uniformly on $\mathbb R$.
 Must
 \[
@@ -25,7 +25,7 @@ Must
 \]
 :::
 
-::: solution
+::: {.solution}
 No. Let
 \[
 f_n(x)=\frac1n\mathbf1_{[0,n]}(x).

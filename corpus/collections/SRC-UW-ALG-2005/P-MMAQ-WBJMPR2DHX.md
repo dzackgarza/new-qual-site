@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb F_2$ be the field with two elements.
 
 - What is the order of $\text{GL}_3(\mathbb F_2)$?
@@ -27,7 +27,7 @@ Let $\mathbb F_2$ be the field with two elements.
 - Use the fact that $\text{GL}_3(\mathbb F_2)$ is a simple group (which you should not prove) to find the number of elements of order 7 in $\text{GL}_3(\mathbb F_2)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The order of $\operatorname{GL}_3(\mathbb F_2)$ is
 \[
 (2^3-1)(2^3-2)(2^3-2^2)=7\cdot6\cdot4=168.

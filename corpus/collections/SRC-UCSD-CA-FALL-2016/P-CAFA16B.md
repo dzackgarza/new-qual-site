@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume that $f: \mathbb{D} \to \mathbb{D}$ is an analytic function such that $f(0) = 0$.
 Show that $g(z) = \sum_{n=1}^{\infty} f(z^n)$ converges to an analytic function on $\mathbb{D}$.
 :::
@@ -21,7 +21,7 @@ Show that $g(z) = \sum_{n=1}^{\infty} f(z^n)$ converges to an analytic function 
 The official Fall 2016 exam starts the sum at $n=0$. Since $z^0=1$ and $f$ is only defined on the open unit disk, that term is undefined. The intended series necessarily starts at $n=1$.
 :::
 
-::: solution
+::: {.solution}
 By Schwarz's lemma,
 \[
 |f(w)|\le |w|\qquad (w\in\mathbb D).

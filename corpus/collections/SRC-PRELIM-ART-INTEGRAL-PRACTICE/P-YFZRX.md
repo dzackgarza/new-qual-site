@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For $x>1$, evaluate
 \[
 \int x\,\sec^{-1}(x)\,dx
@@ -31,7 +31,7 @@ For $x>1$, evaluate
 \]
 :::
 
-::: solution
+::: {.solution}
 For $x>1$,
 \[
 \frac{d}{dx}\sec^{-1}x=\frac1{x\sqrt{x^2-1}},

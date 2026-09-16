@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $f : X \to [-1,1]$ is a measurable function and $\varphi : [-1,1] \to \mathbb{R}$ is a bounded Borel measurable function.
 Show:
 
@@ -38,9 +38,9 @@ $$
 (c) Show by example that it is possible that $\lim_{n \to \infty} \|M_{\varphi_n \circ f}\|_{B(L^2(\mu))} \neq 0$ even though $\varphi_n \to 0$ boundedly.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Bound the multiplication operator.
-::: proof
+::: {.proof}
 For $h\in L^2(\mu)$,
 \[
 \begin{aligned}
@@ -56,7 +56,7 @@ Therefore
 :::
 
 <1>2. Prove strong convergence under bounded pointwise convergence.
-::: proof
+::: {.proof}
 Assume $\varphi_n(t)\to\varphi(t)$ for every $t\in[-1,1]$ and that
 \[
 \sup_n\|\varphi_n\|_u\le C<\infty.
@@ -79,7 +79,7 @@ which is integrable. By the Dominated Convergence Theorem,
 :::
 
 <1>3. Strong convergence need not imply convergence in operator norm.
-::: proof
+::: {.proof}
 Take
 \[
 X=[0,1],\qquad \mu=m,\qquad f(x)=x,

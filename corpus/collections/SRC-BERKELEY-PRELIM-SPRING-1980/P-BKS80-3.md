@@ -10,7 +10,7 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Let $P_2$ be the real polynomials of degree at most two and define
 \[
 J(f)=\int_0^1 f(x)^2\,dx.

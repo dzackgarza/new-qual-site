@@ -33,10 +33,10 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The real integral is absolutely convergent.
 
-::: proof
+::: {.proof}
 For $0<x\leq1$, its absolute integrand is at most
 $|\log x|/16$, whose integral is finite. For $x\geq1$,
 the inequalities $\log x\leq x$ and $(x^2+4)^2\geq x^4$
@@ -46,7 +46,7 @@ converge absolutely. Denote the requested integral by $I$.
 
 <1>2. An indented upper semicircle determines $2I$ by a double-pole residue.
 
-::: proof
+::: {.proof}
 Choose the logarithm with $-\pi/2<\arg z<3\pi/2$ and set
 $$
 F(z)=\frac{\operatorname{Log}z}{(z^2+4)^2}.
@@ -79,7 +79,7 @@ Its real part is twice the corresponding truncated integral.
 
 <1>3. Both arcs vanish and yield the asserted value.
 
-::: proof
+::: {.proof}
 On the outer semicircle the integral has modulus at most
 $$
 \frac{\pi R(\log R+\pi)}{(R^2-4)^2}\longrightarrow0.

@@ -30,14 +30,14 @@ Prove that if $f: M \to N$ is any $R$ module map, and $g: M \to M$ and $h: N \to
 :::
 
 
-::: solution
+::: {.solution}
 Put
 $$
 F=h\circ f\circ g:M\longrightarrow N.
 $$
 
 <1>1. The kernels of $F$ and $f$ are isomorphic.
-::: proof
+::: {.proof}
 Because $h$ is injective,
 $$
 F(x)=0
@@ -64,7 +64,7 @@ $$
 :::
 
 <1>2. The image of $F$ is $h(\operatorname{im}f)$.
-::: proof
+::: {.proof}
 Since $g$ is surjective,
 $$
 f(g(M))=f(M)=\operatorname{im}f.
@@ -76,7 +76,7 @@ $$
 :::
 
 <1>3. The cokernels of $F$ and $f$ are isomorphic.
-::: proof
+::: {.proof}
 By step <1>2,
 $$
 \operatorname{coker}F

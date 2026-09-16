@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove that $x > \ln x$ for all $x > 0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define $f:(0,\infty)\to\mathbb R$ by
 \[
 f(x)=x-\ln x.

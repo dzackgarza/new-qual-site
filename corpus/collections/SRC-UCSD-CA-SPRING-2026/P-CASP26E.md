@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G = \{z \in \mathbb{C} : |z| > 1\}$.
 Let $u : G \to \mathbb{R}$ be a continuous bounded function, such that $u$ is harmonic in $G$.
 Assume $u(z) \leq 0$ for all $|z| = 1$.
 Show that $u(z) \leq 0$ for all $z \in G$.
 :::
 
-::: solution
+::: {.solution}
 Define on the punctured unit disk
 \[
 v(w)=u(1/w),

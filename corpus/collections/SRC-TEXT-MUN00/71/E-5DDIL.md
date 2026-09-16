@@ -23,7 +23,7 @@ Then we call $X$ the wedge of the spaces $X_1, \ldots, X_n$, and write $X = X_1 
 Show that if for each $i$, the point $p$ is a deformation retract of an open set $W_i$ of $X_i$, then $\pi_1(X, p)$ is the external free product of the groups $\pi_1(X_i, p)$ relative to the monomorphisms induced by inclusion.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the fundamental group of a wedge sum $X = X_1 \vee \dots \vee X_n$ of well-pointed spaces (where $p$ is a deformation retract of an open neighborhood $W_i \subseteq X_i$) is isomorphic to the free product $*_{i=1}^n \pi_1(X_i, p)$ via the Seifert-van Kampen Theorem.
 
 <1>1. Base case ($n = 2$):

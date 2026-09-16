@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $|G| = p q$, where $p$ and $q$ are distinct primes with $p > q$.
 Prove that $G$ possesses a unique (and hence normal) Sylow $p$-subgroup of order $p$.
 :::
 
-::: solution
+::: {.solution}
 Let $n_p$ be the number of Sylow $p$-subgroups. Sylow's theorem gives
 \[
 n_p\mid q,\qquad n_p\equiv1\pmod p.

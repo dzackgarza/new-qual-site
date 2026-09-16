@@ -29,14 +29,14 @@ audit:
   note: "Compared with Fields and Galois Theory (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAF1 and carried its root-set and splitting-field proof as a second solution."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ and $L$ be finite fields.
 Show that $K$ is isomorphic to a subfield of $L$ if and only if
 $\#K=p^r$ and $\#L=p^s$ for the same prime $p$, with $r\mid s$.
 Here $r,s$ are positive integers.
 :::
 
-::: remark
+::: {.remark}
 The inequality $r\leq s$ does not suffice. For example,
 $\mathbb F_4$ cannot embed in $\mathbb F_8$, because the
 tower law would require $2$ to divide $3$. Cardinalities

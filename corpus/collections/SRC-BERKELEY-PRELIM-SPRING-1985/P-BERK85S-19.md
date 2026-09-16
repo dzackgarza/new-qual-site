@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a finite field. Give a complete proof that
 \[
 |F|=p^r

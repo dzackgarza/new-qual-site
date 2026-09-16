@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 - **Solution:** $\ln (x^2 - 1) = \ln (x + 1)(x - 1) = \ln (x + 1) + \ln (x - 1)​$
 
 2. $\displaystyle \int x^n \ln(x) ~dx =  \color{blue} { \frac {x^{n + 1}}{n + 1} (\ln (x) - \frac {1}{n + 1})}​$

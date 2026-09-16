@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Talk about conjugacy classes in the symmetric group $S_n$.
 :::
 

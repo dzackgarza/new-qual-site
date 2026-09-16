@@ -29,7 +29,7 @@ audit:
   note: "Compared with Rings (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAR1, whose solution repeats this order-of-vanishing argument."
 ---
 
-::: problem
+::: {.problem}
 An integral domain $R$ is said to be an *Euclidean domain* if there
 is a function $N: R \to \{n\in\mathbb{Z} \mid n\geq 0\}$ such that
 $N(0)=0$ and for each $a,b\in R$ with $b\neq 0$, there exist
@@ -46,12 +46,12 @@ Prove:
 2.  Every Euclidean domain is a PID.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A nonzero series $f\in F[[x]]$ has a unique
 factorization $f=x^k u$ with $u$ a unit and $u(0)\ne0$,
 where $k$ is its least nonzero coefficient index.
 
-::: proof
+::: {.proof}
 Write $f=\sum_{j\geq0}a_jx^j$ and choose the least
 $k$ with $a_k\ne0$. Then $f=x^k u$ with
 $u=\sum_{j\geq0}a_{k+j}x^j$. For a series
@@ -76,7 +76,7 @@ series $u$ are uniquely determined by the coefficients.
 <1>2. The least nonzero coefficient index is a
 Euclidean function on the nonzero series.
 
-::: proof
+::: {.proof}
 Set $N(0)=0$ and $N(f)=k$ as in step <1>1 for
 $f\ne0$. Given $a\in F[[x]]$ and a nonzero
 $b=x^k u$, let $r$ be the polynomial consisting
@@ -92,7 +92,7 @@ is satisfied in all cases.
 
 <1>3. Every Euclidean domain $R$ is a PID.
 
-::: proof
+::: {.proof}
 Let $I$ be a nonzero ideal. The nonempty set
 $\{N(a):a\in I,\ a\ne0\}$ of nonnegative integers
 has a least element. Choose $b\in I\setminus\{0\}$

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is a Dedekind domain, what is its ideal class group, and what is the class number?
 :::
 

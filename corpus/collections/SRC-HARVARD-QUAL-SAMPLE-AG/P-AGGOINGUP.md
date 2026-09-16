@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What does the going up theorem mean in algebraic geometry?
 :::

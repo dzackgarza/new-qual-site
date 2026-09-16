@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 57, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute the following series: (a) $\sum _ { k = 0 } ^ { n } r ^ { k } e ^ { i k \phi } ,$ (b) $\sum _ { k = 0 } ^ { n } r ^ { k } \cos k \phi ,$ (c) $\sum _ { k = 0 } ^ { n } r ^ { k } \sin k \phi .$
 :::

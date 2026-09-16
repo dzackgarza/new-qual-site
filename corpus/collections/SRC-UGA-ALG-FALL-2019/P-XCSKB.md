@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity $1 \ne 0$, and let $M$ be an $R$-module. Recall that the set of torsion elements of $M$ is defined by
 $$
 \operatorname{tor}(M) = \{m \in M \mid \exists r \in R \setminus \{0\} \text{ such that } r m = 0\}.
@@ -28,7 +28,7 @@ $$
 (c) If $R$ has zero-divisors, prove that every non-zero $R$-module $M \ne \{0\}$ contains at least one non-zero torsion element.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\operatorname{tor}(M)$ is a submodule over integral domains in (a), provide a counterexample over non-domains in (b), and prove the existence of non-zero torsion elements over rings with zero-divisors in (c).
 
 <1>1. Part (a): $\operatorname{tor}(M)$ is an $R$-submodule when $R$ is an integral domain.

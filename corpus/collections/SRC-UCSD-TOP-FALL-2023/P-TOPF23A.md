@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $M$ is a closed connected $m$-manifold, that $N$ is a closed connected $n$-manifold, and that $M$ and $N$ are homotopy-equivalent.
 Show that $m = n$ and that $M$ is orientable if and only if $N$ is orientable.
 What happens if $M$ and $N$ are merely compact manifolds-with-boundary — that is, they are not necessarily closed?

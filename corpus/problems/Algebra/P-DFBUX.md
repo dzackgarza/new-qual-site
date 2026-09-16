@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an interesting example of a subgroup of the additive group of the rationals.
 :::
 

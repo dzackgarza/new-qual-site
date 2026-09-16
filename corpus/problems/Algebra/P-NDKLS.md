@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the irreducible representations of finite abelian groups over $\mathbb{C}$?
 Prove that every irreducible representation is 1-dimensional, and describe the dual group $\widehat{G} \cong G$.
 :::
 
-::: solution
+::: {.solution}
 Let $(\rho,V)$ be an irreducible complex representation of a finite abelian group $G$. For every $g\in G$, the operator $\rho(g)$ commutes with every $\rho(h)$. By Schur's lemma, each $\rho(g)$ is scalar. Hence every one-dimensional subspace of $V$ is $G$-stable, so irreducibility forces $\dim_{\mathbb C}V=1$.
 
 Thus the irreducible representations are exactly the characters

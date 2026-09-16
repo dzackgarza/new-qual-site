@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 14, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts.
 ---
 
-::: problem
+::: {.problem}
 Prove that the equation
 
 $$

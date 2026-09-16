@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is a matrix algebra?
 :::
 
-::: solution
+::: {.solution}
 Let $k$ be a commutative ring, usually a field. The set
 \[
 M_n(k)

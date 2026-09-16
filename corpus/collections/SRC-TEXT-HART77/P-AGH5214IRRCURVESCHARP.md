@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a ruled surface over a curve $C$ of genus $g$, with invariant $e<0$, and assume that $\operatorname{char} k=p>0$ and $g \geqslant 2$.
 
 a. If $Y \equiv a C_0+b f$ is an irreducible curve $\neq C_0, f$, then either

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order 8.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ have order $8$.
 
 If $G$ is abelian, the classification of finite abelian groups gives exactly

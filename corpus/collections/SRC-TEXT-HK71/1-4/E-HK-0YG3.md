@@ -28,7 +28,7 @@ Suppose R and $R'$ are $2 \times 3$ row-reduced echelon matrices and that the sy
 Prove that $R = R'$ .
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 N=\{X\in F^3:RX=0\}=\{X\in F^3:R'X=0\}.
@@ -37,12 +37,12 @@ We show that a $2\times3$ row-reduced echelon matrix is uniquely determined by
 $N$.
 
 <1>1. If $\dim N=3$, then $R=R'=0$.
-::: proof
+::: {.proof}
 Rank-nullity gives $\operatorname{rank}R=\operatorname{rank}R'=0$.
 :::
 
 <1>2. If $\dim N=2$, then $R=R'$.
-::: proof
+::: {.proof}
 Both matrices have rank $1$. Their row spaces are the one-dimensional
 annihilator
 \[
@@ -55,7 +55,7 @@ matrices coincide.
 :::
 
 <1>3. If $\dim N=1$, then $R=R'$.
-::: proof
+::: {.proof}
 Write $N=Fv$ with $v=(v_1,v_2,v_3)^t\ne0$. Both matrices have rank $2$.
 
 If $v_3\ne0$, the free variable in the reduced system is $x_3$, and
@@ -93,7 +93,7 @@ Thus in every rank-$2$ case the common nullspace determines the matrix.
 :::
 
 <1>4. Therefore $R=R'$.
-::: proof
+::: {.proof}
 The possibilities in <1>1--<1>3 exhaust all dimensions of the nullspace of a
 $2\times3$ matrix.
 :::

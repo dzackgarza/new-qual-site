@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 This result says that proper morphisms are fairly close to projective morphisms.
 
 Let $X$ be proper over a noetherian scheme $S$.

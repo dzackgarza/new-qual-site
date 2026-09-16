@@ -15,7 +15,7 @@ audit:
   note: Checked against Rouché’s theorem, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $| a _ { k } | < 1 ( k = 1 , 2 , \ldots , n ) , | b | < 1$ and
 
 $$

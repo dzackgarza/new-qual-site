@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a $G$-set with group action $G \times X \to X$.
 (1) Prove that if $x_1, x_2 \in X$ belong to the same $G$-orbit ($x_2 = g \cdot x_1$ for some $g \in G$), then their stabilizer subgroups $\operatorname{Stab}_G(x_1)$ and $\operatorname{Stab}_G(x_2)$ are **conjugate** in $G$:
 $$\operatorname{Stab}_G(g \cdot x_1) = g \operatorname{Stab}_G(x_1) g^{-1}.$$
 (2) Note that if $x_1, x_2$ lie in different orbits, their stabilizers need not be conjugate.
 :::
 
-::: solution
+::: {.solution}
 For $h\in G$,
 \[
 \begin{aligned}

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 The following statement holds: if $X$ is a nonsingular curve and $Y$ is a projective variety, then every rational map $\varphi: X \dashrightarrow Y$ extends to a morphism on all of $X$.
 
 Show by example that this result is false if either

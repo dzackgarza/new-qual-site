@@ -24,7 +24,7 @@ audit:
   note: Verified projectivity by exhibiting the tensor product as a direct summand of a free tensor product and flatness by associativity of tensor and exactness of the two flat tensor functors.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring.
 
 (a) Suppose $P_1$ and $P_2$ are projective $A$-modules.

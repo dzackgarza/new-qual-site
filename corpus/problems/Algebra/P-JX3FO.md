@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Prove that the kernel of a homomorphism is a normal subgroup.
 :::
 
-::: solution
+::: {.solution}
 Let $\phi:G\to H$ be a group homomorphism. Its kernel is
 \[
 \ker\phi=\{g\in G:\phi(g)=1_H\}.

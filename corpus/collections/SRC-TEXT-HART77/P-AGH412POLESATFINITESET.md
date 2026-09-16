@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Again let $X$ be a curve, and let $P_1, \ldots, P_r \in X$ be points. Then there is a rational function $f \in K(X)$ having poles (of some order) at each of the $P_i$, and regular elsewhere.
 :::
 
-::: solution
+::: {.solution}
 Let $D= P_1 + \cdots + P_r$, we then want $f\in \globsec{X; \mcl(nD)}$ for $n\gg 0$. By RR,
 $$
 \chi(\mcl(nD)) = \deg D + 1-g \implies h^0(\mcl(nD)) = rn + 1 - g

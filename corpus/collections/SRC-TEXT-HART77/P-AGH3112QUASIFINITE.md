@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a projective morphism with finite fibres, that is, a quasi-finite projective morphism (II, Ex.
 3.5), is a finite morphism.
 :::

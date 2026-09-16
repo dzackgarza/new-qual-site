@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f$ is analytic on $\DD^\circ$.
 Determine with proof which of the following are possible:
 
@@ -28,7 +28,7 @@ d. $f\qty{1\over n} = {n-2 \over n-1}$ for each integer $n>1$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 
 **Part a**:
 Not possible: if $f$ is holomorphic then $f$ is in particular continuous, so 

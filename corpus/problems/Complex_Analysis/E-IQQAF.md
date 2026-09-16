@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Use a semicircular contour and the residue theorem to evaluate
 \[
 I = \int_\RR {\cos(x) \over x^2 + 1 }\dx
@@ -23,7 +23,7 @@ I = \int_\RR {\cos(x) \over x^2 + 1 }\dx
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write
 \[
 I = \Im \int_\RR f(z) \dz && f(z) \da {e^{iz} \over z^2 + 1}\dz

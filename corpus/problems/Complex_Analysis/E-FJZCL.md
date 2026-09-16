@@ -26,7 +26,7 @@ audit:
 Show that $\frac{1}{z}\sum_{k=1}^\infty \frac{z^k}{k}$ converges for all $z \in S^1 \setminus \{1\}$ using summation by parts.
 :::
 
-::: solution
+::: {.solution}
 Fix $z\in S^1\setminus\{1\}$ and set
 \[
 A_N=\sum_{k=1}^N z^k.

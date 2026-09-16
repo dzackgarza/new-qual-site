@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Are there two nonisomorphic groups with the same representations?
 :::
 

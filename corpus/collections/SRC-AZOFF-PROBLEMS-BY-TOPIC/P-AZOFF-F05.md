@@ -15,6 +15,6 @@ audit:
   note: Checked against Laurent expansions and singularities, Problem 5, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find all entire functions which have poles at $\infty$
 :::

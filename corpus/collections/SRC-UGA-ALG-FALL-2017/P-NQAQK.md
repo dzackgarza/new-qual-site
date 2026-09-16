@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $W$ into $F[x]$-modules via linear operators $T \in \operatorname{End}_F(V)$ and $S \in \operatorname{End}_F(W)$ by defining $x \cdot v = T(v)$ for all $v \in V$ and $x \cdot w = S(w)$ for all $w \in W$. Denote the resulting $F[x]$-modules by $V_T$ and $W_S$ respectively.
 
 (a) Show that an $F[x]$-module homomorphism from $V_T$ to $W_S$ consists of an $F$-linear transformation $R: V \to W$ such that $R T = S R$.
@@ -27,7 +27,7 @@ Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$. Make $V$ and $
 (d) Assume $F$ is algebraically closed. Prove that if $\dim_F V = 2$, then $V_T$ is never simple.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Characterize module homomorphisms and isomorphisms for polynomial modules $V_T$, and analyze simplicity via invariant subspaces and eigenvalues.
 
 <1>1. Part (a): $F[x]$-module homomorphisms correspond to intertwining linear maps ($R T = S R$).

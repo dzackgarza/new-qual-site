@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $R$ denote a commutative ring and $I$ an ideal, $I \neq R$.
 We say that $R$ has nilpotents if there exists $r \in R$, $r \neq 0$, with $r^n = 0$.
 

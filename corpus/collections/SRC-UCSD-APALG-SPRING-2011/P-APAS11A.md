@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and $A\colon G\to\mathrm{GL}(n,\mathbb{C})$ be a representation of $G$.
 
 (a) Show that if the only matrices $S$ which commute with $A(g)$ for all $g\in G$ are of the form $\lambda I$, then $A$ is irreducible.
@@ -27,7 +27,7 @@ Let $G$ be a finite group and $A\colon G\to\mathrm{GL}(n,\mathbb{C})$ be a repre
 (c) Show that if $g\in G$ is in the center of $G$, then $A(g)=cI_n$ for some nonzero constant $c\in\mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 For (a), suppose $A$ were reducible. Then there would be a nonzero proper $G$-stable subspace
 \[
 0\ne W\subsetneq \mathbb C^n.

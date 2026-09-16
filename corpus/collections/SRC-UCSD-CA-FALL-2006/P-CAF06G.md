@@ -12,18 +12,18 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that the $a_n$ are pairwise distinct, $a_n \to \infty$, and $A_n$ are arbitrary complex numbers.
 Show that there exists an entire function $f(z)$ which satisfies $f(a_n) = A_n$.
 :::
 
-::: remark
+::: {.remark}
 The Fall 2006 source does not state that the interpolation nodes are distinct.
 That hypothesis is necessary for arbitrary prescribed values: repeated nodes
 with different $A_n$ would make the interpolation conditions inconsistent.
 :::
 
-::: solution
+::: {.solution}
 Because the distinct sequence $\{a_n\}$ has no finite accumulation point,
 the Weierstrass product theorem gives an entire function $g$ whose zeros are
 exactly the $a_n$, all simple. Thus $g'(a_n)\ne0$ for every $n$.

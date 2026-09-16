@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring (not assumed to have an identity) with the property that $x^2 = x$ for all $x \in R$ (a Boolean ring).
 
 (a) Prove that $2x = 0$ for all $x \in R$ (that is, $R$ has characteristic 2).
@@ -21,7 +21,7 @@ Let $R$ be a ring (not assumed to have an identity) with the property that $x^2 
 (b) Prove that $R$ is commutative.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every Boolean ring has characteristic 2 in (a) and is commutative in (b) by evaluating the idempotent property on sums.
 
 <1>1. Part (a): $2x = 0$ for all $x \in R$.

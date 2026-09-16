@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f$ is holomorphic in an open set containing the closed
 unit disc, except for a pole at $z_0$ on the unit circle. Let
 $\displaystyle
@@ -25,7 +25,7 @@ $n$'s, and (2)
 $\displaystyle \lim_{n \rightarrow \infty} \frac{c_n}{c_{n+1}}= z_0$.
 :::
 
-::: solution
+::: {.solution}
 Let the pole of $f$ at $z_0$ have order $m$, with principal part
 \[
 \sum_{j=1}^m\frac{A_j}{(z-z_0)^j},

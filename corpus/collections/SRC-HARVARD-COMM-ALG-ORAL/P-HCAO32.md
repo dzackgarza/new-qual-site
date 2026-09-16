@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the twisted cubic in $\mathbb A^3$.
 
 a. Find $I(X)$ and show that two generators suffice.

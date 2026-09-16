@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be finite and $H<G$ proper. Show that
 \[
 G\ne\bigcup_{g\in G}gHg^{-1}.

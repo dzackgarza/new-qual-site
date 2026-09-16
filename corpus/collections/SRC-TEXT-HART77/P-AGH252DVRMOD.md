@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a discrete valuation ring with quotient field $K$, and let $X = \Spec R$.
 
 a. To give an $\OO_X\dash$module is equivalent to giving an $R\dash$module $M$, a $K\dash$vector space $L$, and a homomorphism $\rho: M \tensor_R K \to L$.

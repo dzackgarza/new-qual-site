@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary matrix are unitary.
 :::
 

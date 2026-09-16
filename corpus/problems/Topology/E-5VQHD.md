@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $f: A\to B$ is a continuous map between metric spaces and $K\subset A$ is compact, then $\restrictionof{f}{K}$ is uniformly continuous.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Fix $\varepsilon>0$. For each $x\in K$, continuity of $f$ at $x$ gives $r_x>0$ such that
 \[
 d_A(z,x)<r_x\implies d_B(f(z),f(x))<\varepsilon/2.

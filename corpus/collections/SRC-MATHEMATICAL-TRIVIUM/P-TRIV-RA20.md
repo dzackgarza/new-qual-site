@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 20, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find $\int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x , n \in \mathbb { Z } , n > 0 .$
 :::

@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate the following counterclockwise contour integrals:
 
 1. $\displaystyle\int_{|z-i|=10}\left(z+\frac1z\right)^4\,dz$;

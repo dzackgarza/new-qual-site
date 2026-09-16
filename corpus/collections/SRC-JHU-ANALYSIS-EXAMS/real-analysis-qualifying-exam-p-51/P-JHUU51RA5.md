@@ -24,7 +24,7 @@ audit:
   note: Verified the upper and lower bounds and the essential-supremum argument.
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $f \in L^{1}(\mu) \cap L^{\infty}(\mu)$.
 Prove that:
 $$
@@ -32,7 +32,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that for $f \in L^1(\mu) \cap L^\infty(\mu)$, $\lim_{p \to \infty} \|f\|_p = \|f\|_\infty$ using the squeeze theorem with upper and lower bounds.
 
 <1>1. Trivial Case $\|f\|_\infty = 0$:

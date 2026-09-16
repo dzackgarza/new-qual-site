@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space.
 Prove that for any $0 < p < \infty$, $f \in L^p$ if and only if
 $$
@@ -32,8 +32,8 @@ $$
 where $\lambda_f(\alpha) = \mu(\{x : |f|(x) > \alpha\})$.
 :::
 
-::: solution
-::: proof
+::: {.solution}
+::: {.proof}
 Since all terms are nonnegative, Tonelli's theorem gives
 \[
 \begin{aligned}

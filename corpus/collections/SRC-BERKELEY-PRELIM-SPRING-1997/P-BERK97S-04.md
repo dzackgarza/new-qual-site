@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f,g$ be entire functions and suppose there is a real constant $k$ such that
 \[
 \operatorname{Re}f(z)\le k\operatorname{Re}g(z)

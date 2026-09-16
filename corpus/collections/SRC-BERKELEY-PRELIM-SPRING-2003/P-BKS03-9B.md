@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A\subseteq\mathbb R$ be uncountable.
 
 (a) Show that $A$ has at least one accumulation point.

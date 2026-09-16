@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 24. The elliptic integrals K and $K ^ { \prime }$ defined for $0 < k < 1$ by
 
 $$
@@ -51,7 +51,7 @@ where $F$ the hypergeometric series.
 [Hint: This follows from the integral representation for $F$ given in Exercise 9, Chapter 6.]
 :::
 
-::: solution
+::: {.solution}
 Write $k'^2=1-k^2$, with $0<k'<1$.
 
 For (a), in $K'(k)$ make the substitution

@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f(z) = u(z) + iv(z)$ is an entire function with real part $u(z)$ and imaginary part $v(z)$ such that for all $z$, $u(z) + v(z) < 1$.
 Prove that $f(z)$ is a constant.
 :::
 
-::: solution
+::: {.solution}
 Consider the entire function
 \[
 g(z)=e^{(1-i)f(z)}.

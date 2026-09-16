@@ -21,14 +21,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute
 \[
 \lim_{n\to\infty}\int_0^1\frac{1+n x^2}{(1+x^2)^n}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 For $x\in[0,1]$, Bernoulli's inequality gives
 \[
 (1+x^2)^n\ge 1+n x^2.

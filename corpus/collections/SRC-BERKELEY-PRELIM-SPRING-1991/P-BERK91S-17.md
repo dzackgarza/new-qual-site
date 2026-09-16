@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic on the punctured disk
 \[
 0<|z|<r_0

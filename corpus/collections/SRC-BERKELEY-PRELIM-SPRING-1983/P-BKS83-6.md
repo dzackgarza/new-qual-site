@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be continuous and $1$-periodic.
 
 1. Prove that $f$ is bounded above and below and attains its maximum and minimum.

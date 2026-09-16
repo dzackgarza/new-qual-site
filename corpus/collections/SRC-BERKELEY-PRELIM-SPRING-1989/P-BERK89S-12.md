@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Evaluate
 \[
 \int_C(2z-1)e^{z/(z-1)}\,dz,

@@ -15,6 +15,6 @@ audit:
   note: Checked against Probability, Problem 15, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts.
 ---
 
-::: problem
+::: {.problem}
 Prove that if for some discrete random variable ξ, $\mathbf { E } \xi ^ { 2 } = \mathbf { E } \xi ^ { 3 } = \mathbf { E } \xi ^ { 4 }$ , then $\xi$ can only take values 0 or 1.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Let $n\ge3$. For the splitting field of $x^n-2$ over $\QQ$, prove the affine embedding
 \[
 \Gal\hookrightarrow (\ZZ/n\ZZ)\rtimes(\ZZ/n\ZZ)^\times

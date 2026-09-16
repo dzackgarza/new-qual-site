@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $a, b : \mathbb{C} \to \mathbb{C}$ be entire functions.
 Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that
 $$

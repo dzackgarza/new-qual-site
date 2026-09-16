@@ -29,7 +29,7 @@ audit:
   note: "Compared the two complete source transcriptions and retained this proof on the correctly located Fall 2010 card. P-JHUMAY11ANN was a duplicate, not a separate May 2011 problem."
 ---
 
-::: problem
+::: {.problem}
 Let $D=\{z\in\mathbb C:|z|<1\}$ and let $f:D\to\mathbb C$
 be $C^1$ as a function of two real variables. Require
 $f(1/n)=0$ and $Df(1/n)=0$ for each integer $n\geq2$,
@@ -42,7 +42,7 @@ where $Df$ denotes the real differential.
 (You must explain why your example has this property.)
 :::
 
-::: remark
+::: {.remark}
 Only $n\geq2$ gives points in the open unit disk.
 The vanishing first-jet condition specifies the meaning of
 "double zero" for a $C^1$ function. If exactly order two
@@ -54,10 +54,10 @@ order at every prescribed point and therefore answers (b)
 under either interpretation.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Under the first-jet interpretation, the only holomorphic function is zero.
 
-::: proof
+::: {.proof}
 The distinct zeros $1/n$, $n\geq2$, accumulate at the
 interior point zero of the connected disk. The identity
 theorem gives $f\equiv0$ [@SS03]. This function has
@@ -68,7 +68,7 @@ alternative follows as explained in the remark.
 
 <1>2. A nonholomorphic example is $C^1$ even at the accumulation point.
 
-::: proof
+::: {.proof}
 Define
 $$
 F(z)=\begin{cases}
@@ -102,7 +102,7 @@ continuously by zero, and $F\in C^1(D)$.
 
 <1>3. The prescribed zeros have exact quadratic order, and $F$ is not holomorphic.
 
-::: proof
+::: {.proof}
 At $a=1/n$, $n\geq2$, the holomorphic function
 $s(z)=\sin(\pi/z)$ has value zero and derivative
 $$

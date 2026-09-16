@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime number, and let $A \in M_p(F)$ be the $p \times p$ matrix with $0$ on the main diagonal and $1$ in all off-diagonal entries:
 $$
 A = \begin{pmatrix}
@@ -33,7 +33,7 @@ Determine the Jordan Canonical Form (JCF) of $A$ and an explicit change-of-basis
 (b) When $F = \mathbb{F}_p$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the characteristic polynomial, eigenspaces, Jordan canonical forms, and transition matrices of $A$ over $\mathbb{Q}$ in (a) and over $\mathbb{F}_p$ in (b).
 
 <1>1. Relation to the all-ones matrix $J_p$:

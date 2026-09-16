@@ -23,14 +23,14 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $E \subseteq \mathbb{R}$ be (Lebesgue) measurable and satisfy $E + r = E$ for every rational number $r$.
 Show that either $E$ or $E^c$ has measure 0.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Assume both sets have positive measure and localize them.
-::: proof
+::: {.proof}
 Suppose, toward a contradiction, that
 \[
 m(E)>0
@@ -50,7 +50,7 @@ with
 :::
 
 <1>2. Use continuity of translation to find a rational translate with positive overlap.
-::: proof
+::: {.proof}
 Define
 \[
 h(t):=m((A+t)\cap B)
@@ -79,7 +79,7 @@ m((A+r)\cap B)=h(r)>0.
 :::
 
 <1>3. Contradict rational invariance.
-::: proof
+::: {.proof}
 Because $A\subset E$ and $r\in\mathbb Q$,
 \[
 A+r\subset E+r=E.

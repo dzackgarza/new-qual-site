@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Suppose $K$ is a knot (a smoothly embedded image of the circle $S^1$) in $S^4$.
 Use transversality to compute the fundamental group of the complement $S^4 \setminus K$.
 :::

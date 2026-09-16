@@ -15,7 +15,7 @@ audit:
   note: Checked against Section II, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be entire and suppose
 \[
 |f(z)|\le m e^{\alpha x},\qquad z=x+iy,

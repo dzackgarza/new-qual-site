@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose that $\lambda=(\lambda_1\geq\lambda_2\geq\cdots\geq\lambda_k)$ is a partition of $n$.
 Then $A^\lambda$ denotes the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$, and $S_{\lambda_1}\times\cdots\times S_{\lambda_k}$ denotes the Young subgroup of $S_n$ corresponding to $\lambda$.
 
@@ -40,7 +40,7 @@ as a sum of irreducible representations of $S_7$.
 (c) Find the decomposition of the Kronecker product $A^{(3,2)}\otimes A^{(3,2)}$ as a sum of irreducible representations of $S_5$.
 :::
 
-::: remark
+::: {.remark}
 In the source, part (b) is internally inconsistent: the displayed formulas carry superscript $S_6$, while the prose twice describes $S_3\times S_2\times S_1$ as a Young subgroup of $S_7$ and asks for decompositions "of $S_7$". The prose reading is taken here: under the exam's own preamble convention a Young subgroup $S_{\lambda_1}\times\cdots\times S_{\lambda_k}$ sits in $S_n$ for $\lambda$ a partition of $n$, so the subgroup of $S_7$ is the one for the padded partition $(3,2,1,1)$, and the induction target is $S_7$.
 :::
 

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Is every bounded real-valued function on $[0,1]$ that is Lebesgue integrable also Riemann integrable?
 :::
 
-::: solution
+::: {.solution}
 No. Take the Dirichlet function
 \[
 f=\mathbf1_{\mathbb Q\cap[0,1]}.

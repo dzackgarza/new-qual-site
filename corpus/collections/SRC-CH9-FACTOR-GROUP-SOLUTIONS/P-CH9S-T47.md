@@ -17,6 +17,6 @@ audit:
     MinerU Flash extraction assets/attachments/Ch9Sltns_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose that N is a normal subgroup of a finite group G and H is a subgroup of G. If |G/N| is prime, prove that H is contained in N or that N H = G.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y^r \subseteq \PP^n$ be a variety of degree $2$.
 Show that $Y$ is contained in a linear subspace $L$ of dimension $r + 1$ in $\PP^n$.
 Thus $Y$ is isomorphic to a quadric hypersurface in $\PP^{r+1}$.

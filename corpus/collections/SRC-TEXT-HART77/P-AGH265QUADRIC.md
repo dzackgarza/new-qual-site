@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\characteristic k \neq 2$, and let $X$ be the affine quadric hypersurface (cf. (I, Ex. 5.12))
 \[
 \Spec k[x_0, \ldots, x_n]/(x_0^2 + x_1^2 + \cdots + x_r^2)

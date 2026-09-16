@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Find an invertible matrix $A$ and a diagonal matrix $B$ such that $\begin{pmatrix} 8 & 9 \\ -6 & -7 \end{pmatrix} = ABA^{-1}$.
 :::
 

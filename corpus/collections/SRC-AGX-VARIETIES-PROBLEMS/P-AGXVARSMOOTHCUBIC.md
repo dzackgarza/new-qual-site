@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that any smooth cubic in $\PP^2$ is an elliptic curve.
 :::

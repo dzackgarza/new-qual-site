@@ -20,7 +20,7 @@ audit:
   note: Replaced the invalid Blaschke-factor estimate and unresolved equality scratchpad by two applications of Schwarz's lemma.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\mathbb{D}:=\{z:|z|<1\}$ denote the open unit disk. Suppose that $f(z): \mathbb{D} \rightarrow \mathbb{D}$ is holomorphic, and that there exists $a \in \mathbb{D} \backslash\{0\}$ such that $f(a)=f(-a)=0$.
 
 - Prove that $|f(0)| \leq|a|^{2}$.
@@ -29,7 +29,7 @@ Let $\mathbb{D}:=\{z:|z|<1\}$ denote the open unit disk. Suppose that $f(z): \ma
 
 :::
 
-:::{.solution}
+::: {.solution}
 For $c\in\DD$, write
 \[
 \phi_c(z)=\frac{z-c}{1-\overline c z}.

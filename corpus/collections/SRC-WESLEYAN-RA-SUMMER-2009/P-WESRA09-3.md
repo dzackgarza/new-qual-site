@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve the following.
 
 (a) If $(\Omega,\mathcal A,\mu)$ is a measure space with $\mu(\Omega)<\infty$ and $A_n\in\mathcal A$, prove

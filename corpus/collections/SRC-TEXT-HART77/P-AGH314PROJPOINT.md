@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\PP^n$ be a hyperplane in $\PP^{n+1}$ and let $P \in \PP^{n+1} \sm \PP^n$.
 Define $\phi: \PP^{n+1} \sm \ts{P} \to \PP^n$ by letting $\phi(Q)$ be the intersection with $\PP^n$ of the unique line through $P$ and $Q$.
 

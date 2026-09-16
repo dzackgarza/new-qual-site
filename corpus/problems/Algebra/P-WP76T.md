@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that every maximal subgroup of a $p\dash$group has index $p$.
 :::
 

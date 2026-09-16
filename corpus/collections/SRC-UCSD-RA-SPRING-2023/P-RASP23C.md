@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{R}_+ = [0, \infty)$, $f, g \in L^1(\mathbb{R}_+, m)$, and consider
 $$
 h(x) = \int_0^\infty f(y) g\!\left(\frac{x}{y}\right) \frac{dy}{y}.
@@ -37,7 +37,7 @@ Comment: You may use without proof that $g(x/y)$ is Lebesgue measurable on $\mat
 :::
 
 
-::: solution
+::: {.solution}
 Consider the nonnegative measurable function
 \[
 K(x,y):=|f(y)|\,|g(x/y)|\,\frac1y

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be a proper open connected subset.
 Let $\mathbb{C}_\infty = \mathbb{C} \cup \{\infty\}$ denote the extended plane.
 
@@ -27,7 +27,7 @@ If true, give a proof.
 If false, give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 For (i), connectedness of $\mathbb C_\infty\setminus G$ is equivalent to
 simple connectedness of the proper plane domain $G$. Choose a Riemann map
 $\phi:G\to\mathbb D$. If $f$ had two distinct fixed points, then

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $V$ be a variety over the algebraically closed field $k$.
 Show that a point $P \in t(V)$ is a closed point if and only if its residue field is $k$.
 

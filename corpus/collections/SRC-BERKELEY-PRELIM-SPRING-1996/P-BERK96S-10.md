@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Show that a positive constant $t$ satisfies
 \[
 e^x>x^t

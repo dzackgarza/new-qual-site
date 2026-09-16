@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A variety $Y$ is *rational* if it is birationally equivalent to $\PP^n$ for some $n$; equivalently, if $K(Y)$ is a purely transcendental extension of $k$.
 
 1. Show that any conic in $\PP^2$ is a rational curve.

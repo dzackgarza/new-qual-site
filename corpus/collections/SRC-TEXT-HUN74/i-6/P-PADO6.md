@@ -28,7 +28,7 @@ audit:
 If $\sigma = (i_1 i_2 \cdots i_r) \in S_n$ and $\tau \in S_n$, then show that $\tau\sigma\tau^{-1} = (\tau(i_1) \tau(i_2) \cdots \tau(i_r))$.
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 \rho=(\tau(i_1)\ \tau(i_2)\ \cdots\ \tau(i_r)).
@@ -44,7 +44,7 @@ and
 \[
 (\tau\sigma\tau^{-1})(\tau(i_r))=\tau(i_1).
 \]
-::: proof
+::: {.proof}
 For $j<r$,
 \[
 (\tau\sigma\tau^{-1})(\tau(i_j))
@@ -62,7 +62,7 @@ These are exactly the values of $\rho$ on its support.
 
 <1>2. Every point outside $\{\tau(i_1),\ldots,\tau(i_r)\}$ is fixed by
 $\tau\sigma\tau^{-1}$.
-::: proof
+::: {.proof}
 Let $x\notin\{\tau(i_1),\ldots,\tau(i_r)\}$. Since $\tau$ is bijective,
 $\tau^{-1}(x)\notin\{i_1,\ldots,i_r\}$, so $\sigma$ fixes
 $\tau^{-1}(x)$. Therefore
@@ -79,7 +79,7 @@ The cycle $\rho$ fixes the same points.
 \tau\sigma\tau^{-1}
 =(\tau(i_1)\ \tau(i_2)\ \cdots\ \tau(i_r)).
 \]
-::: proof
+::: {.proof}
 By <1>1 and <1>2 the two permutations agree on every point.
 :::
 :::

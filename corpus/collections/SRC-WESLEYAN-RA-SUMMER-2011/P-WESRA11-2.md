@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be Lebesgue measurable.
 Compare the following conditions:
 

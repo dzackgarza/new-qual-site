@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0^1 f(x + y) \, dy$.
 
 (a) Show that $\|Tf\|_p \leq \|f\|_p$, and equality holds if and only if $f = 0$ almost everywhere.
@@ -33,9 +33,9 @@ Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0
 (b) Prove that $(I - T)(L^p(\mathbb{R})) \neq L^p(\mathbb{R})$, where $I$ is the identity map on $L^p(\mathbb{R})$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the contraction estimate.
-::: proof
+::: {.proof}
 For almost every $x$, Jensen's inequality for the probability measure on $[0,1]$ gives
 \[
 |Tf(x)|^p
@@ -58,7 +58,7 @@ Hence
 :::
 
 <1>2. Analyze equality in the contraction estimate.
-::: proof
+::: {.proof}
 Suppose $\|Tf\|_p=\|f\|_p$. Then equality holds in the pointwise Jensen inequality for almost every $x$. Since $1<p<\infty$, the function $z\mapsto |z|^p$ is strictly convex. Therefore, for almost every $x$, the function
 \[
 y\longmapsto f(x+y)
@@ -73,7 +73,7 @@ for almost every $t\in(x,x+1)$. If two such intervals overlap in a set of positi
 :::
 
 <1>3. Show that $I-T$ is injective.
-::: proof
+::: {.proof}
 If $(I-T)f=0$, then $Tf=f$. Hence
 \[
 \|Tf\|_p=\|f\|_p,
@@ -82,7 +82,7 @@ and Step 2 implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
 :::
 
 <1>4. Construct approximate fixed points of $T$.
-::: proof
+::: {.proof}
 Let
 \[
 f_N=\mathbf1_{[0,N]}.
@@ -107,7 +107,7 @@ Therefore
 :::
 
 <1>5. Rule out surjectivity.
-::: proof
+::: {.proof}
 Suppose $(I-T)(L^p)=L^p$. By Step 3, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\mathbb R)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
 \[
 \|(I-T)f\|_p\ge C\|f\|_p

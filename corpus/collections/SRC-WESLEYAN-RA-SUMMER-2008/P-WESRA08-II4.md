@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal B,\mu)$ be a measure space with $\mu(X)<\infty$.
 Show that a sequence of measurable functions $(f_n)$ converges to $0$ in measure if and only if
 \[
@@ -30,7 +30,7 @@ Show that a sequence of measurable functions $(f_n)$ converges to $0$ in measure
 \]
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 \Phi(t):=\frac{t}{1+t},
@@ -38,7 +38,7 @@ Set
 \]
 
 <1>1. Convergence in measure implies convergence of the integrals.
-::: proof
+::: {.proof}
 Assume $f_n\to0$ in measure.
 Fix $\varepsilon>0$.
 If $\mu(X)=0$, the conclusion is immediate, so assume $\mu(X)>0$.
@@ -66,7 +66,7 @@ Hence the integral is below $\varepsilon$ for all sufficiently large $n$, and th
 :::
 
 <1>2. Convergence of the integrals implies convergence in measure.
-::: proof
+::: {.proof}
 Assume
 \[
 \int_X\Phi(|f_n|)\,d\mu\longrightarrow0.

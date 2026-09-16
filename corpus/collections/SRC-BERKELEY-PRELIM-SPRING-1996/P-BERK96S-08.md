@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Determine the rightmost decimal digit of
 \[
 17^{17^{17}}.

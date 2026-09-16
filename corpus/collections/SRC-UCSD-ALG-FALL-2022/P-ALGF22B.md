@@ -24,7 +24,7 @@ audit:
   note: Verified that the presentation has order pq exactly when r^q is congruent to 1 modulo p, using the forced relation on a and the corresponding semidirect product for sufficiency.
 ---
 
-::: problem
+::: {.problem}
 Let $p$ and $q$ be distinct primes.
 For any $r \geq 1$ consider the group $G$ with presentation $$\langle a, b \mid a^p = 1,\; b^q = 1,\; bab^{-1} = a^r \rangle.$$ For which $r$ is $G$ a group of order $pq$?
 Justify your answer.

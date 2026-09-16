@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C$ and $D$ be curves on a surface $X$, meeting at a point $P$. Let $\pi: \tilde{X} \rightarrow X$ be the monoidal transformation with center $P$.
 
 Show that

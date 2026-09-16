@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi: \mcf \to \mcg$ be a morphism of sheaves.
 
 a. Show that $\im \varphi \cong \mcf / \ker \varphi$.

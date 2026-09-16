@@ -24,7 +24,7 @@ Find the standard matrix for the linear transformation $T : \mathbb{R}^2 \to \ma
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The vectors
 \[
 \ell=\begin{pmatrix}1\\2\end{pmatrix},

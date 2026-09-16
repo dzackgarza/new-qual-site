@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 4. Prove that as extensions of $\QQ$, $\QQ(x)$ is Galois over $\QQ(x^2)$ but not over $\QQ(x^3)$.
 :::
 

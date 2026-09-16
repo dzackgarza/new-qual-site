@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that a topological space $X$ is Hausdorff if and only if the diagonal $\Delta(X) = \{(x, x) \mid x \in X\}$ is closed in $X \times X$ with the product topology.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Suppose $X$ is Hausdorff. Let $(x,y)\notin\Delta(X)$, so $x\ne y$. Choose disjoint open neighborhoods $U\ni x$ and $V\ni y$. Then
 \[
 (x,y)\in U\times V

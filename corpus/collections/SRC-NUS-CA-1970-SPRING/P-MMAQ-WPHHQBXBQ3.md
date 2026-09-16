@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Evaluate the improper integral
 
 $\int_0^\infty \frac{x^2~dx}{(x^2+1)(x^2+4)}$

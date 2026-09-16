@@ -35,7 +35,7 @@ Then the action of $G$ is properly discontinuous, and $X/G$ is locally compact H
 (d) Show that $X/G$ is locally compact.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a free, properly discontinuous group action with compact interference on a locally compact Hausdorff space $X$ yields a properly discontinuous action and a locally compact Hausdorff quotient $X/G$.
 
 <1>1. Part (a): Orbit union $G \cdot C = \bigcup_{g \in G} g(C)$ is closed in $X$ for any compact $C \subseteq X$.

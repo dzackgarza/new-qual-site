@@ -21,7 +21,7 @@ audit:
 Show that the center of $S_n$ for $n\geq 4$ is trivial.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** given a permutation that moves some point, produce a transposition it does not commute with.
 A third point is needed to build that transposition, and $n \geq 4$ supplies one.
 

@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Write a Mobius transformation $f(z) = {az+b\over cz + d}$ as a cross-ratio.
 
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 T(z) = \qty{ z; {d-b\over a-c}, -{b\over a}, -{d\over c}}
 .\]

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral projective scheme of dimension 1 over $k$, which is locally complete intersection, and has $p_a=1$.
 Fix a point $P_0 \in X_{\reg}$.
 Imitate (1.3.7) to show that the map $P \mapsto \mcl(P-P_0)$ gives a one-to-one correspondence between the points of $X_{\reg}$ and the elements of the group $\Pic X$.

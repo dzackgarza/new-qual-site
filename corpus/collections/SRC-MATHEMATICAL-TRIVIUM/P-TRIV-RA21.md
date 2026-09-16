@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 21, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find $\int _ { 0 } ^ { \infty } e ^ { - x ^ { 2 } } d x .$
 :::

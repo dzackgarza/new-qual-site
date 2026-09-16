@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Find a one-to-one conformal map from
 \[
 \left\{z\in\mathbb C:\operatorname{Im}z>0,

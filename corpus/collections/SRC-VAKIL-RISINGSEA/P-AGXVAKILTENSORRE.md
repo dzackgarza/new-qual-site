@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the endofunctor
 \[
 F: \mods{R} &\to \mods{R} \\
@@ -24,7 +24,7 @@ X &\mapsto X\tensor_R N \\
 is right exact.
 :::
 
-::: remark
+::: {.remark}
 To make sense of the functor, one may need an isomorphism
 \[
 \hom_{\mods{R}}(X, Y) \tensor_R \hom_{\mods{R}}(A, B) \to \hom_{\mods{R}}(X\tensor_R A, Y\tensor_R B)
@@ -32,7 +32,7 @@ To make sense of the functor, one may need an isomorphism
 Is this what makes taking $f:X\to Y$ and $g:A\to B$ and forming $f\tensor g: X\tensor A \to Y\tensor B$ well-defined?
 :::
 
-::: solution
+::: {.solution}
 Let $A\xrightarrow{f} B \xrightarrow{g} C \to 0$ be an exact sequence, so
 
 - $\im f = \ker g$ by exactness at $B$,

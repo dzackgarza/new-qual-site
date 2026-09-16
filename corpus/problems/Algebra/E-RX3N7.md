@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 12. For $u=\sqrt{2+\sqrt2}$, determine the Galois group of $\QQ(u)/\QQ$ and all intermediate fields.
 :::
 

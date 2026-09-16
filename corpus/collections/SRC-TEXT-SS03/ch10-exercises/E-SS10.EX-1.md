@@ -20,7 +20,7 @@ audit:
     Repaired the published erratum: "first two derivatives" should read "first three derivatives".
 ---
 
-::: exercise
+::: {.exercise}
 1. Prove that
 
 $$
@@ -30,7 +30,7 @@ $$
 where $c _ { \tau }$ can be expressed in terms of the first three derivatives of $\Theta ( z | \tau )$ , with respect to $z$ , at $z = 1 / 2 + \tau / 2$ . Compare this formula with the result in Exercise 5 in the previous chapter.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 z_0=\frac12+\frac\tau2,

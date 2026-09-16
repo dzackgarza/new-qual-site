@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find a bijective analytic function $f$ from $\{z : |z| < 1, \operatorname{Re} z > 0\}$ to $\{z : \operatorname{Im} z > 0\}$.
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 T(z)=\frac{z-i}{z+i}.

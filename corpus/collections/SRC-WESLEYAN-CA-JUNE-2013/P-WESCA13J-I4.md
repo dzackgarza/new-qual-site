@@ -15,6 +15,6 @@ audit:
   note: Checked against Theorems and Definitions, item 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Define an essential singularity of an analytic function.
 :::

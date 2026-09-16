@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible representation of the symmetric group $S_n$ over $\mathbb{C}$.
 
 (a) Calculate the decomposition of the induced module
@@ -39,7 +39,7 @@ Define a linear operator $\varphi\colon V\to V$ by
 What is the rank of the operator $\varphi$?
 :::
 
-::: remark
+::: {.remark}
 As printed, the sum in (c) carries no action: $\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)=0$, so the printed formula makes $\varphi$ the zero map, whose rank is $0$.
 The question is only substantive if the intended operator is the antisymmetrization projector $\varphi(v)=\frac{1}{5!}\sum_{\sigma}\operatorname{sign}(\sigma)\,\sigma v$.
 The statement is left as the exam printed it.

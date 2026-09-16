@@ -25,7 +25,7 @@ audit:
   note: Corrected H_1 from Z to 0; the previous Mayer-Vietoris calculation misread exactness after the map H_1(S^1) to H_1(S^2) plus H_1(S^2). Retained and justified H_2 isomorphic to Z^3.
 ---
 
-::: problem
+::: {.problem}
 Compute the integral homology groups $H_k(X; \mathbb{Z})$ of the space $X = Y \cup Z \subset \mathbb{R}^3$, where $Y$ is the sphere
 $$
 Y = \{ (x, y, z) \in \mathbb{R}^3 \mid x^2 + y^2 + z^2 = 1 \}
@@ -36,7 +36,7 @@ Z = \left\{ (x, y, z) \in \mathbb{R}^3 \;\middle|\; x^2 + y^2 + \frac{z^2}{4} = 
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The two surfaces are both homeomorphic to $S^2$, and their intersection is the common equatorial circle.
 ::: {.proof}
 The unit sphere

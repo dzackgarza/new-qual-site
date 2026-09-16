@@ -33,10 +33,10 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The ring of integers is $O=\mathbb Z[\sqrt2]$.
 
-::: proof
+::: {.proof}
 For $a,b\in\mathbb Z$, the element $a+b\sqrt2$ satisfies the monic
 polynomial
 $$
@@ -72,7 +72,7 @@ $b=k/2$ are both integers. This proves the asserted equality of rings.
 <1>2. The absolute norm is multiplicative and is a positive integer
 on every nonzero element of $O$.
 
-::: proof
+::: {.proof}
 Conjugation $\tau(a+b\sqrt2)=a-b\sqrt2$ is an automorphism of the
 field. Thus
 $$
@@ -87,7 +87,7 @@ $\delta(\alpha)$ is a positive integer.
 
 <1>3. Euclidean division holds for $\delta$.
 
-::: proof
+::: {.proof}
 Let $\alpha,\beta\in O$ with $\beta\ne0$, and write
 $$
 \frac{\alpha}{\beta}=u+v\sqrt2,\qquad u,v\in\mathbb Q.
@@ -112,7 +112,7 @@ multiplicativity and $\delta(\beta)\geq1$.
 :::
 :::
 
-::: remark
+::: {.remark}
 The signed field norm is $N(a+b\sqrt2)=a^2-2b^2$; the Euclidean
 function is its absolute value. The signed values
 $N(n\sqrt2)=-2n^2$ are unbounded below and cannot serve as the

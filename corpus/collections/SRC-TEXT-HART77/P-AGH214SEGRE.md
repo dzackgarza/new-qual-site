@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\psi: \PP^r \times \PP^s \to \PP^N$ be the map sending the ordered pair $\tv{a_0 : \cdots : a_r} \times \tv{b_0 : \cdots : b_s}$ to the point with coordinates $a_i b_j$ in lexicographic order, where $N = rs + r + s$.
 The map $\psi$ is well defined and injective; it is called the **Segre embedding**. Show that the image of $\psi$ is a subvariety of $\PP^N$.
 

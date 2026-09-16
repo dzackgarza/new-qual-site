@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a complete nonsingular curve.
 Show that there is a unique way to define the degree of any coherent sheaf on $X$, $\deg \mcf \in \ZZ$, such that
 

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Consider the equations
 \begin{align*}
 x^2-xy-2x&=0,\\

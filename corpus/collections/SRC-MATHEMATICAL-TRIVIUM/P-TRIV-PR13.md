@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 13, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts. The source includes Figure 8 illustrating the random walk; Flash preserves only the image placeholder/caption.
 ---
 
-::: problem
+::: {.problem}
 ”Random walk” Let A, B, x be integers, $A \leqslant x \leqslant B$ . Consider the particle that starts moving from the point x at time $t = 0$ . At each step $\Delta t = 1$ the particle can move left or right from its recent position with the probabilities p and $q = 1 - p$ correspondingly.
 If at some step it reaches the points A or B, it stays there forever (see example figure below).
 

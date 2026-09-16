@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that maximum principle for harmonic functions, i.e.
 
 a. If $u$ is a non-constant real-valued harmonic function in a region $\Omega$, then $u$ can not attain a maximum or a minimum in $\Omega$.
@@ -27,7 +27,7 @@ If $u$ is harmonic in $\Omega$ and continuous in $\bar \Omega$, then \[ \sup _{z
 > Then (a) implies (b).
 :::
 
-::: solution
+::: {.solution}
 For (a), suppose $u$ attains a local maximum at $z_0\in\Omega$. On a small
 disk $D\Subset\Omega$ centered at $z_0$, choose a harmonic conjugate $v$, so
 $F=u+iv$ is holomorphic on $D$. If $u(z)\le u(z_0)$ on $D$, then

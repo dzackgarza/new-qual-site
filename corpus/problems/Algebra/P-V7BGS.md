@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that every group of prime order is cyclic.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=p$ with $p$ prime, and choose any nonidentity element $g\in G$.
 By Lagrange's theorem,
 \[

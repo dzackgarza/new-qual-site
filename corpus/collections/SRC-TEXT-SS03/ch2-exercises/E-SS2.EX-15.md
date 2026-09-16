@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 15. Suppose $f$ is a non-vanishing continuous function on $\overline{\mathbb{D}}$ that is holomorphic in $\mathbb{D}$.
     Prove that if
 
@@ -28,7 +28,7 @@ then $f$ is constant.
 [Hint: Extend $f$ to all of $\mathbb{C}$ by $f ( z ) = 1 / \overline { f ( 1 / \overline { { z } } ) }$ whenever $|z| > 1$, and argue as in the Schwarz reflection principle.]
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is continuous on $\overline{\mathbb D}$, holomorphic on $\mathbb D$, and satisfies $|f|=1$ on $\partial\mathbb D$, the maximum-modulus principle gives
 \[
 |f(z)|\le1\qquad(z\in\mathbb D).

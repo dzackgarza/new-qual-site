@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give a careful proof that the polynomial ring $\mathbb{C}[x, y]$ is not a principal ideal domain (PID).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\mathbb{C}[x, y]$ is not a PID by showing that the maximal ideal $I = \langle x, y \rangle$ is not principal.
 
 <1>1. Definition of the ideal $I = \langle x, y \rangle$:

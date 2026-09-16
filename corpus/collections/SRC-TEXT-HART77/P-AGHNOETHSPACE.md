@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Show that the following are equivalent for a topological space $X$:
 
 - $X$ is Noetherian;
@@ -34,7 +34,7 @@ review: draft
 (d) A Noetherian space which is also Hausdorff is a finite set with the discrete topology.
 :::
 
-::: solution
+::: {.solution}
 **(a)** $1 \implies 2$: given a family $\ts{Y_j}$ of closed sets, choose $Y_1$; if it is not minimal there is $Y_2 \subsetneq Y_1$, and so on.
 The resulting descending chain stabilises, and where it stabilises is a minimal element.
 $1 \iff 3$ and $2 \iff 4$ are complementation.

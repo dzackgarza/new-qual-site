@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 1. Prove that every finitely generated subgroup of the additive group $\mathbb Q$ is cyclic.
 2. Does the same conclusion hold for finitely generated subgroups of $\mathbb Q/\mathbb Z$?
 :::

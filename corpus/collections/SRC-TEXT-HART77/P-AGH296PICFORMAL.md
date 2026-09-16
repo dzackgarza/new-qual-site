@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathfrak{X}$ be a noetherian formal scheme, let $\mci$ be an ideal of definition, and for each $n$ let $Y_n$ be the scheme $(\mathfrak{X}, \OO_\mathfrak{X}/\mci^n)$.
 Assume that the inverse system of groups $(\Gamma(Y_n, \OO_{Y_n}))$ satisfies the Mittag-Leffler condition.
 Then prove that $\Pic \mathfrak{X} = \inverselim_n \Pic Y_n$.

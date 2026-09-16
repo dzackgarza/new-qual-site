@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f: \HH\union \RR\to \CC$ satisfies the following:
 
 - $f(i) = i$

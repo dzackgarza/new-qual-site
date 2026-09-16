@@ -28,7 +28,7 @@ Prove the following generalization of Exercise 6. If A is an $m \times n$ matrix
 :::
 
 
-::: solution
+::: {.solution}
 The columns of $AB$ lie in the column space of $A$. Hence
 \[
 \operatorname{rank}(AB)\le \operatorname{rank}(A)\le n<m.

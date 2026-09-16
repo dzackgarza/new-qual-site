@@ -25,7 +25,7 @@ What if $f$ is both continuous and open?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine whether the continuous image (and continuous open image) of a locally compact space is locally compact.
 
 <1>1. Question 1: Continuous images of locally compact spaces need NOT be locally compact.

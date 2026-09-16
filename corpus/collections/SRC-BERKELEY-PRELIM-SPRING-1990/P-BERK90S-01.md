@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $L>0$ and let $y:\mathbb R\to\mathbb R$ be smooth with
 \[
 y''+y'-y=0

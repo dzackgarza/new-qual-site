@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 15. Prove that for $\operatorname { R e } ( s ) > 1$ ，
 
 $$
@@ -25,7 +25,7 @@ $$
 [Hint: Write $\textstyle 1 / ( e ^ { x } - 1 ) = \sum _ { n = 1 } ^ { \infty } e ^ { - n x } . ]$
 :::
 
-::: solution
+::: {.solution}
 Let $s=\sigma+i\tau$ with $\sigma>1$. Since
 \[
 \frac1{e^x-1}=\sum_{n=1}^\infty e^{-nx},\qquad x>0,

@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $\DD$ to $\HH$.
 :::
 
-::: solution
+::: {.solution}
 The Cayley transform
 \[
 \boxed{F(z)=i\frac{1+z}{1-z}}

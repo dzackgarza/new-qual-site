@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring and $I\trianglelefteq R$. Show that
 \[
 \sqrt I=\bigcap_{\substack{\mathfrak p\supseteq I\\ \mathfrak p\text{ prime}}}\mathfrak p.
 \]
 :::
 
-::: solution
+::: {.solution}
 First suppose $x\in\sqrt I$. Then $x^n\in I$ for some $n\ge1$. If $\mathfrak p$ is any prime ideal containing $I$, then $x^n\in\mathfrak p$, and primality implies $x\in\mathfrak p$. Thus
 \[
 \sqrt I\subseteq\bigcap_{\mathfrak p\supseteq I}\mathfrak p.

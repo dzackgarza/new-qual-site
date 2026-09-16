@@ -19,7 +19,7 @@ audit:
   note: Repaired the missing exclusion lambda=0, where the branch points coalesce and the rectangle statement fails.
 ---
 
-::: exercise
+::: {.exercise}
 20. Other examples of elliptic integrals providing conformal maps from the upper half-plane to rectangles are given below.
 
 (a) The function
@@ -39,7 +39,7 @@ $$
 is a square whose side lengths are $\textstyle { \frac { \Gamma ^ { 2 } ( 1 / 4 ) } { 2 { \sqrt { 2 \pi } } } }$
 :::
 
-::: solution
+::: {.solution}
 For part (a), the finite branch points must be distinct, so the intended hypothesis is $\lambda\in\mathbb R\setminus\{0,1\}$. Choose the branch of
 \[
 F'(z)=\frac1{\sqrt{z(z-1)(z-\lambda)}}

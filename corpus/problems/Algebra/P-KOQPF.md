@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that if $G$ is an infinite simple group, then $G$ cannot have a proper subgroup of finite index.
 :::
 
-::: solution
+::: {.solution}
 Suppose $H<G$ has finite index $n$. The action of $G$ on the left cosets $G/H$ gives a homomorphism
 \[
 \rho:G\to S_n.

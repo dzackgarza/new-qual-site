@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 (a) Find a function holomorphic on the closed unit disk, of absolute value $1$ on the unit circle, whose only zero in the disk is $1/2$.
 
 (b) Let $f$ be holomorphic on the closed disk with $f(1/2)=0$ and $|f(z)|\le|e^z|$ for $|z|=1$. How large can $|f(0)|$ be?

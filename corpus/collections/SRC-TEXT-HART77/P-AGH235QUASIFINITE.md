@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A morphism $f: X \to Y$ is **quasi-finite** if for every point $y \in Y$ the fibre $f\inv(y)$ is a finite set.
 
 a. Show that a finite morphism is quasi-finite.

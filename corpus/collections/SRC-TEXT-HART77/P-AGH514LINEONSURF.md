@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. If a surface $X$ of degree $d$ in $\PP^3$ contains a straight line $C=\PP^1$, show that $C^2=2-d$.
 
 b. Assume $\operatorname{char} k=0$, and show for every $d \geqslant 1$, there exists a nonsingular surface $X$ of degree $d$ in $\PP^3$ containing the line $x=y=0$.

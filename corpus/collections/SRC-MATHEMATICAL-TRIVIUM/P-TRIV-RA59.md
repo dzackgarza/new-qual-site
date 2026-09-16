@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 59, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find all differentiable solutions of the equation $f ( x ) f ( y ) = f ( x + y )$ . Find all continuous solutions of the same equation.
 :::

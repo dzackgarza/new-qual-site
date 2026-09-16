@@ -31,16 +31,16 @@ audit:
   note: "Compared with Groups (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG4, whose solution repeats this Sylow-counting argument."
 ---
 
-::: problem
+::: {.problem}
 - Prove that a group of order $351=3^3\cdot 13$ cannot be simple.
 
 - Prove that a group of order $33$ must be cyclic.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A group $G$ of order $351$ is not simple.
 
-::: proof
+::: {.proof}
 Sylow's theorems give $n_{13}\mid27$ and
 $n_{13}\equiv1\pmod{13}$ [@DF04]. The divisors of
 $27$ are $1,3,9,27$, so $n_{13}=1$ or $27$.
@@ -65,7 +65,7 @@ also in the second case.
 
 <1>2. A group $G$ of order $33$ is cyclic.
 
-::: proof
+::: {.proof}
 Here $n_{11}\mid3$ and $n_{11}\equiv1\pmod{11}$,
 so the Sylow $11$-subgroup $Q$ is unique. Also
 $n_3\mid11$ and $n_3\equiv1\pmod3$; since

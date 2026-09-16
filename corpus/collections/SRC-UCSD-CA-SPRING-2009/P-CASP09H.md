@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Find all entire functions $f(z)$ with the property that for all $z$, $|f(z)| \leq e^{|xy|}$, where $x$ and $y$ are the real and imaginary parts of $z$.
 :::
 

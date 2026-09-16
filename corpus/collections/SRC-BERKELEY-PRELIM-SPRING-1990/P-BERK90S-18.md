@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $z_1,\dots,z_n\in\mathbb C$. Prove that there is a subset
 \[
 J\subset\{1,\dots,n\}

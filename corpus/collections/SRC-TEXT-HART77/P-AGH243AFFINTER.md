@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a separated scheme over an affine scheme $S$.
 Let $U$ and $V$ be open affine subsets of $X$.
 Then $U \intersect V$ is also affine.

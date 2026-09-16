@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Let $f$ be the rational function on $\PP^2$ given by $f = x_1/x_0$.
    Find the set of points where $f$ is defined, and describe the corresponding regular function.
 

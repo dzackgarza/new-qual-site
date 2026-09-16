@@ -15,7 +15,7 @@ audit:
   note: Checked against Schwarz lemma and reflection principle, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 [Fall 2012, Problem $\# 7 ]$ Write $\mathbb { D } : = \{ z \in \mathbb { C } : | z | < 1 \}$ for the open unit disk.
 Suppose $f : \mathbb { D } \to \mathbb { D }$ is analytic, and admits a continuous extension $\widetilde { f } : \overline { { \mathbb { D } } } \to \overline { { \mathbb { D } } }$ such that $| f ( z ) | = 1$ whenever $| z | = 1$ .
 

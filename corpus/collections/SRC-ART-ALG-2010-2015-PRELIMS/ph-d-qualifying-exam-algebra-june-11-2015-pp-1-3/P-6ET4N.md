@@ -26,7 +26,7 @@ $$A = \begin{pmatrix} 0 & -1 & 2 \\ 3 & -4 & 6 \\ 2 & -2 & 3 \end{pmatrix}.$$
 (b) Describe all distinct isomorphism classes of **Abelian groups of order 360**.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the characteristic polynomial, minimal polynomial, rational/Jordan canonical forms of $A$, and classify abelian groups of order $360 = 2^3 \cdot 3^2 \cdot 5$.
 
 <1>1. Part (a): Characteristic and Minimal Polynomial of $A$:

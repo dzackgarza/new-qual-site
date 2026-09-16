@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A:\mathbb R^6\to\mathbb R^6$ be linear and suppose
 \[
 A^{26}=I.

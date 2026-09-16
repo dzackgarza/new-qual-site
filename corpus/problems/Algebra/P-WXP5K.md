@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe subgroups of finitely generated free abelian groups and subgroups of finitely generated free groups. Prove the assertions.
 :::
 
-::: solution
+::: {.solution}
 For free abelian groups, let
 \[
 H\le \ZZ^n.

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is an odd prime and $\zeta_p := e^{2\pi i/p} = \cos(2\pi/p) + i\sin(2\pi/p)$.
 
 (a) Prove that $[\mathbb{Q}[\zeta_p] : \mathbb{Q}[\cos(2\pi/p)]] = 2$.

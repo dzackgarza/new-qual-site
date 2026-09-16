@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 16, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve $y ^ { \prime \prime } + 1 6 y = \theta ( \pi - t )$ with $y ( 0 ) = y ^ { \prime } ( 0 ) = 0$ and where θ is the Heaviside function, $\theta ( x ) = 0 { \mathrm { ~ i f ~ } } x < 0$ and $\theta ( x ) = 1 { \mathrm { ~ i f ~ } } x > 0$
 :::

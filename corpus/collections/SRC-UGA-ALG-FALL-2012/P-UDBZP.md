@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that any nondegenerate matrix $X\in M_n(\RR)$ can be written as $X = UT$ where $U$ is orthogonal and $T$ is upper triangular.
 :::
 
-::: solution
+::: {.solution}
 Write the columns of $X$ as
 \[
 X=(x_1\ \cdots\ x_n).

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Expand $f(z) = {1\over z(z-1)}$ in both
 
 - $\abs{z} < 1$
@@ -21,7 +21,7 @@ Expand $f(z) = {1\over z(z-1)}$ in both
 
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 {1\over z(z-1)} = -{1\over z}{1 \over 1-z} = -{1\over z}\sum z^k
 .\]

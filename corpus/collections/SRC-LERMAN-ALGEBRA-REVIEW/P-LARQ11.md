@@ -22,7 +22,7 @@ audit:
   note: "Checked well-defined ideal operations in R/K and the kernel and surjectivity of the canonical map to R/I."
 ---
 
-::: problem
+::: {.problem}
 Let $K\subseteq I$ be ideals of a ring $R$.
 Prove that $I/K$ is an ideal of $R/K$ and that
 $$
@@ -30,9 +30,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The subset $I/K$ is an ideal of $R/K$.
-::: proof
+::: {.proof}
 Because $K\subseteq I$, the set
 $$
 I/K=\{i+K:i\in I\}
@@ -49,7 +49,7 @@ and similarly $(i+K)(r+K)=ir+K\in I/K$, because $I$ is a two-sided ideal of $R$.
 :::
 
 <1>2. The quotient by $I/K$ is naturally isomorphic to $R/I$.
-::: proof
+::: {.proof}
 Define
 $$
 \Phi:R/K\to R/I,

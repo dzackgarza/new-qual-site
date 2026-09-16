@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $K\in\mathbb R$ and let $y(t)>0$ be differentiable for $t\ge0$. Suppose
 \[
 y'(t)\le Ky(t)

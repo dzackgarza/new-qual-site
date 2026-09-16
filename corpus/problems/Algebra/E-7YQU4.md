@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 11. Prove that a finite field cannot be algebraically closed.
 :::
 

@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $n\times n$ real matrix such that $(A-I)^m=0$ for some $m\ge1$.
 Prove that there exists an $n\times n$ real matrix $B$ such that $B^2=A$.
 :::

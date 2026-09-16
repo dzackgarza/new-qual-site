@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that there is no simple group of order 160. What can you say about the structure of groups of that order?
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=160=2^5\cdot5$, and let $P$ be a Sylow $2$-subgroup. Then
 \[
 [G:P]=5.

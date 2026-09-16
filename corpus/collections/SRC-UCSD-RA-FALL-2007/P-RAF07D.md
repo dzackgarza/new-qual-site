@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a normed space and $X^*$ its dual space.
 
 (a) Define the weak topology and the weak* topology on $X^*$.
@@ -32,9 +32,9 @@ Let $X$ be a normed space and $X^*$ its dual space.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Define the weak and weak* topologies on $X^*$.
-::: proof
+::: {.proof}
 The weak topology on $X^*$ is
 \[
 \sigma(X^*,X^{**}),
@@ -68,7 +68,7 @@ Because the canonical embedding $X\hookrightarrow X^{**}$ supplies only some of 
 :::
 
 <1>2. State Banach--Alaoglu.
-::: proof
+::: {.proof}
 **Banach--Alaoglu theorem.** The closed unit ball
 \[
 B_{X^*}:=\{\phi\in X^*: \|\phi\|\le1\}
@@ -79,7 +79,7 @@ More generally, every norm-closed ball in $X^*$ is weak* compact.
 :::
 
 <1>3. Embed the dual unit ball into a compact product.
-::: proof
+::: {.proof}
 Let $\mathbb K$ denote the scalar field. For each $x\in X$, set
 \[
 D_x:=\{z\in\mathbb K:|z|\le\|x\|\}.
@@ -102,7 +102,7 @@ The product topology restricted to $J(B_{X^*})$ is exactly the weak* topology: t
 :::
 
 <1>4. Show that the image is closed in the product.
-::: proof
+::: {.proof}
 A point $a=(a_x)_{x\in X}\in K$ lies in $J(B_{X^*})$ exactly when the assignment
 \[
 x\longmapsto a_x
@@ -127,7 +127,7 @@ is an intersection of closed subsets of $K$, hence is closed.
 :::
 
 <1>5. Conclude compactness.
-::: proof
+::: {.proof}
 Since $K$ is compact and $J(B_{X^*})$ is closed in $K$, the image $J(B_{X^*})$ is compact. Because $J$ is a homeomorphism from $B_{X^*}$ with its weak* topology onto this image,
 \[
 \boxed{B_{X^*}\text{ is weak* compact}.}

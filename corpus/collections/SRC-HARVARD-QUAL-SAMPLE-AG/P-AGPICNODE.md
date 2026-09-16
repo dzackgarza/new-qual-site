@@ -14,10 +14,10 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Calculate $\Pic(k[t^2,t^3])$, where $k[t^2,t^3] \subseteq k[t]$.
 :::
 
-::: remark
+::: {.remark}
 The source question continues with a second request about the inclusion $k[t^2,t^3] \subseteq k[t]$ whose wording was not recorded; only the Picard group computation is recoverable.
 :::

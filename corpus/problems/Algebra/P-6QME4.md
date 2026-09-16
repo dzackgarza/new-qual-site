@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $S_4$ has two normal subgroups: $A_4, \ZZ_2^2$.
 :::
 
-::: solution
+::: {.solution}
 The proper nontrivial normal subgroups of $S_4$ are
 \[
 V_4=\{e,(12)(34),(13)(24),(14)(23)\}

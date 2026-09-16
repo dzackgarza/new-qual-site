@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Using the calculus of residues, compute $\int_0^{\infty} \frac{\log x}{x^2 + 1}\,dx$.
 :::
 
-::: solution
+::: {.solution}
 Use the branch $0<\arg z<2\pi$ of $\Log z$ and integrate
 \[
 F(z)=\frac{(\Log z)^2}{z^2+1}

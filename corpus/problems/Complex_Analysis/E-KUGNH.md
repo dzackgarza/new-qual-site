@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f$ is holomorphic on $\DD\smz$ and there exist $M, k$ such that
 \[
 \abs{f^{(k)}(z)} \leq {M\over \abs{z}^k} && \forall 0 < \abs z < 1
@@ -25,7 +25,7 @@ Show that if $f$ has a singularity at $z=0$, then it must be removable.
 
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $\dd{}{z}$ is a left-shift on power series, $z^m$ is a right-shift.
@@ -34,7 +34,7 @@ Show that if $f$ has a singularity at $z=0$, then it must be removable.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Define $F(z) \da z^k f^{(k)}(z)$ and note that $\abs{F(z)} \leq M$ on $\DD\smz$.
 
 If $f$ has an essential singularity at $z=0$, then so does $F$ by considering power series expansions:

@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $K\subset\mathbb R^n$. Suppose every continuous real-valued function on $K$ is bounded. Prove that $K$ is compact.
 :::

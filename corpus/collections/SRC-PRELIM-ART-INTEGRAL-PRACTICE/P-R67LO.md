@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int(\sin x+\cos x)^2dx,
@@ -39,7 +39,7 @@ Evaluate
 \]
 :::
 
-::: solution
+::: {.solution}
 Direct expansion/substitution gives, respectively,
 \[
 \boxed{x-\frac12\cos2x+C,}

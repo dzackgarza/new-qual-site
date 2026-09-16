@@ -25,7 +25,7 @@ audit:
   note: Characterized forcing polynomials by squarefreeness and treated A^m=I via separability of x^m-1.
 ---
 
-::: problem
+::: {.problem}
 Consider a polynomial $f \in K[x]$, where $K$ is an algebraically closed field.
 Suppose that $f$ has the property that for all matrices $A \in M_n(K)$ of any size $n$, if $f(A) = 0$, then $A$ is a diagonalizable matrix; then we say that the polynomial $f$ forces diagonalizability.
 

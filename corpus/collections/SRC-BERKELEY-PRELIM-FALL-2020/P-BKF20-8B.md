@@ -16,6 +16,6 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Find all conjugacy classes in $S_3$, listing the elements of each class.
 :::

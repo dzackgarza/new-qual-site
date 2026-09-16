@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 
 - Prove that there exists a field extension $K$ of $F$ in which $p(x)$ has a root.
@@ -34,7 +34,7 @@ Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. There exists an extension field $K/F$ in which $p$ has a root.
 ::: {.proof}
 Let

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the curve $y^2+y=x^3-x$ of (4.23.8).
 
 a. If $Q=(a, b)$ is a point on the curve, compute the coordinates of the point $P+Q$, where $P=(0,0)$, as a function of $a, b$.

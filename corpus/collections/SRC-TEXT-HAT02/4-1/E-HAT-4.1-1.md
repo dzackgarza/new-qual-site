@@ -21,7 +21,7 @@ Suppose a sum $f +' g$ of maps $f, g: (I^n, \partial I^n) \to (X, x_0)$ is defin
 Verify the formula $(f + g) +' (h + k) = (f +' h) + (g +' k)$, and deduce that $f +' k \simeq f + k$ so the two sums agree on $\pi_n(X, x_0)$, and also that $g +' h \simeq h + g$ so the addition is abelian.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**\
 For $n\ge1$, any coordinate choice for the concatenation sum on $\pi_n(X,x_0)$ is equivalent and gives an abelian group law.
 

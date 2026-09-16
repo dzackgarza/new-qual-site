@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme.
 
 a. Show that the sheaf $\mcg$ constructed in the proof of (3.6) is an injective object in the category $\QCoh(X)$ of quasi-coherent sheaves on $X$.

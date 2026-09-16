@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Consider
 \[
 \frac{dx}{dt}=y+x(1-x^2-y^2),

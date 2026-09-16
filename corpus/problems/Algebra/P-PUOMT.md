@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite $p$-group and let $1\ne N\trianglelefteq G$. Prove that
 \[
 N\cap Z(G)\ne\{e\}.

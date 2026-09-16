@@ -15,7 +15,7 @@ audit:
   note: The extraction garbles the matrix size, but the displayed source matrix is 3-by-3.
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 A(z)=\begin{pmatrix}

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-:::{.exercise}
+::: {.exercise}
 By computing
 \[
 {1\over 2\pi i}\oint {\cot(\pi z)\over z^2}\dz

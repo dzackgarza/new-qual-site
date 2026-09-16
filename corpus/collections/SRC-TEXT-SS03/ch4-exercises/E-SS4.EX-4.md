@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 4. Suppose $Q$ is a polynomial of degree $\geq 2$ with distinct roots, none lying on the real axis.
    Calculate
 
@@ -31,7 +31,7 @@ in terms of the roots of $Q$ . What happens when several roots coincide?
 [Hint: Consider separately the cases $\xi < 0 , \xi = 0$ , and $\xi > 0$ . Use residues.]
 :::
 
-::: solution
+::: {.solution}
 Let the distinct roots of $Q$ be $\alpha_1,\ldots,\alpha_m$, none real, and set
 \[
 I(\xi)=\int_{-\infty}^{\infty}\frac{e^{-2\pi i x\xi}}{Q(x)}\,dx.

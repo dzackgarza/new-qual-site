@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 What is the symmetry group of an icosahedron?
 What's the stabiliser of an edge?
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 First recall the tensor operations on a module.
 Let $A$ be a ring and $M$ an $A\dash$module.
 

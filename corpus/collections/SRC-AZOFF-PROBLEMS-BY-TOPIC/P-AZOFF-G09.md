@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 9, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\textstyle \int _ { - \infty } ^ { \infty } { \frac { 1 + x ^ { 2 } } { 1 + x ^ { 4 } } } d x$
 :::

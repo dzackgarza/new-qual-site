@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that any automorphism (and in particular, every inner automorphism) sends conjugate subgroups to conjugate subgroups.
 :::
 
-::: solution
+::: {.solution}
 Suppose $H_2=gH_1g^{-1}$ and let $\varphi\in\operatorname{Aut}(G)$. Then
 \[
 \varphi(H_2)

@@ -15,12 +15,12 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3. Suppose $U$ and V are conformally equivalent.
    Prove that if U is simply connected, then so is V . Note that this conclusion remains valid if we merely assume that there exists a continuous bijection between U and $V .$
 :::
 
-::: solution
+::: {.solution}
 Let $\Phi:U\to V$ be a conformal equivalence. Since $\Phi$ and $\Phi^{-1}$ are holomorphic, they are continuous, so $\Phi$ is a homeomorphism.
 
 Assume $U$ is simply connected. Let $\gamma:[0,1]\to V$ be a closed curve. Then $\Phi^{-1}\circ\gamma$ is a closed curve in $U$, so there is a homotopy

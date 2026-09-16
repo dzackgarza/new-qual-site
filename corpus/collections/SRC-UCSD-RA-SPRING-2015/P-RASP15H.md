@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a $C^n$ function on $[0, +\infty)$.
 Compute the distributional $n$-th derivative of $g(x) = f(|x|)$ (which is viewed as a distribution on $\mathbb{R}$). You may express your answer in terms of the delta distribution.
 
 Hint: You may use induction on $n$ to prove the general formula which you may guess after working out the answer for $n = 1, 2, 3, \ldots$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Record the jump formula for a piecewise smooth function.
-::: proof
+::: {.proof}
 If $h$ is $C^1$ away from $0$ and has one-sided limits at $0$, then its distributional derivative is
 \[
 Dh=h'_{\mathrm{reg}}+[h]_0\,\delta_0,
@@ -51,7 +51,7 @@ Indeed, integrating by parts separately on the two half-lines against a test fun
 :::
 
 <1>2. Compute the ordinary derivatives away from the origin and their jumps.
-::: proof
+::: {.proof}
 For $x>0$,
 \[
 g(x)=f(x),
@@ -90,7 +90,7 @@ for odd $m$.
 :::
 
 <1>3. Iterate the jump formula.
-::: proof
+::: {.proof}
 For a piecewise $C^n$ function, repeated use of Step 1 gives
 \[
 D^n g

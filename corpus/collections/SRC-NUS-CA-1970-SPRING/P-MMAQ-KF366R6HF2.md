@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Use Cauchy's theorem to prove the argument principle.
 :::
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be an $n$-dimensional compact connected orientable manifold.
 Let $[M] \in H_n(M; \mathbb{Z})$ be the fundamental class.
 Suppose $f : S^n \to M$ is a continuous function with $f_*([S^n]) = [M]$.

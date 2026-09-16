@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given a nonconstant map between curves over $k$, is there an associated map on differentials?
 Is there a resulting exact sequence, and is it short exact?
 

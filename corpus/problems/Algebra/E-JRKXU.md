@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 17. Let $u=\sqrt{3+\sqrt{2}}$. Is $\QQ(u)$ the splitting field over $\QQ$ of the minimal polynomial of $u$?
 :::
 

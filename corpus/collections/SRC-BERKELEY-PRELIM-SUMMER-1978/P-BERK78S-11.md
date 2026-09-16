@@ -16,7 +16,7 @@ audit:
   note: The source indexes both series from n=0 and then prints |b_n|<n^2|a_n| "for all n". At n=0 that strict inequality is impossible, so the mathematically coherent intended condition is stated for n>=1, with b_0 unrestricted.
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose
 \[
 \sum_{n=0}^\infty a_nz^n

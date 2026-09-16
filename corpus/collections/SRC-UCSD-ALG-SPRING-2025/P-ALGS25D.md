@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a unital commutative ring.
 Suppose $M$ and $N$ are two finitely generated projective $A$-modules.
 Prove that $\operatorname{Hom}_A(M, N)$ is a projective $A$-module.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Complex Analysis, Problem 17, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute $\int _ { - \infty } ^ { \infty } \frac { x ^ { 2 } } { x ^ { 4 } - 2 x ^ { 2 } \cos 2 \theta + 1 } \mathrm { d } x ;$
 :::

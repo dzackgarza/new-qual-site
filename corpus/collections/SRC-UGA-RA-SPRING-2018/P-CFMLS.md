@@ -30,7 +30,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Define
 \[
 E:=\left\{x\in\mathbb R:\left|x-\frac pq\right|<q^{-3}
@@ -39,7 +39,7 @@ E:=\left\{x\in\mathbb R:\left|x-\frac pq\right|<q^{-3}
 Prove that $m(E)=0$.
 :::
 
-::: solution
+::: {.solution}
 Fix $N\in\mathbb N$ and work on the bounded interval $[-N,N]$. For each $q\ge1$, let
 \[
 E_{q,N}:=\left\{x\in[-N,N]:

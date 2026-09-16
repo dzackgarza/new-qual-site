@@ -15,6 +15,6 @@ audit:
   note: Checked against Basic facts, item 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 State a theorem expressing the $m$th derivative of an analytic function as a contour integral.
 :::

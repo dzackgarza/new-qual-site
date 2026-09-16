@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a variety of dimension $r$ and degree $d > 1$ in $\PP^n$.
 Let $P \in Y$ be a nonsingular point.
 Define $X$ to be the closure of the union of all lines $PQ$, where $Q \in Y$ and $Q \neq P$.

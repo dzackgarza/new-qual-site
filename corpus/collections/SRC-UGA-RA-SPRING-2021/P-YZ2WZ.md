@@ -25,13 +25,13 @@ audit:
   note: Reviewed the measurable-zero-set construction and Tonelli partial-integral argument; the proof correctly realizes E as a positive superlevel set of a measurable section-measure function.
 ---
 
-:::{.warnings}
+::: {.warnings}
 This problem may be much harder than expected.
 Recommended skip.
 :::
 
 
-::: problem
+::: {.problem}
 Let $f: \RR \cross \RR \to \RR$ be a measurable function and for $x\in \RR$ define the set
 \[
 E_x \da \ts{ y\in \RR \st \mu\qty{ z\in \RR \st f(x,z) = f(x, y) } > 0 } 

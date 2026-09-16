@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 State the Radon--Nikodym theorem.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A)$ be a measurable space, and let $\mu$ and $\nu$ be sigma-finite positive measures on it.
 If
 \[

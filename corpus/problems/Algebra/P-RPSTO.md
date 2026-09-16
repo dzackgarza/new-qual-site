@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 - Show that if $G$ is solvable, then $G$ contains a nontrivial normal subroup.
 
   - What does this mean on the Galois theory side?

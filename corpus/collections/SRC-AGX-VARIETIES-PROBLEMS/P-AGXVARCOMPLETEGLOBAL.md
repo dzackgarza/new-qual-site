@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $X$ is a connected complete variety, then $\OO_X(X) = k$, i.e. every global regular function is constant.
 :::

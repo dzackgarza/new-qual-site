@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $a \in \mathbb{R}$ compute the integral $$\int_0^{\infty} \frac{x\sin x}{x^2 + a^2}\,dx.$$ Be sure to show all your work and justify any limits.
 :::
 
-::: solution
+::: {.solution}
 The integral is even after extending the integrand as
 \[
 \frac{x\sin x}{x^2+a^2},

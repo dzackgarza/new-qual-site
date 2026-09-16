@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 Prove that if $f$ is holomorphic in the unit disc, bounded, and not identically zero, and $z_1,z_2,\ldots$ are its zeros, with $|z_k|<1$, then
 
 $$
@@ -26,7 +26,7 @@ $$
 *Hint.* Use Jensen's formula.
 :::
 
-::: solution
+::: {.solution}
 If $0$ is a zero of $f$, factor $f(z)=z^m g(z)$ with $g(0)\ne0$; this removes only finitely many zeros, so it suffices to treat the case $f(0)\ne0$.
 
 Let $M=\sup_{\mathbb D}|f|$. For $0<r<1$ such that no zero lies on $|z|=r$, Jensen's formula gives

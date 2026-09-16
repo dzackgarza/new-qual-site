@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A\in \Ring$ and $X\da \Spec(A)$, and for $f\in A$ let $D(f) \da V(\gens{f})^c$.
 Show that there is an isomorphism of ringed spaces
 \[
@@ -22,7 +22,7 @@ Show that there is an isomorphism of ringed spaces
 .\]
 :::
 
-::: remark
+::: {.remark}
 Strategy:
 
 - Take $\iota: A\to A_f$ and the induced map $\iota^*: \Spec A_f \to \Spec A$.
@@ -31,7 +31,7 @@ Strategy:
 - Use $\ro{\OO_{\Spec A}}{D(f)}(D(g)) = (A_f)_g$ and define $\psi^\# = \id$.
 :::
 
-::: solution
+::: {.solution}
 Recall: for $I\normal A$ any ideal,
 \[
 V(I) &= \ts{\mfp\in \Spec A \st \mfp\supseteq I} \\

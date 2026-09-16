@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For each integer $k > 0$ denote by $\Delta_k(j) = [j 2^{-k}, (j+1) 2^{-k})]$ where $j \in \mathbb{Z}$, the dyadic rational interval of length $2^{-k}$ starting at $j 2^{-k}$.
 Let $f \in L^1(\mathbb{R})$, and define
 $$
@@ -37,9 +37,9 @@ $$
 (b) Show that if $f \in L^1(\mathbb{R})$ then $A_k(f) \to f$ in $L^1(\mathbb{R})$ as $k \to \infty$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the $L^1$ contraction estimate.
-::: proof
+::: {.proof}
 On each dyadic interval $\Delta_k(j)$, the function $A_kf$ is constant with value
 \[
 a_k(j)=2^k\int_{\Delta_k(j)}f(y)\,dy.
@@ -61,7 +61,7 @@ Hence
 :::
 
 <1>2. Prove convergence for continuous compactly supported functions.
-::: proof
+::: {.proof}
 Let $g\in C_c(\mathbb R)$. Since $g$ is uniformly continuous, let
 \[
 \omega_g(\delta)
@@ -85,7 +85,7 @@ Moreover, if $\operatorname{supp}g\subset[-R,R]$, then both $g$ and $A_kg$ vanis
 :::
 
 <1>3. Pass to arbitrary $L^1$ functions by density.
-::: proof
+::: {.proof}
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Since $C_c(\mathbb R)$ is dense in $L^1(\mathbb R)$, choose $g\in C_c(\mathbb R)$ such that
 \[
 \|f-g\|_1<\varepsilon.

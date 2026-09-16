@@ -14,19 +14,19 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$.
 Prove that $K$ is an extension by radicals of the field $F$.
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - If $N \normal G$ is a normal subgroup and $H\leq G$ is any subgroup containing $N$, then $N$ is normal in $H$ since $hNh\inv \subseteq gNg\inv = N$.
 - In characteristic zero, a polynomial is solvable by radicals iff its Galois group is a solvable group.
 :::
 
-:::{.solution}
+::: {.solution}
 Let $G\da \Gal(K/F)$, then it suffices to show that $G$ is always a solvable group, i.e. any group of order $n=2015$ is solvable.
 Factor $2015 = 5\cdot 13\cdot 31$ -- this is a $pqr$ factorization, and in fact any group with exactly 3 prime factors (so $n$ is squarefree in particular) will be solvable.
 Let $p=5, q=13, r=31$ so that $p<q<r$.

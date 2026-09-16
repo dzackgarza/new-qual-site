@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that
 \[
 \int_0^\infty e^{-x^2}\cos(2bx)\,dx

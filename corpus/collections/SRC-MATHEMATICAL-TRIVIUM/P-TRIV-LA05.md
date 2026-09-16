@@ -19,7 +19,7 @@ audit:
   note: Removed a stray extraction digit and separated parts (a)-(c) against Linear Algebra Problem 5 on page 1 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ and $B$ be non-degenerate $n \times n$ matrices, $c \in \mathbb{C}$.
 Write the relations between their determinants, if
 

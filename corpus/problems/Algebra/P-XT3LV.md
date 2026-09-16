@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n>2$ and let $\zeta_n$ be a primitive $n$th root of unity. Prove
 \[
 [\QQ(\zeta_n+\zeta_n^{-1}):\QQ]
@@ -23,7 +23,7 @@ Let $n>2$ and let $\zeta_n$ be a primitive $n$th root of unity. Prove
 \]
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 K=\QQ(\zeta_n+\zeta_n^{-1}).

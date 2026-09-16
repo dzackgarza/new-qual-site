@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field of characteristic $\neq 2$.
 Let $C \subseteq \PP^2_k$ be the nodal cubic curve $y^2 z = x^3 + x^2 z$.
 If $P_0 = (0, 0, 1)$ is the singular point, then $C - P_0$ is isomorphic to the multiplicative group $\GG_m = \Spec k[t, t\inv]$ (Ex. 6.7).

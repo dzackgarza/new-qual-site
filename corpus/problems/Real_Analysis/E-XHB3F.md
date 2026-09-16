@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Show that if $f$ is a measurable function, then $f=0$ a.e. iff $\int f = 0$.
 
 - Show that a bounded function is Lebesgue integrable iff it is measurable.

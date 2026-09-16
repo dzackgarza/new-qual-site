@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \PP^2$ be a nonsingular plane curve of degree $> 1$, defined by the equation $f(x,y,z) = 0$.
 Let $X \subseteq \AA^3$ be the affine variety defined by $f$; this is the cone over $Y$.
 Let $P = (0,0,0)$ be the vertex of the cone, and let $\varphi: \tilde{X} \to X$ be the blowing-up of $X$ at $P$.

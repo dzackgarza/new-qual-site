@@ -19,7 +19,7 @@ audit:
   note: Restored the missing parts (a) and (c) from Linear Algebra Problem 46 on page 6 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Reduce the following quadratic forms to the canonical form and determine the rank and the signature:
 
 (a) $x_1^2 + 2\sum_{i=2}^{n} x_i^2 - 2\sum_{i=1}^{n-1} x_i x_{i+1}$,

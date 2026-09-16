@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, Problem 2, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Write the following complex numbers in cartesian form
 
 $$

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:
 
 a. $\abs{f(z)}$ is constant.
@@ -27,7 +27,7 @@ How do you generalize (a) and (b)?
 
 :::
 
-:::{.solution title="1"}
+::: {.solution title="1"}
 \envlist
 
 Slick proof: use that no curve $\gamma \subseteq \CC$ is open in $\CC$.
@@ -69,18 +69,18 @@ so $f=u+iv$ is constant.
 
 :::
 
-:::{.solution title="2"}
+::: {.solution title="2"}
 Write $f=u+iv$, so $u\equiv c$ is constant.
 Then $u_x = u_y = 0$, and CR yields $v_y = u_x = 0$ and $v_y = -u_x = 0$, so $v$ is constant, making $f$ constant.
 :::
 
-:::{.solution title="3"}
+::: {.solution title="3"}
 Slick proof: apply the open mapping theorem again, since $\Arg(f) = \theta_0$ implies that $\im(f) \subseteq \gamma$ for the curve $\gamma \da \ts{t e^{i\theta_0}\st t\in \RR}$ which has no open subsets.
 
 Note that this implies that any $\RR\dash$valued holomorphic function is constant.
 :::
 
-:::{.solution title="4"}
+::: {.solution title="4"}
 Write $f=u+iv$ so $\bar f = u +i\tilde v$ where $\tilde v \da -v$.
 Then $u, \tilde v$ are constant, so in particular $\Re(f)$ is constant and by 2 $f$ is constant.
 :::

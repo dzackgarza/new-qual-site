@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Establish the following properties of ample and very ample invertible sheaves on a noetherian scheme $X$.
 Here $\mcl, \mcm$ denote invertible sheaves, and for (d), (e) we assume furthermore that $X$ is of finite type over a noetherian ring $A$.
 

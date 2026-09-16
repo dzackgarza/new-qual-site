@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Compute
 \[
 \lim_{n\to\infty}\left(\frac{n^n}{n!}\right)^{1/n}.

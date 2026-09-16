@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\Gamma$ act on a family $\mathcal{F}$, and let $\chi$ be the character of the permutation representation resulting from this action.
 
 **(a)** Show that the multiplicity of the trivial representation in this representation is equal to the number of orbits of $\mathcal{F}$ under the action of $\Gamma$.

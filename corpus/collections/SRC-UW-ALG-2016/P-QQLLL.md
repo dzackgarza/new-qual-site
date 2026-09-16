@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Recall that an inner automorphism of a group is an automorphism given by conjugation by an element of the group.
 An outer automorphism is an automorphism that is not inner.
 
@@ -31,7 +31,7 @@ An outer automorphism is an automorphism that is not inner.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The affine transformations of \(\mathbb F_5\),
 \[
 H=\{x\mapsto ax+b:a\in\mathbb F_5^\times,\ b\in\mathbb F_5\},

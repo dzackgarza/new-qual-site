@@ -25,19 +25,19 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a Noetherian valuation ring which is not a field.
 Show that $A$ is a discrete valuation ring.
 :::
 
 
-::: solution
+::: {.solution}
 Let \(\mathfrak m\) be the maximal ideal of the valuation ring \(A\). Since \(A\)
 is not a field, \(\mathfrak m
 e0\).
 
 <1>1. The maximal ideal \(\mathfrak m\) is principal.
-::: proof
+::: {.proof}
 Because \(A\) is Noetherian, write
 \[
 \mathfrak m=(a_1,\ldots,a_r).
@@ -52,7 +52,7 @@ Set \(\pi=a_j\).
 :::
 
 <1>2. Every nonzero ideal of \(A\) is a power of \(\mathfrak m=(\pi)\).
-::: proof
+::: {.proof}
 Let \(0
 e I\subseteq A\). Since \(A\) is Noetherian, \(I\) is finitely
 generated, hence principal by the same total-order argument: \(I=(x)\).
@@ -74,7 +74,7 @@ I=(\pi^n)=\mathfrak m^n.
 :::
 
 <1>3. \(A\) is a discrete valuation ring.
-::: proof
+::: {.proof}
 A Noetherian local domain that is not a field is a DVR precisely when its
 nonzero maximal ideal is principal; equivalently, every nonzero ideal is a
 power of that maximal ideal. Both conditions were established in <1>1 and

@@ -25,7 +25,7 @@ audit:
   note: Verified both implications directly from the Hausdorff definition and the product-topology basis.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space, and let
 \[
 \Delta=\{(x,y)\in X\times X\mid x=y\}.

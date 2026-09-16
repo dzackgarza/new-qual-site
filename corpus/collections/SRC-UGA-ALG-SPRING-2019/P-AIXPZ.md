@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A \in M_m(\mathbb{C})$ be an $m \times m$ matrix over the complex numbers. Suppose that $A$ is non-singular ($\det A \ne 0$) and that $A^k$ is diagonalizable over $\mathbb{C}$ for some integer $k \ge 1$ (for instance, $k = 2019$).
 
 Show that $A$ is also diagonalizable over $\mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that an invertible complex matrix whose power $A^k$ is diagonalizable must itself be diagonalizable, using the square-free criterion for minimal polynomials.
 
 <1>1. Diagonalizability criterion and factorization of $m_{A^k}(x)$:

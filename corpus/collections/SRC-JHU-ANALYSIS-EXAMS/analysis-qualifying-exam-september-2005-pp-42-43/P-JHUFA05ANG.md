@@ -34,13 +34,13 @@ $$
 have between the circles $\{ | z | = 1 \}$ and $\{ | z | = 2 \}$ . Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 There are $\boxed{6}$ zeros between the circles, counted
 with multiplicity. Let $p(z)=z^9+z^5-8z^3-z+2$.
 
 <1>1. The unit disk contains three zeros.
 
-::: proof
+::: {.proof}
 On $|z|=1$,
 $$
 |z^9+z^5-z+2|\leq1+1+1+2=5<8=|-8z^3|.
@@ -54,7 +54,7 @@ boundary zeros.
 
 <1>2. The radius-two disk contains nine zeros, leaving six in the annulus.
 
-::: proof
+::: {.proof}
 On $|z|=2$,
 $$
 |z^5-8z^3-z+2|\leq32+64+2+2=100<512=|z^9|.

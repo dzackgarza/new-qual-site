@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be the set of positive integers whose decimal expansions do not contain the digit $9$. Prove that
 \[
 \sum_{a\in A}\frac1a<\infty.

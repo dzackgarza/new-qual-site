@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 State the following theorems:
 
 1. the uniqueness theorem for premeasures on rings;

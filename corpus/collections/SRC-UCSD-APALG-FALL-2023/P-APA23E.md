@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $V$ be a finite-dimensional $G$-module over $\mathbb{C}$.
 Let $\chi \colon G \to \mathbb{C}$ be the character of $V$ and consider the linear operator $\varphi \colon V \to V$ given by
 \[

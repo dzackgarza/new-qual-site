@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a variety of dimension $n$ over $k$.
 Let $\mce$ be a locally free sheaf of rank $> n$ on $X$, and let $V \subseteq \Gamma(X, \mce)$ be a vector space of global sections which generate $\mce$.
 Then show that there is an element $s \in V$ such that for each $x \in X$ we have $s_x \not\in \mfm_x \mce_x$.

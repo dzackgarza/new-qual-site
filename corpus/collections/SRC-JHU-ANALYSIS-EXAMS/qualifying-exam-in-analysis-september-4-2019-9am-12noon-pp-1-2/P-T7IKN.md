@@ -32,17 +32,17 @@ audit:
   note: "Retained the complete parallelogram-identity proof, reconciled its hypothesis with the statement and title, and justified existence of the minimizing sequence."
 ---
 
-::: problem
+::: {.problem}
 Prove that every nonempty closed convex subset of a Hilbert space has a unique element of minimal norm.
 :::
 
-::: remark
+::: {.remark}
 Nonemptiness is necessary: the empty set is closed and convex but has no element of minimal norm.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose a minimizing sequence.
-::: proof
+::: {.proof}
 Let $C$ be a nonempty closed convex subset of a Hilbert space $H$, and set
 \[
 d:=\inf_{x\in C}\|x\|.
@@ -56,7 +56,7 @@ $d\leq\|x_n\|<d+1/n$. Then
 :::
 
 <1>2. Prove that the minimizing sequence is Cauchy.
-::: proof
+::: {.proof}
 By convexity,
 \[
 \frac{x_n+x_m}{2}\in C,
@@ -81,7 +81,7 @@ The right-hand side tends to $0$ as $m,n\to\infty$. Hence $(x_n)$ is Cauchy.
 :::
 
 <1>3. Obtain existence of a minimum-norm point.
-::: proof
+::: {.proof}
 Since $H$ is complete, $x_n\to x$ for some $x\in H$. Because $C$ is closed,
 \[
 x\in C.
@@ -94,7 +94,7 @@ Thus $x$ has minimal norm in $C$.
 :::
 
 <1>4. Prove uniqueness.
-::: proof
+::: {.proof}
 Suppose $x,y\in C$ both satisfy
 \[
 \|x\|=\|y\|=d.

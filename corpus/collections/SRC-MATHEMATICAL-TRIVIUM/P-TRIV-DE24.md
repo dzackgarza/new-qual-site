@@ -19,7 +19,7 @@ audit:
   note: Removed stray =0 residue against Differential Equations Problem 24 on page 24 of the source PDF and added a remark on the source's undefined n in the normalization.
 ---
 
-::: problem
+::: {.problem}
 Bessel equation of order $p$ is
 $$
 x^2 y'' + x y' + (x^2 - p^2) y = 0

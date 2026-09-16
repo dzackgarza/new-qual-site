@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that the additive group $\mathbb Q$ cannot be written as the direct sum of two nontrivial subgroups.
 :::

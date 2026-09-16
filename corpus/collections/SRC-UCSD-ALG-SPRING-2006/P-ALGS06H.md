@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 (a) If $\mathbb{F}_q$ is a field with $q$ elements, show that $\mathbb{F}_q^\times$ is a cyclic group.
 
 (b) Show that for each integer $n \geq 1$, there exists an irreducible polynomial over $\mathbb{F}_q$ of degree $n$.

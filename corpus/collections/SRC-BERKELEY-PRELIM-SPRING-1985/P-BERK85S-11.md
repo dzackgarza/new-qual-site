@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 F=\{a+b\sqrt[3]{2}+c\sqrt[3]{4}:a,b,c\in\mathbb Q\}.

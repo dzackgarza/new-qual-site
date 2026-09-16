@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 20, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $\sigma _ { i } , i = 1 , 2 , 3$ be the Pauli matrices.
 
 (a) Calculate $\left[ \sigma _ { i } , \sigma _ { j } \right] \equiv \sigma _ { i } \sigma _ { j } - \sigma _ { j } \sigma _ { i } , i , j = 1 , 2 , 3 .$

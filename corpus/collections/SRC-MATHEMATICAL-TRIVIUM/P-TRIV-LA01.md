@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Describe the figures that can be obtained as intersection of the cone $z ^ { 2 } = x ^ { 2 } + y ^ { 2 }$ with the plane $z - a x = 1 , 0 < a < \infty$ , in R3.
 :::

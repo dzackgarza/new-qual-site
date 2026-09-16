@@ -29,10 +29,10 @@ Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \i
 Prove that there is a constant $c \in \mathbb{C}$ such that $f = cg$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $g$ is not identically zero, the quotient $f/g$ extends to a bounded entire function.
 
-::: proof
+::: {.proof}
 Let $Z=\{z:g(z)=0\}$. The zeros of a nonzero entire
 function are isolated [@SS03]. On $\mathbb C\setminus Z$,
 the quotient $h=f/g$ is holomorphic and satisfies
@@ -46,7 +46,7 @@ the removed points preserves $|H|\leq1$ on the whole plane.
 
 <1>2. The functions are proportional in every case.
 
-::: proof
+::: {.proof}
 Under the assumption of step <1>1, Liouville's theorem
 makes $H$ a constant $c$ with $|c|\leq1$ [@SS03].
 Thus $f=cg$ off $Z$. At a point of $Z$, the original

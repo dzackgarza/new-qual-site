@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X, P_0$ be an elliptic curve having an endomorphism $f: X \to X$ of degree 2.
 
 a. If we represent $X$ as a 2-1 covering of $\PP^1$ by a morphism $\pi: X \to \PP^1$ ramified at $P_0$, then as in (4.4), show that there is another morphism $\pi': X \to \PP^1$ and a morphism $g: \PP^1 \to \PP^1$, also of degree 2, such that $\pi \circ f=g \circ \pi'$.

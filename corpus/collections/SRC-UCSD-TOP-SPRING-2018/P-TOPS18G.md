@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $S^3 = M \cup_\Sigma N$ is a decomposition of the $3$-sphere into two compact $3$-manifolds, glued along their common boundary surface $\Sigma$.
 Prove that $H_1(N) \cong H_1(M)$, and conclude that $\mathbb{RP}^2$ cannot be embedded in $S^3$.
 :::

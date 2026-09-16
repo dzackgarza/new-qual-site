@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define lower central series, upper central series, nilpotent and solvable groups.
 :::
 
-::: solution
+::: {.solution}
 For a group $G$, the **lower central series** is
 \[
 \gamma_1(G)=G,\qquad \gamma_{i+1}(G)=[\gamma_i(G),G].

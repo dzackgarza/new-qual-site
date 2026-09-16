@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 In this problem, we assume that $X$ is a surface for which $\Num X$ is finitely generated (i.e., any surface, if you accept the Néron-Severi theorem (Ex.
 1.7)).
 

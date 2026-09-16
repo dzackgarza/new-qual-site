@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find a non-symmetric polynomial in several variables whose square is symmetric, and prove its properties.
 :::
 
-::: solution
+::: {.solution}
 Over any field of characteristic different from $2$, take
 \[
 P(x,y)=x-y.

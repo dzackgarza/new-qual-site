@@ -22,7 +22,7 @@ The Baire category theorem implies that $\mathbb{R}$ cannot be written as a coun
 Show this fails if the sets are not required to be closed.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct a countable collection of subsets $\{A_n\}_{n=0}^\infty$ of $\mathbb{R}$ such that $\operatorname{Int}(A_n) = \emptyset$ for all $n \ge 0$ and $\mathbb{R} = \bigcup_{n=0}^\infty A_n$.
 
 <1>1. Construction of the partition:

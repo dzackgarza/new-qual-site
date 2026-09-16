@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) For $\phi \in C_0^\infty(\mathbb{R})$ show that the expression
 $$
 T(\phi) := \lim_{\epsilon \to 0^+} \left[\int_\epsilon^\infty \frac{\phi(x)}{x}\,dx + \phi(0)\log\epsilon\right]
@@ -35,9 +35,9 @@ Express the derivative of $f$ in the sense of distributions in terms of the dist
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Rewrite the limiting expression in a manifestly finite form.
-::: proof
+::: {.proof}
 For $0<\varepsilon<1$,
 \[
 \begin{aligned}
@@ -66,7 +66,7 @@ T(\phi)
 :::
 
 <1>2. Prove that $T$ is a distribution.
-::: proof
+::: {.proof}
 Linearity is immediate. Let $K\subset\mathbb R$ be compact and suppose $\operatorname{supp}\phi\subset K$. By the mean-value estimate,
 \[
 |\phi(x)-\phi(0)|\le x\sup_{0\le t\le1}|\phi'(t)|
@@ -93,7 +93,7 @@ This is precisely the required continuity estimate for a distribution. Therefore
 :::
 
 <1>3. Show that $H(x)\log x$ is locally integrable.
-::: proof
+::: {.proof}
 Let
 \[
 f(x)=H(x)\log x,
@@ -109,7 +109,7 @@ Away from $0$, $\log x$ is locally integrable. Hence
 :::
 
 <1>4. Compute the distributional derivative.
-::: proof
+::: {.proof}
 For $\phi\in C_c^\infty(\mathbb R)$,
 \[
 f'(\phi)

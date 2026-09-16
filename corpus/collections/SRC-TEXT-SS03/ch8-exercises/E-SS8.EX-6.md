@@ -15,13 +15,13 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Give another proof of Lemma 1.3 by showing directly that the Laplacian of $u \circ F$ is zero.
 
 [Hint: The real and imaginary parts of F satisfy the Cauchy-Riemann equations.]
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 F(x,y)=(p(x,y),q(x,y)),

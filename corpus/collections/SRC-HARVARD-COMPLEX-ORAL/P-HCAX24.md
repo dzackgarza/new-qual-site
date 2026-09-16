@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define the modular group and describe its action on the upper half-plane.
 :::
 
-::: solution
+::: {.solution}
 The modular group is
 \[
 PSL_2(\mathbb Z)=SL_2(\mathbb Z)/\{\pm I\}.

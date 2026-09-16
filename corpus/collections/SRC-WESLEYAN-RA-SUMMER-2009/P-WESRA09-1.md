@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Give definitions of each of the following:
 
 1. a Dynkin system in a set $\Omega$;

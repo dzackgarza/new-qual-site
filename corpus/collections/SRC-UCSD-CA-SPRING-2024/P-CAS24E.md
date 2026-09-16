@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that there exist polynomials $p_n$ such that
 
 (i) $p_n(0) = 1$, $p_n'(0) = 0$,
@@ -21,7 +21,7 @@ Show that there exist polynomials $p_n$ such that
 (ii) $p_n(z) \to 0$ as $n \to \infty$ for all fixed $z \in \mathbb{C} \setminus \{0\}$.
 :::
 
-::: solution
+::: {.solution}
 Choose pairwise disjoint open arcs $I_n\subset\mathbb T$. Define
 \[
 K_n=

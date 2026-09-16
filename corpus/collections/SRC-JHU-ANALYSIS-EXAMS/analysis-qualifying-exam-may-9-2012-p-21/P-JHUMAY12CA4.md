@@ -29,13 +29,13 @@ Let $U = \{z \in \mathbb{C} \mid \operatorname{Im}(z) \leq \frac{\pi}{2}\}$ and 
 Prove that $f(z) = z + 1$.
 :::
 
-::: solution
+::: {.solution}
 Set $g(z)=f(z)-1$ and $H=\{z:\operatorname{Im}z<\pi/2\}$.
 Then $g(-1)=-1$ and $g(0)=0$.
 
 <1>1. The restriction $g:H\to H$ is a holomorphic self-map.
 
-::: proof
+::: {.proof}
 Subtracting the real number one leaves imaginary parts
 unchanged, so $g(U)\subset U$. Both $-1$ and zero belong
 to $H$, and their distinct images show that $g$ is
@@ -48,7 +48,7 @@ meets $\mathbb C\setminus U$. Hence $g(H)\subset H$.
 
 <1>2. A disk normalization makes $g$ the identity on $H$.
 
-::: proof
+::: {.proof}
 Define
 $$
 \psi(z)=\frac{z}{z-i\pi},\qquad
@@ -81,7 +81,7 @@ It follows that $G(w)=w$ on $D$ and $g(z)=z$ on $H$.
 
 <1>3. The equality holds on the entire plane.
 
-::: proof
+::: {.proof}
 The entire function $f(z)-z-1$ vanishes on the nonempty
 open set $H$. The identity theorem on the connected
 plane makes it identically zero [@SS03]. Hence

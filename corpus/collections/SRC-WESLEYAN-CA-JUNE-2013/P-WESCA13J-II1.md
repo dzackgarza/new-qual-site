@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 For each function, classify the singularity at the indicated point and find the residue:
 
 (a) $f(z)=z^2e^{-1/z^3}$ at $z_0=0$;

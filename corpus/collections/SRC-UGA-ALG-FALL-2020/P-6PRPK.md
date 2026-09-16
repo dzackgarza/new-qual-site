@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order 60 whose Sylow 3-subgroup is normal.
 
 a. Prove that $G$ is solvable.
@@ -27,7 +27,7 @@ a. Prove that $G$ is solvable.
 b. Prove that the Sylow 5-subgroup is also normal.
 :::
 
-::: solution
+::: {.solution}
 Let $P$ be the normal Sylow $3$-subgroup of $G$, so $|P|=3$.
 
 For (a), the quotient $G/P$ has order $20$. If $n_5$ denotes the number of Sylow $5$-subgroups of $G/P$, then

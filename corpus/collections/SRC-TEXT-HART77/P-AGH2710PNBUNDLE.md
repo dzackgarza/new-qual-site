@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme.
 
 a. By analogy with the definition of a vector bundle (Ex. 5.18), define the notion of a **projective $n\dash$space bundle** over $X$: a scheme $P$ with a morphism $\pi: P \to X$ such that $P$ is locally isomorphic to $U \times \PP^n$ for $U \subseteq X$ open, and the transition automorphisms on $\Spec A \times \PP^n$ are given by $A\dash$linear automorphisms of the homogeneous coordinate ring $A[x_0, \ldots, x_n]$, e.g. $x'_i = \sum_j a_{ij} x_j$ with $a_{ij} \in A$.

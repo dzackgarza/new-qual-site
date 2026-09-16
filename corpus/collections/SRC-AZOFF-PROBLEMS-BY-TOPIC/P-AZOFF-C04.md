@@ -15,6 +15,6 @@ audit:
   note: Checked against Conformal mapping, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $D : = \left\{ z \in \mathbb { C } : | z - i | > 1 , \mathrm { R e } ( z ) > 0 \right\}$ onto the open upper half plane.
 :::

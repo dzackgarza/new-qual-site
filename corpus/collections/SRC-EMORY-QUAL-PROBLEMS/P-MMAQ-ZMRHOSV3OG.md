@@ -20,7 +20,7 @@ audit:
   note: "Compared with Complex Analysis (5) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMCA5, whose solution repeats this Möbius-composition argument."
 ---
 
-::: problem
+::: {.problem}
 1. State the Schwarz lemma for analytic functions in the unit disc.
 
 2. Let $f: \mathbb{D} \to \mathbb{D}$ be an analytic map from the unit disc $\mathbb{D}$ into itself.

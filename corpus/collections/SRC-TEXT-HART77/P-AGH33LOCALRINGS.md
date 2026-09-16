@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Let $\phi: X \to Y$ be a morphism.
    Show that for each $P \in X$, $\phi$ induces a homomorphism of local rings $\phi_P^* : \mco_{\phi(P), Y} \to \mco_{P, X}$.
 

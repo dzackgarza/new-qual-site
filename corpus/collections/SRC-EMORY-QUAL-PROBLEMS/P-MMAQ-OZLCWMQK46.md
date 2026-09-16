@@ -27,7 +27,7 @@ audit:
   note: "Compared with Real Analysis (5) of Arango-Piñeros, Some quals problems; restated the source's three conditions with outer measure and moved the note on the false equivalence into a remark; merged the duplicate P-EMRA5, which instead added a bounded-variation hypothesis and cited its key image estimate without proof."
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a continuous function on $[0,1]$. Consider the following statements.
 
 1. $f$ is absolutely continuous.
@@ -45,9 +45,9 @@ Under the additional hypothesis that $f$ has bounded variation, the three statem
 The source writes $m$ for the measure of the arbitrary sets $E$ and $f(E)$; outer measure is used here because such sets need not be measurable.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Absolute continuity implies the small-image condition.
-::: proof
+::: {.proof}
 Assume $f$ is absolutely continuous. Then $f'\in L^1([0,1])$ and
 \[
 f(y)-f(x)=\int_x^y f'(t)\,dt
@@ -79,7 +79,7 @@ Thus (1) implies (2).
 :::
 
 <1>2. The small-image condition implies Lusin's $N$-property.
-::: proof
+::: {.proof}
 Assume (2), and let $E\subseteq[0,1]$ satisfy $m(E)=0$. Given $\varepsilon>0$, let $\delta$ be supplied by (2). Since $m(E)=0<\delta$,
 \[
 m^*(f(E))<\varepsilon.
@@ -92,7 +92,7 @@ Hence (2) implies (3).
 :::
 
 <1>3. Condition (3) does not imply absolute continuity.
-::: proof
+::: {.proof}
 Define
 \[
 f(0)=0,
@@ -138,7 +138,7 @@ Every absolutely continuous function on a compact interval has bounded variation
 :::
 
 <1>4. State the standard corrected theorem.
-::: proof
+::: {.proof}
 The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. Therefore the missing bounded-variation hypothesis is exactly what prevents condition (3) from characterizing absolute continuity in the source statement.
 :::
 :::

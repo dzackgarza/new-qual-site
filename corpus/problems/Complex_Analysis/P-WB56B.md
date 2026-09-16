@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that if $E \subset [0, 1]$ is uncountable, then there exists some $t \in (0, 1)$ such that both $E \cap (-\infty, t)$ and $E \cap (t, \infty)$ are uncountable.
 :::
 
-::: solution
+::: {.solution}
 For $t\in[0,1]$, set
 \[
 L_t=E\cap[0,t),\qquad R_t=E\cap(t,1].

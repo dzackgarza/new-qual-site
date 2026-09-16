@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $\theset{z\in \CC \suchthat \abs{z} < 1,\, \abs{z - {1\over 2}} > {1\over 2} }$ to $\DD$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \Omega=\left\{z:|z|<1,\ |z-1/2|>1/2\right\}.

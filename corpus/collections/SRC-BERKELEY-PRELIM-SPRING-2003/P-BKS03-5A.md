@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $L$ be a real symmetric $n\times n$ matrix with $0$ as a simple eigenvalue, and let $v\in\mathbb R^n$.
 
 (a) Show that for all sufficiently small $\varepsilon>0$, the equation

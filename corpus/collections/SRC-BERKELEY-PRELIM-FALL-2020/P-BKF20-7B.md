@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be linear on a vector space $W$ over a field $k$, with $A^5=I$.
 
 (a) If $\operatorname{char}k\ne5$, show that $W=U\oplus V$, where $U=\{u:Au=u\}$ and $AV=V$.

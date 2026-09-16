@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any ringed space $(X, \mco_X)$, let $\Pic X$ be the group of isomorphism classes of invertible sheaves (II, §6). Show that $\Pic X \cong H^1(X, \mco_X^*)$, where $\mco_X^*$ denotes the sheaf whose sections over an open set $U$ are the units in the ring $\Gamma(U, \mco_X)$, with multiplication as the group operation.
 
 Hint: For any invertible sheaf $\mcl$ on $X$, cover $X$ by open sets $U_i$ on which $\mcl$ is free, and fix isomorphisms $\varphi_i: \mco_{U_i} \iso \ro{\mcl}{U_i}$.

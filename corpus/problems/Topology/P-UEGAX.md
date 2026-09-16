@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a.
 What is the degree of the antipodal map on the $n$-sphere? 
 

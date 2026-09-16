@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ and $B$ be commuting linear operators on a finite-dimensional vector space. What can be said about their eigenspaces? When can they be simultaneously diagonalized?
 :::
 
-::: solution
+::: {.solution}
 Suppose
 \[
 AB=BA.

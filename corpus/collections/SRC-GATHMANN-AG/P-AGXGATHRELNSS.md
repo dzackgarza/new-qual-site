@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y\subset \AA^n/k$ be an affine variety and define $A(Y)$ by the quotient
 \[
 \pi: k[x_1,\cdots, x_n] \to A(Y) \da k[x_1, \cdots, x_n]/I(Y)

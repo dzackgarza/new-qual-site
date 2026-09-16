@@ -15,6 +15,6 @@ audit:
   note: Checked against Compactness, connectedness, and functions of one real variable, Problem 9, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Show that if $E \subset [ 0 , 1 ]$ is uncountable, then there is some $t \in \mathbb { R }$ such that both $E \cap ( - \infty , t )$ and $E \cap ( t , \infty )$ are uncountable.
 :::

@@ -24,14 +24,14 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Does there exist a Borel measurable function $f : \mathbb{R} \to [0, \infty)$ such that $\int_a^b f(x) \, dx = \infty$ for all real numbers $a < b$?
 Either find an example or show that no such $f$ exists.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose tiny intervals that visit every rational interval infinitely often.
-::: proof
+::: {.proof}
 Let $(B_j)_{j\ge1}$ enumerate the open intervals with rational endpoints. Choose a sequence $j(n)$ such that every positive integer occurs infinitely often; for example
 \[
 1,1,2,1,2,3,1,2,3,4,\ldots.
@@ -56,7 +56,7 @@ Then
 :::
 
 <1>2. Form the nonnegative series and make it finite everywhere.
-::: proof
+::: {.proof}
 Define
 \[
 F(x):=\sum_{n=1}^\infty a_n\mathbf1_{E_n}(x).
@@ -87,7 +87,7 @@ Then $f:\mathbb R\to[0,\infty)$ is Borel measurable and finite everywhere.
 :::
 
 <1>3. Every nonempty interval has infinite integral.
-::: proof
+::: {.proof}
 Fix $a<b$. Choose a rational interval $B_j$ with
 \[
 B_j\subset(a,b).

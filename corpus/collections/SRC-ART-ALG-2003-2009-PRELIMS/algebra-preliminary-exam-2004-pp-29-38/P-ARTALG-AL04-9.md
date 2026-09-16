@@ -24,11 +24,11 @@ audit:
   note: "Checked the faithful variable-permutation action, minimal-support linear-dependence argument, embedding bound, and separability and normality via distinct orbit polynomials."
 ---
 
-::: problem
+::: {.problem}
 Given a finite group $G$, show that there are fields $K$ and $F$ such that $K$ is Galois over $F$, and $G$ is isomorphic to the Galois group of $K$ over $F$.
 :::
 
-::: solution
+::: {.solution}
 Let $m=|G|$. Take algebraically independent indeterminates
 $x_g$, indexed by $g\in G$, over $\mathbb Q$, and put
 $$
@@ -43,7 +43,7 @@ $$
 <1>1. These maps give an injective homomorphism
 $G\longrightarrow\operatorname{Aut}_F(K)$.
 
-::: proof
+::: {.proof}
 A permutation of algebraically independent indeterminates extends
 to an automorphism of the polynomial ring and its fraction field.
 On the generators, $\sigma_h\sigma_k(x_g)=x_{hkg}$, so
@@ -57,7 +57,7 @@ field. Every $\sigma_h$ fixes it by definition.
 
 <1>2. The extension degree satisfies $[K:F]\leq m$.
 
-::: proof
+::: {.proof}
 Take any $a_1,\ldots,a_{m+1}\in K$. The homogeneous system
 $$
 \sum_{j=1}^{m+1}\sigma_h(a_j)c_j=0\qquad(h\in G)
@@ -84,7 +84,7 @@ finiteness of the extension.
 <1>3. The extension is Galois and its full Galois group is the
 displayed copy of $G$.
 
-::: proof
+::: {.proof}
 For any $a\in K$, let $O_a=\{\sigma_h(a):h\in G\}$, as a set
 without repetitions. The polynomial
 $$

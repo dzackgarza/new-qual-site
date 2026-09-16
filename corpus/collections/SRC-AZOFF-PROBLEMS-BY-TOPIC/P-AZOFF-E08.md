@@ -15,7 +15,7 @@ audit:
   note: Checked against Liouville, FTA, and power series, Problem 8, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md. Flash separates the limit arrow and $z\to\infty$ from the displayed quotient; the card recombines those extracted pieces without changing the mathematical statement.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ is entire and, for some integer $n\ge1$,
 \[
 \lim_{z\to\infty}\frac{f(z)}{z^n}=0.

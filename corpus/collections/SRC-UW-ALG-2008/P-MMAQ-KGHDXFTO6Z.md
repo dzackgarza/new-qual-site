@@ -17,12 +17,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a finite field.
 Show for any positive integer $n$ that there are irreducible polynomials of degree $n$ in $F[x]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Write
 \[
 |F|=q.

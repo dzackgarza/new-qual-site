@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $\mcf'$ be a subsheaf of a sheaf $\mcf$.
 Show that the natural map of $\mcf$ to the quotient sheaf $\mcf/\mcf'$ is surjective and has kernel $\mcf'$.
 Thus there is an exact sequence

@@ -15,6 +15,6 @@ audit:
   note: Checked against Problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 State the principle of analytic continuation for holomorphic functions and give a specific example of how it is used in complex analysis.
 :::

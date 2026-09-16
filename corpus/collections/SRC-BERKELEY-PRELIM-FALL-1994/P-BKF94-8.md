@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 For real $\theta$, let
 \[
 F_\theta=\mathbb Q(\sin\theta),\qquad E_\theta=\mathbb Q\!\left(\sin\frac\theta3\right).

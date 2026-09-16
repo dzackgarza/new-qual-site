@@ -39,18 +39,18 @@ c. Find two subgroups of $\mathrm{Gal}(E/\mathbb{Q})$ of order $(p-1)(q-1)$.
 d. Show that the Sylow $p$-subgroup of $\mathrm{Gal}(E/\mathbb{Q})$ is normal and determine its fixed field.
 :::
 
-::: hint
+::: {.hint}
 Since $\gcd(p,q)=1$, there are integers $a,b$ such that
 $pa+qb=1$.
 :::
 
-::: solution
+::: {.solution}
 Put $\alpha=\sqrt[n]{2}>0$, $\zeta=\zeta_n$, and
 $L=\mathbb Q(\zeta)$. Write $m=(p-1)(q-1)$.
 
 <1>1. The splitting field is $E=\mathbb Q(\zeta,\alpha)$.
 
-::: proof
+::: {.proof}
 The roots of $x^p-2$ are
 $\alpha^q(\zeta^q)^j$, $0\leq j<p$; the roots of
 $x^q-2$ are $\alpha^p(\zeta^p)^k$, $0\leq k<q$.
@@ -73,7 +73,7 @@ $$
 \boxed{[E:\mathbb Q]=pq(p-1)(q-1)=nm}.
 $$
 
-::: proof
+::: {.proof}
 The polynomial $x^n-2$ is Eisenstein at two, so
 $[\mathbb Q(\alpha):\mathbb Q]=n$ [@DF04].
 The cyclotomic degree formula gives
@@ -103,7 +103,7 @@ $$
 $$
 They satisfy $\sigma_b\tau\sigma_b^{-1}=\tau^b$.
 
-::: proof
+::: {.proof}
 Since $x^n-2$ is irreducible over $L$, sending $\alpha$
 to its root $\zeta\alpha$ defines an $L$-embedding of $E$
 into itself. Its image contains $\alpha=\zeta^{-1}(\zeta\alpha)$,
@@ -137,7 +137,7 @@ H_1=\tau H_0\tau^{-1}
 =\{\tau^{1-b}\sigma_b:b\in(\mathbb Z/n\mathbb Z)^\times\}.
 $$
 
-::: proof
+::: {.proof}
 The composition rule in step <1>3 makes $H_0$ a subgroup
 isomorphic to $(\mathbb Z/n\mathbb Z)^\times$, of order
 $m$. Its conjugate $H_1$ is a subgroup of the same order.
@@ -158,7 +158,7 @@ P=\langle\tau^q\rangle,
 \boxed{E^P=\mathbb Q(\zeta_n,\sqrt[q]{2})}.
 $$
 
-::: proof
+::: {.proof}
 Since $|G|=pqm$ and $p\nmid qm$, a Sylow $p$-subgroup
 has order $p$. The element $\tau^q$ has order $p$, so
 its subgroup $P$ is Sylow. Conjugation by $\tau$ fixes

@@ -28,12 +28,12 @@ audit:
 Prove that there is only one solution in the unit disc $\{z : |z| < 1\}$ and there are three solutions on the annulus $\{z : 1 < |z| < 2\}$ (counting multiplicities) for the equation $z^4 - 6z + 3 = 0$.
 :::
 
-::: solution
+::: {.solution}
 Put $p(z)=z^4-6z+3$.
 
 <1>1. There is exactly one zero in $|z|<1$, counted with multiplicity.
 
-::: proof
+::: {.proof}
 On $|z|=1$,
 $$
 |z^4+3|\leq1+3=4<6=|-6z|.
@@ -49,7 +49,7 @@ contains no zero of $p$.
 
 <1>2. There are exactly three zeros in $1<|z|<2$, counted with multiplicity.
 
-::: proof
+::: {.proof}
 On $|z|=2$,
 $$
 |-6z+3|\leq12+3=15<16=|z^4|.

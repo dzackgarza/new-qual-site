@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $\mathfrak a_1,\ldots,\mathfrak a_r$ be ideals of a commutative ring $A$ such that $\mathfrak a_i+\mathfrak a_j=(1)$ whenever $i\ne j$.
 Show that
 \[

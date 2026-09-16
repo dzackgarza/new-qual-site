@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Is it the case that $f\in L^1$ implies $\hat f\in L^1$?
 
 - Show that if $f, \hat f \in L^1$ then $f$ is bounded, uniformly continuous, and vanishes at infinity.

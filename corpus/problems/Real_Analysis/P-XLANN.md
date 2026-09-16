@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $g \in L^\infty([0, 1])$.
 
 (a) Prove that
@@ -34,7 +34,7 @@ $$
 defines a continuous linear functional in $(L^1([0, 1]))^*$ with $\|\Lambda_g\|_{(L^1)^*} = \|g\|_{L^\infty([0, 1])}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the $L^p \to L^\infty$ norm limit as $p \to \infty$ on $[0, 1]$ in (a), and compute the operator norm $\|\Lambda_g\|_{(L^1)^*} = \|g\|_{L^\infty}$ in (b).
 
 <1>1. Part (a): Upper bound $\limsup_{p \to \infty} \|g\|_{L^p} \le \|g\|_{L^\infty}$.

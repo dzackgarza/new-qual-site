@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 32, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the matrices A, B such that $[ A , B ] = 0$ . Show that in this case $e ^ { A } e ^ { B } = e ^ { B } e ^ { A } = e ^ { A + B }$
 :::

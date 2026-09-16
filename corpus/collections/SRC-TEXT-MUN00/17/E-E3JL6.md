@@ -22,7 +22,7 @@ audit:
 Show that the product of two Hausdorff spaces is Hausdorff.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $X$ and $Y$ are Hausdorff topological spaces, then their Cartesian product $X \times Y$ (endowed with the product topology) is Hausdorff.
 
 <1>1. Definition of the Hausdorff property:

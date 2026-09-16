@@ -33,9 +33,9 @@ audit:
 (b) (15 points) Determine the number of zeros of P that lie in the closed disc $| z | \leq { \frac { 1 } { 2 } }$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a): $P$ and $P'$ have no common zero.
-::: proof
+::: {.proof}
 Let
 $$
 P(z)=z^7+z^3+\frac1{16}.
@@ -70,7 +70,7 @@ a contradiction. Thus $P$ has no multiple zeros.
 :::
 
 <1>2. Part (b): Rouché's theorem gives exactly three zeros in the closed disk.
-::: proof
+::: {.proof}
 On $|z|=1/2$,
 $$
 |z^7|=\frac1{128},

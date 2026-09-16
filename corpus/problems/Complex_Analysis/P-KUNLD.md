@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Laurent expansion about $z_0=0$ for $f(z) = \tan(z)$ by using polynomial long division on the series expansions for $\sin(z)$ and $\cos(z)$.
 :::
 
-:::{.solution}
+::: {.solution}
 Computing the Laurent series for $\tan(z)$ at $z=0$:
 
 \[

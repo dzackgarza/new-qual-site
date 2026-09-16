@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Show that every open $U \subseteq \RR^n$ is a countable union of *almost* disjoint closed cubes.
 :::
 

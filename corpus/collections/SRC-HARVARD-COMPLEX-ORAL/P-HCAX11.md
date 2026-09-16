@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Prove that the punctured unit disk is not conformally equivalent to an annulus.
 :::
 

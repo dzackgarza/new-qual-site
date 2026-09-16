@@ -24,11 +24,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that an Artinian ring has only finitely many maximal ideals.
 :::
 
-::: solution
+::: {.solution}
 Suppose, for contradiction, that $R$ has infinitely many distinct maximal
 ideals $\mathfrak m_1,\mathfrak m_2,\ldots$.
 
@@ -42,7 +42,7 @@ I_1\supseteq I_2\supseteq I_3\supseteq\cdots.
 \]
 
 <1>1. Every containment $I_n\supsetneq I_{n+1}$ is strict.
-::: proof
+::: {.proof}
 Distinct maximal ideals are comaximal. By the Chinese remainder theorem,
 \[
 R/I_{n+1}\cong\prod_{i=1}^{n+1}R/\mathfrak m_i.
@@ -55,7 +55,7 @@ which is nonzero. Hence $I_n\ne I_{n+1}$.
 :::
 
 <1>2. This contradicts the Artinian condition.
-::: proof
+::: {.proof}
 An Artinian ring satisfies the descending chain condition on ideals, whereas
 <1>1 gives an infinite strictly descending chain.
 :::

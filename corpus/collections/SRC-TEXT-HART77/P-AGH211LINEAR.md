@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A hypersurface defined by a linear polynomial is called a **hyperplane**.
 
 1. Show that the following two conditions are equivalent for a variety $Y \subseteq \PP^n$.

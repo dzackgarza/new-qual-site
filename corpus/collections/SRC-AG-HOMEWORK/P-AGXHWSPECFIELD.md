@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X\in \Sch$, and for $x\in X$ let $\OO_x$ be the local ring at $x$ and $\mfm_x$ its maximal ideal.
 Let $\kappa(x) \da \OO_x/\mfm_x$ be the residue field at $x$.
 

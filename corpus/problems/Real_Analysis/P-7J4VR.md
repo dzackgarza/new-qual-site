@@ -20,7 +20,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - If $f$ is continuous, is it necessarily the case that $f'$ is continuous?
 
 - If $f_n \to f$, is it necessarily the case that $f_n'$ converges to $f'$ (or at all)?

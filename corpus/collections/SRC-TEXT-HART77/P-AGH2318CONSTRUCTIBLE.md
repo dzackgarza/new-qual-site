@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a Zariski topological space.
 A constructible subset of $X$ is a subset which belongs to the smallest family $\mathcal{F}$ of subsets such that every open subset is in $\mathcal{F}$, a finite intersection of elements of $\mathcal{F}$ is in $\mathcal{F}$, and the complement of an element of $\mathcal{F}$ is in $\mathcal{F}$.
 

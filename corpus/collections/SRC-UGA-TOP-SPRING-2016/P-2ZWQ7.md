@@ -25,7 +25,7 @@ audit:
   note: Checked the zero-column case separately, then verified that normalization of Ax defines a continuous self-map of the simplex and that a Brouwer fixed point is an eigenvector.
 ---
 
-::: problem
+::: {.problem}
 Use the Brouwer fixed point theorem to show that an $n \times n$ matrix with nonnegative entries has a real eigenvalue.
 :::
 

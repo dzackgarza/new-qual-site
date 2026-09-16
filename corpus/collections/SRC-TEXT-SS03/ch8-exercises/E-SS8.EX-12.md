@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 12. A complex number $w \in \mathbb { D }$ is a fixed point for the map $f : \mathbb { D } \to \mathbb { D } { \mathrm { i f ~ } } f ( w ) = w$
 
 (a) Prove that if $f : \mathbb { D } \to \mathbb { D }$ is analytic and has two distinct fixed points, then f is the identity, that is, $f ( z ) = z { \mathrm { ~ f o r } }$ all $z \in \mathbb { D }$
@@ -24,7 +24,7 @@ audit:
 [Hint: Consider the upper half-plane.]
 :::
 
-::: solution
+::: {.solution}
 For part (a), let $a,b\in\mathbb D$ be distinct fixed points of $f$. Choose a disc automorphism $\phi$ with $\phi(a)=0$ and define
 \[
 g=\phi\circ f\circ\phi^{-1}.

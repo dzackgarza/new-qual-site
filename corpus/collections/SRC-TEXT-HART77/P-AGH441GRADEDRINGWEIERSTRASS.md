@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an elliptic curve over $k$, with $\characteristic k \neq 2$, let $P \in X$ be a point, and let $R$ be the graded ring $R=\bigoplus_{n \geq 0} H^0(X, \OO_X(nP))$.
 Show that for suitable choice of $t, x, y$
 $$

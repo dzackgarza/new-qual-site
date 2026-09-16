@@ -22,14 +22,14 @@ audit:
   note: Reviewed the Bernoulli domination, pointwise limit, dominated convergence step, and Gaussian integral evaluation; the proof is correct.
 ---
 
-::: problem
+::: {.problem}
 Compute the following limit and justify all calculations:
 $$
 \lim_{n \to \infty} \int_0^n \left(1 + \frac{x^2}{n}\right)^{-(n+1)} \, dx.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Evaluate the limit using the Dominated Convergence Theorem with dominating function $g(x) = \frac{1}{1 + x^2}$, and compute the resulting Gaussian integral.
 
 <1>1. Pointwise limit of the integrands:

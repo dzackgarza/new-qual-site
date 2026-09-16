@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Identify
 \[
 \operatorname{Aut}(\ZZ/p\ZZ),
@@ -25,7 +25,7 @@ Identify
 \]
 :::
 
-::: solution
+::: {.solution}
 For the additive cyclic group $C_p=\ZZ/p\ZZ$, every automorphism is determined by the image of $1$, which may be any nonzero residue class. Thus
 \[
 \operatorname{Aut}(\ZZ/p\ZZ)\cong(\ZZ/p\ZZ)^\times.

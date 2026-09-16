@@ -13,7 +13,7 @@ audit:
   note: The retained source prints a missing-PostScript message for its illustration, but the regular-polygon construction and all segment lengths needed by the problem are specified in the text.
 ---
 
-:::{.problem}
+::: {.problem}
 1. Evaluate $P_{n-1}(1)$, where
    \[
    P_{n-1}(x)=\frac{x^n-1}{x-1}.

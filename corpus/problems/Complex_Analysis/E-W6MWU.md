@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a conformal map $\HH \to \DD$ using cross-ratios.
 :::
 
-:::{.solution}
+::: {.solution}
 Idea: rotate the upper hemisphere $(\HH)$ of $\CP^1$ to make the equator $\bd \DD$, "zoom" by placing $i$ at the center so $0\to i\mapsto -1\to 0$ and $i\to \infty\mapsto 0\to 1$.
 Accomplish this by sending
 

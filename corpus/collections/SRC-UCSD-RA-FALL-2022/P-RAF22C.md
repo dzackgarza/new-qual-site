@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Set $E = \bigcup_{m \in \mathbb{Z}} [2m, 2m+1)$ and $P = \chi_E - \chi_{\mathbb{R} \setminus E}$, so that $P(x)$ is $1$ if the greatest integer less than or equal to $x$ is even and is $-1$ if it is odd.
 Define $S_n(x) = P(10^n x)$.
 Prove that for every $f \in L^1(\mathbb{R})$
@@ -34,9 +34,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Construct a uniformly small primitive of $S_n$.
-::: proof
+::: {.proof}
 The function $P$ has period $2$ and has mean zero on each period. Hence $S_n(x)=P(10^n x)$ has period
 \[
 2\cdot 10^{-n}
@@ -54,7 +54,7 @@ Because the integral over every full period is zero, $F_n$ is periodic with the 
 :::
 
 <1>2. Prove the result first for $C_c^1$ functions.
-::: proof
+::: {.proof}
 Let $\varphi\in C_c^1(\mathbb R)$. Since $F_n'=S_n$ almost everywhere and $\varphi$ has compact support, integration by parts gives
 \[
 \int_{\mathbb R}S_n(x)\varphi(x)\,dx
@@ -70,7 +70,7 @@ Hence
 :::
 
 <1>3. Extend to arbitrary $f\in L^1(\mathbb R)$.
-::: proof
+::: {.proof}
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $\varphi\in C_c^1(\mathbb R)$ such that
 \[
 \|f-\varphi\|_1<\varepsilon.

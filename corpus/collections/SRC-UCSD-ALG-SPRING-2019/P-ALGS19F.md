@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (a) Suppose $D$ is an integral domain and $M$ is a flat $D$-module.
 Prove that $M$ is torsion-free.
 

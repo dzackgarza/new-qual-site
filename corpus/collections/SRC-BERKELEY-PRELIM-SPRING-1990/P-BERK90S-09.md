@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:[0,1]\to\mathbb R$ satisfy:
 
 1. for every interval $[a,b]\subset[0,1]$, the set $f([a,b])$ contains the interval with endpoints $f(a)$ and $f(b)$;

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 B_n=\{x\in\mathbb R^n:\|x\|<1\}

@@ -28,12 +28,12 @@ audit:
 Use residues to calculate the integral $\int_0^\infty \frac{1}{(1 + x^2)^2} \, dx$.
 :::
 
-::: solution
+::: {.solution}
 The value is $\boxed{\pi/4}$.
 
 <1>1. The upper-half-plane contour integral is $\pi/2$.
 
-::: proof
+::: {.proof}
 Let $F(z)=(1+z^2)^{-2}$. For $R>1$, use the contour
 formed by $[-R,R]$ followed by the counterclockwise
 upper semicircle $\Gamma_R$ of radius $R$. The only
@@ -55,7 +55,7 @@ $$
 
 <1>2. Passing to the infinite contour and using evenness gives the answer.
 
-::: proof
+::: {.proof}
 For $|z|=R$, the inequality $|1+z^2|\geq R^2-1$ yields
 $$
 \left|\int_{\Gamma_R}F(z)\,dz\right|

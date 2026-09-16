@@ -15,6 +15,6 @@ audit:
   note: Transcribed from the retained PDF; the extracted markdown contains a different Problem 2.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $S\subset\mathbb R^n$ be uncountable. Prove that there is a sequence of distinct points of $S$ converging to a point of $S$.
 :::

@@ -24,16 +24,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f: \RR \to \RR$ and suppose
 $$
 \forall x\in \RR,\quad f(x) \geq \limsup _{y \rightarrow x} f(y)
 $$
 Prove that $f$ is Borel measurable.
 :::
-::: solution
+::: {.solution}
 <1>1. Show that every strict sublevel set is open.
-::: proof
+::: {.proof}
 Fix $a\in\mathbb R$ and suppose $f(x)<a$. By hypothesis,
 \[
 \limsup_{y\to x}f(y)\le f(x)<a.
@@ -54,7 +54,7 @@ is open for every $a$.
 :::
 
 <1>2. Deduce Borel measurability.
-::: proof
+::: {.proof}
 Since each set $\{f<a\}$ is open, each set
 \[
 \{f\ge a\}=\mathbb R\setminus\{f<a\}

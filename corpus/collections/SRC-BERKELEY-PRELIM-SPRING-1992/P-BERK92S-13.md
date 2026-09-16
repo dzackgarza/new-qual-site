@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R^3\to\mathbb R^3$ be one-to-one and $C^1$, and let $J$ be its Jacobian determinant. For $x_0\in\mathbb R^3$, let $Q_r(x_0)$ be the cube centered at $x_0$, of side length $r$, with edges parallel to the coordinate axes. Prove that
 \[
 |J(x_0)|

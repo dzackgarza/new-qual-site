@@ -19,13 +19,13 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $M^3$ be a homology sphere: a connected closed compact $3$-manifold with the same homology groups as $S^3$.
 Calculate the fundamental group and homology of the suspension $\Sigma M$.
 Use this to show that the suspension is homotopy-equivalent to $S^4$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the fundamental group $\pi_1(\Sigma M)$ and homology groups $H_*(\Sigma M)$ of the suspension of a homology 3-sphere $M$, and prove that $\Sigma M \simeq S^4$.
 
 <1>1. Fundamental group of $\Sigma M$:

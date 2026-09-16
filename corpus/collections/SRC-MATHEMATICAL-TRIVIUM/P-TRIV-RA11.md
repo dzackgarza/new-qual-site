@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 11, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 "Huygens problem".
 Consider the ball with mass M moving with velocity V towards another ball with mass m that stays at rest.
 After the central collision, the second ball acquires the velocity

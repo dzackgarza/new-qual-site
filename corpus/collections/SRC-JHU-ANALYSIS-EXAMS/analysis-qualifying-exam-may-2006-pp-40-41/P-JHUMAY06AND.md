@@ -29,12 +29,12 @@ audit:
 4. Let $f _ { n } : D \to ( - \infty , 1 ) , n = 1 , 2 , . . . ,$ be an increasing sequence of harmonic functions on the unit disk D such that $f _ { n } ( 0 ) \to 1$ as $n \to \infty$ . (I.e., $f _ { n } ( z ) \leq f _ { n + 1 } ( z ) < 1 , \forall n \geq 1 . )$ Prove that $f _ { n } ( z ) \to 1$ as $n \to \infty$ , for all $z \in D$
 :::
 
-::: solution
+::: {.solution}
 Put $u_n=1-f_n$. Each $u_n$ is positive and harmonic on
 $D=\{|z|<1\}$, and $u_n(0)\to0$.
 
 <1>1. Values of a positive harmonic function on an interior disk are bounded by its central value.
-::: proof
+::: {.proof}
 Let $u>0$ be harmonic on $D$, and fix $0\leq r<R<1$.
 The Poisson representation on the radius-$R$ disk gives,
 for $|z|\leq r$,
@@ -58,7 +58,7 @@ $$
 :::
 
 <1>2. Apply the common bound to the sequence.
-::: proof
+::: {.proof}
 For fixed $r<1$, choose any $R$ with $r<R<1$. Step
 <1>1 applied separately to $u_n$ yields
 $$

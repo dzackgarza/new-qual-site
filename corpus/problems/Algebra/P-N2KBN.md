@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 I give you two matrices over a field.
 How would you tell if they are conjugate or not?
 What theorem are you using?

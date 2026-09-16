@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be Hermitian $n\times n$ matrices. Suppose every eigenvalue of $A$ lies in $[a,a']$ and every eigenvalue of $B$ lies in $[b,b']$. Prove that every eigenvalue of $A+B$ lies in
 \[
 [a+b,a'+b'].

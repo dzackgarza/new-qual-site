@@ -39,10 +39,10 @@ Calculate $\int_\gamma f(z) \, dz$.
 [Recall that in polar coordinates, $(-r, \theta)$ and $(r, \theta + \pi)$ give the same point in the plane.]
 :::
 
-::: solution
+::: {.solution}
 <1>1. The winding numbers are determined by three quadratic polynomials.
 
-::: proof
+::: {.proof}
 Put $P(w)=3w^2/2+2w+3/2$. For $w=e^{i\theta}$,
 $$
 P(w)=(2+3\cos\theta)e^{i\theta}=\gamma(\theta).
@@ -79,7 +79,7 @@ $$
 
 <1>2. The indexed residue formula evaluates the integral.
 
-::: proof
+::: {.proof}
 The only possible poles of $f$ are $1/2$, $2$, and $-5i$.
 At the first two, the residues are
 $$

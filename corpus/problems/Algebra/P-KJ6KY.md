@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $J=J_n(\lambda)$ be a single $n\times n$ Jordan block over a field $F$. Determine all matrices $X\in M_n(F)$ satisfying
 \[
 XJ=JX.

@@ -18,12 +18,12 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $S=\bigoplus_{d=0}^{\infty} S_d$ be a graded ring.
 State conditions on $S$ which ensure that its Hilbert function agrees with a polynomial for all sufficiently large $d$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** State the precise conditions on a graded ring $S$ ensuring its Hilbert function is eventually polynomial (the Hilbert polynomial) and prove this via the Hilbert–Serre Theorem.
 
 <1>1. Necessary and sufficient conditions on $S$:

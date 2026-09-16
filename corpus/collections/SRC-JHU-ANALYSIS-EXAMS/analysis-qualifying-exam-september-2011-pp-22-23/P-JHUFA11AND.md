@@ -24,17 +24,17 @@ audit:
   note: "Checked the hypotheses for the Riemann map, the conjugation derivative at the fixed point and uniqueness among all holomorphic self-maps, without assuming the competitor is an automorphism."
 ---
 
-::: problem
+::: {.problem}
 Let $U$ be a simply connected bounded domain in $\mathbb C$
 and let $P\in U$. Prove that for every $t\in\mathbb R$
 there is a unique holomorphic function $f:U\to U$
 such that $f(P)=P$ and $f'(P)=e^{it}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A normalized Riemann map constructs the required function.
 
-::: proof
+::: {.proof}
 The domain $U$ is nonempty since it contains $P$, and
 is a proper subset of $\mathbb C$ since it is bounded.
 The Riemann mapping theorem gives a biholomorphism
@@ -59,7 +59,7 @@ This proves existence.
 
 <1>2. Every holomorphic self-map with the prescribed data equals $f_t$.
 
-::: proof
+::: {.proof}
 Let $f:U\to U$ be any holomorphic map satisfying those
 data. Set $G=\phi\circ f\circ\phi^{-1}:D\to D$.
 Then $G(0)=0$, and the chain rule gives

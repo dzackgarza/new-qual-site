@@ -16,7 +16,7 @@ audit:
   note: The signs in the extracted first equation were garbled; the retained PDF page confirms that every displayed equation uses plus signs.
 ---
 
-:::{.problem}
+::: {.problem}
 Determine all solutions to the infinite system
 \[
 x_n+x_{n+2}+x_{n+4}=0,

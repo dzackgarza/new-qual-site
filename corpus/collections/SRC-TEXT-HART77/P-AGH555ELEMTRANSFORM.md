@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C$ be a curve, and let $\pi: X \rightarrow C$ and $\pi^{\prime}: X^{\prime} \rightarrow C$ be two geometrically ruled surfaces over $C$.
 Show that there is a finite sequence of elementary transformations (5.7.1) which transform $X$ into $X^{\prime}$.
 

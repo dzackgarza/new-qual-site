@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Construct, for every $n\ge2$, a polynomial over $\QQ$ whose Galois group is $S_n$. Give an explicit example for $n=7$.
 :::
 
-::: solution
+::: {.solution}
 A standard uniform family is
 \[
 f_n(x)=x^n-x-1.

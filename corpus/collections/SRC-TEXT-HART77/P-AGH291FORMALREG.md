@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme, $Y$ a closed subscheme, and $\hat X$ the completion of $X$ along $Y$.
 We call the ring $\Gamma(\hat X, \OO_{\hat X})$ the ring of **formal-regular** functions on $X$ along $Y$.
 In this exercise we show that if $Y$ is a connected, nonsingular, positive dimensional subvariety of $X = \PP^n_k$ over an algebraically closed field $k$, then $\Gamma(\hat X, \OO_{\hat X}) = k$.

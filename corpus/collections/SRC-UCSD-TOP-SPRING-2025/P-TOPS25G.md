@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove that there is no compact 4-manifold $M$ (with or without boundary) which is homotopy-equivalent to the suspension $\Sigma\mathbb{RP}^3$.
 :::
 

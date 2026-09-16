@@ -20,7 +20,7 @@ Let $a_n(z)$ be an analytic sequence in a domain $D$ such that $\displaystyle \s
 Show that $\displaystyle \sum_{n=0}^\infty |a'_n(z)|$ converges uniformly on bounded and closed sub-regions of $D$.
 :::
 
-::: solution
+::: {.solution}
 Let $K\Subset D$ be compact. Choose $\rho>0$ so that the closed
 $\rho$-neighborhood
 \[

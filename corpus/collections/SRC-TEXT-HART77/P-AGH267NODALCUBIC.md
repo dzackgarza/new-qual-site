@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the nodal cubic curve $y^2 z = x^3 + x^2 z$ in $\PP^2$.
 Imitate (6.11.4) and show that the group of Cartier divisors of degree $0$, written $\mathrm{CaCl}^\circ X$, is naturally isomorphic to the multiplicative group $\GG_m$.
 :::

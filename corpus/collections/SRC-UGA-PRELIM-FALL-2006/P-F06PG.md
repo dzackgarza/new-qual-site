@@ -16,12 +16,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f, g: \mathbb{R} \to \mathbb{R}$ be continuous for all $x$.
 Using an $\varepsilon$-$\delta$ argument, show that $f(x)g(x)$ is continuous for all $x$.
 :::
 
-::: solution
+::: {.solution}
 Fix $a\in\mathbb R$ and let $\varepsilon>0$. Since $f$ is continuous at $a$, choose $\delta_0>0$ such that
 \[
 |x-a|<\delta_0\Longrightarrow |f(x)-f(a)|<1.

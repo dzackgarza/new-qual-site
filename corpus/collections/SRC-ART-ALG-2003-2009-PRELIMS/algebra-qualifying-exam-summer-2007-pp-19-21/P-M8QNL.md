@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group with center $Z(G)$.
 Show that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 :::

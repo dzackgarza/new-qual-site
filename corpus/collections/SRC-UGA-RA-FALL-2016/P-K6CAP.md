@@ -29,13 +29,13 @@ Let $f, g \in L^2(\RR)$. Show that
 \]
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Cauchy Schwarz: $\norm{fg}_1 \leq \norm{f}_1 \norm{g}_1$.
 - Small tails in $L^p$.
 :::
 
-::: solution
+::: {.solution}
 
 Let
 \[

@@ -15,7 +15,7 @@ audit:
   note: Checked against Basic facts, item 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Define each of the following for an analytic function:
 
 1. a pole;

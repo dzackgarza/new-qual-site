@@ -15,7 +15,7 @@ audit:
   note: Checked against Variational Principle, Problem 13, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the functional $S [ \psi , \psi ^ { \dagger } ] = \int _ { - \infty } ^ { \infty } d x \psi ^ { \dagger } ( E - \hat { H } ) \psi$ , where
 
 $$

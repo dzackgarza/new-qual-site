@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f:[a,b]\to\mathbb{R}$ is continuous, $f\geq 0$ on $[a,b]$, and put $M=\sup\{f(x):x\in[a,b]\}$.
 Prove that $$\lim_{p\to\infty}\left(\int_a^b f(x)^p\,dx\right)^{1/p}=M.$$
 :::

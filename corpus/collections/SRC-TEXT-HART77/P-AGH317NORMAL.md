@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A variety $Y$ is **normal at a point** $P \in Y$ if $\mco_P$ is an integrally closed ring, and $Y$ is **normal** if it is normal at every point.
 
 1. Show that every conic in $\PP^2$ is normal.

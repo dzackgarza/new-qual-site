@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 33, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Normal numbers
 
 Let $x \in [ 0 , 1 )$ . Consider the infinite decimal notation for x:

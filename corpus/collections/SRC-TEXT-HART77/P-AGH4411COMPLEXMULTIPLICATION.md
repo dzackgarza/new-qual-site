@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an elliptic curve over $\CC$, defined by the elliptic functions with periods $1, \tau$.
 Let $R$ be the ring of endomorphisms of $X$.
 

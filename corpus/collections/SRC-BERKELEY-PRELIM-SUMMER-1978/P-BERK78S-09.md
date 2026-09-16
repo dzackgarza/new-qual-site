@@ -16,7 +16,7 @@ audit:
   note: The retained PDF was checked directly. Parts 1 and 2 are false as printed for an arbitrary metric space; closed subsets need not contain nearest points. The card preserves the source statement rather than silently adding a properness or compactness hypothesis.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $X,Y$ be nonempty subsets of a metric space $M$, and define
 \[
 d(X,Y)=\inf\{d(x,y):x\in X,\ y\in Y\}.

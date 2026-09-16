@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S$ be a scheme, let $X$ be a reduced scheme over $S$, and let $Y$ be a separated scheme over $S$.
 Let $f$ and $g$ be two $S\dash$morphisms from $X$ to $Y$ which agree on an open dense subset of $X$.
 Show that $f = g$.

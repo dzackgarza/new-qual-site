@@ -25,13 +25,13 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove that $\ell^\infty$ (the space of all bounded sequences of complex numbers with the sup norm) is not separable.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Construct an uncountable separated family.
-::: proof
+::: {.proof}
 For each subset $A\subseteq\mathbb N$, let
 \[
 x^A=(x^A_n)_{n\ge1},
@@ -56,7 +56,7 @@ is an uncountable $1$-separated subset of $\ell^\infty$.
 :::
 
 <1>2. A separable metric space cannot contain such a family.
-::: proof
+::: {.proof}
 Suppose $\ell^\infty$ were separable, and let $D$ be a countable dense subset. The open balls
 \[
 B(x^A,1/3),

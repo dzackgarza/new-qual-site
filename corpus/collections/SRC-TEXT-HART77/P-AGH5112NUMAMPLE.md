@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $D$ is an ample divisor on the surface $X$, and $D^{\prime} \equiv D$, then $D^{\prime}$ is also ample.
 Give an example to show, however, that if $D$ is very ample, $D^{\prime}$ need not be very ample.
 :::

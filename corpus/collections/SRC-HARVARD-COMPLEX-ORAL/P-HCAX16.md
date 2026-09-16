@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $u$ be a continuous real-valued function on a region $\Omega$.
 Show that if $u$ has the mean-value property, then $u$ is harmonic.
 :::
 
-::: solution
+::: {.solution}
 Fix a closed disk $\overline{D(a,R)}\subset\Omega$. Let $\varphi_\varepsilon$ be a smooth nonnegative radial mollifier supported in $D(0,\varepsilon)$, where $0<\varepsilon<R$. For $z\in D(a,R-\varepsilon)$, write $\varphi_\varepsilon(w)=\psi_\varepsilon(|w|)$. Polar coordinates and the mean-value property give
 \[
 (u*\varphi_\varepsilon)(z)

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a rational function on the surface $X$.
 Show that it is possible to "resolve the singularities of $f$" in the following sense: there is a birational morphism $g: X^{\prime} \rightarrow X$ so that $f$ induces a morphism of $X^{\prime}$ to $\PP^1$.
 

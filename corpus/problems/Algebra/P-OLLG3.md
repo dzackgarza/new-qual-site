@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_{m\times n}(F)$ and $b\in F^m$. Show that applying the same sequence of elementary row operations to $A$ and $b$ does not change the solution set of
 \[
 Ax=b.

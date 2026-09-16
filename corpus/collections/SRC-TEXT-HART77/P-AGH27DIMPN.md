@@ -16,13 +16,13 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Show that $\dim \PP^n = n$.
 
 2. If $Y \subseteq \PP^n$ is a quasi-projective variety, show that $\dim Y = \dim \bar{Y}$.
 :::
 
-::: solution
+::: {.solution}
 **Part 1.** By the previous exercise, $\dim S(\PP^n) = \dim \PP^n + 1$, and
 \[
 \dim S(\PP^n) = \trdeg_k k[x_0,\ldots,x_n] = n+1 ,

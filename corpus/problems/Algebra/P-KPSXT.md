@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What is the definition of a **flat module** over a ring $R$?
 (2) Give standard examples of flat modules, including an example of a flat module that is not projective/free, and an example of a non-flat module.
 :::
 
-::: solution
+::: {.solution}
 A right $R$-module $M$ is **flat** if the functor
 \[
 -\otimes_R M

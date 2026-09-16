@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Let $(X, \mathcal{M}, \mu)$ be a finite measure space.
 Suppose that $f_n \in L^1(d\mu)$ is a sequence of functions with the property that for every $\epsilon > 0$ there exists a $\delta > 0$ such that for all $E \in \mathcal{M}$:
 $$
@@ -34,9 +34,9 @@ Suppose in addition that there exists $f$ with $f_n \to f$ $\mu$-a.e. Show that 
 (b) Give a simple example to show that if one drops the finite measure assumption but keeps all the other hypotheses above, the conclusion can fail.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The limit inherits the small-set integral bound.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$. By hypothesis there is $\delta>0$ such that
 \[
 \mu(E)<\delta
@@ -59,7 +59,7 @@ for every $n$.
 :::
 
 <1>2. Use Egorov's theorem away from a small exceptional set.
-::: proof
+::: {.proof}
 Let $\eta>0$. Apply Step 1 with $\varepsilon=\eta/4$ and obtain the corresponding $\delta>0$. Since $\mu(X)<\infty$ and $f_n\to f$ almost everywhere, Egorov's theorem gives a measurable set $E\subseteq X$ such that
 \[
 \mu(E)<\delta
@@ -90,7 +90,7 @@ In particular, $f\in L^1(d\mu)$.
 :::
 
 <1>3. Give a counterexample on an infinite-measure space.
-::: proof
+::: {.proof}
 Take $X=\mathbb R$ with Lebesgue measure and
 \[
 f_n=\mathbf1_{[n,n+1]}.

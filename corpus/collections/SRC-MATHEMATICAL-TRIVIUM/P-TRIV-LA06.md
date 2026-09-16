@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let A be a non-degenerate matrix.
 Show that log det $A = \operatorname { T r } \log A$
 :::

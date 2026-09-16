@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Let $\Omega \subseteq \mathbb{C}$ be a connected open region, and let $f: \Omega \to \mathbb{C}$ be a holomorphic function.
 Suppose that for every point $z_0 \in \Omega$, at least one coefficient in the Taylor series expansion:
 $$f(z) = \sum_{n=0}^\infty c_n(z_0) (z - z_0)^n$$
@@ -29,7 +29,7 @@ is zero (i.e. for every $z_0 \in \Omega$, there exists some $n \in \mathbb{N}$ s
 Prove that $f$ is a polynomial.
 :::
 
-::: solution
+::: {.solution}
 For $n\ge0$, set
 \[
 E_n=\{z\in\Omega:f^{(n)}(z)=0\}.

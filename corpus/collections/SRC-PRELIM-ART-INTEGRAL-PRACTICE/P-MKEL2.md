@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{dx}{e^x+e^{-x}},
@@ -34,7 +34,7 @@ and, on the real domain $x>0$,
 \]
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 \frac1{e^x+e^{-x}}=\frac{e^x}{1+e^{2x}},

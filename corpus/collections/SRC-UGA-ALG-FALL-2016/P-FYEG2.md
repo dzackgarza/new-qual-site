@@ -24,7 +24,7 @@ D_{2m} = \gens{\sigma, \tau \suchthat \sigma^m = 1 = \tau^2, \tau \sigma = \sigm
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Suppose $G = \gens{ a, b}$ with $a^2 = b^2 = e$, satisfying some unknown relations.

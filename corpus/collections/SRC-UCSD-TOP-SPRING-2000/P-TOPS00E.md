@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that any continuous map $f : S^2 \times S^2 \to \mathbb{CP}^2$ has even degree.
 :::
 

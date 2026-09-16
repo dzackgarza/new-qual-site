@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\Gamma$ be the group of rotations of the cube.
 
 1. Compute the Pólya enumerator of the action of $\Gamma$ on the edges of the cube.
@@ -28,7 +28,7 @@ Let $\Gamma$ be the group of rotations of the cube.
 3. Show that the polynomial you computed in part 1 is the Frobenius image of the character of a representation of $S_{12}$.
 :::
 
-::: solution
+::: {.solution}
 The rotation group $\Gamma$ of the cube has order $24$. We classify its elements by rotation axis and angle and record the induced cycle structure on the $12$ edges.
 
 - The identity contributes cycle type $1^{12}$.

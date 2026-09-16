@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A=(a_{ij})$ be a real $n\times n$ matrix with $a_{ii}\ge1$ for every $i$ and
 \[
 \sum_{i\ne j}a_{ij}^2<1.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 5, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $a > 0$ . Evaluate $\begin{array} { r } { \int _ { 0 } ^ { \infty } \frac { x ^ { 2 } } { ( x ^ { 2 } + a ^ { 2 } ) ^ { 2 } } d x } \end{array}$
 :::

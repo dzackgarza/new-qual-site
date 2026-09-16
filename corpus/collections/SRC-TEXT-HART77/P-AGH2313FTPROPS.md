@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. A closed immersion is a morphism of finite type.
 
 b. A quasi-compact open immersion is of finite type.

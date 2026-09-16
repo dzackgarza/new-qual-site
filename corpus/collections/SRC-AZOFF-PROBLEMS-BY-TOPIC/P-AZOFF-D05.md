@@ -15,6 +15,6 @@ audit:
   note: Checked against Integrals and Cauchy’s theorem, Problem 5, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Prove that there is no sequence of polynomials that converge uniformly to the function $\textstyle f ( z ) = { \frac { 1 } { z } }$ on the unit circle.
 :::

@@ -19,7 +19,7 @@ audit:
   note: Quoted problems 23 and 34 and described the Figure 3 contour referenced by the hint, against Complex Analysis pages 15-18 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Compute $\displaystyle\int_0^\infty \frac{\log^2 x}{1 + x^2}\,\mathrm{d}x$ (**hint:** solve problem 23 first.
 Use the function $\frac{\log^3 x}{1 + x^2}$ integrated over some smart choice of contour);
 

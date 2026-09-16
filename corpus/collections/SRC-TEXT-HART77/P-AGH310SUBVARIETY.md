@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A subset of a topological space is **locally closed** if it is an open subset of its closure, equivalently if it is the intersection of an open set with a closed set.
 
 If $X$ is a quasi-affine or quasi-projective variety and $Y \subseteq X$ is an irreducible locally closed subset, then $Y$ is itself quasi-affine, respectively quasi-projective, by virtue of being a locally closed subset of the same affine or projective space.

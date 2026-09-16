@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a finite-dimensional cell complex with only even-dimensional cells.
 Prove that $H_*(X; \mathbb{Z})$ is torsion-free.
 :::

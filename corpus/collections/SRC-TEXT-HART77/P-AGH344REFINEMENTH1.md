@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 On an arbitrary topological space $X$ with an arbitrary abelian sheaf $\mcf$, Čech cohomology may not give the same result as the derived functor cohomology.
 But here we show that for $H^1$, there is an isomorphism if one takes the limit over all coverings.
 

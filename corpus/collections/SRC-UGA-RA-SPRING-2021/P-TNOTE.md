@@ -23,7 +23,7 @@ audit:
   note: Replaced the legacy pointwise-convergence argument, which incorrectly fixed one N uniformly over all epsilon, by the exact eventual-membership characterization for indicator functions.
 ---
 
-:::{.problem}
+::: {.problem}
 Let \( (X, \mathcal{M},\mu)  \) be a measure space and let $E_n \in \mathcal{M}$ be a measurable set for $n\geq 1$.
 Let $f_n \da \chi_{E_n}$ be the indicator function of the set $E_n$ and show that 
 
@@ -35,7 +35,7 @@ b. $f_n(x) \converges{n\to\infty}\to 1$ for almost every $x$ \( \iff \)
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. Uniform convergence is equivalent to eventual equality $E_n=X$.
 ::: {.proof}
 If $\chi_{E_n}\to1$ uniformly, take $\varepsilon=1/2$. For all sufficiently large $n$ and every $x\in X$,

@@ -15,6 +15,6 @@ audit:
   note: Checked against Basic facts, item 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Give three equivalent characterizations of analyticity of a complex-valued function $f$ on a domain $D\subset\mathbb C$.
 :::

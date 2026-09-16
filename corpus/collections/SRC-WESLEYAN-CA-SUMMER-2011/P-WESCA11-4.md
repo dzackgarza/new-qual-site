@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 If $A$ and $B$ are the radii of convergence of
 \[
 \sum_{n=0}^\infty a_nz^n

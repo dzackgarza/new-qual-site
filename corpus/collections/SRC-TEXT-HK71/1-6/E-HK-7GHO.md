@@ -29,7 +29,7 @@ Show that by means of a finite number of elementary row and/or column operations
 :::
 
 
-::: solution
+::: {.solution}
 Let $r=\operatorname{rank}A$. Elementary row operations preserve rank and correspond to multiplication on the left by invertible elementary matrices; elementary column operations correspond to multiplication on the right by invertible elementary matrices.
 
 Row-reduce $A$. After finitely many row operations, obtain a row-reduced echelon matrix with $r$ pivot columns. Using column interchanges, move those pivot columns to the first $r$ positions. The first $r$ columns are then the first $r$ standard basis vectors of $F^m$.

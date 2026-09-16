@@ -22,7 +22,7 @@ audit:
   note: Replaced two overlapping solutions with one structured proof.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f:\mathbb R^2\to\mathbb R$ has continuous partial derivatives at $(0,0)$. Prove that $f$ has directional derivatives in every direction at the origin.
 :::
 

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 State Holder's inequality for functions in $L^p$ spaces.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal M,\mu)$ be a measure space, let $1\le p,q\le\infty$ satisfy
 \[
 \frac1p+\frac1q=1,

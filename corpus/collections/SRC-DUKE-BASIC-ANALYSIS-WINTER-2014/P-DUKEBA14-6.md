@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(a_n)_{n\ge1}$ be a sequence of positive numbers such that
 \[
 \sum_{n=1}^\infty a_n
@@ -33,9 +33,9 @@ converges. Prove that
 converges.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Use the necessary condition for convergence of a series.
-::: proof
+::: {.proof}
 Since $\sum a_n$ converges,
 \[
 a_n\longrightarrow0.
@@ -48,7 +48,7 @@ Hence there exists $N$ such that
 :::
 
 <1>2. Compare the tails.
-::: proof
+::: {.proof}
 For $n\ge N$,
 \[
 a_n^2\le a_n.

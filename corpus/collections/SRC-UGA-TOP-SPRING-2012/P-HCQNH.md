@@ -30,12 +30,12 @@ audit:
   note: Reproved inclusion-exclusion from the finite Mayer--Vietoris exact sequence under an explicit finite-type hypothesis.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $U$ and $V$ are open subsets of a space $X$, with $X = U \cup V$.
 Find, with proof, a general formula relating the Euler characteristics of $X, U, V$, and $U \cap V$.
 :::
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space and let $U,V\subset X$ be open subsets with $X=U\cup V$.
 Prove that the Euler characteristics of $U$, $V$, $U\cap V$, and $X$ obey the relation
 \[

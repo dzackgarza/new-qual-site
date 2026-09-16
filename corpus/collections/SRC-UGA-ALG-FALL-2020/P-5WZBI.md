@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a. Using Sylow theory, show that every group of order $2p$ where $p$ is prime is not simple.
 
 b. Classify all groups of order $2p$ and justify your answer.
@@ -26,7 +26,7 @@ For the nonabelian group(s), give a presentation by generators and relations.
 :::
 
 
-::: solution
+::: {.solution}
 Let $|G|=2p$.
 
 First suppose $p$ is odd. If $n_p$ denotes the number of Sylow $p$-subgroups, then

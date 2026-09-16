@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field and let $I\subseteq k[x_1,\ldots,x_n]$ be an ideal.
 Fix a monomial order $<$ and let $G=\{g_1,\ldots,g_s\}$ be a Gröbner basis for $I$ with respect to $<$.
 

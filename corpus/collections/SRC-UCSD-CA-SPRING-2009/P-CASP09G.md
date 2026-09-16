@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\int_{-\infty}^{\infty} \left(\frac{\sin x}{x}\right)^2 e^{itx}\,dx$ for all real $t$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 s(x)=\frac{\sin x}{x},

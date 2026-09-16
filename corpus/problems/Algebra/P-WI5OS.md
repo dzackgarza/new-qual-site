@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that the center of $S_n$ for $n\geq 4$ (and in fact $n \ge 3$) is trivial.
 :::
 
-::: solution
+::: {.solution}
 Let $\sigma\in Z(S_n)$ with $n\ge3$. Suppose $\sigma\ne1$. Choose $a$ with
 \[
 \sigma(a)=b\ne a,

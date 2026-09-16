@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A homogeneous polynomial $f$ of degree $d$ in three variables $x, y, z$ has $\binom{d+2}{2}$ coefficients.
 Let these coefficients represent a point in $\PP^N$, where
 $$

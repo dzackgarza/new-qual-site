@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \AA^n$ be an affine variety, and identify $\AA^n$ with the open set $U_0 \subseteq \PP^n$ by the homeomorphism $\phi_0$.
 The closure $\bar{Y}$ of $Y$ in $\PP^n$ is called the **projective closure** of $Y$.
 
@@ -33,7 +33,7 @@ Write $S \da k[x_0,\ldots,x_n]$, and let
    Its projective closure $\bar{Y} \subseteq \PP^3$ is called the **twisted cubic curve**. Find generators for $I(Y)$ and for $I(\bar{Y})$, and use this example to show that if $f_1,\ldots,f_r$ generate $I(Y)$, then $\beta(f_1),\ldots,\beta(f_r)$ need not generate $I(\bar{Y})$.
 :::
 
-::: solution
+::: {.solution}
 **Part 1.** We want $I(\bar{Y}) = \gens{\beta(I(Y))}$.
 Write $H_i = Z(x_i) \subseteq \PP^n$ and embed $\AA^n \injects \PP^n$ along $U_0 \da \PP^n \sm H_0 = \ts{x_0 = 1}$, so that $(x_1,\ldots,x_n) \mapsto \tv{1 : x_1 : \cdots : x_n}$.
 

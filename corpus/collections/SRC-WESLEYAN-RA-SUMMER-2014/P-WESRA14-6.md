@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $\mu(\Omega)=1$ and $f,g$ are positive functions on $\Omega$ satisfying $fg\ge1$.
 Prove
 \[

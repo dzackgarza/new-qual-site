@@ -29,7 +29,7 @@ audit:
 If $F_1, F_2$ are free modules of a ring with the invariant dimension property, then $$\mathrm{rank}(F_1 \oplus F_2) = \mathrm{rank} F_1 + \mathrm{rank} F_2.$$
 :::
 
-::: solution
+::: {.solution}
 Let $X$ be a basis of $F_1$ and $Y$ a basis of $F_2$. Define
 \[
 B=\{(x,0):x\in X\}\cup\{(0,y):y\in Y\}
@@ -37,7 +37,7 @@ B=\{(x,0):x\in X\}\cup\{(0,y):y\in Y\}
 \]
 
 <1>1. The set $B$ spans $F_1\oplus F_2$.
-::: proof
+::: {.proof}
 Let $(u,v)\in F_1\oplus F_2$. Since $X$ and $Y$ are bases, there are finite
 expressions
 \[
@@ -55,7 +55,7 @@ so $(u,v)$ lies in the span of $B$.
 :::
 
 <1>2. The set $B$ is linearly independent.
-::: proof
+::: {.proof}
 Suppose
 \[
 \sum_{i=1}^m r_i(x_i,0)
@@ -77,7 +77,7 @@ Thus $B$ is linearly independent.
 \operatorname{rank}(F_1\oplus F_2)
 =\operatorname{rank}F_1+\operatorname{rank}F_2.
 \]
-::: proof
+::: {.proof}
 By <1>1 and <1>2, $B$ is a basis. The two subsets defining $B$ are disjoint and
 are in bijection with $X$ and $Y$, respectively, so
 \[

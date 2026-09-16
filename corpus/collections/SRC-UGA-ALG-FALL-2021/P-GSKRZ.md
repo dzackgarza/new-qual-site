@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group.
 An automorphism $\phi: G \rightarrow G$ is called *inner* if the automorphism is given by conjugation by a fixed group element $g$, i.e.,
 \[

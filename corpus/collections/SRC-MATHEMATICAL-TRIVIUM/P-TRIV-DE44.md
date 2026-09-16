@@ -15,7 +15,7 @@ audit:
   note: Checked against Differential Equations, Problem 44, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 A two dimensional rectangular slab (with the two sides of length a and b) has its edges fixed; at time $t = 0$ it has the profile
 
 $$

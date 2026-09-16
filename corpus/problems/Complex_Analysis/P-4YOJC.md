@@ -22,7 +22,7 @@ Prove that $f$ is a polynomial.
 > Hint: use the fact that $c_n n! = f^{(n)}(z_0)$ and use a countability argument.
 :::
 
-:::{.solution}
+::: {.solution}
 The claim is that there is some $N$ such that $\dd{^N f}{z^N} \equiv 0$, making $f$ a polynomial.
 If no derivative is identically zero, the following set is countable:
 \[

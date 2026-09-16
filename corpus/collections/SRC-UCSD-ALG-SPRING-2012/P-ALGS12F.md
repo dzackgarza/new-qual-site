@@ -24,7 +24,7 @@ audit:
   note: Computed the compositum degree and distinguished the three nonabelian groups of order twelve via Sylow-2 structure.
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field over $\mathbb{Q}$ of the polynomial $f(x) = (x^3-2)(x^2-3)$.
 
 (a) Show that $[K:\mathbb{Q}] = 12$.

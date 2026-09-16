@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find an everywhere regular differential $n\dash$form on $\AA^n$.
 :::

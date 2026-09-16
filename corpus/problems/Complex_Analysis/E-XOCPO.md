@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Laurent expansion that converges for $\abs{z} > 1$ of
 \[
 f(z) \da {1 \over e^{1-z}}
@@ -22,7 +22,7 @@ f(z) \da {1 \over e^{1-z}}
 
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 f(z) = e^{-(1-z)} = e^{z-1} = e\inv e^z = e\inv\sum_{k\geq 0} {z^k\over k!}
 .\]

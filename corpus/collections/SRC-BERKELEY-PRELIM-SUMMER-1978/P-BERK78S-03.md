@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a real $n\times n$ matrix.
 
 1. If the sum of the entries in each column of $A$ is $1$, prove that there is a nonzero column vector $x$ such that $Ax=x$.

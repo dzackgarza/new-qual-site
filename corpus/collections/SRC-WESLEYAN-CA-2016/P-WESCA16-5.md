@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md. Flash garbles part (b) typographically, but the question “How many conformal maps are there between these two sets? Prove it.” is explicit.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 \Omega_1=\{z:|z|<1,\ 0<\arg z<\alpha<2\pi\},

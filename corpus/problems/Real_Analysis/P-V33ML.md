@@ -20,7 +20,7 @@ Let $f:\\RR^n\\to\\RR$ be measurable. Show that
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 For every $x$, the nonnegative function $t\mapsto \mathbf{1}_{A_t}(x)$ is the indicator of
 $0\leq t<\abs{f(x)}$. Therefore
 \[

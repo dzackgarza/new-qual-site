@@ -29,11 +29,11 @@ audit:
 Show that if $f\in K[x]$ has degree $n$ and $F$ is a splitting field of $f$ over $K$, then $[F:K]$ divides $n!$.
 :::
 
-::: solution
+::: {.solution}
 We argue by strong induction on $n=\deg f$.
 
 <1>1. The claim holds for $n\le1$.
-::: proof
+::: {.proof}
 If $n=0$ or $1$, the polynomial already splits over $K$, so $F=K$ and
 $[F:K]=1$, which divides $n!$.
 :::
@@ -42,7 +42,7 @@ Assume $n\ge2$ and that the assertion holds for every polynomial of degree
 strictly smaller than $n$ over every field.
 
 <1>2. If $f$ is irreducible over $K$, then $[F:K]$ divides $n!$.
-::: proof
+::: {.proof}
 Choose a root $\alpha\in F$. Irreducibility gives
 \[
 [K(\alpha):K]=n.
@@ -70,7 +70,7 @@ The tower law therefore gives
 :::
 
 <1>3. If $f$ is reducible over $K$, then $[F:K]$ divides $n!$.
-::: proof
+::: {.proof}
 Write
 \[
 f(x)=g(x)h(x)
@@ -106,7 +106,7 @@ so $r!s!\mid n!$. Hence $[F:K]\mid n!$.
 :::
 
 <1>4. Therefore the assertion holds for every degree $n$.
-::: proof
+::: {.proof}
 Every polynomial is either irreducible or reducible. The two cases are covered
 by <1>2 and <1>3, completing the strong induction.
 :::

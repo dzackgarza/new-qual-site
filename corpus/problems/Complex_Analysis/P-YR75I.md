@@ -20,7 +20,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of entire functions where
 
 - $f_n \to g$ pointwise for some $g:\CC\to\CC$.

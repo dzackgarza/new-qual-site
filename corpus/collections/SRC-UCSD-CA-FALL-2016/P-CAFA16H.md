@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $u: \mathbb{C} \to \mathbb{R}$ be a harmonic function such that $\iint |u(x+iy)|^2 \, dx\,dy < \infty$.
 
 (a) Prove that $u(a) = \frac{1}{\pi r^2} \iint_{B_r(a)} u(x+iy)\,dx\,dy$ for every $a \in \mathbb{C}$ and $r > 0$.
@@ -21,7 +21,7 @@ Here $B_r(a) = \{z \in \mathbb{C} : |z - a| < r\}$.
 (b) Prove that $u(z) = 0$ for every $z \in \mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 For (a), the circle mean-value property gives, for every $0<s<r$,
 \[
 u(a)=\frac1{2\pi}\int_0^{2\pi}u(a+se^{i\theta})\,d\theta.

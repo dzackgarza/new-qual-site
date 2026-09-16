@@ -26,7 +26,7 @@ audit:
   note: Verified the one-vertex CW structure for the nonorientable genus-three surface and the attaching word a^2 b^2 c^2 before applying van Kampen.
 ---
 
-::: problem
+::: {.problem}
 Compute the fundamental group, using any technique you like, of $\RP^2 \#\RP^2 \#\RP^2$.
 :::
 

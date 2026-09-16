@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (1) Write down the character table of the symmetric group $S_4$.
 
 (2) For $\lambda \vdash 4$, let $S^\lambda$ denote the corresponding irreducible representation of $S_4$.
@@ -29,7 +29,7 @@ Find the decomposition of $S^{(3,1)} \otimes S^{(2,2)} \otimes S^{(2,1,1)}$ into
 (3) Describe the structure (as a product of matrix algebras over $\mathbb{C}$) of the algebra of $S_4$-endomorphisms $\operatorname{End}_{S_4}(S^{(3,1)} \otimes S^{(2,2)} \otimes S^{(2,1,1)})$.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes of \(S_4\) are indexed by the partitions of \(4\):
 \[
 (1^4),\quad (2,1,1),\quad (2,2),\quad (3,1),\quad (4),

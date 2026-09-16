@@ -30,9 +30,9 @@ audit:
 (b) Prove that in a commutative ring $R$ with identity 1, if $x$ is any nonunit, there exists a proper maximal ideal of $R$ containing $x$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. State Zorn's lemma.
-::: proof
+::: {.proof}
 Zorn's lemma says:
 
 > If a nonempty partially ordered set has the property that every chain has
@@ -44,7 +44,7 @@ element which is not strictly below any other element of the poset.
 :::
 
 <1>2. The principal ideal $(x)$ is proper.
-::: proof
+::: {.proof}
 If
 $$
 (x)=R,
@@ -61,7 +61,7 @@ $$
 :::
 
 <1>3. Set up the Zorn poset.
-::: proof
+::: {.proof}
 Let
 $$
 \mathcal P
@@ -75,7 +75,7 @@ so $\mathcal P$ is nonempty.
 :::
 
 <1>4. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
-::: proof
+::: {.proof}
 Let
 $$
 \mathcal C\subseteq\mathcal P
@@ -104,7 +104,7 @@ and $J$ is an upper bound for the chain.
 :::
 
 <1>5. Apply Zorn's lemma and prove the maximal element is a maximal ideal of $R$.
-::: proof
+::: {.proof}
 By steps <1>3--<1>4 and Zorn's lemma, $\mathcal P$ has a maximal element
 $M$. Then
 $$

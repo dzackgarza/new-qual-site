@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What does the constant term of $P_X(r)$ represent?
 :::

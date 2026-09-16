@@ -16,6 +16,6 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R^2\to\mathbb R$ be continuously differentiable. Prove that there exists a continuous one-to-one map $g:[0,1]\to\mathbb R^2$ such that $f\circ g$ is constant.
 :::

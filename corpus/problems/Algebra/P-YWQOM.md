@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ have order $pqr$ with primes $p<q<r$. Show that $G$ has a normal Sylow subgroup. In particular, show that $G$ is not simple.
 :::
 
-::: solution
+::: {.solution}
 Let $n_r$ be the number of Sylow $r$-subgroups. Sylow gives
 \[
 n_r\mid pq,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S \da k[x_0,\ldots,x_n]$ and let $\mfa \subseteq S$ be a homogeneous ideal.
 Show that the following conditions are equivalent.
 
@@ -25,7 +25,7 @@ Show that the following conditions are equivalent.
 3. $\mfa \supseteq S_d$ for some $d > 0$.
 :::
 
-::: solution
+::: {.solution}
 Write $J$ for the ideal $\mfa$, write $V_p(J) \subseteq \PP^n$ for the projective vanishing locus, and write $V_a(J) = C(V_p(J)) \subseteq \AA^{n+1}$ for the corresponding affine locus in the cone.
 
 **$(1) \iff (2)$.** The cone over a projective set is

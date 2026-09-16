@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f(z) \sum_{k\in \ZZ} c_k (z-z_0)^k$, then 
 \[
 c_k = {1\over 2\pi i}\int_\gamma {f(z) \over (z-z_0)^{n+1}}\dz
@@ -35,7 +35,7 @@ f(z)=\sum_{j=-\infty}^{\infty}\left(\frac{1}{2 \pi i} \oint_{\left|w-z_{0}\right
 
 :::
 
-::: solution
+::: {.solution}
 The statement has three notation errors: the opening display is missing an
 equality sign, the coefficient formula uses $n$ where it must use $k$, and the
 radii are written with $a_{\pm n}$ instead of the coefficients $c_{\pm n}$.

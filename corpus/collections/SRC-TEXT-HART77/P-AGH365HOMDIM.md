@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme, and assume that $\Coh(X)$ has enough locally frees (Ex.
 6.4). Then for any coherent sheaf $\mcf$ we define the **homological dimension** of $\mcf$, denoted $\operatorname{hd}(\mcf)$, to be the least length of a locally free resolution of $\mcf$ (or $+\infty$ if there is no finite one).
 Show:

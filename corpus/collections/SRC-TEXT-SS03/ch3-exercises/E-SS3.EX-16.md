@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 16. Suppose f and g are holomorphic in a region containing the disc $| z | \leq 1$ Suppose that f has a simple zero at $z = 0$ and vanishes nowhere else in $| z | \leq 1$ Let
 
 $$
@@ -29,7 +29,7 @@ Show that if ǫ is suficiently small, then
 (b) $\mathrm { i f } \ z _ { \epsilon }$ is this zero, the mapping $\epsilon \mapsto z _ { \epsilon }$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ has a simple zero at $0$ and no other zero on $|z|\le1$, choose $0<r<1$ so small that $0$ is the only zero of $f$ in $|z|\le r$. Since $f$ is nonzero on $|z|=r$, set
 \[
 m=\min_{|z|=r}|f(z)|>0,

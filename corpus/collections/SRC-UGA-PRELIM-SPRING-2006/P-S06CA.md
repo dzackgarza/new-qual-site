@@ -16,14 +16,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 i) State what it means for a sequence $\{a_n\}$ of real numbers to be Cauchy.
 
 ii) Prove that every convergent sequence is Cauchy.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. A sequence $(a_n)$ is Cauchy if for every $\varepsilon>0$ there exists $N\in\mathbb N$ such that
 \[
 m,n\ge N\implies |a_m-a_n|<\varepsilon.

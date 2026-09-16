@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define differentials.
 
 Are differentials quasicoherent?

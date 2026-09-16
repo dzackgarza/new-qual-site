@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme, and let $P$ be a closed point of $X$.
 Show that the following conditions are equivalent:
 

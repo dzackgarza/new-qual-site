@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the Galois group of $x^2 - 2$?
 Why is $x^2 - 2$ irreducible?
 :::

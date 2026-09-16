@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $X$ and $Y$ be schemes over another scheme $S$.
    Use (8.10) and (8.11) to show that
 \[

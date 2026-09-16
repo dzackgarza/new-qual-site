@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\ts{\mcf_i}$ be an inverse system of sheaves on $X$.
 Show that the presheaf $U \mapsto \varprojlim \mcf_i(U)$ is a sheaf.
 It is called the **inverse limit** of the system and is denoted $\varprojlim \mcf_i$.

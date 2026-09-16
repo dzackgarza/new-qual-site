@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is an odd prime.
 Let $E$ be a splitting field of $x^p - 2x - 1$ over $\mathbb{F}_p$.
 Prove that

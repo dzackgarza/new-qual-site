@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains one or more nonprinting control bytes at this source position; they were removed from the authored card as nonsemantic extraction artifacts.
 ---
 
-::: problem
+::: {.problem}
 In nuclear physics, the intensity of a particle source is measured with Geiger-Muller counters.
 A particle entering the counter generates a discharge in it that lasts time τ , during which the counter does not record any particles entering the counter.
 Find the probability that the counter will count all particles entering it during time t if the following conditions are fulfilled:

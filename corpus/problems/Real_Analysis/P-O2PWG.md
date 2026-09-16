@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that every compact set is closed and bounded.
 
 - Show that if a subset of a metric space is complete and totally bounded, then it is compact.

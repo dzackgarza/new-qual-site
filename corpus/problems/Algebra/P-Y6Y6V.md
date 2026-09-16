@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Does diagonalizable imply invertible? Does invertible imply diagonalizable?
 :::
 
-::: solution
+::: {.solution}
 Neither implication holds.
 
 A diagonalizable matrix need not be invertible. For example,

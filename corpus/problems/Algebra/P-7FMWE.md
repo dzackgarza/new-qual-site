@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is the discriminant of a polynomial always a polynomial in the coefficients?
 What does this have to do with symmetric polynomials?
 :::

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f,g_1,g_2,\dots$ be entire. Suppose
 \[
 |g_n^{(k)}(0)|\le|f^{(k)}(0)|

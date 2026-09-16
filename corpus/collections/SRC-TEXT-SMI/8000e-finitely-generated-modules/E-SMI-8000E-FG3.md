@@ -40,9 +40,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Determine the $2$-primary part in part (a).
-::: proof
+::: {.proof}
 Let $G_{(2)}$ be the $2$-primary component. Since its order is $2^3$, its
 cyclic decomposition corresponds to a partition of $3$.
 
@@ -74,7 +74,7 @@ $$
 :::
 
 <1>2. Determine the $3$-primary part in part (a).
-::: proof
+::: {.proof}
 Let $G_{(3)}$ be the $3$-primary component. Its order is $3^4$. As above,
 $$
 \dim_{\mathbb F_3}\ker(3)
@@ -98,7 +98,7 @@ $$
 :::
 
 <1>3. Conclude part (a).
-::: proof
+::: {.proof}
 Primary decomposition gives the unique group
 $$
 \boxed{
@@ -111,7 +111,7 @@ cyclic factor.
 :::
 
 <1>4. Determine the Jordan blocks at eigenvalue $2$ in part (b).
-::: proof
+::: {.proof}
 Put
 $$
 N_2=A-2I
@@ -144,7 +144,7 @@ $$
 :::
 
 <1>5. Determine the Jordan blocks at eigenvalue $3$ in part (b).
-::: proof
+::: {.proof}
 On the generalized $3$-eigenspace, the total dimension is $4$. The hypotheses
 say there are two Jordan blocks and
 $$
@@ -158,7 +158,7 @@ $$
 :::
 
 <1>6. Conclude part (b).
-::: proof
+::: {.proof}
 The unique Jordan matrix is
 $$
 \boxed{
@@ -167,7 +167,7 @@ $$
 :::
 
 <1>7. Classify the groups in part (c).
-::: proof
+::: {.proof}
 For a finite abelian group, the positive generator of its annihilator ideal is
 its exponent. Thus the hypothesis says that $G$ has order and exponent both
 $$
@@ -195,7 +195,7 @@ $$
 :::
 
 <1>8. Classify the matrices in part (d).
-::: proof
+::: {.proof}
 The minimal polynomial
 $$
 (t-2)^3(t-3)^4

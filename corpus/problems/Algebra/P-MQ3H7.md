@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Does every complex matrix $A$ admit a complex matrix square root $B$ with
 \[
 B^2=A?

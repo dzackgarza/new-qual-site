@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $\gamma$ be a smooth curve joining two distinct points $a, b\in \CC$.
 
 Prove that the function

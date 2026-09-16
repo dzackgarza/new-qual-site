@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For each $N \in \mathbb{R}$ define in $\mathbb{R}^n$ the measures $d\mu_N := (1 + |x|)^N\,dx$ and, for each $1 \leq p < \infty$, the norms
 $$
 \|f\|_{p,N} := \|f\|_{L^p(\mathbb{R}^n, d\mu_N)} = \left(\int_{\mathbb{R}^n} |f(x)|^p (1 + |x|)^N\,dx\right)^{1/p}.
@@ -40,9 +40,9 @@ the estimate $\|f\|_{r,N} \leq C_{t,r,p} \|f\|_{p,N_t}$ holds.
 Hint: For part (a), observe that $1 = (1 + |x|)^M / (1 + |x|)^M$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Apply Hölder with the weight split dictated by $N_t$.
-::: proof
+::: {.proof}
 Fix $1\le r<p<\infty$ and set
 \[
 q=\frac p r,
@@ -94,7 +94,7 @@ C_{t,r,p}:=I_t^{1/r-1/p}.}
 :::
 
 <1>2. Show that the constant tends to zero for fixed $r<p$.
-::: proof
+::: {.proof}
 For $t\ge1$,
 \[
 0\le(1+|x|)^{-n-t}\le(1+|x|)^{-n-1},
@@ -118,7 +118,7 @@ it follows that
 :::
 
 <1>3. Explain why the source's uniform quantifier cannot hold.
-::: proof
+::: {.proof}
 The source asks for a single $C_t$ valid for every $1\le r<p<\infty$ and also satisfying $C_t\to0$. This cannot hold.
 
 Indeed, fix $t>0$ and a bounded measurable set $E$ of positive finite measure. For fixed $r$ and $p\downarrow r$, one has

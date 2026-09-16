@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral, separated, regular, one-dimensional scheme of finite type over $k$, which is **not** proper over $k$.
 Then $X$ is affine.
 

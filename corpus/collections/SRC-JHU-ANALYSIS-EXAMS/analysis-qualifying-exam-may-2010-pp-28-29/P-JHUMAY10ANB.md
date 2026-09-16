@@ -37,7 +37,7 @@ where γ ranges over all simple closed smooth curves contained in $\mathbb { C }
 You do not need to give a proof for your answer to this problem, but show all your work.
 :::
 
-::: solution
+::: {.solution}
 Set
 $$
 A=-\pi e^\pi,\qquad B=-\pi(\pi+1)+i\pi^2.
@@ -49,7 +49,7 @@ $$
 
 <1>1. The two poles give the contributions $A$ and $B$ for positive winding number one.
 
-::: proof
+::: {.proof}
 Write $F(z)=e^{\pi z}/((z-1)(z-i)^2)$. At the simple
 pole $1$,
 $$
@@ -73,7 +73,7 @@ These are the only poles [@SS03].
 
 <1>2. A simple closed curve allows exactly the displayed residue combinations.
 
-::: proof
+::: {.proof}
 A simple closed smooth curve has index zero at every
 point of its unbounded complementary component and a
 common index $\varepsilon\in\{1,-1\}$ at every point
@@ -92,7 +92,7 @@ Thus no other combination is allowed.
 
 <1>3. Every listed value is attained.
 
-::: proof
+::: {.proof}
 The circle $|z|=1/4$ encloses neither pole. The circles
 $|z-1|=1/4$ and $|z-i|=1/4$ enclose exactly $1$ and
 $i$, respectively, because their distance is $\sqrt2$.

@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be bounded and analytic in $\CC$.
 Let $a\neq b$ be any fixed complex numbers.
 Show that the following limit exists:
@@ -27,7 +27,7 @@ Show that the following limit exists:
 Use this to show that $f(z)$ must be constant.
 :::
 
-::: solution
+::: {.solution}
 Let $|f(z)|\le M$ on $\mathbb C$. For $R>2\max\{|a|,|b|\}$,
 \[
 \left|

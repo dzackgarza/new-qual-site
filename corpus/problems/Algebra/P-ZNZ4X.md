@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field and $R=k[x_1,\ldots,x_n]$.
 Define the "radical" of an ideal $I\trianglelefteq R$ and prove it is an ideal.
 Prove that the ideal of all polynomials vanishing on the zero set of $I$ is $\sqrt{I}$.

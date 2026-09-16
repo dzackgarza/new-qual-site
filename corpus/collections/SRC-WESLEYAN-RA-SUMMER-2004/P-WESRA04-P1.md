@@ -21,12 +21,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f,g:X\to\mathbb R$ be measurable functions on a measurable space $(X,\mathcal B)$.
 Prove that $f+g$ is measurable.
 :::
 
-::: solution
+::: {.solution}
 The map
 \[
 F:X\to\mathbb R^2,

@@ -35,7 +35,7 @@ audit:
   note: "Spring 2014 problem 1 is the only occurrence of this statement in the JHU packet; merged the duplicate card P-8XT02 and kept its tail-set proof as a second solution."
 ---
 
-::: problem
+::: {.problem}
 Prove the following without using Egoroff's theorem. Let
 $(f_k)$ be measurable functions on a Lebesgue-measurable set
 $E\subset\mathbb R^d$, with $f_k\to f$ almost everywhere
@@ -46,9 +46,9 @@ $m(E\setminus A_\varepsilon)<\varepsilon$ such that
 $f_k\to f$ uniformly on $A_\varepsilon$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Control the tail suprema in $L^1$.
-::: proof
+::: {.proof}
 Choose a measurable null set $Z\subset E$ outside which
 the given convergence holds and $g$ is finite. On
 $E_0=E\setminus Z$, passage to the limit gives $|f|\leq g$.
@@ -74,7 +74,7 @@ Since $g\in L^1(E)$, dominated convergence gives [@Fol13]
 :::
 
 <1>2. Remove a set of arbitrarily small measure on which the tail bounds are bad.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$. For each $j\ge1$, choose $N_j$ increasing so that
 \[
 \int_E h_{N_j}\,dm<\frac{\varepsilon}{2^{j+2}j}.
@@ -105,7 +105,7 @@ Thus $f_k\to f$ uniformly on $E\setminus B$.
 :::
 
 <1>3. Replace the measurable good set by a closed good set.
-::: proof
+::: {.proof}
 Put $F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
 For each positive integer $j$, the measurable set
 $H_j=H\cap[-j,j]^d$ has finite measure. Outer regularity
@@ -139,7 +139,7 @@ such that $f_k\to f$ uniformly on $A_\varepsilon$, as required.
 ::: {.solution}
 <1>1. At each accuracy level, the bad tail sets have finite measure decreasing to zero.
 
-::: proof
+::: {.proof}
 Choose a measurable null set $Z\subset E$ outside which
 $f_k(x)\to f(x)$ and $g$ is finite. Put $E_0=E\setminus Z$.
 On $E_0$, the bound on $f_k$ implies $|f|\leq g$.
@@ -173,7 +173,7 @@ m(B_{N,j})\longrightarrow0
 
 <1>2. Removing a set of small measure gives uniform convergence.
 
-::: proof
+::: {.proof}
 Choose $N_j$ so that
 \[
 m(B_{N_j,j})<\frac{\epsilon}{2^{j+2}}.
@@ -195,7 +195,7 @@ On $E\setminus B$, convergence is uniform. Indeed, given $\eta>0$, choose $j$ wi
 
 <1>3. The good set contains a closed subset with arbitrarily small measure loss.
 
-::: proof
+::: {.proof}
 Let $\mathbb R^d$ be the ambient Euclidean space, and put
 $F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
 For each positive integer $j$, use finite-measure outer

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A topological space is **quasi-compact** if every open cover has a finite subcover.
 
 a. Show that a topological space is noetherian if and only if every open subset is quasi-compact.

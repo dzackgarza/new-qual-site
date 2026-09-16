@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f: [0, 1] \to \RR$ be continuous.
 Show that
 \[
@@ -33,9 +33,9 @@ Show that
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the upper bound.
-::: proof
+::: {.proof}
 For every $g\in L^1([0,1])$ with $\|g\|_1\le1$,
 \[
 \|fg\|_1
@@ -50,7 +50,7 @@ Hence
 :::
 
 <1>2. Prove the reverse inequality.
-::: proof
+::: {.proof}
 Since $f$ is continuous on the compact interval $[0,1]$, there is $x_0\in[0,1]$ such that
 \[
 |f(x_0)|=\|f\|_\infty.

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 1. Show that, up to isomorphism, there is exactly one noncyclic group $G$ of order $4$.
 2. Show that
    \[

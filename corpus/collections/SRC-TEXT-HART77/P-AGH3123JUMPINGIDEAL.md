@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X_1 \subseteq \PP_k^4$ be the **rational normal quartic curve**, the $4\dash$uple embedding of $\PP^1$ in $\PP^4$. Let $X_0 \subseteq \PP_k^3$ be a nonsingular rational quartic curve, such as the one in (I, Ex. 3.18b).
 
 Use (9.8.3) to construct a flat family $\ts{X_t}$ of curves in $\PP^4$, parametrized by $T = \AA^1$, with the given fibres $X_1$ and $X_0$ for $t = 1$ and $t = 0$.

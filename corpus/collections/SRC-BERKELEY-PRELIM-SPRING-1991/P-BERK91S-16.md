@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a linear transformation on an $n$-dimensional complex vector space with characteristic polynomial
 \[
 (x-1)^n.

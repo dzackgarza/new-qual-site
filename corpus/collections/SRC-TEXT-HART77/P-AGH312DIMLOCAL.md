@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $P$ is a point on a variety $X$, show that $\dim \mco_P = \dim X$.
 
 *Hint:* reduce to the affine case and use (3.2c).

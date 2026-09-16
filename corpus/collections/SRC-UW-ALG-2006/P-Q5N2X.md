@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the field $\mathbb Q(z)$ of rational functions in a variable $z$ with coeffiecients in the rational field $\mathbb Q$.
 Let $n$ be a positive integer.
 Consider the polynomial $x^n-z\in K[x]$.

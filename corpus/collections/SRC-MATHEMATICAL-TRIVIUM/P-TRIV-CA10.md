@@ -19,7 +19,7 @@ audit:
   note: Added a remark that Complex Analysis Problem 10 on page 14 of the source PDF does not state the center of the disk.
 ---
 
-::: problem
+::: {.problem}
 Take a disk of radius $R$ with a branch cut on the negative real axis; what does $\log z$ map this onto?
 Where is the origin mapped onto?
 :::

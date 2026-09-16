@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $A\subset\mathbb R$ be Lebesgue measurable.
 Prove that
 \[

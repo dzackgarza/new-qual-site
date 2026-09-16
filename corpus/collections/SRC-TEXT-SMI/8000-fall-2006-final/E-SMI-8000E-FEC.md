@@ -32,7 +32,7 @@ audit:
 (And prove one of them.)
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 |G|=p^a m,
@@ -40,7 +40,7 @@ $$
 $$
 
 <1>1. State the three Sylow assertions.
-::: proof
+::: {.proof}
 The **Sylow theorems** state:
 
 1. **Existence.** $G$ has a subgroup of order $p^a$.
@@ -57,7 +57,7 @@ The **Sylow theorems** state:
 :::
 
 <1>2. State the Jordan--Hoelder theorem.
-::: proof
+::: {.proof}
 A **composition series** of a finite group is a subnormal series
 $$
 G=G_0\trianglerighteq G_1\trianglerighteq\cdots
@@ -78,7 +78,7 @@ factors is an invariant of the group.
 We now prove the Sylow theorems.
 
 <1>3. Prove existence of a subgroup of order $p^a$.
-::: proof
+::: {.proof}
 Let $X$ be the set of all subsets of $G$ having exactly $p^a$ elements. The
 group $G$ acts on $X$ by left translation.
 
@@ -128,7 +128,7 @@ Thus $H$ is a Sylow $p$-subgroup.
 :::
 
 <1>4. Prove containment of arbitrary $p$-subgroups and conjugacy of Sylow subgroups.
-::: proof
+::: {.proof}
 Fix a Sylow $p$-subgroup $P$ supplied by step <1>3, and let $Q\le G$ be any
 $p$-subgroup. Let $Q$ act by left multiplication on the set of left cosets
 $$
@@ -160,7 +160,7 @@ the containment is equality. Hence all Sylow $p$-subgroups are conjugate.
 :::
 
 <1>5. Prove the congruence and divisibility conditions on the number of Sylow subgroups.
-::: proof
+::: {.proof}
 Let $\mathcal S$ be the set of Sylow $p$-subgroups and let $P\in\mathcal S$.
 The group $P$ acts on $\mathcal S$ by conjugation.
 

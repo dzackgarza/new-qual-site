@@ -24,7 +24,7 @@ Show that every second countable space is first countable.
 The original exercise asked for the converse, which is false: an uncountable discrete space is first countable but not second countable.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every second-countable space $X$ is first-countable.
 
 <1>1. Setting and hypothesis:

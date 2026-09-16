@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_n(F)$, where $F$ has characteristic $0$. Suppose
 \[
 \operatorname{tr}(A^k)=0

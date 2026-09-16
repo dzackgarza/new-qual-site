@@ -19,12 +19,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a subgroup of a finite group $G$, and let $(\rho, W)$ be a representation of $H$ over $\mathbb{C}$.
 How is the induced representation $\operatorname{Ind}_H^G(W)$ defined? State its dimension, character formula (Frobenius formula), and Frobenius Reciprocity.
 :::
 
-::: solution
+::: {.solution}
 Regard $W$ as a left $\mathbb C[H]$-module. The induced representation is
 \[
 \operatorname{Ind}_H^G W

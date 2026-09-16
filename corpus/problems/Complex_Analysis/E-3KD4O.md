@@ -24,7 +24,7 @@ audit:
 Show that if $f$ is once complex differentiable at each point of $\Omega$, then $f$ is holomorphic.
 :::
 
-::: solution
+::: {.solution}
 It is enough to prove Goursat's theorem: complex differentiability at every point already implies the Cauchy integral theorem, without assuming continuity of $f'$.
 
 <1>1. Let $T\subset\Omega$ be a closed triangle and set

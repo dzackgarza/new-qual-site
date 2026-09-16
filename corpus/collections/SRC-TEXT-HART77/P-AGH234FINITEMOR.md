@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a morphism $f: X \to Y$ is finite if and only if for every open affine subset $V = \Spec B$ of $Y$, the preimage $f\inv(V)$ is affine, equal to $\Spec A$, where $A$ is a finite $B$-module.
 :::

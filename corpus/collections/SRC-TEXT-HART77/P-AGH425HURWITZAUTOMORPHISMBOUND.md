@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the theorem of Hurwitz that a curve $X$ of genus $g \geq 2$ over a field of characteristic 0 has at most $84(g-1)$ automorphisms.
 
 We will see later (Ex.

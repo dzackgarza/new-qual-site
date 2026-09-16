@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be analytic on $\mathbb{D}$.
 Prove the following statements.
 
@@ -24,7 +24,7 @@ Prove the following statements.
 (b) If $|f(z)| < 1$ for all $z \in \mathbb{D}$ and $f(z)$ has two distinct fixed points, then $f(z) = z$.
 :::
 
-::: solution
+::: {.solution}
 (a) Since
 \[
 |f'(z)-f'(0)|<|f'(0)|,

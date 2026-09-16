@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Classify the prime elements of the Gaussian integers $\ZZ[i]$, up to multiplication by units.
 :::
 

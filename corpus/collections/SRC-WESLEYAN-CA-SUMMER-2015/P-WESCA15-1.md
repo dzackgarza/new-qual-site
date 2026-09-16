@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Classify each indicated isolated singularity as removable, a pole, or essential; for a pole give its order:
 
 1. $\displaystyle \frac{(e^z-1)^3}{z^6}$ at $z=0$;

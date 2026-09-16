@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Prove Wallis’s product formula
 
 $$
@@ -25,7 +25,7 @@ $$
 [Hint: Use the product formula for sin z at $z = \pi / 2 . ]$
 :::
 
-::: solution
+::: {.solution}
 The product formula for the sine function is
 \[
 \frac{\sin z}{z}=\prod_{n=1}^{\infty}\left(1-\frac{z^2}{\pi^2n^2}\right).

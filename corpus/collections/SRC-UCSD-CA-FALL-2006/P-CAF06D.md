@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume that $f$ is an entire function.
 Let $M(r) = \sup_{|z|=r} |f(z)|$.
 Assume that the discrete sequence $\{a_n\}$ are zeros of $f$, indexed so that
@@ -20,14 +20,14 @@ $|a_1|\le |a_2|\le\cdots$, and $f(0) = 1$.
 Show that $$k\log 2 \leq \log(M(2|a_k|)).$$
 :::
 
-::: remark
+::: {.remark}
 The Fall 2006 source does not state the ordering of $\{a_n\}$. The displayed
 inequality requires the standard convention that the zeros are indexed by
 nondecreasing modulus; without it, an arbitrary re-enumeration makes the claim
 false.
 :::
 
-::: solution
+::: {.solution}
 Jensen's formula for $f(0)=1$ gives, for every $R>0$ avoiding zeros on the
 circle,
 \[

@@ -32,7 +32,7 @@ Let $K(x)$ denote the field of rational functions in one variable $x$ over $K$, 
 Find a specific $u \in K(x)$ such that the fixed field of $G$ is $K(u)$, and find the minimal polynomial of $x$ over $K(u)$.
 :::
 
-::: solution
+::: {.solution}
 One may take
 $$
 \boxed{u=\frac{x^3-3x+1}{x^2-x}}.
@@ -45,7 +45,7 @@ All integers in these formulas are interpreted in $K$.
 
 <1>1. The automorphism $\sigma$ has order $3$.
 
-::: proof
+::: {.proof}
 Direct substitution gives
 $$
 \sigma(x)=\frac{x-1}{x},\qquad
@@ -64,7 +64,7 @@ In particular $x,\sigma(x),\sigma^2(x)$ are distinct.
 <1>2. The element $u$ is fixed by $G$, and $x$ satisfies
 the displayed cubic over $K(u)$.
 
-::: proof
+::: {.proof}
 The sum of the three iterates is fixed by $\sigma$, which
 cyclically permutes its summands. Combining the fractions gives
 $$
@@ -84,7 +84,7 @@ $[K(x):K(u)]\leq3$.
 <1>3. The fixed field is exactly $K(u)$, and the cubic is
 the minimal polynomial of $x$.
 
-::: proof
+::: {.proof}
 Put $E=K(x)^G$. Since $K(u)\subseteq E\subseteq K(x)$,
 step <1>2 makes $K(x)/E$ finite of degree at most $3$.
 Let $m(T)$ be the minimal polynomial of $x$ over $E$.

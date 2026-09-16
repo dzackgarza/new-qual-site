@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Let $\langle\cdot,\cdot\rangle$ denote the usual inner product on $\mathbb R^2$:
 \[
 \langle (x_1,y_1),(x_2,y_2)\rangle=x_1x_2+y_1y_2.

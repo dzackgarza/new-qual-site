@@ -34,14 +34,14 @@ $$
 If $P$ is a Sylow subgroup of $G$, prove that $N(N(P)) = N(P)$.
 :::
 
-::: solution
+::: {.solution}
 Write
 $$
 N=N_G(P).
 $$
 
 <1>1. The subgroup $P$ is the unique Sylow $p$-subgroup of $N$.
-::: proof
+::: {.proof}
 Because every element of $P$ normalizes $P$, one has
 $$
 P\le N.
@@ -60,7 +60,7 @@ order. Therefore $P$ is the unique Sylow $p$-subgroup of $N$.
 :::
 
 <1>2. Every element normalizing $N$ also normalizes $P$.
-::: proof
+::: {.proof}
 Let
 $$
 g\in N_G(N).
@@ -89,7 +89,7 @@ $$
 :::
 
 <1>3. Conclude equality.
-::: proof
+::: {.proof}
 Every subgroup normalizes itself, so
 $$
 N\subseteq N_G(N).

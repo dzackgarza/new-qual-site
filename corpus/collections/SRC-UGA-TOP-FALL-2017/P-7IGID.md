@@ -25,7 +25,7 @@ audit:
   note: Replaced the invalid free-product calculation for pi_2 with explicit two-sheeted coverings and an integral H_2 distinction.
 ---
 
-::: problem
+::: {.problem}
 Describe, as explicitly as you can, two different (non-homeomorphic) connected two-sheeted covering spaces of $\RP^2\vee\RP^3$, and prove that they are not homeomorphic.
 :::
 

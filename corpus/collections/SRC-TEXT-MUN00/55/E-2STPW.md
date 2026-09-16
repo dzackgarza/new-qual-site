@@ -21,7 +21,7 @@ audit:
 Show that if $h: S^1 \to S^1$ is nulhomotopic, then $h$ has a fixed point and $h$ maps some point $x$ to its antipode $-x$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every nullhomotopic continuous self-map $h: S^1 \to S^1$ must possess a fixed point ($h(x_0) = x_0$) and an antipodal point ($h(x_1) = -x_1$).
 
 <1>1. Degree of nullhomotopic maps:

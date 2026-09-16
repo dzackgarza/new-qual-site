@@ -33,7 +33,7 @@ $$
 tend to a limit? If so, what is the limit?
 :::
 
-::: solution
+::: {.solution}
 For each $j \ge 0$, let
 $$
 \nu_j(A):=|F^{-j}(A)| = |\{s\in[0,1]:F^j(s)\in A\}|.

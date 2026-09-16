@@ -24,7 +24,7 @@ audit:
   note: "Checked the complete Sylow statements, both Sylow counts for order 35, and the kernel and faithful-image cases for order 24."
 ---
 
-::: problem
+::: {.problem}
 (a) State Sylow's theorems.
 
 (b) Classify up to isomorphism the groups of order 35.
@@ -32,7 +32,7 @@ audit:
 (c) Show that there are no simple groups of order 24.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The Sylow theorems have the following form.
 
 Let $G$ be finite, let $p$ be prime, and write $|G|=p^am$ with
@@ -49,7 +49,7 @@ In particular, $P$ is normal exactly when $n_p=1$ [@DF04].
 <1>2. Every group of order $35$ is cyclic; hence $C_{35}$ is the
 unique isomorphism class.
 
-::: proof
+::: {.proof}
 Since $35=5\cdot7$, step <1>1 gives
 $$
 n_7\mid5,\quad n_7\equiv1\pmod7,
@@ -76,7 +76,7 @@ the required order.
 
 <1>3. Every group of order $24$ has a nontrivial proper normal subgroup.
 
-::: proof
+::: {.proof}
 Here $n_3$ divides $8$ and is $1$ modulo $3$. Of the divisors
 $1,2,4,8$, exactly $1$ and $4$ satisfy that congruence.
 If $n_3=1$, the unique subgroup of order $3$ is nontrivial,

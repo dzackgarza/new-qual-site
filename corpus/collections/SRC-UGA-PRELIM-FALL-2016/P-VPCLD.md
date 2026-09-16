@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find an invertible matrix $A$ and a diagonal matrix $B$ such that
 \[
 \begin{pmatrix}4&-6\\3&-5\end{pmatrix}=ABA^{-1}.
 \]
 :::
 
-::: solution
+::: {.solution}
 The eigenvalues are $1$ and $-2$.
 Corresponding eigenvectors are $(2,1)^t$ and $(1,1)^t$.
 Thus one can take

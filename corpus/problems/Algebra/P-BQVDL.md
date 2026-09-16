@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group, and let $H \le G$ be a subgroup of index $[G : H] = p$, where $p$ is the smallest prime dividing $|G|$.
 Prove that $H$ is a **normal** subgroup of $G$ ($H \trianglelefteq G$).
 :::
 
-::: solution
+::: {.solution}
 Let \(G\) act on the \(p\) left cosets of \(H\). This gives
 \[
 \rho:G\to S_p,

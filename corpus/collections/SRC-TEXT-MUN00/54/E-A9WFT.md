@@ -23,7 +23,7 @@ Consider the maps $g, h: S^1 \to S^1$ given by $g(z) = z^n$ and $h(z) = 1/z^n$.
 [Hint: Recall the equation $(\cos \theta + i \sin \theta)^n = \cos n\theta + i \sin n\theta$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the induced homomorphisms $g_*, h_*: \pi_1(S^1, 1) \to \pi_1(S^1, 1)$ for the power map $g(z) = z^n$ and reciprocal power map $h(z) = z^{-n}$.
 
 <1>1. Identification of $\pi_1(S^1, 1)$ with $\mathbb{Z}$:

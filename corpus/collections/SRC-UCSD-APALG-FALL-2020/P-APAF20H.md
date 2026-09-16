@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $U\colon G\to\mathrm{U}(H)$ be a unitary representation of a compact group $G$ on a Hilbert space $H$.
 Prove that, if $K$ is a closed subspace of $H$ invariant under the action of $G$, so is $K^\perp$.
 :::

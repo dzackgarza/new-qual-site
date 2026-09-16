@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $(x_n)$ be a sequence of nonnegative real numbers satisfying
 \[
 x_{n+1}\le x_n+\frac1{n^2}

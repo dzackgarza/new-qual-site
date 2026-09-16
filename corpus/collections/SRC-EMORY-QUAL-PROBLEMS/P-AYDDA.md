@@ -20,7 +20,7 @@ audit:
   note: "Compared with Real Analysis (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA1, whose solution repeats this Carathéodory construction."
 ---
 
-::: problem
+::: {.problem}
 Describe the process that extends a measure on an algebra
 $\mathcal{A}$ of subsets of $X$, to a complete measure defined on a
 $\sigma$-algebra $\mathcal{B}$ containing $\mathcal{A}$. State the

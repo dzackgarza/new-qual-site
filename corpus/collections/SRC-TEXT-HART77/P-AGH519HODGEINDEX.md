@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. If $H$ is an ample divisor on the surface $X$, and if $D$ is any divisor, show that
 \[
 \left(D^2\right)\left(H^2\right) \leqslant(D . H)^2 .

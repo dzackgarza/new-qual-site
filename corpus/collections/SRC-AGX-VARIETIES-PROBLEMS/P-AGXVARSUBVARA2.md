@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the only irreducible subvarieties of $\AA^2\slice{k}$ for $k$ an infinite field are $\emptyset$, $\AA^2\slice{k}$, and irreducible plane curves $V(f)$ for $f$ an irreducible polynomial, where $V(f)$ has infinite cardinality.
 :::

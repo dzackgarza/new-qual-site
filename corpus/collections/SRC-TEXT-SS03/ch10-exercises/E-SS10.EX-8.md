@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 8. Consider Pythagorean triples $( a , b , c )$ with $a ^ { 2 } + b ^ { 2 } = c ^ { 2 }$ , and with $a , b , c \in \mathbb { Z }$ Suppose moreover that a and b have no common factors.
 
 (a) Show that either a or b must be odd, and the other even.
@@ -25,7 +25,7 @@ audit:
 (c) Conversely, show that whenever c is a sum of two-squares, then there exist integers a and b such that $a ^ { 2 } + b ^ { 2 } = c ^ { 2 }$
 :::
 
-::: solution
+::: {.solution}
 Assume \(\gcd(a,b)=1\) and \(a^2+b^2=c^2\).
 
 If both \(a\) and \(b\) were odd, then

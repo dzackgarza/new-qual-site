@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral projective scheme of dimension $\geq 1$ over a field $k$, and let $\mcl$ be an ample invertible sheaf on $X$. Show that
 \[
 H^0(X, \mcl^{-1}) = 0

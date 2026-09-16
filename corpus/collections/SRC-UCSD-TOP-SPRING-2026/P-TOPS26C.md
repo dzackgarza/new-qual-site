@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $G$ is a finitely generated group and $H$ is a subgroup of finite index then $H$ is finitely generated.
 :::
 

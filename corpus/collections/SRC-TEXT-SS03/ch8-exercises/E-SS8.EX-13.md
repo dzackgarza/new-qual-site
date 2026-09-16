@@ -19,7 +19,7 @@ audit:
 
 ---
 
-::: exercise
+::: {.exercise}
 The **pseudo-hyperbolic distance** between two points $z, w \in \mathbb{D}$ is defined by:
 $$\rho(z, w) = \left| \frac{z - w}{1 - \bar{w} z} \right|.$$
 
@@ -32,7 +32,7 @@ $$\rho(f(z), f(w)) = \rho(z, w) \quad \text{for all } z, w \in \mathbb{D}.$$
 $$\frac{|f'(z)|}{1 - |f(z)|^2} \le \frac{1}{1 - |z|^2} \quad \text{for all } z \in \mathbb{D}.$$
 :::
 
-::: solution
+::: {.solution}
 For $a\in\mathbb D$, define the disk automorphism
 \[
 \phi_a(\zeta)=\frac{\zeta-a}{1-\overline a\zeta}.

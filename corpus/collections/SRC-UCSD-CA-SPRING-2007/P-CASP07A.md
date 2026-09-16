@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 
 (a) Let $(X, d)$ be a metric space, $x \in X$, and $\{x_n\}_{n=1}^{\infty}$ a sequence in $X$.
@@ -31,7 +31,7 @@ Then $f(z)$ has a removable singularity at 0.
 There exists $\epsilon > 0$ such that if a polynomial $p(z)$ satisfies $|p(z)| < \epsilon$ on the closed unit disk $\overline{\mathbb{D}}$, then $|p(a)| < 1$.
 :::
 
-::: solution
+::: {.solution}
 (a) **True.** If $x_n$ did not converge to $x$, there would be
 $\epsilon>0$ and a subsequence $x_{n_k}$ with
 $d(x_{n_k},x)\ge\epsilon$ for every $k$. No subsequence of this subsequence

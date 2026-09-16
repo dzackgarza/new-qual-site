@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use (2.5.3) to show that $\PP^n$ is simply connected.
 :::

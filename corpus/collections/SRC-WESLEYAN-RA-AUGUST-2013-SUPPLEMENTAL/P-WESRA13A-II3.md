@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash garbles the integral typography, but the compact-set quantifier and zero integral are unambiguous in the deterministic text.
 ---
 
-::: problem
+::: {.problem}
 Let $A\subset\mathbb R$ be Lebesgue measurable and let $f:A\to\mathbb R$ be measurable.
 Suppose
 \[

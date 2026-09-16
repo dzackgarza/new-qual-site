@@ -43,12 +43,12 @@ d. There is a surjective group homomorphism $\psi : S_4 \longrightarrow S_3$.
 e. There is a transitive group action of $S_4$ on a set of three elements.
 :::
 
-::: solution
+::: {.solution}
 The answers, in order, are false, true, false, true, and true.
 
 <1>1. The assertion in part (a) is false.
 
-::: proof
+::: {.proof}
 Every cyclotomic field $L=\mathbb Q(\zeta_m)$ is the
 splitting field of $x^m-1$, which is separable in characteristic
 zero, so $L/\mathbb Q$ is finite Galois. An automorphism sends
@@ -69,7 +69,7 @@ of a cyclotomic extension.
 
 <1>2. The assertion in part (b) is true.
 
-::: proof
+::: {.proof}
 Write $q=|\mathbb F|$, choose a root $a$ of $f$ in an
 algebraic closure, and put $E=\mathbb F(a)$. Irreducibility
 gives $[E:\mathbb F]=n$, so $E$ has $q^n$ elements.
@@ -91,7 +91,7 @@ and contains $\mathbb F(a)=E$, so equals $E$ and has degree $n$.
 
 <1>3. The assertion in part (c) is false.
 
-::: proof
+::: {.proof}
 For any homomorphism $\varphi:S_4\to A_3$, the image of
 a transposition has order dividing two and also dividing
 $|A_3|=3$. Its order is therefore one. Every permutation is
@@ -104,7 +104,7 @@ surject onto the three-element group $A_3$.
 
 <1>4. The assertion in part (d) is true.
 
-::: proof
+::: {.proof}
 Let $X$ consist of the three unordered pair partitions
 $$
 A=\{\{1,2\},\{3,4\}\},\quad
@@ -125,7 +125,7 @@ Thus $\psi$ is surjective.
 
 <1>5. The assertion in part (e) is true.
 
-::: proof
+::: {.proof}
 Use the same action on $X$. The powers of $(1\,2\,3)$
 send $A$ to each of $A,B,C$, as explicitly computed in
 step <1>4. The orbit of $A$ is all of $X$, proving

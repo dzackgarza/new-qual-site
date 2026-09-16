@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K/F$ be a finite Galois extension and suppose $\Gal(K/F)$ is cyclic. Let $F\subseteq E\subseteq K$.
 
 1. Show that both $K/E$ and $E/F$ are cyclic Galois extensions.

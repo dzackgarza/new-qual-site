@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\T_p X \cong (\mfm_p/\mfm_p^2)\dual$.
 :::

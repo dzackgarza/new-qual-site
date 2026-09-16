@@ -24,7 +24,7 @@ audit:
   note: Verified the ideal axioms and the PID intersection formula, including the zero-ideal cases via the divisibility characterization of a least common multiple.
 ---
 
-::: problem
+::: {.problem}
 Let $I$, $J$ be two ideals in a commutative ring $R$ (with unit).
 
 (a) Define $K = \{x : x \in I \text{ and } x \in J\}$.

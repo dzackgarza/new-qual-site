@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Show that any variety of positive dimension over $k$ has the same cardinality as $k$.
 
 2. Deduce that any two curves over $k$ are homeomorphic.

@@ -35,7 +35,7 @@ be a $2 \times 2$ matrix with complex entries.
 Suppose that $A$ is row-reduced and also that $a + b + c + d = 0$ . Prove that there are exactly three such matrices.
 :::
 
-::: solution
+::: {.solution}
 The three matrices are
 $$
 \boxed{
@@ -50,7 +50,7 @@ $1$ has all its other entries equal to $0$ [@HK71]. No condition orders the
 nonzero rows; that stronger requirement belongs to row-reduced echelon form.
 
 <1>1. If exactly one row is nonzero, there are exactly two possibilities.
-::: proof
+::: {.proof}
 Suppose first that the first row is nonzero and the second row is zero. Then
 $c=d=0$. If $a\ne0$, row-reducedness forces the leading entry $a$ to equal
 $1$, and the sum condition gives $1+b=0$, so
@@ -70,7 +70,7 @@ $$
 :::
 
 <1>2. If both rows are nonzero, no matrix satisfies the sum condition.
-::: proof
+::: {.proof}
 Each nonzero row has a leading $1$. The two leading $1$'s cannot occur in the
 same column, because a pivot column must have all other entries zero.
 
@@ -89,7 +89,7 @@ whose entries also sum to $2$. Therefore no matrix with two nonzero rows works.
 :::
 
 <1>3. The zero matrix supplies the third example, and all three displayed matrices are row-reduced.
-::: proof
+::: {.proof}
 The zero matrix is row-reduced vacuously and has entry sum zero. In each of the
 two rank-one matrices displayed above, the only nonzero row has leading entry
 $1$, and its leading column has zero in the other row; their entry sums are

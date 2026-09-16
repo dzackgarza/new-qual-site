@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 A collection of stories in 5 volumes is placed on a bookshelf in a random order.
 What is the probability that the order is correct (direct or inverse)?
 :::

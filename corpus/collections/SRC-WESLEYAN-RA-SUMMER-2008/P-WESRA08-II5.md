@@ -21,12 +21,12 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose that $(V,\|\cdot\|)$ is a real normed vector space in which every absolutely convergent series converges.
 Prove that $V$ is complete.
 :::
 
-::: solution
+::: {.solution}
 Let $(x_n)$ be a Cauchy sequence in $V$.
 We prove that it converges.
 

@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 9, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Two persons agreed to meet at some place between 2 and 3 o’clock.
 Whoever arrives first, he waits 10 minutes, then leaves.
 What is the probability to fail the meeting?

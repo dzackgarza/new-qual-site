@@ -15,7 +15,7 @@ audit:
   note: Checked against Section I, item 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be open and let $\sigma$ be a cycle in $U$.
 Define what it means for $\sigma$ to be homologous to zero in $U$.
 :::

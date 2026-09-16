@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe subgroups of the free group $F_2=\langle a,b\rangle$. Give examples having ranks $3$, $4$, and countably infinite rank. For rank $4$, give both normal and nonnormal examples.
 :::
 
-::: solution
+::: {.solution}
 By the Nielsen--Schreier theorem, every subgroup of a free group is free. If $H\le F_r$ has finite index $d$, the Schreier index formula gives
 \[
 \operatorname{rank}(H)=1+d(r-1).

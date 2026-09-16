@@ -21,7 +21,7 @@ audit:
 Show that the irrationals are a Baire space.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the subspace of irrational numbers $\mathbb{P} = \mathbb{R} \setminus \mathbb{Q}$ equipped with the subspace topology from $\mathbb{R}$ is a Baire space.
 
 <1>1. Representation of $\mathbb{P}$ as a $G_\delta$ subset of $\mathbb{R}$:

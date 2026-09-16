@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 9 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic on the unit disk, with $f(0)=0$ and $|f(z)|\le1$ for $|z|<1$.
 Prove, using the maximum principle, that
 \[

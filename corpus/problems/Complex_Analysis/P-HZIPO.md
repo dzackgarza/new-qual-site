@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Suppose $f:\DD\to \DD$ is analytic.
 Prove that 
 \[  

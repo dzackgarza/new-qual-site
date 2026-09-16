@@ -16,14 +16,14 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a Hilbert space and $\{\xi_n\}_{n \geq 1}$ be a sequence of unit vectors in $H$ ($\|\xi_n\| = 1$ for all $n$).
 Assume that:
 $$\lim_{n,m \to \infty} \|\xi_n + \xi_m\| = 2.$$
 Show that there exists $\xi \in H$ such that $\lim_{n \to \infty} \|\xi_n - \xi\| = 0$ (i.e. $\{\xi_n\}$ converges strongly in $H$).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the sequence $\{\xi_n\}$ is Cauchy using the parallelogram law and Hilbert space completeness.
 
 <1>1. The Parallelogram Law:

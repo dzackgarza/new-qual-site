@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that any morphism $\AA^1\to\AA^1\smz$ is constant.
 :::

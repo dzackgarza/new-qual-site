@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_0^\infty {\cos(x) - \cos(4x) \over x^2} \, dx
 .\]
 :::
 
-::: solution
+::: {.solution}
 For $a>0$, integration by parts gives
 \[
 \int_0^\infty\frac{1-\cos(ax)}{x^2}\,dx

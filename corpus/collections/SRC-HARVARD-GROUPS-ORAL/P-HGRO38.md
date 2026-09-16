@@ -21,15 +21,15 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Use pictures to describe the Sylow $3$-subgroups of $S_3,S_4,\ldots,S_9$.
 :::
 
-::: solution
+::: {.solution}
 It is useful to picture the letters in blocks of three.
 
 <1>1. For $S_3,S_4,S_5$, a Sylow $3$-subgroup is cyclic of order $3$.
-::: proof
+::: {.proof}
 The $3$-part of $n!$ is $3$ for $n=3,4,5$. Thus
 \[
 \langle(123)\rangle
@@ -41,7 +41,7 @@ is Sylow in each case, fixing any remaining letters.
 \[
 \langle(123),(456)\rangle\cong C_3\times C_3.
 \]
-::: proof
+::: {.proof}
 For $n=6,7,8$,
 \[
 v_3(n!)=2,
@@ -56,7 +56,7 @@ beyond $6$ are fixed.
 C_3\wr C_3=(C_3)^3\rtimes C_3
 \]
 of order $81$.
-::: proof
+::: {.proof}
 Partition the letters into three blocks
 \[
 \{1,2,3\},\qquad \{4,5,6\},\qquad \{7,8,9\}.
@@ -90,7 +90,7 @@ so $81=3^4$ is the full $3$-part of $9!$. Thus $P$ is Sylow.
 
 <1>4. Every Sylow $3$-subgroup in each $S_n$ is conjugate to the displayed
 one.
-::: proof
+::: {.proof}
 This is Sylow conjugacy.
 :::
 :::

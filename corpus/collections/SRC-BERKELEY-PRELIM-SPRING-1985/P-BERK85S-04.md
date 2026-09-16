@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R>1$ and let $f$ be analytic on $|z|<R$ except for a simple pole at $z=1$. Suppose
 \[
 f(z)=\sum_{n=0}^\infty a_nz^n

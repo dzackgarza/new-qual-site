@@ -13,7 +13,7 @@ audit:
   note: The retained extraction loses part of the displayed 2-by-2 matrix A. It preserves entries 1, 2, and 3 but not enough layout to recover the fourth entry safely. An archival Berkeley problem compilation reproduces the same problem but likewise drops the display, so the missing matrix is not guessed here.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be the real $2\times2$ matrix displayed in the Spring 1980 source exam.
 Show that every real matrix $B$ satisfying
 \[

@@ -25,7 +25,7 @@ audit:
   note: Verified the faithful transitive action on the p roots, the nonnormality of a nontrivial point stabilizer, and the Sylow-counting contradiction under N_G(P)=P.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f(x) \in \mathbb{Q}[x]$ is an irreducible polynomial of degree $p$ where $p$ is prime.
 Let $E$ be the splitting field of $f(x)$ over $\mathbb{Q}$.
 Let $\alpha \in E$ be a zero of $f$, $G := \mathrm{Gal}(E/\mathbb{Q})$, and $H := \mathrm{Gal}(E/\mathbb{Q}[\alpha])$.

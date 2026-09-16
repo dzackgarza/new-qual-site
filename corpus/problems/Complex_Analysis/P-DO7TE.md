@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Show that $\sin(z)/z$ has no poles.
 :::
 
-::: solution
+::: {.solution}
 For $z\ne0$, the quotient $\sin z/z$ is holomorphic. At $z=0$, use the Taylor
 series
 \[

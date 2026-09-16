@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find the number of solutions in $\ts{\Re(z) \leq 0}$ of
 \[
 -2e^z = z+3
@@ -23,7 +23,7 @@ Find the number of solutions in $\ts{\Re(z) \leq 0}$ of
 
 :::
 
-:::{.solution}
+::: {.solution}
 
 Note that $\abs{e^z} = e^{\Re(z)} \leq e^{0} = 1$ since $\Re(z) \leq 0$, so if the equality holds then
 \[
@@ -38,7 +38,7 @@ Write $p(z) \da z+3 + 2e^z$, then
 Then $Z_p = Z_F = 1$, and any such zero is a solution to the original equation.
 :::
 
-:::{.solution title="Alternative"}
+::: {.solution title="Alternative"}
 Use the following region:
 
 ![figures/2021-07-29_20-39-31.png](../../assets/figures/2021-07-29_20-39-31.png)

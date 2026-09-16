@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give the definition of almost uniform convergence for a sequence of functions.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be measurable functions on $X$.
 We say that $f_n$ converges to $f$ almost uniformly if for every $\varepsilon>0$ there exists a measurable set $E\in\mathcal A$ such that
 \[

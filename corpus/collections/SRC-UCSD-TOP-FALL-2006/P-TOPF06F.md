@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an even integer, and let $n$ be any positive integer.
 Show that there is a map $f : S^{2n+1} \to \mathbb{RP}^{2n+1}$ of degree $k$.
 Show that there is no map from $S^{2n+1}$ to $\mathbb{RP}^{2n+1}$ of odd degree.

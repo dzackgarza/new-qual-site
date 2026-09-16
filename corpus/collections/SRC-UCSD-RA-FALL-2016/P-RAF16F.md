@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f \in C^1([0,1])$ be such that $f(1) = 0$.
 Assume
 $$
@@ -32,9 +32,9 @@ $$
 Prove that $f = 0$ identically on $[0,1]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Convert the derivative moments into moments of $f$.
-::: proof
+::: {.proof}
 Fix $k\ge1$. Integration by parts gives
 \[
 \int_0^1 x^k f'(x)\,dx
@@ -57,7 +57,7 @@ for every polynomial $p$.
 :::
 
 <1>2. Use polynomial density to test against $f$ itself.
-::: proof
+::: {.proof}
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
 \[
 \|p_n-f\|_\infty\longrightarrow0.

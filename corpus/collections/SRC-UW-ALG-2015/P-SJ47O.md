@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a non-abelian group of order $p^3$ with $p$ a prime.
 
 - Determine the order of the center $Z$ of $G$.
@@ -29,7 +29,7 @@ Let $G$ be a non-abelian group of order $p^3$ with $p$ a prime.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The center \(Z=Z(G)\) has order \(p\).
 ::: {.proof}
 Every nontrivial finite \(p\)-group has nontrivial center, so \(|Z|\ge p\). Since \(G\) is nonabelian, \(Z\ne G\). If \(|Z|=p^2\), then \(G/Z\) has order \(p\), hence is cyclic; but if \(G/Z(G)\) is cyclic, then \(G\) is abelian, a contradiction. Therefore

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ (respectively, $Y$) be proper schemes over a noetherian ring $A$.
 We denote by $\mcl$ an invertible sheaf.
 

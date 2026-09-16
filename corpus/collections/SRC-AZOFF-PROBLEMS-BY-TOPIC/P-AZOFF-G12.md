@@ -15,7 +15,7 @@ audit:
   note: Checked against Residues, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let n be a positive integer and $0 < \theta < \pi$ . Prove that
 
 $$

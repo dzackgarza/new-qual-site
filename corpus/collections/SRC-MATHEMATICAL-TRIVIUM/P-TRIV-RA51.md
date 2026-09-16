@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 51, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = f _ { 0 } \left( \frac { 1 } { r } + \frac { 1 } { a } \right) e ^ { - \frac { 2 r } { a } }$ in $\mathbb { R } ^ { 3 }$
 :::

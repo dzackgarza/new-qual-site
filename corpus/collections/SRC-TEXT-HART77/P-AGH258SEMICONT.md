@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme and $\mcf$ a coherent sheaf on $X$.
 Consider the function
 \[

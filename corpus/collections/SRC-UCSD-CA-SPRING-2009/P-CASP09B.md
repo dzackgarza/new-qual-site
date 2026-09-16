@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the number of zeros of $f(z) = z^7 + 2z^3 + 4$ in the interior of the first quadrant (all $z = x + iy$ with $x$ and $y$ positive).
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 P(z)=z^7+2z^3+4.

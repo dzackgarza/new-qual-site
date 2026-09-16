@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 On the elliptic ruled surface $X$ of (2.11.6), show that the sections $C_0$ with $C_0^2=1$ form a one-dimensional algebraic family, parametrized by the points of the base curve $C$, and that no two are linearly equivalent.
 :::

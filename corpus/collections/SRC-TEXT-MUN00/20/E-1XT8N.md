@@ -24,7 +24,7 @@ Under what conditions on the numbers $a_i$ and $b_i$ is $h$ continuous?
 a homeomorphism?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the precise necessary and sufficient conditions on the coefficients $(a_i)_{i=1}^\infty$ and $(b_i)_{i=1}^\infty$ for the affine coordinate map $h(\mathbf{x}) = (a_i x_i + b_i)_{i=1}^\infty$ on $(\mathbb{R}^\omega, \bar{\rho})$ to be continuous and to be a homeomorphism.
 
 <1>1. Metric on $\mathbb{R}^\omega$:

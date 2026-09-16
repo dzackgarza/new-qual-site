@@ -20,7 +20,7 @@ audit:
   note: "Compared with Complex Analysis (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMCA2, whose solution repeats this small-circle argument."
 ---
 
-::: problem
+::: {.problem}
 State and prove the Cauchy integral formula for holomorphic functions.
 :::
 

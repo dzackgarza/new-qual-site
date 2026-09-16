@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space, let $P$ be a point, and let $A$ be an abelian group.
 Define a sheaf $i_P(A)$ on $X$ by $i_P(A)(U) = A$ if $P \in U$ and $0$ otherwise.
 

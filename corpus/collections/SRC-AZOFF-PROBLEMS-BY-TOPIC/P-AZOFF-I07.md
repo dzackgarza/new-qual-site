@@ -15,7 +15,7 @@ audit:
   note: Checked against Schwarz lemma and reflection principle, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 [August 2007, Problem $\# 4]$
 
 a) State the standard Schwarz reflection principle involving reflection across the real axis.

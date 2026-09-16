@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find all $f \in L^2([-1,1])$ such that
 $$
 \int_{-1}^{1} |f(x) - \sqrt{3}\,x|^2\,dx \leq \frac{1}{4}
@@ -35,7 +35,7 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 Let
 \[
 u(x)=\sqrt3\,x,

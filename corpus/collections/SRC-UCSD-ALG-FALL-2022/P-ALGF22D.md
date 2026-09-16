@@ -24,7 +24,7 @@ audit:
   note: Verified transitivity from irreducibility and used complex conjugation to exhibit a transposition, forcing the transitive subgroup of S3 to be all of S3.
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field over $\mathbb{Q}$ of an irreducible polynomial $f(x) \in \mathbb{Q}[x]$ of degree 3. Suppose that $f$ has exactly one real root.
 Prove that $\operatorname{Gal}(K/\mathbb{Q})$ is isomorphic to the symmetric group $S_3$.
 :::

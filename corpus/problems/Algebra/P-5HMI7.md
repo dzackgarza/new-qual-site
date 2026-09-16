@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f\in\QQ[x]$ be an irreducible quartic polynomial with exactly two real roots. Show that the Galois group of its splitting field over $\QQ$, viewed as a permutation group on the four roots, is isomorphic to $S_4$ or $D_4$.
 :::
 

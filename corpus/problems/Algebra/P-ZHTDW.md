@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Identify $\Aut_\Grp(\bigoplus_{i=1}^n \ZZ/p)$ as a matrix group and determine its size.
 :::
 

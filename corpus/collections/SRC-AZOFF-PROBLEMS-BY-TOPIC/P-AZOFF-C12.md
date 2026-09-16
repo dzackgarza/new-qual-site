@@ -15,7 +15,7 @@ audit:
   note: Checked against Conformal mapping, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 (Can omit; related to the discussion of symmetry) Prove that the following are equivalent for a Mobius transformation T given by $\begin{array} { r } { T z = \frac { a z + b } { c z + d } } \end{array}$
 
 a) T maps $\mathbb { R } \cup \{ \infty \}$ onto itself.

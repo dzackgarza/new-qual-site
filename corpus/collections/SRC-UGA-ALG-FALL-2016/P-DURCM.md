@@ -19,7 +19,7 @@ Let $R$ be a ring and $f: M\to N$ and $g: N\to M$ be $R\dash$module homomorphism
 Show that $N \cong \im f \oplus \ker g$.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - We have the following situation:

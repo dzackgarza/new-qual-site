@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Z$ be a closed subset of $X$ and let $\mcf$ be a sheaf on $X$.
 Define $\Gamma_Z(X, \mcf)$ to be the subgroup of $\Gamma(X, \mcf)$ consisting of all sections whose support is contained in $Z$.
 

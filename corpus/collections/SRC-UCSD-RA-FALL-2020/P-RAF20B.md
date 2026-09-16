@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ denote the set of all sequences $a = (a_1, a_2, \ldots)$ with all $a_k$ ($k \geq 1$) real numbers but only finitely many of them nonzero.
 $X$ is a real vector space with the usual component-wise addition and scalar multiplication.
 It is a normed vector space with the norm $\|a\| = \sup_{k \geq 1} |a_k|$.
@@ -37,9 +37,9 @@ $$
 Prove that $T : X \to X$ is a bijective, linear, and bounded operator, but its inverse $T^{-1} : X \to X$ is unbounded.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove linearity and boundedness.
-::: proof
+::: {.proof}
 The map $T$ acts coordinatewise by multiplication by the scalars $1/k$, so it is linear. Moreover, for $a=(a_k)\in X$,
 \[
 \|Ta\|
@@ -55,7 +55,7 @@ Since $Te_1=e_1$, in fact $\|T\|=1$.
 :::
 
 <1>2. Prove bijectivity.
-::: proof
+::: {.proof}
 If $Ta=0$, then $a_k/k=0$ for every $k$, so $a=0$; hence $T$ is injective.
 
 Given $b=(b_k)\in X$, define
@@ -75,7 +75,7 @@ T^{-1}(b_1,b_2,\ldots)=(b_1,2b_2,3b_3,\ldots).
 :::
 
 <1>3. Show that the inverse is unbounded.
-::: proof
+::: {.proof}
 For the standard basis vector $e_n$,
 \[
 \|e_n\|=1,

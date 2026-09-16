@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 11. Show that $\mathrm { i f } \ | a | < 1$ , then
 
 $$
@@ -27,7 +27,7 @@ Figure 10. Contour in Exercise 10
 Then, prove that the above result remains true if we assume only that $| a | \le 1$
 :::
 
-::: solution
+::: {.solution}
 First suppose $|a|<1$. The power series
 \[
 \Log(1-w)=-\sum_{n\ge1}\frac{w^n}{n},\qquad |w|<1,

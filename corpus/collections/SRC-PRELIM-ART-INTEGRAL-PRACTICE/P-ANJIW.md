@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 2. $\displaystyle \int \frac {xe^x\ln x - e^x}{x\ln^2 x} = \color {blue} {\frac {e^x}{\ln x}}$
 
 - **Used 2018**

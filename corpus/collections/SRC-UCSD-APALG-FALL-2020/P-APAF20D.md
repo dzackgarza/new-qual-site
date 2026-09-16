@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Here is the character table for a group $G$ of size $168$ with $1$ of its rows missing (rows are characters, the columns are conjugacy classes):
 \[
 \begin{array}{c|cccccc}

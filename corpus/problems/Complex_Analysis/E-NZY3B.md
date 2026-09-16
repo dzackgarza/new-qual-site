@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Map $\CC\sm[-1, 1]$ to $\DD$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 In steps:
 
 - Send $-1\to 0$ and $1\to \infty$ with $z\mapsto {z+1\over z-1}$.

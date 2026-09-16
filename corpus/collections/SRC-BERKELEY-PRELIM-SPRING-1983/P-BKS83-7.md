@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $p$ be prime and let
 \[
 G=(\mathbb Z/p\mathbb Z)^n,

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is a Lie group? Define a unitary representation and state the Peter--Weyl theorem. What is the Lie algebra of a Lie group, the Jacobi identity, and the adjoint representation? What is the commutator of vector fields?
 
 For a finite-dimensional complex representation of $\ZZ$, when is it completely reducible, and what are its indecomposable modules?

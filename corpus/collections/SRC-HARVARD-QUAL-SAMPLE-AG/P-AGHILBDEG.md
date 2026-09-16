@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What does the degree — the leading term of the Hilbert polynomial $P_X(r)$ — have to do with line bundles on $\PP^1$, namely with $\OO(3)$?
 :::

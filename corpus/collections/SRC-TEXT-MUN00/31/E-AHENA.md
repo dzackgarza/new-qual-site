@@ -23,7 +23,7 @@ Show that if $X$ is normal, then so is $Y$.
 [Hint: If $U$ is an open set containing $p^{-1}(\ts{y})$, show there is a neighborhood $W$ of $y$ such that $p^{-1}(W) \subset U$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $X$ is a normal space and $p: X \to Y$ is a closed continuous surjection, then $Y$ is a normal space.
 
 <1>1. $T_1$ separation axiom on $Y$:

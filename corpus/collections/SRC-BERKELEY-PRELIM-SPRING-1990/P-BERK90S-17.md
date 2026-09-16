@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be differentiable on $[0,1]$ and suppose
 \[
 M=\sup_{0<x<1}|f'(x)|<\infty.

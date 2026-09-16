@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be the region in the first quadrant bounded by the curves $x^2 + y^2 = 2x$ and $y = 0$. Let $C$ be the boundary of the region $R$, oriented counterclockwise. Evaluate the line integral
 \[
 \int_C x e^x \, dx + (y e^y + x^2)\, dy.
 \]
 :::
 
-::: solution
+::: {.solution}
 We first note that we can rewrite the equation of the region to obtain something more familiar: $x^2 + y^2 = 2x \implies (x-1)^2 + y^2 = 1$, which is a translated circle. Integrating over this region will be easy compared to the line integral, so we apply Green's theorem:
 $$
 \int_C xe^x ~dx + ye^y +x^2 ~dy = \iint_D 2x ~dA.

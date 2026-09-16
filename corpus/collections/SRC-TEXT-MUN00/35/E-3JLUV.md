@@ -31,7 +31,7 @@ Show that the following are equivalent:
 [Hint: If $\phi: X \to \mathbb{R}$ is a continuous function, then $F(x) = x \times \phi(x)$ is an imbedding of $X$ in $X \times \mathbb{R}$. If $A$ is an infinite subset of $X$ having no limit point, let $\phi$ be a surjection of $A$ onto $\mathbb{Z}_+$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the equivalence of (i) universal metric boundedness, (ii) pseudocompactness (boundedness of continuous real-valued functions), and (iii) limit point compactness for any metrizable space $X$.
 
 <1>1. (i) $\implies$ (ii):

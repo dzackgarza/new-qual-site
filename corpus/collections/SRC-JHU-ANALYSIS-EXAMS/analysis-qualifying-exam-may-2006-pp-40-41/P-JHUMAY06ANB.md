@@ -39,13 +39,13 @@ have in the unit disk $\{|z|<1\}$? How many zeros does it
 have in the disk $\{|z|<2\}$ of radius two? Justify your answers.
 :::
 
-::: solution
+::: {.solution}
 Write $p(z)=z^7-4z^3+z-1/2$. The requested zero counts,
 with multiplicities, are $\boxed{3}$ in $|z|<1$ and
 $\boxed{7}$ in $|z|<2$.
 
 <1>1. The cubic term determines the unit-disk count.
-::: proof
+::: {.proof}
 For $|z|=1$,
 $$
 |p(z)-(-4z^3)|=|z^7+z-1/2|
@@ -60,7 +60,7 @@ gives $|p|\geq4-5/2>0$ on the boundary.
 :::
 
 <1>2. The leading term determines the radius-two count.
-::: proof
+::: {.proof}
 For $|z|=2$,
 $$
 |p(z)-z^7|=|-4z^3+z-1/2|

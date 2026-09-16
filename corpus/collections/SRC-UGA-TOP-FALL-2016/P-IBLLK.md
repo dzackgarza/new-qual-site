@@ -26,7 +26,7 @@ audit:
   note: Verified the quotient CW structure with one 0-cell, one 1-cell, and two 2-cells, and checked that each 2-cell attaching map has degree 2 up to orientation.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the topological space obtained as the quotient of the sphere $S^2 = \theset{\vector x \in \RR^3 \suchthat \norm{\vector x} = 1}$ under the equivalence relation $\vector x \sim -\vector x$ for $\vector x$ in the equatorial circle, i.e. for $\vector x = (x_1, x_2, 0)$.
 
 Calculate $H_* (X; \ZZ)$ from a CW complex description of $X$.

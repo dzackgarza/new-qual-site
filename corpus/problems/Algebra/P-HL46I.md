@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is a ring of integers?
 What does “integral over $\ZZ$” mean?
 :::

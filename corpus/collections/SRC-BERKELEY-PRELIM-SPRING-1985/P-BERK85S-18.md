@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be Hermitian $n\times n$ complex matrices, and suppose $A$ is positive definite. Prove that every eigenvalue of $AB$ is real.
 :::

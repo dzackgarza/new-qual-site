@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Call $(X, \OO_X)\in \Sch$ **reduced** iff $\OO_X(U)$ has no nilpotents for every open $U$, and for $A\in \Ring$ define $A^{\red}\da A/\sqrt{0}$ to be $A$ modulo its ideal of nilpotents.
 
 a. Show that $X$ is reduced iff for every $p\in X$, the local ring $\OO_{X, p}$ has no nilpotents.
@@ -35,7 +35,7 @@ Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ 
 \end{tikzcd}
 :::
 
-::: remark
+::: {.remark}
 Strategy for part a: zero in every stalk implies zero by the sheaf axiom.
 
 Strategy for part b:
@@ -53,7 +53,7 @@ Strategy for part b:
 - Pushforwards of reduced sheaves are reduced.
 :::
 
-::: solution
+::: {.solution}
 **Part a**:
 
 $\implies$: if $\OO_{X, p}$ has nilpotents, pick $s$ with $s^n = 0 \in \OO_{X, p}$.

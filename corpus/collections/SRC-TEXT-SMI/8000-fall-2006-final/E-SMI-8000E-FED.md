@@ -34,11 +34,11 @@ or
 (ii) Icos (that is, $A(5)$) is a simple group.
 :::
 
-::: solution
+::: {.solution}
 We prove option (i).
 
 <1>1. Every group of order $9$ is abelian.
-::: proof
+::: {.proof}
 Let $G$ have order
 $$
 |G|=9=3^2.
@@ -62,7 +62,7 @@ Thus there are no nonabelian groups of order $9$.
 :::
 
 <1>2. Every group of order $10$ is a semidirect product $C_5\rtimes C_2$.
-::: proof
+::: {.proof}
 Let $|G|=10$. Sylow gives
 $$
 n_5\mid2,
@@ -95,7 +95,7 @@ $$
 :::
 
 <1>3. There are exactly two possible actions, and only one gives a nonabelian group.
-::: proof
+::: {.proof}
 Conjugation by the generator of $C_2$ defines a homomorphism
 $$
 C_2\longrightarrow\operatorname{Aut}(C_5).

@@ -20,7 +20,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be analytic on a region $R$ and suppose $f'(z_0) \neq 0$ for some $z_0 \in R$.
 Show that if $C$ is a circle of sufficiently small radius centered at $z_0$, then 
 \[

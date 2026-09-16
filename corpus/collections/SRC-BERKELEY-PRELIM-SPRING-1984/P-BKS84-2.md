@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a $p$-group of order $p^4$, and suppose
 \[
 |Z(G)|=p^2.

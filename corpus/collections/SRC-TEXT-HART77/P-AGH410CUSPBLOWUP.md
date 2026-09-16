@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be the cuspidal cubic curve $y^2 = x^3$ in $\AA^2$.
 Blow up the point $O = (0,0)$.
 Let $E$ be the exceptional curve, and let $\tilde{Y}$ be the strict transform of $Y$.

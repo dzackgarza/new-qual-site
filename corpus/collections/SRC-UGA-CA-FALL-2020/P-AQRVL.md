@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Expand $\frac{1}{1-z^{2}}+\frac{1}{z-3}$ in a series of the form $\sum_{-\infty}^{\infty} a_{n} z^{n}$ so it converges for
 
 - $|z|<1$,
@@ -26,7 +26,7 @@ Expand $\frac{1}{1-z^{2}}+\frac{1}{z-3}$ in a series of the form $\sum_{-\infty}
 
 :::
 
-:::{.solution}
+::: {.solution}
 General strategy: each has two expansions, so just compute them all and pick appropriate ones for regions afterwards.
 
 For $1\over z-3$:

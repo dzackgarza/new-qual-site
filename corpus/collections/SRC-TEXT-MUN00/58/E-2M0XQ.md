@@ -48,7 +48,7 @@ The following subsets of $\mathbb{R}^2$:
 (l) $\mathbb{R}^2 - (\mathbb{R}_+ \times 0)$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the fundamental group of each of the twelve spaces, classifying each as trivial ($\{1\}$), infinite cyclic ($\mathbb{Z}$), or figure-eight ($\mathbb{Z} * \mathbb{Z}$).
 
 <1>1. Spaces with fundamental group $\pi_1 \cong \mathbb{Z}$ (infinite cyclic):

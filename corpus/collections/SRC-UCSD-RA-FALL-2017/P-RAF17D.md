@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose that $(\Omega, \mathcal{B}, \mu)$ is a measure space, $\Omega_n \in \mathcal{B}$ with $\Omega_n \uparrow \Omega$ and $\mu(\Omega_n) < \infty$ for all $n \in \mathbb{N}$.
 If $f : \Omega \to \mathbb{C}$ is a measurable function such that
 $$
@@ -34,9 +34,9 @@ show $f \in L^3(\mu)$, i.e. $\int_\Omega |f|^3\,d\mu < \infty$.
 Hint: consider $f_n := \mathbf{1}_{\Omega_n} f \cdot \mathbf{1}_{|f| \leq n} \in L^3(\mu)$ for $n \in \mathbb{N}$ and recall $L^3(\mu) \cong L^{3/2}(\mu)^*$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define the truncated functions and their functionals.
-::: proof
+::: {.proof}
 Set
 \[
 f_n:=\mathbf1_{\Omega_n}f\,\mathbf1_{\{|f|\le n\}}.
@@ -60,7 +60,7 @@ its norm is
 :::
 
 <1>2. Show that the family $(T_n)$ is pointwise bounded.
-::: proof
+::: {.proof}
 For every $g\in L^{3/2}(\mu)$,
 \[
 |T_n(g)|
@@ -75,7 +75,7 @@ for every $g\in L^{3/2}(\mu)$.
 :::
 
 <1>3. Apply Uniform Boundedness and pass to the limit.
-::: proof
+::: {.proof}
 Since $L^{3/2}(\mu)$ is Banach, the Principle of Uniform Boundedness gives
 \[
 \sup_n\|T_n\|<\infty.

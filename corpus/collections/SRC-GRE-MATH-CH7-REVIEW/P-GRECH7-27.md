@@ -25,6 +25,6 @@ What's the value of the integral $\int_{C} \frac{z+1}{(z+3)(z^2+1)} dz$ where C 
 (E) $-\frac{2}{5}\pi i$
 :::
 
-::: remark
+::: {.remark}
 The source shows the curve $C$ in a figure that is not reproduced here.
 :::

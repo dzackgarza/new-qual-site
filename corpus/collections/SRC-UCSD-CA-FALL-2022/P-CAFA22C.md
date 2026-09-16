@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the punctured unit disk $\mathbb{D}^* = \mathbb{D} \setminus \{0\}$ and the annulus $A = \{z : 1 < |z| < 2\}$ are not conformally equivalent.
 :::
 
-::: solution
+::: {.solution}
 Suppose $F:\mathbb D^*\to A$ were a biholomorphism. Since $F$ is bounded,
 the isolated singularity at $0$ is removable, so $F$ extends holomorphically
 to $\widetilde F:\mathbb D\to\mathbb C$.

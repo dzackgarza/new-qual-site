@@ -15,12 +15,12 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 12. Suppose f is entire and never vanishes, and that none of the higher derivatives of $f$ ever vanish.
     Prove that if $f$ is also of finite order, then $f ( z ) = e ^ { a z + b }$ for some constants a and b.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is entire, of finite order, and never vanishes, Hadamard's factorization theorem gives
 \[
 f(z)=e^{P(z)}

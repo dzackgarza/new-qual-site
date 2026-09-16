@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given a curve $Y$ of degree $d$ in $\PP^2$, show that there is a nonempty open subset $U$ of $(\PP^2)\dual$ in its Zariski topology such that each $L \in U$ meets $Y$ in exactly $d$ points.
 
 *Hint:* Show that the set of lines in $(\PP^2)\dual$ which are either tangent to $Y$ or pass through a singular point of $Y$ is contained in a proper closed subset.

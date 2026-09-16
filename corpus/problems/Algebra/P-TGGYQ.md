@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute
 \[
 [\QQ(\sqrt2+\sqrt3):\QQ].
 \]
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 \alpha=\sqrt2+\sqrt3.

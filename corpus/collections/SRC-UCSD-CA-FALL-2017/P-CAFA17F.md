@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Prove that for any $r>0$ and real $\rho$, $$\frac{1}{2\pi}\int_0^{2\pi} \log|re^{it} - \rho|\,dt = \max(\log r, \log|\rho|).$$
 
 (b) Show that the series $$u(z) = \sum_{n=0}^{\infty} \frac{1}{2^n} \log\left|z - \frac{1}{2^n}\right|$$ defines a subharmonic function.
@@ -22,7 +22,7 @@ review: draft
 The official Fall 2017 exam calls $r$ an arbitrary real number while writing $\log r$. The intended hypothesis must be $r>0$.
 :::
 
-::: solution
+::: {.solution}
 For (a), first suppose $r>|\rho|$. Then
 \[
 \log|re^{it}-\rho|

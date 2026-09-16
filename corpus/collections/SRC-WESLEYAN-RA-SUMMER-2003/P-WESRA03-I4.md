@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 State the Lebesgue Dominated Convergence Theorem.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n$ be measurable functions such that
 \[
 f_n\to f\quad\text{almost everywhere}.

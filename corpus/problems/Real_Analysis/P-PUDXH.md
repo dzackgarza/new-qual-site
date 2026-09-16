@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $f, g$ be non-negative measurable functions on $[0, \infty)$ with
 \[
 A &\da \int_0^{\infty } f(y) y^{-1/2} \dy < \infty \\

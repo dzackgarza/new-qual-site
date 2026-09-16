@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the analogue of (5.6) for formal schemes, which says: if $\mathfrak{X}$ is an affine formal scheme, and if
 \[
 0 \to \mcf' \to \mcf \to \mcf'' \to 0

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $n\geq 1$ and $p\in\RR$. Show that
 \[
 \int_{\BB^n} {1 \over \abs{x}^p } \dx &< \infty \iff p < n \\ \\ \\ 
@@ -21,7 +21,7 @@ Let $n\geq 1$ and $p\in\RR$. Show that
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Use polar coordinates. Writing $\omega_{n-1}$ for the surface measure of the unit sphere,
 the integral over a radial region becomes
 \[

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 \[
 B(z, w) = {\Gamma(z) \Gamma(w) \over \Gamma(z+w)}
@@ -27,7 +27,7 @@ B(z, w) = {\Gamma(z) \Gamma(w) \over \Gamma(z+w)}
 > Hint: find $\mcl(t^{z-1})$ and $\mcl(t^{z-1}\convolve t^{w-1})$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the identity $B(z, w) = \frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}$ for $\operatorname{Re}(z) > 0$ and $\operatorname{Re}(w) > 0$ using Laplace transforms and convolution.
 
 <1>1. Laplace transforms of power functions on $[0, \infty)$:

@@ -24,12 +24,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Show that any self-homotopy equivalence $f: \mathbb{CP}^{2n} \to \mathbb{CP}^{2n}$ is orientation-preserving, i.e. has degree $+1$.
 (2) Is this necessarily true for $\mathbb{CP}^{2n+1}$?
 :::
 
-::: solution
+::: {.solution}
 <1>1. For every $m\ge1$,
 $$
 H^*(\mathbb{CP}^m;\mathbb Z)

@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $D\subset\mathbb C$ be a domain containing $0$ and let $f,g$ be analytic on $D$.
 Suppose both have zeros of order $7$ at $0$.
 Prove that

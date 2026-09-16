@@ -23,7 +23,7 @@ audit:
 Show that if $X$ is Lindelöf and $Y$ is compact, then $X \times Y$ is Lindelöf.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the product space $X \times Y$ of a Lindelöf space $X$ and a compact space $Y$ is Lindelöf.
 
 <1>1. Slices $\{x\} \times Y$ and finite subcovers:

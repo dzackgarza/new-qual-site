@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that a nilpotent operator is diagonalizable if and only if it is the zero operator.
 :::
 

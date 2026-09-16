@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ and $H$ be finite groups and let $A:G\to\mathrm{GL}_n(\mathbb{C})$ and $B:H\to\mathrm{GL}_m(\mathbb{C})$ be representations of $G$ and $H$ respectively.
 
 (a) Show that $A\times B:G\times H\to\mathrm{GL}_{nm}(\mathbb{C})$ is a representation where for $(\sigma,\tau)\in G\times H$,

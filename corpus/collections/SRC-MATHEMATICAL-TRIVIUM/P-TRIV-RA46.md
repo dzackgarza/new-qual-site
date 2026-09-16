@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 46, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate the inverse Fourier image f (x) of the function $\tilde { f } ( k ) = - \frac { 1 } { \pi } \frac { k } { a ^ { 2 } + k ^ { 2 } } .$
 :::

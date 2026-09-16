@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that $N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\operatorname{Aut}(H)$.
 :::
 
-::: solution
+::: {.solution}
 Conjugation by an element of $N_G(H)$ preserves $H$, so there is a homomorphism
 \[
 \Phi:N_G(H)\to\operatorname{Aut}(H),\qquad

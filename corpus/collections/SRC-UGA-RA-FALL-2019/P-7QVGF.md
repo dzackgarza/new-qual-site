@@ -24,7 +24,7 @@ audit:
   note: Reviewed the translation-continuity and averaging-operator arguments; clarified the uniform-continuity justification for compactly supported continuous functions.
 ---
 
-::: problem
+::: {.problem}
 (a) Show that if $f \in C_c(\mathbb{R})$ is continuous with compact support on $\mathbb{R}$, then
 $$
 \lim_{y \to 0} \int_{\mathbb{R}} |f(x - y) - f(x)| \, dx = 0.
@@ -38,7 +38,7 @@ $$
 - Prove that $\lim_{h \to 0^+} \|\mathcal{A}_h f - f\|_{L^1(\mathbb{R})} = 0$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove continuity of translations for $C_c(\mathbb{R})$ functions in (a), and use it along with density in $L^1(\mathbb{R})$ to prove boundedness and $L^1$ convergence of the rolling averages $\mathcal{A}_h f$ in (b).
 
 <1>1. Part (a): $\lim_{y \to 0} \|\tau_y f - f\|_{L^1} = 0$ for $f \in C_c(\mathbb{R})$.

@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let
 $$
 B = \begin{bmatrix}
@@ -33,7 +33,7 @@ Let $$C = \frac{1}{|G|} \sum_{g} A_g B A_g^{-1}.$$
 (b) Calculate $C$.
 :::
 
-::: solution
+::: {.solution}
 For every $h\in G$,
 \[
 A_h C A_h^{-1}

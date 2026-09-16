@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the quadric surface $Q: xy = zw$ in $\PP^3$ is birational to $\PP^2$, but is not isomorphic to $\PP^2$.
 :::

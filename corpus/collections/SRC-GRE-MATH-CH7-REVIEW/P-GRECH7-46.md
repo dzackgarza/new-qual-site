@@ -25,6 +25,6 @@ For what complex number $z$ does $\cos z=3$?
 (E) $i \log \left(3 \pm 2\sqrt{2i}\right) + 2k\pi$, for any $k \in \mathbb{Z}$
 :::
 
-::: remark
+::: {.remark}
 The answer choices are illegible in the retained extraction: as extracted, choices (B) and (C) coincide, as do (A), (D) and (E). The book's solution gives $z=2k\pi-i\log(3\pm2\sqrt2)$ for $k\in\mathbb{Z}$.
 :::

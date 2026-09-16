@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1([0,1])$.
 Prove that the following are equivalent:
 
@@ -35,9 +35,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove $(1)\Rightarrow(2)$.
-::: proof
+::: {.proof}
 Assume $f\in L^2([0,1])$ and define
 \[
 g(x):=\int_0^x|f(t)|^2\,dt.
@@ -54,7 +54,7 @@ For $y<x$ the same estimate follows after interchanging the endpoints, and for $
 :::
 
 <1>2. Show that the function $g$ in (2) is nondecreasing.
-::: proof
+::: {.proof}
 Assume (2). If $x<y$, then
 \[
 0\le
@@ -76,7 +76,7 @@ g(y)-g(x)=\int_x^y g'(t)\,dt.
 :::
 
 <1>3. Differentiate the interval inequality almost everywhere.
-::: proof
+::: {.proof}
 For $x<y$, divide the assumed inequality by $(y-x)^2$ to obtain
 \[
 \left|
@@ -101,7 +101,7 @@ for almost every $x$.
 :::
 
 <1>4. Conclude that $f\in L^2$.
-::: proof
+::: {.proof}
 Integrating the a.e. inequality from Step 3 gives
 \[
 \int_0^1|f(x)|^2\,dx

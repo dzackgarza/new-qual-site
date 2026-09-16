@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define the geometric genus.
 
 What might the geometric genus of a singular curve be?

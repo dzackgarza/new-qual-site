@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A = \begin{pmatrix} 7 & -3 \\ 1 & 3 \end{pmatrix}$.
 Find an invertible matrix $P$ and a diagonal matrix $D$ with $P^{-1}AP = D$.
 [You should not have to compute $P^{-1}$.]
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial is
 \[
 \det(\lambda I-A)=(\lambda-7)(\lambda-3)+3

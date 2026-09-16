@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if the two squares in this diagram are cartesian, then the outer square is also cartesian:
 
 \begin{tikzcd}
@@ -24,7 +24,7 @@ Show that if the two squares in this diagram are cartesian, then the outer squar
 \end{tikzcd}
 :::
 
-::: solution
+::: {.solution}
 - We must show that given two maps $R\to V$ and $R\to Y$ such that $(V\to Z) \circ (R\to V) = (Y\to Z) \circ (R\to Y)$, there is a unique map $R\to U$ giving a commuting diagram:
 
 \begin{tikzcd}

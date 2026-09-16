@@ -25,7 +25,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 If $\lambda=(\lambda_1\ge\lambda_2\ge\dots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (a) Use the Murnaghnam-Nakayama rule to compute the values of the character $A^{(4,1)}$ on the conjugacy classes of $S_5$.

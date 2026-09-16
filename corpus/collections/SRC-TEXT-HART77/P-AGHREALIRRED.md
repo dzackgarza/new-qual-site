@@ -16,10 +16,10 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give an example of an irreducible polynomial $f \in \RR[x,y]$ whose zero set $Z(f)$ in $\AA^2_\RR$ is not irreducible.
 :::
 
-::: remark
+::: {.remark}
 The point of the exercise is that the ideal-variety correspondence needs an algebraically closed field, which is where [[T-JRTS2]] uses the hypothesis.
 :::

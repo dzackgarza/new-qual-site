@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 As an application of the infinitesimal lifting property, consider the following general problem.
 Let $X$ be a scheme of finite type over $k$, and let $\mcf$ be a coherent sheaf on $X$.
 We seek to classify schemes $X'$ over $k$ which have a sheaf of ideals $\mci$ such that $\mci^2 = 0$ and $(X', \OO_{X'}/\mci) \cong (X, \OO_X)$, and such that $\mci$ with its resulting structure of $\OO_X\dash$module is isomorphic to the given sheaf $\mcf$.

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f(z) = \frac{\cos z}{z(z-5)}$.
 
 (a) Prove that there is a sequence of rational functions $R_n(z)$ whose poles can only occur at $2$ and $6$ such that

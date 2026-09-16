@@ -20,7 +20,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_{-\infty}^{\infty}\frac{x-\sin x}{x^3}\,dx.

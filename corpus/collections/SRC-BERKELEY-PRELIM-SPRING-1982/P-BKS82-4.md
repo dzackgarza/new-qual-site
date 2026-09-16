@@ -15,6 +15,6 @@ audit:
   note: Transcribed from the retained PDF; the extracted markdown contains a different Problem 4.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R^2\to\mathbb R$ have directional derivatives in every direction at the origin. Must $f$ be differentiable at the origin? Prove your answer or give a counterexample.
 :::

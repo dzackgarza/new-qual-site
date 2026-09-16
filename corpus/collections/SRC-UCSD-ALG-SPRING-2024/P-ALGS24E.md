@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a Noetherian local ring and its only maximal ideal is $\mathfrak{m}$.
 
 (a) Carefully state Nakayama's lemma for $A$-modules.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compare properties of a ring homomorphism to the induced morphism on spectra.
 
 a. Let $A$ be a ring, $X = \Spec A$, and $f \in A$.
@@ -29,6 +29,6 @@ c. With the same notation, show that if $\phi$ is surjective then $f$ is a homeo
 d. Prove the converse to (c): if $f: Y \to X$ is a homeomorphism onto a closed subset and $f^{\sharp}: \OO_X \to f_* \OO_Y$ is surjective, then $\phi$ is surjective.
 :::
 
-::: remark
+::: {.remark}
 For part (d), consider $X' = \Spec\qty{A/\ker \phi}$ and apply parts (b) and (c).
 :::

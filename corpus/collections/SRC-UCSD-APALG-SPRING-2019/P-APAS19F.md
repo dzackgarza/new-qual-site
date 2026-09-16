@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $D_4=\langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle$ be the dihedral group of symmetries of the square.
 
 (a) Write down the character table of $D_4$.
@@ -27,7 +27,7 @@ for all $g\in D_4$ and $v,v'\in V$.
 Calculate the decomposition of $V\otimes V$ into irreducible $D_4$-modules.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes of \(D_4=\langle r,s:r^4=s^2=1,\ srs=r^{-1}
 angle\) are
 \[

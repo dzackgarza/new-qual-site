@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the curve $y^2=x^3-7x+10$.
 This curve has at least 26 points with integer coordinates.
 Find them (use a calculator), and verify that they are all contained in the subgroup (maybe equal to all of $X(\QQ)$?)

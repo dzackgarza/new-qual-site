@@ -20,7 +20,7 @@ audit:
   note: Replaced the false commutativity claim and invalid fixed-point equivalence by normal-subgroup and fixed-field arguments.
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let $E_1 , E_2$ be intermediate fields of $K$ which are the splitting fields of irreducible $f_i (x) \in \QQ[x]$. 
 
 Let $E = E_1 E_2 \subset K$. 
@@ -40,7 +40,7 @@ Show that
 .\]
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - The Galois correspondence:
@@ -48,7 +48,7 @@ Show that
   - $H_1 H_2 \mapstofrom E_1 \intersect E_2$.
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. $H=H_1\cap H_2$.
 ::: {.proof}
 An automorphism $\sigma\in G$ lies in $H$ exactly when it fixes the compositum $E_1E_2$ pointwise.

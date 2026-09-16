@@ -19,7 +19,7 @@ audit:
   note: Restored the lost minus sign in the interval from -1 to 1 and removed stray digits against Probability Problem 25 on pages 30-31 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 "Monte-Carlo method" Consider the function $f(x_1, \ldots, x_n)$ defined in $V = \{-1 \leqslant x_i \leqslant 1,\ i = 1, \ldots, n\}$ and bounded from below and above, $|f(x_1, \ldots, x_n)| \leqslant C$.
 Define a random variable $\eta = f(\xi_1, \ldots, \xi_n)$, where $\xi_i$ are distributed uniformly between $-1$ and $1$.
 

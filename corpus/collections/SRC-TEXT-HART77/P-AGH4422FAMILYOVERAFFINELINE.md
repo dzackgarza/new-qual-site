@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X \to \AA_{\CC}^1$ is a family of elliptic curves having a section, show that the family is trivial.
 
 Hints: Use the section to fix the group structure on the fibres.

@@ -25,7 +25,7 @@ audit:
   note: Replaced the image-only answer with an explicit two-sheeted graph covering and verified the local covering condition at both tangency vertices.
 ---
 
-::: problem
+::: {.problem}
 Is there a covering map from
 \[
 X_3

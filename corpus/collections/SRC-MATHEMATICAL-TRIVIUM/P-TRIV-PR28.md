@@ -19,7 +19,7 @@ audit:
   note: Restored the garbled spectrum table, including the 80-90 MeV bin, against Probability Problem 28 on page 31 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 In an experiment on the detection of cosmic rays a detector counts particles with different energies coming from different directions.
 The observed spectrum of the particles is shown in table below.
 

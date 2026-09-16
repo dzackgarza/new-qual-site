@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Show that if $f: D(0, R) \rightarrow \mathbb{C}$ is holomorphic, with $|f(z)| \leq M$ for some $M>0$, then
 \[
 \left|\frac{f(z)-f(0)}{M^{2}-\overline{f(0)} f(z)}\right| \leq \frac{|z|}{M R} .
 \]
 :::
 
-:::{.concept}
+::: {.concept}
 The strategy:
 
 - Write the RHS as $a$.
@@ -37,7 +37,7 @@ The strategy:
 
 :::
 
-:::{.solution}
+::: {.solution}
 
 > Proof due to Swaroop Hegde!
 

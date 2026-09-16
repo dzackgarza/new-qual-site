@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal H=L^2([0,1],m)$ and let $E\subset[0,1]$ be Lebesgue measurable.
 Define
 \[

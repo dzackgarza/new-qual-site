@@ -30,7 +30,7 @@ audit:
   note: "Compared with Linear Algebra (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAL3, whose solution repeats this double-dual construction."
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a vector space over a field $F$.
 The evaluation map $e\colon V \to (V^\vee)^\vee$ is defined by $e(v)(f) \da f(v)$ for $v\in V$ and $f\in V^\vee$.
 
@@ -39,14 +39,14 @@ The evaluation map $e\colon V \to (V^\vee)^\vee$ is defined by $e(v)(f) \da f(v)
 2. Prove that $e$ is an isomorphism if and only if $V$ is finite dimensional.
 :::
 
-::: solution
+::: {.solution}
 Write $V^\vee=\operatorname{Hom}_F(V,F)$ for the algebraic
 dual. We use basis existence and basis extension, valid
 for arbitrary vector spaces by Zorn's lemma [@DF04].
 
 <1>1. The map $e:V\to V^{\vee\vee}$ is linear and injective.
 
-::: proof
+::: {.proof}
 For fixed $v$, evaluation $f\mapsto f(v)$ is linear
 on $V^\vee$. For $a,b\in F$ and $v,w\in V$,
 $$
@@ -62,7 +62,7 @@ therefore zero.
 
 <1>2. When $V$ is finite-dimensional, $e$ is onto.
 
-::: proof
+::: {.proof}
 Choose a basis $v_1,\ldots,v_n$ and let
 $\varepsilon_i$ be its coordinate functionals.
 Every $f\in V^\vee$ satisfies
@@ -80,7 +80,7 @@ this proves the forward implication in part (2).
 
 <1>3. When $V$ is infinite-dimensional, $e$ is not onto.
 
-::: proof
+::: {.proof}
 Choose a basis $(v_i)_{i\in I}$ with $I$ infinite.
 Sending $f$ to $(f(v_i))_{i\in I}$ identifies $V^\vee$
 with the full function space $F^I$: every assignment

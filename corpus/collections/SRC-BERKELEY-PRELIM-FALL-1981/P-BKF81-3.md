@@ -23,11 +23,11 @@ audit:
   note: "Decomposed the n points into G-orbits, whose sizes are powers of p, and used p∤n to force an orbit of size one."
 ---
 
-::: problem
+::: {.problem}
 Let $S_n$ act on $n$ objects and let $G\le S_n$ have order $p^k$, where the prime $p$ does not divide $n$. Show that $G$ has a fixed point.
 :::
 
-::: solution
+::: {.solution}
 Let $X$ be the set of the $n$ objects on which $S_n$, and hence $G$, acts.
 Decompose $X$ into $G$-orbits:
 $$
@@ -35,7 +35,7 @@ X=\mathcal O_1\sqcup\cdots\sqcup\mathcal O_r.
 $$
 
 <1>1. Every orbit has cardinality a power of $p$.
-::: proof
+::: {.proof}
 For $x\in X$, the orbit-stabilizer theorem gives
 $$
 |Gx|=[G:G_x].
@@ -52,7 +52,7 @@ for some $0\le j\le k$.
 :::
 
 <1>2. At least one orbit has size one.
-::: proof
+::: {.proof}
 Suppose no point were fixed by all of $G$. Then no orbit would have size
 $1$, so every orbit size would be divisible by $p$. Therefore
 $$

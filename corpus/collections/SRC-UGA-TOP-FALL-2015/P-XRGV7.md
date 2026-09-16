@@ -26,7 +26,7 @@ audit:
   note: Verified the mapping-torus annulus cover, the identity/reflection transition maps on the two overlap components, and the resulting Mayer–Vietoris matrices and Smith normal form.
 ---
 
-::: problem
+::: {.problem}
 Express a Klein bottle as the union of two annuli.
 
 Use the Mayer–Vietoris sequence and this decomposition to compute its homology.

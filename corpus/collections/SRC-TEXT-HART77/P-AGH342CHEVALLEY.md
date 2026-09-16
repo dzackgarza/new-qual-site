@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove Chevalley's theorem: Let $f: X \to Y$ be a finite surjective morphism of noetherian separated schemes, with $X$ affine.
 Then $Y$ is affine.
 

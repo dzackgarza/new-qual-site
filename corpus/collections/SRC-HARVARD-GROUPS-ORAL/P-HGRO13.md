@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Must the normalizer of a subgroup be a normal subgroup?
 Prove the claim or give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 No. Take $G=S_3$ and $H=\langle(12)\rangle$.
 
 <1>1. The normalizer of $H$ is $H$ itself.
-::: proof
+::: {.proof}
 For $g\in S_3$,
 \[
 gHg^{-1}=H
@@ -48,7 +48,7 @@ N_{S_3}(H)=H.
 :::
 
 <1>2. The subgroup $N_{S_3}(H)=H$ is not normal in $S_3$.
-::: proof
+::: {.proof}
 For example,
 \[
 (123)(12)(123)^{-1}=(23)\notin H.
@@ -57,7 +57,7 @@ Hence $(123)H(123)^{-1}\ne H$.
 :::
 
 <1>3. Therefore a subgroup normalizer need not be normal in the ambient group.
-::: proof
+::: {.proof}
 This follows from <1>1 and <1>2.
 :::
 :::

@@ -28,7 +28,7 @@ audit:
   note: Replaced the false claim 2p<q with a complete Sylow case split; in the exceptional n_q=2p case, element counting forces a normal Sylow p-subgroup.
 ---
 
-::: problem
+::: {.problem}
 Suppose $p < q$ are two odd primes.
 Suppose $G$ is a group of order $2pq$.
 Prove that $G$ has normal subgroups $N_1$ and $N_2$ such that $|N_1| = pq$, $|N_2| = q$, and $N_2 \subseteq N_1$.

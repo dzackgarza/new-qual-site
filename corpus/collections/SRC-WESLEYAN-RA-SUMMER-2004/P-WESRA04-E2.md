@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give an example of a continuous function of bounded variation that is not absolutely continuous.
 :::
 
-::: solution
+::: {.solution}
 The Cantor--Lebesgue function $F:[0,1]\to[0,1]$ is such an example.
 It is continuous and nondecreasing, hence has bounded variation, with
 \[

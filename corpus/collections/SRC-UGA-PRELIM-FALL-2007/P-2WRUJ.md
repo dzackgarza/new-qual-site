@@ -22,7 +22,7 @@ Let $k$ be a nonnegative integer.
 Prove by mathematical induction that for all $n \geq k$ we have $$\sum_{m=k}^{n} \binom{m}{k} = \binom{n+1}{k+1}.$$
 :::
 
-::: solution
+::: {.solution}
 For $n=k$,
 \[
 \sum_{m=k}^{k}\binom{m}{k}=\binom{k}{k}=1=\binom{k+1}{k+1}.

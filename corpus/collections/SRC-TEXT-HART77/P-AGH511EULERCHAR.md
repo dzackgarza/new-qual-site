@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C, D$ be any two divisors on a surface $X$, and let the corresponding invertible sheaves be $\mathcal{L}, \mathcal{M}$.
 Show that
 \[

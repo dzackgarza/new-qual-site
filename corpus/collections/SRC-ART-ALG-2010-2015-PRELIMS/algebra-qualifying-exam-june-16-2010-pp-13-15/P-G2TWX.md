@@ -26,7 +26,7 @@ audit:
   note: "Checked strictness and both Galois steps of the radical tower, nonnormality of the total extension, and irreducibility and inseparability of the characteristic-two example."
 ---
 
-::: problem
+::: {.problem}
 Give an example of each of the following:
 
 a. Fields $F \subset K \subset L$ such that $L/K$ and $K/F$ are Galois, $L/F$ is algebraic, but $L/F$ is not Galois.
@@ -34,14 +34,14 @@ a. Fields $F \subset K \subset L$ such that $L/K$ and $K/F$ are Galois, $L/F$ is
 b. A pair of fields $F \subset K$ such that $K$ is finite dimensional over $F$ but $K$ is not separable over $F$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For part (a), take
 $$
 F=\mathbb Q,\qquad K=\mathbb Q(\sqrt2),
 \qquad L=\mathbb Q(\sqrt[4]{2}).
 $$
 
-::: proof
+::: {.proof}
 Let $a=\sqrt[4]{2}>0$, so $a^2=\sqrt2$.
 Eisenstein's criterion at two makes $T^2-2$ and $T^4-2$
 irreducible over $\mathbb Q$ [@DF04]. Hence
@@ -67,7 +67,7 @@ F=\mathbb F_2(t),\qquad K=F(u),\qquad u^2=t,
 $$
 where $t$ is transcendental over $\mathbb F_2$.
 
-::: proof
+::: {.proof}
 The polynomial $T^2-t$ has no root in $F$.
 Indeed, a root written as $A(t)/B(t)$, with nonzero
 $A,B\in\mathbb F_2[t]$, would give $A(t)^2=tB(t)^2$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What are the involutions of an elliptic curve over $\CC$?
 
 What are the fixed points of such an involution, and what quotient does it produce?

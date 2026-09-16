@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $\varphi: \PP_k^1 \rightarrow \PP_k^3$ be the 3-uple embedding (I, Ex. 2.12). Let $\mathcal{I}$ be the sheaf of ideals of the twisted cubic curve $C$ which is the image of $\varphi$. Then $\mathcal{I} / \mathcal{I}^2$ is a locally free sheaf of rank 2 on $C$, so $\varphi^*\left(\mathcal{I} / \mathcal{I}^2\right)$ is a locally free sheaf of rank 2 on $\PP^1$.
   By (2.14), therefore,
   \[

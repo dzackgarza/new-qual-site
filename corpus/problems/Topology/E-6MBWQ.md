@@ -19,7 +19,7 @@ audit:
   date: 2026-08-16
 ---
 
-::: exercise
+::: {.exercise}
 Show that a metrizable space is compact if and only if it is sequentially compact.
 :::
 

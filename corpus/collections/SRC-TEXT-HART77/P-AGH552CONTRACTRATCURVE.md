@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \cong \PP^1$ be a curve in a surface $X$, with $Y^2<0$.
 Show that $Y$ is contractible (5.7.2) to a point on a projective variety $X_0$ (in general singular).
 :::

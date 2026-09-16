@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions.
 
 Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points.
@@ -35,7 +35,7 @@ But this says $\gamma\bar\alpha \homotopic c_x$ and $\alpha\bar\gamma \homotopic
 But $\gamma \homotopic c_x \circ \gamma \homotopic (\alpha\bar\gamma) \circ \gamma \homotopic \alpha\circ (\bar\gamma \circ\gamma) \homotopic \alpha$, which is what we desired.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Show that two paths in a simply connected space with common endpoints are homotopic rel endpoints.
 
 <1>1. Let $\gamma,\alpha:I\to X$ satisfy $\gamma(0)=\alpha(0)=x$ and $\gamma(1)=\alpha(1)=y$.

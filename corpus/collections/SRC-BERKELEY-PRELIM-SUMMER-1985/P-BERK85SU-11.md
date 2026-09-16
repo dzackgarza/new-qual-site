@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 1. Let $G$ be a cyclic group and let $a,b\in G$ be elements that are not squares. Prove that $ab$ is a square in $G$.
 2. Give an example showing that the conclusion can fail when $G$ is not cyclic.
 :::

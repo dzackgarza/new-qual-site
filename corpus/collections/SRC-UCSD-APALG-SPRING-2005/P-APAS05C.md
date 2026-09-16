@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume that $(\lambda, x)$ is an eigenpair of $A \in \mathbb{C}^{n\times n}$ such that $am(\lambda) = gm(\lambda) = 1$.
 Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \quad Y)^*$ such that
 \[

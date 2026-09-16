@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 23, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Verify that $\int _ { 1 } ^ { \infty } \mathrm { d } t \frac { e ^ { - x t } } { \sqrt { t ^ { 2 } - 1 } }$ is a solution to the differential equation $y ^ { \prime \prime } { + } \frac { 1 } { x } y ^ { \prime } { - } y =$ 0.
 :::

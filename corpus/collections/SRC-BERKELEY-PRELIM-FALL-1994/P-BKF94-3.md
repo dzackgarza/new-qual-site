@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_{-\pi}^{\pi}\frac{\sin(n\theta)}{\sin\theta}\,d\theta,

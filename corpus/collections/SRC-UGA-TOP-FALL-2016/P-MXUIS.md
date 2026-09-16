@@ -27,7 +27,7 @@ audit:
   note: Verified the boundary-loop presentation of the punctured sphere, the degree-two boundary inclusion of each Mobius band, the van Kampen elimination, and the nonorientable-surface classification.
 ---
 
-::: problem
+::: {.problem}
 Let $S_k$ be the space obtained by removing $k$ disjoint open disks from the sphere $S^2$.
 Form $X_k$ by gluing $k$ Möbius bands onto $S_k$ , one for each circle boundary component of $S_k$ (by identifying the boundary circle of a Möbius band homeomorphically with a given boundary component circle).
 

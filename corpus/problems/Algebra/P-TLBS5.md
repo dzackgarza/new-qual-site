@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Give an interesting example of a non-normal subgroup in a familiar group.
 (2) Is the rotation subgroup $\operatorname{SO}(2)$ normal inside the special linear group $\operatorname{SL}_2(\mathbb{R})$? Prove your assertion with an explicit calculation.
 :::
 
-::: solution
+::: {.solution}
 A familiar example is
 \[
 \langle(12)\rangle\le S_3.

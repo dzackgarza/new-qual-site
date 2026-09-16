@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 7. Suppose $f : \mathbb { D } \to \mathbb { C }$ is holomorphic.
    Show that the diameter $d =$ $\begin{array} { r } { \operatorname* { s u p } _ { z , w \in \mathbb { D } } | f ( z ) - f ( w ) | } \end{array}$ of the image of f satisfies
 
@@ -31,7 +31,7 @@ In connection with this result, see the relationship between the diameter of a c
 [Hint: $\begin{array} { r } { 2 f ^ { \prime } ( 0 ) = \frac { 1 } { 2 \pi i } \int _ { | \zeta | = r } \frac { f ( \zeta ) - f ( - \zeta ) } { \zeta ^ { 2 } } d \zeta } \end{array}$ whenever $0 < r < 1 . ]$
 :::
 
-::: solution
+::: {.solution}
 Fix $0<r<1$. By the hinted identity,
 \[
 2f'(0)=\frac1{2\pi i}\int_{|\zeta|=r}

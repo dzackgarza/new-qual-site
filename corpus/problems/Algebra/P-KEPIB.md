@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that every finite field extension is algebraic.
 :::
 
-::: solution
+::: {.solution}
 Assume $[L:K]=n<\infty$ and let $\alpha\in L$. The $n+1$ vectors
 \[
 1,\alpha,\alpha^2,\dots,\alpha^n

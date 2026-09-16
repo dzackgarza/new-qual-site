@@ -38,12 +38,12 @@ a) the complex derivative $f ^ { \prime } ( 0 )$ exists;
 b) f is holomorphic in a neighborhood of 0.
 :::
 
-::: solution
+::: {.solution}
 Part (a) is true, with $f'(0)=0$. Part (b) is false.
 
 <1>1. The difference quotient tends to zero at the origin.
 
-::: proof
+::: {.proof}
 For $z=x+iy$, one has $f(0)=0$ and $|x|,|y|\leq|z|$.
 The triangle inequality gives
 $$
@@ -59,7 +59,7 @@ so the complex derivative exists and equals zero.
 
 <1>2. Every neighborhood contains a point where the complex derivative fails to exist.
 
-::: proof
+::: {.proof}
 Writing $f=u+iv$, its real partial derivatives are
 $$
 u_x=3x^2-3y^2,\qquad u_y=-6xy,\qquad

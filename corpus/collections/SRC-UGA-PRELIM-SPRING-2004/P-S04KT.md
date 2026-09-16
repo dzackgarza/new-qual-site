@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 a) Give the definition for a function $L: \mathbb{R}^n \to \mathbb{R}^m$ to be a linear transformation.
 
 b) Prove that the kernel of a linear transformation $L: \mathbb{R}^n \to \mathbb{R}^m$ is a subspace of $\mathbb{R}^n$.

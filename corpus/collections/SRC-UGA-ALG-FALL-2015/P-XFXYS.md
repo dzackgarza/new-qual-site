@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a rng (a ring not assumed to have an identity $1$) with $R \ne \{0\}$, and suppose $R$ contains an element $u \in R$ such that for all $y \in R$, there exists an $x \in R$ with $x u = y$ (that is, $R u = R$).
 
 Prove that $R$ contains a maximal left ideal.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the existence of a maximal left ideal in $R$ via Zorn's lemma by observing that any left ideal containing $u$ must equal $R$.
 
 <1>1. Key Lemma: Any left ideal containing $u$ is all of $R$.

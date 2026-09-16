@@ -23,14 +23,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X, Y, Z$ be Banach spaces and $B : X \times Y \to Z$ be a map such that for any fixed $x \in X$, $B(x, \cdot) \in L(Y, Z)$ and for any fixed $y \in Y$, $B(\cdot, y) \in L(X, Z)$.
 Show that there is $C$ such that $\|B(x,y)\| \leq C\|x\|\|y\|$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Build a pointwise-bounded family of operators on $Y$.
-::: proof
+::: {.proof}
 For each $x\in X$ with $\|x\|\le1$, define
 \[
 T_x:Y\to Z,
@@ -59,7 +59,7 @@ is pointwise bounded.
 :::
 
 <1>2. Apply the Uniform Boundedness Principle.
-::: proof
+::: {.proof}
 Because $Y$ is Banach, the Uniform Boundedness Principle yields
 \[
 C:=\sup_{\|x\|\le1}\|T_x\|<\infty.
@@ -73,7 +73,7 @@ Equivalently,
 :::
 
 <1>3. Rescale to arbitrary $x$ and $y$.
-::: proof
+::: {.proof}
 If $x=0$ or $y=0$, separate linearity gives $B(x,y)=0$. Otherwise set
 \[
 u=\frac{x}{\|x\|}.

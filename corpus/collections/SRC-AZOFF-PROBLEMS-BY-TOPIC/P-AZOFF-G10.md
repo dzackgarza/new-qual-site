@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 10, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $a > 0$ . Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \cos x } { ( x ^ { 2 } + a ^ { 2 } ) ^ { 2 } } } d x$
 :::

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 4. By rearranging the series
 
 $$
@@ -25,7 +25,7 @@ $$
 show directly, without diferentiation, that $\wp ( z + \omega ) = \wp ( z )$ whenever $\omega \in \Lambda .$ [Hint: For R suficiently large, note that $\wp ( z ) = \wp ^ { R } ( z ) + O ( 1 / R )$ where $\begin{array} { r } { \dot { \wp } ^ { R } ( z ) = z ^ { - 2 } + \sum _ { 0 < \lvert \omega \rvert < R } ( ( z + \omega ) ^ { - 2 } - \omega ^ { - 2 } ) } \end{array}$ Next, observe that both $\boldsymbol { \wp } ^ { R } ( z + 1 ) - \boldsymbol { \wp } ^ { R } ( z )$ and $\wp ^ { R } ( z + \tau ) - \wp ^ { R } ( z )$ are $\begin{array} { r } { O ( \sum _ { R - c < | \omega | < R + c } | \omega | ^ { - 2 } ) = O ( 1 / R ) . ] } \end{array}$
 :::
 
-::: solution
+::: {.solution}
 It suffices to prove periodicity under an arbitrary fixed $\lambda\in\Lambda$. For $R>0$, define
 \[
 \wp^R(z)=\frac1{z^2}+

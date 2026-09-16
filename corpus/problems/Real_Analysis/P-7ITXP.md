@@ -16,7 +16,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $E \subseteq \RR^n$ be bounded.
 Prove the following are equivalent: 
 

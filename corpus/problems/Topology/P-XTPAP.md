@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 7. **Main Idea**: Nothing to it.
    Homotopy:
 

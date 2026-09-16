@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 How many groups are there up to isomorphism of order $pq$ where $p<q$ are prime integers?
 :::
 

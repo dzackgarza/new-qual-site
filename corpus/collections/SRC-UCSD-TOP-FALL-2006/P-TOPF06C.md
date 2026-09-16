@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many connected covering spaces does $\mathbb{RP}^3 \times \mathbb{RP}^7$ have?
 Can you identify any of them?
 :::

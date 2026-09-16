@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $p(x)\in F[x]$ be irreducible.
 Suppose $\alpha$ and $\beta$ are distinct roots of $p$ in an extension field.
 Must $F(\alpha)$ and $F(\beta)$ be isomorphic as extensions of $F$?

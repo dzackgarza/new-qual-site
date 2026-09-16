@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify all finite-dimensional (associative) **division algebras** over the field of real numbers $\mathbb{R}$ (Frobenius' Theorem).
 :::
 
-::: solution
+::: {.solution}
 **Frobenius' theorem.** Every finite-dimensional associative division algebra over $\mathbb R$ is isomorphic to exactly one of
 \[
 \mathbb R,\qquad \mathbb C,\qquad \mathbb H.

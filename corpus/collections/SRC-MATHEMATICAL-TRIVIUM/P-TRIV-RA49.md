@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 49, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate the Fourier image $\tilde { f } ( \vec { k } )$ of the function $f ( \vec { r } ) = \alpha \frac { e ^ { - \mu r } } { r }$ , where $r = | \vec { r } |$ $\vec { r } \in \mathbb R ^ { 3 }$ , and α and µ are constants.
 :::

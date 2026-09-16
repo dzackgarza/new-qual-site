@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Each subpart is an exact repeated problem elsewhere in the same packet family; they are grouped because the 2013 source presents them as one numbered problem.
 ---
 
-::: problem
+::: {.problem}
 Evaluate:
 
 (a)

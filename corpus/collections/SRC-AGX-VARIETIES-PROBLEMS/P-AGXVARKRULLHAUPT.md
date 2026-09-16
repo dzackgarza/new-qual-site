@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $f\in \OO_X$ is nonconstant, then any irreducible component of the fiber $f^{-1}(0)$ has dimension $d = \dim X - 1$.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. If $\mathcal{E}$ is a locally free sheaf of rank $r$ on a (nonsingular) curve $C$, then there is a sequence
 \[
 0=\mathcal{E}_0 \subseteq \mathcal{E}_1 \subseteq \ldots \subseteq \mathcal{E}_r=\mathcal{E}

@@ -28,9 +28,9 @@ audit:
 State and prove the Cayley-Hamilton theorem.
 :::
 
-::: solution
+::: {.solution}
 <1>1. State the theorem.
-::: proof
+::: {.proof}
 Let $V$ be a finite-dimensional vector space over a field $F$, and let
 $T\in\operatorname{End}_F(V)$. Its characteristic polynomial is
 $$
@@ -52,7 +52,7 @@ $$
 :::
 
 <1>2. Apply the adjugate identity to the polynomial matrix $xI-A$.
-::: proof
+::: {.proof}
 Work in the matrix ring $M_n(F[x])$. The adjugate identity gives
 $$
 (xI-A)\operatorname{adj}(xI-A)
@@ -73,7 +73,7 @@ where $C_i\in M_n(F)$.
 :::
 
 <1>3. Compare coefficients of powers of $x$.
-::: proof
+::: {.proof}
 Expanding the identity in step <1>2 gives
 $$
 \begin{aligned}
@@ -89,7 +89,7 @@ These are ordinary matrix identities over $F$.
 :::
 
 <1>4. Multiply by successive powers of $A$ and telescope.
-::: proof
+::: {.proof}
 Multiply the first identity by $I$, the second by $A$, the third by $A^2$,
 and so on, always on the left. This yields
 $$

@@ -24,7 +24,7 @@ audit:
 Show that the Quaternion group has only one element of order 2, namely $-1$.
 :::
 
-::: solution
+::: {.solution}
 The quaternion group is
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\},

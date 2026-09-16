@@ -15,7 +15,7 @@ audit:
   note: Checked against Laurent expansions and singularities, Problem 8, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Take $\begin{array} { r } { f ( z ) = \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z } } \end{array}$ and $\begin{array} { r } { g ( z ) = \sum _ { n = - \infty } ^ { \infty } \frac { 1 } { ( z - n ) ^ { 2 } } } \end{array}$
 
 a) Show these functions have the same singularities in $\mathbb { C }$

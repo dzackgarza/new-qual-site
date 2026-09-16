@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $E = \mathbb{R} \times \mathbb{Z} \cup \mathbb{Z} \times \mathbb{R}$ be the subset of the plane whose points have at least one of the coordinates an integer.
 Let $S^1 \vee S^1 \subset \mathbb{R}^2 \times \mathbb{R}^2$ be the one-point union of circles.
 Define $p : E \to S^1 \vee S^1$ by

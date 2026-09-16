@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Determine the greatest common divisor of the set
 \[
 \{n^{13}-n:n\in\mathbb Z\}.

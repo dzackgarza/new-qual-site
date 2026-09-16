@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:(0,\infty)\to(0,\infty)$ be monotone decreasing and suppose
 \[
 \int_0^\infty f(x)\,dx<\infty.

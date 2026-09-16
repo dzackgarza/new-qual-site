@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a curve of genus $g$.
 Show that there is a finite morphism $f: X \to \PP^1$ of degree $\leq g+1$.
 

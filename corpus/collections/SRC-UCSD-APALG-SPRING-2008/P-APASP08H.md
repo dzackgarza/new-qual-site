@@ -17,14 +17,14 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Give a representation-theoretic interpretation of the identity
 $$
 \frac{\partial}{\partial p_1}p_1^n = n p_1^{n-1}.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Provide the representation-theoretic interpretation of the symmetric function identity $\frac{\partial}{\partial p_1} p_1^n = n p_1^{n-1}$ via the Frobenius characteristic map and representation restriction from $S_n$ to $S_{n-1}$.
 
 <1>1. The Frobenius characteristic map and the regular representation:

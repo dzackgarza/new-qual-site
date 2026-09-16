@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a reduced noetherian scheme.
 Show that $X$ is affine if and only if each irreducible component is affine.
 :::

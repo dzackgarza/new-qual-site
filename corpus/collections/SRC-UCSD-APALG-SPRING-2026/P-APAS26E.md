@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{A}$ be an algebra which admits a faithful state $\sigma \colon \mathcal{A} \to \mathbb{C}$.
 Prove that $\mathcal{A}$ admits a faithful tracial state $\tau \colon \mathcal{A} \to \mathbb{C}$.
 

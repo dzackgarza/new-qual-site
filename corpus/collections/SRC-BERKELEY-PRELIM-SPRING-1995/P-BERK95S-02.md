@@ -16,7 +16,7 @@ audit:
   note: The retained PDF page confirms that A is a 3-by-3 matrix; the extraction garbled the size.
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 A=\begin{pmatrix}

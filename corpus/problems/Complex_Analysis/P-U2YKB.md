@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Show that a uniform limit of continuous functions is continuous.
 :::
 
-::: solution
+::: {.solution}
 Let $f_n:X\to\mathbb C$ be continuous and suppose $f_n\to f$ uniformly.
 Fix $x_0\in X$ and $\varepsilon>0$. Choose $N$ such that
 \[

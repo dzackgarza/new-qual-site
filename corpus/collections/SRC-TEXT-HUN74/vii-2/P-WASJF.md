@@ -31,7 +31,7 @@ Similarly, show $A$ has a right $m\times n$ inverse $\iff \mathrm{rank} A = n$.
 :::
 
 
-::: solution
+::: {.solution}
 Regard \(A\) as the matrix of the right-\(D\)-linear map
 \[
 T:D^m\longrightarrow D^n,
@@ -41,7 +41,7 @@ T:D^m\longrightarrow D^n,
 Its rank is the dimension of its image.
 
 <1>1. \(A\) has a left inverse if and only if \(\operatorname{rank}A=m\).
-::: proof
+::: {.proof}
 Suppose first that \(B A=I_m\). If \(Ax=0\), then
 \[
 x=I_mx=BAx=0,
@@ -64,7 +64,7 @@ for \(1\le i\le m\), and send every added basis vector to \(0\). Then
 :::
 
 <1>2. \(A\) has a right inverse if and only if \(\operatorname{rank}A=n\).
-::: proof
+::: {.proof}
 Suppose \(AC=I_n\) for some \(m\times n\) matrix \(C\). Then the associated
 map \(T:D^m\to D^n\) is surjective, since for every \(y\in D^n\),
 \[

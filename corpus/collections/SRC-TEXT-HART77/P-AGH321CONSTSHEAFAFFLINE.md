@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $X=\AA_k^1$ be the affine line over an infinite field $k$.
 Let $P, Q$ be distinct closed points of $X$, and let $U=X-\ts{P, Q}$.
 Show that $H^1(X, \ZZ_U) \neq 0$.

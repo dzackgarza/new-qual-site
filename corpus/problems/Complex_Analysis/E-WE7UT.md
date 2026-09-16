@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Classify the singularities of 
 \[
 f(z) = {z^3+1\over z^2(z+1)}
@@ -23,11 +23,11 @@ f(z) = {z^3+1\over z^2(z+1)}
 
 :::
 
-:::{.concept}
+::: {.concept}
 Showing a pole $z_0$ of $f$ is order $n$: show that $z_0$ is a zero of order $n$ of $1/f$, i.e. $1/f = (z-z_0)^nh(z)$ with $h$ nonvanishing in a neighborhood of $z_0$.
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) = p(z)/q(z)$ and factor $p$: a principal root is $\omega = e^{i\pi 3}$, so 
 \[
 p(z) 

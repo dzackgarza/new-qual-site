@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 6. **Main Idea**: Using a funky deformation retract.
    See Hatcher, PDF page 55, Example 1.23. Add picture!!
 

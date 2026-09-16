@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) \in \mathbb{Z}[x]$ be an irreducible polynomial of degree $n \ge 2$, and let $K/\mathbb{Q}$ be its splitting field with $\operatorname{Gal}(K/\mathbb{Q}) \cong S_n$.
 What algebraic, geometric, and field-theoretic properties must the roots $\alpha_1, \alpha_2, \dots, \alpha_n \in \mathbb{C}$ of $f(x)$ satisfy?
 :::
 
-::: solution
+::: {.solution}
 Let \(K\) be the splitting field and identify \(G=\operatorname{Gal}(K/\mathbb Q)\) with the full permutation group \(S_n\) on the roots.
 
 Since the characteristic is \(0\), the roots \(\alpha_1,\dots,\alpha_n\) are distinct. Irreducibility gives transitivity, hence each root has degree

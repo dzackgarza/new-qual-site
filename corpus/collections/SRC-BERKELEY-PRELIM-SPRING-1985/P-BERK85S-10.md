@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For arbitrary $a,b,c$ in a field $F$, compute the minimal polynomial of
 \[
 \begin{pmatrix}

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate the following antiderivatives on intervals where the real-valued integrands are defined:
 
 1. $\displaystyle \int \frac{1-\sqrt x}{1+\sqrt x}\,dx$.
@@ -38,7 +38,7 @@ Evaluate the following antiderivatives on intervals where the real-valued integr
 12. $\displaystyle \int \frac{dx}{\sqrt{x\sqrt x-x^2}}$.
 :::
 
-::: solution
+::: {.solution}
 For (1), let $t=\sqrt x$. Then $dx=2t\,dt$ and
 \[
 2t\frac{1-t}{1+t}=-2t+4-\frac4{t+1}.

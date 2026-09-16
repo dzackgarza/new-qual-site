@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Are the following statements true or false?
 If true, give a brief proof.
 If false, give a counterexample.
@@ -34,7 +34,7 @@ Assume that there are germs $\zeta, \zeta_n \in \mathcal{O}$ such that $\lim_{n 
 Then there is a function element $(f, D)$ such that $\zeta_n = (f)_{\pi(\zeta_n)}$ for $n$ sufficiently large.
 :::
 
-::: solution
+::: {.solution}
 **(i) False.** Take $u(z)=\operatorname{Re}z$ and $v(z)=0$ on
 $U=\mathbb C$. They agree on the imaginary axis, which has accumulation
 points in $U$, but $u\ne v$.

@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Determine the Galois groups of the following polynomials over $\mathbb Q$.
 
 - $f(x)=x^4+4x^2+1$
@@ -26,7 +26,7 @@ Determine the Galois groups of the following polynomials over $\mathbb Q$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. For
 \[
 f_1(x)=x^4+4x^2+1,

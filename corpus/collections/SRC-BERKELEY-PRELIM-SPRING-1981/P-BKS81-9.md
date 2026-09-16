@@ -15,7 +15,7 @@ audit:
   note: The retained extraction writes the second condition using undefined symbols a,b,c. Since the same sentence names the eigenvalues lambda_1,lambda_2,lambda_3 and the three conditions are asserted equivalent, the card records the corresponding pairwise eigenvalue sums and leaves this reconstruction explicit here.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a real symmetric $3\times3$ matrix with eigenvalues $\lambda_1,\lambda_2,\lambda_3$.
 Show that the following are equivalent:
 

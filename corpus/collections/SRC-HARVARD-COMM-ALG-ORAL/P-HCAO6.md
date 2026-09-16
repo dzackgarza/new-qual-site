@@ -25,14 +25,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a principal ideal domain and let $a \in R$ be a nonzero nonunit.
 Show that $a$ is irreducible if and only if the ideal $(a)$ is maximal.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $a$ is irreducible, then $(a)$ is maximal.
-::: proof
+::: {.proof}
 Suppose
 \[
 (a)\subseteq I\subseteq R.
@@ -47,7 +47,7 @@ $(a)$ is maximal.
 :::
 
 <1>2. If $(a)$ is maximal, then $a$ is irreducible.
-::: proof
+::: {.proof}
 Suppose
 \[
 a=bc.

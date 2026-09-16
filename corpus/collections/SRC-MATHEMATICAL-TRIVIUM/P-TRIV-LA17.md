@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 17, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the reflection maps in $\mathbb { R } ^ { n }$ . The reflection across the origin transforms every vector ${ \vec { x } } \in \mathbb { R } ^ { n } { \mathrm { ~ t o ~ } } - { \vec { x } } .$ The reflection across one of the basis axis $O i$ inverts all coordinates of $\vec { x }$ except $x _ { i }$ Similarly, one can define the reflections across the planes in $\mathbb { R } ^ { 3 }$ and higher dimensional hyperplanes in $\mathbb { R } ^ { n } , n > 3$ Some of these reflections are equivalent to rotations around the origin O, others are not.
 
 (a) Observe that in $\mathbb { R } ^ { 2 }$ the central reflection is equivalent to the rotation by an angle π around O. Show that no reflections across a line crossing O can be achieved by any rotation.

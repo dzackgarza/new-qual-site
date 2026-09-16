@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Assume $f$ is continuous in the region $\theset{x+iy \suchthat x\geq x_0, ~ 0\leq y \leq b}$, and the following limit exists independent of $y$:
 \[
 \lim_{x\to +\infty}f(x+iy) = A
@@ -26,7 +26,7 @@ Show that if $\gamma_x \definedas \theset{z = x+it \suchthat 0 \leq t \leq b}$, 
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 The key insight:
 \[
 \int_\gamma A \dz 

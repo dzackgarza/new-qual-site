@@ -31,7 +31,7 @@ audit:
     one and kernel of rank two.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the topological space formed by filling in two circles $S^1 \times \theset{p_1 }$ and $S^1 \times \theset{p_2 }$ in the torus $S^1 \times S^1$ with disks.
 
 Calculate the homology groups of $X$.

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be an $r\times r$ real matrix. Prove that
 \[
 e^A=I+A+\frac{A^2}{2!}+\cdots+\frac{A^n}{n!}+\cdots

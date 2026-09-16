@@ -15,7 +15,7 @@ audit:
   note: Checked against Differential Equations, Problem 10, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find C(t) when
 
 $$

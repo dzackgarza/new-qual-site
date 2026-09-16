@@ -24,13 +24,13 @@ audit:
   note: "Verified the characteristic polynomial, determinant of the cyclic-basis matrix, and the complete exact matrix identity AP=PC."
 ---
 
-::: problem
+::: {.problem}
 Find the rational canonical form over $\mathbb{Q}$ of the following matrix:
 
 $$\begin{pmatrix} 3 & -1 & 10 \\ 0 & 2 & 5 \\ 0 & 0 & 3 \end{pmatrix}.$$
 :::
 
-::: solution
+::: {.solution}
 Let $A$ denote the given matrix. Its rational canonical form is
 $$
 C=\begin{pmatrix}
@@ -45,7 +45,7 @@ We use the companion-matrix convention with ones on the subdiagonal.
 
 <1>1. The vector $v=(0,0,1)^t$ is cyclic for $A$.
 
-::: proof
+::: {.proof}
 Because $A$ is upper triangular,
 $$
 \det(TI-A)=(T-3)^2(T-2)=f(T).
@@ -65,7 +65,7 @@ Thus these three vectors form a basis of $\mathbb Q^3$.
 
 <1>2. In that basis, $A$ has the displayed companion matrix $C$.
 
-::: proof
+::: {.proof}
 The exact matrix products are
 $$
 AP=PC=

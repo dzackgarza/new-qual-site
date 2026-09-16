@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use residues to calculate $\int_{-\infty}^{\infty} \frac{\cos x}{1 + x^2}\,dx$.
 :::
 
-::: solution
+::: {.solution}
 Integrate
 \[
 F(z)=\frac{e^{iz}}{1+z^2}

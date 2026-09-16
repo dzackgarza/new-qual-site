@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use the method of residues to evaluate
 $$
 \int_0^\infty \frac{dt}{t^3 + 1}.
 $$
 :::
 
-::: solution
+::: {.solution}
 Integrate
 \[
 F(z)=\frac1{1+z^3}

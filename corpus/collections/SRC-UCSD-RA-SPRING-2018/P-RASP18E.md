@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a finite positive measure on $(\mathbb{R}, \mathcal{B})$, $f : \mathbb{R} \to \mathbb{C}$ be a Borel measurable function, and for $x \in \mathbb{R}$, let
 $$
 (\mu * f)(x) := \begin{cases} \int_{\mathbb{R}} f(x - y)\,d\mu(y) & \text{if } \int_{\mathbb{R}} |f(x - y)|\,d\mu(y) < \infty, \\ 0 & \text{otherwise.} \end{cases}
@@ -40,9 +40,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove the \(L^p\) convolution bound.
-::: proof
+::: {.proof}
 For \(y\in\mathbb R\), let \(\tau_y f(x)=f(x-y)\). Translation invariance of Lebesgue measure gives
 \[
 \|\tau_y f\|_p=\|f\|_p.
@@ -63,7 +63,7 @@ In particular the defining integral is finite for almost every \(x\), and
 :::
 
 <1>2. Compute the Fourier transform.
-::: proof
+::: {.proof}
 Assume \(f\in L^1(\mathbb R)\). Part 1 gives \(\mu*f\in L^1\), and Tonelli--Fubini applies because
 \[
 \int_{\mathbb R}\int_{\mathbb R}|f(x-y)|\,d\mu(y)\,dx
@@ -92,7 +92,7 @@ Thus
 :::
 
 <1>3. Apply Fourier inversion.
-::: proof
+::: {.proof}
 Assume now that \(f,\widehat f\in L^1(\mathbb R)\). Since \(\mu\) is finite,
 \[
 |\widehat\mu(k)|

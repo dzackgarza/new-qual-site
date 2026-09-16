@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Exhibit the rational and Jordan canonical forms for the following matrix $A\in M_4(\CC)$:
 \[
 A=\left(\begin{array}{cccc}

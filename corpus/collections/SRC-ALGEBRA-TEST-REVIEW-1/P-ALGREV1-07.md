@@ -27,7 +27,7 @@ audit:
 Find all abelian groups of order $200$, up to isomorphism.
 :::
 
-::: solution
+::: {.solution}
 Since
 $$
 200=2^3\cdot5^2,
@@ -36,7 +36,7 @@ the classification theorem for finite abelian groups separates the problem
 into the $2$-primary and $5$-primary parts.
 
 <1>1. Classify the abelian groups of order $2^3$.
-::: proof
+::: {.proof}
 The partitions of $3$ are
 $$
 3,\qquad 2+1,\qquad 1+1+1.
@@ -52,7 +52,7 @@ $$
 :::
 
 <1>2. Classify the abelian groups of order $5^2$.
-::: proof
+::: {.proof}
 The partitions of $2$ are
 $$
 2,\qquad1+1.
@@ -66,7 +66,7 @@ $$
 :::
 
 <1>3. Combine the independent primary components.
-::: proof
+::: {.proof}
 Every finite abelian group of order $200$ is uniquely the direct product of
 one group from step <1>1 and one group from step <1>2. Thus there are exactly
 $3\cdot2=6$ isomorphism types:

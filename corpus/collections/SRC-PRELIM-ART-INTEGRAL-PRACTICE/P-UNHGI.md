@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{x+1}{x^2+2x+3}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $u=x^2+2x+3$, so $du=2(x+1)\,dx$. Therefore
 \[
 \boxed{\int\frac{x+1}{x^2+2x+3}\,dx=\frac12\ln(x^2+2x+3)+C.}

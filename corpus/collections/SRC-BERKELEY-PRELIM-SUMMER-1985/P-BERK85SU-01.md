@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 1. Show that a real $2\times2$ matrix $A$ satisfies $A^2=-I$ if and only if
 \[
 A=\begin{pmatrix}

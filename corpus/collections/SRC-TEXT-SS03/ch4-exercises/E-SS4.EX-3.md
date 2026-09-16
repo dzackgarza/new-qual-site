@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3. Show, by contour integration, that if $a > 0$ and $\xi \in \mathbb { R }$ then
 
 $$
@@ -33,7 +33,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 I(\xi)=\int_{-\infty}^{\infty}\frac{a}{a^2+x^2}e^{-2\pi i x\xi}\,dx.

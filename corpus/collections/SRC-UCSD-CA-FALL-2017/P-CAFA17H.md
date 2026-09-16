@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n \geq 1$ be an integer.
 Let $u: \mathbb{C} \to \mathbb{R}$ be a harmonic function such that $|u(z)| \leq C(1 + |z|^n)$ for all $z \in \mathbb{C}$.
 Show that $u$ is a polynomial.
@@ -22,7 +22,7 @@ Show that $u$ is a polynomial.
 The official Fall 2017 exam states the growth bound for all points of $\mathbb C$. The previous card transcription incorrectly restricted it to the real axis; that weaker statement is false, for example for $u(z)=\operatorname{Im}(e^z)$.
 :::
 
-::: solution
+::: {.solution}
 Because $\mathbb C$ is simply connected, $u$ has a global harmonic conjugate $v$. Thus
 \[
 F=u+iv

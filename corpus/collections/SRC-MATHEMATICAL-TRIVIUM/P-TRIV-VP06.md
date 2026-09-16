@@ -15,7 +15,7 @@ audit:
   note: Checked against Variational Principle, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the functional $S [ x , y , z ] = \int _ { t _ { 1 } } ^ { t _ { 2 } } d t L ( x , y , z , x ^ { \prime } , y ^ { \prime } , z ^ { \prime } )$ , where
 
 $$

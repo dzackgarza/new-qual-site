@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $M_n(F)$ be the space of $n \times n$ matrices over a field $F$.
 
 1. Prove that the sum and scalar multiples of symmetric matrices are symmetric (so symmetric matrices form a subspace of $M_n(F)$).

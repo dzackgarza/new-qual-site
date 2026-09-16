@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $f(x)$ be an irreducible polynomial of degree 4 in $\mathbb{Q}[x]$ whose splitting field $K$ over $\mathbb{Q}$ has Galois group $G = \operatorname{Gal}(K/\mathbb{Q}) \cong S_4$. Let $\theta$ be a root of $f(x)$. Prove that $\mathbb{Q}(\theta)$ is an extension of $\mathbb{Q}$ of degree 4 and that there are no intermediate fields strictly between $\mathbb{Q}$ and $\mathbb{Q}(\theta)$.
 
 (b) Prove that if $K$ is a Galois extension of $\mathbb{Q}$ of degree 4, then there is an intermediate subfield strictly between $K$ and $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\mathbb{Q}(\theta)$ for an $S_4$-quartic has no non-trivial intermediate subfields using maximal subgroups in (a), and that every degree 4 Galois extension has intermediate subfields via order 2 subgroups in (b).
 
 <1>1. Part (a): Degree $[\mathbb{Q}(\theta) : \mathbb{Q}] = 4$.

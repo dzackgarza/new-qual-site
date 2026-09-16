@@ -38,7 +38,7 @@ where some $a_i$ may be zero, but not units.
 :::
 
 
-::: solution
+::: {.solution}
 Let $x_1,\ldots,x_m$ be a generating set of $M$. Define the surjection
 $$
 \pi:R^m\longrightarrow M,
@@ -51,7 +51,7 @@ M\cong R^m/\ker\pi.
 $$
 
 <1>1. Realize $M$ as the cokernel of a map between finite free modules.
-::: proof
+::: {.proof}
 Because $R$ is Euclidean, every submodule of a finite free module is finitely
 generated. Hence
 $$
@@ -74,7 +74,7 @@ $$
 :::
 
 <1>2. Diagonalize the presentation map without changing its cokernel up to isomorphism.
-::: proof
+::: {.proof}
 By the preceding matrix-diagonalization exercise over a Euclidean domain,
 there are automorphisms
 $$
@@ -101,7 +101,7 @@ positions are simply $a_i=0$.
 :::
 
 <1>3. Decompose $M$ as a product of cyclic modules.
-::: proof
+::: {.proof}
 By step <1>2 and [[E-SMI-8000E-ED7]],
 $$
 \begin{aligned}
@@ -116,7 +116,7 @@ decomposition into $m$ cyclic factors of this form, allowing $a_i=0$.
 :::
 
 <1>4. If $m$ is minimal, none of the $a_i$ is a unit.
-::: proof
+::: {.proof}
 If some $a_i$ were a unit, then
 $$
 Ra_i=R,

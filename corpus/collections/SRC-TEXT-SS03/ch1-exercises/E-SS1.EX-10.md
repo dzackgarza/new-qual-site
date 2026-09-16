@@ -23,7 +23,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Show that
 \[
 4\frac{\partial}{\partial z}\frac{\partial}{\partial\overline z}

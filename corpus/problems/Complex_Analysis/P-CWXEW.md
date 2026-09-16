@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find a bijective conformal map from $G$ to $\mathbb{H} = \{w \in \mathbb{C} \mid \operatorname{Im}(w) > 0\}$, where
 $$G \coloneqq \{z \in \mathbb{C} \mid |z-1| < \sqrt{2}, \, |z+1| < \sqrt{2}\} \setminus [0, i).$$
 :::
 
-::: solution
+::: {.solution}
 The two circles $|z-1|=\sqrt2$ and $|z+1|=\sqrt2$ meet orthogonally at $\pm i$. Set
 $$
 T(z)=\frac{z-i}{z+i}.

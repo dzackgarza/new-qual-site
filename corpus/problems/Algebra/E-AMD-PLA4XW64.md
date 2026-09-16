@@ -22,7 +22,7 @@ audit:
 Show that the transitive subgroups of $S_3$ are $S_3, A_3$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** transitivity forces $3$ to divide the order of the subgroup, which leaves only the two subgroups of $S_3$ of order divisible by $3$.
 
 <1>1. Let $H \leq S_3$ act transitively on $X = \ts{1,2,3}$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a.
 What is the definition of a **regular** (or Galois) covering space?
 

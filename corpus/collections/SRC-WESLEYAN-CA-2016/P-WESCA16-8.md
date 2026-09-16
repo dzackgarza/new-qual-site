@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 8 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic with
 \[
 f(0)=f'(0)=f''(0)=0.

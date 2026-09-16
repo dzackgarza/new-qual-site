@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Show that
 
 $$
@@ -25,7 +25,7 @@ $$
 where $\gamma$ is Euler’s constant.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 H_n=1+\frac12+\cdots+\frac1n.

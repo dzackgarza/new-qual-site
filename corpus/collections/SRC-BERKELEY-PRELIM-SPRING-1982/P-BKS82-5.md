@@ -15,7 +15,7 @@ audit:
   note: Transcribed from the retained PDF; the extracted markdown contains a different Problem 5.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $(g_n)$ be twice differentiable functions on $[0,1]$ such that
 \[
 g_n(0)=g_n'(0)=0

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Give an example of an integral domain which is not a UFD. Give a brief proof that it is not a UFD.
 
 (b) Find a UFD $A$ and a prime ideal $\mathfrak{p} \subseteq A$ such that $A/\mathfrak{p}$ is not a UFD. (Hint: use part (a)!)

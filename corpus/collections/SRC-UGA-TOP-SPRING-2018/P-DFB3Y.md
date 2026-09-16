@@ -26,7 +26,7 @@ audit:
   note: Verified the reduced cofiber exact sequence, including the degree-zero map and the n=0 edge case if S^0 is admitted.
 ---
 
-::: problem
+::: {.problem}
 For topological spaces $X,Y$, the mapping cone $C(f)$ of a map $f:X\to Y$ is defined to be the quotient space
 \[
 (X\times[0,1])\amalg Y/\sim,

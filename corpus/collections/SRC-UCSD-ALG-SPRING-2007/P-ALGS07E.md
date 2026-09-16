@@ -24,7 +24,7 @@ audit:
   note: Replaced the invalid claim that Frobenius on F(alpha) is F-linear. The corrected proof uses an F-basis and perfection of F to show the pth powers of the basis are again an F-basis.
 ---
 
-::: problem
+::: {.problem}
 Recall that a "perfect" field of characteristic $p$ is one for which the Frobenius map $\operatorname{Fr}: x \mapsto x^p$ is onto.
 
 Let $F$ be a perfect field, and $E/F$ an algebraic extension.

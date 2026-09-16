@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Let $H\leq G$ be a subgroup and $N\normal G$ be a normal subgroup.
   Show that $NH \leq G$ is a subgroup.
 :::

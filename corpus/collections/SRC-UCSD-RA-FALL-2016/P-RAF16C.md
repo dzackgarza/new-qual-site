@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Use the fact that
 $$
 \frac{1}{x} = \int_0^\infty e^{-xt}\,dt \quad (x > 0)
@@ -41,9 +41,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Verify absolute integrability of the double integral.
-::: proof
+::: {.proof}
 Using
 \[
 \frac1x=\int_0^\infty e^{-tx}\,dt,
@@ -70,7 +70,7 @@ which is integrable. Hence the double integral is absolutely integrable, and Fub
 :::
 
 <1>2. Interchange the integrals and compute the inner integral.
-::: proof
+::: {.proof}
 By Fubini,
 \[
 \begin{aligned}
@@ -92,7 +92,7 @@ I=\int_0^\infty\frac{\beta}{(\alpha+t)^2+\beta^2}\,dt.
 :::
 
 <1>3. Evaluate the remaining elementary integral.
-::: proof
+::: {.proof}
 With $u=\alpha+t$,
 \[
 I=\int_\alpha^\infty\frac{\beta}{u^2+\beta^2}\,du

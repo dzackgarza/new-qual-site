@@ -18,14 +18,14 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $E \subseteq \mathbb{R}^n$ is a measurable set with finite measure $\mu(E) < \infty$, then for any measurable function $f: E \to \mathbb{C}$,
 $$
 \lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that on a set $E \subseteq \mathbb{R}^n$ with $\mu(E) < \infty$, $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
 
 <1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p(E)} \le \|f\|_{L^\infty(E)}$.

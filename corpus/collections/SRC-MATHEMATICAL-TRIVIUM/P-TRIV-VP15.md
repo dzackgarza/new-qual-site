@@ -15,7 +15,7 @@ audit:
   note: Checked against Variational Principle, Problem 15, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 ”Derrick’s theorem” Consider the functional
 
 $$

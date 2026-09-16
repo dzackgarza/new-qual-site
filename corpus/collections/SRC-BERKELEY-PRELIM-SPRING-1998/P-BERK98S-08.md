@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $m\ge0$ be an integer, let $a_1,\dots,a_m\in\mathbb Z$, and set
 \[
 f(x)=\sum_{i=1}^m\frac{a_ix^i}{i!}.

@@ -15,6 +15,6 @@ audit:
   note: Checked against Problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find algebraic expressions involving real square roots, sums, and differences for the real and imaginary parts of both square roots of $2-4i$.
 :::

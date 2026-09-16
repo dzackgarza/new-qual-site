@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine all conformal automorphisms of the upper half-plane.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \mathbb H=\{z\in\mathbb C:\operatorname{Im}z>0\}.

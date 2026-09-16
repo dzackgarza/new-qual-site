@@ -23,7 +23,7 @@ If $w$ is of projective type, which of the list of spaces in Theorem 77.5 can it
 What if $w$ is of torus type?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine all topological surfaces from Theorem 77.5 represented by a proper labeling scheme $w$ on a 10-sided polygon, in both the projective and torus cases.
 
 <1>1. General classification principles (§77):

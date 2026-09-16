@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the cohomology groups and cohomology ring $H^*(S^2 \vee S^2 \vee S^4; \mathbb{Z})$ of the wedge sum $X = S^2 \vee S^2 \vee S^4$.
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 X=S^2_a\vee S^2_b\vee S^4.
@@ -44,7 +44,7 @@ $$
 <1>2. Let $\alpha,\beta\in H^2(X;\mathbb Z)$ be the classes coming from the two $2$-sphere summands, and let $\gamma\in H^4(X;\mathbb Z)$ be the class coming from the $4$-sphere summand.
 
 <1>3. Every product of two positive-degree classes is zero.
-::: proof
+::: {.proof}
 For each wedge summand, the square of its positive-degree generator vanishes for dimensional reasons. Products of classes supported on distinct wedge summands vanish because the reduced diagonal of a wedge has no mixed component between distinct summands. Thus
 $$
 \alpha^2=\beta^2=\alpha\beta=0,

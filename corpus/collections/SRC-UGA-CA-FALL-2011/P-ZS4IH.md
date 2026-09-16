@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $\bar{B}(a, r)$ denote the closed disk of radius $r > 0$ centered at $a \in \mathbb{C}$. Let $f$ be holomorphic on an open neighborhood containing $\bar{B}(a, r)$, and define
 $$
 M = \sup_{z \in \bar{B}(a, r)} |f(z)|.

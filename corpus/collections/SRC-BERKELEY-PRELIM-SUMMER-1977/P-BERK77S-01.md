@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a field.
 
 1. Prove that $F[x]$ is a vector space over $F$.

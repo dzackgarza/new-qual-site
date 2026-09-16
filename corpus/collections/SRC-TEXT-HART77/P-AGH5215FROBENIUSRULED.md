@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C$ be the plane curve $x^3 y+y^3 z+z^3 x=0$ over a field $k$ of characteristic 3 (V, Ex. 2.4).
 
 a. Show that the action of the $k$-linear Frobenius morphism $f$ on $H^1\left(C, \mathcal{O}_C\right)$ is identically 0 (Cf. (V, 4.21)).

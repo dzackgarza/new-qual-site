@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be an $m \times n$ matrix, and let $V = \{v \in \mathbb{R}^n : Mv = 0\}$ and $W = \{M^t y : y \in \mathbb{R}^m\}$.
 
 a) Prove that $V$ and $W$ are vector subspaces of $\mathbb{R}^n$.

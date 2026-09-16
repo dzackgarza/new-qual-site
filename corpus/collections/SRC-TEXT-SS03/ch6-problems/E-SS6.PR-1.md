@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 1. This problem provides further estimates for $\zeta$ and $\zeta'$ near $\operatorname{Re}(s) = 1$.
 
 (a) Use Proposition 2.5 and its corollary to prove
@@ -51,7 +51,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Establish asymptotic bounds for $\zeta(s)$ and $\zeta'(s)$ near $\Re(s)=1$ and integral representations yielding its meromorphic continuation.
 
 <1>1. Part 1(a): Expansion for $\zeta(s)$ with truncation parameter $N$.

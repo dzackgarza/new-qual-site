@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Recall that a set $E \subset \mathbb{R}^{d}$ is measurable if for every $c>0$ there is an open set $U \subseteq \RR^d$ such that $m^{*}(U \sm E)<\epsilon$.
 
 a.
@@ -38,9 +38,9 @@ Let $E \subset \mathbb{R}$ be a measurable set, such that $0<m(E)<\infty$. Use p
 \lim _{n \rightarrow \infty} \int_{E} \sin (n t) d t=0
 \]
 :::
-::: solution
+::: {.solution}
 <1>1. Approximate a finite-measure measurable set by an elementary set.
-::: proof
+::: {.proof}
 Let $E\subset\mathbb R^d$ be measurable with $m(E)<\infty$, and fix $\varepsilon>0$. By outer regularity choose an open set $U\supset E$ such that
 \[
 m(U\setminus E)<\varepsilon/2.
@@ -72,7 +72,7 @@ m(E\triangle F)<\varepsilon.
 :::
 
 <1>2. Prove the oscillatory integral limit.
-::: proof
+::: {.proof}
 Let $E\subset\mathbb R$ be measurable with $0<m(E)<\infty$. Fix $\varepsilon>0$ and choose an elementary set $F$, a finite union of intervals, with
 \[
 m(E\triangle F)<\varepsilon/2.

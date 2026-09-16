@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $\Aut(\CC) = \ts{ z \mapsto az+b\st a\in \CC\units, b\in \CC }$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 $\supseteq$:
 Clear, every affine function is bijective with inverse $g(z) \da a\inv(z-b)$, and holomorphic since
 \[

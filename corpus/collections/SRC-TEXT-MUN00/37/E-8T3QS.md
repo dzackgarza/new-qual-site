@@ -63,7 +63,7 @@ When $\alpha$ is the largest element of $J$, one has a contradiction.
 [Hint: If $\alpha$ is the smallest element of $J$, use the preceding lemma to choose $p_\alpha$. If $p_i$ is defined for all $i < \beta$, note that (a) implies that the space $Z_\beta$ cannot be finitely covered by $\mathcal{A}$ and use the lemma to find $p_\beta$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Lemma (generalized Tube Lemma for slices) and complete the transfinite induction proof of the Tychonoff Product Theorem via the Well-Ordering Theorem.
 
 <1>1. Proof of the Lemma (Tube Lemma version for slices):

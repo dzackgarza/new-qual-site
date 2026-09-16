@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{R} \to [0,1]$ be a Borel measurable function.
 For $t \geq 0$, let $\varphi(t) = m(\{x \in \mathbb{R} : f(x) \geq t\})$.
 
@@ -37,9 +37,9 @@ For $t \geq 0$, let $\varphi(t) = m(\{x \in \mathbb{R} : f(x) \geq t\})$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove the distribution-function bound.
-::: proof
+::: {.proof}
 For \(t>0\), on the set \(\{f\ge t\}\) we have \(f\ge t\). Hence
 \[
 t\,\varphi(t)
@@ -54,7 +54,7 @@ Therefore
 :::
 
 <1>2. Prove the layer-cake formula.
-::: proof
+::: {.proof}
 For every \(x\), since \(f(x)\ge0\),
 \[
 f(x)=\int_0^\infty \mathbf1_{\{t\le f(x)\}}\,dt.
@@ -75,7 +75,7 @@ Thus
 :::
 
 <1>3. Deduce integrability from the assumed distribution bound.
-::: proof
+::: {.proof}
 Because \(0\le f\le1\),
 \[
 \varphi(t)=0

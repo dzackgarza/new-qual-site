@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Evaluate
 \[
 \int_0^\infty \frac{x^{a-1}}{1+x}\,dx,

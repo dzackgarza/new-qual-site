@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 4. $\Leftarrow$: **Main Idea**: Projection and inclusion are homotopy inverses.
    One composition is equality, the other is just equality *up to homotopy*, but that's all we need!
 

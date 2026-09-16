@@ -15,6 +15,6 @@ audit:
   note: Checked against Rouché’s theorem, Problem 2, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Assuming that $| b | < 1$ , show that $f ( z ) = z ^ { 3 } + 3 z ^ { 2 } + b z + b ^ { 2 }$ has exactly two roots (counting multiplicity) in $| z | < 1$
 :::

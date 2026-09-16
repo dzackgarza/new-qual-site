@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose all zeros of a polynomial lie in one closed half-plane.
 Show that every zero of its derivative lies in the same half-plane.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 p(z)=c\prod_{j=1}^N(z-z_j),

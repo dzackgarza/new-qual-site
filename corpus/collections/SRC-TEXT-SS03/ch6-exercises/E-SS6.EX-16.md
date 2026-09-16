@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 16. Use the previous exercise to give another proof that $\zeta ( s )$ is continuable in the complex plane with only singularity a simple pole at $s = 1$
 
 [Hint: Write
@@ -39,7 +39,7 @@ $$
 Then $B _ { 0 } = 1$ , and since $z / ( e ^ { z } - 1 )$ is holomorphic for $| z | < 2 \pi$ , we must have lim s $\begin{array} { r } { \operatorname * { l p } _ { m  \infty } | B _ { m } / m ! | ^ { 1 / m } = 1 / 2 \pi . ] } \end{array}$
 :::
 
-::: solution
+::: {.solution}
 Split
 \[
 \Gamma(s)\zeta(s)

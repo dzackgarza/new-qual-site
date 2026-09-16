@@ -29,7 +29,7 @@ audit:
   note: Repaired the incorrect disconnected example, verified chi=-1 by cell counting, and checked all four connected surface types arising from arc placement and seam orientation.
 ---
 
-::: problem
+::: {.problem}
 Let $C$ be a cylinder.
 Let $I$ and $J$ be disjoint closed intervals contained in $\partial C$.
 What is the Euler characteristic of the surface $S$ obtained by identifying $I$ and $J$?

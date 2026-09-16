@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a ring which is not Cohen--Macaulay.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 A=\left(k[x,y]/(x^2,xy)\right)_{(x,y)}.
@@ -38,7 +38,7 @@ Then $A$ is a one-dimensional Noetherian local ring of depth $0$, hence is not
 Cohen--Macaulay.
 
 <1>1. The ring $A$ has Krull dimension $1$.
-::: proof
+::: {.proof}
 In $k[x,y]$,
 \[
 \sqrt{(x^2,xy)}=(x),
@@ -59,7 +59,7 @@ so the local ring still has dimension $1$.
 
 <1>2. The image of $x$ in $A$ is nonzero and is annihilated by the maximal
 ideal $\mathfrak m=(x,y)A$.
-::: proof
+::: {.proof}
 The element $x$ is not in the ideal $(x^2,xy)$, so its image is nonzero before
 localization and remains nonzero after localization at $(x,y)$. Moreover,
 \[
@@ -74,14 +74,14 @@ in $A$. Hence every element of $\mathfrak m$ annihilates $x$.
 \[
 \operatorname{depth}A=0.
 \]
-::: proof
+::: {.proof}
 By <1>2 every element of $\mathfrak m$ kills the same nonzero element $x$.
 Thus no element of $\mathfrak m$ is $A$-regular. A nonzero local ring has depth
 $0$ exactly when its maximal ideal contains no nonzerodivisor.
 :::
 
 <1>4. Therefore $A$ is not Cohen--Macaulay.
-::: proof
+::: {.proof}
 A Noetherian local ring is Cohen--Macaulay precisely when its depth equals its
 Krull dimension. Here <1>1 gives dimension $1$ and <1>3 gives depth $0$.
 :::

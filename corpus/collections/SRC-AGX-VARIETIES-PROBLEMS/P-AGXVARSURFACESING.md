@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $X = V(f) \subseteq \PP^3$ with $f$ irreducible homogeneous, show that $X$ is singular at $p$ iff $\grad f(p) = \mathbf{0}$.
 
 If $p$ is smooth, show that the tangent line has the equation $\grad f (p) \cdot {\left[ {x,y,z} \right]} = 0$.

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be endomorphisms of a finite-dimensional vector space $V$ over a field $K$. Prove or disprove:
 
 1. Every eigenvector of $AB$ is also an eigenvector of $BA$.

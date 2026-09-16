@@ -28,14 +28,14 @@ audit:
 Problem 3. Compute: $\int _ { 0 } ^ { \infty } { \frac { d x } { 1 + x ^ { 3 } } } .$
 :::
 
-::: solution
+::: {.solution}
 The value is
 $$
 \boxed{\frac{2\pi}{3\sqrt3}}.
 $$
 
 <1>1. A sector of angle $2\pi/3$ relates the two radial integrals.
-::: proof
+::: {.proof}
 Let
 $$
 F(z)=\frac1{1+z^3}
@@ -62,7 +62,7 @@ $$
 :::
 
 <1>2. The arc vanishes and exactly one pole lies in the sector.
-::: proof
+::: {.proof}
 On the circular arc $|z|=R$,
 $$
 |F(z)|\le\frac1{R^3-1},
@@ -92,7 +92,7 @@ the integrand is bounded near zero and is $O(x^{-3})$ at infinity.
 :::
 
 <1>3. Simplifying the complex quotient gives the real value.
-::: proof
+::: {.proof}
 Let $\omega=e^{2\pi i/3}=-1/2+i\sqrt3/2$. Since
 $e^{-2\pi i/3}=\overline\omega=-1/2-i\sqrt3/2$,
 $$

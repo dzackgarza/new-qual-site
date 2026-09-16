@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Prove that the limit
 \[
 \lim_{n\to\infty}\left(1+\frac12+\cdots+\frac1n-\log n\right)

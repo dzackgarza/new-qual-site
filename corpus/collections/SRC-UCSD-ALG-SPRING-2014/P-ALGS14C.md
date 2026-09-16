@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Show that $\mathbb{Z}[i]$ is a PID.
 
 (b) Let $A$ be a proper subring of $\mathbb{Z}[i]$ which contains $\mathbb{Z}$.

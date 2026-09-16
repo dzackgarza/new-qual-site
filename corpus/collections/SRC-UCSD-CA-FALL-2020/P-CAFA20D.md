@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find all entire functions $f: \mathbb{C} \to \mathbb{C}$ such that $|f(z)| = 2$ everywhere on $\{|z| = 1\}$, and $f^{(3)}(0) = -12$.
 :::
 
-::: solution
+::: {.solution}
 Let the zeros of $f$ in $\mathbb D$ be $a_1,\dots,a_m$, counted with
 multiplicity. Since $|f|=2$ on the unit circle, there are no boundary zeros.
 Form the finite Blaschke product

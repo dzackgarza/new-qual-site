@@ -30,7 +30,7 @@ audit:
   note: "Compared with Groups (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG3, whose solution repeats this coset-action argument."
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a subgroup of $S_n$ of index $n$.
 Prove:
 
@@ -40,7 +40,7 @@ Prove:
 2. The only subgroups of $S_n$ containing $H$ are $S_n$ and $H$.
 :::
 
-::: solution
+::: {.solution}
 For $n=1$, both $S_1$ and $H$ are trivial. The identity
 automorphism proves both assertions, with $S_0$ also
 the trivial group. Henceforth suppose $n\geq2$.
@@ -48,7 +48,7 @@ the trivial group. Henceforth suppose $n\geq2$.
 <1>1. The left-coset action defines an injective homomorphism
 $\rho:S_n\longrightarrow\operatorname{Sym}(S_n/H)$.
 
-::: proof
+::: {.proof}
 Left multiplication is well defined: replacing a
 representative $x$ by $xh$ with $h\in H$ does not change
 $gxH$. Multiplication by $g^{-1}$ is its inverse, and
@@ -73,7 +73,7 @@ Thus the action is faithful in every case.
 <1>2. Relabeling the cosets produces the required
 automorphism $f$ and the isomorphism $H\cong S_{n-1}$.
 
-::: proof
+::: {.proof}
 The set $S_n/H$ has $n$ elements. Choose a bijection
 with $\{1,\ldots,n\}$ that labels the coset $H$ by $n$.
 Through this bijection, $\rho$ becomes an injective
@@ -94,7 +94,7 @@ No assertion that $f$ is inner is needed.
 
 <1>3. The only subgroups containing $H$ are $H$ and $S_n$.
 
-::: proof
+::: {.proof}
 It suffices to prove this for $H_n$, since $f$ bijects
 subgroups and preserves inclusion. Suppose
 $H_n\subsetneq J\leq S_n$ and choose $g\in J\setminus H_n$.

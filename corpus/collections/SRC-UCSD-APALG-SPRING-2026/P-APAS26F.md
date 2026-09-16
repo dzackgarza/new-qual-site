@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{B}$ be a commutative subalgebra of an algebra $\mathcal{A}$.
 Prove that $\mathcal{B}$ is a maximal commutative subalgebra of $\mathcal{A}$ if and only if it is equal to its own centralizer.
 Using this result, or otherwise, classify the maximal commutative subalgebras of $\operatorname{End}(V)$, where $V$ is a Hilbert space.

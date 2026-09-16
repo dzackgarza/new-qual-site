@@ -40,9 +40,9 @@ $$
 What does Fubini’s theorem imply about such $f ?$ What about Tonelli’s theorem?
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define a measurable function with conditionally convergent iterated integrals.
-::: proof
+::: {.proof}
 Set
 \[
 f(x,y)=
@@ -78,7 +78,7 @@ Thus $f_y\in L^1(\mathbb R)$ for every $y\ne0$.
 :::
 
 <1>2. Compute the two iterated integrals.
-::: proof
+::: {.proof}
 Therefore
 \[
 \int_{\mathbb R}\left(\int_{\mathbb R}f_x(y)\,dy\right)dx
@@ -95,7 +95,7 @@ Hence the iterated integrals exist but are unequal.
 :::
 
 <1>3. Explain what Fubini and Tonelli imply.
-::: proof
+::: {.proof}
 Fubini's theorem says that if $f\in L^1(\mathbb R^2)$, then the two iterated integrals must agree. Since they do not, this example necessarily satisfies
 \[
 f\notin L^1(\mathbb R^2).

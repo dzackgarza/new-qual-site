@@ -49,7 +49,7 @@ Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \mathbb{R}^N)$.
 (f) Let $C_n$ be as in (e). Use the fact that $\bigcap U_{1/n}(C_n)$ is dense in $\mathcal{C}(X, \mathbb{R}^N)$ to complete the proof.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every second-countable locally compact Hausdorff space $X$ with $\dim C \le m$ for all compact $C \subset X$ embeds as a closed subspace of $\mathbb{R}^{2m+1}$.
 
 <1>1. Part (a): Perturbation of proper maps.

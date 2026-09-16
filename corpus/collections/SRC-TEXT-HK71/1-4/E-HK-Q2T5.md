@@ -32,7 +32,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 The complete solution set is
 $$
 \boxed{
@@ -42,7 +42,7 @@ $$
 $$
 
 <1>1. Row-reduce the coefficient matrix.
-::: proof
+::: {.proof}
 The coefficient matrix is
 $$
 A=
@@ -92,7 +92,7 @@ Elementary row operations preserve the solution set of a homogeneous system
 :::
 
 <1>2. Read off the solutions.
-::: proof
+::: {.proof}
 The reduced equations are
 $$
 x_1-\frac54x_3=0,

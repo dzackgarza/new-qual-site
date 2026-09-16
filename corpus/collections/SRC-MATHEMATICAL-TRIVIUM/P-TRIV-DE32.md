@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 32, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Show that $\delta ( x ) = \operatorname* { l i m } _ { \epsilon \to 0 } \operatorname { I m } \frac { 1 } { \pi } \frac { 1 } { x - i \epsilon }$
 :::

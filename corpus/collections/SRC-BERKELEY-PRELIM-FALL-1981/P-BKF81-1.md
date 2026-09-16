@@ -23,14 +23,14 @@ audit:
   note: "Closed the malformed math delimiter in the title and evaluated the integral by residues of e^{iz}/(1+z^4) in the upper half-plane."
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_{-\infty}^{\infty}\frac{\cos x}{1+x^4}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Consider
 $$
 F(z)=\frac{e^{iz}}{1+z^4}
@@ -38,7 +38,7 @@ $$
 and integrate over the upper semicircle of radius $R>1$.
 
 <1>1. The semicircular contribution tends to zero.
-::: proof
+::: {.proof}
 On the upper half-plane,
 $$
 |e^{iz}|=e^{-\operatorname{Im}z}\le1.
@@ -56,7 +56,7 @@ which tends to $0$ as $R\to\infty$.
 :::
 
 <1>2. Compute the residues in the upper half-plane.
-::: proof
+::: {.proof}
 The poles there are
 $$
 \zeta_1=e^{i\pi/4},
@@ -102,7 +102,7 @@ $$
 :::
 
 <1>3. Apply the residue theorem and take real parts.
-::: proof
+::: {.proof}
 Letting $R\to\infty$, step <1>1 and the residue theorem yield
 $$
 \int_{-\infty}^{\infty}\frac{e^{ix}}{1+x^4}\,dx

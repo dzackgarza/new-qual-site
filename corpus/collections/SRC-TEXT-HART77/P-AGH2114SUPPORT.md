@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mcf$ be a sheaf on $X$ and let $s \in \mcf(U)$ be a section over an open set $U$.
 The **support of $s$**, denoted $\supp s$, is defined to be $\ts{P \in U \st s_P \neq 0}$, where $s_P$ denotes the germ of $s$ in the stalk $\mcf_P$.
 Show that $\supp s$ is a closed subset of $U$.

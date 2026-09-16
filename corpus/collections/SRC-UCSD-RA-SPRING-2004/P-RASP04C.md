@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose that $\{u_n\}_{n=1}^{\infty}$ is an orthonormal subset of a Hilbert space $H$, and $S$ is a dense subset of $H$.
 Show $\{u_n\}_{n=1}^{\infty}$ is an orthonormal basis for $H$ if
 $$
@@ -31,9 +31,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $M$ be the closed span of the orthonormal system.
-::: proof
+::: {.proof}
 Set
 \[
 M:=\overline{\operatorname{span}}\{u_n:n\ge1\}.
@@ -50,7 +50,7 @@ with convergence in $H$. Hence Parseval's identity inside the Hilbert space $M$ 
 :::
 
 <1>2. Use the assumed identity on the dense set.
-::: proof
+::: {.proof}
 For every $f\in S$, the hypothesis and Step 1 give
 \[
 \|f\|_H^2=\|P_Mf\|_H^2.

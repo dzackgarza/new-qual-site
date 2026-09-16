@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Laurent expansion about $z=0$ of
 \[
 f(z) \da \cos\qty{1- {1\over z}}
@@ -24,7 +24,7 @@ and compute the "residue" coefficient $c_{-1}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $g(z) \da \cos(1-z)$, so $g(1/z) = f(z)$, and expand:
 \[
 g(z) 

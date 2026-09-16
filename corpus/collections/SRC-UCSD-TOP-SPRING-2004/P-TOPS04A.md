@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a CW-complex obtained from $S^n$, $n \geq 1$, by attaching a single $(n+1)$-cell by a map $\varphi : S^n \to S^n$ of degree $4$.
 Compute the cohomology ring $H^*(X; \mathbb{Z}/2)$.
 :::

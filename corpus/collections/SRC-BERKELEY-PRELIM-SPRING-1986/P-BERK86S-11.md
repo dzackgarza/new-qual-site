@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For $n\in\mathbb Z$, define
 \[
 f_n(x)=\frac{(x-i)^n}{\sqrt\pi\,(x+i)^{n+1}},

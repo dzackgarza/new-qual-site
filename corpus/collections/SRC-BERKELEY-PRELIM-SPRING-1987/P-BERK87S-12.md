@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Evaluate
 \[
 I=\int_0^{1/2}\frac{\sin x}{x}\,dx

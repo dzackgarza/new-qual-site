@@ -21,23 +21,23 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is the converse of Lagrange's theorem true?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 No. The group $A_4$ gives a counterexample: $6$ divides $|A_4|=12$, but
 $A_4$ has no subgroup of order $6$.
 
 <1>1. Any subgroup $H\le A_4$ of order $6$ would be normal.
-::: proof
+::: {.proof}
 Such a subgroup would have index $2$, and every subgroup of index $2$ is
 normal.
 :::
 
 <1>2. No normal subgroup of order $6$ exists in $A_4$.
-::: proof
+::: {.proof}
 A group of order $6$ has a Sylow $3$-subgroup. If $H\trianglelefteq A_4$ has
 order $6$ and $P\le H$ has order $3$, then every conjugate $gPg^{-1}$ also lies
 in $H$.
@@ -48,7 +48,7 @@ eight $3$-cycles, impossible because $|H|=6$.
 :::
 
 <1>3. Therefore the converse of Lagrange's theorem is false.
-::: proof
+::: {.proof}
 Lagrange's theorem gives a necessary divisibility condition on subgroup orders,
 but <1>1--<1>2 show that the divisor $6$ of $12$ is not realized as a subgroup
 order in $A_4$.

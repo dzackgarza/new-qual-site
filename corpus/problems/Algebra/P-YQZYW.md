@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute all intermediate fields of
 \[
 L=\QQ(\sqrt2,\sqrt3)/\QQ.
@@ -26,7 +26,7 @@ L=\QQ(\sqrt2+\sqrt3)
 and find the minimal polynomial of $\sqrt2+\sqrt3$ over $\QQ$.
 :::
 
-::: solution
+::: {.solution}
 The extension is biquadratic:
 \[
 [L:\QQ]=4,

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 For each of the following, determine if the statement is always true or if it is false.
 
 (a) Let $G = \{z \in \mathbb{C} : \operatorname{Re} z \notin \mathbb{Z}\}$.

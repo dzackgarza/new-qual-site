@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is the significance of the Jacobian?
 
 What kind of map is the Abel--Jacobi map?

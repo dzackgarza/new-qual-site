@@ -24,13 +24,13 @@ audit:
   note: "Checked the conjugacy-class coset bijection and divisibility of every noncentral class size by p."
 ---
 
-::: problem
+::: {.problem}
 (a) State the class equation for finite groups.
 
 (b) Use the class equation to show that if a finite group $G$ has order $p^k$ for some prime $p$ and $k \geq 1$, then $G$ has a nontrivial center.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $x_1,\ldots,x_r$ represent the noncentral conjugacy classes
 of a finite group $G$, then its class equation is
 $$
@@ -38,7 +38,7 @@ $$
 $$
 where $C_G(x)=\{g\in G:gx=xg\}$.
 
-::: proof
+::: {.proof}
 Conjugacy is an equivalence relation, so its classes partition $G$.
 An element has a singleton conjugacy class precisely when it commutes
 with every element of $G$, that is, when it belongs to $Z(G)$.
@@ -56,7 +56,7 @@ Adding the class sizes gives the formula.
 
 <1>2. If $|G|=p^k$ with $k\geq1$, then $|Z(G)|\geq p$.
 
-::: proof
+::: {.proof}
 Each centralizer has order dividing $p^k$ by Lagrange's theorem [@DF04],
 so each index $[G:C_G(x_j)]$ is a power of $p$. Since $x_j$ is
 noncentral, its centralizer is proper, and that power is greater

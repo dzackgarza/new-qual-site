@@ -33,14 +33,14 @@ $$
 For which triples $(y_{1}, y_{2}, y_{3})$ does the system $AX = Y$ have a solution?
 :::
 
-::: solution
+::: {.solution}
 The system $AX=Y$ has a solution for every triple
 \[
 (y_1,y_2,y_3)\in F^3.
 \]
 
 <1>1. The coefficient matrix $A$ is invertible.
-::: proof
+::: {.proof}
 Its determinant is
 \[
 \det\begin{bmatrix}
@@ -52,7 +52,7 @@ Its determinant is
 :::
 
 <1>2. Hence $AX=Y$ is solvable for every $Y\in F^3$.
-::: proof
+::: {.proof}
 By <1>1, $A^{-1}$ exists. For arbitrary
 $Y=(y_1,y_2,y_3)^t$, take
 \[

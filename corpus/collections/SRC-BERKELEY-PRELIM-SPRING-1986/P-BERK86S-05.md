@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that the identity is the only field automorphism of $\mathbb R$.
 :::

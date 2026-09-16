@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 55, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the function $J ( a ) = \sum _ { n = 0 } ^ { \infty } n e ^ { - a n }$ defined for positive a .
 
 (a) Write an explicit expression for J(a).

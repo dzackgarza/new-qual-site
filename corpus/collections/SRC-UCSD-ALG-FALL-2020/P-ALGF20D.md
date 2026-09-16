@@ -25,7 +25,7 @@ audit:
   note: Corrected the prior unconditional diagonalizability claim; when char(F) divides n the matrix is nonzero square-zero of rank one, so its Jordan form has one size-two nilpotent block.
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be an algebraically closed field.
 Let $A$ be the $n \times n$ matrix over $F$ such that every entry of $A$ is $1$.
 Find the Jordan canonical form of $A$.

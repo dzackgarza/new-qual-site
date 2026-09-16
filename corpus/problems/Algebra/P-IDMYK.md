@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $K=\QQ(\sqrt d)$ be a quadratic number field and let $\OO_K$ be its ring of integers.
 What can you say about $\OO_K/\mathfrak p$ when $\mathfrak p\subset \OO_K$ is a nonzero prime ideal?
 :::

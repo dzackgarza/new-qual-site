@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal B,\mu)$ be a measure space and let $A_n\in\mathcal B$ satisfy
 \[
 \sum_{n=1}^\infty\mu(A_n)<\infty.

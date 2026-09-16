@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $C_p$ denote the cyclic group of order $p$.
 
 -   Show that $C_p$ has two irreducible representations over
@@ -40,7 +40,7 @@ Let $C_p$ denote the cyclic group of order $p$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. As a \(\mathbb Q\)-algebra,
 \[
 \mathbb Q[C_p]\cong \mathbb Q[x]/(x^p-1)

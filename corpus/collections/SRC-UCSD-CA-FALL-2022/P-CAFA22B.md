@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $0 \leq t < 1$.
 Show that $f(z) = e^{tz} + z + 1$ has exactly one zero (counting multiplicities) in the left half-plane $\{z : \operatorname{Re} z < 0\}$.
 
 Hint: Consider first $|z| < \varepsilon$ for $\varepsilon > 0$.
 :::
 
-::: remark
+::: {.remark}
 The official Fall 2022 source states only $t<1$. That is false for negative
 $t$: for $t\ne0$, the equation is equivalent to
 \[
@@ -29,7 +29,7 @@ and for negative $t$ infinitely many branches give zeros in the left
 half-plane. The hypothesis above records the intended nonnegative range.
 :::
 
-::: solution
+::: {.solution}
 Fix $\varepsilon>0$ small enough that
 \[
 e^{t\varepsilon}<1+\varepsilon.

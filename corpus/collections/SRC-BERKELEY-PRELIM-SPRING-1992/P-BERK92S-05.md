@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R^n\to\mathbb R^n$ be differentiable. Suppose there is a differentiable function $g:\mathbb R^n\to\mathbb R$ with no critical points such that
 \[
 g\circ f=0

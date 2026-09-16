@@ -17,11 +17,11 @@ audit:
   date: 2026-09-04
 ---
 
-::: exercise
+::: {.exercise}
 Show that $[0, 1]$ is compact.
 :::
 
-::: solution
+::: {.solution}
 Let $\mathcal U$ be an open cover of $[0,1]$ and define
 \[
 S=\{x\in[0,1]:[0,x]\text{ is covered by finitely many members of }\mathcal U\}.

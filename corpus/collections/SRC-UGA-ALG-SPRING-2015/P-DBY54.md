@@ -23,7 +23,7 @@ Show that for every ideal $I\in \mci$, there is an ideal $J\in \mci$ such that $
 Prove that every such ideal $J$ is prime.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Restating, take the poset $S\da \ts{J\in \Id(R) \st J \intersect S = \emptyset, I\neq R, I \subseteq J}$ ordered by inclusion.

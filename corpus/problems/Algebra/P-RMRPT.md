@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the group characters of the multiplicative group of a finite field $\mathbb{F}_q^\times$?
 :::
 
-::: solution
+::: {.solution}
 The group $\mathbb F_q^\times$ is cyclic of order $q-1$. Choose a generator $g$ and put
 \[
 \zeta=e^{2\pi i/(q-1)}.

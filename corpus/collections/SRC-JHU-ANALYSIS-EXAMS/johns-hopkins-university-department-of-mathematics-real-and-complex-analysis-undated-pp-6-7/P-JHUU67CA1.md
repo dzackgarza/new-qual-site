@@ -34,10 +34,10 @@ has at least one coefficient $c_n = 0$.
 Show that $f$ is a polynomial.
 :::
 
-::: solution
+::: {.solution}
 <1>1. One fixed derivative of $f$ vanishes identically.
 
-::: proof
+::: {.proof}
 For each integer $n\geq0$, set
 $$
 Z_n=\{z\in\mathbb C:f^{(n)}(z)=0\},
@@ -60,7 +60,7 @@ rather than assuming the same coefficient vanishes at all centers.
 
 <1>2. The entire Taylor series terminates.
 
-::: proof
+::: {.proof}
 If $m=0$, step <1>1 already says $f=0$, a polynomial.
 If $m\geq1$, every derivative of order $n\geq m$
 vanishes identically by differentiating $f^{(m)}=0$.

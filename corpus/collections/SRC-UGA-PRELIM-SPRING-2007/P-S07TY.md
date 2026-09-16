@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a) Find the Taylor expansion of $f(x) = \ln(2 + x)$ about the origin.
 
 b) Find the radius of convergence $R$ of that series.
@@ -25,7 +25,7 @@ c) Use Taylor's theorem to show that the series converges to $f(x)$ on $[0, R/2]
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. For $|x|<2$,
 \[
 \ln(2+x)

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Give an example of a continuous function
 \[
 v:\mathbb R\to\mathbb R^3

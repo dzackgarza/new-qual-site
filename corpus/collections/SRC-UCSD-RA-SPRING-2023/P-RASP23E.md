@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\ell^\infty$ denote the vector space of sequences of complex numbers $x = (x_1, x_2, \ldots)$ with $\|x\|_\infty := \sup_n |x_n| < \infty$.
 Define $\phi_n(x) := \frac{1}{n} \sum_{k=1}^{n} x_k$.
 
@@ -35,9 +35,9 @@ Prove that
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Show that the Cesàro functionals lie in the dual unit ball.
-::: proof
+::: {.proof}
 For $x\in\ell^\infty$,
 \[
 |\phi_n(x)|
@@ -56,7 +56,7 @@ we have $\phi_n(\mathbf1)=1$, so in fact
 :::
 
 <1>2. Obtain a weak* cluster point.
-::: proof
+::: {.proof}
 The sequence $(\phi_n)$ lies in the closed unit ball of $(\ell^\infty)^*$. By the Banach--Alaoglu theorem, this ball is compact in the weak* topology
 \[
 \sigma((\ell^\infty)^*,\ell^\infty).
@@ -77,7 +77,7 @@ so $\|\phi\|=1$.
 :::
 
 <1>3. Show that $\phi$ vanishes on $c_0$.
-::: proof
+::: {.proof}
 If $x=(x_k)\in c_0$, then $x_k\to0$. Cesàro convergence gives
 \[
 \phi_n(x)=\frac1n\sum_{k=1}^nx_k\longrightarrow0.
@@ -95,7 +95,7 @@ In particular, for the standard basis vector $e_j$,
 :::
 
 <1>4. Rule out representation by an element of $\ell^1$.
-::: proof
+::: {.proof}
 Suppose that there were $a=(a_j)\in\ell^1$ such that
 \[
 \phi(x)=\sum_{j=1}^\infty a_jx_j

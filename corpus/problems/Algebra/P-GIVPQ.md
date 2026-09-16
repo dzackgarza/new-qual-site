@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is a semisimple algebra?
 State the structure theorem for semisimple algebras.
 :::

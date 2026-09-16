@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 8, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let A, B, C, D be non-degenerate matrices of the same dimension.
 Show that
 

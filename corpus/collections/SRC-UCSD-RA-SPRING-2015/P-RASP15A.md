@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 
 (a) (10 points) In an infinite-dimensional Hilbert space $H$, for any weakly convergent sequence $\{x_n\}$, there exists a subsequence that is convergent with respect to the norm.
@@ -42,9 +42,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 Let $H$ be an infinite-dimensional Hilbert space and choose an orthonormal sequence $(e_n)$. Then
 \[
 e_n\rightharpoonup0
@@ -63,7 +63,7 @@ Thus no subsequence is even norm-Cauchy, hence no subsequence converges in norm.
 :::
 
 <1>2. Part (b) is false.
-::: proof
+::: {.proof}
 Let
 \[
 F(x,y)=\frac{x^2-y^2}{(x^2+y^2)^2}.
@@ -100,7 +100,7 @@ Thus the two iterated integrals are not equal. In particular the asserted Tonell
 :::
 
 <1>3. Part (c) is true.
-::: proof
+::: {.proof}
 Define
 \[
 f(x)=
@@ -132,7 +132,7 @@ because the power $x^{-p}$ is not integrable there. Also $f$ is unbounded, so $f
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 Using $|\sin t|\le t$ for $t\ge0$, for $n>2$ we obtain
 \[
 \begin{aligned}

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $E$ be the set of functions $f:\mathbb R\to\mathbb R$ satisfying
 \[
 f'''+f''-2f=0.

@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime number and let $F$ be a field of characteristic $p$.
 
 Show that if $a \in F$ is not a $p$-th power in $F$, then the polynomial $f(x) = x^p - a$ is irreducible in $F[x]$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $x^p - a \in F[x]$ is irreducible in characteristic $p$ by showing any non-trivial factor in a splitting field forces a $p$-th root of $a$ to lie in $F$ via Bézout's identity.
 
 <1>1. Factorization in a splitting field:

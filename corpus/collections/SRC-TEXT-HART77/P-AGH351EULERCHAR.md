@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a projective scheme over a field $k$, and let $\mcf$ be a coherent sheaf on $X$.
 We define the Euler characteristic of $\mcf$ by
 \[

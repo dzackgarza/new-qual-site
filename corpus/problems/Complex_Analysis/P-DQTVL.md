@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $D$ be the region obtained by deleting the real interval $[0, 1)$ from $\DD$; find a conformal map from $D$ to $\DD$.
 :::
 
-::: solution
+::: {.solution}
 On
 \[
 D=\{0<|z|<1:\arg z\in(0,2\pi)\}

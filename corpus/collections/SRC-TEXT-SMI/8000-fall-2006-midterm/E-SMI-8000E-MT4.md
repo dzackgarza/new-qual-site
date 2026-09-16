@@ -30,9 +30,9 @@ audit:
 (b) What can you conclude about a surjective endomorphism of a noetherian module?
 :::
 
-::: solution
+::: {.solution}
 <1>1. The kernels of the iterates form an increasing chain.
-::: proof
+::: {.proof}
 For every $n\ge1$, if
 $$
 m\in\ker(f^n),
@@ -48,7 +48,7 @@ $$
 :::
 
 <1>2. Every inclusion is strict when $f$ is surjective but not injective.
-::: proof
+::: {.proof}
 Because $f$ is not injective, choose
 $$
 0\ne x\in\ker f.
@@ -83,7 +83,7 @@ $$
 :::
 
 <1>3. A surjective endomorphism of a noetherian module is injective.
-::: proof
+::: {.proof}
 If $M$ is noetherian, its submodules satisfy the ascending chain condition.
 The strictly increasing chain in step <1>2 is therefore impossible. Hence a
 surjective endomorphism

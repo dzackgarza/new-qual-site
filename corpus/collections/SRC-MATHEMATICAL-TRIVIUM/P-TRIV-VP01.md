@@ -15,7 +15,7 @@ audit:
   note: Checked against Variational Principle, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash prefixes “Fubini instanton” with a garbled decorative glyph; that non-problem artifact is omitted from the card.
 ---
 
-::: problem
+::: {.problem}
 “Fubini instanton.”
 Consider the functional $S [ f ] = 2 \pi ^ { 2 } \int _ { 0 } ^ { \infty } d x x ^ { 3 } \left( { \frac { 1 } { 2 } } f ^ { \prime 2 } + V ( f ) \right)$ where $V ( f ) = - { \frac { \lambda } { 4 } } f ^ { 4 }$ , and $f \in C ^ { 2 } [ 0 , \infty ]$
 

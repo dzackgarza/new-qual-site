@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose $\mathbb{C}^3$ is given its usual inner product, and $\psi\colon\mathbb{C}^3\to\mathbb{C}^3$ is a linear map.
 Further suppose that the singular values of $\psi$ are $\sigma_1=3$, $\sigma_2=2$ and $\sigma_3=1$.
 

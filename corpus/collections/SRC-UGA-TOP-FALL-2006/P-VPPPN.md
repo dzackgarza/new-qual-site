@@ -31,7 +31,7 @@ audit:
     H_1 matrix has determinant -3, giving H_1 = Z/3 and vanishing H_2.
 ---
 
-::: problem
+::: {.problem}
 a. State the **Mayer-Vietoris theorem**.
 
 b. Use it to compute the homology of the space $X$ obtained by gluing two solid tori along their boundary as follows.

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is \(A_4\) a simple group?
 What are the conjugacy classes in $S_4$?
 What about in \(A_4\)?

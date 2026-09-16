@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $T: V\to V$ be a linear map from a 5-dimensional $\CC\dash$vector space to itself and suppose $f(T) = 0$ where $f(x) = x^2 + 2x + 1$.
 
 a. Show that there does not exist any nonzero vector $v\in V$ such that $Tv = v$, but there *does* exist a nonzero vector $w\in V$ such that $T^2 w= w$.
@@ -26,7 +26,7 @@ a. Show that there does not exist any nonzero vector $v\in V$ such that $Tv = v$
 b. Give all of the possible Jordan canonical forms of $T$.
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 f(T)=(T+I)^2=0,

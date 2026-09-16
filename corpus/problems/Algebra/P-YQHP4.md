@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Let $R$ be a ring with identity $1 \ne 0$, and let $I \trianglelefteq R$ be an ideal of $R$.
 Prove that if $I$ contains a unit $u \in R^\times$, then $I = R$.
 (2) Prove that the group of units $R^\times$ need not be closed under addition, and provide concrete examples in standard rings.
 :::
 
-::: solution
+::: {.solution}
 If an ideal $I\trianglelefteq R$ contains a unit $u$, then it also contains
 \[
 u^{-1}u=1.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define
 \[
 X \da \ts{M \in \mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
@@ -23,7 +23,7 @@ X \da \ts{M \in \mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
 Show that $X$ is an irreducible variety, and find its dimension.
 :::
 
-::: solution
+::: {.solution}
 We use the following fact from linear algebra.
 
 *Matrix minor*: for an $m\times n$ matrix, a *minor of order* $\ell$ is the determinant of an $\ell\times \ell$ submatrix obtained by deleting any $m-\ell$ rows and any $n-\ell$ columns.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the set of triples $(i, j, k)$ of integers such that $i, j, k \in \{1, \ldots, 10\}$ with the diagonal action of the symmetric group $S_{10}$:
 \[
 \sigma \cdot (i, j, k) = (\sigma(i), \sigma(j), \sigma(k)).

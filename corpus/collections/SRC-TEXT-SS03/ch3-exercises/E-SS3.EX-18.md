@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 18. Give another proof of the Cauchy integral formula
 
 $$
@@ -27,7 +27,7 @@ using homotopy of curves.
 [Hint: Deform the circle C to a small circle centered at $z ,$ and note that the quotient $( f ( \zeta ) - f ( z ) ) / ( \zeta - z )$ is bounded.]
 :::
 
-::: solution
+::: {.solution}
 Let $C$ be positively oriented and let $z$ lie in its interior. Since
 \[
 \frac{f(\zeta)}{\zeta-z}

@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Fix a ring $R$, an $R$-module $M$, and an $R$-module homomorphism $f:M\rightarrow M$.
 
 - If $M$ satisfies the descending chain condition on submodules, show that if $f$ is injective, then $f$ is surjective.
@@ -35,7 +35,7 @@ Fix a ring $R$, an $R$-module $M$, and an $R$-module homomorphism $f:M\rightarro
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Suppose $M$ satisfies the descending chain condition and $f:M\to M$ is injective. Then $f$ is surjective.
 ::: {.proof}
 The images form a descending chain

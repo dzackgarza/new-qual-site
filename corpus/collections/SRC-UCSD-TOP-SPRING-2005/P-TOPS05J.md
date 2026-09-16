@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X \vee Y$ be the one point union of $X$ and $Y$.
 Prove for each $\ell > 0$ there is a split short exact sequence
 $$

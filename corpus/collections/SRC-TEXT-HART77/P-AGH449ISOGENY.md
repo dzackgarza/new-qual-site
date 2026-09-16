@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 We say two elliptic curves $X, X'$ are **isogenous** if there is a finite morphism $f: X \to X'$.
 
 a. Show that isogeny is an equivalence relation.

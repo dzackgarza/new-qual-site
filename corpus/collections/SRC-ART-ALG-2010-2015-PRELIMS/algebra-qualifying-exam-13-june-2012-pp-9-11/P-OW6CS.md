@@ -45,7 +45,7 @@ e. A field extension $K/F$ which is finite dimensional but not separable.
 f. An irreducible fifth degree polynomial over $\mathbb{Q}$ which is solvable by radicals.
 :::
 
-::: remark
+::: {.remark}
 With the prescribed inclusions $F\subset E\subset K$,
 the expressions $F/E$ and $E/K$ reverse the field-extension
 directions and do not define extensions via these inclusions.
@@ -54,12 +54,12 @@ $K/E$, respectively. No finiteness assumption on $K/F$
 is needed in part (b).
 :::
 
-::: solution
+::: {.solution}
 <1>1. In part (a), take $F=\mathbb Q$,
 $E=\mathbb Q(a)$, and $K=\mathbb Q(a,\zeta)$, where
 $a=\sqrt[3]{2}>0$ and $\zeta=e^{2\pi i/3}$.
 
-::: proof
+::: {.proof}
 The polynomial $T^3-2$ is Eisenstein at two and therefore
 irreducible over $\mathbb Q$ [@DF04]. Thus $[E:F]=3>1$.
 The field $E$ is real, whereas $\zeta$ is nonreal, so
@@ -73,7 +73,7 @@ polynomial $T^3-2$, so $E/F$ is not normal and is not Galois.
 
 <1>2. No example exists in part (b): $K/E$ is always Galois.
 
-::: proof
+::: {.proof}
 For $a\in K$, let $p_a(T)\in F[T]$ and $q_a(T)\in E[T]$
 be its monic minimal polynomials over $F$ and $E$.
 The extension $K/F$ is algebraic, so both exist.
@@ -91,7 +91,7 @@ that its degree is finite.
 
 <1>3. In part (c), take $\mathbb F_2[T]/(T^3+T+1)$.
 
-::: proof
+::: {.proof}
 The polynomial is nonzero at both $0$ and $1$.
 A reducible cubic over a field has a linear factor,
 so this polynomial is irreducible over $\mathbb F_2$.
@@ -102,7 +102,7 @@ so it has exactly $2^3=8$ elements.
 
 <1>4. No example exists in part (d).
 
-::: proof
+::: {.proof}
 Let $L$ be the splitting field of $T^5+T-1$ over $\mathbb Q$.
 This is a finite Galois extension, since the base field
 has characteristic zero [@DF04]. Its automorphisms act
@@ -120,7 +120,7 @@ of $120$. Since $7\nmid120$, degree seven is impossible.
 <1>5. In part (e), take $F=\mathbb F_2(t)$ and $K=F(u)$
 with $u^2=t$, where $t$ is transcendental.
 
-::: proof
+::: {.proof}
 The polynomial $T^2-t$ has no root in $F$: an equality
 $(A(t)/B(t))^2=t$, with nonzero polynomials $A,B$, would
 give $2\deg A=1+2\deg B$, impossible by parity.
@@ -131,7 +131,7 @@ of $u$ has a repeated root. Hence $K/F$ is not separable.
 
 <1>6. In part (f), take $f(T)=T^5-2$.
 
-::: proof
+::: {.proof}
 Eisenstein's criterion at two proves irreducibility over
 $\mathbb Q$ [@DF04]. Let $b=\sqrt[5]{2}$ and choose a
 primitive fifth root of unity $\xi$. The roots of $f$

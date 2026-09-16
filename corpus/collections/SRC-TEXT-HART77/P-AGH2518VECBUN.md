@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a scheme.
 A **geometric vector bundle** of rank $n$ over $Y$ is a scheme $X$ and a morphism $f: X \to Y$, together with an open covering $\ts{U_i}$ of $Y$ and isomorphisms $\psi_i: f\inv(U_i) \to \AA^n_{U_i}$, such that for any $i, j$ and any open affine $V = \Spec A \subseteq U_i \intersect U_j$, the automorphism $\psi = \psi_j \circ \psi_i\inv$ of $\AA^n_V = \Spec A[x_1, \ldots, x_n]$ is given by a *linear* automorphism $\theta$ of $A[x_1, \ldots, x_n]$: that is, $\theta(a) = a$ for $a \in A$, and $\theta(x_i) = \sum_j a_{ij} x_j$ for suitable $a_{ij} \in A$.
 

@@ -21,12 +21,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $g:[0,1]\to\mathbb R$ be absolutely continuous and let $E\subset[0,1]$ have Lebesgue measure zero.
 Prove that $g(E)$ has Lebesgue measure zero.
 :::
 
-::: solution
+::: {.solution}
 Fix $\varepsilon>0$.
 By absolute continuity of $g$, there exists $\delta>0$ such that for every finite family of pairwise disjoint intervals $(a_j,b_j)\subset[0,1]$ satisfying
 \[

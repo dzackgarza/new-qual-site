@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $f(z)$ is analytic in $|z| < 1$, continuous on $|z| \leq 1$ and satisfies $|f| = 1$ on $|z| = 1$, show that $f(z)$ is rational.
 
 Hint: First consider the case that $f(z)$ has no zero.
 :::
 
-::: solution
+::: {.solution}
 Because $|f|=1$ on the unit circle and $f$ is continuous on the closed disk,
 there is an annulus near $|z|=1$ on which $f$ has no zeros. Thus all zeros of
 $f$ lie in a smaller closed disk, and hence there are only finitely many of

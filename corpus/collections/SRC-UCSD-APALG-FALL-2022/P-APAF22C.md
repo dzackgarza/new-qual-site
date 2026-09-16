@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $V$ and $W$ be two finite-dimensional real inner product spaces, $\dim V = \dim W = n$, and let $\phi \colon V \to W$ be a linear map.
 
 Suppose there exists a vector $v_0 \in V$, $\|v_0\| = 1$, such that $\|\phi(v_0)\| \leq 10^{-10}$.

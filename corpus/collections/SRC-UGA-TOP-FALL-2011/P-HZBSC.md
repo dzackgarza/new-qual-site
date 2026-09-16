@@ -25,7 +25,7 @@ audit:
   note: Corrected the swapped meridian/longitude action of phi_n; the group is Z/nZ, not Z for all n.
 ---
 
-::: problem
+::: {.problem}
 Let 
 $$
 V = \DD^2 \times S^1 = \theset{ (z, e^{it}) \suchthat \norm z \leq 1,~~ 0 \leq t < 2\pi}

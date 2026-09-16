@@ -25,7 +25,7 @@ Show that in a first-countable $T_1$ space, every one-point set is a $G_\delta$ 
 What is it?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that one-point sets in first-countable $T_1$ spaces are $G_\delta$ sets, and identify a familiar non-first-countable space with $G_\delta$ singletons.
 
 <1>1. Part (a): Singletons are $G_\delta$ in first-countable $T_1$ spaces.

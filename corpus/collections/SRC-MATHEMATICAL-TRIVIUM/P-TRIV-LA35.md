@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 35, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 A linear transformation is given by the matrix $e ^ { A }$ in some basis in $\mathbb { R } ^ { n }$ . Consider the change of the basis determined by the transition matrix U. Find the matrix of the transformation in the new basis.
 :::

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic on an open set containing the closed unit disk. Suppose
 \[
 |f(z)|>m\quad\text{for }|z|=1,

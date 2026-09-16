@@ -18,11 +18,11 @@ audit:
   note: "Compared with Complex Analysis (3) of Arango-Piñeros, Some quals problems; restored the source's phrase the Cauchy integral formula; merged the duplicate P-EMCA3, whose solution repeats this mean-value argument."
 ---
 
-::: problem
+::: {.problem}
 Use the Cauchy integral formula to prove the maximum principle for analytic functions.
 :::
 
-::: solution
+::: {.solution}
 We prove the strong local form of the maximum modulus principle. Let $G$ be a
 region, let $f\in H(G)$, and suppose that $|f|$ has a local maximum at
 $z_0\in G$. We show that $f$ is constant.

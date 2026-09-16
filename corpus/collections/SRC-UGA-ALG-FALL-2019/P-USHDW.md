@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity $1 \ne 0$. Assume Zorn's Lemma.
 
 (a) Show that the nilradical
@@ -29,7 +29,7 @@ is an ideal that is contained in every prime ideal of $R$.
 (c) Suppose that $R$ has exactly one prime ideal $P$. Prove that every element $r \in R$ is either nilpotent or a unit.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the nilradical is an ideal contained in all prime ideals in (a), use Zorn's Lemma to construct a prime ideal avoiding powers of a non-nilpotent element in (b), and prove that every element in a ring with a unique prime ideal is nilpotent or a unit in (c).
 
 <1>1. Part (a): $N$ is an ideal contained in every prime ideal.

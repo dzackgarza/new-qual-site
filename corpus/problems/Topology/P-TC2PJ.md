@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 - Show that every compact metrizable space has a countable basis.
 :::
 

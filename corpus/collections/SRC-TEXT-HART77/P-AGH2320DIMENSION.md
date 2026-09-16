@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral scheme of finite type over a field $k$, not necessarily algebraically closed.
 Prove the following, where for rings $\krulldim$ always means the Krull dimension.
 

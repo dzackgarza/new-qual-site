@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a curve of degree $d$ in $\PP^2$.
 For each point $P \in X$, let $T_P(X)$ be the tangent line to $X$ at $P$ (I, Ex.
 7.3). Considering $T_P(X)$ as a point of the dual projective plane $(\PP^2)^*$, the map $P \mapsto T_P(X)$ gives a morphism of $X$ to its **dual curve** $X^*$ in $(\PP^2)^*$ (I, Ex.

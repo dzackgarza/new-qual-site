@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that the cyclotomic extension $\mathbb{Q}(\zeta_{43})/\mathbb{Q}$ has degree 42 and that its Galois group is cyclic of order 42:
 $$\operatorname{Gal}(\mathbb{Q}(\zeta_{43})/\mathbb{Q}) \cong (\mathbb{Z}/43\mathbb{Z})^\times \cong \mathbb{Z}/42\mathbb{Z}.$$
 :::
 
-::: solution
+::: {.solution}
 For the prime $43$,
 \[
 \Phi_{43}(x)=1+x+\cdots+x^{42}.

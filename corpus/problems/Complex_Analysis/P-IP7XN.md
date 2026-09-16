@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Show that $z\sin(z) = a$ has only real solutions.
 :::
 
-:::{.solution}
+::: {.solution}
 Consider $f(z) \da z\sin(z) - a$.
 
 Big: $M(z) \da z\sin(z)$.

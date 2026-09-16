@@ -27,7 +27,7 @@ audit:
   note: "Compared with Real Analysis (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA4, whose solution repeats this log-convexity argument."
 ---
 
-::: problem
+::: {.problem}
 Let $f\in L^1([0,1])$.
 Show that
 
@@ -35,9 +35,9 @@ Show that
 2. If $m\{x:f(x)=0\}>0$, then this limit is zero.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The quantities $\|f\|_p$ are finite for $0<p\le1$.
-::: proof
+::: {.proof}
 For $t\ge0$ and $0<p\le1$,
 \[
 t^p\le 1+t.
@@ -50,7 +50,7 @@ Thus $\|f\|_p=(\int|f|^p)^{1/p}$ is well defined and finite for every $0<p\le1$.
 :::
 
 <1>2. The logarithm of the $p$th moment is convex.
-::: proof
+::: {.proof}
 Assume first that $f$ is not zero almost everywhere and define
 \[
 A(p)=\int_0^1 |f(x)|^p\,dx,
@@ -75,7 +75,7 @@ Thus $F$ is convex on $(0,1]$.
 :::
 
 <1>3. Compute the zeroth-moment limit.
-::: proof
+::: {.proof}
 Let
 \[
 \alpha=m\{x:f(x)\ne0\}\in(0,1].
@@ -96,7 +96,7 @@ F(p)\longrightarrow\log\alpha.
 :::
 
 <1>4. If the zero set has positive measure, the limit is zero.
-::: proof
+::: {.proof}
 If $m\{f=0\}>0$, then $\alpha<1$. By Step 3,
 \[
 F(p)\longrightarrow\log\alpha<0.
@@ -113,7 +113,7 @@ If $f=0$ almost everywhere, this conclusion is immediate because every $\|f\|_p=
 :::
 
 <1>5. If $f\ne0$ almost everywhere, the limit still exists.
-::: proof
+::: {.proof}
 Now suppose $\alpha=1$. Step 3 gives $F(p)\to0$, so define $F(0)=0$. The resulting function is convex on $[0,1]$.
 
 For $0<p<q\le1$, convexity at
@@ -140,7 +140,7 @@ Exponentiating, $\|f\|_p$ therefore has a limit in $[0,\infty)$.
 :::
 
 <1>6. Conclude both assertions.
-::: proof
+::: {.proof}
 If $f=0$ almost everywhere, the limit is $0$. If the zero set has positive but not full measure, Step 4 gives limit $0$. If $f\ne0$ almost everywhere, Step 5 proves existence of the limit. These cases exhaust all possibilities, proving both claims.
 :::
 :::

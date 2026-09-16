@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S \da k[x_0,\ldots,x_n]$ and let $S^h$ denote its set of homogeneous elements.
 
 1. If $T_1 \subseteq T_2$ are subsets of $S^h$, then $Z(T_1) \supseteq Z(T_2)$.

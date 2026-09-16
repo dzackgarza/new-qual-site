@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Apply Rouché's Theorem to prove the Fundamental Theorem of Algebra:
 
 If

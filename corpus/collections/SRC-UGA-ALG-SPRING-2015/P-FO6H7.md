@@ -18,14 +18,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field and $V$ a finite dimensional $F\dash$vector space, and let $A, B: V\to V$ be commuting $F\dash$linear maps.
 Suppose there is a basis $\mcb_1$ with respect to which $A$ is diagonalizable and a basis $\mcb_2$ with respect to which $B$ is diagonalizable.
 
 Prove that there is a basis $\mcb_3$ with respect to which $A$ and $B$ are both diagonalizable.
 :::
 
-::: solution
+::: {.solution}
 Because $A$ is diagonalizable,
 \[
 V=\bigoplus_{\lambda}E_\lambda(A),

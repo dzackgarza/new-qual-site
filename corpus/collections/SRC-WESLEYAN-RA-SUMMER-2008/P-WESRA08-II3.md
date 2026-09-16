@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose that $A\subseteq\mathbb R$ is Lebesgue measurable and
 \[
 A+r=A
@@ -35,7 +35,7 @@ m(\mathbb R\setminus A)=0.
 \]
 :::
 
-::: solution
+::: {.solution}
 Suppose, toward a contradiction, that both $A$ and $A^c$ have positive measure.
 
 Choose a nonnegative $\varphi\in C_c^\infty(\mathbb R)$ with

@@ -25,7 +25,7 @@ audit:
   note: Verified the degree-20 splitting field, exhibited two noncommuting automorphisms, and ruled out a fifth root of 5 in Q(zeta_25) because every subextension of an abelian Galois extension is abelian Galois.
 ---
 
-::: problem
+::: {.problem}
 For a positive integer $n$, let $\zeta_n = e^{2\pi i/n}$ be a primitive $n$-th root of unity in $\mathbb{C}$.
 
 (a) Prove that $\mathbb{Q}[\sqrt[5]{5}, \zeta_5]$ is a splitting field of $x^5 - 5$ over $\mathbb{Q}$.

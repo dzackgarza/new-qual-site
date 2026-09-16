@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group of order $p^k m$ where $p$ is prime and $p \nmid m$. Let
 $\operatorname{Syl}_p(G)$ be the set of all the Sylow $p$-subgroups of $G$. Suppose
 $P_1 \cap P_2 = \{1\}$ for every two distinct Sylow $p$-subgroups $P_1$ and $P_2$.

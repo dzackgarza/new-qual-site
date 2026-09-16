@@ -25,7 +25,7 @@ audit:
   note: Replaced the unsupported general torsion argument with a direct classification and Klein-bottle group proof.
 ---
 
-::: problem
+::: {.problem}
 Show that $\RP^2 \lor S^1$ is *not* homotopy equivalent to a compact surface (possibly with boundary).
 :::
 

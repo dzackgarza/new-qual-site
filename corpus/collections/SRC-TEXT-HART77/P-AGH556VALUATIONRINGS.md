@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a surface with function field $K$.
 Show that every valuation ring $R$ of $K / k$ is one of the three kinds described in (II, Ex.
 4.12).

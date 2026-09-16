@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For an effective divisor $D$ on a curve $X$ of genus $g$, show that $\dim \abs{D} \leq \deg D$.
 Furthermore, equality holds if and only if $D=0$ or $g=0$.
 :::

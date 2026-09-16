@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int x\sqrt{x+1}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $u=x+1$, so $x=u-1$ and $du=dx$. Then
 \[
 (u-1)u^{1/2}=u^{3/2}-u^{1/2},

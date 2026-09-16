@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $X$ be a projective scheme over a field $k$, let $\mco_X(1)$ be a very ample invertible sheaf on $X$ over $k$, and let $\mcf$ be a coherent sheaf on $X$.
 Show that there is a polynomial $P(z) \in \QQ[z]$, such that $\chi(\mcf(n))=P(n)$ for all $n \in \ZZ$.
 We call $P$ the **Hilbert polynomial** of $\mcf$ with respect to the sheaf $\mco_X(1)$.

@@ -29,7 +29,7 @@ audit:
 4. (20 points) Let D denote the unit disc $\{ z : | z | < 1 \}$ . Determine a holomorphic mapping f of D onto itself for which $\begin{array} { r } { f ( \frac { 1 } { 2 } ) = - \frac { 1 } { \pi } } \end{array}$
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 \phi(z)=\frac{z-1/2}{1-z/2}
@@ -42,7 +42,7 @@ $$
 $$
 
 <1>1. The two factors used in the formula are disk automorphisms.
-::: proof
+::: {.proof}
 For real $a\in(-1,1)$, the Möbius map
 $$
 \phi_a(z)=\frac{z-a}{1-az}
@@ -69,7 +69,7 @@ $|bw|<1$.
 :::
 
 <1>2. Their composition has the required value and is onto.
-::: proof
+::: {.proof}
 The displayed function is precisely
 $$
 f=\psi_b^{-1}\circ\phi.

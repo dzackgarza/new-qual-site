@@ -24,13 +24,13 @@ audit:
   note: "Checked every partition of the 2-primary and 3-primary exponents, all six orders, and the pairwise distinct group exponents."
 ---
 
-::: problem
+::: {.problem}
 (a) State the structure theorem for finite Abelian groups.
 
 (b) Up to isomorphism, what are the Abelian groups of order 360?
 :::
 
-::: solution
+::: {.solution}
 Write $C_m=\mathbb Z/m\mathbb Z$ as an additive group.
 
 <1>1. Every finite abelian group has a decomposition
@@ -57,7 +57,7 @@ form of the structure theorem [@DF04].
 | $C_2\oplus C_2\oplus C_2\oplus C_9\oplus C_5$ | $90$ |
 | $C_2\oplus C_2\oplus C_2\oplus C_3\oplus C_3\oplus C_5$ | $30$ |
 
-::: proof
+::: {.proof}
 Factor $360=2^3\cdot3^2\cdot5$. In step <1>1, the exponents
 for a prime $p$ sum to the exponent of $p$ in the group order.
 For $p=2$ the sum must be $3$. The only partitions of $3$ into
@@ -75,7 +75,7 @@ possibility is realized.
 
 <1>3. The six listed groups are pairwise nonisomorphic.
 
-::: proof
+::: {.proof}
 The exponent of a finite additive group is the least positive
 integer that annihilates every element, and is invariant under
 isomorphism. In a direct sum of cyclic groups, an integer kills

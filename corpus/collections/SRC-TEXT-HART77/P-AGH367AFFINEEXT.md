@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X=\Spec A$ be an affine noetherian scheme.
 Let $M, N$ be $A$-modules, with $M$ finitely generated.
 Then

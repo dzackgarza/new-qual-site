@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 On $\mathbb R^n$ define
 \[
 \rho_1(x,y)=\max_{1\le j\le n}|x^j-y^j|,
@@ -31,9 +31,9 @@ On $\mathbb R^n$ define
 Prove that a set $U\subset\mathbb R^n$ is $\rho_1$-open if and only if it is $\rho_2$-open.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compare the two metrics.
-::: proof
+::: {.proof}
 For every $x,y\in\mathbb R^n$,
 \[
 \rho_1(x,y)\le\rho_2(x,y)\le\sqrt n\,\rho_1(x,y).
@@ -42,7 +42,7 @@ The first inequality holds because each coordinate difference is bounded by the 
 :::
 
 <1>2. Compare metric balls.
-::: proof
+::: {.proof}
 The inequalities imply
 \[
 B_{\rho_2}(x,r)\subseteq B_{\rho_1}(x,r)

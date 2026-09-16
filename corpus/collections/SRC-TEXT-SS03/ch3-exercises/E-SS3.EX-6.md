@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Show that
 
 $$
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For $m\ge1$, set
 \[
 J_m=\int_{-\infty}^{\infty}\frac{dx}{(1+x^2)^m}.

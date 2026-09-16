@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\{f_n\}$ be a sequence of automorphisms of the unit disc $\Delta$, converging locally uniformly in $\Delta$ to a nonconstant function $f$.
 Show that $f$ is an automorphism of $\Delta$.
 
 Hint: Examine the family $\mathcal{F}$ consisting of the inverse automorphisms $f_n^{-1} : \Delta \to \Delta$.
 :::
 
-::: solution
+::: {.solution}
 Set $g_n=f_n^{-1}$. Since the family of holomorphic self-maps of $\mathbb D$
 is normal, some subsequence $g_{n_k}$ converges locally uniformly to a
 holomorphic map $g:\mathbb D\to\overline{\mathbb D}$.

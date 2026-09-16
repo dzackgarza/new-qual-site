@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be an odd prime.
 Let $E$ be a splitting field of $x^p - x + 1$ over $\mathbb{F}_p$.
 

@@ -13,19 +13,19 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Using the calculus of residues, compute
 $$
 \int_0^\infty \frac{\cos x}{(1 + x^2)^2} \, dx.
 $$
 :::
 
-::: remark
+::: {.remark}
 The local transcription previously had upper limit $1$. The official Spring
 2017 UCSD exam has upper limit $\infty$.
 :::
 
-::: solution
+::: {.solution}
 Integrate
 \[
 F(z)=\frac{e^{iz}}{(1+z^2)^2}

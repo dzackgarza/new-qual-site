@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A\subset\mathbb R^2$ be Lebesgue measurable with $m(A)>0$.
 Prove that for every
 \[
@@ -30,7 +30,7 @@ Prove that for every
 there is a measurable subset $B\subset A$ with $m(B)=t$.
 :::
 
-::: solution
+::: {.solution}
 Fix $0<t<m(A)$.
 Since
 \[

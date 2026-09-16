@@ -25,7 +25,7 @@ audit:
   note: Computed the quotient homology as the relative homology of the CW pair consisting of S^2 and the three identified points, then evaluated the long exact sequence of the pair.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the topological space obtained by identifying three distinct points on $S^2$.
 Calculate $H_*(X;\ZZ)$.
 :::

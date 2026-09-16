@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field, and let $X$ be the surface in $\AA_k^3$ defined by the equation $x^2+y^3+z^5=0$.
 It has an isolated singularity at the origin $P=(0,0,0)$.
 

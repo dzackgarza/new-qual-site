@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) $f(z)= u(x,y) +i v(x,y)$ be analytic in a domain $D\subset {\mathbb C}$.
 Let $z_0=(x_0,y_0)$ be a point in $D$ which is in the intersection of the curves $u(x,y)= c_1$ and $v(x,y)=c_2$, where $c_1$ and $c_2$ are constants.
 Suppose that $f'(z_0)\neq 0$.
@@ -27,7 +27,7 @@ Prove that the lines tangent to these curves at $z_0$ are perpendicular.
 Is your answer in agreement with part a) of this question?
 :::
 
-::: solution
+::: {.solution}
 (a) Since $f'(z_0)\ne0$, the Cauchy--Riemann equations give
 \[
 \nabla u=(u_x,u_y),

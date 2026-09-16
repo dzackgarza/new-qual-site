@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find the Galois group of $x^4-2$ over $\QQ$.
 :::
 

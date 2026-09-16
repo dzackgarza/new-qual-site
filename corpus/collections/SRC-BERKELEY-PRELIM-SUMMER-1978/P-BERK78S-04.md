@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 1. Using only the axioms for a field $F$, prove that a system of $m$ homogeneous linear equations in $n$ unknowns with $m<n$ and coefficients in $F$ has a nonzero solution.
 2. Use part 1 to show that if a vector space $V$ over $F$ is spanned by finitely many elements, then every maximal linearly independent subset of $V$ has the same number of elements.
 :::

@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal A,\mu)$ be a measure space.
 Suppose $f_n,f\in L^1(X,\mu)$ and
 \[
@@ -29,7 +29,7 @@ Prove that for every $a>0$,
 \]
 :::
 
-::: solution
+::: {.solution}
 Fix $a>0$ and set
 \[
 E_n=\{x:|f_n(x)-f(x)|>a\}.

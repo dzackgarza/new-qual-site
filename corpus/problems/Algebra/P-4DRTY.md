@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is $\mathbb{Q}(\sqrt[3]{21})$ normal?
 What is its splitting field?
 What is its Galois group?
 Describe the lattice of subfields.
 :::
 
-::: solution
+::: {.solution}
 Let $\alpha=\sqrt[3]{21}$ and let $\omega$ be a primitive cube root of unity. The polynomial
 \[
 f(x)=x^3-21

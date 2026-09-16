@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any scheme $X_0$ over $\RR$, let $X = \fiberprod{X_0}{\RR}{\CC}$.
 Let $\alpha: \CC \to \CC$ be complex conjugation, and let $\sigma: X \to X$ be the automorphism obtained by keeping $X_0$ fixed and applying $\alpha$ to $\CC$.
 Then $X$ is a scheme over $\CC$, and $\sigma$ is a **semilinear** automorphism: the square formed by $\sigma$ on $X$, by $\alpha$ on $\Spec \CC$, and by the two structure morphisms $X \to \Spec \CC$ commutes.

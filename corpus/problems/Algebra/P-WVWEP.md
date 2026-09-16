@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G=\GL_2(\FF_q)$.
 
 1. Compute $|G|$.

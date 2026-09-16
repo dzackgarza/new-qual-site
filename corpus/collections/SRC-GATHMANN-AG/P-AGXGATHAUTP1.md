@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that
 
 a. Every isomorphism $f:\PP^1\to \PP^1$ is of the form

@@ -18,12 +18,12 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 For $n \geq 1$, take a point $p \in S^n$ and consider the subspace $A = \{(x, y) \in S^n \times S^n \mid x = p \text{ or } y = p\}$ of $S^n \times S^n$.
 Show that there does not exist a retraction of $S^n \times S^n$ to $A$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that for $n \ge 1$, there exists no retraction $r: S^n \times S^n \to A$, where $A = (S^n \times \{p\}) \cup (\{p\} \times S^n) \subset S^n \times S^n$.
 
 <1>1. Algebraic properties of a retraction on cohomology rings:

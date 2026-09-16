@@ -15,7 +15,7 @@ audit:
   note: Checked against Group B, problem B2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md. Flash drops the convergence arrows in the final sentence; the $L^\infty$ hypothesis and two displayed integrals determine the intended convergence.
 ---
 
-::: problem
+::: {.problem}
 Let $X\subset\mathbb R^d$ be measurable with $\lambda(X)<\infty$.
 Let $g,f_n$ be measurable with supports contained in $X$.
 Prove that if

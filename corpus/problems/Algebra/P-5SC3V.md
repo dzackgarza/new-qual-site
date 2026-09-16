@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Do you know a Principal Ideal Domain (PID) that is not a Euclidean Domain?
 :::
 
-::: solution
+::: {.solution}
 A standard example is
 \[
 R=\mathbb Z\left[\frac{1+\sqrt{-19}}2\right],

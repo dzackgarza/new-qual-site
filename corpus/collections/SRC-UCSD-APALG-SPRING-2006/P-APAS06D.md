@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group.
 Let $r\ge 2$ be an integer.
 Assume that $G$ contains a non-trivial subgroup $H$ of index $[G:H]=r$.
@@ -31,7 +31,7 @@ Prove the following.
 (c) For all integers $r\ge 5$, there exist simple groups $G$ which contain non-trivial subgroups $H$ of index $[G:H]=r$.
 :::
 
-::: solution
+::: {.solution}
 For the action of $G$ on the left cosets $G/H$, let
 \[
 \rho:G\longrightarrow S_r

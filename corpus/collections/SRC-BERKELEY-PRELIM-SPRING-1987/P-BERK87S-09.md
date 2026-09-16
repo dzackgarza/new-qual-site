@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be an $m\times n$ matrix with rational entries and let $b\in\mathbb Q^m$. Prove or disprove: if
 \[
 Ax=b

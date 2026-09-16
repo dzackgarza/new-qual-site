@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a unique factorization domain.
 Prove that $R[x]$ is a unique factorization domain.
 :::
 
-::: solution
+::: {.solution}
 Let $K=\operatorname{Frac}(R)$.
 
 For a nonzero polynomial $f\in R[x]$, define its content $c(f)$ to be a gcd of
@@ -38,7 +38,7 @@ its coefficients, determined up to a unit. A polynomial is primitive if its
 content is a unit.
 
 <1>1. The product of two primitive polynomials in $R[x]$ is primitive.
-::: proof
+::: {.proof}
 Let $f,g\in R[x]$ be primitive. Suppose a prime element $p\in R$ divided every
 coefficient of $fg$. Reducing modulo $(p)$ gives
 \[
@@ -54,7 +54,7 @@ divides all coefficients of $fg$, so $fg$ is primitive.
 
 <1>2. If $f\in R[x]$ is primitive, then $f$ is reducible in $R[x]$ if and only
 if it is reducible in $K[x]$.
-::: proof
+::: {.proof}
 Only the reverse implication needs proof. Suppose
 \[
 f=gh
@@ -89,7 +89,7 @@ is a nontrivial factorization in $R[x]$.
 :::
 
 <1>3. Every nonzero nonunit of $R[x]$ factors into irreducibles.
-::: proof
+::: {.proof}
 Let $0\ne f\in R[x]$. Write
 \[
 f=c(f)f_0
@@ -119,7 +119,7 @@ $f$ factors into irreducibles in $R[x]$.
 
 <1>4. Factorization into irreducibles in $R[x]$ is unique up to order and
 associates.
-::: proof
+::: {.proof}
 Separate any factorization of $f$ into its constant irreducible factors and its
 positive-degree primitive irreducible factors. The product of the constant
 factors is, up to a unit, the content $c(f)$, whose factorization is unique in
@@ -135,7 +135,7 @@ $R[x]$. Thus the factorization is unique in $R[x]$.
 :::
 
 <1>5. Therefore $R[x]$ is a UFD.
-::: proof
+::: {.proof}
 Existence is <1>3 and uniqueness is <1>4.
 :::
 :::

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a>0$. Show that
 \[
 ae^x=1+x+\frac{x^2}{2}

@@ -19,7 +19,7 @@ audit:
   note: Removed the difficulty-glyph residue from Linear Algebra Problem 36 on page 5 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 "Trotter product formula".
 Consider $n \times n$ complex matrices $A$, $B$.
 Prove that $e^{A+B} = \lim_{N \to \infty} \left(e^{A/N} e^{B/N}\right)^N$, $N \in \mathbb{R}$.

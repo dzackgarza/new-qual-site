@@ -26,7 +26,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Let $f$ on $[-1,1]^2$ be defined by
 \[
 f(x,y)=
@@ -38,7 +38,7 @@ f(x,y)=
 Determine whether $f$ is Lebesgue integrable.
 :::
 
-::: solution
+::: {.solution}
 The function is measurable. To test Lebesgue integrability, consider its absolute value on the sector
 \[
 S:=\{(r\cos\theta,r\sin\theta):0<r<1,\ \pi/6\le\theta\le\pi/3\}.

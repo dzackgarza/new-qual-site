@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Prove the following:
 suppose $\abs{f(z)}\leq 1$, then for all $z, w\in \DD$,
 \[
@@ -28,7 +28,7 @@ If equality holds for some $z\neq w$ in either expression, then $f= \lambda F$ w
 
 :::
 
-:::{.proof title="of Schwarz-Pick"}
+::: {.proof title="of Schwarz-Pick"}
 
 ![](../../assets/figures/2021-11-27_00-55-19.png)
 
@@ -36,7 +36,7 @@ If equality holds for some $z\neq w$ in either expression, then $f= \lambda F$ w
 
 :::
 
-::: solution
+::: {.solution}
 For $a\in\mathbb D$, write
 \[
 \phi_a(\zeta)=\frac{a-\zeta}{1-\overline a\zeta}.

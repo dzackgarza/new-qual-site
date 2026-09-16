@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 State the Lebesgue monotone convergence theorem.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let
 \[
 0\le f_1\le f_2\le\cdots

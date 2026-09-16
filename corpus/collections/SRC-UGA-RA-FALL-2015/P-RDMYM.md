@@ -23,7 +23,7 @@ audit:
   note: Replaced an incorrect linear map in the measurability argument and removed a circular use of Fubini-Tonelli.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f, g \in L^1(\RR)$ be Borel measurable.
 
 - Show that 
@@ -36,9 +36,9 @@ Let $f, g \in L^1(\RR)$ be Borel measurable.
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove measurability on $\mathbb R^2$.
-::: proof
+::: {.proof}
 The maps
 \[
 S:\mathbb R^2\to\mathbb R,
@@ -65,7 +65,7 @@ is therefore Borel measurable on $\mathbb R^2$.
 :::
 
 <1>2. Show that the absolute-value kernel is integrable on $\mathbb R^2$.
-::: proof
+::: {.proof}
 The function
 \[
 (x,y)\mapsto |f(x-y)|\,|g(y)|
@@ -88,7 +88,7 @@ Thus $F\in L^1(\mathbb R^2)$.
 :::
 
 <1>3. Obtain almost-everywhere existence of the convolution slices.
-::: proof
+::: {.proof}
 Since $|F|\in L^1(\mathbb R^2)$, Fubini's theorem implies that for almost every $x\in\mathbb R$,
 \[
 \int_{\mathbb R}|f(x-y)g(y)|\,dy<\infty.
@@ -101,7 +101,7 @@ is absolutely convergent.
 :::
 
 <1>4. Prove Young's $L^1$ inequality.
-::: proof
+::: {.proof}
 For every $x$ for which the convolution integral exists,
 \[
 |(f*g)(x)|

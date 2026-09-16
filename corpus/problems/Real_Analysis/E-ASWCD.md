@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Let $\mu^*$ be an outer measure on $X$ and let $\mathcal M(\mu^*)$ be its Carathéodory $\sigma$-algebra.
   Show that the restriction of $\mu^*$ to $\mathcal M(\mu^*)$ is continuous from below, and continuous from above when the first set has finite outer measure.
 

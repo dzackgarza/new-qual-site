@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 For each $k>0$, let $X_k$ be the set of analytic functions $f$ on the open unit disk $\mathbb D$ such that
 \[
 \sup_{z\in\mathbb D}(1-|z|)^k|f(z)|<\infty.

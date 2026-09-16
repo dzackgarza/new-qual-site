@@ -15,7 +15,7 @@ audit:
   note: Checked against Differential Equations, Problem 48, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Flash contains a leading nonprinting control byte at this source position; the byte was removed from the authored card as a nonsemantic extraction artifact.
 ---
 
-::: problem
+::: {.problem}
 A string has endpoints which are fixed at $x = 0$ and $x = L$ . At $t = 0$ , the string is hit at $x = a$ so it starts vibrating:
 
 $$

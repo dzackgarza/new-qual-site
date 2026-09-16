@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the prime ideals and maximal ideals of $\ZZ[x]$?
 :::
 

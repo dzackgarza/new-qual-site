@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A \subseteq B$ be a ring extension, and let $I \subseteq J$ be ideals of $A$.
 
 a. If $IB=JB$, must $I=J$?
@@ -34,10 +34,10 @@ Give a counterexample if not.
 b. Give a hypothesis on the extension $A \subseteq B$ which ensures that $IB=JB$ implies $I=J$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. In general, equality after extension does not imply equality before
 extension.
-::: proof
+::: {.proof}
 Take
 \[
 A=\mathbb Z,
@@ -55,7 +55,7 @@ IB=2\mathbb Q=\mathbb Q=JB.
 :::
 
 <1>2. If $B$ is faithfully flat over $A$, then $IB=JB$ implies $I=J$.
-::: proof
+::: {.proof}
 Because $I\subseteq J$, there is an exact sequence
 \[
 0\longrightarrow I\longrightarrow J\longrightarrow J/I\longrightarrow0.
@@ -73,7 +73,7 @@ modules, so $J/I=0$. Hence $I=J$.
 IB\cap A=I
 \]
 for every ideal $I\subseteq A$.
-::: proof
+::: {.proof}
 Apply <1>2 to $I\subseteq IB\cap A$. Extending both ideals to $B$ gives $IB$
 in each case, hence they are equal.
 :::

@@ -17,12 +17,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Classify (with proof) all fields with finitely many elements.
 :::
 
 
-::: solution
+::: {.solution}
 Let \(F\) be a finite field. Its characteristic is a prime \(p\), so its prime subfield is \(\mathbb F_p\). Since \(F\) is finite-dimensional over \(\mathbb F_p\), say
 \[
 [F:\mathbb F_p]=n,

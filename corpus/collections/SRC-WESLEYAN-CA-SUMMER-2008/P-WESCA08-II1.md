@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the Laurent series centered at $i$ for
 \[
 f(z)=\frac1{(z^2+1)^2},

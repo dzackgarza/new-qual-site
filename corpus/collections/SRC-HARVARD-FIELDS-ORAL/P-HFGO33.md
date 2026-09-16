@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define a cyclotomic extension.
 :::
 
-::: solution
+::: {.solution}
 A cyclotomic extension of a field $F$ is an extension obtained by adjoining a
 root of unity. Concretely, for a positive integer $n$ and a primitive $n$th
 root of unity $\zeta_n$, one considers

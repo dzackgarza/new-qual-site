@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute $\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_8, \mathbb{Z} \oplus \mathbb{Z}_4 \oplus \mathbb{Z}_4)$.
 :::
 

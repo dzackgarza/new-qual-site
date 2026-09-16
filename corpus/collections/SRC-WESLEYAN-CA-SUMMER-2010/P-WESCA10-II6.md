@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ is analytic in the unit disk, $f(0)=f'(0)=0$, and
 \[
 |f'(z)|\le1

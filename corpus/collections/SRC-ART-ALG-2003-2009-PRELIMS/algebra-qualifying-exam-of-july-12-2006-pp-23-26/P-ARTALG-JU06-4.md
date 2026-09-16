@@ -24,14 +24,14 @@ audit:
   note: "Checked the central order-p subgroup, the induction boundary, and normality and order of each inverse image."
 ---
 
-::: problem
+::: {.problem}
 If $p$ is a prime, $k$ is a positive integer and $G$ is a group of order $p^k$, show that for each positive integer $i \leq k$, $G$ has a normal subgroup of order $p^i$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every nontrivial finite $p$-group has a central subgroup of order $p$.
 
-::: proof
+::: {.proof}
 In the class equation, each noncentral conjugacy class has size
 $[G:C_G(x)]$, a power of $p$ greater than $1$ [@DF04]. It follows
 that $p\mid |Z(G)|$. Since the center contains the identity, it
@@ -44,7 +44,7 @@ and is therefore normal in $G$.
 
 <1>2. Induction on $k$ gives the asserted normal subgroups.
 
-::: proof
+::: {.proof}
 When $k=1$, the only requested order is $p$, and $G$ itself is a
 normal subgroup of that order.
 

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a finite morphism is proper.
 :::

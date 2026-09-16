@@ -30,9 +30,9 @@ Show that every free module over a unital integral domain is torsion-free.
 Show that the converse is false.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every free module over a unital integral domain is torsion-free.
-::: proof
+::: {.proof}
 Let $R$ be a unital integral domain and let $F$ be a free $R$-module with basis
 $B$. Suppose $0\ne r\in R$ and $x\in F$ satisfy $rx=0$. Write the unique finite
 basis expansion
@@ -49,7 +49,7 @@ nonzero torsion element.
 :::
 
 <1>2. The converse is false.
-::: proof
+::: {.proof}
 Take $R=\ZZ$ and the $\ZZ$-module $\QQ$. It is torsion-free: if
 $0\ne n\in\ZZ$ and $q\in\QQ$ satisfy $nq=0$, then $q=0$.
 

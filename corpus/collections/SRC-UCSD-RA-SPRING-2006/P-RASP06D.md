@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\{f_j\}$ be a sequence of real-valued functions in $L^1(X, \mu)$ such that $f_j \to f$ a.e. with $f \in L^1(X, \mu)$.
 Suppose $\{g_j\}$ is a sequence of functions in $L^1(X, \mu)$ such that $|f_j| \leq g_j$, $g_j \to g$ a.e. for some $g \in L^1(X, \mu)$, and also $g_j \to g$ in $L^1$.
 Prove that
@@ -32,9 +32,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Pass the pointwise domination to the limit.
-::: proof
+::: {.proof}
 Outside a null set, we have simultaneously
 \[
 f_j(x)\to f(x),
@@ -51,7 +51,7 @@ almost everywhere. In particular $g\ge0$ almost everywhere.
 :::
 
 <1>2. Use Fatou's lemma to prove $L^1$ convergence.
-::: proof
+::: {.proof}
 Define
 \[
 h_j:=g_j+g-|f_j-f|.
@@ -98,7 +98,7 @@ and consequently
 :::
 
 <1>3. Conclude convergence of the integrals.
-::: proof
+::: {.proof}
 Finally,
 \[
 \left|\int_X f_j\,d\mu-\int_X f\,d\mu\right|

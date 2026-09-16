@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be complex-valued on the open unit disk $D$. Suppose
 \[
 f^2

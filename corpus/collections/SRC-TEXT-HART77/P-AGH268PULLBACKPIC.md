@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $f: X \to Y$ be a morphism of schemes.
 Show that $\mcl \mapsto f^* \mcl$ induces a homomorphism of Picard groups $f^*: \Pic Y \to \Pic X$.
 

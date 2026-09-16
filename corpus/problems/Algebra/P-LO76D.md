@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite group and let $N \trianglelefteq G$,
 and let $p$ be a prime number and $Q$ a subgroup of $G$ such that
 $N \subset Q$ and $Q/N$ is a Sylow $p-$subgroup of $G/N$.
@@ -26,7 +26,7 @@ $N \subset Q$ and $Q/N$ is a Sylow $p-$subgroup of $G/N$.
     $p-$subgroup of $G$.
 :::
 
-:::{.solution}
+::: {.solution}
 *Proof.*
 
 1.  Since $Q/N$ is a Sylow $p-$subgroup of $G/N$, we can write

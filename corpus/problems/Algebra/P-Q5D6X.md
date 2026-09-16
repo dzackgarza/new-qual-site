@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many invertible $n\times n$ matrices are there over $\FF_p$?
 :::
 

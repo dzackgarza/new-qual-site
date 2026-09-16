@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A morphism $f: X \to Y$ of schemes of finite type over $k$ is **étale** if it is smooth of relative dimension $0$.
 It is **unramified** if for every $x \in X$, letting $y = f(x)$, we have $\mfm_y \cdot \mco_x = \mfm_x$, and $k(x)$ is a separable algebraic extension of $k(y)$.
 

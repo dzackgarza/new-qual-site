@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use the result of (Ex. 9.1) to prove the following geometric result.
 Let $Y \subseteq X = \PP^n_k$ be as above, and let $f: X \to Z$ be a morphism of $k\dash$varieties.
 Suppose that $f(Y)$ is a single closed point $P \in Z$.

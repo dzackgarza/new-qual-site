@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find all possible values of
 \[
 \int_\gamma\frac{dz}{1+z^2},

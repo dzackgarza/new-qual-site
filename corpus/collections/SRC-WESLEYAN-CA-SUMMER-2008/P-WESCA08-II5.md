@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be open and let $f,g:U\to\mathbb C$ be analytic except for isolated singularities.
 Let $z_0\in U$.
 

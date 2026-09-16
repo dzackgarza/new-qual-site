@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 23, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the basis $\vec { e } _ { i } , i = 1 , 2 , 3$ , in the vector space $\mathbb { R } ^ { 3 }$ In this basis, write the matrix of the transformation that
 
 (a) stretches all directions by a factor of λ.

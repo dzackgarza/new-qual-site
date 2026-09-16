@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $\varphi: \mcf \to \mcg$ be a morphism of sheaves on $X$.
 Show that $\varphi$ is surjective if and only if the following condition holds: for every open set $U \subseteq X$ and every $s \in \mcg(U)$, there is a covering $\ts{U_i}$ of $U$ and elements $t_i \in \mcf(U_i)$ such that $\varphi(t_i) = \ro{s}{U_i}$ for all $i$.
 
 b. Give an example of a surjective morphism of sheaves $\varphi: \mcf \to \mcg$ and an open set $U$ such that $\varphi(U): \mcf(U) \to \mcg(U)$ is not surjective.
 :::
 
-::: solution
+::: {.solution}
 **Part a.** ($\Rightarrow$) Suppose $\phi$ is surjective, so $\phi_P$ is surjective for every $P$.
 Fix an open $U$ and a section $s \in \mcg(U)$.
 For each $P \in U$ the germ $s_P \in \mcg_P$ lifts to some $t_P \in \mcf_P$ with $\phi_P(t_P) = s_P$.

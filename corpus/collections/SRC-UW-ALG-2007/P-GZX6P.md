@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field of characteristic zero and $f\in K[x]$ an irreducible polynomial of degree $n$.
 Let $L$ be a splitting field for $f$.
 Let $G$ be the group of automorphisms of $L$ which act trivially on $K$.
@@ -32,7 +32,7 @@ Let $G$ be the group of automorphisms of $L$ which act trivially on $K$.
   Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The natural action of $G$ on the roots of $f$ defines an injective homomorphism
 \[
 G\hookrightarrow S_n.

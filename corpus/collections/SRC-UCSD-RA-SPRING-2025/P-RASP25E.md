@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f \in C^1(\mathbb{R})$ such that $f(0) = f(1)$ and $\int_0^1 f(x)\,dx = 0$.
 
 (1) Prove that $4\pi^2 \int_0^1 |f(x)|^2\,dx \leq \int_0^1 |f'(x)|^2\,dx$.
@@ -31,14 +31,14 @@ Let $f \in C^1(\mathbb{R})$ such that $f(0) = f(1)$ and $\int_0^1 f(x)\,dx = 0$.
 (2) Prove that if $4\pi^2 \int_0^1 |f(x)|^2\,dx = \int_0^1 |f'(x)|^2\,dx$, then there exist $a, b \in \mathbb{C}$ such that $f(x) = a\cos(2\pi x) + b\sin(2\pi x)$ for every $x \in [0,1]$.
 :::
 
-::: solution
+::: {.solution}
 For $n\in\mathbb Z$, write
 \[
 \widehat f(n):=\int_0^1 f(x)e^{-2\pi i n x}\,dx.
 \]
 
 <1>1. Relate the Fourier coefficients of $f'$ and $f$.
-::: proof
+::: {.proof}
 Since $f\in C^1([0,1])$, integration by parts gives
 \[
 \begin{aligned}
@@ -59,7 +59,7 @@ Also the zero-mean assumption says
 :::
 
 <1>2. Prove the Poincare inequality.
-::: proof
+::: {.proof}
 By Parseval's identity,
 \[
 \int_0^1|f(x)|^2\,dx
@@ -84,7 +84,7 @@ Thus
 :::
 
 <1>3. Characterize the equality case.
-::: proof
+::: {.proof}
 Equality in Step 2 is equivalent to
 \[
 \sum_{n\ne0}(n^2-1)|\widehat f(n)|^2=0.

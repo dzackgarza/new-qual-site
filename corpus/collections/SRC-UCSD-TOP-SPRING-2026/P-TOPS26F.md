@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $S^2 \vee S^1 \vee S^1$ is not homotopy equivalent to $S^1 \times S^1$.
 :::
 

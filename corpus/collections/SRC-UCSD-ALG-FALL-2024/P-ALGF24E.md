@@ -25,7 +25,7 @@ audit:
   note: Checked both inclusions using the localization zero criterion and a finite product of denominators; the empty generating set covers the zero module.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring and $\operatorname{Spec}(A)$ is the set of all the prime ideals of $A$.
 For an $A$-module $M$ and $\mathfrak{p} \in \operatorname{Spec}(A)$, let $M_{\mathfrak{p}}$ be the localization of $M$ at $\mathfrak{p}$.
 Let

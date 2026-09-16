@@ -15,7 +15,7 @@ audit:
   note: The retained PDF page confirms that part 1 concludes I=R; the extraction garbled the ideal symbol.
 ---
 
-:::{.problem}
+::: {.problem}
 1. Let $R$ be a commutative ring with identity containing an element $a$ such that
    \[
    a^3=a+1.

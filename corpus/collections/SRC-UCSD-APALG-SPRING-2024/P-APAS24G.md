@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V,\varphi)$ be a finite-dimensional unitary representation of a finite group $G$.
 State the definition of the space $V^G$ of $G$-invariant vectors in $V$, and prove that
 \[
@@ -22,7 +22,7 @@ P=\frac{1}{|G|}\sum_{g\in G}\varphi(g)
 is the orthogonal projection of $V$ onto $V^G$.
 :::
 
-::: solution
+::: {.solution}
 The invariant subspace is
 \[
 V^G=\{v\in V:\varphi(g)v=v\text{ for every }g\in G\}.

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose the complex polynomial
 \[
 \sum_{k=0}^n a_k z^k

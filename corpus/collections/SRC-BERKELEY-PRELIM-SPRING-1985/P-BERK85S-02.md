@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be an abelian group. Suppose $a,b\in G$ have finite orders $r,s$ with
 \[
 \gcd(r,s)=1.

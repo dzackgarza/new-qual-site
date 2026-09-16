@@ -38,7 +38,7 @@ f'(x)  =\sum_{n=1}^{\infty}\left(\frac{1}{n^{x}}\right)^{\prime}.
 \]
 :::
 
-::: solution
+::: {.solution}
 
 Let
 \[

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 a. State the class equation.
 
 b. Suppose $|G| = p^k$ and $H$ is a normal subgroup of $G$ with $|H| > 1$.

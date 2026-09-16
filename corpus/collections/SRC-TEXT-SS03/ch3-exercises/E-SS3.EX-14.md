@@ -15,13 +15,13 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 14. Prove that all entire functions that are also injective take the form $f ( z ) = a z + b$ with $a , b \in \mathbb { C }$ , and $a \neq 0$
 
 [Hint: Apply the Casorati-Weierstrass theorem to $f ( 1 / z ) . ]$
 :::
 
-::: solution
+::: {.solution}
 Let $f$ be entire and injective, and define $g(z)=f(1/z)$ on a punctured neighborhood of $0$.
 
 The singularity of $g$ at $0$ cannot be removable: otherwise $f(z)$ would have a finite limit as $z\to\infty$, hence would be bounded outside a large disc and therefore bounded on all of $\mathbb C$; Liouville would make $f$ constant, contradicting injectivity.

@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $99$.
 Must $G$ have a normal subgroup of order $11$?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Yes.
 
 Let $n_{11}$ be the number of Sylow $11$-subgroups of $G$. Since

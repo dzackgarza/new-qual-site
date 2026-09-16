@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the singular points of $X$ form a proper Zariski closed subset, so that the smooth points form a dense Zariski open subset.
 :::

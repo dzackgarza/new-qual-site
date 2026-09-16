@@ -16,13 +16,13 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be the algebraic set in $\AA^3$ defined by the two polynomials $x^2 - yz$ and $xz - x$.
 Show that $Y$ is a union of three irreducible components.
 Describe them and find their prime ideals.
 :::
 
-::: solution
+::: {.solution}
 Factor the second equation:
 \[
 Y = V(x^2 - yz) \intersect V(xz - x) = V(x^2-yz) \intersect \left( V(x) \union V(z-1) \right) .

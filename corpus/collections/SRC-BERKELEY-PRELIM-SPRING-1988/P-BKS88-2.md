@@ -16,7 +16,7 @@ audit:
   note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
 ---
 
-::: problem
+::: {.problem}
 Determine the last digit of
 \[
 23^{23^{23^{23}}}

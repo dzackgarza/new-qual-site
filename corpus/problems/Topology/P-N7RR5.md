@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is it true that the interior of a product is the product of the interiors? Specifically, for topological spaces $X$ and $Y$ and subsets $A \subseteq X$ and $B \subseteq Y$, is $\operatorname{int}(A \times B) = \operatorname{int}(A) \times \operatorname{int}(B)$? What about infinite products?
 :::
 
-::: solution
+::: {.solution}
 <1>1. For two factors,
 \[
 \operatorname{int}_{X\times Y}(A\times B)

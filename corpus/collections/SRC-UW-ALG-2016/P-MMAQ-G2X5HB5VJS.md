@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a commutative ring and $M$ a finitely generated $A$-module.
 Define
 `\begin{align*}
@@ -36,7 +36,7 @@ Show that for a prime ideal $\mathfrak p \subset A$, the following are equivalen
 :::
 
 
-::: solution
+::: {.solution}
 Let \(S=A\setminus\mathfrak p\), so \(A_{\mathfrak p}=S^{-1}A\) and \(M_{\mathfrak p}=S^{-1}M\).
 
 <1>1. If

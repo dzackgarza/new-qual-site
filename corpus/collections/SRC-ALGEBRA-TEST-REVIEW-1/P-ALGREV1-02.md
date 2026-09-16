@@ -27,11 +27,11 @@ audit:
 Prove or disprove that $\operatorname{Inn}(G)\trianglelefteq\operatorname{Aut}(G)$.
 :::
 
-::: solution
+::: {.solution}
 The assertion is true.
 
 <1>1. Conjugating an inner automorphism by any automorphism gives another inner automorphism.
-::: proof
+::: {.proof}
 For $g\in G$, let
 $$
 c_g(x)=gxg^{-1}
@@ -53,7 +53,7 @@ $$
 :::
 
 <1>2. Therefore $\operatorname{Inn}(G)$ is normal in $\operatorname{Aut}(G)$.
-::: proof
+::: {.proof}
 Step <1>1 shows that
 $$
 \varphi\operatorname{Inn}(G)\varphi^{-1}

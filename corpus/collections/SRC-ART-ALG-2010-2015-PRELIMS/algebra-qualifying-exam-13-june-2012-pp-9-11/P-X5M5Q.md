@@ -26,7 +26,7 @@ audit:
   note: "Checked the degree tower, existence of the root automorphisms, exhaustive subgroup list of S3, identification of each fixed field, and every normality decision."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field of $f(x)=x^3 - 5$ over $\mathbb{Q}$.
 
 a. What is the dimension of $K$ over $\mathbb{Q}$?
@@ -40,13 +40,13 @@ Be sure to explain how you know you have included all of them.
 d. Which of these subfields are Galois over $\mathbb{Q}$?
 :::
 
-::: solution
+::: {.solution}
 Put $a=\sqrt[3]{5}>0$, choose $\zeta=e^{2\pi i/3}$, and
 write $a_j=\zeta^ja$ for $j\in\mathbb Z/3\mathbb Z$.
 
 <1>1. One has $K=\mathbb Q(a,\zeta)$ and $[K:\mathbb Q]=6$.
 
-::: proof
+::: {.proof}
 The roots are $a_0,a_1,a_2$. The field they generate contains
 $a=a_0$ and $\zeta=a_1/a_0$, and conversely all the roots
 belong to $\mathbb Q(a,\zeta)$. This proves the field identity.
@@ -62,7 +62,7 @@ is a finite Galois extension [@DF04].
 <1>2. The Galois group is $S_3$, acting as all permutations
 of $a_0,a_1,a_2$.
 
-::: proof
+::: {.proof}
 An automorphism permutes the roots; that action is faithful
 because they generate $K$. Since the Galois group has order
 $[K:\mathbb Q]=6=|S_3|$, its image is all of $S_3$.
@@ -95,7 +95,7 @@ $$
 $$
 Their degrees over $\mathbb Q$ are respectively $1,2,3,3,3,6$.
 
-::: proof
+::: {.proof}
 By the Galois correspondence, intermediate fields correspond
 bijectively to subgroups $H\leq S_3$, and the fixed field
 has degree $[S_3:H]$ [@DF04]. Lagrange's theorem restricts
@@ -126,7 +126,7 @@ subfields lie outside this correspondence.
 <1>4. Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$
 are Galois over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 A fixed field $K^H$ is Galois over $\mathbb Q$ exactly
 when $H$ is normal in $S_3$ [@DF04]. The identity subgroup
 and the whole group are normal. The subgroup $A_3$ has

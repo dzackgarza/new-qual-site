@@ -21,7 +21,7 @@ audit:
   note: Verified the exterior-power trace and characteristic-polynomial coefficient formulas.
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be an $n$-dimensional Hilbert space and $A \colon H \to H$ a normal linear transformation.
 
 (a) Derive a formula for the trace of the degree $d$ exterior power $A^{\wedge d}$ as a function of the eigenvalues of $A$.

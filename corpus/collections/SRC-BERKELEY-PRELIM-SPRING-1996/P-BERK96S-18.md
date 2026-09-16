@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G,H$ be finite groups of relatively prime orders. Prove that
 \[
 \operatorname{Aut}(G\times H)

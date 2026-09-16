@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 14. Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle.
     Show that if
 
@@ -30,7 +30,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Let the pole of $f$ at $z_0$ have order $m\ge1$. Since $|z_0|=1$, write the principal part at $z_0$ as
 \[
 \sum_{k=1}^m \frac{c_{-k}}{(z-z_0)^k},

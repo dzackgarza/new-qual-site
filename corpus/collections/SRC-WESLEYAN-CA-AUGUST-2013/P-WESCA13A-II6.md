@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash corrupts the radius/center symbols in this line; the evenness and $f(\sqrt z)$ formulation unambiguously identifies the intended descent-through-$z\mapsto z^2$ problem.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be even and analytic on a disk $B(0,r)$.
 Define
 \[

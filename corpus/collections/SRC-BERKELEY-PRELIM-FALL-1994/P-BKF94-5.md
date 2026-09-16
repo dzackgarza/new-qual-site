@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 (a) Find a basis for the real solution space of
 \[
 \sum_{n=0}^{7}\frac{d^nx}{dt^n}=0.

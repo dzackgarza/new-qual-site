@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the quaternion group $Q_8$? Give its presentation and list the number of elements of each order.
 :::
 
-::: solution
+::: {.solution}
 The quaternion group is
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\},

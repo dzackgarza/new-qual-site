@@ -19,7 +19,7 @@ audit:
   note: Replaced the missing-figure note with a description of Figure 5 and removed glyph residue, against Complex Analysis Problem 32 on pages 17-18 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Riemann's zeta function is defined as $\zeta(z) = \sum_{n=1}^\infty n^{-z}$.
 
 - For which values of $z$ does this converge?

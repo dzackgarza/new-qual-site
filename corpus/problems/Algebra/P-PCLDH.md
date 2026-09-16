@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define a separable algebraic extension. Explain why algebraic extensions of characteristic-$0$ fields and of finite fields are separable, and give an inseparable example.
 :::
 

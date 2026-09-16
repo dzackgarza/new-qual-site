@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S \da k[x_0,\ldots,x_n]$.
 
 1. Show that $Y \mapsto I(Y)$ and $\mfa \mapsto Z(\mfa)$ give a one-to-one inclusion-reversing correspondence between algebraic sets in $\PP^n$ and homogeneous radical ideals of $S$ not equal to $S_+$.

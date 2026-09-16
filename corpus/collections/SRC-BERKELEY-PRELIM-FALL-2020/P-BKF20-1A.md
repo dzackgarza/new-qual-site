@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Find the indefinite integral
 \[
 \int e^{2x}\sin x\,dx.

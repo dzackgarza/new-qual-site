@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 - (**Important**) Classify all groups of order $p^2$.
 
   > Must be abelian since quotient is cyclic.
@@ -29,7 +29,7 @@ audit:
   > and $\size HK = \size H \size K / \size(H \intersect K) = p\cdot p/1 = p^2$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every group of order $p^2$ (for $p$ prime) is abelian and isomorphic to either $C_{p^2}$ or $C_p \times C_p$.
 
 <1>1. Every group $G$ of order $p^2$ is abelian.

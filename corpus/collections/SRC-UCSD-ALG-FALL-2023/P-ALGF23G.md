@@ -24,7 +24,7 @@ audit:
   note: Verified that characteristic zero would give a finite Galois group containing an automorphism alpha maps to alpha+1, whose iterates force a nonzero integer to vanish.
 ---
 
-::: problem
+::: {.problem}
 Suppose $F$ is a field, $f \in F[x]$ is irreducible, and $E$ is a splitting field of $f$ over $F$.
 Suppose there exists $\alpha \in E$ such that $f(\alpha) = f(\alpha + 1) = 0$.
 Prove that the characteristic of $F$ is positive.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X=\PP_k^1$ be the projective line over an algebraically closed field $k$.
 Show that the exact sequence
 \[

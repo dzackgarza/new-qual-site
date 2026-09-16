@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give examples of
 
 1. a real-valued function in $L^2(\mathbb R)$ but not in $L^3(\mathbb R)$;
@@ -29,7 +29,7 @@ Give examples of
 2. a real-valued function in $L^3(\mathbb R)$ but not in $L^2(\mathbb R)$.
 :::
 
-::: solution
+::: {.solution}
 For the first example, take
 \[
 f(x)=x^{-2/5}\mathbf1_{(0,1)}(x).

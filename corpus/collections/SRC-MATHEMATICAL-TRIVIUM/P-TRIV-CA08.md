@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, Problem 8, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 OFind the Laurent series of $\begin{array} { r } { f ( z ) = \frac { 1 } { ( z + 1 ) ( z + 2 ) } } \end{array}$ such that it converges in the regions (a) $| z | < 1 ;$
 
 (b) $1 < | z | < 2 ;$

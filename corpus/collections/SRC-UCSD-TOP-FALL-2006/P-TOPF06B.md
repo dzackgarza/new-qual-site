@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give an example of a space $X$ such that $H^*(X; \mathbb{Z}) = \mathbb{Z}$ for all $0 \leq i < \infty$, and such that the cohomology ring $H^*(X; \mathbb{Z})$ is finitely generated.
 :::
 

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $g\in L^\infty([0, 1])$
 Prove that
 \[
@@ -35,7 +35,7 @@ Prove that
 \]
 :::
 
-::: concept
+::: {.concept}
 \envlist
 
 - Polar decomposition: $f = \sign(f) \cdot \abs{f}$.
@@ -43,9 +43,9 @@ Prove that
 
 :::
 
-::: solution
+::: {.solution}
 <1>1. Use density of continuous functions in $L^1([0,1])$.
-::: proof
+::: {.proof}
 Because $g\in L^\infty([0,1])$, it also belongs to $L^1([0,1])$. Define
 \[
 \sigma(x)=
@@ -61,7 +61,7 @@ Then $\sigma\in L^1([0,1])$. Since $C([0,1])$ is dense in $L^1([0,1])$, there ar
 :::
 
 <1>2. Pass the orthogonality identity to the $L^1$ limit.
-::: proof
+::: {.proof}
 By the hypothesis,
 \[
 \int_0^1 f_k(x)g(x)\,dx=0

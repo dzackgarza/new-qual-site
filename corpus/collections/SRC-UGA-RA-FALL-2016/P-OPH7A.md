@@ -36,20 +36,20 @@ Show that either
 \]
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Monotonicity of the Lebesgue integral: $f\leq g$ on $A$ $\implies \int_A f \leq \int_A g$
 
 :::
 
-:::{.strategy}
+::: {.strategy}
 Take the assumption and the negation of (1) and show (2).
 The obvious move: define the set $A$ where they differ.
 The non-obvious move: split $A$ itself up to get a strict inequality.
 
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 h=f-g.

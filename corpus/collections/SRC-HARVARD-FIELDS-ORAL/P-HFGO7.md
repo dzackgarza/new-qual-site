@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define an algebraic closure of a field.
 :::
 
-::: solution
+::: {.solution}
 An **algebraic closure** of a field $F$ is an extension field $\overline F/F$
 such that
 

@@ -21,15 +21,15 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that a surjective local homeomorphism between compact Hausdorff spaces is a covering map.
 :::
 
-::: solution
+::: {.solution}
 Let $p:E\to B$ be a surjective local homeomorphism, with $E$ compact and $B$ Hausdorff.
 
 <1>1. Every fiber $p^{-1}(b)$ is finite.
-::: proof
+::: {.proof}
 The fiber is closed in compact $E$, hence compact. For each $x\in p^{-1}(b)$, local homeomorphy gives an open neighborhood $U_x$ on which $p$ is injective, so $U_x\cap p^{-1}(b)=\{x\}$. Thus the fiber is compact and discrete, hence finite.
 :::
 
@@ -42,7 +42,7 @@ $$
 p|_{U_i}:U_i\longrightarrow p(U_i)
 $$
 is a homeomorphism onto an open neighborhood of $b$.
-::: proof
+::: {.proof}
 Local homeomorphy gives such neighborhoods individually, and the Hausdorff property together with finiteness of the fiber allows them to be shrunk to be pairwise disjoint.
 :::
 

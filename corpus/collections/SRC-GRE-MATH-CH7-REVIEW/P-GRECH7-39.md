@@ -25,6 +25,6 @@ Which of the following sequences of vertices describes a circuit in the graph be
 (E) C, B, A, E, B, C
 :::
 
-::: remark
+::: {.remark}
 The source shows the graph in a figure that is not reproduced here.
 :::

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $(X,d)$ be a metric space.
 A function $f \colon X \to \mathbb{R}$ is said to be lower semi-continuous (l.s.c) if $f^{-1}(a,\infty)  = \{x \in X \, \colon \,  f(x)> a\}$ is open in $X$ for every $a \in \mathbb{R}$.
 Analogously, $f$ is upper semi-continuous (u.s.c) if $f^{-1}(-\infty, b) = \{x \in X \, \colon \,  f(x)<b\}$ is open in $X$ for every $b \in \mathbb{R}$.

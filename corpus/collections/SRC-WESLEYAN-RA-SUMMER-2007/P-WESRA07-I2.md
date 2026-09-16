@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give the definition of convergence in measure for a sequence of functions.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $f_n,f$ be measurable functions on $X$.
 We say that $f_n$ converges to $f$ in measure if for every $\varepsilon>0$,
 \[

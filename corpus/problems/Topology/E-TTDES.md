@@ -23,14 +23,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $X$ is second-countable and Hausdorff (or a metric space), then the following are equivalent:
 (1) $X$ is compact (every open cover has a finite subcover).
 (2) $X$ is limit-point compact (every infinite subset $A \subseteq X$ has a limit point in $X$).
 (3) $X$ is sequentially compact (every sequence in $X$ has a convergent subsequence in $X$).
 :::
 
-::: solution
+::: {.solution}
 <1>1. $(1)\Rightarrow(2)$. Suppose $X$ is compact and $A\subseteq X$ is infinite. If $A$ had no limit point, then for every $x\in X$ there would be an open neighborhood $U_x$ with
 \[
 U_x\cap A\subseteq\{x\}.

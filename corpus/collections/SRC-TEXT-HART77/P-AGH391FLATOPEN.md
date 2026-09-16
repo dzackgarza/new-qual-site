@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a flat morphism $f: X \to Y$ of finite type of noetherian schemes is open: for every open subset $U \subseteq X$, the image $f(U)$ is open in $Y$.
 
 Hint: show that $f(U)$ is constructible and stable under generization, using (II, Ex.

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group.
 Let $\operatorname{Syl}_p(G)$ be the set of Sylow $p$-subgroups of $G$ and $s_p$ the number of elements in $\operatorname{Syl}_p(G)$.
 

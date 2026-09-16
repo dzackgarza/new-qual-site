@@ -35,7 +35,7 @@ or
 Say what your hypotheses are.
 :::
 
-::: solution
+::: {.solution}
 We prove option (ii). Let $F$ be a commutative field and
 $A\in M_n(F)$. Write
 $$
@@ -47,7 +47,7 @@ $$
 $$
 
 <1>1. Expand the adjugate identity over $F[t]$.
-::: proof
+::: {.proof}
 Write
 $$
 \operatorname{adj}(tI-A)=B_{n-1}t^{n-1}+\cdots+B_0.
@@ -70,7 +70,7 @@ $$
 :::
 
 <1>2. Solve the recurrence and conclude.
-::: proof
+::: {.proof}
 Starting from $B_{n-1}=I$ and descending through the recurrence gives
 $$
 B_0=A^{n-1}+c_{n-1}A^{n-2}+\cdots+c_1I.

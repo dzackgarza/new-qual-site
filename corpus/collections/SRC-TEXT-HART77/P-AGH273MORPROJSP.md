@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi: \PP^n_k \to \PP^m_k$ be a morphism.
 Then
 

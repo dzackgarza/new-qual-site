@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \OO_X)$ be a locally ringed space, and let $f: \mcl \to \mcm$ be a surjective map of invertible sheaves on $X$.
 Show that $f$ is an isomorphism.
 

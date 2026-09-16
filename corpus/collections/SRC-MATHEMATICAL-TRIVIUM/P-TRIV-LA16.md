@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 16, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Construct the matrix that performs a reflection in $\mathbb { R } ^ { 3 }$
 
 (a) across the origin O,

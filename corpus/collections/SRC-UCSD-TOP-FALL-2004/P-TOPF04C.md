@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\mathbb{RP}^k$ is not a retract of $\mathbb{RP}^n$ for $k < n$.
 :::
 

@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Which groups have trivial automorphism group?
 :::
 
-::: solution
+::: {.solution}
 The only groups with trivial automorphism group are
 \[
 1\qquad\text{and}\qquad C_2.

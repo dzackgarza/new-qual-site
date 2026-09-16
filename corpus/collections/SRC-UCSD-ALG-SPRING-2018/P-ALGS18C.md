@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a prime number and the minimal polynomial of $g \in \operatorname{GL}_p(F)$ is $t^p - 1$.
 
 (a) Find the Jordan form of $g$ if $F = \mathbb{C}$.

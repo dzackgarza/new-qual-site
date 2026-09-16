@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that if $f: [0, 1] \to \mathbb{R}$ is continuous, then
 $$
 \lim_{k \to \infty} \int_0^1 k x^{k-1} f(x) \, dx = f(1).
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\lim_{k \to \infty} \int_0^1 k x^{k-1} f(x) \, dx = f(1)$ using the continuity of $f$ and the approximate identity property of the kernel $k x^{k-1}$.
 
 <1>1. Integral of the kernel:

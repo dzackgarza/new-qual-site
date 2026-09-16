@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify all rings with identity elements that have nine elements.
 :::
 

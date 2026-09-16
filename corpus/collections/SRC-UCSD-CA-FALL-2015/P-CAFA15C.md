@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $a_0, a_1, \dots, a_n$ be a strictly positive, non-increasing sequence of real numbers:
 $$a_0 \ge a_1 \ge a_2 \ge \cdots \ge a_n > 0.$$
 Prove that the polynomial:
@@ -27,7 +27,7 @@ $$P(z) = a_0 + a_1 z + a_2 z^2 + \cdots + a_n z^n$$
 has **no roots inside the open unit disk** $|z| < 1$ (Eneström–Kakeya Theorem).
 :::
 
-::: solution
+::: {.solution}
 Set $P(z)=\sum_{k=0}^na_kz^k$. Then
 $$
 (1-z)P(z)=a_0-\left(\sum_{k=1}^n(a_{k-1}-a_k)z^k+a_nz^{n+1}\right).

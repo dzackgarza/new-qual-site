@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S^1$ be the circle (with its usual topology), and let $\ZZ$ be the constant sheaf $\ZZ$.
 
 a. Show that $H^1(S^1, \ZZ) \cong \ZZ$, using our definition of cohomology.

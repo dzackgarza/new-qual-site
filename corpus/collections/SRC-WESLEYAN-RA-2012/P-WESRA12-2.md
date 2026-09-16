@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash renders the source interval as `{0,1}`; the decimal-expansion, Borel, and Lebesgue-measure context determines that the intended set is the interval $[0,1]$.
 ---
 
-::: problem
+::: {.problem}
 Let $X=[0,1]$ with its Borel $\sigma$-algebra and Lebesgue measure $\lambda$.
 
 (a) Calculate the measure of each set:

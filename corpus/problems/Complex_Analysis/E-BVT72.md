@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (1) Explicitly write down an example of a non-zero analytic function in $|z|<1$ which has infinitely zeros in $|z|<1$.
 
 (2) Why does not the phenomenon in (1) contradict the uniqueness theorem?
 :::
 
-::: solution
+::: {.solution}
 Take
 \[
 f(z)=\sin\!\left(\frac{1}{1-z}\right).

@@ -21,7 +21,7 @@ audit:
   note: "Compared with Real Analysis (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA2, whose solution repeats this tail-infimum argument."
 ---
 
-::: problem
+::: {.problem}
 State and prove Fatou's Lemma on a general measurable space.
 :::
 

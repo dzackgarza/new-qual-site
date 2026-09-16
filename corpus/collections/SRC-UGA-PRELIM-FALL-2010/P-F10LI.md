@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove that $\int_C (x^3 - y^3)\,dx + (x^3 + y^3)\,dy \ge 0$ for every smooth, simple closed curve $C \subset \mathbb{R}^2$, oriented counterclockwise.
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 P(x,y)=x^3-y^3,\qquad Q(x,y)=x^3+y^3.

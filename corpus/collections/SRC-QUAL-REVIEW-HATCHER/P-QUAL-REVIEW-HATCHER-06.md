@@ -25,6 +25,6 @@ $$S^2,\ T_1,\ T_2,\ \ldots,\ \RR P^2,\ \RR P^2\#\RR P^2,\ \RR P^2\#\RR P^2\#\RR 
 Determine which of these 2-manifolds is homeomorphic to $X$.
 :::
 
-::: remark
+::: {.remark}
 The source gives $X$ only by the picture; the description in the statement is a reading of that picture.
 :::

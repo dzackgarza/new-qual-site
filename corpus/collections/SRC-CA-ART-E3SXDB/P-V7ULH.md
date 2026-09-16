@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z) = \sum_{n=0}^\infty a_n z^n$ be a power series centered at the origin with radius of convergence $R > 0$. Prove that $f$ has a power series expansion about any point $z_0$ in its disc of convergence $D_R(0)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $f$ is represented by a power series on $D_R(0)$, then for every $z_0 \in D_R(0)$, $f$ has a power series expansion $f(z) = \sum_{k=0}^\infty b_k (z - z_0)^k$ converging in the disc $D_{R - |z_0|}(z_0)$.
 
 <1>1. Holomorphy and setup of the contour:

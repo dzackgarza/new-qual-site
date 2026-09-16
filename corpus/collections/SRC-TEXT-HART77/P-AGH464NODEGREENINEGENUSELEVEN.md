@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 There is no curve of degree 9 and genus 11 in $\PP^3$.
 
 Hint: Show that it would have to lie on a quadric surface, then use (6.4.1).

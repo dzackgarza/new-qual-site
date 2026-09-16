@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the $d$-uple embedding (I, Ex.
 2.12) of $\PP^1$ in $\PP^d$, for any $d \geq 1$.
 We call $X$ the **rational normal curve** of degree $d$ in $\PP^d$.

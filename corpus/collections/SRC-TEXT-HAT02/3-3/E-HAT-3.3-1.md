@@ -20,7 +20,7 @@ review: draft
 Show that there exist nonorientable 1-dimensional manifolds if the Hausdorff condition is dropped from the definition of a manifold.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 There exists a 1-dimensional manifold that is not orientable when Hausdorffness is not required.
 

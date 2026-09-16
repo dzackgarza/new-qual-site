@@ -26,12 +26,12 @@ audit:
   note: "Checked the cyclic basis and its determinant, AP=PC by exact matrix arithmetic, the characteristic and minimal polynomial, and the rank obstruction to similarity of the second matrix."
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be the following matrix (over $\mathbb{Q}$) $$\begin{pmatrix} -2 & 1 & 1 \\ -4 & 3 & 1 \\ -6 & 6 & -1 \end{pmatrix}.$$ Find the rational canonical form for $A$.
 Give a $3 \times 3$ matrix $B$ which has the same characteristic polynomial as $A$, but which is not similar to $A$.
 :::
 
-::: solution
+::: {.solution}
 The rational canonical form and a suitable second matrix are
 $$
 C=\begin{pmatrix}0&0&2\\1&0&3\\0&1&0\end{pmatrix},
@@ -42,7 +42,7 @@ $$
 <1>1. The vector $v=(1,0,0)^{\mathsf T}$ is cyclic for $A$,
 and $P^{-1}AP=C$ for the matrix $P$ below.
 
-::: proof
+::: {.proof}
 Direct multiplication gives
 $$
 Av=\begin{pmatrix}-2\\-4\\-6\end{pmatrix},\quad
@@ -66,7 +66,7 @@ so $P^{-1}AP=C$.
 single invariant factor
 $f(t)=t^3-3t-2=(t-2)(t+1)^2$.
 
-::: proof
+::: {.proof}
 The companion matrix of a monic polynomial
 $t^3+c_2t^2+c_1t+c_0$ has subdiagonal entries one and
 last column $(-c_0,-c_1,-c_2)^{\mathsf T}$ [@DF04].
@@ -89,7 +89,7 @@ the minimal polynomial has degree three and equals $f$.
 <1>3. The matrix $B$ has the same characteristic polynomial
 as $A$ but is not similar to $A$.
 
-::: proof
+::: {.proof}
 Its diagonal entries give
 $\chi_B(t)=(t-2)(t+1)^2=\chi_A(t)$.
 On the other hand,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Again let $X$ be an elliptic curve over $k$ of characteristic $p$, and suppose $X$ is defined over the field $\FF_q$ of $q=p^r$ elements, i.e., $X \subseteq \PP^2$ can be defined by an equation with coefficients in $\FF_q$.
 Assume also that $X$ has a rational point over $\FF_q$.
 Let $F': X_q \to X$ be the $k$-linear Frobenius with respect to $q$.

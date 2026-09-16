@@ -39,7 +39,7 @@ Write down the minimal polynomial of $A$.
 > You should not need to compute $P\inv$
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $\chi_A(t) = t^n - \tr\qty{\Extpower^1 A}t^{n-1} + \tr\qty{\Extpower^2 A}t^{n-2} - \cdots \pm \det(A)$
@@ -52,10 +52,10 @@ Write down the minimal polynomial of $A$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
-:::{.proof title="parts a and b"}
+::: {.proof title="parts a and b"}
 \envlist
 
 - Write $\chi_A(t) = t^3 - T_1 t^2 + T_2 t - T_3$ where $T_i \da \tr\qty{\Extpower^i A}$:
@@ -149,7 +149,7 @@ P = [v_1, v_2, v_3]
 
 :::
 
-:::{.proof title="part c"}
+::: {.proof title="part c"}
 \envlist
 
 - Write $\min_A(t) = (t-2)(t-1)^{\ell_1}$, then since $\min_A(t)$ divides $\chi_A(t)$ either $\ell_1 = 1, 2$.

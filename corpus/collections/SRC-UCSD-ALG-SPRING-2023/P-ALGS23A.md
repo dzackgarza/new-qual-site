@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a group of order 55.
 
 (a) Classify possible structures of the group $G$.

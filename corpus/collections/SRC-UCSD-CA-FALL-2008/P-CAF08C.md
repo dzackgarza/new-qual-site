@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be open and connected, and let $h \in H(G)$.
 Suppose that $\{f_n(z)\} \subset H(G)$ is a sequence of analytic functions for which $\lim_{n \to \infty} f_n(z)$ exists (and is finite) for every $z \in G$.
 Put $f(z) := \lim_{n \to \infty} f_n(z)$.
@@ -20,7 +20,7 @@ Suppose that $|f_n'(z)| \leq |h(z)|$ for all $z \in G$.
 Prove that $f \in H(G)$.
 :::
 
-::: solution
+::: {.solution}
 Fix $z_0\in G$. Choose $r>0$ with
 \[
 \overline{B(z_0,r)}\subset G.

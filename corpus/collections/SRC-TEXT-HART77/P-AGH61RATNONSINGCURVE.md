@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Recall that a curve is *rational* if it is birationally equivalent to $\PP^1$.
 Let $Y$ be a nonsingular rational curve which is not isomorphic to $\PP^1$.
 

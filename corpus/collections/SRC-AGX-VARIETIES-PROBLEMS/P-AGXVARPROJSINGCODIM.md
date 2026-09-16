@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the singular locus $X^{\sing}$ of a projective variety is a proper Zariski closed subset, and that if $X$ is normal, every irreducible component of $X^{\sing}$ has codimension $d'\geq 2$.
 :::

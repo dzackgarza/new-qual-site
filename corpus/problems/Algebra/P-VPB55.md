@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Talk about Jordan canonical form.
 What happens when the field is not algebraically closed?
 :::

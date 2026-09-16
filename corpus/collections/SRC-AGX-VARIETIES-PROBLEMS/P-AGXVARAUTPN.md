@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\Aut \PP^n\slice{k} = \PGL_{n+1}\slice{k} = \GL_{n+1}\slice{k} /\GG_m$.
 :::

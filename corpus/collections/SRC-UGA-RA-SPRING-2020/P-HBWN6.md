@@ -35,13 +35,13 @@ defines a function in $L^1(\RR)$ that satisfies
 .\]
 :::
 
-:::{.strategy}
+::: {.strategy}
 Just do it! 
 Sort out the justification afterward.
 Use Tonelli.
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Tonelli: non-negative and measurable yields measurability of slices and equality of iterated integrals
 - Fubini: $f(x, y) \in L^1$ yields *integrable* slices and equality of iterated integrals
@@ -49,9 +49,9 @@ Use Tonelli.
 - See Folland's Real Analysis II, p. 68 for a discussion of using Fubini *and* Tonelli.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that $H$ is measurable.
-::: proof
+::: {.proof}
 The maps
 \[
 (x,y)\mapsto y
@@ -72,7 +72,7 @@ is therefore measurable on $\mathbb R^2$.
 :::
 
 <1>2. Prove that $H\in L^1(\mathbb R^2)$.
-::: proof
+::: {.proof}
 Since $|H|$ is nonnegative and measurable, Tonelli's theorem applies directly:
 \[
 \begin{aligned}
@@ -87,7 +87,7 @@ Hence $H\in L^1(\mathbb R^2)$.
 :::
 
 <1>3. Deduce the $L^1$ convolution bound.
-::: proof
+::: {.proof}
 By Fubini's theorem, for almost every $x$ the slice $y\mapsto H(x,y)$ is integrable, so
 \[
 (f*g)(x)=\int_{\mathbb R}H(x,y)\,dy

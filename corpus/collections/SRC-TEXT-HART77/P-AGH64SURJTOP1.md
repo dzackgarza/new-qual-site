@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a nonsingular projective curve.
 Show that every nonconstant rational function $f$ on $Y$ defines a surjective morphism $\varphi: Y \to \PP^1$, and that for every $P \in \PP^1$ the fibre $\varphi^{-1}(P)$ is a finite set of points.
 :::

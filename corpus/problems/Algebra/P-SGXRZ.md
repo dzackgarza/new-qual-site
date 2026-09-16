@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is a normal subgroup? What natural map does it determine? How does this relate to covering spaces?
 :::
 
-::: solution
+::: {.solution}
 A subgroup $N\le G$ is **normal**, written $N\normal G$, if
 \[
 gNg^{-1}=N\qquad\text{for every }g\in G.

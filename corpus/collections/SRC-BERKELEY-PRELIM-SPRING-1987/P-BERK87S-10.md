@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that every finite group of order $n$ is isomorphic to a subgroup of
 \[
 O(n),

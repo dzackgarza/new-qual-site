@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find $\operatorname* { l i m } _ { x \to 0 } { \frac { \sin x } { x } }$
 :::

@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is Dirichlet's theorem about primes in arithmetic progression?
 What can you say about the density of such primes?
 :::

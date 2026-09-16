@@ -30,7 +30,7 @@ audit:
    (An entire function is a holomorphic function on C.)
 :::
 
-::: solution
+::: {.solution}
 The functions are exactly
 $$
 \boxed{f(z)=\alpha z^n,\qquad |\alpha|=1,\quad n=0,1,2,\ldots.}
@@ -38,7 +38,7 @@ $$
 
 <1>1. Removing all zeros in the unit disk leaves a constant-modulus quotient.
 
-::: proof
+::: {.proof}
 The boundary condition implies that $f$ is not identically
 zero and has no zero on the unit circle. It has finitely
 many zeros in the closed unit disk: otherwise compactness
@@ -73,7 +73,7 @@ of $\mathbb C$ by the identity theorem.
 
 <1>2. The entire-plane hypothesis forces every $a_j$ to be zero.
 
-::: proof
+::: {.proof}
 If some $a_j\ne0$, the point $b=1/\overline{a_j}$
 is a zero of $Q$ with $|b|>1$. But every zero of $P$
 has modulus less than one, so $P(b)\ne0$. Evaluating

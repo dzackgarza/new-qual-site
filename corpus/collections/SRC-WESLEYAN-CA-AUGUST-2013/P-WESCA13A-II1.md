@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. The first two subparts are clear; the third is recorded exactly as the Flash defect rather than guessed.
 ---
 
-::: problem
+::: {.problem}
 Find and classify all isolated singularities, giving pole orders and residues where applicable, for
 \[
 \frac{\cos z-1}{z^2},

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f_n:[0,1]\to[0,\infty)$ be continuous and suppose
 \[
 f_1(x)\ge f_2(x)\ge f_3(x)\ge\cdots

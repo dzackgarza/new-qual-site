@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify the groups of order $28$ up to isomorphism.
 :::
 

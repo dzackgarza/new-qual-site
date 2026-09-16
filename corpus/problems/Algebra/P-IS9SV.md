@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $R$-module. Show that evaluation
 \[
 \End_R(A)\times A\longrightarrow A,\qquad (f,a)\longmapsto f(a),

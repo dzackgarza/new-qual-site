@@ -30,7 +30,7 @@ Set $\varphi(z) = |f(z)| + |g(z)|$ for $z \in U$.
 If $\varphi$ assumes a maximum value on $U$, show that both $f$ and $g$ are constants on $U$.
 :::
 
-::: solution
+::: {.solution}
 Choose $z_0\in U$ where the maximum is attained and set
 $M=|f(z_0)|+|g(z_0)|$. If $M=0$, the inequality
 $0\leq|f(z)|+|g(z)|\leq M$ makes both functions zero.
@@ -38,7 +38,7 @@ Assume henceforth that $M>0$.
 
 <1>1. A suitable holomorphic linear combination is constant.
 
-::: proof
+::: {.proof}
 Choose complex numbers $\alpha,\beta$ of modulus one with
 $\alpha f(z_0)=|f(z_0)|$ and $\beta g(z_0)=|g(z_0)|$.
 For a nonzero value, take its conjugate divided by its
@@ -54,7 +54,7 @@ $U$ therefore gives $H\equiv M$ [@SS03].
 
 <1>2. Each summand must be constant separately.
 
-::: proof
+::: {.proof}
 For every $z\in U$,
 $$
 \bigl(|\alpha f(z)|-\operatorname{Re}(\alpha f(z))\bigr)

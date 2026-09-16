@@ -22,13 +22,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the Fourier transform integral:
 $$I(\xi) = \int_{-\infty}^{\infty} \frac{e^{-2\pi i x \xi}}{\cosh(\pi x)} \, dx$$
 where $\xi \in \mathbb{R}$ and $\cosh z = \frac{e^z + e^{-z}}{2}$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 F(z)=\frac{e^{-2\pi i\xi z}}{\cosh(\pi z)}.

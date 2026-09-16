@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - How do you compute the totient $\phi(p)$ for $p$ prime?
   Or $\phi(n)$ for $n$ composite?
 :::

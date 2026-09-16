@@ -27,7 +27,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if each of the following statements is true or false.
 If true, give a brief proof.
 If false, give a counterexample or prove your assertion.
@@ -45,9 +45,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Statement (1) is true.
-::: proof
+::: {.proof}
 Because $\mu$ is $\sigma$-finite, choose measurable sets $X_n$ such that
 \[
 X=\bigcup_{n=1}^\infty X_n,
@@ -76,7 +76,7 @@ Thus $\mu\ll\nu$ as well.
 :::
 
 <1>2. Statement (2) is false.
-::: proof
+::: {.proof}
 For $n\ge1$, let
 \[
 I_n=[n,n+n^{-3}]
@@ -108,7 +108,7 @@ Hence $f\notin L^2(\mathbb R)$.
 :::
 
 <1>3. Statement (3) is true.
-::: proof
+::: {.proof}
 The usual Fourier translation identity holds first for Schwartz functions:
 \[
 \widehat{\tau_y\psi}(\xi)

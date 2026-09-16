@@ -26,7 +26,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Answer true or false.
 For true statements give a brief justification; for false statements give a counterexample.
 
@@ -39,9 +39,9 @@ For true statements give a brief justification; for false statements give a coun
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Statement (1) is true.
-::: proof
+::: {.proof}
 For every fixed \(x\in X\), the hypothesis says
 \[
 \sup_n|\varphi_n(x)|<\infty.
@@ -62,7 +62,7 @@ so
 :::
 
 <1>2. Statement (2) is false.
-::: proof
+::: {.proof}
 Take
 \[
 X=\ell^1,
@@ -87,7 +87,7 @@ Thus pointwise boundedness merely on a dense subspace does not imply uniform bou
 :::
 
 <1>3. Statement (3), with the corrected absolute-value hypothesis, is true.
-::: proof
+::: {.proof}
 Set
 \[
 f_n:=\mathbf1_{\Omega_n}f\,\mathbf1_{\{|f|\le n\}}.

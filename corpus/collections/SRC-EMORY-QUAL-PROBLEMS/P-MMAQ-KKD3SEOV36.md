@@ -25,17 +25,17 @@ audit:
   note: "Checked that the Sylow subgroups have prime order, the count of p-cycles, the disjoint partition by their generated subgroups, and p=2."
 ---
 
-::: problem
+::: {.problem}
 Count the number of $p$-Sylow subgroups of $S_p$.
 :::
 
-::: solution
+::: {.solution}
 For every prime $p$, the number is $\boxed{(p-2)!}$.
 
 <1>1. Each Sylow $p$-subgroup is cyclic of order $p$,
 and its nonidentity elements are $p$-cycles.
 
-::: proof
+::: {.proof}
 The order of $S_p$ is $p!=p(p-1)!$, and $p$ does
 not divide $(p-1)!$. Sylow subgroups therefore have
 order $p$ [@DF04]. A nonidentity element generates
@@ -53,7 +53,7 @@ order $p$, which is Sylow.
 <1>2. Dividing the number of $p$-cycles by $p-1$
 counts the Sylow subgroups exactly once.
 
-::: proof
+::: {.proof}
 There are $(p-1)!$ distinct $p$-cycles: write each
 uniquely as $(1,a_2,\ldots,a_p)$, with the other
 $p-1$ letters in arbitrary order. Each cyclic

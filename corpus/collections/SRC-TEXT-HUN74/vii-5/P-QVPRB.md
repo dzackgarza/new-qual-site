@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.problem}
+::: {.problem}
 Show that if $\phi$ is an endomorphism of a free $k$-module $E$ of finite rank, then
 $p_\phi(\phi) = 0$.
 
@@ -42,7 +42,7 @@ B^a B = |B| I_n = p_\phi I_n \in M_n(k[x])
 
 
 
-::: solution
+::: {.solution}
 Let \(E\) be free of rank \(n\), choose a basis, and let \(A\in M_n(k)\) be the
 matrix of \(\phi\). Write
 \[
@@ -55,7 +55,7 @@ We prove that \(p_\phi(A)=0\), which is equivalent to
 \[
 \operatorname{adj}(xI_n-A)(xI_n-A)=p_\phi(x)I_n.
 \]
-::: proof
+::: {.proof}
 For every square matrix \(M\) over a commutative ring,
 \[
 \operatorname{adj}(M)M=\det(M)I_n.
@@ -66,7 +66,7 @@ Apply this to \(M=xI_n-A\) over the polynomial ring \(k[x]\).
 <1>2. Give \(E\) the structure of a \(k[x]\)-module by letting \(x\) act as
 \(\phi\). Then the \(k[x]\)-linear endomorphism represented by \(xI_n-A\) is the
 zero map.
-::: proof
+::: {.proof}
 For \(u\in E\), multiplication by \(x\) in this module is defined to be
 \(\phi\). Hence
 \[
@@ -75,7 +75,7 @@ For \(u\in E\), multiplication by \(x\) in this module is defined to be
 :::
 
 <1>3. Multiplication by \(p_\phi(x)\) on this \(k[x]\)-module is the zero map.
-::: proof
+::: {.proof}
 The matrix identity in <1>1 represents an identity of \(k[x]\)-linear
 endomorphisms of \(E\). By <1>2 its left-hand side is
 \[
@@ -90,7 +90,7 @@ for every \(u\in E\).
 :::
 
 <1>4. Therefore \(p_\phi(\phi)=0\).
-::: proof
+::: {.proof}
 By definition of the \(k[x]\)-module structure, multiplication by a polynomial
 \[
 a_0+a_1x+\cdots+a_mx^m

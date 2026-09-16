@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A projective variety $Y \subseteq \PP^n$ is **projectively normal**, with respect to the given embedding, if its homogeneous coordinate ring $S(Y)$ is integrally closed.
 
 1. If $Y$ is projectively normal, show that $Y$ is normal.

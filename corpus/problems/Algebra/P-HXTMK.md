@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Let $A\in M_6(\QQ)$ have minimal polynomial
 \[
 m_A=(x-1)(x^2+1)^2.

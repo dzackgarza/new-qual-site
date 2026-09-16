@@ -28,7 +28,7 @@ Let $(Y, d)$ be a metric space; let $\mathcal{F}$ be a subset of $\mathcal{C}(X,
 [This means that there is an $M$ such that $\abs{f'(x)} \leq M$ for all $f$ in $\mathcal{F}$ and all $x \in U$.] Show that $\mathcal{F}$ is equicontinuous.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove equicontinuity for (a) finite families of continuous functions, (b) uniformly convergent sequences of continuous functions, and (c) families of differentiable functions with locally uniformly bounded derivatives.
 
 <1>1. Part (a): Finite collections are equicontinuous.

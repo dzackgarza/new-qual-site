@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define an integral ring extension and state its principal properties.
 :::
 
 
-::: solution
+::: {.solution}
 Let \(A\subseteq B\) be rings.
 
 <1>1. An element \(b\in B\) is **integral over \(A\)** if it satisfies a monic
@@ -41,7 +41,7 @@ b^n+a_{n-1}b^{n-1}+\cdots+a_0=0,
 \]
 The extension \(B/A\) is integral if every element of \(B\) is integral over
 \(A\).
-::: proof
+::: {.proof}
 This is the definition.
 :::
 
@@ -51,7 +51,7 @@ This is the definition.
 - \(A[b]\) is a finitely generated \(A\)-module;
 - there is a faithful finitely generated \(A[b]\)-submodule of \(B\) that is
   finitely generated over \(A\).
-::: proof
+::: {.proof}
 If \(b\) satisfies a monic equation of degree \(n\), every power \(b^m\) with
 \(m\ge n\) reduces to an \(A\)-linear combination of
 \(1,b,\ldots,b^{n-1}\), so \(A[b]\) is finite over \(A\).
@@ -67,7 +67,7 @@ monic polynomial \(p\in A[x]\) with \(p(b)M=0\). Faithfulness as an
 
 <1>3. Integral elements are stable under addition and multiplication, and
 integrality is transitive.
-::: proof
+::: {.proof}
 If \(b_1,\ldots,b_r\) are integral over \(A\), repeated use of <1>2 shows
 \[
 A[b_1,\ldots,b_r]
@@ -86,7 +86,7 @@ integral over \(A\).
 
 <1>4. Integrality is preserved by localization and quotient, and a finite-type
 integral algebra is module-finite.
-::: proof
+::: {.proof}
 A monic equation remains monic after applying a quotient map or localization,
 which proves the first assertion. If
 \[
@@ -112,7 +112,7 @@ has the following principal properties:
 - consequently, a prime \(\mathfrak q\subseteq B\) is maximal if and only if
   \(\mathfrak q\cap A\) is maximal, and
   \(\dim B=\dim A\).
-::: proof
+::: {.proof}
 For lying over, quotient by \(\mathfrak p\subseteq A\) and localize at
 \(A\setminus\mathfrak p\). This reduces to an integral extension of a field
 \(k\) by a nonzero ring \(C\). A maximal ideal of \(C\) contracts to \(0\),

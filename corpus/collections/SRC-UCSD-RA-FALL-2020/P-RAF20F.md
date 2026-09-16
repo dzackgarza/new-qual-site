@@ -25,14 +25,14 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a real Banach space and $x_k \in X$ ($k = 1, 2, \ldots$). Assume that $\sum_{k=1}^\infty |f(x_k)| < \infty$ for any $f \in X^*$.
 Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty |f(x_k)| \leq \gamma \|f\|$ for any $f \in X^*$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Package the partial sums as bounded operators.
-::: proof
+::: {.proof}
 For $N\ge1$, define
 \[
 T_N:X^*\to\mathbb R^N,
@@ -49,7 +49,7 @@ so each $T_N$ is a bounded linear operator.
 :::
 
 <1>2. Apply the Uniform Boundedness Principle.
-::: proof
+::: {.proof}
 For every fixed $f\in X^*$, the hypothesis gives
 \[
 \sup_N\|T_N(f)\|_1

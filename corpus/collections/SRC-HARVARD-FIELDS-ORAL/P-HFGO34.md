@@ -21,18 +21,18 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Construct a field with $27$ elements.
 :::
 
-::: solution
+::: {.solution}
 Consider
 \[
 f(T)=T^3-T-1\in\mathbb F_3[T].
 \]
 
 <1>1. The polynomial $f$ is irreducible over $\mathbb F_3$.
-::: proof
+::: {.proof}
 A cubic polynomial over a field is reducible if and only if it has a root in
 that field. Direct evaluation gives
 \[
@@ -50,13 +50,13 @@ Thus $f$ has no root in $\mathbb F_3$ and is irreducible.
 K=\mathbb F_3[T]/(T^3-T-1)
 \]
 is a field.
-::: proof
+::: {.proof}
 Since $f$ is irreducible, the ideal $(f)$ is maximal in the PID
 $\mathbb F_3[T]$.
 :::
 
 <1>3. The field $K$ has $27$ elements.
-::: proof
+::: {.proof}
 Every class has a unique representative
 \[
 a+bT+cT^2,

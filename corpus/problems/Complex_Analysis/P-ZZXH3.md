@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose that $f: \RR\to\RR$ is a continuous function that vanishes outside of some finite interval.
 For each $z\in \CC$, define
 \[
@@ -26,7 +26,7 @@ Show that $g$ is entire.
 
 :::
 
-:::{.solution}
+::: {.solution}
 By Fubini:
 \[
 \oint_T g(z)\dz 

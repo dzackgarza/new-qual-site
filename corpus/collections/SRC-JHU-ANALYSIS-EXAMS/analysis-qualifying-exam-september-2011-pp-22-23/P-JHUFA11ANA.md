@@ -25,22 +25,22 @@ audit:
   note: "Located all possible poles relative to the off-center circle, excluded boundary poles, and checked the third-order and simple-pole residues and orientation sign."
 ---
 
-::: problem
+::: {.problem}
 Determine $\int_\gamma \frac{dz}{z^3\cos z}$, where
 $\gamma$ is the circle $|z-1|=2$ traversed counterclockwise.
 :::
 
-::: remark
+::: {.remark}
 The contour is the boundary circle $|z-1|=2$; the strict
 inequality $|z-1|<2$ describes its interior, not the contour.
 :::
 
-::: solution
+::: {.solution}
 The integral is $\boxed{i\pi-16i/\pi^2}$.
 
 <1>1. The only enclosed poles are $0$ and $\pi/2$, with no pole on the contour.
 
-::: proof
+::: {.proof}
 Put $F(z)=1/(z^3\cos z)$. Besides zero, its possible
 poles are the zeros of cosine. The equation $\cos z=0$
 is equivalent to $e^{2iz}=-1$, hence to
@@ -60,7 +60,7 @@ boundary poles and identify every enclosed pole.
 
 <1>2. Computing their residues and adding them gives the value.
 
-::: proof
+::: {.proof}
 At zero the Taylor expansion gives
 $$
 \cos z=1-\frac{z^2}{2}+O(z^4),\qquad

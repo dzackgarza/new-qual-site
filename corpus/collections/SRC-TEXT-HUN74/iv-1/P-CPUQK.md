@@ -43,10 +43,10 @@ Prove the following:
 2. If $\alpha_5$ is a monomorphism and $\alpha_2, \alpha_4$ are epimorphisms then $\alpha_3$ is an epimorphism.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $\alpha_1$ is surjective and $\alpha_2,\alpha_4$ are injective, then
 $\alpha_3$ is injective.
-::: proof
+::: {.proof}
 Let $x\in A_3$ satisfy $\alpha_3(x)=0$. Commutativity gives
 \[
 \alpha_4(f_3(x))=g_3(\alpha_3(x))=0.
@@ -85,7 +85,7 @@ by exactness of the top row. Thus $\ker\alpha_3=0$ and $\alpha_3$ is injective.
 
 <1>2. If $\alpha_5$ is injective and $\alpha_2,\alpha_4$ are surjective, then
 $\alpha_3$ is surjective.
-::: proof
+::: {.proof}
 Let $b_3\in B_3$. Since $\alpha_4$ is surjective, choose $a_4\in A_4$ such
 that
 \[

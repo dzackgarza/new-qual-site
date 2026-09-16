@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R$ be a commutative ring with 1.
 Suppose that $M$ is a free $R\dash$module with a finite basis $X$.
 
@@ -30,7 +30,7 @@ You may assume that the result is true when $R$ is a field.
 :::
 
 
-:::{.solution .foldopen}
+::: {.solution .foldopen}
 **Part a**:
 First, a slightly more advanced argument that gives some intuition as to why this should be true.
 Let $X = \ts{g_1,\cdots, g_n}\subseteq M$ be a generating set so that $\rank_R M = n$ and every $m\in M$ can be written as $m = \sum_{i=1}^n r_i m_i$ for some $r_i\in R$.

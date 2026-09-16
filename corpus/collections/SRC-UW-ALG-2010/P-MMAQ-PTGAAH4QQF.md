@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field of characteristic zero, and let $K$ be an *algebraic* extension of $F$ that possesses the following property: every polynomial $f\in F[x]$ has a root in $K$.
 Show that $K$ is algebraically closed.\\
 
@@ -27,7 +27,7 @@ Show that $K$ is algebraically closed.\\
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let $\theta$ be any element algebraic over $K$. Then $\theta$ is algebraic over $F$.
 ::: {.proof}
 The extension $K/F$ is algebraic by hypothesis, and $\theta/K$ is algebraic. Algebraicity is transitive, so $\theta$ is algebraic over $F$.

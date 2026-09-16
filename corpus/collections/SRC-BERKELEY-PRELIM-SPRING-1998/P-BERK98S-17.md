@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be an $n\times n$ complex matrix with
 \[
 \operatorname{tr}A=0.

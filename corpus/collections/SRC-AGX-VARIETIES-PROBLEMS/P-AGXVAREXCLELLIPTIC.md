@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X = V(y^2-x(x^2-1))$ and compute the class group of $X$.
 :::

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a Banach space and denote by $\mathcal{L}(X)$ the space of all linear and bounded operators from $X$ to $X$.
 Let $T \in \mathcal{L}(X)$ be a topological isomorphism, i.e., $T : X \to X$ is linear, bijective, and both $T$ and $T^{-1}$ are continuous.
 Let $S \in \mathcal{L}(X)$ be such that $\|(S - T)T^{-1}\| < 1$.
@@ -33,9 +33,9 @@ Prove that $S : X \to X$ is also a topological isomorphism.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Reduce to a perturbation of the identity.
-::: proof
+::: {.proof}
 Set
 \[
 A:=(S-T)T^{-1}\in\mathcal L(X).
@@ -56,7 +56,7 @@ Thus it is enough to show that \(I+A\) is a topological isomorphism.
 :::
 
 <1>2. Invert \(I+A\) by the Neumann series.
-::: proof
+::: {.proof}
 Because \(\|A\|<1\), the series
 \[
 R:=\sum_{n=0}^\infty (-A)^n
@@ -78,7 +78,7 @@ Hence \(I+A\) is bijective and its inverse \(R\) is bounded.
 :::
 
 <1>3. Conclude for \(S\).
-::: proof
+::: {.proof}
 Both \(T\) and \(I+A\) are topological isomorphisms, so their product
 \[
 S=(I+A)T

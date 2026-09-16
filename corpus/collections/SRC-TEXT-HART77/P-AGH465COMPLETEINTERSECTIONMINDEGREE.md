@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X$ is a complete intersection of surfaces of degrees $a, b$ in $\PP^3$, then $X$ does not lie on any surface of degree $<\min (a, b)$.
 :::

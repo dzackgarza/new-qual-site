@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a nonsingular curve of degree $d$ in $\PP_k^n$, over an algebraically closed field $k$. Show that
 \[
 0 \leq p_a(Y) \leq \frac{1}{2}(d-1)(d-2)

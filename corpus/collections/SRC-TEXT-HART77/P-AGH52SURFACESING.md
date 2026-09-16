@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume $\operatorname{char} k \neq 2$.
 Locate the singular points and describe the singularities of the following surfaces in $\AA^3$.
 

@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe all entire functions $f : \mathbb{C} \to \mathbb{C}$ such that for all $z \in \mathbb{R}$ we have $|f(z)| = 1$.
 :::
 
-::: solution
+::: {.solution}
 Define
 \[
 f^*(z)=\overline{f(\overline z)}.

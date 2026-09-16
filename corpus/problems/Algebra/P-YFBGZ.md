@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify all **radical ideals** in the ring of integers $\mathbb{Z}$.
 :::
 
-::: solution
+::: {.solution}
 Every ideal of $\mathbb Z$ is $(n)$ for a unique $n\ge0$.
 
 The zero ideal is radical because $\mathbb Z$ is reduced. Now let

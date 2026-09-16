@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a (commutative) principal ideal domain, let $M$ and $N$ be finitely generated free $R$-modules, and let $\varphi:M\rightarrow N$ be an $R$-module homomorphism.
 
 - Let $K$ be the kernel of $\varphi$.
@@ -30,7 +30,7 @@ Let $R$ be a (commutative) principal ideal domain, let $M$ and $N$ be finitely g
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The image \(C=\operatorname{im}\varphi\) is a finitely generated free \(R\)-module.
 ::: {.proof}
 Since \(N\) is a finitely generated free module over the PID \(R\), every submodule of \(N\) is free. Thus \(C\le N\) is free. It is finitely generated because it is the image of the finitely generated module \(M\).

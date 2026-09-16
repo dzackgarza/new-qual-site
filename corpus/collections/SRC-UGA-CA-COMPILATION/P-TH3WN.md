@@ -16,7 +16,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $f=u+iv$ be differentiable (i.e. $f'(z)$ exists) with continuous
 partial derivatives at a point $z=re^{i\theta}$, $r\not= 0$. Show
 that

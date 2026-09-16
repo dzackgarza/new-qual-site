@@ -28,7 +28,7 @@ audit:
   note: Replaced the pseudo-Lamport presentation by a cellular-chain computation of both requested groups.
 ---
 
-::: problem
+::: {.problem}
 Compute the integer homology groups $H_0(K_5; \mathbb{Z})$ and $H_1(K_5; \mathbb{Z})$ of the **complete graph** $K_5$ on 5 vertices.
 :::
 

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space and $f \in L^1(\mu)$.
 Prove that
 $$
@@ -33,8 +33,8 @@ $$
 $$
 :::
 
-::: solution
-::: proof
+::: {.solution}
+::: {.proof}
 Let
 \[
 E_t:=\{x\in X:|f(x)|\ge t\}.

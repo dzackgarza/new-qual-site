@@ -29,7 +29,7 @@ If $k = \ZZ/2\ZZ$, find all $k[X]$ module structures on $k^3$ up to isomorphism 
 :::
 
 
-::: solution
+::: {.solution}
 Write
 $$
 k=\mathbb F_2.
@@ -47,7 +47,7 @@ $k[X]$-module. Since $k[X]$ is a PID, the elementary-divisor classification
 applies.
 
 <1>1. List the irreducible polynomials that can occur.
-::: proof
+::: {.proof}
 Only irreducibles of degree at most $3$ can contribute to a module of
 $k$-dimension $3$.
 
@@ -73,7 +73,7 @@ monic irreducible cubics over $\mathbb F_2$ gives exactly two.
 :::
 
 <1>2. List the six classes supported at a single linear irreducible.
-::: proof
+::: {.proof}
 For either $p\in\{p_0,p_1\}$, a $p$-primary module of dimension $3$ is indexed
 by a partition of $3$. The three possibilities are
 $$
@@ -88,7 +88,7 @@ There are three for $p_0$ and three for $p_1$, giving six classes.
 :::
 
 <1>3. List the four classes involving both linear irreducibles.
-::: proof
+::: {.proof}
 One of $p_0,p_1$ contributes dimension $2$ and the other contributes dimension
 $1$. For the dimension-$2$ primary part there are two partitions, $(2)$ and
 $(1,1)$. Hence, for each ordered pair $(p,p')$ equal to
@@ -106,7 +106,7 @@ This gives four further classes.
 :::
 
 <1>4. List the two classes containing the irreducible quadratic.
-::: proof
+::: {.proof}
 The module
 $$
 k[X]/(q)
@@ -122,7 +122,7 @@ $$
 :::
 
 <1>5. List the two classes arising from an irreducible cubic.
-::: proof
+::: {.proof}
 Each quotient by an irreducible cubic already has dimension $3$, so the two
 possibilities are simply
 $$
@@ -134,7 +134,7 @@ $$
 :::
 
 <1>6. Prove the list is complete and nonredundant.
-::: proof
+::: {.proof}
 The structure theorem decomposes every finite torsion $k[X]$-module uniquely
 into primary cyclic summands
 $$

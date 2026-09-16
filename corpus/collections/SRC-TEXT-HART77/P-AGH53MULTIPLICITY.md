@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y \subseteq \AA^2$ be a curve defined by the equation $f(x,y) = 0$, and let $P = (a,b)$ be a point of $\AA^2$.
 Make a linear change of coordinates so that $P$ becomes the point $(0,0)$.
 Write $f$ as a sum $f = f_0 + f_1 + \cdots + f_d$, where $f_i$ is homogeneous of degree $i$ in $x$ and $y$.

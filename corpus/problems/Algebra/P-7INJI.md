@@ -25,7 +25,7 @@ audit:
   note: "Merge adjudication: the consolidation merge kept one branch's paraphrased statement and appended both authored solutions. Restored the imported statement and combined the two correct proofs into one solution: the basis-level group-algebra isomorphism from one branch, the similarity classification and irreducible representations from the other."
 ---
 
-::: problem
+::: {.problem}
 Discuss representations of $\ZZ$, the infinite cyclic group.
 What is the group algebra of $\ZZ$?
 :::

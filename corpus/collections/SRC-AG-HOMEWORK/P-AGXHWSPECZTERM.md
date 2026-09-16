@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe $\Spec \ZZ$ and show it is terminal in $\Sch$, i.e. each $X\in \Sch$ admits a unique morphism $X\to \Spec \ZZ$.
 :::
 
-::: remark
+::: {.remark}
 Strategy: use the adjunction inducing an equivalence
 \[
 \adjunction{\Gamma({-})}{\Spec({-})}{\Sch^{\op}}{\CRing}

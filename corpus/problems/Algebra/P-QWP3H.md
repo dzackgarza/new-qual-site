@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give examples of prime and maximal ideals in $k[x,y]$, describe the corresponding varieties, and state the Nullstellensatz.
 :::
 

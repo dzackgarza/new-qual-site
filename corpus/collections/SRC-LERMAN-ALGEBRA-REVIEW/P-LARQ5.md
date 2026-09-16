@@ -22,14 +22,14 @@ audit:
   note: "Used evaluation at x=0, identified its kernel as (x), and applied the quotient criteria for prime and maximal ideals."
 ---
 
-::: problem
+::: {.problem}
 Prove that $\mathbb R[x,y]/(x)\cong\mathbb R[y]$.
 Use this isomorphism to decide whether $(x)$ is prime and whether it is maximal in $\mathbb R[x,y]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Evaluation at $x=0$ induces the required quotient isomorphism.
-::: proof
+::: {.proof}
 Define
 $$
 \Phi:\mathbb R[x,y]\to\mathbb R[y],\qquad
@@ -50,7 +50,7 @@ $$
 :::
 
 <1>2. The ideal $(x)$ is prime but not maximal.
-::: proof
+::: {.proof}
 An ideal $I$ in a commutative ring is prime exactly when the quotient by $I$ is an integral domain, and maximal exactly when that quotient is a field. The ring $\mathbb R[y]$ is an integral domain because $\mathbb R$ is a field, so $(x)$ is prime.
 
 However, $\mathbb R[y]$ is not a field: the nonconstant polynomial $y$ has no multiplicative inverse in $\mathbb R[y]$. Hence $(x)$ is not maximal.

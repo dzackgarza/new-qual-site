@@ -22,7 +22,7 @@ The Möbius band $M$ is not a surface, but what is called a "surface with bounda
 Show that $M$ is homeomorphic to the space obtained by deleting an open disc from $P^2$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that deleting an open disc from the real projective plane $\mathbb{R}P^2$ yields a space homeomorphic to the Möbius band $M$.
 
 <1>1. Quotient model of the real projective plane:

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring, let $A=Ra$ be a cyclic $R$-module, and suppose
 \[
 ra=0,

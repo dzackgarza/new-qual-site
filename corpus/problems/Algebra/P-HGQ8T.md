@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A, B \in M_n(R)$ be $n \times n$ matrices over a commutative ring $R$.
 (1) Prove that if $A$ and $B$ are symmetric matrices ($A^t = A, B^t = B$), then the product $AB$ is symmetric if and only if $A$ and $B$ commute ($AB = BA$). (2) For an arbitrary matrix $B \in M_n(R)$, prove that $B B^t$ and $B + B^t$ are symmetric, and $B - B^t$ is skew-symmetric.
 :::
 
-::: solution
+::: {.solution}
 Assume first that $A^t=A$ and $B^t=B$. Then
 \[
 (AB)^t=B^tA^t=BA.

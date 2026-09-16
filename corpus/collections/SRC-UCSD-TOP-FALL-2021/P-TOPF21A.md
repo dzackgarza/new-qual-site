@@ -21,7 +21,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{RP}^2$ be the real projective plane.
 Let $T = S^1 \times S^1$ be the torus.
 

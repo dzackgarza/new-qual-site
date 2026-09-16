@@ -41,7 +41,7 @@ Show that if $f \in L^2$ satisfies $Uf = \lambda f$, for some $\lambda \in \math
 
 ::: {.solution}
 <1>1. A nonzero solution would have $|\lambda|=1$.
-::: proof
+::: {.proof}
 Suppose
 \[
 Uf=\lambda f,
@@ -63,7 +63,7 @@ Since $\lambda\in\mathbb R$, a nonzero eigenvector could therefore occur only fo
 :::
 
 <1>2. Either remaining value forces the squared modulus to have infinite integral unless $f=0$.
-::: proof
+::: {.proof}
 In either case,
 \[
 |f(x-1)|=|f(x)|

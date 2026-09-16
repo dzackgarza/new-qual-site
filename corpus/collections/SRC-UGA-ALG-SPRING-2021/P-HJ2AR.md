@@ -27,14 +27,14 @@ b. Find the Galois group $G$ of $f$.
 c. Exhibit explicitly the correspondence between subgroups of $G$ and intermediate fields between $\QQ$ and $K$.
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Useful trick: given $a + \sqrt{b}$, try to rewrite this as $(\sqrt{c} + \sqrt{d})^2$ for some $c, d$ to get a better basis for $\SF(f)$.
 :::
 
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - First consider $g(z) \da z^2 + 4z + 64$.

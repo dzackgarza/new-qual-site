@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $\alpha, \beta, \gamma, \delta$ are distinct complex numbers.
 Show that $$\frac{\alpha}{(\alpha - \beta)(\alpha - \gamma)(\alpha - \delta)} + \frac{\beta}{(\beta - \alpha)(\beta - \gamma)(\beta - \delta)} + \frac{\gamma}{(\gamma - \alpha)(\gamma - \beta)(\gamma - \delta)} + \frac{\delta}{(\delta - \alpha)(\delta - \beta)(\delta - \gamma)} = 0.$$
 
 Hint: This is not an algebra qual.
 :::
 
-::: solution
+::: {.solution}
 Consider
 \[
 R(z)=\frac{z}{(z-\alpha)(z-\beta)(z-\gamma)(z-\delta)}.

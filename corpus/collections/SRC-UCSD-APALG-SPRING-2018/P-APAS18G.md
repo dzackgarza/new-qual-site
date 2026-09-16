@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field and let $I\subseteq k[x_1,\ldots,x_n]$ be an ideal.
 Fix a monomial order $<$ and let $G=\{g_1,\ldots,g_s\}$ be a Gröbner basis for $I$ with respect to $<$.
 
@@ -26,7 +26,7 @@ is linearly independent in the quotient $k[x_1,\ldots,x_n]/I$.
 Prove or give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 Let \(\mathcal S\) be the set of monomials not divisible by any \(\operatorname{LM}(g_i)\). Because \(G\) is a Gröbner basis,
 \[
 \operatorname{in}(I)=\langle \operatorname{LM}(g_1),\ldots,\operatorname{LM}(g_s)\rangle.

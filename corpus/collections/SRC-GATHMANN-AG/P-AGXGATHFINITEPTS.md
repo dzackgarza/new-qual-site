@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that every affine variety $X\subset \AA^n/k$ consisting of only finitely many points can be written as the zero locus of $n$ polynomials.
 
 > Hint: use interpolation.
 > It is useful to assume at first that all points in $X$ have different $x_1\dash$coordinates.
 :::
 
-::: solution
+::: {.solution}
 Let $X = \ts{\mathbf{p}_1, \cdots, \mathbf{p}_d} = \ts{\mathbf{p}_j}_{j=1}^d$, where each $\mathbf{p}_j\in \AA^n$ is written in coordinates
 \[
 \mathbf{p}_j \da {\left[ {p_j^1, p_j^2, \cdots, p_j^n} \right]}

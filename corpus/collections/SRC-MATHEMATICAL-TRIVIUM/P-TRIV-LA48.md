@@ -19,7 +19,7 @@ audit:
   note: Replaced the editorial preamble and image placeholders with the Linear Algebra Problem 48 statement and descriptions of Figures 1 and 2 from pages 7-8 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 You are a spaceship pilot carrying a lonely watch in front of the main display while the rest of the crew sleep in anabiosis.
 You can operate the spaceship by sending commands to the main computer.
 You can rotate the ship by typing the commands *pitch angle* $\psi$, *yaw angle* $\theta$ and *roll angle* $\phi$ as shown on Fig. 1.

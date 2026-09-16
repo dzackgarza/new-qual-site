@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_{m\times n}(F)$ and $b\in F^m$. Let $[A\mid b]$ be the augmented matrix.
 
 1. Show that $Ax=b$ has a solution if and only if

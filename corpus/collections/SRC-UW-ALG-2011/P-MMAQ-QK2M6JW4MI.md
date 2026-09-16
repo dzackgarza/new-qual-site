@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Given a finite group $G$, recall that its *regular representation* is the representation on the complex group algebra $\mathbb C[G]$ induced by left multiplication of $G$ on itself and its `\textit{adjoint representation}`{=tex} is the representation on the complex group algebra $\mathbb C[G]$ induced by conjugation of $G$ on itself.
 
 - Let $G=\GL_2(\mathbb F_2)$.
@@ -31,7 +31,7 @@ Given a finite group $G$, recall that its *regular representation* is the repres
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The group $\operatorname{GL}_2(\mathbb F_2)$ is isomorphic to $S_3$.
 ::: {.proof}
 There are exactly three nonzero vectors in $\mathbb F_2^2$. Every invertible linear map permutes them, giving a homomorphism

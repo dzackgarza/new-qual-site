@@ -15,7 +15,7 @@ audit:
   note: Checked against Group A, problem A1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R^d\to[0,1]$ be Lebesgue measurable and set
 \[
 W_n=\{x:2^{-n}\le f(x)\le1-2^{-n}\}.

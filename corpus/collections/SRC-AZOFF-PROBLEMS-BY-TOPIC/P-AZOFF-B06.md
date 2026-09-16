@@ -15,7 +15,7 @@ audit:
   note: Checked against Several variables, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $F:\mathbb R^2\to\mathbb R$ be continuously differentiable, with $F(0,0)=0$ and
 \[
 \|\nabla F(0,0)\|<1.

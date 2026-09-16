@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Suppose the group $G$ acts on a set $X$. Show that the stabilizers of elements in the same orbit are conjugate: for any $x \in X$ and $g \in G$, $G_{g \cdot x} = g G_x g^{-1}$.
 
 (b) Let $G$ be a finite group and let $H < G$ be a proper subgroup. Show that the union of all conjugates of $H$ is strictly smaller than $G$:
@@ -27,7 +27,7 @@ $$
 (c) Suppose a finite group $G$ acts transitively on a set $S$ with $|S| \ge 2$. Show that there exists an element $g \in G$ having no fixed points in $S$ (i.e. $g \cdot s \ne s$ for all $s \in S$).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove conjugacy of stabilizers in (a), prove that conjugates of a proper subgroup do not cover $G$ in (b), and deduce the existence of a fixed-point-free element (derangement) for transitive actions in (c).
 
 <1>1. Part (a): Conjugacy of stabilizers in an orbit.

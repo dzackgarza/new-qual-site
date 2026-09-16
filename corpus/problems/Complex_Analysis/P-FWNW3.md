@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that any holomorphic function $f$ on a simply connected domain (or compact set with connected complement) can be uniformly approximated by polynomials on compact subsets.
 :::
 
-::: solution
+::: {.solution}
 There are two standard forms of the statement.
 
 <1>1. Let $K\subset\mathbb C$ be compact with connected complement, and suppose $f$ is holomorphic on a neighborhood of $K$. By Runge's theorem, for every $\varepsilon>0$ there exists a polynomial $p$ such that

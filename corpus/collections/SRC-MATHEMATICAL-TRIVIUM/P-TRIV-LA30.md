@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 30, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let U be $n \times n$ unitary matrix.
 Calculate the number of independent elements of $U .$
 :::

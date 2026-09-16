@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\ts{\mcf_i}$ be a direct system of sheaves and morphisms on $X$.
 Define the direct limit of the system, denoted $\varinjlim \mcf_i$, to be the sheaf associated to the presheaf $U \mapsto \varinjlim \mcf_i(U)$.
 

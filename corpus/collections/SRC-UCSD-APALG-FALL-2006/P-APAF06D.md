@@ -20,7 +20,7 @@ audit:
   note: Repaired the circular normal-form/injectivity argument in the finite case.
 ---
 
-::: problem
+::: {.problem}
 Let $n$ be an integer.
 Let $G_n$ be the group given by generators and relations as follows.
 \[

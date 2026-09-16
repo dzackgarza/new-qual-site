@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (a) Let $m$ be a positive integer.
 Describe the set of all entire functions $f$ for which there exist positive constants $C_1$ and $C_2$ such that $|f(z)| \le C_1 |z|^m$ for all $|z| \ge C_2$.
 
@@ -29,7 +29,7 @@ Describe the set of all entire functions $f$ for which there exist positive cons
 (iii) $|R(z)| \le C|z|$ for all $|z| \ge 2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For part (a), write $f(z)=\sum_{k=0}^\infty a_kz^k$. For every $r\ge C_2$, Cauchy's estimate gives
 $$
 |a_k|\le \frac{\max_{|z|=r}|f(z)|}{r^k}\le C_1r^{m-k}.

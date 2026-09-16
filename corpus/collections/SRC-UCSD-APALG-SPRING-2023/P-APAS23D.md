@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex components, $M_n$ denotes the set $M_{m,n}$ with $m = n$, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) State, but do not prove, the singular-value decomposition theorem.
@@ -29,7 +29,7 @@ Prove that $\rho(A) \le \omega(A) \le \sigma_1(A)$.
 :::
 
 
-::: solution
+::: {.solution}
 (a) **Singular-value decomposition.** For every $A\in M_{m,n}$ there are unitary matrices $U\in M_m$ and $V\in M_n$ such that
 \[
 A=U\Sigma V^H,

@@ -29,9 +29,9 @@ audit:
 Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < | z |$ Show that u must be constant.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Lifting by the exponential map gives a positive harmonic function on the whole plane.
-::: proof
+::: {.proof}
 Define
 $$
 v(w)=u(e^w),\qquad w\in\mathbb C.
@@ -46,7 +46,7 @@ Moreover $v(w)>0$ everywhere because $u>0$ on the punctured plane.
 :::
 
 <1>2. Every positive harmonic function on the plane is constant.
-::: proof
+::: {.proof}
 Because $\mathbb C$ is simply connected, the harmonic function $v$ has a global
 harmonic conjugate, so there is an entire function $H$ with
 $\operatorname{Re}H=v$. Then
@@ -62,7 +62,7 @@ $0=E'=-H'e^{-H}$ implies $H'=0$, hence $H$ and therefore $v$ are constant.
 :::
 
 <1>3. Constancy descends to the punctured plane.
-::: proof
+::: {.proof}
 The exponential map is onto $\mathbb C\setminus\{0\}$. For any $z\ne0$, choose
 $w$ with $e^w=z$. If $v\equiv c$, then
 $$

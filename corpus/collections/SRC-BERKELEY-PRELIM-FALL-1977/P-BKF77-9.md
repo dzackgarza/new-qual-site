@@ -23,14 +23,14 @@ audit:
   note: "Applied the fundamental theorem of calculus and Cauchy--Schwarz on [0,x], then used x<=1."
 ---
 
-::: problem
+::: {.problem}
 Let $f:[0,1]\to\mathbb R$ be continuously differentiable with $f(0)=0$. Prove that
 \[
 \sup_{0\le x\le1}|f(x)|\le\sqrt{\int_0^1(f'(x))^2\,dx}.
 \]
 :::
 
-::: solution
+::: {.solution}
 Fix $x\in[0,1]$. Since $f(0)=0$, the fundamental theorem of calculus gives
 $$
 f(x)=\int_0^x f'(t)\,dt.

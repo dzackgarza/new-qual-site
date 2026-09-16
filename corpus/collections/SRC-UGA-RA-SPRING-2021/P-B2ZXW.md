@@ -31,7 +31,7 @@ Prove that
 .\]
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - For $f\in L^1(X)$, $\norm{f}_1 \da \int_X \abs{f(x)} \dx < \infty$.
@@ -54,7 +54,7 @@ a-\eps \leq b \leq a+\eps \implies b=a
 
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. Approximate by compactly supported truncations.
 ::: {.proof}
 Fix $\varepsilon>0$. Choose $R>0$ such that, for

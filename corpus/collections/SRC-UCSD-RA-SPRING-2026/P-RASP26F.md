@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f_k \in L^2(\mathbb{R}^n)$ and $\|f_k\|_2 \leq 1$ for each $k = 1, 2, \ldots$, and assume that
 $$
 \lim_{R \to \infty} \sup_{k \geq 1} \int_{\mathbb{R}^n \setminus B_R(0)} (|f_k(x)|^2 + |\hat{f}_k(x)|^2)\,dx = 0
@@ -32,7 +32,7 @@ with $B_R(0)$ the ball of radius $R$ centered at the origin.
 Show that $\{f_k\}_{k \geq 1}$ has a convergent subsequence in $L^2(\mathbb{R}^n)$.
 :::
 
-::: solution
+::: {.solution}
 Let $\mathcal F$ denote the unitary Fourier transform on $L^2(\mathbb R^n)$. For $R>0$, let
 \[
 P_Rh:=\mathbf1_{B_R}h
@@ -44,7 +44,7 @@ Q_Rh:=\mathcal F^{-1}(\mathbf1_{B_R}\widehat h).
 Thus $P_R$ truncates in physical space and $Q_R$ truncates in frequency space.
 
 <1>1. Approximate the sequence uniformly by doubly truncated functions.
-::: proof
+::: {.proof}
 For every $h\in L^2$,
 \[
 \begin{aligned}
@@ -80,7 +80,7 @@ The hypothesis therefore implies
 :::
 
 <1>2. Show that $P_RQ_R$ is compact.
-::: proof
+::: {.proof}
 Write
 \[
 P_RQ_R
@@ -110,7 +110,7 @@ is compact as well.
 :::
 
 <1>3. Prove total boundedness of $\{f_k\}$.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$. By Step 1, choose $R$ so large that
 \[
 \sup_k\|f_k-P_RQ_Rf_k\|_2<\frac\varepsilon2.
@@ -129,7 +129,7 @@ of $f_k$. Hence $\{f_k:k\ge1\}$ is totally bounded in $L^2(\mathbb R^n)$.
 :::
 
 <1>4. Extract a convergent subsequence.
-::: proof
+::: {.proof}
 Every sequence in a totally bounded metric space has a Cauchy subsequence. Since $L^2(\mathbb R^n)$ is complete, that Cauchy subsequence converges in $L^2$.
 
 Therefore

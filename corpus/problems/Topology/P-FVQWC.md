@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What surface is represented by the $6\dash$gon with edges identified according to the symbol $xyzxy\inv z\inv$ ?
 :::
 

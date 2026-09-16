@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Using properties of the Riemann integral, prove that if $f:[0,1]\to\mathbb R$ is continuous and nonnegative and
 \[
 \int_0^1f(x)\,dx=0,

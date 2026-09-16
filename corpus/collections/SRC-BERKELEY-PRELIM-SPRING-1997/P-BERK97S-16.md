@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A$ be a finite-dimensional commutative algebra with identity over $\mathbb C$, with
 \[
 \dim_{\mathbb C}A\ge2.

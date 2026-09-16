@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. Suppose that $a _ { 1 } , \ldots , a _ { r }$ and $b _ { 1 } , \ldots , b _ { r }$ are the zeros and poles, respectively, in the fundamental parallelogram of an elliptic function $f .$ Show that
 
 $$
@@ -27,7 +27,7 @@ for some integers n and $m .$
 [Hint: If the boundary of the parallelogram contains no zeros or poles, simply integrate $z f ^ { \prime } ( z ) / f ( z )$ over that boundary, and observe that the integral of $f ^ { \prime } ( z ) / f ( z )$ over a side is an integer multiple of $2 \pi i$ . If there are zeros or poles on the side of the parallelogram, translate it by a small amount to reduce the problem to the first case.]
 :::
 
-::: solution
+::: {.solution}
 Translate the fundamental parallelogram slightly, if necessary, so that its boundary contains no zero or pole of $f$. Let its vertices be
 \[
 z_0,\quad z_0+\omega_1,\quad z_0+\omega_1+\omega_2,\quad z_0+\omega_2,

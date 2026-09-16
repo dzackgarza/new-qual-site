@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a finite morphism of curves of degree $n$.
 We define a homomorphism $f_*: \Div X \to \Div Y$ by $f_*(\sum n_i P_i)=\sum n_i f(P_i)$ for any divisor $D=\sum n_i P_i$ on $X$.
 

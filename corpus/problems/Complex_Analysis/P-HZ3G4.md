@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that the following series converges uniformly on the set $\theset{z \suchthat \Im(z) < \ln 2}$:
 \[
 \sum_{n=1}^\infty {\sin(nz) \over 2^n}
 .\]
 :::
 
-::: solution
+::: {.solution}
 The statement is false on the stated half-plane. If $z=-iy$ with
 $y>\log2$, then
 \[

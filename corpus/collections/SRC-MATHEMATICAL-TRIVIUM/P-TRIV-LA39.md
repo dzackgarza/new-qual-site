@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 39, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve the system of linear equations
 
 $$

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Why is the character table a square?
 :::
 
-::: solution
+::: {.solution}
 For a finite group $G$, the character table has one row for each irreducible complex character and one column for each conjugacy class.
 
 The irreducible characters form an orthonormal basis of the complex vector space of class functions on $G$. The dimension of that space is the number of conjugacy classes, because a class function is determined independently by its value on each conjugacy class.

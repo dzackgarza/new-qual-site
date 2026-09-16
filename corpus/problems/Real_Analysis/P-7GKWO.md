@@ -35,7 +35,7 @@ b. Show that if $x\in F^c$ then $I_F(x) = \infty$.
 c. Show that $I_F(x) < \infty$ for almost every $x\in F$.
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. The function $\delta(x)=d(x,F)$ is $1$-Lipschitz, hence continuous.
 ::: {.proof}
 For $x,x'\in\RR$ and every $z\in F$, the triangle inequality gives

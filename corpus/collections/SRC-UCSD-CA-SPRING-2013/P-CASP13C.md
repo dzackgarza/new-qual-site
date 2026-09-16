@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine the Laurent series expansions of the function $f: \mathbb{C} \setminus \{0, \pm 2\} \to \mathbb{C}$ given by $$f(z) = \frac{1}{z^3 - 4z}$$ in the annuli $\mathbb{A}(0; 0, 2)$ and $\mathbb{A}(0; 2, \infty)$.
 :::
 
-::: solution
+::: {.solution}
 First decompose
 \[
 \frac1{z(z-2)(z+2)}=-\frac1{4z}+\frac1{8(z-2)}+\frac1{8(z+2)}.

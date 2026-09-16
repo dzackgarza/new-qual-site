@@ -29,7 +29,7 @@ audit:
 5. Let H denote the upper half plane $\{ z \in \mathbb { C } : \operatorname { I m } z > 0 \}$ . Suppose that $f : H \to H$ is holomorphic, and $f ( 3 + 1 7 i ) = 3 + 1 7 i$ What is the maximum possible value of $f ^ { \prime } ( 3 { + } 1 7 i )$ . Give a reason for your answer (and try not to do any lengthy computations).
 :::
 
-::: remark
+::: {.remark}
 A complex derivative need not be real, so a maximum
 requires a real-valued objective. The complete derivative
 range below gives both the maximum modulus and the
@@ -37,7 +37,7 @@ largest possible real derivative, without assuming that
 all derivatives are real.
 :::
 
-::: solution
+::: {.solution}
 Let $a=3+17i$ and $D=\{w\in\mathbb C:|w|<1\}$.
 The possible values are exactly
 $$
@@ -48,7 +48,7 @@ In particular $\max|f'(a)|=1$, and the largest possible
 real value of $f'(a)$ is also one, attained by $f(z)=z$.
 
 <1>1. Conjugation to the disk bounds the derivative.
-::: proof
+::: {.proof}
 The fractional map
 $$
 \phi(z)=\frac{z-a}{z-\overline a},\qquad
@@ -71,7 +71,7 @@ Schwarz's lemma therefore gives $|f'(a)|\leq1$ [@SS03].
 :::
 
 <1>2. Every derivative in that disk is attained.
-::: proof
+::: {.proof}
 For any $|\lambda|\leq1$, the map $w\mapsto\lambda w$
 takes $D$ into $D$, including when $\lambda=0$. Thus
 $$

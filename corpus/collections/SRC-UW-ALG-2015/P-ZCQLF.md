@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 - Let $L$ be a Galois extension of a field $K$ of degree 4. What is the minimum number of subfields there could be strictly between $K$ and $L$?
   What is the maximum number of such subfields?
   Give examples where these bounds are attained.
@@ -26,7 +26,7 @@ audit:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. If \(L/K\) is Galois of degree \(4\), then
 \[
 \operatorname{Gal}(L/K)\cong C_4

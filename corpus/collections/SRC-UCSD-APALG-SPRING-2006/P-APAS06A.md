@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 (a) Consider $\lambda_i,\lambda_j\in\operatorname{eig}(A)$ such that $\lambda_i\neq\lambda_j$.
 Let $(x_i,y_i)$ and $(x_j,y_j)$ denote the right and left eigenvectors of $A$ associated with $\lambda_i$ and $\lambda_j$.
 Show that $y_i^*x_j=0$.

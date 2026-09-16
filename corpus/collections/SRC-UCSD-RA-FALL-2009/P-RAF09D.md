@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 If $f \in L^1((-\infty, -\delta) \cup (\delta, \infty))$ for every $\delta > 0$, define its principal value integral to be
 $$
 \mathrm{PV} \int_{-\infty}^{\infty} f(x)\,dx = \lim_{\delta \to 0} \left(\int_{-\infty}^{-\delta} + \int_{\delta}^{\infty}\right) f(x)\,dx,
@@ -37,9 +37,9 @@ Show that
 (b) $\Lambda''(\phi) = -\mathrm{PV} \int_{-\infty}^{\infty} \frac{\phi(x) - \phi(0)}{x^2}\,dx$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compute the first distributional derivative.
-::: proof
+::: {.proof}
 By definition of the derivative of a distribution,
 \[
 \Lambda'(\phi)=-\Lambda(\phi')
@@ -72,7 +72,7 @@ Hence
 :::
 
 <1>2. Differentiate once more.
-::: proof
+::: {.proof}
 Using part (a),
 \[
 \Lambda''(\phi)

@@ -25,7 +25,7 @@ audit:
   note: "Checked the double-pole derivative, upper-arc estimate, absolute convergence and passage from the full-line exponential integral to the half-line cosine integral."
 ---
 
-::: problem
+::: {.problem}
 For $a>0$, compute and justify
 $$
 \int_0^\infty\frac{\cos(ax)}{(1+x^2)^2}\,dx
@@ -33,10 +33,10 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The exponential integrand has one double pole in the upper half-plane.
 
-::: proof
+::: {.proof}
 Set $F(z)=e^{iaz}/(1+z^2)^2$. Its only upper-half-plane
 pole is $i$, of order two. Differentiating the holomorphic
 factor gives its residue [@SS03]:
@@ -60,7 +60,7 @@ $$
 
 <1>2. The semicircle vanishes and symmetry gives the requested value.
 
-::: proof
+::: {.proof}
 On $\Gamma_R$, the assumption $a>0$ implies
 $|e^{iaz}|=e^{-a\operatorname{Im}z}\leq1$. Also
 $|1+z^2|\geq R^2-1$. Hence

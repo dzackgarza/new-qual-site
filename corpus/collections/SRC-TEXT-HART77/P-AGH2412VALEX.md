@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field.
 
 a. If $K$ is a function field of dimension $1$ over $k$, then every valuation ring of $K/k$ except $K$ itself is discrete.

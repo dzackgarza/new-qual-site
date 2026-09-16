@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be continuous on $\mathbb{C}$ and analytic on $\mathbb{C} \setminus \mathbb{R}$.
 Prove that $f$ is analytic on $\mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 We use Morera's theorem. Let $T$ be any triangle in $\mathbb C$. If $T$ lies
 entirely in one of the two half-planes, then
 \[

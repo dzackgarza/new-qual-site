@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that the Riemann surface of the complete analytic function associated to a branch of $\log z$ is simply connected.
 :::
 
-::: solution
+::: {.solution}
 The complete analytic continuation of a local branch of $\log z$ may be modeled by
 \[
 \mathcal R=\{(z,w)\in\mathbb C^*\times\mathbb C:e^w=z\}.

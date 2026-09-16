@@ -25,11 +25,11 @@ audit:
   note: "Checked existence of the normal cyclic subgroup of order 91, splitting by an involution, all four possible actions, and the characteristic-subgroup argument distinguishing their isomorphism classes."
 ---
 
-::: problem
+::: {.problem}
 Classify the groups of order $182 = 2 \cdot 7 \cdot 13$.
 :::
 
-::: solution
+::: {.solution}
 There are exactly four isomorphism classes:
 $$
 C_{182},\qquad C_7\times D_{26},\qquad
@@ -41,7 +41,7 @@ dihedral group of order $2m$.
 <1>1. Every group $G$ of order $182$ has a normal cyclic
 subgroup $N$ of order $91$.
 
-::: proof
+::: {.proof}
 Sylow's theorems give $n_7\mid26$ and $n_7\equiv1\pmod7$
 [@DF04]. Among $1,2,13,26$, only $1$ has this congruence.
 Thus the Sylow $7$-subgroup $P$ is normal. The quotient
@@ -66,7 +66,7 @@ that $N$ is cyclic.
 <1>2. Every such $G$ is obtained from $C_{91}$ by an
 automorphism whose square is the identity, and exactly four qualify.
 
-::: proof
+::: {.proof}
 Cauchy's theorem gives an element $s\in G$ of order two
 [@DF04]. Since $N$ has odd order, $s\notin N$.
 As $[G:N]=2$, every element has a unique form $a^i s^e$,
@@ -102,7 +102,7 @@ any $G$ with the given conjugation action.
 <1>3. The four actions give the displayed four groups,
 and none of them are isomorphic to one another.
 
-::: proof
+::: {.proof}
 Identify $C_{91}$ with $C_7\times C_{13}$. The signs
 in step <1>2 specify whether the involution fixes or
 inverts each factor. Fixing both gives

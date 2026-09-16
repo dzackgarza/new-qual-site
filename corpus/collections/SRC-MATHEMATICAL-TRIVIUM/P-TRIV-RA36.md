@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 36, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the surface area of
 
 (a) the two-dimensional sphere $S ^ { 2 }$ of radius R.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a morphism $f: X \to Y$ of schemes of finite type over $k$ is étale if and only if the following condition is satisfied.
 For each $x \in X$, let $y = f(x)$.
 Let $\hat{\mco}_x$ and $\hat{\mco}_y$ be the completions of the local rings at $x$ and $y$.

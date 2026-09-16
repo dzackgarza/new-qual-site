@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $X=[0,1]$, let $\mathcal A$ be the Borel sigma-algebra, and let $\lambda$ be normalized Lebesgue measure.
 
 1. Compute the measures of
@@ -33,9 +33,9 @@ Let $X=[0,1]$, let $\mathcal A$ be the Borel sigma-algebra, and let $\lambda$ be
    Prove that $f$ is measurable and compute $\int_0^1 f\,d\lambda$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compute the elementary measures.
-::: proof
+::: {.proof}
 The interval has length
 \[
 \lambda([1/3,2/5])=\frac25-\frac13=\boxed{\frac1{15}}.
@@ -54,7 +54,7 @@ Since $[0,1]$ has measure $1$ and the rationals have measure zero,
 :::
 
 <1>2. State monotone convergence.
-::: proof
+::: {.proof}
 If $0\le g_1\le g_2\le\cdots$ are measurable on $[0,1]$ and $g_n(x)\to g(x)$ pointwise, then
 \[
 \boxed{\int_0^1 g\,d\lambda=\lim_{n\to\infty}\int_0^1g_n\,d\lambda,}
@@ -63,7 +63,7 @@ with the value $+\infty$ allowed.
 :::
 
 <1>3. Prove measurability of the Cantor-stage function.
-::: proof
+::: {.proof}
 Let $R_n$ be the union of the open intervals removed at stage $n$.
 Each $R_n$ is a finite union of open intervals, hence Borel, and $C$ is closed.
 The sets
@@ -75,7 +75,7 @@ Since $f$ is constant on each member of this countable Borel partition, $f$ is B
 :::
 
 <1>4. Compute its integral.
-::: proof
+::: {.proof}
 At stage $n$ there are $2^n$ removed intervals, each of length $3^{-(n+1)}$.
 Hence
 \[

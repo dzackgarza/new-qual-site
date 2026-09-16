@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give a precise statement of the dominated convergence theorem.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a measure space, and let $(f_n)$ be measurable complex-valued functions such that
 \[
 f_n(x)\longrightarrow f(x)

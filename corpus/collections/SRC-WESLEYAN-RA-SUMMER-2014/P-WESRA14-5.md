@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 5 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md. The source uses the name “convergence in measure” for the displayed exceptional-set-uniform definition (usually called almost uniform convergence). The card preserves the source definition rather than silently replacing it with the standard one.
 ---
 
-::: problem
+::: {.problem}
 The source defines that measurable $f_n$ converge *in measure* to $f$ if for every $\varepsilon>0$ there are $N$ and a measurable $B$ with $\mu(B)<\varepsilon$ such that
 \[
 |f_n(x)-f(x)|<\varepsilon

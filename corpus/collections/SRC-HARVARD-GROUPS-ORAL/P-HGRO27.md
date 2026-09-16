@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose every element of a finite group $G$ has order equal to a power of one fixed prime $p$.
 Must $|G|$ be a power of $p$?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Yes.
 
 Suppose, for contradiction, that some prime $q\ne p$ divides $|G|$. By

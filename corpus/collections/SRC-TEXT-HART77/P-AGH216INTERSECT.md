@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. The intersection of two varieties need not be a variety.
    Let $Q_1, Q_2 \subseteq \PP^3$ be the quadric surfaces given by $x^2 - yw = 0$ and $xy - zw = 0$.
    Show that $Q_1 \intersect Q_2$ is the union of a twisted cubic curve and a line.

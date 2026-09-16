@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an elliptic curve over a field $k$ of characteristic $p$.
 Let $F': X_p \to X$ be the $k$-linear Frobenius morphism (2.4.1). Use (4.10.7) to show that the dual morphism $\hat{F}': X \to X_p$ is separable if and only if the Hasse invariant of $X$ is 1.
 

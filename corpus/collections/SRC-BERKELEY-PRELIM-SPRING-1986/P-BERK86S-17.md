@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $V$ be a finite-dimensional complex vector space of $C^\infty$ functions on $\mathbb R$. Suppose $V$ is closed under differentiation. Prove that $V$ is closed under translations: if $f\in V$ and $a\in\mathbb R$, then
 \[
 x\longmapsto f(x+a)

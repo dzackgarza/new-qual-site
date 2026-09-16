@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 A_1\ge A_2\ge\cdots\ge A_k\ge0.

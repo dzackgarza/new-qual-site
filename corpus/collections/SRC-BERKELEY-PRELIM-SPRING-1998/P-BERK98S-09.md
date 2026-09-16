@@ -16,7 +16,7 @@ audit:
   note: The retained PDF page was inspected directly; M_3 has upper-right entry 6.9, and the source wording asks whether the power sequences are bounded away from infinity and from zero.
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 M_1=\begin{pmatrix}3&2\\1&4\end{pmatrix},\qquad

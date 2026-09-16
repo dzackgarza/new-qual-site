@@ -20,14 +20,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 - Let $G$ be a group of (finite) order $n$.
   Show that any irreducible left module over the group algebra $\mathbb CG$ has complex dimension at most $\sqrt n$.
 
 - Give an example of a group $G$ of order $n\geq5$ and an irreducible left module over $\mathbb CG$ of complex dimension $\lfloor\sqrt n\rfloor$, the greatest integer to $\sqrt n$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 V_1,\dots,V_r

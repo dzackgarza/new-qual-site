@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f:X\to Y$ be a dominant morphism of affine varieties.
 Show that for any $y\in f(X)$, any irreducible component of the fiber $f^{-1}(y)$ is an affine variety of dimension $d\geq \dim X-\dim Y$.
 Show that equality holds on a Zariski-dense open subset of $Y$.

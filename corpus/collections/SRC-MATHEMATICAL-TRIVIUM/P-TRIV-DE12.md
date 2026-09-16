@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve $y ^ { \prime } - y = e ^ { 3 t }$ with $y ( 0 ) = 2$
 :::

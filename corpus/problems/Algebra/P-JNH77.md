@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give a Galois-theoretic proof of the fundamental theorem of algebra.
 What input from real analysis is needed?
 :::

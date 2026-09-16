@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Does smoothness imply normality?
 Conversely?
 :::

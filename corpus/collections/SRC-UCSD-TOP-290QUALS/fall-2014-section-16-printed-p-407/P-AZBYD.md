@@ -18,7 +18,7 @@ review: draft
 Let $L$ be a 3-manifold with homology $[\ZZ, \ZZ_3, 0, \ZZ, \ldots]$ and let $X = L \cross \Sigma L$. Compute $H_*(X), H^*(X)$.
 :::
 
-:::{.solution}
+::: {.solution}
 Useful facts:
 
 - $H_{k}(X\times Y) \cong \bigoplus _{{i+j=k}}H_{i}(X)\otimes H_{j}(Y) \bigoplus_{i+j=k-1}\tor(H_i(X), H_j(Y))$

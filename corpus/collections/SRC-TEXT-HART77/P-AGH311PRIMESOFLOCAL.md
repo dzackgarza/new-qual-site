@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be any variety and let $P \in X$.
 Show that there is a one-to-one correspondence between the prime ideals of the local ring $\mco_P$ and the closed subvarieties of $X$ containing $P$.
 :::

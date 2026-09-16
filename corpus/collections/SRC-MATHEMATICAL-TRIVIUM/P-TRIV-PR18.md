@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 18, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the series ω of n experiments whose results are given by independent variables $\xi _ { i } , i = 1 , . . . , n$ , taking the values 1 (success) with the probability $p ,$ and 0 (fail) with the probability $q = 1 - p$ . Compose the sum $S _ { n } ( \omega ) = \xi _ { 1 } + . . . + \xi _ { n }$ . It is clear that for any typical series ω and for large n, $S _ { n } ( \omega ) / n$ must be close enough to p. But what is the total amount of the typical series and how it behaves as n grows?
 Denote by $C ( n , \epsilon )$ all typical series, or, more precisely,
 

@@ -33,13 +33,13 @@ a. List all abelian groups of order 60.
 b. List all $\mathbb{Q}[x]$-modules that are annihilated by $x^8 - 1$ and have dimension 4 when thought of as vector spaces over $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 All classifications below are up to isomorphism.
 
 <1>1. The abelian groups of order $60$ are
 $C_{60}$ and $C_{30}\times C_2$, where $C_n=\mathbb Z/n\mathbb Z$.
 
-::: proof
+::: {.proof}
 In an abelian group $A$ of order $60=4\cdot3\cdot5$, each
 Sylow subgroup is normal and hence unique by Sylow conjugacy
 [@DF04]. Multiplication from the product of these subgroups
@@ -83,7 +83,7 @@ E_8=\mathbb Q[x]/(x^4+1).
 $$
 Each quotient has its natural $\mathbb Q[x]$-module structure.
 
-::: proof
+::: {.proof}
 Factor
 $$
 f=x^8-1=(x-1)(x+1)(x^2+1)(x^4+1).
@@ -144,7 +144,7 @@ give isomorphic direct sums, proving uniqueness.
 | $(0,0,2,0)$ | $E_4^{\oplus2}$ |
 | $(0,0,0,1)$ | $E_8$ |
 
-::: proof
+::: {.proof}
 The equation in step <1>2 implies $d\leq1$. For $d=1$,
 the other multiplicities vanish, giving the last row.
 For $d=0$, one has $c\leq2$. If $c=2$, then $a=b=0$.

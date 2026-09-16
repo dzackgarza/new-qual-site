@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $X$ is projective and $Y$ is affine over $k = \CC$, then the projection $\pi_2: X\cross Y\to Y$ is proper and closed in the Zariski topology.
 :::

@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $A = E + \epsilon B _ { }$ , where E is the identity matrix and $\epsilon \ll 1$ . Expand det A to the first order in €.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $A$ is a ring, $\mfa$ an ideal, and $M$ an $A$-module, then $\depth_\mfa M$ is the maximum length of an $M$-regular sequence $x_1, \ldots, x_r$, with all $x_i \in \mfa$. This generalizes the notion of depth introduced in (II, §8).
 
 a. Assume that $A$ is noetherian. Show that if $\depth_\mfa M \geq 1$, then $\Gamma_{\mfa}(M)=0$, and the converse is true if $M$ is finitely generated.

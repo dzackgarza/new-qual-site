@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A morphism whose underlying map of topological spaces is a homeomorphism need not be an isomorphism.
 
 1. Let $\phi: \AA^1 \to \AA^2$ be defined by $t \mapsto (t^2, t^3)$.

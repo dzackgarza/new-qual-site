@@ -30,7 +30,7 @@ Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies 
 \]
 :::
 
-::: solution
+::: {.solution}
 
 Put
 \[

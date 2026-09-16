@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 36, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve $y ^ { \prime \prime } ( x ) - 3 y ^ { \prime } ( x ) + 2 y ( x ) = \delta ( x - 1 )$ with $y ( 0 ) = 0$ and $y ( 1 ) = 1$
 :::

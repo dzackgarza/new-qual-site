@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is the Galois group of $x^n-1$ over $\QQ$?
 :::
 
-::: solution
+::: {.solution}
 Let $\zeta_n$ be a primitive $n$th root of unity. The splitting field is
 \[
 \QQ(\zeta_n).

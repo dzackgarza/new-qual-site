@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $N:\mathbb R^n\to\mathbb R$ be a norm.
 
 1. Prove that $N$ is bounded on the Euclidean unit sphere.

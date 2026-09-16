@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Are the following statements true or false?
 Give a brief proof in each case.
 
@@ -26,7 +26,7 @@ There is a non-constant function $f(z)$ such that $u^2 \leq v^2 + 2015$.
 (iv) There are polynomials $p_1, p_2, \ldots$ such that $\left|\frac{1}{z(z-4)} - p_n(z)\right|$ converges uniformly to zero on the annulus $U = \{z \in \mathbb{C} : 2 < |z| < 3\}$, as $n$ tends to infinity.
 :::
 
-::: solution
+::: {.solution}
 **(i) False.** If $f=u+iv$ satisfied $u^2\le v^2+2015$, then
 \[
 \operatorname{Re}(f^2)=u^2-v^2\le 2015.

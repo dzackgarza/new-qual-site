@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a surface.
 Recall that we have defined an algebraic family of effective divisors on $X$, parametrized by a nonsingular curve $T$, to be an effective Cartier divisor $D$ on $X \times T$, flat over $T$ (III, 9.8.5). In this case, for any two closed points $0,1 \in T$, we say the corresponding divisors $D_0, D_1$ on $X$ are prealgebraically equivalent.
 

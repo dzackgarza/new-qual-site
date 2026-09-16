@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $(\Omega,\mcb)$ be a measurable space with a Borel $\sigma\dash$algebra and $\mu_n: \mcb \to [0, \infty]$ be a $\sigma\dash$additive measure for each $n$.
 Show that the following map is again a $\sigma\dash$additive measure on $\mcb$:
 \[
@@ -21,7 +21,7 @@ Show that the following map is again a $\sigma\dash$additive measure on $\mcb$:
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Apply Fubini-Tonelli to commute two sums:
 \[
 \mu\qty{\Union_{1\leq k \leq M} E_k}\da 

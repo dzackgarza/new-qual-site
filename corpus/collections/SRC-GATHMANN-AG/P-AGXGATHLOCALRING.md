@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X\subset \AA^n$ be an affine variety and $a\in X$.
 Show that
 \[

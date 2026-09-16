@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find $f ^ { ( n ) } ( 0 )$ , if $f ( x ) = e ^ { - \frac { 1 } { x ^ { 2 } } } , x \in \mathbb { R } , n > 0 ,$
 :::

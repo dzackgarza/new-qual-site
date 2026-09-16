@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give examples of each of the following objects.
 
 (a) A finite group $G$, an irreducible $G$-module $V$ defined over the real numbers $\mathbb{R}$, and a $G$-module homomorphism $\varphi \colon V \to V$ which is not multiplication by a scalar.
@@ -20,7 +20,7 @@ Give examples of each of the following objects.
 (b) An infinite group $G$ and a $G$-module $V$ defined over the complex numbers $\mathbb{C}$ which is indecomposable but not irreducible.
 :::
 
-::: solution
+::: {.solution}
 For (a), take \(G=C_4=\langle g:g^4=1
 angle\) and let \(V=\mathbb R^2\) with
 \[

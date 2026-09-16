@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a. Show that any group of order 2020 is solvable.
 
 a. Give (without proof) a classification of all abelian groups of order 2020.
@@ -27,7 +27,7 @@ a. Give (without proof) a classification of all abelian groups of order 2020.
 c. Describe one nonabelian group of order 2020.
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 2020=2^2\cdot5\cdot101,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $\pi: \tilde{X} \rightarrow X$ is a monoidal transformation with center $P$, show that $H^1\left(\tilde{X}, \Omega_{\tilde{X}}\right) \cong H^1\left(X, \Omega_X\right) \oplus k$.
 This gives another proof of (5.8).
 

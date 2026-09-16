@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Derive the power series of $\tan z$ at the origin.
 
 b. Determine its radius of convergence.
@@ -20,7 +20,7 @@ b. Determine its radius of convergence.
 c. Prove the location of the zeros of $\cos z$, and explain how they determine this radius.
 :::
 
-::: solution
+::: {.solution}
 Using the Bernoulli-number generating function
 \[
 \frac{t}{e^t-1}=\sum_{n=0}^{\infty}B_n\frac{t^n}{n!},

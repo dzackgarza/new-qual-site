@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 12. Suppose u is not an integer.
     Prove that
 
@@ -35,7 +35,7 @@ Note.
 Two other derivations of this identity, using Fourier series, were given in Book I.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 f(z)=\frac{\pi\cot(\pi z)}{(u+z)^2},\qquad u\notin\mathbb Z,

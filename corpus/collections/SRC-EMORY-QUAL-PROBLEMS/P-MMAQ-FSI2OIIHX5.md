@@ -31,17 +31,17 @@ audit:
   note: "Compared with Groups (2) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAG2, whose solution repeats this orbit-counting argument."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group of order $p^nm$ where $p$ is a prime and $m$ is not divisible by $p$.
 Prove that if $H$ is a subgroup of $G$ of order $p^k$ for some $k<n$, then the normalizer of $H$ in $G$ properly contains $H$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose a Sylow $p$-subgroup $P$ of $G$ containing $H$.
 The left action of $H$ on $P/H$ has exactly
 $[N_P(H):H]$ fixed points.
 
-::: proof
+::: {.proof}
 Sylow containment provides $P$, of order $p^n$ [@DF04].
 Here $P/H$ means the set of left cosets, not a quotient
 group. Left multiplication by $H$ is well defined on
@@ -55,7 +55,7 @@ There are $[N_P(H):H]$ such cosets.
 
 <1>2. The index $[N_P(H):H]$ is at least $p$.
 
-::: proof
+::: {.proof}
 Each orbit has order dividing $|H|=p^k$ by
 orbit-stabilizer [@DF04]. Hence every orbit with more
 than one member has size divisible by $p$.

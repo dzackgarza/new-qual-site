@@ -26,12 +26,12 @@ audit:
   note: "Checked the subring and unit descriptions, irreducibility of both monomials, and inequivalence of the two factorizations in every characteristic."
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field, and let $R$ be the subring of $F[X]$ of polynomials with $X$ coefficient equal to $0$.
 Prove that $R$ is not a UFD.
 :::
 
-::: solution
+::: {.solution}
 The element $X^6$ has the two inequivalent factorizations
 $$
 X^6=(X^2)(X^2)(X^2)=(X^3)(X^3)
@@ -40,7 +40,7 @@ into irreducibles of $R$.
 
 <1>1. The ring $R$ is a domain whose units are exactly $F^\times$.
 
-::: proof
+::: {.proof}
 One has $R=F+X^2F[X]$. This set contains $0,1$ and
 is closed under subtraction. For $f,g\in R$, the
 coefficient of $X$ in $fg$ is $f_0g_1+f_1g_0=0$,
@@ -57,7 +57,7 @@ is forbidden by the defining coefficient condition.
 
 <1>2. The displayed factorizations are into nonassociate irreducibles.
 
-::: proof
+::: {.proof}
 The elements $X^2$ and $X^3$ are nonzero nonunits.
 If either were a product of two nonunits, both factors
 would be nonzero and have degree at least two by

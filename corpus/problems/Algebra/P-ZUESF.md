@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group of order $|G| = p^k m$, where $p$ is a prime. Let $n_p$ denote the number of Sylow $p$-subgroups of $G$.
 Suppose that $n_p$ divides an integer $q < p$.
 Prove that $n_p = 1$, and consequently every Sylow $p$-subgroup is normal in $G$.

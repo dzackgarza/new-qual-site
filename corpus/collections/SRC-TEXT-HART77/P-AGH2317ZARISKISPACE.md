@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A topological space $X$ is a **Zariski space** if it is noetherian and every nonempty closed irreducible subset has a unique generic point.
 
 For example, let $R$ be a discrete valuation ring and let $T = \operatorname{sp}(\Spec R)$.

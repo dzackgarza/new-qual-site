@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H\le G$. Prove that
 \[
 xH=yH\iff x^{-1}y\in H\iff y^{-1}x\in H.
 \]
 :::
 
-::: solution
+::: {.solution}
 Suppose first that $xH=yH$. Since $y\in yH=xH$, there is some $h\in H$ with
 \[
 y=xh.

@@ -23,15 +23,15 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \|\cdot\|)$ be a complex Banach space satisfying: $\|x + y\|^2 + \|x - y\|^2 = 2\|x\|^2 + 2\|y\|^2$.
 Prove that the space is a Hilbert space and the norm is induced by the inner product.
 Namely you need to construct an inner product $(\cdot, \cdot)$ on $X$ such that its induced norm is the same as $\|\cdot\|$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Construct the underlying real bilinear form.
-::: proof
+::: {.proof}
 Write
 \[
 q(x):=\|x\|^2
@@ -88,7 +88,7 @@ In particular $B$ is a real inner product on the underlying real vector space.
 :::
 
 <1>2. Record how multiplication by $i$ interacts with $B$.
-::: proof
+::: {.proof}
 Because the norm is a complex norm,
 \[
 q(ix)=\|ix\|^2=\|x\|^2=q(x).
@@ -112,7 +112,7 @@ B(ix,y)
 :::
 
 <1>3. Build the complex inner product.
-::: proof
+::: {.proof}
 Define
 \[
 \langle x,y\rangle
@@ -158,7 +158,7 @@ Therefore $\langle\cdot,\cdot\rangle$ is an inner product whose induced norm is 
 :::
 
 <1>4. Conclude completeness.
-::: proof
+::: {.proof}
 The original normed space $X$ is Banach by hypothesis, and the norm induced by the constructed inner product is the original norm. Hence $X$ is complete for the inner-product norm. Therefore
 \[
 \boxed{X\text{ is a Hilbert space}.}

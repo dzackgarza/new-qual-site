@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the function $f(z) = \cos(\sqrt{z})$ is entire.
 Determine the order, rank and genus of $f$.
 :::
 
-::: solution
+::: {.solution}
 The power series of cosine gives
 \[
 \cos(\sqrt z)=\sum_{k=0}^\infty\frac{(-1)^k z^k}{(2k)!},

@@ -15,12 +15,12 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Identify $\AA^2$ with $\AA^1 \times \AA^1$ in the natural way.
 Show that the Zariski topology on $\AA^2$ is not the product topology of the Zariski topologies on the two copies of $\AA^1$.
 :::
 
-::: solution
+::: {.solution}
 The diagonal $\Delta = V(x-y)$ is Zariski closed in $\AA^2$, and it is not closed in the product topology.
 
 Suppose it were.

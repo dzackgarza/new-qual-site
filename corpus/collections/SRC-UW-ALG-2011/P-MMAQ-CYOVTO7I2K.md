@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let `\begin{align*} R=\mathbb Z[x]/(x^2+x+1). \end{align*}`{=tex}
 
 - Answer the following questions with suitable justification.
@@ -31,7 +31,7 @@ Let `\begin{align*} R=\mathbb Z[x]/(x^2+x+1). \end{align*}`{=tex}
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The ring
 \[
 R=\mathbb Z[x]/(x^2+x+1)

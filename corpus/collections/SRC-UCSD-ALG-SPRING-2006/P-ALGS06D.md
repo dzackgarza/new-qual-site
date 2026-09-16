@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group.
 Let $r \geq 2$ be an integer.
 Assume that $G$ contains a non-trivial subgroup $H$ of index $[G:H] = r$.

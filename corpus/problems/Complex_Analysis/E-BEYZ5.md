@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $u,v$ are harmonic conjugates, then
 
 - $u^2-v^2$ is harmonic
@@ -23,7 +23,7 @@ Show that if $u,v$ are harmonic conjugates, then
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f=u+iv$, which is analytic.
 
 - $f^2$ is analytic, and $f^2 = (u+iv)^2 = u^2 - v^2 + i (2uv)$, which necessarily has harmonic components.

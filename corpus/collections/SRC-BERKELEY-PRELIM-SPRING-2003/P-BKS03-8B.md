@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $N=30030$, the product of the first six primes.
 How many integers $0\le x<N$ satisfy
 \[

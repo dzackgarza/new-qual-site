@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find the number of zeros in $\abs{z} \in (1, 2)$ of
 \[
 f(z) \da z^4 + 5z + 3
@@ -23,7 +23,7 @@ Note the strict inequality.
 
 :::
 
-:::{.solution}
+::: {.solution}
 On $\abs{z} = 1$:
 
 - Big: $M(z) = 5z$

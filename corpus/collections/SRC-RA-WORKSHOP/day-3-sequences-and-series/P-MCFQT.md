@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $a_n =\sqrt{n}\left(\sqrt{n+1}-\sqrt{n}\right)$.
 Prove that $\lim_{n\to\infty}a_n=1/2$.
 :::

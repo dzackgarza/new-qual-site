@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 4, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \cos x - \cos 4 x } { x ^ { 2 } } } d x$
 :::

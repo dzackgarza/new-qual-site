@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega$ be a nonempty set, let $\mathcal A$ be a sigma-algebra on $\Omega$, and let $A_1,A_2,\ldots\in\mathcal A$.
 Let
 \[
@@ -42,9 +42,9 @@ Let
 4. For normalized Lebesgue measure on $[0,1]$, compute the measure of the set of numbers whose first even digit in their decimal expansion is either $4$ or $8$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Express the infinitely-often set by countable unions and intersections.
-::: proof
+::: {.proof}
 A point belongs to infinitely many $A_n$ exactly when, for every $N$, it belongs to at least one $A_n$ with $n\ge N$.
 Hence
 \[
@@ -58,7 +58,7 @@ Since $\mathcal A$ is closed under countable unions and intersections,
 :::
 
 <1>2. Apply the first Borel--Cantelli lemma.
-::: proof
+::: {.proof}
 The hypothesis
 \[
 \sum_{n=1}^\infty\mu(A_n)=55<\infty
@@ -74,7 +74,7 @@ Since $\overline A=\limsup A_n$,
 :::
 
 <1>3. Identify the counting function as a monotone sum.
-::: proof
+::: {.proof}
 For each $N$, define
 \[
 f_N=\sum_{n=1}^N\mathbf1_{A_n}.
@@ -100,7 +100,7 @@ Hence
 :::
 
 <1>4. Compute the decimal-digit event.
-::: proof
+::: {.proof}
 Ignore the countable set of numbers having two decimal expansions; it has Lebesgue measure zero.
 For the remaining numbers, the decimal digits are independent and each digit $0,1,\ldots,9$ has probability $1/10$ under normalized Lebesgue measure.
 

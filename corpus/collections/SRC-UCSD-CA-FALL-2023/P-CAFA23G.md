@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine whether the following statements are true or false.
 Justify your answer.
 
@@ -23,7 +23,7 @@ Then the set of polynomials is dense in the space $H(G)$ of analytic functions o
 Then $u := \max\{u_1, u_2\}$ is also harmonic on $\mathbb{D}$.
 :::
 
-::: solution
+::: {.solution}
 (a) **True.** By Runge's theorem, polynomials are dense in $H(G)$ exactly
 when the complement of $G$ in the Riemann sphere is connected. Here
 \[

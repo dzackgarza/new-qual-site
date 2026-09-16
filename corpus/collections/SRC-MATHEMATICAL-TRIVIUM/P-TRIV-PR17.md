@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 17, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $\xi$ be a continuous random variable.
 
 (a) Prove that if $\mathbf { E } e ^ { \lambda \xi }$ is finite then

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let \(O_p(G)\) be the intersection of all Sylow \(p\)-subgroups of the finite group \(G\).
 Show that \(O_p(G)\trianglelefteq G\), that \(O_p(G)\) is a \(p\)-group, and that it contains every normal \(p\)-subgroup of \(G\).
 :::

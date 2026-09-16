@@ -25,17 +25,17 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a finitely generated $A$-module.
 Suppose that $M=\mathfrak mM$ for every maximal ideal $\mathfrak m$ of $A$.
 Show that $M=0$.
 :::
 
-::: solution
+::: {.solution}
 Assume for contradiction that $M\ne0$.
 
 <1>1. There is a maximal ideal $\mathfrak m$ such that $M_{\mathfrak m}\ne0$.
-::: proof
+::: {.proof}
 Choose $0\ne x\in M$. Its annihilator $\operatorname{Ann}(x)$ is a proper
 ideal, so it lies in a maximal ideal $\mathfrak m$. If $x/1=0$ in
 $M_{\mathfrak m}$, some $s\notin\mathfrak m$ would satisfy $sx=0$, forcing
@@ -46,12 +46,12 @@ $s\in\operatorname{Ann}(x)\subseteq\mathfrak m$, a contradiction.
 \[
 M_{\mathfrak m}=\mathfrak mA_{\mathfrak m}M_{\mathfrak m}.
 \]
-::: proof
+::: {.proof}
 Localization is exact and commutes with multiplication of a module by an ideal.
 :::
 
 <1>3. Nakayama's lemma gives $M_{\mathfrak m}=0$, contradiction.
-::: proof
+::: {.proof}
 The module $M_{\mathfrak m}$ is finitely generated over the local ring
 $A_{\mathfrak m}$, whose maximal ideal is $\mathfrak mA_{\mathfrak m}$.
 Apply Nakayama to <1>2.

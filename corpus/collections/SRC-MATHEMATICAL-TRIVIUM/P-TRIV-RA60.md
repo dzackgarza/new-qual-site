@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 60, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Give an example of the $C ^ { \infty } ( \mathbb { R } )$ function f (x) with the following properties:
 
 $$

@@ -16,7 +16,7 @@ audit:
   note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
 ---
 
-::: problem
+::: {.problem}
 If a finite homogeneous system of linear equations with rational coefficients has a nontrivial complex solution, need it have a nontrivial rational solution?
 Give a proof or a counterexample.
 :::

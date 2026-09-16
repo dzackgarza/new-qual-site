@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (a) State the Seifert–van Kampen Theorem.
 (b) Calculate the fundamental group of the space obtained by taking two copies of the torus $T = S^1 \times S^1$ and gluing them along a circle $S^1 \times \{p\}$.
 (c) Calculate the fundamental group of the Klein bottle $K$.
@@ -29,7 +29,7 @@ audit:
 (e) Calculate the fundamental group of the wedge sum $T^2 \vee \mathbb{RP}^2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. **Seifert--van Kampen.** If $X=U\cup V$, where $U,V,U\cap V$ are path-connected open sets containing a common basepoint $x_0$, then
 $$
 \pi_1(X,x_0)

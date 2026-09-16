@@ -25,7 +25,7 @@ audit:
   note: "Located all zeros of sine, distinguished tan's removable quotient points from the genuine poles at plus or minus pi, and proved both inequalities for the Taylor radius."
 ---
 
-::: problem
+::: {.problem}
 For $0<|z|<\pi/2$, let
 
 $$
@@ -37,13 +37,13 @@ a) Prove that f has a removable singularity at 0.
 b) What is the radius of convergence of the power series for f centered at 0? Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 The extension has value $f(0)=1$, and its Taylor series
 at zero has radius exactly $\boxed{\pi}$.
 
 <1>1. The quotient extends holomorphically throughout $|z|<\pi$.
 
-::: proof
+::: {.proof}
 Where the original quotient is defined,
 $$
 f(z)=\frac{z\cos z}{\sin z}.
@@ -68,7 +68,7 @@ convergence of its Taylor series throughout $|z|<\pi$
 
 <1>2. The genuine pole at $\pi$ prevents a larger Taylor disk.
 
-::: proof
+::: {.proof}
 At $z=\pi$, the denominator $\sin z$ has a simple zero,
 since $\cos\pi=-1\ne0$, whereas $z\cos z=-\pi\ne0$.
 In particular,

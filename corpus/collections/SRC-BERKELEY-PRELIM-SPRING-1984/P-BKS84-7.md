@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Find the number of roots of
 \[
 z^7-4z^3-11=0

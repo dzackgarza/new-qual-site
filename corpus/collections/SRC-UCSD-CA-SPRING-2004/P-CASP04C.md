@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ and $g$ be meromorphic functions in $\mathbb{C}$.
 Assume that $|f(z) + g(z)| \leq |g(z)|$ for every $z \in \mathbb{C}$ which is not a pole of either $f$ or $g$.
 Show that there is a constant $c$ with $|c + 1| \leq 1$ such that $f(z) = cg(z)$.
 :::
 
-::: solution
+::: {.solution}
 If $g\equiv0$, the inequality forces $f\equiv0$, and we may take $c=0$.
 Assume $g\not\equiv0$ and consider the meromorphic quotient
 \[

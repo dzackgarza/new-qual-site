@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 14, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let A be a real matrix with $( \operatorname* { d e t } A ) ^ { 2 } = 1$ . Give a conclusion about orthogonality of A.
 :::

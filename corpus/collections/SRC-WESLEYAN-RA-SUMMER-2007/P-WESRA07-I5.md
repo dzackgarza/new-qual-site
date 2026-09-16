@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give the definition of absolute continuity for one measure with respect to another.
 :::
 
-::: solution
+::: {.solution}
 Let $\mu$ and $\nu$ be measures on the same measurable space $(X,\mathcal A)$.
 We say that $\mu$ is absolutely continuous with respect to $\nu$, and write
 \[

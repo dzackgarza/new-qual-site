@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Do the calculation of (9.8.4) for the curve of (I, Ex.
 3.14). Show that you get an embedded point at the cusp of the plane cubic curve.
 :::

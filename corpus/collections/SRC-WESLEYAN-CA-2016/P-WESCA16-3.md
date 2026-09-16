@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute:
 
 (a) $\displaystyle\int_\gamma e^{2z^2}\,dz$, where $\gamma$ is the counterclockwise square of side length $2$ centered at $0$;

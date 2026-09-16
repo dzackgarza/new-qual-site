@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 3. Show that Wallis’s product formula can be written as
 
 $$

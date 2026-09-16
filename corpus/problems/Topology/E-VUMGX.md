@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Prove that $X, Y$ are Hausdorff iff $X\cross Y$ is Hausdorff.
 :::
 

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G = \operatorname{GL}_3(\mathbb{F}_p)$ for $p$ prime.
 (1) What is the order of $G$, and what is the order of a Sylow $p$-subgroup?
 (2) Give the standard matrix form for the canonical Sylow $p$-subgroup $P \le G$.
@@ -29,7 +29,7 @@ Let $G = \operatorname{GL}_3(\mathbb{F}_p)$ for $p$ prime.
 (4) Explain conjugacy of Sylow $p$-subgroups in terms of complete flags / eigenspaces.
 :::
 
-::: solution
+::: {.solution}
 We have
 \[
 |\operatorname{GL}_3(\mathbb F_p)|=(p^3-1)(p^3-p)(p^3-p^2)

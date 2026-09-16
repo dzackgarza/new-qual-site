@@ -31,7 +31,7 @@ $(M, d_M)$ and $(N, d_N)$, respectively. Prove that $S \times T$
 is a compact set in $(M \times N, d_{M \times N})$.
 :::
 
-:::{.proof}
+::: {.proof}
 *Proof.* To prove that $(M \times N, d_{M \times N})$ is a
 metric space we must prove that $d_{M\times N}$ is a metric on
 $M \times N$.
@@ -98,7 +98,7 @@ Therefore $d_{M \times N}$ is a metric on $M \times N$ and
 $(M \times N, d_{M\times N})$ is a metric space. ◻
 :::
 
-:::{.proof}
+::: {.proof}
 *Proof.* By part a we showed that $(M \times N, d_{M \times N})$
 is a metric space. Let $\{s_n,t_n\}$ be a sequence in
 $S \times T.$ Since $\{s_n\}$ is a sequence on a compact set $S$

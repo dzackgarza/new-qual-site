@@ -17,14 +17,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Show that a finite simple group cannot have a 2-dimensional irreducible representation over $\mathbb C$.
 
 > Hint: the determinant might prove useful.
 :::
 
 
-::: solution
+::: {.solution}
 Suppose, for contradiction, that \(G\) is finite simple and that
 \[
 \rho:G\longrightarrow \GL(V),\qquad \dim_{\mathbb C}V=2,

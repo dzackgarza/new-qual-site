@@ -19,7 +19,7 @@ audit:
   note: Stated the setup of exercise 20 and the Figure 3 contour and removed extraction residue, against Complex Analysis Problems 20-21 on page 15 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Repeat exercise 20 this time with $I_1 = \int_C \frac{z^p}{z^2+1}\,\mathrm{d}z$ and $I_2 = \int_0^\infty \frac{x^p}{x^2+1}\,\mathrm{d}x$ with $0 < p < 1$; the contour is the same as before.
 
 Exercise 20 of the source reads:

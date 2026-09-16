@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 
 1. $\sum kz^k$ diverges on $S^1$.
@@ -22,7 +22,7 @@ Show that
 3. $\sum k\inv z^k$ converges on $S^1\sm\ts{1}$ and diverges at $1$.
 :::
 
-:::{.solution}
+::: {.solution}
 
 1. Use that $\abs{z^k} = 1$ and $\sum c_kz^k < \infty \implies \abs{c_k} \to 0$, but $\abs{kz^k} = \abs{k} \to \infty$ on $S^1$.
 2. Use that absolutely convergent implies convergent, and $\sum \abs{k^{-2} z^k} = \sum \abs{k^{-2}}$ converges by the $p\dash$test.

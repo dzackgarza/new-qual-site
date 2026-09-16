@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with $1 \ne 0$, and let $S \subseteq R$ be a multiplicative set with $0 \notin S$.
 Consider the set of ideals of $R$ which are disjoint from $S$.
 Show that every maximal element of this set is a prime ideal.

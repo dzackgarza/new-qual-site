@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 The nilradical is contained in the Jacobson radical, i.e.
 \[
 \nilrad{R} \subseteq J(R)
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it is necessarily in every maximal ideal as well.
 :::

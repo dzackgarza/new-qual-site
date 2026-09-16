@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For a point $P$ on a variety $X$, let $\mfm$ be the maximal ideal of the local ring $\mco_P$.
 Define the *Zariski tangent space* $T_P(X)$ of $X$ at $P$ to be the dual $k\da$vector space of $\mfm/\mfm^2$.
 

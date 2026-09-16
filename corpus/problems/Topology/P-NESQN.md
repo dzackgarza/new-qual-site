@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the fundamental group $\pi_1(S^n, x_0)$ for $n \ge 2$ using the **Seifert–van Kampen Theorem** by decomposing the $n$-sphere $S^n$ into the complements of the north and south poles.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $N,S\in S^n$ be the north and south poles and set
 \[
 U=S^n\setminus\{S\},\qquad V=S^n\setminus\{N\}.

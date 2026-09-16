@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Consider the function $f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)$ for $z \in \mathbb{C} \backslash\{0\}$. Let $\mathbb{D}$ denote the open unit disc.
 
 a.
@@ -29,7 +29,7 @@ Show that there exists a map $g: \mathbb{C} \backslash[-1,1] \rightarrow \mathbb
 
 :::
 
-:::{.solution}
+::: {.solution}
 **Part a**:
 That $f: \CC\smz\to \DD\smz$ is injective: compute the derivative as
 \[

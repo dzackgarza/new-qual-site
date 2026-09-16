@@ -20,7 +20,7 @@ audit:
   date: 2026-08-30
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $a>b>0$ and calculate
 \[
 \int_0^{2\pi} {1 \over (a+b\cos(\theta))^2} \,d\theta

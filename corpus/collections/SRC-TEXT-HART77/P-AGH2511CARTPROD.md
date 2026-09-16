@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S$ and $T$ be two graded rings with $S_0 = T_0 = A$.
 Define the **Cartesian product** $\fiberprod{S}{A}{T}$ to be the graded ring $\bigoplus_{d \geq 0} S_d \tensor_A T_d$.
 If $X = \Proj S$ and $Y = \Proj T$, show that $\Proj(\fiberprod{S}{A}{T}) \cong \fiberprod{X}{A}{Y}$, and show that the sheaf $\OO(1)$ on $\Proj(\fiberprod{S}{A}{T})$ is isomorphic to $p_1^*(\OO_X(1)) \tensor p_2^*(\OO_Y(1))$ on $X \times Y$.

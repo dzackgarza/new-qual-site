@@ -15,7 +15,7 @@ audit:
   note: Checked against Review Problem 6 in the deterministic MinerU Flash extraction assets/attachments/Basic_Linear_Algebra_Review_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A=

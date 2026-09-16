@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find all entire functions that satisfy
 \[
 \abs{f(z)} \geq \abs{z} \quad \forall z\in \CC
@@ -26,14 +26,14 @@ Prove this list is complete.
 :::
 
 
-:::{.concept}
+::: {.concept}
 \envlist
 - If $f$ is bounded in a neighborhood of a singularity $z_0$, then $z_0$ is removable.
 
 :::
 
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Suppose $f$ is entire and define $g(z) \definedas {z \over f(z)}$.

@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $0<a<4$ and evaluate
 \[
 \int_0^\infty \frac{x^{\alpha-1}}{1+x^3} ~dx
 \]
 :::
 
-::: solution
+::: {.solution}
 The statement is ambiguous as printed: it assumes $0<a<4$ but the integrand
 contains the unrelated symbol $\alpha$.
 

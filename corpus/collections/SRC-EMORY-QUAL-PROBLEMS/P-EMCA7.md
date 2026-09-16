@@ -30,14 +30,14 @@ audit:
   note: "Compared with Complex Analysis (7) of Arango-Piñeros, Some quals problems; merged the duplicate P-MMAQ-ZRGWQKRMTX, whose solution assigned the value 0 to the first integral although its contour passes through the double pole."
 ---
 
-::: problem
+::: {.problem}
 Compute the integrals
 $$
 \int_{|z-2|=1} \frac{e^z}{z(z-1)^2}\,dz, \qquad \int_0^\infty \frac{\cos 2x}{x^2 + 2}\,dx.
 $$
 :::
 
-::: solution
+::: {.solution}
 The first integral is not defined as an ordinary contour
 integral, nor does its usual one-sided improper interpretation
 converge. The second integral is
@@ -48,7 +48,7 @@ $$
 <1>1. The first contour passes through a double pole,
 and its one-sided integral diverges there.
 
-::: proof
+::: {.proof}
 One has $|1-2|=1$, so the pole at $z=1$ lies on
 the path, not strictly inside it. Set $g(z)=e^z/z$,
 which is holomorphic near $1$. Direct calculation gives
@@ -84,7 +84,7 @@ at a double pole does not remove this obstruction.
 
 <1>2. The second integral has the displayed value.
 
-::: proof
+::: {.proof}
 Put $F(z)=e^{2iz}/(z^2+2)$. For $R>\sqrt2$,
 integrate over the interval $[-R,R]$ followed by
 the counterclockwise upper semicircle $\Gamma_R$.

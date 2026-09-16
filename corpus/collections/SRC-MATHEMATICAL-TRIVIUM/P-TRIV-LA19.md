@@ -19,7 +19,7 @@ audit:
   note: Restored the garbled Pauli matrices from Linear Algebra Problem 19 on page 3 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Consider the Pauli matrices,
 $$
 \sigma_1 = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}, \quad

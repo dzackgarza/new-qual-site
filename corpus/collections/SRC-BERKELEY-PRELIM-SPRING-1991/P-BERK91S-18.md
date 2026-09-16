@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be real-valued on an open interval containing $a$, and suppose $f$ is differentiable at $a$. If $(x_n)$ is increasing, $(y_n)$ is decreasing, and both sequences converge to $a$, prove that
 \[
 \lim_{n\to\infty}

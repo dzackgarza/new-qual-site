@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:[0,1]\to\mathbb C$ be continuous. Show that
 \[
 g(z)=\int_0^1 f(t)e^{tz^2}\,dt

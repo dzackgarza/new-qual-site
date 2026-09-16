@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that a group of order $p^2 q^2$ has a normal Sylow subgroup.
 :::
 

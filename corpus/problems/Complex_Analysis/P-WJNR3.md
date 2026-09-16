@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_0^\infty {\sin^3(x) \over x^3} \, dx
 .\]
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 I=\int_0^\infty\frac{\sin^3x}{x^3}\,dx.

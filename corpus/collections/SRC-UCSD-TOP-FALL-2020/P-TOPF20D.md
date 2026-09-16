@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $n \geq 1$, show that one can not cover the complex projective space $\mathbb{CP}^n$ by $n$ open subsets $U_1, U_2, \cdots, U_n$ such that each $U_i$ is contractible.
 :::
 

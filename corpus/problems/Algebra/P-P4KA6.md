@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H,K\trianglelefteq G$ satisfy
 \[
 H\cap K=\{e\},\qquad HK=G.

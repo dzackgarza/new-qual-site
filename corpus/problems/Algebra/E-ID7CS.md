@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 7. If $F$ is some (not necessarily Galois) field extension over $K$ such that $[F: K]=6$ and Aut $_{K} F \simeq S_{3}$, then $F$ is the splitting field of an irreducible cubic over $K[x]$.
 :::
 

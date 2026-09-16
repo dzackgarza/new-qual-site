@@ -24,7 +24,7 @@ audit:
   note: Verified the normalizer condition directly from the upper central series and deduced normality of maximal subgroups.
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a nilpotent group.
 
 (a) Prove that for every proper subgroup $H$ of $G$, $H \neq N_G(H)$.

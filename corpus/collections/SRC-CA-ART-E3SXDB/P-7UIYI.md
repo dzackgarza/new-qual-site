@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a_n\neq 0$ and show that
 \[
 \lim_{n\to \infty} {\abs{a_{n+1}} \over \abs{a_n}} = L \implies \lim_{n\to\infty} \abs{a_n}^{1\over n} = L

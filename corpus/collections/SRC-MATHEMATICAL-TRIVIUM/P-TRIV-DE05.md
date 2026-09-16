@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 5, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve $y ^ { \prime \prime } - y ^ { \prime } - 2 y = 0$
 :::

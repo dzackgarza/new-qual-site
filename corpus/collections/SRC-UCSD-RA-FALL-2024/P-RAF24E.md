@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an LCH space.
 (a) If $\mu$ is a Radon measure on $X$ satisfying $\mu(X) = \infty$, prove that there is a non-negative function $f \in C_0(X)$ satisfying $\int f\, d\mu = \infty$.
 
 (b) Prove that every positive linear functional on $C_0(X)$ is bounded.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Construct a nonnegative $C_0$ function with infinite integral when $\mu(X)=\infty$.
-::: proof
+::: {.proof}
 Because $\mu$ is Radon and $\mu(X)=\infty$, inner regularity implies that for every $n\ge1$ there is a compact set $K_n\subset X$ such that
 \[
 \mu(K_n)\ge 4^n.
@@ -75,7 +75,7 @@ Thus the required function exists.
 :::
 
 <1>2. Reduce unboundedness of a positive functional to positive test functions.
-::: proof
+::: {.proof}
 Let $L:C_0(X)\to\mathbb C$ be positive. On real-valued functions, positivity implies monotonicity:
 \[
 g\le h\quad\Longrightarrow\quad L(g)\le L(h).
@@ -102,7 +102,7 @@ For a complex-valued $C_0(X)$, apply the same argument to real and imaginary par
 :::
 
 <1>3. Derive a contradiction from a uniformly convergent positive series.
-::: proof
+::: {.proof}
 Set
 \[
 h_n:=2^{-n}g_n.

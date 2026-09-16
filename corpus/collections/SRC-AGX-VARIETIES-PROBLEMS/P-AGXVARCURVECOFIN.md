@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the Zariski topology on a curve is the cofinite topology.
 :::

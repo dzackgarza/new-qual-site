@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that every locally free sheaf of finite rank on $\PP^1$ is isomorphic to a direct sum of invertible sheaves.
 
 Hint: Choose a subinvertible sheaf of maximal degree, and use induction on the rank.

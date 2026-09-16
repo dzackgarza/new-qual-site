@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 R = k[x_1, x_2, x_3, x_4] / \gens{x_1 x_4 - x_2 x_3}

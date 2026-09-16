@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: exercise
+::: {.exercise}
 Let $A$ be a compact subspace of a Hausdorff space $X$.
 Show that $A$ is closed.
 :::

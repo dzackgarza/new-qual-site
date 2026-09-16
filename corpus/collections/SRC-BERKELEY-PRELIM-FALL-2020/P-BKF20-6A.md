@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a real symmetric positive definite $n\times n$ matrix.
 
 (a) Show there is an upper triangular matrix $R$ with positive diagonal entries such that $R^TR=A$.

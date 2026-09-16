@@ -22,7 +22,7 @@ audit:
 Show that every order topology is Hausdorff.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that any linearly ordered set $(X, <)$ equipped with the order topology is a Hausdorff ($T_2$) space.
 
 <1>1. Setup:

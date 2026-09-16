@@ -26,7 +26,7 @@ audit:
   note: Used the tensor-product universal property for existence and Schur triangularization for the determinant formula.
 ---
 
-::: problem
+::: {.problem}
 Given vector spaces $V$ and $W$ over the complex numbers, suppose that $\phi \colon V \to V$ and $\psi \colon W \to W$ are $\mathbb{C}$-linear transformations.
 
 (i) Show that there is a unique linear transformation

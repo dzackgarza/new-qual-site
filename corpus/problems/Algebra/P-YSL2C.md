@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Classify the conjugacy classes in $\SL_2(\RR)$.
 :::
 
-::: solution
+::: {.solution}
 Let $A\in\SL_2(\RR)$ and set
 \[
 t=\operatorname{tr}(A).

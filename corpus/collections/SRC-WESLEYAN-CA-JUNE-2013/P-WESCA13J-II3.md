@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. This is the deterministic Flash reading. As written it is false (for example $f(z)=z^2$ admits the entire square root $g(z)=z$), so no unrecorded correction has been made.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be entire and suppose the function
 \[
 g(z)=\sqrt{f(z)}

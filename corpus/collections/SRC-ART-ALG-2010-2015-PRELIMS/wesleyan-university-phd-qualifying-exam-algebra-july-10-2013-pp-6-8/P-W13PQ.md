@@ -25,13 +25,13 @@ audit:
   note: "Checked the full Sylow statement, both unique-subgroup deductions, commutation via the intersection, and the exact order of the cyclic generator."
 ---
 
-::: problem
+::: {.problem}
 a. State all parts of Sylow's Theorem.
 
 b. Show that if $0 < p < q$ are primes and $p \nmid q - 1$, then any group of order $pq$ is cyclic.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Sylow's theorems have the following form.
 
 Let $H$ be a finite group and let $\ell$ be prime. Write
@@ -49,7 +49,7 @@ In particular, $S$ is normal exactly when $n_\ell=1$ [@DF04].
 <1>2. Under the hypotheses of part (b), both Sylow subgroups
 of $G$ are normal.
 
-::: proof
+::: {.proof}
 For the Sylow $q$-subgroups, one has $n_q\mid p$ and
 $n_q\equiv1\pmod q$. Thus $n_q=1$ or $p$. Since $p<q$,
 the latter is impossible. The Sylow $q$-subgroup $Q$ is unique.
@@ -61,7 +61,7 @@ normality because conjugation preserves subgroup orders.
 
 <1>3. The group $G$ is cyclic of order $pq$.
 
-::: proof
+::: {.proof}
 Lagrange's theorem gives $P\cap Q=\{1\}$, since its order
 divides both distinct primes. For $x\in P$ and $y\in Q$,
 normality of both subgroups puts the commutator

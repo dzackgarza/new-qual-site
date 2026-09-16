@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $V$ be finite-dimensional and let $A,B\in\operatorname{End}(V)$ satisfy
 \[
 A^2=B^2=0,

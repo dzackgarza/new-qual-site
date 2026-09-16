@@ -24,7 +24,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_n$ denotes the set of $n\times n$ matrices with complex components, $\mathbb{C}^n$ is the set of column vectors with $n$ complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) State, but do not prove, the Schur decomposition theorem for a matrix $A\in M_n$.

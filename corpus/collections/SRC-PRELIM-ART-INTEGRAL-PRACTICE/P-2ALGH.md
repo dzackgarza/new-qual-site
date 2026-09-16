@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 3. $\displaystyle \int \ln ^2 (x) ~dx = \color{blue} {2 x - 2 x \ln (x) + x \ln ^2 (x)}​$
 
 - **Solution:** $u = \ln ^2 (x)​$, $v = x​$, $du = \frac {2 \ln (x)}{x} ~dx​$, $dv = dx​$

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\Phi = X^2 + X + 1$ be the third cyclotomic polynomial.
 
 (a) Prove that $\Phi$ is reducible over $\mathbb{Z}_7$ and give a complete factorization.

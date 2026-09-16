@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1((0,\infty) \times \mathbb{R})$ and for $n \in \mathbb{N}$ define $g_n : \mathbb{R} \to \mathbb{R}$ by
 $$
 g_n(x) = \int_0^\infty e^{-\lambda} f(n\lambda, x)\,d\lambda.
@@ -32,7 +32,7 @@ Prove that $g_n$ converges to $0$ almost everywhere and in $L^1(\mathbb{R})$.
 :::
 
 
-::: solution
+::: {.solution}
 Make the change of variables $t=n\lambda$. Then
 \[
 g_n(x)

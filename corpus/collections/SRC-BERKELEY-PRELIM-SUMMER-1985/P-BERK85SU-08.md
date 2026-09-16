@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:[a,b]\to\mathbb R$ be continuous. Given $\varepsilon>0$, prove that there is a polynomial $p$ such that
 \[
 p(a)=f(a),\qquad p'(a)=0,

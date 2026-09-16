@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 4. Using the generating formula for $p ( n )$ , prove the recurrence formula
 
 $$
@@ -28,7 +28,7 @@ The next two exercises give elementary results related to the asymptotics of the
 More refined statements can be found in Appendix A.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 P(q)=\sum_{n=0}^\infty p(n)q^n

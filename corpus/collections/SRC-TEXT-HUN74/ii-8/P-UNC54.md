@@ -29,7 +29,7 @@ audit:
 Show that if $N$ is a simple normal subgroup of a group $G$ and $G/N$ has a composition series, then $G$ has a composition series.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 G/N=\overline G_0\trianglerighteq\overline G_1
@@ -46,7 +46,7 @@ be the quotient map. Put $G_i=\pi^{-1}(\overline G_i)$.
 G=G_0\trianglerighteq G_1\trianglerighteq\cdots
 \trianglerighteq G_r=N.
 \]
-::: proof
+::: {.proof}
 Since $\overline G_{i+1}\trianglelefteq\overline G_i$, the preimage
 $G_{i+1}$ is normal in $G_i$. Also
 \[
@@ -57,7 +57,7 @@ G_r=\pi^{-1}(\{N\})=N.
 :::
 
 <1>2. Every factor $G_i/G_{i+1}$ is simple.
-::: proof
+::: {.proof}
 The restriction of $\pi$ induces an isomorphism
 \[
 G_i/G_{i+1}\cong
@@ -72,7 +72,7 @@ because the given series of $G/N$ is a composition series.
 G=G_0\trianglerighteq\cdots\trianglerighteq G_r=N
 \trianglerighteq\{e\}.
 \]
-::: proof
+::: {.proof}
 By <1>2 all factors above $N$ are simple. The final factor
 \[
 N/\{e\}\cong N

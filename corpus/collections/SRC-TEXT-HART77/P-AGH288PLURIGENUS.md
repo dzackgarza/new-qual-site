@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a projective nonsingular variety over $k$.
 For any $n > 0$ define the **$n$th plurigenus of $X$** to be
 \[

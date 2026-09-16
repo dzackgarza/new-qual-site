@@ -22,14 +22,14 @@ audit:
   note: "Used the canonical surjection from R to a cyclic module, identified its kernel as a principal ideal, and applied the module first isomorphism theorem."
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a cyclic module over a principal ideal domain $R$.
 Prove that $M\cong R/(a)$ as an $R$-module for some $a\in R$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A chosen cyclic generator gives a surjective homomorphism from $R$.
-::: proof
+::: {.proof}
 Since $M$ is cyclic, choose $m\in M$ with
 $$
 M=Rm.
@@ -44,7 +44,7 @@ This is an $R$-module homomorphism. It is surjective because every element of $M
 :::
 
 <1>2. The kernel is principal, so the first isomorphism theorem gives the result.
-::: proof
+::: {.proof}
 The kernel
 $$
 \ker\Phi=\{r\in R:rm=0\}

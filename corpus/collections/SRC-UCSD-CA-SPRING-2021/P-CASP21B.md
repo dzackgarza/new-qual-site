@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a proper closed arc of the unit circle $|z| = 1$.
 
 (i) Is there a sequence of polynomials $P_n(z)$ such that $P_n(z) \to \bar{z}$ uniformly in $K$?
@@ -24,7 +24,7 @@ Let $K$ be a proper closed arc of the unit circle $|z| = 1$.
 Please justify your answers.
 :::
 
-::: solution
+::: {.solution}
 (i) Yes. Since $K$ is a proper closed arc of the unit circle, its complement
 in $\mathbb C$ is connected and $K$ has empty interior. The function
 $z\mapsto\bar z$ is continuous on $K$. By Mergelyan's theorem, every

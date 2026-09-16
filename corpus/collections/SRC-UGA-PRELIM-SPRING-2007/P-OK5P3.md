@@ -31,7 +31,7 @@ b) By using Green's theorem or the general Stokes' theorem.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The path $\gamma$ is the positively oriented boundary of the quarter disk
 \[
 D=\{(x,y):x\ge0,\ y\ge0,\ x^2+y^2\le4\}.

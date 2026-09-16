@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be the group of $2\times2$ determinant-one matrices over the four-element field $\mathbb F_4$, and let $S$ be the set of one-dimensional subspaces of $\mathbb F_4^2$. Show that the natural action of $G$ on $S$ is faithful.
 :::

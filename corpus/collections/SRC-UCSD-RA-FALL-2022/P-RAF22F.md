@@ -25,15 +25,15 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose that $\mu$ is a Radon measure on $X$ (a locally compact Hausdorff space).
 Assume $\varphi \in L^1(\mu)$ and $\varphi \geq 0$.
 Prove that $\nu(E) = \int_E \varphi \, d\mu$ is a Radon measure.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The measure $\nu$ is finite, hence locally finite.
-::: proof
+::: {.proof}
 Since $\varphi\ge0$ and $\varphi\in L^1(\mu)$,
 \[
 \nu(X)=\int_X\varphi\,d\mu<\infty.
@@ -42,7 +42,7 @@ Thus $\nu$ is a finite positive Borel measure, in particular finite on every com
 :::
 
 <1>2. Prove inner regularity.
-::: proof
+::: {.proof}
 Fix a Borel set $E\subset X$ and $\varepsilon>0$. Since
 \[
 \{\varphi>0\}=\bigcup_{m,n\ge1}
@@ -90,7 +90,7 @@ so $\nu$ is inner regular.
 :::
 
 <1>3. Deduce outer regularity.
-::: proof
+::: {.proof}
 Let $E$ be Borel and let $\varepsilon>0$. By Step 2 applied to $X\setminus E$, choose compact
 \[
 K\subset X\setminus E

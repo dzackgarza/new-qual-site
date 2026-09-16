@@ -36,7 +36,7 @@ f.
 $\operatorname{tr} A=1 ?$
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - We'll use rank-nullity throughout: $\rank M + \dim \ker M = 7$.

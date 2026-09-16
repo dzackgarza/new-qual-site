@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a variety of dimension $r$ in $\PP^n$, with Hilbert polynomial $P_Y$.
 Define the *arithmetic genus* of $Y$ to be
 $$

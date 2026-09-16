@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f,g$ be integrable functions on a measure space $(X,\mathcal B,\mu)$.
 Suppose that
 \[
@@ -31,7 +31,7 @@ for every $A\in\mathcal B$.
 Prove that $f=g$ almost everywhere.
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 h=f-g\in L^1(\mu).

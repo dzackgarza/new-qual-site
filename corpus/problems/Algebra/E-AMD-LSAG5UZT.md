@@ -28,7 +28,7 @@ Prove that $G$ has a normal subgroup $N$ of order $p^2$.
   > Hint: Sylow and semidirect products.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** produce a normal $N \normal G$ with $\abs N = p^2$ by pulling back a subgroup of the abelian quotient $G/\gens{z}$ for a central $z$ of order $p$, and then classify $G$ by the order of an element $h$ of largest order.
 
 <1>1. $G$ has a normal subgroup of order $p^2$.

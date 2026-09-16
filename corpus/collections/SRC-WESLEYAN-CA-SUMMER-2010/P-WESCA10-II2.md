@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 (a) Suppose $f$ has a simple pole at $a$ and $g$ is analytic near $a$.
 Prove
 \[

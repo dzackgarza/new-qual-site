@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the following integrals:
 
 - $\displaystyle \int_0^\infty \frac{x^{a-1}}{1 + x^n} \, dx$, $0< a < n$
@@ -24,7 +24,7 @@ Compute the following integrals:
 - $\displaystyle \int_0^\infty \frac{\log x}{(1 + x^2)^2}\, dx$
 :::
 
-::: solution
+::: {.solution}
 For
 \[
 I(a,n)=\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx,

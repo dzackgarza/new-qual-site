@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a nonsingular curve over an algebraically closed field $k$.
 We show that $K(X) \cong \Pic X \oplus \ZZ$ in several steps.
 

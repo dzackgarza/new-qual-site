@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Let $H, K \leq G$ be subgroups with $H\cong K$.
   Is it true that $G/H \cong G/K$?
 

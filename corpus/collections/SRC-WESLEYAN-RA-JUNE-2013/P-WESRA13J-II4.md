@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal B,\mu)$ be a measure space and let $f\ge0$ be integrable.
 
 (a) Prove that for every $a>0$,

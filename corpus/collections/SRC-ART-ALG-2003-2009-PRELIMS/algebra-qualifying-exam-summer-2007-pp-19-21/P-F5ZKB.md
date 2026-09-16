@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 a. Show that a finite field must have exactly $p^n$ elements for some prime $p$ and some positive integer $n$.
 
 b. List all the subfields of the field of size $3^{12}$.
@@ -26,7 +26,7 @@ b. List all the subfields of the field of size $3^{12}$.
 c. Give an example of an infinite field of characteristic $3$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that finite fields have prime-power cardinality, determine all subfields of $\mathbb{F}_{3^{12}}$, and provide an explicit example of an infinite field of characteristic $3$.
 
 <1>1. Part (a): Any finite field $F$ has cardinality $|F| = p^n$ for a prime $p$ and integer $n \ge 1$.

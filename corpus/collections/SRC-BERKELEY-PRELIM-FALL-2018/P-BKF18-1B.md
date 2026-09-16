@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Estimate $\pi^2/6=\sum_{n=1}^{\infty}1/n^2$ by the sum of the first $N$ terms.
 What is the smallest $N$ such that the error is at most $10^{-6}$?
 Use the integral test.

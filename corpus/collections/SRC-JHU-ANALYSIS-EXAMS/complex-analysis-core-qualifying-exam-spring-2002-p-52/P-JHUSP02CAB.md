@@ -35,14 +35,14 @@ $$
 Where $a > 1$
 :::
 
-::: solution
+::: {.solution}
 The value is
 $$
 \boxed{\frac{2\pi}{a\sqrt{a^2+1}}}.
 $$
 
 <1>1. Reduce the problem to the standard integral $\int_0^{2\pi}(c+\cos t)^{-1}dt$.
-::: proof
+::: {.proof}
 Using $\cos^2x=(1+\cos2x)/2$ and setting
 $$
 c=2a^2+1>1,
@@ -62,7 +62,7 @@ because the last integrand is $2\pi$-periodic.
 
 <1>2. The unit-circle contour gives
 $\int_0^{2\pi}(c+\cos t)^{-1}dt=2\pi/\sqrt{c^2-1}$.
-::: proof
+::: {.proof}
 Put $z=e^{it}$. Then $dt=dz/(iz)$ and
 $\cos t=(z+z^{-1})/2$, so
 $$
@@ -93,7 +93,7 @@ $$
 :::
 
 <1>3. Substitute $c=2a^2+1$.
-::: proof
+::: {.proof}
 By steps <1>1 and <1>2,
 $$
 \int_0^{2\pi}\frac{dx}{a^2+\cos^2x}

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $g$ be a torsion element of $\mathrm{GL}_n(\mathbb{Q})$, i.e. $g^m = 1$ for some positive integer $m$.
 Let us assume $m$ is the order of $g$, i.e. $g^{m'} \neq 1$ for $0 < m' < m$.
 

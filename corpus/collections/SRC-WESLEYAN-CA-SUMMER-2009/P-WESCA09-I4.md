@@ -15,7 +15,7 @@ audit:
   note: Checked against Section I, item 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 True or false: satisfying the Cauchy–Riemann equations on a domain $D$ is sufficient to conclude that a function is analytic on $D$.
 Justify your answer.
 :::

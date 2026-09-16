@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $\zeta_n := e^{\frac{2\pi i}{n}} \in \mathbb{C}$, and $K_n := \mathbb{Q}[\zeta_n] \cap \mathbb{R}$.
 
 (a) Prove that $K_n/\mathbb{Q}$ is a Galois extension.

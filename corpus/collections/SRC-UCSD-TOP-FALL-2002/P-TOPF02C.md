@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 (a) Construct a space $Y$ with the following properties:
 $$
 H_k(Y; \mathbb{Z}) = \begin{cases} \mathbb{Z}_4 & \text{if } k = 2 \\ \mathbb{Z} & \text{if } k = 0 \\ 0 & \text{otherwise.} \end{cases}

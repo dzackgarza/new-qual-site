@@ -39,10 +39,10 @@ c. A commutative ring $R$, and a torsion-free $R$-module $M$, such that $M$ is n
 d. A commutative ring $R$, and two non-trivial $R$-modules $M$ and $N$ such that $M \otimes_R N \cong \{0\}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For part (a), take $D=\mathbb Z$.
 
-::: proof
+::: {.proof}
 The integers form an integral domain. A nonzero ideal $I$
 contains a positive integer; let $d$ be its least positive
 element. For $a\in I$, Euclidean division writes
@@ -54,7 +54,7 @@ field, because $2$ has no multiplicative inverse in $\mathbb Z$.
 
 <1>2. For part (b), take $D=\mathbb Z[x]$.
 
-::: proof
+::: {.proof}
 The integers are a UFD, and the polynomial ring over a
 UFD is a UFD by Gauss's lemma [@DF04]. Thus $D$ is a UFD.
 The ideal $I=(2,x)$ is proper: the homomorphism
@@ -72,7 +72,7 @@ $D$ is not a PID.
 
 <1>3. For part (c), take $R=\mathbb Z$ and $M=\mathbb Q$.
 
-::: proof
+::: {.proof}
 For $0\ne n\in\mathbb Z$, the equation $nq=0$ in
 $\mathbb Q$ implies $q=0$, so $M$ is torsion-free.
 But $2M=M$, since $q=2(q/2)$ for every rational $q$.
@@ -87,7 +87,7 @@ is nonzero and equals twice itself, it cannot be free.
 $R=\mathbb Z$, $M=\mathbb Z/2\mathbb Z$, and
 $N=\mathbb Z/3\mathbb Z$.
 
-::: proof
+::: {.proof}
 Both modules are nonzero. For any elementary tensor
 $t=a\otimes b$, the tensor relations give
 $2t=(2a)\otimes b=0$ and $3t=a\otimes(3b)=0$.

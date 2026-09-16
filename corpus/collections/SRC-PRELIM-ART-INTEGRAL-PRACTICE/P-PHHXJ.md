@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\sqrt{1-x^2}\,dx,
@@ -34,7 +34,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 For the antiderivative, set $x=\sin u$. Then $dx=\cos u\,du$ and
 \[
 \sqrt{1-x^2}=\cos u

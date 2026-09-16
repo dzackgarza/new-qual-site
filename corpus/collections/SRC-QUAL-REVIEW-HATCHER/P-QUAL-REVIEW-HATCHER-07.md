@@ -23,6 +23,6 @@ $$S^2,\ T_1,\ T_2,\ \ldots,\ \RR P^2,\ \RR P^2\#\RR P^2,\ \RR P^2\#\RR P^2\#\RR 
 Determine which of these 2-manifolds is homeomorphic to the space $Y$ which is constructed similarly to $X$, but where two of the tori making up the "links" in the circular chain are replaced by $\RR P^2$'s.
 :::
 
-::: remark
+::: {.remark}
 The source states this problem as "Repeat the above problem for the space $Y$ which is constructed similarly to $X$, but where two of the tori making up the 'links' in the circular chain are replaced by $\RR P^2$'s," referring to [[P-QUAL-REVIEW-HATCHER-06|practice problem 6]].
 :::

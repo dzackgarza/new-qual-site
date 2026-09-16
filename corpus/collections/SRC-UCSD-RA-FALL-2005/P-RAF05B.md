@@ -25,13 +25,13 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Find Lebesgue measurable sets $A, B \subset \mathbb{R}^2$ such that $A + B$ is not Lebesgue measurable.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose a nonmeasurable subset of the real line.
-::: proof
+::: {.proof}
 Let $V\subset\mathbb R$ be a non-Lebesgue-measurable set, for example a Vitali set. Define
 \[
 A:=V\times\{0\},
@@ -42,7 +42,7 @@ Both $A$ and $B$ are subsets of one-dimensional affine subspaces of $\mathbb R^2
 :::
 
 <1>2. Compute the Minkowski sum.
-::: proof
+::: {.proof}
 Every element of $A+B$ has the form
 \[
 (v,0)+(0,t)=(v,t)
@@ -54,7 +54,7 @@ A+B=V\times\mathbb R.
 :::
 
 <1>3. Show that $V\times\mathbb R$ is not Lebesgue measurable.
-::: proof
+::: {.proof}
 Suppose for contradiction that $V\times\mathbb R$ were Lebesgue measurable in $\mathbb R^2$. Then
 \[
 E:=(V\times\mathbb R)\cap(\mathbb R\times[0,1])

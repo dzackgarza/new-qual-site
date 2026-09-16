@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 33, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Show that $\delta ( \alpha x ) = \frac { 1 } { \alpha } \delta ( x )$ , and more generally, $\delta ( f ( x ) ) = \sum _ { i } { \frac { \delta ( x - x _ { i } ) } { | f ^ { \prime } ( x _ { i } ) | } }$ where $x _ { i }$ are the root of f , i.e. $f ( x _ { i } ) = 0$
 :::

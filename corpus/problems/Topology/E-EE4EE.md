@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 - What is an interior point?
   An isolated point?
   A limit point?

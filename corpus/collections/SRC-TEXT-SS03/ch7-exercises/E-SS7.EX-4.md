@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 4. Suppose $\{ a _ { n } \} _ { n = 1 } ^ { \infty }$ is a sequence of complex numbers such that $a _ { n } = a _ { m }$ if $n \equiv m$ mod $q$ for some positive integer $q .$ Define the Dirichlet L-series associated to $\left\{ a _ { n } \right\}$ by
 
 $$
@@ -37,7 +37,7 @@ $$
 Prove as a result that $L ( s )$ is continuable into the complex plane, with the only possible singularity a pole at $s = 1$ . In fact, $L ( s )$ is regular at $s = 1$ if and only if $\textstyle \sum _ { m = 0 } ^ { q - 1 } a _ { m } = 0$ . Note the connection with the Dirichlet $L ( s , \chi )$ series, taken up in Book I, Chapter 8, and that as a consequence, $L ( s , \chi )$ is regular at $s = 1$ if and only if $\chi$ is a non-trivial character.
 :::
 
-::: solution
+::: {.solution}
 Because $a_n$ has period $q$,
 \[
 \sum_{n=1}^\infty a_ne^{-nx}

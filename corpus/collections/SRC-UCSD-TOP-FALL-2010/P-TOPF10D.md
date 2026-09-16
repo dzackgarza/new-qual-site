@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a space whose integral homology groups are $\mathbb{Z}$, $0$, $\mathbb{Z}_8$ in dimensions $0$, $1$, $2$, and zero otherwise.
 Compute the integral homology groups of $X \times \mathbb{RP}^3$.
 :::

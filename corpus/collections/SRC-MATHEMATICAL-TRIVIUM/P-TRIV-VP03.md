@@ -15,6 +15,6 @@ audit:
   note: Checked against Variational Principle, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 "Brachistochrone curve" On a vertical plane $x O y$ consider the two points A and B. Find a curve $y = y ( x )$ connecting these points and such that an ideal pointlike body, that starts at rest at the point A and moves along this curve without friction under constant gravity, reaches the point B within the shortest time.
 :::

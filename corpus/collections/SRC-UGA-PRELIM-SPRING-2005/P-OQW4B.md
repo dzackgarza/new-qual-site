@@ -21,7 +21,7 @@ Find all cube roots of $2-2i$ and express them in the standard form $a + bi$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Write $2-2i$ in polar form as
 \[
 2-2i=2\sqrt2\,e^{-i\pi/4}.

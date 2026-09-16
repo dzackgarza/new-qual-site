@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be an affine morphism of schemes (II, Ex.
 5.17) with $X$ noetherian, and let $\mcf$ be a quasi-coherent sheaf on $X$.
 Show that the hypotheses of (Ex.

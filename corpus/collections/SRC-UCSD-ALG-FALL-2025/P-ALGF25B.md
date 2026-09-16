@@ -25,7 +25,7 @@ audit:
   note: Re-derived the normalizer argument and checked that minimality is used only after producing a distinct Sylow intersection contained in P1 cap P2.
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group.
 Let $\operatorname{Syl}_p(G)$ be the set of all Sylow $p$-subgroups of $G$.
 Suppose $P_1, P_2 \in \operatorname{Syl}_p(G)$ are distinct and $P_1 \cap P_2$ is minimal among all the subgroups that are the intersection of two distinct Sylow $p$-subgroups.

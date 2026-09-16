@@ -10,6 +10,6 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Find all commutative rings $R$ with identity such that $R$ has a unique maximal ideal and its group of units is trivial.
 :::

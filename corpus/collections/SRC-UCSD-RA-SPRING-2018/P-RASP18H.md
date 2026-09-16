@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\ell^\infty(\mathbb{N})$ be the Banach space of bounded complex sequences $x = (x_1, x_2, x_3, \ldots)$ such that $\|x\|_\infty = \sup_n |x_n| < \infty$ and let $V$ be the subspace defined as:
 $$
 V = \left\{x \in \ell^\infty(\mathbb{N}) : \lim_{n \to \infty} \frac{1}{n}(x_1 + x_2 + \cdots + x_n) \text{ exists in } \mathbb{C}\right\}.
@@ -39,9 +39,9 @@ Let $\psi \in \ell^\infty(\mathbb{N})^*$ be any continuous linear functional suc
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Extend the Cesaro-limit functional by Hahn--Banach.
-::: proof
+::: {.proof}
 Define
 \[
 L:V\to\mathbb C,
@@ -69,7 +69,7 @@ with the same norm. Hence
 :::
 
 <1>2. Prove shift invariance of every such extension.
-::: proof
+::: {.proof}
 Let
 \[
 x=(x_1,x_2,\ldots),
@@ -94,7 +94,7 @@ for every \(x\in\ell^\infty\).
 :::
 
 <1>3. Rule out representation by an \(\ell^1\) sequence.
-::: proof
+::: {.proof}
 Suppose there were \(y=(y_n)\in\ell^1\) such that
 \[
 \psi(x)=\sum_{n=1}^\infty x_ny_n

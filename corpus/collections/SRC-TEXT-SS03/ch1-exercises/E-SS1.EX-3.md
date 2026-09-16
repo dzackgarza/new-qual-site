@@ -15,12 +15,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 3. With $\omega = s e ^ { i \varphi }$ , where $s \geq 0$ and $\varphi \in \mathbb { R }$ , solve the equation $z ^ { n } = \omega$ in C where n is a natural number.
    How many solutions are there?
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \omega=se^{i\varphi},\qquad s\ge0.

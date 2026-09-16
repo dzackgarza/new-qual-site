@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 H_{ij}=\int_0^1t^it^j\,dt,\qquad0\le i,j\le n,

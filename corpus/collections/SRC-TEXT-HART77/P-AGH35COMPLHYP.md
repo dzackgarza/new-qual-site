@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 By abuse of language, a variety **is affine** if it is isomorphic to an affine variety.
 If $H \subseteq \PP^n$ is any hypersurface, show that $\PP^n \sm H$ is affine.
 

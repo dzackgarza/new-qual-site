@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1(\mathbb{R})$. Prove that for every $\varepsilon > 0$, there exists $\delta > 0$ such that for every Lebesgue measurable set $E \subseteq \mathbb{R}$ with $m(E) < \delta$,
 $$
 \int_E |f(x)| \, dx < \varepsilon.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the absolute continuity of the Lebesgue integral by truncating $|f|$ by height $N$ and applying the Monotone Convergence Theorem.
 
 <1>1. Pointwise convergence and monotonicity of truncations:

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Find all real-valued solutions $y:\mathbb R\to\mathbb R$ of
 \[
 \frac{dy}{dx}=\sqrt{y(y-2)},

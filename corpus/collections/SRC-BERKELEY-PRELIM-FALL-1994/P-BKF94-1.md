@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 For which real values of $a$ does
 \[
 \sum_{n=1}^{\infty}\left(\frac1n-\sin\frac1n\right)^a

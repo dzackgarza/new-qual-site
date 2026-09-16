@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is Galois theory?
 State the main theorem.
 What is the splitting field of $x^5 - 2$ over $\QQ$?

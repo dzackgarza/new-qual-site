@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme, and let $Y, Z$ be two closed subschemes, neither one containing the other.
 Let $\tilde X$ be obtained by blowing up $Y \intersect Z$, defined by the ideal sheaf $\mci_Y + \mci_Z$.
 Show that the strict transforms $\tilde Y$ and $\tilde Z$ of $Y$ and $Z$ in $\tilde X$ do not meet.

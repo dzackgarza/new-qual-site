@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove that there exists a sequence of rational functions $R_n$ analytic in $\mathbb{C} \setminus \{3/2\}$, satisfying both of the following:
 
 (i) $\lim_{n \to \infty} R_n(z) = 1$ for all $z \in \mathbb{D}$.

@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State the structure theorem for simple Artinian rings.
 :::
 
-::: solution
+::: {.solution}
 The simple case of the Artin--Wedderburn theorem says:
 
 > A ring $R$ is simple Artinian if and only if

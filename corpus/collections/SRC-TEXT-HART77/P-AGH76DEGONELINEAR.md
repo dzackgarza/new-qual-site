@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that an algebraic set $Y$ of pure dimension $r$, meaning that every irreducible component of $Y$ has dimension $r$, has degree $1$ if and only if $Y$ is a linear variety (Ex. 2.11).
 
 *Hint:* First, use (7.7) and treat the case $\dim Y = 1$.

@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the possible Galois groups for a cubic polynomial $f(x) \in K[x]$ over a field $K$ (of characteristic $\ne 2, 3$)?
 Classify them completely using the discriminant and irreducibility.
 :::
 
-::: solution
+::: {.solution}
 Let $L$ be the splitting field of a cubic $f\in K[x]$, with $\operatorname{char}K\ne2,3$.
 
 If $f$ splits over $K$, then $L=K$ and the Galois group is trivial. If

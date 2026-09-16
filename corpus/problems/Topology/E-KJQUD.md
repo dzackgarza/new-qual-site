@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 - What is the **closure** of a subspace $E\subseteq X$?
 :::
 

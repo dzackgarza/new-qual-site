@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 On a noetherian scheme $X$, different sheaves of ideals can give rise to isomorphic blown up schemes.
 
 a. If $\mci$ is any coherent sheaf of ideals on $X$, show that blowing up $\mci^d$ for any $d \geq 1$ gives a scheme isomorphic to the blowing up of $\mci$ (cf. Ex. 5.13).

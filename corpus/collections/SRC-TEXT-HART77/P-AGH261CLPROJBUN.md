@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $X$ satisfies condition $(*)$: $X$ is a noetherian integral separated scheme which is regular in codimension one.
 
 Let $X$ be a scheme satisfying $(*)$.

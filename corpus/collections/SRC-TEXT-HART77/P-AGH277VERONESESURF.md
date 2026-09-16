@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X = \PP^2_k$, and let $\abs{D}$ be the complete linear system of all divisors of degree $2$ on $X$, the conics.
 Here $D$ corresponds to the invertible sheaf $\OO(2)$, whose space of global sections has basis $x^2, y^2, z^2, xy, xz, yz$, where $x, y, z$ are the homogeneous coordinates of $X$.
 

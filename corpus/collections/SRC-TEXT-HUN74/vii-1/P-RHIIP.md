@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring and let $A, B \in M_n(R)$ be $n \times n$ matrices.
 
 (a) Show that if $A$ and $B$ are symmetric (respectively, skew-symmetric), then $A + B$ is symmetric (respectively, skew-symmetric).
@@ -23,7 +23,7 @@ Let $R$ be a commutative ring and let $A, B \in M_n(R)$ be $n \times n$ matrices
 (c) Show that for any matrix $B \in M_n(R)$, the matrices $B B^t$ and $B + B^t$ are symmetric, and $B - B^t$ is skew-symmetric.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove closure properties and transpose identities for symmetric and skew-symmetric matrices over a commutative ring $R$.
 
 <1>1. Properties of the matrix transpose:

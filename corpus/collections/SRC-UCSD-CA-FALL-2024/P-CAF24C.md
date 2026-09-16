@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic.
 Assume that
 

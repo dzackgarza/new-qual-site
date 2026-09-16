@@ -21,7 +21,7 @@ audit:
   date: 2026-09-04
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a path-connected, locally path-connected topological group with identity $e$ and multiplication
 \[
 \mu:G\times G\to G.

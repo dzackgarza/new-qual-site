@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For which real numbers $x$ does
 \[
 \sum_{n=1}^\infty\frac{\sqrt{n+1}-\sqrt n}{n^x}

@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\{u_n(x, y)\}$ be a sequence of harmonic functions in an open connected set $G \subset \mathbb{R}^2$, converging uniformly on compact subsets of $G$.
 Show that the sequence of partial derivatives $\frac{\partial u_n}{\partial x}$ converges uniformly on compact subsets of $G$.
 :::
 
-::: solution
+::: {.solution}
 Let $K\Subset G$. Choose a compact set $K_1$ with
 \[
 K\Subset \operatorname{int}K_1\Subset G.

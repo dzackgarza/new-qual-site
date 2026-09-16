@@ -23,11 +23,11 @@ audit:
   note: "JHU Spring 2015 poses the same problem; merged its duplicate card P-8XT37, whose solution is the same Liouville argument, and that sitting now lists this card."
 ---
 
-::: problem
+::: {.problem}
 If $f$ is a non-constant entire function, then $f(\mathbf{C})$ is dense in the plane.
 :::
 
-::: solution
+::: {.solution}
 Suppose that $f(\mathbb C)$ were not dense in $\mathbb C$. Then there would be
 a point $a\in\mathbb C$ and an $r>0$ such that
 \[

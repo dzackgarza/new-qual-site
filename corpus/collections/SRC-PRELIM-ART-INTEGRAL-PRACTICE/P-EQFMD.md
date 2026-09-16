@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute, on each interval where the integrand is defined,
 \[
 \int \frac{1-\sin x}{1+\cos x}\,dx,
@@ -32,7 +32,7 @@ Compute, on each interval where the integrand is defined,
 \]
 :::
 
-::: solution
+::: {.solution}
 Use the tangent half-angle substitution
 \[
 u=\tan\frac x2,
@@ -45,7 +45,7 @@ dx=\frac{2\,du}{1+u^2}.
 \]
 
 <1>1. The minus-sign numerator.
-::: proof
+::: {.proof}
 Substitution gives
 \[
 \frac{1-\sin x}{1+\cos x}\,dx
@@ -69,7 +69,7 @@ or, after absorbing the constant \(\log2\),
 :::
 
 <1>2. The plus-sign numerator.
-::: proof
+::: {.proof}
 Similarly,
 \[
 \frac{1+\sin x}{1+\cos x}\,dx
@@ -89,7 +89,7 @@ Equivalently,
 :::
 
 <1>3. The denominator \(1+\sin x+\cos x\).
-::: proof
+::: {.proof}
 The same substitution gives
 \[
 \frac{dx}{1+\sin x+\cos x}

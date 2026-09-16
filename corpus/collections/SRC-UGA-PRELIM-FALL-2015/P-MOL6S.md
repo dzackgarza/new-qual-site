@@ -17,11 +17,11 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be defined by $f(x)=xe^{2x}$. Find a general formula for the $n$th derivative $f^{(n)}(x)$, and prove it by induction.
 :::
 
-::: solution
+::: {.solution}
 1. Denoting $D^n f \definedas \dd{^n f}{x^n}$ and noting that $D^1 D^n f = D^{n+1}f$, we have
   $$\begin{align*}
   D^0f &= xe^{2x} \\

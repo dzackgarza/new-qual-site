@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be entire and suppose
 \[
 \operatorname{Re}f(z)\ge-2

@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State the three Sylow theorems.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be a finite group and let
 \[
 |G|=p^n m,

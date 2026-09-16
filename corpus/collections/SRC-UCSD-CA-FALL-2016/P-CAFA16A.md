@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that if $f$ is an entire function such that $\lim_{z \to \infty} f(z) = \infty$, then $f$ must be a polynomial.
 :::
 
-::: solution
+::: {.solution}
 Set $g(w)=f(1/w)$ on a punctured neighborhood of $0$. The hypothesis says
 \[
 |g(w)|\to\infty\qquad (w\to0).

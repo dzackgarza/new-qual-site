@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 1. For $0\le\theta\le\pi/2$, prove
 \[
 \sin\theta\ge \frac{2}{\pi}\theta.

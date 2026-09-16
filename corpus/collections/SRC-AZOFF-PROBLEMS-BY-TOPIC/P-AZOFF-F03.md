@@ -15,7 +15,7 @@ audit:
   note: Checked against Laurent expansions and singularities, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the Laurent expansions of $\frac { z + 1 } { z ( z - 1 ) ^ { 2 } }$ about
 
 a) $z = 0$

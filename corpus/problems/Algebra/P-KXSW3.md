@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a finite $p$-group and let $G\le H$. Suppose the composite
 \[
 G\hookrightarrow H\twoheadrightarrow H/[H,H]

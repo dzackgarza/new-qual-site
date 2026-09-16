@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 11. One can give a neater formulation of the result in Exercise 10 by proving the following fact.
 
 Suppose $f ( z )$ is an entire function of strict order 2, that is,
@@ -39,7 +39,7 @@ $$
 for some $a , b > 0$ . The converse holds: if $|f(x+iy)| = O(e^{-ax^2 + by^2})$ for some $a, b > 0$, then restricting to the real axis ($y = 0$) gives $f(x) = O(e^{-ax^2})$, which is the second hypothesis with $c_2 = a$; and the whole-plane bound $f(z) = O(e^{c_1|z|^2})$ follows with $c_1 = b$, since $-ax^2 + by^2 \le b(x^2 + y^2) = b|z|^2$.
 :::
 
-::: solution
+::: {.solution}
 We prove the nontrivial implication. Assume
 \[
 |f(z)|\le C e^{c_1|z|^2}

@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is a Toeplitz operator? Define the Hardy space $H^2(\mathbb{T})$, the Toeplitz operator $T_\varphi$ associated with a symbol $\varphi \in L^\infty(\mathbb{T})$, and describe its matrix representation.
 :::
 
-::: solution
+::: {.solution}
 Let $\mathbb T=\{z\in\mathbb C:|z|=1\}$ with normalized Lebesgue measure. The Hardy space is
 \[
 H^2(\mathbb T)

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. Consider the Fibonacci numbers $\{ F _ { n } \} _ { n = 0 } ^ { \infty }$ , defined by the two initial values $F _ { 0 } = 0 , F _ { 1 } = 1$ and the recursion relation
 
 $$
@@ -57,7 +57,7 @@ so that $A = 1 / \sqrt { 5 }$ and $B = - 1 / \sqrt { 5 } .$
 The number $1 / \alpha = ( \sqrt { 5 } - 1 ) / 2$ , which is known as the golden mean, satisfies the following property: given a line segment $\left[ A C \right]$ of unit length (Figure 2), there exists a unique point B on this segment so that the following proportion holds
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 F(x)=\sum_{n=0}^\infty F_nx^n.

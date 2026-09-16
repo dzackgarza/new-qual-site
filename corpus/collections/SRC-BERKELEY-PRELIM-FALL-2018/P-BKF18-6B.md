@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Show that if $A=(a_{ij})$ is an $n\times n$ complex matrix satisfying
 \[
 |a_{ii}|>\sum_{j\ne i}|a_{ij}|

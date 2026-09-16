@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\langle A,+,\cdot\rangle$ be a commutative ring with identity $1$ and let $<$ be a linear order on $A$ such that for all $a,b,x$ in $A$
 \begin{align*}
 \text{(I)}\quad &a<b\Rightarrow a+x<b+x,\\

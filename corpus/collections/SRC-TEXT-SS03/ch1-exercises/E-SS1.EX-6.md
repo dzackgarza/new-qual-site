@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 6. Let Ω be an open set in C and $z \in \Omega$ . The connected component (or simply the component) of Ω containing z is the set $\mathcal { C } _ { z }$ of all points w in Ω that can be joined to z by a curve entirely contained in Ω.
 
 (a) Check first that $\mathcal { C } _ { z }$ is open and connected.
@@ -30,7 +30,7 @@ Thus Ω is the union of all its connected components, and two components are ei
 [Hint: For (b), one would otherwise obtain an uncountable number of disjoint open balls. Now, each ball contains a point with rational coordinates. For (c), note that the complement of a large disc containing the compact set is connected.]
 :::
 
-::: solution
+::: {.solution}
 Let $\mathcal C_z$ be the set of points of $\Omega$ that can be joined to $z$ by a curve lying in $\Omega$.
 
 For openness, take $w\in\mathcal C_z$. Since $\Omega$ is open, some disc $D(w,r)$ is contained in $\Omega$. Every $u\in D(w,r)$ can be joined to $w$ by the line segment in that disc, and concatenating this segment with a curve from $z$ to $w$ shows $u\in\mathcal C_z$. Hence $\mathcal C_z$ is open. It is path connected by definition, hence connected.

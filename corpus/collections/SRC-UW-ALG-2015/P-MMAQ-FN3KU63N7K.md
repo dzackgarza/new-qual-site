@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative algebra over $\mathbb C$.
 A derivation of $R$ is a $\mathbb C$-linear map $D:R\rightarrow R$ such that (i) $D(1)=0$ and (ii) $D(ab)=D(a)b+aD(b)$ for all $a,b\in R$.
 

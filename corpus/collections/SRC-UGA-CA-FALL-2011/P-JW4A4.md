@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_0^\infty {\sqrt x \over (x+1)^2} \,dx
@@ -23,7 +23,7 @@ Calculate
 
 :::
 
-::: solution
+::: {.solution}
 Use the keyhole contour about the positive real axis for
 \[
 F(z)=\frac{z^{1/2}}{(1+z)^2},

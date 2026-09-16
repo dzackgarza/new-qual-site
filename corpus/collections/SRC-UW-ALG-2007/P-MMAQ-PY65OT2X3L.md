@@ -17,13 +17,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field of characteristic zero and $L$ a Galois extension of $K$.
 Let $f$ be an irreducible polynomial in $K[x]$ of degree 7 and suppose $f$ has no zeroes in $L$.
 Show that $f$ is irreducible in $L[x]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $\alpha$ be a root of $f$ in an algebraic closure of $L$, and set
 \[
 E=K(\alpha).

@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{Z}$ be the additive group of integers.
 Is every indecomposable $\mathbb{Z}$-module over the complex numbers irreducible?
 :::

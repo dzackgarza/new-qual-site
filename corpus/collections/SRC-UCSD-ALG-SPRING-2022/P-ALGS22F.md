@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a commutative ring and let $f_1, \ldots, f_r \in A$ be elements which generate the unit ideal.
 
 (a) Show that for any non-negative integers $p_1, \ldots, p_r$, the powers $f_1^{p_1}, \ldots, f_r^{p_r}$ also generate the unit ideal.

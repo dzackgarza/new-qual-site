@@ -17,12 +17,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose $L$ is a real number and $f, g: \mathbb{R} \to \mathbb{R}$.
 Prove that if $\lim_{x \to 0} g(x) = L$ and $f$ is continuous at $L$, then $\lim_{x \to 0} f(g(x))$ also exists.
 :::
 
-::: solution
+::: {.solution}
 <1>1. We claim that
 \[
 \lim_{x\to0}f(g(x))=f(L).

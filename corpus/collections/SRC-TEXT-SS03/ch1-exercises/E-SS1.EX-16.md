@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Determine the radius of convergence of $\sum_{n=1}^{\infty}a_nz^n$ when:
 
 (a) $a_n=(\log n)^2$;

@@ -22,7 +22,7 @@ audit:
   note: "The stated hypothesis xf in L1 alone is insufficient: f(x)=x^{-1}1_(0,1) has xf in L1 but F(0) is undefined. The card is corrected to assume f and xf are in L1."
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that if $f,\,xf(x) \in L^1(\RR)$, then
 \[
 F(y) \da \int f(x)\cos(yx)\,dx
@@ -30,7 +30,7 @@ F(y) \da \int f(x)\cos(yx)\,dx
 defines a $C^1$ function.
 :::
 
-::: solution
+::: {.solution}
 For $y\in\mathbb R$ define
 \[
 F(y)=\int_{\mathbb R}f(x)\cos(yx)\,dx.

@@ -26,7 +26,7 @@ audit:
   note: "Checked nonnormality as an obstruction to being any splitting field, and explicitly recovered both radicals from their sum to identify the second splitting field."
 ---
 
-::: problem
+::: {.problem}
 Decide whether or not each of the following fields is a splitting field over $\mathbb{Q}$.
 
 a. $\mathbb{Q}(\sqrt[3]{2})$.
@@ -34,11 +34,11 @@ a. $\mathbb{Q}(\sqrt[3]{2})$.
 b. $\mathbb{Q}(\sqrt{2} + \sqrt{5})$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The field $\mathbb Q(\sqrt[3]{2})$ is not a splitting
 field over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 Put $a=\sqrt[3]{2}>0$. The polynomial $T^3-2$ is
 Eisenstein at two, hence irreducible over $\mathbb Q$
 [@DF04]. Its roots are $a,\zeta a,\zeta^2 a$, where
@@ -56,7 +56,7 @@ $\mathbb Q$, not just of $T^3-2$.
 <1>2. The field $\mathbb Q(\sqrt2+\sqrt5)$ is the splitting
 field of $(T^2-2)(T^2-5)$ over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 Let $s=\sqrt2+\sqrt5>0$. Since
 $$
 (\sqrt5-\sqrt2)s=5-2=3,

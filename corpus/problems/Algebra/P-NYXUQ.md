@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What group-theoretic construct relates the stabilizer of two points in the same orbit under a group action?
 :::
 
-::: solution
+::: {.solution}
 If $y=g\cdot x$, then
 \[
 G_y=gG_xg^{-1}.

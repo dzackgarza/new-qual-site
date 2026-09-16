@@ -24,13 +24,13 @@ audit:
     empty-space case needed for the statement as written.
 ---
 
-::: problem
+::: {.problem}
 Suppose $(X, d)$ is a compact metric space and $\mathcal{U}$ is an open covering of $X$.
 
 Prove that there exists $\delta > 0$ (a **Lebesgue number** for the covering) such that for every $x \in X$, the open ball $B_\delta(x)$ is contained in some element $U \in \mathcal{U}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the existence of a Lebesgue number $\delta > 0$ for an open cover of a compact metric space using the Extreme Value Theorem applied to an average distance function to closed complements.
 
 <1>1. Finite subcovering and closed complements:

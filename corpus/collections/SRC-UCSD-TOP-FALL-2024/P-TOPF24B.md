@@ -23,13 +23,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an explicit example:
 (a) of a topological space $X$ with $\pi_2(X) = 0$ and $H_2(X) \neq 0$, and
 (b) of a topological space $Y$ with $\pi_2(Y) \neq 0$ and $H_2(Y) = 0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For part (a), take $X=T^2=S^1\times S^1$.
 <2>1. The universal covering map $\mathbb R^2\to T^2$ induces an isomorphism on homotopy groups in every degree at least $2$.
 <2>2. Since $\mathbb R^2$ is contractible,

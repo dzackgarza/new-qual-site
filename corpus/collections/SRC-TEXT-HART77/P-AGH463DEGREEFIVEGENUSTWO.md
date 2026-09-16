@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A curve of degree 5 and genus 2 in $\PP^3$ is contained in a unique quadric surface $Q$.
 Show that for any abstract curve $X$ of genus 2, there exist embeddings of degree 5 in $\PP^3$ for which $Q$ is nonsingular, and there exist other embeddings of degree 5 for which $Q$ is singular.
 :::

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What's the Galois group of $x^2 + 1$ over $\mathbb{Q}$? What's the integral closure of $\mathbb{Z}$ in $\mathbb{Q}(i)$?
 :::
 
-::: solution
+::: {.solution}
 The polynomial $x^2+1$ is irreducible over $\mathbb Q$, and its splitting field is
 \[
 \mathbb Q(i).

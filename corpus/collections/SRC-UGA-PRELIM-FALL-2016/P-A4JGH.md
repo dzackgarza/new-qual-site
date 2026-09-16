@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A sequence $\{f_n:\mathbb R\to\mathbb R\}_{n=1}^{\infty}$ converges uniformly to $f:\mathbb R\to\mathbb R$ if, for every $\varepsilon>0$, there is a positive integer $N$ such that
 \[
 n>N\quad\Longrightarrow\quad |f_n(x)-f(x)|<\varepsilon
@@ -25,7 +25,7 @@ for all $x\in\mathbb R$.
 2. Give an example such that $f_n(x)$ converges to $f(x)$ for every $x\in\mathbb R$, but the sequence does not converge uniformly.
 :::
 
-::: solution
+::: {.solution}
 The negation of uniform convergence is
 \[
 \exists\varepsilon_0>0\ \forall N\in\mathbb N\ \exists n>N\ \exists x\in\mathbb R:

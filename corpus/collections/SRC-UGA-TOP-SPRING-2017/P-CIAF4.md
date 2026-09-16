@@ -27,7 +27,7 @@ audit:
   note: Verified the covering-graph proof, including the finite-core criterion and the use of normality to make a nontrivial reduced loop close at every vertex.
 ---
 
-::: problem
+::: {.problem}
 a.
 Show that any finite index subgroup of a finitely generated free group is free. 
 State clearly any facts you use about the fundamental groups of graphs.

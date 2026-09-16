@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 
 Find a conformal map $L\to \DD$ where
 \[
@@ -23,7 +23,7 @@ i.e. a lune with vertices $-1$ and $1$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 The key insight: for lunes, map the corners to $0$ and $\infty$; this yields a sector.
 Here we want $-1\mapsto 0$ and $1\mapsto \infty$, so $f(z) = {z+1\over z-1}$ gets things started.
 

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 3. For a polynomial $f \in K[x]$, prove that if $r \in F$ is a root of $f$ then for any $\sigma\in\operatorname{Aut}_K(F)$, $\sigma(r)$ is also a root of $f$.
 :::
 

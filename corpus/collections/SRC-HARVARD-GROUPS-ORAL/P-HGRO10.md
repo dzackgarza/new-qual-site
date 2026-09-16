@@ -21,15 +21,15 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a finite nonabelian group with no nontrivial homomorphic image of smaller order.
 :::
 
-::: solution
+::: {.solution}
 Take $G=A_5$.
 
 <1>1. The group $A_5$ is nonabelian and simple.
-::: proof
+::: {.proof}
 It is nonabelian, for example because $(123)$ and $(345)$ do not commute.
 
 To prove simplicity, note that the conjugacy classes in $A_5$ have sizes
@@ -45,13 +45,13 @@ $A_5$.
 :::
 
 <1>2. Every homomorphism $f:A_5\to Q$ is either trivial or injective.
-::: proof
+::: {.proof}
 The kernel of $f$ is normal in $A_5$. By <1>1 it is either $A_5$, in which case
 $f$ is trivial, or $1$, in which case $f$ is injective.
 :::
 
 <1>3. Therefore $A_5$ has no nontrivial homomorphic image of smaller order.
-::: proof
+::: {.proof}
 If the image of $f$ is nontrivial, <1>2 gives
 \[
 |f(A_5)|=|A_5|=60.

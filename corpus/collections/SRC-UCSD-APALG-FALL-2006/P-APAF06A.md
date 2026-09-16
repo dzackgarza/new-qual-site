@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Assume that $(\lambda, x)$ is an eigenpair of $A \in M_n$ such that $am(\lambda) = gm(\lambda) = 1$.
 Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \quad Y)^*$ such that
 \[

@@ -21,7 +21,7 @@ audit:
   note: "Compared with Complex Analysis (4) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMCA4, whose solution repeats this Cauchy-estimate argument."
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be an entire function and suppose that $|f(z)| \leq A|z|^2$ for all $z$ and some constant $A$.
 Show that $f$ is a polynomial of degree $\leq 2$.
 :::

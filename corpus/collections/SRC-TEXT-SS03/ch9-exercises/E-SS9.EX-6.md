@@ -15,11 +15,11 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Prove that $\wp ^ { \prime \prime }$ is a quadratic polynomial in $\wp$
 :::
 
-::: solution
+::: {.solution}
 The Weierstrass function is elliptic, so \(\wp''\) and \(\wp^2\) are elliptic. Near a lattice point, by translation it suffices to work near \(0\). From the defining series,
 \[
 \wp(z)=\frac1{z^2}+c_2z^2+O(z^4)

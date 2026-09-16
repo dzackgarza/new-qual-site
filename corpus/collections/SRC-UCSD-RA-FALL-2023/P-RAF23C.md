@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a $\sigma$-compact locally compact Hausdorff space.
 Let $\mu$ be a Radon measure on $X$.
 Let $f \geq 0$ be a measurable function.
 Prove that if for any open subset $U$, $\mu(U) = \int_U f\,d\mu$, then $f = 1$ $\mu$-a.e.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Show that $f\le1$ almost everywhere.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$ and set
 \[
 A_\varepsilon:=\{x:f(x)\ge1+\varepsilon\}.
@@ -62,7 +62,7 @@ f\le1\qquad\mu\text{-a.e.}
 :::
 
 <1>2. Use the open-set identity to rule out $f<1$ on a set of positive measure.
-::: proof
+::: {.proof}
 After changing $f$ on a null set if necessary, assume $0\le f\le1$ everywhere. For every open set $U$,
 \[
 0=\mu(U)-\int_U f\,d\mu

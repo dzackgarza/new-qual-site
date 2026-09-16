@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional inner product space and write $n = \dim V$.
 For the purposes of this question, the definition of a linear map $\phi \colon V \to V$ being unitary is that $\phi$ is invertible and $\phi^{-1} = \phi^*$ (where $\phi^*$ is the adjoint of $\phi$).
 
@@ -28,7 +28,7 @@ Using (a), or otherwise, prove that $\psi$ is diagonalizable.
 :::
 
 
-::: solution
+::: {.solution}
 (a) The singular values of $\phi$ are the square roots of the eigenvalues of the positive semidefinite operator $\phi^*\phi$.
 
 If $\phi$ is unitary, then

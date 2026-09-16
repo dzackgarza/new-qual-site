@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A morphism $f: X \to Y$, with $Y$ irreducible, is **generically finite** if $f\inv(\eta)$ is a finite set, where $\eta$ is the generic point of $Y$.
 A morphism $f: X \to Y$ is **dominant** if $f(X)$ is dense in $Y$.
 
@@ -22,6 +22,6 @@ Now let $f: X \to Y$ be a dominant, generically finite morphism of finite type o
 Show that there is an open dense subset $U \subseteq Y$ such that the induced morphism $f\inv(U) \to U$ is finite.
 :::
 
-::: remark
+::: {.remark}
 First show that the function field of $X$ is a finite field extension of the function field of $Y$.
 :::

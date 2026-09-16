@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a simply-connected region contained inside the disk $D = \{z : |z| < 1\}$.
 Assume $0 \in Y \neq D$.
 Without appealing to the Riemann mapping theorem itself, prove that there exists an $r$ with $1 > r > 0$ and a univalent conformal map $f: Y \to D(r) = \{z : |z| < r\}$ with $f(0) = 0$ and $f'(0) = 1$.
@@ -20,7 +20,7 @@ Without appealing to the Riemann mapping theorem itself, prove that there exists
 Hint: You may use part of the proof of the Riemann mapping theorem.
 :::
 
-::: solution
+::: {.solution}
 Choose $a\in\mathbb D\setminus Y$. Since $0\in Y$, we have $a\ne0$. Let
 \[
 \phi_a(z)=\frac{z-a}{1-\overline a z},

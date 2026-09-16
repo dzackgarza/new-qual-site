@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 We prove the following theorem in several steps: let $X$ be a noetherian scheme, let $U$ be an open subset, and let $\mcf$ be a coherent sheaf on $U$.
 Then there is a coherent sheaf $\mcf'$ on $X$ such that $\ro{\mcf'}{U} \cong \mcf$.
 

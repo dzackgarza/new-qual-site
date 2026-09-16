@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a subscheme of $\PP_k^2$ defined by a single homogeneous equation $f(x_0, x_1, x_2)=0$ of degree $d$.
 (Do not assume $f$ is irreducible.)
 Assume that $(1,0,0)$ is not on $X$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X=\Spec k[x_1, x_2, x_3, x_4]$ be affine four-space over a field $k$.
 Let $Y_1$ be the plane $x_1=x_2=0$ and let $Y_2$ be the plane $x_3=x_4=0$.
 Show that $Y=Y_1 \union Y_2$ is not a set-theoretic complete intersection in $X$.

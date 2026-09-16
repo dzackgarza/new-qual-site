@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $\rho$ is a third root of 1 (other than 1). Let $f(z) = \sin(z) + \sin(\rho z) + \sin(\rho^2 z)$.
 Prove that $f(z)$ has a zero other than $z = 0$.
 :::
 
-::: solution
+::: {.solution}
 Since $\rho\ne1$ and $\rho^3=1$,
 \[
 1+\rho+\rho^2=0.

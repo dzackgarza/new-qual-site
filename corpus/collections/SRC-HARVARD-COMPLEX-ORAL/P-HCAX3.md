@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the orientation-preserving mapping class group of the torus is $\operatorname{SL}_2(\mathbb Z)$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 T^2=\mathbb R^2/\mathbb Z^2.

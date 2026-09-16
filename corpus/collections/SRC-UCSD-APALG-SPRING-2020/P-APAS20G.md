@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(H,U)$ be a unitary representation of a compact group $G$.
 Show that the operator
 \[
@@ -22,7 +22,7 @@ P=\int_G U(g)\,dg
 is the orthogonal projection of $H$ onto the space of $G$-invariants in $H$.
 :::
 
-::: solution
+::: {.solution}
 Normalize Haar measure so that \(\int_G dg=1\). For \(v\in H\), set
 \[
 Pv=\int_G U(g)v\,dg.

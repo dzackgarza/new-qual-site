@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 \int_\gamma {z^2+1 \over z(z^2 + 4)}\dz
@@ -27,7 +27,7 @@ for
 
 :::
 
-:::{.solution}
+::: {.solution}
 For the smaller circle, use Cauchy's formula
 \[
 \int_{\abs{z} = 1} f(z) \dz 

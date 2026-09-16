@@ -15,7 +15,7 @@ audit:
   note: Checked against Conformal mapping, Problem 11, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a bijective conformal map from
 
 $$

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For a finite field extension, when does its separable degree equal its degree?
 :::
 
-::: solution
+::: {.solution}
 Let $E/F$ be finite. Its separable degree equals its total degree exactly when
 $E/F$ is separable.
 
@@ -33,7 +33,7 @@ $E/F$ is separable.
 \[
 [E:F]_{\mathrm{sep}}=[E:F].
 \]
-::: proof
+::: {.proof}
 By definition, the separable degree is the number of $F$-embeddings of $E$ into
 an algebraic closure of $F$. A finite separable extension has exactly
 $[E:F]$ such embeddings.
@@ -44,7 +44,7 @@ $[E:F]$ such embeddings.
 [E:F]_{\mathrm{sep}}=[E:F],
 \]
 then $E/F$ is separable.
-::: proof
+::: {.proof}
 For every finite extension,
 \[
 [E:F]=[E:F]_{\mathrm{sep}}\,[E:F]_{\mathrm{insep}},

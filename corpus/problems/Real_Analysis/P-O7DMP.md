@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Define
 \[
 F(x) &\da \qty{ \sin(\pi x) \over \pi x}^2 \\

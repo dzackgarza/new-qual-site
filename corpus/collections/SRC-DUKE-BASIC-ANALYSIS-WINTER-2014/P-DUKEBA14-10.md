@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that there exists $f\in C([0,1],\mathbb R)$ satisfying
 \[
 f(x)=\frac1{1066}\int_0^x e^{-s^2x^2}f(s)^2\,ds+\sin(2013x).
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define the fixed-point map on a closed ball.
-::: proof
+::: {.proof}
 Let $X=C([0,1])$ with the sup norm and set
 \[
 B=\{f\in X:\|f\|_\infty\le2\}.
@@ -43,7 +43,7 @@ For $f\in B$, the integrand is continuous, so $Tf\in X$.
 :::
 
 <1>2. Show that $T$ maps $B$ into itself.
-::: proof
+::: {.proof}
 If $f\in B$, then for $0\le x\le1$,
 \[
 |Tf(x)|
@@ -54,7 +54,7 @@ Thus $T(B)\subset B$.
 :::
 
 <1>3. Prove that $T$ is a contraction on $B$.
-::: proof
+::: {.proof}
 For $f,g\in B$,
 \[
 |f(s)^2-g(s)^2|
@@ -78,7 +78,7 @@ and $4/1066<1$.
 :::
 
 <1>4. Apply Banach's fixed-point theorem.
-::: proof
+::: {.proof}
 Since $T$ is a contraction of the complete metric space $B$ into itself, Banach's fixed-point theorem gives a unique $f\in B$ with $Tf=f$. This $f$ is continuous and satisfies the required integral equation.
 :::
 :::

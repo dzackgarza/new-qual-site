@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G=\mathbb Q/\mathbb Z$. Show that for every positive integer $t$, the group $G$ has a unique cyclic subgroup of order $t$.
 :::

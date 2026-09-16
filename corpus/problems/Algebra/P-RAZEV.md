@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State the Artin--Wedderburn theorem for finite-dimensional semisimple algebras, and describe the rational group algebras of $C_5$, $C_2\times C_2$, and $Q_8$.
 :::
 

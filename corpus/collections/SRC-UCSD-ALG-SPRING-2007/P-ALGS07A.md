@@ -24,7 +24,7 @@ audit:
   note: Checked the normal order-p-squared subgroup construction and classified all C_{p^2} semidirect C_p actions separately for odd p and p=2.
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime and $G$ a group of order $p^3$.
 
 (a) Prove that $G$ has a normal subgroup of order $p^2$.
@@ -39,7 +39,7 @@ Let $g$ be an element not in $N$.
 (Incidentally, for odd $p$ there exist groups of neither type, such as the group of $3 \times 3$ upper triangular matrices over $\mathbb{F}_p$ with 1's on the diagonal. For $p=2$, the quaternion group $Q_8$ is an example of neither type.)
 :::
 
-::: remark
+::: {.remark}
 The qualification “for odd $p$” in the upper-unitriangular example is necessary.
 For odd $p$, every strictly upper triangular $3\times3$ matrix $X$ satisfies $X^3=0$, and in characteristic $p$ one has $(I+X)^p=I$, so the unitriangular group has exponent $p$ and contains no cyclic subgroup of order $p^2$.
 For $p=2$, that matrix group instead has elements of order $4$ and is the dihedral group of order $8$, which occurs in part (b)(ii).

@@ -29,10 +29,10 @@ audit:
 1. Let P be a point in an open set U in C, and suppose that f is a meromorphic function on U with a pole at P . Prove that there is no holomorphic function $g : U \setminus \{ P \} \to \mathbb { C }$ such that $e ^ { g ( z ) } = f ( z )$ for all $z \in U \setminus \{ P \}$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The logarithmic derivative has a nonzero integral around the pole.
 
-::: proof
+::: {.proof}
 Let $m\geq1$ be the pole order. Locally,
 $$
 f(z)=(z-P)^{-m}h(z),
@@ -54,7 +54,7 @@ with counterclockwise orientation [@SS03].
 
 <1>2. A holomorphic logarithm would make the same integral zero.
 
-::: proof
+::: {.proof}
 If the asserted $g$ existed, differentiating $e^g=f$
 on this punctured disk would give $g'=f'/f$.
 The integral of $g'$ around a closed parametrized circle

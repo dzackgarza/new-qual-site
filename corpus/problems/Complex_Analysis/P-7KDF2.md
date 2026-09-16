@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that $|z_1 + z_2|^2 + |z_1 - z_2|^2 = 2(|z_1|^2 + |z_2|^2)$ for any two complex numbers $z_1, z_2 \in \mathbb{C}$, and explain the geometric meaning of this identity.
 :::
 
-::: solution
+::: {.solution}
 Using $|w|^2=w\overline w$,
 \[
 |z_1+z_2|^2

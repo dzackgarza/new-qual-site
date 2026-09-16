@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F:\mathbb R^n\to\mathbb R^n$ be continuous and suppose there is $\lambda>0$ such that
 \[
 \|F(x)-F(y)\|\ge\lambda\|x-y\|

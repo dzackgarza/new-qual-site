@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give an example of a subset of $[0,1]$ with positive Lebesgue measure whose closure contains no nonempty open interval.
 :::
 
-::: solution
+::: {.solution}
 Take the Smith--Volterra--Cantor set $S\subset[0,1]$.
 It is closed and nowhere dense, and
 \[

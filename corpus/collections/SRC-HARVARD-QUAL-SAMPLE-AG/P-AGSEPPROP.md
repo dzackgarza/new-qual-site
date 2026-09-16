@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Name a good property of separated morphisms.
 
 What would be the analogue for quasiseparated in place of separated?

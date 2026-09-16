@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. The source includes Figure 6 of the colored tetrahedron. Flash preserves only an image placeholder, but the face-color description is present in text.
 ---
 
-::: problem
+::: {.problem}
 Three faces of a tetrahedron are painted red (R), green (G) and blue (B), while the forth face is painted in all three colors (see the figure).
 Denote by P (A) the probability that it falls on a face containing the color A, A = R, G, B.
 

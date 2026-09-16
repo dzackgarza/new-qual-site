@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that the following polynomial has its roots outside of the unit circle:
 \[
 p(z) = z^3 + 2z + 4
@@ -24,7 +24,7 @@ p(z) = z^3 + 2z + 4
 
 :::
 
-:::{.solution}
+::: {.solution}
 Big: $M(z) = 4$
 Small: $m(z) = z^3 + 2z$.
 On $\abs{z} = 1$,

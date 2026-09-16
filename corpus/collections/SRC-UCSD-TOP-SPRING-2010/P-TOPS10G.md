@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a closed orientable surface $\Sigma_g$ of genus $g \geq 1$ has $\pi_2(\Sigma_g) = 0$, and deduce that the fundamental group of $\Sigma_g$ is not a free group.
 :::
 

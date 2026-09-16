@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $S$ be the parametric surface defined by
 \begin{align*}
 x&=u-2v,\\

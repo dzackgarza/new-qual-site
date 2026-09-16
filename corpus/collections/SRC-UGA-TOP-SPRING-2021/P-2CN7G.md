@@ -26,7 +26,7 @@ audit:
   note: Verified the clopen coordinate-cylinder separation and the induced separation of every non-singleton subspace.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 X=\prod_{n=1}^{\infty}\{0,1\}

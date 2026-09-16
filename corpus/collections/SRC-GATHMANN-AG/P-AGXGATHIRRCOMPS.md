@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the irreducible components of
 \[
 X = V(x - yz, xz - y^2) \subset \AA^3/\CC
 .\]
 :::
 
-::: solution
+::: {.solution}
 Since $x=yz$ for all points of $X$,
 \[
 X &= V(x-yz, yz^2 - y^2) \\

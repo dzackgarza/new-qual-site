@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme, and let $\mcf$ be a coherent sheaf.
 
 a. If the stalk $\mcf_x$ is a free $\OO_x\dash$module for some point $x \in X$, then there is a neighborhood $U$ of $x$ such that $\ro{\mcf}{U}$ is free.

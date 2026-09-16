@@ -15,7 +15,7 @@ audit:
   note: Checked against Laurent expansions and singularities, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let f be entire.
 Discuss, with proofs and examples, the types of singularities f might have (removable, pole, or essential) at $\infty$ in each of the following cases.
 

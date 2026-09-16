@@ -15,6 +15,6 @@ audit:
   note: Checked against Conformal mapping, Problem 9, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $\mathbb { C } \backslash \{ x \in \mathbb { R } : x \leq 0 \}$ onto the open unit disk.
 :::

@@ -33,7 +33,7 @@ a. Determine the number of fields $L$ such that $F \subset L \subset K$, $L \neq
 b. Refine your answer to (a) by indicating how many fields in each dimension are Galois over $F$.
 :::
 
-::: solution
+::: {.solution}
 There are eight strict intermediate fields: three of degree
 two and five of degree four over $F$. All three quadratic
 fields and exactly one of the five quartic fields are
@@ -49,7 +49,7 @@ The subgroup-to-field correspondence has
 $[K^H:F]=8/|H|$, and $K^H/F$ is Galois exactly when
 $H\lhd G$.
 
-::: proof
+::: {.proof}
 Choose an isomorphism with the symmetries of a square,
 taking $r$ to a quarter-turn and $s$ to a reflection.
 The displayed elements and relations describe these eight
@@ -70,7 +70,7 @@ $$
 $$
 The first five have order two and the last three order four.
 
-::: proof
+::: {.proof}
 Let $R=\langle r\rangle$, a cyclic subgroup of order four.
 Its only subgroups are $\{1\}$, $\langle r^2\rangle$, and
 $R$: containing $r$ or $r^3$ forces all of $R$, and any
@@ -108,7 +108,7 @@ exactly the eight subgroups stated above, without repetitions.
 | $2$ | $K^{\langle r\rangle}$, $K^{\langle r^2,s\rangle}$, $K^{\langle r^2,rs\rangle}$ | $3$ | $3$ |
 | $4$ | $K^{\langle r^2\rangle}$ and $K^{\langle r^j s\rangle}$ for $j=0,1,2,3$ | $5$ | $1$ |
 
-::: proof
+::: {.proof}
 The subgroup orders in step <1>2 and the degree formula
 in step <1>1 give exactly the stated fields and degrees.
 Different subgroups have different fixed fields, so none

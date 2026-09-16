@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 32, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 A body moves in (xy)-plane along the trajectory y = log cos x. Find the path length of the body when $x \in [ 0 , \frac { \pi } { 6 } ]$
 :::

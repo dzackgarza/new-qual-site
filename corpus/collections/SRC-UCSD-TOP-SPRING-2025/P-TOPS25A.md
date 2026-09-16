@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X = S^2 \setminus \{p_1, p_2, \dots, p_{10}\}$ be the topological space obtained by removing 10 distinct points from the 2-sphere $S^2$.
 Compute its **fundamental group** $\pi_1(X, x_0)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose one deleted point, say $p_{10}$, as the point at infinity for stereographic projection.
 <2>1. Stereographic projection gives a homeomorphism
 $$

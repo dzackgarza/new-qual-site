@@ -17,12 +17,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose $f: \mathbb{R} \to \mathbb{R}$ satisfies $f(xy) = xf(y) + yf(x)$ for all $x, y \in \mathbb{R}$.
 Prove that $f(1) = 0$ and that $f(u^n) = n u^{n-1} f(u)$ for all $n \in \mathbb{N}$ and $u \in \mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 Putting $x=y=1$ gives
 \[
 f(1)=f(1)+f(1),

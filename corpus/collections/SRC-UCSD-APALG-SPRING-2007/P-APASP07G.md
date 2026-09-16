@@ -17,12 +17,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $W$ be the $S_9$-module obtained by inducing up from the $S_6 \times S_3$-module $V_{(3,3)} \otimes V_{(2,1)}$; here $V_\lambda$ denotes the simple $S_n$-module labeled by the Young diagram $\lambda$.
 Determine the decomposition of $W$ into a direct sum of irreducible $S_9$-modules.
 :::
 
-::: solution
+::: {.solution}
 By the Frobenius characteristic map, induction from $S_6\times S_3$ corresponds to multiplication of Schur functions. Therefore the decomposition of $W$ is determined by
 \[
 s_{(3,3)}s_{(2,1)}.

@@ -26,7 +26,7 @@ audit:
   note: Retained the classification Sigma_2 and N_3, and repaired the proof to establish connectedness and finite covering degree before using multiplicativity of Euler characteristic.
 ---
 
-::: problem
+::: {.problem}
 Find *all* surfaces, orientable and non-orientable, which can be covered by a closed surface (i.e. compact with empty boundary) of genus 2. Prove that your answer is correct.
 :::
 

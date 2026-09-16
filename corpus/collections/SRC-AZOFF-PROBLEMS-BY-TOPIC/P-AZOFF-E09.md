@@ -15,6 +15,6 @@ audit:
   note: Checked against Liouville, FTA, and power series, Problem 9, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find, with proof, all entire functions satisfying $| f ( z ) | \leq \sqrt { | z | } \mathrm { ~ f o r ~ } | z | > 1 0$
 :::

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the dimension of the space of holomorphic differentials on a Riemann surface of genus $g$.
 :::

@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and $g\in G$. Suppose $\chi(g)\in\RR$ for every complex irreducible character $\chi$ of $G$. What can be said about $g$?
 :::
 
-::: solution
+::: {.solution}
 One has
 \[
 \chi(g^{-1})=\overline{\chi(g)}

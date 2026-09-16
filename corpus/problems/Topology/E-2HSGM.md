@@ -17,7 +17,7 @@ audit:
   date: 2026-08-16
 ---
 
-::: exercise
+::: {.exercise}
 Show that $[0, 1]$ is compact.
 :::
 

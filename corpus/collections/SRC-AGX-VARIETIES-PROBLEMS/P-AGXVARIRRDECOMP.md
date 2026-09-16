@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that any affine variety has a unique decomposition into irreducible components.
 :::

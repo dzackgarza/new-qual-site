@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give an example (without proof) of each of the following:
 
 a. An integrable function $f: \mathbb{R} \to \mathbb{R}$ so that the function $F(x) = \int_0^x f(t)\,dt$ is differentiable everywhere but at $x = 1$.
@@ -29,7 +29,7 @@ b. A sequence $\{a_n\}$ of real numbers such that $\sum_{n=1}^{\infty} a_n$ conv
 c. A basis for the subspace of $\mathcal{P}_3$ spanned by $x^2 + x + 1$, $x^3 - x + 2$, $x^3 + x^2 + 3$, and $-x^3 + x^2 + 2x + 1$.
 :::
 
-::: solution
+::: {.solution}
 (a) Take
 \[
 f(t)=\begin{cases}0,&t<1,\\1,&t\ge1.\end{cases}

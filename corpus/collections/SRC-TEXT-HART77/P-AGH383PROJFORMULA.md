@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a morphism of ringed spaces, let $\mcf$ be an $\mco_X\dash$module, and let $\mce$ be a locally free $\mco_Y\dash$module of finite rank. Prove the projection formula (cf. (II, Ex. 5.1)):
 \[
 R^i f_*(\mcf \tensor f^* \mce) \cong R^i f_*(\mcf) \tensor \mce

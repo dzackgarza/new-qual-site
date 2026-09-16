@@ -14,7 +14,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 How many abelian groups of order $35$ are there, up to isomorphism?
 How many are there of order $27$?
 :::

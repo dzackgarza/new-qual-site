@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 R=\{a+3bi:a,b\in\mathbb Z\}.

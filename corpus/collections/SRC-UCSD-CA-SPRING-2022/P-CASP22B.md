@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p(z)$ be a nonconstant polynomial.
 Let $G \subset \mathbb{C}$ be a component of the set $\{z : |p(z)| < 1\}$.
 
@@ -27,7 +27,7 @@ Show that $|f(z)| \leq |p(z)|$ and if $z = a$ is a zero of $p$ of order $k$, the
 (c) If either $|f(a)| = |p(a)|$ for some $z = a$ that is not a zero of $p$ or if $|f^{(k)}(a)| = |p^{(k)}(a)|$ for some $z = a$ that is a zero of $p$ of order $k$, then $f(z) = cp(z)$ for some constant $c$.
 :::
 
-::: solution
+::: {.solution}
 Every component $G$ of $\{|p|<1\}$ is bounded, because $|p(z)|\to\infty$
 as $|z|\to\infty$, and every boundary point of $G$ satisfies $|p|=1$.
 

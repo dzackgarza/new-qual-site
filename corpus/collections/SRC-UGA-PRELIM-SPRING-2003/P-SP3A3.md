@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Does there exist a $3 \times 2$ complex matrix $A$ such that $A^t A = I_2$ and $A A^t = I_3$?
 If so, give an example; if not, prove it.
 Here $I_k$ is the $k \times k$ identity matrix.
 :::
 
-::: solution
+::: {.solution}
 <1>1. No such matrix exists.
 :::
 

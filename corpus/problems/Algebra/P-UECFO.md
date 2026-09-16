@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(\pi, V)$ be a faithful finite-dimensional representation of a finite group $G$ over $\mathbb{C}$.
 Show that, given any irreducible representation $W$ of $G$, the $n$-th tensor power $V^{\otimes n}$ (or tensor algebra $T(V \oplus V^*)$) contains an isomorphic copy of $W$ for some integer $n \ge 0$.
 :::
 
-::: solution
+::: {.solution}
 Let $\chi$ be the character of the faithful representation $V$, and let
 \[
 a_1=\chi(1),a_2,\dots,a_r

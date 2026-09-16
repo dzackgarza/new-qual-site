@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Determine the conformal automorphism group of
 \[
 \mathbb D^*=\{z:0<|z|<1\},

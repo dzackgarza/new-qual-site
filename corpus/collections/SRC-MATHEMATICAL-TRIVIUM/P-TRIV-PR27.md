@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 27, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Here is the data about wheat yield from 8 identical wheat fields in conventional units:
 
 $$

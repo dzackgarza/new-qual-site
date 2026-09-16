@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Let $R$ be a commutative ring and let $\operatorname{Nil}(R)$ denote its nilradical.
 Show that if $a + \operatorname{Nil}(R)$ is nilpotent in the quotient ring $R/\operatorname{Nil}(R)$, then $a \in \operatorname{Nil}(R)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $a + \operatorname{Nil}(R)$ is nilpotent in $R/\operatorname{Nil}(R)$, then $a \in \operatorname{Nil}(R)$, so that the quotient ring $R/\operatorname{Nil}(R)$ contains no non-zero nilpotent elements.
 
 <1>1. Definition of the nilradical and quotient multiplication: *Proof:* <2>1. The nilradical $\operatorname{Nil}(R)$ is the ideal of all nilpotent elements in $R$: $$\operatorname{Nil}(R) = \{x \in R : x^k = 0 \text{ for some positive integer } k \ge 1\}.$$ <2>2. Multiplication in the quotient ring $R/\operatorname{Nil}(R)$ is defined on cosets by $(x + \operatorname{Nil}(R))(y + \operatorname{Nil}(R)) = x y + \operatorname{Nil}(R)$.

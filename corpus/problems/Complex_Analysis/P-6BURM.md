@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $n\in \ZZ^{\geq 0}$ and show that the equation
 \[
 e^z = az^n
@@ -22,7 +22,7 @@ has $n$ solutions in the open unit disc if $\abs{a} > e$, and no solutions if $\
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note that $\abs{e^z} = e^{\Re(z)}$, which is maximizes on $S^1$ at $z=1 \in \RR$ and minimized at $z=-1$.
 Write $f(z) = e^z-az^n$, so solution correspond to zeros of $f$.
 

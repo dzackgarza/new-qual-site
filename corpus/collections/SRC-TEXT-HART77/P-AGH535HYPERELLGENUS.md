@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a_1, \ldots, a_r$, $r \geqslant 5$, be distinct elements of $k$, and let $C$ be the curve in $\PP^2$ given by the (affine) equation $y^2=\prod_{i=1}^r\left(x-a_i\right)$.
 Show that the point $P$ at infinity on the $y$-axis is a singular point.
 Compute $\delta_P$ and $g(\tilde{Y})$, where $\tilde{Y}$ is the normalization of $Y$.

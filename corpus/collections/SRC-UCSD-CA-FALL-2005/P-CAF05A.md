@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find all functions $f \in H(B(0; 2))$ such that:
 
 (a) $|f(z)| = 1$ if $|z| = 1$.
@@ -22,7 +22,7 @@ Find all functions $f \in H(B(0; 2))$ such that:
 Hint: Consider first the case where $f$ satisfies (a), but has no zeroes.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 B(z)=\frac{z-\frac12}{1-\frac12 z}.

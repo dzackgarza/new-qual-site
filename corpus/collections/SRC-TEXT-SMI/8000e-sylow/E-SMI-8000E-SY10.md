@@ -30,7 +30,7 @@ Prove that if $G$ is a finite group such that $p^s$ divides $\#G$, then $G$ has 
 [Hint: use induction, and the fact that the center of a group of order $p^r$ is nontrivial.]
 :::
 
-::: solution
+::: {.solution}
 Write
 $$
 |G|=p^r m,
@@ -42,7 +42,7 @@ By the Sylow existence theorem, $G$ has a Sylow $p$-subgroup $P$ of order
 $p^r$. It is therefore enough to prove the following lemma.
 
 <1>1. Every finite $p$-group of order $p^r$ has a subgroup of order $p^s$ for every $0\le s\le r$.
-::: proof
+::: {.proof}
 We induct on $r$.
 
 For $r=0$, the group is trivial and there is nothing to prove. Assume
@@ -92,7 +92,7 @@ $0\le s\le r$.
 :::
 
 <1>2. Apply the lemma inside a Sylow subgroup of $G$.
-::: proof
+::: {.proof}
 The Sylow subgroup $P\le G$ has order $p^r$. Since $s\le r$, step <1>1
 gives a subgroup
 $$

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Choose 4 of the following theorems, and write out their statements carefully and completely.
 From among these, choose 2, and sketch their proofs.
 
@@ -41,7 +41,7 @@ From among these, choose 2, and sketch their proofs.
 - The Poisson Integral Formula
 :::
 
-::: solution
+::: {.solution}
 One possible choice is the following four theorems.
 
 **Rouché's theorem.** Let $D$ be a bounded domain whose boundary is a finite

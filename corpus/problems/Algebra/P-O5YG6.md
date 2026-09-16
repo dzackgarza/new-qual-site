@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Show that a Sylow $p_1$-subgroup and a Sylow $p_2$-subgroup intersect trivially when $p_1\ne p_2$.
 2. Show that every nontrivial normal subgroup of a finite $p$-group intersects the center nontrivially.
 :::

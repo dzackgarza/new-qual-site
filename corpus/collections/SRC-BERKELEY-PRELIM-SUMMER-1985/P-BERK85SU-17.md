@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let
 \[
 f(z)=\sum_{n=0}^\infty a_nz^n,

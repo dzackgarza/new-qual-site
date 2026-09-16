@@ -15,7 +15,7 @@ audit:
   note: Checked against Theorems and Definitions, item 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be open, let $f_n:U\to\mathbb C$, and let $f:U\to\mathbb C$.
 Define what it means for $(f_n)$ to converge normally (locally uniformly) to $f$.
 :::

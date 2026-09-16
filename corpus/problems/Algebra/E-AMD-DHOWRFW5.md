@@ -25,7 +25,7 @@ audit:
 Show that $S_n$ for $n \ge 5$ has exactly one non-trivial proper normal subgroup: $A_n$.
 :::
 
-::: solution
+::: {.solution}
 Use the standard theorem that \(A_n\) is simple for \(n\ge5\).
 
 Let \(N\trianglelefteq S_n\) be nontrivial. Then
@@ -40,12 +40,12 @@ N\cap A_n=1.
 \]
 
 <1>1. If \(N\cap A_n=A_n\), then \(N=A_n\) or \(N=S_n\).
-::: proof
+::: {.proof}
 In this case \(A_n\le N\le S_n\). Since \([S_n:A_n]=2\), there is no intermediate subgroup strictly between them.
 :::
 
 <1>2. The case \(N\cap A_n=1\) is impossible.
-::: proof
+::: {.proof}
 The quotient map \(S_n\to S_n/A_n\cong C_2\) restricts injectively to \(N\), because its kernel on \(N\) is \(N\cap A_n=1\). Since \(N\ne1\), it follows that \(|N|=2\).
 
 Write \(N=\{1,\sigma\}\). Normality implies

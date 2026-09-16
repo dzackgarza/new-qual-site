@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let a regular tetrahedron be colored with $C$ available colors.
 
 1. Count colorings of its four vertices (equivalently, its four faces) up to the full symmetry group.

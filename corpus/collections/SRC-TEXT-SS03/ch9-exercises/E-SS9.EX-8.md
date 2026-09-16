@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 8. Let
 
 $$
@@ -39,7 +39,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Separate the terms with \(m=0\):
 \[
 E_4(\tau)=2\zeta(4)+\sum_{m\ne0}\sum_{n\in\mathbb Z}(n+m\tau)^{-4}.

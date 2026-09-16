@@ -15,7 +15,7 @@ audit:
   note: Checked against Group B, problem B3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal M,\mu)$ be a measure space and let $f_n:X\to\mathbb R$ be measurable.
 
 (a) Define $f_n\to0$ in $L^1$ and define $f_n\to0$ in measure.

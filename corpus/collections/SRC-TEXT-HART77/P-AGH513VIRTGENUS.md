@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Recall that the arithmetic genus of a projective scheme $D$ of dimension 1 is defined as
 \[
 p_a=1-\chi\left(\mathcal{O}_D\right)

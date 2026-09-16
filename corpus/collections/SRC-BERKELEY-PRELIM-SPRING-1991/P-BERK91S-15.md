@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite nontrivial group such that any two nonidentity elements of $G$ are conjugate. Prove that
 \[
 |G|=2.

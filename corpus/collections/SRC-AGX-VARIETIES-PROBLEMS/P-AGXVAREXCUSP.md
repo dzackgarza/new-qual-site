@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the cuspidal cubic $X = V(x^3-y^2)$ has a unique singular point.
 
 Show that the normalization of $X$ is $\AA^1$, using the birational map $t\mapsto (t^2,t^3)$.

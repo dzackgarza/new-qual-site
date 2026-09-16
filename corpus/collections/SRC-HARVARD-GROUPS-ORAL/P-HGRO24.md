@@ -14,7 +14,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $p^r$, where $p$ is prime.
 Prove that $G$ is solvable.
 :::

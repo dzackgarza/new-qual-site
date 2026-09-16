@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For the Fermat cubic surface $x_0^3+x_1^3+x_2^3+x_3^3=0$, find the equations of the 27 lines explicitly, and verify their incidence relations.
 What is the group of automorphisms of this surface?
 :::

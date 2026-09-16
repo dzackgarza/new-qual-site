@@ -24,7 +24,7 @@ audit:
   note: Replaced malformed substitutions and corrected the false claim that mere unboundedness on a positive-measure set forces divergence of an integral.
 ---
 
-:::{.problem}
+::: {.problem}
 a.
 Let $F \subset \mathbb{R}$ be closed, and define
 \[
@@ -46,9 +46,9 @@ Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost ever
 
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the bound in part (a).
-::: proof
+::: {.proof}
 Fix $y\notin F$ and put
 \[
 d:=\delta_F(y)>0.
@@ -75,7 +75,7 @@ Therefore
 :::
 
 <1>2. Show that $I(x)=\infty$ for every $x\notin F$.
-::: proof
+::: {.proof}
 Fix $x\notin F$ and set
 \[
 d:=\delta_F(x)>0,
@@ -101,7 +101,7 @@ because $t^{-2}$ is not locally integrable at $0$. Thus
 :::
 
 <1>3. Show that $I$ is integrable over $F$.
-::: proof
+::: {.proof}
 The integrand is nonnegative, so Tonelli's theorem gives
 \[
 \begin{aligned}
@@ -126,7 +126,7 @@ Hence
 :::
 
 <1>4. Deduce finiteness almost everywhere on $F$.
-::: proof
+::: {.proof}
 The function $I$ is nonnegative. If the set
 \[
 E:=\{x\in F:I(x)=\infty\}

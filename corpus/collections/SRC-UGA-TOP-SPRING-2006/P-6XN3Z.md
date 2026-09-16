@@ -30,7 +30,7 @@ audit:
     Proposition 1.30.
 ---
 
-::: problem
+::: {.problem}
 Let $S^2 \to \RP^2$ be the universal covering map.
 
 Is this map null-homotopic?

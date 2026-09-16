@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $K\subseteq\mathbb{R}$ be a field of characteristic $0$, and let $f(x) \in K[x]$ be an irreducible polynomial of degree $n \ge 3$ such that $f(x)$ has exactly one real root $u \in \mathbb{R}$ and $n - 1$ non-real complex roots.
 (1) Prove that the extension degree $[K(u) : K] = n$.
 (2) Prove that $K(u)/K$ is not a Galois extension.
 (3) Prove that the automorphism group $\operatorname{Aut}(K(u)/K)$ is trivial ($\operatorname{Aut}(K(u)/K) = \{\operatorname{id}\}$).
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is irreducible and $f(u)=0$, it is the minimal polynomial of $u$ over $K$. Hence
 \[
 [K(u):K]=\deg f=n.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a projective scheme of dimension $r$ over a field $k$.
 We define the arithmetic genus $p_a$ of $X$ by
 \[

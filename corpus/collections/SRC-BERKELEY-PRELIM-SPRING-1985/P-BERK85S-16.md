@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be continuous and define
 \[
 f_n(x)=\frac1n\sum_{k=0}^{n-1}f\left(x+\frac{k}{n}\right).

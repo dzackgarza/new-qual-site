@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C$ be a curve of genus $g$ defined over the finite field $\FF_q$, and let $N$ be the number of points of $C$ rational over $\FF_q$.
 Then $N=1-a+q$, with $|a| \leqslant 2 g \sqrt{q}$.
 

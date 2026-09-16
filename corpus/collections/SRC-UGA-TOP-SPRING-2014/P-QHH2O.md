@@ -26,7 +26,7 @@ audit:
   note: Verified the product CW structure and cellular tensor-product differential, including the n=m multiplicity and the S^0 edge cases.
 ---
 
-::: problem
+::: {.problem}
 Use cellular homology to calculate the homology groups of $S^n \times S^m$.
 :::
 

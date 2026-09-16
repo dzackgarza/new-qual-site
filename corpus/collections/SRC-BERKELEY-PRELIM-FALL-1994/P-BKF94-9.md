@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_0^{\infty}\frac{(\log x)^2}{x^2+1}\,dx.

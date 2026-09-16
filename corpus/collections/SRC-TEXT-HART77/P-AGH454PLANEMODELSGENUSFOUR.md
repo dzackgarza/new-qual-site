@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Another way of distinguishing curves of genus $g$ is to ask, what is the least degree of a birational plane model with only nodes as singularities (3.11)? Let $X$ be nonhyperelliptic of genus 4. Then:
 
 a. if $X$ has two $g_3^1$'s, it can be represented as a plane quintic with two nodes, and conversely;

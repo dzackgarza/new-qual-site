@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the natural inclusion of $V = S^1 \vee S^1$ in the torus $T = S^1 \times S^1$.
 Show that there does not exist a retraction $T \to V$.
 :::

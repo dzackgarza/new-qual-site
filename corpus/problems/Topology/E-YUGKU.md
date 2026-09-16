@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 - State the definition of the product topology, the subspace topology, and the quotient topology.
 :::
 

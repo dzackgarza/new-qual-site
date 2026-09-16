@@ -15,7 +15,7 @@ audit:
   note: Checked against Review Problem 5 in the deterministic MinerU Flash extraction assets/attachments/Basic_Linear_Algebra_Review_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Decide which of the following sets are vector spaces.
 It is permissible to show that a set is a subspace, but in that case identify the ambient vector space.
 For each set that is a vector space, find a basis.

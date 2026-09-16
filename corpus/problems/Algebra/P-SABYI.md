@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and explain a proof of the structure theorem for finitely generated modules over a PID. What are the module and the PID in the case of finitely generated abelian groups?
 :::
 
-::: solution
+::: {.solution}
 Let $R$ be a PID and let $M$ be a finitely generated $R$-module. Then there are unique integers $r\ge0$ and nonzero nonunits
 \[
 d_1\mid d_2\mid\cdots\mid d_s

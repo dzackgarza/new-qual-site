@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $X, Y$ are affine varieties, then $X\cross Y$ is an affine variety with $\OO_{X\cross Y} \cong \OO_X \tensor_k \OO_Y$.
 :::

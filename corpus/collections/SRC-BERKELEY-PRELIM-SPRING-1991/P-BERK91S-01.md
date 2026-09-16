@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 List, up to isomorphism, all finite groups whose orders do not exceed $5$.
 :::

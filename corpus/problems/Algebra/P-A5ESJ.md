@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $\gal(x^3+4x+2)/\QQ \cong S_3$, a symmetric group.
 :::
 

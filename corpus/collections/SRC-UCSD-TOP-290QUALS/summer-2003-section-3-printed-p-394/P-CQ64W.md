@@ -18,10 +18,10 @@ review: draft
 Describe the universal cover of $X = (S^1 \cross S^1) \vee S^2$ and compute $\pi_2(X)$.
 :::
 
-:::{.solution}
+::: {.solution}
 
 \envlist
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $\pi_{\geq 2}(\univcover{X} ) \cong \pi_{\geq 2}(X)$ for $\univcover{X}$ the universal cover of $X$

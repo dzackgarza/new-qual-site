@@ -15,7 +15,7 @@ audit:
   note: Checked against Section I, item 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ and let $\alpha_i:[0,1]\to U$ for $i=1,2$ be closed paths.
 Define what it means for $\alpha_1$ to be freely homotopic to $\alpha_2$.
 :::

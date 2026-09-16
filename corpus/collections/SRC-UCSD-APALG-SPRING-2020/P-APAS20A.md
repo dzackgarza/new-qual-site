@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\phi\colon\mathbb{C}^8\to\mathbb{C}^8$ be a linear map whose matrix with respect to the standard basis is of the form
 \[
 \begin{pmatrix}
@@ -39,7 +39,7 @@ Determine, with proof, the maximum and minimum possible values of
 \]
 :::
 
-::: solution
+::: {.solution}
 Because the displayed matrix is upper triangular, its characteristic polynomial is
 \[
 \chi_\phi(t)=t^4(t-1)^4.

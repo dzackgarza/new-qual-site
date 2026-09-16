@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a projective scheme over a noetherian ring $A$, and let $\mcf^1 \to \mcf^2 \to \cdots \to \mcf^r$ be an exact sequence of coherent sheaves on $X$.
 Show that there is an integer $n_0$, such that for all $n \geq n_0$, the sequence of global sections
 \[

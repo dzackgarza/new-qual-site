@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 5. WLOG, assume $p_0, p_1$ are the north and south poles of $S^2$.
    We can then form a deformation retract of $X$ onto the equator of $S^2$, which is equal to $S^1$.
    To do so, just move every point $x$ along the unique great circle connecting $x, p_0, p_1$, and proceed at linear speed towards the equator.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X \subseteq \AA^n$ and $Y \subseteq \AA^m$ be affine varieties.
 
 1. Show that $X \times Y \subseteq \AA^{n+m}$ with its induced topology is irreducible.

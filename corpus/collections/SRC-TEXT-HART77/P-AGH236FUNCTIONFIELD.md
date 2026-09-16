@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral scheme.
 Show that the local ring $\OO_{\xi}$ of the generic point $\xi$ of $X$ is a field.
 It is called the **function field** of $X$ and is denoted by $K(X)$.

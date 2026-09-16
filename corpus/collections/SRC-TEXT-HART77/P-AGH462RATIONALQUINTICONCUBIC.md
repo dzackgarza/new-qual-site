@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A rational curve of degree 5 in $\PP^3$ is always contained in a cubic surface, but there are such curves which are not contained in any quadric surface.
 :::

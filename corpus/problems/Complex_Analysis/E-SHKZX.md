@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic in $\Omega: 0<|z-a|<r$ except at a
 sequence of poles $a_n \in \Omega$ with
 $\lim_{n \rightarrow \infty} a_n = a$. Show that for any
@@ -27,7 +27,7 @@ Explain the similarity and difference between the above assertion and the Weiers
 
 :::
 
-:::{.solution}
+::: {.solution}
 We prove the stronger conclusion that the sequence can be chosen with
 $z_n\to a$.
 

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For continuous real-valued functions on $[-1,1]$, define
 \[
 \langle f,g\rangle=\int_{-1}^1f(x)g(x)\,dx.

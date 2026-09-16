@@ -22,7 +22,7 @@ audit:
 Show that if $X$ is an infinite wedge of circles, then $X$ does not satisfy the first countability axiom.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that an infinite wedge sum of circles $X = \bigvee_{\alpha \in J} S_\alpha^1$ fails to be first-countable at the common wedge basepoint $p$.
 
 <1>1. Quotient topology on the wedge sum:

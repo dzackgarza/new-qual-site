@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\operatorname{sinc} x = \frac{\sin \pi x}{\pi x}$ (with $\operatorname{sinc} 0 = 1$). Prove:
 
 (i) If $a > 0$, $\hat{\chi}_{[-a,a]} = \check{\chi}_{[-a,a]} = 2a\operatorname{sinc}(2ax)$.
@@ -34,9 +34,9 @@ Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax 
 (iii) If $f \in \mathcal{H}_a$, then $f \in C_0$ (continuous vanishing at infinity) and $f = \sum_{-\infty}^{\infty} f\!\left(\frac{k}{2a}\right)\operatorname{sinc}(2ax - k)$ in $L^2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compute the Fourier transform of the interval indicator.
-::: proof
+::: {.proof}
 For $x\ne0$,
 \[
 \widehat{\chi_{[-a,a]}}(x)
@@ -55,7 +55,7 @@ At $x=0$ both sides equal $2a$, so the identity holds everywhere. Since $\chi_{[
 :::
 
 <1>2. Identify $\mathcal H_a$ with $L^2([-a,a])$.
-::: proof
+::: {.proof}
 By Plancherel, the Fourier transform is unitary on $L^2(\mathbb R)$. Therefore
 \[
 \mathcal H_a
@@ -86,7 +86,7 @@ form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transfor
 :::
 
 <1>3. Show that every bandlimited $f$ is continuous and vanishes at infinity.
-::: proof
+::: {.proof}
 If $f\in\mathcal H_a$, then $\widehat f\in L^2([-a,a])$. Since the interval has finite measure, Cauchy--Schwarz gives
 \[
 \|\widehat f\|_1
@@ -103,7 +103,7 @@ f\in C_0(\mathbb R).
 :::
 
 <1>4. Compute the orthonormal-basis coefficients.
-::: proof
+::: {.proof}
 By Plancherel,
 \[
 \begin{aligned}

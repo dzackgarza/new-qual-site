@@ -10,6 +10,6 @@ audit:
 - {event: source-checked, by: gpt-5.6-sol, date: 2026-09-13}
 ---
 
-:::{.problem}
+::: {.problem}
 Prove the Fundamental Theorem of Algebra: every nonconstant polynomial with complex coefficients has a complex root.
 :::

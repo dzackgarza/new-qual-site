@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a scheme.
 For any point $x \in X$, define the **Zariski tangent space** $T_x$ to $X$ at $x$ to be the dual of the $k(x)$-vector space $\mfm_x / \mfm_x^2$.
 

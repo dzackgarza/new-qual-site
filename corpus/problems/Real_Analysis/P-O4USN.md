@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $\nu, \mu$ be signed measures, and show that
 \[
 \nu \perp \mu \text{ and } \nu \ll \abs{ \mu} \implies \nu = 0

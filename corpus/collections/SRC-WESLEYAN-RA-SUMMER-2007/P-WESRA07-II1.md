@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal A,\mu)$ be a measure space and let $A_1\subseteq A_2\subseteq\cdots$ be measurable.
 Prove that
 \[
@@ -30,7 +30,7 @@ Prove that
 Give an example showing that the corresponding statement for decreasing sequences is false in general.
 :::
 
-::: solution
+::: {.solution}
 For $n\ge2$ set $B_n=A_n\setminus A_{n-1}$ and set $B_1=A_1$.
 Then the $B_n$ are pairwise disjoint and
 \[

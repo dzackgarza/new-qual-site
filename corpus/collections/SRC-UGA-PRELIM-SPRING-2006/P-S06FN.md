@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 For each positive integer $n$, let $f_n(x) = \frac{x}{x+n}$ for $x \in [0, \infty)$.
 Show that the sequence of functions $\{f_n\}$ converges pointwise on $[0, \infty)$ to the $0$-function but does not converge uniformly.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. For every fixed $x\in[0,\infty)$,
 \[
 \lim_{n\to\infty} f_n(x)=0.

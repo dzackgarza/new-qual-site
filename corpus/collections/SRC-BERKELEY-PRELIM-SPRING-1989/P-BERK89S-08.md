@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic from the open unit disk $D$ to itself. Suppose there are distinct $a,b\in D$ such that
 \[
 f(a)=a,

@@ -28,10 +28,10 @@ audit:
 5. Let f be a one-to-one analytic function defined on the unit disk D centered at the origin and $f ( 0 ) = 0$ . Show that the function $g ( z ) = { \sqrt { f ( z ^ { 2 } ) } }$ has a single-valued branch and is also one-to-one.
 :::
 
-::: solution
+::: {.solution}
 <1>1. There is a holomorphic nonvanishing function $h$ on $D$ with $f(w)=wh(w)$.
 
-::: proof
+::: {.proof}
 The Taylor series of $f$ at zero has zero constant term,
 so $f(w)/w$ extends holomorphically across zero with value
 $h(0)=f'(0)$. An injective holomorphic function has nonzero
@@ -42,7 +42,7 @@ Thus $h$ has no zero anywhere in $D$.
 
 <1>2. An explicit odd holomorphic square root exists on the whole disk.
 
-::: proof
+::: {.proof}
 Since $h'/h$ is holomorphic on the simply connected disk,
 it has a holomorphic primitive $L_0$ with $L_0(0)=0$
 [@SS03]. Choose $c\in\mathbb C$ with $e^c=h(0)$ and set
@@ -65,7 +65,7 @@ at $z=0$, because the exponential never vanishes.
 
 <1>3. The branch $g$ is injective.
 
-::: proof
+::: {.proof}
 Suppose $g(z_1)=g(z_2)$. Squaring and using step <1>2
 give $f(z_1^2)=f(z_2^2)$. Injectivity of $f$ yields
 $z_1^2=z_2^2$, so $z_2=z_1$ or $z_2=-z_1$.

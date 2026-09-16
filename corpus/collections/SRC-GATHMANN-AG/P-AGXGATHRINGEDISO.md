@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Which of the following are isomorphic as ringed spaces over $\CC$?
 
 (a) $\AA^{1} \sm \ts{1}$

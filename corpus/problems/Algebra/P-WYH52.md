@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Construct the character table of $S_5$.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes are indexed by partitions of $5$. In the order
 \[
 1^5,\quad 2\,1^3,\quad 2^2 1,\quad 3\,1^2,\quad 3\,2,\quad 4\,1,\quad 5,

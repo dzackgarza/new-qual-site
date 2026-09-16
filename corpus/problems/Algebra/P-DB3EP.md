@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A=(a_{ij})\in F^{m\times n}$, let $\mathbf x=(x_1,\dots,x_n)^t\in F^n$, and let $\mathbf b=(b_1,\dots,b_m)^t\in F^m$.
 Prove that the matrix equation
 \[

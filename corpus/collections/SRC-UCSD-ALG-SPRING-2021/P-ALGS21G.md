@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $R = \mathbb{Z}[x]/(2x-1)$.
 Let $S = \{1, 2, 4, 8, \ldots\} \subseteq \mathbb{Z}$.
 

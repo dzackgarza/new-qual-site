@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A,B\in\mathbb{R}^{n\times n}$ be two real symmetric positive definite matrices.
 If $A-B$ is positive definite, is $B^{-1}-A^{-1}$ also positive definite?
 If yes, give a proof; if not, give a counterexample.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Show that the topologist's sine curve is connected but not path-connected.
 :::
 

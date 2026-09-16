@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 48, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 (a) The functions f (x) and $g ( x )$ are related by $f ( x ) = g ( a x )$ . How are their Fourier images related?
 
 (b) The functions f (x) and $g ( x )$ are related by $f ( x ) = g ( x - x _ { 0 } )$ . How are their Fourier images related?

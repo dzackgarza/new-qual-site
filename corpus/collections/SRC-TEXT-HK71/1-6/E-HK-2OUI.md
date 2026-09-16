@@ -33,9 +33,9 @@ Prove the following two statements:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. If $A$ is invertible and $AB=0$, then $B=0$.
-::: proof
+::: {.proof}
 Multiply on the left by $A^{-1}$:
 \[
 B=A^{-1}AB=A^{-1}0=0.
@@ -43,7 +43,7 @@ B=A^{-1}AB=A^{-1}0=0.
 :::
 
 <1>2. If $A$ is not invertible, there is a nonzero matrix $B$ with $AB=0$.
-::: proof
+::: {.proof}
 Since $A$ is singular, its nullspace contains some nonzero column vector $v$ with $Av=0$. Let $B$ be the matrix whose first column is $v$ and whose remaining columns are zero. Then $B\ne0$, while every column of $AB$ is zero; hence $AB=0$.
 :::
 :::

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that any disjoint intervals is countable.
 
 - Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.

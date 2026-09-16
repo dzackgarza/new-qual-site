@@ -19,7 +19,7 @@ audit:
   note: Removed a stray extraction digit against Real Analysis Problem 41 on page 11 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Consider the vector field $\vec{A} = \vec{\nabla}\log\frac{1}{r}$, where $r = \sqrt{x^2 + y^2 + z^2}$.
 Write the components of this field
 

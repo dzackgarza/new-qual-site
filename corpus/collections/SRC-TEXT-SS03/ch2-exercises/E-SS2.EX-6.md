@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 6. Let $\Omega$ be an open subset of C and let $T \subset \Omega$ be a triangle whose interior is also contained in Ω. Suppose that f is a function holomorphic in Ω except possibly at a point w inside $T$ . Prove that if $f$ is bounded near w, then
 
 $$
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Choose $r>0$ so small that the closed square
 \[
 Q_r=\{w+x+iy:|x|\le r,\ |y|\le r\}

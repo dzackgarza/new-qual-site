@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a point $p\in X$ is smooth iff $X \injects \AA^n$ is locally a smooth submanifold.
 :::

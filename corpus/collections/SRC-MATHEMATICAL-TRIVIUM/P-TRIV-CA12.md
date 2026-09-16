@@ -15,6 +15,6 @@ audit:
   note: Checked against Complex Analysis, Problem 12, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Compute $\int _ { 0 } ^ { \infty } \frac { 1 } { 1 + x ^ { 2 } } \mathrm { d } x ;$
 :::

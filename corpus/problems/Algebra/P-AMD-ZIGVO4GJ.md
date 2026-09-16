@@ -26,7 +26,7 @@ Let $R$ be a commutative ring and let $\operatorname{nil}(R) = \sqrt{(0)}$ be it
 Prove that the quotient ring $R / \operatorname{nil}(R)$ is reduced (i.e. has no non-zero nilpotent elements).
 :::
 
-::: solution
+::: {.solution}
 Let \(N=\operatorname{nil}(R)\). Suppose \(x+N\in R/N\) is nilpotent. Then for some \(m\ge1\),
 \[
 (x+N)^m=N,

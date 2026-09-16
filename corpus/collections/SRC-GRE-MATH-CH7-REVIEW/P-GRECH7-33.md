@@ -25,6 +25,6 @@ Which of the following represents the unoriented incidence matrix for the graph 
 (E) $\begin{bmatrix} 1 & 1 & 0 & 1 & 0 \\ 0 & 1 & 1 & 0 & 0 \\ 0 & 0 & 1 & 1 & 1 \\ 1 & 0 & 0 & 0 & 1 \end{bmatrix}$
 :::
 
-::: remark
+::: {.remark}
 The source shows the graph in a figure that is not reproduced here.
 :::

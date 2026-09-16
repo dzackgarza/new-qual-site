@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What does factorization over $\QQ[x]$ say about factorization over $\ZZ[x]$?
 :::
 
-::: solution
+::: {.solution}
 For $f\in\ZZ[x]$, let $\operatorname{cont}(f)$ be the gcd of its coefficients. A polynomial is **primitive** if its content is $1$.
 
 Gauss's lemma says that the product of primitive polynomials in $\ZZ[x]$ is primitive. Consequently, if a primitive polynomial $f\in\ZZ[x]$ factors in $\QQ[x]$,

@@ -25,7 +25,7 @@ audit:
   note: "Merge adjudication: the consolidation merge kept one branch's rewritten statement and appended both authored solutions. Restored the imported statement and kept one solution, the structured proof that determines the quotient in every case; it records the trivial quotient as the one exception to the literal claim."
 ---
 
-::: problem
+::: {.problem}
 - Show that if $N\normal D_n$ is a normal subgroup of a dihedral group, then $D_n/N$ is again a dihedral group.
 :::
 

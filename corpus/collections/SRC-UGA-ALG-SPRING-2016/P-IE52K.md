@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a. State the three Sylow theorems.
 
 b. Prove that any group of order 1225 is abelian.
@@ -26,7 +26,7 @@ b. Prove that any group of order 1225 is abelian.
 c. Write down exactly one representative in each isomorphism class of abelian groups of order 1225.
 :::
 
-::: solution
+::: {.solution}
 The Sylow theorems state:
 
 1. If $p^a$ is the largest power of $p$ dividing $|G|$, then $G$ has a subgroup of order $p^a$.

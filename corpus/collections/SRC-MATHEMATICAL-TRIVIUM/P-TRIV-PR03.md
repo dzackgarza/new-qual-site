@@ -15,6 +15,6 @@ audit:
   note: Checked against Probability, Problem 3, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 What is more probable - to get at least one 1 in throwing four dice, or to get at least two 1 in 24 throws of two dice?
 :::

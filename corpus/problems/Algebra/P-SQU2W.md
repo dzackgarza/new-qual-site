@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is a perfect field, why is perfection important, and what is an example of a nonperfect field?
 :::
 
-::: solution
+::: {.solution}
 A field $F$ is **perfect** if every algebraic extension of $F$ is separable. Equivalently, every irreducible polynomial in $F[x]$ is separable.
 
 Every field of characteristic $0$ is perfect, because the derivative of a nonconstant irreducible polynomial cannot vanish identically.

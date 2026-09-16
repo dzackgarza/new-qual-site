@@ -19,7 +19,7 @@ audit:
   note: Restored the lost arrow in theta to 0 and the split sin t against Real Analysis Problem 34 on page 10 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 A hyperbolic spiral is written in a parametric form as follows: $x = \frac{\alpha}{t}\cos t$, $y = \frac{\alpha}{t}\sin t$, where $\alpha > 0$ is a constant and $t$ varies from $0$ to $\infty$.
 Write the equation of this spiral in a polar coordinate system in the form $r = r(\theta)$.
 Draw it schematically.

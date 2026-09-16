@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 If $0<r<1$, find
 \[
 \sum_{k=0}^{\infty}r^k\cos(k\theta).

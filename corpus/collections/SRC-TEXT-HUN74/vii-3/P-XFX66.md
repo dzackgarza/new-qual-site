@@ -31,13 +31,13 @@ Show that if $r+r\neq 0$ for all $r\neq 0 \in R$, then an $n$-linear form $B^n\t
 :::
 
 
-::: solution
+::: {.solution}
 Let \(f:B^n\to R\) be \(n\)-linear. Here “skew-symmetric” means that
 interchanging two arguments multiplies the value by \(-1\), and “alternating”
 means that \(f\) vanishes whenever two arguments are equal.
 
 <1>1. Every alternating \(n\)-linear form is skew-symmetric.
-::: proof
+::: {.proof}
 Fix all arguments except positions \(i<j\), and write \(x,y\in B\) in those
 positions. Alternation gives
 \[
@@ -53,7 +53,7 @@ Thus interchanging the two arguments changes the sign.
 
 <1>2. Under the hypothesis \(r+r\ne0\) for every \(0\ne r\in R\), every
 skew-symmetric \(n\)-linear form is alternating.
-::: proof
+::: {.proof}
 Suppose two arguments, say positions \(i<j\), are equal to \(x\). Skew-symmetry
 under their transposition gives
 \[
@@ -69,7 +69,7 @@ two arguments coincide, so \(f\) is alternating.
 :::
 
 <1>3. Therefore the two notions are equivalent under the stated hypothesis.
-::: proof
+::: {.proof}
 Combine <1>1 and <1>2.
 :::
 :::

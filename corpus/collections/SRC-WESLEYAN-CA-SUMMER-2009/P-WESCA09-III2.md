@@ -15,7 +15,7 @@ audit:
   note: Checked against Section III, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $u\in C^2(D)$ be harmonic on a simply connected domain $D\subset\mathbb C$.
 Prove that $u$ has a harmonic conjugate $v$, so that $u+iv$ is analytic on $D$.
 Hint: consider $u_x-iu_y$.

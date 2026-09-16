@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 43, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Show that the flux of the vector field $\vec { A } = q \frac { \vec { r } } { r ^ { 3 } } , q = \mathrm { C o n s t }$ , through the sphere containing the origin equals 4πq.
 :::

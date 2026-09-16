@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mcf, \mcg$ be sheaves of abelian groups on $X$.
 For any open set $U \subseteq X$, show that the set $\Hom(\ro{\mcf}{U}, \ro{\mcg}{U})$ of morphisms of the restricted sheaves has a natural structure of abelian group.
 Show that the presheaf

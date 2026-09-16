@@ -26,7 +26,7 @@ audit:
   note: Supplied explicit counterexamples for (i) and (iii) and a basis argument for (ii).
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be an integral domain.
 Prove or give an example to disprove (with justification):
 

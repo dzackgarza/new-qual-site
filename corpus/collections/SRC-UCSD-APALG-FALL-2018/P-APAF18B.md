@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A\in\mathbb{C}^{n\times n}$ be a matrix such that $|\lambda_i|<1$ for all its eigenvalues $\lambda_i$.
 Let $B_k=A^k$.
 Do we necessarily have

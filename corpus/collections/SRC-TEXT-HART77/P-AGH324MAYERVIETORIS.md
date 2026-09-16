@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y_1, Y_2$ be two closed subsets of $X$.
 Then there is a long exact sequence of cohomology with supports
 \[

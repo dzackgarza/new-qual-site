@@ -32,7 +32,7 @@ $$
 Show that these definitions reduce to familiar ones when $J = \mathbb{Z}_+$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that when the directed set $J$ is the set of positive integers $\mathbb{Z}_+$ equipped with the standard ordering $\le$, the definition of a net and net convergence in a topological space $X$ coincides precisely with the classical definition of a sequence and sequence convergence.
 
 <1>1. $\mathbb{Z}_+$ is a directed set under the standard ordering $\le$:

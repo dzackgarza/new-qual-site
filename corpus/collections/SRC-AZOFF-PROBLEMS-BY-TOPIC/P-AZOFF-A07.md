@@ -15,7 +15,7 @@ audit:
   note: Checked against Compactness, connectedness, and functions of one real variable, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose A, B are connected subsets of $\mathbb { R } ^ { n }$ which are not disjoint.
 Prove that their union $A \cup B$ is also connected.
 :::

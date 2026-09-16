@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 5. Use the fact that $\Gamma ( s ) \Gamma ( 1 - s ) = \pi /$ sin πs to prove that
 
 $$
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Put
 \[
 s=\frac12+it.

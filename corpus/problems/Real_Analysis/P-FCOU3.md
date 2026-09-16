@@ -23,7 +23,7 @@ audit:
   note: Replaced incomplete legacy partial solutions with a complete proof of all three parts, cross-checked against the equivalent reviewed card P-XKFPD.
 ---
 
-::: problem
+::: {.problem}
 Let $(u_n)_{n=1}^\infty$ be an orthonormal sequence in a Hilbert space $H$.
 
 (a) For $x\in H$, prove that for every $N$,
@@ -51,9 +51,9 @@ and $x$ may be chosen so that
 (c) Prove that if $(u_n)$ is complete, then Bessel's inequality is an equality.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the finite orthogonal-projection identity and Bessel's inequality.
-::: proof
+::: {.proof}
 Set
 \[
 s_N:=\sum_{n=1}^N\langle x,u_n\rangle u_n.
@@ -97,7 +97,7 @@ for every $N$. Letting $N\to\infty$ gives
 :::
 
 <1>2. Reconstruct a vector from square-summable coefficients.
-::: proof
+::: {.proof}
 Let $(a_n)\in\ell^2$ and define
 \[
 S_N:=\sum_{n=1}^N a_nu_n.
@@ -131,7 +131,7 @@ Thus $x$ has the required coefficients and norm.
 :::
 
 <1>3. Prove Parseval's identity when the orthonormal sequence is complete.
-::: proof
+::: {.proof}
 Fix $x\in H$. By Bessel's inequality, the coefficient sequence
 \[
 a_n:=\langle x,u_n\rangle

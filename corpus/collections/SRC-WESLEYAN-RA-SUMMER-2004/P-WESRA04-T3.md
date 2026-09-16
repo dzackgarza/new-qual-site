@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 State a theorem describing how Lebesgue measurable functions on $[0,1]$ can be approximated by continuous functions.
 :::
 
-::: solution
+::: {.solution}
 One standard answer is Lusin's theorem.
 If $f:[0,1]\to\mathbb R$ is Lebesgue measurable and finite almost everywhere, then for every $\varepsilon>0$ there exists a compact set $K\subset[0,1]$ such that
 \[

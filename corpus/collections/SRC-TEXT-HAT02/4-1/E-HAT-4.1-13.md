@@ -16,11 +16,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Use the **Extension Lemma** (homotopy extension property for CW pairs) to show that a CW complex $X$ **retracts** onto any contractible subcomplex $A \subseteq X$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $(X, A)$ is a CW pair with $A$ contractible, there exists a continuous retraction $r: X \to A$ ($r|_A = \operatorname{id}_A$).
 
 <1>1. The Homotopy Extension Property (HEP) / Extension Lemma for CW Pairs:

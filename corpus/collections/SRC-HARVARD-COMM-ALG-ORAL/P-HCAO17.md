@@ -25,19 +25,19 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field.
 Prove that $k[x,y]$ is not a Dedekind domain.
 :::
 
-::: solution
+::: {.solution}
 Consider the ideal
 \[
 (x)\subset k[x,y].
 \]
 
 <1>1. The ideal $(x)$ is a nonzero prime ideal.
-::: proof
+::: {.proof}
 There is an isomorphism
 \[
 k[x,y]/(x)\cong k[y].
@@ -47,7 +47,7 @@ $x\ne0$ in $k[x,y]$.
 :::
 
 <1>2. The ideal $(x)$ is not maximal.
-::: proof
+::: {.proof}
 The quotient $k[y]$ is not a field: for example, $y$ is a nonzero nonunit.
 Hence $k[x,y]/(x)$ is not a field, so $(x)$ is not maximal.
 
@@ -58,7 +58,7 @@ Equivalently, one has the strict chain
 :::
 
 <1>3. Therefore $k[x,y]$ is not a Dedekind domain.
-::: proof
+::: {.proof}
 In a Dedekind domain every nonzero prime ideal is maximal. The nonzero prime
 ideal $(x)$ violates this condition by <1>1--<1>2.
 :::

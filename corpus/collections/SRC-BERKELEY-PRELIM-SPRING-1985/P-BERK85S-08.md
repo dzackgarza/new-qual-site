@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Fix $h>0$ and consider
 \[
 \frac{y((n+2)h)-2y((n+1)h)+y(nh)}{h^2}=-y(nh),

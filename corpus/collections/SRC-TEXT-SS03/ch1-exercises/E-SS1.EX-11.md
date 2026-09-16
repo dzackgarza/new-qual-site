@@ -23,7 +23,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Use the Wirtinger-operator identity for the Laplacian to prove that if $f$ is holomorphic in an open set $\Omega$, then the real and imaginary parts of $f$ are harmonic; that is, their Laplacians vanish.
 :::
 

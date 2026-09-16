@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For each of the following singularities at $(0,0)$ in the plane, give an embedded resolution, compute $\delta_P$, and decide which ones are equivalent.
 
 a. $x^3+y^5=0$.

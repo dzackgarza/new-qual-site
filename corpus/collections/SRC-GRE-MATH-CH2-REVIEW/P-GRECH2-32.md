@@ -25,6 +25,6 @@ Which of the following expressions gives the area of the region bounded by the t
 (E) $\int_0^{\frac{\pi}{3}} \frac{1}{2} (\sqrt{3} \sin \theta)^2 d\theta + \int_{\frac{\pi}{3}}^{\frac{\pi}{2}} \frac{1}{2} (3 \cos \theta)^2 d\theta$
 :::
 
-::: remark
+::: {.remark}
 The source shows the two circles in a figure that is not reproduced here.
 :::

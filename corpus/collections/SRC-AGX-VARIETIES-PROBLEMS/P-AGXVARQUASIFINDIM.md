@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if $f:X\to Y$ is quasi-finite, then $\dim X \leq \dim Y$.
 :::

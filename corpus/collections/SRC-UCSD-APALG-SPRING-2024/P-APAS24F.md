@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V,\varphi)$ and $(W,\psi)$ be finite-dimensional unitary representations of a finite group $G$.
 Let $\mathcal{L}(V,W)=\{\text{linear }T\colon V\to W\}$ equipped with the scalar product $\langle S,T\rangle=\operatorname{Tr}(S^*T)$.
 For $g\in G$ and $T\in\mathcal{L}(V,W)$, put
@@ -24,7 +24,7 @@ Show that $(\mathcal{L}(V,W),\omega)$ is a unitary representation of $G$.
 Compute the character of $(\mathcal{L}(V,W),\omega)$ in terms of the characters of $(V,\varphi)$ and $(W,\psi)$, showing your calculations.
 :::
 
-::: solution
+::: {.solution}
 First, $\omega$ is a representation. Indeed,
 \[
 \omega(gh)T

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the Zariski topology on $X$ is never separated unless $X$ is a point.
 :::

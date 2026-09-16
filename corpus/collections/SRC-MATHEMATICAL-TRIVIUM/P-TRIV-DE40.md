@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 40, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the most general solution of $x \frac { \partial f } { \partial x } - y \frac { \partial f } { \partial y } = 0$
 :::

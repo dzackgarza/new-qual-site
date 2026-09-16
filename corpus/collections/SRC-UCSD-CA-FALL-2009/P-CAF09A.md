@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the principal value of $\log(e^{3+7i})$.
 :::
 
-::: solution
+::: {.solution}
 The principal logarithm is
 \[
 \operatorname{Log} w=\log|w|+i\operatorname{Arg}w,

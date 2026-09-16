@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Give an example of a one-dimensional integrally closed domain which is not Noetherian.
 :::
 

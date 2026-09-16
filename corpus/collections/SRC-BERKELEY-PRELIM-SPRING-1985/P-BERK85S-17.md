@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $v_1,v_2:\mathbb R\to\mathbb R$ be continuous and satisfy
 \[
 v_1(x)<v_2(x)

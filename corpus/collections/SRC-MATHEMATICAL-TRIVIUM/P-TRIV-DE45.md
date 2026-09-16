@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 45, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 The surface of a sphere of radius R is kept at a constant temperature $T _ { U }$ for the upper hemisphere $( 0 \leq \theta < \pi / 2 )$ and $T _ { L }$ for the lower hempisphere $( \pi / 2 \leq \theta \leq \pi )$ . Find the stationary temperature distribution inside the sphere, at a distance r from the center, in an expansion in terms of $\frac { r } { R }$ . Compute terms up to third order.
 :::

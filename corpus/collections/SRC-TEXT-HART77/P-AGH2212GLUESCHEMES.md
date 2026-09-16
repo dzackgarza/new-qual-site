@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Generalize the glueing procedure of the text as follows.
 Let $\ts{X_i}$ be a possibly infinite family of schemes.
 For each $i \neq j$ suppose given an open subset $U_{ij} \subseteq X_i$ with its induced scheme structure.

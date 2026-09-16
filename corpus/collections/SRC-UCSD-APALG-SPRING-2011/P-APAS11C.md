@@ -17,7 +17,7 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G=\{g_1,\ldots,g_k\}$ be a finite group.
 Introduce variables $x_{g_1},\ldots,x_{g_k}$ and consider the $k\times k$ matrix
 \[
@@ -52,7 +52,7 @@ x_1 & x_2 & x_3 & \cdots & x_0
 where $\epsilon=e^{2\pi i/n}$.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 With the matrix data in the statement, the conclusions in (a)–(c) hold.
 

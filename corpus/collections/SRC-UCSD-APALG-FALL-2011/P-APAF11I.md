@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field.
 
 (a) State Hilbert's Nullstellensatz Theorem.

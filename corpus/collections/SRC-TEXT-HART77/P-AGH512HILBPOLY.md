@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a very ample divisor on the surface $X$, corresponding to a projective embedding $X \subseteq \PP^N$.
 If we write the Hilbert polynomial of $X$ (III, Ex.
 5.2) as

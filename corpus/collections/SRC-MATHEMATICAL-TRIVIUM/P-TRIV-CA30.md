@@ -15,7 +15,7 @@ audit:
   note: Checked against Complex Analysis, Problem 30, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Using Stirling's approximation, find the leading behavior of:
 
 (a) $\binom { 2 N } { N }$ for large N.

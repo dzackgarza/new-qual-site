@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For each positive integer $n$, define
 \[
 f_n(x)=\cos(nx),

@@ -25,6 +25,6 @@ Given the undirected graph below, what is the maximum number of edges that can b
 (E) $7$
 :::
 
-::: remark
+::: {.remark}
 The source shows the undirected graph in a figure that is not reproduced here.
 :::

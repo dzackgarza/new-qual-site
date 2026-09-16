@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 1. Suppose $f$ is analytic on a connected open set $U\subset\mathbb C$ and takes only real values. Prove that $f$ is constant.
 2. Suppose $W\subset\mathbb C$ is open, $g$ is analytic on $W$, and $g'(z)\ne0$ for every $z\in W$. Show that
    \[

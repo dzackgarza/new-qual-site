@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A morphism $f: X \to Y$ of schemes is **quasi-compact** if there is a cover of $Y$ by open affines $V_i$ such that $f\inv(V_i)$ is quasi-compact for each $i$.
 
 Show that $f$ is quasi-compact if and only if for every open affine subset $V \subseteq Y$ the preimage $f\inv(V)$ is quasi-compact.

@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For each part, determine if it is always true or sometimes false.
 If true give a brief proof.
 If false give a counterexample.
@@ -39,7 +39,7 @@ Suppose that $f$ continues analytically along any path $\gamma$ from $\gamma(0) 
 Then there is a function $F \in H(B(0; 1) \setminus \{0\})$ such that $F|_{B(1/2; 1/4)} = f$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. (a) **True.** Put $g(z)=(z-1)f(z)$. Then $|g(z)|\le1$ on the punctured disk, so $g$ has a removable singularity at $1$. Hence $f(z)=\widetilde g(z)/(z-1)$ has at worst a simple pole at $1$ and extends meromorphically.
 
 <1>2. (b) **True.** On the left half-disk define

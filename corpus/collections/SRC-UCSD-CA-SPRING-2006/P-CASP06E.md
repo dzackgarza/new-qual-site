@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that a linear transformation carries one pair of concentric circles into another pair of concentric circles.
 Prove that the ratios of the radii must be the same.
 :::
 
-::: solution
+::: {.solution}
 Here “linear transformation” is understood in the classical complex-analysis
 sense of a linear fractional (Möbius) transformation.
 

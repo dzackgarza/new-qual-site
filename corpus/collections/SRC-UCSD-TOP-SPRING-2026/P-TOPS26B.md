@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finitely presented group.
 Show that there is a finite two dimensional CW complex whose fundamental group is isomorphic to $G$.
 :::

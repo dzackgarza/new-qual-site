@@ -18,7 +18,7 @@ review: draft
 Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontrivial normal subgroup.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Write $\# G = p^2 q$

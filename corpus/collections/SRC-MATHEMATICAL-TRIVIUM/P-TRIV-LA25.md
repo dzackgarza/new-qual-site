@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 25, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 A linear transformation A writes in some basis in $\mathbb { R } ^ { n }$ as follows, $A = { \left[ \begin{array} { l l l } { 0 } & { 2 } & { 1 } \\ { 2 } & { 8 } & { 2 } \\ { 1 } & { 2 } & { 0 } \end{array} \right] }$
 
 (a) Write the transition matrix to the basis composed of the eigenvectors of A.

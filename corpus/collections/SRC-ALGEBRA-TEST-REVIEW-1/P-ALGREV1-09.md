@@ -27,11 +27,11 @@ audit:
 Classify the following assertion as true, sometimes true, or false: if $H\cong K$, then $G/H\cong G/K$.
 :::
 
-::: solution
+::: {.solution}
 The assertion is **sometimes true**.
 
 <1>1. There are cases in which the quotients are isomorphic.
-::: proof
+::: {.proof}
 For example, if $H=K$, then certainly $H\cong K$ and
 $$
 G/H=G/K.
@@ -40,7 +40,7 @@ Thus the assertion can hold.
 :::
 
 <1>2. Isomorphic normal subgroups can give nonisomorphic quotients.
-::: proof
+::: {.proof}
 Let
 $$
 G=\mathbb Z_4\times\mathbb Z_2,
@@ -67,7 +67,7 @@ they are not isomorphic.
 :::
 
 <1>3. Conclude the classification.
-::: proof
+::: {.proof}
 The assertion holds in step <1>1 and fails in step <1>2. Hence
 $$
 \boxed{\text{sometimes true}.}

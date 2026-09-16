@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $R > 1$ let $C_R$ be the quarter circle parametrized by $z = Re^{i\theta}$, $0 \leq \theta \leq \pi/2$.
 Prove that $$\lim_{R \to \infty} \int_{C_R} \frac{e^{iz}}{\log z}\,dz = 0,$$ where $\log z$ is the principal branch of the logarithm.
 
@@ -20,7 +20,7 @@ Hint: You may use the inequality $\sin\theta \geq c\theta$ for $0 \leq \theta \l
 Then evaluate an appropriate integral.
 :::
 
-::: solution
+::: {.solution}
 On $C_R$, write $z=Re^{i\theta}$, $0\le\theta\le\pi/2$. Then
 \[
 |e^{iz}|=e^{-R\sin\theta},

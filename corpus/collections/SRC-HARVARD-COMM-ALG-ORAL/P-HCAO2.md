@@ -25,12 +25,12 @@ audit:
   note: "Checked the Bezout unit criterion, all Chinese-remainder factors, the odd-prime lifting argument, the powers of five for powers of two, and both exceptional moduli."
 ---
 
-::: problem
+::: {.problem}
 Let $q$ be an integer.
 What is $\left(\mathbb Z/(q-1)\mathbb Z\right)^\times$?
 :::
 
-::: solution
+::: {.solution}
 Put $N=|q-1|$. Write $C_d$ for a cyclic group of order $d$,
 with $C_1$ the trivial group. For $N\geq2$, factor
 $N=\prod_{\ell\mid N}\ell^{e_\ell}$ into prime powers.
@@ -56,7 +56,7 @@ and its unit group is trivial.
 
 <1>1. The coprimality criterion and product decomposition hold.
 
-::: proof
+::: {.proof}
 For $N\geq2$, a residue class $\bar a$ is a unit exactly
 when $ab\equiv1\pmod N$ for some integer $b$.
 Such an equality gives $ab+cN=1$, implying $\gcd(a,N)=1$.
@@ -78,7 +78,7 @@ factor sizes proves the asserted formula for $\varphi(N)$.
 <1>2. For an odd prime $\ell$, the units modulo $\ell^e$
 form a cyclic group of order $\ell^{e-1}(\ell-1)$.
 
-::: proof
+::: {.proof}
 The multiplicative group of the finite field $\mathbb F_\ell$
 is cyclic [@DF04]. Choose an integer $a$ whose residue has
 order $\ell-1$. There is a choice $b=a$ or $b=a+\ell$
@@ -120,7 +120,7 @@ whose order equals the whole unit-group order, as required.
 
 <1>3. The factors at powers of two have the stated structure.
 
-::: proof
+::: {.proof}
 Modulo $2$ there is one unit. Modulo $4$ the units are
 $1,-1$, giving $C_2$. Now let $e\geq3$.
 For every $j\geq0$, the integer $5^{2^j}-1$ is divisible
@@ -149,7 +149,7 @@ so this gives $C_2\times C_{2^{e-2}}$.
 
 <1>4. The exceptional moduli cause no additional cases.
 
-::: proof
+::: {.proof}
 The ideals $(q-1)$ and $(|q-1|)$ in $\mathbb Z$ coincide.
 When $q=1$, the quotient by $(0)$ is $\mathbb Z$;
 its only integer units are $1,-1$. When $|q-1|=1$,

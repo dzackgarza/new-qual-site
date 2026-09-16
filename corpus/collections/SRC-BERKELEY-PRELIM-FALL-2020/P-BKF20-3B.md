@@ -16,6 +16,6 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Prove that every closed subset $C\subseteq\mathbb R$ is the closure of a finite or countable set.
 :::

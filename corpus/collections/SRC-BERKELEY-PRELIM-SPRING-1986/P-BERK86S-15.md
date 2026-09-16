@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $T:\mathbb R^2\to\mathbb R^2$ be an isometry for the Euclidean metric. Prove that
 \[
 T(x)=a+U(x)

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mco_X)$ be a ringed space, and let $\mcf', \mcf'' \in \Mod(X)$.
 An **extension** of $\mcf''$ by $\mcf'$ is a short exact sequence
 \[

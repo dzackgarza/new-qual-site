@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that if $x, y$ are in the same orbit, then their stabilizers are conjugate.
 :::
 

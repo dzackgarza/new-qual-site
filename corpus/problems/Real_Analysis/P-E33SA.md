@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - What does it mean for a function to be **uniformly continuous** on a set?
 
 - Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$?

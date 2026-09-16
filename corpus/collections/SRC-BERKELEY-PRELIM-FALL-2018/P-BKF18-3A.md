@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a metric space.
 
 (a) If $U$ is a subset of $X$, show that there is a unique open set $\neg U$ disjoint from $U$ and containing all open sets disjoint from $U$.

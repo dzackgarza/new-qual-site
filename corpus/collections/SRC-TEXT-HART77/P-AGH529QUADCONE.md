@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a nonsingular curve on a quadric cone $X_0$ in $\PP^3$.
 Show that either
 

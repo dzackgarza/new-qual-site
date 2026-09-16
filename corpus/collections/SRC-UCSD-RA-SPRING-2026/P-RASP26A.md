@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(\Omega, \mathcal{M}, \mu)$ be a measure space.
 A sequence $(f_n)_n \subset L^1(\Omega, \mu)$ is equi-integrable if:
 
@@ -36,9 +36,9 @@ A sequence $(f_n)_n \subset L^1(\Omega, \mu)$ is equi-integrable if:
 (2) Show that if $(f_n)_n$ converges strongly in $L^1$ then condition (a) holds.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Transfer the equi-integrability bounds to the a.e. limit.
-::: proof
+::: {.proof}
 Assume $(f_n)$ is equi-integrable and $f_n\to f$ almost everywhere.
 
 Fix $\varepsilon>0$. By condition (a), choose $\delta>0$ such that
@@ -68,7 +68,7 @@ Thus the same small-set and tail estimates hold for $f$.
 :::
 
 <1>2. Show that $f\in L^1$.
-::: proof
+::: {.proof}
 Keep the finite-measure set $A$ from Step 1. By Egorov's theorem, there is a measurable set $E\subset A$ with
 \[
 \mu(E)<\delta
@@ -93,7 +93,7 @@ Hence $f\in L^1(\Omega,\mu)$.
 :::
 
 <1>3. Prove strong $L^1$ convergence.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$. Apply conditions (a) and (b) with bounds small enough that each occurrence below is at most $\varepsilon$; choose $A$ of finite measure and then, by Egorov, choose $E\subset A$ with $\mu(E)<\delta$ such that $f_n\to f$ uniformly on $A\setminus E$.
 
 By Step 1,
@@ -124,7 +124,7 @@ Since $\varepsilon$ is arbitrary,
 :::
 
 <1>4. Strong $L^1$ convergence implies condition (a).
-::: proof
+::: {.proof}
 Suppose $f_n\to f$ in $L^1$. Fix $\varepsilon>0$. Choose $N$ such that
 \[
 \|f_n-f\|_1<\frac\varepsilon2

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that $\ZZ$ is initial in the category of unital rings and unital ring homomorphisms. Deduce that every abelian group has a unique $\ZZ$-module structure.
 :::
 

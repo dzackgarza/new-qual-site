@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $K \subset \mathbb{R}^2$ be compact.
 Given $\delta > 0$, consider the set
 $$
@@ -44,9 +44,9 @@ where $L^2$ is the Lebesgue measure on $\mathbb{R}^2$, $B_\epsilon(x)$ is the ba
 (3) Using the Lebesgue differentiation theorem show that $L^2(K_\delta) = 0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The distance level set is closed and the distance is attained.
-::: proof
+::: {.proof}
 The distance function
 \[
 d_K(x):=d(x,K)
@@ -72,7 +72,7 @@ is continuous on compact $K$, so it attains its minimum at some $y_x\in K$. Thus
 :::
 
 <1>2. Find a quarter-area ball inside the complement of $K_\delta$.
-::: proof
+::: {.proof}
 Fix $x\in K_\delta$ and $0<\varepsilon<\delta$. Let
 \[
 u:=\frac{y_x-x}{|y_x-x|}
@@ -123,7 +123,7 @@ L^2(B_\varepsilon(x)\cap K_\delta^c)
 :::
 
 <1>3. Apply the Lebesgue differentiation theorem.
-::: proof
+::: {.proof}
 Suppose $L^2(K_\delta)>0$. Since $K_\delta$ is measurable, the Lebesgue differentiation theorem applied to $\mathbf1_{K_\delta}$ implies that for almost every $x\in K_\delta$,
 \[
 \lim_{\varepsilon\downarrow0}

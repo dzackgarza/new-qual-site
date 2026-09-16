@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian topological space and let $\mcp$ be a property of closed subsets of $X$.
 Assume that for any closed subset $Y$ of $X$, if $\mcp$ holds for every proper closed subset of $Y$ then $\mcp$ holds for $Y$.
 In particular, $\mcp$ must hold for the empty set.

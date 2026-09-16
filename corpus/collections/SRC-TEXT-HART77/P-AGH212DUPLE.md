@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For given $n, d > 0$, let $M_0, M_1, \ldots, M_N$ be all the monomials of degree $d$ in the $n+1$ variables $x_0,\ldots,x_n$, where $N = \binom{n+d}{n} - 1$.
 Define $\rho_d : \PP^n \to \PP^N$ by
 \[

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 a. In parts:
   - Given a definition of $L^\infty(\RR^n)$.
   - Verify that $\norm{\wait}_\infty$ defines a norm on $L^\infty(\RR^n)$.

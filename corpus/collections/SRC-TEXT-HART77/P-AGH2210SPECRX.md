@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe $\Spec \RR[x]$.
 How does its topological space compare to the set $\RR$?
 To $\CC$?

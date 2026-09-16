@@ -19,7 +19,7 @@ audit:
   note: Cleaned Real Analysis Problem 26 against page 10 of the source PDF and added an erratum remark for the missing hypothesis ab > 0.
 ---
 
-::: problem
+::: {.problem}
 Show that $\displaystyle\int_0^1 \frac{dx}{(ax + b(1-x))^2} = \frac{1}{ab}$, $a, b \in \mathbb{R}$.
 :::
 

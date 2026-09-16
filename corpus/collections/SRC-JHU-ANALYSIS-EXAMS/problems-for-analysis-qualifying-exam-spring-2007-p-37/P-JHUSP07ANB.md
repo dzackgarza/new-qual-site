@@ -29,12 +29,12 @@ audit:
 2) Calculate the integral $\textstyle \int _ { 0 } ^ { 2 \pi } { \frac { d \theta } { 1 - 2 a \cos \theta + a ^ { 2 } } }$ , where $0 < a < 1$
 :::
 
-::: solution
+::: {.solution}
 The integral is $\boxed{2\pi/(1-a^2)}$.
 
 <1>1. The unit-circle substitution produces a rational contour integral.
 
-::: proof
+::: {.proof}
 Since $0<a<1$, the real denominator is
 $$
 1-2a\cos\theta+a^2=|e^{i\theta}-a|^2\geq(1-a)^2>0,
@@ -51,7 +51,7 @@ $$
 
 <1>2. The pole at $a$ gives the value.
 
-::: proof
+::: {.proof}
 The two poles are $a$ and $1/a$. Only $a$ lies inside
 the unit circle, and neither lies on it. The enclosed
 pole is simple, with residue $1/(i(1-a^2))$.

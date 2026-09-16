@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove that any linear function $L: \mathbb{R}^2 \to \mathbb{R}^2$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 L(x,y)=(ax+by,cx+dy)

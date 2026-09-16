@@ -19,6 +19,6 @@ audit:
   note: Restored the lost arrow in N to infinity against Real Analysis Problem 52 on page 12 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 For what values of $\alpha$ the series $\displaystyle\sum_{n=1}^{N} \frac{1}{n^\alpha}$ diverges as $N \to \infty$?
 :::

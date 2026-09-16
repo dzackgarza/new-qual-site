@@ -26,7 +26,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 1. Show that $L^2([0,1])\subseteq L^1([0,1])$ and that $L^2([0,1])$ is dense in $L^1([0,1])$.
 
 2. Let $\Lambda$ be a continuous linear functional on $L^1([0,1])$.
@@ -43,9 +43,9 @@ audit:
    \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Inclusion and density.
-::: proof
+::: {.proof}
 By Cauchy--Schwarz,
 \[
 \|f\|_1
@@ -59,7 +59,7 @@ Bounded measurable functions lie in $L^2([0,1])$, and bounded simple functions a
 :::
 
 <1>2. Restrict $\Lambda$ to $L^2$ and apply Riesz.
-::: proof
+::: {.proof}
 For $f\in L^2$,
 \[
 |\Lambda(f)|\le \|\Lambda\|\,\|f\|_1
@@ -73,7 +73,7 @@ Thus $\Lambda|_{L^2}$ is a bounded linear functional on the Hilbert space $L^2([
 :::
 
 <1>3. Prove that $g\in L^\infty$ and $\|g\|_\infty\le\|\Lambda\|$.
-::: proof
+::: {.proof}
 Let $M:=\|\Lambda\|$. Suppose for contradiction that
 \[
 m(E)>0,
@@ -103,7 +103,7 @@ so $g\in L^\infty$ and
 :::
 
 <1>4. Extend the representation to every $L^1$ function.
-::: proof
+::: {.proof}
 Let $f\in L^1$. Choose $f_n\in L^2$ with
 \[
 \|f_n-f\|_1\to0.
@@ -125,7 +125,7 @@ for every $f\in L^1$.
 :::
 
 <1>5. Prove equality of the norms.
-::: proof
+::: {.proof}
 The representation and Hölder's inequality give
 \[
 |\Lambda(f)|\le\|f\|_1\|g\|_\infty,

@@ -20,7 +20,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a CW complex and let $\pi : Y \to X$ be a covering space.
 
 Show that $Y$ is compact iff $X$ is compact and $\pi$ has finite degree.

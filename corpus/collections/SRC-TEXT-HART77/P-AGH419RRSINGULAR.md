@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be an integral projective scheme of dimension 1 over $k$.
 Let $X_{\reg}$ be the set of regular points of $X$.
 

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 1. Prove that
 
 $$
@@ -30,7 +30,7 @@ Here, $\int _ { 0 } ^ { \infty }$ is interpreted as lim $R {  } { \infty } \int 
 Figure 14. The contour in Exercise 1
 :::
 
-::: solution
+::: {.solution}
 For $R>0$, integrate the entire function $e^{-z^2}$ around the positively oriented boundary of the sector
 \[
 0\le |z|\le R,

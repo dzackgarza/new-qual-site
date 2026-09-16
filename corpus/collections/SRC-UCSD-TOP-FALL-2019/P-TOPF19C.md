@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Compute the integer homology $H_*(\mathbb{RP}^2 \times \mathbb{RP}^2; \mathbb{Z})$.
 :::
 

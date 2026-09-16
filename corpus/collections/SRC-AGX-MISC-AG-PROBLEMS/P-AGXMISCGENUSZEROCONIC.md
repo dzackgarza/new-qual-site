@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Is every smooth projective curve of genus 0 defined over the field of complex numbers isomorphic to a conic in the projective plane?
 Give an explanation for your answer.
 :::
 
-::: solution
+::: {.solution}
 Sketch: yes.
 Apply the Riemann--Roch theorem, which guarantees the existence of a nonconstant meromorphic function with a simple pole at exactly one point.
 Argue that this meromorphic function identifies the curve with $\PP^1$, and using that fact, embed the curve as a conic in the plane in any convenient way.

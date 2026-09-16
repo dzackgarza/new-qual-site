@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a Zariski space (II, Ex.
 3.17). Let $P \in X$ be a closed point, and let $X_P$ be the subset of $X$ consisting of all points $Q \in X$ such that $P \in \bar{\ts{Q}}$.
 We call $X_P$ the **local space** of $X$ at $P$, and give it the induced topology.

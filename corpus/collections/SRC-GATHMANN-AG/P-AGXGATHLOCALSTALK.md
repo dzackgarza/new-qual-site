@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a\in \RR$, and consider sheaves $\mcf$ on $\RR$ with the standard topology:
 
 1. $\mcf \da$ the sheaf of continuous functions;

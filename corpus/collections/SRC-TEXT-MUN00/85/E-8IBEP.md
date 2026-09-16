@@ -24,7 +24,7 @@ The fundamental group of $X$ has free generators $\alpha$ and $\beta$, where $\a
 Find a system of free generators for the subgroup $q_*(\pi_1(E, e_0))$, where $e_0$ is the origin in $\mathbb{R}^2$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Find a system of free generators for the subgroup $H = q_*(\pi_1(E, e_0)) \le \pi_1(X, x_0) \cong F(\alpha, \beta)$ corresponding to the grid covering of the figure-eight space.
 
 <1>1. Identification of the total space and covering map:

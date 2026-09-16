@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a regular noetherian scheme, and $\mce$ a locally free coherent sheaf of rank $\geq 2$ on $X$.
 
 a. Show that $\Pic \PP(\mce) \cong \Pic X \times \ZZ$.

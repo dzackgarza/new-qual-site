@@ -15,7 +15,7 @@ audit:
   note: Checked against Linear Algebra, Problem 2, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the matrix $A = { \left[ \begin{array} { l l } { 1 } & { 2 } \\ { 5 } & { 4 } \end{array} \right] }$
 
 (a)Find $A ^ { T } , A ^ { 2 } , A ^ { 3 } , A ^ { - 1 }$ , TrA, det A.

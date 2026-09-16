@@ -28,7 +28,7 @@ c.
 Give an example of a finite extension $L/K$ that is not separable.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - $L/k$ is **separable** iff every element $\alpha$ is separable, i.e. the minimal polynomial $m(x)$ of $\alpha$ is a separable polynomial, i.e. $m(x)$ has no repeated roots in (say) the algebraic closure of $L$ (or just any splitting field of $m$).

@@ -25,7 +25,7 @@ audit:
   note: Replaced the unsupported existence assertion by explicit index-d surface-cover constructions.
 ---
 
-::: problem
+::: {.problem}
 For any natural number $g$ let $\Sigma_g$ denote the (compact, orientable) surface of genus $g$.
 
 Determine, with proof, all numbers $g$ with the property that there exists a covering space $\pi : \Sigma_5 \to \Sigma_g$ .

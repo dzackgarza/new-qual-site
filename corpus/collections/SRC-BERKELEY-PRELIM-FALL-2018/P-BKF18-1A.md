@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 \int_0^1 x^{-x}\,dx=\sum_{n=1}^{\infty}n^{-n}.

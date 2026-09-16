@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a finite field with $q$ elements. For $f\in F[x]$, write
 \[
 \varphi_f(a)=f(a)

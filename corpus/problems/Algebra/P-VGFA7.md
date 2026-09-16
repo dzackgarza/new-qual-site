@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $n \ge 2$, and let $G$ be a finite group of odd order $|G| = m$.
 Let $\phi: S_n \to G$ be a group homomorphism.
 (1) Prove that if $\tau \in S_n$ is a transposition, then $\tau \in \ker\phi$.
@@ -29,7 +29,7 @@ Let $\phi: S_n \to G$ be a group homomorphism.
 (3) Does this result depend on whether $n$ is even or odd?
 :::
 
-::: solution
+::: {.solution}
 Let $\tau\in S_n$ be a transposition. Since $\tau^2=1$,
 \[
 \phi(\tau)^2=1.

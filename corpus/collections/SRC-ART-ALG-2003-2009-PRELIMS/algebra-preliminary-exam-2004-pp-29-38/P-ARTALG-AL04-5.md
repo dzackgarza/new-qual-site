@@ -24,7 +24,7 @@ audit:
   note: "Checked Euclidean division, the nonprincipal ideal (2,x), multiplicativity of the quadratic norm, and irreducibility and nonassociation of every factor of 6."
 ---
 
-::: problem
+::: {.problem}
 Give an example of each of the following:
 
 (a) A Euclidean domain.
@@ -34,13 +34,13 @@ Give an example of each of the following:
 (c) An integral domain that is not a Unique Factorization Domain.
 :::
 
-::: solution
+::: {.solution}
 Examples are, respectively, $\mathbb Z$, $\mathbb Z[x]$, and
 $\mathbb Z[\sqrt{-5}]$.
 
 <1>1. The ring $\mathbb Z$ is Euclidean.
 
-::: proof
+::: {.proof}
 Use the Euclidean function $d(b)=|b|$ for $b\ne0$. For integers
 $a,b$ with $b\ne0$, integer division gives $a=qb+r$ with
 $0\leq r<|b|$. Thus $r=0$ or $d(r)<d(b)$, as required.
@@ -49,7 +49,7 @@ $0\leq r<|b|$. Thus $r=0$ or $d(r)<d(b)$, as required.
 <1>2. The ring $\mathbb Z[x]$ is a unique factorization domain
 but not a principal ideal domain.
 
-::: proof
+::: {.proof}
 Unique prime factorization makes $\mathbb Z$ a unique factorization
 domain. Gauss's lemma implies that a polynomial ring in one variable
 over a unique factorization domain is again a unique factorization
@@ -67,7 +67,7 @@ $x$ because its coefficient of $x$ is odd. No generator is possible.
 <1>3. The integral domain $R=\mathbb Z[\sqrt{-5}]$ is not a
 unique factorization domain.
 
-::: proof
+::: {.proof}
 The ring embeds in $\mathbb C$, so it is a domain. For
 $z=a+b\sqrt{-5}$ define
 $$

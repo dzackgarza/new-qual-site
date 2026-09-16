@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A=(a_{ij})$ be a real $n\times n$ matrix satisfying
 \[
 a_{ii}>0,

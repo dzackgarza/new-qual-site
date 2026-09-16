@@ -16,14 +16,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a) Define what is meant for an infinite series $\sum_{n=1}^\infty b_n$ of real numbers $b_n$ to converge.
 
 b) Let $a_1, a_2, \dots$ be a sequence of positive real numbers such that $a_1 > a_2 > \cdots > a_n > a_{n+1} > \cdots$ and $\lim_{n \to \infty} a_n = 0$.
 Prove that the infinite series $\sum_{n=1}^\infty (-1)^n a_n$ converges.
 :::
 
-::: solution
+::: {.solution}
 The series $\sum_{n=1}^\infty b_n$ converges if its sequence of partial sums
 \[
 s_N=\sum_{n=1}^N b_n

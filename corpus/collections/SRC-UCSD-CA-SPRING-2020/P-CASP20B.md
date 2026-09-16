@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove the following statement.
 
 Let $U = \{z \in \mathbb{C} : |z| > 3\}$.
@@ -24,7 +24,7 @@ f'(z) = \frac{z^2 + 2}{z(z-1)(z-2)}.
 $$
 :::
 
-::: solution
+::: {.solution}
 The statement is false. If such an $f$ existed, then its derivative would have
 zero integral around every closed curve in $U$. Let
 \[

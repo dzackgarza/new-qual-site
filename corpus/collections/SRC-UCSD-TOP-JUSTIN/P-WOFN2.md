@@ -22,7 +22,7 @@ audit:
   note: This statement is also problem 8 of the official UGA Spring 2008 topology exam; added that missing source appearance.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ consist of two copies of the solid torus $\DD^2 \times S^1$, glued together by the identity map along the boundary torus $S^1 \times S^1$.
 Compute the homology groups of $X$.
 :::

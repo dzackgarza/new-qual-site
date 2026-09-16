@@ -18,11 +18,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Show there are exactly two groups of order 21 up to isomorphism.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $G$ be a group of order
 \[
 21=3\cdot7.

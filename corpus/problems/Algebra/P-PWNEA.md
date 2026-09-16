@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine the integral closure of $\ZZ$ in $\QQ(i)$.
 :::
 

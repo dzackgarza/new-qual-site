@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 35, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find Jacobi matrix and Jacobian for the change of coordinates in $\mathbb { R } ^ { 3 }$ from Cartesian coordinates to
 
 (a) spherical coordinates,

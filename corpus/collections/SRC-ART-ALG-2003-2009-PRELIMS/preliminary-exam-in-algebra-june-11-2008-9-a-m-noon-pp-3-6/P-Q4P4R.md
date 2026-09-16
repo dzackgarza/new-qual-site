@@ -25,7 +25,7 @@ audit:
   note: "Expanded the polynomial identity behind the hint and checked the distinct roots and the generator's three-cycle action."
 ---
 
-::: problem
+::: {.problem}
 Find the Galois groups, over $\mathbb{Q}$, of the following polynomials.
 
 a. $x^4 + 4$.
@@ -34,10 +34,10 @@ b. $x^3 + x^2 - 2x - 1$.
 Hint: show that if $r$ is a root, then $r^2 - 2$ also is a root.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The Galois group of $x^4+4$ over $\mathbf Q$ is $C_2$.
 
-::: proof
+::: {.proof}
 The factorization
 $$
 x^4+4=(x^2-2x+2)(x^2+2x+2)
@@ -53,7 +53,7 @@ conjugation, giving $C_2$.
 <1>2. The Galois group of $h(x)=x^3+x^2-2x-1$ over $\mathbf Q$ is
 $C_3$, acting cyclically on its roots.
 
-::: proof
+::: {.proof}
 <2>1. The only possible rational roots are $\pm1$, but
 $h(1)=-1$ and $h(-1)=1$. A reducible cubic has a linear factor, so
 $h$ is irreducible. If $\alpha$ is any root, then

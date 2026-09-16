@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and explain Witt's Cancellation Theorem and Witt's Extension Theorem for quadratic forms (over $\mathbb{R}$ and general fields).
 :::
 
-::: solution
+::: {.solution}
 Assume throughout that the field $k$ has characteristic different from $2$ and that the quadratic spaces are finite-dimensional and nondegenerate.
 
 **Witt extension theorem (Witt's lemma).** Let $(V,q)$ be a nondegenerate quadratic space. If $U,U'\subseteq V$ and

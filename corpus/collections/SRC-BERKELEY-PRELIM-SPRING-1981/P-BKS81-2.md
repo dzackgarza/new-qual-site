@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $T:V\to V$ be linear. Suppose $x\in V$ satisfies
 \[
 T^m x=0,

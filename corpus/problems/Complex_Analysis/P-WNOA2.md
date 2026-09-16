@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f$ is holomorphic on the strip $S = \{x+iy \mid x\in \mathbb{R},~ -1<y<1\}$ with $|f(z)| \leq A (1 + |z|)^\nu$ for $\nu \ge 0$ a fixed real number.
 Show that for each integer $n\geq 0$ there exists an $A_n \geq 0$ such that $|f^{(n)}(x)| \leq A_n (1 + |x|)^\nu$ for all $x\in \mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 Fix $n\ge0$. For each real $x$, the closed disk $\overline{D(x,1/2)}$ lies in the strip $S$. If $|\zeta-x|=1/2$, then
 $$
 1+|\zeta|\le 1+|x|+\frac12

@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $T$ be a real symmetric tridiagonal $n\times n$ matrix with diagonal entries $a_1,\dots,a_n$ and nonzero off-diagonal entries $b_1,\dots,b_{n-1}$:
 \[
 T=\begin{pmatrix}

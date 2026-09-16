@@ -15,7 +15,7 @@ audit:
   note: Checked against Section I, item 7 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $D$ be the bounded region inside
 \[
 \{z\in\mathbb C:|\operatorname{Re}z|+|\operatorname{Im}z|=1\},

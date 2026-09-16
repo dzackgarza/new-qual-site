@@ -32,7 +32,7 @@ Discuss.
 If you cannot answer in general do it for $X=\mathbb R$ with the usual topology.
 :::
 
-::: remark
+::: {.remark}
 The source page prints an extra colon immediately before the arrow in the map notation; the map is rendered here with the conventional $\to$ notation.
 :::
 

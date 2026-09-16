@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 11, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Consider the particle moving in a gas of other particles.
 Given that the last collision of the particle occurred at $t = 0$ , the probability that the next collision will occur between t and $t + \Delta t$ equals $\lambda \Delta t + o ( \Delta t )$ , when $\Delta t  0$ . Find the probability $P ( t )$ that the time between the nearest collisions will exceed t.
 :::

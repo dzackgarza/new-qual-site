@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What can you say about $n \times n$ matrices $A$ that satisfy a given polynomial $P(x) = 0$ over an algebraically closed field $k = \bar{k}$? How many similarity classes and how many such matrices are there?
 (2) What about over a finite field $\mathbb{F}_q$? How many similarity classes and how many individual matrices satisfy $P(A) = 0$?
 :::
 
-::: solution
+::: {.solution}
 For any field $K$,
 \[
 P(A)=0\iff \mu_A\mid P,

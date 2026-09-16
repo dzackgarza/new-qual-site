@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Show that any conic in $\AA^2$ is isomorphic either to $\AA^1$ or to $\AA^1 \sm \ts{0}$.
 
 2. Show that $\AA^1$ is not isomorphic to any proper open subset of itself.

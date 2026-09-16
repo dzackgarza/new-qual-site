@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A rational curve of degree 4 in $\PP^3$ is contained in a unique quadric surface $Q$, and $Q$ is necessarily nonsingular.
 :::

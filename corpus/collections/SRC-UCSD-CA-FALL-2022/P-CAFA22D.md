@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be a bounded region.
 
 (i) Show that if $f \in H(G)$ and $B = B(a,r) \subset G$, then
@@ -30,7 +30,7 @@ endowed with the metric $d(f,g) = \|f - g\|_1$ is complete.
 Note: You may use the result in part (i) even if you did not prove this.
 :::
 
-::: solution
+::: {.solution}
 For (i), the subharmonic mean-value inequality for $|f|$ gives
 \[
 |f(a)|\le \frac1{2\pi}\int_0^{2\pi}|f(a+\rho e^{it})|\,dt

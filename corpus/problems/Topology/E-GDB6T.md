@@ -19,11 +19,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Show that a compact Hausdorff space is metrizable if and only if it is second-countable.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a compact Hausdorff space $X$ is metrizable if and only if it has a countable basis (second-countable).
 
 <1>1. Forward direction: Compact and metrizable $\implies$ second-countable.

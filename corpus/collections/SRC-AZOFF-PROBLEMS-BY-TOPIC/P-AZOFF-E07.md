@@ -15,7 +15,7 @@ audit:
   note: Checked against Liouville, FTA, and power series, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose the complex power series $\textstyle \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n }$ converges for some $z _ { 0 } \neq 0$
 
 a) Prove that the series converges absolutely for each z with $| z | < | z _ { 0 } |$

@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function, and define $f_n(z) = f(nz)$.
 Suppose that $\mathcal{F} = \{f_n : n \geq 1\}$ is a normal family on the annulus $\{1 < |z| < 2\}$.
 Show that $f$ is constant.
 :::
 
-::: solution
+::: {.solution}
 Write the Taylor series of the entire function as
 \[
 f(w)=\sum_{m=0}^\infty a_m w^m.

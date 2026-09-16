@@ -23,15 +23,15 @@ audit:
   note: "Proved the underdetermined homogeneous-system result by elementary elimination and induction, then used it to compare the sizes of maximal independent subsets without invoking rank-nullity."
 ---
 
-::: problem
+::: {.problem}
 (a) Using only the axioms for a field $F$, prove that a system of $m$ homogeneous linear equations in $n$ unknowns with $m<n$ and coefficients in $F$ has a nonzero solution.
 
 (b) Use part (a) to show that if $V$ is a vector space over $F$ spanned by finitely many elements, then every maximal linearly independent subset of $V$ has the same number of elements.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a) by induction on the number of equations.
-::: proof
+::: {.proof}
 We prove the following statement for every $m\ge0$: if
 $$
 m<n,
@@ -81,7 +81,7 @@ Thus every such homogeneous system has a nonzero solution.
 :::
 
 <1>2. Any linearly independent subset of a finitely spanned space is finite.
-::: proof
+::: {.proof}
 Suppose
 $$
 V=\operatorname{span}\{v_1,\ldots,v_N\}.
@@ -110,7 +110,7 @@ most $N$ elements.
 :::
 
 <1>3. Every maximal linearly independent subset spans $V$.
-::: proof
+::: {.proof}
 Let $B$ be maximal linearly independent. By step <1>2 it is finite. If
 $$
 \operatorname{span}B\ne V,
@@ -124,7 +124,7 @@ $B$ spans $V$ and is a basis.
 :::
 
 <1>4. Any two maximal linearly independent subsets have the same cardinality.
-::: proof
+::: {.proof}
 Let
 $$
 B=\{b_1,\ldots,b_r\},

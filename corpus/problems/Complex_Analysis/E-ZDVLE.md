@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $\Re(f(z)) \geq 0$ for all $z\in \CC$, then $f$ is constant.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Define $g(z) \da e^{-f(z)}$, then
 \[
 \abs{g(z)} = e^{-\Re(f(z))} \leq e^0 = 1

@@ -23,16 +23,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(\xi_m)_{m \geq 1}$ be a sequence of vectors in a Hilbert space $H$.
 Assume that $\|\xi_m\| \leq 1$ and $\lim_{n \to \infty} \langle \xi_n, \xi_m \rangle = 0$ for every $m \geq 1$.
 Prove that $\lim_{n \to \infty} \langle \xi_n, \xi \rangle = 0$ for every $\xi \in H$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove convergence on the closed span of the sequence.
-::: proof
+::: {.proof}
 Let
 \[
 M:=\overline{\operatorname{span}}\{\xi_m:m\ge1\}.
@@ -68,7 +68,7 @@ for every $\xi\in M$.
 :::
 
 <1>2. Extend the conclusion to all of $H$.
-::: proof
+::: {.proof}
 Every $\xi\in H$ has an orthogonal decomposition
 \[
 \xi=\xi_M+\xi_\perp,

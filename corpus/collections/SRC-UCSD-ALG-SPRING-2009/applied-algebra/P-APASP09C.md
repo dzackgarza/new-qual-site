@@ -24,7 +24,7 @@ audit:
   note: Used the SVD coordinates to characterize all least-squares solutions and showed the pseudoinverse solution uniquely minimizes the Euclidean norm by setting the nullspace coordinates to zero.
 ---
 
-::: problem
+::: {.problem}
 Let $\tilde{x}$ be a least squares solution to $Ax = b$, where $A$ is $m \times n$ and $m \geq n$.
 Let $A^\dagger$ be the pseudo-inverse of $A$.
 Use the Singular Value Decomposition to show that $\tilde{x} = A^\dagger b$ is the minimum 2-norm least squares solution to $Ax = b$, i.e.\ show

@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that the center of the alternating group $A_n$ is trivial for all $n \ge 4$:
 $$Z(A_n) = \{e\} \quad \text{for all } n \ge 4.$$
 :::
 
-::: solution
+::: {.solution}
 Let $\sigma\in Z(A_n)$ with $n\ge4$. For every $3$-cycle $(i\,j\,k)\in A_n$, centrality gives
 \[
 \sigma(i\,j\,k)\sigma^{-1}=(i\,j\,k).

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that any two finite fields of the same order are isomorphic.
 :::
 
-::: solution
+::: {.solution}
 Let $K$ and $L$ be finite fields with
 \[
 |K|=|L|=q.
@@ -37,14 +37,14 @@ field $\mathbb F_p$ up to the unique isomorphism fixing $1$.
 \[
 f(T)=T^q-T\in\mathbb F_p[T].
 \]
-::: proof
+::: {.proof}
 For $a=0$ this is immediate. If $a\ne0$, the multiplicative group of the field
 has order $q-1$, so Lagrange's theorem gives $a^{q-1}=1$, hence $a^q=a$.
 :::
 
 <1>2. The polynomial $f(T)=T^q-T$ has exactly the $q$ elements of the field as
 its roots.
-::: proof
+::: {.proof}
 By <1>1 all $q$ elements are roots. Since $f$ has degree $q$, it has no further
 roots in any extension once these $q$ distinct roots are present. Distinctness
 also follows from
@@ -55,13 +55,13 @@ in characteristic $p$, so $f$ is separable.
 :::
 
 <1>3. Both $K$ and $L$ are splitting fields of $T^q-T$ over $\mathbb F_p$.
-::: proof
+::: {.proof}
 By <1>2 the polynomial splits completely in each field and its roots generate
 the whole field because its root set is the entire underlying set.
 :::
 
 <1>4. Therefore $K\cong L$.
-::: proof
+::: {.proof}
 Splitting fields of a fixed polynomial over a fixed base field are unique up to
 base-field isomorphism. Applying this to $T^q-T$ over $\mathbb F_p$ and using
 <1>3 yields an $\mathbb F_p$-isomorphism $K\to L$.

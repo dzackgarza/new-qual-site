@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space, let $Z$ be a closed subset with inclusion $i: Z \to X$, let $U = X \sm Z$ be the complementary open subset, and let $j: U \to X$ be its inclusion.
 
 a. Let $\mcf$ be a sheaf on $Z$.

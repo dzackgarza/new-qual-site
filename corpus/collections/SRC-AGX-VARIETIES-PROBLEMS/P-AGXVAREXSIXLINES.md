@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $V(x^2+y^2+z^2,xyz)$ is a union of 6 lines.
 :::

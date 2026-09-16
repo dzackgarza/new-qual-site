@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Laurent expansion at $z=0$ for
 \[
 f(z) \da e^{1\over z}\cos\qty{1\over z}
@@ -22,7 +22,7 @@ f(z) \da e^{1\over z}\cos\qty{1\over z}
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note that a direct expansion won't work, since there are infinitely many contributions to the constant term.
 Instead, a trick: consider $g(z) \da e^z\cos(z)$, so $g(1/z ) = f(z)$.
 Expanding $g$ is easier:

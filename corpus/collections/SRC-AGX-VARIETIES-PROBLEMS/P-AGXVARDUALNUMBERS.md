@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 \Sch_{/ {k}} \qty{ {k[\eps]\over \eps^2}, X} \cong \ts{(p, v) \in X\cross \T_p X \st p \text{ is rational over } k},\quad \text{i.e. } k(p) = k

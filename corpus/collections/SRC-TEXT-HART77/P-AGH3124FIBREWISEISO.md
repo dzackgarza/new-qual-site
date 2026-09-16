@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be an integral scheme of finite type over an algebraically closed field $k$.
 Let $f: X \to Y$ be a flat projective morphism whose fibres are all integral schemes.
 Let $\mcl, \mcm$ be invertible sheaves on $X$, and assume for each $y \in Y$ that $\mcl_y \cong \mcm_y$ on the fibre $X_y$.

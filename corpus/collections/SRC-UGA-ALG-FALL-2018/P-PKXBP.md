@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group whose order is divisible by a prime number $p$, and let $P \trianglelefteq G$ be a normal $p$-subgroup of $G$ with $|P| = p^c$ for some integer $c \ge 1$.
 
 (a) Show that $P$ is contained in every Sylow $p$-subgroup of $G$.
@@ -27,7 +27,7 @@ Let $G$ be a finite group whose order is divisible by a prime number $p$, and le
 Normality of $P$ buys you a *subgroup* $PS$, not merely a subset. Compute its order.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a normal $p$-subgroup is contained in the intersection of all Sylow $p$-subgroups in (a), and deduce that a maximal subgroup either contains $P$ or has $p$-power index in (b).
 
 <1>1. Part (a): $P$ is contained in every Sylow $p$-subgroup of $G$.

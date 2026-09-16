@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Glue two triangles together to make the torus $T = S^1 \times S^1$ as shown on the source sheet.
 Write down singular chains $p, a, b, t$ representing generators of its homology groups in dimensions $0, 1, 1, 2$.
 Now let $\alpha, \beta \in H^1$ be the Poincaré duals of $[a], [b] \in H_1$.

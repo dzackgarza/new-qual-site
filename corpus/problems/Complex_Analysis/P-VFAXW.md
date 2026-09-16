@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Use this formulation to show that if $A(z)= 1-z$ then $1/A(z) = \sum z^k$.
 :::
 
-:::{.solution}
+::: {.solution}
 Noting $a_0 = 1, a_1 = -1$, we have
 
 - $b_0 = 1/a_0 = 1$

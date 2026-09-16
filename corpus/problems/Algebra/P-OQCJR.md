@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_{m\times n}(F)$. Prove that the homogeneous system
 \[
 Ax=0

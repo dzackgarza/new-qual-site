@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Analyze groups of order $p^2 q$.
 
   > Hint: Consider the cases when $q$ does or does not divide $p^2 - 1$.

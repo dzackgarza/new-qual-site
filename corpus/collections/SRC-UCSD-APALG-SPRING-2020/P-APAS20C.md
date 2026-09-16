@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be an inner product space of dimension $n$, and $\phi,\psi\colon V\to V$ two positive definite Hermitian maps.
 You may use without proof that $\psi$ has a unique positive definite square root $\psi^{1/2}$, and that $\psi$ and $\psi^{1/2}$ are non-singular.
 

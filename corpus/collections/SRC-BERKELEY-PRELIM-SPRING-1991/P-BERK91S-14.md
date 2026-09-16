@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $x(t)$ be a nontrivial solution of
 \[
 \frac{dx}{dt}=Ax,

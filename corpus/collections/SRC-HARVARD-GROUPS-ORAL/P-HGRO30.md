@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If every subgroup of a group is normal, must the group be abelian?
 Prove the claim or give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 No. The quaternion group
 \[
 Q_8=\{\pm1,\pm i,\pm j,\pm k\}
@@ -34,7 +34,7 @@ Q_8=\{\pm1,\pm i,\pm j,\pm k\}
 is nonabelian, but every subgroup of $Q_8$ is normal.
 
 <1>1. The group $Q_8$ is nonabelian.
-::: proof
+::: {.proof}
 Its defining multiplication gives
 \[
 ij=k,
@@ -45,7 +45,7 @@ so $ij\ne ji$.
 :::
 
 <1>2. Every subgroup of $Q_8$ is normal.
-::: proof
+::: {.proof}
 The subgroups are
 \[
 \{1\},\quad \{\pm1\},\quad
@@ -57,7 +57,7 @@ normal.
 :::
 
 <1>3. Hence normality of every subgroup does not imply commutativity.
-::: proof
+::: {.proof}
 Combine <1>1 and <1>2.
 :::
 :::

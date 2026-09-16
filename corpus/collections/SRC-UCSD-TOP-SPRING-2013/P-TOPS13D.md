@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Consider the CW complex constructed as follows.
 First construct a Klein bottle $K$ out of two $2$-cells.
 Attach to $K$ two additional $2$-cells.

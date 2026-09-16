@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f:\mathbb C\to\mathbb C$ is injective and entire. Prove that there are $a,b\in\mathbb C$ with $a\ne0$ such that
 \[
 f(z)=az+b

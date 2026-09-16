@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 For each $n\in \ZZ^{\geq 1}$, let
 \[
 P_n(z) = 1 + z + {1\over 2!} z^2 + \cdots + {1\over n!}z^n
@@ -24,7 +24,7 @@ P_n(z) = 1 + z + {1\over 2!} z^2 + \cdots + {1\over n!}z^n
 Show that for sufficiently large $n$, the polynomial $P_n$ has no zeros in $\abs{z} < 10$, while the polynomial $P_n(z) - 1$ has precisely 3 zeros there.
 :::
 
-:::{.solution}
+::: {.solution}
 More is true: this will hold for any disc of arbitrary radius $R$, with $n$ depending on $R$.
 Fix $R$, then use that $P_n(z) \convergesto{n\to\infty} e^z$ uniformly on the compact disc $\abs{z} \leq R$.
 Consequently, setting $g_n(z) \da {P_n(z)\over e^z}$, we have $g_n(z) \to 1$ uniformly on this disc, for any $\eps> 0$ this can be used to produce an $n\gg 1$ such that $\abs{ g_n(z) - 1 } < \eps$ for all $\abs{z} \leq R$.

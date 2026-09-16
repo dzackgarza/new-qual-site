@@ -15,7 +15,7 @@ audit:
   note: Checked against Section III, problem 1 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be analytic on the disk $\Delta(z_0,r)$ and suppose there is $m>0$ such that
 \[
 |f(z)-f(z_0)|\le m\qquad(z\in\Delta(z_0,r)).

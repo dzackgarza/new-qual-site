@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that each of the following is an equivalence relation.
 
 1. **Similarity** on $M_n(R)$: $A\sim B$ if there exists $P\in\operatorname{GL}_n(R)$ such that

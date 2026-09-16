@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Given
 \[
 \int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt\pi,

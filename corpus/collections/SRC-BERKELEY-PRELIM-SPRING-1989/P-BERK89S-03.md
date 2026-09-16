@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:[0,1]\times[0,1]\to\mathbb R$ be continuous and define
 \[
 g(x)=\max\{f(x,y):y\in[0,1]\}.

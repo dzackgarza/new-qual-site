@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field of characteristic $\neq 2$.
 Let $f \in k[x_1, \ldots, x_n]$ be a square-free nonconstant polynomial, i.e. in the unique factorization of $f$ into irreducibles there are no repeated factors.
 Let $A = k[x_1, \ldots, x_n, z]/(z^2 - f)$.

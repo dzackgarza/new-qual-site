@@ -16,7 +16,7 @@ audit:
   note: The retained PDF confirms the coefficient b in a y(0)+b y'(0)+c y''(0)=d; the extraction dropped it.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $y:\mathbb R\to\mathbb R$ be three times differentiable and satisfy
 \[
 y'''-y=0.

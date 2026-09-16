@@ -29,7 +29,7 @@ audit:
   note: "Compared both complete copies of Fall 2010 problem 8. Retained all three parts and this proof on the actual source card, removing the duplicate P-JHUMAY11ANP and its unsupported May 2011 appearance."
 ---
 
-::: problem
+::: {.problem}
 Let $D=\{w\in\mathbb C:|w|<1\}$, and let $g:D\to D$
 be a surjective holomorphic map with $g(0)=0$. Suppose
 that $g$ is a two-sheeted branched covering, with its
@@ -42,10 +42,10 @@ only ramification point at $w=0$. An example is $g(w)=w^2$.
 (c) Suppose that $g(1/2)=i/4$. What is the strongest statement about $g(w)$ that follows from (b)? Explain.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a): derivatives determine local multiplicity, while fiber cardinalities specify the two sheets.
 
-::: proof
+::: {.proof}
 For a holomorphic map $g:D\to D$, the explicit conditions are
 $$
 g(0)=0,\qquad g'(0)=0,\qquad g''(0)\ne0,\qquad
@@ -92,7 +92,7 @@ This gives precisely the required single quadratic branch.
 
 <1>2. Part (b): division by the double zero gives the bound.
 
-::: proof
+::: {.proof}
 Since $g(0)=g'(0)=0$, the function
 $H(w)=g(w)/w^2$ for $w\ne0$ extends holomorphically
 across zero by the Taylor series, with $H(0)=g''(0)/2$.
@@ -111,7 +111,7 @@ zero, not the stronger global covering hypotheses.
 
 <1>3. Part (c): the extra value determines the entire map.
 
-::: proof
+::: {.proof}
 The assumed value gives $H(1/2)=(i/4)/(1/4)=i$.
 Thus the holomorphic function $H$, bounded by one,
 attains modulus one at an interior point. The maximum

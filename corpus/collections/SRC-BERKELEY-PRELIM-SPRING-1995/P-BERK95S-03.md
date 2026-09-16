@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $n$ be a positive integer and $0<\theta<\pi$. Prove that
 \[
 \frac1{2\pi i}\int_{|z|=2}

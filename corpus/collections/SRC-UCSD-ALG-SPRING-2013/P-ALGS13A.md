@@ -25,7 +25,7 @@ audit:
   note: Constructed an explicit nonabelian semidirect product of order 2013.
 ---
 
-::: problem
+::: {.problem}
 Does there exist a non-Abelian group of order $2013 = (3)(11)(61)$?
 Justify your answer.
 :::

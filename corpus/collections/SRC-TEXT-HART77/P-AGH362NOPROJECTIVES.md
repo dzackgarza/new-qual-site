@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X=\PP_k^1$, with $k$ an infinite field.
 
 a. Show that there does not exist a projective object $\mcp \in \Mod(X)$, together with a surjective map $\mcp \to \mco_X \to 0$.

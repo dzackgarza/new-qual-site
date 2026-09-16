@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a ruled surface over the curve $C$, defined by a normalized bundle $\mathcal{E}$, and let $\mfe$ be the divisor on $C$ for which $\mathcal{L}(\mfe) \cong \bigwedge^2 \mathcal{E}$ (See 2.8.1). Let $\mfb$ be any divisor on $C$.
 
 a. If $|\mfb|$ and $|\mfb + \mfe|$ have no base points, and if $\mfb$ is nonspecial, then there is a section $D \sim C_0+\mfb f$, and $|D|$ has no base points.

@@ -19,7 +19,7 @@ audit:
   note: Repaired the garbled iterated-limit notation against Real Analysis Problem 14 on page 9 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Find $\lim_{(x,y) \to (0,0)} f(x,y)$, where
 $$
 f(x,y) = \begin{cases} x + y \sin\frac{1}{x}, & x \neq 0, \\ 0, & x = 0. \end{cases}

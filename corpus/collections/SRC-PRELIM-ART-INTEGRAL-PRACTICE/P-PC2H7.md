@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 $\cos (x) + \cos (y) = 2 \cos (\frac {x + y}{2}) \cos (\frac {x - y}{2})​$
 
 $\cos (x) - \cos (y) = - 2 \sin (\frac {x + y}{2}) \sin (\frac {x - y}{2})​$
@@ -36,7 +36,7 @@ $\sin (x) \sin (y) = - \frac {1}{2} (\cos (x + y) - \cos (x - y))$
 :::
 
 
-::: solution
+::: {.solution}
 All identities follow from
 \[
 \cos(A\pm B)=\cos A\cos B\mp\sin A\sin B,

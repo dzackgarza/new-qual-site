@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find the minimal value of the function $f ( x ) = \frac { \lambda } { 4 } ( x ^ { 2 } - v ^ { 2 } ) ^ { 2 } - \epsilon x , \lambda , \epsilon > 0$ , to the leading order in $\epsilon \ll 1$
 :::

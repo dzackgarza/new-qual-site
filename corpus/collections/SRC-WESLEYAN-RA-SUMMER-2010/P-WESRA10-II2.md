@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a Borel measure on $\mathbb R$ such that every bounded interval has finite measure and
 \[
 \mu(I)=\mu(I+r)

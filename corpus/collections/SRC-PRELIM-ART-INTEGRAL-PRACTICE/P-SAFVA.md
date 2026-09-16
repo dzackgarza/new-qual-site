@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 1. $\displaystyle \int \ln (ax + b) ~dx = \color{blue} {\frac {ax + b}{a} \ln (ax + b) - x}$
 
 - **Solution:** $u = \ln (ax + b)​$, $v = x​$, $du = \frac {a}{ax + b} ~dx​$, $dv = dx​$

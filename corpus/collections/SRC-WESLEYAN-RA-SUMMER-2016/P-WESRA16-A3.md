@@ -15,7 +15,7 @@ audit:
   note: Checked against Group A, problem A3 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md. Flash severely garbles the opening sentence of part (a), but the displayed definition of $\mu$, the words “is a countably-additive measure,” and part (b) determine the mathematical task.
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R^d\to[0,\infty)$ be measurable and define
 \[
 \mu(A)=\int_{\mathbb R^d}f\,\mathbf1_A.

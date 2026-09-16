@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that
 \[
 \lim_{R\to\infty}\int_{-R}^{R}\frac{\sin x}{x-3i}\,dx

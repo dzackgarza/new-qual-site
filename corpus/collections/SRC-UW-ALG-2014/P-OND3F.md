@@ -16,12 +16,12 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\overline{\mathbb{F}}_p$ denote an algebraic closure of the finite field $\mathbb{F}_p$.
 Show that the absolute Galois group $G = \operatorname{Gal}(\overline{\mathbb{F}}_p/\mathbb{F}_p) \cong \widehat{\mathbb{Z}}$ has **no non-trivial finite subgroups** (i.e. is torsion-free).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the profinite group $\operatorname{Gal}(\overline{\mathbb{F}}_p/\mathbb{F}_p) \cong \widehat{\mathbb{Z}}$ is torsion-free, so it has no non-trivial finite subgroups.
 
 <1>1. Structure of the Galois Group $\operatorname{Gal}(\overline{\mathbb{F}}_p/\mathbb{F}_p)$:

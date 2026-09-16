@@ -23,16 +23,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X \subseteq \mathbb{R}$ be a Borel set, let $\mu$ be the restriction of Lebesgue measure to $X$, and let $1 \leq p < q < \infty$.
 Assume that $L^q(X, \mu) \subseteq L^p(X, \mu)$ and let $T : L^q(X, \mu) \to L^p(X, \mu)$ be the inclusion map.
 Prove that $T$ is bounded and that $\mu(X) < \infty$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove that the inclusion map has closed graph.
-::: proof
+::: {.proof}
 Let $f_n\in L^q(X)$ satisfy
 \[
 f_n\to f\quad\text{in }L^q(X)
@@ -55,7 +55,7 @@ Thus $T$ is bounded.
 :::
 
 <1>2. Apply the bound to characteristic functions.
-::: proof
+::: {.proof}
 Let $E\subseteq X$ be measurable with $0<\mu(E)<\infty$. Then $\mathbf1_E\in L^q(X)$, so
 \[
 \mu(E)^{1/p}
@@ -78,7 +78,7 @@ we obtain the uniform bound
 :::
 
 <1>3. Exhaust $X$ by finite-measure sets.
-::: proof
+::: {.proof}
 Set
 \[
 E_n:=X\cap[-n,n].

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 
 \[
 I \da \int_{-\infty}^{\infty} \frac{d x}{\left(1+x^{2}\right)^{n+1}}=\frac{(2 n) !}{4^{n}(n !)^{2}} \pi .
@@ -30,7 +30,7 @@ I = {2n \choose n} {\pi \over 4^n}
 
 :::
 
-:::{.solution}
+::: {.solution}
 The integrand is $f\in \bigo\qty{1\over z^{2n+2}} \subseteq \bigo\qty{1\over z^{1+\eps}}$, so a semicircular contour will work:
 
 ![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-05-57.png)

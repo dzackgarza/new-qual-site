@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 - Prove the following implications of separation axioms, and show that they are strict: ![](../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520150233.png)
 :::
 

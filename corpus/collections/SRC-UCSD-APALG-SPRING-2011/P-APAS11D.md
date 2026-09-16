@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (a) Use the Murnaghan–Nakayama rule to compute the value of the irreducible characters of $S_5$ at the conjugacy class indexed by the partition $(2,3)$.
@@ -30,7 +30,7 @@ As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a p
 (d) Decompose $A^{(4,1)}\downarrow_{S_3\times S_2}^{S_5}$ as a sum of irreducible representations of $S_3\times S_2$.
 :::
 
-::: solution
+::: {.solution}
 The source prints $A^{(1,4)}$, but under its own convention that partitions are weakly decreasing this is necessarily $A^{(4,1)}$; we use that corrected label below.
 
 For (a), the conjugacy class $(3,2)$ consists of permutations having one $3$-cycle and one $2$-cycle. Applying the Murnaghan--Nakayama rule gives the following values, indexed by the partitions of $5$:

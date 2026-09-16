@@ -16,6 +16,6 @@ audit:
   note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
 ---
 
-::: problem
+::: {.problem}
 Let D be a group of order 2n, where n is odd, with a subgroup H of order n satisfying $x h x ^ { - 1 } = h ^ { - 1 }$ for all h in H and all x in $D \backslash H$ . Prove that H is commutative and that every element of $D \setminus H$ is of order 2.
 :::

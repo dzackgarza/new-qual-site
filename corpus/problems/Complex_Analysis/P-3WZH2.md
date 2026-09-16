@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $P=(1,3-2\sqrt2)$ and define $f(s,t)=s^3-6st+t^2$. Then $f(P)=0$.
 
 a. State the conclusion of the Implicit Function Theorem concerning $f(s, t) = 0$ when $f$ is considered a function $\mathbb{R}^2\to\mathbb{R}$.
@@ -32,7 +32,7 @@ b. State the above conclusion when $f$ is considered a function $\mathbb{C}^2\to
 c. Use the implicit function theorem for a function $\mathbb{R}^2 \times \mathbb{R}^2 \to \mathbb{R}^2$ to prove (b).
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 P=(s_0,t_0)=(1,3-2\sqrt2).

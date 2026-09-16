@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Curves of Degree 4.
 
 a. If $X$ is a curve of degree 4 in some $\PP^n$, show that either

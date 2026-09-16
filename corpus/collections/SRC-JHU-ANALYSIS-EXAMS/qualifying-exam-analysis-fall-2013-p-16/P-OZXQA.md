@@ -30,7 +30,7 @@ For $t \in \mathbb{R}$, compute
 $$\lim_{A \to \infty} \int_{-A}^{A} \frac{\sin x}{x} e^{ixt} \, dx.$$
 :::
 
-::: solution
+::: {.solution}
 The requested limit is
 $$
 \boxed{\begin{cases}
@@ -43,7 +43,7 @@ We give $\sin x/x$ its continuous value one at zero.
 
 <1>1. The basic half-line integral is $\int_0^\infty\sin x/x\,dx=\pi/2$.
 
-::: proof
+::: {.proof}
 For $B>A>0$, integration by parts gives
 $$
 \int_A^B\frac{\sin x}{x}\,dx
@@ -77,7 +77,7 @@ which gives the stated value.
 
 <1>2. A real frequency contributes its sign, with frequency zero treated separately.
 
-::: proof
+::: {.proof}
 For $s>0$, substituting $u=sx$ gives
 $$
 \lim_{A\to\infty}\int_0^A\frac{\sin(sx)}x\,dx
@@ -91,7 +91,7 @@ where $\operatorname{sgn}(0)=0$.
 
 <1>3. The symmetric transform reduces to the two frequencies $1+t$ and $1-t$.
 
-::: proof
+::: {.proof}
 At each finite $A$, the imaginary part of the integrand
 is odd, so its integral over $[-A,A]$ is zero. Evenness
 of the real part and the product-to-sum identity give

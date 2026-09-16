@@ -25,15 +25,15 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $T_n : X \to Y$ for $n \in \mathbb{N}$ is a sequence of bounded linear operators between two Banach spaces $X$ and $Y$.
 Further assume that $\lim_{n \to \infty} T_n x$ exists for all $x \in X$.
 Show that $Tx := \lim_{n \to \infty} T_n x$ defines a bounded linear operator from $X$ to $Y$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The pointwise limit is linear.
-::: proof
+::: {.proof}
 For $x,y\in X$ and scalars $a,b$,
 \[
 \begin{aligned}
@@ -47,7 +47,7 @@ Thus $T:X\to Y$ is linear.
 :::
 
 <1>2. The family $(T_n)$ is uniformly bounded in operator norm.
-::: proof
+::: {.proof}
 For every fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
 \[
 \sup_n\|T_nx\|_Y<\infty
@@ -60,7 +60,7 @@ Since $X$ is Banach, the Uniform Boundedness Principle applies and gives a const
 :::
 
 <1>3. The pointwise limit is bounded.
-::: proof
+::: {.proof}
 For every $x\in X$,
 \[
 \|Tx\|_Y

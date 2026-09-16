@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (i) Let $u : \mathbb{C} \to \mathbb{R}$ be a harmonic function which is bounded.
 Show that $u$ is constant.
 
@@ -23,7 +23,7 @@ Let $u : H \to \mathbb{R}$ be a continuous bounded function which is harmonic in
 Show that $u$ is constant.
 :::
 
-::: solution
+::: {.solution}
 For (i), since $\mathbb C$ is simply connected, $u$ has a harmonic conjugate
 $v$, so $F=u+iv$ is entire. If $u$ is bounded above, then
 \[

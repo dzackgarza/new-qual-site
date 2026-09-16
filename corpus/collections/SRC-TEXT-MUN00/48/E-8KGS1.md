@@ -22,7 +22,7 @@ Show that if every point $x$ of $X$ has a neighborhood that is a Baire space, th
 [Hint: Use the open set formulation of the Baire condition.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if every point $x \in X$ has a neighborhood that is a Baire space, then the topological space $X$ is a Baire space.
 
 <1>1. Reduction to an open cover by Baire open sets:

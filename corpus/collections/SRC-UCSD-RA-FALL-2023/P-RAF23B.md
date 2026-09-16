@@ -23,14 +23,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For $a > 0$, let $(S_a f)(x) = f(x/a)$ for Lebesgue measurable functions $f$ on $\mathbb{R}$.
 Then for any $f \in L^1(\mathbb{R}, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compute the operator norm of the dilation.
-::: proof
+::: {.proof}
 For $a>0$, the change of variables $y=x/a$ gives
 \[
 \|S_af\|_1
@@ -46,7 +46,7 @@ In particular, the operators $S_a$ are uniformly bounded for $a$ in any fixed ne
 :::
 
 <1>2. Prove the claim for $C_c(\mathbb R)$.
-::: proof
+::: {.proof}
 Let $g\in C_c(\mathbb R)$ and choose $M>0$ with
 \[
 \operatorname{supp}g\subset[-M,M].
@@ -71,7 +71,7 @@ Both functions vanish outside a fixed compact interval, so
 :::
 
 <1>3. Pass to an arbitrary $L^1$ function by density.
-::: proof
+::: {.proof}
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $g\in C_c(\mathbb R)$ such that
 \[
 \|f-g\|_1<\varepsilon.

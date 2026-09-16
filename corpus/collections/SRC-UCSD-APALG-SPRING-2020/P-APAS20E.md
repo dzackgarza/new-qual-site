@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $X$ be the set of $4$-element subsets of $\{1,\ldots,7\}$ with the action of the symmetric group $S_7$ via permuting values.
 What is the decomposition of the permutation representation $\mathbb{C}[X]$ into irreducible representations?
 
@@ -24,7 +24,7 @@ What is the decomposition of the permutation representation $\mathbb{C}[Y]$ into
 (c) Explain what computation regarding polynomial functors the above two problems can be used to solve.
 :::
 
-::: solution
+::: {.solution}
 For (a), the action of \(S_7\) on \(4\)-element subsets is transitive. The stabilizer of \(\{1,2,3,4\}\) is the Young subgroup \(S_4\times S_3\). Hence
 \[
 \mathbb C[X]\cong \operatorname{Ind}_{S_4\times S_3}^{S_7}\mathbf1.

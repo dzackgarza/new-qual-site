@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G\subset S_9$ be a Sylow-3 subgroup of the symmetric group on 9 letters.
 
 a. Show that $G$ contains a subgroup $H$ isomorphic to $\ZZ_3 \cross \ZZ_3 \cross \ZZ_3$ by exhibiting an appropriate set of cycles.
@@ -30,7 +30,7 @@ c. Give generators and relations for $G$ as an abstract group, such that all gen
 d. Without appealing to the previous parts of the problem, show that $G$ contains an element of order 9.
 :::
 
-::: solution
+::: {.solution}
 The $3$-part of $9!$ is
 \[
 3^{\lfloor9/3\rfloor+\lfloor9/9\rfloor}=3^4,

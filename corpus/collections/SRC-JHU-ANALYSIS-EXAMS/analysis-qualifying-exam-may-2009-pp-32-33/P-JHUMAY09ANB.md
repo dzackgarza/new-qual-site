@@ -35,12 +35,12 @@ $$
 have in the half-plane Re $z > 0 ?$ Prove that your answer is correct.
 :::
 
-::: solution
+::: {.solution}
 There is exactly $\boxed{1}$ solution in the right half-plane,
 and it is a simple zero of $z+e^{-z}-(2+i)$.
 
 <1>1. Every right-half-plane solution lies in $B=\{z:|z-(2+i)|<1\}$.
-::: proof
+::: {.proof}
 If $z$ satisfies the equation and $\operatorname{Re}z>0$,
 then
 $$
@@ -52,7 +52,7 @@ required half-plane. It remains to count the zeros there.
 :::
 
 <1>2. There is precisely one zero in $B$, counted with multiplicity.
-::: proof
+::: {.proof}
 For $|z-(2+i)|=1$ one has $\operatorname{Re}z\geq1$.
 Consequently
 $$

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (a) Let $(X, \mathcal{M}, \mu)$ be a measure space and let $f_n, f \in L^1(\mu)$ ($n \in \mathbb{N}$) be nonnegative functions.
 If $f_n \to f$ almost everywhere and $\lim_{n \to \infty} \int_X f_n\,d\mu = \int_X f\,d\mu$, show that $f_n \to f$ in $L^1(\mu)$.
 
@@ -31,9 +31,9 @@ If $f_n \to f$ almost everywhere and $\lim_{n \to \infty} \int_X f_n\,d\mu = \in
 Either prove this or find a counterexample.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove Scheffe's lemma in the nonnegative case.
-::: proof
+::: {.proof}
 Since $f_n\to f$ almost everywhere,
 \[
 \min(f_n,f)\to f
@@ -67,7 +67,7 @@ Thus
 :::
 
 <1>2. Show that nonnegativity is essential.
-::: proof
+::: {.proof}
 Take $X=[0,1]$ with Lebesgue measure, let $f\equiv0$, and for $n\ge2$ define
 \[
 f_n(x)=n\mathbf1_{(0,1/n)}(x)-n\mathbf1_{(1/n,2/n)}(x).

@@ -26,7 +26,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Solve the $2 \times 2$ homogeneous complex linear system $A x = 0$ by determining the determinant and row echelon reduction.
 
 <1>1. Matrix Form and Determinant Computation:

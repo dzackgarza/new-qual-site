@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $A,B$ be subspaces of a finite-dimensional vector space $V$ with
 \[
 A+B=V.

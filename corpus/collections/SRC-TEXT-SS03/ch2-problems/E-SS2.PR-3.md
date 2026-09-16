@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 3. Morera’s theorem states that if f is continuous in $\mathbb { C } .$ and $\textstyle \int _ { T } f ( z ) d z = 0$ for all triangles T , then f is holomorphic in C. Naturally, we may ask if the conclusion still holds if we replace triangles by other sets.
 
 (a) Suppose that f is continuous on $\mathbb { C } .$ and
@@ -48,7 +48,7 @@ $$
 where the integral denotes the usual integral of functions of two variables, with $d V ( w )$ the area element of $\mathbb { R } ^ { 2 }$ . Then $f _ { \epsilon }$ is smooth, satisfies condition (16), and $f _ { \epsilon }  f$ uniformly on any compact subset of C.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove holomorphicity from the circle or toy-contour vanishing-integral hypothesis.
 
 <1>1. Part (a), smooth reduction: *Proof:*\

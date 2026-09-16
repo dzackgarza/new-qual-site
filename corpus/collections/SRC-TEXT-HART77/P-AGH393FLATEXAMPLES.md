@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Some examples of flatness and nonflatness.
 
 a. If $f: X \to Y$ is a finite surjective morphism of nonsingular varieties over an algebraically closed field $k$, then $f$ is flat.

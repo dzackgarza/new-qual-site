@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is analytic.
 :::
 
-:::{.solution title="Cauchy-Riemann"}
+::: {.solution title="Cauchy-Riemann"}
 It suffices to show that $g(z) \da \bar{f(\bar z)}$ satisfies CR.
 Write $f=u+iv$, then
 \[
@@ -44,7 +44,7 @@ a_y &= -u_y = v_x = -b_x
 
 :::
 
-:::{.solution title="Direct definition"}
+::: {.solution title="Direct definition"}
 Set $g(z) \da (f(z^*))^* \da \bar{f(\bar z)}$, we can then show $g'$ exists:
 \[
 \lim_{h\to 0} {g(z+h) - g(z) \over h} 
@@ -59,7 +59,7 @@ So this limit exists, $g$ is differentiable with $g'(z) \da \bar{f'(\bar z)}$.
 
 :::
 
-:::{.solution title="Power series"}
+::: {.solution title="Power series"}
 Since $f$ is analytic, take a Laurent expansion $f(z) = \sum_{k\geq 0} c_k z^k$.
 Then
 \[

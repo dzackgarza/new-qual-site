@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Is $(\RR,+)$ isomorphic to $(\RR_{>0},\times)$? Is the analogous statement true for $\QQ$ and $\QQ_{>0}$?
 :::
 

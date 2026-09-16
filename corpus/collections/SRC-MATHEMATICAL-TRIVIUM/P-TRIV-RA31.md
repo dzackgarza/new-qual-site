@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 31, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Calculate $J ( y ) = \int _ { 0 } ^ { \infty } e ^ { - a x } \frac { \sin x y } { x } d x , a > 0 .$
 :::

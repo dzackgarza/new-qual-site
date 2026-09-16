@@ -37,7 +37,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 The solutions are precisely the affine functions $f(z)=az+b$
 whose coefficients satisfy
 $$
@@ -67,7 +67,7 @@ all coefficients, not merely a growth restriction on the degree.
 
 <1>1. Every solution is affine.
 
-::: proof
+::: {.proof}
 On $|z|=R>1$ the hypothesis gives
 $|f(z)|\leq R^2+R^{3/2}$. If $c_k$ is the $k$th
 Taylor coefficient of $f$ at zero, Cauchy's estimate gives
@@ -84,7 +84,7 @@ its modulus is at most $R^{-1/2}$. Therefore $c=0$.
 
 <1>2. For affine functions, (1) is equivalent to the original inequality.
 
-::: proof
+::: {.proof}
 Necessity follows by setting $z=rw$, $|w|=1$, and letting
 $r\downarrow1$ in the original inequality.
 Conversely assume (1). At $w=i$ and $w=-i$ it gives
@@ -110,7 +110,7 @@ $|rw|^{3/2}+|\operatorname{Re}(rw)|^2$, proving sufficiency.
 
 <1>3. The finite coefficient test (3) is equivalent to (1).
 
-::: proof
+::: {.proof}
 Parametrize the unit circle except $-1$ by
 $$
 w(t)=\frac{1-t^2+2it}{1+t^2},\qquad t\in\mathbb R.

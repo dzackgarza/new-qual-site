@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that every nilpotent group is solvable.
 :::
 
-::: solution
+::: {.solution}
 Suppose $G$ is nilpotent. Then its lower central series
 \[
 \gamma_1(G)=G,

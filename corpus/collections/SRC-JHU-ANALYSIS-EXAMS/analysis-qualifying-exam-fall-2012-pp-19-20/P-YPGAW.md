@@ -35,9 +35,9 @@ $$
 (b) Give a counterexample to show that the assertion fails if ”pointwise almost everywhere” is replaced by ”uniformly”.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose a subsequence with summable $L^1$ errors.
-::: proof
+::: {.proof}
 Since
 \[
 \|f_n-f\|_1\longrightarrow0,
@@ -54,7 +54,7 @@ for every $j$.
 :::
 
 <1>2. Prove almost-everywhere convergence of that subsequence.
-::: proof
+::: {.proof}
 By Tonelli's theorem,
 \[
 \begin{aligned}
@@ -76,7 +76,7 @@ for almost every $x$, proving part (a).
 :::
 
 <1>3. Give a counterexample to uniform convergence.
-::: proof
+::: {.proof}
 Let
 \[
 f_n=\mathbf1_{(0,1/n)},

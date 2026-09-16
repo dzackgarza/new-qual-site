@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a measure and let $F_1\supseteq F_2\supseteq\cdots$ be measurable.
 Is it always true that
 \[
@@ -29,7 +29,7 @@ Is it always true that
 \]
 :::
 
-::: solution
+::: {.solution}
 No, not without a finiteness hypothesis.
 For Lebesgue measure on $\mathbb R$, let
 \[

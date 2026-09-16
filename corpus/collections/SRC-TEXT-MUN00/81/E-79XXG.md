@@ -30,7 +30,7 @@ Show that $p$ is a regular covering map.
 (d) Repeat (b) for the covering pictured in Figure 81.7.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the groups of covering transformations (deck transformations) $\mathcal{C}(E, p, X)$ and regularity status for the four graph coverings of the figure-eight space $X = A \vee B$.
 
 <1>1. General principles for covering transformations of graphs:

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a nonabelian group of order $27$.
 :::
 
-::: solution
+::: {.solution}
 Take the unitriangular group
 \[
 G=UT_3(\mathbf F_3)
@@ -41,13 +41,13 @@ G=UT_3(\mathbf F_3)
 \]
 
 <1>1. The group $G$ has order $27$.
-::: proof
+::: {.proof}
 The entries $a,b,c$ can be chosen independently from the three-element field
 $\mathbf F_3$, so $|G|=3^3=27$.
 :::
 
 <1>2. The group $G$ is nonabelian.
-::: proof
+::: {.proof}
 Let
 \[
 x=I+E_{12},\qquad y=I+E_{23}.

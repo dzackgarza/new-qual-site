@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $k=1,2,\cdots, n$, suppose $\abs{a_k} < 1$, and suppose $|b|<1$. Let
 \[
 f(z) \definedas \qty{z - a_1 \over 1 - \bar a_1 z} \qty{z-a_2 \over 1 - \bar a_2 z} \cdots \qty{z - a_n \over 1 - \bar a_n z}
@@ -23,7 +23,7 @@ f(z) \definedas \qty{z - a_1 \over 1 - \bar a_1 z} \qty{z-a_2 \over 1 - \bar a_2
 Show that $f(z) = b$ has $n$ solutions in $\abs{z} < 1$.
 :::
 
-::: solution
+::: {.solution}
 For $|z|=1$ and each $k$,
 \[
 |z-a_k|=|1-\bar a_k z|,

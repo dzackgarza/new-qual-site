@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the conjugacy classes in $\operatorname{GL}_2(\mathbb{C})$?
 :::
 
-::: solution
+::: {.solution}
 By Jordan canonical form, every element of $\operatorname{GL}_2(\mathbb C)$ is conjugate to exactly one of the following types, up to permuting diagonal entries:
 
 1. Distinct eigenvalues:

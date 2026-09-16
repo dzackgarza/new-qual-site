@@ -27,7 +27,7 @@ audit:
 Prove that the center of a ring is a subring.
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 Z(R)=\{z\in R:zr=rz\text{ for every }r\in R\}
@@ -35,7 +35,7 @@ $$
 be the center of the ring $R$.
 
 <1>1. The center is nonempty and closed under subtraction.
-::: proof
+::: {.proof}
 The element $0$ commutes with every $r\in R$, so $0\in Z(R)$.
 
 If $a,b\in Z(R)$ and $r\in R$, then
@@ -51,7 +51,7 @@ Thus $a-b\in Z(R)$.
 :::
 
 <1>2. The center is closed under multiplication.
-::: proof
+::: {.proof}
 If $a,b\in Z(R)$ and $r\in R$, then
 $$
 \begin{aligned}
@@ -67,7 +67,7 @@ Hence $ab\in Z(R)$.
 :::
 
 <1>3. Therefore $Z(R)$ is a subring of $R$.
-::: proof
+::: {.proof}
 By step <1>1, $Z(R)$ is an additive subgroup of $R$, and by step <1>2 it
 is closed under multiplication. Therefore
 $$

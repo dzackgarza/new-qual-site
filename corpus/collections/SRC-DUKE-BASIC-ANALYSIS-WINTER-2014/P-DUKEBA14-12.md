@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $L:V_1\to V_2$ be a linear map between normed vector spaces. Prove that $L$ is continuous if and only if there exists $c>0$ such that
 \[
 \|L(v)\|_{V_2}\le c\|v\|_{V_1}
@@ -29,9 +29,9 @@ Let $L:V_1\to V_2$ be a linear map between normed vector spaces. Prove that $L$ 
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. A global linear bound implies continuity.
-::: proof
+::: {.proof}
 If
 \[
 \|L(v)\|\le c\|v\|
@@ -46,7 +46,7 @@ Thus $L$ is Lipschitz, hence continuous.
 :::
 
 <1>2. Continuity at the origin implies a global bound.
-::: proof
+::: {.proof}
 Assume $L$ is continuous. By continuity at $0$, there exists $\delta>0$ such that
 \[
 \|w\|<\delta

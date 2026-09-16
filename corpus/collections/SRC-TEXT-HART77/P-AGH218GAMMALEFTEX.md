@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any open subset $U \subseteq X$, show that the functor $\Gamma(U, \wait)$ from sheaves on $X$ to abelian groups is left exact.
 That is, if
 \[
@@ -27,6 +27,6 @@ is an exact sequence of sheaves, then
 is an exact sequence of groups.
 :::
 
-::: remark
+::: {.remark}
 The functor $\Gamma(U, \wait)$ is not exact in general; Hartshorne II.1.21 supplies a counterexample on $\PP^1$.
 :::

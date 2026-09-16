@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a curve in $\PP^3$, which is not contained in any plane.
 
 a. If $O \notin X$ is a point, such that the projection from $O$ induces a birational morphism $\varphi$ from $X$ to its image in $\PP^2$, show that $\varphi(X)$ must be singular.

@@ -24,7 +24,7 @@ audit:
   note: Replaced the conflation of the Riemann-sphere power map with a suspension by an actual suspension construction and homological degree computation.
 ---
 
-::: problem
+::: {.problem}
 Does there exist a map of degree 2013 from $S^2 \to S^2$?
 :::
 

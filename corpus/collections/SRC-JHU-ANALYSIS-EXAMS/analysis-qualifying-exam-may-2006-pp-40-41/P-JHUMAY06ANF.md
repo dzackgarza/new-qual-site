@@ -34,7 +34,7 @@ $$
 Determine the residue of f at each pole.
 :::
 
-::: solution
+::: {.solution}
 The only poles are $i$ and $-i$, both of order two, with
 $$
 \boxed{\operatorname{Res}_{i}f=\frac{\pi+i}{4},\qquad
@@ -42,7 +42,7 @@ $$
 $$
 
 <1>1. Factoring the denominator identifies all poles and their orders.
-::: proof
+::: {.proof}
 The denominator is $(z-i)^2(z+i)^2$, and the numerator
 $e^{\pi z}$ is entire and never zero. Thus the quotient
 is holomorphic away from $\pm i$, and at either point
@@ -52,7 +52,7 @@ other finite poles.
 :::
 
 <1>2. Differentiate the holomorphic factors to compute the residues.
-::: proof
+::: {.proof}
 For a double pole at $a$, the residue of $H(z)/(z-a)^2$
 is $H'(a)$, by the Taylor expansion of the holomorphic
 factor $H$ [@SS03]. At $i$, this gives

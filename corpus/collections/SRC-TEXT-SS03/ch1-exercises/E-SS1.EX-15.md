@@ -23,7 +23,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Suppose $\sum_{n=1}^{\infty}a_n$ converges. Prove that
 \[
 \lim_{r\to1^-}\sum_{n=1}^{\infty}r^na_n

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $S$ be a graded ring.
 Show that $\Proj S = \varnothing$ if and only if every element of $S_{+}$ is nilpotent.
 

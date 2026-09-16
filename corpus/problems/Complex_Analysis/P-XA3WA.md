@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find the number of roots on $\abs{z} \leq 1$ of
 \[
 f(z)=z^{6}+4 z^{2} e^{z+1}-3
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 
 - Small: $m(z) = z^6-3$
 - Big: $M(z) = 4z^2 e^{z+1}$, which has two such zeros

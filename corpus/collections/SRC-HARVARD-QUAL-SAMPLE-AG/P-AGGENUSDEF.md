@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is the genus of a curve?
 
 Does the genus of a curve depend on the embedding?

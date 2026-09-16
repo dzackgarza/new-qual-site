@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X \subseteq \AA^n$; show that $I(X)$ is radical in $\OO_{\AA^n}$, and maximal iff $X$ is a point.
 :::

@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Are there separable polynomials of any degree $n \ge 1$ over any field $F$?
 What about irreducible separable polynomials?
 :::
 
-::: solution
+::: {.solution}
 Yes: for every field $F$ and every $n\ge1$, there exists a separable polynomial of degree $n$.
 
 If $F$ is infinite, choose distinct $a_1,\dots,a_n\in F$ and take

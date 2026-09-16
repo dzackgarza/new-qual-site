@@ -24,7 +24,7 @@ Let $\partial R$ be its boundary, oriented so that $R$ is on its left.
 Either using the definition or by applying theorems of Calculus, compute the line integral $$\int_{\partial R} x\, dy + y\, dx .$$
 :::
 
-::: solution
+::: {.solution}
 The differential form is exact:
 \[
 x\,dy+y\,dx=d(xy).

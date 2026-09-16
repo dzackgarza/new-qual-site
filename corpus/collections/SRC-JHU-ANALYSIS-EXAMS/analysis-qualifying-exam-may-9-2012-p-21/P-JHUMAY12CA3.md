@@ -30,13 +30,13 @@ Assume that the real part $\operatorname{Re}(f)$ is bounded from below on $U$.
 Prove that $z = 0$ is a removable singularity.
 :::
 
-::: solution
+::: {.solution}
 Choose $m\in\mathbb R$ with $\operatorname{Re}f(z)\geq m$
 on the punctured disk $U$.
 
 <1>1. A fractional transform of $f$ is bounded and holomorphic on $U$.
 
-::: proof
+::: {.proof}
 Let $F=f-m+1$, so $\operatorname{Re}F\geq1$, and put
 $$
 q(z)=\frac{F(z)-1}{F(z)+1}.
@@ -54,7 +54,7 @@ $|Q(0)|\leq1$.
 
 <1>2. The inverse transform extends $f$ across zero.
 
-::: proof
+::: {.proof}
 In fact $|Q(0)|<1$. Otherwise $Q$ would attain its
 maximum modulus one at an interior point of the disk.
 The maximum modulus principle would make $Q$ constant

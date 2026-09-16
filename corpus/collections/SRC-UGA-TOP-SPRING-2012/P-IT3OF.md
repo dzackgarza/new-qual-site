@@ -27,7 +27,7 @@ audit:
   note: Checked van Kampen, the cellular boundary, the surface-classification exclusion, and the explicit RP2 quotient model.
 ---
 
-::: problem
+::: {.problem}
 For any integer $n \geq 2$ let $X_n$ denote the space formed by attaching a 2-cell to the circle $S^1$ via the attaching map
 \[
 \begin{aligned}

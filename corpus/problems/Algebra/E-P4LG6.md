@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Prove that if $G$ is a $p\dash$group, every subgroup $N\normal G$ intersects the center $Z(G)$.
 
 > Hint: use the class equation.
 
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 Easy solution:

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\phi, \psi \in \mcf(U)$ be two sections of some sheaf $\mcf$ on an open $U\subseteq X$ and show that
 
 a. If $\phi, \psi$ agree on all stalks, so $\bar{(U, \phi)} = \bar{(U, \psi)} \in \mcf_a$ for all $a\in U$, then $\phi$ and $\psi$ are equal.

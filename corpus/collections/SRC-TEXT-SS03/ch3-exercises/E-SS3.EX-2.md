@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. Evaluate the integral
 
 $$
@@ -25,7 +25,7 @@ $$
 Where are the poles of $1 / ( 1 + z ^ { 4 } ) \ ?$
 :::
 
-::: solution
+::: {.solution}
 The poles of
 \[
 \frac1{1+z^4}

@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Consider the following matrix:
 \[
 B \da 
@@ -36,7 +36,7 @@ a. Find the minimal polynomial of $B$.
 b. Find a $3\times 3$ matrix $J$ in Jordan canonical form and an invertible matrix $P$ such that $B = PJP\inv$.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial is
 \[
 \chi_B(x)=\det(xI-B)=(x+1)(x-1)^2.

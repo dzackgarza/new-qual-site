@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 For each of the following, either give an example or prove that no such example is possible.
 
 1. A nonabelian group.

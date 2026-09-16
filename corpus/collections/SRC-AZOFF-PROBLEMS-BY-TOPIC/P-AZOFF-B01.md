@@ -15,7 +15,7 @@ audit:
   note: Checked against Several variables, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Discuss continuity and differentiability of the function $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ defined by
 
 $$

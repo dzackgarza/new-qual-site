@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 In the category of varieties, the Zariski topology on a product is not the product topology.
 In the category of schemes, the underlying point set of a product is not even the product set.
 

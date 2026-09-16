@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and prove Green's Theorem for rectangles.
 Use this to prove Cauchy's Theorem for functions that are analytic in a rectangle.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 R=[a,b]\times[c,d]

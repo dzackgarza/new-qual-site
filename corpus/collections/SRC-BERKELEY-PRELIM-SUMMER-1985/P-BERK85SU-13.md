@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let $P(z)$ be a polynomial of degree less than $k$ with complex coefficients, and let
 \[
 \omega_1,\ldots,\omega_k

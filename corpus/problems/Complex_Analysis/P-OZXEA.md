@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Suppose $f(z)$ is entire and 
 \[
 \lim_{z\to\infty} {f(z) \over z} = 0

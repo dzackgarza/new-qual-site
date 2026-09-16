@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k = \FF_p$ be the finite field with $p$ elements.
 Describe $\Spec k[x]$.
 What are the residue fields of its points?

@@ -27,7 +27,7 @@ audit:
   note: Replaced the placeholder proof with explicit matrix computations and a normal-form argument showing the presented abstract group has at most eight elements.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be the following subgroup of $2 \times 2$ matrices over the complex numbers:
 \[
 G = \left\{

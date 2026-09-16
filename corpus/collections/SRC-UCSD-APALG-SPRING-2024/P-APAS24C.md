@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$.
 Prove that $A$ is Hermitian if and only if $x^HAx\in\mathbb{R}$ for all $x\in\mathbb{C}^n$.
 
 Note: $x^H=\overline{x^T}$.
 :::
 
-::: solution
+::: {.solution}
 If $A$ is Hermitian, then for every $x\in\mathbb C^n$,
 \[
 \overline{x^HAx}=x^HA^Hx=x^HAx,

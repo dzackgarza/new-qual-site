@@ -36,7 +36,7 @@ is an exact sequence, then there is a linearly independent generating set consis
 :::
 
 
-::: solution
+::: {.solution}
 Write the exact sequence as
 $$
 0\longrightarrow \mathbb Z^s\xrightarrow{i}K\xrightarrow{p}\mathbb Z\longrightarrow0.
@@ -48,7 +48,7 @@ p(t)=1.
 $$
 
 <1>1. The elements $i(e_1),\ldots,i(e_s),t$ generate $K$.
-::: proof
+::: {.proof}
 Let $x\in K$. Put
 $$
 n=p(x)\in\mathbb Z.
@@ -81,7 +81,7 @@ so the displayed $s+1$ elements generate $K$.
 :::
 
 <1>2. These $s+1$ generators are linearly independent over $\mathbb Z$.
-::: proof
+::: {.proof}
 Suppose
 $$
 \sum_{j=1}^s a_j i(e_j)+nt=0.
@@ -103,7 +103,7 @@ generators are independent.
 :::
 
 <1>3. Conclude the isomorphism type of $K$.
-::: proof
+::: {.proof}
 A linearly independent generating set of $s+1$ elements is a basis of the
 abelian group $K$. Therefore
 $$

@@ -23,6 +23,6 @@ f(x,y,z,w)=\frac{1}{\sqrt{x^4+y^4+z^4+w^4}}\,(x^2,y^2,z^2,w^2).
 Compute the degree of $f$.
 :::
 
-::: remark
+::: {.remark}
 The source prints $S^4$, but the formula has four coordinates, so it defines a self-map of the unit sphere $S^3\subset\mathbb R^4$.
 :::

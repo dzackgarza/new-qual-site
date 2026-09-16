@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, Problem 40, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 " 20-dimensional watermelon"
 
 (a) Find the surface area of the unit n-dimensional sphere $S ^ { n }$ Indication: Use the notion of Gamma function $\Gamma ( a ) \equiv \int _ { 0 } ^ { \infty } e ^ { - x } x ^ { a - 1 } d x$

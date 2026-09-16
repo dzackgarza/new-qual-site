@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S = \operatorname{span}_{\mathbb{C}}\{\chi_{(a, b)} : a, b \in \mathbb{R}, \, a < b\}$ be the complex linear span of characteristic functions of bounded open intervals in $\mathbb{R}$.
 
 Show that $S$ is dense in $L^1(\mathbb{R})$: for every $f \in L^1(\mathbb{R})$, there exists a sequence $(f_n)_{n=1}^\infty \subset S$ such that
@@ -22,7 +22,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the span of interval indicator functions $S$ is dense in $L^1(\mathbb{R})$ using simple function density and Lebesgue regularity.
 
 <1>1. Approximation of $f$ by integrable simple functions:

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that in polar coordinates, the CR equations take the following form:
 \[  
 \frac{\partial u}{\partial r}=\frac{1}{r} \frac{\partial v}{\partial \theta} \quad \text { and } \quad \frac{1}{r} \frac{\partial u}{\partial \theta}=-\frac{\partial v}{\partial r}
@@ -20,7 +20,7 @@ Show that in polar coordinates, the CR equations take the following form:
 
 :::
 
-:::{.solution}
+::: {.solution}
 Setting 
 \[
 z = re^{i\theta} = r(\cos(\theta) + i\sin(\theta) ) = x+iy

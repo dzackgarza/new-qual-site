@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a noetherian scheme.
 Show that $X$ is affine if and only if $X_{\mathrm{red}}$ (II, Ex.
 2.3) is affine.

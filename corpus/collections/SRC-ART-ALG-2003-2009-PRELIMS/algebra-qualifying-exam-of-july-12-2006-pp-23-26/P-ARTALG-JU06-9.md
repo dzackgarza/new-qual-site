@@ -24,13 +24,13 @@ audit:
   note: "Checked all partitions of the primary exponents, the orders of all four products, and their distinct group exponents."
 ---
 
-::: problem
+::: {.problem}
 (a) State the structure theorem for finitely generated Abelian groups.
 
 (b) Up to isomorphism, what are the Abelian groups of order $300 = 2^2 \cdot 3 \cdot 5^2$?
 :::
 
-::: solution
+::: {.solution}
 Write $C_m=\mathbb Z/m\mathbb Z$.
 
 <1>1. The elementary-divisor form of the structure theorem is as follows.
@@ -57,7 +57,7 @@ finitely generated abelian groups [@DF04]. Empty sums are allowed.
 | $C_4\oplus C_3\oplus C_5\oplus C_5$ | $60$ |
 | $C_2\oplus C_2\oplus C_3\oplus C_5\oplus C_5$ | $30$ |
 
-::: proof
+::: {.proof}
 Finiteness forces $r=0$ in step <1>1. For each prime $p$, the
 sum $\sum_j e_{p,j}$ is the exponent of $p$ in the group order.
 For $p=2$ that sum is $2$, with exactly the partitions $(2)$

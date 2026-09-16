@@ -27,7 +27,7 @@ audit:
   note: "Spring 2020 problem D states the same problem with the same hint; that sitting now lists this card, and its independent proof by a cyclic-vector bound on the nilpotency index is kept as a second solution."
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring with no non-zero nilpotent elements.
 Suppose $N \in M_n(A)$ is nilpotent.
 Prove that $N^n = 0$.

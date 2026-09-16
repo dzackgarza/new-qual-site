@@ -26,7 +26,7 @@ audit:
   note: Verified compact attainment on A x B, the closed-set limit argument when the infimum is zero, and the suggested nonattainment example in the subspace {0} union (1,2].
 ---
 
-:::{.problem}
+::: {.problem}
 For nonempty subsets $A, B$ of a metric space $(X, d)$, define the **setwise distance** as 
 \[
 d(A, B) \da \inf \ts{ d(a, b) \st a\in A,\, b\in B } 

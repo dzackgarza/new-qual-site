@@ -16,7 +16,7 @@ audit:
   note: Checked against the vendored UC Berkeley Spring 1988 preliminary examination.
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove: There is a real $n \times n$ matrix A such that
 
 $$

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$.
 
 Show that 
@@ -27,7 +27,7 @@ Show that
 
 :::
 
-:::{.solution}
+::: {.solution}
 Since $f$ is injective, it has a left-inverse $f\inv$, and $F\da f\inv g$ is well-defined.
 Since $F:\DD\to \DD$ and $F(0) = 0$, Schwarz applies and $\abs{F(z)} \leq z$ on $\DD$.
 Unwinding:

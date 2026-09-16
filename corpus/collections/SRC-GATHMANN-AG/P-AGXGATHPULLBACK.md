@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f:X\to Y$ be a morphism of affine varieties and $f^*: A(Y) \to A(X)$ the induced map on coordinate rings.
 Determine whether the following statements are true or false:
 
@@ -27,7 +27,7 @@ c. If $f:\AA^1\to\AA^1$ is an isomorphism, then $f$ is *affine linear*, i.e. $f(
 d. If $f:\AA^2\to\AA^2$ is an isomorphism, then $f$ is *affine linear*, i.e. $f(x) = Ax+b$ for some $A \in \Mat(2\times 2, k)$ and $b\in k^2$.
 :::
 
-::: solution
+::: {.solution}
 **Part a**: true.
 If $p, q\in A(Y)$, then
 \[

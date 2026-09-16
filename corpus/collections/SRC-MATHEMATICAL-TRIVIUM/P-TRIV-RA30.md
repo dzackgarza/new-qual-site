@@ -15,6 +15,6 @@ audit:
   note: Checked against Real Analysis, Problem 30, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Show that the cosine integral $\mathrm { C i } x \equiv - \int _ { x } ^ { \infty } \frac { \cos t } { t } d t$ for large enough x can be approximated as $\mathrm { C i } x \approx { \frac { \sin x } { x } }$ . Find the region of x for which the relative error of this approximation is less than $1 0 ^ { - 4 }$
 :::

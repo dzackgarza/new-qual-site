@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a harmonic conjugate for
 \[
 u(x, y) = x^3 - 3xy^2 -x -y
@@ -21,7 +21,7 @@ u(x, y) = x^3 - 3xy^2 -x -y
 
 :::
 
-:::{.concept}
+::: {.concept}
 The standard procedure for harmonic conjugates:
 
 - Start with $u$
@@ -52,7 +52,7 @@ My quick mnemonic:
 
 :::
 
-:::{.solution}
+::: {.solution}
 First, check that $u$ is actually harmonic: 
 \[
 \laplacian u = \dd{}{x}(3x^2-3y^2-1) + \dd{}{y}(-6xy - 1) = 6x + (-6x) = 0

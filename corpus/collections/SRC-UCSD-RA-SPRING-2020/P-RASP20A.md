@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Determine if each of the following statements is true or false.
 
 (1) Let $E$ be a Lebesgue-measurable subset of $\mathbb{R}$.
@@ -41,9 +41,9 @@ Then there exists $j_0$ such that $\mu(E_{j_0}) \geq q/n$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Statement (1) is false.
-::: proof
+::: {.proof}
 Take
 \[
 E=\mathbb Q\cap[0,1].
@@ -64,7 +64,7 @@ Thus the assertion is false.
 :::
 
 <1>2. Statement (2) is true.
-::: proof
+::: {.proof}
 A differentiable function is continuous, hence Borel measurable. For each \(n\ge2\), define the Borel function
 \[
 q_n(x)=
@@ -81,7 +81,7 @@ Thus \(f'\) is a pointwise limit of Borel functions and is therefore Borel measu
 :::
 
 <1>3. Statement (3) is true.
-::: proof
+::: {.proof}
 The hypothesis says
 \[
 \sum_{j=1}^n\mathbf1_{E_j}(x)\ge q
@@ -100,7 +100,7 @@ Hence at least one term satisfies
 :::
 
 <1>4. Statement (4) is false.
-::: proof
+::: {.proof}
 Let
 \[
 f=\mathbf1_{[0,1/2]}.

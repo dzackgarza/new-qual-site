@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 7, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\textstyle \int _ { 0 } ^ { \infty } { \frac { \sin x } { x ( x ^ { 2 } + 1 ) } } d x$
 :::

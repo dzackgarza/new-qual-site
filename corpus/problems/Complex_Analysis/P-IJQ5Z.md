@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Construct an explicit **conformal map** (biholomorphic equivalence) from the slit plane $\Omega = \mathbb{C} \setminus (-\infty, 0]$ onto the open unit disk $\mathbb{D} = \{w \in \mathbb{C} \mid |w| < 1\}$.
 :::
 
-::: solution
+::: {.solution}
 Use the principal square root on
 \[
 \Omega=\mathbb C\setminus(-\infty,0].

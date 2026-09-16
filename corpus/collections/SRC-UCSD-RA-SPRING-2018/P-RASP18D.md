@@ -24,7 +24,7 @@ audit:
   note: Existing integration-by-parts and density proof reviewed as correct; normalized the legacy solution block.
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi : \mathbb{R} \to \mathbb{R}$ be a $C^1$-function such that $M := \sup_{x \in \mathbb{R}} [|\varphi(x)| + |\varphi'(x)|] < \infty$.
 
 1. If $f \in C_c^1(\mathbb{R})$, show
@@ -38,7 +38,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part 1: Bound for $f \in C_c^1(\mathbb{R})$ via integration by parts:
 <2>1. Since $f \in C_c^1(\mathbb{R})$, $f$ and $f'$ have compact support contained in some interval $[-R, R]$.
 Using integration by parts with $u = f(x)$ and $dv = \varphi'(\lambda x)\,dx$ (so $v = \frac{1}{\lambda} \varphi(\lambda x)$):

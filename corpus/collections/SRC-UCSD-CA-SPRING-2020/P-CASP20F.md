@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f'(z)| \leq e^{|z|}$ and $f\!\left(\sqrt{n}\right) = 0$ for all positive integers $n > 0$.
 Show that $f = 0$.
 :::
 
-::: solution
+::: {.solution}
 Suppose $f\not\equiv0$. From the derivative bound, integrating along the line
 segment from $0$ to $z$ gives
 \[

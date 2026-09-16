@@ -20,13 +20,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $L/F$ be a field extension, and let $\alpha$ be algebraic over $F$.
 Let $m_F(x) = \operatorname{irr}(\alpha, F) \in F[x]$ and $m_L(x) = \operatorname{irr}(\alpha, L) \in L[x]$ be the minimal polynomials of $\alpha$ over $F$ and over $L$, respectively.
 Prove that $m_L(x)$ divides $m_F(x)$ in the polynomial ring $L[x]$.
 :::
 
-::: solution
+::: {.solution}
 Because $F\subseteq L$, we may regard
 \[
 m_F(x)\in F[x]

@@ -15,6 +15,6 @@ audit:
   note: Checked against Residues, Problem 11, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\int _ { 0 } ^ { \infty } { \frac { \sin ^ { 3 } x } { x ^ { 3 } } } d x$
 :::

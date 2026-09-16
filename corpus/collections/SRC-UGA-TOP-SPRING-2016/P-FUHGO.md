@@ -30,7 +30,7 @@ audit:
   note: Verified both claims independently in the genus-two surface-group presentation; the commutator survives in a free-group quotient and dies in the abelianization.
 ---
 
-::: problem
+::: {.problem}
 Give an example, with explanation, of a closed curve in a surface which is not nullhomotopic but is nullhomologous.
 :::
 

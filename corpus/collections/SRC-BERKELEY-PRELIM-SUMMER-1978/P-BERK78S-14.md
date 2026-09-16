@@ -16,7 +16,7 @@ audit:
   note: Checked directly on the retained PDF page; the OCR's garbled matrix size is 2-by-2.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite multiplicative group of $2\times2$ integer matrices.
 
 1. For $A\in G$, what can one prove about

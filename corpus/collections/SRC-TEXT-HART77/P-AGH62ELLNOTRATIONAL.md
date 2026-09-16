@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be the curve $y^2 = x^3 - x$ in $\AA^2$, and assume $\operatorname{char} k \neq 2$.
 This exercise shows that $Y$ is not a rational curve, and hence that $K(Y)$ is not a purely transcendental extension of $k$.
 

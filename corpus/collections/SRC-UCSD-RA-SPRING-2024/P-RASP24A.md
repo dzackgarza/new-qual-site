@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\{r_n\}_{n=1}^{\infty}$ be a sequence with $r_n \in [0,1]$ and define the function
 $$
 f(x) := \sum_{r_n < x} \frac{1}{2^n}.
@@ -31,9 +31,9 @@ $$
 Show that $f$ is Borel measurable, find all its points of discontinuity, and find $\int_0^1 f(x)\,dx$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove Borel measurability.
-::: proof
+::: {.proof}
 For each $n$,
 \[
 \mathbf 1_{(r_n,\infty)}(x)
@@ -51,7 +51,7 @@ Each summand is Borel measurable, and the partial sums increase pointwise to $f$
 :::
 
 <1>2. Determine the discontinuity set.
-::: proof
+::: {.proof}
 Fix $a\in\mathbb R$. Since the series is absolutely and uniformly bounded by
 \[
 \sum_{n=1}^\infty2^{-n}=1,
@@ -76,7 +76,7 @@ where repetitions are ignored.
 :::
 
 <1>3. Compute the integral.
-::: proof
+::: {.proof}
 The summands are nonnegative, so Tonelli's theorem gives
 \[
 \begin{aligned}

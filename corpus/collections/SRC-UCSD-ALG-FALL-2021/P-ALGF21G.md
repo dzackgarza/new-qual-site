@@ -25,7 +25,7 @@ audit:
   note: Verified uniform annihilators in the finitely generated cases and the direct sum over prime cyclic groups as a counterexample whose identity endomorphism is not torsion.
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be an integral domain.
 Recall that for any $R$-modules $M, N$, $\mathrm{Hom}_R(M,N)$ is also an $R$-module.
 Let $M$ and $N$ be torsion $R$-modules.

@@ -30,7 +30,7 @@ audit:
     Proposition 1.26.
 ---
 
-::: problem
+::: {.problem}
 Start with the unit disk $\DD^2$ and identify points on the boundary if their angles, thought of in polar coordinates, differ a multiple of $\pi/2$.
 
 Let $X$ be the resulting space.

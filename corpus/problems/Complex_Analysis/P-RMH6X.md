@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find a conformal map from the strip $\theset{z\in \CC \suchthat 0 < \Im(z) < 1}$ to $\HH$.
 :::
 
-:::{.solution}
+::: {.solution}
 In steps:
 
 - Dilate by $z\mapsto \pi z$ to get $0<\Im(z) < \pi$.

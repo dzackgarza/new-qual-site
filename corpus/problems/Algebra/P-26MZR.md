@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that the Quaternion group has only one element of order 2, namely $-1$.
 :::
 

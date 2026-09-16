@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 7. Establish the following properties of infinite products.
 
 (a) Suppose $a_n\neq -1$ for every $n$. Show that if $\sum |a_n|^2$ converges, then the product $\prod (1+a_n)$ converges to a non-zero limit if and only if $\sum a_n$ converges.
@@ -29,7 +29,7 @@ audit:
 (c) Also find an example such that $\prod(1+a_n)$ converges to a non-zero limit and $\sum a_n$ diverges.
 :::
 
-::: solution
+::: {.solution}
 For part (a), because $\sum |a_n|^2<\infty$, we have $a_n\to0$. Hence for all sufficiently large $n$, say $|a_n|\le1/2$, we may use the principal logarithm and the expansion
 \[
 \log(1+a_n)=a_n+O(|a_n|^2),

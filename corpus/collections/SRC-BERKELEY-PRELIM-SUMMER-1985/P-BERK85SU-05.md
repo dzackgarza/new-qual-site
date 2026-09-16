@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 By the Fundamental Theorem of Algebra, the polynomial
 \[
 x^3+2x^2+7x+1

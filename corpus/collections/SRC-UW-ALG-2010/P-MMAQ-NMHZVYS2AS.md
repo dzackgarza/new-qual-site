@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 - Give definitions of the following terms:
 
   (i) a finite length (left) module, (ii) a composition series for a module, and (iii) the length of a module,
@@ -33,7 +33,7 @@ audit:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. A module $M$ has **finite length** if it admits a finite composition series.
 A **composition series** is a finite chain
 \[

@@ -38,9 +38,9 @@ Define what is meant by:
 (v) the semidirect product group defined by a homomorphism $c: H \to \operatorname{Aut}(K)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Normal subgroup.
-::: proof
+::: {.proof}
 A subgroup $N\le G$ is **normal**, written
 $$
 N\trianglelefteq G,
@@ -57,7 +57,7 @@ for every $g\in G$.
 :::
 
 <1>2. Sylow subgroup.
-::: proof
+::: {.proof}
 Let $G$ be finite and let $p$ be a prime. If
 $$
 |G|=p^a m,
@@ -72,7 +72,7 @@ $|G|$.
 :::
 
 <1>3. Simple group.
-::: proof
+::: {.proof}
 A group $G$ is **simple** if
 $$
 G\ne1
@@ -84,7 +84,7 @@ $$
 :::
 
 <1>4. Left group action.
-::: proof
+::: {.proof}
 A **left action** of a group $G$ on a set $S$ is a map
 $$
 G\times S\longrightarrow S,
@@ -106,7 +106,7 @@ $$
 :::
 
 <1>5. Semidirect product determined by $c:H\to\operatorname{Aut}(K)$.
-::: proof
+::: {.proof}
 Given a homomorphism
 $$
 c:H\longrightarrow\operatorname{Aut}(K),

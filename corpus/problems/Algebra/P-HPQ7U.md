@@ -22,11 +22,11 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 When do the powers of a square complex matrix $A \in M_n(\mathbb{C})$ tend to zero ($\lim_{k \to \infty} A^k = 0$)?
 :::
 
-::: solution
+::: {.solution}
 One has
 \[
 A^k\longrightarrow0

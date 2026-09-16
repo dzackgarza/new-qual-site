@@ -24,7 +24,7 @@ Show that $X$ is connected if and only if $\beta(X)$ is connected.
 [Hint: If $X = A \cup B$ is a separation of $X$, let $f(x) = 0$ for $x \in A$ and $f(x) = 1$ for $x \in B$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a completely regular space $X$ is connected if and only if its Stone-Čech compactification $\beta(X)$ is connected.
 
 <1>1. Forward direction ($\implies$): If $X$ is connected, then $\beta(X)$ is connected.

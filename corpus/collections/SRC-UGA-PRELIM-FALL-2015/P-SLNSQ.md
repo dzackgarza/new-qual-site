@@ -17,11 +17,11 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Describe the construction of a field with eight elements.
 :::
 
-::: solution
+::: {.solution}
 1. Note that $8=2^3$ is a prime power $p^n$, so we can get this as a quotient of a polynomial algebra. In particular, since $p=2$, we'll want to look at $\FF_2[t]$, and we'll want to quotient it by a polynomial of degree $n=3$ that is irreducible in the base field $\FF_2$.
 
     We could use Rabin's test: $f$ is irreducible over $F$ iff

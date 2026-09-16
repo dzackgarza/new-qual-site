@@ -20,7 +20,7 @@ audit:
   date: 2026-09-04
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space obtained by attaching a 2-cell to $\RP^2$ via some map $f: S^1 \to \RP^2$ .
 
 What are the possibilities for the homology $H_* (X; Z)$?

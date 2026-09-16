@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Prove that
 
 $$
@@ -25,7 +25,7 @@ $$
 whenever $a > 0$ . Hence show that the sum equals coth $\pi a$
 :::
 
-::: solution
+::: {.solution}
 From Exercise 3, for
 \[
 f(x)=\frac1\pi\frac{a}{a^2+x^2},\qquad a>0,

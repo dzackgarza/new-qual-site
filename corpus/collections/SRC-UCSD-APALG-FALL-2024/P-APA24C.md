@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A, C \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$ be Hermitian and suppose the following:
 
 - The $n$ eigenvalues of $A$ are notated and ordered as follows:

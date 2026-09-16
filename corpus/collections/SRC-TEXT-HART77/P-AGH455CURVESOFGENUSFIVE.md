@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume $X$ is not hyperelliptic.
 
 a. The curves of genus 5 whose canonical model in $\PP^4$ is a complete intersection $F_2 . F_2 . F_2$ form a family of dimension 12.

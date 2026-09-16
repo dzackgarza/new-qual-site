@@ -29,10 +29,10 @@ audit:
 6) Let $D = \{ z \in \mathbf { C } : | z | < 1 \}$ and P and Q be distinct points in D. Prove the following statement: If f and g are conformal (or equivalently biholomorphic) self-maps of D, $f ( P ) = g ( P )$ and $f ( Q ) = g ( Q )$ , then $f \equiv g$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The comparison map is conjugate to a disk map fixing zero and another point.
 
-::: proof
+::: {.proof}
 Since $g$ is biholomorphic, $h=g^{-1}\circ f$ is a
 holomorphic disk self-map. The two assumed equalities
 give $h(P)=P$ and $h(Q)=Q$. Set
@@ -54,7 +54,7 @@ $q=\phi(Q)\ne0$.
 
 <1>2. The normalized map is the identity.
 
-::: proof
+::: {.proof}
 Schwarz's lemma gives $|H(w)|\leq|w|$ [@SS03]. The
 quotient $H(w)/w$ extends holomorphically at zero by
 the Taylor expansion and is bounded by one. Its value

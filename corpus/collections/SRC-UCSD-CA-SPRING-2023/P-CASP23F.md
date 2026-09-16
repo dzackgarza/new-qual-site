@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a \in \mathbb{D}$ and $G = \mathbb{D} \setminus \{a\}$.
 
 (a) Construct a harmonic function $v$ on $G$ such that the following two conditions are satisfied: $\lim_{z \to z^*} v(z) = 0$ for all $z^* \in \mathbb{T}$ and $\lim_{z \to a} v(z) = +\infty$.
@@ -25,7 +25,7 @@ Write down an explicit formula for the function $v$ you constructed.
 Prove that the Dirichlet problem on $G$ with boundary data $f$ has no solution: there is no harmonic function $u$ on $G$ such that $\lim_{z \to z_0} u(z) = f(z_0)$ for all $z_0 \in \partial G$.
 :::
 
-::: solution
+::: {.solution}
 (a) The Green function of the unit disk with pole at $a$ gives the required
 example:
 \[

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Q$ be the quaternion group of order $8$ defined by the relations
 \[
 a^4=1,\quad a^2=b^2,\quad\text{and}\quad b^{-1}ab=a^3.
@@ -31,7 +31,7 @@ a^4=1,\quad a^2=b^2,\quad\text{and}\quad b^{-1}ab=a^3.
 (e) Use parts (c) and (d) to give the complete character table for $Q$.
 :::
 
-::: solution
+::: {.solution}
 From
 \[
 b^{-1}ab=a^3

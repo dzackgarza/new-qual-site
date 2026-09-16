@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f:\DD\to\DD$ is analytic and admits a continuous extension $\tilde f: \bar \DD \to \bar \DD$ such that $\abs{z} = 1 \implies \abs{f(z)} = 1$.
 
 Prove that $f$ is a rational function.
@@ -32,7 +32,7 @@ Suppose that $a_1, \cdots, a_n \in \DD$ are the zeros of $f$ and prove that
 .\]
 :::
 
-::: solution
+::: {.solution}
 Because $|f|=1$ on $\partial\mathbb D$ and the extension is continuous, there
 is an annular neighborhood of the boundary on which $f$ has no zeros. Hence all
 zeros of $f$ lie in a compact subset of $\mathbb D$. Since zeros of a

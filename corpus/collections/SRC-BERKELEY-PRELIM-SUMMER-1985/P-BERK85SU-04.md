@@ -12,7 +12,7 @@ audit:
   date: 2026-09-14
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a group of order $120$ and $H\le G$ a subgroup of order $24$. Assume that at least one left coset of $H$, other than $H$ itself, is equal to some right coset of $H$.
 Prove that $H$ is normal in $G$.
 :::

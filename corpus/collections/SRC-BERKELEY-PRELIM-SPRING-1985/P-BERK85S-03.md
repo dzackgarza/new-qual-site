@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Show that three complex numbers $a,b,c$ are the vertices of an equilateral triangle if and only if
 \[
 a^2+b^2+c^2=ab+bc+ca.

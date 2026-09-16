@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field. A discrete valuation on $K$ is a function $\nu:
 K\setminus\{0\}\rightarrow\mathbb Z$ such that
 
@@ -50,7 +50,7 @@ Prove the following:
     prime to $p$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the foundational properties of the valuation ring $R$ associated with a discrete valuation $\nu$ on a field $K$, and determine the valuation ring of the $p$-adic valuation $\nu_p$ on $\mathbb{Q}$.
 
 <1>1. Valuation of $1$, $-1$, and inverses:

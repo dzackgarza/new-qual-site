@@ -23,11 +23,11 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an abelian group, and show $A$ is a $\ZZ\dash$module in a unique way.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Every abelian group $(A,+)$ admits exactly one $\mathbb Z$-module structure.
 

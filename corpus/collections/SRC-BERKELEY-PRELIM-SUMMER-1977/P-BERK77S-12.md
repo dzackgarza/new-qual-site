@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $V$ be the vector space of polynomials of degree at most $10$, and let $D:V\to V$ be differentiation, $Dp=p'$.
 
 1. Show that $\operatorname{tr}D=0$.

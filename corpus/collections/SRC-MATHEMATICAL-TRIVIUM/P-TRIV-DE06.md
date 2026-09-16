@@ -15,6 +15,6 @@ audit:
   note: Checked against Differential Equations, Problem 6, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Solve $y ^ { \prime \prime } - 6 y ^ { \prime } + 9 y = 0 { \mathrm { ~ w i t h ~ } } y ( 1 ) = 1 { \mathrm { ~ a n d ~ } } y ^ { \prime } ( 3 ) = 0$
 :::

@@ -15,6 +15,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose a finite homogeneous system of linear equations with rational coefficients has a nonzero complex solution. Must it have a nonzero rational solution? Prove your answer or give a counterexample.
 :::

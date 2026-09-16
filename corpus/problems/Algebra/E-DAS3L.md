@@ -32,7 +32,7 @@ review: draft
 - Compute $\aut(\qty{\ZZ/p\ZZ}^n)$.
 :::
 
-::: solution
+::: {.solution}
 *Any cyclic group is abelian.*  
 If $G=\langle g\rangle$, then any elements are $g^a,g^b$. Then
 $g^a g^b=g^{a+b}=g^b g^a$, so $G$ is abelian.

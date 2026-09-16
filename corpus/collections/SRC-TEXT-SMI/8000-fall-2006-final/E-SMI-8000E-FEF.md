@@ -34,11 +34,11 @@ or
 (ii) If $E$ is an algebraic field extension of $k$ (not necessarily finite), and $F$ is an algebraically closed field containing $k$, there is a field homomorphism $E \to F$ which is the identity on $k$.
 :::
 
-::: solution
+::: {.solution}
 We prove option (ii).
 
 <1>1. Partially order all partial $k$-embeddings of subfields of $E$ into $F$.
-::: proof
+::: {.proof}
 Let $\mathcal P$ be the set of pairs $(L,\varphi)$ such that
 $$
 k\subseteq L\subseteq E
@@ -58,7 +58,7 @@ if $L\subseteq L'$ and $\varphi'|_L=\varphi$.
 :::
 
 <1>2. Every chain has an upper bound.
-::: proof
+::: {.proof}
 Let
 $$
 \{(L_i,\varphi_i)\}_{i\in I}
@@ -87,7 +87,7 @@ $$
 :::
 
 <1>3. A maximal partial embedding must already be defined on all of $E$.
-::: proof
+::: {.proof}
 Suppose instead that $L\ne E$, and choose
 $$
 \alpha\in E\setminus L.
@@ -133,7 +133,7 @@ Therefore $L=E$.
 :::
 
 <1>4. Conclude the required embedding exists.
-::: proof
+::: {.proof}
 The maximal map from step <1>2 is therefore a field homomorphism
 $$
 \boxed{\varphi:E\longrightarrow F}

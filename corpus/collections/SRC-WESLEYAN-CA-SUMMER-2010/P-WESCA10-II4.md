@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $D\subset\mathbb C$ be a domain and let $f:D\to\mathbb C$ be analytic and injective.
 Prove that
 \[

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that the transitive subgroups of the symmetric group $S_3$ (acting naturally on $\{1, 2, 3\}$) are precisely $S_3$ and $A_3$.
 :::
 
-::: solution
+::: {.solution}
 Let $H\le S_3$ act transitively on $\{1,2,3\}$. By orbit--stabilizer,
 \[
 |H|=3\,|H_1|,

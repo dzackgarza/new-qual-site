@@ -16,7 +16,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 If $f$ is a finite real valued measurable function on a measurable set $E \subset \mathbb{R}$, show that the set $\{(x, f(x)) : x \in E\}$ is measurable.
 :::
 

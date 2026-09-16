@@ -31,7 +31,7 @@ Assume that $p$ is prime and $X^p - a$ is irreducible in $\mathbb{Q}[X]$.
 Show that the Galois group of $X^p - a$ over $\mathbb{Q}$ is isomorphic to the group (with respect to composition) of all functions $f : \mathbb{Z}/p\mathbb{Z} \to \mathbb{Z}/p\mathbb{Z}$ such that for some $k, l \in \mathbb{Z}/p\mathbb{Z}$ with $k \neq 0$, $$f(y) = ky + l \text{ for all } y \in \mathbb{Z}/p\mathbb{Z}.$$
 :::
 
-::: solution
+::: {.solution}
 Choose a root $\alpha\in\mathbb C$ of $X^p-a$ and a primitive
 $p$th root of unity $\zeta$. Irreducibility implies $a\ne0$,
 since $X^p$ is reducible for $p\geq2$.
@@ -39,7 +39,7 @@ since $X^p$ is reducible for $p\geq2$.
 <1>1. The splitting field is $K=\mathbb Q(\alpha,\zeta)$ and
 $[K:\mathbb Q]=p(p-1)$.
 
-::: proof
+::: {.proof}
 The roots are the $p$ distinct numbers $\alpha\zeta^j$ for
 $j\in\mathbb Z/p\mathbb Z$. They lie in $K$, and the field
 they generate contains $\alpha$ and
@@ -76,7 +76,7 @@ argument applies.
 
 <1>2. Every Galois automorphism acts affinely on the root labels.
 
-::: proof
+::: {.proof}
 Let $\sigma\in\operatorname{Gal}(K/\mathbb Q)$. It preserves
 the multiplicative order of $\zeta$, so
 $\sigma(\zeta)=\zeta^k$ for a unique
@@ -93,7 +93,7 @@ and is faithful because the roots generate $K$.
 
 <1>3. Every affine permutation occurs, proving the isomorphism.
 
-::: proof
+::: {.proof}
 The affine maps form a group: composition and inversion are
 $$
 f_{k,l}\circ f_{u,v}=f_{ku,kv+l},\qquad

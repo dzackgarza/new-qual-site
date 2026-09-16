@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 We show the result of (Ex.
 5.8) is false in dimension 2. Let $k$ be an algebraically closed field of characteristic 0, and let $X=\PP_k^2$.
 Let $\omega$ be the sheaf of differential 2-forms (II, §8). Define an infinitesimal extension $X'$ of $X$ by $\omega$ by giving the element $\xi \in H^1(X, \omega \tensor \mct)$ defined as follows (Ex.

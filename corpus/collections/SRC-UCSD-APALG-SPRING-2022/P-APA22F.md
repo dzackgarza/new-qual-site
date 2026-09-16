@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 (a) Let $s$ denote the Schur symmetric functions, and let $\langle -, - \rangle$ denote the usual scalar product on the ring of symmetric functions.
 Compute
 \[

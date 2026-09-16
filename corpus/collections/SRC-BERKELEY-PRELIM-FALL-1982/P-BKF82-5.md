@@ -23,7 +23,7 @@ audit:
   note: "Used bounded total masses from the k=0 moment, Weierstrass approximation, and convergence for polynomials to prove the continuous test integrals are Cauchy."
 ---
 
-::: problem
+::: {.problem}
 Let $\varphi_n\ge0$ be continuous on $[0,1]$ and suppose
 \[
 \lim_{n\to\infty}\int_0^1x^k\varphi_n(x)\,dx
@@ -35,14 +35,14 @@ exists for every $k\ge0$. Show that
 exists for every continuous $f$ on $[0,1]$.
 :::
 
-::: solution
+::: {.solution}
 Put
 $$
 I_n(g)=\int_0^1 g(x)\varphi_n(x)\,dx.
 $$
 
 <1>1. The total masses $I_n(1)$ are uniformly bounded.
-::: proof
+::: {.proof}
 The hypothesis for $k=0$ says that
 $$
 I_n(1)=\int_0^1\varphi_n(x)\,dx
@@ -60,7 +60,7 @@ $$
 :::
 
 <1>2. The sequence $I_n(p)$ converges for every polynomial $p$.
-::: proof
+::: {.proof}
 If
 $$
 p(x)=\sum_{k=0}^d c_kx^k,
@@ -74,7 +74,7 @@ Therefore $I_n(p)$ converges.
 :::
 
 <1>3. For every continuous $f$, the sequence $I_n(f)$ is Cauchy.
-::: proof
+::: {.proof}
 Let $\varepsilon>0$. By the Weierstrass approximation theorem, choose a
 polynomial $p$ such that
 $$
@@ -98,7 +98,7 @@ Thus $(I_n(f))$ is Cauchy in $\mathbb R$.
 :::
 
 <1>4. Conclude convergence.
-::: proof
+::: {.proof}
 The real numbers are complete, so the Cauchy sequence $I_n(f)$ converges.
 Hence for every $f\in C([0,1])$,
 $$

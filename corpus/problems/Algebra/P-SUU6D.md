@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 How many elements in the automorphism group $\operatorname{Aut}(\mathbb{Z}/20\mathbb{Z})$ have order 4?
 :::
 
-::: solution
+::: {.solution}
 Since $\mathbb Z/20\mathbb Z$ is cyclic,
 \[
 \operatorname{Aut}(\mathbb Z/20\mathbb Z)\cong(\mathbb Z/20\mathbb Z)^\times.

@@ -40,14 +40,14 @@ You may use all three tools available to study this group: Jordan forms, rationa
 Try to prove this group is simple, along the lines of the proof given for Icos — i.e. use conjugacy classes (but they are harder to compute).
 :::
 
-::: solution
+::: {.solution}
 Put
 $$
 G=GL_3(\mathbf F_2).
 $$
 
 <1>1. Compute the order of $G$.
-::: proof
+::: {.proof}
 An invertible matrix is the same as an ordered basis of $\mathbf F_2^3$.
 The first column may be any nonzero vector, giving $8-1=7$ choices. The
 second may be any vector outside the span of the first, giving $8-2=6$
@@ -59,7 +59,7 @@ $$
 :::
 
 <1>2. List all possible characteristic polynomials.
-::: proof
+::: {.proof}
 For $A\in G$, the characteristic polynomial is a monic cubic over
 $\mathbf F_2$. Its constant term is nonzero, hence equals $1$. Therefore it
 is one of the four monic cubics with constant term $1$:
@@ -75,7 +75,7 @@ The last two have no root in $\mathbf F_2$, so they are irreducible.
 :::
 
 <1>3. Determine the rational and Jordan forms for $f_u=(x+1)^3$.
-::: proof
+::: {.proof}
 The invariant factors are powers of $x+1$ whose degrees sum to $3$ and form
 a divisibility chain. Thus the three possibilities correspond to the
 partitions
@@ -119,7 +119,7 @@ $N^2\ne0$ but $N^4=0$, so the order is $4$.
 :::
 
 <1>4. Determine the rational forms for the other three characteristic polynomials.
-::: proof
+::: {.proof}
 For
 $$
 f_3=(x+1)(x^2+x+1),
@@ -172,7 +172,7 @@ diagonalizable because all their irreducible factors are separable.
 :::
 
 <1>5. Exhibit representatives of all six conjugacy classes.
-::: proof
+::: {.proof}
 The rational-form classification above shows that the complete list consists
 of six classes. Representatives may be chosen as
 $$
@@ -205,7 +205,7 @@ indeed two distinct order-$7$ conjugacy classes.
 :::
 
 <1>6. Compute the centralizer and conjugacy-class size for each representative.
-::: proof
+::: {.proof}
 For the identity the centralizer is all of $G$, so the class has size $1$.
 
 For $A_2=I+E_{12}$, solving $XA_2=A_2X$ over $\mathbf F_2$ shows that the
@@ -286,7 +286,7 @@ as required.
 :::
 
 <1>7. Count the elements of each order.
-::: proof
+::: {.proof}
 The table immediately gives
 $$
 \boxed{
@@ -300,7 +300,7 @@ order is a single conjugacy class.
 :::
 
 <1>8. Count the Sylow $7$- and Sylow $3$-subgroups.
-::: proof
+::: {.proof}
 A Sylow $7$-subgroup is cyclic of order $7$ and therefore contains six
 elements of order $7$. Distinct subgroups of prime order meet only in the
 identity, so the $48$ elements of order $7$ partition into sets of six:
@@ -316,7 +316,7 @@ $$
 :::
 
 <1>9. Count the Sylow $2$-subgroups and identify their structure.
-::: proof
+::: {.proof}
 Consider the upper unitriangular subgroup
 $$
 U=
@@ -361,7 +361,7 @@ lies in a unique Sylow $2$-subgroup.
 :::
 
 <1>10. Prove that $G$ is simple.
-::: proof
+::: {.proof}
 Let $N\trianglelefteq G$. A normal subgroup is a union of conjugacy classes
 and must contain the identity. The nonidentity class sizes are
 $$

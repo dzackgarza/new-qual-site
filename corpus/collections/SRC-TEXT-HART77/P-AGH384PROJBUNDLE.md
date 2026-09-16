@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a noetherian scheme, and let $\mce$ be a locally free $\mco_Y\dash$module of rank $n+1$, with $n \geq 1$. Let $X = \PP(\mce)$ (II, §7), with the invertible sheaf $\mco_X(1)$ and the projection morphism $\pi: X \to Y$.
 
 a. Show that:

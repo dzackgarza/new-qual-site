@@ -15,7 +15,7 @@ audit:
   note: Checked against Schwarz lemma and reflection principle, Problem 10, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 [Fall 1998, Problem #5] Suppose $f : \mathbb { D }  \mathbb { D }$ is analytic.
 Prove that for any $a \in \mathbb { D }$
 

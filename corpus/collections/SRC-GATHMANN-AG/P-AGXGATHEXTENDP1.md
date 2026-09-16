@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that
 
 a. Every morphism $f:\AA^1\smz \to \PP^1$ can be extended to a morphism $\hat f: \AA^1 \to \PP^1$.

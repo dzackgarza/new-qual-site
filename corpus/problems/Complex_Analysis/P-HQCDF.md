@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a>0$ and calculate
 \[
 \int_0^\infty {x^2 \over (x^2 + a^2)^2} \, dx

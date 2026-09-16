@@ -25,7 +25,7 @@ audit:
   note: Verified the relative long exact sequence argument using the canonical basis of H_0 by path components.
 ---
 
-::: problem
+::: {.problem}
 Let $A\subset X$.
 Prove that the relative homology group $H_0(X,A)$ is trivial if and only if $A$ intersects every path component of $X$.
 :::

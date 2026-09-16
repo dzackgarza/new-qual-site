@@ -18,7 +18,7 @@ audit:
   date: 2026-08-19
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f$ is holomorphic in an open set containing the closed unit disc, except for a pole at $z_0$ on the unit circle.
 Let $\displaystyle f(z) = \sum_{n = 1}^\infty c_n z^n$ denote the the power series in the open disc.
 Show that

@@ -26,7 +26,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, d)$ be a compact metric space.
 
 1. State the definition of what it means for a metric space to be separable, and what it means for a topological space to be second countable.
@@ -37,14 +37,14 @@ Let $(X, d)$ be a compact metric space.
    (Hint: Use (2) and the Stone-Weierstrass Theorem.)
 :::
 
-::: solution
+::: {.solution}
 <1>1. Recall the definitions.
-::: proof
+::: {.proof}
 A metric space is **separable** if it contains a countable dense subset. A topological space is **second countable** if its topology has a countable base.
 :::
 
 <1>2. Construct a countable base for $X$.
-::: proof
+::: {.proof}
 For every $n\ge1$, compactness gives a finite set
 \[
 D_n=\{x_{n,1},\dots,x_{n,N_n}\}\subset X
@@ -75,7 +75,7 @@ Hence $X$ is second countable.
 :::
 
 <1>3. Build a countable dense subset of $C(X,\mathbb R)$.
-::: proof
+::: {.proof}
 For each $q\in D$, define
 \[
 \rho_q(x):=d(x,q).

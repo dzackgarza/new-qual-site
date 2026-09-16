@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f:X\to Y$ with $X, Y$ projective varieties over $k= \CC$.
 
 - Show that $f$ is proper and closed.

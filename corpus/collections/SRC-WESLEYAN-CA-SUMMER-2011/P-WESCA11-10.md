@@ -15,7 +15,7 @@ audit:
   note: Checked against Problem 10 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_0^\infty\frac{x^2}{x^4+5x^2+6}\,dx

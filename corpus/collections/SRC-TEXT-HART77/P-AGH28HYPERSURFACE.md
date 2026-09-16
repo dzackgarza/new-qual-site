@@ -16,12 +16,12 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A projective variety $Y \subseteq \PP^n$ has dimension $n-1$ if and only if it is the zero set of a single irreducible homogeneous polynomial $f$ of positive degree.
 In this case $Y$ is called a **hypersurface** in $\PP^n$.
 :::
 
-::: solution
+::: {.solution}
 **($\implies$).** The affine cone has $\dim C(Y) = \dim Y + 1 = (n-1) + 1 = n$ inside $\AA^{n+1}$, so $C(Y)$ has codimension one there.
 Hence $C(Y) = Z(f)$ for some irreducible $f \in k[x_0,\ldots,x_n]$.
 Letting $F$ be the homogenization of $f$, the affine cone correspondence gives $Y = Z(F)$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $C$ be a curve of genus $g$, and let $X$ be the ruled surface $C \times \PP^1$.
 We consider the question, for what integers $s \in \ZZ$ does there exist a section $D$ of $X$ with $D^2=s$?
 First show that $s$ is always an even integer, say $s=2 r$.

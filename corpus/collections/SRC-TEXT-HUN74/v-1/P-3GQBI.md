@@ -29,7 +29,7 @@ audit:
 Show that in $\mathbb{C}$, the fields $\mathbb{Q}(i) \cong \mathbb{Q}(\sqrt 2)$ as vector spaces, but not as fields.
 :::
 
-::: solution
+::: {.solution}
 Both fields are regarded as vector spaces over $\QQ$.
 
 <1>1. The sets
@@ -39,7 +39,7 @@ Both fields are regarded as vector spaces over $\QQ$.
 \{1,\sqrt2\}
 \]
 are $\QQ$-bases of $\QQ(i)$ and $\QQ(\sqrt2)$, respectively.
-::: proof
+::: {.proof}
 The element $i$ has minimal polynomial $X^2+1$ over $\QQ$, while $\sqrt2$ has
 minimal polynomial $X^2-2$. Both polynomials are irreducible over $\QQ$, so both
 simple extensions have degree $2$. The standard power bases are therefore the
@@ -53,7 +53,7 @@ T:\QQ(i)\longrightarrow\QQ(\sqrt2),
 T(a+bi)=a+b\sqrt2
 \]
 is a $\QQ$-vector-space isomorphism.
-::: proof
+::: {.proof}
 The map sends the basis $\{1,i\}$ from <1>1 bijectively to the basis
 $\{1,\sqrt2\}$. Hence it is a $\QQ$-linear isomorphism.
 :::
@@ -62,7 +62,7 @@ $\{1,\sqrt2\}$. Hence it is a $\QQ$-linear isomorphism.
 \[
 \QQ(i)\longrightarrow\QQ(\sqrt2).
 \]
-::: proof
+::: {.proof}
 Suppose $\varphi$ were such an isomorphism. Every field homomorphism fixes the
 prime field, so $\varphi(-1)=-1$. Since $i^2=-1$,
 \[
@@ -74,7 +74,7 @@ contradiction.
 
 <1>4. Thus $\QQ(i)$ and $\QQ(\sqrt2)$ are isomorphic as $\QQ$-vector spaces
 but not as fields.
-::: proof
+::: {.proof}
 Combine <1>2 and <1>3.
 :::
 :::

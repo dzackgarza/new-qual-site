@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Describe the irreducible representations of the compact Lie groups $\operatorname{SO}(2)$ and $\operatorname{SO}(3)$ over $\mathbb{C}$ and $\mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 For $\operatorname{SO}(2)\cong S^1$, every irreducible complex representation is one-dimensional because the group is abelian. They are
 \[
 \chi_n(R_\theta)=e^{in\theta},\qquad n\in\mathbb Z.

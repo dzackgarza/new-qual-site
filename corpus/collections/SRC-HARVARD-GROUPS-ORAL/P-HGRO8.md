@@ -21,15 +21,15 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that any two Sylow $p$-subgroups of a finite group are conjugate.
 :::
 
-::: solution
+::: {.solution}
 Let $P$ and $Q$ be Sylow $p$-subgroups of a finite group $G$.
 
 <1>1. Let $P$ act by left multiplication on $G/Q$.
-::: proof
+::: {.proof}
 Define
 \[
 x\cdot gQ=(xg)Q
@@ -39,7 +39,7 @@ This is a group action.
 :::
 
 <1>2. The action has a fixed coset $gQ$.
-::: proof
+::: {.proof}
 Because $Q$ is Sylow, the index $[G:Q]$ is not divisible by $p$. Every orbit
 of the $p$-group $P$ has size a power of $p$. If every orbit had size greater
 than $1$, then every orbit size would be divisible by $p$, and hence so would
@@ -47,7 +47,7 @@ $[G:Q]$. Therefore some orbit has size $1$.
 :::
 
 <1>3. The fixed-point condition implies $P=gQg^{-1}$.
-::: proof
+::: {.proof}
 Since $gQ$ is fixed by $P$, for every $x\in P$ we have
 $xgQ=gQ$, hence $g^{-1}xg\in Q$. Thus
 \[

@@ -55,9 +55,9 @@ $$\sum_{n=2}^\infty n|a_n| \leq 1.$$
 Show that $f(z)$ is a 1-1 holomorphic function on $\Delta$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a): Rouché's theorem.
-::: proof
+::: {.proof}
 Let $C$ be a positively oriented, piecewise smooth simple closed contour and suppose $F,G$ are
 holomorphic on an open set containing $C$ and its interior. If
 $$
@@ -76,7 +76,7 @@ $t=0$ and $t=1$ are the zero counts of $F$ and $F+G$.
 :::
 
 <1>2. Part (b): integrate $\varphi'$ along the line segment.
-::: proof
+::: {.proof}
 Because $\Omega$ is convex, the segment
 $$
 L=\{w+t(z-w):0\le t\le1\}
@@ -97,7 +97,7 @@ The maximum exists because $L$ is compact and $\varphi'$ is continuous.
 :::
 
 <1>3. Part (c): the nonlinear tail is a strict contraction on every segment in $\Delta$.
-::: proof
+::: {.proof}
 Write
 $$
 h(z)=f(z)-z=\sum_{n=2}^\infty a_nz^n.

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that $\RR$ is not homeomorphic to $[0, \infty)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Suppose that a homeomorphism
 $$
 f:[0,\infty)\longrightarrow\mathbb R

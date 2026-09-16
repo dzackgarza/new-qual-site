@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 In this question, briefly justify your answers by stating the main relevant results.
 
 (a) Suppose $D$ is a PID. Prove that a finitely generated $D$-module is flat if and only if it is free.

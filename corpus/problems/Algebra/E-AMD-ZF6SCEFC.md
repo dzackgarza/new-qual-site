@@ -22,7 +22,7 @@ audit:
 Show that a group of order $p^2 q^2$ where $q$ does not divide $p^2-1$ and $p$ does not divide $q^2-1$ is abelian.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a group $G$ of order $|G| = p^2 q^2$ (with distinct primes $p$ and $q$) satisfying $q \nmid (p^2 - 1)$ and $p \nmid (q^2 - 1)$ is abelian.
 
 <1>1. Sylow subgroup count constraints:

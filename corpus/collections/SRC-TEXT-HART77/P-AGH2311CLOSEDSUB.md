@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Closed immersions are stable under base extension: if $f: Y \to X$ is a closed immersion and $X' \to X$ is any morphism, then $f': \fiberprod{Y}{X}{X'} \to X'$ is also a closed immersion.
 
 b. If $Y$ is a closed subscheme of an affine scheme $X = \Spec A$, then $Y$ is also affine, and in fact $Y$ is the closed subscheme determined by a suitable ideal $\mfa \subseteq A$ as the image of the closed immersion $\Spec A/\mfa \to \Spec A$.
@@ -29,7 +29,7 @@ We call $Y$ the **scheme-theoretic image** of $f$.
 If $Z$ is a reduced scheme, then $Y$ is just the reduced induced structure on the closure of the image $f(Z)$.
 :::
 
-::: remark
+::: {.remark}
 For part (b): first show that $Y$ can be covered by a finite number of open affine subsets of the form $D(f_i) \intersect Y$ with $f_i \in A$.
 By adding some more $f_i$ with $D(f_i) \intersect Y = \varnothing$ if necessary, arrange that the $D(f_i)$ cover $X$.
 Next show that $f_1, \ldots, f_r$ generate the unit ideal of $A$.

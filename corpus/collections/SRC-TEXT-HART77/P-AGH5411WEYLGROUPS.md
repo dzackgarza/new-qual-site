@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given any diagram consisting of points and line segments joining some of them, we define an abstract group, given by generators and relations, as follows:
 
 - Each point represents a generator $x_i$. The relations are

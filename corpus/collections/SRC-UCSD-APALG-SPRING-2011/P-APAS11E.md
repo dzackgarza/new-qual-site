@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (a) Let $A^{(2,1,1)}\times A^{(2,1)}$ denote the representation of $S_4\times S_3$ such that for all $(\sigma,\tau)\in S_4\times S_3$
@@ -48,7 +48,7 @@ Decompose $T\uparrow_{S_1\times S_3\times S_3}^{S_7}$ as a sum of irreducible re
 (d) Decompose $A^{(2,2)}\otimes A^{(2,2)}$ as a sum of irreducible representations of $S_4$ where $\otimes$ represents the Kronecker product of the representations.
 :::
 
-::: solution
+::: {.solution}
 The source contains three forced notation corrections: under its decreasing-partition convention, $(1,1,2)$ and $(1,2)$ mean $(2,1,1)$ and $(2,1)$, and the product group in part (b) and the displayed embedding is $S_4\times S_3$.
 
 For (a), Frobenius characteristic converts induction from a Young subgroup into multiplication of Schur functions:

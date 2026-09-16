@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $E$ be the Banach space $C([0,1])$ endowed with the uniform norm.
 Let $(f_h)_{h \in \mathbb{N}} \subset E$ be a sequence and $f \in E$.
 
@@ -36,9 +36,9 @@ Let $(f_h)_{h \in \mathbb{N}} \subset E$ be a sequence and $f \in E$.
 (4) Show that $E$ is not reflexive.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Weakly convergent sequences are uniformly bounded.
-::: proof
+::: {.proof}
 Suppose $f_h\rightharpoonup f$ in $E=C([0,1])$. Every weakly convergent sequence in a Banach space is norm bounded. Indeed, for each $h$ define
 \[
 T_h:E^*\to\mathbb C,
@@ -65,7 +65,7 @@ for every $x\in[0,1]$ and every $h$.
 :::
 
 <1>2. Weak convergence implies pointwise convergence.
-::: proof
+::: {.proof}
 Fix $x\in[0,1]$. The evaluation functional
 \[
 \delta_x:E\to\mathbb C,
@@ -87,7 +87,7 @@ Since $x$ was arbitrary,
 :::
 
 <1>3. Show that $f_h(x)=x^h$ does not converge weakly.
-::: proof
+::: {.proof}
 For every $x\in[0,1)$,
 \[
 x^h\longrightarrow0,
@@ -113,7 +113,7 @@ If $(x^h)$ converged weakly in $E$ to some $f\in E$, Step 2 would force pointwis
 :::
 
 <1>4. Deduce that $C([0,1])$ is not reflexive.
-::: proof
+::: {.proof}
 The sequence
 \[
 f_h(x)=x^h

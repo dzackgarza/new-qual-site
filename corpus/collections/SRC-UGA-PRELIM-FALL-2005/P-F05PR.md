@@ -17,14 +17,14 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 i) Let $f$ be a function from $\mathbb{R}$ to $\mathbb{R}$ and let $a \in \mathbb{R}$.
 From the definition of the derivative, prove that if $f$ is differentiable at $a$ then $f$ is continuous at $a$.
 
 ii) Prove the product rule, $(fg)' = f'g + g'f$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that differentiability implies continuity at a point, and deduce the product rule for derivatives using limit laws.
 
 <1>1. Part (i): Differentiability at $a$ implies continuity at $a$.

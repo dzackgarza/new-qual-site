@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 
 - $\log(zw)\neq \log(z)\log(w)$
@@ -21,7 +21,7 @@ Show that
 
 :::
 
-:::{.solution}
+::: {.solution}
 Counterexamples: 
 
 - Take $z=\zeta_4^3$ and $w=\zeta_4^2$, noting that $\Arg(z) = {3\pi \over 4}$ and $\Arg(w) = {\pi \over 2}$

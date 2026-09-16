@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a finite field of cardinality $p^n$, where $p$ is prime and $n>0$, and let
 \[
 G=GL_2(F).

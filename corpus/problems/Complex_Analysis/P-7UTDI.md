@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:
 
 a. $|f(z)|$ is constant.
@@ -31,7 +31,7 @@ c. $\arg(f(z))$ is constant.
 d. $\overline{f(z)}$ is analytic.
 :::
 
-::: solution
+::: {.solution}
 Write $f=u+iv$ on the connected domain.
 
 <1>1. If $|f|$ is constant, then either $f\equiv0$, or $f$ is nonzero and its image lies in a circle. A nonconstant holomorphic map is open, but a circle has empty interior. Hence $f$ is constant.

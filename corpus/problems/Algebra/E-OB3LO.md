@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show 
 \[
 x^\ell - 1 \divides x^m-1 \iff \ell\divides m
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 $\implies$
 
 - Write $m = \ell q + r$ with $0\leq r < \ell$.
@@ -36,7 +36,7 @@ where $p,q$ are polynomial by divisibility.
 - So the remaining ratio must be polynomial, but since $r<\ell$ is strict this forces $r=0$.
   Thus $\ell \divides m$.
 
-:::{.remark}
+::: {.remark}
 I don't like this proof!
 :::
 

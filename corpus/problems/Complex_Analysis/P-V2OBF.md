@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe each set in the $z$-plane in (a) and (b) below, where $\alpha$ is a complex number and $k$ is a positive number such that $2|\alpha|<k$.
 
 (a) $|z-\alpha|+|z+\alpha|=k$;
@@ -20,7 +20,7 @@ Describe each set in the $z$-plane in (a) and (b) below, where $\alpha$ is a com
 (b) $|z-\alpha|+|z+\alpha| \leq k$.
 :::
 
-::: solution
+::: {.solution}
 The two fixed points $\alpha$ and $-\alpha$ are the foci. Thus part (a) is an
 ellipse, because the sum of the distances from $z$ to the two foci is the
 constant $k>2|\alpha|$.

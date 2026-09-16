@@ -21,7 +21,7 @@ audit:
 Show that a retract of a contractible space is contractible.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $X$ is a contractible topological space and $A \subseteq X$ is a retract of $X$, then $A$ is contractible.
 
 <1>1. Retraction and contractibility data:

@@ -15,7 +15,7 @@ audit:
   note: Checked against Real Analysis, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2014-2016_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $(X,\mathcal A)$ be a measurable space and let $\mathcal C\subset\mathcal A$ be an algebra with $\mathcal A=\sigma(\mathcal C)$.
 Let $\mu,\nu$ be finite measures such that
 \[

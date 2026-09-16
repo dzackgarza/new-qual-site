@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a Hilbert space, $P : H \to H$ a bounded linear operator, $P^* : H \to H$ its adjoint, and $\mathcal{R}(P)$, $\mathcal{N}(P)$ its range and nullspace, respectively.
 
 (a) Show that $\mathcal{N}(P^*) = \mathcal{R}(P)^\perp$ and $\overline{\mathcal{R}(P^*)} = \mathcal{N}(P)^\perp$.
@@ -38,9 +38,9 @@ Show that the following are equivalent:
 (ii) $P = P^*$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Identify the nullspace of the adjoint.
-::: proof
+::: {.proof}
 For $y\in H$,
 \[
 y\in\mathcal N(P^*)
@@ -62,7 +62,7 @@ Taking orthogonal complements and using $M^{\perp\perp}=\overline M$ yields
 :::
 
 <1>2. Closed range of $P$ implies closed range of $P^*$.
-::: proof
+::: {.proof}
 Assume $\mathcal R(P)$ is closed. The restriction
 \[
 P:\mathcal N(P)^\perp\longrightarrow\mathcal R(P)
@@ -112,7 +112,7 @@ which is closed.
 :::
 
 <1>3. Self-adjoint idempotents satisfy the best-approximation property.
-::: proof
+::: {.proof}
 Assume $P^2=P$ and $P=P^*$. Since
 \[
 \mathcal R(P)=\mathcal N(I-P),
@@ -141,7 +141,7 @@ Hence
 :::
 
 <1>4. The best-approximation property forces self-adjointness.
-::: proof
+::: {.proof}
 Assume (i). Since $Px\in\mathcal R(P)$ is a best approximation to $x$ from the closed subspace $\mathcal R(P)$, the Hilbert-space projection theorem gives
 \[
 x-Px\perp\mathcal R(P)

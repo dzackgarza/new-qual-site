@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) If $Y$ is any subset of a topological space $X$, then $\dim Y \leq \dim X$.
 
 (b) If $X$ is covered by open subsets $\ts{U_i}$, then $\dim X = \sup_i \dim U_i$.
@@ -28,7 +28,7 @@ review: draft
 (e) Give an example of a Noetherian topological space of infinite dimension.
 :::
 
-::: solution
+::: {.solution}
 **(a)** Let $(U_i)_{0 \leq i \leq n}$ be a strict chain of irreducible closed subsets of $Y$, so $U_i = V_i \intersect Y$ for some $V_i$ closed in $X$.
 The $V_i$ need not form a chain; take partial unions $\tilde{V}_n = \Union_{i \leq n} V_i$, which do, and which remain strict.
 So $\dim X \geq n$.

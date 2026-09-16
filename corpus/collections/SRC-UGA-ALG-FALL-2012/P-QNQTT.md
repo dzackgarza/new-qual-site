@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) \in \QQ[x]$ be an irreducible polynomial of degree 5. Assume that $f$ has all but two roots in $\RR$.
 Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Let $K$ be the splitting field of $f$ over $\QQ$, and let
 $G=\operatorname{Gal}(K/\QQ)$. The group $G$ acts faithfully on the five roots
 of $f$, so we regard $G$ as a subgroup of $S_5$.

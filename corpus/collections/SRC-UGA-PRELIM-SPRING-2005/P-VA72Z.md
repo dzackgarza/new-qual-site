@@ -25,7 +25,7 @@ b. Prove that if the series $\sum_{n=1}^{\infty} a_n$ converges absolutely, then
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Conditional convergence of $\sum a_n$ can occur while $\sum a_n^2$ converges.
 ::: {.proof}
 Take

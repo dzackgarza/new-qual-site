@@ -26,7 +26,7 @@ b. A real-valued function that is continuous on a closed interval attains a mini
 c. $3n+1$ is even if and only if $n^2+4$ is prime.
 :::
 
-::: solution
+::: {.solution}
 (a) The negation is:
 \[
 \text{For every real }x\text{ there exists a real }y\text{ such that }|x-y|\le1.

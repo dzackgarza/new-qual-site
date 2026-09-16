@@ -19,7 +19,7 @@ audit:
   note: Repaired the garbled curl and div notation against Real Analysis Problem 42 on page 11 of the source PDF.
 ---
 
-::: problem
+::: {.problem}
 Consider the vector field $\vec{A} = \vec{\nabla}\frac{1}{r}$, where $r = \sqrt{x^2 + y^2 + z^2}$.
 
 (a) Find $\mathbf{div}\,\vec{A}$, $\triangle\vec{A}$, $\mathbf{curl}\,\vec{A}$.

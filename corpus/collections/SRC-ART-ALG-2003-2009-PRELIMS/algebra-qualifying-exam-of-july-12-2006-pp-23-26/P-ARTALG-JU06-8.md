@@ -24,14 +24,14 @@ audit:
   note: "Checked that any field isomorphism fixes the prime field and excluded both possible coefficient cases by parity of prime exponents."
 ---
 
-::: problem
+::: {.problem}
 Show that $\mathbb{Q}(\sqrt{2})$ and $\mathbb{Q}(\sqrt{3})$ are not isomorphic.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every field isomorphism between these fields fixes $\mathbb Q$.
 
-::: proof
+::: {.proof}
 A field isomorphism sends $1$ to $1$, hence fixes every integer.
 It preserves inverses, so it also fixes every quotient of integers
 with nonzero denominator. Thus it fixes the prime subfield
@@ -41,7 +41,7 @@ in the question.
 
 <1>2. The field $\mathbb Q(\sqrt3)$ contains no element whose square is $2$.
 
-::: proof
+::: {.proof}
 For a prime $\ell$ and a nonzero rational number $r$, let
 $v_\ell(r)$ be the exponent of $\ell$ in its numerator minus the
 exponent in its denominator. Unique prime factorization gives
@@ -63,7 +63,7 @@ is no such element.
 
 <1>3. The fields are not isomorphic.
 
-::: proof
+::: {.proof}
 If an isomorphism $\sigma:\mathbb Q(\sqrt2)\to\mathbb Q(\sqrt3)$
 existed, step <1>1 would give
 $\sigma(\sqrt2)^2=\sigma(2)=2$. This contradicts step <1>2.

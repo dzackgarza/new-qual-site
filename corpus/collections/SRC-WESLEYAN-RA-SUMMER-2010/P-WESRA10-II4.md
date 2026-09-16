@@ -15,7 +15,7 @@ audit:
   note: Checked against Part II, problem 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash drops the absolute-value delimiters in the displayed integral; the card records the only norm-continuity statement compatible with the surrounding translation question.
 ---
 
-::: problem
+::: {.problem}
 Let $f\in L^1(\mathbb R)$ and define $f_t(x)=f(x-t)$.
 Prove
 \[

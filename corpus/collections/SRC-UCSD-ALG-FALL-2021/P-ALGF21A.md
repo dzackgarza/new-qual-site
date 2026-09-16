@@ -24,7 +24,7 @@ audit:
   note: Replaced the compressed argument with explicit verification of the defining relations, normal forms in G, and the sixteen distinct normal forms in H.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be the group given by the presentation
 \[
 \langle a, b \mid a^8 = 1,\; ba = a^{-1}b,\; b^2 = a^4 \rangle.

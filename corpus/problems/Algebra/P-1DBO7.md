@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $E/F$ be a finite field extension. Prove that $E/F$ is algebraic and that there is a polynomial $g\in F[x]$ whose splitting field $L/F$ is finite and contains $E$.
 :::
 

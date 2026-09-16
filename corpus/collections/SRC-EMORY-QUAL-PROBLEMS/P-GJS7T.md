@@ -29,18 +29,18 @@ audit:
   note: "Compared with Linear Algebra (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMAL1 and carried its Jordan-form proof over C as a second solution."
 ---
 
-::: problem
+::: {.problem}
 Prove that any square matrix is conjugate to its transpose matrix.
 (You may prove it over $\mathbb{C}$).
 :::
 
-::: solution
+::: {.solution}
 We prove the assertion for matrices over any field $F$.
 
 <1>1. The companion matrix $C_f$ of any monic polynomial
 $f\in F[t]$ of positive degree is similar to its transpose.
 
-::: proof
+::: {.proof}
 Let $d=\deg f$, and regard $C_f$ as multiplication by
 $t$ on $E=F[t]/(f)$ in the basis $1,t,\ldots,t^{d-1}$.
 Each residue class has a unique representative of degree
@@ -68,7 +68,7 @@ Thus $C_f^{\mathsf T}=B_f C_f B_f^{-1}$.
 
 <1>2. Every square matrix $A$ over $F$ is similar to $A^{\mathsf T}$.
 
-::: proof
+::: {.proof}
 Rational canonical form gives an invertible $P$ with
 $A=PCP^{-1}$, where $C$ is a direct sum of companion
 matrices of monic polynomials [@DF04]. Apply step

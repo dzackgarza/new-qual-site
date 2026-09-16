@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Given an ideal $I$ in a graded polynomial ring, explain how to compute its Hilbert function.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 S=k[x_1,\ldots,x_n]
@@ -42,7 +42,7 @@ term order and compute a Gröbner basis $G$ of $I$.
 \operatorname{in}(I)
 =\langle \operatorname{in}(g):g\in G\rangle.
 \]
-::: proof
+::: {.proof}
 By definition of a Gröbner basis, the leading monomials of the elements of $G$
 generate the initial ideal.
 :::
@@ -52,7 +52,7 @@ generate the initial ideal.
 \dim_k(S/I)_d
 =\dim_k(S/\operatorname{in}(I))_d.
 \]
-::: proof
+::: {.proof}
 The monomials not lying in $\operatorname{in}(I)$ are the standard monomials.
 Division by the Gröbner basis gives every class in $S/I$ a unique remainder
 which is a $k$-linear combination of standard monomials. When $I$ is
@@ -66,7 +66,7 @@ monomials:
 H_{S/I}(d)
 =\#\{x^\alpha:|\alpha|=d,\ x^\alpha\notin\operatorname{in}(I)\}.
 \]
-::: proof
+::: {.proof}
 This is the basis description from <1>2.
 :::
 
@@ -75,7 +75,7 @@ This is the basis description from <1>2.
 H_I(d)=\dim_k I_d
 =\binom{n+d-1}{d}-H_{S/I}(d).
 \]
-::: proof
+::: {.proof}
 The degree-$d$ component of
 \[
 0\longrightarrow I\longrightarrow S\longrightarrow S/I\longrightarrow0

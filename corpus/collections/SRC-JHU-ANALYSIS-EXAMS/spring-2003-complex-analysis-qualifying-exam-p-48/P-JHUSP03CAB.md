@@ -35,7 +35,7 @@ If $0 \neq w \in \Delta$ is any other zero of $f(z)$, show that:
 $$\frac{M}{1 + M} \leq |w|.$$
 :::
 
-::: solution
+::: {.solution}
 In fact the stronger estimate
 $$
 \boxed{M\le |w|}
@@ -43,7 +43,7 @@ $$
 holds.
 
 <1>1. Dividing by the fixed zero produces a holomorphic disk map.
-::: proof
+::: {.proof}
 Because $f(0)=0$, define
 $$
 g(z)=\begin{cases}f(z)/z,&z\ne0,\\ f'(0),&z=0.\end{cases}
@@ -57,7 +57,7 @@ $g:\Delta\to\Delta$ is a holomorphic self-map.
 :::
 
 <1>2. Schwarz-Pick gives a stronger inequality than required.
-::: proof
+::: {.proof}
 Apply the Schwarz-Pick inequality [@SS03] to $g$ at the two points $0$ and $w$:
 $$
 \left|\frac{g(0)-g(w)}{1-\overline{g(w)}g(0)}\right|

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a finite-dimensional unital algebra over $\mathbb{C}$. The codimension of a $\mathbb{C}$-subspace $I \subseteq R$ is defined by
 $$
 \operatorname{codim}_R I = \dim_{\mathbb{C}} R - \dim_{\mathbb{C}} I.
@@ -28,7 +28,7 @@ $$
 (c) Classify all unital $\mathbb{C}$-algebras $R$ with $\dim_{\mathbb{C}} R = 2$ up to isomorphism, and list their maximal ideals.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that quotients by maximal ideals in finite-dimensional $\mathbb{C}$-algebras are $\mathbb{C}$ in (a), construct an evaluation map for 2-dimensional algebras in (b), and classify 2-dimensional algebras via quotient polynomials in (c).
 
 <1>1. Part (a): $\operatorname{codim}_R \mathfrak{m} = 1$ for every maximal ideal $\mathfrak{m}$.

@@ -15,7 +15,7 @@ audit:
   note: Checked against Probability, Problem 24, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 The dice is thrown 12000 times.
 Find the probability that the total number of 6’s lies between 1800 and 2100.
 :::

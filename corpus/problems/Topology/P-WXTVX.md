@@ -19,12 +19,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space.
 Prove that $X$ is **connected** if and only if the only subsets of $X$ that are both open and closed (clopen) are $\varnothing$ and $X$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Suppose $X$ is connected and $A\subseteq X$ is clopen. If $A$ were neither $\varnothing$ nor $X$, then
 $$
 X=A\sqcup(X\setminus A)

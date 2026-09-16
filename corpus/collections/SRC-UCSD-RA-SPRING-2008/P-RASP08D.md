@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\ell^\infty$ denote the Banach space of all bounded real-valued functions on $\mathbb{N}$, and $f_n$ the bounded linear functional
 $$
 f_n(x) := \frac{x(1) + \ldots + x(n)}{n}.
@@ -40,9 +40,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove shift invariance of the Cesaro-limit subspace.
-::: proof
+::: {.proof}
 For $x\in\ell^\infty$,
 \[
 \begin{aligned}
@@ -62,7 +62,7 @@ and
 :::
 
 <1>2. Define the sublinear dominating functional.
-::: proof
+::: {.proof}
 For $x\in\ell^\infty$, set
 \[
 p(x):=\limsup_{n\to\infty}x(n).
@@ -95,7 +95,7 @@ f(x)\le p(x)
 :::
 
 <1>3. Apply the Hahn--Banach theorem.
-::: proof
+::: {.proof}
 By the real Hahn--Banach theorem in dominated form, there exists a linear functional
 \[
 F:\ell^\infty\to\mathbb R

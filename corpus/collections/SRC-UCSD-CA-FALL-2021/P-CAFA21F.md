@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f(z)| = 1$ for $|z| = 1$.
 Show that there exists $a \in \mathbb{C}$ and $n \geq 0$ such that $f(z) = az^n$.
 :::
 
-::: solution
+::: {.solution}
 The zeros of $f$ in $\mathbb D$ are finite in number, since $f$ has no zeros
 on $|z|=1$. Let $a_1,\dots,a_m$ be those zeros with multiplicity and form the
 finite Blaschke product

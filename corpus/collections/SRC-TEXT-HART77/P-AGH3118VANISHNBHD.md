@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a projective morphism, let $\mcf$ be a coherent sheaf on $X$ which is flat over $Y$, and assume that $H^i(X_y, \mcf_y) = 0$ for some $i$ and some $y \in Y$.
 Show that $R^i f_*(\mcf)$ is $0$ in a neighborhood of $y$.
 :::

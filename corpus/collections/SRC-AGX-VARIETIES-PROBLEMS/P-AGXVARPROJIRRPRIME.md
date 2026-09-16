@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a projective variety $X$ is irreducible iff $I(X)$ is a homogeneous prime ideal.
 :::

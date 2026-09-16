@@ -15,7 +15,7 @@ audit:
   note: Checked against Liouville, FTA, and power series, Problem 1, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Suppose f is analytic on a region Ω in C containing the open unit disk D and we have $f ( z ) = \sum a _ { n } z ^ { n }$ with this power series having radius of convergence 1.
 
 a) Give an example of such an f so that the series converges at every point on the unit circle T.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a scheme over a field $k$.
 Let $\mcl$ be an invertible sheaf on $X$, and let $\ts{s_0, \ldots, s_n}$ and $\ts{t_0, \ldots, t_m}$ be two sets of sections of $\mcl$ which generate the same subspace $V \subseteq \Gamma(X, \mcl)$, and which generate the sheaf $\mcl$ at every point.
 Suppose $n \leq m$.

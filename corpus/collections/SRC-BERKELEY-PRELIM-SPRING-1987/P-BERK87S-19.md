@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a field. Prove that every finite subgroup of the multiplicative group $F^\times$ is cyclic.
 :::

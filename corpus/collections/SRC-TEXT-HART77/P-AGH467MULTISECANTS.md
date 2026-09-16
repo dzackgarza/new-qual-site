@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 The line, the conic, the twisted cubic curve and the elliptic quartic curve in $\PP^3$ have no multisecants.
 Every other curve in $\PP^3$ has infinitely many multisecants.
 

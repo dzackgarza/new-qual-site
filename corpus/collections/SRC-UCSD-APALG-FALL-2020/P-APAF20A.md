@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 A linear map $\phi\colon\mathbb{C}^{20}\to\mathbb{C}^{20}$ has the property that $\phi^3=\phi^2$.
 
 (a) Show that if $\lambda$ is an eigenvalue of $\phi$ then $\lambda=0$ or $\lambda=1$.

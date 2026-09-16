@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y\subset X$ be a nonempty and irreducible subspace of a topological space $X$ carrying a sheaf $\mcf$.
 The stalk of $\mcf$ at $Y$ is defined by the pairs $(U, \phi)$ such that $U\subset X$ is open, $U\intersect Y$ is nonempty, and $\phi \in \mcf(U)$, where $(U, \phi) \sim (U',\phi')$ iff there is a small enough open set on which the restrictions agree.
 

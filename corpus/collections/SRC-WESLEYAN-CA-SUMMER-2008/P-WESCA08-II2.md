@@ -15,7 +15,7 @@ audit:
   note: Checked against Problems, problem 2 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_{|z-i|=10}\left(z+\frac1z\right)^4\,dz

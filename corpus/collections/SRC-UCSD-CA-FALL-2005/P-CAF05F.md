@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and prove Harnack's inequality for non-negative functions that are continuous in $\overline{\mathbb{D}}$ and harmonic in $\mathbb{D}$.
 (You may use without proof the Poisson integral formula.)
 :::
 
-::: solution
+::: {.solution}
 For a nonnegative harmonic function $u$ on $\mathbb D$ that is continuous on
 $\overline{\mathbb D}$, Harnack's inequality states that for $z\in\mathbb D$,
 \[

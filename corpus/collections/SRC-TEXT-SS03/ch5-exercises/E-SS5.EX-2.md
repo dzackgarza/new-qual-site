@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. Find the order of growth of the following entire functions:
 
 (a) $p ( z )$ where p is a polynomial.
@@ -29,7 +29,7 @@ audit:
 (c) $e ^ { e ^ { z } }$
 :::
 
-::: solution
+::: {.solution}
 Recall that the order of an entire function $f$ is the infimum of the positive numbers $\rho$ for which
 \[
 |f(z)|\le A e^{B|z|^\rho}

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be entire, real-valued on the real axis, and suppose
 \[
 \operatorname{Im}f(z)>0

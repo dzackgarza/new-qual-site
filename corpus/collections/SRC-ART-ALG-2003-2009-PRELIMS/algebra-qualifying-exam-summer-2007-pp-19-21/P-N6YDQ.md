@@ -27,7 +27,7 @@ audit:
   note: "Checked both Eisenstein arguments, the coprime-degree lower bound after base extension, and the explicit cyclic automorphism action."
 ---
 
-::: problem
+::: {.problem}
 Let $L$ be the splitting field of $x^5 - 3$ over $\mathbb{Q}$.
 
 a. Let $\zeta_5$ be a primitive 5th root of unity.
@@ -38,7 +38,7 @@ b. What is the Galois group of $L$ over $\mathbb{Q}(\zeta_5)$?
 c. What is the dimension of $L$ over $\mathbb{Q}$?
 :::
 
-::: solution
+::: {.solution}
 Write $\alpha=\sqrt[5]{3}$ for the positive real root,
 $\zeta=\zeta_5$, and $F=\mathbb Q(\zeta)$. The answers are
 $$
@@ -49,7 +49,7 @@ $$
 <1>1. The splitting field contains $\zeta$ and equals
 $\mathbb Q(\alpha,\zeta)$.
 
-::: proof
+::: {.proof}
 The five roots are $\alpha\zeta^j$ for $0\leq j<5$.
 The field $L$ contains both $\alpha$ and $\alpha\zeta$, so it
 contains their ratio $\zeta$; here $\alpha\ne0$.
@@ -59,7 +59,7 @@ These two containments prove the assertion.
 
 <1>2. The degrees are $[L:F]=5$ and $[L:\mathbb Q]=20$.
 
-::: proof
+::: {.proof}
 Eisenstein's criterion at $3$ makes $x^5-3$ irreducible over
 $\mathbb Q$ [@DF04], so $[\mathbb Q(\alpha):\mathbb Q]=5$.
 Also $\zeta$ is a root of
@@ -86,7 +86,7 @@ irreducibility over $\mathbb Q$ survives a change of coefficient field.
 
 <1>3. The Galois group over $F$ is cyclic of order $5$.
 
-::: proof
+::: {.proof}
 The extension $L/F$ is a splitting field of $x^5-3$ in characteristic
 zero, so it is finite Galois. Its automorphism group has order
 $[L:F]=5$ [@DF04]. An $F$-automorphism must send $\alpha$ to a root

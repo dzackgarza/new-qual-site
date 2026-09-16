@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine if the following statements are True or False.
 
 (a) Let $U \subseteq \mathbb{C}$ be an open set, and let $u: U \to \mathbb{R}$ be a non-constant harmonic function.
@@ -27,7 +27,7 @@ If $u_n$ converges to $u$ uniformly on compact subsets, then $u$ is harmonic on 
 (d) There is a sequence of holomorphic polynomials $p_n$ such that $$\lim_{n \to \infty} \sup_{2 \leq |z| \leq 3} \left|\frac{1}{z^2(z-5)^3} - p_n(z)\right| = 0.$$
 :::
 
-::: solution
+::: {.solution}
 **(a) True.** The hypothesis says only that $U$ is open, not connected. Take
 \[
 U=D(0,1)\cup D(3,1),

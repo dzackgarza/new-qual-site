@@ -32,9 +32,9 @@ Prove that $(\QQ,+)$ is not a free abelian group, i.e. is not isomorphic to a co
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Every group homomorphism $\mathbb Q\to\mathbb Z$ is zero.
-::: proof
+::: {.proof}
 Let
 $$
 f:\mathbb Q\longrightarrow\mathbb Z
@@ -73,7 +73,7 @@ $$
 :::
 
 <1>2. Every nonzero free abelian group admits a nonzero homomorphism to $\mathbb Z$.
-::: proof
+::: {.proof}
 Let
 $$
 G=\bigoplus_{i\in I}\mathbb Z e_i
@@ -101,7 +101,7 @@ This works for finite or infinite bases alike.
 :::
 
 <1>3. Conclude that $(\mathbb Q,+)$ is not free abelian.
-::: proof
+::: {.proof}
 The group $\mathbb Q$ is nonzero. If it were free abelian, step <1>2 would
 give a nonzero homomorphism
 $$

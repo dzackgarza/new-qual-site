@@ -22,7 +22,7 @@ audit:
   note: Corrected the final logarithmic form in item 8 and removed the unresolved question marks.
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\sec^3x\,dx,\quad \int\sec^4x\,dx,\quad
@@ -40,7 +40,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 Standard reduction and $u$-substitutions give
 \[
 \boxed{\int\sec^3x\,dx

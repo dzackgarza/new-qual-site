@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f_n(x) = n x (1 - x)^n$ for $n \in \mathbb{N}$ on the interval $[0, 1]$.
 
 (a) Show that $f_n \to 0$ pointwise but not uniformly on $[0, 1]$.
@@ -25,7 +25,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove pointwise convergence to zero and failure of uniform convergence in (a) via the supremum of $f_n$, and evaluate the integral limit in (b) using the Squeeze Theorem.
 
 <1>1. Part (a): Pointwise convergence $f_n(x) \to 0$ on $[0, 1]$.

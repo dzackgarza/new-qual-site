@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb F$ be a field of characteristic $p$, and $G$ a group of order $p^n$.
 Let $R=\mathbb F[G]$ be the group ring (group algebra) of $G$ over $\mathbb F$, and let $u:=\sum_{x\in G}x$ (so $u$ is an element of $R$).
 
@@ -35,7 +35,7 @@ Let $R=\mathbb F[G]$ be the group ring (group algebra) of $G$ over $\mathbb F$, 
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The element
 \[
 u=\sum_{x\in G}x

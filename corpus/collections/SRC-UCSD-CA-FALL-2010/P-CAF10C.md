@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a domain and $\{f_n\}_{n=1}^{\infty}$ a sequence of analytic functions in $G$ that converge to $f$ in $H(G)$.
 Assume that each $f_n$ is 1-to-1. Show that $f$ is either constant or 1-to-1.
 :::
 
-::: solution
+::: {.solution}
 Assume that $f$ is not constant. We prove that it is injective.
 
 Suppose instead that there are distinct points $a,b\in G$ with

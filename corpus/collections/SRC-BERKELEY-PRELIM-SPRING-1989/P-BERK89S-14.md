@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f:\mathbb R^2\to\mathbb R^2$ be continuously differentiable. Suppose $f$ has only finitely many singular points and, for every $M>0$, the set
 \[
 \{z\in\mathbb R^2:\|f(z)\|\le M\}

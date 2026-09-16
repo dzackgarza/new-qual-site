@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $f: X \to Y$ be a finite morphism of noetherian schemes.
 For any quasi-coherent $\mco_Y$-module $\mcg$, $\sheafhom_Y(f_* \mco_X, \mcg)$ is a quasi-coherent $f_* \mco_X$-module, hence corresponds to a quasi-coherent $\mco_X$-module, which we call $f^{!} \mcg$ (II, Ex.
 5.17e).

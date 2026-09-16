@@ -17,14 +17,14 @@ audit:
   note: "Compared with Complex Analysis (10) of Arango-Piñeros, Some quals problems; merged the duplicate P-ZLDP7, whose statement of Rouché's theorem compared the wrong pair of functions."
 ---
 
-::: problem
+::: {.problem}
 (a) State Rouche's theorem.
 
 (b) Let $f$ be analytic in a neighborhood of $0$, and satisfying $f'(0) \neq 0$.
 Use Rouche's theorem to show that there exists a neighborhood $U$ of $0$ such that $f$ is a bijection in $U$.
 :::
 
-::: solution
+::: {.solution}
 **Rouché's theorem.** Let $C$ be a positively oriented simple closed contour,
 and suppose $f$ and $g$ are holomorphic on a neighborhood of $C$ and its
 interior. If

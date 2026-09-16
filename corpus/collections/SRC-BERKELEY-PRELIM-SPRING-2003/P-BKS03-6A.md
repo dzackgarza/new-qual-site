@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose $(x_n)$ is a real sequence such that
 \[
 2x_{n+1}-x_n\longrightarrow x.

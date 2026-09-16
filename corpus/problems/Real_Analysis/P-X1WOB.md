@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 -- What does it mean for a series to converge? How can you check this?
 		- What does it mean for a series to converge *uniformly*? What do you have to show to prove it does *not* converge uniformly?
 - Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$.

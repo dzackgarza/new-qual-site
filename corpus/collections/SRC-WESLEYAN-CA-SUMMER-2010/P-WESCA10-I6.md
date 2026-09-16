@@ -15,7 +15,7 @@ audit:
   note: Checked against Theorems and Definitions, item 6 in the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Let $D\subset\mathbb C$ be a domain with $0\notin D$.
 Define what it means for a function to be a branch of the logarithm on $D$.
 :::

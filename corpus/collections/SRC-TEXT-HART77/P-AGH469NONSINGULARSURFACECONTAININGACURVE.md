@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 \* Let $X$ be an irreducible nonsingular curve in $\PP^3$.
 Then for each $m \gg 0$, there is a nonsingular surface $F$ of degree $m$ containing $X$.
 

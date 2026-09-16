@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is the connection between $H^1$ and line bundles?
 :::

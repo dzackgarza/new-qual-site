@@ -24,7 +24,7 @@ audit:
   note: Checked leaf existence, preservation of the tree property after leaf deletion, and the terminal-edge strong deformation retraction.
 ---
 
-::: problem
+::: {.problem}
 Prove that any finite tree is contractible, where a **tree** is a connected graph that contains no closed edge paths.
 :::
 

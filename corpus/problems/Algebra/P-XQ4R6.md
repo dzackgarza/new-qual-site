@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose the elementary divisors of a finitely generated torsion $F[x]$-module are
 \[
 (x-1)^3,\quad (x-1),\quad (x^2+1)^4,\quad (x^2+1)^2,\quad (x^2+1)^2,\quad (x+2).
@@ -23,7 +23,7 @@ Suppose the elementary divisors of a finitely generated torsion $F[x]$-module ar
 Determine the invariant factors.
 :::
 
-::: solution
+::: {.solution}
 Group the elementary divisors by irreducible polynomial and order the powers increasingly:
 \[
 \begin{array}{c|ccc}

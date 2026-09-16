@@ -15,7 +15,7 @@ audit:
   note: Checked against Review Problem 7 in the deterministic MinerU Flash extraction assets/attachments/Basic_Linear_Algebra_Review_extracted.md. In part (d), the deterministic source declares a map from R^3 to R^2 but writes the input as T(x,y); the card preserves this mismatch explicitly rather than silently inventing a third argument.
 ---
 
-::: problem
+::: {.problem}
 Decide which of the following transformations are linear.
 For those that are linear, find the matrix of the transformation using the standard bases.
 

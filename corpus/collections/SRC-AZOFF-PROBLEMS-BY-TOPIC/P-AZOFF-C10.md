@@ -15,6 +15,6 @@ audit:
   note: Checked against Conformal mapping, Problem 10, in the deterministic MinerU Flash extraction assets/attachments/Azoff Problems by Topic_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $\mathbb { C } \backslash \{ x \in \mathbb { R } : | x | \geq 1 \}$ onto the open unit disk.
 :::

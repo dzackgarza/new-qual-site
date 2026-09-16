@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p\ne q$ be primes. Show that a group $G$ of order $p^2q^2$ is abelian if
 \[
 q\nmid(p^2-1)\qquad\text{and}\qquad p\nmid(q^2-1).
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $n_p$ be the number of Sylow $p$-subgroups. Sylow's theorem gives
 \[
 n_p\mid q^2,

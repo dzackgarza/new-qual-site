@@ -20,7 +20,7 @@ audit:
   note: "Compared with Complex Analysis (8) of Arango-Piñeros, Some quals problems; merged the duplicate E-YMM6X, whose solution repeats this Morera and Cauchy-estimate argument."
 ---
 
-::: problem
+::: {.problem}
 Let $(f_n)$ be a sequence of holomorphic functions in a domain $D$.
 Suppose that $f_n \to f$ uniformly on each compact subset of $D$.
 Show that
@@ -30,7 +30,7 @@ Show that
 (b) $f_n' \to f'$ uniformly on each compact subset of $D$.
 :::
 
-::: solution
+::: {.solution}
 Fix a closed triangle $T\subset D$. Since $f_n\to f$ uniformly on the compact
 set $\partial T$,
 \[

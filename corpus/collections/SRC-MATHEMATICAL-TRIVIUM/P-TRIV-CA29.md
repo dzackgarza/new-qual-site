@@ -15,6 +15,6 @@ audit:
   note: Checked against Complex Analysis, Problem 29, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Find Stirling's approximation: consider $\begin{array} { r } { n ! = \Gamma ( n + 1 ) = \int _ { 0 } ^ { \infty } x ^ { n } e ^ { - x } d x } \end{array}$ for $n \gg 1$
 :::

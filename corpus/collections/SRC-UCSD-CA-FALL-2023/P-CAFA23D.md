@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\displaystyle \int_0^{2\pi} e^{e^{i\theta}}\,d\theta$, carefully explaining your solution.
 :::
 
-::: solution
+::: {.solution}
 Use the uniformly convergent exponential series on the unit circle:
 \[
 e^{e^{i\theta}}

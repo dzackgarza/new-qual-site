@@ -27,7 +27,7 @@ audit:
   note: Re-derived both directions from the Galois correspondence and verified the normal-subgroup and quotient identifications.
 ---
 
-::: problem
+::: {.problem}
 Let $E/F$ be a finite Galois extension with Galois group $G = \operatorname{Gal}(E/F)$, and let $[G,G]$ denote the derived subgroup of $G$.
 Define the subfield
 \[

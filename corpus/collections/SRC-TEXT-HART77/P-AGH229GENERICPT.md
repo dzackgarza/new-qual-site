@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $X$ is a topological space and $Z$ an irreducible closed subset of $X$, a **generic point** for $Z$ is a point $\zeta$ such that $Z = \cl\qty{\ts{\zeta}}$.
 If $X$ is a scheme, show that every nonempty irreducible closed subset has a unique generic point.
 :::

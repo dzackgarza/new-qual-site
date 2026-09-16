@@ -20,11 +20,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 There are five nonisomorphic groups of order 8. For each of those groups $G$, find the smallest positive integer n such that there is an injective homomorphism $\varphi: G\rightarrow S_n$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For the cyclic group $C_8$,
 \[
 \mu(C_8)=8.

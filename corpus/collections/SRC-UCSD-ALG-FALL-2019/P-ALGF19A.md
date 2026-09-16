@@ -25,7 +25,7 @@ audit:
   note: Verified the fixed-point congruence for the action of P on Q/P and the resulting divisibility through N_Q(P) <= N_G(P).
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group and $P$ is a $p$-subgroup of $G$ which is not a Sylow $p$-subgroup.
 Prove that $p$ divides $|N_G(P)/P|$.
 :::

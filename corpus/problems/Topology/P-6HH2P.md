@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a connected topological/smooth manifold.
 Prove that if the fundamental group $\pi_1(M)$ has no subgroup of index 2, then $M$ is **orientable**.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A connected manifold $M$ has an orientation character
 \[
 w:\pi_1(M,x_0)\longrightarrow\{\pm1\}\cong\mathbb Z/2,

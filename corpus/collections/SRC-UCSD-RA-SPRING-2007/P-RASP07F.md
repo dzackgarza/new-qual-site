@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 In the following, give complete justification for your answers.
 
 (a) Find all distributions $T \in \mathcal{D}'(\mathbb{R})$ such that $xT = 0$.
@@ -32,9 +32,9 @@ In the following, give complete justification for your answers.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Solve $xT=0$.
-::: proof
+::: {.proof}
 Choose $\chi\in C_c^\infty(\mathbb R)$ with $\chi=1$ on a neighborhood of $0$. For any test function $\varphi\in C_c^\infty(\mathbb R)$, the function
 \[
 \varphi(x)-\varphi(0)\chi(x)
@@ -66,7 +66,7 @@ Therefore
 :::
 
 <1>2. Solve $x^2T=0$.
-::: proof
+::: {.proof}
 Using the same cutoff $\chi$, every test function has a second-order decomposition
 \[
 \varphi(x)

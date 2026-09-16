@@ -14,7 +14,7 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $D_n$ be the group of rigid motions of a regular $n$-gon, $n\ge3$. Determine its center
 \[
 Z(D_n)=\{c\in D_n:cx=xc\text{ for every }x\in D_n\}.

@@ -14,6 +14,6 @@ audit:
   date: 2026-09-13
 ---
 
-:::{.problem}
+::: {.problem}
 Let $e=(a,b,c)$ be a unit vector in $\mathbb R^3$. Let $T$ be rotation by $180^\circ$ about the axis spanned by $e$. Find the matrix of $T$ in the standard basis.
 :::

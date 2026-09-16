@@ -15,6 +15,6 @@ audit:
   note: Checked against Linear Algebra, Problem 33, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md.
 ---
 
-::: problem
+::: {.problem}
 Prove that $e ^ { A } = \left( e ^ { A / N } \right) ^ { N } , N \in \mathbb { R }$
 :::

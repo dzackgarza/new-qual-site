@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $E$ be the Banach space $L^1([0,1])$ and
 $$
 C := \left\{u \in E : u(x) \geq 0 \text{ a.e. } x \in [0,1],\; \int_0^1 x u(x)\,dx \geq 1\right\}.
@@ -41,9 +41,9 @@ Hint: try piecewise constant functions.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove that $C$ is nonempty, closed, and convex.
-::: proof
+::: {.proof}
 The constant function $u\equiv2$ lies in $C$ because
 \[
 \int_0^1 2x\,dx=1.
@@ -75,7 +75,7 @@ and $u\in C$. Therefore $C$ is closed.
 :::
 
 <1>2. Compute the distance from $0$ to $C$.
-::: proof
+::: {.proof}
 If $u\in C$, then $u\ge0$ a.e. and $0\le x\le1$, so
 \[
 \|u\|_1=\int_0^1u\,dx\ge\int_0^1xu\,dx\ge1.
@@ -102,7 +102,7 @@ Thus $d(0,C)\le1$, and therefore
 :::
 
 <1>3. Show that the distance is not attained.
-::: proof
+::: {.proof}
 Suppose $u\in C$ and $\|u\|_1=1$. Since $u\ge0$ a.e.,
 \[
 1=\int_0^1u\,dx\ge\int_0^1xu\,dx\ge1.
