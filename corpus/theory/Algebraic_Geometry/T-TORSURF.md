@@ -17,6 +17,7 @@ review: draft
 prompts:
 - Classify the smooth complete toric surfaces.
 - How do you compute intersection numbers of the boundary divisors of a toric surface?
+- Why should someone care about the self-intersection of invariant divisors?
 ---
 
 ::: {.theorem title="Classification"}
@@ -51,4 +52,10 @@ The self-intersection comes from $\operatorname{div}(\chi^m) \cdot D_i = 0$ for 
 The sum rule $\sum a_i = 3d - 12$ is a useful check.
 For $\PP^2$, $d = 3$ and each $a_i = -1$, so each line has $D_i^2 = 1$.
 For $\FF_a$, $d = 4$ and the $a_i$ are $a, 0, -a, 0$, giving self-intersections $-a, 0, a, 0$.
+:::
+
+::: {.remark}
+The self-intersections $D_i^2 = -a_i$ are the whole intersection form of the surface, since the $D_i$ generate $\Pic$ and $D_i \cdot D_j$ is $1$ for adjacent rays and $0$ otherwise.
+They decide the birational geometry: a boundary curve with $D_i^2 = -1$ is a $(-1)$-curve, contracting it removes the ray $v_i = v_{i-1} + v_{i+1}$, and repeating reaches $\PP^2$ or a Hirzebruch surface $\FF_a$, which is the classification of smooth complete toric surfaces.
+Nefness and ampleness are also read off: a torus-invariant divisor on a complete toric surface is nef exactly when its intersection with every $D_i$ is nonnegative.
 :::

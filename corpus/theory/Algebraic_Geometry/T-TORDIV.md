@@ -43,6 +43,15 @@ m \mapsto \operatorname{div}(\chi^m) = \sum_{\rho \in \Sigma(1)} \inp{m}{u_\rho}
 $\omega_{X_\Sigma} \cong \OO\big( -\sum_\rho D_\rho \big)$, so $K_X \sim -\sum_{\rho \in \Sigma(1)} D_\rho$.
 :::
 
+::: {.proof}
+1. Let $z_1, \ldots, z_n$ be coordinates on the torus $T = \GG_m^n \subseteq X_\Sigma$, and put $\eta = \frac{dz_1}{z_1} \wedge \cdots \wedge \frac{dz_n}{z_n}$, a nowhere-vanishing $T$-invariant top form on $T$.
+   As a rational section of $\omega_{X_\Sigma}$, its divisor is supported on the boundary $X_\Sigma \setminus T = \bigcup_\rho D_\rho$.
+2. The union of $T$ and the orbits of the rays is the open set $\bigcup_\rho U_\rho$, whose complement has codimension at least $2$; so the order of $\eta$ along each $D_\rho$ determines $\div(\eta)$.
+3. For a ray $\rho$, choose a basis of $M$ adapted to $u_\rho$; then $U_\rho \cong \AA^1 \times \GG_m^{n-1}$ with $D_\rho = \{z_1 = 0\}$, and $\eta$ is, up to sign, $\frac{dz_1}{z_1} \wedge \frac{dz_2}{z_2} \wedge \cdots \wedge \frac{dz_n}{z_n}$ in these coordinates.
+4. On $\AA^1 \times \GG_m^{n-1}$ the forms $dz_2/z_2, \ldots, dz_n/z_n$ are regular and nowhere zero, and $dz_1/z_1$ has a simple pole along $z_1 = 0$.
+   So $\eta$ has a simple pole along every $D_\rho$, $\div(\eta) = -\sum_\rho D_\rho$, and $K_{X_\Sigma} \sim -\sum_\rho D_\rho$.
+:::
+
 ::: {.remark}
 So the class group is the cokernel of an explicit integer matrix whose rows are the ray generators.
 Two consequences are immediate.
