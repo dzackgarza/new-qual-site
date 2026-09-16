@@ -17,7 +17,7 @@ title: Theorems
 
 [[T-YOZX6]]
 
-[[T-YOAXZ]]
+[[T-O4UD3]]
 
 [[PR-25GM2]]
 

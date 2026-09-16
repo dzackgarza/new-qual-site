@@ -25,7 +25,7 @@ topics:
 
 [[T-PRQ7I]]
 
-[[PR-6T3IL]]
+[[T-O4UD3]]
 
 ::: {.proof}
 Let $f\colon X\to Y$ be continuous with $X$ a compact metric space, and let $\varepsilon>0$.
