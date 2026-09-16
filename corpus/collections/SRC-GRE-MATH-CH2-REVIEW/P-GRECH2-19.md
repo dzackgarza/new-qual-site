@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f(x)$ be continuous on a bounded interval, $[a, b]$, where $a \neq b$, such that $f(a) = 1$ and $f(b) = 3$, and $f'(x)$ exists for every $x$ in $(a, b)$. What does the Mean-Value theorem say about $f$?
+Let $f(x)$ be continuous on a bounded interval, $[a, b]$, where $a \neq b$, such that $f(a) = 1$ and $f(b) = 3$, and $f'(x)$ exists for every $x$ in $(a, b)$.
+What does the Mean-Value theorem say about $f$?
 
 (A) There exists a number $c$ in the interval $(a, b)$ such that $f'(c) = 0$.
 (B) There exists a number $c$ in the interval $(a, b)$ such that $f(c) = 0$.
