@@ -26,8 +26,3 @@ source:
     term: fall
     year: 2020
 ---
-
-::: remark
-Assignment 9 Problem 1 is intentionally not represented by a card: the deterministic MinerU baseline corrupts the piecewise definition of $g_n$, and no authored/native companion survives in the repository to resolve it without inference.
-The other six source positions are represented in order.
-:::
