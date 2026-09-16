@@ -10,49 +10,49 @@ topics:
 
 # Maschke and Schur
 
-Maschke decomposes finite complex representations into irreducibles; Schur determines the Hom and End spaces between irreducibles.
+By Maschke's theorem, every finite-dimensional complex representation of a finite group is a direct sum of irreducible representations; by Schur's lemma, a homomorphism of representations between irreducible representations is zero or an isomorphism, and over $\CC$ every endomorphism of an irreducible representation is a scalar.
 
 [[D-FHUV5]]
 
-## Maschke
+## Maschke's theorem
 
 [[T-PIO2B]]
 
-:::{.remark title="Statement, hypotheses, and proof"}
-Maschke says every representation of a finite $G$ over a field of characteristic not dividing $\size G$ is a direct sum of irreducibles.
-Thus $\CC[G]$ is semisimple, and a finite-dimensional complex representation is determined up to isomorphism by its irreducible multiplicities.
+::: {.remark title="Hypotheses and proof"}
+Let $G$ be a finite group and $k$ a field whose characteristic does not divide $\size G$.
+Every finite-dimensional representation of $G$ over $k$ is a direct sum of irreducible representations, so $k[G]$ is semisimple, and a finite-dimensional complex representation is determined up to isomorphism by the multiplicities of its irreducible summands.
 
-Both hypotheses are load-bearing.
-Over $\FF_p$ with $p \divides \size G$ it fails: the regular representation of $\ZZ/p$ over $\FF_p$ is indecomposable but not irreducible.
-For infinite $G$ it can fail as well; integral and modular representation theory therefore require non-semisimple methods.
+If $\operatorname{char}k = p$ divides $\size G$, the conclusion can fail: the regular representation of $\ZZ/p$ over $\FF_p$ is indecomposable and not irreducible.
+If $G$ is infinite, the conclusion can fail: $\ZZ$ acting on $\CC^2$ by $n\mapsto\matt{1}{n}{0}{1}$ has the invariant line $\CC e_1$ and no invariant complement.
 
-The proof is averaging: take any complement, average the projection onto it over $G$, and the result is $G\dash$equivariant.
-Dividing by $\size G$ is where the characteristic hypothesis enters, and it is the only place.
-
+For a subrepresentation $W\subseteq V$, choose any linear projection $\pi\colon V\to W$ and set $\pi_G \da {1\over\size G}\sum_{g\in G} g\pi g\inv$.
+Then $\pi_G$ is a $G$-equivariant projection onto $W$, and $\ker\pi_G$ is a $G$-invariant complement of $W$; the division by $\size G$ uses the hypothesis on the characteristic.
 :::
 
-## Schur
+## Schur's lemma
 
 [[T-YHH3M]]
 
-:::{.remark title="The two statements"}
-For irreducible $V, W$:
+::: {.remark title="The two statements"}
+For irreducible representations $V$ and $W$ of $G$:
 
-- a $G\dash$map $V\to W$ is either zero or an isomorphism;
-- over $\CC$, a $G\dash$map $V\to V$ is a scalar.
+- every $G$-equivariant linear map $V\to W$ is zero or an isomorphism;
+- if $V$ is finite-dimensional over an algebraically closed field such as $\CC$, every $G$-equivariant linear map $f\colon V\to V$ is a scalar multiple of the identity.
 
-The second needs algebraic closure, since it is proved by taking an eigenvalue: $f - \lambda I$ is a $G\dash$map with nontrivial kernel, hence zero.
+For the second statement, $f$ has an eigenvalue $\lambda$ because the field is algebraically closed, and $f - \lambda I$ is a $G$-equivariant map with nonzero kernel, hence zero by the first statement.
 
-Conjugate elements of $G$ act by similar matrices, so characters are class functions. For irreducibles over $\CC$, Schur gives
-$\dim \Hom_G(V,W)=0$ for $V\not\cong W$ and $\dim \End_G(V)=1$; together with Maschke, this is the input to the character orthogonality and multiplicity formulas.
-
+For irreducible complex representations, $\dim \Hom_G(V,W)=0$ if $V\not\cong W$ and $\dim \operatorname{End}_G(V)=1$; together with Maschke's theorem, these give the character orthogonality relations and the multiplicity formula.
 :::
 
-## What they give together
+## Consequences
 
-$\CC[G] \cong \bigoplus_i \End(V_i) \cong \bigoplus_i \Mat_{d_i}(\CC)$ over the irreducibles $V_i$, so
-\[
-\size G = \sum_i d_i^2
-,\]
-and the number of irreducibles equals the number of conjugacy classes.
-Those two facts determine the degrees outright for small groups, which is how a character table is started.
+Let $V_1,\ldots,V_r$ be the irreducible complex representations of $G$ up to isomorphism, with $d_i = \dim V_i$.
+Then $\CC[G] \cong \bigoplus_i \operatorname{End}(V_i) \cong \bigoplus_i \Mat_{d_i}(\CC)$, so
+$$
+\size G = \sum_i d_i^2,
+$$
+and $r$ equals the number of conjugacy classes of $G$.
+
+::: {.example}
+$S_3$ has three conjugacy classes and order $6$; its two degree-one representations are the trivial and sign representations, so $6 = 1 + 1 + d_3^2$ gives $d_3=2$.
+:::

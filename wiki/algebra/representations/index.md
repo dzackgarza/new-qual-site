@@ -8,11 +8,11 @@ topics:
 
 # Representations
 
-Here a **representation** of a finite group $G$ over a field $k$ means a finite-dimensional $k$-vector space $V$ with a homomorphism $\rho:G\to\GL_k(V)$; equivalently, a finite-dimensional left $k[G]$-module.
-The [[D-FHUV5|group ring]] supplies the algebra, and [[D-CYAJI|semisimple modules]] give the decomposition language used by Maschke.
+A \dfn{representation} of a finite group $G$ over a field $k$ is a finite-dimensional $k$-vector space $V$ together with a homomorphism $\rho\colon G\to\GL_k(V)$; equivalently, it is a finite-dimensional left module over the [[D-FHUV5|group ring]] $k[G]$.
+Maschke's theorem is a statement about [[D-CYAJI|semisimple modules]] over $k[G]$.
 
-The pages below specialize this to ordinary representations over $\CC$.
+The pages below treat representations over $\CC$.
 
-- [[algebra/representations/maschke-and-schur|Maschke and Schur]] -- semisimplicity and irreducible Hom/End.
+- [[algebra/representations/maschke-and-schur|Maschke and Schur]] -- semisimplicity, and homomorphisms between irreducible representations.
 
-- [[algebra/representations/characters|Characters]], and the orthogonality that makes them computable.
+- [[algebra/representations/characters|Characters]] -- orthogonality relations and character tables.
