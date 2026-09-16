@@ -34,3 +34,10 @@ $$
 
 (3) The function $\varphi(t)\coloneqq(1+t)^r$ is convex on $[-1,\infty)$ because $\varphi''(t) = r(r-1)(1+t)^{r-2}\geq 0$ for $t>-1$ and $\varphi$ is continuous at $-1$, so $\varphi$ lies above its tangent line $1+rt$ at $t = 0$.
 :::
+
+::: {.corollary}
+For all $x\in\RR$,
+$$
+1-x \leq e^{-x} .
+$$
+:::

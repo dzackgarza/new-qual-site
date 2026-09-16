@@ -29,7 +29,7 @@ sections:
       - ref: PR-P6NHI
       - ref: PR-4EVYE
       - ref: PR-6OHTJ
-      - ref: PR-OPSAC
+      - ref: FF-Z3E3C
   - slug: metric-spaces
     title: Metric spaces, compactness and completeness
     parent: sequences-and-series-of-numbers
