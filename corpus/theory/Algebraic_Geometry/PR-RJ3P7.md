@@ -19,21 +19,29 @@ prompts:
 - What does going down mean geometrically?
 ---
 
-::: {.proposition title="Going up, geometrically"}
-Let $A \to B$ be an integral ring extension, and $f: \Spec B \to \Spec A$ the induced map.
-Then $f$ is **closed** and **surjective**, and it has finite fibres when the extension is finite.
+::: {.theorem title="Lying over and going up"}
+Let $\phi: A \to B$ be a ring map with $B$ integral over $\phi(A)$, and $f: \Spec B \to \Spec A$ the induced map, $f(\mfq) = \phi^{-1}(\mfq)$.
+
+- (Lying over) If $\phi$ is injective, then for every prime $\mfp \subseteq A$ there is a prime $\mfq \subseteq B$ with $\phi^{-1}(\mfq) = \mfp$; so $f$ is surjective.
+- (Going up) If $\mfp_1 \subseteq \cdots \subseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \subseteq \cdots \subseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\phi^{-1}(\mfq_i) = \mfp_i$, then it extends to a chain $\mfq_1 \subseteq \cdots \subseteq \mfq_n$ with $\phi^{-1}(\mfq_i) = \mfp_i$ for all $i$.
+
+In particular $f$ is a closed map.
+[@AM18, Theorems 5.10 and 5.11, Exercise 5.1]
 :::
 
-::: {.proposition title="Going down, geometrically"}
-If $A \to B$ is flat, or if $A$ is normal, $B$ a domain and the extension integral, then $f$ is **open** onto its image, and every specialisation in $\Spec A$ lifts along $f$: a chain descending from a point of the image can be followed downstairs.
+::: {.theorem title="Going down"}
+Let $A \subseteq B$ be domains with $A$ integrally closed and $B$ integral over $A$.
+If $\mfp_1 \supseteq \cdots \supseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \supseteq \cdots \supseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\mfq_i \cap A = \mfp_i$, then it extends to a chain $\mfq_1 \supseteq \cdots \supseteq \mfq_n$ with $\mfq_i \cap A = \mfp_i$.
+Going down also holds for every flat ring map $A \to B$.
+[@AM18, Theorem 5.16, Exercise 3.18]
 :::
 
 ::: {.remark}
 The translation is the content of the answer: going up says that a chain of primes in $A$ ascending from one that is hit can be lifted, which is exactly the statement that the image of a closed set is closed.
 So going up is the algebraic form of "a finite morphism is closed", hence of "a finite morphism is proper".
 
-Going down is the dimension-preserving half.
-It is what makes $\dim B = \dim A$ for an integral extension of domains, and it is why a finite surjective morphism cannot drop dimension.
+Going up together with incomparability makes $\dim B = \dim A$ for an integral extension, which is why a finite surjective morphism cannot drop dimension.
+Going down is what makes heights match, $\operatorname{ht} \mfq = \operatorname{ht}(\mfq \cap A)$, under its hypotheses: geometrically, every generization of $f(\mfq)$ in $\Spec A$ lifts to a generization of $\mfq$.
 
 The two are the reason finite morphisms behave like branched covers: closed, surjective, with finite fibres, and preserving dimension.
 :::

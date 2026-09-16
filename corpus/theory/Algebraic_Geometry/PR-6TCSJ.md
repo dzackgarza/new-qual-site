@@ -31,6 +31,8 @@ For a ring $A$:
 | Noetherian | Noetherian |
 | a single point | local artinian |
 
+More generally, a scheme $X$ is integral if and only if it is reduced and irreducible [@Har10a, Proposition II.3.1].
+
 An irreducible scheme has a unique **generic point**, dense in it; for $\Spec A$ integral it is the prime $(0)$, with residue field $\Frac(A)$.
 :::
 

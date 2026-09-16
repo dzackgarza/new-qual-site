@@ -26,6 +26,13 @@ prompts:
 $f : X \to Y$ is \dfn{finite} if $Y$ has an affine cover by $\Spec B_i$ with $f^{-1}(\Spec B_i) = \Spec A_i$ affine and $A_i$ a $B_i$-module of finite type ([[D-DEFFGMOD]]).
 :::
 
+::: {.proposition title="Maps of proper curves"}
+Let $C$ and $C'$ be irreducible curves proper over a field $k$.
+Every $k$-morphism $f: C \to C'$ is proper, so $f(C)$ is an irreducible closed subset of $C'$: $f$ is either constant with value a closed point or surjective.
+If $C$ is nonsingular, $C'$ is integral and $f$ is surjective, then $f$ is finite and $k(C')\subseteq k(C)$ is a finite extension.
+[@Har10a, Corollary II.4.8, Proposition II.6.8]
+:::
+
 ::: {.remark}
 The one-line distinction is the one the examiner wants: finitely generated as a module is strictly stronger than finitely generated as an algebra.
 $k[x]$ has one algebra generator over $k$ and infinite rank as a $k$-module, so $\AA^1_k \to \Spec k$ is of finite type and not finite.
