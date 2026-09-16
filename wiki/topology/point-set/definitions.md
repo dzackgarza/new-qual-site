@@ -17,10 +17,10 @@ topics:
 
 # Definitions
 
-## Point-Set Topology
+## Point-set topology
 
-::: {.remark title="on the term 'locally'"}
-The prefix "locally blah" almost always means that for every $x\in X$, there exists *some* neighborhood $N_x\ni x$ which has property "blah".
+::: {.remark title="The prefix \"locally\""}
+For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some neighborhood with property $P$; some notions, such as local connectedness, instead require a neighborhood basis of sets with property $P$ at every point.
 :::
 
 [[D-YEWUV]]
@@ -29,10 +29,6 @@ The prefix "locally blah" almost always means that for every $x\in X$, there exi
 
 [[D-3KS2F]] [[D-2GCTV]] [[D-KW52R]]
 
-::: {.remark}
-Is this actually a poset relation?
-Fails reflexivity.
-:::
 [[D-ZNVPP]]
 
 [[D-3KS2F]]
@@ -146,8 +142,8 @@ Fails reflexivity.
 [[D-NCLVD]]
 
 ::: {.remark}
-If $X$ retracts onto $A$ with $\iota:A\injects X$, then $i_*$ is injective.
-Any nonempty space retracts to a point via a constant map.
+If $r\colon X\to A$ is a retraction and $\iota\colon A\injects X$ the inclusion, then $r\circ\iota=\id_A$, so $\iota_*$ is injective on $\pi_1$ and on homology.
+For every point $x_0$ of a space $X$, the constant map $X\to\ts{x_0}$ is a retraction.
 :::
 
 [[D-6FSWY]]
@@ -175,15 +171,15 @@ Any nonempty space retracts to a point via a constant map.
 ::: {.example title="Counterexamples for separation axioms"}
 \envlist
 
-- Not $T_0$: the space \( \ts{ f:\RR\to \CC\st \int_\RR \abs{f}^2 < \infty } \), since two a.e. equal functions aren't *distinguishable* (they have precisely the same set of neighborhoods).
+- Not $T_0$: the space $\ts{ f\colon\RR\to \CC\st \int_\RR \abs{f}^2 < \infty }$ with the topology of the seminorm $\norm{f}_2$, since two functions that agree almost everywhere have the same neighborhoods.
 
-- $T_1$ but not $T_0$: $\spec R$ for $R\in \CRing$ with the Zariski topology.
-  There are points that aren't closed: $\spec R \sm \mspec R$.
+- $T_0$ but not $T_1$: $\spec R$ with the Zariski topology, for a commutative ring $R$ with a prime ideal that is not maximal.
+  The closure of a point $\mathfrak p$ is $V(\mathfrak p)$, so the points of $\spec R \sm \mspec R$ are not closed.
 :::
 [[D-2TZAI]]
 
-::: {.remark}
-A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is closed in $\RR$.
+::: {.example}
+An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\geq 1} (-1/n, 1/n) = \ts{0}$, which is closed and not open.
 :::
 
 [[D-OM7TD]]
@@ -194,7 +190,7 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 
 [[D-YL6FR]]
 
-## Analysis and Metric Spaces
+## Analysis and metric spaces
 
 [[D-B7CYY]]
 
@@ -208,7 +204,7 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 
 [[FF-VWKGM]]
 
-## Algebraic Topology
+## Algebraic topology
 
 [[D-5KDNB]]
 
@@ -230,16 +226,12 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 
 [[D-TD6AO]]
 
-::: {.example title="of colimits"}
+::: {.example title="Limits and colimits"}
 \envlist
 
-- Products
+- Coproducts, pushouts, and direct limits are colimits; for example, $\ZZ[1/p]$ is the direct limit of $\ZZ\xrightarrow{\times p}\ZZ\xrightarrow{\times p}\cdots$.
 
-- Pullbacks
-
-- Inverse / projective limits
-
-- The \( p\dash \)adic integers \( \ZZ_{p} \).
+- Products, pullbacks, and inverse limits are limits; for example, the $p$-adic integers $\ZZ_{p}$ are the inverse limit of $\cdots\to\ZZ/p^2\to\ZZ/p$.
 :::
 
 [[D-5MX7E]]
@@ -253,8 +245,8 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 [[D-B2JER]]
 
 ::: {.example title="Applications of the cup product"}
-On a manifold, the cup product is Poincaré dual to the intersection of submanifolds.
-Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
+On a closed oriented manifold, the cup product of the Poincaré duals of transversely intersecting closed oriented submanifolds is the Poincaré dual of their intersection.
+$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge.
 :::
 
 [[D-ZOU5G]]
@@ -268,8 +260,9 @@ Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
 [[D-2O3N7]]
 
 ::: {.remark}
-A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$.
-Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
+If $A\subseteq X$ is a deformation retract, then the inclusion $A\injects X$ is a homotopy equivalence.
+Spaces $X$ and $Y$ are homotopy equivalent if and only if there is a space $Z$ containing both as deformation retracts; for a homotopy equivalence $f\colon X\to Y$, the mapping cylinder of $f$ is such a $Z$.
+If $A$ and $B$ both deformation retract onto a common subspace $X$, then $A \homotopic X\homotopic B$.
 :::
 
 [[D-6UHU7]]
@@ -284,8 +277,8 @@ Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$,
 
 [[D-Z2V7T]]
 
-::: {.example title="of an exact functor"}
-$\wait \tensor_{R} \wait$ is a right exact bifunctor.
+::: {.example title="A right exact functor"}
+For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right exact, and it is exact if and only if $M$ is flat.
 :::
 
 [[D-455S6]]
@@ -424,7 +417,7 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-MENR4]]
 
-## Homological Algebra
+## Homological algebra
 
 [[D-4VGLT]]
 
