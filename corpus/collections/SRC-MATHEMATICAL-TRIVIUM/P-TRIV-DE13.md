@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE13
 kind: problem
-title: Laplace transform solution of $y''-3y'+2y=e^{3t}$
+title: Initial value problem $y''-3y'+2y=e^{3t}$
 classification:
   areas: [prelim]
   topics: []

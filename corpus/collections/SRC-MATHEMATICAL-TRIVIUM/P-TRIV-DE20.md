@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE20
 kind: problem
-title: Frobenius series solution of a parabolic-coordinate radial equation
+title: Frobenius series of $(\xi u')'+(\frac12E\xi+\alpha-\frac{m^2}{4\xi}-\frac14F\xi^2)u=0$ at $\xi=0$
 classification:
   areas: [prelim]
   topics: []

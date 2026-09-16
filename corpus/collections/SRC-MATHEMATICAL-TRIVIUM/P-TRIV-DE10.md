@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE10
 kind: problem
-title: Riccati-type kinetics equation $C'=\alpha(a-C)(b-C)$
+title: Separable rate equation $C'=\alpha(a-C)(b-C)$ with $C(0)=0$
 classification:
   areas: [prelim]
   topics: []

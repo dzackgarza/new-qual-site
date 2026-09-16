@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE09
 kind: problem
-title: Forced equation $y''+3y'+2y=\tanh x$ by variation of parameters
+title: Forced equation $y''+3y'+2y=\tanh x$
 classification:
   areas: [prelim]
   topics: []

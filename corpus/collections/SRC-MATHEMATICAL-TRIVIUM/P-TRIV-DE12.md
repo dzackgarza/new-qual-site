@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-DE12
 kind: problem
-title: Laplace transform solution of $y'-y=e^{3t}$
+title: Initial value problem $y'-y=e^{3t}$, $y(0)=2$
 classification:
   areas: [prelim]
   topics: []
