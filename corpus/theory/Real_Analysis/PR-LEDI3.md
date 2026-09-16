@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-LEDI3
 kind: proposition
-title: Small Tails for Series of Functions
+title: The terms of a uniformly convergent series tend to zero uniformly
 classification:
   areas:
   - real-analysis
@@ -14,9 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\sum f_n < \infty \implies \norm{f_n}_\infty \convergesto{n\to\infty}0
-.\]
-
+::: {.proposition}
+Let $S$ be a set and let $f_n\colon S\to\CC$ for $n\geq1$.
+If the series $\sum_{n\geq1}f_n$ [[D-YZC3C|converges uniformly]] on $S$, then
+$$
+\sup_{x\in S}\abs{f_n(x)}\convergesto{n\to\infty}0 .
+$$
 :::
