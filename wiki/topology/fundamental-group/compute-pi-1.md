@@ -13,7 +13,7 @@ topics:
 
 # Compute $\pi_1$
 
-Four methods compute the [[D-YD6DH|fundamental group]]: deformation retraction, van Kampen's theorem, covering spaces, and products.
+Four methods compute the [[D-EBNUE|fundamental group]]: deformation retraction, van Kampen's theorem, covering spaces, and products.
 
 ## Deformation retracts
 

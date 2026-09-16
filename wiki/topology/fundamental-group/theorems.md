@@ -41,7 +41,7 @@ By convexity $H(z,t)\in X$ for all $z$ and $t$, and $H$ is continuous with $H(\w
 
 ### Definition
 
-[[D-YD6DH]]
+[[D-EBNUE]]
 
 ::: {.remark}
 Elements of $\pi_1(X,x_0)$ are homotopy classes of loops at $x_0$ rel endpoints, and a continuous map $f\colon (X,x_0)\to(Y,y_0)$ induces a homomorphism $f_*\colon\pi_1(X,x_0)\to\pi_1(Y,y_0)$, $[\gamma]\mapsto[f\circ\gamma]$.
