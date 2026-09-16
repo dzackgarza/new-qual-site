@@ -128,13 +128,13 @@ Termwise integration yields
 &=-2\Re\sum_{n=1}^\infty
 {r^n\sin(n\pi/2)\over n^2}\\
 &=-2\Re\left(
-{\Li_2(ir)-\Li_2(-ir)\over2i}
+{\operatorname{Li}_2(ir)-\operatorname{Li}_2(-ir)\over2i}
 \right),
 \end{aligned}
 \]
 where
 \[
-\Li_2(z)=\sum_{n=1}^\infty {z^n\over n^2},
+\operatorname{Li}_2(z)=\sum_{n=1}^\infty {z^n\over n^2},
 \qquad |z|\le1.
 \]
 For $|r|=1$ the same formula follows by radial passage to the limit. The only
@@ -147,7 +147,7 @@ Thus
 \boxed{
 I(a)
 =-4\Re\left(
-{\Li_2(ir)-\Li_2(-ir)\over2i}
+{\operatorname{Li}_2(ir)-\operatorname{Li}_2(-ir)\over2i}
 \right)
 -\pi\log|1+r^2|,
 }
