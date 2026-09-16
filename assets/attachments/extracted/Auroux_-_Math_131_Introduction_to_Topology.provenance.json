@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf",
+  "source_pdf_sha256": "43424663754cb47b6588198530504900a1551c2fb4755defb156236ac36c548a",
+  "extracted_markdown": "assets/attachments/extracted/Auroux_-_Math_131_Introduction_to_Topology.md",
+  "extracted_markdown_sha256": "96250e6f261907ead516cc8f4fdf8d262ad48b8d3c1e702699bef1633312da66",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 113,
+  "command": "just ocr-pdf assets/attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf assets/attachments/extracted/Auroux_-_Math_131_Introduction_to_Topology.md",
+  "generated_at": "2026-09-16"
+}

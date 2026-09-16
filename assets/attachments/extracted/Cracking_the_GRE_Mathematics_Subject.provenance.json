@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf",
+  "source_pdf_sha256": "9f4693791bc50f42205894c44e02c191da91c4bdcc2d82e49d817c35fc574b13",
+  "extracted_markdown": "assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md",
+  "extracted_markdown_sha256": "896f8d8a617e0c7e2bbaa8b326b09148b6b1a14a01af11b460c5f7279037853c",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 468,
+  "command": "just ocr-pdf assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md",
+  "generated_at": "2026-09-16"
+}

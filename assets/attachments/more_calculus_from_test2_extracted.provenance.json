@@ -2,20 +2,10 @@
   "source_pdf": "assets/attachments/more_calculus_from_test2.pdf",
   "source_pdf_sha256": "12348764511b3d2e5707c19df5a0b87b50a85566d37e3828fe53bcb77bc62087",
   "extracted_markdown": "assets/attachments/more_calculus_from_test2_extracted.md",
-  "extracted_markdown_sha256": "f3f466267c03e336881d877739587ac28207014a2b699426a9c090123575f3e4",
-  "extractor": "mineru-open-api",
-  "extractor_version": "v0.5.9",
-  "command": "mineru-open-api flash-extract assets/attachments/more_calculus_from_test2.pdf --language en --pages START-END",
-  "split_ranges": ["1-20", "21-40"],
-  "assembly": "Successful range outputs concatenated byte-for-byte in ascending page order.",
-  "generated_at": "2026-09-14",
-  "retained_extraction_comparison": "assets/attachments/extracted/more_calculus_from_test2.md differs: fresh Flash baseline is 162 lines / 13096 bytes versus 171 lines / 12763 bytes, so the unknown-provenance extraction is not reused or certified.",
-  "source_identification": "Fresh output contains selected calculus questions from GRE Mathematics Test Form GR8767 followed by the form's answer-key and examinee-percentage worksheet.",
-  "disposition": "blocked after deterministic extraction",
-  "blocking_defects": [
-    "Several selected questions depend on figures emitted only as image placeholders, including the derivative-graph question, the shared semicircle setup for Questions 28-30, and Question 41's graph choices.",
-    "Multiple statements lose question numbers, option labels, or essential formula glyphs; examples include the unnumbered integral/series material before Question 11 and the corrupted trigonometric data in Question 11.",
-    "These defects prevent a complete source-faithful card set under the no-fallback extraction policy. No cards were authored from guessed repairs."
-  ],
-  "terminal_range_note": "After pages 21-40 reached the GR8767 worksheet/answer-key material, a 41-60 request returned MinerU [-30003] and produced no retained Markdown output."
+  "extracted_markdown_sha256": "2e356503eef82f1ffd91bff098f1da1c0b9dd408440fc51334c6249714d1f320",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 21,
+  "command": "just ocr-pdf assets/attachments/more_calculus_from_test2.pdf assets/attachments/more_calculus_from_test2_extracted.md",
+  "generated_at": "2026-09-16"
 }

@@ -1,163 +1,399 @@
-4. For ${ \mathfrak { x } } \ \geq 0 , \ { \frac { d ^ { \prime } } { d x } } \ ( x ^ { e } \cdot e ^ { . 5 } ) =$ A)+11+-11+1+1-1
+<!-- page 1 -->
 
-<!-- image-->
+4. For $x \geq 0$, $\frac{d}{dx}(x^e \cdot e^x) =$
+(A) $x^e \cdot e^x + x^{e-1} \cdot e^{x+1}$ (B) $x^e \cdot e^x + x^{e+1} \cdot e^{x-1}$ (C) $x^e \cdot e^x$ (D) $x^{e-1} \cdot e^{x+1}$ (E) $x^{e+1} \cdot e^{x-1}$
 
-6Which of the following could be the graph of the derivative of the function whose graph is shown in the figure above?
+<!-- page 2 -->
 
-(A)  
-<!-- image-->
+![img-0.jpeg](img-0.jpeg)
 
-(B)  
-<!-- image-->
-
-(C)  
-<!-- image-->
-
-(D)  
-<!-- image-->
-
-(E)  
-<!-- image-->
-
-<!-- image-->
-
-W  eabove?(A) $\int \limits _ { - 1 } ^ { 1 } ( x + 2 - | x | ) d x$ (B) $\int \limits _ { - 1 } ^ { 1 } ( | x | + x + \frac { 7 } { 4 } ) d x$ (C) $\int \limits _ { - \frac { 1 } { 3 } } ^ { 1 } ( x + \frac { 7 } { 2 } ) d x$ (D) $\int \limits _ { - 1 } ^ { 1 } | x | d x$ (E) $\int \limits _ { - \infty } ^ { + \infty } \sum d x$
-
-$$
-\sum \limits _ { n = 1 } ^ { \infty } \frac { n } { n + 1 } =
-$$
-
-$$
-\frac { l } { t ^ { 2 } }
-$$
-
-$$
-\log { 2 }
-$$
-
-$$
-\downarrow 5 \uparrow
-$$
-
-11 If sin"ix = , then the acute angle value of cos"x is
-
-$$
-~ ( \mathrm { A } ) ~ { \frac { 5 \pi } { 6 } } ~ \qquad \langle \mathrm { B } \rangle ~ { \frac { \pi } { 3 } } ~ \qquad ( \mathrm { C } ) ~ { \sqrt { 1 - { \frac { \pi ^ { 2 } } { 6 ^ { 2 } } } } } ~ \qquad ( \mathrm { D } ) ~ 1 - { \frac { \pi } { 6 } }\tag{E) 0}
-$$
-
-12. $\int _ { \downarrow \downarrow } ^ { \pi } e ^ { \sin ^ { 2 } x } e ^ { \cos ^ { 2 } x } d x =$ (A) π (Beπ (C) $e ^ { \pi }$ (D) $e ^ { \sin ^ { 2 } \pi }$ (E) $e ^ { \pi } \sim \mathfrak { k }$
-
-13.Which of the following is true of the behavior of $f ( x ) = \frac { x ^ { 3 } + 8 } { x ^ { 2 } - 4 } \ \mathrm { a s } x  2 ?$
-
-The limit is O.
-
-The limit is 1.
-
-C)The limit is 4
-
-(D) The graph of the function has a vertical asymptote at 2.
-
-(E) The function has unequal, inite left-hand and right-hand limits
-
-S a  o   p n   u tha  d p e e   e model for the phenomenon described above?
-
-(A) A function / differentiable on $[ a , b ]$ such that there is one and only one point c in $[ a , b ]$ with $\int _ { a } ^ { b } f ^ { \prime } ( x ) d x = c ( b - a )$
-
-nwhoe eo deriativ  t ll poit egative such that ther is e nd ny e p in [a. b] with $f ^ { \prime } ( c ) = { \frac { f ( b ) - f ( a ) } { b - a } }$
-
-wt viv   p pi c tat he e nye in [u, b] with $\int _ { a } ^ { b } f ( x ) d x = f ( c ) \cdot ( b - a )$
-
-(D) A function / continuous on $[ a , b ]$ such that there is one and only one point c in $[ a , b ]$ with $\int _ { a } ^ { b } f ( x ) d x \ = f ( c ) \cdot ( b - a )$
-
-E) A function / continuous on $\{ a , b \}$ and $f ( a ) < d < f ( b )$ such that there is one and only one point in $\left\{ a , b \right\}$ with $f ( c ) = d$
-
-19 If c > 0 and $f ( x ) = e ^ { x } - c . x$ for all real numbers x, then the minimum value of f is (A) f(c) (B)(e) $( \mathbb { C } ) ~ f { \biggl ( } { \frac { 1 } { c } } { \biggr ) }$ (D) /(log c) (E) nonexistent
-
-20 Suppose that $f ( 1 + x ) = f ( x )$ for all real x If / is a polynomial and $f ( 5 ) = 1 !$ , then $f \left( { \frac { \mathbf { i } 5 } { 2 } } \right)$ is (A) $- \texttt { f l }$ B0 C) 11 (D) $\frac { 3 3 } { 2 }$
-
-(E) not uniquely determined by the information given
-
-21. For all $x > 0 ,$ if $f ( \log x ) = { \sqrt { x } }$ , then $f ( x ) =$ (A) $\frac { \frac { x } { 7 } } { e ^ { \frac { x } { 2 } } }$ (B) $\log _ { \sqrt { x } }$ $( \sum e ^ { i \sum i }$ (D) $\sqrt { \vdots 0 9 \cdots }$ (E) $\frac { i 0 \underline { { \dot { \bf g } } } . 1 } { \underline { { \dot { \bf \phi } } } }$
-
-27 For what triples of real numbers $( a , b , c )$ with $a \neq 0$ is the unction
-
-defined by $f ( x ) = \left\{ { \begin{array} { l } { x , \ { \mathrm { i f ~ } } \ x \ \equiv \ 1 } \\ { a x ^ { 2 } + b x \ { \stackrel { \cdot } { \cdot } } \ c , \ { \mathrm { i f ~ } } \ x \ > \ 1 } \end{array} } \right.$
-
-differentiable at all real x ?
-
-(A) $ \operatorname { \mathrm { ~  ~ \psi ~ } } _ { 1 } ^ { j } ( a , \mathrm { ~  ~ l ~ } - \ 2 a , \ a ) \ | \ a$ is a nonzero real number)
-
-(B) $\{ ( a , \ 1 \ - \ 2 a , \ c ) \vert \ a , \ c$ are real numbers and $a \neq 0 )$
-
-(C) $\{ ( a , b , c ) \} ( a , b , c$ are real numbers, $a \neq 0 ,$ and $a \ + \ b \ + \ c \ = \ 1 ;$
-
-(D) $\left\{ \left( \frac { 1 } { 2 } , 0 , 0 \right) \right\}$
-
-(E) $\{ ( a , \ 1 \ - \ 2 a , \ 0 ) \mid a$ is a nonzero real number
-
-Questions 28-30 are based on the following information.
-
-Lt be a funcin such that the graph  is a sicircwith ed pois )n ,)e $a < b$ 28 $\left| \int _ { a } ^ { b } f ( x ) d x \right| =$ (A) $f ( b ) - f ( a )$ (B) $\frac { f ( b ) - f ( a ) } { b - a }$ (C) $( b - a ) \frac { \pi } { 4 }$ (D) $( b - a ) ^ { 2 } \pi$ (E) $( b - a ) ^ { 2 } \frac { \pi } { 8 }$
-
-29 The graph of $y = 3 f \{ x \}$ is a A) translation of S ) semicircle with radius three times that of S subset of an ellipse D) subset of a parabola E)subset of a hyperbola
-
-30 The improper integral $\int _ { a } ^ { b } f ( x ) f ^ { \prime } ( x ) d x$ is A)necessarily zero (B) possibly zero but not necessarily (C) necessarily nonexistent (D) possibly nonexistent but not necessarily Enone of the above
-
-31 $\operatorname* { l i m } _ { x \to \pi } { \frac { e ^ { - \pi } - e ^ { - x } } { \sin x } } =$ (A) $\infty \infty$ (B) $- e ^ { - \pi }$ (C) 0 (D) $e ^ { - \pi }$ (E) 1
-
-36 The shortest distance from the curve xy = 8 to the origin is (A) 4 B8 C) 16 (D) 2\sqrt2 }\$ (E) 4√sqrt}\$
-
-39. If $f ( x ) = \left\{ \begin{array} { l l } { \displaystyle \frac { \mathrm { i } x \mathrm { i } } { x } , \mathrm { f o r } x \neq 0 } \\ { 0 , \mathrm { f o r } x = 0 , } \end{array} \right.$ then $\int \limits _ { - 3 } ^ { 1 } f ( x ) d x \quad \mathrm { i s }$ (A)-2 B0 C) 2 not defined
-
-E) none of the above
-
-41 Of the following, which best represents a portion of the graph of $y = \frac { 1 } { e ^ { x } } + x - \frac { 1 } { e }$ near (1, 1) ?
+6 Which of the following could be the graph of the derivative of the function whose graph is shown in the figure above?
 
 (A)
 
-<!-- image-->
+![img-1.jpeg](img-1.jpeg)
 
-<!-- image-->
+(B)
 
-<!-- image-->
+![img-2.jpeg](img-2.jpeg)
+
+(C)
+
+![img-3.jpeg](img-3.jpeg)
 
 (D)
 
-<!-- image-->
+![img-4.jpeg](img-4.jpeg)
 
-<!-- image-->
+(E)
 
-44 Suppose / is a real function such that $f ^ { \prime } ( x _ { 0 } )$ exists Which of the following is the value of $\operatorname* { l i m } _ { h \to 0 } { \frac { f ( x _ { 0 } + h ) - f ( x _ { 0 } - h ) } { h } } :$ 9. (A) 0 (B) $2 f ^ { \prime } ( x _ { 0 } )$ $( \mathbf { C } ) \ f ^ { \prime } ( \mathbf { \cdots } \mathbf { \cdot } \mathbf { \hat { \imath } _ { \emptyset } } )$ $( \mathrm { D } ) \ \mathrm { ~ } \lnot f ^ { \prime } ( \mathrm { x } _ { 0 } )$ $\{ \boldsymbol { \mathbf { E } } \} - \Im f ^ { \prime } \{ \boldsymbol { x } _ { 0 } \}$
+![img-5.jpeg](img-5.jpeg)
 
-45. The radius of convergence of the series $\sum _ { n = 0 } ^ { \infty } { \frac { e ^ { n } } { n ! } } x ^ { n } { \mathrm { i s } }$ (A) 0 (B) $\frac { 1 } { e }$ (C) 1 (D) e (E) $+ 0 0$
+<!-- page 3 -->
 
-46 In the xy-plane, the graph of $x ^ { \mathrm { { l o g \ y } } } = y ^ { \mathrm { { l o g \ x } } } \mathrm { { i s } }$ A) empty a single point ) a ray in the open first quadrant a closed curve Ethe open first quadrant
+![img-6.jpeg](img-6.jpeg)
 
-51 Let $x _ { \frac { 1 } { 2 } } = \pmb { \mathrm { f } }$ and $x _ { n + 1 } = { \sqrt { 3 + 2 x _ { n } } }$ for all positive integers n. If it is assumed that $\{ x _ { n } \}$ converges, then $\lim \limits _ { n  \infty } x _ { n } =$ (A)-1 0 $( C ) \sqrt { 5 }$ (D) e (E) 3
+7. Which of the following integrals represents the area of the shaded portion of the rectangle shown in the figure above?
 
-56 The polynomial $p ( x ) = 1 + \frac { 1 } { 2 } ( x - 1 ) - \frac { 1 } { 8 } ( x - 1 ) ^ { 2 }$ is used to approximate $\sqrt { 1 . 0 1 } .$ Which of the following most closely approximates the error $\sqrt { { \mathrm { I . 0 1 } } } - p ( { \mathrm { I . 0 1 } } ) \} ;$ (A) $\left( \frac { 1 } { 1 6 } \right) \times 1 0 ^ { - 6 }$ (B) $\left( { \frac { 1 } { 4 8 } } \right) \times 1 0 ^ { - 8 }$ (C) $\left( { \frac { 3 } { 8 } } \right) \times 1 0 ^ { - 1 0 }$ (D) $- \left( { \frac { 3 } { 8 } } \right) \times 1 0 ^ { - 1 0 }$ (E) $- \left( \frac { 1 } { 1 6 } \right) \times 1 0 ^ { - 6 }$
+(A) $$\int_{-1}^{1} (x + 2 - |x|) \, dx$$
 
-<!-- image-->
+(B) $$\int_{-1}^{1} (|x| + x + 2) \, dx$$
 
-o   e  o
+(C) $$\int_{-1}^{1} (x + 2) \, dx$$
 
-$$
-\left\{ \sum _ { k = 1 } ^ { n } | f ( x _ { k } ) - f ( x _ { k - 1 } ) | : 0 = x _ { 0 } < x _ { 1 } < \qquad < x _ { n - 1 } < x _ { n } = 1 2 \right\}
-$$
+(D) $$\int_{-1}^{1} |x| \, dx$$
+
+(E) $$\int_{-1}^{1} 2 \, dx$$
+
+8 $$\sum_{n=1}^{\infty} \frac{n}{n+1} =$$
+
+(A) $$\frac{1}{e}$$
+
+(B) $$\log 2$$
+
+(C) 1
+
+(D) $$e$$
+
+(E) $$+\infty$$
+
+<!-- page 4 -->
+
+11 If  $\sin^{-1}x = \frac{\pi}{6}$, then the acute angle value of  $\cos^{-1}x$  is
+(A)  $\frac{5\pi}{6}$  (B)  $\frac{\pi}{3}$  (C)  $\sqrt{1 - \frac{\pi^2}{6^2}}$  (D)  $1 - \frac{\pi}{6}$  (E) 0
+
+<!-- page 5 -->
+
+12.  $$\int_0^\pi e^{\sin^2 x} e^{\cos^2 x} dx =$$
+
+(A)  $$\pi$$
+
+(B)  $$e^\pi$$
+
+(C)  $$e^\pi$$
+
+(D)  $$e^{\sin^2 \pi}$$
+
+(E)  $$e^\pi - 1$$
+
+13. Which of the following is true of the behavior of  $$f(x) = \frac{x^3 + 8}{x^2 - 4}$$  as  $$x \rightarrow 2$$ ?
+
+(A) The limit is 0.
+
+(B) The limit is 1.
+
+(C) The limit is 4.
+
+(D) The graph of the function has a vertical asymptote at 2.
+
+(E) The function has unequal, finite left-hand and right-hand limits.
+
+<!-- page 6 -->
+
+16 Suppose that an arrow is shot from a point p and lands at a point q such that at one and only one point in its flight is the arrow parallel to the line of sight between p and q. Of the following, which is the best mathematical model for the phenomenon described above?
+(A) A function f differentiable on [a, b] such that there is one and only one point c in [a, b] with  \( \int_{a}^{b} f'(x) dx = c(b - a) \) 
+(B) A function f whose second derivative is at all points negative such that there is one and only one point c in [a, b] with  \( f'(c) = \frac{f(b) - f(a)}{b - a} \) 
+(C) A function f whose first derivative is at all points positive such that there is one and only one point c in [a, b] with  \( \int_{a}^{b} f(x) dx = f(c) \cdot (b - a) \) 
+(D) A function f continuous on [a, b] such that there is one and only one point c in [a, b] with  \( \int_{a}^{b} f(x) dx = f(c) \cdot (b - a) \) 
+(E) A function f continuous on [a, b] and  \( f(a) < d < f(b) \)  such that there is one and only one point c in [a, b] with  \( f(c) = d \)
+
+<!-- page 7 -->
+
+|  19 If $c > 0$ and $f(x) = e^x - cx$ for all real numbers $x$, then the minimum value of $f$ is  |   |   |   |   |
+| --- | --- | --- | --- | --- |
+|  (A) $f(c)$ | (B) $f(e^c)$ | (C) $f\left(\frac{1}{c}\right)$ | (D) $f(\log c)$ | (E) nonexistent  |
+
+<!-- page 8 -->
+
+20. Suppose that $f(1 + x) = f(x)$ for all real $x$. If $f$ is a polynomial and $f(5) = 11$, then $f\left(\frac{15}{2}\right)$ is
+
+(A) -11
+
+(B) 0
+
+(C) 11
+
+(D) $\frac{33}{2}$
+
+(E) not uniquely determined by the information given
+
+21. For all $x > 0$, if $f(\log x) = \sqrt{x}$, then $f(x) =$
+
+(A) $e^{\frac{x}{2}}$
+
+(B) $\log \sqrt{x}$
+
+(C) $e^{\sqrt{x}}$
+
+(D) $\sqrt{\log x}$
+
+(E) $\frac{\log x}{2}$
+
+<!-- page 9 -->
+
+27 For what triples of real numbers \((a, b, c)\) with \(a \neq 0\) is the function defined by \(f(x) = \begin{cases} x, & \text{if } x \leq 1 \\ ax^2 + bx + c, & \text{if } x > 1 \end{cases}\) differentiable at all real \(x\)? (A) \(\{(a, 1 - 2a, a) | a \text{ is a nonzero real number}\}\) (B) \(\{(a, 1 - 2a, c) | a, c \text{ are real numbers and } a \neq 0\}\) (C) \(\{(a, b, c) | a, b, c \text{ are real numbers, } a \neq 0, \text{ and } a + b + c = 1\}\) (D) \(\left\{\left(\frac{1}{2}, 0, 0\right)\right\}\) (E) \(\{(a, 1 - 2a, 0) | a \text{ is a nonzero real number}\}\)
+
+<!-- page 10 -->
+
+Questions 28-30 are based on the following information.
+
+Let $f$ be a function such that the graph of $f$ is a semicircle $S$ with end points $(a, 0)$ and $(b, 0)$ where $a < b$.
+
+28 $\left|\int_{a}^{b}f(x)dx\right| =$
+
+(A) $f(b) - f(a)$
+
+(B) $\frac{f(b) - f(a)}{b - a}$
+
+(C) $(b - a)\frac{\pi}{4}$
+
+(D) $(b - a)^2\pi$
+
+(E) $(b - a)^2\frac{\pi}{8}$
+
+29. The graph of $y = 3f(x)$ is a
+
+(A) translation of $S$
+
+(B) semicircle with radius three times that of $S$
+
+(C) subset of an ellipse
+
+(D) subset of a parabola
+
+(E) subset of a hyperbola
+
+30. The improper integral $\int_{a}^{b}f(x)f'(x)dx$ is
+
+(A) necessarily zero
+(B) possibly zero but not necessarily
+(C) necessarily nonexistent
+(D) possibly nonexistent but not necessarily
+(E) none of the above
+
+<!-- page 11 -->
+
+31 $$\lim_{x \to \pi} \frac{e^{-\pi} - e^{-x}}{\sin x} =$$
+
+(A) $$-\infty$$
+
+(B) $$-e^{-\pi}$$
+
+(C) 0
+
+(D) $$e^{-\pi}$$
+
+(E) 1
+
+<!-- page 12 -->
+
+|  36 The shortest distance from the curve $xy = 8$ to the origin is  |   |   |   |   |
+| --- | --- | --- | --- | --- |
+|  (A) 4 | (B) 8 | (C) 16 | (D) $2\sqrt{2}$ | (E) $4\sqrt{2}$  |
+
+<!-- page 13 -->
+
+39. If $f(x) = \begin{cases} \frac{|x|}{x}, & \text{for } x \neq 0 \\ 0, & \text{for } x = 0, \end{cases}$ then $\int_{-1}^1 f(x)\,dx$ is
+
+(A) -2
+
+(B) 0
+
+(C) 2
+
+(D) not defined
+
+(E) none of the above
+
+<!-- page 14 -->
+
+41 Of the following, which best represents a portion of the graph of $$y = \frac{1}{e^x} + x - \frac{1}{e}$$ near (1, 1)?
+
+(A)
+
+![img-7.jpeg](img-7.jpeg)
+
+(B)
+
+![img-8.jpeg](img-8.jpeg)
+
+(C)
+
+![img-9.jpeg](img-9.jpeg)
+
+(D)
+
+![img-10.jpeg](img-10.jpeg)
+
+(E)
+
+![img-11.jpeg](img-11.jpeg)
+
+<!-- page 15 -->
+
+44 Suppose $f$ is a real function such that $f'(x_0)$ exists. Which of the following is the value of $\lim_{h \to 0} \frac{f(x_0 + h) - f(x_0 - h)}{h}$?
+(A) 0 (B) $2f'(x_0)$ (C) $f'(-x_0)$ (D) $-f'(x_0)$ (E) $-2f'(x_0)$
+
+<!-- page 16 -->
+
+45. The radius of convergence of the series $$\sum_{n=0}^{\infty} \frac{e^n}{n!} x^n$$ is
+
+(A) 0
+
+(B) $$\frac{1}{e}$$
+
+(C) 1
+
+(D) e
+
+(E) $$+\infty$$
+
+46. In the $$xy$$-plane, the graph of $$x^{\log y} = y^{\log x}$$ is
+
+(A) empty
+
+(B) a single point
+
+(C) a ray in the open first quadrant
+
+(D) a closed curve
+
+(E) the open first quadrant
+
+<!-- page 17 -->
+
+51 Let $x_1 = 1$ and $x_{n+1} = \sqrt{3 + 2x_n}$ for all positive integers $n$. If it is assumed that $\{x_n\}$ converges, then $\lim_{n \to \infty} x_n =$
+(A) $-1$ (B) $0$ (C) $\sqrt{5}$ (D) $e$ (E) $3$
+
+<!-- page 18 -->
+
+56. The polynomial $p(x) = 1 + \frac{1}{2}(x - 1) - \frac{1}{8}(x - 1)^2$ is used to approximate $\sqrt{1.01}$. Which of the following most closely approximates the error $\sqrt{1.01} - p(1.01)$?
+
+(A) $\left(\frac{1}{16}\right) \times 10^{-6}$
+
+(B) $\left(\frac{1}{48}\right) \times 10^{-8}$
+
+(C) $\left(\frac{3}{8}\right) \times 10^{-10}$
+
+(D) $-\left(\frac{3}{8}\right) \times 10^{-10}$
+
+(E) $-\left(\frac{1}{16}\right) \times 10^{-6}$
+
+<!-- page 19 -->
+
+![img-12.jpeg](img-12.jpeg)
+
+59. If $f$ is the function whose graph is indicated in the figure above, then the least upper bound (supremum) of
+
+$$\left\{ \sum_{k=1}^n |f(x_k) - f(x_{k-1})| : 0 = x_0 < x_1 < \quad < x_{n-1} < x_n = 12 \right\}$$
 
 appears to be
 
 (A) 2
 
-B 7
+(B) 7
+
+(C) 12
 
 (D) 16
 
-E) 21
+(E) 21
 
-63. Let / be a continuous, strictly decreasing, real-valued function such that $\int \limits _ { 0 } ^ { + \infty } d$ (xdx is finite and $f ( 0 ) = 1$ In terms of $f ^ { - 1 }$ (the inverse function of $f ) , \ \int _ { 0 } ^ { + \infty } f ( x ) \ d x \mathrm { i } s$ (A) less than $\int \limits _ { 1 } ^ { + \infty } f ^ { - 1 } ( y )$ dy greater than $\int \limits _ { 0 } ^ { 1 } f ^ { - 1 } ( z ^ { 3 } )$ dy (C) equal to {  -1(y)dy (D) ${ \tt e q u a l t o } \int _ { 0 } ^ { 1 } f ^ { - 1 } \left( \underline { { \boldsymbol { \nu } } } \right) d \underline { { \boldsymbol { \nu } } }$ E) equal to $\int \limits _ { 0 } ^ { + \infty } f ^ { - 1 } ( y ) d y$WORK SHEET for the MaTHEMATICS Test, Form GR8767 ONLY Answer Key and Percentage\* of Examinees Answering Each Question Correctly
-<table><tr><td colspan="2">QUESTION Answor</td><td rowspan="2"></td><td colspan="2">TOTAL C</td><td rowspan="2"></td></tr><tr><td>Number</td><td></td><td>P+</td></tr><tr><td>1</td><td>BM</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td>SNA</td><td></td><td></td><td></td></tr><tr><td>2 3</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td>5</td><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td>83</td><td></td><td></td></tr><tr><td>6 7</td><td>C</td><td></td><td>81</td><td></td><td></td></tr><tr><td>8</td><td>A</td><td></td><td>76</td><td></td><td></td></tr><tr><td>9</td><td>wwO</td><td></td><td>84</td><td></td><td></td></tr><tr><td>10</td><td></td><td></td><td>79</td><td></td><td></td></tr><tr><td>11</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>12</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>13</td><td>m0</td><td></td><td></td><td></td><td></td></tr><tr><td>14</td><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td>15</td><td>E</td><td>F685E</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td>61</td><td></td><td></td></tr><tr><td>16</td><td>B</td><td>49</td><td></td><td></td><td></td></tr><tr><td>17</td><td>C</td><td></td><td>8</td><td></td><td></td></tr><tr><td>18 19</td><td>D</td><td></td><td></td><td></td><td></td></tr><tr><td>20</td><td>D C</td><td></td><td>42</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td>64</td><td></td><td></td></tr><tr><td>21</td><td>A</td><td></td><td>54</td><td></td><td></td></tr><tr><td></td><td>B</td><td>68</td><td></td><td></td><td></td></tr><tr><td></td><td>C</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>D</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>D</td><td></td><td>B3R88</td><td></td><td></td></tr><tr><td></td><td>E</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td>868</td><td>E C</td><td></td><td></td><td></td><td></td></tr><tr><td>30</td><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>B B</td><td></td><td>BR</td><td></td><td></td></tr><tr><td>58838</td><td>E</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>A</td><td></td><td>29</td><td></td><td></td></tr><tr><td></td><td>B</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>A</td><td></td><td>u</td><td></td><td></td></tr><tr><td></td><td>D</td><td></td><td></td><td></td><td></td></tr><tr><td></td><td>A</td><td></td><td></td><td></td><td></td></tr><tr><td>39</td><td></td><td></td><td>8B</td><td></td><td></td></tr><tr><td>40</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>Correct (C)</td><td></td><td></td><td></td><td></td><td></td></tr></table>
+<!-- page 20 -->
 
-<table><tr><td colspan="2">QUESTION Number Answer 41</td><td>P</td><td colspan="2">TOTAL C I</td></tr><tr><td rowspan="12">12 43 44 45 46 47 48 49 50 Incorrect (l) Total Score</td><td></td><td></td><td rowspan="10"></td><td rowspan="10"></td></tr><tr><td>D</td><td>47 33</td></tr><tr><td>D</td><td>49</td></tr><tr><td>E B</td><td>57</td></tr><tr><td>E</td><td>46</td></tr><tr><td>E</td><td>42</td></tr><tr><td>D</td><td>48</td></tr><tr><td>D</td><td>67</td></tr><tr><td>C D</td><td>41 40</td></tr><tr><td></td><td>52</td></tr><tr><td>51 52</td><td></td><td></td></tr><tr><td>53</td><td>E C</td><td>59 23</td></tr><tr><td>54 55</td><td>B E</td><td>39</td></tr><tr><td>56</td><td></td><td>16</td></tr><tr><td></td><td>C</td><td></td></tr><tr><td></td><td>A</td><td>31 46</td></tr><tr><td>57 C 58</td><td></td><td></td></tr><tr><td>B</td><td></td><td></td></tr><tr><td>59 0</td><td>588</td><td></td></tr><tr><td>60 C</td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td>61 C</td><td>37</td><td></td></tr><tr><td>62 B</td><td>33</td><td></td></tr><tr><td>63 D</td><td></td><td></td></tr><tr><td>64 C</td><td></td><td></td></tr><tr><td>65 A</td><td>48</td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td>66 B</td><td>57</td><td></td></tr><tr><td colspan="2">Correct (C)</td><td></td><td></td></tr></table>
+|  63. Let f be a continuous, strictly decreasing, real-valued function such that \( \int_{0}^{+\infty} f(x) \, dx \) is finite and \( f(0) = 1 \). In terms of \( f^{-1} \) (the inverse function of f), \( \int_{0}^{+\infty} f(x) \, dx \) is  |   |   |
+| --- | --- | --- |
+|  (A) less than \( \int_{1}^{+\infty} f^{-1}(y) \, dy \) | (B) greater than \( \int_{0}^{1} f^{-1}(y) \, dy \) | (C) equal to \( \int_{1}^{+\infty} f^{-1}(y) \, dy \)  |
+|  (D) equal to \( \int_{0}^{1} f^{-1}(y) \, dy \) | (E) equal to \( \int_{0}^{+\infty} f^{-1}(y) \, dy \) |   |
 
-Estmated P +or the group of examinees who took the GRE Mathematics Test in a recent three-year period
+<!-- page 21 -->
+
+# WORK SHEET for the MATHEMATICS Test, Form GR8767 ONLY
+Answer Key and Percentage* of Examinees Answering Each Question Correctly
+
+|  QUESTION |   | P+ | TOTAL  |   |
+| --- | --- | --- | --- | --- |
+|  Number | Answer |   | C | I  |
+|  1 | B | 92 |  |   |
+|  2 | C | 72 |  |   |
+|  3 | B | 94 |  |   |
+|  4 | A | 89 |  |   |
+|  5 | A | 89 |  |   |
+|  6 | C | 83 |  |   |
+|  7 | A | 81 |  |   |
+|  8 | E | 76 |  |   |
+|  9 | E | 84 |  |   |
+|  10 | C | 79 |  |   |
+|  11 | B | 77 |  |   |
+|  12 | B | 81 |  |   |
+|  13 | D | 82 |  |   |
+|  14 | A | 47 |  |   |
+|  15 | E | 77 |  |   |
+|  16 | B | 61 |  |   |
+|  17 | C | 49 |  |   |
+|  18 | D | 65 |  |   |
+|  19 | D | 71 |  |   |
+|  20 | C | 42 |  |   |
+|  21 | A | 64 |  |   |
+|  22 | B | 54 |  |   |
+|  23 | C | 56 |  |   |
+|  24 | D | 80 |  |   |
+|  25 | D | 53 |  |   |
+|  26 | E | 54 |  |   |
+|  27 | A | 34 |  |   |
+|  28 | E | 78 |  |   |
+|  29 | C | 58 |  |   |
+|  30 | A | 29 |  |   |
+|  31 | B | 58 |  |   |
+|  32 | B | 62 |  |   |
+|  33 | E | 41 |  |   |
+|  34 | A | 51 |  |   |
+|  35 | B | 29 |  |   |
+|  36 | A | 54 |  |   |
+|  37 | D | 38 |  |   |
+|  38 | A | 69 |  |   |
+|  39 | B | 63 |  |   |
+|  40 | C | 30 |  |   |
+
+|  QUESTION |   | P+ | TOTAL  |   |
+| --- | --- | --- | --- | --- |
+|  Number | Answer |   | C | I  |
+|  41 | D | 47 |  |   |
+|  42 | D | 33 |  |   |
+|  43 | E | 49 |  |   |
+|  44 | B | 57 |  |   |
+|  45 | E | 46 |  |   |
+|  46 | E | 42 |  |   |
+|  47 | D | 48 |  |   |
+|  48 | D | 67 |  |   |
+|  49 | C | 41 |  |   |
+|  50 | D | 40 |  |   |
+|  51 | E | 52 |  |   |
+|  52 | C | 59 |  |   |
+|  53 | B | 23 |  |   |
+|  54 | E | 39 |  |   |
+|  55 | C | 16 |  |   |
+|  56 | A | 31 |  |   |
+|  57 | C | 46 |  |   |
+|  58 | B | 37 |  |   |
+|  59 | D | 35 |  |   |
+|  60 | C | 23 |  |   |
+|  61 | C | 37 |  |   |
+|  62 | B | 33 |  |   |
+|  63 | D | 40 |  |   |
+|  64 | C | 39 |  |   |
+|  65 | A | 48 |  |   |
+|  66 | B | 57 |  |   |
+
+Correct (C)
+Incorrect (I)
+
+Correct (C)
+Incorrect (I)
+Total Score
+C - I/4 =
+Scaled Score (SS) =
+
+*Estimated P+ for the group of examinees who took the GRE Mathematics Test in a recent three-year period
+
+6

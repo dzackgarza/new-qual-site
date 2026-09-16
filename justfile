@@ -98,6 +98,10 @@ macros:
 unsolved:
     uv run python tools/unsolved_queue.py
 
+# Extract a PDF to Markdown with Mistral OCR, writing <markdown>.provenance.json beside it
+ocr-pdf pdf markdown:
+    bash -c 'source "$HOME/.envrc" && exec uv run --script tools/mistral_ocr.py "$1" "$2"' _ {{quote(pdf)}} {{quote(markdown)}}
+
 # Report problem cards whose statements still contain Unicode mathematics outside LaTeX
 extraction-detector:
     uv run python tools/extraction_detector.py

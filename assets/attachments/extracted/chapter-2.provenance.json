@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/chapter-2.pdf",
+  "source_pdf_sha256": "8882e8a638367cd62959935b33a5c6d1eb693d5533c69f8c81ef41338a8a435d",
+  "extracted_markdown": "assets/attachments/extracted/chapter-2.md",
+  "extracted_markdown_sha256": "2952a9c73949242ad07525e72a362c52b2f769be033e7fde81c3cc8d9d6123cc",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 9,
+  "command": "just ocr-pdf assets/attachments/chapter-2.pdf assets/attachments/extracted/chapter-2.md",
+  "generated_at": "2026-09-16"
+}

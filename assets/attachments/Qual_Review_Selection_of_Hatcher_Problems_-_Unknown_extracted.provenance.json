@@ -2,18 +2,10 @@
   "source_pdf": "assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf",
   "source_pdf_sha256": "0b809a7eba2cb1842320fa91bf545b6c6b1341a854b603299f538900fb805d52",
   "extracted_markdown": "assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown_extracted.md",
-  "extracted_markdown_sha256": "6528a94a6982e5fe47b8fedc1d841c848e5d821667400bae2bb6998f98099025",
-  "extractor": "mineru-open-api",
-  "extractor_version": "v0.5.9",
-  "command": "mineru-open-api flash-extract assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf --language en",
-  "generated_at": "2026-09-14",
-  "retained_extraction_byte_identical": "assets/attachments/extracted/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.md",
-  "source_identification": "Review sheet for the qualifying exam. The text points students to ddugger course pages at math.uoregon.edu and selects Hatcher exercises by section, followed by sixteen additional practice problems.",
-  "hatcher_selection": "107 Hatcher exercise references are printed. 106 map to current SRC-TEXT-HAT02 cards. Section 2.2 Exercise 34 is not represented because Hatcher's errata withdrew it and the review sheet gives only its number, not its statement. Section 2.2 Exercise 43(a) is represented by the whole-exercise canonical card E-HAT-2.2-43, with the part-(a)-only selection recorded in the collection note.",
-  "practice_problem_disposition": "Thirteen of the sixteen additional practice problems are recoverable source-faithfully and are represented by source-local cards. Problems 4, 6, and 7 are not carded from this extraction.",
-  "blocking_defects": [
-    "Practice problem 4 says f:S^4->S^4 but its displayed formula has only four coordinates (x,y,z,w) and normalizes by sqrt(x^4+y^4+z^4+w^4). The deterministic extraction does not resolve whether this is a source typo or a lost coordinate, so no repaired statement is invented.",
-    "Practice problem 6 asks to identify a pictured 2-manifold X, but MinerU emits only an image placeholder and no recoverable figure.",
-    "Practice problem 7 modifies the construction in problem 6, so it is likewise unusable without the unrecovered figure."
-  ]
+  "extracted_markdown_sha256": "daec0c541ed3590ebf9ef640144237e4168b598a96f1ae9b0422cd480e8cfb80",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 4,
+  "command": "just ocr-pdf assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown_extracted.md",
+  "generated_at": "2026-09-16"
 }
