@@ -15,19 +15,26 @@ review: draft
 ---
 
 ::: {.definition}
-A family of $\theset{\mu_{x}}_{x\in M}$ with local consistency: if $x,y \in U$ then $\mu_{x}, \mu_{y}$ are related via a propagation.
+Let $M$ be an $n$-[[D-UBWVX|manifold]], and for $A\subseteq M$ write $H_n(M\mid A)\coloneqq H_n(M, M\sm A;\ZZ)$.
+An \dfn{orientation} of $M$ is a function $x\mapsto\mu_x$ assigning to each $x\in M$ a [[D-6CI7D|local orientation]] $\mu_x$, a generator of $H_n(M\mid x)\cong\ZZ$, that is locally consistent: each $x\in M$ has a neighborhood $\RR^n\subseteq M$ containing an open ball $B$ of finite radius about $x$ and a generator $\mu_B$ of $H_n(M\mid B)$ such that for every $y\in B$, $\mu_y$ is the image of $\mu_B$ under the map $H_n(M\mid B)\to H_n(M\mid y)$ induced by inclusion.
+The manifold $M$ is \dfn{orientable} if it has an orientation.
+:::
 
-Formally, a function $$M^n \to \coprod_{x\in M} H(X \mid \theset{x})\\ x \mapsto \mu_{x}$$ such that $\forall x \exists N_{x}$ in which  $\forall y\in N_{x}$, the preimage of each $\mu_{y}$ under the map $H_{n}(M\mid N_{x}) \surjects H_{n}(M\mid y)$ is a single generator $\mu_{N_{x}}$.
+::: {.proposition}
+Let $M$ be a connected $n$-manifold with [[D-WX7JH|orientation double cover]] $p\colon\tilde M\to M$, and let $x\in M$.
+The following are equivalent:
 
-TFAE:
+(a) $M$ is orientable.
 
-- $M$ is orientable.
+(b) $\tilde M$ is disconnected.
 
-- The map $W: (M, x) \to \ZZ_{2}$ is trivial.
+(c) $\tilde M$ has two components, each mapped homeomorphically onto $M$ by $p$.
 
-- $\tilde M_{o} = M \coprod \ZZ_{2}$ (two sheets).
+(d) $p$ has a continuous section $s\colon M\to\tilde M$, $p\circ s = \id_M$.
 
-- $\tilde M_{o}$ is disconnected
+(e) The homomorphism $\pi_1(M, x)\to\ZZ/2$ given by the action of $\pi_1(M,x)$ on the two-point fiber $p\inv(x)$ is trivial.
+:::
 
-- The projection $\tilde M_{o} \to M$ admits a section.
+::: {.concept}
+[@Hat02, §3.3, pp. 234--235, Proposition 3.25].
 :::
