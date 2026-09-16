@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-EPTMG
 kind: definition
-title: Regular
+title: Regular space
 classification:
   areas:
   - topology
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **regular** if whenever $x\in X$ and $F\not\ni x$ is closed, $F$ and $x$ are separated by neighborhoods.
+A topological space $X$ is \dfn{regular} if for every closed set $F\subseteq X$ and every point $x\in X\sm F$ there are disjoint open sets $U, V\subseteq X$ with $x\in U$ and $F\subseteq V$.
 :::
+
