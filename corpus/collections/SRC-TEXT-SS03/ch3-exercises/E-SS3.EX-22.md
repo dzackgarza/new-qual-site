@@ -20,17 +20,23 @@ audit:
 :::
 
 ::: solution
-Suppose such an $f$ existed. Define
+Suppose such an $f$ existed.
+Define
 \[
 h(z)=zf(z)-1.
 \]
-Then $h$ is holomorphic in $\mathbb D$ and continuous on $\overline{\mathbb D}$. On the boundary, $f(z)=1/z$, so $h(z)=0$ whenever $|z|=1$. By the maximum modulus principle,
+Then $h$ is holomorphic in $\mathbb D$ and continuous on $\overline{\mathbb D}$.
+On the boundary, $f(z)=1/z$, so $h(z)=0$ whenever $|z|=1$.
+By the maximum modulus principle,
 \[
 |h(z)|\le \max_{|\zeta|=1}|h(\zeta)|=0
 \]
-for every $z\in\mathbb D$. Hence $h\equiv0$. But
+for every $z\in\mathbb D$.
+Hence $h\equiv0$.
+But
 \[
 h(0)=-1,
 \]
-a contradiction. Therefore no such $f$ exists.
+a contradiction.
+Therefore no such $f$ exists.
 :::

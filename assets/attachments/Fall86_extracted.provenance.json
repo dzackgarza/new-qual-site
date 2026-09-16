@@ -10,8 +10,5 @@
   "retained_extraction_byte_identical": "assets/attachments/extracted/Fall86.md",
   "intake_status": "blocked",
   "blocker": "Problem 5's defining 2x2 matrix A is garbled by the deterministic extraction and no exact repository duplicate was found. The source cannot be fully carded without recovering that matrix, and no alternate parser/OCR/model-vision fallback is permitted.",
-  "known_exact_reuses": [
-    "Problem 4 exactly repeats P-BKF13-4A.",
-    "Problem 15 exactly repeats P-AA27R."
-  ]
+  "known_exact_reuses": ["Problem 4 exactly repeats P-BKF13-4A.", "Problem 15 exactly repeats P-AA27R."]
 }
