@@ -16,7 +16,9 @@ review: draft
 ---
 
 ::: {.fact}
-For $1 \leq p < \infty$,
-
-$${\left\lVert {f + g} \right\rVert}_p \leq {\left\lVert {f} \right\rVert}_p + {\left\lVert {g} \right\rVert}_p$$
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, let $1 \leq p < \infty$, and let $f, g\in L^p(\mu)$.
+Then $f+g\in L^p(\mu)$ and
+$$
+\norm{f + g}_p \leq \norm{f}_p + \norm{g}_p.
+$$
 :::
