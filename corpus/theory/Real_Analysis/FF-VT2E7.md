@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-VT2E7
 kind: fact
-title: $\cos(\pi/3) = \cdots$
+title: Value of $\cos(\pi/3)$
 prompts:
 - What is $\cos(\pi/3)$?
 classification:
@@ -17,6 +17,6 @@ review: draft
 
 ::: {.fact}
 $$
-\cos(\pi/3) = {1 \over 2}
-.$$
+\cos(\pi/3) = \frac{1}{2}.
+$$
 :::

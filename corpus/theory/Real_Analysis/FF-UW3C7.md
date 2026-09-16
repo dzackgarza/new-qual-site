@@ -19,17 +19,19 @@ review: draft
 ---
 
 ::: {.fact}
-**No:** Take $f: [0, 1]\to [0, 1]$ the Cantor-Lebesgue function (monotonic and cts) and $C$ the Cantor set
+There exist a [[D-DHFN4|Lebesgue measurable]] function $h\colon\RR\to\RR$ and a continuous function $\phi\colon[0,2]\to[0,1]$ such that $h\circ\phi$ is not Lebesgue measurable.
+:::
 
-$f(C) = [0, 1]$, so define $g(x) = f(x) +x$ so $g:[0, 1] \to [0, 2]$ (strictly monotonic and cts, so a homeomorphism), so $g^{-1}$ is cts and thus measurable.
+::: {.proof}
+Let $C\subseteq[0,1]$ be the Cantor set and $f\colon[0,1]\to[0,1]$ the Cantor--Lebesgue function, which is continuous, nondecreasing, and constant on each connected component of $[0,1]\setminus C$.
+Put $g(x)\coloneqq f(x) + x$.
+Then $g\colon[0,1]\to[0,2]$ is continuous and strictly increasing with $g(0) = 0$ and $g(1) = 2$, so it is a homeomorphism, and $\phi\coloneqq g\inv\colon[0,2]\to[0,1]$ is continuous.
 
-$\mu(g(C)) = 1>0$ (because $f$ is constant on every interval in $C^c$) so $g(C) \supseteq A$ a non-measurable subset
+The set $[0,1]\setminus C$ is a disjoint union of open intervals of total length $1$, and $g$ maps each of them onto an interval of the same length because $f$ is constant on it.
+Hence $m(g([0,1]\setminus C)) = 1$ and $m(g(C)) = 2 - 1 = 1 > 0$.
+Every subset of $\RR$ of positive Lebesgue measure contains a subset that is not [[D-MDJII|Lebesgue measurable]], so there is a non-measurable $A\subseteq g(C)$.
 
-$g^{-1}(A) \subset C$ with $\mu(C) = 0$ implies $g^{-1}(A)$ is a measurable set, so $\chi_{g^{-1}(A)}$ is a measurable function
-
-Then $k\coloneqq\chi_{g^{-1}(A)} \circ g^{-1}$ isn't measurable since
-
-$$k^{-1}(1) = \qty{ (g^{-1})^{-1}\circ \chi_{g^{-1}(A)} }(1) = g(g^{-1}(A)) = A.$$
-
-is not a measurable set.
+The set $B\coloneqq g\inv(A)$ is contained in $C$, which has measure $0$, so $B$ is Lebesgue measurable and $h\coloneqq\chi_B$ is a Lebesgue measurable function.
+For $y\in[0,2]$, $(h\circ\phi)(y) = 1$ if and only if $g\inv(y)\in g\inv(A)$, that is, $y\in A$.
+Hence $(h\circ\phi)\inv(\theset{1}) = A$ is not Lebesgue measurable, so $h\circ\phi$ is not Lebesgue measurable.
 :::
