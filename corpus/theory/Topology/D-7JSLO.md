@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-7JSLO
 kind: definition
-title: Locally Path-Connected
+title: Locally path-connected space
 classification:
   areas:
   - topology
@@ -14,6 +14,13 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **locally path-connected** iff every point in $X$ admits some path-connected neighborhood.
-Equivalently, $X$ admits a basis of path-connected open subsets.
+A topological space $X$ is \dfn{locally path-connected} if for every $x\in X$ and every [[D-JMRPA|neighborhood]] $U$ of $x$ there exists a [[D-X73EB|path-connected]] open set $V$ with $x\in V\subseteq U$.
+:::
+
+::: {.remark}
+Equivalently, $X$ has a [[D-WKURJ|basis]] consisting of path-connected open sets.
+:::
+
+::: {.concept}
+[@Mun00, §25].
 :::
