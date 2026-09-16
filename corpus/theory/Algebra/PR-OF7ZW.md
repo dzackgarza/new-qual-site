@@ -15,18 +15,24 @@ review: draft
 ---
 
 ::: {.proposition}
-For a linear operator on a vector space of nonzero finite dimension, TFAE:
+Let $k$ be a field, let $V$ be a $k$-vector space with $0<\dim_k V<\infty$, and let $T\colon V\to V$ be $k$-linear.
+Regard $V$ as a $k[x]$-module with $x$ acting by $T$.
+The following are equivalent:
 
-- The minimal polynomial is equal to the characteristic polynomial.
+- The [[D-GK5SF|minimal polynomial]] of $T$ equals the monic [[D-QFYAC|characteristic polynomial]] $\det(x\id_V-T)$.
 
-- The list of invariant factors has length one.
+- The invariant factor decomposition of the $k[x]$-module $V$ has exactly one invariant factor.
 
-- The Rational Canonical Form has a single block.
+- The [[FD-XT6HD|rational canonical form]] of $T$ consists of a single block.
 
-- The operator has a matrix similar to a companion matrix.
+- There is a basis of $V$ in which the matrix of $T$ is a [[D-HJR7M|companion matrix]].
 
-- There exists a *cyclic vector* $\vector v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 0, 1, 2, \cdots} = V.$
+- There exists $v\in V$ with $\spanof_k\theset{T^j v \suchthat j\geq 0} = V$.
+:::
 
-**Not** equivalent: "$T$ has $\dim V$ distinct eigenvalues".
-That is sufficient but not necessary: a single Jordan block of size $\dim V$ has minimal polynomial equal to its characteristic polynomial and only one eigenvalue.
+::: {.example}
+If $T$ has $\dim_k V$ distinct eigenvalues in $k$, then $T$ satisfies these conditions, but the converse fails.
+The characteristic polynomial is then a product of distinct linear factors, each of which divides the minimal polynomial, so the two polynomials are equal.
+For the converse, let $n=\dim_k V\geq 2$ and let $T$ have matrix the Jordan block $J_n(\lambda)$ for some $\lambda\in k$.
+Its minimal and characteristic polynomials are both $(x-\lambda)^n$, but $\lambda$ is its only eigenvalue.
 :::
