@@ -104,7 +104,7 @@ Dividing by $\norm{f+g}_p^{p-1}$ gives $\norm{f+g}_p \leq \norm{f}_p + \norm{g}_
 
 :::
 
-[[PR-2P7FZ]]
+[[PR-2C3SZ]]
 
 ::: {.remark title="Special cases of Young's convolution inequality"}
 For conjugate exponents $p,q$ and $1\leq p\leq\infty$,
