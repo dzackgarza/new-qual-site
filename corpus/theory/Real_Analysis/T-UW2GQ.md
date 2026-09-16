@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-UW2GQ
 kind: theorem
-title: Mean Value Theorem
+title: Mean value theorem
 classification:
   areas:
   - real-analysis
@@ -13,11 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $f: [a, b] \to \RR$ is continuous on a closed interval and differentiable on $(a, b)$, then there exists $\xi \in [a, b]$ such that
-\[
-f(b) - f(a) = f'(\xi)(b-a)
-.\]
-
-
+::: {.theorem}
+Let $a<b$, and let $f\colon[a,b]\to\RR$ be [[D-HHVPT|continuous]] on $[a,b]$ and differentiable on $(a,b)$.
+Then there exists $\xi\in(a,b)$ such that
+$$
+f(b)-f(a)=f'(\xi)(b-a).
+$$
 :::
