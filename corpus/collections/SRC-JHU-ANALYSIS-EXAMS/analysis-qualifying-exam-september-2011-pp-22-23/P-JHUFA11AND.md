@@ -25,8 +25,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be a simply connected bounded domain in $\mathbb C$
-and let $P\in U$. Prove that for every $t\in\mathbb R$
+Let $U$ be a simply connected bounded domain in $\CC$
+and let $P\in U$. Prove that for every $t\in\RR$
 there is a unique holomorphic function $f:U\to U$
 such that $f(P)=P$ and $f'(P)=e^{it}$.
 :::
@@ -36,14 +36,14 @@ such that $f(P)=P$ and $f'(P)=e^{it}$.
 
 ::: {.proof}
 The domain $U$ is nonempty since it contains $P$, and
-is a proper subset of $\mathbb C$ since it is bounded.
-The Riemann mapping theorem gives a biholomorphism
-$\phi:U\to D$, where $D$ is the unit disk, normalized
-by $\phi(P)=0$ [[T-55MPA|Riemann mapping theorem]]. The normalization is obtained,
+is a proper subset of $\CC$ since it is bounded.
+By the [[T-55MPA|Riemann mapping theorem]], there is a biholomorphism
+$\phi:U\to D$, where $D$ is the unit disk. We normalize it
+by $\phi(P)=0$. The normalization is obtained,
 if necessary, by composing a Riemann map with a disk
 automorphism sending the image of $P$ to zero.
 
-For fixed $t\in\mathbb R$, put $\lambda=e^{it}$ and define
+For fixed $t\in\RR$, put $\lambda=e^{it}$ and define
 $$
 f_t(z)=\phi^{-1}\bigl(\lambda\phi(z)\bigr).
 $$
@@ -66,11 +66,11 @@ Then $G(0)=0$, and the chain rule gives
 $$
 G'(0)=\phi'(P)f'(P)(\phi^{-1})'(0)=e^{it}.
 $$
-The [[T-DAETF|Schwarz lemma]] yields $|G(w)|\leq|w|$. Thus
+The [[T-DAETF|Schwarz lemma]] yields $\abs{G(w)}\leq\abs{w}$. Thus
 $H(w)=G(w)/w$ extends holomorphically across zero with
-$H(0)=G'(0)=e^{it}$ and $|H|\leq1$ on $D$.
-It attains modulus one at zero, so the maximum modulus
-principle makes $H$ the constant $e^{it}$ [[T-BYNL5|maximum modulus principle]].
+$H(0)=G'(0)=e^{it}$ and $\abs{H}\leq1$ on $D$.
+It attains modulus one at zero, so the
+[[T-BYNL5|maximum modulus principle]] makes $H$ the constant $e^{it}$.
 Hence $G(w)=e^{it}w$. Undoing the conjugation gives
 $f(z)=\phi^{-1}(e^{it}\phi(z))=f_t(z)$, proving uniqueness.
 :::
