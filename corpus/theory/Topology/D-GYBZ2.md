@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-GYBZ2
 kind: definition
-title: Locally Connected
+title: Locally connected space
 classification:
   areas:
   - topology
@@ -14,6 +14,9 @@ review: draft
 ---
 
 ::: {.definition}
-A space is **locally connected** iff every neighborhood of every point admits a smaller connected neighborhood.
-I.e. for all $x\in X$, for all $N_x \ni x$, there exists a connected set $U \subset X$ with $x\in U$.
+A topological space $X$ is \dfn{locally connected} if for every $x\in X$ and every [[D-JMRPA|neighborhood]] $U$ of $x$ there is a [[D-ZNVPP|connected]] open set $V$ with $x\in V\subseteq U$.
+:::
+
+::: {.concept}
+See [@Mun00, §25].
 :::
