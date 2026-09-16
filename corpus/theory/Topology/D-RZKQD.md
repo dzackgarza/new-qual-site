@@ -25,5 +25,5 @@ the quotient of $SX$ obtained by collapsing the segment $\ts{x_0}\times I$ to a 
 :::
 
 ::: {.remark}
-$SX$ is the union of two copies of the [[D-II4M4|cone]] $CX$ glued along their bases $X\times\ts{0}\cong X$.
+$SX$ is the union of two copies of the [[D-II4M4|cone]] $CX$ $CX=(X\times I)/(X\times\ts{0})$ glued along their copies of $X\times\ts{1}\cong X$.
 :::
