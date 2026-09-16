@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAB
 kind: problem
-title: 'the limit $$ f ( x ) = \operatorname* { l i m } _ { n \to \i'
+title: Monotone convergence for an increasing sequence with bounded integrals
 classification:
   areas:
   - real-analysis
@@ -24,17 +24,17 @@ audit:
   date: 2026-09-09
 ---
 
-2. Let $f _ { 1 } ( x ) \leq f _ { 2 } ( x ) \leq . . . \leq f _ { n } ( x ) \leq . . .$ . on a set A,where the functions $f _ { n }$ are integrable and $\textstyle \int _ { A } f _ { n } ( x ) \ d x \leq M$ for some constant M. Show that the limit
-
-$$
-f ( x ) = \operatorname* { l i m } _ { n \to \infty } f _ { n } ( x )
-$$
-
-exists and is finite almost everywhere on A and that
-
-$$
-\operatorname* { l i m } _ { n  \infty } \int _ { A } f _ { n } ( x ) \ d x = \int _ { A } f ( x ) \ d x \ .
-$$
+::: {.problem}
+Let $f_1(x)\le f_2(x)\le\cdots\le f_n(x)\le\cdots$ on a set $A$, where the functions $f_n$ are integrable and $\int_A f_n(x)\,dx\le M$ for some constant $M$.
+Show that the limit
+\[
+f(x)=\lim_{n\to\infty}f_n(x)
+\]
+exists and is finite almost everywhere on $A$, and that
+\[
+\lim_{n\to\infty}\int_A f_n(x)\,dx=\int_A f(x)\,dx.
+\]
+:::
 
 ::: {.solution}
 Set
