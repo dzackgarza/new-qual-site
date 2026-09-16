@@ -23,32 +23,32 @@ Show that there exists a unique point $a \in D(0,1)$ such that $f(a) = a$.
 :::
 
 ::: {.solution}
-<1>1. Define $g(z) = f(z) - z$.
+<1>1. The function $g(z)=f(z)-z$ has exactly one zero in the unit disk, counted with multiplicity.
 ::: {.proof}
-definition.
+On $|z|=1$ the hypothesis gives
+$$
+|f(z)|<1=|-z|.
+$$
+Both $f$ and $-z$ are holomorphic on the unit disk and continuous on its closure. Therefore the [[T-CJCKL|Rouché theorem]], applied to
+$$
+g(z)=(-z)+f(z),
+$$
+shows that $g$ and $-z$ have the same number of zeros in the disk, counted with multiplicity. The function $-z$ has exactly one zero there, namely the simple zero at $0$. Hence $g$ also has exactly one zero in the disk.
 :::
 
-<1>2. On $\partial D(0,1)$, $|f(\xi)| < 1 = |\xi|$.
+<1>2. The unique zero of $g$ is the unique fixed point of $f$ in the unit disk.
 ::: {.proof}
-hypothesis, and $|\xi| = 1$ on the boundary.
+For $a\in D(0,1)$,
+$$
+g(a)=0
+\quad\Longleftrightarrow\quad
+f(a)=a.
+$$
+By step <1>1 there is exactly one such zero, so there is exactly one fixed point.
 :::
 
-<1>3. Apply Rouché's theorem to $g(z) = f(z) - z$ and $h(z) = -z$ on $D(0,1)$: on $\partial D(0,1)$, $|g(z) - h(z)| = |f(z)| < 1 = |z| = |h(z)|$.
+<1>3. Q.E.D.
 ::: {.proof}
-$g - h = f$, and $|f(z)| < |h(z)| = |z| = 1$ on the boundary.
+Step <1>2 proves the required existence and uniqueness.
 :::
-
-<1>4. Hence $g$ and $h$ have the same number of zeros in $D(0,1)$.
-::: {.proof}
-Rouché's theorem.
-:::
-
-<1>5. $h(z) = -z$ has exactly one zero in $D(0,1)$ (at $z = 0$). Proof: $h(z) = -z$ vanishes exactly when $z = 0$, and $0 \in D(0,1)$; this zero is simple since $h'(0) = -1 \neq 0$.
-
-<1>6. Hence $g(z) = f(z) - z$ has exactly one zero in $D(0,1)$, i.e. there is a unique $a \in D(0,1)$ with $f(a) = a$.
-::: {.proof}
-<1>4 and <1>5.
-:::
-
-<1>7. Q.E.D. Proof: <1>6.
 :::
