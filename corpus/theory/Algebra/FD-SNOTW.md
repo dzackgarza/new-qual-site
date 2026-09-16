@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-SNOTW
 kind: definition
-title: 'Definition: simple ring.'
+title: Simple ring
 prompts:
 - When is a ring simple?
 classification:
@@ -17,5 +17,5 @@ review: draft
 ---
 
 ::: {.definition}
-A ring $R$ is **simple** iff its only two-sided ideals are $(0)$ and $R$.
+A nonzero [[D-GURUB|ring]] $R$ is \dfn{simple} if its only two-sided ideals are $(0)$ and $R$.
 :::

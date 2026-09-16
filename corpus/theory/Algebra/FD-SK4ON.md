@@ -16,8 +16,13 @@ review: draft
 ---
 
 ::: {.definition}
-For $M$ an $R\dash$module,
-$$  
-\mathrm{ann}_R(M) = \theset{r\in R\suchthat \forall m\in M,\, rm=0} \normal R
-.$$
+Let $R$ be a [[D-GURUB|ring]] and $M$ an $R$-module.
+The \dfn{annihilator} of $M$ is
+$$
+\Ann_R(M) \coloneqq \theset{r\in R\st rm=0 \text{ for every } m\in M}.
+$$
+:::
+
+::: {.remark}
+$\Ann_R(M)$ is a two-sided [[D-GOFWL|ideal]] of $R$: it is an additive subgroup, and if $r\in\Ann_R(M)$ and $s\in R$, then $(sr)m=s(rm)=0$ and $(rs)m=r(sm)=0$ for every $m\in M$.
 :::
