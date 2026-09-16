@@ -14,16 +14,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2014 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 10 of the Fall 2014 section, page 73 of UCLA_Solutions.pdf, with its checked-in extraction.
 ---
 
 ::: {.problem}
-Problem 10. Let us introduce a vector space B as follows.
-B “
-
-& %u : CÑ C :u is holomorphic and ĳ C
-|upx`iyq|2e´px2`y2qdxdy ă8
-, . -. Show that B becomes a complete vector space when equipped with the norm
-||u||2 “
-ĳ C
-|upx`iyq|2e´px2`y2qdxdy.
+Let us introduce a vector space $\mathcal{B}$ as follows.
+\[
+\mathcal{B} = \left\{ u : \mathbb{C} \to \mathbb{C} : u \text{ is holomorphic and } \iint_{\mathbb{C}} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy < \infty \right\}.
+\]
+Show that $\mathcal{B}$ becomes a *complete* vector space when equipped with the norm
+\[
+\|u\|^2 = \iint_{\mathbb{C}} |u(x+iy)|^2 e^{-(x^2+y^2)}\,dx\,dy.
+\]
 :::

@@ -14,9 +14,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2014 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 6 of the Fall 2014 section, page 72 of UCLA_Solutions.pdf, with its checked-in extraction.
 ---
 
 ::: {.problem}
-Problem 6. Let X be a Banach space and let X˚ be its dual space.
-Suppose X˚ is separable; show that X is separable (you should assume the Axiom of Choice).
+Let $X$ be a Banach space and let $X^*$ be its dual space. Suppose $X^*$ is separable; show that $X$ is separable (you should assume the Axiom of Choice).
 :::

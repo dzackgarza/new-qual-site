@@ -14,9 +14,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2014 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 9 of the Fall 2014 section, page 73 of UCLA_Solutions.pdf, with its checked-in extraction.
 ---
 
 ::: {.problem}
-Problem 9. Let Ω Ď C be open and connected.
-Suppose pfnq is a sequence of injective holomorphic functions deﬁned on Ω such that fnÑ f locally uniformly in Ω. Show that if f is not constant, then f is also injective in Ω.
+Let $\Omega \subseteq \mathbb{C}$ be open and connected. Suppose $(f_n)$ is a sequence of injective holomorphic functions defined on $\Omega$ such that $f_n \to f$ locally uniformly in $\Omega$. Show that if $f$ is not constant, then $f$ is also injective in $\Omega$.
 :::

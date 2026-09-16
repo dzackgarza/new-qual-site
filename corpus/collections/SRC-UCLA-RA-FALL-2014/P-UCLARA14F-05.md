@@ -14,8 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2014 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 5 of the Fall 2014 section, page 71 of UCLA_Solutions.pdf, with its checked-in extraction.
 ---
 
 ::: {.problem}
-Problem 5. Let φ : r0, 1s Ñ r0, 1s be continuous and let dµ be a Borel probability measure on r0, 1s. Suppose µpφ´1pEqq“ 0 for every Borel set EĎr 0, 1s withµpEq“ 0. Show that there is a Borel measurable function w :r0, 1sÑr 0,8q so that ż f˝φpxqdµpxq “ ż fpyqwpyqdµpyq for all continuous f :r0, 1sÑ R.
+Let $\phi : [0,1] \to [0,1]$ be continuous and let $d\mu$ be a Borel probability measure on $[0,1]$. Suppose $\mu(\phi^{-1}(E)) = 0$ for every Borel set $E \subseteq [0,1]$ with $\mu(E) = 0$. Show that there is a Borel measurable function $w : [0,1] \to [0,\infty)$ so that
+\[
+\int f \circ \phi(x)\,d\mu(x) = \int f(y) w(y)\,d\mu(y)
+\]
+for all continuous $f : [0,1] \to \mathbb{R}$.
 :::

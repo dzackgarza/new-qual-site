@@ -14,8 +14,12 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Transcribed from the retained UCLA Analysis Qualifying Exam Solutions compendium, Fall 2014 section; the official exam PDF is image-only.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 2 of the Fall 2014 section, page 69 of UCLA_Solutions.pdf, with its checked-in extraction.
 ---
 
 ::: {.problem}
-Problem 2. Construct an f P L1pRq so that fpx`yq does not converge almost everywhere to fpxq as yÑ 0. Prove that your f has this property.
+Construct an $f \in L^1(\mathbb{R})$ so that $f(x+y)$ does *not* converge almost everywhere to $f(x)$ as $y \to 0$. Prove that your $f$ has this property.
 :::
