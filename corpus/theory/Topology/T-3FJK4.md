@@ -14,10 +14,11 @@ review: draft
 ---
 
 ::: {.theorem}
-$U\subset X$ for $X$ a **compact** Hausdorff space is closed $\iff$ it is compact.
+Let $X$ be a compact [[D-ZFRV4|Hausdorff space]].
+A subset $U\subseteq X$ is closed if and only if it is compact [@Mun00, Theorems 26.2 and 26.3].
+:::
 
 ::: {.remark}
-Munkres, *Topology*, 2nd ed., Theorem 26.2 (closed in compact $\implies$ compact) and Theorem 26.3 (compact in Hausdorff $\implies$ closed).
-Only Theorem 26.3 needs $X$ Hausdorff; only Theorem 26.2 needs $X$ compact, and without it $\RR$ is closed in $\RR$ and not compact.
-:::
+Closed subsets of compact spaces are compact [@Mun00, Theorem 26.2], and compact subsets of Hausdorff spaces are closed [@Mun00, Theorem 26.3].
+Only the second needs $X$ Hausdorff, and only the first needs $X$ compact: $\RR$ is closed in $\RR$ and not compact.
 :::
