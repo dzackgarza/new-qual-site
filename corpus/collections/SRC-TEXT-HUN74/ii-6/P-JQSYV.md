@@ -150,7 +150,7 @@ P_5\to\operatorname{Aut}(P_3)\cong\ZZ_2,
 which is trivial because $|P_5|=5$; hence $P_5$ normalizes and centralizes
 $P_3$, so again $P_3P_5$ is a subgroup of order $15$. Similarly, if only $P_5$
 is normal, conjugation by $P_3$ on $P_5$ maps a group of order $3$ into
-\operatorname{Aut}(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a
+$\operatorname{Aut}(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a
 subgroup of order $15$.
 
 Call this subgroup $N$. Since $[G:N]=2$, it is normal. Also any group of order

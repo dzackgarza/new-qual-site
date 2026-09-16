@@ -19,7 +19,10 @@ audit:
 ---
 
 ::: problem
-If $f$ is a nonnegative measurable function on $[0, \pi]$ and $\int_0^\pi f(x)^3~dx < \infty$, show that `\begin{align*} \lim_{\alpha\to\infty} \int_{ \theset{x :f(x) > \alpha} } f(x)^2 ~dx=0 .\end{align*}`{=tex}
+If $f$ is a nonnegative measurable function on $[0, \pi]$ and $\int_0^\pi f(x)^3~dx < \infty$, show that
+\[
+\lim_{\alpha\to\infty}\int_{\theset{x:f(x)>\alpha}}f(x)^2\,dx=0.
+\]
 :::
 
 ::: {.solution}
@@ -42,6 +45,6 @@ $\int_0^\pi f^3$ is a fixed finite constant, and $\frac{1}{\alpha} \to 0$.
 
 <1>4. Q.E.D.
 ::: {.proof}
-the integrals in question are nonnegative (f^2 \geq 0) and squeezed between $0$ and a quantity tending to $0$, so the limit is $0$.
+the integrals in question are nonnegative ($f^2\geq0$) and squeezed between $0$ and a quantity tending to $0$, so the limit is $0$.
 :::
 :::

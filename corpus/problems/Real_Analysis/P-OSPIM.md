@@ -20,7 +20,12 @@ audit:
 ---
 
 ::: problem
-a. See \cref{equivalence_of_approximating_measures}
+a. Let $E \subseteq \RR^n$ be bounded.
+   Prove that the following are equivalent:
+
+    1. For any $\epsilon>0$ there exist an open set $G$ and a closed set $F$ such that $F \subseteq E \subseteq G$ and $m(G\sm F) < \epsilon$.
+
+    2. There exist a $G_\delta$ set $V$ and an $F_\sigma$ set $H$ such that $m(V\sm H) = 0$.
 
 b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
 

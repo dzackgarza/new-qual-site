@@ -25,10 +25,9 @@ audit:
 
 ::: problem
 Let $X$ be an LCH space.
-\begin{enumerate}
-\item[(a)] If $\mu$ is a Radon measure on $X$ satisfying $\mu(X) = \infty$, prove that there is a non-negative function $f \in C_0(X)$ satisfying $\int f\, d\mu = \infty$.
-\item[(b)] Prove that every positive linear functional on $C_0(X)$ is bounded.
-\end{enumerate}
+(a) If $\mu$ is a Radon measure on $X$ satisfying $\mu(X) = \infty$, prove that there is a non-negative function $f \in C_0(X)$ satisfying $\int f\, d\mu = \infty$.
+
+(b) Prove that every positive linear functional on $C_0(X)$ is bounded.
 :::
 
 ::: solution

@@ -49,7 +49,7 @@ The region is to the right of $S$, so we have
 The remaining steps are:
 
 - Dilate and rotate to $0<\Im(z) < \pi$ using $z\mapsto i\pi z$.
-- Exponentiate using $z\mapsto e^z$ \to get $\HH$.
+- Exponentiate using $z\mapsto e^z$ to get $\HH$.
 - Apply the Cayley map $z\mapsto {z-i\over z+i}$ to get $\DD$.
 
 **Part 2**:
