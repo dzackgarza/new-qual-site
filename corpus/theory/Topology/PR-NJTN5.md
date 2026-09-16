@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: {.proposition}
-A topology $(X, \tau)$ is the discrete topology iff points $x\in X$ are open.
+Let $(X, \tau)$ be a topological space.
+Then $\tau$ is the discrete topology if and only if $\theset{x}\in\tau$ for every $x\in X$.
 :::
