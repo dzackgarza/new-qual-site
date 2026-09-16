@@ -3,13 +3,21 @@
 from __future__ import annotations
 
 import base64
+import fcntl
+import hashlib
+import io
 import json
+import os
+import platform
 import socket
 import subprocess
+import tarfile
+import tempfile
 import time
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
+from pathlib import Path
 from types import TracebackType
 from typing import Self
 
@@ -84,26 +92,45 @@ def _free_port() -> int:
         return int(listener.getsockname()[1])
 
 
-def _require_pandoc_version() -> None:
-    """Refuse to build on a pandoc too old to mark wikilinks the way we read them.
+# The one Pandoc the compiler runs, pinned by release and digest. Pandoc 3.6 put
+# `wikilink` in a link's title and 3.10 puts it in its classes, which is what the
+# transclusion pass reads; on the older one every `[[card-id]]` stayed an ordinary
+# link and every page transcluded nothing. Resolving `pandoc` from `PATH` made that
+# depend on the caller's shell: a direct `.venv/bin/python` from a shell without
+# `~/.local/bin` reached the host's 3.1.3. The pinned release is fetched once into
+# the user cache and used by absolute path, so no invocation route can differ.
+PANDOC_RELEASE = "3.10.2"
+PANDOC_ARCHIVE_SHA256 = "c7edd535941c48be6a362081a748272837de81ae11777202d9c341d3d8261c9a"
+PANDOC_ARCHIVE_URL = f"https://github.com/jgm/pandoc/releases/download/{PANDOC_RELEASE}/pandoc-{PANDOC_RELEASE}-linux-amd64.tar.gz"
+PANDOC_HOME = Path.home() / ".cache" / "qualc" / f"pandoc-{PANDOC_RELEASE}"
 
-    Pandoc 3.6 puts `wikilink` in a link's title; 3.10 puts it in the link's
-    classes, which is what the transclusion pass reads. On the older one every
-    `[[card-id]]` stays an ordinary link and every page transcludes nothing --
-    silently, because an unrecognised wikilink is still a valid link. That
-    produced a green build whose wiki pages had no statements on them.
-    """
-    reported = subprocess.run(["pandoc", "--version"], check=True, capture_output=True, text=True).stdout
-    version = tuple(int(part) for part in reported.split()[1].split(".")[:2])
-    if version < PandocServer.MINIMUM_PANDOC:
-        wanted = ".".join(str(part) for part in PandocServer.MINIMUM_PANDOC)
-        raise PandocBatchError(f"pandoc {wanted} or newer is required; found {reported.splitlines()[0]}")
+
+def pandoc_executable() -> Path:
+    """The pinned Pandoc binary, fetched and digest-checked on first use."""
+    executable = PANDOC_HOME / "bin" / "pandoc"
+    if executable.is_file():
+        return executable
+    if platform.system() != "Linux" or platform.machine() != "x86_64":
+        raise PandocBatchError(f"the pinned Pandoc {PANDOC_RELEASE} is published here for linux-amd64 only, not {platform.system()}-{platform.machine()}")
+    PANDOC_HOME.parent.mkdir(parents=True, exist_ok=True)
+    with open(PANDOC_HOME.parent / f"pandoc-{PANDOC_RELEASE}.lock", "w") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        if executable.is_file():
+            return executable
+        with urllib.request.urlopen(PANDOC_ARCHIVE_URL, timeout=SERVER_REQUEST_TIMEOUT_SECONDS) as response:
+            archive = response.read()
+        digest = hashlib.sha256(archive).hexdigest()
+        if digest != PANDOC_ARCHIVE_SHA256:
+            raise PandocBatchError(f"{PANDOC_ARCHIVE_URL} has sha256 {digest}, expected {PANDOC_ARCHIVE_SHA256}")
+        with tempfile.TemporaryDirectory(dir=PANDOC_HOME.parent) as staging:
+            with tarfile.open(fileobj=io.BytesIO(archive), mode="r:gz") as bundle:
+                bundle.extractall(staging, filter="data")
+            os.replace(Path(staging) / f"pandoc-{PANDOC_RELEASE}", PANDOC_HOME)
+    return executable
 
 
 class PandocServer:
     """Own one native Pandoc server for a compiler invocation."""
-
-    MINIMUM_PANDOC = (3, 10)
 
     def __init__(self) -> None:
         self._process: subprocess.Popen[str] | None = None
@@ -111,15 +138,15 @@ class PandocServer:
         self._abbreviations: str | None = None
 
     def __enter__(self) -> Self:
-        _require_pandoc_version()
+        pandoc = str(pandoc_executable())
         abbreviations = subprocess.run(
-            ["pandoc", "--print-default-data-file=abbreviations"],
+            [pandoc, "--print-default-data-file=abbreviations"],
             check=True,
             capture_output=True,
         ).stdout
         port = _free_port()
         process = subprocess.Popen(
-            ["pandoc", "server", "--port", str(port), "--timeout", "30"],
+            [pandoc, "server", "--port", str(port), "--timeout", "30"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,

@@ -37,6 +37,7 @@ from .pandoc_batch import (
     PandocFailure,
     PandocResult,
     PandocServer,
+    pandoc_executable,
 )
 from .publication import (
     PublicationManifest,
@@ -281,7 +282,7 @@ def _compile_tikzcd_block(tex_source: str) -> str:
     """
     result = subprocess.run(
         [
-            "pandoc",
+            str(pandoc_executable()),
             "--from",
             "markdown",
             "--to",
