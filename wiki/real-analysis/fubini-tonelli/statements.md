@@ -26,8 +26,6 @@ For $f\in L^1(\mu\times\nu)$, the sections $f(x,\wait)$ are in $L^1(\nu)$ for $\
 
 [[T-4GPEF]]
 
-[[FT-T7OAO]]
-
 [[T-X7XZX]]
 
 [[FT-H6AWV]] [[FT-VHK2H]]

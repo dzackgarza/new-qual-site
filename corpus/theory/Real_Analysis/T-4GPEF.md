@@ -3,6 +3,8 @@ schema: qual/card@1
 id: T-4GPEF
 kind: theorem
 title: Fubini's theorem for integrable functions
+prompts:
+- State Fubini's theorem.
 classification:
   areas:
   - real-analysis
@@ -28,4 +30,9 @@ Then:
   and the same holds with the roles of $x$ and $y$ exchanged.
 
 Moreover, if $E\subseteq\RR^{n}\times\RR^m$ is [[D-MDJII|Lebesgue measurable]], then for almost every $x\in\RR^n$ the slice $E_x\coloneqq\theset{y\in\RR^m \suchthat (x, y) \in E}$ is Lebesgue measurable.
+:::
+
+::: {.remark}
+The hypothesis is $f$ integrable on $\RR^{n+m}$; $f$ may take values of both signs.
+[[FT-4JRQX|Tonelli's theorem]] instead assumes $f\geq0$ measurable, with no integrability hypothesis.
 :::
