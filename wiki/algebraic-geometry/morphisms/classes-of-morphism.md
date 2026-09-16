@@ -56,3 +56,7 @@ Stability under base change is what turns a property of a morphism into a proper
 ## Locality of properties of morphisms
 
 [[D-MORLOCAL]]
+
+## Cancellation
+
+[[PR-MORCANCEL]]
