@@ -61,7 +61,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed MinerU Flash or Mistral OCR extraction (or an already-retained extraction with established provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
   Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
 
-- **`math-defect-repair`**. **Needs:** none.
+- **`math-defect-repair`**. **Closed 2026-09-16.** `COMPLAINTS.md` holds no mathematical entry except the ag-notes migration entry, whose worklist is the `ag-notes-migration` node; Queue H lists only that entry. Review-crawl issues #85, #88, #91 and #92 are closed with a disposition per candidate. The last statement repairs are `a85f9c3ae`, `1d001bcea`, `c142db229`, `4ab358232` and `923a2ce1a`. **Needs:** none.
   Correct or resolve every recorded incorrect mathematical statement, proof, title or source transcription: the mathematical entries in [COMPLAINTS.md](COMPLAINTS.md#mathematical-issues-and-source-questions), the mathematical items of [`queues/H-complaint-defects.md`](queues/H-complaint-defects.md), and mathematical-error candidates on the open review-crawl issues.
   Read each entry, then the card and its source.
   A defect already repaired is resolved by removing its entry with the evidence, as `COMPLAINTS.md` prescribes; an open defect is repaired against the source, or recorded on the card as an erratum with its counterexample and corrected hypotheses when the source itself is false.
@@ -78,7 +78,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   Repair the observed tooling defects that let broken content pass or misrender: inline `\dfn{term}` renders as a styled `<dfn>` element instead of being dropped; issue #87 (undefined macros in authored prose pass `just check`); issue #89 (`qualc check` stops at the first error); card validation rejects duplicate YAML mapping keys; authoring commands use the supported Pandoc rather than the host one; the review crawler covers every registered area, including `algebraic-geometry`; and `just commit-card` refuses to run from a secondary worktree, as `QUAL-09` requires.
   **Acceptance:** each defect is reproduced by a failing test first and fixed at its owner, and the corresponding issues and complaint entries are closed.
 
-- **`complaints-clearance`**. **Needs:** none.
+- **`complaints-clearance`**. **Closed 2026-09-16.** The host Pandoc entry is retired in `03edd0510` and the MinerU Flash entry in `cbabf2aec`; Queue H no longer lists MinerU Flash. The one remaining entry, ag-notes migration, is repaired under the `ag-notes-migration` node, which also precedes `publication-milestone`. **Needs:** none.
   Every entry in [COMPLAINTS.md](COMPLAINTS.md) is repaired at its owner or removed because it is not a defect in this repository, as that file prescribes.
   **Acceptance:** `COMPLAINTS.md` holds no entry observed before the milestone, and Queue H is empty.
 
