@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-OQO2U
 kind: definition
-title: 'Definition: separable'
+title: Separable space
 prompts:
 - What does it mean for a space to be separable?
 classification:
@@ -18,5 +18,5 @@ review: draft
 ---
 
 ::: {.definition}
-Contains a countable dense subset
+A topological space $X$ is \dfn{separable} if it contains a countable [[D-KJBAK|dense]] subset.
 :::
