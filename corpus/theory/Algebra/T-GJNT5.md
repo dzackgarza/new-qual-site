@@ -15,7 +15,7 @@ review: draft
 
 ::: {.theorem}
 Let $G$ be a finite group and $H \leq G$ a subgroup.
-Then $\abs H$ divides $\abs G$, and $[G:H] = \abs G/ \abs H$.
+Then $\abs H$ divides $\abs G$, and $[G:H] = \abs G/ \abs H$ [@DF04, §3.2, Theorem 8].
 :::
 
 ::: {.proof}
