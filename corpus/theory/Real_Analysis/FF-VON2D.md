@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-VON2D
 kind: fact
-title: Baire space
+title: Baire spaces
 prompts:
 - What is a Baire space?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.fact}
-$X$ is a Baire space $\iff$ whenever $\left\{{U_n}\right\}$ is a *countable* collection of open dense subsets of $X$, then their intersection $\cap U_n$ is again dense.
+A topological space $X$ is a [[FD-WHWSQ|Baire space]] if and only if for every countable family $(U_n)_{n\geq 1}$ of open [[FD-BA2WU|dense]] subsets of $X$, the intersection $\bigcap_{n\geq 1} U_n$ is dense in $X$.
 :::

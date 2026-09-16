@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.fact}
-A subset is *first category* $\iff$ it is countable union of nowhere dense sets, *second category* otherwise.
+Let $X$ be a topological space and $A\subseteq X$.
+Then $A$ is [[FD-JGBSF|of first category]] in $X$ if and only if $A$ is a countable union of [[D-2MJRE|nowhere dense]] subsets of $X$, and [[FD-JGBSF|of second category]] in $X$ otherwise.
 :::
