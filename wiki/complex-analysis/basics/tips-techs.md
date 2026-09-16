@@ -5,7 +5,7 @@ title: Techniques
 
 # Techniques
 
-> A great deal of content borrowed from [Chris Eur's complex analysis notes (Stanford)](https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf).
+Much of the notation and many of the results on this page follow [@Eur15].
 
 ## Notation
 
