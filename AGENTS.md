@@ -7,14 +7,13 @@ Apply `QUAL-05` when a problem is encountered, including outside the selected ca
 Record the evidence before leaving that work; logging does not complete a repair.
 These documents apply to every stream working in the clone.
 
-## Owner pause — 2026-09-16
+## Owner resume — 2026-09-16
 
-The repository owner has paused this workstream. Do not start, select, continue,
-revive, wake, route, or push new work while this pause stands. If a turn was already
-mid-unit when the pause arrived, bank only that coherent unit and stop before selecting
-another. Preserve the existing dirty/shared tree. Only a later explicit owner instruction
-resumes this repository; recurrence of an older scheduled continuation does not supersede
-the pause.
+The repository owner explicitly resumed this workstream later on 2026-09-16. The
+earlier owner pause is superseded. Resume the ordinary repository execution DAG under
+`TODO.md`, preserving the existing dirty/shared tree and the one-stream-per-repository
+rule. Only a later explicit owner stop supersedes this resume; recurrence of an older
+scheduled pause does not.
 
 <!-- agent-memory:start -->
 # Agent memory
