@@ -28,6 +28,6 @@ source:
     year: 2018
 ---
 
-::: remark
-UNL Math 825/826 qualifying exam, May 31, 2018. The paper is `assets/attachments/Day_10_May_2018_Qual.pdf`, same series as the Avery Hall 825/826 paper of May 26, 2016. UGA Spring 2018 is the departmental Quals paper headed January 2018 (`SRC-UGA-RA-SPRING-2018`). The list follows the order on the UNL paper.
+::: {.remark}
+UNL Math 825/826 qualifying exam, May 31, 2018, in the same series as the [[SRC-UNL-RA-SUMMER-2016|Math 825/826 exam of May 26, 2016]]. It is a different exam from the [[SRC-UGA-RA-SPRING-2018|UGA real analysis exam headed January 2018]].
 :::
