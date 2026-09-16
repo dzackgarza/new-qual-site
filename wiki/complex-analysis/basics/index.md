@@ -5,18 +5,16 @@ order: 12
 
 # Background and reference
 
-The undergraduate layer, and the reference tables the rest of the subject draws on.
+- [[tips-techs|Techniques]]: notation, the principal theorems, and criteria for holomorphy, constancy, singularities, zeros, and estimates.
 
-- [[tips-techs|Info / Tips / Techniques]], the working list of named theorems.
+- [[precalculus|Precalculus preliminaries]]: conic sections, parameterizations, and trigonometric values.
 
-- [[precalculus|Precalculus Preliminaries]].
+- [[calculus-preliminaries|Calculus preliminaries]]: the contraction principle, the implicit and inverse function theorems, line integrals, and convergence of series and functions.
 
-- [[calculus-preliminaries|Calculus Preliminaries]].
+- [[series-reference|Series reference]]: factorial notation, the standard power series, finite sums, and inversion of power series.
 
-- [[series-reference|Series: Reference]], the standard series and the factorial notation.
+- [[complex-arithmetic|Complex arithmetic]]: problems on complex arithmetic and holomorphy, and algebraic identities.
 
-- [[complex-arithmetic|Complex Arithmetic]], the problem sets.
+- [[analytic-nt|Summation by parts and Abel's theorem]]: Dirichlet's test, Abel's theorem, and summation by parts.
 
-- [[analytic-nt|Analytic Number Theory Faves]], the $\zeta$ and $L\dash$function asides.
-
-Holomorphy itself is [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
+Holomorphic functions are treated in [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
