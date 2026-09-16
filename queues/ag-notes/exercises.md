@@ -11,7 +11,7 @@ Target card IDs resolve beneath `corpus/collections/`. A retained error or unfin
 | `500_Extra Problems/Gathmann Exercises/2020-10-06.html` | migrated | All statements and the local-ring reminder survive in `P-AGXGATHLOCALRING`, `P-AGXGATHLOCALSTALK`, `P-AGXGATHSECSTALKS`, `P-AGXGATHSTALKSUBVAR`, `P-AGXGATHSTALKRESTR`. The source supplies no worked solutions. |
 | `500_Extra Problems/Gathmann Exercises/2020-10-26.html` | migrated | Problem Set 5: all statements and the partial pullback argument -> `P-AGXGATHPULLBACK`, `P-AGXGATHRINGEDISO`, `P-AGXGATHEXTENDP1`, `P-AGXGATHAUTP1`, `P-AGXGATHGLOBALSEC`. The source answers "true" to part a after proving only surjective $\Rightarrow$ injective; erratum remark on `P-AGXGATHPULLBACK` gives the $V(xy-1) \to \mathbb{A}^1$ counterexample to the converse and the dominance criterion (889b59d87). The source has no further arguments. |
 | `500_Extra Problems/Hartshorne Exercises/AG HW1.html` | migrated | This is the statement-only compilation of Gathmann problem sets 1–5. Each statement and the interpolation/local-ring hints are present in the target cards listed above. It contains no additional solutions. |
-| `500_Extra Problems/Hartshorne Exercises/AG HW2.html` | partial | The sheaf and scheme problems and their written arguments survive in `SRC-AG-HOMEWORK/P-AGXHW*.md`. The naturality, stalk-exactness and diagram-chase figures in global sections are absent from `P-AGXHWGLOBALSECEX`; the support pushforward figure is absent from `P-AGXHWSUPPORT`. The exponential sequence and reduction factorization are reconstructed in target mathematical source. Preserve/reconstruct the remaining diagram content from source quiver links. The final bare equations and category-theory recollections have separate source-repair/retained dispositions below. |
+| `500_Extra Problems/Hartshorne Exercises/AG HW2.html` | migrated | The sheaf and scheme problems and their written arguments survive in `SRC-AG-HOMEWORK/P-AGXHW*.md`. The four quiver diagrams (source lines 1047, 1099, 1199, 1299) are decoded from their `q=` payloads and carried as tikzcd (5c59b4063): the morphism-of-sheaves naturality square, the $\xi$/$\xi_X$/$\xi_p$ stalk ladder and the colored image-kernel chase in `P-AGXHWGLOBALSECEX`, and the skyscraper pushforward square in `P-AGXHWSUPPORT`. Source label slips corrected, not transcribed: $f_U$/$f_V$ swapped between the rows of the naturality square, and the pushforward arrow labelled $q^*$ (the card uses $q_*$ throughout). The exponential sequence and reduction factorization are already editable target source. The closing recollections and bare equations have the dispositions below. |
 | `500_Extra Problems/Misc Problems.html` | migrated | The rationality of projective-space products and both coordinate maps survive in `SRC-AGX-MISC-AG-PROBLEMS/P-AGXMISCPRODRATIONAL.md`; the target corrects the final y-index from n to m. |
 | `500_Extra Problems/Rising Sea Exercises/sections/2020-06-14.html` | migrated | Exercise 1.3H and the full unfinished tensor right-exactness argument survive in `SRC-VAKIL-RISINGSEA/P-AGXVAKILTENSORRE.md`, including the quotient diagram and the warning against termwise reasoning in a tensor sum; the target corrects several f/g slips. Erratum remark (`QUAL-08`, 29724a504): the quotient map $i$ is a surjection, not an injection; image elements are sums of $f(a)\otimes n$; the isomorphism gives equality of kernel and image; the bilinearity left as "?" is stated; the opening Hom-tensor question is answered. |
 | `500_Extra Problems/Rising Sea Exercises/sections/2020-06-25.html` | migrated | Exercises 1.3K, L, P, Q and their diagrams/partial arguments survive in `P-AGXVAKILBASECHANGE`, `P-AGXVAKILLOCTENSOR`, `P-AGXVAKILFIBERTERM`, `P-AGXVAKILPASTECART`. Erratum remarks (`QUAL-08`, 29724a504): K — false tensor-sum formula, multiplication well-definedness and unfinished distributivity; L — "units" of a module replaced by $s$ acting bijectively, undefined $\psi$, well-definedness and the missing inverse $m/s \mapsto (1/s)\otimes m$; P — $h_0 h_1 = \mathrm{id}$ needs the uniqueness clauses; Q — the top-square compatibility and the uniqueness of $R \to U$. |
@@ -24,20 +24,17 @@ Target card IDs resolve beneath `corpus/collections/`. A retained error or unfin
 
 ## AG HW2 figures
 
-The HTML stores these as `tikzcd/<filename>` relative references.
-Each is followed by an editable `https://q.uiver.app/?q=...` link in the source HTML.
+The HTML stores these as `tikzcd/<filename>` relative references, each followed by an editable `https://q.uiver.app/?q=...` link.
+All six SVG payloads are absent from the deployed snapshot (its only SVG is `favicon.svg`); the diagrams are reconstructed from the quiver payloads.
 
 | Source locator | SVG filename | Target state |
 | --- | --- | --- |
-| Global sections, initial naturality data | `48ff274935cacf55d4f5221f48e3393907d8cb0e.svg` | Figure absent; prose only. |
-| Global sections, exactness on stalks | `63658d276fec2b07985c4c8e29a9cfdfd72adc45.svg` | Figure absent; prose only. |
-| Global sections, image-kernel diagram chase | `4e19f8ed8851e48a1d8ca0e60bef0b90b0fa7df3.svg` | Figure absent; prose only. |
+| Global sections, initial naturality data (quiver line 1047) | `48ff274935cacf55d4f5221f48e3393907d8cb0e.svg` | tikzcd in `P-AGXHWGLOBALSECEX` (5c59b4063). |
+| Global sections, exactness on stalks (line 1099) | `63658d276fec2b07985c4c8e29a9cfdfd72adc45.svg` | tikzcd in `P-AGXHWGLOBALSECEX` (5c59b4063). |
+| Global sections, image-kernel diagram chase (line 1199) | `4e19f8ed8851e48a1d8ca0e60bef0b90b0fa7df3.svg` | tikzcd in `P-AGXHWGLOBALSECEX` (5c59b4063). |
 | Global sections, exponential sequence | `793d426896199bb95f464972ed52ef7091f0787d.svg` | Target writes the group, sheaf and global-sections sequences as equations. |
-| Support, skyscraper pushforward | `50f83acd8b5c63871c6f50f4c3e9e4a58846863e.svg` | Figure absent; construction described in prose. |
+| Support, skyscraper pushforward (line 1299) | `50f83acd8b5c63871c6f50f4c3e9e4a58846863e.svg` | tikzcd in `P-AGXHWSUPPORT` (5c59b4063). |
 | Reduction, universal factorization | `4580277378aeac25df7e8aa375057cbd5b434e8d.svg` | Target contains editable TikZ factorization. |
-
-All six SVG payloads are absent from the deployed snapshot (its only SVG is `favicon.svg`). The AG HW2 figure recovery unit is **source-repair**. Recover the missing diagrams from the complete `q.uiver.app` URLs in `500_Extra Problems/Hartshorne Exercises/AG HW2.html` at lines 1047, 1099, 1199 and 1299, immediately after the corresponding `src` refs above.
-The exponential and reduction diagrams have equivalent editable mathematical content in the target; their missing source SVG bytes do not imply a missing mathematical construction.
 
 ## Hartshorne I–II
 
@@ -82,7 +79,7 @@ Each absent SVG listed above has a surviving complete quiver URL in the named HT
 
 ### AG HW2 closing recollections
 
-The useful image-presheaf observation survives in `corpus/theory/Algebraic_Geometry/D-A7LCT.md`. The right-adjoint/left-adjoint limit statements and Hom exactness survive in `T-DEFRAPL.md`. Filtered-colimit exactness and its use for stalks survive in `P-AGH212STALKEXACT.md`. These do not require duplicate cards.
+The useful image-presheaf observation survives in `corpus/theory/Algebraic_Geometry/D-A7LCT.md`. The right-adjoint/left-adjoint limit statements survive, correctly oriented, in `T-DEFRAPL.md`. Filtered-colimit exactness and its use for stalks survive in `P-AGH212STALKEXACT.md`. These do not require duplicate cards.
 
-The remaining tail is a **source-repair** unit: the unqualified claim about finite limits in “most categories”, the wrongly typed Hom functor into C, the false right-adjoints/colimits sentence, and the sheafification/exactness recollection need correction and explicit disposition.
-The repeated equations `x^2-y^q=1`, `x^p-y^2=1` have no question, hypotheses or explanation in this source; retain them as an unresolved source fragment, not an invented exercise.
+The remaining sentences are not carried, for these reasons: "finite limits commute with filtered colimits in most categories" is unqualified (it holds in sets, abelian groups and module categories, which is the case the stalk card uses); "right adjoints preserve colimits" is false, right adjoints preserve limits (`T-DEFRAPL`); $\operatorname{Hom}(-,-)$ is typed into $\mathsf{C}$ but lands in sets (or abelian groups); and "sheafification is left adjoint to the forgetful functor, so right exact, so preserves colimits" inverts the inference (a left adjoint preserves colimits, hence is right exact) and understates the fact that sheafification is exact.
+The repeated equations `x^2-y^q=1`, `x^p-y^2=1` have no question, hypotheses or explanation in this source; they stay here as an unresolved source fragment, not an invented exercise.
