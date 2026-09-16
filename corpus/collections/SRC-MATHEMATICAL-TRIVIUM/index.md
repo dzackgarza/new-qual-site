@@ -517,8 +517,6 @@ source:
       comment: Problem 33
 ---
 
-::: remark
-The deterministic source contains 243 numbered problem positions in six subject sections: 48 Linear Algebra, 62 Real Analysis, 34 Complex Analysis, 15 Variational Principle, 51 Differential Equations, and 33 Probability.
-Queue E's earlier heuristic count of 249 is not used.
-Figure-dependent and extractor-damaged positions are retained with explicit audit gaps rather than reconstructed from model inference.
+::: {.remark}
+The source contains 243 numbered problems in six sections: Linear Algebra (48), Real Analysis (62), Complex Analysis (34), Variational Principle (15), Differential Equations (51), and Probability (33).
 :::
