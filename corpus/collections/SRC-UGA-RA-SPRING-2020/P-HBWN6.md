@@ -23,6 +23,7 @@ audit:
   note: Reordered the argument so measurability and Tonelli are established before any iterated-integral computation.
 ---
 
+::: {.problem}
 Let $f, g\in L^1(\RR)$. 
 Argue that $H(x, y) \definedas f(y) g(x-y)$ defines a function in $L^1(\RR^2)$ and deduce from this fact that
 \[
@@ -32,7 +33,7 @@ defines a function in $L^1(\RR)$ that satisfies
 \[
 \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1
 .\]
-
+:::
 
 :::{.strategy}
 Just do it! 

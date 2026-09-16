@@ -23,6 +23,7 @@ audit:
   note: Replaced the incomplete Radon-Nikodym detour by the direct simple-function approximation and level-set proofs.
 ---
 
+::: {.problem}
 a. 
 Let $\mu$ be a measure on a measurable space $(X, \mathcal M)$ and $f$ a positive measurable function.
   
@@ -42,6 +43,7 @@ Let $E \subset \RR$ be a measurable set such that
 \int_{E} x^{2} ~d m=0.
 \]
 Show that $m(E) = 0$.
+:::
 
 :::{.concept}
 \envlist

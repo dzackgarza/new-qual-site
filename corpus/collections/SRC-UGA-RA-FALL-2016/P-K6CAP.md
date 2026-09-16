@@ -22,10 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $f, g \in L^2(\RR)$. Show that
 \[
 \lim _{n \to \infty} \int _{\RR} f(x) g(x+n) \,dx = 0
 \]
+:::
 
 :::{.concept}
 \envlist

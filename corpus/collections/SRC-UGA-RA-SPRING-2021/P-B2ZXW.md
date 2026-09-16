@@ -23,11 +23,13 @@ audit:
   note: Replaced the legacy tail proof, which contained false equalities, reversed inequality labels, and sign inconsistencies, by a compact-support approximation argument.
 ---
 
+::: {.problem}
 Let $f, g$ be Lebesgue integrable on $\RR$ and let $g_n(x) \da g(x- n)$.
 Prove that
 \[
 \lim_{n\to \infty } \norm{f + g_n}_1 = \norm{f}_1 + \norm{g}_1
 .\]
+:::
 
 :::{.concept}
 \envlist

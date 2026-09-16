@@ -24,6 +24,7 @@ audit:
   note: Replaced invalid tail estimates and monotonicity inequalities, and repaired the part (c) counterexample at the endpoint x=1.
 ---
 
+::: {.problem}
 a. Prove that if $f\in L^1(\RR)$ then
 \[
 \lim_{N\to \infty} \int _{\abs{x} \geq N} \abs{f(x)} \, dx = 0
@@ -33,6 +34,7 @@ and demonstrate that it is not necessarily the case that $f(x) \to 0$ as $\abs{x
 b. Prove that if $f\in L^1([1, \infty))$ and is decreasing, then $\lim_{x\to\infty}f(x) =0$ and in fact $\lim_{x\to \infty} xf(x) = 0$.
 
 c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf(x) = 0$, does this ensure that $f\in L^1([1, \infty))$?
+:::
 
 :::{.concept}
 \envlist

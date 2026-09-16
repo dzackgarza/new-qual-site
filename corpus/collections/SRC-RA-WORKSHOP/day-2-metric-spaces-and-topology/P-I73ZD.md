@@ -18,6 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
+::: {.problem}
 Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define
 $d_{M \times N} \colon (M \times N) \times (M \times N) \to \mathbb{R}$
 by
@@ -28,6 +29,7 @@ Prove that $(M \times N, d_{M \times N})$ is a metric space.
 Let $S \subseteq M$ and $T \subseteq N$ be compact sets in
 $(M, d_M)$ and $(N, d_N)$, respectively. Prove that $S \times T$
 is a compact set in $(M \times N, d_{M \times N})$.
+:::
 
 :::{.proof}
 *Proof.* To prove that $(M \times N, d_{M \times N})$ is a

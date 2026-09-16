@@ -22,6 +22,7 @@ audit:
   date: 2026-09-04
 ---
 
+::: {.problem}
 Suppose $F \subseteq \RR$ is closed with $m(F^c) < \infty$ and let \( \delta(x) \da d(x, F) \) and
 \[
 I_F(x) \da \int_\RR { \delta(y) \over \abs{x-y}^2 } \dy
@@ -32,7 +33,7 @@ a. Show that \( \delta \) is continuous.
 b. Show that if $x\in F^c$ then $I_F(x) = \infty$.
 
 c. Show that $I_F(x) < \infty$ for almost every $x\in F$.
-
+:::
 
 :::{.solution}
 <1>1. The function $\delta(x)=d(x,F)$ is $1$-Lipschitz, hence continuous.

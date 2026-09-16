@@ -22,6 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $(X, \mathcal M, \mu)$ be a measure space and suppose $\theset{E_n} \subset \mathcal M$ satisfies
 \[
 \lim _{n \rightarrow \infty} \mu\left(X \backslash E_{n}\right)=0.
@@ -33,6 +34,7 @@ G \definedas \theset{x\in X \suchthat x\in E_n \text{ for only finitely many  } 
 \]
 
 Show that $G \in \mathcal M$ and $\mu(G) = 0$.
+:::
 
 ::: solution
 

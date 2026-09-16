@@ -21,6 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $f(x) = x^2$ and $E \subset [0, \infty) \definedas \RR^+$.
 
 1. Show that
@@ -35,6 +36,7 @@ m^*(E) = 0 \iff m^*(f(E)) = 0.
 E &\mapsto f(E)
 \]
   is a bijection from the class of Lebesgue measurable sets of $[0, \infty)$ to itself.
+:::
 
 ::: solution
 <1>1. Show that null sets are preserved by $x\mapsto x^2$.

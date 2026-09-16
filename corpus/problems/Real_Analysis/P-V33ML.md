@@ -13,10 +13,12 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $f:\\RR^n\\to\\RR$ be measurable. Show that
 \[
 \int_{\RR^n} \abs{ f} = \int_0^{\infty } m(A_t)\dt && A_t \da \ts{x\in \RR^n \st \abs{f(x)} > t}
 .\]
+:::
 
 :::{.solution}
 For every $x$, the nonnegative function $t\mapsto \mathbf{1}_{A_t}(x)$ is the indicator of

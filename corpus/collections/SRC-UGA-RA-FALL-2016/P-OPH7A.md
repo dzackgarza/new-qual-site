@@ -22,6 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $f,g\in L^1([a,b])$ be real-valued with
 $$
 \int_{a}^{b} f(x) ~d x=\int_{a}^{b} g(x) ~d x.
@@ -33,6 +34,7 @@ Show that either
 \[
 \int _{E} f(x) \, dx > \int _{E} g(x) \, dx
 \]
+:::
 
 :::{.concept}
 \envlist
