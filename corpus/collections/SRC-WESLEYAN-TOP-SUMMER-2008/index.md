@@ -30,7 +30,3 @@ source:
   - {id: P-WESTOP08-II3, comment: Part II Problem 3}
   - {id: P-WESTOP08-II4, comment: Part II Problem 4}
 ---
-
-::: remark
-The seven top-level source problems are represented in exam order. The first two are exact canonical theorem exercises; the remaining five preserve their multipart exam obligations as single cards.
-:::
