@@ -29,8 +29,3 @@ source:
   - id: P-WESCA15-4
     comment: Complex Analysis, problem 4
 ---
-
-::: remark
-The retained packet says the complex-analysis section has eight problems, but only Problems 1–4 are present in the deterministic eight-page source extraction.
-Problems 5–8 are not invented or inferred.
-:::
