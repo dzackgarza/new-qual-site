@@ -5,6 +5,7 @@ kind: definition
 title: Normal field extension
 prompts:
 - What does it mean for a field extension $L/K$ to be normal?
+- What does an irreducible $p(x) \in K[x]$ do in a normal extension $L/K$?
 classification:
   areas:
   - algebra

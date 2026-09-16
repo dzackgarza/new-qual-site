@@ -13,7 +13,7 @@ A finite extension $L/K$ is normal if and only if $L$ is the [[FD-LHTRR|splittin
 
 [[D-LZTAK]]
 
-[[FD-TP2IZ]] [[FD-JJFZ3]]
+[[FD-JJFZ3]]
 
 [[FD-LHTRR]]
 
