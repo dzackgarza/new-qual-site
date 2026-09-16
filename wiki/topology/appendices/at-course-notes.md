@@ -2,45 +2,45 @@
 order: 200
 ---
 
-# Summary of Standard Topics
+# Summary of standard topics
 
 * Algebraic topology topics:
 
   * Classification of compact surfaces
 
-  * Euler characteristic
+  * [[D-QK5BM|Euler characteristic]]
 
-  * Connect sum
+  * Connected sum
 
   * Homology and cohomology groups
 
-  * Fundamental group
+  * [[D-YD6DH|Fundamental group]]
 
-  * Singular/cellular/simplicial homology
+  * [[D-6BUWA|Singular]], [[D-A3PUW|cellular]], and simplicial homology
 
-  * Mayer-Vietoris long exact sequences for homology and cohomology
+  * [[D-FAIJX|Mayer--Vietoris sequences]] for homology and cohomology
 
   * Diagram chasing
 
-  * Degree of maps from $S^n \to S^n$
+  * [[D-XC53X|Degree]] of maps $S^n \to S^n$
 
-  * Orientability, compactness
+  * [[D-K5MLW|Orientability]] and [[D-EILKJ|compactness]]
 
-  * Top-level homology and cohomology
+  * Top homology and cohomology of manifolds
 
   * Reduced homology and cohomology
 
   * Relative homology
 
-  * Homotopy and homotopy invariance
+  * [[D-SOVXO|Homotopy]] and homotopy invariance
 
-  * Deformation retract
+  * [[D-6UHU7|Deformation retracts]]
 
-  * Retract
+  * [[D-NCLVD|Retracts]]
 
-  * Excision
+  * [[D-455S6|Excision]]
 
-  * Kunneth formula
+  * Künneth formula
 
   * Factoring maps
 
@@ -56,26 +56,26 @@ order: 200
 
   * de Rham theorem
 
-  * Seifert-van Kampen theorem
+  * Seifert--van Kampen theorem
 
 * Covering space theory topics:
 
-  * Covering maps
+  * [[D-ANO2D|Covering maps]]
 
   * Free actions
 
-  * Properly discontinuous action
+  * [[D-2PNEG|Properly discontinuous actions]]
 
-  * Universal cover
+  * [[D-BX3WD|Universal cover]]
 
-  * Correspondence between covering spaces and subgroups of the fundamental group of the base.
+  * Correspondence between covering spaces and subgroups of the fundamental group of the base
 
-  * Lifting paths
+  * [[D-OISBB|Path lifting]]
 
-  * Homotopy lifting property
+  * [[D-HOCNK|Homotopy lifting property]]
 
-  * Deck transformations
+  * [[D-SI6OM|Deck transformations]]
 
-  * The action of the fundamental group
+  * The action of the fundamental group on fibers
 
-  * Normal/regular cover
+  * [[D-YTISD|Normal (regular) covers]]
