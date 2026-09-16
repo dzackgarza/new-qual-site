@@ -13,7 +13,9 @@ review: draft
 ---
 
 ::: {.theorem}
-Suppose $f$ is holomorphic on $\Omega$.
-If $f$ has a relative maximum at $z_0\in\Omega$, then $f$ is constant in a neighborhood of $z_0$.
-If $\Omega$ is a bounded connected domain with $f$ continuous on $\Omega$ and $\bd \Omega$, then either $f$ is constant or $M \da \max_{z\in \Omega}\abs{f(z)}$ is only attained by some $z\in \bd\Omega$.
+Let $\Omega\subseteq\CC$ be open and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$.
+
+(a) If $\abs f$ has a local maximum at $z_0\in\Omega$, then $f$ is constant on a neighborhood of $z_0$.
+
+(b) If $\Omega$ is bounded and connected and $f$ extends continuously to $\overline\Omega$, then either $f$ is constant or $\abs f$ attains its maximum $M\coloneqq\max_{z\in\overline\Omega}\abs{f(z)}$ only at points of $\bd\Omega$.
 :::

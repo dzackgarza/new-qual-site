@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-B3BDO
 kind: theorem
-title: Goursat
+title: Goursat's theorem
 classification:
   areas:
   - complex-analysis
@@ -15,14 +15,15 @@ review: draft
 ---
 
 ::: {.theorem}
-If $\Omega \subseteq \CC$ is open and $T\subseteq \Omega$ is a triangle whose interior is also contained in $\Omega$, then
-\[
-\int_T f(z) \dz = 0
-\]
-whenever $f$ is holomorphic in $\Omega$.
+Let $\Omega\subseteq\CC$ be open, let $f$ be [[D-E7A5W|holomorphic]] on $\Omega$, and let $T\subseteq\Omega$ be a closed triangle whose interior is also contained in $\Omega$.
+Then the integral of $f$ over the boundary of $T$ vanishes:
+$$
+\int_{\bd T}f(z)\dz=0.
+$$
 :::
 
 ::: {.remark}
-Stein and Shakarchi, *Complex Analysis*, Ch. 2 Theorem 1.1. This is the base case everything else in Cauchy theory is deduced from: it produces primitives on discs, hence Cauchy's theorem for toy contours, hence the integral formula, hence the power series expansion.
-Only differentiability of $f$ is assumed, not continuity of $f'$, which is what makes the bisection proof necessary.
+This is [@SS03, Chapter 2, Theorem 1.1].
+The hypothesis is complex differentiability of $f$ at every point of $\Omega$; continuity of $f'$ is not assumed, and the proof proceeds by repeated subdivision of $T$ into four similar triangles.
+Goursat's theorem gives primitives of holomorphic functions on discs, and from these follow Cauchy's theorem for toy contours, the Cauchy integral formula, and the power series expansion of holomorphic functions.
 :::

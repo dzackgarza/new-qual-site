@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-AELHU
 kind: theorem
-title: Little Picard
+title: Little Picard theorem
 classification:
   areas:
   - complex-analysis
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f:\CC\to \CC$ is entire and nonconstant, then $\im(f)$ is either $\CC$ or $\CC\sm\ts{z_0}$ for some point $z_0$.
+If $f\colon\CC\to\CC$ is [[D-E7A5W|entire]] and nonconstant, then its image $f(\CC)$ is either $\CC$ or $\CC\sm\ts{z_0}$ for some $z_0\in\CC$.
 :::

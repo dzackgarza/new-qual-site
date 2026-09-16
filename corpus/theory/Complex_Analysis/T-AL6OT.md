@@ -16,15 +16,16 @@ review: draft
 ---
 
 ::: {.theorem}
-If $z_0$ is an isolated singularity of $f(z)$ and $\abs{f(z)}$ is bounded near $z_0$, then $z_0$ is removable.
+Let $\Omega\subseteq\CC$ be open, $z_0\in\Omega$, and let $f$ be [[D-E7A5W|holomorphic]] on $\Omega\sm\ts{z_0}$.
+If $f$ is bounded on some punctured neighborhood of $z_0$, then $z_0$ is a [[D-BQLJV|removable singularity]] of $f$.
 
-More generally, TFAE:
+More generally, the following are equivalent:
 
-- $f$ extends holomorphically over $z_0$, i.e. there is a function $F$ such that $\ro{F}{\Omega\sm\ts{z_0}} = f$
+- $f$ extends holomorphically over $z_0$: there is a holomorphic $F\colon\Omega\to\CC$ with $\ro{F}{\Omega\sm\ts{z_0}}=f$;
 
-- $f$ extends continuously over $z_0$.
+- $f$ extends continuously over $z_0$;
 
-- There exists *some* neighborhood of $z_0$ on which $f$ is bounded.
+- $f$ is bounded on some punctured neighborhood of $z_0$;
 
-- $\lim_{z\to z_0}(z-z_0)f(z) = 0$.
+- $\lim_{z\to z_0}(z-z_0)f(z)=0$.
 :::

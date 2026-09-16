@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-B7YTE
 kind: theorem
-title: Abel's Theorem
+title: Abel's theorem
 classification:
   areas:
   - complex-analysis
@@ -13,9 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $\sum_{k=1}^\infty c_k z^j$ converges on $\abs{z} < 1$ then 
-\[
-\lim_{z\to 1^-} \sum_{k\in \NN} c_k z^k = \sum_{k\in \NN} c_k
-.\]
+::: {.theorem}
+Let $(c_k)_{k\ge0}$ be complex numbers such that $\sum_{k\ge0}c_k$ converges.
+Then $\sum_{k\ge0}c_kz^k$ converges for $\abs z<1$, and
+$$
+\lim_{r\to1^-}\sum_{k\ge0}c_kr^k=\sum_{k\ge0}c_k,
+$$
+where the limit is taken over real $r\in(0,1)$.
 :::
