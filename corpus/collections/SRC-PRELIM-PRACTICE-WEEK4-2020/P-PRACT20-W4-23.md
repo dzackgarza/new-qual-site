@@ -24,38 +24,66 @@ If $\alpha=1$, find $A\in\mathbb R^{2\times2}$ satisfying the equation.
 :::
 
 ::: {.solution}
-Suppose that λ is an eigenvalue of A with eigenvector v. Then we see
-
+<1>1. If $\alpha>1$, any solution $A$ would have to be diagonal.
+::: {.proof}
+Set
 $$
-A v = \lambda v \quad \Longrightarrow \quad A ^ { 2 } v = \lambda A v = \lambda ^ { 2 } v \quad \Longrightarrow \quad A ^ { 3 } v = \lambda ^ { 2 } A v = \lambda ^ { 3 } v \quad \Longrightarrow \quad A ^ { k } v = \lambda ^ { k } v , \quad \mathrm { f o r ~ a l l ~ } k \in \mathbb { N } .
+D=\begin{pmatrix}-1&0\\0&-\alpha\end{pmatrix}.
 $$
-
-In particular the eigenvalues of $A ^ { 1 0 0 } \mathrm { ~ a r e ~ } - 1$ and −α and so $\lambda ^ { 1 0 0 } ~ < ~ 0 ~$ meaning that λ has non-zero imaginary part.
-But since A has real entries (and this a real characteristic polynomial), the complex eigenvalues of A come in conjugate pairs.
-Hence the eigenvalues of A are λ and λ. But then $| \lambda | = | { \overline { { \lambda } } } |$ makes it impossible that $| \lambda ^ { 1 0 0 } | = 1$ while $\left| \overline { { \lambda } } ^ { 1 0 0 } \right| = \alpha > 1$ (or vice versa).
-
-If $\alpha = 1$ so that $A ^ { 1 0 0 } = \left( \begin{array} { c c } { { - 1 } } & { { 0 } } \\ { { 0 } } & { { - 1 } } \end{array} \right)$ . We can accomplish this with a rotation matrix.
-Indeed, let
-
+If $A^{100}=D$, then $A$ commutes with $D$ because every matrix commutes with its powers:
 $$
-A _ { \theta } = \left( { \begin{array} { c c } { \cos ( \theta ) } & { - \sin ( \theta ) } \\ { \sin ( \theta ) } & { \cos ( \theta ) } \end{array} } \right) .
+AD=AA^{100}=A^{101}=A^{100}A=DA.
 $$
+Write
+$$
+A=\begin{pmatrix}a&b\\c&d\end{pmatrix}.
+$$
+The equality $AD=DA$ gives
+$$
+(\alpha-1)b=0,
+\qquad
+(\alpha-1)c=0.
+$$
+Since $\alpha>1$, we obtain $b=c=0$. Thus $A$ is diagonal.
+:::
 
+<1>2. No real diagonal matrix has the required hundredth power when $\alpha>1$.
+::: {.proof}
+By step <1>1, write
+$$
+A=\begin{pmatrix}a&0\\0&d\end{pmatrix}.
+$$
 Then
+$$
+A^{100}=\begin{pmatrix}a^{100}&0\\0&d^{100}\end{pmatrix}.
+$$
+For real $a$ and $d$, both $a^{100}$ and $d^{100}$ are nonnegative, so they cannot equal $-1$ and $-\alpha$. Therefore no such real matrix exists.
+:::
 
+<1>3. When $\alpha=1$, rotation through angle $\pi/100$ is a solution.
+::: {.proof}
+Let
 $$
-{ \begin{array} { r l } { A _ { \theta } A _ { \varphi } = { \binom { \cos ( \theta ) } { \sin ( \theta ) } } \ - \sin ( \theta ) } { \binom { \cos ( \varphi ) } { \sin ( \varphi ) } } \ - \sin ( \varphi ) } \\ { = { \binom { \cos ( \theta ) \cos ( \varphi ) - \sin ( \theta ) \sin ( \varphi ) } { \cos ( \varphi ) \sin ( \theta ) + \cos ( \theta ) \sin ( \varphi ) } } \ - ( \cos ( \theta ) \sin ( \varphi ) + \cos ( \varphi ) \sin ( \theta ) ) } \\ { = { \binom { \cos ( \varphi ) \sin ( \theta ) + \cos ( \theta ) \sin ( \varphi ) } { \cos ( \varphi ) \sin ( \theta ) + \cos ( \theta ) \sin ( \varphi ) } } \ } & { \cos ( \theta ) \cos ( \varphi ) - \sin ( \theta ) \sin ( \varphi ) } \end{array} 
+A=
+\begin{pmatrix}
+\cos(\pi/100)&-\sin(\pi/100)\\
+\sin(\pi/100)&\cos(\pi/100)
+\end{pmatrix}.
 $$
+This is the rotation matrix $R_{\pi/100}$. Since rotation matrices satisfy
+$$
+R_\theta R_\varphi=R_{\theta+\varphi},
+$$
+we have
+$$
+A^{100}=R_\pi
+=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}.
+$$
+Thus $A^{100}=\operatorname{diag}(-1,-\alpha)$ when $\alpha=1$.
+:::
 
-And now remembering that $\cos ( a + b ) = \cos ( a ) \cos ( b ) - \sin ( a ) \sin ( b )$ and $\sin ( a + b ) = \cos ( a ) \sin ( b ) +$ $\cos ( b ) \sin ( a )$ , we have
-
-$$
-A _ { \theta } A _ { \varphi } = { \binom { \cos ( \theta + \varphi ) } { \sin ( \theta + \varphi ) } } \quad - \sin ( \theta + \varphi ) \biggr ) = A _ { \theta + \varphi } .
-$$
-
-Now put $\theta = \pi / 1 0 0$ . Then
-
-$$
-A _ { \theta } ^ { 1 0 0 } = A _ { 1 0 0 \theta } = A _ { \pi } = \left( \begin{array} { r r } { { - 1 } } & { { 0 } } \\ { { 0 } } & { { - 1 } } \end{array} \right) .
-$$
+<1>4. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>2 prove nonexistence for $\alpha>1$, and step <1>3 gives the requested example for $\alpha=1$.
+:::
 :::
