@@ -24,7 +24,7 @@ Separating two sets by neighborhoods means finding disjoint open sets containing
 
 - $X$ is \dfn{$T_1$} if for all $x_1\neq x_2$ in $X$ there is an open set containing $x_1$ but not $x_2$, and an open set containing $x_2$ but not $x_1$.
 
-- $X$ is \dfn{$T_2$} if any two distinct points are separated by neighborhoods; this is the [[D-6FMP3|Hausdorff]] condition.
+- $X$ is \dfn{$T_2$} if any two distinct points are separated by neighborhoods; this is the [[D-ZFRV4|Hausdorff]] condition.
 
 - $X$ is \dfn{$T_{2.5}$} if any two distinct points $x_1,x_2$ have open neighborhoods $U_1\ni x_1$ and $U_2\ni x_2$ with $\overline{U_1}\cap\overline{U_2}=\emptyset$.
 

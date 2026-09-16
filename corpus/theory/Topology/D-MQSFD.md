@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 A topological space $X$, not necessarily Hausdorff, is \dfn{quasicompact} if every open [[D-AOJG3|cover]] of $X$ has a finite subcover.
-A quasicompact space is \dfn{compact} if it is also [[D-6FMP3|Hausdorff]].
+A quasicompact space is \dfn{compact} if it is also [[D-ZFRV4|Hausdorff]].
 :::
 
 ::: {.remark}

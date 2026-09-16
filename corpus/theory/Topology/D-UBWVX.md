@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $n\geq0$.
-An \dfn{$n$-manifold} is a [[D-6FMP3|Hausdorff space]] $M$ in which every point has an open neighborhood [[D-9KQZT|homeomorphic]] to $\RR^n$ [@Hat02, p. 231].
+An \dfn{$n$-manifold} is a [[D-ZFRV4|Hausdorff space]] $M$ in which every point has an open neighborhood [[D-9KQZT|homeomorphic]] to $\RR^n$ [@Hat02, p. 231].
 :::
 
 ::: {.remark}
