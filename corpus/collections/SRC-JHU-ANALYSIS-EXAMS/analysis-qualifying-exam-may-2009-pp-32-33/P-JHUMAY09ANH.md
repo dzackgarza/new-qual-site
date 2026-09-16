@@ -38,31 +38,31 @@ Prove that
 
 ::: {.solution}
 Set
-\[
+$$
 M=\|f\|_\infty>0.
-\]
+$$
 
 <1>1. The ratios are nondecreasing and bounded above by $M$.
 ::: {.proof}
-By Cauchy--Schwarz,
-\[
+By the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]],
+$$
 a_{n+1}^2
 =\left(\int |f|^{n/2}|f|^{(n+2)/2}\right)^2
 \le a_n a_{n+2}.
-\]
+$$
 Since $a_n>0$,
-\[
+$$
 \frac{a_{n+1}}{a_n}\le\frac{a_{n+2}}{a_{n+1}}.
-\]
+$$
 Thus the ratios are nondecreasing.
 Also $|f|\le M$ almost everywhere, so
-\[
+$$
 a_{n+1}\le M a_n,
-\]
+$$
 and hence
-\[
+$$
 \frac{a_{n+1}}{a_n}\le M.
-\]
+$$
 Therefore the ratios converge to some $L\le M$.
 :::
 
@@ -70,35 +70,47 @@ Therefore the ratios converge to some $L\le M$.
 ::: {.proof}
 Fix $0<\varepsilon<M$.
 By the definition of essential supremum, the set
-\[
+$$
 E_\varepsilon=\{x:|f(x)|>M-\varepsilon\}
-\]
+$$
 has positive measure.
 Hence
-\[
+$$
 a_n\ge m(E_\varepsilon)(M-\varepsilon)^n.
-\]
+$$
 On the other hand, since the ratios increase to $L$, each ratio is at most $L$, so for $n\ge1$,
-\[
+$$
 a_n=a_1\prod_{k=1}^{n-1}\frac{a_{k+1}}{a_k}\le a_1L^{n-1}.
-\]
+$$
 Combining the two estimates and taking $n$th roots gives
-\[
+$$
 M-\varepsilon
 \le m(E_\varepsilon)^{-1/n}a_1^{1/n}L^{(n-1)/n}.
-\]
+$$
 Letting $n\to\infty$ yields
-\[
+$$
 M-\varepsilon\le L.
-\]
+$$
 Since $\varepsilon>0$ is arbitrary, $M\le L$.
 Together with $L\le M$, this gives
-\[
+$$
 L=M=\|f\|_\infty.
-\]
-Thus
-\[
-\boxed{\displaystyle \lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\|f\|_\infty}.
-\]
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\lim_{n\to\infty}\frac{a_{n+1}}{a_n}=\|f\|_\infty.
+}
+$$
+::: {.proof}
+Step <1>1 gives existence of the ratio limit $L$, and step <1>2 proves $L=\|f\|_\infty$.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is the required limit.
+:::
 :::
 :::
