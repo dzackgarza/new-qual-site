@@ -19,12 +19,15 @@ review: draft
 ---
 
 ::: {.example}
-Take limit along $y=x$ and compare to $y=0$:
+A function $\RR^2\to\RR$ can be continuous in each variable separately without being continuous.
+Define $f\colon\RR^2\to\RR$ by
 $$
 f(x, y) =
 \begin{cases}
-{xy \over x^2 +y^2} & (x, y) \neq \vector 0 \\
-0 & \text{else}
+\dfrac{xy}{x^2 + y^2}, & (x, y) \neq (0, 0), \\
+0, & (x, y) = (0, 0).
 \end{cases}
-.$$
+$$
+For each $b\in\RR$ the map $x\mapsto f(x, b)$ is continuous on $\RR$, and for each $a\in\RR$ the map $y\mapsto f(a, y)$ is continuous on $\RR$; on the line $y = 0$ the function vanishes identically.
+Along the line $y = x$, $f(t, t) = 1/2$ for $t\neq 0$, so $f(t,t)\to 1/2\neq f(0,0)$ as $t\to 0$, and $f$ is not continuous at the origin.
 :::
