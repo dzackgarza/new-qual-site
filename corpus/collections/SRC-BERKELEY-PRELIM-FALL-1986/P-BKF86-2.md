@@ -13,5 +13,6 @@ audit:
 ---
 
 ::: {.problem}
-Let the points $a$, $b$, and $c$ lie on the unit circle of the complex plane and satisfy $a+b+c=0$. Prove that $a$, $b$, and $c$ form the vertices of an equilateral triangle.
+Let the points $a$, $b$, and $c$ lie on the unit circle of the complex plane and satisfy $a+b+c=0$.
+Prove that $a$, $b$, and $c$ form the vertices of an equilateral triangle.
 :::

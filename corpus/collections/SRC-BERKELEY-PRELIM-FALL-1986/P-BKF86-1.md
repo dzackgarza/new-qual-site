@@ -21,5 +21,7 @@ The Arzelà–Ascoli theorem asserts that a sequence $\{f_n\}$ of continuous rea
 
 (iii) the sequence is equicontinuous.
 
-Give examples of sequences which are not precompact such that: (i) and (ii) hold but (iii) fails; (i) and (iii) hold but (ii) fails; (ii) and (iii) hold but (i) fails. Take $\Omega$ to be a subset of the real line. Sketch the graph of a typical member of the sequence in each case.
+Give examples of sequences which are not precompact such that: (i) and (ii) hold but (iii) fails; (i) and (iii) hold but (ii) fails; (ii) and (iii) hold but (i) fails.
+Take $\Omega$ to be a subset of the real line.
+Sketch the graph of a typical member of the sequence in each case.
 :::

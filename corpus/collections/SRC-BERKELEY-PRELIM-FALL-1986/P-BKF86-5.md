@@ -13,9 +13,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $M_{2\times2}$ denote the vector space of complex $2\times2$ matrices. Let
+Let $M_{2\times2}$ denote the vector space of complex $2\times2$ matrices.
+Let
 \[
 A=\begin{pmatrix}0&1\\0&0\end{pmatrix}
 \]
-and let the linear transformation $T:M_{2\times2}\to M_{2\times2}$ be defined by $T(X)=XA-AX$. Find the Jordan canonical form for $T$.
+and let the linear transformation $T:M_{2\times2}\to M_{2\times2}$ be defined by $T(X)=XA-AX$.
+Find the Jordan canonical form for $T$.
 :::

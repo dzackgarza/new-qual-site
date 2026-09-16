@@ -154,6 +154,7 @@ source:
     - P-QUAL-REVIEW-HATCHER-01
     - P-QUAL-REVIEW-HATCHER-02
     - P-QUAL-REVIEW-HATCHER-03
+    - P-QUAL-REVIEW-HATCHER-04
     - P-QUAL-REVIEW-HATCHER-05
     - P-QUAL-REVIEW-HATCHER-08
     - P-QUAL-REVIEW-HATCHER-09
@@ -172,7 +173,6 @@ The collection reuses 106 current canonical cards from `SRC-TEXT-HAT02`. Hatcher
 
 The review sheet selects only §2.2 Exercise 43(a). The corpus indexes Hatcher at whole-exercise granularity, so this collection references `E-HAT-2.2-43`; only part (a) is selected by this source.
 
-Among the sixteen additional practice problems, positions 4, 6, and 7 remain source-local extraction blockers.
-Problem 4 has an unresolved $S^4$/four-coordinate inconsistency in the deterministic text; Problems 6 and 7 depend on a figure that MinerU did not recover.
-The other thirteen positions are represented above.
+Among the sixteen additional practice problems, positions 6 and 7 are not represented: both depend on a figure of a 2-manifold that neither extraction recovered.
+The other fourteen positions are represented above.
 :::
