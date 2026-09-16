@@ -7,181 +7,160 @@ topics:
 
 # Which contour do I close?
 
-A contour integral on the exam gives you a real integral and nothing else.
-The whole problem is choosing the closed curve, and the choice is decided by the *form of the integrand*, not by the theory.
-This page is that decision, case by case.
-Each case says what the integrand looks like, which curve to close, why the added piece vanishes, and what identity falls out.
+A real integral is evaluated by residues after it is written as a limit of integrals over closed curves.
+The cases below are organized by the form of the integrand; each gives the contour, the estimate that controls the added pieces, and the resulting identity.
 
-The estimates that kill the added piece are on [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]].
-The residue computations are on [[complex-analysis/residues-and-contours/computing-residues|Computing residues]].
+The estimates for the added pieces are on [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]], and residue computations are on [[complex-analysis/residues-and-contours/computing-residues|Computing residues]].
 
-## First: do you need residues at all?
+## Integrals that need no residues
 
-Four ways an integral is finished before a contour is chosen.
+- If $f$ is holomorphic on a neighborhood of the closed region bounded by $\gamma$, then $\int_\gamma f = 0$ by Cauchy's theorem.
 
-- The integrand is holomorphic on and inside the curve.
-  Then $\int_\gamma f = 0$ by Cauchy's theorem, and there is nothing to compute.
+- If $f$ has a primitive $F$ on a neighborhood of $\gamma$, then $\int_\gamma f = F(\gamma(1)) - F(\gamma(0))$, which is $0$ for a closed curve.
 
-- The integrand has a primitive $F$ on the curve.
-  Then $\int_\gamma f = F(\gamma(1)) - F(\gamma(0))$, which is $0$ on a closed curve.
+- If $f(z) = g(z)/(z-a)^n$ with $g$ holomorphic inside and on a positively oriented simple closed curve $\gamma$ around $a$, the Cauchy integral formula gives $\int_\gamma {g(z) \over (z-a)^{n}} \dz = {2\pi i \over (n-1)!} g^{(n-1)}(a)$.
 
-- The integrand is $g(z)/(z-a)^n$ with $g$ holomorphic.
-  That is the Cauchy integral formula, $\int_\gamma {g(z) \over (z-a)^{n}} \dz = {2\pi i \over (n-1)!} g^{(n-1)}(a)$, not a residue count.
-
-- The curve is one you can parameterize.
-  $\int_\gamma f \dz = \int_a^b f(z(t)) z'(t) \dt$, and a circle about $z_0$ is $z = z_0 + re^{i\theta}$.
+- For a parameterized curve $z\colon[a,b]\to\CC$, $\int_\gamma f \dz = \int_a^b f(z(t)) z'(t) \dt$; a circle about $z_0$ is $z = z_0 + re^{i\theta}$.
 
 ## Rational, decaying at least quadratically
 
-**Looks like:** $\displaystyle\int_\RR f$ with $f = p/q$ rational and $\deg q \geq \deg p + 2$, or more generally $f = \bigo(1/z^{1+\eps})$.
+**Integrand.** $\displaystyle\int_\RR f$ with $f = p/q$ rational, $q$ without real zeros, and $\deg q \geq \deg p + 2$; more generally $f = \bigo(1/\abs z^{1+\varepsilon})$ on the upper half plane.
 
-**Close with:** the semicircle in the upper half plane, $[-R, R]$ followed by $C_R = \ts{Re^{it} \st t \in [0,\pi]}$.
+**Contour.** The segment $[-R, R]$ followed by the upper semicircle $C_R = \ts{Re^{it} \st t \in [0,\pi]}$.
 
 ![](../../../../assets/assets/figures/2021-07-29_18-37-57.png)
 
-**Why the arc dies:** the ML estimate.
-$\abs{f} = \bigo(1/R^{2})$ on $C_R$ and $\length(C_R) = \pi R$, so the arc contributes $\bigo(1/R) \to 0$.
+**Arc estimate.** The ML estimate: $\abs{f} = \bigo(1/R^{2})$ on $C_R$ and $\length(C_R) = \pi R$, so the arc integral is $\bigo(1/R)$.
 
-**You get:**
-\[
+**Result.**
+$$
 \int_\RR f = 2\pi i \sum_{z_0 \in \HH} \Res_{z=z_0} f(z)
-.\]
+.$$
 
-The poles counted are the ones in the *open upper half plane*; a pole on $\RR$ is the principal-value case below.
-Closing downward instead traverses $\RR$ backwards, which is where the sign comes from: every residue theorem here assumes the counterclockwise orientation.
+The sum is over poles in the open upper half plane.
+Closing in the lower half plane gives a clockwise contour and $\int_\RR f = -2\pi i \sum_{\Im z_0<0} \Res_{z=z_0} f(z)$.
 
-## Rational against a single sine or cosine
+## Rational against a sine or cosine
 
-**Looks like:** $\displaystyle\int_\RR f(x)\cos(x)$ or $\displaystyle\int_\RR f(x)\sin(x)$, with $f$ rational and only $\deg q \geq \deg p + 1$.
+**Integrand.** $\displaystyle\int_\RR f(x)\cos(ax) \dx$ or $\displaystyle\int_\RR f(x)\sin(ax)\dx$ with $a>0$, $f = p/q$ real rational, $q$ without real zeros, and $\deg q \geq \deg p + 1$.
 
-**Close with:** the same semicircle, but integrate $f(z)e^{iz}$ rather than $f(z)\cos(z)$, and take the real or imaginary part at the end:
-\[
-\int_\RR f(x)\cos(x) \dx = \Re \int_\RR f(z)e^{iz}\dz
-.\]
+**Contour.** The same semicircle, applied to $f(z)e^{iaz}$, with
+$$
+\int_\RR f(x)\cos(ax) \dx = \Re \int_\RR f(x)e^{iax}\dx, \qquad \int_\RR f(x)\sin(ax) \dx = \Im \int_\RR f(x)e^{iax}\dx
+,$$
+the integrals over $\RR$ taken as limits of integrals over $[-R,R]$.
 
-**Why the arc dies:** Jordan's lemma, which is the reason for the rewrite.
-$\cos(z)$ is unbounded on $C_R$, so $f(z)\cos(z)$ has no ML bound at all; $\abs{e^{iz}} = e^{-\Im z} \leq 1$ on the upper arc, and Jordan's lemma turns the decay $M_R$ of $f$ alone into the bound $\pi M_R / a$.
-That buys one whole power of $z$ over ML: linear decay is enough.
+**Arc estimate.** Jordan's lemma: $\abs{e^{iaz}} = e^{-a\Im z} \leq 1$ on the upper half plane, and $\abs{\int_{C_R} e^{iaz} f(z)\dz} \leq \pi M_R/a$ with $M_R = \sup_{C_R}\abs f = \bigo(1/R)$.
+The functions $\cos(az)$ and $\sin(az)$ grow like $e^{aR}/2$ on $C_R$, which is why the integrand is rewritten with $e^{iaz}$.
 
-Use $e^{iz}$ and the upper arc for $\Im z \geq 0$, and $e^{-iz}$ with the lower arc otherwise, so the exponential is the decaying one.
+For $e^{-iax}$ with $a>0$, the lower semicircle is used instead.
 
 ## Rational in $\cos$ and $\sin$, over one period
 
-**Looks like:** $\displaystyle\int_0^{2\pi} R(\cos\theta, \sin\theta) \dtheta$ with $R$ a rational function of the two.
+**Integrand.** $\displaystyle\int_0^{2\pi} R(\cos\theta, \sin\theta) \dtheta$ with $R$ a rational function of two variables, finite on the unit circle.
 
-**Close with:** the unit circle itself.
-Substitute $z = e^{i\theta}$, which turns the period into the whole curve:
-\[
+**Contour.** The unit circle, by the substitution $z = e^{i\theta}$:
+$$
 \cos\theta = {z + z\inv \over 2}, \quad \sin\theta = {z - z\inv \over 2i}, \quad \dtheta = {\dz \over iz}
-.\]
+.$$
+No pieces are added; the substitution writes the integral over $[0,2\pi]$ as an integral over $S^1$.
 
-**Why nothing is added:** there is no added piece.
-The interval was already closed; the substitution only recognizes it.
-
-**You get:** a residue count inside the disc,
-\[
+**Result.**
+$$
 \int_0^{2\pi} R(\cos\theta,\sin\theta) \dtheta = 2\pi i \sum_{\abs{z_0} < 1} \Res_{z=z_0} R\qty{ {z+z\inv \over 2}, {z - z\inv \over 2i} } {1 \over iz}
-.\]
+.$$
 
-The factor $1/iz$ is part of the integrand, so $z = 0$ is usually one of the poles.
+The factor $1/iz$ can contribute a pole at $z = 0$.
 
 ## A branch cut: a power $x^\alpha$
 
-**Looks like:** $\displaystyle\int_0^\infty x^\alpha f(x)$ with $f$ rational, $\deg f \leq -2$, and $\alpha$ non-integral with $\abs{\alpha} < 1$.
+**Integrand.** $\displaystyle\int_0^\infty x^\alpha f(x)\dx$ with $f$ rational, without poles on $[0,\infty)$, $\deg f \leq -2$, and $\alpha\in(-1,1)$ nonintegral.
 
-**Close with:** the keyhole around the cut along $\RR_{\geq 0}$, taking $\arg z \in (0, 2\pi)$.
+**Contour.** The keyhole around the cut along $[0,\infty)$, with the branch $\arg z \in (0, 2\pi)$ of $z^\alpha$.
 
 ![](../../../../assets/assets/figures/2021-12-14_17-19-31.png)
 
-**Why the added pieces die:** the large circle by ML, the small one because $\alpha > -1$ makes $\eps^{1+\alpha} \to 0$.
+**Estimates.** The large circle of radius $R$ contributes $\bigo(R^{\alpha-1})\to 0$ by the ML estimate, and the small circle of radius $\varepsilon$ contributes $\bigo(\varepsilon^{1+\alpha}) \to 0$ because $\alpha > -1$.
 
-**You get:** the two edges of the cut do not cancel, and that is the whole trick.
-Above the cut the integrand is $x^\alpha f(x)$; below it the same points carry $\arg z = 2\pi$, so the integrand is $e^{2\pi i \alpha}x^\alpha f(x)$ and the edge is traversed backwards.
+**Result.** Above the cut the integrand is $x^\alpha f(x)$; below it $\arg z = 2\pi$, so the integrand is $e^{2\pi i \alpha}x^\alpha f(x)$ and the edge is traversed from $\infty$ to $0$.
 Hence
-\[
+$$
 \qty{1 - e^{2\pi i \alpha}} \int_0^\infty x^\alpha f(x) \dx = 2\pi i \sum \Res\qty{z^\alpha f(z)}
-,\]
-the sum over every pole of $f$ off the cut.
+,$$
+the sum over all poles of $f$.
 
 ## A branch cut: a logarithm
 
-**Looks like:** $\displaystyle\int_0^\infty f(x)\log(x)$, or $\displaystyle\int_0^\infty f(x)$ where $f$ is even and you want the $\log$ to do the work.
+**Integrand.** $\displaystyle\int_0^\infty f(x)\log(x)\dx$, or $\displaystyle\int_0^\infty f(x)\dx$ for $f$ even computed through $\int f(z)\log z\dz$.
 
-**Close with:** an indented semicircle, or the same keyhole.
+**Contour.** An indented semicircle, or the keyhole.
 
 ![](../../../../assets/assets/figures/2021-12-14_17-20-48.png)
 
 ![](../../../../assets/assets/figures/2021-12-22_05-14-24.png)
 
-**Two facts that come up every time:**
-\[
-\lim_{\eps \decreasesto 0} \ln(x - i\eps) = \ln(x) + 2\pi i, \qquad \lim_{x\to 0} {x\ln(x) \over x^n + c} = 0
-.\]
-The constant $c$ in the second cannot be dropped.
+**Limits used in the estimates.** With the branch $\arg z\in(0,2\pi)$, for $x>0$, and for $n\geq 1$ and $c\neq 0$,
+$$
+\lim_{\varepsilon \decreasesto 0} \log(x - i\varepsilon) = \ln(x) + 2\pi i, \qquad \lim_{x\to 0} {x\ln(x) \over x^n + c} = 0
+.$$
 
-**The rotation trick:** if $f(z) = \log(z)g(z)$ and $\int g$ is easy, close along a rotation of $\RR$.
-The substitution sends $\log(\zeta x) \leadsto \ln\abs{x} + i\theta$, so if $g$ is $\zeta\dash$invariant,
-\[
-\int \log(\zeta x)g(\zeta x) = \int \log(x)g(x) + i\theta\int g(x)
-,\]
-and the unknown integral appears on both sides.
+**Rotated rays.** For $\zeta = e^{i\theta}$ and $g$ with $g(\zeta x) = g(x)$ for $x>0$, the integral of $\log(z)g(z)$ along the ray $z = \zeta x$ is
+$$
+\zeta\int_0^\infty \log(\zeta x)g(\zeta x) \dx = \zeta\int_0^\infty \ln(x)g(x)\dx + i\theta\,\zeta\int_0^\infty g(x)\dx
+,$$
+so a contour made of $[0,\infty)$ and this ray gives a linear relation involving $\int_0^\infty \ln(x)g(x)\dx$ and $\int_0^\infty g(x)\dx$.
 
-## A pole sitting on the contour
+## A pole on the real line
 
-**Looks like:** $\displaystyle\int_\RR p(x)/q(x)$ where $q$ has a real root, or any integrand singular at a point of the path.
-The integral does not converge; what is being asked for is the principal value
-\[
-\operatorname{PV} \int_{-\infty}^{\infty} \frac{f(x)}{x-x_{0}} \dx = \lim_{\eps \decreasesto 0}\qty{\int_{-\infty}^{x_{0}-\eps} f + \int_{x_{0}+\eps}^{\infty} f}
-.\]
+**Integrand.** $\displaystyle\int_\RR f$ where $f$ has simple poles on $\RR$.
+The integral diverges, and the principal value is
+$$
+\operatorname{PV} \int_{-\infty}^{\infty} f(x) \dx = \lim_{R\to\infty}\lim_{\varepsilon \decreasesto 0}\qty{\int_{-R}^{x_{0}-\varepsilon} f + \int_{x_{0}+\varepsilon}^{R} f}
+$$
+for a single pole $x_0$, and analogously for several.
 
-**Close with:** the semicircle, indented by a small arc *over* each real pole.
+**Contour.** The semicircle, indented by a small half-circle above each real pole.
 
 ![](../../../../assets/assets/figures/2021-12-21_23-40-15.png)
 
-**Why the indentation does not die:** it does not shrink to nothing.
-By the small-arc lemma an arc of angle $\theta$ about a simple pole contributes $i\theta \Res$ in the limit, and each indentation here is a half-circle traversed clockwise, contributing $-i\pi\Res$.
+**Estimates.** The large arc is handled as in the cases above.
+By [[T-SSNLT]], an arc of angle $\theta$ about a simple pole contributes $i\theta \Res$ in the limit, so each clockwise half-circle contributes $-i\pi\Res$.
 
-**You get:** the poles on the line count half,
-\[
+**Result.**
+$$
 \operatorname{PV} \int_\RR f = 2\pi i \sum_{z_0 \in \HH} \Res_{z=z_0} f + i\pi \sum_{x_0 \in \RR} \Res_{z=x_0} f
-.\]
+.$$
 
-## No decay at all: replication
+## Symmetry under rotation or translation: sectors and rectangles
 
-**Looks like:** an integrand that does not shrink on any large arc, so no semicircle can work, but which repeats itself under a symmetry.
+**Integrand.** A function whose values on a rotated ray or a translated line are a constant multiple of its values on the real axis.
 
-**Close with:** the curve the symmetry chooses, so that the far side reproduces the integral you want with a constant in front.
-
-- $f(\zeta_m z) = f(z)$ for $\zeta_m$ a root of unity: a sector of angle $2\pi/m$.
-  The returning ray gives $\zeta_m \int f$, so $(1 - \zeta_m)\int f$ is a residue count.
-  This is how $\int_0^\infty {\dx \over 1 + x^n} = {\pi/n \over \sin(\pi/n)}$ falls out.
+- If $f(\zeta z) = f(z)$ for $\zeta = e^{2\pi i/m}$, use the sector $\ts{0\leq\arg z\leq 2\pi/m,\ \abs z\leq R}$.
+  If the arc integral tends to $0$, the ray $z = \zeta x$, traversed toward $0$, contributes $-\zeta\int_0^\infty f$, so $(1 - \zeta)\int_0^\infty f$ is $2\pi i$ times the sum of the residues in the sector.
+  For $f(x) = 1/(1+x^n)$ and $\zeta = e^{2\pi i/n}$ this gives $\int_0^\infty {\dx \over 1 + x^n} = {\pi/n \over \sin(\pi/n)}$.
 
   ![](../../../../assets/assets/figures/2021-12-21_21-14-04.png)
 
   ![](../../../../assets/assets/figures/2021-12-21_21-17-25.png)
 
-- $f(z + ib) = cf(z)$ for a real $b$: a rectangle of height $b$.
-  The top edge reproduces the bottom, the two vertical edges vanish, and the integral is again recovered up to a constant.
+- If $f(z + ib) = cf(z)$ for real $b$ and constant $c$, use the rectangle with vertices $\pm R$ and $\pm R + ib$.
+  If the vertical edges contribute integrals tending to $0$, the top edge contributes $-c\int_\RR f$, so $(1-c)\int_\RR f$ is $2\pi i$ times the sum of the residues in the strip $0<\Im z<b$.
 
 ## A half-line, by symmetry
 
-**Looks like:** $\displaystyle\int_0^\infty f$ where $f$ is even.
+For $f$ even, $\int_0^\infty f = \frac12 \int_\RR f$, and one of the cases above applies.
+For $f$ not even, the sector contours above can apply.
 
-**Close with:** nothing new.
-$\int_0^\infty f = \frac12 \int_\RR f$, and the problem is one of the cases above.
-If $f$ is not even, look for the sector instead.
-
-## The standard contours, together
+## The standard contours
 
 ![](../../../../assets/assets/figures/2021-12-23_18-51-55.png)
 
 ![](../../../../assets/assets/figures/2021-12-21_21-10-30.png)
 
-## Estimates you will reach for
+## Bounding denominators
 
-Use the reverse triangle inequality to bound a denominator from below:
-\[
-\abs{z-w} \geq \abs{\abs{z} - \abs{w}} \implies {1\over \abs{z-w}} \leq \abs{1 \over \abs z - \abs w}
-,\]
-and the same for $\abs{z+w}$ by writing it as $\abs{z - (-w)}$.
-For exponentials, $e^{-x}$ is decreasing on $\RR$, so $a \leq b \implies e^{-a} \geq e^{-b}$.
+The reverse triangle inequality bounds a denominator from below: for $\abs z\neq\abs w$,
+$$
+\abs{z-w} \geq \abs{\abs{z} - \abs{w}} \implies {1\over \abs{z-w}} \leq {1 \over \abs{\abs z - \abs w}}
+,$$
+and the same bound holds for $\abs{z+w} = \abs{z - (-w)}$.
