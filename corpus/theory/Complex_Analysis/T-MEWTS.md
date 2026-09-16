@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-MEWTS
 kind: theorem
-title: Characterization of conformal maps
+title: Biholomorphisms of the unit disc are rotated Blaschke factors
 classification:
   areas:
   - complex-analysis
@@ -14,13 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-Conformal maps $\DD\to\DD$ have the form
-\[
-g(z) = \lambda {a-z \over 1 - \bar a z}, \quad \abs{a} < 1, \quad \abs{\lambda} = 1
-.\]
-
-:::{.remark}
-Stein and Shakarchi, *Complex Analysis*, Ch. 8 Theorem 2.2.
+::: {.theorem}
+Let $g\colon\DD\to\DD$ be a [[D-TM4TE|biholomorphism]].
+Then there are $a\in\DD$ and $\lambda\in\CC$ with $\abs{\lambda}=1$ such that
+$$
+g(z)=\lambda\,\frac{a-z}{1-\overline{a}z}\quad\text{for all } z\in\DD.
+$$
 :::
+
+::: {.remark}
+See [@SS03, Chapter 8, Theorem 2.2].
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-LHSMY
 kind: theorem
-title: Morera's Theorem
+title: Morera's theorem
 classification:
   areas:
   - complex-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem ref="Morera"}
-If $f$ is continuous on a domain $\Omega$ and $\int_T f = 0$ for every triangle $T\subset \Omega$, then $f$ is holomorphic.
+Let $\Omega\subseteq\CC$ be open and let $f\colon\Omega\to\CC$ be continuous.
+If $\int_{\partial T}f(z)\dz=0$ for every closed triangle $T\subseteq\Omega$, then $f$ is [[D-E7A5W|holomorphic]] on $\Omega$.
 :::

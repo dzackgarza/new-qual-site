@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-NRSFZ
 kind: theorem
-title: Existence of $\log(f)$ on domains
+title: Holomorphic logarithm when $f'/f$ has zero periods
 classification:
   areas:
   - complex-analysis
@@ -13,18 +13,13 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $\Omega$ is a connected domain with $f\in \OO\units(\Omega)$ an invertible regular function with 
-\[
-\int_\gamma {f'\over f} = 0
-\]
-for all $\gamma \subseteq \Omega$, then
-
-- There exists a holomorphic $g:\Omega\to \CC$ such that $g = \log(f)$ and $e^g = f$.
-
-- $g' = {f'\over f}$, yielding an explicit formula
-\[
-g(z) = g(z_0) + \int_{z_0}^z {f'(\xi) \over \xi}\dxi
-.\]
-
+::: {.theorem}
+Let $\Omega\subseteq\CC$ be a connected open set and let $f$ be [[D-E7A5W|holomorphic]] and nonvanishing on $\Omega$.
+Suppose that $\int_\gamma\frac{f'(z)}{f(z)}\dz=0$ for every piecewise smooth closed curve $\gamma$ in $\Omega$.
+Fix $z_0\in\Omega$ and $c\in\CC$ with $e^c=f(z_0)$, and define
+$$
+g(z)\coloneqq c+\int_{z_0}^z\frac{f'(\xi)}{f(\xi)}\dxi,
+$$
+the integral taken along any piecewise smooth path in $\Omega$ from $z_0$ to $z$.
+Then $g$ is well defined and holomorphic on $\Omega$, $g'=f'/f$, and $e^{g}=f$ on $\Omega$.
 :::
