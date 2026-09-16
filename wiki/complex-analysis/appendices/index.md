@@ -5,14 +5,12 @@ order: 13
 
 # Appendices
 
-Notes that were never filed into Basics--Omitted values, but are not junk: they are standard complex-analysis asides.
+- [[appendix-fta-proofs|Proofs of the fundamental theorem of algebra]], by the argument principle, Rouché's theorem, Liouville's theorem, and the open mapping theorem.
 
-- [[appendix-fta-proofs|Proofs of the Fundamental Theorem of Algebra]], from the argument principle and otherwise.
+- [[appendix-unsorted|The Gamma function and conic sections]], the $\Gamma$-function identities and the standard conics.
 
-- [[appendix-unsorted|The Gamma function, and conic sections]], the $\Gamma\dash$function identities and the standard conics.
+- [[gauss-lucas-theorem|The Gauss--Lucas theorem]]: the zeros of $p'$ lie in the convex hull of the zeros of a polynomial $p$.
 
-- [[gauss-lucas-theorem]], zeros of $p'$ in the convex hull of the zeros of $p$.
+- [[pdes|The Dirichlet problem]], solved with real and imaginary parts of holomorphic functions.
 
-- [[pdes]], Dirichlet problems via harmonic conjugates.
-
-- [[special-functions]], Fourier transforms, $\Gamma$, $\zeta$, and elliptic functions.
+- [[special-functions|Special functions]]: Fourier transforms, $\Gamma$, $\zeta$, and elliptic functions.
