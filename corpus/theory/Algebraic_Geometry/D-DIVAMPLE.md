@@ -18,6 +18,7 @@ prompts:
 - What is a very ample divisor?
 - What is an ample divisor?
 - What is the difference between ample and very ample?
+- What is a hyperplane section?
 ---
 
 ::: {.definition title="Very ample"}
@@ -37,3 +38,9 @@ Very ampleness is not a property of $X$ alone: it is the statement that $X$ sits
 The standard illustration that the notions differ is a divisor of degree $1$ on an elliptic curve: it is ample, but $h^0 = 1$, so its own linear system is a point and embeds nothing.
 Degree $3$ is the first very ample case, giving the plane cubic.
 :::
+
+::: {.definition title="Hyperplane section"}
+For a projective variety $X \subseteq \PP^n$ and a hyperplane $H \not\supseteq X$, the \dfn{hyperplane section} $X \cap H$ is the effective Cartier divisor on $X$ cut out by the linear form defining $H$.
+The hyperplane sections form the linear system $\PP V \subseteq \abs{\OO_X(1)}$, where $V$ is the image of $H^0(\PP^n, \OO(1)) \to H^0(X, \OO_X(1))$.
+:::
+

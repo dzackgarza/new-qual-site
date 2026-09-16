@@ -21,6 +21,8 @@ prompts:
 - What is the difference between tame and wild ramification?
 - What is the length of $(\Omega_{X/Y})_p$, and how does it depend on that difference?
 - Give a wildly ramified map and compute its ramification divisor.
+- What is the ramification divisor of a morphism of smooth projective curves?
+- What are the branch points and the branch locus?
 ---
 
 ::: {.definition title="Ramification index"}
@@ -31,6 +33,15 @@ e_p \definedas v_p(f^\sharp t) ,
 \]
 the valuation at $p$ of the pulled-back uniformizer.
 $f$ is **ramified** at $p$ if $e_p > 1$ and **unramified** there if $e_p = 1$; the image $q$ of a ramification point is a **branch point**.
+:::
+
+::: {.definition title="Ramification divisor and branch locus"}
+For $f \colon X \to Y$ a finite separable morphism of smooth projective curves, the \dfn{ramification divisor} is
+\[
+R = \sum_{p \in X} \length (\Omega_{X/Y})_p \cdot p ,
+\]
+which is $\sum_p (e_p - 1)\, p$ when all ramification is tame.
+The \dfn{branch locus} is the finite set $f(\supp R)$ of branch points, and the \dfn{branch divisor} is the pushforward $f_* R = \sum_p \length(\Omega_{X/Y})_p \cdot f(p)$.
 :::
 
 ::: {.definition title="Tame and wild"}

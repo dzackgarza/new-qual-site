@@ -48,3 +48,7 @@ Each line is a $(-1)$-curve, so each can be contracted, and the many ways of doi
 
 The classification then reads as the two-dimensional version of the trichotomy $g = 0$, $g = 1$, $g \geq 2$ for curves.
 The row worth rehearsing is $\kappa = 0$, separated by $(p_g, q)$: K3 at $(1,0)$, Enriques at $(0,0)$, abelian at $(1,2)$, bielliptic at $(0,1)$.
+
+## Birational invariants
+
+[[T-BIRINV]]

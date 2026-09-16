@@ -38,3 +38,7 @@ which computes $\Cl(\AA^n) = 0$ from $\Cl(\PP^n) = \ZZ$ and gives the class grou
 [[FE-DIVP1E]]
 
 Between them these settle most of what gets asked: a class group on a projective space or an open subset of one, and a $\Pic^0$ on a curve.
+
+## Reduced divisors, multiplicities and pullback
+
+[[D-DIVREDMULT]]

@@ -17,6 +17,7 @@ review: draft
 prompts:
 - What is a normal crossing singularity?
 - What is a simple normal crossing divisor?
+- What is an SNC divisor?
 ---
 
 ::: {.definition title="Normal crossings"}

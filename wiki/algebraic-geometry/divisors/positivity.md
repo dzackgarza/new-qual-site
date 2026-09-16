@@ -27,3 +27,11 @@ They agree on a proper scheme, and the second is the one every proof actually us
 
 Ampleness and nefness do not see linear equivalence at all, only intersection numbers, so they live on the Néron--Severi group.
 That is the reason to introduce numerical equivalence: it replaces $\Pic(X)$, which can be a positive-dimensional variety, by a finitely generated lattice carrying an intersection form, and positivity becomes a question about cones in that lattice.
+
+## Polarizations
+
+[[D-DIVPOLAR]]
+
+## Hyperplane sections
+
+[[FE-DIVHYPSYS]]
