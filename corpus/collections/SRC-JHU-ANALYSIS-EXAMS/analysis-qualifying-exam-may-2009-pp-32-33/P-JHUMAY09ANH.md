@@ -113,4 +113,3 @@ Step <1>1 gives existence of the ratio limit $L$, and step <1>2 proves $L=\|f\|_
 Step <1>3 is the required limit.
 :::
 :::
-:::
