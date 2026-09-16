@@ -52,8 +52,6 @@ For measurable $E_n$, the set $\limsup_n E_n$ of points lying in infinitely many
 
 [[PR-NULVE]]
 
-[[T-YMPTF]]
-
 [[T-OTR5M]]
 
 [[FF-GNU7E]]

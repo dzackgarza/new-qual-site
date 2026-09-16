@@ -14,8 +14,6 @@ Each section links to the chapter containing the proofs.
 
 [[T-KZNWM]]
 
-[[T-YMPTF]]
-
 [[T-OTR5M]]
 
 Proved in [[real-analysis/measure/index|Measure]].
