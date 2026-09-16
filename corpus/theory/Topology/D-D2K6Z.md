@@ -14,10 +14,19 @@ review: draft
 ---
 
 ::: {.definition}
-Dualizing a chain complex by $C^n(X; G) \da \Hom(C_n(X), G)$ gives the coboundary $\delta^n: C^n \to C^{n+1}$ defined by $\delta \psi \da \psi \circ \del$.
-A **coboundary** is an element of $B^n(X; G)\da \im \delta^{n-1}$, and $\delta\circ\delta = 0$ since $\del\circ\del = 0$.
+Let $X$ be a topological space and $G$ an abelian group, and let $C^n(X;G)\coloneqq\Hom(C_n(X), G)$ be the group of [[D-EILQL|$n$-cochains]], where $C_n(X)$ is the group of [[D-6BUWA|singular $n$-chains]] with boundary map $\del_n\colon C_n(X)\to C_{n-1}(X)$.
+The \dfn{coboundary map} $\delta^n\colon C^n(X;G)\to C^{n+1}(X;G)$ is $\delta^n(\varphi)\coloneqq\varphi\circ\del_{n+1}$.
+An $n$-cochain $\varphi$ is a \dfn{coboundary} if $\varphi\in B^n(X;G)\coloneqq\im\delta^{n-1}$, with $B^0(X;G)\coloneqq 0$.
+:::
+
+::: {.proposition}
+For every $n\geq 0$, $\delta^{n+1}\circ\delta^n = 0$; hence $B^{n+1}(X;G)\subseteq\ker\delta^{n+1}$.
+:::
+
+::: {.proof}
+For $\varphi\in C^n(X;G)$, $\delta^{n+1}\delta^n\varphi = \varphi\circ\del_{n+1}\circ\del_{n+2} = 0$ since $\del_{n+1}\circ\del_{n+2} = 0$.
 :::
 
 ::: {.concept}
-See Hatcher, §3.1, p. 198.
+See [@Hat02, §3.1, p. 198].
 :::
