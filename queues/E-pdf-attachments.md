@@ -65,7 +65,7 @@ External links that are not vendored remain on the resource pages until a delibe
   The existing group-theory resource now points to the collection.
   The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
-- [x] [chapter-2.pdf](assets/attachments/extracted/chapter-2.md) (275L, 18 problems) — calculus — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19` as `SRC-GRE-MATH-CH2-REVIEW`: all 48 Chapter 2 (Calculus I) review questions of *Cracking the GRE Mathematics Subject Test* in source order, `P-GRECH2-01` through `P-GRECH2-48`. Garbled formulas in Questions 1, 24, 36, 41 and 47 were settled against the book extraction and its Chapter 8 solutions, as each audit note records; Question 32's figure was not recovered.
+- [x] [chapter-2.pdf](assets/attachments/extracted/chapter-2.md) (275L, 18 problems) — calculus — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19` as `SRC-GRE-MATH-CH2-REVIEW`: all Chapter 2 (Calculus I) review questions of *Cracking the GRE Mathematics Subject Test* in source order, `P-GRECH2-01` through `P-GRECH2-50`; the scan ends at Question 48, and Questions 49–50 were carded from the book extraction on 2026-09-16. Garbled formulas in Questions 1, 24, 36, 41 and 47 were settled against the book extraction and its Chapter 8 solutions, as each audit note records; Question 32's figure was not recovered.
   The inventory's count of 18 was stale.
   No fallback extraction used.**
 
@@ -83,8 +83,11 @@ External links that are not vendored remain on the resource pages until a delibe
   Keith Conrad's note consists of five worked examples of the Galois correspondence and fixed-field/subgroup calculations, with only an inline exercise-style check rather than a standalone problem set.
   It is already routed through `wiki/algebra/resources/fields.md`; no duplicate problem collection is manufactured.
 
-- [ ] [Cracking_the_GRE_Mathematics_Subject.pdf](assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md) (14062L, 722 problems) — UCSD — alg-geom **BLOCKED 2026-09-14: MinerU Flash upload timed out while awaiting response headers; old extraction has unknown provenance and cannot support intake.
-  No fallback extraction used.**
+- [x] [Cracking_the_GRE_Mathematics_Subject.pdf](assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md) (14062L, 722 problems) — UCSD — alg-geom — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (468 pages).
+  The book poses 275 questions: the seven chapter review sets (25, 50, 30, 15, 20, 20 and 50 questions) and the 65-question practice test of Chapter 9.
+  The review sets are `SRC-GRE-MATH-CH1-REVIEW` through `SRC-GRE-MATH-CH7-REVIEW`, each reconciled question by question against this extraction, and the practice test is `SRC-GRE-MATH-PRACTICE-TEST` (`P-GREPT-01` through `P-GREPT-65`, source order).
+  The 173 numbered worked examples are solved in the running exposition and are not carded; Chapters 8 and 10 are the book's answer explanations and were used only to settle garbled readings, as the card audit notes record.
+  The inventory's `722 problems`, UCSD and alg-geom labels were stale heuristics.
 
 - [x] [day_3_sep_counterex_defn.pdf](assets/attachments/day_3_sep_counterex_defn_extracted.md) (85L, 14 posed items) — topology workshop packet — disposition 2026-09-14: grounded in deterministic MinerU Flash in `4ea970285` and represented in source order by the fourteen IDs in `SRC-TOP-WORKSHOP` section “Revised packet — Separation axioms, counterexamples, and definitions.”
   The packet mixes warm-ups and qualifying-exam excerpts from 2002–2014 rather than being a June 2004 exam; the inventory's `11 problems` and single-date label were stale.

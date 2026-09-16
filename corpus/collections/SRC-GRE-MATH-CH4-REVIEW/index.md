@@ -12,6 +12,7 @@ review: draft
 completion: complete
 provenance:
 - assets/attachments/chapter-4.pdf
+- assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf
 source:
   source_kind: compilation
   area: real-analysis

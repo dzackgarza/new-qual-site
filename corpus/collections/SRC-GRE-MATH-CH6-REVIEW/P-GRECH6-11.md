@@ -17,15 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-Which of the following are subgroups of $\operatorname{GL}(2, \RR)$, the group of invertible $2$ by $2$ matrices (with real entries) under matrix multiplication?
+Which of the following are subgroups of $\GL(2, \RR)$, the group of invertible $2$ by $2$ matrices (with real entries) under matrix multiplication?
 
-I. $T = \{A \in \operatorname{GL}(2, \RR) : \det A = 2\}$
+I. $T = \{A \in \GL(2, \RR) : \det A = 2\}$
 
-II. $U = \{A \in \operatorname{GL}(2, \RR) : A \text{ is upper triangular}\}$
+II. $U = \{A \in \GL(2, \RR) : A \text{ is upper triangular}\}$
 
-III. $V = \{A \in \operatorname{GL}(2, \RR) : \operatorname{tr}(A) = 0\}$
+III. $V = \{A \in \GL(2, \RR) : \tr(A) = 0\}$
 
-Note: $\operatorname{tr}(A)$ denotes the trace of $A$, which is the sum of the entries on the main diagonal.
+Note: $\tr(A)$ denotes the trace of $A$, which is the sum of the entries on the main diagonal.
 
 (A) I and II only
 (B) II only
