@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-R5EN3
 kind: proposition
-title: Covering spaces induce injections on $\pi_1$, Hatcher 1.31
+title: Covering spaces induce injections on $\pi_1$
 classification:
   areas:
   - topology
@@ -14,6 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Given a covering space $\tilde X \mapsvia{p} X$, the induced map $p^*: \pi_1(\tilde X) \to \pi_1(X)$ is injective.
-The image consists of classes $[\gamma]$ whose lifts to $\tilde X$ are again loops.
+Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-2PNEG|covering space]].
+The induced map $p_*\colon \pi_1(\tilde X, \tilde x_0) \to \pi_1(X, x_0)$ is injective, and its image consists of the classes of loops at $x_0$ whose lifts to $\tilde X$ starting at $\tilde x_0$ are loops [@Hat02, Proposition 1.31, p. 61].
 :::
