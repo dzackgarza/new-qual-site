@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-PUOGJ
 kind: definition
-title: Simple Extensions
+title: Simple extensions
 classification:
   areas:
   - algebra
@@ -13,5 +13,5 @@ review: draft
 ---
 
 ::: {.definition}
-An extension $L/k$ is **simple** iff $L = K( \alpha)$ for some \( \alpha\in L \).
+A field extension $L/k$ is \dfn{simple} if there exists $\alpha\in L$ such that $L = k(\alpha)$.
 :::

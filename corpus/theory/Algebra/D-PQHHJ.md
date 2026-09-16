@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-PQHHJ
 kind: definition
-title: Reduced Ring
+title: Reduced ring
 classification:
   areas:
   - algebra
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A ring $R$ is **reduced** if $R$ contains no nonzero nilpotent elements.
+A ring $R$ is \dfn{reduced} if $R$ contains no nonzero [[D-GIGM2|nilpotent]] elements.
 :::
