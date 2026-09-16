@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-11
 kind: problem
-title: UCLA analysis Fall 2016, Problem 11
+title: Entire functions with $f(z)f(1/z)$ bounded are monomials
 classification:
   areas:
   - real-analysis

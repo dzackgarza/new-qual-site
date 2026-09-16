@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-12
 kind: problem
-title: UCLA analysis Fall 2016, Problem 12
+title: Runge approximation by rational functions
 classification:
   areas:
   - real-analysis

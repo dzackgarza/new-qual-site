@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-06
 kind: problem
-title: UCLA analysis Fall 2016, Problem 6
+title: Weakly convergent sequences in $\ell^1$ converge in norm
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-01
 kind: problem
-title: UCLA analysis Fall 2016, Problem 1
+title: $L^1$ convergence from almost everywhere convergence and convergence of norms
 classification:
   areas:
   - real-analysis

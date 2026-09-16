@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-02
 kind: problem
-title: UCLA analysis Fall 2016, Problem 2
+title: Singular measures have infinite density almost everywhere
 classification:
   areas:
   - real-analysis

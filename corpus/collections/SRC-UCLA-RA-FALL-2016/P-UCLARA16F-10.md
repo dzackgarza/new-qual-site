@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-10
 kind: problem
-title: UCLA analysis Fall 2016, Problem 10
+title: Filled Julia set of $z^2-1$
 classification:
   areas:
   - real-analysis

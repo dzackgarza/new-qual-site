@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-08
 kind: problem
-title: UCLA analysis Fall 2016, Problem 8
+title: Jensen's inequality and boundary zeros of disk algebra functions
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-04
 kind: problem
-title: UCLA analysis Fall 2016, Problem 4
+title: $L^2$ is meager in $L^1([0,1])$
 classification:
   areas:
   - real-analysis

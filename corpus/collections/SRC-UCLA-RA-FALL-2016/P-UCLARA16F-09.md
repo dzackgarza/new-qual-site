@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16F-09
 kind: problem
-title: UCLA analysis Fall 2016, Problem 9
+title: Fourier--Laplace transforms of probability measures on $[0,1]$ with polynomial growth
 classification:
   areas:
   - real-analysis
