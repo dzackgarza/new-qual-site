@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-MMDM3
 kind: definition
-title: CW Cell
+title: Attaching an $n$-cell
 classification:
   areas:
   - topology
@@ -13,18 +13,25 @@ review: draft
 ---
 
 ::: {.definition}
-An $n\dash$cell of $X$, say $e^n$, is the image of a map $\Phi: B^n \to X$.
-That is, $e^n = \Phi(B^n)$.
-Attaching an $n\dash$cell to $X$ is equivalent to forming the space $B^n \coprod_{f} X$ where $f: \del B^n \to X$.
+Let $X$ be a topological space and $n\geq 0$.
+Let $D^n\subseteq\RR^n$ be the closed unit ball and $S^{n-1}=\del D^n$ its boundary sphere, with $S^{-1}=\emptyset$.
+For a continuous map $f\colon S^{n-1}\to X$, the space obtained by \dfn{attaching an $n$-cell} to $X$ along $f$ is the quotient space
+$$
+X\cup_f D^n \coloneqq \qty{X\disjoint D^n}/\qty{s\sim f(s) \text{ for } s\in S^{n-1}},
+$$
+the case $X_0=X$, $X_1=D^n$, $A=S^{n-1}$ of [[D-HRU62|attaching a space along a map]].
+The map $f$ is the \dfn{attaching map}.
+The composite $\Phi\colon D^n\to X\disjoint D^n\to X\cup_f D^n$ of the inclusion and the quotient map is the \dfn{characteristic map}, its image $\Phi(D^n)$ is the \dfn{closed $n$-cell}, and $e^n\coloneqq\Phi(D^n\setminus S^{n-1})$ is the \dfn{open $n$-cell}.
+:::
 
-- A $0\dash$cell is a point.
+::: {.example}
+In low dimensions:
 
-- A $1\dash$cell is an interval $[-1, 1] = B^1 \subset \RR^1$.
-  Attaching requires a map from $S^0 =\theset{-1, +1} \to X$
+- $n=0$: $D^0$ is a point and $S^{-1}=\emptyset$, so $X\cup_f D^0=X\disjoint\ts{\pt}$.
 
-- A $2\dash$cell is a solid disk $B^2 \subset \RR^2$ in the plane.
-  Attaching requires a map $S^1 \to X$.
+- $n=1$: $D^1=[-1,1]\subseteq\RR$ and $f$ is a map $S^0=\ts{-1,1}\to X$; the closed $1$-cell is the image of a path from $f(-1)$ to $f(1)$.
 
-- A $3\dash$cell is a solid ball $B^3 \subset \RR^3$.
-  Attaching requires a map from the sphere $S^2 \to X$.
+- $n=2$: $D^2\subseteq\RR^2$ is the closed disk, attached along a map $S^1\to X$.
+
+- $n=3$: $D^3\subseteq\RR^3$ is the closed ball, attached along a map $S^2\to X$.
 :::
