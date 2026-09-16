@@ -13,13 +13,11 @@ review: draft
 ---
 
 ::: {.definition}
-Given two topologies $\tau_1, \tau_2$,
+Let $\tau_1$ and $\tau_2$ be topologies on a set $X$.
+The topology $\tau_1$ is \dfn{finer} than $\tau_2$ if $\tau_2\subseteq\tau_1$, and \dfn{coarser} than $\tau_2$ if $\tau_1\subseteq\tau_2$.
+The topologies $\tau_1$ and $\tau_2$ are \dfn{comparable} if $\tau_1\subseteq\tau_2$ or $\tau_2\subseteq\tau_1$.
+:::
 
-- $\tau_1$ is **finer** than $\tau_2$ iff $\tau_1 \contains \tau_2$.
-
-- $\tau_1$ is **coarser** than $\tau_2$ iff $\tau_1 \iscontainedin \tau_2$.
-
-Two topologies are **comparable** if either $\tau_1 < \tau_2$ or $\tau_2 < \tau_1$.
-
-> Note: more open sets is like having a "finer" resolution.
+::: {.concept}
+See [@Mun00, §12].
 :::
