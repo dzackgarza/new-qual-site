@@ -21,5 +21,5 @@ The [[D-QK5BM|Euler characteristic]] of their connected sum is
 $$
 \chi(A\# B) = \chi(A) + \chi(B) - 2
 $$
-[@Hat02, Theorem 2.44, p. 146].
+[@Hat02].
 :::

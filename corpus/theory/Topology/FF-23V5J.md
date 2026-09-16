@@ -18,5 +18,5 @@ review: draft
 
 ::: {.fact}
 Let $\Sigma$ be a connected [[FD-QPIIL|closed surface]] with [[D-QK5BM|Euler characteristic]] $\chi(\Sigma) = 2$.
-Then $\Sigma$ is orientable of genus $0$, and $\Sigma \cong S^2$ [@Mun00, Theorem 77.5]; [@Hat02, Examples 2.36--2.37, p. 141].
+Then $\Sigma$ is orientable of genus $0$, and $\Sigma \cong S^2$ [@Mun00]; [@Hat02, Examples 2.36--2.37, p. 141].
 :::

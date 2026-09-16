@@ -18,7 +18,7 @@ For $n\geq 1$ and all $i$, the reduced cohomology groups of spheres satisfy
 $$
 \tilde H^i(S^n) \cong \tilde H^{i-1}(S^{n-1})
 $$
-[@Hat02, §3.2, p. 219].
+[@Hat02].
 :::
 
 ::: {.remark}

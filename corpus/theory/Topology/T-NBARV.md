@@ -32,5 +32,5 @@ $$
 $$
 
 Thus compact connected surfaces are classified up to homeomorphism by orientability, the number $b$ of boundary components, and $\chi(X)$; equivalently, by $(g,b)$ in the orientable case and $(k,b)$ in the nonorientable case.
-For closed surfaces ($b=0$), orientability and Euler characteristic alone determine the homeomorphism type [@Mun00, Theorem 77.5]; [@Hat02, Examples 2.36--2.37, p. 141].
+For closed surfaces ($b=0$), orientability and Euler characteristic alone determine the homeomorphism type [@Mun00]; [@Hat02, Examples 2.36--2.37, p. 141].
 :::
