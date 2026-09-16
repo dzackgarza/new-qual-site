@@ -1,43 +1,38 @@
 ---
-title: "Appendix: Functional Analysis"
+title: "Appendix: Functional analysis"
 order: 33
 ---
 
-# Appendix: Functional Analysis
+# Appendix: Functional analysis
 
-The Banach-space theorems split into two groups.
-Open mapping, bounded inverse, and closed graph are three faces of the same completeness phenomenon for a single linear operator.
-Uniform boundedness controls an entire family of operators.
-Hahn--Banach is different: it is an extension/separation theorem and does not require completeness.
+The open mapping, bounded inverse, and closed graph theorems concern a single linear operator between Banach spaces, and each is proved from the Baire category theorem.
+The uniform boundedness principle concerns a family of operators and is also proved from the Baire category theorem.
+The Hahn--Banach theorem concerns extension of linear functionals and has no completeness hypothesis.
 
 ## Open mapping, bounded inverse, and closed graph
 
-Let $X,Y$ be Banach spaces.
-A bounded surjective linear map $T:X\to Y$ is open; hence a bounded bijection has bounded inverse.
-Equivalently in the form used for operators, an everywhere-defined linear map $T:X\to Y$ whose graph is closed must be bounded.
-When a problem asks you to prove continuity without an estimate, check whether one of these qualitative hypotheses is easier to verify than $\|Tx\|\le C\|x\|$ directly.
-
-[[T-FO27T]]
+Let $X$ and $Y$ be Banach spaces.
 
 [[T-KQTPR]]
 
+[[T-FO27T]]
+
 [[T-TTLXS]]
+
+::: {.remark}
+To prove that a linear map $T\colon X\to Y$ is bounded, it suffices by the closed graph theorem to show that $x_n\to x$ and $Tx_n\to y$ imply $y = Tx$, which avoids an explicit estimate $\norm{Tx}\le C\norm{x}$.
+
+:::
 
 ## Uniform boundedness
 
-For a family of bounded linear maps $T_\alpha:X\to Y$ with $X$ Banach, pointwise boundedness—$\sup_\alpha\|T_\alpha x\|<\infty$ for every fixed $x$—forces a uniform operator-norm bound $\sup_\alpha\|T_\alpha\|<\infty$.
-The quantifier swap is the whole theorem; it is the standard contradiction tool when operator norms are suspected to blow up.
+[[FT-JRRRW]]
 
-[[T-F2THV]]
+::: {.remark}
+Contrapositively, if $\sup_{T\in\mathcal F}\norm{T}=\infty$, then there exists $x\in X$ with $\sup_{T\in\mathcal F}\norm{Tx}_Y=\infty$.
 
-[[FT-JRRRW]] [[FF-YJXMF]]
+:::
 
 ## Hahn--Banach
 
-Hahn--Banach extends a bounded linear functional from a subspace without increasing its norm.
-Its practical consequences are separation and norm detection: for nonzero $x$ one can find a continuous functional attaining $\|x\|$ on $x$ after normalization.
-Unlike the three Banach-space isomorphism theorems above, the extension principle is not a completeness statement.
-
 [[T-OW2QG]]
-
-[[FF-7NXLO]]
