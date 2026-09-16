@@ -55,7 +55,6 @@ For $x^3 - 2$, the tower $\QQ \subseteq \QQ(\zeta_3)\subseteq \QQ(\zeta_3, 2^{1/
 [[T-EN5H4]]
 
 ::: {.remark title="Solvability by radicals"}
-Over a field $K$ of characteristic $0$, a polynomial $f\in K[x]$ is solvable by radicals if and only if $\Gal(\SF(f)/K)$ is a [[D-DFIDP|solvable group]].
-The symmetric group $S_n$ is solvable if and only if $n\leq 4$.
+Over a field $K$ of characteristic $0$, a polynomial $f\in K[x]$ is solvable by radicals if and only if $\Gal(\SF(f)/K)$ is a [[D-DFIDP|solvable group]]. The symmetric group $S_n$ is solvable if and only if $n\leq 4$.
 For example, $f = x^5-4x+2$ is irreducible by Eisenstein's criterion at $2$ and has exactly three real roots, so complex conjugation gives a transposition in its Galois group and irreducibility gives a $5$-cycle; hence its Galois group is $S_5$, and $f$ is not solvable by radicals.
 :::

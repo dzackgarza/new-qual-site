@@ -19,12 +19,10 @@ For finitely generated modules over such a ring, the properties of being [[D-LIE
 
 Let $R$ be a PID and $M$ a finitely generated $R$-module.
 
-1. **Presentation.**
-   Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$.
+1. **Presentation.** Write $M \cong R^n / \im(A)$ for a matrix $A$ over $R$.
    For an abelian group given by generators and relations, $A$ is the relation matrix.
 
-2. **Smith normal form.**
-   The Smith normal form of $A$ has diagonal entries $a_1 \divides a_2 \divides \cdots \divides a_k$, with $a_i = d_i/d_{i-1}$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors of $A$.
+2. **Smith normal form.** The Smith normal form of $A$ has diagonal entries $a_1 \divides a_2 \divides \cdots \divides a_k$, with $a_i = d_i/d_{i-1}$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors of $A$.
    See [[algebra/linear-algebra/smith-normal-form|Smith normal form]].
 
 3. **Decomposition.**
@@ -33,8 +31,7 @@ Let $R$ be a PID and $M$ a finitely generated $R$-module.
    $$
    The free rank of $M$ is $n-k$, and the summands $R/\gens{a_i}$ with $a_i$ a unit are zero; the nonunit $a_i$ are the invariant factors of $M$.
 
-4. **Elementary divisors and invariant factors.**
-   The elementary divisors are the prime-power factors of the invariant factors.
+4. **Elementary divisors and invariant factors.** The elementary divisors are the prime-power factors of the invariant factors.
    Conversely, the largest invariant factor is the product, over the primes $p$, of the largest elementary divisor that is a power of $p$; removing those elementary divisors and repeating gives the next invariant factor.
 
 ## Three instances of the structure theorem
@@ -60,12 +57,13 @@ For finitely generated modules over a PID, the four conditions coincide.
 \envlist
 
 - $\ZZ/2$ over $\ZZ/6$ is projective and not free: $\ZZ/6\cong\ZZ/2\times\ZZ/3$, so $\ZZ/2$ is a direct summand of a free module, and it has $2<6$ elements.
+
 - $\QQ$ over $\ZZ$ is flat, not projective, and not finitely generated.
+
 - The ideal $\gens{2,x} \subseteq \ZZ[x]$ is torsion-free and not free.
 :::
 
 ## Free ideals
 
-A nonzero ideal $I$ of an integral domain $R$ is free as an $R$-module if and only if it is principal ([[PR-ASW5L]]).
-For distinct nonzero $m_1,m_2\in I$, the relation $m_2\cdot m_1 - m_1\cdot m_2 = 0$ has nonzero coefficients, so a basis of $I$ has one element.
+A nonzero ideal $I$ of an integral domain $R$ is free as an $R$-module if and only if it is principal ([[PR-ASW5L]]). For distinct nonzero $m_1,m_2\in I$, the relation $m_2\cdot m_1 - m_1\cdot m_2 = 0$ has nonzero coefficients, so a basis of $I$ has one element.
 In particular, every nonprincipal ideal of an integral domain is a torsion-free module that is not free.

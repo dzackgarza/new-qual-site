@@ -31,8 +31,7 @@ $$
 
 ## Repeated integration by parts
 
-For $\int P(x)g(x)\dx$ with $P$ a polynomial, the tabular method applies integration by parts $\deg P + 1$ times; see [[prelim/useful-tricks|Useful tricks]].
-If the original integral reappears after integrating by parts, as in $\int e^x\sin x\dx$, the resulting equation can be solved for the integral.
+For $\int P(x)g(x)\dx$ with $P$ a polynomial, the tabular method applies integration by parts $\deg P + 1$ times; see [[prelim/useful-tricks|Useful tricks]]. If the original integral reappears after integrating by parts, as in $\int e^x\sin x\dx$, the resulting equation can be solved for the integral.
 
 ## Series
 

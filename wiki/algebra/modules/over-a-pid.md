@@ -69,8 +69,7 @@ The exact sequence $0\to M_t\to M \to M/M_t\to 0$ splits because $M/M_t$ is free
 ::: {.proof}
 Let $R$ be an integral domain and $I\neq0$ an ideal.
 
-$\implies$:
-Suppose $I$ is free with basis $B$, and suppose $B$ contains distinct elements $m_1,m_2$.
+$\implies$: Suppose $I$ is free with basis $B$, and suppose $B$ contains distinct elements $m_1,m_2$.
 Since $R$ is commutative,
 $$
 (-m_2)\, m_1 + m_1\, m_2 = 0,
@@ -78,8 +77,7 @@ $$
 which is a relation with nonzero coefficients $-m_2$ and $m_1$.
 This contradicts $B$ being a basis, so $B = \ts m$ has one element and $I = \gens{m}$ is principal.
 
-$\impliedby$:
-Suppose $I = \gens{m}$ with $m \neq 0$.
+$\impliedby$: Suppose $I = \gens{m}$ with $m \neq 0$.
 Every $x\in I$ has the form $\alpha m$, and $\alpha m = 0$ implies $\alpha = 0$ because $R$ is a domain.
 So $\ts{m}$ is a basis of $I$.
 :::

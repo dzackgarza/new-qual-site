@@ -130,8 +130,11 @@ The class equation is this formula for the conjugation action of $G$ on itself; 
 $G$ acts on itself by $\phi\colon g \mapsto (h\mapsto gh)$.
 
 - $\Orb(x) = G$, so the action is transitive.
+
 - $\Stab(x) = \ts e$, and $\Fix(\phi) = \emptyset$ unless $G$ is trivial.
+
 - The kernel is trivial, so $G$ embeds in the symmetric group on the set $G$ (Cayley's theorem).
+
 - Orbit-stabilizer gives the bijection $G/\ts e \to G$.
 :::
 
@@ -140,9 +143,13 @@ $G$ acts on itself by $g\actson x = gxg\inv$.
 
 - $\Orb(x) = [x]$ is the [[D-HLDEY|conjugacy class]] of $x$.
   The orbit of $e$ is $\ts e$, so the action is transitive only when $G$ is trivial; every orbit is a singleton if and only if $G$ is abelian.
+
 - $\Fix(\phi) = Z(G)$, the [[D-NK7G7|center]].
+
 - $\Stab(x) = C_G(x)$, the [[D-PX64W|centralizer]] of $x$.
+
 - The kernel is $Z(G)$.
+
 - Orbit-stabilizer gives a bijection $G/C_G(x)\to[x]$, so the size of a conjugacy class is the index of the centralizer.
 :::
 
@@ -150,9 +157,13 @@ $G$ acts on itself by $g\actson x = gxg\inv$.
 $G$ acts on $\ts{H \st H\leq G}$ by conjugation.
 
 - $\Orb(H) = \ts{gHg\inv \st g\in G}$ is the set of conjugates of $H$.
+
 - $\Fix(\phi)$ is the set of normal subgroups of $G$.
+
 - $\Stab(H) = N_G(H)$ is the [[D-OZ2RR|normalizer]] of $H$.
+
 - The kernel is $\Intersect_{H\leq G} N_G(H)$.
+
 - Orbit-stabilizer gives the number of conjugates of $H$:
 $$
 \size{\ts{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
@@ -163,6 +174,7 @@ $$
 For a proper subgroup $H < G$, $G$ acts on $G/H$ by left translation.
 
 - $\Orb(eH) = G/H$, so the action is transitive.
+
 - $\Stab(xH) = xHx\inv$, since
 $$
 \begin{aligned}
@@ -171,7 +183,9 @@ $$
 &= xHx\inv.
 \end{aligned}
 $$
+
 - $\Fix(\phi) = \emptyset$, because the action is transitive and $\size{G/H} > 1$.
+
 - The kernel is $\Intersect_{g\in G} gHg\inv$, the [[D-QMVEB|normal core]] of $H$, which is the largest normal subgroup of $G$ contained in $H$.
 
 This action gives the index bounds on [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|Show $G$ is not simple]].

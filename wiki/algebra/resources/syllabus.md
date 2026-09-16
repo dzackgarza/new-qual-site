@@ -244,8 +244,7 @@ See [@DF04, chaps. 1-9].
 
 - Classification of finitely generated modules over PIDs, in particular over Euclidean domains
 
-- Modules over PIDs and canonical forms of matrices
-  [@DF04, secs. 10.1-10.3 and 12.1-12.3]
+- Modules over PIDs and canonical forms of matrices [@DF04, secs. 10.1-10.3 and 12.1-12.3]
 
   - Constructive proof of the decomposition [@DF04, exs. 12.1.16-19]
 

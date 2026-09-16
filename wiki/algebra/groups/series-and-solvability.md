@@ -10,8 +10,7 @@ topics:
 
 ## Normal and composition series
 
-A [[D-FYX4I|composition series]] of $G$ is a chain $1=G_0\normal G_1\normal\cdots\normal G_n=G$ whose factors $G_{i+1}/G_i$ are [[D-T2NZ4|simple groups]].
-By the Jordan--Hölder theorem, any two composition series of a finite group have the same length and the same composition factors, counted with multiplicity and up to isomorphism.
+A [[D-FYX4I|composition series]] of $G$ is a chain $1=G_0\normal G_1\normal\cdots\normal G_n=G$ whose factors $G_{i+1}/G_i$ are [[D-T2NZ4|simple groups]]. By the Jordan--Hölder theorem, any two composition series of a finite group have the same length and the same composition factors, counted with multiplicity and up to isomorphism.
 
 [[D-KM2DV]]
 
@@ -30,8 +29,7 @@ By the Jordan--Hölder theorem, any two composition series of a finite group hav
 ## Central and derived series
 
 The [[D-D7L4X|lower central series]] $\gamma_1(G)=G$, $\gamma_{i+1}(G)=[\gamma_i(G),G]$ and the [[D-XEDSI|upper central series]] $Z_0(G)=1$, $Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G))$ reach $1$ and $G$ respectively if and only if $G$ is [[D-53JVH|nilpotent]], and in that case they have the same length, the nilpotency class of $G$.
-The [[D-W2QAA|derived series]] $G^{(0)}=G$, $G^{(i+1)}=[G^{(i)},G^{(i)}]$ reaches $1$ if and only if $G$ is [[D-DFIDP|solvable]].
-Each of these series is determined by $G$.
+The [[D-W2QAA|derived series]] $G^{(0)}=G$, $G^{(i+1)}=[G^{(i)},G^{(i)}]$ reaches $1$ if and only if $G$ is [[D-DFIDP|solvable]]. Each of these series is determined by $G$.
 
 [[D-D7L4X]]
 

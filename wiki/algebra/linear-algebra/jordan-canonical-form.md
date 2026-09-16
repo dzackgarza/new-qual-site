@@ -46,11 +46,15 @@ In general, $\dim\ker(A-\lambda I)^k-\dim\ker(A-\lambda I)^{k-1}$ is the number 
 Assume $\chi_A$ splits over $k$, and let $f\colon V\to V$ be the linear map given by $A$.
 
 - $V$ is a direct sum of $f$-invariant subspaces on each of which $f$ is indecomposable, and $f$ is block diagonal with respect to such a decomposition, so it suffices to treat indecomposable $f$.
+
 - By Fitting's lemma, for every linear map $h\colon V\to V$ there is $m\geq 1$ with $V = \ker h^m \oplus \im h^m$, and both summands are $h$-invariant.
+
 - Let $\lambda$ be an eigenvalue of $f$ with eigenvector $v$, and apply Fitting's lemma to $h\da f-\lambda I$.
   Since $v\in\ker h^m$ and $f$ is indecomposable, $V = \ker h^m$, so $h$ is nilpotent; let $k$ be its nilpotency index.
+
 - Choose $w$ with $h^{k-1}w \neq 0$.
   The span $W$ of $w, hw, \ldots, h^{k-1}w$ is $h$-invariant, these vectors are linearly independent, and $W$ has an $h$-invariant complement; since $f$ is indecomposable, $W = V$ and $k=\dim V$.
+
 - In the basis $h^{k-1}w,\ldots,hw,w$, the matrix of $f = \lambda I + h$ is the Jordan block $J_k(\lambda)$.
 :::
 
@@ -83,11 +87,16 @@ If $\chi_A$ splits, then $V = \bigoplus_i V^{\lambda_i}$.
 \envlist
 
 - Write $\chi_A(x) = \prod_i (x-\lambda_i)^{n_i}$ with the $\lambda_i$ distinct, and set $V^{j} \da \ker (A-\lambda_j I)^n$.
+
 - For each $j$, let $h_j(x) = \prod_{i\neq j}(x-\lambda_i)^{n_i}$ and $W^j \da \im(h_j(A))$.
+
 - $W^j \subseteq \ker (A - \lambda_j I)^{n_j}\subseteq V^j$, since $(A-\lambda_j I)^{n_j} h_j(A) = \chi_A(A) = 0$ by Cayley--Hamilton.
+
 - $\sum_j W^j = V$: the $h_j$ have no common factor, so there are $f_j\in k[x]$ with $\sum_j f_j h_j = 1$, hence $\sum_j f_j(A)h_j(A) = I$ and $\vector v = \sum_j f_j(A)h_j(A)\vector v\in\sum_j W^j$ for every $\vector v$.
+
 - The sum is direct: $h_j(A)W^i = 0$ for $i\neq j$, because $(x-\lambda_i)^{n_i}$ divides $h_j$.
   Hence for $\vector w\in W^i$, $\vector w = \sum_j f_j(A)h_j(A)\vector w = f_i(A)h_i(A)\vector w$, and applying $f_i(A)h_i(A)$ to a relation $0 = \sum_j \vector w_j$ with $\vector w_j\in W^j$ gives $\vector w_i = 0$.
+
 - $V^j = W^j$: for $i\neq j$, $A-\lambda_j I = (A-\lambda_i I) + (\lambda_i-\lambda_j)I$ is the sum of a nilpotent operator and a nonzero scalar on the invariant subspace $W^i$, hence invertible there.
   If $\vector v = \sum_i \vector w_i\in V^j$, then $0=(A-\lambda_j I)^n\vector v = \sum_i (A-\lambda_j I)^n\vector w_i$ with each term in $W^i$, so $\vector w_i = 0$ for $i\neq j$ and $\vector v\in W^j$.
 :::

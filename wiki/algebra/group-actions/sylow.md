@@ -17,8 +17,11 @@ Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^k m$ with $p\not
 \envlist
 
 - $n_p\divides m$ and $n_p\equiv1\pmod p$.
+
 - A Sylow $p$-subgroup is normal if and only if $n_p=1$.
-- If $k=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$. For $k>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
+
+- If $k=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$.
+  For $k>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 :::
 
 [[L-354HC]]

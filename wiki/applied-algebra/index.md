@@ -1,22 +1,22 @@
 ---
-title: Applied Algebra
+title: Applied algebra
 order: 50
 ---
 
-# Applied Algebra
+# Applied algebra
 
-UCSD Math 202. Five subjects, none of which the other papers cover in this form.
+UCSD Math 202 covers five subjects.
 
-- [[applied-algebra/matrix-analysis/index|Matrix analysis]] -- Hermitian and normal matrices, the factorizations, eigenvalue location.
+- [[applied-algebra/matrix-analysis/index|Matrix analysis]] -- Hermitian, positive definite, unitary, and normal matrices, matrix factorizations, eigenvalue location, matrix norms.
 
-- [[applied-algebra/representation-theory/index|Representation theory]] -- character tables, induction, and the symmetric group.
+- [[applied-algebra/representation-theory/index|Representation theory]] -- character tables, induced representations, and representations of the symmetric group.
 
-- [[applied-algebra/symmetric-functions/index|Symmetric functions]] -- the five bases, and the bridge to representations.
+- [[applied-algebra/symmetric-functions/index|Symmetric functions]] -- the monomial, elementary, complete homogeneous, power sum, and Schur bases, and the characteristic map.
 
-- [[applied-algebra/grobner-bases/index|Gröbner bases and varieties]] -- Buchberger, elimination, the Nullstellensatz.
+- [[applied-algebra/grobner-bases/index|Gröbner bases and varieties]] -- Buchberger's algorithm, elimination, the Nullstellensatz.
 
-- [[applied-algebra/invariant-theory/index|Invariant theory]] -- Noether, Molien, the Reynolds operator.
+- [[applied-algebra/invariant-theory/index|Invariant theory]] -- the finiteness theorems of Noether and Hilbert, Molien's formula, the Reynolds operator.
 
-Past exams are on the [Sources listing](exams.html); each exam page presents its problems in exam order.
+Past exams are listed in the [Sources listing](exams.html); each exam page lists its problems in exam order.
 
 [[applied-algebra/resources/index|Resources]].

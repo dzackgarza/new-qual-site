@@ -16,10 +16,12 @@ Galois theory exercises with solutions: [chapter 4](https://feog.github.io/chap4
 ## Degree bounds
 
 - $\size{G} = [\SF(f):\QQ]$.
+
 - If $f$ is irreducible, $G$ acts transitively on the roots, so by orbit-stabilizer $n = \size{\Orb(r_1)} = [G:\Stab_G(r_1)]$ divides $\size G$, and
   $$
   n\divides \size G \divides n!.
   $$
+
 - For each root $r_i$, $[\QQ(r_i):\QQ]$ divides $[\SF(f):\QQ]$.
 
 [[PR-LXSGE]]
@@ -58,8 +60,10 @@ $$
 
 ::: {.remark title="Formulas"}
 - For $f = ax^2+bx+c$, $\Delta = b^2-4ac$.
+
 - For $f = ax^3+bx^2+cx+d$, $\Delta = b^2c^2 - 4ac^3 - 4b^3d - 27a^2d^2 + 18abcd$.
   For $a=1$, the substitution $x = t - b/3$ gives $t^3+pt+q$, with the same discriminant $\Delta = -4p^3-27q^2$.
+
 - $\Delta_f = 0$ if and only if $f$ has a repeated root.
 :::
 
@@ -109,11 +113,13 @@ Similarly, $x^7-x-1$ is irreducible modulo $2$ and factors modulo $3$ into irred
 $n=4$:
 
 - $C_4$ contains a $4$-cycle and $C_2^2$ does not; both contain elements of type $(2,2)$.
+
 - $A_4$ contains no transposition and no $4$-cycle, so either one in $G$ excludes $A_4$; the discriminant separates $S_4$ from $A_4$.
 
 $n=5$ and general $n$:
 
 - A subgroup of $S_5$ containing a transposition and a $5$-cycle is $S_5$.
+
 - $S_n = \gens{(a,b), (1,2,\ldots,n)}$ if and only if $\gcd(b-a, n) = 1$.
 :::
 
@@ -123,6 +129,7 @@ $n=5$ and general $n$:
 \envlist
 
 - A permutation lies in $A_n$ if and only if it has an even number of cycles of even length.
+
 - $A_4$ contains no transposition and no $4$-cycle.
 :::
 
@@ -142,11 +149,16 @@ Generating sets for $S_n$ and $A_n$: [Keith Conrad, Generating sets](https://kco
 \envlist
 
 - If $f = f_1\cdots f_k$ with the $f_i$ irreducible, then $G$ permutes the roots of each $f_i$ among themselves, so $G$ embeds in $\prod_i\Gal(\SF(f_i)/\QQ)$.
+
 - If $\SF(f)$ contains a subfield that is not normal over $\QQ$, then $G$ is nonabelian.
   For $f = x^3-2$, $\SF(f) = \QQ(\zeta_3, 2^{1/3})$ contains the non-normal subfield $\QQ(2^{1/3})$, so $G = S_3$.
+
 - If $f$ has exactly $k$ pairs of nonreal roots, complex conjugation restricts to an element of $G$ that is a product of $k$ disjoint transpositions.
+
 - If every exponent in $f$ is even, the roots come in pairs $\pm r$, and $G$ permutes these pairs; for example, $x^4-5x^2+5$ has Galois group $C_4$.
+
 - For positive integers $a\neq b$, $\QQ(\zeta_a) = \QQ(\zeta_b)$ if and only if one of $a,b$ is odd and the other is twice it.
+
 - If $f = a_nx^n + \cdots + a_0\in\ZZ[x]$ and $p/q$ is a rational root in lowest terms, then $p \divides a_0$ and $q\divides a_n$.
 
 Subgroup lattices of small groups: [Groups of small order](https://hobbes.la.asu.edu/groups/groups.html).

@@ -9,27 +9,27 @@ topics:
 
 # Representation theory
 
-The same subject as [[algebra/representations/index|the algebra qual's representations chapter]], asked in more detail: this paper expects character tables to be built, not just used.
+The representation theory of finite groups is also treated on [[algebra/representations/index|Representations]]; this page adds induced representations, representations of the symmetric group, and the Frobenius--Schur indicator.
 
-## The framework
+## Maschke and Schur
 
-[[T-PIO2B|Maschke's theorem]] splits every complex representation of a finite group into irreducibles, and [[T-YHH3M|Schur's lemma]] turns the multiplicities into character inner products. Together they give
-\[
-\size G = \sum_i d_i^2
-,\]
-with the number of irreducibles equal to the number of conjugacy classes.
+By [[T-PIO2B|Maschke's theorem]], every finite-dimensional complex representation of a finite group $G$ is a direct sum of irreducible representations, and by [[T-YHH3M|Schur's lemma]] the multiplicities are inner products of characters.
+If $d_1,\ldots,d_r$ are the dimensions of the irreducible representations, then
+$$
+\size G = \sum_i d_i^2,
+$$
+and $r$ is the number of conjugacy classes of $G$.
 
 ## Building a character table
 
-1. Count conjugacy classes; the table is square.
-2. Write the trivial character, and the degree-one characters, which are the characters of $G/[G,G]$.
-3. Use $\size G = \sum d_i^2$ to pin the remaining degrees.
-4. Take the permutation character of an action, $\chi(g) = \size{\Fix(g)}$, and subtract the trivial character.
-5. Finish with column orthogonality.
+1. The number of irreducible characters equals the number of conjugacy classes, so the table is square.
+2. The degree-one characters are the characters of $G/[G,G]$; they include the trivial character.
+3. The degrees satisfy $\size G = \sum_i d_i^2$ and divide $\size G$.
+4. For an action of $G$ on a finite set, the permutation character is $\chi(g) = \size{\Fix(g)}$; if the action is $2$-transitive, $\chi-\chi_{\text{triv}}$ is irreducible.
+5. The remaining entries are determined by the column orthogonality relations.
 
-## What this paper adds
+## Induced representations, the symmetric group, and indicators
 
-- **Induced and restricted representations,** with Frobenius reciprocity $\inner{\Ind_H^G \psi}{\chi}_G = \inner{\psi}{\Res^G_H\chi}_H$, which is the tool for building characters of a large group from a subgroup.
-- **The symmetric group specifically:** irreducibles are indexed by partitions of $n$, characters are computed by the Murnaghan--Nakayama rule, and dimensions by the hook length formula.
-  That connects directly to [[applied-algebra/symmetric-functions/index|symmetric functions]].
-- **Real and quaternionic types,** detected by the Frobenius--Schur indicator.
+- **Induced and restricted representations.** For $H\le G$, a character $\psi$ of $H$, and a character $\chi$ of $G$, Frobenius reciprocity gives $\inner{\Ind_H^G \psi}{\chi}_G = \inner{\psi}{\Res^G_H\chi}_H$; characters of $G$ are obtained by inducing characters of subgroups and decomposing.
+- **The symmetric group.** The irreducible representations of $S_n$ are indexed by the partitions of $n$, their characters are computed by the Murnaghan--Nakayama rule, and their dimensions by the hook length formula; see [[applied-algebra/symmetric-functions/index|Symmetric functions]].
+- **Real and quaternionic representations.** The Frobenius--Schur indicator ${1\over\size G}\sum_{g\in G}\chi(g^2)$ of an irreducible character $\chi$ is $1$, $0$, or $-1$ according as the representation is realizable over $\RR$, has a non-real character, or is quaternionic.

@@ -23,13 +23,11 @@ It exists over every field; the [[algebra/linear-algebra/jordan-canonical-form|J
 ::: {.proof}
 Let $V = k^n$ with $x$ acting by $A$.
 
-$\impliedby$:
-Suppose $v$ is a cyclic vector, so that $v, Av, \ldots, A^{n-1}v$ is a basis of $V$.
+$\impliedby$: Suppose $v$ is a cyclic vector, so that $v, Av, \ldots, A^{n-1}v$ is a basis of $V$.
 If $n' \da \deg\min_A < n$, then $\min_A(A)v = 0$ is a linear dependence among $v, Av, \ldots, A^{n'}v$, a contradiction.
 Hence $\deg\min_A = n = \deg\chi_A$, and since $\min_A$ divides $\chi_A$ and both are monic, $\min_A = \chi_A$.
 
-$\implies$:
-By the structure theorem $V\cong \bigoplus_{i=1}^m k[x]/\gens{p_i}$ with nonconstant invariant factors $p_1\divides\cdots\divides p_m$, $\chi_A = \prod_i p_i$, and $\min_A = p_m$.
+$\implies$: By the structure theorem $V\cong \bigoplus_{i=1}^m k[x]/\gens{p_i}$ with nonconstant invariant factors $p_1\divides\cdots\divides p_m$, $\chi_A = \prod_i p_i$, and $\min_A = p_m$.
 If $\min_A = \chi_A$, comparing degrees gives $m = 1$, so $V\cong k[x]/\gens{p_m}$ is a cyclic $k[x]$-module.
 If $v$ generates $V$, then $V = \ts{f(A)v \st f\in k[x]}$ is spanned by $v, Av, A^2v, \ldots$, and by Cayley--Hamilton by $v, Av, \ldots, A^{n-1}v$.
 :::
@@ -72,8 +70,8 @@ C(p) =
  &  &  & 1 & -a_{n-1}
 \end{bmatrix},
 $$
-  whose characteristic polynomial is $p$.
-  Hence $\chi_T = \prod_i p_i$.
+whose characteristic polynomial is $p$.
+Hence $\chi_T = \prod_i p_i$.
 :::
 
 ## Cyclic vectors

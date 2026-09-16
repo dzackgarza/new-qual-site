@@ -37,6 +37,7 @@ Then $\pi_G$ is a $G$-equivariant projection onto $W$, and $\ker\pi_G$ is a $G$-
 For irreducible representations $V$ and $W$ of $G$:
 
 - every $G$-equivariant linear map $V\to W$ is zero or an isomorphism;
+
 - if $V$ is finite-dimensional over an algebraically closed field such as $\CC$, every $G$-equivariant linear map $f\colon V\to V$ is a scalar multiple of the identity.
 
 For the second statement, $f$ has an eigenvalue $\lambda$ because the field is algebraically closed, and $f - \lambda I$ is a $G$-equivariant map with nonzero kernel, hence zero by the first statement.
