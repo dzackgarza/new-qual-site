@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-GSDKO
 kind: proposition
-title: Orbit Stabilizer Isomorphism
+title: Orbit-stabilizer bijection for a transitive action
 classification:
   areas:
   - algebra
@@ -14,10 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $G\actson X$ transitively, then for any choice of $x\in X$ there is an isomorphism of sets given by
-\[
-\Phi: G/G_{x} &\mapsvia{\sim} X \\
-gG_{x} &\mapsto g\actson x
-.\]
+::: {.proposition}
+Let a group $G$ [[D-WYC7C|act]] transitively on a set $X$, and let $x \in X$ with stabilizer $G_x$.
+Then
+$$
+\begin{aligned}
+\Phi\colon G/G_{x} &\to X \\
+gG_{x} &\mapsto g \cdot x
+\end{aligned}
+$$
+is a well-defined bijection from the set of left cosets of $G_x$ to $X$, and $\Phi(h \cdot gG_x) = h \cdot \Phi(gG_x)$ for all $g, h \in G$.
 :::

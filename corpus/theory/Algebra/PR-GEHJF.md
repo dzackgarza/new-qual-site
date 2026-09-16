@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-GEHJF
 kind: proposition
-title: Characterizations of Rings
+title: Implications among fields, PIDs, UFDs, and Noetherian rings
 classification:
   areas:
   - algebra
@@ -15,19 +15,19 @@ review: draft
 ---
 
 ::: {.proposition}
-\envlist
+Let $R$ be a commutative ring with $1$.
 
-- $R$ a commutative division ring $\implies R$ is a field
+- If $R$ is a commutative [[D-7O2CH|division ring]], then $R$ is a [[D-UI6CU|field]].
 
-- $R$ a finite integral domain $\implies R$ is a field.
+- If $R$ is a finite [[D-QJ3QL|integral domain]], then $R$ is a field.
 
-- $\FF$ a field $\iff \FF[x]$ is a PID.
+- $R$ is a field if and only if $R[x]$ is a [[D-HTIL5|principal ideal domain]].
 
-- $\FF$ is a field $\iff \FF$ is a commutative simple ring.
+- $R$ is a field if and only if $R$ is a [[FD-SNOTW|simple]] ring with $1 \neq 0$.
 
-- $R$ is a UFD $\iff R[x]$ is a UFD.
+- $R$ is a [[D-INULL|unique factorization domain]] if and only if $R[x]$ is a unique factorization domain.
 
-- $R$ a PID $\implies R[x]$ is a UFD
+- If $R$ is a principal ideal domain, then $R[x]$ is a unique factorization domain.
 
-- $R$ a PID $\implies R$ Noetherian
+- If $R$ is a principal ideal domain, then $R$ is [[D-TZXBO|Noetherian]].
 :::

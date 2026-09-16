@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-For $\FF_p$ a finite field of prime order, all quadratic extensions $E/\FF_p$ are isomorphic.
+Let $p$ be a prime.
+Any two field extensions $E/\FF_p$ and $E'/\FF_p$ of degree $2$ are isomorphic.
 :::

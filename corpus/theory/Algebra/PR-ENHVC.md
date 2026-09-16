@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-ENHVC
 kind: proposition
-title: 'Separability test: $\gcd$ with derivative'
+title: A polynomial is separable if and only if $\gcd(f, f') = 1$
 classification:
   areas:
   - algebra
@@ -14,6 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-$f$ is separable iff $\gcd(f, f')=1$, so $f, f'$ share no common roots.
-Moreover, the multiple roots of $f$ are precisely the roots of $\gcd(f, f')$.
+Let $k$ be a field and $f \in k[x]$ a nonzero polynomial.
+Then $f$ is [[D-ZT46D|separable]] if and only if $\gcd(f, f') = 1$ in $k[x]$, that is, if and only if $f$ and $f'$ have no common root in an algebraic closure $\bar{k}$.
+Moreover, the repeated roots of $f$ in $\bar{k}$ are exactly the roots of $\gcd(f, f')$.
 :::
