@@ -47,9 +47,9 @@ for every $n\in\ZZ$. Thus $\phi$ is unique.
 
 <1>2. Every abelian group has a unique $\ZZ$-module structure.
 ::: {.proof}
-For an abelian group $A$, the endomorphism ring $\End_{\mathbf{Ab}}(A)$ is unital. A $\ZZ$-module structure on $A$ is equivalent to a unital ring homomorphism
+For an abelian group $A$, the endomorphism ring $\Endo_{\mathbf{Ab}}(A)$ is unital. A $\ZZ$-module structure on $A$ is equivalent to a unital ring homomorphism
 \[
-\ZZ\to\End_{\mathbf{Ab}}(A).
+\ZZ\to\Endo_{\mathbf{Ab}}(A).
 \]
 By <1>1 there is exactly one such homomorphism. Explicitly,
 \[
