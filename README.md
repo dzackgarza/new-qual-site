@@ -38,10 +38,7 @@ Each guide follows a subject path from core definitions and theorems to exam pro
 
 ## Local preview
 
-Run `just preview` from the repository root, then open
-<http://new-qual-site-preview.localhost/>. This is the single canonical local
-preview URL. The recipe rebuilds and republishes the current working tree,
-including uncommitted edits; do not use a separate `localhost:PORT` preview.
+Run `just preview` from the repository root, then open <http://new-qual-site-preview.localhost/>. This is the single canonical local preview URL. The recipe rebuilds and republishes the current working tree, including uncommitted edits; do not use a separate `localhost:PORT` preview.
 
 ## Author
 

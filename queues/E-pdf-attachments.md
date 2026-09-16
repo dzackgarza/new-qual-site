@@ -2,8 +2,7 @@
 
 This queue inventories 354 vendored PDF sources that lacked collection cards when the queue was created.
 Checked entries have since been dispositioned; unchecked entries still require intake.
-All 354 were extracted to Markdown and read for the inventory; an extraction whose MinerU Flash provenance is not established must be regenerated before it supports intake (`pdf-source-intake` in `TODO.md`, and the PDF extraction rule in `AGENTS.md`).
-Classification below is by document content, and each entry links to the extraction with line count, problem count, institution, subject, and date where identifiable.
+All 354 were extracted to Markdown and read for the inventory; an extraction whose MinerU Flash provenance is not established must be regenerated before it supports intake (`pdf-source-intake` in `TODO.md`, and the PDF extraction rule in `AGENTS.md`). Classification below is by document content, and each entry links to the extraction with line count, problem count, institution, subject, and date where identifiable.
 
 Per AGENTS.md, the PDF is the provenance.
 For an unchecked problem-bearing source, the remaining work is to create or reconcile the collection and extract/reuse its problem cards.
