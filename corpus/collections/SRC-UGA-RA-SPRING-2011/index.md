@@ -25,7 +25,3 @@ source:
     term: spring
     year: 2011
 ---
-
-::: remark
-Exam #1 asks for the definition of uniform continuity on $A\subseteq\mathbb{R}^n$ and the compact-set theorem; `P-DS4D6` is only the second half and was not used.
-:::
