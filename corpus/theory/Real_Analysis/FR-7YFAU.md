@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FR-7YFAU
 kind: proof
-title: 'Proposition: Translation/Dilation Invariance of the Lebesgue Integral'
+title: Translation invariance and dilation of the Lebesgue integral
 classification:
   areas:
   - real-analysis
@@ -13,28 +13,30 @@ relations: []
 review: draft
 ---
 
+::: {.proposition}
+Let $f\colon\RR^d\to[0,\infty]$ be Lebesgue [[D-DHFN4|measurable]], or let $f\in L^1(\RR^d)$, and let $h\in\RR^d$ and $\lambda\in\RR\setminus\theset{0}$.
+Then $x\mapsto f(x+h)$ and $x\mapsto f(\lambda x)$ are measurable, and
+$$
+\int_{\RR^d} f(x+h)\dx = \int_{\RR^d} f(x)\dx, \qquad \int_{\RR^d} f(\lambda x)\dx = \abs{\lambda}^{-d}\int_{\RR^d} f(x)\dx.
+$$
+:::
+
 ::: {.proof}
-We prove translation invariance; dilation invariance is identical with the change of variables $x \mapsto \lambda x$.
+We use that for a Lebesgue measurable $E \subseteq \RR^d$ the sets $E + h \coloneqq \theset{x + h \suchthat x \in E}$ and $\lambda E\coloneqq\theset{\lambda x\suchthat x\in E}$ are measurable, with $m(E + h) = m(E)$ and $m(\lambda E) = \abs{\lambda}^d m(E)$.
+Put $\tau f(x)\coloneqq f(x+h)$ and $\delta f(x)\coloneqq f(\lambda x)$.
+For a Borel set $B$, $(\tau f)\inv(B) = f\inv(B) - h$ and $(\delta f)\inv(B) = \lambda^{-1}f\inv(B)$, so $\tau f$ and $\delta f$ are measurable.
 
-**Step 1 (characteristic functions).** Let $E \subseteq \RR^d$ be measurable and $h \in \RR^d$.
-The translate $E + h = \ts{x + h \st x \in E}$ is measurable, and Lebesgue measure is translation invariant, so $\mu(E + h) = \mu(E)$.
-Hence
-\[
-\int \indicator_{E+h} = \mu(E + h) = \mu(E) = \int \indicator_E.
-\]
+**Characteristic functions.** For measurable $E$, $\tau\chi_E = \chi_{E-h}$ and $\delta\chi_E = \chi_{\lambda^{-1}E}$, so
+$$
+\int\tau\chi_E = m(E - h) = m(E) = \int\chi_E, \qquad \int\delta\chi_E = m(\lambda^{-1}E) = \abs{\lambda}^{-d}\int\chi_E.
+$$
 
-**Step 2 (simple functions).** A simple function is a finite linear combination $\phi = \sum_i c_i \indicator_{E_i}$ of characteristic functions of measurable sets.
-By linearity of the integral and Step 1,
-\[
-\int \phi(\cdot + h) = \sum_i c_i \int \indicator_{E_i + h} = \sum_i c_i \int \indicator_{E_i} = \int \phi.
-\]
+**Simple functions.** A nonnegative [[D-553MO|simple function]] is a finite sum $\phi = \sum_i c_i \chi_{E_i}$ with $c_i\geq 0$ and $E_i$ measurable, and $\tau\phi = \sum_i c_i\tau\chi_{E_i}$ and $\delta\phi = \sum_i c_i\delta\chi_{E_i}$.
+By the case of characteristic functions, $\int\tau\phi = \int\phi$ and $\int\delta\phi = \abs{\lambda}^{-d}\int\phi$.
 
-**Step 3 (nonnegative measurable functions).** For $f \ge 0$ measurable, the integral is defined as the supremum over simple functions $0 \le \phi \le f$:
-\[
-\int f = \sup\ts{\int \phi \st 0 \le \phi \le f,\ \phi \text{ simple}}.
-\]
-The map $\phi \mapsto \phi(\cdot + h)$ is a bijection between simple functions below $f$ and simple functions below $f(\cdot + h)$, and by Step 2 it preserves the integral.
-Therefore the two suprema are equal, giving $\int f(\cdot + h) = \int f$.
+**Nonnegative measurable functions.** By the [[D-R4VKE|definition of the integral]], $\int f$ is the supremum of $\int\phi$ over simple $0 \leq \phi \leq f$.
+The maps $\phi\mapsto\tau\phi$ and $\phi\mapsto\delta\phi$ are bijections from the simple functions $0\leq\phi\leq f$ onto the simple functions $0\leq\psi\leq\tau f$ and $0\leq\psi\leq\delta f$ respectively, with inverses given by translation by $-h$ and dilation by $\lambda^{-1}$.
+They multiply integrals by $1$ and by $\abs{\lambda}^{-d}$, so the suprema satisfy $\int\tau f = \int f$ and $\int\delta f = \abs{\lambda}^{-d}\int f$.
 
-**Step 4 (general integrable functions).** Write $f = f^+ - f^-$ with $f^\pm \ge 0$ and apply Step 3 to each part.
+**Integrable functions.** For real-valued $f\in L^1(\RR^d)$, write $f = f^+ - f^-$ with $f^\pm \geq 0$; then $\tau f = \tau f^+ - \tau f^-$ and $\delta f = \delta f^+ - \delta f^-$, and the nonnegative case applies to each part. For complex-valued $f$, apply the real case to $\operatorname{Re} f$ and $\operatorname{Im} f$.
 :::
