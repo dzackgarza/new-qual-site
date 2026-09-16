@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YHH3M
 kind: theorem
-title: Schur's Lemma
+title: Schur's lemma
 classification:
   areas:
   - algebra
@@ -13,16 +13,19 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $M \in \modsleft{G}$ is an irreducible representation of $G$ with $\dim_k M < \infty$ and $k=\bar{k}$, then every $G\dash$equivariant endomorphism of $M$ is a scalar:
-\[
-\Endo_G(M) & \mapsvia{\sim} k
-.\]
+::: {.theorem}
+Let $G$ be a group, $k$ an algebraically closed field, and $M$ an irreducible representation of $G$ over $k$ with $\dim_k M < \infty$.
+Then every $G$-equivariant endomorphism of $M$ is multiplication by a scalar, so the map
+$$
+k \mapsvia{\sim} \Endo_G(M),\qquad \lambda\mapsto \lambda\cdot\id_M,
+$$
+is an isomorphism.
+:::
 
-The conclusion is about the endomorphism ring of $M$, not about $M$ itself.
-Over a general field the ring $\Endo_G(M)$ is a division algebra over $k$, and it collapses to $k$ exactly because $k$ is algebraically closed.
+::: {.remark}
+For an irreducible representation $M$ of $G$ over an arbitrary field $k$, every nonzero $G$-equivariant endomorphism of $M$ has $G$-stable kernel $0$ and image $M$, so $\Endo_G(M)$ is a division algebra over $k$.
 :::
 
 ::: {.slogan}
-Over an algebraically closed field, an irreducible representation has only scalar equivariant endomorphisms.
+Over an algebraically closed field, an irreducible finite-dimensional representation has only scalar equivariant endomorphisms.
 :::

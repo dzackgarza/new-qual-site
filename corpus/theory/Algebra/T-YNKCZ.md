@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YNKCZ
 kind: theorem
-title: Recognizing Generalized Direct Products
+title: Recognizing internal direct products of finitely many subgroups
 classification:
   areas:
   - algebra
@@ -14,13 +14,13 @@ review: draft
 ---
 
 ::: {.theorem}
-We have $G \cong \prod_{i=1}^n H_i$ when
+Let $G$ be a group with subgroups $H_1,\ldots,H_n$ such that
 
-- $H_i \normal G$ for all $i$.
+- $H_i \normal G$ for all $i$,
 
-- $G = H_1 \cdots H_n$
+- $G = H_1 \cdots H_n$, and
 
-- $H_k \intersect H_1 \cdots \hat{H_k} \cdots H_n = \theset{e}$
+- for each $k$, $H_k \intersect \left(H_1 \cdots H_{k-1}H_{k+1} \cdots H_n\right) = \theset{e}$.
 
-> Note on notation: intersect $H_k$ with the amalgam *leaving out* $H_k$.
+Then the map $\prod_{i=1}^n H_i\to G$, $(h_1,\ldots,h_n)\mapsto h_1\cdots h_n$, is an isomorphism, so $G \cong \prod_{i=1}^n H_i$.
 :::
