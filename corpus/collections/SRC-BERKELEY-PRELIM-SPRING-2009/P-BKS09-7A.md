@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-7A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 7A
+title: Evaluation of $\int_0^\pi d\theta/(a+\cos\theta)$ by residues
 classification:
   areas:
   - prelim

@@ -16,24 +16,41 @@ source:
   institution: berkeley
   area: prelim
   problems:
-  - P-BKS09-1A
-  - P-BKS09-2A
+  - id: P-BKS09-1A
+    comment: Problem 1A
+  - id: P-BKS09-2A
+    comment: Problem 2A
   - P-BKS09-3A
-  - P-BKS09-4A
-  - P-BKS09-5A
-  - P-BKS09-6A
-  - P-BKS09-7A
-  - P-BKS09-8A
-  - P-BKS09-9A
-  - P-BKS09-1B
-  - P-BKS09-2B
-  - P-BKS09-3B
-  - P-BKS09-4B
-  - P-BKS09-5B
-  - P-BKS09-6B
-  - P-BKS09-7B
-  - P-BKS09-8B
-  - P-BKS09-9B
+  - id: P-BKS09-4A
+    comment: Problem 4A
+  - id: P-BKS09-5A
+    comment: Problem 5A
+  - id: P-BKS09-6A
+    comment: Problem 6A
+  - id: P-BKS09-7A
+    comment: Problem 7A
+  - id: P-BKS09-8A
+    comment: Problem 8A
+  - id: P-BKS09-9A
+    comment: Problem 9A
+  - id: P-BKS09-1B
+    comment: Problem 1B
+  - id: P-BKS09-2B
+    comment: Problem 2B
+  - id: P-BKS09-3B
+    comment: Problem 3B
+  - id: P-BKS09-4B
+    comment: Problem 4B
+  - id: P-BKS09-5B
+    comment: Problem 5B
+  - id: P-BKS09-6B
+    comment: Problem 6B
+  - id: P-BKS09-7B
+    comment: Problem 7B
+  - id: P-BKS09-8B
+    comment: Problem 8B
+  - id: P-BKS09-9B
+    comment: Problem 9B
   date:
     kind: academic-term
     term: spring

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-8B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 8B
+title: Centers of nonabelian groups and $p$-groups; groups of order $p^2$ are abelian
 classification:
   areas:
   - prelim

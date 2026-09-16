@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-7B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 7B
+title: Odd univalent function $\sqrt{f(z^2)}$ from a normalized univalent $f$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-6B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 6B
+title: Courant--Fischer min-max characterization of eigenvalues
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-5B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 5B
+title: Asymptotics of the Newtonian potential of a compactly supported function
 classification:
   areas:
   - prelim

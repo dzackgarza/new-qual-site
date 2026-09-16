@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-1B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 1B
+title: Higher derivative test for local extrema
 classification:
   areas:
   - prelim

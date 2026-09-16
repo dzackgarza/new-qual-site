@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-4B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 4B
+title: Inverses in $\mathbb Q(\alpha)$ are polynomials in $\alpha$
 classification:
   areas:
   - prelim

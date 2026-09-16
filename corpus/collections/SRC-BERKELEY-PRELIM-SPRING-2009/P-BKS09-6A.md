@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-6A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 6A
+title: Dimension of the centralizer of a $2\times 2$ complex matrix
 classification:
   areas:
   - prelim

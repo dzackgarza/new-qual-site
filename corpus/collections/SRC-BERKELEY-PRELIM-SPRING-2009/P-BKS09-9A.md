@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-9A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 9A
+title: Lower bound $\operatorname{lcm}(1,\dots,2m+1)\ge 2^{2m}$ via $\int_0^1 x^m(1-x)^m\,dx$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-2B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 2B
+title: $BA-AB=A$ forces $A$ nilpotent in characteristic zero
 classification:
   areas:
   - prelim

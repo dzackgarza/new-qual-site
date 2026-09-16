@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-8A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 8A
+title: Fixed field of $x\mapsto x^{-1}$ on $\mathbb Q(x)$
 classification:
   areas:
   - prelim

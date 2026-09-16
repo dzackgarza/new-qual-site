@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-3B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 3B
+title: Counting roots of $z^4-5z^3+z-2$ in a disk
 classification:
   areas:
   - prelim

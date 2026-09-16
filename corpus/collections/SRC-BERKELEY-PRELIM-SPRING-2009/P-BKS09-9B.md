@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-9B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 9B
+title: $\sin nx$ has no pointwise convergent subsequence
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-4A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 4A
+title: Counting commuting tuples in a finite group via conjugation orbits
 classification:
   areas:
   - prelim

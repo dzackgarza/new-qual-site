@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-1A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 1A
+title: Limit of $\alpha\int_0^1 x^{\alpha-1}f(x)\,dx$ as $\alpha\to 0^+$
 classification:
   areas:
   - prelim

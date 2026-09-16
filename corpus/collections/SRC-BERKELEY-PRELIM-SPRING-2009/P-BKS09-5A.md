@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS09-5A
 kind: problem
-title: Berkeley Spring 2009 prelim problem 5A
+title: Stable rotation of a four-legged table on an uneven floor
 classification:
   areas:
   - prelim
