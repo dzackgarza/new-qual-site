@@ -15,7 +15,13 @@ review: draft
 ---
 
 ::: {.definition}
-A **refinement** of an open cover $\mcu \covers X$ is an open cover $\mcv\covers X$ such that for every $V_\beta \in \mcv$, there exists a $U_\alpha \in \mcu$ such that $V_\beta \subseteq U_\alpha$ -- setting $\mcv \leq \mcu$ iff $\mcv$ refines $\mcu$ yields a preorder on all open covers of $X$.
+A topological space $X$ is \dfn{paracompact} if every open [[D-AOJG3|cover]] $\mcu$ of $X$ has an open [[D-P6XCN|refinement]] $\mcv$ that is [[D-6JJJU|locally finite]]: every $x\in X$ has a [[D-JMRPA|neighborhood]] that meets only finitely many elements of $\mcv$.
+:::
 
-A topological space $X$ is **paracompact** iff every open cover $\mcu\covers X$ admits an locally finite *refinement* -- a division into (potentially more) open subsets $\mcv \covers X$ such that each $x\in X$ is contained in only finitely many $V_\beta$.
+::: {.remark}
+The relation $\mcv\leq\mcu$ if $\mcv$ refines $\mcu$ is a preorder on the set of open covers of $X$.
+:::
+
+::: {.concept}
+[@Mun00, §41].
 :::
