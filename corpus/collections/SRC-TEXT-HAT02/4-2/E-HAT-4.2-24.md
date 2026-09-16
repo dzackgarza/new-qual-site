@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show there is a Moore space $M(G, 1)$ with $\pi_1\bigl(M(G, 1)\bigr) \approx G$ iff $H_2(K(G, 1); \mathbb{Z}) = 0$.
 In particular, there is no $M(\mathbb{Z}^n, 1)$ with fundamental group $\mathbb{Z}^n$, free abelian of rank $n$, if $n \geq 2$.
+:::
 
 ::: {.solution}
 <1>1. A Moore space $M(G, 1)$ is a connected CW complex with $\pi_1 \cong G$ and $\widetilde{H}_i = 0$ for $i \neq 1$.

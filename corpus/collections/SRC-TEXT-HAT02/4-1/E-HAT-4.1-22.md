@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that a path-connected space $X$ has a CW approximation with countably many cells if $\pi_n(X)$ is countable for all $n$.
+:::
 
 ::: {.solution}
 We use the standard inductive construction of a CW approximation, keeping track of cardinalities.

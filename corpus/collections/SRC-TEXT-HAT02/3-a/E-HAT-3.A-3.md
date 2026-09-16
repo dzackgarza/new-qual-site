@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that if $\tilde{H}^n(X; \mathbb{Q})$ and $\tilde{H}^n(X; \mathbb{Z}_p)$ are zero for all $n$ and all primes $p$, then $\tilde{H}_n(X; \mathbb{Z}) = 0$ for all $n$, and hence $\tilde{H}^n(X; G) = 0$ for all $G$ and $n$.
+:::
 
 ::: {.solution}
 For a field $F$, the singular chain complex $C_*(X;F)$ is a chain complex of vector spaces, so dualization is exact. Hence

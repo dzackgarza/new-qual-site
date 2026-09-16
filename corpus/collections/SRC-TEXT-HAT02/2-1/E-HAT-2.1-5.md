@@ -26,8 +26,9 @@ audit:
   note: Used the standard square-with-diagonal Delta-complex, obtaining two independent 2-boundaries whose quotient of C1 is Z plus Z/2.
 ---
 
+::: {.problem}
 Compute the simplicial homology groups of the Klein bottle using the $\Delta$-complex structure described at the beginning of this section.
-
+:::
 
 ::: {.solution}
 Use the standard square model of the Klein bottle with all four vertices identified, and draw the diagonal from the lower-left vertex to the upper-right vertex.

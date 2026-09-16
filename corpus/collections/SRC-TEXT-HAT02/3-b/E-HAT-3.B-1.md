@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Compute the groups $H_i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ and $H^i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ for $G = \mathbb{Z}$ and $\mathbb{Z}_2$ via the cellular chain and cochain complexes.
 [See Example 3B.4.]
+:::
 
 ::: {.solution}
 Give $\mathbb{RP}^r$ its standard CW structure with one cell $e_j$ in each dimension $0\le j\le r$. Its cellular chain complex over $\mathbb Z$ has

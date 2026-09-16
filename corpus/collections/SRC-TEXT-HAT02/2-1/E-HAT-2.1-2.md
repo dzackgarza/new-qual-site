@@ -26,9 +26,10 @@ audit:
   note: Collapsed the tetrahedron to the two-face square and read the four side-pairing words, giving the Klein bottle, torus, sphere, and projective plane.
 ---
 
+::: {.problem}
 Show that the $\Delta$-complex obtained from $\Delta^3$ by performing the edge identifications $[\nu_0, \nu_1] \sim [\nu_1, \nu_3]$ and $[\nu_0, \nu_2] \sim [\nu_2, \nu_3]$ deformation retracts onto a Klein bottle.
 Find other pairs of identifications of edges that produce $\Delta$-complexes deformation retracting onto a torus, a 2 sphere, and $\mathbb{RP}^2$.
-
+:::
 
 ::: {.solution}
 Let the vertices of the tetrahedron be

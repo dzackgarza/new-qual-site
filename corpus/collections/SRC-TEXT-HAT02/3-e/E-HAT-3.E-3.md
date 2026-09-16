@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $X$ be the smash product of $k$ copies of a Moore space $M(\mathbb{Z}_p, n)$ with $p$ prime.
 Compute the Bockstein homomorphisms in $H^*(X; \mathbb{Z}_p)$ and use this to describe $H^*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 Let

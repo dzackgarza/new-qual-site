@@ -18,7 +18,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Construct infinitely many nonhomotopic retractions $S^1 \lor S^1 \longrightarrow S^1$.
+:::
 
 ::: {.solution}
 <1>1. $\pi_1(S^1 \vee S^1) = \ZZ * \ZZ = \langle a, b \rangle$ (free on two generators), and $\pi_1(S^1) = \ZZ$.

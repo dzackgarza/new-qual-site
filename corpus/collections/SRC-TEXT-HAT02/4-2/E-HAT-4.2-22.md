@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $H_{n+1}(K(G, n); \mathbb{Z}) = 0$ if $n > 1$.
+:::
 
 ::: {.solution}
 For \(n>1\), choose an \((n-1)\)-connected Moore space \(M(G,n)\), so

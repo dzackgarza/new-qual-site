@@ -25,7 +25,9 @@ audit:
   note: Used the retraction identity r i = id and functoriality of homology.
 ---
 
+::: {.problem}
 Show that if $A$ is a retract of $X$ then the map $H_n(A) \to H_n(X)$ induced by the inclusion $A \subset X$ is injective.
+:::
 
 ::: {.solution}
 Let

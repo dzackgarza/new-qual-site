@@ -24,9 +24,10 @@ audit:
   note: Constructed an N-sheeted graph-of-spaces cover using repeated universal covers of vertex and edge classifying spaces; the edge-boundary multiplicities match by the subgroup-index formula, and each component upstairs has free fundamental group.
 ---
 
+::: {.problem}
 If $\Gamma$ is a finite graph of finite groups with injective edge homomorphisms, show that the graph product of the groups has a free subgroup of finite index by constructing a suitable finite-sheeted covering space of $K$ from universal covers of the mapping cylinders in $K$.
 [The converse is also true: A finitely generated group having a free subgroup of finite index is isomorphic to such a graph product. For a proof of this see [Scott & Wall 1979], Theorem 7.3.]
-
+:::
 
 ::: {.solution}
 Let $\Gamma$ be a finite connected graph of finite groups with injective edge homomorphisms.

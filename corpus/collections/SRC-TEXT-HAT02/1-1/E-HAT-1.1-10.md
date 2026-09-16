@@ -26,8 +26,10 @@ audit:
   note: Gave an explicit square homotopy interpolating between the bottom-right and left-top edge paths.
 ---
 
+::: {.problem}
 From the isomorphism $\pi_1(X \times Y, (x_0, y_0)) \approx \pi_1(X, x_0) \times \pi_1(Y, y_0)$ it follows that loops in $X \times \{y_0\}$ and $\{x_0\} \times Y$ represent commuting elements of $\pi_1(X \times Y, (x_0, y_0))$.
 Construct an explicit homotopy demonstrating this.
+:::
 
 ::: {.solution}
 Let

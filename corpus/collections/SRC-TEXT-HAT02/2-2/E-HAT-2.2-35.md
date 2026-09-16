@@ -19,8 +19,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Use the Mayer–Vietoris sequence to show that a nonorientable closed surface, or more generally a finite simplicial complex $X$ for which $H_1(X)$ contains torsion, cannot be embedded as a subspace of $\mathbb{R}^3$ in such a way as to have a neighborhood homeomorphic to the mapping cylinder of some map from a closed orientable surface to $X$.
 [This assumption on a neighborhood is in fact not needed if one deduces the result from Alexander duality in §3.3.]
+:::
 
 ::: {.solution}
 <1>1. Suppose $X$ embeds in $\RR^3$ with a neighborhood $N$ homeomorphic to the mapping cylinder of a map $f: S \to X$ from a closed orientable surface $S$.

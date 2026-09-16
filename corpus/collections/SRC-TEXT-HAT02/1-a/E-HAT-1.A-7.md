@@ -17,7 +17,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 If $F$ is a finitely generated free group and $N$ is a nontrivial normal subgroup of infinite index, show, using covering spaces, that $N$ is not finitely generated.
+:::
 
 ::: {.solution}
 <1>1. Let $F = \pi_1(X)$ where $X$ is a finite wedge of circles (a finite graph with one vertex).

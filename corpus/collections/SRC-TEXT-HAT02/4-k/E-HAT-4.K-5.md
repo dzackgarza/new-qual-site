@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 A map $p: E \to B$ with $B$ not necessarily path-connected is defined to be a quasifibration if the following equivalent conditions are satisfied:
 
 (i) For all $b \in B$ and $x_0 \in p^{-1}(b)$, the map $p_*: \pi_i(E, p^{-1}(b), x_0) \to \pi_i(B, b)$ is an isomorphism for $i > 0$ and $\pi_0(p^{-1}(b), x_0) \to \pi_0(E, x_0) \to \pi_0(B, b)$ is exact.
@@ -32,6 +33,7 @@ A map $p: E \to B$ with $B$ not necessarily path-connected is defined to be a qu
 (iii) The restriction of $p$ over each path-component of $B$ is a quasifibration according to the definition in this section.
 
 Show these three conditions are equivalent, and prove Lemma 4K.3 for quasifibrations over non-path-connected base spaces.
+:::
 
 ::: {.solution}
 Fix \(b\in B\) and \(x_0\in p^{-1}(b)\). Let \(F_b\) denote the homotopy fiber of \(p\) over \(b\). There is a natural inclusion

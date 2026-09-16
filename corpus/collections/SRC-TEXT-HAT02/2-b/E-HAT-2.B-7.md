@@ -24,7 +24,9 @@ audit:
   note: Verified the local van Kampen injections and the free-group bonding maps for the horned constructions.
 ---
 
+::: {.problem}
 Analyze what happens when the number of handles in the basic building block for the Alexander horned sphere is doubled, as in the figure at the right.
+:::
 
 ::: {.solution}
 In the doubled building block shown in Hatcher's figure, each old handle is replaced by four smaller handles, arranged as two linked pairs. The same limiting construction still gives a horned ball, but the free-group bonding maps change from one commutator to a product of two commutators.

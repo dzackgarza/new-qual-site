@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Using the cup product structure in $H^*(SO(5); \mathbb{Z})$, show that $SO(5)$ is not homotopy equivalent to the product of any two CW complexes with nontrivial cohomology.
+:::
 
 ::: {.solution}
 Assume for contradiction that

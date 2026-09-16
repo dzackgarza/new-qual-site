@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that a closed simply-connected 3-manifold is homotopy equivalent to $S^3$.
+:::
 
 ::: {.solution}
 Let \(M\) be a closed simply-connected \(3\)-manifold. Poincaré duality gives

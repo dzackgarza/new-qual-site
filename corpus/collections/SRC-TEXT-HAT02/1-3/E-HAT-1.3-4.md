@@ -24,8 +24,10 @@ audit:
   note: Constructed the universal covers as trees of copies of the sphere joined by lifts of the added arcs and checked the covering neighborhoods at the attachment points.
 ---
 
+::: {.problem}
 Construct a simply-connected covering space of the space $X \subset \mathbb{R}^3$ that is the union of a sphere and a diameter.
 Do the same when $X$ is the union of a sphere and a circle intersecting it in two points.
+:::
 
 ::: {.solution}
 Let $p,q\in S^2$ be the two endpoints of the added diameter in the first space.

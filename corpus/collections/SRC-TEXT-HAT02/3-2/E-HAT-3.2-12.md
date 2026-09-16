@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the spaces $(S^1 \times \mathbb{CP}^\infty) / (S^1 \times \{x_0\})$ and $S^3 \times \mathbb{CP}^\infty$ have isomorphic cohomology rings with $\mathbb{Z}$ or any other coefficients.
 [An exercise for §4.L is to show these two spaces are not homotopy equivalent.]
+:::
 
 ::: {.solution}
 Let $Y=\mathbb{CP}^\infty$ with basepoint $y_0$, and set

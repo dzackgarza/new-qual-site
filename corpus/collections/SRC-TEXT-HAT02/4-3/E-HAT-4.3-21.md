@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that in the Postnikov tower of an H-space, all the spaces are H-spaces and the maps are H-maps, commuting with the multiplication, up to homotopy.
+:::
 
 ::: {.solution}
 Let \(P_nX\) denote the \(n\)-th Postnikov stage. The Postnikov construction is functorial up to homotopy, and

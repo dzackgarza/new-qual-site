@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show the sequence $\pi_1(X, x_0) \to \pi_1(X, A, x_0) \overset{\partial}{\longrightarrow} \pi_0(A, x_0) \to \pi_0(X, x_0)$ is exact.
+:::
 
 ::: {.solution}
 For \(\pi_1(X,A,x_0)\), use relative paths \(u:I\to X\) with \(u(0)=x_0\) and \(u(1)\in A\). The boundary map is

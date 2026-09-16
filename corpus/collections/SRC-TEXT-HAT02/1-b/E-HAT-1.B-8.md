@@ -24,8 +24,9 @@ audit:
   note: 'Used the standard maximal-tree presentation of a graph of groups: finitely many vertex generators and stable letters generate, while finite vertex presentations and finitely generated edge groups give finitely many relations.'
 ---
 
+::: {.problem}
 Show that a finite graph product of finitely generated groups is finitely generated, and similarly for finitely presented groups.
-
+:::
 
 ::: {.solution}
 Let $\Gamma$ be a finite connected graph of groups and choose a maximal tree $T$ in its underlying graph.

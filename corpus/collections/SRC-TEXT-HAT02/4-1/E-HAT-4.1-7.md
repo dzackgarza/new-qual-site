@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Extend the results proved near the beginning of this section for the change-of-basepoint maps $\beta_\gamma$ to the case of relative homotopy groups.
+:::
 
 ::: {.solution}
 Let \(\gamma:I\to A\) be a path from \(x_0\) to \(x_1\). For \(n\ge2\), define

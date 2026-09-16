@@ -24,8 +24,10 @@ audit:
 
 ---
 
+::: {.problem}
 Show that a map between simply-connected CW complexes is a homotopy equivalence if its mapping cone is contractible.
 Use the preceding exercise to give an example where this fails in the nonsimply-connected case.
+:::
 
 ::: {.solution}
 Let $f:X\to Y$ be a map of simply-connected CW complexes and suppose its mapping cone $C_f$ is contractible. The cofibration sequence

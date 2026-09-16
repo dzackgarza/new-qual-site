@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that all Whitehead products in a path-connected H-space are trivial.
+:::
 
 ::: {.solution}
 A Whitehead product

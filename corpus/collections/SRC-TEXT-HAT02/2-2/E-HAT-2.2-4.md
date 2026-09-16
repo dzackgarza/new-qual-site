@@ -24,7 +24,9 @@ audit:
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
 ---
 
+::: {.problem}
 Construct a surjective map $S^n \to S^n$ of degree zero, for each $n \geq 1$.
+:::
 
 ::: {.solution}
 Choose an embedded equatorial $(n-1)$-sphere in $S^n$ and collapse it to a point. This gives the pinch map

@@ -18,10 +18,12 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 The space $Y$ in the preceding exercise can be obtained from a disk with two holes by identifying its three boundary circles.
 There are only two essentially different ways of identifying the three boundary circles.
 Show that the other way yields a space $Z$ with $\pi_1(Z)$ not isomorphic to $\pi_1(Y)$.
 [Abelianize the fundamental groups to show they are not isomorphic.]
+:::
 
 ::: {.solution}
 <1>1. $Y$ has $\pi_1(Y) = \langle a, b, c \mid aba^{-1}b^{-1}cb^\varepsilon c^{-1}\rangle$ (from the preceding exercise).

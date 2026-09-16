@@ -26,10 +26,11 @@ audit:
   note: Identified the two fiber actions as right multiplication by the inverse and left multiplication, yielding equality exactly for elementary abelian 2-groups.
 ---
 
+::: {.problem}
 For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$.
 The first is the action defined on page 69 in which the element of $\pi_1(X, x_0)$ determined by a loop $\gamma$ sends $\tilde{\gamma}(1)$ to $\tilde{\gamma}(0)$ for each lift $\tilde{\gamma}$ of $\gamma$ to $\tilde{X}$, and the second is the action given by restricting deck transformations to the fiber (see Proposition 1.39). Show that these two actions are different when $X = S^1 \vee S^1$ and when $X = S^1 \times S^1$, and determine when the two actions are the same.
 [This is a revised version of the original form of this exercise.]
-
+:::
 
 ::: {.solution}
 Fix a point $\tilde x_0\in p^{-1}(x_0)$ and write

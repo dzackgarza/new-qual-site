@@ -24,7 +24,9 @@ audit:
   note: Took products of evenly covered neighborhoods and identified the product sheets and their homeomorphisms explicitly.
 ---
 
+::: {.problem}
 Show that if $p_1: \tilde{X}_1 \to X_1$ and $p_2: \tilde{X}_2 \to X_2$ are covering spaces, so is their product $p_1 \times p_2: \tilde{X}_1 \times \tilde{X}_2 \to X_1 \times X_2$.
+:::
 
 ::: {.solution}
 <1>1. Fix $(x_1,x_2)\in X_1\times X_2$ and choose evenly covered neighborhoods

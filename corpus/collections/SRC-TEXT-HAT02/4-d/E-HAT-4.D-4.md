@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 For the flag space $F_n(\mathbb{C}^n)$ show that $H^*(F_n(\mathbb{C}^n); \mathbb{Z}) \approx \mathbb{Z}[x_1, \ldots, x_n]/(\sigma_1, \ldots, \sigma_n)$ where $\sigma_i$ is the $i$th elementary symmetric polynomial.
+:::
 
 ::: {.solution}
 Let \(F_n=F_n(\mathbb C^n)\) be the complete flag manifold, and let

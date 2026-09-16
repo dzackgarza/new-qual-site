@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $X$ be a complex of spaces over a simplicial complex $\Gamma$, as defined in §4.G. Show that the natural projection $\Delta X \to \Gamma$ is a quasifibration if all the maps in $X$ associated to edges of $\Gamma$ are weak homotopy equivalences.
+:::
 
 ::: {.solution}
 Let

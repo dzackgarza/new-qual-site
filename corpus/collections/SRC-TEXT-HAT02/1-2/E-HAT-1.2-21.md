@@ -26,7 +26,9 @@ audit:
   note: Pushed an arbitrary loop off the Y-end of the join using path-connectedness of X, retracted it to X, and contracted it inside the cone X*{y0}.
 ---
 
+::: {.problem}
 Show that the join $X * Y$ of two nonempty spaces $X$ and $Y$ is simply-connected if $X$ is path-connected.
+:::
 
 ::: {.solution}
 Use the model

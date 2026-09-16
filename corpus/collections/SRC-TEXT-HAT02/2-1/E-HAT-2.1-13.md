@@ -25,7 +25,9 @@ audit:
   note: Restricted the ordinary homology equality to the augmentation kernels defining reduced H_0; higher reduced groups equal ordinary homology.
 ---
 
+::: {.problem}
 Verify that $f \simeq g$ implies $f_* = g_*$ for induced homomorphisms of reduced homology groups.
+:::
 
 ::: {.solution}
 Suppose

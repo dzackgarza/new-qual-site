@@ -25,8 +25,10 @@ audit:
   note: Parameterized oriented affine planes by S^3 and proved continuity of the three signed-volume differences by dominated convergence before applying Borsuk--Ulam.
 ---
 
+::: {.problem}
 Let $A_1, A_2, A_3$ be compact sets in $\mathbb{R}^3$.
 Use the Borsuk–Ulam theorem to show that there is one plane $P \subset \mathbb{R}^3$ that simultaneously divides each $A_i$ into two pieces of equal measure.
+:::
 
 ::: {.solution}
 Let $\mu$ denote three-dimensional Lebesgue measure.

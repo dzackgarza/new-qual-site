@@ -24,6 +24,7 @@ audit:
   note: Reduced all three assertions to the surjection pi_1(X^1) -> pi_1(X) and the subgroup/normalizer classification of covers.
 ---
 
+::: {.problem}
 Consider covering spaces $p: \tilde{X} \to X$ with $\tilde{X}$ and $X$ connected CW complexes, the cells of $\tilde{X}$ projecting homeomorphically onto cells of $X$.
 Restricting $p$ to the 1-skeleton then gives a covering space $\tilde{X}^1 \to X^1$ over the 1-skeleton of $X$.
 Show:
@@ -33,7 +34,7 @@ Show:
 (b) $\tilde{X} \to X$ is a normal covering space if $\tilde{X}^1 \to X^1$ is normal.
 
 (c) The groups of deck transformations of the coverings $\tilde{X} \to X$ and $\tilde{X}^1 \to X^1$ are isomorphic, via the restriction map.
-
+:::
 
 ::: {.solution}
 Choose a basepoint $x_0$ in the $0$-skeleton and write

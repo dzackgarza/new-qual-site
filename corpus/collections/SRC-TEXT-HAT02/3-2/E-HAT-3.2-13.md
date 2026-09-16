@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Describe $H^*(\mathbb{CP}^\infty / \mathbb{CP}^1; \mathbb{Z})$ as a ring with finitely many multiplicative generators.
 How does this ring compare with $H^*(S^6 \times \mathbb{HP}^\infty; \mathbb{Z})$?
+:::
 
 ::: {.solution}
 Let $u\in H^2(\mathbb{CP}^\infty;\mathbb Z)$ be the standard generator. For

@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that a simplicial map $f: K \to L$ is a homotopy equivalence if $f^{-1}(x)$ is contractible for all $x \in L$.
+:::
 
 ::: {.solution}
 <1>1. For each simplex $\sigma$ of $L$, the preimage $f^{-1}(\sigma)$ is contractible.

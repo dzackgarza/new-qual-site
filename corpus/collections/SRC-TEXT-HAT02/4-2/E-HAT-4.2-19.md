@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 If $X$ is a $K(G, 1)$ CW complex, show that $\pi_n(X^n)$ is free abelian for $n \geq 2$.
+:::
 
 ::: {.solution}
 Let \(p:\widetilde X\to X\) be the universal cover. Since \(X\) is a \(K(G,1)\), \(\widetilde X\) is contractible. The inverse image \(\widetilde X^{\,n}=p^{-1}(X^n)\) is the \(n\)-skeleton of \(\widetilde X\).

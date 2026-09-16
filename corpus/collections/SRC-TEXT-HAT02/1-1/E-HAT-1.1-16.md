@@ -29,6 +29,7 @@ audit:
   note: In each case used the necessary split-injectivity of the inclusion on pi_1 and exhibited the obstruction explicitly.
 ---
 
+::: {.problem}
 Show that there are no retractions $r: X \to A$ in the following cases:
 
 (a) $X = \mathbb{R}^3$ with $A$ any subspace homeomorphic to $S^1$.
@@ -42,6 +43,7 @@ Show that there are no retractions $r: X \to A$ in the following cases:
 (e) $X$ a disk with two points on its boundary identified and $A$ its boundary $S^1 \lor S^1$.
 
 (f) $X$ the Möbius band and $A$ its boundary circle.
+:::
 
 ::: {.solution}
 We use the same elementary obstruction in all six cases.

@@ -26,6 +26,7 @@ audit:
   note: Applied Lemma 1.15 to the standard two-open-set cover of a cell attachment and then iterated the one-cell result over the CW skeleta.
 ---
 
+::: {.problem}
 Using Lemma 1.15, show that if a space $X$ is obtained from a path-connected subspace $A$ by attaching a cell $e^n$ with $n \geq 2$, then the inclusion $A \hookrightarrow X$ induces a surjection on $\pi_1$.
 Apply this to show:
 
@@ -33,6 +34,7 @@ Apply this to show:
 
 (b) For a path-connected CW complex $X$ the inclusion map $X^1 \hookrightarrow X$ of its 1 skeleton induces a surjection $\pi_1(X^1) \longrightarrow \pi_1(X)$.
 [For the case that $X$ has infinitely many cells, see Proposition A.1 in the Appendix.]
+:::
 
 ::: {.solution}
 Let

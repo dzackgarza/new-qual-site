@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Define the dual of an iterated mapping cylinder precisely, in terms of maps from $\Delta^n$, and use this to give a definition of $\nabla X$, the dual of $\Delta X$, for $X$ a complex of spaces.
+:::
 
 ::: solution
 **Goal:** Define the dual of an iterated mapping cylinder via simplex maps and construct the dual $\nabla X$ of a complex of spaces $\Delta X$.

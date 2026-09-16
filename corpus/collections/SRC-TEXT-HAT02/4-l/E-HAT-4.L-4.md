@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show there is no fiber bundle $S^7 \to S^{23} \to \mathbb{OP}^2$.
+:::
 
 ::: {.solution}
 Suppose there were a fiber bundle

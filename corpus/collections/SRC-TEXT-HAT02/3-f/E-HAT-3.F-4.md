@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 An abelian group $G$ is defined to be divisible if the map $G \xrightarrow{n} G$, $g \mapsto ng$, is surjective for all $n > 1$.
 Show that a group is divisible if and only if it is a quotient of a direct sum of $\mathbb{Q}$'s. Deduce from the previous problem that if $G$ is divisible then $\operatorname{Ext}(A, G) = 0$ for all $A$.
+:::
 
 ::: {.solution}
 First suppose

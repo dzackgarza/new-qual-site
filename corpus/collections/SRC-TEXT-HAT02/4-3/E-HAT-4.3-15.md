@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 If the fibration $p: E \to B$ is a homotopy equivalence, show that $p$ is a fiber homotopy equivalence of $E$ with the trivial fibration $\mathbb{1}: B \to B$.
+:::
 
 ::: {.solution}
 The fibration \(p:E\to B\) and the identity fibration

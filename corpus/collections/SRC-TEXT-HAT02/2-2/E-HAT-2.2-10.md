@@ -25,9 +25,11 @@ audit:
   note: Complete degree/cellular proof checked.
 ---
 
+::: {.problem}
 Let $X$ be the quotient space of $S^2$ under the identifications $x \sim -x$ for $x$ in the equator $S^1$.
 Compute the homology groups $H_i(X)$.
 Do the same for $S^3$ with antipodal points of the equatorial $S^2 \subset S^3$ identified.
+:::
 
 ::: {.solution}
 Let $X_2$ be the quotient of $S^2$ obtained by identifying antipodal points on the equator.

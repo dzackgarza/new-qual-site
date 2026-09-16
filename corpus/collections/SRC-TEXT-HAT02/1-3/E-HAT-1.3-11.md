@@ -28,7 +28,9 @@ audit:
   note: Constructed the common double cover explicitly and proved neither quotient graph can nontrivially cover a connected graph.
 ---
 
+::: {.problem}
 Construct finite graphs $X_1$ and $X_2$ having a common finite-sheeted covering space $\tilde{X}_1 = \tilde{X}_2$, but such that there is no space having both $X_1$ and $X_2$ as covering spaces.
+:::
 
 ::: remark
 Under Hatcher's convention a covering map need not be surjective, so the literal statement would fail for the disconnected common target $X_1\sqcup X_2$.

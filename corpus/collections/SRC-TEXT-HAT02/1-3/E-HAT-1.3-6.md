@@ -24,9 +24,11 @@ audit:
   note: Twisted one circle in each attached shrinking wedge, with the chosen circle index tending to infinity along the covering line, so the double cover is locally valid but the composite has no evenly covered neighborhood at the wedge point.
 ---
 
+::: {.problem}
 Let $X$ be the shrinking wedge of circles in Example 1.25, and let $\tilde{X}$ be its covering space shown in the figure.
 Construct a two-sheeted covering space $Y \to \tilde{X}$ such that the composition $Y \to \tilde{X} \to X$ of the two covering spaces is not a covering space.
 Note that a composition of two covering spaces does have the unique path lifting property, however.
+:::
 
 ::: {.solution}
 Let

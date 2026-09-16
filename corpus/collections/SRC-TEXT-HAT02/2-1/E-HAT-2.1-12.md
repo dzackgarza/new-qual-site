@@ -17,7 +17,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that chain homotopy of chain maps is an equivalence relation.
+:::
 
 ::: {.solution}
 <1>1. Definition of chain homotopy:

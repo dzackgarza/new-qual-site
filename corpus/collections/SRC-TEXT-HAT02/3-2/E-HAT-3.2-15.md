@@ -23,9 +23,11 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 For a fixed coefficient field $F$, define the Poincaré series of a space $X$ to be the formal power series $p(t) = \sum_i a_i t^i$ where $a_i$ is the dimension of $H^i(X; F)$ as a vector space over $F$, assuming this dimension is finite for all $i$.
 Show that $p(X \times Y) = p(X) p(Y)$.
 Compute the Poincaré series for $S^n$, $\mathbb{RP}^n$, $\mathbb{RP}^\infty$, $\mathbb{CP}^n$, $\mathbb{CP}^\infty$, and the spaces in the preceding three exercises.
+:::
 
 ::: {.solution}
 Over the fixed field $F$, the Künneth theorem has no Tor term and gives

@@ -25,8 +25,10 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 Let $M$ be a closed orientable surface embedded in $\mathbb{R}^3$ in such a way that reflection across a plane $P$ defines a homeomorphism $r: M \to M$ fixing $M \cap P$, a collection of circles.
 Is it possible to homotope $r$ to have no fixed points?
+:::
 
 ::: {.solution}
 Yes. In fact one can remove the fixed circles by an arbitrarily small perturbation through maps homotopic to the reflection.

@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $SP_2(S^1)$ is a Möbius band, and that this is consistent with the description of $SP_2(S^n)$ as a mapping cone given in Example 4K.5.
+:::
 
 ::: {.solution}
 Represent an unordered pair of points of \(S^1\subset\mathbb C\) by the chord joining them. Thus

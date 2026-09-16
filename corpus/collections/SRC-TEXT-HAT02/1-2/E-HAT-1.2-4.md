@@ -25,8 +25,10 @@ audit:
   note: Radially retracted the complement to a sphere punctured at the 2n antipodal line-directions and identified its fundamental group as free of rank 2n-1.
 ---
 
+::: {.problem}
 Let $X \subset \mathbb{R}^3$ be the union of $n$ lines through the origin.
 Compute $\pi_1(\mathbb{R}^3 - X)$.
+:::
 
 ::: {.solution}
 Assume the $n$ lines are distinct.

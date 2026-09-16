@@ -24,8 +24,10 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 Let $X$ be homotopy equivalent to a finite simplicial complex and let $Y$ be homotopy equivalent to a finite or countably infinite simplicial complex.
 Using the simplicial approximation theorem, show that there are at most countably many homotopy classes of maps $X \to Y$.
+:::
 
 ::: {.solution}
 Choose homotopy equivalences

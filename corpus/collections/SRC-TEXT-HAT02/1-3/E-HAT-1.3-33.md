@@ -24,10 +24,11 @@ audit:
   note: Computed K-orbits of the Bass-Serre tree from the translation homomorphism and used Euler characteristic of the finite quotient graph.
 ---
 
+::: {.problem}
 In Example 1.44 let $d$ be the greatest common divisor of $m$ and $n$, and let $m' = m/d$ and $n' = n/d$.
 Show that the graph $T_{m,n}/K$ consists of $m'$ vertices labeled $a$, $n'$ vertices labeled $b$, together with $d$ edges joining each $a$ vertex to each $b$ vertex.
 Deduce that the subgroup $K \subset G_{m,n}$ is free on $dm'n' - m' - n' + 1$ generators.
-
+:::
 
 ::: {.solution}
 Recall from Example 1.44 that

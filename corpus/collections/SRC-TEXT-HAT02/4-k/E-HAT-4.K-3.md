@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $SP_n(I) = \Delta^n$.
+:::
 
 ::: {.solution}
 An element of the symmetric product

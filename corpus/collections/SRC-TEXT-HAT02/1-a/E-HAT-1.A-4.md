@@ -26,8 +26,9 @@ audit:
   note: Extended the cycle with one edge deleted to a maximal tree so the omitted edge gives the prescribed basis loop.
 ---
 
+::: {.problem}
 If $X$ is a finite graph and $Y$ is a subgraph homeomorphic to $S^1$ and containing the basepoint $x_0$, show that $\pi_1(X, x_0)$ has a basis in which one element is represented by the loop $Y$.
-
+:::
 
 ::: {.solution}
 Let $Y\subseteq X$ be the given subgraph homeomorphic to $S^1$ and containing the basepoint $x_0$.

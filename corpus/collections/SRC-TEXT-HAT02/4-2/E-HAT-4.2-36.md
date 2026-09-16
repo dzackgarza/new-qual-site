@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 For basepoint-preserving maps $f: S^1 \to X$ and $g: S^n \to X$ with $n > 1$, show that the Whitehead product $[f, g]$ is $\pm(g - fg)$, where $fg$ denotes the action of $f$ on $g$.
+:::
 
 ::: {.solution}
 Let

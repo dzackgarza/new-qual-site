@@ -26,9 +26,11 @@ audit:
   note: Classified the abelian middle groups by two-generator presentations and Smith normal form, and gave explicit maps for the Z4--Z8+Z2--Z4 example.
 ---
 
+::: {.problem}
 Determine whether there exists a short exact sequence $0 \to \mathbb{Z}_4 \to \mathbb{Z}_8 \oplus \mathbb{Z}_2 \to \mathbb{Z}_4 \to 0$.
 More generally, determine which abelian groups $A$ fit into a short exact sequence $0 \to \mathbb{Z}_{p^m} \to A \to \mathbb{Z}_{p^n} \to 0$ with $p$ prime.
 What about the case of short exact sequences $0 \to \mathbb{Z} \to A \to \mathbb{Z}_n \to 0$?
+:::
 
 ::: {.solution}
 <1>1. There is a short exact sequence

@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that $\operatorname{Ext}(A, \mathbb{Q}) = 0$ for all $A$.
 [Consider the homology with $\mathbb{Q}$ coefficients of a Moore space $M(A, n)$.]
+:::
 
 ::: {.solution}
 <1>1. Divisibility and injectivity of $\mathbb{Q}$:

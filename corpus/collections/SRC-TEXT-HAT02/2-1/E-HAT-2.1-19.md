@@ -24,7 +24,9 @@ audit:
   note: Used a two-set Mayer--Vietoris cover whose intersection deformation retracts to Q intersect I; this gives countably generated free H_1 and no higher homology.
 ---
 
+::: {.problem}
 Compute the homology groups of the subspace of $I \times I$ consisting of the four boundary edges plus all points in the interior whose first coordinate is rational.
+:::
 
 ::: {.solution}
 Let $X$ be the specified subspace of $I\times I$. Thus $X$ contains the whole boundary square and, for each rational $q\in(0,1)$, the vertical segment $\{q\}\times I$.

@@ -24,9 +24,11 @@ audit:
 
 ---
 
+::: {.problem}
 Let $p: \tilde{X} \to X$ be the universal cover of a path-connected space $X$.
 Show that under the isomorphism $\pi_n(X) \approx \pi_n(\tilde{X})$, which holds for $n \geq 2$, the action of $\pi_1(X)$ on $\pi_n(X)$ corresponds to the action of $\pi_1(X)$ on $\pi_n(\tilde{X})$ induced by the action of $\pi_1(X)$ on $\tilde{X}$ as deck transformations.
 More precisely, prove a formula like $\gamma p_*(\alpha) = p_*\bigl(\beta_{\tilde{\gamma}}(\gamma_*(\alpha))\bigr)$ where $\gamma \in \pi_1(X, x_0)$, $\alpha \in \pi_n(\tilde{X}, \tilde{x}_0)$, and $\gamma_*$ denotes the homomorphism induced by the action of $\gamma$ on $\tilde{X}$.
+:::
 
 ::: {.solution}
 Let \(\widetilde x_0\in p^{-1}(x_0)\), and let \(\gamma\) be a loop at \(x_0\). Lift \(\gamma\) to a path

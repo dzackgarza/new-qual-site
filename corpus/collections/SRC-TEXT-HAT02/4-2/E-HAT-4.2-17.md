@@ -24,8 +24,10 @@ audit:
 
 ---
 
+::: {.problem}
 Show that the map $\langle X, Y \rangle \to \operatorname{Hom}(\pi_n(X), \pi_n(Y))$, $[f] \mapsto f_*$, is a bijection if $X$ is an $(n-1)$-connected CW complex and $Y$ is a path-connected space with $\pi_i(Y) = 0$ for $i > n$.
 Deduce that CW complexes $K(G, n)$'s are uniquely determined, up to homotopy type, by $G$ and $n$.
+:::
 
 ::: {.solution}
 We use cellular obstruction theory. Since \(X\) is \((n-1)\)-connected, it is homotopy equivalent to a CW complex with one \(0\)-cell and no cells in dimensions \(1,\dots,n-1\). We may therefore assume this form.

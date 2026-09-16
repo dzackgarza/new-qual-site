@@ -16,6 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Given a covering space action of a group $G$ on a path-connected, locally path-connected space $X$, then each subgroup $H \subset G$ determines a composition of covering spaces $X \to X/H \to X/G$.
 Show:
 
@@ -24,6 +25,7 @@ Show:
 (b) Two such covering spaces $X/H_1$ and $X/H_2$ of $X/G$ are isomorphic if $H_1$ and $H_2$ are conjugate subgroups of $G$.
 
 (c) The covering space $X/H \to X/G$ is normal if $H$ is a normal subgroup of $G$, in which case the group of deck transformations of this cover is $G/H$.
+:::
 
 ::: {.solution}
 **(a).**

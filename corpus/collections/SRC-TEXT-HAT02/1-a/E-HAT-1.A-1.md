@@ -25,9 +25,10 @@ audit:
   note: Used the unit-edge path metric, truncated across components, and finite valence to compare metric and weak neighborhoods at vertices.
 ---
 
+::: {.problem}
 Let $X$ be a graph in which each vertex is an endpoint of only finitely many edges.
 Show that the weak topology on $X$ is a metric topology.
-
+:::
 
 ::: {.solution}
 Give every edge of $X$ length $1$.

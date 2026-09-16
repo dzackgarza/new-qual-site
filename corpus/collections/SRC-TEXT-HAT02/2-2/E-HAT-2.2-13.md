@@ -25,11 +25,13 @@ audit:
   note: Enumerated all subcomplexes, computed quotient cellular homology, and tracked the quotient maps on top homology.
 ---
 
+::: {.problem}
 Let $X$ be the 2 complex obtained from $S^1$ with its usual cell structure by attaching two 2 cells by maps of degrees 2 and 3, respectively.
 
 (a) Compute the homology groups of all the subcomplexes $A \subset X$ and the corresponding quotient complexes $X/A$.
 
 (b) Show that $X \simeq S^2$ and that the only subcomplex $A \subset X$ for which the quotient map $X \to X/A$ is a homotopy equivalence is the trivial subcomplex, the 0 cell.
+:::
 
 ::: {.solution}
 Let $e^0,e^1,e^2_2,e^2_3$ denote the cells, where the subscripts record the degrees of the two attaching maps. The cellular chain complex of $X$ is

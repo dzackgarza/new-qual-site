@@ -26,8 +26,10 @@ audit:
   note: Inducted over the convex sets and used van Kampen; the triple-intersection hypothesis makes each successive overlap path connected.
 ---
 
+::: {.problem}
 Let $X \subset \mathbb{R}^m$ be the union of convex open sets $X_1, \cdots, X_n$ such that $X_i \cap X_j \cap X_k \neq \emptyset$ for all $i, j, k$.
 Show that $X$ is simply-connected.
+:::
 
 ::: {.solution}
 For $1\le r\le n$, set

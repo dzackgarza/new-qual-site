@@ -25,7 +25,9 @@ audit:
   note: Reduced the forward implication to conjugation by the loop h k-bar and the reverse implication to comparison with the constant path.
 ---
 
+::: {.problem}
 For a path-connected space $X$, show that $\pi_1(X)$ is abelian iff all basepoint-change homomorphisms $\beta_h$ depend only on the endpoints of the path $h$.
+:::
 
 ::: {.solution}
 Fix points $x_0,x_1\in X$ and paths $h,k$ from $x_0$ to $x_1$.

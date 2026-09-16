@@ -24,7 +24,9 @@ audit:
   note: Classified connected finite covers by transitive permutation pairs modulo simultaneous conjugacy, yielding three double covers and seven triple covers.
 ---
 
+::: {.problem}
 Find all the connected 2-sheeted and 3-sheeted covering spaces of $S^1 \vee S^1$, up to isomorphism of covering spaces without basepoints.
+:::
 
 ::: {.solution}
 Let the two oriented loops of $S^1\vee S^1$ be labelled $a$ and $b$.

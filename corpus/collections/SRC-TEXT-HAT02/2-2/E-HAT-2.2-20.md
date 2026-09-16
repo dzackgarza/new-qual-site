@@ -25,7 +25,9 @@ audit:
   note: Complete cellular/Euler-characteristic computation checked.
 ---
 
+::: {.problem}
 For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y) = \chi(X)\chi(Y)$.
+:::
 
 ::: {.solution}
 Give $X$ and $Y$ finite CW structures. If $c_p(X)$ and $c_q(Y)$ denote the numbers of cells in dimensions $p$ and $q$, then the product CW structure on $X\times Y$ has one cell

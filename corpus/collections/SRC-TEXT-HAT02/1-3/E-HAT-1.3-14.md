@@ -24,7 +24,9 @@ audit:
   note: Classified all subgroups of the infinite dihedral group up to conjugacy and translated their Schreier graphs into the corresponding covers built from lifted RP2 and S2 pieces.
 ---
 
+::: {.problem}
 Find all the connected covering spaces of $\mathbb{RP}^2 \vee \mathbb{RP}^2$.
+:::
 
 ::: {.solution}
 Write

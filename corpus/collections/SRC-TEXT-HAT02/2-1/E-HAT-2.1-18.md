@@ -25,7 +25,9 @@ audit:
   note: Identified H_1(R,Q) with the augmentation kernel of the free abelian group on Q and exhibited the standard difference basis.
 ---
 
+::: {.problem}
 Show that for the subspace $\mathbb{Q} \subset \mathbb{R}$, the relative homology group $H_1(\mathbb{R}, \mathbb{Q})$ is free abelian and find a basis.
+:::
 
 ::: {.solution}
 Since $\mathbb R$ is contractible,

@@ -24,8 +24,10 @@ audit:
   note: Verified the Alexander-duality and Mayer--Vietoris calculations and all degree shifts.
 ---
 
+::: {.problem}
 Show that $\tilde{H}_i(S^n - X) \approx \tilde{H}_{n-i-1}(X)$ when $X$ is homeomorphic to a finite connected graph.
 [First do the case that the graph is a tree.]
+:::
 
 ::: {.solution}
 Let $X\subset S^n$ be homeomorphic to a finite connected graph. Since all homology groups of a finite graph are free abelian, the universal coefficient theorem identifies

@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Consider a pushout diagram where $B$ is $B$ with $X$ attached along $A$ via $f$.
 Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B \sqcup_f X$.
+:::
 
 ::: {.solution}
 <1>1. Homotopy Extension Property (HEP) setup for the pushout:

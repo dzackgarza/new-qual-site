@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\mathbb{C}^k); \mathbb{Z}) \approx \Lambda_\mathbb{Z}[x_{2k-2n+1}, x_{2k-2n+3}, \ldots, x_{2k-1}]$ and similarly in the quaternionic case.
+:::
 
 ::: {.solution}
 <1>1. $V_n(\mathbb{C}^k)$ is the Stiefel manifold of $n$-frames in $\mathbb{C}^k$, and it fibers over $V_{n-1}(\mathbb{C}^k)$ with fiber $S^{2k-2n+1}$.

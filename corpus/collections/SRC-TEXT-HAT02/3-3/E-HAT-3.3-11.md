@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 If $M_g$ denotes the closed orientable surface of genus $g$, show that degree 1 maps $M_g \to M_h$ exist iff $g \geq h$.
+:::
 
 ::: {.solution}
 <1>1. Forward direction ($f: M_g \to M_h$ of degree $1 \implies g \ge h$):

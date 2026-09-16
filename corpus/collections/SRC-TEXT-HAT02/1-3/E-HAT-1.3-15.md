@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Let $p: \tilde{X} \to X$ be a simply-connected covering space of $X$ and let $A \subset X$ be a path-connected, locally path-connected subspace, with $\tilde{A} \subset \tilde{X}$ a path-component of $p^{-1}(A)$.
 Show that $p: \tilde{A} \to A$ is the covering space corresponding to the kernel of the map $\pi_1(A) \to \pi_1(X)$.
+:::
 
 ::: {.solution}
 <1>1. $p: \tilde A \to A$ is a covering space.

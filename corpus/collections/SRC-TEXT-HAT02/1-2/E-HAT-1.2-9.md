@@ -26,9 +26,11 @@ audit:
   note: Used the boundary product-of-commutators relation for the nonretraction and a standard CW structure for the retraction onto a nonseparating curve.
 ---
 
+::: {.problem}
 In the surface $M_g$ of genus $g$, let $C$ be a circle that separates $M_g$ into two compact subsurfaces $M'_h$ and $M'_k$ obtained from the closed surfaces $M_h$ and $M_k$ by deleting an open disk from each.
 Show that $M'_h$ does not retract onto its boundary circle $C$, and hence $M_g$ does not retract onto $C$.
 [Hint: abelianize $\pi_1$.] But show that $M_g$ does retract onto the nonseparating circle $C'$ in the figure.
+:::
 
 ::: {.solution}
 <1>1. For $h\ge1$, the surface $M'_h$ has fundamental group

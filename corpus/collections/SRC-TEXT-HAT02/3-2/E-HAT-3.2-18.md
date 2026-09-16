@@ -16,9 +16,11 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 For the closed orientable surface $M$ of genus $g \geq 1$, show that for each nonzero $\alpha \in H^1(M; \mathbb{Z})$ there exists $\beta \in H^1(M; \mathbb{Z})$ with $\alpha \beta \neq 0$.
 Deduce that $M$ is not homotopy equivalent to a wedge sum $X \vee Y$ of CW complexes with nontrivial reduced homology.
 Do the same for closed nonorientable surfaces using cohomology with $\mathbb{Z}_2$ coefficients.
+:::
 
 ::: {.solution}
 <1>1. $H^1(M;\ZZ) \cong \ZZ^{2g}$, and the cup product pairing $H^1 \times H^1 \to H^2 \cong \ZZ$ is a nondegenerate symplectic form.

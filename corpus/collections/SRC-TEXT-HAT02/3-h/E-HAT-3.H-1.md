@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Compute $H_*(S^1; E)$ and $H^*(S^1; E)$ for $E \to S^1$ the nontrivial bundle with fiber $\mathbb{Z}$.
+:::
 
 ::: {.solution}
 Give $S^1$ its CW structure with one $0$-cell and one $1$-cell. For the nontrivial local system $E$ with fiber $\mathbb Z$, monodromy around the circle acts by $-1$.

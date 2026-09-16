@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Use van Kampen's theorem to compute $A *_C$ as a quotient of $A * \mathbb{Z}$, as stated in the text.
+:::
 
 ::: {.solution}
 **Goal.** Use van Kampen to express the amalgamated product $A *_C$ as a quotient of $A * \ZZ$.

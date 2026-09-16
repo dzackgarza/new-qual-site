@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Construct a CW complex $X$ with prescribed homotopy groups $\pi_i(X)$ and prescribed actions of $\pi_1(X)$ on the $\pi_i(X)$'s.
+:::
 
 ::: {.solution}
 Let the prescribed fundamental group be \(G_1\). For \(i>1\), the prescribed group \(G_i\) is necessarily abelian, and suppose we are given a homomorphism

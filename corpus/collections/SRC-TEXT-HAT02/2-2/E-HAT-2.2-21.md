@@ -25,7 +25,9 @@ audit:
   note: Complete cellular/Euler-characteristic computation checked.
 ---
 
+::: {.problem}
 If a finite CW complex $X$ is the union of subcomplexes $A$ and $B$, show that $\chi(X) = \chi(A) + \chi(B) - \chi(A \cap B)$.
+:::
 
 ::: {.solution}
 Because $A$ and $B$ are subcomplexes of $X$, every open cell of $X=A\cup B$ lies in $A$ or in $B$, and it lies in both exactly when it is a cell of $A\cap B$.

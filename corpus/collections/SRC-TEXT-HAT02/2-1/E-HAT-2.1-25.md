@@ -26,7 +26,9 @@ audit:
   note: Complete proof reviewed against the relevant chain, relative-homology, local-homology, or covering-space calculation.
 ---
 
+::: {.problem}
 Find an explicit, noninductive formula for the barycentric subdivision operator $S: C_n(X) \to C_n(X)$.
+:::
 
 ::: {.solution}
 For an oriented simplex

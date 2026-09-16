@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 If $T^n$ is the $n$-dimensional torus, the product of $n$ circles, show that the Pontryagin ring $H_*(T^n; \mathbb{Z})$ is the exterior algebra $\Lambda_\mathbb{Z}[x_1, \dots, x_n]$ with $|x_i| = 1$.
+:::
 
 ::: {.solution}
 <1>1. $H_*(S^1; \ZZ) = \ZZ \oplus \ZZ x$ with $|x| = 1$, and the Pontryagin product (induced by the group structure of $S^1$) satisfies $x^2 = 0$.

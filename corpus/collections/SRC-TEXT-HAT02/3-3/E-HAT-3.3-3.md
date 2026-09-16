@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that every covering space of an orientable manifold is an orientable manifold.
+:::
 
 ::: {.solution}
 Let $p:\widetilde M\to M$ be a covering map and suppose $M$ is orientable. For each $x\in M$, choose an orientation class

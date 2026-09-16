@@ -18,7 +18,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that the complement of a finite set of points in $\mathbb{R}^n$ is simply-connected if $n \geq 3$.
+:::
 
 ::: {.solution}
 **Goal.** Show $\RR^n \sm \theset{p_1, \dots, p_k}$ is simply connected for $n \ge 3$.

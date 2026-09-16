@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 What are the primitive elements of the Hopf algebra $\mathbb{Z}_p[x]$ for $p$ prime?
+:::
 
 ::: {.solution}
 <1>1. $H_*(T^n)\cong\Lambda[x_1,\dots,x_n]$ exterior.

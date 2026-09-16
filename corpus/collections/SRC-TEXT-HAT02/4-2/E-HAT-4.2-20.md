@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $G$ be a group and $X$ a simply-connected space.
 Show that for the product $K(G, 1) \times X$ the action of $\pi_1$ on $\pi_n$ is trivial for all $n > 1$.
+:::
 
 ::: {.solution}
 Let \(K=K(G,1)\) and let

@@ -25,8 +25,9 @@ audit:
   note: Wrote the simplicial chain complex with one vertex, three edges, and one 2-simplex; the single primitive boundary relation leaves H1 of rank two.
 ---
 
+::: {.problem}
 Compute the simplicial homology groups of the triangular parachute obtained from $\Delta^2$ by identifying its three vertices to a single point.
-
+:::
 
 ::: {.solution}
 Let $v$ be the common image of the three vertices.

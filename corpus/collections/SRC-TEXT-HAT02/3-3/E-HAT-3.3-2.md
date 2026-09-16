@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that deleting a point from a manifold of dimension greater than 1 does not affect orientability of the manifold.
+:::
 
 ::: {.solution}
 <1>1. Characterization of orientability via the orientation double cover:

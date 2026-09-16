@@ -26,9 +26,11 @@ audit:
   note: Used the vertical arc to obstruct a homotopy relative to both boundary circles; its twisted image differs by one generator of the annulus fundamental group.
 ---
 
+::: {.problem}
 Define $f: S^1 \times I \longrightarrow S^1 \times I$ by $f(\theta, s) = (\theta + 2\pi s, s)$, so $f$ restricts to the identity on the two boundary circles of $S^1 \times I$.
 Show that $f$ is homotopic to the identity by a homotopy $f_t$ that is stationary on one of the boundary circles, but not by any homotopy $f_t$ that is stationary on both boundary circles.
 [Consider what $f$ does to the path $s \mapsto (\theta_0, s)$ for fixed $\theta_0 \in S^1$.]
+:::
 
 ::: {.solution}
 Write points of $S^1$ by angles modulo $2\pi$.

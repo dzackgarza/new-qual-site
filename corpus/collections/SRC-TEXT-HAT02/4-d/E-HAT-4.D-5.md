@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Use the Gysin sequence to show that for a fiber bundle $S^k \to S^m \xrightarrow{p} S^n$ we must have $k = n-1$ and $m = 2n-1$.
 Then use the Thom isomorphism to show that the Hopf invariant of $p$ must be $\pm 1$.
+:::
 
 ::: {.solution}
 <1>1. The Gysin sequence for the sphere bundle $S^k \to S^m \xrightarrow{p} S^n$ is

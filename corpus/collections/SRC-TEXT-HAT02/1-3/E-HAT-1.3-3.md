@@ -24,8 +24,10 @@ audit:
   note: Proved Hausdorffness by separating points through the base or disjoint sheets, then proved compactness using finitely many shrunken evenly covered neighborhoods with compact closures.
 ---
 
+::: {.problem}
 Let $p: \tilde{X} \to X$ be a covering space with $p^{-1}(x)$ finite and nonempty for all $x \in X$.
 Show that $\tilde{X}$ is compact Hausdorff if $X$ is compact Hausdorff.
+:::
 
 ::: {.solution}
 Assume $X$ is compact Hausdorff and every fiber of

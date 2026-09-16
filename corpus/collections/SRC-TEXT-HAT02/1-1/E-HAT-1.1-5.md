@@ -25,6 +25,7 @@ audit:
   note: Included the free-homotopy conjugacy argument needed to pass from unbased null-homotopy to trivial based fundamental-group class.
 ---
 
+::: {.problem}
 Show that for a space $X$, the following three conditions are equivalent:
 
 (a) Every map $S^1 \to X$ is homotopic to a constant map, with image a point.
@@ -35,6 +36,7 @@ Show that for a space $X$, the following three conditions are equivalent:
 
 Deduce that a space $X$ is simply-connected iff all maps $S^1 \to X$ are homotopic.
 [In this problem, 'homotopic' means 'homotopic without regard to basepoints'.]
+:::
 
 ::: {.solution}
 <1>1. If two loops $f_0,f_1:S^1\to X$ are freely homotopic, then after choosing a point $s_0\in S^1$ their based homotopy classes are conjugate by the path traced by the basepoint during the homotopy.

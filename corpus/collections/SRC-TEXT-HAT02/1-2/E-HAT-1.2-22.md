@@ -18,6 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 In this exercise we describe an algorithm for computing a presentation of the fundamental group of the complement of a smooth or piecewise linear knot $K$ in $\mathbb{R}^3$, called the Wirtinger presentation.
 To begin, we position the knot to lie almost flat on a table, so that $K$ consists of finitely many disjoint arcs $\alpha_i$ where it intersects the table top together with finitely many disjoint arcs $\beta_\ell$ where $K$ crosses over itself.
 We build a 2 dimensional complex $X$ that is a deformation retract of $\mathbb{R}^3 - K$ by the following three steps.
@@ -30,6 +31,7 @@ Finally, over each arc $\beta_\ell$ put a square $S_\ell$, bent downward along i
 [To get the correct signs it is helpful to use an orientation of $K$.]
 
 (b) Use this presentation to show that the abelianization of $\pi_1(\mathbb{R}^3 - K)$ is $\mathbb{Z}$.
+:::
 
 ::: {.solution}
 **(a).**

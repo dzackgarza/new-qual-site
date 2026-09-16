@@ -24,8 +24,10 @@ audit:
   note: Intersected an evenly covered neighborhood in X with the subspace A and checked the restricted sheets explicitly.
 ---
 
+::: {.problem}
 For a covering space $p: \tilde{X} \to X$ and a subspace $A \subset X$, let $\tilde{A} = p^{-1}(A)$.
 Show that the restriction $p: \tilde{A} \to A$ is a covering space.
+:::
 
 ::: {.solution}
 <1>1. Fix $a\in A$ and choose an evenly covered open neighborhood $U\subseteq X$ of $a$ for the covering $p:\widetilde X\to X$.

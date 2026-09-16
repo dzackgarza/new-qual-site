@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Compute the Pontryagin ring structure in $H_*(SO(5); \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. $SO(5)$ has $H_*(SO(5); \mathbb{Z}) \cong \Lambda_\mathbb{Z}[x_1, x_3]$ (exterior algebra on generators of degrees $1$ and $3$), as an abelian group.

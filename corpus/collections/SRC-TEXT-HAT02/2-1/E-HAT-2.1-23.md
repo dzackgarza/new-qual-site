@@ -26,8 +26,10 @@ audit:
   note: Complete proof checked at chain/skeletal/combinatorial level.
 ---
 
+::: {.problem}
 Show that the second barycentric subdivision of a $\Delta$-complex is a simplicial complex.
 Namely, show that the first barycentric subdivision produces a $\Delta$-complex with the property that each simplex has all its vertices distinct, then show that for a $\Delta$-complex with this property, barycentric subdivision produces a simplicial complex.
+:::
 
 ::: {.solution}
 Recall that the vertices of the barycentric subdivision are barycenters of simplices, and its simplices correspond to chains of faces.

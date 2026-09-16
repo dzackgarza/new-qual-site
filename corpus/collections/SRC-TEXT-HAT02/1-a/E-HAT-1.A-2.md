@@ -25,8 +25,9 @@ audit:
   note: Extended the identity on the connected subgraph cellwise over all remaining vertices and edges, using weak-topology continuity.
 ---
 
+::: {.problem}
 Show that a connected graph retracts onto any connected subgraph.
-
+:::
 
 ::: {.solution}
 Let $A\subseteq X$ be a connected subgraph.

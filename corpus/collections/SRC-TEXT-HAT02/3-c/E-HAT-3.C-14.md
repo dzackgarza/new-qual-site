@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the coproduct in the Hopf algebra $H_*(X; R)$ dual to $H^*(X; R)$ is induced by the diagonal map $X \to X \times X$, $x \mapsto (x, x)$.
+:::
 
 ::: {.solution}
 Assume the degreewise finiteness hypotheses needed to identify homology and cohomology as graded duals. Let

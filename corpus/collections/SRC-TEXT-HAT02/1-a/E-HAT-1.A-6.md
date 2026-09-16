@@ -26,9 +26,10 @@ audit:
   note: Used the square-lattice cover for ker(F2 -> Z2), chose a spanning tree of all horizontal edges plus the vertical axis, and read the non-tree-edge loops as a free basis.
 ---
 
+::: {.problem}
 Let $F$ be the free group on two generators and let $F'$ be its commutator subgroup.
 Find a set of free generators for $F'$ by considering the covering space of the graph $S^1 \lor S^1$ corresponding to $F'$.
-
+:::
 
 ::: {.solution}
 Let

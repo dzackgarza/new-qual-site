@@ -25,7 +25,9 @@ audit:
   note: Complete Mayer--Vietoris/algebraic proof checked.
 ---
 
+::: {.problem}
 For $X$ a finite CW complex and $F$ a field, show that the Euler characteristic $\chi(X)$ can also be computed by the formula $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$, the alternating sum of the dimensions of the vector spaces $H_n(X; F)$.
+:::
 
 ::: {.solution}
 Let $C_*^{CW}(X;F)$ be the cellular chain complex over the field $F$. Since $X$ is finite, every chain group is finite-dimensional and

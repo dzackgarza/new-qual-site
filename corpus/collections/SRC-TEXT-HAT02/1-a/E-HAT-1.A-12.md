@@ -25,10 +25,11 @@ audit:
   note: Used the finite core of the H-cover together with Exercise 10 so the H-loops remain closed while the chosen x-loop remains open.
 ---
 
+::: {.problem}
 Let $F$ be a finitely generated free group, $H \subset F$ a finitely generated subgroup, and $x \in F - H$.
 Show there is a subgroup $K$ of finite index in $F$ such that $K \supset H$ and $x \notin K$.
 [Apply Exercise 10.]
-
+:::
 
 ::: {.solution}
 Realize

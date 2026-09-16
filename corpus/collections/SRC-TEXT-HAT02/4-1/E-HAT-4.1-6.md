@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 If $p: (\tilde{X}, \tilde{A}, \tilde{x}_0) \to (X, A, x_0)$ is a covering space with $\tilde{A} = p^{-1}(A)$, show that the map $p_*: \pi_n(\tilde{X}, \tilde{A}, \tilde{x}_0) \to \pi_n(X, A, x_0)$ is an isomorphism for all $n > 1$.
+:::
 
 ::: {.solution}
 Represent an element of \(\pi_n(X,A,x_0)\), \(n>1\), by a map of triples

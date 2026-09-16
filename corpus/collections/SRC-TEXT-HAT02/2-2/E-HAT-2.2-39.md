@@ -18,7 +18,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Use the preceding exercise to derive relative Mayer–Vietoris sequences for CW pairs $(X, Y) = (A \cup B, C \cup D)$ with $A = B$ or $C = D$.
+:::
 
 ::: {.solution}
 <1>1. The preceding exercise (E-HAT-2.2-38) gives: from a commutative diagram with exact rows and every third vertical map an isomorphism, one obtains a long exact sequence $$\cdots \to E_{n+1} \to B_n \to C_n \oplus D_n \to E_n \to B_{n-1} \to \cdots.$$ Proof: the algebraic lemma.

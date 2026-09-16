@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 From the fact that $\operatorname{Tor}(A, B) = 0$ if $A$ is free, deduce that $\operatorname{Tor}(A, B) = 0$ if $A$ is torsionfree by applying the previous problem to the directed system of finitely generated subgroups $A_\alpha$ of $A$.
+:::
 
 ::: {.solution}
 Write a torsionfree abelian group $A$ as the directed union of its finitely generated subgroups:

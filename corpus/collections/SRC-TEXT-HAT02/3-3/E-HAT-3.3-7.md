@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 For a map $f: M \to N$ between connected closed orientable $n$-manifolds with fundamental classes $[M]$ and $[N]$, the degree of $f$ is defined to be the integer $d$ such that $f_*([M]) = d[N]$, so the sign of the degree depends on the choice of fundamental classes.
 Show that for any connected closed orientable $n$-manifold $M$ there is a degree 1 map $M \to S^n$.
+:::
 
 ::: {.solution}
 Choose an embedded closed $n$-ball $B\subset M$ whose interior is orientation-compatible with the chosen fundamental class $[M]$. Collapse the complement of the interior of $B$ to a point:

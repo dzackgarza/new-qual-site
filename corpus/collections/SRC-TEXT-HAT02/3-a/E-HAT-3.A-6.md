@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $\operatorname{Tor}(A, B)$ is always a torsion group, and that $\operatorname{Tor}(A, B)$ contains an element of order $n$ if both $A$ and $B$ contain elements of order $n$.
+:::
 
 ::: {.solution}
 First show that $\operatorname{Tor}(A,B)$ is torsion. Express $A$ as the directed union of its finitely generated subgroups $A_\alpha$. By Exercise 4,

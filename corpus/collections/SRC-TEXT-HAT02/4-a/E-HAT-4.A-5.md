@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 This problem involves the spaces constructed in the latter part of this section.
 
 (a) Compute the homology groups of the complex $Z$ in the case $n = 3$, when $Z$ is 2-dimensional.
@@ -32,6 +33,7 @@ Thus there is a fiber bundle $\tilde{X}_n \to S^1 \vee S^1$ with fiber $\tilde{X
 
 (c) Use part (b) to find a presentation for $\pi_1(\tilde{X}_n)$, and show this presentation reduces to a finite presentation if $n > 2$ and a presentation with a finite number of generators if $n = 2$.
 In the latter case, deduce that $\pi_1(\tilde{X}_2)$ has no finite presentation from the fact that $H_2(\tilde{X}_2)$ is not finitely generated.
+:::
 
 ::: {.solution}
 Write

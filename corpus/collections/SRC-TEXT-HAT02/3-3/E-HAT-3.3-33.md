@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that if $M$ is a compact contractible $n$-manifold then $\partial M$ is a homology $(n-1)$-sphere, that is, $H_i(\partial M; \mathbb{Z}) \approx H_i(S^{n-1}; \mathbb{Z})$ for all $i$.
+:::
 
 ::: {.solution}
 <1>1. $M$ contractible implies $H_i(M)=0$ for $i>0$, $H_0=\ZZ$.

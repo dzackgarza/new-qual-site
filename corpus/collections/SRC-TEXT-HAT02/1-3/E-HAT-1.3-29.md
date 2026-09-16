@@ -24,9 +24,10 @@ audit:
   note: Showed that a conjugating homeomorphism descends to a homeomorphism of orbit spaces.
 ---
 
+::: {.problem}
 Let $Y$ be path-connected, locally path-connected, and simply-connected, and let $G_1$ and $G_2$ be subgroups of $\mathrm{Homeo}(Y)$ defining covering space actions on $Y$.
 Show that the orbit spaces $Y/G_1$ and $Y/G_2$ are homeomorphic if $G_1$ and $G_2$ are conjugate subgroups of $\mathrm{Homeo}(Y)$.
-
+:::
 
 ::: {.solution}
 Suppose

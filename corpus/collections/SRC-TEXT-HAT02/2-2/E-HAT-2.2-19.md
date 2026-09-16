@@ -26,7 +26,9 @@ audit:
   note: Complete cellular/Euler-characteristic computation checked.
 ---
 
+::: {.problem}
 Compute $H_i(\mathbb{RP}^n/\mathbb{RP}^m)$ for $m < n$ by cellular homology, using the standard CW structure on $\mathbb{RP}^n$ with $\mathbb{RP}^m$ as its $m$ skeleton.
+:::
 
 ::: {.solution}
 Let

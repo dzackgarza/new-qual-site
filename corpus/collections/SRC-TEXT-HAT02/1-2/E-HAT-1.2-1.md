@@ -18,7 +18,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that the free product $G * H$ of nontrivial groups $G$ and $H$ has trivial center, and that the only elements of $G * H$ of finite order are the conjugates of finite-order elements of $G$ and $H$.
+:::
 
 ::: {.solution}
 <1>1. Every element of $G * H$ has a unique reduced word form $g_1 h_1 g_2 h_2 \cdots$ with $g_i \in G \setminus \{1\}$, $h_i \in H \setminus \{1\}$ (alternating, no adjacent factors from the same group).

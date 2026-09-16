@@ -25,6 +25,7 @@ audit:
   note: Complete Mayer--Vietoris/Wang-sequence calculation checked.
 ---
 
+::: {.problem}
 For the mapping torus $T_f$ of a map $f: X \to X$, we constructed in Example 2.48 a long exact sequence $\cdots \to H_n(X) \xrightarrow{1-f_*} H_n(X) \to H_n(T_f) \to H_{n-1}(X) \to \cdots$.
 Use this to compute the homology of the mapping tori of the following maps:
 
@@ -37,6 +38,7 @@ Use this to compute the homology of the mapping tori of the following maps:
 (d) The map $S^1 \times S^1 \to S^1 \times S^1$ that is a reflection on each factor.
 
 (e) The map $S^1 \times S^1 \to S^1 \times S^1$ that interchanges the two factors and then reflects one of the factors.
+:::
 
 ::: {.solution}
 For the mapping torus $T_f$, the Wang sequence yields short exact sequences

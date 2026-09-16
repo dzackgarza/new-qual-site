@@ -25,7 +25,9 @@ audit:
   note: Closed an arbitrary endpoint-in-A path to a based loop using paths in A, applied surjectivity, and cancelled the auxiliary paths.
 ---
 
+::: {.problem}
 Given a space $X$ and a path-connected subspace $A$ containing the basepoint $x_0$, show that the map $\pi_1(A, x_0) \to \pi_1(X, x_0)$ induced by the inclusion $A \hookrightarrow X$ is surjective iff every path in $X$ with endpoints in $A$ is homotopic to a path in $A$.
+:::
 
 ::: {.solution}
 All homotopies of paths below are relative to their endpoints.

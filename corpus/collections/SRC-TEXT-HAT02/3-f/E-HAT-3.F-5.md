@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $\operatorname{Ext}(A, \mathbb{Z})$ is isomorphic to the cokernel of $\operatorname{Hom}(A, \mathbb{Q}) \to \operatorname{Hom}(A, \mathbb{Q}/\mathbb{Z})$, the map induced by the quotient map $\mathbb{Q} \to \mathbb{Q}/\mathbb{Z}$.
 Use this to get another proof that $\operatorname{Ext}(\mathbb{Z}_{p^\infty}, \mathbb{Z}) \approx \widehat{\mathbb{Z}}_p$ for $p$ prime.
+:::
 
 ::: {.solution}
 Apply $\operatorname{Hom}(A,-)$ and its derived functor $\operatorname{Ext}(A,-)$ to

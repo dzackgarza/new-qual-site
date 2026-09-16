@@ -18,9 +18,11 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Given a map $f: S^{2n} \to S^{2n}$, show that there is some point $x \in S^{2n}$ with either $f(x) = x$ or $f(x) = -x$.
 Deduce that every map $\mathbb{RP}^{2n} \to \mathbb{RP}^{2n}$ has a fixed point.
 Construct maps $\mathbb{RP}^{2n-1} \to \mathbb{RP}^{2n-1}$ without fixed points from linear transformations $\mathbb{R}^{2n} \to \mathbb{R}^{2n}$ without eigenvectors.
+:::
 
 ::: {.solution}
 **Goal.** Show every map $f: S^{2n} \to S^{2n}$ has a fixed point or an antipodal point; deduce every map $\RP^{2n} \to \RP^{2n}$ has a fixed point; and construct fixed-point-free maps of $\RP^{2n-1}$.

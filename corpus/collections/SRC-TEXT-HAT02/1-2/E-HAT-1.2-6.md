@@ -26,7 +26,9 @@ audit:
   note: Replaced each puncture by a small boundary sphere, then filled the spheres by n-cells and applied Proposition 1.26(b).
 ---
 
+::: {.problem}
 Use Proposition 1.26 to show that the complement of a closed discrete subspace of $\mathbb{R}^n$ is simply-connected if $n \geq 3$.
+:::
 
 ::: {.solution}
 Let $D\subset\mathbb R^n$ be closed and discrete, with $n\ge3$, and put

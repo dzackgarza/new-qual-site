@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 If $M$ is a noncompact $R$-orientable $n$-manifold with boundary $\partial M$ having a collar neighborhood in $M$, show that there are Poincaré duality isomorphisms $H_c^k(M; R) \approx H_{n-k}(M, \partial M; R)$ for all $k$, using the five-lemma and the long exact sequence relating compactly supported cohomology of $M$, $M \setminus \partial M$, and $\partial M$.
+:::
 
 ::: {.solution}
 Because $\partial M$ has a collar, compactly supported cohomology has the long exact sequence

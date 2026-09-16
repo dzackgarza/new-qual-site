@@ -25,7 +25,9 @@ audit:
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
 ---
 
+::: {.problem}
 Show that every map $S^n \to S^n$ can be homotoped to have a fixed point if $n > 0$.
+:::
 
 ::: {.solution}
 Let

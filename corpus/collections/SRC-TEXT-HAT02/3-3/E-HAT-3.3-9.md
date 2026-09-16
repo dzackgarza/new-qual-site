@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that a $p$-sheeted covering space projection $M \to N$ has degree $\pm p$, when $M$ and $N$ are connected closed orientable manifolds.
+:::
 
 ::: {.solution}
 Let $p:M\to N$ be a $p$-sheeted covering between connected closed orientable $n$-manifolds. Choose an evenly covered ball $B\subset N$. Its inverse image is a disjoint union of $p$ balls
