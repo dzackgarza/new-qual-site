@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-8B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 8B
+title: A group that is both a quotient and a subgroup of $\mathbb Z^n$ is isomorphic to $\mathbb Z^n$
 classification:
   areas:
   - prelim

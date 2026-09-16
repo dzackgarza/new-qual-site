@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-1A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 1A
+title: Euler product for $\zeta(s)$ and divergence of $\sum_p 1/p$
 classification:
   areas:
   - prelim

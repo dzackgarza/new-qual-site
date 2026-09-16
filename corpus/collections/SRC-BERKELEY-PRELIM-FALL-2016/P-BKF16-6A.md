@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-6A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 6A
+title: Low-rank approximation of the matrix $(\exp(t_is_j))$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-8A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 8A
+title: Fields embedding in $M_2(\mathbb Q)$
 classification:
   areas:
   - prelim

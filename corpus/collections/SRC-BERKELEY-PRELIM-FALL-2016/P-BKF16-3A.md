@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-3A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 3A
+title: Completeness of $K$-Lipschitz functions under locally uniform convergence
 classification:
   areas:
   - prelim

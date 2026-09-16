@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-9A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 9A
+title: Order of $\operatorname{GL}_n(\mathbb F_p)$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-5B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 5B
+title: Power sums of zeros in the disk depend analytically on a parameter
 classification:
   areas:
   - prelim

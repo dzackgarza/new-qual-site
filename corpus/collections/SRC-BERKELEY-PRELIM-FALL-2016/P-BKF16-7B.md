@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-7B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 7B
+title: An injective nonsurjective map and a surjective noninjective map summing to the identity
 classification:
   areas:
   - prelim

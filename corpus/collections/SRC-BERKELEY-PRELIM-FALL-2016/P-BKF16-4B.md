@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-4B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 4B
+title: Holomorphic square root of $z(e^z-1)$ near $0$
 classification:
   areas:
   - prelim

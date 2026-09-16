@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-7A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 7A
+title: Rational matrices similar over $\mathbb C$ are similar over $\mathbb Q$
 classification:
   areas:
   - prelim

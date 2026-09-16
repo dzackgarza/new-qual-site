@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-1B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 1B
+title: The Gaussian integral and surface areas of spheres via $\Gamma$
 classification:
   areas:
   - prelim

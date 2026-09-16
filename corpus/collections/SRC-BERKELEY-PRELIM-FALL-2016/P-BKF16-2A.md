@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-2A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 2A
+title: A quadratic Grönwall-type inequality
 classification:
   areas:
   - prelim

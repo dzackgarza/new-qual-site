@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-3B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 3B
+title: Contraction mapping iteration and the fixed point of $\cos$
 classification:
   areas:
   - prelim

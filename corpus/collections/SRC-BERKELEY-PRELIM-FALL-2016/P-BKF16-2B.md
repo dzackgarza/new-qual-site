@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-2B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 2B
+title: Volume of a compact set as a limit of integrals of powers of a distance cutoff
 classification:
   areas:
   - prelim

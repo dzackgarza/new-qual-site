@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-6B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 6B
+title: Dimension of the solution space of $AXB=0$
 classification:
   areas:
   - prelim

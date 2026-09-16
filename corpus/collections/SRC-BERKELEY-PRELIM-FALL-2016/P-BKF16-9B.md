@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-9B
 kind: problem
-title: Berkeley Fall 2016 prelim problem 9B
+title: Classification of groups of order $12$
 classification:
   areas:
   - prelim

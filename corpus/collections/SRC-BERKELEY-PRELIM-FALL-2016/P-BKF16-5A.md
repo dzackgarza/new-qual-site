@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF16-5A
 kind: problem
-title: Berkeley Fall 2016 prelim problem 5A
+title: No holomorphic $f$ on $\mathbb C\setminus\{0\}$ with $\lvert f(z)\rvert\ge\lvert z\rvert^{-1/2}$
 classification:
   areas:
   - prelim
