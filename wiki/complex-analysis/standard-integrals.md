@@ -5,79 +5,95 @@ order: 8
 
 # Standard integrals
 
-The integrals that recur, each with the contour it wants and the estimate that kills the added arc.
-Choosing among them is [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]]; this page is the answers.
+Evaluations of standard real integrals by residues, each with its contour and the estimates for the added pieces.
+The contour cases are described on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
 
 ## $\displaystyle\int_\RR {\dx \over 1+x^2} = \pi$
 
-**Contour:** semicircle in $\HH$.
-**Arc:** ML, since the integrand is $\bigo(1/R^2)$.
-**Residues:** a simple pole at $z=i$ with $\Res = 1/2i$, so the integral is $2\pi i \cdot {1\over 2i} = \pi$.
+**Contour.** Semicircle in $\HH$.
 
-The template for every rational integrand with denominator degree at least two more than the numerator.
+**Arc.** The ML estimate, since the integrand is $\bigo(1/R^2)$.
+
+**Residues.** A simple pole at $z=i$ with residue $1/2i$, so the integral is $2\pi i \cdot {1\over 2i} = \pi$.
+
+The same contour applies to every rational integrand whose denominator has no real zeros and degree at least two more than the numerator.
 
 ## $\displaystyle\int_\RR {\cos x \over 1+x^2} \dx = {\pi \over e}$
 
-**Contour:** semicircle in $\HH$, integrating $e^{iz}/(1+z^2)$ and taking real parts.
-**Arc:** Jordan's lemma.
-ML also suffices here, but not once the denominator drops to degree one.
-**Residues:** $\Res_{z=i} {e^{iz}\over 1+z^2} = {e^{-1}\over 2i}$, giving $2\pi i \cdot {e^{-1}\over 2i} = \pi/e$.
+**Contour.** Semicircle in $\HH$, integrating $e^{iz}/(1+z^2)$ and taking real parts.
+
+**Arc.** Jordan's lemma, or the ML estimate, since $\abs{e^{iz}}\leq 1$ on $\HH$ and $1/(1+z^2) = \bigo(1/R^2)$; for a denominator of degree one more than the numerator, only Jordan's lemma applies.
+
+**Residues.** $\Res_{z=i} {e^{iz}\over 1+z^2} = {e^{-1}\over 2i}$, giving $2\pi i \cdot {e^{-1}\over 2i} = \pi/e$.
 
 ## $\displaystyle\int_\RR {\sin x \over x}\dx = \pi$
 
-**Contour:** semicircle in $\HH$, indented over the pole at the origin, integrating $e^{iz}/z$.
-**Arc:** Jordan's lemma on the large arc; the small arc does *not* vanish.
-**The point:** $e^{iz}/z$ has no pole inside the indented contour, so the closed integral is zero.
-The indentation contributes $-i\pi\Res_{z=0} = -i\pi$, leaving
-\[
+**Contour.** Semicircle in $\HH$, indented above the pole at the origin, integrating $e^{iz}/z$.
+
+**Arcs.** Jordan's lemma on the large arc; the small clockwise half-circle contributes $-i\pi\Res_{z=0} (e^{iz}/z) = -i\pi$ in the limit.
+
+**Residues.** $e^{iz}/z$ has no pole inside the indented contour, so the closed integral is zero, leaving
+$$
 \operatorname{PV}\int_\RR {e^{ix}\over x}\dx = i\pi
-,\]
+,$$
 and taking imaginary parts gives $\pi$.
-The principal value is not a technicality here: $\int \abs{\sin x / x}$ diverges.
+The principal value is needed for $e^{ix}/x$, whose real part $\cos x/x$ is not integrable near $0$; the integral of $\sin x/x$ converges as an improper integral, and $\int_\RR \abs{\sin x / x}\dx$ diverges.
 
 ## $\displaystyle\int_0^\infty {\dx \over 1+x^n} = {\pi/n \over \sin(\pi/n)}$
 
-**Contour:** the sector of angle $2\pi/n$, from $[0,R]$ along the arc to $\zeta_n[0,R]$.
-**Arc:** ML, for $n\geq 2$.
-**Why a sector:** the integrand satisfies $f(\zeta_n z) = f(z)$, so the returning ray reproduces the integral scaled by $\zeta_n$, giving
-\[
+**Contour.** The sector of angle $2\pi/n$ bounded by $[0,R]$, the arc, and $\zeta_n[0,R]$, where $\zeta_n\coloneqq e^{2\pi i/n}$.
+
+**Arc.** The ML estimate, for $n\geq 2$.
+
+**Rays.** The integrand satisfies $f(\zeta_n z) = f(z)$, so the ray $\zeta_n[0,R]$, traversed toward $0$, contributes $-\zeta_n\int_0^R f$, giving
+$$
 (1-\zeta_n)\int_0^\infty f = 2\pi i \Res_{z = e^{i\pi/n}} f
-,\]
+,$$
 and the single enclosed pole is at $e^{i\pi/n}$.
 
 ## $\displaystyle\int_0^\infty {x^{a-1} \over 1+x}\dx = {\pi \over \sin(\pi a)}, \quad 0 < a < 1$
 
-**Contour:** keyhole about the cut $[0,\infty)$, with $\arg z \in (0,2\pi)$.
-**Arcs:** the large circle by ML, the small one because $a > 0$.
-**Why the edges do not cancel:** below the cut the integrand carries $e^{2\pi i(a-1)}$, so
-\[
-\qty{1 - e^{2\pi i a}}\int_0^\infty {x^{a-1}\over 1+x}\dx = 2\pi i \Res_{z=-1} = 2\pi i\, e^{i\pi(a-1)}
-,\]
-and the algebra collapses to $\pi/\sin(\pi a)$.
+**Contour.** Keyhole about the cut $[0,\infty)$, with $\arg z \in (0,2\pi)$.
+
+**Arcs.** The large circle contributes $\bigo(R^{a-1})\to 0$ by the ML estimate, and the small circle $\bigo(\varepsilon^{a})\to 0$ because $a > 0$.
+
+**Edges.** Below the cut the integrand carries the factor $e^{2\pi i(a-1)} = e^{2\pi i a}$, and that edge is traversed toward $0$, so
+$$
+\qty{1 - e^{2\pi i a}}\int_0^\infty {x^{a-1}\over 1+x}\dx = 2\pi i \Res_{z=-1} {z^{a-1}\over 1+z} = 2\pi i\, e^{i\pi(a-1)} = -2\pi i\, e^{i\pi a}
+,$$
+and dividing by $1-e^{2\pi i a} = -2i\,e^{i\pi a}\sin(\pi a)$ gives $\pi/\sin(\pi a)$.
 
 ## $\displaystyle\int_0^{2\pi} {\dtheta \over a + b\cos\theta} = {2\pi \over \sqrt{a^2-b^2}}, \quad a > \abs b$
 
-**Contour:** the unit circle, already closed.
-**Substitution:** $z = e^{i\theta}$, $\cos\theta = (z+z\inv)/2$, $\dtheta = \dz/iz$, turning the integral into
-\[
+**Contour.** The unit circle.
+
+**Substitution.** $z = e^{i\theta}$, $\cos\theta = (z+z\inv)/2$, $\dtheta = \dz/iz$, turning the integral into
+$$
 \oint_{\abs z = 1} {2\,\dz \over i\qty{bz^2 + 2az + b}}
-.\]
-**Residues:** of the two roots of $bz^2+2az+b$ only $z_- = \qty{-a+\sqrt{a^2-b^2}}/b$ lies in the disc.
+.$$
+**Residues.** For $b\neq 0$, the roots of $bz^2+2az+b$ are $z_\pm = \qty{-a\pm\sqrt{a^2-b^2}}/b$, with product $1$, and only $z_+$ lies in the disc.
+The residue of the integrand at $z_+$ is $2/\bigl(ib(z_+-z_-)\bigr) = 1/\bigl(i\sqrt{a^2-b^2}\bigr)$, and multiplying by $2\pi i$ gives the value; for $b=0$ the integral is $2\pi/a$.
 
 ## $\displaystyle\int_0^\infty {\log x \over 1+x^2}\dx = 0$
 
-**Contour:** semicircle in $\HH$ indented at the origin, integrating $\log z/(1+z^2)$ with $\arg z \in (-\pi/2, 3\pi/2)$.
-**Why zero:** the substitution $x\mapsto 1/x$ maps the integral to its own negative, which is the fastest argument and worth trying before any contour.
-The contour proof also delivers $\int_0^\infty {\dx\over 1+x^2} = \pi/2$ as the imaginary part.
+**Contour.** Semicircle in $\HH$ indented at the origin, integrating $\log z/(1+z^2)$ with $\arg z \in (-\pi/2, 3\pi/2)$.
+
+**Result.** On the negative axis $\log z = \ln\abs z + i\pi$, so the contour gives
+$$
+2\int_0^\infty {\ln x \over 1+x^2}\dx + i\pi\int_0^\infty{\dx\over 1+x^2} = 2\pi i\Res_{z=i}{\log z\over 1+z^2} = \frac{i\pi^2}{2}
+,$$
+whose real part gives $0$ and whose imaginary part gives $\int_0^\infty {\dx\over 1+x^2} = \pi/2$.
+The substitution $x\mapsto 1/x$ also shows that the integral equals its own negative.
 
 ## $\displaystyle\int_0^\infty \sin(x^2)\dx = \int_0^\infty \cos(x^2)\dx = \frac12\sqrt{\pi\over 2}$
 
-**Contour:** the sector of angle $\pi/4$, integrating $e^{iz^2}$.
-**Arc:** Jordan's lemma in the form for $e^{iz^2}$, using $\sin t \geq 2t/\pi$ on $[0,\pi/2]$.
-**Why $\pi/4$:** on the ray $\arg z = \pi/4$ the exponent $iz^2$ becomes real and negative, so the returning integral is the Gaussian $\int_0^\infty e^{-r^2}\dr = \sqrt\pi/2$.
-No pole is enclosed, so the two rays balance.
+**Contour.** The sector of angle $\pi/4$, integrating $e^{iz^2}$.
 
-## What they have in common
+**Arc.** On $z = Re^{it}$, $\abs{e^{iz^2}} = e^{-R^2\sin 2t}$, and $\sin 2t \geq 4t/\pi$ on $[0,\pi/4]$ bounds the arc integral by $\pi/(4R)$.
 
-Each is one of the cases on the recognition page, and in every one the work splits the same way: choose the curve so that the far side either vanishes or reproduces the integral, then count residues.
-The cases where the far side *reproduces* the integral rather than vanishing are the sector and the keyhole, and those are the ones worth memorizing, since there the answer comes from an algebraic identity rather than an estimate.
+**Rays.** On the ray $\arg z = \pi/4$, $iz^2 = -r^2$, so that ray contributes $-e^{i\pi/4}\int_0^\infty e^{-r^2}\dr = -e^{i\pi/4}\sqrt\pi/2$ in the limit.
+No pole is enclosed, so $\int_0^\infty e^{ix^2}\dx = e^{i\pi/4}\sqrt\pi/2$, and taking real and imaginary parts gives the value.
+
+## Added pieces that reproduce the integral
+
+For the sector and keyhole contours, a boundary piece other than the real segment is a constant multiple of the original integral, and the value comes from solving the resulting linear equation; for the other contours, the added pieces tend to $0$ or to a multiple of a residue.
