@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.proposition}
-Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
+Every singleton $\theset{x}\subseteq\RR$ is closed, and $\QQ=\bigcup_{q\in\QQ}\theset{q}$ is a countable union of closed sets, hence an [[D-RPOGQ|$F_\sigma$ set]] in $\RR$.
 :::
