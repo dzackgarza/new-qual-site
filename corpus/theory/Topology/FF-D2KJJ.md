@@ -2,9 +2,9 @@
 schema: qual/card@1
 id: FF-D2KJJ
 kind: fact
-title: 'Full tor complex table:'
+title: Tor groups among $\ZZ/n$, $\ZZ$ and $\QQ$
 prompts:
-- What does the table of $\operatorname{Tor}^{\mathbf{Z}}_*$ between $C_n$, $\ZZ$ and $\QQ$ look like?
+- What are the groups $\operatorname{Tor}^{\mathbf{Z}}_*$ among $\ZZ/n$, $\ZZ$ and $\QQ$?
 classification:
   areas:
   - topology
@@ -15,19 +15,24 @@ review: draft
 ---
 
 ::: {.fact}
-E.g. top-left is $\operatorname{Tor}_*^{\mathbf{Z}}(C_n, C_m)$.
+Let $m, n\geq 1$ and $d\coloneqq\gcd(m,n)$.
+For an abelian group $A$ let $A[n]\coloneqq\ts{a\in A \st na = 0}$.
+Then $\Tor^{\ZZ}_0(\ZZ/n, A)\cong A/nA$, $\Tor^{\ZZ}_1(\ZZ/n, A)\cong A[n]$, $\Tor^{\ZZ}_k(\ZZ, A) = 0$ for $k\geq 1$, $\Tor^{\ZZ}_1(A, B)\cong\Tor^{\ZZ}_1(B, A)$, and $\Tor^{\ZZ}_1(A, B) = 0$ whenever $A$ or $B$ is torsion-free [@Hat02, §3.A, p. 265].
+The groups $\Tor^{\ZZ}_0(V, W) = V\otimes_{\ZZ}W$ are
 
-First row: $C_n\otimes_{\mathbf{Z}}A = A/nA$ and $\operatorname{Tor}_1^{\mathbf{Z}}(C_n, A) = A[n]$.
+| $V \otimes_{\ZZ} W$ | $W=\ZZ/m$ | $W=\ZZ$ | $W=\QQ$ |
+| :-- | :-- | :-- | :-- |
+| $V=\ZZ/n$ | $\ZZ/d$ | $\ZZ/n$ | $0$ |
+| $V=\ZZ$ | $\ZZ/m$ | $\ZZ$ | $\QQ$ |
+| $V=\QQ$ | $0$ | $\QQ$ | $\QQ$ |
 
-Second row: ${\mathbf{Z}}\otimes_{\mathbf{Z}}A = A$ and $\operatorname{Tor}_1^{\mathbf{Z}}({\mathbf{Z}}, A) = 0$ since ${\mathbf{Z}}$ is projective.
+and the groups $\Tor^{\ZZ}_1(V, W)$ are
 
-Third row: $G\otimes_{\mathbf{Z}}{\mathbf{Q}}= {\mathbf{Q}}\otimes_{\mathbf{Z}}G = 0$ for $G$ any group
+| $\Tor^{\ZZ}_1(V, W)$ | $W=\ZZ/m$ | $W=\ZZ$ | $W=\QQ$ |
+| :-- | :-- | :-- | :-- |
+| $V=\ZZ/n$ | $\ZZ/d$ | $0$ | $0$ |
+| $V=\ZZ$ | $0$ | $0$ | $0$ |
+| $V=\QQ$ | $0$ | $0$ | $0$ |
 
-Also $\operatorname{Tor}(A, B) = \operatorname{Tor}(B, A)$.
-
-| $\operatorname{Tor}_*^{\mathbf{Z}}(V, H)$ | $C_m$ | ${\mathbf{Z}}$ | ${\mathbf{Q}}$ |
-| :---------------------|:-----------------------------------------------|:----------------------------------------------|:------------------------------------------ |
-| $C_n$ | $C_m/nC_m \oplus C_m[n]t = C_d \oplus C_d t$ | ${\mathbf{Z}}/n{\mathbf{Z}}\oplus {\mathbf{Z}}[n]t = C_n \oplus C_nt$ | ${\mathbf{Q}}/n{\mathbf{Q}}\oplus {\mathbf{Q}}[n]t =0\oplus 0t$ |
-| ${\mathbf{Z}}$ | ${\mathbf{Z}}/m{\mathbf{Z}}+ {\mathbf{Z}}[m]t = C_m + C_m t$ | ${\mathbf{Z}}+ 0t$ | ${\mathbf{Q}}+ 0t$ |
-| ${\mathbf{Q}}$ | ${\mathbf{Q}}/n{\mathbf{Q}}+ {\mathbf{Q}}[n]t = 0 + 0t$ | ${\mathbf{Q}}+ 0t$ | $0 + 0t$ |
+All higher groups $\Tor^{\ZZ}_k$, $k\geq 2$, vanish.
 :::
