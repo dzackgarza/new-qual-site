@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-R4VKE
 kind: definition
-title: Lebesgue Integral
+title: Lebesgue integral of a nonnegative function
 classification:
   areas:
   - real-analysis
@@ -13,14 +13,15 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-\[
-\int_X f \da \sup \ts{ \int s(x) \dmu \st 0\leq s \leq f, s\text{ simple } } 
-.\]
-
-Note that if $s = \sum c_j \chi_{E_j}$ is simple, then
-\[
-\int_X s(x) \dmu \da \sum_{j=1}^n c_j \mu(E_j)
-.\]
-
+::: {.definition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space.
+For a nonnegative [[D-553MO|simple function]] $s = \sum_{j=1}^n c_j \chi_{E_j}$ with $c_j\in[0,\infty)$ and $E_j\in\mcm$, put
+$$
+\int_X s \dmu \coloneqq \sum_{j=1}^n c_j \mu(E_j),
+$$
+with the convention $0\cdot\infty=0$.
+For $f\in$ [[D-BF5L2|$L^+$]], the \dfn{Lebesgue integral} of $f$ is
+$$
+\int_X f \dmu \coloneqq \sup \theset{ \int_X s \dmu \suchthat s \text{ simple and } 0\leq s \leq f }.
+$$
 :::

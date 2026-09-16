@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-RPOGQ
 kind: definition
-title: $F_\sigma$ and $G_\delta$ Sets
+title: $F_\sigma$ and $G_\delta$ sets
 classification:
   areas:
   - real-analysis
@@ -13,7 +13,10 @@ review: draft
 ---
 
 ::: {.definition}
-An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersection of opens.[^mnemonic_ferme]
+Let $X$ be a topological space.
+A subset of $X$ is an \dfn{$F_\sigma$ set} if it is a countable union of closed sets, and a \dfn{$G_\delta$ set} if it is a countable intersection of open sets.
 :::
 
-[^mnemonic_ferme]: Mnemonic: "F" stands for *ferme*, which is "closed" in French, and $\sigma$ corresponds to a "sum", i.e. a union.
+::: {.remark}
+In $F_\sigma$, "F" stands for *fermé*, French for "closed", and $\sigma$ stands for a sum, that is, a union.
+:::

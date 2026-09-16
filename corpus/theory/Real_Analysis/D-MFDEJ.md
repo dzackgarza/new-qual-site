@@ -13,11 +13,13 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-\[
+::: {.definition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space.
+The space \dfn{$L^\infty(X)$} is
+$$
 L^\infty(X)
-\definedas \theset{f: X\to \CC \suchthat f \text{ is essentially bounded }}
-\definedas \theset{f: X\to \CC \suchthat \pnorm{f}\infty < \infty}
-.\]
-
+\coloneqq \theset{f\colon X\to \CC \suchthat f \text{ is measurable and essentially bounded}}
+= \theset{f\colon X\to \CC \suchthat f \text{ is measurable and } \norm{f}_\infty < \infty},
+$$
+where $\norm{f}_\infty$ is the [[D-3PVRB|essential supremum]] of $\abs{f}$.
 :::
