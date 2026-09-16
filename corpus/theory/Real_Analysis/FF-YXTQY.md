@@ -16,5 +16,9 @@ review: draft
 ---
 
 ::: {.fact}
-Counterexample: $\left\{{1 \over n}\right\}, {\mathbf{Z}}$ are nowhere dense, ${\mathbf{Q}}, {\mathbf{Z}}\cup\qty{(a, b)\cap{\mathbf{Q}}}$ is *not* nowhere dense
+In $\RR$:
+
+- $\theset{1/n\suchthat n\geq 1}$ and $\ZZ$ are [[D-2MJRE|nowhere dense]], since their closures $\theset{0}\cup\theset{1/n\suchthat n\geq 1}$ and $\ZZ$ contain no open interval;
+
+- $\QQ$ and $\ZZ\cup\qty{(a, b)\cap\QQ}$ for $a<b$ are not nowhere dense, since their closures $\RR$ and $\ZZ\cup[a,b]$ contain the open interval $(a,b)$.
 :::

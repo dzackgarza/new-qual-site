@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-YBIQV
 kind: fact
-title: $\tan(\pi/6) = \cdots$
+title: Value of $\tan(\pi/6)$
 prompts:
 - What is $\tan(\pi/6)$?
 classification:
@@ -17,6 +17,6 @@ review: draft
 
 ::: {.fact}
 $$
-\tan(\pi/6) = {\sqrt 3 \over 3}
-.$$
+\tan(\pi/6) = \frac{\sqrt 3}{3}.
+$$
 :::

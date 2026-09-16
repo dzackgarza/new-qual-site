@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-XZGIY
 kind: fact
-title: The Arzela-Ascoli theorem
+title: Arzelà--Ascoli theorem
 prompts:
 - What is the Arzela-Ascoli theorem?
 classification:
@@ -17,5 +17,12 @@ review: draft
 ---
 
 ::: {.fact}
-A sequence $f_i$ has a uniformly convergent subsequence $\iff$ the sequence is uniformly bounded and uniformly equicontinuous.
+Let $K$ be a compact metric space, let $C(K)$ be the space of continuous functions $K\to\CC$ with the norm $\norm{f}_\infty\coloneqq\sup_{x\in K}\abs{f(x)}$, and let $\mcf\subseteq C(K)$.
+Then the closure of $\mcf$ in $C(K)$ is compact if and only if $\mcf$ is uniformly bounded, that is, $\sup_{f\in\mcf}\norm{f}_\infty<\infty$, and [[FD-XVMEE|equicontinuous]] at every point of $K$.
+
+In particular, every sequence $(f_n)$ in $C(K)$ that is uniformly bounded and equicontinuous at every point of $K$ has a subsequence that [[D-YZC3C|converges uniformly]] on $K$.
+:::
+
+::: {.remark}
+Since $K$ is compact, a family $\mcf\subseteq C(K)$ that is equicontinuous at every point of $K$ is [[FD-XVMEE|uniformly equicontinuous]].
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-ZQFSR
 kind: fact
-title: $\sin(\pi/4) = \cdots$
+title: Value of $\sin(\pi/4)$
 prompts:
 - What is $\sin(\pi/4)$?
 classification:
@@ -17,6 +17,6 @@ review: draft
 
 ::: {.fact}
 $$
-\sin(\pi/4) = {\sqrt 2 \over 2}
-.$$
+\sin(\pi/4) = \frac{\sqrt 2}{2}.
+$$
 :::
