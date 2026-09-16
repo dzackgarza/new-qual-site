@@ -17,7 +17,8 @@ review: reviewed
 ---
 
 ::: {.theorem}
-If $G$ acts on $X$ and $x\in X$, the map
+Let a group $G$ [[D-WYC7C|act]] on a set $X$, and let $x\in X$ have orbit $G\cdot x$ and stabilizer $G_x$.
+Then the map
 $$
 G/G_x\longrightarrow G\cdot x,
 \qquad

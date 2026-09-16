@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-OHEFT
 kind: theorem
-title: Nilpotent Implies Maximal Normals
+title: A finite group is nilpotent if and only if its maximal subgroups are normal
 classification:
   areas:
   - algebra
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.theorem}
-A group $G$ is nilpotent iff every maximal subgroup is normal.
+A finite group $G$ is [[D-53JVH|nilpotent]] if and only if every maximal subgroup of $G$ is [[D-EKE4Q|normal]] in $G$.
 :::
