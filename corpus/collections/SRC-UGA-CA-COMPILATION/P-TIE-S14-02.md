@@ -13,7 +13,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-09-12
-  note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2014, question 2.
+  note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2014, question 1, part 2.
 ---
 
 ::: {.problem}
