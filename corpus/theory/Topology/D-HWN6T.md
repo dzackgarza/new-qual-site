@@ -34,5 +34,5 @@ The derived category of $R$-modules is obtained from the category of chain compl
 :::
 
 ::: {.concept}
-See Weibel, *An Introduction to Homological Algebra*, §1.1.
+[@Wei94].
 :::

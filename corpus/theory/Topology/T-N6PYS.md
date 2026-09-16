@@ -21,9 +21,9 @@ Then
 
 - $f$ is a closed map [@Mun00];
 
-- if $f$ is surjective, $f$ is a quotient map;
+- if $f$ is surjective, $f$ is a quotient map [@Lee12];
 
-- if $f$ is injective, $f$ is a [[D-9KQZT|topological embedding]];
+- if $f$ is injective, $f$ is a [[D-9KQZT|topological embedding]] [@Lee12];
 
 - if $f$ is bijective, $f$ is a homeomorphism [@Mun00].
 :::

@@ -36,5 +36,5 @@ The following constructions are colimits.
 :::
 
 ::: {.concept}
-Weibel, *An Introduction to Homological Algebra*, 2.6.7 and Variation 2.6.9.
+[@Wei94].
 :::

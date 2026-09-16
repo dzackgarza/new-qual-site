@@ -28,3 +28,7 @@ Let $f\colon X\to Y$ be a continuous map.
 
 (c) If $X$ is a metric space, then $f$ is proper if and only if for every sequence $(x_k)_{k\geq1}$ in $X$ such that each compact subset of $X$ contains $x_k$ for only finitely many $k$, each compact subset of $Y$ contains $f(x_k)$ for only finitely many $k$.
 :::
+
+::: {.concept}
+[@Lee12].
+:::
