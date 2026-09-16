@@ -169,7 +169,7 @@ sections:
       - ref: T-RA-WORKSHOP-D7-6-1
       - ref: T-ERNLN
       - ref: T-RA-WORKSHOP-D7-6-2
-      - ref: PR-O2XFF
+      - ref: FF-IAUQG
       - ref: T-RA-WORKSHOP-D7-6-3
       - ref: T-RA-WORKSHOP-D7-6-4
       - ref: T-TR526

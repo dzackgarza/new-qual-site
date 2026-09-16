@@ -28,3 +28,7 @@ For each $x$, $\sum_n\abs{f_n(x)}\leq\sum_n M_n<\infty$, so $S(x)\coloneqq\sum_{
 For $x\in A$ and $N\geq 0$, $\abs{S(x) - \sum_{n=0}^{N}f_n(x)}\leq\sum_{n>N}M_n$, which tends to $0$ as $N\to\infty$ independently of $x$.
 The first form is the case $M_n = \norm{f_n}_{\infty,A}$, and conversely $\norm{f_n}_{\infty,A}\leq M_n$.
 :::
+
+::: {.remark}
+Conversely, if $\sum_n f_n$ converges uniformly on $A$, then $\sup_{x\in A}\abs{f_n(x)}\to0$; this necessary condition does not imply $\sum_n\sup_{x\in A}\abs{f_n(x)}<\infty$, as the constant functions $f_n\coloneqq(-1)^n/n$ show.
+:::
