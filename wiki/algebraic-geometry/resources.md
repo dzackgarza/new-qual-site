@@ -103,6 +103,7 @@ These reference documents and solution collections are preserved in the reposito
 - [UW Spring 2016 Introduction to Algebraic Geometry](/assets/algebraic-geometry/resources/iag.pdf): lecture notes from affine varieties through schemes.
 
 - [Cambridge Part III past papers](https://www.maths.cam.ac.uk/postgrad/part-iii/pastpapers/2016/index.html): examination papers by year.
+
 - [Spring 2013 Algebra Qualifying Exam](/assets/algebraic-geometry/resources/2013SP_algebra.pdf): qualifying exam paper.
 
 ### Problem lists and course pages
@@ -112,3 +113,30 @@ These reference documents and solution collections are preserved in the reposito
 - [Stacks Project, final exam questions](https://stacks.math.columbia.edu/tag/0G12): exam questions collected in the Stacks Project.
 
 - [Arthur Ogus, Math 256B (2017)](https://math.berkeley.edu/~ogus/Math_256B-2017/index.html): Berkeley course page.
+
+### Foundational texts
+- [Grothendieck, *Fondements de la Géométrie Algébrique* (FGA)](http://www.math.jussieu.fr/~leila/grothendieckcircle/FGA.pdf)
+- [Grothendieck and Dieudonné, *Éléments de géométrie algébrique* (EGA), reference page](http://en.wikipedia.org/wiki/Elements%20de%20geometrie%20algebrique)
+- [*Séminaire de Géométrie Algébrique du Bois Marie* (SGA)](http://modular.fas.harvard.edu/sga/sga/)
+- [Serre, *Géométrie algébrique et géométrie analytique* (GAGA)](http://www.numdam.org/item?id=AIF_1956__6__1_0), and an [English translation](http://www.math.mcmaster.ca/~arnoldt/Serre-GAGA.dvi)
+- [Serre, *Faisceaux algébriques cohérents* (FAC), English translation](http://students.mimuw.edu.pl/~pta/fac/fac.pdf)
+
+### Lecture notes
+- [Dolgachev, lecture notes](http://www.math.lsa.umich.edu/~idolga/lecturenotes.html), including [*Classical Algebraic Geometry*](http://www.math.lsa.umich.edu/~idolga/CAG.pdf)
+- [ETH Zürich, sheaf cohomology](https://metaphor.ethz.ch/x/2017/fs/401-4142-17L/ex/SheafCohomology.pdf)
+- [Ruiter, sheaf cohomology](https://users.math.msu.edu/users/ruiterj2/Math/Documents/Fall%202019/Sheaf%20cohomology/Sheaf-cohomology-main.pdf)
+- [Toronto reading seminar on perverse sheaves](http://www.math.toronto.edu/jkamnitz/seminar/perverse/stefan.pdf)
+- [Zaidenberg, short course overview](http://www.mat.uniroma2.it/~ricerca/geomet/workshops/Zaidenbergnotes.pdf)
+- [Cambridge Part III Algebraic Geometry, 2014 review](https://www.dpmms.cam.ac.uk/~pmhw/PtIIIAG2014.pdf), and [2019 notes](http://qk206.user.srcf.net/notes/algebraic_geometry_iii.pdf)
+- [Harvard Math 233A notes](https://dongryul-kim.github.io/harvard_notes/Math233a/Notes_Math233a.pdf)
+- [Harvard Math 281x notes](https://dongryul-kim.github.io/harvard_notes/Math281x/Notes_Math281x.pdf)
+- [Olsson, Berkeley Math 256A notes](https://etale.site/livetex/256a.pdf)
+- MIT OpenCourseWare 18.726 [(Spring 2009)](https://ocw.mit.edu/courses/mathematics/18-726-algebraic-geometry-spring-2009/lecture-notes/) and 18.725 [(Fall 2015)](https://ocw.mit.edu/courses/mathematics/18-725-algebraic-geometry-fall-2015/lecture-notes/) lecture notes
+- McKernan, UCSD Math 203A–C (2013–14) lectures: 203A lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Autumn/203A/l_1.pdf) through [18](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Autumn/203A/l_18.pdf), 203B lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Winter/203B/l_1.pdf) through [16](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Winter/203B/l_16.pdf), and 203C lectures [1](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Spring/203C/l_1.pdf) through [23](https://mathweb.ucsd.edu/~jmckerna/Teaching/13-14/Spring/203C/l_23.pdf), each at `l_<n>.pdf` in the same directory
+
+### Advanced topics
+- [MSRI summer school on toric varieties](https://www.msri.org/summer_schools/455)
+- [Harvard seminar on ind-coherent sheaves](http://people.math.harvard.edu/~yifei/indcoh.html)
+- [Hartshorne, deformation theory notes](https://math.berkeley.edu/~robin/math274root.pdf)
+- [MSRI summer school on derived categories](https://www.msri.org/summer_schools/821)
+- [Princeton learning seminar on the minimal model program](https://web.math.princeton.edu/~jmoraga/Learning-Seminar-MMP)
