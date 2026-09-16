@@ -15,15 +15,18 @@ relations: []
 review: draft
 ---
 
-::: {.definition}
-If $K$ is a compact, locally contractible, nonempty, proper subspace of $S^n$, then
-\[
+::: {.theorem title="Alexander duality"}
+Let $n\geq 1$ and let $K\subsetneq S^n$ be a nonempty, compact, locally contractible subspace.
+Then for all $i$,
+$$
 \tilde H_i(S^n \sm K; \ZZ) \cong \tilde H^{n-i-1}(K;\ZZ)
-\]
-for all $i$.
-This is the Alexander duality corollary of the more general statement $H_i(M, M\sm K;\ZZ)\cong H^{n-i}(K;\ZZ)$ for $K$ compact and locally contractible in a closed orientable $n\dash$manifold $M$.
+.$$
+:::
+
+::: {.remark}
+This is the case $M = S^n$ of the duality $H_i(M, M\sm K;\ZZ)\cong H^{n-i}(K;\ZZ)$ for a compact, locally contractible subspace $K$ of a closed, orientable $n$-manifold $M$ [@Hat02, Theorem 3.44, p. 254].
 :::
 
 ::: {.concept}
-See Hatcher, §3.3, Corollary 3.45, p. 255; the general form is Theorem 3.44, p. 254.
+[@Hat02, §3.3, Corollary 3.45, p. 255].
 :::
