@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-VW2Z3
 kind: definition
-title: Quasicompact
+title: Quasicompact space
 classification:
   areas:
   - topology
@@ -16,6 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $X$ (possible non-Hausdorff) is **quasicompact** iff every open cover admits a finite subcover.
-If $X$ is additionally Hausdorff, $X$ is said to be **compact**.
+A topological space $X$, not necessarily Hausdorff, is \dfn{quasicompact} if every open [[D-AOJG3|cover]] of $X$ has a finite subcover.
+A quasicompact space is \dfn{compact} if it is also [[D-6FMP3|Hausdorff]].
 :::
