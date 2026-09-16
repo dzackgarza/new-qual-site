@@ -25,17 +25,17 @@ audit:
 ---
 
 ::: {.problem}
-Let $f_j,f\in L^2(\mathbb R^n)$ and suppose
-\[
-\|f_j-f\|_2\longrightarrow0.
-\]
+Let $f_j,f\in L^2(\RR^n)$ and suppose
+$$
+\norm{f_j-f}_2\longrightarrow0.
+$$
 
-(a) If $\Omega\subset\mathbb R^n$ has finite measure, prove that
-\[
+(a) If $\Omega\subset\RR^n$ has finite measure, prove that
+$$
 \int_\Omega \widehat f_j(\xi)\,d\xi\longrightarrow\int_\Omega \widehat f(\xi)\,d\xi.
-\]
+$$
 
-(b) If $|\Omega|=\infty$, must the same conclusion hold? Prove your answer or give a counterexample.
+(b) If $\abs{\Omega}=\infty$, must the same conclusion hold? Prove your answer or give a counterexample.
 :::
 
 ::: {.solution}
@@ -43,44 +43,44 @@ Let $f_j,f\in L^2(\mathbb R^n)$ and suppose
 ::: {.proof}
 By the [[PR-JCZKL|Plancherel theorem]],
 $$
-\|\widehat f_j-\widehat f\|_2=\|f_j-f\|_2\longrightarrow0
+\norm{\widehat f_j-\widehat f}_2=\norm{f_j-f}_2\longrightarrow0.
 $$
-for the unitary Fourier-transform normalization, and in any standard normalization the two norms differ only by a fixed constant. Since $|\Omega|<\infty$, the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]] gives
+Since $\abs{\Omega}<\infty$, the [[FF-4XBYG|Cauchy--Schwarz inequality in $L^2$]] gives
 $$
-\left|\int_\Omega(\widehat f_j-\widehat f)(\xi)\,d\xi\right|
-\le |\Omega|^{1/2}\,\|\widehat f_j-\widehat f\|_2\longrightarrow0.
+\abs{\int_\Omega(\widehat f_j-\widehat f)(\xi)\,d\xi}
+\le \abs{\Omega}^{1/2}\,\norm{\widehat f_j-\widehat f}_2\longrightarrow0.
 $$
 This proves part (a).
 :::
 
 <1>2. Infinite-measure sets: the conclusion can fail.
 ::: {.proof}
-Assume $|\Omega|=\infty$. Choose measurable sets $E_j\subset\Omega$ with
+Assume $\abs{\Omega}=\infty$. Choose measurable sets $E_j\subset\Omega$ with
 $$
-0<|E_j|<\infty,
+0<\abs{E_j}<\infty,
 \qquad
-|E_j|\longrightarrow\infty.
+\abs{E_j}\longrightarrow\infty.
 $$
 Define
 $$
-g_j(\xi)=\frac{\mathbf1_{E_j}(\xi)}{|E_j|}.
+g_j(\xi)=\frac{\mathbf1_{E_j}(\xi)}{\abs{E_j}}.
 $$
 Then
 $$
-\|g_j\|_2^2=\frac1{|E_j|}\longrightarrow0,
+\norm{g_j}_2^2=\frac1{\abs{E_j}}\longrightarrow0,
 \qquad
 \int_\Omega g_j(\xi)\,d\xi=1.
 $$
-By the [[PR-JCZKL|Plancherel theorem]], for each $j$ there exists $f_j\in L^2(\mathbb R^n)$ with Fourier transform $g_j$. Taking $f=0$, we have
+By the [[PR-JCZKL|Plancherel theorem]], for each $j$ there exists $f_j\in L^2(\RR^n)$ with Fourier transform $g_j$. Taking $f=0$, we have
 $$
-\|f_j-f\|_2\to0,
+\norm{f_j-f}_2\to0,
 $$
 but
 $$
 \int_\Omega \widehat f_j=1
 \qquad\text{for every }j,
 $$
-while $\int_\Omega\widehat f=0$. Thus the conclusion in part (a) need not hold when $|\Omega|=\infty$.
+while $\int_\Omega\widehat f=0$. Thus the conclusion in part (a) need not hold when $\abs{\Omega}=\infty$.
 :::
 
 <1>3. Q.E.D.
