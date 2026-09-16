@@ -14,6 +14,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: Restored the arrow lost from choice (D) and separated the choices, checked against Week6_solns.pdf (Problem 12).
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the arrow lost from the identity map in the solution, checked against Week6_solns.pdf (Problem 12).
 ---
 
 ::: {.problem}
@@ -33,5 +37,5 @@ This is the discrete metric which generates the discrete topology on R; thus eve
 If every set is open, then every set is closed as well.
 Thus (A) and (B) are true.
 
-For (C) and (D), consider any space X with two topologies $\tau _ { 1 } , \tau _ { 2 }$ Recall the identity $\iota :$ $( X , \tau _ { 1 } )  ( X , \tau _ { 2 } )$ is continuous iff $\iota ^ { - 1 } ( V ) \in \tau _ { 1 }$ whenever $V \in \tau _ { 2 }$ But $\iota ^ { - 1 } ( V ) = V$ Thus the identity is continuous iff $V \in \tau _ { 1 }$ whenever $V \in \tau _ { 2 }$ . rephrasing yet again, the identity is continuous iff $\tau _ { 2 } \subset \tau _ { 1 }$ which is true iff $\tau _ { 1 }$ is finer than $\tau _ { 2 }$ . The discrete topology is finer than any other topology on R so (D) is false while (C) is true.
+For (C) and (D), consider any space X with two topologies $\tau _ { 1 } , \tau _ { 2 }$ Recall the identity $\iota :$ $( X , \tau _ { 1 } ) \to ( X , \tau _ { 2 } )$ is continuous iff $\iota ^ { - 1 } ( V ) \in \tau _ { 1 }$ whenever $V \in \tau _ { 2 }$ But $\iota ^ { - 1 } ( V ) = V$ Thus the identity is continuous iff $V \in \tau _ { 1 }$ whenever $V \in \tau _ { 2 }$ . rephrasing yet again, the identity is continuous iff $\tau _ { 2 } \subset \tau _ { 1 }$ which is true iff $\tau _ { 1 }$ is finer than $\tau _ { 2 }$ . The discrete topology is finer than any other topology on R so (D) is false while (C) is true.
 :::
