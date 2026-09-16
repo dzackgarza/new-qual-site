@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-RZKQD
 kind: definition
-title: Suspension
+title: Suspension and reduced suspension
 classification:
   areas:
   - topology
@@ -15,8 +15,15 @@ review: draft
 ---
 
 ::: {.definition}
-Compact represented as $\Sigma X = CX \coprod_{\id_{X}} CX$, two cones on $X$ glued along $X$.
-Explicitly given by
+Let $X$ be a topological space and $I=[0,1]$.
+The \dfn{suspension} $SX$ is the quotient of $X\times I$ obtained by collapsing $X\times\ts{0}$ to one point and $X\times\ts{1}$ to another point [@Hat02, p. 8].
+For a based space $(X,x_0)$, the \dfn{reduced suspension} is
+$$
+\Sigma X\coloneqq\frac{X\times I}{(X\times\ts{0})\cup(X\times\ts{1})\cup(\ts{x_0}\times I)},
+$$
+the quotient of $SX$ obtained by collapsing the segment $\ts{x_0}\times I$ to a point [@Hat02, p. 12].
+:::
 
-\[\Sigma X = \frac{X\cross I}{(X\cross \theset{0}) \union (X\cross \theset{1}) \union (\theset{x_{0}} \cross I)} .\]
+::: {.remark}
+$SX$ is the union of two copies of the [[D-II4M4|cone]] $CX$ glued along their bases $X\times\ts{0}\cong X$.
 :::
