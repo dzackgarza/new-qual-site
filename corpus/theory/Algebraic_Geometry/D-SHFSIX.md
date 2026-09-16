@@ -37,8 +37,11 @@ The \dfn{exceptional inverse image} $f^!$ is the right adjoint of $Rf_!$; it exi
 
 ::: {.proposition}
 1. For $f$ proper, $Rf_! = Rf_*$; for $j$ an open inclusion, $j^! = j^{-1}$.
+
 2. Base change: for a Cartesian square with $g \colon Y' \to Y$ and $f' \colon X' \to Y'$, $g^{-1} Rf_! \cong Rf'_! g'^{-1}$.
+
 3. Projection formula: $Rf_!(\mathcal{F} \otimes^L f^{-1} \mathcal{G}) \cong Rf_! \mathcal{F} \otimes^L \mathcal{G}$.
+
 4. Verdier duality: for $a \colon X \to \mathrm{pt}$, the \dfn{dualizing complex} is $\omega_X = a^! \ZZ$, and for a topological manifold of dimension $n$ it is the orientation sheaf placed in degree $-n$.
    For a closed inclusion $i \colon Z \hookrightarrow X$, $i^! \mathcal{F}$ is the derived functor of sections of $\mathcal{F}$ supported in $Z$, restricted to $Z$.
 :::

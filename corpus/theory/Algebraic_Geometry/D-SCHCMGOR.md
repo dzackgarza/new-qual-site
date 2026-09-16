@@ -26,7 +26,9 @@ prompts:
 Let $(R, \mfm)$ be a Noetherian local ring.
 
 - $R$ is \dfn{Cohen--Macaulay} if $\operatorname{depth} R = \dim R$, that is, $\mfm$ contains a regular sequence of length $\dim R$.
+
 - $R$ is \dfn{Gorenstein} if $R$ has finite injective dimension as a module over itself.
+
 - $R$ is a \dfn{complete intersection} if its completion is $\hat{R} \cong S/(f_1, \ldots, f_c)$ for a regular local ring $S$ and a regular sequence $f_1, \ldots, f_c$ in $S$.
 
 A locally Noetherian scheme is Cohen--Macaulay, Gorenstein, or a \dfn{local complete intersection} if every local ring $\OO_{X,x}$ has the corresponding property.

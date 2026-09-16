@@ -48,4 +48,3 @@ The sequence does not split for $n \geq 1$, and for $n \geq 2$ the sheaf $\Omega
 On $\PP^1$ with coordinates $x, y$, the dual Euler sequence is $0 \to \OO \xrightarrow{(x,\,y)} \OO(1)^{\oplus 2} \to T_{\PP^1} \to 0$.
 So the cokernel of $(x, y) \colon \OO \to \OO(1)^{\oplus 2}$ is $T_{\PP^1} \cong \OO(2)$, the determinant of $\OO(1)^{\oplus 2}$; explicitly $(s, t) \mapsto y s - x t$ identifies it with $\OO(2)$.
 :::
-

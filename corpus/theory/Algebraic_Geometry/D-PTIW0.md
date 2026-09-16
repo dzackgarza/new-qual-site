@@ -64,4 +64,3 @@ For a Noetherian separated scheme the comparison is between Čech cohomology of 
 Singular cohomology appears only for a variety $X$ over $\CC$ with its analytic topology: $H^i_{\mathrm{sing}}(X(\CC), \ZZ) \cong H^i(X^{an}, \ul{\ZZ})$.
 In the Zariski topology the constant sheaf on an irreducible space is flasque, so $H^i(X, \ul{\ZZ}) = 0$ for $i > 0$, and Zariski cohomology of constant sheaves carries no topological information.
 :::
-

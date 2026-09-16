@@ -25,13 +25,16 @@ prompts:
 Let $X \subseteq \PP^n$ be a projective variety over an algebraically closed field.
 
 1. The hyperplane sections $X \cap H$, for hyperplanes $H \not\supseteq X$, form a base-point-free linear system of effective Cartier divisors on $X$.
+
 2. A general hyperplane section is smooth at every point where $X$ is smooth.
    So it is smooth if $X$ is smooth, and also if the singular locus of $X$ is finite, since a general hyperplane misses finitely many points.
 :::
 
 ::: {.proof}
 1. Each $H = V(\ell)$ with $\ell$ a linear form not vanishing on $X$ gives the effective Cartier divisor with local equations $\ell / x_i$ on $X \cap D_+(x_i)$, and these are the divisors of the sections of $\OO_X(1)$ coming from $H^0(\PP^n, \OO(1))$.
+
 2. A point $p \in X$ lies on $V(\ell)$ only for $\ell$ in a hyperplane of the space of linear forms, so no point lies on every member: the system is base point free.
+
 3. Bertini's theorem applied to the smooth quasiprojective variety $X_{\mathrm{sm}}$ shows that a general $H$ meets $X_{\mathrm{sm}}$ in a smooth subscheme.
 :::
 

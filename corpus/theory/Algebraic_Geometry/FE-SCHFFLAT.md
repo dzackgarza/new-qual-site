@@ -30,8 +30,10 @@ An $R$-module $M$ is faithfully flat if and only if $M$ is flat and the functor 
 
 ::: {.proof}
 1. Recall that $M$ is faithfully flat when $M$ is flat and $N \otimes_R M = 0$ implies $N = 0$.
+
 2. Suppose $M$ is faithfully flat and $\phi \colon N \to N'$ is nonzero.
    Its image $I \neq 0$, so $I \otimes_R M \neq 0$; by flatness $I \otimes M$ is the image of $\phi \otimes \mathrm{id}_M$, so $\phi \otimes \mathrm{id}_M \neq 0$.
+
 3. Conversely suppose $M$ is flat and $- \otimes M$ is faithful.
    If $N \neq 0$ then $\mathrm{id}_N \neq 0$, so $\mathrm{id}_{N \otimes M} = \mathrm{id}_N \otimes \mathrm{id}_M \neq 0$ and $N \otimes M \neq 0$.
 :::

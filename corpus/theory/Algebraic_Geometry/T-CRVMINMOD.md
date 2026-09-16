@@ -23,7 +23,9 @@ Let $k$ be an algebraically closed field.
 The following categories are equivalent:
 
 1. smooth projective curves over $k$ with dominant morphisms;
+
 2. quasiprojective curves over $k$ with dominant rational maps;
+
 3. finitely generated field extensions $K/k$ of transcendence degree $1$, with $k$-algebra homomorphisms, with arrows reversed.
 
 In particular every curve is birational to a smooth projective curve, unique up to isomorphism, and two smooth projective curves are birational exactly when they are isomorphic.

@@ -28,7 +28,9 @@ A ring map $A \to B$ of Noetherian rings is normal or regular when $\Spec B \to 
 
 ::: {.proposition}
 1. A morphism locally of finite type is regular exactly when it is smooth.
+
 2. If $f \colon X \to Y$ is flat, $Y$ is regular (respectively normal) and the fibres of $f$ are regular (respectively normal), then $X$ is regular (respectively normal).
+
 3. For a Noetherian local ring $A$, the completion map $A \to \hat{A}$ is regular exactly when $A$ has geometrically regular formal fibres; this holds for every local ring essentially of finite type over a field, and it is part of the definition of an excellent ring.
 :::
 

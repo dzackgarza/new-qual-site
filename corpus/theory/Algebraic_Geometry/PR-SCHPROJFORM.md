@@ -29,7 +29,9 @@ for all $i \geq 0$.
 
 ::: {.proof}
 1. There is a natural map $f_* \mathcal{F} \otimes \mathcal{E} \to f_*(\mathcal{F} \otimes f^* \mathcal{E})$, adjoint to $f^* f_* \mathcal{F} \otimes f^* \mathcal{E} \to \mathcal{F} \otimes f^* \mathcal{E}$.
+
 2. Whether it is an isomorphism is local on $Y$, so assume $\mathcal{E} = \OO_Y^{\oplus r}$; both sides become $(f_* \mathcal{F})^{\oplus r}$ compatibly.
+
 3. For $i > 0$, take an injective resolution $\mathcal{F} \to \mathcal{I}^\bullet$ and apply the map of step 1 termwise, giving $f_* \mathcal{I}^\bullet \otimes \mathcal{E} \to f_*(\mathcal{I}^\bullet \otimes f^* \mathcal{E})$.
    Over an open $V \subseteq Y$ where $\mathcal{E}|_V$ is free of rank $r$, the restriction of an injective module to $f^{-1}V$ is injective, so $\mathcal{I}^\bullet \otimes f^* \mathcal{E}$ restricts to the injective resolution $(\mathcal{I}^\bullet|_{f^{-1}V})^{\oplus r}$ of $(\mathcal{F} \otimes f^* \mathcal{E})|_{f^{-1}V}$, and both sides have cohomology $(R^i f_* \mathcal{F}|_V)^{\oplus r}$, compatibly with the map.
 :::

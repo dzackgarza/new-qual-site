@@ -26,7 +26,9 @@ It is built from a simplicial resolution of $\OO_X$ by free $f^{-1}\OO_Y$-algebr
 
 ::: {.proposition}
 1. If $f$ is smooth, $L_{X/Y} \simeq \Omega_{X/Y}[0]$.
+
 2. If $X \hookrightarrow P$ is a closed immersion with ideal $\mathcal{I}$ into a smooth $Y$-scheme $P$ and $X \to Y$ is a local complete intersection, then $L_{X/Y} \simeq [\mathcal{I}/\mathcal{I}^2 \to \Omega_{P/Y}|_X]$ in degrees $-1$ and $0$.
+
 3. A composition $X \to Y \to Z$ gives a distinguished triangle $f^* L_{Y/Z} \to L_{X/Z} \to L_{X/Y} \to$, extending the two exact sequences of differentials.
 :::
 

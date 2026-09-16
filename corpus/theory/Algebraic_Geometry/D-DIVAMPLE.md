@@ -43,4 +43,3 @@ Degree $3$ is the first very ample case, giving the plane cubic.
 For a projective variety $X \subseteq \PP^n$ and a hyperplane $H \not\supseteq X$, the \dfn{hyperplane section} $X \cap H$ is the effective Cartier divisor on $X$ cut out by the linear form defining $H$.
 The hyperplane sections form the linear system $\PP V \subseteq \abs{\OO_X(1)}$, where $V$ is the image of $H^0(\PP^n, \OO(1)) \to H^0(X, \OO_X(1))$.
 :::
-

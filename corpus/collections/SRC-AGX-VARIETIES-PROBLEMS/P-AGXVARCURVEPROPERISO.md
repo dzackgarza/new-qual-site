@@ -23,4 +23,3 @@ The statement is false as written: $\PP^1 \to \PP^1$, $[x:y] \mapsto [x^2:y^2]$,
 Every morphism of projective varieties is proper, and a nonconstant morphism of smooth projective curves is finite and surjective.
 The true statement is that a birational morphism, equivalently a nonconstant morphism of degree $1$, between smooth projective curves is an isomorphism.
 :::
-

@@ -24,7 +24,9 @@ Let $X = \PP^1_k = \Proj k[x_0, x_1]$ and $p = [1:0]$, the zero of $x_1$.
 Multiplication by $x_1$ gives $\OO(-1) \to \OO$, with image the ideal sheaf $\mathcal{I}_p$ of the reduced point $p$.
 
 1. On $D_+(x_1)$, $x_1$ is a unit, so the map is an isomorphism and both $\mathcal{I}_p$ and the quotient are trivial away from $p$.
+
 2. On $D_+(x_0) = \Spec k[t]$ with $t = x_1/x_0$, the map is $k[t] \xrightarrow{t} k[t]$, which is injective with cokernel $k[t]/(t) = k$ supported at $t = 0$, that is, at $p$.
+
 3. So $0 \to \OO(-1) \xrightarrow{x_1} \OO \to k_p \to 0$ is exact on stalks, hence exact, where $k_p$ is the skyscraper sheaf at $p$ with value $k$.
 :::
 

@@ -22,6 +22,7 @@ prompts:
 Let $X$ be a projective scheme over $\CC$ and $X^{an}$ its associated complex analytic space, with the morphism of ringed spaces $h \colon X^{an} \to X$.
 
 1. For every coherent sheaf $\mathcal{F}$ on $X$, the natural maps $H^i(X, \mathcal{F}) \to H^i(X^{an}, \mathcal{F}^{an})$ are isomorphisms, where $\mathcal{F}^{an} = h^* \mathcal{F}$.
+
 2. The functor $\mathcal{F} \mapsto \mathcal{F}^{an}$ is an equivalence from coherent $\OO_X$-modules to coherent analytic sheaves on $X^{an}$.
 :::
 

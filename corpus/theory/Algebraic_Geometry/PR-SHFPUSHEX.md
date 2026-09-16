@@ -23,7 +23,9 @@ prompts:
 Let $f \colon X \to Y$ be continuous and $0 \to \mcf' \to \mcf \to \mcf''$ an exact sequence of sheaves of abelian groups on $X$.
 
 1. $0 \to f_* \mcf' \to f_* \mcf \to f_* \mcf''$ is exact.
+
 2. If $f$ is a homeomorphism onto a closed subset of $Y$, then $f_*$ is exact.
+
 3. For $i \colon \{x\} \hookrightarrow X$ the inclusion of a point, $i^{-1} \mcf \cong \mcf_x$.
 :::
 

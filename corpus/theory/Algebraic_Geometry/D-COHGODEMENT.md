@@ -31,7 +31,9 @@ The complex $0 \to \mcf \to \mathcal{G}^0(\mcf) \to \mathcal{G}^1(\mcf) \to \cdo
 
 ::: {.proposition}
 1. Each $\mathcal{G}^n(\mcf)$ is flasque, since a product of stalks over a smaller open set extends by zero to a larger one.
+
 2. The Godement resolution is exact and functorial in $\mcf$, and exact as a functor of $\mcf$, because it is built from stalks.
+
 3. Flasque sheaves are acyclic, so $H^i(X, \mcf) = H^i\big(\Gamma(X, \mathcal{G}^\bullet(\mcf))\big)$.
 :::
 
