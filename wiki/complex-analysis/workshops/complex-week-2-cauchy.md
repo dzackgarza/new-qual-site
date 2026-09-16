@@ -1,41 +1,29 @@
 ---
 order: 30
-title: "Complex Analysis Qual Prep Week 2: Things Named After Cauchy"
+title: "Complex analysis workshop week 2: Cauchy's integral formula and residues"
 ---
 
-# Complex Analysis Qual Prep Week 2: Things Named After Cauchy
+# Complex analysis workshop week 2: Cauchy's integral formula and residues
+
+## Topics
 
 - [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors]]
 
-- Toy contours
+- Integrals over circles and other simple contours
 
-- Cauchy's integral formula
+- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula]]
 
-- Cauchy inequalities
+- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequalities]]
 
-- Computing integrals
-
-  - Residue formulas
-
-  - ML Inequality
-
-  - Jordan's lemma
+- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Computing integrals]]: [[complex-analysis/residues-and-contours/computing-residues|residue formulas]], the [[complex-analysis/residues-and-contours/arc-estimates|$ML$-inequality]], and [[T-ZO5UU|Jordan's lemma]]
 
 ## Review
 
 ![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527180305.png)
 
-![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527180305.png)
-
-### Integrals and Residues
+### Integrals and residues
 
 ![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527181024.png)
-
-![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527175221.png)
-
-![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527175221.png)
-
-![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527175221.png)
 
 ![](Obsidian/Workshops/Complex Analysis/_attachments/Pasted image 20210527175221.png)
 
@@ -57,19 +45,21 @@ title: "Complex Analysis Qual Prep Week 2: Things Named After Cauchy"
 
 ![](_attachments/Pasted image 20210527182259.png)
 
-**Bounds**
+### Bounds
 
-Jordan's Lemma: ![](_attachments/Pasted image 20210527182026.png)
+[[T-ZO5UU|Jordan's lemma]]:
+
+![](_attachments/Pasted image 20210527182026.png)
 
 ![](_attachments/Pasted image 20210527182117.png)
 
-### Blaschke Factors
+### Blaschke factors
 
 ![](_attachments/Pasted image 20210527181155.png)
 
 ![](_attachments/Pasted image 20210527181214.png)
 
-### Cauchy's Integral Formula
+### Cauchy's integral formula
 
 ![](_attachments/Pasted image 20210527175202.png)
 
@@ -79,13 +69,13 @@ Jordan's Lemma: ![](_attachments/Pasted image 20210527182026.png)
 
 ![](_attachments/Pasted image 20210527175413.png)
 
-### Misc
+### Further review
 
 ![](_attachments/Pasted image 20210527175424.png)
 
 ![](_attachments/Pasted image 20210527175435.png)
 
-## Warmups
+## Warmup
 
 [[E-W3QMS]]
 
@@ -93,6 +83,6 @@ Jordan's Lemma: ![](_attachments/Pasted image 20210527182026.png)
 
 [[P-IOUZO]]
 
-## Qual Problems
+## Qualifying exam problems
 
 [[P-AQRVL]]
