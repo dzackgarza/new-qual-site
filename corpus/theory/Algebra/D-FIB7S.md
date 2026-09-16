@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-FIB7S
 kind: definition
-title: $p$-groups
+title: '$p$-groups'
 classification:
   areas:
   - algebra
