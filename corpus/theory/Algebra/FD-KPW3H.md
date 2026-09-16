@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-KPW3H
 kind: definition
-title: 'Definition: irreducible polynomial'
+title: Irreducible polynomial in terms of factor degrees
 prompts:
 - When is a polynomial irreducible, in terms of the degrees of its factors?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-Nonconstant and can not be factored into two polynomials of smaller degrees.
+Let $K$ be a [[D-UI6CU|field]].
+A polynomial $p\in K[x]$ is \dfn{irreducible} if $p$ is nonconstant and there are no $q,r\in K[x]$ with $p=qr$, $\deg q<\deg p$, and $\deg r<\deg p$.
 :::

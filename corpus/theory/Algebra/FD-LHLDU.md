@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-LHLDU
 kind: definition
-title: $\gens{p}\dash$primary
+title: '$\gens{p}$-primary module'
 prompts:
 - For $R$ a PID and $p \in R$ prime, when is an $R\dash$module $\gens{p}\dash$primary?
 classification:
@@ -17,7 +17,10 @@ review: draft
 ---
 
 ::: {.definition}
-For $R$ a PID and $p\in R$ prime, an $R\dash$module $M$ is $\gens{p}\dash$**primary** iff every $m\in M$ is annihilated by some power of $p$: for each $m$ there is an $n\geq 1$ with $p^n m = 0$.
+Let $R$ be a [[D-HTIL5|principal ideal domain]], $p\in R$ a prime, and $M$ an $R$-module.
+$M$ is \dfn{$\gens{p}$-primary} if every $m\in M$ is annihilated by some power of $p$: for each $m\in M$ there is $n\geq 1$ with $p^n m = 0$.
+:::
 
-Equivalently, $M$ is the $p\dash$primary component $M[p^\infty] = \theset{ m \in M \suchthat p^n m = 0 \text{ for some } n }$ of itself.
+::: {.remark}
+For any $R$-module $M$, the $p$-primary component $M[p^\infty] \coloneqq \theset{ m \in M \st p^n m = 0 \text{ for some } n\geq 1}$ is a submodule, and $M$ is $\gens{p}$-primary if and only if $M[p^\infty]=M$.
 :::
