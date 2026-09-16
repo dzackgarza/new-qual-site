@@ -7,6 +7,15 @@ Apply `QUAL-05` when a problem is encountered, including outside the selected ca
 Record the evidence before leaving that work; logging does not complete a repair.
 These documents apply to every stream working in the clone.
 
+## Owner pause — 2026-09-16
+
+The repository owner has paused this workstream. Do not start, select, continue,
+revive, wake, route, or push new work while this pause stands. If a turn was already
+mid-unit when the pause arrived, bank only that coherent unit and stop before selecting
+another. Preserve the existing dirty/shared tree. Only a later explicit owner instruction
+resumes this repository; recurrence of an older scheduled continuation does not supersede
+the pause.
+
 <!-- agent-memory:start -->
 # Agent memory
 
