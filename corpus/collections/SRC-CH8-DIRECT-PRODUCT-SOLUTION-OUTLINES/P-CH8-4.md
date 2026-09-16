@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH8-4
 kind: problem
-title: Chapter 8 exercise 4
+title: $G\oplus H$ is abelian if and only if $G$ and $H$ are
 classification:
   areas:
   - algebra

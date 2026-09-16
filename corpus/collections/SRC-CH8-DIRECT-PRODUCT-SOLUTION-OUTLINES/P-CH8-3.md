@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH8-3
 kind: problem
-title: Chapter 8 exercise 3
+title: $G\cong G\oplus\{e_H\}$
 classification:
   areas:
   - algebra

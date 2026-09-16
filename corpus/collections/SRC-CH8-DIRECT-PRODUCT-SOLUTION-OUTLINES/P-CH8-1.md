@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH8-1
 kind: problem
-title: Chapter 8 exercise 1
+title: External direct products of finitely many groups are groups
 classification:
   areas:
   - algebra

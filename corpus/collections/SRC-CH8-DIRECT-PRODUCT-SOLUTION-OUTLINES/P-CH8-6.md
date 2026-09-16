@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH8-6
 kind: problem
-title: Chapter 8 exercise 6
+title: $\mathbb Z_8\oplus\mathbb Z_2\not\cong\mathbb Z_4\oplus\mathbb Z_4$
 classification:
   areas:
   - algebra
