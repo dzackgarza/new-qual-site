@@ -39,8 +39,6 @@ source:
     comment: Part II Problem 4
 ---
 
-::: remark
-The source's Part II Problem 2 extraction prints one boundary circle as $S^2\times\{0\}$, incompatible with the stated cylinder $S^1\times I$. The exact canonical occurrence `P-TOPS11B` supplies the source-equivalent $S^1\times\{0\}$ statement without guessing. Part II Problem 4 retains an explicit gap for its missing torus $\Delta$-complex diagram.
-
-The retained `topology_2005-2003.pdf` compilation appends a duplicate copy of Part II of this sitting; it is retained here as supplemental provenance rather than creating duplicate problem cards.
+::: {.remark}
+In Part II Problem 2 one boundary circle appears as $S^2\times\{0\}$, which is not a subset of the cylinder $S^1\times I$; the problem is the same as [[P-TOPS11B]], which reads $S^1\times\{0\}$.
 :::
