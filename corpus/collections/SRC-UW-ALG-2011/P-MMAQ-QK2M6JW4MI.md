@@ -21,7 +21,7 @@ audit:
 ---
 
 ::: {.problem}
-Given a finite group $G$, recall that its *regular representation* is the representation on the complex group algebra $\mathbb C[G]$ induced by left multiplication of $G$ on itself and its `\textit{adjoint representation}`{=tex} is the representation on the complex group algebra $\mathbb C[G]$ induced by conjugation of $G$ on itself.
+Given a finite group $G$, recall that its *regular representation* is the representation on the complex group algebra $\mathbb C[G]$ induced by left multiplication of $G$ on itself and its *adjoint representation* is the representation on the complex group algebra $\mathbb C[G]$ induced by conjugation of $G$ on itself.
 
 - Let $G=\GL_2(\mathbb F_2)$.
   Describe the number and dimensions of the irreducible representations of $G$.
