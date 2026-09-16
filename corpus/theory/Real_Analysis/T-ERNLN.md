@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-ERNLN
 kind: theorem
-title: Uniform Limit Theorem
+title: Uniform limit theorem
 classification:
   areas:
   - real-analysis
@@ -14,8 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f_n\to f$ pointwise and uniformly with each $f_n$ continuous, then $f$ is continuous.
-[^uniform_limit_is_cts]
+Let $X$ be a topological space, and let $f_n\colon X\to\CC$ for $n\geq1$ and $f\colon X\to\CC$ be functions.
+If each $f_n$ is [[D-AEAAD|continuous]] and $f_n\to f$ [[D-YZC3C|uniformly]] on $X$, then $f$ is continuous.
 :::
-
-[^uniform_limit_is_cts]: Slogan: a uniform limit of continuous functions is continuous.
