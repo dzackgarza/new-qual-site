@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-PIO2B
 kind: theorem
-title: Maschke's Theorem
+title: Maschke's theorem
 classification:
   areas:
   - algebra
@@ -15,10 +15,10 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $k$ be a field with $\ch(k)$ not dividing $\size G$.
-Then any finite-dimensional representation of $G$ decomposes into a direct sum of irreducible representations.
+Let $G$ be a finite group and $k$ a field with $\ch(k)\nmid \size G$.
+Then every finite-dimensional representation of $G$ over $k$ is a direct sum of irreducible representations.
 :::
 
 ::: {.slogan}
-If $\ch(k)\nmid |G|$, finite-dimensional $k[G]$-modules split into irreducibles.
+If $\ch(k)\nmid \abs{G}$, finite-dimensional $k[G]$-modules are direct sums of simple $k[G]$-modules.
 :::

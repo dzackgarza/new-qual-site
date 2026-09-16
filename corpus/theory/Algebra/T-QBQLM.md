@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-QBQLM
 kind: theorem
-title: Construction of Finite Fields
+title: Construction of $\GF(p^n)$ as $\FF_p[x]/(f)$
 classification:
   areas:
   - algebra
@@ -15,5 +15,9 @@ review: draft
 ---
 
 ::: {.theorem}
-$\GF(p^n)\cong \frac{\FF_p[x]}{(f)}$ where $f \in \FF_p[x]$ is any irreducible of degree $n$, and $\GF(p^n) \cong \FF_p[\alpha] \cong \spanof_{\FF_p}\theset{1, \alpha, \cdots, \alpha^{n-1}}$ for any root $\alpha$ of $f$.
+Let $p$ be a prime, $n\geq 1$, and $f \in \FF_p[x]$ an [[D-BVMTZ|irreducible]] polynomial of degree $n$, and let $\alpha$ be a root of $f$ in an extension field of $\FF_p$.
+Then
+$$
+\GF(p^n)\cong \frac{\FF_p[x]}{(f)} \cong \FF_p[\alpha] = \spanof_{\FF_p}\theset{1, \alpha, \ldots, \alpha^{n-1}}.
+$$
 :::
