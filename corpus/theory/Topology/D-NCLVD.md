@@ -14,19 +14,30 @@ review: draft
 ---
 
 ::: {.definition}
-A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} B$ satisfying $$r\circ\iota = \id_{A}.$$ A **retract** of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
+Let $X$ be a topological space, $A\subseteq X$ a subspace, and $\iota\colon A\injects X$ the inclusion.
+A \dfn{retraction} of $X$ onto $A$ is a [[D-AEAAD|continuous map]] $r\colon X\to A$ with $r\circ\iota=\id_A$, that is, $r(a)=a$ for every $a\in A$:
 
 \begin{tikzcd}
-	A && B
-	\arrow["f", from=1-1, to=1-3]
-	\arrow["r"', curve={height=18pt}, dashed, from=1-3, to=1-1]
-	\arrow[loop left, from=1-1]{l}{\mathrm{id}_A}
+	A && X
+	\arrow["\iota", hook, from=1-1, to=1-3]
+	\arrow["r", curve={height=-18pt}, dashed, from=1-3, to=1-1]
 \end{tikzcd}
 
-> [Link to (partial) Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXSxbMSwwLCJyIiwyLHsiY3VydmUiOjMsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+The subspace $A$ is a \dfn{retract} of $X$ if a retraction of $X$ onto $A$ exists.
+:::
 
-Equivalently, a continuous map $r:B\to A$ with $\ro{r}{A} = \id_A$ restricting to the identity on $A$, i.e. fixing $A$ pointwise.
-Note that $r$ is necessarily a surjection.
+::: {.proposition}
+Let $A\subseteq X$ be a subspace with inclusion $\iota\colon A\injects X$.
 
-Alt: Let $X$ be a topological space and $A \subset X$ be a subspace, then a **retraction** of $X$ onto $A$ is a map $r: X\into X$ such that the image of $X$ is $A$ and $r$ restricted to $A$ is the identity.
+(a) Every retraction $r\colon X\to A$ is surjective.
+
+(b) Continuous maps $r\colon X\to A$ with $r\circ\iota=\id_A$ correspond bijectively to continuous maps $\rho\colon X\to X$ with $\rho(X)=A$ and $\rho(a)=a$ for all $a\in A$, via $\rho=\iota\circ r$.
+:::
+
+::: {.proof}
+(a) For $a\in A$, $a=r(\iota(a))$ lies in the image of $r$.
+
+(b) If $r$ is a retraction, then $\rho\coloneqq\iota\circ r$ is continuous, fixes $A$ pointwise, and has image $r(X)=A$ by (a).
+Conversely, if $\rho\colon X\to X$ is continuous with $\rho(X)=A$ and $\rho|_A=\id_A$, then corestricting gives a map $r\colon X\to A$ with $\iota\circ r=\rho$, continuous because $A$ carries the subspace topology, and $r\circ\iota=\id_A$.
+The two constructions are inverse to each other because $\iota$ is injective.
 :::
