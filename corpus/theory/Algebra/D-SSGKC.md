@@ -60,5 +60,5 @@ In three variables, signature $(3,0)$ gives an ellipsoid, $(2,1)$ a hyperboloid 
 
 ::: {.concept}
 See Artin, *Algebra*, §8.7, (8.7.2)-(8.7.3), pp. 245-247; the signature and Sylvester's law are at §8.4, p. 240.
-The basis-free formulation, as a function $q$ with $q(\lambda x) = \lambda^2 q(x)$ whose polarization is bilinear, is the related card of the same title.
+A basis-free [[D-NRRIT|quadratic form]] is a function $q$ with $q(\lambda x) = \lambda^2 q(x)$ whose polarization is bilinear.
 :::
