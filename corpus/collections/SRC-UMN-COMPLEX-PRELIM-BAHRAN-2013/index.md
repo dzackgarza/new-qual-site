@@ -67,8 +67,6 @@ source:
     year: 2013
 ---
 
-::: remark
-Cihan Bahran's 2013 solution compilation of selected University of Minnesota complex-analysis preliminary-exam problems, grouped by the technique used in the source.
-The source repeats Fall 2009 Problem 5 in two discussions; this collection represents that mathematical problem once.
-Combined labels such as “Fall 2011, 7 and Fall 2010, 3” are preserved on the corresponding card rather than duplicated.
+::: {.remark}
+Cihan Bahran's 2013 solutions to selected University of Minnesota complex analysis preliminary-exam problems, grouped by technique. The source discusses Fall 2009 Problem 5 twice.
 :::
