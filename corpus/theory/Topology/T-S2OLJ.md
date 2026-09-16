@@ -13,5 +13,5 @@ review: draft
 ---
 
 ::: {.theorem}
-Every $f: B^n \to B^n$ has a fixed point.
+Every continuous map $f\colon D^n \to D^n$ has a fixed point [@Hat02, Corollary 2.15, p. 114].
 :::
