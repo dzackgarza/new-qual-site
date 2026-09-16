@@ -66,7 +66,7 @@ sections:
       - ref: PR-VUKHO
       - ref: T-5KGVV
       - ref: T-SZRXI
-      - ref: T-F4O3E
+      - ref: T-GJNT5
       - ref: C-HWX2P
       - ref: PR-SF6ZE
       - ref: PR-YY3JG
@@ -113,8 +113,7 @@ sections:
       - ref: D-KGGWK
       - ref: FD-W3MQW
       - ref: FD-XRRNZ
-      - ref: T-OBPSZ
-      - ref: T-KANHW
+      - ref: T-QYDVH
       - ref: PR-GSDKO
       - ref: PR-KGHJ2
       - ref: PR-E6VI4
@@ -146,9 +145,7 @@ sections:
       - p-Groups
     items:
       - ref: D-7TQ2M
-      - ref: T-4RADG
       - ref: T-WRMBM
-      - ref: T-RRK4J
       - ref: T-EF2MZ
       - ref: T-3X5FF
       - ref: ST-DKYXZ

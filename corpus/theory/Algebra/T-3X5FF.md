@@ -10,9 +10,9 @@ classification:
   - Groups
 relations:
 - kind: uses
-  target: T-OBPSZ
+  target: T-QYDVH
 - kind: uses
-  target: T-RRK4J
+  target: T-EF2MZ
 review: reviewed
 ---
 
@@ -31,7 +31,7 @@ for every Sylow $p$-subgroup $P$, where $N_G(P)$ is the [[D-OZ2RR|normalizer]] o
 
 ::: {.proof}
 Let $G$ act by conjugation on the set $\Syl_p(G)$ of Sylow $p$-subgroups.
-By [[T-RRK4J|Sylow's second theorem]] the action is transitive, and the stabilizer of $P$ is $N_G(P)$, so the orbit-stabilizer theorem gives $n_p=[G:N_G(P)]$.
+By [[T-EF2MZ|Sylow's second theorem]] the action is transitive, and the stabilizer of $P$ is $N_G(P)$, so the orbit-stabilizer theorem gives $n_p=[G:N_G(P)]$.
 Since $P\leq N_G(P)$, $n_p$ divides $[G:P]=m$.
 
 Now restrict the action to $P$.

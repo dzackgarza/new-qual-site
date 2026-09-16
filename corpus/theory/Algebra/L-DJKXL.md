@@ -12,7 +12,7 @@ relations:
 - kind: uses
   target: D-WYC7C
 - kind: uses
-  target: T-OBPSZ
+  target: T-QYDVH
 review: reviewed
 ---
 
