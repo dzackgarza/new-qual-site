@@ -32,6 +32,6 @@ source:
   - P-WESTOP11-9
 ---
 
-::: remark
-The retained compilation contains nine numbered August 2011 problems before the August 2010 sitting begins. Although the exam preamble refers to two parts, no separate Part II heading or additional 2011 problems survive in the retained source.
+::: {.remark}
+The preamble refers to two parts, but the paper has nine numbered problems and no Part II heading.
 :::
