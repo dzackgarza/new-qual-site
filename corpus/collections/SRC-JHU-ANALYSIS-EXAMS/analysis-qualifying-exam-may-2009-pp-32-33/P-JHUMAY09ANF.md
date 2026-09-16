@@ -37,26 +37,52 @@ For continuous $f$ on $\mathbb R/\mathbb Z$, prove that $f*K_n\to f$ uniformly.
 :::
 
 ::: {.solution}
+<1>1. The contribution from $|t|<\delta$ can be made uniformly small.
+::: {.proof}
 Fix $\eta>0$. Since $f$ is continuous on the compact circle, it is uniformly continuous. Choose $0<\delta<1/2$ so that
-\[
+$$
 |f(x-t)-f(x)|<\frac{\eta}{2}
 \qquad(|t|<\delta)
-\]
-for every $x$. Then
-\[
-(f*K_n)(x)-f(x)=\int (f(x-t)-f(x))K_n(t)\,dt.
-\]
-Hence
-\[
-\begin{aligned}
-|(f*K_n)(x)-f(x)|
-&\le \int_{|t|<\delta}|f(x-t)-f(x)|K_n(t)\,dt\\
-&\quad+\int_{\delta\le|t|\le1/2}|f(x-t)-f(x)|K_n(t)\,dt\\
-&\le \frac{\eta}{2}+2\|f\|_\infty\int_{\delta\le|t|\le1/2}K_n(t)\,dt.
-\end{aligned}
-\]
-By the approximation-to-the-identity hypothesis, the final integral tends to $0$. Thus for all sufficiently large $n$, the right-hand side is $<\eta$, uniformly in $x$. Therefore
-\[
+$$
+for every $x$. Since $K_n\ge0$ and $\int K_n=1$,
+$$
+\int_{|t|<\delta}|f(x-t)-f(x)|K_n(t)\,dt
+\le\frac\eta2
+$$
+uniformly in $x$ and $n$.
+:::
+
+<1>2. The contribution from $\delta\le|t|\le1/2$ tends uniformly to zero.
+::: {.proof}
+For every $x$ and $t$,
+$$
+|f(x-t)-f(x)|\le2\|f\|_\infty.
+$$
+Therefore
+$$
+\int_{\delta\le|t|\le1/2}|f(x-t)-f(x)|K_n(t)\,dt
+\le
+2\|f\|_\infty
+\int_{\delta\le|t|\le1/2}K_n(t)\,dt.
+$$
+The last integral tends to $0$ by hypothesis, and the bound is independent of $x$.
+:::
+
+<1>3. The convolutions converge uniformly to $f$.
+::: {.proof}
+Because $\int K_n=1$,
+$$
+(f*K_n)(x)-f(x)
+=\int (f(x-t)-f(x))K_n(t)\,dt.
+$$
+By steps <1>1--<1>2, for all sufficiently large $n$ the absolute value of the right-hand side is $<\eta$ for every $x$. Hence
+$$
 \|f*K_n-f\|_\infty\longrightarrow0.
-\]
+$$
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>3 is exactly the required uniform convergence.
+:::
 :::
