@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 audit:
@@ -22,6 +24,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Replaced the invalid residue-theorem answer by local one-sided divergence, checked the vanishing linear Taylor coefficient, and supplied the explicit large-arc bound for the second integral."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Complex Analysis (7) of Arango-Piñeros, Some quals problems; merged the duplicate P-MMAQ-ZRGWQKRMTX, whose solution assigned the value 0 to the first integral although its contour passes through the double pole."
 ---
 
 ::: problem

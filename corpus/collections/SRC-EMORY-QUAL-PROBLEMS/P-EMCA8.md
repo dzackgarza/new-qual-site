@@ -2,14 +2,22 @@
 schema: qual/card@1
 id: P-EMCA8
 kind: problem
-title: "Uniform convergence of holomorphic functions preserves holomorphicity"
+title: Weierstrass's theorem on locally uniform limits of holomorphic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Uniform Convergence
+  - Sequences of Functions
+  - Holomorphic Functions
+  - Morera
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Complex Analysis (8) of Arango-Piñeros, Some quals problems; merged the duplicate E-YMM6X, whose solution repeats this Morera and Cauchy-estimate argument."
 ---
 
 ::: problem

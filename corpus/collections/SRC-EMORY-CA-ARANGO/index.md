@@ -43,25 +43,15 @@ source:
     - P-MMAQ-SNLQTGU5TQ
   - name: Complex Analysis
     problems:
-    - P-EMCA1
-    - P-EMCA2
-    - P-EMCA3
-    - P-EMCA4
-    - P-EMCA5
-    - P-EMCA6
     - P-EMCA7
     - P-EMCA8
     - P-EMCA9
     - P-EMCA10
-    - P-EMCA11
-    - P-8XT37
     - P-726HQ
     - P-MMAQ-CFGXL3QPK7
     - P-MMAQ-FQRRXNYJJL
     - P-MMAQ-ZMRHOSV3OG
-    - P-MMAQ-ZRGWQKRMTX
     - P-MMAQ-ZTRBMIG65D
-    - P-ZLDP7
   - name: Real Analysis
     problems:
     - P-EMRA1

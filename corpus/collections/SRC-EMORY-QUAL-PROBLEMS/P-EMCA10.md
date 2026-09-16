@@ -2,14 +2,19 @@
 schema: qual/card@1
 id: P-EMCA10
 kind: problem
-title: "Rouche's theorem and local injectivity"
+title: Rouché's theorem and local bijectivity where the derivative is nonzero
 classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Rouché
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Complex Analysis (10) of Arango-Piñeros, Some quals problems; merged the duplicate P-ZLDP7, whose statement of Rouché's theorem compared the wrong pair of functions."
 ---
 
 ::: problem

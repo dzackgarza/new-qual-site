@@ -2,14 +2,21 @@
 schema: qual/card@1
 id: P-EMCA9
 kind: problem
-title: "Image of nonconstant entire function is dense"
+title: Nonconstant entire functions have dense image
 classification:
   areas:
   - complex-analysis
   topics:
-  - Complex Analysis
+  - Liouville's Theorem
+  - Entire Functions
+  - Casorati-Weierstrass
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Complex Analysis (9) of Arango-Piñeros, Some quals problems; merged the duplicate E-N6PDJ, whose solution repeats this Liouville argument."
 ---
 
 ::: problem

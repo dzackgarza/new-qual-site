@@ -51,10 +51,10 @@ source:
     - P-MMAQ-FQRRXNYJJL
     - P-MMAQ-ZMRHOSV3OG
     - P-726HQ
-    - P-MMAQ-ZRGWQKRMTX
-    - E-YMM6X
-    - E-N6PDJ
-    - P-ZLDP7
+    - P-EMCA7
+    - P-EMCA8
+    - P-EMCA9
+    - P-EMCA10
     - P-MMAQ-CFGXL3QPK7
   - name: Real analysis
     problems:
