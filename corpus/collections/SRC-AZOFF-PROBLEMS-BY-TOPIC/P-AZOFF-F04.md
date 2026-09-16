@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-F04
 kind: problem
-title: 'Azoff — Laurent expansions and singularities problem 4'
+title: Laurent series and singularities of $\frac{\sin^2 z}{z}$, $ze^{1/z^2}$, and $\frac{1}{z(4-z)}$
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-B03
 kind: problem
-title: 'Azoff — Several variables problem 3'
+title: Real differentiability, the inverse function theorem, and complex differentiability in $\mathbb R^2$
 classification:
   areas: [real-analysis]
   topics: []

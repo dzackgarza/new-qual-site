@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E06
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 6'
+title: Entire functions with $|f(z)|\ge|z|$
 classification:
   areas: [complex-analysis]
   topics: []

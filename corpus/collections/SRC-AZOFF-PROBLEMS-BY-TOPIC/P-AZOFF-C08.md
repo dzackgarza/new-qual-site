@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C08
 kind: problem
-title: 'Azoff — Conformal mapping problem 8'
+title: Conformal map of the slit disk $\mathbb D\setminus[0,1)$ onto the disk
 classification:
   areas: [complex-analysis]
   topics: []

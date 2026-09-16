@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C12
 kind: problem
-title: 'Azoff — Conformal mapping problem 12'
+title: Möbius transformations preserving the extended real line
 classification:
   areas: [complex-analysis]
   topics: []

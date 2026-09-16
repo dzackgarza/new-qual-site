@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A06
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 6'
+title: Distance between disjoint compact sets is attained
 classification:
   areas: [real-analysis]
   topics: []

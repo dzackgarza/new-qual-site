@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I10
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 10'
+title: Schwarz--Pick inequality for the derivative
 classification:
   areas: [complex-analysis]
   topics: []

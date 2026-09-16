@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D03
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 3'
+title: Locally uniform limits of analytic functions are analytic
 classification:
   areas: [complex-analysis]
   topics: []

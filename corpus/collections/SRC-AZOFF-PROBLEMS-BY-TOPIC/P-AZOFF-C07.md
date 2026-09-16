@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C07
 kind: problem
-title: 'Azoff — Conformal mapping problem 7'
+title: Conformal map of a non-concentric circular region onto an annulus
 classification:
   areas: [complex-analysis]
   topics: []

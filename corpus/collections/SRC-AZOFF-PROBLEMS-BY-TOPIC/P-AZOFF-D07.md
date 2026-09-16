@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D07
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 7'
+title: An entire function with $|f(z)|\le|z|^{1/2}$ for large $|z|$ vanishes identically
 classification:
   areas: [complex-analysis]
   topics: []

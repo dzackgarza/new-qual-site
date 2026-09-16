@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E01
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 1'
+title: Boundary behavior of power series with radius of convergence $1$
 classification:
   areas: [complex-analysis]
   topics: []

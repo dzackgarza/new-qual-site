@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G01
 kind: problem
-title: 'Azoff — Residues problem 1'
+title: $\int_0^\infty\frac{dx}{(1+x^2)(1+9x^2)}$
 classification:
   areas: [complex-analysis]
   topics: []

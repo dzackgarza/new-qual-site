@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E07
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 7'
+title: Absolute and uniform convergence of power series inside the disk of convergence
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G11
 kind: problem
-title: 'Azoff — Residues problem 11'
+title: $\int_0^\infty\frac{\sin^3 x}{x^3}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

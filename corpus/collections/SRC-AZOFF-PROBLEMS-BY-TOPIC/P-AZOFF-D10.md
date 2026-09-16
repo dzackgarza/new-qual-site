@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D10
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 10'
+title: Liouville's theorem via Cauchy's formula
 classification:
   areas: [complex-analysis]
   topics: []

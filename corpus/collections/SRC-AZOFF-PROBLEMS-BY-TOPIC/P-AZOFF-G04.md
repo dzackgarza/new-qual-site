@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G04
 kind: problem
-title: 'Azoff — Residues problem 4'
+title: $\int_0^\infty\frac{\cos x-\cos 4x}{x^2}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

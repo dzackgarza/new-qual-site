@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A02
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 2'
+title: Continuous functions vanishing at $\pm\infty$ are uniformly continuous
 classification:
   areas: [real-analysis]
   topics: []

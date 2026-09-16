@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E09
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 9'
+title: Entire functions with $|f(z)|\le\sqrt{|z|}$ for large $|z|$
 classification:
   areas: [complex-analysis]
   topics: []

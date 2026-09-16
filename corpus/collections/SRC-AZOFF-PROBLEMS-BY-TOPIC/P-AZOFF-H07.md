@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H07
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 7'
+title: Finite Blaschke products take each value in the disk $n$ times
 classification:
   areas: [complex-analysis]
   topics: []

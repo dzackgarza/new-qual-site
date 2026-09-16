@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-B01
 kind: problem
-title: 'Azoff — Several variables problem 1'
+title: Continuity and differentiability of $xy/\sqrt{x^2+y^2}$
 classification:
   areas: [real-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I06
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 6'
+title: Proper self-maps of the disk with a single zero are $\lambda z^k$
 classification:
   areas: [complex-analysis]
   topics: []

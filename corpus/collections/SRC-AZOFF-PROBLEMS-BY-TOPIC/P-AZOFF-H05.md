@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H05
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 5'
+title: Solutions of $e^z=az^n$ in the unit disk
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I08
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 8'
+title: 'Subordination: $g(|z|<r)\subset f(|z|<r)$ for univalent $f$'
 classification:
   areas: [complex-analysis]
   topics: []

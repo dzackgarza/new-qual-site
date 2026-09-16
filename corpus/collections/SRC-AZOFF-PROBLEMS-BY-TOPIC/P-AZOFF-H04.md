@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H04
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 4'
+title: Roots of $z^7-4z^3-1$ in the unit disk
 classification:
   areas: [complex-analysis]
   topics: []

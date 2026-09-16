@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H09
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 9'
+title: Monic polynomials have modulus at least $1$ somewhere on the unit circle
 classification:
   areas: [complex-analysis]
   topics: []

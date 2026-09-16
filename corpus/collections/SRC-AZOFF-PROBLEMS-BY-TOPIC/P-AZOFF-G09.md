@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G09
 kind: problem
-title: 'Azoff — Residues problem 9'
+title: $\int_{-\infty}^\infty\frac{1+x^2}{1+x^4}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

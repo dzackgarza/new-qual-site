@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C02
 kind: problem
-title: 'Azoff — Conformal mapping problem 2'
+title: Conformal map of a horizontal strip onto the unit disk
 classification:
   areas: [complex-analysis]
   topics: []

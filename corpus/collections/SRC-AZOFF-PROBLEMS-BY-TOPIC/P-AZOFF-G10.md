@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G10
 kind: problem
-title: 'Azoff — Residues problem 10'
+title: $\int_0^\infty\frac{\cos x}{(x^2+a^2)^2}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

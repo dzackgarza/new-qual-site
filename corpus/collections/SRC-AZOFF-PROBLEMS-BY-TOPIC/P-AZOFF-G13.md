@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G13
 kind: problem
-title: 'Azoff — Residues problem 13'
+title: $\int_0^{2\pi}\frac{d\theta}{(a+b\cos\theta)^2}$
 classification:
   areas: [complex-analysis]
   topics: []

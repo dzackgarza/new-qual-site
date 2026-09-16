@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G03
 kind: problem
-title: 'Azoff — Residues problem 3'
+title: $\int_0^\infty\frac{\sqrt x}{(x+1)^2}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

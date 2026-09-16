@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H01
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 1'
+title: Partial sums of the exponential series have no zeros in the unit disk
 classification:
   areas: [complex-analysis]
   topics: []

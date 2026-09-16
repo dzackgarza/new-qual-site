@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H08
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 8'
+title: Zeros of the exponential partial sums $P_n$ and $P_n-1$ in a disk
 classification:
   areas: [complex-analysis]
   topics: []

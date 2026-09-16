@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-F08
 kind: problem
-title: 'Azoff — Laurent expansions and singularities problem 8'
+title: Partial fraction expansion of $\pi^2/\sin^2\pi z$
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G08
 kind: problem
-title: 'Azoff — Residues problem 8'
+title: $\int_0^\infty\frac{\sqrt x}{1+x^2}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

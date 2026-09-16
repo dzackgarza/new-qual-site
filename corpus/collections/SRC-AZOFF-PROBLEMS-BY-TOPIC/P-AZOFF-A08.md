@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A08
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 8'
+title: Dini's theorem for decreasing sequences on $[0,1]$
 classification:
   areas: [real-analysis]
   topics: []

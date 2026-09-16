@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H06
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 6'
+title: Local $m$-to-one behavior of an analytic function at a zero of order $m$
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G07
 kind: problem
-title: 'Azoff — Residues problem 7'
+title: $\int_0^\infty\frac{\sin x}{x(x^2+1)}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

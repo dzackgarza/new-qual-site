@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D06
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 6'
+title: Fourier transforms of compactly supported continuous functions are entire
 classification:
   areas: [complex-analysis]
   topics: []

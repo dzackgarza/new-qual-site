@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D04
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 4'
+title: Limits of entire functions converging uniformly on line segments
 classification:
   areas: [complex-analysis]
   topics: []

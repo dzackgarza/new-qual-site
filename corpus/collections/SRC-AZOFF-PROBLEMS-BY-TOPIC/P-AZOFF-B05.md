@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-B05
 kind: problem
-title: 'Azoff — Several variables problem 5'
+title: Real and complex implicit function theorems for $9s^3-6st+t^2=0$
 classification:
   areas: [real-analysis]
   topics: []

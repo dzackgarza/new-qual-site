@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-F07
 kind: problem
-title: 'Azoff — Laurent expansions and singularities problem 7'
+title: Singularity at $\infty$ of an entire function and its zeros
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-B06
 kind: problem
-title: 'Azoff — Several variables problem 6'
+title: A $C^1$ function with $\|\nabla F(0,0)\|<1$ maps small disks into small intervals
 classification:
   areas: [real-analysis]
   topics: []

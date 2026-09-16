@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A07
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 7'
+title: Union of intersecting connected sets is connected
 classification:
   areas: [real-analysis]
   topics: []

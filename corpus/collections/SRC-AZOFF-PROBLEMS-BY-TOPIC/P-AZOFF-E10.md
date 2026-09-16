@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E10
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 10'
+title: Uniform convergence of $\sum\sin(nz)/2^n$
 classification:
   areas: [complex-analysis]
   topics: []

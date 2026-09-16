@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E04
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 4'
+title: Which values $f(1/n)$ an analytic function on the disk can take
 classification:
   areas: [complex-analysis]
   topics: []

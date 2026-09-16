@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-B07
 kind: problem
-title: 'Azoff — Several variables problem 7'
+title: Implicit function theorem from the inverse function theorem
 classification:
   areas: [real-analysis]
   topics: []

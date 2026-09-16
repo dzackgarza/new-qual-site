@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G05
 kind: problem
-title: 'Azoff — Residues problem 5'
+title: $\int_0^\infty\frac{x^2}{(x^2+a^2)^2}\,dx$
 classification:
   areas: [complex-analysis]
   topics: []

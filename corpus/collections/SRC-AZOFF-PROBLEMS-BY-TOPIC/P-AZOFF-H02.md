@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-H02
 kind: problem
-title: 'Azoff — Rouché’s theorem problem 2'
+title: Two roots of $z^3+3z^2+bz+b^2$ in the unit disk
 classification:
   areas: [complex-analysis]
   topics: []

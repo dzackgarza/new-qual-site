@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C03
 kind: problem
-title: 'Azoff — Conformal mapping problem 3'
+title: Möbius map of the upper half-plane onto the disk and the image of a quadrant
 classification:
   areas: [complex-analysis]
   topics: []

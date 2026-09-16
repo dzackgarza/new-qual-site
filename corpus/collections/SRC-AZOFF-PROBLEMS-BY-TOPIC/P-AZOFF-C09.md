@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C09
 kind: problem
-title: 'Azoff — Conformal mapping problem 9'
+title: Conformal map of the slit plane $\mathbb C\setminus(-\infty,0]$ onto the disk
 classification:
   areas: [complex-analysis]
   topics: []

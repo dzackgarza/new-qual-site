@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D01
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 1'
+title: Riemann integrability of $g$ when $|g(x)-g(y)|\le|f(x)-f(y)|$
 classification:
   areas: [complex-analysis]
   topics: []

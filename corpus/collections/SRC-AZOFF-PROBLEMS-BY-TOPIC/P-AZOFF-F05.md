@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-F05
 kind: problem
-title: 'Azoff — Laurent expansions and singularities problem 5'
+title: Entire functions with a pole at $\infty$ are polynomials
 classification:
   areas: [complex-analysis]
   topics: []

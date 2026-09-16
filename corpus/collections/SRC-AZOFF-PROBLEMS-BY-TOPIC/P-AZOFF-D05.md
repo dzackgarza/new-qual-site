@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D05
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 5'
+title: No polynomials converge uniformly to $1/z$ on the unit circle
 classification:
   areas: [complex-analysis]
   topics: []

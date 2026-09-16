@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I07
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 7'
+title: Schwarz reflection across the circle and functions real on the unit circle
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-G12
 kind: problem
-title: 'Azoff — Residues problem 12'
+title: A contour integral equal to $\frac{\sin n\theta}{\sin\theta}$
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I05
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 5'
+title: Sharp bound for $|f'(0)|$ for maps of the disk into the right half-plane
 classification:
   areas: [complex-analysis]
   topics: []

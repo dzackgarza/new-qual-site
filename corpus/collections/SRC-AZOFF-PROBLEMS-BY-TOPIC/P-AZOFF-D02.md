@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D02
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 2'
+title: Cauchy's theorem for rectangles via Green's theorem
 classification:
   areas: [complex-analysis]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I09
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 9'
+title: Reflection principle for functions on the closed upper half-disk
 classification:
   areas: [complex-analysis]
   topics: []

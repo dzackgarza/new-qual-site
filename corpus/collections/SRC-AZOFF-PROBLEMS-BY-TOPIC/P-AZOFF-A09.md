@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A09
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 9'
+title: Splitting an uncountable subset of $[0,1]$ into two uncountable halves
 classification:
   areas: [real-analysis]
   topics: []

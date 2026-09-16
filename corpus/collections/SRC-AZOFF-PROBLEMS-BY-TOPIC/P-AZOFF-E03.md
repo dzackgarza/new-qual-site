@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E03
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 3'
+title: The ring of analytic functions on a domain has no zero divisors
 classification:
   areas: [complex-analysis]
   topics: []

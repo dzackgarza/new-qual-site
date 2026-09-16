@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-D08
 kind: problem
-title: 'Azoff — Integrals and Cauchy’s theorem problem 8'
+title: Cauchy-type integrals are analytic off the curve
 classification:
   areas: [complex-analysis]
   topics: []

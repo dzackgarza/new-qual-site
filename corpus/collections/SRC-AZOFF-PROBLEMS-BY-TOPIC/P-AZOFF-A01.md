@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A01
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 1'
+title: Limit of the averaging recurrence $x_n=(x_{n-1}+x_{n-2})/2$
 classification:
   areas: [real-analysis]
   topics: []

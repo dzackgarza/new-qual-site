@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C04
 kind: problem
-title: 'Azoff — Conformal mapping problem 4'
+title: Conformal map of the right half-plane outside $|z-i|\le 1$ onto the upper half-plane
 classification:
   areas: [complex-analysis]
   topics: []

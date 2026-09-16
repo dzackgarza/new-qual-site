@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A04
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 4'
+title: Uniform convergence of $f\circ g_n$ for uniformly continuous $f$
 classification:
   areas: [real-analysis]
   topics: []

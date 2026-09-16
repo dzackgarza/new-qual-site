@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A03
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 3'
+title: A differentiable function with discontinuous derivative
 classification:
   areas: [real-analysis]
   topics: []

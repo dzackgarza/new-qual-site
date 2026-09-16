@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-I01
 kind: problem
-title: 'Azoff — Schwarz lemma and reflection principle problem 1'
+title: Analytic self-maps of the disk with unimodular boundary values are finite Blaschke products
 classification:
   areas: [complex-analysis]
   topics: []

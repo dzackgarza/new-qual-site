@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C01
 kind: problem
-title: 'Azoff — Conformal mapping problem 1'
+title: Conformal map of the unit disk onto the upper half-plane
 classification:
   areas: [complex-analysis]
   topics: []

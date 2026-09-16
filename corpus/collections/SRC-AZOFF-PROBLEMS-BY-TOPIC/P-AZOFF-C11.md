@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C11
 kind: problem
-title: 'Azoff — Conformal mapping problem 11'
+title: Conformal map of a slit lens onto the upper half-plane
 classification:
   areas: [complex-analysis]
   topics: []

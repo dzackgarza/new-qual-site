@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-C10
 kind: problem
-title: 'Azoff — Conformal mapping problem 10'
+title: Conformal map of $\mathbb C\setminus\{x\in\mathbb R:|x|\ge1\}$ onto the disk
 classification:
   areas: [complex-analysis]
   topics: []

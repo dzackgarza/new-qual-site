@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-F03
 kind: problem
-title: 'Azoff — Laurent expansions and singularities problem 3'
+title: Laurent expansions of $\frac{z+1}{z(z-1)^2}$
 classification:
   areas: [complex-analysis]
   topics: []

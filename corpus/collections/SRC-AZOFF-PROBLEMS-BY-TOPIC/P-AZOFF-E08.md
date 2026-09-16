@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-E08
 kind: problem
-title: 'Azoff — Liouville, FTA, and power series problem 8'
+title: Entire functions with $f(z)/z^n\to0$ are polynomials of degree less than $n$
 classification:
   areas: [complex-analysis]
   topics: []

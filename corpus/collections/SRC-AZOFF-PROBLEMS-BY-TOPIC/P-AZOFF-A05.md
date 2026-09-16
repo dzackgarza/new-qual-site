@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZOFF-A05
 kind: problem
-title: 'Azoff — Compactness, connectedness, and functions of one real variable problem 5'
+title: Uniform differentiability is equivalent to continuity of $f'$
 classification:
   areas: [real-analysis]
   topics: []
