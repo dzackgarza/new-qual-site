@@ -112,6 +112,6 @@ source:
     year: 2007
 ---
 
-::: remark
-Worked topology/preliminary-exam answers compiled by William Malone and Matt Housley in Summer 2007. The retained packet contains six numbered chapters: Math 6520 Final Exam 2007, January 2007, Math 6510 Final Exam, August 2006, January 2006, and January 2005. Chapter 5 additionally embeds a separate eight-problem August 2005 block. All 75 numbered source positions are represented. January 2006 Problem 9 and January 2005 Problems 3 and 8 are explicitly truncated by the retained extraction, while January 2005 Problems 9 and 10 contain no statement text; those gaps are recorded on their cards rather than reconstructed.
+::: {.remark}
+Worked answers to topology preliminary-exam problems, compiled by William Malone and Matt Housley in Summer 2007. The packet has six chapters: the Math 6520 final exam of 2007, January 2007, the Math 6510 final exam, August 2006, January 2006, and January 2005. Chapter 5 also contains a separate eight-problem block from August 2005.
 :::
