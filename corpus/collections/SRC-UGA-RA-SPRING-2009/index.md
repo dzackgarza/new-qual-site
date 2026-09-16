@@ -26,7 +26,3 @@ source:
     term: spring
     year: 2009
 ---
-
-::: remark
-Exam #1 asks to evaluate $\lim_{k\to\infty}\int_0^1 kx^{k-1}f(x)\,dx$ for continuous $f$ on $[0,1]$, which is `P-OW5VL`.
-:::
