@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-CTGON
 kind: definition
-title: Open and Closed Maps
+title: Open and closed maps
 classification:
   areas:
   - topology
@@ -14,7 +14,6 @@ review: draft
 ---
 
 ::: {.definition ref="def:open_closed_maps"}
-A map $f:X\to Y$ is an **open map** (respectively a **closed map**) if and only if whenever $U \subseteq X$ is open (resp.
-closed), $f(U)$ is again open (resp.
-closed).
+Let $X$ and $Y$ be topological spaces and $f\colon X\to Y$ a function.
+Then $f$ is an \dfn{open map} if $f(U)$ is open in $Y$ for every open $U\subseteq X$, and $f$ is a \dfn{closed map} if $f(C)$ is closed in $Y$ for every closed $C\subseteq X$.
 :::
