@@ -20,19 +20,45 @@ If instead we assume $A \neq B , A ^ { 3 } = B ^ { 3 }$ and $A ^ { 2 } B = B ^ {
 :::
 
 ::: {.solution}
-For the first part, if A was invertible, we would have
-
+<1>1. If $AB-BA=A$, then $A$ is not invertible.
+::: {.proof}
+Suppose instead that $A$ were invertible. Right-multiplying the relation by $A^{-1}$ gives
 $$
-( A B - B A ) A ^ { - 1 } = A A ^ { - 1 } \quad \Longrightarrow \quad A B A ^ { - 1 } = B + I .
+ABA^{-1}-B=I,
 $$
-
-This would mean that B and $B + I$ are similar which is impossible since the $\operatorname { t r } ( B + I ) = n + \operatorname { t r } ( B )$ whereas similarity has to preserve the trace.
-
-For the second part, notice that
-
+so
 $$
-( A ^ { 2 } + B ^ { 2 } ) A = A ^ { 3 } + B ^ { 2 } A = B ^ { 3 } + A ^ { 2 } B = ( B ^ { 2 } + A ^ { 2 } ) B = ( A ^ { 2 } + B ^ { 2 } ) B .
+ABA^{-1}=B+I.
 $$
+Thus $B$ and $B+I$ would be similar. Similar matrices have the same trace, whereas
+$$
+\operatorname{tr}(B+I)
+=\operatorname{tr}(B)+n
+\ne\operatorname{tr}(B).
+$$
+This contradiction shows that $A$ is not invertible.
+:::
 
-If $A ^ { 2 } + B ^ { 2 }$ was invertible, then we would have $A = B$ , but we’ve assumed that $A \neq B$ , and thus $A ^ { 2 } + B ^ { 2 }$ must not be invertible.
+<1>2. If $A\ne B$, $A^3=B^3$, and $A^2B=B^2A$, then $A^2+B^2$ is not invertible.
+::: {.proof}
+Using the two hypotheses,
+$$
+\begin{aligned}
+(A^2+B^2)A
+&=A^3+B^2A\\
+&=B^3+A^2B\\
+&=(A^2+B^2)B.
+\end{aligned}
+$$
+Hence
+$$
+(A^2+B^2)(A-B)=0.
+$$
+If $A^2+B^2$ were invertible, multiplying by its inverse would give $A-B=0$, contrary to $A\ne B$. Therefore $A^2+B^2$ is not invertible.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>2 prove the two requested noninvertibility statements.
+:::
 :::
