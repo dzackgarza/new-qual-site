@@ -30,7 +30,3 @@ source:
   - P-WESTOP07-09
   - P-WESTOP07-10
 ---
-
-::: remark
-The retained compilation contains all ten June 13, 2007 top-level problems as text; no external diagram reconstruction is required for this sitting.
-:::
