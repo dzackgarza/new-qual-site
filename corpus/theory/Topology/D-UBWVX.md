@@ -14,5 +14,10 @@ review: draft
 ---
 
 ::: {.definition}
-An $n\dash$manifold is a Hausdorff space in which each neighborhood has an open neighborhood homeomorphic to $\RR^n$.
+Let $n\geq0$.
+An \dfn{$n$-manifold} is a [[D-6FMP3|Hausdorff space]] $M$ in which every point has an open neighborhood [[D-9KQZT|homeomorphic]] to $\RR^n$ [@Hat02, p. 231].
+:::
+
+::: {.remark}
+Many texts also require a manifold to be second countable, which excludes spaces such as the long line.
 :::
