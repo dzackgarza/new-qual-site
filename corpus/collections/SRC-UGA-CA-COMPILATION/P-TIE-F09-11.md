@@ -14,16 +14,20 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Fall 2009, question 11.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Repaired the OCR misreading of |z| = 1? as |z| = 12 and labelled the parts (a)-(c), matching the source reference to (a), against Fall 2009, question 11, page 3 of Questions_from_Tie.pdf (read from the page image).
 ---
 
 ::: {.problem}
-Let g be analytic for $| z | \le 1$ and $| g ( z ) | < 1 \ \mathrm { f o r } \ | z | = 1$
+Let $g$ be analytic for $\abs{z} \le 1$ and $\abs{g(z)} < 1$ for $\abs{z} = 1$.
 
-1. Show that g has a unique fixed point in $| z | < 1$
+(a) Show that $g$ has a unique fixed point in $\abs{z} < 1$.
 
-2. What happens if we replace $| g ( z ) | < 1$ with $| g ( z ) | \leq 1$ for $| z | = 1 2$ Give an example if (a) is not true or give an proof if (a) is still true.
+(b) What happens if we replace $\abs{g(z)} < 1$ with $\abs{g(z)} \le 1$ for $\abs{z} = 1$? Give an example if (a) is not true or give an proof if (a) is still true.
 
-3. What happens if we simply assume that f is analytic for $| z | < 1$ and $| f ( z ) | < 1$ for $| z | < 1 2$ Suppose that $f ( z ) \not \equiv z .$ . Can f have more than one fixed point in $| z | < 1 2$
+(c) What happens if we simply assume that $f$ is analytic for $\abs{z} < 1$ and $\abs{f(z)} < 1$ for $\abs{z} < 1$? Suppose that $f(z) \not\equiv z$. Can $f$ have more than one fixed point in $\abs{z} < 1$?
 
-Hint: The map $\psi _ { \alpha } ( z ) = { \frac { \alpha - z } { 1 - \bar { \alpha } z } }$ may be useful.
+Hint: The map $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha} z}$ may be useful.
 :::

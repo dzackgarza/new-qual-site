@@ -81,13 +81,19 @@ source:
       comment: Question 19
     - id: P-TIE-F11-20
       comment: Question 20
+    - id: P-TIE-F09-19
+      comment: Question 20, parts (1) and (2)
   - name: Spring 2014
     problems:
     - id: P-TIE-S14-01
-      comment: Question 1
+      comment: Question 1, part 1
     - id: P-TIE-S14-02
-      comment: Question 2
+      comment: Question 1, part 2
     - id: P-TIE-S14-03
+      comment: Question 1, part 3
+    - id: P-TIE-F09-01
+      comment: Question 2
+    - id: P-TIE-F11-02
       comment: Question 3
     - P-TIE-F09-04
     - P-TH3WN

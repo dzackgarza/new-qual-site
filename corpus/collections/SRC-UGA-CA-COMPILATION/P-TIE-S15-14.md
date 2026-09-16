@@ -14,20 +14,32 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 14.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Rebuilt the integral list, whose labels restart at (i) across the page break, with consecutive labels against Spring 2015, question 14, pages 12-13 of Questions_from_Tie.pdf (read from the page image).
 ---
 
 ::: {.problem}
 Compute the following integrals.
 
-$$
-( \mathrm { i } ) \int _ { 0 } ^ { \infty } \frac { \sin { x } } { x } d x \ \mathrm { ( i i ) } \int _ { 0 } ^ { \infty } ( \frac { \sin { x } } { x } ) ^ { 2 } d x \ \mathrm { ( i i i ) } \int _ { 0 } ^ { \infty } \frac { x ^ { a - 1 } } { ( 1 + x ) ^ { 2 } } d x , 0 < a < 2
-$$
+(i) $\displaystyle\int_0^\infty \frac{\sin x}{x}\,dx$
 
-$$
-\int _ { 0 } ^ { \infty } \frac { \cos a x - \cos b x } { x ^ { 2 } } d x , a , b > 0 \mathrm { ( i i ) } \int _ { 0 } ^ { \infty } \frac { x ^ { a - 1 } } { 1 + x ^ { n } } d x , 0 < a < n
-$$
+(ii) $\displaystyle\int_0^\infty \left(\frac{\sin x}{x}\right)^2 dx$
 
-$$
-( \mathrm { i i i } ) \int _ { 0 } ^ { \infty } { \frac { \log { x } } { 1 + x ^ { n } } } d x , n \geq 2 \ ( \mathrm { i v } ) \int _ { 0 } ^ { \infty } { \frac { \log { x } } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x \ ( \mathrm { v } ) \int _ { 0 } ^ { \pi } \log \left| 1 - a \sin \theta \right| d \theta , a \in \mathbb { C }
-$$
+(iii) $\displaystyle\int_0^\infty \frac{x^{a-1}}{(1+x)^2}\,dx$, $0 < a < 2$
+
+(iv) $\displaystyle\int_0^\infty \frac{\cos ax - \cos bx}{x^2}\,dx$, $a, b > 0$
+
+(v) $\displaystyle\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx$, $0 < a < n$
+
+(vi) $\displaystyle\int_0^\infty \frac{\log x}{1+x^n}\,dx$, $n \ge 2$
+
+(vii) $\displaystyle\int_0^\infty \frac{\log x}{(1+x^2)^2}\,dx$
+
+(viii) $\displaystyle\int_0^\pi \log\abs{1 - a\sin\theta}\,d\theta$, $a \in \mathbb{C}$
+:::
+
+::: {.remark}
+The source labels the first three integrals (i)–(iii) and then, at the top of the next page, restarts the labels at (i) for the remaining five, (i)–(v); here they are numbered consecutively (i)–(viii).
 :::

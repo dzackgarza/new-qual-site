@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-30
 kind: problem
-title: Integrals of $|\psi_\alpha'|$ over the disk and the Joukowski map on the half-disk
+title: Integrals of $|\psi_\alpha'|^2$ and $|\psi_\alpha'|$ over the disk for a Blaschke factor
 classification:
   areas:
   - complex-analysis
@@ -14,18 +14,21 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 30.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Split off the conformal-map problem that the source prints under Spring 2015, question 30, page 14 of Questions_from_Tie.pdf, which is question 25 of the list, leaving the psi_alpha integrals with labelled parts and a remark.
 ---
 
 ::: {.problem}
-Let $\psi _ { \alpha } ( z ) = { \frac { \alpha - z } { 1 - \bar { \alpha } z } }$ with $| \alpha | < 1$ and ${ \mathbb D } = \{ z : ~ | z | < 1 \}$ . Prove that
+Let $\psi_\alpha(z) = \frac{\alpha - z}{1 - \bar{\alpha}z}$ with $\abs{\alpha} < 1$ and $\mathbb{D} = \{z : \abs{z} < 1\}$. Prove that
 
-$$
-\bullet \ \frac { 1 } { \pi } \iint _ { \mathbb { D } } | \psi _ { \alpha } ^ { \prime } | ^ { 2 } d x d y = 1 .
-$$
+(a) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}^2\,dx\,dy = 1$.
 
-$$
-\bullet \ \frac { 1 } { \pi } \iint _ { \mathbb { D } } | \psi _ { \alpha } ^ { \prime } | d x d y = \frac { 1 - | \alpha | ^ { 2 } } { | \alpha | ^ { 2 } } \log \frac { 1 } { 1 - | \alpha | ^ { 2 } } .
-$$
+(b) $\displaystyle\frac{1}{\pi}\iint_{\mathbb{D}} \abs{\psi_\alpha'}\,dx\,dy = \frac{1 - \abs{\alpha}^2}{\abs{\alpha}^2}\log\frac{1}{1 - \abs{\alpha}^2}$.
+:::
 
-Prove that $f ( z ) = - \frac { 1 } { 2 } \left( z + \frac { 1 } { z } \right)$ is a conformal map from half disc $\left\{ z = x + i y : \ | z | < 1 , \ y > 0 \right\}$ to upper half plane $\mathbb { H } \overset { \cdot } { = } \left\{ z = \overset { \cdot } { x } + i y : \ y > 0 \right\}$
+::: {.remark}
+Under this number the source also prints "Prove that $f(z) = -\frac{1}{2}\left(z + \frac{1}{z}\right)$ is a conformal map from half disc $\{z = x + iy : \abs{z} < 1,\ y > 0\}$ to upper half plane $\mathbb{H} = \{z = x + iy : y > 0\}$", which is question 25 of the same list.
+It is a separate problem, carried by its own card.
 :::

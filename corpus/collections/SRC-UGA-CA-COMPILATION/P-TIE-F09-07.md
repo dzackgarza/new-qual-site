@@ -14,18 +14,29 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Fall 2009, question 7.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Cleaned the LaTeX and labelled the parts against Fall 2009, question 7, page 2 of Questions_from_Tie.pdf, and quoted the formula of question 6 that the statement cites as the previous question.
 ---
 
 ::: {.problem}
-For $s > 0$ , the gamma function is defined by $\Gamma ( s ) = \int _ { 0 } ^ { \infty } e ^ { - t } t ^ { s - 1 } d t .$
+For $s > 0$, the **gamma function** is defined by $\Gamma(s) = \int_0^\infty e^{-t} t^{s-1}\,dt$.
 
-1. Show that the gamma function is analytic in the half-plane $\Re ( s ) > 0$ , and is still given there by the integral formula above.
+(a) Show that the gamma function is analytic in the half-plane $\operatorname{Re}(s) > 0$, and is still given there by the integral formula above.
 
-2. Apply the formula in the previous question to show that
-
+(b) Apply the formula in the previous question to show that
 $$
-\Gamma ( s ) \Gamma ( 1 - s ) = \frac { \pi } { \sin \pi s } .
+\Gamma(s)\Gamma(1-s) = \frac{\pi}{\sin \pi s}.
 $$
 
-Hint: You may need $\Gamma ( 1 - s ) = t \int _ { 0 } ^ { \infty } e ^ { - v t } ( v t ) ^ { - s } d v \mathrm { f o r } t > 0 .$
+Hint: You may need $\Gamma(1-s) = t\int_0^\infty e^{-vt}(vt)^{-s}\,dv$ for $t > 0$.
+:::
+
+::: {.remark}
+"The formula in the previous question" refers to the question printed immediately before this one in the source (question 6):
+$$
+\int_0^\infty \frac{x^{a-1}}{1+x^n}\,dx = \frac{\pi}{n\sin\frac{a\pi}{n}}, \qquad 0 < a < n,\ n \text{ a positive integer}.
+$$
+With $n = 1$ and $a = 1 - s$ for $0 < s < 1$ it reads $\int_0^\infty \frac{v^{-s}}{1+v}\,dv = \frac{\pi}{\sin \pi s}$, which the hint turns into the reflection formula.
 :::

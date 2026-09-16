@@ -14,20 +14,20 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Fall 2009, question 2.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Cleaned the garbled set-builder LaTeX against Fall 2009, question 2, page 1 of Questions_from_Tie.pdf, whose text layer reads 1 <= theta <= 2 pi, so the bound is kept as printed.
 ---
 
 ::: {.problem}
-Let f be a continuous function in the region
-
+Let $f$ be a continuous function in the region
 $$
-D = \{ z \left| \ | z | > R , 0 \leq \arg z \leq \theta \right. \} \quad \mathrm { w h e r e } \quad 1 \leq \theta \leq 2 \pi .
+D = \{z \mid \abs{z} > R,\ 0 \le \arg z \le \theta\} \quad \text{where} \quad 1 \le \theta \le 2\pi.
 $$
-
-If there exists k such that $\operatorname* { l i m } _ { z \to \infty } z f ( z ) = k$ for z in the region D. Show that
-
+If there exists $k$ such that $\lim_{z\to\infty} zf(z) = k$ for $z$ in the region $D$. Show that
 $$
-\operatorname* { l i m } _ { R ^ { \prime } \longrightarrow \infty } \int _ { L } f ( z ) d z = i \theta k ,
+\lim_{R'\to\infty} \int_L f(z)\,dz = i\theta k,
 $$
-
-where $L$ is the part of the circle $| z | = R ^ { \prime }$ which lies in the region $D .$
+where $L$ is the part of the circle $\abs{z} = R'$ which lies in the region $D$.
 :::

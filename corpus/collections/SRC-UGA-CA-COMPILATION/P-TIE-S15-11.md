@@ -14,16 +14,20 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against the retained Questions_from_Tie.pdf compilation, section Spring 2015, question 11.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Repaired the garbled norm notation and the stray subscript on r, and moved the Stein note to a remark, against Spring 2015, question 11, page 12 of Questions_from_Tie.pdf (read from the page image).
 ---
 
 ::: {.problem}
-Let f be holomorphic in a neighborhood of $D _ { r } ( z _ { 0 } )$ . Show that for any $s < r _ { : }$ , there exists a constant $c > 0$ such that
-
+Let $f$ be holomorphic in a neighborhood of $D_r(z_0)$. Show that for any $s < r$, there exists a constant $c > 0$ such that
 $$
-\| f \| _ { ( \infty , s ) } \leq c \| f \| _ { ( 1 , r ) } ,
+\norm{f}_{(\infty,s)} \le c\norm{f}_{(1,r)},
 $$
+where $\norm{f}_{(\infty,s)} = \sup_{z\in D_s(z_0)} \abs{f(z)}$ and $\norm{f}_{(1,r)} = \int_{D_r(z_0)} \abs{f(z)}\,dx\,dy$.
+:::
 
-where $| f | | _ { ( \infty , s ) } = \operatorname* { s u p } _ { z \in D _ { s } ( z _ { 0 } ) } | f ( z ) | \mathrm { ~ a n d ~ } | | f | | _ { ( 1 , r ) } = \int _ { D _ { r } ( z _ { 0 } ) } | f ( z ) | d x d y .$
-
-Note: Exercise 3.8.20 on p.107 in Stein et al is a straightforward consequence of this stronger result using the integral form of the Cauchy-Schwarz inequality in real analysis.
+::: {.remark}
+The source adds "Note: Exercise 3.8.20 on p.107 in Stein et al is a straightforward consequence of this stronger result using the integral form of the Cauchy-Schwarz inequality in real analysis.", a pointer to Stein and Shakarchi, *Complex Analysis*; the statement does not depend on it.
 :::
