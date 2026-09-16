@@ -30,7 +30,8 @@ Let p be a prime, and let G be the group $\mathbb { Z } / p ^ { 2 } \mathbb { Z 
 
 ::: {.solution}
 Let
-\[\ne_1=(1,0),\qquad e_2=(0,1),
+\[
+e_1=(1,0),\qquad e_2=(0,1),
 \]
 so $e_1$ has order $p^2$ and $e_2$ has order $p$.
 An endomorphism is determined by

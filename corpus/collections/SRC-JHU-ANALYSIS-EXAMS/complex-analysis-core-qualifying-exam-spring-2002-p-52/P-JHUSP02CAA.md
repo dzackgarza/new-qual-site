@@ -20,12 +20,12 @@ audit:
 1. Let f be an entire function such that the image of f does not intersect $\{ z \in \mathbb { R } : z \geq 5 \}$ . Prove that $f$ is a constant.
 
 ::: {.solution}
-<1>1. $f(\C)$ omits $[5,\infty)$, so $\sqrt{5-f}$ entire omitting upper half-plane? Compose to bounded.
+<1>1. $f(\CC)$ omits $[5,\infty)$, so $\sqrt{5-f}$ entire omitting upper half-plane? Compose to bounded.
 ::: {.proof}
 $5-f$ omits $(-\infty,0]$, so $h=\sqrt{5-f}$ entire and $\operatorname{Re}h>0$? Actually $5-f$ omits $[0,\infty)$? Wait $f$ omits $[5,\infty)$, so $5-f$ omits $(-\infty,0]$.
 :::
 
-<1>2. $g=\sqrt{5-f}$ maps $\C$ into right half-plane, then $\phi=(g-1)/(g+1)$ bounded by $1$.
+<1>2. $g=\sqrt{5-f}$ maps $\CC$ into right half-plane, then $\phi=(g-1)/(g+1)$ bounded by $1$.
 ::: {.proof}
 Cayley.
 :::
