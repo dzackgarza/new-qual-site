@@ -29,6 +29,6 @@ source:
     year: 2016
 ---
 
-::: remark
-Exam #6 is the same statement as Spring 2020 #5, both listed as [[P-DURCM]].
+::: {.remark}
+Problem 6 is the same problem as Spring 2020 Problem 5.
 :::
