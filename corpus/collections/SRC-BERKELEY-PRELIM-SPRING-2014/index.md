@@ -41,6 +41,6 @@ source:
     year: 2014
 ---
 
-::: remark
-UC Berkeley Graduate Preliminary Examination, Spring 2014. Problems are listed in paper order, Part A followed by Part B. The retained exam and solution packet are both provenance for this source.
+::: {.remark}
+The paper has Parts A and B; a solution packet accompanies it.
 :::
