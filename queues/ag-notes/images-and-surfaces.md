@@ -27,7 +27,7 @@ These rows concern the mathematics read in the images, not the presence of an im
 
 | Source image | Status | Target and remaining work |
 | --- | --- | --- |
-| `2022-01-09_12-23-25.png` | partial | `T-YYLPH` retains Hilbert's basis theorem and the polynomial-ideal consequence. `D-MORFIN` uses finitely generated modules but does not give the source's explicit definition for an arbitrary module by a finite generating list. Preserve that definition, rather than substituting the definition of a finite morphism. |
+| `2022-01-09_12-23-25.png` | migrated | Definition 1.5 (module of finite type by a finite generating list) is `D-DEFFGMOD`, whose example gives 1.6 (Hilbert basis theorem: every ideal of $\OO(\AA^n)$ is of finite type) with `T-YYLPH`; `D-MORFIN` now uses that definition for finite morphisms. |
 | `Pasted image 20220921202350.png` | migrated | `D-MODCONORM` retains the normal-determinant and divisor adjunction formulas, with $\omega_X$ restricted to $Z$ before tensoring over $\OO_Z$ with the normal determinant. |
 | `Pasted image 20220921204544.png` | migrated | `T-MWDVL` and `T-COHRRS` retain curve Riemann–Roch in h0-h1 form; `T-COHFIN` retains vanishing above the dimension. |
 | `Pasted image 20220315152915.png` | migrated | The four functors are stated on `D-SHFSIX` for sheaves of abelian groups, with extension by zero for open inclusions, $f_!$ as proper-support direct image, and $f^!$ as the right adjoint of $Rf_!$ on derived categories. |
@@ -37,20 +37,20 @@ These rows concern the mathematics read in the images, not the presence of an im
 | `Pasted image 20220921204126.png` | migrated | `T-SRFADJ` retains the plane-curve genus calculation by adjunction. |
 | `Pasted image 20220921204448.png` | migrated | `T-COHSD` states the perfect pairing and Euler-characteristic symmetry for smooth proper varieties over a field; its singular-case remark gives top-degree duality for every projective scheme and full Ext duality exactly for Cohen–Macaulay equidimensional ones. |
 | `2022-01-09_12-22-51.png` | migrated | `T-MORZMT` retains connected fibers and purity of the exceptional locus over a smooth target. |
-| `2022-01-09_12-23-55.png` | partial | `T-MORFIBDIM` preserves finite Noether normalization by linear projection. Make the infinite-field hypothesis explicit for this linear form. |
-| `2022-01-09_12-24-40.png` | partial | `T-MORFIBDIM` preserves the projective-center dimension calculation. `D-QJ5M9` repeats the source's tautological statement as the normalization universal property. Replace it with the actual factorization for dominant maps from normal varieties, with direction and hypotheses stated. |
-| `2022-01-09_12-28-49.png` | partial | `T-MORSTEIN` retains Stein factorization. Correct its extra claim equating a finite fiber's degree with its number of connected components; lengths and geometric points differ. |
-| `2022-01-09_12-58-27.png` | partial | `T-SRFZMT` retains the common-resolution diagram. State the characteristic-zero hypothesis for its general-dimensional Hironaka assertion. |
-| `2022-01-09_12-59-50.png` | partial | `T-SRFCAST` narrows the source contraction criterion from smooth algebraic surfaces to projective surfaces. Restore the intended scope and both directions. Its claim about infinitely many exceptional curves after blowing up arbitrary points also needs the source's general-position hypotheses; compare V.4.15. |
+| `2022-01-09_12-23-55.png` | migrated | `T-MORFIBDIM` states affine Noether normalization by a linear map over an infinite field, and its remark gives the irreducible cubic $xy(x+y)+1$ over $\FF_2$ on which no linear map is finite. |
+| `2022-01-09_12-24-40.png` | migrated | (a) `T-MORFIBDIM` gives projective Noether normalization by linear projection, now over an infinite field. (b) The source's lift of maps $X \to Y$ with $Y$ normal is replaced on `D-QJ5M9` by the universal property: every dominant morphism from a normal integral scheme to $X$ factors uniquely through $\nu \colon \widetilde{X} \to X$, with existence, the affine integral-closure construction, and finiteness and birationality for varieties. |
+| `2022-01-09_12-28-49.png` | migrated | `T-MORSTEIN` states Stein factorization; its remark now says the connected components of $X_y$ correspond to the points of $h^{-1}(y)$, whose number is at most the length of $h^{-1}(y)$, with $t \mapsto t^2$ showing the two differ. |
+| `2022-01-09_12-58-27.png` | migrated | `T-SRFZMT` states elimination of indeterminacy for a birational map of smooth projective varieties over an algebraically closed field of characteristic $0$, or in dimension $2$, with the diagram through $W$; the dangling reference to Theorem 15.4 is removed. |
+| `2022-01-09_12-59-50.png` | migrated | `T-SRFCAST` now states the source scope (smooth separated surface of finite type, proper integral curve $E$) and both directions of the contraction criterion, with the proof reducing the general case to the projective one; the infinitely many $(-1)$-curves claim now requires 9 points in general position in the sense of `P-AGH5415GENPOSITION`. |
 | `2022-01-09_13-01-09.png` | migrated | `T-SRFZMT` and `T-SRFCAST` retain factorization of surface birational morphisms and maps into point blowups and contractions. |
 | `2022-01-09_13-03-01.png` | migrated | `FE-SRFBLOW` retains resolution, preservation of the smooth locus, simple normal crossings, embedded resolution and smooth blowup centers. |
 | `2022-01-09_13-03-12.png` | migrated | `T-SRFKOD` retains the alternating normalization and point-blowup construction for surfaces. |
 | `2022-01-09_13-03-27.png` | migrated | `T-SRFKOD` retains the minimal resolution and its factorization property. |
 | `2022-01-09_13-06-25.png` | migrated | `T-MWDVL` retains the curve Riemann–Roch formulas. |
 | `2022-01-09_13-07-04.png` | migrated | `T-SRFADJ` retains divisor adjunction and the surface numerical formula. |
-| `2022-01-09_13-07-48.png` | partial | `D-CRVPLSING` gives the delta-invariant formula for plane curves; `FE-SRFBLOW` gives the genus drop under a blowup. Clarify that the source sum of m(m-1)/2 must include infinitely near singularities, unless the singularities are ordinary. |
+| `2022-01-09_13-07-48.png` | migrated | `D-CRVPLSING` now states the genus formula $g = \frac12(d-1)(d-2) - \frac12 \sum m_i(m_i-1)$ with the sum over all singular points including infinitely near ones, reducing to the singular points of $C$ when all are ordinary, and the tacnode example where the infinitely near node is needed. |
 | `2022-01-09_13-08-23.png` | migrated | `T-COHRRS` and `D-COHEULER` retain surface Riemann–Roch and the holomorphic Euler characteristic. |
-| `2022-01-09_13-20-16.png` | partial | `T-SRFKOD` retains the classification via the twelfth plurigenus. State the complex/characteristic-zero setting of this classification rather than extending it without hypotheses. |
+| `2022-01-09_13-20-16.png` | migrated | `T-SRFKOD` states the Castelnuovo–Enriques classification with $|12K_X|$ for minimal surfaces over $\CC$; its remark records the characteristic-$p$ changes (quasi-hyperelliptic surfaces, quasi-elliptic fibrations, non-classical Enriques surfaces). |
 
 ## Syllabi and reference attachments
 

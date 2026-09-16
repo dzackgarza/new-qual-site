@@ -21,13 +21,24 @@ prompts:
 ---
 
 ::: {.theorem title="Noether normalization (affine)"}
-Let $X \subseteq \AA^{n}$ be an affine variety of dimension $d$.
+Let $k$ be an infinite field and $X \subseteq \AA^{n}_k$ an affine variety of dimension $d$.
 Then there exists a finite morphism $X \to \AA^{d}$ which is the restriction to $X$ of a linear map $\AA^{n} \to \AA^{d}$.
 :::
 
 ::: {.theorem title="Noether normalization (projective)"}
-Let $X \subseteq \PP^{n}$ be a projective variety of dimension $d$.
+Let $k$ be an infinite field and $X \subseteq \PP^{n}_k$ a projective variety of dimension $d$.
 Then there exists a finite morphism $X \to \PP^{d}$ which is the restriction to $X$ of a linear projection $\PP^{n} \dashrightarrow \PP^{d}$ with centre a linear subspace $\PP^{k} \subseteq \PP^{n}$ disjoint from $X$, where $k + d = n - 1$.
+:::
+
+::: {.remark}
+The linear forms are chosen from a nonempty Zariski open subset of a space of linear maps, which has $k$-points because $k$ is infinite.
+Over a finite field the linear statement fails.
+Over $\FF_2$, let $X = V(f) \subseteq \AA^2_{\FF_2}$ with $f = xy(x+y) + 1$; $f$ has no linear factor over $\FF_2$, as substituting each of the lines $x = c$, $y = c$, $x + y = c$ with $c \in \FF_2$ shows, so the cubic $X$ is irreducible.
+The three nonzero linear forms are $x$, $y$ and $x + y$.
+For $\ell = x$, $f = x\,y^2 + x^2 y + 1$ as a polynomial in $y$ has leading coefficient $x$, which is not a unit of $\FF_2[x]$, so $\FF_2[x] \to \FF_2[x,y]/(f)$ is not finite.
+The case $\ell = y$ is symmetric, and for $\ell = u = x + y$, substituting $x = u + y$ gives $f = u\,y^2 + u^2 y + 1$, again with leading coefficient $u$.
+Hence no linear map $\AA^2 \to \AA^1$ restricts to a finite morphism on $X$.
+Noether normalization still holds over every field if nonlinear maps such as $(x_1 - x_n^{e_1}, \ldots, x_{n-1} - x_n^{e_{n-1}})$ are allowed.
 :::
 
 ::: {.theorem title="Fibre dimension"}

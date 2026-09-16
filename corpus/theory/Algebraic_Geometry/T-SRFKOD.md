@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition}
-The **Kodaira dimension** of a smooth projective variety $X$ is
+The \dfn{Kodaira dimension} of a smooth projective variety $X$ is
 \[
 \kappa(X) = \operatorname{trdeg}_k \bigoplus_{n \geq 0} H^0(X, \OO_X(nK_X)) - 1 ,
 \]
@@ -42,7 +42,7 @@ There exists a unique minimal resolution $\varphi \colon X \to Y$ such that $X$ 
 :::
 
 ::: {.theorem title="Enriques classification"}
-A minimal smooth projective surface $X$ falls into exactly one of:
+A minimal smooth projective surface $X$ over $\CC$ falls into exactly one of:
 
 - $\kappa(X) = -\infty$ iff $|12K_X| = \varnothing$ iff $X$ is $\PP^2$ or a minimal ruled surface;
 
@@ -62,4 +62,9 @@ For curves the same invariant gives the trichotomy $g=0$, $g=1$, $g \geq 2$, and
 The $\kappa = 0$ row is the one to be able to separate, by $(p_g, q)$: K3 has $(1,0)$ with $K \sim 0$ and simply connected; Enriques has $(0,0)$ with $2K \sim 0$, and is a free quotient of a K3 by an involution; abelian has $(1,2)$; bielliptic has $(0,1)$ and is a quotient of a product of elliptic curves.
 
 Minimality is what makes the statement clean, and blowing up is exactly the operation that leaves $\kappa$ alone while changing $K^2$ — which is why the classification is stated for minimal models and read off as a birational statement.
+:::
+
+::: {.remark}
+Over an algebraically closed field of characteristic $p > 0$ the classification of Bombieri and Mumford has the same four values of $\kappa$, but the $\kappa = 0$ and $\kappa = 1$ classes change: in characteristic $2$ and $3$ there are quasi-hyperelliptic surfaces and quasi-elliptic fibrations, and in characteristic $2$ there are non-classical Enriques surfaces with $h^1(\OO_X) = 1$.
+So the list above is a theorem for complex surfaces, equivalently for surfaces over an algebraically closed field of characteristic $0$.
 :::

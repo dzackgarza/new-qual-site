@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="Finite"}
-$f : X \to Y$ is **finite** if $Y$ has an affine cover by $\Spec B_i$ with $f^{-1}(\Spec B_i) = \Spec A_i$ affine and $A_i$ a finitely generated $B_i$-**module**.
+$f : X \to Y$ is \dfn{finite} if $Y$ has an affine cover by $\Spec B_i$ with $f^{-1}(\Spec B_i) = \Spec A_i$ affine and $A_i$ a $B_i$-module of finite type ([[D-DEFFGMOD]]).
 :::
 
 ::: {.remark}

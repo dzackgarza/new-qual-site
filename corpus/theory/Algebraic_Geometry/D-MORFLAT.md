@@ -21,9 +21,9 @@ prompts:
 ---
 
 ::: {.definition title="Flat"}
-$f : X \to Y$ is **flat at** $x$ if $\OO_{X,x}$ is a flat module over $\OO_{Y,f(x)}$, and **flat** if it is flat at every point.
-More generally $\mcf \in \mods{\OO_X}$ is **flat over $Y$ at $x$** if $\mcf_x$ is a flat $\OO_{Y,f(x)}$-module, and $f$ is flat exactly when $\OO_X$ is.
-$f$ is **faithfully flat** if it is flat and surjective.
+$f : X \to Y$ is \dfn{flat at} $x$ if $\OO_{X,x}$ is a flat module over $\OO_{Y,f(x)}$, and \dfn{flat} if it is flat at every point.
+More generally $\mcf \in \mods{\OO_X}$ is \dfn{flat over $Y$ at $x$} if $\mcf_x$ is a flat $\OO_{Y,f(x)}$-module, and $f$ is flat exactly when $\OO_X$ is.
+$f$ is \dfn{faithfully flat} if it is flat and surjective.
 :::
 
 ::: {.remark}
@@ -34,4 +34,9 @@ Over a discrete valuation ring, and more generally over a Dedekind domain, flat 
 Over a regular local ring of higher dimension this fails, and the blowup is the standard witness.
 
 Faithful flatness is the descent hypothesis: a faithfully flat map reflects as well as preserves, so a module is zero exactly when its base change is, and this is what makes flat descent work.
+:::
+
+::: {.remark}
+A flat morphism $f \colon X \to T$ is regarded as the family of schemes $X_t = X \times_T \Spec \kappa(t)$ parametrized by the points $t \in T$ ([[D-MORFIB]]).
+For $f$ flat and projective over a connected Noetherian base, the Hilbert polynomials of the fibres are constant ([[T-COHFLATCHI]]).
 :::

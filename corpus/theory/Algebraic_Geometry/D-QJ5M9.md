@@ -18,11 +18,13 @@ prompts:
 - What is a normal domain?
 - How is normality related to regularity?
 - Why is normalization a resolution of singularities for curves?
+- What is a normal scheme?
+- What is the normalization of an integral scheme, and what universal property does it have?
 ---
 
 ::: {.definition title="Normal"}
-An integral domain is **normal** if it is integrally closed in its fraction field.
-A variety is **normal** if every local ring $\OO_{X,p}$ is a normal domain.
+An integral domain is \dfn{normal} if it is integrally closed in its fraction field.
+A scheme $X$ is \dfn{normal} if every local ring $\OO_{X,p}$, for $p \in X$, is a normal domain.
 :::
 
 ::: {.proposition}
@@ -30,10 +32,24 @@ A regular local ring is normal, and the converse fails in dimension $\geq 2$.
 In dimension $1$ the two agree: a Noetherian local domain of dimension $1$ is normal exactly when it is a discrete valuation ring, that is, regular.
 :::
 
-::: {.theorem title="Normalization"}
-Let $X \subseteq \PP^{n}$ be a projective variety.
-Then there exists a unique normal projective variety $X_{\mathrm{norm}}$ and a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$ such that any morphism $f \colon X \to Y$ with $Y$ normal factors uniquely as $f \circ \nu = \bar{f}$ for a morphism $\bar{f} \colon X_{\mathrm{norm}} \to Y$.
-The same holds for affine varieties with $X \to \AA^{d}$ replaced by the affine normalization.
+::: {.definition title="Normalization"}
+Let $X$ be an integral scheme.
+A \dfn{normalization} of $X$ is a normal integral scheme $\widetilde{X}$ with a dominant morphism $\nu \colon \widetilde{X} \to X$ such that every dominant morphism $f \colon Y \to X$ from a normal integral scheme $Y$ factors uniquely as $f = \nu \circ \tilde{f}$ for a morphism $\tilde{f} \colon Y \to \widetilde{X}$.
+:::
+
+::: {.theorem title="Existence of the normalization"}
+Every integral scheme $X$ has a normalization, unique up to unique isomorphism.
+If $X = \Spec A$ is affine, $\widetilde{X} = \Spec \widetilde{A}$ for the integral closure $\widetilde{A}$ of $A$ in its fraction field, and in general $\widetilde{X}$ is obtained by gluing these over an affine cover.
+If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $\widetilde{X}$ is projective when $X$ is projective.
+:::
+
+::: {.proof}
+1. For $X = \Spec A$, a dominant morphism $\Spec B \to \Spec A$ from a normal integral affine scheme is an injective ring map $A \to B$, which extends to fraction fields $K(A) \to K(B)$; the image of an element of $\widetilde{A}$ is integral over the image of $A$, hence lies in the integrally closed domain $B$, so $A \to B$ extends uniquely to $\widetilde{A} \to B$.
+   For a general normal integral $Y$, apply this on an affine cover of $Y$ and glue by uniqueness.
+
+2. Integral closure commutes with localization, $\widetilde{A_f} = \widetilde{A}_f$, so the affine normalizations glue over an affine cover of $X$, and the universal property holds by step 1 applied locally on $X$.
+
+3. For $A$ a finitely generated $k$-domain, $\widetilde{A}$ is a finite $A$-module (finiteness of integral closure), so $\nu$ is finite; it is birational because $K(\widetilde{A}) = K(A)$.
 :::
 
 ::: {.remark}

@@ -50,6 +50,20 @@ p_a(C) - g(\tilde C) = \sum_{p \in \Sing C} \delta_p .
 For a plane curve of degree $d$ this reads $g = \binom{d-1}{2} - \sum_p \delta_p$.
 :::
 
+::: {.proposition title="The genus formula with multiplicities"}
+Let $C \subseteq \PP^2$ be an integral curve of degree $d$.
+Resolve its singularities by successively blowing up singular points of the strict transforms, and let $m_i$ run over the multiplicities of all singular points met in this process, including the infinitely near points on the strict transforms.
+Then
+$$g(\tilde{C}) = \frac{1}{2}(d-1)(d-2) - \frac{1}{2} \sum_i m_i(m_i - 1).$$
+If every singular point of $C$ is ordinary, no infinitely near singular points occur, and the sum runs over the singular points of $C$.
+:::
+
+::: {.example}
+The tacnode $y^2 = x^4$ has multiplicity $2$ at the origin and $\delta = 2$.
+One blowup, in the chart $y = x y_1$, gives the strict transform $y_1^2 = x^2$, which is a node at the origin: an infinitely near singular point of multiplicity $2$.
+The two points contribute $\frac{1}{2}(2 \cdot 1 + 2 \cdot 1) = 2 = \delta$, while the origin alone would give $1$.
+:::
+
 ::: {.remark title="What the normal forms are actually distinguishing"}
 Node and cusp both have $\delta_p = 1$ and are separated by the branch count, not by the genus drop: a nodal and a cuspidal plane cubic both have geometric genus $0$.
 The invariant that tells them apart is $r_p$, and it is what the normalisation sees — the node pulls back to two points and the cusp to one.
