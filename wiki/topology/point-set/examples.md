@@ -13,167 +13,145 @@ topics:
 
 # Examples
 
-## Point-Set
+## Point-set
 
 [[D-SN2OH]]
 
-:::{.example title="Some useful examples of openness and closedness"}
+::: {.example title="Open and closed subsets of $\RR$"}
+\envlist
 
-- $\QQ \subseteq \RR$ is neither open nor closed:
-  - No point is interior, since every neighborhood of $q\in \QQ$ intersects some $p\in \RR\sm\QQ$.
-    No point in the complement is interior for a similar reason.
-  - It has no isolated points, and every $r\in \RR$ is a boundary and accumulation point.
+- $\QQ \subseteq \RR$ is neither open nor closed.
+  Every neighborhood of a rational number contains an irrational number, and every neighborhood of an irrational number contains a rational number, so neither $\QQ$ nor $\RR\sm\QQ$ has an interior point.
+  $\QQ$ has no isolated points, and every $r\in \RR$ is a boundary point and an accumulation point of $\QQ$.
 - $\ZZ \subseteq \RR$ is closed and not open.
-  - Just write $\RR\sm\ZZ = \union_{n\in \ZZ} (n, n+1)$, a countable union of open sets.
-    There are no interior points: every neighborhood of $n\in \ZZ$ intersects $\RR\sm \ZZ$.
-  - Every point is a boundary and accumulation point.
-- Points are closed in $\RR$: $\RR \sm \ts{ p } = (-\infty, p) \union (p, \infty)$.
-  - An infinite intersection of open sets need not be open: $\intersect_{n\in \NN} (p-1/n, p+1/n) = \ts{ p }$ which is closed.
-- Intervals $(a, b)$ are open in $\RR^1$ but not in $\RR^d$ for $d\geq 2$.
-- $\ts{1/n}$ has only isolated boundary points, and no interior points.
-  The point $0$ is an accumulation point.
-- The Cantor set has no interior points and no isolated points.
-  Every point is a boundary point and an accumulation point.
+  Its complement $\RR\sm\ZZ = \bigcup_{n\in \ZZ} (n, n+1)$ is open, and every neighborhood of $n\in \ZZ$ meets $\RR\sm \ZZ$, so $\ZZ$ has no interior points.
+  Every point of $\ZZ$ is an isolated point and a boundary point, and $\ZZ$ has no accumulation points.
+- Points are closed in $\RR$, since $\RR \sm \ts{ p } = (-\infty, p) \union (p, \infty)$ is open.
+  An infinite intersection of open sets need not be open: $\bigcap_{n\geq 1} (p-1/n, p+1/n) = \ts{ p }$.
+- An interval $(a, b)$ is open in $\RR$, and $(a,b)\cross\ts{0}$ is not open in $\RR^d$ for $d\geq 2$.
+- $\ts{1/n \suchthat n\geq 1}$ has no interior points, each of its points is isolated, its boundary is $\ts{0}\union\ts{1/n \suchthat n\geq 1}$, and its only accumulation point is $0$.
+- The Cantor set has no interior points and no isolated points; every point of it is a boundary point and an accumulation point.
 
 :::
 
-### Common Spaces and Operations
+### Common spaces and operations
 
-:::{.example title="Nice spaces"}
-The following are some standard "nice" spaces:
-\[
-S^n, \DD^n, T^n, \RP^n, \CP^n, \mathbb{M}, \mathbb{K}, \Sigma_{g}, \RP^\infty, \CP^\infty
-.\]
+::: {.example title="Standard spaces"}
+$$
+S^n,\ \DD^n,\ T^n,\ \RP^n,\ \CP^n,\ \mathbb{M},\ \mathbb{K},\ \Sigma_{g},\ \RP^\infty,\ \CP^\infty,
+$$
+where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma_g$ the closed orientable surface of genus $g$.
 
 :::
 
-:::{.example title="A bank of counterexamples"}
-The following are useful spaces to keep in mind to furnish counterexamples:
+::: {.example title="Spaces that serve as counterexamples"}
+\envlist
 
-- Finite discrete sets with the discrete topology.
-- Subspaces of $\RR$: $(a, b), (a, b], (a, \infty)$, etc.
-  - Sets given by real sequences, such as $\ts{0} \union \ts{{1 \over n}\suchthat n\in \ZZ^{\geq 1}}$
-- $\QQ$
-- The topologist's sine curve
-- One-point compactifications
-- $\RR^\omega$ for \( \omega \) the least uncountable ordinal (?)
-- The Hawaiian earring
-- The Cantor set
-
-Examples of some more exotic spaces that show up less frequently:
-
-- $\HP^n$, quaternionic projective space
-- The Dunce Cap
-- The Alexander Horned sphere
+- Finite sets with the discrete topology.
+- Subspaces of $\RR$ such as $(a, b)$, $(a, b]$, $(a, \infty)$, and $\ts{0} \union \ts{1/n\suchthat n\geq 1}$.
+- $\QQ$.
+- The topologist's sine curve.
+- One-point compactifications.
+- $\RR^\omega$, the countable product of copies of $\RR$, with the product, box, and uniform topologies.
+- The Hawaiian earring.
+- The Cantor set.
+- Quaternionic projective space $\HP^n$.
+- The dunce cap.
+- The Alexander horned sphere.
 
 :::
 
 [[FE-BGEZL]] [[FE-U5AQQ]]
 
-:::{.example title="Non-Hausdorff spaces"}
-The following spaces are non-Hausdorff:
+::: {.example title="Non-Hausdorff spaces"}
+\envlist
 
-- The cofinite topology on any infinite set.
-- $\RR/\QQ$
+- An infinite set with the cofinite topology.
+- The quotient group $\RR/\QQ$ with the quotient topology, which is indiscrete.
 - The line with two origins.
-- Any variety $V(J) \subseteq \AA^n_{/k}$ for $k$ a field and $J\normal \kx{n}$.
+- An algebraic set $V(J) \subseteq \AA^n_{k}$ with infinitely many points, for $k$ a field and $J\normal \kx{n}$, with the Zariski topology.
 
 :::
 
-:::{.example title="Constructed spaces"}
-The following are some examples of ways to construct specific spaces for examples or counterexamples:
+::: {.example title="Constructions of spaces"}
+\envlist
 
 - Knot complements in $S^3$
-- Covering spaces (hyperbolic geometry)
+- Covering spaces
 - Lens spaces
 - Matrix groups
-- Prism spaces
-- Pair of pants
+- Prism manifolds
+- The pair of pants
 - Seifert surfaces
-- Surgery
+- Surgery on manifolds
+- Simplicial complexes, such as the following:
 
-- Simplicial Complexes
-  - Nice minimal example:
-  
-![](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png) 
+![A small simplicial complex](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png)
 
 :::
 
-:::{.fact title="Operations"}
-Some common operations that combine spaces:\
+::: {.example title="Operations on spaces"}
+\envlist
 
 - Cartesian product $A\cross B$
-- Wedge product $A \vee B$
-- Connect Sum $A \# B$
-- Quotienting $A/B$
-- Puncturing $A\setminus \theset{a_{i}}$
-- Smash product
-- Join
-- Cones
-- Suspension
-- Loop space
--  Identifying a finite number of points
+- Wedge sum $A \vee B$
+- Connected sum $A \# B$
+- Quotient $A/B$ by a subspace
+- Puncturing, $A\sm \theset{a_{1},\ldots,a_k}$
+- Smash product $A\wedge B$
+- Join $A\ast B$
+- Cone $CA$
+- Suspension $\Sigma A$
+- Loop space $\Omega A$
+- Identifying finitely many points
 
 :::
 
-### Alternative Topologies
+### Alternative topologies
 
-:::{.example title="Nonstandard topologies"}
-The following are some nice examples of topologies to put on familiar spaces to produce counterexamples:
-
-- Discrete
-- Cofinite
-- Discrete and Indiscrete
-- Uniform
+::: {.example title="Topologies used for counterexamples"}
+The discrete, indiscrete, cofinite, and uniform topologies.
 
 :::
 
-:::{.example title="The cofinite topology"}
-The cofinite topology on any space $X$ is always
-
-- Non-Hausdorff
-- Compact
+::: {.example title="The cofinite topology"}
+Let $X$ be a set with the cofinite topology.
+Then $X$ is compact, and if $X$ is infinite, then $X$ is not Hausdorff, since any two nonempty open sets have finite complements and therefore intersect.
 
 :::
 
 [[PR-NJTN5]]
 
-:::{.proof}
-If $\ts x_i$ is open for each $x_i \in X$, then 
-
-- Any set $U$ can be written as $U = \union_{i\in I} x_I$ (for some $I$ depending on $U$), and 
-- Unions of open sets are open.
-
-Thus $U$ is open.
+::: {.proof}
+If the topology is discrete, every singleton is open.
+Conversely, if $\ts x$ is open for each $x \in X$, then every $U\subseteq X$ is the union $\bigcup_{x\in U}\ts x$ of open sets, so $U$ is open.
 
 :::
 
-:::{.example title="The discrete topology"}
-Some facts about the discrete topology:
+::: {.example title="The discrete topology"}
+In the discrete topology on $X$, every subset is open.
 
-- Definition: every subset is open.
-- Always Hausdorff
-- Compact iff finite
-- Totally disconnected
-- If $X$ is discrete, every map $f:X\to Y$ for any $Y$ is continuous: for any open $V \subseteq Y$, the preimage $f^{-1}(V)$ is a subset of $X$, and every subset of a discrete space is open, so $f^{-1}(V)$ is open.
+- $X$ is Hausdorff.
+- $X$ is compact if and only if $X$ is finite.
+- $X$ is totally disconnected.
+- Every map $f\colon X\to Y$ to a space $Y$ is continuous, since every preimage $f^{-1}(V)$ is a subset of $X$ and hence open.
 
 :::
 
-:::{.example title="The indiscrete topology"}
-Some facts about the indiscrete topology:
+::: {.example title="The indiscrete topology"}
+In the indiscrete topology on $X$, the only open sets are $\emptyset$ and $X$.
 
-- Definition: the only open sets are $\emptyset, X$
-- Never Hausdorff
-- If $Y$ is indiscrete, every map $f:X\to Y$ is continuous: the only open sets in $Y$ are $\emptyset$ and $Y$, whose preimages are $\emptyset$ and $X$, both open in $X$.
-- Always compact
+- If $X$ has at least two points, then $X$ is not Hausdorff.
+- Every map $f\colon Y\to X$ from a space $Y$ is continuous, since the preimages of $\emptyset$ and $X$ are $\emptyset$ and $Y$.
+- $X$ is compact.
 
 :::
 
 ### Connectedness
 
-| Space                  | Connected    | Locally Connected |
+| Space                  | Connected    | Locally connected |
 | ------                 | ---------    | ----------------- |
 | $\RR$                  | $\checkmark$ | $\checkmark$      |
 | $[0, 1] \union [2, 3]$ |              | $\checkmark$      |
-| Sine Curve             | $\checkmark$ |                   |
+| Topologist's sine curve | $\checkmark$ |                   |
 | $\QQ$                  |              |                   |
