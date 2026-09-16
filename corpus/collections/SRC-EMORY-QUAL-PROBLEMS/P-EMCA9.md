@@ -17,6 +17,10 @@ audit:
   by: claude-opus-5
   date: 2026-09-16
   note: "Compared with Complex Analysis (9) of Arango-Piñeros, Some quals problems; merged the duplicate E-N6PDJ, whose solution repeats this Liouville argument."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "JHU Spring 2015 poses the same problem; merged its duplicate card P-8XT37, whose solution is the same Liouville argument, and that sitting now lists this card."
 ---
 
 ::: problem
