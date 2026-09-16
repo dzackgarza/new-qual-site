@@ -9,14 +9,12 @@ topics:
 
 # Quotients, products, and automorphisms
 
-Quotients remove a normal subgroup; products rebuild a group from smaller pieces.
-The isomorphism theorems say precisely when these operations undo one another, and the direct/semidirect product criteria turn that formalism into a classification method.
-
 ## The isomorphism theorems
 
-For a homomorphism $\varphi:G\to H$, the first theorem replaces $G$ by $G/\ker\varphi$ without changing its image.
-The remaining theorems control a subgroup against a normal subgroup, nested normal subgroups, and the subgroup lattice of a quotient.
-On an exam they are usually used backwards: recognize a quotient already present in the problem and choose the theorem that identifies it with something easier.
+For a homomorphism $\varphi\colon G\to H$, the first isomorphism theorem gives $G/\ker\varphi\cong\im\varphi$.
+The second theorem compares a subgroup $H\le G$ with a normal subgroup $N\normal G$: $HN/N\cong H/(H\intersect N)$.
+The third theorem compares nested normal subgroups $K\le N$ of $G$: $(G/K)/(N/K)\cong G/N$.
+The correspondence theorem identifies the subgroups of $G/N$ with the subgroups of $G$ containing $N$.
 
 [[T-I5N43]]
 
@@ -28,9 +26,9 @@ On an exam they are usually used backwards: recognize a quotient already present
 
 ## Products
 
-An internal direct product requires commuting normal factors with trivial intersection whose product is all of $G$.
-Dropping normality for one factor gives an internal semidirect product and records the missing commutativity as an action on the normal factor.
-This is why Sylow theory feeds directly into product decompositions: once a Sylow subgroup is forced to be normal, the remaining work is to determine a complement and its action.
+A group $G$ is the internal direct product of subgroups $H$ and $K$ if $H,K\normal G$, $H\intersect K=1$, and $HK=G$; then $hk=kh$ for all $h\in H$, $k\in K$, and $G\cong H\times K$.
+If only $N\normal G$ is normal, $H\le G$, $N\intersect H=1$, and $NH=G$, then conjugation defines a homomorphism $\psi\colon H\to\Aut(N)$, $\psi(h)(n)=hnh\inv$, and $G\cong N\semidirect_\psi H$.
+In particular, when a Sylow subgroup $N$ of $G$ is normal and has a complement $H$, the isomorphism type of $G$ is determined by $N$, $H$, and $\psi$.
 
 [[PR-BEIVF]]
 
@@ -48,25 +46,22 @@ This is why Sylow theory feeds directly into product decompositions: once a Sylo
 
 [[T-SB6AV]]
 
-::: {.remark title="Recognizing a semidirect product"}
-$G \cong N \semidirect H$ exactly when $N \normal G$, $H \leq G$, $N\intersect H = 1$ and $NH = G$.
-When a Sylow argument produces a normal subgroup $N$, classification reduces to the possible complements and actions $H \to \Aut(N)$; this is the semidirect-product step in many small-order classifications.
-
-For cyclic kernels, $\Aut(\ZZ/n) \cong (\ZZ/n)^\times$, so the possible actions are homomorphisms into this unit group, modulo the relevant equivalences.
+::: {.remark title="Semidirect products with a given kernel and complement"}
+For groups $N$ and $H$, if $\varphi,\psi\colon H\to\Aut(N)$ satisfy $\psi=\varphi\circ\alpha$ for some $\alpha\in\Aut(H)$, then $N\semidirect_\varphi H\cong N\semidirect_\psi H$.
+For $N=\ZZ/n$, $\Aut(\ZZ/n)\cong(\ZZ/n)^\times$, so every semidirect product $\ZZ/n\semidirect_\psi H$ is given by a homomorphism $\psi\colon H\to(\ZZ/n)^\times$.
 :::
 
 ## Automorphism groups
 
-Automorphism counts enter twice: as a classification invariant in their own right, and as the target for the action $H\to\operatorname{Aut}(N)$ defining a semidirect product.
-For cyclic $N$, reduce immediately to $(\ZZ/n)^{\times}$.
+For cyclic $N\cong\ZZ/n$, $\Aut(N)\cong(\ZZ/n)^\times$, whose order is the number of integers in $\ts{1,\ldots,n}$ coprime to $n$, the value at $n$ of [[D-JX3YC|Euler's totient function]].
 
 [[PR-N6S6P]]
 
 ## Finitely generated abelian groups
 
-Finite abelian groups are the case where the product decomposition is canonical enough to classify completely.
-The invariant-factor and elementary-divisor forms encode the same module decomposition in different groupings; converting between them is a matter of regrouping prime powers.
-Use whichever form makes the requested invariant—order, exponent, or quotient structure—visible fastest.
+A finite abelian group has an [[D-SS34F|invariant factor decomposition]] $\ZZ/d_1\times\cdots\times\ZZ/d_k$ with $d_1\divides d_2\divides\cdots\divides d_k$, and an [[D-JQNJQ|elementary divisor decomposition]] as a product of cyclic groups of prime-power order; each is unique up to the order of the factors.
+The elementary divisors are the prime-power factors of the $d_i$, and $d_k$ is the product, over the primes $p$, of the largest elementary divisor that is a power of $p$.
+The order of the group is $d_1\cdots d_k$ and its exponent is $d_k$.
 
 [[D-SS34F]]
 

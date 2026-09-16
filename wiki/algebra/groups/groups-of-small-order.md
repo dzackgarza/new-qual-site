@@ -8,14 +8,11 @@ topics:
 
 # Groups of small order
 
-The table to check a counting argument against.
-The general classifications for orders $p$, $p^2$ and $pq$ give the shape of the answer; these are those results read off for the orders that actually appear.
-
 ## Groups of special orders
 
-Prime and prime-square orders are controlled before any case-by-case presentation is needed: groups of order \(p\) are cyclic, and groups of order \(p^2\) are abelian.
-For order \(pq\), the Sylow counts determine when the larger-prime Sylow subgroup is normal and hence when a semidirect-product description is available.
-The remaining lemmas in this block are the structural shortcuts used when the order has more prime factors: normal-subgroup arguments, solvability of \(p\)-groups, and Frattini-type reductions should be tried before enumerating presentations.
+Every group of prime order $p$ is cyclic, and every group of order $p^2$ is abelian, hence isomorphic to $\ZZ/p^2$ or $\ZZ/p\times\ZZ/p$.
+For primes $p<q$, a group of order $pq$ has a normal Sylow $q$-subgroup $Q\cong\ZZ/q$, and is isomorphic to $\ZZ/q\semidirect_\psi\ZZ/p$ for a homomorphism $\psi\colon\ZZ/p\to\Aut(\ZZ/q)\cong(\ZZ/q)^\times$; a nontrivial $\psi$ exists if and only if $p\divides q-1$.
+For orders with more prime factors, the lemmas in this section produce normal subgroups: [[L-6QBOJ|Frattini's argument]] factors $G$ as $N_G(P)\,N$ for a normal subgroup $N$ and a Sylow subgroup $P$ of $N$, every finite [[D-FIB7S|$p$-group]] is [[D-DFIDP|solvable]], and a group of order $pqr$ for distinct primes $p<q<r$ is solvable.
 
 [[PR-LFGHA]]
 
@@ -33,8 +30,8 @@ The remaining lemmas in this block are the structural shortcuts used when the or
 
 ## The small orders
 
-Read these entries as outputs of those arguments, not as independent facts to prove by memorization.
-For a concrete order, first classify the abelian possibilities from the finite-abelian structure theorem, then use Sylow counts and conjugation actions to restrict the nonabelian possibilities; only then compare with the recorded list.
+Each card lists the groups of one order up to isomorphism.
+The abelian groups of each order are given by the structure theorem for finite abelian groups ([[PR-2JG3F]]).
 
 [[FF-VAKLJ]]
 
@@ -50,7 +47,6 @@ For a concrete order, first classify the abelian possibilities from the finite-a
 
 [[FF-JKCAM]]
 
-::: {.remark title="How to use the table"}
-Work the counting argument first and check the answer against the list; the table is a check, not a substitute.
-Two orders are worth memorizing outright because they recur: order $8$ has five groups, of which $D_4$ and $Q_8$ are the nonabelian ones, and order $12$ has five, of which $A_4$, $D_6$ and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
+::: {.remark}
+There are five groups of order $8$ up to isomorphism, of which $D_4$ and $Q_8$ are nonabelian, and five groups of order $12$, of which $A_4$, $D_6$, and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
 :::

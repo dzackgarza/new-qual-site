@@ -8,15 +8,10 @@ topics:
 
 # Series and solvability
 
-Series turn global structure into successive quotients.
-Composition series ask that the factors be simple; central and derived series instead measure how far the group is from being nilpotent or solvable.
-On a qual, the point is rarely to write down a chain for its own sake: the factors or the point at which a canonical series terminates are the invariants used in the next step.
-
 ## Normal and composition series
 
-A composition series is a maximal refinement of a normal series with simple factors.
-Jordan--Hölder says that although the chain is not unique, the multiset of simple composition factors is.
-This is the group-theoretic analogue of factoring an object into irreducible pieces.
+A [[D-FYX4I|composition series]] of $G$ is a chain $1=G_0\normal G_1\normal\cdots\normal G_n=G$ whose factors $G_{i+1}/G_i$ are [[D-T2NZ4|simple groups]].
+By the Jordan--Hölder theorem, any two composition series of a finite group have the same length and the same composition factors, counted with multiplicity and up to isomorphism.
 
 [[D-KM2DV]]
 
@@ -34,8 +29,9 @@ This is the group-theoretic analogue of factoring an object into irreducible pie
 
 ## Central and derived series
 
-The lower and upper central series detect nilpotence from opposite directions; the derived series repeatedly replaces a group by its commutator subgroup and detects solvability.
-These are canonical series, so unlike a composition series there is no choice once the group is fixed.
+The [[D-D7L4X|lower central series]] $\gamma_1(G)=G$, $\gamma_{i+1}(G)=[\gamma_i(G),G]$ and the [[D-XEDSI|upper central series]] $Z_0(G)=1$, $Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G))$ reach $1$ and $G$ respectively if and only if $G$ is [[D-53JVH|nilpotent]], and in that case they have the same length, the nilpotency class of $G$.
+The [[D-W2QAA|derived series]] $G^{(0)}=G$, $G^{(i+1)}=[G^{(i)},G^{(i)}]$ reaches $1$ if and only if $G$ is [[D-DFIDP|solvable]].
+Each of these series is determined by $G$.
 
 [[D-D7L4X]]
 
@@ -45,21 +41,18 @@ These are canonical series, so unlike a composition series there is no choice on
 
 [[D-W2QAA]]
 
-::: {.remark title="The chain of implications"}
-\[
-\text{cyclic} \implies \text{abelian} \implies \text{nilpotent} \implies \text{solvable}
-\]
-with none reversing.
-A finite group is nilpotent exactly when every Sylow subgroup is normal, equivalently when it is the direct product of its Sylow subgroups, so nilpotence is a Sylow statement and is checked by a Sylow count.
-
-Solvability is what the [[algebra/galois-theory/cyclotomic-and-radical-extensions|Galois theory]] side needs, and $S_n$ is solvable exactly for $n\leq 4$.
+::: {.remark title="Implications among the classes"}
+$$
+\text{cyclic} \implies \text{abelian} \implies \text{nilpotent} \implies \text{solvable},
+$$
+and no implication reverses: $\ZZ/2\times\ZZ/2$ is abelian and not cyclic, $Q_8$ is nilpotent and not abelian, and $S_3$ is solvable and not nilpotent.
+The symmetric group $S_n$ is solvable if and only if $n\leq 4$.
+Over a field of characteristic $0$, a polynomial is solvable by radicals if and only if its Galois group is solvable; see [[algebra/galois-theory/cyclotomic-and-radical-extensions|Cyclotomic and radical extensions]].
 :::
 
 ## Nilpotent groups
 
 [[D-53JVH]]
-
-> Moral: the adjoint map is nilpotent.
 
 [[T-7PU33]]
 
@@ -70,37 +63,31 @@ Solvability is what the [[algebra/galois-theory/cyclotomic-and-radical-extension
 [[T-OHEFT]]
 
 ::: {.proposition}
-For $G$ a finite group, TFAE:
+For a finite group $G$, the following are equivalent.
 
-- $G$ is nilpotent
+- $G$ is nilpotent.
 
-- Normalizers grow, i.e. if $H < G$ is proper then $H < N_G(H)$.
+- For every proper subgroup $H < G$, $H < N_G(H)$.
 
-- Every Sylow-p subgroup is normal
+- Every Sylow subgroup of $G$ is normal.
 
-- $G$ is the direct product of its Sylow p-subgroups
+- $G$ is the direct product of its Sylow subgroups.
 
-- Every maximal subgroup is normal
+- Every maximal subgroup of $G$ is normal.
 
-- $G$ has a terminating *Lower* Central Series
+- The lower central series of $G$ reaches $1$.
 
-- $G$ has a terminating *Upper* Central Series
+- The upper central series of $G$ reaches $G$.
 :::
 
 ::: {.fact}
 \envlist
 
-- Subgroups and quotient groups of nilpotent groups are nilpotent, but extensions of nilpotent groups need not be nilpotent (e.g., $S_3$ has normal subgroup $A_3 \cong C_3$ and quotient $S_3/A_3 \cong C_2$, both nilpotent, but $S_3$ is not nilpotent).
+- Subgroups and quotients of nilpotent groups are nilpotent.
 
-- In contrast, solvable groups satisfy the two-out-of-three property: if $N \trianglelefteq G$, then $G$ is solvable if and only if both $N$ and $G/N$ are solvable.
+- An extension of nilpotent groups need not be nilpotent: $S_3$ has the normal subgroup $A_3 \cong C_3$ with quotient $S_3/A_3 \cong C_2$, both nilpotent, and $S_3$ is not nilpotent.
 
-- A finite nilpotent group $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$.
+- For $N \normal G$, $G$ is solvable if and only if both $N$ and $G/N$ are solvable.
+
+- A finite nilpotent group $G$ has a normal subgroup of order $d$ for every $d$ dividing $\abs{G}$.
 :::
-
-The characterization via normalizers is the most useful for computations: to check nilpotence, pick a proper subgroup $H$ and verify $H < N_G(H)$.
-If normalizers always grow, the group is nilpotent.
-This is a Sylow-theoretic condition — for finite groups, nilpotence is equivalent to every Sylow subgroup being normal, which is equivalent to $G$ being the direct product of its Sylow subgroups.
-
-The lower central series $G = \gamma_1(G) \geq \gamma_2(G) \geq \cdots$ where $\gamma_{i+1}(G) = [\gamma_i(G), G]$ terminates at the trivial group iff $G$ is nilpotent.
-The upper central series $Z_0(G) = 1 \leq Z_1(G) = Z(G) \leq \cdots$ terminates at $G$ iff $G$ is nilpotent.
-The class of nilpotency is the length of either series.

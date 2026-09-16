@@ -8,41 +8,61 @@ topics:
 
 # Is this group abelian?
 
-The question is asked directly, and it is also the hidden form of "classify the groups of order $n$", since the abelian ones are settled by the structure theorem and only the rest need work.
+Throughout, $G$ is a finite group and $p<q$ are primes.
 
 ## From the order alone
 
 | $\size G$ | Conclusion |
 | --- | --- |
 | $p$ | cyclic, hence abelian |
-| $p^2$ | abelian, by the class equation |
-| $pq$ with $p < q$ and $p \nmid q-1$ | cyclic, hence abelian |
-| $pq$ with $p \divides q-1$ | a nonabelian one exists |
-| $p^3$ | need not be abelian: $D_4$ and $Q_8$ |
+| $p^2$ | abelian |
+| $pq$ with $p \notdivides q-1$ | cyclic, hence abelian |
+| $pq$ with $p \divides q-1$ | there is exactly one nonabelian group of this order up to isomorphism, $\ZZ/q\semidirect\ZZ/p$ |
+| $p^3$ | not necessarily abelian: $D_4$ and $Q_8$ have order $8$ |
 
-For the $p^2$ case, the class equation forces $Z(G)\neq 1$, and $G/Z(G)$ cyclic forces $G$ abelian, so $\size{Z(G)}$ cannot be $p$.
+[[PR-LFGHA]]
+
+[[PR-IGLFV]]
+
+[[PR-SLWTB]]
+
+For $\size G = p^2$, the [[D-NK7G7|center]] $Z(G)$ is nontrivial by the class equation; if $\size{Z(G)} = p$, then $G/Z(G)$ has order $p$ and is cyclic, and a group whose quotient by its center is cyclic is abelian, so $Z(G)=G$, a contradiction.
+Hence $Z(G)=G$.
 
 ## From a quotient
 
-::: {.remark title="The $G/Z(G)$ trick"}
-If $G/Z(G)$ is cyclic then $G$ is abelian.
-So $\size{Z(G)}$ can never be exactly $\size G / p$ for $p$ prime, which rules out most of the possibilities the class equation leaves open.
+::: {.proposition}
+If $G/Z(G)$ is cyclic, then $G$ is abelian.
+:::
+
+::: {.proof}
+Let $gZ(G)$ generate $G/Z(G)$.
+Every element of $G$ has the form $g^iz$ with $i\in\ZZ$ and $z\in Z(G)$, and $g^iz\cdot g^jw = g^{i+j}zw = g^jw\cdot g^iz$ for $z,w\in Z(G)$.
+:::
+
+[[E-O73XQ]]
+
+::: {.remark}
+If $G$ is nonabelian, then $G/Z(G)$ is not cyclic, so $[G:Z(G)]$ is not prime.
+In particular $\size{Z(G)} \neq \size G/p$ for every prime $p$.
 :::
 
 ## From the structure theorem
 
-Once $G$ is known to be abelian, it is a product of cyclic groups and the classification is complete: list the partitions of each prime's exponent in $\size G$.
-For $\size G = p^2 q$ there are $2\cdot 1 = 2$ abelian groups, and so on.
-This is the same computation as [[algebra/modules/classify-this-module|Classify this module]] over $\ZZ$.
+A finite abelian group is a direct product of cyclic groups of prime-power order, and the isomorphism classes of abelian groups of order $\prod_i p_i^{e_i}$ correspond to tuples of partitions of the exponents $e_i$.
+For example, there are $2\cdot 1 = 2$ abelian groups of order $p^2 q$, namely $\ZZ/p^2\times\ZZ/q$ and $\ZZ/p\times\ZZ/p\times\ZZ/q$.
+This is the classification of finitely generated modules over the principal ideal domain $\ZZ$; see [[algebra/modules/classify-this-module|Classify this module]].
 
-## When it is not abelian
+[[PR-2JG3F]]
 
-Then the question is which nonabelian group, and the tools are:
+## Distinguishing nonabelian groups
 
-- A normal Sylow subgroup, giving a semidirect product, from [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
+Isomorphism invariants that separate nonabelian groups of the same order:
 
-- The number of elements of each order, which distinguishes $D_4$ from $Q_8$: $D_4$ has five elements of order $2$ and $Q_8$ has one.
+- A normal Sylow subgroup $N$ with a complement $H$ exhibits $G \cong N \semidirect H$; see [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]] and [[algebra/groups/quotients-and-products|Quotients, products, and automorphisms]].
 
-- The abelianization $G/[G,G]$, which is an invariant computable from a presentation.
+- The number of elements of each order: $D_4$ has five elements of order $2$ and $Q_8$ has one.
 
-- The centre, the conjugacy class sizes, and the automorphism group, in that order of cheapness.
+- The abelianization $G/[G,G]$, computable from a presentation by adjoining the relations $[x,y]=1$ for all generators $x,y$.
+
+- The center, the sizes of the conjugacy classes, and the automorphism group.
