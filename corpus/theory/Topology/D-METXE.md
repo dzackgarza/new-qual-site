@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A map $f:X\to Y$ is **closed** if whenever $U \subseteq X$ is closed in $X$, $f(U) \subseteq Y$ is again closed in $Y$.
+Let $X$ and $Y$ be topological spaces.
+A map $f\colon X\to Y$ is \dfn{closed} if $f(C)$ is closed in $Y$ for every closed subset $C\subseteq X$.
 :::
