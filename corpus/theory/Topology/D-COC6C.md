@@ -13,11 +13,21 @@ review: draft
 ---
 
 ::: {.definition}
-The dual of the product: an object $\Disjoint_\alpha X_\alpha$ with maps $\iota_\alpha: X_\alpha \to \Disjoint_\alpha X_\alpha$, universal among objects receiving a map from every $X_\alpha$.
-Equivalently, a collection of maps $X_\alpha \to X$ is the same datum as a single map $\Disjoint_\alpha X_\alpha \to X$.
-In $\Top$ the coproduct is disjoint union, in based spaces it is the wedge sum, in $\Ab$ it is the direct sum, and in $\Grp$ it is the free product.
+Let $\mathcal C$ be a category and $(X_\alpha)_{\alpha\in A}$ a family of objects of $\mathcal C$.
+A \dfn{coproduct} of $(X_\alpha)_{\alpha\in A}$ is an object $\coprod_{\alpha\in A} X_\alpha$ together with morphisms $\iota_\beta\colon X_\beta\to\coprod_{\alpha\in A} X_\alpha$ for $\beta\in A$ such that for every object $Y$ and every family of morphisms $f_\beta\colon X_\beta\to Y$ there is a unique morphism $f\colon\coprod_{\alpha\in A} X_\alpha\to Y$ with $f\circ\iota_\beta = f_\beta$ for every $\beta\in A$.
+:::
+
+::: {.remark}
+The coproduct in $\mathcal C$ is the product in the opposite category $\mathcal C^{\mathrm{op}}$.
+By the uniqueness in the definition, two coproducts of the same family are isomorphic by a unique isomorphism compatible with the morphisms $\iota_\beta$.
+:::
+
+::: {.example}
+In $\Top$ the coproduct is the disjoint union $\coprod_\alpha X_\alpha$, a subset $U$ being open if $U\cap X_\alpha$ is open in $X_\alpha$ for every $\alpha$.
+In the category of based spaces it is the [[D-IGUUS|wedge sum]] $\bigvee_\alpha X_\alpha$.
+In $\Ab$ it is the [[D-TZSG2|direct sum]] $\bigoplus_\alpha X_\alpha$, and in $\Grp$ it is the [[D-JDDCP|free product]] $\ast_\alpha X_\alpha$.
 :::
 
 ::: {.concept}
-See Hatcher, §4.H, p. 461.
+See [@Hat02, §4.H, p. 461].
 :::
