@@ -33,6 +33,8 @@ A definition card carries the probe that follows the definition; a theorem card 
 
 - [[algebraic-geometry/toric/index|Toric varieties]], where fans make every question above computable.
 
+- [[algebraic-geometry/stacks-and-moduli/index|Stacks and moduli]], functors of points, the étale and fppf topologies, descent, Hilbert schemes, algebraic spaces and stacks.
+
 - [[algebraic-geometry/resources|Resources]], which text to reach for at which stage, and where the problems and worked solutions are.
 
 - [[algebraic-geometry/syllabus|Sample syllabi]], topic lists from qualifying and oral examination syllabi.

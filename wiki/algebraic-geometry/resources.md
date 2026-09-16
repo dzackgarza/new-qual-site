@@ -1,6 +1,6 @@
 ---
 title: Resources
-order: 10
+order: 11
 topics:
 - Algebraic Geometry
 ---
@@ -188,6 +188,26 @@ These reference documents and solution collections are preserved in the reposito
 - [MSRI summer school on derived categories](https://www.msri.org/summer_schools/821)
 
 - [Princeton learning seminar on the minimal model program](https://web.math.princeton.edu/~jmoraga/Learning-Seminar-MMP)
+
+### Stacks and moduli
+
+- [Alper, University of Washington Math 582C](https://sites.math.washington.edu/~jarod/math582C.html): course page on stacks and moduli.
+
+- Olsson, *Algebraic Spaces and Stacks*, American Mathematical Society Colloquium Publications 62 (2016).
+
+- [Edidin, "What is a stack?"](http://www.ams.org/notices/200304/what-is.pdf), *Notices of the AMS* 50 (2003).
+
+- [Edidin, "Equivariant geometry and the cohomology of the moduli space of curves"](https://arxiv.org/abs/1006.2364).
+
+- [Edidin, "Notes on the construction of the moduli space of curves"](https://arxiv.org/abs/math/9805101).
+
+- [Fantechi, "Stacks for everybody"](http://www.mathematik.uni-bielefeld.de/~rehmann/ECM/cdrom/3ecm/pdfs/pant3/fantechi.pdf), European Congress of Mathematics (2000).
+
+- [Mumford, "Picard groups of moduli problems"](http://www.mathcs.emory.edu/~brussel/Scans/mumfordpicard.pdf), with Litt's exposition in two parts: [part I](http://math.stanford.edu/~dlitt/exposnotes/picardI.pdf), [part II](http://math.stanford.edu/~dlitt/exposnotes/picardII.pdf).
+
+- [Vistoli, "Notes on Grothendieck topologies, fibered categories and descent theory"](https://arxiv.org/abs/math/0412512).
+
+- [Lecture notes on stacks](https://stacky.net/files/written/Stacks/Stacks.pdf), hosted at stacky.net.
 
 ### Problem sets
 

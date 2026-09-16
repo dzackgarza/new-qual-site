@@ -41,3 +41,7 @@ The two failures are different and the distinction gets asked for: the blowup ju
 [[FE-SCHFFLAT]]
 
 [[PR-MIRACLEFLAT]]
+
+## Criteria for flatness
+
+[[T-FLATCRIT]]

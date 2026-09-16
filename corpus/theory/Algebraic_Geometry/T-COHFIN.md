@@ -19,6 +19,7 @@ review: draft
 prompts:
 - Why is $H^i(X, \mcf)$ finite dimensional?
 - Which hypothesis in Serre finiteness fails first?
+- If $X \subseteq \PP^n_k$ is a closed subscheme and $\mcf$ is a coherent $\OO_X$-module, why is $\Gamma(X, \mcf)$ finite dimensional over $k$?
 ---
 
 ::: {.theorem}

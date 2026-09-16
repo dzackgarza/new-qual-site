@@ -1,6 +1,6 @@
 ---
 title: Sample syllabi
-order: 11
+order: 12
 topics:
 - Algebraic Geometry
 ---

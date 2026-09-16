@@ -18,6 +18,7 @@ prompts:
 - What are the points of $\Spec A$, and what is its topology?
 - What is the structure sheaf of $\Spec A$?
 - What are the stalks of $\OO_{\Spec A}$?
+- Construct a ring $R$ such that $\Spec R$ is $\AA^1_k$ punctured at $0$ and $1$.
 ---
 
 ::: {.definition title="The spectrum"}
@@ -32,6 +33,12 @@ with $\varphi(\mfp) \in A_\mfp$, locally of the form $f/g$ with $g \notin \mfp$.
 ::: {.proposition}
 $\OO_{\Spec A}(D_f) = A_f$, and in particular $\OO_{\Spec A}(\Spec A) = A$.
 The stalk at $\mfp$ is $A_\mfp$, a local ring.
+:::
+
+::: {.example}
+For a field $k$, the affine line punctured at $0$ and $1$ is the distinguished open set $D_{x(x-1)} \subseteq \AA^1_k = \Spec k[x]$, whose closed complement is $V(x(x-1)) = \{(x), (x-1)\}$.
+It is the affine scheme $\Spec R$ with
+$$R = k[x]_{x(x-1)} = k[x]\left[\frac{1}{x(x-1)}\right].$$
 :::
 
 ::: {.remark}

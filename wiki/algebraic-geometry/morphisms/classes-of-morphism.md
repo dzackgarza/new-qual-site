@@ -52,3 +52,7 @@ Every arrow has a standard counterexample to its converse, and the two worth hav
 [[PR-MORBC]]
 
 Stability under base change is what turns a property of a morphism into a property of its fibres, and it is why properness is defined with the word *universally* in it rather than by closedness alone.
+
+## Locality of properties of morphisms
+
+[[D-MORLOCAL]]

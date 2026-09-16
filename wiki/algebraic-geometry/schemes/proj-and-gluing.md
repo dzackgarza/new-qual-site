@@ -35,3 +35,11 @@ Base change is the subject of [[algebraic-geometry/schemes/fibre-products-and-ba
 ## Quotients by group actions
 
 [[D-GITQUOT]]
+
+## Relative Spec and relative Proj
+
+[[D-SCHRELSPECPROJ]]
+
+## Blowing up and blowing down
+
+[[D-SCHBLOWUP]]
