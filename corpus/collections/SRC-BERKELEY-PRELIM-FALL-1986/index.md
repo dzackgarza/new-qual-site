@@ -43,7 +43,3 @@ source:
     term: fall
     year: 1986
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1986. Problems are listed in source order.
-:::
