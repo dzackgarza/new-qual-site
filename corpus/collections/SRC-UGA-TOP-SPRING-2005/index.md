@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2005
 ---
-
-::: {.remark}
-Problem 4 on the paper asks for $H_*$; the question about $\pi_1$ in the listed problem is not on this paper.
-:::
