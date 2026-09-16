@@ -37,6 +37,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution9.pdf` is Harvard Math 21b Spring 2018 Practice Final 9 with worked solutions and fourteen top-level problems. The course resource page and existing Practice Final 6 collection establish the provenance. Problem 2's graph and phase-portrait choices and Problem 9's displayed $36\times36$ matrix are not recoverable in the retained extraction; those source gaps are explicit rather than reconstructed.
+::: {.remark}
+Practice Final 9 of Harvard Math 21b, Spring 2018, with worked solutions and fourteen problems.
 :::
