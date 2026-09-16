@@ -14,18 +14,28 @@ source:
   source_kind: homework
   area: complex-analysis
   problems:
-  - P-UGA8150S21-HW2-01
-  - P-UGA8150S21-HW2-02
+  - id: P-UGA8150S21-HW2-01
+    comment: Problem 1
+  - id: P-UGA8150S21-HW2-02
+    comment: Problem 2
   - P-TIE-F15-01
   - P-V7ULH
-  - P-UGA8150S21-HW2-05
-  - P-UGA8150S21-HW2-06
-  - P-UGA8150S21-HW2-07
-  - P-UGA8150S21-HW2-08
-  - P-UGA8150S21-HW2-09
-  - P-UGA8150S21-HW2-10
-  - P-UGA8150S21-HW2-11
-  - P-UGA8150S21-HW2-12
+  - id: P-UGA8150S21-HW2-05
+    comment: Problem 5
+  - id: P-UGA8150S21-HW2-06
+    comment: Problem 6
+  - id: P-UGA8150S21-HW2-07
+    comment: Problem 7
+  - id: P-UGA8150S21-HW2-08
+    comment: Problem 8
+  - id: P-UGA8150S21-HW2-09
+    comment: Problem 9
+  - id: P-UGA8150S21-HW2-10
+    comment: Problem 10
+  - id: P-UGA8150S21-HW2-11
+    comment: Problem 11
+  - id: P-UGA8150S21-HW2-12
+    comment: Problem 12
   date:
     kind: academic-term
     term: spring
