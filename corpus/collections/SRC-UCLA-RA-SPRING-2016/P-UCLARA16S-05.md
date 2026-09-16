@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-05
 kind: problem
-title: UCLA analysis Spring 2016, Problem 5
+title: Unbounded $L^2$ growth of Fourier representations of planar wave solutions
 classification:
   areas:
   - real-analysis

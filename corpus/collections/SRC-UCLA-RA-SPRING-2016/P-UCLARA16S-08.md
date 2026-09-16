@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-08
 kind: problem
-title: UCLA analysis Spring 2016, Problem 8
+title: Normal families of holomorphic self-maps of the upper half-plane
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-03
 kind: problem
-title: UCLA analysis Spring 2016, Problem 3
+title: Monotonicity under translations by $1/n$ implies monotonicity under all translations
 classification:
   areas:
   - real-analysis

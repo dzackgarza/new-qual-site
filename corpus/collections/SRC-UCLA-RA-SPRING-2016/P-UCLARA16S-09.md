@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-09
 kind: problem
-title: UCLA analysis Spring 2016, Problem 9
+title: Entire functions with $|f|=1$ on the unit circle are monomials
 classification:
   areas:
   - real-analysis

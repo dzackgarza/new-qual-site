@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-01
 kind: problem
-title: UCLA analysis Spring 2016, Problem 1
+title: $L^3\to L^\infty$ bounds for the heat kernel on $\mathbb R^3$
 classification:
   areas:
   - real-analysis

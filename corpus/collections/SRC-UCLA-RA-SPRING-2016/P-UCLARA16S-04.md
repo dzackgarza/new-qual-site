@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-04
 kind: problem
-title: UCLA analysis Spring 2016, Problem 4
+title: Finite-dimensional subspaces of Banach spaces are complemented
 classification:
   areas:
   - real-analysis

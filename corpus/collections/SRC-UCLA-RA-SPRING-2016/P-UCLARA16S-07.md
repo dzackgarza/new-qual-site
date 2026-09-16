@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-07
 kind: problem
-title: UCLA analysis Spring 2016, Problem 7
+title: Evaluation of $\int_0^\infty\frac{x^{a-1}}{x+z}\,dx$
 classification:
   areas:
   - real-analysis

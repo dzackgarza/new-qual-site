@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-11
 kind: problem
-title: UCLA analysis Spring 2016, Problem 11
+title: Holomorphic functions cannot approximate $1/z$ on the unit circle
 classification:
   areas:
   - real-analysis

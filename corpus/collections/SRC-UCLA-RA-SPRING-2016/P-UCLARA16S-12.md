@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-12
 kind: problem
-title: UCLA analysis Spring 2016, Problem 12
+title: Maximum principle for bounded harmonic functions with one exceptional boundary point
 classification:
   areas:
   - real-analysis

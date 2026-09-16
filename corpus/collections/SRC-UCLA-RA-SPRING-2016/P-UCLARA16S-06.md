@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-06
 kind: problem
-title: UCLA analysis Spring 2016, Problem 6
+title: Orthonormal systems with $\|f\|_\infty\le C\|f\|_2$ on their span are finite
 classification:
   areas:
   - real-analysis

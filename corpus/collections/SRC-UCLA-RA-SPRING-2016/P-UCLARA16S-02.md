@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-02
 kind: problem
-title: UCLA analysis Spring 2016, Problem 2
+title: Almost everywhere convergence of $\sum n^{-1/2}f(x-\sqrt n)$
 classification:
   areas:
   - real-analysis

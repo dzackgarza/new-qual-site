@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA16S-10
 kind: problem
-title: UCLA analysis Spring 2016, Problem 10
+title: No holomorphic function on the disk tends to infinity at the boundary
 classification:
   areas:
   - real-analysis
