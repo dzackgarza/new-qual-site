@@ -15,12 +15,18 @@ source:
   source_kind: homework
   area: topology
   problems:
-  - P-UGA8210F18-HW3-01
-  - P-UGA8210F18-HW3-02
-  - P-UGA8210F18-HW3-03
-  - P-UGA8210F18-HW3-04
-  - P-UGA8210F18-HW3-05
-  - P-UGA8210F18-HW3-06
+  - id: P-UGA8210F18-HW3-01
+    comment: Problem 1
+  - id: P-UGA8210F18-HW3-02
+    comment: Problem 2
+  - id: P-UGA8210F18-HW3-03
+    comment: Problem 3
+  - id: P-UGA8210F18-HW3-04
+    comment: Problem 4
+  - id: P-UGA8210F18-HW3-05
+    comment: Problem 5
+  - id: P-UGA8210F18-HW3-06
+    comment: Problem 6
   date:
     kind: academic-term
     term: fall
