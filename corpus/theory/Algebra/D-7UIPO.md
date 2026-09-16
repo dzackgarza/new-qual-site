@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-7UIPO
 kind: definition
-title: Transitive Subgroup
+title: Transitive subgroup of $S_n$
 classification:
   areas:
   - algebra
@@ -15,6 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-A subgroup $H\leq S_n$ is **transitive** iff its action on $\theset{1, 2, \cdots, n}$ is transitive, i.e. for each pair $(i, j)$ there is some element $\sigma\in H$ such that $\sigma(i) = j$.
-Note that $\sigma$ may not fix other elements, and can have other effects!
+Let $n\geq 1$.
+A subgroup $H\leq S_n$ is \dfn{transitive} if its action on $\theset{1, \ldots, n}$ is [[D-KGGWK|transitive]], that is, if for all $i, j\in\theset{1,\ldots,n}$ there exists $\sigma\in H$ with $\sigma(i) = j$.
 :::

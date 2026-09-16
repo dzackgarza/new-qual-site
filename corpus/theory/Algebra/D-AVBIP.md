@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-AVBIP
 kind: definition
-title: Divisibility of Elements
+title: Divisibility of elements
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-An element \( r\in R \) is **divisible** by \( q \in R \) if and only if there exists some \( c \in R \) such that \( r = qc \). In this case, we sometimes write \( q\divides r \).
+Let $R$ be a commutative ring and let $q, r\in R$.
+The element $r$ is \dfn{divisible} by $q$, written $q\divides r$, if there exists $c \in R$ such that $r = qc$.
 :::
