@@ -8,41 +8,39 @@ topics:
 
 # Which inequality?
 
-Almost every $L^p$ problem is one inequality applied once.
-The question is which, and it is decided by the shape of what you are bounding.
+Let $(X,\mu)$ be a measure space and $\frac1p+\frac1q=1$ with $1\leq p,q\leq\infty$.
+The full statements are on [[real-analysis/inequalities|Inequalities]].
 
-| You are bounding | Use | Statement |
+| Quantity bounded | Inequality | Statement |
 | --- | --- | --- |
-| $\int \abs{fg}$ | Hölder | $\norm{fg}_1 \leq \norm f_p \norm g_q$, $\frac1p+\frac1q=1$ |
-| $\norm{f+g}_p$ | Minkowski | the triangle inequality for $\norm\cdot_p$ |
-| $\mu(\abs f > t)$ | Chebyshev | $\mu(\abs f > t) \leq t^{-p}\norm f_p^p$ |
-| $\varphi\qty(\int f)$ for convex $\varphi$ | Jensen | $\varphi\qty(\int f) \leq \int \varphi\circ f$ on a probability space |
-| $\norm{f * g}_r$ | Young | $\frac1r = \frac1p+\frac1q-1$ |
+| $\int \abs{fg}$ | Hölder | $\norm{fg}_1 \leq \norm f_p \norm g_q$ |
+| $\norm{f+g}_p$, $1\leq p\leq\infty$ | Minkowski | $\norm{f+g}_p\leq\norm f_p+\norm g_p$ |
+| $\mu(\theset{\abs f > t})$, $0<p<\infty$ | Chebyshev | $\mu(\theset{\abs f > t}) \leq t^{-p}\norm f_p^p$ |
+| $\varphi\qty(\int f)$, $\varphi$ convex, $\mu(X)=1$ | Jensen | $\varphi\qty(\int f) \leq \int \varphi\circ f$ |
+| $\norm{f * g}_r$ on $\RR^n$ | Young | $\norm{f*g}_r\leq\norm f_p\norm g_q$ for $\frac1r = \frac1p+\frac1q-1$, $1\leq p,q,r\leq\infty$ |
 
-## Hölder is the one to try first
+## Consequences of Hölder's inequality
 
-Its uses are not only bounding a product:
+- **Inclusions.** If $\mu(X)<\infty$ and $p < q$, Hölder's inequality applied to $\abs f^p\cdot 1$ gives $L^q \subseteq L^p$.
+  On $(1,\infty)$ with Lebesgue measure, $x^{-1}\in L^2\setminus L^1$, and on $\RR$, $\frac{\sin x}{x}\in L^2(\RR)\setminus L^1(\RR)$.
 
-- **Nesting.** On a finite measure space, $p < q$ gives $L^q \subseteq L^p$, by Hölder against $g = 1$.
-  On $\RR$ with Lebesgue measure there is no nesting in either direction, which is why $\sin(x)/x$ can be in $L^2$ and not $L^1$.
+- **Interpolation.** If $0<p<r<q\leq\infty$ and $\frac1r = \frac\theta p + \frac{1-\theta}q$ with $\theta\in(0,1)$, then $\norm f_r \leq \norm f_p^{\theta}\norm f_q^{1-\theta}$, by Hölder's inequality applied to $\abs f^{r\theta}\cdot\abs f^{r(1-\theta)}$ with exponents $\frac{p}{r\theta}$ and $\frac{q}{r(1-\theta)}$.
 
-- **Interpolation.** $\norm f_r \leq \norm f_p^{\theta}\norm f_q^{1-\theta}$ for $\frac1r = \frac\theta p + \frac{1-\theta}q$, which is Hölder applied to $\abs f^{r\theta}\cdot\abs f^{r(1-\theta)}$.
+- **Duality.** For $g\in L^q$, $\abs{\int fg}\leq\norm f_p\norm g_q$, so $f\mapsto\int fg$ is a bounded linear functional on $L^p$ of norm at most $\norm g_q$.
 
-- **Duality.** The pairing $\inner fg = \int fg$ is bounded exactly by Hölder, which is what makes $(L^p)^* = L^q$.
+For $1<p<\infty$ and $\norm f_p,\norm g_q\in(0,\infty)$, equality holds in Hölder's inequality if and only if $\abs f^p/\norm f_p^p = \abs g^q/\norm g_q^q$ almost everywhere.
 
-Equality in Hölder holds when $\abs f^p$ and $\abs g^q$ are proportional, and that case is often what a problem is really asking about.
+## Chebyshev's inequality
 
-## Chebyshev converts norms into measures
+A bound on $\norm f_p$ bounds the measure of $\theset{\abs f>t}$.
+Combined with the Borel--Cantelli lemma: if $\sum_n\norm{f_n}_p^p<\infty$, then $f_n\to0$ almost everywhere.
 
-Any bound on $\norm f_p$ bounds the size of the set where $f$ is large, and that is the only way to get from an integral hypothesis to a pointwise one.
-It is the first step of most a.e. convergence arguments, usually followed by Borel--Cantelli.
+## Particular exponents
 
-## The exponents to keep straight
+- $p = 1$: for $\sigma$-finite $\mu$, $(L^1)^* \cong L^\infty$; for Lebesgue measure on $[0,1]$ the natural map $L^1\to(L^\infty)^*$ is not surjective.
 
-- $p = 1$: no dual pairing with itself; $(L^1)^* = L^\infty$ but $(L^\infty)^* \supsetneq L^1$.
+- $p = 2$: $L^2$ is a Hilbert space with $\inner fg\coloneqq\int f\bar g$; if $X$ contains disjoint sets of positive finite measure, $L^p$ is a Hilbert space only for $p=2$.
 
-- $p = 2$: the only Hilbert space in the family, so orthogonality and projection are available and nothing else in the scale has them.
+- $p = \infty$: $\norm f_\infty$ is the essential supremum, the least $M$ with $\abs f\leq M$ almost everywhere.
 
-- $p = \infty$: the norm is an essential supremum, so "bounded" always means almost everywhere.
-
-- $p < 1$: not a norm at all, since the triangle inequality reverses.
+- $0<p<1$: $\norm f_p\coloneqq\qty{\int\abs f^p}^{1/p}$ is not a norm; on $[0,2]$, $\norm{\chi_{[0,1]}+\chi_{[1,2]}}_p = 2^{1/p}>2$.
