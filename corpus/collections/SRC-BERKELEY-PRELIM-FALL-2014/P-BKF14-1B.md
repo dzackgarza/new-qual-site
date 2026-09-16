@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-1B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 1B
+title: Real zeros of the truncated exponential series $\sum_{k\le n}x^k/k!$
 classification:
   areas:
   - prelim

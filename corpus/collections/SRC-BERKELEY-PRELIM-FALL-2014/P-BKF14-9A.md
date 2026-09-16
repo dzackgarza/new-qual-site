@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-9A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 9A
+title: Burnside's lemma and $4$-colorings of the vertices of a hexagon
 classification:
   areas:
   - prelim

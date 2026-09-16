@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-3A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 3A
+title: Bounding $f'$ in terms of bounds on $f$ and $f''$
 classification:
   areas:
   - prelim

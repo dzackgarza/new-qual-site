@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-4A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 4A
+title: A power series convergent on the disk and at $1$ whose sum is discontinuous at $1$
 classification:
   areas:
   - prelim

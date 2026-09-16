@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-9B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 9B
+title: Number of roots of $x^{100000}-1$ in $\mathbb F_{65537}$
 classification:
   areas:
   - prelim

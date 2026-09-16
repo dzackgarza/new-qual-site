@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-6A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 6A
+title: Order of $\operatorname{Sp}_4(\mathbb F_3)$ and the number of symplectic forms on $\mathbb F_3^4$
 classification:
   areas:
   - prelim

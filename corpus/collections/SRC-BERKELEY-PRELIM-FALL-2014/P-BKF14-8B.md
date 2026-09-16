@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-8B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 8B
+title: Finite groups with exactly three conjugacy classes
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-4B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 4B
+title: Independence of boundary convergence and analytic continuation at $1$ for power series
 classification:
   areas:
   - prelim

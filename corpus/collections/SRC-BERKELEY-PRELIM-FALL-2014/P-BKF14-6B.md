@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-6B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 6B
+title: Approximating a singular $4\times4$ matrix by matrices with distinct real eigenvalues of both signs
 classification:
   areas:
   - prelim

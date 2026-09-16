@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-3B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 3B
+title: Continuity of a unique maximizer $y_x$ of $f(x,\cdot)$
 classification:
   areas:
   - prelim

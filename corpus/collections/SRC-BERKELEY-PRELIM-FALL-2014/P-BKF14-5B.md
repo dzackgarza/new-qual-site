@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-5B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 5B
+title: Zeros minus poles of an elliptic function sum to a Gaussian integer
 classification:
   areas:
   - prelim

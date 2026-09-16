@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-7A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 7A
+title: Basis for the intersection of two parametrized subspaces of $\mathbb R^4$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-8A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 8A
+title: Cardinality of the set of down-sets of a countable total order
 classification:
   areas:
   - prelim

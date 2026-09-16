@@ -18,23 +18,40 @@ source:
   area: prelim
   problems:
   - P-BKF14-1A
-  - P-BKF14-2A
-  - P-BKF14-3A
-  - P-BKF14-4A
-  - P-BKF14-5A
-  - P-BKF14-6A
-  - P-BKF14-7A
-  - P-BKF14-8A
-  - P-BKF14-9A
-  - P-BKF14-1B
-  - P-BKF14-2B
-  - P-BKF14-3B
-  - P-BKF14-4B
-  - P-BKF14-5B
-  - P-BKF14-6B
-  - P-BKF14-7B
-  - P-BKF14-8B
-  - P-BKF14-9B
+  - id: P-BKF14-2A
+    comment: Problem 2A
+  - id: P-BKF14-3A
+    comment: Problem 3A
+  - id: P-BKF14-4A
+    comment: Problem 4A
+  - id: P-BKF14-5A
+    comment: Problem 5A
+  - id: P-BKF14-6A
+    comment: Problem 6A
+  - id: P-BKF14-7A
+    comment: Problem 7A
+  - id: P-BKF14-8A
+    comment: Problem 8A
+  - id: P-BKF14-9A
+    comment: Problem 9A
+  - id: P-BKF14-1B
+    comment: Problem 1B
+  - id: P-BKF14-2B
+    comment: Problem 2B
+  - id: P-BKF14-3B
+    comment: Problem 3B
+  - id: P-BKF14-4B
+    comment: Problem 4B
+  - id: P-BKF14-5B
+    comment: Problem 5B
+  - id: P-BKF14-6B
+    comment: Problem 6B
+  - id: P-BKF14-7B
+    comment: Problem 7B
+  - id: P-BKF14-8B
+    comment: Problem 8B
+  - id: P-BKF14-9B
+    comment: Problem 9B
   date:
     kind: academic-term
     term: fall

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-5A
 kind: problem
-title: Berkeley Fall 2014 prelim problem 5A
+title: 'Gauss--Lucas theorem: critical points lie in the convex hull of the roots'
 classification:
   areas:
   - prelim

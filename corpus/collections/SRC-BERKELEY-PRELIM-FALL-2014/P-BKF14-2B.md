@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF14-2B
 kind: problem
-title: Berkeley Fall 2014 prelim problem 2B
+title: Continuous functions on the plane bounded on every line need not be bounded
 classification:
   areas:
   - prelim
