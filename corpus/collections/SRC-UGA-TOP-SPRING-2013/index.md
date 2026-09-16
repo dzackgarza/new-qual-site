@@ -28,6 +28,3 @@ source:
     term: spring
     year: 2013
 ---
-
-::: remark
-:::
