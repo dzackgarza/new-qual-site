@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-7
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 7
+title: Lower bound for $|1-\sum a_k e^{2\pi ikx}|$ on $[0,1]$
 classification:
   areas:
   - prelim

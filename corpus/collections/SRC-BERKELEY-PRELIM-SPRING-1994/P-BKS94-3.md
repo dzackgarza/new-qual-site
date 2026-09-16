@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-3
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 3
+title: Evaluation of $\int_{-\pi}^{\pi} d\theta/(3-\cos\theta)$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-5
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 5
+title: Minimal-order constant-coefficient ODE with solutions $\sin t$ and $\sin 2t$
 classification:
   areas:
   - prelim

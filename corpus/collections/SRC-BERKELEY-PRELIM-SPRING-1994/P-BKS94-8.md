@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-8
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 8
+title: Automorphisms of $\mathbb Z[x]$
 classification:
   areas:
   - prelim

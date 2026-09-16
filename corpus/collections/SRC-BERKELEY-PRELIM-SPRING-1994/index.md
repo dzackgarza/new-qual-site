@@ -17,24 +17,42 @@ source:
   institution: berkeley
   area: prelim
   problems:
-  - P-BKS94-1
-  - P-BKS94-2
-  - P-BKS94-3
-  - P-BKS94-4
-  - P-BKS94-5
-  - P-BKS94-6
-  - P-BKS94-7
-  - P-BKS94-8
-  - P-BKS94-9
-  - P-BKS94-10
-  - P-BKS94-11
-  - P-BKS94-12
-  - P-BKS94-13
-  - P-BKS94-14
-  - P-BKS94-15
-  - P-BKS94-16
-  - P-BKS94-17
-  - P-BKS94-18
+  - id: P-BKS94-1
+    comment: Problem 1
+  - id: P-BKS94-2
+    comment: Problem 2
+  - id: P-BKS94-3
+    comment: Problem 3
+  - id: P-BKS94-4
+    comment: Problem 4
+  - id: P-BKS94-5
+    comment: Problem 5
+  - id: P-BKS94-6
+    comment: Problem 6
+  - id: P-BKS94-7
+    comment: Problem 7
+  - id: P-BKS94-8
+    comment: Problem 8
+  - id: P-BKS94-9
+    comment: Problem 9
+  - id: P-BKS94-10
+    comment: Problem 10
+  - id: P-BKS94-11
+    comment: Problem 11
+  - id: P-BKS94-12
+    comment: Problem 12
+  - id: P-BKS94-13
+    comment: Problem 13
+  - id: P-BKS94-14
+    comment: Problem 14
+  - id: P-BKS94-15
+    comment: Problem 15
+  - id: P-BKS94-16
+    comment: Problem 16
+  - id: P-BKS94-17
+    comment: Problem 17
+  - id: P-BKS94-18
+    comment: Problem 18
   date:
     kind: academic-term
     term: spring

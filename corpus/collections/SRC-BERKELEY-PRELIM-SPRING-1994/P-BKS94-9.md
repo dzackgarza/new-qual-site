@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-9
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 9
+title: Proper analytic maps between planar domains are surjective
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-6
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 6
+title: A complex square matrix is similar to its transpose
 classification:
   areas:
   - prelim

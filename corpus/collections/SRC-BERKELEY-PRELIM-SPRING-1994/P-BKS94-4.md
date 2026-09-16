@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-4
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 4
+title: Finite-index subgroups contain finite-index normal subgroups
 classification:
   areas:
   - prelim

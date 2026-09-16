@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-2
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 2
+title: Spectral radius bounds the norm of a symmetric matrix
 classification:
   areas:
   - prelim

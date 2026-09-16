@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS94-1
 kind: problem
-title: Berkeley Spring 1994 preliminary exam problem 1
+title: Lebesgue number lemma for open covers of $[0,1]$
 classification:
   areas:
   - prelim
