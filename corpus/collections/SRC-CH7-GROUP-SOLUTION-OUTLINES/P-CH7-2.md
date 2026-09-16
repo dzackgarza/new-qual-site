@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH7-2
 kind: problem
-title: Chapter 7 group-theory exercise 2
+title: Index of the Klein four-subgroup in $S_4$
 classification:
   areas: [algebra]
   topics: []

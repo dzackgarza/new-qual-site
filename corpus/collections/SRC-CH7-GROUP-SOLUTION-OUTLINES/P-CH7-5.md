@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH7-5
 kind: problem
-title: Chapter 7 group-theory exercise 5
+title: Equality of cosets of $3\mathbb Z$ in $\mathbb Z$
 classification:
   areas: [algebra]
   topics: []

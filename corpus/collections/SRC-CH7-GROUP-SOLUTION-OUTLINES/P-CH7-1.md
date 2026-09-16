@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH7-1
 kind: problem
-title: Chapter 7 group-theory exercise 1
+title: Cosets of the Klein four-subgroup in $A_4$
 classification:
   areas: [algebra]
   topics: []

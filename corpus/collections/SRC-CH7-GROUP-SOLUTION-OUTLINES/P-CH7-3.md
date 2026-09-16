@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH7-3
 kind: problem
-title: Chapter 7 group-theory exercise 3
+title: Cosets of $3\mathbb Z$ in $\mathbb Z$
 classification:
   areas: [algebra]
   topics: []

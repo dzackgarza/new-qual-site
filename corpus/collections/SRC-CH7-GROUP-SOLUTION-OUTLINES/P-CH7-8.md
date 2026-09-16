@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH7-8
 kind: problem
-title: Chapter 7 group-theory exercise 8
+title: Cosets of $\langle a^5\rangle$ in a cyclic group of order $15$
 classification:
   areas: [algebra]
   topics: []
