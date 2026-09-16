@@ -15,11 +15,16 @@ source:
   source_kind: homework
   area: complex-analysis
   problems:
-  - P-M655H3-01
-  - P-M655H3-02
-  - P-M655H3-03
-  - P-M655H3-04
-  - P-M655H3-05
+  - id: P-M655H3-01
+    comment: Problem 1
+  - id: P-M655H3-02
+    comment: Problem 2
+  - id: P-M655H3-03
+    comment: Problem 3
+  - id: P-M655H3-04
+    comment: Problem 4
+  - id: P-M655H3-05
+    comment: Problem 5
   date:
     kind: year
     year: 2003
