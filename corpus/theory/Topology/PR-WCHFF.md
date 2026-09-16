@@ -13,9 +13,14 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-For $K$ a knot,
-\[
-H_*(S^3 \sm K) = [\ZZ, \ZZ, 0, 0, \cdots]
-.\]
+::: {.proposition}
+Let $K\subseteq S^3$ be a tame knot, for example a smooth or polygonal one.
+Then
+$$
+H_i(S^3 \sm K;\ZZ) \cong \begin{cases}
+\ZZ & i = 0, 1,\\
+0 & \text{otherwise}
+\end{cases}
+$$
+[@Hat02, Corollary 3.45, p. 255].
 :::
