@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2021
 ---
-
-::: remark
-Exam #3 is the wedge integral from $0$ to $\infty$ on [[P-W23PS]].
-:::
