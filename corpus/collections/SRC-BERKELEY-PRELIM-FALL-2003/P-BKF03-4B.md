@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-4B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 4B
+title: Entire functions whose image misses a line are constant
 classification:
   areas:
   - prelim

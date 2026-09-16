@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-6B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 6B
+title: Meromorphic $f$ with $\int_\Gamma p^2f\,dz=0$ for all polynomials $p$ is entire
 classification:
   areas:
   - prelim

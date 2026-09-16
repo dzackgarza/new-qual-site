@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-9A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 9A
+title: Hölder continuity of the Cantor function with exponent $\log2/\log3$
 classification:
   areas:
   - prelim

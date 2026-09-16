@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-2B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 2B
+title: Discrete harmonic arrays vanishing on the boundary are zero
 classification:
   areas:
   - prelim

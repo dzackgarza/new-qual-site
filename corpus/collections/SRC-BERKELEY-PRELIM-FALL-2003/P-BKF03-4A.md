@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-4A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 4A
+title: An irreducible polynomial over $\mathbb Q$ that does not split in its stem field
 classification:
   areas:
   - prelim

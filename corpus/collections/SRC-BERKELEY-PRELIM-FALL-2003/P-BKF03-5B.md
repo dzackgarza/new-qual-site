@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-5B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 5B
+title: A noncyclic group of order $n$ when $\gcd(n,\phi(n))>1$
 classification:
   areas:
   - prelim

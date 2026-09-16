@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-8B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 8B
+title: Conjugacy classes of $5\times5$ complex matrices with $A^3=A^2$
 classification:
   areas:
   - prelim

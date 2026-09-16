@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-5A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 5A
+title: The metric $\int_0^1 \lvert f-g\rvert/(1+\lvert f-g\rvert)\,dx$ on $C[0,1]$ is not complete
 classification:
   areas:
   - prelim

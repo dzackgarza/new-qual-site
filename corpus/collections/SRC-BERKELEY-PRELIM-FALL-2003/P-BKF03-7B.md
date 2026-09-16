@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-7B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 7B
+title: Counting commuting pairs in a finite group and in $S_5$
 classification:
   areas:
   - prelim

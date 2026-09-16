@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-1A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 1A
+title: Unique entire solution of $f''=zf$ with $f(0)=f'(0)=1$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-8A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 8A
+title: Order of $\operatorname{Aut}(\mathbb Z/p^2\times\mathbb Z/p)$
 classification:
   areas:
   - prelim

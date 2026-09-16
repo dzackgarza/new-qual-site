@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-9B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 9B
+title: Positivity of $\lambda$ for $\Delta u+\lambda u=0$ on the disk with $u_n=-au$ on the boundary
 classification:
   areas:
   - prelim

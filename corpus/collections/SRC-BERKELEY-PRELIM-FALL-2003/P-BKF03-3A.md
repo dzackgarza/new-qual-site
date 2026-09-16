@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-3A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 3A
+title: Convergence of the Neumann series $I+A+A^2+\cdots$ for $2\times2$ matrices
 classification:
   areas:
   - prelim

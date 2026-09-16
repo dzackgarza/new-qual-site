@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-7A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 7A
+title: Harmonic function on the disk equal to $\pm1$ on the upper and lower semicircles
 classification:
   areas:
   - prelim

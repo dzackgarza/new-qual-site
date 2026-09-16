@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-6A
 kind: problem
-title: Berkeley Fall 2003 prelim problem 6A
+title: Rank over $\mathbb F_p$ of the power matrix $(j^i)$
 classification:
   areas:
   - prelim

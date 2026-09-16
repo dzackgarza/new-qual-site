@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-1B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 1B
+title: Evaluation of $\int_{-\infty}^{\infty} x^2/(x^n+1)\,dx$ for even $n\ge4$
 classification:
   areas:
   - prelim

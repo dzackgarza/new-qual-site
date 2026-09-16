@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF03-3B
 kind: problem
-title: Berkeley Fall 2003 prelim problem 3B
+title: The bound $\lvert\det(A+B)\rvert\le2^n$ for unitary matrices
 classification:
   areas:
   - prelim
