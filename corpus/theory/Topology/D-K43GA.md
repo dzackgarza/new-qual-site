@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-K43GA
 kind: definition
-title: Contractible
+title: Contractible space
 classification:
   areas:
   - topology
@@ -13,11 +13,13 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **contractible** if $\id_X$ is nullhomotopic.
-i.e. the identity is homotopic to a constant map $c(x) = x_0$.
-
-Equivalently, $X$ is contractible if $X \homotopic \theset{x_0}$ is homotopy equivalent to a point.
-This means that there exists a mutually inverse pair of maps $f: X \into \theset{x_0}$ and $g:\theset{x_0} \into X$ such that $f\circ g \homotopic \id_{\theset{x_0}}$ and $g\circ f \homotopic \id_X$.[^contractible_is_useful]
+A topological space $X$ is \dfn{contractible} if $\id_X$ is [[D-MGRZP|nullhomotopic]]: there is a point $x_0\in X$ such that $\id_X$ is [[D-Z7I7F|homotopic]] to the constant map $c\colon X\to X$, $c(x) = x_0$.
 :::
 
-[^contractible_is_useful]: Useful because it hands you a homotopy to work with.
+::: {.proposition}
+A topological space $X$ is contractible if and only if $X$ is [[D-HFR32|homotopy equivalent]] to a one-point space $\ts{x_0}$, that is, there are continuous maps $f\colon X\to\ts{x_0}$ and $g\colon\ts{x_0}\to X$ with $f\circ g = \id_{\ts{x_0}}$ and $g\circ f\simeq\id_X$.
+:::
+
+::: {.concept}
+See [@Hat02, p. 4].
+:::
