@@ -21,6 +21,7 @@ prompts:
 - Define the geometric genus.
 - What might the geometric genus of a singular curve be?
 - Does the genus depend on the embedding?
+- Show that a nonsingular projective curve has $p_a = p_g = h^1(\OO_X)$.
 ---
 
 ::: {.definition}
@@ -29,6 +30,15 @@ For a projective curve $C$ over $k = \bar{k}$:
 - the \dfn{arithmetic genus} is $p_a(C) = 1 - \chi(\OO_C)$, the constant term of the Hilbert polynomial read with a sign;
 
 - the **geometric genus** is $p_g(C) = h^0(\tilde{C}, \omega_{\tilde{C}}) = p_a(\tilde{C})$, computed on the normalization $\tilde{C}$.
+:::
+
+::: {.proposition title="One genus for a nonsingular curve"}
+If $X$ is a nonsingular projective curve over $k = \bar k$, then
+\[
+p_a(X) = p_g(X) = \dim_k H^1(X, \OO_X) ,
+\]
+the **genus** $g$ of $X$: since $h^0(\OO_X) = 1$, $p_a = 1 - \chi(\OO_X) = h^1(\OO_X)$, and Serre duality gives $h^0(\omega_X) = h^1(\OO_X)$.
+[@Har10a, Exercise III.5.3, Corollary III.7.7]
 :::
 
 ::: {.proposition}

@@ -18,6 +18,8 @@ prompts:
 - What is a complete linear system?
 - What is a base point of a linear system?
 - What does base-point free mean for the associated line bundle?
+- Show that if $\ell(D) \neq 0$ for a divisor $D$ on a curve, then $\deg D \geq 0$.
+- Show that if $\ell(D) \neq 0$ and $\deg D = 0$, then $D \sim 0$ and $\mcl(D) \cong \OO_X$.
 ---
 
 ::: {.definition}
@@ -27,6 +29,13 @@ The complete linear system of $D$ is the set of effective divisors linearly equi
 \]
 A linear system is a linear subspace of $\abs{D}$, that is, $\PP V$ for a subspace $V \subseteq H^0(X, \OO_X(D))$.
 A point $p$ is a base point when $p \in \supp D'$ for every $D'$ in the system; the base locus $\Bs\abs{D}$ is the set of base points, and the system is base-point free when this is empty.
+:::
+
+::: {.proposition title="Sections and degree on a curve"}
+Let $D$ be a divisor on a nonsingular projective curve $X$ over $k = \bar k$.
+If $\abs{D} \neq \emptyset$, that is $\ell(D) \neq 0$, then $\deg D \geq 0$.
+If moreover $\deg D = 0$, then $D \sim 0$ and $\mcl(D) \cong \OO_X$.
+[@Har10a, Lemma IV.1.2]
 :::
 
 ::: {.definition title="Degenerate"}
