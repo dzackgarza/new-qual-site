@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-HOCNK
 kind: definition
-title: Homotopy Lifting Property
+title: Homotopy lifting property
 classification:
   areas:
   - topology
@@ -14,11 +14,15 @@ review: draft
 ---
 
 ::: {.definition}
-A map $p: E\to B$ has the **homotopy lifting property** with respect to $Y$ iff, given a homotopy $g_t: Y \to B$ and a lift $\tilde g_0: Y\to E$ of $g_0$, there is a homotopy $\tilde g_t: Y\to E$ lifting $g_t$ and starting at $\tilde g_0$.
-A **fibration** is a map with this property for every space $Y$.
-Covering spaces have it for every $Y$, and there the lift is unique.
+Let $p\colon E\to B$ be a continuous map and $Y$ a topological space.
+The map $p$ has the \dfn{homotopy lifting property} with respect to $Y$ if for every [[D-SOVXO|homotopy]] $g_t\colon Y\to B$, $t\in[0,1]$, and every continuous $\tilde g_0\colon Y\to E$ with $p\circ\tilde g_0 = g_0$, there is a homotopy $\tilde g_t\colon Y\to E$ starting at $\tilde g_0$ with $p\circ\tilde g_t = g_t$ for all $t$.
+The map $p$ is a \dfn{fibration} if it has the homotopy lifting property with respect to every space $Y$.
+:::
+
+::: {.proposition}
+A [[D-ANO2D|covering space]] $p\colon\tilde X\to X$ has the homotopy lifting property with respect to every space $Y$, and the lifted homotopy $\tilde g_t$ starting at a given $\tilde g_0$ is unique.
 :::
 
 ::: {.concept}
-See Hatcher, pp. 60 and 375; for covers, Proposition 1.30, p. 60.
+See [@Hat02, p. 60, Proposition 1.30, and p. 375].
 :::
