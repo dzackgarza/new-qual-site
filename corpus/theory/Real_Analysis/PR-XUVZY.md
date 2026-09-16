@@ -3,6 +3,9 @@ schema: qual/card@1
 id: PR-XUVZY
 kind: proposition
 title: Minkowski's inequality
+prompts:
+- State Minkowski's inequality.
+- What is Minkowski's inequality?
 classification:
   areas:
   - real-analysis
