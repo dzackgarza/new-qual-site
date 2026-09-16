@@ -110,3 +110,24 @@ def test_staged_gate_allows_unrelated_edit_with_same_legacy_count(tmp_path: Path
     git(repo, "add", str(path.relative_to(repo)))
     result = run_detector(repo, "--staged-gate")
     assert result.returncode == 0
+
+
+def test_push_gate_rejects_a_finding_introduced_since_the_pushed_base(tmp_path: Path) -> None:
+    repo, path = init_repo(tmp_path, r"Let $x\in A$.")
+    base = git(repo, "rev-parse", "HEAD").stdout.strip()
+    path.write_text(card("Let x∈A."))
+    git(repo, "commit", "-q", "--no-verify", "-am", "content")
+
+    result = run_detector(repo, "--range-gate", base)
+
+    assert result.returncode == 1
+    assert "extraction findings 0 -> 1" in result.stderr
+
+
+def test_push_gate_allows_a_range_that_repairs_a_legacy_finding(tmp_path: Path) -> None:
+    repo, path = init_repo(tmp_path, "Let x∈A and A⊆B.")
+    base = git(repo, "rev-parse", "HEAD").stdout.strip()
+    path.write_text(card(r"Let x∈A and $A\subseteq B$."))
+    git(repo, "commit", "-q", "--no-verify", "-am", "content")
+
+    assert run_detector(repo, "--range-gate", base).returncode == 0
