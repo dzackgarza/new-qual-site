@@ -1,253 +1,189 @@
 ---
 order: 0
+title: Techniques
 ---
 
-# Info / Tips / Techniques
+# Techniques
 
 > A great deal of content borrowed from [Chris Eur's complex analysis notes (Stanford)](https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf).
 
-Some useful notation:
+## Notation
 
-- $\DD_r(a) \da \ts{z\in \CC \st \abs{z-a}< r}$, the open disc of radius $r$ about $a$.
-- $\bar{\DD}_r(a) \da \ts{z\in \CC \st \abs{z-a} \leq r}$, the closed disc of radius $r$ about $a$.
-- $\DD_r^*(a) \da \ts{z\in \CC \st 0 < \abs{z-a} < r}$, the punctured disc of radius $r$ about $a$.
-- $\Delta \da \DD_1(0)$ the standard unit disc
-- $\bar\Delta \da \bar{\DD}_1(0)$ the closed unit disc
-- $\Delta^* \da \DD_1^*(0)$ the punctured unit disc.
-- $\Omega$ an open simply-connected subset of $\CC$.
-- $\OO(\Omega), \Hol(\Omega), \Hol(\Omega, \CC)$ the holomorphic functions $f:\Omega \to \CC$, equipped with the structure of a $\CC\dash$algebra.
+- $\DD_r(a) \coloneqq \ts{z\in \CC \st \abs{z-a}< r}$, the open disc of radius $r$ about $a$.
+- $\bar{\DD}_r(a) \coloneqq \ts{z\in \CC \st \abs{z-a} \leq r}$, the closed disc of radius $r$ about $a$.
+- $\DD_r^*(a) \coloneqq \ts{z\in \CC \st 0 < \abs{z-a} < r}$, the punctured disc of radius $r$ about $a$.
+- $\Delta \coloneqq \DD_1(0)$, the open unit disc; $\bar\Delta \coloneqq \bar{\DD}_1(0)$, the closed unit disc; $\Delta^* \coloneqq \DD_1^*(0)$, the punctured unit disc.
+- $\Omega$ denotes an open simply connected subset of $\CC$.
+- $\OO(\Omega) = \Hol(\Omega) = \Hol(\Omega, \CC)$ denotes the $\CC$-algebra of holomorphic functions $f\colon\Omega \to \CC$.
 
-## Greatest Hits
+## Principal results
 
-Things to know well:
-
-- Estimates for derivatives
-- [[complex-analysis/cauchy-theory/cauchys-theorem]]
-- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula and mean value property]]
-- [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
+- Estimates for derivatives: [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy's inequality]]
+- [[complex-analysis/cauchy-theory/cauchys-theorem|Cauchy's theorem]]
+- [[complex-analysis/cauchy-theory/the-integral-formula|Cauchy's integral formula and the mean value property]]
 - [[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]
 - [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]
-- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]]
-- [[complex-analysis/counting-zeros/rouches-theorem|Rouche's theorem]]
+- [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|The maximum modulus principle and the open mapping theorem]]
+- [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]
 - [[complex-analysis/cauchy-theory/schwarz-reflection|The Schwarz reflection principle]]
-- [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|The Schwarz lemma]]
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass]]
+- [[complex-analysis/conformal-maps/the-schwarz-lemma|The Schwarz lemma]]
+- [[complex-analysis/singularities/casorati-weierstrass-and-picard|The Casorati--Weierstrass theorem and the Picard theorems]]
 - [[complex-analysis/conformal-maps/build-me-a-map|Conformal maps]]
-- [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and plane]]
+- [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Automorphisms of the disc and the plane]]
 - [[complex-analysis/cauchy-theory/the-identity-principle|The identity principle]]
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Picard theorems]]
 - [[complex-analysis/residues-and-contours/computing-residues|Computing residues]]
-- Jordan's lemma
-- [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy-Riemann equations]]
+- [[T-ZO5UU|Jordan's lemma]]
+- [[complex-analysis/holomorphic-functions/the-cauchy-riemann-equations|The Cauchy--Riemann equations]]
 - [[complex-analysis/counting-zeros/the-argument-principle|The argument principle]]
 - [[complex-analysis/conformal-maps/the-riemann-mapping-theorem|The Riemann mapping theorem]]
 - [[complex-analysis/singularities/removable-poles-essential|Riemann's removable singularity theorem]]
-- [[complex-analysis/holomorphic-functions/harmonic-functions|Harmonic functions and their mean value property]]
+- [[complex-analysis/holomorphic-functions/harmonic-functions|Harmonic functions and the mean value property]]
 
-For a compact statement sheet, see [[attachments/ComplexAnalysisNotes.pdf|Complex analysis theorem summary]].
+[[attachments/ComplexAnalysisNotes.pdf|Complex analysis theorem summary]] is a compact statement sheet.
 
-## Common tricks
+## Identities
 
-- Virtually any time: consider $1/f(z)$ and $f(1/z)$.
+The algebraic identities for $z\bar z$, $\Re z$, $\Im z$, the exponential forms of $\cos$, $\sin$, $\cosh$, $\sinh$, and the zeros and periods of the hyperbolic functions are on [[complex-analysis/basics/complex-arithmetic#Identities|Complex arithmetic]].
 
-:::{.remark title="Showing a function is constant"}
-If you want to show that a function $f$ is constant, try one of the following:
-
-- Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
-- Show that $f$ is entire and bounded.
-  - If you additionally want to show $f$ is zero, show $\lim_{z\to\infty} f(z) = 0$.
-
-:::
-:::{.fact}
-To show a function is holomorphic,
-
-- Use Morera's theorem
-- Find a primitive (sufficient but not necessary)
-
-:::
-:::{.fact}
-To count zeros:
-
-- Rouche's theorem
-- The argument principle
+::: {.fact}
+$$
+\begin{aligned}
+dz &= dx + i\,dy, \\
+d\bar z &= dx - i\,dy, \\
+f_z &= f_x = f_y / i \quad \text{for } f \text{ holomorphic},
+\end{aligned}
+$$
+and for $\ell\in\ZZ$,
+$$
+\int_{0}^{2 \pi} e^{i \ell x} \dx =
+\begin{cases}
+2 \pi & \ell=0, \\
+0 & \ell\neq 0.
+\end{cases}
+$$
 
 :::
-## Basic but Useful Facts
 
-### Arithmetic
+::: {.fact}
+\envlist
 
-:::{.fact title="Some useful facts about basic complex algebra"}
-\[
-z\bar z &= \abs{z}^2 &&
-\Arg(z/w) = \Arg(z) - \Arg(w) \\
-\Re(z) &= { z + \bar z \over 2} &&
-\Im(z) = {z - \bar{z} \over 2i}
-.\]
-
-Exponential forms of cosine and sine, where it's sometimes useful to set $w\da e^{iz}$:
-\[
-\cos(z)
-&= \frac 1 2 \qty{e^{iz} + e^{-iz}} = {1\over 2}(w+ w\inv)\\
-\sin(z)
-&= \frac{1}{2i}\qty{e^{iz} - e^{-iz}} = {1\over 2i}(w-w\inv)
-.\]
-
-Exponential forms of *hyperbolic* cosine and sin:
-\[
-\cosh(z)
-&= \cos(iz)
-= {1\over 2}\qty{e^z + e^{-z}} \\
-\sinh(z)
-&= -i \sin(iz)
-= {1\over 2}\qty{e^z - e^{-z}}
-.\]
-
-Some other useful facts about the hyperbolic exponentials:
-
-- They are periodic with period $2\pi i$.
-- $\dd{}{z}\cosh(z) = \sinh(z)$ and $\dd{}{z}\sinh(z) = \cosh(z)$.
-- $\sinh$ is odd and $\cosh$ is even.
-- $\cosh(z + i\pi) = -\cosh(z)$ and $\sinh(z + i\pi) = -\sinh(z)$.
-- $\cosh$ has zeros at $\ts{i\pi\qty{2k+1\over 2}} = \ts{i \qty{\pi/2 + k\pi}}$, i.e. $\cdots, -\pi/2, \pi/2, 3\pi/2,\cdots$, the half-integers.
-- $\sinh$ has zeros at $\ts{i\pi k}$, i.e. the integers.
+- $\abs{f}^2 = f\bar{f}$.
+- $z$ is purely imaginary if and only if $\bar{z} = -z$, and $z\in \RR$ if and only if $\bar z = z$.
+- $\log\abs{z} = {1\over 2}\log\qty{\abs{z}^2} = {1\over 2}\log\qty{x^2 + y^2}$ for $z = x+iy\neq 0$.
+- For $w, z, a\in\CC$ with $\abs{w-a}<\abs{z-a}$,
+$$
+\frac{1}{z-w}
+=\frac{1}{(z-a)\qty{1-\frac{w-a}{z-a}}}
+=\sum_{n=0}^{\infty}\frac{(w-a)^n}{(z-a)^{n+1}}.
+$$
+The standard expansions, generalized binomial coefficients, Cauchy products, and inverses of power series are on [[complex-analysis/basics/series-reference|Series reference]].
 
 :::
-:::{.fact}
-Some computations that come up frequently:
-\[
-\abs{z \pm w}^2 &= \abs{z}^2 + \abs{w}^z + 2\Re(\bar{w}z) \\
-(a+bi)(c+di) &= (ac - bd) + (ad + bc) \\
-{1\over \abs{a+b}} &\leq {1 \over {\abs a - \abs b}} &&
-\abs{e^{z}} = e^{\Re(z)}, \quad \arg(e^z) = \Im(z)
-.\]
+
+## Holomorphy
+
+::: {.fact title="Sufficient conditions for holomorphy"}
+A function $f$ on an open set $U$ is holomorphic if any of the following holds:
+
+- $f$ is continuous and $\int_{\bd T} f = 0$ for every closed triangle $T\subseteq U$ ([[complex-analysis/cauchy-theory/morera-and-converses|Morera's theorem]]);
+- $f$ has a holomorphic primitive on $U$;
+- $f$ is locally the sum of a convergent power series.
 
 :::
-### Calculus
 
-:::{.fact}
-Various differentials:
-\[
-dz &= dx + i~dy \\
-d\bar z &= dx - i~dy \\ \\
-f_z &= f_x = f_y / i
-.\]
+::: {.fact}
+\envlist
 
-Integral of a complex exponential:
-\[
-\int_{0}^{2 \pi} e^{i \ell x} d x
-&=\left\{\begin{array}{ll}
-{2 \pi} & {\ell=0} \\
-{0} & \text{else}
-\end{array}\right.
-.\]
+- If $f$ is holomorphic with no zeros, then $1/f$ is holomorphic; applying the maximum modulus principle or Liouville's theorem to $1/f$ gives the minimum modulus principle and constancy of entire functions bounded below by a positive constant.
+- If $f$ is holomorphic and nonvanishing on a simply connected domain $\Omega$, then $f = e^g$ for some holomorphic $g$ on $\Omega$, and $f^{1/n} \coloneqq \exp\qty{{1\over n}g}$ is a holomorphic $n$th root.
+- If $f$ is holomorphic on a neighborhood of $\bar\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a unimodular constant times a finite Blaschke product.
+- The substitutions $z\mapsto 1/z$, $f\mapsto 1/f$, and $w = e^z$ transfer statements between $0$ and $\infty$, between zeros and poles, and between strips and annuli.
 
 :::
-- Set $w=e^z$.
-- If $f$ has no zeros, $1/f$ is holomorphic, so apply a theorem about holomorphic functions to the reciprocal.
-  This is the standard route to the minimum modulus principle and to Liouville arguments about functions bounded below.
-- If $f$ is holomorphic in a neighborhood of $\DD$ and $\abs{f} = 1$ on $\bd \DD$, then $f$ is a finite Blaschke product.
-- If $\Omega$ is connected, $f$ admits a log and exponential, so try setting $f^{1\over n} = \exp\qty{{1\over n}\log(f)}$.
 
-## Holomorphic
+## Constancy
 
-- To show a function is holomorphic,
-	- Use Morera's theorem
-	- Find a primitive (sufficient but not necessary)
-	- Express $f$ as a convergent power series
+::: {.fact title="Criteria for a holomorphic function to be constant"}
+Let $f$ be holomorphic on a domain $U$.
+Then $f$ is constant if any of the following holds:
 
-- Holomorphic functions have isolated zeros.
+- $f' = 0$ on $U$; by the Cauchy--Riemann equations it suffices that $u_x = u_y = 0$ for $u = \Re f$.
+- One of $\Re f$, $\Im f$, $\abs{f}$, or $\arg f$ (for a continuous branch) is constant.
+- $\abs f$ attains a maximum in $U$, or $f$ is nonvanishing and $\abs f$ attains a minimum in $U$.
+- $f(U)$ is not open, for instance $f(U)\subseteq\RR$ or $f(U)\subseteq \bd\DD_r(0)$ ([[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|open mapping theorem]]).
+- $U$ is bounded, $f$ extends continuously to $\bar U$, $f$ has no zeros in $U$, and $\abs f$ is constant on $\bd U$: the maximum modulus principle applied to $f$ and to $1/f$ shows $\abs f$ is constant.
 
-## Arithmetic
+If moreover $U = \CC$, then $f$ is constant if any of the following holds:
 
-Some silly arithmetic tricks:
+- $f$ is bounded ([[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Liouville's theorem]]); if also $f(z)\to 0$ as $z\to\infty$, then $f\equiv 0$.
+- $\abs f\geq M$ for some $M>0$, by Liouville's theorem applied to $1/f$.
+- $e^f$ or $e^{-f}$ is bounded, since $\abs{e^{f}} = e^{\Re f}$.
+- $f$ is periodic with two $\RR$-linearly independent periods, since then $f$ is bounded by its bound on a closed fundamental parallelogram.
+- $f$ omits two values of $\CC$, for instance when $f(\CC)$ misses an open set (little Picard theorem).
 
-- Absolutely essential: $\abs{f}^2 = f\bar{f}$.
-- $z$ is purely imaginary $\iff \bar{z} = -z$.
-- $z\in \RR \iff \bar z = z$.
-- $\log\qty{\abs{z}} = {1\over 2}\log\qty{\abs{z}^2} = {1\over 2}\log\qty{x^2 + y^2}$, which is easier to differentiate.
-- To prove $a=b$, try $a/b = 1$ or $a-b=0$.
-- $\int_0^{2\pi} e^{i(m-n)\theta}\dtheta = \chi_{m=n}\cdot 2\pi$.
+If $f$ and $g$ are holomorphic on a domain $U$ and $f-g$ has a zero set with a limit point in $U$, then $f = g$ ([[complex-analysis/cauchy-theory/the-identity-principle|identity principle]]).
 
-## Showing a function is constant (or zero)
+:::
 
-- Show $f' = 0$.
-	- Can write $f=u+iv$ and show $u_x, u_y = 0$ and apply CR.
-- Show $\abs{f}=0$ on the boundary and apply the MMP.
-- Show that $f$ attains a minimum or maximum on the interior of a domain where it is nonzero.
-- Show that $f$ is entire and bounded.
-  - If you additionally want to show $f$ is zero, show $\lim_{z\to\infty} f(z) = 0$.
-  - Useful trick: show that *either* $\abs{f} \geq M$ or $\abs{f} \leq M$, then by Liouville on $f$ or $1/f$ respectively, $f$ must be constant.
-  - Similar trick: show either $e^f$ or $e^{-f}$ is bounded.
-  - If the function is periodic, just bound it on a fundamental domain.
-- Show that $f(\CC)$ is not an open set (e.g. $\RR$ or $\bd \DD_r(0)$, and apply the open mapping theorem.
-	- More generally, the image can be dimension 0 or 2, but never 1. 
-	- E.g. if $\im(f) \subseteq \RR$ or $\abs{f} = R$ is constant.
-- A holomorphic function with a non-isolated zero is identically zero.
-	- How to use: show $f-g$ has uncountably many zeros
-- Show that $f$ omits at least 2 values and apply little Picard.
-	- E.g. if $f$ misses an open set, or $\abs{f} \geq M$ or $\abs{f} \leq M$.
-- Define $g\da e^f$, then $\abs{g} = e^{\Re(f)}$ and if $g$ is constant then $f$ is constant.
-- Show any of the following are constant:
-	- $u = \Re(f)$
-	- $v = \Im(f)$
-	- $\abs{f}$
-	- $\Arg(f)$
-- Show that $f$ preserves $\bd \DD$, so $\abs{f(z)} = 1$ when $\abs{z} = 1$, and has no zeros in $\DD$.
-- To show $f(z) = g(z)$ infinitely often, show $f(z)/g(z)$ (or $f(1/z)/g(1/z)$) has an essential singularity and apply Picard or Casorati.
+## Singularities
 
-## Singularities 
+::: {.fact title="Classifying an isolated singularity"}
+Let $f$ be holomorphic on a punctured disc about $z_0$.
 
-- Let $z_0$ be a singularity of $f$. To show $z_0$ is...
-	- **Removable**: show that $\lim_{z\to z_0} f(z)$ is bounded.
-	- **A pole of some order:** show $\lim_{z\to z_o}f(z) = \infty$.
-	- **A pole of order $m$**: write $f(z) = (z-z_0)^mg(z)$ where $g(z_0)\neq 0$ (or check the Laurent expansion directly).
-    - Can also check that $\del_z^k f(z_0) \neq 0$ for $k<m$ but $\del_z^m f(z_0) = 0$.
-	- **Essential**: show that $\lim_{z\to z_0} f(z)$ doesn't exist (e.g. if it's oscillatory).
-    - Alternatively, show $z_0$ is neither removable nor a pole, or that $f$ has a Laurent expansion about $z_0$ with infinitely many negative terms.
-  - It can be useful to take a specific sequence $\ts{z_k}\to z_0$.
+- $z_0$ is removable if and only if $f$ is bounded near $z_0$.
+- $z_0$ is a pole if and only if $\abs{f(z)}\to\infty$ as $z\to z_0$.
+- $z_0$ is a pole of order $m$ if and only if $f(z) = (z-z_0)^{-m}g(z)$ with $g$ holomorphic near $z_0$ and $g(z_0)\neq 0$, equivalently if $1/f$ has a zero of order $m$ at $z_0$, equivalently if the Laurent expansion at $z_0$ has lowest term of degree $-m$.
+- $z_0$ is essential if and only if $\lim_{z\to z_0} f(z)$ exists neither in $\CC$ nor as $\infty$, equivalently if the Laurent expansion at $z_0$ has infinitely many terms of negative degree.
+  Two sequences $z_k\to z_0$ along which $f$ has different limits show this.
 
-- $f$ and $f'$ have the same poles.
+A meromorphic function $f$ and its derivative $f'$ have the same poles.
+
+:::
+
+::: {.fact}
+If $h$ has an essential singularity at $z_0$, then by the great Picard theorem, in every punctured neighborhood of $z_0$, $h$ takes every value of $\CC$ infinitely often with at most one exception.
+With $h \coloneqq f/g$, this shows $f(z) = cg(z)$ for infinitely many $z$ near $z_0$, for all but at most one $c\in\CC$.
+
+:::
 
 ## Zeros
 
-- To show that a zero $z_0$ is order $n$, show that $f^{(<n)}(z_0) = 0$ but $f^{(n)}(z_0) \neq 0$.
-- Getting rid of zeros: divide by a Blaschke product.
-- To count zeros:
-	- Rouche's theorem
-	- The argument principle
-- If $f(z_0)\neq 0$, by continuity there is some neighborhood where $f$ is nonzero.
-	- Conversely, if $f$ is holomorphic at $z_0$ *is* a zero, there is punctured neighborhood of $z_0$ where $f$ is nonzero.
+::: {.fact}
+Let $f$ be holomorphic near $z_0$.
 
-## Estimating
+- $f$ has a zero of order $n$ at $z_0$ if and only if $f^{(k)}(z_0) = 0$ for $0\leq k<n$ and $f^{(n)}(z_0) \neq 0$.
+- If $f(z_0)\neq 0$, then $f$ is nonzero on a neighborhood of $z_0$ by continuity.
+- If $f(z_0) = 0$ and $f$ is not identically zero near $z_0$, then $f$ is nonzero on a punctured neighborhood of $z_0$.
+- Dividing by a finite Blaschke product with the same zeros in $\DD$ gives a function without zeros in $\DD$ with the same modulus on $\bd\DD$.
+- Zeros in a region are counted by [[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]] and [[complex-analysis/counting-zeros/the-argument-principle|the argument principle]].
 
-- To prove $a\leq b$, try showing ${a\over b} \leq 1$ and reason about $\DD$, or show $b-a\geq 0$, 
-- To bound a rational function, use the reverse triangle inequality:
-\[
-\abs{a\pm b} \geq \abs{ \abs{a} - \abs{b}} \implies {1\over \abs{a\pm b}} \leq {1\over \abs{\abs{a} - \abs{b} } }
-.\]
-- Bounding a derivative using the original function: Cauchy's formula.
-  - Also works to bound a function in terms of its integral, e.g. over a compact set like a curve.
-- If $\abs{f} = M$ on $\bd \Omega$, then if (importantly) $f\neq 0$ in $\Omega$ then $\abs{f} = M$ on all of $\bar \Omega$ by apply the MMP to $f$ and $1/f$.
-	- Why $f\neq 0$ is necessary: take $f(z) = z$.
-- To show that a sequence of harmonic functions converge on e.g. a disc or rectangle, find good estimates on the boundary and apply the MMP.
-- For real analysis: if $\abs{f'} \leq M$, apply the mean value theorem to get $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
-- To show $\abs{f} \leq \abs{g}$: if you have a factor of $z$ to play with, try to apply Schwarz to $f/g$ to get $\abs{f/g}\leq \abs{z}$.
+:::
 
-  
+## Estimates
+
+::: {.fact}
+\envlist
+
+- For $\abs a\neq \abs b$, the reverse triangle inequality gives
+$$
+{1\over \abs{a\pm b}} \leq {1\over \abs{\abs{a} - \abs{b} } }.
+$$
+- The Cauchy integral formula bounds derivatives of $f$ by the maximum of $\abs f$ on a circle, and bounds $\abs{f}$ at interior points by an integral of $\abs f$ over a curve.
+- If $u_n$ are harmonic on a bounded domain $U$, continuous on $\bar U$, and $u_n$ converges uniformly on $\bd U$, then $u_n$ converges uniformly on $\bar U$, by the maximum principle applied to $u_n - u_m$.
+- For $f\colon[a,b]\to\RR$ differentiable with $\abs{f'} \leq M$, the mean value theorem gives $\abs{f(x) - f(y)} \leq M\abs{x-y}$.
+- If $h$ is holomorphic on $\DD$ with $\abs h\leq 1$ and $h(0) = 0$, then $\abs{h(z)}\leq\abs z$ by the [[complex-analysis/conformal-maps/the-schwarz-lemma|Schwarz lemma]]; applied to $h \coloneqq f/g$ this gives $\abs{f(z)}\leq\abs{z}\abs{g(z)}$.
+
+:::
+
+::: {.example}
+In the criterion that a zero-free $f$ with $\abs f$ constant on $\bd U$ is constant, the hypothesis that $f$ has no zeros is necessary: $f(z) = z$ has $\abs f = 1$ on $\bd\DD$ and is not constant.
+
+:::
+
 ## Polynomials
 
-- $f$ is polynomial when:
-		- $f^{(n)} =0$ for every $n$ large enough (e.g. using Cauchy's inequality)
-		- $f$ is entire and its singularity at $\infty$ is a pole (or removable, for a constant polynomial).
+::: {.fact}
+An entire function $f$ is a polynomial if and only if $f^{(n)} = 0$ for all sufficiently large $n$, if and only if $f$ has a pole or a removable singularity at $\infty$.
+Cauchy's inequality shows $f^{(n)} = 0$ for $n>d$ when $\abs{f(z)}\leq C\abs z^d$ for large $\abs z$.
 
-## Series
-
-The standard expansions, generalized binomial coefficients, Cauchy products, inverses, and square-root expansions are collected in [[complex-analysis/basics/series-reference|Series: Reference]].
-
-A frequently used geometric expansion is
-\[
-\frac{1}{z-w}
-=\frac{1}{(z-a)\left(1-\frac{w-a}{z-a}\right)}
-=\sum_{n=0}^{\infty}\frac{(w-a)^n}{(z-a)^{n+1}},
-\qquad \abs{w-a}<\abs{z-a}.
-\]
+:::
