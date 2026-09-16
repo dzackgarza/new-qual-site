@@ -18,6 +18,7 @@ prompts:
 - What is the residue field at a point, and what does it mean to evaluate a function there?
 - What is a rational point? A closed point? A generic point?
 - What is specialisation?
+- What is the difference between a general point and the generic point?
 ---
 
 ::: {.definition}
@@ -29,6 +30,18 @@ A **generic point** of an irreducible closed $Z$ is $\eta$ with $\closure{\ts{\e
 For $X$ over $k$, a **rational point** is an $x$ with $\kappa(x) = k$.
 
 Write $\tilde x \leadsto x$, "$\tilde x$ **specialises** to $x$", when $x \in \closure{\ts{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ in an affine chart.
+:::
+
+::: {.definition title="General points and general fibres"}
+Let $X$ be an irreducible scheme.
+A property holds at a \dfn{general point} of $X$ if there is a dense open $U \subseteq X$ such that it holds at every point of $U$.
+For a morphism $f \colon X \to Y$ with $Y$ irreducible, a property holds for the \dfn{general fibre} of $f$ if there is a dense open $V \subseteq Y$ such that the fibre $X_y$ has it for every $y \in V$.
+:::
+
+::: {.example}
+General and generic differ.
+On $\AA^1_k = \Spec k[t]$ over an algebraically closed field $k$, the property "$\kappa(x) = k$" holds at a general point, since it holds at every closed point and the closed points form the dense open set $\AA^1_k \setminus \{\eta\}$, but it fails at the generic point $\eta$, where $\kappa(\eta) = k(t)$.
+For the family $V(xy - t) \to \AA^1_t$, the general fibre is a smooth conic $xy = c$ with $c \neq 0$, while the generic fibre is the curve $xy = t$ over the field $k(t)$.
 :::
 
 ::: {.remark}

@@ -61,3 +61,7 @@ Torsion is classified and the rank is not, which is where to stop.
 ## Families of elliptic curves
 
 [[D-ELLSCH]]
+
+## Twists
+
+[[D-VARTWIST]]

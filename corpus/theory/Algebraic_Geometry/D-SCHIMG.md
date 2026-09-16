@@ -19,11 +19,17 @@ review: draft
 prompts:
 - What is the scheme-theoretic image of a morphism?
 - Why is the set-theoretic image not usable?
+- What is the scheme-theoretic closure of a locally closed subscheme?
 ---
 
 ::: {.definition}
-For $f: X \to Y$, the **scheme-theoretic image** is the smallest closed subscheme of $Y$ through which $f$ factors.
+For $f: X \to Y$, the image of $f$ \dfn{lies in} a closed subscheme $Z \subseteq Y$ with ideal sheaf $\mci_Z$ if the composite $\mci_Z \to \OO_Y \to f_* \OO_X$ is zero, equivalently if $f$ factors through $Z$.
+The \dfn{scheme-theoretic image} of $f$ is the smallest closed subscheme of $Y$ in which the image of $f$ lies, the intersection of all such $Z$.
 When $\mci \da \ker(\OO_Y \to f_* \OO_X)$ is quasicoherent — for instance when $f$ is quasicompact and quasiseparated — this ideal sheaf defines it.
+:::
+
+::: {.definition title="Scheme-theoretic closure"}
+The \dfn{scheme-theoretic closure} of a locally closed immersion $i \colon X \to Y$ is the scheme-theoretic image of $i$.
 :::
 
 ::: {.proposition}

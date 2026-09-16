@@ -30,6 +30,22 @@ A **closed subscheme** is an equivalence class of closed immersions, where two a
 An **immersion** is a morphism making $X$ isomorphic to an open subscheme of a closed subscheme of $Y$.
 :::
 
+::: {.definition title="Locally closed immersion"}
+A morphism $f \colon X \to Y$ is a \dfn{locally closed immersion} if it factors as $X \to U \to Y$ with $X \to U$ a closed immersion and $U \to Y$ an open immersion.
+:::
+
+::: {.proposition}
+Every immersion is a locally closed immersion, and a quasicompact locally closed immersion is an immersion; in particular the two notions agree when $Y$ is locally Noetherian.
+:::
+
+::: {.proof}
+1. If $X \cong V$ is open in a closed subscheme $Z \subseteq Y$, write $V = Z \cap U$ for an open $U \subseteq Y$; then $V$ is a closed subscheme of $U$.
+
+2. If $X \to U$ is a closed immersion into an open $U \subseteq Y$ and $f$ is quasicompact, the ideal sheaf $\ker(\OO_Y \to f_* \OO_X)$ is quasicoherent and defines the scheme-theoretic closure $\overline{X}$ of $X$ in $Y$ ([[D-SCHIMG]]).
+   Its restriction to $U$ is the ideal of $X$ in $U$, so $X = \overline{X} \cap U$ is open in $\overline{X}$.
+   Over a locally Noetherian $Y$, every closed immersion into an open subscheme is quasicompact.
+:::
+
 ::: {.remark}
 The surjectivity clause is the whole definition, and the examiner asks about it by asking why a homeomorphism onto a closed set is not enough.
 The answer is $\Spec k \to \Spec k[\varepsilon]/(\varepsilon^2)$ versus $\Spec k[\varepsilon]/(\varepsilon^2) \to \Spec k[\varepsilon]/(\varepsilon^2)$: the underlying spaces are the same one point, and only the sheaf map distinguishes the reduced point from the fat one.
