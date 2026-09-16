@@ -17,18 +17,33 @@ The site is published at `publication-milestone`, complete except for unsolved p
 Every remedial node below precedes it, and the long-tail solution work in [Author solutions](#7-author-solutions) follows it.
 
 The remedial nodes are listed in priority order.
-Take work from the highest-priority node that has ready work; work a lower node only while every higher node is closed or blocked on something outside the repository, such as a MinerU Flash failure recorded against its source.
+Take work from the highest-priority node that has ready work; work a lower node only while every higher node is closed or blocked on something outside the repository, such as an unreachable external service recorded against its source.
 Priority is not a prerequisite edge: a blocked higher node does not idle the stream, and it stays first the moment it unblocks.
 
-1. `copy-policy-repair`
+1. `policy-consolidation`
 
-2. `pdf-source-intake` — ingestion fixes the problem population, so the denominator is stable before mathematics is corrected over it.
+2. `copy-policy-repair`
 
-3. `math-defect-repair`
+3. `pdf-source-intake` — ingestion fixes the problem population, so the denominator is stable before mathematics is corrected over it.
 
-4. `merged-proof-adjudication`
+4. `math-defect-repair`
 
-- **`copy-policy-repair`**. **Needs:** none.
+5. `merged-proof-adjudication`
+
+6. `ag-notes-migration`
+
+7. `tooling-remediation`
+
+8. `complaints-clearance`
+
+- **`policy-consolidation`**. **Needs:** none.
+  Every named policy code lives in one catalogue, [CONTRIBUTING.md](CONTRIBUTING.md): the `QUAL-*` table, the copy, structure and presentation policies, and the review-crawl defect patterns now in `REVIEW_POLICY.md`, which is folded in and deleted, with the crawler workflow and every reference repointed.
+  The catalogue governs presentation — wiki structure, exposition style, level of detail and rigour, uniform presentation, completeness, and linking every named term to its definition — not mathematical conventions, which come from the textbooks and notes the content is drawn from.
+  Where the corpus shows stylistic drift, the catalogue fixes one convention; defined terms are written `\dfn{term}`.
+  Rules imported from another project's guide that do not govern this corpus are removed, and `AGENTS.md` carries no rule or imported guidance that duplicates or contradicts the catalogue.
+  **Acceptance:** one catalogue, no duplicate or conflicting codes, no references to deleted files, and the formatter accepts the file.
+
+- **`copy-policy-repair`**. **Needs:** `policy-consolidation`, `tooling-remediation` (the `\dfn` renderer).
   The authorial-stance, prose and mathematical-authoring policies in [CONTRIBUTING.md](CONTRIBUTING.md) (`STANCE-*`, `PROSE-*`, `RESOURCE-*`, `PR-*`, `EV-*`, `MA-*`, `DEF-*`, `TERM-*`, `SYM-*` and the rest of that catalogue) were written from violations observed in the copy the site already publishes.
   Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
   Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
@@ -39,13 +54,13 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
 - **`pdf-source-intake`**. **Needs:** none.
   Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
   The queue is the live worklist; do not copy its count or filenames here.
-  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in MinerU Flash Markdown extraction with repository evidence of that extraction path.
+  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in Markdown extraction from MinerU Flash or the Mistral OCR API, with repository evidence of that extraction path.
   An old extraction file with unknown provenance must be regenerated before it can support intake.
   Create or reconcile the canonical collection and problem cards from that deterministic extraction, with the PDF retained as provenance.
   Model/source-image inspection may resolve a specific identified extraction error or ambiguity, but it is not an alternative extraction method and cannot certify unchallenged portions of the extraction.
   For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count.
-  The same extraction rule applies when claims about the reference's contents depend on reading the PDF. If MinerU Flash is unavailable or fails for a source, leave that source open and record the extraction blocker; do not substitute PDF rendering, OCR, model vision, or another parser.
-  **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed deterministic MinerU Flash extraction (or an already-retained extraction with established MinerU provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
+  The same extraction rule applies when claims about the reference's contents depend on reading the PDF. A source that MinerU Flash fails on is extracted with Mistral OCR; do not substitute PDF rendering, model vision, or another parser.
+  **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed MinerU Flash or Mistral OCR extraction (or an already-retained extraction with established provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
   Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
 
 - **`math-defect-repair`**. **Needs:** none.
@@ -58,7 +73,20 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
 - **`merged-proof-adjudication`**. **Needs:** none.
   The 1.R2 / 1.R3 item in [Close out the branch consolidation](#12-close-out-the-branch-consolidation): read both authored proofs for every card where the consolidation merge chose one mechanically, starting with the four whose merged text matches neither parent and the six Spring 2019 algebra cards, and including the twenty recovered cards in `81373e972` that compete with `main`. **Acceptance:** that item is checked, each card carrying a proof chosen or combined by mathematical reading.
 
-- **`publication-milestone`**. **Needs:** `copy-policy-repair`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`. Deploy the site from a revision at which all four are closed.
+- **`ag-notes-migration`**. **Needs:** none.
+  Work [`queues/H-ag-notes-migration.md`](queues/H-ag-notes-migration.md) and its section queues until no row is `missing`, `partial`, `source-repair` or `unreviewed`.
+  **Acceptance:** every row is `migrated`, `reference-only` or `private`, each with its source-to-target evidence.
+
+- **`tooling-remediation`**. **Needs:** none.
+  Repair the observed tooling defects that let broken content pass or misrender: inline `\dfn{term}` renders as a styled `<dfn>` element instead of being dropped; issue #87 (undefined macros in authored prose pass `just check`); issue #89 (`qualc check` stops at the first error); card validation rejects duplicate YAML mapping keys; authoring commands use the supported Pandoc rather than the host one; the review crawler covers every registered area, including `algebraic-geometry`; and `just commit-card` refuses to run from a secondary worktree, as `QUAL-09` requires.
+  **Acceptance:** each defect is reproduced by a failing test first and fixed at its owner, and the corresponding issues and complaint entries are closed.
+
+- **`complaints-clearance`**. **Needs:** none.
+  Every entry in [COMPLAINTS.md](COMPLAINTS.md) is repaired at its owner or removed because it is not a defect in this repository, as that file prescribes.
+  **Acceptance:** `COMPLAINTS.md` holds no entry observed before the milestone, and Queue H is empty.
+
+- **`publication-milestone`**. **Needs:** `policy-consolidation`, `copy-policy-repair`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`, `ag-notes-migration`, `tooling-remediation`, `complaints-clearance`.
+  Deploy the site from a revision at which all of them are closed.
   **Acceptance:** the deployed `revision.txt` names that revision, and the rendered site is inspected under the same criteria as [Prove the deployed site](#prove-the-deployed-site).
 
 ### Solutions after the milestone
