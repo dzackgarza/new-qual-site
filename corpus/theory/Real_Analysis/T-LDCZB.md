@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-LDCZB
 kind: theorem
-title: Riesz Representation for Hilbert Spaces
+title: Riesz representation theorem for Hilbert spaces
 classification:
   areas:
   - real-analysis
@@ -14,9 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $\Lambda$ is a continuous linear functional on a Hilbert space $H$, then there exists a unique $y \in H$ such that
-\[
-\forall x\in H,\quad \Lambda(x) = \inner{x}{y}
-.\]
+::: {.theorem}
+Let $H$ be a [[D-7QQUO|Hilbert space]] and let $\Lambda\in H\dual$ be a continuous [[D-EPSKF|linear functional]] on $H$.
+Then there exists a unique $y \in H$ such that
+$$
+\Lambda(x) = \inner{x}{y} \quad\text{for all } x\in H .
+$$
 :::
