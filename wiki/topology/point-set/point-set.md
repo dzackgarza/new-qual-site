@@ -13,20 +13,13 @@ topics:
 - Baire Spaces
 ---
 
-# Point-Set
+# Point-set topology
 
-## Summary and Topics
-
-Some key high-level topics:
-
-- Connectedness
-- Compactness
-- Metric spaces
-- Hausdorff spaces
+## Continuous images
 
 [[PR-ZCUXL]]
 
-## Metric Spaces and Analysis
+## Metric spaces and analysis
 
 [[T-7DICT]]
 
@@ -34,15 +27,17 @@ Some key high-level topics:
 
 [[PR-6T3IL]]
 
-:::{.proof}
-Take $\theset{B_{\eps \over 2}(y) \suchthat y\in Y}\covers Y$, pull back to an open cover of $X$, has Lebesgue number $\delta_L > 0$, then $x' \in B_{\delta_L}(x) \implies f(x), f(x') \in B_{\eps \over 2}(y)$ for some $y$. 
+::: {.proof}
+Let $f\colon X\to Y$ be continuous with $X$ a compact metric space, and let $\varepsilon>0$.
+The sets $f\inv\qty{B_{\varepsilon/2}(y)}$ for $y\in Y$ form an open cover of $X$; let $\delta>0$ be a Lebesgue number for it.
+If $d(x,x')<\delta$, then $\ts{x,x'}$ has diameter less than $\delta$, so it lies in some $f\inv\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
 
 :::
 
 [[C-EBAGE]]
 
-:::{.remark}
-Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded derivative.
+::: {.example title="A uniformly continuous function that is not Lipschitz"}
+$f(x) = \sqrt x$ on $[0, 1]$ is uniformly continuous, being continuous on a compact set, and is not Lipschitz, since $\abs{f(x)-f(0)}/\abs{x-0} = 1/\sqrt x$ is unbounded as $x\to 0^+$.
 
 :::
 
@@ -62,24 +57,20 @@ Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded deriv
 
 [[T-UEXBK]]
 
-:::{.proof}
-\envlist
-
-- Let $\theset{A_i} \rightrightarrows A$ be a covering of $A$ by sets open in $A$.
-- Each $A_i = B_i \intersect A$ for some $B_i$ open in $B$ (definition of subspace topology)
-- Define $V = \theset{B_i}$, then $V \rightrightarrows A$ is an open cover.
-- Since $A$ is closed, $W\definedas B\setminus A$ is open
-- Then $V\union W$ is an open cover of $B$, and has a finite subcover $\theset{V_i}$
-- Then $\theset{V_i \intersect A}$ is a finite open cover of $A$.
+::: {.proof}
+Let $B$ be compact and $A\subseteq B$ closed, and let $\ts{A_i}_{i\in I}$ be a cover of $A$ by sets open in $A$.
+By definition of the subspace topology, $A_i = B_i \intersect A$ for some $B_i$ open in $B$.
+Since $A$ is closed, $W\coloneqq B\sm A$ is open, and $\ts{B_i}_{i\in I}\union\ts{W}$ is an open cover of $B$.
+A finite subcover $\ts{B_{i_1},\ldots,B_{i_k},W}$ exists by compactness, and $\ts{A_{i_1},\ldots,A_{i_k}}$ covers $A$.
 
 :::
 
 [[T-TJBYR]]
 
-:::{.proof}
-Let $f:X\to f(X)$ be continuous.
-Take an open covering $\mathcal{U} \covers f(X)$, then $f\inv(\mathcal{U}) \covers X$, which is cover by opens since $f$ is continuous.
-Take a finite subcover by compactness of $X$, then they push forward to a finite subcover of $f(X)$.
+::: {.proof}
+Let $f\colon X\to Y$ be continuous with $X$ compact, and let $\mathcal{U}$ be a cover of $f(X)$ by open subsets of $Y$.
+Since $f$ is continuous, $\ts{f\inv(U) \suchthat U\in\mathcal U}$ is an open cover of $X$, with a finite subcover $f\inv(U_1),\ldots,f\inv(U_k)$.
+Then $U_1,\ldots,U_k$ cover $f(X)$.
 
 :::
 
@@ -91,31 +82,30 @@ Take a finite subcover by compactness of $X$, then they push forward to a finite
 
 [[PR-R72XL]]
 
-## Separation Axioms
+## Separation axioms
 
-:::{.remark}
-Hausdorff separates pairs of points; normality separates pairs of disjoint closed sets.
-Urysohn's lemma separates disjoint closed sets by a continuous function to $[0,1]$.
+::: {.remark}
+A [[D-ZFRV4|Hausdorff space]] is one in which distinct points have disjoint open neighborhoods, and a [[D-YEQC3|normal]] space is one in which disjoint closed sets have disjoint open neighborhoods.
+Urysohn's lemma states that in a normal space, disjoint closed sets are separated by a continuous function to $[0,1]$.
+
 :::
 
 [[FT-MHQGF]]
 
 [[FT-52GNK]] [[FT-J7RQV]]
 
-## Maps and Homeomorphism
+## Maps and homeomorphisms
 
 [[T-WX5Y6]]
 
-:::{.proof}
-Show that $f\inv$ is continuous by showing $f$ is a closed map.
-If $A\subseteq X$ is closed in a compact space, $A$ is compact.
-The continuous image of a compact set is compact, so $f(A)$ is compact.
-A compact set in a Hausdorff space is closed, so $f(A)$ is closed in $Y$.
+::: {.proof}
+It suffices to show that $f$ is a closed map, since then $f\inv$ is continuous.
+If $A\subseteq X$ is closed, then $A$ is compact because $X$ is compact, so $f(A)$ is compact, and a compact subset of the Hausdorff space $Y$ is closed.
 
 :::
 
-:::{.remark title="On retractions"}
-Every space has at least one retraction - for example, the constant map $r:X \into \theset{x_0}$ for any $x\_0 \in X$.
+::: {.example title="Retractions onto points"}
+For every $x_0 \in X$, the constant map $r\colon X \to \ts{x_0}$ is a [[D-NCLVD|retraction]] onto $\ts{x_0}$.
 
 :::
 
@@ -125,58 +115,36 @@ Every space has at least one retraction - for example, the constant map $r:X \in
 
 [[T-FA6VI]]
 
-:::{.proof}
+::: {.proof}
 See [@Mun00, p. 104].
 
 :::
 
 [[T-N6PYS]]
 
-## The Tube Lemma
+## The tube lemma
 
 [[T-G4GO4]]
 
-:::{.remark}
-Compactness in one factor is a necessary condition.
-For a counterexample, $\RR^2$ and let $N$ be the set contained between a Gaussian and its reflection across the $x\dash$axis.
-Then no tube about $y=0$ is entirely contained within $N$:
-
-![figures/image_2021-05-21-01-39-26.png](../../../../assets/assets/figures/image_2021-05-21-01-39-26.png)
-
-:::
-
-:::{.proof title="Sketch"}
-\envlist
-
-- For each $y\in Y$ choose neighborhoods $A_y, B_y \subseteq Y$ such that 
-\[
-(x, y) \in A_y \cross B_y \subseteq U
-.\]
-- By compactness of $Y$, reduce this to finitely many $B_y \covers Y$ so $Y = \Union_{j=1}^n B_{y_j}$
-- Set $O\da \intersect_{j=1}^n B_{y_j}$; this works.
+::: {.proof}
+Let $N\subseteq X\cross Y$ be open with $\ts{x_0}\cross Y\subseteq N$.
+For each $y\in Y$, choose open sets $U_y\subseteq X$ and $V_y\subseteq Y$ with $(x_0,y)\in U_y\cross V_y\subseteq N$.
+Since $Y$ is compact, finitely many $V_{y_1},\ldots,V_{y_n}$ cover $Y$.
+Let $W\coloneqq \bigcap_{j=1}^n U_{y_j}$, an open set containing $x_0$.
+For $(x,y)\in W\cross Y$, choose $j$ with $y\in V_{y_j}$; since $x\in W\subseteq U_{y_j}$, $(x,y)\in U_{y_j}\cross V_{y_j}\subseteq N$.
+Hence $W\cross Y\subseteq N$.
 
 :::
 
-:::{.proof title="Detailed proof of the Tube Lemma"}
+::: {.example title="The tube lemma fails without compactness"}
+In $\RR\cross\RR$, the open set $N\coloneqq\ts{(x,y) \suchthat \abs y < e^{-x^2}}$ contains the slice $\RR\cross\ts{0}$, and it contains no tube $\RR\cross(-\delta,\delta)$ with $\delta>0$, since $e^{-x^2}<\delta$ for large $\abs x$.
+Here the slice is taken in the noncompact factor $\RR$.
 
-- Let $\theset{U_j\cross V_j \suchthat j\in J} \covers X\cross Y$. 
-- Fix a point $x_0\in X$, then $\theset{x_0}\cross Y \subset N$ for some open set $N$.
-- By the tube lemma, there is a $U^x \subset X$ such that the tube $U^x \cross Y \subset N$.
-- Since $\theset{x_0}\cross Y \cong Y$ which is compact, there is a finite subcover $\theset{U_j \cross V_j \suchthat j\leq n} \covers \theset{x_0}\cross Y$. 
--   "Integrate the $X$": write 
-    $$W = \intersect_{j=1}^n U_j,$$ 
-    then $x_0 \in W$ and $W$ is a finite intersection of open sets and thus open.
-- Claim: $\theset{U_j \cross V_j \suchthat j\leq n}\covers W\cross Y$
-  - Let $(x, y) \in W\cross Y$; want to show $(x, y)\in U_j \cross V_j$ for some $j\leq n$.
-  - Then $(x_0, y) \in \theset{x_0}\cross Y$ is on the same horizontal line
-  - $(x_0, y)\in U_j \cross V_j$ for some $j$ by construction
-  - So $y\in V_j$ for this $j$
-  - Since $x\in W$, $x\in U_j$ for *every* $j$, thus $x\in U_j$.
-  - So $(x, y) \in U_j \cross V_j$
+![The region between a Gaussian and its reflection](../../../../assets/assets/figures/image_2021-05-21-01-39-26.png)
 
 :::
 
-## "Analysis"-esque Results in Topology
+## Subsets of the real line
 
 [[PR-VGX2B]]
 
