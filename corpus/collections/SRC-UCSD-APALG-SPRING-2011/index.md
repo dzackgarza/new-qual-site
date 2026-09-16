@@ -32,6 +32,6 @@ source:
     year: 2011
 ---
 
-::: remark
-Problem 2 on the paper is labeled (d) then (b). Problem 5(b) and its note write $S_4\times S_4$ for the product whose factors are indexed by partitions of $4$ and $3$.
+::: {.remark}
+The parts of Problem 2 are labelled (d) and then (b) on the paper. Problem 5(b) and its note write $S_4\times S_4$ for the product whose factors are indexed by partitions of $4$ and $3$.
 :::
