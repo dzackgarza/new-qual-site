@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-R4ZCL
 kind: definition
-title: Smash Product
+title: Smash product
 classification:
   areas:
   - topology
@@ -15,13 +15,15 @@ review: draft
 ---
 
 ::: {.definition}
-For based spaces $(X, x_0)$ and $(Y, y_0)$, the **smash product** collapses the two axis copies inside the product:
-\[
-X \wedge Y \da \qty{X\cross Y}/\qty{X \wedgeprod Y}
-.\]
-It satisfies $S^m \wedge S^n = S^{m+n}$, and reduced suspension is $\Sigma X = S^1 \wedge X$.
+Let $(X,x_0)$ and $(Y,y_0)$ be based spaces.
+Identify the [[D-IGUUS|wedge sum]] $X\vee Y$ with the subspace $X\times\ts{y_0}\cup\ts{x_0}\times Y$ of $X\times Y$.
+The \dfn{smash product} is the quotient space
+$$
+X\wedge Y\coloneqq(X\times Y)/(X\vee Y),
+$$
+based at the image of $X\vee Y$ [@Hat02, p. 10].
 :::
 
-::: {.concept}
-See Hatcher, p. 10.
+::: {.proposition}
+For $m,n\geq0$ there is a homeomorphism $S^m\wedge S^n\cong S^{m+n}$, and for a based space $X$ the reduced suspension satisfies $\Sigma X\cong S^1\wedge X$ [@Hat02, p. 10].
 :::
