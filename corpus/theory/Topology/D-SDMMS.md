@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-SDMMS
 kind: definition
-title: Lebesgue Number
+title: Lebesgue number of an open cover
 classification:
   areas:
   - topology
@@ -13,9 +13,11 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-For $(X, d)$ a compact metric space and $\theset{U_\alpha}\covers X$, there exists a **Lebesgue number** $\delta_{L} > 0$ which satisfies
-\[
-A\subset X, ~ \diam(A) < \delta_{L} \implies A\subseteq U_\alpha \text{ for some } \alpha
-.\]
+::: {.definition}
+Let $(X,d)$ be a metric space and $\mathcal U$ an open [[D-AOJG3|cover]] of $X$.
+A real number $\delta>0$ is a \dfn{Lebesgue number} for $\mathcal U$ if every subset $A\subseteq X$ with [[D-B7CYY|diameter]] $\diam(A)<\delta$ is contained in some $U\in\mathcal U$.
+:::
+
+::: {.theorem title="Lebesgue number lemma"}
+Every open cover of a [[D-EILKJ|compact]] metric space has a Lebesgue number [@Mun00, Lemma 27.5].
 :::
