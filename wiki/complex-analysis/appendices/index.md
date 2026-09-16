@@ -9,8 +9,8 @@ order: 13
 
 - [[appendix-unsorted|The Gamma function and conic sections]], the $\Gamma$-function identities and the standard conics.
 
-- [[gauss-lucas-theorem|The Gauss--Lucas theorem]]: the zeros of $p'$ lie in the convex hull of the zeros of a polynomial $p$.
+- [[gauss-lucas-theorem|The Gauss--Lucas theorem]] — the zeros of $p'$ lie in the convex hull of the zeros of a polynomial $p$.
 
 - [[pdes|The Dirichlet problem]], solved with real and imaginary parts of holomorphic functions.
 
-- [[special-functions|Special functions]]: Fourier transforms, $\Gamma$, $\zeta$, and elliptic functions.
+- [[special-functions|Special functions]] — Fourier transforms, $\Gamma$, $\zeta$, and elliptic functions.
