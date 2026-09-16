@@ -19,11 +19,12 @@ review: reviewed
 ---
 
 ::: {.theorem}
-Write $\abs G=p^a m$ with $p\nmid m$.
-Then $G$ has a subgroup of order $p^a$; equivalently, $G$ has a Sylow $p$-subgroup.
+Let $G$ be a finite group and $p$ a prime, and write $\abs G=p^a m$ with $p\nmid m$.
+Then $G$ has a subgroup of order $p^a$; equivalently, $G$ has a [[D-7TQ2M|Sylow $p$-subgroup]].
 
 More generally, every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup.
 :::
 
-The theorem upgrades Cauchy's order-$p$ subgroup to the entire $p$-part of the group order.
-The containment clause is what makes Sylow subgroups useful as maximal containers rather than isolated witnesses.
+::: {.remark}
+For $a\geq1$ this strengthens [[T-3KCD6|Cauchy's theorem]], which gives a subgroup of order $p$.
+:::

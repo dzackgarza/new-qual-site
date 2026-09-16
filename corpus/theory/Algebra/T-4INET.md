@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-4INET
 kind: theorem
-title: Characterization of Nilpotent Groups
+title: Nilpotent groups via the lower central series
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-$G$ is nilpotent iff $G$ has a lower central series terminating at $1$.
+Let $G$ be a group with identity $e$ and [[D-BGNME|lower central series]] $G^0\geq G^1\geq\cdots$.
+Then $G$ is [[D-53JVH|nilpotent]] if and only if $G^n=\theset{e}$ for some $n\geq0$.
 :::
