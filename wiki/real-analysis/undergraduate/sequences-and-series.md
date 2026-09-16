@@ -1,4 +1,5 @@
 ---
+title: Sequences and series
 order: 35
 topics:
 - Sequences of Numbers
@@ -7,74 +8,62 @@ topics:
 - Limits
 ---
 
-# Sequences and Series
+# Sequences and series
 
 ## Sequences of functions
 
-Pointwise convergence allows the index \(N\) to depend on \(x\); uniform convergence
-does not.  That quantifier change is what later permits continuity to pass through the
-limit; on finite-measure domains, uniform convergence also controls passage of the
-integral through the limit.  The limsup of functions is useful when an actual pointwise
-limit is unavailable, while the example below is a reminder that continuity of the
-limit does not by itself imply uniform convergence of the approximating series.
+A sequence $f_n\colon X\to\RR$ converges pointwise to $f$ if for every $x$ and $\varepsilon>0$ there is $N$, depending on $x$ and $\varepsilon$, with $\abs{f_n(x)-f(x)}<\varepsilon$ for $n\geq N$; it converges uniformly if $N$ can be chosen independently of $x$.
+A uniform limit of continuous functions is continuous, and on a space of finite measure a uniform limit of integrable functions has integral equal to the limit of the integrals.
 
 [[D-S2YWR]]
 
-:::{.example}
-On $(0,1]$, consider
-\[
-g(x) \da \sum_{n=1}^{\infty} {1 \over 1 + n^2 x}.
-\]
+::: {.example title="A continuous sum of a series that does not converge uniformly"}
+On $(0,1]$, let
+$$
+g(x) \coloneqq \sum_{n=1}^{\infty} {1 \over 1 + n^2 x}.
+$$
 For every $a>0$ the series converges uniformly on $[a,1]$ by comparison with
 $\sum_{n\ge1}(n^2a)^{-1}$, so $g$ is continuous on $(0,1]$.
-The convergence is not uniform on $(0,1]$: for the $n$th summand,
-\[
-{1\over 1+n^2(1/n^2)}={1\over2},
-\]
-so the summands do not even converge uniformly to zero.
+The convergence is not uniform on $(0,1]$: the $n$th summand at $x=1/n^2$ equals $1/2$, so the summands do not converge uniformly to zero.
 
 :::
 
 ## Sequences of numbers
 
-:::{.slogan}
-$\limsup$ is largest limit of a convergent subsequence, $\liminf$ is the smallest.
+::: {.slogan}
+$\limsup_n a_n$ is the largest limit of a convergent subsequence of $(a_n)$ in $[-\infty,\infty]$, and $\liminf_n a_n$ is the smallest.
 
 :::
 
 [[PR-4EVYE]]
 
+::: {.proof title="Cauchy condensation test"}
+Let $a_1\geq a_2\geq\cdots\geq0$.
+The block $2^k\leq n<2^{k+1}$ has $2^k$ terms, each at most $a_{2^k}$, so $\sum_{n\geq1}a_n\leq\sum_{k\geq0}2^ka_{2^k}$.
+The block $2^{k-1}<n\leq2^k$ has $2^{k-1}$ terms, each at least $a_{2^k}$, so $2^{k-1}a_{2^k}\leq\sum_{2^{k-1}<n\leq2^k}a_n$ and
+$$
+\sum_{k\geq0}2^ka_{2^k} \leq a_1 + 2\sum_{n\geq2}a_n.
+$$
+Hence $\sum_n a_n$ and $\sum_k 2^ka_{2^k}$ converge or diverge together.
+
+:::
+
 [[FF-QLRXX]]
 
 [[FD-D2QPH]]
 
-:::{.proof title="showing a useful trick"}
-Show that
-\[
-\sum a_k \leq \sum 2^k a_{2^k} \leq 2 \sum a_k
-\]
-using 
-\[
-\sum a_k = a_0 + a_1 + a_2 + a_3 + \cdots
-\leq \qty{a_1} + \qty{a_2 + a_2} + \qty {a_3 + a_3 + a_3 + a_3} + \cdots \\
-\]
-where each group with $a_k$ has $2^k$ terms.
-
-:::
-
 ## Series
 
-For numerical series, the Cauchy criterion is the underlying test: every sufficiently
-late tail must be small.  Comparison and \(p\)-tests turn that criterion into practical
-sufficient tests.  For a function's Taylor series, Taylor's theorem and its remainder
-determine when the formal expansion actually converges back to the function.  For series
-of functions, the same tail criterion is applied in a function norm when uniform control
-is needed.
+A series $\sum_n a_n$ of real numbers converges if and only if for every $\varepsilon>0$ there is $N$ with $\abs{\sum_{n=M}^{M'}a_n}<\varepsilon$ for all $M'\geq M\geq N$ (the Cauchy criterion).
+The comparison and $p$-tests give sufficient conditions, and a Taylor series of $f$ converges to $f$ at $x$ exactly when the remainder in Taylor's theorem tends to $0$ at $x$.
+For series of functions, the Cauchy criterion in the norm $\norm{\wait}_\infty$ characterizes uniform convergence.
 
 [[PR-P6NHI]]
 
 [[PR-UJ64S]]
+
 [[C-3S4XS]]
+
 [[PR-GT5RS]]
 
 [[PR-H4CYN]]
@@ -89,19 +78,16 @@ is needed.
 
 [[T-2R7PC]]
 
-## Uniform Convergence
+## Uniform convergence
 
-The sup norm packages uniform convergence as
-
-\[
+For bounded $f_n - f$,
+$$
 f_n\to f \text{ uniformly}
 \quad\Longleftrightarrow\quad
-\|f_n-f\|_\infty\to 0.
-\]
-
-To prove it, bound the supremum independently of \(x\); to disprove it, choose points
-\(x_n\) where the error stays bounded below.  For a series, the Weierstrass \(M\)-test
-reduces the same problem to convergence of a numerical majorant.
+\norm{f_n-f}_\infty\to 0.
+$$
+Uniform convergence is proved by bounding $\sup_x\abs{f_n(x)-f(x)}$ by a quantity independent of $x$ tending to $0$, and disproved by exhibiting $x_n$ and $\varepsilon>0$ with $\abs{f_n(x_n)-f(x_n)}\geq\varepsilon$ for infinitely many $n$.
+For a series, the Weierstrass $M$-test reduces uniform convergence to convergence of a numerical series.
 
 [[PR-WUZSG]]
 
@@ -111,41 +97,26 @@ reduces the same problem to convergence of a numerical majorant.
 
 [[FF-IAUQG]] [[FS-5FKPD]]
 
-:::{.remark title="Negating the Sup Norm test"}
-**Negating**: find an $x$ which depends on $n$ for which $\norm{f_n}_\infty > \eps$ (negating small tails) or $\norm{f_n - f_m} > \eps$ (negating the Cauchy criterion).
+::: {.remark title="Negating uniform convergence"}
+$f_n\not\to0$ uniformly if and only if there are $\varepsilon>0$, infinitely many $n$, and points $x_n$ with $\abs{f_n(x_n)}\geq\varepsilon$.
+$(f_n)$ is not uniformly Cauchy if and only if there are $\varepsilon>0$ and, for every $N$, indices $m,n\geq N$ and a point $x$ with $\abs{f_n(x)-f_m(x)}\geq\varepsilon$.
 
 :::
 
 [[PR-RWROV]]
 
-:::{.proof}
-\envlist
+::: {.proof}
+Let $(f_k)$ be Cauchy in $C([0,1])$ with the norm $\norm{\wait}_\infty$.
+For each $x$, $\abs{f_k(x) - f_j(x)} \leq \norm{f_k - f_j}_\infty$, so $(f_k(x))$ is Cauchy in $\RR$; let $f(x) \coloneqq \lim_k f_k(x)$.
 
-1.  Let $\theset{f_k}$ be Cauchy in $X$.
-
-2.  Define a candidate limit using pointwise convergence:
-
-    Fix an $x$; since
-  \[
-  \abs{f_k(x) - f_j(x)}  \leq \norm{f_k - f_k} \to 0
-  \] 
-    the sequence $\theset{f_k(x)}$ is Cauchy in $\RR$.
-    So define $f(x) \definedas \lim_k f_k(x)$.
-
-3.  Show that $\norm{f_k - f} \to 0$:
-  \[
-  \abs{f_k(x) - f_j(x)} < \varepsilon ~\forall x \implies \lim_{j} \abs{f_k(x) - f_j(x)} <\varepsilon ~\forall x
-  \]
-    Alternatively, $\norm{f_k-f} \leq \norm{f_k - f_N} + \norm{f_N - f_j}$, where $N, j$ can be chosen large enough to bound each term by $\varepsilon/2$.
-
-4.  Show that $f\in X$:
-
-    The uniform limit of continuous functions is continuous.
+Given $\varepsilon>0$, choose $N$ with $\norm{f_k-f_j}_\infty<\varepsilon$ for $j,k\geq N$.
+For fixed $k\geq N$ and every $x$, letting $j\to\infty$ in $\abs{f_k(x)-f_j(x)}<\varepsilon$ gives $\abs{f_k(x)-f(x)}\leq\varepsilon$, so $\norm{f_k-f}_\infty\leq\varepsilon$.
+Thus $f_k\to f$ uniformly, and $f$ is continuous as a uniform limit of continuous functions, so $f\in C([0,1])$.
 
 :::
 
-:::{.remark}
-In other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.
+::: {.remark}
+The same argument proves completeness of other spaces of functions with the norm $\norm{\wait}_\infty$, such as the bounded functions on a set or $C_b(X)$ for a metric space $X$, provided the uniform limit is shown to lie in the space.
 
 :::
 
