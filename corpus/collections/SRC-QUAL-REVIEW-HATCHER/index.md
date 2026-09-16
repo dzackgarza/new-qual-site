@@ -8,7 +8,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf
 source:
@@ -156,6 +156,8 @@ source:
     - P-QUAL-REVIEW-HATCHER-03
     - P-QUAL-REVIEW-HATCHER-04
     - P-QUAL-REVIEW-HATCHER-05
+    - P-QUAL-REVIEW-HATCHER-06
+    - P-QUAL-REVIEW-HATCHER-07
     - P-QUAL-REVIEW-HATCHER-08
     - P-QUAL-REVIEW-HATCHER-09
     - P-QUAL-REVIEW-HATCHER-10
