@@ -42,7 +42,6 @@ source:
     year: 1979
 ---
 
-::: remark
-The retained PDF is titled *Preliminary Exam - Summer 1979* and contains Problems 1--20 in source order.
-The PDF itself omits the institution name; the existing Berkeley prelim resource page identifies `Summer79.pdf` in the Berkeley exam sequence.
+::: {.remark}
+The paper, titled *Preliminary Exam - Summer 1979*, does not name its institution; it belongs to the Berkeley preliminary exam sequence.
 :::
