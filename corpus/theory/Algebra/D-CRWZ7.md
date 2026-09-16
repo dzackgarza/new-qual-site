@@ -15,5 +15,5 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a ring.
-An $R$-module $M$ is \dfn{simple} if its only submodules are $0$ and $M$.
+An $R$-module $M$ is \dfn{simple} if $M\neq 0$ and its only submodules are $0$ and $M$.
 :::
