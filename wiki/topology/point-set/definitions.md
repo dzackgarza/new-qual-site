@@ -184,8 +184,6 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 
 [[D-OM7TD]]
 
-[[D-XRHTV]]
-
 [[D-BCNUH]]
 
 [[D-YL6FR]]
