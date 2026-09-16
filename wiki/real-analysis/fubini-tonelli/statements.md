@@ -7,13 +7,14 @@ topics:
 
 # The statements
 
-Tonelli and Fubini have the same conclusion—replace an integral on a product by either iterated integral—but their hypotheses pay for different things.
-The decision rule is on [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]]; keep the exact statements here so the hypotheses can be checked cold.
+Let $(X,\mathcal M,\mu)$ and $(Y,\mathcal N,\nu)$ be $\sigma$-finite measure spaces with product measure $\mu\times\nu$ on $\mathcal M\otimes\mathcal N$.
+Tonelli's and Fubini's theorems both equate $\int_{X\times Y} f\,d(\mu\times\nu)$ with the two iterated integrals; Tonelli's theorem assumes $f\geq0$ and Fubini's theorem assumes $f\in L^1(\mu\times\nu)$.
+[[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]] compares the hypotheses.
 
 ## Tonelli: nonnegative measurable functions
 
-For $f\ge0$ measurable, Tonelli permits the iterated integrals without assuming the answer is finite.
-This is the theorem for changing the order of summation/integration when every term is nonnegative: the value may be $+\infty$, but the interchange itself is valid.
+For $f\geq0$ measurable on $X\times Y$, the iterated integrals and the integral over $X\times Y$ are equal as elements of $[0,\infty]$.
+For a double sequence $a_{mn}\geq0$ (counting measure on $\NN\times\NN$), this gives $\sum_m\sum_n a_{mn} = \sum_n\sum_m a_{mn}$.
 
 [[T-6PRW3]]
 
@@ -21,9 +22,7 @@ This is the theorem for changing the order of summation/integration when every t
 
 ## Fubini: integrable functions
 
-Fubini assumes $f\in L^1$ on the product.
-That hypothesis gives integrable sections almost everywhere and finite iterated integrals, all equal to the product integral.
-If signs are present and absolute integrability has not been established, changing the order is exactly the step that still needs proof.
+For $f\in L^1(\mu\times\nu)$, the sections $f(x,\wait)$ are in $L^1(\nu)$ for $\mu$-almost every $x$, the function $x\mapsto\int_Y f(x,y)\,d\nu(y)$ is in $L^1(\mu)$, and the iterated integrals are finite and equal to $\int_{X\times Y} f\,d(\mu\times\nu)$; the same holds with the roles of $X$ and $Y$ exchanged.
 
 [[T-4GPEF]]
 
@@ -35,8 +34,8 @@ If signs are present and absolute integrability has not been established, changi
 
 ## Other interchanges
 
-The same discipline applies to sums, derivatives, and integrals: identify a theorem whose hypotheses justify the interchange rather than treating the symbols formally.
-For nonnegative sums, Tonelli/monotone convergence is often enough; differentiation under the integral needs its own domination or regularity hypothesis.
+For nonnegative terms, sums and integrals commute by the monotone convergence theorem, or by Tonelli's theorem with counting measure.
+Differentiating under the integral sign requires a domination hypothesis on the derivative.
 
 [[PR-V4MOK]]
 
