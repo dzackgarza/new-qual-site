@@ -46,6 +46,15 @@ If $f$ is quasicompact and separated, $g$ is flat, and $\mathcal{F}$ is quasicoh
 4. Since $A'$ is flat, $- \otimes_A A'$ is exact and commutes with taking cohomology, so $H^i(X', g'^* \mathcal{F}) \cong H^i(X, \mathcal{F}) \otimes_A A'$.
 :::
 
+::: {.corollary title="Extension of the base field"}
+Let $X$ be a quasicompact separated scheme over a field $k$, $\mathcal{F}$ a quasicoherent sheaf on $X$, and $K/k$ a field extension, with $X_K = X \times_k \Spec K$ and $\mathcal{F}_K$ the pullback of $\mathcal{F}$.
+Then $H^i(X_K, \mathcal{F}_K) \cong H^i(X, \mathcal{F}) \otimes_k K$ for every $i$; in particular $\dim_k H^i(X, \mathcal{F}) = \dim_K H^i(X_K, \mathcal{F}_K)$.
+:::
+
+::: {.proof}
+Every $k$-vector space is flat over $k$, so flat base change applies to $\Spec K \to \Spec k$: the Čech complex of $\mathcal{F}_K$ for the pulled-back affine cover is $C^\bullet(\mathcal{U}, \mathcal{F}) \otimes_k K$, and the exact functor $- \otimes_k K$ commutes with cohomology.
+:::
+
 ::: {.theorem title="Proper base change"}
 If $f$ is proper, $g$ is arbitrary, and $\mathcal{F}$ is a torsion étale sheaf on $X$, the base change map $g^* R^i f_* \mathcal{F} \to R^i f'_* g'^* \mathcal{F}$ is an isomorphism for all $i$.
 The same holds for sheaves of abelian groups on locally compact Hausdorff spaces when $f$ is proper.
