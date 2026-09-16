@@ -41,8 +41,3 @@ source:
     term: spring
     year: 1981
 ---
-
-::: {.remark}
-UC Berkeley Preliminary Exam, Spring 1981. Problems are listed in source order.
-Problem 11 depends on a contour figure omitted from the retained extraction; its card records that source dependency explicitly rather than reconstructing the curve.
-:::
