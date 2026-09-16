@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-FA6VI
 kind: theorem
-title: Characterizations of continuous maps, Munkres 18.1
+title: Characterizations of continuous maps
 classification:
   areas:
   - topology
@@ -15,13 +15,16 @@ review: draft
 ---
 
 ::: {.theorem}
-For $f:X\to Y$, TFAE:
+Let $f\colon X\to Y$ be a map of topological spaces.
+The following are equivalent:
 
-- $f$ is continuous
+- $f$ is continuous;
 
-- $A\subset X \implies f(\cl_X(A)) \subset \cl_X(f(A))$
+- $f(\cl_X(A)) \subseteq \cl_Y(f(A))$ for every $A\subseteq X$;
 
-- $B$ closed in $Y \implies f\inv(B)$ closed in $X$.
+- $f\inv(B)$ is closed in $X$ for every closed $B\subseteq Y$;
 
-- For each $x\in X$ and each neighborhood $V \ni f(x)$, there is a neighborhood $U\ni x$ such that $f(U) \subset V$.
+- for each $x\in X$ and each neighborhood $V$ of $f(x)$, there is a neighborhood $U$ of $x$ such that $f(U) \subseteq V$
+
+[@Mun00, Theorem 18.1].
 :::
