@@ -23,5 +23,5 @@ $$
 
 ::: {.remark}
 The number $\delta$ depends only on $\varepsilon$, not on $n$, $x$, or $y$.
-This is Definition 7.22 of Rudin, *Principles of Mathematical Analysis*, 3rd ed., stated there for families of complex functions on a subset of a metric space.
+[@Rud76] states this definition for families of complex functions on a subset of a metric space.
 :::

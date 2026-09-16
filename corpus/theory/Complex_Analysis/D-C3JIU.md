@@ -21,7 +21,7 @@ $$
 f(z)=\sum_{k=-\infty}^{\infty}a_k(z-z_0)^k \qquad (0<\abs{z-z_0}<r)
 $$
 be its Laurent expansion there.
-The \dfn{principal part} of $f$ at $z_0$ is $\sum_{k\le -1}a_k(z-z_0)^k$, and the \dfn{residue} of $f$ at $z_0$ is $\Res_{z=z_0}f\coloneqq a_{-1}$ [@Ahl79, §4.5.1].
+The \dfn{principal part} of $f$ at $z_0$ is $\sum_{k\le -1}a_k(z-z_0)^k$, and the \dfn{residue} of $f$ at $z_0$ is $\Res_{z=z_0}f\coloneqq a_{-1}$ [@Ahl79].
 :::
 
 ::: {.remark}

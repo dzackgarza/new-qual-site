@@ -41,5 +41,5 @@ The inverse is $F^{-1}(w)=-w+\sqrt{w^2-1}$, with the branch of the square root f
 
 ::: {.remark}
 The Joukowski map $J(z)=\frac12(z+z^{-1})$ satisfies $J(z)=J(1/z)$ and maps each of the punctured disc $\ts{z\st 0<\abs{z}<1}$ and the exterior $\ts{z\st\abs{z}>1}$ conformally onto $\CC\sm[-1,1]$.
-It maps the upper half-disc onto the lower half-plane, and each circle $\abs{z}=r$ with $r\neq1$ onto the ellipse with foci $\pm1$ and semi-axes $\frac12(r+r^{-1})$ and $\frac12\abs{r-r^{-1}}$ [@Ahl79, §3.4].
+It maps the upper half-disc onto the lower half-plane, and each circle $\abs{z}=r$ with $r\neq1$ onto the ellipse with foci $\pm1$ and semi-axes $\frac12(r+r^{-1})$ and $\frac12\abs{r-r^{-1}}$ [@Ahl79].
 :::

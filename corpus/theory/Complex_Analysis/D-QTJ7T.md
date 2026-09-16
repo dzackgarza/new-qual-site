@@ -41,5 +41,5 @@ On $\abs{z}\le R$ and for $n>R^2$, $\abs{f_n(z)}\ge n^2-nR^2\to\infty$ uniformly
 
 ::: {.concept}
 See [@SS03, ch. 8, §3.2, p. 225], and Theorem 3.3 there for Montel's theorem.
-Ahlfors' convention is *Complex Analysis*, ch. 5, §4.5 (The Classical Definition), Definition 3; the family $n(z^2-n)$ is his example there.
+Ahlfors' convention and the example $n(z^2-n)$ are in [@Ahl79].
 :::
