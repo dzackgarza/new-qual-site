@@ -24,8 +24,9 @@ audit:
   note: "Localized every right-half-plane solution in the unit disk centered at alpha, applied strict Rouche dominance there, and used conjugation symmetry plus uniqueness to force the root to be real."
 ---
 
+::: {.problem}
 Problem 2. Fix a real number $\alpha > 1$ . Show that the equation $z - \alpha = e ^ { - z }$ has precisely one solution in the half plane $\mathrm { R e } ( z ) > 0$ and that this solution must be real.
-
+:::
 
 ::: solution
 <1>1. Every right-half-plane solution lies in the disk $|z-\alpha|<1$.

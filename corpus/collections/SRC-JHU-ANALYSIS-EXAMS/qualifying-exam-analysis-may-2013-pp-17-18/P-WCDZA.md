@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 (a) Prove the Riemann-Lebesgue Lemma: if $f \in L^1(\mathbb{R}^d)$, then the Fourier transform of $f$,
 
 $$\hat{f}(\xi) = \int_{\mathbb{R}^d} f(x) e^{-2\pi i x \cdot \xi} \, dx \to 0, \quad \text{as } |\xi| \to \infty.$$
@@ -34,6 +35,7 @@ $$f * h = f \quad \text{for all } f \in L^1(\mathbb{R}^d).$$
 Here $f * h$ is the convolution of $f$ and $h$ defined by
 
 $$(f * h)(x) = \int_{\mathbb{R}^d} f(x - y) h(y) \, dy.$$
+:::
 
 ::: {.solution}
 <1>1. Prove the Riemann--Lebesgue lemma for $C_c^1$ functions.

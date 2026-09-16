@@ -25,8 +25,9 @@ audit:
   note: "Composed two explicit disk automorphisms, verified their disk identities and inverses, checked the denominator, and evaluated the prescribed point."
 ---
 
+::: {.problem}
 4. (20 points) Let D denote the unit disc $\{ z : | z | < 1 \}$ . Determine a holomorphic mapping f of D onto itself for which $\begin{array} { r } { f ( \frac { 1 } { 2 } ) = - \frac { 1 } { \pi } } \end{array}$
-
+:::
 
 ::: solution
 Let

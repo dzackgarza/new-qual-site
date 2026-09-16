@@ -25,6 +25,7 @@ audit:
   note: "Excluded nonzero poles, extended zf across zero, checked vanishing of all positive Taylor coefficients and proved the exact allowed coefficient disk including its boundary."
 ---
 
+::: {.problem}
 1. Find all meromorphic functions f on C such that
 
 $$
@@ -32,6 +33,7 @@ $$
 $$
 
 Give explicit formulas for the functions and give a proof for your answer.
+:::
 
 ::: solution
 The functions are exactly

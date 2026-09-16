@@ -25,8 +25,9 @@ audit:
   note: "Lifted by the exponential map to a positive entire harmonic function, constructed a global conjugate on the plane, and applied Liouville to its bounded exponential."
 ---
 
+::: {.problem}
 Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < | z |$ Show that u must be constant.
-
+:::
 
 ::: solution
 <1>1. Lifting by the exponential map gives a positive harmonic function on the whole plane.

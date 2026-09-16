@@ -25,6 +25,7 @@ audit:
   note: "Handled the zero-norm case, used a positive truncation radius, made the translation sign consistent and justified L1 translation continuity independently of Fourier theory."
 ---
 
+::: {.problem}
 9. Suppose that f is in $L ^ { 1 } ( \mathbb { R } )$ . Prove directly (i.e., without citing properties of the Fourier transform) that the function
 
 $$
@@ -32,6 +33,7 @@ $$
 $$
 
 is uniformly continuous and ${ \widehat { f } } ( t ) \to 0 { \mathrm { ~ a s ~ } } t \to \infty$
+:::
 
 ::: {.solution}
 If $\|f\|_1=0$, then $f=0$ almost everywhere and

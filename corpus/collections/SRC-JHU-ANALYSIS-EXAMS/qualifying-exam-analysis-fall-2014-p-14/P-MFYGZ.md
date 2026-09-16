@@ -32,6 +32,7 @@ audit:
   note: "Supplied measurability of the superlevel set and corrected the strict sum estimate in the empty-family case, preserving the covering argument and its constant."
 ---
 
+::: {.problem}
 2. Let $f \in L ^ { 1 } ( \mathbb { R } ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,
 
 $$
@@ -45,6 +46,7 @@ m \big ( \{ x : M _ { f } ( x ) > \alpha \} \big ) \leq \frac { A } { \alpha } |
 $$
 
 where A is a constant depending only on d and $\begin{array} { r } { | | f | | _ { L ^ { 1 } ( \mathbb { R } ^ { d } ) } = \int _ { \mathbb { R } ^ { d } } | f ( x ) | d x . } \end{array}$
+:::
 
 ::: solution
 <1>1. Associate a good ball to every point of the superlevel set.

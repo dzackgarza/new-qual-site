@@ -23,10 +23,12 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $f \in L^1(\mathbb{R})$ and define $E_\alpha = \{x : |f(x)| > \alpha\}$.
 Prove that
 
 $$\int_{\mathbb{R}} |f(x)| \, dx = \int_0^\infty m(E_\alpha) \, d\alpha.$$
+:::
 
 ::: {.solution}
 For every $x\in\mathbb R$,

@@ -25,8 +25,10 @@ audit:
   note: "Checked finiteness and multiplicities of interior zeros, the nonvanishing quotient on the closed disk, and the polynomial identity that excludes nonzero Blaschke zeros for an entire function."
 ---
 
+::: {.problem}
 1. Find all entire functions f such that $| f ( z ) | = 1$ whenever $| z | = 1$ . Give explicit formulas for the functions and give a proof for your answer.
    (An entire function is a holomorphic function on C.)
+:::
 
 ::: solution
 The functions are exactly

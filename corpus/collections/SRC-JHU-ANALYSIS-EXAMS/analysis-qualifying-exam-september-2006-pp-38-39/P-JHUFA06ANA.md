@@ -25,11 +25,13 @@ audit:
   note: "Checked both upper-half-plane residues, their sum, absolute convergence and the semicircle estimate before dividing the full-line value by two."
 ---
 
+::: {.problem}
 1. Use residues to calculate the integral
 
 $$
 \int _ { 0 } ^ { \infty } { \frac { d x } { x ^ { 4 } + 4 } } .
 $$
+:::
 
 ::: solution
 The value is $\boxed{\pi/8}$.

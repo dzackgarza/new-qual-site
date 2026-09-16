@@ -25,10 +25,11 @@ audit:
   note: "Extended the hypothetical inverse across the puncture and eliminated all possible limit moduli by maximum/minimum modulus arguments; then verified an explicit radial C-infinity bijection and inverse."
 ---
 
+::: {.problem}
 2. (a) (15 points) Show that there is no one-to-one holomorphic mapping of the open annulus $\{ z : 1 < | z | < 2 \}$ onto the punctured unit disc $\{ z : 0 < | z | < 1 \}$ . (HINT: consider the inverse mapping)
 
 (b) (5 points) Give an example of a one-to-one $C ^ { \infty }$ mapping of the open annulus $\{ z : 1 < | z | < 2 \}$ onto the punctured unit disc $\{ z : 0 < | z | < 1 \}$
-
+:::
 
 ::: solution
 <1>1. Part (a): a biholomorphism would give a bounded inverse on the punctured disk.

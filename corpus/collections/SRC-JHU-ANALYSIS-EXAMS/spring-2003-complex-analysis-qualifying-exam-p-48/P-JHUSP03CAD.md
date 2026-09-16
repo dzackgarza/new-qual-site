@@ -32,6 +32,7 @@ audit:
   note: "Justified normal convergence of both power series and gave the common contraction constant r<1 on each segment, including the case where every nonlinear coefficient is zero."
 ---
 
+::: {.problem}
 Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
 
 (a) State Rouche's Theorem.
@@ -52,7 +53,7 @@ where
 $$\sum_{n=2}^\infty n|a_n| \leq 1.$$
 
 Show that $f(z)$ is a 1-1 holomorphic function on $\Delta$.
-
+:::
 
 ::: solution
 <1>1. Part (a): Rouché's theorem.

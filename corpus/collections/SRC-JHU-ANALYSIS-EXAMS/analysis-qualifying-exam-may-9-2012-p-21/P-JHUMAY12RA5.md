@@ -16,11 +16,13 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Justify or give a counterexample to the following assertions:
 
 a. If $\{f_i\}$ is a sequence in $L^2([0,1])$ converging weakly to $f$ in $L^2([0,1])$ then $f_i^2$ converges weakly to $f^2$ in $L^1([0,1])$.
 
 b. If $\{f_i\}$ is a sequence in $L^2([0,1])$ converging strongly to $f$ in $L^2([0,1])$, then $f_i^2$ converges strongly to $f^2$ in $L^1([0,1])$.
+:::
 
 ::: {.solution}
 <1>1. Part (a): Weak convergence in $L^2$ does not imply weak convergence of squares in $L^1$: <2>1. **The assertion is FALSE.** Proof: statement of falsity.

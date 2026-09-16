@@ -25,11 +25,13 @@ audit:
   note: "Checked absolute convergence, the two boundary values of the fractional power, the pole residue, both arc estimates and the limiting construction of the keyhole contour."
 ---
 
+::: {.problem}
 5. Use contour integration to evaluate
 
 $$
 \int _ { 0 } ^ { + \infty } { \frac { d x } { x ^ { 1 / 3 } ( 1 + x ) } } .
 $$
+:::
 
 ::: hint
 Use a keyhole contour around the positive real axis, with

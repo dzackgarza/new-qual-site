@@ -25,7 +25,9 @@ audit:
   note: "Checked positivity of the real denominator, the unit-circle substitution, and the unique enclosed pole and its residue."
 ---
 
+::: {.problem}
 2) Calculate the integral $\textstyle \int _ { 0 } ^ { 2 \pi } { \frac { d \theta } { 1 - 2 a \cos \theta + a ^ { 2 } } }$ , where $0 < a < 1$
+:::
 
 ::: solution
 The integral is $\boxed{2\pi/(1-a^2)}$.

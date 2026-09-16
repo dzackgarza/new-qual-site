@@ -17,7 +17,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 1. Let f be an entire function such that the image of f does not intersect $\{ z \in \mathbb { R } : z \geq 5 \}$ . Prove that $f$ is a constant.
+:::
 
 ::: {.solution}
 <1>1. $f(\CC)$ omits $[5,\infty)$, so $\sqrt{5-f}$ entire omitting upper half-plane? Compose to bounded.

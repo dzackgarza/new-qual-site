@@ -25,11 +25,13 @@ audit:
   note: "Constructed the half-plane-to-plane surjection by a quadratic root sum and proved every reverse-direction holomorphic map constant by a bounded Cayley transform."
 ---
 
+::: {.problem}
 8. Let $H=\{z\in\mathbb C:\operatorname{Re}z>0\}$ be the right half-plane.
 
 (a) Does there exist a surjective holomorphic map $f : H \to \mathbb { C } ?$ Either give an example or prove that one does not exist.
 
 (b) Does there exist a surjective holomorphic map $f : \mathbb { C } \to H ?$ Either give an example or prove that one does not exist.
+:::
 
 ::: solution
 The answer to (a) is yes; the answer to (b) is no.

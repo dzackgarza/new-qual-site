@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 5) Give examples of functions f and g on R so that $f \in L ^ { 1 } \setminus L ^ { 2 }$ and $g \in L ^ { 2 } \setminus L ^ { 1 }$
+:::
 
 ::: {.solution}
 <1>1. Construction and verification of $f \in L^1(\mathbb{R}) \setminus L^2(\mathbb{R})$:

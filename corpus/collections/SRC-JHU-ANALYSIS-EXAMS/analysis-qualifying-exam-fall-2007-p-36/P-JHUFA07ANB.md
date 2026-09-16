@@ -25,7 +25,9 @@ audit:
   note: "Checked holomorphy and boundedness of the quotient and necessity and sufficiency of the closed unit-disk restriction on the constant."
 ---
 
+::: {.problem}
 2) Find all entire analytic functions satisfying $| f ( z ) | \leq | e ^ { z } |$ for all $z \in \mathbb { C }$
+:::
 
 ::: solution
 The functions are exactly $\boxed{f(z)=ce^z,\ |c|\leq1}$.

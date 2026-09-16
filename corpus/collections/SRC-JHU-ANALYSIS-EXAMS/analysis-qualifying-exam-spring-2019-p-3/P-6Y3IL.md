@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Question 1.1. Suppose that $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { d } ) , j = 1 , 2 , . . . ,$ and $f \in L ^ { 2 } (  { \mathbb { R } } ^ { d } )$ satisfy
 
 $$
@@ -42,6 +43,7 @@ Determine whether condition (A), together with weak convergence, implies
 \|f_j-f\|_2\to0.
 \]
 If not, give a counterexample.
+:::
 
 ::: solution
 <1>1. Construct a sequence satisfying the weighted pointwise bound.

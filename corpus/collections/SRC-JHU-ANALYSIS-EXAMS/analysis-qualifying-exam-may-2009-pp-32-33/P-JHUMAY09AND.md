@@ -25,6 +25,7 @@ audit:
   note: "Checked absolute convergence, clockwise orientation of the lower semicircle, the residue at minus i and a uniform vanishing-arc estimate for the stated Fourier convention."
 ---
 
+::: {.problem}
 4. Let $f ( x ) = { \frac { 1 } { x ^ { 2 } + 1 } }$ . Use a contour integral consisting of the interval $[ - R , R ] \subset \mathbb { R }$ and a semicircle of radius R to compute the Fourier transform
 
 $$
@@ -32,6 +33,7 @@ $$
 $$
 
 Show that the contour integral converges to your answer as $R \to + \infty$
+:::
 
 ::: solution
 The value is $\boxed{\widehat f(1)=\pi/e}$.

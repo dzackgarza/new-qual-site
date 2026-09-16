@@ -24,8 +24,10 @@ audit:
   note: "Checked the common bound for all iterates, the derivative product at the fixed point, and the nth-root limit; separated the retained source hint from the statement."
 ---
 
+::: {.problem}
 3. Let U be a bounded domain in C, and let $f : U \to U$ such that f is holomorphic.
    Let $P \in U$ and suppose that $f ( P ) = P$ . Prove that $| f ^ { \prime } ( P ) | \leq 1$
+:::
 
 ::: hint
 Consider the iterates $f_n=f\circ\cdots\circ f$ with $n$ factors.

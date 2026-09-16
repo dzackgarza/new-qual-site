@@ -24,8 +24,10 @@ audit:
   note: "Checked the identically zero denominator case, extension across each isolated zero, preservation of the quotient bound, and the equality on the zero set."
 ---
 
+::: {.problem}
 Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \in \mathbb{C}$.
 Prove that there is a constant $c \in \mathbb{C}$ such that $f = cg$.
+:::
 
 ::: solution
 <1>1. If $g$ is not identically zero, the quotient $f/g$ extends to a bounded entire function.

@@ -25,8 +25,9 @@ audit:
   note: "Handled g identically zero separately, proved each zero of g occurs in f with at least the same multiplicity, extended f/g entire, and applied Liouville to the bounded quotient."
 ---
 
+::: {.problem}
 Question 1. Suppose that $f , g$ are entire holomorphic functions with $| f ( z ) | \leq | g ( z ) |$ for all $z \in \mathbf { C }$ . Prove that there is a constant $c \in \mathbf { C }$ so that $f = c g$ ·
-
+:::
 
 ::: solution
 <1>1. If $g\equiv0$, the conclusion is immediate.

@@ -25,10 +25,12 @@ audit:
   note: "Used the single-valued real logarithm along the positive boundary image and checked the argument principle without assuming a logarithm throughout the disk."
 ---
 
+::: {.problem}
 Let $U$ be an open set in $\mathbb{C}$ containing the closed unit disk $\overline{D}$.
 Suppose $f$ is a meromorphic function on $U$ such that $f(\partial D) \subset \mathbb{R}^{+}$.
 (In particular, $f$ has no zeros or poles on $\partial D$.)
 Show that $f$ has the same number of zeros as poles in $D$, counting multiplicities.
+:::
 
 ::: solution
 <1>1. The logarithmic derivative has integral zero around the unit circle.

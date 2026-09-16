@@ -24,6 +24,7 @@ audit:
   note: "Verified the uniform disk-radius constant, normality also on disconnected open sets, and the vanishing local L2 mass needed to obtain zf(z) tending to zero rather than merely boundedness."
 ---
 
+::: {.problem}
 Let $U$ be an open subset of $\mathbb{C}$.
 We use the notation
 
@@ -38,6 +39,7 @@ $$\sup_{z \in K} |f(z)| \leq C_K \|f\|_{L^2(U)}.$$
 
 - Suppose $U$ is the punctured disc $D(0,1) \setminus \{0\}$.
   If $f$ is holomorphic on $U$ and $\|f\|_{L^2(U)} < \infty$, prove that $z = 0$ is a removable singularity of $f$.
+:::
 
 ::: solution
 Write $dA=dx\,dy$. Normality here means that every sequence

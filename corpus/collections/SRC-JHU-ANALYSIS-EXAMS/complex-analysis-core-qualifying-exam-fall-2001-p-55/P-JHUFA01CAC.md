@@ -24,8 +24,9 @@ audit:
   note: "Used a 120-degree sector contour, checked both radial contributions and the large-arc decay, identified the single enclosed cubic pole, and simplified the residue quotient."
 ---
 
+::: {.problem}
 Problem 3. Compute: $\int _ { 0 } ^ { \infty } { \frac { d x } { 1 + x ^ { 3 } } } .$
-
+:::
 
 ::: solution
 The value is

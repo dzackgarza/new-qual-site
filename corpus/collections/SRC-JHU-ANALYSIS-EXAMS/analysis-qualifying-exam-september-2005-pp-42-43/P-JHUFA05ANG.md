@@ -24,6 +24,7 @@ audit:
   note: "Checked strict bounds on both circles, subtraction of the two multiplicity counts and exclusion of boundary zeros."
 ---
 
+::: {.problem}
 7. How many zeros does the polynomial
 
 $$
@@ -31,6 +32,7 @@ z ^ { 9 } + z ^ { 5 } - 8 z ^ { 3 } - z + 2
 $$
 
 have between the circles $\{ | z | = 1 \}$ and $\{ | z | = 2 \}$ . Justify your answer.
+:::
 
 ::: solution
 There are $\boxed{6}$ zeros between the circles, counted

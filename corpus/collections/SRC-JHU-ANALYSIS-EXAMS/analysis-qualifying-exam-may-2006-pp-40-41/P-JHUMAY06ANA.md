@@ -25,7 +25,9 @@ audit:
   note: "Checked the local nonzero holomorphic factor, negative residue at the pole and the primitive argument on a circle without assuming simple connectedness."
 ---
 
+::: {.problem}
 1. Let P be a point in an open set U in C, and suppose that f is a meromorphic function on U with a pole at P . Prove that there is no holomorphic function $g : U \setminus \{ P \} \to \mathbb { C }$ such that $e ^ { g ( z ) } = f ( z )$ for all $z \in U \setminus \{ P \}$
+:::
 
 ::: solution
 <1>1. The logarithmic derivative has a nonzero integral around the pole.

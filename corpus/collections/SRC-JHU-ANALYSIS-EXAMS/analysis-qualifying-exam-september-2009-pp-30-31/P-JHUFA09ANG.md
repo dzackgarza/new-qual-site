@@ -25,11 +25,13 @@ audit:
   note: "Checked both normalization derivatives, derived the bound three eighths, and exhibited every extremizer rather than just an upper estimate."
 ---
 
+::: {.problem}
 7. Let $f:H\to D$ be a holomorphic map from the upper half plane
 
 $H = \left\{ z \in \mathbb { C } : \operatorname { I m } z > 0 \right\}$ to the unit disk $D = \{ z \in \mathbb { C } : | z | < 1 \}$
 
 Suppose that $f ( i ) = 1 / 2$ . Determine the maximal possible value of $| f ^ { \prime } ( i ) |$
+:::
 
 ::: solution
 The maximum is $\boxed{3/8}$.

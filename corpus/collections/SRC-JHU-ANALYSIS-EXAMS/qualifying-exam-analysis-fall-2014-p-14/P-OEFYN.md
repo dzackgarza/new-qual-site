@@ -32,12 +32,14 @@ audit:
   note: "Retained the finite-net and orthogonal-projection construction, its uniform norm estimate, and the converse total-boundedness proof."
 ---
 
+::: {.problem}
 3. Let X and Y be Hilbert spaces and $L : X \to Y$ be a bounded linear operator.
    Prove that the following two conditions are equivalent:
 
 (a) The image $L ( \mathbf { B } )$ of the unit ball in X has compact closure in $Y .$
 
 (b) There is a sequence of bounded linear operators $L_n:X\to Y$ with finite-dimensional range such that $\|L_n-L\|\to0$, where $\|\cdot\|$ is the operator norm.
+:::
 
 ::: solution
 <1>1. Assume (a) and approximate $L(B)$ by a finite-dimensional subspace.

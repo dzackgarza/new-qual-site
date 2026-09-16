@@ -25,6 +25,7 @@ audit:
   note: "Checked the uniform disk radius, the mean-square estimate and identification of the locally uniform holomorphic limit with the prescribed L2 equivalence class."
 ---
 
+::: {.problem}
 3. Let $\mathcal { O } ( D )$ denote the space of holomorphic functions on the unit disk D and let
 
 $$
@@ -38,6 +39,7 @@ $$
 $$
 
 b) Show that H is a closed subspace of $L ^ { 2 } ( D )$ and hence is a Hilbert space.
+:::
 
 ::: solution
 Write $dA=dx\,dy$. We identify each function in $\mathcal H$

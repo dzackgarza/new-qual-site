@@ -24,11 +24,13 @@ audit:
   note: "Checked the two simple residues, the upper-arc decay and absolute convergence before taking the imaginary part of the complex integral."
 ---
 
+::: {.problem}
 Use residues to evaluate the integral
 
 $$
 \int_{-\infty}^{\infty} \frac{x \sin x \, dx}{(x^{2}+1)(x^{2}+4)}.
 $$
+:::
 
 ::: solution
 The value is $\boxed{\frac\pi3(e^{-1}-e^{-2})}$.

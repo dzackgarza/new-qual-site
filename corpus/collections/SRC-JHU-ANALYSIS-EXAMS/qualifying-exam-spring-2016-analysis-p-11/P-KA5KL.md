@@ -24,6 +24,7 @@ audit:
   note: "Checked the distinction between actual holomorphic functions and L2 classes, derived the compact point-evaluation bound, and used Fatou to identify the holomorphic limit with the L2 limit."
 ---
 
+::: {.problem}
 Let $U \subset \mathbb{C}$ be an open set and
 
 $$A^2(U) = \{ f \text{ holomorphic on } U : \int_U |f(z)|^2 \, dx \, dy < \infty \}.$$
@@ -33,6 +34,7 @@ Define
 $$\langle f, g \rangle = \int_U f(z) \overline{g(z)} \, dx \, dy, \quad \forall f, g \in A^2(U).$$
 
 Prove that $A^2(U)$ is a Hilbert space when equipped with this inner product.
+:::
 
 ::: solution
 Write $dA=dx\,dy$ and $\|f\|_2^2=\int_U|f|^2\,dA$.

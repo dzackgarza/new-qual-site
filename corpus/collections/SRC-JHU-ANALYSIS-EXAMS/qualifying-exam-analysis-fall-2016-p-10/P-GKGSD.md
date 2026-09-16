@@ -24,7 +24,9 @@ audit:
   note: "Checked nonvanishing of f(w)/w including the origin, constructed its logarithm by a primitive, and used oddness to rule out the opposite-point collision after squaring."
 ---
 
+::: {.problem}
 5. Let f be a one-to-one analytic function defined on the unit disk D centered at the origin and $f ( 0 ) = 0$ . Show that the function $g ( z ) = { \sqrt { f ( z ^ { 2 } ) } }$ has a single-valued branch and is also one-to-one.
+:::
 
 ::: solution
 <1>1. There is a holomorphic nonvanishing function $h$ on $D$ with $f(w)=wh(w)$.

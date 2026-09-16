@@ -25,10 +25,12 @@ audit:
   note: "Proved the complete disk-conjugation classification and its converse; for plane automorphisms proved growth at infinity from the continuous inverse, polynomiality and degree one."
 ---
 
+::: {.problem}
 6. (a) Describe all the automorphisms of the right half-plane
 $H=\{z\in\mathbb C:\operatorname{Re}z>0\}$, meaning holomorphic bijections from $H$ onto itself.
 
 (b) Describe all the automorphisms of C (holomorphic bijective maps from C onto C).
+:::
 
 ::: solution
 Write $D=\{w:|w|<1\}$ and

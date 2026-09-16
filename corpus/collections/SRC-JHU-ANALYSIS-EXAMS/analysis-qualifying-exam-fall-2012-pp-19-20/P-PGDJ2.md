@@ -16,6 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 1. How many zeros does the polynomial
 
 $$
@@ -23,6 +24,7 @@ z^9 + z^6 + 30 z^5 - 3z + 2
 $$
 
 have in the annulus $\{ 1 \leq | z | \leq 3 \}$ . Justify your answer.
+:::
 
 ::: solution
 **Goal:** Determine the number of zeros of the polynomial $P(z) = z^9 + z^6 + 30z^5 - 3z + 2$ in the closed annulus $A = \{z \in \mathbb{C} : 1 \le |z| \le 3\}$ counted with multiplicity.

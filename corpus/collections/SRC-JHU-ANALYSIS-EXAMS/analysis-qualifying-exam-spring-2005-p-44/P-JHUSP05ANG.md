@@ -24,6 +24,7 @@ audit:
   note: "Proved both constituent maps are bijective, checked their image inequalities and denominators, and verified the normalization exactly."
 ---
 
+::: {.problem}
 Find a bijective holomorphic map $f$ from the quadrant
 
 $$
@@ -31,6 +32,7 @@ Q = \{ x + iy \in \mathbb{C} : x > 0, \ y > 0 \}
 $$
 
 onto the unit disk $D = \{ z \in \mathbb{C} : |z| < 1 \}$ with $f(1+i) = 0$.
+:::
 
 ::: solution
 One such map is

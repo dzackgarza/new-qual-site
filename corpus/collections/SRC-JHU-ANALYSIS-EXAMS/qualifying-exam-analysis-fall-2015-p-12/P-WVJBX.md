@@ -18,6 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 1. Suppose $\{ f _ { n } \} _ { n = 1 } ^ { \infty } \subset L ^ { 2 } ( \mathbb { R } )$ is a sequence that converges to 0 in the $L ^ { 2 }$ norm; in other words,
 
 $$
@@ -25,6 +26,7 @@ $$
 $$
 
 Prove that there exists a subsequence $\{ f _ { n _ { k } } \}$ such that $f _ { n _ { k } }  0$ almost everywhere.
+:::
 
 ::: {.solution}
 <1>1. Since $\|f_n\|_{L^2} \to 0$, we can choose a subsequence $\{f_{n_k}\}$ with $\|f_{n_k}\|_{L^2} \le 2^{-k}$.

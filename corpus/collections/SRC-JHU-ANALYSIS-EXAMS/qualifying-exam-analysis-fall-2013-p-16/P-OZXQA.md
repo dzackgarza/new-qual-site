@@ -24,9 +24,11 @@ audit:
   note: "Verified the sinc integral by an indented contour, cancellation at finite symmetric endpoints, and both half-height transition values without interchanging the frequency and endpoint limits."
 ---
 
+::: {.problem}
 For $t \in \mathbb{R}$, compute
 
 $$\lim_{A \to \infty} \int_{-A}^{A} \frac{\sin x}{x} e^{ixt} \, dx.$$
+:::
 
 ::: solution
 The requested limit is

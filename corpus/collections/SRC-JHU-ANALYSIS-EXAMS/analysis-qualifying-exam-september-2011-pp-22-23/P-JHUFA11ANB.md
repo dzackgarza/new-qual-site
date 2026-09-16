@@ -25,8 +25,10 @@ audit:
   note: "Checked an explicit globally defined harmonic conjugate, both Cauchy–Riemann equations, and the nonzero exponential factor needed to deduce constancy."
 ---
 
+::: {.problem}
 2. Let $h : \mathbb { C } \to \mathbb { R }$ be a harmonic function such that h is bounded below.
    Prove that h is constant.
+:::
 
 ::: solution
 <1>1. Construct an entire function whose real part is $h$.

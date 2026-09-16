@@ -25,6 +25,7 @@ audit:
   note: "Reduced cos squared to a single cosine, evaluated the resulting period integral by a unit-circle residue, located the unique interior quadratic root, and simplified using a>1."
 ---
 
+::: {.problem}
 2. Evaluate the integral
 
 $$
@@ -32,7 +33,7 @@ $$
 $$
 
 Where $a > 1$
-
+:::
 
 ::: solution
 The value is

@@ -24,6 +24,7 @@ audit:
   note: "Verified noncancellation at both double poles and computed both derivative-formula residues, including the exponential and imaginary signs at minus i."
 ---
 
+::: {.problem}
 6. Find all the poles of the function
 
 $$
@@ -31,6 +32,7 @@ f ( z ) = \frac { e ^ { \pi z } } { ( z ^ { 2 } + 1 ) ^ { 2 } } .
 $$
 
 Determine the residue of f at each pole.
+:::
 
 ::: solution
 The only poles are $i$ and $-i$, both of order two, with

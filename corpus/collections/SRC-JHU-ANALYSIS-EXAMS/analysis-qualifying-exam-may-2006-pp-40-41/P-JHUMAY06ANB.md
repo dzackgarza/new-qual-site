@@ -28,6 +28,7 @@ audit:
   note: "PDF page 40 prints a normal question mark after the unit disk; restored that punctuation and independently retained the two complete Rouche comparisons."
 ---
 
+::: {.problem}
 2. How many zeros does the polynomial
 
 $$
@@ -36,6 +37,7 @@ $$
 
 have in the unit disk $\{|z|<1\}$? How many zeros does it
 have in the disk $\{|z|<2\}$ of radius two? Justify your answers.
+:::
 
 ::: solution
 Write $p(z)=z^7-4z^3+z-1/2$. The requested zero counts,

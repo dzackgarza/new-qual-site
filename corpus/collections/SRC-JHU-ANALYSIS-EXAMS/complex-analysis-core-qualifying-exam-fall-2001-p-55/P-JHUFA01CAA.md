@@ -24,9 +24,10 @@ audit:
   note: "Used meromorphicity at infinity to confine finite poles to a compact disk, subtracted their finite principal parts, and showed the remaining entire function is a polynomial or constant according to the behavior at infinity."
 ---
 
+::: {.problem}
 Problem 1. A meromorphic function on $\mathbb { C } \cup \{ \infty \}$ is a meromorphic function $f ( z )$ on C such that $g ( z ) = f ( 1 / z )$ is also meromorphic.
 Show that a meromorphic function on $\mathbb { C } \cup \{ \infty \}$ must be rational, i.e. one can express it as the quotient of two polynomials.
-
+:::
 
 ::: solution
 <1>1. There are only finitely many finite poles.

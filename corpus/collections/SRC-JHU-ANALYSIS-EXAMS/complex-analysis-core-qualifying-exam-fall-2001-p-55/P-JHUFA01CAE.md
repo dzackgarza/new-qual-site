@@ -32,6 +32,7 @@ audit:
   note: "Corrected the step heading and used the closed radius-|z| disk, including radius zero; checked the logarithm branch and exact radial power-series bound."
 ---
 
+::: {.problem}
 Let $D_r(0)=\{z\in\mathbb C:|z|<r\}$ and $\Delta=D_1(0)$.
 Use the following subordination result: if $F:\Delta\to\mathbb C$
 is injective and holomorphic, and $g:\Delta\to F(\Delta)$
@@ -45,7 +46,7 @@ $$
 $$
 
 for all $z \in D _ { 1 } ( 0 )$
-
+:::
 
 ::: solution
 Let

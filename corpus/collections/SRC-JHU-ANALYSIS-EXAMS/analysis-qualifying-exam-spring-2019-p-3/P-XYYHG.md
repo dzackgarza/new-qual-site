@@ -17,7 +17,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Question 2.1. Determine all holomorphic automorphisms of the upper half plane $u =$ $\lbrace z : I m z > 0 \rbrace$
+:::
 
 ::: {.solution}
 <1>1. The holomorphic automorphisms of the upper half plane $\HH = \{z : \Im z > 0\}$ are exactly the maps

@@ -25,6 +25,7 @@ audit:
   note: "Constructed a conjugate after lifting to the left half-plane, proved that the period is purely imaginary and constant, and descended the corrected periodic function using local logarithm branches."
 ---
 
+::: {.problem}
 8. Let h be a harmonic function on the punctured disk
 
 $$
@@ -32,6 +33,7 @@ U : = \left\{ z \in \mathbb { C } : 0 < | z | < 1 \right\} .
 $$
 
 Show that there exists a constant $c \in \mathbb { R }$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
+:::
 
 ::: solution
 Let $L=\{w\in\mathbb C:\operatorname{Re}w<0\}$.

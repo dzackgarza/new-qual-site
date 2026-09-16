@@ -24,6 +24,7 @@ audit:
   note: "Bounded the difference quotient in all complex directions and exhibited Cauchy–Riemann failure at real nonzero points in every neighborhood of zero."
 ---
 
+::: {.problem}
 5. Let
 
 $$
@@ -35,6 +36,7 @@ State whether each of the following is true or false and give proofs for your an
 a) the complex derivative $f ^ { \prime } ( 0 )$ exists;
 
 b) f is holomorphic in a neighborhood of 0.
+:::
 
 ::: solution
 Part (a) is true, with $f'(0)=0$. Part (b) is false.

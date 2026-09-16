@@ -24,9 +24,11 @@ audit:
   note: "Checked the zero-maximum case, choice of phases when either initial value is zero, the scalar maximum principle, and the equality argument forcing both holomorphic summands to be real-valued."
 ---
 
+::: {.problem}
 Let $f$ and $g$ be functions holomorphic defined on a domain $U \subseteq \mathbb{C}$.
 Set $\varphi(z) = |f(z)| + |g(z)|$ for $z \in U$.
 If $\varphi$ assumes a maximum value on $U$, show that both $f$ and $g$ are constants on $U$.
+:::
 
 ::: solution
 Choose $z_0\in U$ where the maximum is attained and set

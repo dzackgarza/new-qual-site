@@ -24,6 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Question 1.2. Fix a measurable function $f : \mathbb { R } ^ { 2 }$ R and, for every $x , y \in \mathbb { R } ,$ , let
 
 $$
@@ -37,6 +38,7 @@ $$
 $$
 
 What does Fubini’s theorem imply about such $f ?$ What about Tonelli’s theorem?
+:::
 
 ::: solution
 <1>1. Define a measurable function with conditionally convergent iterated integrals.

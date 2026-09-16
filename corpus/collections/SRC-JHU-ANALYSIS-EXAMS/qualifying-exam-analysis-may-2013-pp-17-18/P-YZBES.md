@@ -24,7 +24,9 @@ audit:
   note: "Checked both strict boundary inequalities and exclusion of unit-circle zeros before subtracting the disk counts."
 ---
 
+::: {.problem}
 Prove that there is only one solution in the unit disc $\{z : |z| < 1\}$ and there are three solutions on the annulus $\{z : 1 < |z| < 2\}$ (counting multiplicities) for the equation $z^4 - 6z + 3 = 0$.
+:::
 
 ::: solution
 Put $p(z)=z^4-6z+3$.

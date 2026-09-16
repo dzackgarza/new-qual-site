@@ -25,9 +25,11 @@ audit:
   note: "Verified the Cayley normalization and derivative factor, and proved that every displayed extremizer maps into the open upper half-plane and attains the maximum."
 ---
 
+::: {.problem}
 Let $D=\{z\in\mathbb C:|z|<1\}$ and $H=\{w\in\mathbb C:\operatorname{Im}w>0\}$. Let $f:D\to H$ be holomorphic.
 
 Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\left| f ^ { \prime } ( 0 ) \right|$
+:::
 
 ::: solution
 The maximum is $\boxed{6}$.

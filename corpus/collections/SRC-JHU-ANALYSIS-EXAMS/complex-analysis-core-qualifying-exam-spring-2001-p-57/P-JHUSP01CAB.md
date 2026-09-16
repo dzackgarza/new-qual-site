@@ -28,8 +28,9 @@ audit:
   note: "Verified the two disk counts and proved that the polynomial and its derivative have no common zero, so the answer also counts distinct roots."
 ---
 
+::: {.problem}
 Question 2. Find the number of zeros of the function $f ( z ) = 2 z ^ { 5 } + 8 z - 1$ in the annulus $1 < | z | < 2$
-
+:::
 
 ::: solution
 There are exactly $\boxed{4}$ zeros in the annulus, and all are simple.

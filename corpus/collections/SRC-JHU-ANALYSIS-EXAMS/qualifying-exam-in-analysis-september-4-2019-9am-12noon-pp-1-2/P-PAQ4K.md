@@ -17,6 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Assume that $f_1, f_2, \ldots$ is a sequence of positive continuous functions defined on $[0,1]$ with
 
 $$f(x) = \lim_{n \to \infty} f_n(x) \text{ for every } x \in [0,1]$$
@@ -30,6 +31,7 @@ Provide a proof if it is true or provide a counterexample if it is false.
 
 (b) Is it always true that $\int_0^1 f(x) \, dx \geq 1$?
 Provide a proof if it is true or provide a counterexample if it is false.
+:::
 
 ::: {.solution}
 <1>1. Part (a): **Yes**, it is always true that $\int_0^1 f(x)\,dx \le 1$: <2>1. Each $f_n$ is positive and continuous on $[0, 1]$, hence non-negative and Lebesgue measurable.

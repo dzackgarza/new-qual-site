@@ -25,12 +25,13 @@ audit:
   note: "Used the upper semicircle, identified all three upper-half-plane sixth roots of -1, computed their residues as 1/(6 zeta^3), and checked the vanishing arc estimate and evenness factor."
 ---
 
+::: {.problem}
 6. (20 points) Evaluate the integral:
 
 $$
 \int _ { 0 } ^ { \infty } { \frac { u ^ { 2 } d u } { u ^ { 6 } + 1 } }
 $$
-
+:::
 
 ::: solution
 The integral equals

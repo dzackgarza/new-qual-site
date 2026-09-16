@@ -25,7 +25,9 @@ audit:
   note: "Verified an explicit rational map is holomorphic on the disk and onto the whole plane by the quadratic root sum, without assuming an inverse for a merely surjective map."
 ---
 
+::: {.problem}
 4) Does there exist a surjective holomorphic map $f : D \to \mathbb { C }$ from the unit disc to the whole complex plane? Prove that your answer is correct.
+:::
 
 ::: solution
 Yes. One example is

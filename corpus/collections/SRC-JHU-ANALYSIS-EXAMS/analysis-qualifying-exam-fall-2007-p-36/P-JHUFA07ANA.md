@@ -24,6 +24,7 @@ audit:
   note: "Computed both Cauchy–Riemann equations, not just the one that holds identically, and distinguished differentiability on two lines from analyticity on an open set."
 ---
 
+::: {.problem}
 1) Is the function
 
 $$
@@ -31,6 +32,7 @@ f ( x , y ) = x ^ { 3 } + 3 x y ^ { 2 } - 3 x ^ { 2 } y - 1 0 + i ( y ^ { 3 } + 
 $$
 
 complex analytic? Prove that your answer is correct.
+:::
 
 ::: solution
 The function is not complex analytic on any nonempty open set.

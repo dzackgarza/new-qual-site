@@ -25,6 +25,7 @@ audit:
   note: "Checked the global harmonic conjugate, polynomial growth of its exponential, the Cauchy coefficient limits and the zero-free polynomial step; no lower bound on u is assumed."
 ---
 
+::: {.problem}
 4. Suppose that $u : \mathbb { C } \to \mathbb { R }$ is a harmonic function such that
 
 $$
@@ -32,6 +33,7 @@ u ( z ) \leq 1 0 \log ( | z | + 2 ) ,
 $$
 
 for all $z \in \mathbb { C }$ . Prove that u is constant.
+:::
 
 ::: solution
 <1>1. The harmonic function is the real part of an entire function.

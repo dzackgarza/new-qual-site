@@ -24,9 +24,11 @@ audit:
   note: "Checked the bounded fractional transform, exclusion of a boundary value at its removable extension, and nonvanishing of the inverse transform's denominator at the puncture."
 ---
 
+::: {.problem}
 Suppose $f$ is holomorphic on $U := D(0,1) \setminus \{0\}$.
 Assume that the real part $\operatorname{Re}(f)$ is bounded from below on $U$.
 Prove that $z = 0$ is a removable singularity.
+:::
 
 ::: solution
 Choose $m\in\mathbb R$ with $\operatorname{Re}f(z)\geq m$

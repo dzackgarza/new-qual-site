@@ -24,6 +24,7 @@ audit:
   note: "Checked separate convergence of the two infinite tails, the clockwise indentation sign, cancellation on the real segments, and an explicit large-semicircle estimate."
 ---
 
+::: {.problem}
 This problem is about the integral
 
 $$I = \int_{-\infty}^{\infty} \frac{\sin x}{x} \, dx.$$
@@ -31,6 +32,7 @@ $$I = \int_{-\infty}^{\infty} \frac{\sin x}{x} \, dx.$$
 - Show directly that $I$ is a convergent improper Riemann integral.
 
 - Use a contour integral to evaluate $I$.
+:::
 
 ::: solution
 The improper integral exists and equals $\boxed{\pi}$.

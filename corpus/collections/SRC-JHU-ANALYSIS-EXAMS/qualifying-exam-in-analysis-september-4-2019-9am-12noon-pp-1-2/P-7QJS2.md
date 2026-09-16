@@ -24,6 +24,7 @@ audit:
   note: "Repaired the false extra-credit conclusion, verified the example on the full radius-two disk and the exact logarithmic bound, and supplied the removable-singularity and identity-theorem steps."
 ---
 
+::: {.problem}
 4. Let f be a holomorphic function in the punctured disk $\{ z : 0 < | z | < 2 \}$ satisfying
 
 $$
@@ -41,6 +42,7 @@ b. Show that if $f ( z ) \neq 0$ in $| z | < 1$ , then f is constant.
 c. (Extra credit) True or false, explain.
 
 $f = \alpha z ^ { n }$ for $\alpha \in \mathbb { C } , | \alpha | = 1$ and an integer $n \geq 0$
+:::
 
 ::: {.solution}
 **(a).**

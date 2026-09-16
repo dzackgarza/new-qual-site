@@ -24,7 +24,9 @@ audit:
   note: "Checked the double-pole residue, vanishing semicircle estimate, absolute convergence and factor of two between the line and half-line integrals."
 ---
 
+::: {.problem}
 Use residues to calculate the integral $\int_0^\infty \frac{1}{(1 + x^2)^2} \, dx$.
+:::
 
 ::: solution
 The value is $\boxed{\pi/4}$.

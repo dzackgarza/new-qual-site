@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Prove that the Hardy-Littlewood maximal function $f^*$ for an integrable function $f$ satisfies
 
 $$m(\{x \in \mathbb{R}^d : f^*(x) > \alpha\}) \leq \frac{3^d}{\alpha} \|f\|_{L^1(\mathbb{R}^d)}$$
@@ -35,6 +36,7 @@ $$f^*(x) = \sup_{x \in B} \frac{1}{m(B)} \int_B |f(y)| \, dy, \quad x \in \mathb
 where the supremum is taken over all balls containing the point $x$.
 You may assume the Vitali 3-times Covering Lemma.
 State it clearly if you use it.
+:::
 
 ::: solution
 <1>1. State the covering lemma and choose a witnessing ball at each superlevel point.

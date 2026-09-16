@@ -25,12 +25,13 @@ audit:
   note: "Excluded common zeros of P and P' algebraically, then used a strict Rouche comparison with z^3+1/16 and checked that its three zeros lie strictly inside radius one half."
 ---
 
+::: {.problem}
 5. Let $\begin{array} { r } { P ( z ) = z ^ { 7 } + z ^ { 3 } + \frac { 1 } { 1 6 } } \end{array}$
 
 (a) (5 points) Show that P has no multiple zeros.
 
 (b) (15 points) Determine the number of zeros of P that lie in the closed disc $| z | \leq { \frac { 1 } { 2 } }$
-
+:::
 
 ::: solution
 <1>1. Part (a): $P$ and $P'$ have no common zero.

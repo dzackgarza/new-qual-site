@@ -24,6 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 3. For a Radon measure $\mu ,$ with $\textstyle \int _ { \mathbb { R } ^ { n } } d \mu = C$ . Prove that for all $\epsilon > 0$ , there exists a set $E _ { \epsilon } \subset \mathbb { R } ^ { n }$ such that
 \[
 \mathcal M^1(E_\epsilon)
@@ -38,6 +39,7 @@ $$
 $$
 
 (Hint: use Vitali covering lemma.)
+:::
 
 ::: solution
 <1>1. Define the exceptional set by failure of the desired ball estimate.

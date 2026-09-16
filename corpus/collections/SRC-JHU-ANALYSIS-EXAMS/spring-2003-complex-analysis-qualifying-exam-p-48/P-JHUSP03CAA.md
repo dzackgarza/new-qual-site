@@ -32,13 +32,14 @@ audit:
   note: "Gave the explicit polynomial and principal parts, proved a nonvanishing collar at the unit circle, and replaced implicit curved-boundary gluing by a local fractional coordinate and a uniform translated-boundary estimate."
 ---
 
+::: {.problem}
 Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
 
 (a) Let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic with a pole at infinity.
 Show that $f$ must be a rational function.
 
 (b) Use the above to prove the following: if $f : \Delta \to \mathbb{C}$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $|f(z)| = 1$ for all $|z| = 1$, then $f(z)$ is the restriction of a rational function.
-
+:::
 
 ::: solution
 <1>1. A meromorphic function on the sphere is rational; in particular, part (a) holds.

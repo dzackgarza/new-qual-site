@@ -25,11 +25,13 @@ audit:
   note: "Checked absolute convergence, the logarithm values on both real segments, the double-pole derivative and explicit estimates on both semicircles."
 ---
 
+::: {.problem}
 4) (10 points) Use residues to verify that
 
 $$
 \int _ { 0 } ^ { \infty } \frac { \ln x } { ( x ^ { 2 } + 4 ) ^ { 2 } } d x = \frac { \pi } { 3 2 } ( \ln 2 - 1 ) .
 $$
+:::
 
 ::: solution
 <1>1. The real integral is absolutely convergent.

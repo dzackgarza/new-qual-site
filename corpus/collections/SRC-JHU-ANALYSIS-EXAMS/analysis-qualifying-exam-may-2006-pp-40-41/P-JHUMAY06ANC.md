@@ -25,8 +25,10 @@ audit:
   note: "Proved the affine reduction, the necessary coefficient sum bound on the unit circle and its sufficiency on the full exterior region, including zero coefficients."
 ---
 
+::: {.problem}
 3. Find all entire functions f such that $| f ( z ) | \le | z | ^ { 3 / 2 }$ whenever $| z | \geq 1$ . Give explicit formulas for the functions and give a proof for your answer.
    (An entire function is a holomorphic function on C.)
+:::
 
 ::: solution
 The functions are precisely

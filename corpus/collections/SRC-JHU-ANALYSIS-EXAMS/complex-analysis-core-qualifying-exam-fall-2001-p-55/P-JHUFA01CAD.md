@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Problem 4. Suppose that $f : D _ { 1 } ( 0 ) \to \mathbb { C }$ is a one-to-one holomorphic function with $\Omega = f \left( D _ { 1 } ( 0 ) \right)$ Let $g : D _ { 1 } ( 0 ) \to \Omega$ be another holomorphic function with $g ( 0 ) = f ( 0 )$ . Show that for each $0 \leq r < 1$ $g \left( D _ { r } ( 0 ) \right) \subset f \left( D _ { r } ( 0 ) \right)$ .
+:::
 
 ::: {.solution}
 **Goal.** For $f: D_1(0) \to \CC$ one-to-one holomorphic with $\Omega = f(D_1(0))$, and $g: D_1(0) \to \Omega$ holomorphic with $g(0) = f(0)$, show $g(D_r(0)) \subseteq f(D_r(0))$ for every $0 \le r < 1$.

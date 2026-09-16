@@ -17,12 +17,14 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 2. Let $f _ { n } : D \to \mathbb { C } , n = 1 , 2 , 3 , . . . ,$ be a sequence of holomorphic functions on the unit disk D such that $f _ { n } ^ { - 1 } ( 0 ) = \{ c _ { n } \}$ , where $c _ { n } \in D$ . Suppose that $f _ { n }  f _ { 0 }$ uniformly, where $f _ { 0 }$ is not constant.
 
 a) Prove that $f _ { 0 }$ has at most one zero in $D$
 
 b) Can $f _ { 0 }$ have no zeros?
 If so, give a necessary and sufficient condition on the $c _ { n }$ for this to happen.
+:::
 
 ::: {.solution}
 <1>1. Part (a): $f_0$ has at most one zero in $D$: <2>1. By the Weierstrass Convergence Theorem, the uniform limit $f_0$ of holomorphic functions on $D$ is holomorphic on $D$.

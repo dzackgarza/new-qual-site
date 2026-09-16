@@ -25,6 +25,7 @@ audit:
   note: "Computed both residues, imposed the common orientation sign on enclosed poles, and supplied explicit smooth circles realizing every listed value."
 ---
 
+::: {.problem}
 2. Find all possible values of
 
 $$
@@ -34,6 +35,7 @@ $$
 where γ ranges over all simple closed smooth curves contained in $\mathbb { C } \setminus \{ 1 , i \}$ . (A simple closed curve is a closed curve that does not intersect itself; i.e., it is a homeomorphic image of the circle.)
 
 You do not need to give a proof for your answer to this problem, but show all your work.
+:::
 
 ::: solution
 Set

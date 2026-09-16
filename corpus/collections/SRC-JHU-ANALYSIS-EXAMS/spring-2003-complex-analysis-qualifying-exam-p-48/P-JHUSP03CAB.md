@@ -28,11 +28,12 @@ audit:
   note: "Visually checked problem 2 and the unit-disk convention on PDF page 48; restored Delta's definition and avoided a positive-separation claim when M=0."
 ---
 
+::: {.problem}
 Let $\Delta=\{z\in\mathbb C:|z|<1\}$, and let $f : \Delta \to \Delta$ be a holomorphic function with $f(0) = 0$ and $|f'(0)| = M$.
 If $0 \neq w \in \Delta$ is any other zero of $f(z)$, show that:
 
 $$\frac{M}{1 + M} \leq |w|.$$
-
+:::
 
 ::: solution
 In fact the stronger estimate

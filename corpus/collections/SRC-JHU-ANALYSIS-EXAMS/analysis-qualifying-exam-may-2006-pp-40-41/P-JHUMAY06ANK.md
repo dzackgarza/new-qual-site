@@ -25,7 +25,9 @@ audit:
   note: "Handled zero vectors in the norm-attainment argument, checked conjugation against the chosen inner-product convention and verified the hypotheses for uniform boundedness."
 ---
 
+::: {.problem}
 Suppose $f_n\in L^2([0,1])$ converges weakly to $f\in L^2([0,1])$. Prove that $\limsup_{n\to\infty}\|f_n\|_2<\infty$, or give a counterexample.
+:::
 
 ::: {.solution}
 <1>1. Functional representation and operator norm:

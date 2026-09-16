@@ -25,6 +25,7 @@ audit:
   note: "Located every possible solution in the same radius-one disk, checked strict Rouche dominance on its boundary and concluded uniqueness with multiplicity one."
 ---
 
+::: {.problem}
 2. How many solutions does the equation
 
 $$
@@ -32,6 +33,7 @@ z + e ^ { - z } = 2 + i
 $$
 
 have in the half-plane Re $z > 0 ?$ Prove that your answer is correct.
+:::
 
 ::: solution
 There is exactly $\boxed{1}$ solution in the right half-plane,

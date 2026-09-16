@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 1) How many zeros does the polynomial $z ^ { 6 } - 2 z ^ { 5 } + 7 z ^ { 4 } + z ^ { 3 } - z + 1$ have in the open unit disc $D = \{ z : | z | < 1 \} ?$
+:::
 
 ::: {.solution}
 <1>1. Let $p(z) = z^6 - 2z^5 + 7z^4 + z^3 - z + 1$ and $q(z) = 7z^4$.

@@ -25,11 +25,13 @@ audit:
   note: "Verified the Cayley transform, its bounded extension and invertibility, and the slit-plane argument branch giving a nonconstant harmonic function with values strictly between zero and one."
 ---
 
+::: {.problem}
 3. State whether each of the following two statements is true or false, and give either a proof or counterexample for each.
 
 a) All holomorphic functions $f:\mathbb C\setminus\{0\}\to H$ are constant, where $H=\{z\in\mathbb C:\operatorname{Im}z>0\}$ is the upper half-plane.
 
 b) All harmonic functions $h : \mathbb { C } \setminus [ 0 , + \infty ) \to [ 0 , 1 ]$ are constant.
+:::
 
 ::: solution
 Assertion (a) is true; assertion (b) is false.

@@ -18,9 +18,11 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 3.i. Define equicontinuity and state the Arzela-Ascoli theorem.
 
 ii.Let $\mathcal { F }$ be the family of real valued functions on [0,1] satisfying $f ( 0 ) = 0$ and $\begin{array} { r } { \int _ { 0 } ^ { 1 } f ^ { \prime } ( x ) ^ { 2 } \ d x \leq 1 } \end{array}$ Show that any sequence in $\mathcal { F }$ has a subsequence that converges uniformly.
+:::
 
 ::: solution
 **Goal:** Define equicontinuity, state the Arzelà–Ascoli theorem, and prove that the family $\mathcal{F} = \{f \in AC([0,1]) : f(0)=0, \int_0^1 |f'(x)|^2\,dx \le 1\}$ is relatively compact in $C([0,1])$.

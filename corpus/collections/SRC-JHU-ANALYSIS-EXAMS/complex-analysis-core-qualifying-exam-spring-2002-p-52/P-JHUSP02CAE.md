@@ -24,8 +24,9 @@ audit:
   note: "Expressed each negative Laurent coefficient as a contour integral, summed the residues at 0 and plus/minus pi, and separated the parity cases including the exceptional coefficient a_{-1}."
 ---
 
+::: {.problem}
 5. Let $\scriptstyle \sum _ { n = - \infty } ^ { \infty } a _ { n } z ^ { n }$ be the Laurent series expansion of $\scriptstyle { \frac { 1 } { \sin z } }$ on the annulus $\left\{ z \in \mathbb { C } : \pi < | z | < 2 \pi \right\}$ . Evaluate the coefficients $a _ { n }$ for $n < 0$
-
+:::
 
 ::: solution
 For $m\ge1$, the negative coefficients are

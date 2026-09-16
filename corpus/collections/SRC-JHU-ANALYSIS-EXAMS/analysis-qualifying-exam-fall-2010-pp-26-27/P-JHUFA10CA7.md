@@ -29,11 +29,13 @@ audit:
   note: "Compared both complete transcriptions of Fall 2010 problem 7 and retained the exact coefficient classification here. Removed the duplicate P-JHUMAY11ANO and its unsupported May 2011 membership."
 ---
 
+::: {.problem}
 Determine all entire functions $f$ that satisfy
 
 $$
 |f(z)|\leq |\operatorname{Re}z|^2+|z|^{3/2}\qquad\text{whenever }|z|>1.
 $$
+:::
 
 ::: solution
 The solutions are precisely the affine functions $f(z)=az+b$

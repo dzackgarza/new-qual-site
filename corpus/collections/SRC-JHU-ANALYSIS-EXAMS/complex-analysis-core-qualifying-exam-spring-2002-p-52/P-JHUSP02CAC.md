@@ -25,9 +25,11 @@ audit:
   note: "Separated the whole sphere, one-point complement, and complement with at least two points; applied a Möbius normalization and the Riemann mapping theorem, then distinguished all three models by compactness and Liouville."
 ---
 
+::: {.problem}
 3. Classify all simply connected regions in the extended complex plane up to biholomorphic equivalence.
    i.e, give a list of simply connected region, prove that every simply connected region in the extended complex plane is biholomorphic equivalent to a member in your list.
    Prove also that no two members in your list are biholomorphic equivalent.
+:::
 
 ::: solution
 Up to biholomorphic equivalence, the complete list is

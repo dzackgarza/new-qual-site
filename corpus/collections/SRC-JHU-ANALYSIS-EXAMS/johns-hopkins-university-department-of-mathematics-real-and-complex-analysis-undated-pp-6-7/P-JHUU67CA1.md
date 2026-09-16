@@ -24,6 +24,7 @@ audit:
   note: "Checked the countable closed cover by derivative zero sets, the exact Baire-category implication, the identity-theorem step, and the zeroth-derivative case."
 ---
 
+::: {.problem}
 Let $f$ be an entire function.
 Suppose that for each $z_0 \in \mathbb{C}$, the power series expansion
 
@@ -31,6 +32,7 @@ $$f(z) = \sum_{n=0}^\infty c_n(z - z_0)^n$$
 
 has at least one coefficient $c_n = 0$.
 Show that $f$ is a polynomial.
+:::
 
 ::: solution
 <1>1. One fixed derivative of $f$ vanishes identically.
