@@ -13,16 +13,22 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-14
   note: Checked against Probability, Problem 20, in the deterministic MinerU Flash extraction assets/attachments/Big_List_of_Math_Problems_extracted.md. Part (c)'s variance/operator symbols are damaged in the deterministic extraction, so the missing identity is recorded as an explicit gap rather than reconstructed.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the unresolved variance identity in part (c) and removed a stray digit against Probability Problem 20 on page 30 of the source PDF.
 ---
 
 ::: problem
-Let $\xi _ { 1 } , . . . , \xi _ { n } , \tau$ be independent random variables, $\xi _ { 1 } , . . . , \xi _ { n }$ have the same distribution, τ takes the values $1 , . . . , n$ 1. Consider the sum of a random number of the random variables $S _ { \tau } = \xi _ { 1 } + \ldots + \xi _ { \tau }$ . Show that
+Let $\xi_1, \ldots, \xi_n, \tau$ be independent random variables, $\xi_1, \ldots, \xi_n$ have the same distribution, $\tau$ takes the values $1, \ldots, n$.
+Consider the sum of a random number of the random variables $S_\tau = \xi_1 + \ldots + \xi_\tau$.
+Show that
 
-(a) $\mathbf { E } S _ { \tau } = \mathbf { E } \tau \cdot \mathbf { E } \xi _ { 1 }$
+(a) $\mathbf{E} S_\tau = \mathbf{E}\tau \cdot \mathbf{E}\xi_1$,
 
-(b) $\mathbf { E } ( S _ { \tau } | \tau ) = \tau \mathbf { E } \xi _ { 1 }$
+(b) $\mathbf{E}(S_\tau | \tau) = \tau \mathbf{E}\xi_1$,
 
-(c) The deterministic extraction contains a variance identity here, but its variance/operator symbols are garbled and the exact displayed formula is unresolved.
+(c) $\mathbf{D} S_\tau = \mathbf{E}\tau \cdot \mathbf{D}\xi_1 + \mathbf{D}\tau \cdot (\mathbf{E}\xi_1)^2$,
 
-(d) $\mathbf { D } ( S _ { \tau } | \tau ) = \tau \mathbf { D } \xi _ { 1 }$
+(d) $\mathbf{D}(S_\tau | \tau) = \tau \mathbf{D}\xi_1$.
 :::
