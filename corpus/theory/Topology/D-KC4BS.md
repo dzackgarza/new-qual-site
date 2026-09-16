@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-KC4BS
 kind: definition
-title: Moore Space
+title: Moore space
 classification:
   areas:
   - topology
@@ -14,17 +14,26 @@ review: draft
 ---
 
 ::: {.definition}
-For $G$ abelian and $n\geq 1$, a **Moore space** $M(G,n)$ is a CW complex with
-\[
-\tilde H_i(M(G,n);\ZZ) =
+Let $G$ be an abelian group and $n\geq 1$.
+A \dfn{Moore space} $M(G, n)$ is a [[D-ZOU5G|CW complex]] $X$ with
+$$
+\tilde H_i(X;\ZZ)\cong
 \begin{cases}
 G & i = n, \\
-0 & i \neq n.
+0 & i\neq n.
 \end{cases}
-\]
-One exists for every such $G$ and $n$, built by attaching $(n+1)\dash$cells to a wedge of $n\dash$spheres along a presentation of $G$; e.g. $M(\ZZ, n) = S^n$ and $M(\ZZ/m, n) = S^n \union_{\times m} e^{n+1}$.
+$$
+:::
+
+::: {.proposition}
+For every abelian group $G$ and $n\geq 1$ a Moore space $M(G, n)$ exists: choose a presentation of $G$ by generators and relations, take a [[D-IGUUS|wedge]] of $n$-spheres with one sphere for each generator, and attach one $(n+1)$-cell for each relation along a map representing that relation.
+:::
+
+::: {.example}
+The sphere $S^n$ is an $M(\ZZ, n)$.
+For $m\geq 2$, the space $S^n\cup_m e^{n+1}$ obtained by attaching an $(n+1)$-cell to $S^n$ along a map $S^n\to S^n$ of degree $m$ is an $M(\ZZ/m, n)$.
 :::
 
 ::: {.concept}
-See Hatcher, §2.2, Example 2.40, p. 143.
+See [@Hat02, §2.2, Example 2.40, p. 143].
 :::
