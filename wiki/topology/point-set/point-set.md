@@ -94,8 +94,6 @@ Urysohn's lemma states that in a normal space, disjoint closed sets are separate
 
 ## Maps and homeomorphisms
 
-[[T-WX5Y6]]
-
 ::: {.proof}
 It suffices to show that $f$ is a closed map, since then $f\inv$ is continuous.
 If $A\subseteq X$ is closed, then $A$ is compact because $X$ is compact, so $f(A)$ is compact, and a compact subset of the Hausdorff space $Y$ is closed.
