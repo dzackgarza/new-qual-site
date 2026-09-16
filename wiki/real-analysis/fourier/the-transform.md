@@ -8,8 +8,9 @@ topics:
 
 # The transform
 
-For \(f\in L^1\), the Fourier transform is a continuous function vanishing at infinity; Riemann--Lebesgue supplies the vanishing, while injectivity says that two \(L^1\) functions with the same transform agree almost everywhere.
-Fourier inversion is the recovery theorem, but its hypotheses must still be checked: \(f\in L^1\) alone does not license pointwise inversion everywhere.
+For $f\in L^1(\RR^n)$ let $\hat f(\xi)\coloneqq\int_{\RR^n}f(x)e^{-2\pi i x\cdot\xi}\dx$.
+Then $\hat f$ is continuous, bounded by $\norm f_1$, and vanishes at infinity by the Riemann--Lebesgue lemma; two functions in $L^1$ with the same transform agree almost everywhere.
+Fourier inversion recovers $f$ from $\hat f$ under the additional hypothesis $\hat f\in L^1$.
 
 [[PR-47TTS]]
 
@@ -19,36 +20,37 @@ Fourier inversion is the recovery theorem, but its hypotheses must still be chec
 
 [[T-DTXIA]]
 
+::: {.example}
+The function $\hat f = \chi_{[-1,1]}$ is not the Fourier transform of any $f\in L^1(\RR)$, since it is not continuous.
+For $f=\chi_{[-1,1]}\in L^1(\RR)$, $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi}$ is not in $L^1(\RR)$, so Fourier inversion does not apply to it.
+
+:::
+
 [[PR-DPRY7]]
 
 [[PR-DY2B3]]
 
-::: {.remark title="The dictionary"}
-The transform turns each operation into an easier one, and the exam uses the table rather than the definition:
+::: {.remark title="Operations under the transform"}
+For $f, g\in L^1(\RR)$, $h\in\RR$, and $a\neq 0$, with the convention above:
 
-| On $f$ | On $\hat f$ |
+| Operation on $f$ | Transform |
 | --- | --- |
-| translation | modulation |
-| dilation by $a$ | dilation by $1/a$, times $\abs a\inv$ |
-| differentiation | multiplication by $\xi$ |
-| convolution | multiplication |
+| $f(x-h)$ | $e^{-2\pi i h\xi}\hat f(\xi)$ |
+| $e^{2\pi i hx}f(x)$ | $\hat f(\xi-h)$ |
+| $f(ax)$ | $\abs a^{-1}\hat f(\xi/a)$ |
+| $f'$, for $f$ absolutely continuous with $f'\in L^1$ | $2\pi i\xi\hat f(\xi)$ |
+| $f*g$ | $\hat f(\xi)\hat g(\xi)$ |
 
-The last row is why convolution is the natural operation: the transform turns it into pointwise multiplication, so a convolution equation becomes an algebra problem.
+The last row converts a convolution equation $f*g = k$ into the pointwise equation $\hat f\hat g = \hat k$.
 
-Riemann--Lebesgue says $\hat f$ vanishes at infinity for $f \in L^1$, which is the standard way to show a given function is *not* a transform.
 :::
 
 ## Fourier coefficients
 
-For an orthonormal system, Bessel's inequality gives the safe estimate
-\[
-\sum_n |\langle f,e_n\rangle|^2\le \|f\|_2^2.
-\]
-Equality is the stronger Parseval statement and requires completeness of the orthonormal system.
-Use Bessel before completeness has been established; use Parseval once the system is known to be an orthonormal basis.
-
 [[T-4BDE3]]
 
-[[T-4CDKK]]
+::: {.remark}
+For an orthonormal set $\theset{u_n}$ in a Hilbert space, Bessel's inequality holds without further hypotheses.
+Equality $\sum_n\abs{\inner{x}{u_n}}^2 = \norm x^2$ for every $x$ is Parseval's identity, which holds if and only if $\theset{u_n}$ is an orthonormal basis.
 
-[[FF-54Z44]]
+:::
