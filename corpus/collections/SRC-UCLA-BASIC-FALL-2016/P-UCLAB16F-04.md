@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-04
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 4
+title: Lower semicontinuity of matrix rank
 classification:
   areas: [prelim]
   topics: []

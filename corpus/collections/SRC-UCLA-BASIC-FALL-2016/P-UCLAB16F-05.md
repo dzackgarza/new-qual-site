@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-05
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 5
+title: Multipliers preserving a finite $\mathbb Q$-span of complex numbers are algebraic
 classification:
   areas: [prelim]
   topics: []

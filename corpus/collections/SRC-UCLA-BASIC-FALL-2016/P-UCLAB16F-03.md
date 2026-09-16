@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-03
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 3
+title: Matrices of the form $R^T\operatorname{diag}(1,-1)R$
 classification:
   areas: [prelim]
   topics: []

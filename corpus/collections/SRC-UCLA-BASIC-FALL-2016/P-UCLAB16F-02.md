@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-02
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 2
+title: Operator norm of $e^A$ for a $2\times2$ Jordan block
 classification:
   areas: [prelim]
   topics: []

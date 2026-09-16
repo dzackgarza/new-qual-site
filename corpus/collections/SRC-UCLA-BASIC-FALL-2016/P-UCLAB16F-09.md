@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-09
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 9
+title: Equicontinuity and uniform convergence on $[0,1]$
 classification:
   areas: [prelim]
   topics: []

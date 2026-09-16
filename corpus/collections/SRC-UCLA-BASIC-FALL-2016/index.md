@@ -15,18 +15,30 @@ source:
   institution: ucla
   area: prelim
   problems:
-  - P-UCLAB16F-01
-  - P-UCLAB16F-02
-  - P-UCLAB16F-03
-  - P-UCLAB16F-04
-  - P-UCLAB16F-05
-  - P-UCLAB16F-06
-  - P-UCLAB16F-07
-  - P-UCLAB16F-08
-  - P-UCLAB16F-09
-  - P-UCLAB16F-10
-  - P-UCLAB16F-11
-  - P-UCLAB16F-12
+  - id: P-UCLAB16F-01
+    comment: Problem 1
+  - id: P-UCLAB16F-02
+    comment: Problem 2
+  - id: P-UCLAB16F-03
+    comment: Problem 3
+  - id: P-UCLAB16F-04
+    comment: Problem 4
+  - id: P-UCLAB16F-05
+    comment: Problem 5
+  - id: P-UCLAB16F-06
+    comment: Problem 6
+  - id: P-UCLAB16F-07
+    comment: Problem 7
+  - id: P-UCLAB16F-08
+    comment: Problem 8
+  - id: P-UCLAB16F-09
+    comment: Problem 9
+  - id: P-UCLAB16F-10
+    comment: Problem 10
+  - id: P-UCLAB16F-11
+    comment: Problem 11
+  - id: P-UCLAB16F-12
+    comment: Problem 12
   date:
     kind: academic-term
     term: fall

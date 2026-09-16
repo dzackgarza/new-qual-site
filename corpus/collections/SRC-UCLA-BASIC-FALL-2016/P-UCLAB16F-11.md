@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-11
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 11
+title: Topology of the metric measuring where continuous functions last disagree
 classification:
   areas: [prelim]
   topics: []

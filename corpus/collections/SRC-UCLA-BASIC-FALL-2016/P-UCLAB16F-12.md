@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-12
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 12
+title: First-order characterization of differentiable convex functions
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-06
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 6
+title: Rational eigenvectors for a rational eigenvalue
 classification:
   areas: [prelim]
   topics: []

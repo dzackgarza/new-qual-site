@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-07
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 7
+title: Volume of a region cut from a ball by a sphere and a plane
 classification:
   areas: [prelim]
   topics: []

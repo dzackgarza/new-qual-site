@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-10
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 10
+title: Point of $x^4+y^4=2$ closest to the line $y=x-100$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16F-08
 kind: problem
-title: UCLA Basic Examination Fall 2016, Problem 8
+title: Diagonal subsequences and interchange of double limits
 classification:
   areas: [prelim]
   topics: []
