@@ -2,154 +2,140 @@
 order: 100
 ---
 
-# Complex Arithmetic
+# Complex arithmetic
 
-## Spring 2020 HW 1 # 1
+## Problems on complex arithmetic
+
 [[P-TWN5M]]
 
-## Spring 2020 HW 1 # 2
 [[P-3HHKX]]
 
-## Spring 2020 HW 1 # 3
 [[P-43AXY]]
 
-## Spring 2020 HW 1 # 4
 [[P-CZ3R7]]
 
-## Spring 2020 HW 1 # 5
 [[P-FOXHV]]
 
-## Spring 2020 HW 1 # 6
 [[P-37Z7J]]
 
-## Spring 2020 HW 1 # 11
 [[P-UYWZ5]]
 
-## Holomorphicity
+## Problems on holomorphy and power series
 
-## Spring 2020 HW 1 # 7
 [[P-CV2MR]]
 
-## Spring 2020 HW 1 # 8
 [[P-7UTDI]]
 
-## Spring 2020 HW 1 # 9
 [[P-TFO34]]
 
-### Spring 20202 HW 2 #  2.6.10
 [[P-U2ZP6]]
 
-### Spring 20202 HW 2 #  2.6.13
 [[P-4YOJC]]
 
-### Spring 20202 HW 2 #  2.6.14
 [[P-YEZTR]]
 
-### Spring 20202 HW 2 #  1
 [[P-7UIYI]]
 
-### Spring 20202 HW 2 #  2
 [[P-FOYTY]]
 
-### Spring 20202 HW 2 #  3
 [[P-F7HCN]]
 
-### Spring 20202 HW 2 #  5
 [[P-LLNJ7]]
 
-:::{.fact title="The balancing exponentials trick"}
-There are formulas:
-\[
-&e^{a i \omega}+e^{b i \omega}
-&=2 \cos \left(\frac{a-b}{2} \omega\right) e^{\frac{a+b}{2} i \omega} \\
-e^{a i \omega}-e^{b i \omega}
-&=2 i \sin \left(\frac{a-b}{2} \omega\right) e^{\frac{a+b}{2} i \omega}
-.\]
-Thus a sum of two exponentials reduces to a complex scalar times a real trigonometric function, e.g. when a residue computation must simplify to a real number.
-For the derivation, choose $\ell$ so that
-\[
-e^{aiw} + e^{biw} = e^{\ell iw} \qty{ e^{(l-a)iw} + e^{(\ell - b)iw} } = e^{\ell i w} \qty{ e^{kiw} + e^{-kiw}} = e^{\ell i w}\cdot 2\cos(kw)
-.\]
-To make this hold, choose
+## Identities
 
-- $\ell \da {a+b\over 2}$
-- Then $\ell - a = {b-a \over 2} \da k$
-- $\ell -b = {a-b\over 2} = -k$
+::: {.fact title="Sums of two exponentials"}
+For real $a, b, \omega$,
+$$
+\begin{aligned}
+e^{a i \omega}+e^{b i \omega} &=2 \cos \qty{\frac{a-b}{2} \omega} e^{\frac{a+b}{2} i \omega}, \\
+e^{a i \omega}-e^{b i \omega} &=2 i \sin \qty{\frac{a-b}{2} \omega} e^{\frac{a+b}{2} i \omega}.
+\end{aligned}
+$$
+So a sum or difference of two exponentials is a unimodular complex scalar times a real trigonometric function.
+:::
 
-An example:
-\[
-e^{-i\pi \over 2}+ e^{-3i\pi \over 2} 
-&\da e^{-iw} + e^{-3iw} \\
+::: {.proof}
+Put $\ell \coloneqq \frac{a+b}{2}$ and $k \coloneqq \frac{a-b}{2}$, so that $a - \ell = k$ and $b - \ell = -k$.
+Then
+$$
+e^{aiw} \pm e^{biw} = e^{\ell iw} \qty{ e^{(a-\ell)iw} \pm e^{(b - \ell)iw} } = e^{\ell i w} \qty{ e^{kiw} \pm e^{-kiw}},
+$$
+which is $e^{\ell i w}\cdot 2\cos(kw)$ for the sum and $e^{\ell i w}\cdot 2i\sin(kw)$ for the difference.
+:::
+
+::: {.example}
+With $w \coloneqq \pi/2$, $a=-1$, $b=-3$,
+$$
+\begin{aligned}
+e^{-i\pi / 2}+ e^{-3i\pi / 2}
+&= e^{-iw} + e^{-3iw} \\
 &= e^{-2iw} \qty{e^{iw} + e^{-iw}}\\
 &= e^{-2iw}\cdot 2\cos(w) \\
-&= e^{-2i\cdot {\pi \over 2}}\cdot 2\cos\qty{\pi \over 2} \\
-&= -i\cdot 0 = 0
-.\]
+&= e^{-i\pi}\cdot 2\cos\qty{\pi / 2} \\
+&= 0.
+\end{aligned}
+$$
+:::
+
+::: {.fact title="Complex algebra"}
+For $z, w\in\CC$,
+$$
+\begin{aligned}
+z + \bar{z} &= 2\Re(z), & z - \bar{z} &= 2i\Im(z), \\
+z\bar z &= \abs{z}^2, & \arg(z/w) &\equiv \arg(z) - \arg(w) \pmod{2\pi} \quad (z,w\neq 0), \\
+{1\over i} &= -i = i^3, & {1\over i^3} &= i.
+\end{aligned}
+$$
+
+With $w\coloneqq e^{iz}$,
+$$
+\begin{aligned}
+\cos(z) &= \frac 1 2 \qty{e^{iz} + e^{-iz}} = {1\over 2}(w+ w\inv),\\
+\sin(z) &= \frac{1}{2i}\qty{e^{iz} - e^{-iz}} = {1\over 2i}(w-w\inv).
+\end{aligned}
+$$
+
+The hyperbolic functions are
+$$
+\begin{aligned}
+\cosh(z) &= \cos(iz) = {1\over 2}\qty{e^z + e^{-z}}, \\
+\sinh(z) &= -i \sin(iz) = {1\over 2}\qty{e^z - e^{-z}}.
+\end{aligned}
+$$
 
 :::
 
-:::{.fact title="Some useful facts about basic complex algebra"}
-\[
-z + \bar{z} &= 2\Re(z) 
-&& 
-z - \bar{z} = 2i\Im(z) \\
-z\bar z &= \abs{z}^2 
-&& 
-\Arg(z/w) = \Arg(z) - \Arg(w) \\
-\Re(z) &= { z + \bar z \over 2} 
-&& 
-\Im(z) = {z - \bar{z} \over 2i} \\
-{1\over i} &= -i = i^3 &&
-{1\over i^3} = i
-.\]
+::: {.fact title="Hyperbolic functions"}
+\envlist
 
-Exponential forms of cosine and sine, where it's sometimes useful to set $w\da e^{iz}$:
-\[
-\cos(z) 
-&= \frac 1 2 \qty{e^{iz} + e^{-iz}} = {1\over 2}(w+ w\inv)\\
-\sin(z) 
-&= \frac{1}{2i}\qty{e^{iz} - e^{-iz}} = {1\over 2i}(w-w\inv)
-.\]
-
-Exponential forms of *hyperbolic* cosine and sin:
-\[
-\cosh(z) 
-&= \cos(iz) 
-= {1\over 2}\qty{e^z + e^{-z}} \\
-\sinh(z) 
-&= -i \sin(iz) 
-= {1\over 2}\qty{e^z - e^{-z}} 
-.\]
-
-Some other useful facts about the hyperbolic exponentials:
-
-- They are periodic with period $2\pi i$.
-- $\dd{}{z}\cosh(z) = \sinh(z)$ and $\dd{}{z}\sinh(z) = \cosh(z)$.
+- $\cosh$ and $\sinh$ are periodic with period $2\pi i$.
+- $\frac{d}{dz}\cosh(z) = \sinh(z)$ and $\frac{d}{dz}\sinh(z) = \cosh(z)$; more generally
+$$
+\cosh^{(n)}(z) = {e^z + (-1)^n e^{-z}\over 2}, \qquad \sinh^{(n)}(z) = {e^z - (-1)^{n} e^{-z}\over 2}.
+$$
 - $\sinh$ is odd and $\cosh$ is even.
 - $\cosh(z + i\pi) = -\cosh(z)$ and $\sinh(z + i\pi) = -\sinh(z)$.
-- $\cosh$ has zeros at $\ts{i\pi\qty{2k+1\over 2}} = \ts{i \qty{\pi/2 + k\pi}}$, i.e. $\cdots, -\pi/2, \pi/2, 3\pi/2,\cdots$, the half-integers.
-- $\sinh$ has zeros at $\ts{i\pi k}$, i.e. the integers.
-- $\sinh(z)$ has a particularly nice formula for derivatives:
-\[
-f(z) &\da \cosh(z) \implies f^{(n)}(z) = {e^z + (-1)^n e^{-z}\over 2} \\
-f(z) &\da \sinh(z) \implies f^{(n)}(z) = {e^z - (-1)^{n} e^{-z}\over 2} 
-.\]
+- The zeros of $\cosh$ are the points $i\qty{\pi/2 + k\pi}$ with $k\in\ZZ$.
+- The zeros of $\sinh$ are the points $i\pi k$ with $k\in\ZZ$.
 
 :::
 
-:::{.fact}
-Some computations that come up frequently:
-\[
-\abs{z \pm w}^2 &= \abs{z}^2 + \abs{w}^z + 2\Re(\bar{w}z) \\
-(a+bi)(c+di) &= (ac - bd) + (ad + bc) \\
-{1\over \abs{a+b}} &\leq {1 \over {\abs a - \abs b}} &&
-\abs{e^{z}} = e^{\Re(z)}, \quad \arg(e^z) = \Im(z)
-.\]
+::: {.fact}
+For $z, w\in\CC$ and real $a,b,c,d$,
+$$
+\begin{aligned}
+\abs{z \pm w}^2 &= \abs{z}^2 + \abs{w}^2 \pm 2\Re(\bar{w}z), \\
+(a+bi)(c+di) &= (ac - bd) + (ad + bc)i, \\
+{1\over \abs{z+w}} &\leq {1 \over \abs z - \abs w} \quad \text{if } \abs z > \abs w, \\
+\abs{e^{z}} &= e^{\Re(z)}, \qquad \arg(e^z) \equiv \Im(z) \pmod{2\pi}.
+\end{aligned}
+$$
 
 :::
 
-:::{.fact}
-The inversion $z\to 1/z$ is easiest to understand in polar coordinates, $Re^{i\theta}\mapsto {1\over R}e^{-i\theta}$:
+::: {.fact}
+In polar coordinates the inversion $z\mapsto 1/z$ is $Re^{i\theta}\mapsto {1\over R}e^{-i\theta}$: it inverts the modulus and reflects the argument.
 
 ![](../../../assets/figures/2021-12-18_23-32-13.png)
 
@@ -162,6 +148,7 @@ The inversion $z\to 1/z$ is easiest to understand in polar coordinates, $Re^{i\t
 [[E-WNNSK]]
 
 [[E-P7SIB]]
+
 [[E-JWO2G]]
 
 [[E-ZCPKK]]
