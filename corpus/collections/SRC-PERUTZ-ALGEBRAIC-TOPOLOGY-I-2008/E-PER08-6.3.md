@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-6.3
 kind: problem
-title: Perutz Algebraic Topology I Exercise 6.3
+title: Index 2 subgroups of the free group $F_2$
 classification:
   areas: [topology]
   topics: []

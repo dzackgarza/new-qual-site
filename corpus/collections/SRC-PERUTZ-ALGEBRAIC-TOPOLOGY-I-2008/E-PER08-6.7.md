@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-6.7
 kind: problem
-title: Perutz Algebraic Topology I Exercise 6.7
+title: The doubled full rotation loop in $SO(3)$ is nullhomotopic
 classification:
   areas: [topology]
   topics: []

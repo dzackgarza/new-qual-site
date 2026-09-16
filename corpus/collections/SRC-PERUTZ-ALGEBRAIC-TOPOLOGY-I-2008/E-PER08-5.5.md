@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-5.5
 kind: problem
-title: Perutz Algebraic Topology I Exercise 5.5
+title: Maps with unique path lifting that are not covering maps
 classification:
   areas: [topology]
   topics: []

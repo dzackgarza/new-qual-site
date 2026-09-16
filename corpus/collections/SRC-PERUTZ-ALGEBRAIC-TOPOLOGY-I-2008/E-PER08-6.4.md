@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-6.4
 kind: problem
-title: Perutz Algebraic Topology I Exercise 6.4
+title: Deck transformations of the universal covers of the torus and Klein bottle
 classification:
   areas: [topology]
   topics: []

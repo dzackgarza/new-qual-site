@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-5.4
 kind: problem
-title: Perutz Algebraic Topology I Exercise 5.4
+title: Lifting of paths and homotopies and the subgroups of a covering space
 classification:
   areas: [topology]
   topics: []

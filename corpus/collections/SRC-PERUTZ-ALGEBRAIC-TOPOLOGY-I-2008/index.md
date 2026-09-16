@@ -44,33 +44,52 @@ source:
   - name: '5'
     problems:
     - E-PER08-5.1
-    - E-PER08-5.2
-    - E-PER08-5.3
-    - E-PER08-5.4
-    - E-PER08-5.5
+    - id: E-PER08-5.2
+      comment: Exercise 5.2
+    - id: E-PER08-5.3
+      comment: Exercise 5.3
+    - id: E-PER08-5.4
+      comment: Exercise 5.4
+    - id: E-PER08-5.5
+      comment: Exercise 5.5
   - name: '6'
     problems:
-    - E-PER08-6.1
-    - E-PER08-6.2
-    - E-PER08-6.3
-    - E-PER08-6.4
-    - E-PER08-6.5
-    - E-PER08-6.6
-    - E-PER08-6.7
+    - id: E-PER08-6.1
+      comment: Exercise 6.1
+    - id: E-PER08-6.2
+      comment: Exercise 6.2
+    - id: E-PER08-6.3
+      comment: Exercise 6.3
+    - id: E-PER08-6.4
+      comment: Exercise 6.4
+    - id: E-PER08-6.5
+      comment: Exercise 6.5
+    - id: E-PER08-6.6
+      comment: Exercise 6.6
+    - id: E-PER08-6.7
+      comment: Exercise 6.7
   - name: '7'
     problems:
-    - E-PER08-7.1
+    - id: E-PER08-7.1
+      comment: Exercise 7.1
   - name: '8'
     problems:
-    - E-PER08-8.1
-    - E-PER08-8.2
+    - id: E-PER08-8.1
+      comment: Exercise 8.1
+    - id: E-PER08-8.2
+      comment: Exercise 8.2
   - name: '9'
     problems:
-    - E-PER08-9.1
-    - E-PER08-9.2
-    - E-PER08-9.3
-    - E-PER08-9.4
-    - E-PER08-9.5
+    - id: E-PER08-9.1
+      comment: Exercise 9.1
+    - id: E-PER08-9.2
+      comment: Exercise 9.2
+    - id: E-PER08-9.3
+      comment: Exercise 9.3
+    - id: E-PER08-9.4
+      comment: Exercise 9.4
+    - id: E-PER08-9.5
+      comment: Exercise 9.5
   - name: '10'
     problems:
     - E-PER08-10.1
@@ -88,67 +107,107 @@ source:
   - name: '13'
     problems:
     - E-PER08-13.1
-    - E-PER08-13.2
-    - E-PER08-13.3
-    - E-PER08-13.4
-    - E-PER08-13.5
+    - id: E-PER08-13.2
+      comment: Exercise 13.2
+    - id: E-PER08-13.3
+      comment: Exercise 13.3
+    - id: E-PER08-13.4
+      comment: Exercise 13.4
+    - id: E-PER08-13.5
+      comment: Exercise 13.5
   - name: '14'
     problems:
-    - E-PER08-14.1
+    - id: E-PER08-14.1
+      comment: Exercise 14.1
   - name: '15'
     problems:
-    - E-PER08-15.1
-    - E-PER08-15.2
-    - E-PER08-15.3
-    - E-PER08-15.4
-    - E-PER08-15.5
-    - E-PER08-15.6
-    - E-PER08-15.7
-    - E-PER08-15.8
-    - E-PER08-15.9
+    - id: E-PER08-15.1
+      comment: Exercise 15.1
+    - id: E-PER08-15.2
+      comment: Exercise 15.2
+    - id: E-PER08-15.3
+      comment: Exercise 15.3
+    - id: E-PER08-15.4
+      comment: Exercise 15.4
+    - id: E-PER08-15.5
+      comment: Exercise 15.5
+    - id: E-PER08-15.6
+      comment: Exercise 15.6
+    - id: E-PER08-15.7
+      comment: Exercise 15.7
+    - id: E-PER08-15.8
+      comment: Exercise 15.8
+    - id: E-PER08-15.9
+      comment: Exercise 15.9
   - name: '16'
     problems:
-    - E-PER08-16.1
-    - E-PER08-16.2
-    - E-PER08-16.3
+    - id: E-PER08-16.1
+      comment: Exercise 16.1
+    - id: E-PER08-16.2
+      comment: Exercise 16.2
+    - id: E-PER08-16.3
+      comment: Exercise 16.3
   - name: '17'
     problems:
     - E-PER08-17.1
   - name: '19'
     problems:
-    - E-PER08-19.1
-    - E-PER08-19.2
-    - E-PER08-19.3
+    - id: E-PER08-19.1
+      comment: Exercise 19.1
+    - id: E-PER08-19.2
+      comment: Exercise 19.2
+    - id: E-PER08-19.3
+      comment: Exercise 19.3
   - name: '20'
     problems:
-    - E-PER08-20.1
+    - id: E-PER08-20.1
+      comment: Exercise 20.1
   - name: '21'
     problems:
-    - E-PER08-21.1
-    - E-PER08-21.2
-    - E-PER08-21.3
-    - E-PER08-21.4
-    - E-PER08-21.5
-    - E-PER08-21.6
-    - E-PER08-21.7
+    - id: E-PER08-21.1
+      comment: Exercise 21.1
+    - id: E-PER08-21.2
+      comment: Exercise 21.2
+    - id: E-PER08-21.3
+      comment: Exercise 21.3
+    - id: E-PER08-21.4
+      comment: Exercise 21.4
+    - id: E-PER08-21.5
+      comment: Exercise 21.5
+    - id: E-PER08-21.6
+      comment: Exercise 21.6
+    - id: E-PER08-21.7
+      comment: Exercise 21.7
   - name: '23'
     problems:
-    - E-PER08-23.1
-    - E-PER08-23.2
-    - E-PER08-23.3
-    - E-PER08-23.4
+    - id: E-PER08-23.1
+      comment: Exercise 23.1
+    - id: E-PER08-23.2
+      comment: Exercise 23.2
+    - id: E-PER08-23.3
+      comment: Exercise 23.3
+    - id: E-PER08-23.4
+      comment: Exercise 23.4
   - name: '24'
     problems:
-    - E-PER08-24.1
-    - E-PER08-24.2
-    - E-PER08-24.3
-    - E-PER08-24.4
+    - id: E-PER08-24.1
+      comment: Exercise 24.1
+    - id: E-PER08-24.2
+      comment: Exercise 24.2
+    - id: E-PER08-24.3
+      comment: Exercise 24.3
+    - id: E-PER08-24.4
+      comment: Exercise 24.4
   - name: '26'
     problems:
-    - E-PER08-26.1
-    - E-PER08-26.2
-    - E-PER08-26.3
-    - E-PER08-26.4
+    - id: E-PER08-26.1
+      comment: Exercise 26.1
+    - id: E-PER08-26.2
+      comment: Exercise 26.2
+    - id: E-PER08-26.3
+      comment: Exercise 26.3
+    - id: E-PER08-26.4
+      comment: Exercise 26.4
 ---
 
 ::: {.remark}

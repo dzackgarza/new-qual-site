@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-9.3
 kind: problem
-title: Perutz Algebraic Topology I Exercise 9.3
+title: Mayer--Vietoris in degree one with connected intersection
 classification:
   areas: [topology]
   topics: []

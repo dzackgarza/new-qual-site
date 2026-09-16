@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-7.1
 kind: problem
-title: Perutz Algebraic Topology I Exercise 7.1
+title: Homology splits over path components
 classification:
   areas: [topology]
   topics: []

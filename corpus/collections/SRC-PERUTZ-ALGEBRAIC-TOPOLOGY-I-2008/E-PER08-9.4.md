@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-9.4
 kind: problem
-title: Perutz Algebraic Topology I Exercise 9.4
+title: Mapping cones of chain maps
 classification:
   areas: [topology]
   topics: []

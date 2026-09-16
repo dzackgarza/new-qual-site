@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-6.5
 kind: problem
-title: Perutz Algebraic Topology I Exercise 6.5
+title: Deck group of a covering is $N_G(H)/H$
 classification:
   areas: [topology]
   topics: []

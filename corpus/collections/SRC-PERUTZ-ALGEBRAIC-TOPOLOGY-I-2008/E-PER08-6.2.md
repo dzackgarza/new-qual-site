@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-6.2
 kind: problem
-title: Perutz Algebraic Topology I Exercise 6.2
+title: Construction and topology of the universal covering space
 classification:
   areas: [topology]
   topics: []

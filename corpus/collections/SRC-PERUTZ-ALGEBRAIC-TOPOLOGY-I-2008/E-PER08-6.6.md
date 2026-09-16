@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-6.6
 kind: problem
-title: Perutz Algebraic Topology I Exercise 6.6
+title: Fundamental groups of spaces of regular tetrahedra and icosahedra
 classification:
   areas: [topology]
   topics: []

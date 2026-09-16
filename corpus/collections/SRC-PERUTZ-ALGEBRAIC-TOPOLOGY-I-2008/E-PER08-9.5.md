@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-9.5
 kind: problem
-title: Perutz Algebraic Topology I Exercise 9.5
+title: Octahedral axiom for mapping cones
 classification:
   areas: [topology]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-8.1
 kind: problem
-title: Perutz Algebraic Topology I Exercise 8.1
+title: Simplicial homology of the tetrahedral $S^2$
 classification:
   areas: [topology]
   topics: []

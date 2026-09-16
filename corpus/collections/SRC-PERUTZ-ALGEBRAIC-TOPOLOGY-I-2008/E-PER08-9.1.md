@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-9.1
 kind: problem
-title: Perutz Algebraic Topology I Exercise 9.1
+title: Euler characteristic of a chain complex and of an exact sequence
 classification:
   areas: [topology]
   topics: []

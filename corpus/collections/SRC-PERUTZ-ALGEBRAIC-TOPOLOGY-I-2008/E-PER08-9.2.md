@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-9.2
 kind: problem
-title: Perutz Algebraic Topology I Exercise 9.2
+title: Serre classes of abelian groups
 classification:
   areas: [topology]
   topics: []

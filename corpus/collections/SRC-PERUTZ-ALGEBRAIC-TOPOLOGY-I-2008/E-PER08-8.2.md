@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-8.2
 kind: problem
-title: Perutz Algebraic Topology I Exercise 8.2
+title: Simplicial homology of $T^2$, $\mathbb{RP}^2$, and the Klein bottle
 classification:
   areas: [topology]
   topics: []

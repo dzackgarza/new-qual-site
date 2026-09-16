@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-5.2
 kind: problem
-title: Perutz Algebraic Topology I Exercise 5.2
+title: Proper local diffeomorphisms are covering maps
 classification:
   areas: [topology]
   topics: []

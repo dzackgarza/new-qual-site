@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-5.3
 kind: problem
-title: Perutz Algebraic Topology I Exercise 5.3
+title: $T^2$ minus four points double covers $S^2$ minus four points
 classification:
   areas: [topology]
   topics: []
