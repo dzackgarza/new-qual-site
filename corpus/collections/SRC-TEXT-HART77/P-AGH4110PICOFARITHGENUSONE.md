@@ -22,3 +22,8 @@ Imitate (1.3.7) to show that the map $P \mapsto \mcl(P-P_0)$ gives a one-to-one 
 This generalizes (II, 6.11.4) and (II, Ex.
 6.7).
 :::
+
+::: {.remark}
+Erratum: the target group is $\Pic^0 X$, not $\Pic X$.
+The sheaf $\mcl(P-P_0)$ has degree $0$, so the map $P \mapsto \mcl(P-P_0)$ lands in the subgroup $\Pic^0 X$ of invertible sheaves of degree $0$, and the one-to-one correspondence is between the points of $X_{\reg}$ and $\Pic^0 X$ [@Har10a, Exercise IV.1.10].
+:::

@@ -35,3 +35,11 @@ Since $\characteristic k=0$, you need only show that $\delta(\mco(1)) \neq 0$, w
 Since $H^1(X, \omega)=0$, we see that $\Pic X'=0$.
 In particular, $X'$ has no ample invertible sheaves, so it is not projective.
 :::
+
+::: {.remark}
+This result generalizes: for any nonsingular projective surface $X$ over an algebraically closed field $k$ of characteristic $0$, there is an infinitesimal extension $X'$ of $X$ by $\omega$ such that $X'$ is not projective over $k$.
+Let $D$ be an ample divisor on $X$. Then $D$ determines an element $c_1(D) \in H^1(X, \Omega^1)$, which defines $X'$ as above.
+For any divisor $E$ on $X$ one can show that $\delta(\mcl(E))=(D.E)$, where $(D.E)$ is the intersection number (Chapter V), considered as an element of $k$.
+Hence if $E$ is ample, $\delta(\mcl(E)) \neq 0$, so $X'$ has no ample divisors.
+On the other hand, over a field of characteristic $p>0$, a proper scheme $X$ is projective if and only if $X_{\red}$ is.
+:::
