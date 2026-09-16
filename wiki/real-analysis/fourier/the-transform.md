@@ -16,8 +16,6 @@ Fourier inversion recovers $f$ from $\hat f$ under the additional hypothesis $\h
 
 [[PR-IGMH4]]
 
-[[FT-BZLK7]]
-
 [[T-DTXIA]]
 
 ::: {.example}
