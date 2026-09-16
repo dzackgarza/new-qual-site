@@ -31,6 +31,6 @@ source:
     kind: unknown
 ---
 
-::: remark
-The retained PDF contains an eight-problem topology qualifying exam split into two sections. Neither the retained extraction nor the original qual-wiki resource page identifies an institution or date, so the collection deliberately preserves neutral provenance instead of inferring one.
+::: {.remark}
+An eight-problem topology qualifying exam in two sections. The document names no institution or date.
 :::
