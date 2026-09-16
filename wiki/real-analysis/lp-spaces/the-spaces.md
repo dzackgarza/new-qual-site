@@ -4,22 +4,21 @@ order: 10
 topics:
 - Lp Spaces
 - Density
-- Dual Spaces  - L²
+- Dual Spaces
+- L²
 - L∞
 - L2 Spaces
-
 ---
 
 # The spaces
 
-$L^p$ remembers size only up to null sets, and the ambient measure space matters to every inclusion statement.
-On a finite-measure space, larger exponents give smaller spaces: if $1\le p<q\le\infty$, then $L^q\subseteq L^p$.
-On an infinite-measure space there is no general inclusion in either direction.
-Check the measure space before using any mnemonic about the exponent.
+Let $(X,\mu)$ be a measure space and $1\leq p\leq\infty$.
+If $\mu(X)<\infty$ and $1\le p<q\le\infty$, then $L^q(\mu)\subseteq L^p(\mu)$.
+For Lebesgue measure on $\RR$ neither of $L^p$ and $L^q$ contains the other, and for counting measure on $\NN$, $\ell^p\subseteq\ell^q$.
 
-For $1<p<\infty$ in the standard settings used here, the dual exponent $q=p/(p-1)$ gives $(L^p)^*\cong L^q$.
-The endpoint $p=\infty$ is different: the dual of $L^\infty$ is generally larger than $L^1$.
-Riesz--Fischer supplies completeness, so these are Banach spaces rather than merely normed spaces.
+For $1<p<\infty$ and $q=p/(p-1)$, the map $g\mapsto\qty{f\mapsto\int fg\,d\mu}$ is an isometric isomorphism $L^q\cong(L^p)^*$; for $p=1$ this holds when $\mu$ is $\sigma$-finite.
+For Lebesgue measure on $[0,1]$, the corresponding map $L^1\to(L^\infty)^*$ is not surjective.
+By the Riesz--Fischer theorem, $L^p$ is complete for $1\leq p\leq\infty$.
 
 [[PR-NFB7Q]]
 
@@ -37,11 +36,9 @@ Riesz--Fischer supplies completeness, so these are Banach spaces rather than mer
 
 [[PR-3W4FO]]
 
-## $L^1$ facts
+## Approximation and translation
 
-For Lebesgue $L^p(\RR^d)$, the estimates from the integration chapter control approximation and translation.
-Spatial tails and absolute continuity let one cut away bad regions; translation continuity then passes estimates from compactly supported or regular functions to arbitrary $L^1$ functions.
-The same translation-continuity argument extends to $1\le p<\infty$.
+For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with compact support are dense in $L^p$, and $\norm{f(\wait+h)-f}_p\to0$ as $h\to0$ for every $f\in L^p$.
 
 [[PR-XAVMU]]
 
@@ -59,10 +56,10 @@ The same translation-continuity argument extends to $1\le p<\infty$.
 
 [[T-S3C3S]]
 
-## Techniques
+## Density and duality arguments
 
-Two recurring proof patterns are density and duality.
-Prove an identity first on a dense class such as continuous or compactly supported functions and extend by norm continuity; or test a function against a sufficiently rich family and use duality to show that vanishing of all pairings forces the function itself to vanish almost everywhere.
+An identity between quantities that depend continuously on $f\in L^p$ holds on $L^p$ once it holds on a dense subclass, such as $C_c(\RR^d)$.
+For $1\leq p<\infty$ and $f\in L^p$, if $\int fg=0$ for every $g$ in a dense subset of $L^q$, then $f=0$ almost everywhere.
 
 [[E-IAQ6D]]
 
@@ -70,7 +67,7 @@ Prove an identity first on a dense class such as continuous or compactly support
 
 [[PR-C626A]]
 
-::: {.remark title="Riesz--Fischer consequences"}
-Riesz--Fischer says that $L^p$ is complete, so every $L^p$-Cauchy sequence converges in $L^p$.
-The same proof shows that an $L^p$ convergent sequence has an a.e. convergent subsequence, which is the standard bridge between the two kinds of convergence.
+::: {.remark title="Consequences of the Riesz--Fischer proof"}
+The proof of the Riesz--Fischer theorem shows that every sequence converging in $L^p$, $1\leq p<\infty$, has a subsequence converging almost everywhere to the same limit.
+
 :::
