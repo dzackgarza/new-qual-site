@@ -6,9 +6,9 @@ order: 10
 
 ## Scheduling
 
-**Fridays 12-2 PM EST**
+Fridays 12--2 PM EST.
 
-- Week 1 (May 21): Preliminary Review (Point-Set)
+- Week 1 (May 21): Preliminary review (point-set)
 
   - Topologies, continuity, homeomorphisms, subspaces and products, closures, open/closed/clopen, bases, retracts
 
@@ -20,17 +20,17 @@ order: 10
 
   - The tube lemma
 
-  - Common counterexamples (sine curve)
+  - Common counterexamples, such as the topologist's sine curve
 
-- Week 2 (May 28): The Fundamental Group
+- Week 2 (May 28): The fundamental group
 
   - Van Kampen
 
-  - Homotopic maps vs conjugacy, change of base point
+  - Homotopic maps and conjugacy, change of base point
 
   - Nullhomotopic maps
 
-- Week 3 (June 4): Covering Spaces
+- Week 3 (June 4): Covering spaces
 
   - Definitions, HLP, deck transformations, regular covers, universal cover
 
@@ -38,7 +38,7 @@ order: 10
 
   - Lifting criterion, Galois correspondence
 
-- Week 4 (June 11): CW Complexes, Pushouts
+- Week 4 (June 11): CW complexes, pushouts
 
   - Cellular chain complex
 
@@ -50,13 +50,13 @@ order: 10
 
 - Week 5 (June 18): Homology
 
-  - Mayer-Vietoris, Kunneth, UCT
+  - Mayer-Vietoris, Künneth, UCT
 
   - Cellular homology (direct definition)
 
   - Relative homology
 
-  - Facts for manifolds (dim 3 and 4), Poincare duality
+  - Facts for manifolds (dim 3 and 4), Poincaré duality
 
 - Week 6 (June 25): Surfaces
 
@@ -66,25 +66,25 @@ order: 10
 
   - Classification of surfaces, boundary components
 
-- Week 7 (July 2): Fixed Points & Degree Theory
+- Week 7 (July 2): Fixed points and degree theory
 
   - Degree theory
 
-  - Lefschetz, Brouwer, Hairy Ball Theorem, Borsuk-Ulam
+  - Lefschetz, Brouwer, hairy ball theorem, Borsuk-Ulam
 
-- Week 8 (July 9): **Buffer**
+- Week 8 (July 9): Buffer
 
-- Week 9 (July 16): **Buffer**
+- Week 9 (July 16): Buffer
 
-- Week 10  (July 23): **Buffer**
+- Week 10  (July 23): Buffer
 
-- Week 11 (July 30): **Buffer**
+- Week 11 (July 30): Buffer
 
-- Week 12 (August 6): **Buffer**
+- Week 12 (August 6): Buffer
 
-- Week 13 (August 13): **Timed practice exam**
+- Week 13 (August 13): Timed practice exam
 
-- **Quals:** Monday and Tuesday, August 16-17
+- Qualifying exams: Monday and Tuesday, August 16--17
 
 ## Topics
 
@@ -92,7 +92,7 @@ order: 10
 
 - Covering spaces
 
-- Higher homotopy groups.
+- Higher homotopy groups
 
 - Fibrations and the long exact sequence of a fibration
 
@@ -100,20 +100,20 @@ order: 10
 
 - Relative homology
 
-- CW complexes and the homology of CW complexes.
+- CW complexes and the homology of CW complexes
 
 - Mayer-Vietoris
 
 - Universal coefficient theorem
 
-- Kunneth formula
+- Künneth formula
 
-- Poincare duality
+- Poincaré duality
 
 - Lefschetz fixed point formula
 
 - Hopf index theorem
 
-- Cech cohomology and de Rham cohomology.
+- Čech cohomology and de Rham cohomology
 
-- Equivalence between singular, Cech and de Rham cohomology
+- Equivalence between singular, Čech and de Rham cohomology
