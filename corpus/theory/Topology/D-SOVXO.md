@@ -13,16 +13,15 @@ review: draft
 ---
 
 ::: {.definition}
-Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps.
-Then a **homotopy** from $f$ to $g$ is a continuous function
+Let $X$ and $Y$ be topological spaces, let $I=[0,1]$, and let $f,g\colon X\to Y$ be [[D-AEAAD|continuous maps]].
+A \dfn{homotopy} from $f$ to $g$ is a continuous map $F\colon X\times I\to Y$ with
+$$
+F(x,0)=f(x)\quad\text{and}\quad F(x,1)=g(x)\qquad\text{for all }x\in X.
+$$
+If a homotopy from $f$ to $g$ exists, $f$ and $g$ are \dfn{homotopic}, written $f\simeq g$ [@Hat02, p. 3].
+:::
 
-$F: X \cross I \into Y$
-
-such that
-
-$F(x, 0) = f(x)$ and  $F(x,1) = g(x)$
-
-for all $x\in X$.
-If such a homotopy exists, we write $f\homotopic g$.
-This is an equivalence relation on $\text{Hom}(X,Y)$, and the set of such classes is denoted $[X,Y] \definedas \hom (X,Y)/\homotopic$.
+::: {.proposition}
+Homotopy is an equivalence relation on the set $C(X,Y)$ of continuous maps $X\to Y$ [@Hat02, p. 3].
+The set of equivalence classes is denoted $[X,Y]\coloneqq C(X,Y)/{\simeq}$.
 :::
