@@ -59,7 +59,6 @@ source:
     comment: Problem XX
 ---
 
-::: remark
-The retained source is titled “MTH 674 Differential Geometry of manifolds Midterm Sample Problems” and contains twenty top-level problems, numbered I–XX. Problem VII is followed by a worked solution to part (c); this collection records the posed problems, while the worked solution remains in the retained source.
-`DG Sample Problems.pdf` is byte-identical to the provenance PDF and is treated as a duplicate rather than a second source collection.
+::: {.remark}
+Twenty problems, numbered I--XX. The source follows Problem VII with a worked solution to part (c).
 :::
