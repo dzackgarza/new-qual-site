@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-SB6AV
 kind: theorem
-title: Recognizing Semidirect Products
+title: Recognizing internal semidirect products
 classification:
   areas:
   - algebra
@@ -14,19 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-We have $G \cong N \semidirect_\psi H$ when
+::: {.theorem}
+Let $G$ be a group with subgroups $N \normal G$ and $H\leq G$ such that $G = NH$ and $N\intersect H=\theset{e}$.
+Let $\psi\colon H \to \Aut(N)$ be the conjugation action, $\psi(h)=h(\wait)h^{-1}$.
+Then $G \cong N \semidirect_\psi H$.
+:::
 
-- $N \normal G$
-
-- $G =  NH$
-
-- $H \actson N$ by conjugation via a map
-  \[  
-  \psi: H \to \Aut(N) \\
-  h \mapsto h(\wait)h^{-1}
-  .\]
-
-> Relaxed condition: $H, N \normal G$ for direct product, or just $H\leq G$ for a semidirect product.
-
+::: {.remark}
+If moreover $H\normal G$, then $hnh^{-1}n^{-1}\in N\intersect H=\theset{e}$ for all $n\in N$ and $h\in H$, so $\psi$ is trivial and $G\cong N\times H$.
 :::

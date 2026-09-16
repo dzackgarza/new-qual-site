@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-SGY3O
 kind: theorem
-title: Splitting + Perfect implies Galois
+title: Finite normal extensions of perfect fields are Galois
 classification:
   areas:
   - algebra
@@ -15,11 +15,11 @@ review: draft
 ---
 
 ::: {.theorem}
-\envlist
+Let $k$ be a field.
 
-- If $\ch k = 0$ or $k$ is finite, then $k$ is perfect.
+- If $\ch k = 0$ or $k$ is finite, then $k$ is [[D-KQFIV|perfect]]; in particular $\CC$, $\RR$, $\QQ$, and $\FF_p$ for $p$ prime are perfect.
 
-- $k = \CC,\RR, \QQ, \FF_p$ are perfect, so any finite normal extension is Galois.
+- If $k$ is perfect, then every finite [[D-LZTAK|normal]] extension of $k$ is [[D-5JYEI|Galois]].
 
-- Every splitting field of a polynomial over a perfect field is Galois.
+- If $k$ is perfect, then the splitting field over $k$ of every nonconstant polynomial $f\in k[x]$ is Galois over $k$.
 :::

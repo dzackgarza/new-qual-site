@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-QSTRJ
 kind: theorem
-title: Krull
+title: Krull's theorem on maximal ideals
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-Every ring has a proper maximal ideal, and any proper ideal is contained in a maximal ideal.
+Let $R$ be a nonzero [[D-GURUB|ring]].
+Then every proper [[D-GOFWL|ideal]] of $R$ is contained in a proper [[D-7XH2R|maximal ideal]]; in particular, $R$ has a proper maximal ideal.
 :::

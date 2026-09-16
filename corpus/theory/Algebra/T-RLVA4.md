@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RLVA4
 kind: theorem
-title: The Correspondence Theorem / 4th Isomorphism Theorem
+title: Correspondence theorem for groups
 classification:
   areas:
   - algebra
@@ -14,28 +14,15 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-Suppose $N \normal G$, then there exists a correspondence:
-
-\[  
-\left\{
-H < G \suchthat N \subseteq H
-\right\}
-\mapstofrom
-\left\{
-H \suchthat H < \frac G N
-\right\}
-\\
-\correspond{
-  \text{Subgroups of $G$} \\
-  \text{containing $N$}
-} \mapstofrom
-\correspond{
-  \text{Subgroups of the } \\
-  \text{quotient $G/N$}
-}
-.\]
-
-In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. 
-This is given by the map $H \mapsto H/N$.
+::: {.theorem}
+Let $G$ be a group, $N \normal G$ a [[D-EKE4Q|normal subgroup]], and $\pi\colon G\to G/N$ the quotient map.
+Then
+$$
+\theset{H \leq G \suchthat N \subseteq H} \mapstofrom \theset{\overline{H} \suchthat \overline{H} \leq G/N},
+\qquad
+H \mapsto H/N,
+\qquad
+\pi^{-1}(\overline{H}) \mapsfrom \overline{H},
+$$
+are mutually inverse bijections between the subgroups of $G$ containing $N$ and the subgroups of the quotient group $G/N$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-SJCF7
 kind: theorem
-title: Cayley-Hamilton
+title: Cayley--Hamilton theorem
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
+Let $k$ be a field and $A\in\Mat_n(k)$, with [[D-QFYAC|characteristic polynomial]] $\chi_A$ and [[D-GK5SF|minimal polynomial]] $\min_A$.
+Then $\chi_A(A) = 0$; equivalently, $\min_A$ divides $\chi_A$.
 :::
