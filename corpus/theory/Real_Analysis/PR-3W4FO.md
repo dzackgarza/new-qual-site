@@ -16,53 +16,47 @@ review: draft
 
 ::: {.proposition}
 Let $1\le p,q\le\infty$ satisfy
-\[
+$$
 \frac1p+\frac1q=1.
-\]
-If $f\in L^p(\mathbb R^d)$ and $g\in L^q(\mathbb R^d)$, then
-\[
-(f*g)(x):=\int_{\mathbb R^d}f(x-y)g(y)\,dy
-\]
-is defined for every $x$ after choosing measurable representatives, satisfies
-\[
-\|f*g\|_\infty\le \|f\|_p\|g\|_q,
-\]
-and has a bounded uniformly continuous representative.
+$$
+If $f\in L^p(\RR^d)$ and $g\in L^q(\RR^d)$, then the [[D-TS42Y|convolution]]
+$$
+(f*g)(x)\coloneqq\int_{\RR^d}f(x-y)g(y)\,dy
+$$
+converges absolutely for every $x\in\RR^d$, satisfies
+$$
+\sup_{x\in\RR^d}\abs{(f*g)(x)}\le \norm{f}_p\norm{g}_q,
+$$
+and is [[D-HHVPT|uniformly continuous]] on $\RR^d$.
 :::
 
 ::: {.proof}
-For every $x\in\mathbb R^d$, Hölder's inequality and translation invariance give
-\[
-\begin{aligned}
-|(f*g)(x)|
-&\le \|f(x-\cdot)\|_p\|g\|_q\\
-&=\|f\|_p\|g\|_q.
-\end{aligned}
-\]
-Thus the convolution is absolutely defined for every $x$ for any fixed representatives for which the translated functions are measurable, and
-\[
-\|f*g\|_\infty\le\|f\|_p\|g\|_q.
-\]
+For every $x\in\RR^d$, the function $y\mapsto f(x-y)$ is measurable with $\norm{f(x-\cdot)}_p=\norm{f}_p$ by invariance of Lebesgue measure under $y\mapsto x-y$.
+Hölder's inequality gives
+$$
+\int_{\RR^d}\abs{f(x-y)g(y)}\,dy \le \norm{f(x-\cdot)}_p\norm{g}_q=\norm{f}_p\norm{g}_q,
+$$
+so the integral converges absolutely and $\abs{(f*g)(x)}\le\norm{f}_p\norm{g}_q$.
 
-Suppose first that $p<\infty$. For $h\in\mathbb R^d$,
-\[
-\begin{aligned}
-|(f*g)(x+h)-(f*g)(x)|
-&\le \|f(\,\cdot+h)-f\|_p\,\|g\|_q,
-\end{aligned}
-\]
-uniformly in $x$. Translation is continuous in $L^p(\mathbb R^d)$ for $1\le p<\infty$, so the right-hand side tends to $0$ as $h\to0$. Hence $f*g$ is uniformly continuous.
+Suppose first that $p<\infty$.
+For $h\in\RR^d$ and every $x$, Hölder's inequality and the same invariance give
+$$
+\abs{(f*g)(x+h)-(f*g)(x)}
+\le \norm{f(\,\cdot+h)-f}_p\,\norm{g}_q .
+$$
+Translation is continuous in $L^p(\RR^d)$ for $1\le p<\infty$, so the right-hand side, which does not depend on $x$, tends to $0$ as $h\to0$.
+Hence $f*g$ is uniformly continuous.
 
-If $p=\infty$, then $q=1$. Rewriting the convolution as
-\[
-(f*g)(x)=\int_{\mathbb R^d}f(y)g(x-y)\,dy
-\]
-gives instead
-\[
-|(f*g)(x+h)-(f*g)(x)|
-\le \|f\|_\infty\,\|g(\,\cdot+h)-g\|_1,
-\]
-again uniformly in $x$, and the $L^1$ translation norm tends to $0$.
-
-Therefore $f*g$ is bounded and uniformly continuous in all conjugate-exponent cases.
+If $p=\infty$, then $q=1$.
+The substitution $y\mapsto x-y$ gives
+$$
+(f*g)(x)=\int_{\RR^d}f(y)g(x-y)\,dy,
+$$
+so
+$$
+\abs{(f*g)(x+h)-(f*g)(x)}
+\le \norm{f}_\infty\,\norm{g(\,\cdot+h)-g}_1
+$$
+for every $x$, and $\norm{g(\,\cdot+h)-g}_1\to0$ as $h\to0$ by [[FR-EM6AL|continuity of translation in $L^1$]].
+Hence $f*g$ is uniformly continuous in this case as well.
 :::

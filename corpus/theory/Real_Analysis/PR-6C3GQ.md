@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-6C3GQ
 kind: proposition
-title: Geometric Series
+title: Geometric series
 classification:
   areas:
   - real-analysis
@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\sum_{k=0}^\infty x^k = \frac 1 {1-x} \iff \abs{x} < 1
-.\]
+::: {.proposition}
+Let $x\in\CC$.
+The series $\sum_{k=0}^\infty x^k$ converges if and only if $\abs{x} < 1$, and in that case
+$$
+\sum_{k=0}^\infty x^k = \frac 1 {1-x} .
+$$
 :::

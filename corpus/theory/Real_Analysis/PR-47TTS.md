@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $\hat f = \hat g$ then $f=g$ almost everywhere.
+Let $f,g\in L^1(\RR^n)$.
+If their [[D-5LZQ4|Fourier transforms]] satisfy $\widehat f(\xi) = \widehat g(\xi)$ for all $\xi\in\RR^n$, then $f=g$ almost everywhere.
 :::
