@@ -14,6 +14,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Real Analysis (1) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA1, whose solution repeats this Carathéodory construction."
 ---
 
 ::: problem

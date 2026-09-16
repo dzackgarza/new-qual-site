@@ -21,6 +21,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Real Analysis (3) of Arango-Piñeros, Some quals problems; merged the duplicate P-EMRA3, whose solution repeats this subsequence argument."
 ---
 
 ::: problem

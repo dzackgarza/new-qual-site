@@ -23,6 +23,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Merged P-ULNGG, a statement reconstructed from a solutions-only document that restricts this problem to numerators 0<=p<=q; its solution proves only that special case and was not carried."
 ---
 
 

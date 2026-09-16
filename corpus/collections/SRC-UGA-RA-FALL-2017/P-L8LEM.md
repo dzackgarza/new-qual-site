@@ -23,6 +23,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Merged P-UHFLP, a restatement of this problem for bounded continuous functions on an arbitrary metric space; its solution repeats this Cauchy-sequence argument and was not carried."
 ---
 
 ::: problem

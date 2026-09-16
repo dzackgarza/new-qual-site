@@ -23,6 +23,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Merged P-VAZ7S, a statement reconstructed from a solutions-only document that assumes f essentially bounded on a finite measure space; its solution omits the case of infinite essential supremum and was not carried."
 ---
 
 

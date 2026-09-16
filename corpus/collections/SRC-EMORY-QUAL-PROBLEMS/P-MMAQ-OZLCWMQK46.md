@@ -21,20 +21,28 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-10
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Real Analysis (5) of Arango-Piñeros, Some quals problems; restated the source's three conditions with outer measure and moved the note on the false equivalence into a remark; merged the duplicate P-EMRA5, which instead added a bounded-variation hypothesis and cited its key image estimate without proof."
 ---
 
 ::: problem
-Let $f:[0,1]\to\mathbb R$ be continuous. Consider:
+Let $f$ be a continuous function on $[0,1]$. Consider the following statements.
 
 1. $f$ is absolutely continuous.
-2. For every $\varepsilon>0$ there exists $\delta>0$ such that
-   \[
-   m(E)<\delta\quad\Longrightarrow\quad m^*(f(E))<\varepsilon
-   \]
-   for every $E\subseteq[0,1]$.
-3. $m(E)=0$ implies $m^*(f(E))=0$ for every $E\subseteq[0,1]$.
+2. For any $\varepsilon>0$ there exists $\delta>0$ such that $m^*(f(E))<\varepsilon$ for any set $E\subseteq[0,1]$ with $m^*(E)<\delta$.
+3. $m^*(f(E))=0$ for any set $E\subseteq[0,1]$ with $m^*(E)=0$.
 
-The source asks to prove that these three conditions are equivalent. Determine whether that claim is correct. Prove every implication asserted below and, if the equivalence fails, give a counterexample.
+Prove that (1) implies (2) and that (2) implies (3).
+Determine whether (3) implies (1).
+:::
+
+::: {.remark}
+The source asks to show that the three statements are equivalent for every continuous $f$.
+That is false: a continuous function satisfying (3) need not have bounded variation, and so need not be absolutely continuous.
+Under the additional hypothesis that $f$ has bounded variation, the three statements are equivalent; this is the Banach--Zarecki theorem.
+The source writes $m$ for the measure of the arbitrary sets $E$ and $f(E)$; outer measure is used here because such sets need not be measurable.
 :::
 
 ::: solution

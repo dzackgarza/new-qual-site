@@ -54,19 +54,11 @@ source:
     - P-MMAQ-ZTRBMIG65D
   - name: Real Analysis
     problems:
-    - P-EMRA1
-    - P-EMRA2
-    - P-EMRA3
-    - P-EMRA4
-    - P-EMRA5
     - P-AYDDA
     - P-MMAQ-WBI4DD2OZI
     - P-MMAQ-ZQASEE4Z36
     - P-MMAQ-SMTLV5QBOP
     - P-MMAQ-OZLCWMQK46
-    - P-ULNGG
-    - P-VAZ7S
-    - P-UHFLP
   date:
     kind: unknown
 ---
