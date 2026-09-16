@@ -130,8 +130,6 @@ The [[D-GY7ZN|special orthogonal]] and [[D-MCUTE|special unitary]] groups are th
 
 [[D-J5AAX]]
 
-[[PR-UQ3XJ]]
-
 [[D-P5D3T]]
 
 [[D-3ZPR7]]
@@ -153,7 +151,7 @@ $$
 $$
 Since $\det\colon\GL_n(\FF_q)\to\FF_q^\times$ is surjective with kernel $\SL_n(\FF_q)$, $\size{\SL_n(\FF_q)} = \size{\GL_n(\FF_q)}/(q-1)$.
 
-[[PR-OYP6J]]
+[[PR-UQ3XJ]]
 
 ## Exercises
 
