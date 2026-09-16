@@ -15,15 +15,22 @@ review: draft
 ---
 
 ::: {.theorem}
-$E\subset \RR^n$ is measurable iff any of these conditions hold
+Let $m_*$ be the [[D-3XE77|outer measure]] on $\RR^n$ and let $E\subseteq \RR^n$.
+The following are equivalent:
 
-- There exist closed $F\subseteq E$ with $m_*(E\setminus F) < \varepsilon \to 0$.
+1. $E$ is [[D-MDJII|Lebesgue measurable]]: for every $\varepsilon>0$ there exists an open set $G\supseteq E$ with $m_*(G\setminus E)<\varepsilon$.
 
-- There exist *compact* $K\subseteq E$ with $m_*(E\setminus K) < \varepsilon \to 0$.
+2. For every $\varepsilon>0$ there exists a closed set $F\subseteq E$ with $m_*(E\setminus F) < \varepsilon$.
 
-- There exist open $G\supset E$ with $m_*(G\setminus E)<\varepsilon \to 0$ (outer regular)
+3. $E = H \cup Z$ with $H$ an [[D-RPOGQ|$F_\sigma$ set]] and $Z$ a [[FD-6HUIM|null]] set.
 
-- $E = H \union Z$ with $H\in F_\sigma$ and $Z$ null
+4. $E = V\setminus Z$ with $V$ a [[D-RPOGQ|$G_\delta$ set]] and $Z$ a null set.
 
-- $E = V\setminus Z$ with $V\in G_\delta$ and $Z$ null
+If $m_*(E)<\infty$, these are also equivalent to:
+
+5. For every $\varepsilon>0$ there exists a compact set $K\subseteq E$ with $m_*(E\setminus K) < \varepsilon$.
+:::
+
+::: {.example}
+The finiteness hypothesis in (5) cannot be dropped: $E=\RR^n$ is measurable, but $m_*(\RR^n\setminus K)=\infty$ for every compact $K\subseteq\RR^n$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-JRRRW
 kind: theorem
-title: Uniform Boundedness Principle
+title: Uniform boundedness principle
 prompts:
 - State the uniform boundedness principle.
 classification:
@@ -16,11 +16,10 @@ review: draft
 ---
 
 ::: {.theorem}
-If $\mathcal{F}$ is a family of bounded operators $T_n:X\to Y$ between Banach spaces with 
-$$  
-\forall x\in X, \qquad \sup_{T_n \in \mathcal{F}} \norm{T_n(x)}_Y < \infty
-,$$
-then $\sup_{T_n\in \mathcal{F}} \norm{T_n}_X < \infty$.
-
-> Slogan: pointwise bounded sequences of operators are uniformly bounded.
+Let $X$ be a [[D-BG455|Banach space]], let $Y$ be a normed vector space, and let $\mathcal{F}$ be a family of bounded linear operators $T\colon X\to Y$.
+If
+$$
+\sup_{T \in \mathcal{F}} \norm{Tx}_Y < \infty \quad\text{for every } x\in X,
+$$
+then $\sup_{T\in \mathcal{F}} \norm{T} < \infty$, where $\norm{T}\coloneqq\sup_{\norm{x}_X\le1}\norm{Tx}_Y$ is the operator norm.
 :::
