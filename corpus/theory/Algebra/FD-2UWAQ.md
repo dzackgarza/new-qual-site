@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-No nontrivial normal subgroups
+A group $G$ is \dfn{simple} if its only [[D-EKE4Q|normal subgroups]] are the trivial subgroup $\theset{e}$ and $G$.
 :::

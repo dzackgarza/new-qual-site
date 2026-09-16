@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-3GZPO
 kind: definition
-title: 'Definition: algebraically closed.'
+title: Algebraically closed field
 prompts:
 - What does it mean for a field to be algebraically closed?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-Every polynomial has a root.
+A field $k$ is \dfn{algebraically closed} if every nonconstant polynomial $f\in k[x]$ has a root in $k$.
 :::

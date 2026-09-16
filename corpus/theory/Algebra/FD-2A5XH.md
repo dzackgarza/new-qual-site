@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-2A5XH
 kind: definition
-title: 'Definition: integral domain.'
+title: Integral domain
 prompts:
 - What is an integral domain?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-A nonzero commutative ring with no nonzero zero divisors.
+An \dfn{integral domain} is a nonzero commutative [[D-GURUB|ring]] $R$ with no nonzero zero divisors: for $a,b\in R$, $ab=0$ implies $a=0$ or $b=0$.
 :::
