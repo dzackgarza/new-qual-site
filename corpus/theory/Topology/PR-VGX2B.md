@@ -15,9 +15,5 @@ review: draft
 ---
 
 ::: {.proposition}
-$\QQ\subset \RR$ is not open and not closed.
-
-\
-
-This follows because every neighborhood of $q\in \QQ$ contains an irrational and every neighborhood of $q' \in \RR\sm \QQ$ contains a rational.
+The subset $\QQ\subseteq \RR$ is neither open nor closed in the standard topology, since every nonempty open interval contains both rational and irrational numbers.
 :::
