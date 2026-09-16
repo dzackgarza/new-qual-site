@@ -2,24 +2,26 @@ schema: qual/publication@2
 id: GUIDE-PRELIM
 kind: study-guide
 title: Prelim
-lede: "UGA's preliminary exam is one paper, not a slice of the four quals: it asks
-  for the calculus, linear algebra, and algebra a first-year student is expected to
-  have before any qual is attempted. This guide follows that paper's own order —
-  first what a proof is and how a statement is negated, then limits and the two operations
-  built on them, then the linear algebra the algebra sections quietly assume, and
-  finally groups, rings, and fields. Every item is a problem that was actually set
-  or worked; there is no theory layer here, because the exam does not test one."
+lede: >-
+  Preliminary-exam problems in calculus, linear algebra, and abstract algebra: logic and
+  proof, limits and continuity, integration, sequences and series, multivariable calculus,
+  linear algebra, groups, rings and modules, fields and Galois theory, complex numbers,
+  and counterexamples.
 sections:
   - slug: logic-and-proof
-    title: Logic and Proof
+    title: Logic and proof
     parent: GUIDE-PRELIM
-    lede: 'Negation of nested quantifiers is asked directly and repeatedly, along with the converse and contrapositive,
-      which are the two ways a true implication is most often misremembered. Injectivity
-      and surjectivity are the first place those quantifiers get used on an object rather
-      than a sentence, and equivalence relations are where they get used on a set. Induction
-      closes the section as the one proof technique the exam expects by name, usually
-      on a sum or a divisibility claim, and the counting formulas are its most common
-      companion.'
+    lede: >-
+      The negation of $\forall x\,\exists y\,P(x,y)$ is $\exists x\,\forall y\,\neg P(x,y)$.
+      An implication $P\Rightarrow Q$ is equivalent to its contrapositive $\neg
+      Q\Rightarrow\neg P$, and in general not to its converse $Q\Rightarrow P$. A map $f\colon
+      X\to Y$ is injective if $f(x)=f(x')$ implies $x=x'$ for all $x,x'\in X$, and surjective
+      if for every $y\in Y$ there exists $x\in X$ with $f(x)=y$. An equivalence relation on a
+      set $X$ determines the partition of $X$ into its equivalence classes, and every
+      partition of $X$ arises from exactly one equivalence relation. Induction proves $P(n)$
+      for all integers $n\ge n_0$ from $P(n_0)$ and the implications $P(n)\Rightarrow P(n+1)$;
+      the problems apply it to summation identities, divisibility statements, and counting
+      formulas such as $\binom{n}{k}=\binom{n-1}{k-1}+\binom{n-1}{k}$.
     items:
       - ref: P-4PCPV
       - ref: P-5XCMC
@@ -47,17 +49,19 @@ sections:
       - ref: P-TVRVM
       - ref: P-IMVV7
   - slug: limits-and-continuity
-    title: Limits and Continuity
+    title: Limits and continuity
     parent: logic-and-proof
-    lede: 'With quantifiers in hand the epsilon-delta definition is readable, and the
-      exam asks for it in the strict form: state the definition, then produce a delta
-      for a specific function and limit. The deltas wanted here are the ones a candidate
-      can find by bounding the offending factor on a small interval first, which is
-      why the answers so often look like the minimum of a constant and a root of epsilon.
-      Continuity is the same definition with the value of the limit pinned to the value
-      of the function, and the counterexamples asked for — continuous but not differentiable,
-      differentiable but not continuously so — are how the exam checks that the definitions
-      are held apart rather than blurred.'
+    lede: >-
+      For $f\colon D\to\RR$ with $D\subseteq\RR$ and $a$ a limit point of $D$, $\lim_{x\to
+      a}f(x)=L$ means that for every $\varepsilon>0$ there exists $\delta>0$ such that
+      $\abs{f(x)-L}<\varepsilon$ for all $x\in D$ with $0<\abs{x-a}<\delta$. For a polynomial
+      $f$, write $f(x)-f(a)=(x-a)g(x)$ with $g$ a polynomial; if $\abs{g}\le C$ on
+      $\abs{x-a}<1$, then $\delta=\min(1,\varepsilon/C)$ works. The function $f$ is continuous
+      at $a\in D$ if for every $\varepsilon>0$ there exists $\delta>0$ such that
+      $\abs{f(x)-f(a)}<\varepsilon$ for all $x\in D$ with $\abs{x-a}<\delta$. The function
+      $\abs{x}$ is continuous and not differentiable at $0$, and the function equal to
+      $x^2\sin(1/x)$ for $x\ne0$ and to $0$ at $0$ is differentiable on $\RR$ with derivative
+      discontinuous at $0$.
     items:
       - ref: P-3OH6H
       - ref: P-L3LHW
@@ -67,19 +71,21 @@ sections:
       - ref: P-FPWV6
       - ref: P-UE5L6
   - slug: integration-techniques
-    title: Integration Techniques
+    title: Integration techniques
     parent: limits-and-continuity
-    lede: 'The largest single block of the archive is indefinite and definite integrals,
-      and it is drilled rather than reasoned: the exam expects the technique to be recognized
-      on sight. Four techniques cover nearly all of them. Substitution handles any integrand
-      carrying its own derivative as a factor. Parts handles a product where one factor
-      differentiates down to nothing, and the same computation run twice recovers the
-      integral of the secant cube and of the exponential against a sine. Trigonometric
-      substitution handles the three quadratic radicals, and partial fractions handles
-      a proper rational function once long division has made it proper. The trigonometric
-      identities are listed alongside because half of these integrals are an identity
-      applied before any technique at all, and the improper cases are separated out
-      because they need a limit the others do not.'
+    lede: >-
+      Substitution, $\int f(g(x))g'(x)\,dx=\int f(u)\,du$ with $u=g(x)$, applies when the
+      integrand contains the derivative of an inner function as a factor. Integration by
+      parts, $\int u\,dv=uv-\int v\,du$, applies to products such as $x^ne^x$ and $x^n\sin x$;
+      applied twice to $\int e^{ax}\sin bx\,dx$, or once to $\int\sec^3x\,dx$, it returns a
+      multiple of the original integral, which is then solved for. The substitutions
+      $x=a\sin\theta$, $x=a\tan\theta$, and $x=a\sec\theta$ remove the radicals
+      $\sqrt{a^2-x^2}$, $\sqrt{a^2+x^2}$, and $\sqrt{x^2-a^2}$. A rational function is
+      integrated by polynomial division followed by the partial fraction decomposition of the
+      proper remainder. Identities such as $\sin^2x=\frac{1-\cos 2x}{2}$ reduce powers of sine
+      and cosine. An improper integral is a limit of proper integrals, such as $\int_a^\infty
+      f=\lim_{b\to\infty}\int_a^bf$, and $\int_1^\infty x^{-p}\,dx$ converges if and only if
+      $p>1$.
     items:
       - ref: P-2ALGH
       - ref: P-3MDGM
@@ -143,17 +149,22 @@ sections:
       - ref: P-3CU65
       - ref: P-PC2H7
   - slug: sequences-and-series
-    title: Sequences and Series
+    title: Sequences and series
     parent: limits-and-continuity
-    lede: "A series is a sequence of partial sums, so the convergence tests are the
-      section's whole content and the exam asks which one applies and why. The recurring
-      question is the set of real numbers for which a power series converges, which
-      is the ratio test followed by a separate argument at each endpoint — the endpoints
-      are where the marks are. Taylor series appear both as an expansion to be computed
-      and as an approximation whose error must be bounded. Uniform convergence is the
-      one idea here that is not about numbers: it is the negation exercise of the first
-      section applied to a sequence of functions, and it is what makes the interchange
-      of a limit with an integral legitimate."
+    lede: >-
+      A series $\sum a_n$ converges when its sequence of partial sums $s_N=\sum_{n\le N}a_n$
+      converges, and convergence forces $a_n\to0$. The comparison, limit comparison, ratio,
+      root, integral, and alternating series tests decide convergence for the standard
+      examples. A power series $\sum c_n(x-a)^n$ converges absolutely for $\abs{x-a}<R$ and
+      diverges for $\abs{x-a}>R$, where $1/R=\limsup_n\abs{c_n}^{1/n}$; the ratio test gives
+      $R=\lim_n\abs{c_n/c_{n+1}}$ when that limit exists, and each endpoint $x=a\pm R$ is
+      decided separately. Taylor's theorem: if $f$ has $n+1$ derivatives on an interval
+      containing $a$ and $x$, then
+      $f(x)=\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(x-a)^k+\frac{f^{(n+1)}(\xi)}{(n+1)!}(x-a)^{n+1}$
+      for some $\xi$ between $a$ and $x$, which bounds the error of the Taylor polynomial. A
+      sequence $f_n\colon D\to\RR$ converges uniformly to $f$ if $\sup_{x\in
+      D}\abs{f_n(x)-f(x)}\to0$; if each $f_n$ is Riemann integrable on $[a,b]$ and $f_n\to f$
+      uniformly on $[a,b]$, then $f$ is Riemann integrable and $\int_a^bf_n\to\int_a^bf$.
     items:
       - ref: P-AOZMW
       - ref: P-SD42B
@@ -166,18 +177,22 @@ sections:
       - ref: P-ZR2WC
       - ref: P-CQNPO
   - slug: multivariable-calculus
-    title: Multivariable Calculus
+    title: Multivariable calculus
     parent: integration-techniques
-    lede: "In several variables differentiability stops being the existence of a limit
-      of difference quotients and becomes the existence of a linear map approximating
-      the increment; the exam asks for that definition and then for the standard example
-      whose partials both exist at the origin while the function is not even continuous
-      there. The chain rule, the Jacobian, and the fact that the gradient is orthogonal
-      to a level set are the computational consequences it asks to see derived. Line
-      integrals are the section's other half, and the three questions asked about them
-      are the same three every time: compute it by parametrizing, compute it again by
-      Green's theorem, and decide whether it is path-independent — which is to ask
-      whether the field is conservative."
+    lede: >-
+      A map $f\colon U\to\RR^m$ on an open set $U\subseteq\RR^n$ is differentiable at $a\in U$
+      if there is a linear map $Df(a)\colon\RR^n\to\RR^m$ with
+      $\lim_{h\to0}\abs{f(a+h)-f(a)-Df(a)h}/\abs{h}=0$. The function equal to
+      $\frac{xy}{x^2+y^2}$ away from the origin and to $0$ at the origin has both partial
+      derivatives at the origin and is not continuous there. The chain rule $D(g\circ
+      f)(a)=Dg(f(a))\circ Df(a)$ multiplies Jacobian matrices. For $F\colon\RR^n\to\RR$
+      continuously differentiable with $\nabla F(a)\ne0$, the gradient $\nabla F(a)$ is
+      orthogonal to the tangent space at $a$ of the level set $\{F=F(a)\}$. A line integral
+      $\int_CP\,dx+Q\,dy$ is computed from a parametrization of $C$. Green's theorem: for a
+      positively oriented, piecewise smooth, simple closed curve $C$ bounding a region $D$,
+      and $P,Q$ continuously differentiable on an open set containing $D\cup C$,
+      $\oint_CP\,dx+Q\,dy=\iint_D(Q_x-P_y)\,dA$. A continuous vector field on a connected open
+      set has path-independent line integrals if and only if it is the gradient of a function.
     items:
       - ref: P-2QLBW
       - ref: P-34W2F
@@ -199,18 +214,21 @@ sections:
       - ref: P-WJTPS
       - ref: P-YVA5W
   - slug: linear-algebra
-    title: Linear Algebra
+    title: Linear algebra
     parent: GUIDE-PRELIM
-    lede: "The exam's linear algebra runs from the subspace test to canonical forms
-      in a single arc, and the later algebra sections assume all of it. A subspace is
-      checked by closure, a span is cut down to a basis by discarding dependent vectors,
-      and the rank-nullity theorem is what converts either into a dimension count. Eigenvalues
-      come from the characteristic polynomial and diagonalizability from whether the
-      eigenvectors span, which is the same question as whether the minimal polynomial
-      is squarefree — the exam asks it both ways. The canonical forms close the section:
-      rational canonical form is the invariant-factor statement about a linear operator,
-      Jordan form is the elementary-divisor statement over a field with enough roots,
-      and nilpotence is the case where the only eigenvalue is zero."
+    lede: >-
+      A nonempty subset of a vector space $V$ over a field $F$ is a subspace if it is closed
+      under addition and scalar multiplication. Every finite spanning set of $V$ contains a
+      basis, and for a linear map $T\colon V\to W$ with $V$ finite-dimensional, $\dim\ker
+      T+\dim\im T=\dim V$. The eigenvalues of an operator $T$ on $V$ are the roots in $F$ of
+      its characteristic polynomial $\det(xI-T)$. The operator $T$ is diagonalizable if and
+      only if $V$ has a basis of eigenvectors of $T$, if and only if the minimal polynomial of
+      $T$ is a product of distinct monic linear factors in $F[x]$. The rational canonical form
+      of $T$ is the block diagonal matrix of the companion matrices of its invariant factors
+      and exists over every field; the Jordan form is determined by the elementary divisors
+      and exists when the characteristic polynomial splits over $F$. A nilpotent operator on
+      an $n$-dimensional space has characteristic polynomial $x^n$, and its Jordan form is
+      determined by the ranks of its powers.
     items:
       - ref: P-4STQR
       - ref: P-CWELY
@@ -232,16 +250,19 @@ sections:
   - slug: groups
     title: Groups
     parent: logic-and-proof
-    lede: "Group theory on this paper is almost entirely about finite groups and about
-      one question: given an order, what are the groups of that order? Lagrange bounds
-      the possible subgroup orders and its converse fails, which the exam asks for by
-      counterexample. Sylow's theorems supply what Lagrange cannot — existence, conjugacy,
-      and a congruence on the count — and the standard argument of order pq is the exam's
-      favourite application. The abelian case is settled completely by the structure
-      theorem, which is why listing the abelian groups of a given order is a routine
-      question and listing all groups of that order is not. Automorphism groups and
-      semidirect products are how the nonabelian examples get built once the abelian
-      ones are exhausted."
+    lede: >-
+      Lagrange's theorem: for a subgroup $H$ of a finite group $G$, $\abs{H}$ divides
+      $\abs{G}$. The converse fails: $A_4$ has order $12$ and no subgroup of order $6$. Let
+      $\abs{G}=p^km$ with $p$ prime and $p\nmid m$. The Sylow theorems state that $G$ has a
+      subgroup of order $p^k$, that any two such subgroups are conjugate, and that their
+      number $n_p$ divides $m$ and satisfies $n_p\equiv1\pmod{p}$; a Sylow $p$-subgroup is
+      normal if and only if $n_p=1$. For primes $p<q$ with $p\nmid q-1$, these conditions make
+      every group of order $pq$ cyclic. By the structure theorem, a finite abelian group is a
+      direct product of cyclic groups of prime-power order, unique up to the order of the
+      factors, so the abelian groups of order $\prod_ip_i^{e_i}$ correspond to choices of a
+      partition of each $e_i$. For groups $H$ and $K$ and a homomorphism $\varphi\colon
+      K\to\Aut(H)$, the semidirect product $H\rtimes_\varphi K$ is nonabelian whenever
+      $\varphi$ is nontrivial.
     items:
       - ref: P-7B2CW
       - ref: P-E4XWH
@@ -261,17 +282,19 @@ sections:
       - ref: P-RP7WR
       - ref: P-ZG74L
   - slug: rings-and-modules
-    title: Rings and Modules
+    title: Rings and modules
     parent: groups
-    lede: 'A ring question on this paper is usually a question about its ideals: which
-      are prime, which are maximal, and what the quotient looks like. The chain of domains
-      is what organizes the rest — every Euclidean domain is principal and every principal
-      ideal domain is a unique factorization domain, and the exam asks for the examples
-      separating each containment. Modules generalize both vector spaces and abelian
-      groups, and the structure theorem over a principal ideal domain is the single
-      result that pays for itself three times: it classifies finitely generated abelian
-      groups, it produces the rational canonical form from [Linear Algebra](linear-algebra.html),
-      and it answers the module questions here directly.'
+    lede: >-
+      For an ideal $I$ of a commutative ring $R$ with $1$, $I$ is prime if and only if $R/I$
+      is an integral domain, and maximal if and only if $R/I$ is a field. Every Euclidean
+      domain is a principal ideal domain, and every principal ideal domain is a unique
+      factorization domain. $\ZZ[(1+\sqrt{-19})/2]$ is a principal ideal domain that is not
+      Euclidean, and $\ZZ[x]$ is a unique factorization domain that is not a principal ideal
+      domain. A module over a field is a vector space, and a $\ZZ$-module is an abelian group.
+      The structure theorem for finitely generated modules over a principal ideal domain
+      classifies the finitely generated abelian groups for $R=\ZZ$; for $R=F[x]$, acting on a
+      finite-dimensional vector space through an operator $T$, it gives the rational canonical
+      form of $T$ ([linear algebra](linear-algebra.html)).
     items:
       - ref: P-3GKGV
       - ref: P-AR3HH
@@ -297,17 +320,20 @@ sections:
       - ref: P-C6SRA
       - ref: P-HHX6V
   - slug: fields-and-galois
-    title: Fields and Galois Theory
+    title: Fields and Galois theory
     parent: rings-and-modules
-    lede: A field extension is a vector space over the base field, so the degree is
-      a dimension and the tower law is multiplicativity of dimension — that one observation
-      answers a large share of these questions. The splitting field of an explicit cubic
-      or quartic is asked for repeatedly, together with its degree and its Galois group,
-      and the group is pinned down by how the roots may be permuted rather than by computing
-      anything. Finite fields are the case where the whole theory collapses to one cyclic
-      Galois group generated by Frobenius, which is why irreducibility over a finite
-      field can be tested by a greatest common divisor. Number-theoretic questions sit
-      here because they are the same arguments run in a ring of integers.
+    lede: >-
+      For fields $K\subseteq L$, $L$ is a vector space over $K$ and $[L:K]=\dim_KL$; for
+      $K\subseteq L\subseteq M$, $[M:K]=[M:L][L:K]$. For $\alpha$ algebraic over $K$ with
+      minimal polynomial $m_\alpha$, $[K(\alpha):K]=\deg m_\alpha$. For a separable polynomial
+      $f\in K[x]$ of degree $n$ with splitting field $L$, the Galois group $\Gal(L/K)$ acts
+      faithfully on the roots of $f$, so it embeds in $S_n$, and it acts transitively when $f$
+      is irreducible. The extension $\FF_{p^n}/\FF_p$ is Galois, with cyclic Galois group of
+      order $n$ generated by the Frobenius map $x\mapsto x^p$. The polynomial $x^{p^n}-x$ is
+      the product of the monic irreducible polynomials over $\FF_p$ whose degree divides $n$;
+      hence a polynomial $f\in\FF_p[x]$ of degree $n$ is irreducible if and only if $f$
+      divides $x^{p^n}-x$ and $\gcd\big(f,x^{p^{n/q}}-x\big)=1$ for every prime $q$ dividing
+      $n$.
     items:
       - ref: P-5JBRJ
       - ref: P-H7ERV
@@ -320,14 +346,15 @@ sections:
       - ref: P-ZR3OT
       - ref: P-OW6CS
   - slug: complex-numbers
-    title: Complex Numbers
+    title: Complex numbers
     parent: fields-and-galois
-    lede: "The paper's complex content is small and computational: put a complex number
-      in polar form, take its roots, and write them back as a plus bi. Those roots are
-      the roots of unity scaled and rotated, which is where this section meets the cyclotomic
-      extensions of the previous one. One question goes further and asks for the Cauchy
-      integral formula and a contour integral evaluated both by the formula and by direct
-      parametrization, which is the only place the exam touches complex analysis proper."
+    lede: >-
+      A nonzero complex number is $z=re^{i\theta}$ with $r=\abs{z}$, and its $n$th roots are
+      $r^{1/n}e^{i(\theta+2\pi k)/n}$ for $k=0,\ldots,n-1$: one root multiplied by the $n$th
+      roots of unity. The primitive $n$th roots of unity generate the cyclotomic field
+      $\QQ(e^{2\pi i/n})$, of degree $\varphi(n)$ over $\QQ$. Cauchy's integral formula: if
+      $f$ is holomorphic on an open set containing the closed disc $\abs{z-z_0}\le r$, then
+      $f(a)=\frac{1}{2\pi i}\oint_{\abs{z-z_0}=r}\frac{f(z)}{z-a}\,dz$ for $\abs{a-z_0}<r$.
     items:
       - ref: P-3373K
       - ref: P-OQW4B
@@ -336,14 +363,13 @@ sections:
   - slug: counterexamples
     title: Counterexamples
     parent: GUIDE-PRELIM
-    lede: 'A recurring instruction on this paper is "give an example or explain why
-      none exists", and it is the most efficient question on it: one line of an answer
-      distinguishes a candidate who knows a definition from one who knows what the definition
-      rules out. These are collected here because they belong to no single subject —
-      the same instruction is applied to a non-abelian group whose proper subgroups
-      are all normal, to a prime ideal that is not maximal, to a module that is torsion-free
-      and not free, and to a function that is continuous at a point and differentiable
-      nowhere near it. Reading them together is the fastest revision the archive supports.'
+    lede: >-
+      Problems that ask for an example with prescribed properties, or for a proof that none
+      exists. Examples of such answers: the quaternion group $Q_8$ is nonabelian and every
+      subgroup of $Q_8$ is normal; the ideal $(x)$ of $\ZZ[x]$ is prime and not maximal, since
+      $\ZZ[x]/(x)\cong\ZZ$; $\QQ$ is a torsion-free $\ZZ$-module that is not free; and the
+      function equal to $x$ on $\QQ$ and to $0$ on $\RR\setminus\QQ$ is continuous at $0$ and
+      at no other point, and differentiable at no point.
     topics:
       - Counterexamples
     items: []
