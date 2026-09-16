@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-I44DD
 kind: proposition
-title: Extending the class of measurable functions.
+title: Closure properties of Lebesgue measurable functions
 classification:
   areas:
   - real-analysis
@@ -15,16 +15,17 @@ review: draft
 ---
 
 ::: {.proposition}
+All functions below are [[D-DHFN4|Lebesgue measurable]] functions with values in $[-\infty,\infty]$ unless stated otherwise.
 
-- Characteristic functions are measurable
+- For a [[D-MDJII|Lebesgue measurable]] set $E\subseteq\RR^d$, the characteristic function $\chi_E$ is measurable.
 
-- If $f_{n}$ are measurable, so are $\abs{f_{n}}, \limsup f_{n}, \liminf f_{n}, \lim f_{n}$,
+- If $f_n\colon\RR^d\to[-\infty,\infty]$ are measurable for $n\geq1$, then $\abs{f_n}$, $\limsup_n f_n$, and $\liminf_n f_n$ are measurable, and so is $\lim_n f_n$ wherever the sequence converges everywhere.
 
-- Sums and differences of measurable functions are measurable,
+- If $f,g\colon\RR^d\to\RR$ are measurable and finite-valued, then $f+g$ and $f-g$ are measurable.
 
-- Cylinders $F(x,y) = f(x)$ are measurable,
+- If $f\colon\RR^{d_1}\to[-\infty,\infty]$ is measurable, then $F\colon\RR^{d_1}\times\RR^{d_2}\to[-\infty,\infty]$, $F(x,y)\coloneqq f(x)$, is measurable.
 
-- Compositions $f\circ T$ for $T$ a linear transformation are measurable,
+- If $f\colon\RR^d\to[-\infty,\infty]$ is measurable and $T\colon\RR^d\to\RR^d$ is an invertible linear map, then $f\circ T$ is measurable.
 
-- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$ are measurable
+- If $f\colon\RR^d\to[-\infty,\infty]$ is measurable, then $(x,y)\mapsto f(x-y)$ is measurable on $\RR^d\times\RR^d$.
 :::
