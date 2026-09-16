@@ -67,7 +67,7 @@ Nested entries retain their containing section and the referenced collection's o
 `just sample-unsolved COLLECTION 5` samples up to five distinct unsolved IDs and lists their appearances in source order; an exact section name may follow the count.
 All listings read current authored files without building a catalog or refreshing a queue.
 
-`read-card` prints the recorded source material for a card; one reading of a source serves the whole collection.
+`read-card` locates the recorded source material for a card through its source and extraction links.
 Its context block is terminal output; the authored card follows unchanged.
 Extraction links use the site's existing PDF-to-Markdown resource mapping; no extraction or source attribution is generated.
 Discovery is repeated when fresh candidates are needed, not after every card.
