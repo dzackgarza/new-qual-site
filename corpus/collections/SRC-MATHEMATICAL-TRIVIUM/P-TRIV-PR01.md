@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR01
 kind: problem
-title: 'Mathematical Trivium — Probability problem 1'
+title: Probability that five randomly shelved volumes are in order
 classification:
   areas: [prelim]
   topics: []

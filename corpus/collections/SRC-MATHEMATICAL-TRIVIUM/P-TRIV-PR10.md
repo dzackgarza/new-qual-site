@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR10
 kind: problem
-title: 'Mathematical Trivium — Probability problem 10'
+title: Buffon's needle
 classification:
   areas: [prelim]
   topics: []

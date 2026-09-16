@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR24
 kind: problem
-title: 'Mathematical Trivium — Probability problem 24'
+title: Normal approximation to the number of sixes in 12000 dice throws
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR05
 kind: problem
-title: 'Mathematical Trivium — Probability problem 5'
+title: Probability of a derangement of five presents
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR08
 kind: problem
-title: 'Mathematical Trivium — Probability problem 8'
+title: Reliability of a five-relay bridge circuit
 classification:
   areas: [prelim]
   topics: []

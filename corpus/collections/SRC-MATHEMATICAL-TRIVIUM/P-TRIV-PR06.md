@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR06
 kind: problem
-title: 'Mathematical Trivium — Probability problem 6'
+title: 'Pairwise but not mutual independence: Bernstein''s tetrahedron'
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR27
 kind: problem
-title: 'Mathematical Trivium — Probability problem 27'
+title: Outlier test for wheat yield data
 classification:
   areas: [prelim]
   topics: []

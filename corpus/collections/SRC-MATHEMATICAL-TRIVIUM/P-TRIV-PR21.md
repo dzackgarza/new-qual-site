@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR21
 kind: problem
-title: 'Mathematical Trivium — Probability problem 21'
+title: Expected area of the projection of a randomly oriented unit cube
 classification:
   areas: [prelim]
   topics: []

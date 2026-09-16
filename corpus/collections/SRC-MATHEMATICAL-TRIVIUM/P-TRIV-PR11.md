@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR11
 kind: problem
-title: 'Mathematical Trivium — Probability problem 11'
+title: Exponential waiting time between collisions
 classification:
   areas: [prelim]
   topics: []

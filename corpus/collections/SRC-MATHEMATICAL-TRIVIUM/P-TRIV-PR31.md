@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR31
 kind: problem
-title: 'Mathematical Trivium — Probability problem 31'
+title: Sample size for testing coin-matching probability $2/3$ against $1/2$
 classification:
   areas: [prelim]
   topics: []

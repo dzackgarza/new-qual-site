@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR12
 kind: problem
-title: 'Mathematical Trivium — Probability problem 12'
+title: Poisson arrivals at a counter with dead time
 classification:
   areas: [prelim]
   topics: []

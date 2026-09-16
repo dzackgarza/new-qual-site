@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR29
 kind: problem
-title: 'Mathematical Trivium — Probability problem 29'
+title: Markov chain of a die rolled onto adjacent faces
 classification:
   areas: [prelim]
   topics: []

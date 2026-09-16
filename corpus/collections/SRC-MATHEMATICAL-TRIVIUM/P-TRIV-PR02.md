@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR02
 kind: problem
-title: 'Mathematical Trivium — Probability problem 2'
+title: Birthday problem
 classification:
   areas: [prelim]
   topics: []

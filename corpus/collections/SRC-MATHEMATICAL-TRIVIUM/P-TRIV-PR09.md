@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR09
 kind: problem
-title: 'Mathematical Trivium — Probability problem 9'
+title: Meeting problem with a ten-minute wait
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR07
 kind: problem
-title: 'Mathematical Trivium — Probability problem 7'
+title: Probability that $ax^2+bx+c$ has real roots for uniform coefficients
 classification:
   areas: [prelim]
   topics: []

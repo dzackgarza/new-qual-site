@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR23
 kind: problem
-title: 'Mathematical Trivium — Probability problem 23'
+title: Central limit estimate of accumulated round-off error
 classification:
   areas: [prelim]
   topics: []

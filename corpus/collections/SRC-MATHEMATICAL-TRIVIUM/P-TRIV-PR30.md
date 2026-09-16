@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR30
 kind: problem
-title: 'Mathematical Trivium — Probability problem 30'
+title: Transition probabilities of a Markov chain on energy levels
 classification:
   areas: [prelim]
   topics: []

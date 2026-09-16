@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR22
 kind: problem
-title: 'Mathematical Trivium — Probability problem 22'
+title: Maximum likelihood capture--recapture estimate
 classification:
   areas: [prelim]
   topics: []

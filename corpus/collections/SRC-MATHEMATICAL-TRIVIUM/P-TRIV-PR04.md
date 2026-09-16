@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR04
 kind: problem
-title: 'Mathematical Trivium — Probability problem 4'
+title: Probability that the $j$th student draws a lucky ticket
 classification:
   areas: [prelim]
   topics: []

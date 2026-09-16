@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR28
 kind: problem
-title: 'Mathematical Trivium — Probability problem 28'
+title: Chi-squared test of a Poisson fit to a cosmic-ray spectrum
 classification:
   areas: [prelim]
   topics: []

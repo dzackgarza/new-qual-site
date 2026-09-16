@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR33
 kind: problem
-title: 'Mathematical Trivium — Probability problem 33'
+title: Borel's normal number theorem
 classification:
   areas: [prelim]
   topics: []

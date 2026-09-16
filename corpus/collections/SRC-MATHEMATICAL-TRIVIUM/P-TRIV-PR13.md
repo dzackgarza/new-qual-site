@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR13
 kind: problem
-title: 'Mathematical Trivium — Probability problem 13'
+title: 'Gambler''s ruin: absorption probabilities and mean duration of a random walk'
 classification:
   areas: [prelim]
   topics: []

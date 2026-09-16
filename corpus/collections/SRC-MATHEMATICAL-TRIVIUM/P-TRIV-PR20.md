@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR20
 kind: problem
-title: 'Mathematical Trivium — Probability problem 20'
+title: Wald's identities for a random sum
 classification:
   areas: [prelim]
   topics: []

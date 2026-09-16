@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR15
 kind: problem
-title: 'Mathematical Trivium — Probability problem 15'
+title: Random variables with $\mathbf{E}\xi^2=\mathbf{E}\xi^3=\mathbf{E}\xi^4$ are $\{0,1\}$-valued
 classification:
   areas: [prelim]
   topics: []

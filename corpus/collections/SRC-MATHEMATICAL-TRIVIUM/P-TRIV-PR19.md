@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR19
 kind: problem
-title: 'Mathematical Trivium — Probability problem 19'
+title: Conditional expectations of sums of independent Bernoulli variables
 classification:
   areas: [prelim]
   topics: []

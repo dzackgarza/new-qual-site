@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR32
 kind: problem
-title: 'Mathematical Trivium — Probability problem 32'
+title: Almost sure convergence of the random harmonic series $\sum \xi_n/n$
 classification:
   areas: [prelim]
   topics: []

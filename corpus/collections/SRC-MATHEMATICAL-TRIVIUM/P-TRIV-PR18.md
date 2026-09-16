@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR18
 kind: problem
-title: 'Mathematical Trivium — Probability problem 18'
+title: Typical sequences and entropy for Bernoulli trials
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR03
 kind: problem
-title: 'Mathematical Trivium — Probability problem 3'
+title: De Méré's dice problem
 classification:
   areas: [prelim]
   topics: []

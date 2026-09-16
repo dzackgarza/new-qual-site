@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR17
 kind: problem
-title: 'Mathematical Trivium — Probability problem 17'
+title: Chernoff and Markov tail bounds
 classification:
   areas: [prelim]
   topics: []

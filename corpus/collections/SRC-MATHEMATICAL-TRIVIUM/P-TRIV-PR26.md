@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR26
 kind: problem
-title: 'Mathematical Trivium — Probability problem 26'
+title: Confidence interval for a proportion of defective goods
 classification:
   areas: [prelim]
   topics: []

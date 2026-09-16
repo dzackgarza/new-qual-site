@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR14
 kind: problem
-title: 'Mathematical Trivium — Probability problem 14'
+title: No nonnegative solution of $\int \frac{x(t)\,dt}{(y-t)^2+1}=e^{-y^2}$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR16
 kind: problem
-title: 'Mathematical Trivium — Probability problem 16'
+title: Sums of independent normal and of independent Poisson random variables
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-PR25
 kind: problem
-title: 'Mathematical Trivium — Probability problem 25'
+title: Monte Carlo integration and its sample size
 classification:
   areas: [prelim]
   topics: []
