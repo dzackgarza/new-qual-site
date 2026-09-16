@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-25
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 25"
+title: Maximum number of ones in an invertible $0$--$1$ matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Matrices
+  - Determinants
 relations: []
 review: draft
 ---

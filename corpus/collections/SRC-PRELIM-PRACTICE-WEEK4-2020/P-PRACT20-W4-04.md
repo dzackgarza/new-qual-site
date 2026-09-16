@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-PRACT20-W4-04
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 4"
+title: The solution of $x\,dy+(y-xe^x)\,dx=0$ through $(1,0)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---

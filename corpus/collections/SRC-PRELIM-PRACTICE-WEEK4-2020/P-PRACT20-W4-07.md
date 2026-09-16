@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-PRACT20-W4-07
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 7"
+title: Solutions of $yy''-2(y')^2=0$ through $(1,1)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---

@@ -2,17 +2,20 @@
 schema: qual/card@1
 id: P-PRACT20-W4-20
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 20"
+title: An idempotent operator splits $V$ into its fixed space and kernel
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Linear Transformations
+  - Idempotents
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Assume that V is a finite dimensional vector space and $T : V  V$ is a linear transformation such that $T ^ { 2 } = T$ . Show that each $v \in V$ can be uniquely written as $v = v _ { 1 } + v _ { 2 }$ where $T ( v _ { 1 } ) = v _ { 1 }$ and $T ( v _ { 2 } ) = 0$
+Assume that V is a finite dimensional vector space and $T : V \to V$ is a linear transformation such that $T ^ { 2 } = T$ . Show that each $v \in V$ can be uniquely written as $v = v _ { 1 } + v _ { 2 }$ where $T ( v _ { 1 } ) = v _ { 1 }$ and $T ( v _ { 2 } ) = 0$
 :::
 
 ::: {.solution}

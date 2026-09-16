@@ -2,18 +2,21 @@
 schema: qual/card@1
 id: P-PRACT20-W4-16
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 16"
+title: Rank of the $n\times n$ matrix with entries $1,\dots,n^2$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Matrices
+  - Rank and Nullity
 relations: []
 review: draft
 ---
 
 ::: {.problem}
 Find the rank of the $n \times n$ matrix with entries which simply count up from 1 to $n ^ { 2 }$ in increasing order.
-For example, if $n = 3$ , we are considering the matrix $\left( \begin{array} { l l l } { 1 } & { \hat { 2 } } & { 3 } \\ { 4 } & { 5 } & { 6 } \\ { 7 } & { 8 } & { 9 } \end{array} \right)$
+For example, if $n = 3$ , we are considering the matrix $\left( \begin{array} { l l l } { 1 } & { 2 } & { 3 } \\ { 4 } & { 5 } & { 6 } \\ { 7 } & { 8 } & { 9 } \end{array} \right)$
 :::
 
 ::: {.solution}

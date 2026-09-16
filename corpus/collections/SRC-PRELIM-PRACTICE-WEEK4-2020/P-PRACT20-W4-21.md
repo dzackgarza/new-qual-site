@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: P-PRACT20-W4-21
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 21"
+title: Eigenvectors for distinct eigenvalues are linearly independent
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 ---

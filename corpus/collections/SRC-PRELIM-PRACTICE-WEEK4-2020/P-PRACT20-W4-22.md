@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-22
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 22"
+title: Noninvertibility from $AB-BA=A$ and from $A^3=B^3$, $A^2B=B^2A$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Matrices
+  - Invertibility
 relations: []
 review: draft
 ---

@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-PRACT20-W4-05
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 5"
+title: Graphs of solutions of $(y')^2+2yy'+y^2=0$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---

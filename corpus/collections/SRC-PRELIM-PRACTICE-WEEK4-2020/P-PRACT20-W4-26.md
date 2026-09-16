@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-26
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 26"
+title: Invertibility and inverse of $I_n+\sigma J_n$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Matrices
+  - Invertibility
 relations: []
 review: draft
 ---

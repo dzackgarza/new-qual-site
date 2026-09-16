@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-PRACT20-W4-02
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 2"
+title: The initial value problem $y'+xy=x$, $y(0)=-1$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---

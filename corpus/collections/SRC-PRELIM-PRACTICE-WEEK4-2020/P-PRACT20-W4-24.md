@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-24
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 24"
+title: $1+xy+x^2y^2$ is not a sum of two products of one-variable polynomials
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Polynomials
+  - Rank and Nullity
 relations: []
 review: draft
 ---

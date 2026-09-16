@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: P-PRACT20-W4-14
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 14"
+title: Eigenvalues and eigenvectors of the $3\times3$ matrix with zero diagonal and ones elsewhere
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 ---

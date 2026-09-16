@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-17
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 17"
+title: Dimension of cubic polynomials vanishing at $-1$, $0$, $1$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Polynomials
+  - Dimension
 relations: []
 review: draft
 ---

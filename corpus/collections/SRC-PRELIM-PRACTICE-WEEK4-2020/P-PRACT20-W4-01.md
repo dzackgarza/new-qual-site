@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-PRACT20-W4-01
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 1"
+title: Graph of the solution of $y'=1+y^4$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-Which of the following most closely represents the graph of the solution to $y ^ { \prime } = 1 + y ^ { 4 } \overset { \cdot } { : }$
+Which of the following most closely represents the graph of the solution to $y ^ { \prime } = 1 + y ^ { 4 }$?
 
 ![Source page preserving the figure/choices for this problem.](../../../assets/attachments/prelim-practice-week4-2020/page-1.png)
 :::

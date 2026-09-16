@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-PRACT20-W4-09
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 9"
+title: The Bernoulli equation $y'+\frac4xy=x^3y^2$ and the substitution for $y^\alpha$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---
 
 ::: {.problem}
-(Bernoulli Equations) Find the general solution of the differential equation $\begin{array} { r } { y ^ { \prime } + \frac { 4 } { x } y = x ^ { 3 } y ^ { 2 } } \end{array}$ by making the substitution $u = 1 / y$ . Can you generalize this substitution so that it would work if $y ^ { 2 }$ on the right hand side was replaced by $y ^ { \alpha }$ for any $\alpha \neq 0 , 1 2$
+(Bernoulli Equations) Find the general solution of the differential equation $\begin{array} { r } { y ^ { \prime } + \frac { 4 } { x } y = x ^ { 3 } y ^ { 2 } } \end{array}$ by making the substitution $u = 1 / y$ . Can you generalize this substitution so that it would work if $y ^ { 2 }$ on the right hand side was replaced by $y ^ { \alpha }$ for any $\alpha \neq 0 , 1$?
 :::
 
 ::: {.solution}

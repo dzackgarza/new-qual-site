@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-23
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 23"
+title: Real $2\times2$ solutions of $A^{100}=\operatorname{diag}(-1,-\alpha)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 ---
@@ -18,8 +21,6 @@ A^{100}=\begin{pmatrix}-1&0\\0&-\alpha\end{pmatrix}
 \]
 when $\alpha>1$.
 If $\alpha=1$, find $A\in\mathbb R^{2\times2}$ satisfying the equation.
-
-![Source page preserving the displayed matrix.](../../../assets/attachments/prelim-practice-week4-2020/page-7.png)
 :::
 
 ::: {.solution}
