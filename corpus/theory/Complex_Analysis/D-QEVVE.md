@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-QEVVE
 kind: definition
-title: Winding Number
+title: Winding number
 classification:
   areas:
   - complex-analysis
@@ -15,10 +15,10 @@ relations:
 review: draft
 ---
 
-:::{.definition}
-For $\gamma \subseteq \Omega$ a closed curve not passing through a point $z_0$, the **winding number of $\gamma$ about $z_0$** (or the **index**) is defined as
-\[
-\Ind_{z=z_0}(\gamma) \da {1\over 2\pi i} \int_\gamma {1\over \xi -z_0}\dxi
-.\]
-
+::: {.definition}
+Let $\gamma$ be a closed piecewise $C^1$ curve in $\CC$ and let $z_0\in\CC$ be a point not on $\gamma$.
+The \dfn{winding number}, or \dfn{index}, of $\gamma$ about $z_0$ is
+$$
+\Ind_{z=z_0}(\gamma)\coloneqq\frac{1}{2\pi i}\int_\gamma\frac{1}{\xi-z_0}\dxi.
+$$
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-TM4TE
 kind: definition
-title: Conformal Map / Biholomorphism
+title: Conformal maps and biholomorphisms
 classification:
   areas:
   - complex-analysis
@@ -14,7 +14,13 @@ review: draft
 ---
 
 ::: {.definition}
-A map $f$ is **conformal** on $\Omega$ iff $f$ is complex-differentiable, $f'(z)\neq 0$ for $z\in \Omega$, and $f$ preserves signed angles (so $f$ is orientation-preserving).
+Let $\Omega\subseteq\CC$ be open.
+A map $f\colon\Omega\to\CC$ is \dfn{conformal} on $\Omega$ if $f$ is [[D-E7A5W|holomorphic]] on $\Omega$ and $f'(z)\neq0$ for every $z\in\Omega$.
 
-A bijective conformal map $f:U\to V$ **biholomorphism**, and we say $U$ and $V$ are **biholomorphic**.
+Let $U,V\subseteq\CC$ be open.
+A bijective conformal map $f\colon U\to V$ is a \dfn{biholomorphism}, and $U$ and $V$ are \dfn{biholomorphic}, or \dfn{conformally equivalent}, if a biholomorphism $U\to V$ exists.
+:::
+
+::: {.remark}
+A conformal map preserves signed angles between $C^1$ curves with nonzero tangent vectors, because its derivative at each point is multiplication by a nonzero complex number; see the proposition on [[D-PCDNH]].
 :::
