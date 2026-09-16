@@ -5,8 +5,8 @@ order: 7
 
 # Review sheet
 
-Every statement the exam assumes you know, on one page, in the order the chapters develop them.
-Nothing is proved here; each result links to the chapter that proves it and to the problems that use it.
+The theorem statements of the complex analysis chapters, grouped by chapter.
+Each section links to the chapter containing the proofs.
 
 ## Holomorphic functions
 
@@ -120,7 +120,7 @@ Proved in [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 Proved in [[complex-analysis/conformal-maps/index|Conformal maps]].
 
-## What to check before using each one
+## Hypotheses and counterexamples
 
-The statements above are the easy half.
-The hypotheses that actually decide exam problems are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the examples showing each hypothesis is necessary are on [[complex-analysis/counterexamples|Counterexamples]].
+[[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]] compares the hypotheses of Liouville's theorem, the maximum modulus principle, the open mapping theorem, and the identity principle.
+[[complex-analysis/counterexamples|Counterexamples]] gives, for each hypothesis, a function showing that the theorem fails without it.
