@@ -68,6 +68,6 @@ source:
     - P-GRECH2-48
 ---
 
-::: remark
-The 48 Calculus I review questions of Chapter 2 of *Cracking the GRE Mathematics Subject Test*, in source order.
+::: {.remark}
+The 48 Calculus I review questions of Chapter 2 of *Cracking the GRE Mathematics Subject Test*.
 :::
