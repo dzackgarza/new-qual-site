@@ -8,27 +8,25 @@ topics:
 
 # Smith normal form
 
-The form for a matrix over a PID rather than a field, and therefore the form that classifies finitely generated modules rather than linear maps.
-
 ::: {.fact}
-For $A\in \Mat(m\times n; R)$ with $R$ a PID, $\SNF(A)$ is diagonal and its entries are the invariant factors.
+Let $R$ be a PID and $A\in \Mat(m\times n; R)$.
+There are invertible matrices $P$ and $Q$ over $R$ such that $\SNF(A) = PAQ$ is diagonal with diagonal entries $a_1\divides a_2\divides\cdots\divides a_r$ followed by zeros, and the $a_i$ are unique up to units.
 
-To compute it: $\SNF(A) = \diag(a_i)$ where $a_i = d_i/d_{i-1}$ and $d_i$ is the $\gcd$ of the determinants of all $i\times i$ minors of $A$.
+The diagonal entries are $a_i = d_i/d_{i-1}$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors of $A$.
 
-Two matrices are equivalent exactly when they have the same Smith normal form.
+Two $m\times n$ matrices over $R$ are equivalent if and only if they have the same Smith normal form.
 :::
 
 ::: {.remark}
-The algorithm by row and column operations is in Dummit and Foote, page 479. The minors formula above is usually faster on an exam, since it needs no bookkeeping: each $d_i$ is one gcd computation.
+The computation of $\SNF(A)$ by row and column operations is in [@DF04, p. 479].
 :::
 
-::: {.remark title="What it is for"}
-Two questions, and they are the same question:
-
-- **Classify a finitely generated module over a PID.** Present it as the cokernel of a matrix, take the Smith form, and read the invariant factors off the diagonal.
-  This is how [[algebra/modules/classify-this-module|Classify this module]] is carried out in practice.
-
-- **Classify a finitely generated abelian group.** The same computation over $\ZZ$, where the invariant factors are the orders of the cyclic summands.
-
-The reason both work is that the structure theorem is a statement about matrices over a PID, and Smith form is its normal form -- the same theorem that gives the [[algebra/linear-algebra/rational-canonical-form|rational canonical form]] over $k[x]$.
+::: {.remark title="Classification of finitely generated modules"}
+If $M\cong R^n/\im(A)$ for a matrix $A\in\Mat(n\times m;R)$, then
+$$
+M\cong R^{n-r}\oplus\bigoplus_{i=1}^r R/\gens{a_i},
+$$
+where $a_1,\ldots,a_r$ are the nonzero diagonal entries of $\SNF(A)$; the nonunit $a_i$ are the invariant factors of the torsion submodule of $M$.
+This is the computation on [[algebra/modules/classify-this-module|Classify this module]].
+For $R = \ZZ$ it classifies finitely generated abelian groups, and for $R=k[x]$ applied to $xI-A$ it gives the invariant factors of the [[algebra/linear-algebra/rational-canonical-form|rational canonical form]] of a square matrix $A$ over a field $k$.
 :::

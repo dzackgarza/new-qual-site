@@ -7,17 +7,16 @@ topics:
 
 # Minimal and characteristic polynomials
 
-The two invariants every canonical-form question is asked in terms of.
-Viewing $V$ as an $F[t]\dash$module through $p(t)\actson v \da p(A)v$ is what makes them the same object seen twice, and it is the reason the structure theorem for modules over a PID answers questions about matrices.
+Let $A$ be an $n\times n$ matrix over a field $F$, and make $V=F^n$ an $F[t]$-module by $p(t)\actson v \da p(A)v$.
+The [[D-GK5SF|minimal polynomial]] $\min_A$ is the monic generator of the annihilator of this module, and the [[D-QFYAC|characteristic polynomial]] $\chi_A(t)=\det(tI-A)$ is the product of its invariant factors, the largest of which is $\min_A$.
 
 [[PR-EDD7U]]
 
-:::{.remark title="Notation"}
-\[
-\min_A(x): \quad & \text{the minimal polynomial of } A \\
-\chi_A(x): \quad & \text{the characteristic polynomial of } A
-.\]
-
+::: {.remark title="Notation"}
+| Symbol | Meaning |
+| --- | --- |
+| $\min_A(x)$ | the minimal polynomial of $A$ |
+| $\chi_A(x)$ | the characteristic polynomial of $A$ |
 :::
 
 [[D-GK5SF]]
@@ -26,47 +25,48 @@ Viewing $V$ as an $F[t]\dash$module through $p(t)\actson v \da p(A)v$ is what ma
 
 [[FD-GOB47]]
 
-## How they constrain each other
+## The relation between the two polynomials
 
 [[T-SJCF7]]
 
-:::{.proof}
-By minimality $\min_A$ divides $\chi_A$.
-Every eigenvalue is a root of $\min_A$: for a nontrivial eigenpair $(\vector v_i, \lambda_i)$, linearity gives
+::: {.proposition}
+$\min_A$ divides $\chi_A$, and $\min_A$ and $\chi_A$ have the same irreducible factors; in particular they have the same roots.
+:::
+
+::: {.proof}
+By Cayley--Hamilton, $\chi_A(A) = 0$, so $\min_A$ divides $\chi_A$.
+Let $p_1\divides p_2\divides\cdots\divides p_m$ be the invariant factors of $V$, so that $\chi_A = p_1\cdots p_m$ and $\min_A = p_m$.
+Every irreducible factor of $\chi_A$ divides some $p_i$, hence divides $p_m = \min_A$.
+For the roots directly: if $A\vector v_i = \lambda_i\vector v_i$ with $\vector v_i\neq\vector 0$, then
 $$
-\min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
-,$$
-forcing $\min_A(\lambda_i) = 0$.
-
+\min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0,
+$$
+so $\min_A(\lambda_i) = 0$.
 :::
 
-:::{.remark title="What this leaves free"}
-$\min_A$ and $\chi_A$ have the same irreducible factors and $\min_A \divides \chi_A$, so all that is undetermined is the exponents.
-That is exactly the data the Jordan blocks encode, and it is why a problem can hand you both polynomials and still not determine the matrix.
-
+::: {.remark title="The exponents"}
+Since $\min_A$ divides $\chi_A$ and has the same irreducible factors, $\min_A$ is determined by the exponents of the irreducible factors of $\chi_A$ in it.
+When $\chi_A$ splits, the exponent of $(t-\lambda)$ in $\min_A$ is the size of the largest Jordan block for $\lambda$, and in $\chi_A$ it is the sum of the sizes of those blocks; these do not determine the Jordan form in general, as for $J_2(0)\oplus J_2(0)$ and $J_2(0)\oplus J_1(0)\oplus J_1(0)$.
 :::
 
-## Finding the minimal polynomial
+## Computing the minimal polynomial
 
 [[PR-UFVPY]]
 
-:::{.remark title="In practice"}
-Factor $\chi_A$, then test the divisors in increasing degree: the first monic $p$ with $p(A) = 0$ is $\min_A$.
-The search is short because the only candidates are products of the known irreducible factors with exponents between one and their multiplicity in $\chi_A$.
-
+::: {.remark title="Computation"}
+If $\chi_A = \prod_i q_i^{e_i}$ with the $q_i$ distinct monic irreducibles, then $\min_A = \prod_i q_i^{f_i}$ with $1\leq f_i\leq e_i$, and $\min_A$ is the polynomial of this form of least degree with $\min_A(A)=0$.
 :::
 
-:::{.example title="Polynomial long division"}
-For $f(x) \da x^3-6x^2+12x-8$, the rational root theorem leaves $\ts{\pm 8, \pm 4, \pm 2, \pm 1}$.
+::: {.example title="Polynomial long division"}
+For $f(x) \da x^3-6x^2+12x-8$, the rational root theorem restricts the rational roots to $\ts{\pm 8, \pm 4, \pm 2, \pm 1}$.
 Since $f(2) = 0$, divide by $x-2$:
 
-![](../../../../assets/assets/figures/2021-07-24_18-32-38.png)
+![](../../../assets/figures/2021-07-24_18-32-38.png)
 
-and the remaining quadratic factor is $x^2-4x+4 = (x-2)^2$ (a perfect square), so $f(x) = (x-2)(x^2-4x+4) = (x-2)^3$.
-
+The quotient is $x^2-4x+4 = (x-2)^2$, so $f(x) = (x-2)^3$.
 :::
 
-## Using the forms
+## Invariant factors and cyclic operators
 
 [[L-VDLNM]]
 

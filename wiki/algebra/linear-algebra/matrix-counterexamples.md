@@ -2,111 +2,87 @@
 order: 520
 ---
 
-# Matrix Counterexamples
+# Matrix counterexamples
 
 ![attachments/Pasted image 20211129205548.png](../../../assets/attachments/Pasted%20image%2020211129205548.png)
 
-:::{.example}
-A matrix that:
-
-- Is not diagonalizable over $\RR$ but diagonalizable over $\CC$
-
-- Has *no* eigenvalues over $\RR$ but has *distinct* eigenvalues over $\CC$
-
-- $\min_M(x) = \chi_M(x) = x^2 + 1$
-
-\[
+::: {.example title="Diagonalizable over $\CC$ and not over $\RR$"}
+The matrix
+$$
 M = \left(\begin{array}{rr}
 0  & 1 \\
 -1 & 0
-\end{array}\right) \sim
-\left(\begin{array}{r|r}
--1 \sqrt{-1} & 0 \\
-\hline
-0 & 1 \sqrt{-1}
-\end{array}
-\right)
-.\]
-
+\end{array}\right)
+$$
+has $\min_M(x) = \chi_M(x) = x^2 + 1$, which has no roots in $\RR$ and the distinct roots $\pm i$ in $\CC$.
+So $M$ has no real eigenvalues and is not diagonalizable over $\RR$, and over $\CC$
+$$
+M \sim
+\left(\begin{array}{rr}
+-i & 0 \\
+0 & i
+\end{array}\right).
+$$
 :::
 
-:::{.example}
-A matrix that:
-
-- Is not diagonalizable over $\CC$,
-
-- Has eigenvalues $[1, 1]$ (repeated, multiplicity 2)
-
-- $\min_M(x) = \chi_M(x) = x^2-2x+1$
-
-\[
+::: {.example title="Not diagonalizable over $\CC$"}
+The matrix
+$$
 M = \left(\begin{array}{rr}
 1 & 1 \\
 0 & 1
-\end{array}\right) 
-\sim
-\left(
-\begin{array}{rr}
-1 & 1 \\
-0 & 1
-\end{array}
-\right)
-.\]
-
+\end{array}\right)
+$$
+has the repeated eigenvalue $1$ and $\min_M(x) = \chi_M(x) = (x-1)^2$, which does not have distinct roots, so $M$ is not diagonalizable over any field.
+It is a Jordan block $J_2(1)$.
 :::
 
-:::{.example}
-Non-similar matrices with the same characteristic polynomial
-\[
-\left(\begin{array}{ll}
-{0}  & {0} \\
-{0} & {0}
+::: {.example title="Equal characteristic polynomials, not similar"}
+The matrices
+$$
+A = \left(\begin{array}{ll}
+0 & 0 \\
+0 & 0
 \end{array}\right)
-\text { and }
-\left(\begin{array}{ll}
-{0} & {0} \\
-{0} & {0}
+\quad\text{and}\quad
+B = \left(\begin{array}{ll}
+0 & 1 \\
+0 & 0
 \end{array}\right)
-\]
-Here $\chi_A(x) = \chi_B(x) = x^2$, but they are not conjugate since their JCFs differ (note that they're already in JCF!)
-
+$$
+satisfy $\chi_A(x) = \chi_B(x) = x^2$, and they are not similar: both are in Jordan form, with different Jordan blocks, and $\min_A(x)=x$ while $\min_B(x)=x^2$.
 :::
 
-:::{.example}
-A full-rank matrix that is not diagonalizable:
-\[
+::: {.example title="Invertible and not diagonalizable"}
+The matrix
+$$
 \left(
 \begin{array}{ccc}
 1 & 1 & 0 \\
 0 & 1 & 1 \\
-0 & 0 & 1 \\
+0 & 0 & 1
 \end{array}
 \right)
-.\]
-
+$$
+has determinant $1$, so it is invertible, and it is the Jordan block $J_3(1)$, so it is not diagonalizable.
 :::
 
-:::{.example}
-Matrix roots of unity, i.e. representations of $i$:
-\[
-M_1 
+## Roots of matrices
+
+::: {.example title="Distinct square roots of $-I$"}
+The matrices
+$$
+M_1
 \da
-\matt 0 {-1} 1 0 \quad
+\matt 0 {-1} 1 0, \qquad
 M_2
-\da 
+\da
 \matt 0 1 {-1} 0
-.\]
-
-:::
-
-## Roots of Matrices
-
-:::{.remark}
-The matrix roots of unity above are already counterexamples to a cancellation law that holds for positive reals: equal powers do not force equal matrices.
-
+$$
+are distinct and satisfy $M_1^2 = M_2^2 = -I$.
+Hence $A^n = B^n$ does not imply $A=B$ for real $2\times 2$ matrices, and $M_1$ and $M_2$ are real matrices representing $i$ and $-i$.
 :::
 
 [[FF-VKYM3]]
 
 [[FE-W56LS]] [[FE-ISVDM]]
-
