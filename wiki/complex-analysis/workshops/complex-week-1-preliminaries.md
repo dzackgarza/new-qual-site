@@ -1,21 +1,21 @@
 ---
 order: 20
-title: "Complex Analysis Qual Prep Week 1: Preliminaries"
+title: "Complex analysis workshop week 1: preliminaries"
 ---
 
-# Complex Analysis Qual Prep Week 1: Preliminaries
+# Complex analysis workshop week 1: preliminaries
 
 ## Topics
 
-- Complex arithmetic and geometry, conic section equations
+- [[complex-analysis/basics/complex-arithmetic|Complex arithmetic]], geometry of the complex plane, and [[complex-analysis/basics/precalculus|equations of conic sections]]
 
-- Uniform (continuity, differentiability, convergence)
+- Uniform continuity, uniform differentiability, and uniform convergence
 
-- Inverse and implicit function theorems
+- [[complex-analysis/basics/calculus-preliminaries#The implicit and inverse function theorems|The inverse and implicit function theorems]]
 
-- Green's theorem, Stokes theorem
+- [[complex-analysis/basics/calculus-preliminaries#Green's theorem|Green's theorem]] and [[complex-analysis/basics/calculus-preliminaries#Stokes' theorem|Stokes' theorem]]
 
-- Complex plane, Riemann sphere
+- The complex plane and the Riemann sphere
 
 ## Warmup
 
@@ -25,6 +25,6 @@ title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 
 [[E-USHMH]]
 
-## Qual Problems
+## Qualifying exam problems
 
 [[P-642LC]]
