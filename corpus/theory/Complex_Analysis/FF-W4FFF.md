@@ -16,13 +16,10 @@ review: draft
 ---
 
 ::: {.fact}
+Let $z_2,z_3,z_4\in\CC$ be distinct.
+The cross-ratio map is the [[D-FRVBV|Möbius transformation]]
 $$
-R(z) \da (z, z_2, z_3, z_4) \da {z - z_3\over z-z_4}{z_2 - z_4 \over z_2 - z_3} \\
-.$$
-
-Sends 
-
-- $z_2 \to 1$
-- $z_3\to 0$
-- $z_4\to \infty$
+R(z) \coloneqq (z, z_2, z_3, z_4) \coloneqq {z - z_3\over z-z_4}\cdot{z_2 - z_4 \over z_2 - z_3}.
+$$
+It satisfies $R(z_2)=1$, $R(z_3)=0$, and $R(z_4)=\infty$.
 :::

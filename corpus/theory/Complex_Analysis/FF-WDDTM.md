@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-WDDTM
 kind: fact
-title: $\arctan(1) = \cdots$
+title: Value of $\arctan(1)$
 prompts:
 - What is $\arctan(1)$?
 classification:

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-UQZNR
 kind: fact
-title: 'Inverting series: ${1\over \sin(z) } = \cdots$'
+title: Laurent series of $1/\sin z$ at $0$
 prompts:
 - What is the Laurent expansion of $1/\sin(z)$ at the origin?
 classification:
@@ -17,7 +17,8 @@ review: draft
 ---
 
 ::: {.fact}
+For $0<\abs{z}<\pi$,
 $$
-{1\over \sin(z)} = \frac{1}{z}+\frac{1}{3 !} z+\frac{7}{360} z^{3}+\mathrm{O}\left(z^{5}\right)
-.$$
+{1\over \sin(z)} = \frac{1}{z}+\frac{1}{3 !} z+\frac{7}{360} z^{3}+O\qty{z^{5}}.
+$$
 :::
