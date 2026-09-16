@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-4VGLT
 kind: definition
-title: Tor Group
+title: Tor functors
 classification:
   areas:
   - topology
@@ -13,10 +13,15 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-For an $R\dash$module
-\[
-\tor_{R}^n(\wait, B) = L_{n}(\wait \tensor_{R} B)
-,\]
-where $L_{n}$ denotes the $n$th left derived functor.
+::: {.definition}
+Let $R$ be a commutative ring, let $B$ be an $R$-module, and let $n\geq 0$.
+The functor $\Tor_n^R(\wait, B)$ is the $n$th [[D-6B77N|left derived functor]] of $\wait\tensor_R B$:
+$$
+\Tor_n^R(A, B) \coloneqq L_n(\wait\tensor_R B)(A) = H_n(P_\bullet\tensor_R B)
+,$$
+where $P_\bullet \to A$ is a [[D-PKIY7|projective resolution]] of the $R$-module $A$.
+:::
+
+::: {.concept}
+[@DF04, §17.1].
 :::
