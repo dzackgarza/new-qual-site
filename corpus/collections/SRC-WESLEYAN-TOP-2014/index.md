@@ -28,7 +28,3 @@ source:
   - P-WESTOP14-5
   - P-WESTOP14-6
 ---
-
-::: remark
-The compiled Wesleyan source contains six June 11, 2014 problems. Problem 6 depends on three disk-identification diagrams that are represented only by an image placeholder in the retained extraction; the missing quotient data are recorded on the card rather than guessed.
-:::
