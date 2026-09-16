@@ -55,6 +55,7 @@ These rows concern the mathematics read in the images, not the presence of an im
 ## Syllabi and reference attachments
 
 The syllabus crops were read as topic lists, not as unwritten theorem proofs.
+Every syllabus crop below is transcribed on `wiki/algebraic-geometry/syllabus.md`.
 A named topic does not create an obligation to invent a chapter during migration.
 Preserve their reading-list role separately from the private study plans that embed them.
 
