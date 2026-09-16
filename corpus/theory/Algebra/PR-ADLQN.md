@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-ADLQN
 kind: proposition
-title: Prime Subfields of Finite Fields
+title: Prime subfield and isomorphism type of a finite field
 classification:
   areas:
   - algebra
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Every finite field $F$ is isomorphic to a unique field of the form $\GF(p^n)$ and if $\ch F = p$, it has prime subfield $\FF_p$.
+Let $F$ be a finite field.
+Then $\ch F = p$ for a prime $p$, the [[D-EOCCU|prime subfield]] of $F$ is isomorphic to $\FF_p$, and $F \cong \FF_{p^n}$ for the unique integer $n = [F:\FF_p] \geq 1$, so that $\abs{F} = p^n$.
 :::
