@@ -15,5 +15,5 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a [[D-GURUB|ring]].
-An element $r\in R$ is \dfn{nilpotent} if $r^n = 0$ for some $n \in \ZZ^{\geq 0}$.
+An element $r\in R$ is \dfn{nilpotent} if $r^n = 0$ for some integer $n \geq 1$.
 :::
