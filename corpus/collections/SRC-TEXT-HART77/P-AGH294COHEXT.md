@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: problem
-Use the preceding exercise to prove that if
+Use (Ex. 9.3) to prove that if
 \[
 0 \to \mcf' \to \mcf \to \mcf'' \to 0
 \]

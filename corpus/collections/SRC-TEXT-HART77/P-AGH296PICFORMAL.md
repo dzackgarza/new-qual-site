@@ -33,4 +33,5 @@ Then show that $\mcl$ is locally free of rank $1$, and thus conclude that the ma
 Be careful here, because even though each $\mcl_n$ is locally free of rank $1$, the open sets needed to make them free might get smaller and smaller with $n$.
 
 d. Show that the hypothesis that $(\Gamma(Y_n, \OO_{Y_n}))$ satisfies (ML) holds if either $\mathfrak{X}$ is affine, or each $Y_n$ is projective over a field $k$.
+See (III, Ex. 11.5--11.7) for further examples and applications.
 :::
