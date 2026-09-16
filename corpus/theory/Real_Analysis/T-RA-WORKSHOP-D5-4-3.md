@@ -28,4 +28,5 @@ In particular, if $M\geq0$ and $\abs{f^{(n+1)}(t)}\leq M$ for all $t\in(a,b)$, t
 $$
 \abs{f(x)-P_n(x)}\leq\frac{M\abs{x-c}^{n+1}}{(n+1)!}\quad\text{for all } x\in[a,b].
 $$
+[@Rud76].
 :::

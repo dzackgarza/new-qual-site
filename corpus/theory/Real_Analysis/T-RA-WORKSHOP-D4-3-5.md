@@ -21,4 +21,5 @@ $$
 f(x-)\coloneqq\lim_{t\to x^-}f(t)\qquad\text{and}\qquad f(x+)\coloneqq\lim_{t\to x^+}f(t)
 $$
 both exist.
+[@Rud76].
 :::

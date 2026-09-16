@@ -24,4 +24,5 @@ Then $f\in\mathcal R(\alpha)$, that is, $f$ is Riemann--Stieltjes integrable wit
 $$
 U(P,f,\alpha)-L(P,f,\alpha)<\varepsilon.
 $$
+[@Rud76].
 :::

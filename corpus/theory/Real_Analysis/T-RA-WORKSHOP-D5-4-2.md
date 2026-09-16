@@ -19,4 +19,5 @@ Then there exists $\xi\in(a,b)$ such that
 $$
 \frac{f(b)-f(a)}{b-a}=f'(\xi).
 $$
+[@Rud76].
 :::

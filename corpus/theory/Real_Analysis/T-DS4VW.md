@@ -22,7 +22,6 @@ Assume that
 
 - there exists $x_0\in[a,b]$ such that $\sum_n f_n(x_0)$ converges.
 
-Then there exists a differentiable function $F\colon[a,b]\to\RR$ such that $\sum_n f_n$ converges uniformly to $F$ on $[a,b]$ and $F'=g$ on $[a,b]$.[^theorem_referfence_6.4.3_Abbott]
+Then there exists a differentiable function $F\colon[a,b]\to\RR$ such that $\sum_n f_n$ converges uniformly to $F$ on $[a,b]$ and $F'=g$ on $[a,b]$.
+[@Abb16].
 :::
-
-[^theorem_referfence_6.4.3_Abbott]: See Abbott theorem 6.4.3, pp 168.

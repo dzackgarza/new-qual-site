@@ -20,4 +20,5 @@ In particular, if $a<b$ and $f\colon[a,b]\to\RR$ is continuous, then there exist
 $$
 f(p)=\sup_{x\in[a,b]}f(x)\qquad\text{and}\qquad f(q)=\inf_{x\in[a,b]}f(x).
 $$
+[@Rud76].
 :::

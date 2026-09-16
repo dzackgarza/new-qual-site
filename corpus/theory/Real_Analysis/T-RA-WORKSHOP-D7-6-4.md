@@ -21,4 +21,5 @@ Then $\{f_n\}$ converges uniformly on $[a,b]$ to a function $f\colon[a,b]\to\RR$
 $$
 f'(x)=\lim_{n\to\infty}f_n'(x)\qquad\text{for all }x\in[a,b].
 $$
+[@Rud76].
 :::

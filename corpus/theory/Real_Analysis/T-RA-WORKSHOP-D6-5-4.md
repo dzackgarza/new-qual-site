@@ -21,4 +21,5 @@ F(x)\coloneqq\int_a^x f(t)\,dt.
 $$
 Then $F$ is continuous on $[a,b]$.
 If $f$ is continuous at $x_0\in[a,b]$, then $F$ is differentiable at $x_0$, one-sidedly if $x_0\in\theset{a,b}$, and $F'(x_0)=f(x_0)$.
+[@Rud76].
 :::

@@ -25,6 +25,7 @@ $$
 $$
 \qty{ f(b) - f(a) } g'(\xi) = \qty{g(b) - g(a)} f'(\xi).
 $$
+[@Rud76].
 :::
 
 ::: {.remark}

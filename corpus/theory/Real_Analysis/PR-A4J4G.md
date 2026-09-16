@@ -18,7 +18,7 @@ Then
 $$
 m(A\setminus C) = m(A) - m(C)
 $$
-[@Fol13, Theorem 1.8].
+[@Fol13].
 :::
 
 ::: {.remark}

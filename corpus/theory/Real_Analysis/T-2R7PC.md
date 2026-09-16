@@ -35,4 +35,6 @@ $$
 $$
 R_n(x)=\int_p^x \frac{f^{(n)}(t)}{(n-1)!}(x-t)^{n-1}\,dt .
 $$
+
+Part 1 is in [@Rud76].
 :::

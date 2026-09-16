@@ -21,4 +21,5 @@ If $f_n\to f$ [[D-RA-WORKSHOP-D7-CONVERGENCE|uniformly]] on $[a,b]$, then $f\in\
 $$
 \lim_{n\to\infty}\int_a^b f_n\,d\alpha=\int_a^b f\,d\alpha.
 $$
+[@Rud76].
 :::

@@ -30,4 +30,5 @@ Suppose that
 - $\mathcal A$ vanishes at no point of $K$: for every $x\in K$ there exists $g\in\mathcal A$ with $g(x)\neq0$.
 
 Then for every $f\in C(K)$ there exist $f_n\in\mathcal A$ such that $f_n\to f$ uniformly on $K$.
+[@Rud76].
 :::

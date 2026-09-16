@@ -17,4 +17,5 @@ review: draft
 ::: {.theorem}
 Let $K\subseteq\RR^n$ be [[D-EILKJ|compact]] and let $f\colon K\to\RR^m$ be continuous.
 Then $f$ is [[D-WGYSB|uniformly continuous]] on $K$.
+[@Rud76].
 :::

@@ -26,7 +26,7 @@ If $f\in L^p(\RR^n)$ and $g\in L^q(\RR^n)$, then the [[D-TS42Y|convolution]] $f\
 $$
 \norm{f \ast g}_{r} \leq \norm{f}_{p} \norm{g}_{q}
 $$
-[@Fol13, §8.2].
+[@Fol13].
 :::
 
 ::: {.example}

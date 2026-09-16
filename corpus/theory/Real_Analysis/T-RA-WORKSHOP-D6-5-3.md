@@ -19,4 +19,5 @@ Then $f\in\mathcal R(\alpha)$ on $[a,b]$ if and only if $f\alpha'$ is Riemann in
 $$
 \int_a^b f\,d\alpha=\int_a^b f(x)\alpha'(x)\,dx.
 $$
+[@Rud76].
 :::

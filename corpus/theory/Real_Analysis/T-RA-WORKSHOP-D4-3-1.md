@@ -24,4 +24,5 @@ The following are equivalent:
 3. For every sequence $(x_n)_{n\geq1}$ in $E$ converging to a point $x\in E$, $\lim_{n\to\infty}f(x_n)=f(x)$.
 
 4. For every open set $G\subseteq\RR^m$, the set $f\inv(G)$ is open in $E$ with the subspace topology.
+[@Rud76].
 :::

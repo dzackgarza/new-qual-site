@@ -15,4 +15,5 @@ review: draft
 ::: {.theorem}
 Let $a<b$ and let $f\colon[a,b]\to\RR$ be continuous with $f(a)<f(b)$.
 For every $y\in\RR$ with $f(a)<y<f(b)$ there exists $c\in(a,b)$ such that $f(c)=y$.
+[@Rud76].
 :::

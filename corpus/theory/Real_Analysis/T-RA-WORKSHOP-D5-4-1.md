@@ -15,4 +15,5 @@ review: draft
 ::: {.theorem}
 Let $a<b$, let $f\colon[a,b]\to\RR$, and let $c\in(a,b)$.
 If $f$ has a local maximum or a local minimum at $c$ and $f$ is differentiable at $c$, then $f'(c)=0$.
+[@Rud76].
 :::
