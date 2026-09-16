@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.proposition}
-Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
+A metric space $(X,d)$ is [[D-EILKJ|compact]] if and only if it is [[FD-DXTBN|sequentially compact]]: every sequence in $X$ has a subsequence that converges in $X$.
 :::

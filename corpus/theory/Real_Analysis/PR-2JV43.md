@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-2JV43
 kind: proposition
-title: a.e. convergence never implies $L^p$ convergence
+title: Almost everywhere convergence does not imply $L^p$ convergence
 classification:
   areas:
   - real-analysis
@@ -15,17 +15,16 @@ review: draft
 ---
 
 ::: {.proposition}
-Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
+For every $1\le p\le\infty$ there is a sequence $(f_k)_{k\geq1}$ in $L^p(\RR)$ with $f_k\to0$ almost everywhere but $\norm{f_k}_p\not\to0$.
+:::
 
-- For $1\leq p < \infty$: The skateboard to infinity, $f_k = \chi_{[k, k+1]}$.
+::: {.proof}
+**Escape to infinity.** Let $f_k\coloneqq\chi_{[k, k+1]}$.
+For every $x\in\RR$, $f_k(x)=0$ once $k>x$, so $f_k\to0$ pointwise everywhere.
+But $\norm{f_k}_p = 1$ for all $k$ and all $1\le p\le\infty$.
+The convergence is not uniform, since $\sup_x\abs{f_k(x)}=1$.
 
-  Then $f_k \converges{a.e.}\to 0$ but $\norm{f_k}_p = 1$ for all $k$.
-
-  > Converges pointwise and a.e., but not uniformly and not in norm.
-
-- For $p = \infty$: The sliding boxes $f_k = k \cdot \chi_{[0, \frac 1 k]}$.
-
-  Then similarly $f_k \converges{a.e.}\to 0$, but $\norm{f_k}_p = 1$ and $\norm{f_k}_\infty = k \to \infty$
-
-  > Converges a.e., but not uniformly, not pointwise, and not in norm.
+**Concentration.** Let $f_k\coloneqq k \chi_{[0, 1/k]}$.
+For $x\neq0$, $f_k(x)=0$ whenever $k>1/\abs{x}$, so $f_k\to0$ almost everywhere; at $x=0$, $f_k(0)=k\to\infty$.
+Here $\norm{f_k}_p=k^{1-1/p}\geq1$ for $1\le p<\infty$ and $\norm{f_k}_\infty = k \to \infty$.
 :::
