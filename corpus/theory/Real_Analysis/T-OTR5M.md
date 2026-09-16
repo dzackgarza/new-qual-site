@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-OTR5M
 kind: theorem
-title: Borel-Cantelli
+title: Borel--Cantelli lemma
 classification:
   areas:
   - real-analysis
@@ -13,14 +13,15 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-Let $\{E_{k}\}$ be a countable collection of measurable sets.
-Then
-\[
-\sum_{k} m(E_{k}) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_{k}
-\iff
-m(\limsup_k E_k) = 0
-.\]
+::: {.theorem}
+Let $(E_k)_{k\geq1}$ be a sequence of [[D-MDJII|Lebesgue measurable]] subsets of $\RR^n$ with
+$$
+\sum_{k=1}^\infty m(E_k) < \infty .
+$$
+Then $m\qty{\limsup_{k\to\infty} E_k} = 0$, where $\limsup_k E_k$ is the [[D-PAEDW|limit superior]] of the sets $E_k$; equivalently, almost every $x\in\RR^n$ lies in only finitely many of the sets $E_k$.
+:::
 
-In words, interpreting $E_k$ as events and $m(E_k) = \PP(E_k)$ as a probability: if the sum of probabilities of events is finite, the probability of infinitely many events occurring is zero.
+::: {.remark}
+The same statement holds for a sequence of measurable sets in any [[D-QYLPH|measure]] space.
+For a probability measure $P$ and events $E_k$ with $\sum_k P(E_k)<\infty$, it says that with probability $0$ infinitely many of the events $E_k$ occur.
 :::
