@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-KTKT6
 kind: proposition
-title: Folland 2.10b
+title: Approximation of measurable functions by simple functions
 classification:
   areas:
   - real-analysis
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $f:X\to \CC$ is measurable, there is a sequence of simple functions $\phi_n\increasesto f$ which always converges pointwise, and converges uniformly on any bounded set.
+Let $(X,\mcm)$ be a measurable space and let $f\colon X\to\CC$ be [[D-DHFN4|measurable]].
+There is a sequence $(\phi_n)$ of simple functions such that $0\leq\abs{\phi_1}\leq\abs{\phi_2}\leq\cdots\leq\abs{f}$, $\phi_n\to f$ pointwise on $X$, and $\phi_n\to f$ uniformly on every set on which $f$ is bounded [@Fol13, Theorem 2.10].
 :::
