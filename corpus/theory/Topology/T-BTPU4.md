@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-BTPU4
 kind: theorem
-title: Seifert-van Kampen
+title: Seifert--van Kampen theorem
 classification:
   areas:
   - topology
@@ -13,88 +13,32 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-Suppose $X = U_{1} \union U_{2}$ where $U_1, U_2$, and $U \da U_{1} \intersect U_{2} \neq \emptyset$ are open and path-connected 
-
-
-, and let $x_0 \in U$. 
-
-Then the inclusion maps $i_{1}: U_{1} \injects X$ and $i_{2}: U_{2} \injects X$ induce the following group homomorphisms:
-\[
-i_{1}^*: \pi_{1}(U_{1}, x_0) \into \pi_{1}(X, x_0) \\
-i_{2}^*: \pi_{1}(U_{2}, x_0) \into \pi_{1}(X, x_0)
-\]
-
-There is a natural isomorphism
-\[
-\pi_{1}(X) \cong \pi_{1} U \ast_{\pi_{1}(U \intersect V)} \pi_{1} V
-,\]
-
-where the amalgamated product can be computed as follows:
-A **pushout** is the colimit of the following diagram
-
-\begin{tikzcd}
-A \Disjoint_{Z} B   & A\ar[l] \\
-B \ar[u]          & Z \ar[l, "\iota_{B}"] \ar[u, "\iota_{A}"]
-\end{tikzcd}
-
-![Example of a pushout of spaces](../../assets/Topology/figures/image_2020-06-01-00-07-39.png)
-
-For groups, the pushout is realized by the amalgamated free product: if 
-\[
-\begin{cases}
-\pi_1 U_1 = A = \generators{G_{A} \suchthat R_{A}} \\
-\pi_1 U_2 = B = \generators{G_{B} \suchthat R_{B}}
-\end{cases}
-\implies 
-A \ast_{Z} B \da \gens{ G_{A}, G_{B} \suchthat R_{A}, R_{B}, T}
-\]
-where $T$ is a set of relations given by 
-\[
-T = \theset{\iota_{1}^*(z) \iota_{2}^*  (z) ^{-1}   \suchthat z\in \pi_1 (U_1 \intersect U_2)}
-,\]
-where $\iota_2^*(z) ^{-1}$ denotes the inverse group element.
-If we have presentations
-
-\[ 
-\pi_{1}(U, x_0) &=
-\left\langle u_{1}, \cdots, u_{k} \suchthat \alpha_{1}, \cdots, \alpha_{l}\right\rangle \\ 
-\pi_{1}(V, w) &=\left\langle v_{1}, \cdots, v_{m} \suchthat \beta_{1}, \cdots, \beta_{n}\right\rangle \\ 
-\pi_{1}(U \cap V, x_0) 
-&=\left\langle w_{1}, \cdots, w_{p} \suchthat \gamma_{1}, \cdots, \gamma_{q}\right\rangle 
-\]
-
-then
-\[
-\pi_{1}(X, w) 
-&= \left\langle 
-u_{1}, \cdots, u_{k}, v_{1}, \cdots, v_{m} 
-\middle\vert
-\begin{cases}
-\alpha_{1}, 
-\cdots, 
-\alpha_{l}
-\\
-\beta_{1}, 
-\cdots, 
-\beta_{n}
-\\
-  I\left(w_{1}\right) J\left(w_{1}\right)^{-1}, 
-  \cdots, 
-  I\left(w_{p}\right) J\left(w_{p}\right)^{-1}
-\\ 
-\end{cases}
-\right\rangle \\ \\
-&= 
-\frac{
-  \pi_{1}(U_1) \ast \pi_{1}(U_2)
-} {
-  \generators{
-    \theset{\iota_1^*(w_{i}) \iota_2^*(w_{i})\inv \suchthat 1\leq i \leq p}
-  }
-}
-\]
-Note that the hypothesis that $U_1 \intersect U_2$ is path-connected is necessary: take $S^1$ with $U,V$ neighborhoods of the poles, whose intersection is two disjoint components.
-
+::: {.theorem}
+Let $X = U_{1} \union U_{2}$, where $U_1$, $U_2$ and $U_1\intersect U_2$ are open, path-connected and nonempty, and let $x_0 \in U_1\intersect U_2$.
+Let $\iota_k\colon \pi_1(U_1\intersect U_2, x_0)\to\pi_1(U_k, x_0)$, $k = 1, 2$, be induced by the inclusions.
+Then the inclusions $U_1, U_2\injects X$ induce an isomorphism
+$$
+\pi_{1}(U_1, x_0) \ast_{\pi_{1}(U_1 \intersect U_2, x_0)} \pi_{1}(U_2, x_0) \xrightarrow{\ \sim\ } \pi_{1}(X, x_0)
+$$
+onto $\pi_1(X, x_0)$ from the [[D-WSFYS|free product with amalgamation]], which is the [[D-5S7PK|pushout]] of $\pi_1(U_1, x_0)\xleftarrow{\iota_1}\pi_1(U_1\intersect U_2, x_0)\xrightarrow{\iota_2}\pi_1(U_2, x_0)$ in the category of groups [@Hat02, Theorem 1.20, p. 43].
 :::
 
+::: {.proposition}
+In the situation of the theorem, suppose
+$$
+\pi_{1}(U_1, x_0) = \left\langle u_{1}, \ldots, u_{k} \suchthat \alpha_{1}, \ldots, \alpha_{l}\right\rangle, \qquad
+\pi_{1}(U_2, x_0) = \left\langle v_{1}, \ldots, v_{m} \suchthat \beta_{1}, \ldots, \beta_{n}\right\rangle,
+$$
+and that $w_1, \ldots, w_p$ generate $\pi_1(U_1\intersect U_2, x_0)$.
+Then
+$$
+\pi_{1}(X, x_0) \cong \left\langle u_{1}, \ldots, u_{k}, v_{1}, \ldots, v_{m} \suchthat \alpha_{1}, \ldots, \alpha_{l},\ \beta_{1}, \ldots, \beta_{n},\ \iota_1(w_{1}) \iota_2(w_{1})^{-1}, \ldots, \iota_1(w_{p}) \iota_2(w_{p})^{-1} \right\rangle
+$$
+[@Hat02, Theorem 1.20, p. 43].
+:::
+
+::: {.remark}
+The hypothesis that $U_1 \intersect U_2$ is path-connected is necessary: for $S^1$ covered by two open arcs, the intersection has two components, both arcs are simply connected, and $\pi_1(S^1)\cong\ZZ$.
+:::
+
+![Example of a pushout of spaces](../../assets/Topology/figures/image_2020-06-01-00-07-39.png)
