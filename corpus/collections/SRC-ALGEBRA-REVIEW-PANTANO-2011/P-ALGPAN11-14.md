@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-14
 kind: problem
-title: Remainders in the Euclidean algorithm for 273 and 110
+title: Powers and multiples under an associative operation and a commutative associative operation
 classification:
   areas:
   - algebra
@@ -17,10 +17,32 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Transcribed test 1, problem 32 from ALGEBRA_REVIEW1.pdf page 4 in place of its scan and retitled the card, whose Euclidean-algorithm title belonged to P-ALGPAN11-19.
 ---
 
 ::: {.problem}
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-14.png)
+Suppose that two binary operations, denoted by $\oplus$ and $\odot$, are defined on a nonempty set $S$, and that the following conditions are satisfied for all $x$, $y$, and $z$ in $S$:
+
+(1) $x \oplus y$ and $x \odot y$ are in $S$.
+
+(2) $x \oplus (y \oplus z) = (x \oplus y) \oplus z$ and $x \odot (y \odot z) = (x \odot y) \odot z$.
+
+(3) $x \oplus y = y \oplus x$.
+
+Also, for each $x$ in $S$ and for each positive integer $n$, the elements $nx$ and $x^n$ are defined recursively as follows: $1x = x^1 = x$, and if $kx$ and $x^k$ have been defined, then $(k+1)x = kx \oplus x$ and $x^{k+1} = x^k \odot x$.
+
+Which of the following must be true?
+
+I. $(x \odot y)^n = x^n \odot y^n$ for all $x$ and $y$ in $S$ and for each positive integer $n$.
+
+II. $n(x \oplus y) = nx \oplus ny$ for all $x$ and $y$ in $S$ and for each positive integer $n$.
+
+III. $x^m \odot x^n = x^{m+n}$ for each $x$ in $S$ and for all positive integers $m$ and $n$.
+
+(A) I only (B) II only (C) III only (D) II and III only (E) I, II, and III
 :::
 
 ::: {.solution}

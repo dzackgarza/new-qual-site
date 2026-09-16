@@ -36,12 +36,12 @@ source:
     problems:
     - P-ALGPAN11-13
     - P-ALGPAN11-14
+    - id: P-ALGPAN11-19
+      comment: Test 1, problem 33
     - P-ALGPAN11-15
     - P-ALGPAN11-16
     - P-ALGPAN11-17
     - P-ALGPAN11-18
-    - id: P-ALGPAN11-19
-      comment: Test 1, problem 7
   date:
     kind: year
     year: 2011

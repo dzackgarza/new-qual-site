@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-19
 kind: problem
-title: Symmetry group of the regular pentagram
+title: Remainders in the Euclidean algorithm for 273 and 110
 classification:
   areas:
   - algebra
@@ -17,10 +17,39 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced the misattached pentagram scan (test 1, problem 60, owned by P-ALGPAN11-18) with a transcription of test 1, problem 33, the Euclidean-algorithm question its solution answers, from ALGEBRA_REVIEW1.pdf page 4.
 ---
 
 ::: {.problem}
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-19.png)
+The Euclidean algorithm is used to find the greatest common divisor (gcd) of two positive integers `a` and `b`.
+
+```text
+input(a)
+input(b)
+while b > 0
+begin
+  r := a mod b
+  a := b
+  b := r
+end
+gcd := a
+output(gcd)
+```
+
+When the algorithm is used to find the greatest common divisor of `a` $= 273$ and `b` $= 110$, which of the following is the sequence of computed values for `r`?
+
+(A) $2, 26, 1, 0$
+
+(B) $2, 53, 1, 0$
+
+(C) $53, 2, 1, 0$
+
+(D) $53, 4, 1, 0$
+
+(E) $53, 5, 1, 0$
 :::
 
 ::: {.solution}

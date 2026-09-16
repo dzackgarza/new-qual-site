@@ -17,12 +17,24 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced the misattached Euclidean-algorithm scan (test 1, problem 33) with a transcription of test 1, problem 40 from ALGEBRA_REVIEW1.pdf page 5.
 ---
 
 ::: {.problem}
-For which of the listed rings is it possible for the product of two nonzero elements to be zero?
+For which of the following rings is it possible for the product of two nonzero elements to be zero?
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-15.png)
+(A) The ring of complex numbers
+
+(B) The ring of integers modulo $11$
+
+(C) The ring of continuous real-valued functions on $[0,1]$
+
+(D) The ring $\{a + b\sqrt{2} : a \text{ and } b \text{ are rational numbers}\}$
+
+(E) The ring of polynomials in $x$ with real coefficients
 :::
 
 ::: {.solution}

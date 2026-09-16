@@ -17,12 +17,26 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the retained Pantano 2011 algebra-review source scan and verified from the stated algebraic criterion.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced the misattached scan of test 1, problem 49 with a transcription of test 1, problem 60 from ALGEBRA_REVIEW1.pdf page 5, describing its pentagram figure.
 ---
 
 ::: {.problem}
-Identify the isomorphism type of the symmetry group of the regular pentagram shown in the source.
+The source shows a regular pentagram: a five-pointed star drawn by joining each vertex of a regular pentagon to the two vertices not adjacent to it.
 
-![Source scan for this review problem.](../../../assets/attachments/algebra-review-pantano-2011/problem-18.png)
+The group of symmetries of the regular pentagram shown above is isomorphic to the
+
+(A) symmetric group $S_5$
+
+(B) alternating group $A_5$
+
+(C) cyclic group of order $5$
+
+(D) cyclic group of order $10$
+
+(E) dihedral group of order $10$
 :::
 
 ::: {.solution}
