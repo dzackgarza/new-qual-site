@@ -16,9 +16,23 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped against Exercise 5.4 of the Perutz 2008 notes and stated Lemma 5.7 with its proof outline, to which the exercise refers.
 ---
 
 ::: {.problem}
+Let $p\colon\widetilde X\to X$ be a covering map.
+Fix basepoints $x\in X$ and $\tilde x\in p^{-1}(x)$.
+
+1. If $\gamma\colon I\to X$ is a path with $\gamma(0)=x$, then there is a unique path $\tilde\gamma\colon I\to\widetilde X$ with $\tilde\gamma(0)=\tilde x$ which lifts $\gamma$ in the sense that $p\circ\tilde\gamma=\gamma$.
+2. A homotopy $\Gamma\colon I^2\to X$ lifts uniquely to a map $\widetilde\Gamma\colon I^2\to\widetilde X$ once we specify $\widetilde\Gamma(0,0)$.
+3. The map $p_*\colon\pi_1(\widetilde X,\tilde x)\to\pi_1(X,x)$ is injective.
+4. If $\tilde x'$ also lies in $p^{-1}(x)$, then $p_*(\pi_1(\widetilde X,\tilde x'))$ and $p_*(\pi_1(\widetilde X,\tilde x))$ are conjugate subgroups of $\pi_1(X,x)$.
+5. All conjugates of $p_*(\pi_1(\widetilde X,\tilde x))$ arise in this way.
+
+The notes prove this lemma in outline: (1) exactly as unique path lifting for $\mathbb{R}\to S^1$, and similarly (2); (3) by lifting a homotopy rel endpoints between $p_*\gamma_0$ and $p_*\gamma_1$ to $\widetilde X$; (4) by choosing a path $\gamma$ in $\widetilde X$ from $\tilde x'$ to $\tilde x$, so that $p_*(\pi_1(\widetilde X,\tilde x'))=(p_*\gamma)\cdot p_*(\pi_1(\widetilde X,\tilde x))\cdot(p_*\gamma)^{-1}$; (5) from (1).
 Write out the missing details.
 :::
 

@@ -16,10 +16,19 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 6.5 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-Let p: Y $\\to$ X be a covering (with Y path connected and X locally path connected) such that p$\\ast$π1(Y, y) = H $\\subset$ G = π1(X, p(y)). Show that Aut( ˜X/X) $\\cong$ (NGH)/H, where NGH = {g $\\in$ G : gHg$^{-1}$ = H}.
+Let $p\colon Y\to X$ be a covering (with $Y$ path connected and $X$ locally path connected) such that $p_*\pi_1(Y,y)=H\subset G=\pi_1(X,p(y))$.
+Show that $\operatorname{Aut}(\widetilde X/X)\cong(N_GH)/H$, where $N_GH=\{g\in G:gHg^{-1}=H\}$.
+:::
+
+::: {.remark}
+The group $\operatorname{Aut}(\widetilde X/X)$ is printed as in the source; since the covering in the statement is $p\colon Y\to X$, the group meant is $\operatorname{Aut}(Y/X)$.
 :::
 
 ::: {.solution}

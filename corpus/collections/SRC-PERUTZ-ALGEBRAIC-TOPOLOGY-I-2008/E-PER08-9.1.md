@@ -16,12 +16,26 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 9.1 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-We consider chain complexes (C$\\ast$, δ) over a field k such that dimk H$\\ast$(C) < $\\infty$.
-The Euler characteristic of C$\\ast$ is then defined as the alternating sum χ(C$\\ast$) = $\\sum$ p ($^{-1}$)p dimk Hp(C). (i) Show that when $\\sum$ p dimk Cp < $\\infty$, one has χ(C$\\ast$) = $\\sum$ p ($^{-1}$)p dimk Cp.
-(ii) Show that if · · · $\\to$ Cp $\\to$ Cp$^{-1}$ $\\to$ Cp$^{-2}$ $\\to$ . . . is an exact sequence, and $\\sum$ p dim Cp < $\\infty$, then $\\sum$ ($^{-1}$)p dim Cp = 0.
+We consider chain complexes $(C_*,\delta)$ over a field $k$ such that $\dim_kH_*(C)<\infty$.
+The Euler characteristic of $C_*$ is then defined as the alternating sum
+\[
+\chi(C_*)=\sum_p(-1)^p\dim_kH_p(C).
+\]
+
+(i) Show that when $\sum_p\dim_kC_p<\infty$, one has $\chi(C_*)=\sum_p(-1)^p\dim_kC_p$.
+
+(ii) Show that if
+\[
+\cdots\to C_p\to C_{p-1}\to C_{p-2}\to\cdots
+\]
+is an exact sequence, and $\sum_p\dim C_p<\infty$, then $\sum_p(-1)^p\dim C_p=0$.
 :::
 
 ::: {.solution}

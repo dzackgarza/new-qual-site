@@ -16,10 +16,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 5.3 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-Show that T 2 $\\setminus$ {4 points} is a 2-sheeted covering of S2 $\\setminus$ {4 points}. Some possible approaches are (a) a direct topological argument; (b) the Weierstrass $\\wp$-function from complex analysis; (c) a pencil of divisors of degree 2 on an elliptic curve.
+Show that $T^2\setminus\{4\text{ points}\}$ is a $2$-sheeted covering of $S^2\setminus\{4\text{ points}\}$.
+Some possible approaches are (a) a direct topological argument; (b) the Weierstrass $\wp$-function from complex analysis; (c) a pencil of divisors of degree $2$ on an elliptic curve.
 :::
 
 ::: {.solution}

@@ -16,13 +16,26 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 6.6 of the Perutz 2008 notes, with the SU(2) fact the notes allow.
 ---
 
 ::: {.problem}
-Define a regular tetrahedron as a set of four distinct, unordered, equidistant points on S2 $\\subset$ R3. Let T be the space of regular tetrahedra.
-(a) Show that π1(T ) has a central subgroup Z $\\cong$ Z/2 such that π1(T )/Z $\\cong$ A4. (b) Identify several (at least 5) pairwise non-isomorphic, path connected covering spaces of T , describing them geometrically.
-(c) Show that the fundamental group of the space P of regular icosahedra (unordered collections of 20 distinct points on S2 forming the vertices of a regular icosahedron) has order 120, but that the abelianization π1(P)ab has order at most 2. (In fact it is trivial.)
-[Recall that the icosahedral group A5 is simple.]
+You may use the following fact: the quotient $SU(2)/\{\pm I\}$ is isomorphic, as a topological group, to $SO(3)$.
+
+Define a regular tetrahedron as a set of four distinct, unordered, equidistant points on $S^2\subset\mathbb{R}^3$.
+Let $T$ be the space of regular tetrahedra.
+
+(a) Show that $\pi_1(T)$ has a central subgroup $Z\cong\mathbb{Z}/2$ such that $\pi_1(T)/Z\cong A_4$.
+
+(b) Identify several (at least $5$) pairwise non-isomorphic, path connected covering spaces of $T$, describing them geometrically.
+
+(c) Show that the fundamental group of the space $P$ of regular icosahedra (unordered collections of $20$ distinct points on $S^2$ forming the vertices of a regular icosahedron) has order $120$, but that the abelianization $\pi_1(P)^{\mathrm{ab}}$ has order at most $2$.
+(In fact it is trivial.)
+
+[Recall that the icosahedral group $A_5$ is simple.]
 :::
 
 ::: {.solution}

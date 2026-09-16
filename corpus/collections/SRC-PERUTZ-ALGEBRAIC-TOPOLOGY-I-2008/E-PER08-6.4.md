@@ -16,11 +16,18 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 6.4 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-(a) The universal cover of the torus T 2 is R2. Identify all the deck transformations and hence determine (once again) the fundamental group.
-Which surfaces can cover T 2? (b) Show that the Klein bottle is also covered by R2; identify the deck transformations and hence the fundamental group.
+(a) The universal cover of the torus $T^2$ is $\mathbb{R}^2$.
+Identify all the deck transformations and hence determine (once again) the fundamental group.
+Which surfaces can cover $T^2$?
+
+(b) Show that the Klein bottle is also covered by $\mathbb{R}^2$; identify the deck transformations and hence the fundamental group.
 :::
 
 ::: {.solution}

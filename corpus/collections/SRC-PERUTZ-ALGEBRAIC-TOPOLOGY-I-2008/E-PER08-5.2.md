@@ -16,11 +16,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 5.2 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
 Do this exercise if you know the basic facts about smooth manifolds.
-Suppose Y and X are smooth n-manifolds, and p: Y $\\to$ X a smooth, proper map whose derivative Dp: TxY $\\to$ Tp(x)X is an isomorphism for all x $\\in$ Y . Then p is a (finite-sheeted) covering map.
+Suppose $Y$ and $X$ are smooth $n$-manifolds, and $p\colon Y\to X$ a smooth, proper map whose derivative $Dp\colon T_xY\to T_{p(x)}X$ is an isomorphism for all $x\in Y$.
+Then $p$ is a (finite-sheeted) covering map.
 :::
 
 ::: {.solution}

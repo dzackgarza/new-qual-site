@@ -16,13 +16,29 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 9.5 of the Perutz 2008 notes, with the mapping cone definition from Exercise 9.4.
 ---
 
 ::: {.problem}
-(*) If a: A$\\ast$ $\\to$ B$\\ast$ and b$\\ast$ : B$\\ast$ $\\to$ C$\\ast$ are chain maps, what can we say about cone(b ◦ a)? Show how to arrange the six groups H$\\ast$(A), H$\\ast$(B), H$\\ast$(C), H$\\ast$(cone(a)), H$\\ast$(cone(b)) and H$\\ast$(cone(ba)) as the vertices of an octahedral diagram of maps.
+If $a\colon A_*\to B_*$ is a chain map, its mapping cone $\operatorname{cone}(a)_*$ is the complex $\operatorname{cone}(a)_n=A_{n-1}\oplus B_n$ with differential $d_{\operatorname{cone}(a)}(x,y)=-d_Ax+a(x)+d_By$.
+
+(*) If $a\colon A_*\to B_*$ and $b_*\colon B_*\to C_*$ are chain maps, what can we say about $\operatorname{cone}(b\circ a)$?
+Show how to arrange the six groups $H_*(A)$, $H_*(B)$, $H_*(C)$, $H_*(\operatorname{cone}(a))$, $H_*(\operatorname{cone}(b))$ and $H_*(\operatorname{cone}(ba))$ as the vertices of an octahedral diagram of maps.
 Four of the faces should be commuting triangles, the other four exact triangles (i.e., long exact sequences visualised as triangles).
-The last of these triangles is a long exact sequence · · · $\\to$ Hp(cone(a)) $\\to$ Hp(cone(ba)) $\\to$ Hp$^{-1}$(cone(b)) $\\to$ . . . . The hard part of the exercise is constructing this triangle and proving its exactness.
-[Hint: define f : cone(a) $\\to$ cone(ba) by f(x, y) = (x, by). There is a natural inclusion i: cone(b) $\\to$ cone(f). Show that i is a chain-homotopy equivalence.] This exercise shows shows that the derived category of the abelian category of chain complexes satisfies Verdier’s ‘octahedral axiom’ for triangulated categories.
+The last of these triangles is a long exact sequence
+\[
+\cdots\to H_p(\operatorname{cone}(a))\to H_p(\operatorname{cone}(ba))\to H_{p-1}(\operatorname{cone}(b))\to\cdots.
+\]
+The hard part of the exercise is constructing this triangle and proving its exactness.
+
+[Hint: define $f\colon\operatorname{cone}(a)\to\operatorname{cone}(ba)$ by $f(x,y)=(x,by)$.
+There is a natural inclusion $i\colon\operatorname{cone}(b)\to\operatorname{cone}(f)$.
+Show that $i$ is a chain-homotopy equivalence.]
+
+This exercise shows that the derived category of the abelian category of chain complexes satisfies Verdier's "octahedral axiom" for triangulated categories.
 :::
 
 ::: {.solution}

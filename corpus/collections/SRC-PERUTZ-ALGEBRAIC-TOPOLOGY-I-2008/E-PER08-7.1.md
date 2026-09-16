@@ -16,10 +16,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 7.1 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-Show that, in general, Hn(X) = $\\oplus$ Y $\\in$π0(X) Hn(Y ), where π0(X) is the set of path-components of X. Thus H0(X) $\\cong$ Zπ0(X).
+Show that, in general, $H_n(X)=\bigoplus_{Y\in\pi_0(X)}H_n(Y)$, where $\pi_0(X)$ is the set of path-components of $X$.
+Thus $H_0(X)\cong\mathbb{Z}^{\pi_0(X)}$.
 :::
 
 ::: {.solution}

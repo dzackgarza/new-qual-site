@@ -16,10 +16,15 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 6.7 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-Rotation about a fixed axis, by angles increasing from 0 up to 2π, determines a loop γ in SO(3). Show that γ $\\ast$ γ is nullhomotopic.
+Rotation about a fixed axis, by angles increasing from $0$ up to $2\pi$, determines a loop $\gamma$ in $SO(3)$.
+Show that $\gamma*\gamma$ is nullhomotopic.
 :::
 
 ::: {.solution}

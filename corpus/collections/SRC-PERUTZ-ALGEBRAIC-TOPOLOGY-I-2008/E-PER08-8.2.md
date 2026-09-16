@@ -16,10 +16,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 8.2 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-Compute Hsimp $\\ast$ for the spaces T 2, RP 2 and K2, each thought of as a $\\Delta$-complex with two 2-simplices (and some 1- and 0-simplices).
+Compute $H_*^{\mathrm{simp}}$ for the spaces $T^2$, $\mathbb{RP}^2$ and $K^2$, each thought of as a $\Delta$-complex with two $2$-simplices (and some $1$- and $0$-simplices).
 :::
 
 ::: {.solution}

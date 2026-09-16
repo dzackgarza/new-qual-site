@@ -16,12 +16,22 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 9.2 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-A collection C of Z-modules is called a Serre class if for every short exact sequence 0 $\\to$ A $\\to$ B $\\to$ C $\\to$ 0 such that two out of the three Z-modules A, B, C are in C, the third is in C also.
-Fix a prime p $\\in$ Z. Identify which of the following properties of Z-modules M define Serre classes: (a) M is torsion; (b) M is torsion-free; (c) M is torsion but has no p-torsion; (d) every element of M has p-power order; (e); every element of M is divisible by p; (f) every M is finitely generated.
-(*) What if we replace M by an arbitrary commutative ring R (and p by a prime of R?).
+A collection $\mathcal{C}$ of $\mathbb{Z}$-modules is called a Serre class if for every short exact sequence $0\to A\to B\to C\to0$ such that two out of the three $\mathbb{Z}$-modules $A$, $B$, $C$ are in $\mathcal{C}$, the third is in $\mathcal{C}$ also.
+Fix a prime $p\in\mathbb{Z}$.
+Identify which of the following properties of $\mathbb{Z}$-modules $M$ define Serre classes: (a) $M$ is torsion; (b) $M$ is torsion-free; (c) $M$ is torsion but has no $p$-torsion; (d) every element of $M$ has $p$-power order; (e) every element of $M$ is divisible by $p$; (f) every $M$ is finitely generated.
+
+(*) What if we replace $M$ by an arbitrary commutative ring $R$ (and $p$ by a prime of $R$)?
+:::
+
+::: {.remark}
+In the last question, the object to be replaced by the commutative ring $R$ is the ground ring $\mathbb{Z}$ of the modules $M$, as the parenthetical replacement of $p$ by a prime of $R$ indicates.
 :::
 
 ::: {.solution}
