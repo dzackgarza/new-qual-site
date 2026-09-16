@@ -22,5 +22,6 @@ The deck transformations form a group $\Deck(\tilde X\to X)$ under composition.
 
 ::: {.remark}
 In the slice category $\mathsf{Top}_{/X}$, whose objects are continuous maps to $X$ and whose morphisms are maps over $X$, the group $\Deck(\tilde X\to X)$ is the automorphism group $\Aut_{\mathsf{Top}_{/X}}(p)$ of the object $p\colon\tilde X\to X$.
-A deck transformation permutes each fiber $p\inv(x)$; it need not fix any point of $\tilde X$.
+A deck transformation permutes each fiber $p\inv(x)$.
+If $\tilde X$ is connected, a deck transformation is determined by the image of one point, so a deck transformation with a fixed point is the identity [@Hat02, p. 70].
 :::
