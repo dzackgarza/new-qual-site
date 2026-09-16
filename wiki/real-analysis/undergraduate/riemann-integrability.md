@@ -1,44 +1,49 @@
 ---
+title: Riemann integrability
 order: 60
 topics:
 - Riemann Integrability
 - Integrals
 ---
 
-# Riemann Integrability
+# Riemann integrability
 
-The Riemann integral of a bounded function $f \colon [a,b] \to \RR$ is defined via upper and lower sums over partitions.
-The key question is: which functions are Riemann integrable?
+A bounded function $f \colon [a,b] \to \RR$ is Riemann integrable if its upper and lower Darboux integrals, the infimum of the upper sums and the supremum of the lower sums over partitions of $[a,b]$, are equal.
 
 ## The Lebesgue criterion
 
-The complete answer is the Lebesgue criterion, which connects Riemann integrability to measure theory.
-
-::: {.proposition}
-[[PR-TDH2A]] A bounded function $f \colon [a,b] \to \RR$ is Riemann integrable if and only if its set of discontinuities $D_f$ has Lebesgue measure zero.
-:::
-
-This means "most" bounded functions are Riemann integrable — the discontinuity set must be small (null), but can be infinite.
-The Cantor set is uncountable yet has measure zero, so a function discontinuous exactly on the Cantor set is Riemann integrable.
-
-## Key consequences
-
-**Continuous functions are Riemann integrable.** Continuity means $D_f = \emptyset$, which is certainly null.
-
-**Monotone functions are Riemann integrable.** A monotone function on $[a,b]$ has at most countably many discontinuities, and countable sets have measure zero.
-
-**Bounded functions with finitely many discontinuities are Riemann integrable.** Finite sets have measure zero.
-
-## A function that fails
+[[PR-TDH2A]]
 
 ::: {.example}
-[[FE-FJAKV]] The Dirichlet function $f(x) = \chi_\QQ$ is Lebesgue integrable (it equals zero a.e.) but not Riemann integrable, since $D_f = \RR$ has positive measure.
+The Cantor set $C$ is uncountable and has measure zero, so the bounded function $\chi_C$ on $[0,1]$, which is discontinuous exactly on $C$, is Riemann integrable, with integral $0$.
+
 :::
 
-The upper Riemann sums are always $b-a$ and the lower sums are always $0$, so the integral cannot exist in the Riemann sense.
+## Consequences
 
-## Relationship to the Lebesgue integral
+::: {.corollary}
+Let $f\colon[a,b]\to\RR$ be bounded.
 
-Every Riemann integrable function is Lebesgue integrable, and the integrals agree.
-But the Lebesgue integral is strictly more general: $\chi_\QQ$ is Lebesgue integrable with $\int \chi_\QQ = 0$, yet not Riemann integrable.
-The Lebesgue criterion is the bridge: Riemann integrability is exactly the condition that makes the two theories coincide.
+- If $f$ is continuous, then $f$ is Riemann integrable, since $D_f=\emptyset$.
+
+- If $f$ is monotone, then $f$ is Riemann integrable, since $D_f$ is countable and hence null.
+
+- If $f$ has finitely many discontinuities, then $f$ is Riemann integrable.
+
+:::
+
+## A function that is not Riemann integrable
+
+[[FE-FJAKV]]
+
+## Relation to the Lebesgue integral
+
+::: {.proposition}
+If $f\colon[a,b]\to\RR$ is Riemann integrable, then $f$ is Lebesgue integrable on $[a,b]$ and the two integrals are equal.
+
+:::
+
+::: {.remark}
+The converse fails: $\chi_{\QQ\cap[0,1]}$ is Lebesgue integrable with integral $0$ and not Riemann integrable.
+
+:::
