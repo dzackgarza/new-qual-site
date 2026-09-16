@@ -5,7 +5,7 @@ kind: problem
 title: Quotients of Artinian rings, Artinian domains are fields, and primes are maximal
 classification:
   areas:
-  - prelim
+  - algebra
   topics:
   - Artinian Rings
   - Rings
