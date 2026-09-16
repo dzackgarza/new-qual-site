@@ -28,6 +28,12 @@ The \dfn{scheme-theoretic image} of $f$ is the smallest closed subscheme of $Y$ 
 When $\mci \da \ker(\OO_Y \to f_* \OO_X)$ is quasicoherent — for instance when $f$ is quasicompact and quasiseparated — this ideal sheaf defines it.
 :::
 
+::: {.definition title="Constructible set"}
+In a Noetherian topological space $X$, the \dfn{constructible} subsets form the smallest family of subsets containing every open set and closed under finite intersections and complements.
+A subset of $X$ is constructible if and only if it is a finite disjoint union of locally closed subsets.
+[@Har10a, Exercise II.3.18]
+:::
+
 ::: {.definition title="Scheme-theoretic closure"}
 The \dfn{scheme-theoretic closure} of a locally closed immersion $i \colon X \to Y$ is the scheme-theoretic image of $i$.
 :::
