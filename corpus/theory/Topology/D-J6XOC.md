@@ -14,17 +14,19 @@ review: draft
 ---
 
 ::: {.definition}
-A **path** in $X$ is a continuous map $\gamma: I \da [0,1] \to X$; it is a path *from* $\gamma(0)$ *to* $\gamma(1)$, and a **loop** iff $\gamma(0) = \gamma(1)$.
-When $\gamma(1) = \eta(0)$ the two paths concatenate:
-\[
-(\gamma\cdot \eta)(s) \da
+Let $X$ be a topological space and $I\coloneqq[0,1]$.
+A \dfn{path} in $X$ is a [[D-AEAAD|continuous]] map $\gamma\colon I\to X$; it is a path from $\gamma(0)$ to $\gamma(1)$.
+A path $\gamma$ is a \dfn{loop} if $\gamma(0) = \gamma(1)$, and then it is a loop based at $\gamma(0)$.
+For paths $\gamma, \eta\colon I\to X$ with $\gamma(1) = \eta(0)$, the \dfn{concatenation} $\gamma\cdot\eta\colon I\to X$ is the path
+$$
+(\gamma\cdot\eta)(s)\coloneqq
 \begin{cases}
-\gamma(2s) & 0\leq s \leq 1/2, \\
-\eta(2s-1) & 1/2 \leq s \leq 1.
+\gamma(2s) & 0\leq s\leq 1/2, \\
+\eta(2s-1) & 1/2\leq s\leq 1.
 \end{cases}
-\]
+$$
 :::
 
 ::: {.concept}
-See Hatcher, §1.1, p. 25; Munkres, §51.
+See [@Hat02, §1.1, p. 25] and [@Mun00, §51].
 :::
