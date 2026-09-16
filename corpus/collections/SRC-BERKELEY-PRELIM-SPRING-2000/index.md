@@ -40,7 +40,3 @@ source:
     term: spring
     year: 2000
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Spring 2000. Problems are listed in source order.
-:::
