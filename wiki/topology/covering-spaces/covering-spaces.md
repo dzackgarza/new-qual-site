@@ -291,11 +291,9 @@ Suppose $f = p \circ \tilde f$ with $\tilde f\colon X\to Z$, $p\colon Z\to Y$, a
 	\\
 	{X} && {Y}
 	\arrow["{p}", from=1-3, to=3-3]
-	\arrow["{\tilde f}", from=3-1, to=1-3, dashed]
+	\arrow["{\tilde f}", from=3-1, to=1-3]
 	\arrow["{f}"', from=3-1, to=3-3]
 \end{tikzcd}
-
-> [Link to diagram](https://q.uiver.app/?q=WzAsMyxbMCwyLCJZIl0sWzIsMiwiWCJdLFsyLDAsIloiXSxbMiwxLCJwIl0sWzAsMiwiXFx0aWxkZSBmIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzAsMSwiZiIsMl1d)
 
 By [[T-TQ4J3]], there is a homotopy $\tilde H\colon X\cross I \to Z$ from $\tilde f$ to a constant map $x\mapsto z_0$.
 Then $p\circ \tilde H\colon X \cross I \to Y$ is a homotopy from $f$ to the constant map $x\mapsto p(z_0)$.
