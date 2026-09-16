@@ -2,69 +2,66 @@
 order: 90
 ---
 
-# Proofs of the Fundamental Theorem of Algebra
+# Proofs of the fundamental theorem of algebra
 
-## Argument Principle 
-
-:::{.proof title="using the argument principle"}
-\envlist
-
-- Let $P(z) = a_nz^n + \cdots + a_0$ and $g(z) = P'(z)/P(z)$, note $P$ is holomorphic
-- Since $\lim_{\abs z \to \infty} P(z) = \infty$, there exist an $R>0$ such that $P$ has no roots in $\theset{\abs{z} \geq R}$.
-- Apply the argument principle:
-\begin{align*}
-N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
-.\end{align*}
-- Check that $\lim_{\abs{z\to \infty}}zg(z) = n$, so $g$ has a simple pole at $\infty$
-- Then $g$ has a Laurent series ${n\over z} + {c_2 \over z^2} + \cdots$
-- Integrate term-by-term to get $N(0) = n$.
-
+::: {.theorem title="Fundamental theorem of algebra"}
+Every nonconstant polynomial $P(z) = a_nz^n + \cdots + a_0\in\CC[z]$ with $a_n\neq 0$ and $n\geq 1$ has exactly $n$ zeros in $\CC$, counted with multiplicity.
 :::
 
-## Rouche's Theorem
+## By the argument principle
 
-:::{.proof title="From Gamelin"}
+::: {.proof title="Using the argument principle"}
+Since $\abs{P(z)}\to\infty$ as $\abs z\to\infty$, there is $R>0$ such that $P$ has no zeros in $\ts{\abs z\geq R}$.
+Let $g \coloneqq P'/P$ and fix $R' > R$.
+By the [[T-JXDQT|argument principle]], the number $N$ of zeros of $P$, counted with multiplicity, all of which lie in $\abs z < R'$, is
+$$
+N = {1\over 2\pi i} \oint_{\abs{\xi} = R'} g(\xi) \,d\xi.
+$$
+The function $g$ is holomorphic on $\abs z > R$ and $zg(z) = zP'(z)/P(z)\to n$ as $z\to\infty$, so on $\abs z > R$ it has a Laurent expansion $g(z) = {n\over z} + {c_2 \over z^2} + \cdots$, converging uniformly on $\abs z = R'$.
+Integrating term by term gives $N = n$.
+:::
+
+## By Rouché's theorem
+
+::: {.proof title="From Gamelin"}
 
 ![](../../../../assets/assets/figures/2021-12-10_18-02-14.png)
 
 :::
 
-:::{.proof title="using Rouche's theorem"}
+::: {.proof title="Using Rouché's theorem"}
 
 ![](../../../../assets/assets/Complex_Analysis/figures/2021-07-29_20-41-18.png)
 ![](../../../../assets/assets/Complex_Analysis/figures/2021-07-29_20-41-29.png)
 
-- Let $P(z) = a_nz^n + \cdots + a_0$
-- Set $f(z) = a_n z^n$ and $g(z) = P(z) - f(z) = a_{n-1}z^{n-1} + \cdots + a_0$, so $f+g = P$.
-- Choose $R > \max\qty{ { \abs{a_{n-1}} + \cdots + \abs{a_0} \over \abs{a_n} }, 1}$, then
-
-\begin{align*}
-|g(z)| 
-&\definedas |a_{n-1}z^{n-1} + \cdots + a_1 z + a_0 | \\
-&\leq |a_{n-1}z^{n-1}| + \cdots + |a_1 z| + |a_0 | \quad\text{by the triangle inequality} \\
-&= |a_{n-1}|\cdot |z^{n-1}| + \cdots + |a_1|\cdot| z| + |a_0 | \\
-&=  |a_{n-1}|\cdot R^{n-1} + \cdots + |a_1| R + |a_0 | \\
-&\leq |a_{n-1}|\cdot R^{n-1}+|a_{n-2}|\cdot R^{n-1} + \cdots + |a_1| \cdot R^{n-1} + |a_0 |\cdot R^{n-1} \quad\text{since } R>1 \implies R^{a+b} \geq R^a \\
-&= R^{n-1} \left( |a_{n-1}| + |a_{n-2}| + \cdots + |a_1| + |a_0| \right) \\
-&\leq R^{n-1} \left( |a_n|\cdot R \right) \quad\text{by choice of } R   \\
-&= R^{n} |a_n| \\
-&= |a_n z^n| \\
-&\definedas  |f(z)|
-\end{align*}
-
-- Then $a_n z^n$ has $n$ zeros in $\abs{z} < R$, so $f+g$ also has $n$ zeros.
-
+Let $f(z) \coloneqq a_n z^n$ and $g(z) \coloneqq P(z) - f(z) = a_{n-1}z^{n-1} + \cdots + a_0$, so $f+g = P$.
+Choose
+$$
+R > \max\qty{ { \abs{a_{n-1}} + \cdots + \abs{a_0} \over \abs{a_n} }, 1}.
+$$
+For $\abs z = R$,
+$$
+\begin{aligned}
+\abs{g(z)}
+&\leq \abs{a_{n-1}}R^{n-1} + \cdots + \abs{a_1} R + \abs{a_0} && \text{triangle inequality} \\
+&\leq R^{n-1} \qty{ \abs{a_{n-1}} + \cdots + \abs{a_1} + \abs{a_0} } && R>1 \\
+&< R^{n-1} \cdot \abs{a_n} R && \text{choice of } R \\
+&= \abs{f(z)}.
+\end{aligned}
+$$
+By [[T-CJCKL|Rouché's theorem]], $P = f+g$ and $f$ have the same number of zeros in $\abs z<R$, namely $n$.
+Every zero of $P$ lies in $\abs z < R$, since the same estimate gives $\abs{P(z)}\geq\abs{f(z)}-\abs{g(z)}>0$ for $\abs z\geq R$.
 :::
 
-## Liouville's Theorem
+## By Liouville's theorem
 
-:::{.proof}
+::: {.proof}
 
 ![](../../../../assets/assets/figures/2021-12-14_16-58-33.png)
 
 :::
 
-:::{.proof title="from Gamelin"}
+::: {.proof title="From Gamelin"}
 
 ![](../../../../assets/assets/figures/2021-12-10_19-52-51.png)
 
@@ -72,72 +69,60 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::
 
-:::{.proof title="using Liouville's theorem"}
-\envlist
+::: {.proof title="Using Liouville's theorem"}
+It suffices to show that $P$ has a zero; the full count follows by induction on $n$ after dividing by $z - z_0$ for a zero $z_0$.
+Suppose $P$ has no zeros, so that $1/P$ is entire.
 
-- Suppose $p$ is nonconstant and has no roots, then ${1\over p}$ is entire.
-  We will show it is also bounded and thus constant, a contradiction.
-- Write $p(z) = z^n \left(a_n + \frac{a_{n-1}}{z}+\dots+\frac{a_{0}}{z^{n}}\right)$
-- Outside a disc:
-  - Note that $p(z) \converges{z\to \infty }\to \infty$. so there exists an $R$ large enough such that $\abs{p(z)} \geq {1\over A}$ for any fixed chosen constant $A$.
-  - Then $\abs{ 1/p(z)} \leq A$ outside of $\abs{z} >R$, i.e. $1/p(z)$ is bounded there.
-- Inside a disc:
-  - $p$ is continuous with no roots and thus must be bounded below on $\abs{z} < R$.
-  - $p$ is entire and thus continuous, and since $\bar{D}_r(0)$ is a compact set, $p$ achieves a min $A$ there
-  - Set $C \da \min(A, B)$, then $\abs{p(z)} \geq C$ on all of $\CC$ and thus $\abs{1/p(z)} \leq C$ everywhere. 
-  - So $1/p(z)$ is bounded an entire and thus constant by Liouville's theorem -- but this forces $p$ to be constant. $\contradiction$
-
+Write $P(z) = z^n \qty{a_n + \frac{a_{n-1}}{z}+\cdots+\frac{a_{0}}{z^{n}}}$.
+The bracket tends to $a_n$ as $z\to\infty$, so there is $R>0$ with $\abs{P(z)} \geq B$ for $\abs z\geq R$, where $B \coloneqq \abs{a_n}R^n/2 > 0$.
+On the compact disc $\abs z\leq R$ the continuous function $\abs P$ attains a minimum $A$, and $A>0$ because $P$ has no zeros.
+With $C \coloneqq \min(A, B)$, $\abs{P(z)}\geq C$ on $\CC$, so $\abs{1/P(z)}\leq 1/C$ on $\CC$.
+By [[T-QHIHJ|Liouville's theorem]] $1/P$ is constant, so $P$ is constant, a contradiction.
 :::
 
-## Open Mapping Theorem
+## By the open mapping theorem
 
-:::{.proof title="using the Open Mapping theorem"}
-\envlist
-
-- $p$ induces a continuous map $\CP^1 \to \CP^1$
-- The continuous image of compact space is compact; 
-- Since the codomain is Hausdorff space, the image is closed.
-- $p$ is holomorphic and non-constant, so by the Open Mapping Theorem, the image is open.
-- Thus the image is clopen in $\CP^1$.
-- The image is nonempty, since $p(1) = \sum a_i \in \CC$
-- $\CP^1$ is connected
-- But the only nonempty clopen subset of a connected space is the entire space.
-- So $p$ is surjective, and $p\inv(0)$ is nonempty.
-- So $p$ has a root.
-
+::: {.proof title="Using the open mapping theorem"}
+Extend $P$ to a holomorphic map $P\colon \PP^1(\CC) \to \PP^1(\CC)$ with $P(\infty) = \infty$.
+Its image is compact, since $\PP^1(\CC)$ is compact, and hence closed, since $\PP^1(\CC)$ is Hausdorff.
+Since $P$ is nonconstant, the image is open by the [[C-FRF33|open mapping theorem]] applied in local coordinates.
+The image is nonempty and $\PP^1(\CC)$ is connected, so the image is all of $\PP^1(\CC)$.
+In particular $0 = P(z_0)$ for some $z_0$, and $z_0\neq\infty$ because $P(\infty)=\infty$.
 :::
 
-## Generalized Liouville
+## By the generalized Liouville theorem
 
 [[T-BBQLQ]]
 
 [[L-ZXBBI]]
 
-:::{.proof title="of FTA, using Generalized Liouville"}
-Given a nonconstant $p\in \CC[x]$, regard it as a function $p: \PP^1(\CC) \to \PP^1(\CC)$ by extending so that $p(\infty) = \infty$.
-Since $p$ is nonconstant, by the lemma $p$ is surjective, so there exists some $x\neq \infty$ in $\PP^1(\CC)$ with $p(x) = 0$.
-
+::: {.proof title="Using the lemma on maps from compact Riemann surfaces"}
+Extend $P$ to a nonconstant holomorphic map $P\colon \PP^1(\CC) \to \PP^1(\CC)$ with $P(\infty) = \infty$.
+Since $\PP^1(\CC)$ is compact, $P$ is surjective by [[L-ZXBBI]], so $P(z_0) = 0$ for some $z_0\in\PP^1(\CC)$, and $z_0\neq\infty$.
 :::
 
 ## Singularities and omitted values
 
-Stated here because the fundamental theorem of algebra is proved from them below; they are developed on [[complex-analysis/singularities/index|Singularities]].
+The following results are developed on [[complex-analysis/singularities/index|Singularities]].
 
 [[T-ISZP3]]
 
 [[T-AELHU]]
 
-:::{.corollary}
+## Zero divisors
+
+::: {.proposition}
 The ring of holomorphic functions on a domain in $\CC$ has no zero divisors.
-
 :::
-:::{.proof}
-If $fg \equiv 0$ with $f\not\equiv 0$, then the zero set of $f$ is discrete by the identity principle, so $g$ vanishes on the complement of a discrete set.
-That set has a limit point in the domain, so $g\equiv 0$ by the identity principle again.
 
+::: {.proof}
+Let $fg \equiv 0$ with $f\not\equiv 0$.
+By the [[T-SVF2W|identity principle]] the zero set of $f$ is discrete, so $g$ vanishes on its complement, which has a limit point in the domain.
+So $g\equiv 0$ by the identity principle again.
 :::
+
 ## A Banach space of holomorphic functions
 
-Proved with Morera's theorem.
+The following exercise is solved using Morera's theorem.
 
 [[E-QO2S7]]
