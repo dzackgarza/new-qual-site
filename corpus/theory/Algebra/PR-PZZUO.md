@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-PZZUO
 kind: proposition
-title: Subring criteria
+title: Subring criterion
 classification:
   areas:
   - algebra
@@ -13,9 +13,10 @@ review: draft
 ---
 
 ::: {.proposition}
-A subset $S\subseteq R$ is a subring iff
+Let $R$ be a [[D-GURUB|ring]].
+A subset $S\subseteq R$ is a subring of $R$ if and only if
 
-- $(S, +)$ forms an abelian subgroup (so closed under addition and contains inverses)
+- $(S, +)$ is a subgroup of $(R,+)$: $0\in S$, and $a-b\in S$ for all $a,b\in S$; and
 
-- $(S, \cdot)$ forms a submonoid (so closed under multiplication)
+- $(S, \cdot)$ is a submonoid of $(R,\cdot)$: $1\in S$, and $ab\in S$ for all $a,b\in S$.
 :::

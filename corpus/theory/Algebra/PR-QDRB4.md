@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-QDRB4
 kind: proposition
-title: Galois is upper transitive, characterization of when lower transitivity holds
+title: Galois subextensions of a Galois tower
 classification:
   areas:
   - algebra
@@ -14,9 +14,18 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $L/k$ is Galois, then $L/F$ is **always** Galois.
-Moreover, $F/k$ is Galois if and only if \( \Gal(L/F) \normal \Gal(L/k) \)
+::: {.proposition}
+Let $L/k$ be a finite [[D-5JYEI|Galois extension]] and let $F$ be an intermediate field, $k\subseteq F\subseteq L$.
+Then:
+
+(a) $L/F$ is Galois.
+
+(b) $F/k$ is Galois if and only if $\Gal(L/F) \normal \Gal(L/k)$.
+
+(c) In that case restriction $\sigma\mapsto\sigma|_F$ induces an isomorphism
+$$
+\Gal(F/k) \cong \Gal(L/k)/\Gal(L/F).
+$$
 
 \begin{tikzcd}
 	{L} \\
@@ -30,10 +39,15 @@ Moreover, $F/k$ is Galois if and only if \( \Gal(L/F) \normal \Gal(L/k) \)
 \end{tikzcd}
 
 > [Link to diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJMIl0sWzAsMiwiRiJdLFswLDQsImsiXSxbMCwyLCJcXHRleHR7R2Fsb2lzfSIsMCx7ImN1cnZlIjotMywic3R5bGUiOnsiaGVhZCI6eyJuYW1lIjoibm9uZSJ9fX1dLFsyLDEsIlxcdGV4dHtHYWxvaXN9IiwwLHsiY3VydmUiOi0yLCJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJzcXVpZ2dseSJ9LCJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzAsMSwiXFx0ZXh0e0dhbG9pc30iLDIseyJjdXJ2ZSI6Miwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn0sImhlYWQiOnsibmFtZSI6Im5vbmUifX19XV0=)
+:::
 
-In this case, 
-\[
-\Gal(F/k) \cong \frac{\Gal(L/k)}{\Gal(L/F)}
-.\]
+::: {.proof}
+(a) $L$ is the splitting field over $k$ of a separable polynomial $f\in k[x]$, and $L$ is also generated over $F$ by the roots of $f\in F[x]$, so $L$ is the splitting field of $f$ over $F$ and $L/F$ is Galois.
 
+(b) and (c). Fix an algebraic closure $\bar k$ containing $L$.
+Every $k$-embedding $F\to\bar k$ extends to a $k$-embedding $L\to\bar k$, which has image $L$ by [[PR-OZYUC]] because $L/k$ is normal; so the $k$-embeddings $F\to\bar k$ are exactly the restrictions $\sigma|_F$ with $\sigma\in\Gal(L/k)$.
+For $\sigma\in\Gal(L/k)$ we have $\Gal(L/\sigma(F))=\sigma\Gal(L/F)\sigma^{-1}$, and by the Galois correspondence $\sigma(F)=F$ if and only if $\sigma\Gal(L/F)\sigma^{-1}=\Gal(L/F)$.
+Hence $\Gal(L/F)\normal\Gal(L/k)$ if and only if $\sigma(F)=F$ for every $\sigma\in\Gal(L/k)$, if and only if every $k$-embedding $F\to\bar k$ has image $F$, which by [[PR-OZYUC]] means $F/k$ is normal.
+Since $F/k$ is separable as a subextension of the separable extension $L/k$, this is equivalent to $F/k$ being Galois.
+In that case restriction is a homomorphism $\Gal(L/k)\to\Gal(F/k)$; it is surjective because every $k$-automorphism of $F$ extends to $L$, and its kernel is $\Gal(L/F)$, which gives (c).
 :::
