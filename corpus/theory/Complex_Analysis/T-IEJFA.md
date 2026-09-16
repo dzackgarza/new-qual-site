@@ -15,6 +15,10 @@ review: draft
 ---
 
 ::: {.theorem}
-
-![](../../assets/Complex_Analysis/900 Unsorted/figures/2021-12-14_17-36-26.png)
+Let $D\subseteq\CC$ be a [[D-GFM35|simply connected]] connected open set and let $f$ be [[D-7DFVJ|meromorphic]] on $D$ and not identically zero.
+Then there are [[D-E7A5W|holomorphic]] functions $g$, $h_1$, $h_2$ on $D$ such that
+$$
+f(z)=e^{g(z)}\frac{h_1(z)}{h_2(z)},
+$$
+where the [[D-65VIK|zeros]] of $h_1$ are the zeros of $f$, with the same multiplicities, and the zeros of $h_2$ are the [[D-AUD6K|poles]] of $f$, with multiplicities equal to their orders.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-JXDQT
 kind: theorem
-title: Argument Principle, Zeros/Poles Version
+title: Argument principle counting zeros and poles
 classification:
   areas:
   - complex-analysis
@@ -15,22 +15,18 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-For $f$ meromorphic in $\Omega$ with multisets of zeros \( Z_f \da \ts{ z_j } \) and poles \( P_f\da \ts{ p_k } \) (so repeated with multiplicity) 
-for $\gamma \da \bd \Omega$ not intersecting any of the zeros/poles,
-
-\[  
-{1\over 2\pi i} \int_\gamma \logd f(z) \dz
-\da {1\over 2\pi i} \int_\gamma {f'(z) \over f(z)} \dz =
-&= \size Z_f - \size P_f
-,\]
-where $\size Z_f$ and $\size P_f$ are the number of zeros and poles respectively, counted with multiplicity.
-If $f$ is holomorphic, then
-\[
-{1\over 2\pi i} \oint_{\bd \Omega} {f'(z) \over f(z)}\dz 
-&= \sum_{z_k\in f\inv(0) \intersect \Omega} \mathrm{mult}(f, z_k) \\
-{1\over 2\pi i} \oint_{\bd \Omega} {zf'(z) \over f(z)}\dz 
-&= \sum_{z_k\in f\inv(0) \intersect \Omega} f(z_k) \mathrm{mult}(f, z_k) \\
-.\]
-
+::: {.theorem}
+Let $\Omega\subseteq\CC$ be a bounded open set whose boundary $\gamma\coloneqq\partial\Omega$ consists of finitely many piecewise smooth closed curves, oriented positively with respect to $\Omega$.
+Let $f$ be [[D-7DFVJ|meromorphic]] on an open set containing $\overline{\Omega}$, with no [[D-65VIK|zeros]] or [[D-AUD6K|poles]] on $\gamma$.
+Let $Z_f$ and $P_f$ be the numbers of zeros and poles of $f$ in $\Omega$, counted with multiplicity.
+Then
+$$
+\frac{1}{2\pi i}\int_\gamma\frac{f'(z)}{f(z)}\dz=Z_f-P_f.
+$$
+If moreover $f$ is [[D-E7A5W|holomorphic]] with zeros $z_1,\ldots,z_m$ in $\Omega$, listed with multiplicity, then
+$$
+\frac{1}{2\pi i}\int_\gamma\frac{f'(z)}{f(z)}\dz=m
+\quad\text{and}\quad
+\frac{1}{2\pi i}\int_\gamma\frac{zf'(z)}{f(z)}\dz=\sum_{k=1}^mz_k.
+$$
 :::
