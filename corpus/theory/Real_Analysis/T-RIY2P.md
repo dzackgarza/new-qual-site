@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RIY2P
 kind: theorem
-title: Small Tails in $L^1$
+title: Small tails of $L^1(\RR^d)$ functions
 classification:
   areas:
   - real-analysis
@@ -13,12 +13,15 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-\[
-f\in L^1(\RR^d) \implies \norm{f}_{L^1(B_r(0)^c)} \convergesto{r\to\infty} 0
-.\]
-In particular, if $f\in L^1$, then for every $\varepsilon$ there exists a radius $r$ such that 
-\[
-\int_{B_r(0)^c} \abs{f} < \eps
-.\]
+::: {.theorem}
+Let $d\geq1$, let $m$ be Lebesgue measure on $\RR^d$, and let $f\colon\RR^d\to\CC$ be [[D-R5DL3|integrable]] with respect to $m$.
+For $r>0$, let $B_r(0)\coloneqq\theset{x\in\RR^d\suchthat\abs{x}<r}$.
+Then
+$$
+\lim_{r\to\infty}\int_{\RR^d\setminus B_r(0)}\abs{f}\,dm=0.
+$$
+Equivalently, for every $\varepsilon>0$ there exists $r>0$ such that
+$$
+\int_{\RR^d\setminus B_r(0)}\abs{f}\,dm<\varepsilon.
+$$
 :::
