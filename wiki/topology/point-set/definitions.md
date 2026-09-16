@@ -182,7 +182,7 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 
 [[D-BCNUH]]
 
-[[D-YL6FR]]
+[[D-WGYSB]]
 
 ## Analysis and metric spaces
 
@@ -191,8 +191,6 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 [[D-D5G27]]
 
 [[D-2GCTV]]
-
-[[D-WGYSB]]
 
 [[D-SDMMS]]
 
