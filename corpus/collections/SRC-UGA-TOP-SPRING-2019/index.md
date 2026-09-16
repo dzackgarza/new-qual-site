@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2019
 ---
-
-::: remark
-Exam #5 lists [[P-LSJ7W]] (both the $\mathrm{SL}_2(\mathbb{Z})$ homeomorphism of $T^2$ and $H_1(T_A^3)$ for $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$).
-:::
