@@ -21,5 +21,5 @@ In particular, any two nonempty simply connected open sets $\Omega_1,\Omega_2\su
 :::
 
 ::: {.remark}
-This is [@SS03, Chapter 8, Theorem 1.1].
+This is [@SS03].
 :::

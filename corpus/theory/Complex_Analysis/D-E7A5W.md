@@ -38,5 +38,5 @@ Conversely, dividing the identity by $h\neq0$ gives $\frac{f(z_0+h)-f(z_0)}{h}=\
 :::
 
 ::: {.remark}
-See [@SS03, ch. 1, §2.2, p. 8].
+See [@SS03].
 :::

@@ -29,5 +29,5 @@ $$
 :::
 
 ::: {.remark}
-See [@SS03, Chapter 3, Theorem 2.4].
+See [@SS03].
 :::

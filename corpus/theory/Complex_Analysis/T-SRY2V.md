@@ -24,6 +24,6 @@ In particular, $f$ is [[D-V6UQJ|analytic]] at every point of $\Omega$.
 :::
 
 ::: {.remark}
-See [@SS03, Chapter 2, Theorem 4.4].
+See [@SS03].
 Conversely, a function analytic on $\Omega$ is holomorphic on $\Omega$, since a power series is complex differentiable inside its disc of convergence; so holomorphic and analytic functions on $\Omega$ coincide.
 :::

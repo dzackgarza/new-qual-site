@@ -23,5 +23,5 @@ and sending $\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\SL_2(\RR)$ to this map indu
 :::
 
 ::: {.remark}
-See [@SS03, Chapter 8, Theorem 2.4].
+See [@SS03].
 :::

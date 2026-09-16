@@ -23,7 +23,7 @@ $$
 :::
 
 ::: {.remark}
-This is [@SS03, Chapter 2, Theorem 1.1].
+This is [@SS03].
 The hypothesis is complex differentiability of $f$ at every point of $\Omega$; continuity of $f'$ is not assumed, and the proof proceeds by repeated subdivision of $T$ into four similar triangles.
 Goursat's theorem gives primitives of holomorphic functions on discs, and from these follow Cauchy's theorem for toy contours, the Cauchy integral formula, and the power series expansion of holomorphic functions.
 :::

@@ -40,6 +40,6 @@ On $\abs{z}\le R$ and for $n>R^2$, $\abs{f_n(z)}\ge n^2-nR^2\to\infty$ uniformly
 :::
 
 ::: {.concept}
-See [@SS03, ch. 8, §3.2, p. 225], and Theorem 3.3 there for Montel's theorem.
+See [@SS03], and Theorem 3.3 there for Montel's theorem.
 Ahlfors' convention and the example $n(z^2-n)$ are in [@Ahl79].
 :::
