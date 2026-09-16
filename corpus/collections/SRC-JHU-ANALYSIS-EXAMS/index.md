@@ -40,7 +40,7 @@ source:
   - name: Johns Hopkins University, Department of Mathematics, Real and Complex analysis
       (undated, pp. 4–5)
     problems:
-    - P-JHUU45RA1
+    - P-JHUFA09ANC
     - P-JHUU45RA2
     - P-JHUU45RA3
     - P-JHUU45CA1
@@ -50,7 +50,7 @@ source:
   - name: Johns Hopkins University, Department of Mathematics, Real and Complex analysis
       (undated, pp. 6–7)
     problems:
-    - P-JHUU45RA1
+    - P-JHUFA09ANC
     - P-JHUU67RA2
     - P-JHUU67RA3
     - P-JHUU67CA1
@@ -128,9 +128,7 @@ source:
   - name: QUALIFYING EXAM - ANALYSIS - SPRING 2014 (p. 15)
     problems:
     - id: P-G62KK
-      comment: Problem 1 (tail-supremum proof)
-    - id: P-8XT02
-      comment: Problem 1 (tail-set proof of the same source question)
+      comment: Problem 1
     - id: P-PGDPX
       comment: Problem 2
     - id: P-8XT03

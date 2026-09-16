@@ -29,6 +29,10 @@ audit:
   by: chatgpt
   date: 2026-09-10
   note: "Excluded the original exceptional null set before the tail-supremum argument and supplied closed-set approximation valid also for infinite-measure E; did not modify the original sequence or its limit."
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Spring 2014 problem 1 is the only occurrence of this statement in the JHU packet; merged the duplicate card P-8XT02 and kept its tail-set proof as a second solution."
 ---
 
 ::: problem
@@ -129,5 +133,90 @@ Hence there is a closed set $A_\varepsilon\subset E$ with
 m(E\setminus A_\varepsilon)<\varepsilon
 \]
 such that $f_k\to f$ uniformly on $A_\varepsilon$, as required.
+:::
+:::
+
+::: {.solution}
+<1>1. At each accuracy level, the bad tail sets have finite measure decreasing to zero.
+
+::: proof
+Choose a measurable null set $Z\subset E$ outside which
+$f_k(x)\to f(x)$ and $g$ is finite. Put $E_0=E\setminus Z$.
+On $E_0$, the bound on $f_k$ implies $|f|\leq g$.
+No function values need to be changed.
+
+For positive integers $j,N$, define
+\[
+B_{N,j}
+:=\bigcup_{k\ge N}
+\left\{x\in E_0:|f_k(x)-f(x)|\ge \frac1j\right\}.
+\]
+For fixed $j$, the sets $B_{N,j}$ decrease as $N\to\infty$. Pointwise convergence gives
+\[
+\bigcap_{N=1}^\infty B_{N,j}=\varnothing.
+\]
+Also, because $|f_k|,|f|\le g$,
+\[
+B_{1,j}\subseteq\left\{x\in E:g(x)\ge\frac1{2j}\right\}.
+\]
+Chebyshev's inequality gives
+\[
+m(B_{1,j})
+\le 2j\int_E g<\infty.
+\]
+Hence continuity from above of measure yields [@Fol13]
+\[
+m(B_{N,j})\longrightarrow0
+\qquad(N\to\infty).
+\]
+:::
+
+<1>2. Removing a set of small measure gives uniform convergence.
+
+::: proof
+Choose $N_j$ so that
+\[
+m(B_{N_j,j})<\frac{\epsilon}{2^{j+2}}.
+\]
+Set
+\[
+B:=Z\cup\bigcup_{j=1}^\infty B_{N_j,j}.
+\]
+Then
+\[
+m(B)<\frac\epsilon2.
+\]
+
+On $E\setminus B$, convergence is uniform. Indeed, given $\eta>0$, choose $j$ with $1/j<\eta$. If $k\ge N_j$ and $x\in E\setminus B$, then $x\notin B_{N_j,j}$, so
+\[
+|f_k(x)-f(x)|<\frac1j<\eta.
+\]
+:::
+
+<1>3. The good set contains a closed subset with arbitrarily small measure loss.
+
+::: proof
+Let $\mathbb R^d$ be the ambient Euclidean space, and put
+$F=E\setminus B$ and $H=\mathbb R^d\setminus F$.
+For each positive integer $j$, use finite-measure outer
+regularity to choose an open $O_j\supset H\cap[-j,j]^d$
+whose excess measure is less than $\epsilon/2^{j+1}$
+[@Fol13]. The open set $O=\bigcup_jO_j$ contains $H$, and
+$$
+m(O\setminus H)
+\leq\sum_j m\bigl(O_j\setminus(H\cap[-j,j]^d)\bigr)
+<\epsilon/2.
+$$
+Its complement $A_\epsilon=\mathbb R^d\setminus O$ is
+closed, contained in $F$, and satisfies
+$m(F\setminus A_\epsilon)<\epsilon/2$. This holds whether
+or not $E$ has finite measure.
+Then
+\[
+m(E\setminus A_\epsilon)
+\le m(B)+m\bigl((E\setminus B)\setminus A_\epsilon\bigr)
+<\epsilon,
+\]
+and uniform convergence on $E\setminus B$ implies uniform convergence on $A_\epsilon$.
 :::
 :::
