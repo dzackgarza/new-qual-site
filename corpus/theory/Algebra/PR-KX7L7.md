@@ -15,16 +15,16 @@ review: draft
 ---
 
 ::: {.proposition}
-Over a field $k$, every module is flat, so if $T:V \injects W$ is injective then $T\tensor \one_X: V\tensor_k X \injects W\tensor_k X$ is also injective for any $X$.
+Let $R$ be a commutative ring and $X$ an $R$-module, and let $F \coloneqq (\wait) \tensor_R X$ on $R$-modules.
 
-Over a general ring this fails.
-Tensoring the injection $\ZZ \mapsvia{2} \ZZ$ with $\ZZ/2\ZZ$ gives the zero map $\ZZ/2\ZZ \to \ZZ/2\ZZ$, which is not injective.
+- $F$ is right exact.
 
-The two properties are separate:
+- $F$ preserves injections, that is, $T \tensor \id_X\colon V \tensor_R X \to W \tensor_R X$ is injective for every injective $R$-linear map $T\colon V \injects W$, if and only if $X$ is [[D-DEFFLAT|flat]], and in that case $F$ is exact.
 
-- $F(\wait) = (\wait \tensor_R X)$ is right-exact for every $X$ and every $R$, with no hypothesis.
+- If $R = k$ is a field, every $k$-module is flat, so $T \tensor \id_X\colon V \tensor_k X \injects W \tensor_k X$ is injective for every injective $k$-linear map $T\colon V \injects W$ and every $k$-vector space $X$.
+:::
 
-- $F$ preserves injections exactly when $X$ is flat, and then $F$ is exact.
-
-So right-exactness is not a consequence of preserving injections; preserving injections is the strictly stronger half.
+::: {.example}
+Over $\ZZ$, tensoring does not preserve injections in general: $\ZZ/2\ZZ$ is not a flat $\ZZ$-module.
+The map $\ZZ \mapsvia{2} \ZZ$ is injective, and tensoring it with $\ZZ/2\ZZ$ gives multiplication by $2$ on $\ZZ/2\ZZ$, which is the zero map and not injective.
 :::

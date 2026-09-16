@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-N6S6P
 kind: proposition
-title: How to count sizes of automorphism groups
+title: Automorphism groups of cyclic groups and related counts
 classification:
   areas:
   - algebra
@@ -14,77 +14,56 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
-There's a good reference here: 
+::: {.proposition}
+Let $\varphi$ be [[D-JX3YC|Euler's totient function]].
 
-[Brian Sloan's senior project on automorphism groups (Whitman College)](https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf)
+(a) For $n \geq 1$, a cyclic group $C_n$ has exactly $\varphi(n)$ generators, and for primes $p \neq q$ and $k, \ell \geq 1$,
+$$
+\begin{aligned}
+\varphi(p) &= p-1, \\
+\varphi(p^k) &= p^{k-1}(p - 1), \\
+\varphi(p^k q^\ell) &= \varphi(p^k)\,\varphi(q^\ell).
+\end{aligned}
+$$
 
+(b) $\Aut(C_n) \cong (\ZZ/n\ZZ)\units$, a group of order $\varphi(n)$.
+It is cyclic if and only if $n = 1, 2, 4, p^k$, or $2p^k$ with $p$ an odd prime and $k \geq 1$.
 
-Let $\varphi$ be the totient function, and note that a cyclic group $C_n$ has precisely $\phi(n)$ choices of generators.
-One can compute
-\[
-\phi(p) &= p-1 \\
-\phi(p^k) &= p^{k-1}(p - 1) \\
-\phi(p^kq^\ell) &= \phi(p^k)\phi(q^\ell) \quad\text{when } \gcd(q, p) = 1
-.\]
+(c) For $p$ an odd prime and $k \geq 1$, $\Aut(C_{p^k}) \cong C_{\varphi(p^k)}$; in particular $\Aut(C_p) \cong C_{p-1}$.
 
-- Automorphisms of cyclic groups are completely known:
-\[
-\Aut(C_n) \cong C_n\units 
-,\]
-which has size $\phi(n)$ but is not generally isomorphic to $C_{\phi(n)}$
+(d) $\Aut(C_2) = 1$, $\Aut(C_4) \cong C_2$, and for $k \geq 3$, $\Aut(C_{2^k}) \cong C_2 \times C_{2^{k-2}}$.
 
-:::{.warnings}
-Warning: $C_n\units$ is not always cyclic!! 
-For example, $C_8\units \cong C_2^2 \neq C_{4}$.
-In fact, $C_n\units$ cyclic iff $n=2,4,p^k, 2p^k$ for $p$ an odd prime.
+(e) If $G$ and $H$ are finite groups of coprime orders, then $\Aut(G \times H) \cong \Aut(G) \times \Aut(H)$.
+Consequently, if $n = \prod_{k=1}^\ell p_k^{n_k}$ with distinct primes $p_k$, $p_1 = 2$, and $n_1 \geq 3$, then $C_n \cong \prod_{k=1}^{\ell} C_{p_k^{n_k}}$ and
+$$
+\begin{aligned}
+\Aut(C_n)
+&\cong \prod_{k=1}^\ell \Aut\qty{C_{p_k^{n_k}}} \\
+&\cong \prod_{k=1}^\ell (\ZZ/p_k^{n_k}\ZZ)\units \\
+&\cong \qty{C_2 \times C_{2^{n_1-2}} } \times \prod_{k=2}^\ell C_{m_k},
+\qquad m_k \coloneqq \varphi(p_k^{n_k}) = p_k^{n_k-1}(p_k-1).
+\end{aligned}
+$$
+
+(f) For $m \geq 2$ and $n \geq 1$, $\Aut(C_m^n) \cong \GL_n(\ZZ/m\ZZ)$.
+For $p$ prime, $\Aut(C_p^n) \cong \GL_n(\FF_p)$, and
+$$
+\abs{\GL_n(\FF_p)} = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1}).
+$$
+
+(g) For $m, n \geq 1$, $\abs{\Hom(C_n, C_m)} = \gcd(n, m)$.
+
+(h) Let $N, H$ be groups, $\psi\colon H \to \Aut(N)$ a homomorphism, $\sigma \in \Aut(H)$, and $\tau \in \Aut(N)$, and let $c_\tau\colon \Aut(N) \to \Aut(N)$ be conjugation $\alpha \mapsto \tau\alpha\tau\inv$.
+Then $N \semidirect_\psi H \cong N \semidirect_{c_\tau \circ \psi \circ \sigma} H$.
+
+(i) For every group $G$, $\Inn(G) \cong G/Z(G)$.
 :::
 
+::: {.example}
+$\Aut(C_8) \cong (\ZZ/8\ZZ)\units = \theset{1, 3, 5, 7}$ has every nonidentity element of order $2$, so $\Aut(C_8) \cong C_2 \times C_2 \not\cong C_4$.
+:::
 
-- For $p$ an odd prime, $\Aut(C_p) \cong C_p\units \cong C_{p-1}$ is cyclic. 
-
-- For $p^k$ an odd prime power, $\Aut(C_{p^k}) \cong C_{\varphi(p^k)}$ is cyclic.
-
-
-- For $2^k$ with $k\geq 3$, $C_{2^k}\units \cong C_{2}\times C_{2^{k-2}}$.
-  The two small cases are separate: $C_2\units = 1$ and $C_4\units \cong C_2$.
-
-- If $G, H$ have coprime order then $\Aut(G \cross H) \cong \Aut(G) \cross  \Aut(H)$.
-  One can then compute a general order by factoring $n = \prod_{k=1}^\ell p_k^{n_k}$ to get a decomposition 
-\[
-C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}} 
-,\]
-  and thus
-  \[
-  \Aut(C_n) 
-  &\cong \Aut\qty{\prod_{k=1}^{\ell} C_{p_k^{n_k}} }\\
-  &\cong \prod_{k=1}^\ell \Aut\qty{C_{p_k^{n_k}}} \\
-  &\cong \prod_{k=1}^\ell C_{p_k^{n_k}}\units \\
-  &\cong C_{2^{n_1}}\units \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{p_k^{n_k}}\units \\
-  &\cong \qty{C_2 \cross C_{2^{n_1-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} && m_k \da \varphi(p_k^{n_k}) \\
-  &\cong \qty{C_2 \cross C_{2^{n_1-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} &&  m_k \da p_k^{n_k-1}(p_k-1)  
-  .\]
-
-  Here $p_1 = 2$ with exponent $n_1$, and the $2\dash$part is written this way only when $n_1 \geq 3$; the exponent of the $2\dash$factor is $n_1$, not the number of distinct primes $\ell$.
-
-
-
-- $\Aut(C_p^n) \cong \GL_n(\FF_p)$ which has size 
-\[
-\size \GL_n(\FF_p) = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1})
-.\]
-
-- $\Aut(C_m^n)$ for $m$ not prime: no clue!
-  For $n=2$, this seems to be a wreath product $\Aut(C_m) \wr C_2$.
-
-
-- Counting homs: $\size \Hom_\Grp(C_n, C_m) = \gcd(n ,m)$.
-
-
--  If $\sigma \in \Aut(H)$ and $\tau \in \Aut(N)$, then \(N \semidirect_\psi H \cong N \semidirect_{\tau \circ \psi \circ \sigma} H\).
-  - So if $\GL_n$ shows up in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms).
-
-- $\Inn(G) \cong G/Z(G)$.
-
+::: {.remark}
+By (h), for $N = C_p^n$ and $H = C_k = \gens{h}$, a homomorphism $\psi\colon C_k \to \GL_n(\FF_p)$ is determined by the matrix $A = \psi(h)$, and replacing $A$ by a similar matrix $PAP\inv$ gives an isomorphic semidirect product.
+So it suffices to take $A$ in a canonical form, such as the rational canonical form.
 :::

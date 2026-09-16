@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-LJE4C
 kind: proposition
-title: Correspondence Theorem for Ideals
+title: Correspondence theorem for ideals
 classification:
   areas:
   - algebra
@@ -14,33 +14,25 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-For $I\in \Id(R)$, the canonical quotient map $\phi: R \to R/I$ induces a bijective correspondence:
-\[
-\correspond{
-  J \in \Id(R) \st J\contains I
-}
+::: {.proposition}
+Let $R$ be a ring, $I \subseteq R$ a two-sided ideal, and $\phi\colon R \to R/I$ the quotient map.
+
+(a) The maps $J \mapsto \bar{J} \coloneqq \phi(J) = J/I$ and $\bar{J} \mapsto \phi\inv(\bar{J})$ are mutually inverse inclusion-preserving bijections
+$$
+\begin{aligned}
+\correspond{\text{ideals } J \subseteq R \text{ with } J \contains I}
 &\mapstofrom
-  \Id(R/I) \\
-J \da \phi\inv(\bar J) &\mapsfrom \bar{J} \\
-J &\mapsto \bar{J} \da \phi(J) 
-,\]
-where $\phi: R\to R/I$ is the canonical quotient morphism.
+\correspond{\text{ideals of } R/I} \\
+J &\mapsto J/I \\
+\phi\inv(\bar J) &\mapsfrom \bar{J}.
+\end{aligned}
+$$
+In particular, every ideal of $R/I$ is of the form $S/I$ for a unique ideal $S \subseteq R$ containing $I$.
 
-More traditionally:
+(b) The same maps give a bijection between subrings $A \subseteq R$ containing $I$ and subrings of $R/I$.
 
-- If $S, I \in \Id(R)$ with $S$ containing $I$ then
-\[
-S/I \leq R/I
-.\]
-
-- Every ideal in $\Id(R/I)$ is of the form $\bar{S} \da S/I$ for some $S\in \Id(R)$ containing $I$.
-
-- The **third isomorphism theorem** is the last bullet only: if $I, J \in \Id(R)$ with $I \subseteq J \subseteq R$ then there is an isomorphism
-\[
-{R/I \over J/I} \mveq {R\over J}
-.\]
-
-Moreover, $A\leq R$ is a subring containing $I$ iff $A/I$ is a subring of $R/I$.
-The correspondence carries subrings to subrings and ideals to ideals; a subring of $R$ containing $I$ need not be an ideal.
+(c) (Third isomorphism theorem.) For ideals $I \subseteq J \subseteq R$, there is a ring isomorphism
+$$
+\frac{R/I}{J/I} \cong \frac{R}{J}.
+$$
 :::

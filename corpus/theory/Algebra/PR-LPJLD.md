@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-LPJLD
 kind: proposition
-title: $V^*\otimes W\cong\mathrm{Hom}(V,W)$ in finite dimensions
+title: $V^*\otimes W\cong\Hom(V,W)$ in finite dimensions
 classification:
   areas:
   - algebra
@@ -14,10 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
-\[
-V\dual \tensor_k W &\mapsvia{\sim} \Hom_{\kmod}(V, W) \\
-\tilde v \tensor w &\mapsto \tilde v(\wait) w
-.\]
+::: {.proposition}
+Let $k$ be a field and $V, W$ finite-dimensional $k$-vector spaces.
+The $k$-linear map
+$$
+\begin{aligned}
+V\dual \tensor_k W &\to \Hom_k(V, W) \\
+\tilde v \tensor w &\mapsto \big(x \mapsto \tilde v(x)\, w\big)
+\end{aligned}
+$$
+is an isomorphism.
 :::
