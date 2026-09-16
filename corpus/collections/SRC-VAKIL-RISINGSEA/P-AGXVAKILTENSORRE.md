@@ -142,3 +142,14 @@ Two-sided inverse:
 - $(\alpha \circ \alpha^{-1})(c\tensor n) = \alpha(b\tensor n) = g(b)\tensor n = c\tensor n$, so $\alpha\circ \alpha^{-1}= \id$.
 - $(\alpha^{-1}\circ \alpha)([b\tensor n]) = \alpha^{-1}(g(b) \tensor n) = [b'\tensor n]$ where $b'\in g^{-1}(g(b))$, so $\alpha^{-1}\circ\alpha = \id$.
 :::
+
+::: {.remark}
+Erratum: the argument above is unfinished and contains the following errors.
+
+- The map $i : (B\tensor_R N)/\im(f\tensor \id_N) \to (B\tensor_R N)/\ker(g\tensor \id_N)$ induced by $\im(f\tensor \id_N) \subseteq \ker(g\tensor \id_N)$ is a surjection, not an injection; it is injective exactly when the two submodules are equal, which is the claim to be proved.
+- Elements of $\im(f\tensor \id_N)$ are finite sums of tensors $f(a)\tensor n$, not single tensors $b\tensor n$; the inclusion $\im(f\tensor\id_N) \subseteq \ker(g\tensor\id_N)$ is checked on these generators.
+- An isomorphism $\alpha$ gives $\ker(g\tensor\id_N) = \im(f\tensor\id_N)$ as submodules, not merely an abstract isomorphism $\cong$: the kernel of $\alpha$ is $\ker(g\tensor\id_N)/\im(f\tensor\id_N)$.
+- The bilinearity of $(c, n) \mapsto [b\tensor n]$ is left as "?". If $g(b) = c$ and $g(b') = c'$, then $g(b+b') = c+c'$ and $g(rb) = rc$, so the map is additive and $R$-linear in $c$; it is additive and $R$-linear in $n$ because $b \tensor n$ is. Without this the inverse $\alpha^{-1}$ on $C\tensor_R N$ is not defined.
+
+The opening remark's question has a negative answer: $f\tensor g$ comes from the universal property applied to the bilinear map $(x, a) \mapsto f(x)\tensor g(a)$, and the natural map $\hom(X,Y)\tensor_R\hom(A,B) \to \hom(X\tensor_R A, Y\tensor_R B)$ is not an isomorphism in general.
+:::

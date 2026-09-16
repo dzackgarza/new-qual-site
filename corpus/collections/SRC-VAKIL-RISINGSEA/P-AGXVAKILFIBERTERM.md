@@ -66,3 +66,9 @@ Show that the fiber product over the terminal object is the cartesian product.
 
 - By commutativity, $h_0 \circ h_1 = \id_{X\cross Y}$ and vice versa.
 :::
+
+::: {.remark}
+Erratum: the last step asserts $h_0\circ h_1 = \id_{X\cross Y}$ "by commutativity", which is not enough.
+Both $h_0\circ h_1$ and $\id_{X\cross Y}$ are maps $X\cross Y \to X\cross Y$ commuting with ${\operatorname{pr}}_X$ and ${\operatorname{pr}}_Y$, so they agree by the uniqueness clause of the universal property of $X\cross Y$.
+Likewise $h_1 \circ h_0$ and $\id$ commute with ${\operatorname{pr}}_X^T$ and ${\operatorname{pr}}_Y^T$, so they agree by the uniqueness clause for $\fiberprod{X}{T}{Y}$.
+:::
