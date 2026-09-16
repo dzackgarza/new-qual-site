@@ -311,8 +311,6 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-6POU4]]
 
-[[D-Y73BB]]
-
 [[D-VP4LC]]
 
 [[D-GIUR3]]

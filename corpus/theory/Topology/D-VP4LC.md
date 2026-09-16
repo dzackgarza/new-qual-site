@@ -9,9 +9,7 @@ classification:
   topics:
   - Cohomology
   - Homology
-relations:
-- kind: related-to
-  target: D-Y73BB
+relations: []
 review: draft
 ---
 
