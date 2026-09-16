@@ -122,9 +122,9 @@ a finding that the two cards are the same statement, and it must never be wired
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
-Semantic recurring review is advisory, not a check. `REVIEW_POLICY.md` is the named
-index of previously observed defect patterns and the reading tasks that can surface
-new candidates. The scheduled corpus-review crawler runs an agent only in an isolated,
+Semantic recurring review is advisory, not a check. The
+[corpus review patterns](CONTRIBUTING.md#corpus-review-patterns) name previously observed
+defect patterns and the reading tasks that can surface new candidates. The scheduled corpus-review crawler runs an agent only in an isolated,
 disposable copy of a bounded slice and copies back only its report. It must stop at
 candidate reporting: no candidate is a finding until a human reads it, no agent
 finding triggers an edit, and a run with no candidates is not evidence that the corpus
@@ -197,29 +197,9 @@ layer: they let a statement be cited, reused, collected into a guide, and
 located. The Stacks Project is a book whose statements carry tags. It is not a
 tag collection with a book laid over it. This wiki is the same.
 
-### External oracles versus local statement cards
-
-A stable card id is not a reason to duplicate a standard definition or theorem.
-Judge statement cards one at a time. If a canonical external oracle is strictly
-more complete and maintained, and the local card adds no qual-specific
-mathematical value, do not keep a proxy restatement merely so the repository can
-own a tag for it. Authored prose should resolve that reference through the
-external oracle. A stable permalink whose job is to take the reader to the
-canonical definition or theorem is navigation, not a substitute bibliography:
-link that permalink directly, but keep author/title/year attribution and other
-bibliographic claims under the citation policy below.
-
-The converse matters just as much: retain a local card when it adds something
-the oracle does not supply in the form this audience needs -- a useful slogan,
-specialization, proof sketch, example, counterexample, warning, computation, or
-other review-specific synthesis. This is an editorial judgment, never a bulk
-deduplication rule and never a heuristic based on card kind or title.
-
-For localization, authored prerequisites name the denominator data as a
-**submonoid of the multiplicative monoid** $(R,\cdot)$ when $1\in S$ is part of
-the hypothesis. Do not weaken or silently rewrite source-authored problem text:
-a merely nonempty multiplication-closed subset need not contain $1$ and need not
-be a submonoid.
+Whether a standard definition or theorem keeps a local statement card or resolves to an
+external oracle is `SOURCE-02` in [CONTRIBUTING.md](CONTRIBUTING.md); how localization
+prerequisites are phrased is `DEF-35`.
 
 ### Where agents get this wrong
 
@@ -385,37 +365,10 @@ your head is a defect the next worker meets fresh.
 
 ## Public audience and remarks
 
-The audience for this project is graduate students reviewing for a qualifying
-exam after already taking a graduate course on the material. They are not
-first-time learners. Public prose exists to support recall and problem solving:
-state the result, link or transclude the statement, record the hypothesis that
-usually gets missed, give the consequence used in solutions, or name the
-counterexample/technique that decides a problem. Do not spend a sentence merely
-convincing the reader that a theorem is important, useful, elegant, a
-"workhorse", or what "makes the theory work". Replace that framing with the
-mathematical payload it was standing in for.
-
-A causal sentence is not filler merely because it contains "because" or "so".
-"Apply monotone convergence to partial sums to interchange $\sum$ and $\int$"
-is review content. "Monotone convergence matters because it is useful for
-series" is not. This distinction is editorial and must be made by reading the
-mathematics, never by a phrase-matching rewrite.
-
-The public-facing surface — essentially the body of every card — should contain
-only mathematical content: problem statements, definitions, theorems, solutions,
-hints, errata, notes on questions (e.g. noting that a question is starred), and
-contextual mathematical remarks (e.g. a remark explaining a reference to
-something else in the source).
-
-Internal process notes do NOT belong in `::: remark` blocks. Remarks render
-on the public site and are visible to readers. Do not discuss provenance,
-internal status, what is or isn't included, collection membership, missing
-sources, or any other curation concern in remarks. Those belong in git commit
-messages, repo-internal docs, or the vault.
-
-It is valid for a remark to note that a problem references something not
-included in the card (e.g. "this problem relies on Theorem X from the source")
-— that is mathematical context, not internal status.
+The audience, the public surface of a card, and what a rendered remark may carry are defined in
+[CONTRIBUTING.md](CONTRIBUTING.md#audience-and-scope): `PROSE-01`, `PROSE-11`, `SEC-7`, and
+`QUAL-08`. Deciding whether a sentence is filler or review content is editorial and is made by
+reading the mathematics, never by a phrase-matching rewrite.
 
 ## Areas
 
@@ -489,11 +442,19 @@ recipe. Its output is committed corpus content; the tool itself is fossil.
 
 ## PDF extraction
 
-PDF intake has one epistemic baseline: a **deterministic high-quality machine extraction**.
-The only valid method is MinerU Flash:
+PDF intake has one epistemic baseline: a **high-quality machine extraction** checked into the repository.
+Two methods are valid. Use MinerU Flash first:
 
 ```bash
 mineru-open-api flash-extract myfile.pdf --language en
+```
+
+When MinerU Flash fails on a source (timeouts, parse failures, or garbled output at an
+identified location), extract it with the Mistral OCR API, which writes the extraction and its
+provenance file:
+
+```bash
+just ocr-pdf assets/attachments/myfile.pdf assets/attachments/myfile_extracted.md
 ```
 
 Do not use `pdftotext`, `pdftoppm`, Tesseract, PyMuPDF/`fitz`, PDFium/`pypdfium2`,
@@ -502,24 +463,24 @@ or validation substitute. A model looking at a rendered PDF page provides no rep
 evidence that an extraction is correct; visual agreement must never be used to certify a
 statement, problem count, formula, label, or source transcription.
 
-Every problem-bearing PDF consumed by intake must therefore have a checked-in MinerU Flash
-Markdown extraction. The extraction is the auditable transcription baseline from which cards
+Every problem-bearing PDF consumed by intake must therefore have a checked-in MinerU Flash or
+Mistral OCR Markdown extraction. The extraction is the auditable transcription baseline from which cards
 are produced. An existing `*_extracted.md` or `assets/attachments/extracted/*.md` file may be
-reused only when repository evidence establishes that it came from the approved MinerU Flash
-path. **Unknown extraction provenance is not acceptable evidence:** regenerate the extraction
-with MinerU Flash before using it for intake.
+reused only when repository evidence establishes that it came from one of these two paths.
+**Unknown extraction provenance is not acceptable evidence:** regenerate the extraction before
+using it for intake.
 
-Non-deterministic/model work begins only *after* the deterministic extraction exists. Its role
+Model work begins only *after* the machine extraction exists. Its role
 is limited to transcription cleanup and resolving concrete extractor errors or ambiguities. If a
 specific extraction defect must be resolved against the original PDF, inspect only that disputed
 location and record the correction as such; do not turn source inspection into an independent
-second transcription pass or a claim that the rest of the extraction has been verified. If the
-deterministic extractor cannot run, intake of that PDF is blocked rather than silently falling
-back to another extraction path.
+second transcription pass or a claim that the rest of the extraction has been verified. If
+neither extractor can run, intake of that PDF is blocked rather than falling back to another
+extraction path.
 
 A genuine source that exists only as a retained raster image is not a separate extraction case.
 Preserve the original image as provenance, wrap it losslessly and deterministically into a PDF
-container, record the image hash and derived-PDF hash, and run the same MinerU Flash extraction on
+container, record the image hash and derived-PDF hash, and run the same extraction on
 that PDF. The conversion step must not OCR, resample, enhance, redraw, or otherwise interpret the
 image. Model vision is still not evidence. If the image itself is missing (for example the lost Anki
 `collection.media` figures), there is nothing to convert or extract; that remains missing-source
@@ -753,12 +714,7 @@ different exams, or a compilation may contain overlapping problem sets. Each
 collection independently lists the problems it contains; the same problem card
 may be referenced by many collections. Do not merge, deduplicate, or suppress
 a problem card because it appears in multiple places — that is correct behavior,
-not redundancy.
-
-`::: remark` blocks render on the public site. They may discuss the mathematics
-or the contents of the card (for example which pages of a multi-institution
-scan this exam occupies). They are not a dump of missing PDFs, wiki paths,
-or the state of the provenance field.
+not redundancy. What a rendered remark may say about a card's sources is `SEC-7`.
 
 # Data issues
 
@@ -791,14 +747,10 @@ disposition, so record the reason in `TODO.md`.
 
 ## Reconcile queues before claiming
 
-Every stream solves on `main`, so a queue is stale the moment a sibling commits.
-Before claiming cards from a queue (`queues/C-unsolved-cards.md` and its siblings),
-regenerate it against the working tree as it stands now. Never claim from a queue
-you read before your last pull; a stale queue produces duplicate solving of the
-same card.
-All authoring requires a live claim against the reconciled queue —
-batch-committing cards authored off-queue is prohibited. Reconcile again at
-release so the queue the next agent reads reflects the work just delivered.
+Every stream solves on `main`, and the queues are regenerated at push, so a queue can be stale
+the moment a sibling commits. Before claiming a card from `queues/C-unsolved-cards.md` or a
+sibling queue, read the card itself: a listed card may already carry a solution. Never author
+the same card as a sibling; batch-committing cards authored off-queue is prohibited.
 
 # One checkout, one branch
 
@@ -880,78 +832,39 @@ dependency; do not retain a completed snapshot merely as insurance.
 
 # Running checks
 
-For prose-only changes that leave every posed-item (`problem` / `exercise`) block unchanged, including
-authored mathematical solutions, inspect the diff and review the mathematics, then use
-`git commit --no-verify`. Commit each completed card before selecting the next one. This is
-the authorized docs-only exemption from automated verification, including the Git skill's
-hook rule. Do not run builds, test suites, broad formatters, or queue regeneration for these
-commits. Adding a solution and its audit entry is authored content.
+**Commit content with `git commit --no-verify`.** This is the repository owner's sanctioned commit
+route for prose-only, documentation-only, and authored-content commits (copy, prose, mathematics,
+solutions, statement corrections, new cards): it is the documented workflow, not an evasion of any
+gate. Those commits are verified by reading the diff, and every gate runs at push. `just
+commit-card` takes the same route. Code, renderer, schema, and executable-configuration commits use
+normal hooks.
 
-A new problem card, an ingested collection containing new problem cards, or any edit to an
-existing posed-item (`problem` / `exercise`) block is **not** in that exemption. Commit it normally. The local
-`test-commit` runs `_extraction-detector-staged` before delegating to the shared formatter,
-so untranscribed extractor output is rejected while its line layout is still intact.
-`just commit-card` follows the same rule automatically: it skips hooks only when the problem
-block is byte-for-byte unchanged from `HEAD`; a statement edit takes the normal hook path.
+Checks follow `QUAL-06` in [CONTRIBUTING.md](CONTRIBUTING.md#named-policies). Content work — copy,
+prose, mathematics, solutions, statement corrections, and new cards or ingested collections — is
+verified by reading its diff and reviewing the mathematics, and is committed as soon as the item is
+done. Do not run or wait on builds, test suites, renders, screenshots, broad formatters, or queue
+regeneration for content work: repairs to copy, prose, mathematics, and solutions are checked by
+eye until they are pushed. The content-specific gates — the extraction detector, which rejects
+untranscribed extractor output in a problem block, and the regeneration of
+`queues/C-unsolved-cards.md` — run at push, together with the build, crawl, and test suite.
+Builds, renders, and rendered-page inspection belong to the push and deployment phase.
 
-Code, renderer, schema, executable configuration, and mixed code/content
-changes use the normal commit and push gates. Use focused checks while
-investigating a specific defect; let those gates run the broader checks.
+Code, renderer, schema, executable configuration, and mixed code/content changes use the normal
+commit and push gates. Use focused checks while investigating a specific defect; let those gates
+run the broader checks.
 
 ## A red gate is the current task
 
-The first time a commit or push gate, hook, or check goes red, stop authoring
-and diagnose it: root-cause and fix the gate, or report it as a blocker with a
-reproducer. Never continue authoring cards behind a red gate, and never
-accumulate uncommitted work around one. A gate that is red on two consecutive
-commit attempts is a defect to diagnose, not an environment condition to wait
-out.
+When a gate you run — a code commit gate, or the push gate — goes red, stop and diagnose it:
+root-cause and fix the gate, or report it as a blocker with a reproducer. Do not push behind a red
+gate, and do not accumulate unpushed work around one. A gate that is red on two consecutive
+attempts is a defect to diagnose, not an environment condition to wait out.
 
-# Citation policy
+# Citations, collection references, and titles
 
-Never cite a source in prose. All citations must go through the bibliography:
-1. Find external oracles for bibtex information — never confabulate it from
-   memory.
-2. Integrate the entry into the bibliography.
-3. Cite using standard pandoc-crossref syntax.
-
-Never repeat the title, author, or year in prose. CSL controls and unifies the
-presentation of citations. Inline citation like `(Author, Year)` in prose is
-fabricating metadata; the bibliography handles this.
-
-# Card references to collections
-
-Do not have cards manually reference which collections they appear in. This is
-redundant: collections list their problems in `source.problems`, and backlinks
-are generated automatically to populate this information. Cards should not
-contain prose like "this problem appears in Exam X" or "see also collection Y"
-— the site renders this from collection relationships.
-
-# Card titles and source locators
-
-A card title names the mathematics on the card. A textbook section number, exam
-problem number, or other source locator is not a title. Source locators belong to
-the collection entry that lists the problem, because one problem may occur at
-different locations in different sources.
-
-Use mathematical notation in a title when prose would merely spell out a standard
-formula or object. Write `$\ZZ^3$`, `$x^8+1$`, `$L^2$`, `$\pi_3$`,
-`$\ZZ\times\ZZ$`, or `$\frac{\cos x}{(1+x^2)^2}$`, not "Z cubed",
-"x to the eighth plus one", "L2", "pi_3", "Z x Z", or "cos x over the
-square of one plus x squared". Prose should name the mathematical phenomenon;
-notation should carry routine formulas. Do not make the opposite mistake of
-turning an ordinary conceptual title such as "Product of compact spaces" into
-unreadable symbol soup merely because symbols are available.
-
-```yaml
-- id: P-EXAMPLE
-  comment: Hungerford 4.1.7
-```
-
-The card itself keeps only its mathematical name. The rendered Source Collections
-panel combines the collection name with that appearance comment. Do not add a
-card-level `subtitle:` for provenance; that field was retired once collection
-appearances became the canonical home for locators.
+Citations follow `CITE-1` and `CITE-2`; a card does not list the collections it appears in
+(`SOURCE-03`); and a card title names the mathematics, with source locators on the collection
+appearance (`CARD-01`, `CARD-02`, `CARD-06`). All are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 # Review prompts
 
@@ -989,16 +902,15 @@ workflow are deliberately separate:
 
 - `queues/C-unsolved-cards.md` — the measurement. It lists every problem card
   with no `solution` section.
-  Regenerated by `just unsolved` and by non-bypassed corpus commit gates.
-  Prose-only commits leave this measurement at its last refresh; read the
-  candidate card before selecting it. A card leaves the list only by gaining
+  Regenerated by `just unsolved` and at push; between pushes it can lag the
+  corpus, so read the candidate card before selecting it. A card leaves the list only by gaining
   a solution; the boxes are a measurement, not a ledger.
 - `TODO.md` §7, "Author solutions", together with issue #2 — the authored
   repeating loop, which begins after `publication-milestone`. Select one unsolved card, read the problem and its source,
   independently verify any retained source solution, write a complete
   Lamport-style structured proof in a `solution` section on that same problem
-  card, and commit it before selecting the next card using the prose-only
-  route in [Running checks](#running-checks).
+  card in the layout `STYLE-08` fixes, and commit it before selecting the next
+  card, verified by reading as [Running checks](#running-checks) describes.
 
 `just sample-unsolved COLLECTION [n] [section]` samples up to n distinct
 unsolved card IDs (default 5) from one collection's authored appearances and
@@ -1038,155 +950,3 @@ This list is a record, not a status. Nothing is derived from it, and it does not
 replace the rule above: a card is solved because it carries a solution, not
 because someone wrote it down here. Record only events you can substantiate.
 Backfilling the list for cards whose history nobody knows is fabricating content.
-
-* * *
-
-> Source: `PR_GUIDANCE.md` in `ai`.
-
-# Review Guidelines
-
-These are additional requirements for reviewing agent work.
-They do not replace the reviewer’s normal role, repo-specific standards, or technical
-judgment. They provide the failure model that should shape the review.
-
-The task is not merely to review a PR. The task is to decide whether a completion claim
-is true under the original objective.
-The standard is full, correct, provable completion against the original requirements and
-repo guidelines. Anything less is incomplete work that must not be treated as a win.
-
-## Failure Model
-
-Agents systematically produce impressive non-completion.
-Common patterns are: polished summaries that imply finished work, caveats that quietly
-narrow the goal, reclassification without proof, delegated discovery presented as
-resolution, process language that substitutes for evidence, merged PRs treated as
-completion, passing checks treated as semantic proof, and artifacts that look
-substantial while leaving required work unowned.
-
-Treat the agent’s summary, PR description, closing comment, issue closure, “goal
-completed” statement, and self-reported validations as untrusted.
-They may be diagnostic pointers, but they are not evidence that the work is complete.
-The evidence is the original issue or task, the code diff, tests, source/runtime facts,
-review comments, and produced artifacts.
-
-## Decisive Invariants
-
-Preserve the original success condition.
-Read the original issue or task before accepting any restatement of it.
-Keep its quantifiers intact: “all,” “complete,” "full subset," “zero remaining,” and
-similar terms cannot be quietly narrowed to examples, partial coverage, known blockers,
-or whatever the PR happened to touch.
-
-Nothing required may disappear silently.
-A required work family must be implemented, explicitly falsified, or validly
-reclassified with evidence that satisfies the issue’s own standard.
-Partial implementation is not completion.
-Future work is not completion.
-Count reduction is not completion.
-Resolved review threads are not completion.
-Passing checks are not completion.
-Substantial-looking work is not completion.
-“Better than before” is not completion.
-
-Goal substitution is the main thing to detect.
-Ask whether the submitted work solves the original problem or merely produces a narrower
-artifact: cleaner metadata, a partial subset, a better explanation, a new issue, a
-renamed scope, a local workaround, or proof that someone should investigate later.
-
-Technically correct administrative artifacts can be goal substitution.
-A well-written issue, comment, audit note, scope statement, or enumeration of remaining
-work may be required, but it does not complete implementation, testing, proof, or
-downstream cleanup. If the original task requires execution, the artifact is only useful
-insofar as it drives that execution; it must not become the stopping point.
-
-Treat self-scoped remaining-work lists as a severe completion-laundering pattern.
-When an agent is asked to enumerate remaining work, the domain is the original full
-completion requirement, not the agent’s intended subset, the PR’s current shape, a
-closeability criterion, or the work left after deferral and reclassification.
-A valid enumeration subtracts only artifact-proven completed work from the original
-contract. Deferrals, routed follow-ups, owner changes, and truthful incompletion notes
-remain unresolved work unless the original task explicitly made that administrative
-routing the whole deliverable.
-
-If an agent repeats a narrowed enumeration after being corrected, treat that as a hard
-misalignment signal, not as an innocent wording issue.
-The reviewer should identify the original full requirement, the scope the agent
-substituted, and the required work hidden by that substitution.
-
-Silent reclassification is not resolution.
-If the PR says remaining work is out-of-scope, research-owned, stub-owned, plugin-owned,
-downstream-owned, or future-owned, require evidence from the relevant source/runtime
-behavior, repo boundary, or original acceptance criteria.
-A sentence in the PR description is not enough.
-
-Ownership boundaries matter.
-The submitting repo must prove its own claimed behavior and do the blocker forensics
-required by its own issue.
-Do not require a receiving or downstream repo to classify another project’s internal
-uncertainty unless the original issue explicitly made that part of acceptance.
-When an external issue is created, it should be written for that receiving repo, not for
-a reader who already knows the submitting repo’s context.
-
-## Evidence Expectations
-
-Review tests as evidence, not as decoration.
-Valid tests exercise the real production path or semantic requirement.
-Be skeptical of helper-only tests, tautologies, assertions of the implementation’s own
-output, bypasses around the runtime/plugin/stub path, example-only coverage where the
-issue required full coverage, weakened assertions, and missing invalid-nearby cases
-where the fix could overgeneralize.
-
-For plugin work, the evidence should usually distinguish valid generic behavior from
-invalid nearby ordinary Python and should not hard-code a downstream consumer.
-For stubs work, the evidence should be source-backed: the upstream surface exists, the
-stub matches public behavior, no fake API is added, no Any/object opacity escape is
-introduced, and inherited-method inflation is not used unless source exposes that
-surface.
-
-Watch for code-level laundering: hard-coded consumer names, support for local research
-abstractions as if they were external API, fake stubs, broad Any/object escapes, line
-suppressions, diagnostic filtering, deletion of required data, broad type widening, and
-any move that makes checks pass by weakening the problem instead of solving it.
-
-## When Acting on Review Feedback
-
-A positive disposition requires a commit.
-
-Do not resolve an accepted review comment until the code/proof remediation is committed and the reply cites the commit.
-
-Never reply “accepted,” “aligned,” “fixed,” “addressed,” or “will address” to a review thread unless the remediation is already committed. A thread cannot be resolved on intent or future work.
-
-Rejected and modified feedback must be collected in a top-level PR comment titled `Review feedback disposition ledger` so resolved threads do not hide the audit trail.
-
-Review comments are not implementation specs. The worker must translate accepted feedback into first-principles remediation requirements before assigning implementation.
-
-For each comment:
-- Identify the concern.
-- Identify the proposed fix.
-- Decide whether the concern is true under global + repo policy.
-- Decide whether the proposed fix preserves those policies.
-- If the concern is true but the fix is wrong, apply a policy-compatible remediation.
-
-## Writing the Review
-
-Write nuanced feedback for an intelligent reader.
-Do not force a machine-readable template, a mandatory table, or a simplistic pass/fail
-label when prose communicates the situation better.
-Do make the completion judgment clear: whether the original task can be considered
-complete, what evidence supports that judgment, and which unresolved requirements block
-completion if any remain.
-
-Do not foreground effort, progress, good intentions, volume of work, or “substantial”
-partial implementation when required work remains.
-Mention completed pieces only when they are necessary to identify the exact remaining
-blockers or to prevent redoing already-correct work.
-Do not compare incomplete work to “no work done” or “completely fake work”; compare it
-to the expected standard: the task done correctly, completely, and provably.
-
-When required work remains, lead with the incompleteness and the concrete blockers.
-Do not make the reader excavate the missing work from beneath praise, context-setting,
-or a narrative of what did get done.
-
-Nuance belongs in the evidence and blocker analysis, not in softening the completion
-standard. The review should make it easy to finish the work, not easy to feel satisfied
-with less than the original contract required.
