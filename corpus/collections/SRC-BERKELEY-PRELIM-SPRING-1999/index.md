@@ -39,7 +39,3 @@ source:
     term: spring
     year: 1999
 ---
-
-::: remark
-The retained PDF is titled *Preliminary Exam - Spring 1999* and contains Problems 1--18 in source order. The existing Berkeley prelim resource page identifies `Spring99.pdf` in the Berkeley exam sequence. Problem 8's displayed matrix is incomplete in every retained extraction; the missing row is recorded explicitly on that card rather than reconstructed.
-:::
