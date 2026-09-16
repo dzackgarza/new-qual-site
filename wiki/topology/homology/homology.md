@@ -12,43 +12,44 @@ topics:
 
 # Homology theory and computations
 
-## Useful Facts
+## Basic properties
 
-:::{.fact}
+::: {.fact}
 $H_0(X)$ is a free abelian group on the set of path components of $X$.
-Thus if $X$ is path connected, $H_0(X) \cong \ZZ$.
-In general, $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$, where $\abs{\pi_0(X)}$ is the number of path components of $X$.
+In particular, $H_0(X) \cong \ZZ$ if $X$ is path connected, and $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$ if $X$ has finitely many path components.
 
 :::
 
 [[PR-B6BB2]]
 
-:::{.example title="Application"}
-\[
-H_{n}(\bigvee_{k} S^n) = \ZZ^k
-.\]
+::: {.example title="Wedges of spheres"}
+For $n\geq 1$ and $k\geq 1$,
+$$
+H_{n}\qty{\bigvee^{k} S^n} \cong \ZZ^k.
+$$
 
 :::
 
-:::{.proof}
+::: {.proof}
 Give the finite wedge one $0$-cell and $k$ cells in dimension $n$.
 Its cellular chain group in degree $n$ is therefore $\ZZ^k$, with zero incoming and outgoing cellular differential in that degree, so
-\[
+$$
 H_n\qty{\bigvee_{j=1}^k S^n}\cong \ZZ^k.
-\]
+$$
 
 :::
 
-:::{.warnings}
-$H_{k} \qty{ \prod_ \alpha X_ \alpha}$ is **not** generally equal to $\prod_ \alpha \qty{ H_{k} X_ \alpha }$.
-For a finite product, the Künneth theorem describes the correction terms. In particular, if the relevant homology groups are torsion-free, then
-\[
+::: {.remark}
+In general $H_{k} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{k} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_k$.
+If the homology groups of $A$ are free, then
+$$
 H_{k} (A\cross B) \cong \bigoplus_{i+j=k} H_{i}(A) \tensor H_{j}(B)
-\]
-and iteration gives the corresponding tensor-product decomposition for a finite product.
-\[
-H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bigotimes_{i=1}^{k} H_{x_{i}}(X_{i}).
-\]
+$$
+and if the homology groups of $X_1,\ldots,X_{k-1}$ are free, iterating gives
+$$
+H_{n}\qty{\prod_{j=1}^k X_{j}} \cong \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bigotimes_{i=1}^{k} H_{x_{i}}(X_{i}),
+$$
+where $\mathcal P(n,k)$ is the set of $k$-tuples $\mathbf x=(x_1,\ldots,x_k)$ of nonnegative integers with $x_1+\cdots+x_k=n$.
 
 :::
 
@@ -56,7 +57,7 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 
 [[T-FBMYQ]]
 
-:::{.fact title="Cellular-chain quick checks"}
+::: {.fact title="Cellular-chain quick checks"}
 \envlist
 
 - If a CW complex has no $n\dash$cells, then its cellular chain group $C_n(X)$ is zero, hence $H_n(X)=0$.
@@ -64,21 +65,21 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 
 :::
 
-## Known Homology
+## Computed homology groups
 
-:::{.example title="Spheres"}
-\[
+::: {.example title="Spheres"}
+$$
 H_{i}(S^n) = 
 \begin{cases}
 \ZZ & i = 0, n
 \\
 0 & \text{else}.
 \end{cases}
-\]
+$$
 
 :::
 
-### Real Projective Spaces
+### Real projective spaces
 
 [[FF-SYCKI]] [[FF-LFY7V]]
 
@@ -86,7 +87,7 @@ H_{i}(S^n) =
 
 [[FF-7LLAF]]
 
-### Complex Projective Spaces
+### Complex projective spaces
 
 [[FF-NEJ3S]]
 
@@ -96,8 +97,8 @@ H_{i}(S^n) =
 
 ## Mayer-Vietoris
 
-:::{.fact title="Useful algebra fact"}
-Since $\ZZ$ is free and thus projective, any exact sequence of the form $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits and $A\cong \ZZ^{n}\cross \ZZ^m$.
+::: {.fact title="Splitting over a free quotient"}
+Since $\ZZ^m$ is free, every exact sequence of abelian groups $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits, so $A\cong \ZZ^{n}\oplus \ZZ^m$.
 
 :::
 
@@ -105,59 +106,60 @@ Since $\ZZ$ is free and thus projective, any exact sequence of the form $0 \to \
 
 [[T-3VUOH]]
 
-:::{.example title="Application: computing the homology of a connect sum"}
-$H_*(A \# B)$: Use the fact that $A\# B = A \union_{S^n} B$ to apply Mayer-Vietoris.
+::: {.example title="Homology of a connected sum"}
+For connected closed $n$-manifolds $M$ and $N$, $M\# N = (M\sm D)\union_{S^{n-1}} (N\sm D')$ for open $n$-balls $D\subseteq M$ and $D'\subseteq N$.
+The Mayer--Vietoris sequence for open neighborhoods of the two pieces, which deformation retract onto them and meet in a neighborhood of $S^{n-1}$ deformation retracting onto $S^{n-1}$, computes $H_*(M\# N)$ from $H_*(M\sm D)$, $H_*(N\sm D')$, and $H_*(S^{n-1})$.
 
 :::
 
 [[PR-6PENU]]
 
-:::{.proof}
-Write $X = A \cup B$, the northern and southern hemispheres, so that $A \cap B = S^{n-1}$, the equator. In the LES, we have:
+::: {.proof}
+Let $n\geq 1$ and write $S^n = A \cup B$ with $A$ and $B$ open neighborhoods of the closed northern and southern hemispheres, chosen so that $A$ and $B$ are contractible and $A \cap B$ deformation retracts onto the equator $S^{n-1}$.
+The Mayer--Vietoris sequence in reduced cohomology contains
 
-\[
-H^{i+1}(S^n) \xrightarrow{} H^i(S^{n-1}) \xrightarrow{} H^iA \oplus H^i B \xrightarrow{} H^i S^n \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} H^{i-1}A \oplus H^{i-1}B
-.\]
+$$
+\tilde H^{i-1}(A) \oplus \tilde H^{i-1}(B) \to \tilde H^{i-1}(S^{n-1}) \xrightarrow{\delta} \tilde H^i(S^n) \to \tilde H^iA \oplus \tilde H^i B
+.$$
 
-But $A, B$ are contractible, so $H^iA= H^iB = 0$, so we have
+Since $A$ and $B$ are contractible, their reduced cohomology vanishes, so
 
-\[
-H^{i+1}(S^n) \xrightarrow{} H^{i}(S^{n-1}) \xrightarrow{} 0 \oplus 0 \xrightarrow{}H^i(S^n) \xrightarrow{} H^{i-1}(S^{n-1}) \xrightarrow{} 0
-.\]
-
-In particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, which is always an isomorphism.
+$$
+0 \to \tilde H^{i-1}(S^{n-1}) \xrightarrow{\delta} \tilde H^i(S^n) \to 0
+$$
+is exact, and $\delta$ is an isomorphism $\tilde H^{i-1}(S^{n-1})\cong \tilde H^i(S^n)$.
 
 :::
 
-## More Exact Sequences
+## Further exact sequences
 
 [[T-TZ3X7]]
 
 [[T-2W5WN]]
 
-## Relative Homology
+## Relative homology
 
-:::{.fact title="Relative and cellular homology"}
+::: {.fact title="Relative and cellular homology"}
 \envlist
 
 - If $(X,A)$ is a good pair, then the quotient map induces
-  \[
+  $$
   H_n(X,A)\cong \widetilde H_n(X/A).
-  \]
+  $$
 
 - The long exact sequence of a pair is
-  \[
+  $$
   \cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots.
-  \]
+  $$
 
 - For a CW complex $X$, the cellular filtration satisfies
-\[
+$$
 H_j(X^{(k)},X^{(k-1)}) \cong
 \begin{cases}
 \ZZ[\theset{\text{$k$-cells of $X$}}] & j=k,\\
 0 & j\neq k,
 \end{cases}
-\]
+$$
 since $X^{(k)}/X^{(k-1)}$ is a wedge of $k$-spheres, one for each $k$-cell.
 
 :::
