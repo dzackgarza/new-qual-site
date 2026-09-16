@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-6FSWY
 kind: definition
-title: Retract
+title: Retract and retraction
 classification:
   areas:
   - topology
@@ -14,24 +14,23 @@ review: draft
 ---
 
 ::: {.definition}
-A **retract** $r$ of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
+Let $X$ be a topological space, $A\subseteq X$ a subspace, and $\iota\colon A\injects X$ the inclusion.
+A \dfn{retraction} of $X$ onto $A$ is a continuous map $r\colon X\to A$ with $r\circ\iota = \id_A$, that is, $r(a) = a$ for all $a\in A$:
 
 \begin{tikzcd}
-	A && B
-	\arrow["f", from=1-1, to=1-3]
-	\arrow["r"', curve={height=18pt}, dashed, from=1-3, to=1-1]
-	\arrow[loop left, from=1-1]{l}{\mathrm{id}_A} 
+	A && X \\
+	\\
+	&& A
+	\arrow["\iota", hook, from=1-1, to=1-3]
+	\arrow["r", from=1-3, to=3-3]
+	\arrow["{\id_A}"', from=1-1, to=3-3]
 \end{tikzcd}
 
-> [Link to (partial) Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXSxbMSwwLCJyIiwyLHsiY3VydmUiOjMsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
-
-Equivalently, a continuous map $r:B\to A$ with $\ro{r}{A} = \id_A$ restricting to the identity on $A$, i.e. fixing $A$ pointwise.
-Note that $r$ is necessarily a surjection.
-
-Alt: Let $X$ be a topological space and $A \subset X$ be a subspace, then a **retraction** of $X$ onto $A$ is a map $r: X\into X$ such that the image of $X$ is $A$ and $r$ restricted to $A$ is the identity.
+The subspace $A$ is a \dfn{retract} of $X$ if there exists a retraction of $X$ onto $A$.
+:::
 
 ::: {.remark}
-If $X$ retracts onto $A$ with $\iota:A\injects X$, then $i_*$ is injective.
-Any nonempty space retracts to a point via a constant map.
-:::
+A retraction $r\colon X\to A$ is surjective.
+If $r$ is a retraction and $a_0\in A$, then $r_*\circ\iota_* = \id$ on $\pi_1(A, a_0)$ and on $H_n(A)$, so $\iota_*\colon \pi_1(A, a_0)\to\pi_1(X, a_0)$ and $\iota_*\colon H_n(A)\to H_n(X)$ are injective.
+For every point $x_0$ of a topological space $X$, the subspace $\ts{x_0}$ is a retract of $X$, via the constant map $X\to\ts{x_0}$.
 :::
