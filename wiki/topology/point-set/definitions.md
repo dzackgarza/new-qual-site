@@ -123,8 +123,6 @@ For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some n
 
 [[D-VZFJQ]]
 
-[[D-YN6RQ]]
-
 [[D-7ALR2]]
 
 [[D-JKH35]] [[D-WHVXL]] [[D-MQSFD]]
