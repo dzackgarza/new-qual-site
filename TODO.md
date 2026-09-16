@@ -104,34 +104,22 @@ Closing finished work is what makes the rest of this file mean anything.
 
 ### Terminal nodes
 
-Three repository-level nodes sit after every card, queue and publication obligation above.
-They are not card instances; they run once the corpus work they follow is closed.
+These repository-level nodes run only after the substantive corpus, source-intake, publication, and solution obligations above are closed. They are finite cleanup work, not a recurring reporting programme.
 
-- **`refactor-audit`**. **Needs:** every queue closed.
-  Audit the tooling and site sources — `tools/`, `site/`, the generators and checkers, not the authored cards — for messy, disorganized or duplicated code, and carry out the refactorings that consolidate sources of truth and restore proper encapsulation.
-  The card format and the published site need not change and should not change incidentally.
-  **This node explodes:** every refactor the audit identifies becomes its own node here with its own Needs, each terminating back into this node; recurse when one contains several.
-  A refactoring that is not a node is one nobody will do.
-  **Acceptance:** the audit is complete and every finding exists as a node — a scheduling node, not a work node, markable skippable once the plan is fully exploded.
+- **`refactor-audit`**. **Needs:** every substantive queue closed.
+  Inspect the tooling and site sources — `tools/`, `site/`, generators, and checkers, not authored mathematics — for concrete defects in ownership, encapsulation, duplicated sources of truth, unnecessary bespoke machinery, and maintainability that affects reliable behavior.
+  Repair a defensible finding at its actual owner rather than creating an audit receipt, inventory-only node, or approval stage. A genuinely large cross-owner repair may become a concrete DAG node with its real dependencies and behavioral acceptance; the audit itself does not recursively manufacture scheduling nodes.
+  **Acceptance:** every finding from the pass has been repaired at its owner, and a final repository-wide pass over the same scope finds no further concrete defect requiring work. A later regression is a new owner-local defect; it does not keep this historical audit open forever.
 
-- **`type-paydown`**. **Needs:** `refactor-audit`. Pay down type errors in the tooling where reasonable and no further.
-  Every typing decision must improve the legibility of the code, the ability to understand what it does, and the ability to reason statically about whether it is correct — that is the standard, not the error count.
-  Golfing the code into oblivion is the failure mode.
-  Where a contortion that exists only to silence a checker is genuinely warranted, it must be judged as significantly serving that goal, with the argument recorded explicitly in the commit message.
+- **`type-paydown`**. **Needs:** `refactor-audit`.
+  Repair the tooling type defects for which stronger typing materially improves legibility, comprehension, or static reasoning about correctness. The objective is the resulting program structure, not a diagnostic count. Do not add contortions whose only value is silencing a checker.
+  **Acceptance:** the type defects selected by the refactor pass have been repaired at their owning interfaces, with behavior preserved and the resulting annotations/interfaces clearer than the state they replace.
 
-- **`bloat-audit-loop`**. **Needs:** `type-paydown`. Terminal, and it loops rather than closing.
-  Each pass begins by rereading `AGENTS.md`, `CONTRIBUTING.md`, the current TODO contracts, and the relevant audit skills under `~/ai/opencode/skills/`: `addressing-shallow-work`, `policy-index`, `anti-slop`, `fixing-slop`, `bespoke-software-policy`, `code-patterns`, `thermo-nuclear-code-quality-review`, `brooks-audit`, `brooks-debt`, `test-guidelines`, `test-writing`, `known-solution-first`, `epistemic-integrity`, `reality-grounded-debugging`, `reviewing-llm-code`, `quality-control`, and `general-cleanup`. The skills are lenses, not a checklist: synthesize what this repository is trying to do before changing it.
+- **`bloat-audit-loop`**. **Needs:** `type-paydown`. The identifier is retained for history; the work is finite.
+  Make one final whole-tooling/site convergence pass using the relevant lenses already established for this repository: publisher/tool architecture, proof-bearing tests, API and type design, dependency/offload opportunities, duplicated sources of truth, dead compatibility bridges, generated-versus-authored boundaries, build/preview cost, and AI-slop patterns. Compare bespoke Markdown parsing/rendering against Pandoc and the existing Markdown toolchain before polishing local machinery that should disappear. Inspect representative public behavior; source-text churn is not acceptance evidence.
+  Repair each defensible finding at its owner. Do not create a complaint, dashboard entry, or DAG node merely to prove that the pass ran.
+  **Acceptance:** all findings from the pass are repaired and a final pass across those lenses finds no further defensible change. A no-finding pass makes no receipt commit. Later regressions are repaired when they occur rather than keeping this node permanently open.
 
-  Rotate interpretive audits across the publisher/tool architecture, proof-bearing tests, type and API design, dependency/offload opportunities, duplicated sources of truth, dead compatibility bridges, generated-vs-authored boundaries, build/preview cost, and AI-slop patterns.
-  In particular, compare local parsing/rendering machinery against Pandoc and the existing markdown toolchain before polishing a bespoke mechanism that should disappear.
-  Inspect real public behavior and representative pages; source-text tests and formatting churn do not establish correctness.
-
-  A small, well-supported finding is repaired in the same pass and committed with its regression.
-  A finding whose scope is genuinely large becomes one or more concrete DAG nodes with explicit dependencies and behavioral acceptance before implementation continues.
-  Never create a node merely to record that an audit ran.
-  A full pass that finds no defensible change makes **no commit and no complaint entry**; that is successful evidence that the repository has converged under that lens, not permission to close this terminal node.
-  Later passes use different lenses and may revisit old ones after the code changes.
-  The loop is never declared finished.
 
 ## Content issues and policy violations build log
 
