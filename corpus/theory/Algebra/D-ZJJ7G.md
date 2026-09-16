@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ZJJ7G
 kind: definition
-title: Torsion and torsionfree
+title: Torsion elements, torsion modules, and torsion-free modules
 classification:
   areas:
   - algebra
@@ -14,8 +14,13 @@ review: draft
 ---
 
 ::: {.definition}
-An element $m\in M$ is a **torsion element** if there exists a nonzero $r\in R$ such that $rm = 0_M$.
-A module \( M \) is **torsion-free** if and only if for every \( x\in M \), \( mx = 0_M \implies m=0_M \), i.e. $M$ has no nonzero torsion elements.
-Equivalently, defining $M_t \da \ts{ m\in M \st \exists r\in R, rm = 0_M }$ as the set of all torsion elements, $M$ is torsion free iff $M_t = 0$.
-If $M_t = M$, we say $M$ is a **torsion module**.
+Let $R$ be a commutative [[D-GURUB|ring]] and $M$ an $R$-module.
+
+- An element $m\in M$ is a \dfn{torsion element} if there exists a nonzero $r\in R$ with $rm=0$.
+
+- Write $M_t\coloneqq\theset{m\in M \st rm=0 \text{ for some nonzero } r\in R}$ for the set of torsion elements of $M$.
+
+- $M$ is \dfn{torsion-free} if no nonzero element of $M$ is a torsion element, that is, $M_t\subseteq\theset{0}$.
+
+- $M$ is a \dfn{torsion module} if $M_t=M$.
 :::

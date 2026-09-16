@@ -16,5 +16,9 @@ review: draft
 ---
 
 ::: {.definition}
-The field of rational functions, i.e. ratios of polynomials, in the variable $x$; $K(x) = \theset{{P(x) \over Q(x)} \suchthat P,Q \in K[x]}$
+Let $K$ be a [[D-UI6CU|field]].
+The \dfn{field of rational functions} in the variable $x$ over $K$ is the field of fractions of the polynomial ring $K[x]$:
+$$
+K(x)\coloneqq\theset{\frac{P(x)}{Q(x)} \st P,Q \in K[x],\ Q\neq 0}.
+$$
 :::

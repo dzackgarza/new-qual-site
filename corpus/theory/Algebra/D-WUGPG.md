@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-WUGPG
 kind: definition
-title: Dedekind Domains
+title: Dedekind domain
 classification:
   areas:
   - algebra
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.definition}
-A **Dedekind domain** is an integral domain for which the monoid $\Id(R)$ of nonzero ideals of $R$ satisfies unique factorization: every ideal can be decomposed uniquely into a product of prime ideals.
+A \dfn{Dedekind domain} is an [[D-QJ3QL|integral domain]] $R$ in which every nonzero [[D-GOFWL|ideal]] $I$ factors as a product $I=\mfp_1\cdots\mfp_n$ of nonzero prime ideals, with $n\geq 0$ and the empty product equal to $R$, and this factorization is unique up to the order of the factors.
 :::
