@@ -11,10 +11,11 @@ For an additional selected repair, use its issue or card ID, name its immediate 
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they arise in [COMPLAINTS.md](COMPLAINTS.md).
 
-### Milestone: publish with every remedial obligation cleared
+### Milestone: publish after repository-owned correctness/source remediation
 
-The site is published at `publication-milestone`, complete except for unsolved problems.
-Every remedial node below precedes it, and the long-tail solution work in [Author solutions](#7-author-solutions) follows it.
+The site is published at `publication-milestone`, complete except for unsolved problems and the independent corpus-wide presentation-convergence pass.
+Repository-owned correctness, source-intake, tooling, adjudication, migration, and complaint-remediation nodes precede it; the long-tail solution work in [Author solutions](#7-author-solutions) follows it.
+`copy-policy-repair` remains a real completion obligation, but it no longer serializes publication or solution authoring: solution authoring mutates the same prose, so an exhaustive presentation pass before that frontier stabilizes creates avoidable re-review. Any surface touched for other work must satisfy the copy policies immediately; the corpus-wide closure pass runs against the then-current reader-facing surface population rather than blocking substantive work now.
 
 The remedial nodes are listed in priority order.
 Take work from the highest-priority node that has ready work; work a lower node only while every higher node is closed or blocked on something outside the repository, such as an unreachable external service recorded against its source.
@@ -22,19 +23,19 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
 
 1. `policy-consolidation`
 
-2. `copy-policy-repair`
+2. `pdf-source-intake` — ingestion fixes the problem population, so the denominator is stable before mathematics is corrected over it.
 
-3. `pdf-source-intake` — ingestion fixes the problem population, so the denominator is stable before mathematics is corrected over it.
+3. `math-defect-repair`
 
-4. `math-defect-repair`
+4. `merged-proof-adjudication`
 
-5. `merged-proof-adjudication`
+5. `ag-notes-migration`
 
-6. `ag-notes-migration`
+6. `tooling-remediation`
 
-7. `tooling-remediation`
+7. `complaints-clearance`
 
-8. `complaints-clearance`
+`copy-policy-repair` is an independent presentation-convergence pass, not a priority gate for this remedial/publication sequence.
 
 - **`policy-consolidation`**. **Closed 2026-09-16.** `20020d3ab` and `94ef2330e`: `CONTRIBUTING.md` is the single catalogue with `STYLE-*` drift conventions; `REVIEW_POLICY.md`, `HANDOFF.md` and `TEXTBOOK_SOURCES.md` are deleted. **Needs:** none.
   Every named policy code lives in one catalogue, [CONTRIBUTING.md](CONTRIBUTING.md): the `QUAL-*` table, the copy, structure and presentation policies, and the review-crawl defect patterns now in `REVIEW_POLICY.md`, which is folded in and deleted, with the crawler workflow and every reference repointed.
@@ -42,10 +43,10 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   Where the corpus shows stylistic drift, the catalogue fixes one convention; defined terms are written `\dfn{term}`. Rules imported from another project's guide that do not govern this corpus are removed, and `AGENTS.md` carries no rule or imported guidance that duplicates or contradicts the catalogue.
   **Acceptance:** one catalogue, no duplicate or conflicting codes, no references to deleted files, and the formatter accepts the file.
 
-- **`copy-policy-repair`**. **Needs:** `policy-consolidation`. The policy catalogue in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families), including the `STYLE-*` presentation conventions, was written from violations and drift observed in the copy the site already publishes.
+- **`copy-policy-repair`**. **Non-gating presentation-convergence pass. Needs:** `policy-consolidation`. The policy catalogue in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families), including the `STYLE-*` presentation conventions, was written from violations and drift observed in the copy the site already publishes.
   Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
   Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
-  Work one page or card at a time, read the mathematics it states before rewriting its prose, and commit each surface before taking the next.
+  Work one page or card at a time and read the mathematics it states before rewriting its prose. Batch only adjacent/coherent surfaces when that reduces commit overhead without weakening semantic review. Recompute the current reader-facing surface population when this pass is active; an inventory measures the finite frontier but never substitutes for reading.
   Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `COPY-02` (filed as `PROSE-02`) reports on issues #86 and #88 is a lead to read, not a finding.
   **Acceptance:** every surface in that scope has been read against the policies and its violations rewritten, with the mathematics preserved; no surface is closed by a receipt, an inventory or an audit note.
 
@@ -82,7 +83,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   Every entry in [COMPLAINTS.md](COMPLAINTS.md) is repaired at its owner or removed because it is not a defect in this repository, as that file prescribes.
   **Acceptance:** `COMPLAINTS.md` holds no entry observed before the milestone, and Queue H is empty.
 
-- **`publication-milestone`**. **Needs:** `policy-consolidation`, `copy-policy-repair`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`, `ag-notes-migration`, `tooling-remediation`, `complaints-clearance`. Deploy the site from a revision at which all of them are closed.
+- **`publication-milestone`**. **Needs:** `policy-consolidation`, `pdf-source-intake`, `math-defect-repair`, `merged-proof-adjudication`, `ag-notes-migration`, `tooling-remediation`, `complaints-clearance`. Deploy the site from a revision at which all of them are closed.
   **Acceptance:** the deployed `revision.txt` names that revision, and the rendered site is inspected under the same criteria as [Prove the deployed site](#prove-the-deployed-site).
 
 ### Solutions after the milestone
