@@ -39,3 +39,7 @@ It is proved in [[algebraic-geometry/cohomology/index|cohomology]].
 ## Formal schemes
 
 [[D-SCHFORMAL]]
+
+## Checking a property on one affine cover
+
+[[T-AFFCOMM]]
