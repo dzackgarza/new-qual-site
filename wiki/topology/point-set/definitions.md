@@ -255,7 +255,7 @@ If $A$ and $B$ both deformation retract onto a common subspace $X$, then $A \hom
 
 [[D-QK5BM]]
 
-[[D-Z2V7T]]
+[[D-S7L6M]]
 
 ::: {.example title="A right exact functor"}
 For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right exact, and it is exact if and only if $M$ is flat.
@@ -426,8 +426,6 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 [[D-XSBR2]]
 
 [[D-TZSG2]]
-
-[[D-S7L6M]]
 
 [[D-STPAM]]
 
