@@ -23,6 +23,7 @@ prompts:
 - State the sharp bound on $\size \Aut C$ and the curve that attains it.
 - Where do the automorphisms of a genus-$3$ curve come from?
 - Does the general curve of genus $g \geq 3$ have a nontrivial automorphism?
+- What is Hurwitz's theorem?
 ---
 
 ::: {.proposition}

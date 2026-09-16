@@ -19,6 +19,8 @@ Note which invariants move and which do not: $K^2$ drops by one and $\rho$ rises
 
 The strict transform formulas are the tool for resolving plane curve singularities, since blowing up an ordinary $m$-fold point removes $\binom{m}{2}$ from the arithmetic genus — exactly the delta invariant.
 
+[[T-CRVMINMOD]]
+
 [[T-SRFCAST]]
 
 Contractibility is the converse, and it turns a numerical condition into a morphism.

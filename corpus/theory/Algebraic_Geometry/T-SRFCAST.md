@@ -18,6 +18,7 @@ prompts:
 - State Castelnuovo's contractibility criterion.
 - What is a $(-1)$-curve?
 - What is a minimal surface?
+- What is the minimal model program for surfaces?
 ---
 
 ::: {.theorem}

@@ -57,6 +57,8 @@ source:
     - id: P-AGXVARPROJCLOSURE
     - id: P-AGXVARCOHOMPN
     - id: P-AGXVARSMOOTHCUBIC
+    - id: P-AGXMISCGENUSZEROCONIC
+    - id: P-AGXMISCGENUSONERAM
     - id: P-AGXVARREGFORMAN
     - id: P-AGXVARCANONICALPN
     - id: P-AGXVARCOMPLETEGLOBAL
@@ -83,4 +85,4 @@ source:
 
 A working list of questions on varieties assembled alongside the author's algebraic geometry notes, running from the Zariski topology and the Nullstellensatz through dimension, smoothness and normality, projective varieties, divisors and the canonical bundle.
 The second group is a bank of standard worked examples: the cuspidal and nodal cubics, the quadric cone, the Segre quadric, the Weierstrass cubic, and cyclic quotient singularities.
-The list records statements only; no solutions were written for any of them.
+The source records a solution only for the coordinate-ring question.

@@ -17,6 +17,7 @@ review: draft
 prompts:
 - State the fibre dimension theorem.
 - In what sense is fibre dimension semicontinuous, and in which direction?
+- What is Noether normalization?
 ---
 
 ::: {.theorem title="Noether normalization (affine)"}

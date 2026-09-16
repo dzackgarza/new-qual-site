@@ -12,6 +12,8 @@ classification:
   - Ideals
 relations: []
 review: draft
+prompts:
+- What is the Hilbert basis theorem?
 ---
 
 ::: {.theorem}

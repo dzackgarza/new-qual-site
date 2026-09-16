@@ -682,7 +682,7 @@ commit, and writing the solution removes the line.
 - [ ] P-AGXVARCOMPLETEGLOBAL — "Global regular functions on a connected complete variety are constant"
 - [ ] P-AGXVARCOORDDOMAIN — "When the coordinate ring $k[X]$ is an integral domain"
 - [ ] P-AGXVARCURVECOFIN — "The Zariski topology on a curve is the cofinite topology"
-- [ ] P-AGXVARCURVEPROPERISO — "A proper morphism of smooth projective curves is an isomorphism"
+- [ ] P-AGXVARCURVEPROPERISO — "Proper morphisms between smooth projective curves"
 - [ ] P-AGXVARDENSEOPEN — "Open sets are dense in the Zariski topology"
 - [ ] P-AGXVARDUALNUMBERS — "Dual number points of a scheme are tangent vectors"
 - [ ] P-AGXVAREXBLOWDOWN — "The map $(x,y)\mapsto (x, xy)$ of the affine plane and its fibers"

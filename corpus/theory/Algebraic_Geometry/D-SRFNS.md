@@ -18,6 +18,7 @@ prompts:
 - What is the Néron--Severi group?
 - Define numerical equivalence.
 - What is the Picard number?
+- What is the Néron--Severi theorem?
 ---
 
 ::: {.definition}

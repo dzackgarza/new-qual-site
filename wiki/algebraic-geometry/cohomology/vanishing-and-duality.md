@@ -40,3 +40,13 @@ At $D = K$ it gives $\deg K = 2g-2$, the input to Riemann--Hurwitz in [[algebrai
 
 The surface statement is the same theorem with the intersection pairing in place of the degree, and it is used for a different purpose: not to count sections but to force them to exist.
 Duality converts $h^2$ into $h^0(K-D)$, and the resulting inequality is the first move in any question about whether a divisor on a surface is effective.
+
+## Finiteness and vanishing for ample twists
+
+[[T-CARTSERRE]]
+
+[[T-KODVAN]]
+
+## Topology of hyperplane sections
+
+[[T-LEFHYP]]
