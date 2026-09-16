@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-GXXBV
 kind: definition
-title: 'Definition: Euclidean domain.'
+title: Euclidean domain
 prompts:
 - What is a Euclidean domain?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-Admits a "remainder measuring" function $f: R\setminus\theset{0} \to \NN$ such that $a\in R, b\in R^\bullet$ implies there exist $q, r\in R$ such that $a = bq + r$ with either $r=0$ or $f(r) < f(b)$.
+An [[D-QJ3QL|integral domain]] $R$ is a \dfn{Euclidean domain} if there exists a function $f\colon R\setminus\theset{0} \to \ZZ^{\geq 0}$, a \dfn{Euclidean function}, such that for all $a\in R$ and all nonzero $b\in R$ there exist $q, r\in R$ with $a = bq + r$ and either $r=0$ or $f(r) < f(b)$.
 :::

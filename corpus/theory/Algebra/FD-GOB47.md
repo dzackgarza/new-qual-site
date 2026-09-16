@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-GOB47
 kind: definition
-title: 'Definition: Characteristic polynomial'
+title: Characteristic polynomial of a matrix
 prompts:
 - What is the characteristic polynomial of a matrix $A$?
 classification:
@@ -16,7 +16,10 @@ review: draft
 ---
 
 ::: {.definition}
-$$  
-p_A(x) = \mathrm{det}(xI - A)
-.$$
+Let $k$ be a commutative ring and $A$ an $n\times n$ matrix over $k$.
+The \dfn{characteristic polynomial} of $A$ is
+$$
+p_A(x) \coloneqq \det(xI_n - A)\in k[x],
+$$
+where $I_n$ is the $n\times n$ identity matrix.
 :::

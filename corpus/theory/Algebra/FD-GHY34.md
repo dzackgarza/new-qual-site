@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-GHY34
 kind: definition
-title: 'Irreducible: A polynomial $p(x)$ is irreducible iff $\deg p>1$ and $p(x)= q(x)r(x) \implies q(x)$ or $r(x)$ is constant.'
+title: Irreducible polynomial over a field
 prompts:
 - When is a polynomial over a field irreducible?
 classification:
@@ -16,7 +16,10 @@ review: draft
 ---
 
 ::: {.definition}
-A polynomial $p(x)$ over a field is **irreducible** iff $\deg p \geq 1$ and $p(x)= q(x)r(x) \implies q(x)$ or $r(x)$ is a nonzero constant.
+Let $K$ be a [[D-UI6CU|field]].
+A polynomial $p\in K[x]$ is \dfn{irreducible} if $\deg p \geq 1$ and whenever $p= qr$ with $q,r\in K[x]$, $q$ or $r$ is constant.
+:::
 
-The bound is $\geq 1$, not $>1$: every linear polynomial is irreducible.
+::: {.remark}
+Every polynomial of degree $1$ is irreducible: if $p=qr$, then $\deg q+\deg r=1$, so one of $q,r$ has degree $0$.
 :::
