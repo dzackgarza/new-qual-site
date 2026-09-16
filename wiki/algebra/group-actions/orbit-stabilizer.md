@@ -9,68 +9,63 @@ topics:
 
 # Orbit-stabilizer
 
-## Counting first: Lagrange and Cauchy
+## Lagrange and Cauchy
 
 [[T-GJNT5]]
 
-:::{.proof title="of Lagrange's theorem"}
-Write $G/H = \ts{g_0 H, g_1 H, \cdots, g_N H}$ for $N \da [G:H]$.
-Cosets are equal or disjoint and all have the same cardinality, so
-\[
-G = \disjoint_{k \leq N} g_k H \implies \size G = \sum_{k\leq N} \size \qty{g_k H} = \sum_{k\leq N} \size H = N \size H
-,\]
-giving $\size G = N\size H$: both $\size H$ and $[G:H]$ divide $\size G$.
-
+::: {.proof title="of Lagrange's theorem"}
+Let $N \da [G:H]$ and write $G/H = \ts{g_1 H, \ldots, g_N H}$.
+Two left cosets are equal or disjoint, and $x\mapsto g_kx$ is a bijection $H\to g_kH$, so
+$$
+G = \disjoint_{k=1}^N g_k H \implies \size G = \sum_{k=1}^N \size{g_k H} = \sum_{k=1}^N \size H = N \size H.
+$$
+Hence $\size G = [G:H]\,\size H$, and both $\size H$ and $[G:H]$ divide $\size G$.
 :::
 
 [[C-HWX2P]]
 
-:::{.corollary}
-The order of every element divides the order of $G$:
-$$
-g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
-.$$
-
+::: {.corollary}
+For a finite group $G$ and $g\in G$, the order of $g$ divides $\size G$, and $g^{\size G} = e$.
 :::
 
-:::{.warnings title="The converse of Lagrange is false"}
-There need not be an $H\leq G$ of order $n$ for every $n \divides \size G$.
+::: {.warnings title="The converse of Lagrange's theorem is false"}
+A finite group $G$ need not have a subgroup of order $n$ for every $n \divides \size G$.
 
-$A_5$ has order $60$ and no subgroup of order $30$: such a subgroup would have index $2$, hence be normal, contradicting simplicity of $A_{n\geq 5}$.
+The group $A_5$ has order $60$ and no subgroup of order $30$: such a subgroup would have index $2$, hence be normal, and $A_5$ is simple.
 
-More directly, $\size{A_4} = 12$ and $A_4$ has no subgroup of order $6$.
-Such an $H$ could not contain every $3\dash$cycle, since those generate $A_4$.
-Take a $3\dash$cycle $x\notin H$; then $[A_4 : H] = 2$, so among $H, xH, x^2H$ two coincide.
-$x\notin H$ rules out $H = xH$; $x^2 H = H$ gives $x\inv = x^2 \in H$ hence $x\in H$; and $xH = x^2H$ gives $x\inv x^2 = x \in H$.
+The group $A_4$ has order $12$ and no subgroup of order $6$.
+Suppose $H\le A_4$ has order $6$.
+The $3$-cycles generate $A_4$, so some $3$-cycle $x$ satisfies $x\notin H$.
+Since $[A_4 : H] = 2$, two of the cosets $H, xH, x^2H$ coincide.
+But $H = xH$ gives $x\in H$; $x^2 H = H$ gives $x\inv = x^2 \in H$, hence $x\in H$; and $xH = x^2H$ gives $x = x\inv x^2 \in H$.
 $\contradiction$
-
 :::
 
 [[T-3KCD6]]
 
-:::{.proof}
-See [Keith Conrad's notes on proofs of Cauchy's theorem](https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf).
-
+::: {.proof}
+Let $p$ be a prime dividing $\size G$, and let $X = \ts{(g_1,\ldots,g_p)\in G^p \st g_1g_2\cdots g_p = e}$.
+Choosing $g_1,\ldots,g_{p-1}$ freely determines $g_p$, so $\size X = \size G^{p-1}$, which is divisible by $p$.
+The group $\ZZ/p$ acts on $X$ by cyclic rotation of the coordinates, since $g_1g_2\cdots g_p = e$ implies $g_2\cdots g_pg_1 = g_1\inv e\, g_1 = e$.
+Each orbit has size $1$ or $p$, and the orbits of size $1$ are the tuples $(g,\ldots,g)$ with $g^p = e$.
+Hence the number of $g\in G$ with $g^p=e$ is congruent to $\size X\equiv 0 \pmod p$; it is at least $1$, because $g=e$ qualifies, so it is at least $p$, and some $g\neq e$ has order $p$.
 :::
 
 ## Actions
 
 [[D-3T6O2]]
 
-:::{.remark}
-Being in the same orbit is an equivalence relation, so orbits partition $X$, and $G$ acts transitively on each one.
-A point is fixed exactly when $\Orb(x) = \ts x$, equivalently when $\Stab_G(x) = G$.
-Notation is on [[algebra/groups/notation|the algebra notation page]].
-
+::: {.remark}
+Lying in the same orbit is an equivalence relation, so the orbits partition $X$, and $G$ acts transitively on each orbit.
+A point $x$ is fixed if and only if $\Orb(x) = \ts x$, equivalently $\Stab_G(x) = G$.
+The notation is listed on [[algebra/groups/notation|Notation]].
 :::
 
-:::{.fact}
-For any action, the kernel is the intersection of the stabilizers:
-\[
-\ker \psi = \Intersect_{x\in X} G_x
-.\]
-This one identity is behind most of the examples below: each choice of $X$ turns it into a statement about centres, centralizers or normalizers.
-
+::: {.fact}
+For an action $\psi\colon G\to\Aut_\Set(X)$, the kernel is the intersection of the stabilizers:
+$$
+\ker \psi = \Intersect_{x\in X} G_x.
+$$
 :::
 
 [[D-KGGWK]]
@@ -79,110 +74,107 @@ This one identity is behind most of the examples below: each choice of $X$ turns
 
 [[FD-IGEOR]] [[FD-W3MQW]]
 
-## The theorem
+## The orbit-stabilizer theorem
 
 [[PR-GSDKO]]
 
-:::{.proof title="of orbit-stabilizer"}
-\envlist
+::: {.proof title="of orbit-stabilizer"}
+Define $\Phi\colon G/G_x\to\Orb(x)$ by $\Phi(gG_x) = g\actson x$.
 
-- Well defined: $gG_x = hG_x \iff gh\inv \in G_x \iff g\inv h\actson x = x$, and then
-  \[
-  \Phi(hG_x) \da h\actson x = (gg\inv) h\actson x = g(g\inv h)\actson x = g\actson x = \Phi(gG_x)
-  .\]
+- $\Phi$ is well defined: if $gG_x = hG_x$, then $g\inv h \in G_x$, so $h\actson x = g\actson\big((g\inv h)\actson x\big) = g\actson x$.
 
-- Injective: $\Phi(gG_x) = \Phi(hG_x) \iff g\actson x=h\actson x \iff gh\inv \actson x = x \iff gh\inv \in G_x \iff gG_x = hG_x$.
+- $\Phi$ is injective: if $g\actson x=h\actson x$, then $g\inv h \actson x = x$, so $g\inv h \in G_x$ and $gG_x = hG_x$.
 
-- Surjective: this is transitivity onto the orbit.
-
+- $\Phi$ is surjective, since every element of $\Orb(x)$ has the form $g\actson x$.
 :::
 
 [[PR-KGHJ2]]
 
-:::{.proof title="that stabilizers along an orbit are conjugate"}
-\envlist
-
-- Fix $x\in X$ and $y\in \Orb(x)$, so $g\actson x=y$ for some $g$, and write $H_x \da \Stab(x)$, $H_y\da \Stab(y)$.
-- Then
-\[
+::: {.proof title="that stabilizers along an orbit are conjugate"}
+Let $x\in X$ and $y\in \Orb(x)$, choose $g\in G$ with $g\actson x=y$, and write $H_x \da \Stab(x)$ and $H_y\da \Stab(y)$.
+Then
+$$
+\begin{aligned}
 h\in H_x &\iff hx = x \\
 &\iff hg\inv y = g\inv y \\
 &\iff ghg\inv y = y \\
 &\iff ghg\inv \in H_y \\
-&\iff h\in g\inv H_y g
-,\]
+&\iff h\in g\inv H_y g,
+\end{aligned}
+$$
 so $H_x = g\inv H_y g$.
-
 :::
 
 [[T-QYDVH]]
 
-## The counting trick
+## Fixed points and nontrivial orbits
 
-:::{.remark title="Fixed points plus nontrivial orbits"}
-Since orbits partition $X$, for any action $\phi: G\actson X$,
-\[
-X = \Fix(\phi) + \Disjoint_{x}' \Orb(x)
-,\]
-where $\Fix(\phi)$ collects the orbits of size one and the remaining union takes one representative from each nontrivial orbit.
-Substituting orbit-stabilizer into the second term is how every counting formula in this chapter is produced, the class equation included.
-
+::: {.proposition}
+For an action $\phi$ of a finite group $G$ on a finite set $X$, let $x_1,\ldots,x_r$ be representatives of the orbits of size greater than $1$.
+Then
+$$
+\size X = \size{\Fix(\phi)} + \sum_{i=1}^r [G:\Stab(x_i)],
+$$
+and each $[G:\Stab(x_i)]$ is a divisor of $\size G$ greater than $1$.
 :::
 
-## The four standard actions
+::: {.proof}
+The orbits partition $X$, the orbits of size $1$ are the fixed points, and $\size{\Orb(x_i)} = [G:\Stab(x_i)]$ by orbit-stabilizer.
+:::
 
-:::{.example title="Left translation on $G$"}
-$G$ acts on itself by $\phi: g \mapsto (h\mapsto gh)$.
+The class equation is this formula for the conjugation action of $G$ on itself; see [[algebra/group-actions/the-class-equation|The class equation]].
+
+## Four actions
+
+::: {.example title="Left translation on $G$"}
+$G$ acts on itself by $\phi\colon g \mapsto (h\mapsto gh)$.
 
 - $\Orb(x) = G$, so the action is transitive.
-- $\Fix(\phi) = \ts e$ and $\Stab(x) = \ts e$.
-- The kernel is trivial.
-- Orbit-stabilizer says only $G \cong G/\ts e$.
-
+- $\Stab(x) = \ts e$, and $\Fix(\phi) = \emptyset$ unless $G$ is trivial.
+- The kernel is trivial, so $G$ embeds in the symmetric group on the set $G$ (Cayley's theorem).
+- Orbit-stabilizer gives the bijection $G/\ts e \to G$.
 :::
 
-:::{.example title="Conjugation on $G$: centres and centralizers"}
+::: {.example title="Conjugation on $G$: centers and centralizers"}
 $G$ acts on itself by $g\actson x = gxg\inv$.
 
-- $\Orb(g) = [g]$ is the conjugacy class.
-  The action is transitive only when $\size G \leq 2$; every orbit is a singleton exactly when $G$ is abelian.
-- $\Fix(\phi) = Z(G)$, the centre.
-- $\Stab(g) = Z(g)$, the centralizer.
-- The kernel is again $Z(G)$.
-- Orbit-stabilizer says $[g] \cong G/Z(g)$: **the size of a conjugacy class is the index of the centralizer**.
-
+- $\Orb(x) = [x]$ is the [[D-HLDEY|conjugacy class]] of $x$.
+  The orbit of $e$ is $\ts e$, so the action is transitive only when $G$ is trivial; every orbit is a singleton if and only if $G$ is abelian.
+- $\Fix(\phi) = Z(G)$, the [[D-NK7G7|center]].
+- $\Stab(x) = C_G(x)$, the [[D-PX64W|centralizer]] of $x$.
+- The kernel is $Z(G)$.
+- Orbit-stabilizer gives a bijection $G/C_G(x)\to[x]$, so the size of a conjugacy class is the index of the centralizer.
 :::
 
-:::{.example title="Conjugation on subgroups: normalizers"}
+::: {.example title="Conjugation on subgroups: normalizers"}
 $G$ acts on $\ts{H \st H\leq G}$ by conjugation.
 
 - $\Orb(H) = \ts{gHg\inv \st g\in G}$ is the set of conjugates of $H$.
-- $\Fix(\phi)$ is the set of normal subgroups.
-- $\Stab(H) = N_G(H)$ is the normalizer.
+- $\Fix(\phi)$ is the set of normal subgroups of $G$.
+- $\Stab(H) = N_G(H)$ is the [[D-OZ2RR|normalizer]] of $H$.
 - The kernel is $\Intersect_{H\leq G} N_G(H)$.
-- Orbit-stabilizer gives the count that Sylow 3 uses:
-\[
-\size{\ts{ gHg ^{-1} \st g \in G } } = [G: N_G(H)]
-.\]
-
+- Orbit-stabilizer gives the number of conjugates of $H$:
+$$
+\size{\ts{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
+$$
 :::
 
-:::{.example title="Left translation on cosets: the normal core"}
-For $H < G$ proper, $G$ acts on $G/H$ by left translation.
+::: {.example title="Left translation on cosets: the normal core"}
+For a proper subgroup $H < G$, $G$ acts on $G/H$ by left translation.
 
-- $\Orb(xH) = G/H$: transitive, since the orbit of $eH$ is everything.
+- $\Orb(eH) = G/H$, so the action is transitive.
 - $\Stab(xH) = xHx\inv$, since
-  \[
-  \Stab(xH) &= \ts{g\in G\st gxH = xH} \\
-  &= \ts{g\in G \st x\inv g x\in H} \\
-  &= \ts{g\in G\st g\in xHx\inv} \\
-  &= xHx\inv
-  .\]
-- $\Fix(\phi) = \emptyset$, by transitivity.
-- The kernel is $\Intersect_{g\in G} gHg\inv$, the **normal core** of $H$: the largest normal subgroup of $G$ contained in $H$.
+$$
+\begin{aligned}
+\Stab(xH) &= \ts{g\in G\st gxH = xH} \\
+&= \ts{g\in G \st x\inv g x\in H} \\
+&= xHx\inv.
+\end{aligned}
+$$
+- $\Fix(\phi) = \emptyset$, because the action is transitive and $\size{G/H} > 1$.
+- The kernel is $\Intersect_{g\in G} gHg\inv$, the [[D-QMVEB|normal core]] of $H$, which is the largest normal subgroup of $G$ contained in $H$.
 
-This is the action behind arguments 3, 4 and 7 on [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
-
+This action gives the index bounds on [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|Show $G$ is not simple]].
 :::
 
 ## Exercises

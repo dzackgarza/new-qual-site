@@ -9,75 +9,67 @@ topics:
 
 # Sylow theory
 
-The Sylow theorems turn the factorization $|G|=p^km$ with $p\nmid m$ into existence, conjugacy, and counting information for subgroups of order $p^k$.
+Throughout, $G$ is a finite group, $p$ is a prime, $\size G = p^k m$ with $p\notdivides m$, $\Syl_p(G)$ is the set of Sylow $p$-subgroups of $G$, and $n_p = \size{\Syl_p(G)}$.
 
-:::{.remark title="Useful facts"}
+[[D-7TQ2M]]
+
+::: {.remark title="Counting Sylow subgroups"}
 \envlist
 
-- If $n_p$ is the number of Sylow $p$-subgroups, then $n_p\mid m$ and $n_p\equiv1\pmod p$.
-- A Sylow $p$-subgroup is normal exactly when it is unique, i.e. exactly when $n_p=1$.
-- If $k=1$, distinct Sylow $p$-subgroups have trivial intersection, so their nonidentity elements contribute exactly $n_p(p-1)$ distinct elements. For $k>1$, intersections must be analyzed before using such an element count.
-
-:::
-
-:::{.definition}
-A **Sylow $p\dash$subgroup** of $G$ is a subgroup of order $p^k$, where $\size G = p^k m$ with $p \nmid m$: a $p\dash$subgroup of maximal possible order.
-
+- $n_p\divides m$ and $n_p\equiv1\pmod p$.
+- A Sylow $p$-subgroup is normal if and only if $n_p=1$.
+- If $k=1$, distinct Sylow $p$-subgroups intersect trivially, so they contain exactly $n_p(p-1)$ elements of order $p$. For $k>1$, two distinct Sylow $p$-subgroups can intersect nontrivially.
 :::
 
 [[L-354HC]]
 
-## The statements
-
-:::{.remark title="Setup"}
-Assume $\size G = p^k m$ with $(p,m)=1$, write $S_p$ for a Sylow $p\dash$subgroup, and $n_p$ for the number of them.
-
-:::
+## The Sylow theorems
 
 [[FT-ZENUU]]
 
-### Sylow 1: existence
+### Existence
 
 [[T-WRMBM]]
 
-:::{.slogan}
-Sylow $p\dash$subgroups exist for every $p$ dividing $\size G$, and more: subgroups of order $p^{\beta}$ exist for every $\beta \leq k$.
-Every $p\dash$subgroup is contained in a Sylow $p\dash$subgroup.
-
+::: {.slogan}
+For every $\beta \leq k$, $G$ has a subgroup of order $p^{\beta}$; in particular Sylow $p$-subgroups exist.
+Every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup.
 :::
 
-### Sylow 2: conjugacy
+### Conjugacy
 
 [[T-EF2MZ]]
 
-:::{.corollary}
-$n_p = 1$ if and only if the Sylow $p\dash$subgroup is normal, since conjugation permutes the Sylow $p\dash$subgroups transitively and a single one has nowhere to go.
-
+::: {.corollary}
+A Sylow $p$-subgroup $P$ is normal if and only if $n_p = 1$.
 :::
 
-### Sylow 3: the numerical constraints
+::: {.proof}
+Every Sylow $p$-subgroup is conjugate to $P$, so $\Syl_p(G) = \ts{gPg\inv \st g\in G}$, and this set is $\ts P$ if and only if $P\normal G$.
+:::
+
+### The number of Sylow subgroups
 
 [[T-S5T5C]]
 
-:::{.remark title="The two constraints, and where they come from"}
-\[
-n_p \equiv 1 \pmod p, \qquad n_p \divides m, \qquad n_p = [G : N_G(S_p)]
-.\]
-The last is orbit-stabilizer for the conjugation action on $\Syl_p(G)$, and it is the form that turns a Sylow count into a statement about an index.
-The congruence comes from letting a fixed $S_p$ act on $\Syl_p(G)$: it fixes only itself, and all other orbits have size divisible by $p$.
-
+::: {.remark title="The conditions on $n_p$"}
+For $P\in\Syl_p(G)$,
+$$
+n_p \equiv 1 \pmod p, \qquad n_p \divides m, \qquad n_p = [G : N_G(P)].
+$$
+The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$, and it expresses $n_p$ as the index of a subgroup.
+The congruence follows from the conjugation action of $P$ on $\Syl_p(G)$: its only fixed point is $P$, and every other orbit has size divisible by $p$.
 :::
 
-## Using it
+## Applications
 
-The systematic use is [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]], where a Sylow count is the first thing to try.
-The other standard uses:
+Arguments producing normal subgroups from Sylow counts are collected on [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
 
-- **Classifying groups of a given order.** Once $n_p = 1$ for some $p$, that Sylow is normal and $G$ is an extension, usually a semidirect product, of the two Sylow subgroups.
+- **Classifying groups of a given order.** If $n_p = 1$, then $P\in\Syl_p(G)$ is normal, $\size{G/P} = m$ is coprime to $\size P$, and by the Schur--Zassenhaus theorem $P$ has a complement $H$, so $G \cong P\semidirect H$.
 
-- **Finding a normal subgroup to quotient by**, reducing to a smaller order.
+- **Induction on the order.** A normal Sylow subgroup $P$ gives the quotient $G/P$ of order $m < \size G$.
 
-- **Proving nilpotence.** A finite group is nilpotent exactly when every Sylow subgroup is normal, in which case $G$ is their direct product.
+- **Nilpotence.** A finite group is [[D-53JVH|nilpotent]] if and only if every Sylow subgroup is normal, in which case it is the direct product of its Sylow subgroups.
 
 ## Exercises
 
