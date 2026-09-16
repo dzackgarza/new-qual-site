@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ITBUT
 kind: definition
-title: Quotient Map
+title: Quotient map
 classification:
   areas:
   - topology
@@ -14,17 +14,19 @@ review: draft
 ---
 
 ::: {.definition}
-A map $q:X\to Y$ is a **quotient map** if and only if
+Let $X$ and $Y$ be topological spaces.
+A map $q\colon X\to Y$ is a \dfn{quotient map} if $q$ is surjective and, for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $q\inv(U)$ is open in $X$.
+:::
 
-1. $q$ is surjective, and
+::: {.remark}
+The implication from $U$ open to $q\inv(U)$ open is [[D-AEAAD|continuity]] of $q$; a quotient map is a continuous surjection that also satisfies the converse implication.
+:::
 
-2. $U$ is open in $Y\iff q ^{-1} (U)$ is open in $X$
+::: {.proposition}
+A surjective map $q\colon X\to Y$ is a quotient map if and only if $q$ is continuous and $q(V)$ is open in $Y$ for every open subset $V\subseteq X$ that is [[D-KWWVL|saturated]] with respect to $q$.
+The same holds with "open" replaced by "closed" throughout.
+:::
 
-> Note that $\implies$ comes from the definition of continuity of $q$, but $\impliedby$ is a stronger condition.
-
-Equivalently:
-
-- $p$ maps *saturated* subsets of $X$ to open subsets of $Y$, or
-
-- If $U$ is open in $X$, then $(q\inv \circ q)(U)$ is again open in $X$.
+::: {.concept}
+See [@Mun00, §22].
 :::
