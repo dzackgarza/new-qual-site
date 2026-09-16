@@ -7,6 +7,6 @@ topics:
 
 # Fourier
 
-- [[real-analysis/fourier/convolution|Convolution]], and why every property of it is Tonelli.
+- [[real-analysis/fourier/convolution|Convolution]] -- its properties from Fubini--Tonelli, smoothing, and approximate identities.
 
-- [[real-analysis/fourier/the-transform|The transform]], approximate identities, and inversion.
+- [[real-analysis/fourier/the-transform|The transform]] -- injectivity, the Riemann--Lebesgue lemma, inversion, and Fourier coefficients.
