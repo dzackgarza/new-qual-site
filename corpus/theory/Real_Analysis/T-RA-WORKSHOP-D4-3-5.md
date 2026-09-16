@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-5
 kind: theorem
-title: 'Theorem 3.5: Discontinuities of monotone functions'
+title: Discontinuities of monotone functions
 classification:
   areas:
   - real-analysis
@@ -14,6 +14,11 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f:(a,b)\to\mathbb R$ is monotonic then $f$ is discontinuous on a set $E\subset(a,b)$ which is at most countable.
-Further, each point where $f$ is discontinuous is a jump discontinuity in that the limits $f(x_i-)$ and $f(x_i+)$ both exist for each $x_i\in E$.
+Let $a<b$ and let $f\colon(a,b)\to\RR$ be monotone.
+Then the set $E\subseteq(a,b)$ of points at which $f$ is discontinuous is at most countable.
+Moreover, every $x\in E$ is a jump discontinuity: the one-sided limits
+$$
+f(x-)\coloneqq\lim_{t\to x^-}f(t)\qquad\text{and}\qquad f(x+)\coloneqq\lim_{t\to x^+}f(t)
+$$
+both exist.
 :::
