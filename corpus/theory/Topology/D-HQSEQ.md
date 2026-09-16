@@ -15,5 +15,9 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $X$ is **paracompact** iff every open cover of $X$ admits an open locally finite refinement.
+A topological space $X$ is \dfn{paracompact} if every open [[D-AOJG3|cover]] of $X$ has a [[D-6JJJU|locally finite]] open [[D-P6XCN|refinement]] that covers $X$.
+:::
+
+::: {.concept}
+See [@Mun00, §39].
 :::
