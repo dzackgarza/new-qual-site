@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-6T3IL
 kind: proposition
-title: Continuous on compact $\implies$ uniformly continuous
+title: Continuous on compact implies uniformly continuous
 classification:
   areas:
   - topology
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-A continuous function on a compact set is uniformly continuous.
+Let $(X, d_X)$ be a compact metric space and $(Y, d_Y)$ a metric space.
+Every continuous map $f\colon X\to Y$ is uniformly continuous [@Mun00, Theorem 27.6]; [@Rud76, Theorem 4.19].
 :::
