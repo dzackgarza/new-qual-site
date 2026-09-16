@@ -7,6 +7,15 @@ Apply `QUAL-05` when a problem is encountered, including outside the selected ca
 Record the evidence before leaving that work; logging does not complete a repair.
 These documents apply to every stream working in the clone.
 
+## Owner pause — 2026-09-16
+
+The repository owner has paused this workstream. Do not start, select, continue,
+revive, wake, route, or push new work while this pause stands. If a turn was already
+mid-unit when the pause arrived, bank only that coherent unit and stop before selecting
+another. Preserve the existing dirty/shared tree. Only a later explicit owner instruction
+resumes this repository; recurrence of an older scheduled continuation does not supersede
+the pause.
+
 <!-- agent-memory:start -->
 # Agent memory
 
@@ -457,11 +466,14 @@ provenance file:
 just ocr-pdf assets/attachments/myfile.pdf assets/attachments/myfile_extracted.md
 ```
 
-Do not use `pdftotext`, `pdftoppm`, Tesseract, PyMuPDF/`fitz`, PDFium/`pypdfium2`,
-`mutool`, screenshots, page renders, model vision, or any other mechanism as an extraction
-or validation substitute. A model looking at a rendered PDF page provides no reproducible
-evidence that an extraction is correct; visual agreement must never be used to certify a
-statement, problem count, formula, label, or source transcription.
+Do not use `pdftotext`, Tesseract, PyMuPDF/`fitz`, or any other text extractor in place of
+these two. A transient MinerU failure (upload timeout, `-60007`, `-60010`) is retried, with
+page ranges when a whole-file upload times out, before it counts as a failure.
+
+Rendering a page to PNG and reading it is the method for an identified defect the extraction
+cannot carry: a figure, a garbled matrix or glyph, a cropped choice. Transcribe that location
+from the render and record on the card and provenance file that it was read from the page
+image. Rendered output is also how authored cards and pages are spot-checked.
 
 Every problem-bearing PDF consumed by intake must therefore have a checked-in MinerU Flash or
 Mistral OCR Markdown extraction. The extraction is the auditable transcription baseline from which cards
@@ -482,7 +494,7 @@ A genuine source that exists only as a retained raster image is not a separate e
 Preserve the original image as provenance, wrap it losslessly and deterministically into a PDF
 container, record the image hash and derived-PDF hash, and run the same extraction on
 that PDF. The conversion step must not OCR, resample, enhance, redraw, or otherwise interpret the
-image. Model vision is still not evidence. If the image itself is missing (for example the lost Anki
+image. If the image itself is missing (for example the lost Anki
 `collection.media` figures), there is nothing to convert or extract; that remains missing-source
 recovery work.
 
@@ -501,8 +513,7 @@ mineru-open-api flash-extract assets/attachments/exam.pdf > assets/attachments/e
 Commit the final extraction with the intake work. If you need intermediate files while resolving
 a specific extraction defect, stage them in the repo — for example
 `assets/attachments/intermediate/` — and delete them when the final extraction/correction is
-committed. Generic page-render review directories are not an intake artifact and must not be
-created merely to "verify" a PDF visually.
+committed.
 
 ### Extraction output is an input, not a card
 
