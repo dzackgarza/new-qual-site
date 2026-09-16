@@ -70,7 +70,6 @@ source:
     - P-GRECH7-50
 ---
 
-::: remark
-The 50 review questions on additional topics in Chapter 7 of *Cracking the GRE Mathematics Subject Test*, in source order.
-Questions 4, 13, 22, 27, 33 and 39 depend on figures that are not reproduced.
+::: {.remark}
+The 50 review questions on additional topics in Chapter 7 of *Cracking the GRE Mathematics Subject Test*.
 :::
