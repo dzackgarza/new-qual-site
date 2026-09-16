@@ -81,7 +81,7 @@ $$
 
 ### Real projective spaces
 
-[[FF-SYCKI]] [[FF-LFY7V]]
+[[FF-SYCKI]]
 
 [[FF-MJEUU]]
 
@@ -93,7 +93,7 @@ $$
 
 ### Surfaces
 
-[[FF-EC6QN]] [[FF-QOQ2K]]
+[[FF-QOQ2K]]
 
 ## Mayer-Vietoris
 
