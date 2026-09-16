@@ -502,7 +502,7 @@ source:
   - name: III.2
     problems:
     - id: P-AGH321CONSTSHEAFAFFLINE
-      comment: III.2.1
+      comment: III.2.1, part (b)*
     - id: P-AGH322FLASQUERESPONE
       comment: III.2.2
     - id: P-AGH323SUPPORTS
@@ -528,7 +528,7 @@ source:
     - id: P-AGH335DEPTHTWOEXT
       comment: III.3.5
     - id: P-AGH336QCOHINJECTIVES
-      comment: III.3.6
+      comment: III.3.6, part (b)*
     - id: P-AGH337DELIGNE
       comment: III.3.7
     - id: P-AGH338NONNOETHFAIL
@@ -550,11 +550,11 @@ source:
     - id: P-AGH347PLANECURVEGENUS
       comment: III.4.7
     - id: P-AGH348COHDIM
-      comment: III.4.8
+      comment: III.4.8, part (d)*
     - id: P-AGH349TWOPLANES
       comment: III.4.9
     - id: P-AGH3410INFEXT
-      comment: III.4.10
+      comment: III.4.10*
     - id: P-AGH3411LERAYACYCLIC
       comment: III.4.11
   - name: III.5
@@ -610,7 +610,7 @@ source:
     - id: P-AGH373HODGEPROJ
       comment: III.7.3
     - id: P-AGH374COHOMCLASS
-      comment: III.7.4
+      comment: III.7.4*
   - name: III.8
     problems:
     - id: P-AGH381DEGENLERAY
@@ -638,11 +638,11 @@ source:
     - id: P-AGH397INFDEFSUB
       comment: III.9.7
     - id: P-AGH398TONEMODULE
-      comment: III.9.8
+      comment: III.9.8*
     - id: P-AGH399RIGIDALG
       comment: III.9.9
     - id: P-AGH3910RIGIDSCHEME
-      comment: III.9.10
+      comment: III.9.10, part (c)*
     - id: P-AGH3911GENUSBOUND
       comment: III.9.11
   - name: III.10
@@ -676,7 +676,7 @@ source:
     - id: P-AGH3114CONNPRINCIPLE
       comment: III.11.4
     - id: P-AGH3115PICFORMAL
-      comment: III.11.5
+      comment: III.11.5*
     - id: P-AGH3116ALGEBRAIZABLE
       comment: III.11.6
     - id: P-AGH3117NONALGSHEAF
@@ -696,7 +696,7 @@ source:
     - id: P-AGH3125PICPROJBUNDLE
       comment: III.12.5
     - id: P-AGH3126PICPRODUCT
-      comment: III.12.6
+      comment: III.12.6*
   - name: IV.1
     problems:
     - id: P-AGH411REGULAROUTSIDEP
@@ -714,9 +714,9 @@ source:
     - id: P-AGH417HYPERELLIPTIC
       comment: IV.1.7
     - id: P-AGH418ARITHGENUSSINGULAR
-      comment: IV.1.8
+      comment: IV.1.8, part (c)*
     - id: P-AGH419RRSINGULAR
-      comment: IV.1.9
+      comment: IV.1.9*
     - id: P-AGH4110PICOFARITHGENUSONE
       comment: IV.1.10
   - name: IV.2
@@ -776,7 +776,7 @@ source:
     - id: P-AGH446HYPEROSCULATIONPOINTS
       comment: IV.4.6
     - id: P-AGH447DUALOFAMORPHISM
-      comment: IV.4.7
+      comment: IV.4.7, part (d)*
     - id: P-AGH448ALGEBRAICFUNDAMENTALGROUP
       comment: IV.4.8
     - id: P-AGH449ISOGENY
@@ -806,7 +806,7 @@ source:
     - id: P-AGH4421CONDUCTOROFANORDER
       comment: IV.4.21
     - id: P-AGH4422FAMILYOVERAFFINELINE
-      comment: IV.4.22
+      comment: IV.4.22*
   - name: IV.5
     problems:
     - id: P-AGH451HYPERELLIPTICNOTCOMPLETEINTERSECTION
@@ -904,7 +904,7 @@ source:
     - id: P-AGH5216KGROUPBUNDLE
       comment: V.2.16
     - id: P-AGH5217CONORMALSPLIT
-      comment: V.2.17
+      comment: V.2.17*
   - name: V.3
     problems:
     - id: P-AGH531PABLOWUP
@@ -940,13 +940,13 @@ source:
     - id: P-AGH547GENUSBOUND
       comment: V.4.7
     - id: P-AGH548IRREDCLASSES
-      comment: V.4.8
+      comment: V.4.8*
     - id: P-AGH549MINGENUS
       comment: V.4.9
     - id: P-AGH5410NUMINEQ
       comment: V.4.10
     - id: P-AGH5411WEYLGROUPS
-      comment: V.4.11
+      comment: V.4.11, part (c)*
     - id: P-AGH5412KODAIRAVANISH
       comment: V.4.12
     - id: P-AGH5413DELPEZZO4
@@ -954,7 +954,7 @@ source:
     - id: P-AGH5414SPACECURVES
       comment: V.4.14
     - id: P-AGH5415GENPOSITION
-      comment: V.4.15
+      comment: V.4.15, part (e)*
     - id: P-AGH5416FERMATCUBIC
       comment: V.4.16
   - name: V.5
