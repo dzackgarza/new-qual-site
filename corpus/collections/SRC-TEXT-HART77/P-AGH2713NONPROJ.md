@@ -17,7 +17,7 @@ review: draft
 ::: problem
 Let $k$ be an algebraically closed field of characteristic $\neq 2$.
 Let $C \subseteq \PP^2_k$ be the nodal cubic curve $y^2 z = x^3 + x^2 z$.
-If $P_0 = (0, 0, 1)$ is the singular point, then $C - P_0$ is isomorphic to the multiplicative group $\GG_m = \Spec k[t, t\inv]$.
+If $P_0 = (0, 0, 1)$ is the singular point, then $C - P_0$ is isomorphic to the multiplicative group $\GG_m = \Spec k[t, t\inv]$ (Ex. 6.7).
 For each $a \in k$, $a \neq 0$, consider the translation of $\GG_m$ given by $t \mapsto at$.
 This induces an automorphism of $C$ which we denote $\varphi_a$.
 Now consider $C \times (\PP^1 - \ts{0})$ and $C \times (\PP^1 - \ts{\infty})$.
@@ -30,7 +30,7 @@ The projections to the second factor are compatible with $\varphi$, so there is 
 
 a. Show that $\pi$ is a proper morphism, and hence that $X$ is a complete variety over $k$.
 
-b. Show that
+b. Use the method of (Ex. 6.9) to show that
 \[
 \Pic(C \times \AA^1) \cong \GG_m \times \ZZ
 \quad\text{and}\quad
