@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ANO2D
 kind: definition
-title: Covering Space
+title: Covering space
 classification:
   areas:
   - topology
