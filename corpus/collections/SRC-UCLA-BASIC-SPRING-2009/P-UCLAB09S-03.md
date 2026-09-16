@@ -24,5 +24,7 @@ P(0)=\alpha,\qquad P'(0)=\beta,\qquad P(1)=\gamma,\qquad P'(1)=\delta.
 
 (a) Under what condition on $(\alpha,\beta,\gamma,\delta)$ can these constraints be met?
 
-(b) When they can be met, determine $P$. Is it unique? Explain.
+(b) When they can be met, determine $P$.
+Is it unique?
+Explain.
 :::

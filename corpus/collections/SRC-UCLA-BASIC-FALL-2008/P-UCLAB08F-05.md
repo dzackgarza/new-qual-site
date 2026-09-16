@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-A rearrangement of a series $\sum_{n=1}^\infty a_n$ is a series $\sum_{k=1}^\infty a_{n(k)}$, where $n\colon\mathbb N\to\mathbb N$ is a bijection. Show that there is a rearrangement of
+A rearrangement of a series $\sum_{n=1}^\infty a_n$ is a series $\sum_{k=1}^\infty a_{n(k)}$, where $n\colon\mathbb N\to\mathbb N$ is a bijection.
+Show that there is a rearrangement of
 \[
 \sum_{n=1}^\infty \frac{(-1)^n}{n}
 \]

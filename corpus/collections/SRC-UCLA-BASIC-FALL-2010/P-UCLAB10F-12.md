@@ -21,11 +21,13 @@ Problem 12. Let
 \[
 D(t)=\{(x,y)\in\mathbb R^2:x^2+y^2\le r(t)^2\},
 \]
-where $r:\mathbb R\to\mathbb R$ is continuously differentiable. For a given smooth nonnegative function $u:\mathbb R^2\times\mathbb R\to\mathbb R$, express
+where $r:\mathbb R\to\mathbb R$ is continuously differentiable.
+For a given smooth nonnegative function $u:\mathbb R^2\times\mathbb R\to\mathbb R$, express
 \[
 \frac{d}{dt}\left(\int_{D(t)}u(x,t)\,dx\right)
 -
 \int_{D(t)}u_t(x,t)\,dx
 \]
-in terms of a surface integral. You may use standard calculus theorems without proof.
+in terms of a surface integral.
+You may use standard calculus theorems without proof.
 :::

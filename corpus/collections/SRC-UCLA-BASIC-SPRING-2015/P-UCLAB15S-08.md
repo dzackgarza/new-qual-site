@@ -20,6 +20,7 @@ audit:
 Prove or disprove the following claims.
 
 1. Matrices with determinant $1$ are dense in the set of all $3\times3$ real matrices.
+
 2. Matrices with distinct eigenvalues are dense in the set of all $3\times3$ complex matrices.
 
 Here the distance between $A=(a_{ij})$ and $B=(b_{ij})$ is

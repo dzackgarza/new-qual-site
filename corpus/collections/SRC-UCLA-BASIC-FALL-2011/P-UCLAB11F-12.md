@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $A$ be an $m\times n$ real matrix and let $b\in\mathbb R^m$. Suppose $Ax$ and $Ay$ both have minimal distance to $b$ among all vectors in $\operatorname{image}(A)$. Prove that
+Problem 12. Let $A$ be an $m\times n$ real matrix and let $b\in\mathbb R^m$.
+Suppose $Ax$ and $Ay$ both have minimal distance to $b$ among all vectors in $\operatorname{image}(A)$.
+Prove that
 \[
 x-y\in\ker A.
 \]

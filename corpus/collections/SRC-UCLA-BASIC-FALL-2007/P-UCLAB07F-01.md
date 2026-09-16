@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $S\subseteq\mathbb R^n$, equipped with the Euclidean distance restricted to $S$. Fix $y\in S$ and $r\in\mathbb R$.
+Let $S\subseteq\mathbb R^n$, equipped with the Euclidean distance restricted to $S$.
+Fix $y\in S$ and $r\in\mathbb R$.
 
 (a) Is $E=\{x\in S:d(x,y)\ge r\}$ closed in $S$?
 

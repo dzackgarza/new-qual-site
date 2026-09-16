@@ -24,5 +24,6 @@ Let $H=\{(1),(12)(34)\}$ in $A_4$.
 
 (a) Show that $H$ is not normal in $A_4$.
 
-(b) Referring to the multiplication table for $A_4$ in Table 5.1 on page 111, show that, although $\alpha_6H=\alpha_7H$ and $\alpha_9H=\alpha_{11}H$, it is not true that $\alpha_6\alpha_9H=\alpha_7\alpha_{11}H$. Explain why this proves that the left cosets of $H$ do not form a group under coset multiplication.
+(b) Referring to the multiplication table for $A_4$ in Table 5.1 on page 111, show that, although $\alpha_6H=\alpha_7H$ and $\alpha_9H=\alpha_{11}H$, it is not true that $\alpha_6\alpha_9H=\alpha_7\alpha_{11}H$.
+Explain why this proves that the left cosets of $H$ do not form a group under coset multiplication.
 :::

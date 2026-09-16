@@ -30,7 +30,7 @@ $$
 Notice that the radius of convergence of the above series is 1. Show that f cannot be continued analytically past the unit disc.
 [Hint: Suppose $\theta = { 2 \pi p } / { 2 ^ { k } }$ , where $p$ and k are positive integers. Let $z = r e ^ { i \theta }$ ; then $| f ( r e ^ { i \theta } ) | \longrightarrow \infty \mathrm { \ a s \ } r \longrightarrow 1 . ]$
 
-(b) ∗ Fix $0 < \alpha < \infty$ . Show that the analytic function f defined by
+(b) $^\ast$ Fix $0 < \alpha < \infty$ . Show that the analytic function f defined by
 
 $$
 f (z) = \sum_ {n = 0} ^ {\infty} 2 ^ {- n \alpha} z ^ {2 ^ {n}} \quad \text { for } | z | <   1
@@ -39,7 +39,7 @@ $$
 extends continuously to the unit circle, but cannot be analytically continued past the unit circle.
 [Hint: There is a nowhere diferentiable function lurking in the background. See Chapter 4 in Book I.]
 
-2.∗ Let
+2. $^\ast$ Let
 
 $$
 F (z) = \sum_ {n = 1} ^ {\infty} d (n) z ^ {n} \quad \mathrm{for} | z | <   1

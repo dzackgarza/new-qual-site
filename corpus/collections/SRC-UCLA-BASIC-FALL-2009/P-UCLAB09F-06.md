@@ -25,5 +25,6 @@ on
 \[
 S=\{(x,y)\in\mathbb R^2:x^{2010}+y^{2010}\le1\}.
 \]
-Define what it means for $f$ to be uniformly continuous on $S$, and prove that $f$ is uniformly continuous there. You may use any applicable general theorem, provided you state it and justify its hypotheses.
+Define what it means for $f$ to be uniformly continuous on $S$, and prove that $f$ is uniformly continuous there.
+You may use any applicable general theorem, provided you state it and justify its hypotheses.
 :::

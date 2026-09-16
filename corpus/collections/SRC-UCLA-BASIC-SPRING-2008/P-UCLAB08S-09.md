@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. Let $V$ be an odd-dimensional real vector space and $T\colon V\to V$ a real-linear transformation. Prove that $T$ has a nonzero real eigenvector.
+<1>1. Let $V$ be an odd-dimensional real vector space and $T\colon V\to V$ a real-linear transformation.
+Prove that $T$ has a nonzero real eigenvector.
 
 <1>2. For every positive even integer $n$, give an $n$-dimensional real vector space $V$ and a real-linear transformation $T\colon V\to V$ having no nonzero real eigenvector.
 :::

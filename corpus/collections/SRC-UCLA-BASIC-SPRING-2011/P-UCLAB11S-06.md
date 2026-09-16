@@ -14,7 +14,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $V,W$ be finite-dimensional real inner-product spaces, let $A:V\to W$ be linear, and let $w\in W$. Show that the vectors $v\in V$ minimizing
+Let $V,W$ be finite-dimensional real inner-product spaces, let $A:V\to W$ be linear, and let $w\in W$.
+Show that the vectors $v\in V$ minimizing
 \[
 \|Av-w\|
 \]

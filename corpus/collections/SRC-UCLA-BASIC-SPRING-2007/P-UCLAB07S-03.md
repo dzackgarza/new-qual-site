@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal S$ be the vector space of real sequences $(a_0,a_1,a_2,\ldots)$. For fixed $A,B\in\mathbb R$, prove that the set of sequences satisfying
+Let $\mathcal S$ be the vector space of real sequences $(a_0,a_1,a_2,\ldots)$.
+For fixed $A,B\in\mathbb R$, prove that the set of sequences satisfying
 \[
 x_{n+2}=Ax_{n+1}+Bx_n\qquad(n\ge0)
 \]

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(p\) and \(q\) be distinct primes. Show that every group of order
+Let \(p\) and \(q\) be distinct primes.
+Show that every group of order
 \[
 p^2q^2
 \]

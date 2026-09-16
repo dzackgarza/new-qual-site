@@ -1,0 +1,7 @@
+Thinking... complex.pdf (flash)
+Error: [-30003] file page count exceeds API limit (20 pages), please input page_range to specify the page range
+Hint: Document exceeds flash mode limit (20 pages). Use --pages to split:
+  mineru-open-api flash-extract doc.pdf --pages 1-20
+  mineru-open-api flash-extract doc.pdf --pages 21-40
+Or use 'extract' for a higher page limit (requires token):
+  mineru-open-api extract doc.pdf

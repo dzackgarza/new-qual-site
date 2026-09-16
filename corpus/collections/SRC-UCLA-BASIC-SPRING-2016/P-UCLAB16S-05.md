@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g:\mathbb R^2\to\mathbb R$ be continuously differentiable. Assume that $g$ attains the value $0$ at at least one point and that $\nabla g\ne0$ everywhere on $\mathbb R^2$. Suppose $(x_0,y_0)$ satisfies
+Let $f,g:\mathbb R^2\to\mathbb R$ be continuously differentiable.
+Assume that $g$ attains the value $0$ at at least one point and that $\nabla g\ne0$ everywhere on $\mathbb R^2$.
+Suppose $(x_0,y_0)$ satisfies
 \[
 f(x_0,y_0)=\inf\{f(x,y):x,y\in\mathbb R,\ g(x,y)=0\}.
 \]

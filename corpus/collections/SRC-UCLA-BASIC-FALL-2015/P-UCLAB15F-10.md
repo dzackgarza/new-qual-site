@@ -26,5 +26,6 @@ Let $F,G:\mathbb R^n\to\mathbb R^n$ be linear operators, with
 \[
 \exp(F+G)=\exp(F)\exp(G).
 \]
+
 2. Give an example of non-commuting linear operators for which this equality fails.
 :::

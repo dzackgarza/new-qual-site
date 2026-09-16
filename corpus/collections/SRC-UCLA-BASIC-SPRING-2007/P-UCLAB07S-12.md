@@ -21,11 +21,13 @@ Let $c_0$ be the normed space of real sequences $x=(x_1,x_2,\ldots)$ with $x_k\t
 
 <1>1. Show that $c_0$ is complete.
 
-<1>2. Is the closed unit ball $\{x\in c_0:\|x\|\le1\}$ compact? Prove your answer.
+<1>2. Is the closed unit ball $\{x\in c_0:\|x\|\le1\}$ compact?
+Prove your answer.
 
 <1>3. Is
 \[
 \left\{x\in c_0:\sum_k k|x_k|\le1\right\}
 \]
-compact? Prove your answer.
+compact?
+Prove your answer.
 :::

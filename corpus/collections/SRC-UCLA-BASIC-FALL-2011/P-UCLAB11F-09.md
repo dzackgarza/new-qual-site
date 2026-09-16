@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 9. Let $V$ be a finite-dimensional inner-product space and let $L:V\to V$ be self-adjoint. Let $\mu\in\mathbb R$ and $\varepsilon>0$. Suppose there is a unit vector $x\in V$ such that
+Problem 9. Let $V$ be a finite-dimensional inner-product space and let $L:V\to V$ be self-adjoint.
+Let $\mu\in\mathbb R$ and $\varepsilon>0$.
+Suppose there is a unit vector $x\in V$ such that
 \[
 \|Lx-\mu x\|\le\varepsilon.
 \]

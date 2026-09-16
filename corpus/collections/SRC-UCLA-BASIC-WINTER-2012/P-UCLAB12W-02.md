@@ -18,5 +18,6 @@ Let $f_n:[a,b]\to\mathbb R$ be convex functions and suppose
 \[
 f(x)=\lim_{n\to\infty}f_n(x)
 \]
-exists for every $x\in[a,b]$ and is continuous on $[a,b]$. Prove that $f_n\to f$ uniformly.
+exists for every $x\in[a,b]$ and is continuous on $[a,b]$.
+Prove that $f_n\to f$ uniformly.
 :::

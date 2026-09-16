@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. For each $n\in\mathbb N$, let $f_n\colon\mathbb N\to\mathbb R$ satisfy $|f_n(m)|\le 1$ for all $m,n\in\mathbb N$. Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\mathbb N$, the sequence $f_{n_i}(m)$ converges.
+<1>1. For each $n\in\mathbb N$, let $f_n\colon\mathbb N\to\mathbb R$ satisfy $|f_n(m)|\le 1$ for all $m,n\in\mathbb N$.
+Prove that there is an infinite subsequence of distinct positive integers $(n_i)$ such that, for each $m\in\mathbb N$, the sequence $f_{n_i}(m)$ converges.
 
 <1>2. For $(n_i)$ as in <1>1, assume in addition that
 \[

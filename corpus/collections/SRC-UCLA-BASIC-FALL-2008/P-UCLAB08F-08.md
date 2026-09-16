@@ -21,5 +21,6 @@ Must the eigenvectors of a linear transformation
 \[
 T\colon\mathbb C^n\to\mathbb C^n
 \]
-span $\mathbb C^n$? Prove your assertion.
+span $\mathbb C^n$?
+Prove your assertion.
 :::

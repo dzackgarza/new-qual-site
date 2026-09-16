@@ -32,7 +32,8 @@ whenever $n\neq m$.
 \[
 E=\{a_n:n\geq1\}\cup\{b_n:n\geq1\}
 \]
-be the set of endpoints of the intervals above. Prove that $E$ is closed.
+be the set of endpoints of the intervals above.
+Prove that $E$ is closed.
 
 (b) Prove that no such family of intervals $\{I_n\}$ can exist.
 :::

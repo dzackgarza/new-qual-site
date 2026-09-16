@@ -25,5 +25,6 @@ Let $g\in C([a,b])$ satisfy $a\le g(x)\le b$ for all $x\in[a,b]$.
 \[
 |g(x)-g(y)|\le \gamma|x-y|
 \]
-for all $x,y\in[a,b]$. Prove that the fixed point is unique and that, for every $x_0\in[a,b]$, the iteration $x_{n+1}=g(x_n)$ converges to $p$.
+for all $x,y\in[a,b]$.
+Prove that the fixed point is unique and that, for every $x_0\in[a,b]$, the iteration $x_{n+1}=g(x_n)$ converges to $p$.
 :::

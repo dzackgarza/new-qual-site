@@ -25,5 +25,6 @@ for $(x,y)\ne(0,0)$ and set $f(0,0)=0$.
 
 (a) Compute the directional derivatives of $f$ at $(0,0)$ in all directions where they exist.
 
-(b) Is $f$ differentiable at $(0,0)$? Prove your answer.
+(b) Is $f$ differentiable at $(0,0)$?
+Prove your answer.
 :::

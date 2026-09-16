@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $A$ be a $3\times3$ real matrix satisfying $A^3=I$. Show that $A$ is similar over $\mathbb R$ to a matrix of the form
+Problem 10. Let $A$ be a $3\times3$ real matrix satisfying $A^3=I$.
+Show that $A$ is similar over $\mathbb R$ to a matrix of the form
 \[
 \begin{pmatrix}
 1&0&0\\
@@ -25,5 +26,6 @@ Problem 10. Let $A$ be a $3\times3$ real matrix satisfying $A^3=I$. Show that $A
 0&\sin\theta&\cos\theta
 \end{pmatrix}
 \]
-for some real $\theta$. What values of $\theta$ are possible?
+for some real $\theta$.
+What values of $\theta$ are possible?
 :::

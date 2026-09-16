@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $f:\mathbb R\to M_{n\times n}$ be continuous, where $M_{n\times n}$ is the space of $n\times n$ matrices. Show that
+Problem 7. Let $f:\mathbb R\to M_{n\times n}$ be continuous, where $M_{n\times n}$ is the space of $n\times n$ matrices.
+Show that
 \[
 g(t)=\operatorname{rank}(f(t))
 \]

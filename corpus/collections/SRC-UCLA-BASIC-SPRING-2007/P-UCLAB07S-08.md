@@ -21,5 +21,6 @@ Suppose $f_n\in C^2([0,1])$, $f_n(x)\to f(x)$ pointwise, and
 \[
 |f_n'(x)|\le1,\qquad |f_n''(x)|\le1
 \]
-for every $x\in[0,1]$ and $n\ge1$. Prove that $f$ is continuously differentiable on $[0,1]$.
+for every $x\in[0,1]$ and $n\ge1$.
+Prove that $f$ is continuously differentiable on $[0,1]$.
 :::

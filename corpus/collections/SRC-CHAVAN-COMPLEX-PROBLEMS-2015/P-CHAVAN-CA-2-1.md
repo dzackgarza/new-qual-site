@@ -13,12 +13,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb C\to\mathbb C$ be entire and nowhere zero. For $r>0$:
+Let $f:\mathbb C\to\mathbb C$ be entire and nowhere zero.
+For $r>0$:
 
 1. Show that, with the circle $|z|=r$ traversed counterclockwise,
    \[
    \int_{|z|=r}\frac{dz}{zf(z)}=\frac{2\pi i}{f(0)}.
    \]
+
 2. Show that
    \[
    \left|\int_{|z|=r}\frac{dz}{zf(z)}\right|

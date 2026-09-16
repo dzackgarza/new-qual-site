@@ -21,5 +21,7 @@ Let \(f:[0,\infty)\to\mathbb R\) be continuous and suppose
 \[
 \lim_{x\to\infty}f(x)
 \]
-exists and is finite. Must \(f\) be uniformly continuous? Give a proof or a counterexample.
+exists and is finite.
+Must \(f\) be uniformly continuous?
+Give a proof or a counterexample.
 :::

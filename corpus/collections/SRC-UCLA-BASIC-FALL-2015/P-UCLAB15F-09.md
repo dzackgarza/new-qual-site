@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $n\times n$ real matrix satisfying $A^T=-A$. Prove that
+Let $A$ be an $n\times n$ real matrix satisfying $A^T=-A$.
+Prove that
 \[
 \det(A)\ge0.
 \]

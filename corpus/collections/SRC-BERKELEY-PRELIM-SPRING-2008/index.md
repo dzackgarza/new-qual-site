@@ -41,5 +41,6 @@ source:
 ---
 
 ::: remark
-UC Berkeley preliminary examination, Spring 2008, reconstructed from the retained solution packet, which prints each problem with its solution. Problems are listed in source order, Part A followed by Part B.
+UC Berkeley preliminary examination, Spring 2008, reconstructed from the retained solution packet, which prints each problem with its solution.
+Problems are listed in source order, Part A followed by Part B.
 :::

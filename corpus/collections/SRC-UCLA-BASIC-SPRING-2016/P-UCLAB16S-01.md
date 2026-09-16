@@ -24,6 +24,7 @@ f:[a,b]\times[a,b]\to\mathbb R
 satisfy:
 
 1. for each $y\in[a,b]$, the map $x\mapsto f(x,y)$ is non-increasing and continuous on $[a,b]$;
+
 2. for each $x\in[a,b]$, the map $y\mapsto f(x,y)$ is non-decreasing and continuous on $[a,b]$.
 
 Prove that $g(x):=f(x,x)$ is continuous on $[a,b]$.

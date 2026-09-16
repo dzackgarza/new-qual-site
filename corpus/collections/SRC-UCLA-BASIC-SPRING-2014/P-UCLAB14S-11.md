@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. Let $F$ be a set of continuous real-valued functions on $[0,1]$. Assume that every sequence from $F$ has a subsequence that converges uniformly on $[0,1]$. Prove both of the following:
+Problem 11. Let $F$ be a set of continuous real-valued functions on $[0,1]$.
+Assume that every sequence from $F$ has a subsequence that converges uniformly on $[0,1]$.
+Prove both of the following:
 
 (i) $F$ is uniformly bounded: there is $M<\infty$ such that $|f(x)|\leq M$ for all $f\in F$ and all $x\in[0,1]$;
 

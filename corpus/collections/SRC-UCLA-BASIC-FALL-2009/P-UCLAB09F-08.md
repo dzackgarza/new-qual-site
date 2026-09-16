@@ -21,7 +21,8 @@ For $A\in M_n(\mathbb R)$ define
 \[
 e^A:=\sum_{k=0}^\infty \frac{A^k}{k!}.
 \]
-Let $v_0\in\mathbb R^n$. Prove that
+Let $v_0\in\mathbb R^n$.
+Prove that
 \[
 v(t)=e^{At}v_0
 \]

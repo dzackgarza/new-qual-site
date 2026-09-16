@@ -14,11 +14,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a complex $n\times n$ matrix. State and prove under which conditions on $A$ the identity
+Let $A$ be a complex $n\times n$ matrix.
+State and prove under which conditions on $A$ the identity
 \[
 \det(e^A)=\exp(\operatorname{tr}A)
 \]
-holds. Here
+holds.
+Here
 \[
 e^A=I+A+\frac{A^2}{2!}+\frac{A^3}{3!}+\cdots.
 \]

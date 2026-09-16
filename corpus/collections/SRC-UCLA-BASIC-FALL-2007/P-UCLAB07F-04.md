@@ -18,10 +18,7 @@ audit:
 ::: {.problem}
 Suppose $f:\mathbb R\to\mathbb R$ is twice differentiable and $|f''(x)|\le B$.
 
-(a) Prove that
-\[\left|2Af(0)-\int_{-A}^{A}f(x)\,dx\right|\le \frac{A^3}{3}B.\]
+(a) Prove that \[\left|2Af(0)-\int_{-A}^{A}f(x)\,dx\right|\le \frac{A^3}{3}B.\]
 
-(b) Use part (a) to justify
-\[\left|\int_a^b f(x)\,dx-\frac{b-a}{n}\sum_{k=1}^n f\!\left(a+\frac{2k-1}{2n}(b-a)\right)\right|\le Cn^{-2},\]
-where $C$ is independent of $n$.
+(b) Use part (a) to justify \[\left|\int_a^b f(x)\,dx-\frac{b-a}{n}\sum_{k=1}^n f\!\left(a+\frac{2k-1}{2n}(b-a)\right)\right|\le Cn^{-2},\] where $C$ is independent of $n$.
 :::

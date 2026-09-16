@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be an $n$-dimensional vector space and $T\colon V\to V$ linear. Prove, without merely quoting the rank-nullity theorem, that
+Let $V$ be an $n$-dimensional vector space and $T\colon V\to V$ linear.
+Prove, without merely quoting the rank-nullity theorem, that
 \[
 \dim\ker T+\dim\operatorname{range}T=n.
 \]

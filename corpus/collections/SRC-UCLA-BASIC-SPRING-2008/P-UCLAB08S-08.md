@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be an $n$-dimensional vector space over $\mathbb Q$, and let $T\colon V\to V$ be linear with $T^2=T$. Prove that every $v\in V$ can be written uniquely as
+Let $V$ be an $n$-dimensional vector space over $\mathbb Q$, and let $T\colon V\to V$ be linear with $T^2=T$.
+Prove that every $v\in V$ can be written uniquely as
 \[
 v=v_1+v_2
 \]

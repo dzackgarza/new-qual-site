@@ -21,5 +21,6 @@ Let $A\subset\mathbb R^2$ be nonempty and connected.
 
 <1>1. Prove that if $A$ is open, then $A$ is path connected.
 
-<1>2. Is <1>1 still true if $A$ is closed? Prove your assertion.
+<1>2. Is <1>1 still true if $A$ is closed?
+Prove your assertion.
 :::

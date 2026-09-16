@@ -14,7 +14,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[a,b]\to\mathbb R$ be continuous and nonnegative. Prove that
+Let $f:[a,b]\to\mathbb R$ be continuous and nonnegative.
+Prove that
 \[
 \int_a^b f(x)\,dx=0
 \]

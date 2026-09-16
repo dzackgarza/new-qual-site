@@ -16,9 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $f:[0,1]\to\mathbb R$ be continuous with $f(1)=0$. Show that there is a sequence of polynomials, each vanishing at $1$, that converges uniformly to $f$ on $[0,1]$.
+(a) Let $f:[0,1]\to\mathbb R$ be continuous with $f(1)=0$.
+Show that there is a sequence of polynomials, each vanishing at $1$, that converges uniformly to $f$ on $[0,1]$.
 
-(b) If $f$ is continuous on $[0,1]$ and
-\[\int_0^1 f(x)(x-1)^k\,dx=0\qquad(k=1,2,\ldots),\]
-show that $f\equiv0$.
+(b) If $f$ is continuous on $[0,1]$ and \[\int_0^1 f(x)(x-1)^k\,dx=0\qquad(k=1,2,\ldots),\] show that $f\equiv0$.
 :::

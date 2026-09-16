@@ -7,7 +7,9 @@ order: 10
 
 [[attachments/UCLA_Basic_Exam_Topics.pdf|UCLA Basic Examination syllabus]]
 
-The retained UCLA syllabus (captured January 2019) defines the Basic Examination around fundamentals of one- and multivariable analysis, metric-space topology, and linear algebra. It also records the department’s recommended preparation texts, including Tao, Gamelin–Greene, Edwards, Apostol, Rosenlicht, Rudin, Petersen, Lang, Hoffman–Kunze, Serre, and standard numerical-analysis references. It is a syllabus/reference document, not an exam or problem collection.
+The retained UCLA syllabus (captured January 2019) defines the Basic Examination around fundamentals of one- and multivariable analysis, metric-space topology, and linear algebra.
+It also records the department’s recommended preparation texts, including Tao, Gamelin–Greene, Edwards, Apostol, Rosenlicht, Rudin, Petersen, Lang, Hoffman–Kunze, Serre, and standard numerical-analysis references.
+It is a syllabus/reference document, not an exam or problem collection.
 
 ## Linear Algebra
 

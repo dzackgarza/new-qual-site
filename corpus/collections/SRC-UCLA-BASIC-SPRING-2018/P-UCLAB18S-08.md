@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Define $x_1=1$ and $x_{n+1}=\sin x_n$. Prove that
+Define $x_1=1$ and $x_{n+1}=\sin x_n$.
+Prove that
 \[
 \lim_{n\to\infty}\sqrt n\,x_n
 \]

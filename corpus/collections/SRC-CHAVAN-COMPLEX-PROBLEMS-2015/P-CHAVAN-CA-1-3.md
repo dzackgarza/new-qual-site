@@ -17,7 +17,8 @@ Let
 \[
 f(z)=\sum_{n=0}^{\infty}a_nz^n
 \]
-converge uniformly on the closed unit disk. Show that
+converge uniformly on the closed unit disk.
+Show that
 \[
 \max_{|z|\le1}|f(z)|=\max_{|z|=1}|f(z)|.
 \]

@@ -23,7 +23,8 @@ M=\begin{pmatrix}A&B\\C&D\end{pmatrix},
 \qquad
 M^{-1}=\begin{pmatrix}P&Q\\R&S\end{pmatrix},
 \]
-where $A,\ldots,S$ are $k\times k$ matrices. Show that
+where $A,\ldots,S$ are $k\times k$ matrices.
+Show that
 \[
 \det(M)\det(S)=\det(A).
 \]

@@ -16,9 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:V\to W$ be a linear transformation between finite-dimensional vector spaces. Compute, with proof,
-\[\dim(\operatorname{Null}T)+\dim(\operatorname{Range}T)\]
-and
-\[\dim(\operatorname{Null}T^*)+\dim(\operatorname{Range}T)\]
-in terms of $\dim V$ and $\dim W$, where $T^*$ is the adjoint of $T$.
+Let $T:V\to W$ be a linear transformation between finite-dimensional vector spaces.
+Compute, with proof, \[\dim(\operatorname{Null}T)+\dim(\operatorname{Range}T)\] and \[\dim(\operatorname{Null}T^*)+\dim(\operatorname{Range}T)\] in terms of $\dim V$ and $\dim W$, where $T^*$ is the adjoint of $T$.
 :::

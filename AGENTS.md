@@ -45,6 +45,7 @@ agent-memory maintain move <key> --to global/advice
 ```
 <!-- agent-memory:end -->
 
+
 # This project is not automatable
 
 Read this before writing anything in this repository.
@@ -873,7 +874,7 @@ dependency; do not retain a completed snapshot merely as insurance.
 
 # Running checks
 
-For prose-only changes that leave every `::: {.problem}` block unchanged, including
+For prose-only changes that leave every posed-item (`problem` / `exercise`) block unchanged, including
 authored mathematical solutions, inspect the diff and review the mathematics, then use
 `git commit --no-verify`. Commit each completed card before selecting the next one. This is
 the authorized docs-only exemption from automated verification, including the Git skill's
@@ -881,7 +882,7 @@ hook rule. Do not run builds, test suites, broad formatters, or queue regenerati
 commits. Adding a solution and its audit entry is authored content.
 
 A new problem card, an ingested collection containing new problem cards, or any edit to an
-existing `::: {.problem}` block is **not** in that exemption. Commit it normally. The local
+existing posed-item (`problem` / `exercise`) block is **not** in that exemption. Commit it normally. The local
 `test-commit` runs `_extraction-detector-staged` before delegating to the shared formatter,
 so untranscribed extractor output is rejected while its line layout is still intact.
 `just commit-card` follows the same rule automatically: it skips hooks only when the problem

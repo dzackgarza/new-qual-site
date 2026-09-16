@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be holomorphic on the unit disk and suppose \(|f(z)|\le M\) there. Prove that
+Let \(f\) be holomorphic on the unit disk and suppose \(|f(z)|\le M\) there.
+Prove that
 \[
 |f'(z)|\le \frac{M}{1-|z|}
 \]

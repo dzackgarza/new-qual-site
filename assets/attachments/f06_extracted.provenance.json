@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/f06.pdf",
+  "source_pdf_sha256": "f31afd482193f627f05ea79fbbbf520366069ec8d400094d733707c5ecc8fd99",
+  "extracted_markdown": "assets/attachments/f06_extracted.md",
+  "extracted_markdown_sha256": "10ce3b6e005768a1c8c7a28928f6f3386b787c3888576c65b57259fea6b933e1",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/f06.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/f06.md",
+  "card_comparison": "All eighteen Fall 2006 Berkeley preliminary-exam positions, Part A 1A-9A followed by Part B 1B-9B, are represented in SRC-BERKELEY-PRELIM-FALL-2006 in the same source order. The canonical cards agree with this deterministic exam baseline; Problem 3A retains the source packet's explicit correction of the original {3,-3} target to {1/3,-1/3}.",
+  "known_extractor_defects": [
+    "Problem 2B renders the phrase 'such that' as 'each that'; the canonical card retains the mathematically unambiguous wording.",
+    "Problem 8B drops the arrow in the displayed limit R to infinity; the canonical card records the intended limit notation."
+  ]
+}

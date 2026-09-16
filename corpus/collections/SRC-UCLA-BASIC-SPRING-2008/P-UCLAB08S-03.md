@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Assume $f\in C^4([a,b])$ is real-valued. Derive a formula for the approximation error $E(h)$ when
+Assume $f\in C^4([a,b])$ is real-valued.
+Derive a formula for the approximation error $E(h)$ when
 \[
 f''(x)\sim \frac{f(x+h)-2f(x)+f(x-h)}{h^2},
 \]

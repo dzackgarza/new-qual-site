@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(u_1,\ldots,u_k\) be linearly independent vectors in \(\mathbb R^n\), and let \(A\subseteq\mathbb R^k\) be closed. Define
+Let \(u_1,\ldots,u_k\) be linearly independent vectors in \(\mathbb R^n\), and let \(A\subseteq\mathbb R^k\) be closed.
+Define
 \[
 S=\left\{\alpha_1u_1+\cdots+\alpha_ku_k:(\alpha_1,\ldots,\alpha_k)\in A\right\}.
 \]

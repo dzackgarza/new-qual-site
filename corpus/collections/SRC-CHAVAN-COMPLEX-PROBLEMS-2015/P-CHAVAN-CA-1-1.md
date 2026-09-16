@@ -28,11 +28,14 @@ and let $e_1,\ldots,e_{n+1}$ be the standard basis of $\mathbb C^{n+1}$.
    ze_1+se_2,\ e_3,\ldots,e_{n+1},\ se_1-\overline z e_2.
    \]
    Show that $U$ is unitary, hence its eigenvalues $\lambda_1,\ldots,\lambda_{n+1}$ have modulus $1$.
+
 2. Show that $z^k=e_1^TU^ke_1$, and hence $p(z)=e_1^Tp(U)e_1$.
+
 3. Deduce
    \[
    \max_{|z|\le1}|p(z)|\le\|p(U)\|.
    \]
+
 4. If $D=\operatorname{diag}(\lambda_1,\ldots,\lambda_{n+1})$, show
    \[
    \|p(U)\|=\|p(D)\|=\max_i|p(\lambda_i)|.

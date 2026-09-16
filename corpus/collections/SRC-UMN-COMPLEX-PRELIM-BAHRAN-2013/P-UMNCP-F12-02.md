@@ -21,5 +21,6 @@ Let \(f\) be a complex-valued function on the unit disk \(\mathbb D\). Suppose b
 \[
 g=f^2\qquad\text{and}\qquad h=f^3
 \]
-are analytic. Prove that \(f\) is analytic.
+are analytic.
+Prove that \(f\) is analytic.
 :::

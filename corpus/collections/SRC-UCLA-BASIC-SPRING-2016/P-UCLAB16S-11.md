@@ -28,7 +28,8 @@ a&b&0&\cdots&0\\
 0&\cdots&0&-b&a
 \end{pmatrix}.
 \]
-Prove that $\det M_n>0$ for all $n$. Prove that the limit
+Prove that $\det M_n>0$ for all $n$.
+Prove that the limit
 \[
 \lim_{n\to\infty}\log\det M_n
 \]

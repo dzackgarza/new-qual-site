@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,\infty)\to[0,\infty)$ be continuous with $f(0)=0$. Show that if
+Let $f:[0,\infty)\to[0,\infty)$ be continuous with $f(0)=0$.
+Show that if
 \[
 f(t)\le 1+\frac1{10}f(t)^2\qquad\text{for all }t\in[0,\infty),
 \]

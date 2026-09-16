@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[1,\infty)\to[0,\infty)$ be bounded and monotonically decreasing with $\lim_{x\to\infty}f(x)=0$. Show that
+Let $f:[1,\infty)\to[0,\infty)$ be bounded and monotonically decreasing with $\lim_{x\to\infty}f(x)=0$.
+Show that
 \[
 \int_1^{N+1}f(x)\,dx-\sum_{n=1}^N f(n)
 \]

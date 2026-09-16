@@ -17,5 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $U\subset\mathbb R^n$ be nonempty, open, and connected. Suppose $f:U\to\mathbb R$ has all first partial derivatives at every point of $U$, and all of them vanish. Prove that $f$ is constant.
+Let $U\subset\mathbb R^n$ be nonempty, open, and connected.
+Suppose $f:U\to\mathbb R$ has all first partial derivatives at every point of $U$, and all of them vanish.
+Prove that $f$ is constant.
 :::

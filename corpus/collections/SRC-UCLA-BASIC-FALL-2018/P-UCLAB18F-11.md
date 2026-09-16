@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be the vector space of real $3\times3$ skew-symmetric matrices. Prove that
+Let $V$ be the vector space of real $3\times3$ skew-symmetric matrices.
+Prove that
 \[
 \langle A,B\rangle=\frac12\operatorname{Tr}(AB^T)
 \]

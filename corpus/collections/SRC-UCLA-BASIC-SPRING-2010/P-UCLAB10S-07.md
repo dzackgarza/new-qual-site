@@ -17,11 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 7. Let $(f_n)$ be a sequence of real-valued functions on $\mathbb R$. Assume that there is $B<\infty$ such that
+Problem 7. Let $(f_n)$ be a sequence of real-valued functions on $\mathbb R$.
+Assume that there is $B<\infty$ such that
 \[
 |f_n(x)|\le B
 \]
-for every $n$ and every $x$. Prove that there is a subsequence $(f_{n_k})$ such that
+for every $n$ and every $x$.
+Prove that there is a subsequence $(f_{n_k})$ such that
 \[
 \lim_{k\to\infty}f_{n_k}(r)
 \]

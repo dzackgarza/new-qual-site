@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f:\mathbb D\to\mathbb D\) be holomorphic. Suppose there are distinct points \(p,q\in\mathbb D\) such that \(f(p)=p\) and \(f(q)=q\). Show that \(f(z)=z\) for every \(z\in\mathbb D\).
+Let \(f:\mathbb D\to\mathbb D\) be holomorphic.
+Suppose there are distinct points \(p,q\in\mathbb D\) such that \(f(p)=p\) and \(f(q)=q\). Show that \(f(z)=z\) for every \(z\in\mathbb D\).
 :::

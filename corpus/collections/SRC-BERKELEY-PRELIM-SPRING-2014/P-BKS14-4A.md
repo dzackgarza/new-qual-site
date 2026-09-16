@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be analytic on the closed unit disk and suppose \(|f(z)|\le 1\) there. Assume
+Let \(f\) be analytic on the closed unit disk and suppose \(|f(z)|\le 1\) there.
+Assume
 \[
 f\!\left(\frac12\right)=f\!\left(\frac i2\right)=0.
 \]

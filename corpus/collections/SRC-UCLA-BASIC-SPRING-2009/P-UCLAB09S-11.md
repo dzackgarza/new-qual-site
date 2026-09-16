@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 11. (a) Explain precisely the statement: “Every matrix can be brought to Jordan normal form, and the normal form is essentially unique.” No proofs are required, but state all hypotheses and define explicitly “brought to Jordan normal form,” “Jordan normal form,” and “essentially unique.”
+Problem 11. (a) Explain precisely the statement: “Every matrix can be brought to Jordan normal form, and the normal form is essentially unique.”
+No proofs are required, but state all hypotheses and define explicitly “brought to Jordan normal form,” “Jordan normal form,” and “essentially unique.”
 
-(b) Define the minimal polynomial of a matrix. How can it be determined from a matrix in Jordan normal form?
+(b) Define the minimal polynomial of a matrix.
+How can it be determined from a matrix in Jordan normal form?
 :::

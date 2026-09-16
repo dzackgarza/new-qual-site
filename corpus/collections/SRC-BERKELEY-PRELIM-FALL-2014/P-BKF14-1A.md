@@ -24,7 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $a(n)$ be the number of ways that Harry Potter can buy a new broomstick valued at $n$ knuts using bronze knuts, silver sickles worth $29$ knuts, and gold galleons worth $17$ sickles. Find
+Let $a(n)$ be the number of ways that Harry Potter can buy a new broomstick valued at $n$ knuts using bronze knuts, silver sickles worth $29$ knuts, and gold galleons worth $17$ sickles.
+Find
 \[
 \sum_{n\ge 0} a(n)z^n
 \]
@@ -64,7 +65,8 @@ The coefficient of $(1-z)^{-3}$ is
 \[
 [z^n](1-z)^{-3}=\binom{n+2}{2}=\frac{n^2}{2}+O(n).
 \]
-Every pole other than $z=1$ has order at most $2$: a nontrivial common root of $z^{29}=1$ and $z^{493}=1$ is a nontrivial $29$th root of unity, where only the last two denominator factors vanish. Therefore all other poles contribute only $O(n)$ to $a(n)$.
+Every pole other than $z=1$ has order at most $2$: a nontrivial common root of $z^{29}=1$ and $z^{493}=1$ is a nontrivial $29$th root of unity, where only the last two denominator factors vanish.
+Therefore all other poles contribute only $O(n)$ to $a(n)$.
 
 Consequently
 \[

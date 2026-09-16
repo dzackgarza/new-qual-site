@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Let $A$ be an $n\times n$ real symmetric matrix with eigenvalues $\lambda_1\ge\cdots\ge\lambda_n$. Prove that
+Problem 2. Let $A$ be an $n\times n$ real symmetric matrix with eigenvalues $\lambda_1\ge\cdots\ge\lambda_n$.
+Prove that
 \[
 \lambda_k=
 \max_{\substack{U\subseteq\mathbb R^n\\ \dim U=k}}

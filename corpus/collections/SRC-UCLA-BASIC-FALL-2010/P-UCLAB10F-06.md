@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $T$ be an invertible linear operator on a finite-dimensional vector space $V$ over a field $F$. Prove that there exists a polynomial $f\in F[t]$ such that
+Problem 6. Let $T$ be an invertible linear operator on a finite-dimensional vector space $V$ over a field $F$.
+Prove that there exists a polynomial $f\in F[t]$ such that
 \[
 T^{-1}=f(T).
 \]

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be Lipschitz. Suppose that for every $x\in\mathbb R$,
+Let $f:\mathbb R\to\mathbb R$ be Lipschitz.
+Suppose that for every $x\in\mathbb R$,
 \[
 \lim_{n\to\infty}n\left[f\left(x+\frac1n\right)-f(x)\right]=0.
 \]

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Suppose $f:\mathbb R\to\mathbb R$ is bounded and Lipschitz continuous. For $k\in\mathbb N$, define $x_k:[0,1]\to\mathbb R$ by $x_k(0)=0$ and
+Problem 10. Suppose $f:\mathbb R\to\mathbb R$ is bounded and Lipschitz continuous.
+For $k\in\mathbb N$, define $x_k:[0,1]\to\mathbb R$ by $x_k(0)=0$ and
 \[
 x_k(t)=x_k(n2^{-k})+(t-n2^{-k})f(x_k(n2^{-k}))
 \]

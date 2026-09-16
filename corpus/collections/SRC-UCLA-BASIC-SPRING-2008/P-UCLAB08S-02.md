@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $(f_n)$ be a sequence of continuous nonnegative functions on $[0,1]$ such that $f_n(x)\to0$ for every $x\in[0,1]$. Prove or give a counterexample to the assertion
+Let $(f_n)$ be a sequence of continuous nonnegative functions on $[0,1]$ such that $f_n(x)\to0$ for every $x\in[0,1]$.
+Prove or give a counterexample to the assertion
 \[
 \lim_{n\to\infty}\int_0^1 f_n(x)\,dx=0.
 \]

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $a,b\in\mathbb R$ with $a<b$. Show that if $g,h:[a,b]\to\mathbb R$ are continuous and $h\ge0$, then there is $c\in[a,b]$ such that
+Let $a,b\in\mathbb R$ with $a<b$.
+Show that if $g,h:[a,b]\to\mathbb R$ are continuous and $h\ge0$, then there is $c\in[a,b]$ such that
 \[
 \int_a^b g(x)h(x)\,dx=g(c)\int_a^b h(x)\,dx.
 \]

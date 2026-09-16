@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 3. Let $S$ and $T$ be commuting normal operators on a finite-dimensional complex inner-product space $V$. Prove that $S$ and $T$ have a common basis of eigenvectors.
+Problem 3. Let $S$ and $T$ be commuting normal operators on a finite-dimensional complex inner-product space $V$.
+Prove that $S$ and $T$ have a common basis of eigenvectors.
 :::

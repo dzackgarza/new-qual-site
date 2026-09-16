@@ -21,7 +21,8 @@ Let $a\colon\mathbb R\to[0,\infty)$ satisfy the following bounded-finite-sum con
 \[
 \sum_{x\in F}a(x)\le M
 \]
-for every finite set $F\subset\mathbb R$. Prove that
+for every finite set $F\subset\mathbb R$.
+Prove that
 \[
 \{x\in\mathbb R:a(x)>0\}
 \]

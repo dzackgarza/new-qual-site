@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(F\) be a finite field with \(q\) elements. A complete flag in \(F^n\) is a nested sequence
+Let \(F\) be a finite field with \(q\) elements.
+A complete flag in \(F^n\) is a nested sequence
 \[
 V^1\subset V^2\subset\cdots\subset V^{n-1}
 \]

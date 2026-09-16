@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Give an example of a function $f$ on $[0,1]$ having infinitely many discontinuities but which is Riemann integrable. Include a proof; do not merely quote a theorem.
+Problem 5. Give an example of a function $f$ on $[0,1]$ having infinitely many discontinuities but which is Riemann integrable.
+Include a proof; do not merely quote a theorem.
 :::

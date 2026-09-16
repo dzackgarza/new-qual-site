@@ -14,7 +14,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\gamma$ be a smooth curve from $(1,0)$ to $(1,0)$ in $\mathbb R^2\setminus\{(0,0)\}$ winding once around the origin in the clockwise direction. Compute
+Let $\gamma$ be a smooth curve from $(1,0)$ to $(1,0)$ in $\mathbb R^2\setminus\{(0,0)\}$ winding once around the origin in the clockwise direction.
+Compute
 \[
 I(\gamma)=\int_\gamma\frac{y\,dx-x\,dy}{x^2+y^2}.
 \]

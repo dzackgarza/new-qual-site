@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(h\) be a nowhere-zero entire function. Prove that there exists an entire function \(g\) such that
+Let \(h\) be a nowhere-zero entire function.
+Prove that there exists an entire function \(g\) such that
 \[
 e^g=h.
 \]

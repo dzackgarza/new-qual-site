@@ -14,5 +14,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $F$ be the finite field with $p$ elements and let $V$ be an $n$-dimensional vector space over $F$. Compute the number of invertible linear maps $V\to V$. A lengthy algebraic expression is acceptable, provided you explain why it is correct.
+Let $F$ be the finite field with $p$ elements and let $V$ be an $n$-dimensional vector space over $F$.
+Compute the number of invertible linear maps $V\to V$.
+A lengthy algebraic expression is acceptable, provided you explain why it is correct.
 :::

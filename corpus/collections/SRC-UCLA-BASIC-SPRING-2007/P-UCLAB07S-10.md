@@ -20,8 +20,11 @@ audit:
 Suppose $f_n\colon\mathbb R\to\mathbb R$ satisfy:
 
 - $0\le f_n(x)\le1$ for all $x$ and $n$;
+
 - each $f_n$ is increasing;
+
 - $f_n(x)\to f(x)$ pointwise, where $f$ is continuous on $\mathbb R$;
+
 - $f(x)\to0$ as $x\to-\infty$ and $f(x)\to1$ as $x\to\infty$.
 
 Prove that $f_n\to f$ uniformly on $\mathbb R$.

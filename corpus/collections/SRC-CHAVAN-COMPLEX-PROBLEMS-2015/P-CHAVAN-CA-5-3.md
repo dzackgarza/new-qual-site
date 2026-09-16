@@ -18,5 +18,6 @@ Let $f:\Omega\to\mathbb C$ be an open mapping on an open set $\Omega\subseteq\ma
 Define $|f|(z)=|f(z)|$.
 
 1. Show that $|f|$ cannot have a local maximum at a point of $\Omega$.
+
 2. If $\overline\Omega$ is compact and $f$ is continuous on $\overline\Omega$, show that $|f|$ attains its maximum on $\partial\Omega$.
 :::

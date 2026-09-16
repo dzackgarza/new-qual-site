@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 6. Let $(f_n)$ be a sequence of continuous functions on $[0,1]$. Assume
+Problem 6. Let $(f_n)$ be a sequence of continuous functions on $[0,1]$.
+Assume
 \[
 f_n(x)\ge f_{n+1}(x)\quad\text{for all }x\in[0,1],
 \]

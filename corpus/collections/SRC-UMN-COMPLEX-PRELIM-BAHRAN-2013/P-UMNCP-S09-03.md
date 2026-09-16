@@ -23,5 +23,6 @@ Find an explicit conformal equivalence from the region bounded by the circles
 \qquad\text{and}\qquad
 |z-i|=1
 \]
-onto the upper half-plane. The intended region is the part inside \(|z-i|<1\) and outside \(|z-i/2|\le 1/2\).
+onto the upper half-plane.
+The intended region is the part inside \(|z-i|<1\) and outside \(|z-i/2|\le 1/2\).
 :::

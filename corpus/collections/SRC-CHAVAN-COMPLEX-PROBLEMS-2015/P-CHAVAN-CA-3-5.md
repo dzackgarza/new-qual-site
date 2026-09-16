@@ -20,6 +20,7 @@ Let $f$ be nonconstant and holomorphic on an open set containing the closed unit
 \]
 
 1. Show that $f$ has a zero in the open unit disk.
+
 2. Show that for every $|w_0|<1$, the equation $f(z)=w_0$ has a root in the open unit disk.
 
 Thus the image of $f$ contains the unit disk.

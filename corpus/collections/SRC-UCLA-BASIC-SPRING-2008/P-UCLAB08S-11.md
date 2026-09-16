@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb C)$ and suppose that $A^m=I_n$ for some positive integer $m$. Prove that $A$ is diagonalizable.
+Let $A\in M_n(\mathbb C)$ and suppose that $A^m=I_n$ for some positive integer $m$.
+Prove that $A$ is diagonalizable.
 :::

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $(X,\rho)$ be a compact metric space and let $f:X\to X$ be an isometry. Prove that $f$ is surjective.
+Let $(X,\rho)$ be a compact metric space and let $f:X\to X$ be an isometry.
+Prove that $f$ is surjective.
 
 Hint: assume $x\notin f(X)$ and follow the iterates of $f$ on $x$.
 :::

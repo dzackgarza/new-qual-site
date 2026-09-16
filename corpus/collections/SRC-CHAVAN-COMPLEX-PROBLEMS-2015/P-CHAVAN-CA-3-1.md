@@ -17,5 +17,6 @@ Let
 \[
 \arg:\mathbb C^*\to[0,2\pi)
 \]
-be the principal argument. Show that $\arg$ is not continuous, and determine its set of discontinuities.
+be the principal argument.
+Show that $\arg$ is not continuous, and determine its set of discontinuities.
 :::

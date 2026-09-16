@@ -21,7 +21,8 @@ For \(R>0\), let
 \[
 \Gamma_R=\{z\in\mathbb C:|z|=R,\ \operatorname{Im}z\ge0\}
 \]
-be the upper semicircle, oriented counterclockwise. Prove that
+be the upper semicircle, oriented counterclockwise.
+Prove that
 \[
 \lim_{R\to\infty}\int_{\Gamma_R}\frac{e^{iz}}{z}\,dz=0.
 \]

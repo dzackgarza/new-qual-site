@@ -28,5 +28,6 @@ D=\begin{pmatrix}1&0&0\\0&1&2\\0&0&1\end{pmatrix},\quad
 E=\begin{pmatrix}1&0&0\\1&1&0\\0&0&1\end{pmatrix},\quad
 F=\begin{pmatrix}1&1&1\\0&1&1\\0&0&1\end{pmatrix}.
 \]
-Which pairs are similar over $\mathbb R$? Fully justify your answer.
+Which pairs are similar over $\mathbb R$?
+Fully justify your answer.
 :::

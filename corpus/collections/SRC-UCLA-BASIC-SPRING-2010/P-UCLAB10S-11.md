@@ -21,7 +21,8 @@ Problem 11. Suppose
 \[
 \sum_{n=1}^{\infty}|a_n|<\infty.
 \]
-Let $\sigma:\mathbb N\to\mathbb N$ be a bijection. Prove that every rearrangement
+Let $\sigma:\mathbb N\to\mathbb N$ be a bijection.
+Prove that every rearrangement
 \[
 \sum_{n=1}^{\infty}a_{\sigma(n)}
 \]

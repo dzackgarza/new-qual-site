@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 10. Let $F$ be a set of continuous real-valued functions on $[0,1]$. Assume that
+Problem 10. Let $F$ be a set of continuous real-valued functions on $[0,1]$.
+Assume that
 
 (i) $F$ is uniformly bounded: there is $M<\infty$ such that $|f(x)|\leq M$ for all $f\in F$ and all $x\in[0,1]$; and
 

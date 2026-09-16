@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $V,W,Z$ be $n$-dimensional vector spaces and let $T\colon V\to W$ and $U\colon W\to Z$ be linear. Prove, without using determinants, that if $UT\colon V\to Z$ is invertible, then both $T$ and $U$ are invertible.
+Let $V,W,Z$ be $n$-dimensional vector spaces and let $T\colon V\to W$ and $U\colon W\to Z$ be linear.
+Prove, without using determinants, that if $UT\colon V\to Z$ is invertible, then both $T$ and $U$ are invertible.
 :::

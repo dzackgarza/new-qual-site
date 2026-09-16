@@ -17,8 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $A,B$ be positive definite $2\times2$ real matrices. Prove or disprove each assertion:
+Let $A,B$ be positive definite $2\times2$ real matrices.
+Prove or disprove each assertion:
 
 1. $A+B$ is positive definite.
+
 2. $AB+BA$ is positive definite.
 :::

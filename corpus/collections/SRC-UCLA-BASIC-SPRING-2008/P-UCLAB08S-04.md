@@ -21,5 +21,6 @@ Let $X\subset\mathbb R^N$ be compact, and let $(f_n)$ be continuous real-valued 
 \[
 0\le f_{n+1}(x)\le f_n(x)
 \]
-for all $x\in X$, with $f_n(x)\to0$ pointwise. Prove Dini's theorem in this setting: $f_n\to0$ uniformly on $X$.
+for all $x\in X$, with $f_n(x)\to0$ pointwise.
+Prove Dini's theorem in this setting: $f_n\to0$ uniformly on $X$.
 :::

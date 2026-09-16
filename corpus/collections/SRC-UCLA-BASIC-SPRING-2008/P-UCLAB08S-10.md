@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb C)$ have $n$ distinct eigenvalues. Prove that if $B\in M_n(\mathbb C)$ satisfies $AB=BA$, then $B$ is diagonalizable.
+Let $A\in M_n(\mathbb C)$ have $n$ distinct eigenvalues.
+Prove that if $B\in M_n(\mathbb C)$ satisfies $AB=BA$, then $B$ is diagonalizable.
 :::

@@ -21,10 +21,12 @@ Consider
 \[
 y(t)=y_0+\int_0^t f(s,y(s))\,ds,
 \]
-where $f$ is continuous on $[0,T]\times\mathbb R$ and Lipschitz in its second variable with constant $K$. Assume the Picard iterates
+where $f$ is continuous on $[0,T]\times\mathbb R$ and Lipschitz in its second variable with constant $K$.
+Assume the Picard iterates
 \[
 y^n(t)=y_0+\int_0^t f(s,y^{n-1}(s))\,ds,
 \qquad y^0(t)\equiv y_0,
 \]
-converge uniformly to a solution $y$. Show that if $Y$ is another solution satisfying $|Y(t)-y_0|\le C$ on $[0,T]$, then $Y(t)=y(t)$ for all $t\in[0,T]$.
+converge uniformly to a solution $y$.
+Show that if $Y$ is another solution satisfying $|Y(t)-y_0|\le C$ on $[0,T]$, then $Y(t)=y(t)$ for all $t\in[0,T]$.
 :::

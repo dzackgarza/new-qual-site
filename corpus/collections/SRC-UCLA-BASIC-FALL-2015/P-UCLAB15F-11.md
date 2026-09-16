@@ -21,7 +21,8 @@ Let $T:V\to V$ be linear with
 \[
 T^{18}=0,\qquad T^5\ne0.
 \]
-Suppose $V\cong\mathbb R^6$. Prove that there is no linear operator $S:V\to V$ such that $S^2=T$.
+Suppose $V\cong\mathbb R^6$.
+Prove that there is no linear operator $S:V\to V$ such that $S^2=T$.
 
 Does the answer change if $V\cong\mathbb R^{12}$?
 :::

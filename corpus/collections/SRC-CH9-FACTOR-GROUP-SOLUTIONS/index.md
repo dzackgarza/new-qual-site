@@ -53,5 +53,6 @@ source:
 ---
 
 ::: remark
-The retained six-page Chapter 9 solution packet contains 25 sparsely numbered ordinary problems and three team problems. Collection membership follows those 28 statements in source order; the worked answers in the PDF are not duplicated into the problem cards.
+The retained six-page Chapter 9 solution packet contains 25 sparsely numbered ordinary problems and three team problems.
+Collection membership follows those 28 statements in source order; the worked answers in the PDF are not duplicated into the problem cards.
 :::

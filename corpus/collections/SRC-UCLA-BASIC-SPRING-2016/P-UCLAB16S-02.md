@@ -20,6 +20,7 @@ audit:
 Let $a<b$ be real numbers.
 
 1. Define what it means for a function $f:[a,b]\to\mathbb R$ to be Riemann integrable on $[a,b]$.
+
 2. Let $\{x_n\}_{n=1}^{\infty}\subset[a,b]$ be a sequence such that $\lim_{n\to\infty}x_n$ exists, and define
 \[
 f(x)=\begin{cases}

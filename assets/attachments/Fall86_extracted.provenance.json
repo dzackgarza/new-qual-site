@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall86.pdf",
+  "source_pdf_sha256": "35de15ced6ffebefe6b2fc4fa1f3113da7bd9a7f7f8fad186a2a2aaed6e31052",
+  "extracted_markdown": "assets/attachments/Fall86_extracted.md",
+  "extracted_markdown_sha256": "dfafa41d3c0d96d511c4b4bca1905aac9529776604be8e91f749d6bb9078035c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall86.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall86.md",
+  "intake_status": "blocked",
+  "blocker": "Problem 5's defining 2x2 matrix A is garbled by the deterministic extraction and no exact repository duplicate was found. The source cannot be fully carded without recovering that matrix, and no alternate parser/OCR/model-vision fallback is permitted.",
+  "known_exact_reuses": [
+    "Problem 4 exactly repeats P-BKF13-4A.",
+    "Problem 15 exactly repeats P-AA27R."
+  ]
+}

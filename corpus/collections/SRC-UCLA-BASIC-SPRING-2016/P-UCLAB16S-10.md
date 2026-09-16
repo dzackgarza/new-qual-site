@@ -17,8 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $S$ be a subset of $\operatorname{Mat}(3,\mathbb C)$. Call $S$ dense if every matrix in $\operatorname{Mat}(3,\mathbb C)$ is a limit of a sequence of matrices in $S$.
+Let $S$ be a subset of $\operatorname{Mat}(3,\mathbb C)$.
+Call $S$ dense if every matrix in $\operatorname{Mat}(3,\mathbb C)$ is a limit of a sequence of matrices in $S$.
 
 1. Prove that the set of matrices with distinct eigenvalues is dense in $\operatorname{Mat}(3,\mathbb C)$.
+
 2. Prove that the set of matrices with one Jordan block is not dense in $\operatorname{Mat}(3,\mathbb C)$.
 :::

@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
+- assets/attachments/f07.pdf
 - assets/attachments/f07solution.pdf
 source:
   source_kind: university-exam
@@ -41,5 +43,6 @@ source:
 ---
 
 ::: remark
-UC Berkeley preliminary examination, Fall 2007, reconstructed from the retained solution packet, which prints each problem with its solution. Problems are listed in source order, Part A followed by Part B.
+UC Berkeley preliminary examination, Fall 2007, reconstructed from the retained solution packet, which prints each problem with its solution.
+Problems are listed in source order, Part A followed by Part B.
 :::

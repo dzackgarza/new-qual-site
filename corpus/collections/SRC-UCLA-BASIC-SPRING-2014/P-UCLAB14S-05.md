@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 5. Suppose that $V$ is a finite-dimensional real inner-product space with inner product $(\cdot,\cdot)$, that $L\in\operatorname{Hom}(V,V)$, and that $b\in V$ is fixed. Suppose that $u,v\in V$ both minimize
+Problem 5. Suppose that $V$ is a finite-dimensional real inner-product space with inner product $(\cdot,\cdot)$, that $L\in\operatorname{Hom}(V,V)$, and that $b\in V$ is fixed.
+Suppose that $u,v\in V$ both minimize
 \[
 D(x)=\lVert L(x)-b\rVert.
 \]

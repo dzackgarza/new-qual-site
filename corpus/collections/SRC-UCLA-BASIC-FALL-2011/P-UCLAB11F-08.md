@@ -21,5 +21,6 @@ Problem 8. Assume that a complex matrix $A$ satisfies
 \[
 \ker(A-\lambda I)=\ker((A-\lambda I)^2)
 \]
-for every $\lambda\in\mathbb C$. Show from first principles, without using the theory of canonical forms, that $A$ is diagonalizable.
+for every $\lambda\in\mathbb C$.
+Show from first principles, without using the theory of canonical forms, that $A$ is diagonalizable.
 :::

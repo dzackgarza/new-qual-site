@@ -17,10 +17,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $\alpha_1,\ldots,\alpha_n\in\mathbb R$ be distinct. Suppose $a_1,\ldots,a_n\in\mathbb R$ satisfy
+Let $\alpha_1,\ldots,\alpha_n\in\mathbb R$ be distinct.
+Suppose $a_1,\ldots,a_n\in\mathbb R$ satisfy
 \[
 \sum_{i=1}^n a_i e^{\alpha_i t}=0
 \qquad\text{for every }t\in(-1,1).
 \]
-Prove that $a_i=0$ for all $i$. You may use the differentiation operator and the linear-algebra theorem on eigenvectors with distinct eigenvalues.
+Prove that $a_i=0$ for all $i$.
+You may use the differentiation operator and the linear-algebra theorem on eigenvectors with distinct eigenvalues.
 :::

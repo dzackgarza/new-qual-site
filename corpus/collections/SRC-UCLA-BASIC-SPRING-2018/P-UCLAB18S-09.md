@@ -17,5 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be non-decreasing, not necessarily continuous. Prove that $f$ is Riemann integrable on every finite interval $(a,b)$. If using Lebesgue integration theory, provide complete statements and proofs of all facts used.
+Let $f:\mathbb R\to\mathbb R$ be non-decreasing, not necessarily continuous.
+Prove that $f$ is Riemann integrable on every finite interval $(a,b)$.
+If using Lebesgue integration theory, provide complete statements and proofs of all facts used.
 :::

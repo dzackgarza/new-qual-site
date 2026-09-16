@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A\in M_n(\mathbb C)$. Recall that
+Let $A\in M_n(\mathbb C)$.
+Recall that
 \[
 e^A=I+A+\frac{A^2}{2!}+\frac{A^3}{3!}+\cdots.
 \]

@@ -17,11 +17,13 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. (a) Let $f$ be a real-valued continuous function on $[0,1]\times[0,1]$ and let $\varepsilon>0$. Show that there exist real-valued continuous functions $g_1,\ldots,g_n$ and $h_1,\ldots,h_n$ on $[0,1]$, for some finite $n\ge1$, such that
+Problem 4. (a) Let $f$ be a real-valued continuous function on $[0,1]\times[0,1]$ and let $\varepsilon>0$.
+Show that there exist real-valued continuous functions $g_1,\ldots,g_n$ and $h_1,\ldots,h_n$ on $[0,1]$, for some finite $n\ge1$, such that
 \[
 \left|f(x,y)-\sum_{i=1}^n g_i(x)h_i(y)\right|\le\varepsilon,
 \qquad 0\le x,y\le1.
 \]
 
-(b) If $f(x,y)=f(y,x)$ for all $0\le x,y\le1$, can this be done with $h_i=g_i$ for every $i$? Explain.
+(b) If $f(x,y)=f(y,x)$ for all $0\le x,y\le1$, can this be done with $h_i=g_i$ for every $i$?
+Explain.
 :::

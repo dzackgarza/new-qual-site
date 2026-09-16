@@ -17,9 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let $X=\mathbb R\setminus\{0\}$. Find a metric $\rho$ on $X$ such that:
+Let $X=\mathbb R\setminus\{0\}$.
+Find a metric $\rho$ on $X$ such that:
 
 1. $(X,\rho)$ is complete;
+
 2. for every sequence $\{x_n\}\subset X$ and every $x\in X$,
 \[
 \lim_{n\to\infty}|x_n-x|=0

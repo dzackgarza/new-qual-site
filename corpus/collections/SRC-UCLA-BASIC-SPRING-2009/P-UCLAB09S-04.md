@@ -25,7 +25,9 @@ Problem 4. Let $(X,d)$ be an arbitrary metric space.
 
 (c) Define connectedness of $X$.
 
-(d) Is $\mathbb Q$, with its usual metric, connected? Justify your answer.
+(d) Is $\mathbb Q$, with its usual metric, connected?
+Justify your answer.
 
-(e) Suppose $X$ is complete. Prove that $X$ is compact if and only if, for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
+(e) Suppose $X$ is complete.
+Prove that $X$ is compact if and only if, for every $r>0$, $X$ can be covered by finitely many balls of radius $r$.
 :::

@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $G$ be a group and let $H\le G$ have finite index $n$. Prove or disprove:
+Let $G$ be a group and let $H\le G$ have finite index $n$.
+Prove or disprove:
 
 1. If $a\in G$, then $a^n\in H$.
 

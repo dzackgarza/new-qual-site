@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A,B\in M_5(\mathbb R)$ satisfy $A^2=A$, $B^2=B$, and suppose $I-(A+B)$ is invertible. Prove that
+Let $A,B\in M_5(\mathbb R)$ satisfy $A^2=A$, $B^2=B$, and suppose $I-(A+B)$ is invertible.
+Prove that
 \[
 \operatorname{rank}(A)=\operatorname{rank}(B).
 \]

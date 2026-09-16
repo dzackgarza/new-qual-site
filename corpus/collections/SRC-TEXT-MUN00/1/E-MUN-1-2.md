@@ -66,13 +66,16 @@ If an equality fails, determine whether the statement becomes true if the “equ
 ::: {.solution}
 We test each assertion by elementwise membership.
 
-(a) False as an equivalence. The forward implication holds:
+(a) False as an equivalence.
+The forward implication holds:
 \[
 A\subset B\text{ and }A\subset C\Longrightarrow A\subset B\cup C.
 \]
 The converse fails, for example with \(A=\{1\}\), \(B=\{1\}\), \(C=\varnothing\).
 
-(b) False as an equivalence. The forward implication holds. The converse fails for
+(b) False as an equivalence.
+The forward implication holds.
+The converse fails for
 \[
 A=\{1,2\},\qquad B=\{1\},\qquad C=\{2\}.
 \]
@@ -82,15 +85,19 @@ A=\{1,2\},\qquad B=\{1\},\qquad C=\{2\}.
 A\subset B\text{ and }A\subset C\iff A\subset B\cap C.
 \]
 
-(d) False. If \(A\subset B\cap C\), then in fact \(A\subset B\) and \(A\subset C\), so the right-to-left implication holds. The other implication fails, e.g. \(A=B=\{1\}\), \(C=\varnothing\).
+(d) False.
+If \(A\subset B\cap C\), then in fact \(A\subset B\) and \(A\subset C\), so the right-to-left implication holds.
+The other implication fails, e.g. \(A=B=\{1\}\), \(C=\varnothing\).
 
-(e) False. In fact
+(e) False.
+In fact
 \[
 A-(A-B)=A\cap B\subset B,
 \]
 and the reverse inclusion need not hold.
 
-(f) False. Since \(B-A\) is disjoint from \(A\),
+(f) False.
+Since \(B-A\) is disjoint from \(A\),
 \[
 A-(B-A)=A\supset A-B,
 \]
@@ -101,7 +108,8 @@ and equality need not hold.
 A\cap(B-C)=A\cap B\cap C^c=(A\cap B)-(A\cap C).
 \]
 
-(h) False. One always has
+(h) False.
+One always has
 \[
 A\cup(B-C)\supset (A\cup B)-(A\cup C),
 \]
@@ -112,17 +120,21 @@ since the right-hand side is \(B\cap A^c\cap C^c\). Equality fails whenever \(A\
 (A\cap B)\cup(A-B)=A.
 \]
 
-(j) True. If \((a,b)\in A\times B\), then \(a\in A\subset C\) and \(b\in B\subset D\), hence \((a,b)\in C\times D\).
+(j) True.
+If \((a,b)\in A\times B\), then \(a\in A\subset C\) and \(b\in B\subset D\), hence \((a,b)\in C\times D\).
 
-(k) False. For example, if \(A=\varnothing\), then \(A\times B=\varnothing\subset C\times D\) regardless of whether \(B\subset D\).
+(k) False.
+For example, if \(A=\varnothing\), then \(A\times B=\varnothing\subset C\times D\) regardless of whether \(B\subset D\).
 
-(l) True. Suppose \(A,B\ne\varnothing\) and \(A\times B\subset C\times D\). Fix \(b_0\in B\). For every \(a\in A\),
+(l) True.
+Suppose \(A,B\ne\varnothing\) and \(A\times B\subset C\times D\). Fix \(b_0\in B\). For every \(a\in A\),
 \[
 (a,b_0)\in C\times D,
 \]
 so \(a\in C\), hence \(A\subset C\). Similarly, fixing \(a_0\in A\) gives \(B\subset D\).
 
-(m) False. Always
+(m) False.
+Always
 \[
 (A\times B)\cup(C\times D)\subset (A\cup C)\times(B\cup D),
 \]
@@ -138,7 +150,8 @@ but the reverse inclusion may contain the cross terms \(A\times D\) and \(C\time
 A\times(B-C)=(A\times B)-(A\times C).
 \]
 
-(p) True. First
+(p) True.
+First
 \[
 (A\times C)-(B\times C)=(A-B)\times C.
 \]
@@ -147,9 +160,11 @@ Subtracting \(A\times D\) then gives
 ((A-B)\times C)-(A\times D)=(A-B)\times(C-D).
 \]
 
-(q) False. One always has
+(q) False.
+One always has
 \[
 (A-C)\times(B-D)\subset (A\times B)-(C\times D),
 \]
-but equality need not hold. Indeed the left-hand side of the proposed equality also contains pairs with exactly one coordinate lying outside \(C\) or \(D\); for example \((A\times B)-(C\times D)\) contains \((A-C)\times(B\cap D)\).
+but equality need not hold.
+Indeed the left-hand side of the proposed equality also contains pairs with exactly one coordinate lying outside \(C\) or \(D\); for example \((A\times B)-(C\times D)\) contains \((A-C)\times(B\cap D)\).
 :::

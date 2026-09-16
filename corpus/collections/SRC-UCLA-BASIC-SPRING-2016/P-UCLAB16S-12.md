@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a symmetric real $n\times n$ matrix, where $n\ge4$, and let $v_1,\ldots,v_4\in\mathbb R^n$ be nonzero vectors. Suppose
+Let $A$ be a symmetric real $n\times n$ matrix, where $n\ge4$, and let $v_1,\ldots,v_4\in\mathbb R^n$ be nonzero vectors.
+Suppose
 \[
 Av_k=(2k-1)v_k
 \qquad (1\le k\le4).

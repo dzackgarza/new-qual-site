@@ -24,5 +24,6 @@ Problem 1. Let $F$ be a closed subset of a metric space $(X,\rho)$.
 \inf_{x\in K,\,y\in F}\rho(x,y)>0.
 \]
 
-(b) Is the statement in (a) true if $K$ is assumed only to be closed rather than compact? Give a proof if it is true and a counterexample if it is false.
+(b) Is the statement in (a) true if $K$ is assumed only to be closed rather than compact?
+Give a proof if it is true and a counterexample if it is false.
 :::

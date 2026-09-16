@@ -21,5 +21,6 @@ Problem 6. Show that if $A\in M_{n,n}(\mathbb C)$ is normal, then
 \[
 A^*=P(A)
 \]
-for some polynomial $P(x)$ with complex coefficients. Here $A^*$ is the conjugate transpose of $A$.
+for some polynomial $P(x)$ with complex coefficients.
+Here $A^*$ is the conjugate transpose of $A$.
 :::

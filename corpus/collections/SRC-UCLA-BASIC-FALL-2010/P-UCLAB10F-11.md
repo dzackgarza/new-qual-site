@@ -21,5 +21,6 @@ Problem 11. Find the function $g$ that minimizes
 \[
 \int_0^1 |f'(x)|^2\,dx
 \]
-among smooth functions $f:[0,1]\to\mathbb R$ satisfying $f(0)=0$ and $f(1)=1$. Is the minimizing function unique?
+among smooth functions $f:[0,1]\to\mathbb R$ satisfying $f(0)=0$ and $f(1)=1$.
+Is the minimizing function unique?
 :::

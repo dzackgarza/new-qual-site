@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a real symmetric $n\times n$ matrix with distinct eigenvalues $\lambda_1,\ldots,\lambda_\ell$, where $\ell\le n$. Determine
+Let $A$ be a real symmetric $n\times n$ matrix with distinct eigenvalues $\lambda_1,\ldots,\lambda_\ell$, where $\ell\le n$.
+Determine
 \[
 X=\left\{x\in\mathbb R^n:\lim_{k\to\infty}(x^TA^{2k}x)^{1/k}\text{ exists}\right\}
 \]

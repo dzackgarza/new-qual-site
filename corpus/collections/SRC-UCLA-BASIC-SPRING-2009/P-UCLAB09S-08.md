@@ -29,7 +29,8 @@ defines an inner product.
 \[
 \Phi_C(A)=CA-AC.
 \]
-Compute the adjoint of $\Phi_C$. Check that if $C$ is symmetric, then $\Phi_C$ is self-adjoint.
+Compute the adjoint of $\Phi_C$.
+Check that if $C$ is symmetric, then $\Phi_C$ is self-adjoint.
 
 (c) Prove that for every $C$, the map $\Phi_C$ is not onto.
 :::

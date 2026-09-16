@@ -19,5 +19,6 @@ audit:
 ::: {.problem}
 <1>1. Prove that every linear transformation $T\colon\mathbb C^n\to\mathbb C^n$ has a nonzero eigenvector.
 
-<1>2. Is <1>1 true for every real-linear transformation $T\colon\mathbb R^n\to\mathbb R^n$? Prove your assertion.
+<1>2. Is <1>1 true for every real-linear transformation $T\colon\mathbb R^n\to\mathbb R^n$?
+Prove your assertion.
 :::

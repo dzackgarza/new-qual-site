@@ -30,5 +30,6 @@ B=\begin{pmatrix}2&1\\1&2\end{pmatrix}.
 
 (a) Assuming the iteration converges, to what vector $\vec x$ does it converge?
 
-(b) Does the iteration converge for arbitrary initial vectors $\vec x_0$? Justify your answer.
+(b) Does the iteration converge for arbitrary initial vectors $\vec x_0$?
+Justify your answer.
 :::

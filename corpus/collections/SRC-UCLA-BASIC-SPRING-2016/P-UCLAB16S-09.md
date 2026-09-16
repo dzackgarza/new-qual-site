@@ -21,5 +21,6 @@ Let
 \[
 v_1=(0,1,x),\qquad v_2=(1,x,1),\qquad v_3=(x,1,0).
 \]
-Find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb R$. Similarly, find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb Q$.
+Find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb R$.
+Similarly, find all $x\in\mathbb R$ for which $\{v_1,v_2,v_3\}$ is linearly independent over $\mathbb Q$.
 :::

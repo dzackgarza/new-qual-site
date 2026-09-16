@@ -13,7 +13,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\lambda>1$. Show that the equation
+Let $\lambda>1$.
+Show that the equation
 \[
 \lambda=z+e^{-z}
 \]

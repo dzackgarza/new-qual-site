@@ -20,35 +20,37 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $u_n:\mathbb R\to\mathbb R$ is differentiable and satisfies
-\[u_n'(x)=F(u_n(x),x),\]
-where $F$ is continuous and bounded.
+Suppose $u_n:\mathbb R\to\mathbb R$ is differentiable and satisfies \[u_n'(x)=F(u_n(x),x),\] where $F$ is continuous and bounded.
 
 (a) If $u_n\to u$ uniformly, show that $u$ is differentiable and satisfies $u'(x)=F(u(x),x)$.
 
-(b) Suppose the initial-value problem
-\[u'(x)=F(u(x),x),\qquad u(x_0)=y_0\]
-has a unique solution $u:\mathbb R\to\mathbb R$, and $u_n(x_0)\to y_0$. Show that $u_n$ converges uniformly to $u$.
+(b) Suppose the initial-value problem \[u'(x)=F(u(x),x),\qquad u(x_0)=y_0\] has a unique solution $u:\mathbb R\to\mathbb R$, and $u_n(x_0)\to y_0$.
+Show that $u_n$ converges uniformly to $u$.
 :::
 
 ::: {.solution}
-Part (a) is valid. Fix $x\in\mathbb R$. Since
+Part (a) is valid.
+Fix $x\in\mathbb R$.
+Since
 \[
 u_n(x)-u_n(0)=\int_0^x F(u_n(t),t)\,dt,
 \]
-uniform convergence $u_n\to u$, continuity of $F$, and boundedness of $F$ allow passage to the limit on the compact interval between $0$ and $x$. Thus
+uniform convergence $u_n\to u$, continuity of $F$, and boundedness of $F$ allow passage to the limit on the compact interval between $0$ and $x$.
+Thus
 \[
 u(x)-u(0)=\int_0^x F(u(t),t)\,dt,
 \]
 so $u$ is differentiable and $u'(x)=F(u(x),x)$.
 
-Part (b), as printed, is false if "uniformly" means uniformly on all of $\mathbb R$. Take
+Part (b), as printed, is false if "uniformly" means uniformly on all of $\mathbb R$.
+Take
 \[
 F(y,x)=\tanh y,
 \qquad x_0=0,
 \qquad y_0=0.
 \]
-The initial-value problem has the unique solution $u\equiv0$. For initial values $u_n(0)=1/n$, uniqueness gives positive solutions satisfying
+The initial-value problem has the unique solution $u\equiv0$.
+For initial values $u_n(0)=1/n$, uniqueness gives positive solutions satisfying
 \[
 \frac{d}{dx}\log(\sinh u_n(x))=1,
 \]
@@ -60,7 +62,8 @@ Therefore
 \[
 u_n(x)=\operatorname{arsinh}\!\bigl(e^x\sinh(1/n)\bigr),
 \]
-which is unbounded as $x\to+\infty$ for every fixed $n$. Consequently
+which is unbounded as $x\to+\infty$ for every fixed $n$.
+Consequently
 \[
 \sup_{x\in\mathbb R}|u_n(x)-u(x)|=\infty,
 \]

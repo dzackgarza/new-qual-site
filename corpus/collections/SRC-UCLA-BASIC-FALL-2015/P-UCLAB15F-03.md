@@ -20,6 +20,7 @@ audit:
 Let $\{f_n\}$ be continuous functions $f_n:[-1,1]\to[0,1]$ such that for each $x\in[-1,1]$:
 
 1. the sequence $\{f_n(x)\}_{n=1}^{\infty}$ is non-increasing;
+
 2. $\lim_{n\to\infty}f_n(x)=0$.
 
 Define

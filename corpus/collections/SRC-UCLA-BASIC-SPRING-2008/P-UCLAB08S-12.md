@@ -27,9 +27,11 @@ Choose $x\in S$ such that
 \]
 which exists by compactness.
 
-<1>1. Prove that $(x,y)=0$ implies $(Ax,y)=0$. Hint: expand $(A(x+\varepsilon y),x+\varepsilon y)$.
+<1>1. Prove that $(x,y)=0$ implies $(Ax,y)=0$.
+Hint: expand $(A(x+\varepsilon y),x+\varepsilon y)$.
 
 <1>2. Use <1>1 to prove that $x$ is an eigenvector of $A$.
 
-<1>3. Use induction to prove that $\mathbb R^n$ has an orthonormal basis of eigenvectors for $A$. If you use <1>3 in proving an earlier part, give a proof of <1>3 that does not depend on those earlier parts.
+<1>3. Use induction to prove that $\mathbb R^n$ has an orthonormal basis of eigenvectors for $A$.
+If you use <1>3 in proving an earlier part, give a proof of <1>3 that does not depend on those earlier parts.
 :::

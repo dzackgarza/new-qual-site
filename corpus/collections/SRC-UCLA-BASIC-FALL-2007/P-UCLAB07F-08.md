@@ -16,7 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $a_n\ge0$ and $\sum_{n=1}^{\infty}a_n=\infty$. Does it follow that
-\[\sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty?\]
-Prove your answer.
+Suppose $a_n\ge0$ and $\sum_{n=1}^{\infty}a_n=\infty$.
+Does it follow that \[\sum_{n=1}^{\infty}\frac{a_n}{1+a_n}=\infty?\] Prove your answer.
 :::

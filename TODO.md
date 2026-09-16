@@ -71,29 +71,26 @@ Ingesting more sources through the pipeline that produced them adds to the popul
 - **`pdf-source-intake`**. **Needs:** none.
   Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
   The queue is the live worklist; do not copy its count or filenames here.
-  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in MinerU Flash Markdown extraction with repository evidence of that extraction path. An old extraction file with unknown provenance must be regenerated before it can support intake.
-  Create or reconcile the canonical collection and problem cards from that deterministic extraction, with the PDF retained as provenance. Model/source-image inspection may resolve a specific identified extraction error or ambiguity, but it is not an alternative extraction method and cannot certify unchallenged portions of the extraction.
-  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count. The same extraction rule applies when claims about the reference's contents depend on reading the PDF.
-  If MinerU Flash is unavailable or fails for a source, leave that source open and record the extraction blocker; do not substitute PDF rendering, OCR, model vision, or another parser.
+  For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in MinerU Flash Markdown extraction with repository evidence of that extraction path.
+  An old extraction file with unknown provenance must be regenerated before it can support intake.
+  Create or reconcile the canonical collection and problem cards from that deterministic extraction, with the PDF retained as provenance.
+  Model/source-image inspection may resolve a specific identified extraction error or ambiguity, but it is not an alternative extraction method and cannot certify unchallenged portions of the extraction.
+  For reference-only material, stop at bibliography/resource enrichment when that is the mathematical role of the source rather than manufacturing cards to satisfy a count.
+  The same extraction rule applies when claims about the reference's contents depend on reading the PDF. If MinerU Flash is unavailable or fails for a source, leave that source open and record the extraction blocker; do not substitute PDF rendering, OCR, model vision, or another parser.
   **Acceptance:** Queue E has no unchecked entry; every checked PDF source whose contents were consumed has a committed deterministic MinerU Flash extraction (or an already-retained extraction with established MinerU provenance), and every checked source has either a canonical collection/provenance route with its actual problems represented or an explicit reference-only disposition justified from that extraction.
   Intake does not weaken the statement-fidelity gate or duplicate an existing canonical card.
 
 ### Measure solution progress while intake is still growing the denominator
 
-Queue C and source intake move in opposite directions: writing a solution removes one problem from
-Queue C, while ingesting a new unsolved problem adds one. The solved percentage can therefore fall
-during a highly productive period. **Do not use completion percentage, Queue C size, or their net
-change alone to judge solution-writing progress while `pdf-source-intake` is open.**
+Queue C and source intake move in opposite directions: writing a solution removes one problem from Queue C, while ingesting a new unsolved problem adds one.
+The solved percentage can therefore fall during a highly productive period.
+**Do not use completion percentage, Queue C size, or their net change alone to judge solution-writing progress while `pdf-source-intake` is open.**
 
-For any progress comparison over a time window, derive four quantities from the repository's own
-problem/queue state at the two revisions: current total problem population; current unsolved count;
-**Queue C exits** (previously unsolved card IDs that are no longer unsolved, the gross solution
-closure measure); and **Queue C entries** (newly unsolved card IDs, normally intake). Report the
-solved fraction only beside those flows. A rising unsolved count is not a regression when intake
-added more valid problems than solution authors closed, and a rising solved percentage is not proof
-of throughput if the corpus shrank. Do not throttle or defer valid intake merely to improve the
-percentage. Do not turn a recent cards/hour observation into a quota; rates are diagnostics for
-stalls, while mathematical correctness and source fidelity remain the acceptance criteria.
+For any progress comparison over a time window, derive four quantities from the repository's own problem/queue state at the two revisions: current total problem population; current unsolved count; **Queue C exits** (previously unsolved card IDs that are no longer unsolved, the gross solution closure measure); and **Queue C entries** (newly unsolved card IDs, normally intake).
+Report the solved fraction only beside those flows.
+A rising unsolved count is not a regression when intake added more valid problems than solution authors closed, and a rising solved percentage is not proof of throughput if the corpus shrank.
+Do not throttle or defer valid intake merely to improve the percentage.
+Do not turn a recent cards/hour observation into a quota; rates are diagnostics for stalls, while mathematical correctness and source fidelity remain the acceptance criteria.
 
 ### Marking a node closed
 
@@ -101,6 +98,16 @@ A node closes by opening with **`Closed <date>.`** followed by the evidence that
 These are bullets rather than checkboxes, so there is no box to tick and nothing else marks them; a finished node left unmarked stays the first ready node forever.
 On 2026-09-13 the three extraction nodes sat complete and unmarked for seven hours, and a worker re-read `extraction-detector` as ready, reimplemented nothing, and reported that this file was stale relative to the code.
 Closing finished work is what makes the rest of this file mean anything.
+
+### Bring existing public copy into line with the contributor policies
+
+- **`copy-policy-repair`**. **Needs:** none.
+  The authorial-stance, prose and mathematical-authoring policies in [CONTRIBUTING.md](CONTRIBUTING.md) (`STANCE-*`, `PROSE-*`, `RESOURCE-*`, `PR-*`, `EV-*`, `MA-*`, `DEF-*`, `TERM-*`, `SYM-*` and the rest of that catalogue) were written from violations observed in the copy the site already publishes.
+  Writing a policy repaired none of that copy, and later chapter authoring does not certify earlier pages.
+  Read every reader-facing prose surface against those policies and rewrite what violates them: the pages under `wiki/`, the guide manifests under `publications/`, and the contributor-written prose on cards and collection pages (remarks, annotations, solution exposition, resource descriptions, collection introductions).
+  Work one page or card at a time, read the mathematics it states before rewriting its prose, and commit each surface before taking the next.
+  Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `PROSE-02` reports on issues #86 and #88 is a lead to read, not a finding.
+  **Acceptance:** every surface in that scope has been read against the policies and its violations rewritten, with the mathematics preserved; no surface is closed by a receipt, an inventory or an audit note.
 
 ### Terminal nodes
 

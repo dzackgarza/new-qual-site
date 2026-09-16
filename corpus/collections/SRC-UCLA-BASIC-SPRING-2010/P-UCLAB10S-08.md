@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let $K$ be a closed subset of a complete metric space $(X,d)$. Assume that for every $\varepsilon>0$, $K$ can be covered by finitely many balls
+Problem 8. Let $K$ be a closed subset of a complete metric space $(X,d)$.
+Assume that for every $\varepsilon>0$, $K$ can be covered by finitely many balls
 \[
 B_\varepsilon(x)=\{y\in X:d(x,y)<\varepsilon\}.
 \]

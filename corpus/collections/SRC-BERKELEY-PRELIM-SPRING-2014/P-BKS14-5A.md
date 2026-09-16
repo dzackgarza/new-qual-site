@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f,g\) be meromorphic on \(\mathbb C\) and suppose \(|f(z)|\le |g(z)|\) at every point where both are defined. Show that there is \(c\in\mathbb C\) such that \(f(z)=c\,g(z)\) wherever both are defined.
+Let \(f,g\) be meromorphic on \(\mathbb C\) and suppose \(|f(z)|\le |g(z)|\) at every point where both are defined.
+Show that there is \(c\in\mathbb C\) such that \(f(z)=c\,g(z)\) wherever both are defined.
 :::

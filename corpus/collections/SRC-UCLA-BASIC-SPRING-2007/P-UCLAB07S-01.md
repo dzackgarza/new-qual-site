@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be a real $m\times n$ matrix with $m>n$ and linearly independent columns, and let $b\in\mathbb R^m$. Show that the vector $x^*\in\mathbb R^n$ minimizing
+Let $A$ be a real $m\times n$ matrix with $m>n$ and linearly independent columns, and let $b\in\mathbb R^m$.
+Show that the vector $x^*\in\mathbb R^n$ minimizing
 \[
 g(x)=\|Ax-b\|_2^2
 \]

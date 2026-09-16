@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $T:V\to V$ be linear. If $Tv$ and $v$ are linearly dependent for every $v\in V$, show that $T$ is a scalar multiple of the identity.
+Let $T:V\to V$ be linear.
+If $Tv$ and $v$ are linearly dependent for every $v\in V$, show that $T$ is a scalar multiple of the identity.
 :::

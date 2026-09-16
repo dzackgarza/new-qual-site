@@ -16,7 +16,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $a,b,c,d\in\mathbb R$, not all zero. Find the eigenvalues of
+Let $a,b,c,d\in\mathbb R$, not all zero.
+Find the eigenvalues of
 \[
 \begin{pmatrix}
 a^2&ab&ac&ad\\

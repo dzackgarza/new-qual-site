@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(X\) be a compact metric space and let \(f:X\to X\) be an isometry. Show that \(f\) is surjective.
+Let \(X\) be a compact metric space and let \(f:X\to X\) be an isometry.
+Show that \(f\) is surjective.
 
 Hint: for a point \(x\), find \(m<n\) such that \(f^n(x)\) is close to \(f^m(x)\).
 :::

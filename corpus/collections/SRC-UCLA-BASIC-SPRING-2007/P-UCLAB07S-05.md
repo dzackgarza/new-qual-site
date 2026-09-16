@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $T$ be a normal linear operator on a finite-dimensional complex inner-product space $V$. Prove that if $v$ is an eigenvector of $T$, then $v$ is also an eigenvector of $T^*$.
+Let $T$ be a normal linear operator on a finite-dimensional complex inner-product space $V$.
+Prove that if $v$ is an eigenvector of $T$, then $v$ is also an eigenvector of $T^*$.
 :::

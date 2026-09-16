@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $Y$ be a complete countable metric space. Prove that there exists $y\in Y$ such that the singleton $\{y\}$ is open.
+Let $Y$ be a complete countable metric space.
+Prove that there exists $y\in Y$ such that the singleton $\{y\}$ is open.
 :::

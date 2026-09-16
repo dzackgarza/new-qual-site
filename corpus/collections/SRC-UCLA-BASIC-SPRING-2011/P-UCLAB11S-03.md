@@ -14,5 +14,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $H$ be a Hermitian (self-adjoint) operator on a finite-dimensional inner-product space. Show that there exists a unitary operator $U$ such that $UHU^*$ is diagonal.
+Let $H$ be a Hermitian (self-adjoint) operator on a finite-dimensional inner-product space.
+Show that there exists a unitary operator $U$ such that $UHU^*$ is diagonal.
 :::

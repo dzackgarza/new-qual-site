@@ -16,5 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-Let $f$ be a bounded real-valued function on $[0,1]$. Show that $f$ is Riemann integrable if and only if $f^3$ is Riemann integrable.
+Let $f$ be a bounded real-valued function on $[0,1]$.
+Show that $f$ is Riemann integrable if and only if $f^3$ is Riemann integrable.
 :::

@@ -17,12 +17,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be an $n$-dimensional complex vector space, $n\ge2$, with basis $e_1,\ldots,e_n$. Let $T\colon V\to V$ satisfy
+Let $V$ be an $n$-dimensional complex vector space, $n\ge2$, with basis $e_1,\ldots,e_n$.
+Let $T\colon V\to V$ satisfy
 \[
 T(e_1)=e_2,\quad \ldots,\quad T(e_{n-1})=e_n,\quad T(e_n)=e_1.
 \]
 
 <1>1. Show that $1$ is an eigenvalue of $T$, write down an eigenvector with eigenvalue $1$, and prove that it is unique up to scaling.
 
-<1>2. Is $T$ diagonalizable? Hint: compute its characteristic polynomial.
+<1>2. Is $T$ diagonalizable?
+Hint: compute its characteristic polynomial.
 :::

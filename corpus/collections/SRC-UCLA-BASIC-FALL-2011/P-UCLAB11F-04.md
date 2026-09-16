@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 4. If the terms of a series $\sum a_n$ are rearranged, the limiting value can sometimes change. Find all resulting limiting values of each of the following series, and prove your assertions:
+Problem 4. If the terms of a series $\sum a_n$ are rearranged, the limiting value can sometimes change.
+Find all resulting limiting values of each of the following series, and prove your assertions:
 \[
 \sum_{n=1}^{\infty}\frac{(-1)^n}{n},
 \qquad

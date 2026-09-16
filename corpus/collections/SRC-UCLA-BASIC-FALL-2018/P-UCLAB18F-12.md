@@ -17,5 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be finite-dimensional and let $T:V\to V$ be linear. Suppose $T(W)\subseteq W$ for every subspace $W\subset V$ with $\dim W=\dim V-1$. Prove that $T$ is a scalar multiple of the identity.
+Let $V$ be finite-dimensional and let $T:V\to V$ be linear.
+Suppose $T(W)\subseteq W$ for every subspace $W\subset V$ with $\dim W=\dim V-1$.
+Prove that $T$ is a scalar multiple of the identity.
 :::

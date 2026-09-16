@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Two matrices $A,B$ are called commuting if $AB=BA$. The order of a matrix $A$ is the smallest integer $k>0$ such that $A^k=I$; if no such $k$ exists, its order is infinite.
+Two matrices $A,B$ are called commuting if $AB=BA$.
+The order of a matrix $A$ is the smallest integer $k>0$ such that $A^k=I$; if no such $k$ exists, its order is infinite.
 
 Prove that there exist ten distinct real $2\times2$ matrices which are pairwise commuting and all have the same finite order.
 :::

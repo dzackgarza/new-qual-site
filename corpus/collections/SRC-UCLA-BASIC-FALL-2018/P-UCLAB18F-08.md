@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $X$ be a real symmetric $n\times n$ matrix and let $z\in\mathbb C$ with $\operatorname{Im}z>0$. Put
+Let $X$ be a real symmetric $n\times n$ matrix and let $z\in\mathbb C$ with $\operatorname{Im}z>0$.
+Put
 \[
 G=(X-zI)^{-1}.
 \]

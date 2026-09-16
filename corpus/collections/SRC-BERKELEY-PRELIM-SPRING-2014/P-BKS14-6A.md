@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(R\) be a finite ring with identity and characteristic \(p\). For a subring \(S\subseteq R\), not necessarily containing an identity, regard \(S\) as an \(\mathbb F_p\)-vector space. For \(a\in S\), let
+Let \(R\) be a finite ring with identity and characteristic \(p\). For a subring \(S\subseteq R\), not necessarily containing an identity, regard \(S\) as an \(\mathbb F_p\)-vector space.
+For \(a\in S\), let
 \[
 T_a^S:S\to S,\qquad T_a^S(x)=ax.
 \]

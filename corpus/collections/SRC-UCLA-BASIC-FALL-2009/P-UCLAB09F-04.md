@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $V$ be a finite-dimensional real inner-product space and let $U\subseteq V$ be a vector subspace. Prove that
+Let $V$ be a finite-dimensional real inner-product space and let $U\subseteq V$ be a vector subspace.
+Prove that
 \[
 \dim U+\dim U^\perp=\dim V.
 \]

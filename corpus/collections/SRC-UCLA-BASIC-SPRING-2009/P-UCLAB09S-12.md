@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 12. Let $F:\mathbb R^3\to\mathbb R^3$ and $\rho:\mathbb R^3\to\mathbb R$ be smooth. Prove that
+Problem 12. Let $F:\mathbb R^3\to\mathbb R^3$ and $\rho:\mathbb R^3\to\mathbb R$ be smooth.
+Prove that
 \[
 \operatorname{div}F=\rho
 \]
@@ -27,5 +28,6 @@ at every point if and only if
 =
 \iiint_\Omega \rho\,dx\,dy\,dz
 \]
-for every ball $\Omega$ of every positive radius and center. You may use the standard theorems of vector calculus without proof.
+for every ball $\Omega$ of every positive radius and center.
+You may use the standard theorems of vector calculus without proof.
 :::

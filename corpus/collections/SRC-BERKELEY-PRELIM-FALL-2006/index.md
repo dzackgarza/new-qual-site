@@ -8,7 +8,9 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
+- assets/attachments/f06.pdf
 - assets/attachments/f06solution.pdf
 source:
   source_kind: university-exam
@@ -38,5 +40,4 @@ source:
     term: fall
     year: 2006
 ---
-
 

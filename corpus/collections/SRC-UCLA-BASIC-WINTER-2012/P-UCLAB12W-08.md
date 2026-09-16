@@ -14,7 +14,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $n\times n$ complex matrix. Prove that there are sequences of matrices $(B_i)$ and $(L_i)$ such that each $L_i$ is diagonal with distinct eigenvalues and
+Let $A$ be an $n\times n$ complex matrix.
+Prove that there are sequences of matrices $(B_i)$ and $(L_i)$ such that each $L_i$ is diagonal with distinct eigenvalues and
 \[
 B_iL_iB_i^{-1}\longrightarrow A
 \]

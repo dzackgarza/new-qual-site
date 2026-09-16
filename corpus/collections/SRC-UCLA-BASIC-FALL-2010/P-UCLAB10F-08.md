@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Problem 8. Let $W_1,W_2$ be subspaces of a finite-dimensional inner-product space $V$. Prove that
+Problem 8. Let $W_1,W_2$ be subspaces of a finite-dimensional inner-product space $V$.
+Prove that
 \[
 (W_1\cap W_2)^\perp=W_1^\perp+W_2^\perp.
 \]

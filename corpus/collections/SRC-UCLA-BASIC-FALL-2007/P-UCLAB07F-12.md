@@ -16,11 +16,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $x_0<x_1<\cdots<x_n$ be points in $[a,b]$, and let $\mathbb P^n$ be the vector space of polynomials of degree at most $n$. Define $l_j:\mathbb P^n\to\mathbb R$ by $l_j(p)=p(x_j)$.
+Let $x_0<x_1<\cdots<x_n$ be points in $[a,b]$, and let $\mathbb P^n$ be the vector space of polynomials of degree at most $n$.
+Define $l_j:\mathbb P^n\to\mathbb R$ by $l_j(p)=p(x_j)$.
 
 (a) Show that $\{l_j\}_{j=0}^n$ is linearly independent.
 
-(b) Show that there are unique coefficients $c_j$ such that
-\[\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)\]
-for every $p\in\mathbb P^n$.
+(b) Show that there are unique coefficients $c_j$ such that \[\int_a^b p(x)\,dx=\sum_{j=0}^n c_jl_j(p)\] for every $p\in\mathbb P^n$.
 :::

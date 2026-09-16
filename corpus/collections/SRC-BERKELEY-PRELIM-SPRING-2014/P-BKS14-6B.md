@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let \(O(n)\) be the group of \(n\times n\) orthogonal matrices, with the subspace topology inherited from \(\mathbb R^{n^2}\) via matrix entries. Show that \(O(n)\) is compact.
+Let \(O(n)\) be the group of \(n\times n\) orthogonal matrices, with the subspace topology inherited from \(\mathbb R^{n^2}\) via matrix entries.
+Show that \(O(n)\) is compact.
 :::

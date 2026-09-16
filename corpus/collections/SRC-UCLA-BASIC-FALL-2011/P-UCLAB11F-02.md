@@ -27,5 +27,6 @@ Assume that $f$ is continuously differentiable and that for some constant $c>0$,
 \[
 (\nabla f(x)-\nabla f(y))\cdot(x-y)\ge c\,(x-y)\cdot(x-y)
 \]
-for all $x,y\in\mathbb R^n$. Show that $f$ is convex.
+for all $x,y\in\mathbb R^n$.
+Show that $f$ is convex.
 :::

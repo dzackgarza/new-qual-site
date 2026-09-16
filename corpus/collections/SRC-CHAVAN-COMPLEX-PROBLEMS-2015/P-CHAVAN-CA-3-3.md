@@ -27,6 +27,8 @@ g(z)=|f(z)|^{1/2}
 where $\arg$ is the principal argument.
 
 1. Show that $g$ is well-defined and continuous on $\Omega$ and satisfies $g^2=f$.
+
 2. Show that $g$ is analytic on $\Omega$.
+
 3. Show that $f$ has no analytic logarithm on $\Omega$.
 :::

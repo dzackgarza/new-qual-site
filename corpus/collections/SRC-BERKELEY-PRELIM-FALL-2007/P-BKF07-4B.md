@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let \(K,L\) be fields, and give \(K\times L\) componentwise addition and multiplication. Find all prime ideals of \(K\times L\).
+Let \(K,L\) be fields, and give \(K\times L\) componentwise addition and multiplication.
+Find all prime ideals of \(K\times L\).
 :::

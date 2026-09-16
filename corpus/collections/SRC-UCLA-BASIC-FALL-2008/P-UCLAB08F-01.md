@@ -21,5 +21,6 @@ For each $a\in\{0,1,2\}$, determine whether
 \[
 f(t)=t^a
 \]
-is uniformly continuous on $[0,\infty)$. Prove each assertion.
+is uniformly continuous on $[0,\infty)$.
+Prove each assertion.
 :::

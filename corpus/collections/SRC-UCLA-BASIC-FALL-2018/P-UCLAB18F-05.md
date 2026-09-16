@@ -25,5 +25,6 @@ f(x)=\inf_{y\in\partial B}\bigl(g(y)+|x-y|\bigr)
 \]
 is $1$-Lipschitz on $B$.
 
-(b) Let $M(g)$ be the set of all $1$-Lipschitz $h:B\to\mathbb R$ satisfying $h|_{\partial B}=g$. Show that $M(g)$ is compact in $C(B)$ with the supremum norm.
+(b) Let $M(g)$ be the set of all $1$-Lipschitz $h:B\to\mathbb R$ satisfying $h|_{\partial B}=g$.
+Show that $M(g)$ is compact in $C(B)$ with the supremum norm.
 :::

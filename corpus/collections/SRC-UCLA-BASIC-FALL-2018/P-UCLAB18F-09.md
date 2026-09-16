@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f,g:\mathbb R^n\to\mathbb R$ be linearly independent linear maps. Show that for every $v\in\mathbb R^n$ there are $v_1,v_2\in\mathbb R^n$ such that
+Let $f,g:\mathbb R^n\to\mathbb R$ be linearly independent linear maps.
+Show that for every $v\in\mathbb R^n$ there are $v_1,v_2\in\mathbb R^n$ such that
 \[
 v=v_1+v_2,\qquad f(v)=f(v_1),\qquad g(v)=g(v_2).
 \]

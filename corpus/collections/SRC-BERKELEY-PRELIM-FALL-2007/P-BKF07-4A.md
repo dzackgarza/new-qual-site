@@ -17,9 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \((a_n)_{n\ge1}\) and \((b_n)_{n\ge1}\) be real sequences. Suppose
+Let \((a_n)*{n\ge1}\) and \((b_n)*{n\ge1}\) be real sequences.
+Suppose
 \[
 0\le a_{n+1}\le a_n+b_n
 \]
-for every \(n\ge1\), and suppose \(\sum_{n=1}^\infty b_n\) converges. Prove that \(\lim_{n\to\infty}a_n\) exists and is finite.
+for every \(n\ge1\), and suppose \(\sum_{n=1}^\infty b_n\) converges.
+Prove that \(\lim_{n\to\infty}a_n\) exists and is finite.
 :::

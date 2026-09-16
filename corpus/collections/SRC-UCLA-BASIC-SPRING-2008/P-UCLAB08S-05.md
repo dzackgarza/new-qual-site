@@ -17,13 +17,15 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. Let $F\colon\mathbb R^2\to\mathbb R$ be continuous. Suppose that for every square $S$ whose sides are parallel to the coordinate axes,
+<1>1. Let $F\colon\mathbb R^2\to\mathbb R$ be continuous.
+Suppose that for every square $S$ whose sides are parallel to the coordinate axes,
 \[
 \iint_S F(x,y)\,dx\,dy=0.
 \]
 Prove that $F(x,y)=0$ for all $(x,y)$.
 
-<1>2. Suppose $f$, $f_x$, $f_y$, $(f_x)_y$, and $(f_y)_x$ are continuous on $\mathbb R^2$. Use <1>1 to prove
+<1>2. Suppose $f$, $f_x$, $f_y$, $(f_x)_y$, and $(f_y)_x$ are continuous on $\mathbb R^2$.
+Use <1>1 to prove
 \[
 \frac{\partial}{\partial y}\left(\frac{\partial f}{\partial x}\right)
 =

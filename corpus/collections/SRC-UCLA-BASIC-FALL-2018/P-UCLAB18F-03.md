@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:[0,1]\to\mathbb R$ and $g:[0,1]\to[0,1]$ be Riemann integrable. Suppose that for some $\alpha\in(0,1)$,
+Let $f:[0,1]\to\mathbb R$ and $g:[0,1]\to[0,1]$ be Riemann integrable.
+Suppose that for some $\alpha\in(0,1)$,
 \[
 |g(x)-g(y)|\ge \alpha|x-y|\qquad(x,y\in[0,1]).
 \]

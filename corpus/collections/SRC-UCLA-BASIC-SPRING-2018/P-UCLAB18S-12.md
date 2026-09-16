@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal F$ be an equicontinuous family of real-valued functions on a compact metric space $X$, with every $f\in\mathcal F$ taking values in $[-1,1]$. Prove that
+Let $\mathcal F$ be an equicontinuous family of real-valued functions on a compact metric space $X$, with every $f\in\mathcal F$ taking values in $[-1,1]$.
+Prove that
 \[
 g(x)=\sup\{f(x):f\in\mathcal F\}
 \]

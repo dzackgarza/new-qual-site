@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be entire. Suppose there are positive real numbers \(a,b,k\) such that
+Let \(f\) be entire.
+Suppose there are positive real numbers \(a,b,k\) such that
 \[
 |f(z)|\le a+b|z|^k
 \]

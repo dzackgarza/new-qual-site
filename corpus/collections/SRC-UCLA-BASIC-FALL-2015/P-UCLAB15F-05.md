@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $F(x,y,z)$ be continuously differentiable with all three partial derivatives nonzero at $(0,0,0)$. Define functions
+Let $F(x,y,z)$ be continuously differentiable with all three partial derivatives nonzero at $(0,0,0)$.
+Define functions
 \[
 x=x(y,z),\qquad y=y(x,z),\qquad z=z(x,y)
 \]
@@ -25,7 +26,8 @@ locally as the solutions of
 \[
 F(x,y,z)=F(0,0,0)
 \]
-near $(0,0)$ in the corresponding pairs of variables. Prove that
+near $(0,0)$ in the corresponding pairs of variables.
+Prove that
 \[
 \frac{\partial x}{\partial y}
 \frac{\partial y}{\partial z}

@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-A doubly infinite real sequence \((a_j)_{j\in\mathbb Z}\) is rapidly decreasing if, for every positive integer \(n\), the sequence \((j^na_j)_{j\in\mathbb Z}\) is bounded. Let \((a_j)\) and \((b_j)\) be rapidly decreasing and define
+A doubly infinite real sequence \((a_j)*{j\in\mathbb Z}\) is rapidly decreasing if, for every positive integer \(n\), the sequence \((j^na_j)*{j\in\mathbb Z}\) is bounded.
+Let \((a_j)\) and \((b_j)\) be rapidly decreasing and define
 \[
 c_j=\sum_{k\in\mathbb Z}a_kb_{j-k}.
 \]

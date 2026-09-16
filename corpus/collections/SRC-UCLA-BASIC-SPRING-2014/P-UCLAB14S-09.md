@@ -21,5 +21,6 @@ Problem 9. Find a function that minimizes
 \[
 \int_0^1 |f'(x)|^2\,dx
 \]
-among all $f\in C^1(\mathbb R)$ such that $f(0)=0$ and $f(1)=1$. Is the minimizing $C^1$ function unique on $[0,1]$?
+among all $f\in C^1(\mathbb R)$ such that $f(0)=0$ and $f(1)=1$.
+Is the minimizing $C^1$ function unique on $[0,1]$?
 :::

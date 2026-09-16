@@ -21,9 +21,11 @@ Problem 4. (i) Let $A=(a_{ij})$ be a real symmetric $n\times n$ matrix such that
 \[
 \sum_{i,j}a_{ij}x_ix_j\le0
 \]
-for every $x\in\mathbb R^n$. Prove that if $\operatorname{tr}(A)=0$, then $A=0$.
+for every $x\in\mathbb R^n$.
+Prove that if $\operatorname{tr}(A)=0$, then $A=0$.
 
-(ii) Let $T$ be a linear operator on a finite-dimensional complex inner-product space. Suppose
+(ii) Let $T$ be a linear operator on a finite-dimensional complex inner-product space.
+Suppose
 \[
 TT^*=4T-3I.
 \]

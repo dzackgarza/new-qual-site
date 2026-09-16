@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(K\subseteq\mathbb R^n\) be nonempty, closed, and convex. Show that for every \(x\in\mathbb R^n\) there exists a unique \(y\in K\) minimizing the Euclidean distance to \(x\); equivalently,
+Let \(K\subseteq\mathbb R^n\) be nonempty, closed, and convex.
+Show that for every \(x\in\mathbb R^n\) there exists a unique \(y\in K\) minimizing the Euclidean distance to \(x\); equivalently,
 \[
 \|x-y\|<\|x-z\|
 \]

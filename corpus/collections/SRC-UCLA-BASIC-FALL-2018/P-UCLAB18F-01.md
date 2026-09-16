@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $(a_n)_{n\ge1}$ be nonnegative and suppose $\sum_{n\ge1}a_n$ diverges. Show that
+Let $(a_n)_{n\ge1}$ be nonnegative and suppose $\sum_{n\ge1}a_n$ diverges.
+Show that
 \[
 \sum_{n\ge1}\frac{a_n}{2a_n+1}
 \]

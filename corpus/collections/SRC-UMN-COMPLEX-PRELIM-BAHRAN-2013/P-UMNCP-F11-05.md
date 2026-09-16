@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be entire. Suppose
+Let \(f\) be entire.
+Suppose
 \[
 f(z+1)=f(z)
 \]

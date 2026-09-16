@@ -21,5 +21,7 @@ Let $A,B$ be two $4\times5$ matrices of rank $3$, and let
 \[
 C=A^TB,
 \]
-a $5\times5$ matrix. Find all possible values of $\operatorname{rank}C$. For each possible rank, give explicit matrices realizing it, and prove that all other values are impossible.
+a $5\times5$ matrix.
+Find all possible values of $\operatorname{rank}C$.
+For each possible rank, give explicit matrices realizing it, and prove that all other values are impossible.
 :::

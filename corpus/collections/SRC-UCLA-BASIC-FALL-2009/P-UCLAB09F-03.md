@@ -23,7 +23,8 @@ f(x_1,\ldots,x_n)=x_1+\cdots+x_n+\frac1{x_1x_2\cdots x_n}
 \]
 on the positive orthant $\mathbb R_+^n$.
 
-<1>1. Explain carefully why $f$ attains a global minimum at some $p\in\mathbb R_+^n$. (Consider what happens as some $x_i\to0$ or $x_i\to\infty$.)
+<1>1. Explain carefully why $f$ attains a global minimum at some $p\in\mathbb R_+^n$.
+(Consider what happens as some $x_i\to0$ or $x_i\to\infty$.)
 
 <1>2. Find $p$.
 

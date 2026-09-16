@@ -14,7 +14,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $A$ be an $n\times n$ real matrix and let $b\in\mathbb R^n$. Prove that $Ax=b$ has a solution if and only if
+Let $A$ be an $n\times n$ real matrix and let $b\in\mathbb R^n$.
+Prove that $Ax=b$ has a solution if and only if
 \[
 b\in(\ker A^T)^\perp.
 \]

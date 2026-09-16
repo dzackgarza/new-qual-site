@@ -17,7 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Problem 2. Suppose that $S,T\in\operatorname{Hom}(V,V)$, where $V$ is a finite-dimensional vector space over $\mathbb R$. Let $\operatorname{im}S$ be the image of $S$ and $\ker S$ the kernel of $S$. Show that
+Problem 2. Suppose that $S,T\in\operatorname{Hom}(V,V)$, where $V$ is a finite-dimensional vector space over $\mathbb R$.
+Let $\operatorname{im}S$ be the image of $S$ and $\ker S$ the kernel of $S$.
+Show that
 \[
 \dim(\operatorname{im}S)+\dim(\operatorname{im}T)
 \leq \dim(\operatorname{im}(S\circ T))+\dim V.

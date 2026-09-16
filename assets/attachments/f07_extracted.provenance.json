@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/f07.pdf",
+  "source_pdf_sha256": "88b9763bf44c5f0cd7c3f9d255ff8ccbae7b72eeb24c3cde9480ba1c28296220",
+  "extracted_markdown": "assets/attachments/f07_extracted.md",
+  "extracted_markdown_sha256": "d063b64fb4f877f3be126bf0a7c73ed92da121db71f3aaf826e00505ce2b8836",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/f07.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/f07.md",
+  "card_comparison": "All eighteen Fall 2007 Berkeley preliminary-exam positions, Part A 1A-9A followed by Part B 1B-9B, are represented in SRC-BERKELEY-PRELIM-FALL-2007 in the same source order. The canonical cards agree with this deterministic exam baseline after the explicitly recorded local extraction repairs.",
+  "known_extractor_defects": [
+    "Problem 4A renders the convergent series with summand b_r although the surrounding sequence and canonical statement use b_n.",
+    "Problem 9B renders the fixed-point equation f(z)=z with a spurious dot accent on z; the canonical card records f(z)=z."
+  ]
+}

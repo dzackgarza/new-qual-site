@@ -17,5 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $T$ be a complex $n\times n$ matrix. Suppose $\lambda_1,\ldots,\lambda_r$ are distinct eigenvalues with corresponding nonzero eigenvectors $v_1,\ldots,v_r$. Prove that $v_1,\ldots,v_r$ are linearly independent.
+Let $T$ be a complex $n\times n$ matrix.
+Suppose $\lambda_1,\ldots,\lambda_r$ are distinct eigenvalues with corresponding nonzero eigenvectors $v_1,\ldots,v_r$.
+Prove that $v_1,\ldots,v_r$ are linearly independent.
 :::
