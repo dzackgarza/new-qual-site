@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-1A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 1A
+title: Summable successive differences imply a Cauchy sequence
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-9B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 9B
+title: Square roots of $x$ modulo $x^n-1$ in $\mathbb R[x]$
 classification:
   areas:
   - prelim

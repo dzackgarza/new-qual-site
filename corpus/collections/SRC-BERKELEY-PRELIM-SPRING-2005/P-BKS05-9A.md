@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-9A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 9A
+title: Principal value of $\iint f(x,y)/(x+iy)^3\,dx\,dy$
 classification:
   areas:
   - prelim

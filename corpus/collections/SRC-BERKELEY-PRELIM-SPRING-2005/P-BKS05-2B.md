@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-2B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 2B
+title: Zeros of $\sin z+1/(z+i)$ near the real axis
 classification:
   areas:
   - prelim

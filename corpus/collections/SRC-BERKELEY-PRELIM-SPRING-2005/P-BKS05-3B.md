@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-3B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 3B
+title: Generalized inverses of square matrices over a field
 classification:
   areas:
   - prelim

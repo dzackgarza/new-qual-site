@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-8A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 8A
+title: Eigenvalues of a product of positive definite Hermitian matrices are positive
 classification:
   areas:
   - prelim

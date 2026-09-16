@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-3A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 3A
+title: The punctured disk is not biholomorphic to an annulus
 classification:
   areas:
   - prelim

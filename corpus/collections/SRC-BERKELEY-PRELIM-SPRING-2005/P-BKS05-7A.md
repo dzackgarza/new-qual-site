@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-7A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 7A
+title: Continuity of the radius of convergence of a meromorphic function
 classification:
   areas:
   - prelim

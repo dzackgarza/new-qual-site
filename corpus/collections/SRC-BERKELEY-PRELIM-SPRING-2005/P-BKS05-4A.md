@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-4A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 4A
+title: Product of commuting diagonalizable real matrices is diagonalizable
 classification:
   areas:
   - prelim

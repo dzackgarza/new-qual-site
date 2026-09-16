@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-4B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 4B
+title: Functions with compact graph are continuous
 classification:
   areas:
   - prelim

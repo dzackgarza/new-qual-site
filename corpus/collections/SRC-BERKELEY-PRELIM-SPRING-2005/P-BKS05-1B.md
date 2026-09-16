@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-1B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 1B
+title: Finite groups whose prime-power-order elements commute are abelian
 classification:
   areas:
   - prelim

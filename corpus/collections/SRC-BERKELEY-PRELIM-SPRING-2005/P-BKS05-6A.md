@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-6A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 6A
+title: Divisibility of products of $q$-integers in $\mathbb Z[q]$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-5B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 5B
+title: Fixed field of $x\mapsto x^{-1}$ on $\mathbb Q(x)$
 classification:
   areas:
   - prelim

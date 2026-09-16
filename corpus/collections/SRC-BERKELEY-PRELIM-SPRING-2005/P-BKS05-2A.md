@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-2A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 2A
+title: Discontinuous additive functions $\mathbb R\to\mathbb R$
 classification:
   areas:
   - prelim

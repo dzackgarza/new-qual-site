@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-8B
 kind: problem
-title: Berkeley Spring 2005 prelim problem 8B
+title: A differentiable function with $|f'|\le|f|$ and $f(0)=0$ vanishes
 classification:
   areas:
   - prelim

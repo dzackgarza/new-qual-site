@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-5A
 kind: problem
-title: Berkeley Spring 2005 prelim problem 5A
+title: Higher derivative test for local extrema
 classification:
   areas:
   - prelim
