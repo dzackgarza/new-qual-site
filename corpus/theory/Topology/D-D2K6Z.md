@@ -23,10 +23,6 @@ An $n$-cochain $\varphi$ is a \dfn{coboundary} if $\varphi\in B^n(X;G)\coloneqq\
 For every $n\geq 0$, $\delta^{n+1}\circ\delta^n = 0$; hence $B^{n+1}(X;G)\subseteq\ker\delta^{n+1}$.
 :::
 
-::: {.proof}
-For $\varphi\in C^n(X;G)$, $\delta^{n+1}\delta^n\varphi = \varphi\circ\del_{n+1}\circ\del_{n+2} = 0$ since $\del_{n+1}\circ\del_{n+2} = 0$.
-:::
-
 ::: {.concept}
 See [@Hat02, §3.1, p. 198].
 :::
