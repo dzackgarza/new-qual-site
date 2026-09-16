@@ -8,76 +8,74 @@ topics:
 
 # Classifying a singularity
 
-A point where $f$ misbehaves is one of four things, and the exam question is almost always which one.
-There are three tests, they cost different amounts, and the right one depends on what you can compute.
+An isolated singularity of a holomorphic function is removable, a pole, or essential.
+Three criteria decide the type: the behavior of $f(z)$ as $z\to z_0$, boundedness near $z_0$, and the negative part of the Laurent series.
 
-## First: is it isolated?
+## Isolated and non-isolated singularities
 
-The removable/pole/essential classification applies only to an *isolated* singularity, and a problem that hands you a branch is testing whether you noticed.
+The classification into removable singularities, poles, and essential singularities applies to isolated singularities.
 
-::: {.warnings title="Branch singularities"}
-$f(z) \da z^{1\over 2}$ has a singularity at $z=0$ that admits no Laurent expansion, so it is not in the classification at all: $z=0$ is a **branch singularity**. So is each of $z = 0, 1$ for $\qty{z(z-1)}^{1\over 2}$, and $z=0$ for $\Log(z)$.
+::: {.example title="Branch points"}
+$f(z) \coloneqq z^{1\over 2}$ has no holomorphic branch on any punctured disc about $0$, so $f$ has no Laurent expansion there and $z=0$ is not an isolated singularity of a single-valued holomorphic function; it is a branch point.
+The same holds at $z = 0$ and $z = 1$ for $\qty{z(z-1)}^{1\over 2}$, and at $z=0$ for $\Log(z)$.
 :::
 
-::: {.example title="Isolated, and not"}
-A rational function has only isolated singularities, since a polynomial has finitely many zeros.
+::: {.example title="Isolated and non-isolated singularities"}
+A rational function has only isolated singularities, since a nonzero polynomial has finitely many zeros.
 
-$\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood meets the branch cut $(-\infty, 0)$, where $\Log$ is not defined at all.
+$\Log(z)$ has a singularity at $z=0$ that is not isolated: every neighborhood of $0$ meets the branch cut $(-\infty, 0)$, where $\Log$ is not continuous.
 
-$G(z) \da 1/\sin(\pi/z)$ has isolated singularities at every $1/n$, and a non-isolated one at $0$, since the others accumulate there.
+$G(z) \coloneqq 1/\sin(\pi/z)$ has isolated singularities at the points $1/n$, $n\in\ZZ\sm\ts{0}$, and a non-isolated singularity at $0$, where they accumulate.
 :::
 
-## The limit test: fastest, and usually enough
+## The limit criterion
 
-Take $z \to z_0$ and see what happens:
+For an isolated singularity $z_0$ of $f$:
 
-- $\lim_{z\to z_0} f(z)$ exists and is finite: **removable**.
+- **Removable.** $\lim_{z\to z_0} f(z)$ exists in $\CC$.
 
-- $\lim_{z\to z_0} \abs{f(z)} = \infty$: **pole**.
+- **Pole.** $\lim_{z\to z_0} \abs{f(z)} = \infty$.
 
-- the limit does not exist, even as $\infty$: **essential**.
+- **Essential.** Neither limit exists.
 
-The three cases are exhaustive for an isolated singularity, which is why the test always terminates.
-Reach for it first; on $\sin(z)/z$ or $1/(z-1)^3$ it settles the question in one line.
+The cases are exhaustive and mutually exclusive.
+For example, $\sin(z)/z \to 1$ as $z\to 0$, and $\abs{1/(z-1)^3}\to\infty$ as $z\to 1$.
 
-Its weakness is the essential case, where "the limit does not exist" has to be *proved*, usually by exhibiting two paths with different limits.
-For $e^{1/z}$ at $0$: along $\RR_{>0}$ it blows up, along $\RR_{<0}$ it goes to $0$.
+Showing that neither limit exists requires, for instance, two paths along which $f$ has different limiting behavior.
+For $e^{1/z}$ at $0$: along $\RR_{>0}$, $e^{1/z}\to\infty$, and along $\RR_{<0}$, $e^{1/z}\to 0$.
 
-## The boundedness test: for removability without a limit
+## The boundedness criterion
 
-Riemann's theorem says bounded near $z_0$ is already enough: the singularity is removable and $f$ extends holomorphically.
-You never have to produce the limiting value.
+By Riemann's removable singularity theorem, if $f$ is bounded on a punctured neighborhood of $z_0$, then the singularity is removable and $f$ extends holomorphically across $z_0$.
+The criterion does not require the value of the limit, so it applies when $\abs f$ can be estimated but not evaluated, for instance to show that a function extends to an entire function.
 
-Use this whenever you can estimate $\abs f$ but cannot evaluate it, which is the usual shape of a qual problem that says "show $f$ extends to an entire function".
+## The Laurent series criterion
 
-## The Laurent test: the only one that gives the order
+Let $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc about $z_0$.
 
-Expand $f(z) = \sum_{k\in \ZZ} c_k (z-z_0)^k$ on a punctured disc and count the negative terms:
+- **Removable.** $c_{k} = 0$ for all $k \leq -1$.
 
-- none, so $c_{k} = 0$ for $k \leq -1$: **removable**.
+- **Pole of order $N$.** $c_{-N}\neq 0$ and $c_k = 0$ for all $k<-N$.
 
-- finitely many, the lowest being $k = -N$: a **pole of order $N$**.
+- **Essential.** $c_k \neq 0$ for infinitely many $k<0$.
 
-- infinitely many: **essential**.
-
-This is the most expensive test and the most informative: the other two say which kind, this one says which order, and the order is what a residue computation needs next.
+This criterion also gives the order of a pole and the residue $c_{-1}$.
 
 ::: {.remark title="Order as a valuation"}
-Writing $f(z) = \sum_{k\in\ZZ} a_k(z-a)^k$ about $a$, set $v_a(f) = n$ when $a_n \neq 0$ and $a_k = 0$ for all $k < n$: the lowest power of $(z-a)$ that occurs.
-Then a zero of order $n$ is $v_a(f) = n$, a pole of order $n$ is $v_a(f) = -n$, removable is $v_a(f) \geq 0$, and essential is $v_a(f) = -\infty$.
-The three cases are one number.
+For $f(z) = \sum_{k\in\ZZ} a_k(z-a)^k$ about $a$, let $v_a(f) \coloneqq \min\ts{k \st a_k\neq 0}$, with $v_a(f) = -\infty$ when infinitely many negative coefficients are nonzero.
+Then a zero of order $n$ has $v_a(f) = n$, a pole of order $n$ has $v_a(f) = -n$, a removable singularity has $v_a(f) \geq 0$, and an essential singularity has $v_a(f) = -\infty$.
 :::
 
-## Which test to use
+## Summary
 
-| You are given | Use | Because |
-| --- | --- | --- |
-| an explicit elementary $f$ | the limit test | one evaluation settles it |
-| a bound, or an estimate near $z_0$ | boundedness | Riemann needs nothing else |
-| a series, or you need the order | Laurent | it is the only test that returns $N$ |
-| $p/q$ with $p(z_0) = q(z_0) = 0$ | the limit test | it is removable, with value $p'(z_0)/q'(z_0)$ |
-| a function you must show is *essential* | Laurent, or two paths | non-existence of a limit needs a witness |
+| Available information | Criterion |
+| --- | --- |
+| an explicit elementary $f$ | the limit criterion |
+| a bound for $\abs f$ near $z_0$ | the boundedness criterion |
+| a Laurent series, or the order is needed | the Laurent series criterion |
+| $p/q$ with $p(z_0) = q(z_0) = 0$ and $q'(z_0)\neq 0$ | the limit criterion: removable, with value $p'(z_0)/q'(z_0)$ |
+| an essential singularity | the Laurent series criterion, or two paths with different limiting behavior |
 
 ## Singularities at infinity
 
-The classification at $z=\infty$ is the classification of $g(w) \da f(1/w)$ at $w = 0$, and every test above applies unchanged after that substitution.
+The type of the singularity of $f$ at $z=\infty$ is the type of the singularity of $g(w) \coloneqq f(1/w)$ at $w = 0$, and each criterion above applies to $g$.
