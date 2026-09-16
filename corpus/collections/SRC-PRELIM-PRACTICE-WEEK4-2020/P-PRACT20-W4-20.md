@@ -19,12 +19,51 @@ Assume that V is a finite dimensional vector space and $T : V \to V$ is a linear
 :::
 
 ::: {.solution}
-Since $T ^ { 2 } = T$ , T fixes members of it’s image: $T ( T ( v ) ) = T ( v ) \implies T ( T ( v ) - v ) = 0$ . This shows that for any $v \in V , T ( v ) - v \in N ( T )$ . Thus for any $v \in V$ , put $v _ { 1 } = T ( v )$ and $v _ { 2 } = v - T ( v )$ . Then $v = v _ { 1 } + v _ { 2 }$ , where $T ( v _ { 1 } ) = v _ { 1 }$ and $T ( v _ { 2 } ) = 0$ . Further, it $v = u _ { 1 } + u _ { 2 }$ is another such representation, then applying T shows that
-
+<1>1. Every $v\in V$ has a decomposition
 $$
-\underbrace { T ( v _ { 1 } ) } _ { = v _ { 1 } } + \underbrace { T ( v _ { 2 } ) } _ { = 0 } = \underbrace { T ( u _ { 1 } ) } _ { = u _ { 1 } } + \underbrace { T ( u _ { 2 } ) } _ { = 0 } \implies v _ { 1 } = u _ { 1 } ,
+v=T(v)+(v-T(v))
 $$
+with the first summand fixed by $T$ and the second in $\ker T$.
+::: {.proof}
+Set
+$$
+v_1=T(v),
+\qquad
+v_2=v-T(v).
+$$
+Then
+$$
+T(v_1)=T^2(v)=T(v)=v_1,
+$$
+while
+$$
+T(v_2)=T(v)-T^2(v)=0.
+$$
+Thus $v=v_1+v_2$ has the required form.
+:::
 
-whence $v _ { 1 } + v _ { 2 } = u _ { 1 } + u _ { 2 } \implies v _ { 2 } = u _ { 2 }$ . Thus the representation is unique.
-[Note: a linear operator T satisfying $T ^ { 2 } = T$ is called a projection operator.]
+<1>2. The decomposition is unique.
+::: {.proof}
+Suppose also
+$$
+v=u_1+u_2,
+\qquad
+T(u_1)=u_1,
+\qquad
+T(u_2)=0.
+$$
+Applying $T$ gives
+$$
+T(v)=u_1.
+$$
+Hence $u_1=T(v)=v_1$, and then
+$$
+u_2=v-u_1=v-v_1=v_2.
+$$
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Steps <1>1--<1>2 prove existence and uniqueness of the required decomposition.
+:::
 :::
