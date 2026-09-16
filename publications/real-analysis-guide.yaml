@@ -175,7 +175,7 @@ sections:
       - ref: T-TR526
       - ref: D-2CCDB
       - ref: T-RA-WORKSHOP-D7-6-5
-      - ref: FT-JQSOK
+      - ref: FF-XZGIY
       - ref: T-RA-WORKSHOP-D7-6-7
       - ref: T-3QNBQ
   - slug: measure-and-measurable-functions

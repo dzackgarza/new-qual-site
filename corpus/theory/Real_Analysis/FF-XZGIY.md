@@ -5,6 +5,7 @@ kind: fact
 title: Arzelà--Ascoli theorem
 prompts:
 - What is the Arzela-Ascoli theorem?
+- State the Arzela-Ascoli theorem.
 classification:
   areas:
   - real-analysis

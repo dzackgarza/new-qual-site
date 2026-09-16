@@ -72,4 +72,4 @@ If $d(x,y)<\delta$, then $d(x,x_i)<\delta_{x_i}/2$ for some $i$, and $d(y,x_i)<\
 
 [[FF-63IWC]]
 
-[[FT-JQSOK]] [[FF-XZGIY]]
+[[FF-XZGIY]]
