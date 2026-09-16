@@ -38,6 +38,6 @@ source:
     year: 2020
 ---
 
-::: remark
-This is Assignment 1 of the retained Math 4100/6100 real-analysis packet, due September 1, 2020. The packet contains nine assignments and 67 numbered top-level problems in total; this collection represents the complete first assignment only. No institution is stated in the retained source or old resource page, so none is inferred.
+::: {.remark}
+Assignment 1 of the nine assignments of a Math 4100/6100 real-analysis course, due September 1, 2020; the nine assignments contain 67 numbered problems. The course packet names no institution.
 :::
