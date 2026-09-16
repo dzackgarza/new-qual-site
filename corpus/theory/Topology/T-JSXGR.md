@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-A continuous bijective open map is a homeomorphism.
+Let $f\colon X\to Y$ be a continuous bijection.
+Then $f$ is a homeomorphism if and only if $f$ is an open map, since $(f\inv)\inv(U) = f(U)$ for every open $U\subseteq X$.
 :::
