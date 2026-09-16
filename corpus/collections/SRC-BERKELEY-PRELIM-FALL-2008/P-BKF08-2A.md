@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-2A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 2A
+title: Entire functions with $f(z)/z$ bounded near infinity are linear
 classification:
   areas: [prelim]
   topics: []

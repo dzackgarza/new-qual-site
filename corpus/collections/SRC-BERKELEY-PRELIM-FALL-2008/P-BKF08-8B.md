@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-8B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 8B
+title: Asymptotic number of throws of an $N$-sided die needed to see a marked side with probability $1/2$
 classification:
   areas: [prelim]
   topics: []

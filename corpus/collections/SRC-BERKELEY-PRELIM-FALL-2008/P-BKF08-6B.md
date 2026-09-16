@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-6B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 6B
+title: The identity $\int_0^1 x^{-x}\,dx=\sum_{n\ge1} n^{-n}$
 classification:
   areas: [prelim]
   topics: []

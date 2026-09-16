@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-4B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 4B
+title: Nonreal zeros of $z^{11}-3z^3+1$ in the annulus $1\le\lvert z\rvert\le2$
 classification:
   areas: [prelim]
   topics: []

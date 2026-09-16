@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-9A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 9A
+title: Pointwise convergence to $0$ does not force the integrals to converge to $0$
 classification:
   areas: [prelim]
   topics: []

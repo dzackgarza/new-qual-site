@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-3B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 3B
+title: Abelian groups of order $p^n$ and similarity classes of nilpotent $n\times n$ matrices
 classification:
   areas: [prelim]
   topics: []

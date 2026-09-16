@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-3A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 3A
+title: Eigenvalues of the skew-symmetric circulant matrix with entries $\pm1$ next to the diagonal
 classification:
   areas: [prelim]
   topics: []

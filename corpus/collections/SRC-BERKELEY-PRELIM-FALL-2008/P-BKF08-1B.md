@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-1B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 1B
+title: A vector space over an infinite field is not a finite union of proper affine subspaces
 classification:
   areas: [prelim]
   topics: []

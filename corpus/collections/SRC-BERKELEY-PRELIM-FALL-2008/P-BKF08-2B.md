@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-2B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 2B
+title: Evaluation of $\int_0^\infty dx/(1+x^\alpha)$ for $\alpha>1$
 classification:
   areas: [prelim]
   topics: []

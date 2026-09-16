@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-6A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 6A
+title: Young's inequality from integrals of a function and its inverse
 classification:
   areas: [prelim]
   topics: []

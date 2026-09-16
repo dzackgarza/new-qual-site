@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-5B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 5B
+title: $\operatorname{PGL}_2(\mathbb F_3)$ is isomorphic to $S_4$
 classification:
   areas: [prelim]
   topics: []

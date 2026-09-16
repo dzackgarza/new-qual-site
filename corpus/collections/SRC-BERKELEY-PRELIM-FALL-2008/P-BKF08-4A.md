@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-4A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 4A
+title: Holomorphic antiderivatives of $z^n/(1+z^2)$ on $\lvert z\rvert>1$
 classification:
   areas: [prelim]
   topics: []

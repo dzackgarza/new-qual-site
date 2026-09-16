@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-8A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 8A
+title: Growth of the second moment of a solution of the heat equation
 classification:
   areas: [prelim]
   topics: []

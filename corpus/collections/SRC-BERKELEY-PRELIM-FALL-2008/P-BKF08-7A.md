@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-7A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 7A
+title: Products of pairwise trivially intersecting normal subgroups
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-9B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 9B
+title: Primes of the form $2^n+n^2$ force $n\equiv3\pmod6$
 classification:
   areas: [prelim]
   topics: []

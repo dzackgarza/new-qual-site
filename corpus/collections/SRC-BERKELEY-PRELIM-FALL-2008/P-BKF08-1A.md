@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-1A
 kind: problem
-title: Berkeley Fall 2008 prelim problem 1A
+title: A convergent rational series whose partial sums are Cauchy in every $p$-adic metric
 classification:
   areas: [prelim]
   topics: []

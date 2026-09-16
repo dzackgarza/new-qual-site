@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF08-7B
 kind: problem
-title: Berkeley Fall 2008 prelim problem 7B
+title: Minimal polynomial of $\sqrt3+\sqrt2$ over $\mathbb Q$
 classification:
   areas: [prelim]
   topics: []
