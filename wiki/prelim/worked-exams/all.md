@@ -1,42 +1,18 @@
 ---
 order: 52
-title: Qualifying Exam Review
+title: Qualifying exam review
 ---
 
-!include "sections/Fall 2017.md"
+# Qualifying exam review
 
-## Notes
+- [[prelim/worked-exams/fall-2017|Fall 2017]]
 
-- Go through Pugh
+- [[prelim/worked-exams/fall-2016|Fall 2016]]
 
-- Practice some $\varepsilon-\delta$ problems
+- [[prelim/worked-exams/fall-2015|Fall 2015]]
 
-- Find a way to consistently + quickly remember the direction of injectivity
+- [[prelim/worked-exams/fall-2014|Fall 2014]]
 
-!include "sections/Fall 2016.md"
-
-## Notes
-
-- Review examples and counterexamples in real analysis
-
-- Review series tests
-
-- Review $\varepsilon\dash\delta$ proofs.
-
-- Injectivity definition again
-
-- Alternate iff proof for $P\iff Q$: prove $P \implies Q$ and $\neg P \implies \neg Q$.
-
-!include "sections/Fall 2015.md"
-
-## Notes
-
-- Review $\varepsilon\dash\delta$ tricks, especially bounding with min.
-
-- Review notions of differentiability
-
-!include "sections/Fall 2014.md"
-
-## Notes
-
-None yet.
+::: {.remark title="Proving a biconditional"}
+For propositions $P$ and $Q$, $P\iff Q$ is equivalent to the conjunction of $P \implies Q$ and $\neg P \implies \neg Q$, since $\neg P\implies\neg Q$ is the contrapositive of $Q\implies P$.
+:::

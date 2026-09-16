@@ -2,175 +2,143 @@
 order: 21
 ---
 
-# Integral Sheet
+# Integral practice
 
-Here is a [youtube video](https://www.youtube.com/watch?v=dgm4-3-Iv3s) that potentially has many more integrals.
+A video with further integrals: [integration practice](https://www.youtube.com/watch?v=dgm4-3-Iv3s).
 
-Note: some of these were incorrect, and the solutions need to all be checked in detail.
+## Techniques
 
-Techniques to cover, in order of difficulty:
+- Elementary antiderivatives of exponentials, polynomials, trigonometric functions, and logarithms
 
-- Elementary antiderivatives
+- $u$-substitution
 
-  - Exponentials, polynomials, trig functions, logs
+- Trigonometric identities, for example $\int \cos^2 x\dx = \int \frac 1 2 (1 + \cos 2x)\dx$
 
-- u-substitutions
+- Trigonometric substitution
 
-- Trig identities
+- Partial fraction decomposition
 
-  - e.g. $\displaystyle \int \cos^2(x) = \displaystyle \int \frac 1 2 (1 + \cos(2x))$
+- Recognizing $g'(x)/g(x)$, for example $\int \tan x\dx = -\ln\abs{\cos x} + C$
 
-- Trigonometric substitutions
+- Integration by parts, for example $\int x^2 e^x\dx$
 
-- Partial Fraction Decomposition
+- Integration by parts in which the original integral reappears, for example $\int e^x \sin x\dx$
 
-- Reverse chain rule
+- Products of powers of trigonometric functions, for example $\int \sin^3 x\cos^2 x\dx$
 
-  - e.g. $\displaystyle \int \tan(x)$
+- $u$-substitution followed by solving for $x$, for example $\int \frac{\dx}{x-3\sqrt{x+10}}$ with $u=\sqrt{x+10}$ and $x = u^2-10$
 
-- Integration by parts
+- Trigonometric reduction formulas, for example $\int \sec^3 x\dx$
 
-  - e.g. $\displaystyle \int x^2 e^x$
-
-- "Periodic" integration by parts
-
-  - e.g. $\displaystyle \int e^x \sin(x)$
-
-- Products of powers of trigonometric functions
-
-  - e.g. $\displaystyle \int \sin^3(x)\cos^2(x)$
-
-- u-sub with a back-substitution
-
-  - e.g. $\displaystyle \int \frac{1}{x-3\sqrt{x+10}}, u=\sqrt{x+10} \implies x = u^2-10$
-
-- Trionometric reduction formulas
-
-  - e.g. $\displaystyle \int \sec^3 x$
-
-- Completing the square
-
-  - e.g. $\displaystyle \int \sqrt{x^2+4x+5} = \displaystyle \int \sqrt{(x+2)^2 + 1}$, then trig sub
+- Completing the square, for example $\int \sqrt{x^2+4x+5}\dx = \int \sqrt{(x+2)^2 + 1}\dx$, followed by trigonometric substitution
 
 - Polynomial long division
 
-- Exotic antiderivatives
+- Hyperbolic functions, for example $\int (e^x + e^{-x})\dx = \int 2\cosh x\dx$
 
-  - e.g. $\displaystyle \int e^x + e^{-x} = \displaystyle \int 2\cosh(x)$
+- Product-to-sum formulas
 
-- Product to sum formulas
+- The tabular method for integration by parts
 
-- Shoelace method of integration by parts
+- The Weierstrass substitution, for example $\int \frac{\dx}{1 + \sin x}$ with $t=\tan\frac x2$ and $\sin x = \frac{2t}{1+t^2}$
 
-- Weierstrass substitution
+- Integration by parts with $u=f(x)$ and $dv = \dx$, for $\int f(x) \dx$
 
-  - e.g. $\displaystyle \int \frac 1 {1 + \sin(x)}, \sin(x) = \frac{2t}{1+t^2}$ wher $t=\tan(\frac x 2)$
+- Odd and even functions integrated over symmetric intervals, for example $\int_{-1}^1 \sin x\dx = 0$
 
-- "Rigged" integration by parts
+- The Gaussian integral $\int_\RR e^{-x^2}\dx = \sqrt\pi$
 
-  - e.g. for $\displaystyle \int f(x) dx$, let $u=f(x), v' = 1$
+## Standard antiderivatives
 
-- Integrating even/odd functions over symmetric domains
+In each formula, $a\neq0$, and the constant of integration is omitted.
 
-  - e.g. $\displaystyle \int_{-1}^1 \sin(x)$
+1. $\displaystyle \int x^r \dx = \frac {x^{r+1}}{r+1}$ for $r\neq-1$, and $\displaystyle \int \frac {1}{x} \dx = \ln \abs x$.
 
-- Bonus round: $\displaystyle \int_\mathbb{R} e^{-x^2}$
+2. $\displaystyle \int b^{cx} \dx = \frac {b^{cx}}{c \ln b}$ for $b>0$, $b\neq1$, $c\neq0$.
 
-## Definitions
+[[P-JHXZS]]
 
-##### Level 1
+3. Trigonometric functions:
+   $$
+   \begin{aligned}
+   \int \sin (ax) \dx &= - \frac {1}{a} \cos (ax), & \int \cos (ax) \dx &= \frac {1}{a} \sin (ax), \\
+   \int \tan (ax) \dx &= - \frac {1}{a} \ln \abs{\cos (ax)}, & \int \cot (ax) \dx &= \frac {1}{a} \ln \abs{\sin (ax)}, \\
+   \int \sec (ax) \dx &= \frac {1}{a} \ln \abs{\sec (ax) + \tan (ax)}, & \int \csc (ax) \dx &= - \frac {1}{a} \ln \abs{\csc (ax) + \cot (ax)}, \\
+   \int \sec ^2 (ax) \dx &= \frac {1}{a} \tan (ax), & \int \csc ^2 (ax) \dx &= - \frac {1}{a} \cot (ax), \\
+   \int \sec (ax) \tan (ax) \dx &= \frac {1}{a} \sec (ax). & &
+   \end{aligned}
+   $$
 
-1. $\displaystyle \int x^a ~dx = \frac {x^{a+1}}{a+1}$
-
-2. $\displaystyle \int a^{bx} ~dx = \frac {a^{bx}}{b \ln (a)}$
-
-[[P-JHXZS]] 3. $\displaystyle \int \frac {1}{x} ~dx = \ln (x)​$
-
-4. $\displaystyle \int \sin (ax) ~dx = - \frac {1}{a} \cos (ax)$
-
-   $\displaystyle \int \cos (ax) ~dx = \frac {1}{a} \sin (ax)$
-
-   $\displaystyle \int \tan (ax) ~dx = - \frac {1}{a} \ln (\cos (ax))$
-
-[[P-OSVPH]] $\displaystyle \int \cot (ax) ~dx = \frac {1}{a} \ln (\sin (ax))​$
-
-$\displaystyle \int \sec (ax) ~dx = \frac {1}{a} \ln (\sec (ax) + \tan (ax))​$
-
-$\displaystyle \int \csc (ax) ~dx = - \frac {1}{a} \ln (\csc (ax) + \cot (ax))$
-
-5. $\displaystyle \int \cos (ax) ~dx = \frac {1}{a} \sin (ax)$
-
-   $\displaystyle \int \sin (ax) ~dx = - \frac {1}{a} \cos (ax)$
-
-   $\displaystyle \int \sec ^2 (ax) ~dx = \frac {1}{a} \tan (ax)​$
-
-   $\displaystyle \int \csc ^2 (ax) ~dx = - \frac {1}{a} \cot (ax)$
-
-   $\displaystyle \int \sec (ax) \tan (ax) ~dx = \frac {1}{a} \sec (ax)$
+[[P-OSVPH]]
 
 [[P-KAQ4G]]
 
-[[P-73DDS]] 6. $\displaystyle \int \frac {1}{\sqrt {a^2-x^2}}~dx = \sin ^{-1} (\frac {x}{a})$
+4. Inverse trigonometric functions, for $a>0$:
+   $$
+   \int \frac {\dx}{\sqrt {a^2-x^2}} = \sin ^{-1} \frac {x}{a}, \qquad
+   \int \frac {\dx}{x^2+a^2} = \frac {1}{a} \tan ^{-1} \frac {x}{a}, \qquad
+   \int \frac {\dx}{x \sqrt {x^2 - 1}} = \sec ^{-1} x \quad (x>1).
+   $$
 
-1. $\displaystyle \int \frac {1}{\sqrt {4-9x^2}} ~dx = \color {blue} {\frac {1}{3}\sin ^{-1} (\frac {3}{2} x)}$
+[[P-73DDS]]
 
-- **Solution:** $\frac {1}{\sqrt {4-9x^2}} = \frac {1}{3 \sqrt {(\frac {2}{3})^2 - x^2}}$
+::: {.example}
+$$
+\int \frac {\dx}{\sqrt {4-9x^2}} = \frac {1}{3}\sin ^{-1} \left(\frac {3}{2} x\right),
+$$
+since $\sqrt {4-9x^2} = 3 \sqrt {(2/3)^2 - x^2}$.
+:::
 
-$\displaystyle \int \frac {1}{x^2+a^2}~dx = \frac {1}{a} \tan ^{-1} (\frac {x}{a})$
+[[P-UGR7G]]
 
-[[P-UGR7G]] $\displaystyle \int \frac {1}{x \sqrt {x^2 - 1}} ~dx = \sec ^{-1} (x)$
+5. Antiderivatives of inverse trigonometric functions:
+   $$
+   \begin{aligned}
+   \int \sin^{-1}x \dx &= x\sin^{-1}x + \sqrt {1 - x^2}, \\
+   \int \tan^{-1}x \dx &= x \tan^{-1}x - \frac {1}{2} \ln (x^2 + 1), \\
+   \int \sec ^{-1} x \dx &= x \sec ^{-1} x - \ln \left(x + \sqrt {x^2 - 1}\right) \quad (x>1).
+   \end{aligned}
+   $$
 
-[[P-7NXQ7]] 7. $\displaystyle \int \sin^{-1}(x) ~dx = x\sin^{-1}(x) + \sqrt {1 - x^2}$
+[[P-7NXQ7]]
 
-- **Used 2018**, *Unsolved*
+## Simplification
 
-$\displaystyle \int \tan^{-1}(x) ~dx = x \tan^{-1}(x) - \frac {1}{2} \ln (x^2 + 1)$
-
-$\displaystyle \int \sec ^{-1} (x) ~dx = x \sec ^{-1} (x) - \ln (\sqrt {x^2 - 1} + x)$
-
-## Easy
-
-##### Level 1
-
-1. $\displaystyle \int \frac {\sin^2(2x)}{1+\cos(2x)} ~dx = \color{blue} {x-\cos(x)\sin(x)}$
-
-- **Solution:** $\frac {\sin ^2 (2x)}{1 + \cos (2x)} = \frac {1 - \cos ^2 (2x)}{1 + \cos (2x)} = 1 - \cos (2x)$
-
-- **Used 2019**
+::: {.example}
+$$
+\int \frac {\sin^2(2x)}{1+\cos(2x)} \dx = x-\sin x\cos x + C,
+$$
+since $\frac {\sin ^2 (2x)}{1 + \cos (2x)} = \frac {1 - \cos ^2 (2x)}{1 + \cos (2x)} = 1 - \cos (2x)$.
+:::
 
 [[P-75G3E]] [[P-3MDGM]] [[P-UOENS]] [[P-R4I5W]]
 
 [[P-7X6ZK]]
 
-## Interesting tricks
+## Other methods
 
-##### Level 1
-
-###### Change the order of integration
+### Changing the order of integration
 
 [[P-E5WUU]]
 
-##### Level 2
+### Odd functions
 
-###### Odd funtion
+::: {.example}
+The integrands below are odd, so
+$$
+\int_{-\pi}^{\pi} e^{-x^2}\sin x \dx = 0, \qquad \int_{-1729}^{1729} \left(\sin^5(x^3) + \sin^3(x^5) + x\right)\dx = 0.
+$$
+:::
 
-1. $\displaystyle \int_{-\pi}^{\pi} e^{-x^2}\sin (x) dx = \color {blue} {0}$
-
-2. $\displaystyle \int_{-1729}^{1729} \sin^5(x^3) + \sin^3(x^5) + x = \color {blue} {0}$
-
-##### Level 3
-
-###### Gaussian distribution
+### The Gaussian integral
 
 [[P-H442E]]
 
-###### Reverse Quotient Rule
+### Quotient rule in reverse
 
 [[P-ANJIW]]
 
-## u-Substitutions
-
-##### Level 1
+## $u$-substitution
 
 [[P-D75SD]] [[P-5RLR6]]
 
@@ -178,126 +146,93 @@ $\displaystyle \int \sec ^{-1} (x) ~dx = x \sec ^{-1} (x) - \ln (\sqrt {x^2 - 1}
 
 [[P-DH6CX]] [[P-EAYXF]] [[P-TO7UO]] [[P-UNHGI]] [[P-XIKRI]] [[P-4GVRD]] [[P-UVSXF]] [[P-5DV7Z]] [[P-JIAQR]] [[P-SZNKD]]
 
-##### Level 2
-
 [[P-MKEL2]] [[P-PV5GI]]
-
-##### Level 3
 
 [[P-XYIBX]] [[P-B6FMH]]
 
-## Trigonometric Substitution
+## Trigonometric substitution
 
-##### Level 2
-
-###### Sin
+### $x = a\sin\theta$
 
 [[P-PHHXJ]] [[P-45Y6B]] [[P-5OCGZ]] [[P-UUACQ]]
 
-###### Sec
+### $x = a\sec\theta$
 
 [[P-5UMRG]] [[P-SUXVR]]
 
-###### Tan
+### $x = a\tan\theta$
 
 [[P-XRZVW]]
 
-##### Level 3
-
 [[P-OY6YK]]
 
-## Integration by Parts
-
-##### Level 1
+## Integration by parts
 
 [[P-SAFVA]] [[P-SQVNA]] [[P-2ALGH]] [[P-GLK4G]]
 
 [[P-NKCDN]]
 
-##### Level 2
-
 [[P-YFZRX]] [[P-E6Y7R]]
-
-##### Level 3
 
 [[P-VYOWN]] [[P-NM425]]
 
-## Partial Fraction Decomposition
-
-##### Level 1
+## Partial fraction decomposition
 
 [[P-FDWKY]]
 
-##### Level 2
-
 [[P-7CUNN]]
-
-##### Level 3
 
 [[P-PAVWJ]]
 
-## Powers of Sine and Cosine
+## Powers of sine and cosine
 
-##### Trick
-
-$\displaystyle \int \sin ^n (x) ~dx = \frac {n - 1}{n} \int \sin ^{n - 2} (x) ~dx - \frac {1}{n} \cos (x) \sin ^{n - 1} (x)$
-
-$\displaystyle \int \cos ^n (x) ~dx = \frac {n - 1}{n} \int \cos ^{n - 2} (x) ~dx + \frac {1}{n} \sin (x) \cos ^{n - 1} (x)$
-
-##### Level 2
+For $n\geq 2$,
+$$
+\begin{aligned}
+\int \sin ^n x \dx &= \frac {n - 1}{n} \int \sin ^{n - 2} x \dx - \frac {1}{n} \cos x \sin ^{n - 1} x, \\
+\int \cos ^n x \dx &= \frac {n - 1}{n} \int \cos ^{n - 2} x \dx + \frac {1}{n} \sin x \cos ^{n - 1} x.
+\end{aligned}
+$$
 
 [[P-RVMWA]]
 
-##### Level 3
-
 [[P-R67LO]]
 
-## Powers of Tangent and Cosecant
+## Powers of secant
 
-##### Trick
-
-$\displaystyle \int \sec ^n (x) ~dx = \frac {n - 2}{n - 1} \int \sec ^{n - 2} (x) ~dx + \frac {1}{n - 1} \tan (x) \sec ^{n - 2} (x)$
-
-##### Level 3
+For $n\geq 2$,
+$$
+\int \sec ^n x \dx = \frac {n - 2}{n - 1} \int \sec ^{n - 2} x \dx + \frac {1}{n - 1} \tan x \sec ^{n - 2} x.
+$$
 
 [[P-F6K7Y]]
 
-## Products to Sum / Sums to Product formulas
+## Sum-to-product and product-to-sum formulas
 
-##### Trick
-
-$\sin (x) + \sin (y) = 2 \sin (\frac {x + y}{2}) \cos (\frac {x - y}{2})$
-
-$\sin (x) - \sin (y) = 2 \cos (\frac {x + y}{2}) \sin (\frac {x - y}{2})​$
+$$
+\sin x + \sin y = 2 \sin \frac {x + y}{2} \cos \frac {x - y}{2}, \qquad
+\sin x - \sin y = 2 \cos \frac {x + y}{2} \sin \frac {x - y}{2}.
+$$
 
 [[P-PC2H7]]
 
-##### Level 1
-
 [[P-CJ16Y]]
 
-## Weierstauss substitution
+## The Weierstrass substitution
 
-##### Trick
-
-Let $u = \tan (\frac {x}{2})$
-
-Then, $\sin (x) = \frac {2u}{1 + u^2}​$, $\cos (x) = \frac {1 - u^2}{1 + u^2}​$, $dx = \frac {2}{1 + u^2} ~du​$
-
-##### Level 3
+With $u = \tan \frac {x}{2}$,
+$$
+\sin x = \frac {2u}{1 + u^2}, \qquad \cos x = \frac {1 - u^2}{1 + u^2}, \qquad \dx = \frac {2}{1 + u^2} \, du.
+$$
 
 [[P-EQFMD]]
 
-##### Level 4
-
 [[P-NHFXM]]
 
-## Combined Techniques
-
-##### Level 3
+## Combined techniques
 
 [[P-W6TOK]]
 
-## Too Hard
+## Further integrals
 
 [[P-E7N6V]]

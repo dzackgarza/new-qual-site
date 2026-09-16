@@ -1,39 +1,39 @@
 ---
-title: References and Notes
+title: References and notes
 order: 0
 ---
 
-# References and Notes
+# References and notes
 
-## References and Study Material
+## References
 
 [UCLA summer notes](https://www.math.ucla.edu/~bonsoon/summer2020/files/concepts.pdf)
 
-- L. Ahlfors, ‘*Complex Analysis*‘ (McGraw-Hill, 1973).
+- L. Ahlfors, *Complex Analysis* (McGraw-Hill, 1973).
 
-- V. Arnold, ‘*Ordinary Differential Equations*‘ (MIT Press)
+- V. Arnold, *Ordinary Differential Equations* (MIT Press).
 
-- M. Artin, ‘*Algebra*‘ (Prentice Hall, 1991)
+- M. Artin, *Algebra* (Prentice Hall, 1991).
 
-- F. Kirwan, ‘*Complex Algebraic Curves*‘, London Mathematical Series Student Texts 23 (Cambridge, 1992).
+- F. Kirwan, *Complex Algebraic Curves*, London Mathematical Society Student Texts 23 (Cambridge, 1992).
 
-- W. Massey, ‘*A Basic Course in Algebraic Topology*‘ Graduate Texts in Mathematics Vol. 127 (Springer-Verlag, 1991).
+- W. Massey, *A Basic Course in Algebraic Topology*, Graduate Texts in Mathematics 127 (Springer-Verlag, 1991).
 
-- J. Milnor, ‘*Topology from the Differentiable Viewpoint*‘
+- J. Milnor, *Topology from the Differentiable Viewpoint*.
 
-- S. Ross, ‘*A First Course in Probability*‘ (5th edition, Prentice-Hall, 1997).
+- S. Ross, *A First Course in Probability*, 5th edition (Prentice-Hall, 1997).
 
-- W. Rudin, ‘*Real and Complex Analysis*‘
+- W. Rudin, *Real and Complex Analysis*.
 
-- J-P. Serre, ‘*A course in Arithmetic*‘
+- J-P. Serre, *A Course in Arithmetic*.
 
-- J-P. Serre, ‘*Linear Representations of Finite Groups*‘
+- J-P. Serre, *Linear Representations of Finite Groups*.
 
 ## Notes
 
-- General / GRE preparation
+- General and GRE preparation
 
-  - [[attachments/Master_10_27_2018.pdf|Broad mathematics GRE/reference compendium (2018)]]
+  - [[attachments/Master_10_27_2018.pdf|Mathematics GRE reference compendium (2018)]]
 
 - Analysis
 
@@ -41,9 +41,9 @@ order: 0
 
   - [[attachments/Real_Analysis_Review_Midterm.pdf|Real-analysis practice midterm with solutions]]
 
-- Linear Algebra
+- Linear algebra
 
-  - [[attachments/Basic_Linear_Algebra_Review.pdf|Linear-algebra final-exam review sheet]]
+  - [[attachments/Basic_Linear_Algebra_Review.pdf|Linear algebra final exam review sheet]]
 
 - Probability
 

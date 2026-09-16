@@ -10,51 +10,47 @@ topics:
 
 # Which technique?
 
-The prelim is a computation paper.
-Almost every integral is one of six forms, and recognizing the form is the whole exam.
+## Integrals, by the form of the integrand
 
-## Integrals, by the shape of the integrand
-
-| The integrand contains | Try |
+| The integrand contains | Method |
 | --- | --- |
-| a function and its derivative | $u\dash$substitution |
-| a product of unlike kinds | integration by parts, LIATE for the choice of $u$ |
-| $\sqrt{a^2-x^2}$, $\sqrt{a^2+x^2}$, $\sqrt{x^2-a^2}$ | trigonometric substitution, $\sin$, $\tan$, $\sec$ |
+| a function and its derivative | $u$-substitution |
+| a product of functions of different types | integration by parts, with $u$ chosen in the order logarithmic, inverse trigonometric, algebraic, trigonometric, exponential |
+| $\sqrt{a^2-x^2}$, $\sqrt{a^2+x^2}$, $\sqrt{x^2-a^2}$ | trigonometric substitution $x=a\sin\theta$, $x=a\tan\theta$, $x=a\sec\theta$ respectively |
 | a proper rational function | partial fractions |
-| odd powers of $\sin$ or $\cos$ | peel one factor off and substitute |
-| even powers only | the half-angle identities |
-| $R(\sin, \cos)$ with no better structure | the Weierstrass substitution $t = \tan(x/2)$ |
+| an odd power of $\sin$ or $\cos$ | factor out one $\sin$ or $\cos$, rewrite the rest with $\sin^2+\cos^2=1$, and substitute |
+| even powers of $\sin$ and $\cos$ only | the half-angle identities |
+| a rational function $R(\sin x, \cos x)$ | the Weierstrass substitution $t = \tan(x/2)$ |
 
-Two habits that shorten most problems:
+**Symmetry.** If $f$ is odd, then $\int_{-a}^a f = 0$; if $f$ is even, then $\int_{-a}^a f = 2\int_0^a f$.
 
-- **Check for symmetry first.** An odd integrand over a symmetric interval integrates to zero, and an even one halves the work.
-
-- **Check whether the answer is a standard form.** $\int \frac{\dx}{a^2+x^2}$, $\int\frac{\dx}{\sqrt{a^2-x^2}}$ and $\int \sec x \dx$ appear constantly and are worth knowing rather than deriving.
+**Standard forms.**
+$$
+\int \frac{\dx}{a^2+x^2} = \frac1a\arctan\frac xa + C, \qquad \int\frac{\dx}{\sqrt{a^2-x^2}} = \arcsin\frac xa + C, \qquad \int \sec x \dx = \ln\abs{\sec x+\tan x} + C.
+$$
 
 ## Repeated integration by parts
 
-When parts must be applied more than once, the tabular method is faster and less error-prone, and when the integral reappears on the right-hand side, solve for it algebraically rather than continuing.
+For $\int P(x)g(x)\dx$ with $P$ a polynomial, the tabular method applies integration by parts $\deg P + 1$ times; see [[prelim/useful-tricks|Useful tricks]].
+If the original integral reappears after integrating by parts, as in $\int e^x\sin x\dx$, the resulting equation can be solved for the integral.
 
 ## Series
 
-- **Convergence:** ratio test for factorials and powers, root test for $n$th powers, comparison against a $p\dash$series otherwise, alternating series test for alternating ones, and integral test when the terms come from a monotone function.
+- **Convergence.** The ratio test applies to terms built from factorials and powers, the root test to terms that are $n$th powers, comparison with a $p$-series to terms comparable to $n^{-p}$, the alternating series test to alternating series with terms decreasing to $0$, and the integral test to $\sum f(n)$ with $f$ positive and decreasing.
 
-- **Value:** geometric, telescoping, or a known expansion evaluated at a point.
-  Almost every prelim series is one of those three.
+- **Value.** Geometric series, telescoping series, and known power series evaluated at a point.
 
 ## Limits
 
-L'Hôpital, then Taylor expansion when L'Hôpital cycles, then squeeze.
-For sequences defined recursively, show monotone and bounded and identify the limit from the fixed-point equation.
+For indeterminate forms: L'Hôpital's rule; Taylor expansion, when repeated applications of L'Hôpital's rule do not simplify the quotient; the squeeze theorem.
+A recursively defined sequence that is monotone and bounded converges, and if $a_{n+1}=g(a_n)$ with $g$ continuous, its limit $L$ satisfies $L = g(L)$.
 
-## Multivariable
+## Multivariable integrals
 
-- **Line integrals:** check whether the field is conservative first, since then only the endpoints matter.
+- **Line integrals.** If the field is conservative, $F = \nabla\phi$, then $\int_C F\cdot d\mathbf{r} = \phi(\text{end})-\phi(\text{start})$.
 
-- **A closed curve in the plane:** Green's theorem.
+- **Closed curves in the plane.** Green's theorem.
 
-- **A closed surface:** the divergence theorem.
+- **Closed surfaces.** The divergence theorem.
 
-- **Otherwise:** parameterize, and choose coordinates matching the symmetry of the region.
-
-The tables and worked cases are on [[prelim/useful-tricks|Useful tricks]].
+- **Other integrals.** Parametrize the curve or surface, in coordinates adapted to the symmetry of the region.

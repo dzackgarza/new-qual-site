@@ -5,8 +5,8 @@ order: 1
 
 # Problems
 
-Prelim papers to work, not UGA quals.
+- [[prelim/problems/berkeley-prelims|Berkeley prelims]] -- the Berkeley preliminary exam syllabus, and exams and solutions from 1977 onward, as PDFs.
 
-[[berkeley-prelims]] is the Berkeley archive (syllabus plus years of exams and some solutions, as PDFs).
-[[ucla-prelims]] is the corresponding UCLA collection.
-[[integral-practice]] is a computational sheet: evaluate the integral, no theory.
+- [[prelim/problems/ucla-prelims|UCLA prelims]] -- UCLA Basic Examinations, 2001--2018, as PDFs.
+
+- [[prelim/problems/integral-practice|Integral practice]] -- integrals to evaluate, grouped by technique.

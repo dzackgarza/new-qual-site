@@ -5,26 +5,25 @@ order: 0
 
 # Prelims
 
-Undergraduate analysis, calculus and algebra that the later quals treat as known.
-Unlike the other subjects this paper is mostly computational, so the recognition page carries more of the weight.
+Undergraduate calculus, analysis, linear algebra, and abstract algebra.
 
-## What the exam asks
+## Problem types
 
-| The question | Where it is decided |
+| Problem type | Page |
 | --- | --- |
-| Evaluate this integral, series, or limit | [[prelim/which-technique\|Which technique?]] |
-| Is this statement true | [[prelim/counterexamples\|Counterexamples]] |
+| Evaluate an integral, a series, or a limit | [[prelim/which-technique\|Which technique?]] |
+| Decide whether a statement is true | [[prelim/counterexamples\|Counterexamples]] |
 
-## The material
+## Pages
 
-- [[prelim/which-technique|Which technique?]], the six integrand forms and the series and limit tests.
+- [[prelim/which-technique|Which technique?]] -- integration techniques by the form of the integrand, convergence tests for series, and methods for limits and multivariable integrals.
 
-- [[prelim/useful-tricks|Useful tricks]], the tables for repeated parts and common series.
+- [[prelim/useful-tricks|Useful tricks]] -- tabular integration by parts and power series derived from the geometric series.
 
-- [[prelim/counterexamples|Counterexamples]], the true-or-false witnesses.
+- [[prelim/counterexamples|Counterexamples]] -- counterexamples to false statements in analysis and algebra.
 
-- [[prelim/worked-exams/index|Worked exams]], the prelims written out year by year.
+- [[prelim/worked-exams/index|Worked exams]] -- UGA prelims, one page per exam.
 
-- [[prelim/problems/index|Problems]], the Berkeley and UCLA archives and the integral drill sheet.
+- [[prelim/problems/index|Problems]] -- the Berkeley and UCLA exam archives and an integral practice sheet.
 
 - [[prelim/resources/index|Resources]].
