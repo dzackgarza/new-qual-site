@@ -28,7 +28,6 @@ source:
     - P-BLAR-07
 ---
 
-::: remark
-The retained review sheet is primarily expository linear-algebra notes.
-Its final section contains exactly seven numbered review problems; those seven source positions are represented here, while definitions and worked examples in the notes are retained as reference material rather than manufactured into problem cards.
+::: {.remark}
+The review sheet consists of expository notes on linear algebra followed by a final section of seven numbered review problems.
 :::
