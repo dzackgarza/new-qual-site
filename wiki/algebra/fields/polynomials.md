@@ -13,9 +13,9 @@ topics:
 For a field $k$, $k[x]$ is a Euclidean domain with respect to degree, hence a PID and a UFD, and its prime elements are the irreducible polynomials.
 A polynomial in $\ZZ[x]$ is primitive if the greatest common divisor of its coefficients is $1$, and by Gauss's lemma a product of primitive polynomials is primitive.
 
-[[FD-CI4NB]] [[FD-SZKGS]]
+[[FD-CI4NB]]
 
-[[FD-24RNF]] [[FD-QFRSI]]
+[[FD-24RNF]]
 
 [[D-BVMTZ]]
 

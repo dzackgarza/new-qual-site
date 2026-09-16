@@ -5,6 +5,7 @@ kind: definition
 title: Polynomial ring $K[x]$
 prompts:
 - What is the polynomial algebra $K[x]$?
+- What are the elements of the polynomial algebra $K[x]$?
 classification:
   areas:
   - algebra
