@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-L5UH3
 kind: proposition
-title: Right half-plane to Disc
+title: Biholomorphism from the right half-plane onto the unit disc
 classification:
   areas:
   - complex-analysis
@@ -13,36 +13,36 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\HH_{R} &\mapstofrom \DD \\
-\ts{ z \st \Re(z) > 0 } &\mapstofrom \ts{ w \st \abs{w} < 1 } \\
-z &\mapsto {1-z \over 1+z} \\
-{1-w\over 1+w} &\mapsfrom w
-.\]
+::: {.proposition}
+Let $\HH_R\coloneqq\ts{z\in\CC \st \Re z>0}$ be the right half-plane and $\DD\coloneqq\ts{w\in\CC \st \abs{w}<1}$ the unit disc.
+The map
+$$
+\varphi\colon\HH_R\to\DD,\qquad \varphi(z)=\frac{1-z}{1+z},
+$$
+is a [[D-TM4TE|biholomorphism]], with inverse $\varphi^{-1}\colon\DD\to\HH_R$, $\varphi^{-1}(w)=\frac{1-w}{1+w}$.
 :::
 
 ::: {.proof}
-Map the *right* half-plane $\HH_R$ to the disc $\DD$ by precomposing the standard map $\HH \to \DD$ with a rotation by $e^{i\pi/2} = i$:
-\[
-\HH_{R} \to \HH &\to \DD \\
-z \mapsto iz &\mapsto {i- (iz) \over i + (iz)} = {i(1-z) \over i(1+z) } = {1-z \over 1+z}
-.\]
-The map $z \mapsto iz$ sends $\HH_R = \ts{z \st \Re z > 0}$ onto $\HH = \ts{w \st \Im w > 0}$ (multiplication by $i$ rotates the right half-plane onto the upper half-plane), and the standard Cayley map $w \mapsto \frac{i-w}{i+w}$ sends $\HH$ onto $\DD$.
+For $z\in\HH_R$ we have $1+z\neq0$, and
+$$
+\abs{1-z}^2-\abs{1+z}^2=-4\Re z<0,
+$$
+so $z$ is closer to $1$ than to $-1$ and $\abs{\varphi(z)}<1$.
+Hence $\varphi$ is a [[D-E7A5W|holomorphic]] map $\HH_R\to\DD$.
+The same map is the composite of the rotation $z\mapsto iz$, which maps $\HH_R$ onto the upper half-plane $\HH=\ts{u\in\CC\st\Im u>0}$, with the Cayley map $u\mapsto\frac{i-u}{i+u}$ from $\HH$ onto $\DD$:
+$$
+\frac{i-iz}{i+iz}=\frac{1-z}{1+z}.
+$$
 
-To invert, solve $w = \frac{1-z}{1+z}$ for $z$:
-\[
-w(1+z) = 1-z \implies w + wz = 1 - z \implies z(w+1) = 1 - w \implies z = \frac{1-w}{1+w}.
-\]
-This is well-defined on $\DD$ since $w \neq -1$ for $|w| < 1$, and it maps $\DD$ back to $\HH_R$: for $w = u + iv$ with $u^2 + v^2 < 1$,
-\[
-\Re\left(\frac{1-w}{1+w}\right) = \frac{1 - |w|^2}{|1+w|^2} > 0.
-\]
+For $w\in\DD$ we have $w\neq-1$, so $\psi(w)\coloneqq\frac{1-w}{1+w}$ is holomorphic on $\DD$, and
+$$
+\Re\psi(w)=\frac{\Re\big((1-w)(1+\bar w)\big)}{\abs{1+w}^2}=\frac{1-\abs{w}^2}{\abs{1+w}^2}>0,
+$$
+so $\psi$ maps $\DD$ into $\HH_R$.
+If $w=\varphi(z)$, then $w+wz=1-z$, so $z(1+w)=1-w$ and $z=\psi(w)$; thus $\psi\circ\varphi=\id_{\HH_R}$.
+The same computation with the roles of $z$ and $w$ exchanged gives $\varphi\circ\psi=\id_{\DD}$.
+:::
 
-**Boundary behavior**: the boundary $\Re z = 0$ (the imaginary axis) maps to the unit circle $|w| = 1$, since for $z = it$ with $t \in \RR$,
-\[
-\left|\frac{1-it}{1+it}\right| = \frac{|1-it|}{|1+it|} = 1.
-\]
-
-> Mnemonic: every $z\in \HH_R$ is closer to $1$ than to $-1$, so $\left|\frac{1-z}{1+z}\right| < 1$.
+::: {.remark}
+The formula $\frac{1-z}{1+z}$ also maps the imaginary axis into the unit circle: for $t\in\RR$, the numbers $1-it$ and $1+it$ are complex conjugates, so $\abs{\frac{1-it}{1+it}}=1$.
 :::

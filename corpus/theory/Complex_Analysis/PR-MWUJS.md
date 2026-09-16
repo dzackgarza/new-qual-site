@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-MWUJS
 kind: proposition
-title: Existence of complex log
+title: Existence of a branch of the logarithm on a simply connected region
 classification:
   areas:
   - complex-analysis
@@ -14,12 +14,10 @@ review: draft
 ---
 
 ::: {.proposition}
-Suppose $\Omega$ is a simply-connected region such that $1\in \Omega, 0\not\in\Omega$.
-Then there exists a branch of $F(z) \da \Log(z)$ such that
+Let $\Omega\subseteq\CC$ be a simply connected region with $1\in\Omega$ and $0\notin\Omega$.
+Then there exists a [[D-E7A5W|holomorphic]] function $F\colon\Omega\to\CC$ such that
 
-- $F$ is holomorphic on $\Omega$,
+- $e^{F(z)}=z$ for all $z\in\Omega$, and
 
-- $e^{F(z)} = z$ for all $z\in \Omega$
-
-- $F(x) = \log(x)$ for $x\in \RR$ in a neighborhood of $1$.
+- $F(r)=\log r$ for all real $r$ in some neighborhood of $1$ in $\Omega$.
 :::
