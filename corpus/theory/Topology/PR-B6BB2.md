@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-B6BB2
 kind: proposition
-title: Homology commutes with wedge products
+title: Reduced homology of a wedge sum
 classification:
   areas:
   - topology
@@ -14,11 +14,14 @@ review: draft
 ---
 
 ::: {.proposition}
-\[
-\tilde H_*(A\vee B) &\cong H_*(A) \times H_*(B) \\
-H_{n}\qty{\bigvee_\alpha X_\alpha} &\cong \prod_\alpha H_{n} X_\alpha
-\]
-See footnote for categorical interpretation.[^wedge]
+Let $(X_\alpha, x_\alpha)$ be pointed spaces such that each $(X_\alpha, \theset{x_\alpha})$ is a good pair.
+Then the inclusions $X_\alpha\injects\bigvee_\alpha X_\alpha$ induce an isomorphism
+$$
+\bigoplus_\alpha \tilde H_n(X_\alpha) \xrightarrow{\ \sim\ } \tilde H_n\qty{\bigvee_\alpha X_\alpha}
+$$
+for every $n$ [@Hat02, Corollary 2.25, p. 126].
 :::
 
-[^wedge]: $\bigvee$ is the coproduct in the category $\mathbf{Top}_0$ of pointed topological spaces, and alternatively, $X\vee Y$ is the pushout in $\mathbf{Top}$ of $X \from \pt \to Y$
+::: {.remark}
+The wedge sum $\bigvee_\alpha X_\alpha$ is the coproduct in the category of pointed topological spaces.
+:::
