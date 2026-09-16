@@ -124,8 +124,6 @@ For every point $x_0$ of a space $X$, the constant map $X\to\ts{x_0}$ is a retra
 
 [[D-3O6QH]]
 
-[[FD-OQO2U]]
-
 [[FD-DXTBN]]
 
 [[D-23NTI]]

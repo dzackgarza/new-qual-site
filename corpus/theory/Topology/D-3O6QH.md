@@ -3,6 +3,8 @@ schema: qual/card@1
 id: D-3O6QH
 kind: definition
 title: Separable space
+prompts:
+- What does it mean for a space to be separable?
 classification:
   areas:
   - topology
