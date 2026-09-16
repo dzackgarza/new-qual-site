@@ -15,7 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-Retract: A subspace $A \subset X$ is a *retract* of $X$ iff there exists a continuous map $f: X\to A$ such that $f\mid_{A} = \id_A$.
-
-Equivalently it is a *left* inverse to the inclusion.
+Let $X$ be a topological space, $A \subseteq X$ a subspace, and $\iota\colon A\injects X$ the inclusion.
+The subspace $A$ is a \dfn{retract} of $X$ if there exists a [[D-AEAAD|continuous map]] $f\colon X\to A$ with $f\vert_{A} = \id_A$, that is, $f\circ\iota = \id_A$; such an $f$ is a left inverse of $\iota$.
 :::
