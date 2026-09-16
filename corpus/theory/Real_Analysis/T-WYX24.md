@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-WYX24
 kind: theorem
-title: Generalized DCT
+title: Generalized dominated convergence theorem
 classification:
   areas:
   - real-analysis
@@ -15,17 +15,21 @@ review: draft
 ---
 
 ::: {.theorem}
-If
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, and let $f_n\colon X\to\CC$ and $g_n\colon X\to[0,\infty)$ for $n\geq1$, $f\colon X\to\CC$, and $g\colon X\to[0,\infty)$ be [[D-DHFN4|measurable]].
+Suppose that
 
-- $f_n \in L^1$ with $f_n \to f$ almost everywhere,
+- $f_n\to f$ almost everywhere;
 
-- There exist $g_n\geq 0 \in L^1$ nonnegative with $\abs{f_n} \leq g_n$,
+- $g_n\in L^1(X,\mu)$ and $\abs{f_n}\leq g_n$ almost everywhere, for every $n$;
 
-- $g_n\to g$ almost everywhere with $g\in L^1$, and
+- $g_n\to g$ almost everywhere, $g\in L^1(X,\mu)$, and $\lim_{n\to\infty}\int_X g_n\dmu=\int_X g\dmu$.
 
-- $\lim \int g_n = \int g$,
+Then $f\in L^1(X,\mu)$ and
+$$
+\lim_{n\to\infty}\int_X f_n\dmu=\int_X f\dmu.
+$$
+:::
 
-then $f\in L^1$ and $\lim \int f_n = \int f < \infty$.
-
-> Note that this is the DCT with $\abs{f_n} < \abs{g}$ relaxed to $\abs{f_n} < g_n \to g\in L^1$.
+::: {.remark}
+The [[FT-LCR5P|dominated convergence theorem]] is the case $g_n=g$ for all $n$: the single dominating function $g$ is replaced by dominating functions $g_n$ that converge to $g$ almost everywhere and in integral.
 :::
