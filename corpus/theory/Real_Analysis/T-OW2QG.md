@@ -20,7 +20,7 @@ Then there exists a linear functional $F\colon\mathcal X\to\RR$ with $\ro{F}{\ma
 
 Let $\mathcal X$ be a complex vector space and let $p\colon\mathcal X\to\RR$ be a seminorm, that is, $p(x+y) \leq p(x) + p(y)$ and $p(\lambda x) = \abs{\lambda} p(x)$ for all $x,y\in \mathcal X$ and all $\lambda \in\CC$.
 Let $\mathcal M \subseteq \mathcal X$ be a linear subspace and $f\colon\mathcal M\to\CC$ a [[D-EPSKF|linear functional]] with $\abs f \leq p$ on $\mathcal M$.
-Then there exists a linear functional $F\colon\mathcal X\to\CC$ with $\ro{F}{\mathcal M} = f$ and $\abs F \leq p$ on $\mathcal X$ [@Fol13, Theorems 5.6 and 5.7].
+Then there exists a linear functional $F\colon\mathcal X\to\CC$ with $\ro{F}{\mathcal M} = f$ and $\abs F \leq p$ on $\mathcal X$ [@Fol13].
 :::
 
 ::: {.remark}
@@ -42,5 +42,5 @@ Let $\mathcal X$ be a normed vector space over $\RR$ or $\CC$ with dual space $\
 
 3. The map $\mathcal X \injects \mathcal X^{\vee\vee}$, $x \mapsto \hat x$ with $\hat x(f) \coloneqq f(x)$ for $f\in\mathcal X\dual$, is a linear isometry.
 
-[@Fol13, Theorem 5.8]
+[@Fol13]
 :::

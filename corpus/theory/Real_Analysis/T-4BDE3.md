@@ -41,5 +41,5 @@ The inequality extends to an orthonormal family $(u_i)_{i\in I}$ indexed by an a
 $$
 \sum_{i\in I}\abs{\inner{x}{u_i}}^2\coloneqq\sup_{\substack{F\subseteq I\\ F\text{ finite}}}\sum_{i\in F}\abs{\inner{x}{u_i}}^2\leq\norm{x}^2 .
 $$
-Consequently, for each $x$ only countably many of the coefficients $\inner{x}{u_i}$ are nonzero [@Fol13, §5.5].
+Consequently, for each $x$ only countably many of the coefficients $\inner{x}{u_i}$ are nonzero [@Fol13].
 :::

@@ -23,5 +23,5 @@ Then the family is uniformly bounded in operator norm: there exists $C\geq0$ suc
 $$
 \norm{T_\alpha x}\leq C\norm{x} \quad\text{for all } \alpha\in A \text{ and all } x\in X,
 $$
-that is, $\sup_{\alpha\in A}\norm{T_\alpha}<\infty$ [@Fol13, §5.3].
+that is, $\sup_{\alpha\in A}\norm{T_\alpha}<\infty$ [@Fol13].
 :::
