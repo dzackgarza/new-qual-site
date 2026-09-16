@@ -15,6 +15,10 @@ review: draft
 ---
 
 ::: {.definition}
-Let $k$ be a field, let $n\geq 1$, and let $\SF(x^n-1)$ be a splitting field of $x^n-1$ over $k$.
-A subfield of $\SF(x^n-1)$ is a \dfn{cyclotomic field}.
+Let $n\geq 1$ and let $\zeta_n\in\CC$ be a primitive $n$th root of unity.
+The \dfn{cyclotomic field} of $n$th roots of unity is $\QQ(\zeta_n)$, the splitting field of $x^n-1$ over $\QQ$ [@DF04, §13.4].
+:::
+
+::: {.remark}
+More generally, for a field $k$ whose characteristic does not divide $n$, the splitting field of $x^n-1$ over $k$ is $k(\zeta)$ for any primitive $n$th root of unity $\zeta$ in it.
 :::
