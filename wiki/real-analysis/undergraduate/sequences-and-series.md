@@ -121,5 +121,3 @@ The same argument proves completeness of other spaces of functions with the norm
 :::
 
 [[T-3QNBQ]]
-
-[[FT-ITKJU]]
