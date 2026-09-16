@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A group $G$ is \dfn{simple} if its only [[D-EKE4Q|normal subgroups]] are $\theset{e}$ and $G$.
+A group $G\neq\theset{e}$ is \dfn{simple} if its only [[D-EKE4Q|normal subgroups]] are $\theset{e}$ and $G$.
 :::

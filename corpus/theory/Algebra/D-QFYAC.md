@@ -18,13 +18,14 @@ review: draft
 Let $k$ be a field and $A\in\Mat_{n\times n}(k)$.
 The \dfn{characteristic polynomial} of $A$ is
 $$
-\chi_A(x) \coloneqq \det(A - xI)\in k[x].
+\chi_A(x) \coloneqq \det(xI - A)\in k[x].
 $$
+It is monic of degree $n$; some texts use $\det(A-xI)=(-1)^n\chi_A(x)$ instead.
 :::
 
 ::: {.remark}
 If $\SNF(xI-A)=\diag(d_1,\ldots,d_n)$ is the Smith normal form of $xI-A$ over $k[x]$, with monic invariant factors $d_i$, then $\det(xI-A)$ and $d_1\cdots d_n$ are monic and differ by a unit of $k[x]$, hence are equal, and
 $$
-\chi_A(x)=(-1)^n\det(xI-A)=(-1)^n\det\SNF(xI-A).
+\chi_A(x)=\det(xI-A)=\det\SNF(xI-A).
 $$
 :::
