@@ -41,8 +41,3 @@ source:
     term: spring
     year: 1977
 ---
-
-::: {.remark}
-UC Berkeley Preliminary Exam, Spring 1977. Problems are listed in source order.
-The source's missing illustration for Problem 3 is not needed to state its regular-polygon chord construction.
-:::
