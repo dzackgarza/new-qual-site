@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $R$ be a ring.
-A left $R$-module $M$ is \dfn{free} if it has a [[D-MVNSV|basis]].
+A left $R$-module $M$ is \dfn{free} if it has a [[D-I7D56|basis]].
 :::
 
 ::: {.proposition}

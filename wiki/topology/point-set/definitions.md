@@ -168,7 +168,7 @@ An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\ge
 
 [[D-5KDNB]]
 
-[[D-MVNSV]]
+[[D-I7D56]]
 
 [[D-MLMIR]]
 
@@ -381,7 +381,7 @@ For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right
 
 [[D-3VEC5]]
 
-[[D-I7D56]] [[D-M3Y6X]]
+[[D-M3Y6X]]
 
 [[D-5KMYI]]
 
