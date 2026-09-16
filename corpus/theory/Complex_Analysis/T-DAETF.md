@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-DAETF
 kind: theorem
-title: Schwarz Lemma
+title: Schwarz lemma
 classification:
   areas:
   - complex-analysis
@@ -14,17 +14,12 @@ review: draft
 ---
 
 ::: {.theorem ref="SchwarzzLemma"}
-If $f: \DD \to \DD$ is holomorphic with $f(0) = 0$, then
+Let $f\colon\DD\to\DD$ be [[D-E7A5W|holomorphic]] with $f(0)=0$.
+Then
 
-1. $\abs{f(z)} \leq \abs z$ for all $z\in \DD$
+1. $\abs{f(z)}\leq\abs{z}$ for all $z\in\DD$, and
 
-2. $\abs{f'(0)} \leq 1$.
+2. $\abs{f'(0)}\leq1$.
 
-Moreover, if
-
-- $\abs{f(z_0)} = \abs{z_0}$ for any $z_0\in \DD\smz$, or
-
-- $\abs{f'(0)} = 1$,
-
-then $f$ is a rotation, i.e. $f(z) = \lambda z$ for some $\abs{\lambda} = 1$.
+If $\abs{f(z_0)}=\abs{z_0}$ for some $z_0\in\DD\setminus\{0\}$, or if $\abs{f'(0)}=1$, then $f$ is a rotation: there is $\lambda\in\CC$ with $\abs{\lambda}=1$ such that $f(z)=\lambda z$ for all $z\in\DD$.
 :::
