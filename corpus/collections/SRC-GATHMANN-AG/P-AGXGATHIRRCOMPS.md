@@ -43,3 +43,7 @@ A(X_2) \da \CC[x,y,z]/\gens{x-yz, z^2 - y} \cong \CC[y,z]/\gens{z^2-y} \cong \CC
 ,\]
 which is an integral domain for the same reason.
 :::
+
+::: {.remark}
+Erratum: in the second isomorphism the relation $y=z^2$ eliminates $y$, so $A(X_2)\cong \CC[y,z]/\gens{z^2-y}\cong \CC[z]$, not $\CC[y]$; the conclusion that $A(X_2)$ is an integral domain is unaffected.
+:::

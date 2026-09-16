@@ -62,3 +62,10 @@ G_U = X_{y_0} \intersect U \subseteq X\cross Y
 where $U$ is closed in $X\cross Y$ and thus closed in $X_{y_0}$, and $X_{y_0}$ is trivially closed in itself.
 This exhibits $G_U$ as the intersection of two sets closed in $X_{y_0} \cong X$.
 :::
+
+::: {.remark}
+Erratum: the fibre argument above is incomplete, and two of its displayed claims are false.
+
+- The first claim shows only that each fibre $\ts{x}\cross Y$ lies in $U$ or in $V$; it does not give $U=\pi_X^{-1}(G_U)$, only $\pi_X^{-1}(G_U)\subseteq U$. The conclusion should be that $X=G_U$ forces every fibre, hence $X\cross Y$, to lie in $U$.
+- $G_U$ is not $X_{y_0}\intersect U$: the latter records only whether the single point $(x,y_0)$ lies in $U$, not the whole fibre over $x$. Identifying $X$ with $X\cross\ts{y}$ for each $y\in Y$, the correct description is $G_U=\Intersect_{y\in Y}\ts{x\in X \st (x,y)\in U}$, an intersection of closed subsets of $X$.
+:::
