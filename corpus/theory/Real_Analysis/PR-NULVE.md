@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-NULVE
 kind: proposition
-title: Limsups/infs of measurable sets are measurable.
+title: Limits superior and inferior of measurable sets are measurable
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $A_{n}$ are all measurable, $\limsup A_{n}$ and $\liminf A_{n}$ are measurable.
+Let $(X,\mcm)$ be a measurable space and let $A_n\in\mcm$ for $n\geq1$.
+Then $\limsup_n A_n$ and $\liminf_n A_n$, as [[D-PAEDW|defined]] by $\bigcap_{N\geq1}\bigcup_{n\geq N}A_n$ and $\bigcup_{N\geq1}\bigcap_{n\geq N}A_n$, belong to $\mcm$.
 :::
