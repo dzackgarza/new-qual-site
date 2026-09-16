@@ -38,6 +38,7 @@ Any $D$ with $\deg D \geq 2g+1$ is very ample.
 
 ::: {.remark}
 The criterion says the linear system separates points and tangent vectors, which is exactly what an embedding must do.
+The inequalities come from the exact sequence $0 \to \mcl(D - p) \to \mcl(D) \to k(p) \to 0$, with $k(p)$ the skyscraper sheaf at $p$, whose global sections drop by at most $\dim_k k(p) = 1$.
 Applied to $K$ and using duality, $\ell(K-p-q) = \ell(K) - 2$ fails precisely when $\ell(p+q) = 2$, that is, when there is a degree-two map to $\PP^1$ — the definition of hyperelliptic.
 
 The excluded cases are genuinely excluded: for $g = 0$, $\deg K < 0$; for $g = 1$, $K = 0$; for $g = 2$, every curve is hyperelliptic and $K$ gives the degree-two map rather than an embedding.

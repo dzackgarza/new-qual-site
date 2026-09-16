@@ -25,11 +25,13 @@ prompts:
 ::: {.proposition}
 Let $f : X \to Y$ be a finite morphism of curves over $k = \kbar$ with $\characteristic k = p$, and suppose $k(X)/k(Y)$ is purely inseparable of degree $p^n$.
 Then $X$ and $Y$ are isomorphic as schemes, $g(X) = g(Y)$, and $f$ is the $n$-fold composite of $k$-linear Frobenius morphisms.
+[@Har10a, Proposition IV.2.5]
 :::
 
 ::: {.remark title="Why the statement is this strong"}
 Purely inseparable means every element of $k(X)$ has a $p$-power lying in $k(Y)$, so $k(Y) \supseteq k(X)^{p^n}$ and the extension is squeezed between $k(X)$ and $k(X)^{p^n}$.
-A purely inseparable extension of degree $p^n$ of a function field of transcendence degree $1$ over a perfect field is therefore $k(X) \subseteq k(X)^{1/p^n}$ up to isomorphism, and that inclusion is exactly the one realised by the $n$-fold Frobenius of [[D-IV2FROBTWIST]]. Since Frobenius is the identity on the underlying topological space and on the underlying scheme is an isomorphism, $X \cong Y$ as schemes, and the genus, computed from $\dim_k H^1(\OO)$ on that one scheme, cannot move.
+A purely inseparable extension of degree $p^n$ of a function field of transcendence degree $1$ over a perfect field is therefore $k(X) \subseteq k(X)^{1/p^n}$ up to isomorphism, and that inclusion is exactly the one realised by the $n$-fold Frobenius of [[D-IV2FROBTWIST]]. The source of the $k$-linear Frobenius $X_p \to X$ is $X$ itself with its structure morphism composed with the Frobenius of $\Spec k$, so $X \cong Y$ as schemes, and the genus, computed from $\dim_k H^1(\OO)$ on that one scheme, cannot move.
+The Frobenius morphism itself is a homeomorphism but not an isomorphism of schemes: on $\Spec k[t]$ it is given by $t \mapsto t^p$, and $k[t] \to k[t]$, $f \mapsto f^p$, is not surjective.
 
 The isomorphism is of schemes, not of $k$-schemes, and that distinction is the whole content.
 What changes under the twist is the $k$-structure, not the space and not the sheaf of rings up to isomorphism, so every invariant computed after forgetting $k$ is preserved and the morphism is still not an isomorphism over $k$ and still has degree $p^n$.

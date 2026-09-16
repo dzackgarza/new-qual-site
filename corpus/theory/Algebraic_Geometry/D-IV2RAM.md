@@ -35,6 +35,15 @@ the valuation at $p$ of the pulled-back uniformizer.
 $f$ is **ramified** at $p$ if $e_p > 1$ and **unramified** there if $e_p = 1$; the image $q$ of a ramification point is a **branch point**.
 :::
 
+::: {.definition title="Pullback of divisors"}
+For $f : X \to Y$ a finite morphism of nonsingular curves, $f^* : \operatorname{Div} Y \to \operatorname{Div} X$ is the homomorphism with
+\[
+f^* q = \sum_{p \in f^{-1}(q)} e_p \, p .
+\]
+It preserves linear equivalence and satisfies $f^* \mcl(D) \cong \mcl(f^* D)$, so it induces $f^* : \Pic Y \to \Pic X$, and $\deg f^* D = \deg f \cdot \deg D$.
+[@Har10a, §IV.2, Proposition II.6.9, Exercise II.6.8]
+:::
+
 ::: {.definition title="Ramification divisor and branch locus"}
 For $f \colon X \to Y$ a finite separable morphism of smooth projective curves, the \dfn{ramification divisor} is
 \[
