@@ -15,5 +15,9 @@ review: draft
 ---
 
 ::: {.theorem}
-A metric space $X$ is sequentially compact iff it is complete and totally bounded.
+A metric space $X$ is sequentially compact if and only if it is complete and [[FF-VWKGM|totally bounded]].
+:::
+
+::: {.remark}
+For metric spaces, sequential compactness is equivalent to compactness [@Mun00, Theorem 28.2], and compactness is equivalent to being complete and totally bounded [@Mun00, Theorem 45.1].
 :::
