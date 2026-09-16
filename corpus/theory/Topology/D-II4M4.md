@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-II4M4
 kind: definition
-title: Cone
+title: Cone on a space
 classification:
   areas:
   - topology
@@ -14,14 +14,23 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-For a space $X$, defined as
-\[  
-CX = \frac{X\cross I} {X \cross \theset{0}}
-.\]
-Example: The cone on the circle $CS^1$ 
+::: {.definition}
+Let $X$ be a topological space and $I = [0,1]$.
+The \dfn{cone} on $X$ is the quotient space
+$$
+CX\coloneqq(X\times I)/(X\times\ts{0}),
+$$
+in which $X\times\ts{0}$ is collapsed to a point.
+:::
 
-<!--![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cone.svg/250px-Cone.svg.png)-->
+::: {.proposition}
+If $X$ is nonempty, then $CX$ is [[D-K43GA|contractible]], and $x\mapsto[(x, 1)]$ is an embedding of $X$ into $CX$.
+:::
 
-Note that the cone embeds $X$ in a contractible space $CX$.
+::: {.example}
+The cone $CS^1$ on the circle is homeomorphic to the closed disk $D^2$, by $[(z, t)]\mapsto tz$ for $z\in S^1\subseteq\CC$ and $t\in I$.
+:::
+
+::: {.concept}
+See [@Hat02, p. 9].
 :::
