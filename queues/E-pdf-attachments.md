@@ -133,7 +133,7 @@ External links that are not vendored remain on the resource pages until a delibe
   All twenty source positions are represented in order by nineteen new source-local cards plus exact canonical reuse of `P-BKF78-18` for Problem 4. The identified local Flash defects are recorded in provenance and on affected source-checked cards.
   The inventory's `8 problems`, `algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall86.pdf](assets/attachments/Fall86_extracted.md) (125L, 20 problems) — Berkeley — prelim — Fall 1986 **BLOCKED 2026-09-14: deterministic MinerU Flash extraction succeeded and is byte-identical to the retained extraction, but Problem 5's defining $2\times2$ matrix is garbled beyond deterministic recovery and no exact repository duplicate was found.
+- [x] [Fall86.pdf](assets/attachments/Fall86_extracted.md) (125L, 20 problems) — Berkeley — prelim — Fall 1986 — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19`, which recovers Problem 5's matrix $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ that MinerU Flash garbled. `SRC-BERKELEY-PRELIM-FALL-1986` lists all twenty problems in source order; Problems 4 and 15 reuse `P-BKF13-4A` and `P-AA27R`, and the other eighteen are `P-BKF86-*`.
   No alternate parser/OCR/model-vision fallback used.
   Problems 4 and 15 are known exact reuses of `P-BKF13-4A` and `P-AA27R`; the source remains open until Problem 5 can be recovered.**
 
