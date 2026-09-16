@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $(X,\mcm)$ be a measurable space [@Fol13, §2.1].
+Let $(X,\mcm)$ be a measurable space [@Fol13].
 
 (a) If $f,g\colon X\to\RR$ are [[D-DHFN4|measurable]], then $f+g$, $fg$, $\max(f,g)$, and $\min(f,g)$ are measurable.
 

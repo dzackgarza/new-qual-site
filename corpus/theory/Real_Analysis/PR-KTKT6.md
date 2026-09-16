@@ -16,5 +16,5 @@ review: draft
 
 ::: {.proposition}
 Let $(X,\mcm)$ be a measurable space and let $f\colon X\to\CC$ be [[D-DHFN4|measurable]].
-There is a sequence $(\phi_n)$ of simple functions such that $0\leq\abs{\phi_1}\leq\abs{\phi_2}\leq\cdots\leq\abs{f}$, $\phi_n\to f$ pointwise on $X$, and $\phi_n\to f$ uniformly on every set on which $f$ is bounded [@Fol13, Theorem 2.10].
+There is a sequence $(\phi_n)$ of simple functions such that $0\leq\abs{\phi_1}\leq\abs{\phi_2}\leq\cdots\leq\abs{f}$, $\phi_n\to f$ pointwise on $X$, and $\phi_n\to f$ uniformly on every set on which $f$ is bounded [@Fol13].
 :::

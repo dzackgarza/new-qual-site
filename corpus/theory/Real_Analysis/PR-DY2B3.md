@@ -17,7 +17,7 @@ review: draft
 Use the [[D-5LZQ4|Fourier transform]] $\widehat f(\xi)=\int_{\RR^n} f(x)e^{-2\pi i x\cdot\xi}\,dx$ on $L^1(\RR^n)$.
 For $h\in\RR^n$ and a function $g$ on $\RR^n$, let $\tau_h g$ be the translate $(\tau_h g)(x)\coloneqq g(x+h)$.
 Let $f,g\in L^1(\RR^n)$, $h\in\RR^n$, and $T\in\GL_n(\RR)$.
-Then for every $\xi\in\RR^n$ [@Fol13, Theorem 8.22]:
+Then for every $\xi\in\RR^n$ [@Fol13]:
 
 (a) $\widehat{f * g}(\xi) = \widehat f(\xi)\,\widehat g(\xi)$, where $f*g$ is the [[D-TS42Y|convolution]];
 

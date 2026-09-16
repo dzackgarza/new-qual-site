@@ -20,5 +20,5 @@ Then
 $$
 \int_X \sum_{n=1}^\infty f_n\dmu = \sum_{n=1}^\infty\int_X f_n\dmu
 $$
-in $[0,\infty]$ [@Fol13, Theorem 2.15].
+in $[0,\infty]$ [@Fol13].
 :::

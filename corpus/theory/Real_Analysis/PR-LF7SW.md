@@ -13,7 +13,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $m_*$ be Lebesgue [[D-3XE77|outer measure]] on $\RR^n$ [@SS05, Chapter 1, Section 2].
+Let $m_*$ be Lebesgue [[D-3XE77|outer measure]] on $\RR^n$ [@SS05].
 
 (a) If $E\subseteq F\subseteq\RR^n$, then $m_*(E) \leq m_*(F)$.
 

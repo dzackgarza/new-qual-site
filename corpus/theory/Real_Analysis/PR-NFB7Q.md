@@ -16,7 +16,7 @@ review: draft
 
 ::: {.proposition}
 Let $1\leq p<\infty$ and $n\geq1$.
-Each of the following subspaces is [[D-KJBAK|dense]] in $L^p(\RR^n)$ [@Fol13, §6.1, §7.1, §8.2]:
+Each of the following subspaces is [[D-KJBAK|dense]] in $L^p(\RR^n)$ [@Fol13]:
 
 (a) simple functions $\sum_{j=1}^k a_j\chi_{E_j}$ with $a_j\in\CC$ and $E_j$ [[D-MDJII|Lebesgue measurable]] of finite measure;
 

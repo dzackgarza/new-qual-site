@@ -17,7 +17,7 @@ review: draft
 ::: {.proposition}
 For $h\in\RR^n$ and $f\colon\RR^n\to\CC$, let $(\tau_h f)(x)\coloneqq f(x-h)$.
 
-(a) If $1\leq p<\infty$ and $f\in L^p(\RR^n)$, then $\norm{\tau_h f-f}_{L^p}\to0$ as $h\to0$ [@Fol13, Proposition 8.5].
+(a) If $1\leq p<\infty$ and $f\in L^p(\RR^n)$, then $\norm{\tau_h f-f}_{L^p}\to0$ as $h\to0$ [@Fol13].
 
 (b) A function $f\colon\RR^n\to\CC$ is [[D-WGYSB|uniformly continuous]] if and only if $\sup_{x\in\RR^n}\abs{f(x-h)-f(x)}\to0$ as $h\to0$.
 :::

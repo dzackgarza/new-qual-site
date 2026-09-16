@@ -19,7 +19,7 @@ Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and let $f, f_n\in L^1(\mu)$ f
 
 (a) If $\norm{f_n-f}_1\to0$, then $\norm{f_n}_1\to\norm{f}_1$.
 
-(b) If $f_n\to f$ $\mu$-almost everywhere and $\norm{f_n}_1\to\norm{f}_1$, then $\norm{f_n-f}_1\to0$ [@Fol13, §2.3].
+(b) If $f_n\to f$ $\mu$-almost everywhere and $\norm{f_n}_1\to\norm{f}_1$, then $\norm{f_n-f}_1\to0$ [@Fol13].
 :::
 
 ::: {.example}

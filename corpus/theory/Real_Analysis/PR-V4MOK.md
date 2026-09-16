@@ -22,5 +22,5 @@ Then $F$ is differentiable on $I$ and
 $$
 F'(t) = \int_X \frac{\partial f}{\partial t}(x, t) \dmu(x)
 $$
-[@Fol13, Theorem 2.27].
+[@Fol13].
 :::

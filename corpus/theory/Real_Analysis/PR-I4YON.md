@@ -16,7 +16,7 @@ review: draft
 ::: {.proposition}
 (a) Every open set $U\subseteq\RR$ is a union of countably many pairwise disjoint open intervals, possibly unbounded, and these intervals are uniquely determined by $U$: they are the connected components of $U$.
 
-(b) For $n\geq1$, every open set $U\subseteq\RR^n$ is a union of countably many pairwise [[FD-5T3HX|almost disjoint]] closed cubes [@SS05, Chapter 1, Theorems 1.3 and 1.4].
+(b) For $n\geq1$, every open set $U\subseteq\RR^n$ is a union of countably many pairwise [[FD-5T3HX|almost disjoint]] closed cubes [@SS05].
 :::
 
 ::: {.remark}

@@ -20,5 +20,5 @@ Then the map
 $$
 \kappa\colon L^q(\mu) \to L^p(\mu)^*, \qquad g \mapsto \Big(f \mapsto \int_X f g \dmu\Big),
 $$
-is an isometric isomorphism of Banach spaces onto the space $L^p(\mu)^*$ of bounded linear functionals with the [[D-T4LOC|dual norm]] [@Fol13, Theorem 6.15].
+is an isometric isomorphism of Banach spaces onto the space $L^p(\mu)^*$ of bounded linear functionals with the [[D-T4LOC|dual norm]] [@Fol13].
 :::

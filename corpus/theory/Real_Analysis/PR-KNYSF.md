@@ -21,7 +21,7 @@ Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and let $f, f_n\in L^1(\mu)$ f
 
 (a) If $\int_X\abs{f_n-f}\dmu\to0$, then $\int_X\abs{f_n}\dmu\to\int_X\abs{f}\dmu$.
 
-(b) If $f_n\to f$ $\mu$-almost everywhere and $\int_X\abs{f_n}\dmu\to\int_X\abs{f}\dmu$, then $\int_X\abs{f_n-f}\dmu\to0$ [@Fol13, §2.3].
+(b) If $f_n\to f$ $\mu$-almost everywhere and $\int_X\abs{f_n}\dmu\to\int_X\abs{f}\dmu$, then $\int_X\abs{f_n-f}\dmu\to0$ [@Fol13].
 :::
 
 ::: {.example}

@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and let $E_n\in\mcm$ for $n\geq1$ [@Fol13, Theorem 1.8].
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and let $E_n\in\mcm$ for $n\geq1$ [@Fol13].
 
 (a) If $E_1\subseteq E_2\subseteq\cdots$ and $E\coloneqq\bigcup_{n\geq1}E_n$, then $\mu(E_n)\to\mu(E)$.
 
