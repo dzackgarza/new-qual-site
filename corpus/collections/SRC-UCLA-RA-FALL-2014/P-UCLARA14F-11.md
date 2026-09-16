@@ -17,11 +17,11 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: Retranscribed the font-garbled statement in LaTeX from Problem 11 of the Fall 2014 section, page 74 of UCLA_Solutions.pdf, with its checked-in extraction.
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 11 on page 2 of the official analysis-14F.pdf exam, checked against the Fall 2014 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Let $\Omega \subseteq \mathbb{C}$ be open, bounded, and simply connected. Let $u$ be harmonic in $\Omega$ and assume that $u \geq 0$. Show the following: for each compact set $K \subseteq \Omega$, there exists a constant $C_K > 0$ such that
+Let $\Omega \subset \mathbb{C}$ be open, bounded, and simply connected. Let $u$ be harmonic in $\Omega$ and assume that $u \geq 0$. Show the following: for each compact set $K \subset \Omega$, there exists a constant $C_K > 0$ such that
 \[
 \sup_{x \in K} u(x) \leq C_K \inf_{x \in K} u(x).
 \]

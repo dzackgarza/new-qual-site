@@ -17,9 +17,9 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: Retranscribed the font-garbled statement in LaTeX from Problem 12 of the Fall 2014 section, page 75 of UCLA_Solutions.pdf, with its checked-in extraction.
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 12 on page 2 of the official analysis-14F.pdf exam, checked against the Fall 2014 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Let $\Omega = \{ z \in \mathbb{C} : |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \mathbb{R}$ is bounded and continuous on $\overline{\Omega}$ and subharmonic on $\Omega$. Prove the following: if $u(z) \leq 0$ for all $|z| = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
+Let $\Omega = \{ z \in \mathbb{C} ; |z| > 1 \}$. Suppose $u : \overline{\Omega} \to \mathbb{R}$ is bounded and continuous on $\overline{\Omega}$ and that it is subharmonic on $\Omega$. Prove the following: If $u(z) \leq 0$ for all $|z| = 1$ then $u(z) \leq 0$ for all $z \in \Omega$.
 :::

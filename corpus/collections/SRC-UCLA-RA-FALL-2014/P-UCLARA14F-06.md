@@ -17,9 +17,9 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: Retranscribed the font-garbled statement in LaTeX from Problem 6 of the Fall 2014 section, page 72 of UCLA_Solutions.pdf, with its checked-in extraction.
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 6 on page 1 of the official analysis-14F.pdf exam, checked against the Fall 2014 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Let $X$ be a Banach space and let $X^*$ be its dual space. Suppose $X^*$ is separable; show that $X$ is separable (you should assume the Axiom of Choice).
+Let $X$ be a Banach space and $X^*$ its dual space. Suppose $X^*$ is separable (i.e. has a countable dense set); show that $X$ is separable. (You should assume the Axiom of Choice.)
 :::

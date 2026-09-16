@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: Retranscribed the font-garbled statement in LaTeX from Problem 4 of the Fall 2014 section, page 70 of UCLA_Solutions.pdf, with its checked-in extraction.
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 4 on page 1 of the official analysis-14F.pdf exam, checked against the Fall 2014 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}

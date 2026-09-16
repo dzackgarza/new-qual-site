@@ -17,9 +17,9 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: Retranscribed the font-garbled statement in LaTeX from Problem 9 of the Fall 2014 section, page 73 of UCLA_Solutions.pdf, with its checked-in extraction.
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 9 on page 2 of the official analysis-14F.pdf exam, checked against the Fall 2014 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Let $\Omega \subseteq \mathbb{C}$ be open and connected. Suppose $(f_n)$ is a sequence of injective holomorphic functions defined on $\Omega$ such that $f_n \to f$ locally uniformly in $\Omega$. Show that if $f$ is not constant, then $f$ is also injective in $\Omega$.
+Let $\Omega \subset \mathbb{C}$ be open and connected. Suppose $(f_n)$ is a sequence of injective holomorphic functions defined on $\Omega$, such that $f_n \to f$ locally uniformly in $\Omega$. Show that if $f$ is not constant, then $f$ is also injective in $\Omega$.
 :::

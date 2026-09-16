@@ -17,13 +17,13 @@ audit:
 - event: source-checked
   by: claude-opus-5
   date: 2026-09-16
-  note: Retranscribed the font-garbled statement in LaTeX from Problem 7 of the Fall 2014 section, page 72 of UCLA_Solutions.pdf, with its checked-in extraction.
+  note: Retranscribed the font-garbled statement in LaTeX from Problem 7 on page 1 of the official analysis-14F.pdf exam, checked against the Fall 2014 section of UCLA_Solutions.pdf.
 ---
 
 ::: {.problem}
-Find an explicit conformal mapping from the upper half plane slit along the vertical segment
+Find an explicit conformal mapping from the upper half-plane slit along the vertical segment,
 \[
-\{ z \in \mathbb{C} : \operatorname{Im}(z) > 0 \} \setminus (0, 0 + ih], \quad h > 0
+\{ z \in \mathbb{C} ; \operatorname{Im} z > 0 \} \setminus (0, 0 + ih], \quad h > 0,
 \]
-to the unit disk.
+to the unit disc $\{ z \in \mathbb{C} ; |z| < 1 \}$.
 :::
