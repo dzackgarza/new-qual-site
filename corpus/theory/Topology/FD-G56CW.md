@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-G56CW
 kind: definition
-title: Normal Space
+title: Normal space
 prompts:
 - What does it mean for a space to be normal?
 classification:
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **normal** iff every two disjoint closed sets have disjoint open neighborhoods.
+A topological space $X$ is \dfn{normal} if for all disjoint [[D-UI7ZL|closed]] subsets $A, B\subseteq X$ there exist disjoint open sets $U, V\subseteq X$ with $A\subseteq U$ and $B\subseteq V$.
 :::
