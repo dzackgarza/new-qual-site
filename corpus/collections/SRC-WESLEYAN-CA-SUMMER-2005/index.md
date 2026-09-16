@@ -47,7 +47,3 @@ source:
   - id: P-WESCA05-II5
     comment: Section 2, problem 5
 ---
-
-::: remark
-All thirteen numbered source positions are represented in source order.
-:::
