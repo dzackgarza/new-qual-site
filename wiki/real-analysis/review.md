@@ -5,6 +5,9 @@ order: 7
 
 # Review sheet
 
+The theorem statements of the real analysis chapters, grouped by chapter.
+Each section links to the chapter containing the proofs.
+
 ## Measure
 
 [[T-7LQ7X]]
@@ -103,6 +106,7 @@ Proved in [[real-analysis/functional-analysis/index|Functional analysis]].
 
 Proved in [[real-analysis/undergraduate/index|Undergraduate analysis]].
 
-## What to check before using each one
+## Hypotheses and counterexamples
 
-The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[real-analysis/counterexamples|Counterexamples]].
+[[real-analysis/integration/which-convergence-theorem|Which convergence theorem?]], [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]], and [[real-analysis/lp-spaces/which-inequality|Which inequality?]] compare the hypotheses of these theorems.
+[[real-analysis/counterexamples|Counterexamples]] gives, for each hypothesis, an example showing that the theorem fails without it.
