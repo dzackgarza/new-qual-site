@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-SW76G
 kind: definition
-title: Semilocally Simply Connected
+title: Semilocally simply connected space
 prompts:
 - What does it mean for a space to be semilocally simply connected?
 classification:
@@ -16,5 +16,9 @@ review: draft
 ---
 
 ::: {.definition}
-Every point admits a neighborhood $U$ such that $\pi_1(U) = 0$.
+A topological space $X$ is \dfn{semilocally simply connected} if every $x\in X$ has a [[D-JMRPA|neighborhood]] $U$ such that the homomorphism $\pi_1(U, x)\to\pi_1(X, x)$ of [[D-EBNUE|fundamental groups]] induced by the inclusion $U\injects X$ is trivial.
+:::
+
+::: {.concept}
+[@Hat02, §1.3, p. 63].
 :::
