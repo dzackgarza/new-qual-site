@@ -20,21 +20,64 @@ Find $( I _ { n } + \sigma J _ { n } ) ^ { - 1 }$ for such σ.
 :::
 
 ::: {.solution}
-Note that regardless of σ 1 is an eigenvalue of $I _ { n } + \sigma J _ { n }$ of multiplicity at least $n - 1$ since $\left( I _ { n } + \sigma J _ { n } \right) - 1 \cdot I _ { n } = \sigma J _ { n }$ has rank 1. Next, note that $\vec { \bf 1 } = ( 1 , 1 , \dots , 1 ) ^ { t }$ satisfies
+<1>1. The all-ones matrix satisfies
+$$
+J_n^2=nJ_n.
+$$
+::: {.proof}
+Every entry of $J_n^2$ is the sum of $n$ products $1\cdot1$, hence equals $n$.
+:::
 
+<1>2. If $\sigma=-1/n$, then $I_n+\sigma J_n$ is not invertible.
+::: {.proof}
+Let
 $$
-( I _ { n } + \sigma J _ { n } ) \vec { \bf 1 } = ( 1 + \sigma n ) \vec { \bf 1 } ,
+\mathbf 1=(1,\dots,1)^T.
 $$
+Since
+$$
+J_n\mathbf1=n\mathbf1,
+$$
+we have
+$$
+\left(I_n-\frac1nJ_n\right)\mathbf1=0.
+$$
+Thus the matrix has a nonzero kernel vector.
+:::
 
-so the other eigenvalue is $1 + \sigma n$ . Thus the matrix is invertible unless $\sigma = - 1 / n$ . To find the inverse, consider
+<1>3. If $\sigma\ne-1/n$, then
+$$
+\boxed{
+(I_n+\sigma J_n)^{-1}
+=I_n-\frac{\sigma}{1+n\sigma}J_n.
+}
+$$
+::: {.proof}
+For any scalar $\tau$, step <1>1 gives
+$$
+\begin{aligned}
+(I_n+\sigma J_n)(I_n+\tau J_n)
+&=I_n+(\sigma+\tau)J_n+\sigma\tau J_n^2\\
+&=I_n+(\sigma+\tau+n\sigma\tau)J_n.
+\end{aligned}
+$$
+If $1+n\sigma\ne0$, take
+$$
+\tau=-\frac{\sigma}{1+n\sigma}.
+$$
+Then $\sigma+\tau+n\sigma\tau=0$, so the product is $I_n$. The two factors commute because both are polynomials in $J_n$, hence the displayed matrix is a two-sided inverse.
+:::
 
+<1>4. Therefore $I_n+\sigma J_n$ is invertible exactly when
 $$
-( I _ { n } + \sigma J _ { n } ) ( I _ { n } + \tau J _ { n } ) = I _ { n } + ( \sigma + \tau + n \sigma \tau ) J _ { n } .
+\boxed{\sigma\ne-\frac1n}.
 $$
+::: {.proof}
+Step <1>2 gives noninvertibility at $-1/n$, while step <1>3 gives an explicit inverse for every other $\sigma$.
+:::
 
-If $\sigma \neq - 1 / n _ { \colon }$ , we can take $\textstyle \tau = - { \frac { \sigma } { 1 + n \sigma } }$ to see that
-
-$$
-\boxed { ( I _ { n } + \sigma J _ { n } ) ^ { - 1 } = I _ { n } - \frac { \sigma } { 1 + n \sigma } J _ { n } . }
-$$
+<1>5. Q.E.D.
+::: {.proof}
+Steps <1>3--<1>4 give both requested answers.
+:::
 :::
