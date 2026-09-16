@@ -47,7 +47,3 @@ source:
   - id: P-WESCA04-P7
     comment: Section 1.3, problem 7
 ---
-
-::: remark
-Problem 6 is the exact entire-function modulus-divisibility statement already owned by `P-JHUU45CA1` (with the two function names interchanged), so this source occurrence reuses that card.
-:::
