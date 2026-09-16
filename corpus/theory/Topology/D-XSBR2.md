@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-XSBR2
 kind: definition
-title: Direct Product
+title: Direct product of modules
 classification:
   areas:
   - topology
@@ -14,15 +14,23 @@ review: draft
 ---
 
 ::: {.definition}
-For a family of $R\dash$modules $\ts{M_\alpha}$, the **direct product** is
-\[
-\prod_\alpha M_\alpha \da \ts{ (m_\alpha) \st m_\alpha \in M_\alpha }
-\]
-with componentwise operations, equipped with the projections $\pi_\beta$.
-It is the categorical product: a map $N\to \prod_\alpha M_\alpha$ is the same as a family of maps $N\to M_\alpha$.
-In $\Top$ the corresponding object carries the product topology.
+Let $R$ be a ring and $(M_\alpha)_{\alpha\in A}$ a family of left $R$-modules.
+The \dfn{direct product} of the family is the set
+$$
+\prod_{\alpha\in A} M_\alpha \coloneqq \ts{ (m_\alpha)_{\alpha\in A} \st m_\alpha \in M_\alpha \text{ for all } \alpha\in A }
+$$
+with componentwise addition and scalar multiplication, together with the projections $\pi_\beta\colon\prod_{\alpha\in A} M_\alpha\to M_\beta$, $(m_\alpha)_{\alpha\in A}\mapsto m_\beta$, for $\beta\in A$.
+:::
+
+::: {.proposition}
+For every left $R$-module $N$ and every family of $R$-linear maps $f_\beta\colon N\to M_\beta$, $\beta\in A$, there is a unique $R$-linear map $f\colon N\to \prod_{\alpha\in A} M_\alpha$ with $\pi_\beta\circ f = f_\beta$ for all $\beta\in A$, namely $f(n) = (f_\alpha(n))_{\alpha\in A}$.
+Thus $\prod_{\alpha\in A} M_\alpha$ is the categorical product of the family in the category of left $R$-modules.
+:::
+
+::: {.example}
+In $\Top$, the categorical product of a family of spaces $(X_\alpha)_{\alpha\in A}$ is the set $\prod_{\alpha\in A} X_\alpha$ with the [[D-JKH35|product topology]], the coarsest topology for which every projection $\pi_\beta$ is continuous.
 :::
 
 ::: {.concept}
-See Dummit and Foote, §10.3; Hatcher, §4.H, p. 461.
+[@DF04, §10.3]; [@Hat02, §4.H, p. 461].
 :::
