@@ -2,40 +2,40 @@
 order: 52
 ---
 
-# Analytic Number Theory Faves
+# Summation by parts and Abel's theorem
+
+[[PR-2MTPE]]
+
+::: {.proof}
+Let $A_n \coloneqq \sum_{k\leq n} a_k$, so that $a_k = A_k - A_{k-1}$.
+Reindexing the second sum and separating its boundary terms,
+$$
+\begin{aligned}
+\sum_{m\leq k \leq n} a_k b_k
+&= \sum_{m\leq k \leq n} (A_k - A_{k-1}) b_k \\
+&= \sum_{m\leq k \leq n} A_kb_k - \sum_{m-1\leq k \leq n-1} A_{k} b_{k+1} \\
+&= A_nb_n - A_{m-1} b_{m} + \sum_{m\leq k \leq n-1} A_kb_k - \sum_{m\leq k \leq n-1} A_{k} b_{k+1} \\
+&= A_nb_n - A_{m-1} b_{m} - \sum_{m\leq k \leq n-1} A_k(b_{k+1} - b_{k}).
+\end{aligned}
+$$
+
+:::
 
 [[L-EAZX6]]
 
-:::{.proof}
-
-> See [Davidson's notes on Abel's theorem (Waterloo)](http://www.math.uwaterloo.ca/~krdavids/Comp/Abel.pdf).
-
-Use summation by parts.
-For a fixed $\sum a_k b_k$, write 
-\[
-\sum_{n=1}^m x_n Y_n + \sum_{n=1}^m X_n y_{n+1} = X_m Y_{m+1}
-.\]
-Set $x_n \da a_n, y_N \da b_n - b_{n-1}$, so $X_n = A_n$ and $Y_n = b_n$ as a telescoping sum.
-Importantly, all $y_n$ are negative, so $\abs{y_n} = \abs{b_n - b_{n-1}} = b_{n-1} - b_n$, and moreover $a_n b_n = x_n Y_n$ for all $n$.
-We have
-\[
-\sum_{n\geq 1} a_n b_n 
-&= \lim_{N\to\infty} \sum_{n\leq N} x_n Y_n \\
-&= \lim_{N\to\infty} \sum_{n\leq N} X_N Y_N - \sum_{n\leq N} X_n y_{n+1} \\
-&= - \sum_{n\geq 1} X_n y_{n+1},
-\]
-where in the last step we've used that 
-\[
-\abs{X_N} = \abs{A_N}\leq M \implies \abs{X_N Y_{N} } = \abs{X_N} \abs{b_{n+1}} \leq M b_{n+1} \to 0
-.\]
-So it suffices to bound the latter sum:
-\[
-\sum_{k\geq n}\abs{ X_k y_{k+1} } 
-&\leq M \sum_{k\geq 1} \abs{y_{k+1}}\\
-&\leq M \sum_{k\geq 1} b_{k} - b_{k+1} \\
-&\leq 2M(b_1 - b_{n+1})\\
-&\leq 2M b_1
-.\]
+::: {.proof}
+Let $\abs{A_n}\leq M$ for all $n$, where $A_n \coloneqq \sum_{k\leq n} a_k$ and $A_0 \coloneqq 0$.
+By [[PR-2MTPE|summation by parts]] with $m=1$,
+$$
+\sum_{k=1}^N a_k b_k = A_N b_N + \sum_{k=1}^{N-1} A_k (b_k - b_{k+1}).
+$$
+Since $\abs{A_N b_N}\leq M b_N \to 0$, the first term tends to $0$.
+Since $b_k$ is decreasing, $b_k - b_{k+1}\geq 0$, and
+$$
+\sum_{k=1}^{N-1}\abs{A_k (b_k - b_{k+1})} \leq M\sum_{k=1}^{N-1} (b_k - b_{k+1}) = M(b_1 - b_N) \leq M b_1,
+$$
+so the second sum converges absolutely as $N\to\infty$.
+Hence $\sum_{k\geq 1} a_k b_k$ converges.
 
 :::
 
@@ -43,40 +43,18 @@ So it suffices to bound the latter sum:
 
 [[L-MYZOX]]
 
-:::{.example title="application of Abel's theorem"}
-What is the value of the alternating harmonic series?
-Integrate a geometric series to obtain
-\[
-\sum {(-1)^k z^k \over n} = \log(z+1) && \abs{z} < 1
-.\]
-Since $c_k \da (-1)^k/k \decreasesto 0$, this converges at $z=1$, and by Abel's theorem $f(1) = \log(2)$.
+::: {.example title="The alternating harmonic series"}
+Integrating the geometric series $\sum_{k\geq 0}(-z)^k = 1/(1+z)$ term by term gives
+$$
+\sum_{k\geq 1} {(-1)^{k+1} z^k \over k} = \log(1+z), \qquad \abs{z} < 1.
+$$
+The series converges at $z=1$ by the alternating series test, so [[T-B7YTE|Abel's theorem]] gives $\sum_{k\geq 1}(-1)^{k+1}/k = \lim_{x\to 1^-}\log(1+x) = \log 2$.
 
 :::
 
-:::{.remark}
-The converse to Abel's theorem is false: take $f(z) = \sum  (-z)^n = 1/(1+z)$.
-Then $f(1) = 1-1+1-\cdots$ diverges at 1, but $1/1+1 = 1/2$.
-So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to $s$.
-
-:::
-
-[[PR-2MTPE]]
-
-:::{.proof}
-An inelegant proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum to pattern-match.
-\
-
-Behold:
-\[
-\sum_{m\leq k \leq n} a_k b_k 
-&= \sum_{m\leq k \leq n} (A_k - A_{k-1}) b_k \\
-&= \sum_{m\leq k \leq n} A_kb_k - \sum_{m\leq k \leq n} A_{k-1} b_k \\
-&= \sum_{m\leq k \leq n} A_kb_k - \sum_{m-1\leq k \leq n-1} A_{k} b_{k+1} \\
-&= A_nb_n + \sum_{m\leq k \leq n-1} A_kb_k - \sum_{m-1\leq k \leq n-1} A_{k} b_{k+1} \\
-&= A_nb_n - A_{m-1} b_{m} + \sum_{m\leq k \leq n-1} A_kb_k - \sum_{m\leq k \leq n-1} A_{k} b_{k+1} \\
-&= A_nb_n - A_{m-1} b_{m} + \sum_{m\leq k \leq n-1} A_k(b_k - b_{k+1}) \\
-&= A_nb_n - A_{m-1} b_{m} - \sum_{m\leq k \leq n-1} A_k(b_{k+1} - b_{k}) 
-.\]
+::: {.example title="The converse of Abel's theorem fails"}
+Let $f(z) \coloneqq \sum_{n\geq 0} (-z)^n = 1/(1+z)$ for $\abs z<1$.
+Then $\lim_{x\to 1^-} f(x) = 1/2$, but the series $\sum_{n\geq 0}(-1)^n = 1-1+1-\cdots$ diverges.
 
 :::
 
