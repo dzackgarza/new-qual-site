@@ -2,7 +2,7 @@
 order: 0
 ---
 
-# Topology References
+# Topology references
 
 ## Books
 
@@ -10,19 +10,19 @@ order: 0
 
 - [@CE12] — [vendored PDF](attachments/From%20Stein%20to%20Weinstein%20and%20Back.pdf)
 
-- W. Fulton: Algebraic Topology,
+- W. Fulton, *Algebraic Topology: A First Course*
 
-- E. Spanier: Algebraic Topology,
+- E. Spanier, *Algebraic Topology*
 
-- Greenberg and Harper: Algebraic Topology: A First Course
+- M. Greenberg and J. Harper, *Algebraic Topology: A First Course*
 
 ## Notes
 
 [Mike Usher, Math 8210 Differential Geometry lecture notes, Fall 2011](attachments/Usher%20DG%20Notes.pdf) — smooth-manifold course notes covering coordinate-free tangent vectors and vector fields, partitions of unity, tangent and cotangent bundles, differential forms and exterior differentiation, submanifolds and tubular neighborhoods, flows and Lie derivatives, Cartan's formula, and Moser's method.
 
-[J.J. Duistermaat, *Symplectic Geometry*, Utrecht Spring School 2004](attachments/Symplectic%20Geometry.pdf) — lecture notes on symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton–Jacobi theory. Each of the four chapters ends with an exercise section, but the document is an expository spring-school text rather than a standalone problem sheet.
+[J.J. Duistermaat, *Symplectic Geometry*, Utrecht Spring School 2004](attachments/Symplectic%20Geometry.pdf) — lecture notes on symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton–Jacobi theory. Each of the four chapters ends with an exercise section.
 
-[Robert L. Bryant, *An Introduction to Lie Groups and Symplectic Geometry* (1991 lectures; revised 2018)](attachments/Lie%20Groups%20and%20Sympl.pdf) — nine-lecture Regional Geometry Institute course notes covering symmetry and differential equations, Lie groups and group actions, symmetries and conservation laws, symplectic manifolds, classical and modern reduction, and the Gromov school of symplectic geometry. Exercise Sets 2–9 are integrated into the lecture text, with hints and problems of varying difficulty.
+[Robert L. Bryant, *An Introduction to Lie Groups and Symplectic Geometry* (1991 lectures; revised 2018)](attachments/Lie%20Groups%20and%20Sympl.pdf) — nine-lecture Regional Geometry Institute course notes covering symmetry and differential equations, Lie groups and group actions, symmetries and conservation laws, symplectic manifolds, classical and modern reduction, and the Gromov school of symplectic geometry. Exercise Sets 2–9 are integrated into the lecture text, with hints.
 
 [Cambridge Part II algebraic topology notes](https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf)
 
