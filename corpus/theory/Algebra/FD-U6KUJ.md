@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-U6KUJ
 kind: definition
-title: 'Definition: torsionfree'
+title: Torsion-free module
 prompts:
 - What does it mean for a module to be torsionfree?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-$\tor(M) = \theset{0}$
+Let $R$ be an [[D-QJ3QL|integral domain]] and $M$ an $R$-module.
+$M$ is \dfn{torsion-free} if its [[FD-BPUNZ|torsion submodule]] is zero: $\tor(M) = \theset{0}$.
 :::
