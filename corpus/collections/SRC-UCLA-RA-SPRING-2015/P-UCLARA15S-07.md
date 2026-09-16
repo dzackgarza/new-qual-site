@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-07
 kind: problem
-title: UCLA analysis Spring 2015, Problem 7
+title: Holomorphic maps from the disk to the upper half-plane with $f_n(0)\to0$
 classification:
   areas:
   - real-analysis

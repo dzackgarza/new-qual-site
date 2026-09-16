@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-08
 kind: problem
-title: UCLA analysis Spring 2015, Problem 8
+title: Entire functions of exponential type bounded on the axes are constant
 classification:
   areas:
   - real-analysis

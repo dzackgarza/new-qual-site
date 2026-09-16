@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-05
 kind: problem
-title: UCLA analysis Spring 2015, Problem 5
+title: Plancherel identity for a Gaussian transform
 classification:
   areas:
   - real-analysis

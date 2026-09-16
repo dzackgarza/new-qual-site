@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-02
 kind: problem
-title: UCLA analysis Spring 2015, Problem 2
+title: Dyadic annulus bounds imply $fg\in L^1$
 classification:
   areas:
   - real-analysis

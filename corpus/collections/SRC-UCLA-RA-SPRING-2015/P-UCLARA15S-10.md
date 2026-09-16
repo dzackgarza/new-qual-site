@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-10
 kind: problem
-title: UCLA analysis Spring 2015, Problem 10
+title: Evaluation of $\int_{\mathbb R}\frac{dy}{(1+y^2)(1+(x-y)^2)}$
 classification:
   areas:
   - real-analysis

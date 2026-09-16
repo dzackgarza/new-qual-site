@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-11
 kind: problem
-title: UCLA analysis Spring 2015, Problem 11
+title: Bounded harmonic functions on the punctured disk have harmonic conjugates
 classification:
   areas:
   - real-analysis

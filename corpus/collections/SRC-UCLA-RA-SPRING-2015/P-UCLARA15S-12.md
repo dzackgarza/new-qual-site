@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-12
 kind: problem
-title: UCLA analysis Spring 2015, Problem 12
+title: Entire solutions of $f'^2+f^2=1$
 classification:
   areas:
   - real-analysis

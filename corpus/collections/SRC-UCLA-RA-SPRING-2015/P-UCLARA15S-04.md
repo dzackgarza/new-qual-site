@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-04
 kind: problem
-title: UCLA analysis Spring 2015, Problem 4
+title: Density of translates in $L^1$ of the circle and nonvanishing Fourier coefficients
 classification:
   areas:
   - real-analysis

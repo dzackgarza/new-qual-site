@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-09
 kind: problem
-title: UCLA analysis Spring 2015, Problem 9
+title: Bounded harmonic function in $\{|z|>1,\ \operatorname{Re}z>-2\}$ with constant boundary values
 classification:
   areas:
   - real-analysis

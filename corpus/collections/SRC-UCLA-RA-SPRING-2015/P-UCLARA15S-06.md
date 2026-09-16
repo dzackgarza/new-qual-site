@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-06
 kind: problem
-title: UCLA analysis Spring 2015, Problem 6
+title: Compact operators have separable range
 classification:
   areas:
   - real-analysis

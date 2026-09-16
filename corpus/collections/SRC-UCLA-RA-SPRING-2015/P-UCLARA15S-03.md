@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-03
 kind: problem
-title: UCLA analysis Spring 2015, Problem 3
+title: Refined weak-type bound for the Hardy--Littlewood maximal function
 classification:
   areas:
   - real-analysis

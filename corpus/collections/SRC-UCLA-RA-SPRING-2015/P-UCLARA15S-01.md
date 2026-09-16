@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLARA15S-01
 kind: problem
-title: UCLA analysis Spring 2015, Problem 1
+title: Partition sums $\sum_k\bigl|\int_{k/n}^{(k+1)/n}f\bigr|$ converge to $\|f\|_1$
 classification:
   areas:
   - real-analysis
