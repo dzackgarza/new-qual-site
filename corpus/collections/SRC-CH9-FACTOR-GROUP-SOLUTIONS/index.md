@@ -52,7 +52,6 @@ source:
     kind: unknown
 ---
 
-::: remark
-The retained six-page Chapter 9 solution packet contains 25 sparsely numbered ordinary problems and three team problems.
-Collection membership follows those 28 statements in source order; the worked answers in the PDF are not duplicated into the problem cards.
+::: {.remark}
+A six-page solution packet for Chapter 9 with worked answers to 25 problems, numbered with gaps, and three team problems.
 :::
