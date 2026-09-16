@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-9A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 9A
+title: Generating function of the Catalan numbers
 classification:
   areas:
   - prelim

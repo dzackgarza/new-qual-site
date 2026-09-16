@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-6A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 6A
+title: Exponent of $(\mathbb Z/N\mathbb Z)^\times$ for $N=2^4\cdot 3^3\cdot 5^2\cdot 7$
 classification:
   areas:
   - prelim

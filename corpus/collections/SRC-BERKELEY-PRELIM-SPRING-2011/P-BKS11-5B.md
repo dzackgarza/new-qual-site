@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-5B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 5B
+title: Wallis integrals $\int_0^\pi\sin^n x\,dx$ and the Wallis product
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-8B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 8B
+title: Order of $\operatorname{GL}_n(\mathbb F_p)$ modulo $p$
 classification:
   areas:
   - prelim

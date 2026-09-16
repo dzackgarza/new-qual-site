@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-7B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 7B
+title: Harmonicity of real and imaginary parts; harmonic polynomials of degree 6
 classification:
   areas:
   - prelim

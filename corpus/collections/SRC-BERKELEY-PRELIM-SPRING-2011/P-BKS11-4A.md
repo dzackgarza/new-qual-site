@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-4A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 4A
+title: Linear functionals on $M_n(k)$ with $f(AB)=f(BA)$ are multiples of the trace
 classification:
   areas:
   - prelim

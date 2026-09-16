@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-8A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 8A
+title: Diagonalizability of real, complex, and symmetric matrices
 classification:
   areas:
   - prelim

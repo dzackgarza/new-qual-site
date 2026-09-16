@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-1B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 1B
+title: An open set containing the unit square contains a thickened rectangle
 classification:
   areas:
   - prelim

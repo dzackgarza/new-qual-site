@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-5A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 5A
+title: Smoothness and Taylor series of $e^{-1/x^2}$
 classification:
   areas:
   - prelim

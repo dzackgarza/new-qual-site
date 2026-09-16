@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-7A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 7A
+title: Sum of $\sum r^k\cos(k\theta)$
 classification:
   areas:
   - prelim

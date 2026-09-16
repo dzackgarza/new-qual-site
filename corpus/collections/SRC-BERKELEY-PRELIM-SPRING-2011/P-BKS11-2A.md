@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-2A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 2A
+title: Minimal polynomial of $2\cos(2\pi/7)$ and non-constructibility
 classification:
   areas:
   - prelim

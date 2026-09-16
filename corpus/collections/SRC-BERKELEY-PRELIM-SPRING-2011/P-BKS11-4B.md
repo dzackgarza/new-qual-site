@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-4B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 4B
+title: Convergence of the matrix series $\sum x^nA^n$
 classification:
   areas:
   - prelim

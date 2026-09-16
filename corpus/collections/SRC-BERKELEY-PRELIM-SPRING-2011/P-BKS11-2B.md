@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-2B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 2B
+title: Cayley's theorem with even permutations
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-3B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 3B
+title: Infinitely many solutions of $e^z=z$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-1A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 1A
+title: Path-connected spaces are connected; the topologist's sine curve
 classification:
   areas:
   - prelim

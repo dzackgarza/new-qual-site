@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-3A
 kind: problem
-title: Berkeley Spring 2011 prelim problem 3A
+title: Evaluation of $\int_0^\infty dx/(x^4+1)$ by residues
 classification:
   areas:
   - prelim

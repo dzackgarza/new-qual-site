@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS11-9B
 kind: problem
-title: Berkeley Spring 2011 prelim problem 9B
+title: 'Interchanging limits: integrals, double series, and pointwise limits'
 classification:
   areas:
   - prelim
