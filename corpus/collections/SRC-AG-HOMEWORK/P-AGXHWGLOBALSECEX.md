@@ -26,7 +26,20 @@ is left exact, but need not be exact.
 We are given exactness of
 \[
 \xi: 0 \to \mcf_1 \xrightarrow{f} \mcf_2 \xrightarrow{g} \mcf_3 \to 0
-.\]
+,\]
+where a morphism such as $f$ is data of the form
+
+\begin{tikzcd}
+	U & {\mcf_1(U)} & {\mcf_2(U)} \\
+	V & {\mcf_1(V)} & {\mcf_2(V)}
+	\arrow[""{name=0, anchor=center, inner sep=0}, "{\iota_{UV}}", hook, from=2-1, to=1-1]
+	\arrow[""{name=1, anchor=center, inner sep=0}, "{\Res_1(U, V)}", from=1-2, to=2-2]
+	\arrow["{\Res_2(U, V)}", from=1-3, to=2-3]
+	\arrow["{f_U}", from=1-2, to=1-3]
+	\arrow["{f_V}"', from=2-2, to=2-3]
+	\arrow["f", shorten <=12pt, shorten >=12pt, from=0, to=1]
+\end{tikzcd}
+
 Applying $\Gamma(X; {-})$, we want to show exactness of
 \[
 \xi_X: 0 \to \mcf_1(X) \xrightarrow{f_X} \mcf_2(X) \xrightarrow{g_X} \mcf_3(X) \to \cdots
@@ -47,7 +60,30 @@ Applying $\Gamma(X; {-})$, we want to show exactness of
   This does not work for the cokernel sheaf, since the image presheaf needs to be sheafified.
 
 Alternatively, a direct argument that $f_X$ is injective.
-A fact we need: $\xi$ is exact iff it is exact on stalks, so there are commutative squares for all $p\in X$.
+A fact we need: $\xi$ is exact iff it is exact on stalks, so there are commutative squares for all $p\in X$:
+
+\begin{tikzcd}
+	{\xi:} & 0 & {\mcf_1} & {\mcf_2} & {\mcf_3} & 0 \\
+	{\xi_X:} & {?} & {\mcf_1(X)} & {\mcf_2(X)} & {\mcf_3(X)} & {?} \\
+	{\xi_p:} & 0 & {(\mcf_1)_p} & {(\mcf_2)_p} & {(\mcf_3)_p} & 0
+	\arrow[from=1-2, to=1-3]
+	\arrow["f", hook, from=1-3, to=1-4]
+	\arrow["g", two heads, from=1-4, to=1-5]
+	\arrow[from=1-5, to=1-6]
+	\arrow["{\Gamma(X;\wait)}", Rightarrow, from=1-4, to=2-4]
+	\arrow[from=2-2, to=2-3]
+	\arrow["{f_X}", from=2-3, to=2-4]
+	\arrow["{g_X}", from=2-4, to=2-5]
+	\arrow[from=2-5, to=2-6]
+	\arrow["{\Res_1(X, p)}", from=2-3, to=3-3]
+	\arrow["{\Res_2(X, p)}", from=2-4, to=3-4]
+	\arrow["{\Res_3(X, p)}", from=2-5, to=3-5]
+	\arrow[from=3-2, to=3-3]
+	\arrow["{f_p}"', hook, from=3-3, to=3-4]
+	\arrow["{g_p}"', two heads, from=3-4, to=3-5]
+	\arrow[from=3-5, to=3-6]
+\end{tikzcd}
+
 
 - Write the kernel out:
 \[
@@ -76,6 +112,28 @@ which holds for all $p$.
 **Exactness at $\mcf_2(X)$**:
 
 - We want $\ker g_X = \im f_X$. First show $\im f_X \subseteq \ker g_X$, and let $s \in \im f_X \subseteq \mcf_2(X)$.
+- A small diagram chase:
+
+\begin{tikzcd}
+	& {\color{rgb,255:red,92;green,92;blue,214}f_X\inv(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \da g_X(s)} \\
+	0 & {\mcf_1(X)} & {\mcf_2(X)} & {\mcf_3(X)} & {?} \\
+	0 & {(\mcf_1)_p} & {(\mcf_2)_p} & {(\mcf_3)_p} \\
+	& {\color{rgb,255:red,92;green,92;blue,214}\mcf_1\mid^U_p(f_X\inv(s))} & {\color{rgb,255:red,92;green,92;blue,214}t \da \mcf_2\mid^U_p(s)} & 0
+	\arrow[from=2-1, to=2-2]
+	\arrow["{f_X}", from=2-2, to=2-3]
+	\arrow["{g_X}", from=2-3, to=2-4]
+	\arrow[from=2-4, to=2-5]
+	\arrow["{\mcf_1\mid^U_p}" description, from=2-2, to=3-2]
+	\arrow["{\mcf_2\mid^U_p}" description, from=2-3, to=3-3]
+	\arrow["{\mcf_3\mid^U_p}", from=2-4, to=3-4]
+	\arrow[from=3-1, to=3-2]
+	\arrow["{f_p}"', from=3-2, to=3-3]
+	\arrow["{g_p}"', from=3-3, to=3-4]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, dashed, maps to, from=1-2, to=1-3]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=-30pt}, dotted, maps to, from=1-3, to=4-3]
+	\arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=18pt}, dotted, maps to, from=1-2, to=4-3]
+\end{tikzcd}
+
 - Push $s$ into $(\mcf_2)_p$ and pull back to $f_X^{-1}(s) \in \mcf_1(X)$; by commutativity the former lies in $\im f_p$, so
 \[
 \mcf_2\mid^X_p(s) \in \im f_p = \ker g_p

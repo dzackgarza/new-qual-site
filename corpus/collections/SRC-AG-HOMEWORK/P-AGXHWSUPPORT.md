@@ -37,7 +37,15 @@ Show that $\supp s$ is closed in $U$ but $\supp \mcf$ need not be closed in $X$.
 
 **$\supp(\mcf)$ is not closed**:
 
-- Take the skyscraper sheaf: take the constant sheaf on a point $q\in X$, then push it forward along the inclusion $q\injects X$.
+- Take the skyscraper sheaf: take the constant sheaf on a point $q\in X$, then push it forward along the inclusion $q\injects X$:
+
+\begin{tikzcd}
+	{\ul{A}} & {q_* \ul{A}} \\
+	q & X
+	\arrow["{q_*}", from=1-1, to=1-2]
+	\arrow["q", hook, from=2-1, to=2-2]
+\end{tikzcd}
+
 
 - Then check
 \[
