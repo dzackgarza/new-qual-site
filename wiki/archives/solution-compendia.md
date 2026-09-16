@@ -1,44 +1,44 @@
 ---
 order: 1
-title: Solution Compendia
+title: Solution collections
 ---
 
-# Solution Compendia
+# Solution collections
 
-[Jay Pantone's first-year algebra notes](http://jaypantone.com/courses/gradnotes/FirstYearAlgebra.pdf)
+## Algebra
 
-[Kureh's algebra qual solutions (UCLA)](https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf)
+- [Jay Pantone's first-year algebra notes](http://jaypantone.com/courses/gradnotes/FirstYearAlgebra.pdf)
 
-[UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
+- [Kureh's algebra qualifying-exam solutions (UCLA)](https://www.math.ucla.edu/~ykureh/Algebra_Qualifying__Quals__Exams_Solutions.pdf)
 
-[[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1–5 (2003)]] — graduate algebra qualifying-exam preparation covering groups, fields and Galois theory, modules and semisimplicity, categories, and commutative algebra; the vendored `Algebra_Solutions 1.pdf` is a byte-identical duplicate of this reference.
+- [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-[[attachments/Ch6Sltns.pdf|Gallian Contemporary Abstract Algebra, Chapter 6 selected solution outlines]]
+- [[attachments/Algebra_Solutions.pdf|James Wilson, *Kleshchev Algebra Student Solution Manual*, Chapters 1–5 (2003)]]: groups, fields and Galois theory, modules and semisimplicity, categories, and commutative algebra.
 
-[[attachments/qf13sol.pdf|Algebra qualifying-exam solutions, Fall 2013]]
+- [[attachments/Ch6Sltns.pdf|Gallian, *Contemporary Abstract Algebra*, Chapter 6 selected solution outlines]]
 
-[[attachments/qual18wintersol.pdf|Algebra qualifying-exam solutions, Winter 2018]]
+- [[attachments/qf13sol.pdf|Algebra qualifying-exam solutions, Fall 2013]]
 
-[[attachments/Algebra_Final_Solns.pdf|Mathematics 504 final solutions, Autumn 2003]]
+- [[attachments/qual18wintersol.pdf|Algebra qualifying-exam solutions, Winter 2018]]
 
-[[attachments/AlgebraSept2019solutions.pdf|Algebra qualifying-exam solutions, Fall 2019]]
+- [[attachments/Algebra_Final_Solns.pdf|Mathematics 504 final solutions, Autumn 2003]]
 
-[[attachments/final2011-solns.pdf|Algebra final solutions, 2011]]
+- [[attachments/AlgebraSept2019solutions.pdf|Algebra qualifying-exam solutions, Fall 2019]]
 
-[[attachments/Sample_Comp_Fa03Alg.pdf|Sample algebra comprehensive-exam solutions, Fall 2003]]
+- [[attachments/final2011-solns.pdf|Algebra final solutions, 2011]]
 
-[Maryland Math 600 algebra exam solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf)
+- [[attachments/Sample_Comp_Fa03Alg.pdf|Sample algebra comprehensive-exam solutions, Fall 2003]]
 
-[Maryland Math 600 algebra exam solutions, Summer 2001 (MA)](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01MA-sol.pdf)
+- [Maryland Math 600 algebra exam solutions, Summer 2001](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01-sol.pdf)
 
-* * *
+- [Maryland Math 600 algebra exam solutions, Summer 2001 (MA)](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01MA-sol.pdf)
 
-[Henry(1996-2011) - Google Drive](https://drive.google.com/drive/folders/0B1RIs0n1fB8SZFAwVVVOSDdpQ2s)
+- [Vermont algebra qualifying-exam solutions, September 2008](https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf)
 
-* * *
+## Mixed subjects
 
-[Vermont algebra qual solutions, September 2008](https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf)
+- [Henry, 1996–2011 (Google Drive folder)](https://drive.google.com/drive/folders/0B1RIs0n1fB8SZFAwVVVOSDdpQ2s)
 
-## Algebraic geometry solution notes
+## Algebraic geometry
 
-- [[attachments/AG Solutions (1).pdf|Algebraic geometry solution notes (source PDF; text encoding is not extractable)]]
+- [[attachments/AG Solutions (1).pdf|Algebraic geometry solution notes]]
