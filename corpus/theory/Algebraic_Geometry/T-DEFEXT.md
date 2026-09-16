@@ -26,7 +26,8 @@ Let $k$ be a field, $D = \Spec k[\varepsilon]/(\varepsilon^2)$, and $X$ a smooth
 
 2. $\operatorname{Ext}^1(\Omega_{X/k}, \OO_X) = H^1(X, T_X)$, and it is in bijection with the isomorphism classes of first-order deformations: flat $D$-schemes $\mathcal{X}$ with $\mathcal{X} \times_D \Spec k \cong X$.
 
-3. Obstructions to extending a deformation over $k[\varepsilon]/(\varepsilon^2)$ to $k[t]/(t^3)$ lie in $H^2(X, T_X)$.
+3. Let $A_n = k[t]/(t^{n+1})$ for $n \geq 1$, so $A_1 \cong k[\varepsilon]/(\varepsilon^2)$.
+   A flat deformation $\mathcal{X}_n$ of $X$ over $A_n$ determines an obstruction class $o(\mathcal{X}_n) \in H^2(X, T_X)$, and $o(\mathcal{X}_n) = 0$ if and only if there is a flat deformation $\mathcal{X}_{n+1}$ over $A_{n+1}$ with $\mathcal{X}_{n+1} \times_{A_{n+1}} \Spec A_n \cong \mathcal{X}_n$.
 :::
 
 ::: {.proof}
@@ -39,7 +40,12 @@ Let $k$ be a field, $D = \Spec k[\varepsilon]/(\varepsilon^2)$, and $X$ a smooth
    So a deformation is glued from trivial ones $U_i \times D$ on an affine cover along automorphisms of $U_{ij} \times D$, which by step 2 are sections $\theta_{ij} \in T_X(U_{ij})$.
    The cocycle condition for gluing is the Čech cocycle condition, changing the trivializations changes $\theta$ by a coboundary, and so isomorphism classes are $\check{H}^1(\mathcal{U}, T_X) = H^1(X, T_X)$.
 
-4. Extending over $k[t]/(t^3)$ is gluing lifted automorphisms; the failure of the lifts to satisfy the cocycle condition is a Čech $2$-cocycle, well defined in $H^2(X, T_X)$.
+4. The kernel of $A_{n+1} \to A_n$ is the ideal $(t^{n+1}) \cong k$, with square zero.
+   Cover $\mathcal{X}_n$ by affine opens $U_i$; each lifts to a smooth $A_{n+1}$-scheme $V_i$, unique up to isomorphism by the lifting property used in step 3.
+   Choose isomorphisms $\phi_{ij} \colon V_j|_{U_{ij}} \to V_i|_{U_{ij}}$ lifting the identity of $U_{ij}$.
+   On triple overlaps $\phi_{ij} \phi_{jk} \phi_{ik}^{-1}$ restricts to the identity over $A_n$, so by the argument of step 2, with $t^{n+1}$ in place of $\varepsilon$, it is $\id + t^{n+1} \theta_{ijk}$ for a section $\theta_{ijk} \in T_X(U_{ijk})$.
+   The sections $\theta_{ijk}$ form a Čech $2$-cocycle, and changing the lifts $V_i$ or the isomorphisms $\phi_{ij}$ changes it by a coboundary, so its class $o(\mathcal{X}_n) \in H^2(X, T_X)$ is well defined.
+   The class is zero exactly when the $\phi_{ij}$ can be corrected by sections of $T_X$ so that the cocycle condition holds, which is exactly when the $V_i$ glue to a deformation $\mathcal{X}_{n+1}$.
 :::
 
 ::: {.example}

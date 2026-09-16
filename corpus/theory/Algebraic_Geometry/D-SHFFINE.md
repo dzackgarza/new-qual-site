@@ -17,12 +17,15 @@ review: draft
 prompts:
 - What is a fine sheaf?
 - What is a soft sheaf?
+- What is a c-soft sheaf?
 ---
 
 ::: {.definition title="Soft and fine sheaves"}
 Let $X$ be a paracompact Hausdorff space and $\mathcal{F}$ a sheaf of abelian groups on $X$.
 
 - $\mathcal{F}$ is \dfn{soft} if for every closed $Z \subseteq X$ the restriction $\Gamma(X, \mathcal{F}) \to \Gamma(Z, \mathcal{F}|_Z)$ is surjective.
+
+- $\mathcal{F}$ is \dfn{c-soft} if for every compact $K \subseteq X$ the restriction $\Gamma(X, \mathcal{F}) \to \Gamma(K, \mathcal{F}|_K)$ is surjective.
 
 - $\mathcal{F}$ is \dfn{fine} if for every locally finite open cover $\{U_i\}$ of $X$ there are sheaf endomorphisms $\eta_i \colon \mathcal{F} \to \mathcal{F}$ with the support of $\eta_i$ contained in $U_i$ and $\sum_i \eta_i = \mathrm{id}_{\mathcal{F}}$.
 :::
