@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-JGYK4
 kind: definition
-title: Primary Ideal
+title: Primary ideal
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A proper ideal $I\normal R$ is **primary** iff whenever $pq\in I$, either $p\in I$ or $q^n\in I$ for some $n\geq 1$.
+Let $R$ be a commutative ring.
+A proper [[D-GOFWL|ideal]] $I\subsetneq R$ is \dfn{primary} if for all $p,q\in R$ with $pq\in I$, either $p\in I$ or there exists $n\geq 1$ such that $q^n\in I$.
 :::
