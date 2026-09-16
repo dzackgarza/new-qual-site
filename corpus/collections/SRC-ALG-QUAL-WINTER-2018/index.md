@@ -34,8 +34,6 @@ source:
     - P-ALGQUAL18W-II5
 ---
 
-::: remark
-The retained source identifies itself as a qualifying exam in algebra, Winter 2018, and supplies worked answers after each problem.
-It does not identify an institution, so none is assigned here.
-The source calls the sitting "Winter 2018"; the schema records the supported year-only date while retaining that wording in the collection title.
+::: {.remark}
+A qualifying exam in algebra, Winter 2018, with a worked answer after each problem. The document names no institution.
 :::
