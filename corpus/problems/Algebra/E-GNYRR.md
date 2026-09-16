@@ -104,7 +104,7 @@ Evaluating this polynomial at $A$ yields exactly the product in <1>3. Hence $\ch
 
 <1>5. Cayley-Hamilton holds for every endomorphism of a finite-dimensional vector space over an arbitrary field.
 ::: {.proof}
-Let $A\in\End_k(V)$ and let $\overline{k}$ be an algebraic closure of $k$. Extend scalars:
+Let $A\in\Endo_k(V)$ and let $\overline{k}$ be an algebraic closure of $k$. Extend scalars:
 \[
 \overline{V}=V\otimes_k\overline{k},
 \qquad
@@ -122,9 +122,9 @@ viewed in $\overline{k}[t]$. Thus
 \[
 \chi_A(A)\otimes1=0
 \]
-in $\End_{\overline{k}}(\overline{V})$. The natural map
+in $\Endo_{\overline{k}}(\overline{V})$. The natural map
 \[
-\End_k(V)\longrightarrow\End_{\overline{k}}(V\otimes_k\overline{k}),
+\Endo_k(V)\longrightarrow\Endo_{\overline{k}}(V\otimes_k\overline{k}),
 \qquad T\longmapsto T\otimes1,
 \]
 is injective because $k\to\overline{k}$ is a field extension. Therefore $\chi_A(A)=0$ already over $k$.
