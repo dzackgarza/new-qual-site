@@ -15,15 +15,17 @@ review: draft
 ---
 
 ::: {.definition}
-Let $X, Y$ be topological spaces and $f: X\to Y$ a bijection.
-Then $f$ is a **homeomorphism** iff both $f$ and $f\inv$ are continuous, equivalently iff $f$ is a continuous open bijection, equivalently iff
-\[
-U \subseteq X \text{ open} \iff f(U)\subseteq Y \text{ open}
-.\]
-Such an $f$ is a bijection on points and on open sets at once, so every property of $X$ expressed in terms of its topology transfers to $Y$; write $X\cong Y$.
-An injective $f: X\to Y$ that is a homeomorphism onto $f(X)$ with the subspace topology is an **embedding**.
+Let $X$ and $Y$ be topological spaces.
+A bijection $f\colon X\to Y$ is a \dfn{homeomorphism} if both $f$ and $f\inv\colon Y\to X$ are [[D-AEAAD|continuous]].
+The spaces $X$ and $Y$ are \dfn{homeomorphic}, written $X\cong Y$, if there exists a homeomorphism $X\to Y$.
+:::
+
+::: {.remark}
+For a bijection $f\colon X\to Y$ the following are equivalent: $f$ is a homeomorphism; $f$ is continuous and open; for every $U\subseteq X$, $U$ is open in $X$ if and only if $f(U)$ is open in $Y$.
+A homeomorphism therefore induces a bijection between the topologies of $X$ and $Y$, and every property defined in terms of open sets holds for $X$ if and only if it holds for $Y$.
+An injective continuous map $f\colon X\to Y$ that is a homeomorphism onto $f(X)$ with the subspace topology is a [[D-BCNUH|topological embedding]].
 :::
 
 ::: {.concept}
-See Munkres, §18.
+[@Mun00, §18].
 :::
