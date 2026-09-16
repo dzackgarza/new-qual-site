@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.theorem}
-A metric space is compact iff it is complete and totally bounded.
+A metric space is compact if and only if it is complete and [[FF-VWKGM|totally bounded]] [@Mun00, Theorem 45.1].
 :::
