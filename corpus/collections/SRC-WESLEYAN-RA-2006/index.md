@@ -23,8 +23,3 @@ source:
   - P-WESRA06-2
   - P-WESRA06-3
 ---
-
-::: remark
-The 38-page compilation contains the same 2006 Real Analysis examination twice in succession.
-This collection records the mathematical exam once rather than duplicating its three problem owners.
-:::
