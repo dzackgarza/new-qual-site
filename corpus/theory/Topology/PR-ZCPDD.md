@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-ZCPDD
 kind: proposition
-title: Dimension vanishing for homology of manifolds
+title: Vanishing of homology and cohomology above the dimension
 classification:
   areas:
   - topology
@@ -15,10 +15,10 @@ review: draft
 ---
 
 ::: {.proposition}
-If $M^n$ is a closed and connected $n\dash$manifold, then $H^{>n} M^n = 0$.
+Let $M$ be a closed connected $n$-manifold.
+Then $H_i(M;R) = 0$ for $i > n$ and every coefficient ring $R$ [@Hat02, Theorem 3.26(c), p. 236], and $H^i(M;\ZZ) = 0$ for $i>n$ by the universal coefficient theorem [@Hat02, Theorem 3.2, p. 195], since $H_n(M;\ZZ)$ is free.
+:::
 
 ::: {.remark}
-Hatcher, *Algebraic Topology*, Proposition 3.29(c): $H_i(M;R) = 0$ for $i>n$; the cohomological form follows by the universal coefficient theorem (Hatcher Theorem 3.2), since $H_n(M;\ZZ)$ is free.
 Degree $n$ itself does not vanish: $H^n(M;\ZZ) \cong \ZZ$ when $M$ is orientable.
-:::
 :::
