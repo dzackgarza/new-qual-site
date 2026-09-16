@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-052
 kind: problem
-title: Kent State ring-theory qualifying problem 52
+title: Ideals maximal with respect to missing a multiplicative set are prime, and the nilradical
 classification:
   areas: [algebra]
   topics: []

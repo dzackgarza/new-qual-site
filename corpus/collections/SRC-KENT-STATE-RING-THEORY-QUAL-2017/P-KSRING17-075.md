@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-075
 kind: problem
-title: Kent State ring-theory qualifying problem 75
+title: Equivalent characterizations of integral elements
 classification:
   areas: [algebra]
   topics: []

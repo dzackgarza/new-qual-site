@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-110
 kind: problem
-title: Kent State ring-theory qualifying problem 110
+title: $F[x]$ is a PID but $F[x,y]$ is not
 classification:
   areas: [algebra]
   topics: []

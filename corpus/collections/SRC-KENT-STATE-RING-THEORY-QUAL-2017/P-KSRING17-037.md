@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-037
 kind: problem
-title: Kent State ring-theory qualifying problem 37
+title: Irreducibility of $x^2+1$ over $\mathbb Z_p$ for $p\equiv 3 \pmod 4$
 classification:
   areas: [algebra]
   topics: []

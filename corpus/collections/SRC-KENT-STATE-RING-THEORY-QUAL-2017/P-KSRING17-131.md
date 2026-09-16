@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-131
 kind: problem
-title: Kent State ring-theory qualifying problem 131
+title: Ascending chain condition is equivalent to finitely generated ideals
 classification:
   areas: [algebra]
   topics: []

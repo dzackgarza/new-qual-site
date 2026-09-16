@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-108
 kind: problem
-title: Kent State ring-theory qualifying problem 108
+title: Irreducibility of $x^4+x^3+x^2+x+1$ and reducibility of $x^4+1$ over $\mathbb Z_3$
 classification:
   areas: [algebra]
   topics: []

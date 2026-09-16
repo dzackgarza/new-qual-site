@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-047
 kind: problem
-title: Kent State ring-theory qualifying problem 47
+title: Values of $a$ making $\mathbb Z_3[x]/(x^3+x^2+ax+1)$ a field
 classification:
   areas: [algebra]
   topics: []

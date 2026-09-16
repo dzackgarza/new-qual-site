@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-011
 kind: problem
-title: Kent State ring-theory qualifying problem 11
+title: Boolean rings have characteristic 2 and are commutative
 classification:
   areas: [algebra]
   topics: []

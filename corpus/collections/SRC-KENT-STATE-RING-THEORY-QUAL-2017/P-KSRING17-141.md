@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-141
 kind: problem
-title: Kent State ring-theory qualifying problem 141
+title: Ideals maximal for non-Artinian or non-Noetherian module quotients $N/NI$ are prime
 classification:
   areas: [algebra]
   topics: []

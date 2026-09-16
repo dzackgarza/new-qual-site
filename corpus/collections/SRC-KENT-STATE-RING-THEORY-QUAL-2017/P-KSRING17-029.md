@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-029
 kind: problem
-title: Kent State ring-theory qualifying problem 29
+title: A right ideal quotient isomorphic to $R$ splits
 classification:
   areas: [algebra]
   topics: []

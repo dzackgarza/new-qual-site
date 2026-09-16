@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-071
 kind: problem
-title: Kent State ring-theory qualifying problem 71
+title: A unit plus a nilpotent is a unit
 classification:
   areas: [algebra]
   topics: []

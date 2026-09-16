@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-139
 kind: problem
-title: Kent State ring-theory qualifying problem 139
+title: Principal nonzero primes in a Noetherian domain have height one
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-118
 kind: problem
-title: Kent State ring-theory qualifying problem 118
+title: Matrix rings $M_n(F)$ over a field are simple
 classification:
   areas: [algebra]
   topics: []

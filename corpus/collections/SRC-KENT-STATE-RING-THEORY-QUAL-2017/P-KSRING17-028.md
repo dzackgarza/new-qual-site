@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-028
 kind: problem
-title: Kent State ring-theory qualifying problem 28
+title: 'The matrix ring $F_p$ of $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ over $\mathbb Z_p$: a field for $p=7$ but not $p=13$'
 classification:
   areas: [algebra]
   topics: []

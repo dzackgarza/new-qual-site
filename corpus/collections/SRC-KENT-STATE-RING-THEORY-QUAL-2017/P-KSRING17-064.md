@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-064
 kind: problem
-title: Kent State ring-theory qualifying problem 64
+title: Integral domains are exactly the subrings of fields
 classification:
   areas: [algebra]
   topics: []

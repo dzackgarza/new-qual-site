@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-079
 kind: problem
-title: Kent State ring-theory qualifying problem 79
+title: Euclidean domains are principal ideal domains
 classification:
   areas: [algebra]
   topics: []

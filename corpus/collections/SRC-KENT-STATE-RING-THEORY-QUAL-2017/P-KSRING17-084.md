@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-084
 kind: problem
-title: Kent State ring-theory qualifying problem 84
+title: '$\mathbb Z[\sqrt{-11}]$ is not a UFD: irreducibility of $x^2-x+3$'
 classification:
   areas: [algebra]
   topics: []

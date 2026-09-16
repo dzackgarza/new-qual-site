@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-090
 kind: problem
-title: Kent State ring-theory qualifying problem 90
+title: Existence of gcds and lcms in a principal ideal domain
 classification:
   areas: [algebra]
   topics: []

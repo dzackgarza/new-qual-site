@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-092
 kind: problem
-title: Kent State ring-theory qualifying problem 92
+title: Irreducible elements of a UFD are not squares in the fraction field
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-039
 kind: problem
-title: Kent State ring-theory qualifying problem 39
+title: An ideal is maximal if and only if the quotient is a field
 classification:
   areas: [algebra]
   topics: []

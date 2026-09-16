@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-093
 kind: problem
-title: Kent State ring-theory qualifying problem 93
+title: Nonzero prime ideals of a Euclidean domain are maximal
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-129
 kind: problem
-title: Kent State ring-theory qualifying problem 129
+title: Localizations of a PID at nonzero primes are discrete valuation rings
 classification:
   areas: [algebra]
   topics: []

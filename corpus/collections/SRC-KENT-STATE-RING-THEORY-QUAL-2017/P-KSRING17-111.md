@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-111
 kind: problem
-title: Kent State ring-theory qualifying problem 111
+title: The ideal $(x,c)$ in $D[x]$ is not principal for irreducible $c$
 classification:
   areas: [algebra]
   topics: []

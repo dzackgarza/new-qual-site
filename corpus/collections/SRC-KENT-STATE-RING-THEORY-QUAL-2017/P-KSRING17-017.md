@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-017
 kind: problem
-title: Kent State ring-theory qualifying problem 17
+title: The reduction map $U_n\to U_m$ is surjective
 classification:
   areas: [algebra]
   topics: []

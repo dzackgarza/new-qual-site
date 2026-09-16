@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-128
 kind: problem
-title: Kent State ring-theory qualifying problem 128
+title: Contraction of an ideal from a ring of fractions is an ideal
 classification:
   areas: [algebra]
   topics: []

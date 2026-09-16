@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-022
 kind: problem
-title: Kent State ring-theory qualifying problem 22
+title: Unital extension of a ring of characteristic $n$ with quotient $\mathbb Z/n\mathbb Z$
 classification:
   areas: [algebra]
   topics: []

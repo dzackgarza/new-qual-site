@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-102
 kind: problem
-title: Kent State ring-theory qualifying problem 102
+title: $D$-automorphisms of $D[x]$ are affine substitutions
 classification:
   areas: [algebra]
   topics: []

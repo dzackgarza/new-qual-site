@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-114
 kind: problem
-title: Kent State ring-theory qualifying problem 114
+title: Nilpotents form an ideal in a ring with no nontrivial automorphisms
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-070
 kind: problem
-title: Kent State ring-theory qualifying problem 70
+title: Commutative rings with exactly three ideals
 classification:
   areas: [algebra]
   topics: []

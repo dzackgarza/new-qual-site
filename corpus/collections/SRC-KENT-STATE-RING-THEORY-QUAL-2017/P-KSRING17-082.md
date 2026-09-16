@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-082
 kind: problem
-title: Kent State ring-theory qualifying problem 82
+title: '$\mathbb Z[\sqrt 5]$ is not a UFD: irreducibility of $x^2+x-1$'
 classification:
   areas: [algebra]
   topics: []

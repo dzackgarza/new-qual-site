@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-107
 kind: problem
-title: Kent State ring-theory qualifying problem 107
+title: 'UFDs are integrally closed: rational roots of monic polynomials'
 classification:
   areas: [algebra]
   topics: []

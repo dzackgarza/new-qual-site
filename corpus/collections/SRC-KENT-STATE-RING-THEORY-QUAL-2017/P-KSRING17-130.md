@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-130
 kind: problem
-title: Kent State ring-theory qualifying problem 130
+title: Maximal and minimal elements in sets of prime ideals
 classification:
   areas: [algebra]
   topics: []

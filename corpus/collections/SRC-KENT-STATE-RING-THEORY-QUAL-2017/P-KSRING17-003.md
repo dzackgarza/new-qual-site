@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-003
 kind: problem
-title: Kent State ring-theory qualifying problem 3
+title: Ideals of $\mathbb Z/90\mathbb Z$
 classification:
   areas: [algebra]
   topics: []

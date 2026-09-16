@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-058
 kind: problem
-title: Kent State ring-theory qualifying problem 58
+title: A ring in which every ideal is prime is a field
 classification:
   areas: [algebra]
   topics: []

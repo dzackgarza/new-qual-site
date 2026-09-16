@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-135
 kind: problem
-title: Kent State ring-theory qualifying problem 135
+title: In a Noetherian ring some power of the radical lies in the ideal
 classification:
   areas: [algebra]
   topics: []

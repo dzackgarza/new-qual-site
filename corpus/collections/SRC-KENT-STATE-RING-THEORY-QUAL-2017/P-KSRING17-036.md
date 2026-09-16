@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-036
 kind: problem
-title: Kent State ring-theory qualifying problem 36
+title: Reducibility of $x^2+1$ over $\mathbb Z_p$ for $p\equiv 1 \pmod 4$
 classification:
   areas: [algebra]
   topics: []

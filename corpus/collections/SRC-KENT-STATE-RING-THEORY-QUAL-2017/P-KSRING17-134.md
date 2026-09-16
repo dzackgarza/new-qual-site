@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-134
 kind: problem
-title: Kent State ring-theory qualifying problem 134
+title: Noetherian rings whose 2-generated ideals are principal
 classification:
   areas: [algebra]
   topics: []

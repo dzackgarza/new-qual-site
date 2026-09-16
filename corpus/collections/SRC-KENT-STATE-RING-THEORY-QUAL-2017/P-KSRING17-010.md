@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-010
 kind: problem
-title: Kent State ring-theory qualifying problem 10
+title: Ideals of a product of commutative rings are products of ideals
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-136
 kind: problem
-title: Kent State ring-theory qualifying problem 136
+title: Nonzero ideals of a Noetherian domain contain products of nonzero primes
 classification:
   areas: [algebra]
   topics: []

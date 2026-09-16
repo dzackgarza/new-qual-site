@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-055
 kind: problem
-title: Kent State ring-theory qualifying problem 55
+title: Unions and intersections of chains of prime ideals are prime
 classification:
   areas: [algebra]
   topics: []

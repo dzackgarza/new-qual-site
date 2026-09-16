@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-063
 kind: problem
-title: Kent State ring-theory qualifying problem 63
+title: 'Primary ideals: zero divisors in the quotient and prime radicals'
 classification:
   areas: [algebra]
   topics: []

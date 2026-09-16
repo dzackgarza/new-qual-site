@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-113
 kind: problem
-title: Kent State ring-theory qualifying problem 113
+title: $\mathbb Z[x]/(2x-1)\cong\mathbb Z[1/2]$ and an ideal strictly between
 classification:
   areas: [algebra]
   topics: []

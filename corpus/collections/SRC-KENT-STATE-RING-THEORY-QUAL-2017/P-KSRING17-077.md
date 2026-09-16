@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-077
 kind: problem
-title: Kent State ring-theory qualifying problem 77
+title: Nonzero ideals of an integral extension of domains contract to nonzero ideals
 classification:
   areas: [algebra]
   topics: []

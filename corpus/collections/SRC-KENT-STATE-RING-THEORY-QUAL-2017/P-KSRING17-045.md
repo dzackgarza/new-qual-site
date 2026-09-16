@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-045
 kind: problem
-title: Kent State ring-theory qualifying problem 45
+title: Prime ideals in a ring with a nontrivial idempotent contain nontrivial idempotents
 classification:
   areas: [algebra]
   topics: []

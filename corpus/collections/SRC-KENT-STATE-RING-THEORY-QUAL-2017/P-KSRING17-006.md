@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-006
 kind: problem
-title: Kent State ring-theory qualifying problem 6
+title: Integers $n$ with $(\mathbb Z/n\mathbb Z)^\times$ an elementary abelian 2-group
 classification:
   areas: [algebra]
   topics: []

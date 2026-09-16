@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-065
 kind: problem
-title: Kent State ring-theory qualifying problem 65
+title: The nilpotent elements of a commutative ring form an ideal
 classification:
   areas: [algebra]
   topics: []

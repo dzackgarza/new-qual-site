@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-060
 kind: problem
-title: Kent State ring-theory qualifying problem 60
+title: Prime ideals of a finite commutative ring are maximal
 classification:
   areas: [algebra]
   topics: []

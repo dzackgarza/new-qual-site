@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-109
 kind: problem
-title: Kent State ring-theory qualifying problem 109
+title: The ideal $(x,y)$ in $F[x,y]$ is not principal
 classification:
   areas: [algebra]
   topics: []

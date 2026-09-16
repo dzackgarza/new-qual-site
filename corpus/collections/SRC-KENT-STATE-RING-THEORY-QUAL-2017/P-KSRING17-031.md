@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-031
 kind: problem
-title: Kent State ring-theory qualifying problem 31
+title: A non-surjective injective endomorphism of a field
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-025
 kind: problem
-title: Kent State ring-theory qualifying problem 25
+title: The matrices $\begin{pmatrix}a&b\\-3b&a\end{pmatrix}$ form a field
 classification:
   areas: [algebra]
   topics: []

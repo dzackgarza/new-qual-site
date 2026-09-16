@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-087
 kind: problem
-title: Kent State ring-theory qualifying problem 87
+title: An integral domain finite-dimensional over a subfield is a field
 classification:
   areas: [algebra]
   topics: []

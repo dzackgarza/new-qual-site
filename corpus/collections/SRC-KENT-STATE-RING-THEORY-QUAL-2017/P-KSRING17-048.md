@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-048
 kind: problem
-title: Kent State ring-theory qualifying problem 48
+title: Values of $a$ making $\mathbb Z_5[x]/(x^3+2x^2+ax+3)$ a field
 classification:
   areas: [algebra]
   topics: []

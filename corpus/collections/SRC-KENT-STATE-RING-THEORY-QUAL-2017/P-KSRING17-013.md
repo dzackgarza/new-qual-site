@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-013
 kind: problem
-title: Kent State ring-theory qualifying problem 13
+title: When $\mathbb Z/n\mathbb Z$ is a direct sum of fields
 classification:
   areas: [algebra]
   topics: []

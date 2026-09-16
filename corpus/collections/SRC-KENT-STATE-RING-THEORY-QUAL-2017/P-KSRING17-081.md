@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-081
 kind: problem
-title: Kent State ring-theory qualifying problem 81
+title: $\mathbb Z[\sqrt p]$ is not a UFD when $p\equiv 1 \pmod 4$
 classification:
   areas: [algebra]
   topics: []

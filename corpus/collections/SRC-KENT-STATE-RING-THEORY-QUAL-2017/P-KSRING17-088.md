@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-088
 kind: problem
-title: Kent State ring-theory qualifying problem 88
+title: Greatest common divisors from principal ideal sums
 classification:
   areas: [algebra]
   topics: []

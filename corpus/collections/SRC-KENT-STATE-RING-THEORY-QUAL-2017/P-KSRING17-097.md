@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-097
 kind: problem
-title: Kent State ring-theory qualifying problem 97
+title: Ideals of a UFD with a single irreducible up to associates are totally ordered
 classification:
   areas: [algebra]
   topics: []

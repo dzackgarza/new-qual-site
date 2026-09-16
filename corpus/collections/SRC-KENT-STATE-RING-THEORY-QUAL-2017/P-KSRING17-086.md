@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-086
 kind: problem
-title: Kent State ring-theory qualifying problem 86
+title: An integral domain algebraic over a subfield is a field
 classification:
   areas: [algebra]
   topics: []

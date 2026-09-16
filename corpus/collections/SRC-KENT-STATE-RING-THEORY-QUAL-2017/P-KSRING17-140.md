@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-140
 kind: problem
-title: Kent State ring-theory qualifying problem 140
+title: Ideals in a Noetherian ring contain products of primes containing them
 classification:
   areas: [algebra]
   topics: []

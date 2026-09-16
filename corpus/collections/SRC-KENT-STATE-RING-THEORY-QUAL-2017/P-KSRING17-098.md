@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-098
 kind: problem
-title: Kent State ring-theory qualifying problem 98
+title: A UFD with a single irreducible up to associates is Euclidean
 classification:
   areas: [algebra]
   topics: []

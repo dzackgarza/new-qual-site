@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-069
 kind: problem
-title: Kent State ring-theory qualifying problem 69
+title: Fixed rings of ring automorphisms of order 2 and quadratic integrality
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-027
 kind: problem
-title: Kent State ring-theory qualifying problem 27
+title: A matrix model of $\mathbb Z[\sqrt p]$
 classification:
   areas: [algebra]
   topics: []

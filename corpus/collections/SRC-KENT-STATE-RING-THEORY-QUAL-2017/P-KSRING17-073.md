@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-073
 kind: problem
-title: Kent State ring-theory qualifying problem 73
+title: 'Bezout rings: sums of principal ideals versus finitely generated ideals'
 classification:
   areas: [algebra]
   topics: []

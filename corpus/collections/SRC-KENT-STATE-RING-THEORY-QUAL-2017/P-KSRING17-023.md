@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-023
 kind: problem
-title: Kent State ring-theory qualifying problem 23
+title: An element with more than one right inverse has infinitely many
 classification:
   areas: [algebra]
   topics: []

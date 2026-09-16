@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-120
 kind: problem
-title: Kent State ring-theory qualifying problem 120
+title: Construction of the field of fractions of an integral domain
 classification:
   areas: [algebra]
   topics: []

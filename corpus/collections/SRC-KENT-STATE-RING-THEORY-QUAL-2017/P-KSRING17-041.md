@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-041
 kind: problem
-title: Kent State ring-theory qualifying problem 41
+title: Maximal ideals are prime, and a nonzero prime ideal that is not maximal
 classification:
   areas: [algebra]
   topics: []

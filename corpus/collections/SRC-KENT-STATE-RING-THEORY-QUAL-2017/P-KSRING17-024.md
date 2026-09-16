@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-024
 kind: problem
-title: Kent State ring-theory qualifying problem 24
+title: Automorphisms of the upper triangular matrix ring $U_2(R)$ are inner
 classification:
   areas: [algebra]
   topics: []

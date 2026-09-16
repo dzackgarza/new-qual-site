@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-014
 kind: problem
-title: Kent State ring-theory qualifying problem 14
+title: Ideals of a valuation ring are totally ordered
 classification:
   areas: [algebra]
   topics: []

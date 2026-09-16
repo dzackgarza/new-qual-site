@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-083
 kind: problem
-title: Kent State ring-theory qualifying problem 83
+title: '$\mathbb Z[\sqrt{21}]$ is not a UFD: irreducibility of $x^2-x-5$'
 classification:
   areas: [algebra]
   topics: []

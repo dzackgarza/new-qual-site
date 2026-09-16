@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-050
 kind: problem
-title: Kent State ring-theory qualifying problem 50
+title: Ideals maximal among non-principal ideals are prime
 classification:
   areas: [algebra]
   topics: []

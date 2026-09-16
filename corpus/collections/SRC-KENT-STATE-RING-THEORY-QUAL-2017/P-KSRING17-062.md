@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-062
 kind: problem
-title: Kent State ring-theory qualifying problem 62
+title: Adjacent prime ideals between two nested primes
 classification:
   areas: [algebra]
   topics: []

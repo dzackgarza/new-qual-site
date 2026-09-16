@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-049
 kind: problem
-title: Kent State ring-theory qualifying problem 49
+title: Ideals maximal among non-finitely generated ideals are prime
 classification:
   areas: [algebra]
   topics: []

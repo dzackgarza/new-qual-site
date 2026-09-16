@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-103
 kind: problem
-title: Kent State ring-theory qualifying problem 103
+title: A generalized Eisenstein criterion for a factor of degree at least $k$
 classification:
   areas: [algebra]
   topics: []

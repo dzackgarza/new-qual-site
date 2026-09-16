@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-053
 kind: problem
-title: Kent State ring-theory qualifying problem 53
+title: A non-nilpotent element avoids some prime ideal
 classification:
   areas: [algebra]
   topics: []

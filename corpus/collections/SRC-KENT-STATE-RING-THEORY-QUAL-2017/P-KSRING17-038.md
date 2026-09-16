@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-038
 kind: problem
-title: Kent State ring-theory qualifying problem 38
+title: Splitting of $x^3+1$ over $\mathbb Z_p$ for $p\equiv 1 \pmod 6$
 classification:
   areas: [algebra]
   topics: []

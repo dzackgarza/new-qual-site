@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-034
 kind: problem
-title: Kent State ring-theory qualifying problem 34
+title: The ideal of functions vanishing at infinity in bounded continuous functions
 classification:
   areas: [algebra]
   topics: []
