@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-3
 kind: theorem
-title: 'Theorem 3.3: Uniform continuity on compact sets'
+title: Continuous functions on compact sets are uniformly continuous
 classification:
   areas:
   - real-analysis
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f:K\subset\mathbb R^n\to\mathbb R^m$ is continuous and $K$ is compact, then $f$ is uniformly continuous on $K$.
+Let $K\subseteq\RR^n$ be [[D-EILKJ|compact]] and let $f\colon K\to\RR^m$ be continuous.
+Then $f$ is [[D-WGYSB|uniformly continuous]] on $K$.
 :::
