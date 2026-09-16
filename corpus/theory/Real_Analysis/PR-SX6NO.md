@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-SX6NO
 kind: proposition
-title: Lipschitz implies uniformly continuous
+title: Lipschitz maps are uniformly continuous
 classification:
   areas:
   - real-analysis
@@ -13,19 +13,15 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $f$ is Lipschitz on $X$, then $f$ is uniformly continuous on $X$.
+::: {.proposition}
+Let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces and let $f\colon X\to Y$ be Lipschitz: there is $C>0$ with $d_Y(f(x),f(y))\leq C\,d_X(x,y)$ for all $x,y\in X$.
+Then $f$ is [[D-WGYSB|uniformly continuous]].
+:::
 
-Supposing that
-\[
-\norm{f(x) - f(y)} \leq C \norm{x-y}
-,\]
-for a fixed $\eps$ take $\delta(\eps) \da \eps/C$, then
-\[
-\norm{f(x) - f(y)}
-&\leq C \norm{x-y} \\
-&\leq C \delta \\
-&= C \qty{\eps/C} \\
-&= \eps
-.\]
+::: {.proof}
+Given $\varepsilon>0$, take $\delta\coloneqq\varepsilon/C$.
+If $d_X(x,y)<\delta$, then
+$$
+d_Y(f(x),f(y)) \leq C\,d_X(x,y) < C\delta = \varepsilon .
+$$
 :::
