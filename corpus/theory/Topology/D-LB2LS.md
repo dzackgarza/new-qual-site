@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-LB2LS
 kind: definition
-title: The subspace topology
+title: Subspace topology
 classification:
   areas:
   - topology
@@ -13,9 +13,14 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-For $(X, \tau)$ a topological space and $U \subseteq X$ an arbitrary subset, the space $(U, \tau_U)$ is a topological space with a **subspace topology** defined by
-\[
-\tau_U \da \ts {Y \intersect U \st U \in \tau}
-.\]
+::: {.definition}
+Let $(X, \tau)$ be a topological space and $A\subseteq X$ a subset.
+The \dfn{subspace topology} on $A$ is
+$$
+\tau_A\coloneqq\ts{A\cap U \st U\in\tau}.
+$$
+:::
+
+::: {.concept}
+See [@Mun00, §16].
 :::
