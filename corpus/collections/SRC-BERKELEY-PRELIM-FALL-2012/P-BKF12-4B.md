@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-4B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 4B
+title: Evaluation of $\int_0^\infty dx/(x^2+1)^2$
 classification:
   areas:
   - prelim

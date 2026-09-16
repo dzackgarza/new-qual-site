@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-3A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 3A
+title: Existence of the Euler--Mascheroni constant
 classification:
   areas:
   - prelim

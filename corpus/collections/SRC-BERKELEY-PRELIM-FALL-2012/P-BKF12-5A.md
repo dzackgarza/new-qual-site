@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-5A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 5A
+title: Blaschke factors and removing the zeros of a holomorphic function from the disk
 classification:
   areas:
   - prelim

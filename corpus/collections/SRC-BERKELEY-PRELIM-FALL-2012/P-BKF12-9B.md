@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-9B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 9B
+title: The product of the nonzero eigenvalues of a matrix lies in its field of entries
 classification:
   areas:
   - prelim

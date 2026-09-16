@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-7A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 7A
+title: Invertibility and inverse of $I_n+aJ_n$
 classification:
   areas:
   - prelim

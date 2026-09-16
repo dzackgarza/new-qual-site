@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-4A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 4A
+title: The sum $\sum(-1)^k/(2k+1)^3$ via residues of $1/(z^3\cos z)$
 classification:
   areas:
   - prelim

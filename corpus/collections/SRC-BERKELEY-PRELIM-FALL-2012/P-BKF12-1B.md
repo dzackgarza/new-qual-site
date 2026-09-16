@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-1B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 1B
+title: Machin's formula $\pi/4=4\arctan\frac15-\arctan\frac1{239}$
 classification:
   areas:
   - prelim

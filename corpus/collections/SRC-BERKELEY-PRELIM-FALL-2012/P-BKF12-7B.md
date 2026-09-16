@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-7B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 7B
+title: If $AB-BA=A$ then $A$ is nilpotent
 classification:
   areas:
   - prelim

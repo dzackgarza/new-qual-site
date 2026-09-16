@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-8A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 8A
+title: Elements of squarefree order dividing the order of a finite abelian group
 classification:
   areas:
   - prelim

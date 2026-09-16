@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-3B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 3B
+title: Submetries are surjective, continuous and open
 classification:
   areas:
   - prelim

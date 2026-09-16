@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-6A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 6A
+title: Dimension inequality for three pairwise independent subspaces
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-6B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 6B
+title: Eigenvalues and eigenvectors of the cyclic shift on $\mathbb C^n$
 classification:
   areas:
   - prelim

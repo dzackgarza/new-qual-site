@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-2B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 2B
+title: Sums of the alternating harmonic series and a rearrangement
 classification:
   areas:
   - prelim

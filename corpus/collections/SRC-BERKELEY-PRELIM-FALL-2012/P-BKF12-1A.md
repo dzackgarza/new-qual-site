@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-1A
 kind: problem
-title: Berkeley Fall 2012 prelim problem 1A
+title: Arc length of the logarithmic spiral $r=e^\theta$, $\theta\le0$
 classification:
   areas:
   - prelim

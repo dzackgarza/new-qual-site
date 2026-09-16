@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF12-5B
 kind: problem
-title: Berkeley Fall 2012 prelim problem 5B
+title: The equation $e^z=z$ has infinitely many complex roots
 classification:
   areas:
   - prelim
