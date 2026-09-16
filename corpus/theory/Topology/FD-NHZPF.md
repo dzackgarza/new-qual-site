@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-NHZPF
 kind: definition
-title: Hausdorff Space
+title: Hausdorff space
 prompts:
 - What does it mean for a space to be Hausdorff?
 classification:
@@ -16,7 +16,13 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is **Hausdorff** iff for every $x,y \in X$ there exist neighborhoods of $x$ and $y$ that are disjoint from each other.
+A topological space $X$ is \dfn{Hausdorff} if for all $x, y \in X$ with $x\neq y$ there exist disjoint open sets $U, V\subseteq X$ with $x\in U$ and $y\in V$.
+:::
 
-(Implies uniqueness of limits.)
+::: {.proposition}
+In a Hausdorff space, every sequence converges to at most one point.
+:::
+
+::: {.concept}
+[@Mun00, §17, Theorem 17.10].
 :::
