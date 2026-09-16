@@ -29,5 +29,4 @@ Since compactly supported continuous functions are dense in $L^1(\RR^n)$, choose
 By translation invariance of Lebesgue measure, $\int\abs{f(x+h)-g(x+h)}\,dx=\norm{f-g}_{L^1}<\varepsilon/3$ for every $h$.
 The function $g$ is uniformly continuous and, for $\abs{h}\le1$, $x\mapsto g(x+h)-g(x)$ vanishes outside the compact set $K=\supp g+\overline{B(0,1)}$, so $\int\abs{g(x+h)-g(x)}\,dx\le \vol(K)\sup_x\abs{g(x+h)-g(x)}<\varepsilon/3$ for $\abs{h}$ small enough.
 The triangle inequality then gives $\int\abs{f(x+h)-f(x)}\,dx<\varepsilon$ for $\abs{h}$ small enough.
-A detailed version is [[FR-EM6AL]].
 :::

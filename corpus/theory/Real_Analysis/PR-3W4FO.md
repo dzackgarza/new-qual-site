@@ -57,6 +57,6 @@ $$
 \abs{(f*g)(x+h)-(f*g)(x)}
 \le \norm{f}_\infty\,\norm{g(\,\cdot+h)-g}_1
 $$
-for every $x$, and $\norm{g(\,\cdot+h)-g}_1\to0$ as $h\to0$ by [[FR-EM6AL|continuity of translation in $L^1$]].
+for every $x$, and $\norm{g(\,\cdot+h)-g}_1\to0$ as $h\to0$ by [[FT-4ED3Q|continuity of translation in $L^1$]].
 Hence $f*g$ is uniformly continuous in this case as well.
 :::
