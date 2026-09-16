@@ -30,6 +30,6 @@ source:
   area: prelim
 ---
 
-::: remark
-UGA sample graduate preliminary exam, undated. The retained source states that the exam lasts three hours and contains nine equally weighted problems. Problems are listed in source order.
+::: {.remark}
+An undated UGA sample graduate preliminary exam. The paper states that the exam lasts three hours and has nine equally weighted problems.
 :::
