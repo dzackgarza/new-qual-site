@@ -145,7 +145,7 @@ A space with a point at which these local homology groups differ from those of e
 
 [[PR-4X6G2]]
 
-[[PR-AZQ6S]]
+[[T-QNYSB]]
 
 [[PR-TU4G5]]
 
@@ -166,8 +166,6 @@ so if $n$ is odd then $\chi(M)=0$.
 [[PR-3FB24]]
 
 [[PR-BQKHS]]
-
-[[T-QNYSB]]
 
 ### 3-manifolds and knot complements
 

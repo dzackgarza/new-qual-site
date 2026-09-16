@@ -27,3 +27,7 @@ H^k(M, \del M; R) \cong H_{n-k}(M; R), \qquad H^k(M; R)\cong H_{n-k}(M, \del M; 
 $$
 [@Hat02, Theorem 3.43, p. 254].
 :::
+
+::: {.remark}
+For $\del M = \emptyset$ this is [[D-QP7WI|Poincaré duality]].
+:::
