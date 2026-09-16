@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-09
 kind: problem
-title: Questions from Tie — Spring 2015, question 9
+title: Zeros of analytic functions accumulating at the boundary and the identity theorem
 classification:
   areas:
   - complex-analysis

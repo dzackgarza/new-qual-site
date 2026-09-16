@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F16-07
 kind: problem
-title: Questions from Tie — Fall 2016, question 7
+title: Conformal map of the upper half-plane onto a half-strip
 classification:
   areas:
   - complex-analysis

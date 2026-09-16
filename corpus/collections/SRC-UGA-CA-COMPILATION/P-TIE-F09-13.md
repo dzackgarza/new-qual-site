@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-13
 kind: problem
-title: Questions from Tie — Fall 2009, question 13
+title: Entire functions omitting an open set are constant; Parseval's identity and Liouville's theorem
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-11
 kind: problem
-title: Questions from Tie — Fall 2011, question 11
+title: Fixed points of analytic self-maps of the disk
 classification:
   areas:
   - complex-analysis

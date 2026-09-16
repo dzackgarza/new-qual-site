@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-26
 kind: problem
-title: Questions from Tie — Spring 2015, question 26
+title: Maximum modulus principle inside a closed contour
 classification:
   areas:
   - complex-analysis

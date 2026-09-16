@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-21
 kind: problem
-title: Questions from Tie — Spring 2015, question 21
+title: Conformal maps of crescents, lunes, and slit disks
 classification:
   areas:
   - complex-analysis

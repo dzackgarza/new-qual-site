@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-06
 kind: problem
-title: Questions from Tie — Fall 2015, question 6
+title: Liouville's theorem via $\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz$
 classification:
   areas:
   - complex-analysis

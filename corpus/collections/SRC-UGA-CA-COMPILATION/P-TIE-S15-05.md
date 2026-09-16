@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-05
 kind: problem
-title: Questions from Tie — Spring 2015, question 5
+title: $z^{-m}$ is not a uniform limit of polynomials on an annulus
 classification:
   areas:
   - complex-analysis

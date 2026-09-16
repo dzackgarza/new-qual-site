@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-19
 kind: problem
-title: Questions from Tie — Fall 2011, question 19
+title: Limit of integrals over small circular arcs when $(z-a)f(z)\to A$
 classification:
   areas:
   - complex-analysis

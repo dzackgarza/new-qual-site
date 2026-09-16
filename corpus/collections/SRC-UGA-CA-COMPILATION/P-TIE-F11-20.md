@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-20
 kind: problem
-title: Questions from Tie — Fall 2011, question 20
+title: Uniform continuity of $z^2$ and ill-posedness of the Cauchy problem for Laplace's equation
 classification:
   areas:
   - complex-analysis

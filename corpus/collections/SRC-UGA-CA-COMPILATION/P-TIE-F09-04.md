@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-04
 kind: problem
-title: Questions from Tie — Fall 2009, question 4
+title: $\int_0^\infty\frac{x\sin x}{x^2+a^2}\,dx$
 classification:
   areas:
   - complex-analysis

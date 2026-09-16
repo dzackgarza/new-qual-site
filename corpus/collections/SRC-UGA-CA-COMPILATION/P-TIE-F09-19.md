@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-19
 kind: problem
-title: Questions from Tie — Fall 2009, question 19
+title: 'Hadamard''s example: ill-posedness of the Cauchy problem for Laplace''s equation'
 classification:
   areas:
   - complex-analysis

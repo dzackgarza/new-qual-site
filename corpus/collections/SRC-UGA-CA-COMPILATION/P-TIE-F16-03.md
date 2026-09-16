@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F16-03
 kind: problem
-title: Questions from Tie — Fall 2016, question 3
+title: Complex line integrals and the ML estimate for $\int_{|z|=R}\frac{\log z}{z^2}\,dz$
 classification:
   areas:
   - complex-analysis

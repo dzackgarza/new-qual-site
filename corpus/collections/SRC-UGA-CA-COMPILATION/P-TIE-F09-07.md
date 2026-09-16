@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-07
 kind: problem
-title: Questions from Tie — Fall 2009, question 7
+title: Analyticity of the gamma function and the reflection formula
 classification:
   areas:
   - complex-analysis

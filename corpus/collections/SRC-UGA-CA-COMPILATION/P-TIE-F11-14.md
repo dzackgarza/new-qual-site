@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-14
 kind: problem
-title: Questions from Tie — Fall 2011, question 14
+title: Entire functions omitting a nonempty open set are constant
 classification:
   areas:
   - complex-analysis

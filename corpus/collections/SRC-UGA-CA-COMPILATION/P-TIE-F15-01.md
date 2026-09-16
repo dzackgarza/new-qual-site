@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-01
 kind: problem
-title: Questions from Tie — Fall 2015, question 1
+title: The ratio limit bounds the root limit
 classification:
   areas:
   - complex-analysis

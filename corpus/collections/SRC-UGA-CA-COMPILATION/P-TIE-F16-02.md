@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F16-02
 kind: problem
-title: Questions from Tie — Fall 2016, question 2
+title: Orthogonality of level curves of $\operatorname{Re} f$ and $\operatorname{Im} f$
 classification:
   areas:
   - complex-analysis

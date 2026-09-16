@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S14-03
 kind: problem
-title: Questions from Tie — Spring 2014, question 3
+title: $\int_{|z|=r}\frac{dz}{(z-a)(z-b)}$, Parseval's identity, and integrals over large arcs
 classification:
   areas:
   - complex-analysis

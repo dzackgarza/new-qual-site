@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-22
 kind: problem
-title: Questions from Tie — Spring 2015, question 22
+title: Möbius transformations mapping one circle to another with two prescribed points
 classification:
   areas:
   - complex-analysis

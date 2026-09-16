@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-10
 kind: problem
-title: Questions from Tie — Spring 2015, question 10
+title: Uniqueness and the Schwarz reflection principle for harmonic functions
 classification:
   areas:
   - complex-analysis

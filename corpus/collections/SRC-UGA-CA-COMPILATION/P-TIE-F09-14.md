@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-14
 kind: problem
-title: Questions from Tie — Fall 2009, question 14
+title: Entire functions with $|f(z)|\le M|z|^2$ are quadratic polynomials
 classification:
   areas:
   - complex-analysis

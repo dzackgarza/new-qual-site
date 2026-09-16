@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-13
 kind: problem
-title: Questions from Tie — Spring 2015, question 13
+title: 'Residue computations: rational, trigonometric, and Fourier-type integrals'
 classification:
   areas:
   - complex-analysis

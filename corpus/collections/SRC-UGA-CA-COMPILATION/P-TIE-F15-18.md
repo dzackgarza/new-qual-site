@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-18
 kind: problem
-title: Questions from Tie — Fall 2015, question 18
+title: Area of the image of an annulus under a univalent Laurent series
 classification:
   areas:
   - complex-analysis

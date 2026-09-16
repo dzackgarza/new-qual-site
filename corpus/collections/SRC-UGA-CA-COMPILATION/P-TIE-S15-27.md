@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-27
 kind: problem
-title: Questions from Tie — Spring 2015, question 27
+title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx$ and $\int_0^\infty\frac{\log x}{(1+x^2)^2}\,dx$
 classification:
   areas:
   - complex-analysis

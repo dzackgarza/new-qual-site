@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-23
 kind: problem
-title: Questions from Tie — Spring 2015, question 23
+title: Vitali's convergence theorem
 classification:
   areas:
   - complex-analysis

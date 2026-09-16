@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-20
 kind: problem
-title: Questions from Tie — Spring 2015, question 20
+title: Harnack-type bounds for $|f(z)|$ for self-maps of the disk
 classification:
   areas:
   - complex-analysis

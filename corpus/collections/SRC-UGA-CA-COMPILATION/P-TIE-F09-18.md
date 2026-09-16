@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-18
 kind: problem
-title: Questions from Tie — Fall 2009, question 18
+title: Uniform continuity of $z^2$ on disks but not on $\mathbb C$
 classification:
   areas:
   - complex-analysis

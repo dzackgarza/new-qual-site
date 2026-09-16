@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-30
 kind: problem
-title: Questions from Tie — Spring 2015, question 30
+title: Integrals of $|\psi_\alpha'|$ over the disk and the Joukowski map on the half-disk
 classification:
   areas:
   - complex-analysis

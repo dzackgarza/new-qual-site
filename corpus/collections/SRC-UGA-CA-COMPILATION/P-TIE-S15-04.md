@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-04
 kind: problem
-title: Questions from Tie — Spring 2015, question 4
+title: Analytic functions unimodular on the unit circle are finite Blaschke products
 classification:
   areas:
   - complex-analysis

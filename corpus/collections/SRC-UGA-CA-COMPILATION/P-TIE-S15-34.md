@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-34
 kind: problem
-title: Questions from Tie — Spring 2015, question 34
+title: Sup norm on a smaller disk bounded by the $L^1$ norm for holomorphic functions
 classification:
   areas:
   - complex-analysis

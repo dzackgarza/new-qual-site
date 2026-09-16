@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-02
 kind: problem
-title: Questions from Tie — Fall 2009, question 2
+title: Limit of integrals over large circular arcs when $zf(z)\to k$
 classification:
   areas:
   - complex-analysis

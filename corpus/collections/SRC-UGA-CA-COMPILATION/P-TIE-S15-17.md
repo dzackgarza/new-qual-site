@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-17
 kind: problem
-title: Questions from Tie — Spring 2015, question 17
+title: Partial fraction expansion of $\pi^2/\sin^2\pi z$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-05
 kind: problem
-title: Questions from Tie — Fall 2015, question 5
+title: Cauchy's integral formula for an exterior region
 classification:
   areas:
   - complex-analysis

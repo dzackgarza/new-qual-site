@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-14
 kind: problem
-title: Questions from Tie — Spring 2015, question 14
+title: 'Residue computations: $\frac{\sin x}{x}$, Mellin-type, and logarithmic integrals'
 classification:
   areas:
   - complex-analysis

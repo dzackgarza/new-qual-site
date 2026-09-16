@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F16-08
 kind: problem
-title: Questions from Tie — Fall 2016, question 8
+title: Fourier transform of $1/\cosh\pi x$
 classification:
   areas:
   - complex-analysis

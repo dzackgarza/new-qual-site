@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-12
 kind: problem
-title: Questions from Tie — Spring 2015, question 12
+title: Casorati--Weierstrass for accumulating poles
 classification:
   areas:
   - complex-analysis

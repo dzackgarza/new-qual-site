@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-24
 kind: problem
-title: Questions from Tie — Spring 2015, question 24
+title: Integrals of $|\psi_\alpha'|^2$ and $|\psi_\alpha'|$ over the disk for a Blaschke factor
 classification:
   areas:
   - complex-analysis

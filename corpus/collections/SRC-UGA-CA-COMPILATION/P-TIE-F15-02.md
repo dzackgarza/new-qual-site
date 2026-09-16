@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-02
 kind: problem
-title: Questions from Tie — Fall 2015, question 2
+title: Blaschke factors are involutive automorphisms of the disk
 classification:
   areas:
   - complex-analysis

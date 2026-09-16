@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-12
 kind: problem
-title: Questions from Tie — Fall 2009, question 12
+title: Conformal map of the disk minus a tangent disk onto the unit disk
 classification:
   areas:
   - complex-analysis

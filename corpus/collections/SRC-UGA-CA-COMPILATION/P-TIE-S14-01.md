@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S14-01
 kind: problem
-title: Questions from Tie — Spring 2014, question 1
+title: $\int_\gamma z^n\,dz$ over circles centered at the origin without Cauchy's theorem
 classification:
   areas:
   - complex-analysis

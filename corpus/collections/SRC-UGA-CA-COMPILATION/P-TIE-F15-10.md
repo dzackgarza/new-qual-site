@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-10
 kind: problem
-title: Questions from Tie — Fall 2015, question 10
+title: Entire functions with $f(z)\to\infty$ are polynomials
 classification:
   areas:
   - complex-analysis

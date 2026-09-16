@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-18
 kind: problem
-title: Questions from Tie — Spring 2015, question 18
+title: Univalent functions on a punctured plane are Möbius transformations
 classification:
   areas:
   - complex-analysis
