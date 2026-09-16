@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: FD-BWVRA
-kind: definition
+kind: proposition
 title: Surjective maps are the maps with a right inverse
 prompts:
 - What condition on inverses characterises a surjective function?

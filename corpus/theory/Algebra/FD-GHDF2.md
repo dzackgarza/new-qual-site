@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: FD-GHDF2
-kind: definition
+kind: proposition
 title: Sign of a permutation from its cycle decomposition
 prompts:
 - How do you read the sign of a permutation off its disjoint cycle decomposition?
