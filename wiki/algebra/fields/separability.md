@@ -13,7 +13,7 @@ Every algebraic extension of a field of characteristic $0$ or of a finite field 
 
 [[D-JGYLA]]
 
-[[FD-6WSIA]] [[FD-OUWGL]]
+[[FD-6WSIA]]
 
 [[PR-ENHVC]]
 

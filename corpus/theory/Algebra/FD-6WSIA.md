@@ -5,6 +5,7 @@ kind: definition
 title: Separable field extension
 prompts:
 - What does it mean for a field extension $L/K$ to be separable?
+- What does it mean for a field extension $L/K$ to be separable, in terms of minimal polynomials?
 classification:
   areas:
   - algebra
