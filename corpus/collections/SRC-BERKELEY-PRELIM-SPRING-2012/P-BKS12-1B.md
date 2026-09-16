@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-1B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 1B
+title: Fourier series of an indicator function and the sum $\sum\sin n/n$
 classification:
   areas:
   - prelim

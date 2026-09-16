@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-8A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 8A
+title: Eigenvalues are roots of annihilating polynomials
 classification:
   areas:
   - prelim

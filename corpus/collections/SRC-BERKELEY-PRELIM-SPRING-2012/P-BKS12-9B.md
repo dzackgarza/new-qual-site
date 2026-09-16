@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-9B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 9B
+title: Infinitely many integer solutions of $x^2-2y^2=7$
 classification:
   areas:
   - prelim

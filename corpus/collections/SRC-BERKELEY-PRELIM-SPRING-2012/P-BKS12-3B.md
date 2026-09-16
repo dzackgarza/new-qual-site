@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-3B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 3B
+title: Contour integral of $z^4/(z^5-z-1)$ over $|z|=2$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-3A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 3A
+title: Moments of $\exp(-x^{1/4})\sin(x^{1/4})$
 classification:
   areas:
   - prelim

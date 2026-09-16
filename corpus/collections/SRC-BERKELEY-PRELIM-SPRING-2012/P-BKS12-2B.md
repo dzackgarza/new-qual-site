@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-2B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 2B
+title: Structure of $(\mathbb Z/2012\mathbb Z)^\times$
 classification:
   areas:
   - prelim

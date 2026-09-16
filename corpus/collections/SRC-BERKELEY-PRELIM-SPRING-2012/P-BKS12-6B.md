@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-6B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 6B
+title: Integer-valued rational polynomials determined by $n$ consecutive values
 classification:
   areas:
   - prelim

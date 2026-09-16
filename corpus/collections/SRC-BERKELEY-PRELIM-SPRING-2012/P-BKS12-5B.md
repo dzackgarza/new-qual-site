@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-5B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 5B
+title: Increasing functions have a point of continuity
 classification:
   areas:
   - prelim

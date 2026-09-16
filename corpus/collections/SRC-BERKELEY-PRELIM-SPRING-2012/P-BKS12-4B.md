@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-4B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 4B
+title: Conjugacy classes of nilpotent $5\times 5$ complex matrices
 classification:
   areas:
   - prelim

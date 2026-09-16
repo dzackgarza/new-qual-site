@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-8B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 8B
+title: Product of commuting diagonalizable operators is diagonalizable
 classification:
   areas:
   - prelim

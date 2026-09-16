@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-6A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 6A
+title: Mersenne numbers $2^p-1$ are base-2 pseudoprimes
 classification:
   areas:
   - prelim

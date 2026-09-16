@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-7B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 7B
+title: Comparison of real parts of entire functions from the unit circle
 classification:
   areas:
   - prelim

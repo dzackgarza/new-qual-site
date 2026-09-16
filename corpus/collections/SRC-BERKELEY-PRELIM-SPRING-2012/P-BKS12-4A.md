@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-4A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 4A
+title: Eigenvalues of the skew-symmetric tridiagonal matrix with entries $\pm 1$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-7A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 7A
+title: The unit circle is a natural boundary for $\sum z^{2^n}$
 classification:
   areas:
   - prelim

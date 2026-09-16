@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-5A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 5A
+title: Initial value problem for the Euler equation $x^2y''+xy'+y=0$
 classification:
   areas:
   - prelim

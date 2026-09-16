@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-9A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 9A
+title: Smooth functions with an entire asymptotic Taylor series
 classification:
   areas:
   - prelim

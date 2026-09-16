@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-2A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 2A
+title: A finite group is not the union of conjugates of a proper subgroup
 classification:
   areas:
   - prelim

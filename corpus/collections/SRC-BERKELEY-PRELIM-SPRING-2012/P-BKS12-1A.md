@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS12-1A
 kind: problem
-title: Berkeley Spring 2012 prelim problem 1A
+title: Projection along a compact factor is a closed map
 classification:
   areas:
   - prelim
