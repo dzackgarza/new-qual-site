@@ -21,6 +21,7 @@ a. Show that there is a natural homomorphism $\alpha: M \to \Gamma_*(\tilde M)$.
 
 b. Assume now that $S_0 = A$ is a finitely generated $k\dash$algebra for some field $k$, that $S_1$ is a finitely generated $A\dash$module, and that $M$ is a finitely generated $S\dash$module.
    Show that $\alpha$ is an isomorphism in all large enough degrees: there is a $d_0 \in \ZZ$ such that for all $d \geq d_0$, the map $\alpha_d: M_d \to \Gamma(X, \tilde M(d))$ is an isomorphism.
+   *Hint:* use the methods of the proof of (5.19).
 
 c. With the same hypotheses, define an equivalence relation $\approx$ on graded $S\dash$modules by $M \approx M'$ if there is an integer $d$ with $M_{\geq d} \cong M'_{\geq d}$, where $M_{\geq d} = \bigoplus_{n \geq d} M_n$.
    Call a graded $S\dash$module **quasi-finitely generated** if it is equivalent to a finitely generated module.

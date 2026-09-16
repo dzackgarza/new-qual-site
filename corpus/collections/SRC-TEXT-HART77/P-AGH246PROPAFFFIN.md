@@ -17,4 +17,5 @@ review: draft
 ::: problem
 Let $f: X \to Y$ be a proper morphism of affine varieties over $k$.
 Then $f$ is a finite morphism.
+*Hint:* Use (4.11A).
 :::

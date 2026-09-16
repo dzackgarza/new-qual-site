@@ -30,4 +30,7 @@ K(Y) \to K(X) \to K(X - Y) \to 0,
 \]
 where the first map is extension by zero and the second is restriction.
 *Hint:* for exactness in the middle, show that if $\mcf$ is a coherent sheaf on $X$ whose support is contained in $Y$, then there is a finite filtration $\mcf = \mcf_0 \supseteq \mcf_1 \supseteq \cdots \supseteq \mcf_n = 0$ such that each $\mcf_i/\mcf_{i+1}$ is an $\OO_Y\dash$module.
+To show surjectivity on the right, use (Ex. 5.15).
+
+For further information about $K(X)$, and its applications to the generalized Riemann--Roch theorem, see Borel--Serre, Manin, and Hartshorne Appendix A.
 :::

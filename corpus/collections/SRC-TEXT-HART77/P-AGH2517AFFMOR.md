@@ -18,7 +18,7 @@ review: draft
 A morphism $f: X \to Y$ of schemes is **affine** if there is an open affine cover $\ts{V_i}$ of $Y$ such that $f\inv(V_i)$ is affine for each $i$.
 
 a. Show that $f: X \to Y$ is affine if and only if for every open affine $V \subseteq Y$, $f\inv(V)$ is affine.
-*Hint:* reduce to the case $Y$ affine.
+*Hint:* reduce to the case $Y$ affine, and use (Ex. 2.17).
 
 b. An affine morphism is quasi-compact and separated.
 Any finite morphism is affine.

@@ -15,18 +15,18 @@ review: draft
 ---
 
 ::: problem
-Let $\characteristic k \neq 2$, and let $X$ be the affine quadric hypersurface
+Let $\characteristic k \neq 2$, and let $X$ be the affine quadric hypersurface (cf. (I, Ex. 5.12))
 \[
 \Spec k[x_0, \ldots, x_n]/(x_0^2 + x_1^2 + \cdots + x_r^2)
 .\]
 
-a. Show that $X$ is normal if $r \geq 2$.
+a. Show that $X$ is normal if $r \geq 2$ (use (Ex. 6.4)).
 
 b. Show by a suitable linear change of coordinates that the equation of $X$ can be written $x_0 x_1 = x_2^2 + \cdots + x_r^2$.
-   Now show that
+   Now imitate the method of (6.5.2) to show that
 
     1. if $r = 2$, then $\Cl X \cong \ZZ/2\ZZ$;
-    2. if $r = 3$, then $\Cl X \cong \ZZ$;
+    2. if $r = 3$, then $\Cl X \cong \ZZ$ (use (6.6.1) and (Ex. 6.3) above);
     3. if $r \geq 4$, then $\Cl X = 0$.
 
 c. Now let $Q$ be the projective quadric hypersurface in $\PP^n$ defined by the same equation.
