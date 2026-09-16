@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-2A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 2A
+title: Grönwall's inequality
 classification:
   areas:
   - prelim

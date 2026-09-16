@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-8A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 8A
+title: Ring elements with several right inverses are exactly the right-invertible nonunits
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-5B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 5B
+title: Holomorphic self-maps of a bounded domain tangent to the identity have $a_2=0$
 classification:
   areas:
   - prelim

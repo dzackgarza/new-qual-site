@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-8B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 8B
+title: $561$ is a Carmichael number
 classification:
   areas:
   - prelim

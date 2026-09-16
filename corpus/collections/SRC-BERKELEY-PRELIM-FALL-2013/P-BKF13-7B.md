@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-7B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 7B
+title: Invertibility of $I_m-AB$ implies invertibility of $I_n-BA$
 classification:
   areas:
   - prelim

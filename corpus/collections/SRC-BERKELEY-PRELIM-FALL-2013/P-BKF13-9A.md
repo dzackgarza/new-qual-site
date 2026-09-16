@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-9A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 9A
+title: Nontrivial second center and a derived series with four distinct terms
 classification:
   areas:
   - prelim

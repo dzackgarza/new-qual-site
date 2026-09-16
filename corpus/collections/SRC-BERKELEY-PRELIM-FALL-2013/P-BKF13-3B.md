@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-3B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 3B
+title: Integrability of $\int_x^1 f(t)/t\,dt$ for integrable $f$
 classification:
   areas:
   - prelim

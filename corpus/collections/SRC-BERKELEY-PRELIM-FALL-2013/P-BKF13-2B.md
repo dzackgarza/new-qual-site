@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-2B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 2B
+title: Metric spaces are connected exactly when real-valued continuous images are intervals
 classification:
   areas:
   - prelim

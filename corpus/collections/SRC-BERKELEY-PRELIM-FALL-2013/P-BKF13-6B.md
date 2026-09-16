@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-6B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 6B
+title: A product of two real $2\times2$ involutions with eigenvalues $2$ and $1/2$
 classification:
   areas:
   - prelim

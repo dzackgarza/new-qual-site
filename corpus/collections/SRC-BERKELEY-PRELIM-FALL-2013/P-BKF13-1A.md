@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-1A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 1A
+title: Intersection point of the two branches of $x^y=y^x$
 classification:
   areas:
   - prelim

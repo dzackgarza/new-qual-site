@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-4B
 kind: problem
-title: Berkeley Fall 2013 prelim problem 4B
+title: Evaluation of $\int_{-\infty}^{\infty} x\sin x/(x^2+1)\,dx$
 classification:
   areas:
   - prelim

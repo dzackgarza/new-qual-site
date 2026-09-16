@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-5A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 5A
+title: Evaluation of $\int_0^{2\pi}\cos x/(2+\cos x)\,dx$
 classification:
   areas:
   - prelim

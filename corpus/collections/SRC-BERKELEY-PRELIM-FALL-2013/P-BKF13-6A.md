@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-6A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 6A
+title: Conjugation-invariant quadratic forms on $2\times2$ complex matrices
 classification:
   areas:
   - prelim

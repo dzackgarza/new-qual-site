@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-4A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 4A
+title: 'Roots of $z^5-6z+3$: distinct, exactly three real'
 classification:
   areas:
   - prelim

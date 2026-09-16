@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-7A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 7A
+title: Diagonalizability of sums, products, idempotents and square roots of matrices
 classification:
   areas:
   - prelim

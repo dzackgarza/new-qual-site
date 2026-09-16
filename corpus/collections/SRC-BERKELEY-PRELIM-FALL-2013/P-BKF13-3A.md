@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF13-3A
 kind: problem
-title: Berkeley Fall 2013 prelim problem 3A
+title: Convergence of the iteration $x_{n+1}=1/(1+x_n)$
 classification:
   areas:
   - prelim
