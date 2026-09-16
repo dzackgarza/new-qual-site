@@ -23,8 +23,27 @@ prompts:
 ---
 
 ::: {.definition title="Smooth"}
-$f : X \to Y$ is **smooth** if it is flat, locally of finite presentation, and has geometrically regular fibres.
-It is **smooth of relative dimension $n$** if in addition every irreducible component of every fibre has dimension $n$, equivalently $\Omega_{X/Y}$ is locally free of rank $n$ on a flat, locally finitely presented $f$.
+$f : X \to Y$ is \dfn{smooth} if it is flat, locally of finite presentation, and has geometrically regular fibres.
+It is \dfn{smooth of relative dimension $n$} if in addition every irreducible component of every fibre has dimension $n$.
+:::
+
+::: {.proposition title="Criteria for smoothness of relative dimension $n$"}
+For a morphism $f \colon X \to Y$ the following are equivalent.
+
+1. $f$ is smooth of relative dimension $n$.
+
+2. $f$ is flat and locally of finite presentation, every fibre has pure dimension $n$, and $\Omega_{X/Y}$ is locally free of rank $n$.
+
+3. $f$ is flat and locally of finite presentation, and every fibre $X_y$ is smooth of pure dimension $n$ over $\kappa(y)$.
+
+4. $f$ is flat and locally of finite presentation, and every geometric fibre is a regular scheme of pure dimension $n$.
+
+5. Locally on $X$ and $Y$, $f$ is induced by $B \to B[x_1, \ldots, x_{n+r}]/(g_1, \ldots, g_r)$ with $\det(\partial g_i / \partial x_j)_{1 \leq i, j \leq r}$ invertible.
+:::
+
+::: {.example}
+The fibre-dimension hypothesis in condition 2 cannot be dropped.
+Over $k = \FF_p$, the morphism $\Spec k[x]/(x^p) \to \Spec k$ is flat and of finite presentation, and $\Omega = (k[x]/(x^p))\, dx$ is free of rank $1$ because $d(x^p) = p x^{p-1} dx = 0$; but the fibre has dimension $0$, not $1$, and it is not reduced, so the morphism is not smooth.
 :::
 
 ::: {.remark}
