@@ -31,6 +31,21 @@ The local orientations form the orientation double cover $\tilde M = \ts{\mu_x \
 The manifold $\tilde M$ is orientable, and a connected manifold $M$ is orientable if and only if $\tilde M$ has two components [@Hat02, §3.3].
 :::
 
+::: {.proposition}
+Let $M$ be a connected $n$-manifold with [[D-WX7JH|orientation double cover]] $p\colon\tilde M\to M$, and let $x\in M$.
+The following are equivalent:
+
+(a) $M$ is orientable.
+
+(b) $\tilde M$ is disconnected.
+
+(c) $\tilde M$ has two components, each mapped homeomorphically onto $M$ by $p$.
+
+(d) $p$ has a continuous section $s\colon M\to\tilde M$, $p\circ s = \id_M$.
+
+(e) The homomorphism $\pi_1(M, x)\to\ZZ/2$ given by the action of $\pi_1(M,x)$ on the two-point fiber $p\inv(x)$ is trivial.
+:::
+
 ::: {.concept}
 [@Hat02, §3.3, p. 234].
 :::

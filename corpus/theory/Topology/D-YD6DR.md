@@ -25,7 +25,7 @@ Let $M$ be an $n$-manifold.
 
 (a) $M$ is $\ZZ/2$-orientable.
 
-(b) If $M$ is [[D-YCPJX|orientable]], then $M$ is $R$-orientable for every commutative ring $R$ with identity.
+(b) If $M$ is [[D-6CI7D|orientable]], then $M$ is $R$-orientable for every commutative ring $R$ with identity.
 
 (c) If $R$ is a commutative ring with identity in which $2\neq 0$, then $M$ is $R$-orientable if and only if $M$ is orientable.
 :::
