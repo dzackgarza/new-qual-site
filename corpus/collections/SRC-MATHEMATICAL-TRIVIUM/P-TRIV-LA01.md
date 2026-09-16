@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA01
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 1'
+title: Conic sections of the cone $z^2=x^2+y^2$ by the planes $z-ax=1$
 classification:
   areas: [prelim]
   topics: []

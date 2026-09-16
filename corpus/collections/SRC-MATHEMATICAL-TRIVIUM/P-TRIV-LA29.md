@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA29
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 29'
+title: Continuous path from the identity to the unilateral shift
 classification:
   areas: [prelim]
   topics: []

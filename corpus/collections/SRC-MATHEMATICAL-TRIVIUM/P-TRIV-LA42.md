@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA42
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 42'
+title: Coplanarity of four points in $\mathbb{R}^3$
 classification:
   areas: [prelim]
   topics: []

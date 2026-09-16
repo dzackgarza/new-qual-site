@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA35
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 35'
+title: Change of basis for a matrix exponential
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA23
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 23'
+title: Matrices of stretching transformations of $\mathbb{R}^3$ and their eigenvectors
 classification:
   areas: [prelim]
   topics: []

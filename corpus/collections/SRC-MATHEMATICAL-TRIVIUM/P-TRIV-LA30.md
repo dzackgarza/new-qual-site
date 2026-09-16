@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA30
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 30'
+title: Number of independent real parameters of a unitary matrix
 classification:
   areas: [prelim]
   topics: []

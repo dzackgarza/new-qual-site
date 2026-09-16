@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA04
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 4'
+title: Determinant under a row interchange
 classification:
   areas: [prelim]
   topics: []

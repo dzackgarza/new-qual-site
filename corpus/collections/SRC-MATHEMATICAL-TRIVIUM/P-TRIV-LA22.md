@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA22
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 22'
+title: Common eigenvectors and commuting transformations
 classification:
   areas: [prelim]
   topics: []

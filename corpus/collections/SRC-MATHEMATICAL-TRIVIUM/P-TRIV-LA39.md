@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA39
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 39'
+title: Solving a $3\times 3$ linear system
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA25
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 25'
+title: Diagonalization and invariant subspaces of a symmetric $3\times 3$ matrix
 classification:
   areas: [prelim]
   topics: []

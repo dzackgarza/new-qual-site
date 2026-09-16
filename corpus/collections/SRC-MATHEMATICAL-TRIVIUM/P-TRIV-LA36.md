@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA36
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 36'
+title: Lie--Trotter product formula
 classification:
   areas: [prelim]
   topics: []

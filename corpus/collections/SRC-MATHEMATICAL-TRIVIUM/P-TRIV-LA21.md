@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA21
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 21'
+title: No commutator of real matrices is a nonzero multiple of the identity
 classification:
   areas: [prelim]
   topics: []

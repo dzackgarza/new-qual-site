@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA11
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 11'
+title: Vandermonde determinant
 classification:
   areas: [prelim]
   topics: []

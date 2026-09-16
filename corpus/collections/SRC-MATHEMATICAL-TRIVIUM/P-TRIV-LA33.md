@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA33
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 33'
+title: $e^A=(e^{A/N})^N$
 classification:
   areas: [prelim]
   topics: []

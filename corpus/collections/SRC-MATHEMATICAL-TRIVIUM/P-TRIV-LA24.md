@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA24
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 24'
+title: Translations are not linear
 classification:
   areas: [prelim]
   topics: []

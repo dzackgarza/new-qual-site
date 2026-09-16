@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA09
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 9'
+title: Determinant of the all-ones matrix with zeros on the diagonal after the first entry
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA06
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 6'
+title: $\log\det A=\operatorname{Tr}\log A$
 classification:
   areas: [prelim]
   topics: []

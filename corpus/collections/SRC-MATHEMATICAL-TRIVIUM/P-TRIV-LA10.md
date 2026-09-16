@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA10
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 10'
+title: Eigenvalues and eigenvectors of the cyclic shift matrix
 classification:
   areas: [prelim]
   topics: []

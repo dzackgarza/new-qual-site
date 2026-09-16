@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA18
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 18'
+title: Rotation matrix about an axis and its trace
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA16
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 16'
+title: Reflection matrices in $\mathbb{R}^3$ across a point, an axis and a plane
 classification:
   areas: [prelim]
   topics: []

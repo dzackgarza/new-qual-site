@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA40
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 40'
+title: Homogeneous linear systems and their solution spaces
 classification:
   areas: [prelim]
   topics: []

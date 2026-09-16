@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA20
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 20'
+title: Commutators and anticommutators of the Pauli matrices
 classification:
   areas: [prelim]
   topics: []

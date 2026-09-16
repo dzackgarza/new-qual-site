@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA28
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 28'
+title: Orthonormal basis adapted to two vectors in $\mathbb{R}^2$
 classification:
   areas: [prelim]
   topics: []

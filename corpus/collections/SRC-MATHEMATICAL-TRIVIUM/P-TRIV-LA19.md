@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA19
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 19'
+title: Pauli matrices as a basis of $2\times 2$ Hermitian matrices
 classification:
   areas: [prelim]
   topics: []

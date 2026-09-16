@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA08
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 8'
+title: Determinant of a $2\times 2$ block matrix
 classification:
   areas: [prelim]
   topics: []

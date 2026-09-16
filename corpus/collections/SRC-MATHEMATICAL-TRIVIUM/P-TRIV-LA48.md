@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA48
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 48'
+title: Arranging three stars by spaceship rotations and boosts
 classification:
   areas: [prelim]
   topics: []

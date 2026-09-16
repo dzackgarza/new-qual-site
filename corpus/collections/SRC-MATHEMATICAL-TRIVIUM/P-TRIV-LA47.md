@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA47
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 47'
+title: Simultaneous diagonalization of two binary quadratic forms
 classification:
   areas: [prelim]
   topics: []

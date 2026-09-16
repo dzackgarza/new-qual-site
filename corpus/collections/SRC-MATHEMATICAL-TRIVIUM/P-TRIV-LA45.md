@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA45
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 45'
+title: Positive definiteness of $9x_1^2+6x_1x_2+6x_2^2+8x_2x_3+4x_3^2$
 classification:
   areas: [prelim]
   topics: []

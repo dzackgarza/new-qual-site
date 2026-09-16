@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA13
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 13'
+title: Rotation and reflection matrices in $\mathbb{R}^2$
 classification:
   areas: [prelim]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA44
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 44'
+title: Canonical form, rank and signature of a ternary quadratic form
 classification:
   areas: [prelim]
   topics: []

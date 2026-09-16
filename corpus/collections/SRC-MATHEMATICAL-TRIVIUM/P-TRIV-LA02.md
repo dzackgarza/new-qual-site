@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA02
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 2'
+title: Powers, inverse, eigenvalues and diagonalization of $\begin{pmatrix}1&2\\5&4\end{pmatrix}$
 classification:
   areas: [prelim]
   topics: []

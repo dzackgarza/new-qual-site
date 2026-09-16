@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA34
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 34'
+title: Expansion of $e^{-\lambda B}Ae^{\lambda B}$ in nested commutators
 classification:
   areas: [prelim]
   topics: []

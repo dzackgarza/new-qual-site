@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA38
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 38'
+title: Rotation--scaling--shear decomposition of $SL_2(\mathbb{R})$ matrices
 classification:
   areas: [prelim]
   topics: []

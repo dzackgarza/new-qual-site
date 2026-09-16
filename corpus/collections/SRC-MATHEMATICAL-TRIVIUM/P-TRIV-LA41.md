@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA41
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 41'
+title: Consistency of a $3\times 3$ linear system
 classification:
   areas: [prelim]
   topics: []

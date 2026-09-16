@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA07
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 7'
+title: First-order expansion of $\det(I+\epsilon B)$
 classification:
   areas: [prelim]
   topics: []

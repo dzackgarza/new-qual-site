@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA26
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 26'
+title: Linear transformations preserving a sphere, a light cone and a hyperboloid
 classification:
   areas: [prelim]
   topics: []

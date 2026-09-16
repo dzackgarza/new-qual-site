@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA32
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 32'
+title: $e^Ae^B=e^{A+B}$ for commuting matrices
 classification:
   areas: [prelim]
   topics: []

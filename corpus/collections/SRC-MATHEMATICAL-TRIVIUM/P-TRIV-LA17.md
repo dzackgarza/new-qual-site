@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA17
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 17'
+title: Which reflections in $\mathbb{R}^n$ are rotations
 classification:
   areas: [prelim]
   topics: []

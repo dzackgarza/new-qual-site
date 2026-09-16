@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA14
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 14'
+title: Orthogonality of real matrices with $(\det A)^2=1$
 classification:
   areas: [prelim]
   topics: []

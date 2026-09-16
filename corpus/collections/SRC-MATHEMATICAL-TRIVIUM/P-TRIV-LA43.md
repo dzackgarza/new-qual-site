@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA43
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 43'
+title: Relative position of two lines given as intersections of planes
 classification:
   areas: [prelim]
   topics: []

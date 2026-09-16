@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA05
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 5'
+title: Determinants of $A^T$, $A^{-1}$ and $cA$
 classification:
   areas: [prelim]
   topics: []

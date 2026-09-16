@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA37
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 37'
+title: Polar decomposition of $2\times 2$ matrices
 classification:
   areas: [prelim]
   topics: []

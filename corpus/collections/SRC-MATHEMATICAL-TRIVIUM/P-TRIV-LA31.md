@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA31
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 31'
+title: Exponentials of the infinitesimal rotation generators of $SO(3)$
 classification:
   areas: [prelim]
   topics: []

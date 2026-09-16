@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA12
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 12'
+title: 'Wronskian: Abel''s formula, change of variables and scaling'
 classification:
   areas: [prelim]
   topics: []

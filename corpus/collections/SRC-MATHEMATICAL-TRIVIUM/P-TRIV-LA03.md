@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA03
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 3'
+title: Linear independence of $(1,2,3)$, $(1,3,5)$, $(5,13,15)$
 classification:
   areas: [prelim]
   topics: []

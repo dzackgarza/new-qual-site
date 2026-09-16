@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA46
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 46'
+title: Canonical form of $\sum_i x_i^2+\sum_{i<j}x_ix_j$
 classification:
   areas: [prelim]
   topics: []

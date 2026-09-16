@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRIV-LA27
 kind: problem
-title: 'Mathematical Trivium — Linear Algebra problem 27'
+title: Orthogonal transformation sending $(1,\sqrt2,\sqrt3)$ to $(0,\sqrt2,2)$
 classification:
   areas: [prelim]
   topics: []
