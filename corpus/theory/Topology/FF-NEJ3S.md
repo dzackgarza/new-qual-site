@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-NEJ3S
 kind: fact
-title: $H_* \mathbb{CP}^2$
+title: Homology of $\CP^2$
 prompts:
 - What is $H_* \mathbb{CP}^2$?
 classification:
@@ -16,5 +16,12 @@ review: draft
 ---
 
 ::: {.fact}
-$$[\mathbb{Z}, 0,                 \mathbb{Z},  0,      \mathbb{Z},  0\rightarrow  ]$$
+The integral homology groups of $\CP^2$ are
+$$
+H_k(\CP^2;\ZZ) \cong \begin{cases}
+\ZZ & k = 0, 2, 4,\\
+0 & \text{otherwise}
+\end{cases}
+$$
+[@Hat02, §2.2, p. 140].
 :::
