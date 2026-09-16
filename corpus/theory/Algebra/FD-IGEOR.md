@@ -5,6 +5,7 @@ kind: definition
 title: Stabilizer $G_x$ of a point
 prompts:
 - For a group action $G \actson X$, what is $G_x$?
+- What is the stabilizer of a point under a group action?
 classification:
   areas:
   - algebra

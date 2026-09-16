@@ -72,7 +72,7 @@ $$
 
 [[FD-KSKDG]]
 
-[[FD-IGEOR]] [[FD-W3MQW]]
+[[FD-IGEOR]]
 
 ## The orbit-stabilizer theorem
 
