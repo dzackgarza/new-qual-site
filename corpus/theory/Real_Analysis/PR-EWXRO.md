@@ -23,7 +23,7 @@ Let $(X,\mcm)$ be a measurable space.
 :::
 
 ::: {.proof}
-(a) The map $\Phi\colon X\to\RR^2$, $x\mapsto(f(x),g(x))$, is $(\mcm,\mcb_{\RR^2})$-measurable, since $\Phi\inv(I\times J)=f\inv(I)\cap g\inv(J)$ and open rectangles generate $\mcb_{\RR^2}$.
+(a) The map $\Phi\colon X\to\RR^2$, $x\mapsto(f(x),g(x))$, is $(\mcm,\mcb_{\RR^2})$-measurable for the Borel $\sigma$-algebra $\mcb_{\RR^2}$, since $\Phi\inv(I\times J)=f\inv(I)\cap g\inv(J)$ and open rectangles generate $\mcb_{\RR^2}$.
 The maps $(s,t)\mapsto s+t$, $st$, $\max(s,t)$, $\min(s,t)$ are continuous, hence Borel, and a composite of measurable maps is measurable.
 
 (b) For $\alpha\in\RR$, $(\sup_n f_n)\inv((\alpha,\infty])=\bigcup_n f_n\inv((\alpha,\infty])\in\mcm$, and similarly $\inf_n f_n$ is measurable.
