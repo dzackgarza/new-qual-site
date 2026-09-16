@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition}
-The **dimension** of $X$ is the supremum of $n$ over chains
+The \dfn{dimension} of $X$ is the supremum of $n$ over chains
 \[
 Z_0 \subsetneq Z_1 \subsetneq \cdots \subsetneq Z_n
 \]

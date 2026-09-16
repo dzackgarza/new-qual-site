@@ -20,7 +20,7 @@ prompts:
 
 ::: {.definition title="integrally closed"}
 Let $A$ be an integral domain with fraction field $K(A)$.
-$A$ is **integrally closed** if for every monic $f(x) \in A[x]$, any root $\alpha \in K(A)$ of $f$ already lies in $A$.
+$A$ is \dfn{integrally closed} if for every monic $f(x) \in A[x]$, any root $\alpha \in K(A)$ of $f$ already lies in $A$.
 Equivalently, $A$ equals its integral closure in $K(A)$.
 :::
 

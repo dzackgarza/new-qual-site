@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Unramified"}
-$f : X \to Y$ locally of finite type is **unramified** if for every $x \in X$ with $y = f(x)$,
+$f : X \to Y$ locally of finite type is \dfn{unramified} if for every $x \in X$ with $y = f(x)$,
 \[
 f^\sharp(\mfm_y) \OO_{X,x} = \mfm_x
 \qquad\text{and}\qquad

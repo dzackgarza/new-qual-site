@@ -24,7 +24,7 @@ prompts:
 ::: {.definition}
 Let $P$ have dimension $d$.
 
-- $P$ is a **simplex** if it has exactly $d+1$ vertices.
+- $P$ is a \dfn{simplex} if it has exactly $d+1$ vertices.
 
 - $P$ is **simple** if every vertex lies on exactly $d$ facets.
 

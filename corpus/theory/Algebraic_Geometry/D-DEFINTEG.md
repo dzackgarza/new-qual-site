@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="integral ring morphism"}
-A ring morphism $\phi: B \to A$ is **integral** if every element of $A$ is a root of a monic polynomial with coefficients in $\phi(B)$.
+A ring morphism $\phi: B \to A$ is \dfn{integral} if every element of $A$ is a root of a monic polynomial with coefficients in $\phi(B)$.
 When $\phi$ is an inclusion $B \subseteq A$, we call $A$ an **integral extension** of $B$.
 :::
 

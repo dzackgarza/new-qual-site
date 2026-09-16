@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition}
-For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \da \OO_{Y,y}/\mfm_y$, the **fibre** is
+For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \da \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
 \[
 X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
 \]

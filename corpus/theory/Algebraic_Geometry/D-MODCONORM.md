@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="Conormal and normal"}
-For a closed immersion $i: Z \injects X$ with ideal sheaf $\mci$, the **conormal sheaf** is $\mci/\mci^2$, an $\OO_Z$-module, and the **normal sheaf** is its dual $\mcn_{Z/X} \da \sheafhom_{\OO_Z}(\mci/\mci^2, \OO_Z)$.
+For a closed immersion $i: Z \injects X$ with ideal sheaf $\mci$, the \dfn{conormal sheaf} is $\mci/\mci^2$, an $\OO_Z$-module, and the **normal sheaf** is its dual $\mcn_{Z/X} \da \sheafhom_{\OO_Z}(\mci/\mci^2, \OO_Z)$.
 :::
 
 ::: {.theorem title="Adjunction"}

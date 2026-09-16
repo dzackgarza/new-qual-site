@@ -26,7 +26,7 @@ prompts:
 ::: {.definition}
 For a projective curve $C$ over $k = \bar{k}$:
 
-- the **arithmetic genus** is $p_a(C) = 1 - \chi(\OO_C)$, the constant term of the Hilbert polynomial read with a sign;
+- the \dfn{arithmetic genus} is $p_a(C) = 1 - \chi(\OO_C)$, the constant term of the Hilbert polynomial read with a sign;
 
 - the **geometric genus** is $p_g(C) = h^0(\tilde{C}, \omega_{\tilde{C}}) = p_a(\tilde{C})$, computed on the normalization $\tilde{C}$.
 :::

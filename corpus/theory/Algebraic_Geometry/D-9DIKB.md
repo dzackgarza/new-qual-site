@@ -19,12 +19,12 @@ prompts:
 ---
 
 ::: {.definition title="Irreducible"}
-A nonempty topological space is **irreducible** if it is not the union of two proper closed subsets.
+A nonempty topological space is \dfn{irreducible} if it is not the union of two proper closed subsets.
 Equivalently, any two nonempty open subsets meet.
 :::
 
 ::: {.definition title="Noetherian"}
-A topological space is **Noetherian** if its closed subsets satisfy the descending chain condition.
+A topological space is \dfn{Noetherian} if its closed subsets satisfy the descending chain condition.
 :::
 
 ::: {.remark}

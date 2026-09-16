@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Dimension"}
-The **dimension** of a topological space is the supremum of the lengths $n$ of chains
+The \dfn{dimension} of a topological space is the supremum of the lengths $n$ of chains
 \[
 Z_0 \subsetneq Z_1 \subsetneq \cdots \subsetneq Z_n
 \]

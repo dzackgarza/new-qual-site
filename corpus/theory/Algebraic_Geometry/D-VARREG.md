@@ -24,7 +24,7 @@ prompts:
 
 ::: {.definition title="Regular functions"}
 Let $X$ be a variety and $U \subseteq X$ open.
-A function $\phi: U \to k$ is **regular** if for every $p \in U$ there is an open $U_p \ni p$ and polynomials $f, g$ with $g$ nowhere zero on $U_p$ and $\restrictionof{\phi}{U_p} = f/g$.
+A function $\phi: U \to k$ is \dfn{regular} if for every $p \in U$ there is an open $U_p \ni p$ and polynomials $f, g$ with $g$ nowhere zero on $U_p$ and $\restrictionof{\phi}{U_p} = f/g$.
 These form a sheaf $\OO_X$.
 The stalk $\OO_{X,p}$ is the **local ring at $p$**, with maximal ideal $\mfm_p$ the regular functions vanishing at $p$, and the stalk at the generic point is the **function field** $k(X)$.
 :::

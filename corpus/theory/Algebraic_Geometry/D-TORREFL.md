@@ -29,7 +29,7 @@ P^\circ = \ts{ u \in N_\RR \st \inp{m}{u} \geq -1 \text{ for all } m \in P } .
 :::
 
 ::: {.definition title="Reflexive"}
-$P$ is **reflexive** if it is a lattice polytope with facet presentation
+$P$ is \dfn{reflexive} if it is a lattice polytope with facet presentation
 \[
 P = \ts{ m \in M_\RR \st \inp{m}{u_F} \geq -1 \text{ for every facet } F } ,
 \]

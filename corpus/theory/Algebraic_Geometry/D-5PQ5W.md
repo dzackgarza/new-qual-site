@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Weil"}
-On a Noetherian integral separated scheme regular in codimension one, a **Weil divisor** is a finite formal $\ZZ$-combination of codimension-one integral closed subschemes.
+On a Noetherian integral separated scheme regular in codimension one, a \dfn{Weil divisor} is a finite formal $\ZZ$-combination of codimension-one integral closed subschemes.
 For $f \in K(X)^*$,
 \[
 \div(f) = \sum_{\codim Y = 1} v_Y(f) \cdot Y ,
@@ -31,7 +31,7 @@ The quotient by these **principal** divisors is the class group $\Cl(X)$.
 :::
 
 ::: {.definition title="Cartier"}
-A **Cartier divisor** is a global section of $\mck^*/\OO_X^*$: a collection of nonzero rational functions $f_i$ on an open cover whose ratios $f_i/f_j$ are units on overlaps.
+A \dfn{Cartier divisor} is a global section of $\mck^*/\OO_X^*$: a collection of nonzero rational functions $f_i$ on an open cover whose ratios $f_i/f_j$ are units on overlaps.
 Modulo global rational functions this is $\Pic(X)$.
 :::
 

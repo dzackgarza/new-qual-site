@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="Locally free"}
-$\mcf$ is **free** of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$, and **locally free** of rank $n$ if $X$ has an open cover on which $\mcf$ is free of rank $n$.
+$\mcf$ is \dfn{free} of rank $n$ if $\mcf \cong \OO_X\sumpower{n}$, and **locally free** of rank $n$ if $X$ has an open cover on which $\mcf$ is free of rank $n$.
 An **invertible sheaf** is a locally free sheaf of rank $1$.
 :::
 

@@ -23,7 +23,7 @@ prompts:
 ::: {.definition title="The trichotomy by canonical class"}
 Let $X$ be a smooth complete variety with canonical divisor $K_X$.
 
-- $X$ is **Fano** if $-K_X$ is ample.
+- $X$ is \dfn{Fano} if $-K_X$ is ample.
 
 - $X$ is **Calabi--Yau** if $K_X \sim_\QQ 0$; the stricter convention demands $\omega_X \cong \OO_X$ together with $h^j(\OO_X) = 0$ for $1 \leq j \leq \dim X - 1$.
 

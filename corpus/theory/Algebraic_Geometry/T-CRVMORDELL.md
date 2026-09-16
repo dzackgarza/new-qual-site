@@ -25,7 +25,7 @@ prompts:
 
 ::: {.definition title="Defined over a subfield"}
 Let $k = \bar k$, let $(E, p_0)$ be elliptic, and embed $E \embeds \PP^2_{/k}$ by $\abs{3p_0}$, so $E = V(f)$ for a cubic $f$.
-Say $(E, p_0)$ is **defined over** a subfield $k_0 \subseteq k$ when $f$ can be taken with coefficients in $k_0$ and $p_0 \in E(k_0)$.
+Say $(E, p_0)$ is \dfn{defined over} a subfield $k_0 \subseteq k$ when $f$ can be taken with coefficients in $k_0$ and $p_0 \in E(k_0)$.
 Then $E(k_0) \leq E(k)$ is a subgroup.
 :::
 

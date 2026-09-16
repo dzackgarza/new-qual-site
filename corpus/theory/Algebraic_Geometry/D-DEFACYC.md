@@ -21,7 +21,7 @@ prompts:
 
 ::: {.definition title="acyclic"}
 Let $\mca$ be an abelian category with enough injectives and $F: \mca \to \mcb$ a left exact additive functor, so that the $R^iF$ exist.
-An object $A \in \mca$ is **$F$-acyclic** if the higher right derived functors vanish:
+An object $A \in \mca$ is \dfn{$F$-acyclic} if the higher right derived functors vanish:
 \[
 R^iF(A) = 0 \text{ for all } i > 0 .
 \]

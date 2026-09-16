@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition}
-Divisors $D$ and $D'$ on a surface $X$ are **numerically equivalent**, $D \equiv D'$, if $D \cdot E = D' \cdot E$ for every divisor $E$.
+Divisors $D$ and $D'$ on a surface $X$ are \dfn{numerically equivalent}, $D \equiv D'$, if $D \cdot E = D' \cdot E$ for every divisor $E$.
 The **Néron--Severi group** is $\NS(X) = \Div(X)/\equiv$.
 :::
 

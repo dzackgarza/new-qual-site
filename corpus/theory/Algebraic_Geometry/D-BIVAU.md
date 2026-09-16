@@ -18,7 +18,7 @@ prompts:
 ---
 
 ::: {.definition title="Zariski topology"}
-The **Zariski topology** on $\AA^n$ has as its closed sets the vanishing loci
+The \dfn{Zariski topology} on $\AA^n$ has as its closed sets the vanishing loci
 \[
 V(J) \da \ts{ p \in \AA^n \st f(p) = 0 \text{ for all } f \in J }
 \]

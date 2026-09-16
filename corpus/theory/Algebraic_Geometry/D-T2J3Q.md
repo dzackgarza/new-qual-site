@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Separated"}
-A morphism $f : X \to Y$ is **separated** if the diagonal
+A morphism $f : X \to Y$ is \dfn{separated} if the diagonal
 \[
 \Delta_{X/Y} : X \to \fiberprod{X}{Y}{X}
 \]

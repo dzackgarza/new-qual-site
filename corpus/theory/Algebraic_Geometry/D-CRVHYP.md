@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition}
-A curve $C$ of genus $g \geq 2$ is **hyperelliptic** if it admits a finite morphism $C \to \PP^1$ of degree $2$, that is, a $g^1_2$.
+A curve $C$ of genus $g \geq 2$ is \dfn{hyperelliptic} if it admits a finite morphism $C \to \PP^1$ of degree $2$, that is, a $g^1_2$.
 :::
 
 ::: {.proposition}

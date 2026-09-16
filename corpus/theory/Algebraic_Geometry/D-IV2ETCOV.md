@@ -24,7 +24,7 @@ prompts:
 ---
 
 ::: {.definition title="Étale cover"}
-A morphism $f : X \to Y$ is an **étale cover** if it is finite and étale.
+A morphism $f : X \to Y$ is an \dfn{étale cover} if it is finite and étale.
 It is a **trivial** cover if $X \cong \coprod_{i \in I} Y$ for a finite index set $I$, with $f$ the identity on each copy.
 $Y$ is **simply connected** if every étale cover of $Y$ is trivial, equivalently $\pi_1^{\Et}(Y) = 0$.
 :::

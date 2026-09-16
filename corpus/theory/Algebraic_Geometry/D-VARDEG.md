@@ -23,7 +23,7 @@ prompts:
 
 ::: {.definition title="Degree"}
 Let $X \subseteq \PP^N$ be projective of dimension $n$.
-The **degree** of $X$ is the number of points of
+The \dfn{degree} of $X$ is the number of points of
 \[
 X \intersect H_1 \intersect \cdots \intersect H_n
 \]

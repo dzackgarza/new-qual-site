@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Affine"}
-$f : X \to Y$ is **affine** if $f^{-1}(V)$ is affine for every affine open $V \subseteq Y$.
+$f : X \to Y$ is \dfn{affine} if $f^{-1}(V)$ is affine for every affine open $V \subseteq Y$.
 Equivalently, it is enough that this holds for the opens of one affine cover of $Y$.
 :::
 

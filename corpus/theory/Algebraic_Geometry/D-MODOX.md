@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="$\OO_X$-modules"}
-An **$\OO_X$-module** is a sheaf $\mcf$ on $X$ with each $\mcf(U)$ an $\OO_X(U)$-module, compatibly with restriction: $\ro{(rm)}{V} = \ro{r}{V}\ro{m}{V}$.
+An \dfn{$\OO_X$-module} is a sheaf $\mcf$ on $X$ with each $\mcf(U)$ an $\OO_X(U)$-module, compatibly with restriction: $\ro{(rm)}{V} = \ro{r}{V}\ro{m}{V}$.
 The **tensor product** $\mcf \tensor_{\OO_X} \mcg$ is the sheafification of $U \mapsto \mcf(U) \tensor_{\OO_X(U)} \mcg(U)$.
 The **sheaf hom** $\sheafhom_{\OO_X}(\mcf, \mcg)$ is $U \mapsto \Hom_{\ro{\OO_X}{U}}(\ro{\mcf}{U}, \ro{\mcg}{U})$.
 A **sheaf of ideals** is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.

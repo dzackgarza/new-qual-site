@@ -28,7 +28,7 @@ For $X$ a smooth projective curve of genus $g$ over $\CC$,
 \Jac(X) = H^0(X,\Omega^1)\dual / H_1(X,\ZZ) ,
 \]
 a complex torus of dimension $g$, and an abelian variety.
-The **Abel--Jacobi map** sends a degree-zero divisor $\sum (p_i - q_i)$ to $\sum \int_{q_i}^{p_i}$, a linear functional on $H^0(\Omega^1)$ taken modulo periods.
+The \dfn{Abel--Jacobi map} sends a degree-zero divisor $\sum (p_i - q_i)$ to $\sum \int_{q_i}^{p_i}$, a linear functional on $H^0(\Omega^1)$ taken modulo periods.
 :::
 
 ::: {.theorem title="Abel"}

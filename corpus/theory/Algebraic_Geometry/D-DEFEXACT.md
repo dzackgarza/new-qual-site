@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="exact sequences and exact functors"}
-In an abelian category $\mca$, a sequence $A \mapsvia{f} B \mapsvia{g} C$ is **exact at $B$** if $\ker g = \im f$.
+In an abelian category $\mca$, a sequence $A \mapsvia{f} B \mapsvia{g} C$ is \dfn{exact at $B$} if $\ker g = \im f$.
 A sequence
 \[
 0 \to A \mapsvia{f} B \mapsvia{g} C \to 0

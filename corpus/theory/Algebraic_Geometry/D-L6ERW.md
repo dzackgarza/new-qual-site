@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="Hilbert polynomial"}
-For $X \subseteq \PP^n$ closed with homogeneous coordinate ring $S(X) = k[x_0,\ldots,x_n]/I(X)$, the **Hilbert function** is
+For $X \subseteq \PP^n$ closed with homogeneous coordinate ring $S(X) = k[x_0,\ldots,x_n]/I(X)$, the \dfn{Hilbert function} is
 \[
 h_X(r) \da \dim_k S(X)_r .
 \]

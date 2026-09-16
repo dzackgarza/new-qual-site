@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition}
 Let $D$ be a divisor on a smooth projective curve $C$ of genus $g$.
-The **index of speciality** of $D$ is $\ell(K-D) = h^1(\OO_C(D))$.
+The \dfn{index of speciality} of $D$ is $\ell(K-D) = h^1(\OO_C(D))$.
 $D$ is **special** if this is positive, and **nonspecial** if it vanishes.
 :::
 

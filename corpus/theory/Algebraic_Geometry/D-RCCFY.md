@@ -17,11 +17,11 @@ prompts:
 ---
 
 ::: {.definition title="Presheaf"}
-A **presheaf** $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially, with $\mcf(\emptyset) = 0$.
+A \dfn{presheaf} $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially, with $\mcf(\emptyset) = 0$.
 :::
 
 ::: {.definition title="Sheaf"}
-A presheaf is a **sheaf** if for every open $U$ and every open cover $\ts{U_i}$ of $U$:
+A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\ts{U_i}$ of $U$:
 
 - *identity*: a section $s \in \mcf(U)$ with $\ro{s}{U_i} = 0$ for all $i$ is $0$;
 

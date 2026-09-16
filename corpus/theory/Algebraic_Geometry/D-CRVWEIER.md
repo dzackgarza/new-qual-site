@@ -23,7 +23,7 @@ prompts:
 
 ::: {.definition title="Elliptic function"}
 Fix a lattice $\Lambda = \gens{1, \tau}_\ZZ \subseteq \CC$ with $\tau \notin \RR$.
-An **elliptic function** for $\Lambda$ is a meromorphic $f \colon \CC \to \PP^1$ with $f(z + \omega) = f(z)$ for every $\omega \in \Lambda$, that is, a meromorphic function on the torus $\CC/\Lambda$.
+An \dfn{elliptic function} for $\Lambda$ is a meromorphic $f \colon \CC \to \PP^1$ with $f(z + \omega) = f(z)$ for every $\omega \in \Lambda$, that is, a meromorphic function on the torus $\CC/\Lambda$.
 These form a field.
 :::
 

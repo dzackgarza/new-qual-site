@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Toric morphism"}
-A lattice map $\phi : N_1 \to N_2$ is **compatible** with fans $\Sigma_1, \Sigma_2$ if every $\sigma_1 \in \Sigma_1$ has some $\sigma_2 \in \Sigma_2$ with $\phi_\RR(\sigma_1) \subseteq \sigma_2$.
+A lattice map $\phi : N_1 \to N_2$ is \dfn{compatible} with fans $\Sigma_1, \Sigma_2$ if every $\sigma_1 \in \Sigma_1$ has some $\sigma_2 \in \Sigma_2$ with $\phi_\RR(\sigma_1) \subseteq \sigma_2$.
 Such a $\phi$ induces $X_{\Sigma_1} \to X_{\Sigma_2}$ carrying $T_1$ into $T_2$ by a group homomorphism, and every equivariant morphism arises this way.
 On affine pieces this is a semigroup map $S_2 \to S_1$ inducing $k[S_2] \to k[S_1]$.
 :::

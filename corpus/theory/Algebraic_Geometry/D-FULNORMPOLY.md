@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition title="Normal"}
-A lattice polytope $P \subseteq M_\RR$ is **normal** if
+A lattice polytope $P \subseteq M_\RR$ is \dfn{normal} if
 \[
 (kP \intersect M) + (\ell P \intersect M) = (k+\ell)P \intersect M \quad \text{for all } k, \ell \geq 1 ,
 \]

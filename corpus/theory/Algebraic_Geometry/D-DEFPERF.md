@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="perfect pairing"}
-A bilinear **pairing** is a map $M \tensor_A N \to L$.
+A bilinear \dfn{pairing} is a map $M \tensor_A N \to L$.
 By the tensor-hom adjunction this is the same data as a canonical map
 \[
 M \to \Hom_A(N, L) .

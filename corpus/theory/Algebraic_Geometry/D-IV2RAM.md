@@ -27,7 +27,7 @@ prompts:
 
 ::: {.definition title="Ramification index"}
 Let $f : X \to Y$ be a finite morphism of curves, $p \in X$, $q = f(p)$, and $t$ a uniformizer of the discrete valuation ring $\OO_{Y,q}$.
-The **ramification index** is
+The \dfn{ramification index} is
 \[
 e_p \definedas v_p(f^\sharp t) ,
 \]
@@ -46,7 +46,7 @@ The \dfn{branch locus} is the finite set $f(\supp R)$ of branch points, and the 
 
 ::: {.definition title="Tame and wild"}
 Let $\characteristic k = p_0$.
-The ramification at $p$ is **tame** if $p_0 \nmid e_p$, and **wild** if $p_0 \mid e_p$.
+The ramification at $p$ is \dfn{tame} if $p_0 \nmid e_p$, and **wild** if $p_0 \mid e_p$.
 In characteristic $0$ all ramification is tame.
 :::
 

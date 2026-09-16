@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Étale"}
-$f : X \to Y$ is **étale** if it is flat and unramified, equivalently flat, locally of finite presentation, with $\Omega_{X/Y} = 0$, equivalently smooth of relative dimension $0$.
+$f : X \to Y$ is \dfn{étale} if it is flat and unramified, equivalently flat, locally of finite presentation, with $\Omega_{X/Y} = 0$, equivalently smooth of relative dimension $0$.
 :::
 
 ::: {.remark}

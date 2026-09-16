@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="projective object"}
-An object $P$ in an abelian category is **projective** if the functor $\Hom(P, \wait)$ is exact.
+An object $P$ in an abelian category is \dfn{projective} if the functor $\Hom(P, \wait)$ is exact.
 Equivalently, every map $P \to B$ lifts along any epimorphism $A \surjects B$.
 In $\mods{A}$ these are the **projective modules**, and free modules are projective.
 :::

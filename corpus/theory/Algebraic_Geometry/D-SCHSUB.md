@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition}
-An **open subscheme** of $X$ is an open $U \subseteq \abs{X}$ with $\OO_U \da \ro{\OO_X}{U}$; every open subset of a scheme is a scheme in exactly one way.
+An \dfn{open subscheme} of $X$ is an open $U \subseteq \abs{X}$ with $\OO_U \da \ro{\OO_X}{U}$; every open subset of a scheme is a scheme in exactly one way.
 
 A **closed immersion** $i: Z \to X$ is a morphism which is a homeomorphism onto a closed subset and for which $i^\sharp: \OO_X \to i_* \OO_Z$ is surjective.
 A **closed subscheme** is an equivalence class of closed immersions into $X$.

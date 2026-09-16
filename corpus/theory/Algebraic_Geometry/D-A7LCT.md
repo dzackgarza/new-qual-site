@@ -23,7 +23,7 @@ prompts:
 ::: {.definition}
 Let $\varphi : \mcf \to \mcg$ be a morphism of sheaves.
 
-- The **kernel** is $U \mapsto \ker \varphi(U)$, which is already a sheaf.
+- The \dfn{kernel} is $U \mapsto \ker \varphi(U)$, which is already a sheaf.
 
 - The **image** is the sheafification of $U \mapsto \im \varphi(U)$.
 

@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Projective variety"}
-A subset of $\PP^n$ is **closed** if it is $V(T)$ for a set $T$ of homogeneous elements of $S \da k[x_0,\ldots,x_n]$.
+A subset of $\PP^n$ is \dfn{closed} if it is $V(T)$ for a set $T$ of homogeneous elements of $S \da k[x_0,\ldots,x_n]$.
 A **projective variety** is an irreducible closed subset of $\PP^n$; a **quasi-projective variety** is an open subset of one.
 :::
 

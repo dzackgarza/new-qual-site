@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition}
-For morphisms $X \to S$ and $Y \to S$, the **fibre product** $\fiberprod{X}{S}{Y}$ is a scheme over $S$ with projections to $X$ and $Y$, universal among schemes mapping compatibly to both:
+For morphisms $X \to S$ and $Y \to S$, the \dfn{fibre product} $\fiberprod{X}{S}{Y}$ is a scheme over $S$ with projections to $X$ and $Y$, universal among schemes mapping compatibly to both:
 \[
 \Hom_S(T, \fiberprod{X}{S}{Y}) \cong \Hom_S(T, X) \times \Hom_S(T, Y) .
 \]

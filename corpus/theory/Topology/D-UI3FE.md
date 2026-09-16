@@ -20,7 +20,7 @@ For $m \geq 1$ and integers $\ell_1, \cdots, \ell_n$ coprime to $m$, let $\ZZ/m$
 \[
 (z_1, \cdots, z_n) \mapsto \qty{ e^{2\pi i \ell_1/m} z_1, \cdots, e^{2\pi i \ell_n /m} z_n }
 .\]
-The action is free, and the **lens space** is the orbit space
+The action is free, and the \dfn{lens space} is the orbit space
 \[
 L_m(\ell_1, \cdots, \ell_n) \da S^{2n-1}/\qty{\ZZ/m}
 .\]

@@ -23,7 +23,7 @@ prompts:
 
 ::: {.definition title="Absolute Frobenius"}
 Let $X$ be a scheme all of whose local rings contain $\FF_p$.
-The **Frobenius morphism** $F : X \to X$ is the identity on the underlying topological space, with
+The \dfn{Frobenius morphism} $F : X \to X$ is the identity on the underlying topological space, with
 \[
 F^\sharp : \OO_X \to \OO_X, \qquad f \mapsto f^p .
 \]
@@ -36,7 +36,7 @@ Then $F$ becomes a $k$-morphism
 \[
 F' : X_p \to X ,
 \]
-the **$k$-linear Frobenius**. For $X$ a curve over perfect $k$ it is finite of degree $p$, and on function fields it is the inclusion
+the \dfn{$k$-linear Frobenius}. For $X$ a curve over perfect $k$ it is finite of degree $p$, and on function fields it is the inclusion
 \[
 k(X) \subseteq k(X)^{1/p} .
 \]

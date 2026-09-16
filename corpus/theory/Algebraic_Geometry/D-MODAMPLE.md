@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="Ample, very ample"}
-$\mcl \in \Pic(X)$ is **very ample** over $Y$ if there is an immersion $\iota: X \to \PP^n_Y$ with $\iota^*\OO(1) \cong \mcl$.
+$\mcl \in \Pic(X)$ is \dfn{very ample} over $Y$ if there is an immersion $\iota: X \to \PP^n_Y$ with $\iota^*\OO(1) \cong \mcl$.
 $\mcl$ is **ample** if for every coherent $\mcf$ there is $N_0$ with $\mcf \tensor \mcl^{\tensor n}$ globally generated for all $n \geq N_0$.
 :::
 

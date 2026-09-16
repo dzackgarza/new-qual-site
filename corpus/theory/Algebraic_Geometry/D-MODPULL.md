@@ -24,7 +24,7 @@ prompts:
 
 ::: {.definition title="Direct and inverse image"}
 For $f: X \to Y$ of ringed spaces, $f_*\mcf$ is the $\OO_Y$-module $U \mapsto \mcf(f\inv U)$.
-For $\mcg \in \mods{\OO_Y}$, the **inverse image** is
+For $\mcg \in \mods{\OO_Y}$, the \dfn{inverse image} is
 \[
 f^*\mcg \da f\inv \mcg \tensor_{f\inv \OO_Y} \OO_X ,
 \]

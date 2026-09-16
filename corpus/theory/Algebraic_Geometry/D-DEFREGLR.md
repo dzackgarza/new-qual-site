@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="regular local ring"}
-A Noetherian local ring $(A,\mm)$ is a **regular local ring** if
+A Noetherian local ring $(A,\mm)$ is a \dfn{regular local ring} if
 \[
 \dim A = \dim_{A/\mm} \mm/\mm^2 .
 \]

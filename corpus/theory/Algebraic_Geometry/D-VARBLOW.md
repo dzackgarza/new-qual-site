@@ -26,7 +26,7 @@ The blowup of $\AA^n$ at the origin is
 \]
 with $\pi$ the first projection.
 For $X$ a variety and $p \in X$, $\Bl_p X$ is the closure of $\pi\inv(X \sm \ts{p})$ inside $\Bl_p \AA^n$ for a local embedding.
-The **exceptional divisor** is $E \da \pi\inv(p) \cong \PP^{n-1}$, and the **proper transform** of a subvariety $C \subseteq X$ is the closure of $\pi\inv(C \sm \ts{p})$.
+The \dfn{exceptional divisor} is $E \da \pi\inv(p) \cong \PP^{n-1}$, and the **proper transform** of a subvariety $C \subseteq X$ is the closure of $\pi\inv(C \sm \ts{p})$.
 :::
 
 ::: {.proposition}

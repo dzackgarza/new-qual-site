@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition}
-A surface $X$ is **ruled** over a curve $C$ if it is birational to $C \times \PP^1$; it is **geometrically ruled** if there is a morphism $X \to C$ whose every fibre is $\PP^1$, equivalently $X = \PP(\mathcal{E})$ for a rank-two bundle $\mathcal{E}$ on $C$.
+A surface $X$ is \dfn{ruled} over a curve $C$ if it is birational to $C \times \PP^1$; it is **geometrically ruled** if there is a morphism $X \to C$ whose every fibre is $\PP^1$, equivalently $X = \PP(\mathcal{E})$ for a rank-two bundle $\mathcal{E}$ on $C$.
 $X$ is **rational** if it is birational to $\PP^2$.
 :::
 

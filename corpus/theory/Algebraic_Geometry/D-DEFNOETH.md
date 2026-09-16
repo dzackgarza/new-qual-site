@@ -17,7 +17,7 @@ prompts:
 ---
 
 ::: {.definition title="Noetherian ring"}
-A ring $A$ is **Noetherian** if it satisfies the ascending chain condition on ideals: any increasing chain
+A ring $A$ is \dfn{Noetherian} if it satisfies the ascending chain condition on ideals: any increasing chain
 \[
 I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
 \]

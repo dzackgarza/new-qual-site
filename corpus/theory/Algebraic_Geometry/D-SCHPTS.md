@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition}
-The **residue field** at $x \in X$ is $\kappa(x) \da \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) = A_\mfp/\mfp A_\mfp$.
+The \dfn{residue field} at $x \in X$ is $\kappa(x) \da \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) = A_\mfp/\mfp A_\mfp$.
 To **evaluate** $f \in \OO_X(U)$ at $x$ is to take its image under $\OO_X(U) \to \OO_{X,x} \to \kappa(x)$.
 
 A **closed point** is one whose closure is itself, corresponding to a maximal ideal in an affine chart.

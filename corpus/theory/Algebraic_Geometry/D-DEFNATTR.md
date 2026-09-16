@@ -18,7 +18,7 @@ prompts:
 
 ::: {.definition title="natural transformation"}
 Let $F, G: \mcc \to \mcd$ be covariant functors.
-A **natural transformation** $F \to G$ is the data of maps $F(X) \to G(X)$ in $\mcd$ for all $X \in \mcc$, such that for every $f: X \to Y$ in $\mcc$ the square
+A \dfn{natural transformation} $F \to G$ is the data of maps $F(X) \to G(X)$ in $\mcd$ for all $X \in \mcc$, such that for every $f: X \to Y$ in $\mcc$ the square
 \[
 \begin{matrix}
 F(X) & \to & G(X) \\
@@ -31,7 +31,7 @@ For contravariant functors one asks the analogous square, with the vertical arro
 :::
 
 ::: {.definition title="natural isomorphism"}
-A **natural isomorphism** $F \to G$ is a natural transformation such that $F(X) \to G(X)$ is an isomorphism for every object $X$.
+A \dfn{natural isomorphism} $F \to G$ is a natural transformation such that $F(X) \to G(X)$ is an isomorphism for every object $X$.
 :::
 
 ::: {.remark}

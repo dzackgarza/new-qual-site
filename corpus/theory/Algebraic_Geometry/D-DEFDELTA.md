@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition title="delta functor"}
 Let $\mca, \mcb$ be abelian categories.
-A covariant **$\delta$-functor** from $\mca$ to $\mcb$ is a collection of functors $T = (T^i)_{i\geq 0}$ together with a boundary morphism $\delta^i: T^i(A'') \to T^{i+1}(A')$ for every short exact sequence $0 \to A' \to A \to A'' \to 0$, such that
+A covariant \dfn{$\delta$-functor} from $\mca$ to $\mcb$ is a collection of functors $T = (T^i)_{i\geq 0}$ together with a boundary morphism $\delta^i: T^i(A'') \to T^{i+1}(A')$ for every short exact sequence $0 \to A' \to A \to A'' \to 0$, such that
 
 (i) each short exact sequence gives a long exact sequence
 \[
@@ -33,7 +33,7 @@ A covariant **$\delta$-functor** from $\mca$ to $\mcb$ is a collection of functo
 :::
 
 ::: {.definition title="effaceable"}
-An additive functor $F: \mca \to \mcb$ is **effaceable** if for each object $A$ there is a monomorphism $u: A \injects M$ with $F(u) = 0$, and **coeffaceable** if there is an epimorphism $u: P \surjects A$ with $F(u) = 0$.
+An additive functor $F: \mca \to \mcb$ is \dfn{effaceable} if for each object $A$ there is a monomorphism $u: A \injects M$ with $F(u) = 0$, and **coeffaceable** if there is an epimorphism $u: P \surjects A$ with $F(u) = 0$.
 :::
 
 ::: {.remark}

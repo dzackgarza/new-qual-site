@@ -18,7 +18,7 @@ prompts:
 
 ::: {.definition title="total quotient ring"}
 Let $A$ be a ring and $S$ the multiplicative set of elements which are not zero divisors.
-The **total quotient ring** of $A$ is the localisation $S\inv A$.
+The \dfn{total quotient ring} of $A$ is the localisation $S\inv A$.
 This is the closest thing to a field of fractions when $A$ is not a domain.
 :::
 

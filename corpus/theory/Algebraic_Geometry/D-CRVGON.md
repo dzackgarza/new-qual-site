@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition}
-A **$g^r_d$** on a curve $C$ is a linear system of degree $d$ and projective dimension $r$: a subspace $V \subseteq H^0(\OO_C(D))$ with $\deg D = d$ and $\dim \PP V = r$.
+A \dfn{$g^r_d$} on a curve $C$ is a linear system of degree $d$ and projective dimension $r$: a subspace $V \subseteq H^0(\OO_C(D))$ with $\deg D = d$ and $\dim \PP V = r$.
 The **gonality** of $C$ is the least $d$ for which $C$ carries a $g^1_d$, equivalently the least degree of a nonconstant map $C \to \PP^1$.
 :::
 

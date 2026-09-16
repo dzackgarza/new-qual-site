@@ -27,7 +27,7 @@ There is a unique symmetric bilinear pairing
 \Div(X) \times \Div(X) \to \ZZ , \qquad (C,D) \mapsto C \cdot D ,
 \]
 which counts points for transverse smooth curves and depends only on linear equivalence classes.
-$C^2 = C \cdot C$ is the **self-intersection**. Fixing an ample $H$, the **degree** of a curve $C$ in the embedding determined by $H$ is $C \cdot H$.
+$C^2 = C \cdot C$ is the \dfn{self-intersection}. Fixing an ample $H$, the **degree** of a curve $C$ in the embedding determined by $H$ is $C \cdot H$.
 :::
 
 ::: {.remark}

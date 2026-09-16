@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="The four classes"}
-An **affine** variety is an irreducible closed subset of $\AA^n$; a **quasi-affine** variety is an open subset of one.
+An \dfn{affine} variety is an irreducible closed subset of $\AA^n$; a **quasi-affine** variety is an open subset of one.
 A **projective** variety is an irreducible closed subset of $\PP^n$; a **quasi-projective** variety is an open subset of one.
 Quasi-projective contains all four.
 :::

@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition title="regular sequence"}
 Let $M$ be an $A$-module and $x_1,\ldots,x_r \in A$.
-This is a **regular sequence for $M$** if
+This is a \dfn{regular sequence for $M$} if
 
 (i) for each $i$, $x_i$ is not a zero divisor on $M/(x_1,\ldots,x_{i-1})M$, and in particular $x_1$ is not a zero divisor on $M$;
 

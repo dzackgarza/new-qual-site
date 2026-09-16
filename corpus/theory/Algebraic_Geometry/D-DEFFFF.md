@@ -18,7 +18,7 @@ prompts:
 ---
 
 ::: {.definition title="full, faithful, fully faithful"}
-A covariant functor $F: \mca \to \mcb$ is **faithful** if for all objects $A, A'$ the induced map
+A covariant functor $F: \mca \to \mcb$ is \dfn{faithful} if for all objects $A, A'$ the induced map
 \[
 \Mor_{\mca}(A, A') \to \Mor_{\mcb}(F(A), F(A'))
 \]

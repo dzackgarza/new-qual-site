@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Support function"}
-For a Cartier divisor $D = \sum a_\rho D_\rho$ the **support function** $\varphi_D : \abs{\Sigma} \to \RR$ is the unique function that is linear on each cone with $\varphi_D(u_\rho) = -a_\rho$.
+For a Cartier divisor $D = \sum a_\rho D_\rho$ the \dfn{support function} $\varphi_D : \abs{\Sigma} \to \RR$ is the unique function that is linear on each cone with $\varphi_D(u_\rho) = -a_\rho$.
 On a maximal cone $\sigma$ it is $\varphi_D = \inp{m_\sigma}{\wait}$ for the Cartier datum $m_\sigma \in M$.
 It is **integral** if $\varphi_D(\abs{\Sigma} \intersect N) \subseteq \ZZ$, **convex** if
 \[
