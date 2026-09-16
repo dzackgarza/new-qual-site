@@ -39,7 +39,3 @@ source:
     term: spring
     year: 1993
 ---
-
-::: remark
-The retained PDF is titled *Preliminary Exam - Spring 1993* and contains Problems 1--18 in source order. The existing Berkeley prelim resource page identifies `Spring93.pdf` in the Berkeley exam sequence. Problem 9's strip-coordinate glyph is corrupted in every retained extraction and is recorded explicitly rather than reconstructed.
-:::
