@@ -467,7 +467,6 @@ sections:
       - ref: FD-S2W5E
       - ref: PR-RIJSC
       - ref: D-LIEMF
-      - ref: D-IGB7I
       - ref: FD-CVEAI
       - ref: PR-DLPTR
       - ref: PR-RPL4Q
