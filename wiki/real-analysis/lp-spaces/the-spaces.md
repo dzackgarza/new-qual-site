@@ -42,7 +42,7 @@ For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with 
 
 [[PR-XAVMU]]
 
-[[PR-HLPMX]] [[PR-EHL3O]]
+[[PR-HLPMX]] [[PR-BDHAT]]
 
 [[T-RIY2P]]
 
