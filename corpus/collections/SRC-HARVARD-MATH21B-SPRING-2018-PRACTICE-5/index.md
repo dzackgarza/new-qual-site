@@ -37,6 +37,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution5.pdf` is Harvard Math 21b Spring 2018 Practice Final 5 with fourteen top-level problems. The Harvard course resource page establishes provenance. OCR loses the headings for Problems 2, 3, 7, and 13, while Problem 3's phase-portrait table is incomplete; those source conditions are explicit rather than reconstructed. The Queue-E attribution to UNL is stale.
+::: {.remark}
+Practice Final 5 of Harvard Math 21b, Spring 2018, with fourteen problems.
 :::
