@@ -24,10 +24,3 @@ Then $\bigcup_i D(f_i) = \Spec R$ if and only if the $f_i$ generate the unit ide
 In that case finitely many of the $f_i$ already generate it, so $\Spec R$ is quasicompact.
 :::
 
-::: {.proof}
-1. $\bigcup_i D(f_i) = \Spec R \setminus V((f_i)_{i \in I})$, since a prime avoids some $f_i$ exactly when it does not contain the ideal they generate.
-
-2. $V(J) = \emptyset$ exactly when $J = R$, because every proper ideal lies in a maximal ideal, which is a prime.
-
-3. If $1 = \sum_{i \in F} r_i f_i$, the sum is finite, so the finitely many $D(f_i)$ with $i \in F$ cover $\Spec R$.
-:::

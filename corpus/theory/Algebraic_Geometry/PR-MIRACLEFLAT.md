@@ -24,14 +24,7 @@ prompts:
 Let $f \colon X \to Y$ be a finite morphism of varieties over a field with $X$ Cohen--Macaulay, $Y$ smooth, and $\dim X = \dim Y$ at every point of $X$.
 Then $f$ is flat.
 In particular a finite surjective morphism between smooth varieties of the same dimension is flat.
-:::
-
-::: {.proof}
-1. Flatness is local: for $x \in X$ with $y = f(x)$, show $\OO_{X,x}$ is flat over $\OO_{Y,y}$.
-
-2. $f$ is finite, so the fibre through $x$ is zero-dimensional and $\dim \OO_{X,x} = \dim \OO_{Y,y}$ by the dimension hypothesis.
-
-3. For a local homomorphism $A \to B$ of Noetherian local rings with $A$ regular, $B$ Cohen--Macaulay and $\dim B = \dim A + \dim B/\mfm_A B$, the module $B$ is flat over $A$: a regular system of parameters of $A$ maps to a regular sequence in $B$, because it is part of a system of parameters in the Cohen--Macaulay ring $B$, and a local criterion for flatness applies.
+[@Har10a, Exercise III.10.9]
 :::
 
 ::: {.example}

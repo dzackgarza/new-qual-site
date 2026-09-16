@@ -34,17 +34,7 @@ Let $X$ be a smooth projective variety of dimension $n$ over an algebraically cl
 ::: {.theorem}
 If $X$ and $X'$ are birational smooth projective varieties, then $h^0(X, (\Omega^p_X)^{\otimes m}) = h^0(X', (\Omega^p_{X'})^{\otimes m})$ for all $p, m$.
 In particular $p_g$, every $P_m$, and $q$ are birational invariants.
-:::
-
-::: {.proof}
-1. A birational map $\phi \colon X \dashrightarrow X'$ is defined on an open set $U \subseteq X$ whose complement has codimension at least $2$, because $X$ is normal and $X'$ is projective, so rational maps from the local rings at codimension-one points, which are discrete valuation rings, extend.
-
-2. A section $\sigma$ of $(\Omega^p_{X'})^{\otimes m}$ pulls back to a section $\phi^* \sigma$ of $(\Omega^p_X)^{\otimes m}$ over $U$.
-
-3. $(\Omega^p_X)^{\otimes m}$ is locally free on the smooth variety $X$, and a section of a locally free sheaf over the complement of a codimension-$2$ closed subset of a normal variety extends uniquely, by Hartogs extension for normal local rings.
-   So $\phi^*$ defines an injective linear map $H^0(X', (\Omega^p_{X'})^{\otimes m}) \to H^0(X, (\Omega^p_X)^{\otimes m})$; it is injective because $\phi$ is dominant.
-
-4. The same construction for $\phi^{-1}$ gives an injection in the other direction, so the dimensions agree.
+[@Har10a, Theorem II.8.19]
 :::
 
 ::: {.remark}

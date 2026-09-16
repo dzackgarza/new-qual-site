@@ -34,16 +34,7 @@ and the base change map $g^* R^i f_* \mathcal{F} \to R^i f'_* g'^* \mathcal{F}$.
 
 ::: {.theorem title="Flat base change"}
 If $f$ is quasicompact and separated, $g$ is flat, and $\mathcal{F}$ is quasicoherent on $X$, the base change map is an isomorphism for all $i$.
-:::
-
-::: {.proof}
-1. The statement is local on $Y$ and $Y'$, so take $Y = \Spec A$ and $Y' = \Spec A'$ with $A \to A'$ flat.
-
-2. $X$ is quasicompact and separated, so choose a finite affine open cover $\mathcal{U}$; its intersections are affine, and $H^i(X, \mathcal{F})$ is the cohomology of the Čech complex $C^\bullet(\mathcal{U}, \mathcal{F})$ of $A$-modules.
-
-3. The preimages of the cover form a finite affine cover of $X' = X \times_A A'$ with intersections affine, and $C^\bullet(\mathcal{U}', g'^* \mathcal{F}) = C^\bullet(\mathcal{U}, \mathcal{F}) \otimes_A A'$, because sections of a quasicoherent sheaf on an affine commute with base change of affines.
-
-4. Since $A'$ is flat, $- \otimes_A A'$ is exact and commutes with taking cohomology, so $H^i(X', g'^* \mathcal{F}) \cong H^i(X, \mathcal{F}) \otimes_A A'$.
+[@Har10a, Proposition III.9.3]
 :::
 
 ::: {.corollary title="Extension of the base field"}
