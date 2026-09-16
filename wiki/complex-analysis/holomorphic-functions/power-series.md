@@ -30,22 +30,22 @@ Holomorphic and analytic are equivalent: the Cauchy integral formula gives the p
 
 [[T-SRY2V]]
 
-:::{.proof}
-Reduce to $z\in\DD$.
-For fixed $z$ and any $w\in S^1$,
-\[
+::: {.proof}
+After translating and rescaling, $p=0$ and $f$ is holomorphic on a neighborhood of $\overline{\DD}$; fix $z\in\DD$.
+For $w\in S^1$,
+$$
 {1\over w-z} = {1\over w} \qty{ 1 + \qty{z\over w} + \qty{z\over w}^2 + \cdots}
-,\]
-which converges uniformly on $S^1$, so the integral formula may be expanded term by term:
-\[
+,$$
+which converges uniformly in $w\in S^1$ because $\abs{z/w} = \abs z < 1$, so the Cauchy integral formula may be expanded term by term:
+$$
 f(z)=\frac{1}{2 \pi i} \int_{S^{1}} \frac{f(w) }{w-z} \dw
 = \sum z^{k} \frac{1}{2 \pi i} \int_{S^{1}} \frac{f(w)}{w^{k+1}} \dw
 =\sum c_{k} z^{k}
-.\]
+.$$
 
 :::
 
-:::{.proof title="Holomorphic implies analytic, alternative"}
+::: {.proof title="Holomorphic implies analytic, alternative"}
 
 ![](../../../../assets/assets/figures/2021-12-14_16-53-51.png)
 
@@ -55,23 +55,20 @@ f(z)=\frac{1}{2 \pi i} \int_{S^{1}} \frac{f(w) }{w-z} \dw
 
 [[C-7S2CO]]
 
-:::{.remark title="The coefficient formula"}
+::: {.remark title="The coefficient formula"}
 By the integral formula, for $f$ holomorphic on $D_R(z_0)$, all $k\geq 0$ and all $0<r<R$:
-\[
+$$
 c_k = {1\over 2\pi r^k} \int_0^{2\pi} f(z_0 + re^{i\theta}) e^{-ik\theta}\dtheta
-.\]
-Bounding this integrand is exactly the [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimate]], and letting the expansion run to negative $k$ is the [[complex-analysis/singularities/laurent-series|Laurent series]].
+.$$
+Bounding the integrand gives the [[complex-analysis/cauchy-theory/cauchy-estimates-and-liouville|Cauchy estimate]], and the same formula for $k<0$ on an annulus gives the coefficients of the [[complex-analysis/singularities/laurent-series|Laurent series]].
 
 :::
 
 [[PR-4BVDD]]
 
-:::{.proof}
-Estimate
-\[
-\abs{e^z} \leq \sum {\abs {z}^n \over n!} = e^{\abs{z}}
-,\]
-and apply the $M\dash$test: $\abs z \leq R < \infty$ gives $\abs{\sum {z^n/ n!}} \leq e^R < \infty$.
+::: {.proof}
+On the disc $\abs z\leq R$, the terms of $e^z = \sum_{n\geq 0} z^n/n!$ satisfy $\abs{z^n/n!}\leq R^n/n!$, and $\sum_{n\geq 0} R^n/n! = e^R < \infty$.
+By the Weierstrass $M\dash$test, the series converges uniformly on $\abs z\leq R$.
 
 :::
 
@@ -79,30 +76,19 @@ and apply the $M\dash$test: $\abs z \leq R < \infty$ gives $\abs{\sum {z^n/ n!}}
 
 [[L-TVIDY]]
 
-:::{.proof}
-Use summation by parts.
-For $\sum a_k b_k$, write
-\[
-\sum_{n=1}^m x_n Y_n + \sum_{n=1}^m X_n y_{n+1} = X_m Y_{m+1}
-,\]
-setting $x_n \da a_n$ and $y_n \da b_n - b_{n-1}$, so $X_n = A_n$ and $Y_n = b_n$ telescopes.
-All $y_n$ are negative, so $\abs{y_n} = b_{n-1} - b_n$, and $a_n b_n = x_n Y_n$.
-Then
-\[
-\sum_{n\geq 1} a_n b_n
-&= \lim_{N\to\infty} \sum_{n\leq N} x_n Y_n \\
-&= \lim_{N\to\infty} \sum_{n\leq N} X_N Y_N - \sum_{n\leq N} X_n y_{n+1} \\
-&= - \sum_{n\geq 1} X_n y_{n+1}
-,\]
-using $\abs{X_N} = \abs{A_N}\leq M$, so $\abs{X_N Y_N} \leq M b_{N+1}\to 0$.
-It remains to bound
-\[
-\sum_{k\geq n}\abs{ X_k y_{k+1} }
-&\leq M \sum_{k\geq 1} \abs{y_{k+1}}\\
-&\leq M \sum_{k\geq 1} b_{k} - b_{k+1} \\
-&\leq 2M(b_1 - b_{n+1})\\
-&\leq 2M b_1
-.\]
+::: {.proof}
+Let $A_n \coloneqq \sum_{k=1}^n a_k$ and $A_0\coloneqq 0$, and choose $M$ with $\abs{A_n}\leq M$ for all $n$.
+Summation by parts ([[PR-6GL7M]] with $m=1$) gives
+$$
+\sum_{k=1}^n a_k b_k = A_n b_n + \sum_{k=1}^{n-1} A_k (b_k - b_{k+1})
+.$$
+Since $\abs{A_n b_n}\leq M b_n \to 0$, the first term tends to $0$.
+Since $b_k$ is decreasing, $b_k - b_{k+1}\geq 0$, so
+$$
+\sum_{k=1}^{n-1} \abs{A_k (b_k - b_{k+1})} \leq M\sum_{k=1}^{n-1}(b_k - b_{k+1}) = M(b_1 - b_n) \leq M b_1
+,$$
+and the series $\sum_{k\geq 1} A_k(b_k - b_{k+1})$ converges absolutely.
+Hence the partial sums $\sum_{k=1}^n a_k b_k$ converge.
 
 :::
 
@@ -110,34 +96,34 @@ It remains to bound
 
 [[L-MYZOX]]
 
-:::{.example title="An application"}
-What is the alternating harmonic series?
-Integrating a geometric series gives
-\[
-\sum {(-1)^k z^k \over k} = \log(z+1), \qquad \abs z < 1
-.\]
-Since $c_k \da (-1)^k/k \decreasesto 0$, the series converges at $z=1$, and Abel gives the value $\log 2$.
+::: {.example title="The alternating harmonic series"}
+Integrating the geometric series $\sum_{k\geq 0}(-z)^k = 1/(1+z)$ term by term gives
+$$
+\sum_{k\geq 1} {(-1)^{k+1} z^k \over k} = \log(1+z), \qquad \abs z < 1
+.$$
+The series converges at $z=1$ by the alternating series test, so Abel's theorem gives $\sum_{k\geq1}(-1)^{k+1}/k = \lim_{x\to 1^-}\log(1+x) = \log 2$.
 
 :::
 
-:::{.remark title="The converse fails"}
+::: {.example title="The converse of Abel's theorem fails"}
 Take $f(z) = \sum (-z)^n = 1/(1+z)$.
 At $z=1$ the series $1-1+1-\cdots$ diverges, while $\lim_{x\to 1^-} f(x) = 1/2$.
-So a radial limit can exist without the series converging there, which is why Abel's theorem is stated in only one direction.
+So a radial limit can exist at a point where the series diverges, and the converse of Abel's theorem is false.
 
 :::
 
 [[PR-6GL7M]]
 
-:::{.proof}
-Define $A_n \da \sum_{k\leq n} a_k$, use $a_k = A_k - A_{k-1}$, reindex, and peel off the top and bottom terms:
-\[
+::: {.proof}
+Define $A_n \coloneqq \sum_{k\leq n} a_k$, use $a_k = A_k - A_{k-1}$, reindex, and peel off the top and bottom terms:
+$$
+\begin{aligned}
 \sum_{m\leq k \leq n} a_k b_k
 &= \sum_{m\leq k \leq n} (A_k - A_{k-1}) b_k \\
 &= \sum_{m\leq k \leq n} A_kb_k - \sum_{m-1\leq k \leq n-1} A_{k} b_{k+1} \\
 &= A_nb_n - A_{m-1} b_{m} + \sum_{m\leq k \leq n-1} A_k(b_k - b_{k+1}) \\
 &= A_nb_n - A_{m-1} b_{m} - \sum_{m\leq k \leq n-1} A_k(b_{k+1} - b_{k})
-.\]
+\end{aligned}.$$
 
 :::
 
