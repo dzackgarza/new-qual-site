@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-5NODS
 kind: definition
-title: Meager Sets
+title: Meager sets
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A set is **meager** if it is a *countable* union of nowhere dense sets.
+Let $X$ be a topological space.
+A subset $S\subseteq X$ is \dfn{meager} in $X$ if it is a countable union of [[D-2MJRE|nowhere dense]] subsets of $X$.
 :::
