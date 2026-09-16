@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-3X3TO
 kind: proposition
-title: Freshman's Dream
+title: Freshman's dream
 classification:
   areas:
   - algebra
@@ -14,5 +14,9 @@ review: draft
 ---
 
 ::: {.proposition}
-If $\ch k = p$ then $(a+b)^p = a^p + b^p$ and $(ab)^p = a^p b^p$.
+Let $k$ be a field of [[D-JNCUB|characteristic]] $p > 0$.
+For all $a, b \in k$,
+$$
+(a+b)^p = a^p + b^p \quad\text{and}\quad (ab)^p = a^p b^p.
+$$
 :::
