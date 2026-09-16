@@ -1833,8 +1833,7 @@ These decide nothing about what the text should be.
 
 ## 12. Close out the branch consolidation
 
-All 44 consolidation branches were merged into `main` by `123e9b229`.
-Two later branches each carry one commit not reachable from `main`, and both changes are already on `main`: `agent/sp19-zack-current` (`ee929c1c1`, the quoted `P-JHUMAY09ANH` audit note) and `work/complex-analysis-stream` (`23c025eea`, a removed COMPLAINTS entry).
+All 44 consolidation branches were merged into `main` by `123e9b229`. Two later branches each carry one commit not reachable from `main`, and both changes are already on `main`: `agent/sp19-zack-current` (`ee929c1c1`, the quoted `P-JHUMAY09ANH` audit note) and `work/complex-analysis-stream` (`23c025eea`, a removed COMPLAINTS entry).
 What remains is judgement work the merge could not do.
 
 The merges were made with `git merge-tree` + `git commit-tree` + a compare-and-swap `git update-ref`, never porcelain `git merge`, because `main`'s index carries staged entries belonging to live authoring sessions.
