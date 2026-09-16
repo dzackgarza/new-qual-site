@@ -35,5 +35,5 @@ Every symmetric polynomial in $R[x_1, \ldots, x_n]$ is equal to $g(e_1, \ldots, 
 :::
 
 ::: {.concept}
-See [@DF04, §14.6].
+See [@DF04].
 :::

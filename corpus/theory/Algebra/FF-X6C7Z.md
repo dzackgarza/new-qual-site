@@ -21,5 +21,5 @@ If $f$ is injective on closed points and the differential $df_p\colon T_pX\to T_
 :::
 
 ::: {.remark}
-The application of Nakayama's lemma is in the local step: a local homomorphism $\mathcal O_{Y,f(p)}\to\mathcal O_{X,p}$ of Noetherian local rings that is an isomorphism on residue fields, surjective on cotangent spaces and makes $\mathcal O_{X,p}$ a finitely generated module is surjective [@Har10a, Lemma II.7.4].
+The application of Nakayama's lemma is in the local step: a local homomorphism $\mathcal O_{Y,f(p)}\to\mathcal O_{X,p}$ of Noetherian local rings that is an isomorphism on residue fields, surjective on cotangent spaces and makes $\mathcal O_{X,p}$ a finitely generated module is surjective [@Har10a].
 :::

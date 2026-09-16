@@ -22,7 +22,7 @@ review: draft
 ::: {.theorem}
 Let $G$ be a finite group and $p$ a prime.
 Any two [[D-7TQ2M|Sylow $p$-subgroups]] of $G$ are [[D-ES7MP|conjugate]]: if $P,Q\in\Syl_p(G)$, then there exists $g\in G$ with $gPg^{-1}=Q$.
-In particular, a Sylow $p$-subgroup $P$ is [[D-EKE4Q|normal]] in $G$ if and only if it is the unique Sylow $p$-subgroup of $G$ [@DF04, §4.5, Theorem 18].
+In particular, a Sylow $p$-subgroup $P$ is [[D-EKE4Q|normal]] in $G$ if and only if it is the unique Sylow $p$-subgroup of $G$ [@DF04].
 :::
 
 ::: {.proof}

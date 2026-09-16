@@ -22,7 +22,7 @@ A proper [[D-GOFWL|ideal]] $I\subsetneq R$ is \dfn{primary} if for all $p,q\in R
 
 ::: {.proposition}
 In a commutative ring, every maximal ideal is prime, and every prime ideal is both radical and primary.
-[@AM18, Chapter 4]
+[@AM18]
 :::
 
 ::: {.example}

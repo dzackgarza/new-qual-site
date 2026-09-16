@@ -16,7 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $n\geq 1$ and let $\zeta_n\in\CC$ be a primitive $n$th root of unity.
-The \dfn{cyclotomic field} of $n$th roots of unity is $\QQ(\zeta_n)$, the splitting field of $x^n-1$ over $\QQ$ [@DF04, §13.4].
+The \dfn{cyclotomic field} of $n$th roots of unity is $\QQ(\zeta_n)$, the splitting field of $x^n-1$ over $\QQ$ [@DF04].
 :::
 
 ::: {.remark}

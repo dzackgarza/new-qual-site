@@ -23,7 +23,7 @@ $$
 :::
 
 ::: {.proof}
-A matrix in $M_n(\FF_q)$ is invertible if and only if its columns form a basis of $\FF_q^n$ [@DF04, sec. 11.1], so we count ordered bases.
+A matrix in $M_n(\FF_q)$ is invertible if and only if its columns form a basis of $\FF_q^n$ [@DF04], so we count ordered bases.
 If the first $k$ columns are linearly independent, the $(k+1)$-st column can be any vector outside their span, a subspace with $q^k$ elements, so there are $q^n-q^k$ choices.
 Multiplying over $k=0,\ldots,n-1$ gives the formula.
 :::
