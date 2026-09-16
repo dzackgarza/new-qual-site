@@ -134,7 +134,6 @@ source:
   - id: P-KFPX5
   - id: P-KIIUK
   - id: P-LJTUV
-  - id: P-LKYOC
   - id: P-LZDYV
   - id: P-M62FC
   - id: P-MA7SC
