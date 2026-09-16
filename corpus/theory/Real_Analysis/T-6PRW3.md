@@ -25,7 +25,7 @@ Then:
 - $$
   \int_{\RR^{n+m}} f = \int_{\RR^n} F(x)\,dx = \int_{\RR^n}\qty{\int_{\RR^m} f(x,y)\,dy}dx \in[0,\infty],
   $$
-  and the same holds with the roles of $x$ and $y$ exchanged.
+  and the same holds with the roles of $x$ and $y$ exchanged [@Fol13, §2.5].
 
 Moreover, if $E\subseteq\RR^{n}\times\RR^m$ is [[D-MDJII|Lebesgue measurable]], then for almost every $x\in\RR^n$ the slice $E_x\coloneqq\theset{y\in\RR^m \suchthat (x, y) \in E}$ is Lebesgue measurable.
 :::
