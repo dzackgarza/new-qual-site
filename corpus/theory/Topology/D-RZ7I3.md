@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-RZ7I3
 kind: definition
-title: Locally Compact
+title: Locally compact space
 classification:
   areas:
   - topology
@@ -14,7 +14,10 @@ review: draft
 ---
 
 ::: {.definition}
-A space $X$ is *locally compact* iff every $x\in X$ has a neighborhood contained in a compact subset of $X$.
+A topological space $X$ is \dfn{locally compact} if every $x\in X$ has a [[D-JMRPA|neighborhood]] contained in a [[D-EILKJ|compact]] subspace of $X$ [@Mun00, sec. 29].
+:::
 
-> Note: authors such as Hartshorne often *also* require that $X$ is Hausdorff, and refer to the above definition as **quasicompactness**.
+::: {.remark}
+Some authors also require a locally compact space to be Hausdorff.
+For Hausdorff $X$ the condition above is equivalent to every point having a neighborhood whose closure is compact.
 :::
