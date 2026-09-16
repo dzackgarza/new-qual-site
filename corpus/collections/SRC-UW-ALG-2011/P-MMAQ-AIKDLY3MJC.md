@@ -22,7 +22,10 @@ audit:
 Let $R$ be a commutative ring.
 Recall that an element $r$ of $R$ is `\textit{nilpotent}`{=tex} if $r^n=0$ for some positive integer $n$ and that the `\textit{nilradical}`{=tex} of $R$ is the set $N(R)$ of nilpotent elements.
 
-- Prove that `\begin{align*} N(R)=\cap_{P\text{ prime}}P. .\end{align*}`{=tex}
+- Prove that
+  \[
+  N(R)=\bigcap_{P\text{ prime}}P.
+  \]
 
   > Hint: given a non-nilpotent element $r$ of $R$, you may wish to construct a prime ideal that does not contain $r$ or its powers.
 

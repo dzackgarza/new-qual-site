@@ -24,7 +24,7 @@ Let $f(x)$ be an irreducible polynomial of degree 5 over the field $\mathbb Q$ o
 - Show that $f(x)$ is not solvable by radicals.
 
 - Let $E$ be the splitting field of $f$ over $\mathbb Q$.
-  Construct a Galois extension $K$ of degree 2 over $\mathbb Q$ lying in $E$ such that `\textit{no}`{=tex} field $F$ strictly between $K$ and $E$ is Galois over $\mathbb Q$.
+  Construct a Galois extension $K$ of degree 2 over $\mathbb Q$ lying in $E$ such that *no* field $F$ strictly between $K$ and $E$ is Galois over $\mathbb Q$.
 :::
 
 ::: solution
