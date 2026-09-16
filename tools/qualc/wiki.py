@@ -21,7 +21,7 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import MARKDOWN, drop_path_captions, from_ast, unread_math
+from .model import MARKDOWN, drop_path_captions, from_ast, load_front_matter, unread_math
 from .pandoc_batch import Citations, PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
 
@@ -157,7 +157,7 @@ def _split_front_matter(text: str, path: Path) -> tuple[dict[str, object], str]:
     parts = text.split("---\n", 2)
     if len(parts) != 3:
         raise ValueError(f"{path}: unterminated YAML front matter")
-    metadata = yaml.safe_load(parts[1])
+    metadata = load_front_matter(parts[1])
     if metadata is None:
         metadata = {}
     if not isinstance(metadata, dict):
@@ -171,7 +171,7 @@ def _title(document: pf.Doc, metadata: dict[str, object], path: Path) -> str:
         return value.strip()
     for block in document.content:
         if isinstance(block, pf.Header) and block.level == 1:
-            return pf.stringify(block).strip()
+            return str(pf.stringify(block)).strip()
     return path.stem.replace("_", " ")
 
 
@@ -595,7 +595,7 @@ def _carries_math(inlines: list[pf.Inline]) -> bool:
         if isinstance(inline, pf.Str) and "$" in inline.text:
             return True
         content = getattr(inline, "content", None)
-        if content is not None and _carries_math(cast(list[pf.Inline], list(content))):
+        if content is not None and _carries_math(list(content)):
             return True
     return False
 

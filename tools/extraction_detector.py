@@ -8,9 +8,10 @@ Unicode inside an authored LaTeX span is not the defect measured here.
     just extraction-detector
     uv run python tools/extraction_detector.py
 
-The staged gate mode is used by ``test-commit``.  It permits legacy damaged cards to be
-modified for unrelated reasons, but refuses a new card with findings or a modified card whose
-finding count increases relative to HEAD.
+The range gate mode is used by ``test-push``: content commits run no gate, so the defect is
+refused when it would leave the machine.  It permits legacy damaged cards to be modified for
+unrelated reasons, but refuses a new card with findings or a modified card whose finding count
+increases relative to the pushed base.
 """
 
 from __future__ import annotations
@@ -100,8 +101,8 @@ def _git(root: Path, *args: str, check: bool = True) -> subprocess.CompletedProc
     return subprocess.run(["git", *args], cwd=root, text=True, capture_output=True, check=check)
 
 
-def _staged_paths(root: Path) -> list[Path]:
-    result = _git(root, "diff", "--cached", "--name-only", "--diff-filter=ACMR", "--", "corpus/collections")
+def _changed_paths(root: Path, base: str) -> list[Path]:
+    result = _git(root, "diff", "--name-only", "--diff-filter=ACMR", base, "HEAD", "--", "corpus/collections")
     return [Path(line) for line in result.stdout.splitlines() if line.endswith(".md")]
 
 
@@ -110,25 +111,25 @@ def _git_text(root: Path, spec: str) -> str | None:
     return result.stdout if result.returncode == 0 else None
 
 
-def staged_gate(root: Path) -> int:
-    """Reject staged cards that introduce or increase extraction findings."""
+def range_gate(root: Path, base: str) -> int:
+    """Reject pushed cards that introduce or increase extraction findings since ``base``."""
     failures: list[str] = []
-    for path in _staged_paths(root):
-        staged_text = _git_text(root, f":{path.as_posix()}")
-        if staged_text is None:
+    for path in _changed_paths(root, base):
+        pushed_text = _git_text(root, f"HEAD:{path.as_posix()}")
+        if pushed_text is None:
             continue
-        staged = finding_for_text(path, staged_text)
-        staged_count = staged.occurrences if staged else 0
-        head_text = _git_text(root, f"HEAD:{path.as_posix()}")
-        head = finding_for_text(path, head_text) if head_text is not None else None
-        head_count = head.occurrences if head else 0
-        if staged_count > head_count:
-            glyphs = "".join(staged.chars) if staged else ""
-            failures.append(f"{path}: extraction findings {head_count} -> {staged_count} ({glyphs})")
+        pushed = finding_for_text(path, pushed_text)
+        pushed_count = pushed.occurrences if pushed else 0
+        base_text = _git_text(root, f"{base}:{path.as_posix()}")
+        previous = finding_for_text(path, base_text) if base_text is not None else None
+        previous_count = previous.occurrences if previous else 0
+        if pushed_count > previous_count:
+            glyphs = "".join(pushed.chars) if pushed else ""
+            failures.append(f"{path}: extraction findings {previous_count} -> {pushed_count} ({glyphs})")
     if not failures:
-        print("extraction-detector: staged cards introduce no new Unicode-mathematics findings")
+        print("extraction-detector: pushed cards introduce no new Unicode-mathematics findings")
         return 0
-    print("extraction-detector: refusing staged extraction regressions:", file=sys.stderr)
+    print("extraction-detector: refusing pushed extraction regressions:", file=sys.stderr)
     for line in failures:
         print(f"  {line}", file=sys.stderr)
     return 1
@@ -137,11 +138,11 @@ def staged_gate(root: Path) -> int:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, default=REPO)
-    parser.add_argument("--staged-gate", action="store_true")
+    parser.add_argument("--range-gate", metavar="BASE", help="refuse regressions in cards changed between BASE and HEAD")
     args = parser.parse_args(argv)
     root = args.root.resolve()
-    if args.staged_gate:
-        return staged_gate(root)
+    if args.range_gate:
+        return range_gate(root, args.range_gate)
     findings = scan(root)
     print(render(findings))
     return 0

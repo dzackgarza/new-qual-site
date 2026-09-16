@@ -17,7 +17,6 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Verified that the explicit subtraction and absorption conditions are exactly the two-sided ideal axioms without relying on undefined shorthand.
-audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
@@ -67,7 +66,9 @@ So by all means think "closed," but write "for all $x,y\in I$, we have $x-y\in I
 A subset $I\subseteq R$ is a two-sided ideal precisely when the following three explicit conditions hold:
 
 1. $I\ne\varnothing$.
+
 2. For every $x,y\in I$, one has $x-y\in I$.
+
 3. For every $x\in I$ and $r\in R$, one has both $rx\in I$ and $xr\in I$.
 
 <1>1. Conditions 1 and 2 give exactly the required additive structure.
@@ -84,7 +85,8 @@ For $x,y\in I$, since $-y\in I$,
 \[
 x+y=x-(-y)\in I.
 \]
-Thus $I$ contains $0$ and is closed under addition and additive inverses. Conversely, any subset with those additive properties is nonempty and is closed under subtraction, because
+Thus $I$ contains $0$ and is closed under addition and additive inverses.
+Conversely, any subset with those additive properties is nonempty and is closed under subtraction, because
 \[
 x-y=x+(-y).
 \]
@@ -92,7 +94,8 @@ x-y=x+(-y).
 
 <1>2. Condition 3 is exactly two-sided absorption by ring elements.
 ::: {.proof}
-The definition of a two-sided ideal requires that multiplying an element of $I$ by an arbitrary element of $R$ on either side remains in $I$. Condition 3 states precisely
+The definition of a two-sided ideal requires that multiplying an element of $I$ by an arbitrary element of $R$ on either side remains in $I$.
+Condition 3 states precisely
 \[
 rI\subseteq I
 \qquad\text{and}\qquad

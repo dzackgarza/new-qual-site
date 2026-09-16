@@ -39,7 +39,7 @@ read-card card:
 diff-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
 
-# Commit one reviewed prose card without hooks; preserve other staged work
+# Commit one reviewed card without hooks (content is gated at push); preserve other staged work
 commit-card card message:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
 
@@ -106,24 +106,31 @@ ocr-pdf pdf markdown:
 extraction-detector:
     uv run python tools/extraction_detector.py
 
-# Reject staged cards that introduce or increase raw extraction mathematics
+# Refuse a push whose cards introduce or increase raw extraction mathematics
 [private]
-_extraction-detector-staged:
-    uv run python tools/extraction_detector.py --staged-gate
+_extraction-detector-push:
+    uv run python tools/extraction_detector.py --range-gate "$(git merge-base HEAD @{upstream})"
 
-# Update Queue C from only the staged card diff and stage the generated result.
-# `just unsolved` remains the independent full rebuild/oracle. The incremental path
-# starts from HEAD's generated queue, removes the old state of changed cards, and
-# inserts their staged state, so one-card commits do not reparse the whole corpus.
-_unsolved-if-staged:
+# Update Queue C over the commits being pushed. Content commits run no gate, so the queue is
+# regenerated here from the upstream queue and the pushed card diff; `just unsolved` remains
+# the independent full rebuild. A queue that moved is committed and this push is refused, so
+# the next push carries the regenerated queue with the cards that changed it.
+[private]
+_unsolved-push:
     #!/usr/bin/env bash
     set -euo pipefail
-    if git diff --cached --quiet -- corpus; then
-        echo "queues/C-unsolved-cards.md: no staged corpus change"
-    else
-        uv run python tools/unsolved_queue.py --incremental-staged
-        git add queues/C-unsolved-cards.md
+    base=$(git merge-base HEAD @{upstream})
+    if git diff --quiet "$base" HEAD -- corpus; then
+        echo "queues/C-unsolved-cards.md: no pushed corpus change"
+        exit 0
     fi
+    uv run python tools/unsolved_queue.py --incremental-range "$base"
+    if git diff --quiet HEAD -- queues/C-unsolved-cards.md; then
+        exit 0
+    fi
+    git commit --only --no-verify -m "queue: regenerate unsolved cards for pushed corpus changes" -- queues/C-unsolved-cards.md
+    echo "Queue C was regenerated and committed; push again to include it." >&2
+    exit 1
 
 # Fail if any worktree exists (QUAL-09: one checkout, one branch)
 #
@@ -177,11 +184,11 @@ _no-bare-disposition:
     exit 1
 
 # Run immediate commit-tier quality checks
-test-commit: _no-worktrees _unsolved-if-staged _extraction-detector-staged _no-bare-disposition
+test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
-test-push: backlog crawl
+test-push: _extraction-detector-push _unsolved-push backlog crawl
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate

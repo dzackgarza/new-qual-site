@@ -18,8 +18,6 @@ from pydantic import TypeAdapter
 from .emit import _collection_source_links
 from .model import Card, CollectionCard, CompilationSource, TextbookSource, discover, parse_card, parse_cards, split_front_matter
 
-PROBLEM_BLOCK = re.compile(r"(?ms)^:::\s*(?:problem|exercise|\{\.(?:problem|exercise)\})\s*$\n(.*?)^:::\s*$")
-
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 ID_FIELD = re.compile(r"^(id|'id'|\"id\")\s*:")
 
@@ -160,6 +158,15 @@ class Corpus:
         return "\n".join(lines)
 
 
+def _refuse_secondary_worktrees() -> None:
+    """QUAL-09: one checkout, one branch. A card commit is where a stream that opened a
+    worktree finds out, because card authoring is the population that built them."""
+    listing = subprocess.run(["git", "worktree", "list", "--porcelain"], check=True, capture_output=True, text=True).stdout
+    extra = sum(line.startswith("worktree ") for line in listing.splitlines()) - 1
+    if extra > 0:
+        raise ValueError(f"QUAL-09: {extra} worktree(s) exist. Streams work directly on main in this clone; land the work on main, then remove the worktree.")
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
@@ -222,21 +229,11 @@ def main() -> int:
         elif args.command == "diff":
             subprocess.run(["git", "--literal-pathspecs", "diff", "HEAD", "--", relative], check=True)
         elif args.command == "commit":
+            _refuse_secondary_worktrees()
             subprocess.run(["git", "--literal-pathspecs", "ls-files", "--error-unmatch", "--", relative], check=True, stdout=subprocess.DEVNULL)
-            head = subprocess.run(
-                ["git", "--literal-pathspecs", "show", f"HEAD:{relative}"],
-                check=True,
-                capture_output=True,
-                text=True,
-            ).stdout
-            current = path.read_text()
-            head_problem = PROBLEM_BLOCK.search(head)
-            current_problem = PROBLEM_BLOCK.search(current)
-            statement_changed = (head_problem.group(1) if head_problem else None) != (current_problem.group(1) if current_problem else None)
-            commit_argv = ["git", "--literal-pathspecs", "commit", "--only"]
-            if not statement_changed:
-                commit_argv.append("--no-verify")
-            subprocess.run([*commit_argv, "-m", args.message, "--", relative], check=True)
+            # Content commits run no gate. The extraction detector and the Queue C
+            # regeneration run over the pushed range in `just test-push` instead.
+            subprocess.run(["git", "--literal-pathspecs", "commit", "--only", "--no-verify", "-m", args.message, "--", relative], check=True)
     except (ValueError, TypeError, OSError, yaml.YAMLError) as exc:
         parser.exit(1, f"{exc}\n")
     except subprocess.CalledProcessError as exc:

@@ -754,11 +754,34 @@ def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     return element
 
 
+class _UniqueKeyLoader(yaml.SafeLoader):
+    """A safe loader that refuses a mapping naming one key twice.
+
+    PyYAML keeps the last of two equal keys. Two writers appending to one card
+    left two `audit:` lists, one of them silently discarded, and the card
+    validated.
+    """
+
+    def construct_mapping(self, node: yaml.MappingNode, deep: bool = False) -> dict:
+        seen: set[object] = set()
+        for key_node, _ in node.value:
+            key = self.construct_object(key_node, deep=deep)
+            if key in seen:
+                raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
+            seen.add(key)
+        return super().construct_mapping(node, deep=deep)
+
+
+def load_front_matter(text: str) -> object:
+    """Read authored YAML front matter, rejecting repeated keys."""
+    return yaml.load(text, Loader=_UniqueKeyLoader)
+
+
 def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     if not text.startswith("---\n"):
         raise ValueError(f"{path}: card must start with YAML front matter")
     _, fm, body = text.split("---\n", 2)
-    meta = yaml.safe_load(fm)
+    meta = load_front_matter(fm)
     if not isinstance(meta, dict):
         raise TypeError(f"{path}: front matter must be a mapping")
     return meta, body
