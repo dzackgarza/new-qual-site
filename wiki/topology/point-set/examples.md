@@ -61,7 +61,7 @@ where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma
 
 :::
 
-[[FE-BGEZL]] [[FE-U5AQQ]]
+[[FE-BGEZL]]
 
 ::: {.example title="Non-Hausdorff spaces"}
 \envlist

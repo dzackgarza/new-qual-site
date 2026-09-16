@@ -12,9 +12,7 @@ classification:
   - Continuity
   - Counterexamples
   - Euclidean Spaces
-relations:
-- kind: variant-of
-  target: FE-U5AQQ
+relations: []
 review: draft
 ---
 
