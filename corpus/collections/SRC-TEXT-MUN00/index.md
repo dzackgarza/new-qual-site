@@ -1346,8 +1346,3 @@ source:
     - id: E-8IBEP
       comment: Munkres §85.3
 ---
-
-::: remark
-`sections:` lists the book's exercises in book order.
-Theorem and definition cards are not included in this exercise list.
-:::
