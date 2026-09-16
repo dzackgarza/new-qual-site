@@ -24,12 +24,3 @@ $$
 f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(c)}{n!}(x-c)^n .
 $$
 :::
-
-::: {.proof}
-Fix $x\in(c-\varepsilon,c+\varepsilon)$ and $N\geq0$.
-By Taylor's theorem with the Lagrange remainder, there is $\xi$ between $c$ and $x$ with
-$$
-\abs{f(x)-\sum_{n=0}^N\frac{f^{(n)}(c)}{n!}(x-c)^n}=\frac{\abs{f^{(N+1)}(\xi)}}{(N+1)!}\abs{x-c}^{N+1}\leq\frac{(M\varepsilon)^{N+1}}{(N+1)!},
-$$
-and $a^{N+1}/(N+1)!\to0$ as $N\to\infty$ for every $a\geq0$.
-:::
