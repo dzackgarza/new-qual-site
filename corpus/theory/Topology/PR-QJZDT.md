@@ -14,22 +14,16 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $X, Y$ are CW complexes with $p_X(t), p_Y(t)$ the generating functions for the number of cells (so $[t^n] p_X(t) \da a_n$ is the number of $n\dash$cells in $X$), then the generating function for the product is 
-\[
-p_{X\cross Y}(t) = p_X(t)p_Y(t)
-.\]
-Categorified, this comes from a quasi-isomorphism 
-\[
-C_*^{\cell}(X\cross Y) \cong C_*^{\cell}(X) \tensor_\ZZ C_*^{\cell}(Y)
-.\] 
-so 
-\[
-C_n^{\cell}(X \cross Y ) \cong \bigoplus_{i+j=n} C_i^\cell(X) \cross C_j^{\cell}(Y)
-.\]
-The boundary maps are thus given by
-\[
-\bd(a, b) &\da \bd_X a \tensor b + (-1)^{\abs a} a \tensor \bd_Y b
-.\]
-
+::: {.proposition}
+Let $X$ and $Y$ be CW complexes such that $X\cross Y$ with the product topology is a CW complex with cells $e^i_\alpha\cross e^j_\beta$; this holds if $X$ or $Y$ is locally compact, or if both have countably many cells [@Hat02, Theorem A.6, p. 524].
+Then the cellular chain complexes satisfy
+$$
+C_n(X \cross Y) \cong \bigoplus_{i+j=n} C_i(X) \tensor_\ZZ C_j(Y), \qquad e^i\cross e^j\mapsto e^i\tensor e^j
+,$$
+with boundary
+$$
+d(e^i\cross e^j) = de^i\cross e^j + (-1)^{i} e^i\cross de^j
+$$
+[@Hat02, Proposition 3B.1, p. 269].
+In particular, if $X$ and $Y$ have finitely many cells in each dimension and $p_X(t) = \sum_n a_n t^n$, $p_Y(t)$ count their $n$-cells, then $p_{X\cross Y}(t) = p_X(t)\,p_Y(t)$.
 :::
