@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-Q3XHG
 kind: definition
-title: 'Definition: The Lebesgue Integral'
+title: Lebesgue integral of a nonnegative measurable function
 prompts:
 - How is the Lebesgue integral of $f$ defined from simple functions?
 classification:
@@ -16,7 +16,10 @@ review: draft
 ---
 
 ::: {.definition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f\colon X\to[0,\infty]$ be [[D-DHFN4|measurable]].
+The \dfn{Lebesgue integral} of $f$ is
 $$
-\int f:=\sup \left\{\int \phi \suchthat 0 \leq \phi \leq f, \,\, \phi \text { simple }\right\}
-.$$
+\int f \coloneqq \sup \theset{\int \phi \suchthat \phi \text{ a simple function with } 0 \leq \phi \leq f},
+$$
+where a nonnegative [[D-553MO|simple function]] $\phi=\sum_{j=1}^n c_j\chi_{E_j}$ has integral $\int\phi\coloneqq\sum_{j=1}^n c_j\,\mu(E_j)$.
 :::
