@@ -1,21 +1,23 @@
 ---
 order: 49
-title: Algebra Qual Prep Week 4
+title: "Algebra qual prep week 4: rings"
 ---
 
-# Algebra Qual Prep Week 4
+# Algebra qual prep week 4: rings
 
-- Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
+## Topics
 
-- Irreducible and prime elements, nilpotent, units
+- Ring homomorphisms, ideals, quotients, zero divisors, the isomorphism theorems, the Chinese remainder theorem
 
-- Radical, nilradical, spec and maxspec
+- Irreducible and prime elements, nilpotent elements, units
 
-- Special types: domains, integral domains, Euclidean ⇒ PID ⇒ UFD ⇒?, Dedekind domains, Noetherian, Artinian
+- Radicals, the nilradical, $\spec R$ and $\mspec R$
 
-- Zorn's lemma arguments
+- Classes of rings: integral domains, Euclidean domains $\implies$ PIDs $\implies$ UFDs $\implies$ integral domains, Dedekind domains, Noetherian and Artinian rings
 
-- Bonus optional stuff: localization
+- Existence arguments using Zorn's lemma
+
+- Localization
 
 ![](Seminars and Talks/Workshops/Algebra/_attachments/Untitled 15.png)
 

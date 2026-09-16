@@ -1,16 +1,21 @@
 ---
 order: 59
+title: "Algebra qual prep: representation theory"
 ---
 
-- Representations are modules
+# Algebra qual prep: representation theory
 
-- Simple
+## Topics
 
-- Semisimple
+- Representations as modules over the group ring
 
-- Irreducible
+- Simple modules
 
-- Indecomposable
+- Semisimple modules
+
+- Irreducible representations
+
+- Indecomposable representations
 
 - Maschke's theorem
 
