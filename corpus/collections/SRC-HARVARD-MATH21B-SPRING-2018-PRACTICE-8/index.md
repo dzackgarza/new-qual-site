@@ -37,6 +37,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution8.pdf` is Harvard Math 21b Spring 2018 Practice Final 8 with worked solutions and fourteen top-level problems. The Harvard course resource page establishes provenance. The source graphs in Problem 2 are not recoverable in the retained extraction, and several lost OCR headings are recovered only from their position between numbered problems and the fourteen-problem score table; those source conditions are recorded on the affected cards.
+::: {.remark}
+Practice Final 8 of Harvard Math 21b, Spring 2018, with worked solutions and fourteen problems.
 :::
