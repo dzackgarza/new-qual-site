@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-PUVIQ
 kind: theorem
-title: Zorn's Lemma
+title: Zorn's lemma
 prompts:
 - State Zorn's lemma.
 classification:
@@ -15,7 +15,10 @@ review: draft
 ---
 
 ::: {.theorem}
-If every chain in a poset $P$ has an upper bound in $P$, then $P$ contains a maximal element.
+Let $(P,\le)$ be a partially ordered set in which every [[D-P6XOT|chain]] has an upper bound in $P$.
+Then $P$ has a maximal element: an element $m\in P$ such that $m\le x$ with $x\in P$ implies $x=m$.
+:::
 
-Note: a *chain* is a totally ordered subset.
+::: {.remark}
+The empty chain is a chain, so the hypothesis forces $P$ to be nonempty.
 :::
