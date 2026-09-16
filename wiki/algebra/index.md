@@ -5,50 +5,48 @@ order: 10
 
 # Algebra
 
-## What the exam asks
+## Problem types
 
-The paper is a small number of recurring questions, and each one is decided by a page here.
-
-| The question | Where it is decided |
+| Problem type | Page |
 | --- | --- |
-| Show $G$ is not simple, or classify the groups of order $n$ | [[algebra/group-actions/show-g-is-not-simple\|Show $G$ is not simple]] |
-| Is this group abelian? | [[algebra/groups/is-this-group-abelian\|Is this group abelian?]] |
-| What kind of ring is this, and is every $X$ a $Y$? | [[algebra/rings-and-ideals/which-kind-of-ring\|Which kind of ring is this?]] |
-| Classify this module, or this abelian group | [[algebra/modules/classify-this-module\|Classify this module]] |
-| Find the canonical form of this matrix | [[algebra/linear-algebra/find-the-canonical-form\|Find the canonical form]] |
-| Compute this Galois group | [[algebra/galois-theory/compute-this-galois-group\|Compute this Galois group]] |
+| Show that $G$ is not simple, or classify the groups of order $n$ | [[algebra/group-actions/show-g-is-not-simple\|Show $G$ is not simple]] |
+| Decide whether a group is abelian | [[algebra/groups/is-this-group-abelian\|Is this group abelian?]] |
+| Place a ring among the classes of rings, or decide whether every ring of one class belongs to another | [[algebra/rings-and-ideals/which-kind-of-ring\|Which kind of ring is this?]] |
+| Classify a finitely generated module or abelian group | [[algebra/modules/classify-this-module\|Classify this module]] |
+| Find the canonical form of a matrix | [[algebra/linear-algebra/find-the-canonical-form\|Find the canonical form]] |
+| Compute a Galois group | [[algebra/galois-theory/compute-this-galois-group\|Compute this Galois group]] |
 
-Three of those are the same theorem in different clothes: classifying a finitely generated abelian group, finding a rational canonical form, and classifying a module over a PID are one computation over $\ZZ$, over $k[x]$, and in general.
+The structure theorem for finitely generated modules over a [[D-HTIL5|principal ideal domain]] ([[algebra/modules/over-a-pid|Modules over a PID]]) specializes over $\ZZ$ to the classification of finitely generated abelian groups and over $k[x]$ to the rational canonical form of a matrix over a field $k$.
 
-## The chapters, in dependency order
+## Chapters
 
 1. [[algebra/groups/index|Groups]] -- subgroups, quotients, the standard families.
 
 2. [[algebra/group-actions/index|Group actions]] -- Lagrange, orbit-stabilizer, the class equation, Sylow.
 
-3. [[algebra/rings-and-ideals/index|Rings and ideals]] -- the ring tower, ideals, factorization.
+3. [[algebra/rings-and-ideals/index|Rings and ideals]] -- the classes of rings, ideals, factorization.
 
-4. [[algebra/modules/index|Modules]] -- the structure theorem, free and projective.
+4. [[algebra/modules/index|Modules]] -- the structure theorem, free and projective modules.
 
 5. [[algebra/linear-algebra/index|Linear algebra]] -- the canonical forms.
 
 6. [[algebra/fields/index|Fields]] -- extensions, splitting, separability, finite fields.
 
-7. [[algebra/galois-theory/index|Galois theory]] -- the correspondence, and computing groups.
+7. [[algebra/galois-theory/index|Galois theory]] -- the correspondence, and computing Galois groups.
 
 8. [[algebra/representations/index|Representations]] -- Maschke, Schur, characters.
 
-Across the chapters:
+Reference pages:
 
-- [[algebra/review|Review sheet]] -- every statement, on one page.
+- [[algebra/review|Review sheet]] -- the main theorems, grouped by chapter.
 
-- [[algebra/counterexamples|Counterexamples]] -- filed by the statement each refutes.
+- [[algebra/counterexamples|Counterexamples]] -- grouped by the statement each refutes.
 
-- [[algebra/groups/groups-of-small-order|Groups of small order]] -- the table to check a counting argument against.
+- [[algebra/groups/groups-of-small-order|Groups of small order]] -- the groups of orders $p$, $p^2$, and $pq$, and of each composite order up to $20$.
 
-Also here: [[algebra/resources/index|resources]] and [[algebra/workshops/index|workshops]].
+Also: [[algebra/resources/index|resources]] and [[algebra/workshops/index|workshops]].
 
-## The syllabus
+## Syllabus
 
 See [[algebra/resources/syllabus|Syllabus]].
 
