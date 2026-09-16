@@ -9,12 +9,10 @@ The mathematical entries are the worklist of the `math-defect-repair` node in [T
 
 ## Count
 
-- Mathematical entries: 1
+- Mathematical entries: 0
 
 - Workflow and rendering papercuts: 0
 
 ## Mathematical entries
-
-- [ ] ag-notes migration omits substantive source content
 
 ## Workflow and rendering papercuts
