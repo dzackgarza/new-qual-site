@@ -3,6 +3,9 @@ schema: qual/card@1
 id: D-6UHU7
 kind: definition
 title: Deformation retraction
+prompts:
+- What does it mean for $A \subset X$ to be a deformation retract of $X$?
+- What map exhibits $A \subset X$ as a deformation retract of $X$?
 classification:
   areas:
   - topology
@@ -29,4 +32,8 @@ Hence $\iota$ is a [[D-HFR32|homotopy equivalence]] with homotopy inverse $r$.
 
 ::: {.remark}
 Two spaces $X$ and $Y$ are homotopy equivalent if and only if there exists a space $Z$ containing both $X$ and $Y$ as deformation retracts; for a homotopy equivalence $f\colon X\to Y$, the [[D-RMQ7W|mapping cylinder]] of $f$ is such a $Z$.
+:::
+
+::: {.concept}
+[@Hat02].
 :::

@@ -215,17 +215,11 @@ $T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they ar
 
 [[D-UH3L5]]
 
-[[D-2O3N7]]
-
-::: {.remark}
-If $A\subseteq X$ is a deformation retract, then the inclusion $A\injects X$ is a homotopy equivalence.
-Spaces $X$ and $Y$ are homotopy equivalent if and only if there is a space $Z$ containing both as deformation retracts; for a homotopy equivalence $f\colon X\to Y$, the mapping cylinder of $f$ is such a $Z$.
-If $A$ and $B$ both deformation retract onto a common subspace $X$, then $A \homotopic X\homotopic B$.
-:::
-
 [[D-6UHU7]]
 
-[[FD-BDEI2]] [[FD-COPFN]]
+::: {.remark}
+If spaces $X$ and $Y$ both deformation retract onto a common subspace $A$, then $X \homotopic A \homotopic Y$.
+:::
 
 [[D-XC53X]]
 
