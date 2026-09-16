@@ -14,10 +14,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $H \normal G$ be a normal subgroup of a finite group $G$, where the order of $H$ is the smallest prime $p$ dividing $\abs{G}$.
 Prove that $H$ is contained in the center of $G$.
-
-> Solution due to Swaroop Hegde, typed up + modifications added by DZG.
+:::
 
 ::: {.concept}
 \envlist
@@ -38,6 +38,8 @@ Show an element $x$ is central by showing $\size C_x = 1$.
 
 
 ::: {.proof}
+> Solution due to Swaroop Hegde, typed up + modifications added by DZG.
+
 \envlist
 
 - Let $p \da \size H$.
