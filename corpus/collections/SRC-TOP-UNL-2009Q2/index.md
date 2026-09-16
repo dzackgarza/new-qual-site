@@ -29,8 +29,6 @@ source:
   area: topology
 ---
 
-::: remark
-UNL Mathematics Qualifying Exam, Math 871/872, June 2009.
-
-UNL Math 871/872 qualifying exam, June 2009. The paper is `assets/attachments/2009Q2_Topology_Qual.pdf`. Eight questions (A then B); the list is paper order.
+::: {.remark}
+UNL Math 871/872 qualifying exam, June 2009, with eight questions in Sections A and B.
 :::
