@@ -41,7 +41,3 @@ source:
     term: spring
     year: 1978
 ---
-
-::: {.remark}
-UC Berkeley Preliminary Exam, Spring 1978. Problems are listed in source order.
-:::
