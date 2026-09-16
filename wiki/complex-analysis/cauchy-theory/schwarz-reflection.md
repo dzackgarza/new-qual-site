@@ -8,11 +8,11 @@ topics:
 
 # Schwarz reflection
 
-Extending a holomorphic function across a segment of the real line by reflecting it.
-The mechanism is Morera: the glued function has vanishing integrals over triangles that straddle the segment, because the two contributions along the segment cancel.
+A holomorphic function on the upper half of a symmetric region that is real on the real axis extends to the whole region by reflection.
+The proof glues two holomorphic functions along a segment and applies Morera's theorem.
 
-:::{.remark}
-Throughout, $\Omega$ is a region symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$, partitioned as $\Omega^+ \subseteq \HH$, $I \subseteq \RR$, and $\Omega^- \subseteq \bar{\HH}$.
+::: {.remark}
+Throughout, $\Omega$ is an open set symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$, and $\Omega^+ \coloneqq \Omega\cap\ts{\Im z>0}$, $I\coloneqq\Omega\cap\RR$, and $\Omega^- \coloneqq \Omega\cap\ts{\Im z<0}$.
 
 :::
 
@@ -20,15 +20,16 @@ Throughout, $\Omega$ is a region symmetric about the real axis, so $z\in \Omega 
 
 [[T-5SKNT]]
 
-:::{.proof title="Symmetry principle, by Morera"}
+::: {.proof title="Symmetry principle, by Morera"}
 The glued function $f$ is holomorphic on $\Omega^\pm$ by hypothesis, so it remains to check holomorphy along $I$.
 Let $T\subset\Omega$ be a closed triangle.
 If $T$ misses $I$, then $T$ lies in $\Omega^+$ or in $\Omega^-$ and $\int_{\partial T} f=0$ by Goursat.
 
-If $T$ meets $I$, split it along $I$ into $T^+\da T\cap\overline{\Omega^+}$ and $T^-\da T\cap\overline{\Omega^-}$.
-The two integrals along the segment $T\cap I$ cancel: $f^+$ and $f^-$ agree continuously on $I$ and the orientations are opposite.
-Approximate $T^\pm$ from inside $\Omega^\pm$ by triangles missing $I$; those integrals vanish by Goursat, and uniform continuity of $f$ on $T$ passes to the limit.
-Thus $\int_{\partial T} f=0$, and Morera gives holomorphy on $\Omega$.
+If $T$ meets $I$, let $T^+\coloneqq T\cap\ts{\Im z\geq 0}$ and $T^-\coloneqq T\cap\ts{\Im z\leq 0}$, convex polygons with positively oriented boundaries.
+The boundaries share the segment $T\cap\RR$ with opposite orientations, so $\int_{\partial T} f = \int_{\partial T^+} f + \int_{\partial T^-} f$.
+For small $\varepsilon>0$, the convex polygon $T^+_\varepsilon \coloneqq T^+\cap\ts{\Im z\geq\varepsilon}$ lies in $\Omega^+$, so $\int_{\partial T^+_\varepsilon} f = 0$ by Goursat's theorem applied to a triangulation of $T^+_\varepsilon$.
+As $\varepsilon\to 0$ the boundaries $\partial T^+_\varepsilon$ converge to $\partial T^+$, and since $f$ is uniformly continuous on the compact set $T$, $\int_{\partial T^+} f = \lim_{\varepsilon\to 0}\int_{\partial T^+_\varepsilon} f = 0$; likewise $\int_{\partial T^-} f=0$.
+Thus $\int_{\partial T} f=0$, and Morera's theorem gives holomorphy on $\Omega$.
 
 :::
 
@@ -36,29 +37,27 @@ Thus $\int_{\partial T} f=0$, and Morera gives holomorphy on $\Omega$.
 
 [[T-Q3GGF]]
 
-:::{.proof title="Schwarz reflection"}
-Write $F(z)\da f(z)$ for $z\in \Omega^+\cup I$, and $F(z)\da \overline{f(\bar z)}$ for $z\in \Omega^-$.
+::: {.proof title="Schwarz reflection"}
+Define $F(z)\coloneqq f(z)$ for $z\in \Omega^+\cup I$, and $F(z)\coloneqq \overline{f(\bar z)}$ for $z\in \Omega^-$.
 On $\Omega^-$ the difference quotient is
-\[
+$$
 \frac{F(z+h)-F(z)}{h}
 = \overline{\frac{f(\bar z+\bar h)-f(\bar z)}{\bar h}}
-,\]
+,$$
 using $\overline{A}/h = \overline{A/\bar h}$.
 As $h\to 0$ we have $\bar h\to 0$, so $F'(z)=\overline{f'(\bar z)}$ and $F$ is holomorphic on $\Omega^-$.
-On $I\subseteq\RR$ the function $f$ is real valued, so $\overline{f(\bar x)}=\overline{f(x)}=f(x)$.
-Thus $F$ is continuous on $\Omega$ and its two holomorphic pieces agree on $I$, and the symmetry principle supplies holomorphy on all of $\Omega$.
+On $I$ the function $f$ is real valued, so $\overline{f(\bar x)}=\overline{f(x)}=f(x)$ for $x\in I$, and $\overline{f(\bar z)}\to f(x)$ as $z\to x$ from $\Omega^-$.
+Thus $F$ is continuous on $\Omega$, its restrictions to $\Omega^\pm$ are holomorphic, and the symmetry principle [[T-5SKNT]] gives holomorphy on $\Omega$.
 
 :::
 
-:::{.remark}
-The real axis is not special: $\HH^\pm$ may be replaced by any region symmetric about a line segment, and by a Möbius transformation, about any arc of a circle.
-After a Möbius change of coordinates, the same reflection argument therefore applies across circular boundary arcs.
+::: {.remark}
+Composing with Möbius transformations in the domain and the target, the same argument extends a function holomorphic on one side of a line segment or circular arc and continuous up to it, with boundary values on a line or circle, by reflection in the arc and in the target line or circle.
 
 :::
 
-:::{.remark title="What the hypothesis buys"}
-Reflection needs $f$ to be real valued on $I$, not merely continuous up to it.
-Real values are what make $\overline{f(\bar x)}$ agree with $f(x)$ there, so the two definitions glue.
-Replace real by "lands in a circle" and the same argument runs after composing with a Möbius map that carries the circle to $\RR$.
+::: {.example title="The real-valued hypothesis is used"}
+The constant function $f(z) = i$ on $\Omega^+$ is continuous up to $I$ but not real valued there.
+Its reflection is $\overline{f(\bar z)} = -i$ on $\Omega^-$, and the glued function is discontinuous on $I$.
 
 :::
