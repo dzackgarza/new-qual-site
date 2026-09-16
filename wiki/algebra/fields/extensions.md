@@ -25,7 +25,7 @@ Every finite extension is algebraic, and by the primitive element theorem every 
 
 [[FD-2EVYB]]
 
-[[FD-KWXK3]] [[FD-HVSOB]] [[FD-NS5RF]]
+[[FD-NS5RF]]
 
 [[T-NGBVC]]
 

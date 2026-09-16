@@ -5,14 +5,14 @@ kind: definition
 title: Algebraic field extension
 prompts:
 - When is a field extension $L/k$ algebraic?
+- When is a field extension $L/K$ algebraic?
+- When is a field extension $L/K$ algebraic over $K$?
 classification:
   areas:
   - algebra
   topics:
   - Field Extensions
-relations:
-- kind: variant-of
-  target: FD-HVSOB
+relations: []
 review: draft
 ---
 

@@ -14,5 +14,5 @@ review: draft
 
 ::: {.proposition}
 Let $k \subseteq K \subseteq L$ be fields, with the extensions not necessarily finite.
-If $L/K$ and $K/k$ are [[FD-HVSOB|algebraic]], then $L/k$ is algebraic.
+If $L/K$ and $K/k$ are [[FD-NS5RF|algebraic]], then $L/k$ is algebraic.
 :::
