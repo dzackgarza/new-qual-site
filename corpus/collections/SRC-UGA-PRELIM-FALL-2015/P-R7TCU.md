@@ -15,6 +15,10 @@ audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-25
+- event: solution-reviewed
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced two overlapping solutions with one structured proof.
 ---
 
 ::: problem
@@ -22,29 +26,15 @@ Suppose $A$ is a $3\times3$ matrix with real entries and eigenvalues $-1$, $0$, 
 Prove that $A^3=A$.
 :::
 
-::: solution
-1. We have $p_A(x) = (x+1)(x-1)(x) = x^3 - x$ and so by Cayley-Hamilton, $A^3 - A = 0 \implies A^3 = A$.
-   $\qed$
-:::
-
 ::: {.solution}
-**Goal:** Let $A \in M_3(\mathbb{R})$ be a $3 \times 3$ matrix with eigenvalues $-1, 0, 1$.
-Prove that $A^3 = A$.
-
-<1>1. The characteristic polynomial of $A$ is $p_A(x) = x(x-1)(x+1) = x^3 - x$.
+<1>1. The characteristic polynomial of $A$ is $p_A(x)=x^3-x$.
 ::: {.proof}
-<2>1. $A$ is a $3 \times 3$ matrix, so $\deg(p_A(x)) = 3$ and its leading coefficient is $1$ (using $p_A(x) = \det(xI - A)$). <2>2. The roots of $p_A(x)$ are the eigenvalues of $A$, which are given as $\lambda_1 = 0, \lambda_2 = 1, \lambda_3 = -1$.
+$p_A(x)=\det(xI-A)$ is monic of degree $3$, and its roots in $\mathbb C$ are the eigenvalues of $A$.
+The three eigenvalues $-1,0,1$ are distinct, so they are all the roots, each simple, and $p_A(x)=(x+1)x(x-1)=x^3-x$.
 :::
-<2>3. Since these are $3$ distinct roots for a degree $3$ monic polynomial, $p_A(x) = (x-0)(x-1)(x+1) = x(x^2-1) = x^3 - x$.
 
-<1>2. By the Cayley-Hamilton Theorem, $p_A(A) = O$, where $O$ is the $3 \times 3$ zero matrix.
+<1>2. $A^3=A$.
 ::: {.proof}
-The Cayley-Hamilton Theorem states that every square matrix over a commutative ring satisfies its own characteristic polynomial.
-:::
-Hypotheses are satisfied since $A \in M_3(\mathbb{R})$.
-
-<1>3. $A^3 = A$.
-::: {.proof}
-By <1>1 and <1>2: $$p_A(A) = A^3 - A = O \implies A^3 = A.$$ Q.E.D.
+By the Cayley--Hamilton theorem $p_A(A)=0$, that is, $A^3-A=0$ by <1>1.
 :::
 :::
