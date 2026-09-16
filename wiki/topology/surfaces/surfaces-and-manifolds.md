@@ -50,7 +50,7 @@ For example, the torus and the annulus both have Euler characteristic $0$ and ar
 
 ### Euler characteristic
 
-[[FF-IEHB2]] [[FF-CKGXX]]
+[[FF-IEHB2]]
 
 [[FF-W3AIU]]
 
@@ -67,11 +67,11 @@ With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius 
 
 :::
 
-[[FF-23V5J]] [[FF-4DFKT]]
+[[FF-23V5J]]
 
-[[FF-SM63J]] [[FF-I5FIJ]]
+[[FF-SM63J]]
 
-[[FF-BOIT5]] [[FF-WLJEK]]
+[[FF-BOIT5]]
 
 [[PR-QV4U5]]
 
