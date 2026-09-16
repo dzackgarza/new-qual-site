@@ -14,18 +14,22 @@ review: draft
 ---
 
 ::: {.definition}
-An exact sequence that is unbounded in one or both directions.
-The main source is a short exact sequence of chain complexes $0\to A_*\to B_*\to C_*\to 0$, which induces
-\[
-\cdots \to H_n(A) \to H_n(B) \to H_n(C) \mapsvia{\del} H_{n-1}(A) \to \cdots
-,\]
-where $\del$ is the connecting map.
-For a pair $(X,A)$ this gives
-\[
-\cdots \to H_n(A)\to H_n(X) \to H_n(X, A) \mapsvia{\del} H_{n-1}(A) \to \cdots
-.\]
+A \dfn{long exact sequence} is an [[D-STPAM|exact sequence]] with infinitely many terms, indexed by $\ZZ$ or by an infinite interval of $\ZZ$.
 :::
 
-::: {.concept}
-See Hatcher, §2.1, Theorem 2.16, p. 117.
+::: {.theorem}
+Let $0\to A_\bullet\mapsvia{i}B_\bullet\mapsvia{j}C_\bullet\to0$ be a short exact sequence of chain complexes of abelian groups.
+There are homomorphisms $\del\colon H_n(C_\bullet)\to H_{n-1}(A_\bullet)$, the \dfn{connecting homomorphisms}, such that
+$$
+\cdots\to H_n(A_\bullet)\mapsvia{i_*}H_n(B_\bullet)\mapsvia{j_*}H_n(C_\bullet)\mapsvia{\del}H_{n-1}(A_\bullet)\to\cdots
+$$
+is exact [@Hat02, Theorem 2.16].
+:::
+
+::: {.example}
+For a topological space $X$ and a subspace $A$, the short exact sequence $0\to C_\bullet(A)\to C_\bullet(X)\to C_\bullet(X,A)\to0$ of singular chain complexes gives the long exact sequence of the pair
+$$
+\cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\mapsvia{\del}H_{n-1}(A)\to\cdots\to H_0(X,A)\to0
+$$
+[@Hat02, p. 117].
 :::
