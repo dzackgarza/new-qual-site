@@ -50,7 +50,7 @@ Priority is not a prerequisite edge: a blocked higher node does not idle the str
   Deciding whether a passage violates a policy is reading, not a detector, a lint count or a keyword scan; a review-crawl candidate such as the `COPY-02` (filed as `PROSE-02`) reports on issues #86 and #88 is a lead to read, not a finding.
   **Acceptance:** every surface in that scope has been read against the policies and its violations rewritten, with the mathematics preserved; no surface is closed by a receipt, an inventory or an audit note.
 
-- **`pdf-source-intake`**. **Needs:** none.
+- **`pdf-source-intake`**. **Closed 2026-09-16.** `46847835f` replaced the last current Queue E extraction that still depended only on a legacy `pypdf` fallback with a committed MinerU Flash v0.5.9 page-range baseline and explicit provenance. The committed Queue E state has 354 checked rows and zero unchecked rows; all 354 linked extraction files are nonempty, every current extraction path has MinerU Flash or Mistral OCR provenance, and every row records a collection/provenance route or a reference-only/duplicate disposition. **Needs:** none.
   Work the unchecked entries in [`queues/E-pdf-attachments.md`](queues/E-pdf-attachments.md) until the queue is empty.
   The queue is the live worklist; do not copy its count or filenames here.
   For a problem-bearing PDF, first establish the deterministic extraction baseline required by [AGENTS.md](AGENTS.md#pdf-extraction): a checked-in Markdown extraction from MinerU Flash or the Mistral OCR API, with repository evidence of that extraction path.
