@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-$X$ is a Baire space iff whenever $\theset{U_n}$ is a *countable* collection of open dense subsets of $X$, then their intersection $\intersect U_n$ is again dense.
+A topological space $X$ is a \dfn{Baire space} if whenever $(U_n)_{n\geq 1}$ is a countable family of open [[FD-BA2WU|dense]] subsets of $X$, the intersection $\bigcap_{n\geq 1} U_n$ is dense in $X$.
 :::
