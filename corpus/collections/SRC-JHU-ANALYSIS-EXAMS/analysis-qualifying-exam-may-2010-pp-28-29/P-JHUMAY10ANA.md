@@ -23,58 +23,37 @@ Prove that $f$ has a removable singularity at $0$.
 :::
 
 ::: {.solution}
-<1>1. Expand $f(z)$ in its Laurent series on $U = \{z \in \mathbb{C} : 0 < |z| < 1\}$:
-\[
-f(z) = \sum_{n=-\infty}^\infty c_n z^n, \quad \text{where } c_n = \frac{1}{2\pi i} \oint_{|z| = r} \frac{f(z)}{z^{n+1}}\,dz \quad (0 < r < 1).
-\]
+<1>1. The function $g(z)=zf(z)$ extends holomorphically across $0$ with value $0$.
 ::: {.proof}
-Laurent Expansion Theorem for holomorphic functions on an annulus / punctured disk.
+For $0<|z|<1$,
+$$
+|g(z)|=|z|\,|f(z)|\le |z|^{1/2}.
+$$
+Thus $g$ is bounded near $0$, so the [[D-BQLJV|Riemann removable singularity theorem]] gives a holomorphic extension $G$ to the unit disk. The displayed estimate also gives
+$$
+G(0)=\lim_{z\to0}zf(z)=0.
+$$
 :::
 
-<1>2. Bound the negative Laurent coefficients $c_{-k}$ for $k \ge 1$: <2>1. For $n = -k$ with $k \ge 1$, the integral representation is:
-\[
-c_{-k} = \frac{1}{2\pi i} \oint_{|z| = r} f(z) z^{k-1}\,dz.
-\]
+<1>2. Dividing the zero of $G$ by $z$ gives a holomorphic extension of $f$.
 ::: {.proof}
-substitution $n = -k$ in <1>1. <2>2. On the circle $|z| = r$, $|f(z)| \le r^{-1/2}$ by hypothesis.
-:::
-::: {.proof}
-hypothesis $|f(z)| \le |z|^{-1/2}$.
-:::
-<2>3. Applying the $ML$-inequality along the circular path of length $2\pi r$:
-\[
-|c_{-k}| \le \frac{1}{2\pi} \left(\sup_{|z|=r} |f(z)|\right) r^{k-1} (2\pi r) \le r^{-1/2} \cdot r^k = r^{k - 1/2}.
-\]
-::: {.proof}
-$ML$-inequality on circle of radius $r$.
-:::
-<2>4. Since $k \ge 1$, the exponent satisfies $k - 1/2 \ge 1/2 > 0$.
-::: {.proof}
-$k \ge 1 \implies k - 1/2 \ge 1/2$.
+By [[T-SRY2V|holomorphic implies analytic]], the Taylor series of $G$ at $0$ has the form
+$$
+G(z)=\sum_{n\ge1}a_nz^n
+$$
+because $G(0)=0$. Hence
+$$
+F(z)=\sum_{n\ge1}a_nz^{n-1}
+$$
+is holomorphic near $0$ and satisfies $G(z)=zF(z)$. For $z\ne0$ in the punctured disk,
+$$
+F(z)=\frac{G(z)}z=f(z).
+$$
+Thus $F$ extends $f$ holomorphically across $0$.
 :::
 
-<1>3. Show that $c_{-k} = 0$ for all $k \ge 1$: <2>1. The value of $c_{-k}$ is independent of the choice of $r \in (0, 1)$ by Cauchy’s Integral Theorem.
+<1>3. Q.E.D.
 ::: {.proof}
-deformation of contour.
+Step <1>2 constructs the required holomorphic extension, so the singularity at $0$ is removable.
 :::
-<2>2. Taking the limit as $r \to 0^+$ in <2>3:
-\[
-|c_{-k}| \le \lim_{r \to 0^+} r^{k - 1/2} = 0.
-\]
-::: {.proof}
-<2>3 and <2>4. <2>3. Thus $c_{-k} = 0$ for every $k \ge 1$.
-:::
-::: {.proof}
-$|c_{-k}| = 0$.
-:::
-
-<1>4. Conclusion: The principal part of the Laurent series vanishes identically:
-\[
-f(z) = \sum_{n=0}^\infty c_n z^n \quad \text{for } 0 < |z| < 1.
-\]
-Setting $f(0) = c_0$ extends $f$ to a holomorphic function on the entire unit disk $|z| < 1$, so $f$ has a removable singularity at $0$.
-::: {.proof}
-Riemann's Removable Singularity Theorem and <1>3.
-:::
-Q.E.D.
 :::
