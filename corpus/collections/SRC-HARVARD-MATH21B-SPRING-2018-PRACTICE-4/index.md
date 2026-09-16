@@ -37,6 +37,6 @@ source:
     year: 2018
 ---
 
-::: remark
-The retained `solution4.pdf` is Harvard Math 21b Spring 2018 Practice Final 4 with fourteen top-level problems. The course resource page establishes provenance. Problem 1 loses its twentieth true-or-false statement, Problem 3's source tables/portraits are damaged, Problem 9(c)'s eight-queens display conflicts with its own text/solution, and Problem 14's 40-by-40 display is unreadable but structurally identified by the packet's own solution. These source conditions are explicit rather than silently repaired.
+::: {.remark}
+Practice Final 4 of Harvard Math 21b, Spring 2018, with fourteen problems.
 :::
