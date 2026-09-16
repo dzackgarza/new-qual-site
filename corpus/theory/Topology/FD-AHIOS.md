@@ -5,6 +5,7 @@ kind: definition
 title: Discrete topology
 prompts:
 - What is the discrete topology on a set $X$?
+- Which sets are open in the discrete topology on $X$?
 classification:
   areas:
   - topology
