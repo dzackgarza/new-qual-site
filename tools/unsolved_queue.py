@@ -25,7 +25,7 @@ from qualc.pandoc_batch import PandocServer
 REPO = Path(__file__).resolve().parent.parent
 
 QUEUE_LINE = re.compile(r'^- \[ \] (?P<id>\S+) — "(?P<title>.*)"$')
-SOLUTION_OPEN = re.compile(r"^:::\s*(?:solution|\{[^}\n]*\.solution(?:\s+[^}]*)?\})\s*$", re.M)
+SOLUTION_OPEN = re.compile(r"^:{3,}\s*(?:solution|\{[^}\n]*\.solution(?:\s+[^}]*)?\})\s*$", re.M)
 CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
 
 
