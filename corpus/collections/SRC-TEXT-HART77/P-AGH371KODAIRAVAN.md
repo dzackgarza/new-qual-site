@@ -16,7 +16,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-09-17
-  note: Compared the hypotheses and vanishing assertion with the retained Hartshorne III.7.1 transcription. The proof keeps an arbitrary ground field: global functions form a finite field extension, not necessarily k, and a positive-degree hypersurface replaces any assumption of a rational point or a suitable k-hyperplane.
+  note: 'Compared the hypotheses and vanishing assertion with the retained Hartshorne III.7.1 transcription. The proof keeps an arbitrary ground field: global functions form a finite field extension, not necessarily k, and a positive-degree hypersurface replaces any assumption of a rational point or a suitable k-hyperplane.'
 - event: solution-written
   by: chatgpt
   date: 2026-09-17
