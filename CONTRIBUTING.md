@@ -98,9 +98,7 @@ If one reappears, retire it under `QUAL-09`; see [AGENTS.md](AGENTS.md#one-check
 
 ## Mathematical content
 
-Read the relevant cards before changing their titles, classifications, relations, or content (`QUAL-01`).
-Make semantic decisions from the mathematics, not from filenames or text similarity (`QUAL-02`).
-A title names the mathematics on the card (`CARD-01`, `CARD-02`, `CARD-06`), and public prose follows the policy families above.
+Read the relevant cards before changing their titles, classifications, relations, or content (`QUAL-01`). Make semantic decisions from the mathematics, not from filenames or text similarity (`QUAL-02`). A title names the mathematics on the card (`CARD-01`, `CARD-02`, `CARD-06`), and public prose follows the policy families above.
 
 A canonical problem states one mathematical problem.
 An exam or textbook collection lists those problems in the order they appeared.
@@ -746,8 +744,7 @@ Existence of objects never supplies an order, a comparison, or extra structure u
 State the positive structure and stop.
 Keep a contrast only when it is a mathematical counterexample or a distinction with a named object; a genuine non-example where an expected property fails goes in an example or remark block that explains the precise obstruction.
 
-The same device appears as a “without”, “requires”, or “does not follow” sentence standing for a positive definition or theorem that is not stated (`PR-30`).
-It has three costs.
+The same device appears as a “without”, “requires”, or “does not follow” sentence standing for a positive definition or theorem that is not stated (`PR-30`). It has three costs.
 
 **1. Bloat.** A positive theorem has infinitely many true negatives that could be stated beside it.
 Stating any of them lengthens the text while adding no statement block to the skeleton (`SEC-6`). Standard exposition states the quantified positive once and stops; the complements are evident to a reader who has read the definitions and the theorem.
@@ -831,12 +828,10 @@ State the construction, then verify the required properties.
 Readers need mathematical reasons for mathematical claims.
 Rulings, audit procedure, review status, implementation status, editorial policy, storage and preservation status, missing cards, corpus coverage, issue backlog, extraction or image status, source bookkeeping, and explanations of why a panel is thin are project process.
 They foreground the writer instead of serving the reader, and a working link already provides access.
-Record them in [COMPLAINTS.md](COMPLAINTS.md), [TODO.md](TODO.md), or the work queues (`QUAL-08`).
-Include technical or historical context only when it changes what the reader can identify, interpret, or do; genuine mathematical warnings and source disambiguation stay.
+Record them in [COMPLAINTS.md](COMPLAINTS.md), [TODO.md](TODO.md), or the work queues (`QUAL-08`). Include technical or historical context only when it changes what the reader can identify, interpret, or do; genuine mathematical warnings and source disambiguation stay.
 
 The same leak occurs when a sentence's only coherent audience is a contributor: “requires a stated theorem”, “must be justified”, or “with its hypotheses” as a reminder to include them.
-Its rhetoric is a preemptive scolding that corrects a mistake the reader never made (`PR-18`).
-A textbook states the theorem with its hypotheses, proves it, and applies it; it does not tell the reader that a theorem or hypothesis is required.
+Its rhetoric is a preemptive scolding that corrects a mistake the reader never made (`PR-18`). A textbook states the theorem with its hypotheses, proves it, and applies it; it does not tell the reader that a theorem or hypothesis is required.
 That governance belongs in this guide.
 
 **Bad:** “A conclusion about $L$ from either image requires a stated local-to-global theorem with its hypotheses” on a mathematical page.
@@ -1285,8 +1280,7 @@ A trailing participial clause performs analysis without adding content.
 ### `PR-10`: Bold marks a run-in case label, not a term or a clause
 
 `**bold**` or `*italic*` used to weight a clause, or to mark a defined term, is undue emphasis.
-A term is marked only at its definition, with `\dfn{term}` (`DEF-26`).
-Bold appears only as a run-in label naming a case at the start of a list item or paragraph, ending with a period.
+A term is marked only at its definition, with `\dfn{term}` (`DEF-26`). Bold appears only as a run-in label naming a case at the start of a list item or paragraph, ending with a period.
 A remark, example, or proof is a fenced block, not a paragraph with a run-in label (`STYLE-07`).
 
 **Bad:** “**Tonelli** applies when $f \geq 0$.”; “the **ideal sheaf** is …”; “**Remark.** …”; emphasis that weights a clause.
@@ -1364,13 +1358,15 @@ Three recurring forms say that a theorem exists instead of stating it:
 
 - **“Requires a theorem with its hypotheses.”** Meta-commentary that a conclusion requires a theorem contributes no statement block to the skeleton (`SEC-6`). State the theorem with its hypotheses once, then apply it.
 
-- **“With its hypotheses.”** It is true of every theorem, occupies the slot where the hypotheses belong, and states none — the same device as “under the appropriate conditions” or “where defined”. List the hypotheses or state the theorem that carries them; if no specific hypotheses are meant, delete the clause.
+- **“With its hypotheses.”** It is true of every theorem, occupies the slot where the hypotheses belong, and states none — the same device as “under the appropriate conditions” or “where defined”.
+  List the hypotheses or state the theorem that carries them; if no specific hypotheses are meant, delete the clause.
 
 - **“Without hypothesis $H$, $A$ and $B$ differ.”** It is true of any theorem “$H\Rightarrow A\cong B$” and names neither the theorem, nor which condition is meant (`DEF-34`), nor the comparison map.
 
 **Bad:** “A conclusion about $L$ from either image requires a stated local-to-global theorem with its hypotheses.”; “holds under its hypotheses”; “Without the finite-generation hypothesis, scalar extension and completion are distinct constructions.”
 
-**Good:** a `::: {.theorem}` block — “A nondegenerate quadratic form over $\mathbb Q$ represents $0$ nontrivially if and only if it does so over $\mathbb R$ and over $\mathbb Q_p$ for every prime $p$.” — then its application: “By the Hasse–Minkowski theorem, $q$ is isotropic over $\mathbb Q$, because …”
+**Good:** a `::: {.theorem}` block — “A nondegenerate quadratic form over $\mathbb Q$ represents $0$ nontrivially if and only if it does so over $\mathbb R$ and over $\mathbb Q_p$ for every prime $p$.”
+— then its application: “By the Hasse–Minkowski theorem, $q$ is isotropic over $\mathbb Q$, because …”
 
 **Good:** “For a finitely generated module $M$ over a local ring $R$ with residue field $k$, $M=0$ if and only if $M\otimes_R k=0$.”; “there exist $n$ and a surjective $R$-linear map $R^n\to M$” (`PR-21`); “assume $\mathcal C$ has all pullbacks” (`DEF-31`).
 
@@ -1722,8 +1718,7 @@ The standard device for a reminder is "Recall".
 
 ### `CITE-1`: Cite through the bibliography
 
-Every citation goes through the bibliography as a Pandoc citation with a Better BibTeX key and a locator: `[@OR23, Definition 1.5.1]`.
-Zotero is the source of truth for bibliographic metadata; if a work is not in Zotero, add it there first, taking its metadata from an external oracle such as the publisher, DOI, or arXiv record — never from memory.
+Every citation goes through the bibliography as a Pandoc citation with a Better BibTeX key and a locator: `[@OR23, Definition 1.5.1]`. Zotero is the source of truth for bibliographic metadata; if a work is not in Zotero, add it there first, taking its metadata from an external oracle such as the publisher, DOI, or arXiv record — never from memory.
 The citation style renders author, title, and year.
 Never repeat them in prose, and never write an inline author–year citation such as “(Author, Year)”: that fabricates metadata the bibliography already owns.
 A stable permalink whose job is to take the reader to a canonical definition or theorem is navigation, not a citation (`SOURCE-02`); bibliographic claims about that work still go through the bibliography.
@@ -1989,8 +1984,7 @@ Intentional review sheets, theorem and definition compendia, resource indexes, a
 
 **Bad:** “## Creation of limits” followed by five unfenced paragraphs that cite a definition and a theorem and conclude “Hence a limit of modules is computed on underlying sets.”; a section containing only “This is useful for the next chapter” and a list of links.
 
-**Good:** a `::: {.proposition}` block stating that the forgetful functor from $R$-modules to sets creates limits, with a citation (`QUAL-10`).
-The paragraphs become the remarks after it.
+**Good:** a `::: {.proposition}` block stating that the forgetful functor from $R$-modules to sets creates limits, with a citation (`QUAL-10`). The paragraphs become the remarks after it.
 
 ### `SEC-2`: Examples and remarks inside a section are fenced
 
@@ -2049,8 +2043,7 @@ If it has a claim of its own, state that claim in an example or proposition bloc
 ## Corpus review patterns
 
 These codes name defects that have actually occurred in this repository, with the reading task that surfaces a new candidate.
-A reviewer uses them to report **candidates for human reading**; a candidate is not a finding until someone reads the mathematics and decides (`QUAL-02`).
-No tool or agent retitles, merges, deletes, moves, reclassifies, or rewrites anything merely because it matches a pattern.
+A reviewer uses them to report **candidates for human reading**; a candidate is not a finding until someone reads the mathematics and decides (`QUAL-02`). No tool or agent retitles, merges, deletes, moves, reclassifies, or rewrites anything merely because it matches a pattern.
 A reading that reports no candidates establishes only that one reader flagged nothing in the slice it read; it is never evidence that the slice, area, or corpus is clean, and candidate counts are not a health metric.
 Mechanical defects with exact answers belong to `qualc check`, the tests, and `wiki_doctor.py`; these patterns are for questions whose answer can be wrong in a way only a reader would notice.
 Any code in this catalogue may be cited as a candidate pattern, not only the codes in this section.
@@ -2127,13 +2120,11 @@ Do not turn an ordinary conceptual title such as “Product of compact spaces”
 
 ### `MODEL-01`: Detached solution object
 
-**Reading task:** check whether a solution is modelled as a standalone card or relation instead of a `solution` section on its owning problem (`QUAL-03`).
-**Origin:** [#65](https://github.com/dzackgarza/new-qual-site/issues/65).
+**Reading task:** check whether a solution is modelled as a standalone card or relation instead of a `solution` section on its owning problem (`QUAL-03`). **Origin:** [#65](https://github.com/dzackgarza/new-qual-site/issues/65).
 
 ### `MODEL-02`: Hint buried inside a solution
 
-**Reading task:** read the start of each solution for hint-level material that should be an independently hidable `::: {.hint}` block before the solution (`STYLE-07`).
-Do not split ordinary solution exposition merely because it is short.
+**Reading task:** read the start of each solution for hint-level material that should be an independently hidable `::: {.hint}` block before the solution (`STYLE-07`). Do not split ordinary solution exposition merely because it is short.
 **Origin:** [#69](https://github.com/dzackgarza/new-qual-site/issues/69).
 
 ## Classification (`TAXON-*`)
@@ -2210,8 +2201,7 @@ Flag repeated cards, redundant topic buckets, or an ordering that exists only be
 
 ### `THEOREM-01`: Repeated prose paraphrase replaces the canonical statement
 
-**Reading task:** when prose narrates a named theorem at length, check whether the recall unit should be the theorem card plus a short authored slogan or consequence instead of a fresh paraphrase (`DEF-1`, `XREF-6`).
-**Origin:** [#61](https://github.com/dzackgarza/new-qual-site/issues/61).
+**Reading task:** when prose narrates a named theorem at length, check whether the recall unit should be the theorem card plus a short authored slogan or consequence instead of a fresh paraphrase (`DEF-1`, `XREF-6`). **Origin:** [#61](https://github.com/dzackgarza/new-qual-site/issues/61).
 
 ## Rendering (`RENDER-*`)
 
@@ -2249,15 +2239,13 @@ Flag topic resources filed under the wrong subtree, problem banks labelled as so
 
 ### `RES-02`: Vendored source bypasses the collection and intake provenance model
 
-**Reading task:** for a local resource PDF, check that it is either collection provenance or has an intake disposition in Queue E.
-For external links, distinguish bibliography, problem or review intake, solution-only material, and already-local duplicates before downloading anything.
+**Reading task:** for a local resource PDF, check that it is either collection provenance or has an intake disposition in Queue E. For external links, distinguish bibliography, problem or review intake, solution-only material, and already-local duplicates before downloading anything.
 **Origin:** [#81](https://github.com/dzackgarza/new-qual-site/issues/81).
 
 ## Presentation conventions (`STYLE-*`)
 
 Where authored content presents the same thing in several ways, these conventions fix one.
-They govern source form and typography, not mathematics: a problem statement keeps its source's wording, variable names, and choice of notation (`QUAL-01`), and the conventions below change only how that content is written in Markdown and TeX.
-Existing content is brought into line when it is edited or read against the catalogue under `copy-policy-repair`, never by a bulk rewrite.
+They govern source form and typography, not mathematics: a problem statement keeps its source's wording, variable names, and choice of notation (`QUAL-01`), and the conventions below change only how that content is written in Markdown and TeX. Existing content is brought into line when it is edited or read against the catalogue under `copy-policy-repair`, never by a bulk rewrite.
 
 ### `STYLE-01`: Fenced blocks use the attribute form
 
@@ -2270,9 +2258,7 @@ Attributes such as a title go inside the braces.
 
 ### `STYLE-02`: Math is delimited with dollars
 
-Inline mathematics is `$…$` and displayed mathematics is `$$…$$`.
-Multi-line displays use `\begin{aligned}…\end{aligned}` inside `$$…$$`.
-The extraction check and Pandoc's Markdown reader both treat dollar-delimited spans as mathematics, so one delimiter family keeps every statement checkable.
+Inline mathematics is `$…$` and displayed mathematics is `$$…$$`. Multi-line displays use `\begin{aligned}…\end{aligned}` inside `$$…$$`. The extraction check and Pandoc's Markdown reader both treat dollar-delimited spans as mathematics, so one delimiter family keeps every statement checkable.
 
 **Bad:** `\(x\in A\)`; `\[ \int_0^1 f \]`; `\begin{align*} … \end{align*}` as a top-level display.
 
@@ -2292,9 +2278,7 @@ The disk and other named sets follow the same rule where the vocabulary defines 
 
 A named operator is written with its vocabulary macro when one exists (`\Hom`, `\Aut`, `\Spec`, `\im`, `\Gal`) and otherwise with `\operatorname{…}`; never with `\mathrm{…}` or as italic letters.
 Absolute values, norms, and inner products use `\abs{…}`, `\norm{…}`, and `\inner{…}{…}`, which size their delimiters.
-A definitional equality is `\coloneqq`.
-The small epsilon is `\varepsilon`.
-Ellipses are `\ldots` in lists and `\cdots` between binary operators, never `...` inside mathematics.
+A definitional equality is `\coloneqq`. The small epsilon is `\varepsilon`. Ellipses are `\ldots` in lists and `\cdots` between binary operators, never `...` inside mathematics.
 
 **Bad:** `\mathrm{Hom}(A,B)`; `Aut(G)`; `|f(z)|`; `\lVert x\rVert`; `f := g`; `\epsilon`; `a_1 + ... + a_n`.
 
@@ -2313,8 +2297,7 @@ A solution refers to the parts by the same labels and treats them in order.
 
 Exposition, hints, and solutions are written in the first person plural or impersonally.
 They do not address the reader in the second person.
-Imperatives that belong to the mathematics — “Let”, “Suppose”, “Define” — are standard (`STANCE-21`).
-A problem statement keeps its source's voice.
+Imperatives that belong to the mathematics — “Let”, “Suppose”, “Define” — are standard (`STANCE-21`). A problem statement keeps its source's voice.
 
 **Bad:** “You are handed a matrix and asked for a normal form.”; “Now you apply Cauchy's theorem.”
 
@@ -2323,8 +2306,8 @@ A problem statement keeps its source's voice.
 ### `STYLE-07`: A problem card orders its blocks problem, hints, solutions, remarks
 
 A problem card's body is the `::: {.problem}` block, then any `::: {.hint}` blocks, then one or more `::: {.solution}` blocks, then any `::: {.remark}` blocks about the problem or its source.
-Hint-level guidance is a hint block before the solution, not the opening of the solution (`MODEL-02`).
-Remarks, examples, and proofs are fenced blocks, never paragraphs opening with a run-in label such as “**Remark.**” or “Proof.” (`PR-10`).
+Hint-level guidance is a hint block before the solution, not the opening of the solution (`MODEL-02`). Remarks, examples, and proofs are fenced blocks, never paragraphs opening with a run-in label such as “**Remark.**” or “Proof.”
+(`PR-10`).
 
 ### `STYLE-08`: Solutions are Lamport structured proofs in one layout
 
@@ -2333,8 +2316,7 @@ Declare any notation used throughout before the first step.
 Each step is a paragraph opening with its number, `<1>1.`, `<1>2.`, …, followed by its claim.
 A step proved directly is followed by a `::: {.proof}` block written in complete sentences; a step proved by substeps is followed by those substeps, numbered `<2>1.`, `<2>2.`, … one level down.
 The last step at each level is `Q.E.D.`, and its proof cites the steps that establish the goal of that level.
-Refer to another step as `step <1>2`, never as “above” or “the previous step” (`PROSE-03`).
-Do not restate the problem as a “**Goal.**” paragraph: the statement is on the same card.
+Refer to another step as `step <1>2`, never as “above” or “the previous step” (`PROSE-03`). Do not restate the problem as a “**Goal.**” paragraph: the statement is on the same card.
 A requested value or object is written once in `\boxed{…}` in the claim of the step that establishes it.
 
 **Bad:**
@@ -2372,8 +2354,7 @@ Step <1>2 gives the requested value.
 
 ### `STYLE-09`: Link cards and pages with wikilinks
 
-A card is linked by its ID as a wikilink, `[[D-IJMPJ|normal family]]`, and a wiki page by its source path, `[[algebra/linear-algebra/jordan-canonical-form|Jordan form]]` (`XREF-1`, `XREF-4`).
-A Markdown link to a built `.html` route breaks when the route changes and escapes the build's link check.
+A card is linked by its ID as a wikilink, `[[D-IJMPJ|normal family]]`, and a wiki page by its source path, `[[algebra/linear-algebra/jordan-canonical-form|Jordan form]]` (`XREF-1`, `XREF-4`). A Markdown link to a built `.html` route breaks when the route changes and escapes the build's link check.
 
 **Bad:** `[differentials](wiki/algebraic-geometry/sheaves-of-modules/differentials.html)`.
 
