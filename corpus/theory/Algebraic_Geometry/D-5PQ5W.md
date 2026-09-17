@@ -14,11 +14,6 @@ relations:
 - kind: uses
   target: D-QJ5M9
 review: draft
-audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-17
-  note: Read Hartshorne Proposition II.6.11, Remark II.6.11.2, Corollary II.6.14 and Proposition II.6.15. Kept the general Cartier definition, separated its class group from Picard surjectivity, and stated normality for the Cartier-to-Weil comparison and support formula. The quadric-cone example retains its class-group and Picard-group conclusions with the local obstruction explained.
 prompts:
 - Describe Weil divisors and Cartier divisors on a curve.
 - How do you get a Weil divisor from $f \in K^*$?
