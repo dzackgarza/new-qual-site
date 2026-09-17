@@ -20,9 +20,11 @@ prompts:
 ---
 
 ::: {.definition title="Formal scheme"}
-Let $A$ be a Noetherian ring, complete in the $I$-adic topology for an ideal $I$.
-The \dfn{formal spectrum} $\operatorname{Spf} A$ is the topological space $\Spec A/I$ with the sheaf of topological rings $\varprojlim_n \OO_{\Spec A/I^n}$.
-A \dfn{Noetherian formal scheme} is a topologically ringed space locally isomorphic to some $\operatorname{Spf} A$.
+Let $A$ be a noetherian ring, complete and separated in the $I$-adic topology for an ideal $I$.
+The \dfn{formal spectrum} $\operatorname{Spf} A$ is the topological space $\Spec(A/I)$ with the sheaf of topological rings $\varprojlim_{n\ge1}\OO_{\Spec(A/I^n)}$.
+A \dfn{locally noetherian formal scheme} is a topologically ringed space locally isomorphic to such formal spectra.
+It is a \dfn{noetherian formal scheme} if it is also quasi-compact, equivalently if finitely many of these affine formal opens cover it [@Har10a, Chapter II, §9].
+Its underlying space is then noetherian: each affine formal open has the topology of a noetherian affine scheme, and a finite union of noetherian open subspaces is noetherian.
 :::
 
 ::: {.definition title="Completion along a closed subscheme"}
