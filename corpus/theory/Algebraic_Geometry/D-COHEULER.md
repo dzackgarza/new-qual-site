@@ -22,33 +22,44 @@ prompts:
 - How is the Hilbert polynomial defined cohomologically?
 ---
 
-::: {.definition}
-For $X$ projective over a field and $\mcf \in \Coh(X)$,
-\[
-\chi(\mcf) \da \sum_{i \geq 0} (-1)^i h^i(X, \mcf) ,
-\]
-a finite sum.
-The Hilbert polynomial of $\mcf$ is the unique $P \in \QQ[z]$ with $P(n) = \chi(\mcf(n))$ for all $n$.
+::: {.definition title="Euler characteristic"}
+For a scheme $X$ projective over a field $k$ and a coherent sheaf $\mcf$, its \dfn{Euler characteristic} is
+$$
+\chi(X,\mcf)\coloneqq\sum_{i\ge0}(-1)^i\dim_kH^i(X,\mcf).
+$$
+The sum is finite and its terms are finite by cohomological vanishing and finiteness [@Har10a, Theorems III.2.7 and III.5.2].
+Write $\chi(\mcf)$ when the scheme is fixed.
+:::
+
+::: {.definition title="Hilbert polynomial"}
+Choose a very ample invertible sheaf $L$ on the projective $k$-scheme $X$ and put $\mcf(n)=\mcf\otimes L^{\otimes n}$, using the dual of $L$ for negative powers.
+The \dfn{Hilbert polynomial} of $\mcf$ with respect to $L$ is the unique $P_{\mcf,L}\in\QQ[z]$ satisfying
+$$
+P_{\mcf,L}(n)=\chi(X,\mcf(n))\qquad(n\in\ZZ)
+$$
+[@Har10a, Exercise III.5.2].
+It depends on the chosen twisting sheaf; its value at zero is the intrinsic Euler characteristic $\chi(X,\mcf)$.
 :::
 
 ::: {.definition title="Arithmetic and geometric genus"}
-For $X$ projective over a field of dimension $n$, the \dfn{arithmetic genus} is $p_a(X) \da (-1)^n \qty(\chi(\OO_X) - 1)$, so $p_a(X) = 1 - \chi(\OO_X)$ for a curve.
-For $X$ nonsingular and projective over an algebraically closed field, the **geometric genus** is $p_g(X) \da h^0(X, \omega_X)$, and by Serre duality $p_g(X) = h^n(X, \OO_X)$.
+For a nonempty projective scheme $X$ over a field of dimension $n$, the \dfn{arithmetic genus} is $p_a(X)\coloneqq(-1)^n(\chi(\OO_X)-1)$, so $p_a(X)=1-\chi(\OO_X)$ for a curve.
+For a nonsingular projective integral variety $X$ of dimension $n$ over an algebraically closed field, the \dfn{geometric genus} is $p_g(X)\coloneqq h^0(X,\omega_X)$, and Serre duality gives $p_g(X)=h^n(X,\OO_X)$.
 [@Har10a, §II.8, Exercise III.5.3]
 :::
 
 ::: {.example}
-For a nonsingular projective curve, $p_a = p_g$.
-In higher dimension they differ: for a nonsingular projective surface, $p_a = h^2(\OO_X) - h^1(\OO_X) = p_g - q$ with $q = h^1(X, \OO_X)$, so an abelian surface, with $h^0(\OO_X) = h^2(\OO_X) = 1$ and $h^1(\OO_X) = 2$, has $p_g = 1$ and $p_a = -1$.
+For a nonsingular projective integral curve over an algebraically closed field, $p_a=p_g$.
+For a nonsingular projective integral surface over that field, $p_a=h^2(\OO_X)-h^1(\OO_X)=p_g-q$ with $q=h^1(X,\OO_X)$.
+For example, an abelian surface has $h^0(\OO_X)=h^2(\OO_X)=1$ and $h^1(\OO_X)=2$, hence $p_g=1$ and $p_a=-1$.
+The product of two nonsingular plane cubics gives an explicit example, computed in [[P-AGH283PRODDIFF]].
 :::
 
 ::: {.proposition}
 $\chi$ is additive: $\chi(\mcf) = \chi(\mcf') + \chi(\mcf'')$ for every short exact sequence $0 \to \mcf' \to \mcf \to \mcf'' \to 0$.
+This follows by taking the alternating sum of the dimensions in the finite long exact cohomology sequence, as proved in [[P-AGH351EULERCHAR]].
 :::
 
 ::: {.remark}
-Additivity is the alternating sum of the long exact sequence, and it is the whole reason $\chi$ is a better invariant than any single $h^i$: the individual dimensions are not additive, and they jump.
-$\chi$ is therefore the object every theorem is stated about — Riemann--Roch, the Hilbert polynomial, arithmetic genus $p_a = (-1)^{\dim X}(\chi(\OO_X) - 1)$ — while duality is what turns $\chi$ back into individual $h^i$.
-
-That $\chi(\mcf(n))$ is a *polynomial* in $n$ is the cohomological form of the statement that the Hilbert function of a graded module is eventually polynomial; for $n \gg 0$ Serre vanishing collapses the sum to $h^0(\mcf(n))$, which is that Hilbert function.
+For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\otimes L^{\otimes n})$ [@Har10a, Theorem III.5.2].
+The Euler-characteristic identity holds for every integer $n$; equality with the dimension of global sections is the eventual assertion.
 :::
