@@ -7,7 +7,7 @@ import subprocess
 from pathlib import Path
 
 from qualc import emit, model
-from qualc.pandoc_batch import PandocServer
+from qualc.pandoc_batch import PandocServer, pandoc_executable
 
 
 def _card(path: Path, card_id: str, footnote: str) -> Path:
@@ -40,7 +40,7 @@ def _isolated_ast(path: Path) -> dict:
     _, body = model.split_front_matter(path.read_text(), path)
     result = subprocess.run(
         [
-            "pandoc",
+            str(pandoc_executable()),
             "--from",
             model.MARKDOWN,
             "--to",

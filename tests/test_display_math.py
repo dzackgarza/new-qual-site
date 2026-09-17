@@ -23,6 +23,7 @@ from pathlib import Path
 import panflute as pf
 import pytest
 from qualc.model import parse_card
+from qualc.pandoc_batch import pandoc_executable
 
 CARD = """---
 schema: qual/card@1
@@ -80,6 +81,7 @@ def test_the_subscript_survives_a_round_trip(card: Path) -> None:
         input_format="panflute",
         output_format="markdown",
         extra_args=["--wrap=preserve"],
+        pandoc_path=str(pandoc_executable()),
     )
     assert "{=tex}" not in back, back
     assert "\\int_{\\mathbb{R}}" in back, back
