@@ -16,11 +16,6 @@ relations:
 - kind: uses
   target: D-DEFGRRNG
 review: draft
-audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-17
-  note: Compared the quotient constructions with Hartshorne Exercise II.5.16. Put the ideals in the full tensor algebra, corrected the commutativity claim and the sheaf-module type mismatch, and stated the zero-rank and smooth canonical-bundle scopes.
 prompts:
 - Define $T^\bullet M$, $\Sym^\bullet M$, and $\Wedge^\bullet M$, and state their universal properties.
 - What are the ranks of $T^n$, $\Sym^n$, and $\Wedge^n$ of a free module of rank $m$?

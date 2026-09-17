@@ -16,11 +16,6 @@ relations:
 - kind: uses
   target: D-4GCH6
 review: draft
-audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-17
-  note: Read Hartshorne Proposition II.8.20, its proof, and Example II.8.20.3. Retained the smooth adjunction theorem with explicit ambient hypotheses, replaced the false conormal-smoothness implication by the double-point counterexample, and linked the determinant map proved in II.5.16.
 prompts:
 - What is the conormal sheaf of a closed subscheme?
 - State the adjunction formula.

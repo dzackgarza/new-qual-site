@@ -33,16 +33,6 @@ Assume $k$ algebraically closed.
     - If $\eta$ is the generic point of $Y$, show that $X_\eta$ is a one-point scheme whose residue field is an extension of degree two of the residue field of $\eta$.
 :::
 
-::: {.erratum}
-The first bullet in part (b) needs the hypothesis $\operatorname{char}k\ne2$.
-If $\operatorname{char}k=2$ and $a\ne0$, then for the unique $r\in k$ with $r^2=a$,
-\[
-t^2-a=(t-r)^2,
-\]
-so the fibre is a nonreduced one-point scheme rather than two points.
-The fibre over $0$ and the generic degree-two fibre statements are valid in every characteristic.
-:::
-
 ::: {.solution}
 <1>1. It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
 ::: {.proof}
@@ -277,4 +267,14 @@ If $\operatorname{char}k\ne2$, the extension is separable.  If $\operatorname{ch
 ::: {.proof}
 Steps <1>1--<1>5 prove part (a).  Steps <1>6--<1>9 prove the source's intended characteristic-$\ne2$ closed-fibre statements, <1>10 records the characteristic-$2$ correction, and <1>11--<1>13 prove the generic-fibre statement.
 :::
+:::
+
+::: {.remark title="Erratum"}
+The first bullet in part (b) needs the hypothesis $\operatorname{char}k\ne2$.
+If $\operatorname{char}k=2$ and $a\ne0$, then for the unique $r\in k$ with $r^2=a$,
+\[
+t^2-a=(t-r)^2,
+\]
+so the fibre is a nonreduced one-point scheme rather than two points.
+The fibre over $0$ and the generic degree-two fibre statements are valid in every characteristic.
 :::

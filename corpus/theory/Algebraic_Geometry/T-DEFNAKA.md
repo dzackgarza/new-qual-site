@@ -14,11 +14,6 @@ relations:
 - kind: uses
   target: D-DEFNOETH
 review: draft
-audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-17
-  note: Checked the stated forms of Nakayama's lemma against Stacks Project Tag 00DV and the constant-fiber-dimension criterion against Tag 0FWG. Added the missing reducedness hypothesis and the dual-number counterexample to the unconditional claim.
 prompts:
 - State Nakayama's lemma.
 - Over a local ring, how do you produce a minimal generating set of a finitely generated module?

@@ -38,16 +38,6 @@ b. Let $f: X \to Y$ be a morphism of finite type of noetherian schemes.
    Show that $f$ is separated, respectively proper, if and only if the criterion of (4.3), respectively (4.7), holds for all discrete valuation rings.
 :::
 
-::: {.erratum}
-Part (a), as stated in the source, has one exceptional case.  If $\OO=K$ is a field and $L/K$ is finite algebraic, then no nontrivial discrete valuation ring of $L$ can dominate $K$: any valuation of $L$ which is trivial on $K$ is trivial on the algebraic extension $L/K$, so its valuation ring is the field $L$.
-
-The intended statement is correct provided either $\OO$ is not a field or
-\[
-\operatorname{trdeg}_K L>0.
-\]
-This is the form proved below.  It is exactly the form needed in the nontrivial specialization arguments of part (b).
-:::
-
 ::: {.solution}
 Let
 \[
@@ -401,4 +391,14 @@ The forward implications are <1>9.  The converse separatedness implication is <1
 ::: {.proof}
 Steps <1>1--<1>8 prove the corrected form of part (a), and steps <1>9--<1>14 prove part (b).
 :::
+:::
+
+::: {.remark title="Erratum"}
+Part (a), as stated in the source, has one exceptional case.  If $\OO=K$ is a field and $L/K$ is finite algebraic, then no nontrivial discrete valuation ring of $L$ can dominate $K$: any valuation of $L$ which is trivial on $K$ is trivial on the algebraic extension $L/K$, so its valuation ring is the field $L$.
+
+The intended statement is correct provided either $\OO$ is not a field or
+\[
+\operatorname{trdeg}_K L>0.
+\]
+This is the form proved in the solution.  It is exactly the form needed in the nontrivial specialization arguments of part (b).
 :::

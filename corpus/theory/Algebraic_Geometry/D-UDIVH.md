@@ -14,11 +14,6 @@ relations:
 - kind: uses
   target: D-0QSI0
 review: draft
-audit:
-- event: source-checked
-  by: chatgpt
-  date: 2026-09-17
-  note: Checked the stalk definitions and the finite-module annihilator formula against Stacks Project Tag 00L2. Replaced the false assertion that every closed-immersion direct image has closed support by the exact support formula and its stalk proof; the identity immersion gives the counterexample.
 prompts:
 - Define the support of a section, and of a sheaf.
 - Why is $\supp(s)$ closed?
