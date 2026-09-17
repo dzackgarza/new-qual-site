@@ -37,12 +37,12 @@ We call $Y$ the **scheme-theoretic image** of $f$.
 If $Z$ is a reduced scheme, then $Y$ is just the reduced induced structure on the closure of the image $f(Z)$.
 :::
 
-::: {.remark}
+::: {.hint}
 For part (b): first show that $Y$ can be covered by a finite number of open affine subsets of the form $D(f_i) \intersect Y$ with $f_i \in A$.
 By adding some more $f_i$ with $D(f_i) \intersect Y = \varnothing$ if necessary, arrange that the $D(f_i)$ cover $X$.
 Next show that $f_1, \ldots, f_r$ generate the unit ideal of $A$.
-Then use the affineness criterion of II.2.17(b) to show that $Y$ is affine, and II.2.18(d) to show that $Y$ comes from an ideal $\mfa \subseteq A$.
-A second proof using sheaves of ideals appears later in Hartshorne V.10.
+Then use the affineness criterion of [@Har10a, Exercise II.2.17(b)] to show that $Y$ is affine, and [@Har10a, Exercise II.2.18(d)] to show that $Y$ comes from an ideal $\mfa \subseteq A$.
+A second proof using sheaves of ideals is given in [@Har10a, Corollary II.5.10].
 :::
 
 ::: {.solution}
