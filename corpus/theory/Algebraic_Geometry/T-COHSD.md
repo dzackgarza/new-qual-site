@@ -24,12 +24,16 @@ prompts:
 ---
 
 ::: {.theorem}
-Let $X$ be a smooth proper variety of dimension $n$ over a field $k$, with canonical sheaf $\omega_X = \Omega^n_{X/k}$, and let $\mcl$ be locally free.
+Let $X$ be a smooth proper variety of dimension $n$ over a field $k$, with canonical sheaf $\omega_X = \Omega^n_{X/k}$, and let $\mcl$ be locally free of finite rank.
 Then the cup product pairing
-\[
-H^i(X, \mcl) \tensor H^{n-i}\qty{X, \omega_X \tensor \mcl\dual} \to H^n(X,\omega_X) \cong k
-\]
-is perfect, so $H^i(X,\mcl) \cong H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}\dual$.
+$$
+H^i(X, \mcl) \tensor H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}
+\to H^n(X,\omega_X)\xrightarrow{t_X} k
+$$
+is perfect, so $H^i(X,\mcl) \cong H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}\dual$, by [duality for proper schemes over fields](https://stacks.math.columbia.edu/tag/0FVU).
+The trace $t_X$ corresponds under $H^n(X,\omega_X)\cong H^0(X,\OO_X)^\vee$ to evaluation on the constant section $1$.
+It is an isomorphism exactly when $H^0(X,\OO_X)=k$.
+For example, for $X=\Spec K$ with $K/k$ a finite separable extension of degree greater than one, $H^0(X,\omega_X)=K$ has that greater dimension over $k$, so the trace cannot be an isomorphism.
 :::
 
 ::: {.definition title="Dualizing sheaf"}
