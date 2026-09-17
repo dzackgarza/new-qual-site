@@ -25,7 +25,7 @@ prompts:
 ---
 
 ::: {.definition}
-For a projective curve $C$ over $k = \bar{k}$:
+For a projective integral curve $C$ over $k = \bar{k}$:
 
 - the \dfn{arithmetic genus} is $p_a(C) = 1 - \chi(\OO_C)$, the constant term of the Hilbert polynomial read with a sign;
 
@@ -51,11 +51,12 @@ A node contributes $\delta = 1$, an ordinary cusp $\delta = 1$, an ordinary $m$-
 :::
 
 ::: {.remark}
-The two genera agree exactly when $C$ is smooth, and the difference is a sum of local contributions, so the honest answer to what the geometric genus of a singular curve might be is: anything from $0$ up to $p_a$, according to how much singularity there is.
+The normalization formula gives $0\le p_g(C)\le p_a(C)$, with equality of the two genera exactly when $C$ is smooth.
 A plane curve of degree $d$ has $p_a = \binom{d-1}{2}$ regardless of its singularities, and its geometric genus is that number minus the $\delta$'s — which is how a nodal cubic has $p_a = 1$ and $p_g = 0$.
 
 Neither number depends on the embedding.
 $p_a$ is $1 - \chi(\OO_C)$, an invariant of the abstract curve, and $p_g$ is computed on the normalization.
 What *does* depend on the embedding is the degree, and that contrast — same curve, different degrees, one genus — is what the follow-up about embeddings is testing.
-Over $\CC$ both agree with half the first Betti number of the smooth model, which is the topological genus.
+For a nonsingular projective complex curve, both genera equal half its first Betti number, by the Hodge decomposition and Serre duality [@Har10a, Appendix B and Exercise III.5.3].
+For a singular complex curve, the topological genus of its smooth model computes $p_g(C)$, not in general $p_a(C)$; the nodal cubic just described has smooth model $\PP^1$, of genus zero, but arithmetic genus one.
 :::
