@@ -27,6 +27,13 @@ audit:
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-18
+  note: >-
+    Rechecked the ordinary p-primary kernel, the Frobenius factorization in
+    the cofinality argument, and the three inverse-limit computations after
+    strengthening their proofs.
 ---
 
 ::: {.problem}
@@ -206,7 +213,33 @@ $p^r$ and is purely inseparable, while $V_X^{(r)}$ is separable of degree
 $p^r$. Hence $V_X^{(r)}$ is etale. Step <1>3 shows that $[m]_X$ is also
 etale, so $\psi_{r,m}$ is etale.
 
-The kernel of $V_X^{(r)}$ has $k$-points
+For $r=0$ the assertion about the $p$-primary kernel is trivial, so assume
+$r\geq1$.  The second duality identity is
+$$
+F_X^{(r)}\circ V_X^{(r)}
+=[p^r]_{X^{(p^r)}}.
+$$
+Hence
+$$
+\ker V_X^{(r)}(k)
+\subseteq
+X^{(p^r)}[p^r](k).
+$$
+The Frobenius twist is again ordinary.  Therefore $[p^r]$ has separable
+degree $p^r$, so
+$$
+\#X^{(p^r)}[p^r](k)=p^r.
+$$
+Moreover $[p]$ has separable degree $p$, so the subgroup of these points
+killed by $p$ has exactly $p$ elements.  By the structure theorem for
+finite abelian groups, a finite abelian $p$-group with exactly $p$ elements
+killed by $p$ is cyclic.  Thus
+$$
+X^{(p^r)}[p^r](k)\cong\ZZ/p^r\ZZ.
+$$
+Since the separable isogeny $V_X^{(r)}$ has degree $p^r$, its kernel also
+has $p^r$ geometric points.  The preceding inclusion is therefore an
+equality, and
 $$
 \ker V_X^{(r)}(k)\cong\ZZ/p^r\ZZ.
 $$
@@ -235,12 +268,50 @@ $$
 $$
 In the ordinary case the inseparable degree of $[p^r m]_X$ is $p^r$.
 Since $\phi$ is separable, the inseparable degree of $\hat\phi$ is also
-$p^r$. The separable--inseparable factorization of a morphism of smooth
-curves therefore has the form
+$p^r$.  Also
+$$
+\deg\hat\phi=\deg\phi=p^r m
+$$
+by Exercise IV.4.7(f), so the separable degree of $\hat\phi$ is $m$.
+
+The separable--inseparable factorization of $\hat\phi$ has the form
 $$
 \hat\phi=u\circ F_X^{(r)}
 $$
 for a separable isogeny $u:X^{(p^r)}\to Y$ of degree $m$.
+
+To justify the Frobenius factor explicitly, put
+$$
+K=k(X),\qquad L=k(Y),
+$$
+using the inclusion $L\subseteq K$ induced by $\hat\phi$, and let $M$ be
+the maximal subfield of $K$ separable over $L$.  Then
+$$
+[K:M]=p^r.
+$$
+The extension $K/M$ is purely inseparable, so every $a\in K$ satisfies
+$a^{p^r}\in M$; hence $K^{p^r}\subseteq M$.
+
+Because $k$ is algebraically closed, it is perfect.  Choose a separating
+transcendence element $t$ for the one-variable function field $K/k$ and
+write $d=[K:k(t)]$.  Frobenius gives
+$$
+[K^p:k(t^p)]=d,
+$$
+while $[k(t):k(t^p)]=p$.  Consequently
+$$
+[K:K^p]
+=
+\frac{[K:k(t^p)]}{[K^p:k(t^p)]}
+=p,
+$$
+and iteration gives
+$$
+[K:K^{p^r}]=p^r.
+$$
+Thus $K^{p^r}=M$.  It follows that $M/L$ is separable of degree $m$, and
+the corresponding factorization of curves is precisely the $r$-fold
+relative Frobenius followed by the separable map $u$ displayed above.
 
 Using $[p^r]_X=V_X^{(r)}F_X^{(r)}$, we get
 $$
