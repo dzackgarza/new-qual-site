@@ -110,8 +110,9 @@ on the ambient projective space surject onto
 $$
 H^0(X,\mco_X(m)).
 $$
-This is the standard section criterion for projective normality. Hence $X$
-is projectively normal.
+By [[P-AGH2514PROJNORM|Exercise II.5.14(d)]], normality together with these
+surjective restriction maps in every degree is exactly the section criterion
+for projective normality. Hence $X$ is projectively normal.
 :::
 
 <1>3. Let
