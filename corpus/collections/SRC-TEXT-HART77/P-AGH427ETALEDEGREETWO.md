@@ -11,6 +11,22 @@ classification:
   - Jacobians
   - Curves
 relations: []
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-18
+  note: >-
+    Read Hartshorne IV.2.7 under the book's standing convention that curves
+    are over an algebraically closed field. The proof uses the trace splitting
+    of a quadratic étale algebra, checks the converse locally as
+    O[t]/(t^2-u), and verifies independence of the chosen trivialization of
+    L^2 by rescaling with a square root of a global scalar.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-18
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-18
 review: draft
 ---
 
@@ -37,4 +53,291 @@ $$
 Note.
 This is a special case of the more general fact that for $(n, \characteristic k)=1$, the étale Galois covers of $Y$ with group $\ZZ/n\ZZ$ are classified by the étale cohomology group $H_{\text{et}}^1(Y, \ZZ/n\ZZ)$, which is equal to the group of $n$-torsion points of $\Pic Y$.
 See Serre.
+:::
+
+::: {.solution}
+The correspondence below is between isomorphism classes of degree-$2$
+finite étale covers over $Y$ and $2$-torsion classes in $\Pic Y$.
+
+<1>1. Let
+$$
+f:X\longrightarrow Y
+$$
+be finite étale of degree $2$, and put
+$$
+A=f_*\OO_X.
+$$
+Then the unit inclusion
+$$
+\OO_Y\longrightarrow A
+$$
+is split as a map of $\OO_Y$-modules, and its cokernel $\mcl$ is invertible.
+
+::: {.proof}
+The finite étale algebra $A$ is locally free of rank $2$.  Its trace map
+$$
+\Tr_{A/\OO_Y}:A\longrightarrow\OO_Y
+$$
+satisfies
+$$
+\Tr(1)=2.
+$$
+Because $\operatorname{char}k\ne2$, multiplication by $1/2$ gives a
+retraction
+$$
+\frac12\Tr:A\longrightarrow\OO_Y
+$$
+of the unit inclusion.  Hence
+$$
+A\cong\OO_Y\oplus M,
+\qquad
+M=\ker\Tr.
+$$
+Since $A$ has rank $2$, $M$ is locally free of rank $1$.  The quotient
+$$
+\mcl=A/\OO_Y
+$$
+is naturally isomorphic to $M$, and is therefore invertible.
+:::
+
+<1>2. The invertible sheaf from step <1>1 satisfies
+$$
+\mcl\cong\det f_*\OO_X
+\qquad\text{and}\qquad
+\mcl^{\tensor2}\cong\OO_Y.
+$$
+
+::: {.proof}
+The split exact sequence
+$$
+0
+\longrightarrow
+\OO_Y
+\longrightarrow
+A
+\longrightarrow
+\mcl
+\longrightarrow0
+$$
+gives
+$$
+\det A
+\cong
+\det\OO_Y\tensor\det\mcl
+\cong
+\mcl.
+$$
+
+Because $f$ is étale, its ramification divisor and hence its branch divisor
+are zero.  Applying [[P-AGH426PUSHFORWARDDIVISORS|Exercise IV.2.6]], part
+(d), gives
+$$
+(\det A)^2\cong\OO_Y.
+$$
+Thus
+$$
+\mcl^{\tensor2}\cong\OO_Y.
+$$
+This proves part (a).
+:::
+
+<1>3. Conversely, let $\mcl$ be invertible and choose an isomorphism
+$$
+\varphi:\mcl\tensor\mcl\xrightarrow{\sim}\OO_Y.
+$$
+The multiplication in the statement makes
+$$
+A_\varphi=\OO_Y\oplus\mcl
+$$
+into a commutative finite locally free $\OO_Y$-algebra of rank $2$.
+
+::: {.proof}
+The unit is $(1,0)$.  Commutativity is immediate from symmetry of the tensor
+product of line bundles.  Associativity can be checked after locally
+trivializing $\mcl$.  On an open set where $\mcl=\OO_Ye$, write
+$$
+\varphi(e\tensor e)=u\in\OO_Y^\times.
+$$
+Then the map sending a formal variable $t$ to $(0,e)$ identifies the algebra
+with
+$$
+A_\varphi
+\cong
+\OO_Y[t]/(t^2-u).
+$$
+This is manifestly an associative commutative algebra, free with basis
+$1,t$.  The local descriptions glue because they came from the globally
+defined multiplication in the statement.
+:::
+
+<1>4. The morphism
+$$
+f_\varphi:X_\varphi=\Spec_Y(A_\varphi)\longrightarrow Y
+$$
+is finite étale of degree $2$.
+
+::: {.proof}
+Finiteness and degree $2$ follow from the fact that $A_\varphi$ is locally
+free of rank $2$.  In the local description of step <1>3,
+$$
+A_\varphi=R[t]/(t^2-u),
+\qquad
+u\in R^\times.
+$$
+The element $t$ is a unit because $t^2=u$, and $2$ is a unit because the
+characteristic is not $2$.  Therefore
+$$
+2t\in A_\varphi^\times.
+$$
+The relative differentials are
+$$
+\Omega_{A_\varphi/R}
+\cong
+A_\varphi\,dt/(2t\,dt)
+=0.
+$$
+Thus the finite flat morphism $f_\varphi$ is unramified, hence étale.  This
+proves part (b).
+:::
+
+<1>5. For a quadratic étale cover $f:X\to Y$, the trace-zero summand
+$$
+M=\ker\Tr\subseteq A=f_*\OO_X
+$$
+is the $(-1)$-eigensheaf for the nontrivial deck involution $\tau$, and
+multiplication induces an isomorphism
+$$
+M\tensor M\xrightarrow{\sim}\OO_Y.
+$$
+
+::: {.proof}
+The deck involution interchanges the two points of each geometric fibre.  On
+the rank-$2$ algebra it satisfies
+$$
+\Tr(a)=a+\tau(a).
+$$
+Hence an element of $M$ obeys
+$$
+\tau(a)=-a,
+$$
+while $\OO_Y\cdot1$ is the $(+1)$-eigensheaf.  If $a,b\in M$, then
+$$
+\tau(ab)=\tau(a)\tau(b)=ab,
+$$
+so multiplication lands in the invariant summand $\OO_Y$ and gives a map
+$$
+M^{\tensor2}\longrightarrow\OO_Y.
+$$
+
+This map is an isomorphism fibrewise.  Indeed, over a geometric point the
+étale quadratic algebra is
+$$
+k\times k,
+$$
+the involution swaps the two factors, and the trace-zero line consists of
+$(a,-a)$.  Multiplication sends
+$$
+(a,-a)(b,-b)=(ab,ab),
+$$
+which is a nonzero perfect pairing on that one-dimensional line.  A map
+between line bundles that is an isomorphism on every fibre is an isomorphism.
+:::
+
+<1>6. Starting with a degree-$2$ finite étale cover, applying part (a) and
+then the construction of part (b) recovers the original cover up to
+isomorphism over $Y$ once the multiplication pairing is used as the chosen
+trivialization.
+
+::: {.proof}
+By step <1>1 and step <1>5,
+$$
+A=f_*\OO_X
+\cong
+\OO_Y\oplus M
+$$
+as an $\OO_Y$-module, and the algebra multiplication is completely described
+by
+$$
+M\tensor M\xrightarrow{\sim}\OO_Y:
+$$
+products involving the first summand are scalar multiplication, while the
+product of two trace-zero elements is exactly this pairing.  Therefore the
+algebra reconstructed in part (b) is isomorphic to $A$ as an
+$\OO_Y$-algebra.  Relative Spec then recovers $X$ and its morphism to $Y$.
+:::
+
+<1>7. Starting with a $2$-torsion line bundle $\mcl$, the cover constructed
+in part (b) returns the same class $[\mcl]\in\Pic Y$ under part (a).
+
+::: {.proof}
+For
+$$
+A_\varphi=\OO_Y\oplus\mcl,
+$$
+the unit map is inclusion of the first summand.  Its cokernel is therefore
+exactly $\mcl$.  Thus part (a) recovers the original line-bundle class.
+:::
+
+<1>8. The isomorphism class of the cover constructed from $\mcl$ is
+independent of the chosen trivialization
+$$
+\varphi:\mcl^{\tensor2}\xrightarrow{\sim}\OO_Y.
+$$
+
+::: {.proof}
+Because $Y$ is a projective integral curve over the algebraically closed
+field $k$,
+$$
+H^0(Y,\OO_Y)^\times=k^\times.
+$$
+Thus any two trivializations satisfy
+$$
+\varphi'=c\varphi
+$$
+for some $c\in k^\times$.  Choose $\lambda\in k^\times$ with
+$$
+\lambda^2c=1,
+$$
+which is possible because $k$ is algebraically closed.  Then
+$$
+\OO_Y\oplus\mcl
+\longrightarrow
+\OO_Y\oplus\mcl,
+\qquad
+(a,b)\longmapsto(a,\lambda b)
+$$
+is an isomorphism from the algebra defined by $\varphi$ to the algebra
+defined by $\varphi'$.  Hence the associated covers are isomorphic over
+$Y$.
+
+The same argument shows that replacing $\mcl$ by an isomorphic line bundle
+does not change the cover.  Therefore the construction depends only on the
+class of $\mcl$ in $\Pic Y$.
+:::
+
+<1>9. The two constructions give mutually inverse bijections
+$$
+\left\{
+\begin{array}{c}
+\text{degree-$2$ finite étale covers of $Y$}\\
+\text{up to isomorphism over $Y$}
+\end{array}
+\right\}
+\longleftrightarrow
+\Pic(Y)[2].
+$$
+
+::: {.proof}
+Step <1>6 proves that cover $\to$ line bundle $\to$ cover is the identity on
+isomorphism classes.  Steps <1>7--<1>8 prove that line bundle $\to$ cover
+$\to$ line bundle is the identity on $2$-torsion classes and that the cover
+does not depend on auxiliary choices.  Thus the two maps are inverse.
+:::
+
+<1>10. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>2 prove part (a), steps <1>3--<1>4 prove part (b), and steps
+<1>5--<1>9 prove part (c).
+:::
 :::
