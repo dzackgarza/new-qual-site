@@ -82,7 +82,14 @@ Let $\pi'$ be the morphism associated to
 $$
 \abs{P_0+T}.
 $$
-This degree-$2$ divisor gives a base-point-free $g^1_2$.  Its deck
+Riemann--Roch gives $h^0(P_0+T)=2$.  It has no base point: if $Q$ were a
+base point, then
+$$
+h^0(P_0+T-Q)=h^0(P_0+T)=2,
+$$
+whereas a degree-$1$ divisor on a genus-one curve has at most one independent
+section.  Thus this degree-$2$ divisor gives a base-point-free $g^1_2$.
+Its deck
 involution is
 $$
 \iota_T(R)=T-R,
