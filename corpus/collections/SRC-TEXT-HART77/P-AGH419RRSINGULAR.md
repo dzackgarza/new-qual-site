@@ -13,6 +13,18 @@ classification:
   - Genus
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-18
+  note: >-
+    Read Hartshorne IV.1.9 together with the cited Exercise II.7.5 and the
+    duality statement used in part (d). The proof treats arbitrary positive
+    and negative coefficients in part (a), and explicitly moves the very ample
+    representatives away from the finite singular locus in part (c).
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-18
 ---
 
 ::: {.problem}
@@ -38,4 +50,251 @@ Then the formula of a. becomes
 $$
 l(D)-l(K-D)=\deg D+1-p_a
 $$
+:::
+
+::: {.solution}
+<1>1. If $P\in X_{\reg}$ and $D$ is supported in $X_{\reg}$, then
+$$
+\chi(\mcl(D+P))
+=
+\chi(\mcl(D))+1.
+$$
+
+::: {.proof}
+Because $P$ is regular on the one-dimensional scheme $X$, it is an
+effective Cartier divisor. Tensoring
+$$
+0
+\longrightarrow
+\mco_X(-P)
+\longrightarrow
+\mco_X
+\longrightarrow
+k(P)
+\longrightarrow
+0
+$$
+by $\mcl(D+P)$ gives
+$$
+0
+\longrightarrow
+\mcl(D)
+\longrightarrow
+\mcl(D+P)
+\longrightarrow
+k(P)
+\longrightarrow
+0.
+$$
+Since $k$ is algebraically closed,
+$$
+\chi(k(P))=1.
+$$
+Additivity of Euler characteristic in a short exact sequence therefore
+gives the formula.
+:::
+
+<1>2. For every divisor
+$$
+D=\sum_i n_iP_i
+$$
+supported in $X_{\reg}$,
+$$
+\boxed{
+\chi(\mcl(D))
+=
+\deg D+1-p_a(X).
+}
+$$
+
+::: {.proof}
+Starting from $D=0$, repeatedly apply step <1>1 when increasing one
+coefficient by $1$. The same formula read backwards applies when
+decreasing a coefficient by $1$. Hence
+$$
+\chi(\mcl(D))
+=
+\chi(\mco_X)+\sum_i n_i.
+$$
+By definition of the arithmetic genus of a projective integral curve,
+$$
+\chi(\mco_X)=1-p_a(X),
+$$
+while
+$$
+\sum_i n_i=\deg D.
+$$
+This proves part (a).
+:::
+
+<1>3. Let $C$ be any Cartier divisor on $X$. Then
+$$
+C=A-B
+$$
+for two very ample Cartier divisors $A$ and $B$.
+
+::: {.proof}
+Choose a very ample Cartier divisor $H$ on the projective curve $X$.
+The invertible sheaf
+$$
+\mco_X(H)
+$$
+is ample and globally generated.
+
+By
+[[P-AGH275AMPLEPROPS|Exercise II.7.5]],
+for all sufficiently large $n$ the sheaf
+$$
+\mco_X(C+(n-1)H)
+$$
+is globally generated. For such an $n$, part (d) of that exercise says
+that
+$$
+\mco_X(C+nH)
+=
+\mco_X(H)\tensor\mco_X(C+(n-1)H)
+$$
+is very ample.
+
+Also
+$$
+\mco_X(nH)
+=
+\mco_X(H)\tensor\mco_X((n-1)H)
+$$
+is very ample, because $\mco_X((n-1)H)$ is globally generated. Thus
+$$
+A=C+nH,
+\qquad
+B=nH
+$$
+are very ample Cartier divisors and
+$$
+C=A-B.
+$$
+This proves part (b).
+:::
+
+<1>4. Every invertible sheaf on $X$ is isomorphic to $\mcl(D)$ for a
+divisor $D$ supported in $X_{\reg}$.
+
+::: {.proof}
+Let $\mcl$ be invertible. Since $X$ is integral, a nonzero rational
+trivialization of $\mcl$ gives a Cartier divisor $C$ with
+$$
+\mcl\cong\mcl(C).
+$$
+By step <1>3, write
+$$
+C=A-B
+$$
+with $A$ and $B$ very ample.
+
+The singular locus of the integral curve $X$ is finite. The complete
+linear systems $\abs{A}$ and $\abs{B}$ are base-point free. Therefore one
+may choose effective divisors
+$$
+A'\sim A,
+\qquad
+B'\sim B
+$$
+whose supports avoid every singular point: under the embeddings defined by
+$A$ and $B$, choose hyperplanes avoiding the finite images of the singular
+points.
+
+Then
+$$
+D=A'-B'
+$$
+is supported in $X_{\reg}$ and
+$$
+\mcl(D)
+\cong
+\mcl(A-B)
+\cong
+\mcl(C)
+\cong
+\mcl.
+$$
+This proves part (c).
+:::
+
+<1>5. Assume $X$ is a locally complete intersection in projective space.
+Then there is a divisor $K$ supported in $X_{\reg}$ such that
+$$
+\mcl(K)\cong\omega_X.
+$$
+
+::: {.proof}
+For a projective locally complete intersection curve, the dualizing sheaf
+$\omega_X$ is invertible. Apply part (c), proved in step <1>4, to this
+invertible sheaf. It gives a divisor $K$ supported in $X_{\reg}$ with
+$$
+\mcl(K)\cong\omega_X.
+$$
+This is the canonical divisor specified in the statement.
+:::
+
+<1>6. For every divisor $D$ supported in $X_{\reg}$,
+$$
+H^1(X,\mcl(D))^\vee
+\cong
+H^0(X,\mcl(K-D)).
+$$
+
+::: {.proof}
+Serre duality for the projective Cohen--Macaulay curve $X$ gives
+$$
+H^1(X,\mcl(D))^\vee
+\cong
+\Hom_X(\mcl(D),\omega_X).
+$$
+Since $\mcl(D)$ is invertible and step <1>5 identifies
+$\omega_X\cong\mcl(K)$,
+$$
+\Hom_X(\mcl(D),\omega_X)
+\cong
+H^0\bigl(X,\omega_X\tensor\mcl(-D)\bigr)
+\cong
+H^0(X,\mcl(K-D)).
+$$
+:::
+
+<1>7. The singular-curve Riemann--Roch formula is
+$$
+\boxed{
+\ell(D)-\ell(K-D)
+=
+\deg D+1-p_a(X).
+}
+$$
+
+::: {.proof}
+By step <1>6,
+$$
+h^1(X,\mcl(D))
+=
+\ell(K-D).
+$$
+Therefore
+$$
+\chi(\mcl(D))
+=
+\ell(D)-\ell(K-D).
+$$
+Substitute the Euler-characteristic formula from step <1>2:
+$$
+\chi(\mcl(D))
+=
+\deg D+1-p_a(X).
+$$
+This is exactly the displayed formula in part (d).
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves part (a), step <1>3 proves part (b), step <1>4 proves
+part (c), and steps <1>5--<1>7 prove part (d).
+:::
 :::
