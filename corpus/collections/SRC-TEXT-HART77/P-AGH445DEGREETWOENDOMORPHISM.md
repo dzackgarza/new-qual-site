@@ -109,6 +109,7 @@ so $\deg g=2$.
 <1>3. After suitable choices of coordinates on the two copies of $\PP^1$,
 $$
 g(t)=t^2.
+$$
 
 ::: {.proof}
 The degree-$2$ map $g$ is separable.  Riemann--Hurwitz gives exactly two
