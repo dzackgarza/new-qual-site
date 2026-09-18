@@ -80,10 +80,20 @@ $$
 The roots are distinct: otherwise a repeated root $r$ would make
 $(r,0)$ singular on $Y^2=p(x)$.
 
-The affine change sending $r_1$ to $0$ and $r_2$ to $1$ sends the third root
-to
+Set
+$$
+x=r_1+(r_2-r_1)X.
+$$
+Then the three roots become $0,1,\lambda$, where
 $$
 \lambda=\frac{r_3-r_1}{r_2-r_1}.
+$$
+The right-hand side acquires the nonzero factor $(r_2-r_1)^3$.
+Since $k$ is algebraically closed, choose
+$s\in k^\times$ with $s^2=(r_2-r_1)^3$ and set $Y=sY'$.
+Thus the curve is isomorphic to the Legendre curve
+$$
+Y'^2=X(X-1)(X-\lambda).
 $$
 Hartshorne's Legendre formula is therefore
 $$
