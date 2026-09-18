@@ -24,15 +24,28 @@ audit:
     conic, not a canonical embedding. In part (b), the displayed quartic is
     singular in characteristic seven (at [1:2:4]), so the hypothesis must also
     exclude characteristic seven. Characteristic two still gives the simple
-    group GL_3(F_2) of order 168, but the characteristic-zero Hurwitz bound
-    cited in the exercise cannot be used to prove maximality there. Part (c)
-    is interpreted over C, as in Hartshorne's following note.
+    group GL_3(F_2) of order 168, but its maximality is a separate wild
+    characteristic-two input. For every characteristic p>4 other than seven,
+    the positive-characteristic extension recorded in IV.2.5 gives the same
+    Hurwitz bound. Part (c) is interpreted over C, as in Hartshorne's following
+    note.
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
 - event: solution-reviewed
   by: chatgpt
   date: 2026-09-18
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-18
+  note: >-
+    Rechecked the banked proof against IV.5.7, the retained companion, IV.2.5,
+    and the canonical-model calculations. Extended the maximality argument to
+    all characteristics p>4 allowed by the corrected statement, isolated the
+    characteristic-two classification input (cross-checked against Tuffery,
+    Deformations de courbes avec action de groupe II, Forum Math. 8 (1996),
+    205--218), and replaced the unsupported three-eigenvalue count in part (c)
+    by an explicit monomial-weight bound.
 ---
 
 ::: {.problem}
@@ -168,21 +181,37 @@ $$
 Thus $\PSL_2(\FF_7)\subseteq\Aut X$.
 :::
 
-<1>4. If $\characteristic k=0$, then
+<1>4. If $\characteristic k=0$, or if $\characteristic k=p>4$ with
+$p\neq7$, then
 $$
 \Aut X\cong\PSL_2(\FF_7)
 $$
 and $\abs{\Aut X}=168$.
 
 ::: {.proof}
-The quartic is nonsingular, so it has genus $3$.  By step <1>3 its
-automorphism group contains $168$ elements.  Hurwitz's theorem from
+The quartic is nonsingular in these characteristics.  Indeed, a common zero
+of the three partial derivatives has no zero coordinate, and multiplying
+$$
+z^3=-3x^2y,\qquad x^3=-3y^2z,\qquad y^3=-3z^2x
+$$
+would give
+$$
+1=-27,
+$$
+which is impossible unless the characteristic is $2$ or $7$.  Thus $X$ has
+genus $3$.
+
+By step <1>3 its automorphism group contains $168$ elements.  In
+characteristic $0$, Hurwitz's theorem from
 [[P-AGH425HURWITZAUTOMORPHISMBOUND|Exercise IV.2.5]] gives
 $$
 \abs{\Aut X}\leq84(g-1)=168.
 $$
-Consequently equality holds and the subgroup in step <1>3 is the full
-automorphism group.
+For $p>4$, the positive-characteristic extension stated in the same exercise
+gives the identical bound, with its sole exceptional genus-$3$ characteristic
+being $p=7$; that characteristic has already been excluded in step <1>2.
+Consequently equality holds in every case covered by this step, and the
+subgroup in step <1>3 is the full automorphism group.
 :::
 
 <1>5. The conclusion of part (b) also holds in characteristic $2$; the
@@ -199,9 +228,12 @@ give $y=z^3$ and $z^7=1$, while on such a point
 $$
 F(1,z^3,z)=z^3+z^{10}+z^3=z^{10}\neq0.
 $$
-Thus no common zero of the partial derivatives lies on $X$.  The
-characteristic-$2$ classification
-of the Klein curve gives
+Thus no common zero of the partial derivatives lies on $X$.
+
+The remaining full-group assertion is genuinely a wild-characteristic
+classification input rather than a consequence of Hurwitz's bound.  The
+classification invoked by the starred source exercise identifies the full
+automorphism group of this characteristic-$2$ Klein curve as
 $$
 \Aut X\cong\GL_3(\FF_2)
 \cong\PSL_2(\FF_7).
@@ -244,19 +276,45 @@ dimension
 $$
 5+3+1=9.
 $$
-For every other root of unity the largest eigenspace is no larger.  Thus
+If $m$ is the order of $\lambda$, the eigenspaces group together the
+monomials whose first-variable exponents are congruent modulo $m$.  The five
+possible exponents $0,1,2,3,4$ occur with multiplicities $5,4,3,2,1$.
+Hence the largest eigenspace has dimension $9$ for $m=2$, $7$ for $m=3$,
+$6$ for $m=4$, and $5$ for $m\geq5$.  Thus
 these quartics sweep a locus of dimension at most
 $$
 4+(9-1)=12<14.
 $$
 
 If the three eigenvalues are distinct, the conjugacy class has dimension
-$6$.  After dividing by one eigenvalue, sort the fifteen degree-$4$
-monomials by their character under the resulting finite cyclic group.  If
-three eigenvalues are distinct, no character occurs more than five times:
-for order $3$ the monomials split as $5+5+5$, and identifying any further
-weights would force two of the three eigenvalues to coincide.  Hence these
-quartics sweep a locus of dimension at most
+$6$.  Write the eigenvalues as $\alpha,\beta,\gamma$.  Two degree-$4$
+monomials whose exponent triples differ by a permutation of $(1,-1,0)$
+cannot have the same weight, since their weight ratio is one of
+$$
+\frac\alpha\beta,\qquad
+\frac\alpha\gamma,\qquad
+\frac\beta\gamma,
+$$
+none of which is $1$.  Thus monomials of one weight form an independent set
+in the triangular array of exponent triples
+$$
+\{(i,j,k)\in\ZZ_{\geq0}^3:i+j+k=4\},
+$$
+where adjacent triples differ by a permutation of $(1,-1,0)$.  A row-by-row
+check of this five-row triangle shows that an independent set has at most six
+vertices, and that the unique six-vertex independent set is
+$$
+\begin{gathered}
+(4,0,0),(0,4,0),(0,0,4),\\
+(2,2,0),(2,0,2),(0,2,2).
+\end{gathered}
+$$
+These six monomials cannot all have the same weight: equality of the weights
+of $x^4$, $y^4$, and $x^2y^2$ gives $\alpha^2=\beta^2$, and similarly one
+gets $\alpha^2=\gamma^2$.  After scaling by $\alpha$, both remaining
+eigenvalues would therefore lie in $\{1,-1\}$, contradicting the assumption
+that all three eigenvalues are distinct.  Hence every eigenspace has
+dimension at most $5$, and these quartics sweep a locus of dimension at most
 $$
 6+(5-1)=10<14.
 $$
@@ -269,12 +327,22 @@ proper subset of $U$.
 automorphisms except the identity.
 
 ::: {.proof}
-The hyperelliptic locus in the $6$-dimensional moduli space $\mathcal M_3$
-has dimension $2g-1=5$, hence is proper.  Every nonhyperelliptic genus-$3$
-curve is a smooth plane quartic by its canonical embedding.  Step <1>6 shows
-that the nontrivial-stabilizer locus among those plane quartics is also
-proper.  Therefore outside these proper loci the automorphism group is
-trivial.  This is the assertion of part (c).
+The smooth plane quartics form a $14$-dimensional open subset of
+$\PP(V)$.  Their stabilizers in $\PGL_3$ are finite by
+[[P-AGH452AUTOMORPHISMGROUPFINITE|Exercise IV.5.2]], so the family of
+isomorphism classes of nonhyperelliptic genus-$3$ curves has dimension
+$$
+14-\dim\PGL_3=14-8=6.
+$$
+Thus $\mathcal M_3$ has dimension $6$.
+
+The hyperelliptic locus has dimension $2g-1=5$: such a curve is determined
+by its unordered set of $2g+2=8$ branch points on $\PP^1$, a family of
+dimension $8-\dim\PGL_2=5$.  Hence it is proper.  Every nonhyperelliptic
+genus-$3$ curve is a smooth plane quartic by its canonical embedding, and
+step <1>6 shows that the nontrivial-stabilizer locus among those plane
+quartics is also proper.  Therefore outside these proper loci the
+automorphism group is trivial.  This is the assertion of part (c).
 :::
 
 <1>8. Q.E.D.
