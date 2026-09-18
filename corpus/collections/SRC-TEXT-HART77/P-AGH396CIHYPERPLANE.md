@@ -16,7 +16,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-09-18
-  note: Read Exercise III.9.6, Proposition III.9.12, and the complete-intersection/projective-normality results II.8.4. The converse is proved on affine cones: III.9.12 identifies the height-one cone ideal of the hyperplane section with the principal ideal of the hyperplane equation. Lifting the complete-intersection equations then gives I(Y)=J+lI(Y), and a graded Nakayama argument yields I(Y)=J.
+  note: "Read Exercise III.9.6, Proposition III.9.12, and the complete-intersection/projective-normality results II.8.4. The converse is proved on affine cones: III.9.12 identifies the height-one cone ideal of the hyperplane section with the principal ideal of the hyperplane equation. Lifting the complete-intersection equations then gives I(Y)=J+lI(Y), and a graded Nakayama argument yields I(Y)=J."
 - event: solution-written
   by: chatgpt
   date: 2026-09-18

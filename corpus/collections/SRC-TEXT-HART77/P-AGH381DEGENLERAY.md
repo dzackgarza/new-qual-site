@@ -16,7 +16,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-09-18
-  note: Read Exercise III.8.1 and the definition of the higher direct images as the right derived functors of f_* in Hartshorne III.8. The proof uses an injective resolution: f_* preserves injectives because it is right adjoint to the exact inverse-image functor, and the assumed vanishing makes the pushed-forward complex an injective resolution of f_*F.
+  note: "Read Exercise III.8.1 and the definition of the higher direct images as the right derived functors of f_* in Hartshorne III.8. The proof uses an injective resolution: f_* preserves injectives because it is right adjoint to the exact inverse-image functor, and the assumed vanishing makes the pushed-forward complex an injective resolution of f_*F."
 - event: solution-written
   by: chatgpt
   date: 2026-09-18

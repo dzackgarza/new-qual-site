@@ -17,7 +17,7 @@ audit:
 - event: source-checked
   by: chatgpt
   date: 2026-09-18
-  note: Read Exercise III.9.5, Theorems III.9.9 and III.9.11, and the projective-normality criterion II.5.14(d). Part (a) uses three disjoint sections specializing from noncollinear to collinear points. In part (d), the proof compares each closed fibre with the generic fibre: flatness saturates the module of global degree-d equations, while projective normality plus upper semicontinuity of h^0 gives the opposite inequality. It does not use the false shortcut that a projectively normal variety's Hilbert function equals its Hilbert polynomial in every degree.
+  note: "Read Exercise III.9.5, Theorems III.9.9 and III.9.11, and the projective-normality criterion II.5.14(d). Part (a) uses three disjoint sections specializing from noncollinear to collinear points. In part (d), the proof compares each closed fibre with the generic fibre: flatness saturates the module of global degree-d equations, while projective normality plus upper semicontinuity of h^0 gives the opposite inequality. It does not use the false shortcut that a projectively normal variety's Hilbert function equals its Hilbert polynomial in every degree."
 - event: solution-written
   by: chatgpt
   date: 2026-09-18
