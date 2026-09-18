@@ -94,14 +94,14 @@ $$
 X_a=
 \left\{
 [s^4:s^3u:a s^2u^2:su^3:u^4]
-ight\},
+\right\},
 $$
 and whose special fibre is the reduced twisted quartic
 $$
 X_0=
 \left\{
 [s^4:s^3u:0:su^3:u^4]
-ight\}
+\right\}
 \subseteq V(x_2)\cong\PP^3.
 $$
 
