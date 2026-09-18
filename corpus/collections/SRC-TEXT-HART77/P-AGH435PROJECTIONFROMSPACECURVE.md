@@ -156,9 +156,9 @@ Because
 $$
 \varphi^*\mco_Y(1)\cong\mco_X(1)
 $$
-and $\varphi$ is birational, it has degree one on function fields. For a
-line bundle on a projective curve, degree multiplies by the degree of a
-finite dominant morphism. Therefore
+and $\varphi$ is birational, it has degree one on function fields.  A
+nonconstant morphism of projective curves is finite, so the usual degree
+formula for pullback of a line bundle applies. Therefore
 $$
 \deg\mco_X(1)
 =
