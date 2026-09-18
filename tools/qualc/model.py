@@ -280,10 +280,15 @@ SourceSpec = Annotated[
 ]
 
 
-# Who did what to a problem, and when. Three events, because three separate
-# things get checked: the solution was written, the statement was checked
-# against the original source, and the solution was reviewed for correctness.
-AuditEventKind = Literal["solution-written", "source-checked", "solution-reviewed"]
+# Who did what to a problem, and when. Keep source comparison distinct from a
+# source-facing correction: checking can confirm an unchanged transcription,
+# while correcting records that the authored statement itself had to change.
+AuditEventKind = Literal[
+    "solution-written",
+    "source-checked",
+    "source-corrected",
+    "solution-reviewed",
+]
 
 
 class AuditEvent(Strict):

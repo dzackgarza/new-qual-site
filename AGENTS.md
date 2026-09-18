@@ -933,10 +933,12 @@ solution-sheet routing ledgers live in
 ## Audit history
 
 A problem card may carry `audit:`, a list of dated events recording who did
-what to it. Three events exist:
+what to it. Four events exist:
 
 - `solution-written` — someone wrote the solution on the card.
 - `source-checked` — someone compared the statement against the original source.
+- `source-corrected` — that comparison required a correction to the authored
+  mathematical statement; the note records what changed.
 - `solution-reviewed` — someone checked the solution for correctness.
 
 ```yaml
