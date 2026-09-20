@@ -29,7 +29,7 @@ source:
       comment: Hartshorne II.2.3
     - id: P-AGXHWSPECZTERM
       comment: Hartshorne II.2.5
-    - id: P-AGXHWSPECFIELD
+    - id: P-AGH227SPECFIELD
       comment: Hartshorne II.2.7
   date:
     kind: unknown
