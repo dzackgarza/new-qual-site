@@ -37,4 +37,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Zaidenberg Definition 4.3 makes the following finite-morphism exercises inconsistent
+
+- **Object and need:** \`SRC-AGX-VARIETIES-PROBLEMS\`, Definition 4.3 and
+  Exercises 4.4. The standard definition of a finite morphism does not require
+  the comorphism to be injective.
+- **Observed evidence:** page 6 of the recorded PDF says that a finite morphism
+  has an "embedding" $f^*:O(Y)\to O(X)$, while the same exercise immediately
+  asks for a non-surjective finite morphism. An injective module-finite
+  comorphism is integral, so lying over makes the corresponding affine map
+  surjective.
+- **Impact and owner:** the source wording cannot govern cards about finite
+  morphisms. \`P-AGXVARFINCLOSED\` records and uses the repository definition
+  \`D-MORFIN\`, under which the exercise is coherent.
+- **Uncertainty:** verified in the PDF with two independent text extractors;
+  this may be a typo in the source rather than an intended nonstandard
+  convention.
+- **Repair:** retain the standard repository definition and treat the printed
+  word "embedding" as source errata unless a corrected source edition is found.
+
 ## Workflow and rendering papercuts
