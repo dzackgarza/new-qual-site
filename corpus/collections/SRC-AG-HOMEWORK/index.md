@@ -27,7 +27,7 @@ source:
       comment: Hartshorne II.2.1
     - id: P-AGXHWREDUCED
       comment: Hartshorne II.2.3
-    - id: P-AGXHWSPECZTERM
+    - id: P-AGH225SPECZ
       comment: Hartshorne II.2.5
     - id: P-AGH227SPECFIELD
       comment: Hartshorne II.2.7
