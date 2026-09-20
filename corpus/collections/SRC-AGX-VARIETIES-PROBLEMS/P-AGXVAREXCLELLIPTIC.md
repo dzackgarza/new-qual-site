@@ -263,4 +263,3 @@ Step <1>6 computes the group, and step <1>7 gives the source's equivalent
 representative description.
 :::
 :::
-:::
