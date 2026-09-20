@@ -63,7 +63,6 @@ source:
     - id: P-AGXVARCOMPLETEGLOBAL
   - name: Examples
     problems:
-    - id: P-AGXVAREXSIXLINES
     - id: P-AGXVAREXGLNAFFINE
     - id: P-AGXVAREXPUNCTPLANE
     - id: P-AGXVAREXREDUCIBLE
