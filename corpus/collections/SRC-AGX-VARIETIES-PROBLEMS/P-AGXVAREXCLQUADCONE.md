@@ -228,4 +228,3 @@ exactly $2$. This gives the displayed isomorphism.
 Step <1>6 is the requested class-group computation.
 :::
 :::
-:::
