@@ -12,8 +12,185 @@ classification:
   - Homogenization
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-20
+  note: >-
+    Read the corresponding clause of Zaidenberg Exercises 9.2 in the recorded
+    source. For an affine variety X in A^n and its projective closure Xbar in
+    P^n, it asks to prove Xbar = X union partial X, where partial X is the
+    intersection with the hyperplane at infinity x_0=0.
+- event: source-corrected
+  by: chatgpt
+  date: 2026-09-20
+  note: >-
+    Made the standard embedding A^n -> P^n, the affine chart U_0, and the
+    hyperplane at infinity explicit on the standalone card.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-20
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-20
+  note: >-
+    Checked that the projective closure intersects the standard affine chart
+    in exactly X because X is already closed in that chart, then decomposed
+    P^n as the disjoint union of the affine chart and the hyperplane at
+    infinity.
 ---
 
 ::: {.problem}
-Let $\tilde X$ be the projective closure of $X$ and show $\tilde X = X\union \bd X$, where $\bd X = \ts{x_0 = 0} \intersect \tilde X$.
+Let
+$$
+X\subseteq\AA^n_k
+$$
+be an affine variety, embedded in projective space by
+$$
+\AA^n_k\hookrightarrow\PP^n_k,
+\qquad
+(a_1,\ldots,a_n)
+\longmapsto
+[1:a_1:\ldots:a_n].
+$$
+Let $\overline X\subseteq\PP^n_k$ be its projective Zariski closure, and let
+$$
+H_0=\{x_0=0\}
+$$
+be the hyperplane at infinity. Show that
+$$
+\overline X=X\union\bd X,
+\qquad
+\bd X=H_0\intersect\overline X.
+$$
+:::
+
+::: {.solution}
+Put
+$$
+U_0=\{x_0\ne0\}\subseteq\PP^n_k.
+$$
+Under the standard embedding, $U_0\cong\AA^n_k$ and $X$ is identified with
+a closed subset of $U_0$.
+
+<1>1. The projective closure satisfies
+$$
+\boxed{\overline X\intersect U_0=X.}
+$$
+
+::: {.proof}
+Let
+$$
+j:U_0\hookrightarrow\PP^n_k
+$$
+be the open immersion. For any subset $S$ of a topological space and any
+open subset $U$, closure restricts by
+$$
+\overline S^{\,T}\intersect U
+=
+\overline{S\intersect U}^{\,U}.
+$$
+Applying this with
+$$
+T=\PP^n_k,
+\qquad
+S=X,
+\qquad
+U=U_0
+$$
+gives
+$$
+\overline X\intersect U_0
+=
+\overline X^{\,U_0}.
+$$
+
+But $X$ is an affine variety in
+$$
+U_0\cong\AA^n_k,
+$$
+so $X$ is Zariski closed in $U_0$. Therefore its closure inside $U_0$ is
+itself:
+$$
+\overline X^{\,U_0}=X.
+$$
+Hence
+$$
+\overline X\intersect U_0=X.
+$$
+:::
+
+<1>2. The complement of $U_0$ in $\PP^n_k$ is exactly the hyperplane at
+infinity:
+$$
+\PP^n_k\sm U_0=H_0.
+$$
+
+::: {.proof}
+By definition,
+$$
+U_0=\{[x_0:\ldots:x_n]:x_0\ne0\}.
+$$
+Its complement is therefore
+$$
+\{[x_0:\ldots:x_n]:x_0=0\}
+=
+H_0.
+$$
+:::
+
+<1>3. The projective closure decomposes as
+$$
+\boxed{
+\overline X
+=
+X\union(H_0\intersect\overline X).
+}
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+\PP^n_k
+=
+U_0\union H_0.
+$$
+Intersecting with $\overline X$ gives
+$$
+\overline X
+=
+(\overline X\intersect U_0)
+\union
+(\overline X\intersect H_0).
+$$
+Step <1>1 identifies the first term with $X$. Therefore
+$$
+\overline X
+=
+X\union(H_0\intersect\overline X).
+$$
+:::
+
+<1>4. With
+$$
+\bd X
+\coloneqq
+H_0\intersect\overline X,
+$$
+one has
+$$
+\boxed{\overline X=X\union\bd X.}
+$$
+
+::: {.proof}
+This is exactly the identity in step <1>3 with the source's notation
+$\bd X$ for the boundary at infinity.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>1 identifies the affine part of the projective closure with $X$, and
+steps <1>2--<1>4 identify the remaining part with the boundary at infinity.
+:::
 :::
