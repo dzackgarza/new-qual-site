@@ -129,6 +129,7 @@ x
 1+L-\frac12\log x
 \right):
 $$
+$$
 \begin{aligned}
 F_\varepsilon'(x)
 &=
