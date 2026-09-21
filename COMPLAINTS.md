@@ -37,6 +37,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Azoff Möbius symmetry problem has a false fourth equivalent condition
+
+- **Object and need:** \`P-AZOFF-C12\` / \`SRC-AZOFF-PROBLEMS-BY-TOPIC\`,
+  Conformal mapping Problem 12. The source asks to prove four conditions on a
+  Möbius transformation equivalent; condition (d) requires a real fixed point
+  \(\alpha\) in addition to one nonreal conjugation-compatible point.
+- **Observed evidence:** page 3 of the retained PDF prints
+  \(T(\alpha)=\alpha\) with no overbar on either occurrence of \(\alpha\).
+  The PDF vector data separately shows the overbars in
+  \(T(\overline\beta)=\overline{T\beta}\), so the fixed-point clause is not an
+  extraction loss. The Möbius transformation
+  \(T(z)=-1/z\) has real coefficients and therefore satisfies (a)--(c), but
+  its fixed-point equation is \(z^2=-1\), so it has no real fixed point and
+  fails (d).
+- **Impact and owner:** the printed four-way equivalence cannot be proved.
+  The owning problem card must state the true implication pattern before its
+  solution is authored.
+- **Uncertainty:** verified against the rendered PDF, its text layer, and the
+  vector rules carrying the overbars. The mathematical counterexample is
+  exact; whether the source author intended a different condition (d) is
+  unknown.
+- **Repair:** correct \`P-AZOFF-C12\` to ask for the equivalence of (a)--(c),
+  prove that printed (d) implies them, and record that the converse fails via
+  \(T(z)=-1/z\). Preserve the printed source error as a durable erratum on
+  the card.
+
 ### Zaidenberg Definition 4.3 makes the following finite-morphism exercises inconsistent
 
 - **Object and need:** \`SRC-AGX-VARIETIES-PROBLEMS\`, Definition 4.3 and
