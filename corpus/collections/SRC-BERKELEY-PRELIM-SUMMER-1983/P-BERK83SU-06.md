@@ -10,6 +10,19 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-14
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-21
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-21
+  note: >-
+    Relative to the a-basis, the b-basis is represented by a matrix
+    Q in SO(n), and the vectors a_i+2b_i are the columns of I+2Q.
+    The eigenvalues of Q have modulus one; nonreal eigenvalues occur in
+    conjugate pairs, and the multiplicity of -1 is even because det Q=1.
+    Hence every spectral factor in det(I+2Q) contributes positively in
+    pairs, so this determinant is positive.
 ---
 
 ::: {.problem}
@@ -20,4 +33,154 @@ Suppose $(a_i)$ and $(b_i)$ are orthonormal bases with the same orientation. Pro
 (a_i+2b_i)_{i=1}^n
 \]
 is again a basis of $V$, with the same orientation as $(a_i)$.
+:::
+
+::: {.solution}
+Let $Q=(q_{ji})$ be the change-of-basis matrix determined by
+$$
+b_i=\sum_{j=1}^n q_{ji}a_j.
+$$
+
+<1>1. The matrix $Q$ is orthogonal and
+$$
+\det Q=1.
+$$
+
+::: {.proof}
+Because $(a_i)$ is orthonormal,
+$$
+\inner{b_i}{b_k}
+=
+\sum_{j=1}^n q_{ji}q_{jk}.
+$$
+Since $(b_i)$ is also orthonormal, this equals $\delta_{ik}$.
+Therefore
+$$
+Q^TQ=I.
+$$
+Thus $Q$ is orthogonal, so
+$$
+(\det Q)^2=1.
+$$
+The two bases have the same orientation, so their change-of-basis
+determinant is positive. Hence $\det Q=1$.
+:::
+
+<1>2. Relative to the basis $(a_i)$, the vectors
+$$
+c_i=a_i+2b_i
+$$
+are the columns of
+$$
+C=I+2Q.
+$$
+
+::: {.proof}
+Using the definition of $Q$,
+$$
+\begin{aligned}
+c_i
+&=
+a_i+2b_i\\
+&=
+\sum_{j=1}^n
+(\delta_{ji}+2q_{ji})a_j.
+\end{aligned}
+$$
+Thus the $i$th coordinate column of $c_i$ is the $i$th column of
+$I+2Q$.
+:::
+
+<1>3. Every complex eigenvalue $\lambda$ of $Q$ satisfies
+$$
+\abs{\lambda}=1,
+$$
+and the nonreal eigenvalues occur in conjugate pairs.
+
+::: {.proof}
+If $Qv=\lambda v$ for a nonzero $v\in\CC^n$, then orthogonality of
+$Q$ implies
+$$
+\norm{Qv}=\norm{v}.
+$$
+Hence
+$$
+\abs{\lambda}\norm{v}
+=
+\norm{\lambda v}
+=
+\norm{Qv}
+=
+\norm{v},
+$$
+so $\abs{\lambda}=1$. Since $Q$ has real entries, its characteristic
+polynomial has real coefficients, and therefore every nonreal root
+occurs together with its complex conjugate.
+:::
+
+<1>4. The multiplicity of the eigenvalue $-1$ of $Q$ is even.
+
+::: {.proof}
+An orthogonal matrix is normal, hence diagonalizable over $\CC$.
+Its determinant is the product of its eigenvalues, counted with
+multiplicity. By step <1>3, every nonreal conjugate pair
+$\lambda,\overline\lambda$ contributes
+$$
+\lambda\overline\lambda
+=
+\abs{\lambda}^2
+=1
+$$
+to that product. The eigenvalue $1$ also contributes $1$. If $m$ is
+the multiplicity of $-1$, step <1>1 therefore gives
+$$
+1=\det Q=(-1)^m.
+$$
+Thus $m$ is even.
+:::
+
+<1>5. One has
+$$
+\det(I+2Q)>0.
+$$
+
+::: {.proof}
+Because $Q$ is diagonalizable over $\CC$, the eigenvalues of $I+2Q$
+are $1+2\lambda$, where $\lambda$ ranges over the eigenvalues of $Q$.
+For a nonreal conjugate pair
+$\lambda,\overline\lambda$, the corresponding factors satisfy
+$$
+(1+2\lambda)(1+2\overline\lambda)
+=
+\abs{1+2\lambda}^2
+>0.
+$$
+An eigenvalue $\lambda=1$ contributes the positive factor $3$. An
+eigenvalue $\lambda=-1$ contributes the factor $-1$, and step <1>4
+shows that the number of these factors is even. Hence their total
+product is positive. Therefore
+$$
+\det(I+2Q)>0.
+$$
+:::
+
+<1>6. The vectors $(a_i+2b_i)_{i=1}^n$ form a basis with the same
+orientation as $(a_i)$.
+
+::: {.proof}
+By step <1>2, their coordinate matrix relative to $(a_i)$ is $I+2Q$.
+Step <1>5 gives
+$$
+\det(I+2Q)>0.
+$$
+In particular, this matrix is invertible, so its columns form a basis.
+Its positive determinant says precisely that this basis has the same
+orientation as $(a_i)$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required conclusion.
+:::
 :::
