@@ -12,6 +12,16 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-22
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-22
+  note: >-
+    Used the left regular action of the group on itself. In the basis indexed
+    by group elements, each left translation is a permutation matrix, hence
+    orthogonal; evaluating at the identity proves faithfulness.
 ---
 
 ::: {.problem}
@@ -20,4 +30,119 @@ Prove that every finite group of order $n$ is isomorphic to a subgroup of
 O(n),
 \]
 the group of real $n\times n$ orthogonal matrices.
+:::
+
+::: {.solution}
+Let
+$$
+G=\{g_1,\ldots,g_n\}
+$$
+be a finite group of order $n$, and let $V$ be the real vector space with
+basis
+$$
+\{e_g:g\in G\}.
+$$
+
+<1>1. For each $a\in G$, define a linear map
+$$
+\rho(a):V\to V
+$$
+by
+$$
+\rho(a)e_g=e_{ag}
+$$
+for every $g\in G$.
+
+::: {.proof}
+Left multiplication
+$$
+g\longmapsto ag
+$$
+is a permutation of the set $G$. Hence the displayed prescription sends
+the basis of $V$ to a basis and therefore extends uniquely to a linear
+automorphism of $V$.
+:::
+
+<1>2. The assignment
+$$
+\rho:G\to GL(V),
+\qquad
+a\longmapsto\rho(a),
+$$
+is a group homomorphism.
+
+::: {.proof}
+For $a,b,g\in G$,
+$$
+\rho(a)\rho(b)e_g
+=
+\rho(a)e_{bg}
+=
+e_{abg}
+=
+\rho(ab)e_g.
+$$
+Thus
+$$
+\rho(a)\rho(b)=\rho(ab)
+$$
+because the two maps agree on a basis.
+:::
+
+<1>3. Each $\rho(a)$ is orthogonal with respect to the inner product for
+which the basis $(e_g)_{g\in G}$ is orthonormal.
+
+::: {.proof}
+By step <1>1, $\rho(a)$ permutes the orthonormal basis vectors. Hence for
+all $g,h\in G$,
+$$
+\inner{\rho(a)e_g}{\rho(a)e_h}
+=
+\inner{e_{ag}}{e_{ah}}
+=
+\delta_{ag,ah}
+=
+\delta_{g,h}.
+$$
+By bilinearity, $\rho(a)$ preserves the inner product on all of $V$.
+Therefore, after identifying $V$ with $\RR^n$ by this orthonormal basis,
+its matrix lies in $O(n)$.
+:::
+
+<1>4. The homomorphism $\rho$ is injective.
+
+::: {.proof}
+Let $e\in G$ denote the identity. If
+$$
+\rho(a)=\rho(b),
+$$
+then evaluating both maps on $e_e$ gives
+$$
+e_a
+=
+\rho(a)e_e
+=
+\rho(b)e_e
+=
+e_b.
+$$
+Distinct group elements label distinct basis vectors, so $a=b$.
+:::
+
+<1>5. Therefore
+$$
+\boxed{G\cong\rho(G)\leq O(n)}.
+$$
+
+::: {.proof}
+Steps <1>2 and <1>4 show that $\rho$ is an injective group
+homomorphism, while step <1>3 shows that every matrix in its image is
+orthogonal.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the required isomorphic embedding into $O(n)$.
+:::
 :::
