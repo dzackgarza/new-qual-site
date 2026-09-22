@@ -52,25 +52,6 @@ bounded in modulus by $\pi R/(R^2-a^2)$.
 :::
 
 ::: {.solution}
-Fix $a>0$, and write $I_a$ for the requested improper integral.
-
-<1>1. The integral $I_a$ converges absolutely.
-
-::: {.proof}
-For every $x>0$, the inequality $\abs{\sin x}\leq x$ gives
-$$
-\abs{\frac{\sin x}{x(x^2+a^2)}}\leq\frac{1}{x^2+a^2}.
-$$
-The majorant is integrable on $(0,\infty)$, since
-$$
-\int_0^\infty\frac{dx}{x^2+a^2}
-=\left[\frac{1}{a}\arctan\frac{x}{a}\right]_0^\infty
-=\frac{\pi}{2a}.
-$$
-:::
-:::
-
-::: {.solution}
 Fix $a>0$, and write
 $$
 I(a)\coloneqq\int_0^\infty\frac{\sin x}{x(x^2+a^2)}\,dx,

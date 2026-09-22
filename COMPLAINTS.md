@@ -83,3 +83,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   word "embedding" as source errata unless a corrected source edition is found.
 
 ## Workflow and rendering papercuts
+
+### Overlapping workstream owners edited the same Author-solutions card
+
+- **Object and need:** the `new-qual-site` Core2 workstream must have one
+  active author on its selected card, under `QUAL-03` and `QUAL-07`.
+- **Observed evidence:** on 2026-09-22, repeated successful `workstream`
+  continuation calls were followed by `WORKSTREAM_SETUP_REQUIRED` on calls
+  carrying the returned ID. One response explicitly reported a superseded
+  owner's already-admitted call still settling. During the same session,
+  `1b56ef019` committed `P-BERK90S-07` with this session's partial solution
+  followed by another complete solution; subsequent edits completed the
+  first block, producing two proofs of the same integral by the same method.
+- **Impact and owner:** the workstream handoff/dispatch boundary permits
+  overlapping authorship and rejected calls. This is not a corpus parser,
+  mathematical, or publication-gate defect.
+- **Uncertainty:** the rejected calls and overlapping card contents were
+  observed directly; the mechanism initiating the competing continuations
+  has not been established.
+- **Repair:** the card is reconciled by removing this session's duplicate
+  and retaining the other complete proof unchanged. The external handoff
+  remains unresolved: a successor must not race a still-writing predecessor,
+  and must reread the final settled card before editing it.
