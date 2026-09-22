@@ -12,6 +12,15 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-22
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-22
+  note: >-
+    Expanded the integrand at its unique singularity $z=1$, extracted the
+    residue directly, and applied the residue theorem.
 ---
 
 ::: {.problem}
@@ -20,4 +29,63 @@ Evaluate
 \int_C(2z-1)e^{z/(z-1)}\,dz,
 \]
 where $C$ is the positively oriented circle $|z|=2$.
+:::
+
+::: {.solution}
+<1>1. The integrand is holomorphic on and inside $C$ except at $z=1$.
+
+::: {.proof}
+The only possible singularity of
+$$
+(2z-1)e^{z/(z-1)}
+$$
+occurs where $z-1=0$, namely at $z=1$. Since $\abs{1}<2$, this point lies
+inside $C$, and the integrand is holomorphic everywhere else on and inside
+the contour.
+:::
+
+<1>2. The residue of the integrand at $z=1$ is $2e$.
+
+::: {.proof}
+Set $w=z-1$. Then
+$$
+2z-1=2w+1,
+\qquad
+\frac{z}{z-1}=1+\frac1w.
+$$
+Hence
+$$
+(2z-1)e^{z/(z-1)}
+=e(2w+1)e^{1/w}
+=e(2w+1)\sum_{n=0}^\infty\frac{w^{-n}}{n!}.
+$$
+The coefficient of $w^{-1}$ receives one contribution from the factor $1$
+with $n=1$, and one from the factor $2w$ with $n=2$. Therefore
+$$
+\operatorname{Res}_{z=1}(2z-1)e^{z/(z-1)}
+=e\left(1+\frac{2}{2!}\right)
+=2e.
+$$
+:::
+
+<1>3. The integral equals
+$$
+\boxed{4\pi i e}.
+$$
+
+::: {.proof}
+By steps <1>1 and <1>2, the residue theorem gives
+$$
+\int_C(2z-1)e^{z/(z-1)}\,dz
+=2\pi i\operatorname{Res}_{z=1}(2z-1)e^{z/(z-1)}
+=2\pi i(2e)
+=4\pi i e.
+$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the requested value.
+:::
 :::
