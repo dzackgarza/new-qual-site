@@ -12,8 +12,115 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-22
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-22
+  note: >-
+    Decomposed each vector into its component along the unit axis e and its
+    orthogonal component. A half-turn fixes the former and negates the
+    latter, giving T(v)=2< v,e >e-v and matrix 2ee^T-I.
 ---
 
 ::: {.problem}
 Let $e=(a,b,c)$ be a unit vector in $\mathbb R^3$. Let $T$ be rotation by $180^\circ$ about the axis spanned by $e$. Find the matrix of $T$ in the standard basis.
+:::
+
+::: {.solution}
+<1>1. Every $v\in\RR^3$ has the orthogonal decomposition
+$$
+v
+=
+\inner{v}{e}e
++
+\left(v-\inner{v}{e}e\right),
+$$
+where the second summand is orthogonal to $e$.
+
+::: {.proof}
+Since $e$ is a unit vector,
+$$
+\inner{v-\inner{v}{e}e}{e}
+=
+\inner{v}{e}
+-\inner{v}{e}\inner{e}{e}
+=0.
+$$
+Thus the first summand is the projection of $v$ onto the rotation axis
+and the second lies in its orthogonal plane.
+:::
+
+<1>2. The half-turn satisfies
+$$
+T(v)=2\inner{v}{e}e-v.
+$$
+
+::: {.proof}
+A rotation by $180^\circ$ about the axis $\RR e$ fixes every vector on
+that axis and sends every vector in the orthogonal plane to its negative.
+Applying this to the decomposition in step <1>1 gives
+$$
+\begin{aligned}
+T(v)
+&=
+\inner{v}{e}e
+-
+\left(v-\inner{v}{e}e\right)\\
+&=
+2\inner{v}{e}e-v.
+\end{aligned}
+$$
+:::
+
+<1>3. In the standard basis, the matrix of $T$ is
+$$
+\boxed{
+\begin{pmatrix}
+2a^2-1&2ab&2ac\\
+2ab&2b^2-1&2bc\\
+2ac&2bc&2c^2-1
+\end{pmatrix}
+}.
+$$
+
+::: {.proof}
+Regard
+$$
+e=
+\begin{pmatrix}
+a\\
+b\\
+c
+\end{pmatrix}.
+$$
+For a column vector $v$, one has
+$$
+\inner{v}{e}=e^{\mathsf T}v.
+$$
+Hence step <1>2 becomes
+$$
+T(v)
+=
+\left(2ee^{\mathsf T}-I_3\right)v.
+$$
+Now
+$$
+ee^{\mathsf T}
+=
+\begin{pmatrix}
+a^2&ab&ac\\
+ab&b^2&bc\\
+ac&bc&c^2
+\end{pmatrix},
+$$
+so expanding $2ee^{\mathsf T}-I_3$ gives the displayed matrix.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the requested standard-basis matrix.
+:::
 :::
