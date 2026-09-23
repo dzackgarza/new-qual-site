@@ -13,6 +13,9 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-23
 ---
 
 ::: {.problem}
@@ -25,4 +28,104 @@ Show that for every integer $d\ge0$ there are integers $b_0,\dots,b_{md}$ such t
 \frac{f(x)^d}{d!}
 =\sum_{i=0}^{md}\frac{b_ix^i}{i!}.
 \]
+:::
+
+::: {.solution}
+<1>1. The claim is immediate when $d=0$, and also when $m=0$.
+
+::: {.proof}
+If $d=0$, then
+$$
+\frac{f(x)^0}{0!}=1,
+$$
+so take $b_0=1$. If $m=0$ and $d>0$, then $f=0$, so take $b_0=0$.
+Thus it remains to consider $m,d\geq1$.
+:::
+
+<1>2. For $0\leq n\leq md$, the coefficient of $x^n/n!$ in
+$f(x)^d/d!$ is
+$$
+b_n
+=
+\sum_{\substack{c_1,\ldots,c_m\geq0\\
+c_1+\cdots+c_m=d\\
+c_1+2c_2+\cdots+mc_m=n}}
+\frac{n!}{\prod_{i=1}^m c_i!(i!)^{c_i}}
+\prod_{i=1}^m a_i^{c_i}.
+$$
+
+::: {.proof}
+By the multinomial theorem,
+$$
+f(x)^d
+=
+\sum_{c_1+\cdots+c_m=d}
+\frac{d!}{c_1!\cdots c_m!}
+\prod_{i=1}^m
+\left(\frac{a_i x^i}{i!}\right)^{c_i}.
+$$
+After division by $d!$, a term indexed by $(c_1,\ldots,c_m)$ has degree
+$$
+n=c_1+2c_2+\cdots+mc_m
+$$
+and coefficient
+$$
+\frac{\prod_{i=1}^m a_i^{c_i}}
+{\prod_{i=1}^m c_i!(i!)^{c_i}}.
+$$
+Multiplying the coefficient of $x^n$ by $n!$ gives the displayed formula
+for the coefficient $b_n$ of $x^n/n!$.
+:::
+
+<1>3. For every tuple $(c_1,\ldots,c_m)$ occurring in step <1>2,
+$$
+\frac{n!}{\prod_{i=1}^m c_i!(i!)^{c_i}}
+$$
+is an integer.
+
+::: {.proof}
+Let $S$ be an $n$-element set. The displayed number counts partitions of
+$S$ into exactly $c_i$ unlabeled blocks of size $i$ for each
+$1\leq i\leq m$.
+
+Indeed, ordering the elements of $S$ gives $n!$ lists. Cutting such a list
+into $c_i$ blocks of size $i$ for each $i$ overcounts by a factor $i!$ for
+the internal ordering of each size-$i$ block, and by a factor $c_i!$ for
+the ordering of the $c_i$ blocks of the same size. Hence the number of such
+set partitions is exactly
+$$
+\frac{n!}{\prod_{i=1}^m c_i!(i!)^{c_i}},
+$$
+which is therefore an integer.
+:::
+
+<1>4. Every coefficient $b_n$ in step <1>2 is an integer.
+
+::: {.proof}
+Each $a_i$ is an integer by hypothesis, and step <1>3 shows that every
+other factor in every summand defining $b_n$ is an integer. Hence
+$b_n\in\ZZ$.
+:::
+
+<1>5. One has
+$$
+\boxed{
+\frac{f(x)^d}{d!}
+=
+\sum_{n=0}^{md}\frac{b_nx^n}{n!}
+}
+$$
+with every $b_n\in\ZZ$.
+
+::: {.proof}
+The degree of $f^d$ is at most $md$. Step <1>2 identifies the divided-power
+coefficient $b_n$ for every degree $0\leq n\leq md$, and step <1>4 proves
+that each is an integer.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>5 cover all cases.
+:::
 :::
