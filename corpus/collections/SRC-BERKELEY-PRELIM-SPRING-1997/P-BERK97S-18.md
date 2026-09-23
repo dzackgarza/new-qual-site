@@ -16,6 +16,13 @@ audit:
 - event: solution-written
   by: chatgpt
   date: 2026-09-23
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-23
+  note: >-
+    Distinguished the finite-product reading from an arbitrary infinite
+    product. The finite case splits by lifting a free basis; the arbitrary
+    infinite case can fail by the Baer--Specker theorem.
 ---
 
 ::: {.problem}
@@ -57,34 +64,41 @@ has no element of order $4$, whereas $G=\ZZ/4\ZZ$ does. Hence
 $G\not\cong H\times K$.
 :::
 
-<1>2. For statement (2), let $(h_i)_{i\in I}$ be generators of the
-infinite cyclic direct factors of $H$. Then $H$ is free abelian on
-$(h_i)_{i\in I}$.
+<1>2. If the direct product in statement (2) has finitely many factors, write
+$$
+H=C_1\times\cdots\times C_r,
+$$
+where each $C_i$ is infinite cyclic, and choose a generator $h_i$ of $C_i$.
+Then $H$ is free abelian on $h_1,\ldots,h_r$.
 
 ::: {.proof}
-This is the direct-product decomposition assumed in statement (2): every
-element of $H$ has a unique expression as a finite integral linear
-combination of the chosen generators.
+For a finite product, every element of $H$ has a unique expression
+$$
+n_1h_1+\cdots+n_rh_r
+$$
+with $n_1,\ldots,n_r\in\ZZ$. Thus $H\cong\ZZ^r$ with basis
+$h_1,\ldots,h_r$.
 :::
 
-<1>3. The quotient map $q$ admits a homomorphic section
+<1>3. Under the finite-product interpretation, the quotient map $q$ admits a
+homomorphic section
 $$
 s:H\longrightarrow G
 $$
 with $q\circ s=\operatorname{id}_H$.
 
 ::: {.proof}
-For each $i\in I$, choose $g_i\in G$ with
+For each $i\in\{1,\ldots,r\}$, choose $g_i\in G$ with
 $$
 q(g_i)=h_i.
 $$
-Since $H$ is free abelian on $(h_i)_{i\in I}$ by step <1>2, there is a
+Since $H$ is free abelian on $h_1,\ldots,h_r$ by step <1>2, there is a
 unique homomorphism $s:H\to G$ satisfying
 $$
 s(h_i)=g_i
-\qquad(i\in I).
+\qquad(1\leq i\leq r).
 $$
-For every $i\in I$,
+For every $i\in\{1,\ldots,r\}$,
 $$
 (q\circ s)(h_i)=q(g_i)=h_i.
 $$
@@ -126,9 +140,9 @@ because $q(k)=0$ for $k\in K$. Thus $h=0$, and then
 $k=\Phi(k,0)=0$. Therefore $\Phi$ is injective.
 :::
 
-<1>5. Statement (2) is true:
+<1>5. Under the finite-product interpretation, statement (2) is true:
 $$
-\boxed{G\cong H\times K}.
+G\cong H\times K.
 $$
 
 ::: {.proof}
@@ -140,9 +154,49 @@ Since direct products of abelian groups are symmetric,
 $K\times H\cong H\times K$.
 :::
 
-<1>6. Q.E.D.
+<1>6. If arbitrary infinite direct products are allowed in statement (2),
+then statement (2) is false in general.
 
 ::: {.proof}
-Step <1>1 disproves statement (1), and step <1>5 proves statement (2).
+Take $H=\prod_{n\geq1}\ZZ$. By the Baer--Specker theorem, $H$ is not a
+free abelian group. Let $F$ be the free abelian group on the underlying set
+of $H$, and let
+$$
+\pi:F\longrightarrow H
+$$
+send the basis element indexed by $h\in H$ to $h$. Then $\pi$ is
+surjective. Put $K=\ker\pi$. By the first isomorphism theorem,
+$$
+F/K\cong H,
+$$
+so this is an instance of the quotient in the problem.
+
+If $F\cong H\times K$, then $H$ is isomorphic to a direct summand, hence
+to a subgroup, of the free abelian group $F$. Every subgroup of a free
+abelian group is free, contradicting the Baer--Specker theorem. Thus this
+quotient need not split when an arbitrary infinite product is permitted.
+:::
+
+<1>7. The conclusions are
+$$
+\boxed{
+\begin{aligned}
+&\text{(1) is false;}\\
+&\text{(2) is true for a finite direct product of infinite cyclic groups,}\\
+&\text{and false in general for arbitrary infinite direct products.}
+\end{aligned}
+}
+$$
+
+::: {.proof}
+Step <1>1 disproves statement (1). Step <1>5 proves statement (2) for the
+finite-product reading, and step <1>6 supplies the infinite-product
+counterexample.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 records the required conclusions.
 :::
 :::

@@ -37,6 +37,33 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Berkeley Spring 1997 Problem 18 does not specify whether the direct product is finite
+
+- **Object and need:** `P-BERK97S-18` / `SRC-BERKELEY-PRELIM-SPRING-1997`,
+  Problem 18(2). The source asks whether an extension splits when the quotient
+  is "a direct product of infinite cyclic groups" but does not say whether the
+  product has finitely many factors.
+- **Observed evidence:** the retained Spring 1997 extraction prints exactly
+  that wording. For a finite product, the quotient is `\ZZ^r` and a basis can
+  be lifted to split the quotient map. For an arbitrary infinite product the
+  claim is false in general: the Baer--Specker group
+  `\prod_{n\geq1}\ZZ` is not free, so a free presentation of it cannot split
+  as the quotient times its kernel.
+- **Impact and owner:** a proof that lifts the coordinate generators silently
+  assumes the finite-product (equivalently here, finite-rank free-abelian)
+  reading. The owning card must distinguish that case from a literal arbitrary
+  infinite product.
+- **Uncertainty:** the source's intended convention is unknown.
+  **Searched:** current `assets/`, `sources/`, and Git history for
+  `Spring97`, Spring 1997 solution variants, and the exact statement.
+  **Found:** the exam PDF and its extraction, but no solution packet or prior
+  authoritative solution. **Conclusion:** no authoritative retained solution
+  resolving the convention was found. **Confidence:** high for the current
+  repository. **Gaps:** external Berkeley archives were not searched.
+- **Repair:** `P-BERK97S-18` now proves the finite-product reading and records
+  the arbitrary-infinite-product counterexample. Keep this source-intent note
+  until an authoritative Berkeley solution or convention resolves the wording.
+
 ### Azoff Möbius symmetry problem has a false fourth equivalent condition
 
 - **Object and need:** \`P-AZOFF-C12\` / \`SRC-AZOFF-PROBLEMS-BY-TOPIC\`,
