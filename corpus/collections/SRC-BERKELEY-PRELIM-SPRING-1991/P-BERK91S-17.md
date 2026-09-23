@@ -12,6 +12,9 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-23
 ---
 
 ::: {.problem}
@@ -33,4 +36,52 @@ Prove that
 c_n=0
 \qquad(n<-2).
 \]
+:::
+
+::: {.solution}
+Fix an integer $n$.
+
+<1>1. For every $0<r<r_0$,
+$$
+2\pi\abs{c_n}^2r^{2n+4}
+\le
+r^4\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta.
+$$
+
+::: {.proof}
+The Laurent coefficient formula on the circle $\abs{z}=r$ gives
+$$
+c_nr^n
+=\frac1{2\pi}\int_0^{2\pi}
+f(re^{i\theta})e^{-in\theta}\,d\theta.
+$$
+By the Cauchy--Schwarz inequality,
+$$
+\abs{c_n}^2r^{2n}
+\le
+\frac1{(2\pi)^2}
+\left(\int_0^{2\pi}\abs{f(re^{i\theta})}^2\,d\theta\right)
+\left(\int_0^{2\pi}1\,d\theta\right),
+$$
+which is the claimed inequality after multiplying by $2\pi r^4$.
+:::
+
+<1>2. If $n<-2$, then $c_n=0$.
+
+::: {.proof}
+The hypothesis and step <1>1 give
+$$
+2\pi\abs{c_n}^2r^{2n+4}<M
+\qquad(0<r<r_0).
+$$
+For $n<-2$, the exponent $2n+4$ is negative. If $c_n\ne0$, then the
+left-hand side tends to $+\infty$ as $r\downarrow0$, contradicting
+the uniform upper bound $M$. Hence $c_n=0$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>2 applies to every integer $n<-2$.
+:::
 :::
