@@ -9,10 +9,113 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked against Problem 8B in the retained Fall 2012 Berkeley prelim exam
+    and independently reviewed the retained solution packet F12_Solutions.pdf.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked injectivity of the coefficient-ring map into the quotient and the
+    monic-division uniqueness argument that extracts an inverse in R.
 ---
 
 ::: {.problem}
 Let R be a commutative ring with unit.
 Suppose that there is a monic polynomial $p ( x ) \in R [ x ]$ such that the ideal $( p ( x ) ) \subseteq R [ x ]$ is maximal.
 Prove that R is a field.
+:::
+
+::: {.solution}
+Put
+$$
+S\coloneqq R[x]/(p(x)).
+$$
+Since $(p(x))$ is maximal, $S$ is a field. Let
+$$
+d\coloneqq\deg p.
+$$
+Because a maximal ideal is proper, $p\ne1$, so $d\ge1$.
+
+<1>1. Every class in $S$ has a unique representative of the form
+$$
+a_0+a_1x+\cdots+a_{d-1}x^{d-1},
+\qquad
+a_i\in R.
+$$
+
+::: {.proof}
+Since $p$ is monic, polynomial division by $p$ works over the
+commutative ring $R$: every $f\in R[x]$ can be written
+$$
+f=qp+r
+$$
+with $\deg r<d$, giving existence.
+
+For uniqueness, suppose $r_1-r_2=qp$ with both $r_i$ of degree less
+than $d$. If $q\ne0$, then the leading coefficient of $qp$ is the
+leading coefficient of $q$, because $p$ is monic. Hence
+$$
+\deg(qp)=\deg q+d\ge d,
+$$
+whereas $\deg(r_1-r_2)<d$, a contradiction. Thus $q=0$ and
+$r_1=r_2$.
+:::
+
+<1>2. The natural homomorphism
+$$
+R\longrightarrow S
+$$
+is injective.
+
+::: {.proof}
+If $r\in R$ maps to zero, then the constant polynomial $r$ and the zero
+polynomial represent the same class in $S$. Both have degree less than
+$d$, so uniqueness in step <1>1 gives $r=0$.
+:::
+
+<1>3. Every nonzero element $r\in R$ is a unit in $R$.
+
+::: {.proof}
+Let $0\ne r\in R$. By step <1>2, its image in the field $S$ is
+nonzero, so it has an inverse in $S$. By step <1>1, write that inverse
+uniquely as
+$$
+f=a_0+a_1x+\cdots+a_{d-1}x^{d-1}.
+$$
+Then
+$$
+rf=1
+$$
+in $S$. The polynomial
+$$
+ra_0+ra_1x+\cdots+ra_{d-1}x^{d-1}
+$$
+already has degree less than $d$, as does the constant polynomial $1$.
+By uniqueness in step <1>1,
+$$
+ra_0=1.
+$$
+Thus $a_0\in R$ is an inverse of $r$.
+:::
+
+<1>4. The ring $R$ is a field.
+
+::: {.proof}
+Step <1>3 shows that every nonzero element of the commutative ring
+$R$ is a unit, which is exactly the field condition.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 proves the required conclusion.
+:::
 :::
