@@ -109,6 +109,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Repair:** retain the standard repository definition and treat the printed
   word "embedding" as source errata unless a corrected source edition is found.
 
+### Berkeley Fall 2006 Problem 6A solution packet uses irreducibility circularly
+
+- **Object and need:** `P-BKF06-6A` / `SRC-BERKELEY-PRELIM-FALL-2006`,
+  Problem 6A. The retained solution packet proves that
+  $x^p-x+1$ is irreducible over $\FF_p$ by analyzing subsets of its translated
+  roots.
+- **Observed evidence:** `assets/attachments/extracted/f06solution.md` says
+  that $(\#I)\alpha\in\FF_p$ and then states “Since f is irreducible,
+  $\alpha\notin\FF_p$,” using the desired conclusion to justify the key
+  contradiction. The needed independent fact is immediate instead:
+  $f(a)=a^p-a+1=1$ for every $a\in\FF_p$, so no root of $f$ lies in
+  $\FF_p$.
+- **Impact and owner:** the source solution has a circular proof at the
+  decisive factor-exclusion step. The owning authored card must not inherit
+  that circularity.
+- **Uncertainty:** the circular sentence is present in the retained solution
+  extraction, and the replacement argument is exact. No claim is made that a
+  different edition of the source packet contains the same sentence.
+- **Repair:** `P-BKF06-6A` now proves $\alpha\notin\FF_p$ directly from
+  $f(a)=1$ before applying the root-sum argument. Retain this entry as source
+  errata; the provenance packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
