@@ -9,9 +9,86 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked against Problem 2B in the retained Fall 2013 Berkeley prelim exam
+    and independently reviewed the retained solution packet F13_Solutions.pdf.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked both directions: preservation of connectedness under continuous
+    images and the two-valued function arising from a separation.
 ---
 
 ::: {.problem}
 Say that a metric space $X$ has property (A) if the image of every continuous function $f:X\to\mathbb R$ is an interval, which may be open, closed or half-open.
 Prove that $X$ has property (A) if and only if it is connected.
+:::
+
+::: {.solution}
+<1>1. If $X$ is connected, then $X$ has property (A).
+
+::: {.proof}
+Let
+$$
+f:X\longrightarrow\RR
+$$
+be continuous. A continuous image of a connected space is connected,
+so $f(X)$ is a connected subset of $\RR$. The connected subsets of
+$\RR$ are exactly the intervals. Hence $f(X)$ is an interval, and
+$X$ has property (A).
+:::
+
+<1>2. If $X$ is disconnected, then $X$ does not have property (A).
+
+::: {.proof}
+If $X$ is disconnected, there are nonempty disjoint open sets
+$U,V\subseteq X$ with
+$$
+X=U\cup V.
+$$
+Since each is the complement of the other, both $U$ and $V$ are also
+closed. Define
+$$
+f(x)
+\coloneqq
+\begin{cases}
+0,&x\in U,\\
+1,&x\in V.
+\end{cases}
+$$
+The map $f:X\to\RR$ is continuous because it is constant on the two
+clopen pieces $U$ and $V$. Its image is
+$$
+f(X)=\{0,1\},
+$$
+which is not an interval. Thus property (A) fails.
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+X\text{ has property (A)}
+\iff
+X\text{ is connected}.
+}
+$$
+
+::: {.proof}
+Step <1>1 proves that connectedness implies property (A), while step
+<1>2 proves the contrapositive of the converse.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required equivalence.
+:::
 :::
