@@ -152,6 +152,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   `coker(A) ≅ Z^2 ⊕ Z/3Z`. Retain this entry as source errata; the
   provenance packet itself is not rewritten.
 
+### Berkeley Fall 2006 Problem 1B solution packet omits the factorial in Cauchy's estimate
+
+- **Object and need:** `P-BKF06-1B` / `SRC-BERKELEY-PRELIM-FALL-2006`,
+  Problem 1B. The retained proof uses Cauchy's estimates to force all positive
+  derivatives of an entire function to vanish.
+- **Observed evidence:** `assets/attachments/extracted/f06solution.md`
+  states
+  `|f^(m)(0)| <= (2^n M)/(R_n)^m`. For ordinary derivatives, Cauchy's
+  estimate is
+  `|f^(m)(0)| <= m! M(R_n)/(R_n)^m`; the factor `m!` is missing.
+- **Impact and owner:** the printed inequality is not the standard derivative
+  estimate, although the omitted constant is independent of `n` and the
+  argument still tends to zero after it is restored.
+- **Uncertainty:** verified against the retained extraction and the standard
+  Cauchy integral formula. No normalized-derivative convention is stated in
+  the packet.
+- **Repair:** `P-BKF06-1B` includes the factor `m!` and retains the same
+  limiting argument. Retain this entry as source errata; the provenance
+  packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
