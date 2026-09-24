@@ -314,6 +314,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   disk automorphism and Schwarz's lemma. Retain this entry as source errata;
   the provenance packet itself is not rewritten.
 
+### Berkeley Fall 2015 Problem 9B solution packet misadds the diagonal-reflection fixed points
+
+- **Object and need:** P-BKF15-9B / SRC-BERKELEY-PRELIM-FALL-2015,
+  Problem 9B. The Burnside computation requires the number of nonattacking
+  rook placements fixed by each diagonal reflection.
+- **Observed evidence:** assets/attachments/F15_Solutions.pdf prints the
+  standard involution-counting expression
+  $1+28+210+420+105$ for a diagonal reflection, but states that its value is
+  774. The displayed summands instead total 764. The packet's final answer
+  5282 is consistent with 764, not 774: using 764 gives
+  $(40320+2(764)+2(12)+384)/8=5282$.
+- **Impact and owner:** the intermediate fixed-point total in the official
+  solution is arithmetically false and is incompatible with its own final
+  Burnside average. The owning card must use the correct fixed count.
+- **Uncertainty:** none. The printed summands, their sum, and the final
+  average determine the intended value uniquely.
+- **Repair:** P-BKF15-9B counts diagonal-fixed placements as involutions in
+  $S_8$, obtaining 764, and independently derives all other fixed-point
+  counts before recovering the source's final answer 5282. Retain this
+  entry as source errata; the provenance packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
