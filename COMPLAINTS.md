@@ -246,6 +246,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   Retain this entry as source errata; the provenance packet itself is not
   rewritten.
 
+### Berkeley Fall 2014 Problem 8A solution packet ends with the wrong ambient order
+
+- **Object and need:** P-BKF14-8A / SRC-BERKELEY-PRELIM-FALL-2014,
+  Problem 8A. Part (b) asks for a countably infinite total order whose
+  collection of down-sets has the largest possible cardinality.
+- **Observed evidence:** page 9 of assets/attachments/Fall_2014_Solutions.pdf
+  correctly constructs X=Q, injects R into L(Q), and bounds L(Q) by the
+  power set of Q. Its final sentence then says this proves the result "in
+  the case X=R."
+- **Impact and owner:** R is uncountable and does not satisfy the hypothesis
+  of the problem. The preceding argument proves the intended statement for
+  Q, so importing the final sentence literally would state the wrong
+  example.
+- **Uncertainty:** the preceding construction and both cardinality bounds
+  unambiguously use Q, so the final X=R is a typographical error rather than
+  a competing mathematical interpretation.
+- **Repair:** P-BKF14-8A retains X=Q throughout and proves
+  |L(Q)|=2^{aleph_0}. Retain this entry as source errata; the provenance
+  packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
