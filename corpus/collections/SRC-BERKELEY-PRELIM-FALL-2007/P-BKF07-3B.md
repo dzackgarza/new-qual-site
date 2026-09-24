@@ -14,6 +14,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-13
   note: Checked against the vendored UC Berkeley Fall 2007 preliminary-exam solution packet, which reproduces the problem statement with its solution.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Independently checked the basis extension, the closed product subset, and
+    preservation of closed sets by the induced linear homeomorphism against the
+    vendored solution.
 ---
 
 ::: {.problem}
@@ -23,4 +33,62 @@ Define
 S=\left\{\alpha_1u_1+\cdots+\alpha_ku_k:(\alpha_1,\ldots,\alpha_k)\in A\right\}.
 \]
 Show that \(S\) is closed in \(\mathbb R^n\).
+:::
+
+::: {.solution}
+Extend $u_1,\ldots,u_k$ to a basis
+$u_1,\ldots,u_n$ of $\RR^n$, and let
+$$
+U:\RR^n\longrightarrow\RR^n
+$$
+be the linear map whose matrix has columns $u_1,\ldots,u_n$ in the
+standard basis.
+
+<1>1. The map $U$ is a homeomorphism of $\RR^n$.
+
+::: {.proof}
+The vectors $u_1,\ldots,u_n$ form a basis, so the matrix of $U$ is
+invertible. Hence $U$ and $U^{-1}$ are linear maps between
+finite-dimensional normed spaces and are continuous. Thus $U$ is a
+homeomorphism.
+:::
+
+<1>2. The subset
+$$
+A\times\{0\}\subseteq\RR^k\times\RR^{n-k}=\RR^n
+$$
+is closed.
+
+::: {.proof}
+The set $A$ is closed in $\RR^k$ by hypothesis, and $\{0\}$ is
+closed in $\RR^{n-k}$. Their product is therefore closed in
+$\RR^k\times\RR^{n-k}$.
+:::
+
+<1>3. The image of $A\times\{0\}$ under $U$ is exactly $S$.
+
+::: {.proof}
+For $(\alpha_1,\ldots,\alpha_k,0,\ldots,0)\in A\times\{0\}$,
+the definition of $U$ gives
+$$
+U(\alpha_1,\ldots,\alpha_k,0,\ldots,0)
+=\alpha_1u_1+\cdots+\alpha_ku_k.
+$$
+As $(\alpha_1,\ldots,\alpha_k)$ ranges over $A$, these are exactly
+the elements of $S$.
+:::
+
+<1>4. The set $S$ is closed in $\RR^n$.
+
+::: {.proof}
+By step <1>2, $A\times\{0\}$ is closed. By step <1>1, the
+homeomorphism $U$ maps closed sets to closed sets. Step <1>3 identifies
+its image with $S$, so $S$ is closed.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::
