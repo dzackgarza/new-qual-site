@@ -266,6 +266,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   |L(Q)|=2^{aleph_0}. Retain this entry as source errata; the provenance
   packet itself is not rewritten.
 
+### Berkeley Fall 2015 Problem 5A solution packet reverses a half-plane and skips repeated critical roots
+
+- **Object and need:** P-BKF15-5A / SRC-BERKELEY-PRELIM-FALL-2015,
+  Problem 5A. Part (a) proves the reciprocal-sum convex-hull lemma and part
+  (b) applies it to the zeros of a polynomial derivative.
+- **Observed evidence:** assets/attachments/F15_Solutions.pdf normalizes
+  part (a) to z=0 with every c_i in the half-plane Re(w)>0, then says the
+  numbers 1/(z-c_i) also lie in that half-plane. In fact
+  1/(z-c_i)=-1/c_i has negative real part. The conclusion that their sum
+  cannot vanish remains valid, but the stated orientation is reversed.
+  In part (b), the packet writes p'/p as the reciprocal sum and applies
+  part (a) whenever p'(z)=0 without separating the case p(z)=0; at a
+  repeated root the quotient p'/p is not defined, although that critical
+  point is already a root and hence is trivially in the convex hull.
+- **Impact and owner:** importing the packet literally gives a false
+  half-plane assertion and leaves a gap at repeated roots. The owning card
+  must correct both points while preserving the Gauss--Lucas argument.
+- **Uncertainty:** both issues are visible in the retained PDF text and are
+  mathematically exact. They do not affect the truth of either requested
+  conclusion.
+- **Repair:** P-BKF15-5A uses the correct negative half-plane for the
+  normalized reciprocal terms and treats p(zeta)=0 separately before using
+  the logarithmic derivative when p(zeta) is nonzero. Retain this entry as
+  source errata; the provenance packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
