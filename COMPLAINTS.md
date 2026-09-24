@@ -223,6 +223,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   $(-1)^{n-m}$ times the product of the nonzero eigenvalues. Retain this entry
   as source errata; the provenance packet itself is not rewritten.
 
+### Berkeley Fall 2013 Problem 7B solution packet proves the converse singularity implication
+
+- **Object and need:** P-BKF13-7B / SRC-BERKELEY-PRELIM-FALL-2013,
+  Problem 7B. The source asks to prove that invertibility of $I_m-AB$
+  implies invertibility of $I_n-BA$.
+- **Observed evidence:** page 18 of assets/attachments/F13_Solutions.pdf
+  argues that if $I_m-AB$ is singular, then a nonzero vector fixed by $AB$
+  yields, after applying $B$, a vector fixed by $BA$, so $I_n-BA$ is
+  singular. This is the converse of the singularity implication needed as
+  the contrapositive of the requested statement. The same paragraph also
+  writes the eigenvectors in $\mathbb R^m$ and $\mathbb R^n$ although the
+  matrices are complex.
+- **Impact and owner:** as written, the retained solution does not establish
+  the requested implication. The owning card must supply the missing
+  direction independently.
+- **Uncertainty:** swapping $A$ and $B$ in the same idea immediately gives
+  the needed implication, so the packet may have intended that symmetric
+  argument without stating it. No claim is made about another edition.
+- **Repair:** P-BKF13-7B now starts with a vector fixed by $BA$, applies
+  $A$, and uses invertibility of $I_m-AB$ to force that vector to vanish.
+  Retain this entry as source errata; the provenance packet itself is not
+  rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
