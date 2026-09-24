@@ -199,6 +199,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   $A^{\dim V}=0$. Retain this entry as source errata; the provenance packet
   itself is not rewritten.
 
+### Berkeley Fall 2012 Problem 9B solution packet confuses nullity with algebraic multiplicity
+
+- **Object and need:** P-BKF12-9B / SRC-BERKELEY-PRELIM-FALL-2012,
+  Problem 9B. The retained solution packet factors the characteristic
+  polynomial in order to identify the product of the nonzero eigenvalues.
+- **Observed evidence:** assets/attachments/extracted/F12_Solutions.md states
+  that the characteristic polynomial is
+  $x^m\prod_i(x-\lambda_i)$ "where m is the nullity of M." The exponent of
+  the factor $x$ is instead the algebraic multiplicity of the eigenvalue
+  $0$. For example, the nonzero nilpotent Jordan block
+  $\begin{pmatrix}0&1\\0&0\end{pmatrix}$ has nullity $1$ but characteristic
+  polynomial $x^2$.
+- **Impact and owner:** the packet can identify the wrong coefficient of the
+  characteristic polynomial when the geometric and algebraic multiplicities
+  of $0$ differ. The coefficient argument is correct only after replacing
+  nullity by algebraic multiplicity.
+- **Uncertainty:** the word "nullity" is present in the retained solution
+  extraction. The counterexample is exact; this may be terminological
+  shorthand or a typo in the packet rather than the intended invariant.
+- **Repair:** P-BKF12-9B now defines $m$ as the multiplicity of $0$ as a root
+  of the characteristic polynomial and proves that its $t^m$ coefficient is
+  $(-1)^{n-m}$ times the product of the nonzero eigenvalues. Retain this entry
+  as source errata; the provenance packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
