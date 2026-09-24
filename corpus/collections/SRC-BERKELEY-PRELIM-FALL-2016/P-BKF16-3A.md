@@ -9,6 +9,24 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Independently checked the retained Fall 2016 solution packet: the
+    weighted compact sup norms are finite on K-Lipschitz functions, and a
+    d-Cauchy sequence is uniformly Cauchy on every bounded interval.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked all metric axioms, compact-uniform convergence of a Cauchy
+    sequence, preservation of the K-Lipschitz bound, and convergence in the
+    weighted metric.
 ---
 
 ::: {.problem}
@@ -23,4 +41,287 @@ $$
 converges and defines a metric d on $\mathrm { L i p } _ { K }$
 
 (b) Show that $\mathrm { L i p } _ { K }$ is a complete metric space with this metric.
+:::
+
+::: {.solution}
+For $f,g\in\operatorname{Lip}_K$, put
+$$
+M_j(f,g)
+\coloneqq
+\sup_{z\in[-j,j]}\abs{f(z)-g(z)}.
+$$
+Then
+$$
+d(f,g)
+=
+\sum_{j=1}^{\infty}2^{-j}M_j(f,g).
+$$
+
+<1>1. For every $f,g\in\operatorname{Lip}_K$ and every $j\ge1$,
+$$
+M_j(f,g)
+\le
+\abs{f(0)-g(0)}+2Kj.
+$$
+
+::: {.proof}
+If $z\in[-j,j]$, then
+$$
+\begin{aligned}
+\abs{f(z)-g(z)}
+&\le
+\abs{f(z)-f(0)}
++
+\abs{f(0)-g(0)}
++
+\abs{g(0)-g(z)}\\
+&\le
+K\abs z
++
+\abs{f(0)-g(0)}
++
+K\abs z\\
+&\le
+\abs{f(0)-g(0)}+2Kj.
+\end{aligned}
+$$
+Taking the supremum over $[-j,j]$ proves the claim.
+:::
+
+<1>2. The series defining $d(f,g)$ converges for every
+$f,g\in\operatorname{Lip}_K$.
+
+::: {.proof}
+By step <1>1,
+$$
+0
+\le
+2^{-j}M_j(f,g)
+\le
+2^{-j}\abs{f(0)-g(0)}
++
+2Kj\,2^{-j}.
+$$
+Both
+$$
+\sum_{j=1}^{\infty}2^{-j}
+\qquad\text{and}\qquad
+\sum_{j=1}^{\infty}j2^{-j}
+$$
+converge. The comparison test therefore gives convergence of the
+series defining $d(f,g)$.
+:::
+
+<1>3. The function $d$ is nonnegative and symmetric, and
+$$
+d(f,g)=0
+\quad\Longleftrightarrow\quad
+f=g.
+$$
+
+::: {.proof}
+Each summand is nonnegative and symmetric in $f,g$, so the same is
+true of $d$.
+
+If $f=g$, then every summand is $0$, hence $d(f,g)=0$. Conversely, if
+$d(f,g)=0$, then a sum of nonnegative terms is zero, so
+$$
+M_j(f,g)=0
+$$
+for every $j$. Given any $z\in\RR$, choose an integer
+$j\ge\abs z$. Then
+$$
+\abs{f(z)-g(z)}
+\le
+M_j(f,g)
+=
+0.
+$$
+Thus $f=g$ on $\RR$.
+:::
+
+<1>4. The triangle inequality holds:
+$$
+d(f,h)
+\le
+d(f,g)+d(g,h).
+$$
+
+::: {.proof}
+For every $z\in[-j,j]$,
+$$
+\abs{f(z)-h(z)}
+\le
+\abs{f(z)-g(z)}
++
+\abs{g(z)-h(z)}.
+$$
+Taking suprema gives
+$$
+M_j(f,h)
+\le
+M_j(f,g)+M_j(g,h).
+$$
+Multiply by $2^{-j}$ and sum over $j\ge1$.
+:::
+
+<1>5. Therefore the formula in the problem defines a metric on
+$\operatorname{Lip}_K$.
+
+::: {.proof}
+Step <1>2 proves finiteness, while steps <1>3 and <1>4 prove the metric
+axioms. This completes part (a).
+:::
+
+<1>6. Let $(f_m)$ be a $d$-Cauchy sequence. For every fixed $j\ge1$,
+the sequence $(f_m)$ is uniformly Cauchy on $[-j,j]$.
+
+::: {.proof}
+For all $m,n$,
+$$
+d(f_m,f_n)
+\ge
+2^{-j}M_j(f_m,f_n).
+$$
+Hence
+$$
+M_j(f_m,f_n)
+\le
+2^j d(f_m,f_n).
+$$
+Since the right-hand side tends uniformly to $0$ as $m,n\to\infty$,
+the restrictions to $[-j,j]$ form a uniformly Cauchy sequence.
+:::
+
+<1>7. There is a function
+$$
+g:\RR\to\RR
+$$
+such that
+$$
+f_m\longrightarrow g
+$$
+uniformly on every interval $[-j,j]$.
+
+::: {.proof}
+For each fixed $j$, step <1>6 and completeness of $\RR$ imply that
+the uniformly Cauchy sequence of real-valued functions on $[-j,j]$
+has a uniform limit, call it $g_j$.
+
+If $j<k$, both $g_j$ and the restriction of $g_k$ to $[-j,j]$ are
+pointwise limits of the same sequence $(f_m)$, so they agree. The
+compatible functions $g_j$ therefore define one function
+$g:\RR\to\RR$, and the convergence to $g$ is uniform on every
+$[-j,j]$.
+:::
+
+<1>8. The limit function $g$ belongs to
+$$
+\operatorname{Lip}_K.
+$$
+
+::: {.proof}
+Take $x,y\in\RR$ and choose $j$ with
+$$
+x,y\in[-j,j].
+$$
+By step <1>7,
+$$
+f_m(x)\to g(x),
+\qquad
+f_m(y)\to g(y).
+$$
+Since every $f_m$ is $K$-Lipschitz,
+$$
+\abs{f_m(x)-f_m(y)}
+\le
+K\abs{x-y}.
+$$
+Passing to the limit gives
+$$
+\abs{g(x)-g(y)}
+\le
+K\abs{x-y}.
+$$
+:::
+
+<1>9. For each fixed $n$ and $j$,
+$$
+M_j(f_n,f_m)
+\longrightarrow
+M_j(f_n,g)
+$$
+as $m\to\infty$.
+
+::: {.proof}
+For any functions $u,v,w$ on a set,
+$$
+\left|
+\sup\abs{u-v}
+-
+\sup\abs{u-w}
+\right|
+\le
+\sup\abs{v-w}.
+$$
+Apply this on $[-j,j]$ with
+$$
+u=f_n,\qquad v=f_m,\qquad w=g.
+$$
+The right-hand side tends to $0$ by the uniform convergence in step
+<1>7.
+:::
+
+<1>10. One has
+$$
+d(f_n,g)\longrightarrow0.
+$$
+
+::: {.proof}
+Let $\varepsilon>0$. Since $(f_m)$ is $d$-Cauchy, choose $N$ such
+that
+$$
+d(f_n,f_m)<\varepsilon
+$$
+whenever $m,n\ge N$.
+
+Fix $n\ge N$. By step <1>9 and Fatou's lemma for the nonnegative
+series,
+$$
+\begin{aligned}
+d(f_n,g)
+&=
+\sum_{j=1}^{\infty}
+2^{-j}
+\lim_{m\to\infty}M_j(f_n,f_m)\\
+&\le
+\liminf_{m\to\infty}
+\sum_{j=1}^{\infty}
+2^{-j}M_j(f_n,f_m)\\
+&=
+\liminf_{m\to\infty}d(f_n,f_m)\\
+&\le
+\varepsilon.
+\end{aligned}
+$$
+Thus $d(f_n,g)\to0$.
+:::
+
+<1>11. The metric space
+$$
+\boxed{(\operatorname{Lip}_K,d)}
+$$
+is complete.
+
+::: {.proof}
+Every $d$-Cauchy sequence has, by steps <1>7--<1>8, a limit
+$g\in\operatorname{Lip}_K$, and step <1>10 shows convergence to that
+limit in the metric $d$. This proves part (b).
+:::
+
+<1>12. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves part (a), and step <1>11 proves part (b).
+:::
 :::
