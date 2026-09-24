@@ -14,6 +14,22 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Independently checked both recorded source appearances. The inner Laurent
+    expansion is valid on the punctured disk 0<|z|<1 and the outer expansion
+    on |z|>1, obtained from the corresponding geometric series.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked both geometric-series substitutions, the powers after multiplying
+    by 1/z or 1/z^3, and the exact annuli of convergence.
 ---
 
 ::: {.problem}
@@ -22,4 +38,130 @@ Let $f(z)=1/(z(1+z^2))$.
 (a) Find a Laurent series representing $f$ for $|z|<1$.
 
 (b) Find another Laurent series representing $f$ for $|z|>1$.
+:::
+
+::: {.solution}
+<1>1. On
+$$
+0<|z|<1,
+$$
+one has
+$$
+\frac1{1+z^2}
+=
+\sum_{n=0}^{\infty}(-1)^n z^{2n}.
+$$
+
+::: {.proof}
+For $|z|<1$, one has $|z^2|<1$, so the geometric-series identity
+$$
+\frac1{1-w}
+=
+\sum_{n=0}^{\infty}w^n
+$$
+applied to $w=-z^2$ gives
+$$
+\frac1{1+z^2}
+=
+\sum_{n=0}^{\infty}(-z^2)^n
+=
+\sum_{n=0}^{\infty}(-1)^n z^{2n}.
+$$
+The puncture at $z=0$ is required because $f$ itself has a pole there.
+:::
+
+<1>2. Therefore, for
+$$
+0<|z|<1,
+$$
+the Laurent series of $f$ is
+$$
+\boxed{
+f(z)
+=
+\sum_{n=0}^{\infty}(-1)^n z^{2n-1}.
+}
+$$
+
+::: {.proof}
+By step <1>1,
+$$
+\begin{aligned}
+f(z)
+&=
+\frac1z\frac1{1+z^2}\\
+&=
+\frac1z
+\left(
+\sum_{n=0}^{\infty}(-1)^n z^{2n}
+\right)\\
+&=
+\sum_{n=0}^{\infty}(-1)^n z^{2n-1}.
+\end{aligned}
+$$
+:::
+
+<1>3. On
+$$
+|z|>1,
+$$
+one has
+$$
+\frac1{1+z^{-2}}
+=
+\sum_{n=0}^{\infty}(-1)^n z^{-2n}.
+$$
+
+::: {.proof}
+If $|z|>1$, then
+$$
+|z^{-2}|<1.
+$$
+Applying the geometric series to $w=-z^{-2}$ gives the displayed
+identity.
+:::
+
+<1>4. Therefore, for
+$$
+|z|>1,
+$$
+the Laurent series of $f$ is
+$$
+\boxed{
+f(z)
+=
+\sum_{n=0}^{\infty}(-1)^n z^{-2n-3}.
+}
+$$
+
+::: {.proof}
+Rewrite
+$$
+f(z)
+=
+\frac1{z(1+z^2)}
+=
+\frac1{z^3}\frac1{1+z^{-2}}.
+$$
+Using step <1>3,
+$$
+\begin{aligned}
+f(z)
+&=
+\frac1{z^3}
+\left(
+\sum_{n=0}^{\infty}(-1)^n z^{-2n}
+\right)\\
+&=
+\sum_{n=0}^{\infty}(-1)^n z^{-2n-3}.
+\end{aligned}
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>2 and <1>4 give the two requested Laurent expansions and
+their domains.
+:::
 :::
