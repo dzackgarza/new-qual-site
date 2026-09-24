@@ -380,6 +380,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   parenthetical value. Retain this entry as source errata; the provenance
   document itself is not rewritten.
 
+### Berkeley Spring 1981 Problem 4 falsely claims two-sided global existence
+
+- **Object and need:** P-BKS81-4 / SRC-BERKELEY-PRELIM-SPRING-1981,
+  Problem 4. Part (1) asks for a solution defined for every
+  $t\in\mathbb R$ from every initial condition.
+- **Observed evidence:** along every solution,
+  $s(t)=x(t)^2+y(t)^2$ satisfies $s'=2s(1-s)$. For the initial condition
+  $(x_0,y_0)=(2,0)$, hence $s(0)=4$, the forced solution is
+  $s(t)=4/(4-3e^{-2t})$. Its denominator vanishes at
+  $t_*=\frac12\log(3/4)<0$, and $s(t)\to+\infty$ as $t\downarrow t_*$.
+- **Impact and owner:** Part (1) is false as printed. The forward-time
+  statement is true for every initial condition, and Part (2) remains true:
+  every nonzero initial condition has $s(t)\to1$ as $t\to\infty$.
+- **Uncertainty:** none. The scalar radial equation follows by direct
+  differentiation and has the displayed explicit solution.
+- **Repair:** P-BKS81-4 preserves the printed question, gives the finite
+  backward-time blow-up counterexample, proves the corrected forward-time
+  existence statement, proves Part (2), and records the exact erratum on the
+  card. Retain this entry as source errata; the provenance packet itself is
+  not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
