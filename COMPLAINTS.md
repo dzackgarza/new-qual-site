@@ -172,6 +172,33 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   limiting argument. Retain this entry as source errata; the provenance
   packet itself is not rewritten.
 
+### Berkeley Fall 2012 Problem 7B solution packet uses a non-invariant quotient
+
+- **Object and need:** P-BKF12-7B / SRC-BERKELEY-PRELIM-FALL-2012,
+  Problem 7B. The retained solution packet must prove that a linear map
+  satisfying $AB-BA=A$ is nilpotent.
+- **Observed evidence:** assets/attachments/extracted/F12_Solutions.md
+  first correctly computes
+  $BAv=(\lambda-1)Av$ for a $B$-eigenvector $v$, but its final induction
+  then says that $A$ is nilpotent on $V/\CC v$. The displayed relation only
+  shows that $Av$ is zero or belongs to the $(\lambda-1)$-eigenspace; it does
+  not show $Av\in\CC v$. Thus $\CC v$ need not be $A$-invariant, so $A$
+  need not induce an operator on that quotient and the induction step is not
+  defined.
+- **Impact and owner:** the source solution does not establish the requested
+  nilpotence. The owning authored card must supply an independent argument
+  rather than inherit the quotient induction.
+- **Uncertainty:** the invalid quotient step is present in the retained
+  solution extraction. The preceding eigenvector calculation is correct, and
+  no claim is made that another edition of the solution packet has the same
+  final paragraph.
+- **Repair:** P-BKF12-7B now uses the generalized eigenspace decomposition
+  of $B$ and the identity
+  $(B-(\lambda-1)I)A=A(B-\lambda I)$ to show that $A$ shifts generalized
+  eigenspaces from $\lambda$ to $\lambda-1$ and hence satisfies
+  $A^{\dim V}=0$. Retain this entry as source errata; the provenance packet
+  itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
