@@ -291,6 +291,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   the logarithmic derivative when p(zeta) is nonzero. Retain this entry as
   source errata; the provenance packet itself is not rewritten.
 
+### Berkeley Fall 2015 Problem 4B is explicitly retracted by its source solution packet
+
+- **Object and need:** P-BKF15-4B / SRC-BERKELEY-PRELIM-FALL-2015,
+  Problem 4B. The printed problem defines a Schur function to be
+  nonconstant and asks to prove that the displayed Schur-algorithm transform
+  is again a Schur function.
+- **Observed evidence:** assets/attachments/F15_Solutions.pdf explicitly
+  states "the problem as stated is incorrect" and gives f(z)=z, for which
+  the transform is the constant function -1. The packet then supplies a
+  corrected formulation: allow Schur functions themselves to be constant,
+  retain the hypothesis that the input f is nonconstant, and prove only
+  holomorphy and the bound |g|<=1 for the transform.
+- **Impact and owner:** the source-faithful printed statement is false. A
+  solution cannot prove the requested nonconstancy of the output; the
+  owning card must expose the counterexample and distinguish it from the
+  corrected theorem supplied by the same source packet.
+- **Uncertainty:** none about the source's intent: the retained official
+  solution packet contains the correction and explains the grading rule.
+- **Repair:** P-BKF15-4B preserves the printed problem, gives f(z)=z as the
+  counterexample, and then proves the source-corrected formulation using the
+  disk automorphism and Schwarz's lemma. Retain this entry as source errata;
+  the provenance packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
