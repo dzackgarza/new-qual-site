@@ -359,6 +359,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   this entry as source errata; the provenance packet itself is not
   rewritten.
 
+### Berkeley Fall 2016 Problem 1B prints the unit-ball volume as the sphere surface area
+
+- **Object and need:** P-BKF16-1B / SRC-BERKELEY-PRELIM-FALL-2016,
+  Problem 1B. The problem defines $S_n$ as the $(n-1)$-dimensional surface
+  area of the unit sphere in $\mathbb R^n$ and supplies example values.
+- **Observed evidence:** assets/attachments/F16_Exam.pdf prints
+  $S_2=2\pi$ and $S_3=4\pi/3$. The latter is the volume of the unit ball in
+  $\mathbb R^3$; the surface area of its unit sphere is $4\pi$. The formula
+  requested in part (a), together with $C=\sqrt\pi$ and the gamma
+  recurrence, likewise yields $S_3=4\pi$.
+- **Impact and owner:** the parenthetical example contradicts the stated
+  meaning of $S_n$. The posed parts (a)--(d) remain solvable because none
+  requires using the incorrect $S_3$ value.
+- **Uncertainty:** none. The two standard geometric quantities are distinct,
+  and the problem's own formula recovers the correct surface area.
+- **Repair:** P-BKF16-1B preserves the source-faithful statement, carries a
+  mathematical erratum remark identifying the corrected value $S_3=4\pi$,
+  and its solution derives the requested formulas without using the false
+  parenthetical value. Retain this entry as source errata; the provenance
+  document itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
