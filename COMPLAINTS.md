@@ -335,6 +335,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   counts before recovering the source's final answer 5282. Retain this
   entry as source errata; the provenance packet itself is not rewritten.
 
+### Berkeley Fall 2016 Problem 4A solution packet omits the actual leading term at the indentation
+
+- **Object and need:** P-BKF16-4A / SRC-BERKELEY-PRELIM-FALL-2016,
+  Problem 4A. The retained contour solution analyzes
+  $(e^{3iz}-3e^{iz})/z^3$ on a small upper semicircle around zero.
+- **Observed evidence:** assets/attachments/F16_Solutions.pdf states that
+  the "leading term" of $e^{3iz}-3e^{iz}$ is
+  $-9z^2/2+3z^2/2=-3z^2$. In fact the expansion begins
+  $-2-3z^2-4iz^3+\cdots$. Thus the integrand also contains the more singular
+  term $-2/z^3$. The packet also prints the first real-axis segment as
+  $[-R,r]$ rather than the intended $[-R,-r]$.
+- **Impact and owner:** the stated local expansion is false and, without a
+  separate calculation, does not justify replacing the small-arc integral
+  by that of $-3/z$. The final value survives because the integral of
+  $-2/z^3$ over the symmetric clockwise semicircle is exactly zero.
+- **Uncertainty:** none. The Taylor expansion and the two semicircle
+  integrals are explicit, and the final source value $3\pi/4$ is consistent
+  with the corrected calculation.
+- **Repair:** P-BKF16-4A uses the correct half-annular contour, expands the
+  numerator through the omitted constant term, proves its $-2/z^3$
+  contribution vanishes, and then obtains the same $3\pi/4$ value. Retain
+  this entry as source errata; the provenance packet itself is not
+  rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
