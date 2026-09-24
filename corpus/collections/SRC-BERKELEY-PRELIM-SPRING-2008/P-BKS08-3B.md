@@ -13,7 +13,17 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
-  note: Checked against the vendored UC Berkeley Spring 2008 preliminary-exam solution packet, which reproduces the problem statement with its solution.
+  note: >-
+    Checked against the vendored UC Berkeley Spring 2008 preliminary-exam
+    solution packet. The packet reproduces the problem statement but does not
+    print a solution for Problem 3B.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: Independently checked via the action of G on the left cosets of H.
 ---
 
 ::: {.problem}
@@ -23,4 +33,92 @@ N\subseteq H
 \qquad\text{and}\qquad
 [G:N]\le n!.
 \]
+:::
+
+::: {.solution}
+Let
+$$
+X\coloneqq G/H
+$$
+be the set of left cosets of $H$ in $G$. By hypothesis,
+$\abs{X}=n$.
+
+<1>1. Left multiplication defines a homomorphism
+$$
+\varphi:G\longrightarrow\operatorname{Sym}(X)\cong S_n.
+$$
+
+::: {.proof}
+For $g\in G$, define
+$$
+\varphi(g)(xH)=gxH.
+$$
+This is well defined on cosets and is a permutation of $X$, with
+inverse $\varphi(g^{-1})$. Moreover,
+$$
+\varphi(g_1g_2)(xH)
+=g_1g_2xH
+=\varphi(g_1)\bigl(\varphi(g_2)(xH)\bigr),
+$$
+so $\varphi$ is a homomorphism.
+:::
+
+<1>2. Set
+$$
+N\coloneqq\ker\varphi.
+$$
+Then $N\trianglelefteq G$.
+
+::: {.proof}
+The kernel of a group homomorphism is normal.
+:::
+
+<1>3. One has
+$$
+N\subseteq H.
+$$
+
+::: {.proof}
+If $g\in N$, then $\varphi(g)$ fixes every coset in $X$, in
+particular the coset $H$. Thus
+$$
+gH=H,
+$$
+which is equivalent to $g\in H$.
+:::
+
+<1>4. The index of $N$ satisfies
+$$
+[G:N]\le n!.
+$$
+
+::: {.proof}
+By the first isomorphism theorem,
+$$
+G/N\cong\operatorname{im}\varphi.
+$$
+Since $\operatorname{im}\varphi$ is a subgroup of
+$\operatorname{Sym}(X)$ and $\abs{X}=n$,
+$$
+[G:N]
+=\abs{\operatorname{im}\varphi}
+\le\abs{S_n}
+=n!.
+$$
+:::
+
+<1>5. Therefore $G$ contains a normal subgroup $N$ with
+$$
+\boxed{N\subseteq H\quad\text{and}\quad[G:N]\le n!}.
+$$
+
+::: {.proof}
+Steps <1>2--<1>4 establish all three required properties.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the desired conclusion.
+:::
 :::
