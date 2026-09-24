@@ -401,6 +401,28 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   card. Retain this entry as source errata; the provenance packet itself is
   not rewritten.
 
+### Berkeley Spring 1981 Problem 11 source PDF is missing the contour figure
+
+- **Object and need:** P-BKS81-11 / SRC-BERKELEY-PRELIM-SPRING-1981,
+  Problem 11. The requested contour integral depends on the closed curve
+  $C$ shown in the source.
+- **Observed evidence:** page 2 of assets/attachments/Spring81.pdf contains
+  the problem text followed, in place of the contour, by the literal
+  typesetting error `../Fig/Pr/Sp81-11.ps not found`. Thus the retained PDF
+  itself does not specify which of the poles $0$ and $1$ are enclosed or
+  with what winding numbers.
+- **Impact and owner:** no unique numerical value can be recovered from the
+  retained source. The owning card must not invent the missing curve; it can
+  determine the integral exactly in terms of the winding numbers of $C$.
+- **Uncertainty:** none about the retained PDF. An external PostScript figure
+  may have accompanied the original exam, but it is absent from the retained
+  source packet.
+- **Repair:** P-BKS81-11 records the missing-source obstruction and computes
+  the residue formula
+  $2\pi i[-\operatorname{Ind}_C(0)+(e-1)\operatorname{Ind}_C(1)]$.
+  Retain this entry as source errata; the provenance packet itself is not
+  rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
