@@ -13,9 +13,60 @@ audit:
   by: chatgpt
   date: 2026-09-12
   note: Checked against Problem 2A of the retained Berkeley Fall 2010 preliminary-exam solution packet f10solutions.pdf.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: Checked the finite-function pigeonhole argument with positive exponents.
 ---
 
 ::: {.problem}
 Let $R$ be a finite ring.
 Prove that there are positive integers $m$ and $n$ with $m>n$ such that every $x\in R$ satisfies $x^m=x^n$.
+:::
+
+::: {.solution}
+<1>1. For each positive integer $k$, define a function
+$$
+f_k\colon R\longrightarrow R,
+\qquad
+f_k(x)=x^k.
+$$
+
+::: {.proof}
+Positive powers are defined using the multiplication in $R$, so each
+$f_k$ is a well-defined function from the finite set $R$ to itself.
+:::
+
+<1>2. There exist positive integers $m>n$ such that $f_m=f_n$.
+
+::: {.proof}
+If $\abs{R}=q$, then there are only $q^q$ functions from $R$ to $R$.
+The infinite sequence
+$$
+f_1,f_2,f_3,\ldots
+$$
+therefore contains two equal functions by the pigeonhole principle.
+Choose distinct positive indices $m,n$ with $f_m=f_n$, and relabel them
+so that $m>n$.
+:::
+
+<1>3. For these $m>n$, every $x\in R$ satisfies
+$$
+\boxed{x^m=x^n}.
+$$
+
+::: {.proof}
+The equality $f_m=f_n$ from step <1>2 is equality as functions on all of
+$R$. Evaluating it at an arbitrary $x\in R$ gives
+$x^m=f_m(x)=f_n(x)=x^n$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is exactly the required common power identity.
+:::
 :::
