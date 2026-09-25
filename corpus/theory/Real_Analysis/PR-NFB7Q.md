@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NFB7Q
 kind: proposition
 title: Dense subspaces of $L^p$ for $1\leq p<\infty$
+slogan: 'Simple, step, compactly supported continuous, and smooth compactly supported functions are dense in $L^p$ for $p<\infty$.'
 classification:
   areas:
   - real-analysis
