@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QX5QU
 kind: theorem
 title: Kronecker--Weber theorem
+slogan: 'Every finite abelian extension of $\QQ$ lies inside a cyclotomic field.'
 classification:
   areas:
   - algebra
