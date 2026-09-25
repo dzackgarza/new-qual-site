@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GSDKO
 kind: proposition
 title: Orbit-stabilizer bijection for a transitive action
+slogan: 'A transitive $G$-set is the coset space of any point stabilizer.'
 classification:
   areas:
   - algebra
