@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-7KTA6
 kind: proposition
 title: Convexity bound $(a+b)^p \leq 2^{p-1}(a^p+b^p)$
+slogan: 'Convexity gives $(a+b)^p\le 2^{p-1}(a^p+b^p)$ for $p\ge1$.'
 classification:
   areas:
   - real-analysis
