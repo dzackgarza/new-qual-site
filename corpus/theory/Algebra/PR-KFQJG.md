@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-KFQJG
 kind: proposition
 title: Separability of a compositum
+slogan: 'A compositum is separable exactly when both constituent algebraic extensions are separable.'
 classification:
   areas:
   - algebra
