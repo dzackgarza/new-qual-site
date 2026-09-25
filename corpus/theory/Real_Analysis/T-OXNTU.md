@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-OXNTU
 kind: theorem
 title: Mean value theorem and Cauchy's mean value theorem
+slogan: 'Some interior derivative realizes the secant slope; Cauchy gives the two-function version.'
 classification:
   areas:
   - real-analysis
