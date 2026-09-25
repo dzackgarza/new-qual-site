@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-GJ6NR
 kind: theorem
 title: Fundamental theorem of Galois theory
+slogan: 'Intermediate fields and subgroups correspond contravariantly; normal subgroups detect Galois subextensions.'
 prompts:
 - State the fundamental theorem of Galois theory.
 classification:
