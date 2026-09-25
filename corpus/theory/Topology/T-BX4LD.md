@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BX4LD
 kind: theorem
 title: Lefschetz fixed point theorem
+slogan: 'A nonzero Lefschetz number forces a fixed point.'
 classification:
   areas:
   - topology
