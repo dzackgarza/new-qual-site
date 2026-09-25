@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5FGA7
 kind: proposition
 title: A simple group with a proper subgroup of index $n$ embeds in $S_n$
+slogan: 'A proper index-$n$ subgroup of a simple group yields a faithful action on $n$ cosets.'
 classification:
   areas:
   - algebra
