@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZCKLJ
 kind: proposition
 title: Separable splitting fields are Galois
+slogan: 'A finite separable splitting field is Galois, with degree equal to the number of base-field automorphisms.'
 classification:
   areas:
   - algebra
