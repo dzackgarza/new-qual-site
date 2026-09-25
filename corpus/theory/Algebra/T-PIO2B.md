@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-PIO2B
 kind: theorem
 title: Maschke's theorem
+slogan: 'If $\ch(k)\nmid\abs G$, every finite-dimensional $k[G]$-module splits into simple summands.'
 classification:
   areas:
   - algebra
