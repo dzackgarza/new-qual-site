@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-52GNK
 kind: theorem
 title: Urysohn's lemma
+slogan: 'Normality is exactly the ability to separate disjoint closed sets by a continuous $[0,1]$-valued function.'
 prompts:
 - State Urysohn's lemma.
 - Which separation property does Urysohn's lemma characterise, and by what function?
