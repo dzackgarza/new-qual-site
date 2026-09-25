@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-2C3SZ
 kind: proposition
 title: Young's convolution inequality
+slogan: 'Convolution sends $L^p\times L^q$ into the exponent dictated by $1/r=1/p+1/q-1$.'
 prompts:
 - What is Young's inequality?
 - State Young's inequality for convolutions.
