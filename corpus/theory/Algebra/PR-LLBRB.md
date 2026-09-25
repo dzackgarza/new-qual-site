@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LLBRB
 kind: proposition
 title: Inclusions among fields, Euclidean domains, PIDs, UFDs, and integral domains
+slogan: 'Field implies Euclidean implies PID implies UFD implies domain, with every implication strict.'
 classification:
   areas:
   - algebra
