@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-XUVZY
 kind: proposition
 title: Minkowski's inequality
+slogan: '$L^p$ norms satisfy the triangle inequality.'
 prompts:
 - State Minkowski's inequality.
 - What is Minkowski's inequality?
