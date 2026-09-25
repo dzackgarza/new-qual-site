@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JL5JP
 kind: proposition
 title: Polygon models for surfaces
+slogan: 'Every compact connected surface comes from a standard polygon word, with unpaired edges recording boundary components.'
 classification:
   areas:
   - topology
