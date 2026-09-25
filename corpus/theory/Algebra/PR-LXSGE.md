@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LXSGE
 kind: proposition
 title: The Galois group of an irreducible polynomial is a transitive subgroup
+slogan: 'Irreducibility makes the Galois action on roots faithful and transitive.'
 classification:
   areas:
   - algebra
