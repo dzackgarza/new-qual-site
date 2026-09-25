@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5KGVV
 kind: theorem
 title: Equality of left cosets
+slogan: 'Two left cosets are equal exactly when their representatives differ by an element of the subgroup.'
 classification:
   areas:
   - algebra
