@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-7
 kind: theorem
 title: Weierstrass approximation and Stone--Weierstrass theorems
+slogan: 'Polynomials approximate continuous functions on intervals; separating self-adjoint subalgebras approximate all of $C(K)$.'
 classification:
   areas:
   - real-analysis
