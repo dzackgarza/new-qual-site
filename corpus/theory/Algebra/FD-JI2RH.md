@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FD-JI2RH
 kind: proposition
 title: Injective maps are the maps with a left inverse
+slogan: A map from a nonempty set is one-to-one exactly when it splits on the left.
 prompts:
 - What condition on inverses characterises an injective function?
 classification:
