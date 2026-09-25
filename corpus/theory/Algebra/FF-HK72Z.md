@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-HK72Z
 kind: fact
 title: Descartes' rule of signs
+slogan: Sign changes bound positive roots, and overcount them only by an even number.
 prompts:
 - State Descartes' rule of signs.
 classification:
