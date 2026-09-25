@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-OXN3Y
 kind: theorem
 title: Gauss' lemma
+slogan: 'A factorization over the fraction field descends to the UFD without changing factor degrees.'
 prompts:
 - State Gauss' lemma.
 classification:
