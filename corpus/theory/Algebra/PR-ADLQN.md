@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ADLQN
 kind: proposition
 title: Prime subfield and isomorphism type of a finite field
+slogan: 'Every finite field has prime-power order $p^n$ and is isomorphic to $\FF_{p^n}$.'
 classification:
   areas:
   - algebra
