@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-Y5KNM
 kind: lemma
 title: The minimal polynomial is the invariant factor of highest degree
+slogan: 'The largest invariant factor is the minimal polynomial.'
 classification:
   areas:
   - algebra
