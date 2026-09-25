@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DJZLY
 kind: proposition
 title: Isomorphism theorems for modules
+slogan: 'Module quotients follow four laws: kernel–image, diamond, quotient tower, and submodule correspondence.'
 classification:
   areas:
   - algebra
