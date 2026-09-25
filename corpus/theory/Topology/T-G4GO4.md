@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-G4GO4
 kind: theorem
 title: The tube lemma
+slogan: 'Compactness thickens an open neighborhood of a slice into a product neighborhood.'
 classification:
   areas:
   - topology
