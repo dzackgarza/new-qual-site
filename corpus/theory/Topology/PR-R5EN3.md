@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-R5EN3
 kind: proposition
 title: Covering spaces induce injections on $\pi_1$
+slogan: 'Covering maps inject fundamental groups, with image detected by closed lifts of loops.'
 classification:
   areas:
   - topology
