@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UQ3XJ
 kind: proposition
 title: Order of $\GL_n(\FF_q)$
+slogan: 'Count invertible matrices by choosing an ordered basis one independent column at a time.'
 classification:
   areas:
   - algebra
