@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UZVC3
 kind: proposition
 title: Limits and integrals need not commute
+slogan: 'Pointwise convergence alone does not justify passing a limit through an integral.'
 classification:
   areas:
   - real-analysis
