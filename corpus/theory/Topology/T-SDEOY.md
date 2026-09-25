@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SDEOY
 kind: theorem
 title: Whitehead's theorem
+slogan: 'For connected CW complexes, weak homotopy equivalence already means homotopy equivalence.'
 classification:
   areas:
   - topology
