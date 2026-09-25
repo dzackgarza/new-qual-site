@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-YNKCZ
 kind: theorem
 title: Recognizing internal direct products of finitely many subgroups
+slogan: 'Normal factors that generate $G$ and meet the product of the others trivially form an internal direct product.'
 classification:
   areas:
   - algebra
