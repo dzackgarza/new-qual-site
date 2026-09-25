@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-GNU7E
 kind: fact
 title: Borel--Cantelli lemma
+slogan: 'Summable event probabilities give finitely many occurrences almost surely; under independence, divergent sums give infinitely many almost surely.'
 prompts:
 - What is the Borel-Cantelli lemma?
 classification:
