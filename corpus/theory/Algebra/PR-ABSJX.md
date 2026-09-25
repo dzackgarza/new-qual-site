@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ABSJX
 kind: proposition
 title: An algebraic extension of an algebraic extension is algebraic
+slogan: 'Algebraicity is transitive in towers of field extensions.'
 classification:
   areas:
   - algebra
