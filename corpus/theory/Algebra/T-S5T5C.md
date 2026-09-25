@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-S5T5C
 kind: theorem
 title: 'Sylow''s third theorem: the number of Sylow subgroups'
+slogan: 'The Sylow count divides the prime-to-$p$ part, is $1$ modulo $p$, and equals a normalizer index.'
 classification:
   areas:
   - algebra
