@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QJZDT
 kind: proposition
 title: Product CW structure
+slogan: 'Product CW chains are the graded tensor product, with the usual signed Leibniz boundary.'
 classification:
   areas:
   - topology
