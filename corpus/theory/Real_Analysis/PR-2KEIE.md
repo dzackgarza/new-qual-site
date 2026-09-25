@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-2KEIE
 kind: proposition
 title: $L^1$ functions are finite almost everywhere
+slogan: 'Finite $L^1$ norm forces an integrable function to be finite almost everywhere.'
 classification:
   areas:
   - real-analysis
