@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6NDTF
 kind: proposition
 title: Measurable slices
+slogan: 'Measurable subsets of a product have measurable almost-everywhere slices, whose measures integrate to the total measure.'
 classification:
   areas:
   - real-analysis
