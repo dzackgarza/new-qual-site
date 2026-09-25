@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TNFL4
 kind: proposition
 title: Integration by parts for indefinite integrals of $L^1$ functions
+slogan: 'Indefinite integrals of $L^1$ functions satisfy the usual integration-by-parts identity.'
 classification:
   areas:
   - real-analysis
