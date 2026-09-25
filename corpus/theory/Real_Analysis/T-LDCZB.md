@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LDCZB
 kind: theorem
 title: Riesz representation theorem for Hilbert spaces
+slogan: 'Every continuous linear functional on a Hilbert space is inner product with a unique vector.'
 classification:
   areas:
   - real-analysis
