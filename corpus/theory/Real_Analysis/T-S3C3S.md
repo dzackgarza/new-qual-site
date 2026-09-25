@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-S3C3S
 kind: theorem
 title: Lebesgue differentiation theorem
+slogan: 'Local averages of an integrable function recover the function almost everywhere.'
 classification:
   areas:
   - real-analysis
