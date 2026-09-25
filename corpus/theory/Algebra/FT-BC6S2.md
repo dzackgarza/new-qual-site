@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-BC6S2
 kind: theorem
 title: Characterizations of diagonalizability
+slogan: 'Diagonalizable means an eigenbasis, equivalently a squarefree split minimal polynomial.'
 prompts:
 - What conditions each characterise diagonalizability of a square matrix?
 classification:
