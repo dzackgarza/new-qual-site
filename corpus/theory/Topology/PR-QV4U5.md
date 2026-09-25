@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QV4U5
 kind: proposition
 title: Inclusion-exclusion for Euler characteristic
+slogan: 'Euler characteristic obeys inclusion-exclusion for finite CW subcomplexes.'
 classification:
   areas:
   - topology
