@@ -711,6 +711,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS12-7A restores the source index $n\geq0$ and proves the natural
   boundary using $f(z)=z+f(z^2)$ and the dense dyadic roots of unity.
 
+### Berkeley Spring 2013 Problem 3B source solution omits the permitted case k=0
+
+- **Object and need:** P-BKS13-3B / SRC-BERKELEY-PRELIM-SPRING-2013,
+  Problem 3B. The exam assumes only that $k\neq n^2$ for
+  $n=1,2,3,\ldots$, so $k=0$ remains allowed.
+- **Observed evidence:** the retained Spring 2013 exam states exactly that
+  restriction. The retained solution writes the constant Fourier term as
+  $a_0/(2k)$, which is undefined when $k=0$.
+- **Impact and owner:** the printed solution handles only $k\neq0$. When
+  $k=0$, periodic solvability forces $a_0=0$, all nonconstant Fourier
+  coefficients are still determined by division by $-n^2$, and the constant
+  Fourier coefficient of $f$ is arbitrary.
+- **Uncertainty:** none; the exam statement and solution packet were checked
+  directly and disagree on this permitted case.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS13-3B treats $k\neq0$ and $k=0$ separately and proves convergence
+  of the resulting Fourier series in both cases.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
