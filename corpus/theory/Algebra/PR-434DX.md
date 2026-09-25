@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-434DX
 kind: proposition
 title: Recurrence for the partition numbers $P_k(n)$ and $P(n)$
+slogan: 'Partitions into $k$ parts split according to whether every part exceeds $1$ or some part equals $1$.'
 classification:
   areas:
   - algebra
