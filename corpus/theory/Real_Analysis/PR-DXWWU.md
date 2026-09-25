@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DXWWU
 kind: proposition
 title: Translation and dilation of Lebesgue measurable sets
+slogan: 'Lebesgue measure is translation invariant and scales by $\delta^n$ under dilation.'
 classification:
   areas:
   - real-analysis
