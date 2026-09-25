@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JSXGR
 kind: theorem
 title: When open maps are homeomorphisms
+slogan: 'A continuous bijection is a homeomorphism exactly when it is open.'
 classification:
   areas:
   - topology
