@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-SM63J
 kind: fact
 title: Compact surfaces with Euler characteristic 0
+slogan: 'Compact connected surfaces with $\chi=0$ are the torus, Klein bottle, annulus, or Möbius band according to boundary and orientability.'
 prompts:
 - Which surfaces have Euler characteristic 0?
 classification:
