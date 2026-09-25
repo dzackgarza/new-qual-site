@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IQYTA
 kind: proposition
 title: AM--GM inequality for two numbers
+slogan: 'For two nonnegative numbers, the geometric mean never exceeds the arithmetic mean.'
 classification:
   areas:
   - real-analysis
