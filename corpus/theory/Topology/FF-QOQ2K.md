@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QOQ2K
 kind: fact
 title: Homology of the Klein bottle
+slogan: 'The Klein bottle has $H_0=\ZZ$, $H_1=\ZZ\oplus\ZZ/2$, and no higher integral homology.'
 prompts:
 - What is the homology of the Klein bottle, degree by degree?
 classification:
