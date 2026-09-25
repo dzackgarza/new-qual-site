@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NKZBT
 kind: proposition
 title: Term-by-term integration of series of functions
+slogan: 'Nonnegative or absolutely $L^1$-summable series may be integrated term by term.'
 classification:
   areas:
   - real-analysis
