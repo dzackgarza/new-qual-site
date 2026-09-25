@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-M5BHD
 kind: theorem
 title: A continuous bijection from a compact space to a Hausdorff space is a homeomorphism
+slogan: 'Compact-to-Hausdorff continuous bijections are automatically homeomorphisms.'
 prompts:
 - When is a continuous bijection from a compact space to a Hausdorff space a homeomorphism?
 classification:
