@@ -3,6 +3,7 @@ schema: qual/card@1
 id: D-5KDNB
 kind: theorem
 title: Alexander duality
+slogan: 'The reduced homology of a complement in $S^n$ is the shifted reduced cohomology of the subset.'
 classification:
   areas:
   - topology
