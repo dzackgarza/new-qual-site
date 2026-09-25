@@ -627,6 +627,27 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS09-9A keeps the established integer $d_{2m+1}I_m$ throughout
   and derives $d_{2m+1}\geq4^m=2^{2m}$. Retain this entry as source errata.
 
+### Berkeley Spring 2009 Problem 1B source solution omits the case n=1
+
+- **Object and need:** P-BKS09-1B / SRC-BERKELEY-PRELIM-SPRING-2009,
+  Problem 1B. The statement does not impose $n\geq2$, so its odd case
+  includes $n=1$.
+- **Observed evidence:** page 4 of assets/attachments/s09solutions.pdf begins
+  its proof with “Since $f^{[n-1]}(a)=0$” and then applies a Taylor formula
+  with an $(n-1)$st-derivative remainder. For $n=1$, the displayed vanishing
+  would assert $f(a)=0$, which is not a hypothesis, and that remainder formula
+  does not give the claimed argument.
+- **Impact and owner:** the retained source proof establishes the intended
+  parity conclusion for $n\geq2$ but leaves the permitted case $n=1$
+  untreated. In that case $f'(a)>0$ directly implies values below $f(a)$ on
+  the left of $a$ and above $f(a)$ on the right.
+- **Uncertainty:** low. The retained statement has no $n\geq2$ qualifier.
+  If an unstated convention was intended to impose it, the extra case is
+  redundant rather than harmful.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS09-1B treats $n=1$ separately and then gives the Taylor argument
+  for $n\geq2$.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
