@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-5
 kind: theorem
 title: Discontinuities of monotone functions
+slogan: 'Monotone functions have only countably many discontinuities, and every one is a jump.'
 classification:
   areas:
   - real-analysis
