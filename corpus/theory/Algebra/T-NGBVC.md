@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-NGBVC
 kind: theorem
 title: Finite extensions are algebraic
+slogan: 'Finite vector-space dimension forces every field element to satisfy a polynomial.'
 classification:
   areas:
   - algebra
