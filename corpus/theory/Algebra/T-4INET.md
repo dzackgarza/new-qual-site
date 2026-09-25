@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4INET
 kind: theorem
 title: Nilpotent groups via the lower central series
+slogan: 'A group is nilpotent exactly when its lower central series reaches the identity.'
 classification:
   areas:
   - algebra
