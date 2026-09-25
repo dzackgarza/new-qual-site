@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5BFVS
 kind: theorem
 title: Duals of $L^p$ spaces
+slogan: 'For $1\le p<\infty$, continuous linear functionals on $L^p$ are integration against $L^q$ functions.'
 prompts:
 - State the Riesz representation theorem for $L^p(X)\dual$.
 classification:
