@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-V4MOK
 kind: proposition
 title: Differentiation under the integral sign
+slogan: 'An integrable dominating derivative lets differentiation pass through the integral.'
 classification:
   areas:
   - real-analysis
