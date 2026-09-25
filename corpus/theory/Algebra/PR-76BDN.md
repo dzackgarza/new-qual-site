@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-76BDN
 kind: proposition
 title: Maximal, prime, and radical ideals via their quotient rings
+slogan: 'Maximal, prime, and radical ideals are exactly those with field, domain, and reduced quotients, respectively.'
 classification:
   areas:
   - algebra
