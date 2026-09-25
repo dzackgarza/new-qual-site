@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-UEXBK
 kind: theorem
 title: Closed subsets of compact spaces are compact
+slogan: 'Closed subsets of compact spaces are compact.'
 classification:
   areas:
   - topology
