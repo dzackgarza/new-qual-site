@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JTFMW
 kind: proposition
 title: The Cantor set is closed and has empty interior
+slogan: 'The Cantor set is closed but contains no interval.'
 classification:
   areas:
   - real-analysis
