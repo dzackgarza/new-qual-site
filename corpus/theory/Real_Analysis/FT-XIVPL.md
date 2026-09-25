@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-XIVPL
 kind: theorem
 title: Lusin's theorem
+slogan: 'A measurable function on a finite-measure set is continuous outside a set of arbitrarily small measure.'
 prompts:
 - State Lusin's theorem.
 classification:
