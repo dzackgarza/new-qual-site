@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-YCTNC
 kind: proposition
 title: Separability is transitive in towers
+slogan: 'An algebraic tower is separable from bottom to top exactly when both stages are separable.'
 classification:
   areas:
   - algebra
