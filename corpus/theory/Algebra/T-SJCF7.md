@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SJCF7
 kind: theorem
 title: Cayley--Hamilton theorem
+slogan: 'Every matrix annihilates its own characteristic polynomial.'
 classification:
   areas:
   - algebra
