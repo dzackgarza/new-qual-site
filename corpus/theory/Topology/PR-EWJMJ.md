@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-EWJMJ
 kind: proposition
 title: $\pi_1$ detects simple connectivity
+slogan: 'A path-connected space is simply connected exactly when its fundamental group is trivial.'
 classification:
   areas:
   - topology
