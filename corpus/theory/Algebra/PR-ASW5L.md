@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ASW5L
 kind: proposition
 title: An ideal of an integral domain is free if and only if it is principal
+slogan: 'Over an integral domain, an ideal is free as a module exactly when it is principal.'
 classification:
   areas:
   - algebra
