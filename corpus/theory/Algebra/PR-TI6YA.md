@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TI6YA
 kind: proposition
 title: Rational canonical form
+slogan: 'Invariant factors determine a unique block diagonal form built from companion matrices.'
 classification:
   areas:
   - algebra
