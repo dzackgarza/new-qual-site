@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-P6NHI
 kind: proposition
 title: Comparison test for series with nonnegative terms
+slogan: 'For nonnegative terms, convergence passes downward and divergence passes upward under comparison.'
 classification:
   areas:
   - real-analysis
