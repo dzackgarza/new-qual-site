@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-EN5H4
 kind: theorem
 title: $S_n$ is solvable if and only if $n\leq 4$
+slogan: 'Symmetric groups are solvable exactly through degree $4$.'
 classification:
   areas:
   - algebra
