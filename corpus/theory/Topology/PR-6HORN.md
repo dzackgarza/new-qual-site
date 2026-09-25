@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6HORN
 kind: proposition
 title: Homotopy type of knot complements
+slogan: 'Knot complements in $S^3$ are aspherical, and deleting a nullhomologous knot contributes a meridional $\ZZ$ to first homology.'
 classification:
   areas:
   - topology
