@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-RVIGS
 kind: theorem
 title: Fermat's little theorem
+slogan: 'Modulo a prime $p$, every integer satisfies $a^p\equiv a$.'
 prompts:
 - State Fermat's little theorem.
 classification:
