@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DLPTR
 kind: proposition
 title: Every free $R$-module admits a basis
+slogan: 'Free modules come with bases.'
 classification:
   areas:
   - algebra
