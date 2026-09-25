@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-O4UD3
 kind: theorem
 title: Heine--Cantor theorem
+slogan: 'Continuous maps on compact metric spaces are automatically uniformly continuous.'
 classification:
   areas:
   - real-analysis
