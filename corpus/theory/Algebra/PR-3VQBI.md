@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3VQBI
 kind: proposition
 title: Characterizations of separability for finite extensions
+slogan: 'A finite extension is separable exactly when separable generators exist and the separable degree equals the degree.'
 classification:
   areas:
   - algebra
