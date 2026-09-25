@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-YJJSY
 kind: proposition
 title: $L^1$-summable series converge almost everywhere and in $L^1$
+slogan: 'Summable $L^1$ norms force absolute almost-everywhere convergence and convergence in $L^1$.'
 classification:
   areas:
   - real-analysis
