@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6PENU
 kind: proposition
 title: Suspension isomorphism for the cohomology of spheres
+slogan: 'Reduced cohomology of spheres shifts down by one under desuspension.'
 classification:
   areas:
   - topology
