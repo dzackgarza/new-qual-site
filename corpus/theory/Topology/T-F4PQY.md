@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-F4PQY
 kind: theorem
 title: Deck transformations and normal covering spaces
+slogan: 'Normal covers correspond to normal subgroups, and the deck group is the normalizer quotient $N_G(H)/H$.'
 classification:
   areas:
   - topology
