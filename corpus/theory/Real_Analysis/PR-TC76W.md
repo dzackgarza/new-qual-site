@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TC76W
 kind: proposition
 title: Counterexamples among uniform, pointwise, almost everywhere and $L^1$ convergence
+slogan: 'Uniform implies pointwise implies almost everywhere, but no other implication among these and $L^1$ convergence holds in general.'
 classification:
   areas:
   - real-analysis
