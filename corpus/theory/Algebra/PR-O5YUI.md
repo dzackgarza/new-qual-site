@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-O5YUI
 kind: proposition
 title: $V\dual\tensor_k W\cong\Hom_k(V,W)$ for finite-dimensional $V$ and $W$
+slogan: 'Finite-dimensional linear maps are dual vectors tensored with target vectors.'
 classification:
   areas:
   - algebra
