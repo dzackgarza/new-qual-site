@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-EF5IX
 kind: theorem
 title: Lifting criterion for covering spaces
+slogan: 'A map lifts to a cover exactly when its fundamental group lands in the covering subgroup.'
 classification:
   areas:
   - topology
