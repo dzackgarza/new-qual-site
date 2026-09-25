@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-N7YFV
 kind: proposition
 title: $L^1$ embeds isometrically in $(L^\infty)^*$ but not surjectively
+slogan: '$L^1$ sits isometrically inside $(L^\infty)^*$, but does not exhaust that dual in general.'
 classification:
   areas:
   - real-analysis
