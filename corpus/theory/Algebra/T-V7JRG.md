@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-V7JRG
 kind: theorem
 title: Zorn's lemma
+slogan: 'Upper bounds for every chain force a maximal element.'
 classification:
   areas:
   - algebra
