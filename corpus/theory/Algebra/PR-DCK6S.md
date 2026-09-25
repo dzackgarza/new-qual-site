@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DCK6S
 kind: proposition
 title: Splitting field of $x^m-1$ over $\QQ$ and its Galois group
+slogan: 'The $m$th roots of unity generate $\QQ(\zeta_m)$, whose Galois group is $(\ZZ/m\ZZ)^\times$.'
 classification:
   areas:
   - algebra
