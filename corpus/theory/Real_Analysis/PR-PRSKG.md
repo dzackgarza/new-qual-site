@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PRSKG
 kind: proposition
 title: Young's convolution inequality with an $L^1$ factor
+slogan: 'Convolution with an $L^1$ function acts boundedly on every $L^p$.'
 classification:
   areas:
   - real-analysis
