@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-C3SN4
 kind: fact
 title: Groups of order 9
-slogan: Every group of order $9$ is abelian: cyclic or elementary abelian.
+slogan: 'Every group of order $9$ is abelian: cyclic or elementary abelian.'
 prompts:
 - What are the groups of order 9?
 classification:
