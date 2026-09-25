@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3APOT
 kind: proposition
 title: $\pi_1$ of a wedge sum
+slogan: 'Under the usual local hypotheses, wedge sums turn fundamental groups into free products.'
 classification:
   areas:
   - topology
