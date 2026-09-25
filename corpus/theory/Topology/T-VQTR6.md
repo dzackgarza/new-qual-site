@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-VQTR6
 kind: theorem
 title: Hairy ball theorem
+slogan: 'Even-dimensional spheres have no nowhere-vanishing tangent vector field.'
 classification:
   areas:
   - topology
