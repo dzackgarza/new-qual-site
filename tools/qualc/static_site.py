@@ -203,6 +203,7 @@ PAGE_ASSETS = """<link rel="stylesheet" href="{prefix}styles.css">
   <script defer src="{prefix}app.js"></script>"""
 
 REPOSITORY_URL = "https://github.com/dzackgarza/new-qual-site"
+PUBLISHED_SITE_URL = "https://dzackgarza.github.io/new-qual-site"
 GITHUB_ICON = """<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
         <path fill="currentColor" d="
           M8 0C3.58 0 0 3.64 0 8.13c0 3.59 2.29 6.64 5.47 7.71
@@ -848,6 +849,7 @@ def page_document(
       <a class="site-brand" href="{prefix}index.html">Qual Corpus</a>
       <div class="site-links">
         <a href="{prefix}problems.html">Problems</a>
+        <a href="{prefix}problems.html?solution=unsolved">Unsolved</a>
         <a href="{prefix}exams.html">Sources</a>
         <a href="{prefix}guides.html">Guides</a>
         <a href="{prefix}wiki/index.html">Wiki</a>

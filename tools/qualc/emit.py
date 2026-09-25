@@ -25,7 +25,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
-from urllib.parse import urlencode, urlsplit
+from urllib.parse import quote, urlencode, urlsplit
 
 import panflute as pf
 import yaml
@@ -45,6 +45,8 @@ from .publication import (
     load_publications,
 )
 from .static_site import (
+    PUBLISHED_SITE_URL,
+    REPOSITORY_URL,
     AssetCatalog,
     AuthoredPage,
     Crumb,
@@ -479,7 +481,7 @@ def _lamport_paragraph(paragraph: pf.Para | pf.Plain, state: dict[int, str]) -> 
     if not kept:
         return paragraph
     if len(kept) == 1 and not kept[0][2]:
-        return paragraph.walk(_lamport_refs)
+        return cast(pf.Block, paragraph.walk(_lamport_refs))
     return _lamport_group(kept, state)
 
 
@@ -1023,6 +1025,7 @@ class CardPageData:
     facets: dict[str, list[sqlite3.Row]]
     dependencies: dict[str, list[sqlite3.Row]]
     backlinks: dict[str, list[sqlite3.Row]]
+    solved: frozenset[str]
 
 
 def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
@@ -1086,11 +1089,19 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
             backlinks[card_id] = []
         backlinks[card_id].append(row)
 
+    solved = frozenset(
+        row["card_id"]
+        for row in _rows(
+            con,
+            "select distinct card_id from sections where section_kind='solution'",
+        )
+    )
     return CardPageData(
         terms=terms,
         facets=facets,
         dependencies=dependencies,
         backlinks=backlinks,
+        solved=solved,
     )
 
 
@@ -1127,6 +1138,31 @@ def _appearance_items(appearances: list[Appearance]) -> str:
     if not appearances:
         return ""
     return "<ul>" + "".join(f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>' for appearance in appearances) + "</ul>"
+
+
+def _solution_submission_json(
+    card: sqlite3.Row,
+    appearances: list[Appearance],
+) -> list[dict]:
+    """A prefilled GitHub issue link for one problem without a solution."""
+    source_appearance = "\n".join(appearance.title for appearance in appearances)
+    if not source_appearance:
+        source_appearance = "None"
+    card_id = str(card["id"])
+    card_url = f"{PUBLISHED_SITE_URL}/tag/{quote(card_id, safe='')}.html"
+    query = urlencode(
+        {
+            "template": "solution.yml",
+            "title": f"[solution] {card_id} — {card['title']}",
+            "card-id": card_id,
+            "card-title": str(card["title"]),
+            "source-appearance": source_appearance,
+            "card-url": card_url,
+        }
+    )
+    href = html.escape(f"{REPOSITORY_URL}/issues/new?{query}", quote=True)
+    block = f'<section class="solution-contribution"><h2>Solution submission</h2><p><a href="{href}">Submit a solution on GitHub</a></p></section>'
+    return [{"t": "RawBlock", "c": ["html", block]}]
 
 
 def _relation_group(key: str, heading: str, items: str) -> str:
@@ -1310,6 +1346,13 @@ def asked_json(
     body = _lamport_json_blocks(body)
     _rename_json(body)
     body.extend(_prompts_json(card))
+    if card["id"] not in data.solved:
+        body.extend(
+            _solution_submission_json(
+                card,
+                source_collections.get(card["id"], []),
+            )
+        )
     body.extend(
         _relation_groups_json(
             data,
@@ -2126,7 +2169,7 @@ def problem_browser_page(
         _practice_controls(),
         _data_table(
             "problem-table",
-            ("Problem", "Source", "Topics", "Area", "Source type", "Institution", "Year", "Collection", "Section", "Order"),
+            ("Problem", "Source", "Topics", "Area", "Source type", "Institution", "Year", "Collection", "Section", "Solution", "Order"),
         ),
     ]
 
@@ -2179,6 +2222,7 @@ def collection_problem_index(
                     "collection_title": row["collection_title"],
                     "collection_section": row["section_name"] or "",
                     "collection_locator": locator,
+                    "solution_status": "Solved" if row["problem_id"] in data.solved else "Unsolved",
                 },
                 "filters": filters,
             }
@@ -2218,6 +2262,7 @@ def problem_table_data(
                 "years": years,
                 "collections": collections,
                 "section": "",
+                "solutionStatus": "Solved" if card["id"] in data.solved else "Unsolved",
                 "order": _listing_sort(data, card),
             }
         )

@@ -15,6 +15,12 @@
       .getAll(key)
       .flatMap((value) => value.split(","))
       .filter(Boolean);
+  const solutionLabel = (value) => {
+    const normalized = value.toLowerCase();
+    if (normalized === "solved") return "Solved";
+    if (normalized === "unsolved") return "Unsolved";
+    return value;
+  };
   const escapeHtml = (value) =>
     String(value)
       .replaceAll("&", "&amp;")
@@ -59,6 +65,7 @@
           years: item.filters.year || [],
           collections: [source.title],
           section: item.meta.collection_section || "",
+          solutionStatus: item.meta.solution_status,
           order,
         }));
       }
@@ -83,6 +90,7 @@
               (collection) => payload.collectionNames[collection] || collection,
             ),
       ),
+      pane(9, values("solution").map(solutionLabel)),
     ].filter(Boolean);
 
     const table = new DataTable(problemTable, {
@@ -91,7 +99,7 @@
       pageLength: 50,
       lengthMenu: [25, 50, 100],
       search: { search: params.get("q") || "" },
-      order: [[9, "asc"]],
+      order: [[10, "asc"]],
       columns: [
         {
           data: "title",
@@ -141,6 +149,11 @@
           searchPanes: { orthogonal: "sp", show: !collectionMode },
         },
         { data: "section", visible: false, searchable: false },
+        {
+          data: "solutionStatus",
+          visible: false,
+          searchPanes: { show: true },
+        },
         { data: "order", visible: false, searchable: false },
       ],
       rowGroup: collectionMode ? { dataSrc: "section" } : false,

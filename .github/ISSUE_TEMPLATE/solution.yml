@@ -1,0 +1,35 @@
+name: Submit a solution
+description: Submit a solution for one unsolved problem in the corpus.
+title: '[solution] '
+body:
+  - type: input
+    id: card-id
+    attributes:
+      label: Card ID
+    validations:
+      required: true
+  - type: input
+    id: card-title
+    attributes:
+      label: Card title
+    validations:
+      required: true
+  - type: textarea
+    id: source-appearance
+    attributes:
+      label: Source appearance
+    validations:
+      required: true
+  - type: input
+    id: card-url
+    attributes:
+      label: Card URL
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution
+      description: Give the solution, or link to a draft containing it.
+    validations:
+      required: true

@@ -8,9 +8,11 @@ import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 import pytest
-from conftest import fixture_repo, run_qualc
+import yaml
+from conftest import ROOT, fixture_repo, run_qualc
 from qualc.emit import mathjax_header
 from qualc.static_site import Listing, StandardPage, build_asset_catalog, write_page
 from test_invariants import read_html
@@ -458,6 +460,58 @@ def test_problem_browser_uses_datatables_searchpanes(tmp_path: Path) -> None:
     assert "listing-filters" not in markup
     assert len(page.root.find_all("button", id="practice-sample")) == 1
     assert len(page.root.find_all("button", id="practice-print")) == 1
+
+
+def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submission(
+    tmp_path: Path,
+) -> None:
+    work = fixture_repo(tmp_path)
+    legacy = work / "corpus" / "EXE-CENTER.md"
+    (work / "corpus" / "P-CENTER.md").write_text(legacy.read_text().replace("id: EXE-CENTER", "id: P-CENTER", 1))
+    exam = work / "corpus" / "SRC-UGA-FIX.md"
+    exam.write_text(
+        exam.read_text().replace(
+            "  area: algebra\n  date:\n",
+            ("  area: algebra\n  problems:\n  - id: P-CENTER\n    comment: Problem 7\n  date:\n"),
+        )
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    home_links = LinkCollector()
+    home_links.feed((site / "index.html").read_text())
+    assert "problems.html?solution=unsolved" in home_links.hrefs
+
+    rows = {row["id"]: row for row in json.loads((site / "problems.json").read_text())["rows"]}
+    assert rows["PRB-INDEXP"]["solutionStatus"] == "Solved"
+    assert rows["P-CENTER"]["solutionStatus"] == "Unsolved"
+
+    script = (site / "assets" / "scripts" / "catalog-tables.js").read_text()
+    assert 'values("solution")' in script
+    assert 'data: "solutionStatus"' in script
+
+    unsolved = LinkCollector()
+    unsolved.feed((site / "tag" / "P-CENTER.html").read_text())
+    submission = [href for href in unsolved.hrefs if href.startswith("https://github.com/dzackgarza/new-qual-site/issues/new?")]
+    assert len(submission) == 1
+    query = parse_qs(urlsplit(submission[0]).query)
+    assert query["template"] == ["solution.yml"]
+    assert query["card-id"] == ["P-CENTER"]
+    assert query["card-title"] == ["The centre of a nontrivial $p\\dash$group"]
+    assert query["source-appearance"] == ["UGA Algebra qualifying exam, Spring 2019, Problem 7"]
+    assert query["card-url"] == ["https://dzackgarza.github.io/new-qual-site/tag/P-CENTER.html"]
+
+    solved = LinkCollector()
+    solved.feed((site / "tag" / "PRB-INDEXP.html").read_text())
+    assert not any(href.startswith("https://github.com/dzackgarza/new-qual-site/issues/new?") for href in solved.hrefs)
+
+
+def test_solution_issue_form_exposes_every_prefilled_card_field() -> None:
+    issue_form = yaml.safe_load((ROOT / ".github" / "ISSUE_TEMPLATE" / "solution.yml").read_text())
+    fields = {item["id"] for item in issue_form["body"] if item["type"] in {"input", "textarea"}}
+    assert {"card-id", "card-title", "source-appearance", "card-url", "solution"} <= fields
 
 
 def test_problem_pagination_is_library_owned(tmp_path: Path) -> None:
