@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-O44GI
 kind: theorem
 title: Covering space actions and their quotients
+slogan: 'A properly discontinuous group action produces a normal cover whose deck group is the acting group.'
 classification:
   areas:
   - topology
