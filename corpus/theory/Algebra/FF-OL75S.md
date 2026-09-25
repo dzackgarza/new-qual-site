@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-OL75S
 kind: fact
 title: Burnside's orbit-counting formula
+slogan: Orbit count is the average fixed-point count.
 prompts:
 - State Burnside's orbit-counting formula.
 classification:
