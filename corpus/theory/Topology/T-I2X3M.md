@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-I2X3M
 kind: theorem
 title: Cellular approximation theorem
+slogan: 'Every map of CW complexes is homotopic to a cellular map, relative to any already-cellular subcomplex.'
 classification:
   areas:
   - topology
