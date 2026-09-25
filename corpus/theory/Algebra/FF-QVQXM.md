@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QVQXM
 kind: fact
 title: One-step subgroup test
+slogan: Nonempty and closed under $ab^{-1}$ already means subgroup.
 prompts:
 - State the one-step subgroup test.
 classification:
