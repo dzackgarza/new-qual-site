@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UHWNM
 kind: proposition
 title: Borel measures finite on balls are outer regular by open sets and inner regular by closed sets
+slogan: 'Borel measures finite on balls can approximate measurable sets from outside by open sets and inside by closed sets.'
 classification:
   areas:
   - real-analysis
