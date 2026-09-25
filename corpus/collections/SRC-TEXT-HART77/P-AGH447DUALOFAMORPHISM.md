@@ -517,7 +517,7 @@ $$
 =
 [r^2]_X.
 $$
-The standard embedding $\ZZ\to\End(X)$, $m\mapsto[m]_X$, is injective, so
+The standard embedding $\ZZ\to\Endo(X)$, $m\mapsto[m]_X$, is injective, so
 $d=r^2$. This proves part (e).
 :::
 
