@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-EF2MZ
 kind: theorem
 title: 'Sylow''s second theorem: Sylow subgroups are conjugate'
+slogan: 'All Sylow $p$-subgroups are conjugate; uniqueness is exactly normality.'
 classification:
   areas:
   - algebra
