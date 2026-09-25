@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-3WWKN
 kind: theorem
 title: Characterizations of finite Galois extensions
+slogan: 'Finite Galois means separable splitting, fixed field $F$, full automorphism count, or normal plus separable.'
 prompts:
 - What four conditions each characterise a Galois extension $K/F$?
 classification:
