@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-L7LNZ
 kind: proposition
 title: Uniform limits commute with integrals on finite measure spaces
+slogan: 'On finite measure spaces, uniform convergence forces convergence of integrals.'
 classification:
   areas:
   - real-analysis
