@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WDPF7
 kind: proposition
 title: Orthogonal complement of a sum of subspaces
+slogan: 'Orthogonal complement turns sums into intersections.'
 classification:
   areas:
   - algebra
