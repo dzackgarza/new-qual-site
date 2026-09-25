@@ -15,13 +15,17 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
-The substantive current frontier is [Author solutions](#7-author-solutions), selected from the repository-owned unsolved queue in source order. `copy-policy-repair` is a separate non-gating presentation-convergence workstream; it must not serialize solution authorship because solutions still mutate the prose population.
+The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits. Its route is `unsolved-contribution` and `copy-policy-repair`, then the audit rounds. [Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
 
-- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed). Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics. Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence. **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
+- **`unsolved-contribution`**. **Needs:** none. Make unsolved problems a first-class destination in the site: a reader can reach them from the main navigation and browse or filter them the way the problem index already allows. Every unsolved card offers a way to submit a solution as a GitHub issue on this repository, through an issue form under `.github/ISSUE_TEMPLATE/` whose link prepopulates the card ID, title, source appearance, and card URL, so a submission names exactly the card it answers. [formalization-corpus](https://github.com/dzackgarza/formalization-corpus) already does this for source leads (`site/contribute.html` linking `issues/new?template=source-lead.yml`); follow that mechanism rather than inventing another. **Acceptance:** on a built site, the unsolved view is reachable from navigation and lists exactly the corpus's unsolved cards, and following a card's submission link opens the issue form with that card's fields already filled.
+
+- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed). Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics. This includes the copy `unsolved-contribution` adds. Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence. **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
+
+- **`audited-deployment`**. **Needs:** `unsolved-contribution`, `copy-policy-repair`. Push so `pages.yml` deploys, then audit the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds. Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies and checks their mathematics for incorrect facts, statements, and solutions; it is a reading of the site, not a lint or crawl count. Every finding becomes a node in this DAG, named by its card or page, with its immediate Needs and acceptance, and `audited-deployment` gains it as a prerequisite. A round with any finding resets the count; repair the injected nodes, redeploy, and start again. **Acceptance:** three consecutive rounds against the same deployed revision (its stamped commit) find nothing.
 
 ### Solutions after the milestone
 
-The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `publication-milestone`. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
+The solution tasks in [Author solutions](#7-author-solutions) carry stable IDs and immediate **Needs** lists; `select` needs `audited-deployment`. Each instance is keyed by its actual card ID: `select:P-…`, `read:P-…`, `source-review:P-…`, `prove:P-…`, `attach:P-…`, and `commit:P-…`. Names in Needs refer to the same card's instance.
 
 This is a finite DAG for each selected collection's authored card population.
 Returning to selection creates an instance for a different card, not a back-edge from commit to the same select node.
@@ -99,7 +103,7 @@ Closed. The recorded owner decisions were resolved; current owner decisions belo
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- [ ] **`select`**. **Needs:** `publication-milestone`. Select one unsolved card.
+- [ ] **`select`**. **Needs:** `audited-deployment`. Select one unsolved card.
 
 - [ ] **`read`**. **Needs:** `select`. Read the problem and its source.
 

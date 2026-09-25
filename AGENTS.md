@@ -916,7 +916,7 @@ workflow are deliberately separate:
   corpus, so read the candidate card before selecting it. A card leaves the list only by gaining
   a solution; the boxes are a measurement, not a ledger.
 - `TODO.md` §7, "Author solutions", together with issue #2 — the authored
-  repeating loop, which begins after `publication-milestone`. Select one unsolved card, read the problem and its source,
+  repeating loop, which begins after the `audited-deployment` milestone in `TODO.md`. Select one unsolved card, read the problem and its source,
   independently verify any retained source solution, write a complete
   Lamport-style structured proof in a `solution` section on that same problem
   card in the layout `STYLE-08` fixes, and commit it before selecting the next
