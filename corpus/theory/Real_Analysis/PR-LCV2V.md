@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LCV2V
 kind: proposition
 title: Pointwise limits do not preserve boundedness or sup norms
+slogan: 'Pointwise convergence can lose boundedness and need not preserve sup norms.'
 classification:
   areas:
   - real-analysis
