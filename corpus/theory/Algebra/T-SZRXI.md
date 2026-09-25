@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SZRXI
 kind: theorem
 title: Lagrange's theorem
+slogan: 'A finite group is partitioned into equal-sized cosets, so subgroup order times index equals group order.'
 classification:
   areas:
   - algebra
