@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6TCSJ
 kind: proposition
 title: Properties of $\Spec A$ read off $A$
+slogan: 'Affine-scheme properties are ring-theoretic: reduced, irreducible, integral, connected, Noetherian, and one-point all read off $A$.'
 classification:
   areas:
   - algebraic-geometry
