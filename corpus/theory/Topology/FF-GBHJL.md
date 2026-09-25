@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-GBHJL
 kind: fact
 title: Classification of closed surfaces
+slogan: 'Every connected closed surface is uniquely a sphere, an orientable connected sum of tori, or a nonorientable connected sum of projective planes.'
 prompts:
 - How are closed surfaces classified as a monoid on $\RP^2$, the Klein bottle and the torus?
 classification:
