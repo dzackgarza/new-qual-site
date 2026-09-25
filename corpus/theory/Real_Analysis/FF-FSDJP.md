@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-FSDJP
 kind: fact
 title: Small tails and absolute continuity for $L^1$ functions
+slogan: '$L^1$ mass is small both far out in space and on sets of sufficiently small measure.'
 prompts:
 - What does small tails mean? Absolute continuity?
 classification:
