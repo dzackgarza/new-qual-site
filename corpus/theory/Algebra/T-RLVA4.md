@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RLVA4
 kind: theorem
 title: Correspondence theorem for groups
+slogan: 'Subgroups of $G/N$ are exactly the subgroups of $G$ that contain $N$.'
 classification:
   areas:
   - algebra
