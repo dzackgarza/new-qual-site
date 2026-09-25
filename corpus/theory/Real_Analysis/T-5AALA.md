@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5AALA
 kind: theorem
 title: Parseval's theorem for orthonormal families
+slogan: 'For an orthonormal family, completeness, Parseval equality, and norm-convergent Fourier expansion are equivalent.'
 classification:
   areas:
   - real-analysis
