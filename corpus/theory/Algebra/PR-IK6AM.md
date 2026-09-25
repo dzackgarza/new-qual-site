@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IK6AM
 kind: proposition
 title: Characterization of perfect fields
+slogan: 'Perfect means characteristic zero, or Frobenius-surjective in positive characteristic.'
 classification:
   areas:
   - algebra
