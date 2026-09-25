@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IGLFV
 kind: proposition
 title: Classification of groups of order $p^2$
+slogan: 'Every group of order $p^2$ is abelian: cyclic or $C_p\times C_p$.'
 classification:
   areas:
   - algebra
