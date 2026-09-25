@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CGFCU
 kind: theorem
 title: Lusin's theorem
+slogan: 'A measurable function on a finite-measure set becomes continuous after discarding arbitrarily little measure.'
 classification:
   areas:
   - real-analysis
