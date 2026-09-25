@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-IBDAT
 kind: fact
 title: Lying over and going up for integral extensions
+slogan: Integral extensions make spectra surjective and lift ascending chains of primes.
 prompts:
 - What is the going up theorem?
 classification:
