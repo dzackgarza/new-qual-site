@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6WMSR
 kind: proposition
 title: Weak $M$-test
+slogan: 'Pointwise summable majorants give pointwise absolute convergence.'
 classification:
   areas:
   - real-analysis
