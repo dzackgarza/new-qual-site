@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BDH3V
 kind: proposition
 title: Rewriting a Klein bottle summand
+slogan: 'A projective-plane plus Klein-bottle summand is the same surface as a projective-plane plus torus summand.'
 classification:
   areas:
   - topology
