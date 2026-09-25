@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-D5Q4S
 kind: fact
 title: Orientable standard manifolds
+slogan: 'Spheres, tori, orientable surfaces, odd-dimensional real projective spaces, and lens spaces are orientable.'
 prompts:
 - Which of the standard manifolds are orientable?
 classification:
