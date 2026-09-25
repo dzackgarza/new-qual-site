@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-HE5SL
 kind: corollary
 title: Burnside's lemma
+slogan: Orbit count is the average fixed-point count.
 classification:
   areas:
   - algebra
