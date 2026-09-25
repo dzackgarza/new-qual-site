@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ENHVC
 kind: proposition
 title: A polynomial is separable if and only if $\gcd(f, f') = 1$
+slogan: 'A polynomial is separable exactly when it is coprime to its derivative; their gcd records repeated roots.'
 classification:
   areas:
   - algebra
