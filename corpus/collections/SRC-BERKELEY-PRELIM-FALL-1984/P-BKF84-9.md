@@ -26,3 +26,118 @@ is independent of $r$ whenever $|z|<r<1$, and that it defines an analytic functi
 
 2. Prove or give a counterexample: if $f\not\equiv0$ and $g\not\equiv0$, then $h\not\equiv0$.
 :::
+
+::: {.solution}
+Write
+$$
+f(w)=\sum_{n=0}^{\infty}a_nw^n,
+\qquad
+g(w)=\sum_{n=0}^{\infty}b_nw^n
+$$
+for the Taylor expansions at the origin.
+
+<1>1. If $\abs{z}<r<1$, then
+$$
+\frac1{2\pi i}\int_{C_r}\frac1w f(w)g\!\left(\frac zw\right)\,dw
+=
+\sum_{n=0}^{\infty}a_nb_nz^n.
+$$
+
+::: {.proof}
+On $C_r$, the series for $f(w)$ converges absolutely and uniformly. Since
+$$
+\abs{z/w}=\frac{\abs{z}}{r}<1,
+$$
+the series
+$$
+g\!\left(\frac zw\right)
+=
+\sum_{m=0}^{\infty}b_mz^mw^{-m}
+$$
+also converges absolutely and uniformly on $C_r$. Hence their product may be integrated term by term:
+$$
+\begin{aligned}
+\frac1{2\pi i}\int_{C_r}\frac1w f(w)g\!\left(\frac zw\right)\,dw
+&=
+\sum_{n,m\geq0}
+a_nb_mz^m
+\frac1{2\pi i}\int_{C_r}w^{n-m-1}\,dw\\
+&=
+\sum_{n=0}^{\infty}a_nb_nz^n,
+\end{aligned}
+$$
+because the contour integral is $1$ when $n=m$ and $0$ otherwise.
+:::
+
+<1>2. The series
+$$
+\sum_{n=0}^{\infty}a_nb_nz^n
+$$
+converges locally uniformly on the open unit disk and therefore defines an analytic function there.
+
+::: {.proof}
+Fix $0<\rho<1$. Choose $s$ with
+$$
+\sqrt{\rho}<s<1.
+$$
+Set
+$$
+M_f\coloneqq\max_{\abs{w}=s}\abs{f(w)},
+\qquad
+M_g\coloneqq\max_{\abs{w}=s}\abs{g(w)}.
+$$
+Cauchy's estimates give
+$$
+\abs{a_n}\leq \frac{M_f}{s^n},
+\qquad
+\abs{b_n}\leq \frac{M_g}{s^n}.
+$$
+Thus, for $\abs{z}\leq\rho$,
+$$
+\abs{a_nb_nz^n}
+\leq
+M_fM_g\left(\frac{\rho}{s^2}\right)^n.
+$$
+Since $\rho/s^2<1$, the Weierstrass $M$-test gives uniform convergence on $\abs{z}\leq\rho$. As $\rho<1$ was arbitrary, the series converges locally uniformly on the unit disk, hence its sum is analytic.
+:::
+
+<1>3. The integral in part 1 is independent of $r$ whenever $\abs{z}<r<1$, and it defines the analytic function
+$$
+h(z)=\sum_{n=0}^{\infty}a_nb_nz^n.
+$$
+
+::: {.proof}
+For every admissible $r$, step <1>1 identifies the integral with the same power series, which contains no occurrence of $r$. Step <1>2 shows that this common value is analytic for $\abs{z}<1$.
+:::
+
+<1>4. The assertion in part 2 is false.
+
+::: {.proof}
+Take
+$$
+f(z)=1,
+\qquad
+g(z)=z.
+$$
+Both functions are analytic and nonzero. Their Taylor coefficients satisfy
+$$
+a_0=1,
+\quad
+a_n=0\ \text{for }n\geq1,
+\qquad
+b_1=1,
+\quad
+b_n=0\ \text{for }n\neq1.
+$$
+Hence $a_nb_n=0$ for every $n$, so step <1>3 gives
+$$
+h(z)\equiv0.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves part 1, and step <1>4 supplies the required counterexample for part 2.
+:::
+:::
