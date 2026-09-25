@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QWCKR
 kind: fact
 title: Quasiregular elements and the Jacobson radical
+slogan: The Jacobson radical is the largest ideal of quasiregular elements.
 prompts:
 - What is a quasiregular element in a ring?
 classification:
