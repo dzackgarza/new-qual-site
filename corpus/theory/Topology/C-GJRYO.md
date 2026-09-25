@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-GJRYO
 kind: corollary
 title: Factoring through a contractible space implies nullhomotopic
+slogan: 'Any map that factors through a contractible space is nullhomotopic.'
 classification:
   areas:
   - topology
