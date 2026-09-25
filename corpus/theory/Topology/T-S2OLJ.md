@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-S2OLJ
 kind: theorem
 title: Brouwer fixed-point theorem
+slogan: 'Every continuous self-map of a closed ball has a fixed point.'
 classification:
   areas:
   - topology
