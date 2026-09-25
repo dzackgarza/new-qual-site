@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-7U6UY
 kind: fact
 title: The Jacobson radical $J(R)$
+slogan: $J(R)$ annihilates every simple module, and for finite-type algebras over a field it is the nilradical.
 prompts:
 - What is ${J ({R}) }$? How is it interpreted geometrically?
 classification:
