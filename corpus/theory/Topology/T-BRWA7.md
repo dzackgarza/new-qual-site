@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BRWA7
 kind: theorem
 title: The five lemma
+slogan: 'Exact rows and isomorphisms on the neighboring terms force the middle map to be an isomorphism.'
 classification:
   areas:
   - topology
