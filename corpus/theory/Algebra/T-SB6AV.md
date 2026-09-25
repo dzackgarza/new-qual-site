@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SB6AV
 kind: theorem
 title: Recognizing internal semidirect products
+slogan: 'A normal factor and a complementary subgroup with trivial intersection form a semidirect product.'
 classification:
   areas:
   - algebra
