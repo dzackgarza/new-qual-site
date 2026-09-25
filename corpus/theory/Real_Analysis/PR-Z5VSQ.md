@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-Z5VSQ
 kind: proposition
 title: A homeomorphism can map a measurable set onto a non-measurable set
+slogan: 'Homeomorphisms preserve topology, not Lebesgue measurability.'
 classification:
   areas:
   - real-analysis
