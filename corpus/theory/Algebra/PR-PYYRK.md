@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PYYRK
 kind: proposition
 title: A subgroup is normal if and only if it is a union of conjugacy classes
+slogan: 'A subgroup is normal exactly when it is closed under conjugacy.'
 classification:
   areas:
   - algebra
