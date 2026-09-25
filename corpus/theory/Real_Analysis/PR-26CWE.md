@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-26CWE
 kind: proposition
 title: $L^1$ functions are finite almost everywhere
+slogan: 'An integrable function can be infinite only on a null set.'
 classification:
   areas:
   - real-analysis
