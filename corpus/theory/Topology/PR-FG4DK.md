@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FG4DK
 kind: proposition
 title: Skeleta and homotopy groups
+slogan: '$\pi_k$ of a CW complex is already determined by its $(k+1)$-skeleton.'
 classification:
   areas:
   - topology
