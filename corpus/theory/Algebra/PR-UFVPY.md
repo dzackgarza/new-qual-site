@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UFVPY
 kind: proposition
 title: Computing the minimal polynomial of a matrix
+slogan: 'The minimal polynomial divides the characteristic polynomial and is the lcm of the cyclic-vector annihilators of a basis.'
 classification:
   areas:
   - algebra
