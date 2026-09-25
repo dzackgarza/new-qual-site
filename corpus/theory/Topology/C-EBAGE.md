@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-EBAGE
 kind: corollary
 title: Lipschitz implies uniformly continuous
+slogan: 'A global Lipschitz bound gives uniform continuity.'
 classification:
   areas:
   - topology
