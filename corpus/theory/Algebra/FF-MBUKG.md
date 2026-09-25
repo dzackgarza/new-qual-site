@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-MBUKG
 kind: fact
 title: Groups of order 18
+slogan: 'Order $18$ has exactly five group types: two abelian and three nonabelian.'
 prompts:
 - What are the groups of order 18?
 classification:
