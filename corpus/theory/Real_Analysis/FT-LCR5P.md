@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-LCR5P
 kind: theorem
 title: Dominated convergence theorem
+slogan: 'Almost-everywhere convergence under one integrable majorant lets the limit pass through the integral.'
 prompts:
 - State the dominated convergence theorem.
 classification:
