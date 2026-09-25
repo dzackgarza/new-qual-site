@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4XKGD
 kind: theorem
 title: Frattini's argument
+slogan: 'A normal subgroup together with the normalizer of one of its Sylow subgroups generates the whole group.'
 classification:
   areas:
   - algebra
