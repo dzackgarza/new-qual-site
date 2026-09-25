@@ -6,8 +6,8 @@ A prerequisite `A` on task `B` means `A -> B`. `none` denotes a ready root.
 Before committing a dependency change, verify unique IDs, resolved references, and absence of cycles.
 Preserve the complete mathematical obligation.
 
-Completed historical queues are not executable work. Their detailed per-item evidence remains in Git history; this file keeps only the closure facts needed to understand the live DAG.
-For an additional selected repair, use its issue or card ID, name its immediate Needs and acceptance beside the existing item, and link its complaint.
+Completed historical queues are not executable work.
+Their detailed per-item evidence remains in Git history; this file keeps only the closure facts needed to understand the live DAG. For an additional selected repair, use its issue or card ID, name its immediate Needs and acceptance beside the existing item, and link its complaint.
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they arise in [COMPLAINTS.md](COMPLAINTS.md).
 
@@ -15,13 +15,34 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
-The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits. Its route is `unsolved-contribution` and `copy-policy-repair`, then the audit rounds. [Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
+The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits.
+Its route is `unsolved-contribution`, `slogans`, and `copy-policy-repair`, then the audit rounds.
+[Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
 
-- **`unsolved-contribution`**. **Needs:** none. Make unsolved problems a first-class destination in the site: a reader can reach them from the main navigation and browse or filter them the way the problem index already allows. Every unsolved card offers a way to submit a solution as a GitHub issue on this repository, through an issue form under `.github/ISSUE_TEMPLATE/` whose link prepopulates the card ID, title, source appearance, and card URL, so a submission names exactly the card it answers. [formalization-corpus](https://github.com/dzackgarza/formalization-corpus) already does this for source leads (`site/contribute.html` linking `issues/new?template=source-lead.yml`); follow that mechanism rather than inventing another. **Acceptance:** on a built site, the unsolved view is reachable from navigation and lists exactly the corpus's unsolved cards, and following a card's submission link opens the issue form with that card's fields already filled.
+- **`unsolved-contribution`**. **Needs:** none.
+  Make unsolved problems a first-class destination in the site: a reader can reach them from the main navigation and browse or filter them the way the problem index already allows.
+  Every unsolved card offers a way to submit a solution as a GitHub issue on this repository, through an issue form under `.github/ISSUE_TEMPLATE/` whose link prepopulates the card ID, title, source appearance, and card URL, so a submission names exactly the card it answers.
+  [formalization-corpus](https://github.com/dzackgarza/formalization-corpus) already does this for source leads (`site/contribute.html` linking `issues/new?template=source-lead.yml`); follow that mechanism rather than inventing another.
+  **Acceptance:** on a built site, the unsolved view is reachable from navigation and lists exactly the corpus's unsolved cards, and following a card's submission link opens the issue form with that card's fields already filled.
 
-- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed). Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics. This includes the copy `unsolved-contribution` adds. Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence. **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
+- **`slogans`**. **Needs:** none.
+  Give results a slogan in the way the [Stacks project](https://stacks.math.columbia.edu/) does: a short badge attached to a theorem, proposition, lemma, corollary, or fact card that condenses the result into a pithy, memorable mnemonic.
+  A slogan is authored card data, validated by `just check` like any other field, and rendered as a badge wherever the result appears.
+  It must be true of the result it labels and faithful to its hypotheses; a catchy slogan that overstates the theorem is an incorrect fact.
+  Readers can suggest a slogan for a result through the same prefilled GitHub issue-form mechanism `unsolved-contribution` builds.
+  **Acceptance:** the slogan field exists in the card schema, renders as a badge on the built site, carries a working suggestion link, and every theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement.
 
-- **`audited-deployment`**. **Needs:** `unsolved-contribution`, `copy-policy-repair`. Push so `pages.yml` deploys, then audit the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds. Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies and checks their mathematics for incorrect facts, statements, and solutions; it is a reading of the site, not a lint or crawl count. Every finding becomes a node in this DAG, named by its card or page, with its immediate Needs and acceptance, and `audited-deployment` gains it as a prerequisite. A round with any finding resets the count; repair the injected nodes, redeploy, and start again. **Acceptance:** three consecutive rounds against the same deployed revision (its stamped commit) find nothing.
+- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed).
+  Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics.
+  This includes the copy `unsolved-contribution` and `slogans` add.
+  Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence.
+  **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
+
+- **`audited-deployment`**. **Needs:** `unsolved-contribution`, `slogans`, `copy-policy-repair`. Push so `pages.yml` deploys, then audit the deployed site at <https://dzackgarza.github.io/new-qual-site/> in open-ended rounds.
+  Each round reads the deployed pages against the [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) policies and checks their mathematics for incorrect facts, statements, and solutions; it is a reading of the site, not a lint or crawl count.
+  Every finding becomes a node in this DAG, named by its card or page, with its immediate Needs and acceptance, and `audited-deployment` gains it as a prerequisite.
+  A round with any finding resets the count; repair the injected nodes, redeploy, and start again.
+  **Acceptance:** three consecutive rounds against the same deployed revision (its stamped commit) find nothing.
 
 ### Solutions after the milestone
 
@@ -38,7 +59,8 @@ An unfinished source correction needed by a proof must precede that card's proof
 
 ### Marking a node closed
 
-When a live DAG node meets its acceptance, mark it closed in this file in the same delivery so it cannot be selected again. Reuse its revision-scoped evidence while the delivered artifact is unchanged; a later regression is repaired at its current owner rather than by replaying the historical node.
+When a live DAG node meets its acceptance, mark it closed in this file in the same delivery so it cannot be selected again.
+Reuse its revision-scoped evidence while the delivered artifact is unchanged; a later regression is repaired at its current owner rather than by replaying the historical node.
 
 ### Terminal nodes
 
@@ -83,22 +105,30 @@ A candidate leaves that queue only after a source-based disposition.
 
 ## 1. Repair authored corpus data
 
-Closed. The collection-membership audit was completed. Historical per-collection findings and repair commits remain in Git history; empty audit commits and separate queue-receipt commits are not part of the current workflow.
+Closed.
+The collection-membership audit was completed.
+Historical per-collection findings and repair commits remain in Git history; empty audit commits and separate queue-receipt commits are not part of the current workflow.
 ## 2. Complete source documents and collection membership
 
-Closed. Source-document completion and collection membership were reconciled under the repository source-fidelity rules. Historical per-source evidence remains in Git history.
+Closed.
+Source-document completion and collection membership were reconciled under the repository source-fidelity rules.
+Historical per-source evidence remains in Git history.
 ## 3. Reconcile imported sources
 
-Closed. Imported-source reconciliation is complete; later source defects are repaired at their current owner rather than reopening this historical queue.
+Closed.
+Imported-source reconciliation is complete; later source defects are repaired at their current owner rather than reopening this historical queue.
 ## 4. Finish publication behavior
 
-Closed. Publication behavior and its repository-owned acceptance were delivered; later rendering regressions are owner-local defects.
+Closed.
+Publication behavior and its repository-owned acceptance were delivered; later rendering regressions are owner-local defects.
 ## 5. Complete source-preservation closeout
 
-Closed. Source-preservation closeout is complete under the current provenance and source-owner contracts.
+Closed.
+Source-preservation closeout is complete under the current provenance and source-owner contracts.
 ## 6. Resolve remaining owner decisions
 
-Closed. The recorded owner decisions were resolved; current owner decisions belong to the live issue/card that requires them.
+Closed.
+The recorded owner decisions were resolved; current owner decisions belong to the live issue/card that requires them.
 ## 7. Author solutions
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
@@ -117,16 +147,23 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ## 8. Close the roadmap
 
-Closed. The publication roadmap and satisfied issues were closed; issue #2 remains open only for the live solution programme in section 7.
+Closed.
+The publication roadmap and satisfied issues were closed; issue #2 remains open only for the live solution programme in section 7.
 ## 9. Repair site information architecture
 
-Closed. The site information-architecture repairs were delivered. Later navigation defects are repaired at their current renderer/content owner.
+Closed.
+The site information-architecture repairs were delivered.
+Later navigation defects are repaired at their current renderer/content owner.
 ## 10. Repair wiki copy and organization
 
-Closed. The historical wiki-copy and organization repairs were delivered. The separate corpus-wide `copy-policy-repair` node in the execution DAG remains the current presentation-convergence obligation.
+Closed.
+The historical wiki-copy and organization repairs were delivered.
+The separate corpus-wide `copy-policy-repair` node in the execution DAG remains the current presentation-convergence obligation.
 ## 11. Author the wiki as a study guide
 
-Closed. The historical study-guide authoring programme was delivered; further authored mathematics is selected through the current corpus/solution owners, not this closed queue.
+Closed.
+The historical study-guide authoring programme was delivered; further authored mathematics is selected through the current corpus/solution owners, not this closed queue.
 ## 12. Close out the branch consolidation
 
-Closed. Branch consolidation and its mathematical adjudication obligations were completed; later regressions are repaired at the current owner.
+Closed.
+Branch consolidation and its mathematical adjudication obligations were completed; later regressions are repaired at the current owner.
