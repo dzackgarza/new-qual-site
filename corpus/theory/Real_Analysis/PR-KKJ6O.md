@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-KKJ6O
 kind: proposition
 title: Continuity of measure from below and from above
+slogan: 'Measures commute with increasing unions, and with decreasing intersections once the first set has finite measure.'
 prompts:
 - State continuity of measure from above and from below.
 classification:
