@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-JBCFQ
 kind: fact
 title: $\limsup$ and $\liminf$ of a sequence of sets
+slogan: '$\liminf$ means eventually always; $\limsup$ means infinitely often.'
 prompts:
 - Define $\limsup, \liminf$ for sequences of sets. What are their containments?
 classification:
