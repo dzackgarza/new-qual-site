@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QELG7
 kind: fact
 title: Krull's theorem on maximal ideals
+slogan: Every proper ideal extends to a maximal ideal.
 prompts:
 - What is Krull's theorem?
 classification:
