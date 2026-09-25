@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-TEGRU
 kind: fact
 title: Groups of order 6
+slogan: 'Order $6$ has exactly two group types: cyclic and dihedral.'
 prompts:
 - What are the groups of order 6?
 classification:
