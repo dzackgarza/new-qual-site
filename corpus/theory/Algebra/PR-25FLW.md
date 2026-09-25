@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-25FLW
 kind: proposition
 title: Algebraic extensions of perfect fields are separable
+slogan: 'In characteristic zero or over a finite field, every algebraic extension is separable.'
 classification:
   areas:
   - algebra
