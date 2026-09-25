@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-BAV4D
 kind: theorem
 title: Euler's theorem
+slogan: 'A unit modulo $n$ raised to $\phi(n)$ is $1$ modulo $n$.'
 prompts:
 - State Euler's theorem, and say why coprimality is needed.
 classification:
