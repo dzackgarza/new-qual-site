@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-C9ZEK
 kind: proposition
 title: Exactness is checked on stalks, and global sections are only left exact
+slogan: 'Sheaf exactness is stalkwise; global sections preserve kernels but can lose surjectivity.'
 classification:
   areas:
   - algebraic-geometry
