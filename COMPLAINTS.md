@@ -473,6 +473,35 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   Retain this entry as source errata; the provenance packet itself is not
   rewritten.
 
+### Berkeley Fall 1993 Problem 12 source PDF is missing the contour figure
+
+- **Object and need:** P-BKF93-12 / SRC-BERKELEY-PRELIM-FALL-1993,
+  Problem 12. The requested normalized contour integral depends on the curve
+  $\gamma$ that the source says should be depicted.
+- **Observed evidence:** page 2 of assets/attachments/Fall93.pdf prints the
+  literal typesetting error "../Fig/Pr/Fa93-12.ps not found" where the curve
+  should occur. The integrand survives, but the path itself does not.
+- **Impact and owner:** the retained source does not determine the path,
+  orientation, endpoints, or winding numbers, so it does not determine a
+  unique numerical integral. The owning card must not infer a curve from the
+  three poles.
+- **Uncertainty:** none about the retained repository packet.
+  **Searched:** assets/, sources/, corpus/, and Git history for Fa93-12,
+  Fall 1993 duplicates, and the problem card.
+  **Found:** the Fall 1993 PDF, its extractions, and P-BKF93-12, but no
+  figure asset or duplicate statement containing the curve.
+  **Conclusion:** the contour data are absent from the retained repository
+  source.
+  **Confidence:** high.
+  **Gaps:** external Berkeley archives were not searched; an original
+  PostScript figure may still exist outside the repository.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKF93-12 records the missing-source obstruction, computes
+  all three residues, and gives the exact residue-theorem formula in terms of
+  winding numbers when the missing curve is closed. Retain this entry as
+  source errata unless an authoritative copy of the missing figure is
+  recovered.
+
 ### Berkeley Spring 1983 Problem 4 source PDF is missing the network diagram
 
 - **Object and need:** P-BKS83-4 / SRC-BERKELEY-PRELIM-SPRING-1983,
