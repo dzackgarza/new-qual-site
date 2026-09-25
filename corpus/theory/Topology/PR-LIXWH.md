@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LIXWH
 kind: proposition
 title: Decomposing a Klein bottle
+slogan: 'The Klein bottle is two projective planes connected-summed, equivalently two Möbius bands glued along their boundary.'
 classification:
   areas:
   - topology
