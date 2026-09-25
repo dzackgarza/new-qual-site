@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GBL6P
 kind: proposition
 title: The minimal and characteristic polynomials agree iff there is a cyclic vector
+slogan: 'Minimal equals characteristic exactly for cyclic matrices.'
 classification:
   areas:
   - algebra
