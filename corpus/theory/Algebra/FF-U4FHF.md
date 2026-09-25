@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-U4FHF
 kind: fact
 title: Reduced ring
+slogan: Reduced means no nonzero nilpotents.
 prompts:
 - What is a reduced ring?
 classification:
