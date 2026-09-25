@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-4GQK3
 kind: corollary
 title: Compositum and intersection of normal extensions
+slogan: Normal extensions are closed under compositum and intersection.
 classification:
   areas:
   - algebra
