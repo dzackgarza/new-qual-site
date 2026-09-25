@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-H4ZVI
 kind: proposition
 title: Convergence in $L^1$ implies convergence of norms
+slogan: '$L^1$ convergence forces norm convergence; with almost-everywhere convergence, norm convergence forces $L^1$ convergence.'
 classification:
   areas:
   - real-analysis
