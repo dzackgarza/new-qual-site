@@ -585,6 +585,29 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   through the named points with different Euclidean symmetry groups. Retain
   this entry as source errata; the missing source asset is not reconstructed.
 
+### Berkeley Spring 2009 Problem 7A source solution doubles the requested integral
+
+- **Object and need:** P-BKS09-7A / SRC-BERKELEY-PRELIM-SPRING-2009,
+  Problem 7A. The exam asks for
+  $\int_0^\pi (a+\cos\theta)^{-1}\,d\theta$ for $a>1$ by residues.
+- **Observed evidence:** assets/attachments/extracted/s09solutions.md states
+  the interval $[0,\pi]$, but its solution substitutes $z=e^{i\theta}$ and
+  replaces the requested integral by
+  $-2i\int_{|z|=1}(z^2+2az+1)^{-1}\,dz$. That contour parametrization
+  corresponds to $0\leq\theta\leq2\pi$, not $0\leq\theta\leq\pi$,
+  and the packet consequently reports $2\pi/\sqrt{a^2-1}$.
+- **Impact and owner:** the source solution is too large by a factor of two.
+  Since the integrand is invariant under $\theta\mapsto2\pi-\theta$, the
+  full-circle integral is twice the requested half-circle integral. The
+  owning solution must therefore divide the residue computation by $2$.
+- **Uncertainty:** none about the retained statement and solution extraction;
+  the factor mismatch is determined by the displayed integration interval
+  and the contour parametrization.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS09-7A supplies the corrected residue computation and obtains
+  $\pi/\sqrt{a^2-1}$. Retain this entry as source errata; the provenance
+  packet itself is not rewritten.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
