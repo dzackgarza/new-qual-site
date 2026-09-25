@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-4K4XZ
 kind: proposition
 title: Free modules over an integral domain are torsionfree
+slogan: 'Over an integral domain, a finitely generated free module has no nonzero torsion.'
 classification:
   areas:
   - algebra
