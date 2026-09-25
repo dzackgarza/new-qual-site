@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SF6ZE
 kind: proposition
 title: Tower law for subgroups
+slogan: 'Subgroup indices multiply in towers.'
 classification:
   areas:
   - algebra
