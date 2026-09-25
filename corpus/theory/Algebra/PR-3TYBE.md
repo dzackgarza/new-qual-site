@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3TYBE
 kind: proposition
 title: An intermediate field $K$ is Galois over $k$ iff $\Gal(L/K) \normal \Gal(L/k)$
+slogan: 'An intermediate extension is Galois exactly when its fixing subgroup is normal, with quotient the intermediate Galois group.'
 classification:
   areas:
   - algebra
