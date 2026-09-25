@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-4X6G2
 kind: proposition
 title: Poincaré duality for closed manifolds
+slogan: 'On a closed orientable manifold, cap product with the fundamental class exchanges degree $k$ cohomology with degree $n-k$ homology.'
 classification:
   areas:
   - topology
