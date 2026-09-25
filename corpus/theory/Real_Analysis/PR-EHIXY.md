@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-EHIXY
 kind: proposition
 title: Absolutely summable series in $L^1$ converge almost everywhere and in $L^1$
+slogan: 'Summable $L^1$ norms give absolute almost-everywhere convergence, $L^1$ convergence, and termwise integration.'
 classification:
   areas:
   - real-analysis
