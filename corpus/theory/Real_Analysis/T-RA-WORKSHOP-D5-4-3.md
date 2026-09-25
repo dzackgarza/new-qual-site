@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-3
 kind: theorem
 title: Taylor's theorem with Lagrange remainder
+slogan: 'Taylor error is the next derivative at an intermediate point times the next power divided by the next factorial.'
 classification:
   areas:
   - real-analysis
