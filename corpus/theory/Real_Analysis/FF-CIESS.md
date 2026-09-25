@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-CIESS
 kind: fact
 title: Value of $\tan(\pi/4)$
+slogan: 'At $\pi/4$, sine and cosine agree, so the tangent is $1$.'
 prompts:
 - What is $\tan(\pi/4)$?
 classification:
