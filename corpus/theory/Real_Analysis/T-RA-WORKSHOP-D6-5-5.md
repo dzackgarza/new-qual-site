@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-5
 kind: theorem
 title: Mean value theorem for integrals
+slogan: 'A continuous function attains its average value somewhere in the interval.'
 classification:
   areas:
   - real-analysis
