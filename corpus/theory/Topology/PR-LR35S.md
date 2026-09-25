@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LR35S
 kind: proposition
 title: Top homology of closed manifolds
+slogan: 'A closed connected manifold has top integral homology $\ZZ$ exactly when it is orientable.'
 classification:
   areas:
   - topology
