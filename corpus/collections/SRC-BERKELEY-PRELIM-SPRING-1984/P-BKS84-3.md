@@ -12,6 +12,13 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: Checked the integrating-factor reduction to a convex function and the mean-value-theorem argument forcing it below its zero endpoint chord.
 ---
 
 ::: {.problem}
@@ -28,4 +35,104 @@ Prove that
 f(x)\le0
 \]
 for every $0\le x\le1$.
+:::
+
+::: {.solution}
+<1>1. Define
+$$
+g(x)\coloneqq e^x f(x).
+$$
+Then $g$ is continuous on $[0,1]$, twice differentiable on $(0,1)$,
+$g(0)=g(1)=0$, and
+$$
+g''(x)\geq0
+$$
+for $0<x<1$.
+
+::: {.proof}
+The endpoint conditions give
+$$
+g(0)=f(0)=0,
+\qquad
+g(1)=e f(1)=0.
+$$
+On $(0,1)$,
+$$
+\begin{aligned}
+g''(x)
+&=
+e^x\bigl(f''(x)+2f'(x)+f(x)\bigr)\\
+&\geq0,
+\end{aligned}
+$$
+because $e^x>0$ and the assumed differential inequality holds.
+:::
+
+<1>2. The derivative $g'$ is nondecreasing on $(0,1)$.
+
+::: {.proof}
+Let $0<a<b<1$. Since $g''$ exists on $(0,1)$, the function $g'$ is
+continuous on $[a,b]$ and differentiable on $(a,b)$. By the mean value
+theorem, for some $c\in(a,b)$,
+$$
+g'(b)-g'(a)
+=
+g''(c)(b-a)
+\geq0
+$$
+by step <1>1. Hence $g'(a)\leq g'(b)$.
+:::
+
+<1>3. For every $x\in(0,1)$,
+$$
+g(x)\leq0.
+$$
+
+::: {.proof}
+Fix $x\in(0,1)$. The mean value theorem on $[0,x]$ gives
+$c\in(0,x)$ such that
+$$
+\frac{g(x)-g(0)}{x}
+=
+g'(c),
+$$
+and the mean value theorem on $[x,1]$ gives $d\in(x,1)$ such that
+$$
+\frac{g(1)-g(x)}{1-x}
+=
+g'(d).
+$$
+Since $c<d$, step <1>2 gives $g'(c)\leq g'(d)$. Using
+$g(0)=g(1)=0$ from step <1>1,
+$$
+\frac{g(x)}{x}
+\leq
+-\frac{g(x)}{1-x}.
+$$
+Multiplication by the positive number $x(1-x)$ yields
+$$
+(1-x)g(x)\leq-xg(x),
+$$
+and therefore $g(x)\leq0$.
+:::
+
+<1>4. For every $x\in[0,1]$,
+$$
+\boxed{f(x)\leq0}.
+$$
+
+::: {.proof}
+For $0<x<1$, step <1>3 and
+$$
+f(x)=e^{-x}g(x)
+$$
+give $f(x)\leq0$ because $e^{-x}>0$. At the endpoints,
+$f(0)=f(1)=0$ by hypothesis.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>4 is the required conclusion.
+:::
 :::
