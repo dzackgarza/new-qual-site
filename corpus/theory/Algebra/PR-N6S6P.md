@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-N6S6P
 kind: proposition
 title: Automorphism groups of cyclic groups and related counts
+slogan: 'Cyclic-group automorphisms are units modulo the order; products and elementary abelian factors reduce to familiar linear groups.'
 classification:
   areas:
   - algebra
