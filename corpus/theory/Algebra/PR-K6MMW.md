@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-K6MMW
 kind: proposition
 title: Equivalent characterizations of a single nilpotent Jordan block of size $n$
+slogan: 'A nilpotent operator is one Jordan block exactly when its kernel grows by one dimension at each power.'
 classification:
   areas:
   - algebra
