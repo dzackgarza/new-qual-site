@@ -238,7 +238,7 @@ $$
 exactly.
 Therefore $\alpha$ descends to a $D$-algebra isomorphism
 $$
-A_{\phi_1}\isom A_{\phi_2}
+A_{\phi_1}\iso A_{\phi_2}
 $$
 which induces the identity on the special fibre $A$.
 :::
@@ -255,7 +255,7 @@ $$
 
 Conversely, suppose
 $$
-\Psi:A_{\phi_1}\isom A_{\phi_2}
+\Psi:A_{\phi_1}\iso A_{\phi_2}
 $$
 is a $D$-algebra isomorphism inducing the identity on $A$.
 Compose the quotient map $P_D\to A_{\phi_1}$ with $\Psi$.
