@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6OHTJ
 kind: proposition
 title: $p$-tests for series and integrals
+slogan: '$p$-series and power-law integrals converge exactly on the expected side of the critical exponent.'
 classification:
   areas:
   - real-analysis
