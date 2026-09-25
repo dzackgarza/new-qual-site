@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FBMYQ
 kind: theorem
 title: Excision
+slogan: 'Removing a suitably interior subspace does not change relative homology.'
 classification:
   areas:
   - topology
