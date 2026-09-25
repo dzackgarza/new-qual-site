@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-WDTKX
 kind: fact
 title: Nonorientable standard manifolds
+slogan: 'Even-dimensional real projective spaces, the Klein bottle, nonorientable surfaces, and the Möbius band are nonorientable.'
 prompts:
 - Which of the standard manifolds are nonorientable?
 classification:
