@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-L35O7
 kind: proposition
 title: $L^p$ spaces are Banach spaces
+slogan: '$L^p$ is complete for every $1\le p\le\infty$.'
 classification:
   areas:
   - real-analysis
