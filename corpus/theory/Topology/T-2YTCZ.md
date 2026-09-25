@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-2YTCZ
 kind: theorem
 title: Maps into a convex set are homotopic
+slogan: 'Convex targets make any two maps homotopic by straight-line interpolation.'
 classification:
   areas:
   - topology
