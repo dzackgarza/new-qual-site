@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OZYUC
 kind: proposition
 title: Characterization of normal algebraic extensions
+slogan: 'An algebraic extension is normal exactly when every base-field embedding preserves the extension.'
 classification:
   areas:
   - algebra
