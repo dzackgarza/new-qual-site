@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-CQSNC
 kind: fact
 title: Regular local rings and regular rings
+slogan: Regular local rings have no excess generators: $\dim_k \mfm/\mfm^2=\dim R$.
 prompts:
 - What is a regular ring?
 classification:
