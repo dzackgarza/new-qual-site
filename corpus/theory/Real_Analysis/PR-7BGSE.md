@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-7BGSE
 kind: proposition
 title: Hölder's inequality
+slogan: 'Hölder bounds the $L^1$ norm of a product by conjugate $L^p$ and $L^q$ norms.'
 classification:
   areas:
   - real-analysis
