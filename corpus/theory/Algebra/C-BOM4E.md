@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-BOM4E
 kind: corollary
 title: Quadratic extensions of $\QQ$
+slogan: Every quadratic extension of $\QQ$ comes from adjoining the square root of a squarefree integer.
 classification:
   areas:
   - algebra
