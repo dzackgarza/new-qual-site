@@ -2425,7 +2425,7 @@ def source_index_page(
 
     del area_names
     blocks: list[pf.Block] = [
-        pf.Para(pf.Str(f"Every collection the corpus draws problems from: {len(collections)} in all.")),
+        pf.Para(pf.Str(f"Sources for qualifying-exam problems: {len(collections)} collections in all.")),
         _data_table("source-table", ("Source", "Type", "Area", "Institution", "Year", "Worked", "Order")),
     ]
     return {"title": "Sources"}, blocks
