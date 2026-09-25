@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GJLQP
 kind: proposition
 title: The center is a characteristic subgroup
+slogan: 'Every automorphism preserves the center.'
 classification:
   areas:
   - algebra
