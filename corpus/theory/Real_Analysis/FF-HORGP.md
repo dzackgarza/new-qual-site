@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-HORGP
 kind: fact
 title: Completeness of a normed space via absolutely convergent series
+slogan: 'A normed space is complete exactly when every absolutely convergent series converges in the space.'
 prompts:
 - Give several equivalent characterizations of completeness.
 classification:
