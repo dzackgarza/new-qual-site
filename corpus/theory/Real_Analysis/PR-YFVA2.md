@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-YFVA2
 kind: proposition
 title: $L^1$ is a Banach space and $L^2$ is a Hilbert space
+slogan: '$L^1$ is complete as a normed space, while $L^2$ is complete as an inner-product space.'
 classification:
   areas:
   - real-analysis
