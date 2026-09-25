@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-PCL4H
 kind: theorem
 title: Totally bounded if and only if Cauchy subsequences exist
+slogan: 'Total boundedness is exactly the condition that every sequence has a Cauchy subsequence.'
 classification:
   areas:
   - topology
