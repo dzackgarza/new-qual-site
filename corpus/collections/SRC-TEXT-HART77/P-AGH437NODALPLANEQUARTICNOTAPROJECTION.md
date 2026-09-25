@@ -134,6 +134,12 @@ that is, a node.
 <1>3. The quartic $C$ is integral.
 
 ::: {.proof}
+First, $F$ is squarefree.  Indeed, if an irreducible polynomial $G$ occurred
+in $F$ with multiplicity at least $2$, then $G$ would divide each partial
+derivative of $F$.  Every point of the positive-dimensional curve $V(G)$
+would then be singular on $C$, contradicting step <1>1, which found only the
+single singular point $P$.  Thus $C$ is reduced.
+
 Step <1>1 says that different irreducible components of $C$ could meet only
 at $P$. Step <1>2 says that at $P$ there are exactly two smooth local
 branches meeting transversely, so if $C$ were reducible it would have exactly
@@ -158,8 +164,8 @@ $$
 \deg C=2,
 $$
 contrary to the quartic equation. Hence $C$ is irreducible. Since $F$ is a
-single irreducible equation in the polynomial ring over a field, $C$ is
-reduced as well. Thus $C$ is integral.
+single irreducible equation in the polynomial ring over a field, and we have
+already shown it squarefree, $C$ is integral.
 :::
 
 <1>4. The normalization $\widetilde C$ has genus
@@ -242,7 +248,8 @@ $$
 \pi^*\mco_C(1)\cong\mco_X(1).
 $$
 Since $\pi$ is birational, it has degree one on function fields, so degrees
-of line bundles are preserved:
+of line bundles are preserved.  More explicitly, a nonconstant morphism of
+projective curves is finite, and therefore
 $$
 \deg\mco_X(1)
 =
