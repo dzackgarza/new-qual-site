@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-JKCAM
 kind: fact
 title: Groups of order 20
-slogan: Order $20$ has exactly five group types: two abelian and three nonabelian.
+slogan: 'Order $20$ has exactly five group types: two abelian and three nonabelian.'
 prompts:
 - What are the groups of order 20?
 classification:
