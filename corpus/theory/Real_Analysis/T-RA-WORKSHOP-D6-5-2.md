@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-2
 kind: theorem
 title: Riemann--Stieltjes integration by parts
+slogan: 'Riemann--Stieltjes integration by parts swaps integrand and integrator with the usual endpoint correction.'
 classification:
   areas:
   - real-analysis
