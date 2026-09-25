@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JLDJ6
 kind: proposition
 title: Computing cyclotomic polynomials $\Phi_n$
+slogan: 'Cyclotomic polynomials factor $x^n-1$ over divisors and invert that factorization by Möbius inversion.'
 classification:
   areas:
   - algebra
