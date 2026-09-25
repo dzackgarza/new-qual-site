@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-SOE5P
 kind: fact
 title: Euler's totient of a prime power
+slogan: A prime power keeps the proportion $1-1/p$ of its residues coprime.
 prompts:
 - What is $\phi(p^k)$?
 classification:
