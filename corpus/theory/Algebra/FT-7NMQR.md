@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-7NMQR
 kind: theorem
 title: Recognition theorem for internal direct products
+slogan: 'Normal factors with trivial intersection and product $G$ form an internal direct product.'
 prompts:
 - What conditions on subgroups $H, K \leq G$ give $G \cong H \times K$?
 classification:
