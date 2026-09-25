@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-PRQ7I
 kind: theorem
 title: Cantor's nested intervals theorem
+slogan: 'Nested closed bounded intervals intersect, and shrinking diameters force a unique point.'
 classification:
   areas:
   - topology
