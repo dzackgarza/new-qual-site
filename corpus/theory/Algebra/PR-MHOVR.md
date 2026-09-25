@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MHOVR
 kind: proposition
 title: If $L/k$ is normal, then $L/K$ is normal for every intermediate field $K$
+slogan: 'Normality descends from the base field to every intermediate field.'
 classification:
   areas:
   - algebra
