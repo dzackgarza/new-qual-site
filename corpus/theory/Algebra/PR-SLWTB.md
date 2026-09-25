@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SLWTB
 kind: proposition
 title: Classification of groups of order $pq$
+slogan: 'Groups of order $pq$ are cyclic unless the smaller prime divides the larger minus one, when one nonabelian semidirect product also appears.'
 classification:
   areas:
   - algebra
