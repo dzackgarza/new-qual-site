@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-ILVEB
 kind: corollary
 title: Every subgroup of a free group is free
+slogan: 'Subgroups of free groups are free.'
 classification:
   areas:
   - topology
