@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TTZ2Y
 kind: theorem
 title: Chinese remainder theorem
+slogan: 'Coprime moduli split one congruence class modulo $pq$ into independent classes modulo $p$ and $q$.'
 classification:
   areas:
   - algebra
