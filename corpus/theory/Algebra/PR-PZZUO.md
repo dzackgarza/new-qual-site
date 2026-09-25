@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PZZUO
 kind: proposition
 title: Subring criterion
+slogan: 'A subset is a subring exactly when it is an additive subgroup and multiplicative submonoid.'
 classification:
   areas:
   - algebra
