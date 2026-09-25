@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RIJSC
 kind: proposition
 title: Internal direct sum of two submodules
+slogan: 'Two submodules form an internal direct sum exactly when they span the module and intersect trivially.'
 classification:
   areas:
   - algebra
