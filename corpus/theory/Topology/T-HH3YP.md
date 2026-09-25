@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-HH3YP
 kind: theorem
 title: Compact if and only if complete and totally bounded
+slogan: 'For metric spaces, compactness is exactly completeness plus total boundedness.'
 classification:
   areas:
   - topology
