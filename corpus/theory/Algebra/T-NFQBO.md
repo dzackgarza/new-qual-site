@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-NFQBO
 kind: theorem
 title: Second isomorphism theorem for groups
+slogan: 'Quotienting $SN$ by $N$ is the same as quotienting $S$ by its overlap with $N$.'
 classification:
   areas:
   - algebra
