@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-HRAOC
 kind: proposition
 title: Existence of nonzero smooth compactly supported functions
+slogan: 'Flat exponential cutoffs produce nonzero smooth bump functions with compact support.'
 classification:
   areas:
   - real-analysis
