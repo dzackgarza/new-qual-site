@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-ED3CD
 kind: fact
 title: Factorization of $x^n - a^n$
+slogan: A difference of $n$th powers always carries the linear factor $x-a$.
 prompts:
 - How does $x^n - a^n$ factor?
 classification:
