@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-BOIT5
 kind: fact
 title: Closed surfaces with Euler characteristic $-2$
+slogan: 'Euler characteristic $-2$ means orientable genus $2$ or nonorientable genus $4$.'
 prompts:
 - Which closed surfaces have $\chi = -2$?
 classification:
