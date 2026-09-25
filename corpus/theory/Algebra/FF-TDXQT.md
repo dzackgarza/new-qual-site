@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-TDXQT
 kind: fact
 title: Groups of order 8
+slogan: 'Order $8$ has exactly five group types: three abelian and two nonabelian.'
 prompts:
 - What are the groups of order 8?
 classification:
