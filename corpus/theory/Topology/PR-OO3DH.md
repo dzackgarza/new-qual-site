@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OO3DH
 kind: proposition
 title: $\pi_1$ of a product
+slogan: 'Fundamental groups turn products of path-connected spaces into direct products.'
 classification:
   areas:
   - topology
