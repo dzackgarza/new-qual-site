@@ -648,6 +648,31 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS09-1B treats $n=1$ separately and then gives the Taylor argument
   for $n\geq2$.
 
+### Berkeley Spring 2009 Problem 7B source omits f and its solution inverts the square root
+
+- **Object and need:** P-BKS09-7B / SRC-BERKELEY-PRELIM-SPRING-2009,
+  Problem 7B. The problem is intended to start with a normalized univalent
+  function $f$ and to prove that $g(z)=\sqrt{f(z^2)}$ has the stated
+  analytic, odd, and univalent properties.
+- **Observed evidence:** page 6 of assets/attachments/s09solutions.pdf
+  prints “If is a univalent ... function” before immediately defining
+  $f(z)=z+\sum_{n\geq2}a_nz^n$, so the function name is missing in the
+  opening clause. In the solution, after correctly writing
+  $f(z^2)=z^2\phi(z)$ and constructing $\sqrt{\phi}$, the PDF then prints
+  $g(z)=1/\sqrt{f(z^2)}=1/(z\sqrt{\phi(z)})$, contradicting the displayed
+  definition of $g$ immediately above.
+- **Impact and owner:** the omitted name is recoverable from the defining
+  formula for $f$. The reciprocal formula in the solution cannot be the
+  intended $g$: it has a pole at $0$, whereas the problem asks for a function
+  analytic on the unit disk. The correct analytic branch is
+  $g(z)=z\sqrt{\phi(z)}$ with the square root chosen to equal $1$ at $0$.
+- **Uncertainty:** none about these two retained-PDF defects; both are visible
+  on page 6 and are not extraction artifacts.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS09-7B retains a mathematical remark about the omitted name and
+  supplies the corrected analytic-square-root proof using
+  $g(z)=z\sqrt{\phi(z)}$. Retain this entry as source errata.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
