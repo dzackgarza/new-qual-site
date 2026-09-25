@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TAPZF
 kind: proposition
 title: One-step submodule test
+slogan: 'A nonempty subset is a submodule once it is closed under $rx+y$.'
 classification:
   areas:
   - algebra
