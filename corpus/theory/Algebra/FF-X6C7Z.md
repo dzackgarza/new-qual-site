@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-X6C7Z
 kind: fact
 title: Closed immersion criterion for morphisms of smooth projective varieties
+slogan: Over an algebraically closed field, smooth projective maps are closed immersions exactly when they are injective on closed points and tangent spaces.
 prompts:
 - Give a geometric application of Nakayama's lemma.
 classification:
