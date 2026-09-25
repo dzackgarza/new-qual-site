@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-U3EZL
 kind: theorem
 title: Prime subfields are $\QQ$ or $\FF_p$
+slogan: 'A field contains a canonical copy of $\QQ$ in characteristic zero and $\FF_p$ in characteristic $p$.'
 classification:
   areas:
   - algebra
