@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-NOX4C
 kind: fact
 title: Almost disjoint sets
+slogan: 'Almost disjoint means the interiors do not meet.'
 prompts:
 - What are almost disjoint sets?
 classification:
