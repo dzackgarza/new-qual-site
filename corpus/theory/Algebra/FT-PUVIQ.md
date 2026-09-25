@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-PUVIQ
 kind: theorem
 title: Zorn's lemma
+slogan: 'If every chain has an upper bound, a maximal element exists.'
 prompts:
 - State Zorn's lemma.
 classification:
