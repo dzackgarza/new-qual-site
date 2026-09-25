@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-YY3JG
 kind: proposition
 title: Larger subgroups have smaller index
+slogan: 'Subgroup inclusion reverses index size.'
 classification:
   areas:
   - algebra
