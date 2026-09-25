@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DEG36
 kind: proposition
 title: Finite fields are not algebraically closed
+slogan: 'No finite field is algebraically closed.'
 classification:
   areas:
   - algebra
