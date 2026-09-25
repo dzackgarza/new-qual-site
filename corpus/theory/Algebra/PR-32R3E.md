@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-32R3E
 kind: proposition
 title: A field with $p^n$ elements is a splitting field of $x^{p^n} - x$
+slogan: 'The field with $p^n$ elements consists exactly of the roots of $x^{p^n}-x$.'
 classification:
   areas:
   - algebra
