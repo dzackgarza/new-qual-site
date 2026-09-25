@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-4XBYG
 kind: fact
 title: Cauchy--Schwarz inequality in $L^2$
+slogan: '$L^2$ inner products are bounded by the product of the $L^2$ norms, with equality exactly for dependent functions.'
 prompts:
 - State the Cauchy-Schwarz inequality for integrals.
 classification:
