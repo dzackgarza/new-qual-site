@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WCHFF
 kind: proposition
 title: Homology of knot complements in $S^3$
+slogan: 'A knot complement in $S^3$ has the homology of a circle.'
 classification:
   areas:
   - topology
