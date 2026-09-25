@@ -37,6 +37,32 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Berkeley Fall 1983 Problem 15 omits connectedness of the ambient open set
+
+- **Object and need:** `P-BKF83-15` /
+  `SRC-BERKELEY-PRELIM-FALL-1983`, Problem 15(1). The source assumes only
+  that $f$ is analytic on an open set containing the closed unit disk and
+  asks to prove that $f$ is constant.
+- **Observed evidence:** line 117 of
+  `assets/attachments/extracted/Fall83.md` gives exactly that hypothesis.
+  If
+  $U=\{\lvert z\rvert<2\}\cup\{\lvert z-4\rvert<1/2\}$, the function
+  equal to $0$ on the first component and $1$ on the second is holomorphic
+  on $U$, real-valued on the unit circle, and not constant on $U$.
+- **Impact and owner:** the usual harmonic-maximum/open-mapping argument proves
+  that $f$ is constant on the unit disk, and the identity theorem extends
+  that constant only across the connected component containing the disk.
+  The owning solution must not silently apply the identity theorem to
+  disconnected components.
+- **Uncertainty:** the mathematical gap is exact. The source may be using
+  "open set" informally for a connected region, but the retained source does
+  not state connectedness.
+- **Repair:** `P-BKF83-15` now proves constancy on the connected component
+  containing the closed unit disk and records the literal disconnected-domain
+  counterexample as mathematical errata. Retain this source-intent note unless
+  an authoritative Berkeley correction establishes that "open set" was
+  intended to mean a connected domain.
+
 ### Berkeley Spring 1997 Problem 18 does not specify whether the direct product is finite
 
 - **Object and need:** `P-BERK97S-18` / `SRC-BERKELEY-PRELIM-SPRING-1997`,
