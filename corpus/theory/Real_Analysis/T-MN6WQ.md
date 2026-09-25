@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MN6WQ
 kind: theorem
 title: Interchanging sums and integrals for absolutely summable series
+slogan: 'Absolute $L^1$ summability gives almost-everywhere convergence and lets summation commute with integration.'
 classification:
   areas:
   - real-analysis
