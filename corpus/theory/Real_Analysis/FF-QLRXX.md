@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QLRXX
 kind: fact
 title: Growth rates of common functions
+slogan: 'Factorials outrun exponentials, exponentials outrun powers, and powers outrun logarithms.'
 prompts:
 - How do $n!$, $c^n$, $n^c$, $n\log n$, $n$ and $\log n$ rank by growth rate?
 classification:
