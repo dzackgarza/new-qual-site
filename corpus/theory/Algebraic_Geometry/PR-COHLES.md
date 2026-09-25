@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-COHLES
 kind: proposition
 title: The long exact sequence, and the ideal sequence as a computational device
+slogan: 'Short exact sequences yield long exact cohomology sequences; connecting maps record the obstruction to lifting.'
 classification:
   areas:
   - algebraic-geometry
