@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-KGHJ2
 kind: proposition
 title: Stabilizers of points in the same orbit are conjugate
+slogan: 'Points in one orbit have conjugate stabilizers.'
 classification:
   areas:
   - algebra
