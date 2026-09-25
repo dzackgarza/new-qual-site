@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-A4J4G
 kind: proposition
 title: Subtraction of measures
+slogan: 'Removing a finite-measure subset subtracts its measure.'
 classification:
   areas:
   - real-analysis
