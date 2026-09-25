@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-VSE32
 kind: corollary
 title: Uniform limits of series of continuous functions are continuous
+slogan: 'A uniformly convergent series of continuous functions has a continuous sum.'
 classification:
   areas:
   - real-analysis
