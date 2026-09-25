@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-JXE7U
 kind: fact
 title: $\Hom_R(R,A)\cong A$
+slogan: 'An $R$-linear map out of $R$ is determined uniquely by the image of $1$.'
 prompts:
 - What is $\mathop{\mathrm{Hom}}_R(R, A)$ for a left $R$-module $A$?
 classification:
