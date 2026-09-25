@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NESS4
 kind: proposition
 title: 'N/C theorem: $N_G(H)/C_G(H)$ embeds in $\Aut(H)$'
+slogan: 'Normalizer modulo centralizer acts faithfully by conjugation on the subgroup.'
 classification:
   areas:
   - algebra
