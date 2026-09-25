@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-D2KJJ
 kind: fact
 title: Tor groups among $\ZZ/n$, $\ZZ$ and $\QQ$
+slogan: 'Over $\ZZ$, cyclic torsion meets cyclic torsion in degree one, while torsion-free inputs kill higher $\Tor$.'
 prompts:
 - What are the groups $\operatorname{Tor}^{\mathbf{Z}}_*$ among $\ZZ/n$, $\ZZ$ and $\QQ$?
 classification:
