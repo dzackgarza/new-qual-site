@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QNYSB
 kind: theorem
 title: Lefschetz duality
+slogan: 'For manifolds with boundary, cap product exchanges relative cohomology on one boundary piece with homology relative to the other.'
 classification:
   areas:
   - topology
