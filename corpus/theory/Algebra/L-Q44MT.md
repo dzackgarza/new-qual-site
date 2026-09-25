@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-Q44MT
 kind: lemma
 title: Finite $p$-groups are solvable
+slogan: 'Finite $p$-groups are solvable because their centers are nontrivial.'
 classification:
   areas:
   - algebra
