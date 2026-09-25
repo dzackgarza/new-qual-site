@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-KQTPR
 kind: theorem
 title: Open mapping theorem
+slogan: 'A surjective bounded operator between Banach spaces sends open sets to open sets.'
 classification:
   areas:
   - real-analysis
