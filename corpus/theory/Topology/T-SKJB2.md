@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SKJB2
 kind: theorem
 title: Homotopy lifting property for covering spaces
+slogan: 'A lift of the initial slice of a homotopy extends uniquely across the whole homotopy.'
 classification:
   areas:
   - topology
