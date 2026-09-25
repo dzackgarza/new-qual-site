@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-E4T3S
 kind: proposition
 title: Galois groups of irreducible quartics over $\QQ$
+slogan: 'Discriminant, resolvent, and one quadratic-extension test determine an irreducible quartic''s Galois group.'
 classification:
   areas:
   - algebra
