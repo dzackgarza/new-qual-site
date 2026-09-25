@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-WZDSS
 kind: fact
 title: $\Ext^*_{\ZZ}(\ZZ/n, A)$
+slogan: 'For $\ZZ/n$, $\Ext^0$ detects $n$-torsion, $\Ext^1$ is quotient by $n$, and higher $\Ext$ vanishes.'
 prompts:
 - What is $\operatorname{Ext}^*_{\mathbf{Z}}(\mathbf{Z}/n, A)$?
 classification:
