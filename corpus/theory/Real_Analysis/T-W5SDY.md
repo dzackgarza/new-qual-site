@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-W5SDY
 kind: theorem
 title: The dual space $X\dual$ with the operator norm is a Banach space
+slogan: 'The dual of every normed space is complete in the operator norm.'
 classification:
   areas:
   - real-analysis
