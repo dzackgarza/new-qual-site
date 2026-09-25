@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JEZZY
 kind: theorem
 title: Gauss's lemma
+slogan: 'For a primitive polynomial over a UFD, irreducibility is unchanged on passing to the fraction field.'
 classification:
   areas:
   - algebra
