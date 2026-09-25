@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FD-BWVRA
 kind: proposition
 title: Surjective maps are the maps with a right inverse
+slogan: A set map is onto exactly when it splits on the right.
 prompts:
 - What condition on inverses characterises a surjective function?
 classification:
