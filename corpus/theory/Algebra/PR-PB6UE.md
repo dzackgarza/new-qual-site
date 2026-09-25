@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PB6UE
 kind: proposition
 title: A monic integer polynomial irreducible modulo a prime is irreducible over $\QQ$
+slogan: 'Irreducibility modulo one prime certifies irreducibility over $\QQ$ for monic integer polynomials.'
 classification:
   areas:
   - algebra
