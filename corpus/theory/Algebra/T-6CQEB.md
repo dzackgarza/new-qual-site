@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-6CQEB
 kind: theorem
 title: Correspondence and third isomorphism theorems
+slogan: 'Subgroups above $N$ are exactly subgroups of $G/N$, and quotienting twice collapses to quotienting by the larger subgroup.'
 classification:
   areas:
   - algebra
