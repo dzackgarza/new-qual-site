@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-R72XL
 kind: proposition
 title: Points are closed in $T_1$ and Hausdorff spaces
+slogan: '$T_1$ makes points closed; Hausdorff implies $T_1$.'
 classification:
   areas:
   - topology
