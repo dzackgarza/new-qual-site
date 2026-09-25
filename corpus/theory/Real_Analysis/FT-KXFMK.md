@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-KXFMK
 kind: theorem
 title: Equivalent characterizations of measurability of a set
+slogan: 'Lebesgue measurability is equivalent to open, closed, $F_\sigma$, or $G_\delta$ approximation up to null sets.'
 prompts:
 - What conditions each characterise measurability of a set $E \subset \RR^n$?
 classification:
