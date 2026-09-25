@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FA6VI
 kind: theorem
 title: Characterizations of continuous maps
+slogan: 'Continuity is equivalently preservation of closure inclusion, closed-set preimages, or neighborhoods.'
 classification:
   areas:
   - topology
