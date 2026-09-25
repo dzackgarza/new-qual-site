@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-HWX2P
 kind: corollary
 title: 'Coset counting formula $\# G = [G:H]\,\#H$'
+slogan: A finite group is $[G:H]$ equal-sized cosets of $H$.
 classification:
   areas:
   - algebra
