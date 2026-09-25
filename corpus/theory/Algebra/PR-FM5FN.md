@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FM5FN
 kind: proposition
 title: Galois group of the composite of a Galois extension with an arbitrary extension
+slogan: 'Base change cuts the Galois group down to the automorphisms fixing the field intersection.'
 classification:
   areas:
   - algebra
