@@ -50,7 +50,9 @@ for the irrelevant ideal.
 \Proj S=\varnothing.
 \]
 ::: {.proof}
-Every prime ideal contains every nilpotent element.  Hence every homogeneous prime ideal contains all of $S_+$.  But by definition
+Every prime ideal contains every nilpotent element.
+Hence every homogeneous prime ideal contains all of $S_+$.
+But by definition
 \[
 \Proj S
 =\{\mathfrak p:\mathfrak p\text{ homogeneous prime and }\mathfrak p\not\supseteq S_+\}.
@@ -69,33 +71,40 @@ Let
 f\in S_d,
 \qquad d>0,
 \]
-be homogeneous.  Suppose $f$ is not nilpotent.
+be homogeneous.
+Suppose $f$ is not nilpotent.
 
 Consider the set of homogeneous ideals $I\subseteq S$ such that
 \[
 I\cap\{1,f,f^2,\ldots\}=\varnothing.
 \]
-It is nonempty because $(0)$ belongs to it, and the union of any chain is again a homogeneous ideal disjoint from the powers of $f$.  By Zorn's lemma there is a maximal such homogeneous ideal $\mathfrak p$.
+It is nonempty because $(0)$ belongs to it, and the union of any chain is again a homogeneous ideal disjoint from the powers of $f$.
+By Zorn's lemma there is a maximal such homogeneous ideal $\mathfrak p$.
 
-We claim $\mathfrak p$ is prime.  Let $a,b$ be homogeneous elements not in $\mathfrak p$.  By maximality, the homogeneous ideals
+We claim $\mathfrak p$ is prime.
+Let $a,b$ be homogeneous elements not in $\mathfrak p$.
+By maximality, the homogeneous ideals
 \[
 \mathfrak p+(a)
 \qquad\text{and}\qquad
 \mathfrak p+(b)
 \]
-each meet the powers of $f$.  Thus for some $m,n$,
+each meet the powers of $f$.
+Thus for some $m,n$,
 \[
 f^m=p_1+ra,
 \qquad
 f^n=p_2+sb
 \]
-with $p_1,p_2\in\mathfrak p$.  Multiplying gives
+with $p_1,p_2\in\mathfrak p$.
+Multiplying gives
 \[
 f^{m+n}
 \in
 \mathfrak p+(ab).
 \]
-If $ab\in\mathfrak p$, this would put $f^{m+n}$ in $\mathfrak p$, contradiction.  Hence
+If $ab\in\mathfrak p$, this would put $f^{m+n}$ in $\mathfrak p$, contradiction.
+Hence
 \[
 ab\notin\mathfrak p.
 \]
@@ -105,11 +114,13 @@ Since
 \[
 f\notin\mathfrak p
 \]
-and $f\in S_+$, the prime $\mathfrak p$ does not contain $S_+$.  Hence
+and $f\in S_+$, the prime $\mathfrak p$ does not contain $S_+$.
+Hence
 \[
 \mathfrak p\in\Proj S,
 \]
-contradiction.  Therefore every homogeneous positive-degree element is nilpotent.
+contradiction.
+Therefore every homogeneous positive-degree element is nilpotent.
 :::
 
 <1>3. If every homogeneous element of $S_+$ is nilpotent, then every element of $S_+$ is nilpotent.
@@ -122,7 +133,9 @@ is a finite sum of homogeneous positive-degree components:
 \[
 s=s_{d_1}+\cdots+s_{d_r}.
 \]
-Each $s_{d_i}$ is nilpotent by hypothesis.  The nilpotent elements of a commutative ring form the nilradical, which is an ideal, so their finite sum is nilpotent.  Hence $s$ is nilpotent.
+Each $s_{d_i}$ is nilpotent by hypothesis.
+The nilpotent elements of a commutative ring form the nilradical, which is an ideal, so their finite sum is nilpotent.
+Hence $s$ is nilpotent.
 :::
 
 <1>4. Therefore
@@ -182,7 +195,8 @@ Then
 f(\mathfrak p)\in\Proj S.
 \]
 ::: {.proof}
-The inverse image of a prime ideal under a ring homomorphism is prime, and because $\phi$ preserves degrees, the inverse image of a homogeneous ideal is homogeneous.  Thus
+The inverse image of a prime ideal under a ring homomorphism is prime, and because $\phi$ preserves degrees, the inverse image of a homogeneous ideal is homogeneous.
+Thus
 \[
 \phi^{-1}(\mathfrak p)
 \]
@@ -200,7 +214,8 @@ Hence
 \[
 s\notin\phi^{-1}(\mathfrak p),
 \]
-so the inverse-image prime does not contain $S_+$.  Therefore it belongs to $\Proj S$.
+so the inverse-image prime does not contain $S_+$.
+Therefore it belongs to $\Proj S$.
 :::
 
 <1>7. The map of points
@@ -268,22 +283,26 @@ from <1>8 agree on overlaps and glue to a morphism of schemes
 \boxed{
 f:U\longrightarrow\Proj S.
 }
+\]
 ::: {.proof}
-The affine morphism is the one induced by the ring map in <1>8.  On points it is contraction of primes, hence agrees with the set map in <1>6.
+The affine morphism is the one induced by the ring map in <1>8. On points it is contraction of primes, hence agrees with the set map in <1>6.
 
 If $s,t\in S_+$ are homogeneous, then on the overlap
 \[
 D_+(\phi(s))\cap D_+(\phi(t))
 =D_+(\phi(st))
 \]
-both local morphisms are obtained from the same graded homomorphism $\phi$ after localizing further by $st$.  Hence they agree.  Since the opens $D_+(\phi(s))$ cover $U$ by <1>5, they glue uniquely to the desired scheme morphism.
+both local morphisms are obtained from the same graded homomorphism $\phi$ after localizing further by $st$.
+Hence they agree.
+Since the opens $D_+(\phi(s))$ cover $U$ by <1>5, they glue uniquely to the desired scheme morphism.
 :::
 
 <1>10. Suppose now that there is an integer $d_0$ such that
 \[
 \phi_d:S_d\xrightarrow{\sim}T_d
 \]
-for every $d\ge d_0$.  Then
+for every $d\ge d_0$.
+Then
 \[
 \boxed{U=\Proj T.}
 \]
@@ -292,7 +311,8 @@ Suppose
 \[
 \mathfrak p\in\Proj T
 \]
-contained $\phi(S_+)$.  Then for every
+contained $\phi(S_+)$.
+Then for every
 \[
 d\ge\max(d_0,1),
 \]
@@ -310,7 +330,8 @@ Let
 t\in T_n,
 \qquad n>0,
 \]
-be homogeneous.  Choose $m$ large enough that
+be homogeneous.
+Choose $m$ large enough that
 \[
 mn\ge d_0.
 \]
@@ -391,11 +412,13 @@ For injectivity, suppose
 \[
 \frac a{s^n}\in S_{(s)}
 \]
-maps to zero.  Then for some $m\ge0$,
+maps to zero.
+Then for some $m\ge0$,
 \[
 \phi(s)^m\phi(a)=0
 \]
-in $T$.  Choose $N$ so large that
+in $T$.
+Choose $N$ so large that
 \[
 \deg(s^{m+N}a)\ge d_0.
 \]
@@ -411,7 +434,8 @@ Thus
 \[
 \frac a{s^n}=0
 \]
-in the localization.  Hence the map is injective.
+in the localization.
+Hence the map is injective.
 :::
 
 <1>12. The opens
@@ -440,7 +464,8 @@ Some power
 \[
 s=a^N
 \]
-has degree at least $d_0$.  Since $\mathfrak q$ is prime and $a\notin\mathfrak q$,
+has degree at least $d_0$.
+Since $\mathfrak q$ is prime and $a\notin\mathfrak q$,
 \[
 s\notin\mathfrak q.
 \]
@@ -462,11 +487,12 @@ The opens in <1>12 cover $\Proj S$, and their inverse images are
 \[
 D_+(\phi(s))
 \]
-by <1>7.  On every such pair, <1>11 shows that the defining ring map
+by <1>7. On every such pair, <1>11 shows that the defining ring map
 \[
 S_{(s)}\to T_{(\phi(s))}
 \]
-is an isomorphism.  Hence
+is an isomorphism.
+Hence
 \[
 D_+(\phi(s))
 \xrightarrow{\sim}
@@ -474,7 +500,9 @@ D_+(s)
 \]
 is an isomorphism of affine schemes.
 
-Thus $f$ is an isomorphism on an open cover of the target and the corresponding inverse-image cover of the source.  The local inverses agree on overlaps, so they glue to a global inverse.  Therefore $f$ is an isomorphism.
+Thus $f$ is an isomorphism on an open cover of the target and the corresponding inverse-image cover of the source.
+The local inverses agree on overlaps, so they glue to a global inverse.
+Therefore $f$ is an isomorphism.
 :::
 
 <1>14. Let $V\subseteq\mathbb P^n_k$ be a projective variety with homogeneous coordinate ring
@@ -517,7 +545,8 @@ The standard theorem on $\Proj$ gives
 \[
 D_+(x_i)=\Spec S_{(x_i)}.
 \]
-Step <1>14 gives the same affine coordinate ring for $V_i$.  Hence the scheme associated to $V_i$ is naturally isomorphic to this standard open of $\Proj S$.
+Step <1>14 gives the same affine coordinate ring for $V_i$.
+Hence the scheme associated to $V_i$ is naturally isomorphic to this standard open of $\Proj S$.
 :::
 
 <1>16. These local isomorphisms agree on overlaps, and therefore
@@ -529,14 +558,17 @@ On
 \[
 V_i\cap V_j,
 \]
-the transition from one affine chart to the other is obtained by further localizing the homogeneous coordinate ring by $x_ix_j$ and taking degree zero.  The same localization is the overlap
+the transition from one affine chart to the other is obtained by further localizing the homogeneous coordinate ring by $x_ix_j$ and taking degree zero.
+The same localization is the overlap
 \[
 D_+(x_i)\cap D_+(x_j)
 =D_+(x_ix_j)
 \]
 inside $\Proj S$.
 
-Thus the affine identifications from <1>15 commute with the overlap identifications.  The associated scheme $t(V)$ is obtained by gluing the affine schemes of the $V_i$ by these transition maps, while $\Proj S$ is obtained by gluing the same affine schemes by the same maps.  The local isomorphisms therefore glue to the displayed global isomorphism.
+Thus the affine identifications from <1>15 commute with the overlap identifications.
+The associated scheme $t(V)$ is obtained by gluing the affine schemes of the $V_i$ by these transition maps, while $\Proj S$ is obtained by gluing the same affine schemes by the same maps.
+The local isomorphisms therefore glue to the displayed global isomorphism.
 :::
 
 <1>17. Q.E.D.

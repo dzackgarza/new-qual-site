@@ -41,13 +41,11 @@ Cf.
 :::
 
 ::: {.solution}
-It is enough to prove finiteness after extending the ground field to an
-algebraic closure: base change preserves the genus and gives an injection
+It is enough to prove finiteness after extending the ground field to an algebraic closure: base change preserves the genus and gives an injection
 $$
 \Aut_k(X)\hookrightarrow\Aut_{\bar k}(X_{\bar k}).
 $$
-Thus assume from now on that $k$ is algebraically closed of characteristic
-$0$.
+Thus assume from now on that $k$ is algebraically closed of characteristic $0$.
 
 <1>1. A nonidentity automorphism of a genus-$g$ curve fixes at most
 $$
@@ -60,7 +58,8 @@ Let
 $$
 1\ne\sigma\in\Aut X.
 $$
-Choose $P\in X$ with $\sigma(P)\ne P$.  Riemann--Roch gives
+Choose $P\in X$ with $\sigma(P)\ne P$.
+Riemann--Roch gives
 $$
 \ell((g+1)P)
 \ge
@@ -71,29 +70,26 @@ so there is a nonconstant function
 $$
 h\in L((g+1)P).
 $$
-Its only possible pole is $P$, of order at most $g+1$; since $X$ is
-projective and $h$ is nonconstant, it actually has a pole there.
+Its only possible pole is $P$, of order at most $g+1$; since $X$ is projective and $h$ is nonconstant, it actually has a pole there.
 
 Put
 $$
 u=h-\sigma^*h.
 $$
-The poles of $\sigma^*h$ are supported at $\sigma^{-1}(P)$, which is
-different from $P$.  Hence $u\ne0$, and
+The poles of $\sigma^*h$ are supported at $\sigma^{-1}(P)$, which is different from $P$.
+Hence $u\ne0$, and
 $$
 \deg(u)_\infty\le2g+2.
 $$
-If $Q$ is fixed by $\sigma$, then $Q$ is neither $P$ nor
-$\sigma^{-1}(P)$ and
+If $Q$ is fixed by $\sigma$, then $Q$ is neither $P$ nor $\sigma^{-1}(P)$ and
 $$
 u(Q)
 =
 h(Q)-h(\sigma(Q))
 =0.
 $$
-Thus every fixed point is a zero of $u$.  A nonzero rational function has
-zero divisor and pole divisor of the same degree, so $\sigma$ has at most
-$2g+2$ fixed points.
+Thus every fixed point is a zero of $u$.
+A nonzero rational function has zero divisor and pole divisor of the same degree, so $\sigma$ has at most $2g+2$ fixed points.
 :::
 
 <1>2. If $X$ is hyperelliptic, then $\Aut X$ is finite.
@@ -105,7 +101,8 @@ f:X\longrightarrow\PP^1,
 \qquad
 \deg f=2.
 $$
-The $g^1_2$ is unique.  Indeed, if
+The $g^1_2$ is unique.
+Indeed, if
 $$
 f,h:X\longrightarrow\PP^1
 $$
@@ -113,16 +110,14 @@ were two degree-$2$ maps defining distinct pencils, consider
 $$
 (f,h):X\longrightarrow\PP^1\times\PP^1
 $$
-and let $\delta$ be its generic degree onto its image.  Since $\delta$
-divides the degrees of both projections, $\delta$ is $1$ or $2$.  If
-$\delta=2$, then both projections from the image have degree $1$, so the
-image is a curve of bidegree $(1,1)$ and the two maps differ only by an
-automorphism of $\PP^1$.  That would give the same pencil.  Thus distinct
-pencils force $\delta=1$.
+and let $\delta$ be its generic degree onto its image.
+Since $\delta$ divides the degrees of both projections, $\delta$ is $1$ or $2$.
+If $\delta=2$, then both projections from the image have degree $1$, so the image is a curve of bidegree $(1,1)$ and the two maps differ only by an automorphism of $\PP^1$.
+That would give the same pencil.
+Thus distinct pencils force $\delta=1$.
 
 The product map is therefore birational onto a curve of bidegree $(2,2)$.
-Such a curve has
-arithmetic genus
+Such a curve has arithmetic genus
 $$
 (2-1)(2-1)=1,
 $$
@@ -146,13 +141,11 @@ so
 $$
 \deg R_f=2g+2.
 $$
-In characteristic $0$ the quadratic cover is separable and every ramification
-index is $2$; hence it has $2g+2$ distinct branch points on $\PP^1$.
+In characteristic $0$ the quadratic cover is separable and every ramification index is $2$; hence it has $2g+2$ distinct branch points on $\PP^1$.
 The automorphism $\bar\sigma$ permutes this finite branch set.
 
-The subgroup of $\PGL_2(k)$ preserving a set of at least three points is
-finite: its action on that set is faithful because an automorphism of
-$\PP^1$ fixing three distinct points is the identity.  The kernel of
+The subgroup of $\PGL_2(k)$ preserving a set of at least three points is finite: its action on that set is faithful because an automorphism of $\PP^1$ fixing three distinct points is the identity.
+The kernel of
 $$
 \Aut X\longrightarrow\PGL_2(k)
 $$
@@ -160,11 +153,12 @@ consists of automorphisms of the separable quadratic extension
 $$
 k(X)/k(\PP^1),
 $$
-so it has order at most $2$.  Hence $\Aut X$ is finite.
+so it has order at most $2$.
+Hence $\Aut X$ is finite.
 :::
 
-<1>3. Suppose now that $X$ is not hyperelliptic.  The canonical system
-embeds
+<1>3. Suppose now that $X$ is not hyperelliptic.
+The canonical system embeds
 $$
 X\hookrightarrow\PP^{g-1}
 $$
@@ -174,8 +168,8 @@ $$
 $$
 
 ::: {.proof}
-A nonhyperelliptic curve of genus $g\ge2$ has very ample canonical bundle,
-so the complete canonical system gives the stated embedding.  Here
+A nonhyperelliptic curve of genus $g\ge2$ has very ample canonical bundle, so the complete canonical system gives the stated embedding.
+Here
 $$
 n=g-1,
 \qquad
@@ -197,13 +191,12 @@ g^3-g.
 $$
 :::
 
-<1>4. At every point $P\in X$, its canonical hyperosculation weight
-$w(P)$ satisfies
+<1>4. At every point $P\in X$, its canonical hyperosculation weight $w(P)$ satisfies
 $$
 w(P)\le\frac{g(g-1)}2,
 $$
-and equality would force $X$ to be hyperelliptic.  Hence in the present
-case
+and equality would force $X$ to be hyperelliptic.
+Hence in the present case
 $$
 \boxed{
 w(P)\le\frac{g(g-1)}2-1.
@@ -215,8 +208,8 @@ Let
 $$
 1=n_1<n_2<\cdots<n_g\le2g-1
 $$
-be the gap sequence at $P$.  The vanishing orders of the canonical series
-are
+be the gap sequence at $P$.
+The vanishing orders of the canonical series are
 $$
 n_1-1,\ldots,n_g-1,
 $$
@@ -231,13 +224,14 @@ We claim
 $$
 n_i\le2i-1
 $$
-for every $i$.  For $i=g$ this is the usual gap bound
-$n_g\le2g-1$.  If $i<g$ and $n_i\ge2i$, then among
+for every $i$.
+For $i=g$ this is the usual gap bound $n_g\le2g-1$.
+If $i<g$ and $n_i\ge2i$, then among
 $$
 1,\ldots,2i-1
 $$
-there are at most $i-1$ gaps.  Thus there are at least $i$ positive
-nongaps in this range, and therefore
+there are at most $i-1$ gaps.
+Thus there are at least $i$ positive nongaps in this range, and therefore
 $$
 \ell((2i-1)P)\ge i+1.
 $$
@@ -270,28 +264,26 @@ w(P)
 =
 \frac{g(g-1)}2.
 $$
-If equality holds, then every inequality above is an equality, so the gap
-sequence is
+If equality holds, then every inequality above is an equality, so the gap sequence is
 $$
 1,3,5,\ldots,2g-1.
 $$
-In particular $2$ is a nongap at $P$.  Hence there is a nonconstant rational
-function with pole divisor at most $2P$, giving a finite map
+In particular $2$ is a nongap at $P$.
+Hence there is a nonconstant rational function with pole divisor at most $2P$, giving a finite map
 $$
 X\longrightarrow\PP^1
 $$
-of degree at most $2$.  Since $g\ge2$, its degree cannot be $1$, so it has
-degree $2$ and $X$ is hyperelliptic.  This is excluded, proving the strict
-bound.
+of degree at most $2$.
+Since $g\ge2$, its degree cannot be $1$, so it has degree $2$ and $X$ is hyperelliptic.
+This is excluded, proving the strict bound.
 :::
 
-<1>5. A nonhyperelliptic curve has more than $2g+2$ distinct
-hyperosculation points.
+<1>5. A nonhyperelliptic curve has more than $2g+2$ distinct hyperosculation points.
 
 ::: {.proof}
 Let
 $$
-S=\Supp W,
+S=\operatorname{Supp} W,
 \qquad
 N=\size S.
 $$
@@ -324,23 +316,21 @@ $$
 <1>6. If $X$ is nonhyperelliptic, then $\Aut X$ is finite.
 
 ::: {.proof}
-Every automorphism preserves the canonical linear system, hence preserves
-its vanishing sequences and permutes the finite set $S$ of hyperosculation
-points.  Thus there is a homomorphism
+Every automorphism preserves the canonical linear system, hence preserves its vanishing sequences and permutes the finite set $S$ of hyperosculation points.
+Thus there is a homomorphism
 $$
 \Aut X\longrightarrow\operatorname{Sym}(S).
 $$
-If an automorphism lies in the kernel, it fixes every point of $S$.  Step
-<1>5 gives more than $2g+2$ such fixed points, so step <1>1 forces the
-automorphism to be the identity.  Hence the homomorphism is injective.
-Since $S$ is finite, so is $\operatorname{Sym}(S)$, and therefore
-$\Aut X$ is finite.
+If an automorphism lies in the kernel, it fixes every point of $S$.
+Step <1>5 gives more than $2g+2$ such fixed points, so step <1>1 forces the automorphism to be the identity.
+Hence the homomorphism is injective.
+Since $S$ is finite, so is $\operatorname{Sym}(S)$, and therefore $\Aut X$ is finite.
 :::
 
 <1>7. Q.E.D.
 
 ::: {.proof}
-Step <1>2 proves the hyperelliptic case, and steps <1>3--<1>6 prove the
-nonhyperelliptic case.  These exhaust all curves of genus at least $2$.
+Step <1>2 proves the hyperelliptic case, and steps <1>3--<1>6 prove the nonhyperelliptic case.
+These exhaust all curves of genus at least $2$.
 :::
 :::

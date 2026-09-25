@@ -41,8 +41,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $k$ be an algebraically closed field of characteristic zero. Show that if
-$X$ is a connected complete $k$-variety, then
+Let $k$ be an algebraically closed field of characteristic zero.
+Show that if $X$ is a connected complete $k$-variety, then
 $$
 \OO_X(X)=k,
 $$
@@ -73,23 +73,24 @@ is closed in $\PP^1_k$.
 ::: {.proof}
 Because $X$ is complete, for every $k$-variety $Y$ the projection
 $$
-\pr_2:X\times_k Y\longrightarrow Y
+\operatorname{pr}_2:X\times_k Y\longrightarrow Y
 $$
 is a closed map.
 
-Take $Y=\PP^1_k$. Since $\PP^1_k$ is separated, the graph
+Take $Y=\PP^1_k$.
+Since $\PP^1_k$ is separated, the graph
 $$
 \Gamma_{j\circ f}
 \subseteq
 X\times_k\PP^1_k
 $$
-is closed. Its image under $\pr_2$ is exactly
+is closed.
+Its image under $\operatorname{pr}_2$ is exactly
 $$
-\pr_2(\Gamma_{j\circ f})
+\operatorname{pr}_2(\Gamma_{j\circ f})
 =(j\circ f)(X).
 $$
-The projection is closed by completeness of $X$, so this image is closed in
-$\PP^1_k$.
+The projection is closed by completeness of $X$, so this image is closed in $\PP^1_k$.
 :::
 
 <1>2. The image $(j\circ f)(X)$ is finite.
@@ -101,26 +102,21 @@ $$
 =
 \PP^1_k\setminus\{\infty\}.
 $$
-Hence the closed subset $(j\circ f)(X)$ from step <1>1 is a proper closed
-subset of $\PP^1_k$.
+Hence the closed subset $(j\circ f)(X)$ from step <1>1 is a proper closed subset of $\PP^1_k$.
 
-Every proper closed subset of $\PP^1_k$ is finite: it is contained in the
-zero locus of a nonzero homogeneous polynomial in two variables, and such a
-zero locus has only finitely many points on $\PP^1_k$. Therefore
-$(j\circ f)(X)$ is finite.
+Every proper closed subset of $\PP^1_k$ is finite: it is contained in the zero locus of a nonzero homogeneous polynomial in two variables, and such a zero locus has only finitely many points on $\PP^1_k$.
+Therefore $(j\circ f)(X)$ is finite.
 :::
 
 <1>3. The image $(j\circ f)(X)$ consists of one point.
 
 ::: {.proof}
-A morphism is continuous in the Zariski topology, so the image of the
-connected space $X$ is connected.
+A morphism is continuous in the Zariski topology, so the image of the connected space $X$ is connected.
 
-By step <1>2, $(j\circ f)(X)$ is a proper closed subset of $\PP^1_k$, hence
-a finite union of closed points. Since $k$ is algebraically closed, those
-closed points are $k$-rational. A finite union of closed points has the
-discrete induced topology, and a finite discrete space is connected only when
-it has one point. Hence
+By step <1>2, $(j\circ f)(X)$ is a proper closed subset of $\PP^1_k$, hence a finite union of closed points.
+Since $k$ is algebraically closed, those closed points are $k$-rational.
+A finite union of closed points has the discrete induced topology, and a finite discrete space is connected only when it has one point.
+Hence
 $$
 (j\circ f)(X)=\{a\}
 $$
@@ -133,7 +129,8 @@ $$
 <1>4. Every $f\in\OO_X(X)$ is the constant function $a$ from step <1>3.
 
 ::: {.proof}
-The open immersion $j$ is injective on points. Since
+The open immersion $j$ is injective on points.
+Since
 $$
 (j\circ f)(X)=\{a\},
 $$

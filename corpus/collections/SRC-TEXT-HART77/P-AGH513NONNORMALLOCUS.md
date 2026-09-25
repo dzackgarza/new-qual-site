@@ -46,8 +46,7 @@ $$
 is finite.
 
 ::: {.proof}
-The finiteness theorem for normalization says that the integral closure of a finitely generated domain over a field in its finite fraction-field extension is finite as a module over the original ring [@Har10a, Theorem I.3.9A].
-Here the extension of fraction fields is the identity $K/K$, so $\overline A$ is a finite $A$-module.
+The finiteness theorem for normalization says that the integral closure of a finitely generated domain over a field in its finite fraction-field extension is finite as a module over the original ring [@Har10a, Theorem I.3.9A]. Here the extension of fraction fields is the identity $K/K$, so $\overline A$ is a finite $A$-module.
 Its quotient $M$ is therefore finite as well.
 :::
 
@@ -94,7 +93,7 @@ Since $A_{\mathfrak p}$ is already a domain, integrally closed is exactly normal
 $$
 \boxed{\operatorname{NNor}(U)
 =
-\Supp_A(M)
+\operatorname{Supp}_A(M)
 =
 V(\Ann_A M).}
 $$
@@ -104,7 +103,7 @@ By step <1>2, a prime $\mathfrak p$ is nonnormal exactly when the localization $
 This is the definition of the support of the finite module $M$.
 For a finite module over a ring,
 $$
-\Supp_A(M)=V(\Ann_A M).
+\operatorname{Supp}_A(M)=V(\Ann_A M).
 $$
 Indeed, if generators $m_1,\ldots,m_s$ all vanish after localization at $\mathfrak p$, choose denominators outside $\mathfrak p$ killing them and multiply those denominators to obtain an element of $\Ann_A M$ outside $\mathfrak p$.
 The converse is immediate.
@@ -124,7 +123,7 @@ By step <1>2,
 $$
 M_{(0)}=0.
 $$
-Thus $\eta\notin\Supp M$.
+Thus $\eta\notin\operatorname{Supp} M$.
 Since the support is closed and omits the generic point of the irreducible space $U$, it is a proper closed subset.
 Equivalently, $\Ann_A M$ contains a nonzero element, and the principal open defined by that element consists entirely of normal points.
 :::

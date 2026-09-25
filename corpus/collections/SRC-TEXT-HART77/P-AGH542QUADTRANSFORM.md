@@ -61,8 +61,8 @@ Hint: Use (Ex.
 
 ::: {.remark title="Erratum"}
 The exclusion of the three lines joining pairs of base points is necessary.
-Those are precisely the three curves contracted by the quadratic
-transformation. For example, the line through $P_2$ and $P_3$ has
+Those are precisely the three curves contracted by the quadratic transformation.
+For example, the line through $P_2$ and $P_3$ has
 $$
 d=1,
 \qquad
@@ -70,8 +70,7 @@ r_1=0,
 \qquad
 r_2=r_3=1,
 $$
-so the displayed degree formula gives $d'=0$: its image is the point $Q_1$,
-not a plane curve.
+so the displayed degree formula gives $d'=0$: its image is the point $Q_1$, not a plane curve.
 :::
 
 ::: {.solution}
@@ -79,8 +78,8 @@ Let
 $$
 p:S=\operatorname{Bl}_{P_1,P_2,P_3}\PP^2\longrightarrow\PP^2
 $$
-be the blowup of the three base points. Write $H$ for the pullback of a
-line and $E_i$ for the exceptional curve over $P_i$.
+be the blowup of the three base points.
+Write $H$ for the pullback of a line and $E_i$ for the exceptional curve over $P_i$.
 
 <1>1. The quadratic transformation lifts to a morphism
 $$
@@ -94,21 +93,17 @@ H'=2H-E_1-E_2-E_3.
 $$
 
 ::: {.proof}
-After choosing coordinates so that the $P_i$ are the three coordinate
-vertices, the quadratic transformation is
+After choosing coordinates so that the $P_i$ are the three coordinate vertices, the quadratic transformation is
 $$
 [x_0:x_1:x_2]
-\dashmapsto
+\dashrightarrow
 [x_1x_2:x_0x_2:x_0x_1]
 $$
-[[P-AGH46CREMONA]]. Its defining quadrics are exactly the conics through all
-three base points, so on the blowup their strict transforms have divisor
-class
+[[P-AGH46CREMONA]]. Its defining quadrics are exactly the conics through all three base points, so on the blowup their strict transforms have divisor class
 $$
 2H-E_1-E_2-E_3.
 $$
-The three base points are removed by the blowup, hence this system defines
-the morphism $q$ resolving the rational map.
+The three base points are removed by the blowup, hence this system defines the morphism $q$ resolving the rational map.
 :::
 
 <1>2. Let
@@ -143,18 +138,15 @@ H'\cdot L_{23}
 2-1-1
 =0.
 $$
-The same calculation holds for the other two lines. Each $L_{jk}$ is a
-nonsingular rational curve with
+The same calculation holds for the other two lines.
+Each $L_{jk}$ is a nonsingular rational curve with
 $$
 L_{jk}^2=1-1-1=-1,
 $$
-so the resolved quadratic transformation contracts precisely these three
-$(-1)$-curves.
+so the resolved quadratic transformation contracts precisely these three $(-1)$-curves.
 
-The quadratic transformation is an involution [[P-AGH46CREMONA]]. Applying
-the same construction on the target therefore blows up the three target
-base points $Q_1,Q_2,Q_3$ and recovers $S$. Thus $L_{23},L_{13},L_{12}$ are
-the exceptional curves over $Q_1,Q_2,Q_3$, respectively.
+The quadratic transformation is an involution [[P-AGH46CREMONA]]. Applying the same construction on the target therefore blows up the three target base points $Q_1,Q_2,Q_3$ and recovers $S$.
+Thus $L_{23},L_{13},L_{12}$ are the exceptional curves over $Q_1,Q_2,Q_3$, respectively.
 :::
 
 <1>3. The strict transform $\overline C\subseteq S$ of $C$ has class
@@ -166,25 +158,19 @@ dH-r_1E_1-r_2E_2-r_3E_3.}
 $$
 
 ::: {.proof}
-The total transform of a plane curve of degree $d$ has class $dH$. At a
-blown-up point $P_i$ of multiplicity $r_i$, the exceptional curve occurs in
-the total transform with coefficient $r_i$. Therefore the standard
-strict-transform formula gives the displayed class. This calculation uses
-only the multiplicities at the three chosen points; $C$ may have arbitrary
-other singularities.
+The total transform of a plane curve of degree $d$ has class $dH$.
+At a blown-up point $P_i$ of multiplicity $r_i$, the exceptional curve occurs in the total transform with coefficient $r_i$.
+Therefore the standard strict-transform formula gives the displayed class.
+This calculation uses only the multiplicities at the three chosen points; $C$ may have arbitrary other singularities.
 :::
 
-<1>4. Because $C$ is not one of the three contracted lines, the morphism
-$q$ maps $\overline C$ birationally onto the target strict transform
-$C'\subseteq\PP^{2\prime}$.
+<1>4. Because $C$ is not one of the three contracted lines, the morphism $q$ maps $\overline C$ birationally onto the target strict transform $C'\subseteq\PP^{2\prime}$.
 
 ::: {.proof}
-The morphism $q$ is an isomorphism away from the three curves
-$L_{23},L_{13},L_{12}$. Since $C$ is irreducible and is not one of the
-corresponding three lines in the source plane, its strict transform
-$\overline C$ is not one of these exceptional curves. Hence its generic
-point lies in the locus on which $q$ is an isomorphism. Its image is
-therefore an irreducible curve $C'$, and
+The morphism $q$ is an isomorphism away from the three curves $L_{23},L_{13},L_{12}$.
+Since $C$ is irreducible and is not one of the corresponding three lines in the source plane, its strict transform $\overline C$ is not one of these exceptional curves.
+Hence its generic point lies in the locus on which $q$ is an isomorphism.
+Its image is therefore an irreducible curve $C'$, and
 $$
 q|_{\overline C}:\overline C\dashrightarrow C'
 $$
@@ -198,7 +184,8 @@ d'=2d-r_1-r_2-r_3.}
 $$
 
 ::: {.proof}
-The pullback by $q$ of a line in the target plane is $H'$. Therefore
+The pullback by $q$ of a line in the target plane is $H'$.
+Therefore
 $$
 \deg C'
 =
@@ -235,9 +222,9 @@ $$
 q:S=\operatorname{Bl}_{Q_1,Q_2,Q_3}\PP^{2\prime}
 \longrightarrow\PP^{2\prime},
 $$
-the exceptional curve over $Q_1$ is $L_{23}$. For the blowup of a point,
-the multiplicity of a curve at the centre equals the intersection of its
-strict transform with the exceptional curve. Hence
+the exceptional curve over $Q_1$ is $L_{23}$.
+For the blowup of a point, the multiplicity of a curve at the centre equals the intersection of its strict transform with the exceptional curve.
+Hence
 $$
 \mu_{Q_1}(C')
 =
@@ -279,25 +266,20 @@ and
 $$
 \overline C\cdot L_{12}=d-r_1-r_2.
 $$
-By the same blowup multiplicity formula as in step <1>6, these are exactly
-the target multiplicities at $Q_2,Q_3$.
+By the same blowup multiplicity formula as in step <1>6, these are exactly the target multiplicities at $Q_2,Q_3$.
 :::
 
-<1>8. The formulas remain valid when $C$ has arbitrary singularities away
-from, or at, the three base points.
+<1>8. The formulas remain valid when $C$ has arbitrary singularities away from, or at, the three base points.
 
 ::: {.proof}
-Every calculation above takes place in the divisor class group of the smooth
-common resolution $S$ and uses only the multiplicities $r_i$ entering the
-strict-transform class. No step assumes that the germ of $C$ at any $P_i$
-is ordinary or nonsingular, nor that $C$ is nonsingular elsewhere. Thus the
-degree and target-multiplicity formulas hold for arbitrary singularities.
+Every calculation above takes place in the divisor class group of the smooth common resolution $S$ and uses only the multiplicities $r_i$ entering the strict-transform class.
+No step assumes that the germ of $C$ at any $P_i$ is ordinary or nonsingular, nor that $C$ is nonsingular elsewhere.
+Thus the degree and target-multiplicity formulas hold for arbitrary singularities.
 :::
 
 <1>9. Q.E.D.
 
 ::: {.proof}
-Step <1>5 proves the degree formula, steps <1>6--<1>7 prove the three
-multiplicity formulas, and step <1>8 establishes the stated generality.
+Step <1>5 proves the degree formula, steps <1>6--<1>7 prove the three multiplicity formulas, and step <1>8 establishes the stated generality.
 :::
 :::

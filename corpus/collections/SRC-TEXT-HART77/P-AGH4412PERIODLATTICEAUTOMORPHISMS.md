@@ -66,14 +66,15 @@ y^2
 \frac34.
 $$
 
-<1>1. Let $\alpha\in R=\End(X,P_0)$ correspond to multiplication by
-$\alpha$ on $\CC/\Lambda$. Write
+<1>1. Let $\alpha\in R=\Endo(X,P_0)$ correspond to multiplication by $\alpha$ on $\CC/\Lambda$.
+Write
 $$
 \alpha=a+b\tau,
 \qquad
 \alpha\tau=c+d\tau,
 $$
-with $a,b,c,d\in\ZZ$. If $\alpha\notin\ZZ$, then $b\ne0$ and
+with $a,b,c,d\in\ZZ$.
+If $\alpha\notin\ZZ$, then $b\ne0$ and
 $$
 \boxed{
 b\tau^2+(a-d)\tau-c=0.
@@ -85,10 +86,9 @@ Proposition IV.4.18 says precisely that
 $$
 R=\{\alpha\in\CC:\alpha\Lambda\subseteq\Lambda\}.
 $$
-Since $1,\tau$ is a $\ZZ$-basis of $\Lambda$, the two displayed integral
-expressions for $\alpha$ and $\alpha\tau$ are necessary and sufficient.
-Eliminating $\alpha$ gives the boxed quadratic equation. If $b=0$, then
-$\alpha=a\in\ZZ$.
+Since $1,\tau$ is a $\ZZ$-basis of $\Lambda$, the two displayed integral expressions for $\alpha$ and $\alpha\tau$ are necessary and sufficient.
+Eliminating $\alpha$ gives the boxed quadratic equation.
+If $b=0$, then $\alpha=a\in\ZZ$.
 :::
 
 <1>2. If $\deg f_\alpha\le2$ and $\alpha\notin\ZZ$, then
@@ -142,15 +142,16 @@ With $b=1$, step <1>1 gives
 $$
 \tau^2+(a-d)\tau-c=0,
 $$
-which is the first assertion. Since this polynomial has real integral
-coefficients and $\tau\notin\RR$, its other root is $\bar\tau$. Vieta's
-formulas give
+which is the first assertion.
+Since this polynomial has real integral coefficients and $\tau\notin\RR$, its other root is $\bar\tau$.
+Vieta's formulas give
 $$
 \tau+\bar\tau=t,
 \qquad
 \tau\bar\tau=-c.
 $$
-Thus $t=2x$ and $-c=\abs\tau^2$. Also
+Thus $t=2x$ and $-c=\abs\tau^2$.
+Also
 $$
 \abs{a+\tau}^2
 =
@@ -158,9 +159,8 @@ a^2+a(\tau+\bar\tau)+\tau\bar\tau
 =
 a^2+at-c.
 $$
-Because $-1/2\le x<1/2$ and $t=2x\in\ZZ$, one has
-$t\in\{-1,0\}$. The excluded right boundary $x=1/2$ is precisely the
-boundary convention making the representative in $G$ unique.
+Because $-1/2\le x<1/2$ and $t=2x\in\ZZ$, one has $t\in\{-1,0\}$.
+The excluded right boundary $x=1/2$ is precisely the boundary convention making the representative in $G$ unique.
 :::
 
 <1>4. If $X$ has an automorphism fixing $P_0$ other than $\pm1$, then
@@ -173,13 +173,14 @@ $$
 $$
 
 ::: {.proof}
-An automorphism has degree $1$. If its multiplier $\alpha$ were an integer,
-then
+An automorphism has degree $1$.
+If its multiplier $\alpha$ were an integer, then
 $$
 1=\abs\alpha^2=\alpha^2,
 $$
-so $\alpha=\pm1$. Thus a new automorphism has $\alpha\notin\ZZ$, and steps
-<1>2--<1>3 apply. Since
+so $\alpha=\pm1$.
+Thus a new automorphism has $\alpha\notin\ZZ$, and steps <1>2--<1>3 apply.
+Since
 $$
 1=\abs\alpha^2=a^2+at-c,
 $$
@@ -188,12 +189,13 @@ $$
 c=a^2+at-1.
 $$
 
-If $t=0$, then $c=a^2-1$. The quadratic
+If $t=0$, then $c=a^2-1$.
+The quadratic
 $$
 \tau^2-c=0
 $$
-must have nonreal roots, so its discriminant $4c$ is negative. Hence
-$a=0$, $c=-1$, and
+must have nonreal roots, so its discriminant $4c$ is negative.
+Hence $a=0$, $c=-1$, and
 $$
 \tau^2+1=0.
 $$
@@ -216,9 +218,9 @@ $$
 \tau=\frac{-1+\sqrt{-3}}2=\omega.
 $$
 
-Conversely, multiplication by $i$ preserves $\ZZ+\ZZ i$, and
-multiplication by $\omega$ preserves $\ZZ+\ZZ\omega$. Both have norm $1$
-and are different from $\pm1$. This proves part (a).
+Conversely, multiplication by $i$ preserves $\ZZ+\ZZ i$, and multiplication by $\omega$ preserves $\ZZ+\ZZ\omega$.
+Both have norm $1$ and are different from $\pm1$.
+This proves part (a).
 :::
 
 <1>5. If $X$ has an endomorphism of degree $2$, then
@@ -233,8 +235,9 @@ $$
 $$
 
 ::: {.proof}
-No integer multiplier has degree $2$, since an integer $n$ has degree
-$n^2$. Hence $\alpha\notin\ZZ$, and steps <1>2--<1>3 apply. Now
+No integer multiplier has degree $2$, since an integer $n$ has degree $n^2$.
+Hence $\alpha\notin\ZZ$, and steps <1>2--<1>3 apply.
+Now
 $$
 2=\abs\alpha^2=a^2+at-c,
 $$
@@ -243,11 +246,13 @@ $$
 c=a^2+at-2.
 $$
 
-If $t=0$, then $c=a^2-2$. Nonreality of the roots gives
+If $t=0$, then $c=a^2-2$.
+Nonreality of the roots gives
 $$
 4c=4a^2-8<0,
 $$
-so $a\in\{-1,0,1\}$. For $a=\pm1$ one has $c=-1$ and therefore
+so $a\in\{-1,0,1\}$.
+For $a=\pm1$ one has $c=-1$ and therefore
 $$
 \tau=i.
 $$
@@ -256,14 +261,16 @@ $$
 \tau=\sqrt{-2}.
 $$
 
-If $t=-1$, then $c=a^2-a-2$. The discriminant condition is
+If $t=-1$, then $c=a^2-a-2$.
+The discriminant condition is
 $$
 1+4c
 =
 4a^2-4a-7
 <0,
 $$
-so $a=0$ or $a=1$. In either case $c=-2$, and hence
+so $a=0$ or $a=1$.
+In either case $c=-2$, and hence
 $$
 \tau^2+\tau+2=0.
 $$
@@ -274,8 +281,7 @@ $$
 There are no other possibilities.
 :::
 
-<1>6. Each of the three values in step <1>5 actually has a degree-$2$
-endomorphism.
+<1>6. Each of the three values in step <1>5 actually has a degree-$2$ endomorphism.
 
 ::: {.proof}
 For $\tau=i$, multiplication by
@@ -284,8 +290,7 @@ $$
 $$
 preserves $\ZZ+\ZZ i$ and has squared absolute value $2$.
 
-For $\tau=\sqrt{-2}$, multiplication by $\tau$ preserves
-$\ZZ+\ZZ\tau$ because $\tau^2=-2$, and
+For $\tau=\sqrt{-2}$, multiplication by $\tau$ preserves $\ZZ+\ZZ\tau$ because $\tau^2=-2$, and
 $$
 \abs{\tau}^2=2.
 $$
@@ -294,16 +299,15 @@ For
 $$
 \tau=\frac{-1+\sqrt{-7}}2,
 $$
-one has $\tau^2+\tau+2=0$. Hence multiplication by $\tau$ preserves
-$\ZZ+\ZZ\tau$, and again
+one has $\tau^2+\tau+2=0$.
+Hence multiplication by $\tau$ preserves $\ZZ+\ZZ\tau$, and again
 $$
 \abs{\tau}^2=\tau\bar\tau=2.
 $$
 Exercise IV.4.11(a) therefore gives degree $2$ in all three cases.
 :::
 
-<1>7. The three period values match the three $j$-values of
-[[P-AGH445DEGREETWOENDOMORPHISM|Exercise IV.4.5]] as follows:
+<1>7. The three period values match the three $j$-values of [[P-AGH445DEGREETWOENDOMORPHISM|Exercise IV.4.5]] as follows:
 $$
 \boxed{
 \begin{array}{c|c|c}
@@ -320,9 +324,7 @@ For $\tau=i$, Example IV.4.20.1 already gives
 $$
 j(i)=1728.
 $$
-The other two lattices have endomorphism rings containing the quadratic
-orders of discriminants $-8$ and $-7$, respectively: their defining
-equations are
+The other two lattices have endomorphism rings containing the quadratic orders of discriminants $-8$ and $-7$, respectively: their defining equations are
 $$
 \tau^2+2=0
 $$
@@ -336,15 +338,13 @@ H_{-8}(T)=T-8000,
 \qquad
 H_{-7}(T)=T+3375.
 $$
-Thus the associated singular moduli are $8000$ and $-3375$. These are
-exactly the two remaining $j$-values found in Exercise IV.4.5.
+Thus the associated singular moduli are $8000$ and $-3375$.
+These are exactly the two remaining $j$-values found in Exercise IV.4.5.
 :::
 
 <1>8. Q.E.D.
 
 ::: {.proof}
-Step <1>4 proves part (a), steps <1>5--<1>6 prove the complete list in part
-(b), and step <1>7 matches the three period representatives with the three
-$j$-values from Exercise IV.4.5.
+Step <1>4 proves part (a), steps <1>5--<1>6 prove the complete list in part (b), and step <1>7 matches the three period representatives with the three $j$-values from Exercise IV.4.5.
 :::
 :::

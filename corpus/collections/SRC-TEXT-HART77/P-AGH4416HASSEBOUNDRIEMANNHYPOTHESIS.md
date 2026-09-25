@@ -58,11 +58,9 @@ Conclude for $p \geq 5$ that $X$ has Hasse invariant 0 if and only if $N=p+1$.
 :::
 
 ::: {.solution}
-Let $\pi=F'$ denote the $q$-power Frobenius after the identification in
-part (a), and write $O$ for the given $\FF_q$-rational origin.
+Let $\pi=F'$ denote the $q$-power Frobenius after the identification in part (a), and write $O$ for the given $\FF_q$-rational origin.
 
-<1>1. The Frobenius twist $X_q$ is isomorphic to $X$ over $k$, and under
-this identification
+<1>1. The Frobenius twist $X_q$ is isomorphic to $X$ over $k$, and under this identification
 $$
 \boxed{\pi(x:y:z)=(x^q:y^q:z^q).}
 $$
@@ -72,16 +70,18 @@ Choose a homogeneous equation
 $$
 G(x,y,z)=0
 $$
-for $X$ whose coefficients lie in $\FF_q$. The $q$-Frobenius twist is
-obtained by applying the $q$-power automorphism of $k$ to the coefficients.
+for $X$ whose coefficients lie in $\FF_q$.
+The $q$-Frobenius twist is obtained by applying the $q$-power automorphism of $k$ to the coefficients.
 Every coefficient of $G$ is fixed, so the twisted equation is again $G=0$.
 Thus $X_q\cong X$ over $k$.
 
-The $k$-linear Frobenius is the coordinate $q$-power map. Since
+The $k$-linear Frobenius is the coordinate $q$-power map.
+Since
 $$
 G(x^q,y^q,z^q)=G(x,y,z)^q,
 $$
-it preserves $X$ and has the displayed form. This proves part (a).
+it preserves $X$ and has the displayed form.
+This proves part (a).
 :::
 
 <1>2. The endomorphism
@@ -91,7 +91,8 @@ $$
 is separable.
 
 ::: {.proof}
-The differential of the $q$-power Frobenius is zero. Hence
+The differential of the $q$-power Frobenius is zero.
+Hence
 $$
 d(1_X-\pi)_O
 =
@@ -99,8 +100,8 @@ d(1_X)_O-d\pi_O
 =
 \id_{T_OX},
 $$
-which is nonzero. A homomorphism of elliptic curves is separable exactly
-when its differential at the origin is nonzero, so $1_X-\pi$ is separable.
+which is nonzero.
+A homomorphism of elliptic curves is separable exactly when its differential at the origin is nonzero, so $1_X-\pi$ is separable.
 :::
 
 <1>3. Its kernel is exactly
@@ -113,8 +114,8 @@ A geometric point $P=(x:y:z)$ lies in the kernel exactly when
 $$
 \pi(P)=P.
 $$
-By step <1>1 this is equivalent to $P$ being fixed by the $q$-power
-Frobenius, hence to $P$ being defined over $\FF_q$. This proves part (b).
+By step <1>1 this is equivalent to $P$ being fixed by the $q$-power Frobenius, hence to $P$ being defined over $\FF_q$.
+This proves part (b).
 :::
 
 <1>4. If $N=\#X(\FF_q)$, then
@@ -123,8 +124,8 @@ $$
 $$
 
 ::: {.proof}
-By step <1>2 the endomorphism is separable, so its degree equals the number
-of geometric kernel points. Step <1>3 identifies these with $X(\FF_q)$.
+By step <1>2 the endomorphism is separable, so its degree equals the number of geometric kernel points.
+Step <1>3 identifies these with $X(\FF_q)$.
 :::
 
 <1>5. There is an integer
@@ -137,8 +138,7 @@ $$
 $$
 
 ::: {.proof}
-By additivity of dualization from
-[[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(d),(e)]],
+By additivity of dualization from [[P-AGH447DUALOFAMORPHISM|Exercise IV.4.7(d),(e)]],
 $$
 \widehat{(1_X-\pi)}=1_X-\widehat\pi.
 $$
@@ -196,7 +196,7 @@ Exercise IV.4.7(c) also gives
 $$
 \widehat\phi\circ\phi=[\deg\phi]_X.
 $$
-Since $\ZZ\to\End(X,O)$ is injective, the two integers are equal.
+Since $\ZZ\to\Endo(X,O)$ is injective, the two integers are equal.
 :::
 
 <1>7. One has Hasse's bound
@@ -209,9 +209,8 @@ Step <1>6 gives
 $$
 Q(m,n)=m^2+amn+qn^2\ge0
 $$
-for all $m,n\in\ZZ$, because $Q(m,n)$ is a degree. The strict positivity
-in the exercise applies when the corresponding endomorphism is nonzero;
-nonnegativity is sufficient for the argument.
+for all $m,n\in\ZZ$, because $Q(m,n)$ is a degree.
+The strict positivity in the exercise applies when the corresponding endomorphism is nonzero; nonnegativity is sufficient for the argument.
 
 For $n\ne0$, division by $n^2$ gives
 $$
@@ -221,14 +220,16 @@ The rational numbers are dense in $\RR$, so continuity implies
 $$
 x^2+ax+q\ge0
 $$
-for every real $x$. Hence the discriminant is nonpositive:
+for every real $x$.
+Hence the discriminant is nonpositive:
 $$
 a^2-4q\le0.
 $$
 Thus $\abs a\le2\sqrt q$, proving part (d).
 :::
 
-<1>8. Now assume $q=p$. The Hasse invariant of $X$ is zero if and only if
+<1>8. Now assume $q=p$.
+The Hasse invariant of $X$ is zero if and only if
 $$
 \boxed{a\equiv0\pmod p.}
 $$
@@ -242,16 +243,14 @@ Step <1>5 gives
 $$
 V=[a]_X-\pi.
 $$
-The differential of $\pi$ is zero, while the differential of multiplication
-by $a$ on the one-dimensional tangent space at the origin is multiplication
-by the image of $a$ in $k$. Hence
+The differential of $\pi$ is zero, while the differential of multiplication by $a$ on the one-dimensional tangent space at the origin is multiplication by the image of $a$ in $k$.
+Hence
 $$
 dV_O=a\cdot\id_{T_OX}.
 $$
-By [[P-AGH4415PTORSIONANDHASSE|Exercise IV.4.15]], the Hasse invariant is
-zero exactly when the dual Frobenius $V$ is inseparable. An isogeny of
-elliptic curves is inseparable exactly when its differential at the origin
-vanishes. Therefore
+By [[P-AGH4415PTORSIONANDHASSE|Exercise IV.4.15]], the Hasse invariant is zero exactly when the dual Frobenius $V$ is inseparable.
+An isogeny of elliptic curves is inseparable exactly when its differential at the origin vanishes.
+Therefore
 $$
 \operatorname{Hasse}(X)=0
 \iff
@@ -286,14 +285,13 @@ Finally step <1>5 gives
 $$
 N=p-a+1,
 $$
-so $a=0$ is equivalent to $N=p+1$. This proves part (e).
+so $a=0$ is equivalent to $N=p+1$.
+This proves part (e).
 :::
 
 <1>10. Q.E.D.
 
 ::: {.proof}
-Step <1>1 proves part (a), steps <1>2--<1>3 prove part (b), steps
-<1>4--<1>5 prove part (c), steps <1>6--<1>7 prove part (d), and steps
-<1>8--<1>9 prove part (e).
+Step <1>1 proves part (a), steps <1>2--<1>3 prove part (b), steps <1>4--<1>5 prove part (c), steps <1>6--<1>7 prove part (d), and steps <1>8--<1>9 prove part (e).
 :::
 :::

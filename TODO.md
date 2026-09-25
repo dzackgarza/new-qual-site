@@ -19,8 +19,12 @@ The current milestone is **`audited-deployment`**: a deployed site whose copy is
 Its route is `unsolved-contribution`, `slogans`, and `copy-policy-repair`, then the audit rounds.
 [Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
 
-- **`unsolved-contribution`**. **Needs:** none.
-  Make unsolved problems a first-class destination in the site: a reader can reach them from the main navigation and browse or filter them the way the problem index already allows.
+- **`site-renderability-repair`**. **Needs:** none.
+  The current corpus build stops before site emission on authored math that uses undefined notation aliases or has unterminated display-math delimiters in 16 problem cards (`\pr`, `\Specm`, `\ev`, `\Span`, `\mfn`, `\isom`, `\End`, `\Supp`, `\dashmapsto`, and three missing closing `\]` delimiters).
+  Normalize each occurrence to the repository's existing notation or ordinary MathJax-supported TeX; do not add duplicate aliases merely to preserve accidental spellings.
+  **Acceptance:** `uv run qualc build` exits successfully from the current corpus with no unrenderable-TeX diagnostic.
+
+- **`unsolved-contribution`**. **Needs:** `site-renderability-repair`. Make unsolved problems a first-class destination in the site: a reader can reach them from the main navigation and browse or filter them the way the problem index already allows.
   Every unsolved card offers a way to submit a solution as a GitHub issue on this repository, through an issue form under `.github/ISSUE_TEMPLATE/` whose link prepopulates the card ID, title, source appearance, and card URL, so a submission names exactly the card it answers.
   [formalization-corpus](https://github.com/dzackgarza/formalization-corpus) already does this for source leads (`site/contribute.html` linking `issues/new?template=source-lead.yml`); follow that mechanism rather than inventing another.
   **Acceptance:** on a built site, the unsolved view is reachable from navigation and lists exactly the corpus's unsolved cards, and following a card's submission link opens the issue form with that card's fields already filled.

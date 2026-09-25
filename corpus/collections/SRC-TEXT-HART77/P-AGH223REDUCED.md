@@ -44,7 +44,8 @@ Let
 \[
 \xi\in\mathcal O_{X,P}
 \]
-be nilpotent.  Choose an open neighborhood
+be nilpotent.
+Choose an open neighborhood
 \[
 P\in U
 \]
@@ -58,7 +59,8 @@ If
 \[
 \xi^n=0,
 \]
-then the germ of $s^n$ at $P$ is zero.  By the definition of equality in a stalk, after shrinking to some open
+then the germ of $s^n$ at $P$ is zero.
+By the definition of equality in a stalk, after shrinking to some open
 \[
 P\in V\subseteq U
 \]
@@ -66,7 +68,8 @@ one has
 \[
 (s|_V)^n=0
 \]
-in $\mathcal O_X(V)$.  This ring is reduced by hypothesis, so
+in $\mathcal O_X(V)$.
+This ring is reduced by hypothesis, so
 \[
 s|_V=0.
 \]
@@ -91,13 +94,15 @@ For every $P\in U$, the germ $s_P$ satisfies
 \[
 (s_P)^n=0
 \]
-in the reduced local ring $\mathcal O_{X,P}$.  Hence
+in the reduced local ring $\mathcal O_{X,P}$.
+Hence
 \[
 s_P=0
 \]
 for every $P$.
 
-A section of a sheaf whose germ is zero at every point is itself zero: each point has a neighborhood on which the section vanishes, and the sheaf uniqueness axiom glues those local zeroes.  Therefore
+A section of a sheaf whose germ is zero at every point is itself zero: each point has a neighborhood on which the section vanishes, and the sheaf uniqueness axiom glues those local zeroes.
+Therefore
 \[
 s=0.
 \]
@@ -116,7 +121,8 @@ X\text{ is reduced}
 Combine <1>1 and <1>2.
 :::
 
-<1>4. Reduction commutes with localization.  For a ring $A$ and $f\in A$,
+<1>4. Reduction commutes with localization.
+For a ring $A$ and $f\in A$,
 \[
 \boxed{
 (A_f)_{\mathrm{red}}
@@ -147,7 +153,8 @@ Thus some power $f^r a^n=0$ in $A$, so
 \[
 (f^ra)^n=0,
 \]
-and the fraction lies in the localization of the nilradical.  The reverse inclusion is immediate.
+and the fraction lies in the localization of the nilradical.
+The reverse inclusion is immediate.
 
 Therefore
 \[
@@ -163,7 +170,8 @@ A_f/(\sqrt0)_f
 \[
 V=\operatorname{Spec}A\subseteq X
 \]
-be affine.  Then the restriction of $(\mathcal O_X)_{\mathrm{red}}$ to $V$ is the usual structure sheaf of
+be affine.
+Then the restriction of $(\mathcal O_X)_{\mathrm{red}}$ to $V$ is the usual structure sheaf of
 \[
 \operatorname{Spec}A_{\mathrm{red}}.
 \]
@@ -199,6 +207,7 @@ induces a homeomorphism
 \xrightarrow{\sim}
 \operatorname{Spec}A.
 }
+\]
 ::: {.proof}
 Every prime ideal of $A$ contains the nilradical
 \[
@@ -219,7 +228,8 @@ Closed sets correspond because an ideal $I\subseteq A$ and its image
 \[
 (I+\sqrt0)/\sqrt0
 \]
-define corresponding prime sets.  Thus the bijection is a homeomorphism.
+define corresponding prime sets.
+Thus the bijection is a homeomorphism.
 :::
 
 <1>7. The locally ringed space
@@ -286,14 +296,16 @@ On a stalk it is the quotient
 \longrightarrow
 (\mathcal O_{X,P})_{\mathrm{red}}.
 \]
-The inverse image of the maximal ideal of the quotient is the maximal ideal of the original local ring, so this map is local.  Thus $\iota$ is a morphism of schemes.
+The inverse image of the maximal ideal of the quotient is the maximal ideal of the original local ring, so this map is local.
+Thus $\iota$ is a morphism of schemes.
 :::
 
 <1>9. Let
 \[
 f:X\longrightarrow Y
 \]
-be a morphism with $X$ reduced.  The sheaf map
+be a morphism with $X$ reduced.
+The sheaf map
 \[
 f^\sharp:\mathcal O_Y
 \longrightarrow
@@ -319,7 +331,8 @@ in
 \[
 \mathcal O_X(f^{-1}V).
 \]
-Since $X$ is reduced, the ring of sections on every open set is reduced by definition.  Hence
+Since $X$ is reduced, the ring of sections on every open set is reduced by definition.
+Hence
 \[
 f^\sharp(s)=0.
 \]
@@ -342,15 +355,18 @@ By <1>9, on each open set $V$ the ring map
 \longrightarrow
 \mathcal O_X(f^{-1}V)
 \]
-kills the nilradical.  Hence it factors uniquely through
+kills the nilradical.
+Hence it factors uniquely through
 \[
 \mathcal O_Y(V)_{\mathrm{red}}.
 \]
-These factorizations commute with restrictions because the original maps do.  Thus they define a morphism from the presheaf
+These factorizations commute with restrictions because the original maps do.
+Thus they define a morphism from the presheaf
 \[
 V\longmapsto\mathcal O_Y(V)_{\mathrm{red}}
 \]
-to the sheaf $f_*\mathcal O_X$.  By the universal property of sheafification, it factors uniquely through
+to the sheaf $f_*\mathcal O_X$.
+By the universal property of sheafification, it factors uniquely through
 \[
 (\mathcal O_Y)_{\mathrm{red}}.
 \]
@@ -374,7 +390,8 @@ is the identity on the underlying topological space by <1>8, so any factorizatio
 |X|\to|Y|=|Y_{\mathrm{red}}|.
 \]
 
-It remains to check that the induced maps on stalks are local.  At $P\in X$, put
+It remains to check that the induced maps on stalks are local.
+At $P\in X$, put
 \[
 Q=f(P).
 \]
@@ -415,7 +432,8 @@ Any such factorization must have the same underlying continuous map, because
 \[
 |Y_{\mathrm{red}}|\to|Y|
 \]
-is the identity.  On sheaves, its map
+is the identity.
+On sheaves, its map
 \[
 (\mathcal O_Y)_{\mathrm{red}}
 \longrightarrow
@@ -425,7 +443,9 @@ must compose with
 \[
 \mathcal O_Y\to(\mathcal O_Y)_{\mathrm{red}}
 \]
-to give $f^\sharp$.  The uniqueness in <1>10 therefore forces the sheaf map to be $g^\sharp$.  Hence the scheme morphism is unique.
+to give $f^\sharp$.
+The uniqueness in <1>10 therefore forces the sheaf map to be $g^\sharp$.
+Hence the scheme morphism is unique.
 :::
 
 <1>13. Thus reduction has the universal property
