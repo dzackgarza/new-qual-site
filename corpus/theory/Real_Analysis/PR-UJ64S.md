@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UJ64S
 kind: proposition
 title: The terms of a uniformly convergent series tend to zero uniformly
+slogan: 'Uniform convergence of a function series forces its terms to vanish uniformly.'
 classification:
   areas:
   - real-analysis
