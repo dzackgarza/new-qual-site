@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-JBMRH
 kind: lemma
 title: Bounded nonempty sets have a supremum and infimum
+slogan: 'Every nonempty bounded-above subset of $\RR$ has a supremum, and every bounded-below one an infimum.'
 classification:
   areas:
   - real-analysis
