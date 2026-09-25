@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-IEHB2
 kind: fact
 title: Euler characteristic in terms of genus
+slogan: 'Closed orientable genus $g$ has $\chi=2-2g$; closed nonorientable genus $k$ has $\chi=2-k$.'
 prompts:
 - What is the Euler characteristic in terms of genus?
 classification:
