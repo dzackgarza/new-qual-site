@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-VHK2H
 kind: theorem
 title: Hypotheses of Tonelli's and Fubini's theorems
+slogan: 'Tonelli needs nonnegativity; Fubini needs integrability.'
 prompts:
 - What hypothesis does Tonelli need that Fubini does not?
 classification:
