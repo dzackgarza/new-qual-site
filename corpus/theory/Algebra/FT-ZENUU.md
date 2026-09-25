@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-ZENUU
 kind: theorem
 title: Sylow theorems
+slogan: 'Sylow $p$-subgroups exist, are conjugate, and their number divides the prime-to-$p$ part while equaling $1$ modulo $p$.'
 prompts:
 - State the three Sylow theorems.
 classification:
