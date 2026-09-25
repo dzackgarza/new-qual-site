@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-NBARV
 kind: theorem
 title: Classification of compact surfaces
+slogan: 'A compact connected surface is determined by orientability, boundary count, and Euler characteristic.'
 classification:
   areas:
   - topology
