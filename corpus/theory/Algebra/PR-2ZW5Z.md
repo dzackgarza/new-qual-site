@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-2ZW5Z
 kind: proposition
 title: Multiplicativity of the norm $N_{K/\QQ}$ and units of $\OO_K$
+slogan: 'Number-field norms multiply, are integral on $\OO_K$, and detect units by norm $\pm1$.'
 classification:
   areas:
   - algebra
