@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-6QBOJ
 kind: lemma
 title: Frattini's argument
+slogan: 'If $N\normal G$ and $P$ is Sylow in $N$, then $G=N_G(P)N$.'
 classification:
   areas:
   - algebra
