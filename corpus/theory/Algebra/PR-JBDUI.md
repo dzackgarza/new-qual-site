@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JBDUI
 kind: proposition
 title: One-step test for $R$-module homomorphisms
+slogan: '$R$-linearity is equivalent to preserving expressions of the form $rx+y$.'
 classification:
   areas:
   - algebra
