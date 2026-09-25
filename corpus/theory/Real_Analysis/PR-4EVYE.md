@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-4EVYE
 kind: proposition
 title: The Cauchy condensation test
+slogan: 'For a decreasing nonnegative series, convergence is detected by its dyadic block masses.'
 classification:
   areas:
   - real-analysis
