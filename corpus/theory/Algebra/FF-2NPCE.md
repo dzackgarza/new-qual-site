@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-2NPCE
 kind: fact
 title: Groups of order 10
+slogan: Every group of order $10$ is cyclic or dihedral.
 prompts:
 - What are the groups of order 10?
 classification:
