@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ZOTWN
 kind: theorem
 title: Artin--Wedderburn theorem
+slogan: 'Semisimple rings are finite direct sums of matrix rings over division rings.'
 classification:
   areas:
   - algebra
