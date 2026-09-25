@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DWOXP
 kind: proposition
 title: Limits of differentiable functions need not be differentiable
+slogan: 'Uniform limits can lose differentiability, and derivatives need not commute with uniform convergence.'
 classification:
   areas:
   - real-analysis
