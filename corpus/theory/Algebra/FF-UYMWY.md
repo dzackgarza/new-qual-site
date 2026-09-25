@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-UYMWY
 kind: fact
 title: One-step submodule test
+slogan: Nonempty and closed under $rm+n$ already means submodule.
 prompts:
 - What is the one-step submodule test?
 classification:
