@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-EDD7U
 kind: proposition
 title: Characteristic polynomials via traces of exterior powers
+slogan: 'Characteristic coefficients are traces of exterior powers, equivalently sums of principal minors.'
 classification:
   areas:
   - algebra
