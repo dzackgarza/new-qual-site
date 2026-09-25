@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WUZSG
 kind: proposition
 title: Sup-norm test for uniform convergence
+slogan: 'Uniform convergence is exactly convergence to zero in the sup norm.'
 classification:
   areas:
   - real-analysis
