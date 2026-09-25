@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BHJGY
 kind: proposition
 title: Number of sheets of a covering space
+slogan: 'The number of sheets of a connected cover is the index of its induced fundamental-group subgroup.'
 classification:
   areas:
   - topology
