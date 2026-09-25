@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-XDWOP
 kind: proposition
 title: 'Dedekind''s theorem: cycle types in the Galois group from factorization modulo $p$'
+slogan: 'Factorization degrees modulo an unramified prime appear as a cycle type in the Galois group.'
 classification:
   areas:
   - algebra
