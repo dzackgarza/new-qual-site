@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-O4DRR
 kind: theorem
 title: Carathéodory's criterion for Lebesgue measurability
+slogan: 'A set is measurable exactly when it splits outer measure additively across itself and its complement.'
 prompts:
 - State the Caratheodory characterization of measurability.
 classification:
