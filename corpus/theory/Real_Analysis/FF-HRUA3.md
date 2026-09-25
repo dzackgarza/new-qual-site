@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-HRUA3
 kind: fact
 title: Nowhere dense sets
+slogan: 'Nowhere dense means every nonempty open set contains a smaller open set avoiding the closure.'
 prompts:
 - What does it mean for a set to be nowhere dense?
 classification:
