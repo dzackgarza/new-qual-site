@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OF7ZW
 kind: proposition
 title: Equivalent conditions for a finite-dimensional linear operator to be cyclic
+slogan: 'A linear operator is cyclic exactly when its minimal and characteristic polynomials agree, equivalently its rational form has one block.'
 classification:
   areas:
   - algebra
