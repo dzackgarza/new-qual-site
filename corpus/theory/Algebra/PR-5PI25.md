@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5PI25
 kind: proposition
 title: Subgroups of $S_n$ for $n$ prime containing an $n$-cycle
+slogan: 'For prime $n$, an $n$-cycle plus a transposition forces $S_n$, while an $n$-cycle plus a $3$-cycle forces $A_n$ or $S_n$.'
 classification:
   areas:
   - algebra
