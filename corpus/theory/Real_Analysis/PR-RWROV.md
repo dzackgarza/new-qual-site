@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RWROV
 kind: proposition
 title: $C([0,1])$ with the sup norm is complete
+slogan: 'Uniformly Cauchy continuous functions on $[0,1]$ converge to a continuous limit.'
 classification:
   areas:
   - real-analysis
