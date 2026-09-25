@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-2AKVH
 kind: fact
 title: Factorization of $x^n + y^n$ for odd $n$
+slogan: $x+y$ divides $x^n+y^n$ exactly when $n$ is odd.
 prompts:
 - When does $x + y$ divide $x^n + y^n$, and what is the factorization?
 classification:
