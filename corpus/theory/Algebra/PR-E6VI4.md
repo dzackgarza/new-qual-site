@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-E6VI4
 kind: proposition
 title: A subgroup whose index is the smallest prime dividing $\abs{G}$ is normal
+slogan: 'Smallest-prime index forces normality.'
 classification:
   areas:
   - algebra
