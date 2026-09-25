@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-Q2IFX
 kind: proposition
 title: Subfields of the finite field $\FF_{p^k}$
+slogan: '$\FF_{p^k}$ has a unique subfield of size $p^\ell$ exactly when $\ell\mid k$.'
 classification:
   areas:
   - algebra
