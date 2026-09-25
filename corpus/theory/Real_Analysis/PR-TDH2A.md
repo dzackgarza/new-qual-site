@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TDH2A
 kind: proposition
 title: Lebesgue criterion for Riemann integrability
+slogan: 'A bounded function is Riemann integrable exactly when its discontinuities form a null set.'
 classification:
   areas:
   - real-analysis
