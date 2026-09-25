@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IOMVN
 kind: proposition
 title: Characteristic subgroups of normal subgroups are normal
+slogan: 'Characteristic inside normal is normal in the ambient group.'
 classification:
   areas:
   - algebra
