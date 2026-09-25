@@ -673,6 +673,24 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   supplies the corrected analytic-square-root proof using
   $g(z)=z\sqrt{\phi(z)}$. Retain this entry as source errata.
 
+### Berkeley Spring 2011 Problem 7B card corrupts the Laplace equation
+
+- **Object and need:** P-BKS11-7B / SRC-BERKELEY-PRELIM-SPRING-2011,
+  Problem 7B. The statement must reproduce the Laplace equation printed in
+  the retained source.
+- **Observed evidence:** page 5 of assets/attachments/s11solutions.pdf prints
+  $\partial^2 f/\partial x^2+\partial^2 f/\partial y^2=0$. The authored
+  card instead has $\partial^2\widetilde f/\partial x^2$ in the first term
+  and $\partial^2 f/\partial y^2$ in the second.
+- **Impact and owner:** the mixed function symbols make the displayed
+  definition of harmonicity incorrect as written. The retained PDF is
+  unambiguous, so the card should use $f$ in both second derivatives.
+- **Uncertainty:** none; the retained PDF was inspected directly and the
+  discrepancy is an extraction/transcription defect.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS11-7B restores $f$ in the first Laplacian term before attaching
+  the complete solution.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
