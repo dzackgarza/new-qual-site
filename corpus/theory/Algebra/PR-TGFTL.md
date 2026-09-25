@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TGFTL
 kind: proposition
 title: The trace pairing identifies $\Hom(V,W)$ with $\Hom(W,V)\dual$
+slogan: 'Trace of composition gives a perfect pairing between opposite Hom spaces.'
 classification:
   areas:
   - algebra
