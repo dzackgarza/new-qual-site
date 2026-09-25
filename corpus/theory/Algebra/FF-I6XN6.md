@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-I6XN6
 kind: fact
 title: Groups of order 12
+slogan: Order $12$ has exactly five group types: two abelian and three nonabelian.
 prompts:
 - What are the groups of order 12?
 classification:
