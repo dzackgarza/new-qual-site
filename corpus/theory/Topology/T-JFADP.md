@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JFADP
 kind: theorem
 title: Compact subsets of Hausdorff spaces are closed
+slogan: 'Compact subsets of Hausdorff spaces are closed.'
 classification:
   areas:
   - topology
