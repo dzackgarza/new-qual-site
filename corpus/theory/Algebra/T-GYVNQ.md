@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-GYVNQ
 kind: theorem
 title: Wedderburn's little theorem
+slogan: 'Finite division rings are fields.'
 classification:
   areas:
   - algebra
