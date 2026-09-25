@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TLPVU
 kind: proposition
 title: Converting between elementary divisors and invariant factors
+slogan: 'Elementary divisors split prime powers; invariant factors recombine matching prime-power columns.'
 classification:
   areas:
   - algebra
