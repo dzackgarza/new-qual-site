@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-ESIOA
 kind: fact
 title: Krull's Hauptidealsatz
+slogan: In a Noetherian ring, a principal nonzerodivisor cuts codimension one.
 prompts:
 - What is Krull's Hauptidealsatz?
 classification:
