@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-2W5WN
 kind: theorem
 title: Universal coefficient theorems
+slogan: 'Changing coefficients adds Tor to homology and Ext to cohomology.'
 classification:
   areas:
   - topology
