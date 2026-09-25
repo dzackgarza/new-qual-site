@@ -521,6 +521,23 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKF96-8 restores the coefficient from the PDF and supplies the
   complete proof.
 
+### Berkeley Fall 1996 Problem 15 leaves epsilon unquantified
+
+- **Object and need:** P-BKF96-15 / SRC-BERKELEY-PRELIM-FALL-1996,
+  Problem 15. The existence of a real twentieth root depends on the printed
+  parameter epsilon.
+- **Observed evidence:** page 3 of assets/attachments/Fall96.pdf visibly
+  asks for a real A with twentieth power diag(-1,-1-epsilon), then asks to
+  exhibit A or prove none exists. No definition or quantifier for epsilon
+  appears in the problem or surrounding page.
+- **Impact and owner:** assuming epsilon>0 would add a hypothesis not in the
+  source. The owning solution instead classifies all real epsilon.
+- **Uncertainty:** none about the retained PDF; the missing quantifier is in
+  the source itself, not only in the extraction.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKF96-15 proves existence exactly for epsilon=0 and records the
+  source omission in a mathematical remark.
+
 ### Berkeley Spring 1983 Problem 4 source PDF is missing the network diagram
 
 - **Object and need:** P-BKS83-4 / SRC-BERKELEY-PRELIM-SPRING-1983,
