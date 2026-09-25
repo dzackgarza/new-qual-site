@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4RLPQ
 kind: theorem
 title: Sequentially compact if and only if complete and totally bounded
+slogan: 'In metric spaces, sequential compactness is exactly completeness plus total boundedness.'
 classification:
   areas:
   - topology
