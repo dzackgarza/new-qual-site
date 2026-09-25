@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-73MCN
 kind: proposition
 title: $x^{p^n}-x$ is the product of the monic irreducibles over $\FF_p$ of degree dividing $n$
+slogan: 'An irreducible polynomial over $\FF_p$ divides $x^{p^n}-x$ exactly when its degree divides $n$.'
 classification:
   areas:
   - algebra
