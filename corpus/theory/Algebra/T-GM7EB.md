@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-GM7EB
 kind: theorem
 title: A finite group is nilpotent if and only if its Sylow subgroups are normal
+slogan: 'A finite group is nilpotent exactly when every Sylow subgroup is normal.'
 classification:
   areas:
   - algebra
