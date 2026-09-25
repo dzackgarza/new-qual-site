@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QPMGT
 kind: theorem
 title: Solvability via the derived series
+slogan: 'A group is solvable exactly when repeated commutator subgroups eventually become trivial.'
 classification:
   areas:
   - algebra
