@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZO73V
 kind: proposition
 title: Tower law for field degrees
+slogan: 'Finite field degrees multiply in towers.'
 classification:
   areas:
   - algebra
