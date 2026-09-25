@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-U5CHT
 kind: proposition
 title: One-step subgroup test
+slogan: 'A nonempty subset is a subgroup once it is closed under $ab^{-1}$.'
 classification:
   areas:
   - algebra
