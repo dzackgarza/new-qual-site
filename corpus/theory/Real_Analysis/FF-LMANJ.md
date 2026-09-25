@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-LMANJ
 kind: fact
 title: Integrability of $x^p$ on $(0,1)$ and $(1,\infty)$
+slogan: '$x^p$ is integrable near $0$ exactly for $p>-1$, and near $\infty$ exactly for $p<-1$.'
 prompts:
 - Where is $x^p$ integrable in $\RR$? (Depending on $p$)
 classification:
@@ -24,6 +25,5 @@ Let $p\in\RR$ and let $f(x)\coloneqq x^{p}$ for $x>0$.
 :::
 
 ::: {.proof}
-For $0<a<b$, $\int_a^b x^{p}\dx$ equals $\frac{b^{p+1} - a^{p+1}}{p+1}$ if $p\neq -1$ and $\log b - \log a$ if $p = -1$.
-By monotone convergence, $\int_{(0,1)}x^{p}\dx = \lim_{a\to 0^+}\int_a^1 x^{p}\dx$, which is finite exactly when $p+1>0$, and $\int_{(1,\infty)}x^{p}\dx = \lim_{b\to\infty}\int_1^b x^{p}\dx$, which is finite exactly when $p+1<0$.
+For $0<a<b$, $\int_a^b x^{p}\dx$ equals $\frac{b^{p+1} - a^{p+1}}{p+1}$ if $p\neq -1$ and $\log b - \log a$ if $p = -1$. By monotone convergence, $\int_{(0,1)}x^{p}\dx = \lim_{a\to 0^+}\int_a^1 x^{p}\dx$, which is finite exactly when $p+1>0$, and $\int_{(1,\infty)}x^{p}\dx = \lim_{b\to\infty}\int_1^b x^{p}\dx$, which is finite exactly when $p+1<0$.
 :::
