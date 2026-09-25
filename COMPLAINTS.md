@@ -502,6 +502,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   source errata unless an authoritative copy of the missing figure is
   recovered.
 
+### Berkeley Fall 1996 Problem 8 extraction drops the numerator fraction
+
+- **Object and need:** P-BKF96-8 / SRC-BERKELEY-PRELIM-FALL-1996,
+  Problem 8. The generalized binomial coefficient must be known before its
+  denominator can be analyzed.
+- **Observed evidence:** page 2 of assets/attachments/Fall96.pdf, read with
+  layout preservation, places `1/2` directly above `n` inside the displayed
+  binomial coefficient. Both retained Markdown extractions instead reduce
+  the numerator to `1`.
+- **Impact and owner:** the problem card had treated the coefficient as
+  unrecoverable, preventing the Author-solutions selector from completing
+  the card. The authoritative retained PDF determines the statement as
+  $\binom{1/2}{n}$.
+- **Uncertainty:** none about the retained PDF layout; the stacked `1/2`
+  and `n` are explicit on the page.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKF96-8 restores the coefficient from the PDF and supplies the
+  complete proof.
+
 ### Berkeley Spring 1983 Problem 4 source PDF is missing the network diagram
 
 - **Object and need:** P-BKS83-4 / SRC-BERKELEY-PRELIM-SPRING-1983,
