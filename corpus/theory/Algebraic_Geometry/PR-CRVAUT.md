@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CRVAUT
 kind: proposition
 title: Automorphisms of a curve of genus $g \geq 2$
+slogan: 'Curves of genus at least $2$ have finite automorphism groups; in characteristic zero, Hurwitz bounds their order by $84(g-1)$.'
 classification:
   areas:
   - algebraic-geometry
