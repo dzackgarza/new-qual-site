@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-GL7E6
 kind: theorem
 title: Hurewicz theorem
+slogan: 'For a highly connected space, the first nonzero homotopy group agrees with the first nonzero homology group.'
 classification:
   areas:
   - topology
