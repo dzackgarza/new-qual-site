@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QMKXQ
 kind: theorem
 title: Subgroups of cyclic groups
+slogan: 'A finite group is cyclic exactly when every divisor of its order determines a unique subgroup.'
 classification:
   areas:
   - algebra
