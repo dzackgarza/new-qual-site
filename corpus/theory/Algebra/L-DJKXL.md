@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-DJKXL
 kind: lemma
 title: Fixed-point congruence for $p$-groups
+slogan: 'A finite $p$-group action has total points congruent mod $p$ to its fixed points.'
 classification:
   areas:
   - algebra
