@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-W2TS2
 kind: fact
 title: Value of $\cos(\pi/4)$
+slogan: '$\cos(\pi/4)=\sqrt2/2$.'
 prompts:
 - What is $\cos(\pi/4)$?
 classification:
