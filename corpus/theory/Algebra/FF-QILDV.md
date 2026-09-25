@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QILDV
 kind: fact
 title: Finitely generated flat modules over a Noetherian local ring are free
+slogan: Over a Noetherian local ring, finitely generated flat means free.
 prompts:
 - Give a categorical/homological corollary of Nakayama's lemma.
 classification:
