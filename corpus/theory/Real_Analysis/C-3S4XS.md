@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-3S4XS
 kind: corollary
 title: Uniform limits of series of continuous functions are continuous
+slogan: 'Uniform convergence carries continuity from the partial sums to the sum.'
 classification:
   areas:
   - real-analysis
