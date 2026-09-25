@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5IWCG
 kind: theorem
 title: Linear functionals are continuous if and only if bounded
+slogan: 'For linear functionals, continuity at one point, continuity everywhere, and a norm bound are equivalent.'
 classification:
   areas:
   - real-analysis
