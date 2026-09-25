@@ -22,6 +22,7 @@ from types import TracebackType
 from typing import Self
 
 BATCH_SIZE = 256
+PARALLEL_WORKERS = min(8, os.cpu_count() or 1)
 SERVER_START_ATTEMPTS = 500
 SERVER_START_INTERVAL_SECONDS = 0.01
 SERVER_REQUEST_TIMEOUT_SECONDS = 60
@@ -67,12 +68,41 @@ def _read_markdown_partition(
         return pandoc.read_markdown(texts, markdown_format)
 
 
+def _write_markdown_partition(
+    documents: list[str],
+    markdown_format: str,
+) -> list[PandocResult]:
+    with PandocServer() as pandoc:
+        return pandoc.write_markdown(documents, markdown_format)
+
+
+def _write_html_partition(
+    documents: list[str],
+) -> list[PandocResult]:
+    with PandocServer() as pandoc:
+        return pandoc.write_html(documents)
+
+
+def _parallel_results(
+    partitions: list[list[str]],
+    results: list[list[PandocResult]],
+    workers: int,
+) -> list[PandocResult]:
+    ordered: list[PandocResult] = []
+    for index in range(sum(map(len, partitions))):
+        ordered.append(results[index % workers][index // workers])
+    return ordered
+
+
 def read_markdown_parallel(
     texts: list[str],
     markdown_format: str,
 ) -> list[PandocResult]:
-    partitions = [texts[offset::4] for offset in range(4)]
-    with ThreadPoolExecutor(max_workers=4) as executor:
+    if not texts:
+        return []
+    workers = min(PARALLEL_WORKERS, len(texts))
+    partitions = [texts[offset::workers] for offset in range(workers)]
+    with ThreadPoolExecutor(max_workers=workers) as executor:
         results = list(
             executor.map(
                 _read_markdown_partition,
@@ -80,10 +110,38 @@ def read_markdown_parallel(
                 [markdown_format] * len(partitions),
             )
         )
-    ordered: list[PandocResult] = []
-    for index in range(len(texts)):
-        ordered.append(results[index % 4][index // 4])
-    return ordered
+    return _parallel_results(partitions, results, workers)
+
+
+def write_markdown_parallel(
+    documents: list[str],
+    markdown_format: str,
+) -> list[PandocResult]:
+    if not documents:
+        return []
+    workers = min(PARALLEL_WORKERS, len(documents))
+    partitions = [documents[offset::workers] for offset in range(workers)]
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        results = list(
+            executor.map(
+                _write_markdown_partition,
+                partitions,
+                [markdown_format] * len(partitions),
+            )
+        )
+    return _parallel_results(partitions, results, workers)
+
+
+def write_html_parallel(
+    documents: list[str],
+) -> list[PandocResult]:
+    if not documents:
+        return []
+    workers = min(PARALLEL_WORKERS, len(documents))
+    partitions = [documents[offset::workers] for offset in range(workers)]
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        results = list(executor.map(_write_html_partition, partitions))
+    return _parallel_results(partitions, results, workers)
 
 
 def _free_port() -> int:

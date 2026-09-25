@@ -12,6 +12,7 @@ from __future__ import annotations
 import posixpath
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
@@ -22,7 +23,7 @@ import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
 from .model import MARKDOWN, drop_path_captions, from_ast, load_front_matter, unread_math
-from .pandoc_batch import Citations, PandocFailure, PandocServer
+from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
 
@@ -261,6 +262,14 @@ def _without_first_title(document: pf.Doc) -> list[pf.Block]:
     return blocks
 
 
+def _read_wiki_batch(
+    bodies: list[str],
+    citations: Citations,
+) -> list[PandocResult]:
+    with PandocServer() as pandoc:
+        return pandoc.read_markdown(bodies, MARKDOWN, citations)
+
+
 def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple[list[WikiPage], list[Diagnostic]]:
     """Parse all source pages through the same Pandoc dialect as cards.
 
@@ -280,9 +289,20 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
 
     parsed: list[WikiPage] = []
     restored: list[str] = []
-    for offset in range(0, len(prepared), WIKI_BATCH_SIZE):
-        batch = prepared[offset : offset + WIKI_BATCH_SIZE]
-        results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations)
+    batches = [prepared[offset : offset + WIKI_BATCH_SIZE] for offset in range(0, len(prepared), WIKI_BATCH_SIZE)]
+    if len(batches) > 1:
+        workers = min(PARALLEL_WORKERS, len(batches))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            result_batches = list(
+                executor.map(
+                    _read_wiki_batch,
+                    [[body for _, _, _, body in batch] for batch in batches],
+                    [citations] * len(batches),
+                )
+            )
+    else:
+        result_batches = [pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations) for batch in batches]
+    for batch, results in zip(batches, result_batches, strict=True):
         for (path, source_rel, metadata, body), result in zip(batch, results, strict=True):
             if isinstance(result, PandocFailure):
                 errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))

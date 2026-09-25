@@ -33,11 +33,15 @@ import yaml
 from .index import load_areas
 from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
 from .pandoc_batch import (
+    PARALLEL_WORKERS,
     PandocBatchError,
     PandocFailure,
     PandocResult,
     PandocServer,
     pandoc_executable,
+    read_markdown_parallel,
+    write_html_parallel,
+    write_markdown_parallel,
 )
 from .publication import (
     PublicationManifest,
@@ -1301,6 +1305,16 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
 
 
+def _prepare_json_body(job: tuple[bool, list[dict]]) -> list[dict]:
+    is_problem, source = job
+    body = _dup(source)
+    if is_problem:
+        body = _statement_first(body)
+    body = _lamport_json_blocks(body)
+    _rename_json(body)
+    return body
+
+
 def _card_meta(
     card: sqlite3.Row,
     areas: list[str],
@@ -1337,14 +1351,11 @@ def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
 def asked_json(
     data: CardPageData,
     card: sqlite3.Row,
-    jcache: dict,
+    body: list[dict],
     source_collections: dict[str, list[Appearance]],
     guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    body = _statement_first(_dup(jcache[card["id"]]))
-    body = _lamport_json_blocks(body)
-    _rename_json(body)
     body.extend(_prompts_json(card))
     if card["id"] not in data.solved:
         body.extend(
@@ -1368,14 +1379,11 @@ def asked_json(
 def plain_json(
     data: CardPageData,
     card: sqlite3.Row,
-    jcache: dict,
+    body: list[dict],
     source_collections: dict[str, list[Appearance]],
     guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    body = _dup(jcache[card["id"]])
-    body = _lamport_json_blocks(body)
-    _rename_json(body)
     body.extend(_prompts_json(card))
     body.extend(
         _relation_groups_json(
@@ -1456,12 +1464,12 @@ def write_json_pages(
         )
         for _, _, blocks, _ in items
     ]
-    bodies = _successful_outputs(
-        pandoc.write_markdown(documents, MARKDOWN),
-        "tag-page write",
-    )
+    markdown_results = write_markdown_parallel(documents, MARKDOWN) if len(documents) >= 1_000 else pandoc.write_markdown(documents, MARKDOWN)
+    bodies = _successful_outputs(markdown_results, "tag-page write")
+    html_documents = _html_asts(documents)
+    html_results = write_html_parallel(html_documents) if len(html_documents) >= 1_000 else pandoc.write_html(html_documents)
     html_bodies = _successful_html_outputs(
-        pandoc.write_html(_html_asts(documents)),
+        html_results,
         "tag-page HTML write",
     )
     for (path, meta, _, role), body, html_body in zip(
@@ -1501,11 +1509,10 @@ def build_inline_cache(
     markdown_values: list[str],
 ) -> dict[str, list[pf.Inline]]:
     sources = list(dict.fromkeys(markdown_values))
+    marked = [INLINE_SENTINEL + mark_definienda(source) for source in sources]
+    results = read_markdown_parallel(marked, MARKDOWN) if len(marked) >= 1_000 else pandoc.read_markdown(marked, MARKDOWN)
     outputs = _successful_outputs(
-        pandoc.read_markdown(
-            [INLINE_SENTINEL + mark_definienda(source) for source in sources],
-            MARKDOWN,
-        ),
+        results,
         "inline read",
     )
     cache: dict[str, list[pf.Inline]] = {}
@@ -1573,7 +1580,7 @@ def _html_ast(ast: str) -> str:
 def _html_asts(documents: list[str]) -> list[str]:
     if len(documents) < 1_000:
         return [_html_ast(document) for document in documents]
-    with ProcessPoolExecutor(max_workers=4) as executor:
+    with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
         return list(executor.map(_html_ast, documents, chunksize=64))
 
 
@@ -2611,11 +2618,22 @@ def project(
     (site_root / "problems.json").write_text(json.dumps(problem_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
     (site_root / "sources.json").write_text(json.dumps(source_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
-    for card in _rows(con, "select * from cards where kind='problem'"):
+    problem_cards = _rows(con, "select * from cards where kind='problem'")
+    plain_cards = _rows(con, "select * from cards where kind not in ('problem','collection')")
+    body_jobs = [(True, jcache[card["id"]]) for card in problem_cards]
+    body_jobs.extend((False, jcache[card["id"]]) for card in plain_cards)
+    if len(body_jobs) >= 1_000:
+        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+            prepared_bodies = list(executor.map(_prepare_json_body, body_jobs, chunksize=64))
+    else:
+        prepared_bodies = [_prepare_json_body(job) for job in body_jobs]
+    problem_bodies = prepared_bodies[: len(problem_cards)]
+    plain_bodies = prepared_bodies[len(problem_cards) :]
+    for card, body in zip(problem_cards, problem_bodies, strict=True):
         meta, body = asked_json(
             card_page_data,
             card,
-            jcache,
+            body,
             source_collections,
             guide_appearances,
             mentions,
@@ -2625,11 +2643,11 @@ def project(
             sort=(("listing", _listing_sort(card_page_data, card)),),
         )
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
-    for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
+    for card, body in zip(plain_cards, plain_bodies, strict=True):
         meta, body = plain_json(
             card_page_data,
             card,
-            jcache,
+            body,
             source_collections,
             guide_appearances,
             mentions,

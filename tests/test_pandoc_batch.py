@@ -7,7 +7,7 @@ import subprocess
 from pathlib import Path
 
 from qualc import emit, model
-from qualc.pandoc_batch import PandocServer, pandoc_executable
+from qualc.pandoc_batch import PandocServer, pandoc_executable, write_html_parallel, write_markdown_parallel
 
 
 def _card(path: Path, card_id: str, footnote: str) -> Path:
@@ -79,3 +79,25 @@ def test_batch_inline_parse_keeps_titles_inline() -> None:
     inlines = cache[title]
     assert type(inlines[0]).__name__ == "Str"
     assert all(emit.INLINE_SENTINEL not in str(inline) for inline in inlines)
+
+
+def test_parallel_writers_preserve_serial_result_order() -> None:
+    documents = [
+        json.dumps(
+            {
+                "pandoc-api-version": [1, 23],
+                "meta": {},
+                "blocks": [{"t": "Para", "c": [{"t": "Str", "c": f"item-{index}"}]}],
+            }
+        )
+        for index in range(24)
+    ]
+    with PandocServer() as pandoc:
+        serial_markdown = pandoc.write_markdown(documents, model.MARKDOWN)
+        serial_html = pandoc.write_html(documents)
+
+    parallel_markdown = write_markdown_parallel(documents, model.MARKDOWN)
+    parallel_html = write_html_parallel(documents)
+
+    assert parallel_markdown == serial_markdown
+    assert parallel_html == serial_html

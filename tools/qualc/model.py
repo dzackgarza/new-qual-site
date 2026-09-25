@@ -30,7 +30,7 @@ from pydantic import (
 )
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
+from .pandoc_batch import PARALLEL_WORKERS, PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
 from .tex import mark_definienda
 
 
@@ -814,6 +814,31 @@ class AstDiagnostic:
     message: str
 
 
+@dataclass(frozen=True)
+class PreparedCardSource:
+    path: Path
+    metadata: dict
+    body: str
+
+
+@dataclass(frozen=True)
+class CardSourceDiagnostic:
+    path: Path
+    message: str
+
+
+def _prepare_card_source(path: Path) -> PreparedCardSource | CardSourceDiagnostic:
+    try:
+        meta, body = split_front_matter(path.read_text(), path)
+        return PreparedCardSource(
+            path=path,
+            metadata=meta,
+            body=mark_definienda(normalize_fenced_divs(body)),
+        )
+    except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
+        return CardSourceDiagnostic(path=path, message=str(exc))
+
+
 def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     """Collect semantic sections wherever they appear, including nested ones.
 
@@ -872,14 +897,20 @@ def parse_cards_with(
     adapter: TypeAdapter[Card] = TypeAdapter(Card)
     prepared: list[tuple[Path, Card, str]] = []
     errors: list[Diagnostic] = []
-    for path in paths:
+    if len(paths) >= 1_000:
+        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+            source_results = list(executor.map(_prepare_card_source, paths, chunksize=64))
+    else:
+        source_results = [_prepare_card_source(path) for path in paths]
+    for source in source_results:
+        if isinstance(source, CardSourceDiagnostic):
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), source.message))
+            continue
         try:
-            meta, body = split_front_matter(path.read_text(), path)
-            body = mark_definienda(normalize_fenced_divs(body))
-            card: Card = adapter.validate_python(meta)
-            prepared.append((path, card, body))
-        except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
-            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
+            card: Card = adapter.validate_python(source.metadata)
+            prepared.append((source.path, card, source.body))
+        except (TypeError, ValueError) as exc:
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), str(exc)))
 
     bodies = [body for _, _, body in prepared]
     results = read_markdown_parallel(bodies, MARKDOWN) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN)
@@ -899,7 +930,7 @@ def parse_cards_with(
 
     sources = [source for _, _, source in processable]
     if len(sources) >= 1_000:
-        with ProcessPoolExecutor(max_workers=4) as executor:
+        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
             normalized = list(executor.map(_normalize_ast, sources, chunksize=64))
     else:
         normalized = [_normalize_ast(source) for source in sources]
