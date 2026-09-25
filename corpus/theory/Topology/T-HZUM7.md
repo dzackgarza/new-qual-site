@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-HZUM7
 kind: theorem
 title: Freudenthal suspension theorem
+slogan: 'Suspension stabilizes homotopy groups below twice the connectivity range.'
 classification:
   areas:
   - topology
