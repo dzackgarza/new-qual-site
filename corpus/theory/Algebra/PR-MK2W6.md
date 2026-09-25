@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MK2W6
 kind: proposition
 title: Irreducible polynomials over a perfect field are separable
+slogan: 'Over a perfect field, irreducible polynomials have no repeated roots.'
 classification:
   areas:
   - algebra
