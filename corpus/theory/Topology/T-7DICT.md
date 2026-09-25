@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-7DICT
 kind: theorem
 title: Cantor's intersection theorem
+slogan: 'Nested nonempty closed subsets of a compact space have nonempty intersection.'
 classification:
   areas:
   - topology
