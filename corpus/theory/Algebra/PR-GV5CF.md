@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GV5CF
 kind: proposition
 title: Simultaneous diagonalizability of commuting diagonalizable operators
+slogan: 'Commuting diagonalizable operators share an eigenbasis.'
 classification:
   areas:
   - algebra
