@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RPL4Q
 kind: proposition
 title: Free modules are projective
+slogan: 'Free modules lift across every surjection.'
 classification:
   areas:
   - algebra
