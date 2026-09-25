@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4CDTT
 kind: theorem
 title: The class equation and centers of finite $p$-groups
+slogan: 'Conjugacy-class sizes split the group order; for a finite $p$-group, the center cannot vanish.'
 classification:
   areas:
   - algebra
