@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-CD6QT
 kind: lemma
 title: Jordan form data from the minimal and characteristic polynomials
+slogan: 'Characteristic multiplicities total block sizes; minimal-polynomial exponents give the largest blocks.'
 classification:
   areas:
   - algebra
