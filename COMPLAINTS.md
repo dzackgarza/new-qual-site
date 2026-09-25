@@ -37,6 +37,34 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 
 ## Mathematical issues and source questions
 
+### Berkeley Spring 2000 Problem 14 permits degenerate intervals
+
+- **Object and need:** `P-BKS00-14` /
+  `SRC-BERKELEY-PRELIM-SPRING-2000`, Problem 14. The printed statement
+  assumes only that the intervals $I_1,\ldots,I_n$ are disjoint, closed,
+  and nonempty, then asserts that vanishing of all $n$ integrals forces every
+  polynomial of degree below $n$ to vanish.
+- **Observed evidence:** pages 2--3 of `assets/attachments/Spring00.pdf`
+  print exactly “disjoint closed nonempty subintervals of R” and supply no
+  positive-length condition. If degenerate intervals are allowed, take
+  $n=1$, $I_1=\{0\}$ and $p=1$. Then $\deg p=0<1$ and
+  $\int_{I_1}p(x)\,dx=0$, but $p\ne0$.
+- **Impact and owner:** part 1 is false literally under the convention that
+  singleton sets are intervals. The standard zero-counting proof of part 1
+  requires every $I_j$ to have positive length. Part 2 remains true under the
+  literal source hypotheses: the owning card separates the nondegenerate
+  intervals, proves their lower-degree moment map is an isomorphism, and
+  adjusts $x^n$ by a lower-degree polynomial. The card records the part-1
+  counterexample as mathematical errata.
+- **Uncertainty:** the defect is exact under the usual inclusive definition
+  of a closed interval. The Berkeley exam may have intended “subinterval” to
+  mean a nondegenerate interval, but the retained paper does not state that
+  convention.
+- **Repair:** retain the printed statement for source fidelity, together with
+  the owning card's erratum, corrected positive-length formulation of part 1,
+  and literal proof of part 2, unless an authoritative Berkeley correction or
+  explicit convention establishes that singleton intervals were excluded.
+
 ### Berkeley Fall 1983 Problem 15 omits connectedness of the ambient open set
 
 - **Object and need:** `P-BKF83-15` /
