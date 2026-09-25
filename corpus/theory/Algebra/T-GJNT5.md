@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-GJNT5
 kind: theorem
 title: Lagrange's theorem
+slogan: 'A subgroup order divides the finite group order, with quotient equal to its index.'
 classification:
   areas:
   - algebra
