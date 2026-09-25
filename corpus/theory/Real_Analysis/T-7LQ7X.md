@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-7LQ7X
 kind: theorem
 title: Monotonicity and countable subadditivity of measures
+slogan: 'Measures grow with inclusion and never exceed the sum of a countable cover.'
 classification:
   areas:
   - real-analysis
