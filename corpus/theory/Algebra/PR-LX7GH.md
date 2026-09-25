@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LX7GH
 kind: proposition
 title: Prime and irreducible agree in a UFD
+slogan: 'Prime always implies irreducible; in a UFD, irreducible also implies prime.'
 classification:
   areas:
   - algebra
