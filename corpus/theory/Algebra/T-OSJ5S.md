@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-OSJ5S
 kind: theorem
 title: Jordan--Hölder theorem
+slogan: 'Composition factors are unique up to isomorphism and reordering.'
 classification:
   areas:
   - algebra
