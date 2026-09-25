@@ -35,9 +35,11 @@ archives
 src.bak
 scripts
 notebooks
+preamble
 notes
 .webpack
 out
 release
+.tmp/qpatch-test
 *.html
 **/*.html
