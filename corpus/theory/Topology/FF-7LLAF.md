@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-7LLAF
 kind: fact
 title: Homology of $\RP^4$
+slogan: '$\RP^4$ has $\ZZ$ in degree $0$, $\ZZ/2$ in degrees $1$ and $3$, and zero otherwise.'
 prompts:
 - What is $H_* \mathbb{RP}^4$?
 classification:
