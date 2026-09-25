@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-23V5J
 kind: fact
 title: Closed surfaces with Euler characteristic 2
+slogan: 'The only connected closed surface with Euler characteristic $2$ is the sphere.'
 prompts:
 - Which surface has Euler characteristic 2?
 classification:
