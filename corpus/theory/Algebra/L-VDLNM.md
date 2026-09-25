@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-VDLNM
 kind: lemma
 title: The characteristic polynomial is the product of the invariant factors
+slogan: 'Multiply the invariant factors to recover the characteristic polynomial.'
 classification:
   areas:
   - algebra
