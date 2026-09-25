@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-HHFGB
 kind: theorem
 title: Convolution with an approximate identity converges in $L^1$
+slogan: 'Convolving with a shrinking approximate identity recovers an $L^1$ function in norm.'
 classification:
   areas:
   - real-analysis
