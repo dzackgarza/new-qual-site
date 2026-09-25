@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-VAKLJ
 kind: fact
 title: The smallest nonabelian group has order 6
+slogan: Nonabelian groups first appear at order $6$, uniquely as $S_3$.
 prompts:
 - What is the smallest order at which a nonabelian group exists, and which group is it?
 classification:
