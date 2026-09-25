@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-MXNIV
 kind: fact
 title: Classes of Lebesgue measurable sets
+slogan: 'Open, closed, and null sets are measurable, and measurable sets remain measurable after taking cylinders.'
 prompts:
 - Which sets are known to be measurable?
 classification:
