@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-UACKH
 kind: fact
 title: Cyclotomic polynomial $\Phi_{2p}$ for an odd prime $p$
+slogan: 'For odd $p$, doubling the index alternates the signs: $\Phi_{2p}(x)=\Phi_p(-x)$.'
 prompts:
 - What is the cyclotomic polynomial $\Phi_{2p}(x)$?
 classification:
