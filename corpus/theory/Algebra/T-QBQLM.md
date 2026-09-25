@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QBQLM
 kind: theorem
 title: Construction of $\GF(p^n)$ as $\FF_p[x]/(f)$
+slogan: 'An irreducible degree-$n$ polynomial over $\FF_p$ presents the field with $p^n$ elements.'
 classification:
   areas:
   - algebra
