@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UVUS6
 kind: proposition
 title: Structure theorem for finitely generated modules over a PID
+slogan: 'Finitely generated PID-modules split uniquely into a free part and cyclic torsion factors.'
 classification:
   areas:
   - algebra
