@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-TSZNT
 kind: fact
 title: Groups of order 4
+slogan: 'Every group of order $4$ is abelian: cyclic or elementary abelian.'
 prompts:
 - What are the groups of order 4?
 classification:
