@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-VKYM3
 kind: fact
 title: $A^n = B^n$ does not imply $A = B$ for matrices
+slogan: 'Matrix powers are not injective: $A^2=(-A)^2$ can hold with $A\ne -A$.'
 prompts:
 - For matrices, does $A^n=B^n\implies A=B$?
 classification:
