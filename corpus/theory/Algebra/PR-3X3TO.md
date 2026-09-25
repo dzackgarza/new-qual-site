@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3X3TO
 kind: proposition
 title: Freshman's dream
+slogan: 'In characteristic $p$, the $p$th-power map preserves addition and multiplication.'
 classification:
   areas:
   - algebra
