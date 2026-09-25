@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3FB24
 kind: proposition
 title: Nonsingular cup product pairing
+slogan: 'Poincaré duality makes complementary-degree cup products nonsingular after removing torsion.'
 classification:
   areas:
   - topology
