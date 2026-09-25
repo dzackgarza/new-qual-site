@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5PDNQ
 kind: proposition
 title: $V^*\otimes W^*\cong(V\otimes W)^*$ when one factor is finite-dimensional
+slogan: 'With one finite-dimensional factor, dualizing a tensor product equals tensoring the duals.'
 classification:
   areas:
   - algebra
