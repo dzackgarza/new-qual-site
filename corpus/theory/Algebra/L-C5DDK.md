@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-C5DDK
 kind: lemma
 title: A linear operator over an algebraically closed field has an eigenvector in every nonzero invariant subspace
+slogan: 'Every nonzero invariant subspace over an algebraically closed field contains an eigenvector.'
 classification:
   areas:
   - algebra
