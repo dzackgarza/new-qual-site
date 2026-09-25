@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-WR7CD
 kind: theorem
 title: Order of a quotient group
+slogan: 'For a finite group, quotient order is subgroup index: $\abs{G/H}=\abs G/\abs H$.'
 classification:
   areas:
   - algebra
