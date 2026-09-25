@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-MUJDE
 kind: fact
 title: Cyclotomic polynomial $\Phi_p$ for a prime $p$
+slogan: For prime $p$, every nontrivial $p$th root is primitive, so $\Phi_p=1+x+\cdots+x^{p-1}$.
 prompts:
 - What is the cyclotomic polynomial $\Phi_p(x)$ for $p$ prime?
 classification:
