@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-OPK3N
 kind: theorem
 title: Extreme value theorem
+slogan: 'A continuous map from a nonempty compact space to an ordered space attains its minimum and maximum.'
 classification:
   areas:
   - topology
