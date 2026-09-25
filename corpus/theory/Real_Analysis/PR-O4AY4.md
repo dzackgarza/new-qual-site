@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-O4AY4
 kind: proposition
 title: Absolute continuity of the integral of an $L^1$ function
+slogan: '$L^1$ functions have arbitrarily small integral on sets of sufficiently small measure.'
 classification:
   areas:
   - real-analysis
