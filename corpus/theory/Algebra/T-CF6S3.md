@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CF6S3
 kind: theorem
 title: Eisenstein's criterion
+slogan: 'One prime dividing every lower coefficient but not the leading one, with $p^2\nmid a_0$, forces irreducibility over $\QQ$.'
 classification:
   areas:
   - algebra
