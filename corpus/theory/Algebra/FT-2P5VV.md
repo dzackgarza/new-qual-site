@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-2P5VV
 kind: theorem
 title: Eisenstein's criterion
+slogan: 'One prime divides every lower coefficient, misses the leading coefficient, and its square misses the constant term: irreducible.'
 prompts:
 - State Eisenstein's criterion.
 classification:
