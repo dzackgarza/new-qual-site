@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BTPU4
 kind: theorem
 title: Seifert--van Kampen theorem
+slogan: 'The fundamental group of a union is the pushout of the fundamental groups over the intersection.'
 classification:
   areas:
   - topology
