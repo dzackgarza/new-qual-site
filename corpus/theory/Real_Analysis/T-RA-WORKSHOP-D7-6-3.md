@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-3
 kind: theorem
 title: Uniform limits of Riemann--Stieltjes integrable functions
+slogan: 'Uniform convergence preserves Riemann--Stieltjes integrability and commutes with the integral.'
 classification:
   areas:
   - real-analysis
