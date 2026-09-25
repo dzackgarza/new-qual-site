@@ -61,8 +61,7 @@ $$
 \qquad
 -\frac12\pm i\frac{\sqrt3}{2}.
 $$
-The standard real solution basis for a constant-coefficient linear
-ODE therefore gives the displayed form.
+The standard real solution basis for a constant-coefficient linear ODE therefore gives the displayed form.
 :::
 
 <1>2. The hypothesis $\lim_{x\to\infty}y(x)=0$ forces $A=0$.
@@ -72,8 +71,9 @@ The oscillatory term in step <1>1 is bounded in absolute value by
 $$
 e^{-x/2}(\abs B+\abs C),
 $$
-which tends to zero. If $A\ne0$, then $Ae^x$ is unbounded in absolute
-value as $x\to\infty$, so the sum cannot tend to zero. Hence $A=0$.
+which tends to zero.
+If $A\ne0$, then $Ae^x$ is unbounded in absolute value as $x\to\infty$, so the sum cannot tend to zero.
+Hence $A=0$.
 :::
 
 <1>3. For a decaying solution,

@@ -58,13 +58,9 @@ X_r=\bigl(Y,\mco_X/\mci^r\bigr).
 $$
 Thus $X_1=Y$ and $\hat X=\varprojlim_rX_r$.
 
-There is one characteristic issue in part (a). The successive kernels below
-are always finite-dimensional $k$-vector spaces, and they make the kernel of
-$\Pic\hat X\to\Pic Y$ an infinite-dimensional filtered formal group. If
-$\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group
-with an additive $k$-vector space, giving the assertion in the source
-literally. In positive characteristic the assertion that the *group itself*
-is a $k$-vector space is false; step <1>6 gives an explicit counterexample.
+There is one characteristic issue in part (a). The successive kernels below are always finite-dimensional $k$-vector spaces, and they make the kernel of $\Pic\hat X\to\Pic Y$ an infinite-dimensional filtered formal group.
+If $\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group with an additive $k$-vector space, giving the assertion in the source literally.
+In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step <1>6 gives an explicit counterexample.
 The surjectivity in (a), and all of (b)--(c), hold in every characteristic.
 
 <1>1. For every $r\ge1$,
@@ -73,8 +69,7 @@ H^0(X_r,\mco_{X_r})=k.
 $$
 
 ::: {.proof}
-Since $Y$ is an integral projective curve over the algebraically closed field
-$k$,
+Since $Y$ is an integral projective curve over the algebraically closed field $k$,
 $$
 H^0(Y,\mco_Y)=k.
 $$
@@ -99,14 +94,14 @@ This line bundle has negative degree
 $$
 -(r-1)d^2<0,
 $$
-so it has no nonzero global section. Hence
+so it has no nonzero global section.
+Hence
 $$
 H^0(X_r,\mco_{X_r})
 \hookrightarrow
 H^0(X_{r-1},\mco_{X_{r-1}}).
 $$
-The constants give a copy of $k$ in every term, so induction from $X_1=Y$
-forces equality with $k$ at every stage.
+The constants give a copy of $k$ in every term, so induction from $X_1=Y$ forces equality with $k$ at every stage.
 :::
 
 <1>2. For every $r\ge1$ there is a short exact sequence of abelian groups
@@ -134,9 +129,7 @@ $$
 \cong
 \mco_Y(-rd).
 $$
-The Picard sequence for a square-zero thickening
-([Stacks Project, Tag 0C6R](https://stacks.math.columbia.edu/tag/0C6R))
-contains
+The Picard sequence for a square-zero thickening ([Stacks Project, Tag 0C6R](https://stacks.math.columbia.edu/tag/0C6R)) contains
 $$
 H^0(X_{r+1},\mco_{X_{r+1}}^\times)
 \longrightarrow
@@ -152,8 +145,8 @@ $$
 \longrightarrow
 H^2\bigl(Y,\mco_Y(-rd)\bigr).
 $$
-By step <1>1 the first two groups of units are both $k^\times$, and their
-map is the identity. Since $Y$ has dimension $1$,
+By step <1>1 the first two groups of units are both $k^\times$, and their map is the identity.
+Since $Y$ has dimension $1$,
 $$
 H^2\bigl(Y,\mco_Y(-rd)\bigr)=0.
 $$
@@ -164,7 +157,8 @@ Exactness therefore gives the displayed short exact sequence.
 $$
 \Pic\hat X\longrightarrow\Pic Y
 $$
-is surjective. If
+is surjective.
+If
 $$
 K=\ker(\Pic\hat X\to\Pic Y)
 $$
@@ -186,16 +180,15 @@ As in [[P-AGH3115PICFORMAL|Exercise III.11.5]], Exercise II.9.6 gives
 $$
 \Pic\hat X\cong\varprojlim_r\Pic X_r.
 $$
-Every transition map in this inverse system is surjective by step <1>2.
-Starting with any class in
+Every transition map in this inverse system is surjective by step <1>2. Starting with any class in
 $$
 \Pic X_1=\Pic Y,
 $$
-choose successively a lift to $X_2$, then to $X_3$, and so on. The resulting
-compatible sequence is a class in $\Pic\hat X$, proving surjectivity.
+choose successively a lift to $X_2$, then to $X_3$, and so on.
+The resulting compatible sequence is a class in $\Pic\hat X$, proving surjectivity.
 
-Now fix $r$. An element of $K_r$ has trivial restriction to $X_r$, so its
-restriction to $X_{r+1}$ lies in
+Now fix $r$.
+An element of $K_r$ has trivial restriction to $X_r$, so its restriction to $X_{r+1}$ lies in
 $$
 \ker(\Pic X_{r+1}\to\Pic X_r)=V_r.
 $$
@@ -203,17 +196,15 @@ This gives a homomorphism
 $$
 K_r\longrightarrow V_r.
 $$
-Its kernel is exactly $K_{r+1}$. It is surjective because a class in $V_r$
-can first be regarded as a class on $X_{r+1}$ trivial on $X_r$, and then
-lifted successively through all higher $X_s$ using the surjectivity from
-step <1>2. Thus
+Its kernel is exactly $K_{r+1}$.
+It is surjective because a class in $V_r$ can first be regarded as a class on $X_{r+1}$ trivial on $X_r$, and then lifted successively through all higher $X_s$ using the surjectivity from step <1>2. Thus
 $$
 K_r/K_{r+1}\cong V_r.
 $$
 :::
 
-<1>4. The dimensions $\dim_kV_r$ are unbounded. More precisely, for
-$r\gg0$,
+<1>4. The dimensions $\dim_kV_r$ are unbounded.
+More precisely, for $r\gg0$,
 $$
 \dim_kV_r
 =
@@ -221,8 +212,8 @@ rd^2+\frac{d(d-3)}2.
 $$
 
 ::: {.proof}
-Let $F$ be the homogeneous equation of $Y$. Twisting the hypersurface
-sequence by $-rd$ gives
+Let $F$ be the homogeneous equation of $Y$.
+Twisting the hypersurface sequence by $-rd$ gives
 $$
 0
 \longrightarrow
@@ -243,8 +234,8 @@ $$
 =
 \binom{m-1}{2}
 $$
-for $m\ge3$. Since a curve has no $H^2$ for a quasicoherent sheaf, the
-long exact sequence gives, for $r\gg0$,
+for $m\ge3$.
+Since a curve has no $H^2$ for a quasicoherent sheaf, the long exact sequence gives, for $r\gg0$,
 $$
 0
 \longrightarrow
@@ -267,13 +258,11 @@ $$
 rd^2+\frac{d(d-3)}2.
 \end{aligned}
 $$
-This tends to infinity with $r$. In particular $V_r\ne0$ for all
-sufficiently large $r$, so the filtration in step <1>3 has infinitely many
-strict inclusions.
+This tends to infinity with $r$.
+In particular $V_r\ne0$ for all sufficiently large $r$, so the filtration in step <1>3 has infinitely many strict inclusions.
 :::
 
-<1>5. If $\operatorname{char}k=0$, then $K$ is an infinite-dimensional
-$k$-vector space.
+<1>5. If $\operatorname{char}k=0$, then $K$ is an infinite-dimensional $k$-vector space.
 
 ::: {.proof}
 Let
@@ -306,8 +295,7 @@ $$
 \xrightarrow{\sim}
 \hat\mci.
 $$
-Because the right-hand side is a sheaf of $k$-vector spaces, this transports
-a $k$-vector-space structure to $1+\hat\mci$ and hence to its cohomology.
+Because the right-hand side is a sheaf of $k$-vector spaces, this transports a $k$-vector-space structure to $1+\hat\mci$ and hence to its cohomology.
 
 Step <1>1 gives
 $$
@@ -319,7 +307,8 @@ H^0(\hat X,\mco_{\hat X}^\times)
 \longrightarrow
 H^0(Y,\mco_Y^\times)
 $$
-is the isomorphism $k^\times\to k^\times$. The long exact sequence for
+is the isomorphism $k^\times\to k^\times$.
+The long exact sequence for
 $$
 1
 \longrightarrow
@@ -340,8 +329,7 @@ H^1(\hat X,\hat\mci)
 $$
 as a $k$-vector space.
 
-If this vector space were finite-dimensional, it could not contain the
-infinite strictly descending chain
+If this vector space were finite-dimensional, it could not contain the infinite strictly descending chain
 $$
 K=K_1\supsetneq K_2\supsetneq\cdots
 $$
@@ -349,30 +337,26 @@ obtained in steps <1>3--<1>4. Hence
 $$
 \boxed{\dim_kK=\infty}.
 $$
-This proves the vector-space assertion in part (a) when
-$\operatorname{char}k=0$.
+This proves the vector-space assertion in part (a) when $\operatorname{char}k=0$.
 :::
 
-<1>6. In characteristic $p>0$, the assertion that $K$ itself is a
-$k$-vector space is false in general.
+<1>6. In characteristic $p>0$, the assertion that $K$ itself is a $k$-vector space is false in general.
 
 ::: {.proof}
 Take
 $$
 Y=\{z=0\}\subseteq\PP_k^2.
 $$
-Thus $Y\cong\PP_k^1$. Cover $Y$ by the standard opens where $x\ne0$ and
-$y\ne0$, and take the corresponding formal opens in $\hat X$. On their
-intersection,
+Thus $Y\cong\PP_k^1$.
+Cover $Y$ by the standard opens where $x\ne0$ and $y\ne0$, and take the corresponding formal opens in $\hat X$.
+On their intersection,
 $$
 u
 =
 1+\frac{z^2}{xy}
 $$
-is a formal unit congruent to $1$ modulo the ideal of $Y$. With two opens
-there is no triple-overlap condition, so $u$ is a Cech transition function
-for an invertible sheaf $\mathfrak L$ on $\hat X$ whose restriction to $Y$
-is trivial.
+is a formal unit congruent to $1$ modulo the ideal of $Y$.
+With two opens there is no triple-overlap condition, so $u$ is a Cech transition function for an invertible sheaf $\mathfrak L$ on $\hat X$ whose restriction to $Y$ is trivial.
 
 Its leading term
 $$
@@ -384,14 +368,14 @@ x^{-1}y^{-1}
 \in
 H^1(\PP^1,\mco_{\PP^1}(-2)),
 $$
-so $\mathfrak L$ is nontrivial. In characteristic $p$,
+so $\mathfrak L$ is nontrivial.
+In characteristic $p$,
 $$
 u^p
 =
 1+\frac{z^{2p}}{x^py^p}.
 $$
-If $\mathfrak L^{\otimes p}$ were trivial, its first nonzero term would be a
-Cech coboundary in
+If $\mathfrak L^{\otimes p}$ were trivial, its first nonzero term would be a Cech coboundary in
 $$
 H^1(\PP^1,\mco_{\PP^1}(-2p)).
 $$
@@ -399,24 +383,21 @@ But that term is
 $$
 x^{-p}y^{-p},
 $$
-which is one of the standard nonzero basis monomials in
-$H^1(\PP^1,\mco(-2p))$ by [[T-IJW1K]]. Therefore
+which is one of the standard nonzero basis monomials in $H^1(\PP^1,\mco(-2p))$ by [[T-IJW1K]]. Therefore
 $$
 \mathfrak L^{\otimes p}\not\cong\mco_{\hat X}.
 $$
 
-The additive group of a $k$-vector space in characteristic $p$ is killed by
-$p$. Since $K$ contains the class of $\mathfrak L$ and that class is not
-killed by $p$, the Picard-group law on $K$ cannot make it a $k$-vector
-space. The correct characteristic-free statement is the filtered statement
-of steps <1>2--<1>4.
+The additive group of a $k$-vector space in characteristic $p$ is killed by $p$.
+Since $K$ contains the class of $\mathfrak L$ and that class is not killed by $p$, the Picard-group law on $K$ cannot make it a $k$-vector space.
+The correct characteristic-free statement is the filtered statement of steps <1>2--<1>4.
 :::
 
 <1>7. There is a nonalgebraizable invertible sheaf on $\hat X$.
 
 ::: {.proof}
-By steps <1>3--<1>4, $K$ is nonzero in every characteristic. Choose a
-nontrivial class
+By steps <1>3--<1>4, $K$ is nonzero in every characteristic.
+Choose a nontrivial class
 $$
 [\mathfrak L]\in K.
 $$
@@ -424,23 +405,18 @@ Thus
 $$
 \mathfrak L|_Y\cong\mco_Y.
 $$
-Suppose that $\mathfrak L$ were algebraizable. Then there would be a coherent
-sheaf $\mcg$ on $X$ with
+Suppose that $\mathfrak L$ were algebraizable.
+Then there would be a coherent sheaf $\mcg$ on $X$ with
 $$
 \hat\mcg\cong\mathfrak L.
 $$
 
-The local argument in
-[[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6, steps <1>7--<1>8]]
-applies to this single algebraization: faithfully flat completion shows that
-$\mcg$ is locally free of rank one on a neighbourhood of $Y$, and its
-reflexive hull
+The local argument in [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6, steps <1>7--<1>8]] applies to this single algebraization: faithfully flat completion shows that $\mcg$ is locally free of rank one on a neighbourhood of $Y$, and its reflexive hull
 $$
 \mcl=\mcg^{\vee\vee}
 $$
-is a rank-one reflexive sheaf on $X=\PP_k^2$. Since projective space is
-regular and locally factorial, $\mcl$ is invertible; moreover $\mcl$ agrees
-with $\mcg$ near $Y$, so
+is a rank-one reflexive sheaf on $X=\PP_k^2$.
+Since projective space is regular and locally factorial, $\mcl$ is invertible; moreover $\mcl$ agrees with $\mcg$ near $Y$, so
 $$
 \hat\mcl\cong\mathfrak L.
 $$
@@ -453,7 +429,8 @@ with generator $\mco_X(1)$, so
 $$
 \mcl\cong\mco_X(m)
 $$
-for some $m\in\ZZ$. Restricting to $Y$ gives
+for some $m\in\ZZ$.
+Restricting to $Y$ gives
 $$
 \mco_Y(m)
 \cong
@@ -465,7 +442,8 @@ Now
 $$
 \deg\mco_Y(m)=md.
 $$
-Since $d>0$, triviality forces $m=0$. Hence
+Since $d>0$, triviality forces $m=0$.
+Hence
 $$
 \mcl\cong\mco_X
 $$
@@ -478,19 +456,16 @@ contrary to the choice of $[\mathfrak L]\ne0$.
 Thus $\mathfrak L$ is not algebraizable, proving (b).
 :::
 
-<1>8. There is a locally free sheaf $\mathfrak F$ on $\hat X$ such that no
-twist $\mathfrak F(n)$ is generated by global sections.
+<1>8. There is a locally free sheaf $\mathfrak F$ on $\hat X$ such that no twist $\mathfrak F(n)$ is generated by global sections.
 
 ::: {.proof}
-Condition (i) of [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6(b)]] says that
-*every* locally free sheaf on $\hat X$ is algebraizable. Step <1>7 gives an
-invertible, hence locally free, counterexample. Therefore condition (i) is
-false.
+Condition (i) of [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6(b)]] says that *every* locally free sheaf on $\hat X$ is algebraizable.
+Step <1>7 gives an invertible, hence locally free, counterexample.
+Therefore condition (i) is false.
 
-Exercise III.11.6(b) proves that condition (i) is equivalent to condition
-(ii). Hence condition (ii) is false. Consequently there is a locally free
-sheaf $\mathfrak F$ on $\hat X$ for which no integer $n_0$ has the property
-that
+Exercise III.11.6(b) proves that condition (i) is equivalent to condition (ii).
+Hence condition (ii) is false.
+Consequently there is a locally free sheaf $\mathfrak F$ on $\hat X$ for which no integer $n_0$ has the property that
 $$
 \mathfrak F(n)
 $$
@@ -501,16 +476,15 @@ For every $r\ge0$, the sheaf
 $$
 \mco_{\hat X}(r)
 $$
-is generated by global sections because it is the restriction of the
-globally generated sheaf $\mco_{\PP^2}(r)$. Tensor products of globally
-generated sheaves are globally generated, so
+is generated by global sections because it is the restriction of the globally generated sheaf $\mco_{\PP^2}(r)$.
+Tensor products of globally generated sheaves are globally generated, so
 $$
 \mathfrak F(n_1+r)
 =
 \mathfrak F(n_1)\otimes\mco_{\hat X}(r)
 $$
-would be globally generated for every $r\ge0$. Taking $n_0=n_1$ would then
-satisfy condition (ii) for $\mathfrak F$, a contradiction.
+would be globally generated for every $r\ge0$.
+Taking $n_0=n_1$ would then satisfy condition (ii) for $\mathfrak F$, a contradiction.
 
 Therefore
 $$
@@ -523,10 +497,7 @@ This is the phenomenon announced in Hartshorne II.9.9.1.
 <1>9. Q.E.D.
 
 ::: {.proof}
-Steps <1>2--<1>4 prove the characteristic-free surjectivity and infinite
-filtered kernel in (a), step <1>5 gives the stated infinite-dimensional
-vector-space conclusion in characteristic zero, and step <1>6 records the
-necessary correction in positive characteristic. Step <1>7 proves (b), and
-step <1>8 proves (c).
+Steps <1>2--<1>4 prove the characteristic-free surjectivity and infinite filtered kernel in (a), step <1>5 gives the stated infinite-dimensional vector-space conclusion in characteristic zero, and step <1>6 records the necessary correction in positive characteristic.
+Step <1>7 proves (b), and step <1>8 proves (c).
 :::
 :::

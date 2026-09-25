@@ -59,8 +59,8 @@ c_n\longrightarrow\infty.
 $$
 
 ::: {.proof}
-Since $b_n\to\infty$ and $n\to\infty$, their product
-$nb_n\to\infty$. Taking positive square roots gives the claim.
+Since $b_n\to\infty$ and $n\to\infty$, their product $nb_n\to\infty$.
+Taking positive square roots gives the claim.
 :::
 
 <1>2. There exists a strictly increasing sequence of indices
@@ -73,13 +73,13 @@ c_{n_k}\ge\sum_{j=1}^{k-1}c_{n_j}.
 $$
 
 ::: {.proof}
-Choose $n_1$ arbitrarily. Suppose
-$n_1<\cdots<n_{k-1}$ have been chosen. The finite number
+Choose $n_1$ arbitrarily.
+Suppose $n_1<\cdots<n_{k-1}$ have been chosen.
+The finite number
 $$
 \sum_{j=1}^{k-1}c_{n_j}
 $$
-is fixed, while $c_n\to\infty$ by step <1>1. Hence some
-$n_k>n_{k-1}$ satisfies the required inequality.
+is fixed, while $c_n\to\infty$ by step <1>1. Hence some $n_k>n_{k-1}$ satisfies the required inequality.
 :::
 
 <1>3. Define
@@ -96,7 +96,8 @@ $$
 $$
 
 ::: {.proof}
-For $k=1$ the inequality is immediate. If $k\ge2$, step <1>2 gives
+For $k=1$ the inequality is immediate.
+If $k\ge2$, step <1>2 gives
 $$
 \sum_{j=1}^{k}c_{n_j}
 =
@@ -130,9 +131,8 @@ $$
 2\sqrt{\frac{b_{n_k}}{n_k}}.
 \end{aligned}
 $$
-Since $b_n/n\to0$, the right-hand side tends to zero as
-$k\to\infty$. Also $k\to\infty$ whenever $n\to\infty$, so the
-Cesàro means tend to zero.
+Since $b_n/n\to0$, the right-hand side tends to zero as $k\to\infty$.
+Also $k\to\infty$ whenever $n\to\infty$, so the Cesàro means tend to zero.
 :::
 
 <1>5. Along the spike indices,
@@ -148,12 +148,12 @@ By definition,
 $$
 a_{n_k}=c_{n_k}=\sqrt{n_kb_{n_k}},
 $$
-which gives the displayed ratio. Since
+which gives the displayed ratio.
+Since
 $$
 \frac{b_{n_k}}{n_k}\longrightarrow0
 $$
-and all terms are positive, its reciprocal square root tends to
-$\infty$.
+and all terms are positive, its reciprocal square root tends to $\infty$.
 :::
 
 <1>6. Therefore
@@ -164,14 +164,13 @@ $$
 $$
 
 ::: {.proof}
-Step <1>5 shows that the ratio tends to infinity along the subsequence
-$n=n_k$. Hence its limsup is infinite.
+Step <1>5 shows that the ratio tends to infinity along the subsequence $n=n_k$.
+Hence its limsup is infinite.
 :::
 
 <1>7. Q.E.D.
 
 ::: {.proof}
-The sequence constructed in step <1>3 satisfies both required
-properties by steps <1>4 and <1>6.
+The sequence constructed in step <1>3 satisfies both required properties by steps <1>4 and <1>6.
 :::
 :::
