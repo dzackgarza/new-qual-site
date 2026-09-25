@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-N6PYS
 kind: theorem
 title: Maps from compact spaces to Hausdorff spaces
+slogan: 'Continuous maps from compact to Hausdorff spaces are closed; surjections are quotient maps, injections embeddings, and bijections homeomorphisms.'
 classification:
   areas:
   - topology
