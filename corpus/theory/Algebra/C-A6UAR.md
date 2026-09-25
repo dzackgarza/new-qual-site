@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-A6UAR
 kind: corollary
 title: Class equation
+slogan: A finite group is its center plus its noncentral conjugacy classes.
 classification:
   areas:
   - algebra
