@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-W3AIU
 kind: fact
 title: Euler characteristics of spheres, surfaces and the Klein bottle
+slogan: 'Spheres alternate Euler characteristic $0$ and $2$; orientable genus $g$ gives $2-2g$, while $\RP^2$ gives $1$ and the Klein bottle $0$.'
 prompts:
 - What are the Euler characteristics of $S^n$, $\Sigma_g$, $\RP^2$ and the Klein bottle?
 classification:
