@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-IRHG3
 kind: fact
 title: Groups of order 16
+slogan: Order $16$ has exactly fourteen group types: five abelian and nine nonabelian.
 prompts:
 - What are the groups of order 16?
 classification:
