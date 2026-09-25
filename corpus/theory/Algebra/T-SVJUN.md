@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SVJUN
 kind: theorem
 title: Recognizing internal direct products
+slogan: 'Normal complementary factors with trivial intersection form a direct product.'
 classification:
   areas:
   - algebra
