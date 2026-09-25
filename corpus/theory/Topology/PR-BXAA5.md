@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BXAA5
 kind: proposition
 title: Universal covers of wedge sums
+slogan: 'The universal cover of a wedge is a tree of copies of the summands'' universal covers.'
 classification:
   areas:
   - topology
