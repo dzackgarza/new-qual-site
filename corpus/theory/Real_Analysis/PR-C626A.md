@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-C626A
 kind: proposition
 title: Orthogonality to $C_c^0$ implies $f=0$ almost everywhere
+slogan: 'A locally integrable function annihilating every compactly supported continuous test function is zero almost everywhere.'
 classification:
   areas:
   - real-analysis
