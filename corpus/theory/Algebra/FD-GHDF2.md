@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FD-GHDF2
 kind: proposition
 title: Sign of a permutation from its cycle decomposition
+slogan: Permutation parity is the parity of its number of even-length cycles.
 prompts:
 - How do you read the sign of a permutation off its disjoint cycle decomposition?
 classification:
