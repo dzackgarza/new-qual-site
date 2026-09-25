@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TZN4M
 kind: proposition
 title: Characterization of finite normal extensions as splitting fields
+slogan: 'Finite normal extensions are exactly splitting fields of nonzero polynomials.'
 classification:
   areas:
   - algebra
