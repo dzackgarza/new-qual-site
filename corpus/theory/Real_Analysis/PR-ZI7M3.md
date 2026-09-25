@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZI7M3
 kind: proposition
 title: Parseval's identity
+slogan: 'An orthonormal basis preserves squared norm as the sum of squared Fourier coefficients.'
 classification:
   areas:
   - real-analysis
