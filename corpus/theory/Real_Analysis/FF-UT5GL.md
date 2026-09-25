@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-UT5GL
 kind: fact
 title: Riesz representation theorem for Hilbert spaces
+slogan: 'Every continuous linear functional on a Hilbert space is inner product with a unique vector of the same norm.'
 prompts:
 - What is the Riesz Representation theorem?
 classification:
