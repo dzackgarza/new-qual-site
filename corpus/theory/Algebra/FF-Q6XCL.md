@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-Q6XCL
 kind: fact
 title: Groups of order 15
+slogan: Order $15$ forces cyclicity.
 prompts:
 - What are the groups of order 15?
 classification:
