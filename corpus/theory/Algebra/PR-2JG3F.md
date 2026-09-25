@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-2JG3F
 kind: proposition
 title: Number of abelian groups of order $n$ as a product of partition numbers
+slogan: 'Abelian groups of order $\prod p_k^{e_k}$ are counted by the product of the partition numbers $P(e_k)$.'
 classification:
   areas:
   - algebra
