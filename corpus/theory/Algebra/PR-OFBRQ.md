@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OFBRQ
 kind: proposition
 title: Quadratic extensions in characteristic not $2$
+slogan: 'Every quadratic extension in characteristic not $2$ is $F(\sqrt a)$ and is automatically Galois.'
 classification:
   areas:
   - algebra
