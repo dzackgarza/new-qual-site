@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-6PRW3
 kind: theorem
 title: Tonelli's theorem for nonnegative measurable functions
+slogan: 'Nonnegative measurable functions may be integrated iteratively in either order without an integrability hypothesis.'
 classification:
   areas:
   - real-analysis
