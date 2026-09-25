@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CZS5F
 kind: proposition
 title: Finite unions of nowhere dense sets are nowhere dense
+slogan: 'Nowhere denseness is closed under finite unions, but not countable unions.'
 classification:
   areas:
   - real-analysis
