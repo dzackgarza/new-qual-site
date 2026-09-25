@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GT5RS
 kind: proposition
 title: Uniform Cauchy criterion for sequences and series of functions
+slogan: 'Uniform convergence is exactly the uniform Cauchy condition, for sequences and for series tails.'
 classification:
   areas:
   - real-analysis
