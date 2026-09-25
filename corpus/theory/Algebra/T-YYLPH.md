@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-YYLPH
 kind: theorem
 title: Hilbert basis theorem
+slogan: 'Adjoining finitely many polynomial variables preserves Noetherianity.'
 classification:
   areas:
   - algebra
