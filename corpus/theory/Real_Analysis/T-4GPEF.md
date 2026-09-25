@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4GPEF
 kind: theorem
 title: Fubini's theorem for integrable functions
+slogan: 'Absolute integrability permits iterated integration in either order and recovers the integral on the product.'
 prompts:
 - State Fubini's theorem.
 classification:
