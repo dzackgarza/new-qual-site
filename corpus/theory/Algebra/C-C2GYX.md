@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-C2GYX
 kind: corollary
 title: Inseparable irreducible polynomials are polynomials in $x^p$
+slogan: In characteristic $p$, peeling off all $p$-power dependence from an irreducible polynomial leaves a unique separable core.
 classification:
   areas:
   - algebra
