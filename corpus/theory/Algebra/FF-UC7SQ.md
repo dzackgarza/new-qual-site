@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-UC7SQ
 kind: fact
 title: Factorization of $x^n - y^n$
+slogan: A difference of $n$th powers always carries the factor $x-y$.
 prompts:
 - How does $x^n - y^n$ factor?
 classification:
