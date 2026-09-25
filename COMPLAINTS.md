@@ -423,6 +423,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   Retain this entry as source errata; the provenance packet itself is not
   rewritten.
 
+### Berkeley Spring 1983 Problem 4 source PDF is missing the network diagram
+
+- **Object and need:** P-BKS83-4 / SRC-BERKELEY-PRELIM-SPRING-1983,
+  Problem 4. The requested Euclidean symmetry group depends on the triangular
+  network drawn in the source.
+- **Observed evidence:** page 1 of assets/attachments/Spring83.pdf prints
+  \`../Fig/Pr/Sp83-4.ps not found\` where the defining diagram should occur.
+  No retained \`Sp83-4\` asset, duplicate statement with the figure, or embedded
+  PDF image is present in the repository.
+- **Impact and owner:** the four surviving labeled points do not determine the
+  network or its symmetry group. The owning card must not reconstruct the
+  missing edges by guesswork.
+- **Uncertainty:** none about the retained packet. The original exam may have
+  had an external PostScript figure, but that file is absent here.
+- **Repair:** P-BKS83-4 records the source obstruction and proves that the
+  surviving data are underdetermined by exhibiting two triangular networks
+  through the named points with different Euclidean symmetry groups. Retain
+  this entry as source errata; the missing source asset is not reconstructed.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
