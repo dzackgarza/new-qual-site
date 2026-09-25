@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-SZR6O
 kind: fact
 title: Meagre sets
+slogan: 'Meagre means a countable union of nowhere dense sets.'
 prompts:
 - What is a meagre set?
 classification:
