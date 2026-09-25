@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-YHH3M
 kind: theorem
 title: Schur's lemma
+slogan: 'Over an algebraically closed field, an irreducible finite-dimensional representation has only scalar equivariant endomorphisms.'
 classification:
   areas:
   - algebra
