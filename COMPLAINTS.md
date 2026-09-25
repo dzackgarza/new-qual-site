@@ -608,6 +608,25 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   $\pi/\sqrt{a^2-1}$. Retain this entry as source errata; the provenance
   packet itself is not rewritten.
 
+### Berkeley Spring 2009 Problem 9A source solution switches to the wrong least common multiple
+
+- **Object and need:** P-BKS09-9A / SRC-BERKELEY-PRELIM-SPRING-2009,
+  Problem 9A. The requested argument must use the integrality of
+  $d_{2m+1}I_m$ to prove $d_{2m+1}\geq2^{2m}$.
+- **Observed evidence:** page 4 of assets/attachments/s09solutions.pdf
+  first establishes $d_{2m+1}I_m\in\mathbb Z$, then after bounding
+  $0<I_m\leq(1/4)^m$ states instead that $d_mI_m\geq1$. The same index
+  change is present in the retained Markdown extraction.
+- **Impact and owner:** positivity and integrality justify
+  $d_{2m+1}I_m\geq1$, not $d_mI_m\geq1$. The printed step therefore does
+  not follow as written, although replacing $d_m$ by $d_{2m+1}$ immediately
+  completes the intended proof.
+- **Uncertainty:** none; the incorrect subscript is present in the retained
+  PDF itself and is not merely an extraction artifact.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS09-9A keeps the established integer $d_{2m+1}I_m$ throughout
+  and derives $d_{2m+1}\geq4^m=2^{2m}$. Retain this entry as source errata.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
