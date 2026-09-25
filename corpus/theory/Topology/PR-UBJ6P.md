@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UBJ6P
 kind: proposition
 title: Universal cover and deck groups
+slogan: 'A universal cover factors through every connected cover, and its deck group is the fundamental group.'
 classification:
   areas:
   - topology
