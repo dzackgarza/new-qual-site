@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-HAMDC
 kind: fact
 title: Factorization of $x^n + a^n$ for odd $n$
+slogan: Odd powers make $x+a$ a factor; even powers do not unless $2a^n$ vanishes.
 prompts:
 - When does $x + a$ divide $x^n + a^n$, and what is the factorization?
 classification:
