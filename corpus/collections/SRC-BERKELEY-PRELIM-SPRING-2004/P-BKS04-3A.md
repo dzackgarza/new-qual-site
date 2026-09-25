@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-3A
 kind: problem
-title: UC Berkeley Spring 2004 prelim 3A
+title: Rational interpolation with prescribed pole-order bounds
 classification:
   areas: [prelim]
   topics: []
@@ -17,6 +17,16 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-12
   note: Compared the authored solution with the retained `s04solution.pdf` solution packet.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: >-
+    Independently checked the retained solution: clear the allowed
+    poles by Q(z)=prod_i (z-a_i)^{r_i}, interpolate c_j Q(b_j), and use
+    deg G <= sum_i r_i for holomorphy at infinity.
 ---
 
 ::: {.problem}
@@ -32,4 +42,113 @@ then there exists a rational function $F(z)\in\mathbb C(z)$ satisfying all of th
 2. $\operatorname{ord}_{z=a_i}F(z)\ge -r_i$.
 
 3. $F(b_j)=c_j$ for $j=1,\ldots,m$.
+:::
+
+::: {.solution}
+Set
+$$
+R\coloneqq r_1+\cdots+r_n
+$$
+and
+$$
+Q(z)\coloneqq\prod_{i=1}^n(z-a_i)^{r_i}.
+$$
+
+<1>1. There is a polynomial $G\in\CC[z]$ with
+$$
+\deg G\leq m-1\leq R
+$$
+such that
+$$
+G(b_j)=c_jQ(b_j)
+$$
+for every $j=1,\ldots,m$.
+
+::: {.proof}
+The points $b_1,\ldots,b_m$ are pairwise distinct, so Lagrange
+interpolation gives a polynomial of degree at most $m-1$ taking the
+prescribed values
+$$
+c_jQ(b_j).
+$$
+The hypothesis
+$$
+m\leq R+1
+$$
+gives $m-1\leq R$.
+:::
+
+<1>2. Define
+$$
+F(z)\coloneqq\frac{G(z)}{Q(z)}.
+$$
+Then $F$ is holomorphic on
+$$
+\CC\setminus\{a_1,\ldots,a_n\}
+$$
+and at $\infty$.
+
+::: {.proof}
+The only zeros of $Q$ are among $a_1,\ldots,a_n$, so the quotient is
+holomorphic away from those points.
+
+Moreover,
+$$
+\deg G\leq R=\deg Q.
+$$
+Hence the rational function $G/Q$ has no pole at infinity. Equivalently,
+after writing $w=1/z$, the function
+$$
+F(1/w)
+$$
+extends holomorphically to $w=0$ because multiplying numerator and
+denominator by $w^R$ produces a quotient of polynomials in $w$ whose
+denominator is nonzero at $w=0$.
+:::
+
+<1>3. For every $i=1,\ldots,n$,
+$$
+\operatorname{ord}_{z=a_i}F(z)\geq-r_i.
+$$
+
+::: {.proof}
+Because the $a_i$ are distinct, write
+$$
+Q(z)=(z-a_i)^{r_i}Q_i(z),
+$$
+where $Q_i(a_i)\neq0$. Then
+$$
+(z-a_i)^{r_i}F(z)
+=
+\frac{G(z)}{Q_i(z)}
+$$
+is holomorphic at $a_i$. This is exactly the assertion that
+$\operatorname{ord}_{z=a_i}F\geq-r_i$.
+:::
+
+<1>4. For every $j=1,\ldots,m$,
+$$
+F(b_j)=c_j.
+$$
+
+::: {.proof}
+All of the $a_i$ and $b_j$ are distinct, so $Q(b_j)\neq0$. By step
+<1>1,
+$$
+F(b_j)
+=
+\frac{G(b_j)}{Q(b_j)}
+=
+\frac{c_jQ(b_j)}{Q(b_j)}
+=
+c_j.
+$$
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>2, <1>3, and <1>4 verify the three required properties of the
+rational function $F$.
+:::
 :::
