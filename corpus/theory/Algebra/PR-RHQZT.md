@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RHQZT
 kind: proposition
 title: Proper ideals contain no units
+slogan: 'An ideal is proper exactly when it contains no unit.'
 classification:
   areas:
   - algebra
