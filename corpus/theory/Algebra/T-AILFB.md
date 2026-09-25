@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-AILFB
 kind: theorem
 title: Galois group of an irreducible separable polynomial as a transitive subgroup of $S_n$
+slogan: 'An irreducible separable degree-$n$ polynomial has a Galois group acting transitively on its $n$ roots.'
 classification:
   areas:
   - algebra
