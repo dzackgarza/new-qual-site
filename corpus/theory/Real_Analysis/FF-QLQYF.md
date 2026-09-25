@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-QLQYF
 kind: fact
 title: First and second category sets
+slogan: 'First category means a countable union of nowhere dense sets; second category means not first category.'
 prompts:
 - What is a first category set? A second category?
 classification:
