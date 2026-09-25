@@ -2196,7 +2196,7 @@ def problem_browser_page(
     """The one problem browser, rendered by DataTables + SearchPanes."""
     del con, area_names
     return {"title": "Problems"}, [
-        pf.Para(pf.Str("Every problem in the corpus. Filter with the facet panes, search or paginate the table, or draw a printable random sample from the filtered rows.")),
+        pf.Para(pf.Str("Qualifying-exam problems organized by source, subject, topic, and solution status.")),
         _practice_controls(),
         _data_table(
             "problem-table",
