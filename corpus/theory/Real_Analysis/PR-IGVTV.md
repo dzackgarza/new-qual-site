@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IGVTV
 kind: proposition
 title: Convergent series have terms and tails tending to zero
+slogan: 'A convergent series has vanishing terms and vanishing tails.'
 classification:
   areas:
   - real-analysis
