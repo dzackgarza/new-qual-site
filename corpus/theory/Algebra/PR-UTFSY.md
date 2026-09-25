@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UTFSY
 kind: proposition
 title: Existence of maximal ideals
+slogan: 'Every proper ideal is contained in a maximal ideal.'
 classification:
   areas:
   - algebra
