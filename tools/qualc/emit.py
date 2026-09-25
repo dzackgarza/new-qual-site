@@ -2135,8 +2135,7 @@ def index_page(
         "[Exams](exams.html)\n"
         ": Each exam sitting, problem by problem.\n\n"
         "[Guides](guides.html)\n"
-        ": One ordered sequence per subject, built from the same problems; each section uses\n"
-        "  only the sections above it.\n\n"
+        ": Ordered subject guides linking these problems by subject.\n\n"
         "[Wiki](wiki/index.html)\n"
         ": Notes filed by subject and topic.\n"
     )
@@ -2358,11 +2357,7 @@ SOURCE_KIND_HEADINGS = {
 }
 
 
-GUIDES_LEDE = (
-    "One ordered sequence per subject, built from the corpus. "
-    "Each section uses only the sections above it, and the study path in the margin lists that order. "
-    "The [wiki](wiki/index.html) covers the same subjects as notes filed by topic."
-)
+GUIDES_LEDE = "Ordered subject guides linking qualifying-exam problems by subject. The [wiki](wiki/index.html) covers the same subjects as notes filed by topic."
 
 
 ACROSS_SUBJECTS_LEDE = (
