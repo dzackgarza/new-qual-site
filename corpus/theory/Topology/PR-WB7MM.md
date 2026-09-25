@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WB7MM
 kind: proposition
 title: Homomorphisms from finite groups to free groups
+slogan: 'Finite groups map trivially into free groups because free groups have no torsion.'
 classification:
   areas:
   - topology
