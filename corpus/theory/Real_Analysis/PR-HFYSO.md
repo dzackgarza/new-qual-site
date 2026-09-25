@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-HFYSO
 kind: proposition
 title: A nonnegative function has integral zero if and only if it vanishes almost everywhere
+slogan: 'A nonnegative function integrates to zero exactly when it vanishes almost everywhere.'
 classification:
   areas:
   - real-analysis
