@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-NRCZN
 kind: fact
 title: Dense subset
+slogan: 'A dense subset meets every nonempty open set.'
 prompts:
 - What is a dense subset?
 classification:
