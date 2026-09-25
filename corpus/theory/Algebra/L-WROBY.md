@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-WROBY
 kind: lemma
 title: A group of order $pq$ with $p<q$ has a normal Sylow $q$-subgroup
+slogan: 'In order $pq$ with $p<q$, the Sylow $q$-subgroup is unique and normal.'
 classification:
   areas:
   - algebra
