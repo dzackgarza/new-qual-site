@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TLBPS
 kind: proposition
 title: The derivative detects separability for irreducible polynomials
+slogan: 'Separability is equivalent to coprimality with the derivative; for irreducibles, to a nonzero derivative.'
 classification:
   areas:
   - algebra
