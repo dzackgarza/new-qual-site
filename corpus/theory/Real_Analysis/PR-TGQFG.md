@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TGQFG
 kind: proposition
 title: Volume of a rectangle is additive over almost disjoint decompositions and subadditive over covers
+slogan: 'Rectangle volume adds on almost disjoint pieces and only decreases when replaced by a cover.'
 classification:
   areas:
   - real-analysis
