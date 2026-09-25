@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QYDVH
 kind: theorem
 title: Orbit-stabilizer theorem
+slogan: 'An orbit has one point for each coset of the stabilizer.'
 classification:
   areas:
   - algebra
