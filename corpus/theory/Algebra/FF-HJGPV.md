@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-HJGPV
 kind: fact
 title: Geometric interpretation of Krull's intersection theorem
+slogan: On a locally Noetherian scheme, a nonzero germ cannot vanish to infinite order.
 prompts:
 - What is the geometric interpretation of Krull's intersection theorem?
 classification:
