@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-F2THV
 kind: theorem
 title: Uniform boundedness principle
+slogan: 'A pointwise bounded family of operators on a Banach space is uniformly bounded in operator norm.'
 classification:
   areas:
   - real-analysis
