@@ -691,6 +691,26 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS11-7B restores $f$ in the first Laplacian term before attaching
   the complete solution.
 
+### Berkeley Spring 2012 Problem 7A card drops the n=0 term and source solution uses the wrong functional equation
+
+- **Object and need:** P-BKS12-7A / SRC-BERKELEY-PRELIM-SPRING-2012,
+  Problem 7A. The authored statement must match the retained series, and the
+  natural-boundary proof must use the functional equation that this series
+  actually satisfies.
+- **Observed evidence:** page 2 of assets/attachments/s12solutions.pdf prints
+  $f(z)=\sum_{n\geq0}z^{2^n}$, while the authored card has
+  $\sum_{n>0}z^{2^n}$. The source solution on the same page then states
+  $f(z)=1+f(z^2)$.
+- **Impact and owner:** the card omits the initial term $z$. For the source
+  series, direct reindexing gives
+  $f(z)=z+f(z^2)$, not $1+f(z^2)$. The source solution's propagation idea
+  is repairable, but its displayed functional equation is false.
+- **Uncertainty:** none; both formulas are legible in the retained PDF and
+  were checked visually.
+- **Repair:** [Author solutions](TODO.md#7-author-solutions), owned by issue
+  #2. P-BKS12-7A restores the source index $n\geq0$ and proves the natural
+  boundary using $f(z)=z+f(z^2)$ and the dense dyadic roots of unity.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
