@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UL3KL
 kind: proposition
 title: Homology of closed 3-manifolds
+slogan: 'For closed connected 3-manifolds, orientability determines the top two homology groups from $H_1$.'
 classification:
   areas:
   - topology
