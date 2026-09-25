@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-KX7L7
 kind: proposition
 title: Tensoring preserves injections exactly when the factor is flat
+slogan: 'Tensoring is always right exact and preserves injections exactly for flat factors.'
 classification:
   areas:
   - algebra
