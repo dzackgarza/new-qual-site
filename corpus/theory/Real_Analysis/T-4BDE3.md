@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4BDE3
 kind: theorem
 title: Bessel's inequality
+slogan: 'Squared orthonormal coefficients never carry more norm than the vector itself.'
 prompts:
 - State Bessel's inequality for an orthonormal sequence in a Hilbert space.
 classification:
