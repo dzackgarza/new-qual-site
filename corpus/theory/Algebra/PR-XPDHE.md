@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-XPDHE
 kind: proposition
 title: Galois group of an irreducible cubic
+slogan: 'An irreducible separable cubic has Galois group $A_3$ exactly when its discriminant is a square; otherwise it is $S_3$.'
 classification:
   areas:
   - algebra
