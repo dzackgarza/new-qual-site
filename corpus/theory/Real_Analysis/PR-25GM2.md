@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-25GM2
 kind: proposition
 title: Compact if and only if sequentially compact for metric spaces
+slogan: 'For metric spaces, compactness is equivalent to every sequence having a convergent subsequence.'
 classification:
   areas:
   - real-analysis
