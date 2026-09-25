@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DY2B3
 kind: proposition
 title: Fourier transforms of convolutions, translates, modulations, linear substitutions and derivatives
+slogan: 'Fourier transform turns convolution into multiplication and exchanges shifts, modulations, linear changes, and derivatives by explicit formulas.'
 classification:
   areas:
   - real-analysis
