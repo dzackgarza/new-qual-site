@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GKRFP
 kind: proposition
 title: Decomposing $\RP^2$
+slogan: '$\RP^2$ is a Möbius band capped off by a disk.'
 classification:
   areas:
   - topology
