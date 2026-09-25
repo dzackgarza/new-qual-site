@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RYVI7
 kind: proposition
 title: Bessel's inequality
+slogan: 'Squared coefficients along an orthonormal sequence sum to at most the squared norm.'
 classification:
   areas:
   - real-analysis
