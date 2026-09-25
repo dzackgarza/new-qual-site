@@ -63,6 +63,30 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   an authoritative Berkeley correction establishes that "open set" was
   intended to mean a connected domain.
 
+### UCSD Spring 2019 square-root solution argues circularly off the zero set
+
+- **Object and need:** P-CASP19B claims to prove that a continuous function f
+  is analytic when its square is analytic. The proof must establish
+  analyticity of f on the nonzero set before removable singularities can be
+  used at the zeros.
+- **Observed evidence:** lines 32--34 of
+  corpus/collections/SRC-UCSD-CA-SPRING-2019/P-CASP19B.md say that f=f^2/f is
+  a quotient of analytic functions and justify this by 1/f=f/f^2. Both
+  statements already require analyticity of f, which is the conclusion being
+  proved. At a point z_0 with f(z_0) nonzero, the noncircular argument instead
+  factors the difference of squares in the difference quotient, so its limit
+  is (f^2)'(z_0)/(2f(z_0)).
+- **Impact and owner:** the current solution does not prove analyticity away
+  from the zero set, so its later removable-singularity step has no established
+  punctured-neighborhood analyticity to extend. The owning card P-CASP19B
+  needs a proof repair; no statement change is required.
+- **Uncertainty:** the circularity is exact in the current authored solution.
+  The statement itself is true. The sibling Berkeley card P-BKF84-19 is being
+  solved independently and does not rely on this proof.
+- **Repair:** replace the circular quotient step on P-CASP19B with the
+  difference-quotient argument, then use isolated zeros of the analytic
+  function f^2 and continuity of f to apply the removable singularity theorem.
+
 ### Berkeley Spring 1997 Problem 18 does not specify whether the direct product is finite
 
 - **Object and need:** `P-BERK97S-18` / `SRC-BERKELEY-PRELIM-SPRING-1997`,
