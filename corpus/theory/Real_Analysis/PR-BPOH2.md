@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BPOH2
 kind: proposition
 title: Young's product inequality
+slogan: 'Conjugate powers dominate a product.'
 classification:
   areas:
   - real-analysis
