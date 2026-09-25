@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TRSHQ
 kind: proposition
 title: Showing one space cannot cover another
+slogan: 'Fundamental-group torsion obstructs a cover from $\RP^2$ to the torus.'
 classification:
   areas:
   - topology
