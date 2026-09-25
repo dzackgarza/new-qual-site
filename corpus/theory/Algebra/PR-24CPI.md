@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-24CPI
 kind: proposition
 title: Jordan--Chevalley decomposition
+slogan: 'Over a perfect field, every linear map splits uniquely into commuting semisimple and nilpotent parts.'
 classification:
   areas:
   - algebra
