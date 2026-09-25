@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-NREXC
 kind: fact
 title: Nakayama's lemma
+slogan: Jacobson-radical self-generation forces a finitely generated module to vanish.
 prompts:
 - What is Nakayama's lemma?
 classification:
