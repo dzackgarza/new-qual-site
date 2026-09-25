@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-OHEFT
 kind: theorem
 title: A finite group is nilpotent if and only if its maximal subgroups are normal
+slogan: 'A finite group is nilpotent exactly when every maximal subgroup is normal.'
 classification:
   areas:
   - algebra
