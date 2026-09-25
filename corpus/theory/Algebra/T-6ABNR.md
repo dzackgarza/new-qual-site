@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-6ABNR
 kind: theorem
 title: Diagonalizability via the minimal polynomial
+slogan: 'A matrix is diagonalizable exactly when its minimal polynomial splits with no repeated root.'
 classification:
   areas:
   - algebra
