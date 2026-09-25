@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-4
 kind: theorem
 title: First fundamental theorem of calculus
+slogan: 'Integrating a Riemann-integrable function gives a continuous primitive whose derivative recovers the integrand at continuity points.'
 classification:
   areas:
   - real-analysis
