@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-HQE2T
 kind: proposition
 title: Fundamental groups from covering space actions
+slogan: 'A free properly discontinuous action on a simply connected space realizes the acting group as the quotient fundamental group.'
 classification:
   areas:
   - topology
