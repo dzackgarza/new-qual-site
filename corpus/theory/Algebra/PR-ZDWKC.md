@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZDWKC
 kind: proposition
 title: Sum, product, and intersection of ideals
+slogan: 'Ideal products lie in intersections, and comaximal ideals satisfy $I\cap J=IJ$.'
 classification:
   areas:
   - algebra
