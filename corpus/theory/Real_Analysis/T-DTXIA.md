@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DTXIA
 kind: theorem
 title: Fourier inversion
+slogan: 'If both $f$ and $\widehat f$ are integrable, inverse Fourier transform recovers $f$ at every Lebesgue point.'
 classification:
   areas:
   - real-analysis
