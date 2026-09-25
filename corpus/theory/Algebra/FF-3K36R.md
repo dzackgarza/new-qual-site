@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-3K36R
 kind: fact
 title: Krull's intersection theorem
+slogan: In a Noetherian ring, powers of a Jacobson-radical ideal have zero intersection.
 prompts:
 - What is Krull's intersection theorem?
 classification:
