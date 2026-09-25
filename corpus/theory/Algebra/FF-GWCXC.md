@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-GWCXC
 kind: fact
 title: Groups of order 14
+slogan: Every group of order $14$ is cyclic or dihedral.
 prompts:
 - What are the groups of order 14?
 classification:
