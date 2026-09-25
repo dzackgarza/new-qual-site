@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-4GQIZ
 kind: proposition
 title: Equivalent conditions for an operator to have a cyclic vector
+slogan: 'A linear operator is cyclic exactly when its minimal and characteristic polynomials agree, equivalently its rational form has one block.'
 classification:
   areas:
   - algebra
