@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-B6BB2
 kind: proposition
 title: Reduced homology of a wedge sum
+slogan: 'Reduced homology sends wedge sums of good pointed spaces to direct sums.'
 classification:
   areas:
   - topology
