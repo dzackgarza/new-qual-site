@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-5
 kind: theorem
 title: Arzelà--Ascoli theorem for $C(K,\RR^m)$
+slogan: 'In $C(K,\RR^m)$, compactness is exactly closedness, boundedness, and equicontinuity.'
 classification:
   areas:
   - real-analysis
