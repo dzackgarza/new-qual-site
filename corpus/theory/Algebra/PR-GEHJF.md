@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GEHJF
 kind: proposition
 title: Implications among fields, PIDs, UFDs, and Noetherian rings
+slogan: 'Finite domain $\Rightarrow$ field; field $\Longleftrightarrow R[x]$ is a PID; UFD $\Longleftrightarrow R[x]$ is a UFD; PID $\Rightarrow$ Noetherian.'
 classification:
   areas:
   - algebra
