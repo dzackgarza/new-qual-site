@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TU4G5
 kind: proposition
 title: Closed odd-dimensional manifolds have Euler characteristic zero
+slogan: 'Every closed odd-dimensional manifold has Euler characteristic zero.'
 classification:
   areas:
   - topology
