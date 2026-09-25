@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-3QNBQ
 kind: theorem
 title: Weierstrass approximation theorem
+slogan: 'Polynomials are uniformly dense in the continuous functions on a compact interval.'
 prompts:
 - State the Weierstrass approximation theorem.
 classification:
