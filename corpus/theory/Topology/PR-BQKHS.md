@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BQKHS
 kind: proposition
 title: Orientation double cover
+slogan: 'Every manifold has an orientable double cover; it disconnects exactly when the base is orientable.'
 classification:
   areas:
   - topology
