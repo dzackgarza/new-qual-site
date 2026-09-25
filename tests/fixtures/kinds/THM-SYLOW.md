@@ -3,6 +3,7 @@ schema: qual/card@1
 id: THM-SYLOW
 kind: theorem
 title: Sylow's first theorem
+slogan: Sylow subgroups are as large as the $p$-part allows.
 classification:
   areas:
   - algebra

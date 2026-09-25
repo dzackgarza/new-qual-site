@@ -468,6 +468,7 @@ def test_a_standalone_reference_transcludes_the_card_it_names(tmp_path: Path) ->
     assert "if its order is a power of the prime" in blocks.blocks[0].text
     assert "a Sylow" in blocks.blocks[1].text
     assert "has a subgroup of order" in blocks.blocks[2].text
+    assert "Sylow subgroups are as large as the $p$-part allows." in blocks.blocks[2].text
 
     links = LinkCollector()
     links.feed(html)

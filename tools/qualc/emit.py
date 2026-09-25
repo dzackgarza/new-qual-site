@@ -944,7 +944,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
                     [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
                     [["data-label", f"{kind.title()} {counts[kind]}"]],
                 ],
-                [_transclusion_head(card), *body, *_prompts_json(card)],
+                [_transclusion_head(card), *_slogan_json(card), *body, *_prompts_json(card)],
             ],
         }
     ]
@@ -1169,6 +1169,30 @@ def _solution_submission_json(
     return [{"t": "RawBlock", "c": ["html", block]}]
 
 
+RESULT_KINDS = frozenset({"theorem", "proposition", "lemma", "corollary", "fact"})
+
+
+def _slogan_json(card: sqlite3.Row) -> list[dict]:
+    if card["kind"] not in RESULT_KINDS:
+        return []
+    card_id = str(card["id"])
+    card_url = f"{PUBLISHED_SITE_URL}/tag/{quote(card_id, safe='')}.html"
+    query = urlencode(
+        {
+            "template": "slogan.yml",
+            "title": f"[slogan] {card_id} — {card['title']}",
+            "card-id": card_id,
+            "card-title": str(card["title"]),
+            "card-url": card_url,
+        }
+    )
+    href = html.escape(f"{REPOSITORY_URL}/issues/new?{query}", quote=True)
+    slogan = str(card["slogan"] or "")
+    badge = f'<span class="result-slogan-badge">{html.escape(slogan)}</span>' if slogan else ""
+    block = f'<div class="result-slogan">{badge}<a class="result-slogan-suggest" href="{href}">Suggest a slogan</a></div>'
+    return [{"t": "RawBlock", "c": ["html", block]}]
+
+
 def _relation_group(key: str, heading: str, items: str) -> str:
     """One panel, or nothing when the card has no relations of that sort.
 
@@ -1384,6 +1408,7 @@ def plain_json(
     guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
+    body[:0] = _slogan_json(card)
     body.extend(_prompts_json(card))
     body.extend(
         _relation_groups_json(

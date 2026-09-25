@@ -1042,6 +1042,27 @@ div.qual-section > .qual-section-qualifier {
   font-weight: 700;
 }
 
+.result-slogan {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  margin-block: 0.6rem 1rem;
+  font-size: var(--label);
+}
+
+.result-slogan-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.result-slogan-suggest {
+  color: var(--muted);
+}
+
 /* A revealed answer is a section of the card, not a panel bolted to it: the
    rule at its left is the one the environments above it use, and the accent is
    there because the summary is the only part of it you click. The grey filled

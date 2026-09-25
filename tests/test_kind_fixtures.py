@@ -19,7 +19,7 @@ from typing import get_args, get_type_hints
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from qualc.diagnostics import DiagnosticCode
-from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ProblemCard
+from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ProblemCard, TheoremCard
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -537,6 +537,26 @@ def test_card_without_prompts_is_never_asked() -> None:
     from qualc.model import parse_card
 
     assert parse_card(FIXTURES / "DEF-PGROUP.md").card.prompts == []
+
+
+def test_result_slogan_is_authored_and_nonempty(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    theorem = parse_card(FIXTURES / "THM-SYLOW.md").card
+    assert isinstance(theorem, TheoremCard)
+    assert theorem.slogan == "Sylow subgroups are as large as the $p$-part allows."
+
+    empty = tmp_path / "THM-SYLOW.md"
+    empty.write_text(
+        (FIXTURES / "THM-SYLOW.md")
+        .read_text()
+        .replace(
+            "slogan: Sylow subgroups are as large as the $p$-part allows.\n",
+            "slogan: '   '\n",
+        )
+    )
+    with pytest.raises(ValueError):
+        parse_card(empty)
 
 
 APPEARANCE = "    term: spring\n  problems:\n  - id: P-INDEXP\n    comment: {comment}\n  - E-CENTER\n"

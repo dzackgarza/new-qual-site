@@ -1,0 +1,29 @@
+name: Suggest a slogan
+description: Suggest a short mnemonic slogan for one result card.
+title: '[slogan] '
+body:
+  - type: input
+    id: card-id
+    attributes:
+      label: Card ID
+    validations:
+      required: true
+  - type: input
+    id: card-title
+    attributes:
+      label: Card title
+    validations:
+      required: true
+  - type: input
+    id: card-url
+    attributes:
+      label: Card URL
+    validations:
+      required: true
+  - type: textarea
+    id: slogan
+    attributes:
+      label: Suggested slogan
+      description: Give a short mnemonic that is true of the result and faithful to its hypotheses.
+    validations:
+      required: true

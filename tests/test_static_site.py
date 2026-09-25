@@ -514,6 +514,31 @@ def test_solution_issue_form_exposes_every_prefilled_card_field() -> None:
     assert {"card-id", "card-title", "source-appearance", "card-url", "solution"} <= fields
 
 
+def test_result_slogan_renders_with_prefilled_suggestion_link(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    page = (site / "tag" / "THM-SYLOW.html").read_text()
+    assert "result-slogan-badge" in page
+    assert "Sylow subgroups are as large as the $p$-part allows." in page
+
+    links = LinkCollector()
+    links.feed(page)
+    suggestion = next(href for href in links.hrefs if "template=slogan.yml" in href)
+    query = parse_qs(urlsplit(suggestion).query)
+    assert query["card-id"] == ["THM-SYLOW"]
+    assert query["card-title"] == ["Sylow's first theorem"]
+    assert query["card-url"] == ["https://dzackgarza.github.io/new-qual-site/tag/THM-SYLOW.html"]
+
+
+def test_slogan_issue_form_exposes_every_prefilled_card_field() -> None:
+    issue_form = yaml.safe_load((ROOT / ".github" / "ISSUE_TEMPLATE" / "slogan.yml").read_text())
+    fields = {item["id"] for item in issue_form["body"] if item["type"] in {"input", "textarea"}}
+    assert {"card-id", "card-title", "card-url", "slogan"} <= fields
+
+
 def test_problem_pagination_is_library_owned(tmp_path: Path) -> None:
     """There is no bespoke Show-more implementation beside DataTables paging."""
     work = fixture_repo(tmp_path)

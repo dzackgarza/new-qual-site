@@ -360,19 +360,33 @@ class DefinitionCard(CardBase):
     kind: Literal["definition"]
 
 
-class TheoremCard(CardBase):
+class ResultCardBase(CardBase):
+    slogan: str | None = None
+
+    @field_validator("slogan")
+    @classmethod
+    def _slogan_is_nonempty(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        value = value.strip()
+        if not value:
+            raise ValueError("slogan must not be empty")
+        return value
+
+
+class TheoremCard(ResultCardBase):
     kind: Literal["theorem"]
 
 
-class PropositionCard(CardBase):
+class PropositionCard(ResultCardBase):
     kind: Literal["proposition"]
 
 
-class CorollaryCard(CardBase):
+class CorollaryCard(ResultCardBase):
     kind: Literal["corollary"]
 
 
-class LemmaCard(CardBase):
+class LemmaCard(ResultCardBase):
     kind: Literal["lemma"]
 
 
@@ -396,7 +410,7 @@ class ConceptCard(CardBase):
     kind: Literal["concept"]
 
 
-class FactCard(CardBase):
+class FactCard(ResultCardBase):
     """A result stated without proof -- cited, folkloric, or assumed."""
 
     kind: Literal["fact"]
