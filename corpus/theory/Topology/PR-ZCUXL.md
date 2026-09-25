@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZCUXL
 kind: proposition
 title: Continuous images of compact, connected and separable spaces
+slogan: 'Continuous images preserve compactness, connectedness, and separability.'
 classification:
   areas:
   - topology
