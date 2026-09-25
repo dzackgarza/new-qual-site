@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BEIVF
 kind: proposition
 title: The product $HK$ is a subgroup when $H$ normalizes $K$
+slogan: 'If $H$ normalizes $K$, their setwise product $HK$ is a subgroup.'
 classification:
   areas:
   - algebra
