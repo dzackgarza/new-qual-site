@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3W4FO
 kind: proposition
 title: Convolution of Hölder-conjugate $L^p$ functions is bounded and uniformly continuous
+slogan: 'Convolution of Hölder-conjugate $L^p$ functions is bounded by Hölder and uniformly continuous.'
 classification:
   areas:
   - real-analysis
