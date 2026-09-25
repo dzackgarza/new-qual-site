@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-7FJFK
 kind: theorem
 title: $\RR$ is not a countable union of nowhere dense sets
+slogan: '$\RR$ is Baire, so countably many nowhere dense sets cannot cover it.'
 classification:
   areas:
   - real-analysis
