@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5A2W4
 kind: proposition
 title: Computing the Jordan canonical form and a change of basis via Jordan chains
+slogan: 'Ranks of powers determine Jordan block sizes, and lifted eigenvectors assemble the Jordan basis.'
 classification:
   areas:
   - algebra
