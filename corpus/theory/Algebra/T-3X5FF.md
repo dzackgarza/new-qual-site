@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-3X5FF
 kind: theorem
 title: 'Sylow''s third theorem: numerical constraints'
+slogan: 'The Sylow count divides the prime-to-$p$ part and is $1$ modulo $p$.'
 classification:
   areas:
   - algebra
