@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QDIOC
 kind: proposition
 title: Exactness of $A\to B\to C$
+slogan: 'Exactness at the middle term means image equals kernel.'
 classification:
   areas:
   - topology
