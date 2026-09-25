@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TZ3X7
 kind: theorem
 title: Künneth formula for homology
+slogan: 'Product homology is tensor product plus a one-degree-shifted Tor correction.'
 classification:
   areas:
   - topology
