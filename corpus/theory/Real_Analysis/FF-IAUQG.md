@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-IAUQG
 kind: fact
 title: Weierstrass $M$-test for uniform convergence
+slogan: 'A summable uniform majorant forces absolute and uniform convergence of a function series.'
 prompts:
 - What is the $M{\hbox{-}}$test?
 classification:
