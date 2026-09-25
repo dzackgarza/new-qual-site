@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-3FJK4
 kind: theorem
 title: Closed if and only if compact in compact Hausdorff spaces
+slogan: 'In a compact Hausdorff space, compact subsets are exactly the closed subsets.'
 classification:
   areas:
   - topology
