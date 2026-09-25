@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-Z3YWJ
 kind: proposition
 title: First isomorphism theorem for rings
+slogan: 'A ring modulo the kernel is canonically the image.'
 classification:
   areas:
   - algebra
