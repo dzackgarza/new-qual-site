@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-CSABG
 kind: fact
 title: The Artin--Rees lemma
+slogan: Deep enough in an $I$-adic filtration, intersection with a submodule is a fixed shifted $I$-adic filtration.
 prompts:
 - What is the Artin-Rees lemma?
 classification:
