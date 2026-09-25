@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-XDMK2
 kind: theorem
 title: Cauchy's theorem
+slogan: 'Every prime dividing a finite group order occurs as an element order.'
 classification:
   areas:
   - algebra
