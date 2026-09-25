@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-J3AN3
 kind: theorem
 title: Riesz--Fischer theorem
+slogan: 'An orthonormal sequence identifies its closed span isometrically with $\ell^2$ through Fourier coefficients.'
 classification:
   areas:
   - real-analysis
