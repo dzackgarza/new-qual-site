@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-45SK3
 kind: fact
 title: Nakayama's lemma for a local ring
+slogan: Minimal generators over a local ring are exactly bases modulo the maximal ideal.
 prompts:
 - What is Nakayama's lemma for a local ring?
 classification:
