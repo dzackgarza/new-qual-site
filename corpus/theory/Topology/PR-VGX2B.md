@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VGX2B
 kind: proposition
 title: The rationals are neither open nor closed
+slogan: 'Density of both rationals and irrationals makes $\QQ\subseteq\RR$ neither open nor closed.'
 classification:
   areas:
   - topology
