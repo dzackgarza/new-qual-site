@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JCZKL
 kind: proposition
 title: Plancherel theorem
+slogan: 'Fourier transform preserves the $L^2$ norm.'
 classification:
   areas:
   - real-analysis
