@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-CY5EA
 kind: fact
 title: Torsion elements of a module
+slogan: Torsion is exactly having a nonzero annihilator.
 prompts:
 - When is $m \in M$ a torsion element?
 classification:
