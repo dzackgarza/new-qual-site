@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-GGCEU
 kind: proposition
 title: Second isomorphism theorem for rings
+slogan: 'Adding an ideal and then quotienting is the same as quotienting the subring by the intersection.'
 classification:
   areas:
   - algebra
