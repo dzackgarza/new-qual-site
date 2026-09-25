@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-7OT2Z
 kind: proposition
 title: The ideal-variety correspondence
+slogan: 'Over an algebraically closed field, radical, prime, and maximal ideals correspond contravariantly to closed sets, irreducible sets, and points.'
 classification:
   areas:
   - algebraic-geometry
