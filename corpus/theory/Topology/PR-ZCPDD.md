@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZCPDD
 kind: proposition
 title: Vanishing of homology and cohomology above the dimension
+slogan: 'A closed $n$-manifold has no homology or integral cohomology above degree $n$.'
 classification:
   areas:
   - topology
