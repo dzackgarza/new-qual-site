@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VUKHO
 kind: proposition
 title: Cosets are equal or disjoint
+slogan: 'Two cosets of the same subgroup either coincide or do not meet.'
 classification:
   areas:
   - algebra
