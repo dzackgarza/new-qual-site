@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-6K35J
 kind: fact
 title: Geometric interpretation of Nakayama's lemma
+slogan: Fiber bases lift to local generators, and to local frames for vector bundles.
 prompts:
 - What is the geometric interpretation of Nakayama's lemma?
 classification:
