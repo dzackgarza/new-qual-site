@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SCHFIB
 kind: proposition
 title: The scheme-theoretic fibre of a morphism
+slogan: 'The fibre over $y$ is base change to $\Spec\kappa(y)$, retaining multiplicities and residue-field extensions that the set-theoretic fibre forgets.'
 classification:
   areas:
   - algebraic-geometry
