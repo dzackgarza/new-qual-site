@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IV2INSEP
 kind: proposition
 title: Purely inseparable morphisms of curves are composites of Frobenius
+slogan: 'A purely inseparable degree-$p^n$ morphism of curves is an $n$-fold Frobenius composite: the schemes are isomorphic and the genus is unchanged.'
 classification:
   areas:
   - algebraic-geometry
