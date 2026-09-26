@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-6DEUH
 kind: theorem
 title: Cauchy integral formula on a disc
+slogan: 'The Cauchy kernel reconstructs every derivative at the center from boundary values.'
 classification:
   areas:
   - complex-analysis
