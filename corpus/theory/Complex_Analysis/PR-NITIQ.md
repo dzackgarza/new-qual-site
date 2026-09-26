@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NITIQ
 kind: proposition
 title: Well-definedness of pole order
+slogan: 'A pole has a unique finite order: factor out the smallest negative power and what remains is holomorphic and nonvanishing.'
 classification:
   areas:
   - complex-analysis
