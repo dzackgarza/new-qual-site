@@ -34,7 +34,7 @@ $C^2 = C \cdot C$ is the \dfn{self-intersection}. Fixing an ample $H$, the **deg
 Uniqueness plus the transverse case is the working definition: one moves the divisors into general position and counts, and linear invariance is what makes the count well defined even for a curve against itself.
 Self-intersection is where the geometry is, because a curve cannot be moved off itself; the answer is read from the normal bundle, $C^2 = \deg \OO_X(C)\vert_C$.
 
-Two computations to have ready.
+Two basic computations are:
 On $\PP^2$, $\Pic = \ZZ H$ with $H^2 = 1$, so a curve of degree $d$ and one of degree $e$ meet in $de$ points, which is Bézout.
 On $\PP^1 \times \PP^1$ the two rulings satisfy $A^2 = B^2 = 0$ and $A \cdot B = 1$.
 
