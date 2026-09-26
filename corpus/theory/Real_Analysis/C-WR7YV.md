@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-WR7YV
 kind: corollary
 title: The geometric series $\sum_{k=1}^\infty 2^{-k}$ sums to one
+slogan: 'Repeated halving from $1/2$ onward sums exactly to $1$.'
 classification:
   areas:
   - real-analysis
