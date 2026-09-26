@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-E76LX
 kind: theorem
 title: Holomorphic logarithm of a nonvanishing function on a simply connected domain
+slogan: 'On a simply connected domain, every nowhere-vanishing holomorphic function has a holomorphic logarithm.'
 classification:
   areas:
   - complex-analysis
