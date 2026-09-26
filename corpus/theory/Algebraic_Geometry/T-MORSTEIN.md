@@ -32,8 +32,8 @@ with $g$ proper with connected fibres and $g_* \OO_X = \OO_{Y'}$, and $h$ finite
 :::
 
 ::: {.remark}
-The factorisation separates the two ways a proper morphism can fail to be an isomorphism: $g$ contracts things, and $h$ is a finite cover.
-So any proper morphism is a contraction followed by a branched cover, and that is the sentence to give when asked what it is for.
+The factorisation separates the two ways a proper morphism can fail to be an isomorphism: $g$ contracts connected fibres, while $h$ is finite.
+Thus a proper morphism factors into a contraction followed by a finite cover.
 
 $f_* \OO_X$ is a coherent sheaf of $\OO_Y$-algebras because $f$ is proper, and it is finite because coherent, which is where properness enters; this is why there is no Stein factorisation for a general morphism.
 Since $g$ is surjective with connected fibres, the connected components of the fibre $X_y$ are the fibres of $g$ over the points of the finite set $h^{-1}(y)$, so they correspond bijectively to the points of $h^{-1}(y)$.
