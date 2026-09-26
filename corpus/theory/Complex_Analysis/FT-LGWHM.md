@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-LGWHM
 kind: theorem
 title: Riemann's removable singularity theorem
+slogan: 'Holomorphic extension across an isolated point is equivalent to boundedness, continuity, or $(z-a)f(z)\to0$ there.'
 prompts:
 - What conditions are equivalent to $f$ extending holomorphically over an isolated singularity?
 classification:
