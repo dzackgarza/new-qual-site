@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-3UXK7
 kind: theorem
 title: Convolutions of bounded integrable functions vanish at infinity
+slogan: 'Bounded $L^1$ convolution decays to zero at infinity.'
 classification:
   areas:
   - real-analysis
