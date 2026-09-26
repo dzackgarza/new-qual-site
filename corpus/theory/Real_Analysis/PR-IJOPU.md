@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IJOPU
 kind: proposition
 title: Reverse triangle inequality
+slogan: 'The norm can change by at most the norm of the change: $\abs{\norm{x}-\norm{y}}\leq\norm{x-y}$.'
 prompts:
 - What is the reverse triangle inequality?
 - State the reverse triangle inequality.
