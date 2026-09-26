@@ -37,7 +37,7 @@ More generally, if $Z \subseteq X$ is an irreducible closed subset with generic 
 
 ::: {.remark}
 Dimension is topological, so it cannot see nilpotents: $\dim X = \dim X^\red$, and $\Spec k[\eps]/\eps^2$ has dimension $0$ despite a two-dimensional ring of functions.
-That is the standard trap, and the honest correction is that length, not dimension, measures the extra structure.
+Length, not dimension, detects the extra nilpotent structure in zero-dimensional schemes.
 
 Dimension is not local in the naive sense, and it is not additive: $\dim \Spec \ZZ = 1$, $\dim \ZZ[x] = 2$, and $\dim A[x] = \dim A + 1$ holds for Noetherian $A$ but fails in general.
 For an integral scheme of finite type over a field, $\dim X = \trdeg_k k(X)$, and codimension and dimension add up — $\codim_X Z + \dim Z = \dim X$ — which is the case that matches intuition and the case where that identity is safe to use.
