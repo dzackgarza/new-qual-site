@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-7TLAS
 kind: proposition
 title: Vertical half-strip to right half-disc
+slogan: 'The exponential turns a vertical half-strip into a half-disc by converting height to radius and horizontal position to angle.'
 classification:
   areas:
   - complex-analysis
