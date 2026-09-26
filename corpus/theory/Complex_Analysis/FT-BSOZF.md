@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-BSOZF
 kind: theorem
 title: Dirichlet's test
+slogan: 'Monotone decay to zero times bounded partial sums forces convergence.'
 prompts:
 - What hypotheses does Dirichlet's test put on $\theset{a_n}$ and $\theset{b_n}$?
 classification:
