@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-2
 kind: theorem
 title: Weierstrass M-test
+slogan: 'A uniformly summable numerical majorant forces uniform convergence of the function series.'
 classification:
   areas:
   - real-analysis
