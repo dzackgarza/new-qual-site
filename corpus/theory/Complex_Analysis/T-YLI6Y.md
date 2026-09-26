@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-YLI6Y
 kind: theorem
 title: Minimum modulus principle
+slogan: 'A nonvanishing nonconstant holomorphic function cannot attain its minimum modulus in the interior.'
 classification:
   areas:
   - complex-analysis
