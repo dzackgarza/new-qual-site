@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-AFFCOMM
 kind: theorem
 title: The affine communication lemma
+slogan: 'A property that survives principal localization and finite distinguished gluing propagates from one affine cover to every affine open.'
 classification:
   areas:
   - algebraic-geometry
@@ -38,7 +39,6 @@ Being Noetherian, and for a scheme over a ring $R$ being of finite type over $R$
 :::
 
 ::: {.example}
-Integrality does not satisfy hypothesis 2.
-For nonzero integral domains $A$ and $B$, the elements $e_1 = (1, 0)$ and $e_2 = (0, 1)$ of $A \times B$ generate the unit ideal, and $(A \times B)_{e_1} \cong A$ and $(A \times B)_{e_2} \cong B$ are integral domains, but $A \times B$ is not, since $e_1 e_2 = 0$.
+Integrality does not satisfy hypothesis 2. For nonzero integral domains $A$ and $B$, the elements $e_1 = (1, 0)$ and $e_2 = (0, 1)$ of $A \times B$ generate the unit ideal, and $(A \times B)_{e_1} \cong A$ and $(A \times B)_{e_2} \cong B$ are integral domains, but $A \times B$ is not, since $e_1 e_2 = 0$.
 Geometrically, $\Spec(A \times B) = \Spec A \sqcup \Spec B$ is covered by integral affine opens and is not irreducible.
 :::
