@@ -37,7 +37,7 @@ For a curve that leaves no room, which is why normalization resolves curve singu
 
 ## Where the singular points are
 
-Finding them is the Jacobian computation and nothing else: set the partials to zero, intersect with the variety, and remember that in $\PP^n$ the Euler relation
+Finding them is the Jacobian computation: set the partials to zero, intersect with the variety, and use the Euler relation in $\PP^n$:
 \[
 \sum_i x_i \frac{\partial f}{\partial x_i} = (\deg f) \cdot f
 \]
