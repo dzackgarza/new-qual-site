@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MORBC
 kind: proposition
 title: Which properties are stable under base change and composition
+slogan: 'The standard geometric properties of morphisms are universal: they survive composition and arbitrary base change.'
 classification:
   areas:
   - algebraic-geometry
