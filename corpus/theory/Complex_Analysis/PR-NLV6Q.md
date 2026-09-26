@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NLV6Q
 kind: proposition
 title: $\Gamma$ is holomorphic on the right half-plane
+slogan: 'The Euler integral converges absolutely and varies holomorphically throughout the half-plane $\Re s>0$.'
 classification:
   areas:
   - complex-analysis
