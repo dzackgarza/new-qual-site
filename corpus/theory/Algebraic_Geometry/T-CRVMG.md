@@ -38,11 +38,11 @@ $\mathcal{M}_0$ is a point, $\mathcal{M}_1 \cong \AA^1$ by the $j$-invariant, $\
 :::
 
 ::: {.remark}
-The number to have at hand is $3g-3$, and the infinitesimal statement behind it is the one to give when asked why: first-order deformations of $C$ are $H^1(C, T_C)$, and by Serre duality this is $H^0(C, \omega_C^{\otimes 2})\dual$.
+The dimension $3g-3$ is reflected infinitesimally: first-order deformations of $C$ are $H^1(C,T_C)$, and by Serre duality this is $H^0(C,\omega_C^{\otimes 2})\dual$.
 Since $\deg 2K = 4g-4 > 2g-2$ for $g \geq 2$, the divisor $2K$ is nonspecial and Riemann--Roch gives $h^0(\omega^{\otimes 2}) = (4g-4) + 1 - g = 3g-3$ outright.
 The hypothesis $g \geq 2$ is doing work in that line, which is why $\mathcal{M}_1$ has to be quoted separately: for $g = 1$ the same count returns $0$, while the actual dimension is $1$, because $T_C \cong \OO_C$ makes $h^1(T_C) = 1$ instead.
 
-Two dimension counts confirm the formula and are the ones an examiner asks to see run.
+Two concrete dimension counts recover the formula.
 
 **Genus $2$, via the hyperelliptic locus.** A hyperelliptic curve of genus $g$ is a double cover of $\PP^1$ branched at $2g+2$ points, and the curve determines that branch set, so the moduli are the configurations of $2g+2$ unordered points of $\PP^1$ modulo $\PGL_2$.
 Normalizing three of them to $0, 1, \infty$ uses up the $3$-dimensional group and leaves $2g+2-3 = 2g-1$ parameters, so the hyperelliptic locus is irreducible of dimension $2g-1$.
@@ -55,5 +55,5 @@ Two quartics give isomorphic curves exactly when they differ by $\PGL_3$, which 
 
 The genus-$3$ curves left out of that count are exactly the hyperelliptic ones, and the count survives them: by the first computation they form a locus of dimension $2(3)-1 = 5$, strictly less than $6$.
 So they lie in a proper closed subset, the plane quartics are a dense open subset of an irreducible $\mathcal{M}_3$, and the dimension computed on that open set is the dimension of the whole space.
-Note which group appears where: $\PGL_2$ acts on the branch points in the hyperelliptic count, $\PGL_3$ on the ambient $\PP^2$ in the quartic count, and using one for the other changes the answer by five.
+The two counts use different coordinate-change groups: $\PGL_2$ acts on the branch points in the hyperelliptic count, while $\PGL_3$ acts on the ambient $\PP^2$ in the quartic count.
 :::
