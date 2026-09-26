@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VA4S3
 kind: proposition
 title: The Segre embedding, and why $\PP^m \times \PP^n$ is projective
+slogan: 'The Segre embedding identifies $\PP^m\times\PP^n$ with the rank-one tensor locus, cut out by the $2\times2$ minors.'
 classification:
   areas:
   - algebraic-geometry
