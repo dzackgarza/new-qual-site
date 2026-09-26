@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BIRKGROTH
 kind: theorem
 title: Vector bundles on the projective line split
+slogan: 'Every vector bundle on $\PP^1$ splits uniquely into an ordered direct sum of line bundles $\OO(a_i)$.'
 classification:
   areas:
   - algebraic-geometry
