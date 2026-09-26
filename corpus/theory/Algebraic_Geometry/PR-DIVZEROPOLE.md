@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DIVZEROPOLE
 kind: proposition
 title: Zeros and poles of a rational function
+slogan: 'Codimension-one valuations detect only finitely many zeros and poles; on a normal scheme, no poles means regular.'
 classification:
   areas:
   - algebraic-geometry
