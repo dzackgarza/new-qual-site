@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JH6VL
 kind: theorem
 title: Green's theorem
+slogan: 'Circulation around the boundary equals total curl inside the region.'
 classification:
   areas:
   - complex-analysis
