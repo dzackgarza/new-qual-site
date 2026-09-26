@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-FVT4V
 kind: corollary
 title: Injective holomorphic maps have nonvanishing derivative
+slogan: 'Injective holomorphic maps have no critical points, so their inverses are holomorphic.'
 classification:
   areas:
   - complex-analysis
