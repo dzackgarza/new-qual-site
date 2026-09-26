@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SFXI7
 kind: theorem
 title: $ML$ estimate for contour integrals
+slogan: 'Contour integrals are bounded by maximum size times path length: $\abs{\int_\gamma f\,dz}\le ML$.'
 classification:
   areas:
   - complex-analysis
