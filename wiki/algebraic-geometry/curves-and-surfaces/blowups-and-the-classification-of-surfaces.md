@@ -14,8 +14,8 @@ So the invariants that matter are the ones a blowup does not change.
 
 [[FE-SRFBLOW]]
 
-The table of formulas is what gets asked for, and $E^2 = -1$ is the fact the rest follows from.
-Note which invariants move and which do not: $K^2$ drops by one and $\rho$ rises by one, while $\chi(\OO)$, $p_g$ and $q$ are untouched.
+The formulas are organized around $E^2=-1$.
+Under a blowup, $K^2$ drops by one and $\rho$ rises by one, while $\chi(\OO)$, $p_g$, and $q$ are unchanged.
 
 The strict transform formulas are the tool for resolving plane curve singularities, since blowing up an ordinary $m$-fold point removes $\binom{m}{2}$ from the arithmetic genus — exactly the delta invariant.
 
@@ -37,7 +37,7 @@ Zariski's theorem is the connectedness statement; the factorization of birationa
 [[D-SRFRULED]]
 
 Rational and ruled surfaces are the $\kappa = -\infty$ case.
-The rationality criterion is worth stating exactly, because $p_g = q = 0$ is not enough — the Enriques surfaces satisfy it and are not rational, and $P_2$ is what separates them.
+The rationality criterion requires more than $p_g=q=0$: Enriques surfaces satisfy those equalities but are not rational, and $P_2$ distinguishes them.
 
 [[FE-SRFCUBIC]]
 
@@ -47,7 +47,7 @@ Each line is a $(-1)$-curve, so each can be contracted, and the many ways of doi
 [[T-SRFKOD]]
 
 The classification then reads as the two-dimensional version of the trichotomy $g = 0$, $g = 1$, $g \geq 2$ for curves.
-The row worth rehearsing is $\kappa = 0$, separated by $(p_g, q)$: K3 at $(1,0)$, Enriques at $(0,0)$, abelian at $(1,2)$, bielliptic at $(0,1)$.
+For $\kappa=0$, the pairs $(p_g,q)$ separate the standard classes: K3 at $(1,0)$, Enriques at $(0,0)$, abelian at $(1,2)$, and bielliptic at $(0,1)$.
 
 ## Birational invariants
 
