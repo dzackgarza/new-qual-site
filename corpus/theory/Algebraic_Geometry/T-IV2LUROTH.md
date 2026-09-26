@@ -45,9 +45,9 @@ The one input is $g(X) \geq g(Y)$ for a finite morphism $X \to Y$ of curves, and
 \]
 so $g_X < g_Y$ is impossible.
 The inseparable case is not an exception but a separate mechanism: factor $f$ through its purely inseparable part, which preserves the genus, and apply the above to the separable part.
-That is the point of [[PR-IV2INSEP]] and it is the step an examiner asks about in characteristic $p$.
+This is the role of the inseparable factorization in [[PR-IV2INSEP]].
 
-Algebraic closedness is used twice, and both uses are worth naming.
+Algebraic closedness enters twice.
 It makes every element of $L \setminus k$ transcendental, and it turns $g(Y) = 0$ into $Y \cong \PP^1$ — over a general field a genus-$0$ curve is a conic, which is $\PP^1$ only when it has a rational point.
 The purely field-theoretic Lüroth theorem needs neither: over any field $k$, every intermediate field $k \subsetneq L \subseteq k(t)$ is $k(u)$.
 The geometric proof above buys the statement back with the curve theory instead of with field theory.
@@ -58,7 +58,7 @@ Restated as geometry, Lüroth says: a curve dominated by $\PP^1$ is rational, th
 Asking the same in higher dimension is the Lüroth problem, and the answer splits by dimension and by characteristic.
 
 In dimension $2$ over $k = \kbar$ of characteristic $0$, unirational implies rational.
-The proof runs through Castelnuovo's criterion, that $q = P_2 = 0$ forces rationality, and it is worth being exact about which half carries the characteristic hypothesis.
+The proof runs through Castelnuovo's criterion, that $q=P_2=0$ forces rationality; the characteristic hypothesis enters in deducing these vanishings from unirationality.
 Castelnuovo's criterion itself holds in every characteristic, by Zariski and Mumford.
 What fails in characteristic $p$ is the other half: a unirational surface need not satisfy $q = P_2 = 0$.
 Zariski's surfaces, purely inseparable covers of $\PP^2$, are unirational and not rational, so the dimension-$2$ Lüroth statement is false as soon as $p > 0$ even though the criterion it invokes is not.
@@ -66,5 +66,5 @@ Zariski's surfaces, purely inseparable covers of $\PP^2$, are unirational and no
 In dimension $3$ it is false even over $\CC$.
 The three standard counterexamples are the smooth cubic threefold, non-rational because its intermediate Jacobian is not a Jacobian of a curve; the smooth quartic threefold, non-rational because its group of birational self-maps is too small; and the Artin--Mumford double solid, non-rational because it has torsion in $H^3$, which is a birational invariant.
 All three are unirational.
-Naming one obstruction with its invariant is what the question is testing, since "it is false in dimension $3$" on its own is the part everyone remembers.
+Each counterexample is distinguished by a specific birational obstruction: the intermediate Jacobian, birational automorphism group, or torsion in $H^3$.
 :::
