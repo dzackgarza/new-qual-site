@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TORCOHOM
 kind: theorem
 title: The Stanley--Reisner presentation of the cohomology of a smooth toric variety
+slogan: 'For a smooth complete toric variety, fan combinatorics presents cohomology: non-cones give monomial relations and characters give linear relations.'
 classification:
   areas:
   - algebraic-geometry
