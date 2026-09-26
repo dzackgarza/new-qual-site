@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DEFRAPL
 kind: theorem
 title: RAPL and LAPC, and the exactness of $\Hom$ and $\tensor$
+slogan: 'Right adjoints preserve limits and are left exact; left adjoints preserve colimits and are right exact, so $\Hom$ is left exact and tensor right exact.'
 classification:
   areas:
   - algebraic-geometry
