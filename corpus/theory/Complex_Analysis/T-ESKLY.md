@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ESKLY
 kind: theorem
 title: Residue at a pole of order $n$
+slogan: 'For a pole of order $n$, differentiate $(z-z_0)^nf$ exactly $n-1$ times; for a simple pole, just take the limit.'
 classification:
   areas:
   - complex-analysis
