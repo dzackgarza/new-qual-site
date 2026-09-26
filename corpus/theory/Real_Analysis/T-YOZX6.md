@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-YOZX6
 kind: theorem
 title: Characterizations of compact subsets of a metric space
+slogan: 'For metric spaces, compactness is the same as sequential compactness and as completeness plus total boundedness.'
 classification:
   areas:
   - real-analysis
