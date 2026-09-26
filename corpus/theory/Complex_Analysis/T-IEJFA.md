@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-IEJFA
 kind: theorem
 title: Weierstrass factorization
+slogan: 'On a simply connected domain, a meromorphic function is an exponential times a zero-factor divided by a pole-factor.'
 classification:
   areas:
   - complex-analysis
