@@ -33,5 +33,5 @@ It is **of finite presentation** if it is also quasicompact and quasi-separated.
 ::: {.remark}
 Finite type is the condition that makes a scheme a geometric object of finite size, and it is a hypothesis in the valuative criteria and in properness.
 Finite presentation is finite type plus a condition on relations, and over a Noetherian base the two coincide, because every ideal of $B[x_1, \dots, x_n]$ is finitely generated.
-So the distinction is invisible on the exam and is exactly why "locally of finite presentation" appears in the definition of smooth: it is the condition under which the cotangent complex behaves and limit arguments work over an arbitrary base.
+Thus finite presentation differs from finite type only over non-Noetherian bases, and it is the finiteness condition used in the definition of smooth morphisms and in limit arguments.
 :::
