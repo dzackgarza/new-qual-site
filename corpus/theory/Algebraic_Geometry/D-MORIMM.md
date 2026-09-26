@@ -39,9 +39,9 @@ Every immersion is a locally closed immersion, and a quasicompact locally closed
 :::
 
 ::: {.remark}
-The surjectivity clause is the whole definition, and the examiner asks about it by asking why a homeomorphism onto a closed set is not enough.
+The surjectivity clause distinguishes a closed immersion from a homeomorphism onto a closed subset.
 The answer is $\Spec k \to \Spec k[\varepsilon]/(\varepsilon^2)$ versus $\Spec k[\varepsilon]/(\varepsilon^2) \to \Spec k[\varepsilon]/(\varepsilon^2)$: the underlying spaces are the same one point, and only the sheaf map distinguishes the reduced point from the fat one.
 Surjectivity of $f^\sharp$ is what makes closed subschemes of $\Spec A$ correspond to ideals of $A$ rather than to closed subsets, so that $V(x)$ and $V(x^2)$ are different subschemes of $\AA^1$.
 
-Locally closed is the honest general notion, and it is why "immersion" is not just the two extremes glued: $\ts{xy = 0} \sm \ts{0}$ sits in $\AA^2$ as neither an open nor a closed subscheme.
+A locally closed immersion includes cases that are neither open nor closed: $\ts{xy = 0} \sm \ts{0}$ sits in $\AA^2$ in this way.
 :::
