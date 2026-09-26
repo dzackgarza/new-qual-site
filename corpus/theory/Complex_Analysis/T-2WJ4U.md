@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-2WJ4U
 kind: theorem
 title: Hadamard factorization
+slogan: 'A finite-order entire function is its zeros, corrected by canonical factors, times the exponential of a polynomial.'
 classification:
   areas:
   - complex-analysis
