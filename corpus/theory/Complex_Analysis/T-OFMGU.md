@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-OFMGU
 kind: theorem
 title: Identity theorem, with a two-variable version
+slogan: 'Agreement on a set with an interior limit point propagates through a connected domain, one holomorphic variable at a time.'
 classification:
   areas:
   - complex-analysis
