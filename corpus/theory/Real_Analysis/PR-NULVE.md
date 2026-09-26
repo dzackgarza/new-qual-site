@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NULVE
 kind: proposition
 title: Limits superior and inferior of measurable sets are measurable
+slogan: 'Countable unions and intersections keep set limsup and liminf measurable.'
 classification:
   areas:
   - real-analysis
