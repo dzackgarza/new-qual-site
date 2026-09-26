@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-47TTS
 kind: proposition
 title: Fourier transform is injective on $L^1$
+slogan: 'An $L^1$ function is determined almost everywhere by its Fourier transform.'
 classification:
   areas:
   - real-analysis
