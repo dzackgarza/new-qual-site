@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-NFMJW
 kind: theorem
 title: Parseval's identity
+slogan: 'Bessel bounds the squared Fourier coefficients by the norm; an orthonormal basis makes the bound an equality.'
 prompts:
 - State Parseval's identity, and say when Bessel's inequality becomes it.
 classification:
