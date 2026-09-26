@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-7NXLO
 kind: fact
 title: Hahn--Banach theorem
+slogan: 'A linear functional dominated by a sublinear bound extends without breaking that bound.'
 prompts:
 - What is the Hahn-Banach theorem?
 classification:
