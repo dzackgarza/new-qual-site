@@ -10,7 +10,6 @@ topics:
 # The dictionary
 
 Classical algebraic geometry is one translation, applied repeatedly: a subset of $\AA^n$ is cut out by an ideal, and every geometric word has an algebraic one on the other side.
-An examiner uses this topic to check that the scheme language later sitting on top of it has something underneath.
 
 [[D-BIVAU]]
 
@@ -20,7 +19,7 @@ An examiner uses this topic to check that the scheme language later sitting on t
 
 The translation is only a bijection on **radical** ideals, and the failure is the interesting part: $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$.
 Nothing in this chapter can tell them apart.
-Recovering that distinction is the reason schemes exist, and saying so is usually the right answer when an examiner asks what the classical picture loses.
+Schemes recover this distinction by retaining nilpotent and nonreduced structure.
 
 ## Irreducibility, and decomposition
 
@@ -28,8 +27,8 @@ Recovering that distinction is the reason schemes exist, and saying so is usuall
 
 [[PR-TNVSI]]
 
-Irreducibility is where the topology is least like the one a student brings from analysis: an irreducible space has no nontrivial separation at all, since any two nonempty opens meet.
-The following is worth being able to produce on demand, because it is the fastest way to show that intuition transported from the analytic topology does not survive.
+Irreducibility differs sharply from Hausdorff intuition: in an irreducible space any two nonempty open subsets meet.
+The following examples make that distinction explicit.
 
 [[FE-ISIPR]]
 
