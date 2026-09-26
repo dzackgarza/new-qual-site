@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-OQ6YZ
 kind: fact
 title: Hölder's inequality
+slogan: 'Conjugate $L^p$ and $L^q$ norms control the $L^1$ norm of a product.'
 prompts:
 - State Holder's inequality.
 classification:
