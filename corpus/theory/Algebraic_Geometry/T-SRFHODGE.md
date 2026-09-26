@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFHODGE
 kind: theorem
 title: The Hodge index theorem
+slogan: 'On a smooth projective surface, an ample class gives the unique positive direction and its orthogonal complement is negative definite.'
 classification:
   areas:
   - algebraic-geometry
