@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CARTSERRE
 kind: theorem
 title: Finiteness of coherent cohomology (Cartan--Serre)
+slogan: 'Coherence plus compactness or projectivity makes cohomology finite: finite-dimensional analytically, finitely generated algebraically.'
 classification:
   areas:
   - algebraic-geometry
