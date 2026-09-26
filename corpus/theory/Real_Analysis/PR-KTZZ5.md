@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-KTZZ5
 kind: proposition
 title: Inner products are jointly continuous
+slogan: 'Converging both vectors forces their inner products to converge.'
 classification:
   areas:
   - real-analysis
