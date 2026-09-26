@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-AQ6YR
 kind: proposition
 title: Cross-ratio construction of conformal maps
+slogan: 'Normalize source and target triples to $1,0,\infty$; composing the two normalizations gives the desired Möbius map.'
 classification:
   areas:
   - complex-analysis
