@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JR7TS
 kind: proposition
 title: A hypersurface of equation-degree $d$ has degree $d$
+slogan: 'For a projective hypersurface, equation degree, Hilbert-polynomial degree, and intersection-theoretic degree all equal $d$.'
 classification:
   areas:
   - algebraic-geometry
