@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FULBETTI
 kind: theorem
 title: Betti numbers of a smooth complete toric variety from the cone counts
+slogan: 'Smooth complete toric cohomology is counted by the fan: odd Betti numbers vanish, even ones come from cone counts, and $\chi$ counts maximal cones.'
 classification:
   areas:
   - algebraic-geometry
