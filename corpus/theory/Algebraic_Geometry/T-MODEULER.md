@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MODEULER
 kind: theorem
 title: The Euler sequence on projective space
+slogan: 'The Euler sequence is the cotangent sequence of projective space; taking determinants gives $\omega_{\PP^n}\cong\OO(-n-1)$.'
 classification:
   areas:
   - algebraic-geometry
