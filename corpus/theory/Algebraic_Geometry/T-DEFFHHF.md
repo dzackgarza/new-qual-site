@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DEFFHHF
 kind: theorem
 title: The FHHF theorem, on functors and cohomology
+slogan: 'Exact functors commute with cohomology; right exactness gives $F(H^i)\to H^i(F(C^\bullet))$, and left exactness gives the reverse map.'
 classification:
   areas:
   - algebraic-geometry
