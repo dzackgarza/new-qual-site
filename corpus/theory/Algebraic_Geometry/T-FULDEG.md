@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FULDEG
 kind: theorem
 title: The degree of a projective toric variety is the normalised volume of its polytope
+slogan: 'For a projective toric variety, degree is normalised polytope volume: $\deg X_P=n!\vol(P)=D_P^n$.'
 classification:
   areas:
   - algebraic-geometry
