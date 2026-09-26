@@ -45,7 +45,7 @@ For the family $V(xy - t) \to \AA^1_t$, the general fibre is a smooth conic $xy 
 :::
 
 ::: {.remark}
-The unfamiliar point, and the one an examiner presses on, is that a "function" on a scheme takes values in different fields at different points, so it is not a function on a set in any useful sense.
+A section of the structure sheaf evaluates in the residue field $\kappa(x)$, which can vary with $x$; it is therefore not generally a set-theoretic function from $\abs X$ to one fixed field.
 On $\Spec \ZZ$ the element $5$ evaluates to $0 \in \FF_5$, to $5 \in \FF_7$, and to $5 \in \QQ$ at the generic point.
 On a nonreduced scheme a function can be nonzero and vanish at every point: $\eps \in k[\eps]/\eps^2$.
 This is why $\OO_X$ is a sheaf of rings imposed on the space rather than extracted from it.
