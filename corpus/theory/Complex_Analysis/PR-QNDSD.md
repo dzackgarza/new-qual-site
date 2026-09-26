@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QNDSD
 kind: proposition
 title: Power series are smooth on their disc of convergence
+slogan: 'Inside its convergence disk, a power series is holomorphic, differentiates term by term, and remembers its coefficients as derivatives.'
 classification:
   areas:
   - complex-analysis
