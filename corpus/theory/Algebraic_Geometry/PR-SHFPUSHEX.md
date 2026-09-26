@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SHFPUSHEX
 kind: proposition
 title: Exactness of pushforward, and pullback to a point
+slogan: 'Pushforward is left exact, closed-embedding pushforward is exact, and pulling a sheaf back to a point gives its stalk.'
 classification:
   areas:
   - algebraic-geometry
