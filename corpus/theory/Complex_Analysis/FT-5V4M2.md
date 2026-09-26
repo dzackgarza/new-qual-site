@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-5V4M2
 kind: theorem
 title: Cauchy integral formula on a disc
+slogan: 'Values inside a disc are boundary averages against the Cauchy kernel.'
 prompts:
 - State the Cauchy integral formula for $f(z)$.
 classification:
