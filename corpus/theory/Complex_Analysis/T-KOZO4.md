@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-KOZO4
 kind: theorem
 title: Riemann extension theorem
+slogan: 'An isolated singularity is removable exactly when the function stays bounded near it.'
 classification:
   areas:
   - complex-analysis
