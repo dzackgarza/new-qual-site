@@ -75,7 +75,7 @@ Quotienting kills exactly that ambiguity.
 The same issue reappears as the reason a universal family needs a rigidification, and it is why $\Jac$ is a fine moduli space while $\AA^1$ for elliptic curves is only coarse.
 
 That $k$-points give $\Pic^0(X)$ is then formal: a $k$-point is a map $\spec k \to \Jac(X)$, which by the universal property is an element of $\Pic^0(X/k) = \Pic^0(X)$.
-So the scheme structure is extra information laid over a set one already knew.
+Thus $\Jac(X)$ upgrades the set $\Pic^0(X)$ of degree-zero line-bundle classes to a smooth proper group scheme representing families of such classes.
 :::
 
 ::: {.remark title="Smooth, of dimension $g$, and proper"}
