@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WIMIM
 kind: proposition
 title: Ratio test
+slogan: 'Successive-term ratios below $1$ force absolute convergence; above $1$ force divergence.'
 classification:
   areas:
   - complex-analysis
