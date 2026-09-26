@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CRVHYPCI
 kind: proposition
 title: A hyperelliptic curve is never a complete intersection
+slogan: 'For a smooth complete-intersection curve of genus at least $2$, adjunction makes the canonical bundle very ample, so the curve cannot be hyperelliptic.'
 classification:
   areas:
   - algebraic-geometry
