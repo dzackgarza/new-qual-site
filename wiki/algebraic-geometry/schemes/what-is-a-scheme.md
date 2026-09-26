@@ -9,7 +9,7 @@ topics:
 
 # What is a scheme
 
-The question is asked in order to ask the next one, so the answer should arrive with its motivation attached and stop.
+The definition packages the topology, local rings, and functoriality needed for the constructions that follow.
 
 [[D-VKR54]]
 
@@ -20,7 +20,7 @@ The question is asked in order to ask the next one, so the answer should arrive 
 Points are primes so that ring maps induce continuous maps.
 The structure sheaf is defined by a local condition so that its sections over $D_f$ come out as $A_f$.
 Morphisms are local on stalks so that $\Spec$ is fully faithful.
-Each clause pays for one property, and saying which is a better answer than reciting the definition twice.
+Each clause is tied to one of these properties.
 
 [[FE-O12TX]]
 
@@ -28,8 +28,8 @@ Each clause pays for one property, and saying which is a better answer than reci
 
 [[T-SK599]]
 
-The adjunction gives the test one can run by hand, and it is the right first answer.
-The cohomological criterion is the one that generalises, and the examiner's follow-up — can the Noetherian hypothesis be weakened — is about that version, not this one.
+The adjunction gives an explicit criterion for recognizing an affine scheme.
+The cohomological criterion generalizes this perspective and admits weaker hypotheses than the Noetherian form stated here.
 It is proved in [[algebraic-geometry/cohomology/index|cohomology]].
 
 ## Covers of an affine scheme
