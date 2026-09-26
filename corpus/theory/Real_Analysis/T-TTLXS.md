@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TTLXS
 kind: theorem
 title: Closed graph theorem
+slogan: 'A linear map between Banach spaces is bounded whenever its graph is closed.'
 classification:
   areas:
   - real-analysis
