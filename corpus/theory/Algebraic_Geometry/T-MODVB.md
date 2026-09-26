@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MODVB
 kind: theorem
 title: Locally free sheaves are vector bundles
+slogan: 'Vector bundles and locally free sheaves are the same gluing data: transition functions in $\GL_n$, viewed geometrically or as sheaves of sections.'
 classification:
   areas:
   - algebraic-geometry
