@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHFF
 kind: theorem
 title: The theorem on formal functions
+slogan: 'For a proper morphism, all infinitesimal thickenings of a fibre recover the completed stalk of its higher direct image.'
 classification:
   areas:
   - algebraic-geometry
