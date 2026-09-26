@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OOHFS
 kind: proposition
 title: Cayley transform from the upper half-plane onto the unit disc
+slogan: 'The Cayley transform sends the upper half-plane to the unit disc and the first quadrant to the lower half-disc.'
 classification:
   areas:
   - complex-analysis
