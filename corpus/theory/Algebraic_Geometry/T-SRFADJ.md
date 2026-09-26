@@ -31,9 +31,9 @@ The same numerical formula computes the arithmetic genus of any curve on $X$.
 :::
 
 ::: {.remark}
-This is the most used formula in the surfaces half of the exam, because it converts every genus question into an intersection number.
+Adjunction converts genus calculations on surfaces into intersection-number calculations.
 
-The standard derivation asked for is the degree-genus formula.
+On $\PP^2$ it gives the degree-genus formula.
 On $\PP^2$ one has $K = -3H$ and $H^2 = 1$, so $K^2 = 9$; for $C$ of degree $d$,
 \[
 2g-2 = C \cdot (C - 3H) = d^2 - 3d ,
@@ -41,5 +41,5 @@ On $\PP^2$ one has $K = -3H$ and $H^2 = 1$, so $K^2 = 9$; for $C$ of degree $d$,
 giving $g = \tfrac{1}{2}(d-1)(d-2)$.
 On $\PP^1 \times \PP^1$, $K = (-2,-2)$ and the same computation gives $g = (a-1)(b-1)$ for a curve of type $(a,b)$.
 
-The sheaf-level statement is the one to quote when asked for the general form: for a smooth divisor $D$ on a smooth $X$ of any dimension, $K_D = (K_X + D)\vert_D$.
+In any dimension, for a smooth divisor $D$ on a smooth $X$, the sheaf-level form is $K_D = (K_X + D)\vert_D$.
 :::
