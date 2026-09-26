@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5BLYU
 kind: theorem
 title: Mean value property for holomorphic functions
+slogan: 'A holomorphic value at the center equals both its circle average and its disc average.'
 classification:
   areas:
   - complex-analysis
