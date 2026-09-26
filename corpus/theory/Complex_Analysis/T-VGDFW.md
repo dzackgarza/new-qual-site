@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-VGDFW
 kind: theorem
 title: Automorphisms of the upper half-plane
+slogan: 'The upper half-plane automorphism group is $\PSL_2(\RR)$ acting by real Möbius transformations.'
 classification:
   areas:
   - complex-analysis
