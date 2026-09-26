@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-YXTQY
 kind: fact
 title: $\{1/n\}$ and $\ZZ$ are nowhere dense; $\QQ$ is not
+slogan: 'Discrete-looking sets may be nowhere dense, while a dense countable set such as $\QQ$ is not.'
 prompts:
 - Give an example of a set that is not nowhere dense.
 classification:
