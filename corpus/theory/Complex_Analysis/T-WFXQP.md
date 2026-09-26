@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-WFXQP
 kind: theorem
 title: Residue at infinity
+slogan: 'Residue at infinity is the ordinary residue after inversion, with the sign supplied by $dz=-w^{-2}dw$.'
 classification:
   areas:
   - complex-analysis
