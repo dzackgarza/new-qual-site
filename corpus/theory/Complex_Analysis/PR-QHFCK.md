@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QHFCK
 kind: proposition
 title: Zeros of $\zeta$ outside the critical strip
+slogan: 'Outside the critical strip, $\zeta$ has only the simple trivial zeros at the negative even integers, and none on $\Re s=1$.'
 classification:
   areas:
   - complex-analysis
