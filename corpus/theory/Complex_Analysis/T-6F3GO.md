@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-6F3GO
 kind: theorem
 title: Arzelà--Ascoli theorem
+slogan: 'Closed, uniformly bounded, equicontinuous families on a compact space are compact in the uniform norm.'
 classification:
   areas:
   - complex-analysis
