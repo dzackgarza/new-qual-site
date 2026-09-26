@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SCHPRJC
 kind: theorem
 title: $\Proj S$ is a scheme, with affine charts $D_+(f) \cong \Spec S_{(f)}$
+slogan: '$\Proj$ becomes affine wherever a homogeneous element is invertible: localize at $f$, then keep degree zero.'
 classification:
   areas:
   - algebraic-geometry
