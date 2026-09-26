@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5WUAP
 kind: proposition
 title: The $p$-test
+slogan: 'The series $\sum n^{-p}$ converges exactly beyond the threshold $p=1$.'
 classification:
   areas:
   - complex-analysis
