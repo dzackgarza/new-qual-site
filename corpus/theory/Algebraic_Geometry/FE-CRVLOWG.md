@@ -42,7 +42,7 @@ Whether $Q$ is smooth or a cone is the extra discrete invariant here: on a smoot
 :::
 
 ::: {.remark}
-These are the cases an examiner actually asks for, and the right answer is the model, not a general theorem.
-The pattern to state is: $\abs{K}$ embeds a non-hyperelliptic curve as a curve of degree $2g-2$ in $\PP^{g-1}$, and for small $g$ that image is something with a name.
+These low-genus cases make the canonical model explicit.
+For a non-hyperelliptic curve, $\abs{K}$ embeds $C$ as a curve of degree $2g-2$ in $\PP^{g-1}$, and for $g=3,4$ that image has the named models above.
 Counting equations gives the unique quadric in genus $4$: $h^0(\PP^3, \OO(2)) = 10$ while $h^0(C, \OO_C(2)) = 2 \cdot 6 + 1 - 4 = 9$, so the ideal of $C$ contains a quadric, and it contains only one.
 :::
