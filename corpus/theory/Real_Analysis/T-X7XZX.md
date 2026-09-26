@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-X7XZX
 kind: theorem
 title: Fubini--Tonelli theorem
+slogan: 'For measurable functions on $\sigma$-finite products, finite absolute iterated mass makes both orders of integration agree.'
 classification:
   areas:
   - real-analysis
@@ -14,8 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $(X,\mcm,\mu)$ and $(Y,\mcn,\nu)$ be $\sigma$-finite [[D-QYLPH|measure]] spaces, and let $f\colon X\times Y\to\CC$ be $\mcm\otimes\mcn$-[[D-DHFN4|measurable]].
-Suppose that one of the iterated integrals of $\abs{f}$ is finite:
+Let $(X,\mcm,\mu)$ and $(Y,\mcn,\nu)$ be $\sigma$-finite [[D-QYLPH|measure]] spaces, and let $f\colon X\times Y\to\CC$ be $\mcm\otimes\mcn$-[[D-DHFN4|measurable]]. Suppose that one of the iterated integrals of $\abs{f}$ is finite:
 $$
 \int_X\qty{\int_Y\abs{f(x,y)}\,d\nu(y)}d\mu(x)<\infty\quad\text{or}\quad\int_Y\qty{\int_X\abs{f(x,y)}\,d\mu(x)}d\nu(y)<\infty.
 $$
