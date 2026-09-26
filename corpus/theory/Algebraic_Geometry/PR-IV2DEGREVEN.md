@@ -35,8 +35,8 @@ $R \sim K_X - f^* K_Y$, so
 a difference of two even integers.
 :::
 
-::: {.remark title="What it is for"}
-The proof is Riemann--Hurwitz with the terms moved, so the content is not the derivation but the parity constraint it hands back, which is a free consistency check on any ramification count.
+::: {.remark title="Parity consequences"}
+The proof is Riemann--Hurwitz with the terms moved, and the resulting parity constraint gives a consistency check on any ramification count.
 A branching pattern with odd $\deg R$ is impossible, so parity gives an immediate consistency check on ramification counts.
 
 Used forward with tame simple ramification, where every $e_p = 2$ and $\deg R$ counts the branch points, it says such a cover has an even number of branch points.
