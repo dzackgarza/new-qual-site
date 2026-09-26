@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-K66DJ
 kind: theorem
 title: Cauchy integral formula on a bounded domain
+slogan: 'A holomorphic function is reconstructed from its boundary values by the Cauchy kernel.'
 classification:
   areas:
   - complex-analysis
