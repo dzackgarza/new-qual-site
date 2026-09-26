@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ET5PQ
 kind: proposition
 title: $H^1$ classifies line bundles and extensions
+slogan: '$H^1$ records gluing: units give line bundles, and $\mcf\tensor\mcg\dual$ gives extensions when $\mcg$ is locally free.'
 classification:
   areas:
   - algebraic-geometry
