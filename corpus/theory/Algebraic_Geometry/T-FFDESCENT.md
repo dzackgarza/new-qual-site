@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FFDESCENT
 kind: theorem
 title: Faithfully flat descent and the Amitsur complex
+slogan: 'Faithful flatness makes base change reversible: the Amitsur complex is exact, and $A$-modules are exactly $B$-modules with descent data.'
 classification:
   areas:
   - algebraic-geometry
@@ -24,10 +25,7 @@ prompts:
 Let $\varphi \colon A \to B$ be a ring map, and write $B^{\otimes n} = B \otimes_A \cdots \otimes_A B$ with $n$ factors.
 
 ::: {.definition title="Amitsur complex"}
-For an $A$-module $M$, the \dfn{Amitsur complex} of $M$ along $\varphi$ is
-$$0 \to M \xrightarrow{d^0} M \otimes_A B \xrightarrow{d^1} M \otimes_A B^{\otimes 2} \xrightarrow{d^2} M \otimes_A B^{\otimes 3} \to \cdots,$$
-where $d^0(m) = m \otimes 1$ and, for $n \geq 1$, $d^n = \sum_{i=0}^{n} (-1)^i e_i$ with
-$$e_i(m \otimes b_1 \otimes \cdots \otimes b_n) = m \otimes b_1 \otimes \cdots \otimes b_i \otimes 1 \otimes b_{i+1} \otimes \cdots \otimes b_n .$$
+For an $A$-module $M$, the \dfn{Amitsur complex} of $M$ along $\varphi$ is $$0 \to M \xrightarrow{d^0} M \otimes_A B \xrightarrow{d^1} M \otimes_A B^{\otimes 2} \xrightarrow{d^2} M \otimes_A B^{\otimes 3} \to \cdots,$$ where $d^0(m) = m \otimes 1$ and, for $n \geq 1$, $d^n = \sum_{i=0}^{n} (-1)^i e_i$ with $$e_i(m \otimes b_1 \otimes \cdots \otimes b_n) = m \otimes b_1 \otimes \cdots \otimes b_i \otimes 1 \otimes b_{i+1} \otimes \cdots \otimes b_n .$$
 :::
 
 ::: {.theorem title="Exactness of the Amitsur complex"}
