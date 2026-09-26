@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FLATCRIT
 kind: theorem
 title: The local and infinitesimal criteria for flatness
+slogan: 'Flatness is detected infinitesimally: kill $\Tor_1$ on the closed fibre, equivalently stay flat over every nilpotent thickening.'
 classification:
   areas:
   - algebraic-geometry
