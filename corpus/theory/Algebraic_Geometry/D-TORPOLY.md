@@ -54,7 +54,7 @@ For the hexagon $P$ with vertices $v_1, \ldots, v_6$, the cone of directions out
 :::
 
 ::: {.remark title="Three descriptions, one variety"}
-The same $X_P$ arises three ways, and an examiner may ask for any of them.
+The same toric variety $X_P$ has three equivalent descriptions.
 
 1. The normal fan, as above.
 
@@ -62,7 +62,7 @@ The same $X_P$ arises three ways, and an examiner may ask for any of them.
 
 3. A direct gluing: $X_P = \Union_{m \in P \intersect M} \Spec k[\sigma_{\hat m}\dual \intersect M]$ with $\sigma_{\hat m} = \Cone(P \intersect M - m)$, the cone of directions out of the vertex $m$.
 
-Only the first two are worth memorising; the third is what the first two are secretly doing.
+The direct gluing description realizes explicitly what the normal-fan and polar-dual descriptions encode combinatorially.
 :::
 
 ::: {.remark}
