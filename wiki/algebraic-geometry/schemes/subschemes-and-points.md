@@ -30,7 +30,7 @@ Chevalley's theorem covers the topological half of the same problem, that the se
 
 [[D-SCHPTS]]
 
-Evaluation is the idea that needs rehearsing out loud.
+Evaluation takes values in residue fields that vary with the point.
 A section of $\OO_X$ is not a function to a fixed set; its value at $x$ lives in $\kappa(x)$, and on $\Spec \ZZ$ that field changes from point to point.
 Specialisation then orders the points, and the classical picture is the bottom layer of that order — the closed points — with everything above it invisible.
 Generic points and their use in "generically" are in [[algebraic-geometry/schemes/properties-from-the-ring|properties from the ring]].
