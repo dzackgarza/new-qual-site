@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-WYX24
 kind: theorem
 title: Generalized dominated convergence theorem
+slogan: 'Dominators may vary with $n$: a.e. convergence plus convergence of their integrals still passes the limit through the integral.'
 classification:
   areas:
   - real-analysis
@@ -15,8 +16,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, and let $f_n\colon X\to\CC$ and $g_n\colon X\to[0,\infty)$ for $n\geq1$, $f\colon X\to\CC$, and $g\colon X\to[0,\infty)$ be [[D-DHFN4|measurable]].
-Suppose that
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, and let $f_n\colon X\to\CC$ and $g_n\colon X\to[0,\infty)$ for $n\geq1$, $f\colon X\to\CC$, and $g\colon X\to[0,\infty)$ be [[D-DHFN4|measurable]]. Suppose that
 
 - $f_n\to f$ almost everywhere;
 
