@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CJCKL
 kind: theorem
 title: Rouché's theorem
+slogan: 'A boundary perturbation smaller than the dominant term cannot change the winding number, hence cannot change zeros minus poles inside.'
 classification:
   areas:
   - complex-analysis
