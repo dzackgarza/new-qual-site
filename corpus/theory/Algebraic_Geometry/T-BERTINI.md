@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BERTINI
 kind: theorem
 title: Bertini's theorem
+slogan: 'General members are smooth: hyperplane sections preserve smoothness generically, and characteristic-zero linear systems do so away from their base locus.'
 classification:
   areas:
   - algebraic-geometry
