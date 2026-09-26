@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-1
 kind: theorem
 title: Riemann's condition for Riemann--Stieltjes integrability
+slogan: 'Riemann--Stieltjes integrability is exactly the ability to make the upper--lower sum gap arbitrarily small.'
 classification:
   areas:
   - real-analysis
