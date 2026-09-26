@@ -50,7 +50,7 @@ The constant term is the intrinsic Euler characteristic $\chi(X,\OO_X)$ and does
 Thus the whole polynomial depends on the chosen $\OO_X(1)$, but its constant term does not.
 :::
 
-::: {.remark title="The example to have ready"}
+::: {.remark title="Basic examples"}
 $P_{\PP^n}(r) = \binom{r+n}{n}$, of degree $n$ and leading coefficient $1/n!$, so $\deg \PP^n = 1$ and $p_a(\PP^n) = 0$.
 
 On $\PP^1$, one has $h^0(\PP^1,\OO(m))=m+1$ for $m\ge0$ and zero for $m<0$ [@Har10a, Proposition II.5.13].
