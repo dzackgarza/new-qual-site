@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-5NI77
 kind: theorem
 title: Riemann's removable singularity theorem
+slogan: 'An isolated singularity is removable exactly when the function stays bounded near it.'
 prompts:
 - State Riemann's removable singularity theorem.
 classification:
