@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ZAEWG
 kind: theorem
 title: Uniformization theorem
+slogan: 'Every connected Riemann surface is a quotient of one simply connected model: $\CP^1$, $\CC$, or $\DD$.'
 classification:
   areas:
   - complex-analysis
