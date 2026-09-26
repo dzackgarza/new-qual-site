@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OGEEA
 kind: proposition
 title: Singletons in $\RR$ are closed, so $\QQ$ is $F_\sigma$
+slogan: '$\QQ$ is $F_\sigma$ because it is a countable union of closed singletons.'
 classification:
   areas:
   - real-analysis
