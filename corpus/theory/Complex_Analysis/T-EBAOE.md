@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-EBAOE
 kind: theorem
 title: Argument principle as a winding number
-slogan: 'The integral of $f'/f$ along a loop is exactly the winding number of its image around $0$.'
+slogan: 'The integral of $f''/f$ along a loop is exactly the winding number of its image around $0$.'
 classification:
   areas:
   - complex-analysis
