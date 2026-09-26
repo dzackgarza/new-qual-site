@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DB3DO
 kind: theorem
 title: Taylor expansion with holomorphic remainder
+slogan: 'After truncating a Taylor series, the remainder still factors holomorphically by the next power of $z-z_0$.'
 classification:
   areas:
   - complex-analysis
