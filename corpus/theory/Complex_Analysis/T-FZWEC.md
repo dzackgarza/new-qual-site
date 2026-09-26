@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FZWEC
 kind: theorem
 title: Hurwitz's theorem
+slogan: 'Under locally uniform holomorphic convergence, zeros persist with their total multiplicity near each zero of the limit.'
 classification:
   areas:
   - complex-analysis
