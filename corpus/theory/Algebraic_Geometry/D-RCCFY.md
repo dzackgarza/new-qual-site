@@ -35,7 +35,7 @@ A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\ts{U_i}
 The two axioms say that a section is determined by local data and that compatible local data assembles.
 Together they make $\mcf(U)$ the limit of the diagram of its restrictions, which is why a sheaf is exactly a presheaf satisfying descent for open covers.
 
-Identity without gluing is a **separated presheaf**, and the distinction is worth keeping: sheafification of a separated presheaf only adds the missing glued sections, while in general it must also kill sections that are locally zero.
+Identity without gluing is a **separated presheaf**. Sheafification of a separated presheaf only adds the missing glued sections, while in general it must also kill sections that are locally zero.
 :::
 
 ::: {.remark title="The equalizer form"}
@@ -45,5 +45,5 @@ Both axioms at once say that
 \]
 is an equalizer, the two maps being restriction from $U_i$ and from $U_j$ to the overlap.
 Injectivity of the first map is identity; that its image is exactly the equalizer is gluing.
-This is the formulation to quote when the question moves to sites and descent, where there are no points to test on.
+The equalizer formulation extends directly to sites and descent, where pointwise tests need not be available.
 :::
