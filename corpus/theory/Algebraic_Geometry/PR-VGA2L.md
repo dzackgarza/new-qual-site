@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VGA2L
 kind: proposition
 title: Curves of genus $0$
+slogan: 'A genus-zero curve with a rational point is $\PP^1$; without one, the anticanonical system presents it as a smooth conic.'
 classification:
   areas:
   - algebraic-geometry
