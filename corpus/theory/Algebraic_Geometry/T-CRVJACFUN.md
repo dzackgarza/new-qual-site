@@ -67,7 +67,7 @@ is a morphism, symmetric in its arguments, so it factors through $\Sym^n X$.
 It is surjective for $n \geq g$, and the fibre of $\Sym^n X \to \Jac(X)$ over the class of $D$ is the complete linear system $\abs{D} \iso \PP^{\ell(D)-1}$.
 :::
 
-::: {.remark title="Reading the definition"}
+::: {.remark title="Representability and rigidification"}
 Two features of the functor control representability.
 
 The quotient by $p^*\Pic(T)$ is not a technicality: without it the functor is not representable, because a line bundle on $X \times T$ can be twisted by one pulled back from the base without changing any fibre, so the assignment $T \mapsto \Pic^0(X\times T)$ has automorphisms and cannot have a universal object.
@@ -86,7 +86,6 @@ The exponential sequence for dual numbers gives
 0 \to H^1(X; \OO_X) \to \Pic\big(X[\eps]\big) \to \Pic(X) \to 0 ,
 \]
 so those classes are exactly $H^1(X;\OO_X)$, of dimension $g$.
-That is smoothness at the origin only; a group scheme is homogeneous under its own translations, so smoothness propagates to every point.
 Translation by group elements propagates smoothness from the identity to every point.
 
 Properness is the valuative criterion applied to a DVR $R$ with fraction field $K$: one must extend a line bundle on $X \times \spec K$ over $X \times \spec R$.
@@ -95,7 +94,7 @@ Irreducibility comes from the other direction, via $\phi^n$: for $n \geq g$ Riem
 Hence $\dim \Jac(X) = g$ by a second, independent route.
 :::
 
-::: {.remark title="Against the analytic construction"}
+::: {.remark title="Comparison with the analytic construction"}
 Over $\CC$ one can write $\Jac(X) = H^0(\Omega^1)\dual / H_1(X,\ZZ)$ and prove Abel and Jacobi inversion by integration; that construction produces a complex torus and needs GAGA to become algebraic.
 The functorial construction above needs no ground-field hypothesis and therefore applies in characteristic $p$ and to families, where the analytic construction is unavailable.
 The two agree over $\CC$, and the agreement is Abel's theorem.
