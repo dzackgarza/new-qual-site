@@ -55,10 +55,10 @@ If $k$ is perfect, these are also equivalent to: $X$ is regular.
 :::
 
 ::: {.remark}
-Smooth is a property of a *morphism* and regular is a property of a *ring*, and keeping them apart is most of what this question tests.
+Smoothness is a property of a morphism, while regularity is a property of local rings.
 Smooth is the stronger, base-change-stable notion: it is "regular after every field extension", which is why the two agree exactly when there are no inseparable extensions to spoil it.
 
-The counterexample to the converse over an imperfect field is the one to have ready: $k = \FF_p(t)$ and $X = \Spec k[x]/(x^p - t)$ is the spectrum of a field, hence regular, while $\fiberprod{X}{k}{\kbar} = \Spec \kbar[x]/(x - t^{1/p})^p$ is non-reduced, so $X$ is not smooth over $k$.
+Over an imperfect field the converse fails: for $k=\FF_p(t)$, $X=\Spec k[x]/(x^p-t)$ is the spectrum of a field and hence regular, while $X_{\bar k}=\Spec \bar k[x]/(x-t^{1/p})^p$ is nonreduced, so $X$ is not smooth over $k$.
 
 A smooth morphism is regular fibrewise, not absolutely: a smooth morphism over a singular base has singular total space, and the fibres are what the definition controls.
 :::
