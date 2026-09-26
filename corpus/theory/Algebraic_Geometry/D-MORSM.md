@@ -47,7 +47,7 @@ Over $k = \FF_p$, the morphism $\Spec k[x]/(x^p) \to \Spec k$ is flat and of fin
 :::
 
 ::: {.remark}
-The definition is three conditions and each is doing separate work, which is exactly what gets asked.
+The three conditions play distinct roles.
 Flatness makes it a family rather than a union of unrelated fibres; finite presentation makes it algebraic; geometric regularity of the fibres is the smoothness itself, and *geometrically* is not decoration.
 Over a non-perfect field the fibre can be regular and not geometrically regular: $\Spec k[x]/(x^p - t)$ over $k = \FF_p(t)$ is a regular point that becomes non-reduced after base change to $\kbar$, so it is a regular fibre of a non-smooth morphism.
 
