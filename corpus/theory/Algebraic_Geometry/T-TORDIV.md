@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TORDIV
 kind: theorem
 title: Divisors, class group and Picard group from the rays
+slogan: 'Toric divisor theory is linear algebra on the rays: characters give the relations, the cokernel is the class group, and $K_X=-\sum_\rho D_\rho$.'
 classification:
   areas:
   - algebraic-geometry
