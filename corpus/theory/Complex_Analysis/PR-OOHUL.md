@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OOHUL
 kind: proposition
 title: Polar Cauchy--Riemann equations
+slogan: 'In polar coordinates, Cauchy--Riemann couples radial change to angular change with the $1/r$ scale factor.'
 classification:
   areas:
   - complex-analysis
