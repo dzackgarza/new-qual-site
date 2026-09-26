@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFADJ
 kind: theorem
 title: The adjunction formula on a surface
+slogan: 'Adjunction turns genus into intersection theory: $2g(C)-2=C\cdot(C+K_X)$.'
 classification:
   areas:
   - algebraic-geometry
