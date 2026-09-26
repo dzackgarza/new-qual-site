@@ -21,7 +21,7 @@ Its completed prerequisites include `unsolved-contribution` and `slogans`; the r
 
 #### Steward checkpoint — 2026-09-26
 
-This workstream is intentionally parked after the deployment checkpoint below.
+This section records the 2026-09-26 wind-down checkpoint. The workstream was subsequently resumed later on 2026-09-26 at `copy-policy-repair`; the closure facts and deployment evidence below remain valid.
 
 - `unsolved-contribution` is complete at `29eebe3b4`: unsolved problems are reachable from navigation and each unsolved card has a prefilled GitHub solution-submission route.
 - `slogans` is complete. At this checkpoint every current theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement; the schema, badge renderer, suggestion link, and issue form are present. `just check` passes, `just build` passes, and the focused rendered-site slogan tests pass.
@@ -29,7 +29,7 @@ This workstream is intentionally parked after the deployment checkpoint below.
 - `audited-deployment` remains blocked on `copy-policy-repair`. The repository owner explicitly approved deploying this parked checkpoint during the 2026-09-26 wind-down; that deployment does **not** close `copy-policy-repair` or start the three required clean audit rounds. When `copy-policy-repair` later closes, deploy that completed revision and begin the required three consecutive clean open-ended audits against one stamped deployed revision; any finding is injected into this DAG and resets the count.
 - Author-solution selection remains blocked on `audited-deployment`; do not resume section 7 before that dependency closes.
 
-Cold resume therefore starts at **`copy-policy-repair`**, not at slogans, solution authorship, or an audit round. The checkpoint deployment is only a handoff verification of the parked source state.
+A cold resume starts at **`copy-policy-repair`**, not at slogans, solution authorship, or an audit round. The checkpoint deployment was only a handoff verification of that source state; the live workstream has now resumed from this point.
 
 - **`site-renderability-repair`**. **Closed:** 2026-09-25 (`99a19db5e`, `884078a10`, `540665817`). **Needs:** none.
   At discovery, the corpus build stopped before site emission on authored math that used undefined notation aliases or had unterminated display-math delimiters in 16 problem cards (`\pr`, `\Specm`, `\ev`, `\Span`, `\mfn`, `\isom`, `\End`, `\Supp`, `\dashmapsto`, and three missing closing `\]` delimiters).
