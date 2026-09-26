@@ -14,8 +14,7 @@ What survives is the sheaf.
 
 [[D-VARREG]]
 
-The three rings attached to a variety are the same object read at three scales: $A(X)$ is what is defined everywhere, $\OO_{X,p}$ is what is defined near $p$, and $k(X)$ is what is defined somewhere.
-An examiner asking for $k[V]$, $A(V)$ and $k(V)$ in one breath is asking whether that is how they are held.
+The three rings attached to a variety record regularity at three scales: $A(X)$ consists of functions defined everywhere, $\OO_{X,p}$ of functions defined near $p$, and $k(X)$ of rational functions defined on some nonempty open set.
 
 ## The four classes, and why the charts matter
 
