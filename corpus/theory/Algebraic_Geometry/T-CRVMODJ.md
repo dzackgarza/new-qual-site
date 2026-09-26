@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVMODJ
 kind: theorem
 title: The modular function $J(\tau) = g_2^3/\Delta$ and the $\SL_2(\ZZ)$-action on $\HH$
+slogan: '$J$ is the analytic moduli coordinate: two points of $\HH$ give the same elliptic curve exactly when they lie in one $\SL_2(\ZZ)$-orbit.'
 classification:
   areas:
   - algebraic-geometry
