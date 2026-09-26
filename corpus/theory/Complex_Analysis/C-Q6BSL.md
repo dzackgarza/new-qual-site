@@ -3,7 +3,7 @@ schema: qual/card@1
 id: C-Q6BSL
 kind: corollary
 title: Residue of $g/h$ at a simple zero of $h$
-slogan: 'At a simple zero of the denominator, the residue is numerator over derivative: $g(z_0)/h'(z_0)$.'
+slogan: 'At a simple zero of the denominator, the residue is numerator over derivative: $g(z_0)/h''(z_0)$.'
 classification:
   areas:
   - complex-analysis
