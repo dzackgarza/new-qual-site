@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BPP7D
 kind: proposition
 title: Sector to disc
+slogan: 'Straighten a sector to the upper half-plane by a power map, then use a Cayley transform to reach the disc.'
 classification:
   areas:
   - complex-analysis
