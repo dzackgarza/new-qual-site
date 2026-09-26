@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ZCMJQ
 kind: proposition
 title: ML estimate for contour integrals
+slogan: 'Contour integrals are bounded by maximum size times path length: $\left|\int_\gamma f\,dz\right|\le ML$.'
 classification:
   areas:
   - complex-analysis
