@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-37QA5
 kind: proposition
 title: Complex differentiable implies Cauchy--Riemann
+slogan: 'A complex derivative has the same directional limit along the real and imaginary axes, forcing the Cauchy--Riemann equations.'
 classification:
   areas:
   - complex-analysis
