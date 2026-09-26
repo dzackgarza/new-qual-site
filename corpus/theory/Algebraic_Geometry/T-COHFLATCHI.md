@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHFLATCHI
 kind: theorem
 title: Flatness is constancy of the Hilbert polynomial
+slogan: 'For coherent sheaves on projective space over an integral Noetherian base, flatness is exactly constancy of the fibre Hilbert polynomial.'
 classification:
   areas:
   - algebraic-geometry
