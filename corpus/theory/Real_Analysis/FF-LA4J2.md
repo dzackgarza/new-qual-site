@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-LA4J2
 kind: fact
 title: Carathéodory criterion for Lebesgue measurability
+slogan: 'A measurable set splits every outer measure exactly across itself and its complement.'
 prompts:
 - What is the Caratheodory characterization of outer measure?
 classification:
