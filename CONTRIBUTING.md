@@ -8,6 +8,12 @@ This file is the single catalogue of named policy codes.
 [AGENTS.md](AGENTS.md) describes the corpus data model and the working procedure and cites these codes; it defines none of its own.
 Use the codes in contributions, commit messages, and review.
 
+### Current milestone checkpoint
+
+The repository is parked in the `audited-deployment` milestone. `unsolved-contribution` and `slogans` are complete; `copy-policy-repair` is the current open resume point. The repository owner explicitly approved deploying this parked checkpoint for handoff verification; that deployment does not close `copy-policy-repair` or begin the required audit rounds. Author solutions remain blocked until `audited-deployment` closes. The live dependencies, full obligations, and cold-resume instructions are recorded in [TODO.md](TODO.md#steward-checkpoint--2026-09-26).
+
+An owner-requested handoff checkpoint may run `just build`, `just check`, and `just preview` locally to verify the parked working tree. This does not publish the site and does not weaken `QUAL-06`: ordinary content commits remain reading-verified, while build/render checks stay at an explicitly required integration or deployment boundary.
+
 | ID | Name | Required action |
 | --- | --- | --- |
 | `QUAL-01` | Source-faithful mathematics | Read the complete card and relevant source before changing a statement, title, classification, relation, or proof. Preserve hypotheses and every requested part. |

@@ -16,11 +16,23 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md#named-policies) and record issues as they
 `publication-milestone` is **closed** (2026-09-17, `0c2a0b3ff`). Its source-intake, correctness, tooling, adjudication, migration, and complaint-remediation prerequisites are also closed and are not executable work unless a concrete later regression reopens their actual owner.
 
 The current milestone is **`audited-deployment`**: a deployed site whose copy is policy-aligned and which survives three consecutive open-ended audits.
-Its route is `unsolved-contribution`, `slogans`, and `copy-policy-repair`, then the audit rounds.
+Its completed prerequisites include `unsolved-contribution` and `slogans`; the remaining route is `copy-policy-repair`, then the audit rounds.
 [Author solutions](#7-author-solutions) waits behind this milestone: solution authorship mutates the prose population the audits are judging.
 
+#### Steward checkpoint — 2026-09-26
+
+This workstream is intentionally parked after the deployment checkpoint below.
+
+- `unsolved-contribution` is complete at `29eebe3b4`: unsolved problems are reachable from navigation and each unsolved card has a prefilled GitHub solution-submission route.
+- `slogans` is complete. At this checkpoint every current theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement; the schema, badge renderer, suggestion link, and issue form are present. `just check` passes, `just build` passes, and the focused rendered-site slogan tests pass.
+- `copy-policy-repair` is **open and not yet semantically completed**. Resume here. Recompute the current reader-facing surface population, then read every in-scope surface against all policy families in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families), including the public copy introduced by `unsolved-contribution` and `slogans`. Repair each actual violation while preserving the mathematics. An inventory, grep result, crawler result, lint count, or audit receipt is only a lead and cannot close this node.
+- `audited-deployment` remains blocked on `copy-policy-repair`. The repository owner explicitly approved deploying this parked checkpoint during the 2026-09-26 wind-down; that deployment does **not** close `copy-policy-repair` or start the three required clean audit rounds. When `copy-policy-repair` later closes, deploy that completed revision and begin the required three consecutive clean open-ended audits against one stamped deployed revision; any finding is injected into this DAG and resets the count.
+- Author-solution selection remains blocked on `audited-deployment`; do not resume section 7 before that dependency closes.
+
+Cold resume therefore starts at **`copy-policy-repair`**, not at slogans, solution authorship, or an audit round. The checkpoint deployment is only a handoff verification of the parked source state.
+
 - **`site-renderability-repair`**. **Closed:** 2026-09-25 (`99a19db5e`, `884078a10`, `540665817`). **Needs:** none.
-  The current corpus build stops before site emission on authored math that uses undefined notation aliases or has unterminated display-math delimiters in 16 problem cards (`\pr`, `\Specm`, `\ev`, `\Span`, `\mfn`, `\isom`, `\End`, `\Supp`, `\dashmapsto`, and three missing closing `\]` delimiters).
+  At discovery, the corpus build stopped before site emission on authored math that used undefined notation aliases or had unterminated display-math delimiters in 16 problem cards (`\pr`, `\Specm`, `\ev`, `\Span`, `\mfn`, `\isom`, `\End`, `\Supp`, `\dashmapsto`, and three missing closing `\]` delimiters).
   Normalize each occurrence to the repository's existing notation or ordinary MathJax-supported TeX; do not add duplicate aliases merely to preserve accidental spellings.
   **Acceptance:** `uv run qualc build` exits successfully from the current corpus with no unrenderable-TeX diagnostic.
 

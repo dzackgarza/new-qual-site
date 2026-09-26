@@ -7,6 +7,12 @@ It covers prelims, algebra, applied algebra, algebraic geometry, real analysis, 
 
 No installation is required.
 
+## Repository checkpoint
+
+The source tree is currently parked during the `audited-deployment` milestone. Unsolved-problem contribution and result slogans are complete; the remaining live milestone work starts at the corpus-wide `copy-policy-repair` pass. The repository owner approved deployment of this parked checkpoint for handoff verification, but the required three clean deployed-site audits do not begin until `copy-policy-repair` closes. Solution authorship remains blocked behind the audited-deployment milestone.
+
+The public site may contain this parked checkpoint even though `copy-policy-repair` and the later audit rounds remain open.
+
 ## Study
 
 - [Browse, filter, sample, and print problems](https://dzackgarza.github.io/new-qual-site/problems.html).
