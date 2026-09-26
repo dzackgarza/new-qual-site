@@ -15,9 +15,9 @@ Properness is what makes cohomology finite, and twisting is what makes it vanish
 
 [[T-COHSVAN]]
 
-The two are proved together and are asked together.
+The two statements are proved together and used together.
 Finiteness is the statement that lets one write $h^i$ at all; Serre vanishing is the statement that lets one ignore everything except $h^0$ after a large enough twist.
-The threshold in "$n \gg 0$" depends on the sheaf, and being asked whether one $n$ works for all coherent sheaves is the standard probe.
+The threshold in "$n\gg0$" depends on the coherent sheaf; in general there is no single bound uniform over all coherent sheaves.
 
 ## The invariant that does not jump
 
