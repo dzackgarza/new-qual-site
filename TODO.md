@@ -29,7 +29,7 @@ Its route is `unsolved-contribution`, `slogans`, and `copy-policy-repair`, then 
   [formalization-corpus](https://github.com/dzackgarza/formalization-corpus) already does this for source leads (`site/contribute.html` linking `issues/new?template=source-lead.yml`); follow that mechanism rather than inventing another.
   **Acceptance:** on a built site, the unsolved view is reachable from navigation and lists exactly the corpus's unsolved cards, and following a card's submission link opens the issue form with that card's fields already filled.
 
-- **`slogans`**. **Needs:** none.
+- **`slogans`**. **Closed:** 2026-09-26 (`6269b3aca`). **Needs:** none.
   Give results a slogan in the way the [Stacks project](https://stacks.math.columbia.edu/) does: a short badge attached to a theorem, proposition, lemma, corollary, or fact card that condenses the result into a pithy, memorable mnemonic.
   A slogan is authored card data, validated by `just check` like any other field, and rendered as a badge wherever the result appears.
   It must be true of the result it labels and faithful to its hypotheses; a catchy slogan that overstates the theorem is an incorrect fact.
