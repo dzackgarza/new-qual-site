@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5A64G
 kind: proposition
 title: Zeros and their orders
+slogan: 'A zero has one finite order: factor the corresponding power of $z-z_0$, leaving a holomorphic nonvanishing unit.'
 classification:
   areas:
   - complex-analysis
