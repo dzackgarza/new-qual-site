@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-ZJQ2T
 kind: theorem
 title: Rouché's theorem on a closed disc
+slogan: 'If two boundary values never oppose enough to cross zero, they have the same zero count inside the disc.'
 prompts:
 - State Rouche's theorem on a closed disc $\abs{z - z_0} \leq R$.
 classification:
