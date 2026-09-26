@@ -32,7 +32,7 @@ If $X$ is proper over $A$, both are equivalent to: for every coherent $\mcf$ the
 :::
 
 ::: {.remark}
-This is the definition of ampleness worth carrying, because it is the one that gets used: ampleness is the licence to kill higher cohomology by twisting enough.
+This criterion expresses ampleness as eventual global generation and, in the proper case, eventual vanishing of higher cohomology.
 Every argument that starts "twist by $\OO(n)$ for $n \gg 0$" is an appeal to it.
 
 On a projective scheme $\OO(1)$ is ample, and the criterion is then Serre vanishing.
