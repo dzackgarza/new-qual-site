@@ -64,5 +64,5 @@ The practical test is local and needs no module in hand: $\mcf$ is quasicoherent
 \[
 \OO_X^{(I)} \to \OO_X^{(J)} \to \mcf \to 0 .
 \]
-This is the form to use when the question is whether some naturally-occurring sheaf is quasicoherent, because a presentation can usually be written down where a module cannot.
+This presentation criterion is often easier to verify for naturally occurring sheaves than constructing an explicit module on each affine chart.
 :::
