@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-DWCQ7
 kind: theorem
 title: Maximum modulus principle
+slogan: 'A nonconstant holomorphic function cannot attain a local maximum of its modulus in the interior.'
 prompts:
 - State the maximum modulus principle.
 classification:
