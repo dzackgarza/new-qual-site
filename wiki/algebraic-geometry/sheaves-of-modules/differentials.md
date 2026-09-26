@@ -27,7 +27,7 @@ The conormal sequence, for a closed immersion $Z \subseteq X$ with ideal $\mci$:
 \mci/\mci^2 \to \Omega_{X/S}\ro{}{Z} \to \Omega_{Z/S} \to 0 .
 \]
 
-Neither is exact on the left in general, and that is where the content is.
+Neither sequence is left exact in general; injectivity of the leftmost map requires additional hypotheses.
 The first becomes short exact on the left for a smooth morphism, and its failure for a nonconstant map of curves is what Riemann--Hurwitz measures: the cokernel of $f^*\Omega_Y \to \Omega_X$ is the ramification divisor.
 The second becomes short exact on the left when $Z$ is smooth, and taking determinants then gives adjunction,
 \[
