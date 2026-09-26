@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-63IWC
 kind: fact
 title: Equicontinuity and uniform equicontinuity
+slogan: 'Equicontinuity uses one local delta for the whole family; uniform equicontinuity uses one delta everywhere.'
 prompts:
 - What is equicontinuity? Uniform equicontinuity?
 classification:
