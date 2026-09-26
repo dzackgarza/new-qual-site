@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-VCX3Y
 kind: theorem
 title: Argument principle counting zeros and poles
+slogan: 'The contour integral of $f'/f$ counts zeros minus poles, with multiplicity.'
 classification:
   areas:
   - complex-analysis
