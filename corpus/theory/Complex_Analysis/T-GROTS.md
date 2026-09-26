@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-GROTS
 kind: theorem
 title: Power series expansion of a holomorphic function on a disc
+slogan: 'Holomorphic functions equal their Taylor series throughout every closed disc contained in the domain.'
 classification:
   areas:
   - complex-analysis
