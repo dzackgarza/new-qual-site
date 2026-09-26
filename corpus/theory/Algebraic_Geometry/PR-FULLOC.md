@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULLOC
 kind: proposition
 title: A face gives a principal open subset, which is how the affine charts glue
+slogan: 'A face inclusion is localization: invert its cutting character, and the face chart becomes a principal open in the cone chart.'
 classification:
   areas:
   - algebraic-geometry
