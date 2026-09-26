@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-B7YTE
 kind: theorem
 title: Abel's theorem
+slogan: 'A convergent boundary series is recovered by approaching the boundary radially from inside the unit disc.'
 classification:
   areas:
   - complex-analysis
