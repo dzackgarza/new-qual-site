@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-K4KTF
 kind: proposition
 title: Meromorphic continuation of $\zeta$
+slogan: 'Theta inversion continues $\zeta$ meromorphically to $\CC$, leaving one simple pole at $1$ and relating $s$ to $1-s$.'
 classification:
   areas:
   - complex-analysis
