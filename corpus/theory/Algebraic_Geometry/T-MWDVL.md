@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MWDVL
 kind: theorem
 title: Riemann--Roch and Serre duality on a curve
+slogan: 'On a smooth projective curve, $\chi(\OO(D))=\deg D+1-g$, and Serre duality turns the correction term into sections of $K-D$.'
 classification:
   areas:
   - algebraic-geometry
