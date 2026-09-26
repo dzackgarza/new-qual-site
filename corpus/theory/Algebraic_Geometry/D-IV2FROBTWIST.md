@@ -42,7 +42,7 @@ k(X) \subseteq k(X)^{1/p} .
 \]
 :::
 
-::: {.remark title="What the twist is for"}
+::: {.remark title="Effect of the twist"}
 The absolute $F$ is not a morphism over $k$: $F^\sharp$ sends $\lambda \in k$ to $\lambda^p$, so the triangle over $\Spec k$ does not commute, and instead $F$ sits in a square with the Frobenius of $\Spec k$ itself.
 Over $k=\FF_p$ the Frobenius on the base is the identity, so the absolute and relative descriptions coincide.
 Twisting the structure map is the minimal repair: absorb the $p$-th power action of $k$ into the source, and what was a square becomes a triangle.
@@ -54,7 +54,7 @@ Twisting applies the Frobenius of $k$ to the coefficients of the defining equati
 It fails in general: for an elliptic curve the twist changes $j$ by a $p$-th power, so $E_p \cong E$ over $k$ exactly when $j(E) \in \FF_p$, and a curve with $j$ transcendental over $\FF_p$ is the counterexample.
 :::
 
-::: {.remark title="Against the other Frobenius card"}
+::: {.remark title="Absolute versus relative Frobenius"}
 [[FE-MORFROB]] records a different property of the same map.
 That card is about the *absolute* Frobenius of $\PP^n$ as a counterexample: finite, flat, bijective, and nowhere smooth, because $d(t^p) = 0$.
 This card is about making Frobenius a morphism over $k$ at all, and about the degree-$p$ field extension it induces, which is what [[PR-IV2INSEP]] runs on.
