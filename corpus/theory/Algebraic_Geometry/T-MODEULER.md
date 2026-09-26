@@ -35,7 +35,7 @@ For $X = \PP^n_A$ there is a short exact sequence of $\OO_X$-modules
 The sequence is the sheaf-level record of $\PP^n = (\AA^{n+1} \setminus 0)/\GG_m$: the middle term is the pullback of the cotangent bundle of the affine space, twisted, and the surjection onto $\OO_X$ is contraction with the Euler vector field, whose kernel is the forms that descend.
 Dually, $0 \to \OO_X \to \OO_X(1)\sumpower{n+1} \to T_X \to 0$, and the $\OO_X$ is the Euler field itself.
 
-The reason to memorise it is the determinant.
+Its determinant computes the canonical bundle.
 Taking top exterior powers in a short exact sequence multiplies them, so
 \[
 \omega_{\PP^n} = \Extpower^n \Omega = \Extpower^{n+1}\qty{\OO(-1)\sumpower{n+1}} \tensor \OO\dual = \OO(-n-1) ,
