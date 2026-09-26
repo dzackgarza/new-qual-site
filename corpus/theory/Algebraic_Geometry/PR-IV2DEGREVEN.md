@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IV2DEGREVEN
 kind: proposition
 title: The ramification divisor has even degree
+slogan: 'Riemann--Hurwitz makes ramification parity automatic: for a finite separable cover of curves, $\deg R$ is always even.'
 classification:
   areas:
   - algebraic-geometry
