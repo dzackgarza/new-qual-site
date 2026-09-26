@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-2
 kind: theorem
 title: Continuous images of compact sets and the extreme value theorem
+slogan: 'Continuous maps preserve compactness, so continuous real-valued functions on compact sets attain their extrema.'
 classification:
   areas:
   - real-analysis
