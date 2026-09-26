@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-X5D4Z
 kind: proposition
 title: Cauchy--Schwarz inequality
+slogan: 'Inner products are bounded by the product of norms, with equality exactly along one-dimensional directions.'
 classification:
   areas:
   - real-analysis
