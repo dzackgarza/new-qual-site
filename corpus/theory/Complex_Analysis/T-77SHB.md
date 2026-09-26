@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-77SHB
 kind: theorem
 title: Cayley transform $\frac{i-z}{i+z}$ between the upper half-plane and the disc
+slogan: 'The Cayley transform identifies the upper half-plane and unit disc by a Möbius map.'
 classification:
   areas:
   - complex-analysis
