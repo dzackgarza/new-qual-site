@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-A7UFG
 kind: proposition
 title: $L^1$ is closed under convolution
+slogan: '$L^1$ convolution stays in $L^1$, with norm at most the product of the two $L^1$ norms.'
 classification:
   areas:
   - real-analysis
