@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-2
 kind: theorem
 title: Mean value theorem
+slogan: 'Some tangent slope equals the secant slope across the interval.'
 classification:
   areas:
   - real-analysis
