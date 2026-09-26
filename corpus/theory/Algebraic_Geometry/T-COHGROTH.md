@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHGROTH
 kind: theorem
 title: Grothendieck vanishing above the dimension
+slogan: 'An $n$-dimensional Noetherian space has no sheaf cohomology above degree $n$, with no coherence hypothesis needed.'
 classification:
   areas:
   - algebraic-geometry
