@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-AK34G
 kind: theorem
 title: Cauchy integral formula for derivatives
+slogan: 'Every higher derivative is a boundary integral against one higher power of the Cauchy kernel.'
 prompts:
 - State the Cauchy integral formula for the higher derivatives $f^{(n)}(z)$.
 classification:
