@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHSD
 kind: theorem
 title: Serre duality in dimension $n$
+slogan: 'Serre duality pairs complementary degrees perfectly: $H^i(\mcl)$ is dual to $H^{n-i}(\omega_X\tensor\mcl\dual)$ on a smooth proper $n$-fold.'
 classification:
   areas:
   - algebraic-geometry
@@ -30,17 +31,14 @@ $$
 H^i(X, \mcl) \tensor H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}
 \to H^n(X,\omega_X)\xrightarrow{t_X} k
 $$
-is perfect, so $H^i(X,\mcl) \cong H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}\dual$, by [duality for proper schemes over fields](https://stacks.math.columbia.edu/tag/0FVU).
-The trace $t_X$ corresponds under $H^n(X,\omega_X)\cong H^0(X,\OO_X)^\vee$ to evaluation on the constant section $1$.
+is perfect, so $H^i(X,\mcl) \cong H^{n-i}\qty{X, \omega_X \tensor \mcl\dual}\dual$, by [duality for proper schemes over fields](https://stacks.math.columbia.edu/tag/0FVU). The trace $t_X$ corresponds under $H^n(X,\omega_X)\cong H^0(X,\OO_X)^\vee$ to evaluation on the constant section $1$.
 It is an isomorphism exactly when $H^0(X,\OO_X)=k$.
 For example, for $X=\Spec K$ with $K/k$ a finite separable extension of degree greater than one, $H^0(X,\omega_X)=K$ has that greater dimension over $k$, so the trace cannot be an isomorphism.
 :::
 
 ::: {.definition title="Dualizing sheaf"}
 Let $X$ be a proper scheme of dimension $n$ over a field $k$.
-A \dfn{dualizing sheaf} for $X$ is a coherent sheaf $\omega_X^\circ$ with a $k$-linear \dfn{trace map} $t \colon H^n(X, \omega_X^\circ) \to k$ such that for every coherent sheaf $\mcf$ the pairing
-$$\Hom(\mcf, \omega_X^\circ) \times H^n(X, \mcf) \to H^n(X, \omega_X^\circ) \xrightarrow{t} k$$
-induces an isomorphism $\Hom(\mcf, \omega_X^\circ) \cong H^n(X, \mcf)\dual$.
+A \dfn{dualizing sheaf} for $X$ is a coherent sheaf $\omega_X^\circ$ with a $k$-linear \dfn{trace map} $t \colon H^n(X, \omega_X^\circ) \to k$ such that for every coherent sheaf $\mcf$ the pairing $$\Hom(\mcf, \omega_X^\circ) \times H^n(X, \mcf) \to H^n(X, \omega_X^\circ) \xrightarrow{t} k$$ induces an isomorphism $\Hom(\mcf, \omega_X^\circ) \cong H^n(X, \mcf)\dual$.
 A dualizing sheaf is unique up to unique isomorphism compatible with the trace maps.
 :::
 
@@ -51,7 +49,8 @@ Let $X$ be a projective scheme of dimension $n$ over an algebraically closed fie
 
 2. For every $i$ and every coherent $\mcf$ there are natural maps $\theta^i \colon \Ext^i(\mcf, \omega_X^\circ) \to H^{n-i}(X, \mcf)\dual$, and $\theta^0$ is an isomorphism.
 
-3. The maps $\theta^i$ are isomorphisms for all $i$ and all coherent $\mcf$ if and only if $X$ is Cohen--Macaulay and equidimensional. In that case, for $\mcf$ locally free, $H^i(X, \mcf) \cong H^{n-i}(X, \omega_X^\circ \otimes \mcf\dual)\dual$.
+3. The maps $\theta^i$ are isomorphisms for all $i$ and all coherent $\mcf$ if and only if $X$ is Cohen--Macaulay and equidimensional.
+   In that case, for $\mcf$ locally free, $H^i(X, \mcf) \cong H^{n-i}(X, \omega_X^\circ \otimes \mcf\dual)\dual$.
 
 4. If $X$ is smooth, $\omega_X^\circ \cong \omega_X = \Omega^n_{X/k}$.
 :::
