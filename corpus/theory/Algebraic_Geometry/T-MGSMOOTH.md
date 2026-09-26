@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MGSMOOTH
 kind: theorem
 title: The moduli stacks of smooth and stable curves
+slogan: '$\mathcal M_g$ is smooth of dimension $3g-3$ but not proper; adding stable curves gives the smooth proper compactification $\overline{\mathcal M}_g$.'
 classification:
   areas:
   - algebraic-geometry
