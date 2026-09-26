@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D5-4-1
 kind: theorem
 title: Fermat's stationary-point theorem
+slogan: 'A differentiable interior extremum has zero derivative.'
 classification:
   areas:
   - real-analysis
