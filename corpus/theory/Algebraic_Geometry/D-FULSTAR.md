@@ -39,11 +39,11 @@ V(\tau) \da \cl \Orb(\tau) = X_{\Star(\tau)} , \qquad \dim V(\tau) = n - \dim \t
 \]
 :::
 
-::: {.remark title="What it is for"}
+::: {.remark title="Orbit closures"}
 The orbit-cone correspondence says which orbits there are; the star says what they are.
 Every torus-invariant closed subvariety of $X_\Sigma$ is some $V(\tau)$, hence again a toric variety, one dimension lower for each dimension of $\tau$, and its own fan is obtained by quotienting out the directions inside $\tau$ and keeping only the cones above $\tau$.
 
-Two cases are used constantly.
+Two basic cases are:
 A ray $\rho$ gives $V(\rho) = D_\rho$, the boundary divisor, and $\Star(\rho)$ is the fan of the cones containing $\rho$, projected along $\rho$: this is how one sees $D_\rho \cong \PP^1$ for a smooth complete surface, and $D_\rho \cong \PP^{n-1}$ for the exceptional divisor of a star subdivision.
 A maximal cone gives a point.
 
