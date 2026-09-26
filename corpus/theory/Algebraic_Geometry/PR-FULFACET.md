@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULFACET
 kind: proposition
 title: Facet normals and the half-space presentation of a cone
+slogan: 'Facet normals generate the dual cone, and their nonnegative half-spaces cut out the original cone.'
 classification:
   areas:
   - algebraic-geometry
