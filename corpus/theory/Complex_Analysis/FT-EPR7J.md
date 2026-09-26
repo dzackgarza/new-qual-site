@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-EPR7J
 kind: theorem
 title: Rouché's theorem, symmetric form
+slogan: 'If two boundary values never point in exactly opposite directions, the functions have the same zero count inside.'
 prompts:
 - State Rouche's theorem in its symmetric form.
 classification:
