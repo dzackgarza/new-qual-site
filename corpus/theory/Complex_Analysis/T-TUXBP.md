@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TUXBP
 kind: theorem
 title: Implicit function theorem for $C^r$ maps
+slogan: 'An invertible derivative block in the solved-for variables makes the zero set locally a unique $C^r$ graph.'
 classification:
   areas:
   - complex-analysis
