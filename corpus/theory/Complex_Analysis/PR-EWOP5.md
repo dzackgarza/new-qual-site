@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-EWOP5
 kind: proposition
 title: Holomorphic functions have isolated zeros
+slogan: 'Unless it vanishes identically, a holomorphic function has isolated zeros.'
 classification:
   areas:
   - complex-analysis
