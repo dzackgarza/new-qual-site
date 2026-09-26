@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NZZ2C
 kind: proposition
 title: Zeros of $f'$ are isolated, and $f'=g'$ implies $f-g$ is constant
+slogan: 'A nonconstant holomorphic function has isolated critical points, and equal derivatives differ only by a constant.'
 classification:
   areas:
   - complex-analysis
