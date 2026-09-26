@@ -75,10 +75,10 @@ Writing a rational point in lowest terms and clearing denominators converts $E(\
 Reading it the other way, a Diophantine question about a cubic acquires a group acting on its own solution set, and Mordell's theorem says that group is small enough to describe: finitely many generators account for every solution there is.
 This exchange is the entire reason elliptic curves sit in number theory rather than only in geometry.
 
-Finite generation is the part with content, and the shape of the proof is worth knowing even when the proof is not.
+Finite generation is proved by combining descent with a height argument.
 It is a descent: the weak Mordell theorem gives $E(\QQ)/2E(\QQ)$ finite, and a height function measuring the arithmetic size of a point turns that finiteness into generation by a bounded set.
 Neither half is formal, and neither is visible from the geometry over $\bar\QQ$, where $E$ is divisible and nothing is finitely generated.
 
 What the theorem does not give is the rank.
-Torsion is completely understood --- by Mazur's theorem, $E(\QQ)_{\mathrm{tors}}$ is one of fifteen groups --- while $r$ has no known algorithm and no proven bound, which is the honest answer when an examiner pushes past the statement.
+Torsion is completely understood --- by Mazur's theorem, $E(\QQ)_{\mathrm{tors}}$ is one of fifteen groups --- while no algorithm is known to compute the rank $r$ in general, and no proven uniform bound for it is known.
 :::
