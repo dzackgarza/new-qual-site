@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-XEQFR
 kind: fact
 title: $e^{2\pi i/3}$ in rectangular coordinates
+slogan: 'The cube root $e^{2\pi i/3}$ is $-\frac12+i\frac{\sqrt3}{2}$.'
 prompts:
 - What is $e^{2\pi i / 3}$ in rectangular coordinates?
 classification:
