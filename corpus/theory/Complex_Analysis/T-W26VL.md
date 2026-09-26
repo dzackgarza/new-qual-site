@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-W26VL
 kind: theorem
 title: Automorphisms of the unit disc as rotated Blaschke factors
+slogan: 'Every unit-disc automorphism is exactly a Blaschke factor followed by a rotation.'
 classification:
   areas:
   - complex-analysis
