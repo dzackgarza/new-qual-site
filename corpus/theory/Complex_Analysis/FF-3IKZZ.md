@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-3IKZZ
 kind: fact
 title: ML estimate for contour integrals
+slogan: 'Contour integrals are bounded by maximum size times path length.'
 prompts:
 - State the maximum length (ML) estimate for a contour integral.
 classification:
