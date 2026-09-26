@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVMG
 kind: theorem
 title: $\mathcal{M}_g$ is irreducible of dimension $3g-3$
+slogan: 'For $g\ge2$, curve deformations are quadratic differentials: $\dim H^1(T_C)=h^0(\omega_C^{\tensor2})=3g-3$, the dimension of irreducible $\mathcal M_g$.'
 classification:
   areas:
   - algebraic-geometry
