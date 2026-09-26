@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVMORDELL
 kind: theorem
 title: Mordell's theorem, and $E(\QQ)$ as a finitely generated abelian group
+slogan: 'For an elliptic curve over $\QQ$, the rational points form $\ZZ^r$ plus a finite torsion subgroup.'
 classification:
   areas:
   - algebraic-geometry
