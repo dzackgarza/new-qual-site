@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TVPCM
 kind: proposition
 title: Holomorphic at a point if and only if $\bar\partial f$ vanishes there
+slogan: 'For a real-differentiable map, complex differentiability is exactly the equation $\bar\partial f=0$.'
 classification:
   areas:
   - complex-analysis
