@@ -43,7 +43,7 @@ That is what makes induction on dimension available: a statement about $X_\Sigma
 
 ## Standard examples from fans
 
-| Asked for | Fan that supplies it |
+| Geometric feature | Fan that supplies it |
 | --- | --- |
 | a normal variety that is not smooth | cone on $(0,1)$, $(d,-1)$ for $d \geq 2$ |
 | a Weil divisor that is not Cartier | the same, $d = 2$: the quadric cone $V(xy - z^2)$ |
