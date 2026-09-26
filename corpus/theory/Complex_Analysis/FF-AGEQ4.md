@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-AGEQ4
 kind: fact
 title: $\cos z = \cosh(iz)$
+slogan: 'Circular cosine is hyperbolic cosine on the imaginary axis: $\cos z=\cosh(iz)$.'
 prompts:
 - How is $\cos(z)$ written in terms of $\cosh$?
 classification:
