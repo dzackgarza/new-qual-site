@@ -31,7 +31,7 @@ Equivalently, $\Omega_{X/Y} = 0$; equivalently, $\Delta_{X/Y}$ is an open immers
 :::
 
 ::: {.remark}
-The three formulations are three different tools and it is worth being able to move between them.
+The three formulations emphasize different aspects of the same condition.
 The first says the fibres are reduced and the maximal ideal is not squashed; the second is the computable one; the third is why unramified morphisms behave like local isomorphisms of topological spaces, since an open diagonal is the formal version of "locally injective".
 
 For a dominant map of smooth curves $f : X \to Y$ the local picture is $f^\sharp(\mfm_{f(p)}) \OO_{X,p} = \mfm_p^{e_p}$, and $f$ is unramified exactly when every ramification index $e_p$ equals $1$.
