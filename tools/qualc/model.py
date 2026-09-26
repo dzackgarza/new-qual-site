@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import io
 import re
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from datetime import date
@@ -782,14 +782,18 @@ class _UniqueKeyLoader(yaml.SafeLoader):
     validated.
     """
 
-    def construct_mapping(self, node: yaml.MappingNode, deep: bool = False) -> dict:
-        seen: set[object] = set()
-        for key_node, _ in node.value:
-            key = self.construct_object(key_node, deep=deep)
-            if key in seen:
-                raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
-            seen.add(key)
-        return super().construct_mapping(node, deep=deep)
+
+def _construct_unique_map(loader: yaml.SafeLoader, node: yaml.MappingNode) -> Iterator[dict]:
+    seen: set[object] = set()
+    for key_node, _ in node.value:
+        key = loader.construct_object(key_node)
+        if key in seen:
+            raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
+        seen.add(key)
+    yield from yaml.constructor.SafeConstructor.construct_yaml_map(loader, node)
+
+
+_UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_unique_map)
 
 
 def load_front_matter(text: str) -> object:
