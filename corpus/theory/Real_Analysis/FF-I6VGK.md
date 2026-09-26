@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-I6VGK
 kind: fact
 title: Implications among uniform, pointwise, almost everywhere, and $L^p$ convergence
+slogan: 'Uniform implies pointwise implies a.e.; finite-measure uniform implies $L^p$; $L^p$ gives an a.e.-convergent subsequence.'
 prompts:
 - How do uniform, pointwise, a.e. and norm convergence compare in strength?
 classification:
@@ -26,8 +27,7 @@ Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, let $1\leq p<\infty$, and let
 :::
 
 ::: {.example}
-Without $\mu(X)<\infty$, uniform convergence does not imply $L^1$ convergence: $\frac1n\chi_{[0,n]}\to 0$ uniformly on $\RR$ with $\int_\RR\frac1n\chi_{[0,n]} = 1$ ([[FE-3RPMC]]).
-Almost everywhere convergence does not imply $L^1$ convergence: $n\chi_{[0,1/n]}\to 0$ almost everywhere on $\RR$ with integral $1$ ([[FE-VT5N3]]).
+Without $\mu(X)<\infty$, uniform convergence does not imply $L^1$ convergence: $\frac1n\chi_{[0,n]}\to 0$ uniformly on $\RR$ with $\int_\RR\frac1n\chi_{[0,n]} = 1$ ([[FE-3RPMC]]). Almost everywhere convergence does not imply $L^1$ convergence: $n\chi_{[0,1/n]}\to 0$ almost everywhere on $\RR$ with integral $1$ ([[FE-VT5N3]]).
 :::
 
 ::: {.example}
