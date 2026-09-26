@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-F2ZZQ
 kind: corollary
 title: Identity principle
+slogan: 'Holomorphic functions that agree on a set with an interior limit point agree everywhere on the connected domain.'
 classification:
   areas:
   - complex-analysis
