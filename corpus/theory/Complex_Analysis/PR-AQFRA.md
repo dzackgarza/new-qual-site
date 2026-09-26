@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-AQFRA
 kind: proposition
 title: Upper half-plane to sectors and back
+slogan: 'Power maps multiply arguments, giving biholomorphisms between the upper half-plane and sectors.'
 classification:
   areas:
   - complex-analysis
