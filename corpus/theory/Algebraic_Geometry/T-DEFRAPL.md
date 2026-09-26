@@ -49,5 +49,5 @@ Kernels are limits and cokernels are colimits, so for the adjunction with $\wait
 which is left exactness of $\Hom_A(N,\wait)$.
 Symmetrically, $\wait \tensor_A N$ preserves the cokernel and is therefore right exact.
 
-This is the reason to remember which adjoint is which for every pair on this exam: $\pi^{-1}$ and $\pi^*$ are left adjoints and hence right exact, while $\pi_*$ is a right adjoint and hence only left exact --- and that one-sidedness of $\pi_*$ is precisely what higher direct images measure.
+For sheaves, $\pi^{-1}$ and $\pi^*$ are left adjoints and hence right exact, while $\pi_*$ is a right adjoint and hence left exact; the failure of exactness of $\pi_*$ is measured by its higher direct images.
 :::
