@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LKT0U
 kind: theorem
 title: Riemann--Hurwitz
+slogan: 'Riemann--Hurwitz is genus bookkeeping: pull back the canonical degree by $n$, then add ramification, $2g_X-2=n(2g_Y-2)+\deg R$.'
 classification:
   areas:
   - algebraic-geometry
