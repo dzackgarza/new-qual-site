@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-2R7PC
 kind: theorem
 title: Taylor remainders in Lagrange, Cauchy, and integral form
+slogan: 'Taylor error is controlled by the $n$th derivative, pointwise in Lagrange/Cauchy form and by an integral when $f^{(n)}$ is continuous.'
 classification:
   areas:
   - real-analysis
