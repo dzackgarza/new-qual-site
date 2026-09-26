@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-IIKSW
 kind: theorem
 title: Approximation of measurable sets by open, closed, and compact sets
+slogan: 'Measurable sets are arbitrarily close in measure to open supersets and closed subsets, and finite-measure ones to compact subsets.'
 classification:
   areas:
   - real-analysis
