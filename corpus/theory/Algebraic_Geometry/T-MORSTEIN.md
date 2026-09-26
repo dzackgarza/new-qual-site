@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORSTEIN
 kind: theorem
 title: Stein factorisation
+slogan: 'A proper morphism factors into a connected-fibre contraction followed by a finite morphism.'
 classification:
   areas:
   - algebraic-geometry
