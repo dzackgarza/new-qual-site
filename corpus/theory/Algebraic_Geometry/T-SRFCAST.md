@@ -35,6 +35,5 @@ Since each contraction raises $K^2$ by one and $\rho$ drops by one, the process 
 
 By adjunction, $E \cong \PP^1$ with $E^2 = -1$ is equivalent to $E^2 = -1$ and $K \cdot E = -1$, which is the form the criterion is usually applied in.
 
-A surface can have infinitely many $(-1)$-curves: the blowup of $\PP^2$ at $9$ points in general position, in the sense that no three of the points are collinear after any finite sequence of quadratic transformations centred at three of them, has infinitely many ([[P-AGH5415GENPOSITION]], part (e)), while for $r = 7$ and $r = 8$ points in general position there are exactly $56$ and $240$ (part (d)).
-The minimal model is then not unique in general — for rational surfaces one can reach both $\PP^2$ and the Hirzebruch surfaces — which is exactly the dimension-two failure that makes the classification of rational and ruled surfaces a separate theorem.
+A surface can have infinitely many $(-1)$-curves: the blowup of $\PP^2$ at $9$ points in general position, in the sense that no three of the points are collinear after any finite sequence of quadratic transformations centred at three of them, has infinitely many ([[P-AGH5415GENPOSITION]], part (e)), while for $r = 7$ and $r = 8$ points in general position there are exactly $56$ and $240$ (part (d)). The minimal model is then not unique in general — for rational surfaces one can reach both $\PP^2$ and the Hirzebruch surfaces — which is exactly the dimension-two failure that makes the classification of rational and ruled surfaces a separate theorem.
 :::

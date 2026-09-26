@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-U5QSY
 kind: theorem
 title: The Jacobian, Abel's theorem, and the Abel--Jacobi map
+slogan: 'The Jacobian geometrizes degree-zero divisors: Abel kills exactly the principal ones, and Jacobi inversion reaches every divisor class.'
 classification:
   areas:
   - algebraic-geometry
