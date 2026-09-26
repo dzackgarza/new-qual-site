@@ -9,15 +9,14 @@ topics:
 
 # Positivity
 
-Ampleness is the property that makes a variety projective and makes cohomology vanish, and the exam question is usually to state the definitions cleanly and then decide a case.
+Ampleness links projective embeddings, eventual global generation, and vanishing of higher cohomology.
 
 [[D-DIVAMPLE]]
 
 [[T-DIVSERRE]]
 
-Keep the two definitions of ample separate when answering.
-The geometric one says some power embeds; the cohomological one says twisting enough by it kills higher cohomology of any coherent sheaf.
-They agree on a proper scheme, and the second is the one every proof actually uses.
+The geometric criterion says that a positive tensor power gives an embedding; the cohomological criterion says that sufficiently high twists kill higher cohomology of any coherent sheaf.
+They agree on a proper scheme.
 
 [[PR-DIVAMPCURVE]]
 
