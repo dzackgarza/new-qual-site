@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-YQZI3
 kind: proposition
 title: Meromorphic continuation of $\Gamma$
+slogan: 'The recurrence $\Gamma(s+1)=s\Gamma(s)$ continues $\Gamma$ meromorphically across the plane, creating simple poles at the nonpositive integers.'
 classification:
   areas:
   - complex-analysis
