@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-W4FFF
 kind: fact
 title: Cross-ratio map
+slogan: 'The cross-ratio normalizes three marked points to $1$, $0$, and $\infty$.'
 prompts:
 - What is the cross-ratio map, and where does it send $z_2, z_3, z_4$?
 classification:
