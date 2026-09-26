@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-VR4UT
 kind: fact
 title: $\sinh(x+iy)$ in terms of real and imaginary parts
+slogan: '$\sinh(x+iy)$ splits as $\sinh x\cos y+i\cosh x\sin y$.'
 prompts:
 - What is the angle addition formula for $\sinh(x+iy)$?
 classification:
