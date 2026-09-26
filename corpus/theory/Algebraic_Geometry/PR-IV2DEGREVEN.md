@@ -37,7 +37,7 @@ a difference of two even integers.
 
 ::: {.remark title="What it is for"}
 The proof is Riemann--Hurwitz with the terms moved, so the content is not the derivation but the parity constraint it hands back, which is a free consistency check on any ramification count.
-A proposed branching pattern with $\deg R$ odd is wrong before any geometry is examined, and that is the fastest way to catch an arithmetic slip under exam conditions.
+A branching pattern with odd $\deg R$ is impossible, so parity gives an immediate consistency check on ramification counts.
 
 Used forward with tame simple ramification, where every $e_p = 2$ and $\deg R$ counts the branch points, it says such a cover has an even number of branch points.
 This is the reason a degree-$2$ cover of $\PP^1$ is branched at $2g+2$ points rather than an arbitrary number, and the reason the Legendre normal form of an elliptic curve has exactly four branch points and not three.
