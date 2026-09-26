@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULSEP
 kind: proposition
 title: Separation for convex polyhedral cones, and the double dual
+slogan: 'A point outside a polyhedral cone is detected by a negative dual pairing; that separation is exactly why double duality returns the cone.'
 classification:
   areas:
   - algebraic-geometry
