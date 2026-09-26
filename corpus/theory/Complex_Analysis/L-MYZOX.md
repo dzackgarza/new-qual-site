@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-MYZOX
 kind: lemma
 title: Abel's test for power series on the unit circle
+slogan: 'Monotone coefficients tending to zero force convergence at every boundary point except $1$.'
 classification:
   areas:
   - complex-analysis
