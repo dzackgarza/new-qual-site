@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QZEJM
 kind: proposition
 title: Jordan's lemma
+slogan: 'On an upper semicircle, $e^{iaz}$ supplies exponential decay, bounding the arc integral by $\pi M_R/a$.'
 classification:
   areas:
   - complex-analysis
