@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-Y36BS
 kind: proposition
 title: Linear approximation criterion for complex differentiability, and continuity
+slogan: 'Complex differentiability is exactly a first-order complex-linear approximation with error $o(h)$.'
 classification:
   areas:
   - complex-analysis
