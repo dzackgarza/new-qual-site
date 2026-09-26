@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RJ3P7
 kind: proposition
 title: Going up and going down, read on spectra
+slogan: 'Integral extensions lift ascending prime chains; integrally closed-domain or flat hypotheses also lift descending chains.'
 classification:
   areas:
   - algebraic-geometry
@@ -23,6 +24,7 @@ prompts:
 Let $\phi: A \to B$ be a ring map with $B$ integral over $\phi(A)$, and $f: \Spec B \to \Spec A$ the induced map, $f(\mfq) = \phi^{-1}(\mfq)$.
 
 - (Lying over) If $\phi$ is injective, then for every prime $\mfp \subseteq A$ there is a prime $\mfq \subseteq B$ with $\phi^{-1}(\mfq) = \mfp$; so $f$ is surjective.
+
 - (Going up) If $\mfp_1 \subseteq \cdots \subseteq \mfp_n$ is a chain of primes of $A$ and $\mfq_1 \subseteq \cdots \subseteq \mfq_m$, $m < n$, is a chain of primes of $B$ with $\phi^{-1}(\mfq_i) = \mfp_i$, then it extends to a chain $\mfq_1 \subseteq \cdots \subseteq \mfq_n$ with $\phi^{-1}(\mfq_i) = \mfp_i$ for all $i$.
 
 In particular $f$ is a closed map.
