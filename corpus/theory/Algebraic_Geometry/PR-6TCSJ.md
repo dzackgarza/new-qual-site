@@ -38,7 +38,7 @@ An irreducible scheme has a unique **generic point**, dense in it; for $\Spec A$
 :::
 
 ::: {.remark}
-"Integral is reduced plus irreducible" is the one relation among these worth being able to prove on the spot, and it is immediate from the table: no nilpotents plus a prime nilradical means $(0)$ is prime.
+"Integral is reduced plus irreducible" follows immediately from the table: no nilpotents plus a prime nilradical means $(0)$ is prime.
 
 Generic points are the visible difference from the classical picture, and the useful slogan is that a statement holds generically exactly when it holds at the generic point.
 The function field of an integral scheme is the residue field there, which is how $k(X)$ becomes an object rather than a construction.
