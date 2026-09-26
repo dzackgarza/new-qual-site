@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-D2F15
 kind: proposition
 title: Smoothness and resolution, read off the fan
+slogan: 'For toric varieties, smoothness is a lattice-basis condition and resolution is subdivision of the fan.'
 classification:
   areas:
   - algebraic-geometry
