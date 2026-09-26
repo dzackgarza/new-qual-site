@@ -45,7 +45,7 @@ Consequently every birational map of smooth projective surfaces is a finite sequ
 :::
 
 ::: {.remark}
-The version to state first is the connectedness one, because that is the theorem; the surface statement is what it is used for.
+The connectedness theorem supplies the fibre structure used in the surface factorization statement.
 A birational morphism of smooth surfaces is an isomorphism away from finitely many points, and at each such point the fibre is connected of dimension one — so it is a curve that gets contracted, and contraction of a curve to a smooth point is a blowup.
 
 Fundamental points are the points where the inverse map fails to be defined: the map is a morphism on a largest open $U$, and $X \setminus U$ is that finite set.
