@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-6WOTK
 kind: proposition
 title: Strict maximum principle, real version
+slogan: 'A real harmonic function attaining an interior maximum on a connected domain is constant.'
 classification:
   areas:
   - complex-analysis
