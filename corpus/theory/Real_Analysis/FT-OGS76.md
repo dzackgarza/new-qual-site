@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-OGS76
 kind: theorem
 title: Egorov's theorem
+slogan: 'On a finite-measure set, almost-everywhere convergence becomes uniform after discarding arbitrarily little measure.'
 prompts:
 - State Egorov's theorem.
 classification:
