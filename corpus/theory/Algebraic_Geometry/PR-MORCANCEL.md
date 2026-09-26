@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MORCANCEL
 kind: proposition
 title: The cancellation theorem for properties of morphisms
+slogan: "A base-change-stable compositional property cancels through a morphism once that morphism's diagonal has the property."
 classification:
   areas:
   - algebraic-geometry
@@ -24,8 +25,7 @@ prompts:
 ---
 
 ::: {.proposition title="Cancellation"}
-Let $P$ be a class of morphisms of schemes stable under base change and composition ([[D-MORLOCAL]]).
-Let $\pi \colon X \to Y$ and $\rho \colon Y \to Z$ be morphisms and $\tau = \rho \circ \pi$.
+Let $P$ be a class of morphisms of schemes stable under base change and composition ([[D-MORLOCAL]]). Let $\pi \colon X \to Y$ and $\rho \colon Y \to Z$ be morphisms and $\tau = \rho \circ \pi$.
 If $\tau \in P$ and the diagonal $\delta_\rho \colon Y \to Y \times_Z Y$ is in $P$, then $\pi \in P$.
 :::
 
