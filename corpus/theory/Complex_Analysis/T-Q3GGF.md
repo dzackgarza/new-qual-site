@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-Q3GGF
 kind: theorem
 title: Schwarz reflection principle
+slogan: 'Real boundary values let a holomorphic function reflect across the real axis by complex conjugation.'
 classification:
   areas:
   - complex-analysis
