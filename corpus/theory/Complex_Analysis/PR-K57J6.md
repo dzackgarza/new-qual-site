@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-K57J6
 kind: proposition
 title: Holomorphic functions have harmonic components
+slogan: 'Holomorphicity couples real and imaginary parts by Cauchy--Riemann, forcing both to be harmonic.'
 classification:
   areas:
   - complex-analysis
