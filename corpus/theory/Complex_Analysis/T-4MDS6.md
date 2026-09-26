@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4MDS6
 kind: theorem
 title: Riemann mapping theorem
+slogan: 'Every proper simply connected plane domain is uniquely normalized to the unit disc by fixing one point and a positive derivative.'
 classification:
   areas:
   - complex-analysis
