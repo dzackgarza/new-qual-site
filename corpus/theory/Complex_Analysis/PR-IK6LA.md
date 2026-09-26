@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IK6LA
 kind: proposition
 title: Disc complement to slit plane
+slogan: 'The Joukowski map $z+z^{-1}$ sends the exterior unit disc biholomorphically onto the plane slit along $[-2,2]$.'
 classification:
   areas:
   - complex-analysis
