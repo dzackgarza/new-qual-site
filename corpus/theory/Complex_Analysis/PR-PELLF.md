@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PELLF
 kind: proposition
 title: Logarithm from the upper half-disc to a half-strip
+slogan: 'The principal logarithm sends the upper half-disc to the half-strip $\Re w<0$, $0<\Im w<\pi$.'
 classification:
   areas:
   - complex-analysis
