@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DEFNAKA
 kind: theorem
 title: Nakayama's lemma, in its several forms
+slogan: 'For finite modules, generators lift modulo the Jacobson radical; locally, minimal generators are a basis of $M/\mm M$.'
 classification:
   areas:
   - algebraic-geometry
