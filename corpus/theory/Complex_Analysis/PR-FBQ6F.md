@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FBQ6F
 kind: proposition
 title: Functional equation for $\Gamma$
+slogan: '$\Gamma$ interpolates factorials because $\Gamma(s+1)=s\Gamma(s)$ and $\Gamma(1)=1$.'
 classification:
   areas:
   - complex-analysis
