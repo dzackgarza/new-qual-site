@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHAFF
 kind: theorem
 title: Higher cohomology vanishes on an affine scheme
+slogan: 'Quasicoherent cohomology on an affine scheme lives in degree $0$; higher cohomology is gluing data between affine pieces.'
 classification:
   areas:
   - algebraic-geometry
