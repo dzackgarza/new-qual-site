@@ -39,7 +39,7 @@ $\FF_0 = \PP^1 \times \PP^1$ is the quadric surface, $\FF_1 = \Bl_1 \PP^2$, and 
 
 Inserting a ray between two adjacent rays raises $\rank\Pic$ by one, raises $\chi$ by one, creates a $-1$-curve, and drops the self-intersection of each neighbour by one.
 Contracting reverses all four.
-An examiner asking for a surface with prescribed intersection numbers is asking for a sequence of insertions.
+Prescribed boundary self-intersection data can therefore be studied through sequences of ray insertions and contractions.
 
 ## Beyond surfaces
 
