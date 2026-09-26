@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DIVAMPCURVE
 kind: proposition
 title: Ampleness of a divisor on a curve
+slogan: 'On a smooth projective curve, positive degree is ample, degree $2g$ kills base points, and degree $2g+1$ is very ample.'
 classification:
   areas:
   - algebraic-geometry
