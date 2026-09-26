@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-HRPNO
 kind: theorem
 title: Residue theorem
+slogan: 'A contour integral is the winding-number-weighted sum of the residues it encloses.'
 classification:
   areas:
   - complex-analysis
