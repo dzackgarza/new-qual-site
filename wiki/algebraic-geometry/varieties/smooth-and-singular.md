@@ -9,12 +9,12 @@ topics:
 
 # Smooth and singular
 
-Two criteria, and they are asked for as a pair.
+Smoothness has complementary extrinsic and intrinsic criteria.
 
 [[D-0SYCY]]
 
-The rank computation is what one does to a presented variety; regularity of the local ring is what one says when the variety is not presented, and it is the definition that survives to schemes.
-Over a perfect field they agree, and the question about curves over perfect fields is asking exactly for that.
+The Jacobian rank condition is computational for a presented variety, while regularity of the local ring is intrinsic and extends to schemes.
+Over a perfect field the two criteria agree.
 
 ## Smooth hyperplane sections
 
