@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-YJXMF
 kind: fact
 title: The uniform boundedness principle
+slogan: 'Pointwise bounded families of operators on a Banach space are uniformly bounded in operator norm.'
 prompts:
 - What is the uniform boundedness principle?
 classification:
