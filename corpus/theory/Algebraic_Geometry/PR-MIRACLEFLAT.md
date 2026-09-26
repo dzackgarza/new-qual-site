@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MIRACLEFLAT
 kind: proposition
 title: Finite morphisms of smooth varieties of equal dimension are flat
+slogan: 'Finite plus Cohen--Macaulay source, smooth target, and equal dimension forces flatness.'
 classification:
   areas:
   - algebraic-geometry
