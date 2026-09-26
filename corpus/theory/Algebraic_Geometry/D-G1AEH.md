@@ -56,7 +56,7 @@ A plane curve of degree $d$ has $p_a = \binom{d-1}{2}$ regardless of its singula
 
 Neither number depends on the embedding.
 $p_a$ is $1 - \chi(\OO_C)$, an invariant of the abstract curve, and $p_g$ is computed on the normalization.
-What *does* depend on the embedding is the degree, and that contrast — same curve, different degrees, one genus — is what the follow-up about embeddings is testing.
+The degree depends on the embedding, whereas both arithmetic and geometric genus are invariants of the abstract curve.
 For a nonsingular projective complex curve, both genera equal half its first Betti number, by the Hodge decomposition and Serre duality [@Har10a, Appendix B and Exercise III.5.3].
 For a singular complex curve, the topological genus of its smooth model computes $p_g(C)$, not in general $p_a(C)$; the nodal cubic just described has smooth model $\PP^1$, of genus zero, but arithmetic genus one.
 :::
