@@ -33,6 +33,6 @@ The dense open here is not proper, and it need not be: the point is that on a no
 :::
 
 ::: {.remark}
-The two examples separate the two hypotheses, which is what the follow-up asks for.
-The doubled line is also the standard example of a scheme that is not a variety in the classical sense while being perfectly good as a scheme, and it is where "why is separatedness in the definition of a variety" gets its answer.
+The two examples separate the roles of separatedness and reducedness.
+The doubled line is also a standard example of a scheme that is not a classical variety, showing why separatedness is imposed in the scheme-theoretic definition of a variety.
 :::
