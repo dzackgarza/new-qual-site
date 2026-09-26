@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5K3IO
 kind: theorem
 title: Monotone convergence theorem
+slogan: 'Increasing nonnegative functions may pass their limit through the integral.'
 classification:
   areas:
   - real-analysis
