@@ -30,9 +30,9 @@ The result is $\PP^n\slice k$, and its global sections are $k$, so it is not aff
 :::
 
 ::: {.remark}
-Gluing is the only construction that makes new schemes out of old, and the examiner asks for it to see whether you can produce a non-affine scheme by hand.
-The cocycle condition is exactly what a sheaf needs on triple overlaps; skipping it is the standard error.
+Gluing constructs schemes from compatible open pieces and produces non-affine schemes from affine charts.
+The cocycle condition is exactly the compatibility required on triple overlaps.
 
-The same data with a *different* gluing produces the pathology, so volunteer both: glue two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity and you get the line with a doubled origin, glue by $t \mapsto t\inv$ and you get $\PP^1$.
+The same charts with different transition maps produce different schemes: gluing two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity gives the line with a doubled origin, while gluing by $t \mapsto t\inv$ gives $\PP^1$.
 The difference is that the second gluing identifies the two extra points and the first does not.
 :::
