@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-YO7MV
 kind: proposition
 title: Markov and Chebyshev inequalities
+slogan: 'Large-value sets are controlled by moments: $\mu\{|f|>\alpha\}\leq \alpha^{-p}\norm{f}_p^p$.'
 classification:
   areas:
   - real-analysis
