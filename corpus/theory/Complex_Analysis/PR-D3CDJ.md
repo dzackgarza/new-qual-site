@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-D3CDJ
 kind: proposition
 title: Residue at infinity
+slogan: 'The residue at infinity is minus the $z^{-1}$ coefficient, equivalently the residue at $0$ after inversion.'
 classification:
   areas:
   - complex-analysis
