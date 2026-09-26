@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TNVSI
 kind: proposition
 title: Irreducible decomposition in a Noetherian space
+slogan: 'Noetherian closed sets split into finitely many maximal irreducible pieces, uniquely; algebraically these are the minimal primes.'
 classification:
   areas:
   - algebraic-geometry
