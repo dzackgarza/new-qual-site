@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DIVSERRE
 kind: theorem
 title: Serre's criterion for ampleness
+slogan: 'Ample means eventual positivity: high twists globally generate every coherent sheaf, and on proper schemes they kill all higher cohomology.'
 classification:
   areas:
   - algebraic-geometry
