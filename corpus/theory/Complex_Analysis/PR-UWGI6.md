@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-UWGI6
 kind: proposition
 title: Mean value property for harmonic functions
+slogan: 'A harmonic function equals both its circular average and its disc average at the center.'
 classification:
   areas:
   - complex-analysis
