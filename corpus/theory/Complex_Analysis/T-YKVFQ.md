@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-YKVFQ
 kind: theorem
 title: Bolzano--Weierstrass theorem
+slogan: 'In Euclidean space, closed and bounded is exactly sequential compactness.'
 classification:
   areas:
   - complex-analysis
