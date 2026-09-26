@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-2OHYV
 kind: fact
 title: Rational parametrization of the unit circle
+slogan: 'The unit circle minus $-1$ is rationally parametrized by $(1+ix)/(1-ix)$, equivalently $e^{2i\arctan x}$.'
 prompts:
 - What is the standard rational parameterization of the circle in $\CC$?
 classification:
