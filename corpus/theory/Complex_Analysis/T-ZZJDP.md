@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ZZJDP
 kind: theorem
 title: Riemann's removable singularity theorem
+slogan: 'Removability is exactly the absence of a principal part, equivalently boundedness or holomorphic extension across the point.'
 classification:
   areas:
   - complex-analysis
