@@ -9,13 +9,13 @@ topics:
 
 # The fan dictionary
 
-Toric geometry earns a place on a revision list for one reason: it is the corner of the subject where every question above becomes a finite computation with lattice points, so it is the fastest source of an example when an examiner asks for one.
+Toric geometry converts many geometric questions into finite computations with cones, fans, and lattice points.
 
 [[D-Q7Q2N]]
 
 ## The convex geometry underneath
 
-The dual cone is the hinge of the whole construction, so the three facts that make it behave are worth stating before anything is computed with it.
+The dual cone is central to the construction; the following three facts control how generator and inequality descriptions pass between a cone and its dual.
 
 [[PR-FULSEP]]
 
@@ -41,7 +41,7 @@ Everything later in the chapter uses one of the three without saying so: the dua
 The orbit-cone correspondence lists the orbits; the star fan identifies each closure as a toric variety in its own right.
 That is what makes induction on dimension available: a statement about $X_\Sigma$ can be tested on the boundary divisors $D_\rho = X_{\Star(\rho)}$, which are toric varieties one dimension down.
 
-## What to reach for, and when
+## Standard examples from fans
 
 | Asked for | Fan that supplies it |
 | --- | --- |
@@ -51,7 +51,6 @@ That is what makes induction on dimension available: a statement about $X_\Sigma
 | a resolution, explicitly | subdivide by inserting the missing lattice rays |
 | a proper variety that is not projective | a complete fan that admits no strictly convex support function |
 
-Every entry is checked by a computation on a two-dimensional picture, which is why the answers arrive faster from here than from anywhere else in the tree.
+Each entry is checked by a computation on a two-dimensional fan.
 
-The cost is that the dictionary only covers toric varieties, and an examiner who wants a general argument will not accept a fan.
-Use it to *find* the example, then state the example in the language the question was asked in.
+The dictionary applies only to toric varieties; a statement about general varieties requires an argument beyond the fan combinatorics.
