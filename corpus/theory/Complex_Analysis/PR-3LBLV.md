@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-3LBLV
 kind: proposition
 title: Centered vertical half-strip to upper half-plane by $\sin$
+slogan: 'On the centered vertical half-strip, $\sin$ is a biholomorphism onto the upper half-plane.'
 classification:
   areas:
   - complex-analysis
