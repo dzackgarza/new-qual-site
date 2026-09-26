@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DDOWW
 kind: theorem
 title: Picard's big theorem
+slogan: 'An essential singularity cannot omit three spherical values: omitting three forces meromorphic extension.'
 classification:
   areas:
   - complex-analysis
