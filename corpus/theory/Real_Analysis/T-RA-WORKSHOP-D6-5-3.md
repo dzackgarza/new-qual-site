@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-3
 kind: theorem
 title: Reduction of a Stieltjes integral to a Riemann integral
+slogan: 'When the integrator has an integrable derivative, $d\alpha$ becomes the weight $\alpha''(x)\,dx$.'
 classification:
   areas:
   - real-analysis
