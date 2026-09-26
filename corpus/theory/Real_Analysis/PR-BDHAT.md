@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-BDHAT
 kind: proposition
 title: Uniformly continuous $L^1$ functions vanish at infinity
+slogan: 'Uniform continuity prevents an $L^1$ function from keeping positive-sized bumps at infinity.'
 classification:
   areas:
   - real-analysis
