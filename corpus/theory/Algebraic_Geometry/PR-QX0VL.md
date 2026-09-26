@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QX0VL
 kind: proposition
 title: Two morphisms agreeing on a dense open agree
+slogan: 'Separatedness closes the agreement locus, and reducedness turns dense agreement into equality of morphisms.'
 classification:
   areas:
   - algebraic-geometry
