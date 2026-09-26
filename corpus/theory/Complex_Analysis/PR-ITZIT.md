@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ITZIT
 kind: proposition
 title: Factorization of zeros out of holomorphic functions
+slogan: 'Every zero of a nonzero holomorphic function factors as a finite power times a nonvanishing holomorphic unit.'
 classification:
   areas:
   - complex-analysis
