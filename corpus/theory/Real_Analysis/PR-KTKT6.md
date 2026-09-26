@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-KTKT6
 kind: proposition
 title: Approximation of measurable functions by simple functions
+slogan: 'Measurable functions admit pointwise simple approximants, uniformly on every region where the function is bounded.'
 classification:
   areas:
   - real-analysis
@@ -15,6 +16,5 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $(X,\mcm)$ be a measurable space and let $f\colon X\to\CC$ be [[D-DHFN4|measurable]].
-There is a sequence $(\phi_n)$ of simple functions such that $0\leq\abs{\phi_1}\leq\abs{\phi_2}\leq\cdots\leq\abs{f}$, $\phi_n\to f$ pointwise on $X$, and $\phi_n\to f$ uniformly on every set on which $f$ is bounded [@Fol13].
+Let $(X,\mcm)$ be a measurable space and let $f\colon X\to\CC$ be [[D-DHFN4|measurable]]. There is a sequence $(\phi_n)$ of simple functions such that $0\leq\abs{\phi_1}\leq\abs{\phi_2}\leq\cdots\leq\abs{f}$, $\phi_n\to f$ pointwise on $X$, and $\phi_n\to f$ uniformly on every set on which $f$ is bounded [@Fol13].
 :::
