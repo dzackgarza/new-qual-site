@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFNAKAI
 kind: theorem
 title: The Nakai--Moishezon criterion on a surface
+slogan: 'On a smooth projective surface, ampleness is exactly positivity in both dimensions: $D^2>0$ and $D\cdot C>0$ for every irreducible curve.'
 classification:
   areas:
   - algebraic-geometry
