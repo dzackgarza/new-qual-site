@@ -16,7 +16,7 @@ The answer is unusually clean for curves: inseparability is Frobenius and nothin
 
 [[D-IV2FROBTWIST]]
 
-The point that gets dropped is that raising to the $p$-th power is not a morphism of $k$-schemes unless $k = \FF_p$, and the twist is the minimal repair.
+Raising to the $p$-th power is not a morphism of $k$-schemes unless Frobenius acts trivially on $k$; the Frobenius twist modifies the source structure morphism so that the relative Frobenius is $k$-linear.
 After it, Frobenius is a finite morphism of degree $p$ and the field extension it induces is $k(X) \subseteq k(X)^{1/p}$, which is where the degree comes from.
 
 [[PR-IV2INSEP]]
@@ -33,4 +33,4 @@ The genus inequality needs both pages — Riemann--Hurwitz across the separable 
 
 Restated as geometry, Lüroth says unirational implies rational in dimension $1$.
 Whether that survives in higher dimension is the Lüroth problem: yes for surfaces in characteristic $0$, no for surfaces in characteristic $p$, and no for threefolds over any field.
-The counterexamples and their birational invariants are on the card, and naming one invariant is what separates an answer from a recollection.
+The higher-dimensional counterexamples are distinguished by explicit birational invariants recorded on the linked card.
