@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-XZGIY
 kind: fact
 title: Arzelà--Ascoli theorem
+slogan: 'On a compact domain, uniform boundedness plus equicontinuity gives compactness in the sup norm.'
 prompts:
 - What is the Arzela-Ascoli theorem?
 - State the Arzela-Ascoli theorem.
