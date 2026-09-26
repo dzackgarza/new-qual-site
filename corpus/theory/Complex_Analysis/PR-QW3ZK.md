@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-QW3ZK
 kind: proposition
 title: Strict maximum principle for complex-valued harmonic functions
+slogan: 'A bounded complex-valued harmonic function that attains its maximum modulus inside is constant.'
 classification:
   areas:
   - complex-analysis
