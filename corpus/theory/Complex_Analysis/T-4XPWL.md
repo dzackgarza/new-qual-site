@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4XPWL
 kind: theorem
 title: Laurent expansion on an annulus
+slogan: 'Holomorphic on an annulus means a unique two-sided power series there; the negative tail records the isolated singularity.'
 classification:
   areas:
   - complex-analysis
