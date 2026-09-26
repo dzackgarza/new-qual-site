@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DEFADJPR
 kind: proposition
 title: The standard adjoint pairs
+slogan: 'Adjunction predicts exactness: left adjoints are right exact, right adjoints are left exact, and open restriction is both, hence exact.'
 classification:
   areas:
   - algebraic-geometry
