@@ -26,6 +26,6 @@ The threshold in "$n\gg0$" depends on the coherent sheaf; in general there is no
 [[T-COHFLATCHI]]
 
 Individual cohomology dimensions are unstable and their alternating sum is not, which is the organising fact of the whole chapter.
-The Hilbert polynomial as a graded-ring construction lives in [[algebraic-geometry/varieties/dimension-and-degree|dimension and degree]]; the content here is that it equals $\chi(\mcf(n))$, and that this identification is what makes flatness and constancy of numerical invariants the same condition.
+The Hilbert polynomial as a graded-ring construction lives in [[algebraic-geometry/varieties/dimension-and-degree|dimension and degree]]; for a coherent sheaf $\mcf$ it equals $\chi(\mcf(n))$ for $n\gg0$, and in a flat projective family this polynomial is locally constant on the base.
 
 Flatness, from [[algebraic-geometry/morphisms/finite-and-flat|finite and flat]], is then not a technical hypothesis but a definition of "family" chosen so that the Euler characteristic is constant.
