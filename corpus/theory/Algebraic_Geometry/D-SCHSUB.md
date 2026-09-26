@@ -51,7 +51,7 @@ for every invertible sheaf $\mcl$.
 ::: {.remark}
 The asymmetry is the content: an open subset carries a *unique* scheme structure, and a closed subset carries *many*. $V(x)$ and $V(x^2)$ in $\AA^1$ are the same closed set and different closed subschemes, and the distinction is the whole reason the definition is phrased with an ideal sheaf rather than a subset.
 
-The follow-up is why surjectivity is demanded on sheaves rather than on sections: it is a condition on stalks, and $\OO_X(X) \to \OO_Z(Z)$ can fail to be surjective even for a closed immersion once $X$ is not affine.
+Surjectivity is imposed on sheaves rather than global sections because it is stalk-local; $\OO_X(X) \to \OO_Z(Z)$ can fail to be surjective for a closed immersion when $X$ is not affine.
 
 Neither notion is closed under the other's operation: a closed subscheme of an open subscheme is a **locally closed subscheme**, which is what "immersion" without a qualifier means.
 :::
