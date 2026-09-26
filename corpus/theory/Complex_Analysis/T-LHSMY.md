@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LHSMY
 kind: theorem
 title: Morera's theorem
+slogan: 'Continuous plus zero integral around every triangle forces holomorphicity.'
 classification:
   areas:
   - complex-analysis
