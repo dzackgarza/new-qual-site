@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5JNUU
 kind: theorem
 title: Rouché's theorem
+slogan: 'A smaller boundary perturbation cannot change the winding number, so it preserves zeros minus poles inside.'
 classification:
   areas:
   - complex-analysis
