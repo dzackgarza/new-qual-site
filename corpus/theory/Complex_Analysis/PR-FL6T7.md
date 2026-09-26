@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FL6T7
 kind: proposition
 title: Half-plane to disc
+slogan: 'The Möbius map $(i-z)/(i+z)$ sends the upper half-plane biholomorphically onto the unit disc.'
 classification:
   areas:
   - complex-analysis
