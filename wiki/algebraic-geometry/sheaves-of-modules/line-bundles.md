@@ -13,9 +13,9 @@ A locally free sheaf is a vector bundle written so that homological algebra appl
 
 [[T-MODVB]]
 
-Asked for the correspondence, give the sheaf of sections and the transition functions, and say which side each fact is easier on.
+The correspondence identifies locally free sheaves with vector bundles through sheaves of sections and transition functions.
 Kernels, cokernels, and cohomology are sheaf-side facts; fibres, ranks, and the geometry of a map are bundle-side facts.
-The dictionary is used in both directions constantly and is rarely asked about for its own sake.
+The two descriptions emphasize different constructions and invariants.
 
 ## Rank one
 
