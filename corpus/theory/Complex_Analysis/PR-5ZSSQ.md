@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-5ZSSQ
 kind: proposition
 title: Contraction mapping principle
+slogan: 'A strict contraction on a complete metric space has exactly one fixed point, found by iteration.'
 classification:
   areas:
   - complex-analysis
