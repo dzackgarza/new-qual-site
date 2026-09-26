@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-4
 kind: theorem
 title: Intermediate value theorem
+slogan: 'A continuous real function on an interval takes every value between its endpoint values.'
 classification:
   areas:
   - real-analysis
