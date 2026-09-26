@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVCMCFT
 kind: theorem
 title: For a CM curve, $j$ is an algebraic integer and $K(j)/K$ is abelian of degree $h(R)$
+slogan: 'Complex multiplication turns $j$ into a class-field generator: $K(j)/K$ has Galois group $\Pic(R)$, and $j\in\ZZ$ exactly when $h(R)=1$.'
 classification:
   areas:
   - algebraic-geometry
