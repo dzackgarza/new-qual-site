@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFCAST
 kind: theorem
 title: Castelnuovo's contractibility criterion
+slogan: 'A proper integral curve on a smooth surface contracts to a smooth point exactly when it is $\PP^1$ with self-intersection $-1$.'
 classification:
   areas:
   - algebraic-geometry
