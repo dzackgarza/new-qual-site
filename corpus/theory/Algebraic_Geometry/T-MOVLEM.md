@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MOVLEM
 kind: theorem
 title: The moving lemma
+slogan: 'Move within rational equivalence until intersections are proper; that is what makes Chow products well defined.'
 classification:
   areas:
   - algebraic-geometry
