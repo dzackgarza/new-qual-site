@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-UW3C7
 kind: fact
 title: A composition of Lebesgue measurable functions need not be measurable
+slogan: 'Lebesgue measurability is not closed under composition, even when the inner map is continuous.'
 prompts:
 - Is the composition of Lebesgue measurable functions again Lebesgue measurable?
 classification:
