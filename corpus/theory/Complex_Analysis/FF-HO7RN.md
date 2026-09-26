@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-HO7RN
 kind: fact
 title: Cauchy estimates
+slogan: 'Boundary control on a circle bounds every derivative at the center by $n!M/r^n$.'
 prompts:
 - State the Cauchy estimate for $\abs{f^{(n)}(0)}$.
 classification:
