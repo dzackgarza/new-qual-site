@@ -39,7 +39,7 @@ On a singular curve the maximal ideal sheaf at the singular point is coherent, t
 :::
 
 ::: {.remark}
-The three separations are the fastest way to show the hierarchy is strict, and they are all the examiner wants.
-Read them as: quasicoherence fails when the sheaf ignores localization, coherence fails when a fibre is infinite-dimensional or the base is non-Noetherian, local freeness fails when the fibre dimension jumps.
-The last criterion is the one to state as a test: over a reduced Noetherian scheme, a coherent sheaf is locally free exactly when $x \mapsto \dim_{\kappa(x)} \mcf \tensor \kappa(x)$ is locally constant.
+The three examples show that each implication in the hierarchy is strict.
+They separate the failure mechanisms: quasicoherence can fail through incompatibility with localization, coherence through failure of finite generation, and local freeness through varying fibre dimension.
+Over a reduced Noetherian scheme, a coherent sheaf is locally free exactly when $x \mapsto \dim_{\kappa(x)} \mcf \tensor \kappa(x)$ is locally constant.
 :::
