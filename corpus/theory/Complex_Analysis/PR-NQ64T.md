@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-NQ64T
 kind: proposition
 title: Radius of convergence by the root test
+slogan: 'The radius is the reciprocal root-growth rate: $R^{-1}=\limsup\abs{c_k}^{1/k}$.'
 classification:
   areas:
   - complex-analysis
