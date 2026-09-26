@@ -7,11 +7,8 @@ topics:
 
 # Algebraic geometry
 
-An algebraic geometry qual is usually oral, and an oral exam is a conversation with a follow-up.
-You are asked to define a scheme, and the question that matters is the next one: can the Noetherian hypothesis be weakened, is the sequence still exact, give me an example where it fails.
-
-The cards here are built for that.
-A definition card carries the probe that follows the definition; a theorem card carries the computation the theorem is wanted for; an example card is a stock of objects to reach for when an examiner asks for one.
+The guide links definitions to the hypotheses, computations, examples, and counterexamples that make those definitions usable.
+A definition card records the notion, a theorem card records a reusable consequence, and example cards supply concrete models of the phenomena under discussion.
 
 ## The topics
 
@@ -35,13 +32,12 @@ A definition card carries the probe that follows the definition; a theorem card 
 
 - [[algebraic-geometry/stacks-and-moduli/index|Stacks and moduli]], functors of points, the étale and fppf topologies, descent, Hilbert schemes, algebraic spaces and stacks.
 
-- [[algebraic-geometry/resources|Resources]], which text to reach for at which stage, and where the problems and worked solutions are.
+- [[algebraic-geometry/resources|Resources]], references, problem sources, and worked-solution collections.
 
 - [[algebraic-geometry/syllabus|Sample syllabi]], topic lists from qualifying and oral examination syllabi.
 
-## Reading it in order
+## Dependency order
 
-Varieties come first and schemes second, in the order the subject was invented and in the order it can be understood: the scheme definitions answer questions that only make sense once the classical picture is in place.
-Cohomology and curves come last because they are where the machinery is spent.
-
-If you are revising against a deadline rather than learning the subject, the useful order is the opposite: start from [[algebraic-geometry/curves-and-surfaces/index|curves]], which is where most oral questions land, and follow the links backwards when a definition is missing.
+Varieties come before schemes because the scheme definitions refine distinctions already visible in the classical picture.
+Cohomology and curves come later because they use the sheaf and scheme machinery developed in the preceding sections.
+Cross-links allow a later computation to be followed backward to any prerequisite definition or theorem it uses.
