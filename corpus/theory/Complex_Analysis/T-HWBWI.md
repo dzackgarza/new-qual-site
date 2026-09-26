@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-HWBWI
 kind: theorem
 title: Picard's little theorem
+slogan: 'A nonconstant entire function can omit at most one complex value.'
 classification:
   areas:
   - complex-analysis
