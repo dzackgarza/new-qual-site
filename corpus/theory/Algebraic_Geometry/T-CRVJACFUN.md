@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVJACFUN
 kind: theorem
 title: The Jacobian represents $\Pic^0(X/-)$, and is a smooth proper group scheme of dimension $g$
+slogan: 'The Jacobian represents degree-zero line bundles; its tangent space is $H^1(\OO_X)$, so it is a smooth proper group variety of dimension $g$.'
 classification:
   areas:
   - algebraic-geometry
