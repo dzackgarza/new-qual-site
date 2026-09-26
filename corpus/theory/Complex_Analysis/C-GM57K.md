@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-GM57K
 kind: corollary
 title: Maximum modulus principle
+slogan: 'A nonconstant holomorphic function reaches its largest modulus only on the boundary.'
 classification:
   areas:
   - complex-analysis
