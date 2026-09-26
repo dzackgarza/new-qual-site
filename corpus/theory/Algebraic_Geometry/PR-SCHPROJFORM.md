@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SCHPROJFORM
 kind: proposition
 title: The projection formula
+slogan: 'Tensor by a pulled-back finite-rank bundle upstairs, or tensor every higher direct image downstairs: the result is the same.'
 classification:
   areas:
   - algebraic-geometry
