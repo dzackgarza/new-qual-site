@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IGMH4
 kind: proposition
 title: 'Riemann--Lebesgue lemma: $\widehat f$ is bounded, continuous, and vanishes at infinity'
+slogan: 'The Fourier transform of an $L^1$ function is bounded, continuous, and decays to zero at infinity.'
 prompts:
 - State the Riemann-Lebesgue lemma.
 classification:
