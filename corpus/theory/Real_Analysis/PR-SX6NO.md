@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SX6NO
 kind: proposition
 title: Lipschitz maps are uniformly continuous
+slogan: 'A global Lipschitz bound gives one delta that works everywhere.'
 classification:
   areas:
   - real-analysis
