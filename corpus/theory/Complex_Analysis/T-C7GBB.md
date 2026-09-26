@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-C7GBB
 kind: theorem
 title: Gauss--Lucas theorem
+slogan: 'Critical points of a polynomial cannot escape the convex hull of its zeros.'
 classification:
   areas:
   - complex-analysis
