@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-2JV43
 kind: proposition
 title: Almost everywhere convergence does not imply $L^p$ convergence
+slogan: 'Almost everywhere convergence can lose mass by escape or concentration, so $L^p$ convergence need not follow.'
 classification:
   areas:
   - real-analysis
