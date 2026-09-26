@@ -25,8 +25,8 @@ Equivalently, it is enough that this holds for the opens of one affine cover of 
 :::
 
 ::: {.remark}
-That the condition can be checked on a single cover is the useful half, and it is the standard affine-communication argument.
-Every affine morphism is separated and quasicompact, which is the cheapest way to get separatedness for free.
+The condition may be checked on one affine cover by the affine-communication argument.
+Every affine morphism is separated and quasicompact.
 
 Closed immersions are affine, any morphism of affine schemes is affine, and finite morphisms are affine.
 Open immersions are not: $\AA^2 \sm \ts{0} \to \AA^2$ has non-affine source.
