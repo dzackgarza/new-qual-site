@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULKSQ
 kind: proposition
 title: K squared equals twelve minus the number of rays on a smooth complete toric surface
+slogan: 'For a smooth complete toric surface, every fan ray subtracts one from $K_X^2$: $K_X^2=12-\size\Sigma(1)$.'
 classification:
   areas:
   - algebraic-geometry
