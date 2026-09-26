@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WZGOQ
 kind: proposition
 title: Hypersurface complements are affine
+slogan: 'A hypersurface complement is affine: localize by its equation in affine space, or use Veronese to make it a hyperplane complement projectively.'
 classification:
   areas:
   - algebraic-geometry
