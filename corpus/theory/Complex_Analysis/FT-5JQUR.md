@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-5JQUR
 kind: theorem
 title: Cauchy--Goursat theorem
+slogan: 'Holomorphic functions integrate to zero around every closed curve in a simply connected domain.'
 prompts:
 - State the Cauchy-Goursat theorem.
 classification:
