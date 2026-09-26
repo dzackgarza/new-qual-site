@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-NRSFZ
 kind: theorem
 title: Holomorphic logarithm when $f'/f$ has zero periods
+slogan: 'A nonvanishing holomorphic function has a holomorphic logarithm exactly when its logarithmic derivative has no periods.'
 classification:
   areas:
   - complex-analysis
