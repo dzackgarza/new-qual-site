@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ZO5UU
 kind: theorem
 title: Jordan's lemma
+slogan: 'Choose the semicircle where $e^{i\alpha z}$ decays; the arc integral is bounded by $\pi M_R/\abs{\alpha}$.'
 classification:
   areas:
   - complex-analysis
