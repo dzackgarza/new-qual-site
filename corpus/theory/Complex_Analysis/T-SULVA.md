@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SULVA
 kind: theorem
 title: Locally uniform limits of univalent functions are univalent or constant
+slogan: 'A locally uniform limit of univalent functions can lose injectivity only by collapsing to a constant.'
 classification:
   areas:
   - complex-analysis
