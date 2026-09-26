@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QPTHZ
 kind: theorem
 title: Heine--Borel theorem
+slogan: 'In Euclidean space, compact means exactly closed and bounded.'
 classification:
   areas:
   - real-analysis
