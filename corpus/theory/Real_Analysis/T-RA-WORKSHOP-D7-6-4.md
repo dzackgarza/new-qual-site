@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-4
 kind: theorem
 title: Uniform convergence of derivatives and differentiability of the limit
+slogan: 'Uniform convergence of derivatives, plus convergence at one point, lets differentiation pass to the limit.'
 classification:
   areas:
   - real-analysis
