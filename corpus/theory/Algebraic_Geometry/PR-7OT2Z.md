@@ -69,7 +69,7 @@ Over $k = \RR$ the ideal $(x^2+1) \subseteq \RR[x]$ is maximal and is not of the
 :::
 
 ::: {.remark}
-The correspondence is what turns a geometric question into a computation in a ring, so the useful direction on an exam is usually right to left: $V(J)$ is irreducible exactly when $J$ is prime, which is a question about $k[x_1,\ldots,x_n]/J$ being a domain.
+The correspondence turns geometric properties into ring-theoretic ones: $V(J)$ is irreducible exactly when $J$ is prime, equivalently when $k[x_1,\ldots,x_n]/J$ is a domain.
 
 For a closed $X \subseteq \AA^n$ the coordinate ring is $k[X] \da k[x_1,\ldots,x_n]/I(X)$, the polynomial functions restricted to $X$, and the same dictionary reappears inside it: closed subsets of $X$ correspond to radical ideals of $k[X]$, and $X$ is irreducible exactly when $k[X]$ is a domain.
 :::
