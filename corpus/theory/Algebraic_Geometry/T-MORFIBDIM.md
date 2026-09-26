@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORFIBDIM
 kind: theorem
 title: Fibre dimension and upper semicontinuity
+slogan: 'Fibre dimensions can jump only up on special loci: the general fibre has dimension $\dim X-\dim Y$, and larger-fibre loci are closed.'
 classification:
   areas:
   - algebraic-geometry
