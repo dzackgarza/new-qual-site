@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-3
 kind: theorem
 title: Continuous functions on compact sets are uniformly continuous
+slogan: 'Compactness upgrades continuity to uniform continuity.'
 classification:
   areas:
   - real-analysis
