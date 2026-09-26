@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-VM6MJ
 kind: theorem
 title: Schwarz lemma as a dichotomy
+slogan: 'A disk self-map fixing $0$ is either a rotation or strictly contracts every nonzero radius.'
 classification:
   areas:
   - complex-analysis
