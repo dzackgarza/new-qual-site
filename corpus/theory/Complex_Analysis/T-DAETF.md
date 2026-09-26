@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DAETF
 kind: theorem
 title: Schwarz lemma
+slogan: 'A disk self-map fixing $0$ cannot expand distance from $0$; equality forces a rotation.'
 classification:
   areas:
   - complex-analysis
