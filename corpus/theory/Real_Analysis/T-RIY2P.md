@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RIY2P
 kind: theorem
 title: Small tails of $L^1(\RR^d)$ functions
+slogan: 'An $L^1$ function carries arbitrarily little mass outside a sufficiently large ball.'
 classification:
   areas:
   - real-analysis
