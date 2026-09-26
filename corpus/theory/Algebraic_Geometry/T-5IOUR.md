@@ -36,7 +36,7 @@ The following are equivalent:
 [@Har10a, Theorem III.3.7]
 :::
 
-::: {.remark title="The two follow-ups"}
+::: {.remark title="Scope of the hypotheses"}
 *Weakening Noetherian.* The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideals rather than coherent ones.
 Noetherian is used only to have coherent ideals available and to extract finite subcovers, and both can be arranged directly.
 
