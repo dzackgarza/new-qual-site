@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CRVDEGBD
 kind: proposition
 title: The degree thresholds $2g$ and $2g+1$
+slogan: 'On a genus-$g$ curve, positive degree is ample, degree $2g$ frees base points, and degree $2g+1$ is very ample.'
 classification:
   areas:
   - algebraic-geometry
