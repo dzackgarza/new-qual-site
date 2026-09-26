@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHRRS
 kind: theorem
 title: Riemann--Roch for surfaces
+slogan: 'On a surface, Riemann--Roch replaces degree by $\frac12D\cdot(D-K)$; with Serre duality, positivity turns Euler characteristic into sections.'
 classification:
   areas:
   - algebraic-geometry
