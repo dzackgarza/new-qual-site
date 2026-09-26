@@ -46,6 +46,6 @@ That $u$ witnesses $v \notin (\sigma\dual)\dual$.
 Separation is the finite-dimensional Hahn--Banach statement, and for a polyhedral cone it is elementary: $\sigma$ is closed and convex, so the point of $\sigma$ nearest to $v$ exists, and the vector from it to $v$ gives the required $u$ after a sign change.
 Convexity and closedness are both needed, and polyhedral cones have both for free.
 
-Double duality is the reason the dictionary is a dictionary and not a one-way map.
-Every statement about $\sigma$ has a mirror statement about $\sigma\dual$, and no information is lost in passing between them: $\sigma$ lives in $N_\RR$ where the fan and the geometry are, $\sigma\dual$ lives in $M_\RR$ where the semigroup and the ring are, and the two determine each other.
+Double duality makes the cone-dual correspondence reversible.
+The equality $(\sigma^\vee)^\vee=\sigma$ means that $\sigma\subseteq N_\RR$ and $\sigma^\vee\subseteq M_\RR$ determine each other.
 :::
