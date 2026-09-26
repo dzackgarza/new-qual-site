@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TORSMAFF
 kind: proposition
 title: Smooth affine toric varieties and why toric varieties are normal
+slogan: 'Smooth cones give affine space times a torus, simplicial cones give finite quotient singularities, and saturated semigroups make toric varieties normal.'
 classification:
   areas:
   - algebraic-geometry
