@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORSMREG
 kind: theorem
 title: Smooth over an algebraically closed field equals regular
+slogan: 'Smoothness is geometric regularity: over a perfect field, finite-type schemes are smooth exactly when they are regular.'
 classification:
   areas:
   - algebraic-geometry
