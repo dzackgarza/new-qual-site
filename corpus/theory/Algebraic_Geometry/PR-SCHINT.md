@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SCHINT
 kind: proposition
 title: Scheme-theoretic intersection as a fibre product
+slogan: 'Scheme-theoretic intersection is fibre product; on affines, intersecting subschemes means adding their ideals.'
 classification:
   areas:
   - algebraic-geometry
