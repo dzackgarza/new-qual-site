@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVHASSE
 kind: theorem
 title: The Hasse invariant criterion and the Hasse polynomial $h_p(\lambda)$
+slogan: 'Supersingularity is a coefficient test: extract $(xyz)^{p-1}$ from $f^{p-1}$, or solve $h_p(\lambda)=0$ in Legendre form.'
 classification:
   areas:
   - algebraic-geometry
