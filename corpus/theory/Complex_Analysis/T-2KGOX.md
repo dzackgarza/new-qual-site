@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-2KGOX
 kind: theorem
 title: Standard conformal maps between half-planes, sectors, strips and discs
+slogan: 'Standard conformal domains are related by four moves: Möbius maps, powers, exponentials, and logarithms.'
 classification:
   areas:
   - complex-analysis
