@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ISZP3
 kind: theorem
 title: Riemann's removable singularity theorem
+slogan: 'A bounded punctured singularity is removable.'
 classification:
   areas:
   - complex-analysis
