@@ -50,5 +50,5 @@ Serre duality turns $h^2(D)$ into $h^0(K-D)$, so
 h^0(D) \geq \chi(\OO_X) + \tfrac{1}{2} D\cdot(D-K) - h^0(K - D) ,
 \]
 and once $D$ is positive enough that $K - D$ has no sections, a large right-hand side forces $h^0(D) > 0$ and hence $D$ effective.
-That inequality is the standard first move in every surface question about whether a linear system is nonempty.
+That inequality gives a standard sufficient criterion for nonemptiness of a linear system.
 :::
