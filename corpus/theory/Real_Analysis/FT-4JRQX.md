@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-4JRQX
 kind: theorem
 title: Tonelli's theorem
+slogan: 'For nonnegative measurable functions, either order of integration is valid even when the value is $+\infty$.'
 prompts:
 - State Tonelli's theorem.
 classification:
