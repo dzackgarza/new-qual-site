@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORZMT
 kind: theorem
 title: Zariski's main theorem
+slogan: 'Quasi-finite morphisms are finite up to deleting points; birational projective maps to normal targets must contract positive-dimensional fibres unless they are isomorphisms.'
 classification:
   areas:
   - algebraic-geometry
