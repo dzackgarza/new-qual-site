@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFRR
 kind: theorem
 title: Riemann--Roch for surfaces
+slogan: 'Surface Riemann--Roch turns Euler characteristic into intersection theory: $\chi(\OO_X(D))-\chi(\OO_X)=\tfrac12D\cdot(D-K_X)$.'
 classification:
   areas:
   - algebraic-geometry
