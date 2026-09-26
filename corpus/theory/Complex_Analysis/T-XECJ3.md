@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-XECJ3
 kind: theorem
 title: Inverse function theorem
+slogan: 'A nonzero derivative makes a holomorphic map locally biholomorphic, with inverse derivative the reciprocal.'
 classification:
   areas:
   - complex-analysis
