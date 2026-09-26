@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CRVGRP
 kind: proposition
 title: The group law on an elliptic curve, and multiplication by $n$
+slogan: 'Choosing an origin identifies a genus-$1$ curve with its $\Pic^0$; collinearity is addition, and $[n]$ has degree $n^2$.'
 classification:
   areas:
   - algebraic-geometry
