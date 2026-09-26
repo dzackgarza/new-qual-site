@@ -44,7 +44,7 @@ Consequently, for each $p$ there are at most $\left\lfloor p/12 \right\rfloor + 
 :::
 
 ::: {.remark title="Where the criterion comes from"}
-Every step is forced, which is why this is a reasonable thing to be asked to reconstruct.
+Each step in the coefficient criterion is forced by the cohomological realization below.
 
 The ideal sheaf of a plane cubic is $\OO_{\PP^2}(-3)$, so
 \[
@@ -62,14 +62,14 @@ Transporting along the diagram that compares $E = V(f)$ with $V(f^p)$ multiplies
 In $H^2(\PP^2; \OO(-3))$ every monomial with a non-negative exponent is zero, so only the term of $f^{p-1}$ equal to $(xyz)^{p-1}$ survives, and it contributes that coefficient times $\tfrac{1}{xyz}$.
 The criterion is then the definition read off: $F^* = 0$ exactly when that coefficient vanishes.
 
-The degree bookkeeping is worth checking once, since it is the part that looks like a coincidence: $f^{p-1}$ has degree $3(p-1)$, and $(xyz)^{p-1}$ has degree $3(p-1)$ as well, so the monomial is available for every $p$.
+The degree bookkeeping explains why the distinguished monomial can occur: both $f^{p-1}$ and $(xyz)^{p-1}$ have degree $3(p-1)$.
 :::
 
 ::: {.remark title="Using the Legendre form"}
 Dehomogenising, the criterion for $y^2 = g(x)$ with $\deg g = 3$ becomes: supersingular exactly when the coefficient of $x^{p-1}$ in $g(x)^{(p-1)/2}$ vanishes.
 Expanding $\big(x(x-1)(x-\lambda)\big)^m$ and collecting gives $(-1)^m h_p(\lambda)$, so the sign is irrelevant and the vanishing is $h_p(\lambda) = 0$.
 
-Two sanity checks worth carrying:
+Two low-characteristic checks are:
 
 - $p = 3$: $m = 1$, $h_3(\lambda) = 1 + \lambda$, so $\lambda = -1$, and there $\lambda^2 - \lambda + 1 = 3 = 0$, giving $j = 0$ --- the one supersingular curve in characteristic $3$.
 
