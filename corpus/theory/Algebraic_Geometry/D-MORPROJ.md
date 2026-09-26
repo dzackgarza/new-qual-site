@@ -32,9 +32,8 @@ It is **quasi-projective** if it factors as an open immersion into a scheme proj
 :::
 
 ::: {.remark}
-For $Y$ Noetherian, projective implies proper, and this implication carries most of the properness one ever uses.
-Its proof is the whole content: closed immersions are proper, properness is stable under composition, and $\PP^N_\ZZ \to \Spec \ZZ$ is universally closed, which is the elimination theorem.
-So "projective implies proper" is "the resultant exists", and that is the answer to the follow-up asking where the closedness comes from.
+For $Y$ Noetherian, projective implies proper.
+The proof combines properness of closed immersions, stability of properness under composition, and universal closedness of $\PP^N_\ZZ \to \Spec \ZZ$ via elimination.
 
 The relative $\Proj$ supplies the examples: for a graded ring $S$ with $S_0 = A$ and $S$ generated in degree one by finitely many elements, $\Proj S \to \Spec A$ is projective.
 Blowups are projective for the same reason, and that is why a blowup of a projective variety stays projective.
