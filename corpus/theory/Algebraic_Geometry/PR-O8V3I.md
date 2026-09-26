@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-O8V3I
 kind: proposition
 title: The orbit-cone correspondence
+slogan: 'Bigger cones mean smaller torus orbits: $\dim\sigma+\dim O(\sigma)=n$, with the zero cone dense and maximal cones fixed.'
 classification:
   areas:
   - algebraic-geometry
