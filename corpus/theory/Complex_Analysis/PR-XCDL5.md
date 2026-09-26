@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-XCDL5
 kind: proposition
 title: Logarithm from the upper half-plane to a horizontal strip
+slogan: 'The principal logarithm unwraps the upper half-plane into the strip $0<\Im w<\pi$.'
 classification:
   areas:
   - complex-analysis
