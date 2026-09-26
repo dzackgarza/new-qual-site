@@ -48,13 +48,13 @@ If $f$ is flat then $\dim_x X_{f(x)} = \dim_x X - \dim_{f(x)} Y$ at every point,
 :::
 
 ::: {.remark}
-The direction of the inequality is the part that gets asked, and the mnemonic is that fibres can only jump **up** over special points, never down.
+Upper semicontinuity means fibre dimension can jump **up** on special loci, never down.
 The blowup is the model: fibre dimension $0$ generically, $1$ over the origin, and the jump locus $\ts{0}$ is closed.
 It cannot go the other way, because a component of a fibre is cut out by $\dim Y$ equations locally and Krull's height theorem bounds the drop.
 
 The two halves are used differently.
-The lower bound is the tool for proving something is nonempty, as in "a morphism from a projective variety of dimension $> e$ to a variety of dimension $e$ has positive-dimensional fibres", which is the engine behind rigidity statements.
-The generic equality is the tool for computing dimensions by counting: fibre a parameter space over something known, and $\dim = \dim(\text{base}) + \dim(\text{general fibre})$.
+The lower bound proves positive-dimensional fibres in dimension-comparison arguments.
+The generic equality gives the dimension formula $\dim X = \dim Y + \dim(\text{general fibre})$.
 
-Flatness is exactly the hypothesis that removes the jumping, which is the cleanest statement of what flatness is for.
+Flatness removes this jumping by forcing the expected local fibre dimension everywhere.
 :::
