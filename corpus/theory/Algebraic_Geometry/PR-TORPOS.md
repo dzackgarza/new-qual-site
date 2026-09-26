@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TORPOS
 kind: proposition
 title: Base-point freeness, ampleness and very ampleness through support functions
+slogan: 'For a complete toric variety, convex support means base-point free, strict convexity means ample, and vertex semigroups decide very ampleness.'
 classification:
   areas:
   - algebraic-geometry
