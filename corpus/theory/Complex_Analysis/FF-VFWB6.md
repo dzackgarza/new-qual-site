@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-VFWB6
 kind: fact
 title: $\cosh(x+iy)$ in terms of real and imaginary parts
+slogan: '$\cosh(x+iy)$ splits as $\cosh x\cos y+i\sinh x\sin y$.'
 prompts:
 - What is the angle addition formula for $\cosh(x+iy)$?
 classification:
