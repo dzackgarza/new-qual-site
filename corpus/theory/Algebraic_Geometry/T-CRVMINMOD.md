@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVMINMOD
 kind: theorem
 title: Every curve has a unique smooth projective model
+slogan: 'A one-variable function field has a unique smooth projective model; hence birational smooth projective curves are already isomorphic.'
 classification:
   areas:
   - algebraic-geometry
