@@ -37,7 +37,7 @@ In both cases $H^0$ of the cokernel is $2$-dimensional.
 :::
 
 ::: {.remark}
-The example is worth carrying because it makes the failure numerical rather than atmospheric: the sequence fails to be right exact on sections by exactly the dimension that $H^1$ of the kernel predicts.
+The example makes the failure numerical: right exactness on global sections fails by exactly the dimension of $H^1$ of the kernel.
 
 The same shape recurs as the classical exponential sequence on a complex manifold, where the failure of $\OO \to \OO^*$ on sections is the existence of line bundles, and $H^1(X,\OO^*) = \Pic(X)$.
 :::
