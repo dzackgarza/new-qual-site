@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVUNIF
 kind: theorem
 title: Every elliptic curve over $\CC$ is a torus $\CC/\Lambda$
+slogan: 'Every complex elliptic curve is $\CC/\Lambda$; on the torus, a divisor is principal exactly when its degree and group sum are both zero.'
 classification:
   areas:
   - algebraic-geometry
