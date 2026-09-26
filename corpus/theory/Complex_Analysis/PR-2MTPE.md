@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-2MTPE
 kind: proposition
 title: Summation by parts
+slogan: 'Summation by parts is discrete integration by parts: partial sums play the role of antiderivatives.'
 classification:
   areas:
   - complex-analysis
