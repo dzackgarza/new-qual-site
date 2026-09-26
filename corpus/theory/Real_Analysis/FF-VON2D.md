@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-VON2D
 kind: fact
 title: Baire spaces
+slogan: 'In a Baire space, countably many open dense conditions remain jointly dense.'
 prompts:
 - What is a Baire space?
 classification:
