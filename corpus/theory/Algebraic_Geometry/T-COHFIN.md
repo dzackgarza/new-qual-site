@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHFIN
 kind: theorem
 title: Finiteness of cohomology for coherent sheaves on a projective scheme
+slogan: 'Properness plus coherence makes cohomology finite: coherent cohomology on a projective scheme is finitely generated, hence finite-dimensional over a field.'
 classification:
   areas:
   - algebraic-geometry
