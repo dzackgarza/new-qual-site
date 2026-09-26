@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVCM
 kind: theorem
 title: Complex multiplication, and $\operatorname{End}(E,p_0)$ as an order in an imaginary quadratic field
+slogan: 'Over $\CC$, an elliptic curve has extra endomorphisms exactly when its lattice is imaginary quadratic; then $\End(E)$ is an order in that field.'
 classification:
   areas:
   - algebraic-geometry
