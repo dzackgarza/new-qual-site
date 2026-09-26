@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CHY3F
 kind: proposition
 title: Exponential inequality
+slogan: 'The exponential graph lies above its tangent line at the origin.'
 classification:
   areas:
   - real-analysis
