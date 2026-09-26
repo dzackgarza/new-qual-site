@@ -31,7 +31,7 @@ so intersecting subschemes adds ideals.
 :::
 
 ::: {.remark}
-"Intersect means add the ideals" is the sentence to have ready, and it is the one place where the scheme structure does visible arithmetic.
+On affine schemes, scheme-theoretic intersection is computed by adding the defining ideals.
 
 Intersecting $y = x^2$ with $y = 0$ in $\AA^2$ gives $k[x,y]/(y - x^2, y) \cong k[x]/(x^2)$, the double point: tangency shows up as a length, and Bézout's theorem counts lengths rather than points.
 Intersecting $y = x^2$ with $y = 1$ gives $k[x]/(x^2-1)$, two reduced points, and the total length is $2$ either way.
