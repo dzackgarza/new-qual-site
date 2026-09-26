@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-ULJAJ
 kind: proposition
 title: Properties of the Blaschke factors $\psi_a$
+slogan: 'Blaschke factors are involutive disk automorphisms that swap $0$ with $a$ and preserve the unit circle.'
 classification:
   areas:
   - complex-analysis
