@@ -35,12 +35,12 @@ Let $\pi \colon X \to Y$ be a morphism of schemes.
 :::
 
 ::: {.remark}
-This is the characterisation to quote, because it converts a condition on modules into two conditions one can see.
-The implications to keep straight run
+This characterization converts the module-theoretic definition of finiteness into geometric conditions.
+The implications are
 \[
 \text{finite} \implies \text{projective} \implies \text{proper} \implies \text{universally closed},
 \]
-with none of them reversible: $\PP^1_k \to \Spec k$ is projective and not finite, and the standard non-projective proper example is a complete non-projective threefold, which is worth naming but not constructing.
+with none of them reversible: $\PP^1_k \to \Spec k$ is projective and not finite, and complete non-projective threefolds give proper morphisms to a point that are not projective.
 
-The converse direction, proper plus finite fibres giving finite, is the one that does real work: it is how one knows the normalisation of a variety is a finite morphism, and how a proper morphism with zero-dimensional fibres is recognised as an affine one.
+The converse direction, proper plus finite fibres giving finite, recognizes normalization maps and proper zero-dimensional-fibre morphisms as finite.
 :::
