@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-BV2AU
 kind: theorem
 title: Small tails and absolute continuity of the integral
+slogan: '$L^1$ mass is small both far out in space and on sets of sufficiently small measure.'
 prompts:
 - What do small tails and absolute continuity say about $f \in L^1$?
 classification:
