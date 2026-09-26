@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-2ABHQ
 kind: fact
 title: Value of $\arctan(\sqrt 3)$
+slogan: '$\arctan(\sqrt3)=\pi/3$: the principal angle whose tangent is $\sqrt3$.'
 prompts:
 - What is $\arctan(\sqrt 3)$?
 classification:
