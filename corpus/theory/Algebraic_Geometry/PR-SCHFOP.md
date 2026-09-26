@@ -37,7 +37,7 @@ The assignment $T \mapsto X(T) \da \Hom_S(T, X)$ is the **functor of points** of
 ::: {.remark}
 The functor of points is what makes the fibre product's universal property usable, and it is how you recover the naive picture: $X(k)$ for $k$ algebraically closed is the classical variety, and $X(\ZZ)$ or $X(\QQ)$ is what a number theorist means by the solutions.
 
-The two computations above are the ones asked for, and they are the reason each test scheme is standard: a field detects a point together with how much of its residue field you can see, and the dual numbers detect a tangent vector.
+These two computations explain the standard test schemes: a field detects a point together with a residue-field embedding, while the dual numbers detect a tangent vector.
 Replacing $k[\eps]/\eps^2$ by $k[t]/t^n$ detects an $n$-th order arc, which is where jet schemes come from.
 
 The usable slogan is that a scheme is determined by what maps into it, so constructing a scheme can be replaced by writing down a functor and proving it representable — this is how Hilbert and Picard schemes are defined.
