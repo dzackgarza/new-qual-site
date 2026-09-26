@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-P5UNP
 kind: theorem
 title: Fatou's lemma
+slogan: 'For nonnegative functions, integration puts the liminf below the liminf of the integrals.'
 prompts:
 - State Fatou's lemma.
 classification:
@@ -16,8 +17,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f_n$ for $n\geq1$ belong to [[D-BF5L2|$L^+$]].
-Then
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f_n$ for $n\geq1$ belong to [[D-BF5L2|$L^+$]]. Then
 $$
 \int_X \liminf_{n\to\infty} f_n \dmu \leq \liminf_{n\to\infty} \int_X f_n \dmu .
 $$
