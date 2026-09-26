@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-XKATS
 kind: fact
 title: Taylor series of $\sinh z$
+slogan: '$\sinh z$ keeps exactly the odd terms of the exponential series.'
 prompts:
 - What is the series expansion of $\sinh(z)$?
 classification:
