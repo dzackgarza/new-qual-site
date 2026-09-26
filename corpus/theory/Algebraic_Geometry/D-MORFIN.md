@@ -35,11 +35,11 @@ If $C$ is nonsingular, $C'$ is integral and $f$ is surjective, then $f$ is finit
 :::
 
 ::: {.remark}
-The one-line distinction is the one the examiner wants: finitely generated as a module is strictly stronger than finitely generated as an algebra.
+Finitely generated as a module is strictly stronger than finitely generated as an algebra.
 $k[x]$ has one algebra generator over $k$ and infinite rank as a $k$-module, so $\AA^1_k \to \Spec k$ is of finite type and not finite.
 Hence finite implies finite type and never conversely.
 
 Finite morphisms are affine, proper, closed, surjective onto their image, and have finite fibres, and the fibres have a length that a flat hypothesis makes constant.
 They are the branched covers of the subject: a nonconstant morphism of smooth projective curves is finite, which is why every statement about such a map is a statement about a finite extension of function fields.
-Closedness is the going up theorem read on spectra, which is the standard follow-up.
+Closedness is the going-up theorem read on spectra.
 :::
