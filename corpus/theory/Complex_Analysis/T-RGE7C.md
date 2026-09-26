@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RGE7C
 kind: theorem
 title: Identity theorem
+slogan: 'A holomorphic function with zeros accumulating inside a connected domain must vanish identically.'
 classification:
   areas:
   - complex-analysis
