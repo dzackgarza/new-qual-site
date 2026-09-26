@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFZMT
 kind: theorem
 title: Zariski's main theorem, and the factorization of birational maps of surfaces
+slogan: 'On smooth projective surfaces, exceptional fibres stay connected and every birational map is built from finitely many blowups and blowdowns.'
 classification:
   areas:
   - algebraic-geometry
