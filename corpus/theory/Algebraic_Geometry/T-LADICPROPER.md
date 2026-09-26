@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LADICPROPER
 kind: theorem
 title: Proper pushforward preserves constructible $\ell$-adic sheaves
+slogan: 'Proper-support pushforward preserves constructible $\ell$-adic sheaves, so compact-support $\ell$-adic cohomology stays finite-dimensional.'
 classification:
   areas:
   - algebraic-geometry
