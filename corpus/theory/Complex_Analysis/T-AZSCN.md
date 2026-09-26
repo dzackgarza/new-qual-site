@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-AZSCN
 kind: theorem
 title: Weierstrass M-test
+slogan: 'A summable uniform majorant gives absolute and uniform convergence.'
 classification:
   areas:
   - complex-analysis
