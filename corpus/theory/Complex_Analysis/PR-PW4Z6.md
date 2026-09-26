@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PW4Z6
 kind: proposition
 title: Möbius map from the upper half-disc to the first quadrant
+slogan: 'The Möbius map $(1+z)/(1-z)$ sends the upper half-disc biholomorphically onto the first quadrant.'
 classification:
   areas:
   - complex-analysis
