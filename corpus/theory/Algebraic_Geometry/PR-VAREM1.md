@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VAREM1
 kind: proposition
 title: The exceptional curve has self-intersection $-1$
+slogan: 'Blowing up a smooth point creates $E\cong\PP^1$ with $E^2=-1$, and adds $(n-1)E$ to the canonical class.'
 classification:
   areas:
   - algebraic-geometry
