@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-L5UH3
 kind: proposition
 title: Biholomorphism from the right half-plane onto the unit disc
+slogan: 'The Cayley map $\frac{1-z}{1+z}$ turns the right half-plane into the unit disc.'
 classification:
   areas:
   - complex-analysis
