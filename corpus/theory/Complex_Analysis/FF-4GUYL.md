@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-4GUYL
 kind: fact
 title: Automorphisms of the unit disc
+slogan: 'Every automorphism of $\DD$ is a rotation composed with a Blaschke factor.'
 prompts:
 - What is the general form of an automorphism of the unit disc?
 classification:
