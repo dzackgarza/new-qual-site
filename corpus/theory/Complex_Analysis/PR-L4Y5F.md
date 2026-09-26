@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-L4Y5F
 kind: proposition
 title: Residue formula for simple poles
+slogan: 'At a simple pole, the residue is the surviving coefficient after multiplying by $z-z_0$ and taking the limit.'
 classification:
   areas:
   - complex-analysis
