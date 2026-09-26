@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-JKLWM
 kind: fact
 title: Coefficients of the reciprocal of a power series
+slogan: 'The reciprocal series is determined coefficient-by-coefficient by forcing the Cauchy product to equal $1$.'
 prompts:
 - For $A(z) = \sum c_k z^k$, how are the coefficients of $1/A(z)$ computed from the $c_k$?
 classification:
