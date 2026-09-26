@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SCHFOP
 kind: proposition
 title: The functor of points, and what small test schemes detect
+slogan: 'Fields detect points with residue-field embeddings; dual numbers detect tangent vectors.'
 classification:
   areas:
   - algebraic-geometry
