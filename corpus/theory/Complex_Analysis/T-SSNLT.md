@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SSNLT
 kind: theorem
 title: Fractional residue theorem for a simple pole
+slogan: 'A small arc around a simple pole captures the same fraction of $2\pi i\Res$ as its angle captures of a full turn.'
 classification:
   areas:
   - complex-analysis
