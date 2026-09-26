@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BBQLQ
 kind: theorem
 title: Holomorphic functions on a compact connected complex manifold are constant
+slogan: 'Compactness forces a maximum modulus, and connectedness propagates the resulting local constancy globally.'
 classification:
   areas:
   - complex-analysis
