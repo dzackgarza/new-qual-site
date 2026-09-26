@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVCAST
 kind: theorem
 title: Castelnuovo's bound for space curves
+slogan: 'Castelnuovo is the balanced-quadric bound: maximal-genus nonplanar space curves lie on a quadric with bidegrees as equal as possible.'
 classification:
   areas:
   - algebraic-geometry
