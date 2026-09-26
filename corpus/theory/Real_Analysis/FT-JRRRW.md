@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-JRRRW
 kind: theorem
 title: Uniform boundedness principle
+slogan: 'Pointwise bounded families of operators on a Banach space are uniformly bounded in operator norm.'
 prompts:
 - State the uniform boundedness principle.
 classification:
