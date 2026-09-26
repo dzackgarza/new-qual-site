@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-XAVMU
 kind: proposition
 title: Translation invariance of the Lebesgue integral
+slogan: 'Translating an $L^1$ function does not change its Lebesgue integral.'
 classification:
   areas:
   - real-analysis
