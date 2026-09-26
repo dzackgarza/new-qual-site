@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-PDYJC
 kind: proposition
 title: Power maps between sectors
+slogan: 'Power maps multiply arguments, so $z^{\pi/\beta}$ straightens a sector of angle $\beta$ into the upper half-plane.'
 classification:
   areas:
   - complex-analysis
