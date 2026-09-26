@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULCM
 kind: proposition
 title: Toric varieties are rational and Cohen-Macaulay, and affine ones have no nontrivial vector bundles
+slogan: 'Every toric variety is rational and Cohen--Macaulay; every vector bundle on an affine toric variety is trivial.'
 classification:
   areas:
   - algebraic-geometry
