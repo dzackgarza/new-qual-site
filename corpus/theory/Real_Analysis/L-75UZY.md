@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-75UZY
 kind: lemma
 title: Function discontinuous on the rationals
+slogan: 'Weighted jumps at every rational produce a function continuous exactly at the irrationals.'
 classification:
   areas:
   - real-analysis
@@ -18,10 +19,7 @@ There is a function $f\colon\RR\to\RR$ whose set of points of discontinuity is e
 :::
 
 ::: {.proof}
-Enumerate $\QQ=\theset{q_1,q_2,\ldots}$ and put $f(x)\coloneqq\sum_{n\,:\,q_n<x}2^{-n}$.
-The function $f$ is nondecreasing and bounded by $1$.
-Fix $x\in\RR$ and put $g(x)\coloneqq\sum_{n\,:\,q_n\le x}2^{-n}$.
-For $\delta>0$,
+Enumerate $\QQ=\theset{q_1,q_2,\ldots}$ and put $f(x)\coloneqq\sum_{n\,:\,q_n<x}2^{-n}$. The function $f$ is nondecreasing and bounded by $1$. Fix $x\in\RR$ and put $g(x)\coloneqq\sum_{n\,:\,q_n\le x}2^{-n}$. For $\delta>0$,
 $$
 f(x)-f(x-\delta)=\sum_{n\,:\,x-\delta\le q_n<x}2^{-n}, \qquad f(x+\delta)-g(x)=\sum_{n\,:\,x<q_n<x+\delta}2^{-n}.
 $$
