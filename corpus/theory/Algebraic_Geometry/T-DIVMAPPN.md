@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DIVMAPPN
 kind: theorem
 title: The morphism to projective space attached to a linear system
+slogan: 'A base-point-free linear system is a map to projective space; it is an embedding exactly when it separates points and tangent vectors.'
 classification:
   areas:
   - algebraic-geometry
