@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORMIRACLE
 kind: theorem
 title: Miracle flatness
+slogan: 'For a Cohen--Macaulay source over a regular base, fibres of the expected dimension force flatness.'
 classification:
   areas:
   - algebraic-geometry
