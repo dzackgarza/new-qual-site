@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-2XFTY
 kind: theorem
 title: Biholomorphisms of the disc
+slogan: 'The unit-disc biholomorphisms are precisely rotations composed with Blaschke factors.'
 classification:
   areas:
   - complex-analysis
