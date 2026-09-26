@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JW3QE
 kind: proposition
 title: Series of nonnegative measurable functions can be integrated term by term
+slogan: 'For nonnegative measurable series, summation and integration commute, even with value $+\infty$.'
 classification:
   areas:
   - real-analysis
