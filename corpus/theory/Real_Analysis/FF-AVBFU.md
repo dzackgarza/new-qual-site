@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-AVBFU
 kind: fact
 title: Properties of the set of discontinuities $D_f$ of a function
+slogan: 'Discontinuity sets are $F_\sigma$; pointwise limits give meager ones, Riemann integrability null ones, and monotone functions countable ones.'
 prompts:
 - What can be said about $D_f$, the set of discontinuities of a function?
 classification:
