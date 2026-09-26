@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-VOO4Q
 kind: fact
 title: Residue at a pole of order $n$
+slogan: 'At a pole of order at most $n$, the residue is the $(n-1)$st derivative of $(z-z_0)^nf$ divided by $(n-1)!$.'
 prompts:
 - State the residue formula at a pole of order $n$.
 classification:
