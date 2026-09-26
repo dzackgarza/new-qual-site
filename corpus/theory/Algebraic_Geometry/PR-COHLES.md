@@ -48,7 +48,7 @@ $\delta$ sends a global section of $\mcf''$ to the obstruction to lifting it: li
 So $H^1(\mcf') = 0$ is precisely the statement that every global section of the quotient lifts.
 :::
 
-::: {.remark title="How every computation actually goes"}
+::: {.remark title="Standard computations"}
 For $Y \subseteq \PP^n$ closed with ideal sheaf $\mci_Y$, twist the ideal sequence:
 \[
 0 \to \mci_Y(d) \to \OO_{\PP^n}(d) \to \OO_Y(d) \to 0 .
