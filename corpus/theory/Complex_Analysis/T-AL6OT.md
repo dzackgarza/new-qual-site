@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-AL6OT
 kind: theorem
 title: Riemann's removable singularity theorem
+slogan: 'A bounded isolated singularity is removable; boundedness, continuous extension, holomorphic extension, and $(z-z_0)f(z)\to0$ are equivalent.'
 classification:
   areas:
   - complex-analysis
