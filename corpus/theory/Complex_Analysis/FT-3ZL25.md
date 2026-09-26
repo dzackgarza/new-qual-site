@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-3ZL25
 kind: theorem
 title: Dirichlet's test
+slogan: 'Monotone decay to zero times bounded partial sums gives convergence.'
 prompts:
 - State Dirichlet's test for convergence of a series.
 classification:
