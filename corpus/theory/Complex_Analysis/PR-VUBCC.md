@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VUBCC
 kind: proposition
 title: Zeros of holomorphic functions are isolated
+slogan: 'A nonzero holomorphic function cannot have accumulating zeros inside its domain.'
 classification:
   areas:
   - complex-analysis
