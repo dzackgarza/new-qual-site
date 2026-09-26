@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TWG7E
 kind: proposition
 title: Möbius map from the unit disc to the right half-plane
+slogan: 'The Möbius map $(1+z)/(1-z)$ sends the unit disc onto the right half-plane.'
 classification:
   areas:
   - complex-analysis
