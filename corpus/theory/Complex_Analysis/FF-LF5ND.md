@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-LF5ND
 kind: fact
 title: Taylor series of $\cosh z$
+slogan: '$\cosh z$ keeps exactly the even terms of the exponential series.'
 prompts:
 - What is the series expansion of $\cosh(z)$?
 classification:
