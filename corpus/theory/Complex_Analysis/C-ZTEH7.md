@@ -3,7 +3,7 @@ schema: qual/card@1
 id: C-ZTEH7
 kind: corollary
 title: Residue of $1/h$ at a simple zero of $h$
-slogan: 'At a simple zero of $h$, dividing by $h$ produces a residue equal to numerator over $h'$.'
+slogan: 'At a simple zero of $h$, dividing by $h$ produces a residue equal to numerator over $h''$.'
 classification:
   areas:
   - complex-analysis
