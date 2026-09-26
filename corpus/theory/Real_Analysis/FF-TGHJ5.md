@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-TGHJ5
 kind: fact
 title: $e^{2\pi i/6}$ in rectangular coordinates
+slogan: 'The sixth root $e^{i\pi/3}$ is $\frac12+i\frac{\sqrt3}{2}$.'
 prompts:
 - What is $e^{2\pi i / 6}$ in rectangular coordinates?
 classification:
