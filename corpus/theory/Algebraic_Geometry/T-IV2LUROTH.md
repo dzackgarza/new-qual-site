@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-IV2LUROTH
 kind: theorem
 title: Lüroth's theorem, and the Lüroth problem in higher dimension
+slogan: 'In dimension one, unirational means rational: every intermediate field $k\subsetneq L\subseteq k(t)$ is again $k(u)$.'
 classification:
   areas:
   - algebraic-geometry
