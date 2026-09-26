@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TOK44
 kind: proposition
 title: Root test for power series
+slogan: 'Coefficient root growth sets the convergence disk: inside converges, outside diverges.'
 classification:
   areas:
   - complex-analysis
