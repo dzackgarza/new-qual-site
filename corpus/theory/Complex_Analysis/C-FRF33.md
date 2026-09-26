@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-FRF33
 kind: corollary
 title: Open mapping theorem
+slogan: 'A nonconstant holomorphic function sends open sets to open sets.'
 classification:
   areas:
   - complex-analysis
