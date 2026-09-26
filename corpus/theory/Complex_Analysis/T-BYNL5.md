@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BYNL5
 kind: theorem
 title: Maximum modulus principle
+slogan: 'A nonconstant holomorphic function has no interior maximum of its modulus.'
 classification:
   areas:
   - complex-analysis
