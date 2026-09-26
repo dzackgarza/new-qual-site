@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-EO65T
 kind: theorem
 title: Casorati--Weierstrass theorem
+slogan: 'Every punctured neighborhood of an essential singularity has dense image in $\CC$.'
 classification:
   areas:
   - complex-analysis
