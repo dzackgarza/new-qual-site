@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-BKYF7
 kind: corollary
 title: Uniformization of simply connected domains in $\CC$
+slogan: 'Every proper simply connected plane domain is conformally the unit disc; the whole plane is the only other case.'
 classification:
   areas:
   - complex-analysis
