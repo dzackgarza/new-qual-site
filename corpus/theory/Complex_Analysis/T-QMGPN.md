@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QMGPN
 kind: theorem
 title: Implicit function theorem
+slogan: 'A relation is locally the graph of a function wherever the derivative block in the solved-for variables is invertible.'
 classification:
   areas:
   - complex-analysis
