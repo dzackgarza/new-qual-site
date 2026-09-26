@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TORMOR
 kind: proposition
 title: Toric morphisms, completeness, and invariants read off the fan
+slogan: 'A toric variety is complete exactly when its fan fills the lattice space; toric properness is the same support condition after pullback.'
 classification:
   areas:
   - algebraic-geometry
