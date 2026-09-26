@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULCOTAN
 kind: proposition
 title: The cotangent space at a fixed point is the Hilbert basis of the semigroup
+slogan: 'At a toric fixed point, the cotangent dimension counts the Hilbert basis; smoothness squeezes it to a lattice basis.'
 classification:
   areas:
   - algebraic-geometry
