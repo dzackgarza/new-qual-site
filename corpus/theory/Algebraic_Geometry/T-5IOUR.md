@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5IOUR
 kind: theorem
 title: Serre's cohomological criterion for affineness
+slogan: 'For Noetherian schemes, affine means no higher quasicoherent cohomology; it already suffices to kill $H^1$ of coherent ideals.'
 classification:
   areas:
   - algebraic-geometry
