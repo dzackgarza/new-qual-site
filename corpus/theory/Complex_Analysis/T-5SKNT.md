@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-5SKNT
 kind: theorem
 title: Symmetry principle
+slogan: 'Holomorphic functions on opposite sides of the real axis glue holomorphically when their continuous boundary values agree.'
 classification:
   areas:
   - complex-analysis
