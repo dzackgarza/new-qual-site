@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JRTS2
 kind: theorem
 title: Hilbert's Nullstellensatz
+slogan: 'Over an algebraically closed field, affine geometry sees exactly radicals: $I(V(J))=\sqrt J$.'
 classification:
   areas:
   - algebraic-geometry
