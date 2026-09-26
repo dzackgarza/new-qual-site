@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MWUJS
 kind: proposition
 title: Existence of a branch of the logarithm on a simply connected region
+slogan: 'On a simply connected region avoiding $0$, the complex logarithm has a single-valued holomorphic branch.'
 classification:
   areas:
   - complex-analysis
