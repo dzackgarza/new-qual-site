@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRY2V
 kind: theorem
 title: Holomorphic implies analytic
+slogan: 'Holomorphic functions equal their Taylor series on every sufficiently small disc.'
 classification:
   areas:
   - complex-analysis
