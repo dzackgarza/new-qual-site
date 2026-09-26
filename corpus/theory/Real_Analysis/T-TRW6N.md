@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TRW6N
 kind: theorem
 title: Bounded convergence theorem
+slogan: 'Uniform boundedness on a fixed finite interval lets pointwise convergence pass through the integral.'
 classification:
   areas:
   - real-analysis
