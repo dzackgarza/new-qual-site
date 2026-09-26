@@ -63,12 +63,12 @@ The denominators appear as $d^2$ and $d^3$ in the two coordinates, which is exac
 :::
 
 ::: {.remark}
-Two things make this statement land, and both are about which structure survives restriction to $\QQ$.
+Two points require explanation: why $E(\QQ)$ is closed under the group law, and why that subgroup is finitely generated.
 
 The subgroup claim is not automatic and is the reason the definition insists that $p_0$ be rational.
 Addition is defined by "three collinear points sum to zero", and a line through two rational points of a rational cubic meets it in a third point whose coordinates are rational, because substituting the line into the cubic gives a cubic in one variable with rational coefficients and two rational roots, so the third root is rational too.
 Inversion is reflection, also rational.
-If $p_0$ were irrational the identity would leave the set and nothing would be a subgroup; this is why the base point is part of the data and not an afterthought.
+If $p_0\notin E(\QQ)$, then the identity is not rational, so $E(\QQ)$ is not a subgroup of $E(\bar\QQ)$ with respect to that chosen group law.
 
 That subgroup is where the geometry turns into arithmetic.
 Writing a rational point in lowest terms and clearing denominators converts $E(\QQ)$ into the integral solutions of a homogeneous cubic in three variables, so the chord-and-tangent construction becomes an operation that manufactures new integer solutions from old ones --- the classical secant method, predating any of this language.
