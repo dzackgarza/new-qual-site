@@ -9,12 +9,12 @@ topics:
 
 # Differentials
 
-Asked as a definition, examined as a tool.
+Differentials encode both infinitesimal structure and smoothness.
 
 [[D-4GCH6]]
 
-Quasicoherence is the immediate follow-up and the answer is short: the construction is a module on each affine and commutes with localization, so the pieces glue.
-The better answer adds why one would want it — that $\Omega_{X/k}$ is locally free of rank $\dim X$ exactly when $X$ is smooth, so the sheaf detects the property that the Jacobian criterion computes.
+Quasicoherence follows because the affine construction commutes with localization.
+For a finite-type scheme over a field, local freeness of $\Omega_{X/k}$ of the expected rank detects smoothness and matches the Jacobian criterion.
 
 ## The two sequences
 
@@ -48,7 +48,7 @@ The canonical sheaf of $\PP^n$ is not computed by hand; it is read off a determi
 
 [[T-MODEULER]]
 
-Asked for $\Omega_{\PP^n}$, write the Euler sequence, take top exterior powers, and the answer is $\OO(-n-1)$ in one line.
+The Euler sequence and its top exterior power give $\omega_{\PP^n}\cong\OO(-n-1)$.
 
 ## The de Rham complex
 
