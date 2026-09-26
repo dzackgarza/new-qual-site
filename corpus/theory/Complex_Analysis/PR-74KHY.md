@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-74KHY
 kind: proposition
 title: Three points determine a Möbius transformation
+slogan: 'A Möbius transformation is uniquely determined by the images of three distinct points.'
 classification:
   areas:
   - complex-analysis
