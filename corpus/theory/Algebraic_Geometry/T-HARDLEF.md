@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-HARDLEF
 kind: theorem
 title: The hard Lefschetz theorem
+slogan: 'Powers of the hyperplane class reflect cohomology across middle degree: $L^k\colon H^{n-k}\iso H^{n+k}$, with primitive classes as the building blocks.'
 classification:
   areas:
   - algebraic-geometry
