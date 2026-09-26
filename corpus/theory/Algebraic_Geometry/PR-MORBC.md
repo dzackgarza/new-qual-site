@@ -25,7 +25,7 @@ The following are stable under arbitrary base change and under composition: open
 :::
 
 ::: {.remark}
-The list is not worth memorising as a list; what is worth having is the reason it is so long.
+The length of the list reflects common stability mechanisms under tensor product and fibre product.
 A property defined by a condition on the ring maps in an affine cover is stable under base change whenever the corresponding module-theoretic condition survives $\wait \tensor_B B'$, and finite generation, flatness, and surjectivity all do.
 
 The instructive entries are the ones that are *not* on it.
