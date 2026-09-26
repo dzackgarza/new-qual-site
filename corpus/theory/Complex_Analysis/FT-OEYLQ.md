@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-OEYLQ
 kind: theorem
 title: Open mapping theorem
+slogan: 'A nonconstant holomorphic map sends open sets to open sets.'
 prompts:
 - State the open mapping theorem.
 classification:
