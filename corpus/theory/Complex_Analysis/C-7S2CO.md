@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-7S2CO
 kind: corollary
 title: Cauchy integral formula for Taylor coefficients and the Cauchy estimates
+slogan: 'Boundary values recover Taylor coefficients, and their sup norm bounds each coefficient by $M_R/R^k$.'
 classification:
   areas:
   - complex-analysis
