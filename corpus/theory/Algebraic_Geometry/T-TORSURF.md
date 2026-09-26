@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-TORSURF
 kind: theorem
 title: Smooth complete toric surfaces and their intersection numbers
+slogan: 'A smooth complete toric surface is encoded by its cyclic fan: adjacent divisors meet once, nonadjacent ones miss, and $D_i^2=-a_i$.'
 classification:
   areas:
   - algebraic-geometry
