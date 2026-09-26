@@ -44,13 +44,13 @@ Then $g_X \geq 0$ gives $-2n \geq -2$, so $n = 1$ and $g_X = 0$, and a finite mo
 :::
 
 ::: {.remark title="Reading the argument"}
-Every hypothesis is spent in one place and the examiner asks for exactly that accounting: finiteness makes $X$ a projective curve so that the genus exists, étaleness supplies both the separability that lets Riemann--Hurwitz run and the vanishing $R = 0$ that makes it an equality with no correction term, and the inequality $g_X \geq 0$ is the only inequality used.
+Each hypothesis enters at a specific step: finiteness makes $X$ a projective curve, étaleness supplies separability and the vanishing $R=0$, and the final inequality is $g_X\ge0$.
 The argument is the algebraic analogue of the topological computation of $\pi_1(S^2)$ by Euler characteristic, with $2 - 2g$ in the role of $\chi$.
 
-The characteristic plays no part, and that is the surprising half.
+The proof is characteristic-independent.
 $\AA^1$ is *not* simply connected in characteristic $p$: the Artin--Schreier cover $y^p - y = x$ is finite étale of degree $p$ and connected, because $d(y^p - y) = -dy$ never vanishes.
 So the projective line and the affine line separate here, the missing point at infinity is where the cover of $\AA^1$ ramifies wildly, and $\pi_1^{\Et}(\AA^1_{\overline{\FF}_p})$ is enormous while $\pi_1^{\Et}(\PP^1) = 0$.
-Over $\CC$ both are topologically simply connected and the distinction is invisible, which is why the question is asked in characteristic $p$.
+Over $\CC$ both are topologically simply connected, whereas in characteristic $p$ the affine line has the Artin--Schreier covers above.
 :::
 
 ::: {.remark title="Against the étale definition card"}
