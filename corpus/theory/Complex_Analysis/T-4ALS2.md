@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4ALS2
 kind: theorem
 title: Montel's theorem
+slogan: 'Locally uniformly bounded holomorphic families are equicontinuous on compacta and therefore normal.'
 classification:
   areas:
   - complex-analysis
