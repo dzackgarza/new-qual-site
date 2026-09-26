@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-B3BDO
 kind: theorem
 title: Goursat's theorem
-slogan: 'Complex differentiability alone makes every triangle boundary integral vanish; continuity of $f'$ is unnecessary.'
+slogan: 'Complex differentiability alone makes every triangle boundary integral vanish; continuity of $f''$ is unnecessary.'
 classification:
   areas:
   - complex-analysis
