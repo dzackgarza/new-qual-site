@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-KODVAN
 kind: theorem
 title: Kodaira vanishing
+slogan: 'On a smooth projective variety in characteristic zero, twisting the canonical bundle by an ample line bundle kills all higher cohomology.'
 classification:
   areas:
   - algebraic-geometry
