@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LA2UI
 kind: theorem
 title: Cauchy integral formula
+slogan: 'Boundary values recover every derivative and every Taylor coefficient through the Cauchy kernel.'
 classification:
   areas:
   - complex-analysis
