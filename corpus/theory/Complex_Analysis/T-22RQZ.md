@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-22RQZ
 kind: theorem
 title: Cauchy's inequalities
+slogan: 'Boundary sup-norm control gives factorial-over-radius bounds on every derivative at the center.'
 classification:
   areas:
   - complex-analysis
