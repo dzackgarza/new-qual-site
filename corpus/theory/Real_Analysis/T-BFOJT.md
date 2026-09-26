@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BFOJT
 kind: theorem
 title: Continuity of translation in $L^1$
+slogan: 'Small spatial translations converge to the identity in the $L^1$ norm.'
 classification:
   areas:
   - real-analysis
