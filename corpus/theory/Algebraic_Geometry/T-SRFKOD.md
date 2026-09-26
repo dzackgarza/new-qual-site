@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFKOD
 kind: theorem
 title: Kodaira dimension and the Enriques classification of surfaces
+slogan: 'Kodaira dimension measures how much the pluricanonical system sees: nothing, a point, a curve, or the whole surface for $\kappa=-\infty,0,1,2$.'
 classification:
   areas:
   - algebraic-geometry
