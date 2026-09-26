@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-KOFDQ
 kind: corollary
 title: Maximum principle for complex-valued harmonic functions
+slogan: 'A boundary bound on the modulus of a harmonic function controls its modulus throughout the domain.'
 classification:
   areas:
   - complex-analysis
