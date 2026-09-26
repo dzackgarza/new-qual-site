@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LEFHYP
 kind: theorem
 title: The Lefschetz hyperplane theorem
+slogan: 'A smooth hyperplane section inherits the ambient topology below middle degree; new cohomology and homotopy can first appear in the middle.'
 classification:
   areas:
   - algebraic-geometry
