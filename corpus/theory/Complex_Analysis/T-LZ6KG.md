@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LZ6KG
 kind: theorem
 title: Extension over removable singularities
+slogan: 'Once a singularity is removable, the holomorphic extension across it is unique.'
 classification:
   areas:
   - complex-analysis
