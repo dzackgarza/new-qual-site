@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-ERNLN
 kind: theorem
 title: Uniform limit theorem
+slogan: 'Uniform convergence preserves continuity.'
 classification:
   areas:
   - real-analysis
