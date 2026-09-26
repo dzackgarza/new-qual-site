@@ -13,12 +13,12 @@ Where the theory comes from, and the two vanishing statements that bound every c
 
 [[D-COHDER]]
 
-The definition is never used directly and is asked anyway, so it is worth being able to say both halves: the functor is right derived because $\globsec{X;\wait}$ is only left exact, and the resolution may be by anything acyclic.
+Sheaf cohomology is the right-derived functor of $\globsec{X;\wait}$ because global sections is left exact, and any acyclic resolution computes it.
 
 [[D-COHFLQ]]
 
-Flasque sheaves are the practical supply of acyclics, and the only class one ever exhibits by hand.
-Injective implies flasque implies acyclic, and the second implication is the one whose proof an examiner may ask for.
+Flasque sheaves provide an explicit class of acyclic sheaves.
+Injective implies flasque implies acyclic; the second implication explains why flasque resolutions compute sheaf cohomology.
 
 [[D-SHFFINE]]
 
@@ -32,14 +32,14 @@ Injective implies flasque implies acyclic, and the second implication is the one
 
 These bound cohomology from opposite ends.
 Affine vanishing says a single affine chart contributes nothing above degree $0$, so all cohomology is a gluing phenomenon; Grothendieck vanishing says nothing survives above the dimension of the space.
-The hypotheses are complementary and it is worth keeping them straight: affine vanishing needs the sheaf to be quasicoherent and says nothing about others, while Grothendieck vanishing holds for every abelian sheaf and needs the space to be Noetherian.
+The hypotheses are complementary: affine vanishing requires a quasicoherent sheaf, while Grothendieck vanishing applies to every abelian sheaf on a Noetherian space.
 
 ## The long exact sequence
 
 [[PR-COHLES]]
 
-Every computation on the exam is this sequence applied to the ideal sequence or the skyscraper sequence, with one term known from projective space.
-Being fluent with the twisted ideal sequence is worth more than any vanishing theorem, because it is what turns the theorems into numbers.
+Many computations apply this sequence to an ideal sequence or skyscraper sequence, with one term known from projective space.
+The twisted ideal sequence converts vanishing results into numerical cohomology calculations.
 
 ## The six operations
 
