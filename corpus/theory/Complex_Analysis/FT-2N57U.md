@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-2N57U
 kind: theorem
 title: Casorati--Weierstrass theorem
+slogan: 'Near an essential singularity, the image is dense in $\CC$; essential behavior comes arbitrarily close to every complex value.'
 prompts:
 - State the Casorati-Weierstrass theorem.
 classification:
