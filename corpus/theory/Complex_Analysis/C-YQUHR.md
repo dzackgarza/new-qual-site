@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-YQUHR
 kind: corollary
 title: Minimum modulus principle
+slogan: 'A zero-free holomorphic function cannot attain a smaller modulus in the interior than on the boundary.'
 classification:
   areas:
   - complex-analysis
