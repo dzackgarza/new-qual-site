@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORGEN
 kind: theorem
 title: Generic smoothness
+slogan: 'In characteristic zero, a dominant map from a smooth variety becomes smooth after shrinking the target to a nonempty open.'
 classification:
   areas:
   - algebraic-geometry
