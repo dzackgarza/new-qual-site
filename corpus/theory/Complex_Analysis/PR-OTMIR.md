@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OTMIR
 kind: proposition
 title: Joukowski map from the upper half-disc to the upper half-plane
+slogan: 'The negative Joukowski map $-\tfrac12(z+z^{-1})$ sends the upper half-disc biholomorphically onto the upper half-plane.'
 classification:
   areas:
   - complex-analysis
