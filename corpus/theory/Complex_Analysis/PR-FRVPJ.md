@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FRVPJ
 kind: proposition
 title: Half-disc to upper half-plane
+slogan: 'The Joukowski-type map $-\tfrac12(z+z^{-1})$ sends the upper half-disc biholomorphically onto the upper half-plane.'
 classification:
   areas:
   - complex-analysis
