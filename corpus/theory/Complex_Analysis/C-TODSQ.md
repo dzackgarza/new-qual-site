@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-TODSQ
 kind: corollary
 title: Locally uniform limits of holomorphic functions are holomorphic
+slogan: 'Locally uniform holomorphic limits stay holomorphic, and their derivatives converge locally uniformly too.'
 classification:
   areas:
   - complex-analysis
