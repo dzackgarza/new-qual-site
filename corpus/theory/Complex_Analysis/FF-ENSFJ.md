@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-ENSFJ
 kind: fact
 title: Taylor series of $\sech z$ at $0$
+slogan: '$\sech z$ has an even Taylor series whose radius $\pi/2$ is set by the nearest zeros of $\cosh z$.'
 prompts:
 - What is the series expansion of $\sech(z)$?
 classification:
