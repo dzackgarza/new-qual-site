@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-UBWL2
 kind: theorem
 title: Meromorphic functions on the Riemann sphere are rational
+slogan: 'Meromorphic on $\CC$ with no essential singularity at $\infty$ means rational.'
 classification:
   areas:
   - complex-analysis
