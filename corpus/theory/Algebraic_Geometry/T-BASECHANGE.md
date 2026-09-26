@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-BASECHANGE
 kind: theorem
 title: Flat, proper and smooth base change
+slogan: 'Under the right flat, proper, or smooth hypotheses, higher direct images commute with pulling the base around a Cartesian square.'
 classification:
   areas:
   - algebraic-geometry
