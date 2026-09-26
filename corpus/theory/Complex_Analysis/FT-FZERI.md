@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-FZERI
 kind: theorem
 title: Rouché's theorem
+slogan: 'If two holomorphic boundary values remain sufficiently close, they enclose the same number of zeros.'
 prompts:
 - What does Rouche's theorem conclude about the zero counts of $f$ and $g$?
 classification:
