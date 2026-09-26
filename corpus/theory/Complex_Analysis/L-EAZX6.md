@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-EAZX6
 kind: lemma
 title: Dirichlet's test
+slogan: 'Bounded partial sums times monotone decay give convergence.'
 classification:
   areas:
   - complex-analysis
