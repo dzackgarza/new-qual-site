@@ -32,9 +32,9 @@ $Z^\red$ is the unique reduced closed subscheme of $X$ with underlying space $Z$
 :::
 
 ::: {.remark}
-"Canonical" here means a universal property, and that is what should be volunteered: any morphism from a reduced scheme $T \to X$ whose image lies in $Z$ factors uniquely through $Z^\red$.
+"Canonical" here is expressed by the universal property: any morphism from a reduced scheme $T\to X$ whose image lies in $Z$ factors uniquely through $Z^\red$.
 Taking $Z = \abs{X}$ gives the reduction $X^\red \to X$, a homeomorphism which is not an isomorphism unless $X$ was already reduced.
 
 The ideal is radical by construction, which is where the classical Nullstellensatz dictionary sits: $\mci(V(\mfa)) = \sqrt{\mfa}$ says that passing to the reduced structure is taking the radical.
-The scheme language keeps the non-radical ideals, and the reduced induced structure is the functor that throws them away.
+Passing to the reduced induced structure replaces the defining ideal sheaf by its radical.
 :::
