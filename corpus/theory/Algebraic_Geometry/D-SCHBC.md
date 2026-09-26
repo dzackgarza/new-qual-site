@@ -27,11 +27,11 @@ It is **local on the base** if $X \to S$ has $P$ whenever there is an open cover
 :::
 
 ::: {.remark}
-Base change is one operation used for three purposes, and saying which one you mean is most of the answer.
+Base change appears in three common forms.
 Extending the ground field, $X \mapsto \fiberprod{X}{\Spec k}{\Spec L}$, is how "geometrically connected" and "geometrically integral" get their names: the property is required to survive every field extension, and connectedness alone does not, as $\Spec \CC$ over $\RR$ shows.
 Restricting to a fibre is base change along $\Spec \kappa(y) \to Y$.
 Spreading out a family is base change along a map of bases.
 
-Almost every adjective — closed immersion, separated, proper, finite, flat, smooth, affine — is stable under base change and local on the base, which is what makes them usable: you check them on an affine cover and they survive every substitution of base.
-Surjectivity of the map on *points* and dominance are the notable properties that need care, and being asked for a property that is not stable is a request for a counterexample, not a list.
+Closed immersion, separated, proper, finite, flat, smooth, and affine are stable under base change and local on the base.
+Surjectivity on underlying points and dominance require separate care and are not governed by the same blanket stability statement.
 :::
