@@ -43,7 +43,7 @@ Riemann--Hurwitz therefore applies, and $R = 0$ since $f$ is unramified, so with
 Then $g_X \geq 0$ gives $-2n \geq -2$, so $n = 1$ and $g_X = 0$, and a finite morphism of degree $1$ between curves is an isomorphism.
 :::
 
-::: {.remark title="Reading the argument"}
+::: {.remark title="Role of the hypotheses"}
 Each hypothesis enters at a specific step: finiteness makes $X$ a projective curve, étaleness supplies separability and the vanishing $R=0$, and the final inequality is $g_X\ge0$.
 The argument is the algebraic analogue of the topological computation of $\pi_1(S^2)$ by Euler characteristic, with $2 - 2g$ in the role of $\chi$.
 
@@ -53,7 +53,7 @@ So the projective line and the affine line separate here, the missing point at i
 Over $\CC$ both are topologically simply connected, whereas in characteristic $p$ the affine line has the Artin--Schreier covers above.
 :::
 
-::: {.remark title="Against the étale definition card"}
-[[D-MORETALE]] names $\pi_1^{\Et}$ as the reason finite étale morphisms are the right notion of covering space but proves nothing about a particular curve.
-This card is the computation that makes the name concrete, and it is also the first place where "étale cover" must be read as *finite* étale: an open immersion is étale and is not a cover, so dropping finiteness makes the statement false for trivial reasons.
+::: {.remark title="Finite étale covers"}
+[[D-MORETALE]] defines étale morphisms and relates finite étale morphisms to algebraic covering spaces.
+Here finiteness is essential: an open immersion is étale but is not an étale cover in the sense used above, and dropping finiteness would make simple connectedness false for open-subset reasons.
 :::
