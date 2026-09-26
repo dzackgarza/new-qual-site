@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-1
 kind: theorem
 title: Uniform limits of continuous functions are continuous
+slogan: 'Uniform convergence preserves continuity.'
 classification:
   areas:
   - real-analysis
