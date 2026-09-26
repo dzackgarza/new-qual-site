@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SF23E
 kind: proposition
 title: Logarithm from the slit plane to a horizontal strip
+slogan: 'The principal logarithm unwraps the slit plane into the strip $-\pi<\Im w<\pi$.'
 classification:
   areas:
   - complex-analysis
