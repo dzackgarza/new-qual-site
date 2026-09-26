@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-C5VEI
 kind: theorem
 title: Casorati--Weierstrass theorem
+slogan: 'At an essential singularity, every punctured neighborhood maps densely into $\CC$.'
 classification:
   areas:
   - complex-analysis
