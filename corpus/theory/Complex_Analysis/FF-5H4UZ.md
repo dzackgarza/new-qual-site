@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-5H4UZ
 kind: fact
 title: Proof of the Schwarz lemma
+slogan: 'Factor $f(z)=zg(z)$ and let the maximum-modulus bound on $g$ approach the unit circle.'
 prompts:
 - Prove the Schwarz lemma.
 classification:
