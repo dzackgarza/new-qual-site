@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-4LISY
 kind: proposition
 title: Uniform convergence of a series through its tails
+slogan: 'A pointwise-convergent series is uniformly convergent exactly when its tails vanish uniformly.'
 classification:
   areas:
   - complex-analysis
