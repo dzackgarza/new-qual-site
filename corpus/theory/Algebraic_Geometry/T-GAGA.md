@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-GAGA
 kind: theorem
 title: GAGA
+slogan: 'For projective varieties over $\CC$, algebraic and analytic coherent sheaves—and their cohomology—are the same; Chow turns analytic subspaces back into algebraic ones.'
 classification:
   areas:
   - algebraic-geometry
