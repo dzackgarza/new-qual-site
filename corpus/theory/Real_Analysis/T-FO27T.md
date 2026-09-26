@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-FO27T
 kind: theorem
 title: Bounded inverse theorem
+slogan: 'A continuous linear bijection between Banach spaces has a continuous inverse.'
 classification:
   areas:
   - real-analysis
