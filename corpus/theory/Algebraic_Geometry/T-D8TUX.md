@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-D8TUX
 kind: theorem
 title: When the canonical divisor is very ample
+slogan: 'The canonical map embeds exactly the non-hyperelliptic curves of genus at least $3$; a degree-two pencil is the obstruction.'
 classification:
   areas:
   - algebraic-geometry
