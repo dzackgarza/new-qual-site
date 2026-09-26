@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-2VUTS
 kind: fact
 title: Value of $\arctan(\sqrt{3}/3)$
+slogan: '$\arctan(\sqrt3/3)=\pi/6$: the special-angle identity $\tan(\pi/6)=1/\sqrt3$.'
 prompts:
 - What is $\arctan\qty{\sqrt{3} \over 3}$?
 classification:
