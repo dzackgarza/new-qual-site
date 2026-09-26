@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-JKE6C
 kind: proposition
 title: Cauchy--Riemann implies holomorphic
+slogan: '$C^1$ plus Cauchy--Riemann turns real differentiability into complex differentiability.'
 classification:
   areas:
   - complex-analysis
