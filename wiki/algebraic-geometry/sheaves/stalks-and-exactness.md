@@ -14,8 +14,8 @@ This is the payoff of the previous page and the entry to cohomology.
 
 [[PR-C9ZEK]]
 
-The gap between "surjective" and "surjective on sections" is the single most examined point in this topic, because it is where a student who has only memorised definitions gives the wrong answer.
-The example makes the gap a number.
+Surjectivity of sheaves does not imply surjectivity on global sections.
+The example makes the obstruction explicit.
 
 [[FE-Y12XB]]
 
@@ -25,7 +25,7 @@ The example makes the gap a number.
 
 [[PR-SHFPUSHEX]]
 
-## What to say when asked where it fails
+## The obstruction to a global lift
 
 Lifting a global section of $\mch$ is possible over each member of some open cover, by the definition of surjectivity.
 The lifts differ on overlaps by sections of $\mcf$, and those differences form a Čech $1$-cocycle.
@@ -46,5 +46,5 @@ Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream o
 
 [[D-UDIVH]]
 
-The trap is that the two supports read identically and behave differently: a fixed section dies on an open set, a whole stalk need not.
+The two notions of support are written similarly but behave differently: a fixed section can vanish on an open set while the whole stalk need not vanish there.
 Extension by zero is the construction that lives in the gap, and coherence on a Noetherian scheme is the hypothesis that closes it.
