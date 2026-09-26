@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MORFINCHAR
 kind: proposition
 title: Finite equals proper plus quasi-finite
+slogan: 'Over locally Noetherian schemes, finite means proper plus quasi-finite, equivalently proper with finite fibres.'
 classification:
   areas:
   - algebraic-geometry
@@ -30,8 +31,7 @@ Let $\pi \colon X \to Y$ be a morphism of schemes.
 
 3. If $\pi$ is finite, then $X \cong \operatorname{\mathbf{Proj}}_Y \mathcal{S}$ over $Y$ for a quasicoherent graded $\OO_Y$-algebra $\mathcal{S}$ generated in degree $1$ by the finite type module $\mathcal{S}_1$; in particular $\pi$ is projective in the sense of [[D-SCHRELSPECPROJ]], and proper.
 
-4. A morphism of locally Noetherian schemes is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres [@Har10a, Exercise III.11.2].
-Without Noetherian hypotheses: finite exactly when proper, locally of finite presentation, and with finite fibres.
+4. A morphism of locally Noetherian schemes is finite exactly when it is proper and quasi-finite, equivalently proper with finite fibres [@Har10a, Exercise III.11.2]. Without Noetherian hypotheses: finite exactly when proper, locally of finite presentation, and with finite fibres.
 :::
 
 ::: {.remark}
