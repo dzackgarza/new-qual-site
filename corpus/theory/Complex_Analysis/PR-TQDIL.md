@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TQDIL
 kind: proposition
 title: Exponential map from a vertical half-strip to a half-disc
+slogan: 'The exponential converts vertical height to radius and horizontal position to angle, sending the half-strip to the right half-disc.'
 classification:
   areas:
   - complex-analysis
