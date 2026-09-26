@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VARHT
 kind: proposition
 title: Krull's principal ideal theorem, and codimension one
+slogan: 'One nonzerodivisor cuts height one; on affine space, codimension-one irreducibles are exactly hypersurfaces.'
 classification:
   areas:
   - algebraic-geometry
@@ -32,8 +33,7 @@ For $B$ a finitely generated domain over a field and $\mfp \in \Spec B$,
 \[
 \height \mfp + \krulldim (B/\mfp) = \krulldim B .
 \]
-[@Har10a, Theorem I.1.8A]
-A closed irreducible $Y \subseteq \AA^n$ has $\codim Y = 1$ exactly when $Y = V(f)$ for a single irreducible nonconstant $f \in k[x_1,\ldots,x_n]$.
+[@Har10a, Theorem I.1.8A] A closed irreducible $Y \subseteq \AA^n$ has $\codim Y = 1$ exactly when $Y = V(f)$ for a single irreducible nonconstant $f \in k[x_1,\ldots,x_n]$.
 [@Har10a, Proposition I.1.13]
 :::
 
