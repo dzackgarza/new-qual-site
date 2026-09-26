@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SVF2W
 kind: theorem
 title: Equivalent conditions for a holomorphic function to vanish identically
+slogan: 'For a holomorphic function on a connected domain, accumulating zeros, infinite-order vanishing, and identically zero are equivalent.'
 classification:
   areas:
   - complex-analysis
