@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-GQRV2
 kind: theorem
 title: Inclusions among $L^p$ spaces
+slogan: 'Finite measure gives $L^q\subseteq L^p$, counting measure gives $\ell^p\subseteq\ell^q$, and on $\RR^n$ neither inclusion holds.'
 prompts:
 - How do the $L^p$ spaces include into one another when $m(X) < \infty$, and when $m(X) = \infty$?
 classification:
@@ -20,10 +21,10 @@ review: draft
 Let $1\le p< q\le\infty$.
 
 1. If $(X,\mcm,\mu)$ is a [[D-QYLPH|measure]] space with $\mu(X)<\infty$, then $L^q(X)\subseteq L^p(X)$, and $\norm{f}_p\le\mu(X)^{\frac1p-\frac1q}\norm{f}_q$ for $f\in L^q(X)$, with $\frac1\infty\coloneqq0$.
-In particular $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
+   In particular $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$.
 
 2. For counting measure on $\ZZ$, $\ell^p(\ZZ)\subseteq\ell^q(\ZZ)$, and $\norm{a}_q\le\norm{a}_p$ for $a\in\ell^p(\ZZ)$.
-In particular $\ell^1(\ZZ) \subseteq \ell^2(\ZZ) \subseteq \ell^\infty(\ZZ)$.
+   In particular $\ell^1(\ZZ) \subseteq \ell^2(\ZZ) \subseteq \ell^\infty(\ZZ)$.
 
 3. For Lebesgue measure on $\RR^n$, neither $L^p(\RR^n)\subseteq L^q(\RR^n)$ nor $L^q(\RR^n)\subseteq L^p(\RR^n)$ holds.
 :::
