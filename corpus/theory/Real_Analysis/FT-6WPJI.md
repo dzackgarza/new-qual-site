@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FT-6WPJI
 kind: theorem
 title: Baire category theorem
+slogan: 'Complete metric and locally compact Hausdorff spaces cannot be exhausted by countably many nowhere-dense defects.'
 prompts:
 - State the Baire category theorem.
 classification:
