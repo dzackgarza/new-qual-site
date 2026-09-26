@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-BSYDE
 kind: fact
 title: Compact operators
+slogan: 'Compact operators send bounded sets to precompact sets; on Hilbert space they are norm-limits of finite-rank operators.'
 prompts:
 - What is a compact operator?
 classification:
@@ -29,6 +30,5 @@ The closure of $T(\theset{x\in X\suchthat\norm{x}\leq 1})$ is compact, hence bou
 :::
 
 ::: {.fact}
-Let $H$ be a [[D-7QQUO|Hilbert space]].
-The set of compact operators $H\to H$ is the closure, in the operator norm, of the set of bounded operators $H\to H$ of finite rank.
+Let $H$ be a [[D-7QQUO|Hilbert space]]. The set of compact operators $H\to H$ is the closure, in the operator norm, of the set of bounded operators $H\to H$ of finite rank.
 :::
