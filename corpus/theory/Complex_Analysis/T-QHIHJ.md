@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-QHIHJ
 kind: theorem
 title: Liouville's theorem
+slogan: 'A bounded entire function has nowhere to grow, so it is constant.'
 classification:
   areas:
   - complex-analysis
