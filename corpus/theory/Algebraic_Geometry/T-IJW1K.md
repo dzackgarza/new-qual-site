@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-IJW1K
 kind: theorem
 title: The cohomology of $\OO_{\PP^n}(d)$
+slogan: 'Twists on projective space have cohomology only at the ends: $H^0$ for nonnegative degree, $H^n$ for sufficiently negative degree, and nothing in between.'
 classification:
   areas:
   - algebraic-geometry
@@ -33,8 +34,7 @@ Then
 
 - $H^p(\PP^n, \OO(d)) = 0$ for $0 < p < n$ and for $p > n$, for every $d$.
 
-[@Har10a, Theorem III.5.1]
-The [projective-space cohomology calculation](https://stacks.math.columbia.edu/tag/01XS) gives these formulas over every ring $A$.
+[@Har10a, Theorem III.5.1] The [projective-space cohomology calculation](https://stacks.math.columbia.edu/tag/01XS) gives these formulas over every ring $A$.
 :::
 
 ::: {.remark title="Projective dimension zero"}
