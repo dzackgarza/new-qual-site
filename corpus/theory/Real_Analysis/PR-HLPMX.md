@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-HLPMX
 kind: proposition
 title: Integrals of nonnegative functions are subadditive over covers and additive over disjoint unions
+slogan: 'Nonnegative integrals are subadditive over covers and exactly additive across disjoint pieces.'
 classification:
   areas:
   - real-analysis
