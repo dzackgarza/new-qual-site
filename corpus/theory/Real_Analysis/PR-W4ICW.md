@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-W4ICW
 kind: proposition
 title: Jensen's inequality
+slogan: 'For a probability measure, convexity puts the function of the mean below the mean of the function.'
 classification:
   areas:
   - real-analysis
