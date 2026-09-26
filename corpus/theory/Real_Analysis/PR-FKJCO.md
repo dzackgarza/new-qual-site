@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FKJCO
 kind: proposition
 title: The closed unit ball of $C([0,1])$ is not compact
+slogan: 'In the sup norm, boundedness alone does not make a family of continuous functions compact.'
 classification:
   areas:
   - real-analysis
