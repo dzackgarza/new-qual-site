@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JXDQT
 kind: theorem
 title: Argument principle counting zeros and poles
+slogan: 'The logarithmic derivative counts zeros minus poles; weighting by $z$ also recovers the sum of the zeros.'
 classification:
   areas:
   - complex-analysis
