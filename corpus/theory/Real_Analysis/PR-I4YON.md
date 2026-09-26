@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-I4YON
 kind: proposition
 title: Open sets are countable unions of disjoint intervals or almost disjoint cubes
+slogan: 'Open sets decompose countably into disjoint intervals in one dimension and almost disjoint closed cubes in higher dimensions.'
 classification:
   areas:
   - real-analysis
