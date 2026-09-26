@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-Y5S7V
 kind: proposition
 title: The degree of a divisor on a projective curve
+slogan: 'On a smooth projective curve, zeros and poles balance: every principal divisor has degree zero.'
 classification:
   areas:
   - algebraic-geometry
