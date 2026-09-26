@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DEFEXT
 kind: theorem
 title: Infinitesimal automorphisms and first-order deformations
+slogan: '$H^0(T_X)$ controls infinitesimal automorphisms, $H^1(T_X)$ first-order deformations, and $H^2(T_X)$ their obstructions.'
 classification:
   areas:
   - algebraic-geometry
