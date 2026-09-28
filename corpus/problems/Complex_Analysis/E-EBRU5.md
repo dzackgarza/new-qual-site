@@ -23,8 +23,8 @@ I \da \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
 :::
 
 ::: {.solution}
-Write $f(z) = \sqrt{z^2-1} = \sqrt{(z+1)(z-1)}$.
-First note $f$ is even, so
+Write $f(z) = 1/\sqrt{z^2-1} = 1/\sqrt{(z+1)(z-1)}$.
+The integrand is even, so
 \[
 I = {1\over 2}I',\qquad I' \da \int_{-1}^1 {1\over \sqrt{z^2-1}} \dz
 .\]
@@ -49,14 +49,14 @@ These combine to contribute
 \qty{\int_{\gamma_1} + \int_{\gamma_2}}f = -2I'
 .\]
 
-Note -- we'll want the contour to actually be positively oriented with respect to $z=\infty$, so we should reverse the orientation of $\Gamma$ to get a total contribution to $2I$ instead.
+For the residue at $\infty$, orient $\Gamma$ positively with respect to $z=\infty$, which reverses it; the two segments then contribute $2I'$.
 
 The contribution from the small circles:
-parameterize the first as $-1 + R e^{2\pi i t}$, then
+parameterize the first as $-1 + \eps e^{2\pi i t}$. Since $\abs{(-1 + \eps e^{2\pi i t})^2 - 1}=\eps\abs{\eps e^{2\pi i t}-2}\ge\eps$ for $\eps<1$,
 \[
-\abs{ \int_{C_\eps^1}f(z)\dz} = \abs{\int_0^1 {2\pi i R e^{2\pi i t}\over \sqrt{ (-1 + R e^{2\pi i t} )^2 - 1 } } \dt} \sim \int_0^1 {R\over \sqrt{R^2-1}} \dt \convergesto{R\to 0} 0
+\abs{ \int_{C_\eps^1}f(z)\dz} = \abs{\int_0^1 {2\pi i \eps e^{2\pi i t}\over \sqrt{ (-1 + \eps e^{2\pi i t} )^2 - 1 } } \dt} \le 2\pi{\eps\over\sqrt\eps} \convergesto{\eps\to 0} 0
 .\]
-A similar bound works for the second circle using the parameterization $1+ Re^{2\pi i t}$.
+The same bound holds for the second circle, parameterized as $1+ \eps e^{2\pi i t}$.
 
 Contributions from residues: take the residue at infinity,
 \[
