@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L3NH3
 kind: problem
-title: Hungerford 4.4.5
+title: $\operatorname{Hom}_R(R,R)\cong R^{\mathrm{op}}$
 classification:
   areas:
   - algebra
@@ -24,52 +24,25 @@ Conclude that if $R$ is commutative, then there is a ring isomorphism $\mathrm{H
 :::
 
 ::: {.solution}
-**Goal.** Show $\operatorname{Hom}_R(R,R) \cong R^{\mathrm{op}}$, and $\operatorname{Hom}_R(R,R) \cong R$ when $R$ is commutative.
+Let $\Phi\colon \operatorname{Hom}_R(R,R) \to R^{\mathrm{op}}$ be evaluation at $1$, $\Phi(f) = f(1)$. For $a\in R$ let $f_a\colon R\to R$ be $f_a(r)=ra$.
 
-<1>1. Define $\Phi: \operatorname{Hom}_R(R,R) \to R^{\mathrm{op}}$ by $\Phi(f) = f(1)$.
-::: {.proof}
-evaluate a left $R$-module homomorphism at $1$.
-:::
+<1>1. $\Phi$ is a bijection with inverse $a \mapsto f_a$.
 
-<1>2. $\Phi$ is a bijection.
-<2>1. A left $R$-module homomorphism $f: R \to R$ is determined by $f(1)$.
 ::: {.proof}
-$f(r) = f(r \cdot 1) = r f(1)$ (since $f$ is $R$-linear).
-:::
-<2>2. Conversely, for any $a \in R$, the map $f_a(r) = ra$ is a left $R$-module homomorphism.
-::: {.proof}
-$f_a(r_1 + r_2) = (r_1 + r_2)a = r_1 a + r_2 a$ and $f_a(sr) = (sr)a = s(ra) = s f_a(r)$.
-:::
-<2>3. Hence $\Phi$ is a bijection with inverse $a \mapsto f_a$.
-::: {.proof}
-<1>2.1 and <1>2.2.
+Each $f_a$ is a left $R$-module homomorphism: $f_a(r_1 + r_2) = r_1 a + r_2 a$ and $f_a(sr) = (sr)a = s f_a(r)$. Also $\Phi(f_a)=a$. Conversely, for $f\in\operatorname{Hom}_R(R,R)$, $R$-linearity gives $f(r) = f(r \cdot 1) = r f(1)$, so $f=f_{\Phi(f)}$.
 :::
 
-<1>3. $\Phi$ is a ring homomorphism to $R^{\mathrm{op}}$.
-<2>0. $\Phi(f+g)=\Phi(f)+\Phi(g)$ and $\Phi(\operatorname{id}_R)=1$.
+<1>2. $\Phi$ is a ring homomorphism $\operatorname{Hom}_R(R,R)\to R^{\mathrm{op}}$.
+
 ::: {.proof}
-$(f+g)(1)=f(1)+g(1)$ and $\operatorname{id}_R(1)=1$.
-:::
-<2>1. $\Phi(f \circ g) = (f \circ g)(1) = f(g(1)) = g(1) f(1)$.
-::: {.proof}
-$g(1) = g(1) \cdot 1$, and $f(g(1)) = f(g(1)\cdot 1) = g(1) f(1)$.
-:::
-<2>2. In $R^{\mathrm{op}}$, the product is $f(1) \cdot_{\mathrm{op}} g(1) = g(1) f(1)$.
-::: {.proof}
-the multiplication in $R^{\mathrm{op}}$ is reversed.
-:::
-<2>3. Hence $\Phi(f \circ g) = \Phi(f) \cdot_{\mathrm{op}} \Phi(g)$, so $\Phi$ is a ring homomorphism to $R^{\mathrm{op}}$.
-::: {.proof}
-<1>3.1 and <1>3.2.
+We have $\Phi(f+g)=f(1)+g(1)$ and $\Phi(\operatorname{id}_R)=1$. For composition, $R$-linearity of $f$ gives
+$$\Phi(f \circ g) = f(g(1)) = f(g(1)\cdot 1) = g(1) f(1) = f(1)\cdot_{\mathrm{op}} g(1) = \Phi(f)\cdot_{\mathrm{op}}\Phi(g),$$
+where $x\cdot_{\mathrm{op}}y=yx$ is the multiplication of $R^{\mathrm{op}}$.
 :::
 
-<1>4. If $R$ is commutative, then $R^{\mathrm{op}} = R$, so $\operatorname{Hom}_R(R,R) \cong R$.
-::: {.proof}
-in a commutative ring, the opposite ring is the same ring.
-:::
+<1>3. Q.E.D.
 
-<1>5. Q.E.D.
 ::: {.proof}
-<1>3 gives the homomorphism to $R^{\mathrm{op}}$; <1>4 gives the isomorphism to $R$ in the commutative case.
+By steps <1>1 and <1>2, $\Phi$ is a ring isomorphism $\operatorname{Hom}_R(R,R)\cong R^{\mathrm{op}}$. If $R$ is commutative, then $x\cdot_{\mathrm{op}}y=yx=xy$, so $R^{\mathrm{op}}=R$ as rings and $\operatorname{Hom}_R(R,R) \cong R$.
 :::
 :::
