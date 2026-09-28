@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-2PNEG|covering space]] and $f\colon(Y, y_0)\to(X, x_0)$ a map with $Y$ path-connected and locally path-connected.
+Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-ANO2D|covering space]] and $f\colon(Y, y_0)\to(X, x_0)$ a map with $Y$ path-connected and locally path-connected.
 Then a lift $\tilde f\colon(Y, y_0)\to(\tilde X, \tilde x_0)$ with $p\circ\tilde f = f$ exists if and only if $f_*(\pi_1(Y, y_0)) \subseteq p_*(\pi_1 (\tilde X, \tilde x_0))$ [@Hat02]:
 
 \begin{tikzcd}
