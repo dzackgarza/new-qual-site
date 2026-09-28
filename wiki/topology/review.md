@@ -7,7 +7,17 @@ order: 7
 
 ## Point-set
 
-The characterizations of compactness, Tychonoff's theorem, Urysohn's lemma, the Tietze extension theorem, the metrization theorems, and the Baire category theorem are in [[topology/point-set/index|Point-set topology]].
+[[T-HH3YP]]
+
+[[T-4RLPQ]]
+
+[[T-G4GO4]]
+
+[[FT-52GNK]]
+
+[[FT-6WPJI]]
+
+[[topology/point-set/point-set|Point-set topology]] proves the tube lemma.
 
 ## Fundamental group
 
@@ -33,7 +43,7 @@ The characterizations of compactness, Tychonoff's theorem, Urysohn's lemma, the 
 
 [[PR-EWJMJ]]
 
-Proved in [[topology/fundamental-group/index|Fundamental group]].
+[[topology/fundamental-group/theorems|Theorems: algebraic topology]] proves that [[T-2YTCZ|maps into a convex set are homotopic]], computes [[PR-3APOT|$\pi_1$ of a wedge sum]], and proves that [[PR-EWJMJ|$\pi_1$ detects simple connectivity]]; it sketches the proofs of the [[T-BTPU4|Seifert--van Kampen theorem]] and of the formula for [[PR-OO3DH|$\pi_1$ of a product]].
 
 ## Homology
 
@@ -49,7 +59,7 @@ Proved in [[topology/fundamental-group/index|Fundamental group]].
 
 [[PR-6PENU]]
 
-Proved in [[topology/homology/index|Homology]].
+[[topology/homology/homology|Homology theory and computations]] computes the [[PR-B6BB2|reduced homology of a wedge sum]] and proves the [[PR-6PENU|suspension isomorphism for the cohomology of spheres]].
 
 ## The standard computations
 
