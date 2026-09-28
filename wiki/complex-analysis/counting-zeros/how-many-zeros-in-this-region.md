@@ -12,7 +12,6 @@ topics:
 # How many zeros in this region?
 
 The zeros of a holomorphic function in a region can be counted by factoring, by Rouché's theorem, by the argument principle, or, for a locally uniform limit, by Hurwitz's theorem.
-Each applies under different information about the function.
 
 ## Explicit factorization
 
@@ -33,7 +32,10 @@ If $f = M + m$ with $\abs{m} < \abs{M}$ on the boundary curve $\gamma$, then $f$
 This applies when $M$ is a term whose zeros inside $\gamma$ are known, such as one monomial of a polynomial that dominates on $\abs z = R$, or an entire function compared with a polynomial.
 The dominant term depends on the curve: for $z^4+6z+3$, it is $z^4$ on $\abs z = 2$ and $6z$ on $\abs z = 1$ ([[complex-analysis/counting-zeros/rouches-theorem|Rouché's theorem]]).
 
-The inequality must be strict at every point of $\gamma$, and for meromorphic functions the conclusion is an equality of zeros minus poles.
+::: {.example title="Rouché's theorem fails with $\abs m\leq\abs M$ on $\gamma$"}
+On $\gamma = \ts{\abs z = 1}$, take $M(z) \coloneqq z$ and $m(z) \coloneqq -1$, so $\abs m \leq \abs M$ on $\gamma$ with equality everywhere.
+Then $M$ has one zero in $\DD$, while $M + m = z - 1$ has none in $\DD$; its zero lies on $\gamma$.
+:::
 
 ## The image of the boundary curve
 
@@ -44,7 +46,7 @@ It applies when the image curve $f\circ\gamma$ or the change of $\arg f$ along $
 ## A locally uniform limit
 
 **Hurwitz's theorem.**
-If $f_n \to f$ locally uniformly on a connected open set, then near a zero of order $n$ of $f$, the functions $f_k$ have exactly $n$ zeros for large $k$ ([[T-FZWEC]]).
+If holomorphic $f_k \to f$ locally uniformly on a connected open set, then near a zero of order $n$ of $f$, the functions $f_k$ have exactly $n$ zeros for large $k$ ([[T-FZWEC]]).
 Consequently a limit of nowhere-zero functions is nowhere zero or identically zero, and a limit of univalent functions is univalent or constant ([[T-SULVA]]).
 
 ## Solutions of $f(z) = w$
