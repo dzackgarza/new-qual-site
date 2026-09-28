@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HEJJK
 kind: problem
-title: Entire functions missing a disc
+title: An entire function whose image misses a disk is constant
 classification:
   areas:
   - complex-analysis
