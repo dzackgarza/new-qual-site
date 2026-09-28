@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-7ZCKU
 kind: problem
-title: No bijective conformal maps from a disc to an annulus
+title: No conformal bijection from the punctured disk onto the annulus $1<\abs z<2$
 classification:
   areas:
   - complex-analysis
