@@ -34,7 +34,7 @@ the sum of the $\binom{n}{\ell}$ principal $\ell\times\ell$ minors of $A$, where
 
 ::: {.example}
 Let $M = (4i + j)_{0 \leq i, j \leq 3} \in \Mat_{4\times 4}(\QQ)$.
-Its principal submatrices of each size $\ell$ are listed below; there are none of size $5$.
+The principal submatrices of $M$ of sizes $\ell=1,\ldots,4$:
 
 ![](../../assets/figures/2021-07-24_19-48-11.png)
 
