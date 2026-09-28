@@ -21,43 +21,37 @@ Prove that any group of size 15 is cyclic.
 :::
 
 ::: {.solution}
-<1>1. Sylow analysis of $G$:
-<2>1. The order of $G$ is $|G| = 15 = 3 \cdot 5$.
-By the Sylow Theorems, the number $n_3$ of Sylow 3-subgroups satisfies:
-\[
-n_3 \equiv 1 \pmod 3 \quad \text{and} \quad n_3 \mid 5 \implies n_3 = 1.
-\]
-Thus $G$ contains a unique Sylow 3-subgroup $P$, which is normal in $G$ ($P \triangleleft G$), with $P \cong \mathbb{Z}/3\mathbb{Z}$.
-<2>2. Similarly, the number $n_5$ of Sylow 5-subgroups satisfies:
-\[
-n_5 \equiv 1 \pmod 5 \quad \text{and} \quad n_5 \mid 3 \implies n_5 = 1.
-\]
-Thus $G$ contains a unique Sylow 5-subgroup $Q$, which is normal in $G$ ($Q \triangleleft G$), with $Q \cong \mathbb{Z}/5\mathbb{Z}$.
+Let $G$ be a group of order $15=3\cdot5$.
 
-<1>2. Internal direct product decomposition:
-<2>1. Since $\gcd(|P|, |Q|) = \gcd(3, 5) = 1$, Lagrange's Theorem implies:
-\[
-P \cap Q = \{e\}.
-\]
-<2>2. For any $p \in P$ and $q \in Q$, consider the commutator $[p, q] = p q p^{-1} q^{-1}$:
-- Since $Q \triangleleft G$, $(p q p^{-1}) q^{-1} \in Q$.
-- Since $P \triangleleft G$, $p (q p^{-1} q^{-1}) \in P$.
-Thus $[p, q] \in P \cap Q = \{e\}$, which means $pq = qp$ for all $p \in P, q \in Q$.
-<2>3. The map $\varphi: P \times Q \to G$ defined by $\varphi(p, q) = pq$ is a group homomorphism.
-Its kernel is $\operatorname{ker}(\varphi) = \{(p, q) \mid pq = e\} = \{(p, p^{-1}) \mid p \in P \cap Q\} = \{(e, e)\}$, so $\varphi$ is injective.
-Since $|P \times Q| = 3 \cdot 5 = 15 = |G|$, $\varphi$ is an isomorphism:
-\[
-G \cong P \times Q \cong (\mathbb{Z}/3\mathbb{Z}) \times (\mathbb{Z}/5\mathbb{Z}).
-\]
+<1>1. $G$ has a unique Sylow $3$-subgroup $P\cong\ZZ/3\ZZ$ and a unique Sylow $5$-subgroup $Q\cong\ZZ/5\ZZ$, and both are normal in $G$.
 
-<1>3. Conclusion of cyclicity:
-<2>1. By the Chinese Remainder Theorem, since $\gcd(3, 5) = 1$:
-\[
-(\mathbb{Z}/3\mathbb{Z}) \times (\mathbb{Z}/5\mathbb{Z}) \cong \mathbb{Z}/15\mathbb{Z}.
-\]
-(Equivalently, if $P = \langle a \rangle$ and $Q = \langle b \rangle$, the element $g = ab$ has order $\operatorname{lcm}(3, 5) = 15$, so $G = \langle ab \rangle$.)
-Thus $G$ is cyclic.
+::: {.proof}
+By the Sylow theorems, the number $n_3$ of Sylow $3$-subgroups satisfies $n_3\equiv1\pmod3$ and $n_3\mid5$, so $n_3=1$.
+Likewise $n_5\equiv1\pmod5$ and $n_5\mid3$, so $n_5=1$.
+A unique Sylow $p$-subgroup is normal, since conjugation permutes the Sylow $p$-subgroups.
+Groups of prime order are cyclic.
+:::
 
-<1>4. Conclusion:
-Any group of order 15 is isomorphic to $\mathbb{Z}/15\mathbb{Z}$, hence cyclic. Q.E.D.
+<1>2. $G\cong P\times Q$.
+
+::: {.proof}
+By Lagrange's theorem, $|P\cap Q|$ divides $\gcd(3,5)=1$, so $P\cap Q=\{e\}$.
+For $p\in P$ and $q\in Q$, the commutator $[p,q]=pqp^{-1}q^{-1}$ equals $(pqp^{-1})q^{-1}\in Q$ because $Q\lhd G$, and equals $p(qp^{-1}q^{-1})\in P$ because $P\lhd G$.
+Hence $[p,q]\in P\cap Q=\{e\}$, so $pq=qp$.
+Therefore $\varphi\colon P\times Q\to G$, $\varphi(p,q)=pq$, is a group homomorphism.
+Its kernel is $\{(p,p^{-1}) : p\in P\cap Q\}=\{(e,e)\}$, so $\varphi$ is injective, and $\abs{P\times Q}=15=\abs{G}$ makes it an isomorphism.
+:::
+
+<1>3. $G$ is cyclic.
+
+::: {.proof}
+By step <1>2 and the Chinese remainder theorem, $G\cong\ZZ/3\ZZ\times\ZZ/5\ZZ\cong\ZZ/15\ZZ$.
+Equivalently, if $P=\langle a\rangle$ and $Q=\langle b\rangle$, then $a$ and $b$ commute and have coprime orders, so $ab$ has order $\operatorname{lcm}(3,5)=15$ and $G=\langle ab\rangle$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 proves that every group of order $15$ is cyclic.
+:::
 :::
