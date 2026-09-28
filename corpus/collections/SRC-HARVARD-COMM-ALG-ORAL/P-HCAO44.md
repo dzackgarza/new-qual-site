@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO44
 kind: problem
-title: Residue field before and after localization
+title: Reduction modulo a maximal ideal commutes with localization at it
 classification:
   areas:
   - algebra
