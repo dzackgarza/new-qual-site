@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-552IH
 kind: proposition
 title: Closure properties of Lebesgue measurable functions
-slogan: 'Measurability survives absolute values, countable suprema and infima, limits, algebraic operations, products, and invertible linear changes.'
+slogan: 'Measurability is preserved by absolute values, countable suprema, infima, and limits, finite sums and differences, extension to a product space, invertible linear changes of variable, and $(x,y)\mapsto f(x-y)$.'
 classification:
   areas:
   - real-analysis
