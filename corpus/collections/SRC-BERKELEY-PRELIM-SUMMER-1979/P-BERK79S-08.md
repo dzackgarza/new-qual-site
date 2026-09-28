@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-08
 kind: problem
-title: A uniformly continuous homeomorphism onto $\mathbb R^n$ has full domain
+title: A uniformly continuous homeomorphism onto $\RR^n$ has full domain
 classification:
   areas: [prelim]
   topics: []
