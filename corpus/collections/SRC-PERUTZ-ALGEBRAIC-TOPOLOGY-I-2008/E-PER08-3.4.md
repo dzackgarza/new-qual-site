@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-3.4
 kind: problem
-title: PSL_2(Z) as the free product C_2*C_3
+title: $\operatorname{PSL}_2(\ZZ)$ as the free product $(\ZZ/2)*(\ZZ/3)$
 classification:
   areas: [topology]
   topics: []
@@ -265,29 +265,29 @@ s(\mathbb H\setminus\mathcal B)
 \tag{1}
 \]
 
-Now suppose $z\notin\mathcal A$, so $\operatorname{Re}z\le0$. For $\nu(z)=1/(1-z)$,
+Now suppose $z\notin\mathcal A$, so $\operatorname{Re}z\le0$. For $u(z)=1/(1-z)$,
 \[
-|\nu(z)-1|=\frac{|z|}{|1-z|}.
+|u(z)-1|=\frac{|z|}{|1-z|}.
 \]
 But
 \[
 |1-z|^2-|z|^2=1-2\operatorname{Re}z\ge1,
 \]
-so $|\nu(z)-1|<1$. Hence $\nu(z)\notin\mathcal B$.
+so $|u(z)-1|<1$. Hence $u(z)\notin\mathcal B$.
 
-For $\nu^2(z)=(z-1)/z$,
+For $u^2(z)=(z-1)/z$,
 \[
-|\nu^2(z)-1|=\frac1{|z|},
+|u^2(z)-1|=\frac1{|z|},
 \qquad
-|\nu^2(z)|=\frac{|z-1|}{|z|}.
+|u^2(z)|=\frac{|z-1|}{|z|}.
 \]
 Since $\operatorname{Im}z>0$ and $\operatorname{Re}z\le0$, we have $|z-1|>1$, so
 \[
-|\nu^2(z)-1|<|\nu^2(z)|.
+|u^2(z)-1|<|u^2(z)|.
 \]
-Thus $\nu^2(z)\notin\mathcal B$. Consequently
+Thus $u^2(z)\notin\mathcal B$. Consequently
 \[
-\nu(\mathbb H\setminus\mathcal A),\
+u(\mathbb H\setminus\mathcal A),\
 u^2(\mathbb H\setminus\mathcal A)
 \subseteq
 \mathbb H\setminus\mathcal B.
@@ -299,24 +299,24 @@ We also need the initial step from $D$. If $z\in D$, then $\operatorname{Re}z>0$
 s(z)\notin\mathcal A.
 \tag{3}
 \]
-For $\nu(z)$, the inequality $\operatorname{Re}z<1/2$ gives
+For $u(z)$, the inequality $\operatorname{Re}z<1/2$ gives
 \[
 |z|<|1-z|,
 \]
 so
 \[
-|\nu(z)-1|=\frac{|z|}{|1-z|}<1;
+|u(z)-1|=\frac{|z|}{|1-z|}<1;
 \]
-hence $\nu(z)\notin\mathcal B$. Finally, because $|z-1|>1$,
+hence $u(z)\notin\mathcal B$. Finally, because $|z-1|>1$,
 \[
-|\nu^2(z)-1|=\frac1{|z|}
+|u^2(z)-1|=\frac1{|z|}
 <
 \frac{|z-1|}{|z|}
-=|\nu^2(z)|,
+=|u^2(z)|,
 \]
-so $\nu^2(z)\notin\mathcal B$. Therefore
+so $u^2(z)\notin\mathcal B$. Therefore
 \[
-\nu(D),\
+u(D),\
 u^2(D)\subseteq\mathbb H\setminus\mathcal B.
 \tag{4}
 \]
