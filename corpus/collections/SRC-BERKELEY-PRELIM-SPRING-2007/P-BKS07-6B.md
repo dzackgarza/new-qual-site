@@ -39,8 +39,8 @@ as required.
 :::
 
 ::: {.solution}
-This solution uses the dominated convergence theorem. Because of the given integral equation, it suffices to apply the following claim to the function $g ( s ) ~ = ~ f ( \varphi ( s ) )$ : for any continuous bounded function $g \colon [ 0 , b )   { \mathbb { R } } ^ { d }$ , the limit lim $\begin{array} { r } { \mathbf { \ i } _ { t  b ^ { - } } \int _ { 0 } ^ { t } g ( s ) } \end{array}$ ds exists.
-To prove this, it suffices to prove that for every increasing sequence $\left( t _ { k } \right)$ i n $[ 0 , b )$ tending to $b ,$ the limit $\begin{array} { r } { \operatorname* { l i m } _ { k \to \infty } \int _ { 0 } ^ { t _ { k } } g ( s ) } \end{array}$ ds exists.
+Because of the given integral equation, it suffices to apply the following claim to the function $g ( s ) = f ( \varphi ( s ) )$ : for any continuous bounded function $g \colon [ 0 , b ) \to \mathbb { R } ^ { d }$ , the limit $\lim _ { t \to b ^ { - } } \int _ { 0 } ^ { t } g ( s ) \, ds$ exists.
+To prove this, it suffices to prove that for every increasing sequence $\left( t _ { k } \right)$ in $[ 0 , b )$ tending to $b$, the limit $\lim _ { k \to \infty } \int _ { 0 } ^ { t _ { k } } g ( s ) \, ds$ exists.
 This follows from the dominated convergence theorem applied to the sequence of functions
 
 $$
