@@ -97,7 +97,7 @@ F(p)\longrightarrow\log\alpha.
 
 <1>4. If the zero set has positive measure, the limit is zero.
 ::: {.proof}
-If $m\{f=0\}>0$, then $\alpha<1$. By Step 3,
+If $m\{f=0\}>0$, then $\alpha<1$. By step <1>3,
 \[
 F(p)\longrightarrow\log\alpha<0.
 \]
@@ -114,7 +114,7 @@ If $f=0$ almost everywhere, this conclusion is immediate because every $\|f\|_p=
 
 <1>5. If $f\ne0$ almost everywhere, the limit still exists.
 ::: {.proof}
-Now suppose $\alpha=1$. Step 3 gives $F(p)\to0$, so define $F(0)=0$. The resulting function is convex on $[0,1]$.
+Now suppose $\alpha=1$. Step <1>3 gives $F(p)\to0$, so define $F(0)=0$. The resulting function is convex on $[0,1]$.
 
 For $0<p<q\le1$, convexity at
 \[
@@ -141,6 +141,6 @@ Exponentiating, $\|f\|_p$ therefore has a limit in $[0,\infty)$.
 
 <1>6. Conclude both assertions.
 ::: {.proof}
-If $f=0$ almost everywhere, the limit is $0$. If the zero set has positive but not full measure, Step 4 gives limit $0$. If $f\ne0$ almost everywhere, Step 5 proves existence of the limit. These cases exhaust all possibilities, proving both claims.
+If $f=0$ almost everywhere, the limit is $0$. If the zero set has positive but not full measure, step <1>4 gives limit $0$. If $f\ne0$ almost everywhere, step <1>5 proves existence of the limit. These three cases cover every $f\in L^1([0,1])$, which proves both claims.
 :::
 :::
