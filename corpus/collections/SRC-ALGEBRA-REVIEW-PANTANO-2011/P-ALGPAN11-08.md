@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-08
 kind: problem
-title: Consequence of the identity (ab)^2 = a^2 b^2
+title: A group with $(ab)^2=a^2b^2$ for all $a,b$ is abelian
 classification:
   areas:
   - algebra
@@ -26,7 +26,7 @@ audit:
 ::: {.solution}
 The group must be abelian, so the answer is $\boxed{\text{(D)}}$.
 
-<1>1. Cancel in the given identity.
+<1>1. For all $a,b\in G$, $ab=ba$.
 ::: {.proof}
 For arbitrary $a,b\in G$,
 \[
