@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB15S-09
 kind: problem
-title: Match two pairs of subspaces by a linear operator
+title: A linear operator carrying one pair of subspaces onto another with the same intersection dimension
 classification:
   areas:
   - prelim
