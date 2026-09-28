@@ -39,51 +39,53 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. TFAE: (1) $E$ is measurable; (2) $E = H \union Z$ with $H \in F_\sigma$ and $Z$ null; (3) $E = V \sm Z'$ with $V \in G_\delta$ and $Z'$ null.
-    <2>1. (1) $\implies$ (2): take closed $F_k \subseteq E$ with $m(E \sm F_k) < 1/k$ (inner regularity), set $H = \bigcup_k F_k$ (an $F_\sigma$) and $Z = E \sm H$; then $m(Z) \le m(E \sm F_k) < 1/k$ for all $k$, so $Z$ is null.
-        ::: {.proof}
-        $H \subseteq E$, and $E = H \union Z$ with $H \cap Z = \emptyset$.
-        :::
-    <2>2. (1) $\implies$ (3): take open $G_k \supseteq E$ with $m(G_k \sm E) < 1/k$ (outer regularity), set $V = \bigcap_k G_k$ (a $G_\delta$) and $Z' = V \sm E$; then $m(Z') \le m(G_k \sm E) < 1/k$ for all $k$.
-        ::: {.proof}
-        $E \subseteq V$ and $V \sm E = Z'$ null.
-        :::
-    <2>3. (2) $\implies$ (1) and (3) $\implies$ (1): $F_\sigma$ and $G_\delta$ sets are Borel, hence measurable, and adding or removing null sets preserves measurability.
-        ::: {.proof}
-        measurability is closed under countable unions, intersections, and symmetric differences with null sets.
-        :::
-    <2>4. Q.E.D.
-        ::: {.proof}
-        <2>1–<2>3.
-        :::
+Let $m$ be Lebesgue measure.
 
-<1>2. $m(E) = \sup\{m(K) : K \subseteq E \text{ compact}\}$ iff for every $\eps > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \eps$.
-    ::: {.proof}
-    this is the definition of the supremum: the condition says exactly that no number below $m(E)$ is an upper bound for $\{m(K) : K \subseteq E \text{ compact}\}$.
-    :::
+<1>1. $E \subseteq \RR^n$ is measurable if and only if $E = H \cup Z$ with $H$ an $F_\sigma$ set and $Z$ null, if and only if $E = V \setminus Z'$ with $V$ a $G_\delta$ set and $Z'$ null.
 
-<1>3. Cylinder functions are measurable: if $f$ is measurable on $\RR^s$, then $F(x,y) = f(x)$ is measurable on $\RR^s \cross \RR^t$.
-    ::: {.proof}
-    $F = f \circ \pi_s$ where $\pi_s(x,y) = x$ is continuous; preimages of Borel sets under continuous maps are Borel.
-    :::
+::: {.proof}
+If $E$ is measurable, outer regularity gives open $G_k \supseteq E$ and, applied to $E^c$, closed $F_k \subseteq E$ with $m(G_k \setminus E) < 1/k$ and $m(E \setminus F_k) < 1/k$. Then $H = \bigcup_k F_k$ and $V = \bigcap_k G_k$ satisfy $m(E \setminus H) = 0$ and $m(V \setminus E) = 0$. Conversely $F_\sigma$ and $G_\delta$ sets are Borel and null sets are measurable. See [[E-D75O4]].
+:::
 
-<1>4. Translation and dilation invariance: $\int \tau_h f = \int f$ ($\tau_h f(x) = f(x+h)$) and $\int f_\delta = \int f$ ($f_\delta(x) = \delta^{-n}f(x/\delta)$).
-    ::: {.proof}
-    for indicators this is $m(E + h) = m(E)$ and $m(\delta E) = \delta^n m(E)$; extend to simple functions, then non-negative measurable $f$ by monotone convergence, then $L^1$ by positive/negative parts.
-    :::
+<1>2. $m(E) = \sup\theset{m(K) : K \subseteq E \text{ compact}}$ if and only if for every $\eps > 0$ there is a compact $K \subseteq E$ with $m(K) \ge m(E) - \eps$.
 
-<1>5. Continuity in $L^1$: $f \in L^1 \implies \lim_{h\to 0}\int|f(x+h) - f(x)|\,dx = 0$.
-    ::: {.proof}
-    indicators of measurable sets of finite measure (regularity), then simple functions, then density + $\eps/3$.
-    :::
+::: {.proof}
+$m(E)$ is an upper bound of $\theset{m(K) : K \subseteq E \text{ compact}}$ by monotonicity. It is the least upper bound exactly when no $m(E) - \eps$ with $\eps > 0$ is an upper bound, which is the stated condition. See [[E-3OAGD]].
+:::
 
-<1>6. $f, g \in L^1 \implies f \ast g \in L^1$ with $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
-    ::: {.proof}
-    Tonelli: $\int|f\ast g| \le \iint |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1$.
-    :::
+<1>3. If $f$ is Lebesgue measurable on $\RR^s$, then $F(x,y) = f(x)$ is Lebesgue measurable on $\RR^s \times \RR^t$.
 
-<1>7. If $\mu(X) < \infty$: $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
-    ::: {.proof}
-    $\|f\|_p \le \|f\|_\infty\mu(X)^{1/p}$ and $\|f\|_p \ge M\mu\{|f|>M\}^{1/p} \to M$ for $M < \|f\|_\infty$; sandwich.
-    :::
+::: {.proof}
+For an open $W \subseteq \RR$, $F^{-1}(W) = f^{-1}(W) \times \RR^t$ with $f^{-1}(W)$ Lebesgue measurable. Write $f^{-1}(W) = V \setminus Z$ with $V$ a $G_\delta$ set and $Z$ null by step <1>1. Then $V \times \RR^t$ is Borel and $Z \times \RR^t$ is null, so $F^{-1}(W)$ is measurable. See [[E-JJ746]].
+:::
+
+<1>4. $\int f(x+h)\,dx = \int f$ and $\int \delta^{-n}f(x/\delta)\,dx = \int f$ for $f \geq 0$ measurable or $f \in L^1$.
+
+::: {.proof}
+For $f = \chi_E$ these are $m(E - h) = m(E)$ and $\delta^{-n}m(\delta E) = m(E)$. Linearity extends them to simple functions, the monotone convergence theorem to measurable $f \geq 0$, and the decomposition $f = f^+ - f^-$ to $L^1$. See [[E-QFOPP]] and [[E-KVDIA]].
+:::
+
+<1>5. For $f \in L^1(\RR^n)$, $\lim_{h\to 0}\int|f(x+h) - f(x)|\,dx = 0$.
+
+::: {.proof}
+For the indicator of a bounded box $I$, the integral is $m(I \triangle (I - h))$, which tends to $0$. Finite linear combinations of such indicators are dense in $L^1$, and by step <1>4 translation preserves $L^1$ distances, so for such a combination $s$ with $\|f - s\|_1 < \eps$, $\int|f(x+h) - f(x)|\,dx < 2\eps + \int|s(x+h) - s(x)|\,dx$. See [[E-F6IXU]].
+:::
+
+<1>6. If $f, g \in L^1$, then $f \ast g \in L^1$ and $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
+
+::: {.proof}
+By Tonelli's theorem and step <1>4, $\iint |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$. So $f\ast g(x)$ is defined for a.e. $x$ by Fubini's theorem, and $\int|f\ast g| \le \iint |f(x-y)||g(y)|\,dy\,dx$. See [[E-DUWXR]].
+:::
+
+<1>7. If $\mu(X) < \infty$, then $\|f\|_p \to \|f\|_\infty$ as $p \to \infty$.
+
+::: {.proof}
+If $\mu(X) = 0$ both sides vanish. Otherwise $\|f\|_p \le \|f\|_\infty\,\mu(X)^{1/p} \to \|f\|_\infty$, and for $0 < M < \|f\|_\infty$ the set $\theset{|f| > M}$ has positive finite measure, so $\|f\|_p \ge M\mu\theset{|f|>M}^{1/p} \to M$. See [[E-TVBUC]].
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>7 treat the parts in order.
+:::
 :::
