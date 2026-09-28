@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-7A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 7A
+title: A nonconstant entire function with $f(az+b)=f(z)$ forces $a$ to be a root of unity
 classification:
   areas: [prelim]
   topics: []
