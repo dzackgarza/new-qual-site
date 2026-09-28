@@ -31,7 +31,7 @@ For $0<\eps<1<R$, define the contour
 - $C_R: Re^{it}, t\in [0, \pi]$
 - $\Gamma = C_1 + C_2 + C_4 + C_R$
 
-The contour is the semicircle indented at both poles:
+The figure shows the same indentations on a rectangular contour; here the outer arc is the semicircle $C_R$:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-21_01-47-37.png)
 
