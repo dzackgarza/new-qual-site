@@ -35,4 +35,10 @@ By the fundamental theorem of symmetric polynomials, the ring of symmetric polyn
 ## The characteristic map
 
 The Frobenius characteristic map is an isometry from the class functions on $S_n$ to the symmetric functions of degree $n$, sending the irreducible character $\chi^\lambda$ to $s_\lambda$.
-Under it, the Littlewood--Richardson rule, the Murnaghan--Nakayama rule, and the hook length formula each correspond to a statement about characters of symmetric groups.
+For partitions $\mu$ of $k$ and $\nu$ of $n-k$, it sends $\Ind_{S_k\times S_{n-k}}^{S_n}(\chi^\mu\times\chi^\nu)$ to $s_\mu s_\nu$, so the multiplicity of $\chi^\lambda$ in that induced character is the Littlewood--Richardson coefficient $c^\lambda_{\mu\nu}$.
+It also gives
+$$
+p_\rho = \sum_\lambda \chi^\lambda(\rho)\, s_\lambda,
+$$
+where $\chi^\lambda(\rho)$ is the value of $\chi^\lambda$ on permutations of cycle type $\rho$; the Murnaghan--Nakayama rule computes these values.
+For $\rho = (1^n)$, the coefficient $\chi^\lambda(1) = \dim\chi^\lambda$ of $s_\lambda$ in $p_1^n$ is the number of standard Young tableaux of shape $\lambda$, which the hook length formula evaluates.
