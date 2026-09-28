@@ -23,11 +23,11 @@ Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\fr
 :::
 
 ::: {.solution}
-**Goal:** Find an analytic isomorphism (biholomorphism) from the crescent region $\Omega = \{z \in \mathbb{C} : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ to the upper half-plane $\mathbb{H} = \{w \in \mathbb{C} : \text{Im}(w) > 0\}$.
+Let $\Omega = \{z \in \mathbb{C} : |z| < 1 \text{ and } |z - 1/2| > 1/2\}$ be the crescent and $\mathbb{H} = \{w \in \mathbb{C} : \text{Im}(w) > 0\}$ the upper half-plane.
 
 * * *
 
-### Step 1: Inversion to a Vertical Strip
+### Step 1: Inversion to a vertical strip
 
 <1>1. **The Möbius transformation $\phi_1(z) = \frac{1}{z - 1}$ maps $\Omega$ conformally onto the vertical strip $S_1 = \{w_1 \in \mathbb{C} : -1 < \text{Re}(w_1) < -\frac{1}{2}\}$.** <2>1. Both boundary circles $C_1: |z| = 1$ and $C_2: |z - 1/2| = 1/2$ pass through the point $z = 1$ (the pole of $\phi_1$), and they are tangent to each other at $z=1$ with common vertical tangent.
 *Proof:* $1 \in C_1$ since $|1|=1$, and $1 \in C_2$ since $|1-1/2|=1/2$.
@@ -40,7 +40,7 @@ Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\fr
 
 * * *
 
-### Step 2: Affine Transformation to a Standard Horizontal Strip
+### Step 2: Affine map to a horizontal strip
 
 <1>2. **Map the strip $S_1$ to the standard horizontal strip $S_2 = \{w_2 \in \mathbb{C} : 0 < \text{Im}(w_2) < \pi\}$.** <2>1. Shift and scale the real part: $\psi(w_1) = 2\pi(w_1 + 1)$.
 When $\text{Re}(w_1) \in (-1, -1/2)$, $\text{Re}(\psi(w_1)) \in (0, \pi)$.
@@ -53,7 +53,7 @@ When $\text{Re}(w_1) \in (-1, -1/2)$, $\text{Re}(\psi(w_1)) \in (0, \pi)$.
 
 * * *
 
-### Step 3: Exponential Map to the Upper Half-Plane
+### Step 3: Exponential map to the upper half-plane
 
 <1>3. **The exponential function maps $S_2$ conformally onto the upper half-plane $\mathbb{H}$.** <2>1. For $\zeta = \xi + i\eta \in S_2$, we have $\xi \in \mathbb{R}$ and $\eta \in (0, \pi)$.
 *Proof:* Definition of the horizontal strip $S_2$.
@@ -66,7 +66,7 @@ Since $\xi \in \mathbb{R}$, $e^\xi \in (0, \infty)$; and since $\eta \in (0, \pi
 
 * * *
 
-### Step 4: Composite Analytic Isomorphism
+### Step 4: The composite isomorphism
 
 <1>4. **Conclusion: The composite map $F = \phi_3 \circ \phi_2 \circ \phi_1$ is an analytic isomorphism from $\Omega$ to $\mathbb{H}$.** <2>1. The explicit formula for $F(z)$ is: $$F(z) = \exp\left( \frac{2\pi i z}{z-1} \right).$$ *Proof:* Direct composition of $\phi_1, \phi_2, \phi_3$.
 <2>2. As a composition of biholomorphic mappings $\Omega \xrightarrow{\phi_1} S_1 \xrightarrow{\phi_2} S_2 \xrightarrow{\phi_3} \mathbb{H}$, $F$ is an analytic isomorphism from $\Omega$ onto $\mathbb{H}$.
