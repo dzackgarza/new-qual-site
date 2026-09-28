@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-FEG
 kind: problem
-title: Proof choice — Galois correspondence or irreducibility of cyclotomic polynomials
+title: Every intermediate field of a finite Galois extension is a fixed field, or irreducibility of cyclotomic polynomials
 classification:
   areas:
   - algebra
