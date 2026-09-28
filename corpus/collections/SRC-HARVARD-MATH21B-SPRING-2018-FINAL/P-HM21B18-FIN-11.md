@@ -27,5 +27,9 @@ y'=x-3y+xy.
 
 (c) Use the Jacobian to determine the stability of each equilibrium.
 
-(d) Choose which source phase portrait A--D belongs to the system. The candidate portraits are not recovered in the retained extraction.
+(d) Choose which phase portrait A--D belongs to the system.
+:::
+
+::: {.remark}
+Part (d) refers to four candidate phase portraits A--D that are printed in the source exam.
 :::
