@@ -24,23 +24,47 @@ What are the path components of this space?
 :::
 
 ::: {.solution}
-**Theorem.**  
-Let $\mathrm{Ord}^2$ be the unit square with the order topology from the lexicographic order.
+Write $I_o^2$ for $[0,1]\times[0,1]$ in the dictionary order topology and $(x,y)$ for $x\times y$. The ordered set $I_o^2$ is a linear continuum: its order is dense and it has the least upper bound property.
 
-1. Every point of a linearly ordered topological space has a basis of open intervals.
-   Intervals are connected in a linear order.
-   Therefore every point has a neighborhood basis of connected sets, so $\mathrm{Ord}^2$ is locally connected.
+<1>1. $I_o^2$ is locally connected.
 
-2. Let $p=(x_0,y_0)$ with $0<y_0<1$.
-   Any neighborhood of $p$ contains points with first coordinate both $<x_0$ and $>x_0$ and points with same $x_0$ but varying $y$.
-   A path image in an ordered space is connected and therefore has order interval image.
-   If a path started at $p$ moved to a nearby point with different first coordinate, it would force an order interval crossing the full jump from $y=1$ to $y=0$ at some $x$, which does not lie in a small convex neighborhood.
-   Hence such neighborhoods are not path connected; $\mathrm{Ord}^2$ is not locally path connected.
+::: {.proof}
+Every point has a neighborhood basis of open intervals, together with the intervals $[(0,0),q)$ and $(q,(1,1)]$ at the endpoints.
+These are convex subsets of the linear continuum $I_o^2$, hence connected.
+:::
 
-3. A path in $\mathrm{Ord}^2$ has continuous first coordinate, so it lies in one vertical fiber
-   $\{x\}\times[0,1]$ once it is started at any point of that fiber.
-4. Conversely, each vertical fiber is the image of $[0,1]$ under $t\mapsto(x,t)$, so each is path connected.
-   Thus path components are exactly the vertical fibers $\{x\}\times[0,1]$ for $x\in[0,1]$.
+<1>2. Each vertical fiber $\{x\}\times[0,1]$ is path connected.
 
-Hence the space is locally connected but not locally path connected, with path components the vertical fibers. ∎
+::: {.proof}
+The fiber is the closed interval $[(x,0),(x,1)]$, whose subspace topology is its order topology, and $t\mapsto(x,t)$ is an order isomorphism from $[0,1]$ onto it, hence a homeomorphism.
+:::
+
+<1>3. A path in $I_o^2$ lies in a single vertical fiber.
+
+::: {.proof}
+Let $\gamma\colon[0,1]\to I_o^2$ be a path from $(x,y)$ to $(x',y')$ with $x<x'$.
+Its image is connected, so it contains the interval between its endpoints, and in particular the point $(t,\frac12)$ for every $t\in(x,x')$.
+The sets $\{t\}\times(0,1)$ for $x<t<x'$ are uncountably many pairwise disjoint open sets in $I_o^2$, and their preimages under $\gamma$ are pairwise disjoint nonempty open subsets of $[0,1]$.
+Each contains a rational number, which is impossible for uncountably many disjoint sets.
+:::
+
+<1>4. The path components of $I_o^2$ are the vertical fibers $\boxed{\{x\}\times[0,1]}$, $0\le x\le1$.
+
+::: {.proof}
+Steps <1>2 and <1>3.
+:::
+
+<1>5. $I_o^2$ is not locally path connected.
+
+::: {.proof}
+Let $0<x\le1$.
+Every neighborhood of $(x,0)$ contains an interval $((a,b),(x,0)]$ with $a<x$, hence points $(t,\frac12)$ with $a<t<x$.
+By step <1>3 such a point is not joined to $(x,0)$ by a path, so no neighborhood of $(x,0)$ is path connected.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>5, and <1>4.
+:::
 :::
