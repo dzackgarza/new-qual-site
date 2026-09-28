@@ -38,8 +38,7 @@ Let $G$ be a finite group and work with finite-dimensional complex representatio
 \]
 for a finite-dimensional complex vector space $V$. It is irreducible if its only $G$-stable subspaces are $0$ and $V$.
 ::: {.proof}
-A subspace $W\subseteq V$ is $G$-stable when $\rho(g)W\subseteq W$ for every $g\in G$. The stated condition is the standard definition of irreducibility.
-:::
+A subspace $W\subseteq V$ is $G$-stable when $\rho(g)W\subseteq W$ for every $g\in G$.:::
 
 <1>2. Every representation admits a $G$-invariant positive-definite Hermitian inner product.
 ::: {.proof}
@@ -82,5 +81,5 @@ V=W\oplus W^\perp
 as $G$-representations. Apply induction to the two lower-dimensional summands.
 :::
 
-This is Maschke's theorem in the complex case; the averaging argument is the mechanism behind complete reducibility.
+Step <1>4 is Maschke's theorem over $\CC$.
 :::
