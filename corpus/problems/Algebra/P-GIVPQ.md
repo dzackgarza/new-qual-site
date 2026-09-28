@@ -28,7 +28,7 @@ State the structure theorem for semisimple algebras.
 
 
 ::: {.solution}
-A ring $A$ is **semisimple** if the left $A$-module ${}_AA$ is semisimple, i.e. a direct sum of simple submodules. Equivalently, every left $A$-module is semisimple; equivalently, every short exact sequence of left $A$-modules splits.
+A ring $A$ is \dfn{semisimple} if the left $A$-module ${}_AA$ is semisimple, i.e. a direct sum of simple submodules. Equivalently, every left $A$-module is semisimple; equivalently, every short exact sequence of left $A$-modules splits.
 
 The Artin–Wedderburn theorem states that a ring is semisimple iff it is isomorphic to a finite product
 \[
