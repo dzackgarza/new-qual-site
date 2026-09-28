@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-6
 kind: problem
-title: "SS 10.6: Exponential square-root bounds for the partition function"
+title: Bounds $e^{c_1\sqrt n}\le p(n)\le e^{c_2\sqrt n}$ for the partition function
 classification:
   areas:
   - complex-analysis
@@ -30,43 +30,30 @@ and it suffices to take $y = A m^{-1/2}$ where $A$ is a large constant, and use 
 :::
 
 ::: {.solution}
-**Goal:** Prove the asymptotic exponential bounds $e^{c_1 \sqrt{n}} \le p(n) \le e^{c_2 \sqrt{n}}$ for the partition function $p(n)$.
+Let $F(e^{-y}) = \sum_{k\ge0} p(k) e^{-ky}$ for $y > 0$. By [[E-SS10.EX-5]], $\log F(e^{-y})\sim\frac{\pi^2}{6(1-e^{-y})}\sim\frac{\pi^2}{6y}$ as $y\to0^+$, so there are constants $C,c,C_0,c_0>0$ with
+$$C_0e^{c_0/y}\le F(e^{-y})\le Ce^{c/y}\qquad(0<y\le1).$$
 
-<1>1. Upper bound $p(n) \le e^{c_2 \sqrt{n}}$:
-    ::: {.proof}
-    <2>1. The partition generating function is $F(e^{-y}) = \sum_{k=0}^\infty p(k) e^{-ky}$ for $y > 0$.
-    <2>2. From Exercise 5 (modular transformation of the Dedekind eta function / Jacobi theta function), there exist positive constants $C, c > 0$ such that $F(e^{-y}) \le C e^{c/y}$ for all $y \in (0, 1]$.
-    <2>3. Because every partition count $p(k) \ge 0$, for any integer $n \ge 1$ and any $y > 0$:
-    $$p(n) e^{-ny} \le \sum_{k=0}^\infty p(k) e^{-ky} = F(e^{-y}) \le C e^{c/y}.$$
-    <2>4. Multiplying both sides by $e^{ny}$ yields $p(n) \le C e^{c/y + ny}$.
-    <2>5. Choose $y = \sqrt{c/n} > 0$. Then $\frac{c}{y} + ny = c \sqrt{\frac{n}{c}} + n \sqrt{\frac{c}{n}} = 2\sqrt{c n}$.
-    <2>6. Thus $p(n) \le C e^{2\sqrt{c n}} \le e^{c_2 \sqrt{n}}$ for all $n \ge 1$, where $c_2 = 2\sqrt{c} + \max(0, \ln C)$.
+<1>1. There is $c_2>0$ with $p(n) \le e^{c_2 \sqrt{n}}$ for all $n\ge1$.
 
+::: {.proof}
+Since $p(k)\ge0$, for $n\ge1$ and $0<y\le1$ we have $p(n) e^{-ny} \le F(e^{-y}) \le C e^{c/y}$, so $p(n) \le C e^{c/y + ny}$. Taking $y = \sqrt{c/n}$ when $c\le n$ gives $c/y + ny = 2\sqrt{cn}$, hence $p(n) \le C e^{2\sqrt{c n}}\le e^{c_2\sqrt n}$ with $c_2 = 2\sqrt{c} + \max(0, \log C)$. Enlarging $c_2$ covers the finitely many $n<c$.
 :::
-<1>2. Lower bound $p(n) \ge e^{c_1 \sqrt{n}}$:
-    ::: {.proof}
-    <2>1. From Exercise 5, the asymptotic behavior as $y \to 0^+$ gives a lower bound $F(e^{-y}) \ge C_0 e^{c_0/y}$ for constants $C_0, c_0 > 0$.
-    <2>2. For any positive integer $m$, split the series into the head and tail:
-    $$\sum_{k=0}^m p(k) e^{-ky} = F(e^{-y}) - \sum_{k=m+1}^\infty p(k) e^{-ky} \ge C_0 e^{c_0/y} - \sum_{k=m+1}^\infty p(k) e^{-ky}.$$
-    <2>3. Since $p(k)$ is non-decreasing ($p(0) \le p(1) \le p(2) \le \cdots$), the head satisfies
-    $$\sum_{k=0}^m p(k) e^{-ky} \le p(m) \sum_{k=0}^m e^{-ky} < p(m) \sum_{k=0}^\infty e^{-ky} = \frac{p(m)}{1 - e^{-y}}.$$
-    <2>4. For the tail, use the upper bound $p(k) \le e^{c_2 \sqrt{k}}$ from <1>1. For $k \ge m+1$, $\sqrt{k} = \frac{k}{\sqrt{k}} \le \frac{k}{\sqrt{m+1}} \le \frac{k}{\sqrt{m}}$.
-    <2>5. Set $y = \frac{A}{\sqrt{m}}$ with constant $A > c_2$. Then for each $k \ge m+1$:
-    $$c_2 \sqrt{k} - ky \le \frac{c_2 k}{\sqrt{m}} - \frac{A k}{\sqrt{m}} = -\frac{(A - c_2)}{\sqrt{m}} k.$$
-    <2>6. Summing this geometric tail:
-    $$\sum_{k=m+1}^\infty e^{c_2 \sqrt{k} - ky} \le \sum_{k=m+1}^\infty e^{-(A - c_2) k / \sqrt{m}} = \frac{e^{-(A - c_2)(m+1)/\sqrt{m}}}{1 - e^{-(A - c_2)/\sqrt{m}}} \le \frac{2\sqrt{m}}{A - c_2} e^{-(A - c_2)\sqrt{m}}.$$
-    <2>7. With $y = A/\sqrt{m}$, the main term is $C_0 e^{c_0/y} = C_0 e^{(c_0/A)\sqrt{m}}$.
-    <2>8. Choose $A > c_2$. Since $e^{-(A - c_2)\sqrt{m}} \to 0$ exponentially while $e^{(c_0/A)\sqrt{m}} \to \infty$, there exists $M \in \mathbb{N}$ such that for all $m \ge M$:
-    $$C_0 e^{c_0/y} - \sum_{k=m+1}^\infty p(k) e^{-ky} \ge \frac{1}{2} C_0 e^{(c_0/A)\sqrt{m}}.$$
-    <2>9. Combining with <2>3, for all $m \ge M$:
-    $$p(m) \ge \frac{1}{2} C_0 (1 - e^{-A/\sqrt{m}}) e^{(c_0/A)\sqrt{m}} \ge \frac{C_0 A}{4\sqrt{m}} e^{(c_0/A)\sqrt{m}} \ge e^{c_1 \sqrt{m}}$$
-    for some positive constant $c_1 \in (0, c_0/A)$.
 
+<1>2. There are $c_1'>0$ and $M$ with $p(m) \ge e^{c_1' \sqrt{m}}$ for all $m\ge M$.
+
+::: {.proof}
+Fix $A > c_2$ and put $y = A/\sqrt{m}$, with $m\ge A^2$ so that $y\le1$. Since $p$ is nondecreasing,
+$$\frac{p(m)}{1 - e^{-y}} > \sum_{k=0}^m p(k) e^{-ky} \ge C_0 e^{c_0/y} - \sum_{k=m+1}^\infty p(k) e^{-ky}.$$
+For $k \ge m+1$, $\sqrt{k} \le k/\sqrt{m}$, so step <1>1 gives $p(k)e^{-ky}\le e^{-(A - c_2)k/\sqrt{m}}$ and
+$$\sum_{k=m+1}^\infty p(k) e^{-ky} \le \frac{e^{-(A - c_2)(m+1)/\sqrt{m}}}{1 - e^{-(A - c_2)/\sqrt{m}}} \le \frac{2\sqrt{m}}{A - c_2} e^{-(A - c_2)\sqrt{m}}$$
+for $m$ large. The main term is $C_0 e^{c_0/y} = C_0 e^{(c_0/A)\sqrt{m}}\to\infty$ while the tail tends to $0$, so for $m\ge M$ the right side is at least $\frac12C_0 e^{(c_0/A)\sqrt{m}}$. Using $1 - e^{-y}\ge y/2$ for $0<y\le1$,
+$$p(m) \ge \frac{C_0 A}{4\sqrt{m}} e^{(c_0/A)\sqrt{m}} \ge e^{c_1' \sqrt{m}}$$
+for any $c_1'\in(0,c_0/A)$, after enlarging $M$.
 :::
-<1>3. Conclusion:
-    ::: {.proof}
-    Decreasing $c_1 > 0$ to accommodate the finitely many values $1 \le n < M$ (since $p(n) \ge 1$ for all $n \ge 1$), we obtain
-    $$e^{c_1 \sqrt{n}} \le p(n) \le e^{c_2 \sqrt{n}}$$
-    for all $n \ge 1$.
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 is the upper bound. For the lower bound, step <1>2 covers $n\ge M$, and for the finitely many $n<M$ with $p(n)\ge1$ we decrease $c_1\le c_1'$ so that $e^{c_1\sqrt n}\le p(n)$; this gives $e^{c_1 \sqrt{n}} \le p(n)$ for all $n \ge 1$.
 :::
 :::
