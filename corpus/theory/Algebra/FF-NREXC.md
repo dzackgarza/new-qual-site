@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-NREXC
 kind: fact
 title: Nakayama's lemma
-slogan: Jacobson-radical self-generation forces a finitely generated module to vanish.
+slogan: 'If $M$ is finitely generated, $IM=M$, and $I\subseteq J(R)$, then $M=0$.'
 prompts:
 - What is Nakayama's lemma?
 classification:
