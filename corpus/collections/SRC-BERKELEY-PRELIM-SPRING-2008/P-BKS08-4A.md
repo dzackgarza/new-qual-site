@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-4A
 kind: problem
-title: Solve a forced second-order differential equation
+title: Initial value problem $y''-2y'+y=e^{-x}$, $y(0)=y'(0)=0$
 classification:
   areas:
   - prelim
@@ -27,13 +27,13 @@ audit:
 
 ::: {.problem}
 Find the solution of
-\[
+$$
 y''-2y'+y=e^{-x}
-\]
+$$
 satisfying
-\[
+$$
 y(0)=y'(0)=0.
-\]
+$$
 :::
 
 ::: {.solution}
