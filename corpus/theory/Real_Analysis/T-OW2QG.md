@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-OW2QG
 kind: theorem
 title: Hahn--Banach theorem
-slogan: 'A linear functional dominated by a sublinear bound extends to the whole space without exceeding that bound.'
+slogan: 'A linear functional on a subspace dominated by a sublinear functional extends to the whole space, still dominated by it.'
 classification:
   areas:
   - real-analysis
