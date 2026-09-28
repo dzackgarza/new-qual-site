@@ -4,49 +4,52 @@ title: Undergraduate syllabus topics
 ---
 
 # Undergraduate syllabus topics
+
 ## Calculus (Stewart)
-- chain rule; 
-- Derivatives of maps from $\RR^m\to\RR^n$ 
+
+- chain rule
+- derivatives of maps $\RR^m\to\RR^n$
 - explicit solutions of simple equations
-- Gauss’s Theorem
+- Gauss's theorem
 - gradient
-- Green’s Theorem 
-- Lagrange multipliers; 
-- line and surface integrals of scalar and vector functions; 
+- Green's theorem
+- Lagrange multipliers
+- line and surface integrals of scalar and vector functions
 - maxima and minima
-- Ordinary differential equations; 
-- Stokes’ theorem
--  Differential of a smoothing mapping between open subsets in Euclidean spaces. Matrix of partial derivatives. Inverse and implicit functions. Multivariable Riemann integration.
+- ordinary differential equations
+- Stokes' theorem
+- the differential of a smooth map between open subsets of Euclidean spaces; the matrix of partial derivatives; the inverse and implicit function theorems; multivariable Riemann integration
 
 ## Linear algebra
-- adjoints of linear transformations 
+
+- adjoints of linear transformations
 - basis and dimension
 - canonical forms
-- Cayley-Hamilton theorem; 
+- Cayley--Hamilton theorem
 - change of basis
 - characteristic and minimal polynomials
 - determinants
-- diagonalization and triangularization of operators; 
-- diagonalization of hermitian and symmetric matrices
+- diagonalization and triangularization of operators
+- diagonalization of Hermitian and symmetric matrices
 - dual spaces
-- Eigenvalues
-- eigenvectors; 
+- eigenvalues
+- eigenvectors
 - exponentiation of matrices and application to differential equations
 - Gaussian elimination
-- Gram-Schmidt process
-- hermitian and unitary operators
+- Gram--Schmidt process
+- Hermitian and unitary operators
 - inner product spaces
-- invariant subspaces 
+- invariant subspaces
 - Jordan normal form
 - least squares problems
-- linear transformations 
+- linear transformations
 - LU decomposition
 - nullity
-- nullity-rank theorem. 
+- rank--nullity theorem
 - orthogonal and unitary matrices
-- orthogonality 
+- orthogonality
 - orthonormality
-- Quadratic forms
+- quadratic forms
 - rank
 - rational canonical form
 - row-reduced form
@@ -54,12 +57,13 @@ title: Undergraduate syllabus topics
 - solvability criteria
 - subspaces
 - symmetric matrices
-- Systems of linear equations
+- systems of linear equations
 - trace
-- Vector spaces
-- Finite dimensional vector spaces (over R) and linear maps between them – subspaces, quotient spaces, dimension, bases, matrix representations. Positive definite inner products, orthonormal bases, extensions of orthonormal subsets. Eigenvalues and eigenvectors for automorphisms. Characteristic polynomial.
+- vector spaces
+- finite-dimensional vector spaces over $\RR$ and linear maps between them: subspaces, quotient spaces, dimension, bases, matrix representations; positive definite inner products, orthonormal bases, extension of orthonormal subsets to orthonormal bases; eigenvalues and eigenvectors of automorphisms; the characteristic polynomial
 
 ## Algebra (Artin, Herstein)
+
 - automorphisms
 - cyclic groups
 - dihedral groups
@@ -67,19 +71,18 @@ title: Undergraduate syllabus topics
 - fields of fractions
 - finite field extensions
 - finite fields
-- finitely generated abelian groups. 
-- Groups
+- finitely generated abelian groups
+- groups
 - groups acting on sets
-- homomorphisms
 - homomorphisms
 - ideals
 - matrix groups
 - maximal ideals
 - normal subgroups
 - permutation groups
-- polynomial rings 
+- polynomial rings
 - prime ideals
-- principal ideal domains 
+- principal ideal domains
 - quotient groups
 - quotient rings
 - rings
@@ -88,42 +91,42 @@ title: Undergraduate syllabus topics
 - Sylow theorems and applications
 - unique factorization domains
 - units
-- Definitions of groups, rings, fields, and modules over a ring. Homomorphisms of these objects. Subgroups, normal subgroups, quotient groups. Cyclic groups, finite abelian groups (structure theorem). Ideals, prime and maximal and their quotients — basic examples Z, k[X], rings of algebraic integers. Field extensions, splitting fields of polynomials, normal extensions.
+- definitions of groups, rings, fields, and modules over a ring; homomorphisms of these objects; subgroups, normal subgroups, quotient groups; cyclic groups, the structure theorem for finite abelian groups; ideals, prime and maximal ideals, and their quotients, with the examples $\ZZ$, $k[X]$, and rings of algebraic integers; field extensions, splitting fields of polynomials, normal extensions
 
 ## Real analysis (Rudin)
-- Accumulation points
-- Arzela-Ascoli theorem
-- Bolzano-Weierstrass theorem
-- Boundary Points
+
+- accumulation points
+- Arzelà--Ascoli theorem
+- Bolzano--Weierstrass theorem
+- boundary points
 - Cauchy sequences
-- Cauchy sequences
-- Cauchy-Schwarz inequality
+- Cauchy--Schwarz inequality
 - chain rule
-- change of variables formula.
+- change of variables formula
 - closure
 - compactness
-- Compactness in functions spaces. 
+- compactness in function spaces
 - completeness
 - connectedness
 - continuity
 - contraction maps
-- convergence of improper integrals. 
+- convergence of improper integrals
 - convergence of sequences of numbers and functions
 - definition of differentiability in several variables (approximating linear transformation)
 - differentiation under the integral sign
-- Dini's Theorem
+- Dini's theorem
 - epsilon-delta arguments
 - equality of mixed partials
 - equicontinuity
 - existence and uniqueness theorems for solutions of ordinary differential equations
-- fixed point theory 
-- Fourier series. 
+- fixed point theory
+- Fourier series
 - fundamental theorem of calculus
-- Heine-Borel theorem
-- Implicit function theorem 
-- Interior points
-- Intermediate Value theorem
-- Inverse function theorems
+- Heine--Borel theorem
+- implicit function theorem
+- interior points
+- intermediate value theorem
+- inverse function theorem
 - least upper bound property of $\RR$
 - limit points
 - limits
@@ -131,60 +134,62 @@ title: Undergraduate syllabus topics
 - maxima and minima
 - mean value theorem for integrals
 - multivariable integration
-- numerical integration with error estimation.
+- numerical integration with error estimation
 - open and closed sets
-- Order axioms
+- order axioms
 - partial derivatives
 - radius of convergence
 - Riemann integral
 - sequences and series of functions
 - series
-- Spaces of functions
-- Stone-Weierstrass theorem
+- spaces of functions
+- Stone--Weierstrass theorem
 - supremum and infimum
 - Taylor expansion in several variables
 - Taylor expansion with remainder
 - the derivative
-- the derivative as a linear map; 
+- the derivative as a linear map
 - the mean value theorem
-- Topology of Rn and metric spaces; properties of continuous functions
-- Triangle inequalities
+- topology of $\RR^n$ and metric spaces; properties of continuous functions
+- triangle inequalities
 - uniform continuity
 - uniform convergence and integration
-- uniform convergence and its relation to derivatives and integrals; 
-- Weierstrass M -test; 
+- uniform convergence and its relation to derivatives and integrals
+- Weierstrass $M$-test
 
 ## Complex analysis (Ahlfors)
-- Analytic functions
-- analyticity of limit functions. 
+
+- analytic functions
+- analyticity of limit functions
 - argument principle
-- Basic properties of harmonic functions in the plane
-- Basic properties of the complex number system. 
-- Cauchy-Riemann equations
-- Cauchy’s integral formula
-- Cauchy’s theorem 
-- classification of isolated singularities (including singularity at $\infty$)
+- basic properties of harmonic functions in the plane
+- basic properties of the complex number system
+- Cauchy--Riemann equations
+- Cauchy's integral formula
+- Cauchy's theorem
+- classification of isolated singularities, including a singularity at $\infty$
 - complex roots
-- conformal equivalences of the unit disk with itself and with the upper half-plane. 
+- conformal equivalences of the unit disk with itself and with the upper half-plane
 - conformality
-- elementary functions and their basic properties 
+- elementary functions and their basic properties
 - evaluation of definite integrals
 - exponential function
 - harmonic conjugates
 - isolation of zeros
-- Liouville’s theorem
+- Liouville's theorem
 - logarithm function
-- Mapping properties of linear fractional transformations
-- Maximum principle
-- maximum principle. Residue theorem
+- mapping properties of linear fractional transformations
+- maximum principle
+- residue theorem
 - mean value property
-- Morera’s theorem
+- Morera's theorem
 - power series and Laurent series
-- rational  functions
-- Rouché’s theorem. 
-- Schwarz’s lemma
+- rational functions
+- Rouché's theorem
+- Schwarz lemma
 - trigonometric functions
-- Definition of holomorphic functions, Cauchy integral formula, power series representations of holomorphic functions, radius of convergence, meromorphic functions, residues.
+- definition of holomorphic functions, the Cauchy integral formula, power series representations of holomorphic functions, radius of convergence, meromorphic functions, residues
 
 ## Topology
-- Open and closed sets, continuous functions. Connectedness, compactness, Hausdorff, normality. Metric spaces, Rn. Heine-Borel theorem.
+
+- open and closed sets, continuous functions; connectedness, compactness, the Hausdorff property, normality; metric spaces, $\RR^n$, the Heine--Borel theorem
