@@ -25,8 +25,6 @@ If $F(a)/F$ is a finite field extension, prove that $a$ is algebraic over $F$.
 :::
 
 ::: {.solution}
-**Goal.** Prove that a finite field extension $F(a)/F$ forces $a$ to be algebraic over $F$.
-
 <1>1. $F(a)$ is a finite-dimensional $F$-vector space.
 ::: {.proof}
 $F(a)/F$ is finite by hypothesis, so $[F(a) : F] = n < \infty$.
