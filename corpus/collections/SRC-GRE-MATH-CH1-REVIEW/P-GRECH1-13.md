@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH1-13
 kind: problem
-title: Remainder modulo x^2-1 from two values
+title: Remainder of $p(x)$ modulo $x^2-1$ from its values at $\pm1$
 classification:
   areas:
   - algebra
