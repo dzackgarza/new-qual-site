@@ -42,6 +42,6 @@ For a Dedekind domain that is not a field, the third condition is equivalent to
 \dim R=1.
 \]
 Some conventions exclude fields by requiring Krull dimension exactly $1$;
-others allow fields, which satisfy the three conditions because a field has no
-nonzero prime ideal.
+others allow fields, which are Noetherian and integrally closed and satisfy
+the third condition vacuously because a field has no nonzero prime ideal.
 :::
