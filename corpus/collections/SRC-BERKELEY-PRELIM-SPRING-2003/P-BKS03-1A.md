@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS03-1A
 kind: problem
-title: Scalar matrices characterized by universal eigenvectors
+title: A matrix for which every nonzero vector is an eigenvector is scalar
 classification:
   areas:
   - prelim
@@ -26,5 +26,5 @@ Prove that the following are equivalent:
 :::
 
 ::: {.solution}
-(a) implies (b). If (b) holds, then in particular, the standard basis vectors $e _ { j }$ are eigenvectors of A, so A is diagonal, say with entries $A _ { i i } = \lambda _ { i }$ . If $\lambda _ { i } \neq \lambda _ { j }$ , then $A ( e _ { i } + e _ { j } ) = \lambda _ { i } e _ { i } + \lambda _ { j } e _ { j }$ is not a scalar multiple of $e _ { i } + e _ { j }$ This contradicts the hypothesis that $e _ { i } + e _ { j }$ is an eigenvector of A. Hence the diagonal entries $\lambda _ { i }$ are all equal and we have (a).
+Obviously (a) implies (b). If (b) holds, then in particular, the standard basis vectors $e_j$ are eigenvectors of $A$, so $A$ is diagonal, say with entries $A_{ii}=\lambda_i$. If $\lambda_i\neq\lambda_j$, then $A(e_i+e_j)=\lambda_ie_i+\lambda_je_j$ is not a scalar multiple of $e_i+e_j$. This contradicts the hypothesis that $e_i+e_j$ is an eigenvector of $A$. Hence the diagonal entries $\lambda_i$ are all equal and we have (a).
 :::
