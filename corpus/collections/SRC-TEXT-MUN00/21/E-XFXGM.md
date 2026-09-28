@@ -68,11 +68,11 @@ D(x,y)=\sup_i\frac{\bar d_i(x_i,y_i)}{i}.
 \]
 Each $\bar d_i$ is a metric, and the same coordinatewise triangle inequality followed by supremum proves the triangle inequality for $D$. Definiteness follows because $D(x,y)=0$ forces every coordinate distance to vanish.
 
-We compare topologies. Given $\varepsilon>0$, choose $N$ so large that $1/i<\varepsilon$ for $i>N$. If for each $1\le i\le N$ we require
+We compare topologies. Given $\varepsilon>0$, choose $N$ so large that $1/i<\varepsilon$ for $i>N$. The set of $y$ with
 \[
-\bar d_i(x_i,y_i)<i\varepsilon,
+d_i(x_i,y_i)<i\varepsilon\qquad(1\le i\le N)
 \]
-then automatically $D(x,y)<\varepsilon$; after slightly shrinking the finitely many radii, this gives a basic product neighborhood contained in the $D$-ball.
+is a basic product neighborhood of $x$. For such $y$, $\bar d_i(x_i,y_i)/i<\varepsilon$ for $i\le N$, and $\bar d_i(x_i,y_i)/i\le1/i\le1/(N+1)<\varepsilon$ for $i>N$, so $D(x,y)<\varepsilon$. Hence this neighborhood lies in the $D$-ball of radius $\varepsilon$ about $x$.
 
 Conversely, let
 \[
