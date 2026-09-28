@@ -9,32 +9,30 @@ topics:
 
 # Finite and flat
 
-The two finiteness conditions a curve question eventually needs: finite morphisms, because a map of projective curves is one, and flatness, because it is what makes a numerical invariant constant in a family.
+A nonconstant morphism of smooth projective curves is finite and flat.
 
 [[PR-RJ3P7]]
 
-Going up is the algebraic statement underlying closedness of finite morphisms.
-Going down is the half that preserves dimension, and it holds under flatness or under normality of the base.
+By going up, an integral ring map $A\to B$ induces a closed map $\Spec B\to\Spec A$, so finite morphisms are closed.
+Going down holds for flat ring maps, and for integral extensions $A\subseteq B$ of domains with $A$ integrally closed; for such an integral extension it gives $\operatorname{ht}\mathfrak q=\operatorname{ht}(\mathfrak q\cap A)$ for every prime $\mathfrak q$ of $B$.
 
-## Why flatness is the right hypothesis
+## Flatness and fibres
 
 [[D-MORFLAT]]
 
-A flat morphism controls fibrewise variation through the following precise statements:
+- For a flat projective morphism to a noetherian scheme, the Hilbert polynomial of the fibres is locally constant on the base.
 
-- for a flat projective morphism, the Hilbert polynomial of the fibres is locally constant on the base;
+- For a finite flat morphism $f\colon X\to Y$ with $Y$ noetherian and connected, $f_*\OO_X$ is locally free of constant rank $d$, and every fibre has length $d$.
 
-- flat plus finite over a reduced connected base means the fibres all have the same length, which is the degree of the covering;
+- A nonconstant morphism of smooth curves is flat, because a torsion-free finitely generated module over a discrete valuation ring is free.
 
-- a nonconstant morphism between smooth curves is automatically flat, because a torsion-free module over a discrete valuation ring is free.
-
-For nonconstant morphisms of smooth curves, automatic flatness is what makes the degree constant in Riemann--Hurwitz.
+For a nonconstant morphism $f\colon X\to Y$ of smooth projective curves, every fibre $f^{-1}(y)$, counted with multiplicity, therefore has degree $\deg f$.
 
 ## Where flatness fails
 
 [[FE-MORNOTFLAT]]
 
-The two failures are different: the blowup jumps in fibre *dimension*, while the normalization jumps in fibre *length*. Equidimensional fibres are therefore necessary but not sufficient for flatness, and the Hilbert polynomial captures the missing numerical constancy.
+For a projective morphism to an integral noetherian scheme, constancy of the Hilbert polynomial of the fibres implies flatness ([[T-COHFLATCHI]]).
 
 ## Flatness in examples
 
