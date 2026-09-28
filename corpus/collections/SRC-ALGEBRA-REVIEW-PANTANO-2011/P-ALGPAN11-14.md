@@ -83,11 +83,10 @@ x^m\odot x^{n+1}
 <1>3. Assertion I can fail.
 ::: {.proof}
 Take $S=S_3$, let $\odot$ be its group multiplication, and transport the group law of the cyclic group $C_6$ to the same six-element set to define a commutative associative operation $\oplus$.
-For noncommuting $x,y\in S_3$,
+For $x=(12)$ and $y=(13)$ in $S_3$, $xy\ne yx$; cancelling $x$ on the left and $y$ on the right in $xyxy=xxyy$ would give $yx=xy$, so
 \[
-(xy)^2=xyxy\ne xxyy=x^2y^2
+(xy)^2=xyxy\ne xxyy=x^2y^2.
 \]
-in general.
 Thus I is not forced by the stated axioms.
 :::
 :::
