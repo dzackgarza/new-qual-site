@@ -53,7 +53,6 @@ $0\to\ZZ/2\to\ZZ/2\oplus\ZZ/2\to\ZZ/2\to 0$, with the inclusion of the first fac
 
 ::: {.remark}
 A sequence $\cdots\to A_{k-1}\xrightarrow{f_{k-1}} A_k\xrightarrow{f_k} A_{k+1}\to\cdots$ with $f_k\circ f_{k-1} = 0$ for all $k$ is a chain complex, and it is exact if and only if its homology $\ker f_k/\im f_{k-1}$ vanishes in every degree.
-Homology measures the failure of a chain complex to be exact.
 
 :::
 
@@ -186,7 +185,7 @@ For $m,n\geq 1$ and $d = \gcd(m, n)$, with the first argument indexing rows and 
 | $\QQ$ | $0$ | $\mathbb{A}_f/\QQ$ | $0$ |
 
 Here $\mathbb{A}_f$ is the ring of finite adeles of $\QQ$, containing $\QQ$ diagonally.
-A computation of $\ext(\QQ,\ZZ)$ is in [these notes on Tor and Ext](http://math.jhu.edu/~jmb/note/torext.pdf).
+Applying $\Hom(\QQ,\wait)$ to $0\to\ZZ\to\QQ\to\QQ/\ZZ\to 0$, with $\Hom(\QQ,\ZZ)=0$ and $\ext(\QQ,\QQ)=0$, gives the exact sequence $0\to\QQ\to\Hom(\QQ,\QQ/\ZZ)\to\ext(\QQ,\ZZ)\to 0$, and $\Hom(\QQ,\QQ/\ZZ)\cong\mathbb{A}_f$.
 
 :::
 
