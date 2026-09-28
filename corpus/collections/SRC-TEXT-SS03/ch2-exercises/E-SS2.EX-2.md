@@ -6,7 +6,9 @@ title: $\int_0^\infty\frac{\sin x}{x}\,dx=\frac\pi2$
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 audit:

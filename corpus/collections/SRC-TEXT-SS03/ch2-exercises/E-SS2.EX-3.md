@@ -6,7 +6,9 @@ title: Laplace transforms of $\cos bx$ and $\sin bx$ by a sector contour
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 audit:

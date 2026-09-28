@@ -6,7 +6,9 @@ title: The Gaussian $e^{-\pi x^2}$ is its own Fourier transform
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Contour Integration
+  - Fourier Transform
 relations: []
 review: draft
 audit:

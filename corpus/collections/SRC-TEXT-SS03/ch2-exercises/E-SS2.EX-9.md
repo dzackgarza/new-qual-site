@@ -6,7 +6,9 @@ title: A self-map of a bounded set with $\varphi(z_0)=z_0$ and $\varphi'(z_0)=1$
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Fixed Points
+  - Power Series
 relations: []
 review: draft
 audit:

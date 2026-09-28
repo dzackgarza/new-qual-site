@@ -6,7 +6,8 @@ title: A nonvanishing function holomorphic on the disc with $\abs f=1$ on the ci
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:

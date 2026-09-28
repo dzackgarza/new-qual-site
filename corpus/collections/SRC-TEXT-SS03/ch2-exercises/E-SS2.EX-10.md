@@ -6,7 +6,9 @@ title: Not every continuous function on the closed disc is a uniform limit of po
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Uniform Convergence
+  - Cauchy's Theorem
 relations: []
 review: draft
 audit:

@@ -6,7 +6,9 @@ title: The Fresnel integrals $\int_0^\infty\sin(x^2)\,dx=\int_0^\infty\cos(x^2)\
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 audit:

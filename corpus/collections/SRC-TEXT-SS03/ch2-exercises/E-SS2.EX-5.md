@@ -6,7 +6,8 @@ title: Goursat's theorem for $C^1$ functions via Green's theorem
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Cauchy's Theorem
 relations: []
 review: draft
 audit:

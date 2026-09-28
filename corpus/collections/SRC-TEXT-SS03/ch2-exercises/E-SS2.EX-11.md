@@ -6,7 +6,9 @@ title: The Cauchy formula with kernel $\Re\frac{\zeta+z}{\zeta-z}$ and the Poiss
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Cauchy Integral Formula
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

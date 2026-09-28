@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS2.EX-6
 kind: problem
-title: "Cauchy's theorem for a triangle with one bounded interior singularity"
+title: Cauchy's theorem for a triangle with one bounded interior singularity
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Cauchy's Theorem
+  - Removable Singularities
 relations: []
 review: draft
 audit:

@@ -6,7 +6,8 @@ title: Derivatives inherit polynomial growth on a strip
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

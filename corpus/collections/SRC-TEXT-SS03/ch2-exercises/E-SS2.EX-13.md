@@ -6,7 +6,9 @@ title: An entire function with a vanishing Taylor coefficient at every point is 
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Entire Functions
+  - Power Series
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS2.EX-14
 kind: problem
-title: "A pole on the circle of convergence and its coefficient growth"
+title: A pole on the circle of convergence and its coefficient growth
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Power Series
+  - Poles
 relations: []
 review: draft
 audit:

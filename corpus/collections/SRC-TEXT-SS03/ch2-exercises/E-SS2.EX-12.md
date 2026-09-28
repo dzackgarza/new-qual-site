@@ -6,7 +6,8 @@ title: Harmonic conjugates and Poisson representation on the unit disk
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

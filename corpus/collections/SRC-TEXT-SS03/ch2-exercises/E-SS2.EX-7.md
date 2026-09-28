@@ -6,7 +6,9 @@ title: $2\abs{f'(0)}$ is at most the diameter of $f(\mathbb D)$
 classification:
   areas:
   - complex-analysis
-  topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
+  topics:
+  - Cauchy Integral Formula
+  - Power Series
 relations: []
 review: draft
 audit:
