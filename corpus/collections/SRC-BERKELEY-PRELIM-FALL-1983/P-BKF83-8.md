@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF83-8
 kind: problem
-title: Classify symmetric orthogonal transformations of $\mathbb R^3$
+title: Symmetric orthogonal transformations of $\RR^3$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
