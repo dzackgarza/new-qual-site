@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-2. Let $f _ { n } : D \to \mathbb { C } , n = 1 , 2 , 3 , . . . ,$ be a sequence of holomorphic functions on the unit disk D such that $f _ { n } ^ { - 1 } ( 0 ) = \{ c _ { n } \}$ , where $c _ { n } \in D$ . Suppose that $f _ { n }  f _ { 0 }$ uniformly, where $f _ { 0 }$ is not constant.
+2. Let $f _ { n } : D \to \mathbb { C } , n = 1 , 2 , 3 , . . . ,$ be a sequence of holomorphic functions on the unit disk D such that $f _ { n } ^ { - 1 } ( 0 ) = \{ c _ { n } \}$ , where $c _ { n } \in D$ . Suppose that $f _ { n } \to f _ { 0 }$ uniformly, where $f _ { 0 }$ is not constant.
 
 a) Prove that $f _ { 0 }$ has at most one zero in $D$
 
@@ -27,32 +27,35 @@ If so, give a necessary and sufficient condition on the $c _ { n }$ for this to 
 :::
 
 ::: {.solution}
-<1>1. Part (a): $f_0$ has at most one zero in $D$: <2>1. By the Weierstrass Convergence Theorem, the uniform limit $f_0$ of holomorphic functions on $D$ is holomorphic on $D$.
-Since $f_0$ is assumed to be non-constant, its zeros in $D$ are isolated.
-<2>2. By Hurwitz's Theorem, if $z_0 \in D$ is a zero of $f_0$ of multiplicity $m \ge 1$, there exists $r > 0$ such that the closed disk $\overline{B(z_0, r)} \subset D$ contains no other zeros of $f_0$, and for all sufficiently large $n$, $f_n$ has exactly $m$ zeros (counted with multiplicity) in $B(z_0, r)$.
-<2>3. If $f_0$ had two distinct zeros $a, b \in D$, we could choose disjoint disks $B(a, r_1) \cap B(b, r_2) = \emptyset$ in $D$.
-For sufficiently large $n$, $f_n$ would have at least one zero in $B(a, r_1)$ and at least one zero in $B(b, r_2)$, meaning $f_n$ has at least two zeros in $D$, contradicting $|f_n^{-1}(0)| = 1$.
-<2>4. If $f_0$ had a zero $z_0 \in D$ of multiplicity $m \ge 2$, then for large $n$, $f_n$ would have $m \ge 2$ zeros in $B(z_0, r)$, again contradicting $|f_n^{-1}(0)| = 1$.
-Therefore $f_0$ has at most one zero in $D$ (and if present, it must be a simple zero).
+The uniform limit $f_0$ of holomorphic functions is holomorphic on $D$, and it is nonconstant, so its zeros are isolated.
 
-<1>2. Part (b): $f_0$ can have no zeros, and condition on $(c_n)$: <2>1. $f_0$ can indeed have no zeros in $D$.
-For example, let $f_n(z) = z - (1 - \frac{1}{n})$ on $D$.
-Each $f_n$ has unique zero $c_n = 1 - \frac{1}{n} \in D$, and $f_n(z) \to f_0(z) = z - 1$ uniformly on $D$.
-The limit function $f_0(z) = z - 1$ has no zeros in $D$ since $|z| < 1 \implies z \neq 1$.
-<2>2. **Necessary and sufficient condition:** $f_0$ has no zeros in $D$ if and only if $\lim_{n \to \infty} |c_n| = 1$ (i.e. the sequence of zeros $(c_n)$ has no accumulation points in $D$).
-<2>3. **Proof ($\Rightarrow$):** Suppose $f_0$ has no zeros in $D$.
-If $(c_n)$ had an accumulation point $c \in D$, there would exist a subsequence $c_{n_k} \to c \in D$.
-By uniform convergence on compact sets:
-\[
-f_0(c) = \lim_{k \to \infty} f_{n_k}(c_{n_k}) = \lim_{k \to \infty} 0 = 0,
-\]
-which means $c \in D$ is a zero of $f_0$, a contradiction.
-Thus $(c_n)$ cannot accumulate anywhere in $D$, so $|c_n| \to 1$.
-<2>4. **Proof ($\Leftarrow$):** Suppose $\lim_{n \to \infty} |c_n| = 1$.
-If $f_0$ had a zero $z_0 \in D$, by Hurwitz's Theorem there is a disk $B(z_0, r) \subset D$ such that $f_n$ has a zero in $B(z_0, r)$ for all large $n$.
-Since $c_n$ is the unique zero of $f_n$, this implies $c_n \in B(z_0, r)$ for all large $n$, so $|c_n| \le |z_0| + r < 1$, contradicting $|c_n| \to 1$.
-Thus $f_0$ has no zeros in $D$.
+<1>1. (a) $f_0$ has at most one zero in $D$.
 
-<1>3. Conclusion: $f_0$ has at most one zero in $D$, and $f_0$ is zero-free if and only if $|c_n| \to 1$.
-Q.E.D.
+::: {.proof}
+For a zero $z_0$ of $f_0$, take $r>0$ with $\overline{B(z_0,r)}\subset D$ containing no other zero of $f_0$. By Hurwitz's theorem, $f_n$ has a zero in $B(z_0,r)$ for all large $n$. If $f_0$ had two distinct zeros, disjoint such disks would give each large $f_n$ two distinct zeros, while $f_n^{-1}(0)=\{c_n\}$.
+:::
+
+<1>2. The zero in step <1>1 may be multiple: $f_n(z)=\bigl(z-\frac1n\bigr)^2$ has $f_n^{-1}(0)=\{\frac1n\}$ and converges uniformly on $D$ to $z^2$.
+
+::: {.proof}
+$\abs{f_n(z)-z^2}=\abs{-\frac2nz+\frac1{n^2}}\le\frac3n$ on $D$.
+:::
+
+<1>3. (b) Yes: $f_n(z)=z-\bigl(1-\frac1n\bigr)$ has the single zero $c_n=1-\frac1n$ and converges uniformly on $D$ to $z-1$, which has no zero in $D$.
+
+::: {.proof}
+$\abs{f_n(z)-(z-1)}=\frac1n$ for all $z$.
+:::
+
+<1>4. (b) $f_0$ has no zero in $D$ if and only if $\boxed{\abs{c_n}\to1}$.
+
+::: {.proof}
+If $\abs{c_n}\not\to1$, a subsequence $c_{n_k}$ converges to some $c\in D$, and uniform convergence with continuity of $f_0$ gives $f_0(c)=\lim_kf_{n_k}(c_{n_k})=0$. Conversely, if $f_0(z_0)=0$ for some $z_0\in D$, Hurwitz's theorem gives, for $r$ as in step <1>1, a zero of $f_n$ in $B(z_0,r)$ for all large $n$; that zero is $c_n$, so $\abs{c_n}\le\abs{z_0}+r<1$ for all large $n$, and $\abs{c_n}\not\to1$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 answer part (a), and steps <1>3 and <1>4 answer part (b).
+:::
 :::

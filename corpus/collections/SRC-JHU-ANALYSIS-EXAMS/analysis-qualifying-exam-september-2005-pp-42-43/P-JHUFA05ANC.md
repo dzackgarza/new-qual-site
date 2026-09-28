@@ -18,44 +18,30 @@ audit:
 ---
 
 ::: {.problem}
-3. Let $g _ { n }$ be a sequence of functions in $L ^ { 1 } ( S ^ { 1 } , d \theta )$ where $S ^ { 1 }$ is the unit circle $\{ e ^ { i \theta } : 0 \leq \theta \leq 2 \pi \}$ We say that $g _ { n } \ \to \ 0$ weakly if $\begin{array} { r } { \int _ { S ^ { 1 } } g _ { n } ( e ^ { i \theta } ) f ( e ^ { i \theta } ) d \theta  0 } \end{array}$ a s $n \to \infty$ for all $f \in C ( S ^ { 1 } )$
+3. Let $g _ { n }$ be a sequence of functions in $L ^ { 1 } ( S ^ { 1 } , d \theta )$ where $S ^ { 1 }$ is the unit circle $\{ e ^ { i \theta } : 0 \leq \theta \leq 2 \pi \}$ We say that $g _ { n } \ \to \ 0$ weakly if $\int_{S^1} g_n(e^{i\theta}) f(e^{i\theta})\,d\theta \to 0$ as $n \to \infty$ for all $f \in C ( S ^ { 1 } )$
 
-Question: Suppose that $\left\{ g _ { n } \right\}$ is a sequence in $L ^ { 1 } ( S ^ { 1 } , d \theta )$ and $\begin{array} { r } { \int _ { S ^ { 1 } } e ^ { i k \theta } g _ { n } ( e ^ { i \theta } ) d \theta  0 } \end{array}$ a s $n \to \infty$ for all $k \in \mathbb { Z }$ . Need $g _ { n } \to 0$ weakly?
+Question: Suppose that $\left\{ g _ { n } \right\}$ is a sequence in $L ^ { 1 } ( S ^ { 1 } , d \theta )$ and $\int_{S^1} e^{ik\theta} g_n(e^{i\theta})\,d\theta \to 0$ as $n \to \infty$ for all $k \in \mathbb { Z }$ . Need $g _ { n } \to 0$ weakly?
 Give either a proof or a counterexample.
 :::
 
 ::: {.solution}
-<1>1. No, $g_n$ need not converge weakly to $0$.
+No. Let $g_n(e^{i\theta})\da ne^{in\theta}$.
+
+<1>1. For each fixed $k\in\ZZ$, $\int_{S^1}e^{ik\theta}g_n(e^{i\theta})\,d\theta\to0$.
+
 ::: {.proof}
-exhibit a counterexample.
+The integral is $n\int_0^{2\pi}e^{i(k+n)\theta}\,d\theta$, which is $0$ whenever $n>\abs k$.
 :::
 
-<1>2. Let $g_n(e^{i\theta}) = n e^{in\theta}$.
+<1>2. $g_n$ does not converge weakly to $0$.
+
 ::: {.proof}
-define the sequence.
+The functional $\Lambda_n(f)\da\int_{S^1}g_nf\,d\theta$ on the Banach space $C(S^1)$ has norm $\norm{g_n}_{L^1}=2\pi n$. If $\Lambda_n(f)\to0$ for every $f$, the uniform boundedness principle would give $\sup_n\norm{\Lambda_n}<\infty$, which is false.
 :::
 
-<1>3. For each fixed $k \in \ZZ$, $\int_{S^1} e^{ik\theta} g_n(e^{i\theta})\, d\theta \to 0$.
-::: {.proof}
-$\int_{S^1} e^{ik\theta} n e^{in\theta}\, d\theta = n\int_{S^1} e^{i(k+n)\theta}\, d\theta$, which is $0$ whenever $k + n \neq 0$; for fixed $k$, this holds for all $n > |k|$, so the integral is $0$ for all sufficiently large $n$.
-:::
+<1>3. Q.E.D.
 
-<1>4. But $g_n$ does not converge weakly to $0$.
-<2>1. $\|g_n\|_{L^1} = \int_{S^1} |n e^{in\theta}|\, d\theta = 2\pi n \to \infty$.
 ::: {.proof}
-$|e^{in\theta}| = 1$.
-:::
-<2>2. A weakly convergent sequence in a normed space is bounded (by the uniform boundedness principle).
-::: {.proof}
-the functionals $f \mapsto \int f g_n$ on $C(S^1)$ have norm $\|g_n\|_{L^1}$, and a weakly convergent sequence of functionals is bounded.
-:::
-<2>3. Hence $g_n$ cannot converge weakly to $0$.
-::: {.proof}
-<2>1 and <2>2.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>3 and <1>4 give a counterexample.
+Steps <1>1 and <1>2 show that the sequence $g_n$ is a counterexample.
 :::
 :::

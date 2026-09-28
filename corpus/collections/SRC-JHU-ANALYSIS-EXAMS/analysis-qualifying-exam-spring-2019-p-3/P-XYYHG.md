@@ -22,33 +22,23 @@ Question 2.1. Determine all holomorphic automorphisms of the upper half plane $u
 :::
 
 ::: {.solution}
-<1>1. The holomorphic automorphisms of the upper half plane $\HH = \{z : \Im z > 0\}$ are exactly the maps
-$$z \mapsto \frac{az + b}{cz + d},\qquad a,b,c,d \in \RR,\ ad - bc = 1,$$
-i.e. the group $\operatorname{PSL}_2(\RR)$.
+Let $\HH=\{z:\Im z>0\}$ and let $\phi(z)=\frac{z-i}{z+i}$, the Cayley transform, a biholomorphism $\HH\to\DD$.
+
+<1>1. Every map $T(z)=\frac{az+b}{cz+d}$ with $a,b,c,d\in\RR$ and $ad-bc=1$ is an automorphism of $\HH$.
+
 ::: {.proof}
-standard classification of automorphisms of $\HH$.
+For real coefficients, $\Im T(z)=\frac{(ad-bc)\Im z}{\abs{cz+d}^2}=\frac{\Im z}{\abs{cz+d}^2}$, so $T$ maps $\HH$ into $\HH$. Its inverse $\frac{dz-b}{-cz+a}$ has the same form.
 :::
 
-<1>2. Derivation.
-<2>1. The Cayley transform $\phi(z) = \frac{z - i}{z + i}$ maps $\HH$ biholomorphically onto the unit disk $\DD$.
+<1>2. Every automorphism $T$ of $\HH$ has this form.
+
 ::: {.proof}
-$\phi$ is a Möbius map sending the real axis to the unit circle and $i$ to $0$.
-:::
-<2>2. The automorphisms of $\DD$ are $w \mapsto e^{i\theta}\frac{w - a}{1 - \overline{a}w}$ with $|a| < 1$, $\theta \in \RR$.
-::: {.proof}
-Schwarz lemma (standard classification of disk automorphisms).
-:::
-<2>3. Conjugating <2>2 by $\phi$ gives the automorphisms of $\HH$.
-::: {.proof}
-$\operatorname{Aut}(\HH) = \phi^{-1} \operatorname{Aut}(\DD) \phi$.
-:::
-<2>4. This conjugation yields exactly the maps $z \mapsto \frac{az+b}{cz+d}$ with $a,b,c,d \in \RR$ and $ad - bc = 1$.
-::: {.proof}
-Let $T = \phi^{-1} \circ g \circ \phi$ with $g(w) = e^{i\theta}\frac{w-a}{1-\bar a w}$. A composition of Möbius transformations is Möbius, so $T(z) = \frac{az+b}{cz+d}$ for some $a,b,c,d\in\CC$, unique up to a common scalar. The real axis $\RR\cup\{\infty\}$ is the fixed boundary of $\HH$, and $\phi$ maps it onto the unit circle while $g$ preserves the circle; hence $T$ preserves $\RR\cup\{\infty\}$. A Möbius map preserving $\RR\cup\{\infty\}$ has a real representative: its values on $0, 1, \infty$ are three points of $\RR\cup\{\infty\}$, and the map is uniquely determined by these three images — solving $\frac{a\cdot 0 + b}{c\cdot 0 + d} = r_0$, $\frac{a+b}{c+d} = r_1$, $\frac{a}{c} = r_\infty$ for real $r_0, r_1, r_\infty$ determines $a:b:c:d$ as a ratio in $\RR$ (each equation is homogeneous linear with real coefficients, and the system has a unique solution line through the origin, which must therefore be real). So after rescaling, $a,b,c,d \in \RR$, and dividing by $\sqrt{|ad-bc|}$ gives $ad - bc = \pm 1$. For real coefficients, $\Im T(i) = \Im\frac{ai+b}{ci+d} = \frac{ad-bc}{c^2+d^2}$, and since $T(\HH) = \HH$ we have $\Im T(i) > 0$, hence $ad - bc > 0$ and the sign is $+1$. Conversely every matrix in $\mathrm{PSL}_2(\RR)$ preserves $\RR\cup\{\infty\}$ (real coefficients) and sends $i$ into $\HH$ (the computation just displayed); since $T$ preserves the boundary $\RR\cup\{\infty\}$ of $\HH$ and maps the component containing $i$ to the component containing $T(i)$, it restricts to a holomorphic map $\HH \to \HH$, which is a biholomorphism since its inverse has the same form.
+$\phi\circ T\circ\phi^{-1}$ is an automorphism of $\DD$, hence a Möbius map $w\mapsto e^{i\theta}\frac{w-a}{1-\bar aw}$ by the Schwarz lemma, so $T$ is a Möbius map. It extends to a homeomorphism of $\overline\HH\cup\{\infty\}$, so it maps $\RR\cup\{\infty\}$ onto itself. A Möbius map is determined by the images of $0$, $1$ and $\infty$, and when these are real, the linear conditions on $(a,b,c,d)$ have real coefficients and a one-dimensional solution space; so $T$ has a real representative, which can be scaled to $ad-bc=\pm1$. Since $\Im T(i)=\frac{ad-bc}{c^2+d^2}>0$, the sign is $+1$.
 :::
 
 <1>3. Q.E.D.
+
 ::: {.proof}
-<1>1 and <1>2.
+By steps <1>1 and <1>2, $\operatorname{Aut}(\HH)=\boxed{\Bigl\{z\mapsto\frac{az+b}{cz+d}:a,b,c,d\in\RR,\ ad-bc=1\Bigr\}}\cong\operatorname{PSL}_2(\RR)$.
 :::
 :::
