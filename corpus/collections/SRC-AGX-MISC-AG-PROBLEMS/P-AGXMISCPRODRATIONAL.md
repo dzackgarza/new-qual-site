@@ -19,12 +19,13 @@ Show that $\PP^n\cross \PP^m$ is rational.
 :::
 
 ::: {.solution}
-Take
+On the dense open set $x_0y_0\neq 0$, define the rational map $\PP^n\cross\PP^m\dashrightarrow\PP^{n+m}$ by
 \[
 [x_0: x_1: \ldots: x_n] \cross [y_0: y_1: \ldots: y_m] \mapsto \left[1: \frac{x_1}{x_0}: \frac{x_2}{x_0}: \ldots: \frac{x_n}{x_0}: \frac{y_1}{y_0}: \frac{y_2}{y_0}: \ldots: \frac{y_m}{y_0}\right]
 .\]
-This has inverse
+It has inverse, defined on $z_0\neq 0$,
 \[
 [1: z_1: \ldots: z_{n+m}] \mapsto [1: z_1: \ldots: z_n] \cross [1: z_{n+1}: \ldots: z_{n+m}]
-.\]
+,\]
+so $\PP^n\cross\PP^m$ is birational to $\PP^{n+m}$.
 :::
