@@ -36,4 +36,4 @@ source:
     kind: unknown
 ---
 
-Oral-exam questions on curves and rationality, sheaves of modules, irreducibility, and standard calculations.
+Oral-exam questions on curves and rationality, sheaves of modules, irreducibility, and calculations of Picard groups, global sections, canonical bundles, and blow-ups.
