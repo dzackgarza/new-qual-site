@@ -38,11 +38,10 @@ The hyperelliptic curves of genus $3$ are the remaining case, a divisor in $\mat
 $\deg K = 6$ and $\abs{K}$ embeds a non-hyperelliptic $C$ in $\PP^3$ as a sextic.
 That curve lies on a unique quadric surface $Q$ and is the complete intersection of $Q$ with a cubic surface.
 Conversely a smooth complete intersection of a quadric and a cubic in $\PP^3$ has degree $6$ and $\omega \cong \OO(1)$, so it is the canonical curve of a genus-$4$ curve.
-Whether $Q$ is smooth or a cone is the extra discrete invariant here: on a smooth $Q$ the curve is of type $(3,3)$ and carries two distinct $g^1_3$'s, on the cone it carries one.
+The quadric $Q$ is smooth or a cone: on a smooth $Q$ the curve is of type $(3,3)$ and carries exactly two $g^1_3$'s, cut out by the two rulings; on the cone it carries exactly one, cut out by the lines through the vertex.
 :::
 
 ::: {.remark}
-These low-genus cases make the canonical model explicit.
 For a non-hyperelliptic curve, $\abs{K}$ embeds $C$ as a curve of degree $2g-2$ in $\PP^{g-1}$, and for $g=3,4$ that image has the named models above.
 Counting equations gives the unique quadric in genus $4$: $h^0(\PP^3, \OO(2)) = 10$ while $h^0(C, \OO_C(2)) = 2 \cdot 6 + 1 - 4 = 9$, so the ideal of $C$ contains a quadric, and it contains only one.
 :::
