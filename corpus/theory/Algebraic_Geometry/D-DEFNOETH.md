@@ -21,9 +21,9 @@ prompts:
 
 ::: {.definition title="Noetherian ring"}
 A ring $A$ is \dfn{Noetherian} if it satisfies the ascending chain condition on ideals: any increasing chain
-\[
+$$
 I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
-\]
+$$
 of ideals of $A$ eventually stabilises.
 Equivalently, every ideal of $A$ is finitely generated.
 An $A$-module $M$ is Noetherian if its submodules satisfy the same condition.
@@ -31,15 +31,15 @@ An $A$-module $M$ is Noetherian if its submodules satisfy the same condition.
 
 ::: {.definition title="Noetherian scheme"}
 A scheme $X$ is \dfn{locally Noetherian} if it can be covered by open affine subsets $\Spec A_i$ with each $A_i$ a Noetherian ring.
-It is **Noetherian** if it is locally Noetherian and quasicompact, equivalently if it has a finite such cover.
+It is \dfn{Noetherian} if it is locally Noetherian and quasicompact, equivalently if it has a finite such cover.
 A scheme is locally Noetherian if and only if $R$ is Noetherian for every open affine $\Spec R \subseteq X$.
 [@Har10a, §II.3, Proposition II.3.2]
 :::
 
 ::: {.remark}
-The Hilbert basis theorem is what makes the condition usable: $A$ Noetherian implies $A[x]$ Noetherian, hence every finitely generated algebra over a field or over $\ZZ$ is Noetherian.
+By the Hilbert basis theorem, $A$ Noetherian implies $A[x]$ Noetherian; hence every finitely generated algebra over a field or over $\ZZ$ is Noetherian.
 Quotients and localisations of Noetherian rings are Noetherian; subrings need not be, and infinitely generated polynomial rings such as $k[x_1, x_2, \ldots]$ are not.
 
-Over a Noetherian ring, finitely generated modules are Noetherian, submodules of finitely generated modules are finitely generated, and coherent and finitely generated agree for quasicoherent sheaves.
-Noetherian hypotheses underlie standard finiteness results such as finite Krull dimension for local rings, primary decomposition, and finiteness of coherent cohomology on projective schemes.
+Over a Noetherian ring, finitely generated modules are Noetherian and submodules of finitely generated modules are finitely generated; on a locally Noetherian scheme, a quasicoherent sheaf is coherent if and only if it is of finite type.
+A Noetherian local ring has finite Krull dimension, every ideal of a Noetherian ring has a primary decomposition, and for $X$ projective over a Noetherian ring $A$ and $\mcf$ coherent, each $H^i(X,\mcf)$ is a finitely generated $A$-module [@Har10a, Theorem III.5.2].
 :::
