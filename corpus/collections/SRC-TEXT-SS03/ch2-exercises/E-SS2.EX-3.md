@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-3
 kind: problem
-title: "SS 2.3: Laplace transforms of sine and cosine via sector contours"
+title: Laplace transforms of $\cos bx$ and $\sin bx$ by a sector contour
 classification:
   areas:
   - complex-analysis
@@ -38,7 +38,7 @@ with $|\omega|<\pi/2$ because $a>0$. Then
 \[
 Ae^{-i\omega}=a-ib.
 \]
-Integrate the entire function $e^{-Az}$ around the sector bounded by the positive real axis, the ray $\arg z=-\omega$, and a circular arc of radius $R$ joining them. Along every point of this arc the real part of $z$ is bounded below by a positive constant times $R$ away from the endpoints, and the usual sector estimate gives that the arc integral tends to $0$ as $R\to\infty$.
+Integrate the entire function $e^{-Az}$ around the sector bounded by the positive real axis, the ray $\arg z=-\omega$, and a circular arc of radius $R$ joining them. On the arc, $z=Re^{-it}$ with $t$ between $0$ and $\omega$, so $\Re(Az)=AR\cos t\ge AR\cos\omega=aR$. Hence $\abs{e^{-Az}}\le e^{-aR}$ there, and the arc integral is at most $R\abs\omega e^{-aR}\to0$ as $R\to\infty$.
 
 The two radial sides therefore give
 \[
