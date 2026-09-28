@@ -104,9 +104,11 @@ $$
 ::: {.proof}
 The group has $\varphi(9)=6$ elements. The class of $2$ has order $6$: indeed,
 $$
+2^2=4\not\equiv1
+\qquad\text{and}\qquad
 2^3=8\equiv-1\pmod9,
 $$
-so its order is not $1$ or $3$, and
+so its order is not $1$, $2$, or $3$, and
 $$
 2^6\equiv1\pmod9.
 $$
