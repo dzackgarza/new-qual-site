@@ -20,36 +20,44 @@ Discuss multiple transitivity.
 :::
 
 ::: {.solution}
-<1>1. A group action of $G$ on a set $X$ is $k$-transitive if for any two ordered $k$-tuples $(x_1, \ldots, x_k)$ and $(y_1, \ldots, y_k)$ of distinct elements of $X$, there is $g \in G$ with $g x_i = y_i$ for all $i$.
+Let a group $G$ act on a set $X$, and let $k\ge1$. The action is
+\dfn{$k$-transitive} if for any two ordered $k$-tuples $(x_1,\ldots,x_k)$ and
+$(y_1,\ldots,y_k)$ of distinct elements of $X$ there is $g\in G$ with
+$gx_i=y_i$ for all $i$. It is \dfn{sharply $k$-transitive} if moreover this
+$g$ is unique.
+
+<1>1. For $n\ge2$, $S_n$ acts sharply $n$-transitively on $\{1,\ldots,n\}$.
+
 ::: {.proof}
-definition.
+A bijection between two orderings of $\{1,\ldots,n\}$ is exactly one
+permutation.
 :::
 
-<1>2. The action is sharply $k$-transitive if it is $k$-transitive and the element $g$ in <1>1 is unique.
+<1>2. For $n\ge3$, $A_n$ acts $(n-2)$-transitively on $\{1,\ldots,n\}$.
+
 ::: {.proof}
-definition.
+Given two ordered $(n-2)$-tuples of distinct points, there are two
+permutations sending one to the other; they differ by the transposition of the
+two remaining target points, so exactly one of them is even.
 :::
 
-<1>3. Examples of multiple transitivity.
-<2>1. $S_n$ acts $n$-transitively (and sharply $n$-transitively) on $\{1, \ldots, n\}$.
+<1>3. For a field $k$, $\operatorname{PGL}_2(k)$ acts sharply $3$-transitively
+on $\PP^1(k)$.
+
 ::: {.proof}
-any permutation of $n$ distinct points is realized by a unique element of $S_n$.
-:::
-<2>2. $A_n$ acts $(n-2)$-transitively on $\{1, \ldots, n\}$.
-::: {.proof}
-given two ordered $(n-2)$-tuples, there is a permutation sending one to the other, and it can be chosen even (adjusting by a transposition of the two remaining points if needed).
-:::
-<2>3. $\operatorname{PGL}_2(k)$ acts sharply $3$-transitively on the projective line $\PP^1(k)$.
-::: {.proof}
-a Möbius transformation is determined by its values at three distinct points, and any three distinct points can be sent to any three distinct points.
-:::
-<2>4. The affine group $\operatorname{AGL}_1(k)$ acts sharply $2$-transitively on $k$.
-::: {.proof}
-an affine map $x \mapsto ax + b$ is determined by its values at two points.
+For distinct $z_1,z_2,z_3\in\PP^1(k)$ there is exactly one Möbius
+transformation sending them to $\infty,0,1$, namely
+$z\mapsto\frac{(z-z_2)(z_3-z_1)}{(z-z_1)(z_3-z_2)}$, with the usual
+interpretation when some $z_i=\infty$. Composing one such map with the inverse
+of another sends any triple of distinct points to any other, uniquely.
 :::
 
-<1>4. Q.E.D.
+<1>4. For a field $k$, the affine group
+$\operatorname{AGL}_1(k)=\{x\mapsto ax+b:a\in k^\times,\ b\in k\}$ acts sharply
+$2$-transitively on $k$.
+
 ::: {.proof}
-<1>1–<1>3.
+For $x_1\ne x_2$ and $y_1\ne y_2$, the conditions $ax_i+b=y_i$ have the unique
+solution $a=(y_1-y_2)/(x_1-x_2)\ne0$, $b=y_1-ax_1$.
 :::
 :::
