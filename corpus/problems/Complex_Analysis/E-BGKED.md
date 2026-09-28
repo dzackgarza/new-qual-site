@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-BGKED
 kind: problem
-title: Cauchy-Riemann iff holomorphic
+title: A $C^1$ function satisfies the Cauchy--Riemann equations if and only if it is
+  holomorphic
 classification:
   areas:
   - complex-analysis
@@ -22,8 +23,6 @@ Conversely, show that if $f$ is holomorphic, then $f$ satisfies the Cauchy-Riema
 :::
 
 ::: {.solution}
-**Goal:** Show that holomorphic implies Cauchy-Riemann, and conversely that Cauchy-Riemann (with $C^1$ hypothesis) implies holomorphic.
-
 **Direction 1: Holomorphic $\implies$ CR.**
 
 Suppose $f'(z_0)$ exists for some $z_0 = x_0 + iy_0 \in \Omega$. Since the limit
