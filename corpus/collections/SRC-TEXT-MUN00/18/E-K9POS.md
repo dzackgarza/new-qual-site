@@ -41,9 +41,9 @@ a constant map is continuous.
 ::: {.proof}
 for any neighborhood $V$ of $f(x)$, $f^{-1}(V)$ is a neighborhood of $x$, so it meets $A$ in a point $a \neq x$; then $f(a) \in V \cap f(A)$, so $V$ meets $f(A)$.
 :::
-<2>2. $f(x)$ is a limit point of $f(A)$ iff additionally $f(x) \notin f(A)$ or $f$ is injective near $x$.
+<2>2. If moreover $f(x)\notin f(A)$, then $f(x)$ is a limit point of $f(A)$.
 ::: {.proof}
-a limit point must be approached by points of $f(A)$ distinct from $f(x)$; the counterexample in <1>1 fails exactly because $f$ collapses $A$ to the single point $f(x)$.
+every neighborhood of $f(x)$ meets $f(A)$ by <2>1, and every point of $f(A)$ differs from $f(x)$.
 :::
 
 <1>3. Q.E.D.
