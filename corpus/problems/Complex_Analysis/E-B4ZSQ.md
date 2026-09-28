@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-B4ZSQ
 kind: problem
-title: Finding harmonic conjugates
+title: A harmonic conjugate of $x^3-3xy^2-x-y$
 classification:
   areas:
   - complex-analysis
@@ -22,17 +22,17 @@ u(x, y) = x^3 - 3xy^2 -x -y
 :::
 
 ::: {.concept}
-The standard procedure for harmonic conjugates:
+A harmonic conjugate $v$ of $u$ on a simply connected domain is computed as follows:
 
 - Start with $u$
 - Take $\dd{}{x}$ to get $u_x$
 - Apply CR to get $u_x = v_y$
-- Take $\int \dy$ to get $v$, which is essentially the solution up to an unknown $f(x)$.
+- Take $\int \dy$ to get $v$ up to an unknown function $f(x)$.
 - Take $\dd{}{x}$ to get $v_x$ which involves $f_x$
 - Apply CR to set $v_x = -u_y$ and solve for $f_x$
 - Compute $\int f_x \dx$ to obtain $f(x)$.
 
-My quick mnemonic:
+The same steps as a diagram:
 
 \begin{tikzcd}
 	u & f &&& \textcolor{rgb,255:red,92;green,214;blue,92}{v, f} \\
@@ -47,8 +47,6 @@ My quick mnemonic:
 	\arrow[squiggly, from=1-2, to=1-5]
 	\arrow["{\int \dy}"', from=4-5, to=2-5]
 \end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMCwwLCJ1Il0sWzAsMywidV94Il0sWzQsMywidl95Il0sWzQsMSwidiwgZih4KSJdLFszLDIsInZfeCwgZl94Il0sWzEsMiwidV95LCBmX3giXSxbMSwwLCJmIl0sWzQsMCwidiwgZiIsWzEyMCw2MCw2MCwxXV0sWzAsMSwiXFxkZHt9e3h9Il0sWzEsMiwiQ1IiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMyw0LCJcXGRke317eH0iLDJdLFs0LDUsIkNSIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fV0sWzUsNiwiXFxpbnQgXFxkeCIsMl0sWzYsNywiIiwwLHsic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoic3F1aWdnbHkifX19XSxbMiwzLCJcXGludCBcXGR5IiwyXV0=)
 
 :::
 
