@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose A, B are connected subsets of $\mathbb { R } ^ { n }$ which are not disjoint.
+Suppose $A$, $B$ are connected subsets of $\RR^n$ which are not disjoint.
 Prove that their union $A \cup B$ is also connected.
 :::
 
