@@ -48,7 +48,7 @@ Mike Usher created the initial PDF of past UGA qualifying exam questions organiz
 
 ## Syllabus
 
-Revised May 2006.
+The University of Georgia [study guide for the topology exam](https://math.uga.edu/sites/default/files/Quals/Topology%20Study%20Guide.docx), revised May 2006:
 
 > The weight of topics on the exam should be about 1/3 general topology and 2/3 algebraic topology.
 
