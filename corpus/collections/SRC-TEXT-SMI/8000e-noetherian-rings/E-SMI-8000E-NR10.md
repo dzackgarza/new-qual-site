@@ -119,7 +119,8 @@ as $R/I$-modules.
 
 <1>5. Reduce rank invariance to the field case.
 ::: {.proof}
-Choose a maximal ideal $\mathfrak m$ of $R$. Then
+Assume $R\ne0$; over the zero ring $R^n=0=R^m$ for all $n,m$. Choose a
+maximal ideal $\mathfrak m$ of $R$, which exists because $R\ne0$. Then
 $$
 k=R/\mathfrak m
 $$
