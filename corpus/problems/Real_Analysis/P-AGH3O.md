@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH3O
 kind: problem
-title: Consider the function
+title: The maximal function of an $L^1$ function need not be locally integrable
 classification:
   areas:
   - real-analysis
@@ -39,51 +39,34 @@ Conclude that $Hf$ is not locally integrable.
 :::
 
 ::: {.solution}
-The real logarithm $\log(1/x)$ is undefined for $x < 0$. Replacing it with $\log(1/|x|)$ gives the symmetric function $f(x) = \frac{1}{|x|\log^2(1/|x|)}$ for $0 < |x| \le 1/2$ and $0$ otherwise.
+Here $Hf(x) = \sup_{r>0}\frac{1}{2r}\int_{x-r}^{x+r}|f(t)|\,dt$ is the Hardy--Littlewood maximal function, and $f(x) = \frac{1}{|x|\log^2(1/|x|)}$ for $0 < |x| \le 1/2$.
 
-<1>1. $f \in L^1(\RR)$.
-    <2>1. $\int_\RR f = 2\int_0^{1/2}\frac{dx}{x\log^2(1/x)}$.
-        ::: {.proof}
-        symmetry of $f$ about $0$.
-        :::
-    <2>2. $\int_0^{1/2}\frac{dx}{x\log^2(1/x)} = \int_{\log 2}^\infty u^{-2}\,du = \frac{1}{\log 2} < \infty$.
-        ::: {.proof}
-        substitute $u = \log(1/x)$, $du = -dx/x$; as $x \to 0^+$, $u \to \infty$; at $x = 1/2$, $u = \log 2$.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>2 give $\int f = 2/\log 2 < \infty$.
-        :::
+<1>1. For $0 < s \le 1/2$, $\int_{-s}^{s} f = \frac{2}{\log(1/s)}$. In particular $\int_\RR f = \frac{2}{\log 2}$, so $f \in L^1(\RR)$.
 
-<1>2. For $0 < x \le 1/2$: $Hf(x) \ge \frac{2}{3x\log(1/x)}$ (and symmetrically for negative $x$), where $Hf$ is the Hilbert transform $Hf(x) = \mathrm{p.v.}\int_\RR \frac{f(t)}{x - t}\,dt$ (up to a convention constant).
-    <2>1. Restrict the integral to $|t| < x/2$: $Hf(x) \ge \int_{-x/2}^{x/2}\frac{f(t)}{x - t}\,dt \ge \frac{2}{3x}\int_{-x/2}^{x/2}f(t)\,dt$.
-        ::: {.proof}
-        on $|t| < x/2$, $x - t \ge x - x/2 = x/2$... more carefully $x - t \le x + x/2 = 3x/2$, so $\frac{1}{x - t} \ge \frac{2}{3x} > 0$; and the excluded p.v. region $|t - x| < \eps$ lies outside $|t| < x/2$ for $\eps < x/2$, so this is a genuine lower bound on the truncated integral.
-        :::
-    <2>2. $\int_{-x/2}^{x/2}f(t)\,dt = 2\int_0^{x/2}\frac{dt}{t\log^2(1/t)} = \frac{2}{\log(2/x)}$.
-        ::: {.proof}
-        substitute $u = \log(1/t)$: $2\int_{\log(2/x)}^\infty u^{-2}du = \frac{2}{\log(2/x)}$.
-        :::
-    <2>3. $\frac{2}{\log(2/x)} \ge \frac{1}{\log(1/x)}$ for $0 < x \le 1/2$.
-        ::: {.proof}
-        $\log(2/x) = \log(1/x) + \log 2 \le 2\log(1/x)$ since $\log(1/x) \ge \log 2$.
-        :::
-    <2>4. Q.E.D.
-        ::: {.proof}
-        <2>1, <2>2, and <2>3 give $Hf(x) \ge \frac{2}{3x}\cdot\frac{1}{\log(1/x)}$, i.e. the claim with $c = 2/3$.
-        :::
+::: {.proof}
+$f$ is even, and the substitution $u = \log(1/t)$, $du = -dt/t$, gives $\int_0^{s}\frac{dt}{t\log^2(1/t)} = \int_{\log(1/s)}^\infty u^{-2}\,du = \frac{1}{\log(1/s)}$.
+:::
 
-<1>3. $Hf$ is not locally integrable.
-    <2>1. $\int_{-1/2}^{1/2}|Hf(x)|\,dx \ge c\int_0^{1/2}\frac{dx}{x\log(1/x)}$.
-        ::: {.proof}
-        <1>2 gives $|Hf(x)| = Hf(x) \ge \frac{c}{x\log(1/x)}$ for $x \in (0, 1/2]$ (the transform of the even $f$ is odd, and the bound is symmetric).
-        :::
-    <2>2. $\int_0^{1/2}\frac{dx}{x\log(1/x)} = \infty$.
-        ::: {.proof}
-        substitute $u = \log(1/x)$: $\int_{\log 2}^\infty \frac{du}{u} = \infty$.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>2 show $\int_{-1/2}^{1/2}|Hf| = \infty$, so $Hf$ is not integrable on any neighborhood of $0$.
-        :::
+<1>2. For $0 < |x| \le 1/2$, $Hf(x) \ge \frac{1}{2|x|\log(1/|x|)}$.
+
+::: {.proof}
+Take $r = 2|x|$. The interval $(x - r, x + r)$ contains $(-|x|, |x|)$ and $f \ge 0$, so by step <1>1
+$$
+Hf(x) \ge \frac{1}{4|x|}\int_{-|x|}^{|x|} f = \frac{1}{4|x|}\cdot\frac{2}{\log(1/|x|)}.
+$$
+So part (b) holds with $c = 1/2$.
+:::
+
+<1>3. $Hf$ is not integrable on any neighborhood of $0$.
+
+::: {.proof}
+For $0 < \delta \le 1/2$, step <1>2 and the substitution $u = \log(1/x)$ give
+$$
+\int_{-\delta}^{\delta} Hf \ge 2 \cdot \frac12\int_0^{\delta}\frac{dx}{x\log(1/x)} = \int_{\log(1/\delta)}^\infty \frac{du}{u} = \infty.
+$$
+:::
+:::
+
+::: {.remark}
+For $x < 0$ the formula is read with $\log(1/|x|)$ in place of $\log(1/x)$, so that $f$ is even.
 :::
