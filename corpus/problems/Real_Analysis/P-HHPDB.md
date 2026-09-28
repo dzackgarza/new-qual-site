@@ -24,38 +24,35 @@ Let $\phi\in L^1(\RR^n)$ such that $\int \phi = 1$ and define $\phi_t(x) = t^{-n
 Show that if $f$ is bounded and uniformly continuous then $f\ast \phi_t \converges{t\to 0}\to f$ uniformly.
 :::
 ::: {.solution}
-<1>1. Since $\int \phi = 1$ and $\phi_t(x) = t^{-n}\phi(x/t)$, we have $\int \phi_t = 1$ for all $t$.
+If $\|f\|_\infty = 0$ then $f \ast \phi_t = 0 = f$; assume $\|f\|_\infty > 0$.
+
+<1>1. $\int \phi_t = 1$ and $\int|\phi_t| = \|\phi\|_1$ for every $t > 0$.
+
 ::: {.proof}
-substitute $y = x/t$: $\int t^{-n}\phi(x/t)\,dx = \int \phi(y)\,dy = 1$.
+Substitute $y = x/t$.
 :::
 
-<1>2. Pointwise identity: $$(f \ast \phi_t)(x) - f(x) = \int \phi_t(y)\,(f(x-y) - f(x))\,dy = \int \phi(y)\,(f(x - ty) - f(x))\,dy.$$ Proof: $f \ast \phi_t = \int f(x-y)\phi_t(y)\,dy$; subtract $f(x)\int\phi_t = f(x)$ (by <1>1); the second equality is the change of variables $y \mapsto ty$.
+<1>2. $(f \ast \phi_t)(x) - f(x) = \int \phi_t(y)\,(f(x-y) - f(x))\,dy$.
 
-<1>3. Given $\eps > 0$: <2>1. Choose $R$ with $\int_{|z| > R}|\phi(z)|\,dz < \dfrac{\eps}{4\|f\|_\infty}$ (possible since $\phi \in L^1$; if $\|f\|_\infty = 0$ then $f \equiv 0$, so $f \ast \phi_t = 0 = f$ for every $t$; hence assume $\|f\|_\infty > 0$).
 ::: {.proof}
-dominated convergence / definition of the $L^1$ integral.
-:::
-<2>2. By uniform continuity of $f$, choose $\eta > 0$ with $|u - v| < \eta \Rightarrow |f(u) - f(v)| < \dfrac{\eps}{2\|\phi\|_1}$.
-::: {.proof}
-hypothesis on $f$.
+$(f \ast \phi_t)(x) = \int f(x-y)\phi_t(y)\,dy$ and $f(x) = f(x)\int\phi_t$ by step <1>1.
 :::
 
-<1>4. For $t < \eta/R$ and every $x$: $|(f \ast \phi_t)(x) - f(x)| < \eps$.
-<2>1. Split: $|(f\ast\phi_t)(x) - f(x)| \le \int_{|y| \le R/t}|\phi_t(y)|\,|f(x-y) - f(x)|\,dy + \int_{|y| > R/t}|\phi_t(y)|\,|f(x-y) - f(x)|\,dy$.
+<1>3. Given $\eps > 0$, there are $R > 0$ with $\int_{|z| > R}|\phi(z)|\,dz < \frac{\eps}{4\|f\|_\infty}$ and $\eta > 0$ with $|f(u) - f(v)| < \frac{\eps}{2\|\phi\|_1}$ whenever $|u - v| < \eta$.
+
 ::: {.proof}
-triangle inequality applied to <1>2. <2>2. First term: $\le \dfrac{\eps}{2\|\phi\|_1}\int_{|y| \le R/t}|\phi_t(y)|\,dy \le \dfrac{\eps}{2}$.
+The first holds because $\phi \in L^1$, by dominated convergence applied to $|\phi|\chi_{\theset{|z| > R}}$ as $R \to \infty$. The second is uniform continuity of $f$.
 :::
+
+<1>4. For $0 < t < \eta/R$ and every $x$, $|(f \ast \phi_t)(x) - f(x)| < \eps$.
+
 ::: {.proof}
-for $|y| \le R/t < \eta$ (since $t < \eta/R$), uniform continuity (<1>3<2>2) bounds $|f(x-y) - f(x)|$; and $\int |\phi_t| = \|\phi\|_1$.
-:::
-<2>3. Second term: $\le 2\|f\|_\infty \int_{|y| > R/t}|\phi_t(y)|\,dy = 2\|f\|_\infty \int_{|z| > R}|\phi(z)|\,dz < \dfrac{\eps}{2}$.
-::: {.proof}
-$|f(x-y) - f(x)| \le 2\|f\|_\infty$; change variables $z = ty$; the bound is <1>3<2>1. <2>4. Q.E.D. Proof: <2>1, <2>2, <2>3 give $|(f\ast\phi_t)(x) - f(x)| < \eps$ for all $x$, i.e. $\|f\ast\phi_t - f\|_\infty < \eps$.
+Split the integral of step <1>2 at $|y| = tR$. For $|y| \le tR < \eta$, step <1>3 bounds $|f(x-y) - f(x)|$ by $\frac{\eps}{2\|\phi\|_1}$, and step <1>1 bounds the integral of $|\phi_t|$, so this part is at most $\eps/2$. For $|y| > tR$, bound $|f(x-y) - f(x)|$ by $2\|f\|_\infty$ and substitute $z = y/t$: $\int_{|y| > tR}|\phi_t(y)|\,dy = \int_{|z| > R}|\phi(z)|\,dz$, so this part is less than $\eps/2$.
 :::
 
 <1>5. Q.E.D.
+
 ::: {.proof}
-<1>4 shows $f \ast \phi_t \to f$ uniformly as $t \to 0$.
+Step <1>4 gives $\|f\ast\phi_t - f\|_\infty \le \eps$ for $0 < t < \eta/R$.
 :::
-(Only boundedness and uniform continuity of $f$ are used.)
 :::
