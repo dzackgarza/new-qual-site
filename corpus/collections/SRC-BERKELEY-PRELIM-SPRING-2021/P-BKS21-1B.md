@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-For which pairs $(a,b)\in\mathbb R^2$ does
-\[
+For which pairs $(a,b)\in\RR^2$ does
+$$
 \sum_{n=3}^{\infty}n^a(\log n)^b
-\]
+$$
 converge?
 :::
