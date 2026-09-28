@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DXQMY
 kind: problem
-title: Schwarz-Pick Lemma
+title: Schwarz--Pick lemma
 classification:
   areas:
   - complex-analysis
@@ -28,7 +28,7 @@ If equality holds for some $z\neq w$ in either expression, then $f= \lambda F$ w
 
 :::
 
-::: {.proof title="of Schwarz-Pick"}
+::: {.solution}
 
 ![](../../assets/figures/2021-11-27_00-55-19.png)
 
