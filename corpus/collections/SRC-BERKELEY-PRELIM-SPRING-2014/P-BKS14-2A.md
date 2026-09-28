@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove or disprove that there is a sequence \(\{f_n\}\) of continuous functions on \(\mathbb R\) such that for every rational \(x\), the sequence \(f_n(x)\) is bounded, but the sequence \(f_n(x+\sqrt2)\) is unbounded.
+Prove or disprove that there is a sequence $\{f_n\}$ of continuous functions on $\RR$ such that for every rational $x$, the sequence $f_n(x)$ is bounded, but the sequence $f_n(x+\sqrt2)$ is unbounded.
 :::
 
 ::: {.solution}
