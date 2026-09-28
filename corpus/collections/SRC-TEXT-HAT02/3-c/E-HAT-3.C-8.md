@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-8
 kind: problem
-title: "Tensor product of Hopf algebras"
+title: Tensor product of Hopf algebras
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

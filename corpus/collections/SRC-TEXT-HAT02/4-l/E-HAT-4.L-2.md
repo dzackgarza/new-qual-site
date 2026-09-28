@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.L-2
 kind: problem
-title: "Cohomology operations distinguish quotients"
+title: Cohomology operations distinguish quotients
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Steenrod Squares
+  - Cohomology Operations
 relations: []
 review: draft
 audit:

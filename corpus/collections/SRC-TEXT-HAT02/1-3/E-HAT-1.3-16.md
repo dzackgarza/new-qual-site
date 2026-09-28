@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-16
 kind: problem
-title: "Lifting covering spaces through composites"
+title: Lifting covering spaces through composites
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

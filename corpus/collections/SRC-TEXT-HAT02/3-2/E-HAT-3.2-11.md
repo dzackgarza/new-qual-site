@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.2-11
 kind: problem
-title: "Maps $S^{k+\\ell} \\to S^k \\times S^\\ell$ are trivial on top homology"
+title: Maps $S^{k+\ell} \to S^k \times S^\ell$ are trivial on top homology
 classification:
   areas:
   - topology
   topics:
   - Cohomology
+  - Cup Product
 relations: []
 review: draft
 audit:

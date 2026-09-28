@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-33
 kind: problem
-title: "Boundary of contractible manifold is a homology sphere"
+title: Boundary of contractible manifold is a homology sphere
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

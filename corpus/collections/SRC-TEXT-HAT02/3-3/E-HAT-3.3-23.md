@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-23
 kind: problem
-title: "Simplicial vs. singular compactly supported cohomology"
+title: Simplicial vs. singular compactly supported cohomology
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

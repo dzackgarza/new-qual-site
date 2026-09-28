@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-1
 kind: problem
-title: "H-space structure and strict identity"
+title: H-space structure and strict identity
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

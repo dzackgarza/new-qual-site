@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.2-18
 kind: problem
-title: "Cup product nondegenerality on surfaces"
+title: Cup product nondegenerality on surfaces
 classification:
   areas:
   - topology
   topics:
   - Cohomology
+  - Cup Product
 relations: []
 review: draft
 audit:

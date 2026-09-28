@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-24
 kind: problem
-title: "Homology of closed 3-manifolds"
+title: Homology of closed 3-manifolds
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

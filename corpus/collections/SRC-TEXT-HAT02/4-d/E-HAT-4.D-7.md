@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-7
 kind: problem
-title: "Thom class implies orientability"
+title: Thom class implies orientability
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

@@ -2,12 +2,14 @@
 schema: qual/card@1
 id: E-HAT-4.K-1
 kind: problem
-title: "Mayer--Vietoris for CW subcomplexes"
+title: Mayer--Vietoris for CW subcomplexes
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Symmetric Products
+  - Quasifibrations
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

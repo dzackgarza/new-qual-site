@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-12
 kind: problem
-title: "Commutator length in free groups"
+title: Commutator length in free groups
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

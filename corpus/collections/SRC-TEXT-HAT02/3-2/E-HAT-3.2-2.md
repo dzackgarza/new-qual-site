@@ -8,6 +8,7 @@ classification:
   - topology
   topics:
   - Cohomology
+  - Cup Product
 relations: []
 review: draft
 audit:

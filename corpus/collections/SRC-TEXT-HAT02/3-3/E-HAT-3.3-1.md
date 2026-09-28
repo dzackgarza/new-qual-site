@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-1
 kind: problem
-title: "Nonorientable 1-manifolds without Hausdorff"
+title: Nonorientable 1-manifolds without Hausdorff
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 audit:

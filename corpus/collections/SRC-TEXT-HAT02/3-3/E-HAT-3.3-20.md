@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-20
 kind: problem
-title: "Compactly supported $H^0$ of noncompact spaces"
+title: Compactly supported $H^0$ of noncompact spaces
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

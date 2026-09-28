@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-6
 kind: problem
-title: "Connected sums of manifolds"
+title: Connected sums of manifolds
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

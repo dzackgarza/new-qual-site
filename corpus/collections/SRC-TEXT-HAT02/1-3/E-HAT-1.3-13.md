@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-13
 kind: problem
-title: "27-sheeted covering space from the subgroup of cubes"
+title: 27-sheeted covering space from the subgroup of cubes
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

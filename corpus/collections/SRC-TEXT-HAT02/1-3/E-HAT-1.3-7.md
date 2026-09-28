@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-7
 kind: problem
-title: "Local path-connectedness is necessary for the lifting criterion"
+title: Local path-connectedness is necessary for the lifting criterion
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

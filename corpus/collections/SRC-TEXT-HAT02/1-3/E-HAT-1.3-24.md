@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-24
 kind: problem
-title: "Covering spaces from subgroups of deck transformation groups"
+title: Covering spaces from subgroups of deck transformation groups
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

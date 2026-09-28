@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-33
 kind: problem
-title: "Quotient graphs and freeness of subgroups"
+title: Quotient graphs and freeness of subgroups
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

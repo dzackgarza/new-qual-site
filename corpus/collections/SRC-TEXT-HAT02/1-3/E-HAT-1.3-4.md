@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-4
 kind: problem
-title: "Simply-connected covering space of a sphere with diameter"
+title: Simply-connected covering space of a sphere with diameter
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

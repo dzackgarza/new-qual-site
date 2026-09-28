@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-29
 kind: problem
-title: "Conjugate subgroups give homeomorphic orbit spaces"
+title: Conjugate subgroups give homeomorphic orbit spaces
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

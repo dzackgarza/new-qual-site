@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-13
 kind: problem
-title: "Self-duality of Hopf algebras"
+title: Self-duality of Hopf algebras
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

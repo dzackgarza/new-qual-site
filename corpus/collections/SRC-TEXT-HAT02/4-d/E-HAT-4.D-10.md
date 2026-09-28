@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-10
 kind: problem
-title: "Eigenvalues of quaternionic matrices"
+title: Eigenvalues of quaternionic matrices
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

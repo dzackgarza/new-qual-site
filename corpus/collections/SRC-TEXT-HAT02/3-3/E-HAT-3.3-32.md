@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-32
 kind: problem
-title: "Compact manifolds do not retract onto boundary"
+title: Compact manifolds do not retract onto boundary
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

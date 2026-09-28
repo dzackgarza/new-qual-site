@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-28
 kind: problem
-title: "Nondegeneracy on large subspaces"
+title: Nondegeneracy on large subspaces
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

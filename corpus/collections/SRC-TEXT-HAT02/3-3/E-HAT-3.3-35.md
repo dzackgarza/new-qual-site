@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-35
 kind: problem
-title: "Poincaré duality for noncompact manifolds with boundary"
+title: Poincaré duality for noncompact manifolds with boundary
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

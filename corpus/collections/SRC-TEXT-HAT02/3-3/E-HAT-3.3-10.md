@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-10
 kind: problem
-title: "Degree 1 implies surjection on $\\pi_1$"
+title: Degree 1 implies surjection on $\pi_1$
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-15
 kind: problem
-title: "Pontryagin ring from polynomial cohomology"
+title: Pontryagin ring from polynomial cohomology
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-27
 kind: problem
-title: "Normal form for skew-symmetric forms over $\\mathbb{Z}$"
+title: Normal form for skew-symmetric forms over $\mathbb{Z}$
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

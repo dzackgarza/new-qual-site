@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-17
 kind: problem
-title: "Normal covering spaces from group extensions"
+title: Normal covering spaces from group extensions
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

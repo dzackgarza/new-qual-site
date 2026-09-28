@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-27
 kind: problem
-title: "Two actions of the fundamental group on the fiber"
+title: Two actions of the fundamental group on the fiber
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft
@@ -14,9 +15,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: >-
-    Checked against Hatcher, Algebraic Topology, Section 1.3, revised Exercise 27.
-    Corrected the local second example from a wedge of three circles to the source's torus $S^1\times S^1$.
+  note: Checked against Hatcher, Algebraic Topology, Section 1.3, revised Exercise 27. Corrected the local second example from a wedge of three circles to the source's torus $S^1\times S^1$.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09

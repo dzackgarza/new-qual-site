@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-2
 kind: problem
-title: "Retracts of H-spaces"
+title: Retracts of H-spaces
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

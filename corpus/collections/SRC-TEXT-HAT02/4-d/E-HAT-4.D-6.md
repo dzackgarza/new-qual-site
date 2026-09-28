@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-6
 kind: problem
-title: "Characterization of $\\mathbb{CP}^n$-like manifolds"
+title: Characterization of $\mathbb{CP}^n$-like manifolds
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

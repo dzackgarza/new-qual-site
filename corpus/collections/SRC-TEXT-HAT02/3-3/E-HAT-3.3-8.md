@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-8
 kind: problem
-title: "Degree as sum of local signs"
+title: Degree as sum of local signs
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

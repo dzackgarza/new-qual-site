@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-11
 kind: problem
-title: "Common covering space without a common cover"
+title: Common covering space without a common cover
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft
@@ -14,11 +15,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-09
-  note: >-
-    Checked against Hatcher, Algebraic Topology, Section 1.3, Exercise 11.
-    Hatcher's covering-space definition allows nonsurjective maps, so the literal
-    statement needs the intended connected-common-base interpretation; Hatcher's
-    later published clarification gives the same two-vertex, three-edge construction.
+  note: Checked against Hatcher, Algebraic Topology, Section 1.3, Exercise 11. Hatcher's covering-space definition allows nonsurjective maps, so the literal statement needs the intended connected-common-base interpretation; Hatcher's later published clarification gives the same two-vertex, three-edge construction.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-09

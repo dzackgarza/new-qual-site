@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-4
 kind: problem
-title: "Quotients by orientation-preserving actions"
+title: Quotients by orientation-preserving actions
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

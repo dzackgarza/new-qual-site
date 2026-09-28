@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-22
 kind: problem
-title: "Product of covering space actions"
+title: Product of covering space actions
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

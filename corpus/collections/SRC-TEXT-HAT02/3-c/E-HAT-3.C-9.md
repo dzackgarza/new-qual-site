@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-9
 kind: problem
-title: "Euler characteristic of finite H-spaces"
+title: Euler characteristic of finite H-spaces
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

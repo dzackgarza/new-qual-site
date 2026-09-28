@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-8
 kind: problem
-title: "Thom space of a product bundle"
+title: Thom space of a product bundle
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

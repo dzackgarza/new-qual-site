@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-30
 kind: problem
-title: "Cayley graph of $\\mathbb{Z} * \\mathbb{Z}_2$"
+title: Cayley graph of $\mathbb{Z} * \mathbb{Z}_2$
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

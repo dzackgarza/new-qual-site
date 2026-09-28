@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-28
 kind: problem
-title: "Fundamental group of an orbit space"
+title: Fundamental group of an orbit space
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

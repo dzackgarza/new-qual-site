@@ -2,12 +2,14 @@
 schema: qual/card@1
 id: E-HAT-4.K-5
 kind: problem
-title: "Quasifibrations"
+title: Quasifibrations
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Symmetric Products
+  - Quasifibrations
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

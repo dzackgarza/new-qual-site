@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-5
 kind: problem
-title: "Gysin sequence and Hopf invariant of sphere bundles"
+title: Gysin sequence and Hopf invariant of sphere bundles
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

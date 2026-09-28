@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.G-4
 kind: problem
-title: "Nerve lemma for subcomplex covers of CW complexes"
+title: Nerve lemma for subcomplex covers of CW complexes
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - CW Complexes
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

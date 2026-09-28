@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-26
 kind: problem
-title: "Cup product on connected sums of products"
+title: Cup product on connected sums of products
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

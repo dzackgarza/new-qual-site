@@ -2,12 +2,14 @@
 schema: qual/card@1
 id: E-HAT-4.K-2
 kind: problem
-title: "Contractible fibers imply homotopy equivalence"
+title: Contractible fibers imply homotopy equivalence
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Symmetric Products
+  - Quasifibrations
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

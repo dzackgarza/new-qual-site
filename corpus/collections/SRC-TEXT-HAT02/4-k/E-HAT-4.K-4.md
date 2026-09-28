@@ -2,12 +2,14 @@
 schema: qual/card@1
 id: E-HAT-4.K-4
 kind: problem
-title: "$SP_2(S^1)$ is a Möbius band"
+title: $SP_2(S^1)$ is a Möbius band
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Symmetric Products
+  - Quasifibrations
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

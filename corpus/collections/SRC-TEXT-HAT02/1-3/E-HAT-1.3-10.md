@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-10
 kind: problem
-title: "Connected covering spaces of $S^1 \\vee S^1$"
+title: Connected covering spaces of $S^1 \vee S^1$
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

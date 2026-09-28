@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-30
 kind: problem
-title: "Boundary of orientable manifold is orientable"
+title: Boundary of orientable manifold is orientable
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

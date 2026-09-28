@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-3
 kind: problem
-title: "Covering spaces of orientable manifolds"
+title: Covering spaces of orientable manifolds
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

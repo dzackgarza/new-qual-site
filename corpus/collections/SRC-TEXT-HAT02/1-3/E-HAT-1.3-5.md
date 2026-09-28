@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-5
 kind: problem
-title: "The harmonic broom has no simply-connected covering space"
+title: The harmonic broom has no simply-connected covering space
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

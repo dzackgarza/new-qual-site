@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-18
 kind: problem
-title: "Direct limits of torsionfree groups"
+title: Direct limits of torsionfree groups
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

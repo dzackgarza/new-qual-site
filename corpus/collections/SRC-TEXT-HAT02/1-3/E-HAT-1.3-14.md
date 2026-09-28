@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-14
 kind: problem
-title: "Connected covering spaces of $\\mathbb{RP}^2 \\vee \\mathbb{RP}^2$"
+title: Connected covering spaces of $\mathbb{RP}^2 \vee \mathbb{RP}^2$
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-23
 kind: problem
-title: "Free properly discontinuous actions are covering space actions"
+title: Free properly discontinuous actions are covering space actions
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

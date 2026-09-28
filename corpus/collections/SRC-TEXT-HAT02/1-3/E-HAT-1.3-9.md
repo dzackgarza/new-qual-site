@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-9
 kind: problem
-title: "Maps to $S^1$ from spaces with finite fundamental group"
+title: Maps to $S^1$ from spaces with finite fundamental group
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

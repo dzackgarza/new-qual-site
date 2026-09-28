@@ -2,12 +2,14 @@
 schema: qual/card@1
 id: E-HAT-4.K-6
 kind: problem
-title: "Projection from $\\Delta X$ is a quasifibration"
+title: Projection from $\Delta X$ is a quasifibration
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Symmetric Products
+  - Quasifibrations
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-2
 kind: problem
-title: "Cohomology of $K(\\mathbb{Z}_p, 1)$ via Leray--Hirsch"
+title: Cohomology of $K(\mathbb{Z}_p, 1)$ via Leray--Hirsch
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

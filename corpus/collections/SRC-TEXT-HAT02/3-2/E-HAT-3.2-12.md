@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.2-12
 kind: problem
-title: "Spaces with isomorphic cohomology but different homotopy type"
+title: Spaces with isomorphic cohomology but different homotopy type
 classification:
   areas:
   - topology
   topics:
   - Cohomology
+  - Cup Product
 relations: []
 review: draft
 audit:

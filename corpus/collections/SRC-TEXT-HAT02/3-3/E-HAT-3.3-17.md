@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-17
 kind: problem
-title: "Direct limits commute with homology"
+title: Direct limits commute with homology
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

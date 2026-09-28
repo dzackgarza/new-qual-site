@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-12
 kind: problem
-title: "Covering space of $S^1 \\vee S^1$ for a normal subgroup"
+title: Covering space of $S^1 \vee S^1$ for a normal subgroup
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

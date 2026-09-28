@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-8
 kind: problem
-title: "Simply-connected covers of homotopy equivalent spaces"
+title: Simply-connected covers of homotopy equivalent spaces
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

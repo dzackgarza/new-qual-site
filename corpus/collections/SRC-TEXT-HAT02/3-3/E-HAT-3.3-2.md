@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-2
 kind: problem
-title: "Deleting a point does not affect orientability"
+title: Deleting a point does not affect orientability
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

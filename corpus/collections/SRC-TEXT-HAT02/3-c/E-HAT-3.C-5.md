@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-5
 kind: problem
-title: "Fundamental group of an H-space is abelian"
+title: Fundamental group of an H-space is abelian
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

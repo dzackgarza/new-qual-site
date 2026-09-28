@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.G-1
 kind: problem
-title: "Infinite mapping cylinder deformation retracts onto telescope"
+title: Infinite mapping cylinder deformation retracts onto telescope
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - CW Complexes
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

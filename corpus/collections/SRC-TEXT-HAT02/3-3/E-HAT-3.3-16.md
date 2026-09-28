@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-16
 kind: problem
-title: "Associativity of cap product"
+title: Associativity of cap product
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

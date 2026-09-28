@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-14
 kind: problem
-title: "Shrinking wedge of circles"
+title: Shrinking wedge of circles
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

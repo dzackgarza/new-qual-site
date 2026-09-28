@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-11
 kind: problem
-title: "Pontryagin ring of the torus"
+title: Pontryagin ring of the torus
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

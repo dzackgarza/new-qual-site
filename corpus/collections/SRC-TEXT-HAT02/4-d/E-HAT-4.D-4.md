@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-4
 kind: problem
-title: "Cohomology of complex flag manifolds"
+title: Cohomology of complex flag manifolds
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

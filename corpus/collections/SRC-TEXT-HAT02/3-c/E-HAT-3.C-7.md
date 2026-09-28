@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-7
 kind: problem
-title: "Primitive elements of $\\mathbb{Z}_p[x]$"
+title: Primitive elements of $\mathbb{Z}_p[x]$
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

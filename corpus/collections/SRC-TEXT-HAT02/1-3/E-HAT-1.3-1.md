@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-1
 kind: problem
-title: "Restriction of a covering space to a subspace"
+title: Restriction of a covering space to a subspace
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

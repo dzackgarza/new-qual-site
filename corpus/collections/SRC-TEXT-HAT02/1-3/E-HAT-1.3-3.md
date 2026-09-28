@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-3
 kind: problem
-title: "Compactness lifts through finite-fiber covering spaces"
+title: Compactness lifts through finite-fiber covering spaces
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

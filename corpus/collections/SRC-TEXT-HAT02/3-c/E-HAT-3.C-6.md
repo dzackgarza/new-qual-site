@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-6
 kind: problem
-title: "Spheres as H-spaces via $J_2(S^n)$"
+title: Spheres as H-spaces via $J_2(S^n)$
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-7
 kind: problem
-title: "Degree 1 maps to $S^n$"
+title: Degree 1 maps to $S^n$
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

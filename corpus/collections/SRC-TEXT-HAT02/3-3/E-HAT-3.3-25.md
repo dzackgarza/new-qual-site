@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-25
 kind: problem
-title: "Torsionfree $H_{k-1}$ implies torsionfree $H_k$"
+title: Torsionfree $H_{k-1}$ implies torsionfree $H_k$
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-29
 kind: problem
-title: "Retractions of surfaces onto graphs"
+title: Retractions of surfaces onto graphs
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft

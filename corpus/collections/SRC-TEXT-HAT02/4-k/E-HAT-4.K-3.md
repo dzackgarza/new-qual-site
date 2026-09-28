@@ -2,12 +2,14 @@
 schema: qual/card@1
 id: E-HAT-4.K-3
 kind: problem
-title: "$SP_n(I) = \\Delta^n$"
+title: $SP_n(I) = \Delta^n$
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Symmetric Products
+  - Quasifibrations
+  - Homotopy Equivalence
 relations: []
 review: draft
 audit:

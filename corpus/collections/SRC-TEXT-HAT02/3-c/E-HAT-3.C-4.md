@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-4
 kind: problem
-title: "Lifting H-space structure to universal covers"
+title: Lifting H-space structure to universal covers
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

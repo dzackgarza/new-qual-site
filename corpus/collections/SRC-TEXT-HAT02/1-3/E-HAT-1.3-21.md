@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-21
 kind: problem
-title: "Torus with Möbius band attached"
+title: Torus with Möbius band attached
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

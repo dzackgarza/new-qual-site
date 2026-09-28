@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.C-3
 kind: problem
-title: "Path-components of homotopy-associative H-spaces"
+title: Path-components of homotopy-associative H-spaces
 classification:
   areas:
   - topology
   topics:
+  - H-Spaces
+  - Hopf Algebras
   - Cohomology
 relations: []
 review: draft

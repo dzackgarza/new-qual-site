@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: E-HAT-4.D-9
 kind: problem
-title: "Torus inclusion in $U(n)$ is nullhomotopic"
+title: Torus inclusion in $U(n)$ is nullhomotopic
 classification:
   areas:
   - topology
   topics:
-  - Higher Homotopy Groups
+  - Fiber Bundles
+  - Cohomology
 relations: []
 review: draft
 audit:

@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-HAT-1.3-25
 kind: problem
-title: "Non-Hausdorff orbit space from a covering space action"
+title: Non-Hausdorff orbit space from a covering space action
 classification:
   areas:
   - topology
   topics:
+  - Covering Spaces
   - Fundamental Group
 relations: []
 review: draft

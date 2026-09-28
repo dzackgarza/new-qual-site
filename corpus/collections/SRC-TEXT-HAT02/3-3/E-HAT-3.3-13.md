@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-HAT-3.3-13
 kind: problem
-title: "No retraction onto subsurface of high genus"
+title: No retraction onto subsurface of high genus
 classification:
   areas:
   - topology
   topics:
+  - Poincaré Duality
+  - Manifolds
   - Cohomology
 relations: []
 review: draft
