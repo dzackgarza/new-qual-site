@@ -80,11 +80,12 @@ So the two operations coincide.
 \[
 (a*b)\otimes(c*d)=(a\otimes c)*(b\otimes d).
 \]
-Since \(*=\otimes\) on homotopy classes and both have the same identity, the Eckmann--Hilton calculation gives
+This holds pointwise for loops, hence for their classes. Write \(1=[e_e]\), the identity for both operations. By part (c) and the interchange law,
 \[
 [f]*[g]
-=([f]*1)\otimes(1*[g])
-=(1*[g])\otimes([f]*1)
+=[f]\otimes[g]
+=(1*[f])\otimes([g]*1)
+=(1\otimes[g])*([f]\otimes1)
 =[g]*[f].
 \]
 Thus \(\pi_1(G,e)\) is abelian.
