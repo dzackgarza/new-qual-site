@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW1
 kind: problem
-title: Universal covers of $S^1$ and $S^1\vee S^1$ (warm-up)
+title: Universal covers of $S^1$ and $S^1\vee S^1$
 classification:
   areas:
   - topology
