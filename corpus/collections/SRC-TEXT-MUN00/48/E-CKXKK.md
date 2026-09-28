@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-CKXKK
 kind: problem
-title: G-delta subspaces of compact Hausdorff or complete metric spaces are Baire
+title: $G_\delta$ subspaces of compact Hausdorff or complete metric spaces are Baire
 classification:
   areas:
   - topology
