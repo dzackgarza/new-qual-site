@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS03-9A
 kind: problem
-title: The ring $\mathbb Z+3i\mathbb Z$ is not a UFD
+title: The ring $\ZZ+3i\ZZ$ is not a UFD
 classification:
   areas:
   - prelim
@@ -25,8 +25,8 @@ Prove that $R$ is a subring of $\mathbb C$, an integral domain, and not a unique
 :::
 
 ::: {.solution}
-It’s routine to verify that R is an additive subgroup and is closed under multiplication.
-Since C is a field, any subring is an integral domain.
-Consider two factorizations of the integer 10 in R, namely $1 0 = 2 \cdot 5$ and $1 0 = ( 1 + 3 i ) ( 1 - 3 i )$ . The norm $\vert z \vert ^ { 2 } = a ^ { 2 } + 9 b ^ { 2 }$ of any $z \in R$ is an integer, and if $| z | ^ { 2 } < 9$ then b = 0, so z is a real integer.
-This implies in particular that 2 has no non-trivial factorization in R. If R were a UFD, then 2 would divide 1 + 3i or $1 - 3 i$ . But that can’t be, since $( 1 \pm 3 i ) / 2$ are not in R.
+It's routine to verify that $R$ is an additive subgroup and is closed under multiplication.
+Since $\CC$ is a field, any subring is an integral domain.
+Consider two factorizations of the integer $10$ in $R$, namely $10=2\cdot5$ and $10=(1+3i)(1-3i)$. The norm $\abs{z}^2=a^2+9b^2$ of any $z\in R$ is an integer, and if $\abs{z}^2<9$ then $b=0$, so $z$ is a real integer.
+This implies in particular that $2$ has no nontrivial factorization in $R$. If $R$ were a UFD, then $2$ would divide $1+3i$ or $1-3i$. But that can't be, since $(1\pm3i)/2$ are not in $R$.
 :::
