@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-N2
 kind: problem
-title: Minimal primes of a ufd are principal
+title: Minimal nonzero primes of a UFD are principal
 classification:
   areas:
   - algebra
@@ -21,40 +21,20 @@ In a ufd $R$, prove all "minimal" prime ideals are principal — i.e. if the onl
 :::
 
 ::: {.solution}
-**Goal.** In a UFD $R$, show a minimal nonzero prime ideal $P$ is principal.
+If $P = 0$, then $P = (0)$ is principal, so assume $P \neq 0$.
 
-<1>1. Let $0 \neq a \in P$ be a nonzero element.
+<1>1. $P$ contains an irreducible element $p$.
 ::: {.proof}
-$P \neq 0$ (we consider a minimal nonzero prime).
+Choose $0 \neq a \in P$. Since $P$ is proper, $a$ is a nonunit, so $a = p_1 p_2 \cdots p_k$ with $k \ge 1$ and each $p_i$ irreducible, because $R$ is a UFD. Since $P$ is prime and $p_1 \cdots p_k \in P$, some $p_i \in P$.
 :::
 
-<1>2. Factor $a = p_1 p_2 \cdots p_k$ into irreducibles.
+<1>2. $(p)$ is a nonzero prime ideal contained in $P$.
 ::: {.proof}
-$R$ is a UFD, so every nonzero nonunit factors into irreducibles.
+In a UFD every irreducible element is prime, so $(p)$ is a prime ideal; it is nonzero because $p \neq 0$, and $(p) \subseteq P$ because $p \in P$.
 :::
 
-<1>3. Some irreducible factor $p_i$ lies in $P$.
+<1>3. Q.E.D.
 ::: {.proof}
-$P$ is prime and $p_1 \cdots p_k = a \in P$, so some $p_i \in P$.
-:::
-
-<1>4. $(p_i)$ is a prime ideal.
-::: {.proof}
-in a UFD, an irreducible element generates a prime ideal.
-:::
-
-<1>5. $(p_i) \subseteq P$ and $(p_i)$ is prime, so by minimality of $P$, $(p_i) = P$.
-::: {.proof}
-$P$ is minimal among nonzero primes, and $(p_i)$ is a nonzero prime contained in $P$.
-:::
-
-<1>6. Hence $P = (p_i)$ is principal.
-::: {.proof}
-<1>5.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>6 is the claim.
+By hypothesis the only prime ideal properly contained in $P$ is $0$. By step <1>2, $(p)$ is a nonzero prime contained in $P$, so $(p) = P$, and $P$ is principal.
 :::
 :::
