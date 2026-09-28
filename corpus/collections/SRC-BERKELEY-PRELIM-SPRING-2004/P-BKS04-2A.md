@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-2A
 kind: problem
-title: UC Berkeley Spring 2004 prelim 2A
+title: A countable abelian group with $2^{\aleph_0}$ endomorphisms
 classification:
   areas: [prelim]
   topics: []
@@ -25,13 +25,13 @@ Justify your answer.
 :::
 
 ::: {.solution}
-Let G be a vector space of dimension $\aleph _ { 0 }$ over $\mathbb { F } _ { 2 }$ . Then G is countable, since it is a countable union of finite subspaces.
-Let $v _ { 1 } , v _ { 2 } , . . .$ . be a basis.
-For each $S \subseteq \{ 1 , 2 , 3 , \dots \}$ there is an endomorphism of $G$ mapping each $v _ { i }$ to $v _ { i }$ or 0 according to whether $i \in S$ Different subsets S give different endomorphisms, so # End $G \geq 2 ^ { \aleph _ { 0 } }$ . On the other hand,
+Let $G$ be a vector space of dimension $\aleph_0$ over $\FF_2$. Then $G$ is countable, since it is a countable union of finite subspaces.
+Let $v_1,v_2,\ldots$ be a basis.
+For each $S\subseteq\{1,2,3,\ldots\}$ there is an endomorphism of $G$ mapping each $v_i$ to $v_i$ or $0$ according to whether $i\in S$. Different subsets $S$ give different endomorphisms, so $\#\operatorname{End}G\geq2^{\aleph_0}$. On the other hand,
 
 $$
-\# \operatorname { E n d } G \leq ( \# G ) ^ { \# G } = \aleph _ { 0 } ^ { \aleph _ { 0 } } \leq ( 2 ^ { \aleph _ { 0 } } ) ^ { \aleph _ { 0 } } = 2 ^ { \aleph _ { 0 } \aleph _ { 0 } } = 2 ^ { \aleph _ { 0 } } .
+\#\operatorname{End}G\leq(\#G)^{\#G}=\aleph_0^{\aleph_0}\leq(2^{\aleph_0})^{\aleph_0}=2^{\aleph_0\aleph_0}=2^{\aleph_0}.
 $$
 
-Thus $\#$ End $G = 2 ^ { \aleph _ { 0 } } = \# \mathbb { R }$
+Thus $\#\operatorname{End}G=2^{\aleph_0}=\#\RR$.
 :::
