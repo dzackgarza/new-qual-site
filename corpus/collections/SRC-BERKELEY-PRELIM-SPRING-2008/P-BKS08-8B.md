@@ -67,7 +67,7 @@ x_n
 =2^{-n/2}
 \left(
 A\cos\frac{n\pi}{4}
-B\sin\frac{n\pi}{4}
++B\sin\frac{n\pi}{4}
 \right)
 $$
 for real constants $A,B$.
