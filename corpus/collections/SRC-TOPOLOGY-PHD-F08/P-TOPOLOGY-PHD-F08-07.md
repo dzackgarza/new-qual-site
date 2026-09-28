@@ -38,13 +38,11 @@ Prove that the product topological space $X\times Y$ is Hausdorff if and only if
 :::
 
 ::: {.solution}
-As written, the reverse implication requires $X$ and $Y$ to be nonempty.
-Indeed, if $Y=\varnothing$, then
+The implication from "$X\times Y$ is Hausdorff" to "$X$ and $Y$ are Hausdorff" requires $X$ and $Y$ to be nonempty: if $Y=\varnothing$, then
 \[
 X\times Y=\varnothing
 \]
 is Hausdorff even when $X$ is not.
-We prove the intended statement for nonempty factors.
 
 <1>1. If $X$ and $Y$ are Hausdorff, then $X\times Y$ is Hausdorff.
 ::: {.proof}
@@ -140,6 +138,6 @@ The slice $\{x_0\}\times Y$ is Hausdorff by <1>2, so $Y$ is Hausdorff.
 \boxed{X\times Y\text{ is Hausdorff}\iff X\text{ and }Y\text{ are Hausdorff}.}
 \]
 ::: {.proof}
-The forward implication follows from <1>3--<1>4, and the reverse implication is <1>1. The empty-factor exception was identified before <1>1.
+The forward implication follows from <1>3--<1>4, and the reverse implication is <1>1.
 :::
 :::
