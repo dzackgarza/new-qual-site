@@ -26,40 +26,40 @@ audit:
 ::: {.solution}
 **(a).**
 
-<1>1. Let $R$ be a PID. First, $R$ is Noetherian.
+<1>1. Let $R$ be a PID. Then $R$ is Noetherian.
 ::: {.proof}
-every ideal is principal, hence finitely generated.
+Every ideal of $R$ is principal, hence finitely generated.
 :::
 
-<1>2. Every nonzero nonunit $a \in R$ factors into a product of irreducibles.
+<1>2. Every nonzero nonunit $a \in R$ is a product of irreducibles.
 ::: {.proof}
-if $a$ is not irreducible, write $a = bc$ with $b, c$ nonunits; iterating, the ascending chain of ideals $(a) \subsetneq (b) \subsetneq \cdots$ must terminate (Noetherian, <1>1), so the process stops at irreducibles.
+Let $\mathcal S$ be the set of principal ideals $(a)$ with $a$ a nonzero nonunit that is not a product of irreducibles, and suppose $\mathcal S$ is nonempty. By step <1>1, $\mathcal S$ has a maximal element $(a)$. The element $a$ is not irreducible, so $a = bc$ with $b, c$ nonzero nonunits. Then $(a) \subsetneq (b)$ and $(a) \subsetneq (c)$, so by maximality $b$ and $c$ are products of irreducibles. Hence so is $a = bc$, a contradiction.
 :::
 
 <1>3. Irreducibles in a PID are prime.
 ::: {.proof}
-if $p$ is irreducible and $p \mid ab$, then $(p)$ is maximal (since $R$ is a PID and $p$ irreducible implies $(p)$ is maximal among proper principal ideals, hence maximal), so $R/(p)$ is a field, hence an integral domain, so $p$ is prime.
+Let $p$ be irreducible. If $(p) \subseteq (d)$, then $p = dx$ for some $x \in R$, so $d$ or $x$ is a unit; that is, $(d) = R$ or $(d) = (p)$. Since every ideal of $R$ is principal and $p$ is a nonunit, $(p)$ is a maximal ideal. Hence $R/(p)$ is a field, in particular an integral domain, so $p$ is prime.
 :::
 
-<1>4. Uniqueness: if $a = p_1 \cdots p_m = q_1 \cdots q_n$ are two factorizations into irreducibles, then $p_1$ divides some $q_j$ (since $p_1$ is prime), and by induction the factorizations agree up to order and units.
+<1>4. If $p_1 \cdots p_m = q_1 \cdots q_n$ with all $p_i, q_j$ irreducible, then $m = n$ and, after reordering, $q_i = u_i p_i$ with each $u_i$ a unit.
 ::: {.proof}
-<1>3 and the standard induction.
+Induct on $m$. If $m = 0$, then $q_1 \cdots q_n = 1$, so $n = 0$ because irreducibles are nonunits. If $m \ge 1$, then $p_1$ divides $q_1 \cdots q_n$ and is prime by step <1>3, so $p_1 \mid q_j$ for some $j$; reorder so that $j = 1$. Since $q_1$ is irreducible and $p_1$ is a nonunit, $q_1 = u_1 p_1$ with $u_1$ a unit. Cancelling $p_1$ in the domain $R$ gives $p_2 \cdots p_m = (u_1 q_2) q_3 \cdots q_n$ with $u_1 q_2$ irreducible, and the induction hypothesis applies.
 :::
 
-<1>5. Hence $R$ has unique factorization.
+<1>5. $R$ is a unique factorization domain.
 ::: {.proof}
-<1>2 and <1>4.
+Steps <1>2 and <1>4.
 :::
 
 **(b).**
 
-<1>1. $\mathbb{Z}[x]$ is a UFD but not a PID.
+<1>6. $\mathbb{Z}[x]$ is a UFD but not a PID.
 ::: {.proof}
-$\mathbb{Z}[x]$ is a UFD (Gauss's lemma), but the ideal $(2, x)$ is not principal.
+$\mathbb{Z}[x]$ is a UFD by Gauss's lemma, and the ideal $(2, x)$ is not principal.
 :::
 
-<1>2. Q.E.D.
+<1>7. Q.E.D.
 ::: {.proof}
-<1>5 (a) and <1>1 (b).
+Step <1>5 proves (a), and step <1>6 gives the example for (b).
 :::
 :::
