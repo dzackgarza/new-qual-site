@@ -22,8 +22,6 @@ Determine all entire functions $f: \mathbb{C} \to \mathbb{C}$ for which $|f(z)| 
 :::
 
 ::: {.solution}
-**Goal:** Determine all entire functions $f(z)$ satisfying $|f(z)| \le |z|^2$ for all $z \in \mathbb{C}$.
-
 <1>1. Vanishing of coefficients $a_n$ for $n \ge 3$ via Cauchy estimates:
     *Proof:*
     <2>1. Since $f$ is entire, it has a global power series expansion centered at 0:
