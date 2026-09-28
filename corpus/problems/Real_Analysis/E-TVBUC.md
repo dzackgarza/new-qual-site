@@ -26,8 +26,6 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove that on a set $E \subseteq \mathbb{R}^n$ with $\mu(E) < \infty$, $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
-
 <1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p(E)} \le \|f\|_{L^\infty(E)}$.
 ::: {.proof}
 <2>1. If $\|f\|_{L^\infty(E)} = \infty$, the upper bound holds vacuously.
@@ -56,9 +54,9 @@ $$\liminf_{p \to \infty} \|f\|_{L^p(E)} \ge M \lim_{p \to \infty} (\mu(A_M))^{1/
 <2>8. If $\|f\|_{L^\infty(E)} = \infty$, the bound holds for all $M > 0$, so $\lim_{p \to \infty} \|f\|_{L^p(E)} = \infty = \|f\|_{L^\infty(E)}$.
 :::
 
-<1>3. Conclusion:
+<1>3. Q.E.D.
 ::: {.proof}
-Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
+Combining steps <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p(E)} = \|f\|_{L^\infty(E)}$.
 :::
 
 :::
