@@ -31,11 +31,11 @@ audit:
 ::: {.problem}
 Let $f : \mathbb { R } ^ { 2 } \to \mathbb { R } ^ { 2 }$
 
-a) Define in terms of linear transformations, what it means for f to be differentiable at a point $( a , b ) \in \mathbb { R } ^ { 2 }$
+(a) Define in terms of linear transformations, what it means for $f$ to be differentiable at a point $(a, b) \in \RR^2$
 
-b) State a version of the inverse function theorem in this setting.
+(b) State a version of the inverse function theorem in this setting.
 
-c) Identifying C with $\mathbb { R } ^ { 2 }$ in the usual way, give, with proof, a necessary and sufficient condition for a function satisfying the definition of real differentiability in Part a) to be complex differentiable at the point $a + i b$
+(c) Identifying $\CC$ with $\RR^2$ in the usual way, give, with proof, a necessary and sufficient condition for a function satisfying the definition of real differentiability in Part a) to be complex differentiable at the point $a + i b$
 :::
 
 ::: {.solution}
