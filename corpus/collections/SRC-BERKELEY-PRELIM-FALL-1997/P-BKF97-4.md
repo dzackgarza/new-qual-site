@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF97-4
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}(1+x^{2n})^{-1}\,dx$
+title: The integral $\int_{-\infty}^{\infty}(1+x^{2n})^{-1}\,dx$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
