@@ -23,58 +23,40 @@ I \da \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
 :::
 
 ::: {.solution}
-Write $f(z) = 1/\sqrt{z^2-1} = 1/\sqrt{(z+1)(z-1)}$.
-The integrand is even, so
-\[
-I = {1\over 2}I',\qquad I' \da \int_{-1}^1 {1\over \sqrt{z^2-1}} \dz
-.\]
+On $(0,1)$ the radicand is negative, so $\sqrt{x^2-1}=\pm i\sqrt{1-x^2}$ and the value of $I$ depends on the branch. The stated value holds for $\sqrt{x^2-1}=-i\sqrt{1-x^2}$; the other branch gives $-i\pi/2$. Put $J\da\int_{-1}^1{dx\over\sqrt{1-x^2}}$.
 
-Each branch point $\pm 1$ introduces a monodromy factor of $\sqrt{e^{2i\pi}} = e^{i\pi} = -1$, which cancel provided loops are not able to encircle a single branch point. 
-So take the branch cut to be the slit $[-1, 1]$, forcing any loop to encircle neither or both of $\pm 1$ -- now use a dogbone contour $\Gamma$ around the slit and apply the residue theorem to the *exterior* region:
+<1>1. Let $g(z)\da\sqrt{z-1}\,\sqrt{z+1}$ with principal square roots. Then $g$ is holomorphic on $\CC\setminus[-1,1]$, and for $-1<x<1$ its boundary values are $g(x+i0)=i\sqrt{1-x^2}$ from above and $g(x-i0)=-i\sqrt{1-x^2}$ from below.
+
+::: {.proof}
+Each factor is holomorphic off its cut, $(-\infty,1]$ and $(-\infty,-1]$ respectively. On $(-\infty,-1)$ both factors change sign across the real axis, so their product is continuous there and extends holomorphically across it. For $-1<x<1$, $\sqrt{x+1}$ is continuous and positive, while $\sqrt{x-1\pm i0}=\pm i\sqrt{1-x}$.
+:::
+
+<1>2. $\oint_{\abs z=2}{dz\over g(z)}=2\pi i$.
+
+::: {.proof}
+For $\abs z>1$, $g(z)=z\sqrt{1-z^{-2}}$ with the principal branch, since both sides are holomorphic there, square to $z^2-1$, and are asymptotic to $z$ as $z\to+\infty$ along the real axis. So $1/g(z)=z^{-1}\qty{1+\tfrac12z^{-2}+\cdots}$ on $\abs z>1$, and only the term $z^{-1}$ contributes to the integral.
+:::
+
+<1>3. $\oint_{\abs z=2}{dz\over g(z)}=2iJ$.
+
+::: {.proof}
+Let $\Gamma_\eps$ be the dogbone contour around the slit, oriented counterclockwise: the upper edge from $1$ to $-1$, the lower edge from $-1$ to $1$, and circles of radius $\eps$ about $\pm1$.
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_00-37-42.png)
 
-The contribution from the top segment $\gamma_1$:
+By Cauchy's theorem on the region between them, $\Gamma_\eps$ and $\abs z=2$ give the same integral. On the circle about $\pm1$, $\abs{z^2-1}=\eps\abs{z\pm1}\ge\eps(2-\eps)\ge\eps$ for $\eps<1$, so that circle contributes at most $2\pi\eps\cdot\eps^{-1/2}\to0$. By step <1>1 the edges contribute, as $\eps\to0$,
 \[
-\int_{\gamma_1}f(z)\dz \to \int_1^{-1} {1\over \sqrt{x^2-1}}\dx = -I'
-.\]
-The contribution from the bottom segment $\gamma_2$:
-a monodromy factor of $-1$ is introduced to $g(z)\da \sqrt{z}$ over a path that traces an angle of $2\pi$, so
-\[
-\int_{\gamma_2}f(z)\dz = \int_{-1}^1 {1\over -\sqrt{x^2-1}} = -I'
-.\]
-
-These combine to contribute
-\[
-\qty{\int_{\gamma_1} + \int_{\gamma_2}}f = -2I'
-.\]
-
-For the residue at $\infty$, orient $\Gamma$ positively with respect to $z=\infty$, which reverses it; the two segments then contribute $2I'$.
-
-The contribution from the small circles:
-parameterize the first as $-1 + \eps e^{2\pi i t}$. Since $\abs{(-1 + \eps e^{2\pi i t})^2 - 1}=\eps\abs{\eps e^{2\pi i t}-2}\ge\eps$ for $\eps<1$,
-\[
-\abs{ \int_{C_\eps^1}f(z)\dz} = \abs{\int_0^1 {2\pi i \eps e^{2\pi i t}\over \sqrt{ (-1 + \eps e^{2\pi i t} )^2 - 1 } } \dt} \le 2\pi{\eps\over\sqrt\eps} \convergesto{\eps\to 0} 0
-.\]
-The same bound holds for the second circle, parameterized as $1+ \eps e^{2\pi i t}$.
-
-Contributions from residues: take the residue at infinity,
-\[
-\Res_{z=\infty}f(z) 
-&= \Res_{z=0}-{1\over z^2}f\qty{1\over z} \\
-&= \Res_{z=0} {-1\over z^2\sqrt{z^{-2} - 1 }} \\
-&= \Res_{z=0} {-1\over z\sqrt{1-z^2}} \\
-&= \lim_{z\to 0} {-1\over \sqrt{1-z^2}}\\
-&= -1
-.\]
-
-Putting this together
-\[
--2\pi i \Res_{z=\infty}f(z) 
-&= \oint_\Gamma f(z)\dz = 2I' \\
-\implies 2\pi i &= 2I' \\
-\implies \pi i &= I' = 2I \\
-\implies I &= {i\pi \over 2}
+\int_1^{-1}{dx\over i\sqrt{1-x^2}}+\int_{-1}^1{dx\over -i\sqrt{1-x^2}}
+=\qty{-{1\over i}-{1\over i}}J=2iJ
 .\]
 :::
 
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>2 and <1>3 give $J=\pi$. The integrand $1/\sqrt{1-x^2}$ is even, so with $\sqrt{x^2-1}=-i\sqrt{1-x^2}$,
+\[
+I=\int_0^1{dx\over -i\sqrt{1-x^2}}=i\cdot{J\over2}={i\pi\over2}
+.\]
+:::
+:::
