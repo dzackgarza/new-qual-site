@@ -37,11 +37,11 @@ The sequence $(h_p(x))_p$ is called a characteristic of $G$.
 
 <1>1. Changing the nonzero element changes its characteristic only at finitely many primes, and never changes which coordinates are infinite.
 ::: {.proof}
-If $0\ne y\in G$, then $y=(a/b)x$ for nonzero integers $a,b$. Hence for every prime $p$,
+If $0\ne y\in G$, then $by=ax$ for nonzero integers $a,b$. In the torsion-free group $G\le\QQ$, $h_p(nz)=h_p(z)+v_p(n)$ for every nonzero integer $n$ and $0\neq z\in G$, since $nz\in p^mG$ if and only if $z\in p^{m-v_p(n)}G$ for $m\ge v_p(n)$. Hence for every prime $p$,
 \[
-h_p(y)=h_p(x)+v_p(b)-v_p(a)
+h_p(y)=h_p(x)+v_p(a)-v_p(b)
 \]
-whenever the height is finite, with truncation at $0$ as appropriate. Only primes dividing $ab$ can change, and an infinite height remains infinite. Thus the equivalence class of the characteristic is independent of the chosen nonzero element.
+with the convention $\infty+c=\infty$. Only primes dividing $ab$ can change, and an infinite height remains infinite. Thus the equivalence class of the characteristic is independent of the chosen nonzero element.
 :::
 
 Two characteristics $(a_p)$ and $(b_p)$ are called equivalent when they agree at all but finitely many primes and
@@ -75,7 +75,7 @@ Thus $G_S\cong G_T$ implies $S=T$. Since the set of primes is countable, there a
 
 <1>4. The groups $G_S$ do not exhaust all subgroups of $\QQ$.
 ::: {.proof}
-Choose finite numbers $e_p\ge0$, not all zero, varying over infinitely many primes, and set
+Choose finite numbers $e_p\ge0$ with $e_p>0$ for infinitely many primes $p$ (for example $e_p=1$ for all $p$), and set
 \[
 G=\left\langle p^{-j}:p\text{ prime},\ 0\le j\le e_p\right\rangle\le\QQ.
 \]
