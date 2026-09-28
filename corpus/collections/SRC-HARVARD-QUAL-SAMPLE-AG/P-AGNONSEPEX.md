@@ -97,9 +97,9 @@ X\to\operatorname{Spec}k
 is not separated.
 :::
 
-<1>3. The same example also shows the geometric meaning of separatedness: the two origins cannot be separated by the algebraic diagonal condition.
+<1>3. In $X$, every open neighborhood of $0_1$ meets every open neighborhood of $0_2$.
 ::: {.proof}
-Every open neighborhood of $0_1$ meets every open neighborhood of $0_2$ along nonzero points of the common copy of $\mathbb G_m$.  The failure of the diagonal to be closed records exactly this doubled limiting point.
+An open neighborhood of $0_i$ meets the common copy of $\mathbb G_m$ in a nonempty open subset.  Two nonempty open subsets of the irreducible curve $\mathbb G_m$ intersect.  The point $(0_1,0_2)$ in the closure of the diagonal in step <1>2 is the scheme-theoretic form of this statement.
 :::
 
 <1>4. Q.E.D.
