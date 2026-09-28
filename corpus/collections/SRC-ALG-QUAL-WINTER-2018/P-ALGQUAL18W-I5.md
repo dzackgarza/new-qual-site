@@ -29,7 +29,7 @@ Justify your answer with a proof or counterexample: the cyclotomic polynomial $\
 :::
 
 ::: {.solution}
-The statement is **false**. Let
+The statement is false. Let
 $$
 \overline{\Phi}_{255}(x)
 \in
