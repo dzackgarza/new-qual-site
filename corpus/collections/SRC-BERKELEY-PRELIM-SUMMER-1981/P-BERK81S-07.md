@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-07
 kind: problem
-title: Evaluate a contour integral of $1/\sin(1/z)$
+title: The integral of $1/\sin(1/z)$ around $\abs{z}=1/5$
 classification:
   areas: [prelim]
   topics: []
