@@ -36,7 +36,7 @@ Use Tsen's theorem to show that given a flat family $X\to Y$ with $Y$ a curve wh
 :::
 
 ::: {.solution}
-Interpret the family in the standard genus-zero sense: let $X$ and $Y$ be
+Let $X$ and $Y$ be
 integral schemes, let $Y$ be a smooth curve over an algebraically closed
 field $k$, and let
 $$
@@ -260,8 +260,8 @@ $$
 has relative degree $1$.
 :::
 
-<1>9. In particular, under the stated Tsen hypotheses every such smooth
-genus-zero family is a Zariski $\PP^1$-bundle.
+<1>9. In particular, over a smooth curve $Y$ over an algebraically closed
+field, every such smooth genus-zero family is a Zariski $\PP^1$-bundle.
 
 ::: {.proof}
 Step <1>8 constructs a relative degree-one line bundle, and step <1>7
@@ -271,7 +271,7 @@ applies the criterion.
 <1>10. Q.E.D.
 
 ::: {.proof}
-Step <1>7 proves the requested equivalence, and steps <1>8--<1>9 identify
-the role of Tsen's theorem.
+Step <1>7 proves the requested equivalence, and steps <1>8--<1>9 use
+Tsen's theorem to produce the relative degree-one line bundle.
 :::
 :::
