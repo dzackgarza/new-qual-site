@@ -20,14 +20,15 @@ prompts:
 ---
 
 ::: {.example title="Gluing fails"}
-The **constant presheaf** $U \mapsto A$ for a fixed abelian group $A$, with identity restrictions.
-On a disconnected $U = U_1 \sqcup U_2$ the sections $a \in A$ on $U_1$ and $b \neq a$ on $U_2$ agree on the empty overlap but glue to nothing.
+For a fixed abelian group $A$, the constant presheaf with $P(U)=A$ for $U\ne\emptyset$, $P(\emptyset)=0$, and identity restrictions between nonempty open sets fails the gluing axiom.
+On a disconnected $U = U_1 \sqcup U_2$ the sections $a \in A$ on $U_1$ and $b \neq a$ on $U_2$ agree on the empty overlap, and no element of $P(U)=A$ restricts to both.
 Its sheafification is the sheaf of locally constant $A$-valued functions.
 :::
 
-::: {.example title="Identity fails"}
-The presheaf of **bounded** real functions on $\RR$, or of functions with bounded support.
-Boundedness is not a local condition: every function is locally bounded, so the presheaf of bounded functions is not even closed under gluing, and the presheaf quotient of functions by bounded functions has nonzero sections that are locally zero.
+::: {.example title="Bounded functions"}
+Let $C$ be the sheaf of continuous real functions on $\RR$ and $B\subseteq C$ the presheaf of bounded continuous functions.
+$B$ satisfies the identity axiom, being a subpresheaf of a sheaf, and fails gluing: the restrictions of $f(x)=x$ to the intervals $(n-1,n+1)$ are bounded and agree on overlaps, while $f$ is unbounded.
+The presheaf quotient $U\mapsto C(U)/B(U)$ fails the identity axiom: the class of $f(x)=x$ on $\RR$ is nonzero, and its restriction to each interval $(n-1,n+1)$ is zero.
 :::
 
 ::: {.example title="Tensor presheaf"}
@@ -38,8 +39,6 @@ They do not glue to a section of $P(X) = 0$, so $P$ is not a sheaf; its sheafifi
 :::
 
 ::: {.remark}
-The presheaf cokernel is where this matters in practice.
-Given $\varphi : \mcf \to \mcg$ of sheaves, $U \mapsto \mcg(U)/\varphi(\mcf(U))$ is a presheaf that is usually not a sheaf, and the sheaf cokernel is its sheafification.
-Kernels need no correction: $U \mapsto \ker \varphi_U$ is already a sheaf.
-That asymmetry is the reason cokernels, images, and exactness of sheaves are stalk-local notions and not section-wise ones.
+Given $\varphi : \mcf \to \mcg$ of sheaves, the presheaf $U \mapsto \mcg(U)/\varphi(\mcf(U))$ need not be a sheaf, and the sheaf cokernel is its sheafification ([[D-A7LCT]]); the presheaf $U \mapsto \ker \varphi_U$ is a sheaf.
+A sequence of sheaves is exact if and only if it is exact on every stalk; a surjection of sheaves need not be surjective on sections over every open set, as $\exp\colon\OO\to\OO^\times$ on $\CC\sm\ts{0}$ shows.
 :::
