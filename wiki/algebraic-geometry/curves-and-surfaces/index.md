@@ -9,21 +9,19 @@ topics:
 
 # Curves and surfaces
 
-Genus in its several senses, Riemann--Hurwitz, embeddings, the classification of curves of small genus, and the intersection theory that does the same work one dimension up.
-The pivot for curves is genus: arithmetic against geometric, how they differ for a singular curve, whether either depends on the embedding, and how Riemann--Hurwitz computes one from a map.
-For surfaces the pivot is the intersection pairing, and adjunction is the bridge between the two halves.
+For a smooth curve $C$ on a smooth projective surface $X$, adjunction gives $2g(C)-2=C\cdot(C+K_X)$, which computes the genus of a curve from the intersection pairing on $X$.
 
-- [[algebraic-geometry/curves-and-surfaces/genus|Genus]], the three senses, the three ways to compute one, and the curves of genus zero.
+- [[algebraic-geometry/curves-and-surfaces/genus|Genus]], arithmetic, geometric, and topological genus, their computation from plane models, Hilbert polynomials, and Riemann--Hurwitz, and the curves of genus zero.
 
-- [[algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians|Embeddings and Jacobians]], when the canonical system embeds, and what $\Pic^0$ is as a variety.
+- [[algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians|Embeddings and Jacobians]], when the canonical system embeds, and $\Pic^0$ as an abelian variety.
 
-- [[algebraic-geometry/curves-and-surfaces/special-divisors-and-the-canonical-map|Special divisors and the canonical map]], Clifford's theorem, gonality, and the hyperelliptic exception.
+- [[algebraic-geometry/curves-and-surfaces/special-divisors-and-the-canonical-map|Special divisors and the canonical map]], Clifford's theorem, gonality, and hyperelliptic curves.
 
 - [[algebraic-geometry/curves-and-surfaces/elliptic-curves|Elliptic curves]], the group law, the $j$-invariant, the Hasse invariant, and rational points.
 
 - [[algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c|Elliptic curves over $\CC$]], the Weierstrass $\wp$-function, uniformisation by a lattice, the modular function, and complex multiplication.
 
-- [[algebraic-geometry/curves-and-surfaces/moduli-of-curves|Moduli of curves]], coarse against fine, the dimension $3g-3$, and why automorphisms decide both.
+- [[algebraic-geometry/curves-and-surfaces/moduli-of-curves|Moduli of curves]], coarse and fine moduli spaces, the dimension $3g-3$, and automorphisms as the obstruction to a fine moduli space.
 
 - [[algebraic-geometry/curves-and-surfaces/curves-in-projective-space|Curves in projective space]], projection, curves on a quadric, and which pairs $(d,g)$ occur.
 
