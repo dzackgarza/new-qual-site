@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-EWXRO
 kind: proposition
 title: Closure of measurable functions under algebraic operations and limits
-slogan: 'Measurability is preserved by basic algebra, countable sup/inf, limsup/liminf, and pointwise limits.'
+slogan: 'Measurability is preserved by sums, products, $\max$, $\min$, countable $\sup$, $\inf$, $\limsup$, $\liminf$, and pointwise limits.'
 classification:
   areas:
   - real-analysis
