@@ -37,7 +37,7 @@ S=k[x_1,\ldots,x_n]
 with its standard grading, and suppose $I\subseteq S$ is homogeneous. Choose a
 term order and compute a Gröbner basis $G$ of $I$.
 
-<1>1. Replace $I$ by its initial monomial ideal
+<1>1. The initial monomial ideal of $I$ is
 \[
 \operatorname{in}(I)
 =\langle \operatorname{in}(g):g\in G\rangle.
@@ -70,7 +70,7 @@ H_{S/I}(d)
 This is the basis description from <1>2.
 :::
 
-<1>4. If one wants the Hilbert function of the ideal itself, then
+<1>4. The Hilbert function of the ideal $I$ is
 \[
 H_I(d)=\dim_k I_d
 =\binom{n+d-1}{d}-H_{S/I}(d).
