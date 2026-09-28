@@ -33,7 +33,7 @@ For $a \geq 0$, $\int_0^a p t^{p-1} ~dt = \left[t^p\right]_0^a = a^p$ for every 
 <1>2. The integrand $(x,t) \mapsto p t^{p-1} \chi_{\{t < f(x)\}}$ is nonnegative and measurable on $\RR \times (0,\infty)$.
 
 ::: {.proof}
-$f$ is measurable, so $\{(x,t) : t < f(x)\} = f^{-1}((t, \infty))$ is a measurable subset of $\RR^2$; $t^{p-1}$ is measurable on $(0,\infty)$.
+The maps $(x,t) \mapsto f(x)$ and $(x,t) \mapsto t$ are measurable on $\RR \times (0,\infty)$, so their difference $F(x,t) = f(x) - t$ is measurable and $\{(x,t) : t < f(x)\} = F^{-1}((0,\infty))$ is a measurable subset of $\RR^2$. The factor $t^{p-1}$ is continuous on $(0,\infty)$.
 :::
 
 <1>3. For each $t > 0$, $\int_\RR \chi_{\{t < f(x)\}} ~dx = \abs{\{x : f(x) > t\}}$.
