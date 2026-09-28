@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS05-7B
 kind: problem
-title: Normal subgroups of $\operatorname{SL}_2(\mathbb F_p)$ containing a nontrivial element with a fixed vector
+title: Normal subgroups of $\operatorname{SL}_2(\FF_p)$ containing a nontrivial element with a fixed vector
 classification:
   areas:
   - prelim
