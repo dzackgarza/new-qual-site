@@ -52,8 +52,10 @@ $$
 <1>1. The vectors $a$ and $b$ are orthogonal.
 
 ::: {.proof}
-For sufficiently small $t$, consider the two curves through $p$ with
-tangent vectors $(1,0)$ and $(0,1)$. They are orthogonal at $p$.
+For $\abs{t}$ small enough that both points lie in $\Omega$, consider the
+curves $t\mapsto p+t(1,0)$ and $t\mapsto p+t(0,1)$. They pass through
+$p$ with tangent vectors $(1,0)$ and $(0,1)$, so they are orthogonal
+at $p$.
 Their images under $f$ have tangent vectors
 $$
 Df_p(1,0)=a
