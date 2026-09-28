@@ -30,5 +30,5 @@ source:
 ---
 
 ::: {.remark}
-UNL Math 871--872 qualifying exam, June 2011, with eight questions, A1--A4 and B5--B8; candidates answer three questions from each section. Question A2 is the same problem as June 2008 Question A2.
+UNL Math 871--872 qualifying exam, June 2011, with eight questions, A1--A4 and B5--B8; candidates answer three questions from each section.
 :::
