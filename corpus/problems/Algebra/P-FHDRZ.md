@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-FHDRZ
 kind: problem
-title: The smallest finite field in which a degree $4$ polynomial with integer coefficients
-  necessarily has four roots
+title: The smallest extension of $\FF_q$ splitting every polynomial of degree at most $4$
 classification:
   areas:
   - algebra
@@ -40,5 +39,5 @@ Hence
 \]
 is the smallest extension that splits every polynomial of degree at most $4$ over $\FF_q$.
 
-Minimality is genuine: irreducible polynomials of degrees $3$ and $4$ exist over every finite field, so any universal splitting field must have extension degree divisible by both $3$ and $4$, hence by $12$.
+The degree $12$ is minimal: irreducible polynomials of degrees $3$ and $4$ exist over every finite field, so any universal splitting field must have extension degree divisible by both $3$ and $4$, hence by $12$.
 :::
