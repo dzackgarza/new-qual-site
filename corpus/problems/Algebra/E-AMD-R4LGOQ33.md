@@ -21,9 +21,11 @@ audit:
 Show that every $p\dash$group is solvable.
 :::
 
-::: {.solution}
-**Goal:** induct on the order, splitting $G$ by its center: the center is abelian, the quotient is a smaller $p$-group, and solvability passes through such an extension.
+::: {.hint}
+Induct on $\abs G$: $Z(G)$ is nontrivial and abelian, $G/Z(G)$ is a smaller $p$-group, and if $N\normal G$ with $N$ and $G/N$ solvable then $G$ is solvable.
+:::
 
+::: {.solution}
 <1>1. Argue by induction on $\abs G = p^n$.
 
 <1>2. Base case: if $n \leq 1$ then $G$ is trivial or of prime order, hence abelian, hence solvable.
