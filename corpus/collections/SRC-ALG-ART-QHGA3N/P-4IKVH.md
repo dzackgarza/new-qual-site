@@ -63,8 +63,13 @@ p^2q-\bigl(1+p^2(q-1)\bigr)=p^2-1.
 Let \(P\) be any Sylow \(p\)-subgroup. Every nonidentity element of \(P\) lies outside every Sylow \(q\)-subgroup, since its order is divisible by \(p\), not \(q\). Thus the \(p^2-1\) nonidentity elements of \(P\) exhaust the entire complement of the Sylow-\(q\) union. Hence every Sylow \(p\)-subgroup has exactly the same nonidentity elements, so there is only one Sylow \(p\)-subgroup. Therefore \(P\trianglelefteq G\).
 :::
 
-<1>6. In all cases, \(G\) has a nontrivial normal subgroup.
+<1>6. If \(p=q\), then \(G\) has a normal subgroup of order \(p\).
 ::: {.proof}
-If \(p>q\), step <1>2 applies. If \(p<q\), either \(n_q=1\) or step <1>5 applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
+Then \(|G|=p^3\), so the center \(Z(G)\) is nontrivial. By Cauchy's theorem \(Z(G)\) contains an element \(z\) of order \(p\), and \(\langle z\rangle\) is normal in \(G\) because it is central. Its order \(p\) is strictly between \(1\) and \(p^3\).
+:::
+
+<1>7. In all cases, \(G\) has a nontrivial normal subgroup.
+::: {.proof}
+If \(p=q\), step <1>6 applies. If \(p>q\), step <1>2 applies. If \(p<q\), either \(n_q=1\) or step <1>5 applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
 :::
 :::
