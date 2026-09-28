@@ -30,7 +30,7 @@ Let L be a line in C, and let f be an entire function such that $f ( \mathbb { C
 
 
 ::: {.solution}
-<1>1. By an affine change of the range, reduce to the case in which the omitted line is the imaginary axis.
+<1>1. There is an entire function $g$, constant if and only if $f$ is constant, whose image does not meet the imaginary axis $i\mathbb R$.
 ::: {.proof}
 Write the line as
 \[
