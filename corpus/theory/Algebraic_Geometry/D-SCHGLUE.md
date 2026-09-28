@@ -15,7 +15,7 @@ relations:
   target: D-AN662
 review: draft
 prompts:
-- How do you build a scheme that is not affine?
+- How is a non-affine scheme built from affine schemes?
 - How is $\PP^n$ built by gluing?
 ---
 
@@ -30,9 +30,7 @@ The result is $\PP^n\slice k$, and its global sections are $k$, so it is not aff
 :::
 
 ::: {.remark}
-Gluing constructs schemes from compatible open pieces and produces non-affine schemes from affine charts.
-The cocycle condition is exactly the compatibility required on triple overlaps.
-
 The same charts with different transition maps produce different schemes: gluing two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity gives the line with a doubled origin, while gluing by $t \mapsto t\inv$ gives $\PP^1$.
-The difference is that the second gluing identifies the two extra points and the first does not.
+The line with a doubled origin is not separated: its two open embeddings of $\AA^1$ agree on $\AA^1\sm\ts{0}$ and differ at the origin.
+The scheme $\PP^1$ is separated, and it is proper over the base field.
 :::
