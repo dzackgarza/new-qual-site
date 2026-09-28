@@ -45,5 +45,4 @@ Letting $r\downarrow0$ gives
 \[
 \int_T f(z)\,dz=0.
 \]
-Thus a bounded isolated singularity inside the triangle does not affect the conclusion of Cauchy's theorem.
 :::
