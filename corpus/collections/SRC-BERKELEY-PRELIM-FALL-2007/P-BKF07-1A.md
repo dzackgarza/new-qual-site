@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF07-1A
 kind: problem
-title: Classify all subrings of the Gaussian integers
+title: Subrings of the Gaussian integers
 classification:
   areas:
   - prelim
