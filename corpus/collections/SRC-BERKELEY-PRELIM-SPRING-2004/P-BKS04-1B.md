@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-1B
 kind: problem
-title: UC Berkeley Spring 2004 prelim 1B
+title: $y^2+a(x)y+b(x)$ is irreducible over $F(x)$ when $\deg a\le g$ and $\deg b=2g+1$
 classification:
   areas: [prelim]
   topics: []
