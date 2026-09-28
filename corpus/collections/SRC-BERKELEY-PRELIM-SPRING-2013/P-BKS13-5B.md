@@ -100,7 +100,7 @@ $$
 =
 i
 \frac{(1+w)(1-\overline w)}
-\abs{1-w}^2.
+{\abs{1-w}^2}.
 $$
 The real part of
 $$
