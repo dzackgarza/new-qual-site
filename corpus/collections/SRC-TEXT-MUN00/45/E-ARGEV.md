@@ -23,7 +23,7 @@ The collection $\mathcal{F} = \ts{f_n}$ is pointwise bounded but the sequence $(
 ::: {.solution}
 For $f_n(x)=x^n$, equicontinuity holds at every $x_0<1$: choose $a$ with $x_0<a<1$; on a sufficiently small neighborhood contained in $[0,a]$, the finitely many small $n$ are uniformly continuous, while for all sufficiently large $n$ both $x^n$ and $x_0^n$ are arbitrarily small. At $x_0=1$ equicontinuity fails: for every $\delta>0$, choose $x<1$ with $1-\delta<x<1$ and then $n$ so large that $x^n<1/2$, whereas $f_n(1)=1$.
 
-For the sequence from §21 Exercise 9,
+For the sequence of [[E-BTI7W]],
 \[
 f_n(x)=\frac1{n^3(x-1/n)^2+1},
 \]
