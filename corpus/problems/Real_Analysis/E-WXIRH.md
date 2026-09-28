@@ -27,28 +27,23 @@ F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d 
 :::
 
 ::: {.solution}
-<1>1. The double integral $\iint_{0 \le y \le x \le 1} |f(y)||g(x)|\,dy\,dx$ is finite.
-    ::: {.proof}
-    Tonelli: $\int_0^1\int_0^x |f(y)||g(x)|\,dy\,dx \le \int_0^1\int_0^1 |f(y)||g(x)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$; in particular the hypothesis of Fubini is satisfied for $f(y)g(x)$.
-    :::
+Let $f, g \in L^1[0,1]$ and let $T = \theset{(x,y) : 0 \le y \le x \le 1}$.
 
-<1>2. $\int_0^1 F(x)g(x)\,dx = \iint_{0 \le y \le x \le 1} f(y)g(x)\,dy\,dx$.
-    ::: {.proof}
-    $F(x) = \int_0^x f(y)\,dy$, so $\int_0^1 F(x)g(x)\,dx = \int_0^1\int_0^x f(y)g(x)\,dy\,dx$; Fubini applies by <1>1.
-    :::
+<1>1. $\iint_{T} |f(y)||g(x)|\,dy\,dx \le \|f\|_1\|g\|_1 < \infty$.
 
-<1>3. $\iint_{0 \le y \le x \le 1} f(y)g(x)\,dy\,dx = \int_0^1 f(y)\int_y^1 g(x)\,dx\,dy$.
-    ::: {.proof}
-    interchange the order of integration (Fubini); the region $\{0 \le y \le x \le 1\}$ can be sliced horizontally as $\{(x,y) : 0 \le y \le 1,\ y \le x \le 1\}$.
-    :::
+::: {.proof}
+By Tonelli's theorem, $\iint_T |f(y)||g(x)|\,dy\,dx \le \int_0^1\int_0^1 |f(y)||g(x)|\,dy\,dx = \|f\|_1\|g\|_1$.
+:::
 
-<1>4. $\int_y^1 g(x)\,dx = G(1) - G(y)$.
-    ::: {.proof}
-    $G(1) = \int_0^1 g$ and $G(y) = \int_0^y g$; additivity of the integral.
-    :::
+<1>2. $\int_0^1 F(x)g(x)\,dx = \int_0^1 f(y)\big(G(1) - G(y)\big)\,dy$.
 
-<1>5. Q.E.D.
-    ::: {.proof}
-    $\int_0^1 F g = \int_0^1 f(y)(G(1) - G(y))\,dy = G(1)\int_0^1 f - \int_0^1 fG = F(1)G(1) - \int_0^1 fG$, using $F(1) = \int_0^1 f$.
-    :::
+::: {.proof}
+By the definition of $F$, $\int_0^1 F(x)g(x)\,dx = \int_0^1\int_0^x f(y)g(x)\,dy\,dx$. By step <1>1, Fubini's theorem allows integrating over $T$ in the other order, with $y \in [0,1]$ and $x \in [y,1]$, giving $\int_0^1 f(y)\int_y^1 g(x)\,dx\,dy$. Finally $\int_y^1 g = G(1) - G(y)$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By step <1>2 and $F(1) = \int_0^1 f$, $\int_0^1 Fg = G(1)\int_0^1 f - \int_0^1 fG = F(1)G(1) - \int_0^1 fG$.
+:::
 :::
