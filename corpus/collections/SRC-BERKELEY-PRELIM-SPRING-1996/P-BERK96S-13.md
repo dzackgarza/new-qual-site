@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-13
 kind: problem
-title: A nontrivial real linear relation between real and imaginary parts forces analyticity to be constant
+title: An analytic function with a nontrivial real linear relation between its real and imaginary parts is constant
 classification:
   areas:
   - prelim
