@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-The moments of a function $f$ are the numbers $\textstyle \int _ { 0 } ^ { \infty } x ^ { n } f ( x ) d x$ for $n = 0 , 1 , 2 . . . ^ { }$ . Find the moments of $f ( x ) = \exp ( - x ^ { 1 / 4 } )$ sin $( x ^ { 1 / 4 } )$ . (Hint: complex analysis.)
+The moments of a function $f$ are the numbers $\textstyle \int _ { 0 } ^ { \infty } x ^ { n } f ( x ) d x$ for $n = 0 , 1 , 2 , \ldots$ . Find the moments of $f ( x ) = \exp ( - x ^ { 1 / 4 } ) \sin ( x ^ { 1 / 4 } )$ . (Hint: complex analysis.)
 :::
 
 ::: {.solution}
