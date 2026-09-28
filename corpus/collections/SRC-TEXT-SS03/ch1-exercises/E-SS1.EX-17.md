@@ -32,7 +32,7 @@ In particular, this exercise shows that when applicable, the ratio test can be u
 :::
 
 ::: {.solution}
-Fix $\varepsilon>0$.
+Fix $\varepsilon>0$; if $L>0$, take also $\varepsilon<L$. When $L=0$, the lower bounds below are replaced by the trivial bound $0\le\abs{a_n}^{1/n}$, and the argument gives $\limsup\abs{a_n}^{1/n}\le\varepsilon$.
 
 <1>1. There is $N$ such that for all $n > N$,
 $$|a_N| (L - \varepsilon)^{n-N} < |a_n| < |a_N| (L + \varepsilon)^{n-N}.$$
