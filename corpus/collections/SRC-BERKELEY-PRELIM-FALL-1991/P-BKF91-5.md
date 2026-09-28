@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF91-5
 kind: problem
-title: Repeated Rolle's theorem from a high-order zero at the origin
+title: $f(1)=f(0)=\cdots=f^{(n)}(0)=0$ forces a zero of $f^{(n+1)}$ in $(0,1)$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
