@@ -41,5 +41,5 @@ source:
 ---
 
 ::: {.remark}
-The paper includes solutions. Part A consists of Problems 1A--9A and Part B of Problems 1B--9B.
+Part A consists of Problems 1A--9A and Part B of Problems 1B--9B.
 :::
