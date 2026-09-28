@@ -311,8 +311,8 @@ A morphism $f:X\to Y$ is flat at $x$ when
 $$
 \OO_{X,x}
 $$
-is a flat $\OO_{Y,f(x)}$-module [[D-MORFLAT]]. Thus tensoring with the
-structure sheaf preserves exact sequences; for flat projective families
+is a flat $\OO_{Y,f(x)}$-module [[D-MORFLAT]]. Consequently, for $f$ flat the pullback $f^*$ is exact on
+quasi-coherent sheaves; for flat projective families
 over a connected Noetherian base, the Hilbert polynomial of the fibres is
 constant. A projection
 $$
@@ -343,8 +343,8 @@ nilpotents without changing the underlying topological space.
 <2>6. Normality means that the local rings are integrally closed domains.
 
 ::: {.proof}
-A normal scheme is integral and every local ring is integrally closed in
-its fraction field [[D-QJ5M9]]. Regular schemes are normal. Thus
+Every local ring of a normal scheme is an integrally closed domain
+[[D-QJ5M9]]. Regular schemes are normal. Thus
 $\AA^n$ is normal. The cuspidal cubic
 $$
 \Spec k[t^2,t^3]
