@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW5
 kind: problem
-title: Analyze the topologist’s sine wave (warm-up)
+title: The topologist's sine curve is connected but not path connected
 classification:
   areas:
   - topology
