@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ISFYB
 kind: problem
-title: Uniformly bounded derivatives implies equicontinuous
+title: A sequence with uniformly bounded derivatives on $[0,1]$ is equicontinuous
 classification:
   areas:
   - complex-analysis
