@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WVVWW
 kind: problem
-title: Continuous surjections from the line onto euclidean space
+title: Continuous surjections from $\RR$ onto $\RR^n$
 classification:
   areas:
   - topology
@@ -28,7 +28,7 @@ Show there is a continuous surjective map $f: \mathbb{R} \to \mathbb{R}^n$.
 :::
 
 ::: {.solution}
-By the preceding exercise, every compact cube \([-m,m]^n\) is a continuous image of \(I\). We may choose a continuous surjection
+By [[E-SADP0]], every compact cube \([-m,m]^n\), which is homeomorphic to \(I^n\), is a continuous image of \(I\). We may choose a continuous surjection
 \[
 q_m:I\to[-m,m]^n
 \]
