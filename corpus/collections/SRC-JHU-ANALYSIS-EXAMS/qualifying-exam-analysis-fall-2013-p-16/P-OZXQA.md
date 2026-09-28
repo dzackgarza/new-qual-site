@@ -107,7 +107,7 @@ $$
 Both signs are positive for $|t|<1$, exactly one is zero
 at $t=\pm1$, and the signs cancel for $|t|>1$.
 These are the three displayed values. All cancellations
-were made at the prescribed finite symmetric endpoints;
-no separate convergence of the two complex tails is assumed.
+were made at the finite symmetric endpoints before the
+limit was taken.
 :::
 :::
