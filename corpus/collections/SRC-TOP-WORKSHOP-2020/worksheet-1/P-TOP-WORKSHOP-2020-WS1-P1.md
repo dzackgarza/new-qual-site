@@ -39,9 +39,9 @@ Conversely, suppose \(x\in\operatorname{Cl}_X(A)\) and \(y\in\operatorname{Cl}_Y
 \[
 (x,y)\in U\times V\subseteq W.
 \]
-Since \(x\in\overline A\) and \(y\in\overline B\), choose \(a\in U\cap A\) and \(b\in V\cap B\). Then
+Since \(x\in\operatorname{Cl}_X(A)\) and \(y\in\operatorname{Cl}_Y(B)\), choose \(a\in U\cap A\) and \(b\in V\cap B\). Then
 \[
 (a,b)\in W\cap(A\times B).
 \]
-Thus every neighborhood of \((x,y)\) meets \(A\times B\), so \((x,y)\in\overline{A\times B}\). Hence equality holds.
+Thus every neighborhood of \((x,y)\) meets \(A\times B\), so \((x,y)\in\operatorname{Cl}_{X\times Y}(A\times B)\). Hence equality holds.
 :::
