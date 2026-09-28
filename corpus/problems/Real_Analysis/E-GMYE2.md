@@ -44,80 +44,99 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A function differentiable but not continuously differentiable: $f(x) = x^2\sin(1/x)$ for $x \ne 0$, $f(0) = 0$.
-<2>1. $f$ is differentiable everywhere, with $f'(0) = 0$.
+<1>1. $f(x) = x^2\sin(1/x)$ for $x \ne 0$, $f(0) = 0$, is differentiable on $\RR$ but not continuously differentiable.
+
+<2>1. $f$ is differentiable everywhere, with $f'(0) = 0$ and $f'(x) = 2x\sin(1/x) - \cos(1/x)$ for $x \neq 0$.
+
 ::: {.proof}
-$\frac{f(h) - f(0)}{h} = h\sin(1/h) \to 0$ as $h \to 0$ (bounded factor); away from $0$ differentiability is standard.
+$\frac{f(h) - f(0)}{h} = h\sin(1/h)$ and $|h\sin(1/h)| \leq |h| \to 0$. For $x \neq 0$, $f$ is a product and composition of differentiable functions near $x$, and the product and chain rules give the formula.
 :::
+
 <2>2. $f'$ is discontinuous at $0$.
+
 ::: {.proof}
-for $x \ne 0$, $f'(x) = 2x\sin(1/x) - \cos(1/x)$, which has no limit as $x \to 0$ (the $\cos(1/x)$ term oscillates), while $f'(0) = 0$; hence $f$ is not $C^1$.
+At $x_k = 1/(2k\pi)$, $f'(x_k) = -1$ for every $k$, while $x_k \to 0$ and $f'(0) = 0$.
 :::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-<2>1 and <2>2.
+Steps <2>1 and <2>2.
 :::
 
-<1>2. Uniform limit theorem: a uniform limit of continuous functions is continuous.
-<2>1. Fix $x_0$ and $\eps > 0$; choose $n$ with $\|f - f_n\|_\infty < \eps/3$.
+<1>2. If $f_n \to f$ uniformly on $E$ and each $f_n$ is continuous, then $f$ is continuous.
+
+<2>1. Fix $x_0 \in E$ and $\eps > 0$. There are $n$ with $\|f - f_n\|_\infty < \eps/3$ and $\delta > 0$ with $|f_n(x) - f_n(x_0)| < \eps/3$ for $x \in E$, $|x - x_0| < \delta$.
+
 ::: {.proof}
-uniform convergence.
-:::
-<2>2. Choose $\delta > 0$ with $|f_n(x) - f_n(x_0)| < \eps/3$ for $|x - x_0| < \delta$.
-::: {.proof}
-continuity of $f_n$.
-:::
-<2>3. Then $|f(x) - f(x_0)| \le |f(x) - f_n(x)| + |f_n(x) - f_n(x_0)| + |f_n(x_0) - f(x_0)| < \eps$.
-::: {.proof}
-triangle inequality, <2>1, <2>2. <2>4. Q.E.D. Proof: <2>3.
+The first is uniform convergence; the second is continuity of $f_n$ at $x_0$.
 :::
 
-<1>3. A uniform limit of bounded functions is uniformly bounded.
+<2>2. Q.E.D.
+
 ::: {.proof}
-choose $N$ with $\|f - f_N\|_\infty \le 1$; then $\|f\|_\infty \le \|f_N\|_\infty + 1$.
+For $x \in E$ with $|x - x_0| < \delta$, step <2>1 and the triangle inequality give $|f(x) - f(x_0)| \le |f(x) - f_n(x)| + |f_n(x) - f_n(x_0)| + |f_n(x_0) - f(x_0)| < \eps$.
 :::
 
-<1>4. Products of uniformly convergent sequences need not converge uniformly; they do if the sequences are bounded.
-<2>1. Unbounded counterexample on $E = [1, \infty)$: $f_n(x) = x + \frac{1}{n}$, $g_n(x) = x$.
+<1>3. If $f_n \to f$ uniformly and each $f_n$ is bounded, then $f$ is bounded, and $\sup_{n}\|f_n\|_\infty < \infty$.
+
 ::: {.proof}
-$f_n \to x$ uniformly ($\sup_{x\ge1}|x + 1/n - x| = 1/n \to 0$) and $g_n \to x$ uniformly (constant sequence); but $h_n = f_n g_n = x^2 + \frac{x}{n}$ has $\sup_{x\ge1}|h_n(x) - x^2| = \sup_{x\ge1}\frac{x}{n} = \infty \not\to 0$.
+Choose $N$ with $\|f - f_n\|_\infty \le 1$ for $n \geq N$. Then $\|f\|_\infty \le \|f_N\|_\infty + 1$, and $\|f_n\|_\infty \leq \|f\|_\infty + 1$ for $n \geq N$, so $\sup_n \|f_n\|_\infty \leq \max(\|f_1\|_\infty, \ldots, \|f_{N-1}\|_\infty, \|f\|_\infty + 1)$.
 :::
-<2>2. If $f_n \to f$ and $g_n \to g$ uniformly and all are bounded: $|f_n g_n - fg| \le |f_n|\,|g_n - g| + |g|\,|f_n - f| \le M\|g_n - g\|_\infty + M\|f_n - f\|_\infty \to 0$.
+
+<1>4. Products of uniformly convergent sequences need not converge uniformly; they do if every $f_n$ and $g_n$ is bounded.
+
+<2>1. On $E = [1, \infty)$, $f_n(x) = x + \frac{1}{n}$ and $g_n(x) = x$ converge uniformly, but $h_n = f_n g_n$ does not.
+
 ::: {.proof}
-$|f_n| \le M$ and $|g| \le M$ uniformly (by <1>3-type boundedness: $f_n$ bounded since it converges uniformly to bounded $f$; $g$ bounded as a uniform limit of bounded functions).
+$\sup_{x\ge1}|f_n(x) - x| = 1/n \to 0$, and $g_n$ is constant in $n$. But $h_n(x) = x^2 + \frac{x}{n} \to x^2$ pointwise, and $\sup_{x\ge1}|h_n(x) - x^2| = \sup_{x\ge1}\frac{x}{n} = \infty$ for every $n$.
 :::
+
+<2>2. If $f_n \to f$ and $g_n \to g$ uniformly and every $f_n$ and $g_n$ is bounded, then $f_n g_n \to fg$ uniformly.
+
+::: {.proof}
+By step <1>3, $g$ is bounded and there is $M$ with $\|f_n\|_\infty \le M$ for all $n$ and $\|g\|_\infty \le M$. Then $|f_n g_n - fg| \le |f_n|\,|g_n - g| + |g|\,|f_n - f| \le M\|g_n - g\|_\infty + M\|f_n - f\|_\infty \to 0$ uniformly on $E$.
+:::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-<2>1 and <2>2.
+Steps <2>1 and <2>2.
 :::
 
-<1>5. A sequence with $\frac{d}{dx}\lim_n f_n \ne \lim_n \frac{d}{dx}f_n$: $f_n(x) = \frac{\sin(nx)}{n}$.
+<1>5. $f_n(x) = \frac{\sin(nx)}{n}$ satisfies $\frac{d}{dx}\lim_n f_n \ne \lim_n \frac{d}{dx}f_n$ at $x = 0$.
+
 ::: {.proof}
-$f_n \to 0$ uniformly, so $\frac{d}{dx}\lim_n f_n(x) = 0$; but $f_n'(x) = \cos(nx)$ and $\lim_n f_n'(0) = \lim_n 1 = 1 \ne 0$ — the derivative limit does not exist pointwise for $x \ne 0$ and disagrees with the derivative of the limit at $x = 0$.
+$|f_n| \leq 1/n$, so $f_n \to 0$ uniformly and $\frac{d}{dx}\lim_n f_n(x) = 0$. But $f_n'(x) = \cos(nx)$, so $\lim_n f_n'(0) = 1 \ne 0$.
 :::
 
-<1>6. A uniform limit of differentiable functions that is not differentiable: $f_n(x) = \sqrt{x^2 + \frac{1}{n}}$ on $\RR$.
+<1>6. $f_n(x) = \sqrt{x^2 + \frac{1}{n}}$ are differentiable on $\RR$ and converge uniformly to $|x|$, which is not differentiable at $0$.
+
 <2>1. $f_n \to |x|$ uniformly.
 ::: {.proof}
 $0 \le \sqrt{x^2 + 1/n} - |x| = \frac{1/n}{\sqrt{x^2 + 1/n} + |x|} \le \frac{1/n}{\sqrt{1/n}} = \frac{1}{\sqrt n} \to 0$.
 :::
-<2>2. Each $f_n$ is smooth, but $|x|$ is not differentiable at $0$.
+<2>2. Each $f_n$ is smooth, and $|x|$ is not differentiable at $0$.
+
 ::: {.proof}
-$x \mapsto \sqrt{x^2 + c}$ is smooth for $c > 0$; $|x|$ has different left and right derivatives at $0$.
+$x \mapsto \sqrt{x^2 + c}$ is smooth for $c > 0$, since $x^2 + c > 0$. The function $|x|$ has left derivative $-1$ and right derivative $1$ at $0$.
 :::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-<2>1 and <2>2.
+Steps <2>1 and <2>2.
 :::
 
-<1>7. The Cantor set is a Borel set.
+<1>7. The Cantor set $C$ is a Borel set.
+
 ::: {.proof}
-the Cantor set is closed: $C = \bigcap_n C_n$ with each $C_n$ a finite union of closed intervals; closed sets are Borel.
+$C = \bigcap_n C_n$, where $C_n$ is the union of the $2^n$ closed intervals of length $3^{-n}$ remaining after $n$ stages. Each $C_n$ is closed, so $C$ is closed, and closed sets are Borel.
 :::
 
-<1>8. The Cantor ternary set is totally disconnected: it contains no nonempty open interval.
+<1>8. $C$ contains no nonempty open interval.
+
 ::: {.proof}
-$m^*(C) \le m(C_n) = (2/3)^n$ for all $n$, so $m(C) = 0$; an open interval has positive measure, so no interval is contained in $C$.
+$m(C) \le m(C_n) = (2/3)^n$ for all $n$, so $m(C) = 0$. A nonempty open interval has positive measure, so it is not contained in $C$.
 :::
-(Equivalently, every point's ternary expansion has only digits $0,2$, and any two distinct points are separated by a removed middle third.)
 :::
