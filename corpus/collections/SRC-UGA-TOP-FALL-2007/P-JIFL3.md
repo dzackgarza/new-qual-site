@@ -104,7 +104,7 @@ The inclusion of the equator into $S^2$ induces the zero map on $H_1$ because
 H_1(S^2)=0.
 \]
 The inclusion of $C=S^1\times\{p\}$ into the torus sends a generator of $H_1(C)$ to the primitive class $a$.
-Hence, up to the irrelevant Mayer--Vietoris sign convention,
+Hence, up to the Mayer--Vietoris sign convention,
 \[
 \Phi:\ZZ\longrightarrow 0\oplus\ZZ^2,
 \qquad
