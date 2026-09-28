@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16S-07
 kind: problem
-title: Factor an orthogonal matrix into elementary orthogonal matrices
+title: Every orthogonal matrix is a product of at most $n-1$ elementary orthogonal matrices
 classification:
   areas:
   - prelim
