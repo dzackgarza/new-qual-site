@@ -33,6 +33,6 @@ In particular, if $M$ has $n$ distinct eigenvalues in $F$, equivalently if $\min
 :::
 
 ::: {.example}
-A minimal polynomial that splits over $F$ with a repeated root does not satisfy condition 2.
+A matrix whose minimal polynomial splits over $F$ need not be diagonalizable over $F$.
 For $M=\begin{bmatrix}1&1\\0&1\end{bmatrix}$ over any field $F$, $\min_M(x)=(x-1)^2$ splits over $F$, and $M$ is not diagonalizable, because its only eigenvalue is $1$ and $M\ne I$.
 :::
