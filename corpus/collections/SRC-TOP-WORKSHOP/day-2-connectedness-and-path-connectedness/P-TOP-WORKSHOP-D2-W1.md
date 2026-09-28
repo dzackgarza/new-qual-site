@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D2-W1
 kind: problem
-title: A connected space has only trivial clopen sets (workshop warm-up)
+title: A space is connected if and only if its only clopen subsets are the empty set and itself
 classification:
   areas:
   - topology
