@@ -44,7 +44,7 @@ Then $g_X \geq 0$ gives $-2n \geq -2$, so $n = 1$ and $g_X = 0$, and a finite mo
 :::
 
 ::: {.remark title="Topological analogue"}
-For a connected covering space $S\to S^2$ of degree $n$, $\chi(S)=n\chi(S^2)=2n$, and $\chi(S)\le2$ for a compact connected surface, so $n=1$; the proof above replaces $\chi$ by $2-2g$ and the covering space by a finite étale morphism.
+For a connected covering space $S\to S^2$ of degree $n$, $\chi(S)=n\chi(S^2)=2n$, and $\chi(S)\le2$ for a compact connected surface, so $n=1$; the Riemann--Hurwitz proof for $\PP^1$ replaces $\chi$ by $2-2g$ and the covering space by a finite étale morphism.
 :::
 
 ::: {.example title="The affine line in characteristic $p$"}
