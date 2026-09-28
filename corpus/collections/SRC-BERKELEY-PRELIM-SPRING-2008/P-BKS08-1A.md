@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Prove that there do not exist linear operators \(A,B\) on a nonzero finite-dimensional complex vector space such that
-\[
+Prove that there do not exist linear operators $A,B$ on a nonzero finite-dimensional complex vector space such that
+$$
 AB-BA=I.
-\]
-Give an example of two operators on an infinite-dimensional complex vector space for which \(AB-BA=I\).
+$$
+Give an example of two operators on an infinite-dimensional complex vector space for which $AB-BA=I$.
 :::
 
 ::: {.solution}
