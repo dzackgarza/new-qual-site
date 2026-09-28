@@ -36,11 +36,11 @@ Show that there exists $M$ such that for all $n\geq1$,
 \leq \frac{M}{n^2}.
 \]
 
-The source notes that the sum is an approximation of the integral in the trapezoid rule and suggests first treating $n=1$.
+[Recall that the sum is an approximation of the integral in the Trapezoid Rule. It may be instructive to first solve the problem for $n=1$ and then address the general case.]
 :::
 
 ::: {.solution}
-The statement is false as printed for a general interval.
+The statement is false when $b-a\neq1$.
 Take $f\equiv1$.
 The weighted sum inside the parentheses equals $n$, hence the first term is $1$, while
 \[
@@ -48,11 +48,11 @@ The weighted sum inside the parentheses equals $n$, hence the first term is $1$,
 \]
 Thus the left-hand side is the constant $|1-(b-a)|$, which cannot be bounded by $M/n^2$ for all $n$ unless $b-a=1$.
 
-The standard corrected trapezoid statement replaces the factor $1/n$ by
+The composite trapezoid rule uses the factor
 \[
-h=\frac{b-a}{n}.
+h=\frac{b-a}{n}
 \]
-For completeness, let $T_n$ denote the resulting composite trapezoid sum.
+in place of $1/n$; let $T_n$ denote the resulting sum.
 On one subinterval $[x_i,x_{i+1}]$, write $x=x_i+t$ with $0\leq t\leq h$ and let $L_i$ be the affine interpolant through the endpoint values of $f$.
 The interpolation remainder gives, for each $t$, a point $\xi_t\in(x_i,x_{i+1})$ such that
 \[
@@ -71,5 +71,5 @@ Summing over the $n$ subintervals yields
 \leq \frac{nKh^3}{12}
 =\frac{K(b-a)^3}{12n^2}.
 \]
-Thus the intended estimate holds with the usual factor $(b-a)/n$.
+Thus the estimate holds for $T_n$ with $M=K(b-a)^3/12$, and it holds as stated when $b-a=1$.
 :::
