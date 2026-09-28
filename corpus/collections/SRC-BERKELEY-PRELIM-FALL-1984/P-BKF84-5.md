@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF84-5
 kind: problem
-title: Small initial data for a nonlinear scalar ODE
+title: Solutions of $y'=3xy+\frac{y}{1+y^2}$ with $y(0)=1/n$ tend to $0$ at $x=1$
 classification:
   areas: [prelim]
   topics: []
