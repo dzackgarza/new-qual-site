@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4GVRD
 kind: problem
-title: Evaluate $\int\sqrt{4-x}\,dx$
+title: $\int\sqrt{4-x}\,dx$
 classification:
   areas:
   - prelim
@@ -26,7 +26,7 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the indefinite integral $\int \sqrt{4-x} \, dx$ for $x \le 4$.
+Take $x \le 4$.
 
 <1>1. Make the substitution $u = 4 - x$.
 Then $du = -dx \implies dx = -du$.
