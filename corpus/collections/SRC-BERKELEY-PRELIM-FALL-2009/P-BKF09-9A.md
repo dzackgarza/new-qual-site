@@ -27,7 +27,15 @@ uniformly on compact subsets of $\mathbb{C}$.
 :::
 
 ::: {.solution}
-Since $\log ( 1 + u )$is holomorphic for$| u | < 1$and has Taylor expansion at 0 is$\begin{array} { r } { \sum _ { k \geq 1 } ( - 1 ) ^ { k + 1 } u ^ { k } / k } \end{array}$, we infer for$| u | \leq 1 / 2$that$$| \log ( 1 + u ) - u | \leq C | u | ^ { 2 }$$for some constant C. If$n > 2 N$and$| z | \leq N$this gives$\begin{array} { r } { \left| \log \left( 1 + \frac { z } { n } \right) - \frac { z } { n } \right| \leq C N ^ { 2 } n ^ { - 2 } } \end{array}$and$\begin{array} { r } { \left| \log \left( 1 + \frac { z } { n } \right) ^ { n } - z \right| \leq C N ^ { 2 } n ^ { - 1 } } \end{array}$.
-On the other hand, since$\textstyle | \sum _ { k > 0 } a ^ { k } / k ! | \leq \sum _ { k > 0 } | a | ^ { k } / k !$, we have$| e ^ { a } - 1 | \leq e ^ { | a | } - 1$.
-Hence if$n > 2 N$and$| z | \leq N$we find$$\left| \left( 1 + \frac { z } { n } \right) ^ { n } - e ^ { z } \right| = | e ^ { z } | \cdot \left| e ^ { \log \left( 1 + \frac { z } { n } \right) ^ { n } - z } - 1 \right| \leq e ^ { N } \cdot \left( e ^ { C N ^ { 2 } n ^ { - 1 } } - 1 \right)$$so that$\begin{array} { r } { \operatorname* { l i m } _ { n \to \infty } \left| \left( 1 + \frac { z } { n } \right) ^ { n } - e ^ { z } \right| = 0 } \end{array}$uniformly for$| z | \leq N$
+Since $\log(1+u)$ is holomorphic for $\abs{u}<1$ and has Taylor expansion at $0$ $\sum_{k\ge1}(-1)^{k+1}u^k/k$, we infer for $\abs{u}\le1/2$ that
+$$
+\abs{\log(1+u)-u}\le C\abs{u}^2
+$$
+for some constant $C$. If $n>2N$ and $\abs{z}\le N$ this gives $\left\lvert\log\left(1+\frac{z}{n}\right)-\frac{z}{n}\right\rvert\le CN^2n^{-2}$ and $\left\lvert\log\left(1+\frac{z}{n}\right)^n-z\right\rvert\le CN^2n^{-1}$.
+On the other hand, since $\abs{\sum_{k>0}a^k/k!}\le\sum_{k>0}\abs{a}^k/k!$, we have $\abs{e^a-1}\le e^{\abs{a}}-1$.
+Hence if $n>2N$ and $\abs{z}\le N$ we find
+$$
+\left\lvert\left(1+\frac{z}{n}\right)^n-e^z\right\rvert=\abs{e^z}\cdot\left\lvert e^{\log\left(1+\frac{z}{n}\right)^n-z}-1\right\rvert\le e^N\cdot\left(e^{CN^2n^{-1}}-1\right),
+$$
+so that $\lim_{n\to\infty}\left\lvert\left(1+\frac{z}{n}\right)^n-e^z\right\rvert=0$ uniformly for $\abs{z}\le N$.
 :::
