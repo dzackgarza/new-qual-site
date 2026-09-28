@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-FMLK2
 kind: problem
-title: Derivatives detect multiplicity of zeros
+title: A zero of multiplicity $n$ is a point where $f,\ldots,f^{(n-1)}$ vanish and $f^{(n)}$
+  does not
 classification:
   areas:
   - complex-analysis
