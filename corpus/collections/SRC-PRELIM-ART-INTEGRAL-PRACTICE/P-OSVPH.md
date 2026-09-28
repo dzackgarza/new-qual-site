@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OSVPH
 kind: problem
-title: Evaluate $\int\frac{\sin^3 x}{\cos x-\cos^3 x}\,dx$
+title: $\int\frac{\sin^3 x}{\cos x-\cos^3 x}\,dx$
 classification:
   areas:
   - prelim
@@ -25,24 +25,26 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Compute the antiderivative $\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx$.
+<1>1. On the domain $\{x \in \mathbb{R} : \sin(x) \neq 0, \cos(x) \neq 0\}$ of the integrand, $\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \tan(x)$.
 
-<1>1. Algebraic simplification of the integrand:
-    *Proof:*
-    <2>1. Factor $\cos(x)$ out of the denominator:
-    $$\cos(x) - \cos^3(x) = \cos(x)(1 - \cos^2(x)).$$
-    <2>2. Apply the Pythagorean identity $1 - \cos^2(x) = \sin^2(x)$:
-    $$\cos(x) - \cos^3(x) = \cos(x) \sin^2(x).$$
-    <2>3. Substitute into the integrand on its domain $\{x \in \mathbb{R} : \sin(x) \neq 0, \cos(x) \neq 0\}$:
-    $$\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \frac{\sin^3(x)}{\cos(x) \sin^2(x)} = \frac{\sin(x)}{\cos(x)} = \tan(x).$$
+::: {.proof}
+Factoring and the Pythagorean identity $1 - \cos^2(x) = \sin^2(x)$ give
+$$\cos(x) - \cos^3(x) = \cos(x)(1 - \cos^2(x)) = \cos(x) \sin^2(x),$$
+so
+$$\frac{\sin^3(x)}{\cos(x) - \cos^3(x)} = \frac{\sin^3(x)}{\cos(x) \sin^2(x)} = \frac{\sin(x)}{\cos(x)} = \tan(x).$$
+:::
 
-<1>2. Integration via $u$-substitution:
-    *Proof:*
-    <2>1. Substitute $u = \cos(x)$, so $du = -\sin(x) \, dx$:
-    $$\int \frac{\sin(x)}{\cos(x)} \, dx = -\int \frac{du}{u} = -\ln|u| + C = -\ln|\cos(x)| + C.$$
-    <2>2. Equivalently, using logarithmic properties, $-\ln|\cos(x)| = \ln|\sec(x)|$.
+<1>2. $\int \tan(x) \, dx = -\ln|\cos(x)| + C$.
 
-<1>3. Conclusion:
-    *Proof:*
-    $$\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx = -\ln|\cos(x)| + C = \ln|\sec(x)| + C.$$
+::: {.proof}
+Substitute $u = \cos(x)$, so $du = -\sin(x) \, dx$:
+$$\int \frac{\sin(x)}{\cos(x)} \, dx = -\int \frac{du}{u} = -\ln|u| + C = -\ln|\cos(x)| + C.$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2,
+$$\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx = \boxed{-\ln|\cos(x)| + C} = \ln|\sec(x)| + C.$$
+:::
 :::
