@@ -23,7 +23,7 @@ review: draft
 :::
 
 ::: {.solution}
-Set $z=e^{i\theta}$, so $\sin(\theta) = {z+z\inv\over 2i}$ and $\sin^2(\theta) = -{1\over 4}(z^{-2}-2+z^2)$.
+Set $z=e^{i\theta}$, so $\sin(\theta) = {z-z\inv\over 2i}$ and $\sin^2(\theta) = -{1\over 4}(z^{-2}-2+z^2)$.
 Then
 \[
 I\da \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta
@@ -34,9 +34,9 @@ I\da \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta
 &= 2\pi i \sum_{z_k\in \DD} \Res_{z=z_k} {4iz\over z^4-6z^2+1}
 .\]
 
-Factoring the denominator:
+Factoring the denominator, with $w=z^2$:
 \[
-w^2 - 6w - 1 =0 
+w^2 - 6w + 1 =0 
 &\implies w^2 - 6w + \qty{-6\over 2}^2 - \qty{-6\over 2}^2 + 1 =0 \\
 &\implies (w - 3)^2 = -1 + 9 = 8 \\
 &\implies w-3 = \zeta_2^k \sqrt{8},\, k=0, 1 \\
@@ -70,7 +70,7 @@ At $z_2$:
 \[
 \Res_{z=z_2} 
 &= \lim_{z\to z_2} {(z-z_2) 4i z \over z^4-6z^2+1 } \\
-&= {4iz_2\over 4z_2^2 - 12z_2}\\
+&= {4iz_2\over 4z_2^3 - 12z_2}\\
 &= {i \over z_2^2 - 3} \\
 &= -{i\over \sqrt 8}
 .\]
