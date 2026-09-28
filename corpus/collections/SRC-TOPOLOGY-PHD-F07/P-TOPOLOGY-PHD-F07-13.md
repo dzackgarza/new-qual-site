@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-13
 kind: problem
-title: A pair of maps from S^1 to S^2 are homotopic
+title: The equatorial embedding $S^1\to S^2$ is homotopic to its reflection
 classification:
   areas:
   - topology
