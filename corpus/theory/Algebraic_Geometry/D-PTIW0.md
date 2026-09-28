@@ -70,6 +70,6 @@ For the cover $\mcu = \{\PP_k^1\}$ of the projective line over a field $k$ by it
 The affine-cover comparison is a statement in the Zariski topology about quasi-coherent sheaves.
 On an irreducible topological space, a constant abelian sheaf is flasque: every nonempty open is connected, so its restriction maps are identities or surjections onto zero.
 Its positive-degree sheaf cohomology therefore vanishes [@Har10a, Proposition III.2.5].
-This vanishing does not identify Zariski cohomology with singular cohomology of the associated analytic space.
-For a complex algebraic variety $X$, the [comparison with singular cohomology](https://arxiv.org/abs/1602.06674) concerns its analytic topology and gives $H^i_{\operatorname{sing}}(X(\CC),\ZZ)\cong H^i(X^{\operatorname{an}},\underline{\ZZ})$, not the corresponding Zariski-topology group.
+For a complex variety $X$, singular cohomology is sheaf cohomology of the constant sheaf in the analytic topology, $H^i_{\operatorname{sing}}(X(\CC),\ZZ)\cong H^i(X^{\operatorname{an}},\underline{\ZZ})$, since $X^{\operatorname{an}}$ is locally contractible.
+For $X=\PP^1_\CC$, the Zariski group $H^2(X,\underline{\ZZ})$ is $0$, while $H^2(X^{\operatorname{an}},\underline{\ZZ})\cong H^2(S^2,\ZZ)\cong\ZZ$.
 :::
