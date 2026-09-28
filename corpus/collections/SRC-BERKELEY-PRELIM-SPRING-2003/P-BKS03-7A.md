@@ -23,7 +23,7 @@ audit:
 :::
 
 ::: {.solution}
-(a) If not, there exists $h _ { 1 } \in H _ { 1 } - H _ { 2 }$ and $h _ { 2 } \in H _ { 2 } - H _ { 1 }$ . Since $h _ { 1 }$ and $h _ { 2 }$ belong to the subgroup $H _ { 1 } \cup H _ { 2 }$ , we also have $h _ { 1 } h _ { 2 } \in H _ { 1 } \cup H _ { 2 }$ . If $h _ { 1 } h _ { 2 } \in H _ { 1 }$ , we get the contradiction $h _ { 2 } = h _ { 1 } ^ { - 1 } ( h _ { 1 } h _ { 2 } ) \in H _ { 1 } . \mathrm { ~ I f ~ } h _ { 1 } h _ { 2 } \in H _ { 2 } , \mathrm { ~ w e ~ g e t }$ the contradiction $h _ { 1 } = ( h _ { 1 } h _ { 2 } ) h _ { 2 } ^ { - 1 } \in H _ { 2 }$
+(a) If not, there exists $h_1\in H_1-H_2$ and $h_2\in H_2-H_1$. Since $h_1$ and $h_2$ belong to the subgroup $H_1\cup H_2$, we also have $h_1h_2\in H_1\cup H_2$. If $h_1h_2\in H_1$, we get the contradiction $h_2=h_1^{-1}(h_1h_2)\in H_1$. If $h_1h_2\in H_2$, we get the contradiction $h_1=(h_1h_2)h_2^{-1}\in H_2$.
 
-(b) Let $G = ( \mathbb { Z } / 2 \mathbb { Z } ) ^ { n - 1 }$ . For $1 \leq i \leq n - 1$ , let $H _ { i } = \{ ( x _ { 1 } , \dots , x _ { n - 1 } ) \in G : x _ { i } = 0 \}$ . Then $H _ { 1 } \cup \ldots \cup H _ { n - 1 } = G - \{ ( 1 , 1 , \ldots , 1 ) \}$ . Let $H _ { n } = \left\{ \left( x _ { 1 } , \dots , x _ { n - 1 } \right) \in G : x _ { 1 } + x _ { 2 } = 0 \right\}$ . Then $( 1 , 1 , \ldots , 1 ) \in H _ { n } , \ s o \ H _ { 1 } \cup \cdots \cup H _ { n } = G$ . No $H _ { i }$ is contained in any other, since they are distinct subgroups of the same order.
+(b) Let $G=(\ZZ/2\ZZ)^{n-1}$. For $1\leq i\leq n-1$, let $H_i=\{(x_1,\ldots,x_{n-1})\in G:x_i=0\}$. Then $H_1\cup\cdots\cup H_{n-1}=G-\{(1,1,\ldots,1)\}$. Let $H_n=\{(x_1,\ldots,x_{n-1})\in G:x_1+x_2=0\}$. Then $(1,1,\ldots,1)\in H_n$, so $H_1\cup\cdots\cup H_n=G$. No $H_i$ is contained in any other, since they are distinct subgroups of the same order.
 :::
