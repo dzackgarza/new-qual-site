@@ -29,7 +29,7 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** (a) If $f$ is differentiable on $\RR$ with $f'(-1) < 2 < f'(1)$, show $f'(x_0) = 2$ for some $x_0 \in (-1, 1)$. (b) If $f$ is continuous on $(-1,1)$, differentiable on $(-1,0) \union (0,1)$, and $\lim_{x \to 0} f'(x) = L$, show $f$ is differentiable at $0$ with $f'(0) = L$.
+In part (a) the interval is $(-1, 1)$.
 
 <1>1. Proof of (a).
     <2>1. Define $g(x) \definedas f(x) - 2x$; then $g'(-1) = f'(-1) - 2 < 0$ and $g'(1) = f'(1) - 2 > 0$.
@@ -38,7 +38,7 @@ audit:
         :::
     <2>2. Derivatives have the intermediate value property (Darboux's theorem): $g'$ takes every value between $g'(-1)$ and $g'(1)$ on $(-1, 1)$.
         ::: {.proof}
-        Standard theorem: every derivative has the Darboux property on intervals. (Sketch of the classical proof: if $g'(a) < c < g'(b)$, the function $h(x) = g(x) - cx$ has $h'(a) < 0 < h'(b)$, and $h$ attains a minimum in $[a,b]$; a minimum in the interior forces $h' = 0$ there, while the endpoint case contradicts the sign of the one-sided derivatives; Rolle's-theorem style argument.)
+        Let $g'(a) < c < g'(b)$ and put $h(x) = g(x) - cx$, so $h'(a) < 0 < h'(b)$. The continuous function $h$ attains a minimum on $[a,b]$. Since $h'(a) < 0$, $h(x) < h(a)$ for $x$ slightly larger than $a$; since $h'(b) > 0$, $h(x) < h(b)$ for $x$ slightly smaller than $b$. So the minimum is attained at an interior point, where $h' = 0$, that is, $g' = c$.
         :::
     <2>3. Since $0$ lies strictly between $g'(-1) < 0$ and $g'(1) > 0$, there is $x_0 \in (-1, 1)$ with $g'(x_0) = 0$.
         ::: {.proof}
