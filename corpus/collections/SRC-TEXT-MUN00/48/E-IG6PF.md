@@ -18,7 +18,7 @@ Show that $\mathbb{R}^J$ is a Baire space in the box, product, and uniform topol
 :::
 
 ::: {.solution}
-For the product topology, $\mathbb R^J$ is a product of completely metrizable spaces. A direct basic-open proof is convenient: given dense open sets $G_n$ and a nonempty basic product-open $U_0$, recursively choose nonempty basic opens $U_n$ with
+For the product topology, let $G_1, G_2, \ldots$ be dense open sets and $U_0$ a nonempty basic open set. Recursively choose nonempty basic opens $U_n$ with
 \[
 \overline{U_n}\subset U_{n-1}\cap G_n,
 \]
