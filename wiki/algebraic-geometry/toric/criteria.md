@@ -10,24 +10,23 @@ topics:
 # Criteria and numerical invariants
 
 Many geometric properties of a toric variety are equivalent to explicit conditions on its fan.
-This page collects those equivalences in one place, then adds the numbers that the same combinatorics produces for free.
 
 [[PR-FULCRIT]]
 
-Each row works in both directions.
-From a fan, it gives a determinant, support, or convexity check; from a desired property, it specifies fan data that realizes it: full support for completeness, a polytope for projectivity, and a reflexive polytope for Fano.
+$X_\Sigma$ is complete exactly when $\abs\Sigma=N_\RR$, projective exactly when $\Sigma$ is the normal fan of a full-dimensional lattice polytope, and Gorenstein Fano exactly when $\Sigma$ is the face fan of a reflexive polytope.
 
-## The numbers that come with the fan
+## Betti numbers and degree
 
 [[T-FULBETTI]]
 
 [[T-FULDEG]]
 
-Together these recover standard numerical invariants of a projective toric variety from the combinatorics.
-Cohomology is a count of cones, sections are a count of lattice points, and the degree is a volume.
+For $X_\Sigma$ smooth and complete of dimension $n$, with $d_j$ the number of $j$-dimensional cones of $\Sigma$, $b_{2k}=\sum_{i=k}^n(-1)^{i-k}\binom ik d_{n-i}$ and the odd Betti numbers vanish.
+For an ample torus-invariant divisor $D$ with polytope $P_D$, $h^0(\OO(D))=\#(P_D\cap M)$ and $D^n=n!\operatorname{vol}(P_D)$.
 
-## Properties that hold automatically
+## Cohen--Macaulay and Gorenstein toric varieties
 
 [[PR-FULCM]]
 
-Normality and Cohen--Macaulayness hold automatically in this setting, while Gorensteinness and smoothness impose additional conditions on the fan.
+Every normal toric variety is Cohen--Macaulay.
+$U_\sigma$ is Gorenstein exactly when some $m\in M$ has $\langle m,u_\rho\rangle=1$ for every minimal ray generator $u_\rho$ of $\sigma$.
