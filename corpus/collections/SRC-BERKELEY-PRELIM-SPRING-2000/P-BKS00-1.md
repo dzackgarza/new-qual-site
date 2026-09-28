@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS00-1
 kind: problem
-title: Decide whether two explicit four-by-four matrices are similar
+title: Similarity of two explicit real $4\times4$ matrices
 classification:
   areas: [prelim]
   topics: []
