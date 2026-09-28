@@ -6,7 +6,7 @@ order: 0
 
 ## Books
 
-- Ahlfors, *Complex Analysis*
+- [@Ahl79]
 
 - Gamelin, *Complex Analysis*
 
