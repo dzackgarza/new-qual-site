@@ -39,8 +39,8 @@ Equivalently $M_g$ carries a **universal family** $\mathcal{U} \to M_g$ from whi
 :::
 
 ::: {.remark}
-Coarse asks only that families produce maps; fine asks that maps *be* families, and the gap between the two is where all the content sits.
-Condition (2) alone is cheap: it does not say that a map to $M_g$ comes from anything, nor that two families inducing the same map are isomorphic.
+For a coarse moduli space, families induce classifying maps; for a fine moduli space, this correspondence is bijective and natural in the base.
+Condition (2) alone does not imply that every map to $M_g$ comes from a family or that two families with the same classifying map are isomorphic.
 Take a family to its classifying map and the map back to a family and the round trip must return what you started with — that is representability, and it fails.
 
 Automorphisms are the obstruction, and the mechanism is twisting.

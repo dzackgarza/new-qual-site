@@ -28,7 +28,7 @@ A **sheaf of ideals** is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
 :::
 
 ::: {.remark}
-The asymmetry between the two operations is the point worth holding.
+Tensor product and sheaf Hom differ in how locality enters their construction.
 Tensor needs sheafifying because a tensor product of sections is not determined locally; sheaf hom does not, because a morphism of sheaves is already a local object and the assignment is a sheaf on the nose.
 So $\tensor$ is right exact and $\sheafhom$ is left exact, and the stalk formula $(\mcf \tensor \mcg)_x = \mcf_x \tensor \mcg_x$ holds while $\sheafhom(\mcf,\mcg)_x = \Hom(\mcf_x, \mcg_x)$ can fail without finiteness on $\mcf$.
 
