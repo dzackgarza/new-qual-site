@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-4A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 4A
+title: Isomorphisms among $\QQ(\sqrt[3]{2})$, the splitting field of $x^3-2$, $\overline{\FF}_2$, its roots-of-unity subfield, $\RR$, and $\QQ((T))$
 classification:
   areas: [prelim]
   topics: []
