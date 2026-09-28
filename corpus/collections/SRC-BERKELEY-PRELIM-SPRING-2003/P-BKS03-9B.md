@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS03-9B
 kind: problem
-title: An uncountable subset of $\mathbb R$ has uncountably many accumulation points
+title: An uncountable subset of $\RR$ has uncountably many accumulation points
 classification:
   areas:
   - prelim
