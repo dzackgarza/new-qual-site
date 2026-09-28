@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB10S-04
 kind: problem
-title: Two consequences of semidefinite and adjoint identities
+title: Trace-zero negative semidefinite matrices vanish; operators with $TT^*=4T-3I$
 classification:
   areas:
   - prelim
