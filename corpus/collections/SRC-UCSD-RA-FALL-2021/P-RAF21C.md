@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF21C
 kind: problem
-title: "The averaging operator on L^p: norm bound and non-surjectivity of I - T"
+title: "The averaging operator on $L^p(\\RR)$: norm bound and non-surjectivity of $I-T$"
 classification:
   areas:
   - real-analysis
@@ -34,7 +34,7 @@ Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0
 :::
 
 ::: {.solution}
-<1>1. Prove the contraction estimate.
+<1>1. $\|Tf\|_p\le\|f\|_p$ for every $f\in L^p(\mathbb R)$.
 ::: {.proof}
 For almost every $x$, Jensen's inequality for the probability measure on $[0,1]$ gives
 \[
@@ -57,7 +57,7 @@ Hence
 \]
 :::
 
-<1>2. Analyze equality in the contraction estimate.
+<1>2. If $\|Tf\|_p=\|f\|_p$, then $f=0$ almost everywhere.
 ::: {.proof}
 Suppose $\|Tf\|_p=\|f\|_p$. Then equality holds in the pointwise Jensen inequality for almost every $x$. Since $1<p<\infty$, the function $z\mapsto |z|^p$ is strictly convex. Therefore, for almost every $x$, the function
 \[
@@ -72,16 +72,16 @@ f(t)=c_x
 for almost every $t\in(x,x+1)$. If two such intervals overlap in a set of positive measure, their constants must agree. Chaining overlapping unit intervals shows that $f$ is almost everywhere equal to one constant on $\mathbb R$. Since $f\in L^p(\mathbb R)$, that constant must be $0$. Hence equality occurs only for $f=0$ almost everywhere.
 :::
 
-<1>3. Show that $I-T$ is injective.
+<1>3. $I-T$ is injective.
 ::: {.proof}
 If $(I-T)f=0$, then $Tf=f$. Hence
 \[
 \|Tf\|_p=\|f\|_p,
 \]
-and Step 2 implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
+and step <1>2 implies $f=0$ almost everywhere. Therefore $I-T$ is injective.
 :::
 
-<1>4. Construct approximate fixed points of $T$.
+<1>4. For $f_N\coloneqq\mathbf1_{[0,N]}$, $\|(I-T)f_N\|_p/\|f_N\|_p\to0$ as $N\to\infty$.
 ::: {.proof}
 Let
 \[
@@ -91,7 +91,7 @@ Then
 \[
 \|f_N\|_p=N^{1/p}.
 \]
-For $x\in[0,N-1]$ we have $Tf_N(x)=1=f_N(x)$, while outside a fixed-width neighborhood of the two endpoints the same equality holds with both sides zero. Thus $(I-T)f_N$ is supported in
+For $x\in[0,N-1]$ we have $Tf_N(x)=1=f_N(x)$, and for $x\notin[-1,N]$ both sides are zero. Thus $(I-T)f_N$ is supported in
 \[
 [-1,0]\cup[N-1,N],
 \]
@@ -106,15 +106,15 @@ Therefore
 \]
 :::
 
-<1>5. Rule out surjectivity.
+<1>5. $(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R)$.
 ::: {.proof}
-Suppose $(I-T)(L^p)=L^p$. By Step 3, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\mathbb R)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
+Suppose $(I-T)(L^p)=L^p$. By step <1>3, $I-T$ would then be a bounded bijective operator from the Banach space $L^p(\mathbb R)$ onto itself. The bounded inverse theorem would give a constant $C>0$ such that
 \[
 \|(I-T)f\|_p\ge C\|f\|_p
 \]
 for every $f\in L^p$.
 
-Step 4 contradicts such a lower bound. Therefore
+Step <1>4 contradicts such a lower bound. Therefore
 \[
 \boxed{(I-T)(L^p(\mathbb R))\ne L^p(\mathbb R).}
 \]
