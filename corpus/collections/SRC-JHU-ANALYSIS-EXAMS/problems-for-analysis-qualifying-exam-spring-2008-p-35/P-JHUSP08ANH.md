@@ -109,7 +109,6 @@ $$
 \leq\frac1r\sup_{|z-P|=r}|h_{n_j}(z)-f_0(z)|\longrightarrow0.
 $$
 Step <1>2 now yields $f_0'(P)=S$. Relabeling this
-subsequence as $(f_j)$ proves (b), including attainment
-of the specified real derivative rather than only its modulus.
+subsequence as $(f_j)$ proves (b).
 :::
 :::
