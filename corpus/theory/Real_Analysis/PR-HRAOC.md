@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-HRAOC
 kind: proposition
 title: Existence of nonzero smooth compactly supported functions
-slogan: 'Flat exponential cutoffs produce nonzero smooth bump functions with compact support.'
+slogan: 'The function equal to $e^{-1/x^2}$ for $x>0$ and $0$ for $x\le0$ is $C^\infty$, and composing it with $1-\abs{x}^2$ gives a nonzero $C^\infty$ function with compact support.'
 classification:
   areas:
   - real-analysis
