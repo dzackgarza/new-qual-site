@@ -29,12 +29,12 @@ audit:
 ---
 
 ::: {.problem}
-Let f be entire.
-Discuss, with proofs and examples, the types of singularities f might have (removable, pole, or essential) at $\infty$ in each of the following cases.
+Let $f$ be entire.
+Discuss, with proofs and examples, the types of singularities $f$ might have (removable, pole, or essential) at $\infty$ in each of the following cases.
 
-a) f has at most finitely zeros in C.
+a) $f$ has at most finitely zeros in $\CC$.
 
-b) f has infinitely many zeros in C.
+b) $f$ has infinitely many zeros in $\CC$.
 :::
 
 ::: {.solution}
