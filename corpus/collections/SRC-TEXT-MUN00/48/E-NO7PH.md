@@ -22,43 +22,17 @@ Determine whether or not $\mathbb{R}_\ell$ is a Baire space.
 :::
 
 ::: {.solution}
-<1>1. $\mathbb{R}_\ell$ (the Sorgenfrey line, with basis $[a,b)$) is not a Baire space.
+$\mathbb{R}_\ell$ is a Baire space. Let $G_1, G_2, \ldots$ be dense open subsets of $\mathbb{R}_\ell$ and let $U_0$ be a nonempty open subset. It suffices to show that $U_0 \cap \bigcap_n G_n \neq \varnothing$.
+
+<1>1. There are real numbers $a_n < b_n$, $n \ge 0$, with $[a_0, b_0] \subseteq U_0$ and $[a_{n+1}, b_{n+1}] \subseteq G_{n+1} \cap [a_n, b_n)$ for $n \ge 0$.
+
 ::: {.proof}
-claim.
+The sets $[a, b)$ form a basis of $\mathbb{R}_\ell$. The nonempty open set $U_0$ contains some $[a_0, b_0')$; put $b_0 = (a_0 + b_0')/2$. Given $a_n < b_n$, the set $G_{n+1} \cap [a_n, b_n)$ is open, and nonempty because $G_{n+1}$ is dense. It contains some $[a_{n+1}, b')$ with $a_{n+1} < b'$; put $b_{n+1} = (a_{n+1} + b')/2$. Then $[a_{n+1}, b_{n+1}] \subseteq [a_{n+1}, b') \subseteq G_{n+1} \cap [a_n, b_n)$.
 :::
 
-<1>2. $\mathbb{Q}$ is countable, and each $\{q\}$ is closed in $\mathbb{R}_\ell$ (since $\mathbb{R}_\ell$ is $T_1$).
-::: {.proof}
-singletons are closed.
-:::
+<1>2. Q.E.D.
 
-<1>3. Each $\{q\}$ has empty interior in $\mathbb{R}_\ell$ (it is nowhere dense).
 ::: {.proof}
-any basic open $[a,b)$ containing $q$ contains points $\neq q$.
-:::
-
-<1>4. $\mathbb{Q} = \bigcup_{q \in \mathbb{Q}} \{q\}$ is a countable union of nowhere dense closed sets.
-::: {.proof}
-<1>2 and <1>3.
-:::
-
-<1>5. But $\mathbb{Q}$ is not closed and $\mathbb{R}_\ell \setminus \mathbb{Q}$ is not open dense; more precisely, $\mathbb{R}_\ell$ is the countable union of the closed nowhere dense sets $\{q\}$, so it is of first category in itself.
-::: {.proof}
-<1>4.
-:::
-
-<1>6. A Baire space cannot be a countable union of nowhere dense closed sets.
-::: {.proof}
-Baire category theorem.
-:::
-
-<1>7. Hence $\mathbb{R}_\ell$ is not Baire.
-::: {.proof}
-<1>5 and <1>6.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
+By step <1>1 the closed bounded intervals $[a_n, b_n]$ of $\RR$ are nested and nonempty, so they have a common point $x$ by compactness. Then $x \in [a_0, b_0] \subseteq U_0$ and $x \in [a_{n}, b_{n}] \subseteq G_{n}$ for every $n \ge 1$.
 :::
 :::
