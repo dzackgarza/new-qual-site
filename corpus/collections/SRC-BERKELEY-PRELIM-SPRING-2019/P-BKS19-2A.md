@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-Let $f:\mathbb R\to\mathbb R$ be bounded and continuously differentiable.
+Let $f:\RR\to\RR$ be bounded and continuously differentiable.
 Show that every solution $y$ of
-\[
+$$
 y'=f(y)
-\]
+$$
 is monotone.
 :::
