@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathbb { R } \to \mathbb { R }$ be differentiable on R. Suppose that $f ( 0 ) = 0$ , and that $| f ^ { \prime } ( x ) | \leq | f ( x ) |$ for all $x \in \mathbb { R }$ . Prove that $f ( x ) = 0$ for all $x \in \mathbb { R }$
+Let $f:\RR\to\RR$ be differentiable on $\RR$. Suppose that $f(0)=0$, and that $\abs{f'(x)}\leq\abs{f(x)}$ for all $x\in\RR$. Prove that $f(x)=0$ for all $x\in\RR$.
 :::
 
 ::: {.solution}
