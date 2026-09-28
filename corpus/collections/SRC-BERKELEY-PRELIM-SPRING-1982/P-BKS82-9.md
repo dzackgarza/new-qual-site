@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS82-9
 kind: problem
-title: Real Jordan canonical form of a three-by-three matrix
+title: Real Jordan canonical form of a $3\times3$ matrix
 classification:
   areas: [prelim]
   topics: []
