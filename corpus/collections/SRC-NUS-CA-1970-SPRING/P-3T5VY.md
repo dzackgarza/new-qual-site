@@ -27,11 +27,11 @@ in the annulus $1 \leq |z| \leq 2$.
 :::
 
 ::: {.solution}
-**Goal:** Determine the number of zeros of $f(z) = 2z^5 - 6z^2 - z + 1$, counted with multiplicity, in the closed annulus $A = \{z \in \mathbb{C} : 1 \leq |z| \leq 2\}$.
+Let $f(z) = 2z^5 - 6z^2 - z + 1$, and let $A = \{z \in \mathbb{C} : 1 \leq |z| \leq 2\}$ be the closed annulus. Zeros are counted with multiplicity.
 
 * * *
 
-### Step 1: Count Zeros in the Open Disk $|z| < 2$
+### Step 1: Zeros in the open disk $|z| < 2$
 
 <1>1. **$f(z)$ has 5 zeros in $|z| < 2$.** <2>1. Decompose $f(z) = F_1(z) + G_1(z)$ on the circle $|z| = 2$, where $F_1(z) = 2z^5$ and $G_1(z) = -6z^2 - z + 1$.
 *Proof:* Algebraic splitting of terms.
@@ -51,7 +51,7 @@ Moreover, since $|f(z)| \geq |F_1(z)| - |G_1(z)| \geq 64 - 27 = 37 > 0$ on $|z|=
 
 * * *
 
-### Step 2: Count Zeros in the Open Disk $|z| < 1$
+### Step 2: Zeros in the open disk $|z| < 1$
 
 <1>2. **$f(z)$ has 2 zeros in $|z| < 1$.** <2>1. Decompose $f(z) = F_2(z) + G_2(z)$ on the circle $|z| = 1$, where $F_2(z) = -6z^2$ and $G_2(z) = 2z^5 - z + 1$.
 *Proof:* Algebraic splitting of terms.
@@ -71,7 +71,7 @@ Furthermore, on $|z|=1$, $|f(z)| \geq |F_2(z)| - |G_2(z)| \geq 6 - 4 = 2 > 0$, s
 
 * * *
 
-### Step 3: Count Zeros in the Annulus $1 \leq |z| \leq 2$
+### Step 3: Zeros in the annulus $1 \leq |z| \leq 2$
 
 <1>3. **$f(z)$ has exactly $5 - 2 = 3$ zeros in the annulus $1 \leq |z| \leq 2$.** <2>1. The closed disk $\overline{D}(0, 2) = \{|z| \leq 2\}$ is the disjoint union of the open disk $D(0, 1) = \{|z| < 1\}$, the closed annulus $A = \{1 \leq |z| \leq 2\}$, and the boundary circles $|z|=1, |z|=2$.
 *Proof:* Partition of the closed disk.
