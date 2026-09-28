@@ -20,7 +20,8 @@ source:
     comment: Problem 1A
   - id: P-BKS09-2A
     comment: Problem 2A
-  - P-BKS09-3A
+  - id: P-BKS09-3A
+    comment: Problem 3A
   - id: P-BKS09-4A
     comment: Problem 4A
   - id: P-BKS09-5A
