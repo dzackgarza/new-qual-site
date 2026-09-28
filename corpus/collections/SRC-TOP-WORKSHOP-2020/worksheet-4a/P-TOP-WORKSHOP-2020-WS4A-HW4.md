@@ -40,5 +40,5 @@ where \(i,j\) are the inclusions of \(A\cap B\) into \(A,B\), and \(k,\ell\) are
 \[
 H_1(X)\to H_0(A\cap B)\to H_0(A)\oplus H_0(B)\to H_0(X)\to0.
 \]
-Equivalently, using reduced homology gives the corresponding reduced long exact sequence without the terminal augmentation issue. Exactness means at every term the image of one map equals the kernel of the next, so knowing the homology of \(A\), \(B\), and \(A\cap B\) constrains and often determines the homology of \(X\).
+If \(A\cap B\ne\varnothing\), the same maps give an exact sequence in reduced homology, ending in \(\widetilde H_0(A)\oplus\widetilde H_0(B)\to\widetilde H_0(X)\to0\).
 :::
