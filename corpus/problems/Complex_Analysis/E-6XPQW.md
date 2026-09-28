@@ -44,7 +44,7 @@ F(z)=\frac{\pi\cot(\pi z)}{(z-\tfrac12)^2}.
 
 <1>1. On $\partial Q_N$, $|\cot(\pi z)|$ is bounded by a constant independent of $N$.
 <2>1. On the vertical sides, $\Re z$ is a half-integer, so $|\cot(\pi z)|=|\tanh(\pi\Im z)|\le1$.
-<2>2. On the horizontal sides, $|\Im z|=N+1/2$, and the standard formula for $\cot(x+iy)$ gives a bound independent of $x$ and $N$.
+<2>2. On the horizontal sides, $|\Im z|=N+1/2$. For real $x$ and $y\neq0$, $\abs{\cot(x+iy)}^2=\frac{\cos^2x+\sinh^2y}{\sin^2x+\sinh^2y}\le\coth^2y$, so $\abs{\cot(\pi z)}\le\coth(\pi(N+\tfrac12))\le\coth(\pi/2)$.
 <2>3. Also $|z-1/2|\ge N$ on $\partial Q_N$, while the perimeter is $O(N)$. Hence
 \[
 \oint_{\partial Q_N}F(z)\,dz\longrightarrow0.
