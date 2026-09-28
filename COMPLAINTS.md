@@ -729,6 +729,50 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS13-3B treats $k\neq0$ and $k=0$ separately and proves convergence
   of the resulting Fourier series in both cases.
 
+### Candidates reported by the 2026-09-28 copy-review readers
+
+- **Object and need:** the cards below. Each line is a reader's report made
+  while repairing copy; the reader did not change the mathematics named here.
+- **Observed evidence:** the report text, one line per card.
+  - Statements: E-EMISN claims continuity on the whole domain of convergence,
+    and the solution proves the open disk only. E-6IZL3 has codomain
+    $\CC$, where nonconstant solutions such as $2+iy$ exist; the solution
+    treats real $u$. E-EBRU5 does not fix the branch of $\sqrt{x^2-1}$ on
+    $(0,1)$, which decides the sign of $i\pi/2$. E-SS2.EX-9 is false without
+    connectedness; a remark carries the component statement. E-SS10.EX-6 is
+    false at $n=1$; the solution proves $n\ge2$.
+  - Statements that lost source text: P-WHHDI lost its commutative diagram.
+    E-SS1.EX-25 names three calculations and carries two; Stein--Shakarchi
+    1.25 has a part (c). E-SS10.EX-2 ends mid-sentence, and its figure
+    caption is in E-SS10.EX-3. P-CI7E2 cites a definition of normality that
+    its statement does not contain. P-AGXVARPROJIRR and P-ALGFINAL11-02
+    carry extraction or agent wording inside the statement.
+  - Card structure: E-AXBZQ holds two problems. E-SS2.PR-1 holds
+    Stein--Shakarchi Chapter 2 Problems 1 and 2. SRC-TEXT-SS03 lists section
+    problems in identifier order, not source order.
+  - Proof gaps: E-SS1.EX-13 proves part (3) only. E-SS10.PR-2 (b) asserts the
+    $\abs c=1$ corner cases. P-AGXHWDISTINGOPEN mixes the directions of the
+    sheaf map on $D(f)$. P-AGXHWREDUCED solves part (a) only.
+    P-AGXVARSMOOTHMFLD step <1>4 proves one inclusion of
+    $T_pX=\ker dF_p$. P-B2P3P (b)(i) does not exclude the other partitions
+    of 5. P-C6SRA (d) calls $0\subset M_2(\QQ)$ maximal and not prime, which
+    holds only for completely prime ideals.
+  - `STYLE-08` layout (fragment proofs, *Goal*, *Proof:*): P-JHUFA07ANE,
+    P-4KTFN, P-PGDJ2, P-YBT6I, P-JHUMAY06ANH, P-JHUMAY06ANI, P-JHUMAY06ANK,
+    P-JHUMAY11ANF, P-JHUFA05ANC, P-JHUFA06ANB, P-JHUSP05AND, P-JHUSP05ANE,
+    P-XYYHG, P-JHUFA01CAD, P-JHUFA02CAH, P-JHUSP01CAC, P-JHUFA08ANE,
+    P-JHUFA08ANF, P-JHUSP07ANA, P-JHUSP08ANE, P-8XT04, P-8XT06, P-8XT09,
+    P-WVJBX, P-8XT17, P-8XT32, P-MSHRB, P-7QJS2, P-8XT20, P-PAQ4K,
+    P-JHUFA02CAC, P-JHUFA02CAD, P-JHUU51RA5, P-JHU4547C5.
+  - Duplicate candidates under `CARD-04`: E-BXDQY / E-EUGUZ, E-ENWYG /
+    E-EOMTI, E-22P3T / E-2HIKG, E-AKNDW / E-CFHC4, E-2DPQC / E-5AKU5.
+- **Impact and owner:** statement and structure lines are data defects of
+  urgency 1 in `AGENTS.md`; proof gaps and layout are authoring work.
+- **Uncertainty:** every line is an unverified reader report. None is a
+  finding until someone reads the card and its source.
+- **Repair:** read each card, confirm or reject the line, repair confirmed
+  defects on the card, and delete the line in the repairing commit.
+
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card
