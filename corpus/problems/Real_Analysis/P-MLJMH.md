@@ -31,41 +31,29 @@ L^1(\RR^n) \intersect L^\infty(\RR^n) \subset L^2(\RR^n) \qtext{and} \norm{f}_2 
 .\]
 :::
 ::: {.solution}
-<1>1. (a) Definition: $L^\infty(\RR^n)$ is the space of (equivalence classes of) measurable $f : \RR^n \to \CC$ with $\|f\|_\infty := \inf\{M : |f(x)| \le M \text{ for a.e. } x\} < \infty$, the essential supremum.
-    ::: {.proof}
-    definition; functions equal a.e. are identified.
-    :::
+$L^\infty(\RR^n)$ is the space of a.e.-equivalence classes of measurable $f\colon \RR^n \to \CC$ with $\|f\|_\infty \coloneqq \inf\theset{M \ge 0 : |f| \le M \text{ a.e.}} < \infty$.
+
+<1>1. $|f| \le \|f\|_\infty$ a.e.
+
+::: {.proof}
+$\theset{|f| > \|f\|_\infty} = \bigcup_k \theset{|f| > \|f\|_\infty + 1/k}$ is a countable union of null sets.
+:::
 
 <1>2. $\|\cdot\|_\infty$ is a norm on $L^\infty$.
-    <2>1. Positive definiteness: $\|f\|_\infty \ge 0$; $\|f\|_\infty = 0$ iff $f = 0$ a.e.
-        ::: {.proof}
-        $\|f\|_\infty = 0$ iff $|f| \le \eps$ a.e. for every $\eps > 0$, iff $f = 0$ a.e. (intersect the null sets).
-        :::
-    <2>2. Homogeneity: $\|\lambda f\|_\infty = |\lambda|\|f\|_\infty$.
-        ::: {.proof}
-        $|\lambda f(x)| \le M$ a.e. iff $|f(x)| \le M/|\lambda|$ a.e.
-        :::
-    <2>3. Triangle inequality: $\|f + g\|_\infty \le \|f\|_\infty + \|g\|_\infty$.
-        ::: {.proof}
-        $|f(x) + g(x)| \le |f(x)| + |g(x)| \le \|f\|_\infty + \|g\|_\infty$ a.e. (both inequalities hold off null sets; their union is null).
-        :::
 
-<1>3. $L^\infty$ is complete (a Banach space).
-    <2>1. Let $(f_k)$ be Cauchy in $\|\cdot\|_\infty$; for $m, n$ large, $|f_m(x) - f_n(x)| \le \|f_m - f_n\|_\infty$ for a.e. $x$ — but the exceptional null set depends on the pair; take the union over all pairs of a countable subsequence to get a single null set $N$ off which $(f_k(x))$ is uniformly Cauchy.
-        ::: {.proof}
-        choose $k_j$ with $\|f_{k_{j+1}} - f_{k_j}\|_\infty < 2^{-j}$; off $N = \bigcup_j \{|f_{k_{j+1}} - f_{k_j}| > \|f_{k_{j+1}} - f_{k_j}\|_\infty\}$ (null), the subsequence converges uniformly to a limit $f$; define $f = 0$ on $N$.
-        :::
-    <2>2. $f$ is measurable and bounded a.e.: $f \in L^\infty$.
-        ::: {.proof}
-        $f$ is the pointwise limit of measurable functions (measurable); off $N$, $|f| \le \|f_{k_1}\|_\infty + \sum_j 2^{-j} < \infty$.
-        :::
-    <2>3. $\|f_k - f\|_\infty \to 0$.
-        ::: {.proof}
-        $\|f_k - f\|_\infty \le \|f_k - f_{k_j}\|_\infty + \|f_{k_j} - f\|_\infty$; both terms $\to 0$ (Cauchy data; uniform convergence on $X \setminus N$ gives the second).
-        :::
+::: {.proof}
+By step <1>1, $\|f\|_\infty = 0$ if and only if $f = 0$ a.e. $|\lambda f| \le M$ a.e. if and only if $|f| \le M/|\lambda|$ a.e., for $\lambda \neq 0$, so $\|\lambda f\|_\infty = |\lambda|\,\|f\|_\infty$. By step <1>1, $|f + g| \le \|f\|_\infty + \|g\|_\infty$ off the union of two null sets, so $\|f + g\|_\infty \le \|f\|_\infty + \|g\|_\infty$.
+:::
 
-<1>4. (b) For measurable $f$: $L^1 \cap L^\infty \subseteq L^2$ and $\|f\|_2 \le \|f\|_1^{1/2}\|f\|_\infty^{1/2}$.
-    ::: {.proof}
-    $\int |f|^2 = \int |f|^{1/2}|f|^{3/2}$-split... cleanly: $|f|^2 = |f| \cdot |f| \le |f|\cdot\|f\|_\infty$ a.e. (where $|f| \le \|f\|_\infty$ a.e.), so $\int |f|^2 \le \|f\|_\infty\int|f| = \|f\|_\infty\|f\|_1$; taking square roots gives $\|f\|_2 \le \|f\|_1^{1/2}\|f\|_\infty^{1/2}$.
-    :::
+<1>3. $L^\infty$ is complete.
+
+::: {.proof}
+Let $(f_k)$ be Cauchy in $L^\infty$. By step <1>1 there is a null set $N_{k,l}$ off which $|f_k - f_l| \le \|f_k - f_l\|_\infty$; let $N = \bigcup_{k,l}N_{k,l}$, a null set. Off $N$, $(f_k)$ is uniformly Cauchy, so it converges uniformly there to a measurable $f$; put $f = 0$ on $N$. Given $\eps > 0$ choose $K$ with $\|f_k - f_l\|_\infty < \eps$ for $k, l \ge K$. Letting $l \to \infty$ gives $|f_k - f| \le \eps$ off $N$ for $k \geq K$. So $f = (f - f_K) + f_K \in L^\infty$ and $\|f_k - f\|_\infty \le \eps$ for $k \ge K$.
+:::
+
+<1>4. If $f \in L^1 \cap L^\infty$, then $\|f\|_2 \le \|f\|_1^{1/2}\|f\|_\infty^{1/2}$; in particular $f \in L^2$.
+
+::: {.proof}
+By step <1>1, $|f|^2 \le \|f\|_\infty|f|$ a.e., so $\int|f|^2 \le \|f\|_\infty\|f\|_1$.
+:::
 :::
