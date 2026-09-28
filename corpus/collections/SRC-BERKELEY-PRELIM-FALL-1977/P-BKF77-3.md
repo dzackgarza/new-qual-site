@@ -61,7 +61,7 @@ $$
 $$
 :::
 
-<1>2. Reduce the converse to one Jordan block.
+<1>2. If $T=SJS^{-1}$ with $J$ in Jordan form, then $T^k\to0$ as soon as $J_\lambda^k\to0$ for every Jordan block $J_\lambda$ of $J$.
 ::: {.proof}
 Assume every eigenvalue of $T$ has absolute value less than $1$. Over
 $\mathbb C$, write
@@ -123,7 +123,7 @@ J_\lambda^k\longrightarrow0.
 $$
 :::
 
-<1>4. Conclude for $T$.
+<1>4. If every eigenvalue of $T$ has absolute value less than $1$, then $T^k\to0$.
 ::: {.proof}
 Every Jordan block of $J$ has powers tending to zero by step <1>3, so
 $$
