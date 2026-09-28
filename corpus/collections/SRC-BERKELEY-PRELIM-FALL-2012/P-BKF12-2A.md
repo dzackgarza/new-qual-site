@@ -109,7 +109,7 @@ $$
 <1>4. The assertion in the problem is false.
 
 ::: {.proof}
-Steps <1>2 and <1>3 show that the function above maps every closed
+Steps <1>2 and <1>3 show that $f$ maps every closed
 interval to a bounded closed interval, while step <1>1 shows that it
 is not continuous. Therefore
 $$
