@@ -54,11 +54,7 @@ If the hyperplane section is special and $C$ is not planar, then $d \geq 6$ and 
 :::
 
 ::: {.remark}
-The useful way to organise this is by the speciality of $\OO_C(1)$.
-Nonspecial hyperplane sections are the generic, well-understood case and are governed entirely by the degree bound $d \geq g+3$.
-The special ones are rare, start at degree $6$, and are where the named curves sit.
-
-Two curves with the same $(d,g)$ can be genuinely different: degree $9$ and genus $10$ admits both the complete intersection of two cubics and the type-$(3,6)$ curve on a quadric.
-They are distinguished by $h^0(\mci_C(2))$, which is $0$ for the first and $1$ for the second, and semicontinuity shows neither degenerates to the other.
-Whether $\dim M^d_g$ is even known in general is a fair thing to admit: it is not.
+Two curves in $\PP^3$ with the same $(d,g)$ need not be deformations of each other: for degree $9$ and genus $10$ there are complete intersections of two cubics and curves of type $(3,6)$ on a smooth quadric.
+They are distinguished by $h^0(\mci_C(2))$, which is $0$ for the first and $1$ for the second.
+By upper semicontinuity of $h^0(\mci_C(2))$ in flat families, a complete intersection of two cubics is not a flat limit of curves of type $(3,6)$.
 :::
