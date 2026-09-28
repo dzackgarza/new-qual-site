@@ -27,8 +27,8 @@ Which groups admit sharply $k$-transitive actions for large values of $k$?
 
 ::: {.solution}
 For finite permutation groups, the sharply $k$-transitive groups with $k\ge4$
-are the expected symmetric and alternating actions together with two Mathieu
-exceptions.
+are the natural actions of symmetric and alternating groups together with
+the Mathieu groups $M_{11}$ and $M_{12}$.
 
 More precisely, if $G\le S_n$ acts sharply $k$-transitively and $k\ge4$, then
 one of the following holds:
