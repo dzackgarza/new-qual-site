@@ -41,7 +41,7 @@ Since $\Omega$ is connected and $U$ is nonempty, $U=\Omega$ and $f\equiv 0$.
 
 :::
 
-::: {.example title="The hypotheses are necessary"}
+::: {.example title="A limit point outside the domain, and a disconnected domain"}
 The function $\sin(1/z)$ on $\CC\sm\ts{0}$ vanishes at the distinct points $1/(k\pi) \to 0$ and is not identically zero; the limit point $0$ is not in the domain.
 On the disconnected open set $\DD\cup D_1(3)$, the function equal to $0$ on $\DD$ and to $1$ on $D_1(3)$ is holomorphic, vanishes on $\DD$, and is not identically zero.
 
