@@ -10,7 +10,6 @@ topics:
 
 # Removable singularities, poles, essential singularities
 
-Removable singularities, zeros, poles, and essential singularities of holomorphic functions.
 Criteria for the type of an isolated singularity are on [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]].
 
 [[D-VAXQT]]
@@ -88,11 +87,6 @@ Compactness of $K$ inside $\Omega$ is needed: $\sin\bigl(\pi/(1-z)\bigr)$ is hol
 :::
 
 [[PR-5A64G]]
-
-::: {.remark}
-If $z_0$ is a zero of order $n$ of $f$, then $f$ vanishes to order $n$ at $z_0$.
-
-:::
 
 ::: {.proof title="Existence and uniqueness of the order"}
 Assume $z_0 = 0$.
