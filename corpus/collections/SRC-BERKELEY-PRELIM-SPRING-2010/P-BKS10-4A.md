@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(A,B\) be real \(n\times n\) matrices such that
-\[
+Let $A,B$ be real $n\times n$ matrices such that
+$$
 A^3=B^5=I_n,\qquad AB=BA.
-\]
-Show that \(A+B\) is invertible.
+$$
+Show that $A+B$ is invertible.
 :::
 
 ::: {.solution}
