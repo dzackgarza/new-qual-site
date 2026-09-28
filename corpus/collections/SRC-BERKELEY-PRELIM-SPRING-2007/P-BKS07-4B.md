@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-4B
 kind: problem
-title: UC Berkeley Spring 2007 prelim 4B
+title: A finite-dimensional differentiation-stable space of entire functions contains a nowhere-vanishing function
 classification:
   areas: [prelim]
   topics: []
