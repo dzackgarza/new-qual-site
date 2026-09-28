@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FCYUM
 kind: problem
-title: 'Computing residues: $1/z^2\sin(z)$'
+title: $\Res_{z=0}\frac{1}{z^2\sin z}$
 classification:
   areas:
   - complex-analysis
