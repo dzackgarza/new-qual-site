@@ -64,7 +64,9 @@ With $\varphi_\epsilon$ as in the hint, $f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\
 <1>3. (b) If $\int_\gamma f\,dz=0$ for all translates and dilates $\gamma$ of a toy contour $\Gamma$, then $f$ is holomorphic.
 
 ::: {.proof}
-If $\int_\gamma f\,dz=0$ for every $\gamma\in\mathcal F$, then the same holds for each translate and dilate of $\Gamma$ and therefore for the circles used in the mollifier argument, and the approximation in step <1>2 applies.
+Since $\mathcal F$ is closed under translation, the Fubini argument of step <1>2 shows that each $f_\epsilon$ also satisfies $\int_\gamma f_\epsilon\,dz=0$ for all $\gamma\in\mathcal F$; so, as in step <1>2, it suffices to treat smooth $f$. For smooth $f$, Green's theorem on the interior $U$ of $\Gamma$, which has positive area $\abs U$, gives for $\gamma=z_0+\delta\Gamma$
+$$0=\int_\gamma f\,dz=\pm2i\iint_{z_0+\delta U}\frac{\partial f}{\partial\overline z}\,dA=\pm2i\,\delta^2\iint_U\frac{\partial f}{\partial\overline z}(z_0+\delta w)\,dA(w),$$
+the sign depending on the orientation of $\Gamma$. Dividing by $\delta^2$ and letting $\delta\to0$ gives $\abs U\,\frac{\partial f}{\partial\overline z}(z_0)=0$. Hence $\partial f/\partial\overline z=0$ everywhere and $f$ is holomorphic.
 :::
 
 <1>4. Morera's theorem holds when $\int_T f\,dz=0$ is assumed only for equilateral triangles $T$.
