@@ -85,7 +85,7 @@ By <1>2, $r\ge1$, so $\chi(S)\ge0$.
 \[
 S^2,
 \qquad
-\mathbb{RP}^2,
+\RP^2,
 \qquad
 T^2,
 \qquad
@@ -111,7 +111,7 @@ The condition $\chi\ge0$ gives
 \[
 k=1\quad\text{or}\quad k=2,
 \]
-namely $\mathbb{RP}^2$ and the Klein bottle.
+namely $\RP^2$ and the Klein bottle.
 No other closed connected surface has nonnegative Euler characteristic.
 :::
 
@@ -134,9 +134,9 @@ Indeed, its Euler characteristic is
 \]
 :::
 
-<1>6. The projective plane $\mathbb{RP}^2$ admits such a decomposition with two $2$-cells.
+<1>6. The projective plane $\RP^2$ admits such a decomposition with two $2$-cells.
 ::: {.proof}
-Start with the standard polygon model of $\mathbb{RP}^2$ as a $2$-gon whose boundary word is
+Start with the standard polygon model of $\RP^2$ as a $2$-gon whose boundary word is
 \[
 aa.
 \]
@@ -145,7 +145,7 @@ Its two polygon vertices are identified to one vertex, and the two boundary side
 Inside the polygon add an arc $b$ joining the two vertices.
 After the vertex identification, the interior of this arc is a second $1$-cell whose two endpoints are the unique vertex.
 The arc divides the polygon into two disks, which become two $2$-cells after the quotient.
-This is merely a subdivision of the standard polygon model, so the quotient is still $\mathbb{RP}^2$.
+This is merely a subdivision of the standard polygon model, so the quotient is still $\RP^2$.
 Thus
 \[
 (c_0,c_1,c_2)=(1,2,2).
@@ -180,7 +180,7 @@ Thus
 
 <1>9. Therefore the complete list is
 \[
-\boxed{S^2,\ \mathbb{RP}^2,\ T^2,\ \text{and the Klein bottle}.}
+\boxed{S^2,\ \RP^2,\ T^2,\ \text{and the Klein bottle}.}
 \]
 ::: {.proof}
 Necessity follows from <1>3--<1>4, and <1>5--<1>8 explicitly realize every surface on the list.
