@@ -27,75 +27,32 @@ audit:
 
 ::: {.problem}
 Let $X$ be a topological space and let
-\[
-\Delta = \theset{(x, y) \in X \times X \mid x = y}
-.\]
+$$\Delta = \theset{(x, y) \in X \times X \mid x = y}.$$
 
 Show that $X$ is a Hausdorff space if and only if $\Delta$ is closed in $X \times X$.
-
 :::
 
 ::: {.solution}
 <1>1. If $X$ is Hausdorff, then $\Delta$ is closed in $X\times X$.
+
 ::: {.proof}
-It is enough to show that
-\[
-(X\times X)\setminus\Delta
-\]
-is open.
-Let
-\[
-(x,y)\in (X\times X)\setminus\Delta.
-\]
-Then $x\ne y$.
-Because $X$ is Hausdorff, there are disjoint open neighborhoods $U,V\subseteq X$ with
-\[
-x\in U,
-\qquad
-y\in V.
-\]
-The set $U\times V$ is an open neighborhood of $(x,y)$ in the product topology.
-Moreover,
-\[
-(U\times V)\cap\Delta=\emptyset:
-\]
-if $(z,z)\in U\times V$, then $z\in U\cap V$, contradicting $U\cap V=\emptyset$.
-Thus every point of $(X\times X)\setminus\Delta$ has an open neighborhood contained in that complement, so the complement is open and $\Delta$ is closed.
+Let $(x,y)\notin\Delta$, so $x\neq y$.
+Choose disjoint open $U\ni x$ and $V\ni y$.
+Then $U\times V$ is an open neighborhood of $(x,y)$, and it misses $\Delta$: if $(z,z)\in U\times V$, then $z\in U\cap V=\varnothing$.
+So $(X\times X)\setminus\Delta$ is open.
 :::
 
 <1>2. If $\Delta$ is closed in $X\times X$, then $X$ is Hausdorff.
+
 ::: {.proof}
-Let $x,y\in X$ with $x\ne y$.
-Then
-\[
-(x,y)\in (X\times X)\setminus\Delta.
-\]
-Since $\Delta$ is closed, its complement is open.
-By the basis defining the product topology, there are open sets $U,V\subseteq X$ such that
-\[
-x\in U,
-\qquad
-y\in V,
-\qquad
-U\times V\subseteq (X\times X)\setminus\Delta.
-\]
-We claim that $U\cap V=\emptyset$.
-Indeed, if $z\in U\cap V$, then
-\[
-(z,z)\in U\times V,
-\]
-while $(z,z)\in\Delta$, contradicting the displayed containment.
-Hence $U$ and $V$ are disjoint open neighborhoods of $x$ and $y$.
-Therefore $X$ is Hausdorff.
+Let $x\neq y$.
+Then $(x,y)$ lies in the open set $(X\times X)\setminus\Delta$, so there are open $U\ni x$ and $V\ni y$ with $U\times V\subseteq(X\times X)\setminus\Delta$.
+If $z\in U\cap V$, then $(z,z)\in(U\times V)\cap\Delta=\varnothing$; so $U\cap V=\varnothing$.
 :::
 
-<1>3. Hence
-\[
-X\text{ is Hausdorff}
-\quad\Longleftrightarrow\quad
-\Delta\text{ is closed in }X\times X.
-\]
+<1>3. Q.E.D.
+
 ::: {.proof}
-Combine <1>1 and <1>2.
+Steps <1>1 and <1>2 give the two implications.
 :::
 :::
