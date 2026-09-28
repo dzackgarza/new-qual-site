@@ -40,7 +40,7 @@ on $V$, so
 g_1=g_2.
 \]
 
-Likewise, if two analytic continuations are defined on different domains, they agree on every connected component of their overlap that contains an open set on which both descend from the same previous branch.
+Likewise, if $g_1$ on $V_1$ and $g_2$ on $V_2$ are holomorphic, they agree on every connected component of $V_1\cap V_2$ that contains a nonempty open set on which $g_1=g_2$.
 
-This is the precise uniqueness statement. Analytic continuation along different paths need not give a single global branch on a nonsimply connected domain; that stronger path-independence statement requires an additional monodromy hypothesis.
+Continuation along different paths can give different values: continuing a branch of $\log z$ once around $0$ changes it by $2\pi i$. By the monodromy theorem, if a germ of $f$ continues along every path in a simply connected domain $D$, then the continuations define a single holomorphic function on $D$.
 :::
