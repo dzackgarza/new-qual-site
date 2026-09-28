@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-9
 kind: problem
-title: "SS 1.9: The Cauchy-Riemann equations in polar coordinates"
+title: The Cauchy-Riemann equations in polar coordinates
 classification:
   areas:
   - complex-analysis
