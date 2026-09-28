@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-20
 kind: problem
-title: Eigenvalue of a Hermitian 2-by-2 matrix
+title: Eigenvalue of a Hermitian $2\times2$ matrix
 classification:
   areas:
   - applied-algebra
