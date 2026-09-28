@@ -22,7 +22,7 @@ review: draft
 
 
 ::: {.solution}
-Extend to $\int_\RR$ using that $f$ is even.
+The integrand $\frac{\cos x}{x^2+b^2}$ is even, so the integral is half of $\int_\RR\frac{\cos x}{x^2+b^2}\,dx$.
 
 ![](../../assets/figures/2021-07-29_18-42-38.png)
 :::
