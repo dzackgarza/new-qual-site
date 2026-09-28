@@ -25,8 +25,10 @@ Prove that
 ::: {.solution}
 
 
+For $a\in\DD$, let $\psi_a(z)\coloneqq{a-z\over1-\bar az}$, an automorphism of $\DD$ with $\psi_a(0)=a$, $\psi_a(a)=0$ and $\psi_a\inv=\psi_a$.
+
 ::: {.claim}
-Holomorphic maps on $\DD$ contract Blaschke factors:
+For $z,w\in\DD$,
 \[
 \abs{ \psi_w(z) } \geq \abs{\psi_{f(w)}(f(z)) } 
 ,\]
@@ -50,7 +52,7 @@ Moreover $\abs{F(z)}\leq 1$ since each constituent is a map $\DD\to \DD$.
 So $F$ satisfies Schwarz and the claim follows.
 :::
 
-Given this, there's just a clever rearrangement to obtain the stated result:
+Dividing the claim by $\abs{z-w}$ for $z\neq w$:
 \[
 \abs{f(w) - f(z) \over 1 - \bar{f(w)}f(z)} 
 &\leq \abs{w-z \over 1-\bar{w} z} \\
