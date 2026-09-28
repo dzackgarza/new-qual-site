@@ -38,16 +38,6 @@ What is
 \]
 :::
 
-::: {.remark}
-A $k$-algebra structure gives a map $k\to R$, not an
-$R$-module structure on $k$. The specified augmentation
-$\varepsilon:R\to k$ is needed for the second question;
-such a map need not exist. Also, Krull dimension zero does
-not imply finite dimension over $k$. The rank-one assertion
-below requires finite $k$-dimension, while the adjunction
-and the computation of the displayed Hom do not.
-:::
-
 ::: {.solution}
 Put $D=\operatorname{Hom}_k(R,k)$ with action
 $(r\varphi)(s)=\varphi(rs)$. In general, $D$ is an
@@ -227,8 +217,8 @@ D\cong\bigoplus_{i=1}^t\operatorname{Hom}_k(A_i,k)
 \cong\bigoplus_{i=1}^t A_i\cong R,
 $$
 where the middle isomorphism is step <1>4. These
-isomorphisms require choices of generators of the dual
-modules; no canonical generator is asserted.
+isomorphisms depend on a choice of generator of each
+$A_i$-module $\operatorname{Hom}_k(A_i,k)$.
 :::
 
 <1>6. In the finite-dimensional local case with residue field
@@ -248,8 +238,9 @@ of $D$ meets its image. Since $D$ is injective, this is
 an injective hull, by the definition of an injective hull.
 :::
 
-<1>7. Finite $k$-dimension and the augmentation cannot be
-silently inferred from the original dimension hypothesis.
+<1>7. For $k=\mathbb F_2$ and $R=k(t)$, the ring $R$ is a
+zero-dimensional Gorenstein $k$-algebra with $D\not\cong R$
+and with no $k$-algebra homomorphism $R\to k$.
 
 ::: {.proof}
 Take $k=\mathbb F_2$ and $R=k(t)$ with $t$ transcendental.
@@ -267,9 +258,15 @@ and in particular $D\not\cong R$ as $R$-modules.
 There is no $k$-algebra map $k(t)\to k$. Such a map would
 send $t$ to some $a\in k$ and send the invertible element
 $t-a$ to zero, impossible for a unital homomorphism.
-Hence the second Hom expression is not defined without
-additional action data. With the action specified in the
-question, step <1>3 always computes it, and steps <1>4–<1>6
-give the full finite-dimensional interpretation.
 :::
+:::
+
+::: {.remark}
+A $k$-algebra structure on $R$ is a ring map $k\to R$; an
+$R$-module structure on $k$ is the extra datum of the
+augmentation $\varepsilon$, which step <1>7 shows need not
+exist. Krull dimension zero does not imply
+$\dim_kR<\infty$. The isomorphism $D\cong R$ of steps
+<1>4 and <1>5 uses $\dim_kR<\infty$; steps <1>1--<1>3 hold
+for every $k$-algebra $R$.
 :::
