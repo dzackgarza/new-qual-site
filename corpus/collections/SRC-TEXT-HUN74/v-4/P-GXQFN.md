@@ -96,8 +96,8 @@ identity and three double transpositions, so it contains none either. The group
 $A_4$ contains only even permutations and hence no transposition.
 
 The dihedral subgroup $D_4$ contains reflections across diagonals of the square;
-in the action on its four vertices these are transpositions. Of course $S_4$
-also contains transpositions.
+in the action on its four vertices these are transpositions. The group $S_4$
+contains every transposition.
 :::
 
 <1>5. Therefore
