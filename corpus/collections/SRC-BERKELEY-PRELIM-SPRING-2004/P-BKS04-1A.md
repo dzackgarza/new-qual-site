@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-1A
 kind: problem
-title: UC Berkeley Spring 2004 prelim 1A
+title: Locally uniform convergence on $[a,b]$ is uniform
 classification:
   areas: [prelim]
   topics: []
