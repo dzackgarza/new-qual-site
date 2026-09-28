@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-7B
 kind: problem
-title: Compute a high power of a three-by-three matrix
+title: $A^{16}$ for a $3\times3$ matrix with eigenvalues $0$, $2$, $3$
 classification:
   areas:
   - prelim
@@ -25,14 +25,14 @@ audit:
 
 ::: {.problem}
 Let
-\[
+$$
 A=\begin{pmatrix}
 \frac52&0&-\frac12\\
 0&3&0\\
 \frac52&0&-\frac12
 \end{pmatrix}.
-\]
-Calculate \(A^{16}\). You may give your answer as a polynomial in \(A\) of degree at most \(2\).
+$$
+Calculate $A^{16}$. You may give your answer as a polynomial in $A$ of degree at most $2$.
 :::
 
 ::: {.solution}
