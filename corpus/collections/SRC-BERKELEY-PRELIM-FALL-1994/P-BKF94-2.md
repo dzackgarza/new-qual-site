@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF94-2
 kind: problem
-title: Signs of the eigenvalues of a nearly rank-one matrix
+title: Signs of the eigenvalues of a symmetric $3\times3$ matrix with equal first and third rows
 classification:
   areas:
   - prelim
