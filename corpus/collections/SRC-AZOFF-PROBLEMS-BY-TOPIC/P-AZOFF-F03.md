@@ -31,7 +31,7 @@ Find the Laurent expansions of $\frac { z + 1 } { z ( z - 1 ) ^ { 2 } }$ about
 
 a) $z = 0$
 
-b) $\mathbf { Z } { = } 1$
+b) $z = 1$
 
 Hint: Recall that power series can be differentiated.
 :::
