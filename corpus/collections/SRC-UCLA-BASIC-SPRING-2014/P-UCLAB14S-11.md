@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB14S-11
 kind: problem
-title: Compactness in the uniform topology implies Arzelà–Ascoli hypotheses
+title: Sequential compactness in $C[0,1]$ implies uniform boundedness and equicontinuity
 classification:
   areas:
   - prelim
