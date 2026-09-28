@@ -23,33 +23,25 @@ Prove that $\Hom(\ZZ^s, \QQ)$ is isomorphic as a $\QQ$-vector space to $\QQ^s$, 
 :::
 
 ::: {.solution}
-<1>1. Define $\Phi: \Hom(\ZZ^s, \QQ) \to \QQ^s$ by $\Phi(f) = (f(e_1), \ldots, f(e_s))$.
+Let $e_1, \ldots, e_s$ be the standard basis of $\ZZ^s$, and define $\Phi\colon \Hom(\ZZ^s, \QQ) \to \QQ^s$ by $\Phi(f) = (f(e_1), \ldots, f(e_s))$.
+
+<1>1. $\Phi$ is $\QQ$-linear.
 ::: {.proof}
-definition.
+Addition and rational scalar multiplication of homomorphisms are pointwise, so $\Phi(f + g) = (f(e_1) + g(e_1), \ldots, f(e_s) + g(e_s)) = \Phi(f) + \Phi(g)$ and $\Phi(qf) = (qf(e_1), \ldots, qf(e_s)) = q\Phi(f)$ for $q \in \QQ$.
 :::
 
-<1>2. $\Phi$ is $\QQ$-linear.
+<1>2. $\Phi$ is injective.
 ::: {.proof}
-$\Phi(f + g) = ((f+g)(e_1), \ldots) = (f(e_1) + g(e_1), \ldots) = \Phi(f) + \Phi(g)$, and $\Phi(qf) = (qf(e_1), \ldots) = q\Phi(f)$ for $q \in \QQ$.
+If $\Phi(f) = 0$, then $f(e_i) = 0$ for all $i$; since $e_1, \ldots, e_s$ generate $\ZZ^s$, $f = 0$.
 :::
 
-<1>3. $\Phi$ is injective.
+<1>3. $\Phi$ is surjective.
 ::: {.proof}
-if $\Phi(f) = 0$, then $f(e_i) = 0$ for all $i$; since $\{e_1, \ldots, e_s\}$ generates $\ZZ^s$, $f = 0$.
+Given $(q_1, \ldots, q_s) \in \QQ^s$, define $f\colon \ZZ^s \to \QQ$ by $f(\sum_i n_i e_i) = \sum_i n_i q_i$. Since $e_1, \ldots, e_s$ is a basis, $f$ is a well-defined homomorphism, and $\Phi(f) = (q_1, \ldots, q_s)$.
 :::
 
-<1>4. $\Phi$ is surjective.
+<1>4. Q.E.D.
 ::: {.proof}
-given $(q_1, \ldots, q_s) \in \QQ^s$, define $f: \ZZ^s \to \QQ$ by $f(\sum_i n_i e_i) = \sum_i n_i q_i$; this is a well-defined homomorphism with $\Phi(f) = (q_1, \ldots, q_s)$.
-:::
-
-<1>5. Hence $\Phi$ is a $\QQ$-linear isomorphism $\Hom(\ZZ^s, \QQ) \cong \QQ^s$.
-::: {.proof}
-<1>2–<1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+By steps <1>1--<1>3, $\Phi$ is a $\QQ$-linear isomorphism $\Hom(\ZZ^s, \QQ) \cong \QQ^s$.
 :::
 :::
