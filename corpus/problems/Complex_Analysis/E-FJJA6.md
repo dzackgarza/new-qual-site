@@ -23,11 +23,11 @@ I \da \int_0^\infty {\log(x) \over 1+x^2}\dx = 0
 :::
 
 ::: {.solution}
-Noting the partial $\zeta_2 = -1$ symmetry, take a branch cut for $\log$ along $\theta = -\pi/2$ and the following semicircular contour:^[Semicircle, real reduction trick.]
+The integrand $1/(1+x^2)$ is even, so the negative real axis contributes $I$ plus a multiple of $\int_0^\infty dx/(1+x^2)$. Take a branch cut for $\log$ along $\theta = -\pi/2$ and the upper semicircle of radius $R$ indented at $0$ by a semicircle of radius $\eps$:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-21-05.png)
 
-Since $f(z) \da {\log(z) \over z^2 + 1}$ goes to zero as $\abs{R}\to \infty$ and $\eps\to 0$, only the horizontal contours will contribute.
+For $f(z) \da {\log(z) \over z^2 + 1}$, the large arc contributes $O\qty{(\log R)/R}$ and the small arc $O\qty{\eps\abs{\log\eps}}$, so only the horizontal contours contribute as $R\to \infty$ and $\eps\to 0$.
 Parameterize, oriented counterclockwise:
 
 - $\gamma_1 \da \ts{t+0i \st t\in [\eps, R]}$
@@ -52,9 +52,9 @@ Note that there are two simple poles at $\pm i$, so only the residue at $z_0=i$ 
 ,\]
 so by the residue theorem,
 \[
-2\pi i \Res_{z=i}f(z) = \int_{\Gamma}f(z) \dz = \qty{ \int_{\gamma_1} + \int{\gamma_2}}f = 2I + {i\pi^2 \over 2} \\
-\implies 2\pi i \cdot {\pi \over 4} = I + {i\pi^2\over 2} \\
-\implies {i\pi^2\over 4} = I + {i\pi^2\over 4} \\
+2\pi i \Res_{z=i}f(z) = \lim\int_{\Gamma}f(z) \dz = \lim\qty{ \int_{\gamma_1} + \int_{\gamma_2}}f = 2I + {i\pi^2 \over 2} \\
+\implies 2\pi i \cdot {\pi \over 4} = 2I + {i\pi^2\over 2} \\
+\implies {i\pi^2\over 2} = 2I + {i\pi^2\over 2} \\
 \implies I = 0
 .\]
 
