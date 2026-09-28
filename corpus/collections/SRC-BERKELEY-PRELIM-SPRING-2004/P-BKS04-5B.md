@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-5B
 kind: problem
-title: UC Berkeley Spring 2004 prelim 5B
+title: A finite group with pairwise noncommuting elements of prescribed orders
 classification:
   areas: [prelim]
   topics: []
@@ -20,12 +20,12 @@ audit:
 ---
 
 ::: {.problem}
-Let $n _ { 1 } , \ldots , n _ { r }$ be integers $\geq 2$ . Prove that there is a finite group G containing elements $g _ { 1 } , \ldots , g _ { r }$ such that $g _ { i }$ has exact order $n _ { i }$ for each $i ,$ and $g _ { i } g _ { j } \neq g _ { j } g _ { i }$ for $i \neq j$
+Let $n_1,\ldots,n_r$ be integers $\geq2$. Prove that there is a finite group $G$ containing elements $g_1,\ldots,g_r$ such that $g_i$ has exact order $n_i$ for each $i$, and $g_ig_j\neq g_jg_i$ for $i\neq j$.
 :::
 
 ::: {.solution}
-Let $T _ { 1 } , \ldots , T _ { r }$ be disjoint sets with $\# T _ { i } = n _ { i } - 1$ . Let S be the union of the $T _ { i }$ together with one more element x outside all the $T _ { i }$ . Let G be the set of permutations of S.
+Let $T_1,\ldots,T_r$ be disjoint sets with $\#T_i=n_i-1$. Let $S$ be the union of the $T_i$ together with one more element $x$ outside all the $T_i$. Let $G$ be the set of permutations of $S$.
 
-Choose $g _ { i } \in G$ such that $g _ { i }$ acts as an $n _ { i } { \mathrm { - } } \mathrm { C y }$ cle on $T _ { i } \cup \{ x \}$ , and acts as the identity on the complement.
-Then $g _ { i }$ has order $n _ { i }$ . If $i \neq j$ , then $( g _ { i } g _ { j } ) ( x ) = g _ { i } ( g _ { j } ( x ) ) \in g _ { i } ( T _ { j } ) = T _ { j }$ , and similarly $( g _ { j } g _ { i } ) ( x ) \in T _ { i }$ , so $g _ { i } g _ { j } \neq g _ { j } g _ { i }$ .
+Choose $g_i\in G$ such that $g_i$ acts as an $n_i$-cycle on $T_i\cup\{x\}$, and acts as the identity on the complement.
+Then $g_i$ has order $n_i$. If $i\neq j$, then $(g_ig_j)(x)=g_i(g_j(x))\in g_i(T_j)=T_j$, and similarly $(g_jg_i)(x)\in T_i$, so $g_ig_j\neq g_jg_i$.
 :::
