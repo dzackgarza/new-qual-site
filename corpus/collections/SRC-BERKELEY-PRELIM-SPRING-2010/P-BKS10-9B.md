@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-9B
 kind: problem
-title: A binomial Ramsey bound by induction
+title: Ramsey bound $R(m+1,n+1)\le\binom{m+n}{m}$
 classification:
   areas:
   - prelim
@@ -25,18 +25,15 @@ audit:
 
 ::: {.problem}
 Prove that if every edge of the complete graph on
-\[
+$$
 \binom{m+n}{m}
-\]
-vertices is colored red or blue, then there is either a complete red subgraph on \(m+1\) vertices or a complete blue subgraph on \(n+1\) vertices.
+$$
+vertices is colored red or blue, then there is either a complete red subgraph on $m+1$ vertices or a complete blue subgraph on $n+1$ vertices.
 
-Hint: choose a vertex, partition the remaining vertices according to the color of their edge to it, and induct on \(m+n\).
+Hint: choose a vertex, partition the remaining vertices according to the color of their edge to it, and induct on $m+n$.
 :::
 
 ::: {.solution}
-The argument proves the statement for all nonnegative integers $m,n$; in
-particular it proves the stated positive-parameter case.
-
 <1>1. If $m=0$ or $n=0$, the assertion holds.
 
 ::: {.proof}
