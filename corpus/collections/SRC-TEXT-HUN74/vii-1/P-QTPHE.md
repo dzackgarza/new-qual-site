@@ -99,13 +99,13 @@ If
 \[
 B=PAQ
 \qquad\text{and}\qquad
-C=RBS,
+C=UBV,
 \]
-with all four change-of-basis matrices invertible, then
+with $P,U\in\operatorname{GL}_m(R)$ and $Q,V\in\operatorname{GL}_n(R)$, then
 \[
-C=(RP)A(QS).
+C=(UP)A(QV).
 \]
-Both $RP\in\operatorname{GL}_m(R)$ and $QS\in\operatorname{GL}_n(R)$, so
+Both $UP\in\operatorname{GL}_m(R)$ and $QV\in\operatorname{GL}_n(R)$, so
 $C$ is equivalent to $A$.
 :::
 
