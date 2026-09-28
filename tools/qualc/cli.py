@@ -73,11 +73,6 @@ def _publication_references(root: Path, known: set[str]) -> list[Diagnostic]:
     ]
 
 
-# Pinned: the index the browser reads and the reader that reads it ship
-# together, and an unpinned build would change one of them without the other.
-PAGEFIND = "pagefind@1.5.2"
-
-
 def build_search_index(site: Path) -> None:
     """Index the emitted pages, so a reader downloads a query and not a corpus.
 
@@ -85,8 +80,12 @@ def build_search_index(site: Path) -> None:
     search fetches a shard and the pages it shows, rather than every record.
     The pages it indexes are the ones carrying `data-pagefind-body`, which the
     shell puts on the documents and withholds from the listings.
+
+    The binary is the `pagefind[bin]` project dependency, pinned in
+    pyproject.toml: the index the browser reads and the reader that reads it
+    ship together.
     """
-    subprocess.run(["bunx", "--bun", PAGEFIND, "--site", str(site)], check=True)
+    subprocess.run([sys.executable, "-m", "pagefind", "--site", str(site)], check=True)
 
 
 def build_catalog(root: Path, parsed: list[ParsedCard]) -> Path:

@@ -9,7 +9,6 @@ import io
 import json
 import os
 import platform
-import socket
 import subprocess
 import tarfile
 import tempfile
@@ -20,6 +19,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from types import TracebackType
 from typing import Self
+
+import psutil
 
 BATCH_SIZE = 256
 PARALLEL_WORKERS = min(8, os.cpu_count() or 1)
@@ -144,10 +145,12 @@ def write_html_parallel(
     return _parallel_results(partitions, results, workers)
 
 
-def _free_port() -> int:
-    with socket.socket() as listener:
-        listener.bind(("127.0.0.1", 0))
-        return int(listener.getsockname()[1])
+def _listening_port(pid: int) -> int | None:
+    """The TCP port the process listens on, once it has bound one."""
+    for connection in psutil.Process(pid).net_connections(kind="tcp"):
+        if connection.status == psutil.CONN_LISTEN:
+            return int(connection.laddr.port)
+    return None
 
 
 # The one Pandoc the compiler runs, pinned by release and digest. Pandoc 3.6 put
@@ -202,9 +205,11 @@ class PandocServer:
             check=True,
             capture_output=True,
         ).stdout
-        port = _free_port()
+        # Port 0: the kernel assigns a free port in the server's own bind. A
+        # port chosen here and released for the server to bind can be handed
+        # to a concurrent build in between.
         process = subprocess.Popen(
-            [pandoc, "server", "--port", str(port), "--timeout", "30"],
+            [pandoc, "server", "--port", "0", "--timeout", "30"],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             text=True,
@@ -214,12 +219,12 @@ class PandocServer:
             if returncode is not None:
                 stderr = process.stderr.read() if process.stderr is not None else ""
                 raise PandocBatchError(f"pandoc server exited during startup ({returncode}): {stderr.strip()}")
-            with socket.socket() as probe:
-                if probe.connect_ex(("127.0.0.1", port)) == 0:
-                    self._process = process
-                    self._port = port
-                    self._abbreviations = base64.b64encode(abbreviations).decode()
-                    return self
+            port = _listening_port(process.pid)
+            if port is not None:
+                self._process = process
+                self._port = port
+                self._abbreviations = base64.b64encode(abbreviations).decode()
+                return self
             time.sleep(SERVER_START_INTERVAL_SECONDS)
         process.terminate()
         process.wait()
