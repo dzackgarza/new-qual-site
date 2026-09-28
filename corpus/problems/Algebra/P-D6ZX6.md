@@ -31,6 +31,5 @@ Maximal $\implies$ prime, but generally not the converse.
   but $am\in \mm$ and $ab\in \mm \implies a\in \mm$.
 
 
-*Counterexample*: 
-$(0) \in \ZZ$ is prime since $\ZZ$ is a domain, but not maximal since it is properly contained in any other ideal.
+The ideal $(0) \subset \ZZ$ is prime since $\ZZ$ is a domain, but not maximal since $(0) \subsetneq (2) \subsetneq \ZZ$.
 :::
