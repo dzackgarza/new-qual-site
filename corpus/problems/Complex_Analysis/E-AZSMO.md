@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AZSMO
 kind: problem
-title: Sublinear growth
+title: An entire function with $f(z)/z\to0$ is constant
 classification:
   areas:
   - complex-analysis
