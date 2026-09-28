@@ -73,5 +73,5 @@ source:
 ---
 
 ::: {.remark}
-The 50 Calculus I review questions of Chapter 2 of *Cracking the GRE Mathematics Subject Test*.
+The fifty Calculus I review questions of Chapter 2, in the chapter's numbering and order.
 :::
