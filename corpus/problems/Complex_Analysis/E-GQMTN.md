@@ -29,6 +29,6 @@ Moreover it is bounded on $\CC$, since
 \abs{g(z)} \leq {1\over \abs{z} + 1} \leq 1
 ,\]
 so $g\equiv c$ is constant by Liouville.
-This means $f\equiv c$ is constant, but $\lim_{z\to \infty}g(z) = 0$ forces $c=\infty$, so there are no such entire functions.
+Since $\abs{g(z)}\le 1/(\abs z+1)\to0$ as $\abs z\to\infty$, $c=0$, which contradicts $g=1/f$ having no zeros. So there are no such entire functions.
 :::
 
