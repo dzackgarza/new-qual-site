@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-12
 kind: problem
-title: Count abelian groups of order p2q4
+title: Abelian groups of order $p^2q^4$
 classification:
   areas:
   - algebra
