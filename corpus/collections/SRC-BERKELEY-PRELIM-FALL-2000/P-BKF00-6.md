@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF00-6
 kind: problem
-title: Endomorphisms finite-dimensional modulo a subspace form a ring with two natural ideals
+title: The ring $E(U,U)$ of endomorphisms with $F(U)$ finite-dimensional modulo $U$, and its ideals $E(V,U)$ and $E(U,0)$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
