@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-9B
 kind: problem
-title: Fourth derivative of x over sine x at zero
+title: Fourth derivative of $x/\sin x$ at $0$
 classification:
   areas:
   - prelim
@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \lim_{x\to0}\frac{d^4}{dx^4}\left(\frac{x}{\sin x}\right).
-\]
+$$
 :::
 
 ::: {.solution}
