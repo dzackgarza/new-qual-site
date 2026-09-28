@@ -97,7 +97,7 @@ $$
 
 ::: {.proof}
 By step <1>1, $\mco_{X,p}$ is a one-dimensional Noetherian normal local domain.
-The one-dimensional normality criterion [[D-QJ5M9|says]] that such a ring is a discrete valuation ring.
+By the one-dimensional normality criterion [[D-QJ5M9]], such a ring is a discrete valuation ring.
 A DVR is a regular local ring of dimension $1$.
 :::
 
