@@ -18,5 +18,7 @@ What does it mean to be a finite extension?
 :::
 
 ::: {.solution}
-![](../../assets/Algebra/999_Review/image/SmartSelect_20210419-233708_Xodo_Docs.jpg)
+For a field extension $F/K$, addition in $F$ and multiplication by elements of $K$ make $F$ a vector space over $K$.
+The \dfn{degree} of $F$ over $K$ is $[F:K]\coloneqq\dim_KF$, and $F/K$ is a \dfn{finite extension} if $[F:K]<\infty$.
+For example, $[\CC:\RR]=2$, with basis $1,i$.
 :::
