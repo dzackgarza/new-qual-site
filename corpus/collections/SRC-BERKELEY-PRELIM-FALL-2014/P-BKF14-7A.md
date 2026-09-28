@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Find a basis of the intersection of the subspace of R4 spanned by (1, 1, 0, 0), (0, 1, 1, 0), (0, 0, 1, 1) and the subspace spanned by (1, 0, t, 0), (0, 1, 0, t), where t is given.
+Find a basis of the intersection of the subspace of $\RR^4$ spanned by $(1,1,0,0)$, $(0,1,1,0)$, $(0,0,1,1)$ and the subspace spanned by $(1,0,t,0)$, $(0,1,0,t)$, where $t$ is given.
 :::
 
 ::: {.solution}
