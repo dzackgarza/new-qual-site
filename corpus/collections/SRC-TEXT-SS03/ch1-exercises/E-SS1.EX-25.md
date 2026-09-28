@@ -2,17 +2,24 @@
 schema: qual/card@1
 id: E-SS1.EX-25
 kind: problem
-title: $\int_\gamma z^n\,dz$ over circles around and away from the origin
+title: Integrals of $z^n$ and $1/((z-a)(z-b))$ over circles
 classification:
   areas:
   - complex-analysis
-  topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
+  topics:
+  - Complex Numbers
+  - Power Series
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:
 - event: solution-written
   by: gemini-3.7-flash
   date: 2026-08-30
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-09-28
+  note: Restored part (c), which the source prints after a page break and the card had dropped; text from the Stein-Shakarchi extraction in Zotero.
 ---
 
 ::: {.exercise}
@@ -27,6 +34,14 @@ $$
 for all integers $n .$ . Here $\gamma$ is any circle centered at the origin with the positive (counterclockwise) orientation.
 
 (b) Same question as before, but with $\gamma$ any circle not containing the origin.
+
+(c) Show that if $\vert a \vert < r < \vert b \vert$ , then
+
+$$
+\int_ {\gamma} \frac {1}{(z - a) (z - b)} d z = \frac {2 \pi i}{a - b},
+$$
+
+where $\gamma$ denotes the circle centered at the origin, of radius $r ,$ with the positive orientation.
 :::
 
 ::: {.solution}
@@ -42,5 +57,13 @@ If $n \neq -1$, the integrand has the $2\pi$-periodic antiderivative $e^{i(n+1)\
 
 ::: {.proof}
 The closed disc bounded by $\gamma$ is a compact set not containing $0$, so it lies in a slightly larger open disc $D$ with $0\notin D$. The function $z^n$ is holomorphic on $D$ for every integer $n$, and Cauchy's theorem in the disc $D$ gives $\int_\gamma z^n\,dz=0$.
+:::
+
+<1>3. (c) If $\abs a<r<\abs b$ and $\gamma$ is the positively oriented circle $\abs z=r$, then $\int_\gamma\frac{dz}{(z-a)(z-b)}=\frac{2\pi i}{a-b}$.
+
+::: {.proof}
+Partial fractions give $\frac{1}{(z-a)(z-b)}=\frac{1}{a-b}\qty{\frac{1}{z-a}-\frac{1}{z-b}}$. On $\gamma$, $\abs{a/z}=\abs a/r<1$ and $\abs{z/b}=r/\abs b<1$, so the geometric series
+$$\frac{1}{z-a}=\sum_{k\ge0}\frac{a^k}{z^{k+1}},\qquad \frac{1}{z-b}=-\sum_{k\ge0}\frac{z^k}{b^{k+1}}$$
+converge uniformly on $\gamma$ and may be integrated term by term. By step <1>1, only the term $a^0z^{-1}$ has a nonzero integral, namely $2\pi i$, so $\int_\gamma\frac{dz}{z-a}=2\pi i$ and $\int_\gamma\frac{dz}{z-b}=0$. Hence the integral is $\frac{2\pi i}{a-b}$.
 :::
 :::
