@@ -8,11 +8,9 @@ topics:
 
 # Is it measurable?
 
-Measurability of a function is usually established from the closure properties of [[D-DHFN4|measurable functions]] rather than from the definition.
-
 ## Closure properties
 
-Let $(X,\mathcal M)$ be a measurable space and $f, g, f_1, f_2,\ldots$ measurable functions $X\to\RR$.
+Let $(X,\mathcal M)$ be a measurable space and $f, g, f_1, f_2,\ldots$ [[D-DHFN4|measurable functions]] $X\to\RR$.
 Then the following are measurable:
 
 - $\varphi\circ f$ for continuous $\varphi\colon\RR\to\RR$;
