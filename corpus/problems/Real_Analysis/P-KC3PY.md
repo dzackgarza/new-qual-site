@@ -36,40 +36,17 @@ is a non-negative measurable function and
 .\]
 :::
 ::: {.solution}
-<1>1. (a) $E + h$ is measurable with $m(E + h) = m(E)$.
-    <2>1. For open $U$: $U + h$ is open and $m(U + h) = m(U)$.
-        ::: {.proof}
-        translation is a homeomorphism; Lebesgue measure of an open set is the supremum of measures of contained cubes, and cubes translate with equal measure (the measure of a cube is invariant under translation).
-        :::
-    <2>2. For $G_\delta$ sets and null sets the identity passes; $E$ is measurable iff $E = B \cup N$ with $B$ Borel (or $G_\delta$) and $N$ null; hence $E + h = (B + h) \cup (N + h)$ is measurable with $m(E+h) = m(B+h) + 0 = m(B) = m(E)$.
-        ::: {.proof}
-        regularity of Lebesgue measure (measurable = Borel + null); translation preserves Borel sets (homeomorphism) and null sets ($m(N+h) = m(N) = 0$ by <2>1 applied to the open covers approximating $N$).
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1, <2>2.
-        :::
+Take $h \in \RR^n$ and write $\tau_h f(x) \coloneqq f(x-h)$.
 
-<1>2. (b) $\tau_h f(x) = f(x - h)$ is measurable and $\int f = \int f(x-h)\,dx$.
-    <2>1. For $f = \chi_E$: $\tau_h \chi_E = \chi_{E + h}$, measurable with integral $m(E+h) = m(E)$.
-        ::: {.proof}
-        <1>1.
-        :::
-    <2>2. For simple $f = \sum a_i\chi_{E_i}$: $\tau_h f = \sum a_i\chi_{E_i + h}$, measurable, and $\int \tau_h f = \sum a_i m(E_i + h) = \sum a_i m(E_i) = \int f$.
-        ::: {.proof}
-        <2>1 and linearity.
-        :::
-    <2>3. For $f \ge 0$ measurable: $\int \tau_h f = \int f$.
-        ::: {.proof}
-        monotone convergence applied to simple approximations $s_k \uparrow f$ (then $\tau_h s_k \uparrow \tau_h f$), using <2>2.
-        :::
-    <2>4. For signed $f = f^+ - f^-$: $\int \tau_h f = \int \tau_h f^+ - \int \tau_h f^- = \int f^+ - \int f^- = \int f$.
-        ::: {.proof}
-        <2>3 on each part; $\tau_h f^\pm = (\tau_h f)^\pm$.
-        :::
+<1>1. For measurable $E$, $E + h$ is measurable and $m(E + h) = m(E)$.
 
-<1>3. Q.E.D.
-    ::: {.proof}
-    <1>1 and <1>2 establish (a) and (b). (In the card, the translation is written $\tau_h d(x) = f(x-h)$ — the standard $\tau_h f$.)
-    :::
+::: {.proof}
+Translation by $h$ is a bijection between countable covers of a set $A$ by closed boxes and countable covers of $A + h$, preserving each volume, so $m^*(A + h) = m^*(A)$ for every $A$. Write $E = G \setminus Z$ with $G$ a $G_\delta$ set and $Z$ null. Translation is a homeomorphism, so $G + h$ is $G_\delta$, and $m^*(Z + h) = 0$. So $E + h = (G + h) \setminus (Z + h)$ is measurable, and $m(E + h) = m^*(E + h) = m^*(E) = m(E)$.
+:::
+
+<1>2. For measurable $f \ge 0$, $\tau_h f$ is measurable and $\int \tau_h f = \int f$.
+
+::: {.proof}
+For $a \in \RR$, $\theset{\tau_h f > a} = \theset{f > a} + h$, which is measurable by step <1>1. For $f = \chi_E$, $\tau_h\chi_E = \chi_{E+h}$ has integral $m(E + h) = m(E)$ by step <1>1, and linearity extends this to nonnegative simple functions. For general $f$, choose simple $0 \le s_k \uparrow f$; then $\tau_h s_k \uparrow \tau_h f$, and the monotone convergence theorem gives $\int \tau_h f = \lim_k \int s_k = \int f$. See [[P-5CM5W]].
+:::
 :::
