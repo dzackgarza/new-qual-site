@@ -26,8 +26,6 @@ These are the Fresnel integrals.
 Here, $\int _ { 0 } ^ { \infty }$ is interpreted as lim $R {  } { \infty } \int _ { 0 } ^ { R }$
 
 [Hint: Integrate the function $e ^ { - z ^ { 2 } }$ over the path in Figure 14. Recall that $\textstyle \int _ { - \infty } ^ { \infty } e ^ { - x ^ { 2 } } d x = { \sqrt { \pi } } . ]$
-
-Figure 14. The contour in Exercise 1
 :::
 
 ::: {.solution}
