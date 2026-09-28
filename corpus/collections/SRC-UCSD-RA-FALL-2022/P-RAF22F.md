@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF22F
 kind: problem
-title: "Adding an L^1 density to a Radon measure stays Radon"
+title: "A nonnegative $L^1(\\mu)$ density with respect to a Radon measure $\\mu$ defines a Radon measure"
 classification:
   areas:
   - real-analysis
@@ -41,7 +41,7 @@ Since $\varphi\ge0$ and $\varphi\in L^1(\mu)$,
 Thus $\nu$ is a finite positive Borel measure, in particular finite on every compact set.
 :::
 
-<1>2. Prove inner regularity.
+<1>2. $\nu(E)=\sup\{\nu(K):K\subset E,\ K\text{ compact}\}$ for every Borel set $E$.
 ::: {.proof}
 Fix a Borel set $E\subset X$ and $\varepsilon>0$. Since
 \[
@@ -89,9 +89,9 @@ Thus
 so $\nu$ is inner regular.
 :::
 
-<1>3. Deduce outer regularity.
+<1>3. $\nu(E)=\inf\{\nu(U):E\subset U,\ U\text{ open}\}$ for every Borel set $E$; hence $\nu$ is Radon.
 ::: {.proof}
-Let $E$ be Borel and let $\varepsilon>0$. By Step 2 applied to $X\setminus E$, choose compact
+Let $E$ be Borel and let $\varepsilon>0$. By step <1>2 applied to $X\setminus E$, choose compact
 \[
 K\subset X\setminus E
 \]
