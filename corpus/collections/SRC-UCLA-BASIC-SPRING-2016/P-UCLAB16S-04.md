@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB16S-04
 kind: problem
-title: Limit of a Volterra-type recursion
+title: Limit of Picard iterates for a linear Volterra integral equation
 classification:
   areas:
   - prelim
