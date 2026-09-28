@@ -8,7 +8,6 @@ topics:
 # Which contour do I close?
 
 A real integral is evaluated by residues after it is written as a limit of integrals over closed curves.
-The cases below are organized by the form of the integrand; each gives the contour, the estimate that controls the added pieces, and the resulting identity.
 
 The estimates for the added pieces are on [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]], and residue computations are on [[complex-analysis/residues-and-contours/computing-residues|Computing residues]].
 
@@ -123,7 +122,7 @@ for a single pole $x_0$, and analogously for several.
 
 ![](../../../../assets/assets/figures/2021-12-21_23-40-15.png)
 
-**Estimates.** The large arc is handled as in the cases above.
+**Estimates.** The integral over the large arc tends to $0$ by the ML estimate when $f = \bigo(1/\abs z^{1+\varepsilon})$ on the upper half plane, and by Jordan's lemma when $f(z) = g(z)e^{iaz}$ with $a>0$ and $g = \bigo(1/\abs z)$.
 By [[T-SSNLT]], an arc of angle $\theta$ about a simple pole contributes $i\theta \Res$ in the limit, so each clockwise half-circle contributes $-i\pi\Res$.
 
 **Result.**
@@ -148,8 +147,8 @@ $$
 
 ## A half-line, by symmetry
 
-For $f$ even, $\int_0^\infty f = \frac12 \int_\RR f$, and one of the cases above applies.
-For $f$ not even, the sector contours above can apply.
+For $f$ even, $\int_0^\infty f = \frac12 \int_\RR f$, and a contour for $\int_\RR f$ applies.
+For $f$ not even with $f(\zeta z) = f(z)$ for a root of unity $\zeta$, the sector with edge $\zeta[0,\infty)$ applies.
 
 ## The standard contours
 
