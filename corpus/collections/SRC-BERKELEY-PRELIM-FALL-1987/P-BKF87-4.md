@@ -29,7 +29,7 @@ in some neighborhood of $p_0$.
 :::
 
 ::: {.remark}
-The retained source prints “linearly independent” in place of “linearly dependent.”
+The source prints “linearly independent” in place of “linearly dependent.”
 That printed statement is false: for
 $$
 u(x,y)=x,
@@ -42,7 +42,6 @@ $$
 \nabla v=F'(u)\nabla u,
 $$
 so linear dependence is necessary.
-The problem above records the mathematically necessary correction.
 :::
 
 ::: {.solution}
