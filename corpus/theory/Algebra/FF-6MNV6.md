@@ -5,7 +5,7 @@ kind: fact
 title: Sign of $(1\,2\,3\,4\,5\,6)(7\,8\,9)(10\,11)(12\,13\,14\,15)(16\,17\,18)$
 slogan: Three even-length cycles make this permutation odd.
 prompts:
-- What is the sign of the cycle $\sigma=(123456)(789)(10~11)(12~13~14~15)(16~17~18)$?
+- What is the sign of the permutation $\sigma=(123456)(789)(10~11)(12~13~14~15)(16~17~18)$?
 classification:
   areas:
   - algebra
