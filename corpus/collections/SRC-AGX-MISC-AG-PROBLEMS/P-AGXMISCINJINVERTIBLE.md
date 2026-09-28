@@ -160,8 +160,8 @@ $$
 <1>5. Q.E.D.
 
 ::: {.proof}
-Step <1>1 proves the torsion-freeness principle requested in the hint.
-Step <1>2 proves the locally free assertion, and steps <1>3--<1>4 prove
+Step <1>1 shows that a subsheaf of a locally free sheaf with zero
+generic stalk is zero. Step <1>2 proves the locally free assertion, and steps <1>3--<1>4 prove
 the invertible-sheaf assertion.
 :::
 :::
