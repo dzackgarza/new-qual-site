@@ -19,7 +19,7 @@ source:
   problems:
   - P-BERK91S-01
   - id: P-BERK79S-07
-    comment: Spring 1991 Problem 2; repeated verbatim from Summer 1979 Problem 7
+    comment: Problem 2
   - P-BERK91S-03
   - P-BERK91S-04
   - P-BERK91S-05
