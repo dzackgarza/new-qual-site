@@ -25,8 +25,6 @@ Show that every maximal element of this set is a prime ideal.
 :::
 
 ::: {.solution}
-**Goal.** Show an ideal maximal among those disjoint from a multiplicative set $S$ is prime.
-
 <1>1. Let $I$ be maximal among ideals disjoint from $S$.
 ::: {.proof}
 by hypothesis.
