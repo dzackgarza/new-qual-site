@@ -22,12 +22,29 @@ Show that the following map is again a $\sigma\dash$additive measure on $\mcb$:
 :::
 
 ::: {.solution}
-Apply Fubini-Tonelli to commute two sums:
-\[
-\mu\qty{\Union_{1\leq k \leq M} E_k}\da 
-&= \sum_{n\geq 1} \mu_n\qty{\Union_{1\leq k \leq M} E_k}\\
-&= \sum_{n\geq 1} \sum_{1\leq k \leq M} \mu_n\qty{E_k}\\
-&= \sum_{1\leq k \leq M}\sum_{n\geq 1} \mu_n\qty{E_k} \text{FT} \\
-&\da \sum_{1\leq k \leq M} \mu(E_k)
-.\]
+<1>1. $\mu(\emptyset) = 0$ and $\mu$ takes values in $[0,\infty]$.
+
+::: {.proof}
+Each $\mu_n(\emptyset) = 0$, and a series of terms in $[0,\infty]$ has a sum in $[0,\infty]$.
+:::
+
+<1>2. For pairwise disjoint $E_1, E_2, \ldots \in \mcb$, $\mu\qty{\bigcup_{k\geq1} E_k} = \sum_{k\geq1}\mu(E_k)$.
+
+::: {.proof}
+By $\sigma$-additivity of each $\mu_n$,
+$$
+\mu\qty{\bigcup_{k\geq 1} E_k}
+= \sum_{n\geq 1} \mu_n\qty{\bigcup_{k\geq 1} E_k}
+= \sum_{n\geq 1} \sum_{k\geq 1} \mu_n(E_k)
+= \sum_{k\geq 1}\sum_{n\geq 1} \mu_n(E_k)
+= \sum_{k\geq 1} \mu(E_k).
+$$
+The third equality exchanges two sums of nonnegative terms, which is Tonelli's theorem for counting measure on $\NN \times \NN$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 are the axioms of a measure.
+:::
 :::
