@@ -196,8 +196,8 @@ T_{(a,b,c)}\widehat C
 \ker df_P.
 $$
 Step <1>4 shows that this tangent plane contains the radial line through
-$(a,b,c)$. Passing to projective space quotients by this radial direction, so
-the projective tangent space is
+$(a,b,c)$. The projective tangent space is the image of this plane under the
+quotient by the radial direction:
 $$
 \PP(\ker df_P)\subseteq\PP^2_\CC.
 $$
