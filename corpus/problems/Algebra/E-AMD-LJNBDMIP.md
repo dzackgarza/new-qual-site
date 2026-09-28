@@ -21,18 +21,28 @@ Show that a permutation is odd iff it has an odd number of even cycles.
 :::
 
 ::: {.solution}
-**Goal:** For $\sigma \in S_n$ written as a product of disjoint cycles, show $\operatorname{sgn}(\sigma) = -1$ if and only if the number of cycles of even length occurring in that decomposition is odd.
+Write $\sigma\in S_n$ as a product $\sigma=c_1c_2\cdots c_r$ of disjoint cycles of lengths $\ell_1,\dots,\ell_r$, and let $E=\{i:\ell_i\text{ is even}\}$.
 
-<1>1. Sign of a single cycle: *Proof:* <2>1. A cycle of length $\ell \ge 2$ factors into $\ell - 1$ transpositions: $$(a_1\, a_2\, \dots\, a_\ell) = (a_1\, a_\ell)(a_1\, a_{\ell-1}) \cdots (a_1\, a_2).$$ <2>2. Since $\operatorname{sgn}$ is a homomorphism sending every transposition to $-1$, $$\operatorname{sgn}\bigl((a_1\, \dots\, a_\ell)\bigr) = (-1)^{\ell - 1}.$$ <2>3. Hence a cycle is an odd permutation exactly when $\ell$ is even, and this also holds for $\ell = 1$, where the cycle is the identity and $(-1)^{0} = 1$.
+<1>1. A cycle of length $\ell\ge1$ has sign $(-1)^{\ell-1}$.
 
-<1>2. Sign of a product of disjoint cycles: *Proof:* <2>1. Write $\sigma = c_1 c_2 \cdots c_r$ as a product of disjoint cycles of lengths $\ell_1, \dots, \ell_r$.
-<2>2. Multiplicativity of $\operatorname{sgn}$ and Step 1.2 give $$\operatorname{sgn}(\sigma) = \prod_{i=1}^r (-1)^{\ell_i - 1} = (-1)^{\sum_{i=1}^r (\ell_i - 1)}.$$
+::: {.proof}
+For $\ell\ge2$,
+$$(a_1\ a_2\ \dots\ a_\ell)=(a_1\ a_\ell)(a_1\ a_{\ell-1})\cdots(a_1\ a_2)$$
+is a product of $\ell-1$ transpositions, and $\operatorname{sgn}$ is a homomorphism sending each transposition to $-1$.
+For $\ell=1$ the cycle is the identity, of sign $1=(-1)^0$.
+:::
 
-<1>3. Reduction to a count of even-length cycles: *Proof:* <2>1. Let $E = \{ i : \ell_i \text{ is even} \}$.
-The term $\ell_i - 1$ is odd exactly when $\ell_i$ is even, that is, exactly when $i \in E$.
-<2>2. A sum of integers is odd if and only if it has an odd number of odd terms, so $$\sum_{i=1}^r (\ell_i - 1) \equiv |E| \pmod 2.$$ <2>3. Substituting into Step 2.2: $$\operatorname{sgn}(\sigma) = (-1)^{|E|}.$$
+<1>2. $\operatorname{sgn}(\sigma)=(-1)^{|E|}$.
 
-<1>4. Conclusion: *Proof:* <2>1. $\sigma$ is odd $\iff \operatorname{sgn}(\sigma) = -1 \iff (-1)^{|E|} = -1 \iff |E|$ is odd.
-<2>2. That is, $\sigma$ is odd if and only if it has an odd number of even-length cycles.
-Q.E.D.
+::: {.proof}
+By step <1>1 and multiplicativity of $\operatorname{sgn}$,
+$$\operatorname{sgn}(\sigma)=\prod_{i=1}^r(-1)^{\ell_i-1}=(-1)^{\sum_i(\ell_i-1)}.$$
+The integer $\ell_i-1$ is odd exactly when $i\in E$, so $\sum_i(\ell_i-1)\equiv|E|\pmod 2$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By step <1>2, $\sigma$ is odd if and only if $(-1)^{|E|}=-1$, that is, if and only if $|E|$ is odd.
+:::
 :::
