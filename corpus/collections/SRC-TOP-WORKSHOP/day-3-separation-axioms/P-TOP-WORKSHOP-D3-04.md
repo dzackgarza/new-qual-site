@@ -26,23 +26,23 @@ Show that if the metric space $(X,d)$ is separable, then the metric topology on 
 :::
 
 ::: {.solution}
-Let \(D=\{d_1,d_2,\dots\}\) be a countable dense subset of \(X\). Consider
-\[
-\mathcal B=\{B(d,q):d\in D,\ q\in\mathbb Q_{>0}\}.
-\]
+Let $D=\{p_1,p_2,\dots\}$ be a countable dense subset of $X$. Consider
+$$
+\mathcal B=\{B(p,q):p\in D,\ q\in\mathbb Q_{>0}\}.
+$$
 This family is countable.
 
-To show it is a basis, let \(U\) be open and let \(x\in U\). Choose \(\varepsilon>0\) with \(B(x,\varepsilon)\subset U\). By density choose \(d\in D\cap B(x,\varepsilon/3)\), and choose rational \(q\) satisfying
-\[
-d(x,d)<q<\varepsilon-d(x,d).
-\]
-Then \(x\in B(d,q)\), and if \(y\in B(d,q)\),
-\[
-d(x,y)\le d(x,d)+d(d,y)<d(x,d)+q<\varepsilon.
-\]
+To show it is a basis, let $U$ be open and let $x\in U$. Choose $\varepsilon>0$ with $B(x,\varepsilon)\subset U$. By density choose $p\in D\cap B(x,\varepsilon/3)$, and choose rational $q$ satisfying
+$$
+d(x,p)<q<\varepsilon-d(x,p).
+$$
+Then $x\in B(p,q)$, and if $y\in B(p,q)$,
+$$
+d(x,y)\le d(x,p)+d(p,y)<d(x,p)+q<\varepsilon.
+$$
 Hence
-\[
-x\in B(d,q)\subset B(x,\varepsilon)\subset U.
-\]
-Therefore \(\mathcal B\) is a countable basis, so \(X\) is second countable.
+$$
+x\in B(p,q)\subset B(x,\varepsilon)\subset U.
+$$
+Therefore $\mathcal B$ is a countable basis, so $X$ is second countable.
 :::
