@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK91S-01
 kind: problem
-title: Classify all finite groups of order at most five
+title: Groups of order at most five
 classification:
   areas: [prelim]
   topics: []
