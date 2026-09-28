@@ -82,7 +82,7 @@ $$
 \deg u=\deg v=0.
 $$
 Thus every unit is a nonzero constant. Conversely every nonzero constant is
-obviously a unit.
+a unit.
 :::
 
 <1>2. The comorphism of $f$ sends the target coordinate $t$ to a nonzero
