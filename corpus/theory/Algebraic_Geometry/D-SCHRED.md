@@ -28,13 +28,12 @@ These agree on overlaps, so they glue to a closed subscheme structure on $Z$ for
 :::
 
 ::: {.proposition}
-$Z^\red$ is the unique reduced closed subscheme of $X$ with underlying space $Z$, and it is the *smallest* closed subscheme with that space: every closed subscheme supported on $Z$ contains $Z^\red$ as a closed subscheme.
+$Z^\red$ is the unique reduced closed subscheme of $X$ with underlying space $Z$, and it is the smallest closed subscheme with that space: every closed subscheme supported on $Z$ contains $Z^\red$ as a closed subscheme.
+Every morphism $T\to X$ from a reduced scheme $T$ whose image lies in $Z$ factors uniquely through $Z^\red$.
 :::
 
 ::: {.remark}
-"Canonical" here is expressed by the universal property: any morphism from a reduced scheme $T\to X$ whose image lies in $Z$ factors uniquely through $Z^\red$.
-Taking $Z = \abs{X}$ gives the reduction $X^\red \to X$, a homeomorphism which is not an isomorphism unless $X$ was already reduced.
-
-The ideal is radical by construction, which is where the classical Nullstellensatz dictionary sits: $\mci(V(\mfa)) = \sqrt{\mfa}$ says that passing to the reduced structure is taking the radical.
-Passing to the reduced induced structure replaces the defining ideal sheaf by its radical.
+Taking $Z = \abs{X}$ gives the reduction $X^\red \to X$, a homeomorphism that is an isomorphism if and only if $X$ is reduced.
+For an ideal $\mfa\subseteq A$, $\bigcap_{\mfp\supseteq\mfa}\mfp=\sqrt{\mfa}$, so the reduced induced structure on $V(\mfa)\subseteq\Spec A$ is $\Spec(A/\sqrt{\mfa})$.
+:::
 :::
