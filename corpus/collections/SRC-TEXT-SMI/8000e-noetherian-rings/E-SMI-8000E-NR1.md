@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-NR1
 kind: problem
-title: In a Noetherian ring every ideal sits in a maximal ideal, without Zorn
+title: In a Noetherian ring every proper ideal sits in a maximal ideal, without Zorn
 classification:
   areas:
   - algebra
@@ -22,6 +22,8 @@ If $R$ is a Noetherian ring, prove every ideal $I$ of $R$ is contained in a maxi
 :::
 
 ::: {.solution}
+The ideal $I=R$ lies in no maximal ideal, so we assume $I$ is proper.
+
 <1>1. Suppose for contradiction that $I$ is not contained in any maximal ideal.
 ::: {.proof}
 assume the conclusion fails.
