@@ -23,8 +23,8 @@ Prove that a continuous function from $\mathbb R$ to $\mathbb R$ which maps open
 ::: {.solution}
 We prove the contrapositive.
 Assume f is not monotone, i.e., there exist $a < b < c$ with $f ( a ) < f ( b )$ and $f ( b ) > f ( c )$ or with $f ( a ) > f ( b )$ and $f ( b ) < f ( c )$ . In the first case, let m be the point at which $f ( x )$ is maximized in $[ a , c ] ;$ such a point exists since f is continuous.
-Moreover we must have m $\neq a , c$ by the hypothesis.
-But now the image of $( a , c )$ under f contains $m _ { : }$ , but does not contain a neighborhood of $m$ , so $f$ cannot map open sets to open sets.
+Moreover we must have $m \neq a , c$ by the hypothesis.
+But now the image of $( a , c )$ under f contains $f ( m )$ , but does not contain a neighborhood of $f ( m )$ , so $f$ cannot map open sets to open sets.
 
 The second case is completely analogous.
 :::
