@@ -95,7 +95,7 @@ $$
 
 ::: {.proof}
 For an integral plane curve of degree $d$, the genus formula
-[[D-CRVPLSING|gives]]
+[[D-CRVPLSING]] gives
 $$
 g
 =
@@ -120,8 +120,8 @@ $$
 <1>3. The curve $C$ is elliptic.
 
 ::: {.proof}
-Zaidenberg Definition 20.2 calls a projective curve of geometric genus $1$
-an elliptic curve. Step <1>2 gives exactly this condition. Therefore
+An elliptic curve is a projective curve of geometric genus $1$, and step
+<1>2 gives this condition. Therefore
 $$
 \boxed{C\text{ is an elliptic curve}.}
 $$
@@ -131,7 +131,7 @@ $$
 
 ::: {.proof}
 Step <1>1 verifies that the smooth cubic is an integral projective curve,
-step <1>2 computes its genus, and step <1>3 applies the source definition of
-an elliptic curve.
+step <1>2 computes its genus, and step <1>3 concludes that it is an elliptic
+curve.
 :::
 :::
