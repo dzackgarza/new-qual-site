@@ -163,7 +163,8 @@ Young's inequality.
 :::
 
 ::: {.remark}
-The retained Fall 2008 solution packet states that the exam originally
-printed both inequalities with the wrong direction; the inequalities above
-are the packet's explicit correction.
+Erratum: the exam paper prints both inequalities with $\le$ in place of
+$\ge$. The reversed inequalities are false: for $f(x)=x$, $a=1$, and
+$b=2$, the left-hand side of the first inequality is
+$\frac12+2=\frac52>2=ab$.
 :::
