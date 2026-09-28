@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-9B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 9B
+title: Bounded divergent sequence with $\abs{2a_n-a_{n-1}-a_{n+1}}\le n^{-2}$
 classification:
   areas: [prelim]
   topics: []
@@ -21,7 +21,7 @@ for all $n \geq 2 .$
 :::
 
 ::: {.solution}
-We will let $a _ { n } = f ( n )$ , where $f ( x )$ is a function similar to the sine function but with oscillations that slow down as $x \longrightarrow \infty .$ , so that $f ^ { \prime \prime } ( x )  0$ . To be precise, we take
+We will let $a _ { n } = f ( n )$ , where $f ( x )$ is a function similar to the sine function but with oscillations that slow down as $x \longrightarrow \infty .$ , so that $f ^ { \prime \prime } ( x ) \to 0$ . To be precise, we take
 
 $$
 f ( x ) : = { \frac { 1 } { 2 } } \sin ( \ln ( x + 1 ) ) .
@@ -41,7 +41,7 @@ f ( n - 1 ) = f ( n ) - f ^ { \prime } ( n ) + { \frac { 1 } { 2 } } f ^ { \prim
 $$
 
 $$
-| 2 f ( n ) - f ( n - 1 ) - f ( n + 1 ) | = { \frac { 1 } { 2 } } | f ^ { \prime \prime } ( \xi _ { + } ) + f _ { \cdot } ^ { \prime \prime } ( \xi _ { - } ) | = | f ^ { \prime \prime } ( \xi ) | \quad { \mathrm { f o r ~ s o m e ~ } } \xi \in ( \xi _ { - } , \xi ^ { + } ) \subseteq ( n - 1 , n + 1 )
+| 2 f ( n ) - f ( n - 1 ) - f ( n + 1 ) | = { \frac { 1 } { 2 } } | f ^ { \prime \prime } ( \xi _ { + } ) + f ^ { \prime \prime } ( \xi _ { - } ) | = | f ^ { \prime \prime } ( \xi ) | \quad { \mathrm { f o r ~ s o m e ~ } } \xi \in [ \xi _ { - } , \xi _ { + } ] \subseteq ( n - 1 , n + 1 )
 $$
 
 by the intermediate value theorem.
