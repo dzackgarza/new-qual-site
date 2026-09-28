@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the real values of x for which
+Find the real values of $x$ for which
 
 $$
 \sum _ { n = 0 } ^ { \infty } { \frac { ( 1 / 2 ) ( 3 / 2 ) \cdots ( ( 2 n - 1 ) / 2 ) } { n ! } } { ( \frac { 2 x } { 1 + x ^ { 2 } } ) } ^ { 2 n } = 1 + { \frac { 1 } { 2 } } { \bigl ( } { \frac { 2 x } { 1 + x ^ { 2 } } } { \bigr ) } ^ { 2 } + { \frac { 1 } { 2 } } { \frac { 3 } { 4 } } { \bigl ( } { \frac { 2 x } { 1 + x ^ { 2 } } } { \bigr ) } ^ { 4 } + \cdots
@@ -157,9 +157,9 @@ $$
 \frac{1+x^2}{\abs{1-x^2}}.
 \end{aligned}
 $$
-The absolute value is essential because the square root is the
-nonnegative real square root; this is the unusual feature noted in the
-problem.
+The square root is the nonnegative real square root, so the sum is
+$(1+x^2)/(1-x^2)$ for $\abs{x}<1$ and $(1+x^2)/(x^2-1)$ for
+$\abs{x}>1$; the sum is not given by one rational function of $x$.
 :::
 
 <1>6. Q.E.D.
