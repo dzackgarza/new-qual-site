@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-A2LBX
 kind: problem
-title: '$f: D\rightarrow {\mathbb C}$ be a continuous function, where'
+title: Complex line integrals and the ML bound for $\log(z)/z^2$ on $\abs z=R$
 classification:
   areas:
   - complex-analysis
