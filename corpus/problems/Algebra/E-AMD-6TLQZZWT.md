@@ -50,7 +50,7 @@ If \(N\cap H_i=H_i\) for some \(i\), then \(N\) contains a \(3\)-cycle. All \(3\
 
 Suppose instead that \(N\cap H_i=1\) for every \(i\). Then every nonidentity element of \(N\) is fixed-point-free. Choose \(1\ne\sigma\in N\).
 
-For \(n\ge7\), choose \(a\) with \(\sigma(a)=b\ne a\), and choose distinct points \(c,d\) outside \({a,b}\). Put \(\tau=(a\ c\ d)\). Then \(\sigma\tau\sigma^{-1}\) is supported on \(\{b,\sigma(c),\sigma(d)\}\), whereas \(\tau\) is supported on \(\{a,c,d\}\). These supports are different because the former contains \(b\) and the latter does not. Hence \(\tau\) does not commute with \(\sigma\). Then
+For \(n\ge7\), choose \(a\) with \(\sigma(a)=b\ne a\), and choose distinct points \(c,d\) outside \(\{a,b\}\). Put \(\tau=(a\ c\ d)\). Then \(\sigma\tau\sigma^{-1}\) is supported on \(\{b,\sigma(c),\sigma(d)\}\), whereas \(\tau\) is supported on \(\{a,c,d\}\). These supports are different because the former contains \(b\) and the latter does not. Hence \(\tau\) does not commute with \(\sigma\). Then
 \[
 \rho=\sigma\tau\sigma^{-1}\tau^{-1}\in N
 \]
