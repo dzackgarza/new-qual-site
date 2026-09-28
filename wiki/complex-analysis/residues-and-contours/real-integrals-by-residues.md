@@ -29,7 +29,7 @@ Upper semicircle applied to $f(z)e^{iz}$; the arc integral tends to $0$ by Jorda
 For $f(z) \coloneqq {e^{iz} \over 1 + z^2}$ on the upper semicircle $\gamma_R$, $z = Re^{it}$ with $R>1$, the factor $1/(1+z^2)$ satisfies
 $$
 \begin{aligned}
-\sup_{z\in \gamma_R} \abs{f(z)}
+\sup_{z\in \gamma_R} \abs{1 \over 1 + z^2}
 &= \max_{t\in [0, \pi]} \abs{1 \over 1 + (Re^{it})^2 } \\
 &= {1\over R^2 - 1}
 \end{aligned},$$
