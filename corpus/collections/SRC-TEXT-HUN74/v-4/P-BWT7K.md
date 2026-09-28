@@ -174,8 +174,9 @@ The field $\QQ(a_j,i)$ has degree $6$, so it is exactly
 $L^{\langle\tau_j\epsilon\rangle}$.
 
 The subgroup $\langle\rho\rangle=A_3$ fixes $\zeta$ and $b$, and
-$\QQ(\zeta,b)$ has degree $4$, so this is its fixed field. Adding $\epsilon$
-to $\tau_j$ leaves precisely $\QQ(a_j)$, of degree $3$.
+$\QQ(\zeta,b)$ has degree $4$, so this is its fixed field. The subgroup
+$\langle\tau_j,\epsilon\rangle$ fixes $a_j$, and $[\QQ(a_j):\QQ]=3$ is its
+index, so $\QQ(a_j)$ is its fixed field.
 
 Finally, the three index-$2$ subgroups correspond to the three quadratic
 characters of $S_3\times C_2$. Their fixed fields are respectively
