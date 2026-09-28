@@ -21,12 +21,13 @@ Prove that if $\abs{z} = 1 \implies \abs{f(z)} = 1$, then $f$ is constant.
 :::
 
 ::: {.solution}
-First, note that the Schwarz reflection principle can be applied here: let $T: \DD\to \HH$ be the Cayley map, and consider $\tilde f \da T\circ f \circ T\inv: \HH\to \HH$.
-Now $T(S^1) = \RR$, and since $f(z)\in S^1$ when $z\in S^1$, we have $\tilde f(\RR) = \RR$, i.e. this is a real-valued function on $\RR$.
-So $\tilde f$ extends holomorphically to $\tilde F:\CC\to CC$, and we can pull this back to a holomorphic extension of $f$.
+Define $F:\CC\to \CC$ by $F(z)=f(z)$ for $\abs z\le1$ and $F(z) = 1/\bar{f(1/\bar{z})}$ for $\abs z>1$.
+This is defined because $f$ is nonvanishing on $\bar\DD$.
 
-Extend $f$ to $F:\CC\to \CC$ by $f(z) = 1/\bar{f(1/\bar{z})}$ for $z\in \DD^c$, which generally has poles at the points $1/\bar{z_k}$ for $z_k\in \DD$ zeros of $f$.
-Since $f$ is nonvanishing, $F$ has no poles and thus defines an entire function.
-By definition of $F$, we have $F(\CC) \subseteq f\qty{\ts{\abs{z} \leq 1}} \union \bar{ f\qty{\ts{\abs{z} \geq 1}}}$, which are both the continuous images of compact sets and thus compact and bounded.
-So $F$ is a bounded entire function and thus constant.
+- $F$ is holomorphic on $\abs z>1$, as the composite of the holomorphic map $w\mapsto 1/f(w)$ on $\DD$ with the two antiholomorphic maps $z\mapsto1/\bar z$ and $w\mapsto\bar w$.
+- $F$ is continuous on $\CC$: for $\abs{z_0}=1$ we have $1/\bar{z_0}=z_0$ and $\abs{f(z_0)}=1$, so $1/\bar{f(z_0)}=f(z_0)$, and both formulas tend to $f(z_0)$ as $z\to z_0$.
+- A continuous function on $\CC$ that is holomorphic off the circle $S^1$ is entire, by Morera's theorem as in the proof of the Schwarz reflection principle.
+- $F$ is bounded: with $M=\max_{\bar\DD}\abs f$ and $m=\min_{\bar\DD}\abs f>0$, we have $\abs F\le\max(M,1/m)$.
+
+By Liouville's theorem $F$ is constant, so $f$ is constant.
 :::
