@@ -31,8 +31,9 @@ $\gamma$ is the circle $\abs{z-1}=2$ traversed counterclockwise.
 :::
 
 ::: {.remark}
-The contour is the boundary circle $\abs{z-1}=2$; the strict
-inequality $\abs{z-1}<2$ describes its interior, not the contour.
+Erratum: the source writes the contour as "the circle
+$\{\abs{z-1}<2\}$". That set is the open disk; the contour is
+its boundary circle $\abs{z-1}=2$.
 :::
 
 ::: {.solution}
