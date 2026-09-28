@@ -33,13 +33,6 @@ audit:
 (iii) Prove it for $p > n$, with $P$ a Sylow $p$-subgroup of $S(np)$.
 :::
 
-::: {.remark}
-The printed first part omits the condition $p>2$. For $p=2$, a Sylow
-$2$-subgroup of $S_4$ has order $8$ and is isomorphic to the nonabelian
-dihedral group $D_8$. The corrected first part is exactly the case $n=2$ of
-part (iii).
-:::
-
 ::: {.solution}
 It is enough to prove the general assertion in part (iii).
 
@@ -145,4 +138,10 @@ $$
 Taking $n=2$ gives part (i) for $p>2$, and taking $n=3$ gives part (ii) for
 $p>3$.
 :::
+:::
+
+::: {.remark}
+The source states part (i) without the condition $p>2$. For $p=2$, a Sylow
+$2$-subgroup of $S_4$ has order $8$ and is isomorphic to the nonabelian
+dihedral group $D_8$. With $p>2$, part (i) is the case $n=2$ of part (iii).
 :::
