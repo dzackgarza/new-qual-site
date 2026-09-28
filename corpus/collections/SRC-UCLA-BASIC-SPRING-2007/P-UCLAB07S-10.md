@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB07S-10
 kind: problem
-title: Uniform convergence of distribution-function-type sequences
+title: Increasing functions converging pointwise to a continuous distribution function converge uniformly
 classification:
   areas:
   - prelim
