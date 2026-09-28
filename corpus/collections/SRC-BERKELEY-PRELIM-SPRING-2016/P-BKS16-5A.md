@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \int_0^{2\pi}\frac{d\theta}{(3+e^{-i\theta})^2}.
-\]
+$$
 :::
 
 ::: {.solution}
