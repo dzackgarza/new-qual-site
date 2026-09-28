@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-1A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 1A
+title: A sequence whose every subsequence has a subsequence tending to $0$ converges to $0$
 classification:
   areas: [prelim]
   topics: []
