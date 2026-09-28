@@ -129,7 +129,7 @@ $$
 for every $0<t<\delta$.
 
 ::: {.proof}
-Since $C\neq0$, step <1>3 gives a $\delta>0$ such that
+Since $C\neq0$, step <1>3 gives a $\delta\in(0,\delta_0]$ such that
 $$
 \abs{
 \frac{f(t)}t-C
