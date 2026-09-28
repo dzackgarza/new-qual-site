@@ -21,23 +21,12 @@ State the Riemann hypothesis.
 :::
 
 ::: {.solution}
-<1>1. The Riemann zeta function $\zeta(s) = \sum_{n=1}^{\infty} n^{-s}$ extends meromorphically to $\mathbb{C}$ with a single simple pole at $s = 1$.
-::: {.proof}
-analytic continuation of the zeta function.
-:::
+The Riemann zeta function $\zeta$ is the meromorphic continuation to $\CC$ of
+$\sum_{n\ge1}n^{-s}$ $(\operatorname{Re}s>1)$; it is holomorphic except for a
+simple pole at $s=1$. The functional equation gives zeros at
+$s=-2,-4,-6,\ldots$, the trivial zeros. Every other zero lies in the critical
+strip $0<\operatorname{Re}s<1$.
 
-<1>2. The "trivial" zeros of $\zeta$ are at the negative even integers $s = -2, -4, -6, \ldots$.
-::: {.proof}
-the functional equation forces $\zeta$ to vanish at these points.
-:::
-
-<1>3. **Riemann Hypothesis.** Every nontrivial zero of $\zeta(s)$ (i.e. every zero in the critical strip $0 < \operatorname{Re} s < 1$) lies on the critical line $\operatorname{Re} s = 1/2$.
-::: {.proof}
-statement of the conjecture.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-<1>3.
-:::
+The Riemann hypothesis states: every zero of $\zeta$ with
+$0<\operatorname{Re}s<1$ satisfies $\operatorname{Re}s=\tfrac12$.
 :::
