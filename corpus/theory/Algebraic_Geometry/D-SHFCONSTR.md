@@ -25,7 +25,7 @@ A sheaf $\mathcal{F}$ of $k$-vector spaces on $X$ is \dfn{constructible} if ther
 
 ::: {.remark}
 The same definition with the Zariski or étale topology on a Noetherian scheme, and locally constant sheaves with finite stalks in place of local systems, gives constructible étale sheaves.
-Constructible sheaves are preserved by $f^{-1}$, by $f_*$ and $f_!$ for morphisms of varieties, and by $\otimes$ and $\mathcal{H}om$, in the derived sense; this closure is what makes them the coefficients for the six operations on varieties.
+Constructible sheaves are preserved by $f^{-1}$, by $f_*$ and $f_!$ for morphisms of varieties, and by $\otimes$ and $\mathcal{H}om$, in the derived sense: for a morphism of complex varieties, the six operations ([[D-SHFSIX]]) carry bounded complexes with constructible cohomology sheaves to bounded complexes with constructible cohomology sheaves.
 :::
 
 ::: {.example}
