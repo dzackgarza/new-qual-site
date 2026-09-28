@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-BERKELEY-PRELIM-SPRING-1988
 kind: collection
-title: UC Berkeley Preliminary Exam Spring 1988
+title: Berkeley preliminary exam Spring 1988
 classification:
   areas:
   - prelim
