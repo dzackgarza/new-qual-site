@@ -95,7 +95,7 @@ c-d\in\mathbb Z.
 \[
 c=\varepsilon a,\qquad d=\delta b,
 \]
-with \(a,b\in\mathbb Z_+\) and \(\varepsilon,\delta\in\{1,-1\}\). Part (b) gives \(ab\in\mathbb Z_+\), and the sign laws of Exercise 1 give
+with \(a,b\in\mathbb Z_+\) and \(\varepsilon,\delta\in\{1,-1\}\). Part (b) gives \(ab\in\mathbb Z_+\), and the sign laws of [[E-MUN-4-1]](e) give
 \[
 cd=(\varepsilon\delta)ab\in\mathbb Z.
 \]
