@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH1-21
 kind: problem
-title: Evaluate cos(-sin x) from sin(sin x)
+title: Evaluate $\cos(-\sin x)$ given $\sin(\sin x)=1/2$
 classification:
   areas:
   - algebra
