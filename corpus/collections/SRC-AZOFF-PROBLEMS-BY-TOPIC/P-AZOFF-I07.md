@@ -41,18 +41,15 @@ audit:
 
 a) State the standard Schwarz reflection principle involving reflection across the real axis.
 
-b) Let $H=\{z\in\mathbb C:\operatorname{Im}z>0\}$. Give, with justification, a linear fractional transformation T mapping D to H. Let $g ( z ) = { \overline { { z } } } ;$ show that $\begin{array} { r } { T ^ { - 1 } \circ g \circ T ( z ) = \frac { 1 } { \overline { { z } } } } \end{array}$
+b) Let $H=\{z\in\mathbb C:\operatorname{Im}z>0\}$. Give, with justification, a linear fractional transformation $T$ mapping $\DD$ to $H$. Let $g(z) = \overline{z}$; show that $T^{-1} \circ g \circ T(z) = \frac{1}{\overline{z}}$.
 
-c) Suppose f is holomorphic on D, continuous on ${ \overline { { \mathbb { D } } } }$ , and real on the unit circle.
-Prove that f must be constant.
+c) Suppose $f$ is holomorphic on $\DD$, continuous on $\overline{\DD}$, and real on the unit circle.
+Prove that $f$ must be constant.
 :::
 
 ::: {.solution}
-<1>1. Part (a): the Schwarz reflection principle across the real axis says
-the following.
-
-::: {.proof}
-Let $U\subseteq\CC$ be a domain symmetric under conjugation, and write
+<1>1. Part (a), the Schwarz reflection principle across the real axis:
+let $U\subseteq\CC$ be a domain symmetric under conjugation, and write
 $$
 U_+=\{z\in U:\operatorname{Im}z>0\}.
 $$
@@ -70,7 +67,6 @@ F(z),&\operatorname{Im}z\geq0,\\
 \end{cases}
 $$
 defines a holomorphic function on all of $U$.
-:::
 
 <1>2. Part (b): the linear fractional transformation
 $$
