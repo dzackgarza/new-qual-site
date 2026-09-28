@@ -24,6 +24,6 @@ In particular, if $p$ is [[D-BVMTZ|reducible]] in $F[x]$, then $p$ is reducible 
 :::
 
 ::: {.remark}
-Gauss' lemma is the main step in the proof that $R[x]$ is a unique factorization domain whenever $R$ is.
+If $R$ is a unique factorization domain, then so is $R[x]$; the proof uses Gauss' lemma to reduce factorization in $R[x]$ to factorization in $R$ and in the principal ideal domain $F[x]$.
 By induction, $R[x_1,\ldots,x_n]$ is a unique factorization domain, and so is the polynomial ring over $R$ in any set of variables, since each polynomial involves finitely many variables.
 :::
