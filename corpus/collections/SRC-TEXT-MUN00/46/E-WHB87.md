@@ -29,43 +29,23 @@ is continuous, provided the compact-open topology is used throughout.
 :::
 
 ::: {.solution}
-<1>1. Let $S(C, U) = \{h : h(C) \subseteq U\}$ denote a subbasic open set of the compact-open topology on $\mathcal C(X, Z)$.
+For compact $C$ and open $U$, write $S(C, U) = \{h : h(C) \subseteq U\}$; these sets form a subbasis of the compact-open topology. It suffices to show that every point $(f, g)$ of the preimage of a subbasic set $S(C, U) \subseteq \mathcal C(X, Z)$ under composition has a neighborhood inside that preimage.
+
+<1>1. If $g(f(C)) \subseteq U$, there is an open $V \subseteq Y$ with $f(C) \subseteq V$, $\overline{V}$ compact, and $g(\overline{V}) \subseteq U$.
+
 ::: {.proof}
-definition of the compact-open topology.
+The set $g^{-1}(U)$ is open and contains the compact set $f(C)$. Since $Y$ is locally compact Hausdorff, each $y \in f(C)$ has an open neighborhood $W_y$ with $\overline{W_y}$ compact and $\overline{W_y} \subseteq g^{-1}(U)$. Finitely many $W_{y_1}, \ldots, W_{y_k}$ cover $f(C)$; put $V = W_{y_1} \cup \cdots \cup W_{y_k}$. Then $\overline{V} = \overline{W_{y_1}} \cup \cdots \cup \overline{W_{y_k}}$ is compact and contained in $g^{-1}(U)$.
 :::
 
-<1>2. Suppose $g \circ f \in S(C, U)$, i.e. $g(f(C)) \subseteq U$.
+<1>2. $S(C, V) \times S(\overline{V}, U)$ is an open neighborhood of $(f, g)$ whose image under composition lies in $S(C, U)$.
+
 ::: {.proof}
-take a point in a subbasic open set.
+By step <1>1, $f(C) \subseteq V$ and $g(\overline{V}) \subseteq U$, and $\overline{V}$ is compact, so $(f, g) \in S(C, V) \times S(\overline{V}, U)$, a product of subbasic open sets. If $f' \in S(C, V)$ and $g' \in S(\overline{V}, U)$, then $g'(f'(C)) \subseteq g'(\overline{V}) \subseteq U$.
 :::
 
-<1>3. Since $Y$ is locally compact Hausdorff and $f(C)$ is compact, there is an open set $V$ with $f(C) \subseteq V \subseteq \overline{V}$ and $\overline{V}$ compact, and $g(\overline{V}) \subseteq U$.
-::: {.proof}
-$f(C)$ is compact; cover it by finitely many open sets with compact closure contained in $g^{-1}(U)$ (using local compactness and the continuity of $g$), and let $V$ be their union.
-:::
+<1>3. Q.E.D.
 
-<1>4. Then $f \in S(C, V)$ and $g \in S(\overline{V}, U)$.
 ::: {.proof}
-$f(C) \subseteq V$ and $g(\overline{V}) \subseteq U$.
-:::
-
-<1>5. For any $f' \in S(C, V)$ and $g' \in S(\overline{V}, U)$, we have $g' \circ f' \in S(C, U)$.
-::: {.proof}
-$f'(C) \subseteq V \subseteq \overline{V}$, so $g'(f'(C)) \subseteq g'(\overline{V}) \subseteq U$.
-:::
-
-<1>6. Hence the preimage of $S(C, U)$ under composition contains the open set $S(C, V) \times S(\overline{V}, U)$.
-::: {.proof}
-<1>4 and <1>5.
-:::
-
-<1>7. Therefore composition is continuous.
-::: {.proof}
-<1>6 shows the preimage of every subbasic open set is open.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
+By step <1>2, the preimage of every subbasic open set of $\mathcal C(X, Z)$ is open, so composition is continuous.
 :::
 :::
