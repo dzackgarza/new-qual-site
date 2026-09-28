@@ -9,17 +9,15 @@ topics:
 
 # Cohomology
 
-Čech cohomology as the thing you can actually compute with, Serre duality, and Riemann--Roch.
+$H^1(X,\OO_X^\times)\cong\Pic X$, and for $\OO_X$-modules $\mcf,\mcg$ with $\mcg$ locally free, $\Ext^1(\mcg,\mcf)\cong H^1(X,\mcf\otimes\mcg^\vee)$ classifies extensions of $\mcg$ by $\mcf$.
+By [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], a noetherian scheme $X$ is affine if and only if $H^1(X,\mci)=0$ for every coherent ideal sheaf $\mci\subseteq\OO_X$.
 
-$H^1$ carries much of the geometry: its vanishing characterises affineness for Noetherian schemes, and its non-vanishing classifies line bundles and extensions.
-The affineness criterion is [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], saying that a Noetherian scheme $X$ is affine exactly when $H^p(X,\mcf) = 0$ for every quasicoherent sheaf $\mcf$ and $p > 0$, and quasicompactness is the hypothesis without which it fails.
+- [[algebraic-geometry/cohomology/computing-cohomology|Computing cohomology]], the Čech comparison, the cohomology of $\OO_{\PP^n}(d)$, and $H^1$ as the obstruction to lifting sections and as $\Pic X$.
 
-- [[algebraic-geometry/cohomology/computing-cohomology|Computing cohomology]], Čech against derived functors, the cohomology of the twists, and the two meanings of $H^1$.
+- [[algebraic-geometry/cohomology/vanishing-and-duality|Vanishing and duality]], Serre's affineness criterion, Serre duality, and Riemann--Roch for curves and surfaces.
 
-- [[algebraic-geometry/cohomology/vanishing-and-duality|Vanishing and duality]], Serre's criterion with its load-bearing hypotheses, Serre duality in any dimension, and Riemann--Roch for curves and surfaces.
+- [[algebraic-geometry/cohomology/derived-functors-and-vanishing|Derived functors and vanishing]], right derived functors of global sections, flasque resolutions, affine vanishing, and Grothendieck vanishing.
 
-- [[algebraic-geometry/cohomology/derived-functors-and-vanishing|Derived functors and vanishing]], where the theory comes from, flasque resolutions, and the two vanishing theorems that bound every computation.
-
-- [[algebraic-geometry/cohomology/projective-schemes|Cohomology of projective schemes]], finiteness, Serre vanishing for large twists, and the Euler characteristic as the invariant that does not jump.
+- [[algebraic-geometry/cohomology/projective-schemes|Cohomology of projective schemes]], finiteness, Serre vanishing for large twists, and the Euler characteristic and Hilbert polynomial in flat families.
 
 - [[algebraic-geometry/cohomology/families|Cohomology in families]], higher direct images, formal functions, and when cohomology commutes with base change.
