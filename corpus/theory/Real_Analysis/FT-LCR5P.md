@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-LCR5P
 kind: theorem
 title: Dominated convergence theorem
-slogan: 'Almost-everywhere convergence under one integrable majorant lets the limit pass through the integral.'
+slogan: 'If $f_n\to f$ almost everywhere and $\abs{f_n}\le g$ for one $g\in L^1$, then $\int f_n\to\int f$.'
 prompts:
 - State the dominated convergence theorem.
 classification:
