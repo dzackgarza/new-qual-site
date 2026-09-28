@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB18S-06
 kind: problem
-title: Determinant of a five-by-five circulant matrix
+title: Determinant of a $5\times5$ circulant matrix
 classification:
   areas:
   - prelim
