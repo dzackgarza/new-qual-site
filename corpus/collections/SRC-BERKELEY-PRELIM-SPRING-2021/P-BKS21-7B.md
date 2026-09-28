@@ -18,11 +18,11 @@ audit:
 
 ::: {.problem}
 Find the eigenvalues of the $n\times n$ matrix $(a_{ij})$ with
-\[
+$$
 a_{ij}=\begin{cases}
 1,&i=j+1,\\
 -1,&i=j-1,\\
 0,&\text{otherwise}.
 \end{cases}
-\]
+$$
 :::
