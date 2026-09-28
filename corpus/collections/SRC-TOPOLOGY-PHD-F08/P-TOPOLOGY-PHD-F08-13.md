@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-13
 kind: problem
-title: Collapse the boundary of a Möbius band
+title: Collapsing the boundary of a Möbius band gives $\mathbb{RP}^2$
 classification:
   areas:
   - topology
