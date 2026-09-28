@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-FEH
 kind: problem
-title: Proof choice — spectral theorem or Cayley-Hamilton
+title: Real spectral theorem or the Cayley-Hamilton theorem
 classification:
   areas:
   - algebra
