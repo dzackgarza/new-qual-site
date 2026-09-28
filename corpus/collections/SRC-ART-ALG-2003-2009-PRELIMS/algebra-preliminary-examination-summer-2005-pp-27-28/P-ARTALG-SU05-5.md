@@ -66,9 +66,7 @@ $(u-v)^3=u^3-v^3$. Iterating four times yields
 $$
 x^{81}-1=(x-1)^{81}.
 $$
-Hence the only root is $1$, with multiplicity $81$. Counting
-multiplicity would not give the number of distinct elements of
-$F$ requested here.
+Hence the only root is $1$, with multiplicity $81$.
 :::
 
 <1>4. The polynomial $x^{88}-1$ has exactly $8$ roots in $F$.
