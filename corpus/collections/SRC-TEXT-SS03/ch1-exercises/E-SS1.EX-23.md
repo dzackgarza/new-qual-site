@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-23
 kind: problem
-title: "SS 1.23: A smooth function whose Taylor series vanishes identically"
+title: A smooth function whose Taylor series at $0$ vanishes identically
 classification:
   areas:
   - complex-analysis
