@@ -92,10 +92,3 @@ original coordinates, then $S$ is invertible and $S^{-1}NS$ is
 exactly that block diagonal matrix.
 :::
 :::
-
-::: {.remark}
-An arbitrary equality $N^a=0$ only implies that the minimal polynomial
-divides $x^a$. It does not imply equality: for a nonempty zero matrix,
-$N^2=0$ but the minimal polynomial is $x$. Also,
-$x^b\mid x^c$ means $b\leq c$, not integer divisibility $b\mid c$.
-:::
