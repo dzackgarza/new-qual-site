@@ -36,4 +36,3 @@ Every morphism $T\to X$ from a reduced scheme $T$ whose image lies in $Z$ factor
 Taking $Z = \abs{X}$ gives the reduction $X^\red \to X$, a homeomorphism that is an isomorphism if and only if $X$ is reduced.
 For an ideal $\mfa\subseteq A$, $\bigcap_{\mfp\supseteq\mfa}\mfp=\sqrt{\mfa}$, so the reduced induced structure on $V(\mfa)\subseteq\Spec A$ is $\Spec(A/\sqrt{\mfa})$.
 :::
-:::

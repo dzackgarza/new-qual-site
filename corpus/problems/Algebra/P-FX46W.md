@@ -38,7 +38,8 @@ Let $G$ be a finite group and work with finite-dimensional complex representatio
 \]
 for a finite-dimensional complex vector space $V$. It is irreducible if its only $G$-stable subspaces are $0$ and $V$.
 ::: {.proof}
-A subspace $W\subseteq V$ is $G$-stable when $\rho(g)W\subseteq W$ for every $g\in G$.:::
+A subspace $W\subseteq V$ is $G$-stable when $\rho(g)W\subseteq W$ for every $g\in G$.
+:::
 
 <1>2. Every representation admits a $G$-invariant positive-definite Hermitian inner product.
 ::: {.proof}

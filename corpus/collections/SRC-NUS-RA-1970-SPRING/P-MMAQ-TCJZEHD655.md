@@ -48,3 +48,4 @@ For every $K \in \RR$, $\limsup_n a_n = -\infty < K$, so $a_n < K$ for all large
 ::: {.proof}
 For $l = +\infty$ the inequality $\limsup_n \sigma_n \leq +\infty$ holds for every real sequence. Steps <1>2 and <1>3 cover the remaining cases.
 :::
+:::

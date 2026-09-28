@@ -18,6 +18,7 @@ review: draft
 Show $\nilrad{R} \normal R$ is an ideal and $A/\nilrad{R}$ is reduced.
 :::
 
+::: {.solution}
 Let $R$ be a commutative ring with identity.
 
 <1>1. $R\,\nilrad{R}\subseteq\nilrad{R}$.
