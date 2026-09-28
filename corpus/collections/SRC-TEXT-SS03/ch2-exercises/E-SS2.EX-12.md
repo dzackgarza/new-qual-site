@@ -67,23 +67,17 @@ A holomorphic function on a disc has a primitive, so there is $F$ with $F' = g$.
 Step <2>2 gives existence. If $\Re f_1 = \Re f_2 = u$, then $f_1 - f_2$ is holomorphic with zero real part, hence constant by [[E-SS1.EX-13]], so $f_1 - f_2 = ic$ with $c$ real.
 :::
 
-<1>2. By part (a), $u = \operatorname{Re} f$ for a holomorphic $f$ on $\DD$, continuous on $\overline{\DD}$.
+<1>2. (b) If $u$ is harmonic in $\mathbb D$ and continuous on $\overline{\mathbb D}$, then for $z=re^{i\theta}$, $0\le r<1$, $u(z) = \frac{1}{2\pi}\int_0^{2\pi} P_r(\theta - \varphi) u(e^{i\varphi})\, d\varphi$.
+
+<2>1. For $r<\rho<1$, $u(re^{i\theta}) = \frac{1}{2\pi}\int_0^{2\pi} \frac{\rho^2-r^2}{\rho^2-2\rho r\cos(\theta-\varphi)+r^2}\, u(\rho e^{i\varphi})\, d\varphi$.
+
 ::: {.proof}
-part (a) and the hypothesis that $u$ is continuous on the closure.
+By step <1>1, $u = \Re f$ with $f$ holomorphic on $\mathbb D$. Part (a) of [[E-SS2.EX-11]] with $R=\rho$ expresses $f(z)$ as the integral of $f(\rho e^{i\varphi})$ against the real kernel $\Re\frac{\rho e^{i\varphi}+z}{\rho e^{i\varphi}-z}$; taking real parts gives the same formula for $u$, and part (b) of [[E-SS2.EX-11]] evaluates the kernel.
 :::
 
-<1>2. By the Cauchy integral formula (Exercise 11), for $z = re^{i\theta}$, $$f(z) = \frac{1}{2\pi}\int_0^{2\pi} \frac{e^{i\varphi} + z}{e^{i\varphi} - z} u(\varphi)\, d\varphi.$$
-::: {.proof}
-the Cauchy integral formula for the disk, applied to $f$ and taking real parts.
-:::
+<2>2. Q.E.D.
 
-<1>3. Taking real parts gives the Poisson integral formula $$u(z) = \frac{1}{2\pi}\int_0^{2\pi} P_r(\theta - \varphi) u(\varphi)\, d\varphi,$$ where $P_r(\gamma) = \frac{1 - r^2}{1 - 2r\cos\gamma + r^2}$.
 ::: {.proof}
-$\operatorname{Re}\frac{e^{i\varphi} + re^{i\theta}}{e^{i\varphi} - re^{i\theta}} = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2} = P_r(\theta - \varphi)$.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-<1>6 (a) and <1>3 (b).
+Fix $z=re^{i\theta}$ and let $\rho\to1^-$ in step <2>1. Since $u$ is uniformly continuous on $\overline{\mathbb D}$, $u(\rho e^{i\varphi})\to u(e^{i\varphi})$ uniformly in $\varphi$, and the kernels converge uniformly in $\varphi$ to $P_r(\theta-\varphi)$ because $\rho^2-2\rho r\cos\gamma+r^2\ge(\rho-r)^2$ stays bounded away from $0$. Hence the integrals converge to $\frac{1}{2\pi}\int_0^{2\pi}P_r(\theta-\varphi)u(e^{i\varphi})\,d\varphi$.
 :::
 :::
