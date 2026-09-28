@@ -9,8 +9,7 @@ topics:
 
 # Smooth, unramified, and étale
 
-Three conditions on a morphism that all say "the fibres are as nice as the base allows", differing in the relative dimension they permit.
-The organising statement is that étale is smooth of relative dimension $0$, and that unramified is the half of étale that flatness is missing from.
+A morphism locally of finite presentation is étale exactly when it is smooth of relative dimension $0$, and exactly when it is flat and unramified.
 
 ## Unramified and étale
 
@@ -18,26 +17,26 @@ The organising statement is that étale is smooth of relative dimension $0$, and
 
 [[D-MORETALE]]
 
-The differentials give the working criterion in both cases: unramified is $\Omega_{X/Y} = 0$, and étale is that together with flatness.
-For a map of curves the condition is that every ramification index is $1$, which is the same $e_p$ that Riemann--Hurwitz counts, so this is not a separate theory from [[algebraic-geometry/curves-and-surfaces/index|curves]].
+A morphism locally of finite type is unramified exactly when $\Omega_{X/Y}=0$, and étale exactly when it is also flat.
+A finite morphism of smooth curves over an algebraically closed field is unramified at $p$ exactly when $e_p=1$; these are the ramification indices in [[algebraic-geometry/curves-and-surfaces/genus|Riemann--Hurwitz]].
 
-## Ramification, measured
+## Ramification index and ramification divisor
 
 [[D-IV2RAM]]
 
-Ramified is the negation of unramified, and it is measured rather than merely observed: $e_p$ counts how far the pulled-back uniformizer is from being one, and the length of $(\Omega_{X/Y})_p$ turns that count into the divisor Riemann--Hurwitz adds up.
-The two agree only when $e_p$ is invertible in $k$; in the wild case the length is strictly larger than $e_p-1$.
+For a uniformizer $t$ at $f(p)$, $e_p=v_p(f^*t)$, and the ramification divisor is $R=\sum_p\operatorname{length}(\Omega_{X/Y})_p\cdot p$.
+The length equals $e_p-1$ exactly when $e_p$ is invertible in $k$; in the wild case it is strictly larger than $e_p-1$.
 
 [[PR-IV2DEGREVEN]]
 
-The parity statement gives an immediate consistency check on any branching count.
+For a degree-two cover of $\PP^1$ by a curve of genus $g$, in characteristic $\neq2$, every ramification point has $e_p=2$, and parity with Riemann--Hurwitz gives $2g+2$ branch points.
 
 ## Étale covers
 
 [[D-IV2ETCOV]]
 
-Finite étale is the algebraic covering space, and the projective line has only the trivial ones, by the same Riemann--Hurwitz with the ramification term set to zero.
-In characteristic $p$ the affine line has nontrivial Artin--Schreier covers, while $\PP^1$ has no nontrivial finite étale covers.
+A connected finite étale cover $X\to\PP^1$ of degree $n$ has $2g_X-2=-2n$ by Riemann--Hurwitz, so $n=1$: $\PP^1$ has no nontrivial connected finite étale covers.
+In characteristic $p$ the affine line has the nontrivial connected finite étale Artin--Schreier covers $y^p-y=x$.
 
 ## Smoothness
 
@@ -45,12 +44,10 @@ In characteristic $p$ the affine line has nontrivial Artin--Schreier covers, whi
 
 [[T-MORSMREG]]
 
-Smooth is a property of a morphism, regular is a property of a local ring, and they agree over a perfect field and not otherwise.
-The failure over imperfect fields comes from inseparability; $\Spec \FF_p(t)[x]/(x^p-t)$ is regular but not smooth.
+A scheme $X$ locally of finite type over a field $k$ is smooth over $k$ exactly when $X_{\bar k}$ is regular; for $k$ perfect this holds exactly when $X$ is regular.
+Over the imperfect field $\FF_p(t)$, $\Spec\FF_p(t)[x]/(x^p-t)$ is regular, being a field, and is not smooth, since $\FF_p(t^{1/p})\otimes_{\FF_p(t)}\overline{\FF_p(t)}$ is not reduced.
 
 [[PR-MORJAC]]
-
-The Jacobian criterion must be applied on the variety itself: a rank drop is relevant only at points satisfying the defining equations.
 
 ## Where smoothness fails
 
@@ -58,8 +55,8 @@ The Jacobian criterion must be applied on the variety itself: a rank drop is rel
 
 [[T-MORGEN]]
 
-Frobenius is nowhere smooth and shows why generic smoothness needs characteristic zero.
-Generic *flatness* has no characteristic-zero hypothesis.
+The Frobenius $F\colon\PP^n_k\to\PP^n_k$ in characteristic $p$ is a dominant morphism of smooth varieties that is smooth at no point, so generic smoothness fails in characteristic $p$.
+$F$ is finite and flat, and generic flatness holds in every characteristic.
 
 ## Normal and regular morphisms
 
