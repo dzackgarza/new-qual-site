@@ -60,7 +60,7 @@ Recover $X_j$ from $Y_j$ by gluing back an $n$-ball. The intersection of the two
 \[
 S^{n-1}.
 \]
-Since $n>2$, the sphere $S^{n-1}$ is simply connected. The direct proof for $S^2$ extends verbatim to all spheres of dimension at least $2$: homotope a loop to finitely many geodesic arcs, choose a point missed by those arcs, and use stereographic projection to contract the loop.
+Since $n>2$, the sphere $S^{n-1}$ is simply connected. The proof of [[E-PER08-1.7]] for $S^2$ applies to every sphere of dimension at least $2$: homotope a loop to finitely many geodesic arcs, choose a point missed by those arcs, and use stereographic projection to contract the loop.
 
 The $n$-ball is also simply connected. Van Kampen therefore gives
 \[
