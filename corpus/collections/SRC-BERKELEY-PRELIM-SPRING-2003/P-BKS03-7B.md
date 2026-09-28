@@ -22,7 +22,7 @@ If $f$ has two distinct fixed points in the disk, prove that $f(z)=z$ identicall
 :::
 
 ::: {.solution}
-Let $S$ be a linear fractional transformation which maps $D$ onto itself so that $S(0)=x_1$. Then $g=S^{-1}\circ f\circ S$ has the same properties as $f$ and its two fixed points are $0=S^{-1}(z_1)$ and $y=S^{-1}(z_2)$.
+Let $D$ be the unit disk and let $z_1\neq z_2$ be the two fixed points of $f$. Let $S$ be a linear fractional transformation which maps $D$ onto itself so that $S(0)=z_1$. Then $g=S^{-1}\circ f\circ S$ has the same properties as $f$ and its two fixed points are $0=S^{-1}(z_1)$ and $y=S^{-1}(z_2)$.
 
 Since $g(0)=0$ we can define the analytic function $h(z)=g(z)/z$. On the circle $\abs{z}=1-\varepsilon$ for fixed $\varepsilon\in(0,1)$, we have $\abs{h(z)}=\abs{g(z)}/\abs{z}\leq1/(1-\varepsilon)$, so the maximum principle implies $\abs{h(z)}\leq1/(1-\varepsilon)$ for $\abs{z}\leq1-\varepsilon$. This holds for arbitrarily small $\varepsilon>0$, so $\abs{h(z)}\leq1$ for all $z\in D$.
 
