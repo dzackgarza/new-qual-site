@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let D be the region obtained by removing the interval [0, 1) from the unit disk $| z | < 1$ . Find a conformal map from D onto the open unit disk.
+Let $D$ be the region obtained by removing the interval $[0, 1)$ from the unit disk $\abs{z} < 1$. Find a conformal map from $D$ onto the open unit disk.
 :::
 
 ::: {.solution}
