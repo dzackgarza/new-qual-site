@@ -25,50 +25,31 @@ Is this fact true if one uses the box topology instead of the product topology?
 :::
 
 ::: {.solution}
-**Goal.** Characterize convergence in a product space, and decide the box-topology analogue.
+<1>1. In the product topology, if $\mathbf x_n\to\mathbf x$, then $\pi_\alpha(\mathbf x_n)\to\pi_\alpha(\mathbf x)$ for every $\alpha$.
 
-<1>1. In the product topology, $\mathbf x_n \to \mathbf x$ iff $\pi_\alpha(\mathbf x_n) \to \pi_\alpha(\mathbf x)$ for every $\alpha$.
-<2>1. ($\Rightarrow$) Each projection $\pi_\alpha$ is continuous.
 ::: {.proof}
-the product topology is the coarsest making all projections continuous.
-:::
-<2>2. Hence $\pi_\alpha(\mathbf x_n) \to \pi_\alpha(\mathbf x)$.
-::: {.proof}
-continuous maps preserve convergence.
-:::
-<2>3. ($\Leftarrow$) Suppose each coordinate converges. A basic neighborhood of $\mathbf x$ is $\prod_\alpha U_\alpha$ with $U_\alpha = X_\alpha$ for all but finitely many $\alpha$.
-::: {.proof}
-this is the definition of the product topology basis.
-:::
-<2>4. For each of the finitely many nontrivial $U_\alpha$, there is $N_\alpha$ with $\pi_\alpha(\mathbf x_n) \in U_\alpha$ for $n \ge N_\alpha$.
-::: {.proof}
-coordinate convergence.
-:::
-<2>5. Taking $N = \max_\alpha N_\alpha$, $\mathbf x_n$ lies in the basic neighborhood for all $n \ge N$.
-::: {.proof}
-the maximum is over finitely many indices.
-:::
-<2>6. Hence $\mathbf x_n \to \mathbf x$.
-::: {.proof}
-every basic neighborhood eventually contains the sequence.
+Each projection $\pi_\alpha$ is continuous, and a continuous map carries a convergent sequence to a sequence converging to the image of the limit.
 :::
 
-<1>2. The box topology analogue fails.
-<2>1. In the box topology, basic neighborhoods are $\prod_\alpha U_\alpha$ with each $U_\alpha$ open (no finiteness restriction).
+<1>2. In the product topology, if $\pi_\alpha(\mathbf x_n)\to\pi_\alpha(\mathbf x)$ for every $\alpha$, then $\mathbf x_n\to\mathbf x$.
+
 ::: {.proof}
-definition of the box topology.
-:::
-<2>2. Counterexample: $X = \RR^\NN$ with the box topology, $\mathbf x_n = (1/n, 1/n, 1/n, \dots)$.
-::: {.proof}
-each coordinate converges to $0$, but the sequence does not converge to $\mathbf 0$.
-:::
-<2>3. The sequence does not converge to $\mathbf 0$ in the box topology.
-::: {.proof}
-the box neighborhood $\prod_{k} (-1/k, 1/k)$ contains no $\mathbf x_n$ (since the $n$-th coordinate of $\mathbf x_n$ is $1/n$, which is not in $(-1/n, 1/n)$ for the $n$-th factor when $n$ is large enough relative to the neighborhood's $n$-th interval).
+A basic neighborhood of $\mathbf x$ is $\prod_\alpha U_\alpha$ with $U_\alpha$ open and $U_\alpha=X_\alpha$ except for $\alpha$ in a finite set $F$.
+For each $\alpha\in F$ choose $N_\alpha$ with $\pi_\alpha(\mathbf x_n)\in U_\alpha$ for $n\ge N_\alpha$.
+For $n\ge\max_{\alpha\in F}N_\alpha$, every coordinate of $\mathbf x_n$ lies in the corresponding $U_\alpha$, so $\mathbf x_n\in\prod_\alpha U_\alpha$.
 :::
 
-<1>3. Q.E.D.
+<1>3. In the box topology the equivalence fails: in $\RR^\omega$ the sequence $\mathbf x_n=(\frac1n,\frac1n,\frac1n,\ldots)$ converges to $0$ in every coordinate but does not converge to $\mathbf 0$.
+
 ::: {.proof}
-<1>1 proves the product-topology statement; <1>2 shows it fails for the box topology.
+The set $B=\prod_{k\ge1}(-\frac1k,\frac1k)$ is a box neighborhood of $\mathbf 0$.
+The $n$-th coordinate of $\mathbf x_n$ is $\frac1n\notin(-\frac1n,\frac1n)$, so $\mathbf x_n\notin B$ for every $n$.
+The implication of step <1>1 still holds, since projections are continuous in the box topology.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 prove the equivalence for the product topology, and step <1>3 answers the question for the box topology.
 :::
 :::
