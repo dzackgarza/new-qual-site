@@ -61,8 +61,8 @@ $n_q=p^2$. Hence
 q\mid p^2-1=(p-1)(p+1).
 \]
 Because $q>p$, the prime $q$ cannot divide $p-1$, so $q\mid p+1$. Thus
-$q=p+1$. The only consecutive primes with the smaller one prime and $p+1$
-also prime are $p=2$, $q=3$.
+$q=p+1$. One of $p$ and $p+1$ is even, so the only primes with $q=p+1$ are
+$p=2$, $q=3$.
 
 It remains to consider $|G|=12$. If $n_3=4$, then the four Sylow
 $3$-subgroups have pairwise trivial intersection and contribute
