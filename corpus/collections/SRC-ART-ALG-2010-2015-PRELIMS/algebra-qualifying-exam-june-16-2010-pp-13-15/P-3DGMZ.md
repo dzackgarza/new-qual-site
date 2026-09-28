@@ -33,9 +33,7 @@ Include information about the existence, order, and number $n_p$ of Sylow $p$-su
 Let $G$ be finite, let $p$ be prime, and write
 $|G|=p^a m$ with $a\geq0$ and $p\nmid m$.
 
-<1>1. Existence, containment, and conjugacy.
-
-A Sylow $p$-subgroup is a subgroup of order $p^a$.
+<1>1. A Sylow $p$-subgroup is a subgroup of order $p^a$.
 Such subgroups exist. Every subgroup of $G$ whose order
 is a power of $p$ is contained in a Sylow $p$-subgroup.
 Any two Sylow $p$-subgroups are conjugate by an element
@@ -77,7 +75,6 @@ If $P$ is normal, its conjugacy orbit has one member;
 conjugacy in step <1>1 then implies that it is the only
 Sylow subgroup. Conversely, if it is unique, each conjugate
 has the same order and must equal $P$, which is normality.
-For $a=0$, the unique Sylow subgroup is the trivial group,
-so all statements above also cover primes not dividing $|G|$.
+For $a=0$, the unique Sylow $p$-subgroup is the trivial group.
 :::
 :::
