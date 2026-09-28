@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-05
 kind: problem
-title: Evaluate $\int_0^{2\pi}e^{e^{i\theta}-i\theta}\,d\theta$
+title: The integral $\int_0^{2\pi}e^{e^{i\theta}-i\theta}\,d\theta$
 classification:
   areas:
   - prelim
