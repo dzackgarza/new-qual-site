@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-F68KP
 kind: problem
-title: Nonmetrizability of the Stone-Cech compactification
+title: Nonmetrizability of the Stone--Čech compactification
 classification:
   areas:
   - topology
@@ -55,6 +55,6 @@ Thus there must exist a sequence $(x_n)_{n=1}^\infty \subseteq X$ such that $x_n
 This contradicts the existence of such a converging sequence.
 <2>5. Therefore $\beta(X)$ is not metrizable.
 
-<1>3. Conclusion:
-Points in $\beta(X) \setminus X$ are not sequential limits of $X$, and $\beta(X)$ is not metrizable for any noncompact completely regular space $X$. Q.E.D.
+<1>3. Q.E.D.
+Step <1>1 proves part (a) and step <1>2 proves part (b).
 :::
