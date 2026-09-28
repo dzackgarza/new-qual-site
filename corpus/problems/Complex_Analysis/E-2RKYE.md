@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2RKYE
 kind: problem
-title: Trigonometric functions
+title: $\int_0^{2\pi}\frac{d\theta}{1+a^2-2a\cos\theta}$
 classification:
   areas:
   - complex-analysis
