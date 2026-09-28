@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-15
 kind: problem
-title: Boundary modulus one with f non-vanishing implies constant (Schwarz reflection)
+title: A nonvanishing function holomorphic on the disc with $\abs f=1$ on the circle is constant
 classification:
   areas:
   - complex-analysis
