@@ -87,7 +87,7 @@ $$
 \frac1z-\frac1{z^2}+\frac1{z^3}-\cdots
 -\frac19-\frac{z^2}{81}-\frac{z^4}{729}-\cdots,
 $$
-in agreement with the two series above.
+in agreement with the series in steps <1>1 and <1>2.
 :::
 
 <1>4. Q.E.D.
