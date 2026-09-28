@@ -66,18 +66,18 @@ requires a Schur function to be nonconstant, the transform is not a
 Schur function.
 :::
 
-<1>2. The source-corrected assertion is the following: a Schur function
-is any holomorphic map
+<1>2. Call a holomorphic map
 $$
-\DD\to\overline{\DD},
+\DD\to\overline{\DD}
 $$
-constants allowed, and if $f$ is nonconstant then its displayed
-transform is again a Schur function in this corrected sense.
+a Schur function in the wide sense, constants allowed. If $f$ is a
+nonconstant Schur function, then its displayed transform is a Schur
+function in the wide sense.
 
 ::: {.proof}
-This is the correction recorded in the retained solution packet. It
-removes only the requirement that the output be nonconstant; the input
-$f$ remains nonconstant.
+Steps <1>3--<1>8 prove this assertion. It differs from the printed
+assertion only in allowing the transform to be constant; the input $f$
+remains nonconstant.
 :::
 
 <1>3. For a nonconstant holomorphic function
@@ -229,20 +229,20 @@ $$
 Dividing by $z$ gives the displayed expression.
 :::
 
-<1>9. Hence the printed problem is false as stated, while the corrected
-formulation from the source packet is true.
+<1>9. Hence the printed assertion is false, while the assertion of
+step <1>2 is true.
 
 ::: {.proof}
-Step <1>1 disproves the printed assertion. Under the corrected
-definition from step <1>2, steps <1>7--<1>8 show that the transform
-extends holomorphically to the disk and has absolute value at most
-$1$, which is exactly the corrected Schur condition.
+Step <1>1 disproves the printed assertion. Steps <1>7--<1>8 show that
+the transform extends holomorphically to the disk and has absolute
+value at most $1$, which is the wide-sense Schur condition of step
+<1>2.
 :::
 
 <1>10. Q.E.D.
 
 ::: {.proof}
-Step <1>9 gives both the necessary counterexample and the proof of the
-source-corrected statement.
+Step <1>9 gives both the counterexample to the printed assertion and
+the proof of the assertion of step <1>2.
 :::
 :::
