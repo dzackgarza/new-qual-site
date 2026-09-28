@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-2PNEG|covering space]] with $\tilde X$ path-connected and $X$ path-connected and locally path-connected.
+Let $p\colon(\tilde X, \tilde x_0)\to(X, x_0)$ be a [[D-ANO2D|covering space]] with $\tilde X$ path-connected and $X$ path-connected and locally path-connected.
 Let $G\coloneqq\pi_1(X, x_0)$ and $H\coloneqq p_*\pi_1(\tilde X, \tilde x_0)$, and let $G(\tilde X)$ be the group of [[D-4VGAW|deck transformations]].
 Then
 
