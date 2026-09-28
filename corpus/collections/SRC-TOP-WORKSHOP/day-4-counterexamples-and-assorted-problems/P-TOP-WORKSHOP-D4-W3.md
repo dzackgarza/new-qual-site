@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-W3
 kind: problem
-title: Spaces in which open sets are compact (workshop warm-up)
+title: Spaces in which every open set is compact; a Hausdorff such space is finite
 classification:
   areas:
   - topology
