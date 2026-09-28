@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-3A
 kind: problem
-title: Images of polynomial maps $\mathbb R\to\mathbb R$ and $\mathbb R^2\to\mathbb R$
+title: Images of polynomial maps $\RR\to\RR$ and $\RR^2\to\RR$
 classification:
   areas:
   - prelim
@@ -27,9 +27,9 @@ audit:
 (a) Describe all sets of reals that can be the image of the real line under a polynomial with real coefficients.
 
 (b) Find the image of the real plane under the polynomial
-\[
+$$
 x^2+(xy-1)^2.
-\]
+$$
 
 (c) Describe all sets of reals that can be the image of the real plane under a polynomial in two variables with real coefficients.
 :::
