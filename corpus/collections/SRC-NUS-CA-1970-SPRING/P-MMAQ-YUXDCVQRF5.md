@@ -23,11 +23,11 @@ Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\s
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the definite trigonometric integral $I = \int_0^{\pi/2} \frac{1}{3 + \sin^2 x} \, dx$ using the method of residues.
+Let $I = \int_0^{\pi/2} \frac{1}{3 + \sin^2 x} \, dx$.
 
 * * *
 
-### Step 1: Symmetry and Double-Angle Reduction
+### Step 1: Symmetry and double-angle reduction
 
 <1>1. **Express the integral over $[0, 2\pi]$ in terms of $\cos(2x)$.** <2>1. Use the half-angle identity $\sin^2 x = \frac{1 - \cos(2x)}{2}$.
 *Proof:* Standard trigonometric identity.
@@ -40,7 +40,7 @@ Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\s
 
 * * *
 
-### Step 2: Convert to a Unit Circle Contour Integral
+### Step 2: A contour integral over the unit circle
 
 <1>2. **Substitute $z = e^{i\theta}$ on the unit circle $C = \{z \in \mathbb{C} : |z| = 1\}$.** <2>1. For $z = e^{i\theta}$, $dz = i e^{i\theta} d\theta = i z d\theta \implies d\theta = \frac{dz}{i z}$.
 *Proof:* Parametrization of unit circle.
@@ -52,7 +52,7 @@ Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\s
 
 * * *
 
-### Step 3: Find Singularities and Enclosed Residue
+### Step 3: Poles and the enclosed residue
 
 <1>3. **Find the roots of $z^2 - 14z + 1 = 0$.** <2>1. By the quadratic formula: $$z = \frac{14 \pm \sqrt{196 - 4}}{2} = \frac{14 \pm \sqrt{192}}{2} = \frac{14 \pm 8\sqrt{3}}{2} = 7 \pm 4\sqrt{3}.$$ *Proof:* Solving quadratic equation.
 <2>2. Let $z_1 = 7 - 4\sqrt{3}$ and $z_2 = 7 + 4\sqrt{3}$.
@@ -66,7 +66,7 @@ Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\s
 
 * * *
 
-### Step 4: Final Evaluation
+### Step 4: The value of $I$
 
 <1>5. **Evaluate the contour integral $I$.** <2>1. By the Cauchy Residue Theorem: $$\oint_C \frac{dz}{z^2 - 14z + 1} = 2\pi i \, \text{Res}(f, z_1) = 2\pi i \left( -\frac{1}{8\sqrt{3}} \right) = -\frac{\pi i}{4\sqrt{3}}.$$ *Proof:* Application of the Residue Theorem to the single enclosed pole $z_1$.
 <2>2. From <1>2.<2>4, $I = i \oint_C \frac{dz}{z^2 - 14z + 1}$: $$I = i \left( -\frac{\pi i}{4\sqrt{3}} \right) = -i^2 \frac{\pi}{4\sqrt{3}} = \frac{\pi}{4\sqrt{3}} = \frac{\pi\sqrt{3}}{12}.$$ *Proof:* $-i^2 = 1$.
