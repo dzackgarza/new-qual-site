@@ -83,8 +83,8 @@ t\in\ker\phi
 \iff ts\in(r)=(sk).
 \]
 Thus $ts=usk$ for some $u\in R$. Since $R$ is a domain and $s\ne0$, cancellation
-gives $t=uk$, so $t\in(k)$. Conversely, every $t\in(k)$ plainly lies in the
-kernel. Hence $\ker\phi=(k)$, and the first isomorphism theorem gives
+gives $t=uk$, so $t\in(k)$. Conversely, if $t=uk$, then $tsa=u(sk)a=ura=0$, so
+$t\in\ker\phi$. Hence $\ker\phi=(k)$, and the first isomorphism theorem gives
 \[
 sA\cong R/(k).
 \]
