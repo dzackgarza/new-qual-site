@@ -11,9 +11,9 @@ topics:
 
 # Covering spaces
 
-![A covering map and a lifted path](../../../../assets/assets/Topology/figures/image_2021-01-10-13-45-42.png)
+![An evenly covered open set $U$: $p^{-1}(U)$ is a disjoint union of open sets, each mapped homeomorphically onto $U$ by $p$](../../../../assets/assets/Topology/figures/image_2021-01-10-13-45-42.png)
 
-![A more complicated situation](../../../../assets/assets/Topology/figures/image_2021-01-09-00-19-03.png)
+![A covering space of a disk with three holes, with a loop based at $x$ and its lift](../../../../assets/assets/Topology/figures/image_2021-01-09-00-19-03.png)
 
 ## Basic properties
 
