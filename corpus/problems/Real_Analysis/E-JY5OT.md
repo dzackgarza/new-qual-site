@@ -27,32 +27,31 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Reverse triangle inequality: $||x| - |y|| \le |x - y|$ in any normed space.
-<2>1. $|x| \le |x - y| + |y|$, so $|x| - |y| \le |x - y|$.
+(a) In a normed space, $\big||x| - |y|\big| \le |x - y|$.
+
+<1>1. $|x| - |y| \le |x - y|$.
+
 ::: {.proof}
-triangle inequality applied to $x = (x - y) + y$.
-:::
-<2>2. Symmetrically $|y| - |x| \le |x - y|$.
-::: {.proof}
-triangle inequality applied to $y = (y - x) + x$, using $|y - x| = |x - y|$.
-:::
-<2>3. Q.E.D.
-::: {.proof}
-<2>1 and <2>2 combine to $||x| - |y|| \le |x - y|$.
+The triangle inequality applied to $x = (x - y) + y$ gives $|x| \le |x - y| + |y|$.
 :::
 
-<1>2. Definitions of $\sup E$ and $\inf E$ for $E \subseteq \RR$.
-<2>1. $\sup E$ is the least upper bound: $\sup E = s$ iff (i) $x \le s$ for all $x \in E$ and (ii) for every $\eps > 0$ there is $x \in E$ with $x > s - \eps$ (equivalently, $t \ge x$ for all $x \in E$ forces $t \ge s$).
+<1>2. $|y| - |x| \le |x - y|$.
+
 ::: {.proof}
-definition of the supremum; exists (as a real number or $+\infty$) for every nonempty $E$ by completeness of $\RR$.
-:::
-<2>2. $\inf E$ is the greatest lower bound: $\inf E = i$ iff (i) $x \ge i$ for all $x \in E$ and (ii) for every $\eps > 0$ there is $x \in E$ with $x < i + \eps$.
-::: {.proof}
-definition of the infimum; $\inf E = -\sup(-E)$.
+The triangle inequality applied to $y = (y - x) + x$ gives $|y| \le |y - x| + |x|$, and $|y - x| = |x - y|$.
 :::
 
-<1>3. Archimedean property: for every real $x$ there is an integer $n$ with $n > x$ (equivalently, for every $\eps > 0$ there is $n \in \NN$ with $1/n < \eps$).
+<1>3. Q.E.D.
+
 ::: {.proof}
-if no integer exceeded $x$, then $\NN$ would be bounded above, so by completeness it would have a least upper bound $s$; but then $s - 1$ is not an upper bound, so some $n > s - 1$, giving $n + 1 > s$, contradicting that $s$ is an upper bound.
+Steps <1>1 and <1>2 bound both $|x| - |y|$ and its negative by $|x - y|$.
+:::
+
+(b) Let $E \subseteq \RR$ be nonempty. If $E$ is bounded above, $\sup E$ is the real number $s$ such that $x \le s$ for all $x \in E$, and $s \le t$ for every $t$ with $x \le t$ for all $x \in E$; equivalently, $s$ is an upper bound and for every $\eps > 0$ there is $x \in E$ with $x > s - \eps$. By completeness of $\RR$ it exists. If $E$ is not bounded above, $\sup E = +\infty$. Similarly $\inf E$ is the greatest lower bound of $E$, or $-\infty$ if $E$ is not bounded below, and $\inf E = -\sup(-E)$.
+
+(c) The Archimedean property: for every $x \in \RR$ there is $n \in \NN$ with $n > x$. Equivalently, for every $\eps > 0$ there is $n \in \NN$ with $1/n < \eps$.
+
+::: {.proof}
+Suppose no $n \in \NN$ exceeds $x$. Then $\NN$ is bounded above, so by completeness it has a least upper bound $s$. Since $s - 1$ is not an upper bound, some $n \in \NN$ has $n > s - 1$, so $n + 1 > s$ with $n + 1 \in \NN$, contradicting that $s$ is an upper bound.
 :::
 :::
