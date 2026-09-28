@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-20
 kind: problem
-title: A real-line integral with x sin x over a quadratic denominator
+title: The integral $\int_{-\infty}^\infty x\sin x/(x^2+4x+20)\,dx$ by residues
 classification:
   areas:
   - prelim
