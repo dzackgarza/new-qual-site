@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB07S-11
 kind: problem
-title: Implicit function theorem at and beyond its hypotheses
+title: Implicit function theorem for $u^3+xv=y$, $v^3+yu=x$, and an implicit function at a singular Jacobian
 classification:
   areas:
   - prelim
