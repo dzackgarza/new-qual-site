@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-P5UNP
 kind: theorem
 title: Fatou's lemma
-slogan: 'For nonnegative functions, integration puts the liminf below the liminf of the integrals.'
+slogan: 'For $f_n\in L^+$, the integral of $\liminf f_n$ is at most the $\liminf$ of the integrals.'
 prompts:
 - State Fatou's lemma.
 classification:
