@@ -47,7 +47,7 @@ It is finite and birational, and it is an isomorphism if and only if $S$ is satu
 
 ::: {.remark title="Non-normal toric varieties"}
 The toric variety $X_\Sigma$ of a fan $\Sigma$ is normal.
-A variety $X$ containing a torus $T$ as a dense open subset, with the action of $T$ on itself extending to $X$, need not be normal; if $X$ is affine, its normalization is $X_\sigma$ for the cone $\sigma$ of the construction above.
+A variety $X$ containing a torus $T$ as a dense open subset, with the action of $T$ on itself extending to $X$, need not be normal; if $X$ is affine, its normalization is $X_\sigma$ for $\sigma=\Cone(S')\dual$, with $S'$ a finite generating set of its semigroup $S$.
 The cuspidal cubic $V(x^3 - y^2)$ contains the torus $\ts{(t^2, t^3) \st t \in \GG_m}$, so $S = \gens{2,3} \subseteq \ZZ$, which is not saturated because $2 \cdot 1 \in S$ while $1 \notin S$.
 The saturation is $\NN \subseteq \ZZ$, and the normalisation is $\AA^1 \to V(x^3 - y^2)$, $t \mapsto (t^2, t^3)$.
 :::
