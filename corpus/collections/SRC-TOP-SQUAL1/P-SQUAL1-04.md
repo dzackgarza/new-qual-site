@@ -17,8 +17,6 @@ A function $f:X\to Y$ is called **open** if $f(U)$ is open in $Y$ for every open
 
 1. Give an example of a continuous function that is not open.
 2. Let $p:X\to Y$ be continuous and open, and let $A\subseteq X$ be open. Show that the restriction
-\[
-q:A\to p(A)
-\]
+$$q:A\to p(A)$$
 is open, where $p(A)$ has the subspace topology from $Y$.
 :::
