@@ -17,6 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f ( x ) , - \infty < x < \infty ,$ , is a continuous real valued function, that $f ^ { \prime } ( x )$ exists for x $\neq 0$ , and that $\operatorname* { l i m } _ { x \to 0 } f ^ { \prime } ( x )$ exists.
-Prove that $f ^ { \prime } ( 0 )$ exists.
+Suppose that $f(x)$, $-\infty<x<\infty$, is a continuous real valued function, that $f'(x)$ exists for $x\neq0$, and that $\lim_{x\to0}f'(x)$ exists.
+Prove that $f'(0)$ exists.
 :::
