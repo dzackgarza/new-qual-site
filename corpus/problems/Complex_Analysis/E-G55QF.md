@@ -19,8 +19,7 @@ Find a conformal map from $\DD^c \intersect \HH$ to $\HH$ using cross-ratios.
 :::
 
 ::: {.solution}
-Idea: all cross-ratios send the complement of a positively oriented region $(a,b,c)$ to the half-hemisphere $(1,0,\infty)$ on $\CP^1$.
-So take $(i, -1, 1)\to (1,0,\infty)$:
+The unit circle and the real line both pass through $\pm1$, so a fractional linear transformation sending $-1\to0$ and $1\to\infty$ sends both to lines through $0$. Take the cross-ratio sending $(i, -1, 1)\to (1,0,\infty)$:
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2022-01-02_19-52-53.png)
 
