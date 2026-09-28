@@ -30,15 +30,15 @@ source:
   - P-BERK86S-11
   - P-BERK86S-12
   - id: P-UCLAB06S-10
-    comment: Spring 1986 Problem 13; commuting complex matrices have a common eigenvector
+    comment: Problem 13
   - id: P-BERK96S-02
-    comment: Spring 1986 Problem 14; repeated verbatim as Spring 1996 Problem 2
+    comment: Problem 14
   - P-BERK86S-15
   - P-BERK86S-16
   - P-BERK86S-17
   - P-BERK86S-18
   - id: E-AMD-UXMX7R25
-    comment: Spring 1986 Problem 19; the additive group of rationals is not finitely generated
+    comment: Problem 19
   - P-BERK86S-20
   date:
     kind: academic-term
