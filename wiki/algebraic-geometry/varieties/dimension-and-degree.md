@@ -9,11 +9,9 @@ topics:
 
 # Dimension and degree
 
-Two numbers attached to a variety, and one polynomial that carries both.
-
 [[D-5LJUX]]
 
-Dimension has three descriptions and they are used for different things: the chain definition answers "what is the dimension", the Krull statement makes commutative algebra available, and the transcendence degree is what one actually computes with.
+For an affine variety $X$, $\dim X$ is the length of the longest chain of irreducible closed subsets, it equals the Krull dimension of $A(X)$, and for $X$ irreducible it equals $\operatorname{trdeg}_kk(X)$.
 
 [[PR-VARHT]]
 
