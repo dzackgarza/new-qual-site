@@ -56,8 +56,7 @@ $$
 for every $z\in\DD$.
 
 ::: {.proof}
-This is the standard Schwarz lemma requested in the omitted first part of
-the source problem.
+This is Schwarz's lemma; the source's first part asks for its statement.
 :::
 
 <1>2. The inverse map
@@ -81,7 +80,7 @@ $$
 Then $\varphi:\DD\to\DD$ is holomorphic and satisfies $\varphi(0)=0$.
 
 ::: {.proof}
-The corrected hypothesis $g(D)\subseteq f(D)$ makes the composition
+The hypothesis $g(D)\subseteq f(D)$ makes the composition
 well-defined. Step <1>2 shows that it is holomorphic. Moreover,
 $$
 \varphi(0)
@@ -155,5 +154,5 @@ is not contained in
 $$
 f(D_r)=D_{r/2}.
 $$
-The corrected statement above adds the standard subordination hypothesis.
+The corrected statement adds the subordination hypothesis $g(D)\subseteq f(D)$.
 :::
