@@ -56,7 +56,7 @@ A & q\in U  \\
 \end{cases}
 \qquad (q_* \underline{A})_p =
 \begin{cases}
-A & p=q  \\
+A & p\in\cl_X(\ts{q})  \\
 0 & \text{else}.
 \end{cases}
 \]
@@ -71,12 +71,12 @@ A & q\not\in U  \\
 \right)^{\scriptscriptstyle \mathrm{sh}}
 .\]
 
-- The presheaf and its sheafification $\mcf$ have the same stalks, and a computation shows
+- The presheaf and its sheafification $\mcf$ have the same stalks, and
 \[
 \mcf_p =
 \begin{cases}
-A & p\neq q \\
-0 & p=q.
+A & p\notin\cl_X(\ts{q}) \\
+0 & p\in\cl_X(\ts{q}).
 \end{cases}
 \]
 
