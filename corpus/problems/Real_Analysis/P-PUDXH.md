@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: P-PUDXH
 kind: problem
-title: $\int_0^\infty\bigl(\int_0^\infty f(y)\,dy\bigr)\frac{g(x)}{x}\,dx\le AB$ for
-  nonnegative measurable $f,g$ on $[0,\infty)$
+title: $\int_0^\infty\frac{g(x)}{x}\int_0^x f(y)\,dy\,dx\le AB$ with $A=\int_0^\infty
+  f(y)y^{-1/2}\,dy$ and $B=\|g\|_2$
 classification:
   areas:
   - real-analysis
@@ -33,36 +33,27 @@ Show that
 :::
 
 ::: {.solution}
-*Setup note.* The statement as printed is garbled: the inner integral $\int_0^\infty f(y)\,dy$ does not depend on $x$ and is typically infinite, and the definition of $B$ is malformed. The natural intended statement (a Hardy-type inequality) is: for non-negative measurable $f, g$ on $[0,\infty)$ with
-\[
-A \da \int_0^\infty f(y)\, y^{-1/2}\, dy < \infty, \qquad B \da \qty{\int_0^\infty g(y)^2\, dy}^{1/2} < \infty,
-\]
-one has
-\[
-\int_0^\infty \frac{g(x)}{x} \int_0^x f(y)\, dy \; dx \le AB.
-\]
-We prove this corrected form.
+We prove $\int_0^\infty \frac{g(x)}{x}\int_0^x f(y)\,dy\,dx \le AB$ with $A = \int_0^\infty f(y)y^{-1/2}\,dy$ and $B = \left(\int_0^\infty g(y)^2\,dy\right)^{1/2}$; see the remark below.
 
-<1>1. Write $F(x) \da \int_0^x f(y)\,dy$ and expand the double integral by Tonelli.
-    ::: {.proof}
-    all integrands are non-negative, so Tonelli applies:
-    \[
-    \int_0^\infty \frac{g(x)}{x} F(x)\, dx = \int_0^\infty \frac{g(x)}{x} \int_0^x f(y)\,dy\,dx = \int_0^\infty f(y) \int_y^\infty \frac{g(x)}{x}\, dx\, dy .
-    \]
-    :::
-<1>2. Bound the inner integral for each fixed $y > 0$.
-    ::: {.proof}
-    by Cauchy--Schwarz,
-    \[
-    \int_y^\infty \frac{g(x)}{x}\, dx \le \qty{\int_y^\infty g(x)^2\,dx}^{1/2} \qty{\int_y^\infty x^{-2}\,dx}^{1/2} \le B \cdot y^{-1/2}.
-    \]
-    :::
-<1>3. Conclude.
-    ::: {.proof}
-    substituting <1>2 into <1>1,
-    \[
-    \int_0^\infty \frac{g(x)}{x} F(x)\,dx \le \int_0^\infty f(y)\, B y^{-1/2}\, dy = BA.
-    \]
-    :::
-<1>4. Q.E.D.
+<1>1. $\int_0^\infty \frac{g(x)}{x}\int_0^x f(y)\,dy\,dx = \int_0^\infty f(y) \int_y^\infty \frac{g(x)}{x}\, dx\, dy$.
+
+::: {.proof}
+The integrand $f(y)g(x)x^{-1}\chi_{\theset{y < x}}$ is nonnegative and measurable on $(0,\infty)^2$, so Tonelli's theorem allows exchanging the order of integration.
+:::
+
+<1>2. For $y > 0$, $\int_y^\infty \frac{g(x)}{x}\, dx \le B y^{-1/2}$.
+
+::: {.proof}
+By the Cauchy--Schwarz inequality, $\int_y^\infty \frac{g(x)}{x}\, dx \le \left(\int_y^\infty g^2\right)^{1/2}\left(\int_y^\infty x^{-2}\,dx\right)^{1/2} \le B\,y^{-1/2}$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2, the left side is at most $\int_0^\infty f(y)\,B y^{-1/2}\, dy = AB$.
+:::
+:::
+
+::: {.remark}
+As printed, the inner integral $\int_0^\infty f(y)\,dy$ does not depend on $x$, and $B$ is written with the square outside the integral. The inequality above takes the inner integral over $[0,x]$ and $B = \|g\|_{L^2}$.
 :::
