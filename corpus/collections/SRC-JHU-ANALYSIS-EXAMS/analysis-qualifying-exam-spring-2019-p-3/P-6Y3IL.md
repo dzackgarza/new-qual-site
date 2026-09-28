@@ -113,6 +113,6 @@ nor
 \]
 holds.
 
-Thus the source assertion is false as stated: the weighted pointwise decay in (A) does not rule out high-frequency oscillation and is insufficient to upgrade weak convergence to strong convergence.
+Thus condition (A) together with weak convergence does not imply strong convergence: the sequence $f_j$ satisfies the weighted pointwise bound (A) and oscillates at frequency $j$ on $Q$.
 :::
 :::
