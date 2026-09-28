@@ -187,11 +187,11 @@ $$
 Any nonzero vector in this kernel is an eigenvector.
 :::
 
-<1>7. Let
+<1>7. Let $v$ be an eigenvector from step <1>6 and let
 $$
-E=Fv
+E=\operatorname{span}\{v\}
 $$
-be an eigenline from step <1>6. There is a $T$-invariant subspace $W$ such
+be the line it spans. There is a $T$-invariant subspace $W$ such
 that
 $$
 V=E\oplus W.
@@ -251,7 +251,7 @@ $$
 The assertion is trivial for $\dim V=0$. Suppose $\dim V>0$. By steps
 <1>6--<1>7,
 $$
-V=Fv\oplus W
+V=\operatorname{span}\{v\}\oplus W
 $$
 with $v$ an eigenvector and $W$ invariant. By step <1>8, the restriction
 $T|_W$ is completely reducible. Since
