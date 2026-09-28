@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS01-4
 kind: problem
-title: Evaluate $\int_0^\infty(1+x^5)^{-1}\,dx$
+title: Integral of $1/(1+x^5)$ over $(0,\infty)$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
