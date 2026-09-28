@@ -40,7 +40,7 @@ Thus
 =z+\frac{z^3}{3}+\frac{2z^5}{15}
 +\frac{17z^7}{315}+\cdots.
 \]
-For example, the formula follows from
+The formula follows from
 \[
 \tan z=-i\frac{e^{2iz}-1}{e^{2iz}+1}
 =-i+\frac{2i}{e^{2iz}+1}
@@ -66,7 +66,7 @@ so
 \boxed{z=\frac\pi2+k\pi,
 \qquad k\in\mathbb Z.}
 \]
-Conversely these points are plainly zeros of $\cos z$. They are simple because
+Conversely, $\cos(\frac\pi2+k\pi)=0$. These zeros are simple because
 \[
 -\sin\left(\frac\pi2+k\pi\right)\ne0,
 \]
