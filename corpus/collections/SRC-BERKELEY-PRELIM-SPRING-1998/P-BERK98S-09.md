@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-09
 kind: problem
-title: Growth and decay of powers of three two-by-two matrices
+title: Growth and decay of powers of three real $2\times2$ matrices
 classification:
   areas:
   - prelim
@@ -30,7 +30,7 @@ For which, if any, $i\in\{1,2,3\}$ is the sequence $(M_i^n)$ bounded away from $
 :::
 
 ::: {.solution}
-Fix any matrix norm. We prove the stronger trichotomy that
+Fix any matrix norm. We prove that
 $$
 \norm{M_1^n}\longrightarrow\infty,
 \qquad
