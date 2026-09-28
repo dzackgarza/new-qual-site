@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-MCB7V
 kind: theorem
 title: Locally uniformly bounded holomorphic families are equicontinuous and normal
-slogan: 'Local uniform boundedness upgrades holomorphic families to compact control: equicontinuity on compacta and normality.'
+slogan: 'A family of holomorphic functions that is uniformly bounded on compact subsets is equicontinuous on compact subsets and normal.'
 classification:
   areas:
   - complex-analysis
