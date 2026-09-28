@@ -81,5 +81,4 @@ source:
 ---
 
 Questions on varieties, from the Zariski topology and the Nullstellensatz through dimension, smoothness and normality, projective varieties, divisors, and the canonical bundle.
-The second group consists of worked examples: the cuspidal and nodal cubics, the quadric cone, the Segre quadric, the Weierstrass cubic, and cyclic quotient singularities.
-The source gives a solution only for the coordinate-ring question.
+The Examples section treats the cuspidal and nodal cubics, the quadric cone, the Segre quadric, the Weierstrass cubic, and cyclic quotient singularities.
