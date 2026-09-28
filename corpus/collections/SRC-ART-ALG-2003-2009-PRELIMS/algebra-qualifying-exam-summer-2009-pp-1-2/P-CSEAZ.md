@@ -36,10 +36,9 @@ c. Find all possible rational canonical forms for a 6 by 6 matrix over $\mathbf{
 :::
 
 ::: {.solution}
-Part (a) has no commutativity hypothesis. Its answer consists of the $39$
-groups in the table in step <1>5, the five groups in step <1>6, and the three
-groups in step <1>7. The action parameters in the table specify the
-semidirect products, not just their abstract factors.
+The $47$ groups of order $120$ in part (a) are the $39$ semidirect products
+specified in the table in step <1>5, the five groups in step <1>6, and the
+three groups in step <1>7.
 
 <1>1. An extension with finite abelian kernel $N$ and quotient $Q$ splits
 when $\gcd(|N|,|Q|)=1$.
@@ -73,8 +72,7 @@ $$
 T_m=\langle a,b\mid a^2=b^3=(ab)^m=1\rangle,
 \qquad T_3\cong A_4,\quad T_5\cong A_5.
 $$
-Here is an exact finite coset enumeration for the two presentation orders;
-it does not use a catalogue of finite groups.
+Coset enumeration gives the orders of the two presented groups.
 
 ```gap
 F := FreeGroup("a", "b");;
@@ -240,8 +238,8 @@ so this conjugation does nothing. Conversely, a change of generators in
 $P$ realizing the precomposition gives an isomorphism of semidirect
 products. Different types of $P$ cannot give isomorphic quotients.
 
-<2>4. We now check the action orbits rather than leaving the table as an
-enumeration claim. For $C_8$, changing a generator multiplies its image
+<2>4. Each row of the table lists one representative of each
+$\operatorname{Aut}(P)$-orbit of actions. For $C_8$, changing a generator multiplies its image
 by an odd integer, hence identifies $R$ with $-R$; this gives its six
 listed images. For $C_4\times C_2$, every automorphism has the form
 $$
@@ -346,9 +344,9 @@ Finally, a simple group of order $120$ would have six Sylow
 $5$-subgroups and hence embed in $A_6$. Its image would have index $3$.
 The action of the simple group $A_6$ on those three cosets is nontrivial
 but cannot be injective, since $360>6$, a contradiction. These cases
-exhaust all divisors of $120$. In each use of simplicity, the sign
-homomorphism is trivial and the nontrivial permutation action is
-faithful, explaining the alternating rather than symmetric target.
+exhaust all divisors of $120$. In each use of simplicity, the nontrivial
+permutation action is faithful and its composite with the sign
+homomorphism is trivial, so the image lies in the alternating group.
 
 <2>2. A composition series of a nonsolvable group of order $120$ must
 therefore have factors $A_5$ and $C_2$. The group has either a normal
@@ -383,11 +381,11 @@ $b=0$ and $a=0$; also $z=2a=0$.
 Finally an abelian group of order $120$ is the product of its Sylow
 subgroups; its odd part is $C_{15}$ and its $2$-part is one of the three
 abelian groups of order $8$ from step <1>5. This gives the stated three
-abelian groups, not the full answer to part (a).
+abelian groups.
 :::
 
 <1>8. For part (b), put $R=\mathbf Q[x]$, $p=x-3$, and $q=x+5$.
-The complete, irredundant list consists of
+The isomorphism classes are
 $$
 V_{a,b,c}=(R/(p^2))^a\oplus(R/(p))^b\oplus(R/(q))^c,
 \qquad a,b,c\geq0,\quad 2a+b+c=6.
