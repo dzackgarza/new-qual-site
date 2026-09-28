@@ -29,42 +29,43 @@ These form a field.
 
 ::: {.definition title="The Weierstrass functions"}
 Write $\Lambda' \da \Lambda \smz$.
-\[
+$$
 \wp(z) \da \frac{1}{z^2} + \sum_{\omega \in \Lambda'} \qty{ \frac{1}{(z-\omega)^2} - \frac{1}{\omega^2} },
 \qquad
 \wp'(z) = \sum_{\omega \in \Lambda} \frac{-2}{(z-\omega)^3} .
-\]
+$$
 The series converges locally uniformly on $\CC \setminus \Lambda$, so $\wp$ is elliptic with a double pole at each lattice point and no other poles; $\wp$ is even and $\wp'$ is odd.
 Set the Eisenstein series of the lattice,
-\[
+$$
 g_2 \da 60 \sum_{\omega \in \Lambda'} \frac{1}{\omega^4},
 \qquad
 g_3 \da 140 \sum_{\omega \in \Lambda'} \frac{1}{\omega^6},
 \qquad
 \Delta \da g_2^3 - 27 g_3^2 .
-\]
-Then
-\[
+$$
+:::
+
+::: {.theorem}
+$$
 (\wp')^2 = 4\wp^3 - g_2 \wp - g_3 ,
-\]
-and the field of elliptic functions for $\Lambda$ is exactly $\CC(\wp, \wp')$.
+$$
+and the field of elliptic functions for $\Lambda$ is $\CC(\wp, \wp')$.
 :::
 
 ::: {.remark}
-Subtracting $1/\omega^2$ inside the sum is what makes it converge: $\sum \abs{\omega}^{-2}$ diverges and $\sum \abs{\omega}^{-3}$ converges, and the bracket is $O(\abs\omega^{-3})$ for $z$ in a fixed compact set.
-That is also why $g_2, g_3$ start at weight $4$ and $6$: the weight-$2$ sum $\sum \omega^{-2}$ does not converge absolutely, and the odd-weight sums vanish because $\Lambda = -\Lambda$.
+For $z$ in a fixed compact set, the bracket $\frac{1}{(z-\omega)^2} - \frac{1}{\omega^2}$ is $O(\abs\omega^{-3})$, and $\sum_{\omega\in\Lambda'} \abs{\omega}^{-3}$ converges, so the series for $\wp$ converges; $\sum_{\omega\in\Lambda'}\abs{\omega}^{-2}$ diverges.
+For the same reason the Eisenstein series $G_{2k}\da\sum_{\omega \in \Lambda'} \omega^{-2k}$ converge absolutely for $k\ge2$, and the odd-weight sums vanish because $\Lambda = -\Lambda$.
 
-Why $\wp$ and not something simpler: integrating $f$ around a fundamental parallelogram gives $\sum \operatorname{Res} f = 0$ on $\CC/\Lambda$, so no elliptic function has exactly one simple pole.
-A double pole is the smallest thing available, and $\wp$ is the canonical one.
-Counting poles then gives the degree of the induced map to $\PP^1$, so $\wp$ has degree $2$ and $\wp'$ degree $3$.
+Integrating an elliptic function $f$ around the boundary of a fundamental parallelogram gives $\sum \operatorname{Res} f = 0$ on $\CC/\Lambda$, so no elliptic function has exactly one simple pole in a fundamental parallelogram.
+The function $\wp$ has a single double pole there.
+Counting poles gives the degree of the induced map $\CC/\Lambda\to\PP^1$: $\wp$ has degree $2$ and $\wp'$ degree $3$.
 
 The differential equation is proved by subtraction: expand
-\[
+$$
 \wp(z) = z^{-2} + \sum_{k \geq 1} (2k+1) G_{2k+2} z^{2k},
-\qquad G_{2k} \da \sum_{\omega \in \Lambda'} \omega^{-2k} ,
-\]
-form $(\wp')^2 - 4\wp^3 + g_2\wp + g_3$, and observe that all the polar terms cancel by construction and the constant term is zero.
+$$
+form $(\wp')^2 - 4\wp^3 + g_2\wp + g_3$, and check that its polar terms and its constant term at $0$ vanish.
 The difference is an elliptic function with no poles, hence constant by Liouville on the compact torus, hence $0$.
 
-That $\CC(\wp,\wp')$ is everything is the same argument: an even elliptic function is a rational function of $\wp$ (match its zeros and poles in $\wp$-values), and a general $f$ splits as $\tfrac{1}{2}(f(z)+f(-z)) + \wp'(z) \cdot \tfrac{f(z)-f(-z)}{2\wp'(z)}$ with both brackets even.
+Every elliptic function lies in $\CC(\wp,\wp')$: an even elliptic function is a rational function of $\wp$ (match its zeros and poles in $\wp$-values), and a general $f$ splits as $\tfrac{1}{2}(f(z)+f(-z)) + \wp'(z) \cdot \tfrac{f(z)-f(-z)}{2\wp'(z)}$ with both brackets even.
 :::
