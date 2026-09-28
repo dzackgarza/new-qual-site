@@ -28,11 +28,11 @@ Past examinations with transcribed questions are linked from [[algebraic-geometr
 
 - Algebraic curves: genus; the genus formula for plane curves; the Riemann–Hurwitz formula; the Riemann–Roch theorem.
 
-References: Shafarevich, *Basic Algebraic Geometry 1*, 2nd edition; Harris, *Algebraic Geometry: A First Course*.
+References: Shafarevich, *Basic Algebraic Geometry 1*, 2nd edition; [@Har10b].
 
 ## Scheme theory, cohomology and curves
 
-This syllabus accompanies the transcript at <https://math.berkeley.edu/~ritvik/Qualifying_Exam_Syllabus_and_Transcript.pdf#page=1>.
+This syllabus accompanies a [qualifying exam transcript](https://math.berkeley.edu/~ritvik/Qualifying_Exam_Syllabus_and_Transcript.pdf#page=1).
 
 Scheme theory:
 
@@ -60,7 +60,7 @@ Curves:
 
 - Clifford's theorem, Castelnuovo's theorem (statement), classification of low-degree curves in $\PP^3$.
 
-References: Hartshorne, *Algebraic Geometry*, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1–IV.6.
+References: [@Har10a, Chapters I.1–I.7, II.1–II.8, III.1–III.10, IV.1–IV.6].
 
 ## Schemes and cohomology, by Hartshorne section
 
