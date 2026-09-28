@@ -111,6 +111,5 @@ The left side is precisely $\chi_A(A)$, so
 $$
 \boxed{\chi_A(A)=0.}
 $$
-This proves the Cayley--Hamilton theorem.
 :::
 :::
