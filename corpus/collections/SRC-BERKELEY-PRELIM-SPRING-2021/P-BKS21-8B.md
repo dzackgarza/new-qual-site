@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS21-8B
 kind: problem
-title: Ring homomorphisms between two quadratic quotient rings
+title: Unital homomorphisms $\ZZ[x]/(x^2+3)\to\ZZ[x]/(x^2-x+1)$
 classification:
   areas:
   - prelim
@@ -18,8 +18,8 @@ audit:
 
 ::: {.problem}
 Does there exist a unital homomorphism
-\[
-\mathbb Z[x]/(x^2+3)\longrightarrow\mathbb Z[x]/(x^2-x+1)?
-\]
+$$
+\ZZ[x]/(x^2+3)\longrightarrow\ZZ[x]/(x^2-x+1)?
+$$
 Either exhibit one or prove none exists.
 :::
