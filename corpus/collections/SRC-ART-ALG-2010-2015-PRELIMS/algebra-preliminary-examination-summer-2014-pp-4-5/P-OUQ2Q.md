@@ -30,59 +30,79 @@ c. What are all the of the abelian groups of size 24 (up to isomorphism)?
 :::
 
 ::: {.solution}
-<1>1. Constraints on minimal and characteristic polynomials of $A$:
-<2>1. The condition $A^6 = I$ implies that the minimal polynomial $m_A(x)$ divides $x^6 - 1 \in \mathbb{Q}[x]$.
-The factorization of $x^6 - 1$ into irreducible polynomials over $\mathbb{Q}$ is:
-\[
-x^6 - 1 = (x - 1)(x + 1)(x^2 + x + 1)(x^2 - x + 1) = \Phi_1(x) \Phi_2(x) \Phi_3(x) \Phi_6(x).
-\]
-Because $x^6 - 1$ is square-free, $m_A(x)$ is square-free.
-The multiplicative order of $A$ is $6$ if and only if the least common multiple of the orders of the roots of $m_A(x)$ is $6$.
-This requires that either $\Phi_6(x) = x^2 - x + 1 \mid m_A(x)$, or both $\Phi_2(x) = x + 1$ and $\Phi_3(x) = x^2 + x + 1$ divide $m_A(x)$.
+Over $\QQ$,
+$$
+x^6-1=\Phi_1\Phi_2\Phi_3\Phi_6=(x-1)(x+1)(x^2+x+1)(x^2-x+1),
+$$
+a product of distinct monic irreducibles. For a monic polynomial $p$, write $C(p)$ for its companion matrix, with ones on the subdiagonal and last column the negated lower coefficients of $p$.
 
-<1>2. Parts (a) and (b): Isomorphism classes and Rational Canonical Forms:
-<2>1. The invariant factors $d_1(x) \mid \cdots \mid d_k(x)$ of the $\mathbb{Q}[x]$-module $\mathbb{Q}^4$ are monic polynomials with $\sum \deg(d_i) = 4$ and $d_k(x) = m_A(x)$.
-The companion matrix of a monic polynomial $p(x) = x^n + c_{n-1}x^{n-1} + \dots + c_0$ is denoted $C(p)$.
+<1>1. The $\QQ[x]$-module $V=\QQ^4$ is isomorphic to
+$$
+V_{a}=\bigoplus_{d\in\{1,2,3,6\}}\bigl(\QQ[x]/(\Phi_d)\bigr)^{a_d},
+\qquad a_1+a_2+2a_3+2a_6=4,
+$$
+for unique multiplicities $a_d\ge0$, and $A$ has order exactly $6$ if and only if $a_6\ge1$, or $a_2\ge1$ and $a_3\ge1$.
 
-<2>2. **Class 1:** Invariant factors $d_1(x) = x^2 - x + 1$, $d_2(x) = x^2 - x + 1$.
-- Module: $\mathbb{Q}[x]/\langle x^2 - x + 1 \rangle \oplus \mathbb{Q}[x]/\langle x^2 - x + 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 1 \end{pmatrix}$.
+::: {.proof}
+Since $A^6=I$, the module is annihilated by the squarefree polynomial $x^6-1$, so by the structure theorem over the PID $\QQ[x]$ it is a direct sum of modules $\QQ[x]/(\Phi_d)$ with $d\mid6$, with unique multiplicities [@DF04]; dimensions give $a_1+a_2+2a_3+2a_6=4$.
+On $\QQ[x]/(\Phi_d)$, $x$ acts with order exactly $d$, so the order of $A$ is the least common multiple of the $d$ with $a_d\ge1$.
+This least common multiple is $6$ exactly when $6$ occurs, or both $2$ and $3$ occur.
+:::
 
-<2>3. **Class 2:** Invariant factors $d_1(x) = x - 1$, $d_2(x) = (x - 1)(x^2 - x + 1) = x^3 - 2x^2 + 2x - 1$.
-- Module: $\mathbb{Q}[x]/\langle x - 1 \rangle \oplus \mathbb{Q}[x]/\langle x^3 - 2x^2 + 2x - 1 \rangle$.
-- RCF: $\begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & -2 \\ 0 & 0 & 1 & 2 \end{pmatrix}$.
+<1>2. For part (a), there are exactly seven classes, listed by $(a_1,a_2,a_3,a_6)$:
+$$
+(0,0,0,2),\ (2,0,0,1),\ (0,2,0,1),\ (1,1,0,1),\ (0,0,1,1),\ (1,1,1,0),\ (0,2,1,0).
+$$
 
-<2>4. **Class 3:** Invariant factors $d_1(x) = x + 1$, $d_2(x) = (x + 1)(x^2 - x + 1) = x^3 + 1$.
-- Module: $\mathbb{Q}[x]/\langle x + 1 \rangle \oplus \mathbb{Q}[x]/\langle x^3 + 1 \rangle$.
-- RCF: $\begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \end{pmatrix}$.
+::: {.proof}
+If $a_6=2$, the others vanish. If $a_6=1$, then $a_1+a_2+2a_3=2$, with the four solutions $(2,0,0)$, $(1,1,0)$, $(0,2,0)$, $(0,0,1)$.
+If $a_6=0$, then $a_2,a_3\ge1$ and $a_1+a_2+2a_3=4$ force $a_3=1$ and $(a_1,a_2)\in\{(1,1),(0,2)\}$.
+By step <1>1 these seven modules are pairwise nonisomorphic and are exactly the modules that arise.
+:::
 
-<2>5. **Class 4:** Single invariant factor $d_1(x) = (x^2 - 1)(x^2 - x + 1) = x^4 - x^3 + x - 1$.
-- Module: $\mathbb{Q}[x]/\langle x^4 - x^3 + x - 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & -1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 1 \end{pmatrix}$.
+<1>3. For part (b), the rational canonical forms are given by the invariant factors in the table.
 
-<2>6. **Class 5:** Single invariant factor $d_1(x) = (x + 1)(x^3 - 1) = x^4 + x^3 - x - 1$.
-- Module: $\mathbb{Q}[x]/\langle x^4 + x^3 - x - 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & -1 \end{pmatrix}$.
+| $(a_1,a_2,a_3,a_6)$ | Invariant factors | Rational canonical form |
+| --- | --- | --- |
+| $(0,0,0,2)$ | $x^2-x+1,\ x^2-x+1$ | $\operatorname{diag}\bigl(C(x^2-x+1),C(x^2-x+1)\bigr)$ |
+| $(2,0,0,1)$ | $x-1,\ x^3-2x^2+2x-1$ | $\operatorname{diag}\bigl(1,C(x^3-2x^2+2x-1)\bigr)$ |
+| $(0,2,0,1)$ | $x+1,\ x^3+1$ | $\operatorname{diag}\bigl(-1,C(x^3+1)\bigr)$ |
+| $(1,1,0,1)$ | $x^4-x^3+x-1$ | $C(x^4-x^3+x-1)$ |
+| $(0,0,1,1)$ | $x^4+x^2+1$ | $C(x^4+x^2+1)$ |
+| $(1,1,1,0)$ | $x^4+x^3-x-1$ | $C(x^4+x^3-x-1)$ |
+| $(0,2,1,0)$ | $x+1,\ x^3+2x^2+2x+1$ | $\operatorname{diag}\bigl(-1,C(x^3+2x^2+2x+1)\bigr)$ |
 
-<2>7. **Class 6:** Single invariant factor $d_1(x) = (x^2 + x + 1)(x^2 - x + 1) = x^4 + x^2 + 1$.
-- Module: $\mathbb{Q}[x]/\langle x^4 + x^2 + 1 \rangle$.
-- RCF: $\begin{pmatrix} 0 & 0 & 0 & -1 \\ 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix}$.
+Explicitly,
+$$
+C(x^2-x+1)=\begin{pmatrix}0&-1\\1&1\end{pmatrix},\quad
+C(x^3-2x^2+2x-1)=\begin{pmatrix}0&0&1\\1&0&-2\\0&1&2\end{pmatrix},\quad
+C(x^3+1)=\begin{pmatrix}0&0&-1\\1&0&0\\0&1&0\end{pmatrix},
+$$
+$$
+C(x^3+2x^2+2x+1)=\begin{pmatrix}0&0&-1\\1&0&-2\\0&1&-2\end{pmatrix},\quad
+C(x^4-x^3+x-1)=\begin{pmatrix}0&0&0&1\\1&0&0&-1\\0&1&0&0\\0&0&1&1\end{pmatrix},
+$$
+$$
+C(x^4+x^2+1)=\begin{pmatrix}0&0&0&-1\\1&0&0&0\\0&1&0&-1\\0&0&1&0\end{pmatrix},\quad
+C(x^4+x^3-x-1)=\begin{pmatrix}0&0&0&1\\1&0&0&1\\0&1&0&0\\0&0&1&-1\end{pmatrix}.
+$$
 
-<1>3. Part (c): Classification of abelian groups of order 24:
-<2>1. Since $24 = 2^3 \cdot 3$, by the Fundamental Theorem of Finite Abelian Groups, any abelian group of order 24 is the direct product of its Sylow 2-subgroup and Sylow 3-subgroup:
-\[
-G \cong P_2 \times P_3.
-\]
-<2>2. The Sylow 3-subgroup has order 3, so $P_3 \cong \mathbb{Z}/3\mathbb{Z}$.
-The Sylow 2-subgroup has order $2^3 = 8$, corresponding to the partitions of 3:
-- Partition $3$: $P_2 \cong \mathbb{Z}/8\mathbb{Z}$,
-- Partition $2 + 1$: $P_2 \cong \mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$,
-- Partition $1 + 1 + 1$: $P_2 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
-<2>3. Combining with $P_3 \cong \mathbb{Z}/3\mathbb{Z}$ gives exactly three non-isomorphic abelian groups of order 24:
-1. $\mathbb{Z}/8\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/24\mathbb{Z}$,
-2. $\mathbb{Z}/4\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/12\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$,
-3. $(\mathbb{Z}/2\mathbb{Z})^3 \times \mathbb{Z}/3\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z} \times (\mathbb{Z}/2\mathbb{Z})^2$.
+::: {.proof}
+The invariant factors are obtained by multiplying, from the largest down, one factor $\Phi_d$ for each $d$ with $a_d$ remaining; for instance $(0,2,1,0)$ gives $\Phi_2$ and $\Phi_2\Phi_3=(x+1)(x^2+x+1)=x^3+2x^2+2x+1$.
+The rational canonical form is the block diagonal matrix of the companion matrices of the invariant factors [@DF04].
+:::
 
-<1>4. Conclusion:
-There are 6 isomorphism classes of $\mathbb{Q}[x]$-modules with their corresponding RCF matrices, and 3 abelian groups of size 24. Q.E.D.
+<1>4. For part (c), the abelian groups of order $24$ are $\ZZ/24$, $\ZZ/12\times\ZZ/2$, and $\ZZ/6\times(\ZZ/2)^2$.
+
+::: {.proof}
+Since $24=2^3\cdot3$, an abelian group of order $24$ is the product of its Sylow $2$-subgroup of order $8$ and its Sylow $3$-subgroup $\ZZ/3$ [@DF04].
+The partitions $3$, $2+1$, $1+1+1$ give the Sylow $2$-subgroups $\ZZ/8$, $\ZZ/4\times\ZZ/2$, $(\ZZ/2)^3$.
+By the Chinese remainder theorem the products with $\ZZ/3$ are the three listed groups.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>2, <1>3, and <1>4 answer parts (a), (b), and (c).
+:::
 :::
