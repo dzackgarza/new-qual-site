@@ -35,4 +35,4 @@ source:
     kind: unknown
 ---
 
-A homework sheet of exercises from Chapter II of Hartshorne's *Algebraic Geometry*: sheaves, their stalks and supports, and the first properties of affine schemes.
+A homework sheet of exercises from [@Har10a, Chapter II]: sheaves, their stalks and supports, and the first properties of affine schemes.
