@@ -28,9 +28,9 @@ What is a Galois extension?
 ::: {.solution}
 Let $L/K$ be an algebraic field extension.
 
-<1>1. The extension $L/K$ is called **Galois** if it is both normal and separable.
+<1>1. The extension $L/K$ is \dfn{Galois} if it is both normal and separable.
 ::: {.proof}
-This is the standard definition. Separability means that every element of $L$ is separable over $K$. Normality means that every irreducible polynomial in $K[x]$ having a root in $L$ splits completely over $L$.
+Separability means that every element of $L$ is separable over $K$. Normality means that every irreducible polynomial in $K[x]$ having a root in $L$ splits completely over $L$.
 :::
 
 <1>2. If $L/K$ is finite, then $L/K$ is Galois if and only if
