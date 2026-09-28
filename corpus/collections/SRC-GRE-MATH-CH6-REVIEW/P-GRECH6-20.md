@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-20
 kind: problem
-title: Which listed subsets are subfields of C
+title: Which listed subsets are subfields of $\CC$
 classification:
   areas:
   - algebra
