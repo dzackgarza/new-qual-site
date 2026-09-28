@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS21-9B
 kind: problem
-title: Irreducibility of $x^4+x+2021$ over $\mathbb Q$
+title: Irreducibility of $x^4+x+2021$ over $\QQ$
 classification:
   areas:
   - prelim
@@ -18,8 +18,8 @@ audit:
 
 ::: {.problem}
 Prove that
-\[
+$$
 x^4+x+2021
-\]
-is irreducible over $\mathbb Q$.
+$$
+is irreducible over $\QQ$.
 :::
