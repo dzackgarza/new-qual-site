@@ -37,5 +37,5 @@ is already diagonal, hence diagonalizable, but its characteristic polynomial is
 \]
 Thus it has only the single eigenvalue $1$, with algebraic multiplicity $n$.
 
-So distinct eigenvalues imply diagonalizability when there are enough of them to give an eigenbasis, but diagonalizability does not require the eigenvalues to be distinct.
+An $n\times n$ matrix with $n$ distinct eigenvalues is diagonalizable, since eigenvectors for distinct eigenvalues are linearly independent; $I_n$ shows that the converse fails.
 :::
