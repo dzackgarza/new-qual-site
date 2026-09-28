@@ -24,38 +24,13 @@ If $R$ is a Noetherian ring, prove every ideal $I$ of $R$ is contained in a maxi
 ::: {.solution}
 The ideal $I=R$ lies in no maximal ideal, so we assume $I$ is proper.
 
-<1>1. Suppose for contradiction that $I$ is not contained in any maximal ideal.
+<1>1. If $I$ lies in no maximal ideal, there is a strictly increasing chain of proper ideals $I = I_0 \subsetneq I_1 \subsetneq I_2 \subsetneq \cdots$.
 ::: {.proof}
-assume the conclusion fails.
+Put $I_0 = I$. Given a proper ideal $I_n \supseteq I$, the ideal $I_n$ is not maximal, since otherwise $I$ would lie in the maximal ideal $I_n$. Hence there is a proper ideal $I_{n+1} \supsetneq I_n$, and $I_{n+1} \supseteq I$.
 :::
 
-<1>2. Then $I$ is not maximal, so there is a proper ideal $I_1 \supsetneq I$.
+<1>2. Q.E.D.
 ::: {.proof}
-<1>1 (if $I$ were maximal it would contain itself).
-:::
-
-<1>3. Inductively, given a proper ideal $I_n$ that is not maximal, choose a proper ideal $I_{n+1} \supsetneq I_n$.
-::: {.proof}
-<1>2, iterated (each $I_n$ is not maximal, so it is properly contained in a proper ideal).
-:::
-
-<1>4. This gives a strictly increasing chain $I \subsetneq I_1 \subsetneq I_2 \subsetneq \cdots$ of ideals.
-::: {.proof}
-<1>3.
-:::
-
-<1>5. But $R$ is Noetherian, so it satisfies the ascending chain condition: no strictly increasing infinite chain of ideals exists.
-::: {.proof}
-definition of Noetherian.
-:::
-
-<1>6. Contradiction, so $I$ is contained in some maximal ideal.
-::: {.proof}
-<1>4 and <1>5.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+A Noetherian ring satisfies the ascending chain condition on ideals, so no chain as in step <1>1 exists. Hence $I$ lies in a maximal ideal.
 :::
 :::
