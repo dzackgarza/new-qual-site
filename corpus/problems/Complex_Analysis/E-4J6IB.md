@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-4J6IB
 kind: problem
-title: When bounds imply removability
+title: An isolated singularity with $\abs{f(z)}\le\abs z^{-1/2}$ is removable
 classification:
   areas:
   - complex-analysis
