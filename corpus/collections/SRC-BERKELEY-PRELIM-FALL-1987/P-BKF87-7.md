@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF87-7
 kind: problem
-title: Maximize a generalized Rayleigh quotient
+title: Maximum of the generalized Rayleigh quotient $\langle Ax,x\rangle/\langle Bx,x\rangle$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
