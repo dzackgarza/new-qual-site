@@ -98,8 +98,8 @@ One equivalent formula is
 The resultant is the determinant of the Sylvester matrix, hence a polynomial with integer coefficients in the coefficients of $f$ and $f'$. For the universal degree-$n$ polynomial, that resultant is divisible by the leading coefficient $a_n$, and the quotient is precisely the displayed discriminant. Equivalently, homogenizing the monic symmetric-polynomial expression in <1>4 by the factor $a_n^{2n-2}$ clears all denominators. Thus $\Delta(f)\in\ZZ[a_0,\ldots,a_n]$.
 :::
 
-<1>6. This explains the role of symmetric polynomials.
+<1>6. The unsquared Vandermonde product $V=\prod_{i<j}(r_i-r_j)$, which is alternating rather than symmetric, need not be a polynomial in the coefficients.
 ::: {.proof}
-The roots themselves depend on choices and need not lie in the coefficient field, but the squared Vandermonde is invariant under every permutation of the roots. Symmetry is exactly what allows the root expression to descend to a polynomial expression in the elementary symmetric functions, i.e. in the coefficients.
+For $f(x)=x^2-2$ with roots $r_1=\sqrt2$, $r_2=-\sqrt2$, one has $V=2\sqrt2\notin\QQ$, while $\Delta(f)=V^2=8$.
 :::
 :::
