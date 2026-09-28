@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-13
 kind: problem
-title: "SS 2.13: An entire function with a zero coefficient in every local expansion is a polynomial"
+title: An entire function with a vanishing Taylor coefficient at every point is a polynomial
 classification:
   areas:
   - complex-analysis
