@@ -22,12 +22,12 @@ Show that $A$ contains a normal subgroup isomorphic to $G$.
 :::
 
 ::: {.solution}
-For $g$ in $G ,$ let $c _ { g } : G \to G$ be the inner automorphism $c _ { g } ( h ) = g h g ^ { - 1 }$ Then it is easy to check that $g \mapsto c _ { g }$ defines a homomorphism $G  A$ . It is nontrivial since $G$ is nonabelian, and thus an injection since G is simple.
-Let B be the image, so $B \simeq G$ . If $\alpha \in A$ and $g , h \in G$ , then
+For $g$ in $G$, let $c_g:G\to G$ be the inner automorphism $c_g(h)=ghg^{-1}$. Then it is easy to check that $g\mapsto c_g$ defines a homomorphism $G\to A$. It is nontrivial since $G$ is nonabelian, and thus an injection since $G$ is simple.
+Let $B$ be the image, so $B\cong G$. If $\alpha\in A$ and $g,h\in G$, then
 
 $$
-\alpha ( c _ { g } ( h ) ) = \alpha ( g h g ^ { - 1 } ) = \alpha ( g ) \alpha ( h ) \alpha ( g ) ^ { - 1 } = c _ { \alpha ( g ) } ( \alpha ( h ) ) ,
+\alpha(c_g(h))=\alpha(ghg^{-1})=\alpha(g)\alpha(h)\alpha(g)^{-1}=c_{\alpha(g)}(\alpha(h)),
 $$
 
-so α $\circ c _ { g } = c _ { \alpha ( g ) }$ ◦ α in A. Thus $\alpha \circ c _ { g } \circ \alpha ^ { - 1 } = c _ { \alpha ( g ) }$ , so $B$ is normal in $G .$
+so $\alpha\circ c_g=c_{\alpha(g)}\circ\alpha$ in $A$. Thus $\alpha\circ c_g\circ\alpha^{-1}=c_{\alpha(g)}$, so $B$ is normal in $G$.
 :::
