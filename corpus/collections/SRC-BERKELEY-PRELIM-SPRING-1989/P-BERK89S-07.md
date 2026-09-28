@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK89S-07
 kind: problem
-title: Solve the matrix ODE $X'=AXB$ for two nilpotent shift matrices
+title: The matrix ODE $X'=AXB$ for two nilpotent shift matrices
 classification:
   areas: [prelim]
   topics: []
