@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-L2EHD
 kind: problem
-title: The Stone-Cech compactification of a discrete space
+title: The Stone--Čech compactification of a discrete space is extremally disconnected
 classification:
   areas:
   - topology
