@@ -40,7 +40,6 @@ Let
 \[
 V=M\setminus\{q\}.
 \]
-We first verify the point-set facts needed to apply van Kampen under the definition of manifold given in the problem.
 
 <1>1. Every singleton in $M$ is closed; in particular, $V$ is open in $M$.
 ::: {.proof}
