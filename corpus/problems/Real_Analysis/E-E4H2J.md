@@ -24,26 +24,35 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** If $f \in L^1(\RR)$ and $g$ is bounded (say $|g| \leq M$ a.e.), then $f\ast g$ is bounded and uniformly continuous on $\RR$.
+Let $f \in L^1(\RR)$ and let $g$ be measurable with $|g| \leq M$ a.e., where $M > 0$.
 
 <1>1. $f\ast g$ is bounded, with $|f\ast g(x)| \leq M\norm{f}_1$ for every $x$.
+
 ::: {.proof}
 $|f\ast g(x)| = |\int f(x-y)g(y)\,dy| \leq \int |f(x-y)|\,|g(y)|\,dy \leq M \int |f(x-y)|\,dy = M\norm{f}_1$.
 :::
-<1>2. For every $x, h \in \RR$: $|f\ast g(x+h) - f\ast g(x)| \leq M\, \norm{\tau_h f - f}_1$, where $\tau_h f(y) := f(y-h)$.
+
+<1>2. For $h \in \RR$ let $\tau_h f(y) \coloneqq f(y-h)$. For every $x, h \in \RR$, $|f\ast g(x+h) - f\ast g(x)| \leq M\, \norm{\tau_h f - f}_1$.
+
 ::: {.proof}
-$f\ast g(x+h) = \int f(x+h-y)g(y)\,dy = \int f(x - (y-h))g(y)\,dy$, so $f\ast g(x+h) - f\ast g(x) = \int \big(f(x+h-y) - f(x-y)\big)g(y)\,dy$, and $|f\ast g(x+h) - f\ast g(x)| \leq M \int |f(x+h-y) - f(x-y)|\,dy = M\norm{\tau_h f - f}_1$, the equality by the change of variables $y \mapsto y+h$.
+$f\ast g(x+h) = \int f(x+h-y)g(y)\,dy = \int f(x - (y-h))g(y)\,dy$, so $f\ast g(x+h) - f\ast g(x) = \int \big(f(x+h-y) - f(x-y)\big)g(y)\,dy$, and $|f\ast g(x+h) - f\ast g(x)| \leq M \int |f(x+h-y) - f(x-y)|\,dy = M\norm{\tau_h f - f}_1$, the equality by the change of variables $u = x - y + h$.
 :::
+
 <1>3. $\lim_{h \to 0} \norm{\tau_h f - f}_1 = 0$.
+
 ::: {.proof}
-translation is continuous in $L^1$: the claim holds for compactly supported continuous $\varphi$ by uniform continuity, and extends to all of $L^1$ by density (an $\eps/3$ argument).
+For a compactly supported continuous $\varphi$ the claim holds by uniform continuity of $\varphi$ and dominated convergence on a fixed compact set. Given $\eps > 0$, choose such $\varphi$ with $\norm{f - \varphi}_1 < \eps/3$, which exists by density of $C_c(\RR)$ in $L^1(\RR)$. Then $\norm{\tau_h f - f}_1 \leq \norm{\tau_h(f - \varphi)}_1 + \norm{\tau_h\varphi - \varphi}_1 + \norm{\varphi - f}_1 < \eps$ for $|h|$ small, since $\norm{\tau_h(f-\varphi)}_1 = \norm{f-\varphi}_1$.
 :::
+
 <1>4. $f\ast g$ is uniformly continuous.
+
 ::: {.proof}
-given $\eps > 0$, by <1>3 choose $\delta > 0$ with $\norm{\tau_h f - f}_1 < \eps/M$ for $|h| < \delta$; then <1>2 gives $|f\ast g(x+h) - f\ast g(x)| < \eps$ for all $x$, uniformly in $x$.
+Given $\eps > 0$, step <1>3 gives $\delta > 0$ with $\norm{\tau_h f - f}_1 < \eps/M$ for $|h| < \delta$. Then step <1>2 gives $|f\ast g(x+h) - f\ast g(x)| < \eps$ for all $x \in \RR$ and $|h| < \delta$.
 :::
+
 <1>5. Q.E.D.
+
 ::: {.proof}
-<1>1 gives boundedness and <1>4 gives uniform continuity.
+Step <1>1 gives boundedness and step <1>4 gives uniform continuity.
 :::
 :::
