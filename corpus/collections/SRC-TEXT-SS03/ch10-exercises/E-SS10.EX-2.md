@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-2
 kind: problem
-title: "SS 10.2: The generating function of the Fibonacci numbers"
+title: The generating function of the Fibonacci numbers
 classification:
   areas:
   - complex-analysis
@@ -62,7 +62,7 @@ Let
 \[
 F(x)=\sum_{n=0}^\infty F_nx^n.
 \]
-For \(|x|\) sufficiently small, the series converges absolutely. Using \(F_0=0\), \(F_1=1\), and \(F_n=F_{n-1}+F_{n-2}\) for \(n\ge2\),
+By induction $0\le F_n\le 2^n$, so the series converges absolutely for \(|x|<1/2\). Using \(F_0=0\), \(F_1=1\), and \(F_n=F_{n-1}+F_{n-2}\) for \(n\ge2\),
 \[
 \begin{aligned}
 F(x)
