@@ -124,7 +124,7 @@ $p^m$ whenever $k,j$ are sufficiently large.
 
 ::: {.proof}
 Assume first that $k>j\ge p^m-1$ and use the representation
-$A/B$ from step <1>4$. Let
+$A/B$ from step <1>4. Let
 $$
 d=\gcd(A,B).
 $$
