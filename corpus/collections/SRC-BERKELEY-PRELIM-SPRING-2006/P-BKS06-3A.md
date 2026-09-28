@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-3A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 3A
+title: Matrix of the orthogonal projection onto the hyperplane $x_1+\cdots+x_n=0$
 classification:
   areas: [prelim]
   topics: []
