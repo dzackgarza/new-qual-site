@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ETKNU
 kind: problem
-title: The imbedding theorem for m equals one
+title: The imbedding theorem for $m=1$ and linear graphs in $\RR^3$
 classification:
   areas:
   - topology
