@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRELIM82S-02
 kind: problem
-title: Evaluate $\int_0^\infty x^{50}/(x^{100}+1)\,dx$
+title: The integral $\int_0^\infty x^{50}/(x^{100}+1)\,dx$
 classification:
   areas:
   - prelim
