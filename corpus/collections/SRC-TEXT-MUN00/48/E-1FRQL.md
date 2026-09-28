@@ -34,8 +34,6 @@ Can you find a sequence of continuous functions $f_n$ converging to $f$?
 :::
 
 ::: {.solution}
-**Goal:** Prove that the modified Thomae function $f: \mathbb{R} \to \mathbb{R}$ is continuous on $\mathbb{R} \setminus \mathbb{Q}$ and discontinuous on $\mathbb{Q}$, and construct a sequence of continuous functions converging pointwise to $f$.
-
 <1>1. Continuity at every irrational point $x_0 \in \mathbb{R} \setminus \mathbb{Q}$:
     *Proof:*
     <2>1. At an irrational point $x_0$, $f(x_0) = 0$.
@@ -63,6 +61,6 @@ Can you find a sequence of continuous functions $f_n$ converging to $f$?
         $$\phi_{n, k}(x) = \max\left\{0, \; \frac{1}{n}\left(1 - \frac{|x - x_n|}{\delta_{n, k}}\right)\right\}.$$
     <2>4. Define $f_k: \mathbb{R} \to \mathbb{R}$ by $f_k(x) = \sum_{n=1}^k \phi_{n, k}(x)$. Each $f_k$ is continuous as a finite sum of continuous functions.
     <2>5. For any rational $x_m$, for all $k \ge m$ we have $f_k(x_m) = \phi_{m, k}(x_m) = \frac{1}{m} = f(x_m)$, so $\lim_{k \to \infty} f_k(x_m) = f(x_m)$.
-    <2>6. For any irrational $x$, since $\delta_{n, k} \to 0$ as $k \to \infty$, $x$ belongs to the support of at most a transient set of tents with heights bounded by $\sup \{1/n : |x - x_n| < \delta_{n, k}\} \to 0$, giving $\lim_{k \to \infty} f_k(x) = 0 = f(x)$.
+    <2>6. Let $x$ be irrational and $\varepsilon > 0$. Choose $N$ with $1/N < \varepsilon$ and put $\eta = \min_{1 \le n \le N} |x - x_n| > 0$. For $k > \max(N, 1/\eta)$, $\delta_{n, k} < 1/k < \eta$, so $\phi_{n, k}(x) = 0$ for $n \le N$. The supports of the tents $\phi_{1,k}, \ldots, \phi_{k,k}$ are disjoint, so $f_k(x) = \phi_{n, k}(x) \le 1/n < \varepsilon$ for at most one $n > N$, and $f_k(x) = 0$ otherwise. Hence $\lim_{k \to \infty} f_k(x) = 0 = f(x)$.
     <2>7. Thus $f_k \to f$ pointwise on $\mathbb{R}$. Q.E.D.
 :::
