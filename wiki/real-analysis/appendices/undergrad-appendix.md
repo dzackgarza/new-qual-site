@@ -71,7 +71,11 @@ $$
 :::
 
 ::: {.proof}
-Apply the last item of the preceding fact to $f\coloneqq\chi_E$.
+Let $F(x)\coloneqq m(E\cap(-\infty,x])$, an indefinite integral of $\chi_E\in L^1(\RR)$.
+By the Lebesgue differentiation theorem, $F'=\chi_E$ almost everywhere, and at each point $x$ where $F$ is differentiable,
+$$
+\frac{m(E\cap B(x,r))}{m(B(x,r))} = \frac{F(x+r)-F(x-r)}{2r}\to F'(x)\quad (r\to0).
+$$
 
 :::
 
@@ -82,7 +86,7 @@ There exists a continuous function $f\colon\RR\to\RR$ that is differentiable at 
 
 ::: {.remark}
 Weierstrass's function $\sum_{n\geq0} a^n\cos(b^n\pi x)$ with $0<a<1$, $b$ an odd positive integer, and $ab>1+3\pi/2$ is such a function; see [[real-analysis/counterexamples-undergraduate#The Weierstrass function|Undergraduate counterexamples]].
-The construction takes $f(x)\coloneqq\sum_{n\geq1} a_n\sin(b_nx)$ with $\sum a_n<\infty$ and $a_nb_n\to\infty$ rapidly, for example $a_n = 10^{-n}$ and $b_n = 10^{6n}$.
+Another such function is $f(x)\coloneqq\sum_{n\geq1} a_n\sin(b_nx)$ with $\sum a_n<\infty$ and $a_nb_n\to\infty$ rapidly, for example $a_n = 10^{-n}$ and $b_n = 10^{6n}$.
 For each $n$ and $x$, an increment $\Delta x$ of size comparable to $1/b_n$ makes the $n$th term change by an amount comparable to $a_n$, while the terms with $k<n$ change by at most $\sum_{k<n}a_kb_k/b_n$, which is small compared with $a_n$, and the terms with $k>n$ change by at most $\sum_{k>n}2a_k$, also small compared with $a_n$.
 So $\abs{\Delta f/\Delta x}$ is comparable to $a_nb_n\to\infty$, and $f'(x)$ does not exist.
 
