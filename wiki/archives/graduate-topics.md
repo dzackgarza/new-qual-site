@@ -23,17 +23,17 @@ order: 110
 
 ### Group theory
 
-First 6 chapters (220 pages) of D&F.
+[@DF04, chs. 1--6].
 
-- alternating groups;
+- alternating groups
 
-- Cayley’s Theorem
+- Cayley's theorem
 
-- Cauchy's Theorem
+- Cauchy's theorem
 
-- Class Equation;
+- class equation
 
-- Classification of abelian groups
+- classification of abelian groups
 
 - commutators
 
@@ -43,11 +43,11 @@ First 6 chapters (220 pages) of D&F.
 
 - cycle decomposition
 
-- cyclic groups and subgroups;
+- cyclic groups and subgroups
 
 - derived series
 
-- Dihedral groups
+- dihedral groups
 
 - direct products
 
@@ -57,45 +57,43 @@ First 6 chapters (220 pages) of D&F.
 
 - free groups
 
-- Fundamental Theorem of Finitely Generated Abelian Groups and applications
+- fundamental theorem of finitely generated abelian groups and applications
 
 - group actions
 
-- group extensions.
+- group extensions
 
-- Hölder Program
+- Hölder program
 
 - homomorphisms
 
-- Isomorphism Theorems (1st - 4th)
+- isomorphism theorems (first through fourth)
 
-- Jordan-Holder theorems;
+- Jordan--Hölder theorem
 
-- Lagrange’s Theorem;
+- Lagrange's theorem
 
-- nilpotent
+- nilpotent groups
 
 - normal subgroups
 
-- $p\dash$groups
+- $p$-groups
 
 - quotient groups
 
-- semi-direct product groups
-
-- semidirect products.
+- semidirect products
 
 - simple groups
 
-- simplicity of An
+- simplicity of $A_n$
 
 - solvable groups
 
-- subgroup lattice;
+- subgroup lattice
 
-- Sylow’s theorems (1-3)
+- Sylow theorems
 
-- symmetric groups and permutation representations;
+- symmetric groups and permutation representations
 
 - symmetric groups and subgroups
 
@@ -103,33 +101,33 @@ First 6 chapters (220 pages) of D&F.
 
 ### Commutative ring theory
 
-Chapters 7-9 in D&F
+[@DF04, chs. 7--9].
 
-- basic theorems about factorization and UFD's
+- factorization in unique factorization domains
 
 - bilinear pairings
 
 - chain conditions
 
-- Chinese Remainder Theorem
+- Chinese remainder theorem
 
 - completion
 
-- construction of finite fields;
+- construction of finite fields
 
 - Dedekind rings
 
 - duality
 
-- Eisenstein’s Criterion
+- Eisenstein's criterion
 
-- Euclidean Domains
+- Euclidean domains
 
 - factorization in one variable
 
 - free and projective modules
 
-- Gauss’ Lemma
+- Gauss's lemma
 
 - Hilbert basis theorem
 
@@ -145,7 +143,7 @@ Chapters 7-9 in D&F
 
 - irreducibility criteria
 
-- Isomorphism Theorems;
+- isomorphism theorems
 
 - localization
 
@@ -161,29 +159,29 @@ Chapters 7-9 in D&F
 
 - prime ideals
 
-- Principal Ideal Domains
+- principal ideal domains
 
-- quadratic integer rings;
+- quadratic integer rings
 
 - quotient rings
 
-- rings and subrings;
+- rings and subrings
 
-- rings of fractions;
+- rings of fractions
 
 - structure theory of modules over a PID
 
-- symmetric and alternating forms.
+- symmetric and alternating forms
 
 - tensor products
 
-- Unique Factorization Domains
+- unique factorization domains
 
 - Zorn's lemma
 
 ### Field theory
 
-> Chapters 13-14 in D&F
+[@DF04, chs. 13--14].
 
 - algebraic and transcendental extensions
 
@@ -191,13 +189,13 @@ Chapters 7-9 in D&F
 
 - algebraic extensions
 
-- Computation of Galois groups of polynomials
+- computation of Galois groups of polynomials
 
-- cyclic extensions and Kummer theory.
+- cyclic extensions and Kummer theory
 
 - cyclotomic extensions
 
-- cyclotomic polynomials.
+- cyclotomic polynomials
 
 - degrees
 
@@ -215,7 +213,7 @@ Chapters 7-9 in D&F
 
 - separable extensions
 
-- solvability by of polynomials radicals
+- solvability of polynomials by radicals
 
 - splitting fields
 
@@ -227,7 +225,7 @@ Chapters 7-9 in D&F
 
 - abelian extensions of $\QQ$
 
-- Compute galois groups for small degree examples
+- Galois groups of polynomials of small degree
 
 - discriminants
 
@@ -235,27 +233,27 @@ Chapters 7-9 in D&F
 
 - fixed fields
 
-- Fundamental Theorem of Algebra
+- fundamental theorem of algebra
 
 - Galois theory of finite fields
 
-- insolvability of the quintic.
+- insolvability of the quintic
 
-- Primitive Element Theorem
+- primitive element theorem
 
-- roots of polynomials of degree ≤ 4
+- roots of polynomials of degree at most $4$
 
 - solvable and radical extensions
 
 - symmetric functions
 
-- the Fundamental Theorem of Galois Theory
+- fundamental theorem of Galois theory
 
-- the Fundamental Theorem of Symmetric Functions
+- fundamental theorem of symmetric functions
 
 ### Module theory
 
-> Sections 10.1,2,3 and 12.1,2,3.
+[@DF04, §§10.1--10.3, 12.1--12.3].
 
 - direct sums
 
@@ -273,13 +271,13 @@ Chapters 7-9 in D&F
 
 - rank
 
-- the Fundamental Theorem of Finitely Generated Modules over a P.I.D.
+- structure theorem for finitely generated modules over a PID
 
-- the Isomorphism Theorems
+- isomorphism theorems
 
 ### Noncommutative ring theory
 
-- Artin-Wedderburn theorem;
+- Artin--Wedderburn theorem
 
 - group rings
 
@@ -287,11 +285,11 @@ Chapters 7-9 in D&F
 
 - irreducible modules
 
-- Krull-Schmidt theorem;
+- Krull--Schmidt theorem
 
 - non-semisimple rings
 
-- Semisimple rings
+- semisimple rings
 
 ### Representations of groups
 
@@ -299,10 +297,7 @@ Chapters 7-9 in D&F
 
 - characters of finite groups
 
-- complete reducibility of representations
-
-- esp.
-  finite groups.
+- complete reducibility of representations, especially of finite groups
 
 - invariant inner products
 
@@ -310,7 +305,7 @@ Chapters 7-9 in D&F
 
 - parametrization of complex representations by characters
 
-- Peter-Weyl theorem
+- Peter--Weyl theorem
 
 - Schur orthogonality
 
@@ -318,13 +313,13 @@ Chapters 7-9 in D&F
 
 - $L^p$ spaces
 
-- approximate identities;
+- approximate identities
 
-- Arzela-Ascoli theorem
+- Arzelà--Ascoli theorem
 
 - closed graph theorem
 
-- compact subsets of C(X)
+- compact subsets of $C(X)$
 
 - convergence theorems
 
@@ -338,45 +333,43 @@ Chapters 7-9 in D&F
 
 - dominated convergence theorem
 
-- Egoroff's theorem
+- Egorov's theorem
 
-- Fatou’s lemma
+- Fatou's lemma
 
 - Fourier analysis
 
-- Fubini’s theorem;
+- Fubini's theorem
 
-- Functional analysis
+- functional analysis
 
 - functions of bounded variation
 
 - Hahn decompositions
 
-- Hahn-Banach theorem
+- Hahn--Banach theorem
 
 - Hausdorff measures
 
 - Hilbert space
 
-- Holder’s inequality
+- Hölder's inequality
 
-- Jensen’s inequality
+- Jensen's inequality
 
 - Jordan decomposition theorem
 
 - Lebesgue decomposition theorem
 
-- Lebesgue dominated convergence theorem
-
-- Lebesgue integration;
+- Lebesgue integration
 
 - linear functionals
 
 - linear operators
 
-- Lusin’s theorem
+- Lusin's theorem
 
-- measure theory;
+- measure theory
 
 - Minkowski inequalities
 
@@ -390,25 +383,25 @@ Chapters 7-9 in D&F
 
 - Poisson summation formula
 
-- Radon-Nikodym theorem
+- Radon--Nikodym theorem
 
-- Riemann-Lebesgue lemma
+- Riemann--Lebesgue lemma
 
 - Riesz representation theorem
 
-- self-adjoint linear operators and their spectra;
+- self-adjoint linear operators and their spectra
 
 - signed measures
 
-- strong/weak/weak* topologies
+- strong, weak, and weak-$*$ topologies
 
-- the Baire Category theorem
+- Baire category theorem
 
-- The spaces C(X)
+- the spaces $C(X)$
 
-- the Stone-Weierstrass theorem.
+- Stone--Weierstrass theorem
 
-- the Tychonoff theorem
+- Tychonoff theorem
 
 - trigonometric series
 
@@ -416,43 +409,43 @@ Chapters 7-9 in D&F
 
 - uniform convergence
 
-- Urysohn’s lemma
+- Urysohn's lemma
 
-- Weak $L^p$ spaces
+- weak $L^p$ spaces
 
 ## Complex analysis
 
-- Analytic functions
+- analytic functions
 
-- Casorati-Weierstrass theorem
+- Casorati--Weierstrass theorem
 
-- Cauchy’s theorem on multiply connected domains
+- Cauchy's theorem on multiply connected domains
 
-- Cauchy’s theorem: Goursat’s proof
+- Cauchy's theorem: Goursat's proof
 
-- Compact families of analytic and harmonic functions:
+- compact families of analytic and harmonic functions
 
-- Conformal mappings
+- conformal mappings
 
 - conjugate functions
 
-- consequences of Cauchy integral formula
+- consequences of the Cauchy integral formula, such as Liouville's theorem
 
 - Dirichlet problem for a disk
 
-- Elementary mappings
+- elementary mappings
 
-- elliptic functions.
+- elliptic functions
 
 - exponential and logarithm functions
 
 - fractional linear transformations
 
-- Harmonic functions:
+- harmonic functions
 
 - Harnack's principle
 
-- Hurwitz theorem
+- Hurwitz's theorem
 
 - infinite products
 
@@ -460,7 +453,7 @@ Chapters 7-9 in D&F
 
 - mapping of polygons
 
-- mappings of finitely connected domains.
+- mappings of finitely connected domains
 
 - maximum modulus principle
 
@@ -470,17 +463,17 @@ Chapters 7-9 in D&F
 
 - Mittag-Leffler theorem
 
-- Mobius transformations and spherical representation.
+- Möbius transformations and the spherical representation
 
 - Morera's theorem
 
 - open mapping theorem
 
-- Picard’s theorem.
+- Picard's theorem
 
 - Poisson integrals
 
-- Poisson- Jensen formula.
+- Poisson--Jensen formula
 
 - reflections across analytic boundaries
 
@@ -488,29 +481,27 @@ Chapters 7-9 in D&F
 
 - Riemann mapping theorem
 
-- Rouche's theorem
+- Rouché's theorem
 
 - Schwarz lemma
 
-- Schwarz reflection principle.
+- Schwarz reflection principle
 
 - series and product developments
 
-- Subharmonic functions
-
-- such as Liouville's theorem
+- subharmonic functions
 
 - sums of power series
 
-- the argument principle
+- argument principle
 
-- the Dirichlet problem
+- Dirichlet problem
 
-- The evaluation of definite integrals.
+- evaluation of definite integrals
 
-- the hyperbolic metric.
+- hyperbolic metric
 
-- The monodromy theorem
+- monodromy theorem
 
 - Weierstrass product theorem
 
@@ -530,7 +521,7 @@ Guillemin and Pollack, *Differential Topology*.
 
 - manifolds
 
-- Sard's Theorem on the measure of critical values
+- Sard's theorem on the measure of critical values
 
 - smooth maps
 
@@ -538,7 +529,7 @@ Guillemin and Pollack, *Differential Topology*.
 
 - tangent vectors
 
-- the Lefshetz Fixed Point Theorem
+- Lefschetz fixed point theorem
 
 - transversality
 
@@ -558,21 +549,21 @@ Spivak, differential geometry.
 
 - gradients
 
-- integrable distributions and the Frobenius Theorem
+- integrable distributions and the Frobenius theorem
 
-- integration and  Stokes’ Theorem
+- integration and Stokes' theorem
 
-- interpretation of the classical integral theorems as aspects of Stokes’ Theorem for differential forms
+- interpretation of the classical integral theorems as aspects of Stokes' theorem for differential forms
 
 - Lie derivatives
 
-- Poincare duality
+- Poincaré duality
 
 - Riemannian metrics
 
-- the Mayer-Vietoris sequence
+- Mayer--Vietoris sequence
 
-- deRham’s theorem $H_\text{sing} \cong H_{\text{DR}}$
+- de Rham's theorem $H^*_{\text{dR}}(M)\cong H^*_{\text{sing}}(M;\RR)$
 
 - Thom classes
 
@@ -594,6 +585,6 @@ Spivak, differential geometry.
 
 - homotopy theory
 
-- Mayer-Vietoris sequence
+- Mayer--Vietoris sequence
 
 - singular homology
