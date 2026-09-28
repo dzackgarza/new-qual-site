@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGREV1-07
 kind: problem
-title: Classify abelian groups of order 200
+title: Abelian groups of order $200$
 classification:
   areas:
   - algebra
@@ -32,10 +32,10 @@ Since
 $$
 200=2^3\cdot5^2,
 $$
-the classification theorem for finite abelian groups separates the problem
-into the $2$-primary and $5$-primary parts.
+every finite abelian group of order $200$ is the direct product of its
+$2$-primary part, of order $2^3$, and its $5$-primary part, of order $5^2$.
 
-<1>1. Classify the abelian groups of order $2^3$.
+<1>1. The abelian groups of order $2^3$ are $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, and $\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.
 ::: {.proof}
 The partitions of $3$ are
 $$
@@ -51,7 +51,7 @@ $$
 $$
 :::
 
-<1>2. Classify the abelian groups of order $5^2$.
+<1>2. The abelian groups of order $5^2$ are $\mathbb Z_{25}$ and $\mathbb Z_5\times\mathbb Z_5$.
 ::: {.proof}
 The partitions of $2$ are
 $$
@@ -65,7 +65,7 @@ $$
 $$
 :::
 
-<1>3. Combine the independent primary components.
+<1>3. There are exactly $6$ abelian groups of order $200$ up to isomorphism.
 ::: {.proof}
 Every finite abelian group of order $200$ is uniquely the direct product of
 one group from step <1>1 and one group from step <1>2. Thus there are exactly
