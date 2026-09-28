@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-XZGIY
 kind: fact
 title: Arzelà--Ascoli theorem
-slogan: 'On a compact domain, uniform boundedness plus equicontinuity gives compactness in the sup norm.'
+slogan: 'For $K$ compact metric, a family in $C(K)$ has compact closure in the sup norm exactly when it is uniformly bounded and equicontinuous.'
 prompts:
 - What is the Arzela-Ascoli theorem?
 - State the Arzela-Ascoli theorem.
