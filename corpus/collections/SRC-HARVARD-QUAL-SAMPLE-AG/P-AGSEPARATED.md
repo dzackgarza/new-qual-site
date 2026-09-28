@@ -205,7 +205,7 @@ g|_U=h|_U\text{ on dense open }U
 \Longrightarrow g=h,
 }
 \]
-and both hypotheses are essential.
+and neither hypothesis can be dropped.
 ::: {.proof}
 The implication is <1>2--<1>4.  Step <1>5 shows failure without reducedness, and <1>6 shows failure without separatedness.
 :::
