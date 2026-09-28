@@ -21,13 +21,9 @@ State and prove the divergence theorem on any rectangle in $\mathbb{R}^2$.
 :::
 
 ::: {.solution}
-**Goal:** State and prove the 2D Divergence Theorem (Green's theorem in normal form) on any closed rectangle $R = [a, b] \times [c, d] \subset \mathbb{R}^2$.
+### Statement of the divergence theorem on a rectangle
 
-* * *
-
-### Statement of the Divergence Theorem on a Rectangle
-
-**Theorem:** Let $R = [a, b] \times [c, d] \subset \mathbb{R}^2$ be a closed rectangle, and let $\partial R$ denote its boundary oriented counterclockwise.
+Let $R = [a, b] \times [c, d] \subset \mathbb{R}^2$ be a closed rectangle, and let $\partial R$ denote its boundary oriented counterclockwise.
 Let $\mathbf{F} = (P, Q): U \to \mathbb{R}^2$ be a $C^1$ vector field defined on an open neighborhood $U \supset R$.
 Then: $$\iint_R \text{div}(\mathbf{F}) \, dA = \oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds,$$ where $\text{div}(\mathbf{F}) = \frac{\partial P}{\partial x} + \frac{\partial Q}{\partial y}$, $\mathbf{n}$ is the outward-pointing unit normal vector along $\partial R$, and $ds$ is the arc length element.
 In coordinates, $\oint_{\partial R} \mathbf{F} \cdot \mathbf{n} \, ds = \oint_{\partial R} (P \, dy - Q \, dx)$.
