@@ -27,8 +27,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $\left( g _ { n } \right)$ is a uniformly convergent sequence of functions from R to R, while $f : \mathbb { R } \to \mathbb { R }$ is uniformly continuous.
-Prove that the sequence $\left( f \circ g _ { n } \right)$ of composite functions is also uniformly convergent on R.
+Suppose $(g_n)$ is a uniformly convergent sequence of functions from $\RR$ to $\RR$, while $f\colon \RR \to \RR$ is uniformly continuous.
+Prove that the sequence $(f \circ g_n)$ of composite functions is also uniformly convergent on $\RR$.
 :::
 
 ::: {.solution}
