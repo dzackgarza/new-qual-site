@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-14
 kind: problem
-title: Count homomorphisms from Z3 to Z6
+title: Homomorphisms from $\ZZ_3$ to $\ZZ_6$
 classification:
   areas:
   - algebra
