@@ -34,7 +34,7 @@ since $\dz\wedge\dz = 0$ and $\partial f/\partial\bar z = 0$ by the Cauchy–Rie
 :::
 
 ::: {.remark title="Goursat's theorem"}
-The Stokes argument uses continuity of $f'$, which the definition of holomorphy does not include.
+The Stokes argument assumes that $f'$ is continuous.
 Goursat's theorem proves $\int_{\bd T} f = 0$ for every triangle $T$ in the domain of a holomorphic $f$ by repeated bisection, with no continuity assumption on $f'$; continuity of $f'$ is then a consequence of the Cauchy integral formula.
 The bisection proof is on [[complex-analysis/cauchy-theory/morera-and-converses|Morera and converses]].
 
