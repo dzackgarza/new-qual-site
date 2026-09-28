@@ -30,107 +30,72 @@ Show that if $a>0$, then
 :::
 
 ::: {.solution}
-**Goal:** Show that for $a > 0$, $\int_0^{\infty} \frac{\log x}{x^2 + a^2}\, dx = \frac{\pi}{2a} \log a$.
+Let $\Log$ be the branch of the logarithm on $\CC\setminus[0,\infty)$ with argument in $(0, 2\pi)$. For $0<\varepsilon<a<R$, let $\Gamma$ be the keyhole contour consisting of the segment $[\varepsilon, R]$ on the upper edge of the cut, the circle $\abs z = R$ counterclockwise, the segment from $R$ to $\varepsilon$ on the lower edge, and the circle $\abs z = \varepsilon$ clockwise. Put
+$$f(z) \coloneqq \frac{\Log z}{z^2 + a^2},
+\qquad
+g(z) \coloneqq \frac{(\Log z)^2}{z^2 + a^2},
+\qquad
+I \coloneqq \int_0^{\infty} \frac{\log x}{x^2 + a^2}\, dx.$$
 
-<1>1. Integrate $f(z) := \frac{\Log z}{z^2 + a^2}$ over the keyhole contour $\Gamma$ that runs along the positive real axis: the segment $[\varepsilon, R]$ on the upper edge, the big circle $\abs z = R$, the segment $[R, \varepsilon]$ on the lower edge, and the small circle $\abs z = \varepsilon$.
-    ::: {.proof}
-    Take the branch of $\Log$ with argument in $(0, 2\pi)$, so the branch cut is the positive real axis; the contour avoids it.
-    :::
+<1>1. On the upper edge $\Log z = \log x$, and on the lower edge $\Log z = \log x + 2\pi i$.
 
-<1>2. The circle contributions vanish: $\int_{\abs z = R} f \to 0$ and $\int_{\abs z = \varepsilon} f \to 0$.
-    ::: {.proof}
-    On $\abs z = R$, $\abs{f(z)} \leq \frac{\log R + 2\pi}{R^2 - a^2}$, and the length is $2\pi R$, giving a bound of order $\frac{\log R}{R} \to 0$; similarly on $\abs z = \varepsilon$ the bound is $\varepsilon(\log \varepsilon + 2\pi) \to 0$.
-    :::
+::: {.proof}
+Approaching the positive real axis from above, $\arg z\to0$; from below, $\arg z\to2\pi$.
+:::
 
-<1>3. The two horizontal segments contribute $-2\pi i \int_\varepsilon^R \frac{dx}{x^2 + a^2}$.
-    <2>1. On the upper edge, $z = x$ and $\Log z = \log x$.
-        ::: {.proof}
-        The upper edge is approached from inside the region where $\arg z = 0$.
-        :::
-    <2>2. On the lower edge, $z = x$ and $\Log z = \log x + 2\pi i$.
-        ::: {.proof}
-        Approaching the positive real axis from below, $\arg z = 2\pi$, and the lower edge is traversed from $R$ down to $\varepsilon$.
-        :::
-    <2>3. Sum: $\int_\varepsilon^R \frac{\log x}{x^2 + a^2}\, dx - \int_\varepsilon^R \frac{\log x + 2\pi i}{x^2 + a^2}\, dx = -2\pi i \int_\varepsilon^R \frac{dx}{x^2 + a^2}$.
-        ::: {.proof}
-        <2>1 and <2>2, with the orientation of the lower edge reversed.
-        :::
+<1>2. For $h\in\{f,g\}$, the integrals of $h$ over $\abs z = R$ and $\abs z = \varepsilon$ tend to $0$ as $R\to\infty$ and $\varepsilon\to0$.
 
-<1>4. Compute the residues of $f$ at $z = \pm ia$.
-    <2>1. $\Res_{z=ia} f = \frac{\Log(ia)}{2ia} = \frac{\log a + i\pi/2}{2ia}$.
-        ::: {.proof}
-        Simple poles (denominator $z^2 + a^2 = (z-ia)(z+ia)$); $\Log(ia) = \log a + i\pi/2$.
-        :::
-    <2>2. $\Res_{z=-ia} f = \frac{\Log(-ia)}{-2ia} = \frac{\log a + 3i\pi/2}{-2ia}$.
-        ::: {.proof}
-        $\Log(-ia) = \log a + 3i\pi/2$ for the branch with $\arg \in (0, 2\pi)$.
-        :::
-    <2>3. Sum of residues: $\frac{1}{2ia}\qty[(\log a + i\pi/2) - (\log a + 3i\pi/2)] = \frac{1}{2ia}(-i\pi) = -\frac{\pi}{2a}$.
-        ::: {.proof}
-        <2>1 and <2>2.
-        :::
+::: {.proof}
+On $\abs z = r$, $\abs{\Log z} \le \abs{\log r} + 2\pi$ and $\abs{z^2 + a^2} \ge \abs{r^2 - a^2}$. The circle has length $2\pi r$, so the integral of $h$ over it is at most $2\pi r\,(\abs{\log r} + 2\pi)^2/\abs{r^2 - a^2}$ (with exponent $1$ in place of $2$ for $f$). This tends to $0$ as $r\to\infty$ and as $r\to0$.
+:::
 
-<1>5. By the residue theorem, the keyhole integral equals $2\pi i \cdot (-\pi/2a) = -i\pi^2/a$.
-    ::: {.proof}
-    Both poles $\pm ia$ lie inside the keyhole (for $R > a > \varepsilon$).
-    :::
+<1>3. $\displaystyle\int_0^{\infty} \frac{dx}{x^2 + a^2} = \frac{\pi}{2a}$.
 
-<1>6. Equate the contour integral with the sum of pieces.
-    <2>1. $-2\pi i \int_0^{\infty} \frac{dx}{x^2 + a^2} = -\frac{i\pi^2}{a}$.
-        ::: {.proof}
-        <1>2, <1>3 and <1>5, letting $\varepsilon \to 0$, $R \to \infty$.
-        :::
-    <2>2. $\int_0^{\infty} \frac{dx}{x^2 + a^2} = \frac{\pi}{2a}$.
-        ::: {.proof}
-        Divide <2>1 by $-2\pi i$.
-        :::
+<2>1. The two edges contribute $-2\pi i \int_\varepsilon^R \frac{dx}{x^2 + a^2}$ to $\int_\Gamma f$.
 
-<1>7. The $\log$ contribution cancels in this computation, so repeat with $g(z) := \frac{(\Log z)^2}{z^2 + a^2}$ to extract $\int \log x/(x^2 + a^2)$.
-    ::: {.proof}
-    Integrating $\Log z$ alone recovers only $\int dx/(x^2+a^2)$ because the two edges differ by $2\pi i$, a constant; squaring the logarithm produces a $\Log z$ term in the difference.
-    :::
+::: {.proof}
+By step <1>1, and since the lower edge runs from $R$ to $\varepsilon$, the two edges give
+$$\int_\varepsilon^R \frac{\log x}{x^2 + a^2}\, dx - \int_\varepsilon^R \frac{\log x + 2\pi i}{x^2 + a^2}\, dx.$$
+:::
 
-<1>8. The horizontal segments of $g$ contribute $-4\pi i \int_\varepsilon^R \frac{\log x}{x^2 + a^2}\, dx + 4\pi^2 \int_\varepsilon^R \frac{dx}{x^2 + a^2}$.
-    <2>1. The upper edge contributes $\int_\varepsilon^R \frac{(\log x)^2}{x^2 + a^2}\, dx$.
-        ::: {.proof}
-        On the upper edge, $\Log z = \log x$ and the contour runs from $\varepsilon$ to $R$.
-        :::
-    <2>2. The lower edge contributes $-\int_\varepsilon^R \frac{(\log x + 2\pi i)^2}{x^2 + a^2}\, dx$.
-        ::: {.proof}
-        On the lower edge, $\Log z = \log x + 2\pi i$; the contour runs from $R$ down to $\varepsilon$, reversing the sign.
-        :::
-    <2>3. Sum: $\int_\varepsilon^R \frac{(\log x)^2 - (\log x + 2\pi i)^2}{x^2 + a^2}\, dx = \int_\varepsilon^R \frac{-4\pi i \log x + 4\pi^2}{x^2 + a^2}\, dx$.
-        ::: {.proof}
-        <2>1 and <2>2; expand $(\log x + 2\pi i)^2 = (\log x)^2 + 4\pi i \log x - 4\pi^2$.
-        :::
+<2>2. $\Res_{z=ia} f + \Res_{z=-ia} f = -\dfrac{\pi}{2a}$.
 
-<1>9. Compute the residues of $g$ at $\pm ia$.
-    <2>1. $\Res_{z=ia} g = \frac{(\log a + i\pi/2)^2}{2ia}$ and $\Res_{z=-ia} g = \frac{(\log a + 3i\pi/2)^2}{-2ia}$.
-        ::: {.proof}
-        Same poles as $f$, with numerators squared.
-        :::
-    <2>2. Sum: $\frac{1}{2ia}\qty[(\log a + i\pi/2)^2 - (\log a + 3i\pi/2)^2] = \frac{1}{2ia}\qty[(-i\pi)\qty(2\log a + 2i\pi)] = -\frac{\pi}{a}(\log a + i\pi)$.
-        ::: {.proof}
-        Difference of squares $u^2 - v^2 = (u-v)(u+v)$.
-        :::
-    <2>3. Keyhole integral of $g$: $2\pi i \cdot \qty(-\frac{\pi}{a}(\log a + i\pi)) = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}$.
-        ::: {.proof}
-        Residue theorem, as in <1>5.
-        :::
+::: {.proof}
+The poles $\pm ia$ are simple, $z^2 + a^2 = (z-ia)(z+ia)$, $\Log(ia) = \log a + i\pi/2$, and $\Log(-ia) = \log a + 3i\pi/2$. Hence
+$$\Res_{z=ia} f + \Res_{z=-ia} f = \frac{\log a + i\pi/2}{2ia} + \frac{\log a + 3i\pi/2}{-2ia} = \frac{-i\pi}{2ia}.$$
+:::
 
-<1>10. Equate and solve.
-    <2>1. $-4\pi i I + 4\pi^2 \cdot \frac{\pi}{2a} = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}$, where $I := \int_0^{\infty} \frac{\log x}{x^2 + a^2}\, dx$.
-        ::: {.proof}
-        <1>8 (with <1>6.2 for the $dx$ term), <1>9.3, and the vanishing circle terms.
-        :::
-    <2>2. $I = \frac{\pi}{2a}\log a$.
-        ::: {.proof}
-        The real terms $4\pi^2 \cdot \frac{\pi}{2a}$ and $\frac{2\pi^3}{a}$ are equal and cancel, leaving $-4\pi i I = -\frac{2\pi^2 i}{a} \log a$; divide by $-4\pi i$.
-        :::
+<2>3. Q.E.D.
 
-<1>11. Q.E.D.
-    ::: {.proof}
-    <1>10.2 is exactly the claimed identity.
-    :::
+::: {.proof}
+Both poles lie inside $\Gamma$, so the residue theorem and step <2>2 give $\int_\Gamma f = 2\pi i\cdot(-\pi/(2a)) = -i\pi^2/a$. Letting $\varepsilon \to 0$ and $R \to \infty$, steps <1>2 and <2>1 give $-2\pi i \int_0^{\infty} \frac{dx}{x^2 + a^2} = -\frac{i\pi^2}{a}$.
+:::
 
+<1>4. The two edges contribute $\displaystyle\int_\varepsilon^R \frac{-4\pi i \log x + 4\pi^2}{x^2 + a^2}\, dx$ to $\int_\Gamma g$.
+
+::: {.proof}
+By step <1>1, and since the lower edge runs from $R$ to $\varepsilon$, the edges give $\int_\varepsilon^R \frac{(\log x)^2 - (\log x + 2\pi i)^2}{x^2 + a^2}\, dx$. Expand $(\log x + 2\pi i)^2 = (\log x)^2 + 4\pi i \log x - 4\pi^2$.
+:::
+
+<1>5. $\displaystyle\int_\Gamma g = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}$.
+
+::: {.proof}
+The residues are $\Res_{z=ia} g = \frac{(\log a + i\pi/2)^2}{2ia}$ and $\Res_{z=-ia} g = \frac{(\log a + 3i\pi/2)^2}{-2ia}$. By the difference of squares, their sum is
+$$\frac{1}{2ia}(-i\pi)(2\log a + 2i\pi) = -\frac{\pi}{a}(\log a + i\pi).$$
+Multiply by $2\pi i$.
+:::
+
+<1>6. $I = \boxed{\dfrac{\pi}{2a}\log a}$.
+
+::: {.proof}
+Let $\varepsilon \to 0$ and $R \to \infty$ in $\int_\Gamma g$. By steps <1>2, <1>3, <1>4, and <1>5,
+$$-4\pi i I + 4\pi^2 \cdot \frac{\pi}{2a} = -\frac{2\pi^2 i}{a}\log a + \frac{2\pi^3}{a}.$$
+The real terms $4\pi^2 \cdot \frac{\pi}{2a}$ and $\frac{2\pi^3}{a}$ are equal, leaving $-4\pi i I = -\frac{2\pi^2 i}{a} \log a$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the claimed identity.
+:::
 :::
