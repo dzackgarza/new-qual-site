@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS00-9
 kind: problem
-title: Evaluate $\int_{|z|=1}\cos^3z/z^3\,dz$
+title: Integral of $\cos^3z/z^3$ over the unit circle
 classification:
   areas: [prelim]
   topics: []
