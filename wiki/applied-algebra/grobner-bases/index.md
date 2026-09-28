@@ -30,9 +30,13 @@ Let $G$ be a Gröbner basis of $J$.
 
 - **Elimination.** For lexicographic order with $x_1>\cdots>x_n$, $G\intersect k[x_{i+1},\ldots,x_n]$ is a Gröbner basis of the elimination ideal $J\intersect k[x_{i+1},\ldots,x_n]$; this solves polynomial systems by back-substitution and computes implicitizations.
 
-- **Dimension and degree.** The dimension and degree of $V(J)$ are determined by the leading term ideal of $J$.
+- **Dimension and degree.** For any monomial order, the monomials not in $\operatorname{LT}(J)$ form a $k$-basis of both $R/J$ and $R/\operatorname{LT}(J)$. For a graded order, $R/J$ and $R/\operatorname{LT}(J)$ therefore have the same Hilbert function when $J$ is homogeneous, and the same affine Hilbert function in general, hence the same Krull dimension and the same degree. For $k$ algebraically closed, $\dim V(J) = \dim R/J$, and the degree of $R/J$ equals $\deg V(J)$ when $J$ is radical.
 
 - **Equality of ideals.** For a fixed monomial order, each ideal has a unique reduced Gröbner basis, so two ideals are equal if and only if their reduced Gröbner bases are equal.
+
+::: {.example}
+For $J = (x^2)\subseteq k[x,y]$, $V(J)$ is the line $x = 0$, of degree $1$, while $R/J$ has degree $2$; the radical $\sqrt J = (x)$ gives degree $1$.
+:::
 
 ## Ideals and varieties
 
