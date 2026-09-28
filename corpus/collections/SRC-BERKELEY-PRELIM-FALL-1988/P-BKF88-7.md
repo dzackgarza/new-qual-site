@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF88-7
 kind: problem
-title: Classify abelian groups of order eight and identify concrete examples
+title: Abelian groups of order $8$ and the isomorphism types of five groups of order $8$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
