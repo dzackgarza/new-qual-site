@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be continuous on \([0,1]\) and suppose
-\[
+Let $f$ be continuous on $[0,1]$ and suppose
+$$
 \int_0^1 f(x)x^n\,dx=0
-\]
-for all sufficiently large \(n\). Show that \(f\equiv0\).
+$$
+for all sufficiently large $n$. Show that $f\equiv0$.
 
-Hint: first treat the case in which the integral vanishes for every \(n\ge0\).
+Hint: first treat the case in which the integral vanishes for every $n\ge0$.
 :::
 
 ::: {.solution}
