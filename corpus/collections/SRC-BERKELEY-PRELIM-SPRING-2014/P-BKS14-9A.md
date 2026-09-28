@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-9A
 kind: problem
-title: Embed a finite abelian group additively in its endomorphism ring
+title: A finite abelian group is the additive group of a subring of its endomorphism ring
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(A\) be a finite abelian group, written additively, and let \(R=\operatorname{End}(A)\). Show that there is a subring \(S\subseteq R\) such that \(A\) and \(S\) are isomorphic as abelian groups.
+Let $A$ be a finite abelian group, written additively, and let $R=\operatorname{End}(A)$. Show that there is a subring $S\subseteq R$ such that $A$ and $S$ are isomorphic as abelian groups.
 :::
 
 ::: {.solution}
