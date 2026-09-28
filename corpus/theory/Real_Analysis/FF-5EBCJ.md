@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-5EBCJ
 kind: fact
 title: Discontinuity sets of real-valued functions
-slogan: 'Discontinuity sets are $F_\sigma$; for pointwise limits they are meagre, and for monotone functions they are countable.'
+slogan: 'Discontinuity sets are $F_\sigma$; for pointwise limits of continuous functions they are meagre, and for monotone functions they are countable.'
 prompts:
 - Characterize the set $D_f$ of discontinuities of a function.
 classification:
