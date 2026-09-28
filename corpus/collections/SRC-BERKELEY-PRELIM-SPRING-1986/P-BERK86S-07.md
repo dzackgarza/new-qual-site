@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-07
 kind: problem
-title: Solve two exponential-kernel integral equations
+title: Volterra and Fredholm integral equations with kernel $e^{x-y}$
 classification:
   areas: [prelim]
   topics: []
