@@ -21,15 +21,14 @@ Show that if $f$ is entire and $\abs{f(z)} \in \bigo(\abs{z}^p)$ for $\abs{z}$ s
 :::
 
 ::: {.solution}
-The basic idea:
+Write $f(z)=\sum_{k\geq0}c_kz^k$, and choose $C$ and $R_0$ with $\abs{f(\xi)}\le C\abs\xi^p$ for $\abs\xi\ge R_0$. For $R\ge R_0$, Cauchy's integral formula for $c_k=f^{(k)}(0)/k!$ gives
 \[
 \abs{c_k} 
-&\leq {k!\over 2\pi}\int_{\abs{z} = R} \abs{f(\xi) \over (\xi - 0)^{k+1}}\dxi\\
-&\leq {k! \over 2\pi}\int_{\abs z = R}{ \abs{\xi}^{p} \over \abs{\xi}^{k+1} }\dxi \\
-&= {k! \over 2\pi}\int_{\abs z = R} {1\over \abs{R}^{k+1-p}} \dxi\\
-&= {k! \over 2\pi} {1\over \abs{R}^{k+1-p}} \cdot 2\pi R \\
-&= \bigo(1/R^{k-p})
+&\leq {1\over 2\pi}\int_{\abs{\xi} = R} {\abs{f(\xi)} \over \abs{\xi}^{k+1}}\abs{\dxi}\\
+&\leq {1 \over 2\pi}\int_{\abs \xi = R}{ C\abs{\xi}^{p} \over \abs{\xi}^{k+1} }\abs{\dxi} \\
+&= {C \over 2\pi} {1\over R^{k+1-p}} \cdot 2\pi R \\
+&= C R^{p-k}
 ,\]
-which converges to $0$ as $R\to \infty$ provided that $k-p>0$, so $k>p$.
-So any coefficient $c_k$ for $k\geq \floor{p}$ vanishes.
+which converges to $0$ as $R\to \infty$ provided that $k>p$.
+So every coefficient $c_k$ with $k> p$, that is, $k\geq \floor{p}+1$, vanishes, and $f$ is a polynomial of degree at most $\floor p$.
 :::
