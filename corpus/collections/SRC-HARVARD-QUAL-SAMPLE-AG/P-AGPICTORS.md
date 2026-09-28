@@ -155,7 +155,7 @@ But a positive tensor power of a very ample line bundle is again very ample.  Th
 
 <1>6. There is no zero-dimensional projective variety with Picard group $\mathbb Z/3\mathbb Z$ either.
 ::: {.proof}
-A zero-dimensional variety is affine; if it is integral it is the spectrum of a finite field extension of $k$.  The Picard group of the spectrum of a field is zero.  Thus the projective case cannot be rescued in dimension zero.
+A zero-dimensional variety is affine; if it is integral it is the spectrum of a finite field extension of $k$.  The Picard group of the spectrum of a field is zero.
 :::
 
 <1>7. Hence
