@@ -51,9 +51,8 @@ and let
 $$
 \varphi=f^*:A\longrightarrow B
 $$
-be the comorphism. We use the standard definition
-[[D-MORFIN|of a finite morphism]], so $B$ is a finite $A$-module and
-$\varphi$ is not assumed injective.
+be the comorphism. Since $f$ is [[D-MORFIN|finite]], $B$ is a finite
+$A$-module via $\varphi$.
 
 <1>1. Every finite morphism of affine varieties is closed.
 
@@ -76,8 +75,7 @@ f(Z)=V\bigl(\varphi^{-1}(J)\bigr),
 $$
 which is closed in $Y$.
 
-Thus $f$ is a closed map. This is the affine argument recorded in
-[[P-AGH235QUASIFINITE|the standard finite-morphism closedness proof]].
+Thus $f$ is a closed map.
 :::
 
 <1>2. If
@@ -121,7 +119,7 @@ $$
 \height I\geq1.
 $$
 The affine dimension formula
-[[P-AGH2320DIMENSION|gives]]
+[[P-AGH2320DIMENSION]] gives
 $$
 \dim(A/I)+\height I=\dim A,
 $$
