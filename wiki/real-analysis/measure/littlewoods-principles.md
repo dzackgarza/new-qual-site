@@ -16,8 +16,11 @@ For Lebesgue measure $m$ on $\RR^d$ and $\varepsilon>0$:
 | A measurable function finite a.e. on $E$, $m(E)<\infty$, is continuous on a closed $F\subseteq E$ with $m(E\setminus F)<\varepsilon$ | Lusin |
 | A sequence converging a.e. on $E$, $m(E)<\infty$, to an a.e. finite limit converges uniformly on a closed $A\subseteq E$ with $m(E\setminus A)<\varepsilon$ | Egorov |
 
-::: {.remark title="Reduction to continuous functions and uniform convergence"}
-Lusin's theorem reduces some statements about measurable functions to statements about continuous functions on closed sets, and Egorov's theorem reduces some statements about almost-everywhere convergence to uniform convergence, at the cost of an exceptional set of small measure.
+::: {.remark title="Egorov's theorem and bounded convergence"}
+Egorov's theorem proves the bounded convergence theorem.
+Let $\abs{f_n}\leq M$ vanish outside $E$, $m(E)<\infty$, and $f_n\to f$ almost everywhere.
+For $\varepsilon>0$ take a closed $A\subseteq E$ with $m(E\setminus A)<\varepsilon$ on which $f_n\to f$ uniformly.
+Then $\int_E\abs{f_n-f}\leq m(E)\sup_A\abs{f_n-f}+2M\varepsilon$, so $\limsup_n\int\abs{f_n-f}\leq2M\varepsilon$ for every $\varepsilon>0$.
 
 :::
 
