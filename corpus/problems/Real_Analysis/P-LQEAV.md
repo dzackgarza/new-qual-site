@@ -27,8 +27,6 @@ for any sequence $a = (a_j)_{j=1}^\infty \in \mathbb{C}^\mathbb{N}$, where $\|a\
 :::
 
 ::: {.solution}
-**Goal:** Prove the sequence norm inequality $\|a\|_{\ell^q} \le \|a\|_{\ell^p}$ for $0 < p < q \le \infty$.
-
 <1>1. Case 1: $q = \infty$ (where $0 < p < \infty$).
 ::: {.proof}
 <2>1. If $\|a\|_{\ell^p} = \infty$, then the right-hand side of $\|a\|_{\ell^\infty} \le \|a\|_{\ell^p}$ is $\infty$, and every extended real number is $\le \infty$, so the inequality holds.
@@ -57,9 +55,9 @@ $$\|b\|_{\ell^q}^q = \sum_{j=1}^\infty |b_j|^q \le \sum_{j=1}^\infty |b_j|^p = \
 $$\|a\|_{\ell^q} = \|a\|_{\ell^p} \|b\|_{\ell^q} \le \|a\|_{\ell^p} \cdot 1 = \|a\|_{\ell^p}.$$
 :::
 
-<1>3. Conclusion:
+<1>3. Q.E.D.
 ::: {.proof}
-The inequality $\|a\|_{\ell^q} \le \|a\|_{\ell^p}$ holds for all $0 < p < q \le \infty$.
+Steps <1>1 and <1>2 cover $q = \infty$ and $q < \infty$.
 :::
 
 :::
