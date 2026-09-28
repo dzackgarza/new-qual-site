@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-1A
 kind: problem
-title: UC Berkeley Fall 2004 prelim 1A
+title: The delay integral equation $y(x)=\int_0^\infty e^{-2s}y(x-s)\,ds$ with $y=e^x$ on $x\le0$
 classification:
   areas: [prelim]
   topics: []
