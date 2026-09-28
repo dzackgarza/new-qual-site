@@ -56,7 +56,7 @@ we have
 \[
 B=\{(x,y):x>0,\ y\ne0\},
 \]
-the set itself is open, so $\operatorname{Int}B=B$. Its closure is the closed right half-plane $\{x\ge0\}$, since deleting the $x$-axis does not affect density in $x>0$. Therefore
+the set itself is open, so $\operatorname{Int}B=B$. Its closure is the closed right half-plane $\{x\ge0\}$, since every point $(x,y)$ with $x\ge0$ is the limit of the points $(x+\frac1n,\,y+\frac1n)$ of $B$ for all large $n$ with $y+\frac1n\ne0$. Therefore
 \[
 \operatorname{Bd}B=\{x=0\}\cup\{(x,0):x>0\}.
 \]
@@ -87,7 +87,7 @@ is dense in $\mathbb R^2$ because every open rectangle contains a rational first
 \operatorname{Int}D=\varnothing,\qquad \operatorname{Bd}D=\mathbb R^2.
 \]
 
-(e) For the corrected source region
+(e) For
 \[
 E=\{(x,y):0<x^2+y^2\le1\},
 \]
@@ -108,11 +108,11 @@ Therefore
 \[
 F=\{(x,y):x\ne0,\ y\le1/x\}.
 \]
-On each of the open half-planes $x>0$ and $x<0$, the graph $y=1/x$ is continuous and separates the strict and non-strict inequalities. Hence
+The function $g(x,y)=y-1/x$ is continuous on the open set $\{x\ne0\}$. Hence $\{x\ne0,\ y<1/x\}$ is open, and each point $(x,1/x)$ is the limit of the points $(x,1/x+\frac1n)\notin F$, so
 \[
 \operatorname{Int}F=\{x\ne0,\ y<1/x\}.
 \]
-Every point $(0,y_0)$ is a limit of points of $F$ approached from $x>0$, since $1/x\to+\infty$ as $x\to0^+$. No other new closure points occur. Thus
+Every point $(0,y_0)$ is the limit of the points $(\frac1n,y_0)$, which lie in $F$ for every $n\ge y_0$. A point with $x\ne0$ and $y>1/x$ lies in the open set $\{x\ne0,\ g>0\}$, which misses $F$. Thus
 \[
 \overline F=F\cup(\{0\}\times\mathbb R),
 \]
