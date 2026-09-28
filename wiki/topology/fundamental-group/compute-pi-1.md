@@ -13,12 +13,10 @@ topics:
 
 # Compute $\pi_1$
 
-The [[D-EBNUE|fundamental group]] can be computed by four methods: deformation retraction, van Kampen's theorem, covering spaces, and products.
-
 ## Deformation retracts
 
 ::: {.fact}
-If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$.
+If $A\subseteq X$ is a [[D-6UHU7|deformation retract]], then inclusion induces an isomorphism of [[D-EBNUE|fundamental groups]] $\pi_1(A,a) \cong \pi_1(X,a)$ for $a\in A$.
 
 - $\RR^n \sm \ts{0}$ deformation retracts onto $S^{n-1}$.
 - A torus minus a point deformation retracts onto $S^1\vee S^1$.
