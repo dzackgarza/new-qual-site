@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF20-1A
 kind: problem
-title: Integrate $e^{2x}\sin x$
+title: Antiderivative of $e^{2x}sin x$
 classification:
   areas:
   - prelim
