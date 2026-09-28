@@ -137,7 +137,7 @@ V(x_0x_3-x_1x_2).
 $$
 
 ::: {.proof}
-Combine steps <1>1 and <1>2.
+Steps <1>1 and <1>2 give the two inclusions.
 :::
 
 <1>4. The quadric $Q$ is smooth.
