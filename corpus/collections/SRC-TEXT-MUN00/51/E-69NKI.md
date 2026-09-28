@@ -22,8 +22,6 @@ Show that if $h, h': X \to Y$ are homotopic and $k, k': Y \to Z$ are homotopic, 
 :::
 
 ::: {.solution}
-**Goal:** Prove that homotopy between continuous maps is preserved under composition: if $h \simeq h': X \to Y$ and $k \simeq k': Y \to Z$, then $k \circ h \simeq k' \circ h': X \to Z$.
-
 <1>1. Setting and given homotopies:
     Let $F: X \times I \to Y$ be a continuous homotopy between $h$ and $h'$, so that:
     $$F(x, 0) = h(x) \quad \text{and} \quad F(x, 1) = h'(x) \quad \text{for all } x \in X.$$
@@ -45,6 +43,6 @@ Show that if $h, h': X \to Y$ are homotopic and $k, k': Y \to Z$ are homotopic, 
     <2>3. **Evaluation at $t = 1$:**
         $$H(x, 1) = G(F(x, 1), 1) = G(h'(x), 1) = k'(h'(x)) = (k' \circ h')(x).$$
 
-<1>4. Conclusion:
-    $H$ is a continuous homotopy from $k \circ h$ to $k' \circ h'$, proving $k \circ h \simeq k' \circ h'$. Q.E.D.
+<1>4. Q.E.D.
+    By step <1>3, $H$ is a continuous homotopy from $k \circ h$ to $k' \circ h'$, so $k \circ h \simeq k' \circ h'$.
 :::
