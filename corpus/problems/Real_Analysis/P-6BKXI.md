@@ -28,40 +28,35 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $\|f \ast \phi_t - f\|_1 \to 0$ as $t \to 0$ for $f \in L^1$ and $\phi$ an approximate identity.
+Let $\phi \in L^1(\RR^n)$ with $\int\phi = 1$ and $\phi_t(x) = t^{-n}\phi(x/t)$. Then
+$$
+f\ast\phi_t(x) - f(x) = \int\phi(y)\big(f(x - ty) - f(x)\big)\,dy
+$$
+by the substitution $u = ty$ in $\int f(x-u)\phi_t(u)\,du$ and $\int\phi = 1$.
+
+<1>1. For $f \in L^1$, $\|f \ast \phi_t - f\|_1 \to 0$ as $t \to 0$.
+
 ::: {.proof}
-standard — rewrite $f\ast\phi_t(x) - f(x) = \int\phi(y)(f(x - ty) - f(x))\,dy$ using $\int\phi = 1$; then $\|f\ast\phi_t - f\|_1 \le \int|\phi(y)|\|\tau_{-ty}f - f\|_1\,dy \to 0$ by strong continuity of translation in $L^1$ (split into $|y| \le M$ and the $L^1$ tail of $\phi$).
+By Tonelli's theorem, $\|f\ast\phi_t - f\|_1 \le \int|\phi(y)|\,\omega(ty)\,dy$ with $\omega(h) = \int|f(x-h) - f(x)|\,dx$. Continuity of translation in $L^1$ gives $\omega(ty) \to 0$ for each $y$, and $|\phi(y)|\,\omega(ty) \le 2\|f\|_1|\phi(y)|$, so dominated convergence applies. See [[E-QCYEM]].
 :::
 
-<1>2. If additionally $|\phi(x)| \le c(1 + |x|)^{-n-\eps}$ for some $c, \eps > 0$, then $f \ast \phi_t \to f$ a.e. as $t \to 0$.
-<2>1. The decay condition gives a maximal-function bound: $|f \ast \phi_t(x)| \le C (Mf)(x)$ for all $t > 0$, where $Mf$ is the Hardy–Littlewood maximal function.
+<1>2. If also $|\phi(x)| \le c(1 + |x|)^{-n-\eps}$, then $f \ast \phi_t \to f$ a.e. for $f \in L^1$.
+
+<2>1. There is $A$ with $\sup_{t>0}|f \ast \phi_t(x)| \le A\,Mf(x)$ for every $x$, where $Mf$ is the Hardy--Littlewood maximal function.
+
 ::: {.proof}
-$|\phi(y)| \le c(1+|y|)^{-n-\eps} \le c(1+|y|)^{-n}$ and $c(1+|y|)^{-n}$ is a radial decreasing integrable majorant of $|\phi|$; the standard maximal theorem says convolution with such a majorant is controlled by $CMf$ (a simple layer-cake / dyadic-annulus argument).
-:::
-<2>2. $Mf$ is finite a.e. for $f \in L^1$, and the maximal inequality $\mu\{Mf > \lambda\} \le \frac{C}{\lambda}\|f\|_1$ holds.
-::: {.proof}
-Hardy–Littlewood maximal theorem.
-:::
-<2>3. A.e. convergence: it is enough to show $\limsup_{t\to 0}|f\ast\phi_t(x) - f(x)| = 0$ a.e.; by the density argument it suffices to prove convergence on the dense class $C_c$, where it holds everywhere (by <1>3-type uniform convergence and the maximal bound to control the error).
-::: {.proof}
-standard argument: for $\delta > 0$ choose $g \in C_c$ with $\|f - g\|_1 < \delta$; then $\limsup_t|f\ast\phi_t - f| \le \limsup_t|(f-g)\ast\phi_t| + |f - g| \le C(M(f-g) + |f - g|)$ (using <2>1), and $\mu\{C(M(f-g) + |f-g|) > \eps\}$ is $O(\|f - g\|_1/\eps)$ by <2>2; letting $\delta \to 0$ over a countable sequence gives a.e. convergence.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>1–<2>3.
+$\Psi(x) = c(1+|x|)^{-n-\eps}$ is a radial, radially decreasing, integrable majorant of $|\phi|$. For such $\Psi$, $\sup_t (|f| \ast \Psi_t)(x) \le \|\Psi\|_1\,Mf(x)$, by writing $\Psi$ as an increasing limit of positive combinations of normalized indicators of balls centered at $0$. Take $A = \|\Psi\|_1$.
 :::
 
-<1>3. If $f$ is bounded and uniformly continuous and $\phi_t$ is an approximation to the identity, then $f \ast \phi_t \to f$ uniformly.
-<2>1. $|f \ast \phi_t(x) - f(x)| \le \int |\phi(y)|\,|f(x - ty) - f(x)|\,dy$.
+<2>2. Q.E.D.
+
 ::: {.proof}
-same rewriting as <1>1, using $\int\phi = 1$.
+Let $\Omega f(x) = \limsup_{t\to0}|f\ast\phi_t(x) - f(x)|$. For $g \in C_c(\RR^n)$, $g\ast\phi_t \to g$ uniformly by step <1>3, so $\Omega f \le \Omega(f - g) \le A\,M(f-g) + |f - g|$ by step <2>1. For $\alpha > 0$, the weak type $(1,1)$ bound $m\theset{Mh > \beta} \le 3^n\|h\|_1/\beta$ and Chebyshev's inequality give $m\theset{\Omega f > 2\alpha} \le (3^nA + 1)\|f - g\|_1/\alpha$. Since $C_c$ is dense in $L^1$, $m\theset{\Omega f > 2\alpha} = 0$ for every $\alpha > 0$. See [[E-KUOXT]].
 :::
-<2>2. Given $\eps > 0$: split the integral at $|y| \le M$ and $|y| > M$; the tail contributes $\le 2\|f\|_\infty\int_{|y|>M}|\phi| < \eps/2$ for $M$ large, and the main part $\le \|\phi\|_1 \sup_{|u| \le tM}|f(x - u) - f(x)| < \eps/2$ for $t$ small by uniform continuity.
+
+<1>3. If $f$ is bounded and uniformly continuous, then $f \ast \phi_t \to f$ uniformly.
+
 ::: {.proof}
-$\phi \in L^1$ (tail); $f$ uniformly continuous (main part).
-:::
-<2>3. Q.E.D.
-::: {.proof}
-<2>2 shows $\sup_x|f\ast\phi_t(x) - f(x)| < \eps$ for all small $t$.
+Given $\eps > 0$, choose $M$ with $2\|f\|_\infty\int_{|y|>M}|\phi| < \eps/2$, and by uniform continuity choose $t_0$ with $|f(x - u) - f(x)| < \eps/(2\|\phi\|_1)$ for all $x$ and $|u| \le t_0M$. For $t < t_0$, splitting $\int|\phi(y)|\,|f(x-ty) - f(x)|\,dy$ at $|y| = M$ bounds it by $\eps/2 + \eps/2$ for every $x$.
 :::
 :::
