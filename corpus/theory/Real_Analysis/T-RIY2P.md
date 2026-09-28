@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-RIY2P
 kind: theorem
 title: Small tails of $L^1(\RR^d)$ functions
-slogan: 'An $L^1$ function carries arbitrarily little mass outside a sufficiently large ball.'
+slogan: 'For $f\in L^1(\RR^d)$, $\int_{\abs{x}\ge r}\abs{f}\to0$ as $r\to\infty$.'
 classification:
   areas:
   - real-analysis
