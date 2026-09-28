@@ -80,7 +80,7 @@ $$
 $$
 and if $\mu\qty{\bigcup_nE_n}<\infty$, then also $\limsup_n\mu(E_n)\leq\mu\qty{\limsup_n E_n}$.
 If $\liminf_nE_n = \limsup_nE_n\eqqcolon E$ and $\mu\qty{\bigcup_nE_n}<\infty$, then $\mu(E) = \lim_n\mu(E_n)$.
-For $E_n\nearrow E=\bigcup_nE_n$ the equality holds without the finiteness hypothesis, and for $E_n\searrow E=\bigcap_nE_n$ it holds when $\mu(E_1)<\infty$.
+For $E_n\nearrow E=\bigcup_nE_n$ the equality $\mu(E)=\lim_n\mu(E_n)$ holds for every measure $\mu$, and for $E_n\searrow E=\bigcap_nE_n$ it holds when $\mu(E_1)<\infty$.
 
 :::
 
