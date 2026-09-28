@@ -19,13 +19,13 @@ prompts:
 ::: {.definition title="natural transformation"}
 Let $F, G: \mcc \to \mcd$ be covariant functors.
 A \dfn{natural transformation} $F \to G$ is the data of maps $F(X) \to G(X)$ in $\mcd$ for all $X \in \mcc$, such that for every $f: X \to Y$ in $\mcc$ the square
-\[
+$$
 \begin{matrix}
 F(X) & \to & G(X) \\
 \downarrow & & \downarrow \\
 F(Y) & \to & G(Y)
 \end{matrix}
-\]
+$$
 commutes.
 For contravariant functors one asks the analogous square, with the vertical arrows reversed, to commute.
 :::
@@ -35,8 +35,8 @@ A \dfn{natural isomorphism} $F \to G$ is a natural transformation such that $F(X
 :::
 
 ::: {.remark}
-Natural transformations are the correct notion of morphism of functors, and they are the arrows in the functor category $\mcd^{\mcc}$; natural isomorphism is exactly isomorphism there, which is why the inverse maps $G(X) \to F(X)$ automatically assemble into a natural transformation again.
+Natural transformations are the morphisms of the functor category $\mcd^{\mcc}$, and the natural isomorphisms are its isomorphisms: if each component $F(X)\to G(X)$ is an isomorphism, the inverse maps $G(X) \to F(X)$ form a natural transformation.
 
-Naturality is what turns an accident into a statement.
-A finite-dimensional vector space is isomorphic to its dual but not naturally so, while the map to its double dual is natural. Naturality is also part of the Yoneda lemma, representability of $h_X$, and adjunctions.
+On finite-dimensional vector spaces over a field $k$, the evaluation maps $V\to V^{\vee\vee}$ form a natural isomorphism from the identity functor to the double-dual functor.
+An isomorphism $V\cong V^\vee$ exists for each $V$ but depends on a choice, such as a basis; the dual is contravariant, so the identity functor and $V\mapsto V^\vee$ are not functors of the same variance.
 :::
