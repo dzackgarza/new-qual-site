@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BUVLS
 kind: problem
-title: Expanding Laurent series in different regions
+title: Laurent series of $\frac{1}{z(z-1)}$ on $\abs z<1$ and on $\abs z>1$
 classification:
   areas:
   - complex-analysis
