@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FVXIT
 kind: problem
-title: Sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
+title: Sharp bound on $\abs{f'(0)}$ for $f:\DD\to\theset{\Re w>0}$ with $f(0)=2$
 classification:
   areas:
   - complex-analysis
