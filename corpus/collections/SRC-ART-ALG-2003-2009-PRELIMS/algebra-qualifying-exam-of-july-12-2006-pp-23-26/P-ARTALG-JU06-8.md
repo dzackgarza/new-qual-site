@@ -35,8 +35,7 @@ Show that $\mathbb{Q}(\sqrt{2})$ and $\mathbb{Q}(\sqrt{3})$ are not isomorphic.
 A field isomorphism sends $1$ to $1$, hence fixes every integer.
 It preserves inverses, so it also fixes every quotient of integers
 with nonzero denominator. Thus it fixes the prime subfield
-$\mathbb Q$ pointwise, even though this was not separately required
-in the question.
+$\mathbb Q$ pointwise.
 :::
 
 <1>2. The field $\mathbb Q(\sqrt3)$ contains no element whose square is $2$.
