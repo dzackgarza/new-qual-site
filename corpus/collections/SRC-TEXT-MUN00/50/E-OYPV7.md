@@ -48,7 +48,7 @@ We prove the implications successively.
 
 \((iii)\Rightarrow(iv)\). Every metrizable space is normal.
 
-\((iv)\Rightarrow(v)\). Under Munkres's convention, a normal space is \(T_1\); normality therefore implies Hausdorffness (separate the two closed singleton sets).
+\((iv)\Rightarrow(v)\). A normal space is \(T_1\) by definition, so two distinct points are disjoint closed sets, and normality separates them by disjoint open sets.
 
 Hence
 \[
