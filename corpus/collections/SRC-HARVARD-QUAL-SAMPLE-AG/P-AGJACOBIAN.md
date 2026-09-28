@@ -77,7 +77,7 @@ the class does not depend on the chosen common base point $p_0$.  Changing any i
 \operatorname{Pic}^0(X)\cong\operatorname{Jac}(X).
 }
 \]
-This is the principal significance of the Jacobian: the degree-zero divisor classes, or equivalently degree-zero line bundles, themselves form a projective variety and algebraic group.
+Thus the degree-zero divisor classes, equivalently the degree-zero line bundles, form a projective variety that is an algebraic group.
 ::: {.proof}
 Abel's theorem says
 \[
