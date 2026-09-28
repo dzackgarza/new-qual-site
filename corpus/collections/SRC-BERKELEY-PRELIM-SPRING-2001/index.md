@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-BERKELEY-PRELIM-SPRING-2001
 kind: collection
-title: UC Berkeley Preliminary Exam Spring 2001
+title: Berkeley preliminary exam Spring 2001
 classification:
   areas: [prelim]
   topics: []
