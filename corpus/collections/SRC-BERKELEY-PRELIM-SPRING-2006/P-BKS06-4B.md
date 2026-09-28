@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-4B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 4B
+title: Matrices $A$ with $\operatorname{rank}(A-I)\le 2$ generate $\operatorname{GL}_n(\RR)$
 classification:
   areas: [prelim]
   topics: []
