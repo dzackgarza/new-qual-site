@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-FEC
 kind: problem
-title: Stating Sylow's theorem and Jordan-Hölder
+title: The Sylow theorems and the Jordan-Hölder theorem
 classification:
   areas:
   - algebra
@@ -74,8 +74,6 @@ finite group have the same length, and after a permutation their composition
 factors are pairwise isomorphic. Thus the multiset of simple composition
 factors is an invariant of the group.
 :::
-
-We now prove the Sylow theorems.
 
 <1>3. Prove existence of a subgroup of order $p^a$.
 ::: {.proof}
@@ -199,6 +197,5 @@ so
 $$
 \boxed{n_p\mid m.}
 $$
-This completes the proof of all three Sylow assertions.
 :::
 :::
