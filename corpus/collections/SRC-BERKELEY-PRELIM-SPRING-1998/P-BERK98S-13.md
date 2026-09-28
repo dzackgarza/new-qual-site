@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-13
 kind: problem
-title: Evaluate $\int_{|z|=1}|dz|/|z-a|^2$
+title: Integral of $|dz|/|z-a|^2$ over the unit circle for $|a|<1$
 classification:
   areas:
   - prelim
