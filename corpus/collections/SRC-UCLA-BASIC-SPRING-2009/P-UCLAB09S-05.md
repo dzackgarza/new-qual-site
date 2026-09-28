@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB09S-05
 kind: problem
-title: Compute a matrix exponential
+title: Matrix exponential $e^{At}$ of a $3\times3$ matrix
 classification:
   areas:
   - prelim
