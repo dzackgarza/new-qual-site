@@ -31,82 +31,69 @@ Prove that $f(x)=x$ for some $x$.
 
 ::: {.solution}
 Set
-\[
+$$
 A=\{x\in[0,100]:x\le f(x)\}.
-\]
-We will show that $c=\sup A$ is a fixed point.
+$$
 
-<1>1. The set $A$ is nonempty and bounded above.
+<1>1. The set $A$ is nonempty and bounded above, so $c=\sup A$ exists and
+lies in $[0,100]$.
+
 ::: {.proof}
-Since $0<f(0)$,
-\[
-0\le f(0),
-\]
-so $0\in A$.
-By definition $A\subseteq[0,100]$, hence $A$ is bounded above.
-Therefore
-\[
-c:=\sup A
-\]
-exists and lies in $[0,100]$.
+Since $0<f(0)$, one has $0\in A$. By definition $A\subseteq[0,100]$.
 :::
 
 <1>2. One has $c\le f(c)$.
+
 ::: {.proof}
-For every $x\in A$, one has $x\le c$.
-Because $f$ is monotonically increasing,
-\[
+For every $x\in A$, one has $x\le c$. Because $f$ is monotonically
+increasing,
+$$
 f(x)\le f(c).
-\]
-But $x\in A$ also gives $x\le f(x)$.
-Thus
-\[
+$$
+But $x\in A$ also gives $x\le f(x)$. Thus
+$$
 x\le f(c)
-\qquad\text{for every }x\in A.
-\]
-So $f(c)$ is an upper bound for $A$.
-Since $c$ is the least upper bound,
-\[
-c\le f(c).
-\]
+\qquad\text{for every }x\in A,
+$$
+so $f(c)$ is an upper bound for $A$. Since $c$ is the least upper bound,
+$c\le f(c)$.
 :::
 
-<1>3. One has $f(c)\le c$.
+<1>3. One has $c<100$.
+
 ::: {.proof}
-First note that $c<100$.
-Indeed, if $c=100$, then <1>2 would imply
-\[
-100\le f(100),
-\]
-contrary to the hypothesis $f(100)<100$.
-
-Suppose for contradiction that
-\[
-c<f(c).
-\]
-By monotonicity and <1>2,
-\[
-f(c)\le f(f(c)).
-\]
-Also $f(c)<100$: since $c<100$, monotonicity gives
-\[
-f(c)\le f(100)<100.
-\]
-Hence $f(c)\in[0,100]$ and
-\[
-f(c)\le f(f(c)),
-\]
-so $f(c)\in A$.
-But $f(c)>c=\sup A$, a contradiction.
-Therefore
-\[
-f(c)\le c.
-\]
+If $c=100$, then step <1>2 would give $100\le f(100)$, contrary to the
+hypothesis $f(100)<100$.
 :::
 
-Combining <1>2 and <1>3 yields
-\[
-f(c)=c,
-\]
-so $f$ has a fixed point.
+<1>4. One has $f(c)\le c$.
+
+::: {.proof}
+Suppose for contradiction that
+$$
+c<f(c).
+$$
+Monotonicity gives
+$$
+f(c)\le f(f(c)).
+$$
+Since $c<100$ by step <1>3, monotonicity also gives
+$$
+f(c)\le f(100)<100,
+$$
+and $f(c)>c\ge0$. Hence $f(c)\in[0,100]$ and $f(c)\le f(f(c))$, so
+$f(c)\in A$. But $f(c)>c=\sup A$, a contradiction.
+:::
+
+<1>5. $f(c)=c$.
+
+::: {.proof}
+Steps <1>2 and <1>4 give $c\le f(c)\le c$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 gives the fixed point $x=c$.
+:::
 :::
