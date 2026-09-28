@@ -30,11 +30,11 @@ Now, PIDs are Noetherian, but are there UFDs which are not?
 :::
 
 ::: {.solution}
-Let $R$ be an integral domain. A nonzero nonunit $a\in R$ is **irreducible** if
+Let $R$ be an integral domain. A nonzero nonunit $a\in R$ is \dfn{irreducible} if
 \[
 a=bc\implies b\in R^\times\text{ or }c\in R^\times,
 \]
-and **prime** if
+and \dfn{prime} if
 \[
 a\mid bc\implies a\mid b\text{ or }a\mid c.
 \]
@@ -49,7 +49,7 @@ Conversely, if $R[x_1,\dots,x_n]$ is a UFD, then every nonzero nonunit $a\in R$ 
 R[x_1,\dots,x_n]\text{ is a UFD}\iff R\text{ is a UFD}.
 \]
 
-The usual definition of UFD is made for domains. With zero divisors, cancellation fails and factorizations need not behave in the UFD sense; for example, zero divisors and nontrivial idempotents can produce incompatible factorizations. One can study more general factorization theories for rings with zero divisors, but they are not UFDs in the standard sense.
+A UFD is by definition a domain. With zero divisors, factorizations into nonunits need not have bounded length: in $\ZZ/6\ZZ$ the idempotent nonunit $3$ satisfies $3=3\cdot3=3^n$ for every $n\ge1$.
 
 A UFD need not be Noetherian. For example,
 \[
