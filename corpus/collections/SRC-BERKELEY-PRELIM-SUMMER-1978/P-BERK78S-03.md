@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-03
 kind: problem
-title: Eigenvectors from column sums and positivity of a two-by-two matrix
+title: A fixed vector from unit column sums and a positive eigenvalue of a positive $2\times2$ matrix
 classification:
   areas:
   - prelim
