@@ -27,10 +27,11 @@ Let $R$ be a PID and let $(p)$ be a prime ideal of $R$. Prove that $R/(p)$ is a 
 
 
 ::: {.solution}
-Let $(p)$ be a prime ideal in the PID $R$. Since every nonzero prime ideal in a PID is maximal, $(p)$ is maximal.
+Let $(p)$ be a nonzero prime ideal in the PID $R$. Since every nonzero prime ideal in a PID is maximal, $(p)$ is maximal.
 
-<1>1. Let $x+(p)\ne (p)$ in $R/(p)$, so $x\notin(p)$.
+<1>1. Every $x+(p)\ne (p)$ in $R/(p)$ is invertible.
 ::: {.proof}
+Here $x\notin(p)$.
 Because $(p)$ is maximal and $(p)\subsetneq (p,x)$, one has
 \[
 (p,x)=R.
@@ -50,4 +51,8 @@ Thus every nonzero class in $R/(p)$ has a multiplicative inverse.
 ::: {.proof}
 A commutative ring with identity is a field exactly when every nonzero element is invertible. This holds by <1>1.
 :::
+:::
+
+::: {.remark}
+The statement needs $p\neq0$: the zero ideal of a PID is prime, and $R/(0)\cong R$ is a field only when $R$ is; for example $(0)\subset\ZZ$ is prime and $\ZZ$ is not a field.
 :::
