@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-DXXL4
 kind: problem
-title: Uniform limit theorem
+title: 'Heine--Cantor theorem: a continuous map on a compact metric space is uniformly
+  continuous'
 classification:
   areas:
   - complex-analysis
