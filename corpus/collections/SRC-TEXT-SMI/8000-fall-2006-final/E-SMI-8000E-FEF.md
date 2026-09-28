@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-FEF
 kind: problem
-title: Proof choice — existence of algebraic closures or embedding into algebraically closed fields
+title: Existence of algebraic closures, or embedding an algebraic extension into an algebraically closed field
 classification:
   areas:
   - algebra
@@ -134,7 +134,8 @@ Therefore $L=E$.
 
 <1>4. Conclude the required embedding exists.
 ::: {.proof}
-The maximal map from step <1>2 is therefore a field homomorphism
+By steps <1>2 and <1>3, the maximal element $(L,\varphi)$ has $L=E$, so
+$\varphi$ is a field homomorphism
 $$
 \boxed{\varphi:E\longrightarrow F}
 $$
