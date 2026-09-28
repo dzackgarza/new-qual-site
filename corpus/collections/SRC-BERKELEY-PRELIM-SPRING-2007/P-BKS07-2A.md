@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-2A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 2A
+title: Jordan form and Jordan basis of a $3\times 3$ matrix with eigenvalues $-1,1,1$
 classification:
   areas: [prelim]
   topics: []
