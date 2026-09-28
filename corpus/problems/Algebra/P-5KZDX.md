@@ -19,7 +19,7 @@ Define a perfect field. Prove that every finite field is perfect.
 :::
 
 ::: {.solution}
-A field $F$ is **perfect** if every irreducible polynomial in $F[x]$ is separable.
+A field $F$ is \dfn{perfect} if every irreducible polynomial in $F[x]$ is separable.
 
 Every finite field is perfect. Let $F=\FF_q$ have characteristic $p>0$ and let
 \[
