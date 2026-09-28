@@ -38,13 +38,6 @@ Prove that (1) implies (2) and that (2) implies (3).
 Determine whether (3) implies (1).
 :::
 
-::: {.remark}
-The source asks to show that the three statements are equivalent for every continuous $f$.
-That is false: a continuous function satisfying (3) need not have bounded variation, and so need not be absolutely continuous.
-Under the additional hypothesis that $f$ has bounded variation, the three statements are equivalent; this is the Banach--Zarecki theorem.
-The source writes $m$ for the measure of the arbitrary sets $E$ and $f(E)$; outer measure is used here because such sets need not be measurable.
-:::
-
 ::: {.solution}
 <1>1. Absolute continuity implies the small-image condition.
 ::: {.proof}
@@ -134,11 +127,18 @@ For the partition containing $0,t_N,t_{N-1},\ldots,t_0$ in increasing order, the
 \]
 Since $t_k\asymp k^{-1/2}$, this tends to $\infty$. Hence $f$ has unbounded variation on $[0,1]$.
 
-Every absolutely continuous function on a compact interval has bounded variation, so $f$ is not absolutely continuous. Thus (3) does not imply (1), and the source's claimed equivalence is false as written.
+Every absolutely continuous function on a compact interval has bounded variation, so $f$ is not absolutely continuous. Thus (3) does not imply (1).
 :::
 
-<1>4. State the standard corrected theorem.
+<1>4. For continuous $f$ of bounded variation on $[0,1]$, conditions (1), (2), and (3) are equivalent.
 ::: {.proof}
-The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. Therefore the missing bounded-variation hypothesis is exactly what prevents condition (3) from characterizing absolute continuity in the source statement.
+The Banach--Zarecki theorem states that a real-valued function on a compact interval is absolutely continuous if and only if it is continuous, has bounded variation, and has Lusin's $N$-property. For $f$ of bounded variation this gives (3) implies (1), and steps <1>1 and <1>2 give the other implications. The function of step <1>3 has unbounded variation.
 :::
+:::
+
+::: {.remark}
+The source asks to show that the three statements are equivalent for every continuous $f$.
+That is false: a continuous function satisfying (3) need not have bounded variation, and so need not be absolutely continuous.
+Under the additional hypothesis that $f$ has bounded variation, the three statements are equivalent; this is the Banach--Zarecki theorem.
+The source writes $m$ for the measure of the arbitrary sets $E$ and $f(E)$; outer measure is used here because such sets need not be measurable.
 :::
