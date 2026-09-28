@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if n is coprime to N = 561 then $n ^ { N - 1 } \equiv 1$ mod N.
+Prove that if $n$ is coprime to $N=561$ then $n^{N-1}\equiv1\bmod N$.
 :::
 
 ::: {.solution}
