@@ -36,7 +36,7 @@ For $Y$ Noetherian, projective implies proper.
 The proof combines properness of closed immersions, stability of properness under composition, and universal closedness of $\PP^N_\ZZ \to \Spec \ZZ$ via elimination.
 
 For a graded ring $S$ with $S_0 = A$ and $S$ generated in degree one by finitely many elements, $\Proj S \to \Spec A$ is projective.
-The blowup of a Noetherian scheme $X$ along a closed subscheme is the relative $\Proj$ of the Rees algebra $\bigoplus_{d\ge0}\mci^d$, and the blowup morphism is projective [@Har10a, Proposition II.7.13]; for $X$ a projective variety, the blowup is again a projective variety.
+The blowup of a Noetherian scheme $X$ along a closed subscheme with ideal sheaf $\mci$ is the relative $\Proj$ of the Rees algebra $\bigoplus_{d\ge0}\mci^d$, and the blowup morphism is projective [@Har10a, Proposition II.7.13]; for $X$ a projective variety, the blowup is again a projective variety.
 :::
 
 ::: {.example}
