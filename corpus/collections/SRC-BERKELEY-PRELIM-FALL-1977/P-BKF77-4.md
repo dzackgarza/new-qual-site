@@ -67,7 +67,7 @@ P^i=P^j.
 $$
 :::
 
-<1>3. Cancel the smaller power.
+<1>3. $P^{j-i}=I$ with $j-i>0$.
 ::: {.proof}
 Multiplying
 $$
