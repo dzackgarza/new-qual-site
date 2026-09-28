@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-13
 kind: problem
-title: Locus defined by a 3-by-3 determinant
+title: Locus defined by a $3\times3$ determinant
 classification:
   areas:
   - applied-algebra
