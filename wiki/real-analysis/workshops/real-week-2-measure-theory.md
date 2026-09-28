@@ -202,7 +202,7 @@ Apply Tonelli's theorem to $\chi_E$.
 ::: {.remark}
 The converse fails: a set whose slices are all measurable need not be measurable.
 For a non-measurable $\mathcal N\subseteq[0,1]$, let $E\coloneqq\mathcal N\times[0,1]$.
-Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable, since otherwise the preceding corollary would make the slices $E^y = \mathcal N$ measurable for almost every $y\in[0,1]$.
+Every slice $E_x$ is $[0,1]$ or $\varnothing$, hence measurable, but $E$ is not measurable: Tonelli's theorem applied to $\chi_E$ would make $E^y$ measurable for almost every $y$, whereas $E^y = \mathcal N$ for every $y\in[0,1]$.
 
 :::
 
@@ -214,7 +214,7 @@ Then $f$ is measurable if and only if $\mathcal A$ is measurable in $\RR^{d+1}$,
 
 ::: {.proof}
 If $f$ is measurable, then $F(x,y)\coloneqq y-f(x)$ is measurable on $\RR^{d+1}$, so $\mathcal A = \theset{y\geq0}\cap\theset{F\leq0}$ is measurable.
-If $\mathcal A$ is measurable, each slice $\mathcal A_x = [0,f(x)]$ has $m(\mathcal A_x)=f(x)$, so the preceding corollary, with the roles of $x$ and $y$ exchanged, shows that $f$ is measurable and $m(\mathcal A) = \int m(\mathcal A_x)\dx = \int f(x)\dx$.
+If $\mathcal A$ is measurable, each slice $\mathcal A_x = [0,f(x)]$ has $m(\mathcal A_x)=f(x)$, so Tonelli's theorem applied to $\chi_{\mathcal A}$, with the roles of $x$ and $y$ exchanged, shows that $f$ is measurable and $m(\mathcal A) = \int m(\mathcal A_x)\dx = \int f(x)\dx$.
 
 :::
 
