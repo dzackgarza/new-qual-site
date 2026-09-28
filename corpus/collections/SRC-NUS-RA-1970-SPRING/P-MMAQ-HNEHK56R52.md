@@ -32,8 +32,6 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-**Goal:** Decide the truth of (f), (g), and (h).
-
 <1>1. (f) is true.
 <2>1. On each $[\eps, 1]$, Riemann integrability of the nonnegative $f$ gives Lebesgue integrability there, with equal integrals.
 ::: {.proof}
@@ -57,7 +55,7 @@ By <2>4.
 :::
 
 <1>2. (g) is true: the Riemann–Lebesgue lemma.
-<2>1. It suffices to prove the claim for a dense class, then extend.
+<2>1. If the claim holds for every $f$ in a dense subspace of $L^1[0,1]$, it holds for every $f \in L^1[0,1]$.
 ::: {.proof}
 The map $f \mapsto \int_0^1 f(x) \sin(n\pi x) ~dx$ is bounded linear on $L^1[0,1]$ with norm $\leq 1$, so if the claim holds on a dense subspace it holds everywhere by a $3\eps$ argument.
 :::
@@ -71,7 +69,7 @@ Step functions are finite linear combinations of indicators, and <2>2 handles ea
 :::
 <2>4. Step functions are dense in $L^1[0,1]$.
 ::: {.proof}
-Standard density of simple/step functions in $L^1$ on a finite measure space.
+Simple functions are dense in $L^1[0,1]$, and by regularity of Lebesgue measure each indicator of a measurable set is an $L^1$-limit of indicators of finite unions of intervals.
 :::
 <2>5. Q.E.D.
 ::: {.proof}
@@ -79,7 +77,7 @@ Combine <2>1, <2>3, <2>4.
 :::
 
 <1>3. (h) is false.
-<2>1. Exhibit a counterexample: $f(x) \definedas x \sin(1/x)$ for $x \in (0,1]$, with $f(0) \definedas 0$.
+<2>1. Let $f(x) \definedas x \sin(1/x)$ for $x \in (0,1]$, with $f(0) \definedas 0$.
 ::: {.proof}
 This defines a function on $[0,1]$; continuity at $0$ follows from $\abs{x\sin(1/x)} \leq x \to 0$.
 :::
@@ -89,11 +87,11 @@ $x \mapsto x \sin(1/x)$ is continuous on $(0,1]$ as a composition of continuous 
 :::
 <2>3. $f$ is not of bounded variation.
 ::: {.proof}
-Take the partition points $x_k = \frac{2}{(2k+1)\pi}$; then $f(x_k) = \pm \frac{2}{(2k+1)\pi}$ alternate in sign, and $\sum_k \abs{f(x_k) - f(x_{k+1})} \geq \sum_k \frac{2}{(2k+1)\pi}$-type terms, which diverges like a harmonic series; hence the total variation is infinite.
+Take the partition points $x_k = \frac{2}{(2k+1)\pi}$; then $f(x_k) = (-1)^k x_k$, so $\abs{f(x_k) - f(x_{k+1})} = x_k + x_{k+1} \geq x_k = \frac{2}{(2k+1)\pi}$. The sum $\sum_k \frac{2}{(2k+1)\pi}$ diverges by comparison with the harmonic series, so the variations over the partitions $\{0, x_N, \ldots, x_1, x_0, 1\}$ are unbounded and the total variation is infinite.
 :::
 <2>4. Q.E.D.
 ::: {.proof}
-A continuous function on $[0,1]$ need not be of bounded variation, so (h) is false.
+By <2>2 and <2>3, $f$ is continuous on $[0,1]$ and not of bounded variation, so (h) is false.
 :::
 
 <1>4. Conclusion: (f) and (g) are true; (h) is false.
