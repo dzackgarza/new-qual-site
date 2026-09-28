@@ -26,5 +26,5 @@ Show that $f$ is constant.
 :::
 
 ::: {.solution}
-The function $g ( z ) = e ^ { - f ( z ) }$ is entire, and $| g ( z ) | = e ^ { - \mathrm { R e } f ( z ) } \leq e ^ { 2 }$ . Liouville’s Theorem implies that g is constant, say $g ( z ) = c$ . Clearly $c \neq 0$ . Then f maps the connected set C into the discrete set of all logarithms of c, so $f$ is constant.
+The function $g(z)=e^{-f(z)}$ is entire, and $\abs{g(z)}=e^{-\operatorname{Re}f(z)}\leq e^2$. Liouville's theorem implies that $g$ is constant, say $g(z)=c$. Clearly $c\neq0$. Then $f$ maps the connected set $\CC$ into the discrete set of all logarithms of $c$, so $f$ is constant.
 :::
