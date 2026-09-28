@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-3B
 kind: problem
-title: Count zeros of z to the seventh plus exponential z
+title: Zeros of $z^7+e^z$ in the upper half of the disk $\abs{z}<2$
 classification:
   areas:
   - prelim
@@ -24,10 +24,10 @@ audit:
 ---
 
 ::: {.problem}
-How many complex numbers \(z\) satisfy
-\[
+How many complex numbers $z$ satisfy
+$$
 |z|<2,\qquad \operatorname{Im}(z)>0,\qquad z^7+e^z=0?
-\]
+$$
 :::
 
 ::: {.solution}
