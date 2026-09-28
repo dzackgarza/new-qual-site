@@ -62,5 +62,5 @@ If $\rho_1$ and $\rho_2$ are isomorphic, then for some invertible $T$,
 for every $g$. Again trace is similarity-invariant.
 :::
 
-Thus the trace packages a representation into a class function; over $\CC$ for finite groups, the character in fact determines the representation up to isomorphism.
+Thus $\chi_\rho$ is a class function that depends only on the isomorphism class of $\rho$; for a finite group over $\CC$, it determines $\rho$ up to isomorphism.
 :::
