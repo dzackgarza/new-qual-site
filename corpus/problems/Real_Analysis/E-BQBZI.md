@@ -26,8 +26,6 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove that on a finite measure space $(X, \mu)$ with $\mu(X) < \infty$, $\lim_{p \to \infty} \|f\|_{L^p(X)} = \|f\|_{L^\infty(X)}$ for any measurable function $f$.
-
 <1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p} \le \|f\|_{L^\infty}$.
 ::: {.proof}
 <2>1. If $\|f\|_{L^\infty} = \infty$, the upper bound $\limsup_{p \to \infty} \|f\|_{L^p} \le \infty$ holds vacuously.
@@ -56,9 +54,9 @@ $$\liminf_{p \to \infty} \|f\|_{L^p} \ge \alpha \lim_{p \to \infty} (\mu(A_\alph
 <2>8. If $\|f\|_{L^\infty} = \infty$, the bound $\liminf_{p \to \infty} \|f\|_{L^p} \ge \alpha$ holds for arbitrarily large $\alpha > 0$, so $\lim_{p \to \infty} \|f\|_{L^p} = \infty = \|f\|_{L^\infty}$.
 :::
 
-<1>3. Conclusion:
+<1>3. Q.E.D.
 ::: {.proof}
-Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p} = \|f\|_{L^\infty}$.
+Combining steps <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p} = \|f\|_{L^\infty}$.
 :::
 
 :::
