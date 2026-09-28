@@ -21,21 +21,21 @@ Let $f$ be an entire function. Assume that for some $k \in \mathbb{N}$, and suff
 :::
 
 ::: {.solution}
-By induction on $k$, suppose that if $f$ is degree $k-1$ with $\abs{f} \leq A + B\abs{z}^{k-1}$ outside of a large enough disc.
-Let $f$ be degree $k$, and consider
+Induct on $k\ge0$. For $k=0$, $\abs f\le A+B$ outside a disk and $f$ is bounded on the disk by continuity, so $f$ is constant by Liouville.
+
+For $k\geq1$, assume the statement for $k-1$ and let $\abs{f(z)}\le A+B\abs z^k$ for $\abs z\ge R$. Consider
 \[
 g(z) \da 
 \begin{cases}
-f'(0) & z=0 
+{f(z) - f(0) \over z} & z\neq 0, 
 \\
-{f(z) - f(0) \over z-0} & z=0.
+f'(0) & z=0,
 \end{cases}
-.\]
-Then outside of a large enough disc,
+\]
+which is entire. For $\abs z\geq\max(R,1)$,
 \[
-\abs{g} \sim {A+B\abs{z}^k \over \abs{z}} \leq_{\sim} B\abs{z}^{k-1}
-,\]
-and moreover by the MMP $g$ is bounded inside such a disc.
-So $g$ is a polynomial of degree at most $k-1$ by hypothesis, making $f$ degree at most $k$.
+\abs{g(z)} \leq {A+\abs{f(0)}+B\abs{z}^k \over \abs{z}} \leq \qty{A+\abs{f(0)}}+B\abs{z}^{k-1}
+.\]
+By the induction hypothesis $g$ is a polynomial of degree at most $k-1$, so $f(z)=f(0)+zg(z)$ is a polynomial of degree at most $k$.
 :::
 
