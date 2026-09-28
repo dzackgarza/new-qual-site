@@ -43,7 +43,7 @@ Use generators
 $$
 r(a)=ia,\quad r(i)=i,\qquad s(a)=a,\quad s(i)=-i.
 $$
-The complete subgroup and fixed-field list is as follows.
+The subgroups of $G$ and their fixed fields are:
 
 | Subgroup $H$ | Order | Fixed field $K^H$ | Degree over $\mathbb Q$ | Galois over $\mathbb Q$? |
 | --- | --- | --- | --- | --- |
@@ -142,8 +142,8 @@ $\mathbb Q(b)$ lies in the fixed field of the indicated subgroup
 of order $2$, which has degree $4$. Equality follows, proving
 every remaining quartic row.
 
-Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. The exhaustive
-subgroup enumeration proves that no intermediate field is missing;
+Finally $K^G=\mathbb Q$ and $K^{\{1\}}=K$. By step <1>2 and the Galois
+correspondence, the table lists every intermediate field of $K/\mathbb Q$;
 inclusions between fields reverse the inclusions of their subgroups.
 :::
 
