@@ -32,7 +32,7 @@ Up to isomorphism, how many additive abelian groups $G$ of order $16$ have the p
 ::: {.solution}
 There are $\boxed{3}$ such groups, so the answer is $\boxed{\text{(D)}}$.
 
-<1>1. Use the classification of finite abelian $2$-groups.
+<1>1. The abelian groups of order $16$ with $4x=0$ for all $x$ are $C_4\times C_4$, $C_4\times C_2\times C_2$, and $C_2^4$.
 ::: {.proof}
 An abelian group of order $16=2^4$ is a product of cyclic groups corresponding to a partition of $4$.
 The condition $4x=0$ for every $x$ says the exponent divides $4$, so no cyclic factor may have order $8$ or $16$.
