@@ -7,8 +7,6 @@ topics:
 
 # Counterexamples
 
-Each example below refutes the statement in its title.
-
 ## Convergence and integration
 
 ::: {.example title="The limit of the integrals need not be the integral of the limit"}
@@ -16,7 +14,7 @@ On $\RR$ with Lebesgue measure, each of the following sequences converges pointw
 
 - $f_n \coloneqq n\chi_{[0,1/n]}$, whose mass concentrates near $0$;
 
-- $f_n \coloneqq \frac1n\chi_{[0,n]}$, which is uniformly bounded by $1$, so the bounded convergence theorem requires a space of finite measure;
+- $f_n \coloneqq \frac1n\chi_{[0,n]}$, which is uniformly bounded by $1$ with supports of unbounded measure, so the bounded convergence theorem fails without the hypothesis that the $f_n$ are supported in one set of finite measure;
 
 - $f_n \coloneqq \chi_{[n,n+1]}$, whose mass escapes to infinity.
 
