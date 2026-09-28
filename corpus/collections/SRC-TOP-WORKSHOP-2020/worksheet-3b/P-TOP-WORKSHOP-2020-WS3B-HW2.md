@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW2
 kind: problem
-title: Deck transformations of universal covers (warm-up)
+title: Deck transformations of the universal cover of $S^1$
 classification:
   areas:
   - topology
@@ -26,7 +26,7 @@ Describe the deck transformations from one of the universal covers above.
 :::
 
 ::: {.solution}
-A **deck transformation** of a covering \(p:E\to B\) is a homeomorphism
+A \dfn{deck transformation} of a covering \(p:E\to B\) is a homeomorphism
 \[
 \phi:E\to E
 \]
