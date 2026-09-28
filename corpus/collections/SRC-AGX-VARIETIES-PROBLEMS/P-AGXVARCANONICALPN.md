@@ -145,7 +145,7 @@ $$
 <1>5. Q.E.D.
 
 ::: {.proof}
-Step <1>4 is the statement requested in the source, and step <1>3 is its
+Step <1>4 is the asserted linear equivalence, and step <1>3 is its
 equivalent canonical-bundle form.
 :::
 :::
