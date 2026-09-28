@@ -130,7 +130,7 @@ Its image has degree
 Hence the image is a degree-two plane curve, i.e. a conic.  Since it is isomorphic to the smooth curve $C$, it is a smooth conic.
 :::
 
-<1>5. Thus the correct dichotomy is
+<1>5. Thus
 \[
 \boxed{
 \text{every genus-zero curve is a smooth plane conic, and }
