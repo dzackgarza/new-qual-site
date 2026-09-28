@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF88-4
 kind: problem
-title: Jordan form of an explicit six-by-six matrix
+title: Jordan form of a unipotent $6\times6$ matrix with $\operatorname{rank}(A-I)=2$
 classification:
   areas: [prelim]
   topics: []
