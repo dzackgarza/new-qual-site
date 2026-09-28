@@ -82,7 +82,7 @@ so
 This lets one compute the ramification contribution either point-by-point or fibre-by-fibre.
 :::
 
-<1>4. In the especially common case of a degree-$n$ cover of the projective line,
+<1>4. For a degree-$n$ cover of the projective line,
 \[
 \boxed{
 g_X
