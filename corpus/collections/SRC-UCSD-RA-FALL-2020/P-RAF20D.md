@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20D
 kind: problem
-title: "Limits of L^p norms: power means approaching the measure of support and the essential supremum"
+title: "$\\int f^\\alpha\\,d\\mu\\to\\mu\\{f>0\\}$ as $\\alpha\\to0^+$ and $\\int|g|^{p+1}/\\int|g|^p\\to\\|g\\|_\\infty$ as $p\\to\\infty$"
 classification:
   areas:
   - real-analysis
@@ -42,34 +42,28 @@ $$
 :::
 
 ::: {.solution}
-**Goal.** Prove the two limit statements about $L^p$ norms on a finite measure space.
-
 <1>1. (1) $f^\alpha \in L^1$ for $\alpha \in (0,1)$ and $\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \mu\theset{f > 0}$.
 <2>1. $f^\alpha \in L^1$.
 ::: {.proof}
-on $\theset{f \le 1}$, $f^\alpha \le 1$; on $\theset{f > 1}$, $f^\alpha \le f$ (since $\alpha < 1$); so $f^\alpha \le 1 + f \in L^1$ (finite measure space).
+On $\theset{f \le 1}$, $f^\alpha \le 1$; on $\theset{f > 1}$, $f^\alpha \le f$ because $\alpha < 1$. Hence $f^\alpha \le 1 + f$ for every $\alpha\in(0,1)$, and $1+f \in L^1$ because $\mu(X)<\infty$.
 :::
 <2>2. $f^\alpha \to \mathbf 1_{\theset{f > 0}}$ pointwise as $\alpha \to 0^+$.
 ::: {.proof}
-if $f(x) > 0$, then $f(x)^\alpha \to 1$; if $f(x) = 0$, then $f(x)^\alpha = 0$.
+If $f(x) > 0$, then $f(x)^\alpha \to 1$; if $f(x) = 0$, then $f(x)^\alpha = 0$.
 :::
-<2>3. $f^\alpha \le 1 + f \in L^1$ for all $\alpha \in (0,1)$.
+<2>3. $\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \int \mathbf 1_{\theset{f>0}}\,d\mu = \mu\theset{f > 0}$.
 ::: {.proof}
-by <1>1.1.
-:::
-<2>4. Hence $\lim_{\alpha \to 0^+} \int f^\alpha\,d\mu = \int \mathbf 1_{\theset{f>0}}\,d\mu = \mu\theset{f > 0}$.
-::: {.proof}
-dominated convergence theorem with dominating function $1 + f$.
+Apply the dominated convergence theorem to the pointwise limit of step <2>2, with the dominating function $1 + f$ of step <2>1.
 :::
 
 <1>2. (2) $g \in L^p$ for $p \in [1,\infty)$ and $\lim_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} = \|g\|_\infty$.
 <2>1. $g \in L^p$ for all $p \in [1,\infty)$.
 ::: {.proof}
-$|g| \le \|g\|_\infty$ a.e., so $\int |g|^p \le \|g\|_\infty^p \mu(X) < \infty$ (finite measure).
+Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^p \le \|g\|_\infty^p \mu(X) < \infty$.
 :::
 <2>2. $\frac{\int |g|^{p+1}}{\int |g|^p} \le \|g\|_\infty$.
 ::: {.proof}
-$\int |g|^{p+1} = \int |g| \cdot |g|^p \le \|g\|_\infty \int |g|^p$.
+Since $|g| \le \|g\|_\infty$ a.e., $\int |g|^{p+1} = \int |g| \cdot |g|^p \le \|g\|_\infty \int |g|^p$, and $\int|g|^p>0$ because $\|g\|_\infty>0$.
 :::
 <2>3. $\liminf_{p\to\infty} \frac{\int |g|^{p+1}}{\int |g|^p} \ge \|g\|_\infty$.
 ::: {.proof}
@@ -115,11 +109,11 @@ Letting $\varepsilon\downarrow0$ proves the desired lower bound.
 :::
 <2>4. Hence the limit is $\|g\|_\infty$.
 ::: {.proof}
-combine <1>2.2 and <1>2.3.
+Steps <2>2 and <2>3 give matching upper and lower bounds.
 :::
 
 <1>3. Q.E.D.
 ::: {.proof}
-<1>1 and <1>2 prove (1) and (2).
+Steps <1>1 and <1>2 prove (1) and (2).
 :::
 :::
