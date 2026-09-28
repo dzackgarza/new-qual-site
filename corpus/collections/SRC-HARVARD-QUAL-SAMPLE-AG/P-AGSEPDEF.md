@@ -78,7 +78,7 @@ For an ordinary topological space $T$, Hausdorffness is equivalent to the diagon
 \[
 T\longrightarrow T\times T
 \]
-being closed.  In algebraic geometry the Zariski topology itself is usually far from Hausdorff, so the correct replacement is to require the diagonal to be a closed **subscheme** of the fibre product.
+being closed.  For schemes the diagonal lands in the fibre product $X\times_YX$, whose underlying space is not the product of the underlying spaces, and the Zariski topology of an irreducible scheme of positive dimension is not Hausdorff.  Separatedness imposes the diagonal condition scheme-theoretically: $\Delta_{X/Y}$ is a closed immersion into $X\times_YX$.
 :::
 
 <1>5. Q.E.D.
