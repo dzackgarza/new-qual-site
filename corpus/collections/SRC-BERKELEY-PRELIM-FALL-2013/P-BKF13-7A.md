@@ -28,16 +28,16 @@ audit:
 ---
 
 ::: {.problem}
-Let A and B be $n \times n$ complex matrices.
+Let $A$ and $B$ be $n\times n$ complex matrices.
 Prove or disprove each of the following statements:
 
-1. If A and B are diagonalizable, so is $A + B .$
+1. If $A$ and $B$ are diagonalizable, so is $A+B$.
 
-2. If A and B are diagonalizable, so is AB.
+2. If $A$ and $B$ are diagonalizable, so is $AB$.
 
-3. If $A ^ { 2 } = A$ , then A is diagonalizable.
+3. If $A^2=A$, then $A$ is diagonalizable.
 
-4. If $A ^ { 2 }$ is diagonalizable, then A is diagonalizable.
+4. If $A^2$ is diagonalizable, then $A$ is diagonalizable.
 :::
 
 ::: {.solution}
