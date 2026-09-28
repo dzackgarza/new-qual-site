@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-01
 kind: problem
-title: A square-root cusp asymptotic for a trigonometric perturbation
+title: Asymptotics of $2/(1+\sqrt{1-y})$ along $y=1-2\sin^2(2\pi h)$
 classification:
   areas: [prelim]
   topics: []
