@@ -16,13 +16,13 @@ Suppose A is a compact subspace, and $x \in X \setminus A$ Show that there exist
 :::
 
 ::: {.solution}
-Let $y \in A$ . Since $x \in X \setminus A$ , we see that $y \neq x .$ . Since X is Hausdorff, there are open, disjoint sets $U _ { y }$ and $V _ { y }$ containing y and x, respectively.
+Let $y \in A$. Since $x \in X \setminus A$, we have $y \neq x$. Since $X$ is Hausdorff, there are open, disjoint sets $U_y$ and $V_y$ containing $y$ and $x$, respectively.
 
-Now note that $\{ U _ { y } \} _ { y \in A }$ is an open cover of A. Since A is compact, this cover admits a finite subcover, say, $U _ { y _ { 1 } } , \ldots , U _ { y _ { n } }$ . Define:
+The family $\{U_y\}_{y \in A}$ is an open cover of $A$. Since $A$ is compact, this cover admits a finite subcover $U_{y_1}, \ldots, U_{y_n}$. Define
 
 $$
-U : = \bigcup _ { i = 1 } ^ { n } U _ { y _ { i } } \quad { \mathrm { a n d } } \quad V : = \bigcap _ { i = 1 } ^ { n } V _ { y _ { i } } .
+U \coloneqq \bigcup_{i=1}^{n} U_{y_i} \quad \text{and} \quad V \coloneqq \bigcap_{i=1}^{n} V_{y_i}.
 $$
 
-It is readily seen that U and V are the desired open sets.
+Then $U$ is open and contains $A$, and $V$ is a finite intersection of open sets containing $x$. They are disjoint, since $U_{y_i} \cap V \subseteq U_{y_i} \cap V_{y_i} = \emptyset$ for each $i$.
 :::
