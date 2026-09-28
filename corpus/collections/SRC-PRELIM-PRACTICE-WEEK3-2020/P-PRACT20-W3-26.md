@@ -20,8 +20,7 @@ $$
 :::
 
 ::: {.solution}
-This is a classic Green’s theorem problem.
-Rather than try to perform the line integral, we should translate this into an area integral over the shape bounded by the curve and then integrate with the polar transform $x = a r \cos ( \theta ) , y = b r \sin ( \theta )$
+Let $D$ be the region bounded by $\mathcal{C}$, oriented counterclockwise. By Green's theorem the line integral equals $\int_D \left(\frac{\partial x}{\partial x} - \frac{\partial(-y)}{\partial y}\right) dx\,dy = \int_D 2\,dx\,dy$, which we evaluate with the elliptic polar coordinates $x = a r \cos ( \theta ) , y = b r \sin ( \theta )$, whose Jacobian is $abr$:
 
 $$
 \oint _ { \mathcal { C } } ( - y ) d x + x d y = \int _ { D } 2 d x d y = \int _ { 0 } ^ { 2 \pi } \int _ { 0 } ^ { 1 } 2 a b r d r d \theta = 2 \pi a b .
