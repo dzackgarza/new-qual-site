@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HM21B18-FIN-01
 kind: problem
-title: True-or-false review across Harvard Math 21b
+title: True-or-false statements on matrices, linear operators, and Fourier series
 classification: {areas: [applied-algebra], topics: []}
 relations: []
 review: draft
@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Mark each recovered statement true or false. No justifications are required.
+Mark each statement true or false. No justifications are required.
 
 1. If $A$ and $B$ are orthogonal matrices, then $A+B$ is orthogonal.
 2. Every real $2\times2$ matrix has a real eigenvalue.
@@ -38,6 +38,4 @@ Mark each recovered statement true or false. No justifications are required.
 17. If $x'=Ax$ is asymptotically stable, then every eigenvalue $\lambda$ of $A$ satisfies $|\lambda|<1$.
 18. Solutions of $u_t=u_{xx}$ with initial condition $u(x,0)=\sin(14x)$ converge to $0$ as $t\to\infty$.
 19. If $Av=5v$ and $Au=-u$, then $A(3v+2u)=15v-2u$.
-
-The twentieth true-or-false statement is unrecovered in the retained extraction.
 :::
