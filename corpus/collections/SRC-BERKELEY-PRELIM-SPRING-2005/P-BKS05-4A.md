@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose A and B are commuting $n \times n$ matrices over R. Suppose A and B are each diagonalizable over R. Show that AB is diagonalizable over R.
+Suppose $A$ and $B$ are commuting $n\times n$ matrices over $\RR$. Suppose $A$ and $B$ are each diagonalizable over $\RR$. Show that $AB$ is diagonalizable over $\RR$.
 :::
 
 ::: {.solution}
