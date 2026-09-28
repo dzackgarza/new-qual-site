@@ -25,5 +25,6 @@ given by the [[D-RQS4J|cap product]] with $[M]$.
 :::
 
 ::: {.theorem}
-In this situation $D\colon H^k(M;R)\to H_{n-k}(M;R)$ is an isomorphism for every $k$ [@Hat02].
+Let $R$ be a commutative ring and $M$ a closed $R$-orientable $n$-manifold with fundamental class $[M]\in H_n(M;R)$.
+Then the Poincaré duality map $D\colon H^k(M;R)\to H_{n-k}(M;R)$, $\alpha\mapsto[M]\frown\alpha$, is an isomorphism for every $k$ [@Hat02].
 :::
