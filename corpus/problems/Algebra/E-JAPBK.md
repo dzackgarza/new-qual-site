@@ -18,25 +18,26 @@ review: draft
 Show $\nilrad{R} \normal R$ is an ideal and $A/\nilrad{R}$ is reduced.
 :::
 
-::: {.solution}
-\envlist
+Let $R$ be a commutative ring with identity.
 
-- $R\nilrad{R} \subseteq R$:
-  For $r$ nilpotent of order $n$ and $x\in R$, $xr$ is nilpotent since 
-\[
-(xr)^n = (xr)(xr)\cdots(xr) = x^n r^n = x^n 0 = 0
-.\]
+<1>1. $R\,\nilrad{R}\subseteq\nilrad{R}$.
 
-- $R^2 \subseteq R$, for $r,s\in \nilrad{R}$ write $r^{n} = s^m = 0$, then
-\[
-(r+s)^{N} = \sum_{k\geq 0}{N \choose k} r^k s^{N-k}
-,\]
-so just choose $N$ large enough so that either $k>n$ or $N-k> m$ always holds, e.g. $N\da n+m-1$.
+::: {.proof}
+If $r^n=0$ and $x\in R$, then $(xr)^n=x^nr^n=0$.
+:::
 
-- $R/\nilrad{R}$ has no nonzero nilpotents:
-  Take $\bar{r} \in R/\nilrad{R}$ for some $r\in R$, then $\phi(r^n) = \phi(r)^n = \bar{r}^n$.
-  So\[
-\bar{r}^n=0 \mod \nilrad{R} \iff \bar{r^n} \equiv 0 \mod \nilrad{R} \iff r^n \in \nilrad{R} \iff r\in 0_R
-  .\]
+<1>2. $\nilrad{R}+\nilrad{R}\subseteq\nilrad{R}$.
 
+::: {.proof}
+Let $r^n=s^m=0$ and $N=n+m-1$.
+In $(r+s)^N=\sum_{k=0}^N\binom Nk r^ks^{N-k}$, each term has $k\ge n$ or $N-k\ge m$, so each term is $0$.
+Together with $0\in\nilrad{R}$ and $-r\in\nilrad{R}$, steps <1>1 and <1>2 show that $\nilrad{R}$ is an ideal.
+:::
+
+<1>3. $R/\nilrad{R}$ is reduced.
+
+::: {.proof}
+Let $\bar r=r+\nilrad{R}$ with $\bar r^n=0$.
+Then $r^n\in\nilrad{R}$, so $(r^n)^m=0$ for some $m$, hence $r^{nm}=0$ and $r\in\nilrad{R}$, that is, $\bar r=0$.
+:::
 :::
