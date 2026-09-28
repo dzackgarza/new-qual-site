@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-7JOOD
 kind: fact
 title: Diameter of a set
-slogan: 'The diameter is the largest distance present in the set, interpreted as a supremum.'
+slogan: 'The diameter is the supremum of the distances between pairs of points of the set.'
 prompts:
 - What is the diameter of set?
 classification:
