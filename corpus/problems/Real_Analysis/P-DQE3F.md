@@ -29,51 +29,41 @@ b. Give an example illustrating that $f_k$ may not converge to $f$ almost everyw
 c. Prove that $\ts{f_k}$ must contain a subsequence that converges to $f$ almost everywhere.
 :::
 ::: {.solution}
-**Setup.** $\ts{f_k} \subseteq L^2([0,1])$ converges in $L^1$ to $f$.
-Since $m([0,1]) = 1 < \infty$, convergence in $L^2$ would imply convergence in $L^1$ by Hölder, but here only $L^1$ convergence is assumed.
+<1>1. $f \in L^1([0,1])$.
 
-<1>1. (a) $f \in L^1([0,1])$.
 ::: {.proof}
-$L^1$ is complete (a Banach space), so the $L^1$-Cauchy sequence $(f_k)$ has its $L^1$-limit $f$ in $L^1$.
-:::
-Alternatively, $\|f\|_1 \le \|f - f_k\|_1 + \|f_k\|_1 < \infty$ for large $k$.
-
-<1>2. (b) $f_k$ need not converge to $f$ a.e.
-::: {.proof}
-take the typewriter sequence $f_k = \chi_{E_k}$ where $E_1 = [0, 1/2]$, $E_2 = [1/2, 1]$, $E_3 = [0, 1/4]$, $E_4 = [1/4, 1/2]$, $\ldots$ (blocks of dyadic intervals).
-:::
-Then $\|f_k - 0\|_1 = m(E_k) \to 0$, so $f_k \to 0$ in $L^1$, but every $x$ lies in infinitely many $E_k$'s and misses infinitely many, so $f_k(x)$ does not converge anywhere.
-<2>1. $f_k \in L^2([0,1])$ for all $k$.
-::: {.proof}
-$|f_k| \le 1$, so $\|f_k\|_2 \le 1$.
-:::
-<2>2. $f_k \to 0$ in $L^1$.
-::: {.proof}
-$\|f_k\|_1 = m(E_k) \to 0$.
-:::
-<2>3. $f_k(x)$ fails to converge for every $x$.
-::: {.proof}
-for each $x$, the dyadic-interval construction visits and leaves $x$ infinitely often, so $\liminf f_k(x) = 0 < 1 = \limsup f_k(x)$.
+Choose $k$ with $\|f - f_k\|_1 < 1$. Since $m([0,1]) = 1$, $\|f_k\|_1 \le \|f_k\|_2$ by the Cauchy--Schwarz inequality, so $\|f\|_1 \le \|f - f_k\|_1 + \|f_k\|_1 < \infty$.
 :::
 
-<1>3. (c) Some subsequence $f_{k_j} \to f$ a.e. <2>1. Choose $k_j$ with $\|f_{k_j} - f\|_1 < 2^{-j}$ (possible since $\|f_k - f\|_1 \to 0$).
+<1>2. Let $E_k$ enumerate the dyadic intervals $[0,\frac12], [\frac12,1], [0,\frac14], [\frac14,\frac12], \ldots$, level by level, and $f_k = \chi_{E_k}$. Then $f_k \in L^2([0,1])$ and $f_k \to 0$ in $L^1$, but $f_k(x)$ converges for no $x \in [0,1]$.
+
 ::: {.proof}
-definition of convergence in $L^1$.
+$|f_k| \le 1$, so $f_k \in L^2$, and $\|f_k\|_1 = m(E_k) \to 0$. Each $x \in [0,1]$ lies in at least one dyadic interval of each level and misses at least one, so $f_k(x) = 1$ and $f_k(x) = 0$ for infinitely many $k$ each.
 :::
-<2>2. Then $\sum_j \|f_{k_j} - f\|_1 < \infty$; in particular $\sum_j m\{|f_{k_j} - f| > \eps\} \le \sum_j \frac{1}{\eps}\|f_{k_j} - f\|_1 < \infty$ for each $\eps > 0$ (Markov's inequality).
+
+<1>3. Some subsequence $f_{k_j} \to f$ a.e.
+
+<2>1. There are $k_1 < k_2 < \cdots$ with $\|f_{k_j} - f\|_1 < 2^{-j}$.
+
 ::: {.proof}
-Markov/Chebyshev and <2>1. <2>3. Borel–Cantelli: for each $\eps > 0$, $m\{x : |f_{k_j}(x) - f(x)| > \eps \text{ infinitely often}\} = 0$.
+$\|f_k - f\|_1 \to 0$.
 :::
+
+<2>2. For each $\eps > 0$, $m\theset{x : |f_{k_j}(x) - f(x)| > \eps \text{ for infinitely many } j} = 0$.
+
 ::: {.proof}
-$\sum_j m\{|f_{k_j} - f| > \eps\} < \infty$ by <2>2, and Borel–Cantelli.
+By Markov's inequality and step <2>1, $\sum_j m\theset{|f_{k_j} - f| > \eps} \le \frac1\eps\sum_j 2^{-j} < \infty$, and the Borel--Cantelli lemma applies.
 :::
-<2>4. $f_{k_j}(x) \to f(x)$ for a.e. $x$.
+
+<2>3. Q.E.D.
+
 ::: {.proof}
-<2>3 for $\eps = 1/m$, $m = 1, 2, \ldots$, union over $m$ gives a null set off which convergence holds for every $\eps$.
+The union over $\eps = 1/n$, $n \geq 1$, of the null sets in step <2>2 is null, and off it $f_{k_j}(x) \to f(x)$.
 :::
 
 <1>4. Q.E.D.
+
 ::: {.proof}
-<1>1, <1>2, <1>3 settle (a), (b), (c). (In fact any $L^p$-convergent sequence, $p \ge 1$, has an a.e.-convergent subsequence on a finite measure space; the argument only needs the Markov inequality, which holds for all $p$.)
+Steps <1>1, <1>2 and <1>3 are parts (a), (b) and (c).
 :::
 :::
