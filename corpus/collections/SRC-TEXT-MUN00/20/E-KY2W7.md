@@ -29,7 +29,7 @@ Show that $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology is met
 :::
 
 ::: {.solution}
-By the dictionary-order calculation from §16, the dictionary order topology on $\mathbb R\times\mathbb R$ is exactly the product topology
+By [[E-QMZO5]], the dictionary order topology on $\mathbb R\times\mathbb R$ is exactly the product topology
 \[
 \mathbb R_d\times\mathbb R,
 \]
@@ -45,5 +45,9 @@ Both are metrics inducing the discrete and usual topologies respectively. Then
 \[
 D((x,y),(x',y'))=\delta(x,x')+\rho(y,y')
 \]
-is a metric on $\mathbb R^2$. Balls of radius $<1$ force $x=x'$ and impose an ordinary metric condition on $y$, so they have the same local bases as $\mathbb R_d\times\mathbb R$. Hence $D$ metrizes the dictionary order topology.
+is a metric on $\mathbb R^2$. For $0<r\le1$,
+\[
+B_D((x,y),r)=\{x\}\times(y-r,y+r),
+\]
+since $\delta(x,x')\ge1$ when $x'\ne x$. These sets form a basis of $\mathbb R_d\times\mathbb R$ at $(x,y)$, and every $D$-ball about $(x,y)$ contains one of them. Hence $D$ metrizes the dictionary order topology.
 :::
