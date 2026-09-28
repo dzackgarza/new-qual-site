@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-02
 kind: problem
-title: Continuity across the real axis removes a holomorphic seam
+title: A continuous function holomorphic off the real axis is entire
 classification:
   areas:
   - prelim
