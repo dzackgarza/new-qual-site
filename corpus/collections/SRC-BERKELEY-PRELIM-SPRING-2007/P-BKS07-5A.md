@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-5A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 5A
+title: Solutions of an order-$r$ linear ODE with $C^m$ coefficients are $C^{m+r}$
 classification:
   areas: [prelim]
   topics: []
@@ -28,7 +28,7 @@ y ^ { ( r ) } = b - \left( a _ { r - 1 } y ^ { ( r - 1 ) } + \cdot \cdot \cdot +
 $$
 
 and proceed by induction on m. For $m = 0$ , the derivatives of $y$ on the right-hand side of (1) are differentiable and hence continuous.
-The functions $a _ { i }$ and b are continuous by assumption, so $y ^ { ( r ) }$ is continuous, $i . e . , y$ is $C ^ { r }$
+The functions $a _ { i }$ and b are continuous by assumption, so $y ^ { ( r ) }$ is continuous, i.e., $y$ is $C ^ { r }$.
 
 For $m > 0$ , assume by induction that y is $C ^ { m + r - 1 }$ Then the derivatives of y on the right-hand side of (1) are $C ^ { m }$ . The functions $a _ { i }$ and b are $C ^ { m }$ by assumption, so $y ^ { ( r ) }$ is $C ^ { m }$ hence y is $C ^ { m + r }$
 :::
