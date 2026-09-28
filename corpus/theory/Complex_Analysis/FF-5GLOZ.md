@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-5GLOZ
 kind: fact
 title: Laurent expansion of $\csch z$ at $0$
-slogan: '$\csch z$ has principal part $1/z$ at $0$, followed by an odd regular Laurent tail.'
+slogan: '$\csch z$ has principal part $1/z$ at $0$, and $\csch z-1/z$ is odd and holomorphic on $\abs{z}<\pi$.'
 prompts:
 - What is the series expansion of $\csch(z)$?
 classification:
