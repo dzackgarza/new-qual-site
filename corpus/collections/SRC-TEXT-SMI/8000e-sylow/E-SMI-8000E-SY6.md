@@ -29,13 +29,6 @@ audit:
 Prove that $S(n)$ is not solvable if $n > 4$, assuming $A(5) \cong Icos$ (the icosahedral rotation group) and the simplicity of $Icos$.
 :::
 
-::: {.remark}
-The packet prints $S(5)\cong Icos$ here. Later in the same packet it explicitly
-identifies “Icos (or $A(5)$)” and asks for its simplicity. The rotational
-icosahedral group is therefore the group $A_5$, not $S_5$; the corrected
-hypothesis is stated above.
-:::
-
 ::: {.solution}
 <1>1. A nonabelian simple group is not solvable.
 ::: {.proof}
@@ -44,12 +37,11 @@ abelian normal tower
 $$
 H=H_1\trianglerighteq H_2\trianglerighteq\cdots\trianglerighteq H_m=1.
 $$
-Choose the first index $j$ for which $H_{j+1}\ne H_j$. Then
-$H_{j+1}$ is a proper normal subgroup of $H_j$. Applied at the first actual
-drop from $H$ itself, simplicity forces that drop to be from $H$ to $1$.
-Thus one of the required abelian quotients is
+Since $H\ne1$, there is a first index $j$ with $H_{j+1}\ne H_j$. Then
+$H_j=H$, and $H_{j+1}$ is a proper normal subgroup of $H$, so
+$H_{j+1}=1$ by simplicity. Thus one of the abelian quotients of the tower is
 $$
-H/1\cong H,
+H_j/H_{j+1}=H/1\cong H,
 $$
 which would make $H$ abelian, a contradiction. Hence every nonabelian simple
 group is nonsolvable.
@@ -102,4 +94,11 @@ $$
 \boxed{S_n\text{ is not solvable for every }n>4.}
 $$
 :::
+:::
+
+::: {.remark}
+The source prints the hypothesis as $S(5)\cong Icos$ and later identifies
+"Icos (or $A(5)$)". The rotation group of the icosahedron has order $60$ and
+is isomorphic to $A_5$, not to $S_5$, which has order $120$; the statement
+uses $A(5)\cong Icos$.
 :::
