@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-07
 kind: problem
-title: Invariance of dimension for R, R^2, and R^3
+title: '$\RR\not\cong\RR^2$ and $\RR^2\not\cong\RR^3$'
 classification:
   areas:
   - topology
