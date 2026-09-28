@@ -65,6 +65,6 @@ Let \(P\) be any Sylow \(p\)-subgroup. Every nonidentity element of \(P\) lies o
 
 <1>6. In all cases, \(G\) has a nontrivial normal subgroup.
 ::: {.proof}
-If \(p>q\), use <1>2. If \(p<q\), either \(n_q=1\) or <1>5 applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
+If \(p>q\), step <1>2 applies. If \(p<q\), either \(n_q=1\) or step <1>5 applies. Since \(p\) and \(q\) are prime, these Sylow subgroups are nontrivial.
 :::
 :::
