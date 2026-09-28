@@ -5,7 +5,7 @@ kind: theorem
 title: Continuity of translation in $L^1$
 slogan: 'Small translations change an $L^1$ function by a small $L^1$ amount.'
 prompts:
-- What is continuity in $L^1$, and how is it proved?
+- State and prove continuity of translation in $L^1(\RR^n)$.
 classification:
   areas:
   - real-analysis
