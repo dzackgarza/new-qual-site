@@ -79,5 +79,5 @@ Finally, if $p$ is prime, relabel any $p$-cycle as $(1\ 2\ \dots\ p)$. For any t
 \[
 \gcd(b-a,p)=1.
 \]
-The preceding criterion shows that any transposition together with any $p$-cycle generates $S_p$.
+By the criterion $\langle(a\ b),(1\ 2\ \dots\ n)\rangle=S_n\iff\gcd(b-a,n)=1$ with $n=p$, any transposition together with any $p$-cycle generates $S_p$.
 :::
