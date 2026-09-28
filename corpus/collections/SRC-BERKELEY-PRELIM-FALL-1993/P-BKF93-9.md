@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF93-9
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty} e^{-ix}/(x^2-2x+4)\,dx$
+title: The integral $\int_{-\infty}^{\infty} e^{-ix}/(x^2-2x+4)\,dx$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
