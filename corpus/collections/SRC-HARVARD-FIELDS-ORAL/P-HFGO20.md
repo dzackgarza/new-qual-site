@@ -49,7 +49,8 @@ For every finite extension,
 \[
 [E:F]=[E:F]_{\mathrm{sep}}\,[E:F]_{\mathrm{insep}},
 \]
-where the inseparable degree is a positive power of the characteristic exponent.
+where the inseparable degree is $p^e$ for some $e\ge0$, with $p$ the
+characteristic exponent of $F$.
 Equality of the separable and total degrees forces
 \[
 [E:F]_{\mathrm{insep}}=1,
