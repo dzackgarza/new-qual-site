@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LARQ16
 kind: problem
-title: Homomorphisms of F[x]-modules as intertwining maps
+title: Homomorphisms of $F[x]$-modules as intertwining maps
 classification:
   areas: [algebra]
   topics: [Module Theory, Linear Algebra]
