@@ -37,7 +37,6 @@ Regard \(A\) as the matrix of the right-\(D\)-linear map
 T:D^m\longrightarrow D^n,
 \qquad x\longmapsto Ax.
 \]
-(Equivalently, use the corresponding left-module convention consistently.)
 Its rank is the dimension of its image.
 
 <1>1. \(A\) has a left inverse if and only if \(\operatorname{rank}A=m\).
