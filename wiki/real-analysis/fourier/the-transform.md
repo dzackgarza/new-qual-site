@@ -29,7 +29,7 @@ For $f=\chi_{[-1,1]}\in L^1(\RR)$, $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi}$ i
 [[PR-DY2B3]]
 
 ::: {.remark title="Operations under the transform"}
-For $f, g\in L^1(\RR)$, $h\in\RR$, and $a\neq 0$, with the convention above:
+For $f, g\in L^1(\RR)$, $h\in\RR$, and $a\neq 0$, with $\hat f(\xi)=\int_\RR f(x)e^{-2\pi i x\xi}\dx$:
 
 | Operation on $f$ | Transform |
 | --- | --- |
@@ -39,7 +39,7 @@ For $f, g\in L^1(\RR)$, $h\in\RR$, and $a\neq 0$, with the convention above:
 | $f'$, for $f$ absolutely continuous with $f'\in L^1$ | $2\pi i\xi\hat f(\xi)$ |
 | $f*g$ | $\hat f(\xi)\hat g(\xi)$ |
 
-The last row converts a convolution equation $f*g = k$ into the pointwise equation $\hat f\hat g = \hat k$.
+The identity $\widehat{f*g}=\hat f\hat g$ converts a convolution equation $f*g = k$ into the pointwise equation $\hat f\hat g = \hat k$.
 
 :::
 
@@ -48,7 +48,7 @@ The last row converts a convolution equation $f*g = k$ into the pointwise equati
 [[T-4BDE3]]
 
 ::: {.remark}
-For an orthonormal set $\theset{u_n}$ in a Hilbert space, Bessel's inequality holds without further hypotheses.
+For an orthonormal set $\theset{u_n}$ in a Hilbert space $H$, Bessel's inequality $\sum_n\abs{\inner{x}{u_n}}^2 \leq \norm x^2$ holds for every $x\in H$.
 Equality $\sum_n\abs{\inner{x}{u_n}}^2 = \norm x^2$ for every $x$ is Parseval's identity, which holds if and only if $\theset{u_n}$ is an orthonormal basis.
 
 :::
