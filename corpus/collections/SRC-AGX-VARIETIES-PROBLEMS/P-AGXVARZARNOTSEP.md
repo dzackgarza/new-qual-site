@@ -50,7 +50,7 @@ Hausdorff if and only if $X$ is a singleton.
 <1>1. Every two nonempty Zariski-open subsets of $X$ intersect.
 
 ::: {.proof}
-An affine variety is irreducible in the source's convention. Let
+An affine variety is irreducible by definition. Let
 $$
 U,V\subseteq X
 $$
