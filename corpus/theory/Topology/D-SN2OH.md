@@ -38,6 +38,6 @@ Let $(X,d)$ be a metric space, let $p\in X$, and let $E\subseteq X$.
 :::
 
 ::: {.remark}
-In (b) the point $q$ must differ from $p$: a limit point of $E$ is one whose punctured neighborhoods $N_r(p)\setminus\ts{p}$ all meet $E$.
-A point of $E$ is therefore either a limit point or an isolated point of $E$, but not both.
+A point $p\in X$ is a limit point of $E$ if and only if $(N_r(p)\setminus\ts{p})\cap E\neq\emptyset$ for every $r>0$.
+By (c), every point of $E$ is either a limit point or an isolated point of $E$, and not both.
 :::
