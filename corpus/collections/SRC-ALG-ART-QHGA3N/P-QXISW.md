@@ -67,7 +67,10 @@ Fix a spanning tree and a root vertex \(r\). Along the unique path
 \[
 r=v_0,v_1,\dots,v_m=v
 \]
-the edge transpositions generate the transposition \((r,v)\); explicitly, conjugating \((v_{m-1},v_m)\) by a product carrying \(r\) to \(v_{m-1}\) gives \((r,v)\). Hence all transpositions \((r,v)\) lie in the generated subgroup. These star transpositions generate \(S_p\), since
+the edge transpositions generate the transposition \((r,v)\): by induction on \(m\), the subgroup contains \((r,v_{m-1})\), and
+\[
+(r,v_m)=(r,v_{m-1})(v_{m-1},v_m)(r,v_{m-1}).
+\] Hence all transpositions \((r,v)\) lie in the generated subgroup. These star transpositions generate \(S_p\), since
 \[
 (u,v)=(r,u)(r,v)(r,u).
 \]
