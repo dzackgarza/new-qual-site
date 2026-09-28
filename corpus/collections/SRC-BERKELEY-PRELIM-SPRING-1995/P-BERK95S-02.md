@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK95S-02
 kind: problem
-title: Determine when $a^nA^n$ converges to a nonzero matrix
+title: Real $a$ for which $a^nA^n$ converges to a nonzero matrix
 classification:
   areas:
   - prelim
