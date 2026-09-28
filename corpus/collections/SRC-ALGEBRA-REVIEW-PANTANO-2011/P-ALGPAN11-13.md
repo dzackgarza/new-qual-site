@@ -33,7 +33,7 @@ Which of the following intersections is nonempty?
 ::: {.solution}
 The nonempty intersection is $\boxed{\text{(C)}\;P_{12}\cap P_{20}}$.
 
-<1>1. Exhibit an element of choice (C).
+<1>1. $60\in P_{12}\cap P_{20}$.
 ::: {.proof}
 By definition $P_n=\{pn:p\text{ prime}\}$.
 Since
@@ -45,7 +45,7 @@ we have $60\in P_{12}\cap P_{20}$.
 
 <1>2. The other intersections are empty.
 ::: {.proof}
-An equality $ap=bq$ with $p,q$ prime forces the prime factors of $a,b$ to match appropriately.
+In each case, $p$ and $q$ denote primes.
 
 - $p=23q$ cannot hold with both $p,q$ prime, so $P_1\cap P_{23}=\varnothing$.
 
