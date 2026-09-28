@@ -34,69 +34,31 @@ Show that if $A \cap \overline{B} \ne \varnothing$, then $A \cup B$ is a connect
 :::
 
 ::: {.solution}
-Suppose
-\[
-x\in A\cap\overline B.
-\]
+Fix $x\in A\cap\overline B$, and suppose $A\cup B=P\sqcup Q$ with $P$ and $Q$ disjoint and open in the subspace $A\cup B$.
+It suffices to show that $P$ or $Q$ is empty.
 
-<1>1. Assume for contradiction that $A\cup B$ is disconnected, and let
-\[
-A\cup B=P\sqcup Q
-\]
-be a separation into two nonempty sets that are open in the subspace $A\cup B$.
+<1>1. Each of $A$ and $B$ lies entirely in $P$ or entirely in $Q$.
+
 ::: {.proof}
-This is exactly the negation of connectedness of $A\cup B$.
+The sets $A\cap P$ and $A\cap Q$ are disjoint and open in $A$, and their union is $A$.
+Since $A$ is connected, one of them is empty; hence $A\subseteq P$ or $A\subseteq Q$.
+The same argument applies to $B$.
 :::
 
-<1>2. Each of the connected sets $A$ and $B$ lies entirely in one member of the separation, and they must lie in different members.
-::: {.proof}
-The sets
-\[
-A\cap P,
-\qquad
-A\cap Q
-\]
-are disjoint and open in $A$, and their union is $A$.
-Since $A$ is connected, one of them is empty; hence either $A\subseteq P$ or $A\subseteq Q$.
-The same argument shows either $B\subseteq P$ or $B\subseteq Q$.
+<1>2. $A$ and $B$ do not lie in different members of $\{P,Q\}$.
 
-If both $A$ and $B$ were contained in the same member, say $P$, then
-\[
-A\cup B\subseteq P,
-\]
-forcing $Q=\varnothing$, contrary to the definition of a separation.
-Thus, after interchanging $P$ and $Q$ if necessary,
-\[
-A\subseteq P,
-\qquad
-B\subseteq Q.
-\]
+::: {.proof}
+Suppose, after interchanging $P$ and $Q$ if necessary, that $A\subseteq P$ and $B\subseteq Q$.
+Since $x\in A\subseteq P$ and $P$ is open in $A\cup B$, there is an open set $O\subseteq X$ with $x\in O$ and $O\cap(A\cup B)=P$.
+Because $x\in\overline B$, the neighborhood $O$ meets $B$.
+But $O\cap B\subseteq O\cap(A\cup B)=P$ and $B\subseteq Q$, so $O\cap B\subseteq P\cap Q=\varnothing$, a contradiction.
 :::
 
-<1>3. The inclusion $x\in\overline B$ contradicts the separation in <1>2.
-::: {.proof}
-Since $x\in A\subseteq P$ and $P$ is open in the subspace $A\cup B$, there is an open set $O\subseteq X$ such that
-\[
-x\in O
-\qquad\text{and}\qquad
-O\cap(A\cup B)=P.
-\]
-Because $x\in\overline B$, every open neighborhood of $x$ in $X$ meets $B$, so
-\[
-O\cap B\neq\varnothing.
-\]
-But $B\subseteq Q$, whereas
-\[
-O\cap B
-\subseteq
-O\cap(A\cup B)
-=P.
-\]
-Thus $O\cap B\subseteq P\cap Q=\varnothing$, a contradiction.
-:::
+<1>3. Q.E.D.
 
-<1>4. Therefore $A\cup B$ is connected.
 ::: {.proof}
-The assumed separation in <1>1 leads to the contradiction in <1>3. Hence no separation of $A\cup B$ exists.
+By steps <1>1 and <1>2, $A$ and $B$ lie in the same member of $\{P,Q\}$, say $P$.
+Then $A\cup B\subseteq P$, so $Q=\varnothing$.
+Hence $A\cup B$ has no separation into two nonempty disjoint relatively open sets, and $A\cup B$ is connected.
 :::
 :::
