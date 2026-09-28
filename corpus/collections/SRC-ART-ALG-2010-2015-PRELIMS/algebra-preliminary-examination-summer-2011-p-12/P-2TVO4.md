@@ -117,7 +117,7 @@ Define $\sigma_b$ by applying $\gamma_b$ to each coefficient.
 This preserves addition. It preserves multiplication because
 products are reduced using $\alpha^n=2$, whose right side
 is fixed by $\gamma_b$. Its inverse is $\sigma_{b^{-1}}$.
-Thus these are genuine field automorphisms with the asserted
+Thus these are field automorphisms with the asserted
 values, and $\sigma_b\sigma_c=\sigma_{bc}$.
 
 The conjugation identity follows by evaluating both sides
