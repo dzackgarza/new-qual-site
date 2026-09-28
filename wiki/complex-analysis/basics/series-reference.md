@@ -114,7 +114,7 @@ For $p=1,2$ these read $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$, $\sum_{k
 :::
 
 ::: {.remark}
-The two identities are discrete analogues of $\int_0^n x^p \dx = { n^{p+1} \over p+1}$ and $\int_1^{n+1}{p\over x^{p+1}}\dx = 1 - {1\over (n+1)^p}$.
+The rising-factorial sums are discrete analogues of $\int_0^n x^p \dx = { n^{p+1} \over p+1}$ and $\int_1^{n+1}{p\over x^{p+1}}\dx = 1 - {1\over (n+1)^p}$.
 Writing $k^2 = k(k+1) - k$ gives $\sum_{k=1}^n k^2 = \frac{n(n+1)(n+2)}{3} - \frac{n(n+1)}{2} = {n(n+1)(2n+1) \over 6}$.
 The identity $\sum_{k=1}^n k = n(n+1)/2$ counts a staircase of $n$ columns as half of an $n\times(n+1)$ rectangle:
 
@@ -172,7 +172,7 @@ Since $(A(z)-1)^k$ has no terms of degree below $k$, the coefficient of $z^m$ in
 :::
 
 ::: {.remark}
-If $A(z) = z^m \tilde A(z)$ with $\tilde A(0) \neq 0$, then $1/A(z) = z^{-m}/\tilde A(z)$, and $1/\tilde A(z)$ is computed by either method after dividing by $\tilde A(0)$.
+If $A(z) = z^m \tilde A(z)$ with $\tilde A(0) \neq 0$, then $1/A(z) = z^{-m}/\tilde A(z)$, and $1/\tilde A(z)$ is computed by the coefficient recursion for $1/A(z)$ applied to $\tilde A$ or, after dividing by $\tilde A(0)$, by the geometric series.
 
 :::
 
