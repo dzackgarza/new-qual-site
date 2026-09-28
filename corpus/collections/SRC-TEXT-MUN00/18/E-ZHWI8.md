@@ -60,11 +60,15 @@ If there is no point strictly between $g(x)$ and $f(x)$, then $g(x)$ and $f(x)$ 
 \[
 (g(x),\infty),\qquad (-\infty,f(x))
 \]
-are disjoint open neighborhoods of $f(x)$ and $g(x)$ respectively. Their inverse images again give a neighborhood of $x$ on which $f>g$. Thus $\{f>g\}$ is open and $C$ is closed.
+are disjoint open neighborhoods of $f(x)$ and $g(x)$ respectively. On the open neighborhood
+\[
+f^{-1}((g(x),\infty))\cap g^{-1}((-\infty,f(x)))
+\]
+of $x$, a point $z$ has $f(z)>g(x)$, hence $f(z)\ge f(x)$, and $g(z)<f(x)$, hence $g(z)\le g(x)$; so $f(z)>g(z)$. Thus $\{f>g\}$ is open and $C$ is closed.
 
 (b) Put
 \[
 C=\{f\le g\},\qquad D=\{g\le f\}.
 \]
-By part (a), $C$ and $D$ are closed and $C\cup D=X$. On $C$, $h=f$; on $D$, $h=g$. These two definitions agree on $C\cap D=\{f=g\}$. Since the restrictions are continuous, the pasting lemma gives that $h$ is continuous.
+By part (a), $C$ and $D$ are closed and $C\cup D=X$. On $C$, $h=f$; on $D$, $h=g$. These two definitions agree on $C\cap D=\{f=g\}$. Since the restrictions are continuous, the pasting lemma for two closed sets ([[E-2CPNC]]) gives that $h$ is continuous.
 :::
