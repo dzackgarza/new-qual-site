@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-14
 kind: problem
-title: Image under a linear transformation in R2
+title: Image under a linear transformation of $\RR^2$
 classification:
   areas:
   - applied-algebra
