@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-22RQZ
 kind: theorem
 title: Cauchy's inequalities
-slogan: 'Boundary sup-norm control gives factorial-over-radius bounds on every derivative at the center.'
+slogan: 'If $\abs{f}\le M$ on the circle $\abs{z-z_0}=R$, then $\abs{f^{(n)}(z_0)}\le n!M/R^n$ for every $n\ge0$.'
 classification:
   areas:
   - complex-analysis
