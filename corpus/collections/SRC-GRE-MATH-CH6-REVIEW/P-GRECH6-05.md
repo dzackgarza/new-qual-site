@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-05
 kind: problem
-title: Trailing zeros of 100 factorial
+title: Trailing zeros of $100!$
 classification:
   areas:
   - algebra
