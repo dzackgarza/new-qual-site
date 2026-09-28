@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS03-3A
 kind: problem
-title: Centralizer of a Jordan block over $\mathbb Q$
+title: Centralizer of a Jordan block over $\QQ$
 classification:
   areas:
   - prelim
