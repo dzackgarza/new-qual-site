@@ -198,7 +198,7 @@ $$
 Step <1>1 converts this back to the required identity.
 :::
 
-<1>6. Therefore the corrected algebraic condition is necessary and
+<1>6. Therefore the identity $a^2+b^2+c^2=ab+bc+ca$ is necessary and
 sufficient for three distinct complex numbers to be the vertices of
 an equilateral triangle.
 
@@ -209,6 +209,6 @@ Step <1>3 proves sufficiency and step <1>5 proves necessity.
 <1>7. Q.E.D.
 
 ::: {.proof}
-Step <1>6 proves the corrected statement.
+Step <1>6 is the asserted equivalence.
 :::
 :::
