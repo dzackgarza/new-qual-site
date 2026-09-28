@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF85-3
 kind: problem
-title: Count irreducible quadratics and cubics over $\mathbb F_5$
+title: Number of monic irreducible quadratics and cubics over $\FF_5$
 classification:
   areas: [prelim]
   topics: []
