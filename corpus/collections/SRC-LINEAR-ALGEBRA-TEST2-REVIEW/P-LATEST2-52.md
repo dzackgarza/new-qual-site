@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LATEST2-52
 kind: problem
-title: Larger eigenvalue of a symmetric 2-by-2 matrix
+title: Larger eigenvalue of a symmetric $2\times2$ matrix
 classification:
   areas:
   - applied-algebra
