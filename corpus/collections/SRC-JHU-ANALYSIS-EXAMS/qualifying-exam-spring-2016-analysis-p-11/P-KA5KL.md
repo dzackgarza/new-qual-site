@@ -53,9 +53,8 @@ the integral.
 
 If a holomorphic $f$ is nonzero at $a\in U$, continuity
 gives a disk of positive area on which $|f|\geq|f(a)|/2$.
-Then $\|f\|_2>0$. Hence zero norm implies $f=0$ everywhere,
-not just almost everywhere. This proves positive definiteness
-for the actual functions in $A^2(U)$.
+Then $\|f\|_2>0$. Hence $\|f\|_2=0$ implies $f(a)=0$ at
+every $a\in U$, which is positive definiteness.
 :::
 
 <1>2. Every compact subset has an $L^2$ point-evaluation bound.
@@ -99,8 +98,6 @@ $$
 [@Fol13]. Hence $f=F$ almost everywhere. It follows that
 $f\in A^2(U)$ and $\|f_n-f\|_2=\|f_n-F\|_2\to0$.
 Thus every Cauchy sequence converges in $A^2(U)$, proving
-that it is a Hilbert space. If $U$ is empty, $A^2(U)$
-is the zero vector space, which has the same conclusion.
-No connectedness or boundedness of $U$ is needed.
+that it is a Hilbert space.
 :::
 :::
