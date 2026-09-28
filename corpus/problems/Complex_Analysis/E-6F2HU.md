@@ -18,5 +18,5 @@ Show that a real-valued holomorphic function is constant.
 :::
 
 ::: {.solution}
-Use that $\RR$ is not open in $\CC$ and apply the open mapping theorem to conclude: $f(\CC)$ must be open in $\CC$ if $f$ is holomorphic and nonconstant.
+Let $f$ be holomorphic and real-valued on a domain $\Omega$. If $f$ were nonconstant, the open mapping theorem would make $f(\Omega)$ a nonempty open subset of $\CC$ contained in $\RR$, but $\RR$ contains no nonempty open subset of $\CC$. So $f$ is constant.
 :::
