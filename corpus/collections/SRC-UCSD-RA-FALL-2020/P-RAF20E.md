@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20E
 kind: problem
-title: "A measure dominated by the L^2 norm has Holder-continuous density"
+title: "A measure with $|\\int f'\\,d\\mu|\\le\\|f\\|_2$ has a $\\tfrac12$-Hölder density"
 classification:
   areas:
   - real-analysis
@@ -43,7 +43,7 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Represent the derivative functional on $L^2$.
+<1>1. There is $v\in L^2([0,1])$ with $\|v\|_2\le1$ and $\int_{[0,1]}f'\,d\mu=\int_0^1 fv\,dx$ for every $f\in C^1([0,1])$.
 ::: {.proof}
 Define
 \[
@@ -65,7 +65,7 @@ such that
 for every $f\in C^1([0,1])$.
 :::
 
-<1>2. Identify the measure on the open interval.
+<1>2. With $V(x)\coloneqq\int_0^x v(t)\,dt$, there is $c\in\mathbb R$ such that $\mu|_{(0,1)}=(c-V)\,m$.
 ::: {.proof}
 Restrict the preceding identity to $f\in C_c^1((0,1))$. In the sense of distributions on $(0,1)$,
 \[
@@ -90,7 +90,7 @@ u(x)=c-V(x)
 there.
 :::
 
-<1>3. Rule out endpoint atoms.
+<1>3. $\mu(\{0\})=\mu(\{1\})=0$; hence $\mu\ll m$ on $[0,1]$.
 ::: {.proof}
 Choose $\psi\in C_c^1([0,1))$ with $0\le\psi\le1$ and $\psi(0)=1$. For $\varepsilon>0$, define
 \[
@@ -117,7 +117,7 @@ Consequently
 \]
 :::
 
-<1>4. Prove the Hölder estimate for the Radon--Nikodym density.
+<1>4. The density $u=d\mu/dm$ satisfies $|u(x)-u(y)|\le|x-y|^{1/2}$ for almost every $(x,y)\in[0,1]^2$.
 ::: {.proof}
 The density $u=c-V$ has an absolutely continuous representative satisfying
 \[
