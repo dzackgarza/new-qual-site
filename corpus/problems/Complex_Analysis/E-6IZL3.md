@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6IZL3
 kind: problem
-title: Bounded harmonic functions
+title: Harmonic functions on $\DD$ with $u(1/2)=2$ and $\abs u\ge2$
 classification:
   areas:
   - complex-analysis
