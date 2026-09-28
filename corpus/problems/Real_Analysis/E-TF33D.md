@@ -26,47 +26,55 @@ audit:
 :::
 
 ::: {.solution}
-**Context:** part (a) refers to the identity $\int \hat f\,g = \int f\,\hat g$ from the parent problem (valid for $f, g \in L^1$ by Fubini).
-It asks what goes wrong when $g$ is not bounded.
+On $\RR$ use $\hat f(\xi) = \int f(x)e^{-ix\xi}\,dx$; on the circle use $\hat f(n) = \frac{1}{2\pi}\int_0^{2\pi} f(x)e^{-inx}\,dx$.
 
-<1>1. The identity fails when $g$ is unbounded.
-<2>1. Take $f(x) = e^{-|x|}$ and $g(\xi) = 1 + \xi^2$ on $\RR$.
-::: {.proof}
-$f \in L^1(\RR)$; $g$ is unbounded and not integrable.
-:::
-<2>2. $\hat f(\xi) = \frac{2}{1 + \xi^2}$ (up to the convention-dependent constant), so $\int \hat f(\xi) g(\xi)\,d\xi = \int 2\,d\xi = \infty$.
-::: {.proof}
-direct computation of the transform of $e^{-|x|}$; then the product $\hat f g \equiv 2$ has infinite integral.
-:::
-<2>3. $\hat g$ does not exist as a function (since $g \notin L^1$), so $\int f\,\hat g$ is not defined; in particular the identity fails.
-::: {.proof}
-the identity requires both integrals to make sense; here the left side diverges and the right side is undefined.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>2 and <2>3 exhibit a failure with $g$ unbounded.
-:::
-(When both sides are defined, the identity holds by Fubini — the failure is exactly the loss of integrability.)
+<1>1. For $f(x) = e^{-|x|}$ and $g(\xi) = 1 + \xi^2$, $f \in L^1(\RR)$ and $\int \hat f\,g = \infty$, while $\hat g$ is not defined as a Lebesgue integral.
 
-<1>2. If $f \in C^1$ on the circle, its Fourier series converges absolutely, hence uniformly, to $f$.
+<2>1. $\hat f(\xi) = \frac{2}{1 + \xi^2}$.
+
+::: {.proof}
+$\int_0^\infty e^{-x}e^{-ix\xi}\,dx = \frac{1}{1+i\xi}$ and $\int_{-\infty}^0 e^{x}e^{-ix\xi}\,dx = \frac{1}{1-i\xi}$, and their sum is $\frac{2}{1+\xi^2}$.
+:::
+
+<2>2. Q.E.D.
+
+::: {.proof}
+By step <2>1, $\hat f\,g \equiv 2$, whose integral over $\RR$ is infinite. Since $g \notin L^1(\RR)$, the integral $\int g(\xi)e^{-ix\xi}\,d\xi$ does not converge absolutely for any $x$, so the right side $\int f\,\hat g$ is not defined.
+:::
+
+<1>2. If $f$ is $2\pi$-periodic and $C^1$, then $\sum_n \hat f(n)e^{inx}$ converges absolutely and uniformly to $f$.
+
 <2>1. For $n \ne 0$, $\hat f(n) = \frac{1}{in}\widehat{f'}(n)$.
+
 ::: {.proof}
-integration by parts: $\hat f(n) = \frac{1}{2\pi}\int_0^{2\pi} f(x)e^{-inx}\,dx = \frac{1}{2\pi}\Big[\frac{f(x)e^{-inx}}{-in}\Big]_0^{2\pi} + \frac{1}{in}\cdot\frac{1}{2\pi}\int_0^{2\pi} f'(x)e^{-inx}\,dx$, and the boundary terms cancel by $2\pi$-periodicity of $f$.
+Integration by parts gives $\hat f(n) = \frac{1}{2\pi}\Big[\frac{f(x)e^{-inx}}{-in}\Big]_0^{2\pi} + \frac{1}{in}\cdot\frac{1}{2\pi}\int_0^{2\pi} f'(x)e^{-inx}\,dx$, and the boundary term vanishes by $2\pi$-periodicity of $f$.
 :::
+
 <2>2. $\sum_{n \in \ZZ}|\hat f(n)| < \infty$.
+
 ::: {.proof}
-$\sum_{n\ne0}|\hat f(n)| = \sum_{n\ne0}\frac{|\widehat{f'}(n)|}{|n|} \le \Big(\sum_{n\ne0}|\widehat{f'}(n)|^2\Big)^{1/2}\Big(\sum_{n\ne0}\frac{1}{n^2}\Big)^{1/2} < \infty$ by Cauchy–Schwarz, by Parseval ($\sum|\widehat{f'}(n)|^2 = \|f'\|_2^2 < \infty$, as $f'$ is continuous), and by convergence of $\sum 1/n^2$.
+By step <2>1 and the Cauchy--Schwarz inequality, $\sum_{n\ne0}|\hat f(n)| = \sum_{n\ne0}\frac{|\widehat{f'}(n)|}{|n|} \le \Big(\sum_{n\ne0}|\widehat{f'}(n)|^2\Big)^{1/2}\Big(\sum_{n\ne0}\frac{1}{n^2}\Big)^{1/2}$. The first factor is finite by Bessel's inequality, since $f'$ is continuous and hence in $L^2$.
 :::
+
 <2>3. The series $\sum_n \hat f(n)e^{inx}$ converges uniformly to a continuous function $g$ with $\hat g(n) = \hat f(n)$ for all $n$.
+
 ::: {.proof}
-Weierstrass M-test from <2>2 since $|e^{inx}| = 1$; the uniform limit of continuous partial sums is continuous; and uniform convergence passes under the integral, so $\hat g(n) = \lim_N \widehat{S_N}(n) = \hat f(n)$.
+Uniform convergence follows from step <2>2 and the Weierstrass M-test, since $|e^{inx}| = 1$. The uniform limit of the continuous partial sums $S_N$ is continuous, and uniform convergence lets the limit pass under the integral, so $\hat g(n) = \lim_N \widehat{S_N}(n) = \hat f(n)$.
 :::
+
 <2>4. $g = f$.
+
 ::: {.proof}
-$h = f - g$ is continuous with $\hat h \equiv 0$; by Fejér's theorem $h \ast F_N \to h$ uniformly, where $F_N$ is the Fejér kernel, but $h \ast F_N = \sum_{|k|\le N}\big(1 - \frac{|k|}{N+1}\big)\hat h(k)e^{ikx} = 0$; hence $h = 0$.
+$h = f - g$ is continuous with $\hat h \equiv 0$ by step <2>3. By Fejér's theorem $h \ast F_N \to h$ uniformly, where $F_N$ is the Fejér kernel, and $h \ast F_N = \sum_{|k|\le N}\big(1 - \frac{|k|}{N+1}\big)\hat h(k)e^{ikx} = 0$. So $h = 0$.
 :::
+
 <2>5. Q.E.D.
+
 ::: {.proof}
-<2>2–<2>4 show the Fourier series of $f$ converges to $f$ (uniformly).
+Steps <2>2--<2>4.
 :::
+:::
+
+::: {.remark}
+The first part refers to the identity $\int \hat f\,g = \int f\,\hat g$, which holds for $f, g \in L^1$ by Fubini's theorem.
 :::
