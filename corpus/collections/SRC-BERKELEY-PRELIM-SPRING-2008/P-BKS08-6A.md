@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(G\) is a finite group with only one automorphism.
+Suppose $G$ is a finite group with only one automorphism.
 Show that
-\[
+$$
 |G|\le2.
-\]
+$$
 :::
 
 ::: {.solution}
