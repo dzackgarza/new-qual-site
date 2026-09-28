@@ -24,56 +24,18 @@ Prove that, for every $b\in B$, $p^{-1}(b)$ has the same number of elements as $
 :::
 
 ::: {.solution}
-<1>1. Local constancy of fiber cardinality:
-<2>1. By definition of a covering map, for each point $x \in B$, there exists an open neighborhood $U \subset B$ that is evenly covered by $p$:
-\[
-p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha,
-\]
-where $\{V_\alpha\}_{\alpha \in A}$ are pairwise disjoint open subsets of $E$ and each restriction $p|_{V_\alpha}: V_\alpha \to U$ is a homeomorphism.
+<1>1. Every $x \in B$ has an open neighborhood $U$ on which $y \mapsto |p^{-1}(y)|$ is constant.
 ::: {.proof}
-definition of covering space.
-:::
-<2>2. For any point $y \in U$, each $V_\alpha$ contains precisely one preimage point $(p|_{V_\alpha})^{-1}(y)$.
-Thus the cardinality of the fiber is:
-\[
-|p^{-1}(y)| = |A| = |p^{-1}(x)| \quad \text{for all } y \in U.
-\]
-Therefore, the function $c: B \to \mathbb{N} \cup \{\infty\}$ given by $c(b) = |p^{-1}(b)|$ is locally constant.
-::: {.proof}
-homeomorphisms are bijections.
+Let $U$ be an evenly covered open neighborhood of $x$, with $p^{-1}(U) = \bigsqcup_{\alpha \in A} V_\alpha$ and each $p|_{V_\alpha}\colon V_\alpha \to U$ a homeomorphism. For $y \in U$, each $V_\alpha$ contains exactly one point of $p^{-1}(y)$, namely $(p|_{V_\alpha})^{-1}(y)$, and $p^{-1}(y) \subseteq p^{-1}(U)$. Hence $|p^{-1}(y)| = |A|$ for all $y \in U$.
 :::
 
-<1>2. Connectedness and constancy of fiber cardinality on $B$:
-<2>1. Let $k = |p^{-1}(b_0)| \in \mathbb{N}$, and define the subset:
-\[
-S = \{b \in B \mid |p^{-1}(b)| = k\} = c^{-1}(\{k\}).
-\]
+<1>2. With $k = |p^{-1}(b_0)|$, the set $S = \{b \in B : |p^{-1}(b)| = k\}$ is nonempty, open, and closed.
 ::: {.proof}
-definition of fiber-cardinality level set.
-:::
-<2>2. $S$ is non-empty because $b_0 \in S$.
-::: {.proof}
-assumption $|p^{-1}(b_0)| = k$.
-:::
-<2>3. $S$ is open: for any $b \in S$, let $U_b$ be an evenly covered neighborhood of $b$.
-By <1>1, $|p^{-1}(y)| = |p^{-1}(b)| = k$ for all $y \in U_b$, so $U_b \subseteq S$.
-::: {.proof}
-union of open neighborhoods is open.
-:::
-<2>4. $S$ is closed: its complement is $B \setminus S = \bigcup_{m \neq k} c^{-1}(\{m\})$.
-For any $b' \in B \setminus S$, there is an evenly covered neighborhood $U_{b'}$ with $|p^{-1}(y)| = |p^{-1}(b')| \neq k$ for all $y \in U_{b'}$, so $U_{b'} \subseteq B \setminus S$.
-Thus $B \setminus S$ is open, making $S$ closed.
-::: {.proof}
-complement of open set is closed.
-:::
-<2>5. Since $B$ is connected and $S$ is a non-empty clopen subset of $B$, we have $S = B$.
-::: {.proof}
-connectedness of $B$.
+$b_0 \in S$. If $b \in S$, the neighborhood $U$ of $b$ from step <1>1 lies in $S$, so $S$ is open. If $b \notin S$, the neighborhood $U$ of $b$ from step <1>1 lies in $B \setminus S$, so $B \setminus S$ is open.
 :::
 
-<1>3. Conclusion:
-$|p^{-1}(b)| = k = |p^{-1}(b_0)|$ for every $b \in B$. Q.E.D.
+<1>3. Q.E.D.
 ::: {.proof}
-<1>1 and <1>2.
+$B$ is connected and $S$ is a nonempty clopen subset by step <1>2, so $S = B$: every fiber has $k = |p^{-1}(b_0)|$ elements.
 :::
 :::
