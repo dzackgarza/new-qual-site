@@ -45,7 +45,7 @@ Put
 \[
 G=\pi_1(S^3\setminus K)=\langle a,b\mid a^2=b^3\rangle.
 \]
-Recall the decomposition used in Proposition 4.7: $S^3\setminus K$ is covered by two pieces which deformation retract to core circles, represented by $a$ and $b$, while their intersection deformation retracts to a circle $K'$ parallel to $K$. The circle $K'$ winds twice around the $a$-core and three times around the $b$-core.
+Recall the van Kampen decomposition that yields this presentation: $S^3\setminus K$ is covered by two pieces which deformation retract to core circles, represented by $a$ and $b$, while their intersection deformation retracts to a circle $K'$ parallel to $K$. The circle $K'$ winds twice around the $a$-core and three times around the $b$-core.
 
 <1>1. A loop can be converted to a word in $a$ and $b$ by the van Kampen decomposition.
 ::: {.proof}
