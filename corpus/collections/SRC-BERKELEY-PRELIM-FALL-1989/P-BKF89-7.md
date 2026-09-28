@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF89-7
 kind: problem
-title: A commuting diagonalizable operator restricts diagonally on each eigenspace
+title: A commuting diagonalizable operator is diagonalizable on each eigenspace
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
