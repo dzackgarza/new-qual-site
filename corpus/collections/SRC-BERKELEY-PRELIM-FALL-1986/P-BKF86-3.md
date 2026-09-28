@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF86-3
 kind: problem
-title: Integrate $x^3-3xy^2$ over the region between two circles
+title: Integral of $x^3-3xy^2$ over the region between two circles
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
