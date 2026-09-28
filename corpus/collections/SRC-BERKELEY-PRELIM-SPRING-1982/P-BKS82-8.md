@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS82-8
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}\cos x/(x^4+1)\,dx$ by contour integration
+title: The integral $\int_{-\infty}^{\infty}\cos x/(x^4+1)\,dx$ by contour integration
 classification:
   areas: [prelim]
   topics: []
