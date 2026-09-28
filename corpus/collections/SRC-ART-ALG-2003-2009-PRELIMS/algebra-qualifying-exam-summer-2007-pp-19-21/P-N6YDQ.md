@@ -80,8 +80,6 @@ The tower law gives $[L:\mathbb Q]=4d$. The subfield
 $\mathbb Q(\alpha)\subseteq L$ has degree $5$, so the same law
 implies $5\mid4d$. As $\gcd(4,5)=1$, we obtain $5\mid d$,
 hence $d=5$ and $[L:\mathbb Q]=20$.
-This establishes the degree over $F$ without assuming that
-irreducibility over $\mathbb Q$ survives a change of coefficient field.
 :::
 
 <1>3. The Galois group over $F$ is cyclic of order $5$.
