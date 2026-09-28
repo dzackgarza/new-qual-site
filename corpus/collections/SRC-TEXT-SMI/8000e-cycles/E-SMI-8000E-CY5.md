@@ -47,8 +47,8 @@ Call that subgroup $A(n)$.
 ::: {.remark}
 The printed exercise asserts that the sign map $S_n\to\{\pm1\}$ is
 surjective without restricting $n$. For $n=1$, the group $S_1$ is trivial,
-so no map from it onto the two-element group can be surjective. The standard
-statement therefore requires $n\ge2$, as assumed above.
+so no map from it onto the two-element group can be surjective. The statement
+therefore assumes $n\ge2$.
 :::
 
 ::: {.solution}
@@ -59,15 +59,19 @@ $$
 
 <1>1. Every transposition sends $\Delta$ to $-\Delta$.
 ::: {.proof}
-Consider the transposition $\tau=(ab)$, which interchanges the variables
-$X_a$ and $X_b$. The factor involving exactly these two indices changes sign:
+Consider the transposition $\tau=(ab)$ with $a<b$, which interchanges the
+variables $X_a$ and $X_b$. The factor $X_a-X_b$ changes sign:
 $$
 X_a-X_b\longmapsto X_b-X_a=-(X_a-X_b).
 $$
-Every other factor is merely permuted with another factor of the product. For
-example, if $k$ differs from $a,b$, the two factors involving $a,k$ and
-$b,k$ are exchanged, up to the ordering convention $i<j$ already built into
-the Vandermonde product. Thus the entire product acquires exactly one minus
+A factor involving neither $a$ nor $b$ is fixed. For each $k\notin\{a,b\}$,
+the two factors of $\Delta$ with indices $\{a,k\}$ and $\{b,k\}$ are
+interchanged by $\tau$, up to sign: if $k<a$
+or $k>b$, then $X_k-X_a\leftrightarrow X_k-X_b$ (respectively
+$X_a-X_k\leftrightarrow X_b-X_k$) with no sign change, while if $a<k<b$,
+then $X_a-X_k\mapsto X_b-X_k=-(X_k-X_b)$ and
+$X_k-X_b\mapsto X_k-X_a=-(X_a-X_k)$, two sign changes. In every case the pair
+contributes the sign $+1$. Thus the entire product acquires exactly one minus
 sign:
 $$
 \boxed{\tau(\Delta)=-\Delta.}
@@ -76,8 +80,8 @@ $$
 
 <1>2. Every permutation sends $\Delta$ to either $\Delta$ or $-\Delta$.
 ::: {.proof}
-By the preceding generation result, every $m\in S_n$ can be written as a
-product of transpositions,
+Transpositions generate $S_n$ ([[E-SMI-8000E-CY3]]), so every $m\in S_n$
+can be written as a product of transpositions,
 $$
 m=\tau_1\tau_2\cdots\tau_r.
 $$
@@ -97,19 +101,19 @@ $$
 
 <1>3. The sign function is a homomorphism.
 ::: {.proof}
-For $m,n\in S_n$,
+For $m,m'\in S_n$,
 $$
 \begin{aligned}
-(mn)(\Delta)
-&=m(n(\Delta))\\
-&=m(\operatorname{sgn}(n)\Delta)\\
-&=\operatorname{sgn}(n)\operatorname{sgn}(m)\Delta.
+(mm')(\Delta)
+&=m(m'(\Delta))\\
+&=m(\operatorname{sgn}(m')\Delta)\\
+&=\operatorname{sgn}(m')\operatorname{sgn}(m)\Delta.
 \end{aligned}
 $$
 Therefore
 $$
-\boxed{\operatorname{sgn}(mn)
-=\operatorname{sgn}(m)\operatorname{sgn}(n).}
+\boxed{\operatorname{sgn}(mm')
+=\operatorname{sgn}(m)\operatorname{sgn}(m').}
 $$
 :::
 
