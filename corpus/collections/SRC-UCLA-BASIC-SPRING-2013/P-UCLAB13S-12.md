@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB13S-12
 kind: problem
-title: Gregory's series for pi
+title: Gregory's series for $\pi$
 classification:
   areas: [prelim]
   topics: []
