@@ -116,7 +116,7 @@ $$
 \dim Z=\dim(A/\mathfrak p).
 $$
 The affine height-dimension formula
-[[P-AGH2320DIMENSION|gives]]
+[[P-AGH2320DIMENSION]] gives
 $$
 \dim(A/\mathfrak p)+\height\mathfrak p=\dim A.
 $$
