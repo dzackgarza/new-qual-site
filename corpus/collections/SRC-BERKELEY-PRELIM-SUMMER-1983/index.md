@@ -23,17 +23,17 @@ source:
   - P-BERK83SU-05
   - P-BERK83SU-06
   - id: P-BKS84-1
-    comment: Summer 1983 Problem 7; repeated exactly as Berkeley Spring 1984 Problem 1
+    comment: Problem 7
   - P-BERK83SU-08
   - P-BERK83SU-09
   - P-BERK83SU-10
   - P-BERK83SU-11
   - id: P-BKF18-3B
-    comment: Summer 1983 Problem 12; repeated exactly as Berkeley Fall 2018 Problem 3B
+    comment: Problem 12
   - P-BERK83SU-13
   - P-BERK83SU-14
   - id: P-BKF96-14
-    comment: Summer 1983 Problem 15; repeated exactly as Berkeley Fall 1996 Problem 14
+    comment: Problem 15
   - P-BERK83SU-16
   - P-BERK83SU-17
   - P-BERK83SU-18
