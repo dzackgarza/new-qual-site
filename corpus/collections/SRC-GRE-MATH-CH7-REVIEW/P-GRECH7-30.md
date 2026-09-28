@@ -26,5 +26,5 @@ What is the polar form of a complex number equal to $(i - \sqrt{3})^6$?
 :::
 
 ::: {.remark}
-Choice (D) is partly illegible in the retained extraction.
+The source prints a stray empty "$2^6(\ )$" after choice (D).
 :::
