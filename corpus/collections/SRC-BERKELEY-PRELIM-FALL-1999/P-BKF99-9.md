@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF99-9
 kind: problem
-title: Classify three-dimensional differentiation-invariant spaces of smooth functions
+title: Three-dimensional differentiation-invariant spaces of smooth functions
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
