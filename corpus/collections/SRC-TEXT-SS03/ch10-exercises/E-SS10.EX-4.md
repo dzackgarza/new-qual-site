@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-4
 kind: problem
-title: "SS 10.4: Euler's recurrence for the partition function"
+title: Euler's pentagonal recurrence for the partition function
 classification:
   areas:
   - complex-analysis
