@@ -52,18 +52,18 @@ We call it the fine topology.
 
 <1>2. Part (b): The fine topology contains the uniform topology.
     *Proof:*
-    <2>1. A standard basis element for the uniform topology is a metric ball $B_{\bar{\rho}}(f, \varepsilon) = \{g \in \mathcal{C}(X, Y) : \sup_{x \in X} d(f(x), g(x)) < \varepsilon\}$ for constant $\varepsilon > 0$ (assuming $\varepsilon \le 1$).
-    <2>2. Choosing the constant function $\delta(x) = \varepsilon$ for all $x \in X$, $\delta$ is continuous and positive, and $B(f, \delta) = B_{\bar{\rho}}(f, \varepsilon)$.
-    <2>3. Thus every basic open set in the uniform topology is an element of the basis $\mathcal{B}$, so the fine topology contains the uniform topology.
+    <2>1. The uniform topology has as a basis the balls $B_{\bar{\rho}}(f, \varepsilon) = \{g \in \mathcal{C}(X, Y) : \sup_{x \in X} \bar{d}(f(x), g(x)) < \varepsilon\}$ with $0 < \varepsilon \le 1$, where $\bar{d} = \min(d, 1)$; for such $\varepsilon$, $\bar{d}(f(x), g(x)) < \varepsilon$ if and only if $d(f(x), g(x)) < \varepsilon$.
+    <2>2. Let $g \in B_{\bar{\rho}}(f, \varepsilon)$ and put $r = \bar{\rho}(f, g) < \varepsilon$. Let $\delta$ be the constant function $(\varepsilon - r)/2$, which is continuous and positive. For $h \in B(g, \delta)$ and $x \in X$, $d(f(x), h(x)) < r + (\varepsilon - r)/2$, so $\bar{\rho}(f, h) \le r + (\varepsilon - r)/2 < \varepsilon$. Hence $g \in B(g, \delta) \subseteq B_{\bar{\rho}}(f, \varepsilon)$.
+    <2>3. Thus every uniform ball is open in the fine topology, so the fine topology contains the uniform topology.
 
 <1>3. Part (c): If $X$ is compact, the fine and uniform topologies coincide.
     *Proof:*
     <2>1. By <1>2, the fine topology is at least as fine as the uniform topology.
-    <2>2. Conversely, let $B(f, \delta)$ be a basic open set in the fine topology.
-    <2>3. Since $X$ is compact and $\delta: X \to (0, \infty)$ is continuous, the Extreme Value Theorem guarantees that $\delta$ attains its minimum:
-        $$\varepsilon := \inf_{x \in X} \delta(x) = \min_{x \in X} \delta(x) > 0.$$
-    <2>4. If $g \in B_{\bar{\rho}}(f, \varepsilon)$, then for all $x \in X$, $d(f(x), g(x)) < \varepsilon \le \delta(x)$, which implies $g \in B(f, \delta)$.
-    <2>5. Thus $B_{\bar{\rho}}(f, \varepsilon) \subseteq B(f, \delta)$, proving that every fine-open set is uniform-open.
+    <2>2. Conversely, let $B(f, \delta)$ be a basic open set in the fine topology and let $g \in B(f, \delta)$. By step <1>1, there is a continuous positive $\delta_3$ with $g \in B(g, \delta_3) \subseteq B(f, \delta)$.
+    <2>3. Since $X$ is compact and $\delta_3: X \to (0, \infty)$ is continuous, the extreme value theorem gives
+        $$\varepsilon := \min\left(\min_{x \in X} \delta_3(x), 1\right) > 0.$$
+    <2>4. If $h \in B_{\bar{\rho}}(g, \varepsilon)$, then for all $x \in X$, $d(g(x), h(x)) < \varepsilon \le \delta_3(x)$, so $h \in B(g, \delta_3)$.
+    <2>5. Thus $g \in B_{\bar{\rho}}(g, \varepsilon) \subseteq B(f, \delta)$. Every point of $B(f, \delta)$ has a uniform ball inside it, so every fine-open set is uniform-open.
 
 <1>4. Part (d): If $X$ is discrete, $\mathcal{C}(X, Y) = Y^X$ and the fine topology equals the box topology.
     *Proof:*
