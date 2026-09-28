@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-FULSIMPLE
 kind: definition
-title: Simple and simplicial polytopes, and which one makes the normal fan simplicial
+title: Simple and simplicial polytopes and simplicial normal fans
 classification:
   areas:
   - algebraic-geometry
@@ -18,7 +18,7 @@ relations:
 review: draft
 prompts:
 - Distinguish simple from simplicial polytopes, with an example of each that is not the other.
-- Which condition on a polytope makes X_P have only finite quotient singularities?
+- Which condition on a polytope $P$ makes $X_P$ have only finite quotient singularities?
 ---
 
 ::: {.definition}
@@ -26,9 +26,9 @@ Let $P$ have dimension $d$.
 
 - $P$ is a \dfn{simplex} if it has exactly $d+1$ vertices.
 
-- $P$ is **simple** if every vertex lies on exactly $d$ facets.
+- $P$ is \dfn{simple} if every vertex lies on exactly $d$ facets.
 
-- $P$ is **simplicial** if every facet is a simplex.
+- $P$ is \dfn{simplicial} if every facet is a simplex.
 :::
 
 ::: {.proposition}
@@ -46,8 +46,7 @@ The origin is interior, so $P^\circ$ is the octahedron with vertices $\pm e_i$, 
 :::
 
 ::: {.remark}
-The normal fan determines the direction of the correspondence.
-Vertices of $P$ give the maximal cones of $\Sigma_P$, and a maximal cone is spanned by the facet normals at its vertex.
-So "each vertex meets exactly $d$ facets" is literally "each maximal cone has exactly $d$ rays", which is simpliciality of the fan.
-The facets of $P$ contribute only the rays, and their internal shape is irrelevant.
+For a full-dimensional polytope $P$, the vertices of $P$ correspond to the maximal cones of $\Sigma_P$: the cone at a vertex $v$ is spanned by the inward facet normals of the facets containing $v$.
+So $v$ lies on exactly $d$ facets if and only if its cone has exactly $d$ rays, that is, if and only if the cone is simplicial.
+The facets of $P$ correspond to the rays of $\Sigma_P$, so the shape of a facet, such as whether it is a simplex, does not affect whether $\Sigma_P$ is simplicial.
 :::
