@@ -35,7 +35,7 @@ Let \(X=\mathbb R\times\mathbb R\) with the dictionary order. For \((a,b)\in X\)
 \]
 is exactly \(\{a\}\times(b-1,b+1)\), and projection onto the second coordinate is an order-preserving homeomorphism with \((b-1,b+1)\). Thus \(X\) is locally \(1\)-euclidean.
 
-The dictionary-order plane is metrizable by [[E-KY2W7]], so it satisfies condition (iii) of [[E-KWBI9]].
+The dictionary-order plane is metrizable by [[E-KY2W7]], so it satisfies condition (iii) of [[E-OYPV7]].
 
 It does not satisfy condition (ii). Indeed the sets
 \[
