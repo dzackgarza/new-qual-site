@@ -149,7 +149,8 @@ cofinite topology.
 The cofinite topology is defined by declaring the whole space and the finite
 subsets to be the closed sets. Step <1>4 gives exactly this family.
 
-Equivalently, Zaidenberg's affine-variety correspondence identifies
+Equivalently, the correspondence between affine varieties and their
+coordinate rings identifies
 $$
 \operatorname{Specm}k[x]\cong\AA^1_k,
 $$
