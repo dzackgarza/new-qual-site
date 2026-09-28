@@ -30,7 +30,7 @@ Either find an example or show that no such $f$ exists.
 :::
 
 ::: {.solution}
-<1>1. Choose tiny intervals that visit every rational interval infinitely often.
+<1>1. There are nonempty open intervals $E_n$ with $m(E_n)\le2^{-n}$ such that every open interval with rational endpoints contains $E_n$ for infinitely many $n$.
 ::: {.proof}
 Let $(B_j)_{j\ge1}$ enumerate the open intervals with rational endpoints. Choose a sequence $j(n)$ such that every positive integer occurs infinitely often; for example
 \[
@@ -55,7 +55,7 @@ Then
 \]
 :::
 
-<1>2. Form the nonnegative series and make it finite everywhere.
+<1>2. With $a_n\coloneqq m(E_n)^{-1}$, the series $F\coloneqq\sum_n a_n\mathbf1_{E_n}$ is finite almost everywhere, and there is a Borel function $f\colon\mathbb R\to[0,\infty)$ with $f=F$ almost everywhere.
 ::: {.proof}
 Define
 \[
