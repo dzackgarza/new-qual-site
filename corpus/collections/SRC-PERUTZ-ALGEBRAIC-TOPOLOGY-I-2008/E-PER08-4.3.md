@@ -418,7 +418,7 @@ The terminal knot is
 \left(\frac1{\sqrt2}e^{2i\theta},
       \frac1{\sqrt2}e^{3i\theta}\right),
 \]
-which is the trefoil $K$ from the source, up to the harmless coordinate swap and orientation convention. Therefore
+which is the $(2,3)$ torus knot. It is $K$ or the mirror image of $K$, and a reflection of $S^3$ identifies the complements of a knot and its mirror image. Therefore
 \[
 S^3\setminus(C\cap S^3)\cong S^3\setminus K.
 \]
@@ -444,7 +444,7 @@ B_3
 \xrightarrow{\cong}
 \pi_1(S^3\setminus K).
 \]
-The first arrow is Proposition 4.7. The second is an isomorphism by <1>1. The third is an isomorphism by <1>3. The fourth is an isomorphism by <1>7. The fifth is an isomorphism by <1>8--<1>9.
+The first arrow is the van Kampen presentation of the trefoil group used in [[E-PER08-4.2]]. The second is an isomorphism by <1>1. The third is an isomorphism by <1>3. The fourth is an isomorphism by <1>7. The fifth is an isomorphism by <1>8--<1>9.
 
 A composition of isomorphisms is an isomorphism. Since the source and target of the full composite are the same group, the resulting endomorphism of
 \[
