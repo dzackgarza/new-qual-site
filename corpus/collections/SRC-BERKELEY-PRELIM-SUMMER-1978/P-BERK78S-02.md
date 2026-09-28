@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-02
 kind: problem
-title: When the matrix model $\begin{psmallmatrix}a&-b\\b&a\end{psmallmatrix}$ is a field
+title: When the ring of matrices $\begin{psmallmatrix}a&-b\\b&a\end{psmallmatrix}$ is a field
 classification:
   areas:
   - prelim
