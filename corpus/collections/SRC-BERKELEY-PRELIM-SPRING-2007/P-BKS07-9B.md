@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-9B
 kind: problem
-title: UC Berkeley Spring 2007 prelim 9B
+title: Cauchy--Binet formula for $\det(A^tB)$
 classification:
   areas: [prelim]
   topics: []
