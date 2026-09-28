@@ -34,36 +34,46 @@ Determine, for each of these topologies, which of the others it contains.
 :::
 
 ::: {.solution}
-**Goal:** Determine all inclusion relations among the five given topologies $\mathcal{T}_1, \mathcal{T}_2, \mathcal{T}_3, \mathcal{T}_4, \mathcal{T}_5$ on $\mathbb{R}$.
+Write $K=\{1/n : n\in\mathbb Z_+\}$, so that $\mathcal T_2$ has basis the open intervals $(a,b)$ and the sets $(a,b)\setminus K$.
 
-<1>1. Verification of pairwise inclusions:
-    *Proof:*
-    <2>1. **$\mathcal{T}_1 \supset \mathcal{T}_3$:** Every non-empty set in $\mathcal{T}_3$ is of the form $\mathbb{R} \setminus \{x_1, \dots, x_k\}$, which is a finite intersection of open sets in the standard topology $\mathcal{T}_1$. Thus $\mathcal{T}_3 \subset \mathcal{T}_1$.
-    <2>2. **$\mathcal{T}_1 \supset \mathcal{T}_5$:** Every basis element $(-\infty, a) = \bigcup_{n=1}^\infty (a - n, a)$ of $\mathcal{T}_5$ is a union of standard open intervals, so $\mathcal{T}_5 \subset \mathcal{T}_1$.
-    <2>3. **$\mathcal{T}_2 \supset \mathcal{T}_1$:** The basis for $\mathcal{T}_2$ includes all open intervals $(a, b)$, so $\mathcal{T}_1 \subset \mathcal{T}_2$.
-    <2>4. **$\mathcal{T}_4 \supset \mathcal{T}_1$:** Every open interval $(a, b) = \bigcup_{n=1}^\infty (a, b - 1/n]$ is open in $\mathcal{T}_4$, so $\mathcal{T}_1 \subset \mathcal{T}_4$.
-    <2>5. **$\mathcal{T}_4 \supset \mathcal{T}_2$:** The basis elements of $\mathcal{T}_2$ are $(a, b)$ and $(a, b) \setminus K$. Since $(a, b) \in \mathcal{T}_4$, we only check $(a, b) \setminus K$:
-        - For any $x \in (a, b) \setminus K$:
-            - If $x \le 0$, there exists $\varepsilon > 0$ such that $(x - \varepsilon, x] \subseteq (a, b) \setminus K$.
-            - If $x > 1$, then $(\max(a,1), x] \subseteq (a, b) \setminus K$.
-            - If $0 < x < 1$ and $x \notin K$, choose $n$ such that $\frac{1}{n+1} < x < \frac{1}{n}$; then $(\max(a,\frac{1}{n+1}), x] \subseteq (a, b) \setminus K$.
-        - Thus $(a, b) \setminus K \in \mathcal{T}_4$, proving $\mathcal{T}_2 \subset \mathcal{T}_4$.
+<1>1. $\mathcal T_3\subseteq\mathcal T_1$ and $\mathcal T_5\subseteq\mathcal T_1$.
 
-<1>2. Verification of strictness and non-inclusions:
-    *Proof:*
-    <2>1. $\mathcal{T}_5 \not\subset \mathcal{T}_3$ because $(-\infty, a)$ has infinite complement.
-    <2>2. $\mathcal{T}_3 \not\subset \mathcal{T}_5$ because $\mathbb{R} \setminus \{0\} \in \mathcal{T}_3$, while every nonempty union of rays $(-\infty, a)$ is either $\mathbb{R}$ or a ray $(-\infty, c)$.
-    <2>3. $\mathcal{T}_1 \not\subset \mathcal{T}_3$ and $\mathcal{T}_1 \not\subset \mathcal{T}_5$ (e.g. $(0, 1) \notin \mathcal{T}_3, \mathcal{T}_5$).
-    <2>4. $\mathcal{T}_2 \not\subset \mathcal{T}_1$ because $(-1, 1) \setminus K \in \mathcal{T}_2 \setminus \mathcal{T}_1$.
-    <2>5. $\mathcal{T}_4 \not\subset \mathcal{T}_2$ because $(0, 1] \in \mathcal{T}_4 \setminus \mathcal{T}_2$.
+::: {.proof}
+A nonempty $\mathcal T_3$-open set is $\mathbb R\setminus\{x_1,\ldots,x_k\}=\bigcap_i(\mathbb R\setminus\{x_i\})$, a finite intersection of standard open sets.
+A basis element of $\mathcal T_5$ is $(-\infty,a)=\bigcup_{n\ge1}(a-n,a)$.
+:::
 
-<1>3. Complete containment summary for each topology:
-    - **$\mathcal{T}_1$ contains:** $\mathcal{T}_1, \mathcal{T}_3, \mathcal{T}_5$.
-    - **$\mathcal{T}_2$ contains:** $\mathcal{T}_1, \mathcal{T}_2, \mathcal{T}_3, \mathcal{T}_5$.
-    - **$\mathcal{T}_3$ contains:** $\mathcal{T}_3$.
-    - **$\mathcal{T}_4$ contains:** $\mathcal{T}_1, \mathcal{T}_2, \mathcal{T}_3, \mathcal{T}_4, \mathcal{T}_5$ (all five).
-    - **$\mathcal{T}_5$ contains:** $\mathcal{T}_5$.
+<1>2. $\mathcal T_1\subseteq\mathcal T_2\subseteq\mathcal T_4$.
 
-<1>4. Conclusion:
-    The inclusion lattice is the total chain $\mathcal{T}_4 \supset \mathcal{T}_2 \supset \mathcal{T}_1$ branching below $\mathcal{T}_1$ to the two incomparable subtopologies $\mathcal{T}_3$ and $\mathcal{T}_5$. Q.E.D.
+::: {.proof}
+The basis of $\mathcal T_2$ contains every open interval, so $\mathcal T_1\subseteq\mathcal T_2$.
+Each $(a,b)=\bigcup_{n}(a,b-1/n]$ is $\mathcal T_4$-open.
+For $(a,b)\setminus K$, let $x$ be a point of it.
+If $x\le0$, then $(a,x]\subseteq(a,b)\setminus K$.
+If $x>1$, then $(\max(a,1),x]\subseteq(a,b)\setminus K$.
+If $0<x<1$, choose $n$ with $\frac1{n+1}<x<\frac1n$; then $(\max(a,\frac1{n+1}),x]\subseteq(a,b)\setminus K$.
+So $(a,b)\setminus K$ is $\mathcal T_4$-open, and $\mathcal T_2\subseteq\mathcal T_4$.
+:::
+
+<1>3. $\mathcal T_3$ and $\mathcal T_5$ are incomparable.
+
+::: {.proof}
+The ray $(-\infty,0)\in\mathcal T_5$ has infinite complement, so it is not in $\mathcal T_3$.
+$\mathbb R\setminus\{0\}\in\mathcal T_3$, while every nonempty union of rays $(-\infty,a)$ is $\mathbb R$ or a ray $(-\infty,c)$, so $\mathbb R\setminus\{0\}\notin\mathcal T_5$.
+:::
+
+<1>4. $\mathcal T_1\not\subseteq\mathcal T_3$, $\mathcal T_1\not\subseteq\mathcal T_5$, $\mathcal T_2\not\subseteq\mathcal T_1$, and $\mathcal T_4\not\subseteq\mathcal T_2$.
+
+::: {.proof}
+$(0,1)\in\mathcal T_1$ has infinite complement and is not a union of rays.
+$(-1,1)\setminus K\in\mathcal T_2$ is not standard-open, since every interval around $0$ meets $K$.
+$(0,1]\in\mathcal T_4$ is not $\mathcal T_2$-open: a basis element of $\mathcal T_2$ containing $1\in K$ is an interval $(c,d)$ with $d>1$, which is not contained in $(0,1]$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2, $\mathcal T_1$ contains $\mathcal T_3$ and $\mathcal T_5$; $\mathcal T_2$ contains $\mathcal T_1,\mathcal T_3,\mathcal T_5$; $\mathcal T_4$ contains $\mathcal T_1,\mathcal T_2,\mathcal T_3,\mathcal T_5$.
+By steps <1>3 and <1>4, $\mathcal T_3$ and $\mathcal T_5$ contain none of the others, and no further inclusion holds: $\mathcal T_2,\mathcal T_4\supseteq\mathcal T_1$ are not contained in $\mathcal T_3$ or $\mathcal T_5$, $\mathcal T_4\supseteq\mathcal T_2$ is not contained in $\mathcal T_1$, and $\mathcal T_4\not\subseteq\mathcal T_2$.
+:::
 :::
