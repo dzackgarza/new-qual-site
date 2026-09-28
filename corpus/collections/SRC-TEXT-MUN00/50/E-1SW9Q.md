@@ -91,7 +91,7 @@ Compare Example 3 of §31.]
 
 <1>2. Part (c) & (d): Homeomorphism $f_c: \mathbb{R}^2 \to A \cup B_c$ and local 2-euclidean structure.
     *Proof:*
-    <2>1. $f_c$ is bijective from $\mathbb{R}^2$ onto $A \cup B_c$: on $x > 0$ it is the diffeomorphism onto $A$ of <2>2, on $x < 0$ it is the Cartesian identification onto $B_c$ of <2>3, and the two pieces meet only at $x = 0$, where $f_c(0, y) = (0, c, 0)$ is the single point of $A \cap B_c$; hence $f_c$ is injective and surjective onto $A \cup B_c$.
+    <2>1. $f_c$ is bijective from $\mathbb{R}^2$ onto $A \cup B_c$: on $x > 0$ it is the bijection onto $A$ of <2>2, on $x \le 0$ it is the bijection $(x, y) \mapsto (x, y, c)$ onto $B_c$, and the images $A$ (third coordinate $0$, $x > 0$) and $B_c$ ($x \le 0$) are disjoint.
     <2>2. On $x > 0$, $f_c(x, y) = (x, c + xy, 0)$ is a smooth diffeomorphism onto $A$ with continuous inverse $(u, v, 0) \mapsto (u, \frac{v-c}{u})$.
     <2>3. On $x < 0$, $f_c(x, y) = (x, y, c)$ is the standard Cartesian identification.
     <2>4. At $x = 0$, the image of the basic product neighborhood $(-\varepsilon, \varepsilon) \times (a, b) \subset \mathbb{R}^2$ under $f_c$ is precisely $A_c((a, b), \varepsilon) \cup B_c((a, b), \varepsilon)$, which is the type (iii) basis element of $X$.
@@ -112,8 +112,8 @@ Compare Example 3 of §31.]
 <1>4. Part (f): $X$ is not normal.
     *Proof:*
     <2>1. The subspace $L = \{(0, 0, c) : c \in \mathbb{R}\} \subset X$ is closed and discrete, since each basic neighborhood $A_c((-1, 1), 1) \cup B_c((-1, 1), 1)$ contains only the point $(0, 0, c)$ of $L$.
-    <2>2. The cardinality of $L$ is $|L| = |\mathbb{R}| = 2^{\aleph_0} = \mathfrak{c}$.
-    <2>3. The countable set $D = (\mathbb{Q}_+ \times \mathbb{Q}) \times \{0\} \subset A$ is dense in $X$, because every open set of type (i) and type (iii) intersects $A$ in a non-empty open subset containing points of $D$. Thus $X$ is separable.
-    <2>4. By Jones' Lemma, a separable space containing a closed discrete subspace of cardinality $2^{\aleph_0}$ cannot be normal.
-    <2>5. Therefore $X$ is not normal. Q.E.D.
+    <2>2. $L$ is closed: a point of $A$ has a type (i) neighborhood, a point of $B_c$ with $x < 0$ has a type (ii) neighborhood, and a point $(0, y, c)$ with $y \neq 0$ has a type (iii) neighborhood with $0 \notin I$; none of these meets $L$.
+    <2>3. The countable set $D = (\mathbb{Q}_+ \times \mathbb{Q}) \times \{0\} \subset A$ meets every neighborhood of every point of $L$, because each such neighborhood contains a type (iii) set, whose part $A_c(I, \varepsilon)$ is a nonempty open subset of the half-plane $A$.
+    <2>4. Suppose $X$ is normal. For each $S \subseteq L$, the sets $S$ and $L \setminus S$ are closed in $X$ by steps <2>1 and <2>2, so there are disjoint open sets $U_S \supseteq S$ and $V_S \supseteq L \setminus S$. If $S \neq T$, say $p \in S \setminus T$, then $U_S \cap V_T$ is a neighborhood of $p$, so it contains a point of $D$ by step <2>3; that point lies in $U_S \cap D$ and not in $U_T \cap D$. Hence $S \mapsto U_S \cap D$ is an injective map from the power set of $L$ to the power set of $D$.
+    <2>5. The power set of $L$ has cardinality $2^{\mathfrak{c}}$ and the power set of the countable set $D$ has cardinality $\mathfrak{c} < 2^{\mathfrak{c}}$, which contradicts step <2>4. Therefore $X$ is not normal. Q.E.D.
 :::
