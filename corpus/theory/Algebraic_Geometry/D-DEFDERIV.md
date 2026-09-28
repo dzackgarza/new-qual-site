@@ -26,23 +26,23 @@ prompts:
 ::: {.definition title="derived functors"}
 Let $\mca$ be an abelian category with enough injectives and $F: \mca \to \mcb$ an additive covariant left exact functor.
 The \dfn{right derived functors} $R^iF: \mca \to \mcb$ are
-\[
+$$
 R^iF(A) = h^i(F(I^\bullet)) ,
-\]
+$$
 where $A \to I^\bullet$ is any injective resolution of $A$.
 
-If instead $F$ is right exact and $\mca$ has enough projectives, the **left derived functors** are
-\[
+If instead $F$ is right exact and $\mca$ has enough projectives, the \dfn{left derived functors} are
+$$
 L^iF(A) = h^i(F(P^\bullet)) ,
-\]
+$$
 where $P^\bullet \to A$ is any projective resolution.
 
-For contravariant $F$ one modifies these, or regards $F$ as a covariant functor on $\mca\op$.
+For contravariant $F$, regard $F$ as a covariant functor on $\mca\op$.
 :::
 
 ::: {.remark}
-$R^0F \cong F$ by left exactness, and $R^iF = 0$ for all $i>0$ exactly when $F$ is exact, so the derived functors measure the failure of exactness.
-Independence of the resolution is the homotopy statement: any two injective resolutions are homotopy equivalent, and homotopic maps agree on cohomology.
+$R^0F \cong F$ by left exactness, and $R^iF = 0$ for all $i>0$ if and only if $F$ is exact.
+$R^iF(A)$ is independent of the injective resolution up to canonical isomorphism: any two injective resolutions are homotopy equivalent, and homotopic maps agree on cohomology ([[D-DEFCPLX]]).
 
-The working fact is that any $F$-acyclic resolution computes $R^iF$, which is why flasque resolutions compute sheaf cohomology and free resolutions compute $\Tor$.
+Any resolution of $A$ by $F$-acyclic objects computes $R^iF(A)$ ([[D-DEFACYC]]); so flasque resolutions compute sheaf cohomology and free resolutions compute $\Tor$.
 :::
