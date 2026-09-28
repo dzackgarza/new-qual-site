@@ -9,11 +9,8 @@ topics:
 
 # Sheaves
 
-A presheaf that fails to glue, and the sheafification that repairs it.
+On $X=\CC\setminus\{0\}$, $\exp\colon\OO_X\to\OO_X^\times$ is a surjection of sheaves, since $\exp$ is surjective on every stalk, and it is not surjective on global sections: $z\in\OO^\times(X)$ has no logarithm on $X$.
 
-The chapter separates three failures by example: a presheaf that is not a sheaf, a morphism of sheaves that is surjective on stalks but not on sections, and an exact sequence whose global sections lose surjectivity.
-Each failure is located by the gluing or overlap obstruction that produces it.
+- [[algebraic-geometry/sheaves/the-sheaf-condition|The sheaf condition]], the identity and gluing axioms, presheaves failing each, and sheafification.
 
-- [[algebraic-geometry/sheaves/the-sheaf-condition|The sheaf condition]], which axiom a given presheaf violates, and what sheafification repairs.
-
-- [[algebraic-geometry/sheaves/stalks-and-exactness|Stalks and exactness]], why a surjection of sheaves need not be surjective on sections, and where the obstruction lives.
+- [[algebraic-geometry/sheaves/stalks-and-exactness|Stalks and exactness]], stalkwise exactness, and the class in $H^1$ obstructing a global lift.
