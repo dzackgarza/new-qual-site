@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-G3DCH
 kind: problem
-title: Orders of zeros
+title: Orders of the zeros of $(e^z-1)^3$
 classification:
   areas:
   - complex-analysis
