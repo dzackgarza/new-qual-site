@@ -22,15 +22,18 @@ prompts:
 
 ::: {.definition title="flat"}
 An $A$-module $N$ is \dfn{flat} if the functor $\wait \tensor_A N$ is exact.
-A priori this functor is right exact, so the content of the definition is left exactness: for every injection $M' \injects M$, the induced map $M' \tensor_A N \to M \tensor_A N$ is again injective.
 An $A$-algebra $B$ is flat if it is flat as an $A$-module.
 :::
 
 ::: {.remark}
-Free $\implies$ projective $\implies$ flat, and none of the implications reverses in general.
+Since $\wait \tensor_A N$ is right exact, $N$ is flat if and only if for every injection $M' \injects M$, the induced map $M' \tensor_A N \to M \tensor_A N$ is injective.
+
+Free $\implies$ projective $\implies$ flat, and neither implication reverses in general.
+Over $A=\ZZ/6$, the module $\ZZ/2$ is projective, being a direct summand of $A\cong\ZZ/2\times\ZZ/3$, and not free.
 $\QQ$ is a flat $\ZZ$-module that is not projective; over a Noetherian local ring the three notions agree for finitely generated modules.
 
-Over a domain, flat implies torsion-free, and the converse fails: $k[x,y]$-modules give the standard counterexample, with the ideal $(x,y)$ torsion-free but not flat.
-Over a PID, though, flat and torsion-free do coincide.
-Localisation $A \to S\inv A$ is always flat, which is the algebraic reason restriction to an open subscheme is exact.
+Over a domain, flat implies torsion-free.
+The ideal $(x,y)$ of $k[x,y]$ is torsion-free but not flat: its localization at $(x,y)$ is finitely generated over a Noetherian local ring and not free, since it has rank $1$ and needs two generators.
+Over a PID, flat and torsion-free coincide.
+Localisation $A \to S\inv A$ is flat; so on $\Spec A$, the functor $M\mapsto M_f=\Gamma(D(f),\widetilde M)$ is exact.
 :::
