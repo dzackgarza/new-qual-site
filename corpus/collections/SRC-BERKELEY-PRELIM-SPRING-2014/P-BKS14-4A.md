@@ -24,12 +24,12 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be analytic on the closed unit disk and suppose \(|f(z)|\le 1\) there.
+Let $f$ be analytic on the closed unit disk and suppose $|f(z)|\le 1$ there.
 Assume
-\[
+$$
 f\!\left(\frac12\right)=f\!\left(\frac i2\right)=0.
-\]
-Prove that \(|f(0)|\le \frac14\).
+$$
+Prove that $|f(0)|\le \frac14$.
 :::
 
 ::: {.solution}
