@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-BFOJT
 kind: theorem
 title: Continuity of translation in $L^1$
-slogan: 'Small spatial translations converge to the identity in the $L^1$ norm.'
+slogan: 'For each $f\in L^1(\RR^n)$, $\norm{\tau_hf-f}_1\to0$ as $h\to0$.'
 classification:
   areas:
   - real-analysis
