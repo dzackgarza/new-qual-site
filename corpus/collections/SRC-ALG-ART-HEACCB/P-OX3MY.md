@@ -22,9 +22,9 @@ Show that there exists a $k\dash$linear map $S:V\to V$ with $T\circ S = 0$ but $
 ::: {.solution}
 Suppose $T: V \to V$ is not invertible, then $\dim \im T < n$ and $\dim \ker T > 0$ by the Rank-Nullity theorem.
 This means that there is a nontrivial $\vector v \in \ker T$, and a nontrivial vector $\vector w \in \im(T)$, so let $S$ be the matrix formed by the outer product $\vector v \vector w^t$.
-Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector w$; this is the vector the second computation will use.
+Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector w$.
 
-We then consider how $ST$ acts on vectors $\vector x$:
+For every vector $\vector x$,
 
 \begin{align*}
 TS\vector x
@@ -37,7 +37,7 @@ TS\vector x
 
 where $\mathbf{0_n}$ is the $n\times n$ matrix of all zeros.
 
-For the other order, evaluate at the specific vector $\vector x_0$:
+At $\vector x_0$,
 \begin{align*}
 ST\vector x_0
 &= S \vector w \\
@@ -48,9 +48,6 @@ ST\vector x_0
 \end{align*}
 
 since $\vector w \neq \vector 0$ and $\vector v \neq \vector 0$.
-
-> The choice $\vector x_0$ with $T\vector x_0 = \vector w$ is what makes this work.
-> Membership in $\im(T)$ alone gives nothing: two vectors of $\im(T)$ can perfectly well be orthogonal, so a general $\vector y \in \im(T)$ may have $\inner{\vector w}{\vector y} = 0$.
 
 $\qed$
 :::
