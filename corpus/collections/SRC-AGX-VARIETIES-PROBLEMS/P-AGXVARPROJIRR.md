@@ -136,7 +136,7 @@ $$
 <1>5. Q.E.D.
 
 ::: {.proof}
-Steps <1>1--<1>4 convert the source's homogeneous-prime definition of a
-projective variety into topological irreducibility.
+Steps <1>1--<1>4 show that $V_+(P)$ is irreducible for every homogeneous
+prime $P$ with $V_+(P)\neq\varnothing$.
 :::
 :::
