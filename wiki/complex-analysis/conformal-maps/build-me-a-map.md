@@ -10,7 +10,7 @@ topics:
 
 # Build me a map
 
-A conformal map between two regions is usually written as a composition of maps between standard regions, most often passing through $\HH$ or $\DD$.
+If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standard region $W$ such as $\HH$ or $\DD$, then $g\inv\circ f\colon U\to V$ is a conformal bijection.
 
 ## Notation
 
@@ -21,8 +21,6 @@ A conformal map between two regions is usually written as a composition of maps 
 | $Q_i$ | the $i$th open quadrant, so $Q_1 \coloneqq \ts{z \st \Re z> 0,\ \Im z > 0}$ |
 | $Q_{ij}$ | the interior of $\overline{Q_i \union Q_j}$, so $\HH = Q_{12}$ and $Q_{14}$ is the right half plane |
 | $L \coloneqq \ts{x+iy \st 0 < y < \pi}$ | the horizontal strip |
-
-All regions in the table are open.
 
 ## Maps between standard regions
 
