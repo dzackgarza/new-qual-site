@@ -7,8 +7,6 @@ topics:
 
 # Counterexamples
 
-Each example refutes the statement in its title.
-
 ## Point-set
 
 ::: {.example title="A compact subset need not be closed"}
