@@ -26,10 +26,15 @@ Map $\DD^c \intersect \HH$ to $\HH$, sending
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-10_17-13-43.png)
 
-Compose to get:
+The Joukowski map
 \[
- {1\over z}{z + z\inv}
-.\]
+J(z)={1\over 2}\qty{z + z\inv}
+\]
+does this. For $z=re^{i\theta}$ with $r>1$ and $0<\theta<\pi$,
+\[
+\Im J(z)={1\over2}\qty{r-r\inv}\sin\theta>0,
+\]
+and $J$ is injective on $\theset{\abs z>1}$ with image $\CC\setminus[-1,1]$, so $J$ maps $\DD^c\intersect\HH$ bijectively onto $\HH$. Moreover $J(-1)=-1$, $J(i)=0$ and $J(1)=1$.
 
 :::
 
