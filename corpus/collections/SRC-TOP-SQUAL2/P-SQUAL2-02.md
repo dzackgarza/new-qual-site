@@ -14,8 +14,6 @@ audit:
 
 ::: {.problem}
 Let $(X,\tau)$ be compact Hausdorff, and let $\tau'$ be another topology on $X$ such that
-\[
-\tau'\subsetneq\tau.
-\]
+$$\tau'\subsetneq\tau.$$
 Show that $(X,\tau')$ is compact but not Hausdorff.
 :::
