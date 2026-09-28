@@ -56,7 +56,7 @@ unit, then $1=u^{-1}u\in I$. Thus no element of $M$ is a unit.
 
 Conversely, if $a\in A$ is not a unit, then $(a)$ is proper.
 Every proper ideal of a commutative unital ring is contained in
-a maximal ideal. To recall the argument, order the proper ideals
+a maximal ideal. Order the proper ideals
 containing $(a)$ by inclusion. The union of any nonempty chain is
 an ideal containing $(a)$ and remains proper, since membership
 of $1$ in that union would put $1$ in a member of the chain.
