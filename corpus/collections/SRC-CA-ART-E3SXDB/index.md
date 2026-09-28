@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-CA-ART-E3SXDB
 kind: collection
-title: Spring 2020 HW 2 (complex-analysis)
+title: Complex analysis homework 2, Spring 2020
 classification:
   areas:
   - complex-analysis
