@@ -20,34 +20,27 @@ Show that there exists a $k\dash$linear map $S:V\to V$ with $T\circ S = 0$ but $
 :::
 
 ::: {.solution}
-Suppose $T: V \to V$ is not invertible, then $\dim \im T < n$ and $\dim \ker T > 0$ by the Rank-Nullity theorem.
-This means that there is a nontrivial $\vector v \in \ker T$, and a nontrivial vector $\vector w \in \im(T)$, so let $S$ be the matrix formed by the outer product $\vector v \vector w^t$.
-Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector w$.
+Assume $T\neq 0$. Since $T$ is not invertible and $V$ is finite-dimensional, $\ker T\neq 0$ by rank-nullity, so there is a nonzero $\vector v \in \ker T$. Since $T\neq 0$, there is a nonzero $\vector w \in \im(T)$; fix $\vector x_0$ with $T\vector x_0 = \vector w$.
+Choose a linear functional $\varphi\colon V\to k$ with $\varphi(\vector w)=1$ (extend $\vector w$ to a basis of $V$), and define
+$$
+S\colon V\to V,
+\qquad
+S\vector x = \varphi(\vector x)\,\vector v.
+$$
 
 For every vector $\vector x$,
-
-\begin{align*}
-TS\vector x
-&= T\vector v \vector w^t \vector x  \\
-&= (T\vector v )\vector w^t \vector x  \\
-&= \vector 0 \vector w^t \vector x \\
-&= \mathbf{0_n} \vector x \\
-&= \vector 0
-,\end{align*}
-
-where $\mathbf{0_n}$ is the $n\times n$ matrix of all zeros.
-
-At $\vector x_0$,
-\begin{align*}
-ST\vector x_0
-&= S \vector w \\
-&= \vector v \vector w^t \vector w \\
-&= \inner{\vector w}{\vector w} \vector v \\
-&= \norm{\vector w}^2 \vector v \\
-&\neq \vector 0,
-\end{align*}
-
-since $\vector w \neq \vector 0$ and $\vector v \neq \vector 0$.
+$$
+TS\vector x = \varphi(\vector x)\,T\vector v = \vector 0,
+$$
+so $T\circ S = 0$. At $\vector x_0$,
+$$
+ST\vector x_0 = S\vector w = \varphi(\vector w)\,\vector v = \vector v \neq \vector 0,
+$$
+so $S\circ T\neq 0$.
 
 $\qed$
+:::
+
+::: {.remark}
+The statement needs $T\neq 0$: for $T=0$, $S\circ T=0$ for every $S$.
 :::
