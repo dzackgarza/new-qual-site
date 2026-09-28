@@ -31,7 +31,7 @@ Integrate $f$ over a keyhole contour with outer radius $R$ and inner radius $\rh
 
 ![image_2021-06-09-02-11-59](../../assets/figures/image_2021-06-09-02-11-59.png)
 
-Write $A\coloneqq\int_0^\infty{dx\over(1+x^2)^2}={\pi\over4}$.
+Write $I$ for the requested integral and $A\coloneqq\int_0^\infty{dx\over(1+x^2)^2}={\pi\over4}$.
 
 <1>1. The circles of radii $R$ and $\rho$ contribute $0$ in the limit.
 
