@@ -64,19 +64,14 @@ sends \(v\otimes w\) to \(1\), so \(V\otimes_{\mathbb Q}W\ne0\).
 The \(\mathbb Z\)-module \(\mathbb Q\) is torsion-free. It is not free: \(\mathbb Q\) is divisible, whereas a nonzero free abelian group is not divisible.
 :::
 
-<1>4. For part (d), take
+<1>4. For part (d), no example exists in a ring with identity; without identity, take
 \[
-R=M_2(\mathbb Q),
+R=2\mathbb Z,
 \qquad
-I=0.
+I=4\mathbb Z.
 \]
-Then \(I\) is maximal but not prime under the criterion that \(R/I\) be an integral domain.
 ::: {.proof}
-The ring \(M_2(\mathbb Q)\) is simple, so its only two-sided ideals are \(0\) and \(R\); hence \(0\) is maximal. But \(R\) has nonzero zero divisors, for example
-\[
-E_{11}E_{22}=0,
-\]
-so \(R/I\cong R\) is not an integral domain.
+In a ring with identity, a maximal two-sided ideal \(I\) is prime: if \(a,b\notin I\) and \(aRb\subseteq I\), then \(R=I+RaR\) and \(R=I+RbR\), so \(R=R\cdot R\subseteq I+RaR\,RbR\subseteq I+R(aRb)R\subseteq I\), a contradiction. In \(R=2\mathbb Z\), the ideal \(4\mathbb Z\) has index \(2\), so no ideal lies strictly between it and \(R\), and it is maximal. It is not prime, since \(2\cdot2=4\in I\) while \(2\notin I\).
 :::
 
 <1>5. For part (e), take

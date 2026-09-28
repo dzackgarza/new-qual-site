@@ -33,6 +33,11 @@ b. Instead, let $T: V \to V$ be a *nilpotent* linear transformation which has ex
 So the rational normal form is $$S_0 = \begin{pmatrix} 0&-2&0&0&0\\ 1&3&0&0&0\\ 0&0&0&0&2\\ 0&0&1&0&-5\\ 0&0&0&1&4 \end{pmatrix}$$
 
 **(b) i.** One — it must be a single Jordan block: $$\begin{pmatrix} 0&1&&&\\ &0&1&&\\ &&0&1&\\ &&&0&1\\ &&&&0 \end{pmatrix}$$
+A nilpotent $T$ is similar to a sum of Jordan blocks with eigenvalue $0$, one for each part of a partition of $5$, and the number of blocks is $\dim\ker T$. For the single block, with $Te_1=0$ and $Te_i=e_{i-1}$, every invariant subspace $W\neq0$ contains $e_1$, and induction on $\dim W$ applied to $W/\langle e_1\rangle$ under the single block of size $4$ shows $W=\ker T^{\dim W}$; so $\ker T^2$ is the only $2$-dimensional invariant subspace. Every other partition has at least two blocks:
+
+- With at least three blocks, $\dim\ker T\ge3$, and every $2$-dimensional subspace of $\ker T$ is invariant; there are more than one.
+- For the partition $4+1$, with blocks $e_1,\ldots,e_4$ and $f$, both $\ker T=\langle e_1,f\rangle$ and $\langle e_1,e_2\rangle$ are invariant.
+- For the partition $3+2$, with blocks $e_1,e_2,e_3$ and $f_1,f_2$, both $\langle e_1,e_2\rangle$ and $\langle f_1,f_2\rangle$ are invariant.
 
 **(b) ii.** The orbit size equals the index of the centralizer in $GL_5(\mathbb{F}_q)$.
 The centralizer of a regular nilpotent (single Jordan block) consists of invertible matrices of the form $$\begin{pmatrix} a&b&c&d&e\\ &a&b&c&d\\ &&a&b&c\\ &&&a&b\\ &&&&a \end{pmatrix}$$ which has order $(q-1)q^4$.

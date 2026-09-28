@@ -737,9 +737,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   - Proof gaps: P-AGXHWDISTINGOPEN mixes the directions of the
     sheaf map on $D(f)$. P-AGXHWREDUCED solves part (a) only.
     P-AGXVARSMOOTHMFLD step <1>4 proves one inclusion of
-    $T_pX=\ker dF_p$. P-B2P3P (b)(i) does not exclude the other partitions
-    of 5. P-C6SRA (d) calls $0\subset M_2(\QQ)$ maximal and not prime, which
-    holds only for completely prime ideals.
+    $T_pX=\ker dF_p$.
   - `STYLE-08` layout (fragment proofs, *Goal*, *Proof:*): P-JHUFA07ANE,
     P-4KTFN, P-PGDJ2, P-YBT6I, P-JHUMAY06ANH, P-JHUMAY06ANI, P-JHUMAY06ANK,
     P-JHUMAY11ANF, P-JHUFA05ANC, P-JHUFA06ANB, P-JHUSP05AND, P-JHUSP05ANE,
