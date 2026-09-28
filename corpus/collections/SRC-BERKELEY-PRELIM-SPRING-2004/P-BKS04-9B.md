@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-9B
 kind: problem
-title: UC Berkeley Spring 2004 prelim 9B
+title: Every automorphism of $S_4$ is inner, so $|\operatorname{Aut}(S_4)|=24$
 classification:
   areas: [prelim]
   topics: []
@@ -39,7 +39,7 @@ Since $\sigma$ fixes each $H_k$, it fixes every transposition.
 The transpositions generate $S_4$, hence $\sigma$ is the identity.
 
 Therefore every automorphism of $S_4$ is inner, and
-\[
-|\operatorname{Aut}(S_4)|=|S_4|=24.
-\]
+$$
+\abs{\Aut(S_4)}=\abs{S_4}=24.
+$$
 :::
