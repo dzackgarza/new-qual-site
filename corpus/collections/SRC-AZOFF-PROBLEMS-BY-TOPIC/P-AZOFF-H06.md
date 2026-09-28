@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let f be analytic in a domain D. Fix $z _ { 0 } \in D$ and let $w _ { 0 } = f ( z _ { 0 } )$ . Suppose $z _ { 0 }$ is a zero of finite multiplicity m for $\begin{array} { r } { f ( z ) - w _ { 0 } = 0 } \end{array}$ . Show that there exist $\delta > 0$ and $\epsilon > 0$ such that for each w with $0 < | w - w _ { 0 } | < \epsilon .$ , the equation $f ( z ) - w = 0$ has exactly m distinct solutions inside the disk $| z - z _ { 0 } | < \delta$
+Let $f$ be analytic in a domain $D$. Fix $z_0 \in D$ and let $w_0 = f(z_0)$. Suppose $z_0$ is a zero of finite multiplicity $m$ for $f(z) - w_0 = 0$. Show that there exist $\delta > 0$ and $\varepsilon > 0$ such that for each $w$ with $0 < \abs{w - w_0} < \varepsilon$, the equation $f(z) - w = 0$ has exactly $m$ distinct solutions inside the disk $\abs{z - z_0} < \delta$.
 :::
 
 ::: {.solution}
