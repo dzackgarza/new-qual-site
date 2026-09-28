@@ -7,14 +7,11 @@ topics:
 
 # Algebraic geometry
 
-The guide links definitions to the hypotheses, computations, examples, and counterexamples that make those definitions usable.
-A definition card records the notion, a theorem card records a reusable consequence, and example cards supply concrete models of the phenomena under discussion.
-
 ## The topics
 
 - [[algebraic-geometry/varieties/index|Varieties]], the classical dictionary between ideals and subsets of affine and projective space.
 
-- [[algebraic-geometry/sheaves/index|Sheaves]], what a presheaf fails to do and what sheafification fixes.
+- [[algebraic-geometry/sheaves/index|Sheaves]], the sheaf condition, stalks, sheafification, and exactness.
 
 - [[algebraic-geometry/schemes/index|Schemes]], $\Spec$ and $\Proj$, gluing, and how to recognise a scheme's properties from a ring.
 
@@ -22,13 +19,13 @@ A definition card records the notion, a theorem card records a reusable conseque
 
 - [[algebraic-geometry/sheaves-of-modules/index|Sheaves of modules]], quasicoherence, twisting, and line bundles.
 
-- [[algebraic-geometry/divisors/index|Divisors]], Weil against Cartier, class groups, and the Picard group as something you compute.
+- [[algebraic-geometry/divisors/index|Divisors]], Weil against Cartier, class groups, and Picard groups.
 
 - [[algebraic-geometry/cohomology/index|Cohomology]], Čech computations, Serre duality, Riemann–Roch.
 
 - [[algebraic-geometry/curves-and-surfaces/index|Curves and surfaces]], genus in its several senses, Riemann–Hurwitz, embeddings.
 
-- [[algebraic-geometry/toric/index|Toric varieties]], where fans make every question above computable.
+- [[algebraic-geometry/toric/index|Toric varieties]], the construction from a fan, the orbit-cone correspondence, and the fan and polytope criteria for smoothness, completeness, projectivity, divisor classes, and sections of line bundles.
 
 - [[algebraic-geometry/stacks-and-moduli/index|Stacks and moduli]], functors of points, the étale and fppf topologies, descent, Hilbert schemes, algebraic spaces and stacks.
 
@@ -36,8 +33,8 @@ A definition card records the notion, a theorem card records a reusable conseque
 
 - [[algebraic-geometry/syllabus|Sample syllabi]], topic lists from qualifying and oral examination syllabi.
 
-## Dependency order
+## Dependencies
 
-Varieties come before schemes because the scheme definitions refine distinctions already visible in the classical picture.
-Cohomology and curves come later because they use the sheaf and scheme machinery developed in the preceding sections.
-Cross-links allow a later computation to be followed backward to any prerequisite definition or theorem it uses.
+A scheme is a locally ringed space, so the scheme pages use sheaves of rings and their stalks.
+Sheaf cohomology is defined for sheaves of abelian groups on a topological space and computed on schemes for quasicoherent sheaves.
+The curves and surfaces pages use Riemann--Roch, Serre duality, and the intersection pairing defined through line bundles.
