@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU51RA3
 kind: problem
-title: "A Hoelder-type norm makes a Banach space of functions on [0,1]"
+title: "The $1/5$-Hölder norm $|f(0)|+[f]_{1/5}$ is complete on $[0,1]$"
 classification:
   areas:
   - real-analysis
