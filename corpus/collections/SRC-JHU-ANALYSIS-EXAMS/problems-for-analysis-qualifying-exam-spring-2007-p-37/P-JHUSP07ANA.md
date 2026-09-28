@@ -51,5 +51,3 @@ $q(z) = 7z^4$ vanishes only at $z = 0$, where it has a zero of order $4$ (the fa
 <1>5.
 :::
 :::
-
-(
