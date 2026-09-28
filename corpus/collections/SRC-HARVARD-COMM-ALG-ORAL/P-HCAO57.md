@@ -47,7 +47,8 @@ is a Gröbner basis of the elimination ideal
 I_\ell=I\cap k[x_{\ell+1},\ldots,x_n].
 \]
 
-<1>1. Why the theorem holds.
+<1>1. $G_\ell\subseteq I_\ell$, and the leading monomials of $G_\ell$ generate
+$\operatorname{in}(I_\ell)$.
 ::: {.proof}
 Take $0\ne f\in I_\ell$. Since $G$ is a Gröbner basis of $I$, some $g\in G$
 has $\operatorname{LM}(g)$ dividing $\operatorname{LM}(f)$. The latter contains
