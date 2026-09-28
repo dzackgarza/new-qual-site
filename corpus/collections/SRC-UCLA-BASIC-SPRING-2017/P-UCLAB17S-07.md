@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB17S-07
 kind: problem
-title: A nonlinear integral equation
+title: Existence and uniqueness for $f(x)=1-\bigl(\int_0^x tf(t)\,dt\bigr)^2$
 classification:
   areas:
   - prelim
