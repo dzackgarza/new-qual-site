@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NV44D
 kind: problem
-title: For $a> 0$, evaluate
+title: $\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}=\frac{\pi}{2\sqrt{a(a+1)}}$ for $a>0$
 classification:
   areas:
   - complex-analysis
