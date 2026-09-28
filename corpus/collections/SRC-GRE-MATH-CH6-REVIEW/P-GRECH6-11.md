@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-11
 kind: problem
-title: Subgroups of GL2R defined by determinant triangularity and trace
+title: Subgroups of $\GL(2,\RR)$ defined by determinant, triangularity, and trace
 classification:
   areas:
   - algebra
