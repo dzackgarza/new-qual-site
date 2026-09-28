@@ -26,7 +26,9 @@ Use pictures to describe the Sylow $3$-subgroups of $S_3,S_4,\ldots,S_9$.
 :::
 
 ::: {.solution}
-It is useful to picture the letters in blocks of three.
+Picture the letters in the blocks $\{1,2,3\}$, $\{4,5,6\}$, $\{7,8,9\}$. The
+subgroups below rotate letters within blocks and, for $S_9$, also rotate the
+blocks.
 
 <1>1. For $S_3,S_4,S_5$, a Sylow $3$-subgroup is cyclic of order $3$.
 ::: {.proof}
