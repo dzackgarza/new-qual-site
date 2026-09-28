@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-4B
 kind: problem
-title: Groups of order p squared q squared are not simple
+title: Groups of order $p^2q^2$ are not simple
 classification:
   areas:
   - prelim
@@ -27,11 +27,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(p\) and \(q\) be distinct primes.
+Let $p$ and $q$ be distinct primes.
 Show that every group of order
-\[
+$$
 p^2q^2
-\]
+$$
 is not simple.
 :::
 
