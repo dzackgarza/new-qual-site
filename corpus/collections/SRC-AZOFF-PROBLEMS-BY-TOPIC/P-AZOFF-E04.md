@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose f is analytic on the open unit disk.
+Suppose $f$ is analytic on the open unit disk.
 Determine, with proof, which of the following are possible.
 
 a) $\textstyle f ( { \frac { 1 } { n } } ) = ( - 1 ) ^ { n }$ for each integer $n > 1$
