@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-07
 kind: problem
-title: Build a Δ-complex and chain complex after identifying the vertices of a 2-simplex
+title: $\Delta$-complex structure and homology of a 2-simplex with its vertices identified
 classification:
   areas:
   - topology
