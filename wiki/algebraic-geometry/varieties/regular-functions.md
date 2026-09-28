@@ -9,20 +9,18 @@ topics:
 
 # Regular functions
 
-The dictionary sends a variety to a ring, but the ring it sends it to is only the ring of *global* functions, and on a projective variety that ring is $k$.
-What survives is the sheaf.
+On a projective variety over an algebraically closed field $k$, the ring of global regular functions is $k$; the sheaf $\OO_X$ records the regular functions on every open subset.
 
 [[D-VARREG]]
 
-The three rings attached to a variety record regularity at three scales: $A(X)$ consists of functions defined everywhere, $\OO_{X,p}$ of functions defined near $p$, and $k(X)$ of rational functions defined on some nonempty open set.
+$A(X)$ consists of the functions regular on all of $X$, $\OO_{X,p}$ of germs of functions regular near $p$, and $k(X)$ of rational functions regular on some nonempty open set.
 
-## The four classes, and why the charts matter
+## Affine, quasi-affine, projective, and quasi-projective varieties
 
 [[D-VARQAP]]
 
-Quasi-affine is the class that exists to be a counterexample: $\AA^2 \sm \ts{0}$ is quasi-affine and not affine, its ring of global regular functions is $k[x,y]$ — every function extends over a codimension-two hole — so the ring does not recover the variety.
-That is the shortest demonstration that $\Spec$ of the global functions is not an inverse to taking global functions outside the affine case, and it is the same failure that makes $\OO_X$ necessary rather than convenient.
+$\AA^2 \sm \ts{0}$ is quasi-affine and not affine: a function regular off a point of $\AA^2$ extends to $\AA^2$, so its ring of global regular functions is $k[x,y]$, and the inclusion $\AA^2\sm\ts0\to\AA^2=\Spec k[x,y]$ is not an isomorphism.
 
-Two regular functions that agree on a dense open set agree, which is the fact that lets a rational function be manipulated as if it were defined everywhere.
+Two regular functions that agree on a dense open set agree, so a rational function is determined by its restriction to any nonempty open set on which it is regular.
 
 [[PR-QX0VL]]
