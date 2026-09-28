@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-2A
 kind: problem
-title: Partition an interval into subintervals shorter than nearby values of a positive function
+title: Cousin's lemma for a positive gauge on $[a,b]$
 classification:
   areas:
   - prelim
@@ -26,9 +26,9 @@ audit:
 ::: {.problem}
 Suppose that $g$ is a positive real-valued function of a real variable, not necessarily continuous.
 If $a<b$ are real numbers, show that there is a finite sequence
-\[
+$$
 a=t_0<t_1<\cdots<t_n=b
-\]
+$$
 such that in each interval $[t_k,t_{k+1}]$ there is a point where the value of $g$ is greater than the length of the interval.
 :::
 
@@ -37,7 +37,7 @@ Call a finite partition
 $$
 a=t_0<t_1<\cdots<t_m=c
 $$
-of $[a,c]$ **good** if for every $0\leq k<m$ there is a tag
+of $[a,c]$ \dfn{good} if for every $0\leq k<m$ there is a tag
 $$
 \xi_k\in[t_k,t_{k+1}]
 $$
