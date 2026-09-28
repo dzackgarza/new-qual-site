@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-7NRBE
 kind: problem
-title: The size of the Stone-Cech compactification of the positive integers
+title: Cardinality of the Stone--Čech compactification of $\ZZ_+$
 classification:
   areas:
   - topology
@@ -23,8 +23,6 @@ Show that $\beta(\mathbb{Z}_+)$ has cardinality at least as great as $I^I$, wher
 :::
 
 ::: {.solution}
-**Goal:** Prove that the Stone-Čech compactification $\beta(\mathbb{Z}_+)$ has cardinality $|\beta(\mathbb{Z}_+)| \ge |I^I| = 2^\mathfrak{c}$, where $I = [0, 1]$.
-
 <1>1. Properties of the product space $I^I$:
     *Proof:*
     <2>1. By Tychonoff's Theorem, $I^I = [0, 1]^{[0, 1]}$ is a compact Hausdorff space.
@@ -48,10 +46,10 @@ Show that $\beta(\mathbb{Z}_+)$ has cardinality at least as great as $I^I$, wher
 
 <1>3. Cardinality comparison:
     *Proof:*
-    <2>1. The existence of a surjective function $\beta f: \beta(\mathbb{Z}_+) \twoheadrightarrow I^I$ immediately implies:
+    <2>1. Since $\beta f: \beta(\mathbb{Z}_+) \to I^I$ is surjective by step <1>2,
         $$|\beta(\mathbb{Z}_+)| \ge |I^I| = 2^\mathfrak{c}.$$
     <2>2. Furthermore, since $\beta(\mathbb{Z}_+)$ embeds into $[0, 1]^{C(\mathbb{Z}_+, [0, 1])}$ and $|C(\mathbb{Z}_+, [0, 1])| = \mathfrak{c}^{\aleph_0} = \mathfrak{c}$, we have $|\beta(\mathbb{Z}_+)| \le \mathfrak{c}^\mathfrak{c} = 2^\mathfrak{c}$, so $|\beta(\mathbb{Z}_+)| = |I^I| = 2^\mathfrak{c}$.
 
-<1>4. Conclusion:
-    $|\beta(\mathbb{Z}_+)| \ge |I^I|$. Q.E.D.
+<1>4. Q.E.D.
+    Step <1>3 gives $|\beta(\mathbb{Z}_+)| \ge |I^I|$.
 :::
