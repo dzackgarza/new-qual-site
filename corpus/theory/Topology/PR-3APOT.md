@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-3APOT
 kind: proposition
 title: $\pi_1$ of a wedge sum
-slogan: 'Under the usual local hypotheses, wedge sums turn fundamental groups into free products.'
+slogan: 'If each basepoint is a deformation retract of an open neighborhood, $\pi_1$ of a wedge of path-connected spaces is the free product of their fundamental groups.'
 classification:
   areas:
   - topology
