@@ -299,6 +299,6 @@ d(0,Y)=1
 $$
 and every point of $Y$ has norm strictly larger than $1$, so the distance
 is not attained. Taking $X=\{0\}$ also disproves the source's printed part
-(2). The corrected statement above adds properness of the ambient metric
-space.
+(2). The problem is corrected by assuming that the ambient metric space $M$
+is proper.
 :::
