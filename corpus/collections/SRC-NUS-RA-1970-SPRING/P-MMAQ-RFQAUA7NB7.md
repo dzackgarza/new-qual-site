@@ -44,7 +44,7 @@ For any partition $0 = x_0 < \dots < x_k = 1$, all increments $\abs{f(x_j) - f(x
 :::
 <2>3. $f$ is not continuous at $1/2$.
 ::: {.proof}
-$\lim_{x \to 1/2^-} f(x) = 0 \neq 1 = f(1/2)$.
+$\lim_{x \to 1/2^+} f(x) = 1 \neq 0 = f(1/2)$.
 :::
 <2>4. Q.E.D.
 ::: {.proof}
