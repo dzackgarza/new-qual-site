@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that x is a smooth real-valued function of the real number t, satisfying $d x / d t \leq$ $b ( t ) x ( t )$ for some continuous function b. Prove that if $s \leq t$ then $\begin{array} { r } { x ( t ) \leq x ( s ) \exp { \int _ { s } ^ { t } b ( t ) d t } . } \end{array}$
+Suppose that $x$ is a smooth real-valued function of the real number $t$, satisfying $dx/dt\le b(t)x(t)$ for some continuous function $b$. Prove that if $s\le t$ then $x(t)\le x(s)\exp\int_s^t b(t)\,dt$.
 :::
 
 ::: {.solution}
