@@ -93,7 +93,7 @@ Without uniform convergence of the derivatives, a uniform limit of polynomials c
 
 ::: {.example title="A differentiable function need not have a continuous derivative"}
 $f(x)\coloneqq x^2\sin(1/x)$ for $x\neq0$ and $f(0)\coloneqq0$ is differentiable on $\RR$, and $f'(x) = 2x\sin(1/x)-\cos(1/x)$ has no limit at $0$.
-Conversely, $\abs x$ is continuous and not differentiable at $0$, and the Weierstrass function is continuous and differentiable nowhere.
+A continuous function need not be differentiable: $\abs x$ is continuous and not differentiable at $0$, and the Weierstrass function is continuous and differentiable nowhere.
 
 :::
 
