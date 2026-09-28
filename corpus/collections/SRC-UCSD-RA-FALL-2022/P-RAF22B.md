@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF22B
 kind: problem
-title: "In L^p on a finite measure space, pointwise convergence gives: norm convergence iff norms converge"
+title: "For $f_n\\to f$ a.e. on a finite measure space, $\\|f_n-f\\|_p\\to0$ iff $\\|f_n\\|_p\\to\\|f\\|_p$"
 classification:
   areas:
   - real-analysis
@@ -34,7 +34,7 @@ Prove that $\|f_n - f\|_p \to 0$ if and only if $\|f_n\|_p \to \|f\|_p$.
 :::
 
 ::: {.solution}
-<1>1. Prove the easy implication.
+<1>1. If $\|f_n-f\|_p\to0$, then $\|f_n\|_p\to\|f\|_p$.
 ::: {.proof}
 If
 \[
@@ -51,7 +51,7 @@ Hence
 \]
 :::
 
-<1>2. Show that the $p$th powers converge in $L^1$.
+<1>2. If $\|f_n\|_p\to\|f\|_p$, then $|f_n|^p\to|f|^p$ in $L^1$.
 ::: {.proof}
 Assume now that
 \[
@@ -88,7 +88,7 @@ we obtain
 \]
 :::
 
-<1>3. Deduce uniform integrability of the difference powers.
+<1>3. Under the hypothesis of step <1>2, the functions $h_n\coloneqq|f_n-f|^p$ are uniformly integrable.
 ::: {.proof}
 Convergence $g_n\to g$ in $L^1$ implies that the family $\{g_n:n\ge1\}$ is uniformly integrable. Indeed, given $\varepsilon>0$, first choose $N$ so that
 \[
@@ -121,7 +121,7 @@ h_n\le2^{p-1}(g_n+g)
 shows that $(h_n)$ is uniformly integrable as well.
 :::
 
-<1>4. Combine Egorov with uniform integrability.
+<1>4. Under the hypothesis of step <1>2, $\|f_n-f\|_p\to0$.
 ::: {.proof}
 We have $h_n\to0$ almost everywhere. Fix $\varepsilon>0$. By uniform integrability, choose $\delta>0$ such that
 \[
