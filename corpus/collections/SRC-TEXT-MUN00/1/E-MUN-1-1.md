@@ -29,7 +29,7 @@ Check the distributive laws for $\cup$ and $\cap$ and DeMorgan's laws.
 :::
 
 ::: {.solution}
-For any element \(x\), membership in a union corresponds to logical ``or'' and membership in an intersection corresponds to logical ``and''. Hence
+For any element \(x\), membership in a union corresponds to logical "or" and membership in an intersection corresponds to logical "and". Hence
 \[
 \begin{aligned}
 x\in A\cap(B\cup C)
