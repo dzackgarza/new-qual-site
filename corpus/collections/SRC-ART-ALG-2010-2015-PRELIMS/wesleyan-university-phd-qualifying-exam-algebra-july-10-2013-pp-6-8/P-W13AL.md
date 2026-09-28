@@ -91,7 +91,7 @@ $\gamma^2=11-4\sqrt6$, so
 $(\gamma^2-11)^2=96$. Expanding gives
 $\gamma^4-22\gamma^2+25=0$.
 
-To prove minimality, rather than just annihilation, note that
+The element $\gamma$ has degree $4$ over $\mathbb Q$. Indeed,
 $$
 (2\sqrt2-\sqrt3)(2\sqrt2+\sqrt3)=8-3=5.
 $$
