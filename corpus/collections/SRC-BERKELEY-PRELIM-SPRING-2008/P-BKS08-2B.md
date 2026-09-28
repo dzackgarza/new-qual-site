@@ -27,9 +27,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let \(G\) be a finite abelian group, and let \(c\) be the product of all elements of \(G\). Show that \(c^2=1\).
+(a) Let $G$ be a finite abelian group, and let $c$ be the product of all elements of $G$. Show that $c^2=1$.
 
-(b) Let \(F\) be a finite field, and let \(c\) be the product of all nonzero elements of \(F\). Show that \(c=-1\).
+(b) Let $F$ be a finite field, and let $c$ be the product of all nonzero elements of $F$. Show that $c=-1$.
 :::
 
 ::: {.solution}
