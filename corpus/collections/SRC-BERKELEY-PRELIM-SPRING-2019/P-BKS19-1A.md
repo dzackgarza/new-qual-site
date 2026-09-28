@@ -18,12 +18,12 @@ audit:
 
 ::: {.problem}
 Let $y$ be a solution of
-\[
+$$
 y'''-y=0
-\]
+$$
 such that $y(t)\to0$ as $t\to\infty$.
 Show that
-\[
+$$
 y(0)+y'(0)+y''(0)=0.
-\]
+$$
 :::
