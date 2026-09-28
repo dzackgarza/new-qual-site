@@ -53,7 +53,7 @@ Let $(x_n)_{n=1}^\infty$ be an arbitrary sequence in $X$.
    Then for all $j, \ell \geq m$, $d(z_j, z_\ell) < \varepsilon$.
    Thus $(z_j)_{j=1}^\infty$ is a Cauchy sequence in $X$.
 
-   Since $X$ is **complete**, the Cauchy sequence $(z_j)$ converges to some limit point $x^* \in X$.
+   Since $X$ is complete, the Cauchy sequence $(z_j)$ converges to some $x^* \in X$.
 
 4. **Conclusion:** $(z_j)$ is a subsequence of the original sequence $(x_n)$ that converges in $X$.
    Thus, every sequence in $X$ has a convergent subsequence, which proves that $X$ is sequentially compact, and therefore compact.
