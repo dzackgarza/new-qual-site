@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-07
 kind: problem
-title: Irreducibility of $x^4+x^3+x^2+6x+1$ over $\mathbb Q$
+title: Irreducibility of $x^4+x^3+x^2+6x+1$ over $\QQ$
 classification:
   areas:
   - prelim
