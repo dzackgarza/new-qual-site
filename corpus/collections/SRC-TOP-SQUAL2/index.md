@@ -21,12 +21,12 @@ source:
     - P-SQUAL2-02
     - P-SQUAL2-03
     - id: P-T07A2
-      comment: Section A Problem 4; repeated exactly as the canonical connected locally path-connected problem
+      comment: Section A Problem 4
   - name: Section B — Homotopy and Homology
     problems:
     - P-SQUAL2-05
     - id: P-OMOPR
-      comment: Section B Problem 6; repeated exactly as the canonical $\mathbb{RP}^2\to S^1$ null-homotopy problem
+      comment: Section B Problem 6
     - P-SQUAL2-07
     - P-SQUAL2-08
   date:
