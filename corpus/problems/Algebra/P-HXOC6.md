@@ -37,7 +37,7 @@ is an isometry, then there exists an isometry
 \]
 whose restriction to $U$ is $f$.
 
-A standard proof proceeds by induction on $\dim U$, using reflections in anisotropic vectors and hyperbolic pairs to extend the isometry one vector at a time. The nondegeneracy of $V$ is the hypothesis that makes the extension possible even when the subspace $U$ itself is degenerate.
+A standard proof proceeds by induction on $\dim U$, using reflections in anisotropic vectors and hyperbolic pairs to extend the isometry one vector at a time. The subspace $U$ may be degenerate; only $V$ is assumed nondegenerate.
 
 **Witt cancellation theorem.** If
 \[
