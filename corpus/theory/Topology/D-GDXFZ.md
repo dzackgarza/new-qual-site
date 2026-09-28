@@ -26,7 +26,7 @@ Let $f\colon X\to Y$ be a continuous map.
 
 (b) If $X$ is Hausdorff and $Y$ is Hausdorff and locally compact, then $f$ is proper if and only if $f$ is universally closed: for every topological space $Z$, the map $f\times\id_Z\colon X\times Z\to Y\times Z$ is a closed map.
 
-(c) If $X$ is a metric space, then $f$ is proper if and only if for every sequence $(x_k)_{k\geq1}$ in $X$ such that each compact subset of $X$ contains $x_k$ for only finitely many $k$, each compact subset of $Y$ contains $f(x_k)$ for only finitely many $k$.
+(c) If $X$ is a metric space and $Y$ is Hausdorff, then $f$ is proper if and only if for every sequence $(x_k)_{k\geq1}$ in $X$ such that each compact subset of $X$ contains $x_k$ for only finitely many $k$, each compact subset of $Y$ contains $f(x_k)$ for only finitely many $k$.
 :::
 
 ::: {.concept}
