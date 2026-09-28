@@ -23,9 +23,6 @@ $$
 $$
 
 where the right-hand side is the finite sum taken over those $k \in \mathbb { Z } , k \neq 0$ , with $k ( 3 k + 1 ) / 2 \leq n$ . Use this formula to calculate $p ( 5 ) , p ( 6 ) , p ( 7 ) , p ( 8 ) , p ( 9 )$ , and $p ( 1 0 )$ ; check that $p ( 1 0 ) = 4 2$
-
-The next two exercises give elementary results related to the asymptotics of the partition function.
-More refined statements can be found in Appendix A.
 :::
 
 ::: {.solution}
