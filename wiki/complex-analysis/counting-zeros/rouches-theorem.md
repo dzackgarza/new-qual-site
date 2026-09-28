@@ -21,7 +21,7 @@ Adding to $M$ a function $m$ with $\abs{m} < \abs{M}$ on the boundary curve does
 ## Forms of the hypothesis
 
 ::: {.remark}
-The following are the same theorem for holomorphic functions on a neighborhood of the closed region bounded by $\gamma$.
+Let $f$, $g$, $M$, $m$ be holomorphic on a neighborhood of the closed region bounded by $\gamma$, and write $Z_h$ for the number of zeros of $h$ inside $\gamma$.
 
 - For $f = M + m$ with $\abs{m} < \abs{M}$ on $\gamma$, $Z_f = Z_M$; the theorem gives a count when $Z_M$ is known.
 
