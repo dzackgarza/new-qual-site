@@ -39,113 +39,55 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part 1: Fixed-point-free elements in transitive actions:
-<2>1. By Burnside’s Lemma (orbit-counting formula), the number of orbits of the transitive action on $X$ is:
-\[
-|X/G| = \frac{1}{|G|} \sum_{g \in G} |X^g| = 1 \implies \sum_{g \in G} |X^g| = |G|.
-\]
+<1>1. A finite group acting transitively on a set $X$ with $|X|\ge2$ has an element with no fixed point.
+
 ::: {.proof}
-Burnside's Lemma.
-:::
-<2>2. The identity element $e$ fixes all points of $X$, so $|X^e| = |X| \ge 2$.
-::: {.proof}
-hypothesis $|X| \ge 2$.
-:::
-<2>3. If every $g \in G$ had at least one fixed point ($|X^g| \ge 1$), then:
-\[
-\sum_{g \in G} |X^g| = |X^e| + \sum_{g \neq e} |X^g| \ge |X| + (|G| - 1) \ge 2 + |G| - 1 = |G| + 1 > |G|,
-\]
-which contradicts <2>1.
-::: {.proof}
-strict inequality on finite sums.
-:::
-<2>4. Therefore there exists at least one $g \in G$ with $|X^g| = 0$ (fixing no points).
-::: {.proof}
-proof by contradiction.
+For $g\in G$ let $X^g$ be its fixed-point set.
+By Burnside's orbit-counting lemma, $1=|X/G|=\frac1{|G|}\sum_{g\in G}|X^g|$, so $\sum_{g}|X^g|=|G|$.
+If every $g$ had $|X^g|\ge1$, then, since $|X^e|=|X|\ge2$,
+$$\sum_{g\in G}|X^g|\ge 2+(|G|-1)=|G|+1,$$
+a contradiction.
 :::
 
-<1>2. Part 2: Subgroups $H \le \mathbb{Z}^3$ with $\mathbb{Z}^3/H \cong K$:
-<2>1. **Case $K \cong \mathbb{Z}_p \oplus \mathbb{Z}_p$:**
-Surjective homomorphisms $\mathbb{Z}^3 \twoheadrightarrow \mathbb{F}_p^2$ factor through $\mathbb{F}_p^3$, and their kernels correspond bijectively to 2-dimensional subspaces of $\mathbb{F}_p^3$.
-The number of 2-dimensional subspaces in $\mathbb{F}_p^3$ is given by the Gaussian binomial coefficient:
-\[
-\binom{3}{2}_p = \frac{(p^3 - 1)(p^3 - p)}{(p^2 - 1)(p^2 - p)} = \frac{p^3 - 1}{p - 1} = p^2 + p + 1.
-\]
+<1>2. The subgroups $H\le\ZZ^3$ with $\ZZ^3/H\cong K$ number $p^2+p+1$ for $K\cong(\ZZ/p\ZZ)^2$ and $p^2(p^2+p+1)$ for $K\cong\ZZ/p^2\ZZ$.
+
 ::: {.proof}
-subspace Grassmannian over $\mathbb{F}_p$.
-:::
-<2>2. **Case $K \cong \mathbb{Z}_{p^2}$:**
-Surjective homomorphisms $\mathbb{Z}^3 \twoheadrightarrow \mathbb{Z}_{p^2}$ correspond to triples $(a_1, a_2, a_3) \in (\mathbb{Z}_{p^2})^3$ not all in $p\mathbb{Z}_{p^2}$, giving $(p^2)^3 - p^3 = p^6 - p^3$ surjective maps.
-Each kernel corresponds to an orbit under $\operatorname{Aut}(\mathbb{Z}_{p^2})$ of size $\phi(p^2) = p(p-1)$.
-Thus the number of such subgroups is:
-\[
-\frac{p^6 - p^3}{p(p - 1)} = \frac{p^3(p^3 - 1)}{p(p - 1)} = p^2(p^2 + p + 1) = p^4 + p^3 + p^2.
-\]
-::: {.proof}
-counting surjective homomorphisms up to automorphism.
+These are the two abelian groups of order $p^2$.
+If $\ZZ^3/H\cong(\ZZ/p\ZZ)^2$, then $p\ZZ^3\subseteq H$ and $H/p\ZZ^3$ is a line in $\ZZ^3/p\ZZ^3\cong\FF_p^3$; conversely each line gives such an $H$.
+There are $(p^3-1)/(p-1)=p^2+p+1$ lines.
+
+If $\ZZ^3/H\cong\ZZ/p^2\ZZ$, then $H$ is the kernel of a surjection $\ZZ^3\to\ZZ/p^2\ZZ$, and two surjections have the same kernel exactly when they differ by an automorphism of $\ZZ/p^2\ZZ$.
+A homomorphism is a triple in $(\ZZ/p^2\ZZ)^3$, surjective exactly when some entry is a unit, so there are $p^6-p^3$ surjections.
+Dividing by $|\Aut(\ZZ/p^2\ZZ)|=p(p-1)$ gives $p^2(p^2+p+1)$ kernels.
 :::
 
-<1>3. Part 3: Groups of order $pq$ ($p < q$):
-<2>1. By Sylow’s Third Theorem, $n_q \mid p \implies n_q \in \{1, p\}$ and $n_q \equiv 1 \pmod q$.
-Since $p < q$, $p \not\equiv 1 \pmod q$, so $n_q = 1$.
-Thus the Sylow $q$-subgroup $Q \trianglelefteq G$ is normal, non-trivial, and proper.
+<1>3. If $|G|=pq$ with $p<q$ primes, then the Sylow $q$-subgroup $Q$ is normal; if moreover $q\not\equiv1\pmod p$, then $G\cong\ZZ/pq\ZZ$.
+
 ::: {.proof}
-Sylow's Theorem.
-:::
-<2>2. If additionally $q \not\equiv 1 \pmod p$, then $n_p \mid q \implies n_p \in \{1, q\}$ and $n_p \equiv 1 \pmod p$, forcing $n_p = 1$.
-::: {.proof}
-$q \not\equiv 1 \pmod p$.
-:::
-<2>3. Since $P, Q \trianglelefteq G$ with $P \cap Q = \{1\}$ and $|PQ| = pq$, $G \cong P \times Q \cong \mathbb{Z}_p \times \mathbb{Z}_q \cong \mathbb{Z}_{pq}$, which is cyclic and abelian.
-::: {.proof}
-direct product of normal subgroups with trivial intersection.
+$n_q\mid p$ and $n_q\equiv1\pmod q$ with $p<q$ force $n_q=1$.
+If $q\not\equiv1\pmod p$, then $n_p\mid q$ and $n_p\equiv1\pmod p$ force $n_p=1$, so the Sylow $p$-subgroup $P$ is normal too.
+Then $P\cap Q=1$, $G=PQ$, and for $a\in P$, $b\in Q$ the commutator $aba^{-1}b^{-1}$ lies in $P\cap Q=1$.
+So $G\cong P\times Q\cong\ZZ/p\ZZ\times\ZZ/q\ZZ\cong\ZZ/pq\ZZ$.
 :::
 
-<1>4. Part 4: Smallest prime divisor and central normal subgroup:
-<2>1. Conjugation induces a homomorphism $\theta: G \to \operatorname{Aut}(H) \cong \operatorname{Aut}(\mathbb{Z}_p) \cong \mathbb{Z}_{p-1}$.
+<1>4. If $p$ is the smallest prime dividing $|G|$ and $H\trianglelefteq G$ has order $p$, then $H\subseteq Z(G)$.
+
 ::: {.proof}
-$H \trianglelefteq G$ and groups of prime order are cyclic.
-:::
-<2>2. By the First Isomorphism Theorem, $|G/\ker(\theta)|$ divides $|G|$ and divides $|\operatorname{Aut}(H)| = p - 1$.
-::: {.proof}
-order of subgroup divides order of group.
-:::
-<2>3. Since $p$ is the smallest prime dividing $|G|$, $\gcd(|G|, p - 1) = 1$. Thus $|G/\ker(\theta)| = 1 \implies \ker(\theta) = G$.
-::: {.proof}
-no prime $< p$ divides $|G|$.
-:::
-<2>4. Thus $\theta(g) = \operatorname{id}_H$ for all $g \in G$, meaning $ghg^{-1} = h$ for all $h \in H$, so $H \subseteq Z(G)$.
-::: {.proof}
-definition of central elements.
+Conjugation gives a homomorphism $\theta\colon G\to\Aut(H)\cong(\ZZ/p\ZZ)^\times$, a group of order $p-1$.
+$|\operatorname{im}\theta|$ divides $|G|$ and $p-1$; every prime factor of $p-1$ is less than $p$, so $\gcd(|G|,p-1)=1$ and $\theta$ is trivial.
+Thus every element of $G$ commutes with every element of $H$.
 :::
 
-<1>5. Part 5: Cyclic Sylow 2-subgroups and index-2 quotients:
-<2>1. Let $|G| = 2^k m$ with $m$ odd, and $P = \langle x \rangle \cong \mathbb{Z}_{2^k}$.
-Consider the regular permutation representation $\lambda: G \to S_{|G|}$ where $\lambda(g)(y) = gy$.
+<1>5. If $|G|=2^km$ with $k\ge1$, $m$ odd, and $P=\langle x\rangle$ is a cyclic Sylow $2$-subgroup, then $\lambda_x\colon y\mapsto xy$ has sign $-1$ and $G$ has a quotient of order $2$.
+
 ::: {.proof}
-Cayley representation.
+The orbits of $\langle x\rangle$ acting on $G$ by left multiplication are the right cosets $Py$, each a cycle of $\lambda_x$ of length $2^k$.
+There are $m$ of them, each of sign $(-1)^{2^k-1}=-1$, so $\operatorname{sgn}(\lambda_x)=(-1)^m=-1$.
+The left regular representation $\lambda\colon G\to\operatorname{Sym}(G)$ is a homomorphism, so $\operatorname{sgn}\circ\lambda\colon G\to\{\pm1\}$ is a homomorphism, surjective since it sends $x$ to $-1$.
+Its kernel has index $2$.
 :::
-<2>2. The permutation $\lambda(x)$ decomposes into $m = [G : P]$ disjoint cycles of length $2^k$ (the right cosets of $P$).
-::: {.proof}
-orbit-stabilizer theorem for cyclic action on cosets.
-:::
-<2>3. The sign of a cycle of even length $2^k$ is $(-1)^{2^k - 1} = -1$.
-Since there are $m$ such cycles and $m$ is odd:
-\[
-\operatorname{sgn}(\lambda(x)) = (-1)^m = -1.
-\]
-::: {.proof}
-sign of product of disjoint cycles.
-:::
-<2>4. The composition $\operatorname{sgn} \circ \lambda: G \to \{\pm 1\}$ is a surjective group homomorphism.
-Its kernel $N = \ker(\operatorname{sgn} \circ \lambda)$ is a normal subgroup of index $2$, so $G/N \cong \mathbb{Z}_2$.
-::: {.proof}
-First Isomorphism Theorem.
 :::
 
-<1>6. Conclusion:
-All five statements are established. Q.E.D.
-::: {.proof}
-<1>1 through <1>5.
-:::
+::: {.remark}
+In the last part, the relevant permutation is $y\mapsto xy$, and its sign is $-1$, not $1$; the argument needs $|G|$ even, since for $|G|$ odd the Sylow $2$-subgroup is trivial and $G$ has no quotient of order $2$.
 :::
