@@ -60,6 +60,6 @@ This follows by taking the alternating sum of the dimensions in the finite long 
 :::
 
 ::: {.remark}
-For sufficiently large $n$, Serre vanishing gives $P_{\mcf,L}(n)=h^0(X,\mcf\otimes L^{\otimes n})$ [@Har10a, Theorem III.5.2].
-The Euler-characteristic identity holds for every integer $n$; equality with the dimension of global sections is the eventual assertion.
+For sufficiently large $n$, Serre vanishing gives $H^i(X,\mcf(n))=0$ for all $i>0$, so $P_{\mcf,L}(n)=h^0(X,\mcf(n))$ [@Har10a, Theorem III.5.2].
+For small $n$ this can fail: on $X=\PP^1$ with $L=\OO(1)$, $P_{\OO_X,L}(n)=n+1$, so $P_{\OO_X,L}(-2)=-1$, while $h^0(\PP^1,\OO(-2))=0$.
 :::
