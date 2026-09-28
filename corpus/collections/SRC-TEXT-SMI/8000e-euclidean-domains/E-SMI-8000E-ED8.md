@@ -53,7 +53,7 @@ $$
 <1>1. Realize $M$ as the cokernel of a map between finite free modules.
 ::: {.proof}
 Because $R$ is Euclidean, every submodule of a finite free module is finitely
-generated. Hence
+generated ([[E-SMI-8000E-ED2]]). Hence
 $$
 N=\ker\pi\subseteq R^m
 $$
@@ -75,8 +75,8 @@ $$
 
 <1>2. Diagonalize the presentation map without changing its cokernel up to isomorphism.
 ::: {.proof}
-By the preceding matrix-diagonalization exercise over a Euclidean domain,
-there are automorphisms
+A matrix over a Euclidean domain is diagonalized by invertible row and column
+operations ([[E-SMI-8000E-ED5]]), so there are automorphisms
 $$
 g:R^n\xrightarrow{\sim}R^n,
 \qquad
