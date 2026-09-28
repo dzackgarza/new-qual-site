@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF85-9
 kind: problem
-title: Maximize Euclidean norm on a quadratic level set
+title: Maximum Euclidean norm on the ellipsoid $v^TAv=1$
 classification:
   areas: [prelim]
   topics: []
