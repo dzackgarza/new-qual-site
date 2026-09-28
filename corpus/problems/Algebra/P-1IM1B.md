@@ -28,73 +28,30 @@ Let $M_n(F)$ be the space of $n \times n$ matrices over a field $F$.
 :::
 
 ::: {.solution}
-<1>1. Symmetric matrices $\operatorname{Sym}_n(F) = \{A \in M_n(F) : A^t = A\}$ form a subspace: <2>1. The zero matrix satisfies $0^t = 0$, so $0 \in \operatorname{Sym}_n(F)$.
+Let $\operatorname{Sym}_n(F)=\{A:A^t=A\}$ and $\operatorname{Skew}_n(F)=\{A:A^t=-A\}$.
+
+<1>1. $\operatorname{Sym}_n(F)$ and $\operatorname{Skew}_n(F)$ are subspaces of $M_n(F)$.
+
 ::: {.proof}
-transpose of zero matrix is zero.
-:::
-<2>2. Let $A, B \in \operatorname{Sym}_n(F)$ and $c \in F$.
-By the linearity of the transpose map:
-\[
-(cA + B)^t = c A^t + B^t = cA + B.
-\]
-::: {.proof}
-$(A + B)^t = A^t + B^t$ and $(cA)^t = c A^t$.
-:::
-<2>3. Thus $cA + B \in \operatorname{Sym}_n(F)$, so $\operatorname{Sym}_n(F)$ is a subspace of $M_n(F)$.
-::: {.proof}
-subspace criterion.
+Both contain $0$.
+For $A,B$ in one of them, $c\in F$, and $\varepsilon=\pm1$ with $A^t=\varepsilon A$, $B^t=\varepsilon B$, linearity of the transpose gives $(cA+B)^t=cA^t+B^t=\varepsilon(cA+B)$.
 :::
 
-<1>2. Skew-symmetric matrices $\operatorname{Skew}_n(F) = \{A \in M_n(F) : A^t = -A\}$ form a subspace: <2>1. The zero matrix satisfies $0^t = 0 = -0$, so $0 \in \operatorname{Skew}_n(F)$.
+<1>2. If $\operatorname{char}(F)\neq2$, then $M_n(F)=\operatorname{Sym}_n(F)+\operatorname{Skew}_n(F)$.
+
 ::: {.proof}
-transpose of zero matrix.
-:::
-<2>2. Let $A, B \in \operatorname{Skew}_n(F)$ and $c \in F$.
-By the linearity of the transpose map:
-\[
-(cA + B)^t = c A^t + B^t = c(-A) + (-B) = -(cA + B).
-\]
-::: {.proof}
-linearity of transpose.
-:::
-<2>3. Thus $cA + B \in \operatorname{Skew}_n(F)$, so $\operatorname{Skew}_n(F)$ is a subspace of $M_n(F)$.
-::: {.proof}
-subspace criterion.
+For $M\in M_n(F)$, $M=\frac{M+M^t}2+\frac{M-M^t}2$, and $(M^t)^t=M$ shows that the first summand is symmetric and the second skew-symmetric.
 :::
 
-<1>3. Direct sum decomposition when $\operatorname{char}(F) \neq 2$: <2>1. For any matrix $M \in M_n(F)$, write:
-\[
-M = \frac{M + M^t}{2} + \frac{M - M^t}{2}.
-\]
+<1>3. If $\operatorname{char}(F)\neq2$, then $\operatorname{Sym}_n(F)\cap\operatorname{Skew}_n(F)=0$.
+
 ::: {.proof}
-algebraic identity using $2 \neq 0$ in $F$.
-:::
-<2>2. Let $S = \frac{M + M^t}{2}$ and $K = \frac{M - M^t}{2}$.
-Compute $S^t = \frac{M^t + (M^t)^t}{2} = \frac{M^t + M}{2} = S \in \operatorname{Sym}_n(F)$.
-Compute $K^t = \frac{M^t - (M^t)^t}{2} = \frac{M^t - M}{2} = -K \in \operatorname{Skew}_n(F)$.
-::: {.proof}
-involution property $(M^t)^t = M$.
-:::
-<2>3. Thus $M_n(F) = \operatorname{Sym}_n(F) + \operatorname{Skew}_n(F)$.
-::: {.proof}
-<2>1 and <2>2. <2>4. Suppose $X \in \operatorname{Sym}_n(F) \cap \operatorname{Skew}_n(F)$.
-:::
-Then $X = X^t = -X$, which gives $2X = 0$.
-Since $\operatorname{char}(F) \neq 2$, $2$ is invertible in $F$, so $X = 0$.
-::: {.proof}
-$2X = 0 \implies X = 0$.
-:::
-<2>5. Thus $\operatorname{Sym}_n(F) \cap \operatorname{Skew}_n(F) = \{0\}$, so the sum is direct:
-\[
-M_n(F) = \operatorname{Sym}_n(F) \oplus \operatorname{Skew}_n(F).
-\]
-::: {.proof}
-<2>3 and <2>4.
+If $X=X^t=-X$, then $2X=0$, and $2$ is invertible in $F$, so $X=0$.
 :::
 
-<1>4. Conclusion: Both symmetric and skew-symmetric matrices are closed under sums and scalar multiplication, and decompose $M_n(F)$ as a direct sum when $\operatorname{char}(F) \neq 2$.
+<1>4. Q.E.D.
+
 ::: {.proof}
-<1>1, <1>2, and <1>3.
+Step <1>1 gives parts 1 and 2, and steps <1>2 and <1>3 give part 3.
 :::
-Q.E.D.
 :::
