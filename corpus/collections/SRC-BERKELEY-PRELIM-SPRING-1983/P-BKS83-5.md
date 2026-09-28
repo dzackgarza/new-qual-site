@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS83-5
 kind: problem
-title: Solve $y'=\sqrt{y(y-2)}$ with $y(0)=0$
+title: All solutions of $y'=\sqrt{y(y-2)}$ with $y(0)=0$
 classification:
   areas: [prelim]
   topics: []
@@ -141,8 +141,8 @@ $$
 For $x>a$, both sides of the differential equation are zero. At $x=a$,
 the left derivative is $\sinh0=0$, equal to the right derivative, so $y_a$
 is differentiable there and again satisfies the equation. Finally,
-$a\le0$ implies $y_a(0)=0$. The constant zero function plainly satisfies
-the same equation and initial condition.
+$a\le0$ implies $y_a(0)=0$. The constant zero function satisfies
+$0'=0=\sqrt{0\cdot(0-2)}$ and the initial condition.
 :::
 
 <1>5. The complete set of solutions is
