@@ -83,7 +83,7 @@ Step <1>2 gives the reverse inclusion, so
 $$
 I=(x).
 $$
-If $I=0$, then of course
+If $I=0$, then
 $$
 I=(0).
 $$
