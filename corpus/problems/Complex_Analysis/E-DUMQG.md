@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DUMQG
 kind: problem
-title: Laurent expansions on annuli
+title: Laurent series of $\frac{1}{(z-3)(z-1)}$ on the three annuli about $0$
 classification:
   areas:
   - complex-analysis
@@ -52,7 +52,7 @@ Now find the two expansions for each term:
 && 3 < \abs{z} < \infty
 .\]
 
-Now, just combinatorics to pick the various series that converge on the desired regions:
+On each region, combine the expansions of the two terms that converge there:
 \[
 0 \leq \abs{z} < 1 
 \qquad & f(z) = {1\over 2}\sum_{k\geq 0}z^k - {1\over 6}\sum_{k\geq 0} 3^{-k}z^k \\
