@@ -25,9 +25,9 @@ prompts:
 ::: {.definition title="$\tilde M$ and $\Gamma_*$"}
 For $S$ a graded ring and $M$ a graded $S$-module, $\tilde M$ is the sheaf on $\Proj S$ with $\tilde M(D_+(f)) = (M_f)_0$, the degree-zero part of the localization.
 Conversely, for $\mcf \in \mods{\OO_X}$ with $X = \Proj S$,
-\[
+$$
 \Gamma_*(\mcf) \da \bigoplus_{n \in \ZZ} \Gamma(X, \mcf(n)) ,
-\]
+$$
 a graded $S$-module, where $\mcf(n) \da \mcf \tensor_{\OO_X} \OO_X(n)$.
 :::
 
@@ -36,10 +36,7 @@ For $S$ generated in degree $1$ over a Noetherian ring $S_0$, every quasicoheren
 :::
 
 ::: {.remark}
-The functor $\tilde{\wait\,}$ is essentially surjective but is not an equivalence.
-Two graded modules agreeing in all large degrees give the same sheaf, so the functor kills modules supported at the irrelevant ideal $S_+$, and $\QCoh(\Proj S)$ is the quotient of graded modules by that torsion.
-$\Gamma_*$ is the chosen splitting: it picks the saturated module in each class.
-
-This is the projective analogue of $M \leftrightarrow \tilde M$ on $\Spec A$, with the degree-zero part of the localization playing the role of localization, and the loss of injectivity coming from modules supported at the irrelevant ideal.
-For example, $S/S_+$ sheafifies to zero.
+Under the hypotheses of the theorem, the functor $M\mapsto\tilde M$ is essentially surjective onto quasicoherent sheaves, with $\mcf\cong\widetilde{\Gamma_*(\mcf)}$, and it is not an equivalence.
+A graded homomorphism $M\to M'$ that is an isomorphism in all sufficiently large degrees induces an isomorphism $\tilde M\cong\tilde M'$, and a graded module with $M_n=0$ for all $n\gg0$ has $\tilde M=0$; for example, $\widetilde{S/S_+}=0$ while $S/S_+\ne0$.
+The category $\QCoh(\Proj S)$ is the quotient of the category of graded $S$-modules by the modules annihilated by a power of $S_+$.
 :::
