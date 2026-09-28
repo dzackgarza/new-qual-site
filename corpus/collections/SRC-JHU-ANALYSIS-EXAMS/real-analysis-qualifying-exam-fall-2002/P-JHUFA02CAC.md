@@ -30,7 +30,7 @@ Show that any sequence in $\mathcal{F}$ has a subsequence that converges uniform
 :::
 
 ::: {.solution}
-**Goal:** Define equicontinuity, state the Arzelà–Ascoli theorem, and prove that the family $\mathcal{F} = \{f \in AC([0,1]) : f(0)=0, \int_0^1 |f'(x)|^2\,dx \le 1\}$ is relatively compact in $C([0,1])$.
+The functions in $\mathcal{F}$ are taken absolutely continuous, so that $f(x)=\int_0^x f'(t)\,dt$ for $f\in\mathcal F$.
 
 <1>1. Definition of equicontinuity:
 ::: {.proof}
