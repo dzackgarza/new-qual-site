@@ -50,3 +50,7 @@ Since $|o(|h|)/h| \to 0$ as $h \to 0$, the limit exists and $f'(z_0) = u_x + iv_
 
 :::
 
+::: {.remark}
+The last expression in the statement has a spurious factor: $f'(z)=\dd{f}{x}=u_x+iv_x$. The factor ${1\over2}$ belongs to the Wirtinger derivative ${\partial f\over\partial z}={1\over2}\qty{\dd{f}{x}-i\dd{f}{y}}$, which equals $f'(z)$ for holomorphic $f$.
+:::
+
