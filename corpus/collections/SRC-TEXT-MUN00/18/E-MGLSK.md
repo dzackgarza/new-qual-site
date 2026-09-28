@@ -61,5 +61,5 @@ For maps $f:\mathbb R_\ell\to\mathbb R_\ell$, continuity is equivalent to the fo
 \[
 f([a,a+\delta))\subseteq[f(a),f(a)+\varepsilon).
 \]
-Necessity follows by applying continuity to the basic target neighborhood $[f(a),f(a)+\varepsilon)$. Conversely, if this condition holds, the inverse image of every basic lower-limit interval is open by exactly the same neighborhood argument. Equivalently, such functions are right-continuous and locally nondecreasing from the right.
+Necessity follows by applying continuity to the basic target neighborhood $[f(a),f(a)+\varepsilon)$. Conversely, suppose the condition holds, and let $a\in f^{-1}([c,d))$. With $\varepsilon=d-f(a)$, the condition gives $\delta>0$ with $f([a,a+\delta))\subseteq[f(a),d)\subseteq[c,d)$, so $f^{-1}([c,d))$ is open in $\mathbb R_\ell$. Equivalently, such functions are right-continuous and locally nondecreasing from the right.
 :::
