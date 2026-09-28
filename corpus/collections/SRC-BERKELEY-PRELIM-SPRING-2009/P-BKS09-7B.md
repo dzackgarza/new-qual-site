@@ -196,5 +196,5 @@ and step <1>5 proves that it is univalent.
 :::
 
 ::: {.remark}
-The source statement reads “If is a univalent (1-1 analytic) function”, omitting the name of the function; the formula $f(z) = z + \sum_{n=2}^{\infty} a_n z^n$ and the definition of $g$ show that the function meant is $f$.
+The source statement reads "If is a univalent (1-1 analytic) function", omitting the name of the function; the formula $f(z) = z + \sum_{n=2}^{\infty} a_n z^n$ and the definition of $g$ show that the function meant is $f$.
 :::
