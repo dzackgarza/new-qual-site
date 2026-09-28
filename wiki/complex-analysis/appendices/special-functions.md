@@ -105,7 +105,7 @@ A nonconstant elliptic function has at least two poles, counted with multiplicit
 ::: {.proof}
 Translate the parallelogram $P$ so that $f$ has no poles on $\bd P$.
 By periodicity the integrals of $f$ over opposite sides of $\bd P$ cancel, so the sum of the residues of $f$ in $P$ is $0$.
-A nonconstant elliptic function has a pole in $P$ by the preceding proposition.
+A nonconstant elliptic function has a pole in $P$, since an entire elliptic function is constant.
 If it had only one pole counted with multiplicity, that pole would be simple with nonzero residue, a contradiction.
 :::
 
