@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-12
 kind: problem
-title: No unital commutative ring has additive group $\mathbb Q/\mathbb Z$
+title: No unital commutative ring has additive group $\QQ/\ZZ$
 classification:
   areas: [prelim]
   topics: []
