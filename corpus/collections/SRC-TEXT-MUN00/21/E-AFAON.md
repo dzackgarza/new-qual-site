@@ -40,28 +40,33 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove the algebraic limit theorems for convergent sequences in $\mathbb{R}$ using product convergence and the continuity of arithmetic operations.
+If $F\colon X\to Y$ is continuous and $z_n\to z$ in $X$, then $F(z_n)\to F(z)$ in $Y$: a neighborhood $V$ of $F(z)$ has open preimage containing $z$, which contains $z_n$ for all large $n$.
 
-<1>1. Product sequence convergence:
-    *Proof:*
-    <2>1. By the definition of the product topology on $\mathbb{R} \times \mathbb{R}$, a sequence of pairs $(x_n, y_n)_{n=1}^\infty$ converges to $(x, y)$ in $\mathbb{R} \times \mathbb{R}$ if and only if each coordinate sequence converges: $x_n \to x$ and $y_n \to y$ in $\mathbb{R}$.
-    <2>2. Hence $(x_n, y_n) \to (x, y)$ in $\mathbb{R}^2$.
+<1>1. $(x_n,y_n)\to(x,y)$ in $\mathbb R\times\mathbb R$.
 
-<1>2. Sequence Lemma for continuous maps (Lemma 21.4):
-    If $F: X \to Y$ is a continuous map between topological spaces and $z_n \to z$ in $X$, then $F(z_n) \to F(z)$ in $Y$.
+::: {.proof}
+A sequence in a product converges if and only if each coordinate sequence converges, by [[E-AH7RC]].
+:::
 
-<1>3. Continuity of arithmetic operations and limit conclusions:
-    *Proof:*
-    <2>1. **Sum:** The addition map $S: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ given by $S(u, v) = u + v$ is continuous (for any $\varepsilon > 0$, choosing $\delta = \varepsilon/2$ ensures $|(u+v) - (x+y)| \le |u-x| + |v-y| < \varepsilon$).
-        Applying Lemma 21.4 to $S$ yields $x_n + y_n = S(x_n, y_n) \to S(x, y) = x + y$.
-    <2>2. **Difference:** The subtraction map $D: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ given by $D(u, v) = u - v$ is continuous.
-        Applying Lemma 21.4 yields $x_n - y_n = D(x_n, y_n) \to D(x, y) = x - y$.
-    <2>3. **Product:** The multiplication map $M: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ given by $M(u, v) = u v$ is continuous (since $|uv - xy| \le |u||v-y| + |y||u-x|$).
-        Applying Lemma 21.4 yields $x_n y_n = M(x_n, y_n) \to M(x, y) = xy$.
-    <2>4. **Quotient:** The division map $Q: \mathbb{R} \times (\mathbb{R} \setminus \{0\}) \to \mathbb{R}$ given by $Q(u, v) = u / v$ is continuous on the open subset $\mathbb{R} \times (\mathbb{R} \setminus \{0\}) \subset \mathbb{R}^2$.
-        Because $y \neq 0$ and each $y_n \neq 0$, the sequence $(x_n, y_n)$ lies in the domain of $Q$ and converges to $(x, y)$.
-        Applying Lemma 21.4 yields $x_n / y_n = Q(x_n, y_n) \to Q(x, y) = x / y$.
+<1>2. The maps $S(u,v)=u+v$, $D(u,v)=u-v$, and $M(u,v)=uv$ from $\mathbb R\times\mathbb R$ to $\mathbb R$, and $Q(u,v)=u/v$ from $\mathbb R\times(\mathbb R-\{0\})$ to $\mathbb R$, are continuous.
 
-<1>4. Conclusion:
-    All four arithmetic limits hold as stated. Q.E.D.
+::: {.proof}
+For $(u,v)$ near $(a,b)$,
+$$
+\abs{(u\pm v)-(a\pm b)}\le\abs{u-a}+\abs{v-b},\qquad \abs{uv-ab}\le\abs u\abs{v-b}+\abs b\abs{u-a},
+$$
+and the right sides tend to $0$ as $(u,v)\to(a,b)$.
+For $b\ne0$ and $\abs{v-b}<\abs b/2$,
+$$
+\Bigl\lvert\frac uv-\frac ab\Bigr\rvert=\frac{\abs{bu-av}}{\abs{vb}}\le\frac{2\bigl(\abs b\abs{u-a}+\abs a\abs{v-b}\bigr)}{b^2},
+$$
+which also tends to $0$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2 and the sequence property of continuous maps, $S(x_n,y_n)\to S(x,y)$, $D(x_n,y_n)\to D(x,y)$, and $M(x_n,y_n)\to M(x,y)$.
+When every $y_n\ne0$ and $y\ne0$, the sequence $(x_n,y_n)$ lies in $\mathbb R\times(\mathbb R-\{0\})$ and converges there to $(x,y)$, so $Q(x_n,y_n)\to Q(x,y)$.
+:::
 :::
