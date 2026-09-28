@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-08
 kind: problem
-title: Irreducibility of two geometric-sum polynomials over $\mathbb Q$
+title: Irreducibility of two geometric-sum polynomials over $\QQ$
 classification:
   areas: [prelim]
   topics: []
@@ -116,9 +116,9 @@ $11^2$.
 ::: {.proof}
 In step <1>2, the constant term is the term with $j=1$:
 $$
-\binom{11}{1}=11.
+\binom{11}{1}=11,
 $$
-Clearly $121\nmid11$.
+and $121\nmid11$.
 :::
 
 <1>5. The polynomial $P(x+1)$ is irreducible over $\QQ$.
