@@ -18,7 +18,7 @@ source:
   area: prelim
   problems:
   - id: P-BERK77S-14
-    comment: Spring 1992 Problem 1; repeated verbatim from Summer 1977 Problem 14
+    comment: Problem 1
   - P-BERK92S-02
   - P-BERK92S-03
   - P-BERK92S-04
