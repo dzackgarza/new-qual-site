@@ -46,5 +46,4 @@ Conversely, such a closed immersion gives a very ample sheaf by pulling back $\O
 ::: {.proposition title="Ampleness on a complete curve"}
 Let $X$ be a complete nonsingular curve over an algebraically closed field, and let $\mcl$ be an invertible sheaf.
 Then $\mcl$ is ample if and only if $\deg\mcl>0$ [@Har10a, Corollary IV.3.3].
-The completeness hypothesis is part of this degree criterion; the general noetherian definition is the global-generation condition.
 :::
