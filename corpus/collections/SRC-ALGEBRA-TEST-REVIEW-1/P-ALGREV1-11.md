@@ -28,7 +28,7 @@ Classify the following assertion as true, sometimes true, or false: in an integr
 :::
 
 ::: {.solution}
-The assertion is **sometimes true**.
+The assertion is sometimes true.
 
 <1>1. If $\gcd(m,n)=1$, the two power equalities force $a=b$.
 ::: {.proof}
@@ -78,10 +78,10 @@ $$
 but $a\ne b$.
 :::
 
-<1>3. Conclude the classification.
+<1>3. Q.E.D.
 ::: {.proof}
-Step <1>1 gives a broad class of cases in which the implication is true,
-while step <1>2 gives a valid counterexample to the unrestricted statement.
+Step <1>1 gives cases in which the implication holds, and step <1>2 gives a
+case in which it fails.
 Hence
 $$
 \boxed{\text{sometimes true}.}
