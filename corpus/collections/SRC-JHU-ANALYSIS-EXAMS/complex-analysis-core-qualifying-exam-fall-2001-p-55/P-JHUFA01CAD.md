@@ -21,33 +21,21 @@ Problem 4. Suppose that $f : D _ { 1 } ( 0 ) \to \mathbb { C }$ is a one-to-one 
 :::
 
 ::: {.solution}
-<1>1. $f^{-1}: \Omega \to D_1(0)$ is holomorphic.
+<1>1. $h\da f^{-1}\circ g$ is a holomorphic self-map of $D_1(0)$ with $h(0)=0$.
+
 ::: {.proof}
-$f$ is one-to-one and holomorphic with nonvanishing derivative (a one-to-one holomorphic map has $f' \neq 0$ everywhere), so the inverse function theorem gives a holomorphic inverse.
+An injective holomorphic map has nonvanishing derivative and open image, so $f^{-1}\colon\Omega\to D_1(0)$ is holomorphic. Then $h$ is holomorphic, and $h(0)=f^{-1}(f(0))=0$.
 :::
 
-<1>2. Define $h \definedas f^{-1} \circ g: D_1(0) \to D_1(0)$; then $h$ is holomorphic and $h(0) = 0$.
+<1>2. $\abs{h(z)}\le\abs z$ on $D_1(0)$.
+
 ::: {.proof}
-$h$ is a composition of holomorphic maps, and $h(0) = f^{-1}(g(0)) = f^{-1}(f(0)) = 0$.
+This is the Schwarz lemma applied to $h$, using step <1>1.
 :::
 
-<1>3. $\abs{h(z)} \le \abs z$ for all $z \in D_1(0)$.
-::: {.proof}
-the Schwarz lemma applied to the holomorphic self-map $h$ of the unit disk with $h(0) = 0$.
-:::
+<1>3. Q.E.D.
 
-<1>4. $h(D_r(0)) \subseteq D_r(0)$ for each $0 \le r < 1$.
 ::: {.proof}
-if $\abs z < r$, then $\abs{h(z)} \le \abs z < r$ by <1>3.
-:::
-
-<1>5. $g(D_r(0)) \subseteq f(D_r(0))$.
-::: {.proof}
-for $z \in D_r(0)$, $g(z) = f(h(z))$ with $h(z) \in D_r(0)$ by <1>4, so $g(z) \in f(D_r(0))$.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5 is the claim, for arbitrary $0 \le r < 1$.
+For $\abs z<r$, step <1>2 gives $h(z)\in D_r(0)$, so $g(z)=f(h(z))\in f(D_r(0))$.
 :::
 :::

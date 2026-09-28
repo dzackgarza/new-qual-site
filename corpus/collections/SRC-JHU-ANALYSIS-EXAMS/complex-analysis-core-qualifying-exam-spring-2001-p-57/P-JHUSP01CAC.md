@@ -18,37 +18,25 @@ audit:
 ---
 
 ::: {.problem}
-Question 3. Assume that $f _ { n }$ is holomorphic in $| z | < 1$ and $| f _ { n } | \leq 1 0$ . Assume also that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } \left( 2 ^ { - j } \right)$ exists for each $j = 1 , 2 , \dots$ . Prove that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } ( z )$ exists for all z with $| z | < 1$
+Question 3. Assume that $f _ { n }$ is holomorphic in $| z | < 1$ and $| f _ { n } | \leq 1 0$ . Assume also that $\lim_{n\to\infty} f_n(2^{-j})$ exists for each $j = 1 , 2 , \dots$ . Prove that $\lim_{n\to\infty} f_n(z)$ exists for all z with $| z | < 1$
 :::
 
 ::: {.solution}
-<1>1. $\{f_n\}$ is uniformly bounded by $10$, hence normal (Montel).
+<1>1. Every subsequence of $(f_n)$ has a further subsequence converging uniformly on compact subsets of $\DD$ to a holomorphic function.
+
 ::: {.proof}
-Montel's theorem.
+The family is uniformly bounded by $10$, so Montel's theorem applies.
 :::
 
-<1>2. Any subsequence has a further subsequence converging uniformly on compacta to holomorphic $f$.
+<1>2. Any two such limits $f$ and $g$ are equal.
+
 ::: {.proof}
-<1>1.
+Both equal $\lim_nf_n(2^{-j})$ at each point $2^{-j}$, and these points accumulate at $0\in\DD$, so $f=g$ by the identity theorem.
 :::
 
-<1>3. If $f,g$ are two subsequential limits, they agree on $\{2^{-j}\}$ (by hypothesis the limits exist there and coincide).
-::: {.proof}
-hypothesis.
-:::
+<1>3. Q.E.D.
 
-<1>4. $\{2^{-j}\}$ accumulates at $0\in\mathbb{D}$, so $f=g$ by identity theorem.
 ::: {.proof}
-<1>3.
-:::
-
-<1>5. Hence all subsequential limits coincide, so the full sequence converges pointwise (Vitali).
-::: {.proof}
-<1>4 (normal family with unique subsequential limit converges).
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+Let $f$ be the common limit of step <1>2 and fix $z\in\DD$. If $f_n(z)\not\to f(z)$, some subsequence stays at distance at least $\eps>0$ from $f(z)$, and by step <1>1 a further subsequence converges at $z$ to $f(z)$, a contradiction. So $\lim_nf_n(z)=f(z)$ exists.
 :::
 :::

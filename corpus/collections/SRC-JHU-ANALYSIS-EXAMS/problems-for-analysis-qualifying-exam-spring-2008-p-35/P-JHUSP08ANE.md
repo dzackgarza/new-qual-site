@@ -22,33 +22,15 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $h(z) = f(z)/g(z)$ is entire.
+<1>1. $h\da f/g$ is entire and $\abs h\le1$.
+
 ::: {.proof}
-$g(z) \neq 0$ for all $z$, so $f/g$ has no singularities, and $f$ and $g$ are entire.
+$g$ has no zeros, so $h$ is holomorphic on $\CC$, and $\abs{h}=\abs f/\abs g\le1$ by hypothesis.
 :::
 
-<1>2. $|h(z)| = |f(z)/g(z)| \le 1$ for all $z$.
-::: {.proof}
-hypothesis $|f(z)| \le |g(z)|$.
-:::
+<1>2. Q.E.D.
 
-<1>3. Hence $h$ is a bounded entire function.
 ::: {.proof}
-<1>2.
-:::
-
-<1>4. By Liouville's theorem, $h$ is constant, say $h(z) = C$ with $|C| \le 1$.
-::: {.proof}
-<1>3.
-:::
-
-<1>5. Therefore $f(z) = C g(z)$.
-::: {.proof}
-<1>1 and <1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+By step <1>1 and Liouville's theorem, $h$ is a constant $C$, so $f=Cg$.
 :::
 :::

@@ -21,33 +21,17 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Let $p(z) = z^6 - 2z^5 + 7z^4 + z^3 - z + 1$ and $q(z) = 7z^4$.
+Let $p(z)=z^6-2z^5+7z^4+z^3-z+1$.
+
+<1>1. On $\abs z=1$, $\abs{p(z)-7z^4}<\abs{7z^4}$.
+
 ::: {.proof}
-choose a dominant term.
+$\abs{z^6-2z^5+z^3-z+1}\le1+2+1+1+1=6<7$.
 :::
 
-<1>2. On $|z| = 1$, $|p(z) - q(z)| = |z^6 - 2z^5 + z^3 - z + 1| \le 1 + 2 + 1 + 1 + 1 = 6 < 7 = |q(z)|$.
-::: {.proof}
-triangle inequality on the unit circle.
-:::
+<1>2. Q.E.D.
 
-<1>3. Hence by Rouché's theorem, $p$ and $q$ have the same number of zeros in $|z| < 1$.
 ::: {.proof}
-<1>2 and Rouché's theorem.
-:::
-
-<1>4. $q(z) = 7z^4$ has exactly $4$ zeros in $|z| < 1$ (a zero of order $4$ at $z = 0$).
-::: {.proof}
-$q(z) = 7z^4$ vanishes only at $z = 0$, where it has a zero of order $4$ (the factor $z^4$), and $0$ lies in the open unit disc.
-:::
-
-<1>5. Hence $p$ has $4$ zeros in the open unit disc.
-::: {.proof}
-<1>3 and <1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+By step <1>1 and Rouché's theorem, $p$ has as many zeros in $\abs z<1$ as $7z^4$, namely $\boxed{4}$, counted with multiplicity.
 :::
 :::
