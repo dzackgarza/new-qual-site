@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KVFCT
 kind: problem
-title: Sigma-compact regular spaces are paracompact
+title: $\sigma$-compact regular spaces are paracompact
 classification:
   areas:
   - topology
