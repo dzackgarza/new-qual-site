@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-16
 kind: problem
-title: "Rouche's theorem from a simple-zero comparison"
+title: The zero of $f+\epsilon g$ near a simple zero of $f$ is unique and continuous in $\epsilon$
 classification:
   areas:
   - complex-analysis
