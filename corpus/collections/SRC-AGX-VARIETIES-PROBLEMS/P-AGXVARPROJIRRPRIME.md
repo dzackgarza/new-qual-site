@@ -65,7 +65,8 @@ $$
 
 ::: {.proof}
 Assume for contradiction that the homogeneous ideal $I(X)$ is not prime.
-By the homogeneous-ideal fact in Zaidenberg Exercise 7.6, there exist
+A homogeneous ideal $I$ is prime if and only if, for all homogeneous $f,g$,
+$fg\in I$ implies $f\in I$ or $g\in I$. Hence there exist
 homogeneous polynomials
 $$
 f,g\in k[x_0,\ldots,x_n]
@@ -117,9 +118,9 @@ Since $X$ is Zariski closed,
 $$
 X=V_+\bigl(I(X)\bigr).
 $$
-The ideal $I(X)$ is homogeneous and prime. Therefore
-[[P-AGXVARPROJIRR|the homogeneous-prime projective irreducibility result]]
-applies and gives that $X$ is irreducible.
+The ideal $I(X)$ is homogeneous and prime, and $V_+(P)$ is irreducible for
+every homogeneous prime $P$ with $V_+(P)$ nonempty [[P-AGXVARPROJIRR]].
+Therefore $X$ is irreducible.
 :::
 
 <1>3. Therefore
