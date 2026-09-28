@@ -24,28 +24,21 @@ Let $\nu, \mu$ be signed measures, and show that
 .\]
 :::
 ::: {.solution}
-<1>1. $\nu \perp \mu$: there is a measurable $A$ with $|\mu|(A) = 0$ and $|\nu|(A^c) = 0$.
-    ::: {.proof}
-    definition of mutual singularity (equivalently $\nu \perp |\mu|$; singularity with $\mu$ is singularity with $|\mu|$ since $\mu$ and $|\mu|$ are mutually absolutely continuous).
-    :::
+<1>1. There is a measurable $A$ with $|\mu|(A) = 0$ and $|\nu|(A^c) = 0$.
 
-<1>2. $\nu \ll |\mu|$: $|\mu|(E) = 0 \Rightarrow |\nu|(E) = 0$ (and hence $\nu(E) = 0$).
-    ::: {.proof}
-    definition of absolute continuity.
-    :::
+::: {.proof}
+This is the definition of $\nu \perp \mu$: there is a partition $X = A \sqcup A^c$ with $A$ null for $\mu$ and $A^c$ null for $\nu$, and a set is null for a signed measure exactly when it has total variation measure $0$.
+:::
 
-<1>3. $|\nu|(A^c) = 0$ by <1>1, and $|\nu|(A) = 0$ by <1>2 (since $|\mu|(A) = 0$).
-    ::: {.proof}
-    <1>2 applied with $E = A$.
-    :::
+<1>2. $|\nu|(A) = 0$.
 
-<1>4. $|\nu|(X) = |\nu|(A) + |\nu|(A^c) = 0$.
-    ::: {.proof}
-    additivity over the partition $X = A \sqcup A^c$, using <1>3.
-    :::
+::: {.proof}
+$\nu \ll |\mu|$ means $|\nu|(E) = 0$ whenever $|\mu|(E) = 0$, equivalently $\nu(E) = 0$ for every measurable $E$ with $|\mu|(E) = 0$. Apply it to $E = A$ from step <1>1.
+:::
 
-<1>5. Q.E.D.: $|\nu| \equiv 0$, so $\nu \equiv 0$.
-    ::: {.proof}
-    a signed measure with zero total variation is the zero measure (its positive and negative parts both vanish).
-    :::
+<1>3. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2, $|\nu|(X) = |\nu|(A) + |\nu|(A^c) = 0$. Since $|\nu(E)| \le |\nu|(E)$ for every $E$, $\nu = 0$.
+:::
 :::
