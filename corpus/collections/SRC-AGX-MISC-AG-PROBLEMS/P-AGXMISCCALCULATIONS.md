@@ -194,7 +194,7 @@ $$
 $$
 and the associated quasicoherent sheaf has these same global sections.
 
-There is no intrinsic affine twisting sheaf indexed by $m$. On the
+On the
 standard chart $D_+(x_0)\cong\AA^n$, the projective sheaf $\OO(m)$ is
 trivialized by $x_0^m$, so its restriction has global sections $A$.
 :::
@@ -269,9 +269,9 @@ $$
 $$
 is a closed immersion. Consequently, if $Y$ is separated over the base,
 the graph of every morphism $X\to Y$ is closed. Every affine scheme over
-a field is separated. The affine line with doubled origin is the standard
-nonseparated prevariety: the two origins cannot be separated by the
-diagonal.
+a field is separated. The affine line with doubled origin is not separated:
+the pair $(0_1,0_2)$ of its two origins lies in the closure of the
+diagonal but not in the diagonal.
 :::
 
 <2>2. Properness is finite type, separatedness, and universal closedness.
