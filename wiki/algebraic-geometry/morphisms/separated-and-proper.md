@@ -15,15 +15,14 @@ Separatedness is encoded by the diagonal morphism and by uniqueness in the valua
 
 [[PR-QX0VL]]
 
-Both hypotheses in the proposition are essential to the stated conclusion.
-
 [[FE-H8DY5]]
 
 ## Properness
 
 [[D-8XX95]]
 
-The valuative criteria are how the two conditions become one picture: a discrete valuation ring is a germ of a punctured disc together with its centre, uniqueness of the fill-in is separatedness, and existence is properness.
-Hausdorff and compact, in the only form the Zariski topology allows.
+Let $f\colon X\to Y$ be of finite type with $X$ noetherian.
+Then $f$ is separated exactly when, for every valuation ring $R$ with fraction field $K$, a morphism $\Spec K\to X$ over a given $\Spec R\to Y$ has at most one lift $\Spec R\to X$, and proper exactly when it has exactly one.
 
-Projective implies proper, and that implication is where properness earns its keep: it converts "this variety is projective" into "the image of any morphism from it is closed", which is the engine behind the proof that regular functions on a projective variety are constant, and behind every rigidity argument in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
+A projective morphism is proper.
+For a connected reduced scheme $X$ proper over an algebraically closed field $k$, every regular function $f\colon X\to\AA^1_k$ is constant: composed with $\AA^1_k\subset\PP^1_k$, its image is closed, connected, and misses $\infty$, so it is a point.
