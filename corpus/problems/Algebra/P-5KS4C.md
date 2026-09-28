@@ -34,7 +34,7 @@ K(u)/K
 \]
 is exactly the splitting field $F$ of $f$.
 
-A standard solvability-by-radicals theorem says that a finite separable extension $M/K$ in characteristic $0$ is contained in a radical extension of $K$ only if the Galois group of the normal closure of $M/K$ is solvable.
+By Galois's theorem on solvability by radicals, a finite separable extension $M/K$ in characteristic $0$ is contained in a radical extension of $K$ only if the Galois group of the normal closure of $M/K$ is solvable.
 
 Apply this with
 \[
