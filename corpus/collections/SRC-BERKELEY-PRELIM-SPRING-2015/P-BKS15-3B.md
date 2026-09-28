@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Suppose
-\[
+$$
 a_{1,1}+a_{1,2}+\cdots,\qquad a_{2,1}+a_{2,2}+\cdots,\qquad\ldots
-\]
+$$
 is a countable collection of convergent series of nonnegative real numbers.
 Show that there is a convergent series $x_1+x_2+\cdots$ of real numbers converging more slowly than any of the given series, in the sense that for every $m$ one has $x_n\ge a_{m,n}$ for all sufficiently large $n$.
 
