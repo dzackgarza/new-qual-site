@@ -21,7 +21,7 @@ The Weierstrass zeta function $\zeta$ is a meromorphic function satisfying
 
 - $\zeta(z + \omega_1) = \zeta(z) + \eta_1$
 - $\zeta(z + \omega_2) = \zeta(z) + \eta_2$
-- The singularities of $\zeta$ are poles of residue 1 at the points $m\omega_1 + n\omega_2$ for $m, n \in \mathbb{Z}$
+- The singularities of $\zeta$ are poles of residue 1 at the points $m\omega_1 + n\omega_2$ for $m, n \in \ZZ$
 
-Here $\omega_1, \omega_2, \eta_1, \eta_2$ are complex constants with $\omega_2 / \omega_1$ not real. Use Cauchy’s residue theorem to prove Legendre’s relation $\omega_2 \eta_1 - \omega_1 \eta_2 = \pm 2\pi i$ and express the sign in terms of $\omega_1$ and $\omega_2$.
+Here $\omega_1, \omega_2, \eta_1, \eta_2$ are complex constants with $\omega_2 / \omega_1$ not real. Use Cauchy's residue theorem to prove Legendre's relation $\omega_2 \eta_1 - \omega_1 \eta_2 = \pm 2\pi i$ and express the sign in terms of $\omega_1$ and $\omega_2$.
 :::
