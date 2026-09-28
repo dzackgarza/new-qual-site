@@ -18,9 +18,9 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 x_{n+1}=(1+x_n)^{-1}
-\]
+$$
 converges and find its limit for any $x_0>0$.
 :::
 
