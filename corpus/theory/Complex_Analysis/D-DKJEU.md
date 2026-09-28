@@ -25,7 +25,8 @@ defined for $z\in\CC$ with $cz+d\neq0$.
 :::
 
 ::: {.remark}
-The condition $ad-bc\neq0$ says that the numerator $az+b$ is not a constant multiple of the denominator $cz+d$, so that $T$ is not constant.
+The condition $ad-bc\neq0$ says that the vectors $(a,b)$ and $(c,d)$ are linearly independent.
+In particular $(c,d)\neq(0,0)$, so the domain $\{z\in\CC:cz+d\neq0\}$ is $\CC$ minus at most one point, and $T$ is not constant there.
 :::
 
 ::: {.proposition}
