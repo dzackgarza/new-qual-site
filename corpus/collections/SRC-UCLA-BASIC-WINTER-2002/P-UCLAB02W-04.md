@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB02W-04
 kind: problem
-title: The irrationals are not an F-sigma subset of the real line
+title: The irrationals are not an $F_\sigma$ subset of the real line
 classification:
   areas: [prelim]
   topics: []
