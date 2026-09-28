@@ -24,7 +24,7 @@ $$
 \int_ {0} ^ {z} z ^ {- \beta_ {1}} (1 - z) ^ {- \beta_ {2}} d z,
 $$
 
-with $0 < \beta _ { 1 } < 1 , \ 0 < \beta _ { 2 } < 1$ , and $1 < \beta _ { 1 } + \beta _ { 2 } < 2$ , maps $\mathbb { H }$ to a triangle whose vertices are the images of 0, 1, and $\infty ;$ , and with angles $\alpha _ { 1 } \pi$ , α<sub>2</sub>π, and $\alpha _ { 3 } \pi _ { \ i }$ where $\alpha _ { j } + \beta _ { j } = 1$ and $\beta _ { 1 } + \beta _ { 2 } + \beta _ { 3 } = 2$
+with $0 < \beta _ { 1 } < 1 , \ 0 < \beta _ { 2 } < 1$ , and $1 < \beta _ { 1 } + \beta _ { 2 } < 2$ , maps $\mathbb { H }$ to a triangle whose vertices are the images of 0, 1, and $\infty ;$ , and with angles $\alpha _ { 1 } \pi$ , $\alpha_2\pi$, and $\alpha _ { 3 } \pi _ { \ i }$ where $\alpha _ { j } + \beta _ { j } = 1$ and $\beta _ { 1 } + \beta _ { 2 } + \beta _ { 3 } = 2$
 
 (b) What happens when $\beta _ { 1 } + \beta _ { 2 } = 1 ?$
 

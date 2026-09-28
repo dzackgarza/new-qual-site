@@ -38,7 +38,7 @@ $$
 (r - w) (r - \overline {{w}}) \leq (1 - r w) (1 - r \overline {{w}})
 $$
 
-with equality for appropriate r and <sub>|</sub>w<sub>|</sub>.]
+with equality for appropriate r and $\abs w$.]
 
 (b) Prove that for a fixed w in the unit disc D, the mapping
 

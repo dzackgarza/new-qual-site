@@ -32,7 +32,7 @@ Fix a point $w \in \Omega$ and let $\Omega _ { 1 } \subset \Omega$ denote the se
 conclude that $\Omega = \Omega _ { 1 }$ as desired.
 
 The proof actually shows that the regularity and type of curves we used to define pathwise connectedness can be relaxed without changing the equivalence between the two definitions when Ω is open.
-For instance, we may take all curves to be continuous, or simply polygonal lines.<sup>2</sup>
+For instance, we may take all curves to be continuous, or simply polygonal lines.
 :::
 
 ::: {.solution}
