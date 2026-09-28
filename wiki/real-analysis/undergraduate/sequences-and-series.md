@@ -55,7 +55,7 @@ Hence $\sum_n a_n$ and $\sum_k 2^ka_{2^k}$ converge or diverge together.
 ## Series
 
 A series $\sum_n a_n$ of real numbers converges if and only if for every $\varepsilon>0$ there is $N$ with $\abs{\sum_{n=M}^{M'}a_n}<\varepsilon$ for all $M'\geq M\geq N$ (the Cauchy criterion).
-The comparison and $p$-tests give sufficient conditions, and a Taylor series of $f$ converges to $f$ at $x$ exactly when the remainder in Taylor's theorem tends to $0$ at $x$.
+For $a_n\geq0$, the comparison test gives convergence of $\sum_n a_n$ from $a_n\leq b_n$ with $\sum_n b_n<\infty$, and the $p$-test gives convergence of $\sum_n n^{-p}$ exactly for $p>1$; a Taylor series of $f$ converges to $f$ at $x$ exactly when the remainder in Taylor's theorem tends to $0$ at $x$.
 For series of functions, the Cauchy criterion in the norm $\norm{\wait}_\infty$ characterizes uniform convergence.
 
 [[PR-P6NHI]]
