@@ -183,8 +183,8 @@ $$
 $$
 
 ::: {.proof}
-This is exactly the identity in step <1>3 with the source's notation
-$\bd X$ for the boundary at infinity.
+This is the identity in step <1>3 with $\bd X$ written for the boundary at
+infinity.
 :::
 
 <1>5. Q.E.D.
