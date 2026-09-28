@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK87S-10
 kind: problem
-title: Embed a finite group of order $n$ into the real orthogonal group $O(n)$
+title: Embedding of a finite group of order $n$ in the real orthogonal group $O(n)$
 classification:
   areas: [prelim]
   topics: []
