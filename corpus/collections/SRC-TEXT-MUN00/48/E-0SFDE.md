@@ -23,8 +23,6 @@ Show this fails if the sets are not required to be closed.
 :::
 
 ::: {.solution}
-**Goal:** Construct a countable collection of subsets $\{A_n\}_{n=0}^\infty$ of $\mathbb{R}$ such that $\operatorname{Int}(A_n) = \emptyset$ for all $n \ge 0$ and $\mathbb{R} = \bigcup_{n=0}^\infty A_n$.
-
 <1>1. Construction of the partition:
     1. Let $\mathbb{Q}$ be the set of rational numbers in $\mathbb{R}$. Since $\mathbb{Q}$ is countably infinite, choose an enumeration $\mathbb{Q} = \{q_1, q_2, q_3, \dots\}$.
     2. Let $A_0 = \mathbb{R} \setminus \mathbb{Q}$ be the set of all irrational numbers.
@@ -40,6 +38,6 @@ Show this fails if the sets are not required to be closed.
 <1>4. $A_0$ is not closed in $\mathbb{R}$:
     *Proof:* By the density of the irrationals in $\mathbb{R}$, the closure of $A_0 = \mathbb{R} \setminus \mathbb{Q}$ is $\overline{\mathbb{R} \setminus \mathbb{Q}} = \mathbb{R} \neq A_0$.
 
-<1>5. Conclusion:
-    $\mathbb{R} = \bigcup_{n=0}^\infty A_n$ expresses $\mathbb{R}$ as a countable union of subsets each having empty interior, showing that the closedness hypothesis in the Baire Category Theorem cannot be omitted. Q.E.D.
+<1>5. Q.E.D.
+    By steps <1>1, <1>2, and <1>3, $\mathbb{R} = \bigcup_{n=0}^\infty A_n$ is a countable union of subsets with empty interior, and by step <1>4 the set $A_0$ is not closed.
 :::
