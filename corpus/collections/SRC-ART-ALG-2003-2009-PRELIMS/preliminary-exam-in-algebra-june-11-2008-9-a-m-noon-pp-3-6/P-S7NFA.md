@@ -41,8 +41,7 @@ g(x)=a\prod_{i=1}^{n}(x-\alpha_i)
 \quad\text{with }a\in F^\times,\ \alpha_i\in E,
 \qquad E=F(\alpha_1,\ldots,\alpha_n).
 $$
-The roots may repeat. The generation condition is essential: merely
-containing all the roots does not make an extension a splitting field.
+The roots may repeat.
 
 <1>2. Every degree-$n$ polynomial over any field has a splitting field
 of degree at most $n!$ over that field; in particular the given $E$
@@ -74,7 +73,5 @@ hypothesis gives $[E:F_1]\leq(n-1)!$. Applying the tower law yields
 $$
 [E:F]=[E:F_1][F_1:F]\leq(n-1)!\,n=n!.
 $$
-The argument uses neither separability nor an identification of the
-extension degree with the order of an automorphism group.
 :::
 :::
