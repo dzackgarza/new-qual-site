@@ -21,7 +21,7 @@ prompts:
 
 ::: {.definition title="Quasi-finite"}
 $f : X \to Y$ is \dfn{locally quasi-finite} if it is locally of finite type with discrete fibres: every point of every fibre $X_y = \fiberprod{X}{Y}{\Spec \kappa(y)}$ is isolated, so $X_y$ is a zero-dimensional scheme.
-It is **quasi-finite** if it is in addition quasicompact, equivalently of finite type with finite fibres.
+It is \dfn{quasi-finite} if it is in addition quasicompact, equivalently of finite type with finite fibres.
 :::
 
 ::: {.remark}
