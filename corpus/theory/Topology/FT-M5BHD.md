@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-M5BHD
 kind: theorem
 title: A continuous bijection from a compact space to a Hausdorff space is a homeomorphism
-slogan: 'Compact-to-Hausdorff continuous bijections are automatically homeomorphisms.'
+slogan: 'Compact-to-Hausdorff continuous bijections are homeomorphisms.'
 prompts:
 - When is a continuous bijection from a compact space to a Hausdorff space a homeomorphism?
 classification:
@@ -23,6 +23,6 @@ If $X$ is compact and $Y$ is [[D-ZFRV4|Hausdorff]], then $f$ is a homeomorphism 
 :::
 
 ::: {.remark}
-The theorem rests on three facts: closed subspaces of compact spaces are compact [@Mun00], continuous images of compact spaces are compact [@Mun00], and compact subspaces of Hausdorff spaces are closed [@Mun00].
-Together they show that $f$ is a closed map.
+Closed subspaces of compact spaces are compact, continuous images of compact spaces are compact, and compact subspaces of Hausdorff spaces are closed [@Mun00].
+Hence $f$ is a closed map, so $f\inv$ is continuous.
 :::
