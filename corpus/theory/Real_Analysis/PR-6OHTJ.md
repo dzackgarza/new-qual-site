@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-6OHTJ
 kind: proposition
 title: $p$-tests for series and integrals
-slogan: '$p$-series and power-law integrals converge exactly on the expected side of the critical exponent.'
+slogan: '$\sum k^{-p}$ and $\int_\varepsilon^\infty x^{-p}\,dx$ converge exactly for $p>1$ and $\int_0^1 x^{-p}\,dx$ exactly for $p<1$; in $\RR^n$ the threshold for $\abs{x}^{-p}$ is $p=n$.'
 classification:
   areas:
   - real-analysis
