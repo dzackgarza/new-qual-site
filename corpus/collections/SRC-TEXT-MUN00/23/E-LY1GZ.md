@@ -24,43 +24,19 @@ Show that if $C$ is a connected subspace of $X$ that intersects both $A$ and $X 
 :::
 
 ::: {.solution}
-<1>1. Suppose for contradiction that $C \cap \operatorname{Bd} A = \varnothing$.
+<1>1. $X-\operatorname{Bd}A=\operatorname{Int}A\cup\operatorname{Int}(X-A)$, a union of disjoint open sets.
+
 ::: {.proof}
-assume the conclusion fails.
+A point outside $\operatorname{Bd}A=\overline A\cap\overline{X-A}$ lies outside $\overline{X-A}=X-\operatorname{Int}A$ or outside $\overline A=X-\operatorname{Int}(X-A)$.
+Conversely $\operatorname{Int}A$ misses $\overline{X-A}$ and $\operatorname{Int}(X-A)$ misses $\overline A$.
+The two interiors lie in the disjoint sets $A$ and $X-A$.
 :::
 
-<1>2. Then $C \subseteq X - \operatorname{Bd} A = \operatorname{Int} A \cup \operatorname{Int}(X - A)$.
-::: {.proof}
-$X$ is the disjoint union $\operatorname{Int} A \sqcup \operatorname{Bd} A \sqcup \operatorname{Int}(X - A)$.
-:::
+<1>2. Q.E.D.
 
-<1>3. Hence $C = (C \cap \operatorname{Int} A) \cup (C \cap \operatorname{Int}(X - A))$, a union of two disjoint sets open in $C$.
 ::: {.proof}
-<1>2, and $\operatorname{Int} A \cap \operatorname{Int}(X - A) = \varnothing$.
-:::
-
-<1>4. Since $C$ is connected, one of these two sets is empty.
-::: {.proof}
-<1>3 and the definition of connectedness (no separation by disjoint nonempty open sets).
-:::
-
-<1>5. If $C \cap \operatorname{Int} A = \varnothing$, then $C \subseteq \operatorname{Int}(X - A) \subseteq X - A$, contradicting $C \cap A \neq \varnothing$.
-::: {.proof}
-<1>4, first case.
-:::
-
-<1>6. If $C \cap \operatorname{Int}(X - A) = \varnothing$, then $C \subseteq \operatorname{Int} A \subseteq A$, contradicting $C \cap (X - A) \neq \varnothing$.
-::: {.proof}
-<1>4, second case.
-:::
-
-<1>7. Both cases contradict the hypotheses, so $C \cap \operatorname{Bd} A \neq \varnothing$.
-::: {.proof}
-<1>5 and <1>6.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
+Suppose $C\cap\operatorname{Bd}A=\varnothing$.
+By step <1>1, $C$ is the union of the disjoint relatively open sets $C\cap\operatorname{Int}A$ and $C\cap\operatorname{Int}(X-A)$, so one of them is empty because $C$ is connected.
+If $C\cap\operatorname{Int}A=\varnothing$, then $C\subseteq X-A$, contradicting $C\cap A\ne\varnothing$; if $C\cap\operatorname{Int}(X-A)=\varnothing$, then $C\subseteq A$, contradicting $C\cap(X-A)\ne\varnothing$.
 :::
 :::
