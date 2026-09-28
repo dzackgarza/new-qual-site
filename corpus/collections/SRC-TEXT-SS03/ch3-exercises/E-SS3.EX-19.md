@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-19
 kind: problem
-title: "SS 3.19: The maximum principle for harmonic functions"
+title: The maximum principle for harmonic functions
 classification:
   areas:
   - complex-analysis
@@ -38,7 +38,7 @@ is holomorphic on $D$. Then
 \[
 |e^{F(z)}|=e^{u(z)}\le e^{u(z_0)}=|e^{F(z_0)}|
 \]
-near $z_0$. Thus the holomorphic function $e^F$ attains a local maximum of its modulus, so by the maximum modulus principle it is constant. Hence $F$ is constant and therefore $u$ is constant on $D$. By unique continuation for harmonic functions (equivalently, by continuing local holomorphic primitives across overlapping discs), $u$ is constant on the connected region $\Omega$. Thus a nonconstant harmonic function cannot attain an interior maximum. Applying this to $-u$ gives the corresponding statement for minima.
+near $z_0$. Thus the holomorphic function $e^F$ attains a local maximum of its modulus, so by the maximum modulus principle it is constant. Hence $F$ is constant and therefore $u$ is constant on $D$. Now suppose $u$ attains its maximum value $M$ over $\Omega$ at $z_0$, and let $A$ be the set of points of $\Omega$ near which $u\equiv M$. The argument just given shows that every point where $u=M$ lies in $A$; so $A$ is open, nonempty, and closed in $\Omega$ because $u$ is continuous. Since $\Omega$ is connected, $A=\Omega$ and $u$ is constant. Thus a nonconstant harmonic function cannot attain an interior maximum. Applying this to $-u$ gives the corresponding statement for minima.
 
 (b) Since $\overline\Omega$ is compact and $u$ is continuous there, $|u|$ attains a maximum at some point of $\overline\Omega$. If the maximum were attained at an interior point and were strictly larger than the boundary maximum, then either $u$ or $-u$ would attain an interior maximum, forcing $u$ to be constant by part (a). In that constant case the same value occurs on the boundary. Therefore in all cases
 \[
