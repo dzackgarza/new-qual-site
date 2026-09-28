@@ -28,7 +28,7 @@ Show that $\mathbb{R}$ is locally 1-euclidean and satisfies (ii) but not (i) of 
 :::
 
 ::: {.solution}
-The usual line \(\mathbb R\) is locally \(1\)-euclidean since every point has an open interval neighborhood homeomorphic to an open interval of \(\mathbb R\). It is Hausdorff and has the countable basis of intervals with rational endpoints, so it is a \(1\)-manifold; thus it satisfies condition (ii) of [[E-KWBI9]].
+The usual line \(\mathbb R\) is locally \(1\)-euclidean since every point has an open interval neighborhood homeomorphic to an open interval of \(\mathbb R\). It is Hausdorff and has the countable basis of intervals with rational endpoints, so it is a \(1\)-manifold; thus it satisfies condition (ii) of [[E-OYPV7]].
 
 It is not compact: the open cover
 \[
