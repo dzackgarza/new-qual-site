@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-EPR7J
 kind: theorem
 title: Rouché's theorem, symmetric form
-slogan: 'If two boundary values never point in exactly opposite directions, the functions have the same zero count inside.'
+slogan: 'If at each boundary point $f(z)$ and $g(z)$ are nonzero and $g(z)$ is not a negative real multiple of $f(z)$, then $f$ and $g$ have the same number of zeros inside.'
 prompts:
 - State Rouche's theorem in its symmetric form.
 classification:
