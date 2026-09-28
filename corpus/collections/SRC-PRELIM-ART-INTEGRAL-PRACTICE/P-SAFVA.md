@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SAFVA
 kind: problem
-title: Evaluate $\int\ln(ax+b)\,dx$
+title: $\int\ln(ax+b)\,dx$ and logarithmic special cases
 classification:
   areas:
   - prelim
@@ -106,9 +106,8 @@ Factoring $x^2 - 1 = (x - 1)(x + 1)$:
 logarithm product rule and <1>1.
 :::
 
-<1>3. Conclusion:
-All five logarithmic integrals are evaluated as stated. Q.E.D.
+<1>3. Q.E.D.
 ::: {.proof}
-<1>1 and <1>2.
+Step <1>1 evaluates $\int\ln(ax+b)\,dx$, and step <1>2 evaluates the four special cases.
 :::
 :::
