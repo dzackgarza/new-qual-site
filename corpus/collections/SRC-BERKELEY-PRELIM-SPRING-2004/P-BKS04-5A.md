@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-5A
 kind: problem
-title: UC Berkeley Spring 2004 prelim 5A
+title: Limit of $e^{it^2}(f(t)-f(-t))$ for $f'+2itf=e^{2it}$, $f(0)=0$
 classification:
   areas: [prelim]
   topics: []
