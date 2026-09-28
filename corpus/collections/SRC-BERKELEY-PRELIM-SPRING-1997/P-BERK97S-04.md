@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK97S-04
 kind: problem
-title: An upper bound on real parts forces two entire functions to be affine-related
+title: Entire $f,g$ with $\operatorname{Re}f\le k\operatorname{Re}g$ satisfy $f=ag+b$
 classification:
   areas:
   - prelim
