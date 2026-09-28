@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HFGO33
 kind: problem
-title: Define a cyclotomic extension
+title: Cyclotomic extension of a field
 classification:
   areas: [algebra]
   topics: [Galois Theory]
