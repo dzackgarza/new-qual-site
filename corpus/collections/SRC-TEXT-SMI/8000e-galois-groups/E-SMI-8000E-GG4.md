@@ -29,13 +29,10 @@ Work problems 14, 15, 16, 17, page 557 of Dummit and Foote, then deduce Corollar
 :::
 
 ::: {.solution}
-We make explicit the number-theoretic input supplied by the cited exercise
-chain and then carry out the deduction of Corollary 28 [@DF04].
-
 <1>1. For every positive integer $m$, there are infinitely many primes $p$ with $p\equiv1\pmod m$.
 ::: {.proof}
-The case $m=1$ is immediate, so assume $m>1$. We use the standard
-cyclotomic-polynomial fact: if a prime $q$ does not divide $m$ and
+The case $m=1$ is immediate, so assume $m>1$. Recall that if a prime
+$q$ does not divide $m$ and
 $$
 q\mid\Phi_m(a),
 $$
@@ -68,7 +65,8 @@ $$
 q\mid\Phi_m(a).
 $$
 Then $q\nmid a$, in particular $q\nmid m$ and $q\ne p_i$ for every $i$.
-By the cyclotomic-order fact above,
+Since $q\nmid m$ and $q\mid\Phi_m(a)$, the image of $a$ in
+$\mathbf F_q^\times$ has order $m$, so
 $$
 q\equiv1\pmod m,
 $$
