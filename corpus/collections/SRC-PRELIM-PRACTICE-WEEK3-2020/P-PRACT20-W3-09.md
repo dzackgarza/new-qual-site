@@ -22,7 +22,7 @@ $$
 f ( x ) = { \frac { 1 } { 1 + x } } - { \frac { 1 } { 4 + x } } .
 $$
 
-At this point you can just start taking derivatives and notice a pattern, or you can expand each term in a Taylor Series about $x = 2$ . I’ll do the latter:
+Expand each term in a geometric series about $x = 2$:
 
 $$
 \begin{array} { c } { { f ( x ) = \displaystyle \frac { 1 } { 3 + ( x - 2 ) } - \displaystyle \frac { 1 } { 6 + ( x - 2 ) } = \displaystyle \frac { 1 } { 3 } \left( \displaystyle \frac { 1 } { 1 + \displaystyle \frac { ( x - 2 ) } { 3 } } \right) - \displaystyle \frac { 1 } { 6 } \left( \displaystyle \frac { 1 } { 1 + \displaystyle \frac { ( x - 2 ) } { 6 } } \right) } } \\ { { \displaystyle \qquad = \displaystyle \frac { 1 } { 3 } \sum _ { n = 0 } ^ { \infty } \frac { ( - 1 ) ^ { n } ( x - 2 ) ^ { n } } { 3 ^ { n } } - \displaystyle \frac { 1 } { 6 } \sum _ { n = 0 } ^ { \infty } \frac { ( - 1 ) ^ { n } ( x - 2 ) ^ { n } } { 6 ^ { n } } . } } \end{array}
