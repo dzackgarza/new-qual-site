@@ -36,7 +36,7 @@ is analytic.
 :::
 
 ::: {.solution}
-<1>1. Verify that $u$ is harmonic.
+<1>1. $u$ is harmonic.
 ::: {.proof}
 We have
 $$
@@ -57,7 +57,7 @@ $$
 everywhere on $\mathbb R^2$, so $u$ is harmonic.
 :::
 
-<1>2. Solve the Cauchy--Riemann equations for $v$.
+<1>2. The harmonic conjugates of $u$ are $v(x,y)=3x^2y-y^3+C$ with $C\in\mathbb R$.
 ::: {.proof}
 For
 $$
@@ -89,7 +89,7 @@ $$
 $$
 :::
 
-<1>3. Identify the analytic function.
+<1>3. The analytic function is $f(z)=z^3+iC$.
 ::: {.proof}
 Since
 $$
