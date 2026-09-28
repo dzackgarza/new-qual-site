@@ -109,7 +109,7 @@ $$
 \sum_{k=1}^{n} \frac{p}{k^{(p+1)}} &= \frac{1}{1^{(p)}}-\frac{1}{(n+1)^{(p)}}, \qquad 1^{(p)} = p!.
 \end{aligned}
 $$
-For $p=1,2$ these read $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$, $\sum_{k=1}^{n} k(k+1)(k+2) = \frac{n(n+1)(n+2)(n+3)}{4}$, $\sum_{k=1}^{n} \frac{1}{k(k+1)}=1-\frac{1}{n+1}$, and $\sum_{k=1}^{n} \frac{2}{k(k+1)(k+2)}=\frac{1}{2}-\frac{1}{(n+1)(n+2)}$.
+For $p=2,3$ the first identity reads $\sum_{k=1}^{n} k(k+1) = \frac{n(n+1)(n+2)}{3}$ and $\sum_{k=1}^{n} k(k+1)(k+2) = \frac{n(n+1)(n+2)(n+3)}{4}$; for $p=1,2$ the second reads $\sum_{k=1}^{n} \frac{1}{k(k+1)}=1-\frac{1}{n+1}$ and $\sum_{k=1}^{n} \frac{2}{k(k+1)(k+2)}=\frac{1}{2}-\frac{1}{(n+1)(n+2)}$.
 
 :::
 
