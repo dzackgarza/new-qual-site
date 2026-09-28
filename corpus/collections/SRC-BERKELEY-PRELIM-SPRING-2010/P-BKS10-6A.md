@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-6A
 kind: problem
-title: Count subfields of the splitting field of x to the fifth minus two
+title: Number of subfields of the splitting field of $x^5-2$ over $\QQ$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-How many subfields does the splitting field of \(x^5-2\) over \(\mathbb Q\) have?
+How many subfields does the splitting field of $x^5-2$ over $\mathbb Q$ have?
 :::
 
 ::: {.solution}
