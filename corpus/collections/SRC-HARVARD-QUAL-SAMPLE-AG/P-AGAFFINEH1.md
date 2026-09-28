@@ -231,6 +231,6 @@ But $X$ is not quasi-compact, whereas every affine scheme is quasi-compact.  Hen
 
 <1>7. Q.E.D.
 ::: {.proof}
-Step <1>4 proves the Noetherian statement, step <1>5 gives the weakening, and step <1>6 shows why quasi-compactness is essential.
+Step <1>4 proves the Noetherian statement, step <1>5 gives the weakening, and step <1>6 shows that quasi-compactness cannot be omitted.
 :::
 :::
