@@ -21,10 +21,10 @@ prove or disprove that $C_6$ is isomorphic to a subgroup of it.
 :::
 
 ::: {.solution}
-$C_6$ is not a subgroup of $A$ because in $\RR^*$, if $r\neq\pm1$, then $r^6\neq1$, or of $D$ because if $s\in D$ and $s$ is not the identity, $s$ has a cycle decomposition of the form $(ab)(cd)$, $(abc)$ or $(abcd)$, and these have orders $2$, $3$ and $4$.
+$C_6$ is not a subgroup of $A$ because in $\RR^*$, if $r\neq\pm1$, then $r^6\neq1$, or of $D$ because if $s\in D$ and $s$ is not the identity, $s$ has a cycle decomposition of the form $(ab)$, $(ab)(cd)$, $(abc)$ or $(abcd)$, and these have orders $2$, $2$, $3$ and $4$.
 $C_6$ is a subgroup of $B$, $C$ and $E$ because $\cos(\pi/3)+i\sin(\pi/3)\in B$, $(1,1)\in C$, and
 $$
-\begin{pmatrix}\cos(2\pi/3)&-\sin(2\pi/3)\\\sin(2\pi/3)&\cos(2\pi/3)\end{pmatrix}\in E
+\begin{pmatrix}\cos(\pi/3)&-\sin(\pi/3)\\\sin(\pi/3)&\cos(\pi/3)\end{pmatrix}\in E
 $$
 all have order $6$.
 :::
