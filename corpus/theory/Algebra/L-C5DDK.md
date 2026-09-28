@@ -25,5 +25,5 @@ Then $A|_W-\lambda\id_W$ is not injective, and a nonzero $w\in W$ with $Aw=\lamb
 :::
 
 ::: {.example}
-The finite-dimensionality of $V$ is used: multiplication by $x$ on $V=W=k[x]$ has no eigenvector, since $xf=\lambda f$ has no nonzero solution $f\in k[x]$ by comparing degrees.
+A linear operator on an infinite-dimensional vector space over an algebraically closed field need not have an eigenvector: multiplication by $x$ on $V=W=k[x]$ has no eigenvector, since $xf=\lambda f$ has no nonzero solution $f\in k[x]$ by comparing degrees.
 :::
