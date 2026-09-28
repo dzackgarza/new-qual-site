@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $n \in \mathbb { N }$ . Prove that the equation $\exp ( z ) = a z ^ { n }$ has n solutions in the open unit disk D $\mathrm { i f } \ | a | > \mathrm { e }$ and none $\begin{array} { r } { \mathrm { i f ~ } | a | < \frac { 1 } { \mathrm { e } } } \end{array}$
+Let $n \in \NN$. Prove that the equation $\exp(z) = a z^n$ has $n$ solutions in the open unit disk $D$ if $\abs{a} > e$ and none if $\abs{a} < \frac{1}{e}$.
 :::
 
 ::: {.solution}
