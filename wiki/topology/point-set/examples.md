@@ -47,17 +47,17 @@ where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma
 ::: {.example title="Spaces that serve as counterexamples"}
 \envlist
 
-- Finite sets with the discrete topology.
-- Subspaces of $\RR$ such as $(a, b)$, $(a, b]$, $(a, \infty)$, and $\ts{0} \union \ts{1/n\suchthat n\geq 1}$.
-- $\QQ$.
-- The topologist's sine curve.
-- One-point compactifications.
-- $\RR^\omega$, the countable product of copies of $\RR$, with the product, box, and uniform topologies.
-- The Hawaiian earring.
-- The Cantor set.
-- Quaternionic projective space $\HP^n$.
-- The dunce cap.
-- The Alexander horned sphere.
+- A finite set with at least two points and the discrete topology is compact and Hausdorff and not connected.
+- $(a, b)$ and $(a,\infty)$ are homeomorphic to $\RR$ and not compact; $(a,b]$ is neither open nor closed in $\RR$; $\ts{0} \union \ts{1/n\suchthat n\geq 1}$ is compact and countable, and $0$ is not an isolated point.
+- $\QQ$ is totally disconnected, not discrete, and not locally compact.
+- The topologist's sine curve is connected, not path connected, and not locally connected.
+- The one-point compactification of a locally compact Hausdorff space is compact Hausdorff; that of $\QQ$ is compact and not Hausdorff.
+- $\RR^\omega$, the countable product of copies of $\RR$, is connected and metrizable in the product topology, metrizable and not connected in the uniform topology, and neither connected nor metrizable in the box topology.
+- The Hawaiian earring is path connected and locally path connected and not semilocally simply connected, so it has no universal cover.
+- The Cantor set is compact, uncountable, and totally disconnected, with no isolated points.
+- Quaternionic projective space $\HP^n$ has a CW structure with one cell in each dimension $0,4,\ldots,4n$, so $H_k(\HP^n)\cong\ZZ$ for $k\in\ts{0,4,\ldots,4n}$ and $H_k(\HP^n)=0$ otherwise.
+- The dunce cap is contractible, and no triangulation of it has a free edge, so it is not collapsible.
+- The Alexander horned sphere is an embedding $S^2\injects S^3$ one of whose complementary components is not simply connected, so the Schoenflies theorem fails in dimension $3$.
 
 :::
 
@@ -108,11 +108,6 @@ where $\mathbb M$ is the Möbius band, $\mathbb K$ the Klein bottle, and $\Sigma
 :::
 
 ### Alternative topologies
-
-::: {.example title="Topologies used for counterexamples"}
-The discrete, indiscrete, cofinite, and uniform topologies.
-
-:::
 
 ::: {.example title="The cofinite topology"}
 Let $X$ be a set with the cofinite topology.
