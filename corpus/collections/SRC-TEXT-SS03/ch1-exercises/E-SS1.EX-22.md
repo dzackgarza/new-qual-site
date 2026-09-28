@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-22
 kind: problem
-title: "SS 1.22: The integers are not a finite union of arithmetic progressions with distinct steps"
+title: $\NN$ is not a finite disjoint union of arithmetic progressions with distinct steps
 classification:
   areas:
   - complex-analysis
@@ -51,7 +51,7 @@ On the right, a denominator $1-z^{d_j}$ vanishes at $\zeta$ exactly when $D\mid 
 \[
 \frac{d}{dz}(1-z^D)\bigg|_{z=\zeta}=-D\zeta^{D-1}\ne0.
 \]
-Hence the right side has a genuine pole at $\zeta$, contradicting regularity of the left side.
+The other terms are regular at $\zeta$, so the right side has a pole at $\zeta$, contradicting regularity of the left side.
 
 Therefore $D=1$. Since the steps are distinct positive integers, there is only one progression, and its step is $1$. A progression $\{a,a+1,a+2,\ldots\}$ equals all of $\mathbb N$ only when $a=1$. Thus the only such partition is the trivial one $a=d=1$.
 :::
