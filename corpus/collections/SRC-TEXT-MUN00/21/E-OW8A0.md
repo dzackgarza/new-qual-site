@@ -30,7 +30,7 @@ If $d$ is a metric for the topology of $X$, show that $d \mid A \times A$ is a m
 :::
 
 ::: {.solution}
-The restriction $d_A=d|_{A\times A}$ is plainly a metric on $A$. For $a\in A$ and $r>0$, its open ball is
+The restriction $d_A=d|_{A\times A}$ is a metric on $A$, since the metric axioms for $d$ hold in particular for points of $A$. For $a\in A$ and $r>0$, its open ball is
 \[
 B_{d_A}(a,r)=\{x\in A:d(a,x)<r\}=A\cap B_d(a,r).
 \]
