@@ -35,6 +35,5 @@ or
 \]
 In the first case $\phi$ is injective. In the second case $\phi(x)=0$ for every $x\in F$, so $\phi$ is the zero map. Thus every ring homomorphism from a field is either zero or injective.
 
-If ring homomorphisms are required to preserve $1$, the zero case is excluded whenever $R
-e0$.
+If ring homomorphisms are required to preserve $1$, the zero case is excluded whenever $R\ne0$.
 :::
