@@ -132,7 +132,7 @@ E
 \quad\text{and}\quad
 \mathbb Q.
 $$
-Both are of course normal over $\mathbb Q$.
+Both are normal over $\mathbb Q$.
 :::
 
 ## (ii) $g(X)=X^5-20X+4$
