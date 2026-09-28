@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-01
 kind: problem
-title: Compute $\lim (n^n/n!)^{1/n}$
+title: Limit of $(n^n/n!)^{1/n}$
 classification:
   areas:
   - prelim
