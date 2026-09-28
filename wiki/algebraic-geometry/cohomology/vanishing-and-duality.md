@@ -9,37 +9,33 @@ topics:
 
 # Vanishing and duality
 
-Two theorems whose hypotheses control both the statements and their proofs.
-
 [[T-5IOUR]]
 
-The proof separates into two uses of its hypotheses.
-Noetherianness supplies coherent ideals and finite subcovers, and both can be replaced: the criterion survives for quasicompact quasi-separated schemes with quasicoherent ideals.
-Quasicompactness cannot be dropped, and the witness is an infinite disjoint union of affines — all higher cohomology vanishes, the scheme is not affine.
+The criterion holds for quasicompact quasi-separated schemes, with $\mci$ ranging over quasicoherent ideal sheaves.
+It fails without quasicompactness: $X=\coprod_{n\in\NN}\Spec k$ has $H^p(X,\mcf)=\prod_nH^p(\Spec k,\mcf|_{\Spec k})=0$ for every quasicoherent $\mcf$ on $X$ and every $p>0$, and $X$ is not quasicompact, hence not affine.
 
-The two uses of the hypotheses are independent, so weakening either one must be checked at the step where it enters.
-
-## Duality, and the theorem it makes computable
+## Serre duality and Riemann--Roch for curves
 
 [[T-COHSD]]
 
-In any dimension, duality is naturally stated using $\omega_X$ and the perfect pairing, with lower-dimensional forms obtained by specialization.
-Smoothness is what identifies the dualizing sheaf with the top forms; properness is what makes the target $H^n(X,\omega_X) \cong k$ exist at all.
+Properness is needed for the pairing: $\AA^1_k$ is smooth of dimension $1$, $H^1(\AA^1_k,\omega_{\AA^1_k})=0$ by affine vanishing, and $H^0(\AA^1_k,\OO)=k[x]$ is infinite-dimensional.
 
 [[T-MWDVL]]
 
-The Euler-characteristic form $\chi(\OO(D)) = \deg D + 1 - g$ is linear in $D$, and duality turns the unknown $h^1$ into a second $h^0$ that can be counted.
+By Serre duality $h^1(\OO(D))=\ell(K-D)$, so $\chi(\OO(D))=\deg D+1-g$ is the identity $\ell(D)-\ell(K-D)=\deg D+1-g$.
+For $\deg D>2g-2$, $\ell(K-D)=0$ and $\ell(D)=\deg D+1-g$.
+At $D=0$, Riemann--Roch gives $\ell(K)=g$: the global regular differentials on a curve of genus $g$ form a $g$-dimensional space.
+At $D=K$, it gives $\deg K=2g-2$, which enters Riemann--Hurwitz in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
 
-Two specializations are used repeatedly.
-At $D = 0$ it says the global differentials on a curve of genus $g$ form a $g$-dimensional space.
-At $D = K$ it gives $\deg K = 2g-2$, the input to Riemann--Hurwitz in [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]].
-
-## One dimension up
+## Riemann--Roch for surfaces
 
 [[T-COHRRS]]
 
-The surface statement is the same theorem with the intersection pairing in place of the degree, and it is used for a different purpose: not to count sections but to force them to exist.
-Duality converts $h^2$ into $h^0(K-D)$, and the resulting inequality gives a standard criterion for forcing a divisor on a surface to be effective.
+By Serre duality $h^2(\OO_X(D))=h^0(\OO_X(K-D))$, so
+$$
+h^0(\OO_X(D))\ge\chi(\OO_X)+\tfrac12D\cdot(D-K)-h^0(\OO_X(K-D)).
+$$
+If $h^0(\OO_X(K-D))=0$ and $\chi(\OO_X)+\tfrac12D\cdot(D-K)>0$, then $h^0(\OO_X(D))>0$, and $D$ is linearly equivalent to an effective divisor.
 
 ## Finiteness and vanishing for ample twists
 
