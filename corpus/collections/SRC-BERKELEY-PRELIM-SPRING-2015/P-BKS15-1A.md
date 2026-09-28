@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-1A
 kind: problem
-title: Evaluate an integral and bound $22/7-\pi$
+title: The integral $\int_0^1 x^4(1-x)^4/(1+x^2)\,dx = 22/7-\pi$ and the bound $0<22/7-\pi<1/256$
 classification:
   areas:
   - prelim
@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 (a) Evaluate
-\[
+$$
 \int_0^1\frac{x^4(1-x)^4}{1+x^2}\,dx.
-\]
+$$
 (b) Prove that
-\[
+$$
 0<\frac{22}{7}-\pi<\frac1{256}.
-\]
+$$
 :::
 
 ::: {.solution}
