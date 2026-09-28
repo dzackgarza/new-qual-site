@@ -69,11 +69,11 @@ Thus $A$ is open both in $\mathbb R$ and in $Y=[-1,1]$. The set $B$ is open in $
 [-1,-\tfrac12)=Y\cap(-2,-\tfrac12),\qquad
 (\tfrac12,1]=Y\cap(\tfrac12,2),
 \]
-but it is not open in $\mathbb R$ because it contains the boundary points $\pm1$. The sets $C$ and $D$ are not open even in $Y$, since the included points $\pm\tfrac12$ have no sufficiently small relative neighborhood contained in the set; consequently they are not open in $\mathbb R$ either.
+but it is not open in $\mathbb R$: it contains $1$, and every open interval about $1$ contains points greater than $1$. The sets $C$ and $D$ are not open even in $Y$, since the included points $\pm\tfrac12$ have no sufficiently small relative neighborhood contained in the set; consequently they are not open in $\mathbb R$ either.
 
 Finally
 \[
 E=(-1,0)\cup\left((0,1)-\{1/n:n\ge2\}\right).
 \]
-The set $\{1/n:n\ge2\}$ has no accumulation point in $(0,1)$ except $0$, which is not in $E$. Hence every point of $E$ has an ordinary open interval contained in $E$, so $E$ is open in $\mathbb R$ and therefore also in $Y$.
+The only accumulation point of $\{1/n:n\ge2\}$ in $\mathbb R$ is $0$, which is not in $E$. Hence every point of $E$ has an ordinary open interval contained in $E$, so $E$ is open in $\mathbb R$ and therefore also in $Y$.
 :::
