@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS8.EX-11
 kind: problem
-title: "Cauchy inequalities and maximum modulus applications"
+title: $\abs{\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}}\le\frac{\abs z}{MR}$ for $\abs f<M$ on $D(0,R)$
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Schwarz Lemma
 relations: []
 review: draft
 audit:

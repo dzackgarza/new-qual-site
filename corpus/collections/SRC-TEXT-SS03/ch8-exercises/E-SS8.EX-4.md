@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-4
 kind: problem
-title: "SS 8.4: No holomorphic surjection from the disc onto the plane"
+title: No holomorphic surjection from the disc onto $\CC$
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

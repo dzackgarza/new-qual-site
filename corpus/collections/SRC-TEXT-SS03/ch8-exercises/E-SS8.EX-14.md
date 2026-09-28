@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-14
 kind: problem
-title: Conformal maps from the upper half-plane to the unit disk
+title: Conformal maps from the upper half-plane onto the disc
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

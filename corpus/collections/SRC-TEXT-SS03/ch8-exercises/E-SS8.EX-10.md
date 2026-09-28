@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-10
 kind: problem
-title: "SS 8.10: A Schwarz-type bound on the upper half-plane"
+title: A Schwarz-type bound on the upper half-plane
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Schwarz Lemma
+  - Automorphisms
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-10. Let $F : \mathbb { H }  \mathbb { C }$ be a holomorphic function that satisfies
+10. Let $F : \mathbb { H } \to \mathbb { C }$ be a holomorphic function that satisfies
 
 $$
 | F (z) | \leq 1 \quad \text { and } \quad F (i) = 0.

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-13
 kind: problem
-title: "SS 8.13: The pseudo-hyperbolic metric and the Schwarz-Pick inequality"
+title: The pseudo-hyperbolic metric and the Schwarz--Pick inequality
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Schwarz Lemma
+  - Automorphisms
 relations: []
 review: draft
 audit:
@@ -16,7 +18,6 @@ audit:
 - event: solution-written
   by: OpenAI GPT-5.6 Sol
   date: 2026-09-09
-
 ---
 
 ::: {.exercise}

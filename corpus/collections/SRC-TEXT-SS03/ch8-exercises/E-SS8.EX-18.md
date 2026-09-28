@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-18
 kind: problem
-title: "The conformal map of the disk extends to the boundary (Caratheodory)"
+title: Continuous extension of a conformal map of the disc to the boundary
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Riemann Mapping Theorem
+  - Conformal Maps
 relations: []
 review: draft
 audit:

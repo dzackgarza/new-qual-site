@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS8.EX-19
 kind: problem
-title: "SS 8.19: The plane slit along parallel rays is simply connected"
+title: The plane slit along parallel rays is simply connected
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 audit:

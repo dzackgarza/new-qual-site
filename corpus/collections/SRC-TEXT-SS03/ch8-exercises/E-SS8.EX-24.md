@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-24
 kind: problem
-title: "SS 8.24: Identities among the elliptic integrals K and K-prime"
+title: Identities between the elliptic integrals $K$ and $K'$
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Schwarz-Christoffel
+  - Integrals
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-12
 kind: problem
-title: "SS 8.12: Fixed points of holomorphic self-maps of the disc"
+title: Fixed points of holomorphic self-maps of the disc
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Schwarz Lemma
+  - Fixed Points
 relations: []
 review: draft
 audit:

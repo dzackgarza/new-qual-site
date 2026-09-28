@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-15
 kind: problem
-title: "Here are two properties enjoyed by automorphisms of the upper half-plane"
+title: An automorphism of $\HH$ is determined by the images of three boundary points
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Automorphisms
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

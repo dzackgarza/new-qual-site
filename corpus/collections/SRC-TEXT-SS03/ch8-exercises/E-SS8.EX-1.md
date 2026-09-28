@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-1
 kind: problem
-title: "A holomorphic mapping  is a local bijection on U if for every  there exists an o"
+title: A holomorphic map is a local bijection exactly where $f'\ne0$
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Rouché
 relations: []
 review: draft
 audit:

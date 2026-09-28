@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-17
 kind: problem
-title: "If  for  , prove that"
+title: The area integrals of $\abs{\psi_\alpha'}^2$ and $\abs{\psi_\alpha'}$ over the disc
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Blaschke Factors
+  - Integrals
 relations: []
 review: draft
 audit:

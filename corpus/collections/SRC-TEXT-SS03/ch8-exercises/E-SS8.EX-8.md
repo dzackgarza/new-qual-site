@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-8
 kind: problem
-title: "Harmonic function on the first quadrant with piecewise constant boundary values"
+title: A harmonic function on the first quadrant with piecewise constant boundary values
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

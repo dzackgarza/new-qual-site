@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-16
 kind: problem
-title: "SS 8.16: Disc automorphisms through the Cayley transform"
+title: Automorphisms of the disc through the Cayley transform
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Automorphisms
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

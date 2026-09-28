@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-5
 kind: problem
-title: "SS 8.5: A conformal map from the half-disc to the upper half-plane"
+title: A conformal map from the half-disc onto the upper half-plane
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 audit:

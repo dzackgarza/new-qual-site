@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-7
 kind: problem
-title: "Provide all the details in the proof of the formula for the solution of the Diri"
+title: The solution of the Dirichlet problem in a strip
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Harmonic Functions
 relations: []
 review: draft
 audit:

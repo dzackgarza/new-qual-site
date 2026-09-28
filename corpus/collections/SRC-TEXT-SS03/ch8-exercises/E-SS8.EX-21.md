@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-21
 kind: problem
-title: "We consider conformal mappings to triangles"
+title: Schwarz--Christoffel maps onto triangles
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Schwarz-Christoffel
 relations: []
 review: draft
 audit:

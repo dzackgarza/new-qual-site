@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-23
 kind: problem
-title: "SS 8.23: A conformal map onto a regular polygon"
+title: A conformal map onto a regular polygon
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Schwarz-Christoffel
 relations: []
 review: draft
 audit:

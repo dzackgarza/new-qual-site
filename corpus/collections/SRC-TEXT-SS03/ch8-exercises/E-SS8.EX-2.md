@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-2
 kind: problem
-title: "Supppose  is holomorphic near  and  , whi"
+title: Orthogonal curves through a nondegenerate critical point of $F$
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Holomorphic Functions
 relations: []
 review: draft
 audit:

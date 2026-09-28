@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-9
 kind: problem
-title: "SS 8.9: An unbounded harmonic function with zero boundary values"
+title: An unbounded harmonic function with zero boundary values
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Harmonic Functions
+  - Counterexamples
 relations: []
 review: draft
 audit:

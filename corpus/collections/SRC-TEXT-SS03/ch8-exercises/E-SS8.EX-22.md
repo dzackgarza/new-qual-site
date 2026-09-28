@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-22
 kind: problem
-title: "If  is a simply connected region bounded by a polygon with vertices  and angles "
+title: The Schwarz--Christoffel formula for maps from the disc onto a polygon
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Schwarz-Christoffel
 relations: []
 review: draft
 audit:

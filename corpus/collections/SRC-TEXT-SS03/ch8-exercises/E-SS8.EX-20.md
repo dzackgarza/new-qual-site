@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS8.EX-20
 kind: problem
-title: "Other examples of elliptic integrals providing conformal maps from the upper hal"
+title: Elliptic integrals mapping the upper half-plane onto rectangles
 classification:
   areas:
   - complex-analysis
-  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+  topics:
+  - Conformal Maps
+  - Schwarz-Christoffel
 relations: []
 review: draft
 audit:
