@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-03
 kind: problem
-title: Evaluate $\int_0^{2\pi}(2+\cos\theta)^{-1}\,d\theta$
+title: Integral of $1/(2+\cos\theta)$ over $[0,2\pi]$
 classification:
   areas:
   - prelim
