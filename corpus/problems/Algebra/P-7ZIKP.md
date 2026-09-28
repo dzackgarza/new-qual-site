@@ -83,18 +83,11 @@ The kernel of the composite consists exactly of those $(a_i)$ for which
 belongs to $\mathcal U$. Hence its kernel is $M_{\mathcal U,\mathfrak m}$, and the quotient is a field. Therefore $M_{\mathcal U,\mathfrak m}$ is maximal.
 :::
 
-<1>3. The coordinate examples are the principal-ultrafilter cases, while nonprincipal ultrafilters give genuinely non-coordinate maximal ideals.
+<1>3. If $\mathcal U$ is the principal ultrafilter at $j$, then $M_{\mathcal U,\mathfrak m}=M_{j,\mathfrak m}$; if $\mathcal U$ is nonprincipal, then $M_{\mathcal U,\mathfrak m}\neq M_{j,\mathfrak m'}$ for every $j$ and every maximal ideal $\mathfrak m'$ of $R$.
 ::: {.proof}
-If $\mathcal U$ is the principal ultrafilter at $j$, then
-\[
-S\in\mathcal U\iff j\in S,
-\]
-so
-\[
-M_{\mathcal U,\mathfrak m}=M_{j,\mathfrak m}.
-\]
-If $\mathcal U$ is nonprincipal, then no singleton belongs to $\mathcal U$, so membership in $M_{\mathcal U,\mathfrak m}$ cannot be determined by a single coordinate. Thus infinite direct products have maximal ideals beyond the obvious coordinate kernels.
+If $\mathcal U$ is principal at $j$, then $S\in\mathcal U\iff j\in S$, which gives the first equality.
+If $\mathcal U$ is nonprincipal, it contains every cofinite subset of $\NN$.
+Let $e_j\in K$ have $1$ in coordinate $j$ and $0$ elsewhere.
+Then $\{i:(e_j)_i\in\mathfrak m\}\supseteq\NN\setminus\{j\}$ lies in $\mathcal U$, so $e_j\in M_{\mathcal U,\mathfrak m}$, while $e_j\notin M_{j,\mathfrak m'}$ because $1\notin\mathfrak m'$.
 :::
-
-Hence, for an arbitrary commutative ring $R$, every maximal ideal of $R$ and every ultrafilter on the index set produce a maximal ideal in the countable product. These give the standard coordinate examples and, when nonprincipal ultrafilters are available, non-coordinate examples as well.
 :::
