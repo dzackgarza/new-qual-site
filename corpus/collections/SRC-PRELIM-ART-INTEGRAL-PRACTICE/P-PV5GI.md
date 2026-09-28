@@ -75,5 +75,4 @@ For the fifth, $u=\tan x/3$ gives $du=\tfrac13\sec^2x\,dx$ and
 \[
 \boxed{\arcsin\!\left(\frac{\tan x}{3}\right)+C.}
 \]
-The sign here is positive; the stored negative sign came from an incorrect sign in $du$.
 :::
