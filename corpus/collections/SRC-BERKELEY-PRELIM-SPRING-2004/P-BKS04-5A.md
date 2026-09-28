@@ -20,47 +20,59 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f \colon  { \mathbb { R } } \to  { \mathbb { C } }$ satisfies $f ^ { \prime } ( t ) + 2 i t f ( t ) = e ^ { 2 i t }$ and $f ( 0 ) = 0$ . Compute
+Suppose $f\colon\RR\to\CC$ satisfies $f'(t)+2itf(t)=e^{2it}$ and $f(0)=0$. Compute
 
 $$
-\operatorname* { l i m } _ { t \to + \infty } e ^ { i t ^ { 2 } } ( f ( t ) - f ( - t ) ) .
+\lim_{t\to+\infty}e^{it^2}(f(t)-f(-t)).
 $$
 
-You may assume $\textstyle \int _ { 0 } ^ { \infty } e ^ { - t ^ { 2 } } d t = { \sqrt { \pi } } / 2$
+You may assume $\int_0^\infty e^{-t^2}\,dt=\sqrt\pi/2$.
 :::
 
 ::: {.solution}
-Multiply the ODE by the integrating factor $e ^ { i t ^ { 2 } }$ , and integrate to get
+Multiply the ODE by the integrating factor $e^{it^2}$, and integrate to get
 
 $$
-e ^ { i t ^ { 2 } } f ( t ) = \int _ { 0 } ^ { t } e ^ { i x ^ { 2 } + 2 i x } d x
+e^{it^2}f(t)=\int_0^te^{ix^2+2ix}\,dx
 $$
 
-(The hypothesis $f ( 0 ) = 0$ implies that there is no constant of integration.)
-Substituting −t for t and subtracting, we get
+(The hypothesis $f(0)=0$ implies that there is no constant of integration.)
+Substituting $-t$ for $t$ and subtracting, we get
 
 $$
-\begin{array} { l } { { \displaystyle e ^ { i t ^ { 2 } } ( f ( t ) - f ( - t ) ) = \int _ { - t } ^ { t } e ^ { i x ^ { 2 } + 2 i x } d x } \ ~ } \\ { { \displaystyle ~ = e ^ { - i } \int _ { - t } ^ { t } e ^ { i ( x + 1 ) ^ { 2 } } d x } \ ~ } \\ { { \displaystyle ~ = e ^ { - i } \int _ { - t + 1 } ^ { t + 1 } e ^ { i z ^ { 2 } } d z } . } \end{array}
+\begin{aligned}
+e^{it^2}(f(t)-f(-t))&=\int_{-t}^te^{ix^2+2ix}\,dx\\
+&=e^{-i}\int_{-t}^te^{i(x+1)^2}\,dx\\
+&=e^{-i}\int_{-t+1}^{t+1}e^{iz^2}\,dz.
+\end{aligned}
 $$
 
-Since $e ^ { i z ^ { 2 } }$ is an even function, the limit as $t \to + \infty$ equals $2 e ^ { - i } I$ , where $\begin{array} { r } { I : = \operatorname* { l i m } _ { R \to + \infty } \int _ { 0 } ^ { R } e ^ { i z ^ { 2 } } d z } \end{array}$ (assuming for now that the latter limit exists).
-Apply Cauchy’s Theorem to the triangular contour from 0 to R to $R + R i$ and back to 0. The vertical part contributes
+Since $e^{iz^2}$ is an even function, the limit as $t\to+\infty$ equals $2e^{-i}I$, where $I\coloneqq\lim_{R\to+\infty}\int_0^Re^{iz^2}\,dz$ (assuming for now that the latter limit exists).
+Apply Cauchy's theorem to the triangular contour from $0$ to $R$ to $R+Ri$ and back to $0$. The vertical part contributes
 
 $$
-\int _ { R } ^ { R + R i } e ^ { i z ^ { 2 } } d z = \int _ { 2 } ^ { R } e ^ { i ( R + t i ) ^ { 2 } } i d t ,
+\int_R^{R+Ri}e^{iz^2}\,dz=\int_0^Re^{i(R+ti)^2}\,i\,dt,
 $$
 
 whose absolute value is bounded by
 
 $$
-\begin{array} { l } { \displaystyle \int _ { 0 } ^ { R } { \lvert e ^ { i ( R + t i ) ^ { 2 } } \rvert d t } = \int _ { 0 } ^ { R } e ^ { - 2 R t } d t } \\ { \displaystyle \qquad = \frac { 1 } { 2 R } \int _ { 0 } ^ { 2 R ^ { 2 } } e ^ { - u } d u , } \end{array}
+\begin{aligned}
+\int_0^R\abs{e^{i(R+ti)^2}}\,dt&=\int_0^Re^{-2Rt}\,dt\\
+&=\frac{1}{2R}\int_0^{2R^2}e^{-u}\,du,
+\end{aligned}
 $$
 
-which goes to 0 as $R \to \infty$ . Thus
+which goes to $0$ as $R\to\infty$. Thus
 
 $$
-{ \begin{array} { r l r l } & { I = \displaystyle \operatorname* { l i m } _ { R \to \infty } \int _ { 0 } ^ { R + R i } e ^ { i z ^ { 2 } } d z \qquad } & & { { \mathrm { ( i f ~ t h e ~ l i m i t ~ e x i s t s ) } } } \\ & { = \displaystyle \operatorname* { l i m } _ { R \to \infty } \int _ { 0 } ^ { R } e ^ { i ( e ^ { i \pi / 4 } t ) ^ { 2 } } e ^ { i \pi / 4 } d t \qquad } & & { { \mathrm { ( i f ~ t h e ~ l i m i t ~ e x i s t s ) } } } \\ & { = e ^ { i \pi / 4 } \displaystyle \operatorname* { l i m } _ { R \to \infty } \int _ { 0 } ^ { R } e ^ { - t ^ { 2 } } d t \qquad } & & { { \mathrm { ( i f ~ t h e ~ l i m i t ~ e x i s t s ) } } } \\ & { = e ^ { i \pi / 4 } { \frac { \sqrt { \pi } } { 2 } } . } \end{array} }
+\begin{aligned}
+I&=\lim_{R\to\infty}\int_0^{R+Ri}e^{iz^2}\,dz&&\text{(if the limit exists)}\\
+&=\lim_{R\to\infty}\int_0^Re^{i(e^{i\pi/4}t)^2}e^{i\pi/4}\,dt&&\text{(if the limit exists)}\\
+&=e^{i\pi/4}\lim_{R\to\infty}\int_0^Re^{-t^2}\,dt&&\text{(if the limit exists)}\\
+&=e^{i\pi/4}\frac{\sqrt\pi}{2}.
+\end{aligned}
 $$
 
-Thus we now know that all the limits exist, and the answer is 2e $^ { - i } I = e ^ { - i + i \pi / 4 } \sqrt { \pi } .$
+Thus we now know that all the limits exist, and the answer is $2e^{-i}I=e^{-i+i\pi/4}\sqrt\pi$.
 :::
