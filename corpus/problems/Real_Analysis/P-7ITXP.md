@@ -32,40 +32,44 @@ m(V\sm H) = 0
 :::
 
 ::: {.solution}
-Condition (2) needs the containment $H \subseteq E \subseteq V$ to be equivalent to (1). With that containment, the equivalence is: (1) holds iff there exist $V \in G_\delta$ and $H \in F_\sigma$ with $H \subseteq E \subseteq V$ and $m(V \setminus H) = 0$.
+Condition (2) is read with $H \subseteq E \subseteq V$; see the remark below. Fix an open ball $B \supseteq E$.
 
-<1>1. (1) $\implies$ (2): for each $k$, hypothesis (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $m(G_k \setminus F_k) < 1/k$.
-    ::: {.proof}
-    hypothesis.
-    :::
+<1>1. (1) implies (2).
 
-<1>2. Set $V = \bigcap_k G_k$ (a $G_\delta$) and $H = \bigcup_k F_k$ (an $F_\sigma$); then $H \subseteq E \subseteq V$.
-    ::: {.proof}
-    $F_k \subseteq E \subseteq G_k$ for all $k$.
-    :::
+::: {.proof}
+For each $k$, (1) with $\eps = 1/k$ gives open $G_k$ and closed $F_k$ with $F_k \subseteq E \subseteq G_k$ and $m(G_k \setminus F_k) < 1/k$. Put $V = \bigcap_k G_k$, a $G_\delta$ set, and $H = \bigcup_k F_k$, an $F_\sigma$ set. Then $H \subseteq E \subseteq V$, and $V \setminus H \subseteq G_k \setminus F_k$ for each $k$, so $m(V \setminus H) < 1/k$ for every $k$.
+:::
 
-<1>3. $m(V \setminus H) = 0$.
-    ::: {.proof}
-    for each $k$, $V \setminus H \subseteq G_k \setminus F_k$ (since $V \subseteq G_k$ and $F_k \subseteq H$), so $m(V \setminus H) \le m(G_k \setminus F_k) < 1/k$; letting $k \to \infty$ gives $m(V \setminus H) = 0$.
-    :::
+<1>2. (2) implies (1).
 
-<1>4. (2) $\implies$ (1): write $V = \bigcap_m G_m$ and $H = \bigcup_m F_m$ with $G_m$ open decreasing and $F_m$ closed increasing.
-    ::: {.proof}
-    any $G_\delta$ is an intersection of open sets (take finite intersections to make them decreasing); similarly for $F_m$.
-    :::
+<2>1. There are open $G_1 \supseteq G_2 \supseteq \cdots$ with $\bigcap_m G_m = V \cap B$ and $m(G_1) < \infty$, and closed $F_1 \subseteq F_2 \subseteq \cdots$ with $\bigcup_m F_m = H$.
 
-<1>5. $\mu(G_m \setminus V) \to 0$ and $\mu(H \setminus F_m) \to 0$ as $m \to \infty$.
-    ::: {.proof}
-    continuity from above for $G_m \downarrow V$ (all have finite measure, $E$ bounded), and continuity from below for $F_m \uparrow H$ (with $m(H) \le m(V) < \infty$).
-    :::
+::: {.proof}
+Write $V = \bigcap_j U_j$ with $U_j$ open and $H = \bigcup_j K_j$ with $K_j$ closed, and put $G_m = B \cap U_1 \cap \cdots \cap U_m$ and $F_m = K_1 \cup \cdots \cup K_m$. Then $G_1 \subseteq B$ has finite measure. Since $E \subseteq B$, $E \subseteq V \cap B$.
+:::
 
-<1>6. Given $\eps > 0$, choose $m$ with $m(G_m \setminus V) < \eps/2$ and $m(H \setminus F_m) < \eps/2$; set $G = G_m$ and $F = F_m$; then $F \subseteq E \subseteq G$ and $m(G \setminus F) \le m(G \setminus V) + m(V \setminus H) + m(H \setminus F) < \eps$.
-    ::: {.proof}
-    $F_m \subseteq H \subseteq E \subseteq V \subseteq G_m$; the triangle inequality for measures via the three-set decomposition, with $m(V \setminus H) = 0$.
-    :::
+<2>2. $m(G_m \setminus (V \cap B)) \to 0$ and $m(H \setminus F_m) \to 0$.
 
-<1>7. Q.E.D.
-    ::: {.proof}
-    <1>1–<1>3 give (1) $\implies$ (2) and <1>4–<1>6 give (2) $\implies$ (1).
-    :::
+::: {.proof}
+The first is continuity from above for $G_m \downarrow V \cap B$, valid because $m(G_1) < \infty$. The second is continuity from below for $F_m \uparrow H$, with $m(H) \le m(B) < \infty$ because $H \subseteq E$.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Given $\eps > 0$, step <2>2 gives $m$ with $m(G_m \setminus (V\cap B)) < \eps/2$ and $m(H \setminus F_m) < \eps/2$. Put $G = G_m$ and $F = F_m$. Then $F \subseteq H \subseteq E \subseteq V \cap B \subseteq G$, and
+$$
+m(G \setminus F) \le m(G \setminus (V\cap B)) + m(V \setminus H) + m(H \setminus F) < \eps.
+$$
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2.
+:::
+:::
+
+::: {.remark}
+Erratum: condition (2) needs $H \subseteq E \subseteq V$. As printed, it holds for every $E$ with $V = H = \emptyset$, while (1) fails for a bounded non-measurable $E$.
 :::
