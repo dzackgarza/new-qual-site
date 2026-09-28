@@ -22,42 +22,29 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. It suffices to prove the claim for non-negative measurable $f$: the general $f \in L^1$ case follows by linearity on positive and negative parts.
+Write $\tau_h f \coloneqq f \circ \tau_h$, so $\tau_h f(x) = f(x+h)$, and let $m$ be Lebesgue measure on $\RR^n$.
+
+<1>1. For measurable $E$, $\int \tau_h \chi_E = m(E)$.
+
 ::: {.proof}
-$\int \tau_h f = \int \tau_h f^+ - \int \tau_h f^-$, and $\tau_h(f^\pm) = (\tau_h f)^\pm$.
+$\tau_h\chi_E(x) = \chi_E(x + h) = \chi_{E - h}(x)$, and $m(E - h) = m(E)$ by translation invariance of Lebesgue measure.
 :::
 
-<1>2. The claim holds for indicators: $\int \tau_h \chi_E = m(E - h) = m(E)$.
+<1>2. The claim holds for nonnegative simple $s = \sum_i a_i\chi_{E_i}$.
+
 ::: {.proof}
-$\tau_h\chi_E(x) = \chi_E(x + h)$, which equals $1$ iff $x \in E - h$; so $\tau_h\chi_E = \chi_{E - h}$ and $m(E - h) = m(E)$ by translation invariance of Lebesgue measure.
+By linearity and step <1>1, $\int \tau_h s = \sum_i a_i m(E_i) = \int s$.
 :::
 
-<1>3. The claim holds for non-negative simple functions $s = \sum_i a_i\chi_{E_i}$.
+<1>3. The claim holds for measurable $f \geq 0$.
+
 ::: {.proof}
-$\int \tau_h s = \sum_i a_i\int \tau_h\chi_{E_i} = \sum_i a_i m(E_i) = \int s$ by <1>2 and linearity.
+Choose simple functions $0 \leq s_k \nearrow f$ pointwise. Then $\tau_h s_k \nearrow \tau_h f$ pointwise, and the monotone convergence theorem with step <1>2 gives $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
 :::
 
-<1>4. The claim holds for all non-negative measurable $f$.
-<2>1. Choose simple functions $s_k \nearrow f$ pointwise.
-::: {.proof}
-standard approximation of a non-negative measurable function by simple functions.
-:::
-<2>2. $\tau_h s_k \nearrow \tau_h f$ pointwise.
-::: {.proof}
-translation is a bijection of $\RR^n$ and $s_k \nearrow f$.
-:::
-<2>3. $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
-::: {.proof}
-monotone convergence applied to <2>2, then <1>3, then monotone convergence applied to <2>1. <2>4. Q.E.D. Proof: <2>3.
-:::
+<1>4. Q.E.D.
 
-<1>5. The claim holds for all $f \in L^1$.
 ::: {.proof}
-by <1>1, apply <1>4 to $f^+$ and $f^-$, both non-negative and integrable.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>4 covers non-negative measurable $f$ and <1>5 covers signed integrable $f$.
+For $f \in L^1$, $(\tau_h f)^\pm = \tau_h(f^\pm)$; apply step <1>3 to $f^+$ and $f^-$ and subtract.
 :::
 :::
