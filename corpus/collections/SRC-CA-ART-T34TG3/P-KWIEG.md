@@ -37,7 +37,7 @@ $p'(x) = 16x^3 - 6$, which vanishes exactly at $x_0$; $p' < 0$ for $x < x_0$ and
 :::
 <2>2. $p$ has exactly two real zeros, both in $(0, 1)$.
 ::: {.proof}
-$p(0) = 3 > 0$ and $p(x_0) = 4x_0^4 - 6x_0 + 3 = \qty{\tfrac38}^{1/3}\qty{-\tfrac92} + 3 < 0$ (as $x_0 < 2/3$), and $p(1) = 1 > 0$; so by the intermediate value theorem and monotonicity (<2>1) there is exactly one root in $(0, x_0)$ and one in $(x_0, 1)$, and none elsewhere on $\RR$ (for $x < 0$, $p(x) > p(0) > 0$; for $x \ge 1$, $p(x) \ge p(1) > 0$).
+$p(0) = 3 > 0$ and $p(x_0) = 4x_0^4 - 6x_0 + 3 = \qty{\tfrac38}^{1/3}\qty{-\tfrac92} + 3 < 0$ (as $x_0^3 = \tfrac38 > \tfrac{8}{27}$, so $x_0 > 2/3$), and $p(1) = 1 > 0$; so by the intermediate value theorem and monotonicity (<2>1) there is exactly one root in $(0, x_0)$ and one in $(x_0, 1)$, and none elsewhere on $\RR$ (for $x < 0$, $p(x) > p(0) > 0$; for $x \ge 1$, $p(x) \ge p(1) > 0$).
 :::
 
 <1>3. The remaining two roots form a conjugate pair $z, \bar z$ with $1 < |z| < 2$.
