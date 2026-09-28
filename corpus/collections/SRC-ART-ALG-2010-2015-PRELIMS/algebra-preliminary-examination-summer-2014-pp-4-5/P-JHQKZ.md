@@ -46,7 +46,6 @@ $$
 &m+IM&\longmapsto(1+I)\otimes m.
 \end{aligned}
 $$
-We verify these maps without assuming that $R$ is commutative.
 
 <1>1. The tensor product and quotient have the required left
 $R$-module structures.
