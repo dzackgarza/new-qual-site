@@ -39,41 +39,27 @@ b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
     ii. Carefully state Fatou's Lemma and deduce the Monotone Converge Theorem from it.
 :::
 ::: {.solution}
-<1>1. (b)i. For a sequence of extended-real measurable $f_k$: $\inf_k f_k$ and $\sup_k f_k$ are measurable.
-    <2>1. $\sup_k f_k$ is measurable: for every $a$, $\{x : \sup_k f_k(x) \le a\} = \bigcap_k\{x : f_k(x) \le a\}$.
-        ::: {.proof}
-        $\sup_k f_k \le a$ iff $f_k \le a$ for every $k$; countable intersections of measurable sets are measurable.
-        :::
-    <2>2. $\inf_k f_k$ is measurable: for every $a$, $\{x : \inf_k f_k(x) < a\} = \bigcup_k\{x : f_k(x) < a\}$.
-        ::: {.proof}
-        the hint; $\inf_k f_k < a$ iff some $f_k < a$; countable unions of measurable sets are measurable.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>2 (using the sublevel/superlevel-set characterization of measurability).
-        :::
+<1>1. Part (a), with $H \subseteq E \subseteq V$ in condition 2.
 
-<1>2. (b)ii. Fatou's lemma: for measurable $f_n \ge 0$, $\int \liminf_n f_n \le \liminf_n \int f_n$.
-    ::: {.proof}
-    statement.
-    :::
+::: {.proof}
+This is [[P-7ITXP]]. If (1) holds, take $G_k$ and $F_k$ for $\eps = 1/k$ and put $V = \bigcap_k G_k$, $H = \bigcup_k F_k$; then $m(V \setminus H) \le m(G_k \setminus F_k) < 1/k$. Conversely, intersect $V$ with an open ball containing $E$, write it as a decreasing intersection of open sets of finite measure and $H$ as an increasing union of closed sets, and apply continuity of measure from above and below.
+:::
 
-<1>3. Deduce MCT from Fatou: if $0 \le f_1 \le f_2 \le \cdots$ and $f_n \uparrow f$ pointwise, then $\int f_n \uparrow \int f$.
-    <2>1. $\int f \ge \lim_n \int f_n$: by monotone convergence in the classical sense — but we must derive it from Fatou: $\int f = \int \liminf_n f_n \le \liminf_n \int f_n = \lim_n \int f_n$ (the last equality since $\int f_n$ is nondecreasing).
-        ::: {.proof}
-        Fatou applied to the nonnegative $f_n$; $\liminf = \lim$ for monotone sequences.
-        :::
-    <2>2. $\int f \le \lim_n \int f_n$: for each $m$, $f_m \le f$, so $\int f_m \le \int f$; hence $\lim_m \int f_m \le \int f$.
-        ::: {.proof}
-        monotonicity of the integral.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>2 give $\lim_n \int f_n = \int f$; and $\int f_n \le \int f$ shows the convergence is monotone from below.
-        :::
+<1>2. For measurable $f_k$ with values in $[-\infty, \infty]$, $\sup_k f_k$ and $\inf_k f_k$ are measurable.
 
-<1>4. Q.E.D.
-    ::: {.proof}
-    <1>1, <1>2, <1>3 settle (i) and (ii).
-    :::
+::: {.proof}
+For every $a \in \RR$, $\theset{\sup_k f_k \le a} = \bigcap_k\theset{f_k \le a}$ and $\theset{\inf_k f_k < a} = \bigcup_k\theset{f_k < a}$ are countable intersections and unions of measurable sets.
+:::
+
+<1>3. Fatou's lemma: for measurable $f_n \ge 0$, $\int \liminf_n f_n \le \liminf_n \int f_n$.
+
+<1>4. If $0 \le f_1 \le f_2 \le \cdots$ are measurable and $f_n \to f$ pointwise, then $\int f_n \to \int f$.
+
+::: {.proof}
+$\int f_n$ is nondecreasing, so $\lim_n\int f_n$ exists in $[0,\infty]$. Since $f_n \le f$, $\lim_n \int f_n \le \int f$. Since $f = \liminf_n f_n$, Fatou's lemma gives $\int f \le \liminf_n \int f_n = \lim_n \int f_n$.
+:::
+:::
+
+::: {.remark}
+Condition 2 of part (a) needs $H \subseteq E \subseteq V$; as printed, it holds for every $E$ with $V = H = \emptyset$.
 :::
