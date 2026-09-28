@@ -42,9 +42,11 @@ $$
 converge uniformly on $[0, 1]$ to a continuous function $g$ such that $g(x) = f(x)$ almost everywhere.
 :::
 
-::: {.solution}
-**Goal:** Prove space inclusions in (a) via Hölder's inequality and norm inequalities, and prove uniform convergence to an almost-everywhere representative in (b) via the Weierstrass $M$-test and Fourier uniqueness.
+::: {.hint}
+For (a), $\norm{f}_{L^1}\le\norm{f}_{L^2}$ on $[0,1]$ by Cauchy–Schwarz, and $\norm{c}_{\ell^2}^2\le\norm{c}_{\ell^\infty}\norm{c}_{\ell^1}\le\norm{c}_{\ell^1}^2$. For (b), the Weierstrass $M$-test with $M_n=\abs{\hat f(n)}$ gives uniform convergence, and an $L^1$ function whose Fourier coefficients all vanish is $0$ almost everywhere.
+:::
 
+::: {.solution}
 <1>1. Part (a): $L^2([0, 1]) \subseteq L^1([0, 1])$.
 ::: {.proof}
     <2>1. Let $f \in L^2([0, 1])$.
