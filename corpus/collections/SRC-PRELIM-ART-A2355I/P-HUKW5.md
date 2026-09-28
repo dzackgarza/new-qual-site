@@ -29,7 +29,7 @@ Compute the Jacobian matrix of $f(r,\theta) = (r\cos\theta, r\sin\theta)$ at $a 
 ::: {.proof}
 vector-valued function definition.
 :::
-<2>2. If the partial derivatives $\frac{\partial f_i}{\partial x_j}(a)$ exist at $a \in \mathbb{R}^n$ for all $1 \le i \le m$ and $1 \le j \le n$, the **Jacobian matrix** $J_f(a) \in M_{m \times n}(\mathbb{R})$ is defined as:
+<2>2. If the partial derivatives $\frac{\partial f_i}{\partial x_j}(a)$ exist at $a \in \mathbb{R}^n$ for all $1 \le i \le m$ and $1 \le j \le n$, the \dfn{Jacobian matrix} $J_f(a) \in M_{m \times n}(\mathbb{R})$ is defined as:
 \[
 J_f(a) = \begin{pmatrix}
 \frac{\partial f_1}{\partial x_1}(a) & \frac{\partial f_1}{\partial x_2}(a) & \cdots & \frac{\partial f_1}{\partial x_n}(a) \\
@@ -88,9 +88,8 @@ J_f(0, 0) = \begin{pmatrix}
 substituting values from <2>1 into <2>3.
 :::
 
-<1>4. Conclusion:
-The Jacobian matrix of $f(r, \theta) = (r\cos\theta, r\sin\theta)$ at $(0, 0)$ is $\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}$. Q.E.D.
+<1>4. Q.E.D.
 ::: {.proof}
-<1>1 through <1>3.
+Step <1>1 gives the definition, and steps <1>2 and <1>3 give $J_f(0,0) = \boxed{\begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}}$.
 :::
 :::
