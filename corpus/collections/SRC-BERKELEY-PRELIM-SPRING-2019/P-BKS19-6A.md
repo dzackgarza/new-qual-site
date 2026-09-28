@@ -19,7 +19,7 @@ audit:
 ::: {.problem}
 Let $n$ be a positive integer and let $a$ be a complex number.
 Prove that $a^n=1$ if and only if there are invertible $n\times n$ complex matrices $X,Y$ such that
-\[
+$$
 YX=aXY.
-\]
+$$
 :::
