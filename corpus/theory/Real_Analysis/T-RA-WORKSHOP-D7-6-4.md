@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-4
 kind: theorem
 title: Uniform convergence of derivatives and differentiability of the limit
-slogan: 'Uniform convergence of derivatives, plus convergence at one point, lets differentiation pass to the limit.'
+slogan: 'If $(f_n^\prime)$ converges uniformly and $(f_n(x_0))$ converges, then $f_n\to f$ uniformly, $f$ is differentiable, and $f^\prime=\lim f_n^\prime$.'
 classification:
   areas:
   - real-analysis
