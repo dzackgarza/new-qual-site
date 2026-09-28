@@ -19,7 +19,7 @@ prompts:
 ---
 
 ::: {.definition title="abelian category"}
-An abelian category is a category $\mca$ such that
+An \dfn{abelian category} is a category $\mca$ such that
 
 (i) for all objects $A, B$, $\Hom(A, B)$ is an abelian group;
 
@@ -35,10 +35,11 @@ An abelian category is a category $\mca$ such that
 :::
 
 ::: {.remark}
-Axioms (i)--(iii) are the additive axioms; (iv)--(vi) are what make homological algebra possible.
-Axiom (v) is the first isomorphism theorem in categorical form, and it is exactly what fails in the additive categories that are not abelian: filtered vector spaces and topological abelian groups both have kernels and cokernels, but a map there can be both mono and epi without being an isomorphism.
+Axioms (i)--(iii) say that $\mca$ is additive.
+Axiom (v) is the first isomorphism theorem in categorical form: with (iv), it makes the canonical map $\coim f\to\im f$ an isomorphism for every $f$, so a morphism that is both a monomorphism and an epimorphism is an isomorphism.
+The additive category of topological abelian groups has kernels and cokernels but is not abelian: the identity map from $\RR$ with the discrete topology to $\RR$ with the Euclidean topology is a monomorphism and an epimorphism but not an isomorphism.
 
 Examples include $\Ab$, $\mods{A}$ for a ring $A$, and $\mods{\OO_X}$ on a ringed space.
-Sheaves of abelian groups on a space form an abelian category, but the cokernel there is the *sheafified* presheaf cokernel.
-That single sheafification is why global sections is only left exact, and hence why sheaf cohomology exists at all.
+Sheaves of abelian groups on a space form an abelian category, whose cokernel is the sheafification of the presheaf cokernel ([[D-A7LCT]]).
+The functor $\Gamma(X,\wait)$ preserves kernels but not cokernels: on $X=\CC\sm\ts{0}$, $\exp\colon\OO_X\to\OO_X^\times$ is an epimorphism of sheaves, and $z\in\OO_X^\times(X)$ is not the image of any section of $\OO_X$ over $X$.
 :::
