@@ -9,20 +9,19 @@ topics:
 
 # Subschemes and points
 
-A closed subset of a scheme carries many scheme structures and an open subset carries one.
-That asymmetry generates most of the definitions on this page.
+A closed subset of a scheme carries many closed subscheme structures and an open subset carries one open subscheme structure.
 
 [[D-SCHSUB]]
 
-The ideal sheaf is the object, not the subset.
-$V(x)$ and $V(x^2)$ in $\AA^1$ have the same points and are different closed subschemes, and every construction below exists to say which of the many structures on a given closed set is meant.
+A closed subscheme is determined by its quasicoherent ideal sheaf: $V(x)$ and $V(x^2)$ in $\AA^1$ have the same underlying point and are different closed subschemes.
 
 [[D-SCHRED]]
 
 [[D-SCHIMG]]
 
-The scheme-theoretic image is the smallest closed subscheme through which the morphism factors. For a tangent vector mapping into $\AA^1$, it is the double point rather than the reduced origin.
-Chevalley's theorem covers the topological half of the same problem, that the set-theoretic image is only constructible.
+The scheme-theoretic image is the smallest closed subscheme through which the morphism factors.
+For $\Spec k[\varepsilon]/(\varepsilon^2)\to\AA^1_k$, $x\mapsto\varepsilon$, it is $V(x^2)$.
+By Chevalley's theorem, the set-theoretic image of a morphism of finite type of noetherian schemes is constructible; the image of $\AA^2_k\to\AA^2_k$, $(x,y)\mapsto(x,xy)$, is $\{x\neq0\}\cup\{(0,0)\}$, which is neither open nor closed.
 
 [[PR-SCHINT]]
 
@@ -30,9 +29,9 @@ Chevalley's theorem covers the topological half of the same problem, that the se
 
 [[D-SCHPTS]]
 
-Evaluation takes values in residue fields that vary with the point.
-A section of $\OO_X$ is not a function to a fixed set; its value at $x$ lives in $\kappa(x)$, and on $\Spec \ZZ$ that field changes from point to point.
-Specialisation then orders the points, and the classical picture is the bottom layer of that order — the closed points — with everything above it invisible.
+The value of $f\in\OO_X(U)$ at $x\in U$ is its image $f(x)\in\kappa(x)$.
+On $\Spec\ZZ$, $15$ has value $0$ in $\FF_3$ and in $\FF_5$, value $1$ in $\FF_7$, and value $15$ in $\QQ$ at the generic point.
+Specialization, $x\rightsquigarrow y$ when $y\in\overline{\{x\}}$, is a partial order on the points of $X$; for a variety over an algebraically closed field, the closed points are the points of the classical variety.
 Generic points and their use in "generically" are in [[algebraic-geometry/schemes/properties-from-the-ring|properties from the ring]].
 
 [[D-SCHDIM]]
