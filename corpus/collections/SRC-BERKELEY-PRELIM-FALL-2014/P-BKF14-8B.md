@@ -30,7 +30,7 @@ audit:
 ---
 
 ::: {.problem}
-Determine, up to isomorphism, all finite groups G such that G has exactly three conjugacy classes.
+Determine, up to isomorphism, all finite groups $G$ such that $G$ has exactly three conjugacy classes.
 :::
 
 ::: {.solution}
