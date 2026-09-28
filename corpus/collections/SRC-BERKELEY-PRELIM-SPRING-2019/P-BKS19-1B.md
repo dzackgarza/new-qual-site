@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 I=\int_0^{\pi/2}\frac{\sin x\cos x}{\sin^4x+\cos^4x}\,dx.
-\]
+$$
 :::
