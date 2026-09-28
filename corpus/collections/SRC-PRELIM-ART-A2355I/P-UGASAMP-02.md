@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGASAMP-02
 kind: problem
-title: Define continuity and prove that $x^2$ is continuous at $2$
+title: Continuity at a point and continuity of $x^2$ at $2$
 classification:
   areas: [prelim]
   topics: []
