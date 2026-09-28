@@ -63,9 +63,9 @@ Modulo $10$,
 $$
 17^N\equiv7^N.
 $$
-Since
+Also
 $$
-7^4\equiv1\pmod{10}.
+7^4=2401\equiv1\pmod{10}.
 $$
 By step <1>1, there is an integer $q$ such that $N=4q+1$. Therefore
 $$
