@@ -30,15 +30,15 @@ $$
 $$
 Since $\frac{1}{1-z}=\sum_{k=0}^{\infty}z^k$ for $\abs{z}<1$, we also have for $\abs{z}<1$
 $$
-\frac{n!}{(1-z)^{n+1}}=\left(\frac{d}{dz}\right)^n\sum_{k=0}^{\infty}z^k=\sum_{k=0}^{\infty}k(k-1)\cdots(k-n+1)z^{k-n}=\frac{n!}{(1-z)^{n+1}}.
+\frac{n!}{(1-z)^{n+1}}=\left(\frac{d}{dz}\right)^n\sum_{k=0}^{\infty}z^k=\sum_{k=0}^{\infty}k(k-1)\cdots(k-n+1)z^{k-n}.
 $$
-We may rewrite this as
+Dividing by $n!$ and multiplying by $z^n$, and applying the same identity with $j$ in place of $n$, gives for $0\le j\le n$
 $$
-\frac{z^n}{(1-z)^{n+1}}=\sum_{k=0}^{\infty}\binom{k}{n}z^k.
+\frac{z^j}{(1-z)^{j+1}}=\sum_{k=0}^{\infty}\binom{k}{j}z^k.
 $$
 Thus,
 $$
-f(z)=\sum_{k=0}^{\infty}\sum_{j=0}^{n}p_j\binom{k}{n}z^k=\sum_{j=0}^{n}p_j\sum_{k=0}^{\infty}\binom{k}{n}z^k=\sum_{j=0}^{n}p_j\frac{z^j}{(1-z)^{j+1}},
+f(z)=\sum_{k=0}^{\infty}\sum_{j=0}^{n}p_j\binom{k}{j}z^k=\sum_{j=0}^{n}p_j\sum_{k=0}^{\infty}\binom{k}{j}z^k=\sum_{j=0}^{n}p_j\frac{z^j}{(1-z)^{j+1}},
 $$
 which is a sum of rational functions, and is therefore rational.
 The series converges to this rational function in the disk $\abs{z}<1$, and the rational function has a pole on its boundary at $z=1$ (unless all $p_j=0$).
