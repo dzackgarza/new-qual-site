@@ -27,5 +27,5 @@ Let $f\colon X\to Y$ be continuous.
 :::
 
 ::: {.remark}
-Continuous maps need not send open sets to open sets or closed sets to closed sets.
+A continuous map need not be [[D-CTGON|open or closed]]: the constant map $\RR\to\RR$, $x\mapsto 0$, sends the open set $\RR$ to $\ts{0}$, which is not open, and $x\mapsto e^x$ sends the closed set $\RR$ to $(0,\infty)$, which is not closed in $\RR$.
 :::
