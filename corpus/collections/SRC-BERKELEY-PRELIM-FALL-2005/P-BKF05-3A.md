@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF05-3A
 kind: problem
-title: Conformally map a slit half-plane to the disk
+title: Conformal equivalence of a slit right half-plane with the unit disk
 classification:
   areas:
   - prelim
