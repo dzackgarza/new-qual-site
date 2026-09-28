@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF90-2
 kind: problem
-title: Evaluate a rational contour integral on the unit circle
+title: The contour integral $\frac1{2\pi i}\oint_{\abs z=1}\frac{dz}{(z-2)(1+2z)^2(1-3z)^3}$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
