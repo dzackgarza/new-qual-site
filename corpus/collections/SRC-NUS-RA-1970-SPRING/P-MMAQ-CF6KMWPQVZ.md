@@ -21,7 +21,7 @@ If $f$ is a finite real valued measurable function on a measurable set $E \subse
 :::
 
 ::: {.solution}
-**Goal:** Let $E \subseteq \RR$ be a Lebesgue measurable set and $f: E \to \RR$ be a measurable function. Prove that the graph $\Gamma(f) = \{(x, f(x)) : x \in E\} \subseteq \RR^2$ is Lebesgue measurable (with Lebesgue measure zero).
+Let $E \subseteq \RR$ be a Lebesgue measurable set, let $f: E \to \RR$ be measurable, and let $\Gamma(f) = \{(x, f(x)) : x \in E\} \subseteq \RR^2$ be its graph. We show that $\Gamma(f)$ is Lebesgue measurable with measure zero.
 
 <1>1. **Measurability of coordinate functions and difference mapping.**
   <2>1. Define the mapping $\Phi: E \times \RR \to \RR$ by $\Phi(x, y) = y - f(x)$.
@@ -60,6 +60,6 @@ If $f$ is a finite real valued measurable function on a measurable set $E \subse
     $$
   <2>6. Every subset of $\RR^2$ of Lebesgue outer measure zero is Lebesgue measurable, which gives an alternative proof that $\Gamma(f)$ is Lebesgue measurable.
 
-<1>4. **Conclusion.**
-  The graph $\Gamma(f)$ is measurable in $\RR^2$ (and has 2D measure zero). Q.E.D.
+<1>4. Q.E.D.
+  By steps <1>2 and <1>3, $\Gamma(f)$ is Lebesgue measurable in $\RR^2$ with $m_2(\Gamma(f)) = 0$.
 :::
