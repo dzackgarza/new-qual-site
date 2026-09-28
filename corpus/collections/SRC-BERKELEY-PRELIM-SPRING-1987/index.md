@@ -32,11 +32,11 @@ source:
   - P-BERK87S-13
   - P-BERK87S-14
   - id: P-8CA31
-    comment: Spring 1987 Problem 15; repeated exactly as an existing entire-function problem
+    comment: Problem 15
   - P-BERK87S-16
   - P-BERK87S-17
   - id: E-AMD-HO6G56UF
-    comment: Spring 1987 Problem 18; commuting diagonalizable matrices are simultaneously diagonalizable
+    comment: Problem 18
   - P-BERK87S-19
   - P-BERK87S-20
   date:
