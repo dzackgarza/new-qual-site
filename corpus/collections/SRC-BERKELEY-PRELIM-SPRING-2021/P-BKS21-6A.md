@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS21-6A
 kind: problem
-title: A sign-pattern criterion for invertibility
+title: Positive off-diagonal entries and negative row sums force $\det A\ne0$
 classification:
   areas:
   - prelim
