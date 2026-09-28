@@ -16,8 +16,7 @@ Let C be the triangle with vertices (0, 0), (1, 0), (1, 2). Find the path integr
 :::
 
 ::: {.solution}
-This is another classic Green’s theorem problem.
-We see
+Traverse the triangle counterclockwise and let $D$ be the enclosed region. By Green's theorem, with $\frac{\partial}{\partial x}(x^2y^3) - \frac{\partial}{\partial y}(xy) = 2xy^3 - x$,
 
 $$
 \int _ { \mathcal { C } } \mathbf { F } \cdot d \mathbf { r } = \int _ { D } ( 2 x y ^ { 3 } - x ) d x d y = \int _ { 0 } ^ { 1 } \int _ { 0 } ^ { 2 x } ( 2 x y ^ { 3 } - x ) d y d x = \int _ { 0 } ^ { 1 } ( 8 x ^ { 5 } - 2 x ^ { 2 } ) d x = { \frac { 4 } { 3 } } - { \frac { 2 } { 3 } } = { \frac { 2 } { 3 } } .
