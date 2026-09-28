@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E5WUU
 kind: problem
-title: Evaluate $\int_0^1\int_y^1\sin(x^2)\,dx\,dy$
+title: $\int_0^1\int_y^1\sin(x^2)\,dx\,dy$ by reversing the order of integration
 classification:
   areas:
   - prelim
