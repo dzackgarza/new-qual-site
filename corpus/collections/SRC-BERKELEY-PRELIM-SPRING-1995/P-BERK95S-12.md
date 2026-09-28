@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK95S-12
 kind: problem
-title: Evaluate $\int_0^{2\pi}(1-\cos n\theta)/(1-\cos\theta)\,d\theta$
+title: Integral of $(1-\cos n\theta)/(1-\cos\theta)$ over $[0,2\pi]$
 classification:
   areas:
   - prelim
@@ -50,8 +50,8 @@ $$
 =
 \frac{2(1-\cos(n\theta))}{2(1-\cos\theta)}.
 $$
-The quotient has a removable singularity at multiples of $2\pi$, so
-this identity is sufficient for the integral.
+The quotient has a removable singularity at each point of $2\pi\ZZ$,
+where both sides extend continuously with value $n^2$.
 :::
 
 <1>2.
