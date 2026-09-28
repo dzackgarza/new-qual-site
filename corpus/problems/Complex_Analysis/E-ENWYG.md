@@ -16,10 +16,10 @@ review: draft
 ---
 
 ::: {.exercise}
-Compute
+Evaluate
 \[
-\int_{[0, \infty]} {\log(x) \over (1+x^2)^2}\dx 
-.\]
+I\da \int_0^\infty {\log x\over(1+x^2)^2}\,dx.
+\]
 :::
 
 ::: {.solution}
@@ -69,6 +69,9 @@ By steps <1>1 to <1>3 and the residue theorem,
 .\]
 The real parts agree since $A=\pi/4$, and the imaginary parts give $-4\pi I=\pi^2$.
 :::
+:::
 
+::: {.remark}
+A contour with one logarithm also works: with the branch $-\pi/2<\arg z<3\pi/2$, integrate $\log z/(1+z^2)^2$ over the upper semicircle indented at $0$. The negative real axis contributes $I+i\pi A$, and the residue at the double pole $i$ is $\frac i4+\frac\pi8$, so $2I+i\pi A=-\frac\pi2+\frac{i\pi^2}4$ and again $I=-\pi/4$.
 :::
 

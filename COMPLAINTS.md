@@ -729,25 +729,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   #2. P-BKS13-3B treats $k\neq0$ and $k=0$ separately and proves convergence
   of the resulting Fourier series in both cases.
 
-### Candidates reported by the 2026-09-28 copy-review readers
-
-- **Object and need:** the cards below. Each line is a reader's report made
-  while repairing copy; the reader did not change the mathematics named here.
-- **Observed evidence:** the report text, one line per card.
-  - Duplicates under `CARD-04`, read in full: E-BXDQY / E-EUGUZ,
-    E-ENWYG / E-EOMTI, E-22P3T / E-2HIKG and E-AKNDW / E-CFHC4 state the same
-    mathematics, each pair inside SRC-UNSORTED-COMPLEX-ANALYSIS. E-2DPQC
-    (uniform convergence) and E-5AKU5 (locally uniform) differ and stay.
-    Merging retires an `E-*` address, which `AGENTS.md` makes permanent, and
-    the schema has no duplicate relation; the retirement mechanism is the
-    owner's decision.
-- **Impact and owner:** statement and structure lines are data defects of
-  urgency 1 in `AGENTS.md`; proof gaps and layout are authoring work.
-- **Uncertainty:** every line is an unverified reader report. None is a
-  finding until someone reads the card and its source.
-- **Repair:** read each card, confirm or reject the line, repair confirmed
-  defects on the card, and delete the line in the repairing commit.
-
 ## Workflow and rendering papercuts
 
 ### Overlapping workstream owners edited the same Author-solutions card

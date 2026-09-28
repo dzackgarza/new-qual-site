@@ -154,8 +154,10 @@ will write.
 “homework problem”, “qual problem”, “review-sheet question”, and similar labels
 describe an appearance in a source collection, not different mathematical
 objects. The collection/source kind and its `ProblemEntry.comment` preserve that
-appearance. Existing `E-*` ids remain permanent addresses; the prefix does not
-declare a card kind. An authored `::: exercise` fence likewise records how the
+appearance. Existing `E-*` ids are not renamed to another prefix; the prefix does not
+declare a card kind. One statement has one card: when reading proves two cards state the
+same mathematics, merge them into one, repoint every collection and wiki reference to the
+survivor, and delete the other card and its id. An authored `::: exercise` fence likewise records how the
 source presented the item and parses as a problem section.
 
 Good work on this corpus is reading mathematics, understanding what a statement

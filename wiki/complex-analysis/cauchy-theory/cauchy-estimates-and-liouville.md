@@ -89,7 +89,6 @@ Other theorems whose conclusion is that a holomorphic function is constant are c
 [[E-FZLDN]]
 [[E-BPSOU]]
 [[E-4NGIV]]
-[[E-EUGUZ]]
 [[E-IPIKC]]
 [[E-GQMTN]]
 [[E-OEEU4]]

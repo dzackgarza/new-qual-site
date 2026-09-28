@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BXDQY
 kind: problem
-title: Entire functions $f,g$ with $\abs f\le\abs g$
+title: Entire functions with $\abs f\le\abs g$ satisfy $f=cg$
 classification:
   areas:
   - complex-analysis
@@ -16,7 +16,7 @@ review: draft
 
 ::: {.exercise}
 Suppose $f$ and $g$ are entire and $\abs{f(z)}\leq \abs{g(z)}$ for all $z\in\CC$.
-What conclusion can you draw?
+Show that $f=cg$ for some constant $c$.
 :::
 
 ::: {.solution}

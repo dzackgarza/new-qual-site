@@ -15,7 +15,6 @@ source:
   date:
     kind: unknown
   problems:
-  - id: E-22P3T
   - id: E-24ETT
   - id: E-26QQP
   - id: E-27X7K
@@ -82,7 +81,6 @@ source:
   - id: E-BVT72
   - id: E-BXDQY
   - id: E-C5QHZ
-  - id: E-CFHC4
   - id: E-CFTRQ
   - id: E-CLMEK
   - id: E-CLSFF
@@ -100,8 +98,6 @@ source:
   - id: E-EMISN
   - id: E-ENJAF
   - id: E-ENWYG
-  - id: E-EOMTI
-  - id: E-EUGUZ
   - id: E-FCTXH
   - id: E-FCYUM
   - id: E-FJHDQ
