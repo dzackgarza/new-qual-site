@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-14
 kind: problem
-title: Finitely generated subgroups of $\mathbb Q$ and $\mathbb Q/\mathbb Z$
+title: Finitely generated subgroups of $\QQ$ and $\QQ/\ZZ$
 classification:
   areas:
   - prelim
