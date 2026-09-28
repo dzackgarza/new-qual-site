@@ -19,5 +19,6 @@ An \dfn{$n$-manifold} is a [[D-ZFRV4|Hausdorff space]] $M$ in which every point 
 :::
 
 ::: {.remark}
-Many texts also require a manifold to be second countable, which excludes spaces such as the long line.
+The definition of a topological manifold in [@Lee12] also requires $M$ to be [[D-23NTI|second-countable]].
+The open long line is a Hausdorff space in which every point has an open neighborhood homeomorphic to $\RR$, and it is not second-countable.
 :::
