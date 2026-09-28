@@ -78,8 +78,8 @@ $$
 $$
 
 ::: {.proof}
-This is the tangent-space definition in Zaidenberg Definitions 6.1. The
-linear map
+The Zariski tangent space at $p$ is the kernel of the differentials of
+generators of $I(X)$, that is, $T_pX=\ker dF(p)$. The linear map
 $$
 dF(p):\CC^n\longrightarrow\CC^m
 $$
@@ -97,8 +97,7 @@ $$
 $$
 
 ::: {.proof}
-By the Jacobian criterion, equivalently by the source definition of a simple
-point,
+By the Jacobian criterion,
 $$
 p\text{ smooth}
 \quad\Longleftrightarrow\quad
