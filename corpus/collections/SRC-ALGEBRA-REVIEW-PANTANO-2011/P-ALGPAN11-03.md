@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-03
 kind: problem
-title: Which direct product of cyclic groups is not cyclic
+title: Cyclicity of direct products of cyclic groups
 classification:
   areas:
   - algebra
@@ -29,7 +29,7 @@ Which of the listed direct products is not cyclic?
 ::: {.solution}
 A finite direct product of cyclic groups is cyclic exactly when the factor orders are pairwise coprime.
 
-<1>1. Apply the criterion to the five choices.
+<1>1. Among the five choices, only (D), $G_{22}\times G_{33}$, is not cyclic.
 ::: {.proof}
 The orders in (A), (B), (C), and (E) are pairwise coprime:
 \[
@@ -48,5 +48,8 @@ In (D),
 so $G_{22}\times G_{33}$ is not cyclic.
 :::
 
-Hence the answer is $\boxed{\text{(D)}}$.
+<1>2. Q.E.D.
+::: {.proof}
+By step <1>1, the answer is $\boxed{\text{(D)}}$.
+:::
 :::
