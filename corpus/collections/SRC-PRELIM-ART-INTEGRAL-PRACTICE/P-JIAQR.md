@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JIAQR
 kind: problem
-title: Evaluate $\int\frac{x}{1+x^4}\,dx$
+title: $\int\frac{x}{1+x^4}\,dx$
 classification:
   areas:
   - prelim
