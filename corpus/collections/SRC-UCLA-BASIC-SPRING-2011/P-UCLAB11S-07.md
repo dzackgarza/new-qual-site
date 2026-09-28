@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB11S-07
 kind: problem
-title: Existence of a real root of x fifth minus three x plus one
+title: Existence of a real root of $x^5-3x+1$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
