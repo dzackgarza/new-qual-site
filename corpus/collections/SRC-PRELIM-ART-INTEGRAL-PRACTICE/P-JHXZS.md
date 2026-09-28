@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHXZS
 kind: problem
-title: Evaluate $\int 2018^x\,dx$
+title: $\int 2018^x\,dx$
 classification:
   areas:
   - prelim
