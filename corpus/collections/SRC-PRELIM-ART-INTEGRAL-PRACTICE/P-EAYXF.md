@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EAYXF
 kind: problem
-title: Evaluate $\int\frac{e^x}{e^x+1}\,dx$
+title: $\int\frac{e^x}{e^x+1}\,dx$
 classification:
   areas:
   - prelim
