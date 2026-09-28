@@ -27,43 +27,25 @@ Give an example of an exact sequence $0 \to \ZZ^s \to \ZZ^t \to C \to 0$ that do
 :::
 
 ::: {.solution}
-<1>1. Let $p: B \to \ZZ^t$ be the surjection, and let $e_1, \ldots, e_t$ be the standard generators of $\ZZ^t$.
+Write the sequence as $0 \to A \xrightarrow{i} B \xrightarrow{p} \ZZ^t \to 0$, and let $e_1, \ldots, e_t$ be the standard basis of $\ZZ^t$. Since $p$ is surjective, choose $b_i \in B$ with $p(b_i) = e_i$ for each $i$.
+
+<1>1. The homomorphism $s\colon \ZZ^t \to B$ with $s(e_i) = b_i$ satisfies $p \circ s = \id_{\ZZ^t}$.
 ::: {.proof}
-setup.
+Since $\ZZ^t$ is free on $e_1, \ldots, e_t$, the formula $s(\sum_i n_i e_i) = \sum_i n_i b_i$ defines a homomorphism. Then $p(s(\sum_i n_i e_i)) = \sum_i n_i p(b_i) = \sum_i n_i e_i$.
 :::
 
-<1>2. Choose $b_i \in B$ with $p(b_i) = e_i$ for each $i$.
+<1>2. The map $\Psi\colon A \times \ZZ^t \to B$, $\Psi(a, z) = i(a) + s(z)$, is an isomorphism.
 ::: {.proof}
-$p$ is surjective.
+$\Psi$ is a homomorphism because $i$ and $s$ are. If $\Psi(a, z) = 0$, applying $p$ and using $p \circ i = 0$ and step <1>1 gives $z = 0$; then $i(a) = 0$, so $a = 0$ because $i$ is injective. For $b \in B$, the element $b - s(p(b))$ lies in $\ker p = \operatorname{im} i$ by step <1>1, say $b - s(p(b)) = i(a)$; then $b = \Psi(a, p(b))$.
 :::
 
-<1>3. Define $s: \ZZ^t \to B$ by $s(\sum_i n_i e_i) = \sum_i n_i b_i$.
+<1>3. The sequence $0 \to \ZZ \xrightarrow{\cdot 2} \ZZ \to \ZZ/2 \to 0$ is exact, does not split, and $\ZZ \not\cong \ZZ \times \ZZ/2$.
 ::: {.proof}
-definition.
+Multiplication by $2$ is injective with image $2\ZZ$, the kernel of the quotient map $\ZZ \to \ZZ/2$. The group $\ZZ$ is torsion-free, while $(0, 1) \in \ZZ \times \ZZ/2$ has order $2$, so no isomorphism $\ZZ \cong \ZZ \times \ZZ/2$ exists. For the same reason every homomorphism $\sigma\colon \ZZ/2 \to \ZZ$ is zero, so the composite $\ZZ/2 \xrightarrow{\sigma} \ZZ \to \ZZ/2$ is zero rather than the identity, and the sequence does not split.
 :::
 
-<1>4. $s$ is a homomorphism with $p \circ s = \id_{\ZZ^t}$.
+<1>4. Q.E.D.
 ::: {.proof}
-$p(s(\sum n_i e_i)) = p(\sum n_i b_i) = \sum n_i p(b_i) = \sum n_i e_i$.
-:::
-
-<1>5. Hence the sequence splits, and $B \cong A \oplus \ZZ^t$.
-::: {.proof}
-a short exact sequence $0 \to A \to B \to \ZZ^t \to 0$ with a splitting $s$ (i.e. $p \circ s = \id$) gives $B \cong A \oplus \ZZ^t$ (the map $A \oplus \ZZ^t \to B$, $(a, z) \mapsto i(a) + s(z)$, is an isomorphism).
-:::
-
-<1>6. Example of a non-splitting sequence: $0 \to \ZZ \xrightarrow{\cdot 2} \ZZ \to \ZZ/2 \to 0$.
-::: {.proof}
-the map $\ZZ \to \ZZ$ is multiplication by $2$, and the quotient is $\ZZ/2$.
-:::
-
-<1>7. This sequence does not split, and $\ZZ \not\cong \ZZ \times \ZZ/2$.
-::: {.proof}
-if it split, then $\ZZ \cong \ZZ \oplus \ZZ/2$, but $\ZZ$ is torsion-free while $\ZZ \oplus \ZZ/2$ has a $\ZZ/2$ torsion summand, a contradiction.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>5 and <1>7.
+Step <1>2 gives $B \cong A \times \ZZ^t$, and step <1>3 gives the required example with $s = t = 1$ and $C = \ZZ/2$.
 :::
 :::
