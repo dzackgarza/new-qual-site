@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20C
 kind: problem
-title: "Strict inequality for Fourier transform of positive L^1 function"
+title: "Strict inequality $|\\hat f(\\xi)|<\\hat f(0)$ for a positive $L^1$ function"
 classification:
   areas:
   - real-analysis
@@ -29,7 +29,7 @@ Prove that the strict inequality $|\hat{f}(\xi)| < \hat{f}(0)$ holds for any $\x
 :::
 
 ::: {.solution}
-<1>1. Start from the ordinary Fourier-transform bound.
+<1>1. $|\widehat f(\xi)|\le\widehat f(0)$ for every $\xi\in\mathbb R^n$.
 ::: {.proof}
 Since $f>0$ and $f\in L^1(\mathbb R^n)$,
 \[
@@ -40,12 +40,12 @@ For any $\xi$,
 |\widehat f(\xi)|
 =\left|\int f(x)e^{-i x\cdot\xi}\,dx\right|
 \le \int f(x)\,dx
-=\widehat f(0),
+=\widehat f(0).
 \]
-with the harmless modification of the phase if a different Fourier normalization is used.
+The normalization $e^{-2\pi i x\cdot\xi}$ changes only the phase factor, and the same estimate holds.
 :::
 
-<1>2. Analyze the equality case.
+<1>2. If $\xi\ne0$ and $|\widehat f(\xi)|=\widehat f(0)$, then there is $c\in\mathbb C$ with $|c|=1$ and $e^{-ix\cdot\xi}=c$ for almost every $x$.
 ::: {.proof}
 Suppose for contradiction that $\xi\ne0$ and
 \[
@@ -79,7 +79,7 @@ e^{-ix\cdot\xi}=c
 for almost every $x$.
 :::
 
-<1>3. Rule out constant phase at nonzero frequency.
+<1>3. For $\xi\ne0$ and $|c|=1$, the function $x\mapsto e^{-ix\cdot\xi}$ is not equal to $c$ almost everywhere; hence $|\widehat f(\xi)|<\widehat f(0)$.
 ::: {.proof}
 For fixed $\xi\ne0$ and fixed $c\in\mathbb C$ with $|c|=1$, the set
 \[
@@ -87,7 +87,7 @@ For fixed $\xi\ne0$ and fixed $c\in\mathbb C$ with $|c|=1$, the set
 \]
 is a countable union of affine hyperplanes perpendicular to $\xi$. It therefore has Lebesgue measure zero.
 
-Thus the phase cannot equal the constant $c$ almost everywhere. This contradicts Step 2. Hence
+Thus the phase cannot equal the constant $c$ almost everywhere. By step <1>2, equality $|\widehat f(\xi)|=\widehat f(0)$ is therefore impossible for $\xi\ne0$, and step <1>1 gives
 \[
 \boxed{|\widehat f(\xi)|<\widehat f(0)\quad\text{for every }\xi\ne0.}
 \]
