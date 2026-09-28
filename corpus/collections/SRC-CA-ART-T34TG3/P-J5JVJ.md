@@ -42,7 +42,9 @@ $\sin t$ is symmetric about $t = \pi/2$.
 
 <1>3. $\int_0^{\pi/2} \log(\sin t)\,dt = -\frac{\pi}{2}\log 2$.
 ::: {.proof}
-standard result (e.g. via the substitution $t \mapsto \pi/2 - t$ and adding, or via the identity $\sin t = 2\sin(t/2)\cos(t/2)$).
+Let $J=\int_0^{\pi/2} \log(\sin t)\,dt$, which converges because $\log(\sin t)\sim\log t$ as $t\to0^+$. The substitution $t \mapsto \pi/2 - t$ gives $J=\int_0^{\pi/2} \log(\cos t)\,dt$. Adding and using $\sin t\cos t = \frac12\sin 2t$,
+$$2J = \int_0^{\pi/2} \log\left(\tfrac12\sin 2t\right)dt = -\frac{\pi}{2}\log 2 + \frac12\int_0^{\pi} \log(\sin u)\,du = -\frac{\pi}{2}\log 2 + J,$$
+where the last equality is step <1>2. Hence $J = -\frac{\pi}{2}\log 2$.
 :::
 
 <1>4. Hence $\int_0^{\pi} \log(\sin t)\,dt = 2 \cdot (-\frac{\pi}{2}\log 2) = -\pi \log 2$.
