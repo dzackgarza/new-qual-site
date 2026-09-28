@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-6B
 kind: problem
-title: Moore determinant over $\mathbb Z/2$
+title: Moore determinant over $\ZZ/2$
 classification:
   areas:
   - prelim
@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathbb Z_2$ be the ring of integers modulo $2$.
-Prove the identity in $\mathbb Z_2[x_1,\ldots,x_n]$
-\[
+Let $\ZZ_2$ be the ring of integers modulo $2$.
+Prove the identity in $\ZZ_2[x_1,\ldots,x_n]$
+$$
 \det\!\begin{pmatrix}
 x_1&\cdots&x_n\\
 x_1^2&\cdots&x_n^2\\
@@ -28,6 +28,6 @@ x_1^{2^{n-1}}&\cdots&x_n^{2^{n-1}}
 \end{pmatrix}
 =
 \prod_{(a_1,\ldots,a_n)\ne(0,\ldots,0)}(a_1x_1+\cdots+a_nx_n),
-\]
-where $(a_1,\ldots,a_n)$ runs over all nonzero elements of $\mathbb Z_2^n$.
+$$
+where $(a_1,\ldots,a_n)$ runs over all nonzero elements of $\ZZ_2^n$.
 :::
