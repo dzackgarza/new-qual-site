@@ -26,7 +26,7 @@ Show that $S_n$ for $n \ge 5$ has exactly one non-trivial proper normal subgroup
 :::
 
 ::: {.solution}
-Use the standard theorem that \(A_n\) is simple for \(n\ge5\).
+For \(n\ge5\), \(A_n\) is simple ([[E-AMD-6TLQZZWT]]).
 
 Let \(N\trianglelefteq S_n\) be nontrivial. Then
 \[
