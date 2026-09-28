@@ -5,7 +5,7 @@ order: 60
 
 # Littlewood's principles: proofs
 
-For Lebesgue measure $m$ on $\RR^d$, Egorov's theorem and Lusin's theorem each replace a measure-theoretic hypothesis by a classical one on a closed set whose complement has arbitrarily small measure.
+For Lebesgue measure $m$ on $\RR^d$, Egorov's theorem upgrades almost-everywhere convergence to uniform convergence, and Lusin's theorem upgrades measurability to continuity, on a closed set whose complement has arbitrarily small measure.
 
 ## Egorov: almost uniform convergence
 
