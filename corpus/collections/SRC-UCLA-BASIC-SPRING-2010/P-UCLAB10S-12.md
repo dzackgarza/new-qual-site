@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB10S-12
 kind: problem
-title: Consequences of vanishing integrals for nonnegative continuous functions
+title: Uniform bounds and pointwise convergence for nonnegative functions with $\int_0^1 f_n\to0$
 classification:
   areas:
   - prelim
