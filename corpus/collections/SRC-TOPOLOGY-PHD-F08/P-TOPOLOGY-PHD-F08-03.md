@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-03
 kind: problem
-title: Monotonicity of closure
+title: The closure is contained in every closed superset
 classification:
   areas:
   - topology
