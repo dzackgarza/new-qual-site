@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-1-10
 kind: problem
-title: Cartesian products as subsets of $\mathbb{R} \times \mathbb{R}$
+title: Cartesian products as subsets of $\RR \times \RR$
 classification:
   areas:
   - topology
