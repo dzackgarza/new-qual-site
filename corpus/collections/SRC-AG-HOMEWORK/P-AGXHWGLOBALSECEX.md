@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any open $U \subseteq X$ show that the functor
 \[
 \Gamma\qty{U, {-}}: \Sh(X) \to \mathsf{Ab}\mathsf{Grp}
@@ -22,12 +22,12 @@ For any open $U \subseteq X$ show that the functor
 is left exact, but need not be exact.
 :::
 
-::: solution
-We are given exactness of
+::: {.solution}
+Let
 \[
 \xi: 0 \to \mcf_1 \xrightarrow{f} \mcf_2 \xrightarrow{g} \mcf_3 \to 0
-,\]
-where a morphism such as $f$ is data of the form
+\]
+be an exact sequence of sheaves of abelian groups on $X$, where a morphism such as $f$ is data of the form
 
 \begin{tikzcd}
 	U & {\mcf_1(U)} & {\mcf_2(U)} \\
@@ -40,27 +40,28 @@ where a morphism such as $f$ is data of the form
 	\arrow["f", shorten <=12pt, shorten >=12pt, from=0, to=1]
 \end{tikzcd}
 
-Applying $\Gamma(X; {-})$, we want to show exactness of
+Applying $\Gamma(X; {-})$ gives
 \[
-\xi_X: 0 \to \mcf_1(X) \xrightarrow{f_X} \mcf_2(X) \xrightarrow{g_X} \mcf_3(X) \to \cdots
-.\]
+\xi_X: 0 \to \mcf_1(X) \xrightarrow{f_X} \mcf_2(X) \xrightarrow{g_X} \mcf_3(X)
+,\]
+which is exact at $\mcf_1(X)$ and at $\mcf_2(X)$.
 
-**Exactness at $\mcf_1(X)$**:
+**Exactness at $\mcf_1(X)$.**
 
-- Use that $f$ is a monomorphism $\iff \ker f = \mathbf 0$ as a sheaf, so
+- Since $f$ is a monomorphism, $\ker f = \mathbf 0$ as a sheaf, so
 \[
 (\ker f)(U) = (\mathbf 0)(U) = 0
 .\]
-- Use that
+- Since
 \[
 (\ker f)(U) &\da \ker f_U \da \ker( \mcf_1(U) \xrightarrow{f_U} \mcf_2(U)) \\
 \implies \ker f_X &= (\ker f)(X) = (\mathbf 0)(X) = 0
 .\]
-- Why this works: the kernel presheaf is already a sheaf, so we can use the presheaf assignment $(\ker f)(U) = \ker f_U$ directly.
-  This does not work for the cokernel sheaf, since the image presheaf needs to be sheafified.
+- The first equality holds because the kernel presheaf $U\mapsto\ker f_U$ is a sheaf.
+  The image presheaf $U\mapsto\im g_U$ is in general not a sheaf; the image sheaf is its sheafification.
 
-Alternatively, a direct argument that $f_X$ is injective.
-A fact we need: $\xi$ is exact iff it is exact on stalks, so there are commutative squares for all $p\in X$:
+A second proof that $f_X$ is injective uses stalks.
+A sequence of sheaves is exact if and only if it is exact on stalks, and restriction to stalks gives commutative squares for all $p\in X$:
 
 \begin{tikzcd}
 	{\xi:} & 0 & {\mcf_1} & {\mcf_2} & {\mcf_3} & 0 \\
@@ -85,20 +86,15 @@ A fact we need: $\xi$ is exact iff it is exact on stalks, so there are commutati
 \end{tikzcd}
 
 
-- Write the kernel out:
-\[
-\ker f_X \da \ts{ s\in \mcf_1(X) \st f_X(s) = 0 \in \mcf_2(X)}
-.\]
-
 - Suppose $s\in \mcf_1(X)$ and $f_X(s) = 0$ in $\mcf_2(X)$. Then
 \[
-(\mcf_2 \mid^X_p \circ f_X )(s) &= \mcf_2\mid^X_p( 0) = 0 \in (\mcf_2)_p \quad\text{ring morphisms send $0$ to $0$}\\
+(\mcf_2 \mid^X_p \circ f_X )(s) &= \mcf_2\mid^X_p( 0) = 0 \in (\mcf_2)_p \quad\text{group homomorphisms send $0$ to $0$}\\
 \implies (f_p \circ \mcf_1 \mid^X_p)(s) &= (\mcf_2 \mid^X_p \circ f_X)(s) = 0 \quad\text{by commutativity} \\
 \implies \mcf_1 \mid^X_p (s) &= 0 \quad\text{left-cancel $f_p$ since it is mono}
 ,\]
 which holds for all $p$.
 
-- Claim: by the sheaf condition on $\mcf_1$, $s= 0 \in \mcf_1(X)$.
+- By the sheaf condition on $\mcf_1$, $s= 0 \in \mcf_1(X)$:
   - Fix $p$. For $s\in \mcf_1(X)$, write a representative $\mcf_1\mid^X_p(s) = [U, \tilde s\in \mcf_1(U)]$.
 
   > Recall $(U_1, s_1) \sim (U_2, s_2) \in \mcf_p \iff$ they are both equivalent to $(W, t)$ where $W \subseteq U_1 \intersect U_2$ and
@@ -107,12 +103,11 @@ which holds for all $p$.
   > .\]
 
   - Then $s_p \da \mcf_1 \mid^X_p(s) = 0 \sim (W, 0) \in (\mcf_1)_p$ means there is some $W_p$ and a lift $\tilde s(p) = 0 \in \mcf_1(W_p)$ with $\mcf_1\mid^{W_p}_p(\tilde s(p)) = s_p$.
-  - But this holds for all $p$, and $\ts{W_p}_{p\in X} \covers X$, so by the gluing axiom for $\mcf_1$ the sections $\ts{ \tilde s(p) \in \mcf_1(W_p) \st p\in X}$ glue to a unique $\tilde s\in \mcf_1(X)$; by uniqueness $\tilde s = s = 0 \in \mcf_1(X)$.
+  - This holds for all $p$, and $\ts{W_p}_{p\in X} \covers X$, so by the gluing axiom for $\mcf_1$ the sections $\ts{ \tilde s(p) \in \mcf_1(W_p) \st p\in X}$ glue to a unique $\tilde s\in \mcf_1(X)$; by uniqueness $\tilde s = s = 0 \in \mcf_1(X)$.
 
-**Exactness at $\mcf_2(X)$**:
+**Exactness at $\mcf_2(X)$.**
 
-- We want $\ker g_X = \im f_X$. First show $\im f_X \subseteq \ker g_X$, and let $s \in \im f_X \subseteq \mcf_2(X)$.
-- A small diagram chase:
+- $\im f_X \subseteq \ker g_X$. Let $s \in \im f_X \subseteq \mcf_2(X)$; restriction to the stalk at $p$ gives the diagram
 
 \begin{tikzcd}
 	& {\color{rgb,255:red,92;green,92;blue,214}f_X\inv(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \da g_X(s)} \\
@@ -134,20 +129,20 @@ which holds for all $p$.
 	\arrow[color={rgb,255:red,92;green,92;blue,214}, curve={height=18pt}, dotted, maps to, from=1-2, to=4-3]
 \end{tikzcd}
 
-- Push $s$ into $(\mcf_2)_p$ and pull back to $f_X^{-1}(s) \in \mcf_1(X)$; by commutativity the former lies in $\im f_p$, so
+- Choose $r\in\mcf_1(X)$ with $f_X(r)=s$. By commutativity, the image of $s$ in $(\mcf_2)_p$ is $f_p$ applied to the image of $r$ in $(\mcf_1)_p$, so
 \[
 \mcf_2\mid^X_p(s) \in \im f_p = \ker g_p
 .\]
-- Then push $s \xrightarrow{g_X} \ell$, so $\mcf_3 \mid^X_p(\ell) = 0$ by commutativity.
+- Put $\ell\da g_X(s)$. By commutativity, $\mcf_3 \mid^X_p(\ell) = g_p(\mcf_2\mid^X_p(s)) = 0$.
   Since this is true at all stalks, $\ell = 0\in \mcf_3(X)$, so $s \in \ker g_X$.
 
-**A counterexample**:
+**Failure of right exactness.**
 
-The exponential short exact sequence, assembled from groups:
+The exponential $z\mapsto e^{2\pi i z}$ gives the exact sequence of groups
 \[
 0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\CC\units) \to 0 \in \Grp
 ,\]
-which sheafifies over $X\da \CC\units$ to
+and, on $X\da \CC\units$, the exact sequence of sheaves
 \[
 0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \Hol_X({-})\units \to 0 \in \Sh(X, \Grp)
 .\]
@@ -157,5 +152,5 @@ Applying $\Gamma(X; {-})$ gives
 \[
 0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \Hol_X(X)\units \to 0
 .\]
-If this bottom sequence were exact, then every invertible holomorphic function would have a logarithm on all of $\CC\units$, but the identity function does not.
+If $\exp\colon\Hol_X(X)\to\Hol_X(X)\units$ were surjective, every nonvanishing holomorphic function on $\CC\units$ would have a logarithm on all of $\CC\units$. The identity function $z\mapsto z$ has none, since $\oint_{\abs{z}=1} dz/z = 2\pi i \neq 0$.
 :::
