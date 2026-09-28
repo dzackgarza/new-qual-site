@@ -22,7 +22,7 @@ $$
 D_M: H^k(M, A; R) \mapsvia{\sim} H_{n-k}(M, B; R)
 $$
 for all $k$.
-The cases $A = \emptyset$ and $B = \emptyset$ are what is usually called Lefschetz duality:
+The cases $A = \del M$, $B = \emptyset$ and $A = \emptyset$, $B = \del M$ give the isomorphisms
 $$
 H^k(M, \del M; R) \cong H_{n-k}(M; R), \qquad H^k(M; R)\cong H_{n-k}(M, \del M; R)
 $$
