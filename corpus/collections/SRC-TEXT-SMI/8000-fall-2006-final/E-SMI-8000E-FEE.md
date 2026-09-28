@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-FEE
 kind: problem
-title: Proof choice — algebraicity of finite extensions or existence of root fields
+title: Finite extensions are algebraic, or every nonconstant polynomial has a root in some extension
 classification:
   areas:
   - algebra
