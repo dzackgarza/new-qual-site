@@ -28,36 +28,41 @@ In particular, this shows that when applicable, the ratio test can be used to ca
 :::
 
 ::: {.solution}
-<1>1. Let $r_n = \frac{|a_{n+1}|}{|a_n|}$, so $r_n \to L$.
+<1>1. Put $r_n = \abs{a_{n+1}}/\abs{a_n}$. Then $r_n>0$ and $r_n \to L$.
+
 ::: {.proof}
-definition.
+The quotient is defined and positive because every $a_n\neq0$; its limit is $L$ by hypothesis.
 :::
 
-<1>2. For any $\epsilon > 0$, put $\ell=\max\{L-\epsilon,0\}$. There is $N$ such that $\ell \le r_n < L + \epsilon$ for all $n \ge N$.
+<1>2. For any $\varepsilon > 0$, put $\ell=\max\{L-\varepsilon,0\}$. There is $N$ such that $\ell \le r_n < L + \varepsilon$ for all $n \ge N$.
+
 ::: {.proof}
-convergence of $r_n$, and $r_n>0$.
+Since $r_n\to L$, there is $N$ with $L-\varepsilon<r_n<L+\varepsilon$ for $n\ge N$. Together with $r_n>0$ from step <1>1, this gives $\ell\le r_n$.
 :::
 
-<1>3. Hence for $n > N$, $|a_n| = |a_N| \prod_{k=N}^{n-1} r_k$, so
-$$|a_N|\,\ell^{n-N} \le |a_n| < |a_N|(L + \epsilon)^{n-N}.$$
+<1>3. For $n > N$,
+$$\abs{a_N}\,\ell^{n-N} \le \abs{a_n} < \abs{a_N}(L + \varepsilon)^{n-N}.$$
+
 ::: {.proof}
-telescope the product.
+The product telescopes: $\abs{a_n} = \abs{a_N} \prod_{k=N}^{n-1} r_k$. Bound each factor $r_k$ by step <1>2.
 :::
 
-<1>4. Taking $n$-th roots and letting $n \to \infty$ gives
-$$L - \epsilon \le \ell \le \liminf |a_n|^{1/n} \le \limsup |a_n|^{1/n} \le L + \epsilon.$$
+<1>4. One has
+$$L - \varepsilon \le \ell \le \liminf_{n\to\infty} \abs{a_n}^{1/n} \le \limsup_{n\to\infty} \abs{a_n}^{1/n} \le L + \varepsilon.$$
+
 ::: {.proof}
-$|a_N|^{1/n} \to 1$ and $c^{(n-N)/n} \to c$ for $c>0$; if $\ell=0$ the lower bound is $0\le\liminf|a_n|^{1/n}$.
+Take $n$th roots in step <1>3 and let $n\to\infty$. Since $a_N\neq0$, $\abs{a_N}^{1/n} \to 1$, and $c^{(n-N)/n} \to c$ for every $c>0$. If $\ell=0$, the lower bound is $0\le\liminf\abs{a_n}^{1/n}$.
 :::
 
-<1>5. Since $\epsilon > 0$ is arbitrary, $\lim |a_n|^{1/n} = L$.
+<1>5. One has $\lim_{n\to\infty} \abs{a_n}^{1/n} = \boxed{L}$.
+
 ::: {.proof}
-<1>4.
+Step <1>4 holds for every $\varepsilon > 0$. Letting $\varepsilon\to0$ gives $L\le\liminf\abs{a_n}^{1/n}\le\limsup\abs{a_n}^{1/n}\le L$.
 :::
 
 <1>6. Q.E.D.
-::: {.proof}
-<1>5.
-:::
-:::
 
+::: {.proof}
+Step <1>5 is the required limit.
+:::
+:::
