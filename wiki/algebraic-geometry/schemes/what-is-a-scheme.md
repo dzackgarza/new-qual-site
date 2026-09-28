@@ -9,18 +9,15 @@ topics:
 
 # What is a scheme
 
-The definition packages the topology, local rings, and functoriality needed for the constructions that follow.
-
 [[D-VKR54]]
 
 [[D-AN662]]
 
 ## Why the definition is shaped that way
 
-Points are primes so that ring maps induce continuous maps.
+Points are prime ideals because the preimage of a prime ideal under a ring map $\varphi\colon A\to B$ is prime, so $\mathfrak q\mapsto\varphi^{-1}(\mathfrak q)$ is a continuous map $\Spec B\to\Spec A$; the preimage of a maximal ideal need not be maximal, as $(0)\subset\QQ$ pulls back to $(0)\subset\ZZ$.
 The structure sheaf is defined by a local condition so that its sections over $D_f$ come out as $A_f$.
-Morphisms are local on stalks so that $\Spec$ is fully faithful.
-Each clause is tied to one of these properties.
+Morphisms are local on stalks so that $\Hom(\Spec B,\Spec A)=\Hom(A,B)$.
 
 [[FE-O12TX]]
 
@@ -28,9 +25,7 @@ Each clause is tied to one of these properties.
 
 [[T-SK599]]
 
-The adjunction gives an explicit criterion for recognizing an affine scheme.
-The cohomological criterion generalizes this perspective and admits weaker hypotheses than the Noetherian form stated here.
-It is proved in [[algebraic-geometry/cohomology/index|cohomology]].
+By [[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]], a noetherian scheme $X$ is affine exactly when $H^1(X,\mci)=0$ for every coherent ideal sheaf $\mci\subseteq\OO_X$.
 
 ## Covers of an affine scheme
 
