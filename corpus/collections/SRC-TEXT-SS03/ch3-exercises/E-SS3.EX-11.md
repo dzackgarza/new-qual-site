@@ -22,8 +22,6 @@ $$
 \int_ {0} ^ {2 \pi} \log | 1 - a e ^ {i \theta} | d \theta = 0.
 $$
 
-Figure 10. Contour in Exercise 10
-
 Then, prove that the above result remains true if we assume only that $| a | \le 1$
 :::
 
