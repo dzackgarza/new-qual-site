@@ -29,8 +29,8 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that A and B are linear transformations of a finite dimensional complex vector space such that $A B - B A = A$ . If v is an eigenvector of B with eigenvalue λ, show that Av is zero or an eigenvector of B and find its eigenvalue.
-Prove that A is nilpotent.
+Suppose that $A$ and $B$ are linear transformations of a finite dimensional complex vector space such that $AB-BA=A$. If $v$ is an eigenvector of $B$ with eigenvalue $\lambda$, show that $Av$ is zero or an eigenvector of $B$ and find its eigenvalue.
+Prove that $A$ is nilpotent.
 :::
 
 ::: {.solution}
