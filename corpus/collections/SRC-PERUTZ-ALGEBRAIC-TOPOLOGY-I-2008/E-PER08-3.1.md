@@ -123,6 +123,6 @@ The universal property of $P$ says that there is exactly one such homomorphism, 
 \theta=\phi.
 \]
 
-Thus the pushout is not merely unique up to some abstract group isomorphism: it is unique up to the unique isomorphism that commutes with the canonical maps from $G_1$ and $G_2$.
+Thus the pushout is unique up to a unique isomorphism commuting with the maps from $G_1$ and $G_2$.
 :::
 :::
