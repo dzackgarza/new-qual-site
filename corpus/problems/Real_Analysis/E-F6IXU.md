@@ -27,40 +27,36 @@ audit:
 
 
 ::: {.solution}
-**Goal:** Prove continuity of translation in $L^1(\RR)$: for $f \in L^1$, $\lim_{h \to 0} \int |f(x+h) - f(x)|\,dx = 0$.
+<1>1. For a bounded interval $I$ and $h \in \RR$, $\int |\chi_{I}(x+h) - \chi_{I}(x)|\,dx \leq 2|h|$.
 
-<1>1. The claim holds for $\varphi = \chi_{[a,b]}$, the indicator of a compact interval.
-    <2>1. $\int |\chi_{[a,b]}(x+h) - \chi_{[a,b]}(x)|\,dx \leq 2|h|$.
-        ::: {.proof}
-        the symmetric difference of $[a,b]$ and $[a,b] - h$ has Lebesgue measure at most $2|h|$ (each endpoint contributes at most $|h|$).
-        :::
-    <2>2. Q.E.D.
-        ::: {.proof}
-        <2>1 tends to $0$ as $h \to 0$.
-        :::
-<1>2. The claim holds for every step function $s = \sum_{i=1}^k c_i \chi_{I_i}$ (finite linear combination of interval indicators).
-    ::: {.proof}
-    by <1>1 and the triangle inequality, $\int |s(x+h) - s(x)|\,dx \leq \sum_i |c_i| \int |\chi_{I_i}(x+h) - \chi_{I_i}(x)|\,dx \to 0$ as $h \to 0$.
-    :::
+::: {.proof}
+The integral is the measure of the symmetric difference of $I$ and $I - h$, and each endpoint of $I$ contributes a set of measure at most $|h|$ to it.
+:::
+
+<1>2. For every step function $s = \sum_{i=1}^k c_i \chi_{I_i}$ with bounded intervals $I_i$, $\lim_{h\to0}\int |s(x+h) - s(x)|\,dx = 0$.
+
+::: {.proof}
+By the triangle inequality and step <1>1, $\int |s(x+h) - s(x)|\,dx \leq \sum_i |c_i| \int |\chi_{I_i}(x+h) - \chi_{I_i}(x)|\,dx \leq 2|h|\sum_i |c_i|$.
+:::
+
 <1>3. Step functions are dense in $L^1(\RR)$.
-    ::: {.proof}
-    step functions (finite linear combinations of interval indicators) contain the compactly supported continuous functions in the $L^1$ metric and are themselves dense in $L^1$; equivalently, simple functions approximate $f$ and each measurable set is approximated by finite unions of intervals in measure.
-    :::
-<1>4. The claim holds for arbitrary $f \in L^1$.
-    <2>1. Fix $\eps > 0$ and choose a step function $s$ with $\norm{f - s}_1 < \eps/3$.
-        ::: {.proof}
-        density, <1>3.
-        :::
-    <2>2. For $|h|$ small, $\int |s(x+h) - s(x)|\,dx < \eps/3$.
-        ::: {.proof}
-        <1>2.
-        :::
-    <2>3. $\int |f(x+h) - f(x)|\,dx < \eps$.
-        ::: {.proof}
-        by the triangle inequality, $\int |f(x+h) - f(x)|\,dx \leq \int |f(x+h) - s(x+h)|\,dx + \int |s(x+h) - s(x)|\,dx + \int |s(x) - f(x)|\,dx = \norm{f - s}_1 + \int |s(x+h) - s(x)|\,dx + \norm{f - s}_1 < \eps/3 + \eps/3 + \eps/3 = \eps$, using translation invariance of the integral on the first term.
-        :::
+
+::: {.proof}
+Simple functions $\sum_i c_i\chi_{E_i}$ with $m(E_i)<\infty$ are dense in $L^1(\RR)$, so it suffices to approximate $\chi_E$ for $m(E) < \infty$. By outer regularity there is an open $U \supseteq E$ with $m(U \setminus E) < \eps/2$. $U$ is a countable disjoint union of open intervals $J_k$ with $\sum_k m(J_k) = m(U) < \infty$, so for some $N$, $A = \bigcup_{k\le N} J_k$ satisfies $m(U \setminus A) < \eps/2$. Then $\norm{\chi_E - \chi_A}_1 = m(E \triangle A) < \eps$.
+:::
+
+<1>4. For every $f \in L^1(\RR)$ and $\eps > 0$ there is $\delta > 0$ with $\int |f(x+h) - f(x)|\,dx < \eps$ for $|h| < \delta$.
+
+::: {.proof}
+By step <1>3 choose a step function $s$ with $\norm{f - s}_1 < \eps/3$, and by step <1>2 choose $\delta > 0$ with $\int |s(x+h) - s(x)|\,dx < \eps/3$ for $|h| < \delta$. By the triangle inequality and translation invariance of Lebesgue measure,
+$$
+\int |f(x+h) - f(x)|\,dx \leq \int |f(x+h) - s(x+h)|\,dx + \int |s(x+h) - s(x)|\,dx + \int |s(x) - f(x)|\,dx < \eps.
+$$
+:::
+
 <1>5. Q.E.D.
-    ::: {.proof}
-    <1>4 shows the limit is $0$ for every $f \in L^1$.
-    :::
+
+::: {.proof}
+Step <1>4 is the definition of $\lim_{h \to 0} \int|f(x+h)-f(x)|\,dx = 0$.
+:::
 :::
