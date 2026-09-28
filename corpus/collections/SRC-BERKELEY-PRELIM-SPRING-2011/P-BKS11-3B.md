@@ -56,7 +56,7 @@ r_n\longrightarrow0.
 $$
 
 ::: {.proof}
-This is the standard limit
+Apply the limit
 $$
 \frac{\log t}{t}\longrightarrow0
 $$
