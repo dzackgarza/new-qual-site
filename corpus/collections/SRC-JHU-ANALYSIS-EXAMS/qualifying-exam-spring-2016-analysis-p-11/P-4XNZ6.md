@@ -39,61 +39,58 @@ State it clearly if you use it.
 :::
 
 ::: {.solution}
-<1>1. State the covering lemma and choose a witnessing ball at each superlevel point.
+<1>1. State the covering lemma.
 ::: {.proof}
-We use the following Vitali $3$-times covering lemma: from any family of balls in $\mathbb R^d$ whose radii are uniformly bounded, one can choose a finite or countable pairwise disjoint subfamily $(B_j)$ such that
-\[
-\bigcup_{B\text{ in the original family}}B
-\subseteq\bigcup_j 3B_j,
-\]
-where $3B_j$ is the concentric ball with three times the radius.
+Vitali $3$-times covering lemma: every finite collection of
+balls in $\mathbb R^d$ has a pairwise disjoint subcollection
+$B_1,\dots,B_N$ such that the union of the whole collection
+is contained in $\bigcup_{j=1}^N3B_j$, where $3B_j$ is the
+concentric ball with three times the radius.
+:::
+
+<1>2. The superlevel set is open and is a union of balls with large averages.
+::: {.proof}
+Take the balls in the definition of $f^*$ to be open.
+A closed ball containing $x$ lies in a slightly larger
+concentric open ball, whose average of $|f|$ is arbitrarily
+close, so this does not change $f^*$.
 
 Fix $\alpha>0$ and set
 \[
 E_\alpha:=\{x\in\mathbb R^d:f^*(x)>\alpha\}.
 \]
-For each $x\in E_\alpha$, choose a ball $B_x\ni x$ such that
+For each $x\in E_\alpha$, choose an open ball $B_x\ni x$ such that
 \[
 \frac1{m(B_x)}\int_{B_x}|f(y)|\,dy>\alpha.
 \]
-Then
-\[
-\alpha m(B_x)<\int_{B_x}|f|\le\|f\|_1,
-\]
-so the radii of all the selected balls are uniformly bounded.
+Every point of $B_x$ then lies in $E_\alpha$, so
+$E_\alpha=\bigcup_{x\in E_\alpha}B_x$ is open, hence measurable.
 :::
 
-<1>2. Apply the covering lemma.
+<1>3. Every compact subset of $E_\alpha$ satisfies the bound.
 ::: {.proof}
-Choose a pairwise disjoint subfamily $(B_j)$ as in the $3$-times covering lemma. Since every $x\in E_\alpha$ lies in one of the original balls,
+Let $K\subset E_\alpha$ be compact. Finitely many of the
+balls $B_x$ cover $K$. Step <1>1 gives pairwise disjoint
+balls $B_1,\dots,B_N$ among them with
 \[
-E_\alpha\subseteq\bigcup_j3B_j.
+K\subseteq\bigcup_{j=1}^N3B_j.
 \]
-Therefore
+Each $B_j$ satisfies $\alpha m(B_j)<\int_{B_j}|f|$, and the
+$B_j$ are pairwise disjoint. Therefore
 \[
-m(E_\alpha)
-\le\sum_jm(3B_j)
-=3^d\sum_jm(B_j).
+m(K)
+\le\sum_{j=1}^N m(3B_j)
+=3^d\sum_{j=1}^N m(B_j)
+<\frac{3^d}{\alpha}\sum_{j=1}^N\int_{B_j}|f|
+\le\frac{3^d}{\alpha}\|f\|_1.
 \]
 :::
 
-<1>3. Use the large-average property and disjointness.
+<1>4. Inner regularity gives the bound for $E_\alpha$.
 ::: {.proof}
-For every selected ball,
-\[
-\alpha m(B_j)<\int_{B_j}|f|.
-\]
-Since the $B_j$ are pairwise disjoint,
-\[
-\alpha\sum_jm(B_j)
-<\sum_j\int_{B_j}|f|
-\le\|f\|_1.
-\]
-Hence
-\[
-\sum_jm(B_j)\le\frac{\|f\|_1}{\alpha}.
-\]
-Substituting into Step 2 gives
+Lebesgue measure is inner regular on measurable sets, so
+$m(E_\alpha)=\sup\{m(K):K\subset E_\alpha\text{ compact}\}$
+[@Fol13]. Step <1>3 then gives
 \[
 \boxed{
 m(\{x:f^*(x)>\alpha\})
