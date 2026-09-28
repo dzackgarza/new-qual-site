@@ -16,8 +16,8 @@ relations:
 review: draft
 prompts:
 - What is a $\delta$-functor?
-- What does it mean for a functor to be effaceable, and what does effaceability buy you?
-- How do you recognise a given cohomology theory as the derived functor cohomology?
+- What does it mean for a functor to be effaceable, and what does Grothendieck's theorem conclude from effaceability?
+- Which conditions identify a $\delta$-functor with the right derived functors of its degree-$0$ functor?
 ---
 
 ::: {.definition title="delta functor"}
