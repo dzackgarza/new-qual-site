@@ -334,21 +334,19 @@ $$
 Thus the fiber is the displayed two-point set.
 :::
 
-<1>8. The disconnected fiber in step <1>7 shows why normality of the target
-is necessary in the Zariski Main Theorem quoted in the source.
+<1>8. The conclusion of Zariski's Main Theorem fails for $\nu$: the
+birational morphism $\nu$ has a disconnected fiber over the node, where the
+target $\overline X$ is not normal.
 
 ::: {.proof}
-Theorem 8.6 in the source says that a birational morphism between normal
+Zariski's Main Theorem states that a birational morphism between normal
 projective varieties has connected fibers. The normalization morphism
 $$
 \nu:\PP^1_\CC\longrightarrow\overline X
 $$
 is birational and has normal source, but step <1>7 gives a disconnected fiber
-over the node.
-
-Therefore the theorem cannot be applied with a nonnormal target. Indeed, if
-$\overline X$ were normal, Theorem 8.6 would force the fiber in step <1>7 to
-be connected. The node is precisely the obstruction.
+over the node. The normalization is an isomorphism over the normal locus of
+$\overline X$, so $\overline X$ is not normal at $P$.
 :::
 
 <1>9. Q.E.D.
