@@ -33,10 +33,10 @@ source:
   - P-BERK95S-14
   - P-BERK95S-15
   - id: P-PRELIM82S-03
-    comment: Spring 1995 Problem 16; repeated verbatim as Summer 1982 Problem 3
+    comment: Problem 16
   - P-BERK95S-17
   - id: P-3A7RU
-    comment: Spring 1995 Problem 18; punctured unit disk versus annulus
+    comment: Problem 18
   date:
     kind: academic-term
     term: spring
