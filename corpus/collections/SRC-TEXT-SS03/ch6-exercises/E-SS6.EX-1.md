@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS6.EX-1
 kind: problem
-title: "SS 6.1: Gauss's limit formula for the Gamma function"
+title: Gauss's limit formula for $\Gamma(s)$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:

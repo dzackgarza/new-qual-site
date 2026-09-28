@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS6.EX-7
 kind: problem
-title: "SS 6.7: The Beta function and its relation to Gamma"
+title: The Beta function and $B(\alpha,\beta)=\frac{\Gamma(\alpha)\Gamma(\beta)}{\Gamma(\alpha+\beta)}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:

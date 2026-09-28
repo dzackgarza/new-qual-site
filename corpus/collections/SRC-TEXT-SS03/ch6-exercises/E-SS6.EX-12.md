@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-12
 kind: problem
-title: "SS 6.12: Growth observations about the reciprocal Gamma function"
+title: $1/\Gamma$ is not of exponential type
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
+  - Entire Functions
 relations: []
 review: draft
 audit:

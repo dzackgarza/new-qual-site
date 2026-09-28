@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-17
 kind: problem
-title: "The Mellin transform of a Schwartz function"
+title: Analytic continuation of the Mellin transform of a Schwartz function
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Mellin Transform
+  - Gamma Function
 relations: []
 review: draft
 audit:
@@ -20,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-17. Let f be an indefinitely diferentiable function on R that has compact support, or more generally, let $f$ belong to the Schwartz space.<sup>4</sup> Consider
+17. Let f be an indefinitely diferentiable function on R that has compact support, or more generally, let $f$ belong to the Schwartz space. Consider
 
 $$
 I (s) = \frac {1}{\Gamma (s)} \int_ {0} ^ {\infty} f (x) x ^ {- 1 + s} d x.

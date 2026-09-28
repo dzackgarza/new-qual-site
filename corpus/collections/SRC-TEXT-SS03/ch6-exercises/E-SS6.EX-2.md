@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-2
 kind: problem
-title: "SS 6.2: A Gamma product identity and the reflection formula"
+title: $\prod_n\frac{n(n+a+b)}{(n+a)(n+b)}=\frac{\Gamma(a+1)\Gamma(b+1)}{\Gamma(a+b+1)}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
+  - Infinite Products
 relations: []
 review: draft
 audit:

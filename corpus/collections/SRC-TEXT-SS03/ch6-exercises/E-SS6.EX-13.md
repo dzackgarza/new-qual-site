@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS6.EX-13
 kind: problem
-title: "SS 6.13: Second derivative of log Gamma as a summed series"
+title: $\frac{d^2}{ds^2}\log\Gamma(s)=\sum_{n\ge0}(s+n)^{-2}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:

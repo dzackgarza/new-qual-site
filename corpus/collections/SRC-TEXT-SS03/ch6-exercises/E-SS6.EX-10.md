@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-10
 kind: problem
-title: "SS 6.10: Mellin transforms of cosine and sine"
+title: Mellin transforms of $\cos t$ and $\sin t$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Mellin Transform
+  - Gamma Function
 relations: []
 review: draft
 audit:

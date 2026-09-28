@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-6
 kind: problem
-title: "SS 6.6: Odd harmonic partial sums approach gamma/2 + log 2"
+title: $1+\frac13+\cdots+\frac1{2n-1}-\frac12\log n\to\frac\gamma2+\log2$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
+  - Series of Numbers
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-8
 kind: problem
-title: "The Bessel functions arise in the study of spherical symmetries and the Fourier "
+title: The power series of the Bessel function $J_\nu$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
+  - Power Series
 relations: []
 review: draft
 audit:

@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS6.EX-5
 kind: problem
-title: "SS 6.5: The absolute value of Gamma on the critical line"
+title: $\abs{\Gamma(1/2+it)}^2=\frac{2\pi}{e^{\pi t}+e^{-\pi t}}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:

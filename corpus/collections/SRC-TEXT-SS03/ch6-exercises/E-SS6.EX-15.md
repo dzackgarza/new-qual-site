@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-15
 kind: problem
-title: "SS 6.15: An integral representation of the zeta function"
+title: $\zeta(s)=\frac1{\Gamma(s)}\int_0^\infty\frac{x^{s-1}}{e^x-1}\,dx$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Zeta Function
+  - Gamma Function
 relations: []
 review: draft
 audit:

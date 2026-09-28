@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-3
 kind: problem
-title: "SS 6.3: Wallis's product and the Gamma duplication formula"
+title: Wallis's product and the duplication formula for $\Gamma$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
+  - Infinite Products
 relations: []
 review: draft
 audit:

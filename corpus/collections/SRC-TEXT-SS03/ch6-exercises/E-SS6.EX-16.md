@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS6.EX-16
 kind: problem
-title: "Another proof of the analytic continuation of the zeta function"
+title: Analytic continuation of $\zeta$ from its Gamma-integral representation
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Zeta Function
+  - Gamma Function
 relations: []
 review: draft
 audit:

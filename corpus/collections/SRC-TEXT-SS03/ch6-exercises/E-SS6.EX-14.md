@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS6.EX-14
 kind: problem
-title: "This exercise gives an asymptotic formula for log n!"
+title: An asymptotic formula for $\log n!$
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:

@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS6.EX-9
 kind: problem
-title: "The hypergeometric series  was defined in Exercise 16 of Chapter 1"
+title: An integral representation of the hypergeometric series
 classification:
   areas:
   - complex-analysis
-  topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
+  topics:
+  - Gamma Function
 relations: []
 review: draft
 audit:
