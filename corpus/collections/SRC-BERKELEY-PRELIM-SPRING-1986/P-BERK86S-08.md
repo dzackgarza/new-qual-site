@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-08
 kind: problem
-title: Count the points in the unit disk where a polynomial matrix is singular
+title: Points of the unit disk where a polynomial matrix is singular
 classification:
   areas: [prelim]
   topics: []
