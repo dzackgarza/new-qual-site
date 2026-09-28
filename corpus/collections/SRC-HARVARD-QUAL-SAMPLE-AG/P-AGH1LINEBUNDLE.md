@@ -189,6 +189,6 @@ is the image of $H^1(X,\mathcal O_X)$, with kernel equal to the image of $H^1(X,
 
 <1>7. Q.E.D.
 ::: {.proof}
-Step <1>4 is the fundamental connection between $H^1$ and line bundles; steps <1>5--<1>6 give the complex-analytic refinement relevant to Jacobians.
+Step <1>4 identifies $\operatorname{Pic}(X)$ with $H^1(X,\mathcal O_X^\times)$; steps <1>5--<1>6 relate it to $H^1(X,\mathcal O_X)$ through the exponential sequence and identify $\operatorname{Pic}^0$ of a compact Riemann surface with its Jacobian.
 :::
 :::
