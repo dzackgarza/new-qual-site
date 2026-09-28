@@ -22,16 +22,18 @@ prompts:
 
 ::: {.definition}
 A \dfn{$g^r_d$} on a curve $C$ is a linear system of degree $d$ and projective dimension $r$: a subspace $V \subseteq H^0(\OO_C(D))$ with $\deg D = d$ and $\dim \PP V = r$.
-The **gonality** of $C$ is the least $d$ for which $C$ carries a $g^1_d$, equivalently the least degree of a nonconstant map $C \to \PP^1$.
+The \dfn{gonality} of $C$ is the least $d$ for which $C$ carries a $g^1_d$, equivalently the least degree of a nonconstant map $C \to \PP^1$.
+The curve $C$ is \dfn{trigonal} if its gonality is $3$.
 :::
 
 ::: {.proposition}
-Gonality $1$ means $C \cong \PP^1$. For genus at least $2$, gonality $2$ means $C$ is hyperelliptic; genus-$1$ curves also have gonality $2$. Gonality $3$ means $C$ is **trigonal**. Every curve of genus $g$ carries a $g^1_d$ for $d \geq \lfloor (g+3)/2 \rfloor$, and a general curve of genus $g$ has no $g^1_d$ below this bound.
+Gonality $1$ means $C \cong \PP^1$. For genus at least $2$, gonality $2$ means $C$ is hyperelliptic; genus-$1$ curves also have gonality $2$. Every curve of genus $g$ carries a $g^1_d$ for $d \geq \lfloor (g+3)/2 \rfloor$, and a general curve of genus $g$ has no $g^1_d$ below this bound.
 :::
 
 ::: {.remark}
-In this notation, a $g^1_2$ is a degree-two map to $\PP^1$, a $g^2_d$ is a map to $\PP^2$ of degree $d$, and the canonical system on a non-hyperelliptic curve of genus $g$ is a $g^{g-1}_{2g-2}$.
+A base-point-free $g^r_d$ determines a morphism $\phi\colon C\to\PP^r$ with $\deg\phi^*\OO(1)=d$; for $r=1$ this is a map $C\to\PP^1$ of degree $d$.
+The canonical system on a curve of genus $g\ge2$ is a $g^{g-1}_{2g-2}$.
 
-Gonality defines loci in $\mathcal{M}_g$ and is at most $\lfloor \tfrac{g+3}{2} \rfloor$; the general curve attains this bound.
-In genus $3$ and $4$ that bound forces gonality at most $3$: every non-hyperelliptic curve there is trigonal, and a plane quartic gets infinitely many $g^1_3$'s by projecting from each of its own points.
+For $g=3$ and $g=4$, $\lfloor (g+3)/2\rfloor=3$, so every non-hyperelliptic curve of genus $3$ or $4$ is trigonal.
+A smooth plane quartic has a $g^1_3$ for each of its points $p$: the lines through $p$ cut out $p$ plus three further points.
 :::
