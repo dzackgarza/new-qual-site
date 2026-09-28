@@ -22,8 +22,6 @@ Show that if $h: S^1 \to S^1$ is nulhomotopic, then $h$ has a fixed point and $h
 :::
 
 ::: {.solution}
-**Goal:** Prove that every nullhomotopic continuous self-map $h: S^1 \to S^1$ must possess a fixed point ($h(x_0) = x_0$) and an antipodal point ($h(x_1) = -x_1$).
-
 <1>1. Degree of nullhomotopic maps:
     Since $h: S^1 \to S^1$ is nullhomotopic (homotopic to a constant map), the induced map on fundamental groups $h_*: \pi_1(S^1) \to \pi_1(S^1)$ is the zero homomorphism, so the winding number (topological degree) satisfies $\deg(h) = 0$.
 
@@ -52,6 +50,6 @@ Show that if $h: S^1 \to S^1$ is nulhomotopic, then $h$ has a fixed point and $h
     <2>5. Thus $\deg(h) = \deg(\operatorname{id}_{S^1}) = 1$, again strictly contradicting $\deg(h) = 0$.
     <2>6. Thus there must exist $x_1 \in S^1$ such that $h(x_1) = -x_1$.
 
-<1>4. Conclusion:
-    Every nullhomotopic self-map of $S^1$ has both a fixed point and an antipodal point. Q.E.D.
+<1>4. Q.E.D.
+    Steps <1>2 and <1>3 give the fixed point and the point sent to its antipode.
 :::
