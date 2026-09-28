@@ -24,28 +24,35 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** If $f \in L^1(\RR^n)$ and $g$ is differentiable with bounded partial derivatives $\dd{g}{x_i}$, show $\dd{}{x_i}(f \ast g) = f \ast \dd{g}{x_i}$; in particular $f \ast g$ is smooth when $g$ is smooth and compactly supported.
+Let $f \in L^1(\RR^n)$, let $g$ be differentiable with $\dd{g}{x_i}$ bounded, and let $e_i$ be the $i$th standard basis vector.
 
-<1>1. $f \ast g$ is differentiable in $x_i$, with $\dd{}{x_i}(f\ast g)(x) = (f \ast \dd{g}{x_i})(x)$.
-<2>1. Write the difference quotient: $\frac{(f\ast g)(x + h e_i) - (f\ast g)(x)}{h} = \int f(x-y)\, \frac{g(y + h e_i) - g(y)}{h}\,dy$.
+<1>1. For $h \neq 0$, $\frac{(f\ast g)(x + h e_i) - (f\ast g)(x)}{h} = \int f(x-y)\, \frac{g(y + h e_i) - g(y)}{h}\,dy$.
+
 ::: {.proof}
-change variables $y \mapsto y + h e_i$ in the first term, then rearrange.
+$(f\ast g)(x+he_i) = \int f(x+he_i-y)g(y)\,dy$; the change of variables $y \mapsto y + h e_i$ turns this into $\int f(x-y)g(y+he_i)\,dy$. Subtract $(f\ast g)(x) = \int f(x-y)g(y)\,dy$ and divide by $h$.
 :::
-<2>2. The integrands converge pointwise to $f(x-y)\,\dd{g}{y_i}(y)$ and are dominated by $|f(x-y)| \sup_z |\dd{g}{z_i}(z)|$, which is integrable in $y$.
+
+<1>2. As $h \to 0$, the integrands in step <1>1 converge pointwise to $f(x-y)\,\dd{g}{y_i}(y)$ and are bounded by $|f(x-y)| \sup_z |\dd{g}{z_i}(z)|$, which is integrable in $y$.
+
 ::: {.proof}
-$g$ is differentiable with bounded partial derivative, so $\frac{g(y+he_i) - g(y)}{h} \to \dd{g}{y_i}(y)$ (a.e. — indeed everywhere, by differentiability) and $|\frac{g(y+he_i)-g(y)}{h}| \leq \sup |\dd{g}{\cdot_i}|$ by the mean value theorem; $f \in L^1$ gives integrability.
+Pointwise convergence is differentiability of $g$ in the direction $e_i$. The bound on the difference quotient is the mean value theorem applied to $t \mapsto g(y + te_i)$. The dominating function is integrable because $f \in L^1$.
 :::
-<2>3. Q.E.D.
+
+<1>3. $\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$.
+
 ::: {.proof}
-dominated convergence in <2>2 lets the limit $h \to 0$ pass under the integral in <2>1, giving the claimed identity.
+By step <1>2 the dominated convergence theorem lets $h \to 0$ pass under the integral in step <1>1.
 :::
-<1>2. If $g$ is smooth and compactly supported, then $f \ast g$ is smooth.
+
+<1>4. If $g$ is smooth and compactly supported, then $f \ast g$ is smooth.
+
 ::: {.proof}
-every partial derivative $D^\alpha g$ of a smooth compactly supported $g$ is bounded, so <1>1 applies iteratively: $D^\alpha(f\ast g) = f \ast D^\alpha g$ for every multi-index $\alpha$, and the right side is defined (an $L^1$ function convolved with a bounded measurable function).
+Every partial derivative $D^\alpha g$ of a smooth compactly supported $g$ is bounded, so step <1>3 applied repeatedly gives $D^\alpha(f\ast g) = f \ast D^\alpha g$ for every multi-index $\alpha$. Each $f \ast D^\alpha g$ is the convolution of an $L^1$ function with a bounded function, hence continuous, so $f \ast g$ has continuous partial derivatives of all orders.
 :::
-Hence all derivatives of all orders exist.
-<1>3. Q.E.D.
+
+<1>5. Q.E.D.
+
 ::: {.proof}
-<1>1 proves the differentiation formula; <1>2 proves smoothness of $f\ast g$ under the smooth-compactly-supported hypothesis.
+Step <1>3 is the differentiation formula, and step <1>4 is smoothness of $f\ast g$ for smooth compactly supported $g$.
 :::
 :::
