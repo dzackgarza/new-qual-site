@@ -47,9 +47,9 @@ r_1 &\da b\inv\qty{-a + \sqrt{a^2-b^2}} \\
 r_2 &\da b\inv\qty{-a - \sqrt{a^2-b^2}} 
 .\]
 
-Since $r_1 r_2 = 1$ and thus $\abs{r_1 r_2} = 1$, only one root is in $\DD$ and this yields one simple pole.
-Assume $a>b$.
-Note that for $r_2$, $\abs{a/b} > 1$ and $\abs{a^2-b^2}>0$, so $r_2 \approx -1 - \eps < -1$, so $r_1\in \DD$.
+Assume $a>\abs b>0$, so that the integrand is continuous and the roots are real and distinct (for $b=0$ the integral is $2\pi/a$ directly).
+Since $r_1 r_2 = 1$, exactly one root lies in $\DD$, giving one simple pole there.
+If $b>0$, then $r_2=-(a+\sqrt{a^2-b^2})/b<-a/b<-1$; if $b<0$, then $r_2>a/\abs b>1$. In either case $\abs{r_2}>1$, so $r_1\in \DD$.
 Computing the residue here:
 \[
 \Res_{z=r_1} (z-r_1)\inv (z-r_2)\inv 
