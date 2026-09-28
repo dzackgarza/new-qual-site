@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK87S-07
 kind: problem
-title: Put a second-order linear ODE into self-adjoint form
+title: Self-adjoint form of a second-order linear ODE
 classification:
   areas: [prelim]
   topics: []
