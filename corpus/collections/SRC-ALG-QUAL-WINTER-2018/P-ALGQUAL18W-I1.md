@@ -33,7 +33,7 @@ is a normal extension.
 :::
 
 ::: {.solution}
-The statement is **true**. Put
+The statement is true. Put
 $$
 \alpha=\sqrt{2+\sqrt2},
 \qquad
