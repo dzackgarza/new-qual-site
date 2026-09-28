@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF94-9
 kind: problem
-title: Evaluate $\int_0^\infty(\log x)^2/(1+x^2)\,dx$
+title: The integral $\int_0^\infty(\log x)^2/(1+x^2)\,dx$
 classification:
   areas:
   - prelim
