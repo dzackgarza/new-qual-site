@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGASAMP-05
 kind: problem
-title: Evaluate $\int_0^{10\pi}|\sin x|\,dx$
+title: $\int_0^{10\pi}|\sin x|\,dx$
 classification:
   areas: [prelim]
   topics: []
