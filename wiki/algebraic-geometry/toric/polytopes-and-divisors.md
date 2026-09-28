@@ -9,8 +9,7 @@ topics:
 
 # Polytopes and divisors
 
-The fan controls the variety; the polytope controls a divisor on it.
-Passing between the two is the second half of the dictionary, and it converts every question about linear systems into a question about counting lattice points.
+A torus-invariant divisor $D=\sum_\rho a_\rho D_\rho$ on $X_\Sigma$ has polytope $P_D=\{m\in M_\RR:\langle m,u_\rho\rangle\ge-a_\rho\text{ for every ray }\rho\}$, and the characters $\chi^m$ for $m\in P_D\cap M$ form a basis of $H^0(X_\Sigma,\OO(D))$.
 
 [[D-TORPOLY]]
 
@@ -24,10 +23,10 @@ Passing between the two is the second half of the dictionary, and it converts ev
 
 ![The two compatible exact sequences computing $\Cl$ and $\Pic$ of a toric variety](/assets/algebraic-geometry/toric/divisor-class-picard-exact-sequences.png)
 
-The two sequences sit one above the other, and the whole difference between $\Pic$ and $\Cl$ is the difference between $\CDiv_T$ and $\Div_T$ — that is, between the divisors with a global Cartier datum and all of them.
-On a smooth fan the two agree.
-On a simplicial fan they agree up to finite index.
-Beyond that, the cone over the rational normal curve shows how badly they can differ.
+In the two sequences, $\Pic$ and $\Cl$ are the quotients of $\CDiv_T$, the torus-invariant Cartier divisors, and of $\Div_T$, all torus-invariant Weil divisors, by the principal divisors $\operatorname{div}(\chi^m)$.
+On a smooth fan $\Pic=\Cl$.
+On a simplicial fan $\Pic$ has finite index in $\Cl$: the cone over the rational normal curve of degree $d$ has $\Cl\cong\ZZ/d$ and $\Pic=0$.
+On a non-simplicial fan the index can be infinite: the cone over a square, whose toric variety is $V(xy-zw)\subset\AA^4$, has $\Cl\cong\ZZ$ and $\Pic=0$.
 
 ## The polytope of a divisor
 
@@ -41,15 +40,14 @@ Beyond that, the cone over the rational normal curve shows how badly they can di
 
 [[PR-TORPOS]]
 
-A useful order of operations when asked whether a divisor is ample:
-Write $D = \sum a_\rho D_\rho$, compute $P_D$ from the inequalities $\inp{m}{u_\rho} \geq -a_\rho$, and check whether its vertices are in bijection with the maximal cones.
-If they are, $D$ is ample and $h^0$ is the number of lattice points in $P_D$; if two maximal cones share a vertex, the support function failed to crease and $D$ is at best base point free.
+For $D=\sum a_\rho D_\rho$ Cartier on a complete $X_\Sigma$, $P_D$ is cut out by the inequalities $\inp{m}{u_\rho}\geq-a_\rho$.
+If the Cartier data $m_\sigma$ are distinct vertices of $P_D$, one for each maximal cone, then $D$ is ample; if every $m_\sigma$ lies in $P_D$ but two maximal cones have the same $m_\sigma$, then $D$ is base-point free and not ample.
 
 [[D-FULNORMPOLY]]
 
 [[FE-FULAVA]]
 
-Very ampleness is the one clause on that list that is not visible on the fan alone, and the example shows what it costs to ignore it: a strictly convex support function, an ample divisor, and a map that is two-to-one instead of an embedding.
+Very ampleness depends on the lattice points of $P_D$ as well as on $\Sigma$: for the lattice simplex $P$ with vertices $(0,0,0)$, $(0,1,1)$, $(1,0,1)$, $(1,1,0)$, the divisor $D_P$ is ample, and its four lattice points give a finite morphism $X_P\to\PP^3$ of degree $2$.
 
 ## Fano and Calabi-Yau
 
@@ -58,4 +56,4 @@ Very ampleness is the one clause on that list that is not visible on the fan alo
 ![The five reflexive polygons of the toric del Pezzo surfaces](/assets/algebraic-geometry/toric/reflexive-polygons-of-toric-del-pezzo-surfaces.png)
 
 Reflexivity is also where toric geometry meets mirror symmetry: a reflexive polytope $P$ gives a Calabi-Yau anticanonical hypersurface in $X_P$, and $P^\circ$ gives its mirror.
-That is beyond what a qualifying exam will ask, but it explains why the $16$ reflexive polygons and the $4319$ reflexive polytopes in dimension three are tabulated at all.
+There are $16$ reflexive polygons and $4319$ reflexive polytopes in dimension three, up to lattice isomorphism.
