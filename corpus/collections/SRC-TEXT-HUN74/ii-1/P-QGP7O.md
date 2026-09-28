@@ -31,16 +31,13 @@ Show that $G$ is a free abelian group.
 :::
 
 ::: {.solution}
-Because $G$ is finitely generated and abelian, the structure theorem for
-finitely generated abelian groups applies.
-
 <1>1. There are integers $r\ge0$ and $d_1,\ldots,d_t>1$ such that
 \[
 G\cong \ZZ^r\oplus \ZZ/d_1\ZZ\oplus\cdots\oplus\ZZ/d_t\ZZ.
 \]
 ::: {.proof}
-This is the structure theorem for finitely generated abelian groups, in its
-invariant-factor (equivalently, elementary-divisor) form.
+This is the structure theorem for finitely generated abelian groups, applied
+to the finitely generated abelian group $G$.
 :::
 
 <1>2. One must have $t=0$.
