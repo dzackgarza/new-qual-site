@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-10
 kind: problem
-title: "Weierstrass’s theorem states that a continuous function on [0, 1] can be uni for"
+title: Not every continuous function on the closed disc is a uniform limit of polynomials in $z$
 classification:
   areas:
   - complex-analysis
