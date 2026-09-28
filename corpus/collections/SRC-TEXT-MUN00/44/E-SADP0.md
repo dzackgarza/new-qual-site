@@ -33,7 +33,7 @@ $$
 :::
 
 ::: {.solution}
-Let \(p:I\to I^2\) be the space-filling curve constructed in this section.
+Let \(p:I\to I^2\) be a continuous surjection, such as the Peano space-filling curve.
 
 We first obtain surjections onto powers whose dimensions are powers of \(2\). Suppose \(q_k:I\to I^{2^k}\) is continuous and surjective. Then
 \[
