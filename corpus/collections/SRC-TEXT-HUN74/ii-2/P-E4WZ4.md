@@ -30,8 +30,10 @@ Determine (up to isomorphism) all abelian groups of order 64; do the same for or
 :::
 
 ::: {.solution}
-Use the classification of finite abelian groups by their primary cyclic
-decomposition.
+By the classification of finite abelian groups, a finite abelian group is the
+direct sum of its Sylow subgroups, and an abelian group of order $p^n$ is
+determined up to isomorphism by the partition $n=a_1+\cdots+a_r$ with
+$G\cong\ZZ_{p^{a_1}}\oplus\cdots\oplus\ZZ_{p^{a_r}}$.
 
 <1>1. There are exactly eleven abelian groups of order $64=2^6$:
 \[
