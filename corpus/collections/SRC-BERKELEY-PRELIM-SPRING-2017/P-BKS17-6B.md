@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $D$ be the unit disk in the complex plane $\mathbb{C}$, $f : D \to \mathbb{C}$ an analytic function with
+Let $D$ be the unit disk in the complex plane $\CC$, $f : D \to \CC$ an analytic function with
 
 $$
 |f^{(k)}(0)| \leq M
