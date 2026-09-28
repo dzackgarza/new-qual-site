@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-5G4Y3
 kind: theorem
 title: Monotone convergence theorem
-slogan: 'Increasing nonnegative functions may pass their pointwise limit through the integral.'
+slogan: 'For an almost everywhere increasing sequence in $L^+$, the integral of the limit is the limit of the integrals.'
 prompts:
 - State the monotone convergence theorem.
 classification:
