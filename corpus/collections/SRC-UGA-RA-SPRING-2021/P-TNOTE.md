@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TNOTE
 kind: problem
-title: Spring 2021, 1
+title: Uniform and almost-everywhere convergence of indicator functions $\chi_{E_n}\to1$
 classification:
   areas:
   - real-analysis
