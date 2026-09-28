@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-2CZUM
 kind: proposition
 title: Continuity and differentiation under the integral sign
-slogan: 'An $L^1$ dominator lets continuity and differentiation pass under the integral sign.'
+slogan: 'A dominating function in $L^1$ for $f$ makes $F(t)=\int f(x,t)\,d\mu$ continuous; one for $\partial_t f$ gives $F^\prime=\int\partial_t f\,d\mu$.'
 classification:
   areas:
   - real-analysis
