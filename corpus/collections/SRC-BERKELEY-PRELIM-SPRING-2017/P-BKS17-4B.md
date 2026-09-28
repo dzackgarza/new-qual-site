@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Given $n$ distinct points $z_j \in \mathbb{C}$ and $n$ values $f_j \in \mathbb{C}$, show that there is a unique polynomial $P$ of degree at most $n - 1$ such that
+Given $n$ distinct points $z_j \in \CC$ and $n$ values $f_j \in \CC$, show that there is a unique polynomial $P$ of degree at most $n - 1$ such that
 
 $$
 P(z_j) = f_j
