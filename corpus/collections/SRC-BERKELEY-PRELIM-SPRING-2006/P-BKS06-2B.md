@@ -17,7 +17,7 @@ Show that there are exactly $( 2 ^ { n } - 2 ) / n$ degree-n irreducible polynom
 :::
 
 ::: {.solution}
-There is a unique field extension $\mathbb { F } _ { 2 ^ { r } }$ n of degree n over $\mathbb { F } _ { 2 }$ . It is Galois over $\mathbb { F } _ { 2 }$ (this is because it is a splitting field for the separable polynomial $x ^ { 2 ^ { n } } - x )$ x). If $a \in \mathbb { F } _ { 2 ^ { n } } - \mathbb { F } _ { 2 }$ then $\mathbb { F } _ { 2 } ( a )$ is a subfield of $\mathbb { F } _ { 2 ^ { n } }$ of degree dividing n but not equal to 1, so $\mathbb { F } _ { 2 } ( a ) = \mathbb { F } _ { 2 ^ { n } }$ . Hence the minimal polynomial $f _ { a }$ of a over $\mathbb { F } _ { 2 }$ is an irreducible polynomial of degree n over $\mathbb { F } _ { 2 }$ Thus we have a map
+There is a unique field extension $\mathbb { F } _ { 2 ^ { n } }$ of degree n over $\mathbb { F } _ { 2 }$ . It is Galois over $\mathbb { F } _ { 2 }$ (this is because it is a splitting field for the separable polynomial $x ^ { 2 ^ { n } } - x$). If $a \in \mathbb { F } _ { 2 ^ { n } } - \mathbb { F } _ { 2 }$ then $\mathbb { F } _ { 2 } ( a )$ is a subfield of $\mathbb { F } _ { 2 ^ { n } }$ of degree dividing n but not equal to 1, so $\mathbb { F } _ { 2 } ( a ) = \mathbb { F } _ { 2 ^ { n } }$ . Hence the minimal polynomial $f _ { a }$ of a over $\mathbb { F } _ { 2 }$ is an irreducible polynomial of degree n over $\mathbb { F } _ { 2 }$ Thus we have a map
 
 $$
 \begin{array} { l } { { ( \mathbb { F } _ { 2 ^ { n } } - \mathbb { F } _ { 2 } ) \longrightarrow \{ \mathrm { d e g r e e } { - } n \mathrm { ~ i r r e d u c i b l e ~ p o l y n o m i a l s ~ i n ~ } \mathbb { F } _ { 2 } [ x ] \} } } \\ { { a \longmapsto f _ { a } . } } \end{array}
