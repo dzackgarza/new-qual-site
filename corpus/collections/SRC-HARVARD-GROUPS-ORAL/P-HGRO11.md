@@ -27,20 +27,12 @@ Let $F$ be a field. Is the group $\operatorname{SL}_2(F)$
 of $2\times2$ matrices over $F$ with determinant $1$ simple?
 :::
 
-::: {.remark}
-The answer depends on the field. The group here is
-$\operatorname{SL}_2(F)$, not its quotient by scalar matrices.
-In particular, the nontrivial central subgroup $\{I,-I\}$
-already obstructs simplicity when the characteristic is not two.
-:::
-
 ::: {.solution}
-The exact criterion is
+For every field $F$, finite or infinite,
 $$
 \boxed{\operatorname{SL}_2(F)\text{ is simple}
 \iff \operatorname{char}F=2\text{ and }|F|>2.}
 $$
-The proof covers infinite fields as well as finite ones.
 
 <1>1. The group is not simple when $\operatorname{char}F\ne2$,
 or when $F=\mathbb F_2$.
@@ -76,7 +68,7 @@ for $t\in F$ and $a\in F^\times$, and put $U=\{u(t):t\in F\}$.
 
 ::: {.proof}
 One has $u(t)u(s)=u(t+s)$, so $U$ is abelian. Direct
-multiplication, with signs retained in the formulas, gives
+multiplication gives
 $$
 w(a):=u(a)v(-a^{-1})u(a)
 =\begin{pmatrix}0&a\\-a^{-1}&0\end{pmatrix},
@@ -173,4 +165,11 @@ The matrix $u(1)\ne I$ proves that $G$ is nontrivial.
 It has no nontrivial proper normal subgroup, so it is
 simple. Together with step <1>1, this proves the criterion.
 :::
+:::
+
+::: {.remark}
+The center of $\operatorname{SL}_2(F)$ is $\{I,-I\}$, which is nontrivial
+exactly when $\operatorname{char}F\ne2$. The quotient
+$\operatorname{PSL}_2(F)=\operatorname{SL}_2(F)/\{\pm I\}$ is simple for every
+field with $|F|>3$.
 :::
