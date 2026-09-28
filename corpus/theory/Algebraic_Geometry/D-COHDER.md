@@ -32,7 +32,7 @@ Then $\Hom(\mcg, \mci) = \prod_x \Hom_{\OO_{X,x}}(\mcg_x, I_x)$, a composite of 
 :::
 
 ::: {.remark title="Acyclic resolutions"}
-Cohomology can be computed from *any* resolution by $\globsec{X;\wait}\dash$acyclic sheaves, and the useful supply is flasque sheaves.
-The formal reason the answer does not depend on the choice is the $\delta\dash$functor characterisation: $(H^i)$ is a universal $\delta\dash$functor because each $H^{i>0}$ is effaceable, every sheaf embedding into a flasque (hence acyclic) one.
-Any other $\delta\dash$functor agreeing in degree $0$ therefore maps to it uniquely, which is how Čech cohomology and derived functor cohomology get compared at all.
+For every resolution $\mcf\to\mcl^\bullet$ by $\globsec{X;\wait}\dash$acyclic sheaves, $H^i(X,\mcf)\cong H^i(\globsec{X;\mcl^\bullet})$ [@Har10a, Proposition III.1.2A].
+Flasque sheaves are acyclic [@Har10a, Proposition III.2.5], and every sheaf embeds in the flasque sheaf $U\mapsto\prod_{x\in U}\mcf_x$ of discontinuous sections.
+Hence $H^i$ is effaceable for $i>0$, and $(H^i)_{i\ge0}$ is a universal $\delta\dash$functor [@Har10a, Theorem III.1.3A]: for every $\delta\dash$functor $(T^i)$ from $\Sh(X;\Ab)$ to $\Ab$, every natural transformation $H^0\to T^0$ extends uniquely to a morphism of $\delta\dash$functors $(H^i)\to(T^i)$.
 :::
