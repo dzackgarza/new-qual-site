@@ -26,7 +26,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose A, B are disjoint non-empty compact subsets of $\mathbb { R } ^ { n }$ . Prove that there exist $a \in A$ and $b \in B$ satisfying $| | a - b | | = \operatorname* { i n f } \{ | | x - y | | : x \in A , y \in B \}$ •
+Suppose $A$, $B$ are disjoint non-empty compact subsets of $\RR^n$. Prove that there exist $a \in A$ and $b \in B$ satisfying $\norm{a - b} = \inf \{ \norm{x - y} : x \in A, y \in B \}$.
 :::
 
 ::: {.solution}
