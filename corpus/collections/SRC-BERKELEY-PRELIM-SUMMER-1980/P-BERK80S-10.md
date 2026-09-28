@@ -43,75 +43,83 @@ Let $f:\mathbb R^n\to\mathbb R$ be a function whose partial derivatives of order
 ::: {.solution}
 Let $H_f(x)$ denote the Hessian matrix of $f$ at $x$.
 
-<1>1. A critical point with positive-definite Hessian is a strict local minimum.
+<1>1. A critical point $a$ with positive-definite Hessian $H_f(a)$ is a
+strict local minimum.
+
 ::: {.proof}
 Because $H_f(a)$ is positive definite, there is a constant $c>0$ such that
-\[
-v^T H_f(a)v\ge 2c\|v\|^2
-\qquad\text{for all }v\in\mathbb R^n.
-\]
-The Hessian depends continuously on $x$.
-Hence, after shrinking to a neighborhood $U$ of $a$, we may arrange that
-\[
-v^T H_f(x)v\ge c\|v\|^2
-\qquad\text{for all }x\in U,\ v\in\mathbb R^n.
-\]
+$$
+v^T H_f(a)v\ge 2c\norm{v}^2
+\qquad\text{for all }v\in\RR^n.
+$$
+The Hessian depends continuously on $x$, so there is a neighborhood $U$ of
+$a$ such that
+$$
+v^T H_f(x)v\ge c\norm{v}^2
+\qquad\text{for all }x\in U,\ v\in\RR^n.
+$$
 
-Let $h$ be small enough that the segment $a+th$, $0\le t\le1$, lies in $U$.
-Define
-\[
+Let $h$ be small enough that the segment $a+th$, $0\le t\le1$, lies in
+$U$, and define
+$$
 g(t)=f(a+th).
-\]
+$$
 Then
-\[
+$$
 g'(0)=\nabla f(a)\cdot h=0
-\]
+$$
 because $a$ is critical, while
-\[
-g''(t)=h^T H_f(a+th)h\ge c\|h\|^2.
-\]
+$$
+g''(t)=h^T H_f(a+th)h\ge c\norm{h}^2.
+$$
 Taylor's formula with integral remainder gives
-\[
+$$
 \begin{aligned}
 f(a+h)-f(a)
 &=g(1)-g(0)\\
 &=g'(0)+\int_0^1(1-t)g''(t)\,dt\\
-&\ge c\|h\|^2\int_0^1(1-t)\,dt\\
-&=\frac c2\|h\|^2.
+&\ge c\norm{h}^2\int_0^1(1-t)\,dt\\
+&=\frac c2\norm{h}^2,
 \end{aligned}
-\]
-For $h\ne0$ this is strictly positive.
-Thus $a$ is a strict local minimum.
+$$
+which is strictly positive for $h\ne0$.
 :::
 
-<1>2. If the Hessian is positive definite everywhere, there is at most one critical point.
+<1>2. If the Hessian is positive definite everywhere, there is at most one
+critical point.
+
 ::: {.proof}
 Suppose, toward a contradiction, that $a\ne b$ are both critical points.
 Put
-\[
+$$
 v=b-a\ne0
-\]
+$$
 and define
-\[
+$$
 g(t)=f(a+tv),\qquad 0\le t\le1.
-\]
+$$
 Then
-\[
+$$
 g'(t)=\nabla f(a+tv)\cdot v
-\]
+$$
 and
-\[
+$$
 g''(t)=v^T H_f(a+tv)v>0
-\]
-for every $t\in[0,1]$, because the Hessian is positive definite and $v\ne0$.
-Therefore $g'$ is strictly increasing on $[0,1]$.
-But criticality of $a$ and $b$ gives
-\[
+$$
+for every $t\in[0,1]$, because the Hessian is positive definite and
+$v\ne0$. Therefore $g'$ is strictly increasing on $[0,1]$. But criticality
+of $a$ and $b$ gives
+$$
 g'(0)=\nabla f(a)\cdot v=0,
 \qquad
 g'(1)=\nabla f(b)\cdot v=0,
-\]
+$$
 contradicting strict increase.
-Hence $f$ has at most one critical point.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 proves part 1, and step <1>2 proves part 2.
 :::
 :::
