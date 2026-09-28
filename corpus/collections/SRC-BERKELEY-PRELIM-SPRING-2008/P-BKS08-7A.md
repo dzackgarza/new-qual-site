@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-7A
 kind: problem
-title: Irreducible polynomials through degree four over F2
+title: Irreducible polynomials of degree at most $4$ over $\FF_2$
 classification:
   areas:
   - prelim
@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all irreducible polynomials of degree at most \(4\) over \(\mathbb F_2\).
+Find all irreducible polynomials of degree at most $4$ over $\mathbb F_2$.
 :::
 
 ::: {.solution}
