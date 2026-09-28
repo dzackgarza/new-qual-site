@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-03
 kind: problem
-title: Three assertions about real 2-by-2 matrices
+title: Three assertions about real $2\times2$ matrices
 classification:
   areas:
   - applied-algebra
