@@ -37,7 +37,7 @@ Prove from your definition that the closed unit interval $[0,1]$ is compact.
 :::
 
 ::: {.solution}
-A topological space $X$ is **compact** if every open cover of $X$ has a finite subcover.
+A topological space $X$ is \dfn{compact} if every open cover of $X$ has a finite subcover.
 Explicitly, whenever $\{U_\alpha\}_{\alpha\in I}$ is a family of open subsets of $X$ satisfying
 \[
 X=\bigcup_{\alpha\in I}U_\alpha,
@@ -46,8 +46,6 @@ there are $\alpha_1,\ldots,\alpha_n\in I$ such that
 \[
 X=U_{\alpha_1}\cup\cdots\cup U_{\alpha_n}.
 \]
-
-We prove directly from this definition that $[0,1]$ is compact.
 
 <1>1. Fix an arbitrary open cover $\mathcal U$ of $[0,1]$ and define
 \[
