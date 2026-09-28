@@ -29,7 +29,7 @@ audit:
 :::
 
 ::: {.solution}
-A field $K$ is **perfect** if every irreducible polynomial over $K$ is separable. In characteristic $p>0$, this is equivalent to surjectivity of Frobenius
+A field $K$ is \dfn{perfect} if every irreducible polynomial over $K$ is separable. In characteristic $p>0$, this is equivalent to surjectivity of Frobenius
 \[
 F:K\to K,\qquad x\mapsto x^p.
 \]
