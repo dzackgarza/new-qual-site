@@ -19,8 +19,8 @@ audit:
 ::: {.problem}
 Let $f$ be a twice continuously differentiable function on $[0,1]$ such that $f(0)=f(1)=0$.
 Prove that
-\[
+$$
 \max_{x\in[0,1]}|f(x)|\le \frac18\max_{x\in[0,1]}|f''(x)|,
-\]
+$$
 and find an example where equality holds.
 :::
