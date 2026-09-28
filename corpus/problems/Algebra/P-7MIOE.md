@@ -37,7 +37,7 @@ If $\sigma(b)\notin\{a,b\}$, choose
 \[
 c\notin\{a,b,\sigma(b)\}.
 \]
-If $\sigma(b)=a$, so that $(a\ b)$ is a $2$-cycle of $\sigma$, choose a moved point $c$ outside $\{a,b\}$; then $\sigma(c)\notin\{a,b,c\}$ after choosing $c$ in another cycle and, if necessary, replacing $c$ by its predecessor in that cycle.
+If $\sigma(b)=a$, so that $(a\ b)$ is a $2$-cycle of $\sigma$, choose a moved point $c$ outside $\{a,b\}$; then $\sigma(c)\neq c$, and $\sigma(c)\notin\{a,b\}$ because $\sigma^{-1}(a)=b$ and $\sigma^{-1}(b)=a$, so $\sigma(c)\notin\{a,b,c\}$.
 
 Set
 \[
