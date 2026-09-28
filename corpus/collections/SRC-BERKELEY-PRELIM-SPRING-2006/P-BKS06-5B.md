@@ -15,7 +15,7 @@ Prove that there exists no continuous bijection from (0, 1) to [0, 1]. (Recall t
 :::
 
 ::: {.solution}
-Suppose on the contrary that there exists a continuous bijection $f \colon ( 0 , 1 )$ $[ 0 , 1 ]$ . Then there exists $x \in ( 0 , 1 )$ such that $f ( x ) = 0$ . Let $A = ( 0 , x ) , B = ( x , 1 )$ . We have ${ \overset { \cdot } { A } } \cap B = \emptyset$ and since f is injective we have
+Suppose on the contrary that there exists a continuous bijection $f \colon ( 0 , 1 ) \to [ 0 , 1 ]$ . Then there exists $x \in ( 0 , 1 )$ such that $f ( x ) = 0$ . Let $A = ( 0 , x ) , B = ( x , 1 )$ . We have $A \cap B = \emptyset$ and since f is injective we have
 
 $$
 f ( A ) \cap f ( B ) = f ( A \cap B ) = \emptyset .\tag{∗}
