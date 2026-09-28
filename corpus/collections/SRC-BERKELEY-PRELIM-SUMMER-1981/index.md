@@ -31,7 +31,7 @@ source:
   - P-BERK81S-13
   - P-BERK81S-14
   - id: P-PRELIM82S-19
-    comment: Summer 1981 Problem 15; repeated verbatim as Summer 1982 Problem 19
+    comment: Problem 15
   - P-BERK81S-16
   - P-BERK81S-17
   - P-BERK81S-18
@@ -42,7 +42,3 @@ source:
     term: summer
     year: 1981
 ---
-
-::: {.remark}
-The paper, titled *Preliminary Exam - Summer 1981*, does not name its institution; it belongs to the Berkeley preliminary exam sequence.
-:::
