@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-6B
 kind: problem
-title: Last decimal digit of a power tower of sevens
+title: Last decimal digit of $7^{7^{7^7}}$
 classification:
   areas:
   - prelim
@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Find the last decimal digit of
-\[
+$$
 7^{\,7^{\,7^7}}.
-\]
+$$
 :::
 
 ::: {.solution}
