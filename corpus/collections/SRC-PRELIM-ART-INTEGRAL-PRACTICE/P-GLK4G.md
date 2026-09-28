@@ -57,7 +57,6 @@ For $a=3$,
 \[
 \boxed{\int e^{\sqrt[3]x}\,dx=3\left(x^{2/3}-2x^{1/3}+2\right)e^{x^{1/3}}+C.}
 \]
-The stored formula omitted this factor $3$.
 
 Integration by parts twice gives
 \[
