@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-8A
 kind: problem
-title: Structure of $(\mathbb Z/2016\mathbb Z)^\times$
+title: Structure of $(\ZZ/2016\ZZ)^\times$
 classification:
   areas:
   - prelim
