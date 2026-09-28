@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-10
 kind: problem
-title: Characterize $t>0$ such that $e^x>x^t$ for every $x>0$
+title: $e^x>x^t$ for every $x>0$ exactly when $0<t<e$
 classification:
   areas:
   - prelim
