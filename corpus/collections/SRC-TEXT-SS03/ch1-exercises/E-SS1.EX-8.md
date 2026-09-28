@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-8
 kind: problem
-title: "The chain rule for the dz and dzbz derivatives"
+title: Chain rule for the Wirtinger derivatives $\partial_z$ and $\partial_{\bar z}$
 classification:
   areas:
   - complex-analysis
