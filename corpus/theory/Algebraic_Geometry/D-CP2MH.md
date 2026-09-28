@@ -34,15 +34,16 @@ prompts:
 
 ::: {.definition title="Projective variety"}
 A subset of $\PP^n$ is \dfn{closed} if it is $V(T)$ for a set $T$ of homogeneous elements of $S \da k[x_0,\ldots,x_n]$.
-A **projective variety** is an irreducible closed subset of $\PP^n$; a **quasi-projective variety** is an open subset of one.
+A \dfn{projective variety} is an irreducible closed subset of $\PP^n$; a \dfn{quasi-projective variety} is an open subset of one.
 :::
 
 ::: {.remark}
-Homogeneity is forced, not stylistic: a point of $\PP^n$ is a line through the origin, so $f(p)$ is only well defined up to the scaling $f(\lambda p) = \lambda^{\deg f} f(p)$, and only the condition $f(p) = 0$ survives it.
-An inhomogeneous $f$ has no vanishing locus in $\PP^n$ at all.
+Let $p\in\PP^n$ have representative $v\in k^{n+1}\sm\ts{0}$, and let $f\in S$ be homogeneous of degree $d$.
+Then $f(\lambda v)=\lambda^d f(v)$ for $\lambda\in k^\times$, so the condition $f(v)=0$ does not depend on the representative $v$, although the value $f(v)$ does when $d>0$.
+For $f=x_0+x_1^2$ in $k[x_0,x_1]$ and $v=(-1,1)$, $f(v)=0$ but $f(2v)=2\ne0$ when $\operatorname{char}k\ne2$.
 Homogenizing with respect to a new variable $Z$ gives projective closures: $V(x^2 + y^2 - 1)$ becomes $V(X^2 + Y^2 - Z^2)$, and $V(y - x^3)$ becomes $V(YZ^2 - X^3)$.
 
-The correspondence transfers with one defect.
-The **irrelevant ideal** $S_+ = (x_0,\ldots,x_n)$ is homogeneous and radical, and $V(S_+) = \emptyset$, so it shares its vanishing locus with $(1)$.
-The projective Nullstellensatz reads: for a homogeneous ideal $J$, $V(J) = \emptyset$ exactly when $\sqrt{J} \supseteq S_+$, and otherwise $I(V(J)) = \sqrt{J}$.
+The \dfn{irrelevant ideal} $S_+ = (x_0,\ldots,x_n)$ is homogeneous and radical, and $V(S_+) = \emptyset=V(S)$.
+The projective Nullstellensatz: for a homogeneous ideal $J$, $V(J) = \emptyset$ exactly when $\sqrt{J} \supseteq S_+$, and otherwise $I(V(J)) = \sqrt{J}$.
+Hence $V$ and $I$ are inclusion-reversing bijections, inverse to each other, between closed subsets of $\PP^n$ and homogeneous radical ideals of $S$ other than $S_+$ [@Har10a, Exercise I.2.4].
 :::
