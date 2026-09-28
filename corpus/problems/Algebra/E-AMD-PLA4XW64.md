@@ -22,9 +22,11 @@ audit:
 Show that the transitive subgroups of $S_3$ are $S_3, A_3$
 :::
 
-::: {.solution}
-**Goal:** transitivity forces $3$ to divide the order of the subgroup, which leaves only the two subgroups of $S_3$ of order divisible by $3$.
+::: {.hint}
+By orbit-stabilizer, $3$ divides the order of a transitive subgroup of $S_3$.
+:::
 
+::: {.solution}
 <1>1. Let $H \leq S_3$ act transitively on $X = \ts{1,2,3}$.
 
 <1>2. $3$ divides $\abs H$.
