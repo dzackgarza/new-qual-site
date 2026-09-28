@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF07-9A
 kind: problem
-title: Count involutions in a nonabelian group of order sixteen
+title: Involutions in a nonabelian group of order $16$ containing $C_2^3$
 classification:
   areas:
   - prelim
