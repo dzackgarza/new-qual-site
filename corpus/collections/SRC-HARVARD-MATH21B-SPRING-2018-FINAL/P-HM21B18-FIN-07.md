@@ -27,5 +27,9 @@ A=\begin{pmatrix}2&1\\1&1\end{pmatrix},
 
 (d) find an orthogonal matrix $S$ and diagonal matrix $B$ with $B=S^{-1}AS$;
 
-(e) choose which source picture A--D is the image of the displayed Garfield figure under $T$. The candidate pictures are not recovered in the retained extraction.
+(e) choose which picture A--D is the image of the Garfield figure under $T$.
+:::
+
+::: {.remark}
+Part (e) refers to a Garfield figure and four candidate images A--D that are printed in the source exam.
 :::
