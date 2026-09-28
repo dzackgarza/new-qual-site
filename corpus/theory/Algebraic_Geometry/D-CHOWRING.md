@@ -39,5 +39,5 @@ It is a ring homomorphism and lands in the Hodge classes $H^{2k}(X, \ZZ) \cap H^
 ::: {.example}
 $A^\bullet(\PP^n) = \ZZ[H]/(H^{n+1})$, where $H$ is the class of a hyperplane, a subvariety of degree $d$ and codimension $k$ has class $d H^k$, and the product formula recovers Bézout's theorem.
 Here $\operatorname{cl}$ is an isomorphism onto $H^{\mathrm{even}}(\PP^n, \ZZ)$.
-For an elliptic curve $E$, $A^1(E) = \Pic(E)$ is uncountable while $H^2(E, \ZZ) = \ZZ$, so $\operatorname{cl}$ is far from injective: it records only the degree.
+For an elliptic curve $E$, $A^1(E) = \Pic(E)$ is uncountable while $H^2(E, \ZZ) = \ZZ$, so $\operatorname{cl}$ is not injective: on $A^1(E)$ it is the degree map, with kernel $\Pic^0(E)\cong E(\CC)$.
 :::
