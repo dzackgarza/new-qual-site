@@ -45,11 +45,7 @@ is a homomorphism. If $\lambda_g$ is the identity, then $g=\lambda_g(e)=e$, so $
 
 <1>2. A group of order $n$ can sometimes embed in $S_m$ with $m<n$.
 ::: {.proof}
-For example, the Klein four group
-\[
-V_4=\{e,(12)(34),(13)(24),(14)(23)\}
-\]
-is a subgroup of $S_4$. Since $|V_4|=4$, this does not yet make $m<n$. A better example is $S_3$ itself: it has order $6$ and embeds in $S_3$, so here $m=3<6=n$.
+The group $S_3$ has order $6$ and is a subgroup of $S_3$, so here $m=3<6=n$.
 :::
 
 <1>3. For a prime $p$, the cyclic group $C_p$ cannot embed in $S_m$ for any $m<p$; hence Cayley's degree $n=p$ is minimal for $C_p$.
