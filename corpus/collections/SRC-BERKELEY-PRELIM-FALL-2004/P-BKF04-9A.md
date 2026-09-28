@@ -27,17 +27,17 @@ $$
 \abs{\int_0^\varepsilon f(x)e^{inx^3}\,dx}\le\varepsilon M.
 $$
 
-On the remaining interval, integrate by parts:
+On the remaining interval, integrate by parts using $x^2e^{inx^3}=\frac{1}{3in}\frac{d}{dx}e^{inx^3}$:
 
 $$
 \begin{aligned}
 \int_\varepsilon^1 f(x)e^{inx^3}\,dx
 &=\int_\varepsilon^1\frac{f(x)}{x^2}\,x^2e^{inx^3}\,dx\\
-&=\frac1{in}\left(f(1)e^{in}-\frac{f(\varepsilon)}{\varepsilon^2}e^{in\varepsilon^3}-\int_\varepsilon^1\frac{d}{dx}\left(\frac{f(x)}{x^2}\right)e^{inx^3}\,dx\right).
+&=\frac1{3in}\left(f(1)e^{in}-\frac{f(\varepsilon)}{\varepsilon^2}e^{in\varepsilon^3}-\int_\varepsilon^1\frac{d}{dx}\left(\frac{f(x)}{x^2}\right)e^{inx^3}\,dx\right).
 \end{aligned}
 $$
 
-Letting $n$ tend to infinity,
+The expression in parentheses is bounded independently of $n$, because $f/x^2$ and its derivative are continuous on $[\varepsilon,1]$. Letting $n$ tend to infinity,
 
 $$
 \lim_{n\to\infty}\int_\varepsilon^1 f(x)e^{inx^3}\,dx=0.
@@ -46,7 +46,7 @@ $$
 Adding to this the bound on $[0,\varepsilon]$,
 
 $$
-\lim_{n\to\infty}\abs{\int_0^1 f(x)e^{inx^3}\,dx}\le\varepsilon M.
+\limsup_{n\to\infty}\abs{\int_0^1 f(x)e^{inx^3}\,dx}\le\varepsilon M.
 $$
 
 The conclusion follows by letting $\varepsilon$ tend to $0$.
