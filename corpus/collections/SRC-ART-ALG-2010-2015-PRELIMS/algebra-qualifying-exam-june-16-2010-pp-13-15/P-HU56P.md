@@ -43,7 +43,7 @@ order $|P|$, the largest power of $p$ dividing $|K|$.
 It is therefore a Sylow $p$-subgroup of $K$.
 Sylow conjugacy, applied inside the finite group $K$,
 gives an element $k\in K$ with the asserted equality
-[@DF04]. The conjugating element is in $K$, not merely in $G$.
+[@DF04].
 :::
 
 <1>2. Every $g\in G$ belongs to $KN_G(P)$.
