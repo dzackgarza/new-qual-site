@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF07-8A
 kind: problem
-title: Construct sparse spikes with vanishing Cesaro mean
+title: Vanishing Cesàro means with $\limsup a_n/b_n=\infty$
 classification:
   areas:
   - prelim
@@ -135,7 +135,7 @@ Since $b_n/n\to0$, the right-hand side tends to zero as $k\to\infty$.
 Also $k\to\infty$ whenever $n\to\infty$, so the Cesàro means tend to zero.
 :::
 
-<1>5. Along the spike indices,
+<1>5. Along the indices $n_k$,
 $$
 \frac{a_{n_k}}{b_{n_k}}
 =
