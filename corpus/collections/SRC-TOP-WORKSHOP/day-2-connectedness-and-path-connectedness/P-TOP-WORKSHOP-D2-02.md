@@ -22,54 +22,25 @@ Show that if $A$ is a proper subset of a connected space $X$ and $B$ is a proper
 :::
 
 ::: {.solution}
-<1>1. Point selection and set decomposition:
-<2>1. Since $A \subsetneq X$ and $B \subsetneq Y$ are proper subsets, choose points $x_0 \in X \setminus A$ and $y_0 \in Y \setminus B$.
+Since $A$ and $B$ are proper, choose $x_0\in X\setminus A$ and $y_0\in Y\setminus B$. We use that a union of connected subspaces each of which meets a fixed connected subspace $S$, together with $S$, is connected.
+
+<1>1. $(X \times Y) \setminus (A \times B) = \bigl((X \setminus A) \times Y\bigr) \cup \bigl(X \times (Y \setminus B)\bigr)$.
 ::: {.proof}
-proper subsets have non-empty complements.
-:::
-<2>2. The complement of the product $A \times B$ decomposes as:
-\[
-(X \times Y) \setminus (A \times B) = \big((X \setminus A) \times Y\big) \cup \big(X \times (Y \setminus B)\big).
-\]
-::: {.proof}
-$(x, y) \notin A \times B \iff x \notin A \text{ or } y \notin B$.
+$(x, y) \notin A \times B$ if and only if $x \notin A$ or $y \notin B$.
 :::
 
-<1>2. Connectedness of the central spine $S$:
-<2>1. Define the subspace $S = (\{x_0\} \times Y) \cup (X \times \{y_0\})$.
+<1>2. $S = (\{x_0\} \times Y) \cup (X \times \{y_0\})$ is a connected subset of $(X \times Y) \setminus (A \times B)$.
 ::: {.proof}
-definition of $S$.
-:::
-<2>2. $\{x_0\} \times Y \cong Y$ is connected, and $X \times \{y_0\} \cong X$ is connected.
-Their intersection is $(\{x_0\} \times Y) \cap (X \times \{y_0\}) = \{(x_0, y_0)\} \neq \emptyset$.
-Thus $S$ is connected.
-::: {.proof}
-union of connected spaces sharing a common point is connected.
+The slices $\{x_0\} \times Y \cong Y$ and $X \times \{y_0\} \cong X$ are connected and share the point $(x_0, y_0)$, so their union is connected. It lies in the complement by step <1>1, since $x_0\notin A$ and $y_0\notin B$.
 :::
 
-<1>3. Connectedness of the total complement:
-<2>1. For each $x \in X \setminus A$, the slice $\{x\} \times Y \cong Y$ is connected and contains the point $(x, y_0) \in X \times \{y_0\} \subset S$.
-Thus $(\{x\} \times Y) \cap S \neq \emptyset$.
+<1>3. Each slice $\{x\} \times Y$ with $x \in X \setminus A$ and each slice $X \times \{y\}$ with $y \in Y \setminus B$ is a connected subset of the complement meeting $S$.
 ::: {.proof}
-$(x, y_0) \in S$.
-:::
-<2>2. For each $y \in Y \setminus B$, the slice $X \times \{y\} \cong X$ is connected and contains the point $(x_0, y) \in \{x_0\} \times Y \subset S$.
-Thus $(X \times \{y\}) \cap S \neq \emptyset$.
-::: {.proof}
-$(x_0, y) \in S$.
-:::
-<2>3. The entire complement can be written as:
-\[
-(X \times Y) \setminus (A \times B) = S \cup \left(\bigcup_{x \in X \setminus A} (\{x\} \times Y)\right) \cup \left(\bigcup_{y \in Y \setminus B} (X \times \{y\})\right).
-\]
-Since each constituent subspace is connected and intersects the connected subspace $S$, the entire union is connected.
-::: {.proof}
-a union of connected subspaces that each intersect a fixed connected subspace is connected.
+These slices are homeomorphic to $Y$ and $X$, hence connected, and lie in the complement by step <1>1. The slice $\{x\} \times Y$ contains $(x, y_0) \in S$, and $X \times \{y\}$ contains $(x_0, y) \in S$.
 :::
 
-<1>4. Conclusion:
-$(X \times Y) \setminus (A \times B)$ is connected. Q.E.D.
+<1>4. Q.E.D.
 ::: {.proof}
-<1>2 and <1>3.
+By step <1>1, the complement is the union of the slices in step <1>3, and it contains $S$. Each slice is connected and meets the connected set $S$ of step <1>2, so the union of $S$ and all the slices, which is the complement, is connected.
 :::
 :::
