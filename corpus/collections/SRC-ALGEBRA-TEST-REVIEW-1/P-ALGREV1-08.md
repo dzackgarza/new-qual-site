@@ -28,7 +28,7 @@ Classify the following assertion as true, sometimes true, or false: in a factor 
 :::
 
 ::: {.solution}
-The assertion is **sometimes true**.
+The assertion is sometimes true.
 
 <1>1. It is true when $H$ is trivial.
 ::: {.proof}
@@ -57,7 +57,7 @@ but the order of $0$ is $1$ while the order of $2$ is $2$.
 Thus equal cosets need not have representatives of equal order.
 :::
 
-<1>3. Conclude the classification.
+<1>3. Q.E.D.
 ::: {.proof}
 Step <1>1 gives cases in which the assertion holds, while step <1>2 gives a
 case in which it fails. Therefore the correct classification is
