@@ -72,11 +72,8 @@ so $\dim U = 0$.
 :::
 
 ::: {.remark}
-Erratum: part a of the argument above has three faulty steps.
+Erratum: part a of the solution has three faulty steps.
 
 - The monotonicity step starts from a chain in $V$ and intersects it with $U$, which neither keeps the members irreducible nor keeps the inclusions proper. It should start from a chain $Z_0 \subsetneq \cdots \subsetneq Z_n$ of closed irreducible subsets of $U$: their closures $\overline{Z_j}$ in $V$ are closed and irreducible, and they are distinct because $Z_j = \overline{Z_j} \intersect U$.
 - Irreducibility of $A_j = I_j \intersect U_0$ does not come from a decomposition of $I_0$. Once $U_0$ meets $I_0$ it meets every $I_j \supseteq I_0$, and $A_j$ is a nonempty open subset of the irreducible space $I_j$, hence irreducible and dense in $I_j$.
-- The displayed computation of $A_{i+1} \sm A_i$ is garbled: it mixes indices and concludes that the difference is empty, which is the opposite of what is wanted. If $A_i = A_{i+1}$, then $I_{i+1} = \overline{A_{i+1}} = \overline{A_i} \subseteq I_i$ by density, contradicting $I_i \subsetneq I_{i+1}$.
-
-In part b the source's topology reads $\ts{\emptyset, X, \ts{1}}$ and its chain ends in $\ts{a} = X$; the example is the one above, with open point $a$ and $U = \ts{a}$.
-:::
+- The displayed computation of $A_{i+1} \sm A_i$ is garbled: it mixes indices and concludes that the difference is empty, which is the opposite of what is wanted. If $A_i = A_{i+1}$, then $I_{i+1} = \overline{A_{i+1}} = \overline{A_i} \subseteq I_i$ by density, contradicting $I_i \subsetneq I_{i+1}$.:::
