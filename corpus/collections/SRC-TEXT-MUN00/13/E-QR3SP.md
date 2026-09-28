@@ -39,7 +39,7 @@ Let
 \[
 \mathcal T_c=\{\varnothing\}\cup\{U\subseteq X: X-U\text{ is countable}\}.
 \]
-Certainly $\varnothing,X\in\mathcal T_c$. If $\{U_\alpha\}$ is a family in $\mathcal T_c$ and all $U_\alpha$ are empty there is nothing to prove. Otherwise choose one nonempty $U_\beta$. Then
+The complement of $X$ is empty, so $\varnothing,X\in\mathcal T_c$. If $\{U_\alpha\}$ is a family in $\mathcal T_c$ and all $U_\alpha$ are empty, its union is $\varnothing\in\mathcal T_c$. Otherwise choose one nonempty $U_\beta$. Then
 \[
 X-\bigcup_\alpha U_\alpha=\bigcap_\alpha(X-U_\alpha)\subseteq X-U_\beta,
 \]
