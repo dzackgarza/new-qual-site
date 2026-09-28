@@ -32,7 +32,8 @@ LATEXMACS = r"""
 
 PREAMBLE_COMMON = r"""
 \newcommand{\one}[0]{\mathbbm{1}}
-\newcommand{\qty}[1]{\left( {#1} \right)}
+\DeclarePairedDelimiter\qty{(}{)}
+\providecommand{\mapsfrom}{\mathrel{\reflectbox{\ensuremath{\mapsto}}}}
 \input{latexmacs}
 """
 
@@ -58,8 +59,11 @@ def test_the_preamble_is_read_as_latex_reads_it(tmp_path: Path) -> None:
     # survives -- with no argument, which is how all 57 corpus sites write it.
     assert defined["too"] == r"\longrightarrow"
     # Reached only by following `\input` from the entry file, twice over.
-    assert defined["qty"] == r"\left( {#1} \right)"
     assert defined["one"] == r"\mathbbm{1}"
+    # A mathtools paired delimiter and a `\providecommand` are definitions too:
+    # reading neither left 702 `\qty` sites and every `\mapsfrom` undefined.
+    assert defined["qty"] == r"\left( #1 \right)"
+    assert defined["mapsfrom"] == r"\mathrel{\reflectbox{\ensuremath{\mapsto}}}"
     # A declared operator is a definition, and this is what it means.
     assert defined["Aut"] == r"\operatorname{Aut}"
     # A body that runs past its line, held together by the `%` line joiners.

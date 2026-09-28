@@ -53,8 +53,11 @@ SEARCH_PATH = (PREAMBLE.parent / "macros",)
 COMMENT_RE = re.compile(r"(?<!\\)%.*")
 INPUT_RE = re.compile(r"\\input\{([^}]+)\}")
 # The optional groups are LaTeX's argument count and default first argument.
-COMMAND_RE = re.compile(r"\\(?:re|provide)?newcommand\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[\d+\])?(?:\[[^\]]*\])?\s*\{")
+COMMAND_RE = re.compile(r"\\(?:(?:re)?newcommand|providecommand)\*?\s*\{?\\([A-Za-z]+)\}?\s*(?:\[\d+\])?(?:\[[^\]]*\])?\s*\{")
 OPERATOR_RE = re.compile(r"\\DeclareMathOperator\*?\s*\{?\\([A-Za-z]+)\}?\s*\{")
+# mathtools' `\DeclarePairedDelimiter\qty{(}{)}` defines `\qty{x}` as the scaled
+# pair around its argument, which MathJax writes with `\left` and `\right`.
+PAIRED_RE = re.compile(r"\\DeclarePairedDelimiter\s*\{?\\([A-Za-z]+)\}?\s*\{([^{}]*)\}\s*\{([^{}]*)\}")
 # `\def` is a definition too. The preamble writes three macros with it, and the
 # corpus uses two of them, so `\rising{n}{k}` and `\falling{2n}{n}` reached the
 # page as red source. The parameter markers sit between the name and the body.
@@ -72,11 +75,10 @@ TEX_ONLY = re.compile(r"\\hfill\b")
 # renders as a red error box, not as a fallback, so the substitution has to
 # happen here rather than at the page.
 #
-# `\notdivides` is built from `\ooalign`, `\hidewidth` and `\cr`, which are
-# plain-TeX alignment primitives MathJax has no equivalent for. `\nmid` is the
-# same relation from the standard tables, which MathJax does implement.
-# `\Lightning` is a marvosym symbol, so `\contradiction` reached the page as
-# red literal text. U+21AF DOWNWARDS ZIGZAG ARROW is the same sign.
+# `\contradiction` is stmaryrd's `\lightning`, which MathJax lacks. U+21AF
+# DOWNWARDS ZIGZAG ARROW is the same sign. `\bigast` sizes `\ast` with `\text`
+# and `\Large`, and MathJax's `\text` reads neither; `\Large` in math mode is
+# the same glyph size.
 #
 # `\one` and `\indic` are built on `\mathbbm`, declared from `bbm.sty`; the
 # blackboard-bold digit is U+1D7D9. `\mapsfrom` reflects `\mapsto` with
@@ -85,12 +87,8 @@ TEX_ONLY = re.compile(r"\\hfill\b")
 # amsmath's own internals: MathJax already provides both, so its versions
 # stand. `\fps` is written with stmaryrd's `\llbracket` and `\rrbracket`, which
 # are U+27E6 and U+27E7. `\envlist` is vertical glue with no mathematics in it.
-# `\colim` is `\mathpalette` over `\colim@`, `\rightarrowfill@` and
-# `\nmlimits@`, all amsmath internals; `\operatorname*` is the same operator
-# with the same limit placement, minus the arrow drawn under the name.
 UNRENDERABLE = {
-    "colim": "\\operatorname*{colim}",
-    "notdivides": "\\mathrel{\\nmid}",
+    "bigast": "\\mathop{\\Large\\ast}",
     "contradiction": "\\mathord{\\unicode{x21AF}}",
     "one": "{\\unicode{x1D7D9}}",
     "indic": "{\\unicode{x1D7D9}}\\left[#1\\right]",
@@ -161,6 +159,8 @@ def definitions(text: str) -> dict[str, str]:
         found.append((match.start(), match.group(1), f"\\operatorname{{{group_at(text, match.end())}}}"))
     for match in DEF_RE.finditer(text):
         found.append((match.start(), match.group(1), group_at(text, match.end())))
+    for match in PAIRED_RE.finditer(text):
+        found.append((match.start(), match.group(1), f"\\left{match.group(2)} #1 \\right{match.group(3)}"))
     return {name: body for _, name, body in sorted(found)}
 
 
