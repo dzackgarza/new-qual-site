@@ -34,71 +34,45 @@ d. Compute the coefficients $a_j$.
 :::
 
 ::: {.solution}
-**Part (a).**
+<1>1. (a) There is a conformal isomorphism $f\colon\DD\to\Omega$ with
+$f(0)=0$.
 
-<1>1. $\Omega = \CC \setminus (-\infty, -1/4]$ is simply connected.
 ::: {.proof}
-the complement of a closed ray is simply connected (it is a slit plane).
+$\Omega$ is the complement in $\CC$ of a closed ray, so it is simply connected
+and not all of $\CC$. The Riemann mapping theorem gives a conformal
+isomorphism $g\colon\DD\to\Omega$. Since $0\in\Omega$, let
+$a=g^{-1}(0)$ and $f=g\circ\phi_a^{-1}$, where
+$\phi_a(z)=(z-a)/(1-\overline az)$ is the disk automorphism with
+$\phi_a(a)=0$. Then $f(0)=g(a)=0$.
 :::
 
-<1>2. $\Omega$ is a proper simply connected domain, so by the Riemann mapping theorem there is a conformal isomorphism $f: \DD \to \Omega$.
+<1>2. (b) There is exactly one such $f$ with $f(0)=0$ and $f'(0)>0$.
+
 ::: {.proof}
-Riemann mapping theorem.
+This is the uniqueness part of the Riemann mapping theorem: if $f_1,f_2$ both
+qualify, then $f_2^{-1}\circ f_1$ is a disk automorphism fixing $0$ with
+positive derivative at $0$, hence the identity by Schwarz's lemma.
 :::
 
-<1>3. We may arrange $f(0) = 0$ by composing with an automorphism of $\Omega$ (or by the normalization in part (b)).
+<1>3. (c) For the normalized $f$ of step <1>2, every $a_j$ is real.
+
 ::: {.proof}
-the Riemann map can be normalized to send $0$ to any prescribed point of $\Omega$.
+$\Omega$ is invariant under complex conjugation. Hence
+$g(z)=\overline{f(\overline z)}$ is a conformal isomorphism $\DD\to\Omega$
+with $g(0)=0$ and $g'(0)=\overline{f'(0)}=f'(0)>0$. By step <1>2, $g=f$.
+Since $g(z)=\sum_j\overline{a_j}z^j$, comparing coefficients gives
+$a_j=\overline{a_j}$, so all $a_j$ lie in $\RR$.
 :::
 
-**Part (b).**
+<1>4. (d) $f(z)=\dfrac{z}{(1-z)^2}$ and $a_j=j$ for all $j\ge1$; in
+particular every $a_j$ lies in $\ZZ$.
 
-<1>1. The normalization $f(0) = 0$ and $f'(0) > 0$ makes $f$ unique.
 ::: {.proof}
-the Riemann mapping theorem gives a unique conformal map with $f(0) = 0$ and $f'(0) > 0$ (positive real derivative).
-:::
-
-**Part (c).**
-
-<1>1. The map $z \mapsto -z$ is an automorphism of $\DD$, so $f(-z)$ is another conformal map $\DD \to \Omega$ with $f(-0) = 0$.
-::: {.proof}
-$-z$ is a rotation of $\DD$.
-:::
-
-<1>2. $f(-z)$ has derivative $-f'(0) < 0$ at $0$, so it is the "other" normalized map (the one with negative real derivative).
-::: {.proof}
-$\frac{d}{dz} f(-z)\big|_{z=0} = -f'(0)$.
-:::
-
-<1>3. The explicit map is the Koebe function $f(z) = \frac{z}{(1-z)^2}$, whose Taylor coefficients are $a_j = j$.
-::: {.proof}
-$\frac{z}{(1-z)^2} = z\sum_{j=0}^{\infty}(j+1)z^j = \sum_{j=1}^{\infty} j z^j$.
-:::
-
-<1>4. Hence all coefficients $a_j = j$ lie in the ring $\ZZ$ (the integers).
-::: {.proof}
-<1>3.
-:::
-
-**Part (d).**
-
-<1>1. $f(z) = \frac{z}{(1-z)^2}$.
-::: {.proof}
-the Koebe function maps $\DD$ biholomorphically onto $\CC \setminus (-\infty, -1/4]$, with $f(0) = 0$ and $f'(0) = 1 > 0$.
-:::
-
-<1>2. $f(z) = \frac{z}{(1-z)^2} = z(1-z)^{-2} = z\sum_{j=0}^{\infty}(j+1)z^j = \sum_{j=1}^{\infty} j z^j$.
-::: {.proof}
-binomial expansion $(1-z)^{-2} = \sum_{j=0}^{\infty}(j+1)z^j$.
-:::
-
-<1>3. Hence $a_j = j$ for all $j \ge 1$.
-::: {.proof}
-read off the coefficient of $z^j$.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-$a_j = j$ (<1>3).
+The Koebe function $k(z)=z/(1-z)^2$ maps $\DD$ conformally onto
+$\CC\setminus(-\infty,-1/4]$, with $k(0)=0$ and $k'(0)=1>0$, so $k=f$ by step
+<1>2. Expanding,
+$$
+\frac{z}{(1-z)^2}=z\sum_{j=0}^\infty(j+1)z^j=\sum_{j=1}^\infty jz^j.
+$$
 :::
 :::
