@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH1-12
 kind: problem
-title: Minimal polynomial relation for sqrt(3)-sqrt(2)
+title: A polynomial with root $\sqrt3-\sqrt2$
 classification:
   areas:
   - algebra
