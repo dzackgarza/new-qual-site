@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-4
 kind: problem
-title: "SS 2.4: The Gaussian is its own Fourier transform"
+title: The Gaussian $e^{-\pi x^2}$ is its own Fourier transform
 classification:
   areas:
   - complex-analysis
