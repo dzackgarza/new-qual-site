@@ -30,7 +30,7 @@ Justify your answer with a proof or counterexample: a $\mathbb C[x,y]$-module is
 :::
 
 ::: {.solution}
-The statement is **true**. Put
+The statement is true. Put
 $$
 R=\CC[x,y].
 $$
@@ -151,9 +151,9 @@ all polynomials in $y$. Hence it is a $\CC[y]$-submodule.
 $M_a$ is a semisimple $\CC[y]$-module.
 
 ::: {.proof}
-A standard characterization of semisimple modules is that every submodule is
-a direct summand; equivalently, every submodule of a semisimple module is
-semisimple.
+A module is semisimple if and only if every submodule is a direct summand.
+Hence every submodule of a semisimple module is semisimple: a submodule $N$ of
+a submodule $L\subseteq M$ has a complement $C$ in $M$, and $L=N\oplus(C\cap L)$.
 
 By step <1>4,
 $$
@@ -181,7 +181,7 @@ $$
 for some $b_\mu\in\CC$, hence is one-dimensional over $\CC$.
 
 On all of $M_a$, the element $x$ acts as the scalar $a$. Therefore every
-$L_\mu$ is stable not only under $y$ but also under $x$. Hence it is an
+$L_\mu$ is stable under both $x$ and $y$. Hence it is an
 $R=\CC[x,y]$-submodule.
 
 On $L_\mu$, the ring $R$ acts through
