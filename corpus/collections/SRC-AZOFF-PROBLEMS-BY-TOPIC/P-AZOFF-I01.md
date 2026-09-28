@@ -34,9 +34,9 @@ Suppose $f : \mathbb { D } \to \mathbb { D }$ is analytic, and admits a continuo
 
 a) Prove that $f$ is a rational function.
 
-b) Suppose that $z = 0$ is the unique zero of $f .$ . Prove that $f ( z ) = \lambda z ^ { n }$ . for some $\lambda \in \mathbb { C }$ of absolute value 1 and some natural number $n$ .
+b) Suppose that $z = 0$ is the unique zero of $f$. Prove that $f(z) = \lambda z^n$ for some $\lambda \in \mathbb { C }$ of absolute value 1 and some natural number $n$ .
 
-c) More generally, suppose that $a _ { 1 } , \dots , a _ { n } \in \mathbb { D }$ are the zeros of $f _ { ; }$ , listed with multiplicity.
+c) More generally, suppose that $a _ { 1 } , \dots , a _ { n } \in \mathbb { D }$ are the zeros of $f$, listed with multiplicity.
 Prove that
 
 $$
