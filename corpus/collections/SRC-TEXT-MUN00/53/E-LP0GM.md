@@ -24,8 +24,6 @@ Show that if $U$ is connected, then the partition of $p^{-1}(U)$ into slices is 
 :::
 
 ::: {.solution}
-**Goal:** Prove that if $U \subseteq B$ is a connected open set that is evenly covered by $p: E \to B$, then the partition of $p^{-1}(U)$ into slices is uniquely determined as the collection of connected components of $p^{-1}(U)$.
-
 <1>1. Slices over an evenly covered set:
     *Proof:*
     <2>1. By the definition of an evenly covered open set, there exists a partition of $p^{-1}(U)$ into a collection of pairwise disjoint open sets $\{V_\alpha\}_{\alpha \in A}$ in $E$:
@@ -48,7 +46,7 @@ Show that if $U$ is connected, then the partition of $p^{-1}(U)$ into slices is 
     <2>5. Conversely, $V_\alpha$ is a connected subset of $p^{-1}(U)$ containing $x$. Since $C$ is the maximal connected subset containing $x$, $V_\alpha \subseteq C$.
     <2>6. Thus $C = V_\alpha$.
 
-<1>4. Conclusion:
+<1>4. Q.E.D.
     *Proof:*
-    The slices $\{V_\alpha\}_{\alpha \in A}$ of $p^{-1}(U)$ are precisely the connected components of the topological subspace $p^{-1}(U)$. Because the partition of any topological space into its connected components is uniquely determined, the partition of $p^{-1}(U)$ into slices is unique.
+    By step <1>3, the slices $\{V_\alpha\}_{\alpha \in A}$ of $p^{-1}(U)$ are precisely the connected components of the topological subspace $p^{-1}(U)$. Because the partition of any topological space into its connected components is uniquely determined, the partition of $p^{-1}(U)$ into slices is unique.
 :::
