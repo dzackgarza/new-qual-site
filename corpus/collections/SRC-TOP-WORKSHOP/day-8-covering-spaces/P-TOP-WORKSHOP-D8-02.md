@@ -24,45 +24,20 @@ Show that $q$ is also a covering map.
 :::
 
 ::: {.solution}
-**Goal.** Show the pullback $\tilde Y$ of a covering map $p: \tilde X \to X$ along $f: Y \to X$ is again a covering map.
+Fix $y \in Y$, let $U \subseteq X$ be an evenly covered open neighborhood of $f(y)$ with $p^{-1}(U) = \bigsqcup_\alpha \widetilde U_\alpha$ and each $p|_{\widetilde U_\alpha}\colon \widetilde U_\alpha \to U$ a homeomorphism, and put $V = f^{-1}(U)$, an open neighborhood of $y$ because $f$ is continuous. For each $\alpha$ let $s_\alpha = (p|_{\widetilde U_\alpha})^{-1}\colon U \to \widetilde U_\alpha$ and $W_\alpha = \widetilde Y \cap (V \times \widetilde U_\alpha)$.
 
-<1>1. Let $y \in Y$ and let $U \subseteq X$ be an evenly covered neighborhood of $f(y)$.
-<2>1. $p^{-1}(U) = \bigsqcup_\alpha \tilde U_\alpha$ with each $\tilde U_\alpha$ mapping homeomorphically onto $U$ via $p$.
+<1>1. $q^{-1}(V) = \bigsqcup_\alpha W_\alpha$, a disjoint union of open subsets of $\widetilde Y$.
 ::: {.proof}
-definition of an evenly covered neighborhood.
-:::
-
-<1>2. $V \definedas f^{-1}(U)$ is an open neighborhood of $y$.
-::: {.proof}
-$f$ is continuous and $f(y) \in U$.
+Each $W_\alpha$ is open in $\widetilde Y$ because $V \times \widetilde U_\alpha$ is open in $Y \times \widetilde X$, and the $W_\alpha$ are pairwise disjoint because the $\widetilde U_\alpha$ are. If $(y', \widetilde x) \in \widetilde Y$ with $y' \in V$, then $p(\widetilde x) = f(y') \in U$, so $\widetilde x$ lies in exactly one $\widetilde U_\alpha$, and $(y', \widetilde x) \in W_\alpha$. Conversely every $W_\alpha$ lies in $q^{-1}(V)$.
 :::
 
-<1>3. $q^{-1}(V) = \bigsqcup_\alpha \qty(V \times \tilde U_\alpha) \cap \tilde Y$.
-<2>1. $q^{-1}(V) = \theset{(y', \tilde x) \in \tilde Y : y' \in V}$.
+<1>2. For each $\alpha$, $q|_{W_\alpha}\colon W_\alpha \to V$ is a homeomorphism.
 ::: {.proof}
-$q(y', \tilde x) = y'$.
-:::
-<2>2. For $(y', \tilde x) \in \tilde Y$ with $y' \in V$, we have $f(y') \in U$ and $p(\tilde x) = f(y') \in U$, so $\tilde x \in p^{-1}(U) = \bigsqcup_\alpha \tilde U_\alpha$.
-::: {.proof}
-$f(y') = p(\tilde x)$ and $f(y') \in U$.
-:::
-<2>3. Hence $q^{-1}(V) = \bigsqcup_\alpha \theset{(y', \tilde x) : y' \in V, \tilde x \in \tilde U_\alpha, f(y') = p(\tilde x)}$.
-::: {.proof}
-partition by which $\tilde U_\alpha$ contains $\tilde x$.
+The map $\sigma_\alpha\colon V \to W_\alpha$, $\sigma_\alpha(y') = (y', s_\alpha(f(y')))$, is continuous, lands in $\widetilde Y$ because $p(s_\alpha(f(y'))) = f(y')$, and satisfies $q \circ \sigma_\alpha = \operatorname{id}_V$. If $(y', \widetilde x) \in W_\alpha$, then $\widetilde x \in \widetilde U_\alpha$ and $p(\widetilde x) = f(y')$, so $\widetilde x = s_\alpha(f(y'))$ and $\sigma_\alpha(q(y', \widetilde x)) = (y', \widetilde x)$. Thus $\sigma_\alpha$ is a continuous inverse of the continuous map $q|_{W_\alpha}$.
 :::
 
-<1>4. Each piece maps homeomorphically onto $V$ via $q$.
-<2>1. For fixed $\alpha$, the map $q: \theset{(y', \tilde x) \in V \times \tilde U_\alpha : f(y') = p(\tilde x)} \to V$ is a homeomorphism.
+<1>3. Q.E.D.
 ::: {.proof}
-since $p|_{\tilde U_\alpha}: \tilde U_\alpha \to U$ is a homeomorphism, for each $y' \in V$ there is a unique $\tilde x \in \tilde U_\alpha$ with $p(\tilde x) = f(y')$, namely $\tilde x = (p|_{\tilde U_\alpha})^{-1}(f(y'))$; this gives a continuous inverse $y' \mapsto (y', (p|_{\tilde U_\alpha})^{-1}(f(y')))$.
-:::
-<2>2. Hence $q$ is a covering map.
-::: {.proof}
-$V$ is an evenly covered neighborhood of $y$, and $y$ was arbitrary.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.2 shows $q$ is a covering map.
+By steps <1>1 and <1>2, every $y \in Y$ has an open neighborhood $V$ evenly covered by $q$, so $q$ is a covering map.
 :::
 :::
