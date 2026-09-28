@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NRCTX
 kind: problem
-title: Uniformly continuous increasing convex function is differentiable a.e.
+title: An increasing convex function on $[0,1]$ is the integral of its derivative
 classification:
   areas:
   - real-analysis
