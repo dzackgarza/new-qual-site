@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NKCDN
 kind: problem
-title: Evaluate $\int e^x\cos x\,dx$ and $\int\sin(\ln x)\,dx$
+title: $\int e^x\cos x\,dx$ and $\int\sin(\ln x)\,dx$
 classification:
   areas:
   - prelim
