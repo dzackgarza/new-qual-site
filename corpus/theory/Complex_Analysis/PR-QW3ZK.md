@@ -21,6 +21,6 @@ If $\abs{h(z)}\le M$ for all $z\in D$ and $\abs{h(z_0)}=M$ for some $z_0\in D$, 
 
 ::: {.proof}
 Write $h(z_0)=Me^{i\varphi}$ and put $U\coloneqq\Re\big(e^{-i\varphi}h\big)=u\cos\varphi+v\sin\varphi$, a real harmonic function on $D$.
-Then $U\le\abs{h}\le M$ on $D$ and $U(z_0)=M$, so by the strict maximum principle for real harmonic functions on a connected open set, $U\equiv M$.
+Then $U\le\abs{h}\le M$ on $D$ and $U(z_0)=M$, so by the [[PR-6WOTK|strict maximum principle for real harmonic functions]] on a connected open set, $U\equiv M$.
 Since $M=U\le\abs{e^{-i\varphi}h}\le M$, the imaginary part of $e^{-i\varphi}h$ vanishes, so $e^{-i\varphi}h\equiv M$ and $h\equiv Me^{i\varphi}$.
 :::
