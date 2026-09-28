@@ -37,58 +37,53 @@ c. In parts:
     3. Give an example of a function $f\in L^1(\RR^n)$ such that $\hat{f}$ is not in $L^1(\RR^n)$.
 :::
 ::: {.solution}
-<1>1. (a) Definition: for $f, g \in L^1(\RR^n)$, the convolution is $(f \ast g)(x) = \int_{\RR^n} f(x - y)\,g(y)\,dy = \int f(y)\,g(x-y)\,dy$, defined for almost every $x$; and $f \ast g \in L^1(\RR^n)$ with $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
-    ::: {.proof}
-    Tonelli's theorem gives $\int |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$, so the integral is finite for a.e. $x$ and the $L^1$ norm bound holds.
-    :::
+(a) For $f, g \in L^1(\RR^n)$, $(f \ast g)(x) = \int_{\RR^n} f(x - y)\,g(y)\,dy$. By Tonelli's theorem $\iint |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$, so the integral converges absolutely for a.e. $x$, and $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
 
-<1>2. (b) If $f, g$ are integrable and bounded, then $(f \ast g)(x) \to 0$ as $|x| \to \infty$.
-    <2>1. Fix $\eps > 0$; choose $R$ with $\int_{|y| \ge R}|f(y)|\,dy < \eps$ and $\int_{|y| \ge R}|g(y)|\,dy < \eps$ (possible since $f, g \in L^1$).
-        ::: {.proof}
-        dominated convergence / definition of the improper integral.
-        :::
-    <2>2. Split: $|(f\ast g)(x)| \le \int_{|y| < R}|f(x-y)||g(y)|\,dy + \int_{|y| \ge R}|f(x-y)||g(y)|\,dy$.
-        ::: {.proof}
-        triangle inequality.
-        :::
-    <2>3. Second term: $\int_{|y| \ge R}|f(x-y)||g(y)|\,dy \le \|f\|_\infty \int_{|y| \ge R}|g(y)|\,dy \le \|f\|_\infty \eps$.
-        ::: {.proof}
-        $|f| \le \|f\|_\infty$ pointwise.
-        :::
-    <2>4. First term: for $|x| \ge 2R$, if $|y| < R$ then $|x - y| \ge |x| - |y| \ge R$, so $\int_{|y| < R}|f(x-y)||g(y)|\,dy \le \|g\|_\infty \int_{|x-y| \ge R}|f(x-y)|\,dy = \|g\|_\infty \int_{|z| \ge R}|f(z)|\,dz \le \|g\|_\infty \eps$.
-        ::: {.proof}
-        substitute $z = x - y$; the integration domain is contained in $\{|z| \ge R\}$.
-        :::
-    <2>5. Q.E.D.
-        ::: {.proof}
-        <2>2, <2>3, <2>4 give $|(f\ast g)(x)| \le (\|f\|_\infty + \|g\|_\infty)\eps$ for $|x| \ge 2R$.
-        :::
+(b)
 
-<1>3. (c)1. Definition: for $f \in L^1(\RR^n)$, the Fourier transform is $\hat f(\xi) = \int_{\RR^n} f(x)\,e^{-2\pi i x \cdot \xi}\,dx$, $\xi \in \RR^n$.
-    ::: {.proof}
-    the integral converges absolutely since $|f(x)e^{-2\pi i x\cdot\xi}| = |f(x)|$; $\hat f$ is bounded ($\le \|f\|_1$) and continuous.
-    :::
+<1>1. Fix $\eps > 0$ and choose $R$ with $\int_{|y| \ge R}|f| < \eps$ and $\int_{|y| \ge R}|g| < \eps$. Then $\int_{|y| \ge R}|f(x-y)||g(y)|\,dy \le \|f\|_\infty\eps$ for every $x$.
 
-<1>4. (c)2. Outline of Fourier inversion: $\check g(x) := \int \hat g(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ satisfies $\check{\hat f} = f$ a.e. for $f \in L^1$ with $\hat f \in L^1$.
-    <2>1. For Gaussian mollifiers $\phi_t(x) = t^{-n}\phi(x/t)$, $\phi(x) = e^{-\pi|x|^2}$, the transform is $\hat \phi_t(\xi) = e^{-\pi t^2|\xi|^2}$, and $\int \hat\phi_t = \hat\phi_t(0) = 1$.
-        ::: {.proof}
-        the Gaussian is its own Fourier transform (standard computation via the heat kernel).
-        :::
-    <2>2. Show $\int f(x-y)\,\phi_t(y)\,dy \to f$ in $L^1$ as $t \to 0$ (approximation to identity).
-        ::: {.proof}
-        strong continuity of translation in $L^1$ plus $\int\phi_t = 1$.
-        :::
-    <2>3. On the transform side, compute $\int \hat f(\xi)\,\hat\phi_t(\xi)\,e^{2\pi i x\cdot\xi}\,d\xi = (f \ast \phi_t)(x)$ (Fubini on $\int f(y)\int \phi_t(x-y) e^{-2\pi i\xi\cdot(x-y)}\,d\xi\,dy$ — the inner integral is $\check{\hat\phi}_t = \phi_t$).
-        ::: {.proof}
-        Fubini and the inversion formula for the Gaussian (which is elementary, or by the same argument bootstrapped from the known transform of $\phi_t$).
-        :::
-    <2>4. Let $t \to 0$: the left side converges to $\check{\hat f}(x)$ (dominated by $\|\hat f\|_1$, since $\hat\phi_t(\xi) \to 1$ pointwise) and the right side to $f$ in $L^1$; so $\check{\hat f} = f$ a.e.
-        ::: {.proof}
-        dominated convergence on the left; <2>2 on the right.
-        :::
+::: {.proof}
+$R$ exists by dominated convergence, since $|f|\chi_{\theset{|y| \ge R}} \to 0$ pointwise as $R \to \infty$ with dominating function $|f|$, and likewise for $g$. The bound uses $|f| \le \|f\|_\infty$.
+:::
 
-<1>5. (c)3. Example: $f = \chi_{[-1,1]}$ has $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi} \notin L^1(\RR)$.
-    ::: {.proof}
-    $\hat f(\xi) = \int_{-1}^1 e^{-2\pi i x \xi}\,dx = \frac{e^{-2\pi i\xi} - e^{2\pi i\xi}}{-2\pi i \xi} = \frac{\sin(2\pi\xi)}{\pi\xi}$; and $|\hat f(\xi)| \sim \frac{1}{|\xi|}$ at infinity, so $\int |\hat f| = \infty$ (the function is $\ge c/|\xi|$ off a bounded set).
-    :::
+<1>2. For $|x| \ge 2R$, $\int_{|y| < R}|f(x-y)||g(y)|\,dy \le \|g\|_\infty\eps$.
+
+::: {.proof}
+If $|y| < R$ and $|x| \ge 2R$, then $|x - y| \ge R$. Substituting $z = x - y$ gives $\int_{|y| < R}|f(x-y)||g(y)|\,dy \le \|g\|_\infty\int_{|z| \ge R}|f(z)|\,dz$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2, $|(f\ast g)(x)| \le (\|f\|_\infty + \|g\|_\infty)\eps$ for $|x| \ge 2R$.
+:::
+
+(c)1. For $f \in L^1(\RR^n)$, $\hat f(\xi) = \int_{\RR^n} f(x)\,e^{-2\pi i x \cdot \xi}\,dx$. The integral converges absolutely because $|f(x)e^{-2\pi i x\cdot\xi}| = |f(x)|$.
+
+(c)2. Let $f \in L^1$ with $\hat f \in L^1$. Then $f(x) = \int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for a.e. $x$.
+
+<1>1. For $\phi(x) = e^{-\pi|x|^2}$ and $\phi_t(x) = t^{-n}\phi(x/t)$, $\widehat{\phi_t}(\xi) = e^{-\pi t^2|\xi|^2}$ and $\int \widehat{\phi_t}(\xi) e^{2\pi i x\cdot\xi}\,d\xi = \phi_t(x)$.
+
+::: {.proof}
+In one variable, $\hat\phi$ and $\phi$ both solve $u' = -2\pi\xi u$ with $u(0) = 1$, the first by differentiating under the integral and integrating by parts; so $\hat\phi = \phi$. The $n$-variable case factors, and the formulas for $\phi_t$ follow by scaling.
+:::
+
+<1>2. $\int \hat f(\xi)\,\widehat{\phi_t}(\xi)\,e^{2\pi i x\cdot\xi}\,d\xi = (f \ast \phi_t)(x)$ for every $x$.
+
+::: {.proof}
+Insert $\hat f(\xi) = \int f(y)e^{-2\pi i y\cdot\xi}\,dy$. The double integral converges absolutely, so Fubini's theorem and step <1>1 give $\int f(y)\,\phi_t(x - y)\,dy$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+As $t \to 0$, the left side of step <1>2 tends to $\int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for every $x$, by dominated convergence with dominating function $|\hat f|$, since $\widehat{\phi_t} \to 1$ pointwise and $|\widehat{\phi_t}| \leq 1$. The right side tends to $f$ in $L^1$, because $\phi_t$ is an approximate identity; so a subsequence converges to $f$ a.e. The two limits agree a.e.
+:::
+
+(c)3. For $n = 1$, $f = \chi_{[-1,1]}$ is in $L^1$ and $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi} \notin L^1(\RR)$.
+
+::: {.proof}
+$\hat f(\xi) = \int_{-1}^1 e^{-2\pi i x \xi}\,dx = \frac{e^{2\pi i\xi} - e^{-2\pi i\xi}}{2\pi i \xi} = \frac{\sin(2\pi\xi)}{\pi\xi}$. For $k \geq 1$ and $\xi \in [k/2 + 1/8, k/2 + 3/8]$, $|\sin 2\pi\xi| \ge 1/\sqrt2$ and $|\xi| \le k/2 + 1$, so $\int|\hat f| \ge \sum_{k \ge 1}\frac{1}{4\sqrt2\,\pi(k/2+1)} = \infty$.
+:::
 :::
