@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BNX60
 kind: problem
-title: Local finiteness of the shifted double intervals
+title: Locally finite interval collections in $\RR$ and in $(0,1)$
 classification:
   areas:
   - topology
