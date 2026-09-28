@@ -19,11 +19,11 @@ Find a conformal equivalence $\Delta \intersect A \to A$.
 :::
 
 ::: {.solution}
-In steps:
+The composite of the following three maps is a conformal equivalence $\Delta\intersect A\to A$.
 
-- Unfold with $z\mapsto z^2$ to get $\DD \intersect \HH$.
+- The squaring map $z\mapsto z^2$ sends $\Delta\intersect A$ onto $\DD \intersect \HH$.
 
-- Joukowski it with $z\mapsto -{1\over 2}(z+z\inv)$ to get $\HH$.
+- The negated Joukowski map $z\mapsto -{1\over 2}(z+z\inv)$ sends $\DD\intersect\HH$ onto $\HH$.
 
-- Fold with $z\mapsto z^{1\over 2}$ to get $Q_1 = A$.
+- The principal branch of $z\mapsto z^{1\over 2}$ sends $\HH$ onto the first quadrant $A$.
 :::
