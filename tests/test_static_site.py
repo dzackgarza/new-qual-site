@@ -156,9 +156,7 @@ def test_random_problem_topic_selector_is_in_the_shared_header(built_fixture: Pa
     assert "window.location.assign(new URL(problem.url, siteRoot).href)" in app
 
 
-def test_problem_lists_survive_display_math_and_keep_nested_items(tmp_path: Path) -> None:
-    """Display math inside one item must not flatten the authored list to prose."""
-    card = r"""---
+LIST_PROBLEM = r"""---
 schema: qual/card@1
 id: P-LIST
 kind: problem
@@ -182,12 +180,11 @@ Let $R$ be a ring.
   - show that it is the unique maximal ideal.
 :::
 """
-    work = fixture_repo(tmp_path, {"P-LIST.md": card})
 
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
 
-    page = read_html(work / "build" / "quarto" / "_site" / "tag" / "P-LIST.html")
+def test_problem_lists_survive_display_math_and_keep_nested_items(static_site: Path) -> None:
+    """Display math inside one item must not flatten the authored list to prose."""
+    page = read_html(static_site / "build" / "quarto" / "_site" / "tag" / "P-LIST.html")
     statement = page.root.find_all("div", **{"class": "card-statement"})[0]
     assert len(statement.find_all("ul")) == 2
     assert any(item.find_all("ul") for item in statement.find_all("li"))
@@ -263,23 +260,14 @@ A compilation reprints whole exams. Those entries are collections, not problems.
 """
 
 
-def test_every_internal_card_or_asset_link_resolves_in_the_built_site(tmp_path: Path) -> None:
+def test_every_internal_card_or_asset_link_resolves_in_the_built_site(static_site: Path) -> None:
     """Published card and asset links must name files in the built site.
 
     `SRC-PACKET` lists a sibling collection among its contents, which is the
     shape the real compilations use. A link written for it as a problem points
     at `tag/SRC-UGA-FIX.html`, and nothing writes that file.
     """
-    work = fixture_repo(
-        tmp_path,
-        {
-            "SRC-PACKET.md": COMPILATION_LISTING_A_SIBLING,
-            "P-PACKET-1.md": PACKET_PROBLEM,
-        },
-    )
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = static_site
 
     site = work / "build" / "quarto" / "_site"
     assert (site / "source" / "SRC-PACKET.html").exists()
@@ -357,25 +345,14 @@ One sitting.
 """
 
 
-def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(
-    tmp_path: Path,
-) -> None:
+def test_exams_lists_the_sittings_of_a_year_in_the_order_they_were_sat(static_site: Path) -> None:
     """Spring 2019 was sat before Fall 2019, so it is listed first.
 
     Ordering by card id put Fall ahead of Spring in every year on the real
     site, because `FALL` precedes `SPRING`. The listing asks the index for the
     rows it shows, so the order it shows them in is the key each page carries.
     """
-    work = fixture_repo(
-        tmp_path,
-        {
-            "SRC-UGA-FALL-2019.md": _uga_sitting("SRC-UGA-FALL-2019", 2019, "fall"),
-            "SRC-UGA-SPRING-2020.md": _uga_sitting("SRC-UGA-SPRING-2020", 2020, "spring"),
-        },
-    )
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = static_site
 
     site = work / "build" / "quarto" / "_site"
     # SRC-UGA-FIX is the fixture corpus's own Spring 2019 sitting.
@@ -404,20 +381,12 @@ Exhibit an ideal of $\\mathbb{Z}[x]$ that no single element generates.
 """
 
 
-def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(
-    tmp_path: Path,
-) -> None:
+def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(static_site: Path) -> None:
     """Some titles begin with mathematics, and `$` sorts under every
     letter, so ordering by the raw title opened the page on a wall of formulas
     with nothing above them naming a subject.
     """
-    work = fixture_repo(
-        tmp_path,
-        {"P-PACKET-1.md": PACKET_PROBLEM, "P-PACKET-2.md": FORMULA_TITLED_PROBLEM},
-    )
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = static_site
 
     site = work / "build" / "quarto" / "_site"
     prose = listing_key(site / "tag" / "P-PACKET-1.html")
@@ -483,22 +452,8 @@ def test_problem_browser_uses_datatables_searchpanes(built_fixture: Path) -> Non
     assert len(page.root.find_all("button", id="practice-print")) == 1
 
 
-def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submission(
-    tmp_path: Path,
-) -> None:
-    work = fixture_repo(tmp_path)
-    legacy = work / "corpus" / "EXE-CENTER.md"
-    (work / "corpus" / "P-CENTER.md").write_text(legacy.read_text().replace("id: EXE-CENTER", "id: P-CENTER", 1))
-    exam = work / "corpus" / "SRC-UGA-FIX.md"
-    exam.write_text(
-        exam.read_text().replace(
-            "  area: algebra\n  date:\n",
-            ("  area: algebra\n  problems:\n  - id: P-CENTER\n    comment: Problem 7\n  date:\n"),
-        )
-    )
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+def test_unsolved_problems_are_a_navigation_view_with_prefilled_solution_submission(static_site: Path) -> None:
+    work = static_site
 
     site = work / "build" / "quarto" / "_site"
     home_links = LinkCollector()
@@ -570,7 +525,7 @@ def test_problem_pagination_is_library_owned(built_fixture: Path) -> None:
     assert 'bottomEnd: "paging"' in table_script
 
 
-def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> None:
+def test_a_subject_is_called_what_its_wiki_branch_calls_it(static_site: Path) -> None:
     """A subject is a wiki folder, and the branch's own title is its name.
 
     Every label used to be the area id with hyphens swapped and title case
@@ -580,12 +535,7 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> No
     offered the same subjects in whatever order the first problem carrying each
     happened to appear.
     """
-    work = fixture_repo(tmp_path)
-    branch = work / "wiki" / "Algebra" / "index.md"
-    branch.write_text(branch.read_text().replace("title: Algebra", "title: Abstract Algebra"))
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = static_site
 
     site = work / "build" / "quarto" / "_site"
 
@@ -600,7 +550,7 @@ def test_a_subject_is_called_what_its_wiki_branch_calls_it(tmp_path: Path) -> No
     # above owns both matching ids and their display names.
 
 
-def test_the_build_emits_a_contents_rail_from_authored_headings(tmp_path: Path) -> None:
+def test_the_build_emits_a_contents_rail_from_authored_headings(static_site: Path) -> None:
     """The in-page Contents rail is built at compile time, not in the browser.
 
     A page's own <h2>/<h3> become the rail, in document order, each anchor
@@ -608,13 +558,7 @@ def test_the_build_emits_a_contents_rail_from_authored_headings(tmp_path: Path) 
     subsection. This is the guarantee app.js used to provide at load, now the
     compiler's.
     """
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "Algebra" / "reading-order.md").write_text(
-        "---\ntitle: Reading Order\norder: 5\n---\n\n# Reading Order\n\n## Groups\n\ntext\n\n### Sylow\n\nmore\n\n## Rings\n\neven more\n"
-    )
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = static_site
 
     built = read_html(work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "reading-order.html")
     aside = built.root.find_all("aside", id="page-toc")[0]
@@ -663,3 +607,37 @@ def test_contents_rail_excludes_relation_apparatus(tmp_path: Path) -> None:
     body = built.root.find_all("article", **{"class": "page-body"})[0]
     relation = body.find_all("section", **{"data-relation-group": "wiki-backlinks"})[0]
     assert relation.find_all("h2")[0].text == "What links to this"
+
+
+@pytest.fixture(scope="module")
+def static_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
+    """One build carrying the cards and pages this module's additive tests read.
+
+    Each test reads its own card, page or listing row, or states a property of
+    every page, which extra content cannot make false.
+    """
+    work = fixture_repo(
+        tmp_path_factory.mktemp("static"),
+        {
+            "P-LIST.md": LIST_PROBLEM,
+            "SRC-PACKET.md": COMPILATION_LISTING_A_SIBLING,
+            "P-PACKET-1.md": PACKET_PROBLEM,
+            "P-PACKET-2.md": FORMULA_TITLED_PROBLEM,
+            "SRC-UGA-FALL-2019.md": _uga_sitting("SRC-UGA-FALL-2019", 2019, "fall"),
+            "SRC-UGA-SPRING-2020.md": _uga_sitting("SRC-UGA-SPRING-2020", 2020, "spring"),
+        },
+    )
+    # An unsolved problem listed on the fixture's own exam.
+    legacy = work / "corpus" / "EXE-CENTER.md"
+    (work / "corpus" / "P-CENTER.md").write_text(legacy.read_text().replace("id: EXE-CENTER", "id: P-CENTER", 1))
+    exam = work / "corpus" / "SRC-UGA-FIX.md"
+    exam.write_text(exam.read_text().replace("  area: algebra\n  date:\n", "  area: algebra\n  problems:\n  - id: P-CENTER\n    comment: Problem 7\n  date:\n"))
+    # A subject named by its wiki branch rather than by its area id.
+    branch = work / "wiki" / "Algebra" / "index.md"
+    branch.write_text(branch.read_text().replace("title: Algebra", "title: Abstract Algebra"))
+    (work / "wiki" / "Algebra" / "reading-order.md").write_text(
+        "---\ntitle: Reading Order\norder: 5\n---\n\n# Reading Order\n\n## Groups\n\ntext\n\n### Sylow\n\nmore\n\n## Rings\n\neven more\n"
+    )
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    return work
