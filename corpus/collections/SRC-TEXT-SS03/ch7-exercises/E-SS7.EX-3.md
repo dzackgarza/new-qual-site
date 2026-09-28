@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: E-SS7.EX-3
 kind: problem
-title: "SS 7.3: The Dirichlet series of the Moebius function and 1/zeta"
+title: $\sum_n\mu(n)n^{-s}=1/\zeta(s)$ for the Möbius function
 classification:
   areas:
   - complex-analysis
-  topics: ['Zeta Function', 'Prime Number Theorem', 'Dirichlet Series']
+  topics:
+  - Zeta Function
+  - Prime Number Theorem
+  - Dirichlet Series
 relations: []
 review: draft
 audit:

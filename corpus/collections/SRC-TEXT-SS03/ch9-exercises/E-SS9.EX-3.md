@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-3
 kind: problem
-title: "In contrast with the result in Lemma 1"
+title: $\sum_{\omega\in\Lambda^*}\abs\omega^{-2}$ diverges
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Lattices
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-8
 kind: problem
-title: "SS 9.8: Decay of the Eisenstein series E4 toward the cusp"
+title: $E_4(\tau)\to\pi^4/45$ as $\Im\tau\to\infty$, with exponential error
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Modular Forms
 relations: []
 review: draft
 audit:
@@ -24,7 +26,7 @@ $$
 
 be the Eisenstein series of order 4.
 
-(a) Show that $E _ { 4 } ( \tau ) \to \pi ^ { 4 } / 4 5 { \mathrm { ~ a s ~ I m } } ( \tau ) \to \infty$
+(a) Show that $E _ { 4 } ( \tau ) \to \pi ^ { 4 } / 4 5$ as $\operatorname{Im} ( \tau ) \to \infty$
 
 (b) More precisely,
 

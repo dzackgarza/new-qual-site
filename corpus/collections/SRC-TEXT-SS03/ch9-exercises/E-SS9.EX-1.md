@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-1
 kind: problem
-title: "SS 9.1: Periods of a meromorphic function with real ratio"
+title: A meromorphic function with two periods of real ratio
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Lattices
 relations: []
 review: draft
 audit:

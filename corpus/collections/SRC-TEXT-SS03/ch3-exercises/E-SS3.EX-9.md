@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: E-SS3.EX-9
 kind: problem
-title: "SS 3.9: The integral of log(sin pi-x) on [0,1]"
+title: $\int_0^1\log\sin\pi x\,dx=-\log2$
 classification:
   areas:
   - complex-analysis
-  topics: ['Meromorphic Functions', 'Residue Theorem', 'Argument Principle']
+  topics:
+  - Meromorphic Functions
+  - Residue Theorem
+  - Argument Principle
 relations: []
 review: draft
 audit:

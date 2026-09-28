@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-5
 kind: problem
-title: "SS 9.5: The Weierstrass sigma function"
+title: The Weierstrass sigma function
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Weierstrass P
 relations: []
 review: draft
 audit:

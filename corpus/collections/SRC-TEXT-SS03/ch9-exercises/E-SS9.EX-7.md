@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-7
 kind: problem
-title: "SS 9.7: Evaluations of zeta at 2 and 4 from the cotangent series"
+title: $\zeta(2)$ and $\zeta(4)$ from $\sum_m(m+\tau)^{-2}=\pi^2/\sin^2\pi\tau$
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Zeta Function
+  - Series of Numbers
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-2
 kind: problem
-title: "Zeros minus poles of an elliptic function lands in the period lattice"
+title: The zeros minus the poles of an elliptic function lie in the period lattice
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Argument Principle
 relations: []
 review: draft
 audit:

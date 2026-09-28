@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-6
 kind: problem
-title: "The differential equation for the Weierstrass p-function"
+title: The differential equation of $\wp$
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Weierstrass P
 relations: []
 review: draft
 audit:

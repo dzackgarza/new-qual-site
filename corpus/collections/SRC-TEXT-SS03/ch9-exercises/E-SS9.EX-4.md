@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS9.EX-4
 kind: problem
-title: "SS 9.4: Periodicity of the Weierstrass function by rearrangement"
+title: Periodicity of $\wp$ by rearranging its series
 classification:
   areas:
   - complex-analysis
-  topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
+  topics:
+  - Elliptic Functions
+  - Weierstrass P
 relations: []
 review: draft
 audit:
