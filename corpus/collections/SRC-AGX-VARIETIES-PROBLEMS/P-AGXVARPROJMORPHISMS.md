@@ -314,7 +314,7 @@ $$
 
 ::: {.proof}
 Step <1>7 proves the forward implication and step <1>8 proves the converse.
-This is the function-field criterion also used in [[P-AGH49PROJBIR|the projection birationality proof]]. It proves (f).
+This proves (f).
 :::
 
 <1>10. The product $X\cross Y$ is a projective variety.
@@ -332,7 +332,7 @@ so $X\cross Y$ is closed in
 $$
 \PP^n_\CC\cross\PP^m_\CC.
 $$
-The classical product of varieties is again a variety; affine product charts and their gluing are recorded in [[P-AGH2323VARPRODUCT]].
+The product of varieties is again a variety, glued from affine product charts [[P-AGH2323VARPRODUCT]].
 
 Let
 $$
