@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-2
 kind: problem
-title: "SS 3.2: The integral of 1/(1+x^4)"
+title: $\int_{-\infty}^\infty\frac{dx}{1+x^4}=\frac{\pi}{\sqrt2}$
 classification:
   areas:
   - complex-analysis
