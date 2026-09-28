@@ -17,7 +17,7 @@ review: draft
 prompts:
 - What is a quasicoherent sheaf?
 - What does coherent add?
-- How do you check quasicoherence?
+- Which local presentation characterizes quasicoherence?
 - What is a coherent module over an arbitrary ring, and how is it related to finite presentation?
 - Give an $\OO_X$-module that is not quasicoherent.
 ---
@@ -57,12 +57,11 @@ The same holds for the skyscraper sheaf at the origin of $\AA^1_k = \Spec k[x]$ 
 :::
 
 ::: {.remark}
-Quasicoherence is the condition that a sheaf of modules is *determined by algebra*, locally: it is the analogue for modules of "scheme" for spaces.
+If $\mcf$ is quasicoherent, then $\mcf|_U\cong\widetilde{\mcf(U)}$ for every affine open $U\subseteq X$, not only for the members of one cover [@Har10a, Proposition II.5.4].
 Quasicoherent sheaves on an affine scheme have vanishing higher cohomology.
 
-The practical test is local and needs no module in hand: $\mcf$ is quasicoherent exactly when every point has an affine neighbourhood on which $\mcf$ has a presentation
-\[
-\OO_X^{(I)} \to \OO_X^{(J)} \to \mcf \to 0 .
-\]
-This presentation criterion is often easier to verify for naturally occurring sheaves than constructing an explicit module on each affine chart.
+An $\OO_X$-module $\mcf$ is quasicoherent if and only if every point has an open neighbourhood $U$ on which $\mcf$ has a presentation
+$$
+\OO_U^{(I)} \to \OO_U^{(J)} \to \mcf|_U \to 0 .
+$$
 :::
