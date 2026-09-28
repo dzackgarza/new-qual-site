@@ -27,47 +27,23 @@ audit:
 - Show that if $K$ is compact and $F$ is closed with $K, F$ disjoint then $\dist(K, F) > 0$.
 :::
 ::: {.solution}
-<1>1. Every compact set $K$ in a metric space is closed and bounded.
-<2>1. $K$ is closed: given $x \notin K$, for each $y \in K$ choose disjoint open $U_y \ni y$, $V_y \ni x$; $\{U_y\}_{y \in K}$ is an open cover with a finite subcover $U_{y_1}, \ldots, U_{y_n}$; then $V = \bigcap_i V_{y_i}$ is an open neighborhood of $x$ disjoint from $K$.
+Work in a metric space $(X, d)$.
+
+<1>1. A compact $K \subseteq X$ is closed and bounded.
+
 ::: {.proof}
-Hausdorff separation + finite subcover.
-:::
-<2>2. $K$ is bounded: fix $x_0$; $\{B(x_0, n)\}_{n \in \NN}$ is an open cover with a finite subcover, so $K \subseteq B(x_0, N)$ for some $N$.
-::: {.proof}
-finite subcover of the nested balls.
+For $x \notin K$ and $y \in K$, the balls $U_y = B(y, d(x,y)/3)$ and $V_y = B(x, d(x,y)/3)$ are disjoint. Finitely many $U_{y_1}, \ldots, U_{y_n}$ cover $K$, and $\bigcap_i V_{y_i}$ is an open ball about $x$ disjoint from $K$, so $X \setminus K$ is open. For boundedness, fix $x_0$; finitely many of the balls $B(x_0, n)$ cover $K$, so $K \subseteq B(x_0, N)$ for some $N$. See [[E-FFARP]].
 :::
 
-<1>2. If $E$ is complete and totally bounded, then $E$ is compact.
-<2>1. Every sequence in $E$ has a Cauchy subsequence.
-::: {.proof}
-total boundedness gives a finite $2^{-k}$-net for each $k$; a diagonal argument picks a subsequence that is $2^{-k}$-close eventually for each $k$, i.e. Cauchy.
-:::
-<2>2. Every Cauchy sequence in $E$ converges in $E$.
-::: {.proof}
-completeness.
-:::
-<2>3. Q.E.D.
-::: {.proof}
-<2>1 and <2>2 give sequential compactness, equivalent to compactness in metric spaces.
-:::
-(A subset of a complete space is compact iff closed and totally bounded.)
+<1>2. A complete and totally bounded $E \subseteq X$ is compact.
 
-<1>3. If $K$ compact and $F$ closed with $K \cap F = \varnothing$, then $\dist(K, F) > 0$.
-<2>1. $x \mapsto \dist(x, F)$ is continuous: $|\dist(x, F) - \dist(y, F)| \le d(x, y)$.
 ::: {.proof}
-triangle inequality.
-:::
-<2>2. $\dist(\cdot, F) > 0$ on $K$ (since $K \cap F = \varnothing$ and $F$ closed: if $\dist(x, F) = 0$ then $x \in \overline F = F$).
-::: {.proof}
-$\dist(x, F) = 0$ iff $x \in \overline F$.
-:::
-<2>3. $\dist(\cdot, F)$ attains its minimum on the compact set $K$; the minimum is $> 0$.
-::: {.proof}
-continuous function on a compact set attains its extrema (<2>1); the value is $> 0$ by <2>2.
+Given a sequence in $E$, cover $E$ by finitely many balls of radius $1$, pass to a subsequence in one of them, then cover by finitely many balls of radius $1/2$ and pass to a further subsequence, and so on. The diagonal subsequence has its $m$th and later terms in one ball of radius $1/m$, so it is Cauchy, and it converges in $E$ because $E$ is complete. So $E$ is sequentially compact, which for metric spaces is equivalent to compactness. See [[E-4CL6A]].
 :::
 
-<1>4. Q.E.D.
+<1>3. If $K$ is compact, $F$ is closed, and $K \cap F = \emptyset$, then $\dist(K, F) > 0$.
+
 ::: {.proof}
-<1>1, <1>2, <1>3 establish the three claims.
+$x \mapsto \dist(x, F)$ satisfies $|\dist(x, F) - \dist(y, F)| \le d(x, y)$, so it is continuous and attains its minimum on $K$ at some $k_0$, assuming $K$ and $F$ nonempty. If $\dist(k_0, F) = 0$, then $k_0 \in \overline F = F$, contradicting $K \cap F = \emptyset$. See [[E-SA3HI]].
 :::
 :::
