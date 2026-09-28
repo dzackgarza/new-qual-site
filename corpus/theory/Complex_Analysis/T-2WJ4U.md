@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-2WJ4U
 kind: theorem
 title: Hadamard factorization
-slogan: 'A finite-order entire function is its zeros, corrected by canonical factors, times the exponential of a polynomial.'
+slogan: 'An entire function of finite order $\rho$ is $z^me^{g(z)}\prod_k E_p(z/z_k)$ over its nonzero zeros $z_k$, with $p=\lfloor\rho\rfloor$ and $\deg g\le p$.'
 classification:
   areas:
   - complex-analysis
