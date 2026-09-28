@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-8B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 8B
+title: A complex matrix with $\inner{x}{Ax}$ real for all $x$ is Hermitian
 classification:
   areas: [prelim]
   topics: []
