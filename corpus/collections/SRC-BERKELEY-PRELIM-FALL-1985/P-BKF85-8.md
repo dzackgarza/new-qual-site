@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF85-8
 kind: problem
-title: A weighted integral converges to the endpoint value
+title: $(n+1)\int_0^1x^nf(x)\,dx\to f(1)$ for continuous $f$
 classification:
   areas: [prelim]
   topics: []
