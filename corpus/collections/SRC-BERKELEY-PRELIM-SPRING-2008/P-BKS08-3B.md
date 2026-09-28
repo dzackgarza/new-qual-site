@@ -27,12 +27,12 @@ audit:
 ---
 
 ::: {.problem}
-Let \(G\) be a group and \(H\le G\) a subgroup of finite index \(n\). Show that \(G\) contains a normal subgroup \(N\) such that
-\[
+Let $G$ be a group and $H\le G$ a subgroup of finite index $n$. Show that $G$ contains a normal subgroup $N$ such that
+$$
 N\subseteq H
 \qquad\text{and}\qquad
 [G:N]\le n!.
-\]
+$$
 :::
 
 ::: {.solution}
