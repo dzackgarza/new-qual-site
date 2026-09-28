@@ -95,7 +95,6 @@ The point $z=0$ is a \dfn{branch point}: $\log$ has no continuous branch on any 
 ## The quadratic formula over $\CC$
 
 For $a\neq 0$, the roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$, where $w$ is either square root of $\Delta \coloneqq b^2-4ac\in\CC$.
-The sign of $\Delta$ plays no role: a quadratic over $\CC$ has two roots counted with multiplicity.
 
 ## Exercises
 
