@@ -26,10 +26,10 @@ source:
   - P-BKS84-7
   - P-BKS84-8
   - id: P-BERK87S-09
-    comment: Spring 1984 Problem 9; repeated verbatim as Spring 1987 Problem 9
+    comment: Problem 9
   - P-BKS84-10
   - id: P-BKF81-18
-    comment: Spring 1984 Problem 11; real matrices similar over C are similar over R
+    comment: Problem 11
   - P-BKS84-12
   - P-BKS84-13
   - P-BKS84-14
