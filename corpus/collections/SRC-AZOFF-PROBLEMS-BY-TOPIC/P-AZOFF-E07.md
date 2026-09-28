@@ -29,7 +29,7 @@ audit:
 ::: {.problem}
 Suppose the complex power series $\textstyle \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n }$ converges for some $z _ { 0 } \neq 0$
 
-a) Prove that the series converges absolutely for each z with $| z | < | z _ { 0 } |$
+a) Prove that the series converges absolutely for each $z$ with $\abs{z} < \abs{z_0}$
 
 b) Suppose $0 < r < | z _ { 0 } |$ . Show that the series converges uniformly on $| z | \leq r$
 :::
