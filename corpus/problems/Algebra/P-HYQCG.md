@@ -28,58 +28,21 @@ audit:
     What type(s) of the groups above does each series correspond to?
 :::
 
-
 ::: {.solution}
-<1>1. A **composition series** of a finite group $G$ is a subnormal series
-\[
-G=G_0\triangleright G_1\triangleright\cdots\triangleright G_n=1
-\]
-in which each factor $G_i/G_{i+1}$ is simple.
-::: {.proof}
-Equivalently, each $G_{i+1}$ is a maximal proper normal subgroup of $G_i$. The Jordan–Hölder theorem says that the multiset of composition factors is independent of the chosen composition series, up to isomorphism and order.
-:::
+A nontrivial group is \dfn{simple} if its only normal subgroups are $1$ and itself.
 
-<1>2. A nontrivial group is **simple** if its only normal subgroups are $1$ and itself.
-::: {.proof}
-This is the standard definition.
-:::
+A \dfn{composition series} of a finite group $G$ is a subnormal series
+$$G=G_0\triangleright G_1\triangleright\cdots\triangleright G_n=1$$
+in which each factor $G_i/G_{i+1}$ is simple; equivalently, each $G_{i+1}$ is a maximal proper normal subgroup of $G_i$.
+By the Jordan–Hölder theorem, the multiset of composition factors, up to isomorphism, does not depend on the composition series.
 
-<1>3. The **derived series** is
-\[
-G^{(0)}=G,
-\qquad
-G^{(i+1)}=[G^{(i)},G^{(i)}].
-\]
-A group is **solvable** iff $G^{(n)}=1$ for some $n$.
-::: {.proof}
-Each quotient
-\[
-G^{(i)}/G^{(i+1)}
-\]
-is abelian. Conversely, a finite normal series with abelian factors forces the derived series to descend through the series and eventually reach $1$.
-:::
+The \dfn{derived series} is $G^{(0)}=G$, $G^{(i+1)}=[G^{(i)},G^{(i)}]$, and $G$ is \dfn{solvable} if $G^{(n)}=1$ for some $n$.
+Each $G^{(i)}/G^{(i+1)}$ is abelian; conversely, if $G=H_0\trianglerighteq H_1\trianglerighteq\cdots\trianglerighteq H_r=1$ has abelian factors, induction gives $G^{(i)}\le H_i$, so $G^{(r)}=1$.
+Thus $G$ is solvable exactly when it has a finite subnormal series with abelian factors.
 
-<1>4. The **lower central series** is
-\[
-\gamma_1(G)=G,
-\qquad
-\gamma_{i+1}(G)=[\gamma_i(G),G].
-\]
-A group is nilpotent iff $\gamma_{c+1}(G)=1$ for some $c$.
-::: {.proof}
-This is one standard characterization of nilpotence; the least such $c$ is the nilpotency class.
-:::
+The \dfn{lower central series} is $\gamma_1(G)=G$, $\gamma_{i+1}(G)=[\gamma_i(G),G]$, and the \dfn{upper central series} is $Z_0(G)=1$, $Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G))$.
+The group $G$ is \dfn{nilpotent} if $\gamma_{c+1}(G)=1$ for some $c$; equivalently, $Z_c(G)=G$ for some $c$, and the least such $c$ is the same for both series, the nilpotency class.
 
-<1>5. The **upper central series** is
-\[
-Z_0(G)=1,
-\qquad
-Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G)).
-\]
-A group is nilpotent iff $Z_c(G)=G$ for some $c$.
-::: {.proof}
-The upper and lower central series give equivalent characterizations of nilpotence. The upper series builds $G$ by successive central extensions, while the lower series measures iterated commutators.
-:::
-
-Thus composition series concern simple factors, the derived series detects solvability, and the lower/upper central series detect nilpotence. Every nilpotent group is solvable, but not conversely.
+Thus composition series record the simple factors, the derived series detects solvability, and the lower and upper central series detect nilpotence.
+Every nilpotent group is solvable, since $G^{(i)}\le\gamma_{i+1}(G)$; the converse fails for $S_3$, which is solvable with trivial center.
 :::
