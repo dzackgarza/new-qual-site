@@ -41,7 +41,7 @@ Let
 q:D\longrightarrow D/{\sim}
 \]
 be the quotient map.
-The quotient is **not Hausdorff**.
+The quotient is not Hausdorff.
 
 <1>1. Distinct points of the boundary circle determine distinct points of the quotient.
 ::: {.proof}
