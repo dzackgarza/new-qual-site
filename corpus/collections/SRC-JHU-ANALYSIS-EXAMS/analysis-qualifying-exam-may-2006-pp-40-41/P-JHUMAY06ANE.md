@@ -31,8 +31,8 @@ audit:
 
 ::: {.remark}
 A complex derivative need not be real, so a maximum
-requires a real-valued objective. The complete derivative
-range below gives both the maximum modulus and the
+requires a real-valued objective. The set of possible
+derivatives, determined in the solution, gives both the maximum modulus and the
 largest possible real derivative, without assuming that
 all derivatives are real.
 :::
@@ -81,7 +81,7 @@ is a holomorphic self-map of $H$, fixes $a$ and has
 derivative $f_\lambda'(a)=\lambda$ by the same chain-rule
 cancellation. This proves equality of the stated sets.
 For example $\lambda=i$ gives a nonreal derivative,
-while $\lambda=1$ gives the identity and attains both
-real-valued maxima described above.
+while $\lambda=1$ gives the identity, which attains both
+$\max|f'(a)|=1$ and the largest real value $f'(a)=1$.
 :::
 :::
