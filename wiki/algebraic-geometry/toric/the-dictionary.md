@@ -9,13 +9,9 @@ topics:
 
 # The fan dictionary
 
-Toric geometry converts many geometric questions into finite computations with cones, fans, and lattice points.
-
 [[D-Q7Q2N]]
 
 ## The convex geometry underneath
-
-The dual cone is central to the construction; the following three facts control how generator and inequality descriptions pass between a cone and its dual.
 
 [[PR-FULSEP]]
 
@@ -23,8 +19,8 @@ The dual cone is central to the construction; the following three facts control 
 
 [[PR-FULFACEDUAL]]
 
-Together these say that a cone can be handed to you by generators or by inequalities, that either presentation recovers the other through the dual, and that the face posets on the two sides are the same poset read upside down.
-Everything later in the chapter uses one of the three without saying so: the dual cone computation uses the first two, the orbit-cone correspondence uses the third.
+A polyhedral cone $\sigma$ is both finitely generated and an intersection of finitely many closed half-spaces, $\sigma^{\vee\vee}=\sigma$, and $\tau\mapsto\sigma^\vee\cap\tau^\perp$ is an inclusion-reversing bijection from the faces of $\sigma$ to the faces of $\sigma^\vee$.
+The orbit-cone correspondence uses this bijection.
 
 ## How the affine charts glue
 
@@ -38,8 +34,8 @@ Everything later in the chapter uses one of the three without saying so: the dua
 
 [[D-FULSTAR]]
 
-The orbit-cone correspondence lists the orbits; the star fan identifies each closure as a toric variety in its own right.
-That is what makes induction on dimension available: a statement about $X_\Sigma$ can be tested on the boundary divisors $D_\rho = X_{\Star(\rho)}$, which are toric varieties one dimension down.
+The closure of the orbit $O(\tau)$ is the toric variety of the star fan $\Star(\tau)$ in $N/\operatorname{span}(\tau\cap N)$.
+In particular each boundary divisor $D_\rho=X_{\Star(\rho)}$ is a toric variety of dimension $\dim X_\Sigma-1$, which permits induction on dimension.
 
 ## Standard examples from fans
 
@@ -51,6 +47,5 @@ That is what makes induction on dimension available: a statement about $X_\Sigma
 | a resolution, explicitly | subdivide by inserting the missing lattice rays |
 | a proper variety that is not projective | a complete fan that admits no strictly convex support function |
 
-Each entry is checked by a computation on a two-dimensional fan.
-
-The dictionary applies only to toric varieties; a statement about general varieties requires an argument beyond the fan combinatorics.
+The first four entries are computations on a two-dimensional fan.
+Every complete toric surface is projective, so the last entry needs a fan of dimension at least $3$.
