@@ -84,7 +84,10 @@ After reducing modulo $p$, the column indexed by $j$ depends only on the residue
 in $\mathbb F_p$. Thus there are at most $p$ distinct columns. The column space is therefore spanned by at most $p$ columns, so its dimension is at most $p$.
 :::
 
-<1>4. Combining the bounds gives the rank.
+<1>4. One has
+\[
+\operatorname{rank}_{\mathbb F_p}A(m,n)=\min\{m,n,p\}.
+\]
 ::: {.proof}
 By <1>2 and <1>3,
 \[
