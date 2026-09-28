@@ -36,55 +36,30 @@ Show that if $U \subseteq X$ is open, then $A = \overline{U} \setminus U$ is now
 :::
 
 ::: {.solution}
-<1>1. The set
-\[
-A=\overline U\setminus U
-\]
-is closed in $X$, and therefore $\overline A=A$.
+<1>1. The set $A=\overline U\setminus U$ is closed in $X$, and therefore $\overline A=A$.
+
 ::: {.proof}
 Since $U$ is open, $X\setminus U$ is closed.
 Also $\overline U$ is closed by definition of closure.
-Hence
-\[
-A=\overline U\cap(X\setminus U)
-\]
-is an intersection of closed sets, so it is closed.
+Hence $A=\overline U\cap(X\setminus U)$ is an intersection of closed sets, so it is closed.
 Thus $\overline A=A$.
 :::
 
 <1>2. The interior of $A$ is empty.
+
 ::: {.proof}
 Suppose instead that $\operatorname{int}(A)\neq\varnothing$.
-Choose
-\[
-x\in\operatorname{int}(A)
-\]
-and put $V=\operatorname{int}(A)$.
-Then $V$ is an open neighborhood of $x$ and
-\[
-V\subseteq A\subseteq\overline U.
-\]
+Choose $x\in\operatorname{int}(A)$ and put $V=\operatorname{int}(A)$.
+Then $V$ is an open neighborhood of $x$ and $V\subseteq A\subseteq\overline U$.
 In particular $x\in\overline U$.
-By the defining neighborhood characterization of closure, every open neighborhood of $x$ meets $U$; since $V$ is such a neighborhood,
-\[
-V\cap U\neq\varnothing.
-\]
-But also
-\[
-V\subseteq A=\overline U\setminus U\subseteq X\setminus U,
-\]
-so $V\cap U=\varnothing$, a contradiction.
+By the neighborhood characterization of closure, every open neighborhood of $x$ meets $U$; since $V$ is such a neighborhood, $V\cap U\neq\varnothing$.
+But also $V\subseteq A=\overline U\setminus U\subseteq X\setminus U$, so $V\cap U=\varnothing$, a contradiction.
 Hence $\operatorname{int}(A)=\varnothing$.
 :::
 
-<1>3. Therefore $A$ is nowhere dense.
+<1>3. Q.E.D.
+
 ::: {.proof}
-By <1>1 and <1>2,
-\[
-\operatorname{int}(\overline A)
-=\operatorname{int}(A)
-=\varnothing.
-\]
-This is precisely the definition of nowhere dense given in the problem.
+By steps <1>1 and <1>2, $\operatorname{int}(\overline A)=\operatorname{int}(A)=\varnothing$, so $A$ is nowhere dense.
 :::
 :::
