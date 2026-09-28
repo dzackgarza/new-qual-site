@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF85-5
 kind: problem
-title: Count quartic roots in the right half-plane
+title: Zeros of $z^4+3z^2+z+1$ in the right half-plane
 classification:
   areas: [prelim]
   topics: []
