@@ -21,8 +21,6 @@ Problem 4. Suppose that $f : D _ { 1 } ( 0 ) \to \mathbb { C }$ is a one-to-one 
 :::
 
 ::: {.solution}
-**Goal.** For $f: D_1(0) \to \CC$ one-to-one holomorphic with $\Omega = f(D_1(0))$, and $g: D_1(0) \to \Omega$ holomorphic with $g(0) = f(0)$, show $g(D_r(0)) \subseteq f(D_r(0))$ for every $0 \le r < 1$.
-
 <1>1. $f^{-1}: \Omega \to D_1(0)$ is holomorphic.
 ::: {.proof}
 $f$ is one-to-one and holomorphic with nonvanishing derivative (a one-to-one holomorphic map has $f' \neq 0$ everywhere), so the inverse function theorem gives a holomorphic inverse.
