@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-2A
 kind: problem
-title: Sylow subgroups of order sixty-seven in a group of order 2010
+title: Number of Sylow $67$-subgroups of a group of order $2010$
 classification:
   areas:
   - prelim
@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Let \(G\) be a group of order
-\[
+Let $G$ be a group of order
+$$
 2010=2\cdot3\cdot5\cdot67.
-\]
-Determine how many subgroups of order \(67\) the group \(G\) can have, and give examples for each possible number.
+$$
+Determine how many subgroups of order $67$ the group $G$ can have, and give examples for each possible number.
 :::
 
 ::: {.solution}
