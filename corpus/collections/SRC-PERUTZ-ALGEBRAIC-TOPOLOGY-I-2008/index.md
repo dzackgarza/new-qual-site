@@ -209,7 +209,3 @@ source:
     - id: E-PER08-26.4
       comment: Exercise 26.4
 ---
-
-::: {.remark}
-Tim Perutz's lecture notes for Algebraic Topology I, Fall 2008, which contain 89 exercises numbered Exercise x.y.
-:::
