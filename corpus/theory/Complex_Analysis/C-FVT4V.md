@@ -25,5 +25,5 @@ A nowhere-vanishing derivative does not imply injectivity: $f(z)=e^z$ satisfies 
 :::
 
 ::: {.remark}
-Stein--Shakarchi, *Complex Analysis*, Chapter 8, Proposition 1.1.
+See [@SS03, Chapter 8, Proposition 1.1].
 :::
