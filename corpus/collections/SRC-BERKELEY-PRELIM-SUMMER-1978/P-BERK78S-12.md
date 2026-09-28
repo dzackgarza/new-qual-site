@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-12
 kind: problem
-title: Real-valued analytic maps are constant and a real projection of a conformal map is open
+title: Real-valued analytic functions are constant, and $\operatorname{Re}g+\operatorname{Im}g$ has open image when $g'\ne0$
 classification:
   areas:
   - prelim
