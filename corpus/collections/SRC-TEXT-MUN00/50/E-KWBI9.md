@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KWBI9
 kind: problem
-title: Connected T1 spaces have positive dimension
+title: Connected $T_1$ spaces have positive dimension
 classification:
   areas:
   - topology
