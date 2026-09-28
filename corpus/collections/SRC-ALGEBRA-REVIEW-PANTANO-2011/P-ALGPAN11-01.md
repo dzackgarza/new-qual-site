@@ -50,5 +50,4 @@ Hence
 \[
 \boxed{(b^2cb^4c^2)^{-1}=cb\,c^2b^3}.
 \]
-No commutativity is used; the order of the factors is essential.
 :::
