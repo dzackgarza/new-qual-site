@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH1-23
 kind: problem
-title: "Evaluate $\tan(2\arcsin(1/3))$"
+title: "Evaluate $\\tan(2\\arcsin(1/3))$"
 classification:
   areas:
   - algebra
