@@ -24,10 +24,10 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f:\mathbb{R}\to\mathbb{R}$ is a bounded continuous function. Calculate the limit
-\[
+Suppose $f:\RR\to\RR$ is a bounded continuous function. Calculate the limit
+$$
 \lim_{\epsilon\to0^+}\int_{-\infty}^{\infty} f(t)\frac{\epsilon}{\epsilon^2+t^2}\,dt.
-\]
+$$
 :::
 
 ::: {.solution}
