@@ -32,15 +32,6 @@ Prove that $|K|=|X|$. When $X$ is finite, also prove that
 $K$ is a normal subgroup, the Frobenius kernel of the action.
 :::
 
-::: {.remark}
-The set $K$ is specified before any subgroup property is used.
-Its cardinality statement holds without a finiteness hypothesis.
-Subgroup closure is proved below when $X$ is finite; the
-infinite cardinality proof does not infer closure from counting.
-Whenever $K$ is a subgroup, its action is regular and the map
-$k\mapsto kx$ is a bijection $K\to X$ for each $x\in X$.
-:::
-
 ::: {.solution}
 Sharp double transitivity means that for any two ordered
 pairs of distinct points there is exactly one group element
@@ -107,27 +98,11 @@ set of involutions and $i\in J$, then $iJ\subseteq K$.
 <1>4. If $X$ is infinite, then $|K|=|X|$ as well.
 
 ::: {.proof}
-We first justify the cardinal arithmetic being used.
 Deleting one point from an infinite set does not change
 its cardinality: choose a sequence of distinct points
 starting at that point, shift along the sequence, and
-fix every point outside it. This gives the required bijection.
-
-For completeness, an infinite cardinal $\kappa$ satisfies
-$|\kappa\times\kappa|=\kappa$. Prove this by transfinite
-induction on infinite cardinals. Regard $\kappa$ as its
-initial ordinal and order pairs $(\alpha,\beta)$ first by
-$\max(\alpha,\beta)$ and then lexicographically. This is
-a well-order. The predecessors of a pair with maximum
-$\gamma$ lie in $(\gamma+1)^2$. The cardinal of
-$\gamma+1$ is less than $\kappa$; its square is still
-less than $\kappa$ by induction, or by finite arithmetic
-when it is finite. Thus each predecessor set has cardinal
-less than $\kappa$. The order type of the pairs is at
-most $\kappa$, since otherwise the pair at position
-$\kappa$ would have $\kappa$ predecessors. This proves
-the upper bound, and $\alpha\mapsto(\alpha,0)$ gives
-the reverse bound.
+fix every point outside it. By Hessenberg's theorem, an
+infinite set $X$ satisfies $|X\times X|=|X|$.
 
 Now fix $x\in X$ and an involution $i$, which exists by
 step <1>2. The swaps of $x$ with each $y\ne x$ give an
@@ -139,8 +114,7 @@ $$
 |X|=|X\setminus\{x\}|\leq |J|=|iJ|
 \leq |K|\leq |G|\leq |X^2|=|X|.
 $$
-Both bounds coincide, proving the claim without any
-subtraction of infinite cardinals.
+Hence $|K|=|X|$.
 :::
 
 <1>5. When $X$ is finite, the set $K$ is a normal subgroup.
@@ -180,8 +154,7 @@ is either one or a derangement by step <1>3. Therefore
 $ab\in K$. Closure follows in both parity cases.
 
 Thus $K$ is a subgroup, and its conjugation invariance
-makes it normal. This proves the finite Frobenius-kernel
-assertion without invoking a general kernel theorem.
+makes it normal.
 :::
 
 <1>6. Whenever $K$ is a subgroup, it acts regularly on $X$.
