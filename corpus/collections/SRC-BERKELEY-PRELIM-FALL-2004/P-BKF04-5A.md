@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-5A
 kind: problem
-title: UC Berkeley Fall 2004 prelim 5A
+title: Fekete's lemma for subadditive sequences
 classification:
   areas: [prelim]
   topics: []
@@ -11,43 +11,43 @@ review: draft
 ---
 
 ::: {.problem}
-Let $( a _ { m } ) _ { m \geq 1 }$ be a sequence of real numbers satisfying $a _ { n + m } \leq a _ { n } + a _ { m }$ . Prove that
+Let $(a_m)_{m\geq1}$ be a sequence of real numbers satisfying $a_{n+m}\leq a_n+a_m$. Prove that
 
 $$
-\operatorname* { l i m } _ { n \to \infty } { \frac { a _ { n } } { n } } = \operatorname* { i n f } _ { n } { \frac { a _ { n } } { n } }
+\lim_{n\to\infty}\frac{a_n}{n}=\inf_n\frac{a_n}{n}
 $$
 
-as an element of $[ - \infty , \infty )$
+as an element of $[-\infty,\infty)$.
 :::
 
 ::: {.solution}
-If $n = \ell m + r$ for integers $m , \ell \geq 1$ and $r \in [ 0 , m )$ , then $a _ { n } = a _ { \ell m + r } \leq a _ { \ell m } + a _ { r } \leq$ $\ell a _ { m } + a _ { r }$ , and dividing by n yields
+If $n=\ell m+r$ for integers $m,\ell\geq1$ and $r\in[0,m)$, then $a_n=a_{\ell m+r}\leq a_{\ell m}+a_r\leq\ell a_m+a_r$, and dividing by $n$ yields
 
 $$
-\frac { a _ { n } } { n } \leq \frac { \ell m } { n } \frac { a _ { m } } { m } + \frac { a _ { r } } { n } .
+\frac{a_n}{n}\leq\frac{\ell m}{n}\frac{a_m}{m}+\frac{a_r}{n}.
 $$
 
-After sending $n \to \infty$ (for fixed m, so \` and r vary with n), we obtain
+After sending $n\to\infty$ (for fixed $m$, so $\ell$ and $r$ vary with $n$), we obtain
 
 $$
-\operatorname* { l i m } \operatorname* { s u p } { \frac { a _ { n } } { n } } \leq { \frac { a _ { m } } { m } } .
+\limsup_{n\to\infty}\frac{a_n}{n}\leq\frac{a_m}{m}.
 $$
 
-This holds for each m, so
+This holds for each $m$, so
 
 $$
-\operatorname* { l i m } \operatorname* { s u p } { \frac { a _ { n } } { n } } \leq \operatorname* { i n f } { \frac { a _ { m } } { m } } .
+\limsup_{n\to\infty}\frac{a_n}{n}\leq\inf_m\frac{a_m}{m}.
 $$
 
 On the other hand,
 
 $$
-\operatorname* { l i m } \operatorname* { i n f } { \frac { a _ { n } } { n } } \geq \operatorname* { i n f } { \frac { a _ { m } } { m } }
+\liminf_{n\to\infty}\frac{a_n}{n}\geq\inf_m\frac{a_m}{m}
 $$
 
 holds by definition. Thus
 
 $$
-\operatorname* { l i m } { \frac { a _ { n } } { n } } = \operatorname* { i n f } { \frac { a _ { m } } { m } } .
+\lim_{n\to\infty}\frac{a_n}{n}=\inf_m\frac{a_m}{m}.
 $$
 :::
