@@ -130,8 +130,8 @@ which is also the total degree of $\Delta_x\Delta_y$.
 ::: {.proof}
 In the explicit expansion from step <1>1, each summand is a product of
 $n(n-1)$ linear factors, so it is homogeneous of that degree. Hence $Q$
-is homogeneous of degree at most $n(n-1)$; step <1>5 below will show it is
-nonzero, so this is its degree.
+is homogeneous of degree at most $n(n-1)$. The evaluation at $x=y$ in
+step <1>5 shows that $Q\neq0$, so this is its degree.
 
 Each Vandermonde factor has degree
 $$
