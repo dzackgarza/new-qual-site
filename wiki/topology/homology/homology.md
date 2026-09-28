@@ -40,7 +40,8 @@ $$
 :::
 
 ::: {.remark}
-In general $H_{k} \qty{ \prod_ \alpha X_ \alpha}\not\cong\prod_ \alpha H_{k} (X_ \alpha)$; for a finite product, the Künneth theorem computes $H_k$.
+Homology does not commute with products: $H_2(S^1\cross S^1)\cong\ZZ$, while $H_2(S^1)\cross H_2(S^1)=0$.
+For a finite product, the Künneth theorem computes $H_k$.
 If the homology groups of $A$ are free, then
 $$
 H_{k} (A\cross B) \cong \bigoplus_{i+j=k} H_{i}(A) \tensor H_{j}(B)
@@ -117,7 +118,7 @@ Let $n\geq 1$ and write $S^n = A \cup B$ with $A$ and $B$ open neighborhoods of 
 The Mayer--Vietoris sequence in reduced cohomology contains
 
 $$
-\tilde H^{i-1}(A) \oplus \tilde H^{i-1}(B) \to \tilde H^{i-1}(S^{n-1}) \xrightarrow{\delta} \tilde H^i(S^n) \to \tilde H^iA \oplus \tilde H^i B
+\tilde H^{i-1}(A) \oplus \tilde H^{i-1}(B) \to \tilde H^{i-1}(S^{n-1}) \xrightarrow{\delta} \tilde H^i(S^n) \to \tilde H^i(A) \oplus \tilde H^i(B)
 .$$
 
 Since $A$ and $B$ are contractible, their reduced cohomology vanishes, so
