@@ -16,5 +16,5 @@ Find the equation of the plane containing the origin and the points (2, 0, 0) an
 :::
 
 ::: {.solution}
-All three of those points have $y = 0$ , so they are contained in the xz-plane.
+All three points have $y = 0$, and they are not collinear, so the plane is the $xz$-plane $\boxed{y = 0}$.
 :::
