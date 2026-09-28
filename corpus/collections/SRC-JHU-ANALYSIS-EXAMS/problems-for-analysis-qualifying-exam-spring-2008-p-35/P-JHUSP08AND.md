@@ -101,6 +101,8 @@ However,
 \]
 Therefore $T$ is unbounded on $c_{00}$ and cannot extend to a bounded operator on $\ell^2$.
 :::
+:::
 
-The source's literal formulation with an arbitrary algebraic map $T:\ell^2\to\ell^2$ cannot support part (a): an everywhere-defined discontinuous linear map can vanish on every $e_m$ and still be nonzero off the dense subspace $c_{00}$, so all its matrix coefficients can vanish while the map is unbounded. The corrected formulation above is the standard intended statement.
+::: {.remark}
+Erratum: the source states the problem for an arbitrary linear map $T:\ell^2\to\ell^2$. For such a map part (a) fails: an everywhere-defined discontinuous linear map can vanish on every $e_m$ and still be nonzero off the dense subspace $c_{00}$, so all its matrix coefficients vanish while the map is unbounded. The statement on this card defines $T$ on $c_{00}$.
 :::
