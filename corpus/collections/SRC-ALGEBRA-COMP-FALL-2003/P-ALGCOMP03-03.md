@@ -45,7 +45,7 @@ We prove
 
 <1>1. \((a)\Rightarrow(b)\): the nonunits form a proper ideal.
 ::: {.proof}
-Certainly \(0\in N\). If \(a\in N\), then \(-a\in N\), because if \(-a\) were invertible then so would \(a=-(-a)\). By hypothesis (a), if \(a,b\in N\), then
+Since \(0\cdot c=0\ne1\) for every \(c\), \(0\in N\). If \(a\in N\), then \(-a\in N\), because if \(-a\) were invertible then so would \(a=-(-a)\). By hypothesis (a), if \(a,b\in N\), then
 \[
 a+b\in N.
 \]
