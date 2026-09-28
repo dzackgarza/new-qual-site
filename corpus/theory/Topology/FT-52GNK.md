@@ -24,5 +24,4 @@ Then $X$ is [[D-YEQC3|normal]] if and only if for every pair of disjoint closed 
 
 ::: {.remark}
 The forward direction is Urysohn's lemma; the converse follows by taking the disjoint open sets $f^{-1}([0,1/2))$ and $f^{-1}((1/2,1])$.
-The hypothesis that $A$ and $B$ are disjoint cannot be dropped: if $A\cap B\neq\emptyset$, no such $f$ exists.
 :::
