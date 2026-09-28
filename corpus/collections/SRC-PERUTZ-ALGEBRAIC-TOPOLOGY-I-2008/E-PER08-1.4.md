@@ -62,7 +62,7 @@ Local valence is preserved by homeomorphisms. Therefore no homeomorphism $A\to O
 
 <1>3. There are exactly three homotopy types among the letters in this typeface.
 ::: {.proof}
-Suppressing degree-$2$ subdivision vertices does not change a graph's homeomorphism type and makes the classification transparent.
+Suppressing degree-$2$ subdivision vertices does not change a graph's homeomorphism type, so we suppress them throughout.
 
 Every letter except
 \[
