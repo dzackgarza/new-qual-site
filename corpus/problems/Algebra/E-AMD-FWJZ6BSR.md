@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-FWJZ6BSR
 kind: problem
-title: Every ring has a proper maximal ideal
+title: Every nonzero ring with identity has a maximal ideal
 classification:
   areas:
   - algebra
