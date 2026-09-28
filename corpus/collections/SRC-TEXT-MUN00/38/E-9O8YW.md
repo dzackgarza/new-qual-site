@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-9O8YW
 kind: problem
-title: Connectedness of X and of its Stone-Cech compactification
+title: $X$ is connected if and only if $\beta(X)$ is connected
 classification:
   areas:
   - topology
@@ -25,12 +25,10 @@ Show that $X$ is connected if and only if $\beta(X)$ is connected.
 :::
 
 ::: {.solution}
-**Goal:** Prove that a completely regular space $X$ is connected if and only if its Stone-Čech compactification $\beta(X)$ is connected.
-
 <1>1. Forward direction ($\implies$): If $X$ is connected, then $\beta(X)$ is connected.
     *Proof:*
     <2>1. $X$ is embedded as a dense subspace in its Stone-Čech compactification $\beta(X)$, meaning $\overline{X} = \beta(X)$.
-    <2>2. If a subspace $X$ is connected, then its topological closure $\overline{X}$ in any ambient space is connected (Theorem 23.4).
+    <2>2. If a subspace $X$ is connected, then its topological closure $\overline{X}$ in any ambient space is connected.
     <2>3. Since $X$ is connected, $\beta(X) = \overline{X}$ is connected.
 
 <1>2. Reverse direction ($\impliedby$): If $\beta(X)$ is connected, then $X$ is connected.
@@ -49,6 +47,6 @@ Show that $X$ is connected if and only if $\beta(X)$ is connected.
     <2>9. However, $A \neq \varnothing \implies 0 \in \tilde{f}(\beta(X))$ and $B \neq \varnothing \implies 1 \in \tilde{f}(\beta(X))$, so $\tilde{f}(\beta(X)) = \{0, 1\}$, which is disconnected.
     <2>10. This contradiction shows that $X$ must be connected.
 
-<1>3. Conclusion:
-    $X$ is connected if and only if $\beta(X)$ is connected. Q.E.D.
+<1>3. Q.E.D.
+    Steps <1>1 and <1>2 give the two implications.
 :::
