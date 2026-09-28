@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EOMTI
 kind: problem
-title: $\log(x) / (1+x^2)^2$
+title: $\int_0^\infty\frac{\log x}{(1+x^2)^2}\,dx$ by an indented semicircle
 classification:
   areas:
   - complex-analysis
