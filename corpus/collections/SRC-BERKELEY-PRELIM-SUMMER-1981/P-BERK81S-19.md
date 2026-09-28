@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-19
 kind: problem
-title: Count roots in the right half-plane of $z^{2n}+\alpha^2z^{2n-1}+\beta^2$
+title: Number of roots in the right half-plane of $z^{2n}+\alpha^2z^{2n-1}+\beta^2$
 classification:
   areas: [prelim]
   topics: []
