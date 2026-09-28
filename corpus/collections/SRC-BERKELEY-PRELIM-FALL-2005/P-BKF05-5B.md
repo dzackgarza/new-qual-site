@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF05-5B
 kind: problem
-title: When the unit group of Fp x modulo x cubed is cyclic
+title: Cyclicity of the unit group $(\FF_p[x]/(x^3))^\times$
 classification:
   areas:
   - prelim
