@@ -59,7 +59,7 @@ The successive remainders are
 \]
 so the answer is $\boxed{\text{(D)}}$.
 
-<1>1. Execute the Euclidean algorithm.
+<1>1. For $a=273$ and $b=110$, the algorithm computes $r=53,4,1,0$.
 ::: {.proof}
 \[
 273=2\cdot110+53,
