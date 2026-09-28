@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK95S-04
 kind: problem
-title: Order and Sylow-$p$ subgroups of $GL_2(\mathbb F_{p^n})$
+title: Order and Sylow-$p$ subgroups of $GL_2(\FF_{p^n})$
 classification:
   areas:
   - prelim
