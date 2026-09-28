@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05AND
 kind: problem
-title: Weak Lower Semicontinuity of the Norm and Strong Convergence
+title: Weak lower semicontinuity of the norm and strong convergence
 classification:
   areas:
   - real-analysis
