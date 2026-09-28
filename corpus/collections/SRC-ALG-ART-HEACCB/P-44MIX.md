@@ -73,7 +73,7 @@ d_1=c^2,\qquad d_2=pc^2,\qquad d_3=p^3qc^4.
 For the prime $p$, the nonzero elementary-divisor exponents are $1,3$, so after padding to three slots they are $0,1,3$.
 For $q$ they are $0,0,1$.
 For every irreducible factor $r$ of $c$, they are $2,2,4$.
-Multiplying the prime powers slotwise gives the displayed invariant factors, and clearly $d_1\mid d_2\mid d_3$.
+Multiplying the prime powers slotwise gives the displayed invariant factors, and $d_1\mid d_2\mid d_3$.
 :::
 
 <1>4. Suppose $\operatorname{char}k=3$. Then $p=q$, and the elementary divisors are
