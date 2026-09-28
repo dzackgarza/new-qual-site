@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-09
 kind: problem
-title: One- and two-dimensional invariant subspaces of a real three-dimensional operator
+title: One- and two-dimensional invariant subspaces of a linear operator on $\RR^3$
 classification:
   areas: [prelim]
   topics: []
