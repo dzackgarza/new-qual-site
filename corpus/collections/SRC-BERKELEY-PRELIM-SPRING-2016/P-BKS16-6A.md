@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Prove or disprove: there exists an $\epsilon>0$ and a real matrix $A$ such that
-\[
+$$
 A^{100}=\begin{pmatrix}-1&0\\0&-1-\epsilon\end{pmatrix}.
-\]
+$$
 :::
 
 ::: {.solution}
@@ -89,7 +89,7 @@ By steps <1>1 and <1>3, they are
 $$
 \lambda^{100}
 \qquad\text{and}\qquad
-\overline{\lambda}^{,100}
+\overline{\lambda}^{100}
 =
 \overline{\lambda^{100}}.
 $$
