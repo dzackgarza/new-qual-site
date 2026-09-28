@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-13
 kind: problem
-title: 'SS 1.13: Constant real/imaginary/magnitude implies constant'
+title: Holomorphic $f$ with constant $\Re f$, $\Im f$, or $\abs{f}$ is constant
 classification:
   areas:
   - complex-analysis
@@ -25,15 +25,25 @@ If $f$ is holomorphic on $\Omega$ and any of the following hold, then $f$ is con
 :::
 
 ::: {.solution}
-**Part 3**:
+Here $\Omega$ is a region, that is, open and connected.
 
-- Write $\abs{f} = c \in \RR$.
+<1>1. (3) If $\abs{f} = c$ on $\Omega$, then $f$ is constant.
 
-- If $c=0$, done, so suppose $c>0$.
+<2>1. If $c=0$, then $f=0$.
 
-- Use $f\bar{f} = \abs{f}^2 = c^2$ to write $\bar{f}=c^2/f$.
+::: {.proof}
+$\abs{f(z)} = 0$ if and only if $f(z) = 0$.
+:::
 
-- Since $\abs{f(z)} = 0 \iff f(z) = 0$, we have $f\neq 0$ on $\Omega$, so $\bar{f}$ is analytic.
+<2>2. If $c>0$, then $\bar f$ is holomorphic on $\Omega$.
 
-- Similarly $f$ is analytic, and $f,\bar{f}$ analytic implies $f'=0$ implies $f$ is constant.
+::: {.proof}
+Since $\abs{f}=c>0$, $f$ has no zeros on $\Omega$, and $f\bar{f} = \abs{f}^2 = c^2$ gives $\bar{f}=c^2/f$, a quotient of holomorphic functions with nonvanishing denominator.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+In the case $c>0$, both $f$ and $\bar f$ are holomorphic, so $\partial f/\partial\bar z=0$ and $\overline{f'}=\overline{\partial f/\partial z}=\partial\bar f/\partial\bar z=0$. Hence $f'=0$ on the connected set $\Omega$, and $f$ is constant. The case $c=0$ is step <2>1.
+:::
 :::
