@@ -40,7 +40,7 @@ B=\begin{pmatrix}2&0&0\\0&-1&0\\0&0&-1\end{pmatrix}.
 $$
 
 <1>1. The vector $v=(1,0,0)^{\mathsf T}$ is cyclic for $A$,
-and $P^{-1}AP=C$ for the matrix $P$ below.
+and $P^{-1}AP=C$ for $P=(v\ Av\ A^2v)$.
 
 ::: {.proof}
 Direct multiplication gives
@@ -80,7 +80,7 @@ $v,Av,A^2v$. Here $f(A)v=0$ is the displayed identity
 for $A^3v$. Thus the kernel is exactly $(f)$, establishing
 the single invariant factor and the asserted rational form.
 
-For completeness, expanding the determinant of $tI-C$
+Expanding the determinant of $tI-C$
 gives $t(t^2-3)-2=t^3-3t-2$. Similarity therefore gives
 $\chi_A=f$. The cyclic-basis argument also proves that
 the minimal polynomial has degree three and equals $f$.
@@ -103,6 +103,5 @@ $(-1)(1)-(1)(-4)=3\ne0$.
 But $B+I=\operatorname{diag}(3,0,0)$ has rank one.
 If $A$ and $B$ were similar, adding the identity would
 preserve that similarity and hence their ranks, a contradiction.
-This proves the required failure of similarity.
 :::
 :::
