@@ -80,6 +80,6 @@ k\text{ is perfect}
 \forall x\in k\ \exists y\in k\text{ with }y^p=x.
 \]
 ::: {.proof}
-Combine <1>2 and <1>5.
+Steps <1>2 and <1>5 give the two implications.
 :::
 :::
