@@ -51,11 +51,9 @@ M =  \begin{bmatrix} x & y & z \\ a & b & c \end{bmatrix} \implies X = V\qty{\ge
 
 Heuristic: there are three degrees of freedom in choosing the first row $x,y,z$.
 To enforce the rank one condition, the second row must be a scalar multiple of the first, yielding one degree of freedom for the scalar.
-
-> Note: I looked at this for a couple of hours, but I don't know how to prove either of these statements with the tools we have so far.
 :::
 
 ::: {.remark}
-Erratum: the solution above is unfinished.
+Erratum: the solution is incomplete.
 It shows that $X$ is the zero locus of the three $2 \times 2$ minors, but both claims it then needs, that the ideal $\gens{xb-ya, yc-zb, xc-za}$ is prime and that $\dim X = 4$, are asserted without proof, and the degree-of-freedom count is a heuristic rather than an argument.
 :::
