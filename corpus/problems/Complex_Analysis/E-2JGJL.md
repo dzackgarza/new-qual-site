@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2JGJL
 kind: problem
-title: Line integrals
+title: $\int_\Gamma\Re(z)\,dz$ around the unit square
 classification:
   areas:
   - complex-analysis
