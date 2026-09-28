@@ -22,9 +22,11 @@ audit:
 Show that every prime ideal is irreducible.
 :::
 
-::: {.solution}
-**Goal:** if a prime $\mfp$ were the intersection of two strictly larger ideals, a product of two elements outside $\mfp$ would land in $\mfp$.
+::: {.hint}
+If $\mfp = J\cap K$ with $a\in J\sm\mfp$ and $b\in K\sm\mfp$, then $ab\in J\cap K=\mfp$.
+:::
 
+::: {.solution}
 <1>1. Recall that $I$ is *irreducible* when $I = J \cap K$ for ideals $J, K$ forces $I = J$ or $I = K$.
 
 <1>2. Let $\mfp$ be prime and suppose $\mfp = J \cap K$ with $\mfp \neq J$ and $\mfp \neq K$.
