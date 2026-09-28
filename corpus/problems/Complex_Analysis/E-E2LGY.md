@@ -29,7 +29,7 @@ Show that
 :::
 
 ::: {.solution}
-Let $K\subset\CC$ be compact. Choose a closed square $Q$ and $\delta>0$ such that every point of $K$ has distance at least $\delta$ from $\partial Q$, and let $L$ be the perimeter of $Q$.
+Let $K\subset\CC$ be compact. Choose a closed square $Q$ whose interior contains $K$, put $\delta=\operatorname{dist}(K,\partial Q)>0$, and let $L$ be the perimeter of $Q$.
 
 <1>1. $f_n\to g$ uniformly on $\partial Q$.
 
