@@ -9,7 +9,6 @@ topics:
 
 # Theorems that give a constant
 
-Each theorem below concludes that a holomorphic function is constant, and each uses a different hypothesis.
 Throughout, $\Omega\subseteq\CC$ is a connected open set.
 
 ## Bounded and entire
@@ -28,7 +27,7 @@ Two hypotheses imply boundedness of an entire function $f$:
 ## Entire, with polynomial growth
 
 **Cauchy's estimates.**
-If $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for all large $\abs z$, then for fixed $z_0$ and large $R$ the estimate on the circle $\abs{z - z_0} = R$ gives
+If $f$ is entire and $\abs{f(z)} \leq C\abs{z}^n$ for all large $\abs z$, then for fixed $z_0$ and large $R$ Cauchy's inequality on the circle $C_R$ given by $\abs{z - z_0} = R$ gives
 $$
 \abs{f^{(n+1)}(z_0)} \leq {(n+1)!\, \norm{f}_{C_R} \over R^{n+1}} \leq {(n+1)!\, C(R+\abs{z_0})^n \over R^{n+1}} \to 0
 ,$$
