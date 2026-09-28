@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FS7GZ
 kind: problem
-title: Taylor radii for the principal square root
+title: Radii of convergence of the principal $\sqrt z$ about $4+3i$ and $-4+3i$
 classification:
   areas:
   - complex-analysis
