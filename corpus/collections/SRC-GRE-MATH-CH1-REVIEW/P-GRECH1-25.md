@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH1-25
 kind: problem
-title: Exact sum arctan(1)+arctan(2)+arctan(3)
+title: "Exact value of $\arctan1+\arctan2+\arctan3$"
 classification:
   areas:
   - algebra
