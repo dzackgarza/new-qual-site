@@ -37,8 +37,7 @@ If $J$ is a well-ordered set and $J_0$ is an inductive subset of $J$, then $J_0 
 :::
 
 ::: {.solution}
-Suppose \(J_0
-e J\). Since \(J\) is well-ordered, the nonempty set \(J-J_0\) has a smallest element; call it \(\alpha\). Every \(x<\alpha\) lies in \(J_0\) by minimality of \(\alpha\). Hence
+Suppose \(J_0\ne J\). Since \(J\) is well-ordered, the nonempty set \(J-J_0\) has a smallest element; call it \(\alpha\). Every \(x<\alpha\) lies in \(J_0\) by minimality of \(\alpha\). Hence
 \[
 S_\alpha\subset J_0.
 \]
