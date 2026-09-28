@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-9A
 kind: problem
-title: Decompose $(\mathbb Z_{12}\times\mathbb Z_{12})/\langle(2,6)\rangle$ into cyclic factors
+title: Cyclic decomposition of $(\ZZ_{12}\times\ZZ_{12})/\langle(2,6)\rangle$
 classification:
   areas:
   - prelim
@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Find, with proof, a product of cyclic groups isomorphic to
-\[
-(\mathbb Z_{12}\times\mathbb Z_{12})/\langle(2,6)\rangle.
-\]
-Here $\mathbb Z_n$ means $\mathbb Z/n\mathbb Z$.
+$$
+(\ZZ_{12}\times\ZZ_{12})/\langle(2,6)\rangle.
+$$
+Here $\ZZ_n$ means $\ZZ/n\ZZ$.
 :::
 
 ::: {.solution}
