@@ -168,8 +168,8 @@ This function extends continuously across $x=0$, since
 $$
 \frac{\sin x}{x}\longrightarrow1.
 $$
-Taking imaginary parts in step <1>4 therefore gives the ordinary improper
-whole-line integral displayed above.
+Taking imaginary parts in step <1>4 therefore gives the value
+$\pi(1-e^{-1})$ for the ordinary improper whole-line integral.
 :::
 
 <1>6. The requested value is
