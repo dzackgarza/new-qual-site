@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that every nonempty closed convex subset of \(\mathbb R^n\), with the Euclidean norm, has a unique element of minimum norm.
+Prove that every nonempty closed convex subset of $\RR^n$, with the Euclidean norm, has a unique element of minimum norm.
 :::
 
 ::: {.solution}
