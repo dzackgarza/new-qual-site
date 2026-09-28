@@ -32,7 +32,8 @@ c. Prove that the multiplicative group $(\unitsof{\FF}, \cdot)$ is cyclic.
 ::: {.solution}
 <1>1. Part (a): Additive structure of a finite field: <2>1. Let $\operatorname{char}(\mathbb{F}) = p$.
 Since $\mathbb{F}$ is a field, $p$ is a prime number, and the prime subfield of $\mathbb{F}$ is $\mathbb{F}_p \cong \mathbb{Z}/p\mathbb{Z}$.
-::: {.proof} characteristic of an integral domain is prime.
+::: {.proof}
+characteristic of an integral domain is prime.
 :::
 <2>2. The field $\mathbb{F}$ is a finite-dimensional vector space over $\mathbb{F}_p$.
 Let $n = [\mathbb{F} : \mathbb{F}_p] = \dim_{\mathbb{F}_p}(\mathbb{F})$.

@@ -39,7 +39,8 @@ and characterize the collection of functions of each type.
 
 ::: {.solution}
 <1>1. If $\mu\{f>1\}>0$, the integrals diverge to infinity.
-::: {.proof} Let
+::: {.proof}
+Let
 \[
 B:=\{x\in X:f(x)>1\}.
 \]

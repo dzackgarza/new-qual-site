@@ -30,7 +30,8 @@ Show that $f$ is quasi-compact if and only if for every open affine subset $V \s
 
 ::: {.solution}
 <1>1. If $f^{-1}(V)$ is quasi-compact for every affine open $V\subseteq Y$, then $f$ is quasi-compact.
-::: {.proof} Choose any affine open cover
+::: {.proof}
+Choose any affine open cover
 \[
 Y=\bigcup_iV_i.
 \]
@@ -62,7 +63,8 @@ Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in 
 f^{-1}(W_y)
 \]
 is quasi-compact.
-::: {.proof} Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.
+::: {.proof}
+Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.
 Since $f^{-1}(V_i)$ is quasi-compact, choose a finite affine open cover
 \[
 f^{-1}(V_i)=U_1\cup\cdots\cup U_n.

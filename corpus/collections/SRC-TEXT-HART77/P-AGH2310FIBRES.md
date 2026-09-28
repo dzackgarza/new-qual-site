@@ -37,7 +37,8 @@ b. Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ 
 
 ::: {.solution}
 <1>1. It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
-::: {.proof} Choose an affine neighborhood
+::: {.proof}
+Choose an affine neighborhood
 \[
 V=\Spec B\subseteq Y
 \]
@@ -91,7 +92,8 @@ such that
 \[
 \mathfrak q\cap B=\mathfrak p.
 \]
-::: {.proof} By <1>2, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
+::: {.proof}
+By <1>2, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
 
 The first condition gives
 \[
@@ -234,7 +236,8 @@ k(s)[t]/(t^2-s).
 t^2-s\in k(s)[t]
 \]
 is irreducible in every characteristic.
-::: {.proof} A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
+::: {.proof}
+A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
 
 But the discrete valuation $v_s$ on $k(s)$ associated to the prime $(s)$ satisfies
 \[
@@ -252,7 +255,8 @@ X_\eta
 \qquad
 [\kappa(X_\eta):k(s)]=2.}
 \]
-::: {.proof} By <1>12, the quotient
+::: {.proof}
+By <1>12, the quotient
 \[
 k(s)[t]/(t^2-s)
 \]

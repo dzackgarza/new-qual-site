@@ -44,7 +44,8 @@ Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \inte
 
 ::: {.solution}
 <1>1. Every coset in $\mathbb Q/\mathbb Z$ has a representative in $[0,1)\cap\mathbb Q$.
-::: {.proof} Let
+::: {.proof}
+Let
 \[
 q=\frac mn\in\mathbb Q,
 \qquad

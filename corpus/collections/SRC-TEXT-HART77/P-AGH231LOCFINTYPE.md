@@ -28,7 +28,8 @@ Show that a morphism $f: X \to Y$ is locally of finite type if and only if for e
 
 ::: {.solution}
 <1>1. If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is locally of finite type.
-::: {.proof} Choose any affine open cover
+::: {.proof}
+Choose any affine open cover
 \[
 Y=\bigcup_i V_i.
 \]
@@ -98,7 +99,8 @@ Set $U'=D(a)$.
 U'=\Spec A_a
 \]
 has coordinate ring finitely generated as a $B$-algebra.
-::: {.proof} Because $W=D(g)\subseteq V=\Spec B$,
+::: {.proof}
+Because $W=D(g)\subseteq V=\Spec B$,
 \[
 W\cong\Spec B_g.
 \]

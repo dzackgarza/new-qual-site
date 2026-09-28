@@ -34,7 +34,8 @@ Show that the composite function $f\circ g$ is also injective.
 **Goal:** Prove that if $A$ is a set and $f, g: A \to A$ are injective functions, then their composition $f \circ g: A \to A$ is injective.
 
 <1>1. Definition: A function $h: A \to A$ is injective if for all $x, y \in A$, $h(x) = h(y) \implies x = y$.
-::: {.proof} By the standard definition of injectivity.
+::: {.proof}
+By the standard definition of injectivity.
 :::
 
 <1>2. Assume $f: A \to A$ and $g: A \to A$ are injective functions.

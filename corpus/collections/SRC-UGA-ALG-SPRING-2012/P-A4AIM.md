@@ -35,7 +35,8 @@ b. Exhibit with justification a subset $S$ of $M_{m, n}(k)$ which contains preci
 **Part (a).**
 
 <1>1. A group $G$ acts on a set $X$ if there is a map $G \times X \to X$, $(g, x) \mapsto g \cdot x$, such that $e \cdot x = x$ and $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$, $x \in X$.
-::: {.proof} definition of a group action.
+::: {.proof}
+definition of a group action.
 :::
 
 <1>2. The given formula defines a group action.

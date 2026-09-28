@@ -29,7 +29,8 @@ Show that if $R$ is a local ring then $R\setminus \unitsof{R}$ is a proper ideal
 Let $\mathfrak m$ be the unique maximal ideal of the local ring $R$.
 
 <1>1. Every element of $\mathfrak m$ is a nonunit.
-::: {.proof} If $x\in\mathfrak m$ were a unit, then $1=x^{-1}x\in\mathfrak m$, contradicting the properness of the maximal ideal $\mathfrak m$.
+::: {.proof}
+If $x\in\mathfrak m$ were a unit, then $1=x^{-1}x\in\mathfrak m$, contradicting the properness of the maximal ideal $\mathfrak m$.
 Thus
 \[
 \mathfrak m\subseteq R\setminus \unitsof{R}.

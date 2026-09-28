@@ -42,7 +42,8 @@ n_p\mid q^k
 \qquad\text{and}\qquad
 n_p\equiv 1\pmod p.
 \]
-::: {.proof} This is Sylow's theorem.
+::: {.proof}
+This is Sylow's theorem.
 :::
 
 <1>2. One has $n_p=1$ or $n_p=q^k$.

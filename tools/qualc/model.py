@@ -514,6 +514,8 @@ KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES
 # and no prose or mathematical content is moved or inferred.
 _FENCED_DIV_LINE = re.compile(r"^(?P<indent>[ \t]*)(?P<fence>:{3,})(?P<rest>.*)$")
 _LAMPORT_INDENTED_MARKER = re.compile(r"^[ \t]+<[123]>")
+# An opener after text on the same line, as in `<1>6. Claim. ::: {.proof} Let`.
+_JOINED_FENCED_DIV = re.compile(r"\S[ \t]+:{3,}[ \t]*\{")
 
 
 @dataclass
@@ -525,20 +527,50 @@ class _FencedDivNode:
     end: int | None = None
 
 
-def _fenced_div_opening(line: str) -> tuple[int, int, str] | None:
-    """Return indentation and attributes for an authored fenced-div opener."""
+def _attributes_end(rest: str) -> int:
+    """The index just past the attribute part of a fence opener's `rest`.
+
+    Pandoc's fenced-div opener (manual, "Divs and Spans") is the colons, then
+    either a `{...}` attribute block or one bare class word, then optionally
+    more colons, and nothing else. A `}` inside a quoted attribute value, as in
+    `title="$\\mathbb{D}$"`, does not close the block.
+    """
+    if not rest.startswith("{"):
+        word = re.match(r"[^\s:{}]+", rest)
+        return word.end() if word else 0
+    quote = ""
+    for index, char in enumerate(rest):
+        if quote:
+            if char == quote:
+                quote = ""
+        elif char in "\"'":
+            quote = char
+        elif char == "}":
+            return index + 1
+    return len(rest)
+
+
+def _fenced_div_opening(line: str, number: int) -> tuple[int, int, str] | None:
+    """Return indentation and attributes for an authored fenced-div opener.
+
+    Text after the attributes is rejected: Pandoc reads such a line as
+    paragraph text, so its div never opens and the matching closer ends the
+    enclosing div instead.
+    """
     match = _FENCED_DIV_LINE.match(line)
     if match is None:
         return None
     rest = match.group("rest").strip()
     if not rest:
         return None
+    if rest[_attributes_end(rest) :].strip().strip(":").strip():
+        raise ValueError(f"text after the fenced-div attributes on line {number}; start the text on the next line")
 
     indent = len(match.group("indent").expandtabs(4))
     return indent, len(match.group("fence")), rest
 
 
-def normalize_fenced_divs(markdown: str) -> str:
+def normalize_fenced_divs(markdown: str, first_line: int) -> str:
     """Canonicalize the corpus's nested fenced-div spelling for Pandoc.
 
     The source order is authoritative.  An opener pushes and a bare colon line
@@ -546,7 +578,8 @@ def normalize_fenced_divs(markdown: str) -> str:
     Once paired, proof fences are separated from the preceding paragraph,
     indented fence bodies are moved out of Markdown's code-block column, and
     indented Lamport markers are likewise restored as ordinary proof steps.
-    Unbalanced source is rejected rather than guessed at.
+    Unbalanced source is rejected rather than guessed at. Errors name file
+    lines: `first_line` is the file line on which `markdown` starts.
     """
     lines = markdown.splitlines()
     stack: list[_FencedDivNode] = []
@@ -554,7 +587,9 @@ def normalize_fenced_divs(markdown: str) -> str:
     ends: dict[int, _FencedDivNode] = {}
 
     for index, line in enumerate(lines):
-        opening = _fenced_div_opening(line)
+        if _JOINED_FENCED_DIV.search(line):
+            raise ValueError(f"fenced-div opener after text on line {index + first_line}; put the opener on its own line")
+        opening = _fenced_div_opening(line, index + first_line)
         if opening is not None:
             indent, width, rest = opening
             node = _FencedDivNode(index, indent, width, rest)
@@ -565,14 +600,14 @@ def normalize_fenced_divs(markdown: str) -> str:
         match = _FENCED_DIV_LINE.match(line)
         if match is not None and not match.group("rest").strip():
             if not stack:
-                raise ValueError(f"unmatched fenced-div closer on line {index + 1}")
+                raise ValueError(f"unmatched fenced-div closer on line {index + first_line}")
             node = stack.pop()
             node.end = index
             ends[index] = node
 
     if stack:
         node = stack[-1]
-        raise ValueError(f"unclosed fenced div `{node.rest}` opened on line {node.start + 1}")
+        raise ValueError(f"unclosed fenced div `{node.rest}` opened on line {node.start + first_line}")
 
     output: list[str] = []
     active: list[_FencedDivNode] = []
@@ -589,7 +624,7 @@ def normalize_fenced_divs(markdown: str) -> str:
             node = ends[index]
             output.append(":" * node.width)
             if not active or active[-1] is not node:
-                raise ValueError(f"internal fenced-div pairing error on line {index + 1}")
+                raise ValueError(f"internal fenced-div pairing error on line {index + first_line}")
             active.pop()
             continue
 
@@ -692,7 +727,7 @@ def to_ast(markdown: str) -> str:
     the generated LaTeX holds a duplicate definition. I called it benign without
     reading it.
     """
-    normalized = mark_definienda(normalize_fenced_divs(markdown))
+    normalized = mark_definienda(normalize_fenced_divs(markdown, 1))
     with PandocServer() as pandoc:
         result = pandoc.read_markdown([normalized], MARKDOWN)[0]
     match result:
@@ -869,11 +904,12 @@ class CardSourceDiagnostic:
 
 def _prepare_card_source(path: Path) -> PreparedCardSource | CardSourceDiagnostic:
     try:
-        meta, body = split_front_matter(path.read_text(), path)
+        source = path.read_text()
+        meta, body = split_front_matter(source, path)
         return PreparedCardSource(
             path=path,
             metadata=meta,
-            body=mark_definienda(normalize_fenced_divs(body)),
+            body=mark_definienda(normalize_fenced_divs(body, source[: len(source) - len(body)].count("\n") + 1)),
         )
     except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
         return CardSourceDiagnostic(path=path, message=str(exc))

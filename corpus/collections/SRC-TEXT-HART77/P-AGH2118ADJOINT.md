@@ -49,7 +49,8 @@ where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 f^{-1}f_*\mathcal F\longrightarrow\mathcal F.
 }
 \]
-::: {.proof} Before sheafification, for an open $U\subseteq X$ one has
+::: {.proof}
+Before sheafification, for an open $U\subseteq X$ one has
 \[
 \mathcal P_{f_*\mathcal F}(U)
 =
@@ -119,7 +120,8 @@ These maps commute with restriction in $V$, hence define the desired sheaf morph
 :::
 
 <1>3. The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natural in $\mathcal G$.
-::: {.proof} Let
+::: {.proof}
+Let
 \[
 \alpha:\mathcal F\to\mathcal F'
 \]
@@ -158,7 +160,8 @@ f^{-1}\eta_{\mathcal G}
 \operatorname{id}_{f^{-1}\mathcal G}.
 }
 \]
-::: {.proof} A section of $f^{-1}\mathcal G$ is locally represented by a section
+::: {.proof}
+A section of $f^{-1}\mathcal G$ is locally represented by a section
 \[
 s\in\mathcal G(V)
 \]
@@ -191,7 +194,8 @@ f_*\varepsilon_{\mathcal F}
 \operatorname{id}_{f_*\mathcal F}.
 }
 \]
-::: {.proof} Let $V\subseteq Y$ and
+::: {.proof}
+Let $V\subseteq Y$ and
 \[
 s\in(f_*\mathcal F)(V)
 =\mathcal F(f^{-1}V).

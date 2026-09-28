@@ -40,7 +40,8 @@ where \(a\in(\mathbb Z/n\mathbb Z)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^
 \[
 \sigma_a(\alpha)=\zeta_n^a+\zeta_n^{-a}.
 \]
-::: {.proof} This follows directly from the definition of \(\sigma_a\).
+::: {.proof}
+This follows directly from the definition of \(\sigma_a\).
 :::
 
 <1>2. The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\mathbb Q)\) is exactly

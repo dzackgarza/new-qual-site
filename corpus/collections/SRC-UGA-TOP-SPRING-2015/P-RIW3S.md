@@ -42,7 +42,8 @@ is a free homotopy from $\gamma_0$ to $\gamma_1$, then the track of the basepoin
 \alpha(t)=H(1,t),
 \]
 is a loop at $x_0$.
-::: {.proof} Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
+::: {.proof}
+Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
 \[
 \alpha(0)=\gamma_0(1)=x_0
 \qquad\text{and}\qquad
@@ -56,7 +57,8 @@ Thus $\alpha$ is indeed a loop based at $x_0$.
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}
 \qquad\text{in }\pi_1(X,x_0).
 \]
-::: {.proof} Let
+::: {.proof}
+Let
 \[
 q:I\to S^1=I/(0\sim1)
 \]

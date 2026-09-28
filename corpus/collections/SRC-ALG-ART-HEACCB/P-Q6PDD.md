@@ -30,7 +30,8 @@ Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PD\in
 
 ::: {.solution}
 <1>1. Every eigenvalue of a Hermitian matrix is real.
-::: {.proof} Let $Av=\lambda v$ with $v\ne0$.
+::: {.proof}
+Let $Av=\lambda v$ with $v\ne0$.
 Since $A=A^*$,
 \[
 \lambda\langle v,v\rangle

@@ -28,7 +28,8 @@ Show that a morphism $f: X \to Y$ is finite if and only if for every open affine
 
 ::: {.solution}
 <1>1. If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is finite.
-::: {.proof} Choose any affine open cover of $Y$.
+::: {.proof}
+Choose any affine open cover of $Y$.
 On every member $V=\Spec B$ of that cover, the hypothesis says
 \[
 f^{-1}(V)=\Spec A
@@ -83,7 +84,8 @@ Thus this neighborhood is distinguished in both affines.  Denote it by $W_y$.
 :::
 
 <1>4. For every neighborhood $W_y$ from <1>3, the inverse image $f^{-1}(W_y)$ is affine and finite over $W_y$.
-::: {.proof} Write $W_y=D_{V_i}(c)$ inside the witnessing affine $V_i=\Spec B_i$.
+::: {.proof}
+Write $W_y=D_{V_i}(c)$ inside the witnessing affine $V_i=\Spec B_i$.
 Then
 \[
 f^{-1}(W_y)=D_{\Spec A_i}(\phi_i(c))
@@ -136,7 +138,8 @@ and
 (X_V)_{a_j}=f^{-1}(W_j)
 \]
 is affine for every $j$.
-::: {.proof} Choose $d_j\in B$ with
+::: {.proof}
+Choose $d_j\in B$ with
 \[
 \sum_jd_jb_j=1.
 \]
@@ -177,7 +180,8 @@ If every
 A_{b_j}
 \]
 is a finite $B_{b_j}$-module, then $A$ is a finite $B$-module.
-::: {.proof} For each $j$, choose finitely many generators of the $B_{b_j}$-module $A_{b_j}$ and write them as fractions whose numerators lie in $A$.
+::: {.proof}
+For each $j$, choose finitely many generators of the $B_{b_j}$-module $A_{b_j}$ and write them as fractions whose numerators lie in $A$.
 Let
 \[
 M\subseteq A

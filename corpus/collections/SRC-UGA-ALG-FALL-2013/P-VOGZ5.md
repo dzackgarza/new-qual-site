@@ -44,7 +44,8 @@ Justify your answer.
 **(a).**
 
 <1>1. The roots of $x^4 - 2$ are $\pm\sqrt[4]{2}, \pm i\sqrt[4]{2}$.
-::: {.proof} the four fourth roots of $2$.
+::: {.proof}
+the four fourth roots of $2$.
 :::
 
 <1>2. Hence $K = \QQ(\sqrt[4]{2}, i)$, which contains both $\QQ(i)$ and $\QQ(\sqrt[4]{2})$.

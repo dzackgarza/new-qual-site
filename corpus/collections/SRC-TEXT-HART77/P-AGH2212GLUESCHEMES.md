@@ -67,7 +67,8 @@ x\in U_{ij}
 y=\phi_{ij}(x).
 \]
 Then $\sim$ is an equivalence relation.
-::: {.proof} Reflexivity follows from
+::: {.proof}
+Reflexivity follows from
 \[
 U_{ii}=X_i,
 \qquad
@@ -161,7 +162,8 @@ Thus $\psi_i$ is injective.
 V_i:=\psi_i(X_i)
 \]
 is open in $|X|$.
-::: {.proof} By definition of the quotient topology, it is enough to show that
+::: {.proof}
+By definition of the quotient topology, it is enough to show that
 \[
 q^{-1}(V_i)
 \]
@@ -191,7 +193,8 @@ Every $U_{ji}$ is open in $X_j$, so this is open in the disjoint-union topology.
 \psi_i:X_i\longrightarrow V_i
 \]
 is a homeomorphism.
-::: {.proof} It is already a continuous bijection by <1>2 and the definition of the quotient topology.
+::: {.proof}
+It is already a continuous bijection by <1>2 and the definition of the quotient topology.
 We show it is open.
 
 Let
@@ -239,7 +242,8 @@ Moreover,
 \quad\text{on }U_{ij}.
 }
 \]
-::: {.proof} The images cover because every equivalence class has a representative in some component $X_i$.
+::: {.proof}
+The images cover because every equivalence class has a representative in some component $X_i$.
 
 A point of $V_i$ belongs to $V_j$ exactly when its representative
 \[
@@ -270,7 +274,8 @@ The scheme isomorphisms $\phi_{ij}$ induce compatible sheaf isomorphisms
 \xrightarrow{\sim}
 \mathcal G_j|_{V_i\cap V_j}.
 \]
-::: {.proof} Define
+::: {.proof}
+Define
 \[
 \mathcal G_i=(\psi_i)_*\mathcal O_{X_i}
 \]
@@ -321,7 +326,8 @@ is a scheme, and each
 \psi_i:X_i\longrightarrow X
 \]
 is an isomorphism of schemes onto the open subscheme $V_i$.
-::: {.proof} By construction,
+::: {.proof}
+By construction,
 \[
 (V_i,\mathcal O_X|_{V_i})
 \cong
@@ -347,7 +353,8 @@ The first property is <1>8, and the remaining three are <1>5.
 :::
 
 <1>10. The glued scheme is unique up to a unique isomorphism compatible with the maps $\psi_i$.
-::: {.proof} Suppose
+::: {.proof}
+Suppose
 \[
 X'
 \]
@@ -409,7 +416,8 @@ X=\coprod_iX_i
 }
 \]
 is their disjoint union as a scheme.
-::: {.proof} The equivalence relation of <1>1 becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
+::: {.proof}
+The equivalence relation of <1>1 becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
 
 There are no nontrivial overlap isomorphisms of structure sheaves to impose.  Thus $\mathcal O_X$ restricts independently to $\mathcal O_{X_i}$ on each open-and-closed component.  This is precisely the scheme-theoretic disjoint union.
 :::

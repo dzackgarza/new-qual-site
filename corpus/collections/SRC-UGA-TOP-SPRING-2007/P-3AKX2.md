@@ -41,7 +41,8 @@ Show that $\inverseof{p} (U )$ is connected if and only if the homomorphism $i_\
 Fix $x_0\in U$ and $\widetilde x_0\in p^{-1}(x_0)$.
 
 <1>1. The set $U$ is path-connected, and $p^{-1}(U)$ is locally path-connected.
-::: {.proof} Every surface is locally path-connected.
+::: {.proof}
+Every surface is locally path-connected.
 Since $U$ is an open subset of a surface, it is locally path-connected as well.
 In a locally path-connected space, path components are open.
 Because $U$ is connected, it therefore has only one path component.
@@ -56,7 +57,8 @@ The set $p^{-1}(U)$ is open in the surface $\widetilde S$, hence is locally path
 [\gamma]\longmapsto \widetilde\gamma(1),
 \]
 where $\widetilde\gamma$ is the lift of $\gamma$ beginning at $\widetilde x_0$.
-::: {.proof} The endpoint depends only on the homotopy class of $\gamma$ by homotopy lifting.
+::: {.proof}
+The endpoint depends only on the homotopy class of $\gamma$ by homotopy lifting.
 
 For surjectivity, let $\widetilde y\in p^{-1}(x_0)$.
 Since the universal cover $\widetilde S$ is path-connected, choose a path $\widetilde\alpha$ from $\widetilde x_0$ to $\widetilde y$.
@@ -80,7 +82,8 @@ in $\pi_1(S,x_0)$.
 \[
 g\in\operatorname{im} i_*.
 \]
-::: {.proof} Suppose first that $g=i_*([\alpha])$ for a loop $\alpha$ in $U$ based at $x_0$.
+::: {.proof}
+Suppose first that $g=i_*([\alpha])$ for a loop $\alpha$ in $U$ based at $x_0$.
 The lift of $\alpha$ from $\widetilde x_0$ stays in $p^{-1}(U)$ and ends at $\Phi(g)$.
 Hence $\Phi(g)$ and $\widetilde x_0$ lie in the same path component.
 
@@ -98,7 +101,8 @@ Thus $g\in\operatorname{im}i_*$.
 :::
 
 <1>4. If $p^{-1}(U)$ is connected, then $i_*$ is surjective.
-::: {.proof} By <1>1, the locally path-connected space $p^{-1}(U)$ is path-connected whenever it is connected.
+::: {.proof}
+By <1>1, the locally path-connected space $p^{-1}(U)$ is path-connected whenever it is connected.
 Hence every point of the fiber $p^{-1}(x_0)$ lies in the same path component as $\widetilde x_0$.
 
 Let $g\in\pi_1(S,x_0)$.
@@ -110,7 +114,8 @@ Thus every element of $\pi_1(S,x_0)$ lies in the image of $i_*$.
 :::
 
 <1>5. If $i_*$ is surjective, then $p^{-1}(U)$ is path-connected, hence connected.
-::: {.proof} Let $\widetilde y\in p^{-1}(U)$ and set $y=p(\widetilde y)$.
+::: {.proof}
+Let $\widetilde y\in p^{-1}(U)$ and set $y=p(\widetilde y)$.
 By <1>1, choose a path
 \[
 \alpha:[0,1]\to U

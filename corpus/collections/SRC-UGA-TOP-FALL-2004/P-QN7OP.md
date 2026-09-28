@@ -46,7 +46,8 @@ Give an example showing that the conclusion of (b) may be false if $X$ is not co
 
 ::: {.solution}
 <1>1. If $X$ is disconnected, there is a continuous nonconstant map $X\to\{0,1\}$.
-::: {.proof} Choose a separation
+::: {.proof}
+Choose a separation
 \[
 X=U\disjoint V
 \]
@@ -82,7 +83,8 @@ The two implications are <1>1 and <1>2.
 X=A\disjoint B
 \]
 is a separation, then $f(A)\cap f(B)\neq\emptyset$.
-::: {.proof} The sets $A$ and $B$ are closed subsets of the compact space $X$, hence compact.
+::: {.proof}
+The sets $A$ and $B$ are closed subsets of the compact space $X$, hence compact.
 Therefore $f(A)$ and $f(B)$ are compact, and since $Y$ is Hausdorff they are closed in $Y$.
 
 Surjectivity gives
@@ -109,7 +111,9 @@ F=(F\cap A)\disjoint(F\cap B),
 and both intersections are open in the subspace $F$, because $A$ and $B$ are open in $X$. This separates $F$, contradicting the hypothesis that every fiber is connected. Hence $X$ is connected.
 :::
 
-<1>6. Compactness of $X$ cannot be omitted in part (b). ::: {.proof} Let
+<1>6. Compactness of $X$ cannot be omitted in part (b).
+::: {.proof}
+Let
 \[
 X=(-\infty,0]\ \amalg\ (0,\infty)
 \]

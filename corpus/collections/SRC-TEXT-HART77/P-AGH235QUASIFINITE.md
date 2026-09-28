@@ -39,7 +39,8 @@ Then the scheme-theoretic fibre
 X_y=X\times_Y\Spec\kappa(y)
 \]
 is the spectrum of a finite-dimensional $\kappa(y)$-algebra.
-::: {.proof} Choose an affine neighborhood
+::: {.proof}
+Choose an affine neighborhood
 \[
 V=\Spec B\subseteq Y
 \]
@@ -71,7 +72,8 @@ For each $y\in Y$, <1>1--<1>2 show that the fibre $X_y$ has finitely many points
 
 <1>4. Let $f:X\to Y$ be finite.
 Then $f$ is a closed map.
-::: {.proof} It suffices to check closedness over an affine open cover of $Y$.
+::: {.proof}
+It suffices to check closedness over an affine open cover of $Y$.
 Let
 \[
 V=\Spec B\subseteq Y,
@@ -117,7 +119,8 @@ Then
 f:X\longrightarrow Y
 \]
 is surjective, of finite type, and quasi-finite.
-::: {.proof} The image of the first component is $Y\setminus\{0\}$, and the second component maps to $0$, so $f$ is surjective.
+::: {.proof}
+The image of the first component is $Y\setminus\{0\}$, and the second component maps to $0$, so $f$ is surjective.
 
 Both component maps are of finite type: the open immersion corresponds to
 \[
@@ -133,7 +136,8 @@ For $a\ne0$, the fibre over $a$ consists of the single point $a\in\mathbb G_m$. 
 :::
 
 <1>6. The morphism in <1>5 is not finite.
-::: {.proof} The component
+::: {.proof}
+The component
 \[
 \mathbb G_m\subseteq X
 \]

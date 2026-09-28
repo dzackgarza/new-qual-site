@@ -35,7 +35,8 @@ Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 
 ::: {.solution}
 <1>1. There exists an extension field $K/F$ in which $p$ has a root.
-::: {.proof} Let
+::: {.proof}
+Let
 \[
 K=F[x]/(p(x)).
 \]
@@ -73,7 +74,8 @@ Then
 \theta^{-1}
 =-\frac{a_1+a_2\theta+\cdots+a_n\theta^{n-1}}{a_0}.
 \]
-::: {.proof} Since $p(\theta)=0$,
+::: {.proof}
+Since $p(\theta)=0$,
 \[
 a_0+\theta(a_1+a_2\theta+\cdots+a_n\theta^{n-1})=0.
 \]

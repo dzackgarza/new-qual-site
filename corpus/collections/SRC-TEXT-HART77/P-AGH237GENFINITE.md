@@ -47,7 +47,8 @@ L=K(X).
 Y=\Spec B
 \]
 with $B$ a domain, while all the hypotheses remain true.
-::: {.proof} Every nonempty open subset of the integral scheme $Y$ is dense.
+::: {.proof}
+Every nonempty open subset of the integral scheme $Y$ is dense.
 If
 \[
 V\subseteq Y
@@ -72,7 +73,8 @@ B\hookrightarrow A_i,
 \qquad
 \operatorname{Frac}(A_i)=L.
 \]
-::: {.proof} By Hartshorne II.3.3(b), finite type over the affine scheme $Y=\Spec B$ gives a finite affine cover with each $A_i$ finitely generated over $B$.
+::: {.proof}
+By Hartshorne II.3.3(b), finite type over the affine scheme $Y=\Spec B$ gives a finite affine cover with each $A_i$ finitely generated over $B$.
 
 Discard any empty member.  Since $X$ is irreducible, every nonempty open $U_i$ contains the generic point $\xi$ of $X$.  Dominance gives
 \[
@@ -85,7 +87,8 @@ the generic point of $Y$.  Hence the ring map $B\to A_i$ has zero kernel, and II
 \[
 \boxed{L/K\text{ is finite}.}
 \]
-::: {.proof} Fix one affine chart $U_i=\Spec A_i$ and let
+::: {.proof}
+Fix one affine chart $U_i=\Spec A_i$ and let
 \[
 S=B\setminus\{0\}.
 \]
@@ -125,7 +128,8 @@ Hence $[L:K]<\infty$.
 :::
 
 <1>4. After replacing $Y$ by a smaller dense distinguished open, we may assume that every $A_i$ is finite as a $B$-module.
-::: {.proof} For each $i$, choose algebra generators
+::: {.proof}
+For each $i$, choose algebra generators
 \[
 A_i=B[\alpha_{i1},\ldots,\alpha_{in_i}].
 \]
@@ -202,7 +206,8 @@ Then
 \[
 f^{-1}(D(b))\subseteq W.
 \]
-::: {.proof} The product $b$ is nonzero because $B$ is a domain.
+::: {.proof}
+The product $b$ is nonzero because $B$ is a domain.
 
 Let $x\in f^{-1}(D(b))$.  Choose $i$ with $x\in U_i$.  Since $b$ is a unit at $f(x)$, so is every factor $b_i$.  Thus
 \[

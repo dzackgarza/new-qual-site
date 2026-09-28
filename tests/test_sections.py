@@ -152,3 +152,21 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, co
     assert numbers == ["1.", "2.", "2.1.", "2.2.", "3."], numbers
     assert disclosure_text.endswith("2.2.")
     assert ":::" not in page.root.text
+
+
+@pytest.mark.parametrize(
+    ("joined", "message"),
+    [
+        ("<1>1. The first claim.\n::: {.proof} This proves the first claim.", "text after the fenced-div attributes on line 19"),
+        ("<1>1. The first claim. ::: {.proof} This proves the first claim.", "fenced-div opener after text on line 18"),
+    ],
+)
+def test_a_proof_fence_joined_to_its_text_fails_the_check(tmp_path: Path, joined: str, message: str) -> None:
+    """Pandoc reads a joined opener as paragraph text, so the proof never opens
+    and its closer ends the solution instead. A reflow that joins the opener to
+    either neighbouring line must fail the check, not render a broken card."""
+    card = COMPACT_NESTED_CARD.replace("<1>1. The first claim.\n::: {.proof}\nThis proves the first claim.", joined, 1)
+    assert card != COMPACT_NESTED_CARD
+    result = run_qualc("check", fixture_repo(tmp_path, {"compact-nested.md": card}))
+    assert result.returncode != 0
+    assert message in result.stderr

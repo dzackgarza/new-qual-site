@@ -40,7 +40,8 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 \[
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
 \]
-::: {.proof} The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices.
+::: {.proof}
+The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices.
 Once it is chosen, the second column may be any vector not in its one-dimensional span, giving $p^2-p$ choices.
 :::
 
@@ -80,7 +81,8 @@ N_G(U)=
  a,d\in\mathbb F_p^\times,\ b\in\mathbb F_p
 \right\}.
 \]
-::: {.proof} Every nonidentity element of $U$ has the form
+::: {.proof}
+Every nonidentity element of $U$ has the form
 \[
 u_t=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad t\ne0,
 \]

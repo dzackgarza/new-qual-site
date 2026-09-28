@@ -21,7 +21,8 @@ What surface is represented by the $6\dash$gon with edges identified according t
 ::: {.solution}
 <1>1. Label the six polygon vertices cyclically $v_0,\dots,v_5$.
 The edge pairings identify all six vertices.
-::: {.proof} The two $x$-edges have the same orientation, giving $v_0\sim v_3$ and $v_1\sim v_4$.
+::: {.proof}
+The two $x$-edges have the same orientation, giving $v_0\sim v_3$ and $v_1\sim v_4$.
 The $y,y^{-1}$ pairing gives $v_1\sim v_5$ and $v_2\sim v_4$.
 The $z,z^{-1}$ pairing gives $v_2\sim v_0$ and $v_3\sim v_5$.
 These relations put every vertex in one equivalence class.

@@ -76,7 +76,8 @@ Then
 \mathfrak q\cap B=\mathfrak p
 \]
 and $\mathfrak q$ is minimal over $\mathfrak pA$.
-::: {.proof} The equality of contractions says exactly that $f(\zeta)=\eta'$.
+::: {.proof}
+The equality of contractions says exactly that $f(\zeta)=\eta'$.
 
 The inverse image of $Y'$ in $X_0$ is cut out set-theoretically by $\mathfrak pA$.
 Since $Z$ is an irreducible component of $f^{-1}(Y')$, its intersection with $X_0$ is an irreducible component of this inverse image.
@@ -135,7 +136,8 @@ and
 Z=\overline W\subseteq X,
 \]
 then $Z$ is an irreducible component of $f^{-1}(Y')$, and its generic point maps to $y$, the generic point of $Y'$.
-::: {.proof} Work on affine neighborhoods
+::: {.proof}
+Work on affine neighborhoods
 \[
 Y_0=\Spec B\ni y,
 \qquad
@@ -168,7 +170,8 @@ Thus $V(\mathfrak q)$ is an irreducible component of the inverse image of $V(\ma
 \[
 \boxed{\dim W=\dim Z-\dim Y'.}
 \]
-::: {.proof} Let $w$ be the generic point of $W$, equivalently of $Z$.
+::: {.proof}
+Let $w$ be the generic point of $W$, equivalently of $Z$.
 Since $w$ maps to the generic point $y$ of $Y'$, there is an inclusion of function fields
 \[
 K(Y')=\kappa(y)\hookrightarrow\kappa(w)=K(Z).
@@ -246,7 +249,8 @@ defines a dominant generically finite morphism
 \[
 g:X\longrightarrow X_1:=\Spec B[t_1,\ldots,t_e]\cong\mathbb A^e_Y.
 \]
-::: {.proof} By II.3.20(b),
+::: {.proof}
+By II.3.20(b),
 \[
 e
 =
@@ -277,7 +281,8 @@ such that
 U:=g^{-1}(W)\longrightarrow W
 \]
 is finite and surjective.
-::: {.proof} Hartshorne II.3.7 applied to the generically finite morphism $g$ gives a dense open $W$ such that $U\to W$ is finite.
+::: {.proof}
+Hartshorne II.3.7 applied to the generically finite morphism $g$ gives a dense open $W$ such that $U\to W$ is finite.
 
 The restriction remains dominant because $U$ and $W$ contain the generic points.  A finite morphism is closed, so its image is both closed and dense in the irreducible space $W$.  Hence its image is all of $W$.
 :::
@@ -286,7 +291,8 @@ The restriction remains dominant because $U$ and $W$ contain the generic points.
 \[
 \boxed{\dim U_y=e.}
 \]
-::: {.proof} The morphism $X_1\to Y$ is affine $e$-space.
+::: {.proof}
+The morphism $X_1\to Y$ is affine $e$-space.
 Its fibre at $y$ is
 \[
 (X_1)_y\cong\mathbb A^e_{\kappa(y)}.
@@ -318,7 +324,8 @@ Given $x\in X$, put $y=f(x)$ and choose an irreducible component of $X_y$ contai
 :::
 
 <1>12. If $h>e$, then $E_h$ is not dense in $X$.
-::: {.proof} Let $U\subseteq X$ be the dense open subset from part (c). We claim
+::: {.proof}
+Let $U\subseteq X$ be the dense open subset from part (c). We claim
 \[
 E_h\cap U=\varnothing.
 \]
@@ -344,7 +351,8 @@ Since $U$ is nonempty open, $E_h$ cannot be dense.
 :::
 
 <1>13. We prove by induction on $\dim X$ that every $E_h$ is closed.
-::: {.proof} If $\dim X=0$, every nonempty fibre component has dimension $0$, so each $E_h$ is either $X$ or $\varnothing$.
+::: {.proof}
+If $\dim X=0$, every nonempty fibre component has dimension $0$, so each $E_h$ is either $X$ or $\varnothing$.
 
 Assume the assertion for dominant morphisms whose integral source has dimension $<\dim X$.
 
@@ -383,7 +391,8 @@ Thus the induction hypothesis applies to every $f_i$.
 \[
 E_h(f)=\bigcup_{i=1}^r E_h(f_i).
 \]
-::: {.proof} Let $x\in E_h(f)$.
+::: {.proof}
+Let $x\in E_h(f)$.
 Choose an irreducible component
 \[
 Z\subseteq X_{f(x)}
@@ -410,7 +419,8 @@ Hence $x\in E_h(f)$.
 :::
 
 <1>15. Every set $E_h$ is closed.
-::: {.proof} For $h\le e$ this was already observed in <1>13. For $h>e$, the induction hypothesis makes each
+::: {.proof}
+For $h\le e$ this was already observed in <1>13. For $h>e$, the induction hypothesis makes each
 \[
 E_h(f_i)
 \]
@@ -428,7 +438,8 @@ Then
 \[
 \boxed{D_h=f(E_h).}
 \]
-::: {.proof} If $y\in D_h$, some irreducible component of $X_y$ has dimension at least $h$; any point on that component belongs to $E_h$ and maps to $y$.
+::: {.proof}
+If $y\in D_h$, some irreducible component of $X_y$ has dimension at least $h$; any point on that component belongs to $E_h$ and maps to $y$.
 
 Conversely, if $y=f(x)$ for some $x\in E_h$, the component witnessing $x\in E_h$ has dimension at least $h$, so $\dim X_y\ge h$.
 :::
@@ -451,7 +462,8 @@ is constructible.
 \boxed{C_h=D_h\setminus D_{h+1}}
 \]
 and hence $C_h$ is constructible.
-::: {.proof} A nonempty fibre has dimension exactly $h$ if and only if its dimension is at least $h$ but not at least $h+1$.
+::: {.proof}
+A nonempty fibre has dimension exactly $h$ if and only if its dimension is at least $h$ but not at least $h+1$.
 For $h\ge0$, an empty fibre belongs to neither side.
 Thus the displayed equality holds.
 
@@ -465,7 +477,8 @@ which is constructible because $f(X)$ is constructible by Hartshorne II.3.19.  F
 :::
 
 <1>19. The generic fibre $X_\eta$, where $\eta$ is the generic point of $Y$, is integral and has dimension $e$.
-::: {.proof} Work on affine neighborhoods
+::: {.proof}
+Work on affine neighborhoods
 \[
 Y_0=\Spec B,
 \qquad
@@ -500,7 +513,8 @@ Additivity of transcendence degree and II.3.20(b) for $X$ and $Y$ give
 :::
 
 <1>20. The constructible subset $C_e\subseteq Y$ contains a dense open subset of $Y$.
-::: {.proof} By <1>19, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.
+::: {.proof}
+By <1>19, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.
 Step <1>18 shows that $C_e$ is constructible.
 
 Hartshorne II.3.18(b) says that a constructible subset of an irreducible Zariski space which contains the generic point is dense and contains a nonempty open subset.  Thus $C_e$ contains an open dense subset of $Y$.

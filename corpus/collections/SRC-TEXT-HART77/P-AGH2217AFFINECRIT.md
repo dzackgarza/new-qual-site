@@ -42,7 +42,8 @@ glue to a morphism
 \[
 g:Y\longrightarrow X.
 \]
-::: {.proof} For each $i$, the restriction
+::: {.proof}
+For each $i$, the restriction
 \[
 f_i=f|_{f^{-1}(U_i)}:f^{-1}(U_i)\longrightarrow U_i
 \]

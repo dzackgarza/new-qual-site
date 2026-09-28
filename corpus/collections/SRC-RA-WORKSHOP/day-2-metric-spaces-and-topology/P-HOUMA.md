@@ -23,7 +23,8 @@ Prove that for each $x_0 \in X$, the set $\{x \in X \, \colon \,  d(x,x_0) = r\}
 :::
 ::: {.solution}
 <1>1. Fix $x_0 \in X$ and $r > 0$; the map $d_{x_0} : X \to [0, \infty)$, $x \mapsto d(x, x_0)$, is continuous.
-::: {.proof} the triangle inequality gives $|d(x, x_0) - d(y, x_0)| \le d(x, y)$.
+::: {.proof}
+the triangle inequality gives $|d(x, x_0) - d(y, x_0)| \le d(x, y)$.
 :::
 
 <1>2. $d_{x_0}$ is unbounded: for every $M$ there is $x \in X$ with $d(x, x_0) > M$.
