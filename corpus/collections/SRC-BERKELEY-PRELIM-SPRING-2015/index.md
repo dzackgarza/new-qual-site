@@ -46,5 +46,5 @@ source:
 ---
 
 ::: {.remark}
-The paper has Parts A and B; a solution packet accompanies it.
+The paper has Parts A and B.
 :::
