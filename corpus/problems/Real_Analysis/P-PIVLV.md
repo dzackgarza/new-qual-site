@@ -23,22 +23,23 @@ Prove that if $L^q(X) \subseteq L^p(X)$, then $X$ does not contain sets of arbit
 :::
 
 ::: {.solution}
-<1>1. We prove the contrapositive: if $X$ contains sets of arbitrarily large finite measure, then $L^q \not\subseteq L^p$.
+We prove the contrapositive. Assume $X$ contains measurable sets of arbitrarily large finite measure.
+
+<1>1. There are pairwise disjoint measurable $E_n$, $n \ge 1$, with $2^n \le \mu(E_n) < \infty$.
+
 ::: {.proof}
-first build pairwise disjoint measurable $E_n$ with $2^n \le \mu(E_n) < \infty$: inductively, choose a measurable $B_n$ with $\mu(B_n) \ge 2^n + \sum_{k<n} \mu(E_k)$ (possible since arbitrarily large finite sets exist), and set $E_n = B_n \setminus \cup_{k<n} E_k$; then $\mu(E_n) \ge \mu(B_n) - \sum_{k<n}\mu(E_k) \ge 2^n$.
+Inductively choose a measurable $B_n$ with $2^n + \sum_{k<n} \mu(E_k) \le \mu(B_n) < \infty$ and put $E_n = B_n \setminus \bigcup_{k<n} E_k$. Then $\mu(E_n) \ge \mu(B_n) - \sum_{k<n}\mu(E_k) \ge 2^n$, and $\mu(E_n) \le \mu(B_n) < \infty$.
 :::
-<1>2. Define $f = \sum_n \mu(E_n)^{-1/p}\chi_{E_n}$.
-<1>3. $f \in L^q$.
+
+<1>2. $f = \sum_n \mu(E_n)^{-1/p}\chi_{E_n}$ lies in $L^q \setminus L^p$.
+
 ::: {.proof}
-$\int f^q = \sum_n \mu(E_n)^{1 - q/p} \le \sum_n (2^n)^{1-q/p} < \infty$, since $q/p > 1$ makes the geometric series converge.
+The $E_n$ are disjoint, so $\int f^q = \sum_n \mu(E_n)^{1 - q/p} \le \sum_n 2^{n(1-q/p)} < \infty$ because $q/p > 1$, while $\int f^p = \sum_n 1 = \infty$.
 :::
-<1>4. $f \notin L^p$.
+
+<1>3. Q.E.D.
+
 ::: {.proof}
-$\int f^p = \sum_n \mu(E_n)^{-1}\mu(E_n) = \sum_n 1 = \infty$.
+Step <1>2 shows $L^q \not\subseteq L^p$.
 :::
-<1>5. Hence $L^q \not\subseteq L^p$, contradicting the hypothesis.
-::: {.proof}
-<1>3 and <1>4 exhibit $f \in L^q \setminus L^p$.
-:::
-<1>6. Q.E.D.
 :::
