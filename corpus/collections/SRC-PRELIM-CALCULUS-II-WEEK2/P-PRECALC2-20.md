@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-20
 kind: problem
-title: Convergence of a series with products of square roots of 3 in the denominators
+title: Convergence of $\sum_n 1/(3\sqrt{3}\sqrt[3]{3}\cdots\sqrt[n]{3})$
 classification:
   areas:
   - prelim
