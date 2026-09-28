@@ -29,5 +29,5 @@ f ( x ) = 1 + \alpha x + { \frac { \alpha ( \alpha - 1 ) } { 2 } } x ^ { 2 } + {
 $$
 
 where the empty product is 1 by convention.
-[Notice that if $\alpha \in \mathbb { N }$ , the coefficients are eventually zero; this fits our intuition because in this case f is a polynomial whose Taylor series should have a finite number of non-zero terms.]
+If $\alpha \in \mathbb{N}$, the coefficients vanish for $k > \alpha$, and the series is the binomial expansion of the polynomial $(1+x)^\alpha$.
 :::
