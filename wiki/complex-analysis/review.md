@@ -5,9 +5,6 @@ order: 7
 
 # Review sheet
 
-The theorem statements of the complex analysis chapters, grouped by chapter.
-Each section links to the chapter containing the proofs.
-
 ## Holomorphic functions
 
 [[PR-37QA5]]
@@ -30,7 +27,7 @@ Each section links to the chapter containing the proofs.
 
 [[T-NRSFZ]]
 
-Proved in [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
+See [[complex-analysis/holomorphic-functions/index|Holomorphic functions]].
 
 ## Cauchy theory
 
@@ -60,7 +57,7 @@ Proved in [[complex-analysis/holomorphic-functions/index|Holomorphic functions]]
 
 [[T-Q3GGF]]
 
-Proved in [[complex-analysis/cauchy-theory/index|Cauchy theory]].
+See [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 ## Singularities
 
@@ -76,7 +73,7 @@ Proved in [[complex-analysis/cauchy-theory/index|Cauchy theory]].
 
 [[T-DDOWW]]
 
-Proved in [[complex-analysis/singularities/index|Singularities]].
+See [[complex-analysis/singularities/index|Singularities]].
 
 ## Residues and contours
 
@@ -86,7 +83,7 @@ Proved in [[complex-analysis/singularities/index|Singularities]].
 
 [[T-ZO5UU]]
 
-Proved in [[complex-analysis/residues-and-contours/index|Residues and contours]]. The integrals themselves are on [[complex-analysis/standard-integrals|Standard integrals]].
+See [[complex-analysis/residues-and-contours/index|Residues and contours]]. Evaluated integrals are on [[complex-analysis/standard-integrals|Standard integrals]].
 
 ## Counting zeros
 
@@ -98,7 +95,7 @@ Proved in [[complex-analysis/residues-and-contours/index|Residues and contours]]
 
 [[T-FZWEC]]
 
-Proved in [[complex-analysis/counting-zeros/index|Counting zeros]].
+See [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 ## Conformal maps
 
@@ -118,9 +115,9 @@ Proved in [[complex-analysis/counting-zeros/index|Counting zeros]].
 
 [[T-4MDS6]]
 
-Proved in [[complex-analysis/conformal-maps/index|Conformal maps]].
+See [[complex-analysis/conformal-maps/index|Conformal maps]].
 
 ## Hypotheses and counterexamples
 
 [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]] compares the hypotheses of Liouville's theorem, the maximum modulus principle, the open mapping theorem, and the identity principle.
-[[complex-analysis/counterexamples|Counterexamples]] gives, for each hypothesis, a function showing that the theorem fails without it.
+[[complex-analysis/counterexamples|Counterexamples]] gives functions for which Liouville's theorem, the identity principle, the maximum and minimum modulus principles, and the Riemann mapping theorem fail when one hypothesis is dropped.
