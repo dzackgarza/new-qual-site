@@ -24,16 +24,16 @@ audit:
 ---
 
 ::: {.problem}
-Let \(A,B\) be complex square matrices of the same size.
+Let $A,B$ be complex square matrices of the same size.
 Prove or disprove each assertion:
 
-1. If \(A\) and \(B\) are diagonalizable, then \(A+B\) is diagonalizable.
+1. If $A$ and $B$ are diagonalizable, then $A+B$ is diagonalizable.
 
-2. If \(A\) and \(B\) are diagonalizable, then \(AB\) is diagonalizable.
+2. If $A$ and $B$ are diagonalizable, then $AB$ is diagonalizable.
 
-3. If \(A^2=A\), then \(A\) is diagonalizable.
+3. If $A^2=A$, then $A$ is diagonalizable.
 
-4. If \(AB\) is diagonalizable and invertible, then \(BA\) is diagonalizable.
+4. If $AB$ is diagonalizable and invertible, then $BA$ is diagonalizable.
 :::
 
 ::: {.solution}
