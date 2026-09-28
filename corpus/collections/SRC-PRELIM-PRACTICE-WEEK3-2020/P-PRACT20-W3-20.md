@@ -27,5 +27,5 @@ $$
 1 = 2 \lambda x , ~ 0 = 2 \lambda y , ~ 4 = 2 \lambda z .
 $$
 
-Plugging these into the constrant gives $\scriptstyle { \frac { 1 } { 4 \lambda ^ { 2 } } } + { \frac { 4 } { \lambda ^ { 2 } } } = 2$ so $\lambda ^ { 2 } = 1 7 / 8$ . Since f is increasing in both x and z, we take the negative roots and find that f is minimized along the curve at $( - \sqrt { 2 / 1 7 } , 0 , - \sqrt { 3 2 / 1 7 } )$
+Plugging these into the constraint gives $\frac{1}{4\lambda^2} + \frac{4}{\lambda^2} = 2$, so $\lambda^2 = 17/8$. The two critical points are $\pm(\sqrt{2/17}, 0, \sqrt{32/17})$, where $f = \pm\sqrt{34}$; the minimum is attained at $( - \sqrt { 2 / 1 7 } , 0 , - \sqrt { 3 2 / 1 7 } )$
 :::
