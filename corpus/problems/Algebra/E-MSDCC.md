@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MSDCC
 kind: problem
-title: On subgroups
+title: Intersections, unions, and products of subgroups
 classification:
   areas:
   - algebra
