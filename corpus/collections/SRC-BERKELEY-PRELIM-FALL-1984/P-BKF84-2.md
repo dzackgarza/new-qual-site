@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF84-2
 kind: problem
-title: Differentiate a matrix power and its trace
+title: Derivatives of $(A+tB)^k$ and $\operatorname{tr}(A+tB)^k$ at $t=0$
 classification:
   areas: [prelim]
   topics: []
