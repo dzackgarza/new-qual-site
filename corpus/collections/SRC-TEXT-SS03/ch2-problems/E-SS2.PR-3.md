@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.PR-3
 kind: problem
-title: "SS 2.PR-3: Morera's theorem for circles and toy contours"
+title: Morera's theorem for circles and toy contours
 classification:
   areas:
   - complex-analysis
@@ -49,21 +49,27 @@ where the integral denotes the usual integral of functions of two variables, wit
 :::
 
 ::: {.solution}
-**Goal:** Prove holomorphicity from the circle or toy-contour vanishing-integral hypothesis.
+<1>1. If $f$ is $C^2$ and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorphic.
 
-<1>1. Part (a), smooth reduction: *Proof:*\
-If $f$ is $C^2$ near $z_0$, write \[ f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(|z-z_0|^2). \] Integrating on circles around $z_0$, the constant and linear holomorphic terms contribute zero, while \[ \int_{|z-z_0|=r}\overline{(z-z_0)}\,dz=2\pi i r^2\neq0. \] Since these integrals vanish by hypothesis, $b=0$ and $\partial f/\partial\overline z(z_0)=0$.
-As $z_0$ was arbitrary, $f$ is holomorphic.
+::: {.proof}
+Near $z_0$ write $f(z)=f(z_0)+a(z-z_0)+b\,\overline{(z-z_0)}+O(|z-z_0|^2)$ with $b=\partial f/\partial\overline z(z_0)$. On $\abs{z-z_0}=r$ the constant and $a(z-z_0)$ integrate to $0$, the error term integrates to $O(r^3)$, and $\int_{|z-z_0|=r}\overline{(z-z_0)}\,dz=2\pi i r^2$. Hence $0=2\pi i b r^2+O(r^3)$, so $b=0$. As $z_0$ is arbitrary, $\partial f/\partial\overline z=0$ and $f$ is holomorphic.
+:::
 
-<1>2. Part (a), continuous case: *Proof:*\
-For smooth mollifier $\varphi_\epsilon$, define \[ f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\varphi_\epsilon(w)\,dV(w). \] Each $f_\epsilon$ is smooth and converges uniformly to $f$ on compacts.
-The integral hypothesis on circles is preserved under convolution, so $f_\epsilon$ satisfies (16). Applying <1> gives holomorphicity of $f_\epsilon$.
-Uniform compact convergence of $f_\epsilon\to f$ implies $f$ is holomorphic.
+<1>2. (a) If $f$ is continuous and $\int_C f\,dz=0$ for every circle $C$, then $f$ is holomorphic.
 
-<1>3. Part (b), toy contours: *Proof:*\
-If $\int_\gamma f\,dz=0$ for every $\gamma\in\mathcal F$, then the same hold for each translate/dilate of $\Gamma$ and therefore for their circles used in the mollifier argument.
-The same approximation as in <2> applies; thus $f$ is holomorphic.
+::: {.proof}
+With $\varphi_\epsilon$ as in the hint, $f_\epsilon(z)=\int_{\mathbb R^2}f(z-w)\varphi_\epsilon(w)\,dV(w)$ is smooth, and $f_\epsilon\to f$ uniformly on compact sets. For a circle $C$, Fubini's theorem gives $\int_C f_\epsilon\,dz=\int_{\mathbb R^2}\bigl(\int_{C-w}f\,dz\bigr)\varphi_\epsilon(w)\,dV(w)=0$, since $C-w$ is again a circle. By step <1>1 each $f_\epsilon$ is holomorphic, and a locally uniform limit of holomorphic functions is holomorphic.
+:::
 
-<1>4. Equilateral triangle corollary: *Proof:*\
-Choosing $\Gamma$ to be an equilateral triangle, $\mathcal F$ is all equilateral triangles in the plane, so the conclusion is the stated weaker Morera form.
+<1>3. (b) If $\int_\gamma f\,dz=0$ for all translates and dilates $\gamma$ of a toy contour $\Gamma$, then $f$ is holomorphic.
+
+::: {.proof}
+If $\int_\gamma f\,dz=0$ for every $\gamma\in\mathcal F$, then the same holds for each translate and dilate of $\Gamma$ and therefore for the circles used in the mollifier argument, and the approximation in step <1>2 applies.
+:::
+
+<1>4. Morera's theorem holds when $\int_T f\,dz=0$ is assumed only for equilateral triangles $T$.
+
+::: {.proof}
+Take $\Gamma$ to be an equilateral triangle; then $\mathcal F$ consists of the equilateral triangles with the orientation of $\Gamma$, and step <1>3 applies.
+:::
 :::
