@@ -63,7 +63,6 @@ is even, whereas the coefficient of $x$ in $x\in I$ is $1$.
 Thus no generator exists.
 
 The same leading-coefficient argument shows that $\mathbb Z[x]$
-is an integral domain. Its failure here is precisely the existence
-of the nonprincipal ideal $I$, not the domain condition.
+is an integral domain.
 :::
 :::
