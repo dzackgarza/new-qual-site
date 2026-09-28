@@ -32,17 +32,12 @@ audit:
 Show that given $\pi: X \rightarrow Y$, $Y$ is integrally closed in $K(X)$ over $K(Y)$ if and only if $\OO_{Y} \rightarrow \pi_{*} \OO_{X}$ is an isomorphism (i.e., $\pi$ is $\OO$-connected).
 :::
 
-::: {.remark}
-The statement leaves its hypotheses implicit; it is meant for integral Noetherian schemes $X$ and $Y$ with $\pi$ proper and dominant, so that $K(Y) \subseteq K(X)$, and with $Y$ integrally closed in $K(X)$ meaning that $\OO_Y(V)$ is integrally closed in $K(X)$ for every affine open $V \subseteq Y$.
-The implication from $\OO_Y \cong \pi_* \OO_X$ to integral closedness needs $X$ normal.
-Let $Y$ be the cuspidal cubic $V(y^2 - x^3)$ and $\pi = \id_Y$.
-Then $\OO_Y \to \pi_* \OO_X$ is an isomorphism, but $t = y/x \in K(Y)$ satisfies $t^2 = x$, so it is integral over $\OO_Y$ and does not lie in $\OO_Y$.
-:::
-
 ::: {.solution}
-Assume the corrected hypotheses recorded in the remark: $X$ and $Y$ are
+Assume that $X$ and $Y$ are
 integral Noetherian schemes, $\pi:X\to Y$ is proper and dominant, and
-$X$ is normal. Dominance gives an inclusion
+$X$ is normal. Say that $Y$ is integrally closed in $K(X)$ if
+$\OO_Y(V)$ is integrally closed in $K(X)$ for every affine open
+$V\subseteq Y$. Dominance gives an inclusion
 $$
 K(Y)\subseteq K(X).
 $$
@@ -212,10 +207,10 @@ $$
 A=\overline A^{\,K(X)}.
 $$
 Since this holds on every affine open, $Y$ is integrally closed in
-$K(X)$ in the sense fixed in the remark.
+$K(X)$.
 :::
 
-<1>7. Under the corrected hypotheses,
+<1>7. Under these hypotheses,
 $$
 \boxed{
 Y\text{ is integrally closed in }K(X)
@@ -232,8 +227,13 @@ implication.
 <1>8. Q.E.D.
 
 ::: {.proof}
-Step <1>7 is the corrected equivalence. The counterexample in the existing
-remark explains why normality of $X$ cannot simply be omitted from the
-reverse implication.
+Step <1>7 is the asserted equivalence.
 :::
+:::
+
+::: {.remark}
+The problem states no hypotheses on $X$, $Y$, or $\pi$. The solution assumes $X$ and $Y$ integral Noetherian, $\pi$ proper and dominant, so that $K(Y) \subseteq K(X)$, and $X$ normal.
+The implication from $\OO_Y \cong \pi_* \OO_X$ to integral closedness fails without normality of $X$.
+Let $Y$ be the cuspidal cubic $V(y^2 - x^3)$ and $\pi = \id_Y$.
+Then $\OO_Y \to \pi_* \OO_X$ is an isomorphism, but $t = y/x \in K(Y)$ satisfies $t^2 = x$, so it is integral over $\OO_Y$ and does not lie in $\OO_Y$.
 :::
