@@ -26,67 +26,31 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Center of $\operatorname{GL}_n(\mathbb{F}_p)$ consists of scalar matrices:
-<2>1. Let $A = (a_{ij}) \in Z(\operatorname{GL}_n(\mathbb{F}_p))$.
-For any distinct indices $i \neq j$, consider the elementary transvection matrix $T_{ij} = I_n + e_{ij}$, where $e_{ij}$ has a 1 in position $(i, j)$ and 0 elsewhere.
-Since $\det(T_{ij}) = 1$, $T_{ij} \in \operatorname{GL}_n(\mathbb{F}_p)$ (and in fact $T_{ij} \in \operatorname{SL}_n(\mathbb{F}_p)$).
+For $i\neq j$ let $e_{ij}$ be the matrix unit and $T_{ij}=I_n+e_{ij}$, a transvection with $\det T_{ij}=1$, so $T_{ij}\in\SL_n(\FF_p)\subseteq\GL_n(\FF_p)$.
+
+<1>1. A matrix $A=(a_{k\ell})$ commuting with every $T_{ij}$ is scalar.
+
 ::: {.proof}
-elementary transvections have unit determinant.
-:::
-<2>2. Since $A$ commutes with $T_{ij}$:
-\[
-A(I_n + e_{ij}) = (I_n + e_{ij})A \implies A e_{ij} = e_{ij} A.
-\]
-::: {.proof}
-cancellation of $A$.
-:::
-<2>3. Compute entries of both matrix products:
-- The $(k, \ell)$-entry of $A e_{ij}$ is $a_{ki} \delta_{j\ell}$.
-- The $(k, \ell)$-entry of $e_{ij} A$ is $\delta_{ki} a_{j\ell}$.
-Equating the entries:
-- For $k \neq i$ and $\ell = j$: $a_{ki} = 0$. Thus all off-diagonal entries of $A$ vanish, so $A = \operatorname{diag}(a_{11}, \dots, a_{nn})$ is diagonal.
-- For $k = i$ and $\ell = j$: $a_{ii} = a_{jj}$. Thus all diagonal entries are equal.
-::: {.proof}
-matrix entry comparisons.
-:::
-<2>4. Therefore $A = \lambda I_n$ for some scalar $\lambda \in \mathbb{F}_p^\times$.
-Since every scalar matrix commutes with all matrices, $Z(\operatorname{GL}_n(\mathbb{F}_p)) = \{\lambda I_n \mid \lambda \in \mathbb{F}_p^\times\} \cong \mathbb{F}_p^\times$.
-::: {.proof}
-scalar matrices form the full center.
+$AT_{ij}=T_{ij}A$ gives $Ae_{ij}=e_{ij}A$.
+The $(k,\ell)$ entries are $a_{ki}\delta_{j\ell}$ and $\delta_{ki}a_{j\ell}$.
+Taking $\ell=j$ and $k\neq i$ gives $a_{ki}=0$; taking $k=i$, $\ell=j$ gives $a_{ii}=a_{jj}$.
+As $i\neq j$ vary, $A$ is diagonal with equal diagonal entries.
 :::
 
-<1>2. Center of $\operatorname{SL}_n(\mathbb{F}_p)$ consists of scalar matrices:
-<2>1. Every elementary transvection $T_{ij} = I_n + e_{ij}$ has determinant $\det(T_{ij}) = 1$, so $T_{ij} \in \operatorname{SL}_n(\mathbb{F}_p)$ for all $i \neq j$.
+<1>2. $Z(\GL_n(\FF_p))=\{\lambda I_n:\lambda\in\FF_p^\times\}$.
+
 ::: {.proof}
-determinant of transvection is 1.
-:::
-<2>2. If $A \in Z(\operatorname{SL}_n(\mathbb{F}_p))$, $A$ must commute with all $T_{ij}$ ($i \neq j$).
-The exact derivation in <1>1 (<2>2 and <2>3) shows that $A = \zeta I_n$ for some scalar $\zeta \in \mathbb{F}_p^\times$.
-::: {.proof}
-identical transvection commutation argument inside $\operatorname{SL}_n(\mathbb{F}_p)$.
+A central element commutes with every $T_{ij}$, so it is scalar by step <1>1, and every invertible scalar matrix is central.
 :::
 
-<1>3. Characterization of the scalars $\zeta \in Z(\operatorname{SL}_n(\mathbb{F}_p))$:
-<2>1. A scalar matrix $\zeta I_n$ belongs to $\operatorname{SL}_n(\mathbb{F}_p)$ if and only if its determinant is 1:
-\[
-\det(\zeta I_n) = \zeta^n = 1.
-\]
+<1>3. $Z(\SL_n(\FF_p))=\{\zeta I_n:\zeta\in\FF_p,\ \zeta^n=1\}\cong\ZZ/\gcd(n,p-1)\ZZ$.
+
 ::: {.proof}
-determinant of scalar matrix is $\zeta^n$.
+A central element of $\SL_n(\FF_p)$ commutes with every $T_{ij}\in\SL_n(\FF_p)$, so it is scalar by step <1>1; the scalar matrix $\zeta I_n$ lies in $\SL_n(\FF_p)$ exactly when $\det(\zeta I_n)=\zeta^n=1$, and it is then central.
+The solutions of $\zeta^n=1$ in the cyclic group $\FF_p^\times$ of order $p-1$ form its subgroup of order $\gcd(n,p-1)$.
 :::
-<2>2. Moreover, by Fermat's Little Theorem, every $\zeta \in \mathbb{F}_p^\times$ satisfies $\zeta^{p-1} = 1$.
-Therefore $\zeta$ is a root of unity in $\mathbb{F}_p^\times$ whose order divides $\gcd(n, p - 1)$.
-The center is:
-\[
-Z(\operatorname{SL}_n(\mathbb{F}_p)) = \{\zeta I_n \mid \zeta \in \mathbb{F}_p^\times, \, \zeta^n = 1\} \cong \mu_n(\mathbb{F}_p) \cong \mathbb{Z}_{\gcd(n, p-1)}.
-\]
-::: {.proof}
-roots of $x^n - 1$ in the cyclic group $\mathbb{F}_p^\times \cong \mathbb{Z}_{p-1}$.
 :::
 
-<1>4. Conclusion:
-Both centers consist precisely of scalar matrices, and $Z(\operatorname{SL}_n(\mathbb{F}_p)) \cong \mu_n(\mathbb{F}_p)$ is the group of $n$-th roots of unity in $\mathbb{F}_p$. Q.E.D.
-::: {.proof}
-<1>1 through <1>3.
-:::
+::: {.remark}
+The scalars in $Z(\SL_n(\FF_p))$ are the $n$th roots of unity in $\FF_p$, $\zeta^n=1$. The condition $\zeta^p=1$ in the statement holds only for $\zeta=1$, since $\zeta^p=\zeta$ for every $\zeta\in\FF_p$.
 :::
