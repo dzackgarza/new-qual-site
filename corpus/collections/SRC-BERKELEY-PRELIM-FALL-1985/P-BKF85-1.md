@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF85-1
 kind: problem
-title: Evaluate an integral involving $1-\cos(ax)$
+title: The integral $\int_0^\infty\frac{1-\cos(ax)}{x^2}\,dx$
 classification:
   areas: [prelim]
   topics: []
