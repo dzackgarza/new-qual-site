@@ -129,8 +129,6 @@ $n=5$ and general $n$:
 \envlist
 
 - A permutation lies in $A_n$ if and only if it has an even number of cycles of even length.
-
-- $A_4$ contains no transposition and no $4$-cycle.
 :::
 
 ::: {.fact title="Subgroups of $S_4$"}
