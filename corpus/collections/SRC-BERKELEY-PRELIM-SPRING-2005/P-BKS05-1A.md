@@ -27,13 +27,13 @@ audit:
 ---
 
 ::: {.problem}
-(a) Let $( a _ { n } ) _ { 1 } ^ { \infty }$ be a sequence in R such that
+(a) Let $(a_n)_1^\infty$ be a sequence in $\RR$ such that
 
 $$
-\sum _ { n = 1 } ^ { \infty } \left| a _ { n + 1 } - a _ { n } \right| < \infty .
+\sum_{n=1}^\infty\abs{a_{n+1}-a_n}<\infty.
 $$
 
-Prove that $( a _ { n } ) _ { 1 } ^ { \infty }$ is a Cauchy sequence.
+Prove that $(a_n)_1^\infty$ is a Cauchy sequence.
 
 (b) Is the converse true?
 Give a proof or a counterexample.
