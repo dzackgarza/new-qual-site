@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.PR-1
 kind: problem
-title: "Here are some examples of analytic functions on the unit disc that cannot be ext"
+title: Natural boundaries of lacunary series and growth of $\sum d(n)z^n$
 classification:
   areas:
   - complex-analysis
@@ -65,79 +65,37 @@ $$
 :::
 
 ::: {.solution}
-**Part 1(a).**
+Throughout, a dyadic point is $e^{i\theta}$ with $\theta = 2\pi p / 2^k$, $p,k$ positive integers; dyadic points are dense in $C$. The set of regular points of a function on $\mathbb D$ is open in $C$, so if it contains no dyadic point, it is empty.
 
-<1>1. Let $\theta = 2\pi p / 2^k$ and $z = re^{i\theta}$.
+<1>1. (1a) $f(z)=\sum_{n\ge0} z^{2^n}$ cannot be continued analytically past $C$.
+
 ::: {.proof}
-take a dyadic rational angle.
+Let $\theta = 2\pi p / 2^k$. For $n \ge k$, $2^n\theta$ is a multiple of $2\pi$, so $(re^{i\theta})^{2^n} = r^{2^n}$ and
+$$f(re^{i\theta}) = \sum_{n=0}^{k-1} (re^{i\theta})^{2^n} + \sum_{n=k}^{\infty} r^{2^n}.$$
+Each term of the second sum tends to $1$ as $r\to1^-$, and the terms are nonnegative, so the second sum tends to $\infty$; hence $\abs{f(re^{i\theta})}\to\infty$. A function regular at a boundary point is bounded near it, so no dyadic point is regular, and no point of $C$ is regular.
 :::
 
-<1>2. For $n \ge k$, $z^{2^n} = r^{2^n} e^{i 2^n \theta} = r^{2^n} e^{i 2\pi p 2^{n-k}} = r^{2^n}$.
+<1>2. (1b) $f(z)=\sum_{n\ge0} 2^{-n\alpha} z^{2^n}$ extends continuously to $\overline{\mathbb D}$ and cannot be continued analytically past $C$.
+
 ::: {.proof}
-$2^n \theta = 2\pi p 2^{n-k}$ is an integer multiple of $2\pi$.
+Since $\sum 2^{-n\alpha} < \infty$, the Weierstrass $M$-test shows that the series converges uniformly on $\overline{\mathbb D}$, so $f$ extends continuously. At a dyadic angle $\theta = 2\pi p/2^k$, the tail $\sum_{n\ge k} 2^{-n\alpha} r^{2^n}$ has $r$-derivative tending to $\infty$ as $r \to 1^-$, so $f$ is not differentiable at $e^{i\theta}$; since the dyadic points are dense and the boundary values form a nowhere-differentiable function, no point of $C$ is regular.
 :::
 
-<1>3. Hence $f(re^{i\theta}) = \sum_{n=0}^{k-1} z^{2^n} + \sum_{n=k}^{\infty} r^{2^n}$, and the second sum diverges to $\infty$ as $r \to 1^-$.
+<1>3. (2) $\sum_{n\ge1} d(n) z^n = \sum_{n\ge1} \frac{z^n}{1 - z^n}$ for $\abs z<1$.
+
 ::: {.proof}
-the tail $\sum_{n=k}^{\infty} r^{2^n}$ is a sum of nonnegative terms tending to $1$, so it diverges.
+By the geometric series, $\frac{z^n}{1 - z^n} = \sum_{k\ge1} z^{kn}$. The double series converges absolutely, and the coefficient of $z^m$ in $\sum_n\sum_k z^{kn}$ is the number of pairs $(n,k)$ with $kn = m$, which is $d(m)$.
 :::
 
-<1>4. Therefore $|f(re^{i\theta})| \to \infty$ as $r \to 1^-$.
+<1>4. (2) $F(r) \ge c \frac{1}{1-r}\log\frac{1}{1-r}$ as $r \to 1^-$.
+
 ::: {.proof}
-<1>3.
+All terms of $F(r) = \sum_{n} \frac{r^n}{1-r^n}$ are positive. Using $1 - r^n \le n(1-r)$ and keeping the terms with $n \le N$, where $N$ is the integer part of $\frac{1}{1-r}$, gives $F(r)\ge\frac{r^N}{1-r}\sum_{n\le N}\frac1n$. Since $r^N$ is bounded below by a positive constant as $r\to1^-$ and $\sum_{n\le N}\frac1n\ge\log N$, this is at least $c \frac{1}{1-r}\log\frac{1}{1-r}$.
 :::
 
-<1>5. Hence no point $e^{i\theta}$ with $\theta$ a dyadic rational multiple of $2\pi$ is regular for $f$.
-::: {.proof}
-a function regular at a boundary point is bounded in a neighborhood of it, but <1>4 shows $f$ is unbounded near every such point.
-:::
+<1>5. (2) For $\theta = 2\pi p/q$, $\abs{F(re^{i\theta})} \ge c_{p/q}\frac{1}{1-r}\log\frac{1}{1-r}$ as $r\to1^-$.
 
-<1>6. The dyadic rational points are dense in the unit circle, so no point of $C$ is regular.
 ::: {.proof}
-the set of regular points is open, and it contains no dyadic rational point (<1>5), so it is empty.
-:::
-
-<1>7. Hence $f$ cannot be continued analytically past the unit circle.
-::: {.proof}
-<1>6.
-:::
-
-**Part 1(b).**
-
-<1>1. $f(z) = \sum_{n=0}^{\infty} 2^{-n\alpha} z^{2^n}$ converges uniformly on $\bar\DD$ (since $\sum 2^{-n\alpha} < \infty$), so $f$ extends continuously to the unit circle.
-::: {.proof}
-the Weierstrass $M$-test with $M_n = 2^{-n\alpha}$.
-:::
-
-<1>2. $f$ cannot be continued analytically past the unit circle.
-::: {.proof}
-the same argument as part (a): at a dyadic angle $\theta = 2\pi p/2^k$, the tail $\sum_{n=k}^{\infty} 2^{-n\alpha} r^{2^n}$ has derivative (with respect to $r$) tending to $\infty$ as $r \to 1^-$, so $f$ is not differentiable at $e^{i\theta}$; since the dyadic points are dense and the boundary values form a nowhere-differentiable (Weierstrass-type) function, no point of $C$ is regular.
-:::
-
-**Part 2.**
-
-<1>1. $\sum_{n=1}^{\infty} d(n) z^n = \sum_{n=1}^{\infty} \frac{z^n}{1 - z^n}$.
-<2>1. $\frac{z^n}{1 - z^n} = \sum_{k=1}^{\infty} z^{kn}$.
-::: {.proof}
-geometric series.
-:::
-<2>2. Hence $\sum_{n=1}^{\infty} \frac{z^n}{1-z^n} = \sum_{n=1}^{\infty} \sum_{k=1}^{\infty} z^{kn} = \sum_{m=1}^{\infty} d(m) z^m$.
-::: {.proof}
-the coefficient of $z^m$ counts the pairs $(n,k)$ with $kn = m$, i.e. the number $d(m)$ of divisors of $m$.
-:::
-
-<1>3. For $z = r$ with $0 < r < 1$, $|F(r)| \ge c \frac{1}{1-r}\log\frac{1}{1-r}$ as $r \to 1$.
-::: {.proof}
-$F(r) = \sum_{n} \frac{r^n}{1-r^n} \ge \sum_{n \le N} \frac{r^n}{1-r^n}$; taking $N \approx \frac{1}{1-r}$ and using $1 - r^n \le n(1-r)$ gives the lower bound $c \frac{1}{1-r}\log\frac{1}{1-r}$.
-:::
-
-<1>4. The same lower bound holds for $z = re^{i\theta}$ with $\theta = 2\pi p/q$.
-::: {.proof}
-for $n$ a multiple of $q$, $z^n = r^n$, so the same estimate applies to the subsequence of multiples of $q$, giving $|F(re^{i\theta})| \ge c_{p/q}\frac{1}{1-r}\log\frac{1}{1-r}$.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>7 (1a), <1>2 (1b), and <1>1, <1>3, <1>4 (2).
+For $n$ a multiple of $q$, $(re^{i\theta})^n = r^n$, so the estimate of step <1>4 applies to the terms with $q\mid n$.
 :::
 :::
