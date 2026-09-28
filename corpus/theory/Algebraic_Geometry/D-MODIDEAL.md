@@ -24,21 +24,22 @@ prompts:
 
 ::: {.definition title="Ideal sheaf"}
 For a closed immersion $i: Z \injects X$, the \dfn{ideal sheaf} is
-\[
+$$
 \mci_Z \da \ker\qty{\OO_X \mapsvia{i^\sharp} i_*\OO_Z} .
-\]
+$$
 :::
 
 ::: {.theorem}
 $Z \mapsto \mci_Z$ is a bijection between closed subschemes of $X$ and quasicoherent sheaves of ideals on $X$, and there is a short exact sequence
-\[
+$$
 0 \to \mci_Z \to \OO_X \to i_*\OO_Z \to 0 .
-\]
+$$
 :::
 
 ::: {.remark}
-This is the sheaf-level version of the correspondence between ideals of $A$ and closed subschemes of $\Spec A$, and quasicoherence is exactly the condition that makes the local statements glue: a non-quasicoherent subsheaf of $\OO_X$ is not cut out by equations.
+On $X=\Spec A$, the bijection sends $V(I)$ to $\tilde I$ for ideals $I\subseteq A$.
+A sheaf of ideals that is not quasicoherent is the ideal sheaf of no closed subscheme: for $X=\AA^1_k$, $U=X\sm\ts{0}$, and $j\colon U\injects X$ the inclusion, the extension by zero $j_!\OO_U\subseteq\OO_X$ is a sheaf of ideals with $\Gamma(X,j_!\OO_U)=0$ and $j_!\OO_U|_U=\OO_U$, so it is not quasicoherent.
 
-Twisting it by $\OO(d)$ and taking cohomology is how one computes $h^0$ of a hypersurface or a curve in $\PP^n$ from the ambient space, since $\mci_Z = \OO_{\PP^n}(-d)$ when $Z$ is a degree-$d$ hypersurface.
-Restricting it to $Z$ produces the conormal sheaf $\mci_Z/\mci_Z^2$, which is where the sequence meets [differentials](wiki/algebraic-geometry/sheaves-of-modules/differentials.html).
+For a hypersurface $Z\subseteq\PP^n$ of degree $d$, $\mci_Z \cong \OO_{\PP^n}(-d)$, and for $n\ge2$ the twisted sequence $0\to\OO(m-d)\to\OO(m)\to\OO_Z(m)\to0$ gives $h^0(\OO_Z(m))=h^0(\OO_{\PP^n}(m))-h^0(\OO_{\PP^n}(m-d))$, since $H^1(\PP^n,\OO(m-d))=0$.
+The restriction $i^*\mci_Z=\mci_Z/\mci_Z^2$ is the conormal sheaf of $Z$ ([[D-MODCONORM]]).
 :::
