@@ -58,7 +58,7 @@ B_i\subset A_i.
 
 (c) If \(A\ne\varnothing\), choose \(x\in A\). Then \(x_i\in A_i\) for every \(i\), so every \(A_i\) is nonempty.
 
-The converse is a choice statement: from the mere nonemptiness of all \(A_i\), producing one element of \(\prod_iA_i\) requires choosing one element from each \(A_i\). For a countable family this is the countable axiom of choice. Thus the converse holds under the usual axiom of choice, but it is not a consequence of the preceding elementary set-theoretic results alone; this is the issue revisited in §19.
+The converse is a choice statement: from the mere nonemptiness of all \(A_i\), producing one element of \(\prod_iA_i\) requires choosing one element from each \(A_i\). For a countable family this is the countable axiom of choice. Thus the converse holds under the axiom of choice; it is not provable in ZF set theory without some form of choice.
 
 (d) If \(x\in A\cup B\), then either \(x_i\in A_i\) for all \(i\) or \(x_i\in B_i\) for all \(i\). In either case \(x_i\in A_i\cup B_i\) for every \(i\), hence
 \[
