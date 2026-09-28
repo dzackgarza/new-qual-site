@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85S-12
 kind: problem
-title: Evaluate the Euler beta integral $\int_0^\infty x^{\alpha-1}/(1+x)\,dx$
+title: The Euler beta integral $\int_0^\infty x^{\alpha-1}/(1+x)\,dx$
 classification:
   areas: [prelim]
   topics: []
