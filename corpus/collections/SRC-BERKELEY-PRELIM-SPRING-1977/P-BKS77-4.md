@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS77-4
 kind: problem
-title: Prove the Fundamental Theorem of Algebra
+title: Fundamental theorem of algebra
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
