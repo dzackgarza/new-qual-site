@@ -30,29 +30,32 @@ is connected.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the complement of a product of proper subsets in a product of connected spaces, $Z = (X \times Y) \setminus (A \times B)$, is connected.
+Let $Z=(X\times Y)-(A\times B)$, and choose $x_0\in X-A$ and $y_0\in Y-B$. A union of connected subspaces with a point in common is connected.
 
-<1>1. Selection of basepoint $(x_0, y_0)$:
-    Since $A \subsetneq X$ and $B \subsetneq Y$ are proper subsets, there exist points $x_0 \in X \setminus A$ and $y_0 \in Y \setminus B$.
+<1>1. For $x\in X-A$ the slice $\{x\}\times Y$, and for $y\in Y-B$ the slice $X\times\{y\}$, is a connected subset of $Z$.
 
-<1>2. Connected slices in $Z$:
-    1. For every $x \in X \setminus A$, the vertical slice $V_x = \{x\} \times Y$ is homeomorphic to $Y$, hence connected, and satisfies $V_x \subseteq Z$.
-    2. For every $y \in Y \setminus B$, the horizontal slice $H_y = X \times \{y\}$ is homeomorphic to $X$, hence connected, and satisfies $H_y \subseteq Z$.
-    *Proof:*
-    <2>1. If $x \notin A$, then for all $y \in Y$, $(x, y) \notin A \times B$, so $\{x\} \times Y \subseteq (X \times Y) \setminus (A \times B) = Z$.
-    <2>2. If $y \notin B$, then for all $x \in X$, $(x, y) \notin A \times B$, so $X \times \{y\} \subseteq (X \times Y) \setminus (A \times B) = Z$.
+::: {.proof}
+The slices are homeomorphic to $Y$ and $X$ by [[E-OTJ9S]], hence connected.
+If $x\notin A$, no point $(x,y)$ lies in $A\times B$; similarly if $y\notin B$.
+:::
 
-<1>3. Central connected cross $C_0$:
-    The set $C_0 = V_{x_0} \cup H_{y_0} = (\{x_0\} \times Y) \cup (X \times \{y_0\})$ is a connected subset of $Z$.
-    *Proof:* $V_{x_0}$ and $H_{y_0}$ are connected subsets of $Z$ by <1>2, and $(x_0, y_0) \in V_{x_0} \cap H_{y_0} \neq \emptyset$. The union of connected spaces with a common point is connected.
+<1>2. The cross $C_0=(\{x_0\}\times Y)\cup(X\times\{y_0\})$ is a connected subset of $Z$.
 
-<1>4. Decomposition of $Z$ into connected sets sharing $C_0$:
-    For each point $(x, y) \in Z$, $(x, y)$ belongs to a connected subset of $Z$ containing $C_0$.
-    *Proof:*
-    <2>1. If $(x, y) \in Z = (X \times Y) \setminus (A \times B)$, then either $x \in X \setminus A$ or $y \in Y \setminus B$.
-    <2>2. If $x \in X \setminus A$, then $V_x \subseteq Z$. Since $(x, y_0) \in V_x \cap H_{y_0} \subseteq V_x \cap C_0 \neq \emptyset$, the union $C_0 \cup V_x$ is connected, contains $(x, y)$, and is contained in $Z$.
-    <2>3. If $y \in Y \setminus B$, then $H_y \subseteq Z$. Since $(x_0, y) \in H_y \cap V_{x_0} \subseteq H_y \cap C_0 \neq \emptyset$, the union $C_0 \cup H_y$ is connected, contains $(x, y)$, and is contained in $Z$.
+::: {.proof}
+By step <1>1, both slices are connected subsets of $Z$, and they share $(x_0,y_0)$.
+:::
 
-<1>5. Conclusion:
-    $Z = \bigcup_{x \in X \setminus A} (C_0 \cup V_x) \cup \bigcup_{y \in Y \setminus B} (C_0 \cup H_y)$ is a union of connected subspaces of $Z$ sharing the common point $(x_0, y_0) \in C_0$. Therefore $Z$ is connected. Q.E.D.
+<1>3. Every point $(x,y)\in Z$ lies in a connected subset of $Z$ that contains $C_0$.
+
+::: {.proof}
+Since $(x,y)\notin A\times B$, either $x\notin A$ or $y\notin B$.
+If $x\notin A$, the slice $\{x\}\times Y$ meets $C_0$ at $(x,y_0)$, so $C_0\cup(\{x\}\times Y)$ is connected by step <1>1.
+If $y\notin B$, the slice $X\times\{y\}$ meets $C_0$ at $(x_0,y)$, so $C_0\cup(X\times\{y\})$ is connected.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+By step <1>3, $Z$ is a union of connected subsets that all contain $(x_0,y_0)$, so $Z$ is connected.
+:::
 :::
