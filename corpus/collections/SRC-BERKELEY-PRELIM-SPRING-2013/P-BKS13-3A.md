@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\begin{array} { r } { \int _ { 0 } ^ { \infty } x \exp ( - x ^ { 6 } ( \sin x ) ^ { 2 } ) } \end{array}$ dx is finite.
+Show that $\int_0^\infty x \exp(-x^6 (\sin x)^2)\,dx$ is finite.
 :::
 
 ::: {.solution}
