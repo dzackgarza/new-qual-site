@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-FED
 kind: problem
-title: Proof choice — small groups or simplicity of A5
+title: 'Groups of order $9$ and $10$, or simplicity of $A_5$'
 classification:
   areas:
   - algebra
