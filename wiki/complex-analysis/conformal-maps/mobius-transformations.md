@@ -25,7 +25,7 @@ Hence the signed angle between two curves through $z_0$ equals the signed angle 
 :::
 
 ::: {.fact title="Checking conformality"}
-Once holomorphy is known, it suffices to check $f'(p)\neq 0$.
+A function $f$ holomorphic at $p$ with $f'(p)\neq 0$ is conformal at $p$.
 
 :::
 
