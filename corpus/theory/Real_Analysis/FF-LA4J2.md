@@ -3,9 +3,9 @@ schema: qual/card@1
 id: FF-LA4J2
 kind: fact
 title: Carathéodory criterion for Lebesgue measurability
-slogan: 'A measurable set splits every outer measure exactly across itself and its complement.'
+slogan: 'A set $E$ is measurable exactly when, for every set $A$, the outer measure of $A$ is additive over $A\cap E$ and $A\setminus E$.'
 prompts:
-- What is the Caratheodory characterization of outer measure?
+- What is the Carathéodory criterion for Lebesgue measurability?
 classification:
   areas:
   - real-analysis
