@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-091
 kind: problem
-title: Finitely many ideals contain a nonzero ideal in a principal ideal domain
+title: A nonzero ideal of a principal ideal domain lies in only finitely many ideals
 classification:
   areas: [algebra]
   topics: []
