@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-05
 kind: problem
-title: Determine all values of $i^i$
+title: The values of the multivalued power $i^i$
 classification:
   areas:
   - prelim
