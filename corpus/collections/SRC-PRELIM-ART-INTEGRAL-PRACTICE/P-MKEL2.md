@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MKEL2
 kind: problem
-title: Evaluate $\int\frac{1}{e^x+e^{-x}}\,dx$
+title: $\int\frac{dx}{e^x+e^{-x}}$ and $\int\frac{dx}{\sqrt{e^{2x}-1}}$
 classification:
   areas:
   - prelim
