@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UOENS
 kind: problem
-title: Evaluate $\int\sin x\cos x\cot x\tan x\,dx$
+title: $\int\sin x\cos x\cot x\tan x\,dx$
 classification:
   areas:
   - prelim
@@ -37,5 +37,5 @@ so
 \int \sin x\cos x\,dx
 =\boxed{\frac12\sin^2x+C.}
 \]
-The antiderivative extends across removable singularities of the simplified expression in the usual interval-by-interval sense.
+This is an antiderivative on each open interval of the domain $\{x:\sin x\cos x\neq0\}$ of the integrand.
 :::
