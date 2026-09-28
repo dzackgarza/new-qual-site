@@ -34,5 +34,5 @@ $$
 P ( N ) ^ { 2 } = I + N + N ^ { m } Q ( N ) = I + N = A ,
 $$
 
-so $B : = P ( N )$ satisfies $B ^ { 2 } = A$ . S
+so $B : = P ( N )$ satisfies $B ^ { 2 } = A$ .
 :::
