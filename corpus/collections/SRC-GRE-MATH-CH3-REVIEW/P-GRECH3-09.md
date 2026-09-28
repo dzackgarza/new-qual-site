@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH3-09
 kind: problem
-title: Surface of revolution about the x-axis
+title: Surface of revolution about the $x$-axis
 classification:
   areas:
   - real-analysis
