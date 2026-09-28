@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-7
 kind: problem
-title: "The family of mappings introduced here plays an important role in complex analys"
+title: Blaschke factors map the unit disc bijectively onto itself
 classification:
   areas:
   - complex-analysis
@@ -61,77 +61,45 @@ satisfies the following conditions:
 :::
 
 ::: {.solution}
-**(a).**
+<1>1. (a) If $\abs z<1$ and $\abs w<1$, then $\abs{\frac{w - z}{1 - \bar w z}} < 1$; if $\abs z=1$ or $\abs w=1$, then $\abs{\frac{w - z}{1 - \bar w z}} = 1$.
 
-<1>1. We may assume $z = r$ is real (rotate so that $z$ is real, since the expression is invariant under a simultaneous rotation).
+<2>1. It suffices to treat $z = r\ge0$ real.
+
 ::: {.proof}
-the hint; a rotation $z \mapsto e^{i\theta}z$, $w \mapsto e^{i\theta}w$ preserves the modulus of $\frac{w - z}{1 - \bar w z}$.
+Replacing $(z,w)$ by $(e^{i\theta}z,e^{i\theta}w)$ multiplies $w-z$ by $e^{i\theta}$ and leaves $\bar wz$ unchanged, so it preserves $\abs{\frac{w - z}{1 - \bar w z}}$ and the hypotheses. Choose $\theta$ with $e^{i\theta}z=\abs z$.
 :::
 
-<1>2. It suffices to show $(r - w)(r - \bar w) \le (1 - rw)(1 - r\bar w)$ for $|w| < 1$, $0 \le r < 1$.
+<2>2. For $r\ge0$, $\abs{1-\bar w r}^2-\abs{w-r}^2=(1 - r^2)(1 - |w|^2)$.
+
 ::: {.proof}
-squaring both sides of $|w - r| \le |1 - \bar w r|$ (both sides are real and nonnegative).
+Expanding, $\abs{w-r}^2=(r - w)(r - \bar w)=r^2 - r(w + \bar w) + |w|^2$ and $\abs{1-\bar wr}^2=(1 - rw)(1 - r\bar w)=1 - r(w + \bar w) + r^2|w|^2$; subtract.
 :::
 
-<1>3. Expanding: $r^2 - r(w + \bar w) + |w|^2 \le 1 - r(w + \bar w) + r^2|w|^2$.
+<2>3. Q.E.D.
+
 ::: {.proof}
-<1>2, expanding both sides.
+By step <2>1 take $z=r=\abs z$. If $r<1$ and $\abs w<1$, the right side of step <2>2 is positive, so $\abs{w-r}<\abs{1-\bar wr}$. If $r=1$ or $\abs w=1$, it is zero, so $\abs{w-r}=\abs{1-\bar wr}$, and this common value is nonzero because $\bar wz\ne1$.
 :::
 
-<1>4. This is equivalent to $r^2 + |w|^2 \le 1 + r^2|w|^2$, i.e. $(1 - r^2)(1 - |w|^2) \ge 0$.
+<1>2. (b) For fixed $w\in\mathbb D$, the map $F(z) = \frac{w - z}{1 - \bar w z}$ satisfies (i)--(iv).
+
+<2>1. (i) $F$ is holomorphic on $\mathbb D$ and $F(\mathbb D)\subseteq\mathbb D$.
+
 ::: {.proof}
-<1>3, rearranging.
+For $\abs z<1$, $\abs{\bar wz}<1$, so the denominator does not vanish and $F$ is a rational function without poles in $\mathbb D$. Step <1>1 gives $\abs{F(z)}<1$.
 :::
 
-<1>5. This holds since $r < 1$ and $|w| < 1$.
+<2>2. (ii) $F(0) = w$ and $F(w) = 0$; (iii) $\abs{F(z)} = 1$ if $\abs z = 1$.
+
 ::: {.proof}
-<1>4.
+Substitution gives (ii), and step <1>1 gives (iii).
 :::
 
-<1>6. Hence $\left| \frac{w - z}{1 - \bar w z} \right| < 1$ when $|z| < 1$ and $|w| < 1$.
-::: {.proof}
-<1>2–<1>5.
-:::
+<2>3. (iv) $F\circ F = \operatorname{id}_{\mathbb D}$, so $F\colon\mathbb D\to\mathbb D$ is bijective.
 
-<1>7. If $|z| = 1$ or $|w| = 1$, then $(1 - r^2)(1 - |w|^2) = 0$, so equality holds: $\left| \frac{w - z}{1 - \bar w z} \right| = 1$.
 ::: {.proof}
-<1>4 with $r = 1$ or $|w| = 1$.
-:::
-
-**(b).**
-
-<1>1. $F(z) = \frac{w - z}{1 - \bar w z}$ is holomorphic on $\mathbb{D}$ (the denominator is nonzero since $|\bar w z| < 1$ for $|z| < 1$).
-::: {.proof}
-$F$ is a rational function with no pole in $\mathbb{D}$.
-:::
-
-<1>2. $F$ maps $\mathbb{D}$ to itself.
-::: {.proof}
-part (a) ($|F(z)| < 1$ for $|z| < 1$).
-:::
-
-<1>3. $F(0) = w$ and $F(w) = 0$.
-::: {.proof}
-direct substitution.
-:::
-
-<1>4. $|F(z)| = 1$ if $|z| = 1$.
-::: {.proof}
-part (a).
-:::
-
-<1>5. $F \circ F = \operatorname{id}$.
-::: {.proof}
-compute $F(F(z)) = \frac{w - \frac{w - z}{1 - \bar w z}}{1 - \bar w \frac{w - z}{1 - \bar w z}} = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - |w|^2)}{1 - |w|^2} = z$.
-:::
-
-<1>6. Hence $F$ is bijective (it is its own inverse).
-::: {.proof}
-<1>5.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>6, <1>7 (a) and <1>2–<1>6 (b).
+For $z\in\mathbb D$,
+$$F(F(z)) = \frac{w - \frac{w - z}{1 - \bar w z}}{1 - \bar w \frac{w - z}{1 - \bar w z}} = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - |w|^2)}{1 - |w|^2} = z.$$
+By step <2>1, $F$ maps $\mathbb D$ into itself, so $F$ is its own inverse on $\mathbb D$.
 :::
 :::
