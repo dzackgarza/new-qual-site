@@ -89,7 +89,6 @@ $$
 Restriction to $\{1,\ldots,n-1\}$ is an isomorphism
 $H_n\to S_{n-1}$: any permutation of those letters
 extends uniquely by fixing $n$. This proves part (1).
-No assertion that $f$ is inner is needed.
 :::
 
 <1>3. The only subgroups containing $H$ are $H$ and $S_n$.
