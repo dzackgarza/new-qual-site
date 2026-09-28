@@ -19,14 +19,14 @@ If $L$ is not identically zero, show that there is a $z_0\in\mathbb{D}$ so that 
 :::
 
 ::: {.solution}
-Note that if this were true, then we would have to have $L(z)=z_0$.
-So define $z_0:=L(z)$ and we want to show that $L(f)=f(z_0)$ for any $f\in A(\mathbb{D})$.
-Since we are assuming that $L$ is not identically zero, let $f$ be such that $L(f)\ne0$.
-Then because $L$ is multiplicative we can write $L(f)=L(f\cdot1)=L(f)L(1)$, so $L(1)=1$.
-This, combined with the linear and multiplicative hypotheses again, imply that $L(P)=P(z_0)$ for any polynomial $P$.
-Now let $f$ be any element of $A(\mathbb{D})$.
-We can write $f(z)-f(z_0)=(z-z_0)g(z)$ for some other $g\in A(\mathbb{D})$.
-Therefore we have $$L(f)-f(z_0) = L((z-z_0)g(z)) = (L(z)-z_0)L(g) = 0,$$ which establishes the desired result.
-The only thing left to check is that we actually have $z_0\in\mathbb{D}$.
-If not, then $1/(z-z_0)$ would be in $A(\mathbb{D})$, and so we would have $$L(1/(z-z_0)) = 1/L(z-z_0) = 1/(z_0-z_0),$$ [solution cut off at end of source page — remainder not available]
+Write $z$ for the identity function on $\mathbb D$ and set $z_0:=L(z)$.
+Since $L$ is not identically zero, choose $f$ with $L(f)\ne0$.
+Multiplicativity gives $L(f)=L(f\cdot1)=L(f)L(1)$, so $L(1)=1$.
+
+First, $z_0\in\mathbb{D}$.
+Otherwise $z-z_0$ has no zero in $\mathbb D$, so $1/(z-z_0)\in A(\mathbb{D})$ and $$1=L(1)=L\bigl((z-z_0)\cdot\tfrac1{z-z_0}\bigr)=\bigl(L(z)-z_0L(1)\bigr)\,L\bigl(\tfrac1{z-z_0}\bigr)=0,$$ a contradiction.
+
+Now let $f\in A(\mathbb{D})$.
+Since $z_0\in\mathbb D$, the function $g(z)=\dfrac{f(z)-f(z_0)}{z-z_0}$ has a removable singularity at $z_0$, so $g\in A(\mathbb{D})$ and $f-f(z_0)\cdot1=(z-z_0)g$.
+Therefore $$L(f)-f(z_0) = L\bigl((z-z_0)g\bigr) = \bigl(L(z)-z_0\bigr)L(g) = 0,$$ so $L(f)=f(z_0)$.
 :::
