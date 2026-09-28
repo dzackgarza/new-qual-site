@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12W-11
 kind: problem
-title: A quadratic annihilating polynomial for a two-by-two matrix
+title: A quadratic annihilating polynomial for a $2\times2$ matrix
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
