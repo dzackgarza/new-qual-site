@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-17
 kind: problem
-title: Faithful action of $SL_2(\mathbb F_4)$ on the projective line over $\mathbb F_4$
+title: Faithful action of $SL_2(\FF_4)$ on the projective line over $\FF_4$
 classification:
   areas:
   - prelim
