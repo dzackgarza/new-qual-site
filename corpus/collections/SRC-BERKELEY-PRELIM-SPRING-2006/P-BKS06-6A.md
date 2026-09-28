@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-6A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 6A
+title: Bounded quadratic variation implies at most countably many discontinuities
 classification:
   areas: [prelim]
   topics: []
