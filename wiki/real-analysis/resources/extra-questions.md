@@ -5,10 +5,9 @@ order: 710
 
 # Extra questions
 
-Problems from the UNL real analysis workshop packet [[SRC-RA-WORKSHOP]], taken from a TeX file of workshop solutions.
-The May 2016 qualifying exam problems are Day 1 of the packet, which is the collection [[SRC-UNL-RA-SUMMER-2016]].
-The remaining headings are the packet's own January, June, and May tags, including the Day 2 problem tagged May 2019, problem 1; these tags are citations printed in Days 2--8 of the packet and are not UGA qualifying exams, whose posted archive has only Fall and Spring exams.
-The source TeX file describes itself as a collection of solutions written by participants of the May 2020 Analysis Qualifying Exam Workshop, not an official solution source.
+Problems from the UNL real analysis workshop packet [[SRC-RA-WORKSHOP]].
+Day 1 of the packet is the May 2016 qualifying exam, [[SRC-UNL-RA-SUMMER-2016]].
+The remaining headings are the January, June, and May exam tags printed in Days 2--8 of the packet, including the Day 2 problem tagged May 2019, problem 1.
 
 ## May 2016 qualifying exam
 
