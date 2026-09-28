@@ -35,90 +35,39 @@ Conclude that $G/H$ is a homogeneous space.
 :::
 
 ::: {.solution}
-**Part (a).**
+Let $p\colon G\to G/H$ be the quotient map. A map $g\colon G/H\to Z$ is continuous if and only if $g\circ p$ is continuous, by the definition of the quotient topology. Left and right translations of $G$ are homeomorphisms ([[E-1KV5G]]).
 
-<1>1. $f_\alpha(x) = \alpha x$ is a homeomorphism of $G$.
+<1>1. (a) The map $\bar f_\alpha(xH)=(\alpha x)H$ is a well-defined homeomorphism of $G/H$, and $G/H$ is homogeneous.
+
 ::: {.proof}
-left multiplication by $\alpha$ is continuous with continuous inverse $f_{\alpha^{-1}}$.
+$f_\alpha(xH)=(\alpha x)H$, so $\bar f_\alpha$ is well defined and $\bar f_\alpha\circ p=p\circ f_\alpha$ is continuous; hence $\bar f_\alpha$ is continuous.
+Its inverse is $\bar f_{\alpha^{-1}}$, continuous for the same reason.
+Given cosets $xH$ and $yH$, the homeomorphism $\bar f_{yx^{-1}}$ carries $xH$ to $yH$.
 :::
 
-<1>2. $f_\alpha$ sends the coset $xH$ to $(\alpha x)H$.
+<1>2. (b) If $H$ is closed, one-point sets are closed in $G/H$.
+
 ::: {.proof}
-$f_\alpha(xH) = \{\alpha x h : h \in H\} = (\alpha x)H$.
+$p^{-1}(\{xH\})=xH=f_x(H)$ is closed, as the image of the closed set $H$ under a homeomorphism.
 :::
 
-<1>3. Hence $f_\alpha$ induces a well-defined bijection $\bar f_\alpha: G/H \to G/H$, $xH \mapsto (\alpha x)H$.
+<1>3. (c) $p$ is open.
+
 ::: {.proof}
-<1>2.
+For open $U\subseteq G$, $p^{-1}(p(U))=UH=\bigcup_{h\in H}Uh$ is a union of right translates of $U$, hence open, so $p(U)$ is open.
 :::
 
-<1>4. $\bar f_\alpha$ is a homeomorphism.
+<1>4. (d) If $H$ is closed and normal, $G/H$ is a topological group.
+
 ::: {.proof}
-it is induced by the homeomorphism $f_\alpha$ and is compatible with the quotient topology (its inverse is $\bar f_{\alpha^{-1}}$).
+Since $H$ is normal, $G/H$ is a group with multiplication $\bar m(xH,yH)=xyH$ and inversion $\bar\iota(xH)=x^{-1}H$, and $\bar m\circ(p\times p)=p\circ m$, $\bar\iota\circ p=p\circ\iota$.
+By step <1>3, $p\times p$ is a continuous open surjection, hence a quotient map, so $\bar m$ is continuous; $\bar\iota$ is continuous because $\bar\iota\circ p$ is.
+By step <1>2, $G/H$ is $T_1$.
 :::
 
-<1>5. Hence $G/H$ is homogeneous: for any two cosets $xH$ and $yH$, the map $\bar f_{yx^{-1}}$ sends $xH$ to $yH$.
-::: {.proof}
-<1>4.
-:::
+<1>5. Q.E.D.
 
-**Part (b).**
-
-<1>1. A one-point set in $G/H$ is $\{xH\} = p(xH)$.
 ::: {.proof}
-definition.
-:::
-
-<1>2. $p^{-1}(\{xH\}) = xH$, which is closed in $G$ (since $H$ is closed and left multiplication is a homeomorphism).
-::: {.proof}
-$xH = f_x(H)$ is closed.
-:::
-
-<1>3. Hence $\{xH\}$ is closed in $G/H$.
-::: {.proof}
-by the definition of the quotient topology, a subset is closed iff its preimage under $p$ is closed.
-:::
-
-**Part (c).**
-
-<1>1. Let $U \subseteq G$ be open; we show $p(U)$ is open in $G/H$.
-::: {.proof}
-setup.
-:::
-
-<1>2. $p^{-1}(p(U)) = UH = \bigcup_{h \in H} Uh$, which is open (a union of open sets, since right multiplication is a homeomorphism).
-::: {.proof}
-$p^{-1}(p(U)) = \{uh : u \in U, h \in H\} = UH = \bigcup_{h \in H} Uh$.
-:::
-
-<1>3. Hence $p(U)$ is open in $G/H$.
-::: {.proof}
-by the definition of the quotient topology, $p(U)$ is open iff $p^{-1}(p(U))$ is open.
-:::
-
-**Part (d).**
-
-<1>1. $G/H$ is a group (since $H$ is normal), and the group operations are continuous.
-<2>1. Multiplication in $G/H$ is continuous.
-::: {.proof}
-the multiplication $G/H \times G/H \to G/H$ is induced by the continuous multiplication $G \times G \to G$, and the quotient map is open (part (c)), so the induced map is continuous.
-:::
-<2>2. Inversion in $G/H$ is continuous.
-::: {.proof}
-inversion $G/H \to G/H$ is induced by the continuous inversion $G \to G$.
-:::
-<2>3. One-point sets are closed in $G/H$ (part (b)).
-::: {.proof}
-part (b).
-:::
-
-<1>2. Hence $G/H$ is a topological group.
-::: {.proof}
-<1>1.
-:::
-
-<1>3. Q.E.D.
-::: {.proof}
-<1>5 (a), <1>3 (b), <1>3 (c), and <1>2 (d).
+Steps <1>1 through <1>4 prove (a) through (d).
 :::
 :::
