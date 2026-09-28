@@ -20,11 +20,10 @@ Show that if $f:\HH\to \DD$ is holomorphic and $f(i) = 0$ then $\abs{f(z)} \leq 
 :::
 
 ::: {.solution}
-Note that
+Let $g(z) \da {z-i\over z+i}: \HH\to \DD$ be the Cayley map, a biholomorphism with inverse $g\inv(w) = i{1+w\over 1-w}: \DD\to \HH$, and let $F \da f\circ g\inv:\DD\to\DD$.
+Then $F(0) = f(g\inv(0)) = f(i) = 0$ by assumption, so the Schwarz lemma gives $\abs{F(w)} \leq \abs{w}$ for $w\in\DD$.
+For $z\in\HH$, take $w=g(z)$: 
 \[
-\abs{f(z)} \leq \abs{g(z)} \impliedby \abs{(f\circ g\inv)(z)} \leq \abs{z}
-,\]
-so one can use the Schwarz lemma on $F \da f\circ g\inv$.
-Noting that $g(z) \da {z-i\over z+i}: \HH\to \DD$ is the Cayley map, the inverse is $g\inv(z) = i{1-z\over 1+z}: \DD\to \HH$. 
-Then $F(0) = f(g\inv(0)) = f(i) = 0$ by assumption, so Schwarz yield $\abs{F(z)} \leq \abs{z}$.
+\abs{f(z)}=\abs{F(g(z))}\le\abs{g(z)}=\abs{z-i\over z+i}
+.\]
 :::
