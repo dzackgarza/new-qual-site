@@ -49,7 +49,7 @@ Thus \(\alpha,\zeta_3\in L\), giving the reverse inclusion. Therefore
 \boxed{L=\mathbb Q(\sqrt[3]{2},\zeta_3).}
 \]
 
-For completeness, \(x^3-2\) is Eisenstein at \(2\), so \([\mathbb Q(\alpha):\mathbb Q]=3\). Since \(\mathbb Q(\alpha)\subset\mathbb R\) while \(\zeta_3\notin\mathbb R\), adjoining \(\zeta_3\) has degree \(2\). Hence
+The polynomial \(x^3-2\) is Eisenstein at \(2\), so \([\mathbb Q(\alpha):\mathbb Q]=3\). Since \(\mathbb Q(\alpha)\subset\mathbb R\) while \(\zeta_3\notin\mathbb R\), adjoining \(\zeta_3\) has degree \(2\). Hence
 \[
 [L:\mathbb Q]=6.
 \]
