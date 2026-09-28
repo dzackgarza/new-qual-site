@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF84-4
 kind: problem
-title: Evaluate an improper integral involving $x-\sin x$
+title: The integral $\int_0^\infty\frac{x-\sin x}{x^3}\,dx$
 classification:
   areas: [prelim]
   topics: []
