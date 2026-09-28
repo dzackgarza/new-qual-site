@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose D is a domain and f and g are analytic functions on D. Prove that if the product $f g = 0$ throughout D, then either f or g must vanish identically on D.
+Suppose $D$ is a domain and $f$ and $g$ are analytic functions on $D$. Prove that if the product $fg = 0$ throughout $D$, then either $f$ or $g$ must vanish identically on $D$.
 :::
 
 ::: {.solution}
