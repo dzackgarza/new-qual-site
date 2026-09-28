@@ -32,7 +32,7 @@ Justify your answer with a proof or counterexample: every irreducible $U_n(\math
 :::
 
 ::: {.solution}
-The statement is **true**. Put
+The statement is true. Put
 $$
 R=U_n(\CC)
 $$
@@ -117,7 +117,7 @@ $$
 Step <1>2 shows that $N$ acts trivially, so the $R$-action factors uniquely
 through the quotient ring $R/N$.
 
-The quotient remembers only the diagonal entries:
+Two upper-triangular matrices are congruent modulo $N$ exactly when they have the same diagonal entries, so the map
 $$
 R/N
 \longrightarrow
@@ -125,9 +125,9 @@ R/N
 \qquad
 (a_{ij})
 \longmapsto
-(a_{11},\ldots,a_{nn}).
+(a_{11},\ldots,a_{nn})
 $$
-This is a ring isomorphism.
+is well defined and bijective. It is a ring isomorphism, because the diagonal of a product of upper-triangular matrices is the entrywise product of their diagonals.
 
 An $R/N$-submodule is exactly an $R$-submodule under the factored action, so
 the resulting $R/N$-module remains simple.
