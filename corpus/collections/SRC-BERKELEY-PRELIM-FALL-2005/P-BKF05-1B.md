@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF05-1B
 kind: problem
-title: Count representations of a product of primes as two squares
+title: Representations of $5\cdot17\cdot37$ as a sum of two squares
 classification:
   areas:
   - prelim
