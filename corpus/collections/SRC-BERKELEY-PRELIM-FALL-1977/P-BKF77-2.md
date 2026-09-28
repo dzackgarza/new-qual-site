@@ -30,7 +30,7 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Prove part (a) by induction on the number of equations.
+<1>1. Part (a): if $m<n$, every system of $m$ homogeneous linear equations in $n$ unknowns over $F$ has a nonzero solution.
 ::: {.proof}
 We prove the following statement for every $m\ge0$: if
 $$
