@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF86-9
 kind: problem
-title: Evaluate $\int_0^\infty \frac{\log x}{(x^2+1)(x^2+4)}\,dx$
+title: The integral $\int_0^\infty \frac{\log x}{(x^2+1)(x^2+4)}\,dx$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
