@@ -46,7 +46,7 @@ subset $U\subseteq X$ is dense in $X$.
 <1>1. Any two nonempty Zariski-open subsets of $X$ intersect.
 
 ::: {.proof}
-Under the source's convention, an affine variety is irreducible. Let
+An affine variety is irreducible by definition. Let
 $$
 U,V\subseteq X
 $$
