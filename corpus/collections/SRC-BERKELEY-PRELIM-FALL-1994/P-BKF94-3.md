@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF94-3
 kind: problem
-title: Dirichlet-kernel type sine quotient integral
+title: The integral $\int_{-\pi}^{\pi}\frac{\sin n\theta}{\sin\theta}\,d\theta$
 classification:
   areas:
   - prelim
