@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2007
 ---
-
-::: {.remark}
-Problem 4 is the same problem as Spring 2013 Problem 6.
-:::
