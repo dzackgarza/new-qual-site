@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-06
 kind: problem
-title: Monotonicity of an elliptic-integral parameter
+title: A complete elliptic integral is increasing in its parameter
 classification:
   areas:
   - prelim
