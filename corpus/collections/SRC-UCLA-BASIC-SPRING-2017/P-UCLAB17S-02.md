@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB17S-02
 kind: problem
-title: Jordan blocks in a four-by-four parameter family
+title: Jordan blocks in a four-parameter family of $4\times4$ matrices
 classification:
   areas:
   - prelim
