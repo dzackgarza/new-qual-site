@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK95S-01
 kind: problem
-title: The sequence $\cos(nx)$ has no uniformly convergent subsequence on $\mathbb R$
+title: The sequence $\cos(nx)$ has no uniformly convergent subsequence on $\RR$
 classification:
   areas:
   - prelim
