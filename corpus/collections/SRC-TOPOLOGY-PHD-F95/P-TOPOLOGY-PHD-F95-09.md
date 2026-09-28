@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-09
 kind: problem
-title: Universal cover and fundamental group of a wedge with RP^2
+title: Universal cover and fundamental group of $S^1\vee\mathbb{R}P^2$
 classification:
   areas:
   - topology
@@ -39,12 +39,6 @@ audit:
 Describe the universal cover of $S^1\vee\mathbb{R}P^2$.
 
 (d) Describe the fundamental group of $S^1\vee\mathbb{R}P^2$.
-:::
-
-::: {.remark}
-In part (c), the source says that the displayed one-point union $S^1\vee\mathbb{R}P^2$ is obtained from the disjoint union of $S^2$ and $\mathbb{R}P^2$.
-The same sentence calls the first summand a circle, and both the beginning and end of the part display $S^1\vee\mathbb{R}P^2$.
-Thus the occurrence of $S^2$ is a source typo; the solution uses the intended space $S^1\vee\mathbb{R}P^2$.
 :::
 
 ::: {.solution}
@@ -208,4 +202,8 @@ Thus $p$ is the universal covering projection.
 The copies of $\mathbb{R}$ are the lifts of the $S^1$ summand; the copies of $S^2$ are the lifts of the $\mathbb{R}P^2$ summand; and their attachment pattern is the tree $T$.
 The group computation is <1>3.
 :::
+:::
+
+::: {.remark}
+Part (c) describes $S^1\vee\mathbb{R}P^2$ as a quotient of the disjoint union of $S^2$ and $\mathbb{R}P^2$. The same sentence calls the first summand a circle and displays $S^1\vee\mathbb{R}P^2$ before and after, so $S^2$ there is a misprint for $S^1$.
 :::
