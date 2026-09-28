@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\Omega \subset \mathbb { C }$ be the region inside the unit circle $| z | = 1$ and outside the circle $\begin{array} { r } { | z - \frac { 1 } { 4 } | = \frac { 1 } { 4 } } \end{array}$ . Find a one-to-one conformal map of Ω onto an annulus $r < | \boldsymbol { z } | < 1$ for an appropriate value of r.
+Let $\Omega \subset \CC$ be the region inside the unit circle $\abs{z} = 1$ and outside the circle $\abs{z - \frac{1}{4}} = \frac{1}{4}$. Find a one-to-one conformal map of $\Omega$ onto an annulus $r < \abs{z} < 1$ for an appropriate value of $r$.
 :::
 
 ::: {.solution}
