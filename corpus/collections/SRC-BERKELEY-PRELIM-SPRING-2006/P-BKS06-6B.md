@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-6B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 6B
+title: The subring of $\RR[t]$ cut out by $f'(0)=0$ is not a principal ideal domain
 classification:
   areas: [prelim]
   topics: []
