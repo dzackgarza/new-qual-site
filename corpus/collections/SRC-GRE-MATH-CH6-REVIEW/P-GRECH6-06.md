@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-06
 kind: problem
-title: Number of generators of Z24
+title: Number of generators of $\ZZ_{24}$
 classification:
   areas:
   - algebra
