@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-WYX24
 kind: theorem
 title: Generalized dominated convergence theorem
-slogan: 'Dominators may vary with $n$: a.e. convergence plus convergence of their integrals still passes the limit through the integral.'
+slogan: 'If $\abs{f_n}\le g_n$, $f_n\to f$ and $g_n\to g$ almost everywhere, and $\int g_n\to\int g<\infty$, then $\int f_n\to\int f$.'
 classification:
   areas:
   - real-analysis
