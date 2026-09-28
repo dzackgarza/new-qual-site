@@ -22,30 +22,26 @@ Prove that if $G$ is a $p\dash$group, every subgroup $N\normal G$ intersects the
 :::
 
 ::: {.solution}
-\envlist
+Let $G$ be a finite $p$-group and $1\neq N\normal G$.
 
-Easy solution:
+<1>1. $N$ is a disjoint union of $G$-conjugacy classes, and the classes of size $1$ contained in $N$ are the elements of $N\cap Z(G)$.
 
-- Use that $\size  H \mod p = 1$ since $H\leq G$ and $G$ is a $p\dash$group.
-- Then use that $H$ is a union of conjugacy classes, and since $e\in H$ there is at least one class of size 1, so
-\[
-\size  H = \size  \disjoint' [h_i] = \size  [e] + \sum' \size  [h_i] \\
-\implies 0 \equiv \size  H \equiv 1 + \sum' \size [h_i] \mod p
-,\]
-and since each $\size  [h_i]$ divides $\size  H$, not all can be of size $p^\ell$ since then the sum would be $0\mod p$.
-So at least one other $\size  [h_i] = 1$, making that $h_i$ central.
+::: {.proof}
+Normality gives $gng^{-1}\in N$ for $n\in N$, $g\in G$, so the $G$-conjugacy class of each $n\in N$ lies in $N$.
+The class of $n$ is $\{n\}$ exactly when $n$ commutes with every element of $G$.
+:::
 
-Another solution:
+<1>2. Every $G$-conjugacy class of size greater than $1$ has size divisible by $p$.
 
-- Idea: use the class equation to force $p$ to divide $\size (H \intersect Z(G))$.
-  Applying it to $H$ yields
-\[
-H = Z(H) \disjoint_{i=1}^m [h_i]
-,\]
-where the $[h_i]$ are conjugacy classes of size greater than 1.
+::: {.proof}
+The class of $n$ has size $[G:C_G(n)]$, which divides $\size G$ and so is a power of $p$.
+:::
 
-- Now use that $Z(H) = Z(G) \intersect H$, and since $p$ divides the LHS the result will follow if $p$ divides the size of the disjoint union on the RHS.
-- This is true because each $\size [h_i] \neq 1$ and $[h_i]$ divides $\size  H$ which divides $\size  G$ which is a power of $p$.
-  So $p\divides \size  [h_i]$ for each $i$.
+<1>3. Q.E.D.
 
+::: {.proof}
+By steps <1>1 and <1>2, $\size N\equiv\size(N\cap Z(G))\pmod p$.
+Since $N\neq1$ is a subgroup of a $p$-group, $p\mid\size N$, so $p\mid\size(N\cap Z(G))$.
+As $e\in N\cap Z(G)$, this gives $\size(N\cap Z(G))\ge p$, so $N\cap Z(G)\neq1$.
+:::
 :::
