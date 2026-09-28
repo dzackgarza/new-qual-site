@@ -31,9 +31,9 @@ Take $\begin{array} { r } { f ( z ) = \frac { \pi ^ { 2 } } { \sin ^ { 2 } \pi z
 
 a) Show these functions have the same singularities in $\mathbb { C }$
 
-b) Show that f and g have the same singular parts at each of their singularities.
+b) Show that $f$ and $g$ have the same singular parts at each of their singularities.
 
-c) Note that f and g each have period one and that both approach zero uniformly on $0 \leq x \leq 1$ as $| y | \to \infty$ .
+c) Note that $f$ and $g$ each have period one and that both approach zero uniformly on $0 \leq x \leq 1$ as $| y | \to \infty$ .
 
 d) Conclude that $f = g$
 :::
