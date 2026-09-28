@@ -41,7 +41,7 @@ Show that equality holds on a Zariski-dense open subset of $Y$.
 :::
 
 ::: {.solution}
-Let $k$ be the algebraically closed ground field of the source, and write
+Let $k$ be the algebraically closed ground field, and write
 $$
 A=\mco(Y),
 \qquad
@@ -53,7 +53,7 @@ n=\dim X,
 \qquad
 e=n-m.
 $$
-Because $X$ and $Y$ are affine varieties in the source's convention, $A$ and
+Affine varieties are irreducible, so $A$ and
 $B$ are finitely generated integral $k$-algebras. Dominance of $f$ says that
 the comorphism
 $$
@@ -132,11 +132,9 @@ $$
 =
 \dim A_{\mathfrak p}.
 $$
-This is the same inequality used in
-[[P-AGH2322FIBREDIM|the fibre-dimension calculation for Hartshorne II.3.22]].
 
 The point $y$ is closed, so the affine dimension theorem
-[[P-AGH2320DIMENSION|gives]]
+[[P-AGH2320DIMENSION]] gives
 $$
 \dim A_{\mathfrak p}=\dim A=m.
 $$
@@ -156,7 +154,7 @@ $$
 
 ::: {.proof}
 For the prime $\mathfrak q$ of step <1>1, the affine dimension formula
-[[P-AGH2320DIMENSION|gives]]
+[[P-AGH2320DIMENSION]] gives
 $$
 \dim(B/\mathfrak q)+\height\mathfrak q
 =
@@ -195,15 +193,14 @@ $$
 is flat.
 
 ::: {.proof}
-Generic flatness gives a nonempty open subset
+Generic flatness [[T-MORGEN]] gives a nonempty open subset
 $$
 V_0\subseteq Y
 $$
-over which $f$ is flat; this is the characteristic-free companion statement
-recorded with [[T-MORGEN|generic smoothness]].
+over which $f$ is flat.
 
 Since $f$ is a dominant finite-type morphism, Chevalley's theorem
-[[P-AGH2319CHEVALLEY|shows]] that $f(X)$ is constructible. Dominance says
+[[P-AGH2319CHEVALLEY]] shows that $f(X)$ is constructible. Dominance says
 that $f(X)$ is dense in the irreducible variety $Y$. A dense constructible
 subset of an irreducible Noetherian space contains a nonempty open subset.
 Hence there is a nonempty open
