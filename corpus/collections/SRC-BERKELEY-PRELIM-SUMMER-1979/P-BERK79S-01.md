@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-01
 kind: problem
-title: Inertia of a symmetric four-by-four matrix
+title: Inertia of a symmetric $4\times4$ matrix
 classification:
   areas: [prelim]
   topics: []
