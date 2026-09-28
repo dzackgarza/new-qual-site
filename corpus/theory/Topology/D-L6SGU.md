@@ -18,5 +18,6 @@ A topological space $(X, \tau)$ is \dfn{compact} if $X$ is [[D-ZFRV4|Hausdorff]]
 :::
 
 ::: {.remark}
-This is the Bourbaki convention; the definition in [[D-EILKJ]] omits the Hausdorff condition.
+This is the Bourbaki convention.
+A two-point set with the indiscrete topology satisfies the open-cover condition, so it is [[D-EILKJ|compact]] when compactness is defined by that condition alone; it is not Hausdorff, so in the Bourbaki convention it is quasicompact and not compact.
 :::
