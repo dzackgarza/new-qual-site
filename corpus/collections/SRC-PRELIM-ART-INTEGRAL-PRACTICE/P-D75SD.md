@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D75SD
 kind: problem
-title: Evaluate $\int\sin(x)\cos(\cos(x))\,dx$
+title: $\int\sin(x)\cos(\cos(x))\,dx$
 classification:
   areas:
   - prelim
