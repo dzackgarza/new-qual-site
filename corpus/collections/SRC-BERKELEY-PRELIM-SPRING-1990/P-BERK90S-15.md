@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK90S-15
 kind: problem
-title: Map a semicircular disk conformally onto the upper half-plane
+title: Conformal map of a semicircular disk onto the upper half-plane
 classification:
   areas: [prelim]
   topics: []
