@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-QJ5M9
 kind: definition
-title: Normal domains, and normality against regularity
+title: Normal domains and schemes, and their relation to regularity
 classification:
   areas:
   - algebraic-geometry
@@ -46,6 +46,6 @@ If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $
 ::: {.remark}
 The normalization of an integral curve is regular, hence smooth over a perfect field. Thus normalization resolves singularities of curves over perfect fields.
 
-The standard normal-but-singular example is the quadric cone $V(xy - z^2) \subseteq \AA^3$, singular at the origin and normal, being regular in codimension one and Cohen--Macaulay — Serre's criterion $R_1 + S_2$.
-The standard non-normal example is the cuspidal cubic $k[t^2,t^3] \subseteq k[t]$, whose normalization is $k[t]$.
+The quadric cone $V(xy - z^2) \subseteq \AA^3$ is normal and singular at the origin: it is regular in codimension one and Cohen--Macaulay, so it is normal by Serre's criterion $R_1 + S_2$.
+The cuspidal cubic, with coordinate ring $k[t^2,t^3] \subseteq k[t]$, is not normal, and its normalization is $\Spec k[t]$.
 :::
