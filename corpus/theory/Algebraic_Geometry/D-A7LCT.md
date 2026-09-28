@@ -25,15 +25,22 @@ Let $\varphi : \mcf \to \mcg$ be a morphism of sheaves.
 
 - The \dfn{kernel} is $U \mapsto \ker \varphi(U)$, which is already a sheaf.
 
-- The **image** is the sheafification of $U \mapsto \im \varphi(U)$.
+- The \dfn{image} is the sheafification of $U \mapsto \im \varphi(U)$.
 
-- The **cokernel** is the sheafification of $U \mapsto \mcg(U)/\im \varphi(U)$.
+- The \dfn{cokernel} is the sheafification of $U \mapsto \mcg(U)/\im \varphi(U)$.
 :::
 
 ::: {.remark}
-The kernel is defined by a condition that is local — a section is in the kernel exactly when it is in the kernel near every point — so it satisfies both axioms already.
-The image and cokernel are defined by an existential — a section is in the image when *some* preimage exists — and existence is not local: preimages may exist near every point without gluing.
+A section of $\mcf$ lies in $\ker\varphi(U)$ if and only if its restrictions to the members of an open cover of $U$ do, so the kernel presheaf satisfies both sheaf axioms.
+A section $t\in\mcg(U)$ lies in $\im\varphi(U)$ when there exists $s\in\mcf(U)$ with $\varphi(s)=t$; local preimages on an open cover of $U$ need not agree on overlaps, so they need not glue to a preimage on $U$.
 
-The image presheaf typically fails **gluing**, so sheafification adds sections.
-The cokernel presheaf typically fails **identity**, so sheafification also kills sections that are locally zero.
+The image presheaf is a subpresheaf of the sheaf $\mcg$, so it satisfies the identity axiom; it can fail gluing, and sheafification adds the sections of $\mcg$ that lie in the image locally.
+The cokernel presheaf can fail both axioms; sheafification sends to $0$ the sections that are locally zero.
+:::
+
+::: {.example title="The image presheaf of the exponential map"}
+On $X=\CC\sm\ts{0}$, let $\varphi=\exp\colon\OO_X\to\OO_X^\times$.
+The section $z\in\OO_X^\times(X)$ has a logarithm on every simply connected open subset of $X$ but none on $X$.
+So $z$ is not in the image presheaf on $X$, and its class in the cokernel presheaf on $X$ is nonzero but locally zero.
+The image sheaf is $\OO_X^\times$ and the cokernel sheaf is $0$.
 :::
