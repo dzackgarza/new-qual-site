@@ -43,78 +43,37 @@ u(x, y) \converges{y\to 0} \to f(x)
 .\]
 :::
 ::: {.solution}
-<1>1. (a) Setup: $P_y(x) = \frac{1}{\pi}\frac{y}{x^2 + y^2}$ (the card's formula writes $t$ in place of $x$; the kernel lives in the $x$-variable), $u(x,y) = (f \ast P_y)(x)$. The hint splits $\RR$ into $|t| < y$ and dyadic annuli $A_k = \{2^k y \le |t| < 2^{k+1} y\}$.
-    ::: {.proof}
-    $\int_\RR P_y = 1$ (substitute $s = t/y$: $\frac{1}{\pi}\int \frac{y}{t^2+y^2}dt = \frac{1}{\pi}\int\frac{ds}{1+s^2} = 1$).
-    :::
+Here $P_y(t) = \frac{1}{\pi}\frac{y}{t^2 + y^2}$, $u(x,y) = \int f(x-t)P_y(t)\,dt$, and $Hf(x) = \sup_{r>0}\frac{1}{2r}\int_{x-r}^{x+r}|f(s)|\,ds$ is the Hardy--Littlewood maximal function.
 
-<1>2. Pointwise bounds on $P_y$:
-    <2>1. For $|t| < y$: $P_y(t) \le \dfrac{1}{\pi y}$.
-        ::: {.proof}
-        $t^2 + y^2 \ge y^2$, so $P_y(t) = \frac{1}{\pi}\frac{y}{t^2+y^2} \le \frac{1}{\pi y}$.
-        :::
-    <2>2. For $2^k y \le |t| < 2^{k+1}y$: $P_y(t) \le \dfrac{1}{\pi 2^{2k} y}$.
-        ::: {.proof}
-        $t^2 \ge 2^{2k}y^2$, so $t^2 + y^2 \ge 2^{2k}y^2$.
-        :::
+<1>1. $\int_\RR P_y = 1$, $P_y(t) \le \frac{1}{\pi y}$ for all $t$, and $P_y(t) \le \frac{1}{\pi 2^{2k}y}$ on $A_k = \theset{2^k y \le |t| < 2^{k+1}y}$.
 
-<1>3. Central term: $\int_{|t| < y}|f(x-t)|P_y(t)\,dt \le \dfrac{2}{\pi}\,Mf(x)$, where $Mf$ is the Hardy–Littlewood maximal function $Mf(x) = \sup_{r>0}\frac{1}{2r}\int_{x-r}^{x+r}|f(s)|\,ds$.
-    ::: {.proof}
-    <1>2<2>1 gives $P_y(t) \le \frac{1}{\pi y}$; then $\frac{1}{\pi y}\int_{|t|<y}|f(x-t)|\,dt = \frac{2y}{\pi y}\cdot\frac{1}{2y}\int_{x-y}^{x+y}|f(s)|\,ds \le \frac{2}{\pi}Mf(x)$ (change $s = x - t$; the average is $\le Mf(x)$).
-    :::
+::: {.proof}
+The substitution $t = ys$ gives $\int P_y = \frac1\pi\int\frac{ds}{1+s^2} = 1$. The bounds follow from $t^2 + y^2 \ge y^2$ and, on $A_k$, $t^2 + y^2 \ge 2^{2k}y^2$.
+:::
 
-<1>4. Annulus terms: for each $k \ge 0$, $\int_{A_k}|f(x-t)|P_y(t)\,dt \le \dfrac{4}{\pi 2^k}\,Mf(x)$.
-    <2>1. $P_y(t) \le \frac{1}{\pi 2^{2k} y}$ on $A_k$.
-        ::: {.proof}
-        <1>2<2>2.
-        :::
-    <2>2. $\int_{A_k}|f(x-t)|\,dt = \int_{\{2^ky \le |s - x| < 2^{k+1}y\}}|f(s)|\,ds \le \int_{x - 2^{k+1}y}^{x + 2^{k+1}y}|f(s)|\,ds \le 2^{k+2}y\cdot Mf(x)$.
-        ::: {.proof}
-        the annulus is contained in the interval $[x - 2^{k+1}y, x + 2^{k+1}y]$ of length $2^{k+2}y$, whose average is $\le Mf(x)$.
-        :::
-    <2>3. $\int_{A_k}|f(x-t)|P_y(t)\,dt \le \frac{1}{\pi 2^{2k}y}\cdot 2^{k+2}y\,Mf(x) = \frac{4}{\pi 2^k}Mf(x)$.
-        ::: {.proof}
-        <2>1 and <2>2.
-        :::
+<1>2. For $g \in L^1$, $x \in \RR$ and $y > 0$, $\int |g(x-t)|P_y(t)\,dt \le \frac{10}{\pi}\sup_{0 < r \le R}\frac{1}{2r}\int_{x-r}^{x+r}|g|$ whenever $g(x - t) = 0$ for $|t| \ge R$ and $R \geq y$; with $R = \infty$ the right side is $\frac{10}{\pi}Hg(x)$.
 
-<1>5. Summing over the annuli: $\sum_{k=0}^\infty \int_{A_k} \le \frac{4}{\pi}Mf(x)\sum_{k=0}^\infty 2^{-k} = \frac{8}{\pi}Mf(x)$.
-    ::: {.proof}
-    <1>4 and the geometric series.
-    :::
+::: {.proof}
+Let $\alpha$ denote the supremum on the right. By step <1>1, $\int_{|t| < y}|g(x-t)|P_y(t)\,dt \le \frac{1}{\pi y}\cdot 2y\,\alpha$. For each $k$ with $2^ky < R$, the set $A_k$ lies in $\theset{|t| < 2^{k+1}y}$, so $\int_{A_k}|g(x-t)|P_y(t)\,dt \le \frac{1}{\pi 2^{2k} y}\int_{|t| < \min(2^{k+1}y, R)}|g(x-t)|\,dt \le \frac{1}{\pi 2^{2k}y}\cdot 2^{k+2}y\,\alpha = \frac{4}{\pi 2^k}\alpha$; terms with $2^ky \ge R$ vanish. Summing, the total is at most $\left(\frac2\pi + \frac4\pi\sum_{k \ge 0}2^{-k}\right)\alpha = \frac{10}{\pi}\alpha$.
+:::
 
-<1>6. Q.E.D. (a): $|u(x,y)| \le \left(\frac{2}{\pi} + \frac{8}{\pi}\right)Mf(x) = \frac{10}{\pi}Mf(x) \le C\,Hf(x)$ for all $x \in \RR$, all $y > 0$.
-    ::: {.proof}
-    $|u(x,y)| \le \int |f(x-t)|P_y(t)\,dt$ (triangle inequality), split into the central term (<1>3) and the annuli (<1>5); the card's $Hf$ denotes (a constant multiple of) the Hardy–Littlewood maximal function, so $C$ is a fixed constant independent of $f$.
-    :::
+<1>3. $\sup_{y>0}|u(x,y)| \le \frac{10}{\pi}Hf(x)$ for every $x$.
 
-<1>7. (b) $u(x,y) \to f(x)$ for a.e. $x$ as $y \to 0$.
-    <2>1. $P_y$ is an approximation to the identity: $\int P_y = 1$ and $\int_{|t| \ge \delta}P_y(t)\,dt \to 0$ as $y \to 0$ for every $\delta > 0$.
-        ::: {.proof}
-        $\int_{|t|\ge\delta}P_y = \frac{2}{\pi}\int_\delta^\infty\frac{y}{t^2+y^2}dt = \frac{2}{\pi}\int_{\delta/y}^\infty\frac{du}{1+u^2} = \frac{2}{\pi}\left(\frac{\pi}{2} - \arctan(\delta/y)\right) \to 0$.
-        :::
-    <2>2. $|u(x,y) - f(x)| \le \int |f(x-t) - f(x)|P_y(t)\,dt$.
-        ::: {.proof}
-        $\int P_y = 1$, so $u - f = \int (f(x-t) - f(x))P_y(t)\,dt$; triangle inequality.
-        :::
-    <2>3. For a Lebesgue point $x$ of $f$ (a.e. $x$ is one): $\frac{1}{2r}\int_{x-r}^{x+r}|f(s) - f(x)|\,ds \to 0$ as $r \to 0$.
-        ::: {.proof}
-        Lebesgue differentiation theorem.
-        :::
-    <2>4. Given $\eps > 0$, choose $\delta > 0$ with $\frac{1}{2r}\int_{x-r}^{x+r}|f(s) - f(x)|\,ds < \eps'$ for all $r < \delta$; split the integral in <2>2 at $|t| < \delta$:
-        <3>1. Small-$t$ part: $\int_{|t| < \delta}|f(x-t) - f(x)|P_y(t)\,dt \le \frac{1}{\pi y}\int_{|t|<\delta}|f(x-t) - f(x)|\,dt = \frac{2}{\pi}\cdot\frac{1}{2y}\int_{x-y}^{x+y}|f(s) - f(x)|\,ds < \frac{2}{\pi}\eps'$ for $y < \delta$.
-            ::: {.proof}
-            <1>2<2>1 and the Lebesgue-point estimate with $r = y$.
-            :::
-        <3>2. Large-$t$ part: $\int_{|t| \ge \delta}|f(x-t) - f(x)|P_y(t)\,dt \le \int_{|t|\ge\delta}|f(x-t)|P_y(t)\,dt + |f(x)|\int_{|t|\ge\delta}P_y(t)\,dt \le \|f\|_1\frac{y}{\pi\delta^2} + |f(x)|\int_{|t|\ge\delta}P_y \to 0$.
-            ::: {.proof}
-            $|f(x-t) - f(x)| \le |f(x-t)| + |f(x)|$; first term: on $|t| \ge \delta$, $P_y(t) \le \frac{y}{\pi\delta^2}$, so $\int_{|t|\ge\delta}|f(x-t)|P_y \le \frac{y}{\pi\delta^2}\|f\|_1 \to 0$ as $y \to 0$; second term: <2>1.
-            :::
-        <3>3. Q.E.D.: both parts vanish as $y \to 0$ (after taking $y < \delta$ and then $y \to 0$).
-            ::: {.proof}
-            <3>1 and <3>2, then let $\eps' \to 0$.
-            :::
-    <2>5. Q.E.D.
-        ::: {.proof}
-        <2>3 and <2>4 give $u(x,y) \to f(x)$ at every Lebesgue point, i.e. for a.e. $x$.
-        :::
+::: {.proof}
+$|u(x,y)| \le \int|f(x-t)|P_y(t)\,dt$; apply step <1>2 with $g = f$ and $R = \infty$.
+:::
+
+<1>4. $u(x,y) \to f(x)$ as $y \to 0$ at every Lebesgue point $x$ of $f$, hence for a.e. $x$.
+
+::: {.proof}
+Fix a Lebesgue point $x$ and $\eps > 0$, and choose $\delta > 0$ with $\frac{1}{2r}\int_{x-r}^{x+r}|f(s) - f(x)|\,ds < \eps$ for $0 < r \le \delta$. By step <1>1, $u(x,y) - f(x) = \int (f(x-t) - f(x))P_y(t)\,dt$. Let $g(s) = (f(s) - f(x))\chi_{\theset{|s - x| < \delta}}$. For $y \le \delta$, step <1>2 with $R = \delta$ gives $\int_{|t| < \delta}|f(x-t) - f(x)|P_y(t)\,dt \le \frac{10}{\pi}\eps$. On $|t| \ge \delta$, $P_y(t) \le \frac{y}{\pi\delta^2}$, so
+$$
+\int_{|t| \ge \delta}|f(x-t) - f(x)|P_y(t)\,dt \le \frac{y}{\pi\delta^2}\|f\|_1 + |f(x)|\int_{|t|\ge\delta}P_y(t)\,dt,
+$$
+and $\int_{|t|\ge\delta}P_y = 1 - \frac2\pi\arctan(\delta/y) \to 0$ as $y \to 0$. So $\limsup_{y\to0}|u(x,y) - f(x)| \le \frac{10}{\pi}\eps$ for every $\eps > 0$. By the Lebesgue differentiation theorem a.e. $x$ is a Lebesgue point.
+:::
+:::
+
+::: {.remark}
+In the statement, the kernel is $P_y(t) = \frac1\pi\frac{y}{t^2+y^2}$ as a function of $t$, and $u(x,y) = \int f(x-t)P_y(t)\,dt$.
 :::
