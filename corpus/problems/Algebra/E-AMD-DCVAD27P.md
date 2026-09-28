@@ -40,7 +40,7 @@ contradicting that \(\mathfrak m\) is proper. Hence
 
 <1>2. Every nonunit belongs to a maximal ideal.
 ::: {.proof}
-Let \(x\in R\) be a nonunit. Then \((x)\ne R\), so \((x)\) is a proper ideal. By the maximal-ideal theorem, \((x)\) is contained in some maximal ideal \(\mathfrak m\). Thus \(x\in\mathfrak m\), and therefore
+Let \(x\in R\) be a nonunit. Then \((x)\ne R\), so \((x)\) is a proper ideal. Every proper ideal of a ring with identity is contained in a maximal ideal (Zorn's lemma), so \((x)\) is contained in some maximal ideal \(\mathfrak m\). Thus \(x\in\mathfrak m\), and therefore
 \[
 R\setminus R^\times
 \subseteq
