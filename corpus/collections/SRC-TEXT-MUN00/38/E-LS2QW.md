@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LS2QW
 kind: problem
-title: The Stone-Cech construction is a functor
+title: The Stone--Čech compactification is a functor
 classification:
   areas:
   - topology
