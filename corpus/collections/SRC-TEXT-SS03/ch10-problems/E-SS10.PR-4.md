@@ -53,7 +53,7 @@ By Bézout's identity there are $a_0, b_0$ with $a_0 d - b_0 c = 1$, and $a = a_
 ::: {.proof}
 A coprime pair $(a,b)$ either has opposite parity or has both entries odd. For $a,b$ coprime and odd, $c = \frac{a+b}{2}$ and $d = \frac{a-b}{2}$ are coprime of opposite parity with $c^2 + d^2 = \frac{a^2 + b^2}{2}$, and $(a,b)\mapsto(c,d)$ is injective. So if the sum in (c) were finite, $\sum_{\gcd(a,b)=1} \frac{1}{a^2 + b^2}$ would be finite. Writing each nonzero $(k,\ell)$ as $n(a,b)$ with $n=\gcd(k,\ell)$,
 $$\sum_{(k, \ell) \neq (0, 0)} \frac{1}{k^2 + \ell^2} = \Bigl(\sum_{n=1}^\infty \frac{1}{n^2}\Bigr) \Bigl(\sum_{\gcd(a, b)=1} \frac{1}{a^2 + b^2}\Bigr)$$
-would be finite. But comparison with $\int_{\abs{(x,y)} \ge 1} \frac{dx\,dy}{x^2 + y^2} = 2\pi \int_1^\infty \frac{dr}{r} = \infty$ shows the left side diverges.
+would be finite. But for each $m\ge1$ there are $8m$ pairs with $\max(\abs k,\abs\ell)=m$, each with $k^2+\ell^2\le2m^2$, so the left side is at least $\sum_{m\ge1}\frac{8m}{2m^2}=\infty$.
 :::
 
 <1>4. (d) A bounded holomorphic $G$-invariant $F$ on $\mathbb H$ is constant.
@@ -61,6 +61,6 @@ would be finite. But comparison with $\int_{\abs{(x,y)} \ge 1} \frac{dx\,dy}{x^2
 ::: {.proof}
 Put $F_0 = F - F(i)$, which is bounded, holomorphic, $G$-invariant, and vanishes at $i$. For each coprime pair $(c,d)$ of opposite parity, step <1>2 gives $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$, and since $ad - bc = 1$,
 $$g(i) = \frac{(ai+b)(-ci+d)}{c^2 + d^2} = \frac{ac+bd}{c^2+d^2} + \frac{i}{c^2+d^2}.$$
-Applying a power of $T^2\in G$ gives a point $\tau_{c,d}$ of the $G$-orbit of $i$ with $\abs{\Re\tau_{c,d}} \le 1$ and $\Im\tau_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$, and $F_0(\tau_{c,d}) = F_0(i) = 0$ by invariance. By step <1>3, $\sum \Im\tau_{c,d}=\infty$, so step <1>1 gives $F_0 \equiv 0$, that is, $F\equiv F(i)$.
+Applying a power of $T^2\in G$ gives a point $\tau_{c,d}$ of the $G$-orbit of $i$ with $\abs{\Re\tau_{c,d}} \le 1$ and $\Im\tau_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$, and $F_0(\tau_{c,d}) = F_0(i) = 0$ by invariance. If two pairs give the same point, the corresponding elements $h,h'$ of $G$ (the matrices $g$ composed with the translations) satisfy $h^{-1}h'(i)=i$, so $h^{-1}h'\in\{\pm I,\pm S\}$ and the bottom row of $h'$ is $\pm(c,d)$ or $\pm(d,-c)$; thus each point arises from at most four pairs. By step <1>3, $\sum \Im\tau_{c,d}=\infty$, so the sum over distinct points $\tau_{c,d}$ is also infinite, and step <1>1 gives $F_0 \equiv 0$, that is, $F\equiv F(i)$.
 :::
 :::
