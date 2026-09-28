@@ -41,7 +41,7 @@ If an ideal contains a unit $u$, it contains $u^{-1}u=1$ and
 therefore the whole ring. If $a$ is a nonunit, its principal ideal
 $(a)$ is proper, since $1=ra$ would make $a$ invertible.
 
-For completeness, consider the partially ordered set of proper
+Consider the partially ordered set of proper
 ideals containing $(a)$. It is nonempty. The union of any nonempty
 chain is an ideal containing $(a)$, and is proper: if it contained
 $1$, one ideal in the chain would already contain $1$.
