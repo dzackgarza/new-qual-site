@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Take $x _ { 0 } = a , x _ { 1 } = b$ , and set $x _ { n } : = { \frac { x _ { n - 1 } + x _ { n - 2 } } { 2 } }$ for $n \geq 2$ . Prove that $( x _ { n } )$ i s a Cauchy sequence and find its limit in terms of a and b.
+Take $x_0 = a$, $x_1 = b$, and set $x_n \coloneqq \frac{x_{n-1} + x_{n-2}}{2}$ for $n \geq 2$. Prove that $(x_n)$ is a Cauchy sequence and find its limit in terms of $a$ and $b$.
 :::
 
 ::: {.solution}
