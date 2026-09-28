@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-4KKSH
 kind: theorem
 title: $L^p$ norms approach $\norm{f}_\infty$ on finite measure spaces
-slogan: 'On finite measure spaces, $L^p$ norms increase toward the essential supremum as $p\to\infty$.'
+slogan: 'On a finite measure space, $\norm{f}_p\to\norm{f}_\infty$ as $p\to\infty$.'
 classification:
   areas:
   - real-analysis
