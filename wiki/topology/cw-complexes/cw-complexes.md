@@ -67,12 +67,12 @@ With the vertices labelled by integers, a simplicial complex is determined by it
 :::
 
 ::: {.example title="Klein bottle and $\RP^2$"}
-![Klein Bottle and $\RP^2$](../../../../assets/assets/Topology/figures/1513062526623.png)
+![Klein bottle and $\RP^2$](../../../../assets/assets/Topology/figures/1513062526623.png)
 
 :::
 
 ::: {.example title="A labelling of the torus that is not a triangulation"}
-![Not a Torus](../../../../assets/assets/Topology/figures/1513062599096.png)
+![A labelling of the torus with every triangle on the vertices $1,1,2$](../../../../assets/assets/Topology/figures/1513062599096.png)
 
 In this picture a triangle has two vertices with the same label $1$, so the vertex set $\ts{1,2}$ does not determine a unique triangle, and the picture is not a simplicial complex.
 
