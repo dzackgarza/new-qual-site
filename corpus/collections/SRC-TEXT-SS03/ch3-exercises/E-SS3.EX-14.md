@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-14
 kind: problem
-title: "SS 3.14: Injective entire functions are affine"
+title: Injective entire functions are affine
 classification:
   areas:
   - complex-analysis
