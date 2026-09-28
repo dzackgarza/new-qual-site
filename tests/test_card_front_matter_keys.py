@@ -40,13 +40,12 @@ def test_a_repeated_front_matter_key_makes_the_card_unreadable(tmp_path: Path) -
 GLUED_CLOSE = REPEATED_TITLE.replace("title: The first title\ntitle: The second title\n", "title: A prime-order group\n").replace("review: draft\n---\n", "review: draft---\n")
 
 
-def test_a_control_character_makes_the_card_unreadable(tmp_path: Path) -> None:
-    lost_sigma = REPEATED_TITLE.replace("title: The first title\ntitle: The second title\n", "title: A prime-order group\n").replace(
-        "a group of prime order", "an automorphism \x00 of a group of prime order"
-    )
-    work = fixture_repo(tmp_path, {"P-TWOTITLES.md": lost_sigma})
+def test_extraction_residue_makes_the_card_unreadable(tmp_path: Path) -> None:
+    card = REPEATED_TITLE.replace("title: The first title\ntitle: The second title\n", "title: A prime-order group\n")
+    for residue in ("an automorphism \x00 of a group", "a group with elements g<sub>j</sub>"):
+        work = fixture_repo(tmp_path / str(len(residue)), {"P-TWOTITLES.md": card.replace("a group", residue, 1)})
 
-    assert DiagnosticCode.CARD_UNREADABLE in diagnostic_codes(work)
+        assert DiagnosticCode.CARD_UNREADABLE in diagnostic_codes(work)
 
 
 def test_a_closing_delimiter_that_does_not_stand_alone_makes_the_card_unreadable(tmp_path: Path) -> None:

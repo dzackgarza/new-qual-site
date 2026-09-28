@@ -22,7 +22,7 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, from_ast, load_front_matter, reject_control_characters, unread_math
+from .model import FRONT_MATTER, MARKDOWN, drop_path_captions, from_ast, load_front_matter, reject_extraction_residue, unread_math
 from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
 from .static_site import AssetCatalog, _asset_source
 from .tex import mark_definienda
@@ -154,7 +154,7 @@ def _route(source_rel: Path) -> Path:
 
 
 def _split_front_matter(text: str, path: Path) -> tuple[dict[str, object], str]:
-    reject_control_characters(text, path)
+    reject_extraction_residue(text, path)
     if not text.startswith("---\n"):
         return {}, text
     match = FRONT_MATTER.match(text)
