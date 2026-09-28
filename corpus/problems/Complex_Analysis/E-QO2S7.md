@@ -28,33 +28,38 @@ Apply Morera's theorem and Cauchy's theorem.
 :::
 
 ::: {.solution}
-**Goal:** For $\Omega \subseteq \CC$, show that the space of bounded holomorphic functions on $\Omega$, with the supremum norm, is a Banach space.
+Write $A(\Omega) \coloneqq \{f: \Omega \to \CC \st f \text{ bounded and holomorphic}\}$ and $\norm{f}_\infty \coloneqq \sup_{z \in \Omega}\abs{f(z)}$, and let $\{f_n\}$ be a Cauchy sequence in $A(\Omega)$.
 
-<1>1. The space $A(\Omega) = \{f: \Omega \to \CC \st f \text{ bounded and holomorphic}\}$ is a vector space with the sup norm $\norm{f}_\infty = \sup_{z \in \Omega}\abs{f(z)}$.
+<1>1. $A(\Omega)$ is a vector space and $\norm{\cdot}_\infty$ is a norm on it.
+
 ::: {.proof}
 Pointwise addition and scalar multiplication preserve holomorphy (linearity of the derivative) and boundedness (triangle inequality); $\norm{\cdot}_\infty$ is a norm on bounded functions, so it restricts to a norm on $A(\Omega)$.
 :::
 
-<1>2. $A(\Omega)$ is complete: every Cauchy sequence has a pointwise limit.
-::: {.proof}
-Let $\{f_n\}$ be Cauchy in $A(\Omega)$.
-:::
-For each $z \in \Omega$, $\abs{f_n(z) - f_m(z)} \le \norm{f_n - f_m}_\infty \to 0$, so $\{f_n(z)\}$ is a Cauchy sequence in $\CC$; define $f(z) = \lim_n f_n(z)$.
+<1>2. There is a function $f\colon\Omega\to\CC$ with $f_n\to f$ uniformly on $\Omega$.
 
-<1>3. The limit $f$ is holomorphic.
 ::: {.proof}
-Since $\{f_n\}$ converges uniformly on $\Omega$ to $f$ (Cauchy in sup norm implies uniform convergence), $f$ is continuous on $\Omega$, and for every closed triangle $T\subseteq\Omega$, $\int_{\partial T} f = \lim_n \int_{\partial T} f_n = \lim_n 0 = 0$ (uniform convergence lets the limit pass through the integral; each integral vanishes by Goursat's theorem). Morera's theorem [[T-LHSMY]] applies.
+For each $z \in \Omega$, $\abs{f_n(z) - f_m(z)} \le \norm{f_n - f_m}_\infty \to 0$, so $\{f_n(z)\}$ is a Cauchy sequence in $\CC$; define $f(z) \coloneqq \lim_n f_n(z)$.
+Letting $m\to\infty$ in $\abs{f_n(z) - f_m(z)} \le \sup_{k\geq n}\norm{f_n - f_k}_\infty$ gives $\sup_{z\in\Omega}\abs{f_n(z) - f(z)} \le \sup_{k\geq n}\norm{f_n - f_k}_\infty$, which tends to $0$ because $\{f_n\}$ is Cauchy.
 :::
-Hence $f$ is holomorphic.
 
-<1>4. $f$ is bounded and $f_n \to f$ in $A(\Omega)$.
+<1>3. $f$ is holomorphic.
+
 ::: {.proof}
-Since $\{f_n\}$ is Cauchy it is bounded in norm, say $\norm{f_n}_\infty \le M$; then $\abs{f(z)} = \lim \abs{f_n(z)} \le M$ for all $z$, so $f \in A(\Omega)$.
+By step <1>2, $f$ is a uniform limit of continuous functions, so $f$ is continuous on $\Omega$, and for every closed triangle $T\subseteq\Omega$, $\int_{\partial T} f = \lim_n \int_{\partial T} f_n = \lim_n 0 = 0$ (uniform convergence lets the limit pass through the integral; each integral vanishes by Goursat's theorem).
+Hence $f$ is holomorphic by Morera's theorem [[T-LHSMY]].
 :::
-And $\norm{f_n - f}_\infty \to 0$ by the uniform convergence from <1>3.
+
+<1>4. $f\in A(\Omega)$ and $\norm{f_n - f}_\infty \to 0$.
+
+::: {.proof}
+Since $\{f_n\}$ is Cauchy it is bounded in norm, say $\norm{f_n}_\infty \le M$; then $\abs{f(z)} = \lim \abs{f_n(z)} \le M$ for all $z$, so $f$ is bounded, and $f$ is holomorphic by step <1>3, so $f \in A(\Omega)$.
+By step <1>2, $\norm{f_n - f}_\infty \to 0$.
+:::
 
 <1>5. Q.E.D.
+
 ::: {.proof}
-<1>1–<1>4 show $A(\Omega)$ is a complete normed space, i.e. a Banach space.
+By step <1>1, $A(\Omega)$ is a normed space, and by step <1>4 every Cauchy sequence in it converges in $A(\Omega)$, so $A(\Omega)$ is a Banach space.
 :::
 :::
