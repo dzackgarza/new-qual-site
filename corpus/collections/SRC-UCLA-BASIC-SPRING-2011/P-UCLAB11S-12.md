@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB11S-12
 kind: problem
-title: Contraction mapping iteration for the equation f prime equals f
+title: Contraction mapping iteration for $f'=f$, $f(0)=1$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
