@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-9A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 9A
+title: The integral inequality $f(x)\ge L\int_0^x f(t)\,dt$ forces $f\ge0$
 classification:
   areas: [prelim]
   topics: []
@@ -48,8 +48,9 @@ F ( x ) e ^ { - L x } - F ( 0 ) e ^ { 0 } = \int _ { 0 } ^ { x } { \frac { d } {
 $$
 
 Since $F ( 0 ) = 0$ and $e ^ { - L x } > 0$ , we learn that $F ( x ) \geq 0 { \mathrm { ~ f o r ~ } } 0 \leq x \leq b$ , hence the original inequality $f ( x ) \geq L F ( x )$ gives the desired result.
+:::
 
-An alternative proof might run as follows.
+::: {.solution}
 Let $x _ { 0 } = \operatorname* { s u p } \{ x < b ~ : ~ f ( t ) \geq 0$ for $t \in [ 0 , x ] \}$ We know $x _ { 0 } \geq 0$ since $f ( 0 ) \geq 0$ . We must show that $x _ { 0 } = b$ Suppose to the contrary that $x _ { 0 } < b$ . Since $f ( x )$ is continuous and non-negative to the left of $x _ { 0 } , f ( x _ { 0 } ) \geq 0$ . On the other hand, there are points $x > x _ { 0 }$ arbitrarily close to $x _ { 0 }$ at which $f ( x ) < 0$ . Thus $f ( x _ { 0 } ) = 0$ . The given inequality now implies that $f ( x ) = 0$ for $0 \leq x \leq x _ { 0 }$ . Now define $x _ { 1 } = \operatorname* { m i n } ( x _ { 0 } + L ^ { - 1 } , b )$ Then there is an $x _ { 2 }$ in the interval $x _ { 0 } < x _ { 2 } < x _ { 1 }$ which satisfies $f ( x _ { 2 } ) < 0$ . Let $\varepsilon = | f ( x _ { 2 } ) |$ The given inequality implies that $\begin{array} { r } { f ( x ) \geq L \int _ { x _ { 0 } } ^ { x } f ( t ) } \end{array}$ dt for $x _ { 0 } \leq x \leq x _ { 1 }$ . Thus $u ( x ) = f ( x ) + \varepsilon$ satisfies $u ( x _ { 0 } ) = \varepsilon , u ( x _ { 2 } ) = 0$ , and
 
 $$
