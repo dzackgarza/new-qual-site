@@ -70,8 +70,7 @@ $$
 :::
 
 ::: {.remark title="Indexing conventions and list notation"}
-Spaces are usually path connected, in which case $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$.
-Graded objects such as $\pi_*$, $H_*$, and $H^*$ are sometimes written as lists starting in degree $1$:
+For path-connected $X$, $\pi_0(X)$ is a point and $H_0(X) \cong \ZZ$, and a graded object such as $\pi_*$, $H_*$, or $H^*$ written as a list starts in degree $1$:
 $$
 \begin{aligned}
 \pi_*(X) &= [\pi_1(X), \pi_2(X), \pi_3(X), \ldots], \\
@@ -104,6 +103,6 @@ Free groups are torsion-free, so $f(g) = 1_H$.
 ::: {.remark}
 The same argument shows that every homomorphism from a finite group to a torsion-free group is trivial.
 For a continuous map $f\colon A\to B$ with $\pi_1(A)$ finite and $\pi_1(B)$ torsion-free, such as $\pi_1(B)\cong\ZZ^n$ or a free group, the induced homomorphism $f_*\colon \pi_1(A) \to \pi_1(B)$ is trivial.
-The same holds for homomorphisms induced on homology or cohomology groups.
+Likewise, if $H_k(A)$ is finite and $H_k(B)$ is torsion-free, then $f_*\colon H_k(A)\to H_k(B)$ is zero, and if $H^k(B)$ is finite and $H^k(A)$ is torsion-free, then $f^*\colon H^k(B)\to H^k(A)$ is zero.
 
 :::
