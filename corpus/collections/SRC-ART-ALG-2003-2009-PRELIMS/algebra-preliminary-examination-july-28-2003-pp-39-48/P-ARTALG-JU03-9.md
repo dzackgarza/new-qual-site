@@ -115,7 +115,6 @@ lie in a radical extension of $\mathbb Q$. Choose a radical
 tower ending in a field $M$ containing them. Adjoining $a$ is
 one further radical adjunction, since $a^5=2\in M$.
 The resulting field $M(a)$ contains all five displayed roots of
-$g$. Thus $g$ is solvable by radicals. Degree five alone does
-not imply the nonsolvability claimed in part (c).
+$g$. Thus $g$ is solvable by radicals.
 :::
 :::
