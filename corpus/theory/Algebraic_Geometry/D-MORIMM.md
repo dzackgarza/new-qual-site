@@ -26,8 +26,8 @@ $f : X \to Y$ is an \dfn{open immersion} if it induces an isomorphism of $X$ ont
 
 ::: {.definition title="Closed immersion"}
 $f : X \to Y$ is a \dfn{closed immersion} if $\abs{f}$ is a homeomorphism onto a closed subset of $\abs{Y}$ and $f^\sharp : \OO_Y \to f_* \OO_X$ is surjective as a map of sheaves.
-A **closed subscheme** is an equivalence class of closed immersions, where two are identified when they fit into a commuting triangle.
-An **immersion** is a morphism making $X$ isomorphic to an open subscheme of a closed subscheme of $Y$.
+A \dfn{closed subscheme} is an equivalence class of closed immersions, where two are identified when they fit into a commuting triangle.
+An \dfn{immersion} is a morphism making $X$ isomorphic to an open subscheme of a closed subscheme of $Y$.
 :::
 
 ::: {.definition title="Locally closed immersion"}
@@ -39,9 +39,8 @@ Every immersion is a locally closed immersion, and a quasicompact locally closed
 :::
 
 ::: {.remark}
-The surjectivity clause distinguishes a closed immersion from a homeomorphism onto a closed subset.
-The answer is $\Spec k \to \Spec k[\varepsilon]/(\varepsilon^2)$ versus $\Spec k[\varepsilon]/(\varepsilon^2) \to \Spec k[\varepsilon]/(\varepsilon^2)$: the underlying spaces are the same one point, and only the sheaf map distinguishes the reduced point from the fat one.
-Surjectivity of $f^\sharp$ is what makes closed subschemes of $\Spec A$ correspond to ideals of $A$ rather than to closed subsets, so that $V(x)$ and $V(x^2)$ are different subschemes of $\AA^1$.
+A homeomorphism onto a closed subset need not be a closed immersion: the structure morphism $\Spec k[\varepsilon]/(\varepsilon^2)\to\Spec k$ is a homeomorphism of one-point spaces, and $k\to k[\varepsilon]/(\varepsilon^2)$ is not surjective.
+Closed subschemes of $\Spec A$ correspond bijectively to ideals of $A$ [@Har10a, Corollary II.5.10]; so $V(x)$ and $V(x^2)$ are distinct closed subschemes of $\AA^1$ with the same underlying point.
 
-A locally closed immersion includes cases that are neither open nor closed: $\ts{xy = 0} \sm \ts{0}$ sits in $\AA^2$ in this way.
+The inclusion $\ts{xy = 0} \sm \ts{0}\to\AA^2$ is a locally closed immersion that is neither an open nor a closed immersion.
 :::
