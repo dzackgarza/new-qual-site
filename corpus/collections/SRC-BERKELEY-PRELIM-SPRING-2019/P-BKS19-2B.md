@@ -18,12 +18,12 @@ audit:
 
 ::: {.problem}
 For $t\ge0$ let
-\[
+$$
 F(t)=\int_0^t e^{-x^2}\,dx
-\]
+$$
 and
-\[
+$$
 G(t)=\int_0^1\frac{e^{-t^2(1+x^2)}}{1+x^2}\,dx.
-\]
+$$
 Show that $F(t)^2+G(t)$ is constant and deduce the value of $F(\infty)$.
 :::
