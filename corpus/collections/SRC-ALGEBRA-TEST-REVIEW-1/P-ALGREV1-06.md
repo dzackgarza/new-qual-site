@@ -30,7 +30,7 @@ Let $R$ be a noncommutative ring and let $Z(R)$ be its center. Prove that the ad
 ::: {.solution}
 Suppose for contradiction that the additive quotient $R/Z(R)$ is cyclic.
 
-<1>1. Choose a representative of an additive generator.
+<1>1. There is $a\in R$ such that every $x\in R$ equals $ma+z$ for some $m\in\mathbb Z$ and $z\in Z(R)$.
 ::: {.proof}
 There is some $a\in R$ such that
 $$
