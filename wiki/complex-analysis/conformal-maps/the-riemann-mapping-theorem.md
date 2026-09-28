@@ -17,7 +17,7 @@ If $\Omega \subsetneq \CC$ is simply connected then $\Omega$ is biholomorphic to
 
 [[T-4MDS6]]
 
-::: {.remark title="Both hypotheses are necessary"}
+::: {.remark title="$\Omega\neq\CC$ and simple connectivity are necessary"}
 $\Omega\neq\CC$: a holomorphic map $F\colon\CC\to\DD$ is bounded and entire, hence constant by Liouville's theorem, so $\CC$ is not biholomorphic to $\DD$.
 
 $\Omega$ simply connected: a biholomorphism is a homeomorphism, and $\DD$ is simply connected.
