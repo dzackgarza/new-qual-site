@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-05
 kind: problem
-title: Does every two-by-two complex matrix have a square root?
+title: A nonzero nilpotent $2\times2$ complex matrix has no square root
 classification:
   areas:
   - prelim
