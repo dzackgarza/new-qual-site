@@ -30,7 +30,7 @@ $$
 x ^ { 2 } { \frac { d ^ { 2 } y } { d x ^ { 2 } } } + x { \frac { d y } { d x } } + y = 0
 $$
 
-in $x > 0$ , such that $y ( 1 ) = 0$ and $\begin{array} { r } { { \frac { d y } { d x } } = 1 } \end{array}$ at $x = 1$
+in $x > 0$ , such that $y ( 1 ) = 0$ and $\frac { d y } { d x } = 1$ at $x = 1$
 :::
 
 ::: {.solution}
