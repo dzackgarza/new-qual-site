@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-07
 kind: problem
-title: Rank minus determinant of a 3-by-3 matrix
+title: Rank minus determinant of a $3\times3$ matrix
 classification:
   areas:
   - applied-algebra
