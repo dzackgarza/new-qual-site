@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB07S-12
 kind: problem
-title: Completeness and compact subsets of c-zero
+title: Completeness and compact subsets of $c_0$
 classification:
   areas:
   - prelim
