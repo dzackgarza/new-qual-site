@@ -57,7 +57,7 @@ Since inversion is a homeomorphism, $V$ is an open neighborhood of $e$; it is sy
 V\cdot V\subseteq W\cdot W\subseteq U.
 \]
 
-(b) Let $x\ne y$. Since one-point sets are closed in a topological group in Munkres's convention,
+(b) Let $x\ne y$. One-point sets are closed, since a topological group is assumed to satisfy the $T_1$ axiom, so
 \[
 U=G-\{xy^{-1}\}
 \]
@@ -93,7 +93,7 @@ Then $A$ is closed, saturated, and $x\notin A$; saturation means $AH=A$. Apply (
 \[
 VA\cap Vx=\varnothing.
 \]
-The quotient map $p:G\to G/H$ is open, so $p(VA)$ and $p(Vx)$ are open neighborhoods of $C$ and $xH$. They are disjoint: if a coset lay in both, there would be $v_1,v_2\in V$, $a\in A$, and $h\in H$ with
+The quotient map $p:G\to G/H$ is open, since for open $U\subseteq G$ the saturation $p^{-1}(p(U))=UH=\bigcup_{h\in H}Uh$ is a union of translates of $U$. So $p(VA)$ and $p(Vx)$ are open neighborhoods of $C$ and $xH$. They are disjoint: if a coset lay in both, there would be $v_1,v_2\in V$, $a\in A$, and $h\in H$ with
 \[
 v_1a=v_2xh.
 \]
