@@ -54,7 +54,7 @@ satisfies the following conditions:
 
 (iii) $| F ( z ) | = 1 { \mathrm { ~ i f ~ } } | z | = 1 .$
 
-(iv) $F : \mathbb { D }  \mathbb { D }$ is bijective.
+(iv) $F : \mathbb { D } \to \mathbb { D }$ is bijective.
 [Hint: Calculate $F \circ F . ]$
 :::
 

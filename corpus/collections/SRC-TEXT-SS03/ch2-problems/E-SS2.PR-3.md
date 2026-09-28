@@ -45,7 +45,7 @@ $$
 f _ {\epsilon} (z) = \int_ {\mathbb {R} ^ {2}} f (z - w) \varphi_ {\epsilon} (w) d V (w),
 $$
 
-where the integral denotes the usual integral of functions of two variables, with $d V ( w )$ the area element of $\mathbb { R } ^ { 2 }$ . Then $f _ { \epsilon }$ is smooth, satisfies condition (16), and $f _ { \epsilon }  f$ uniformly on any compact subset of C.]
+where the integral denotes the usual integral of functions of two variables, with $d V ( w )$ the area element of $\mathbb { R } ^ { 2 }$ . Then $f _ { \epsilon }$ is smooth, satisfies condition (16), and $f _ { \epsilon } \to f$ uniformly on any compact subset of C.]
 :::
 
 ::: {.solution}

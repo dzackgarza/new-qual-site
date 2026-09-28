@@ -27,7 +27,7 @@ $$
 
 then $\varphi$ is linear.
 
-[Hint: Why can one assume that $z _ { 0 } = 0 ?$ Write $\varphi ( z ) = z + a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ near 0, and prove that if $\varphi _ { k } = \varphi \circ \cdots \circ \varphi$ (where $\varphi$ appears k times), then $\varphi _ { k } ( z ) =$ $z + k a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ . Apply the Cauchy inequalities and let $k \to \infty$ to conclude the proof. Here we use the standard O notation, where $f ( z ) = O ( g ( z ) )$ as $z  0$ means that $| f ( z ) | \leq C | g ( z ) |$ for some constant C as $| z | \xrightarrow { } 0 . ]$
+[Hint: Why can one assume that $z _ { 0 } = 0 ?$ Write $\varphi ( z ) = z + a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ near 0, and prove that if $\varphi _ { k } = \varphi \circ \cdots \circ \varphi$ (where $\varphi$ appears k times), then $\varphi _ { k } ( z ) =$ $z + k a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ . Apply the Cauchy inequalities and let $k \to \infty$ to conclude the proof. Here we use the standard O notation, where $f ( z ) = O ( g ( z ) )$ as $z \to 0$ means that $| f ( z ) | \leq C | g ( z ) |$ for some constant C as $| z | \xrightarrow { } 0 . ]$
 :::
 
 ::: {.solution}

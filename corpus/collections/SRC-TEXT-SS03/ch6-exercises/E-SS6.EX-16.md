@@ -38,7 +38,7 @@ $$
 {\frac {x}{e ^ {x} - 1}} = \sum_ {m = 0} ^ {\infty} {\frac {B _ {m}}{m !}} x ^ {m}.
 $$
 
-Then $B _ { 0 } = 1$ , and since $z / ( e ^ { z } - 1 )$ is holomorphic for $| z | < 2 \pi$ , we must have lim s $\begin{array} { r } { \operatorname * { l p } _ { m  \infty } | B _ { m } / m ! | ^ { 1 / m } = 1 / 2 \pi . ] } \end{array}$
+Then $B _ { 0 } = 1$ , and since $z / ( e ^ { z } - 1 )$ is holomorphic for $| z | < 2 \pi$ , we must have lim s $\begin{array} { r } { \limsup _ { m \to \infty } | B _ { m } / m ! | ^ { 1 / m } = 1 / 2 \pi . ] } \end{array}$
 :::
 
 ::: {.solution}

@@ -17,5 +17,5 @@ audit:
 
 ::: {.problem}
 Consider the particle moving in a gas of other particles.
-Given that the last collision of the particle occurred at $t = 0$ , the probability that the next collision will occur between t and $t + \Delta t$ equals $\lambda \Delta t + o ( \Delta t )$ , when $\Delta t  0$ . Find the probability $P ( t )$ that the time between the nearest collisions will exceed t.
+Given that the last collision of the particle occurred at $t = 0$ , the probability that the next collision will occur between t and $t + \Delta t$ equals $\lambda \Delta t + o ( \Delta t )$ , when $\Delta t \to 0$ . Find the probability $P ( t )$ that the time between the nearest collisions will exceed t.
 :::

@@ -18,7 +18,7 @@ audit:
 ---
 
 ::: {.problem}
-1) (15 points) Consider the mapping $F : [ 0 , 1 ]  [ 0 , 1 ]$ given by $F ( s ) = s ^ { 2 }$
+1) (15 points) Consider the mapping $F : [ 0 , 1 ] \to [ 0 , 1 ]$ given by $F ( s ) = s ^ { 2 }$
 
 Let $F ^ { - j } ( A )$ be the inverse image of j iterates of F applied to a measurable subset $A \subset [ 0 , 1 ]$ . That is, if $F = F ^ { 1 }$ and $F ^ { j } , j = 2 , 3 , . .$ . is defined inductively as $F ^ { j } = F ^ { j - 1 } \circ F$ ， then $F ^ { - j } ( A ) = \{ x : F ^ { j } x = y$ , some $y \in A \}$
 

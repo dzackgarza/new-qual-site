@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Assume $f _ { n } \in H ( \Omega )$ is a sequence of holomorphic functions on the region Ω that are uniformly bounded on compact subsets and $f \in H ( \Omega )$ is such that the set $\{ z \in \Omega : \operatorname* { l i m } _ { n  \infty } f _ { n } ( z ) = f ( z ) \}$ has a limit point in Ω. Show that $f _ { n }$ converges to f uniformly on compact subsets of Ω.
+Assume $f _ { n } \in H ( \Omega )$ is a sequence of holomorphic functions on the region Ω that are uniformly bounded on compact subsets and $f \in H ( \Omega )$ is such that the set $\{ z \in \Omega : \lim _ { n \to \infty } f _ { n } ( z ) = f ( z ) \}$ has a limit point in Ω. Show that $f _ { n }$ converges to f uniformly on compact subsets of Ω.
 :::

@@ -16,5 +16,5 @@ audit:
 ---
 
 ::: {.problem}
-Where does the $\mathrm { 7 - t o r s i o n }$ appear first in the homotopy groups of $S ^ { n }  { ? }$
+Where does the $7\text{-torsion}$ appear first in the homotopy groups of $S ^ { n }  { ? }$
 :::
