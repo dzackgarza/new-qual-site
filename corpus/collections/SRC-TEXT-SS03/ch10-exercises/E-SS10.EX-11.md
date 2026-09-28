@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-11
 kind: problem
-title: "SS 10.11: Generating functions for divisor-power sums"
+title: Lambert series for the divisor-power sums $\sigma_\ell(n)$
 classification:
   areas:
   - complex-analysis
@@ -34,41 +34,26 @@ where $\sigma _ { \ell } ( n )$ is the sum of the $\ell ^ { \mathrm { t h } }$ p
 :::
 
 ::: {.solution}
-<1>1. Geometric series expansion:
-<2>1. For any $|z| < 1$ and integer $n \ge 1$, we have $|z^n| = |z|^n < 1$.
-The term $\frac{z^n}{1 - z^n}$ expands as a convergent geometric series:
-\[
-\frac{z^n}{1 - z^n} = \sum_{k=1}^\infty (z^n)^k = \sum_{k=1}^\infty z^{nk}.
-\]
-<2>2. Multiplying by $n^\ell$:
-\[
-\frac{n^\ell z^n}{1 - z^n} = \sum_{k=1}^\infty n^\ell z^{nk}.
-\]
+Fix $\abs z<1$ and put $r=\abs z$.
 
-<1>2. Absolute convergence of the double series:
-<2>1. Set $r = |z| < 1$.
-Using the bound $\frac{r^n}{1 - r^n} \le \frac{r^n}{1 - r}$ for all $n \ge 1$:
-\[
-\sum_{n=1}^\infty \sum_{k=1}^\infty n^\ell |z|^{nk} = \sum_{n=1}^\infty n^\ell \frac{r^n}{1 - r^n} \le \frac{1}{1 - r} \sum_{n=1}^\infty n^\ell r^n.
-\]
-<2>2. By the ratio test, the power series $\sum_{n=1}^\infty n^\ell r^n$ converges for all $r \in [0, 1)$.
-Thus the double series $\sum_{n=1}^\infty \sum_{k=1}^\infty n^\ell z^{nk}$ converges absolutely.
+<1>1. For every $n\ge1$, $\dfrac{n^\ell z^n}{1 - z^n} = \displaystyle\sum_{k=1}^\infty n^\ell z^{nk}$.
 
-<1>3. Rearrangement and identification of divisor sums:
-<2>1. Because the double series is absolutely convergent, we may rearrange terms by setting $m = nk \ge 1$:
-\[
-\sum_{n=1}^\infty \frac{n^\ell z^n}{1 - z^n} = \sum_{n=1}^\infty \sum_{k=1}^\infty n^\ell z^{nk} = \sum_{m=1}^\infty \left( \sum_{n \mid m} n^\ell \right) z^m.
-\]
-<2>2. By definition of the divisor-power sum function:
-\[
-\sigma_\ell(m) = \sum_{d \mid m} d^\ell.
-\]
-Therefore the coefficient of $z^m$ is precisely $\sigma_\ell(m)$.
+::: {.proof}
+Since $\abs{z^n} = r^n < 1$, the geometric series gives $\frac{z^n}{1 - z^n} = \sum_{k\ge1} z^{nk}$.
+:::
 
-<1>4. Conclusion:
-For all $|z| < 1$:
-\[
-\sum_{n=1}^\infty \sigma_\ell(n) z^n = \sum_{n=1}^\infty \frac{n^\ell z^n}{1 - z^n}.
-\]
-Q.E.D.
+<1>2. The double series $\sum_{n\ge1} \sum_{k\ge1} n^\ell z^{nk}$ converges absolutely.
+
+::: {.proof}
+Using $\frac{r^n}{1 - r^n} \le \frac{r^n}{1 - r}$,
+$$\sum_{n=1}^\infty \sum_{k=1}^\infty n^\ell r^{nk} = \sum_{n=1}^\infty n^\ell \frac{r^n}{1 - r^n} \le \frac{1}{1 - r} \sum_{n=1}^\infty n^\ell r^n,$$
+and $\sum n^\ell r^n$ converges by the ratio test.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By step <1>2 the double series may be summed along the values $m = nk$. By step <1>1,
+$$\sum_{n=1}^\infty \frac{n^\ell z^n}{1 - z^n} = \sum_{n=1}^\infty \sum_{k=1}^\infty n^\ell z^{nk} = \sum_{m=1}^\infty \Bigl( \sum_{n \mid m} n^\ell \Bigr) z^m = \sum_{m=1}^\infty \sigma_\ell(m) z^m.$$
+:::
 :::
