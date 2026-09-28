@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-04
 kind: problem
-title: Positive eigenvector of a positive 2-by-2 matrix
+title: Positive eigenvector of a positive $2\times2$ matrix
 classification:
   areas:
   - prelim
