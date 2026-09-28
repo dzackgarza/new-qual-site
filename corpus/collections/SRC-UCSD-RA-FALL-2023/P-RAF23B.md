@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF23B
 kind: problem
-title: "Dilation converges in L^1"
+title: "Dilations $f(x/a)\\to f$ in $L^1$ as $a\\to1$"
 classification:
   areas:
   - real-analysis
@@ -29,7 +29,7 @@ Then for any $f \in L^1(\mathbb{R}, m)$, $S_a f \to f$ in $L^1$ as $a \to 1$.
 :::
 
 ::: {.solution}
-<1>1. Compute the operator norm of the dilation.
+<1>1. $\|S_af\|_1=a\|f\|_1$ for $a>0$ and $f\in L^1(\mathbb R)$.
 ::: {.proof}
 For $a>0$, the change of variables $y=x/a$ gives
 \[
@@ -45,7 +45,7 @@ Hence
 In particular, the operators $S_a$ are uniformly bounded for $a$ in any fixed neighborhood of $1$.
 :::
 
-<1>2. Prove the claim for $C_c(\mathbb R)$.
+<1>2. $\|S_ag-g\|_1\to0$ as $a\to1$ for every $g\in C_c(\mathbb R)$.
 ::: {.proof}
 Let $g\in C_c(\mathbb R)$ and choose $M>0$ with
 \[
@@ -70,13 +70,13 @@ Both functions vanish outside a fixed compact interval, so
 \]
 :::
 
-<1>3. Pass to an arbitrary $L^1$ function by density.
+<1>3. $\|S_af-f\|_1\to0$ as $a\to1$ for every $f\in L^1(\mathbb R)$.
 ::: {.proof}
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $g\in C_c(\mathbb R)$ such that
 \[
 \|f-g\|_1<\varepsilon.
 \]
-For $a$ sufficiently close to $1$, say $a\in[1/2,2]$, Step 1 gives
+For $a$ sufficiently close to $1$, say $a\in[1/2,2]$, step <1>1 gives
 \[
 \|S_a(f-g)\|_1\le2\|f-g\|_1<2\varepsilon.
 \]
@@ -88,7 +88,7 @@ Therefore
 &<3\varepsilon+\|S_ag-g\|_1.
 \end{aligned}
 \]
-By Step 2, the final term tends to $0$ as $a\to1$. Hence
+By step <1>2, the final term tends to $0$ as $a\to1$. Hence
 \[
 \limsup_{a\to1}\|S_af-f\|_1\le3\varepsilon.
 \]
