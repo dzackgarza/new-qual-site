@@ -21,11 +21,14 @@ Show that if $z_0$ is a pole of order $n$ of $f$, then it is a pole of order $n+
 
 ::: {.solution}
 Without loss of generality suppose $z_0=0$ is the pole.
-Write $f(z) = \sum_{k\geq -N} c_k z^k$, then
+On a punctured disk about $0$, write the Laurent series $f(z) = \sum_{j\geq -n} c_j z^j$ with $c_{-n}\neq0$.
+Differentiating term by term,
 \[
-f(z) = \sum_{1\leq j \leq N} c_j z^{-j} + \sum_{k\geq 0} c_k z^k \\
-\implies
-f'(z) = \sum_{2 \leq j \leq N+1} -j c_j z^{-j-1} + \sum_{k\geq 1}k c_k z^{k-1}
+f^{(k)}(z) = \sum_{j\geq -n} j(j-1)\cdots(j-k+1)\, c_j z^{j-k}
+.\]
+The most negative power that occurs is $z^{-n-k}$, with coefficient
+\[
+(-n)(-n-1)\cdots(-n-k+1)\,c_{-n}=(-1)^k n(n+1)\cdots(n+k-1)\,c_{-n}\neq0
 ,\]
-making $0$ a pole of order $N+1$.
+so $0$ is a pole of order $n+k$ of $f^{(k)}$.
 :::
