@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \int_4^9 \sqrt{-6+5\sqrt{-6+5\sqrt{-6+5\sqrt{-6+5\sqrt{x}}}}}\,dx
-\]
+$$
 is a rational number.
 :::
 
