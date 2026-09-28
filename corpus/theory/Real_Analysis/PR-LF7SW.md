@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-LF7SW
 kind: proposition
 title: Properties of Lebesgue outer measure
-slogan: 'Lebesgue outer measure is monotone, countably subadditive, outer regular, and additive across positive gaps.'
+slogan: 'Lebesgue outer measure is monotone, countably subadditive, outer regular, and additive on sets at positive distance.'
 classification:
   areas:
   - real-analysis
