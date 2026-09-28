@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGR7G
 kind: problem
-title: Evaluate $\int\frac{1}{9+x^2}\,dx$
+title: $\int\frac{1}{9+x^2}\,dx$
 classification:
   areas:
   - prelim
