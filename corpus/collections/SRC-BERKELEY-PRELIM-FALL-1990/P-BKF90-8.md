@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF90-8
 kind: problem
-title: A weighted average vanishes for an integrable nonnegative function
+title: $\frac1n\int_0^nxf(x)\,dx\to0$ for integrable continuous $f\ge0$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
