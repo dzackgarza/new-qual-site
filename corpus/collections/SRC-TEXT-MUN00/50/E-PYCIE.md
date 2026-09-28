@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PYCIE
 kind: problem
-title: Closed subspaces of euclidean space have dimension at most N
+title: Closed subspaces of $\RR^N$ have dimension at most $N$
 classification:
   areas:
   - topology
@@ -23,25 +23,21 @@ Every closed subspace of $\mathbb{R}^N$ has topological dimension at most $N$.
 :::
 
 ::: {.solution}
-**Goal.** Show every closed subspace of $\RR^N$ has topological (covering) dimension $\le N$.
-
 <1>1. $\RR^N$ has covering dimension $N$.
+
 ::: {.proof}
-the standard result that $\dim \RR^N = N$ (Lebesgue covering dimension).
+This is the standard computation of the Lebesgue covering dimension of $\RR^N$.
 :::
 
-<1>2. A subspace of a space of dimension $\le N$ has dimension $\le N$.
+<1>2. A closed subspace $A$ of a space $X$ with $\dim X \le N$ has $\dim A \le N$.
+
 ::: {.proof}
-the covering dimension is monotone under taking subspaces (any open cover of the subspace extends to an open cover of the ambient space, and refinements restrict).
+Let $\mathcal{U}$ be an open cover of $A$. Each $U \in \mathcal{U}$ is $A \cap U'$ for some open $U' \subseteq X$. The sets $U'$ together with $X \setminus A$ form an open cover of $X$, which has an open refinement $\mathcal{V}$ of order at most $N + 1$. The sets $V \cap A$, $V \in \mathcal{V}$, form an open cover of $A$ of order at most $N + 1$; each $V$ meeting $A$ lies in some $U'$, since $X \setminus A$ misses $A$, so $V \cap A$ lies in the corresponding $U$.
 :::
 
-<1>3. Hence every closed subspace of $\RR^N$ has dimension $\le N$.
-::: {.proof}
-<1>1 and <1>2.
-:::
+<1>3. Q.E.D.
 
-<1>4. Q.E.D.
 ::: {.proof}
-<1>3 is the claim.
+Apply step <1>2 to $X = \RR^N$, using step <1>1.
 :::
 :::
