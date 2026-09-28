@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-IVHVW
 kind: problem
-title: Bounded above by Blaschke product
+title: A self-map of $\DD$ is bounded by the Blaschke product of its zeros
 classification:
   areas:
   - complex-analysis
