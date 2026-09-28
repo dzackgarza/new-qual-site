@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Prove or disprove: There is a real $n \times n$ matrix A such that
+Prove or disprove: There is a real $n\times n$ matrix $A$ such that
 
 $$
-A ^ { 2 } + 2 A + 5 I = 0
+A^2+2A+5I=0
 $$
 
-if and only if n is even.
+if and only if $n$ is even.
 :::
