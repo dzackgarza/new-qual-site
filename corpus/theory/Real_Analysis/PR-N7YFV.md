@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-N7YFV
 kind: proposition
 title: $L^1$ embeds isometrically in $(L^\infty)^*$ but not surjectively
-slogan: '$L^1$ sits isometrically inside $(L^\infty)^*$, but does not exhaust that dual in general.'
+slogan: '$g\mapsto(f\mapsto\int fg)$ embeds $L^1$ isometrically in $(L^\infty)^*$; for Lebesgue measure on $[0,1]$ the embedding is not surjective.'
 classification:
   areas:
   - real-analysis
