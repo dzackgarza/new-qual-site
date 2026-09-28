@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK90S-07
 kind: problem
-title: Evaluate $\int_0^\infty \sin x/[x(x^2+a^2)]\,dx$
+title: The integral $\int_0^\infty \sin x/[x(x^2+a^2)]\,dx$
 classification:
   areas: [prelim]
   topics: []
