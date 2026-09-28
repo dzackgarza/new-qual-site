@@ -34,6 +34,6 @@ To construct $\mu$, realise $X_\Sigma$ as a quotient of an open subset of $\CC^{
 $$
 \mu_\Sigma : \CC^{\size \Sigma(1)} \to \RR^{\size\Sigma(1) - n} ,
 $$
-and $X_\Sigma$ is the symplectic quotient $\mu_\Sigma^{-1}(c)/T_c'$ for a regular value $c$ determined by $P$, where $T_c'$ is the compact part of that torus.
+and, for $X_\Sigma$ smooth and projective, $X_\Sigma$ is the symplectic quotient $\mu_\Sigma^{-1}(c)/T_c'$ for a regular value $c$ determined by $P$, where $T_c'$ is the compact part of that torus.
 For $\PP^n$, $\mu([z]) = \abs{z}^{-2}(\abs{z_0}^2, \ldots, \abs{z_n}^2)$ has image the standard simplex, whose vertices are the images of the coordinate points.
 :::
