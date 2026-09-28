@@ -9,14 +9,14 @@ topics:
 
 # Toric surfaces and toric morphisms
 
-Dimension two is where the dictionary is completely explicit: a smooth complete toric surface is a cyclically ordered list of lattice vectors, and every intersection number is one subtraction.
+A smooth complete toric surface is given by primitive vectors $u_1,\ldots,u_r\in\ZZ^2$ in cyclic order, consecutive pairs forming bases of $\ZZ^2$.
+Writing $u_{i-1}+u_{i+1}=b_iu_i$, the boundary divisors satisfy $D_i^2=-b_i$ and $D_i\cdot D_{i+1}=1$.
 
 [[PR-TORMOR]]
 
 ![The fan of $\PP^2$ with each cone labelled by $\lim_{t \to 0} \lambda^u(t)$](/assets/algebraic-geometry/toric/one-parameter-subgroup-limits-in-fan-of-p2.png)
 
-The completeness criterion is the cleanest illustration of what the fan is for.
-Properness is a limit condition, one-parameter subgroups are lattice points, and "the limit exists" becomes "the point lies in a cone".
+For $u\in N$, $\lim_{t\to0}\lambda^u(t)$ exists in $X_\Sigma$ exactly when $u$ lies in a cone of $\Sigma$; testing properness on these limits gives the criterion that $X_\Sigma$ is complete exactly when $\abs\Sigma=N_\RR$.
 
 ## The classification
 
@@ -26,8 +26,7 @@ Properness is a limit condition, one-parameter subgroups are lattice points, and
 
 [[FE-FULHIRZBUN]]
 
-The three families are not independent.
-$\FF_0 = \PP^1 \times \PP^1$ is the quadric surface, $\FF_1 = \Bl_1 \PP^2$, and every surface with five or more rays is obtained from one of these by inserting rays.
+$\FF_0 = \PP^1 \times \PP^1$ is the quadric surface, $\FF_1 = \Bl_p \PP^2$, and every smooth complete toric surface with at least five rays is obtained from $\PP^2$ or some $\FF_a$ by inserting rays.
 
 [[PR-FULKSQ]]
 
@@ -39,14 +38,14 @@ $\FF_0 = \PP^1 \times \PP^1$ is the quadric surface, $\FF_1 = \Bl_1 \PP^2$, and 
 
 Inserting a ray between two adjacent rays raises $\rank\Pic$ by one, raises $\chi$ by one, creates a $-1$-curve, and drops the self-intersection of each neighbour by one.
 Contracting reverses all four.
-Prescribed boundary self-intersection data can therefore be studied through sequences of ray insertions and contractions.
 
 ## Beyond surfaces
 
 [[FE-TORWPS]]
 
-Weighted projective space is the standard first example of a variety that is simplicial but not smooth, so it is $\QQ$-factorial with $\Pic$ of finite index in $\Cl$.
-In three dimensions the same construction gives $V(xy - zw)$, the cone over the quadric surface, from the four rays $(1,0,0), (0,1,0), (1,0,1), (0,1,1)$ — a cone that is not simplicial, and the standard example of a singularity with two small resolutions and no preferred one.
+The fan of a weighted projective space is simplicial, so it is $\QQ$-factorial, with $\Pic$ of finite index in $\Cl$; $\PP(1,1,2)$ is singular, being the projective cone over a conic.
+The three-dimensional cone on $(1,0,0)$, $(0,1,0)$, $(1,0,1)$, $(0,1,1)$ is not simplicial, and its affine toric variety is $V(xy-zw)$, the cone over the quadric surface.
+Subdividing the cone along either diagonal of the square gives the two small resolutions of $V(xy-zw)$, each with exceptional locus a $\PP^1$.
 
 ## Cohomology of smooth toric varieties
 
