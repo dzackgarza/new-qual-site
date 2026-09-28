@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R4I5W
 kind: problem
-title: Evaluate $\int\sqrt{1+\cos(2ax)}\,dx$
+title: $\int\sqrt{1+\cos(2ax)}\,dx$
 classification:
   areas:
   - prelim
@@ -32,7 +32,7 @@ Using $1+\cos(2u)=2\cos^2u$,
 \[
 \sqrt{1+\cos(2ax)}=\sqrt2\,|\cos(ax)|.
 \]
-Thus the stored simplification to $\sqrt2\cos(ax)$ is valid only on intervals where $\cos(ax)\ge0$.
+This equals $\sqrt2\cos(ax)$ only on intervals where $\cos(ax)\ge0$.
 
 If $a\ne0$, on any interval on which $\cos(ax)$ has constant sign,
 \[
