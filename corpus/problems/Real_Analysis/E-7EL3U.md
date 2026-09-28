@@ -31,42 +31,38 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Show that if $f_n \in C^1[a,b]$, the derivatives $f_n'$ converge uniformly to some $g$, and $f_n(x_0)$ converges for some $x_0 \in [a,b]$, then $f_n \to f$ uniformly, $f$ is differentiable, and $f' = g$.
+<1>1. $g$ is continuous on $[a,b]$.
 
-<1>1. $f_n \to f$ uniformly for some continuous $f$.
-<2>1. For every $x \in [a,b]$, $f_n(x) = f_n(x_0) + \int_{x_0}^x f_n'(t) \, dt$.
-::: {.proof}
-the Fundamental Theorem of Calculus, since $f_n$ is continuously differentiable.
-:::
-<2>2. $f_n(x_0)$ converges to some real number $c$.
-::: {.proof}
-hypothesis: $\lim_n f_n(x_0)$ exists.
-:::
-<2>3. $\int_{x_0}^x f_n'(t) \, dt \to \int_{x_0}^x g(t) \, dt$ uniformly in $x$.
-::: {.proof}
-$\left|\int_{x_0}^x (f_n'(t) - g(t))\,dt\right| \leq \|f_n' - g\|_\infty |x - x_0| \leq \|f_n' - g\|_\infty (b - a) \to 0$ by uniform convergence of the derivatives.
-:::
-<2>4. Define $f(x) := c + \int_{x_0}^x g(t)\,dt$; then $f_n \to f$ uniformly.
-::: {.proof}
-by <2>1–<2>3, $\|f_n - f\|_\infty \leq |f_n(x_0) - c| + (b-a)\|f_n' - g\|_\infty \to 0$.
-:::
-<2>5. $f$ is continuous.
-::: {.proof}
-$f$ is the uniform limit of the continuous functions $f_n$ (or directly: an indefinite integral of a continuous function).
-:::
-
-<1>2. $f$ is differentiable and $f' = g$.
-<2>1. $g$ is continuous.
 ::: {.proof}
 $g$ is the uniform limit of the continuous functions $f_n'$.
 :::
-<2>2. $f'(x) = g(x)$ for every $x \in [a,b]$.
+
+<1>2. For every $x \in [a,b]$, $f_n(x) = f_n(x_0) + \int_{x_0}^x f_n'(t) \, dt$.
+
 ::: {.proof}
-by the Fundamental Theorem of Calculus applied to $f(x) = c + \int_{x_0}^x g(t)\,dt$ with $g$ continuous: $f$ is differentiable and $f' = g$.
+This is the fundamental theorem of calculus, since $f_n$ is continuously differentiable.
 :::
-(In particular $f \in C^1[a,b]$.)
-<2>3. Q.E.D.
+
+<1>3. Let $c = \lim_n f_n(x_0)$ and $f(x) \coloneqq c + \int_{x_0}^x g(t)\,dt$. Then $f_n \to f$ uniformly on $[a,b]$.
+
 ::: {.proof}
-<1>4 and <2>2 give the uniform convergence, differentiability, and $f' = g$.
+The limit $c$ exists by hypothesis, and $f$ is defined because $g$ is continuous by step <1>1.
+By step <1>2, for every $x \in [a,b]$,
+$$
+\abs{f_n(x) - f(x)} \leq \abs{f_n(x_0) - c} + \abs{\int_{x_0}^x (f_n'(t) - g(t))\,dt} \leq \abs{f_n(x_0) - c} + (b-a)\norm{f_n' - g}_\infty,
+$$
+and the right-hand side does not depend on $x$ and tends to $0$.
+:::
+
+<1>4. $f$ is differentiable and $f' = g$.
+
+::: {.proof}
+Since $g$ is continuous by step <1>1, the fundamental theorem of calculus applied to $f(x) = c + \int_{x_0}^x g(t)\,dt$ gives $f'(x) = g(x)$ for every $x \in [a,b]$. In particular $f \in C^1[a,b]$.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives $f_n \to f$ uniformly, and step <1>4 gives that $f$ is differentiable with $f' = g$.
 :::
 :::
