@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-09
 kind: problem
-title: A planar ODE trajectory crosses x equals 1
+title: A planar ODE trajectory crosses $x=1$ by time $t=2$
 classification:
   areas:
   - prelim
