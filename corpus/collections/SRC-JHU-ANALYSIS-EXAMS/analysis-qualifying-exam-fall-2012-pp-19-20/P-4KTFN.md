@@ -81,18 +81,3 @@ $f_n(0)=0$, and for $x\in(0,1]$, $f_n(x)=0$ once $n>1/x$. Also $\int_0^1f_n=n\cd
 Steps <1>1, <1>2 and <1>3 answer parts (a), (b) and (c).
 :::
 :::
-  <2>3. **Integral limit:** For every $n \ge 1$:
-\[
-\int_0^1 f_n(x) \, dx = \int_0^{1/n} n \, dx = n \cdot \frac{1}{n} = 1.
-\]
-Thus $\lim_{n \to \infty} \int_0^1 f_n(x) \, dx = 1 \neq 0 = \int_0^1 \lim_{n \to \infty} f_n(x) \, dx$.
-::: {.proof}
-Riemann/Lebesgue integral of step functions.
-:::
-
-<1>4. Conclusion: Fatou's Lemma is stated, DCT is proven, and $f_n(x) = n \mathbf{1}_{(0, 1/n)}(x)$ provides the required example.
-::: {.proof}
-<1>1 through <1>3.
-:::
-Q.E.D.
-:::

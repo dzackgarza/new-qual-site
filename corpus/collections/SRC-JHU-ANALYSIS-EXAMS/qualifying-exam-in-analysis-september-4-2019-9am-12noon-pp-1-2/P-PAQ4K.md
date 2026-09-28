@@ -52,22 +52,3 @@ Let $T_n(x)=4n^2x$ on $[0,\frac1{2n}]$, $T_n(x)=4n-4n^2x$ on $[\frac1{2n},\frac1
 Steps <1>1 and <1>2 answer parts (a) and (b).
 :::
 :::
-  <2>6. Thus $f(x) = 0$ for all $x \in [0, 1]$, which gives:
-\[
-\int_0^1 f(x)\,dx = \int_0^1 0\,dx = 0 < 1.
-\]
-::: {.proof}
-integral of the zero function.
-:::
-<2>7. This disproves the claim that $\int_0^1 f(x)\,dx \ge 1$.
-::: {.proof}
-$0 \not\ge 1$.
-:::
-
-<1>3. Conclusion: (a) True by Fatou’s Lemma.
-(b) False: standard escaping spike sequence yields $\int_0^1 f(x)\,dx = 0 < 1$.
-::: {.proof}
-<1>1 and <1>2.
-:::
-Q.E.D.
-:::
