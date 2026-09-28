@@ -29,7 +29,7 @@ audit:
 
 
 ::: {.solution}
-Let $|G|=p^2q$, where $p$ and $q$ are primes. If $p=q$, then $G$ is a $p$-group, so the interesting case is $p\ne q$. We analyze that case.
+Let $|G|=p^2q$, where $p$ and $q$ are primes. If $p=q$, then $G$ is a $p$-group of order $p^3$; assume from now on that $p\ne q$.
 
 <1>1. If $p>q$, the Sylow $p$-subgroup is normal.
 ::: {.proof}
