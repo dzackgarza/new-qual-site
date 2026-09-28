@@ -41,14 +41,10 @@ If $X$ is a topological space with an uncountably infinite number of points is t
 Justify your answer carefully.
 :::
 
-::: {.remark}
-The source first names the countable-closed topology and then asks about the finite-complement topology; both terms are retained as printed.
-:::
-
 ::: {.solution}
-The answer is no under each natural reading of the source's inconsistent wording.
+The statement defines the countable-closed topology and then asks about the finite-complement topology. The answer is no for each of three readings: the cofinite topology on $X\times X$, the product of cofinite topologies on $X$, and the product of countable-closed topologies on $X$.
 
-<1>1. If “the finite complement topology” means the cofinite topology directly on the set $X\times X$, then $\Delta$ is not closed.
+<1>1. If "the finite complement topology" means the cofinite topology directly on the set $X\times X$, then $\Delta$ is not closed.
 ::: {.proof}
 In the cofinite topology on an infinite set, the proper closed subsets are precisely the finite subsets.
 Since $X$ is uncountable, the diagonal
