@@ -45,6 +45,6 @@ p^r q^s
 \]
 with $p,q$ prime is solvable.
 ::: {.proof}
-This is Burnside's $p^a q^b$ theorem. Unlike the $p$-group case, the general proof is not a direct induction from the class equation; the classical proof uses character theory (and there are later character-free proofs). Applying Burnside's theorem with $a=r$ and $b=s$ gives the result.
+This is Burnside's $p^a q^b$ theorem, whose classical proof uses character theory. Applying Burnside's theorem with $a=r$ and $b=s$ gives the result.
 :::
 :::
