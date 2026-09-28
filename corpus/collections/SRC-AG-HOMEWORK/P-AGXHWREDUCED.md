@@ -35,10 +35,10 @@ Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ 
 \end{tikzcd}
 :::
 
-::: {.remark}
-Strategy for part a: zero in every stalk implies zero by the sheaf axiom.
+::: {.hint}
+(a) A section that is zero in every stalk is zero, by the sheaf axiom.
 
-Strategy for part b:
+(b)
 
 - Cover by affines.
 
@@ -54,7 +54,7 @@ Strategy for part b:
 :::
 
 ::: {.solution}
-**Part a**:
+**Part (a).**
 
 $\implies$: if $\OO_{X, p}$ has nilpotents, pick $s$ with $s^n = 0 \in \OO_{X, p}$.
 This lifts to some $s^n = 0 \in \OO_X(U)$, so $s$ is nilpotent in $\OO_X(U)$, a contradiction.
