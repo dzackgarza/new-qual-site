@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-SY9
 kind: problem
-title: A complete study of GL(3, Z/2)
+title: 'Conjugacy classes, Sylow subgroups, and simplicity of $\mathrm{GL}_3(\ZZ/2)$'
 classification:
   areas:
   - algebra
