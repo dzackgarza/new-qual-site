@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LARQ5
 kind: problem
-title: Quotient of a bivariate polynomial ring by (x)
+title: $\mathbb R[x,y]/(x)\cong\mathbb R[y]$, so $(x)$ is prime but not maximal
 classification:
   areas: [algebra]
   topics: [Ring Theory]
