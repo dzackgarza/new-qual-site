@@ -34,14 +34,14 @@ $$
 :::
 
 ::: {.solution}
-(a) The automorphism of R that takes any $y \in R$ to $\bar { y }$ induces the first isomorphism.
-Multiplication by x induces the second (which is clearly surjective, and also injective since if $x y = x { \bar { x } } z$ then, R being an integral domain, $y = { \bar { x } } z )$ .
+(a) The automorphism of $R$ that takes any $y \in R$ to $\bar y$ induces the first isomorphism.
+Multiplication by $x$ induces the second: it is surjective, and it is injective since if $xy = x\bar x z$ then, $R$ being an integral domain, $y = \bar x z$.
 
-(b) Taking $( a , b ) \in \mathbb { Z } \times \mathbb { Z }$ to $a + b { \sqrt { - n } } \in R$ gives a group isomorphism.
-For $n > 0 \in \mathbb { Z } .$ there results an isomorphism $\mathbb { Z } _ { n } \times \mathbb { Z } _ { n } \cong R / n R \mathrm { : }$ ; so the cardinality $| R / n R | = [ R : n R ] = n ^ { 2 }$ In particular, for $n = x { \bar { x } }$ one gets $N ( x ) ^ { 2 } = [ R : x { \bar { x } } R ] = [ R : x R ] [ x R : x { \bar { x } } R ] = [ R : x R ] ^ { 2 }$ where the last equality holds by (a).
+(b) Taking $(a,b) \in \mathbb Z \times \mathbb Z$ to $a + b\sqrt{-n} \in R$ gives a group isomorphism.
+For an integer $m > 0$ there results an isomorphism $\mathbb Z/m \times \mathbb Z/m \cong R/mR$, so $\abs{R/mR} = [R : mR] = m^2$. In particular, for $m = x\bar x$ one gets $N(x)^2 = [R : x\bar x R] = [R : xR][xR : x\bar x R] = [R : xR]^2$, where the last equality holds by (a).
 
-(c) If $N ( x ) \stackrel { ( \mathrm { b } ) } { = } | R / x R |$ is prime, so that $R / x R$ has no nontrivial proper subgroup, then the ideal $x R$ is maximal, hence prime, i.e., x is prime in R.
+(c) If $N(x) = \abs{R/xR}$ (by (b)) is prime, so that $R/xR$ has no nontrivial proper subgroup, then the ideal $xR$ is maximal, hence prime, i.e., $x$ is prime in $R$.
 
-(d) By (c), if $p \ = \ a ^ { 2 } + n b ^ { 2 } \ = \ x \bar { x } \ ( x : = \ a + b \sqrt { - n } )$ is a Z-prime then $p = x { \bar { x } }$ is a factorization of p into R-primes.
-By (b), any unit $u + v { \sqrt { - n } }$ in R has norm $\pm 1$ , i.e., $u ^ { 2 } + n v ^ { 2 } = \pm 1$ , whence $u = \pm 1$ and $v = 0$ . Since factorization into primes is unique up to multiplying by units and permuting the factors, it follows that if $p = a ^ { 2 } + n b ^ { 2 } = c ^ { 2 } + n d ^ { 2 }$ with $a , b ,$ c and d all positive then $a = c$ and $b = d .$
+(d) By (c), if $p = a^2 + nb^2 = x\bar x$ with $x \coloneqq a + b\sqrt{-n}$ is a prime of $\mathbb Z$, then $p = x\bar x$ is a factorization of $p$ into primes of $R$.
+By (b), any unit $u + v\sqrt{-n}$ of $R$ has norm $1$, i.e., $u^2 + nv^2 = 1$, whence $u = \pm 1$ and $v = 0$. Since factorization into primes in an integral domain is unique up to multiplying by units and permuting the factors, it follows that if $p = a^2 + nb^2 = c^2 + nd^2$ with $a$, $b$, $c$ and $d$ all positive then $a = c$ and $b = d$.
 :::
