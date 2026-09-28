@@ -174,8 +174,7 @@ By step <1>4,
 $$
 \sum_{j=2}^{\infty}T_j
 <
-T_2
-\sum_{\ell=1}^{\infty}\frac{T_2}{4^\ell}
+\sum_{\ell=0}^{\infty}\frac{T_2}{4^\ell}
 =
 \frac43T_2
 =
