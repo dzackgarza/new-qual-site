@@ -139,7 +139,7 @@ Collapsing $T$ gives a homotopy equivalence $G\homotopic\bigvee^n S^1$, so $H_1(
 ::: {.example title="Isomorphic homotopy groups without a weak equivalence"}
 $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ have universal cover $S^2\cross S^3$ and fundamental group $\ZZ/2$, so their homotopy groups are isomorphic in every degree.
 They are not homotopy equivalent, since by the Künneth theorem $H_2(S^2 \cross \RP^3)\cong\ZZ$ while $H_2(S^3 \cross \RP^2)=0$.
-Whitehead's theorem requires a single map inducing the isomorphisms.
+Whitehead's theorem concludes that a map $f\colon X\to Y$ of connected CW complexes is a homotopy equivalence when $f_*\colon\pi_n(X)\to\pi_n(Y)$ is an isomorphism for every $n$; no map $S^2\cross\RP^3\to S^3\cross\RP^2$ induces these isomorphisms.
 
 :::
 
