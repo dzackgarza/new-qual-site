@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-TNFL4
 kind: proposition
 title: Integration by parts for indefinite integrals of $L^1$ functions
-slogan: 'Indefinite integrals of $L^1$ functions satisfy the usual integration-by-parts identity.'
+slogan: 'For $f,g\in L^1([0,1])$ with indefinite integrals $F,G$ from $0$, $\int_0^1 Fg=F(1)G(1)-\int_0^1 fG$.'
 classification:
   areas:
   - real-analysis
