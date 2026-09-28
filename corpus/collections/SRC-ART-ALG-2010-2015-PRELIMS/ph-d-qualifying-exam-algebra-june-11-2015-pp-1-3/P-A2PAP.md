@@ -49,8 +49,8 @@ $$
 It is well-defined: changing $a$ to $ac$ with $c^p=1$ does not
 change $a^p$. It is a homomorphism and is onto by the definition
 of $A^p$. If $a^p=b^p$, then $(b^{-1}a)^p=1$, so
-$aA[p]=bA[p]$; thus it is also injective. This proves the first
-isomorphism without any finiteness assumption.
+$aA[p]=bA[p]$; thus it is also injective, and
+$A/A[p]\cong A^p$.
 :::
 
 <1>2. If $A$ is finite, then $A/A^p$ and $A[p]$ have equal orders.
