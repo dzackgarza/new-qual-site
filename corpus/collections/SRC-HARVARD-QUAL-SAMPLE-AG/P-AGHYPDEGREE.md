@@ -83,7 +83,7 @@ The polynomial
 \]
 has leading part
 \[
-\frac1{n!}m^n+rac{n+1}{2(n-1)!}m^{n-1}+\cdots.
+\frac1{n!}m^n+\frac{n+1}{2(n-1)!}m^{n-1}+\cdots.
 \]
 Replacing $m$ by $m-d$ changes the degree-$n$ term by
 \[
