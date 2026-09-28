@@ -24,113 +24,94 @@ audit:
 ---
 
 ::: {.problem}
-Let $\left( a _ { n } \right)$ be a sequence of nonzero real numbers.
-Prove that the sequence of functions $f _ { n } : \mathbb { R } \to \mathbb { R }$
+Let $(a_n)$ be a sequence of nonzero real numbers.
+Prove that the sequence of functions $f_n:\RR\to\RR$
 
 $$
-f _ { n } ( x ) = { \frac { 1 } { a _ { n } } } \sin ( a _ { n } x ) + \cos ( x + a _ { n } )
+f_n(x)=\frac{1}{a_n}\sin(a_nx)+\cos(x+a_n)
 $$
 
 has a subsequence converging to a continuous function.
 :::
 
 ::: {.solution}
-Let
-\[
-f_n(x)=\frac{\sin(a_nx)}{a_n}+\cos(x+a_n),
-\qquad a_n\ne0.
-\]
-We distinguish whether $(a_n)$ has a bounded subsequence.
+<1>1. If $(a_n)$ has a bounded subsequence, then $(f_n)$ has a subsequence
+converging locally uniformly to a continuous function.
 
-<1>1. If $(a_n)$ has a bounded subsequence, then $(f_n)$ has a locally uniformly convergent subsequence.
 ::: {.proof}
 By Bolzano--Weierstrass, after passing to a subsequence we may assume
-\[
-a_n\to a\in\mathbb R.
-\]
+$$
+a_n\to a\in\RR.
+$$
 
-If $a\ne0$, then for each compact interval $K\subset\mathbb R$,
-\[
+If $a\ne0$, then for each compact interval $K\subset\RR$,
+$$
 \frac{\sin(a_nx)}{a_n}\longrightarrow \frac{\sin(ax)}a
-\]
+$$
 uniformly for $x\in K$, because the function
-\[
+$$
 (t,x)\longmapsto \frac{\sin(tx)}t
-\]
-is continuous near $\{a\}\times K$.
-Also
-\[
-\cos(x+a_n)\longrightarrow\cos(x+a)
-\]
-uniformly in $x$ because cosine is Lipschitz.
-Hence
-\[
+$$
+is uniformly continuous on $[a-\delta,a+\delta]\times K$ for
+$0<\delta<\abs{a}$. Also
+$$
+\abs{\cos(x+a_n)-\cos(x+a)}\le\abs{a_n-a},
+$$
+so $\cos(x+a_n)\to\cos(x+a)$ uniformly in $x$. Hence
+$$
 f_n(x)\longrightarrow \frac{\sin(ax)}a+\cos(x+a)
-\]
+$$
 locally uniformly.
 
-If $a=0$, write
-\[
-\frac{\sin(a_nx)}{a_n}
-=x\,\frac{\sin(a_nx)}{a_nx},
-\]
-with the quotient interpreted as $1$ at $x=0$.
-On every compact interval, $a_nx\to0$ uniformly, so
-\[
-\frac{\sin(a_nx)}{a_n}\longrightarrow x
-\]
-uniformly there.
-Also
-\[
-\cos(x+a_n)\longrightarrow\cos x
-\]
-uniformly.
-Thus
-\[
+If $a=0$, then $\abs{\sin u-u}\le\abs{u}^3/6$ gives
+$$
+\abs{\frac{\sin(a_nx)}{a_n}-x}\le\frac{a_n^2\abs{x}^3}{6},
+$$
+so $\sin(a_nx)/a_n\to x$ uniformly on every compact interval. Also
+$\cos(x+a_n)\to\cos x$ uniformly. Thus
+$$
 f_n(x)\longrightarrow x+\cos x
-\]
+$$
 locally uniformly.
 
 In either case the limit is continuous.
 :::
 
-<1>2. If $(a_n)$ has no bounded subsequence, then $(f_n)$ has a uniformly convergent subsequence.
-::: {.proof}
-If $(a_n)$ has no bounded subsequence, then after passing to a subsequence we may assume
-\[
-|a_n|\to\infty.
-\]
-Therefore
-\[
-\sup_{x\in\mathbb R}\left|\frac{\sin(a_nx)}{a_n}\right|
-\le \frac1{|a_n|}\longrightarrow0.
-\]
+<1>2. If $(a_n)$ has no bounded subsequence, then $(f_n)$ has a subsequence
+converging uniformly on $\RR$ to a continuous function.
 
-The points $e^{ia_n}$ lie on the compact unit circle, so after passing to a further subsequence,
-\[
+::: {.proof}
+If $(a_n)$ has no bounded subsequence, then $\abs{a_n}\to\infty$, so
+$$
+\sup_{x\in\RR}\abs{\frac{\sin(a_nx)}{a_n}}
+\le \frac1{\abs{a_n}}\longrightarrow0.
+$$
+
+The points $e^{ia_n}$ lie on the compact unit circle, so after passing to
+a subsequence,
+$$
 e^{ia_n}\to e^{i\theta}
-\]
-for some real $\theta$.
-Then for every $x$,
-\[
+$$
+for some real $\theta$. Then for every $x$,
+$$
 \begin{aligned}
-|\cos(x+a_n)-\cos(x+\theta)|
-&=\left|\Re\left(e^{ix}(e^{ia_n}-e^{i\theta})\right)\right|\\
-&\le |e^{ia_n}-e^{i\theta}|,
+\abs{\cos(x+a_n)-\cos(x+\theta)}
+&=\abs{\Re\left(e^{ix}(e^{ia_n}-e^{i\theta})\right)}\\
+&\le \abs{e^{ia_n}-e^{i\theta}},
 \end{aligned}
-\]
-and the right-hand side is independent of $x$ and tends to $0$.
-Hence
-\[
-\cos(x+a_n)\longrightarrow\cos(x+\theta)
-\]
-uniformly on $\mathbb R$.
-Combining the two terms,
-\[
+$$
+and the right-hand side is independent of $x$ and tends to $0$. Hence
+$\cos(x+a_n)\to\cos(x+\theta)$ uniformly on $\RR$, and
+$$
 f_n\longrightarrow \cos(x+\theta)
-\]
-uniformly, and the limit is continuous.
+$$
+uniformly, with continuous limit.
 :::
 
-Thus every sequence $(a_n)$ has a subsequence for which the corresponding functions converge to a continuous function.
+<1>3. Q.E.D.
+
+::: {.proof}
+Every real sequence either has a bounded subsequence or has none, so
+step <1>1 or step <1>2 applies.
+:::
 :::
