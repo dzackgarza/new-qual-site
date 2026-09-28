@@ -34,8 +34,6 @@ $$
 :::
 
 ::: {.solution}
-**Goal.** For a closed convex subset $K$ of a Hilbert space $H$, show each $x \in H$ has a unique closest point $y \in K$.
-
 <1>1. Existence.
 <2>1. Let $d = \inf_{z \in K} \|x - z\|$.
 ::: {.proof}
