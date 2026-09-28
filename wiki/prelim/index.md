@@ -18,7 +18,7 @@ Undergraduate calculus, analysis, linear algebra, and abstract algebra.
 
 - [[prelim/which-technique|Which technique?]] -- integration techniques by the form of the integrand, convergence tests for series, and methods for limits and multivariable integrals.
 
-- [[prelim/useful-tricks|Useful tricks]] -- tabular integration by parts and power series derived from the geometric series.
+- [[prelim/useful-tricks|Useful tricks]] -- tabular integration by parts, the Maclaurin series of $1/(1-x)$, $e^x$, $\cos x$, $\sin x$, $\ln(1+x)$, and $\arctan x$ with their intervals of validity, and the sums $\sum_n n^kx^n$.
 
 - [[prelim/counterexamples|Counterexamples]] -- counterexamples to false statements in analysis and algebra.
 
