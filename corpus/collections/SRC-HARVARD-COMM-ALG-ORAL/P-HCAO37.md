@@ -23,8 +23,6 @@ Can a surjective homomorphism of rings fail to be finite?
 :::
 
 ::: {.solution}
-**Goal.** Decide whether a surjective ring homomorphism is always finite.
-
 <1>1. A surjective ring homomorphism $\phi: R \to S$ is always finite.
 <2>1. $S$ is generated as an $R$-module by the single element $1_S$.
 ::: {.proof}
@@ -41,6 +39,6 @@ a ring homomorphism is finite iff the target is a finitely generated module over
 
 <1>2. Q.E.D.
 ::: {.proof}
-<1>1 shows a surjective homomorphism is always finite; the answer is "no, it cannot fail."
+By <1>1 every surjective ring homomorphism is finite, so no surjective ring homomorphism fails to be finite.
 :::
 :::
