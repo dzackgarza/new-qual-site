@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Compute
-\[
+$$
 \Delta_n=
 \det\left[\binom{i+j}{i}\right]_{0\le i,j\le n-1}.
-\]
+$$
 :::
 
 ::: {.solution}
