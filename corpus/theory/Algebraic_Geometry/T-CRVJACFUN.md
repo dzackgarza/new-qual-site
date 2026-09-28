@@ -95,7 +95,7 @@ Hence $\dim \Jac(X) = g$ by a second, independent route.
 :::
 
 ::: {.remark title="Comparison with the analytic construction"}
-Over $\CC$ one can write $\Jac(X) = H^0(\Omega^1)\dual / H_1(X,\ZZ)$ and prove Abel and Jacobi inversion by integration; that construction produces a complex torus and needs GAGA to become algebraic.
+Over $\CC$ one can write $\Jac(X) = \dualof{H^0(\Omega^1)} / H_1(X,\ZZ)$ and prove Abel and Jacobi inversion by integration; that construction produces a complex torus and needs GAGA to become algebraic.
 The functorial construction above needs no ground-field hypothesis and therefore applies in characteristic $p$ and to families, where the analytic construction is unavailable.
 The two agree over $\CC$, and the agreement is Abel's theorem.
 

@@ -29,9 +29,10 @@ Each is smooth, the support is all of $N_\RR$, so $\PP^2$ is smooth and complete
 :::
 
 ::: {.example title="The charts"}
-Let $\sigma_0 = \Cone(e_1, e_2)$, $\sigma_1 = \Cone(e_2, -e_1-e_2)$, $\sigma_2 = \Cone(-e_1-e_2, e_1)$. Their duals are
+Let $\sigma_0 = \Cone(e_1, e_2)$, $\sigma_1 = \Cone(e_2, -e_1-e_2)$, $\sigma_2 = \Cone(-e_1-e_2, e_1)$.
+Their duals are
 
-![The dual cones $\sigma_0\dual, \sigma_1\dual, \sigma_2\dual$.](../../../assets/algebraic-geometry/toric/dual-cones-of-fan-of-p2.png){width=300px}
+![The dual cones $\dualof{\sigma_0}, \dualof{\sigma_1}, \dualof{\sigma_2}$.](../../../assets/algebraic-geometry/toric/dual-cones-of-fan-of-p2.png){width=300px}
 
 and each $U_{\sigma_i} \cong \CC^2$, with coordinates
 \[

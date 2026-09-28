@@ -27,5 +27,5 @@ Show that $\displaystyle \sum_{n=0}^\infty |a'_n(z)|$ converges uniformly on bou
 
 - We have $\norm{f_n-f}_{\infty, D}\to 0$, the sup norm on $D$.
 
-- Pick a $\gamma$ in $\interior{D}$
+- Pick a $\gamma$ in $\interiorof{D}$
 :::

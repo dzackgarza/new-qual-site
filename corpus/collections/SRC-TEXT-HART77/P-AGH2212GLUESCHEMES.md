@@ -28,7 +28,7 @@ Let $\ts{X_i}$ be a possibly infinite family of schemes.
 For each $i \neq j$ suppose given an open subset $U_{ij} \subseteq X_i$ with its induced scheme structure.
 Suppose also given for each $i \neq j$ an isomorphism of schemes $\phi_{ij}: U_{ij} \to U_{ji}$ such that
 
-1. for each $i, j$, $\phi_{ji} = \phi_{ij}\inv$, and
+1. for each $i, j$, $\phi_{ji} = \inverseof{\phi_{ij}}$, and
 
 2. for each $i, j, k$, $\phi_{ij}(U_{ij} \intersect U_{ik}) = U_{ji} \intersect U_{jk}$ and $\phi_{ik} = \phi_{jk} \circ \phi_{ij}$ on $U_{ij} \intersect U_{ik}$.
 
@@ -67,8 +67,7 @@ x\in U_{ij}
 y=\phi_{ij}(x).
 \]
 Then $\sim$ is an equivalence relation.
-::: {.proof}
-Reflexivity follows from
+::: {.proof} Reflexivity follows from
 \[
 U_{ii}=X_i,
 \qquad
@@ -162,8 +161,7 @@ Thus $\psi_i$ is injective.
 V_i:=\psi_i(X_i)
 \]
 is open in $|X|$.
-::: {.proof}
-By definition of the quotient topology, it is enough to show that
+::: {.proof} By definition of the quotient topology, it is enough to show that
 \[
 q^{-1}(V_i)
 \]
@@ -193,14 +191,15 @@ Every $U_{ji}$ is open in $X_j$, so this is open in the disjoint-union topology.
 \psi_i:X_i\longrightarrow V_i
 \]
 is a homeomorphism.
-::: {.proof}
-It is already a continuous bijection by <1>2 and the definition of the quotient topology.  We show it is open.
+::: {.proof} It is already a continuous bijection by <1>2 and the definition of the quotient topology.
+We show it is open.
 
 Let
 \[
 W\subseteq X_i
 \]
-be open.  The inverse image in $S$ of
+be open.
+The inverse image in $S$ of
 \[
 \psi_i(W)
 \]
@@ -209,11 +208,13 @@ has, in the component $X_j$, the subset
 \phi_{ij}(W\cap U_{ij})
 \subseteq U_{ji}
 \]
-for $j\ne i$, and has $W$ in the component $X_i$.  Each of these sets is open because
+for $j\ne i$, and has $W$ in the component $X_i$.
+Each of these sets is open because
 \[
 \phi_{ij}:U_{ij}\xrightarrow{\sim}U_{ji}
 \]
-is a homeomorphism.  Thus
+is a homeomorphism.
+Thus
 \[
 q^{-1}(\psi_i(W))
 \]
@@ -238,8 +239,7 @@ Moreover,
 \quad\text{on }U_{ij}.
 }
 \]
-::: {.proof}
-The images cover because every equivalence class has a representative in some component $X_i$.
+::: {.proof} The images cover because every equivalence class has a representative in some component $X_i$.
 
 A point of $V_i$ belongs to $V_j$ exactly when its representative
 \[
@@ -270,14 +270,14 @@ The scheme isomorphisms $\phi_{ij}$ induce compatible sheaf isomorphisms
 \xrightarrow{\sim}
 \mathcal G_j|_{V_i\cap V_j}.
 \]
-::: {.proof}
-Define
+::: {.proof} Define
 \[
 \mathcal G_i=(\psi_i)_*\mathcal O_{X_i}
 \]
 on $V_i$, using the homeomorphism $\psi_i$.
 
-By <1>5, the overlap $V_i\cap V_j$ corresponds under $\psi_i$ to $U_{ij}$ and under $\psi_j$ to $U_{ji}$.  The scheme isomorphism
+By <1>5, the overlap $V_i\cap V_j$ corresponds under $\psi_i$ to $U_{ij}$ and under $\psi_j$ to $U_{ji}$.
+The scheme isomorphism
 \[
 \phi_{ij}:U_{ij}\xrightarrow{\sim}U_{ji}
 \]
@@ -321,14 +321,14 @@ is a scheme, and each
 \psi_i:X_i\longrightarrow X
 \]
 is an isomorphism of schemes onto the open subscheme $V_i$.
-::: {.proof}
-By construction,
+::: {.proof} By construction,
 \[
 (V_i,\mathcal O_X|_{V_i})
 \cong
 (X_i,\mathcal O_{X_i})
 \]
-as locally ringed spaces.  Thus every $V_i$ is itself a scheme and $\psi_i$ is an isomorphism onto it.
+as locally ringed spaces.
+Thus every $V_i$ is itself a scheme and $\psi_i$ is an isomorphism onto it.
 
 The opens $V_i$ cover $X$.  Each $X_i$ has an affine open cover, and transporting all those affine opens through the $\psi_i$ gives an affine open cover of $X$.  Hence $X$ is a scheme.
 :::
@@ -347,8 +347,7 @@ The first property is <1>8, and the remaining three are <1>5.
 :::
 
 <1>10. The glued scheme is unique up to a unique isomorphism compatible with the maps $\psi_i$.
-::: {.proof}
-Suppose
+::: {.proof} Suppose
 \[
 X'
 \]
@@ -356,7 +355,8 @@ with maps
 \[
 \psi_i':X_i\to X'
 \]
-has the same four properties.  On the open subset
+has the same four properties.
+On the open subset
 \[
 V_i=\psi_i(X_i)\subseteq X,
 \]
@@ -383,7 +383,8 @@ so
 \[
 F_i=F_j
 \]
-on the overlap.  Hence the morphisms $F_i$ glue to a morphism
+on the overlap.
+Hence the morphisms $F_i$ glue to a morphism
 \[
 F:X\to X'.
 \]
@@ -408,8 +409,7 @@ X=\coprod_iX_i
 }
 \]
 is their disjoint union as a scheme.
-::: {.proof}
-The equivalence relation of <1>1 becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
+::: {.proof} The equivalence relation of <1>1 becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
 
 There are no nontrivial overlap isomorphisms of structure sheaves to impose.  Thus $\mathcal O_X$ restricts independently to $\mathcal O_{X_i}$ on each open-and-closed component.  This is precisely the scheme-theoretic disjoint union.
 :::

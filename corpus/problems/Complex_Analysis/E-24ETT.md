@@ -18,8 +18,8 @@ review: draft
 ::: {.problem}
 Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$.
 
-Show that 
-\[  
+Show that
+\[
 \Forall 0 < r < 1,\qquad g\qty{\theset{\abs{z} < r}} \subseteq f\qty{\theset{\abs{z} < r}}
 .\]
 
@@ -30,10 +30,11 @@ Show that
 ::: {.solution}
 Assume that $f$ is a bijection $\DD\to\Omega$; the remark gives a counterexample without this hypothesis.
 
-<1>1. $F\coloneqq f\inv\circ g$ is a holomorphic map $\DD\to\DD$ with $F(0)=0$.
+<1>1. $F\coloneqq \inverseof{f}\circ g$ is a holomorphic map $\DD\to\DD$ with $F(0)=0$.
 
 ::: {.proof}
-The inverse $f\inv\colon\Omega\to\DD$ of the bijective holomorphic map $f$ is holomorphic, and $g(\DD)\subseteq\Omega$, so $F$ is defined and holomorphic on $\DD$ with values in $\DD$. Since $g(0)=f(0)$, we have $F(0)=f\inv(f(0))=0$.
+The inverse $\inverseof{f}\colon\Omega\to\DD$ of the bijective holomorphic map $f$ is holomorphic, and $g(\DD)\subseteq\Omega$, so $F$ is defined and holomorphic on $\DD$ with values in $\DD$.
+Since $g(0)=f(0)$, we have $F(0)=\inverseof{f}(f(0))=0$.
 :::
 
 <1>2. $\abs{F(z)}\le\abs{z}$ for all $z\in\DD$.
@@ -50,5 +51,6 @@ Let $0<r<1$ and $\abs{z}<r$. By step <1>2, $w\coloneqq F(z)$ satisfies $\abs{w}<
 :::
 
 ::: {.remark}
-The inclusion requires $f(\DD)=\Omega$. For $\Omega=\CC$, $f(z)=z$ and $g(z)=2z$, the image $g\qty{\theset{\abs z<r}}$ is the disk of radius $2r$, which is not contained in $f\qty{\theset{\abs z<r}}$.
+The inclusion requires $f(\DD)=\Omega$.
+For $\Omega=\CC$, $f(z)=z$ and $g(z)=2z$, the image $g\qty{\theset{\abs z<r}}$ is the disk of radius $2r$, which is not contained in $f\qty{\theset{\abs z<r}}$.
 :::

@@ -23,11 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f: X \to Y$, with $Y$ irreducible, is **generically finite** if $f\inv(\eta)$ is a finite set, where $\eta$ is the generic point of $Y$.
+A morphism $f: X \to Y$, with $Y$ irreducible, is **generically finite** if $\inverseof{f}(\eta)$ is a finite set, where $\eta$ is the generic point of $Y$.
 A morphism $f: X \to Y$ is **dominant** if $f(X)$ is dense in $Y$.
 
 Now let $f: X \to Y$ be a dominant, generically finite morphism of finite type of integral schemes.
-Show that there is an open dense subset $U \subseteq Y$ such that the induced morphism $f\inv(U) \to U$ is finite.
+Show that there is an open dense subset $U \subseteq Y$ such that the induced morphism $\inverseof{f}(U) \to U$ is finite.
 :::
 
 ::: {.remark}
@@ -47,12 +47,14 @@ L=K(X).
 Y=\Spec B
 \]
 with $B$ a domain, while all the hypotheses remain true.
-::: {.proof}
-Every nonempty open subset of the integral scheme $Y$ is dense.  If
+::: {.proof} Every nonempty open subset of the integral scheme $Y$ is dense.
+If
 \[
 V\subseteq Y
 \]
-is nonempty affine, then $f^{-1}(V)$ is a nonempty open subset of the integral scheme $X$, hence is integral.  Dominance, finite type, and the generic fibre are unchanged after this restriction.  Any dense open found inside $V$ is also dense in the original $Y$.
+is nonempty affine, then $f^{-1}(V)$ is a nonempty open subset of the integral scheme $X$, hence is integral.
+Dominance, finite type, and the generic fibre are unchanged after this restriction.
+Any dense open found inside $V$ is also dense in the original $Y$.
 :::
 
 <1>2. There is a finite affine cover
@@ -61,7 +63,8 @@ X=U_1\cup\cdots\cup U_r,
 \qquad
 U_i=\Spec A_i,
 \]
-such that every $A_i$ is a finitely generated $B$-algebra.  Moreover
+such that every $A_i$ is a finitely generated $B$-algebra.
+Moreover
 \[
 B\hookrightarrow A_i,
 \qquad
@@ -69,8 +72,7 @@ B\hookrightarrow A_i,
 \qquad
 \operatorname{Frac}(A_i)=L.
 \]
-::: {.proof}
-By Hartshorne II.3.3(b), finite type over the affine scheme $Y=\Spec B$ gives a finite affine cover with each $A_i$ finitely generated over $B$.
+::: {.proof} By Hartshorne II.3.3(b), finite type over the affine scheme $Y=\Spec B$ gives a finite affine cover with each $A_i$ finitely generated over $B$.
 
 Discard any empty member.  Since $X$ is irreducible, every nonempty open $U_i$ contains the generic point $\xi$ of $X$.  Dominance gives
 \[
@@ -83,8 +85,7 @@ the generic point of $Y$.  Hence the ring map $B\to A_i$ has zero kernel, and II
 \[
 \boxed{L/K\text{ is finite}.}
 \]
-::: {.proof}
-Fix one affine chart $U_i=\Spec A_i$ and let
+::: {.proof} Fix one affine chart $U_i=\Spec A_i$ and let
 \[
 S=B\setminus\{0\}.
 \]
@@ -94,7 +95,8 @@ Its generic fibre is
 =
 \Spec(S^{-1}A_i).
 \]
-This is an open subscheme of the finite set $X_\eta$, hence has finitely many points.  The ring
+This is an open subscheme of the finite set $X_\eta$, hence has finitely many points.
+The ring
 \[
 R=S^{-1}A_i
 \]
@@ -112,7 +114,8 @@ If $d>0$, lying over would give a surjection
 \[
 \Spec R\longrightarrow\Spec K[t_1,\ldots,t_d],
 \]
-but the target has infinitely many prime ideals, contradicting finiteness of $\Spec R$.  Hence $d=0$.
+but the target has infinitely many prime ideals, contradicting finiteness of $\Spec R$.
+Hence $d=0$.
 
 Therefore $R$ is finite-dimensional over $K$.  Since $R$ is a domain, it is a field.  It contains $A_i$, so it contains the fraction field of $A_i$; conversely it lies inside that fraction field.  Thus
 \[
@@ -122,12 +125,13 @@ Hence $[L:K]<\infty$.
 :::
 
 <1>4. After replacing $Y$ by a smaller dense distinguished open, we may assume that every $A_i$ is finite as a $B$-module.
-::: {.proof}
-For each $i$, choose algebra generators
+::: {.proof} For each $i$, choose algebra generators
 \[
 A_i=B[\alpha_{i1},\ldots,\alpha_{in_i}].
 \]
-By <1>3, every $\alpha_{ij}\in L$ is algebraic over $K=\operatorname{Frac}(B)$.  For each generator choose a monic polynomial over $K$ which it satisfies.  Clearing the finitely many denominators occurring in all these polynomials, there is one nonzero element
+By <1>3, every $\alpha_{ij}\in L$ is algebraic over $K=\operatorname{Frac}(B)$.
+For each generator choose a monic polynomial over $K$ which it satisfies.
+Clearing the finitely many denominators occurring in all these polynomials, there is one nonzero element
 \[
 d\in B
 \]
@@ -198,8 +202,7 @@ Then
 \[
 f^{-1}(D(b))\subseteq W.
 \]
-::: {.proof}
-The product $b$ is nonzero because $B$ is a domain.
+::: {.proof} The product $b$ is nonzero because $B$ is a domain.
 
 Let $x\in f^{-1}(D(b))$.  Choose $i$ with $x\in U_i$.  Since $b$ is a unit at $f(x)$, so is every factor $b_i$.  Thus
 \[

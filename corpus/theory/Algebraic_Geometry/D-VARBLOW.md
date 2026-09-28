@@ -25,8 +25,8 @@ $$
 \Bl_0 \AA^n \da \ts{ (x, \ell) \in \AA^n \times \PP^{n-1} \st x \in \ell } ,
 $$
 with $\pi$ the first projection.
-For $X\subseteq\AA^n$ a closed subvariety through $p=0$, $\Bl_p X$ is the closure of $\pi\inv(X \sm \ts{p})$ inside $\Bl_0 \AA^n$; for a variety $X$ and $p\in X$, it is defined through an affine neighbourhood of $p$ embedded in some $\AA^n$.
-The \dfn{exceptional divisor} is $E \da \pi\inv(p)\cap\Bl_pX$, and the \dfn{proper transform} of a subvariety $C \subseteq X$ is the closure of $\pi\inv(C \sm \ts{p})$.
+For $X\subseteq\AA^n$ a closed subvariety through $p=0$, $\Bl_p X$ is the closure of $\inverseof{\pi}(X \sm \ts{p})$ inside $\Bl_0 \AA^n$; for a variety $X$ and $p\in X$, it is defined through an affine neighbourhood of $p$ embedded in some $\AA^n$.
+The \dfn{exceptional divisor} is $E \da \inverseof{\pi}(p)\cap\Bl_pX$, and the \dfn{proper transform} of a subvariety $C \subseteq X$ is the closure of $\inverseof{\pi}(C \sm \ts{p})$.
 :::
 
 ::: {.proposition}

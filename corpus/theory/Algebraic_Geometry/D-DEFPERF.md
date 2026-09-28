@@ -36,7 +36,7 @@ Over $\ZZ$, the pairing $\ZZ\tensor_\ZZ\ZZ\to\ZZ$, $a\tensor b\mapsto 2ab$, is n
 Let $X$ be a nonsingular projective variety of dimension $n$ over an algebraically closed field $k$, and let $\mcf$ be a locally free sheaf of finite rank.
 Serre duality asserts that the cup product
 $$
-H^i(X;\mcf) \tensor H^{n-i}(X; \mcf\dual \tensor \omega_X) \to H^n(X;\omega_X) \cong k
+H^i(X;\mcf) \tensor H^{n-i}(X; \dualof{\mcf} \tensor \omega_X) \to H^n(X;\omega_X) \cong k
 $$
-is a perfect pairing of finite-dimensional $k$-vector spaces [@Har10a, Corollary III.7.7]; so $h^i(\mcf) = h^{n-i}(\mcf\dual \tensor \omega_X)$.
+is a perfect pairing of finite-dimensional $k$-vector spaces [@Har10a, Corollary III.7.7]; so $h^i(\mcf) = h^{n-i}(\dualof{\mcf} \tensor \omega_X)$.
 :::

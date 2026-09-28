@@ -15,10 +15,15 @@ topics:
 \envlist
 
 - the sphere $\SS ^2$;
+
 - the torus $\TT^2 \coloneqq  S^1\cross S^1$;
+
 - the real projective plane $\RP^2$;
+
 - the Klein bottle $\KK$;
+
 - the Möbius band $\bbm$;
+
 - the closed orientable surface of genus $g$, $\Sigma_g \coloneqq \#_{i=1}^g \TT^2$.
 
 The Möbius band, the annulus $S^1\cross I$, $\TT^2$, $\KK$, and $\RP^2$ are quotients of a square by the edge identifications in these pasting diagrams:
@@ -35,7 +40,7 @@ The Möbius band, the annulus $S^1\cross I$, $\TT^2$, $\KK$, and $\RP^2$ are quo
 
 ::: {.remark}
 A compact connected surface is therefore determined up to homeomorphism by its orientability, its number $b$ of boundary components, and its Euler characteristic.
-A polygon model computes these: the edge word of a polygon with identifications reduces to a normal form $a_1b_1a_1\inv b_1\inv\cdots a_gb_ga_g\inv b_g\inv$ or $a_1a_1\cdots a_ka_k$, together with the unpaired boundary edges.
+A polygon model computes these: the edge word of a polygon with identifications reduces to a normal form $a_1b_1\inverseof{a_1} \inverseof{b_1}\cdots a_gb_g\inverseof{a_g} \inverseof{b_g}$ or $a_1a_1\cdots a_ka_k$, together with the unpaired boundary edges.
 For example, the torus and the annulus both have Euler characteristic $0$ and are not homeomorphic, since $b=0$ for the torus and $b=2$ for the annulus.
 
 :::
@@ -56,10 +61,10 @@ For example, the torus and the annulus both have Euler characteristic $0$ and ar
 The closed orientable surface $\Sigma_g$ has $\chi = 2-2g$, and the closed nonorientable surface $N_k \coloneqq \#_{i=1}^k\RP^2$ has $\chi = 2-k$.
 Removing the interiors of $b$ disjoint discs lowers $\chi$ by $b$.
 
-| Orientable | $-4$       | $-3$        | $-2$       | $-1$        | $0$     | $1$     | $2$         |
+| Orientable | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |
 | ---------- | ---        | ----        | ----       | ---         | ---     | ---     | ---         |
-| Yes        | $\Sigma_3$ | none        | $\Sigma_2$ | none        | $\TT^2$ | none    | $\SS^2$     |
-| No         | $N_6$      | $N_5$       | $N_4$      | $N_3$       | $\KK$   | $\RP^2$ | none        |
+| Yes | $\Sigma_3$ | none | $\Sigma_2$ | none | $\TT^2$ | none | $\SS^2$ |
+| No | $N_6$ | $N_5$ | $N_4$ | $N_3$ | $\KK$ | $\RP^2$ | none |
 
 With boundary, $\chi=0$ also includes the annulus $S^1\cross I$ and the Möbius band $\bbm$, and $\chi=1$ includes the disc $\DD^2$.
 

@@ -16,14 +16,14 @@ review: draft
 ---
 
 ::: {.problem}
-Let 
+Let
 \[
 M=\left(\begin{array}{ll}{a} & {b} \\ {c} & {d}\end{array}\right)
-\quad \text{and} \quad 
+\quad \text{and} \quad
 N=\left(\begin{array}{cc}{x} & {u} \\ {-y} & {-v}\end{array}\right)
 \]
 
-over a commutative ring $R$, where $b$ and $x$ are units of $R$. 
+over a commutative ring $R$, where $b$ and $x$ are units of $R$.
 Prove that
 \[
 M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
@@ -46,31 +46,38 @@ M N=\left(\begin{array}{ll}{0} & {0} \\ {0} & {*}\end{array}\right)
   .\]
 
 - Writing $cu$:
-  - Use that $b\in R\units$, left-multiply (1) by $b\inv$ to get $b\inv a x = y$
-  - Substitute $y$ into (2) to get $cx = d(b\inv a x)$.
-  - Since $x\in R\units$, right-multiply by $x\inv$ to get $c = db\inv a$ and thus $cu = db\inv a u$.
+
+  - Use that $b\in \unitsof{R}$, left-multiply (1) by $\inverseof{b}$ to get $\inverseof{b} a x = y$
+
+  - Substitute $y$ into (2) to get $cx = d(\inverseof{b} a x)$.
+
+  - Since $x\in \unitsof{R}$, right-multiply by $\inverseof{x}$ to get $c = d\inverseof{b} a$ and thus $cu = d\inverseof{b} a u$.
+
   - Summary:
   \[
   ax = by 
-  &\implies b\inv ax = y \\
-  &\implies cx = dy = d(b\inv a x) \\
-  &\implies c = db\inv a \\
-  &\implies cu = db\inv au 
+  &\implies \inverseof{b} ax = y \\
+  &\implies cx = dy = d(\inverseof{b} a x) \\
+  &\implies c = d\inverseof{b} a \\
+  &\implies cu = d\inverseof{b} au 
   .\]
 
 - Writing $dv$:
-  - Left-multiply (3) by $b\inv$ to get $b\inv au = v$.
-  - Left-multiply by $d$ to get $db\inv au = dv$
+
+  - Left-multiply (3) by $\inverseof{b}$ to get $\inverseof{b} au = v$.
+
+  - Left-multiply by $d$ to get $d\inverseof{b} au = dv$
+
   - Summary:
   \[
   au = bv 
-  &\implies b\inv a u = v \\
-  &\implies db\inv au = dv
+  &\implies \inverseof{b} a u = v \\
+  &\implies d\inverseof{b} au = dv
   .\]
 
 - So 
 \[
-cu = db\inv a u = dv
+cu = d\inverseof{b} a u = dv
 .\]
 
 :::

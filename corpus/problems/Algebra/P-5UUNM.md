@@ -20,11 +20,8 @@ Show that $Z(G) \leq G$ is always characteristic.
 
 ::: {.solution}
 Let $\psi\in \Aut(G)$, $g\in Z(G)$, and $h\in G$.
-Since $g$ commutes with $\psi\inv(h)$,
-$$\psi(g)h=\psi(g)\,\psi(\psi\inv(h))=\psi(g\,\psi\inv(h))=\psi(\psi\inv(h)\,g)=h\,\psi(g).$$
-As $h$ is arbitrary, $\psi(g)\in Z(G)$, so $\psi(Z(G)) \subseteq Z(G)$.
-Applying the same argument to $\psi\inv$ yields $\psi\inv(Z(G)) \subseteq Z(G)$.
-Since $\psi$ is a bijection, $\psi\psi\inv(A) = A$ for all $A\leq G$, 
-so $Z(G) \subseteq \psi(Z(G))$.
+Since $g$ commutes with $\inverseof{\psi}(h)$, $$\psi(g)h=\psi(g)\,\psi(\inverseof{\psi}(h))=\psi(g\,\inverseof{\psi}(h))=\psi(\inverseof{\psi}(h)\,g)=h\,\psi(g).$$ As $h$ is arbitrary, $\psi(g)\in Z(G)$, so $\psi(Z(G)) \subseteq Z(G)$.
+Applying the same argument to $\inverseof{\psi}$ yields $\inverseof{\psi}(Z(G)) \subseteq Z(G)$.
+Since $\psi$ is a bijection, $\psi\inverseof{\psi}(A) = A$ for all $A\leq G$, so $Z(G) \subseteq \psi(Z(G))$.
 
 :::

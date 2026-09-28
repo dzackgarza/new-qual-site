@@ -40,12 +40,12 @@ Now let $(X,\OO_X)$ be a ringed space and $\mcf$ a sheaf of $\OO_X$-modules.
 Define the tensor, symmetric, and exterior algebras of $\mcf$ by sheafifying the presheaf which assigns to each open set $U$ the corresponding operation applied to $\mcf(U)$ as an $\OO_X(U)$-module.
 
 (a) Suppose $\mcf$ is locally free of rank $n\ge1$, and let $r\ge0$.
-Then $T^r(\mcf)$, $S^r(\mcf)$, and $\bigwedge^r(\mcf)$ are also locally free, of ranks $n^r$, $\binom{n + r - 1}{n - 1}$, and $\binom{n}{r}$ respectively.
-For rank $n=0$, all three degree-zero sheaves are $\OO_X$ and all their positive-degree components are zero.
+    Then $T^r(\mcf)$, $S^r(\mcf)$, and $\bigwedge^r(\mcf)$ are also locally free, of ranks $n^r$, $\binom{n + r - 1}{n - 1}$, and $\binom{n}{r}$ respectively.
+    For rank $n=0$, all three degree-zero sheaves are $\OO_X$ and all their positive-degree components are zero.
 
 (b) Again let $\mcf$ be locally free of rank $n\ge0$.
-For $0\le r\le n$, the multiplication map $\bigwedge^r\mcf\tensor\bigwedge^{n-r}\mcf\to\bigwedge^n\mcf$ is a perfect pairing: it induces an isomorphism of $\bigwedge^r\mcf$ with $(\bigwedge^{n-r}\mcf)\dual\tensor\bigwedge^n\mcf$.
-As a special case, if $\mcf$ has rank $2$ then $\mcf \cong \mcf\dual \tensor \bigwedge^2 \mcf$.
+    For $0\le r\le n$, the multiplication map $\bigwedge^r\mcf\tensor\bigwedge^{n-r}\mcf\to\bigwedge^n\mcf$ is a perfect pairing: it induces an isomorphism of $\bigwedge^r\mcf$ with $\dualof{(\bigwedge^{n-r}\mcf)}\tensor\bigwedge^n\mcf$.
+    As a special case, if $\mcf$ has rank $2$ then $\mcf \cong \dualof{\mcf} \tensor \bigwedge^2 \mcf$.
 
 (c) Let $0\to\mcf'\to\mcf\to\mcf''\to0$ be an exact sequence of locally free sheaves.
 Then for any $r\ge0$ there is a finite filtration
@@ -55,13 +55,11 @@ $$
 with quotients $F^p/F^{p+1} \cong S^p(\mcf') \tensor S^{r-p}(\mcf'')$ for each $p$.
 
 (d) Prove the same statement as (c), with exterior powers instead of symmetric powers.
-In particular, for finite ranks $n',n,n''$ with $n=n'+n''$, prove the induced isomorphism
-$$
-\bigwedge^n\mcf\cong\bigwedge^{n'}\mcf'\tensor\bigwedge^{n''}\mcf''.
+    In particular, for finite ranks $n',n,n''$ with $n=n'+n''$, prove the induced isomorphism $$ \bigwedge^n\mcf\cong\bigwedge^{n'}\mcf'\tensor\bigwedge^{n''}\mcf''.
 $$
 
 (e) Let $f:X\to Y$ be a morphism of ringed spaces and $\mcf$ an $\OO_Y$-module.
-Then $f^*$ commutes with all the tensor operations: for example, $f^*(S^n(\mcf))\cong S^n(f^*\mcf)$ naturally.
+    Then $f^*$ commutes with all the tensor operations: for example, $f^*(S^n(\mcf))\cong S^n(f^*\mcf)$ naturally.
 :::
 
 ::: {.solution}
@@ -106,7 +104,7 @@ On a framed open set, let $I\subseteq\{1,\ldots,n\}$ have size $r$ and let $I^c$
 The product $e_I\wedge e_J$ is zero for $|J|=n-r$ unless $J=I^c$.
 For $J=I^c$ it is $\varepsilon_I e_1\wedge\cdots\wedge e_n$, where $\varepsilon_I\in\{1,-1\}$ is the sign of the permutation listing $I$ before $I^c$.
 Consequently the displayed morphism has a signed permutation matrix in these frames and is an isomorphism over every coefficient ring.
-By [[P-AGH251DUALSHEAF]], $\sheafhom(\mathcal G,\mathcal L)\cong\mathcal G\dual\otimes\mathcal L$, giving the required isomorphism.
+By [[P-AGH251DUALSHEAF]], $\sheafhom(\mathcal G,\mathcal L)\cong\dualof{\mathcal G}\otimes\mathcal L$, giving the required isomorphism.
 It is canonical because exterior multiplication was defined before choosing the frames.
 Taking $n=2$ and $r=1$ gives the stated rank-two identity.
 For $n=r=0$, the pairing is multiplication $\OO_X\otimes\OO_X\to\OO_X$ and is again perfect.
@@ -159,8 +157,7 @@ Exterior multiplication gives the indicated subsheaves and their inclusions $G^{
 Multiplying $p$ local sections from $\mcf'$ with local lifts of $r-p$ sections from $\mcf''$ defines a class modulo $G^{p+1}$.
 It is independent of the lifts by the same extra-factor argument as in step <1>3 and is alternating in each group, so it defines the comparison morphism on exterior powers.
 
-At each stalk, split $M\cong M'\oplus M''$ as in step <1>3.
-The increasing wedge basis, ordered with the basis of $M'$ before that of $M''$, decomposes $\bigwedge^r_B M$ by the number $q$ of factors from $M'$.
+At each stalk, split $M\cong M'\oplus M''$ as in step <1>3. The increasing wedge basis, ordered with the basis of $M'$ before that of $M''$, decomposes $\bigwedge^r_B M$ by the number $q$ of factors from $M'$.
 The subsheaf $G^p$ has the summands $q\ge p$, and its quotient by $G^{p+1}$ has precisely the summand $q=p$.
 The comparison morphism identifies this summand with $\bigwedge^p_BM'\otimes_B\bigwedge^{r-p}_BM''$.
 It is therefore an isomorphism on every stalk.

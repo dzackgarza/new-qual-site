@@ -22,7 +22,7 @@ Show that the composite function $f\circ g$ is also injective.
 :::
 
 ::: {.solution}
-1. Lemma: $f$ is injective $\iff f$ has a left inverse $f\inv$ satisfying $f\inv f(a) = a$.
+1. Lemma: $f$ is injective $\iff f$ has a left inverse $\inverseof{f}$ satisfying $\inverseof{f} f(a) = a$.
 
    Suppose $f,g: A \to A$ are injective and $x,y \in A$, we want to show that $(f\circ g)(x) = (f\circ g)(y) \implies x = y$.
    So suppose $f(g(x)) = f(g(y))$.
@@ -34,8 +34,7 @@ Show that the composite function $f\circ g$ is also injective.
 **Goal:** Prove that if $A$ is a set and $f, g: A \to A$ are injective functions, then their composition $f \circ g: A \to A$ is injective.
 
 <1>1. Definition: A function $h: A \to A$ is injective if for all $x, y \in A$, $h(x) = h(y) \implies x = y$.
-::: {.proof}
-By the standard definition of injectivity.
+::: {.proof} By the standard definition of injectivity.
 :::
 
 <1>2. Assume $f: A \to A$ and $g: A \to A$ are injective functions.

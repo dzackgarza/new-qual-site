@@ -24,7 +24,7 @@ Fundamental groups and integral homology of spheres, tori, projective spaces, cl
 | $T^n$ | $\ZZ^n$ | $\ZZ^{\binom nk}$ in degree $k$ | universal cover $\RR^n$; product of circles |
 | $\RP^n$, $n\geq 2$ | $\ZZ/2$ | $\ZZ, \ZZ/2, 0, \ZZ/2, \dots$ | universal cover $S^n$; $H_n = \ZZ$ iff $n$ odd |
 | $\CP^n$ | $1$ | $\ZZ$ in every even degree $\leq 2n$ | no odd cells, so all boundary maps vanish |
-| Klein bottle $K$ | $\gens{a,b \st abab\inv}$ | $\ZZ, \ZZ\oplus\ZZ/2, 0$ | non-orientable, so $H_2 = 0$ |
+| Klein bottle $K$ | $\gens{a,b \st aba\inverseof{b}}$ | $\ZZ, \ZZ\oplus\ZZ/2, 0$ | non-orientable, so $H_2 = 0$ |
 | $\Sigma_g$, genus $g$ | $\gens{a_i,b_i \st \prod[a_i,b_i]}$ | $\ZZ, \ZZ^{2g}, \ZZ$ | closed orientable |
 | $N_k$, $k$ crosscaps | $\gens{a_i \st \prod a_i^2}$ | $\ZZ, \ZZ^{k-1}\oplus\ZZ/2, 0$ | closed non-orientable |
 | $\bigvee_n S^1$ | free on $n$ | $\ZZ, \ZZ^n$ | $\pi_1$ free, homology free |
@@ -39,9 +39,7 @@ Fundamental groups and integral homology of spheres, tori, projective spaces, cl
 
 - **Wedges.** For good pointed spaces, $\tilde H_*(X\vee Y) \cong \tilde H_*(X)\oplus\tilde H_*(Y)$, and if $X$ and $Y$ are CW complexes wedged at $0$-cells, $\pi_1(X\vee Y)\cong\pi_1(X)*\pi_1(Y)$ by van Kampen's theorem.
 
-- **Products.** $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$, and by the Künneth theorem for CW complexes
-$$
-H_n(X\times Y)\cong \bigoplus_{i+j=n} H_i(X)\tensor H_j(Y)\ \oplus \bigoplus_{i+j=n-1}\Tor(H_i(X),H_j(Y)).
+- **Products.** $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$, and by the Künneth theorem for CW complexes $$ H_n(X\times Y)\cong \bigoplus_{i+j=n} H_i(X)\tensor H_j(Y)\ \oplus \bigoplus_{i+j=n-1}\Tor(H_i(X),H_j(Y)).
 $$
 
 - **Deleting a point.** If a closed $n$-manifold $M$ has a CW structure with a single $n$-cell, then $M$ minus a point in that cell deformation retracts onto the $(n-1)$-skeleton; a closed surface minus a point deformation retracts onto a wedge of circles.

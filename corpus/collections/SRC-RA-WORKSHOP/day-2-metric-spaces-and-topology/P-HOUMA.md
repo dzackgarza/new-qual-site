@@ -23,8 +23,7 @@ Prove that for each $x_0 \in X$, the set $\{x \in X \, \colon \,  d(x,x_0) = r\}
 :::
 ::: {.solution}
 <1>1. Fix $x_0 \in X$ and $r > 0$; the map $d_{x_0} : X \to [0, \infty)$, $x \mapsto d(x, x_0)$, is continuous.
-::: {.proof}
-the triangle inequality gives $|d(x, x_0) - d(y, x_0)| \le d(x, y)$.
+::: {.proof} the triangle inequality gives $|d(x, x_0) - d(y, x_0)| \le d(x, y)$.
 :::
 
 <1>2. $d_{x_0}$ is unbounded: for every $M$ there is $x \in X$ with $d(x, x_0) > M$.
@@ -42,7 +41,7 @@ $d_{x_0}(X)$ is the continuous image of the connected space $X$, hence connected
 $0 \in d_{x_0}(X)$ (<1>3) and $d_{x_0}$ is unbounded (<1>2), so the interval $d_{x_0}(X) \supseteq [0, \infty)$; in particular $r$ lies in the image.
 :::
 
-<1>5. Q.E.D.: $\{x \in X : d(x, x_0) = r\} = d_{x_0}\inv(r) \neq \varnothing$ for every $r \ge 0$.
+<1>5. Q.E.D.: $\{x \in X : d(x, x_0) = r\} = \inverseof{d_{x_0}}(r) \neq \varnothing$ for every $r \ge 0$.
 ::: {.proof}
 <1>4 says $r$ has a preimage under $d_{x_0}$, which is exactly a point at distance $r$ from $x_0$.
 :::

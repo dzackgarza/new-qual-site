@@ -40,7 +40,7 @@ $$
 $$
 These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \da X_{\Sigma_P}$.
 Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the whole poset is reversed.
-The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \Cone(P \cap M - m_i)\dual$.
+The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \dualof{\Cone(P \cap M - m_i)}$.
 :::
 
 ::: {.definition title="Combinatorial equivalence"}
@@ -60,7 +60,7 @@ Let $P$ be a full-dimensional lattice polytope.
 
 2. If $0$ lies in the interior of $P$, then $\Sigma_P$ is the fan of cones over the proper faces of the polar dual $P^\circ$.
 
-3. For a vertex $m$ of $P$, the maximal cone $\sigma_m$ of $\Sigma_P$ has dual cone $\sigma_m\dual=\Cone(P \intersect M - m)$, the cone of directions out of $m$, and $X_P = \Union_{m \text{ a vertex}} \Spec k[\Cone(P \intersect M - m) \intersect M]$.
+3. For a vertex $m$ of $P$, the maximal cone $\sigma_m$ of $\Sigma_P$ has dual cone $\dualof{\sigma_m}=\Cone(P \intersect M - m)$, the cone of directions out of $m$, and $X_P = \Union_{m \text{ a vertex}} \Spec k[\Cone(P \intersect M - m) \intersect M]$.
 :::
 
 ::: {.remark}

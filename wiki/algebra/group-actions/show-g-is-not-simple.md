@@ -16,7 +16,7 @@ By Sylow's third theorem,
 $$
 n_p \equiv 1 \pmod p, \qquad n_p \divides m.
 $$
-If $n_p = 1$, the unique Sylow $p$-subgroup $P$ is normal: for $g\in G$, $gPg\inv$ is again a Sylow $p$-subgroup, so $gPg\inv = P$.
+If $n_p = 1$, the unique Sylow $p$-subgroup $P$ is normal: for $g\in G$, $gP\inverseof{g}$ is again a Sylow $p$-subgroup, so $gP\inverseof{g} = P$.
 
 Groups of prime-power order:
 

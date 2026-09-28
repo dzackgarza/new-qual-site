@@ -19,7 +19,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(\zeta_n + \zeta_n\inv): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
+Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity.
+Show that $[\QQ(\zeta_n + \inverseof{\zeta_n}): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
 :::
 
 ::: {.solution}
@@ -39,8 +40,7 @@ where \(a\in(\mathbb Z/n\mathbb Z)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^
 \[
 \sigma_a(\alpha)=\zeta_n^a+\zeta_n^{-a}.
 \]
-::: {.proof}
-This follows directly from the definition of \(\sigma_a\).
+::: {.proof} This follows directly from the definition of \(\sigma_a\).
 :::
 
 <1>2. The stabilizer of \(\alpha\) in \(\operatorname{Gal}(K/\mathbb Q)\) is exactly

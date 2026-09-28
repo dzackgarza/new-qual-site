@@ -18,10 +18,9 @@ review: draft
 Let $M$ be a closed connected oriented $n$-manifold with fundamental class $[M]\in H_n(M;\ZZ)$, and let $D\colon H^k(M;\ZZ)\to H_{n-k}(M;\ZZ)$, $D(\varphi)=[M]\frown\varphi$, be the [[D-QP7WI|Poincaré duality]] isomorphism.
 The \dfn{intersection product} is the bilinear map
 $$
-H_i(M;\ZZ)\times H_j(M;\ZZ)\to H_{i+j-n}(M;\ZZ),\qquad \alpha\cdot\beta\coloneqq[M]\frown\qty{D\inv(\alpha)\smile D\inv(\beta)},
+H_i(M;\ZZ)\times H_j(M;\ZZ)\to H_{i+j-n}(M;\ZZ),\qquad \alpha\cdot\beta\coloneqq[M]\frown\qty{\inverseof{D}(\alpha)\smile \inverseof{D}(\beta)},
 $$
-using the [[D-B2JER|cup product]] and the [[D-RQS4J|cap product]].
-For $j=n-i$, composing with $H_0(M;\ZZ)\cong\ZZ$ gives the \dfn{intersection pairing} $H_i(M;\ZZ)\times H_{n-i}(M;\ZZ)\to\ZZ$.
+using the [[D-B2JER|cup product]] and the [[D-RQS4J|cap product]]. For $j=n-i$, composing with $H_0(M;\ZZ)\cong\ZZ$ gives the \dfn{intersection pairing} $H_i(M;\ZZ)\times H_{n-i}(M;\ZZ)\to\ZZ$.
 :::
 
 ::: {.proposition}

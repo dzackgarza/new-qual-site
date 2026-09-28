@@ -39,7 +39,7 @@ Write $C_n$ for the cyclic group of order $n$.
 | $4$ | $S_4$, $A_4$, $D_4$, $C_4$, $C_2^2$ | $24$, $12$, $8$, $4$, $4$ | $S_4$, $A_4$, $D_4$ |
 | $5$ | $S_5$, $A_5$, $F_5\cong C_5\semidirect C_4$, $D_5$, $C_5$ | $120$, $60$, $20$, $10$, $5$ | $S_5$, $A_5$, $F_5$, $D_5$ |
 
-Here $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, and $F_5$ has presentation $\gens{a,b \st a^5, b^4, bab\inv = a^2}$.
+Here $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, and $F_5$ has presentation $\gens{a,b \st a^5, b^4, ba\inverseof{b} = a^2}$.
 
 The quaternion group
 $$
@@ -81,7 +81,7 @@ For such a prime $p$, if $f \bmod p$ factors into irreducibles of degrees $d_1,\
 Let $f$ be irreducible of degree $5$ with exactly two nonreal roots.
 Complex conjugation restricts to a transposition $\tau\in G$, and $5\divides\size G$, so $G$ contains a $5$-cycle $\sigma$.
 Some power of $\sigma$ sends the first point of $\tau$ to the second, so after replacing $\sigma$ by that power and relabeling the roots, $\tau = (1,2)$ and $\sigma = (1,2,3,4,5)$.
-Then $\sigma\tau\sigma\inv = (2,3)$ and $(1,2)(2,3) = (1,2,3)$, so $3\divides\size G$.
+Then $\sigma\tau\inverseof{\sigma} = (2,3)$ and $(1,2)(2,3) = (1,2,3)$, so $3\divides\size G$.
 Hence $\size G$ is divisible by $30$, which excludes $F_5$, $D_5$, and $C_5$; since $\tau$ is odd, $G\neq A_5$, and $G=S_5$.
 :::
 

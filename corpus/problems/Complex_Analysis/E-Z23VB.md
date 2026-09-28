@@ -14,18 +14,20 @@ review: draft
 ---
 
 ::: {.exercise}
-Find a Mobius transformation sending 
+Find a Mobius transformation sending
 
 - $1\to 3$
+
 - $i\to 0$
+
 - $2\to -1$
 
 :::
 
 ::: {.solution}
-Use cross ratios: set $T(z) \da (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $T(z) = S(w) \implies w = (S\inv T)(z)$:
+Use cross ratios: set $T(z) \da (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $T(z) = S(w) \implies w = (\inverseof{S} T)(z)$:
 \[
-{z-i \over z-2}{1-2\over 1-i} 
+{z-i \over z-2}{1-2\over 1-i}
 &= {w-0\over w+1}{3+1 \over 3-0} \\
 \implies -\frac{\left(i + 1\right) \, {\left(z - i\right)}}{2 \, {\left(z - 2\right)}}
 &=
@@ -40,4 +42,3 @@ Use cross ratios: set $T(z) \da (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $
 .\]
 
 :::
-

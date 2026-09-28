@@ -37,7 +37,7 @@ L^iF(A) = h^i(F(P^\bullet)) ,
 $$
 where $P^\bullet \to A$ is any projective resolution.
 
-For contravariant $F$, regard $F$ as a covariant functor on $\mca\op$.
+For contravariant $F$, regard $F$ as a covariant functor on $\opcat{\mca}$.
 :::
 
 ::: {.remark}

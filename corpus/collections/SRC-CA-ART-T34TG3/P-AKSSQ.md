@@ -22,7 +22,7 @@ Show that if $|f(z)|=M$ (a constant) for $z$ on the boundary of $D$, then $f(z)=
 ::: {.solution}
 By the maximum modulus principle, $\abs{f} \leq M$ in $\bar{D}$.
 Since $f$ has no zeros in $\bar{D}$, $g\da 1/f$ is holomorphic on $D$ and continuous on $\bar{D}$.
-So the maximum modulus principle applies to $g$, and $M\inv \geq \abs{g} = 1/\abs{f}$, so $\abs{f} \geq M$.
+So the maximum modulus principle applies to $g$, and $\inverseof{M} \geq \abs{g} = 1/\abs{f}$, so $\abs{f} \geq M$.
 Combining these, $\abs{f(z)} = M$ for every $z\in D$.
 Then $f(D)$ lies in the circle $\abs{w}=M$, which contains no nonempty open set, so by the open mapping theorem $f$ is constant on the domain $D$: $f(z) = \lambda M$ where $\lambda$ is some constant with $\abs{\lambda}=1$.
 This is on the unit circle, so $\lambda = e^{i\theta}$ for some fixed angle $\theta$.

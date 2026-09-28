@@ -92,7 +92,7 @@ $$
 
 ::: {.remark title="Counting orbits"}
 Burnside's lemma counts orbits, such as colorings of the beads of a necklace or of the faces of a cube up to the action of a rotation group.
-For $g,h\in G$, $x\mapsto hx$ is a bijection $\Fix(g)\to\Fix(hgh\inv)$, so $\size{\Fix(g)}$ depends only on the conjugacy class of $g$, and the sum may be taken over conjugacy classes, each weighted by its size.
+For $g,h\in G$, $x\mapsto hx$ is a bijection $\Fix(g)\to\Fix(hg\inverseof{h})$, so $\size{\Fix(g)}$ depends only on the conjugacy class of $g$, and the sum may be taken over conjugacy classes, each weighted by its size.
 :::
 
 [[E-6AOD7]]

@@ -25,13 +25,13 @@ audit:
 ---
 
 ::: {.problem}
-Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PDP\inv$ where $P$ is an invertible matrix with orthogonal columns.
+Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PD\inverseof{P}$ where $P$ is an invertible matrix with orthogonal columns.
 :::
 
 ::: {.solution}
 <1>1. Every eigenvalue of a Hermitian matrix is real.
-::: {.proof}
-Let $Av=\lambda v$ with $v\ne0$. Since $A=A^*$,
+::: {.proof} Let $Av=\lambda v$ with $v\ne0$.
+Since $A=A^*$,
 \[
 \lambda\langle v,v\rangle
 =\langle Av,v\rangle

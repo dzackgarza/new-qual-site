@@ -30,7 +30,7 @@ Let $X$ be a noetherian scheme, and let $\mcf$ be a coherent sheaf.
 (b) $\mcf$ is locally free if and only if its stalks $\mcf_x$ are free $\OO_x$-modules for all $x \in X$.
 
 (c) $\mcf$ is invertible, i.e. locally free of rank $1$, if and only if there is a coherent sheaf $\mcg$ such that $\mcf \tensor \mcg \cong \OO_X$.
-This justifies the terminology: it means that $\mcf$ is an invertible element of the monoid of coherent sheaves under $\tensor$.
+    This justifies the terminology: it means that $\mcf$ is an invertible element of the monoid of coherent sheaves under $\tensor$.
 :::
 
 ::: {.solution}
@@ -73,28 +73,25 @@ These neighborhoods cover $X$, proving local freeness.
 
 <1>3. For the forward implication of part (c), a tensor inverse of $\mcf$ is
 $$
-\boxed{\mcg=\mcf\dual=\sheafhom_{\OO_X}(\mcf,\OO_X)}.
+\boxed{\mcg=\dualof{\mcf}=\sheafhom_{\OO_X}(\mcf,\OO_X)}.
 $$
 
 ::: {.proof}
 Assume $\mcf$ is locally free of rank one.
 The evaluation morphism
 $$
-\mcf\otimes\mcf\dual\longrightarrow\OO_X,
+\mcf\otimes\dualof{\mcf}\longrightarrow\OO_X,
 \qquad s\otimes\lambda\longmapsto\lambda(s)
 $$
-is defined compatibly on local sections, as in [[P-AGH251DUALSHEAF]].
-On a trivializing open set with frame $e$, the coordinate functional $e\dual$ is a frame of $\mcf\dual$, and evaluation sends $e\otimes e\dual$ to $1$.
+is defined compatibly on local sections, as in [[P-AGH251DUALSHEAF]]. On a trivializing open set with frame $e$, the coordinate functional $\dualof{e}$ is a frame of $\dualof{\mcf}$, and evaluation sends $e\otimes \dualof{e}$ to $1$.
 It is therefore an isomorphism on each such open set, hence on $X$.
-The sheaf $\mcf\dual$ is locally free of rank one as well, so its local modules over noetherian affine charts are finite and it is [[D-QNTZY|coherent]].
-The evaluation morphism is independent of the chosen frames; the frames only verify that it is an isomorphism.
+The sheaf $\dualof{\mcf}$ is locally free of rank one as well, so its local modules over noetherian affine charts are finite and it is [[D-QNTZY|coherent]]. The evaluation morphism is independent of the chosen frames; the frames only verify that it is an isomorphism.
 :::
 
 <1>4. Conversely, a [[D-QNTZY|coherent]] tensor inverse forces $\mcf$ to be locally free of rank one.
 
 ::: {.proof}
-Suppose $\mcf\otimes\mcg\cong\OO_X$ with $\mcg$ [[D-QNTZY|coherent]].
-Fix $x\in X$, put $R=\OO_{X,x}$, and write $\mathfrak m$ for its maximal ideal and $\kappa=R/\mathfrak m$ for its residue field.
+Suppose $\mcf\otimes\mcg\cong\OO_X$ with $\mcg$ [[D-QNTZY|coherent]]. Fix $x\in X$, put $R=\OO_{X,x}$, and write $\mathfrak m$ for its maximal ideal and $\kappa=R/\mathfrak m$ for its residue field.
 The modules $M=\mcf_x$ and $N=\mcg_x$ are finite over $R$.
 Taking stalks and then tensoring with $\kappa$ gives
 $$
@@ -114,7 +111,6 @@ Thus $\mcf$ is invertible.
 <1>5. Q.E.D.
 
 ::: {.proof}
-Steps <1>1 and <1>2 prove parts (a) and (b).
-Steps <1>3 and <1>4 prove both implications of part (c).
+Steps <1>1 and <1>2 prove parts (a) and (b). Steps <1>3 and <1>4 prove both implications of part (c).
 :::
 :::

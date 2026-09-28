@@ -20,7 +20,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $\phi\in L^1(\RR^n)$ such that $\int \phi = 1$ and define $\phi_t(x) = t^{-n}\phi(t\inv x)$.
+Let $\phi\in L^1(\RR^n)$ such that $\int \phi = 1$ and define $\phi_t(x) = t^{-n}\phi(\inverseof{t} x)$.
 Show that if $f$ is bounded and uniformly continuous then $f\ast \phi_t \converges{t\to 0}\to f$ uniformly.
 :::
 ::: {.solution}
@@ -41,13 +41,16 @@ $(f \ast \phi_t)(x) = \int f(x-y)\phi_t(y)\,dy$ and $f(x) = f(x)\int\phi_t$ by s
 <1>3. Given $\eps > 0$, there are $R > 0$ with $\int_{|z| > R}|\phi(z)|\,dz < \frac{\eps}{4\|f\|_\infty}$ and $\eta > 0$ with $|f(u) - f(v)| < \frac{\eps}{2\|\phi\|_1}$ whenever $|u - v| < \eta$.
 
 ::: {.proof}
-The first holds because $\phi \in L^1$, by dominated convergence applied to $|\phi|\chi_{\theset{|z| > R}}$ as $R \to \infty$. The second is uniform continuity of $f$.
+The first holds because $\phi \in L^1$, by dominated convergence applied to $|\phi|\chi_{\theset{|z| > R}}$ as $R \to \infty$.
+The second is uniform continuity of $f$.
 :::
 
 <1>4. For $0 < t < \eta/R$ and every $x$, $|(f \ast \phi_t)(x) - f(x)| < \eps$.
 
 ::: {.proof}
-Split the integral of step <1>2 at $|y| = tR$. For $|y| \le tR < \eta$, step <1>3 bounds $|f(x-y) - f(x)|$ by $\frac{\eps}{2\|\phi\|_1}$, and step <1>1 bounds the integral of $|\phi_t|$, so this part is at most $\eps/2$. For $|y| > tR$, bound $|f(x-y) - f(x)|$ by $2\|f\|_\infty$ and substitute $z = y/t$: $\int_{|y| > tR}|\phi_t(y)|\,dy = \int_{|z| > R}|\phi(z)|\,dz$, so this part is less than $\eps/2$.
+Split the integral of step <1>2 at $|y| = tR$.
+For $|y| \le tR < \eta$, step <1>3 bounds $|f(x-y) - f(x)|$ by $\frac{\eps}{2\|\phi\|_1}$, and step <1>1 bounds the integral of $|\phi_t|$, so this part is at most $\eps/2$.
+For $|y| > tR$, bound $|f(x-y) - f(x)|$ by $2\|f\|_\infty$ and substitute $z = y/t$: $\int_{|y| > tR}|\phi_t(y)|\,dy = \int_{|z| > R}|\phi(z)|\,dz$, so this part is less than $\eps/2$.
 :::
 
 <1>5. Q.E.D.

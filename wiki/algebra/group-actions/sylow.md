@@ -46,7 +46,7 @@ A Sylow $p$-subgroup $P$ is normal if and only if $n_p = 1$.
 :::
 
 ::: {.proof}
-Every Sylow $p$-subgroup is conjugate to $P$, so $\Syl_p(G) = \ts{gPg\inv \st g\in G}$, and this set is $\ts P$ if and only if $P\normal G$.
+Every Sylow $p$-subgroup is conjugate to $P$, so $\Syl_p(G) = \ts{gP\inverseof{g} \st g\in G}$, and this set is $\ts P$ if and only if $P\normal G$.
 :::
 
 ### The number of Sylow subgroups

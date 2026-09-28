@@ -23,7 +23,7 @@ The following are equivalent:
 
 - $f(\cl_X(A)) \subseteq \cl_Y(f(A))$ for every $A\subseteq X$;
 
-- $f\inv(B)$ is closed in $X$ for every closed $B\subseteq Y$;
+- $\inverseof{f}(B)$ is closed in $X$ for every closed $B\subseteq Y$;
 
 - for each $x\in X$ and each neighborhood $V$ of $f(x)$, there is a neighborhood $U$ of $x$ such that $f(U) \subseteq V$
 

@@ -18,7 +18,7 @@ The map
 $$
 \begin{aligned}
 F\colon \theset{z\in\CC : \abs{z}>1} &\to \CC\sm[-2, 2], \\
-z &\mapsto z+ z\inv
+z &\mapsto z+ \inverseof{z}
 \end{aligned}
 $$
 is a [[D-TM4TE|biholomorphism]].

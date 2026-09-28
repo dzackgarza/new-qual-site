@@ -25,8 +25,8 @@ Find a conformal map from $R$ to $\HH$ the upper half-plane.
 ::: {.concept}
 \envlist
 
-- Blow up the point of tangency: inverting through a circle sends inner circles to lines, fixes the real line, and preserves regions between curves. 
-E.g. the image of $\abs{z-i/2} =2$ is $\ts{ \Im(z) = 2}$
+- Blow up the point of tangency: inverting through a circle sends inner circles to lines, fixes the real line, and preserves regions between curves.
+  E.g. the image of $\abs{z-i/2} =2$ is $\ts{ \Im(z) = 2}$
 
 ![attachments/Circle Inversion.gif](../../assets/attachments/Circle%20Inversion.gif)
 
@@ -45,10 +45,14 @@ In steps:
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_23-13-16.png)
 
 - Shift and dilate with $z\mapsto \pi(z-1/2)$ to get $-\pi/2<\Re(z) < \pi/2$, where the slit is now at $[0, \pi/2]$.
+
 - Apply $z\mapsto \sin(z)$ to get $\CC\sm[0, 1]$.
+
 - Move the slit with $z\mapsto 4(z-1/2)$ to get $\CC\sm[-2, 2]$.
-- Apply $z\mapsto z+z\inv$ to get $\CC\sm\DD$, where the slit is now eliminated.
+
+- Apply $z\mapsto z+\inverseof{z}$ to get $\CC\sm\DD$, where the slit is now eliminated.
+
 - Use $z\mapsto 1/z$ to get $\DD$
+
 - Use the inverse Cayley map $z\mapsto i{1-z\over 1+z}$ to get $\HH$.
 :::
-

@@ -20,9 +20,9 @@ review: draft
 Let $A(z)=\sum_{k\ge0}c_kz^k$ be a power series with positive radius of convergence and $c_0\neq0$.
 Then $1/A$ is holomorphic near $0$, and its Taylor series $1/A(z)=\sum_{k\ge0}b_kz^k$ has coefficients determined recursively by
 $$
-b_0=c_0\inv,\qquad b_n=-c_0\inv\sum_{k=1}^{n}c_kb_{n-k}\quad(n\ge1).
+b_0=\inverseof{c_0},\qquad b_n=-\inverseof{c_0}\sum_{k=1}^{n}c_kb_{n-k}\quad(n\ge1).
 $$
-In particular, $b_1=-c_0\inv c_1b_0$ and $b_2=-c_0\inv(c_2b_0+c_1b_1)$.
+In particular, $b_1=-\inverseof{c_0} c_1b_0$ and $b_2=-\inverseof{c_0}(c_2b_0+c_1b_1)$.
 :::
 
 ::: {.proof}

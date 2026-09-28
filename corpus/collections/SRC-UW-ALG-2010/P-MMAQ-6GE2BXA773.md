@@ -32,17 +32,16 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 
 - How many subgroups of order $p$ does $G$ have?
 
-  > Hint: compute $gug\inv$ for $g\in G$ and $u\in U$; use this to find the size of the normalizer of $U$ in $G$.
+  > Hint: compute $gu\inverseof{g}$ for $g\in G$ and $u\in U$; use this to find the size of the normalizer of $U$ in $G$.
 :::
-
 
 ::: {.solution}
 <1>1. The order of $G=\operatorname{GL}_2(\mathbb F_p)$ is
 \[
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
 \]
-::: {.proof}
-The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices. Once it is chosen, the second column may be any vector not in its one-dimensional span, giving $p^2-p$ choices.
+::: {.proof} The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices.
+Once it is chosen, the second column may be any vector not in its one-dimensional span, giving $p^2-p$ choices.
 :::
 
 <1>2. The map
@@ -81,8 +80,7 @@ N_G(U)=
  a,d\in\mathbb F_p^\times,\ b\in\mathbb F_p
 \right\}.
 \]
-::: {.proof}
-Every nonidentity element of $U$ has the form
+::: {.proof} Every nonidentity element of $U$ has the form
 \[
 u_t=\begin{pmatrix}1&t\\0&1\end{pmatrix},\qquad t\ne0,
 \]
@@ -90,7 +88,9 @@ and its fixed-point space is exactly the line
 \[
 L=\mathbb F_p e_1.
 \]
-If $gUg^{-1}=U$, then for nontrivial $u\in U$, the fixed line of $gug^{-1}$ is $gL$. But every nontrivial element of $U$ has fixed line $L$, so $gL=L$. Thus $g$ is upper triangular.
+If $gUg^{-1}=U$, then for nontrivial $u\in U$, the fixed line of $gug^{-1}$ is $gL$.
+But every nontrivial element of $U$ has fixed line $L$, so $gL=L$.
+Thus $g$ is upper triangular.
 
 Conversely, if
 \[

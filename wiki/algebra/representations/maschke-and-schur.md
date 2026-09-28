@@ -25,7 +25,7 @@ Every finite-dimensional representation of $G$ over $k$ is a direct sum of irred
 If $\operatorname{char}k = p$ divides $\size G$, the conclusion can fail: the regular representation of $\ZZ/p$ over $\FF_p$ is indecomposable and not irreducible.
 If $G$ is infinite, the conclusion can fail: $\ZZ$ acting on $\CC^2$ by $n\mapsto\matt{1}{n}{0}{1}$ has the invariant line $\CC e_1$ and no invariant complement.
 
-For a subrepresentation $W\subseteq V$, choose any linear projection $\pi\colon V\to W$ and set $\pi_G \da {1\over\size G}\sum_{g\in G} g\pi g\inv$.
+For a subrepresentation $W\subseteq V$, choose any linear projection $\pi\colon V\to W$ and set $\pi_G \da {1\over\size G}\sum_{g\in G} g\pi \inverseof{g}$.
 Then $\pi_G$ is a $G$-equivariant projection onto $W$, and $\ker\pi_G$ is a $G$-invariant complement of $W$; the division by $\size G$ uses the hypothesis on the characteristic.
 :::
 

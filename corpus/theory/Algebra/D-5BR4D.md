@@ -26,7 +26,8 @@ Otherwise it is \dfn{degenerate}.
 ::: {.proposition}
 Let $V$ and $\inner{\wait}{\wait}$ be as in the definition, with $V$ finite-dimensional.
 
-1. Fix a basis of $V$ and let $A$ be the matrix of the form in that basis. Then $v$ is a null vector if and only if its coordinate vector $Y$ satisfies $AY = 0$, so the form is nondegenerate if and only if $A$ is invertible.
+1. Fix a basis of $V$ and let $A$ be the matrix of the form in that basis.
+   Then $v$ is a null vector if and only if its coordinate vector $Y$ satisfies $AY = 0$, so the form is nondegenerate if and only if $A$ is invertible.
 
 2. For a subspace $W \subseteq V$ with $W^\perp \coloneqq \theset{v\in V \st \inner w v = 0 \text{ for all } w\in W}$, the restriction of the form to $W$ is nondegenerate if and only if $W \cap W^\perp = \theset 0$, if and only if $V = W \oplus W^\perp$.
 :::
@@ -38,5 +39,6 @@ The form $\inner x y = x_1y_1$ on $\RR^2$ is degenerate, with nullspace $\RR e_2
 :::
 
 ::: {.concept}
-See [@Art11]. The formulation over an arbitrary field, through the adjoint $V \to V\dual$, is [[D-O4WWN]].
+See [@Art11].
+The formulation over an arbitrary field, through the adjoint $V \to \dualof{V}$, is [[D-O4WWN]].
 :::

@@ -24,7 +24,7 @@ $$
 ::: {.proof}
 We use that for a Lebesgue measurable $E \subseteq \RR^d$ the sets $E + h \coloneqq \theset{x + h \suchthat x \in E}$ and $\lambda E\coloneqq\theset{\lambda x\suchthat x\in E}$ are measurable, with $m(E + h) = m(E)$ and $m(\lambda E) = \abs{\lambda}^d m(E)$.
 Put $\tau f(x)\coloneqq f(x+h)$ and $\delta f(x)\coloneqq f(\lambda x)$.
-For a Borel set $B$, $(\tau f)\inv(B) = f\inv(B) - h$ and $(\delta f)\inv(B) = \lambda^{-1}f\inv(B)$, so $\tau f$ and $\delta f$ are measurable.
+For a Borel set $B$, $\inverseof{(\tau f)}(B) = \inverseof{f}(B) - h$ and $\inverseof{(\delta f)}(B) = \lambda^{-1}\inverseof{f}(B)$, so $\tau f$ and $\delta f$ are measurable.
 
 **Characteristic functions.** For measurable $E$, $\tau\chi_E = \chi_{E-h}$ and $\delta\chi_E = \chi_{\lambda^{-1}E}$, so
 $$
@@ -38,5 +38,6 @@ By the case of characteristic functions, $\int\tau\phi = \int\phi$ and $\int\del
 The maps $\phi\mapsto\tau\phi$ and $\phi\mapsto\delta\phi$ are bijections from the simple functions $0\leq\phi\leq f$ onto the simple functions $0\leq\psi\leq\tau f$ and $0\leq\psi\leq\delta f$ respectively, with inverses given by translation by $-h$ and dilation by $\lambda^{-1}$.
 They multiply integrals by $1$ and by $\abs{\lambda}^{-d}$, so the suprema satisfy $\int\tau f = \int f$ and $\int\delta f = \abs{\lambda}^{-d}\int f$.
 
-**Integrable functions.** For real-valued $f\in L^1(\RR^d)$, write $f = f^+ - f^-$ with $f^\pm \geq 0$; then $\tau f = \tau f^+ - \tau f^-$ and $\delta f = \delta f^+ - \delta f^-$, and the nonnegative case applies to each part. For complex-valued $f$, apply the real case to $\operatorname{Re} f$ and $\operatorname{Im} f$.
+**Integrable functions.** For real-valued $f\in L^1(\RR^d)$, write $f = f^+ - f^-$ with $f^\pm \geq 0$; then $\tau f = \tau f^+ - \tau f^-$ and $\delta f = \delta f^+ - \delta f^-$, and the nonnegative case applies to each part.
+For complex-valued $f$, apply the real case to $\operatorname{Re} f$ and $\operatorname{Im} f$.
 :::

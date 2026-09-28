@@ -15,7 +15,7 @@ Each of the following families is indexed by partitions $\lambda$ of $n$ and is 
 | --- | --- | --- |
 | monomial | $m_\lambda$ | the sum of the distinct monomials $x^\alpha$ with $\alpha$ a rearrangement of $\lambda$ |
 | elementary | $e_\lambda$ | $e_\lambda=\prod_i e_{\lambda_i}$, where $e_k$ is the coefficient of $t^k$ in $\prod_i(1+x_it)$ |
-| complete homogeneous | $h_\lambda$ | $h_\lambda=\prod_i h_{\lambda_i}$, where $h_k$ is the coefficient of $t^k$ in $\prod_i(1-x_it)\inv$ |
+| complete homogeneous | $h_\lambda$ | $h_\lambda=\prod_i h_{\lambda_i}$, where $h_k$ is the coefficient of $t^k$ in $\prod_i\inverseof{(1-x_it)}$ |
 | power sum | $p_\lambda$ | $p_\lambda=\prod_i p_{\lambda_i}$ with $p_k = \sum_i x_i^k$; related to $e$ by Newton's identities, and to the characters of $S_n$ |
 | Schur | $s_\lambda$ | the sum over semistandard Young tableaux of shape $\lambda$; the characters of the polynomial irreducible representations of $\GL_n$ |
 

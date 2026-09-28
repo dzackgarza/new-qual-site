@@ -20,7 +20,7 @@ Let $k$ be a field and let $V, W$ be $k$-vector spaces, at least one of which is
 The $k$-linear map
 $$
 \begin{aligned}
-V\dual \tensor_k W\dual &\to (V \tensor_k W)\dual \\
+\dualof{V} \tensor_k \dualof{W} &\to \dualof{(V \tensor_k W)} \\
 v \tensor w &\mapsto \big(x \tensor y \mapsto v(x)\, w(y)\big)
 \end{aligned}
 $$

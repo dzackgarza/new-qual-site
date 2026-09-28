@@ -25,13 +25,13 @@ prompts:
 
 ::: {.definition}
 For $X \in \Sch\slice S$ and $T \in \Sch\slice S$, a \dfn{$T$-valued point} of $X$ is a morphism $T \to X$ over $S$.
-The assignment $T \mapsto X(T) \da \Hom_S(T, X)$ is the **functor of points** of $X$, and $X \mapsto X(-)$ is fully faithful into $\Sets^{\Sch\slice S \op}$ by Yoneda.
+The assignment $T \mapsto X(T) \da \Hom_S(T, X)$ is the **functor of points** of $X$, and $X \mapsto X(-)$ is fully faithful into $\Sets^{\opcat{\Sch\slice S}}$ by Yoneda.
 :::
 
 ::: {.proposition}
 - Morphisms $\Spec L \to X$, for $L$ a field, correspond to pairs: a point $x \in X$ and a field embedding $\kappa(x) \injects L$.
 
-- Morphisms $\Spec k[\eps]/\eps^2 \to X$ for $X$ over $k$ correspond to pairs: a $k$-rational point $x$, and a tangent vector in $(\mfm_x/\mfm_x^2)\dual$.
+- Morphisms $\Spec k[\eps]/\eps^2 \to X$ for $X$ over $k$ correspond to pairs: a $k$-rational point $x$, and a tangent vector in $\dualof{(\mfm_x/\mfm_x^2)}$.
 :::
 
 ::: {.remark}

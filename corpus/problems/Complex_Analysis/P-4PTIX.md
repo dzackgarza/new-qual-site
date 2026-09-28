@@ -21,17 +21,14 @@ audit:
 ::: {.problem}
 Let $g$ be analytic for $|z|\leq 1$ and $|g(z)| < 1$ for $|z| = 1$.
 
--   Show that $g$ has a unique fixed point in $|z| < 1$.
+- Show that $g$ has a unique fixed point in $|z| < 1$.
 
--   What happens if we replace $|g(z)| < 1$ with $|g(z)|\leq 1$ for
-    $|z|=1$? Give an example if (a) is not true or give an proof
-    if (a) is still true.
+- What happens if we replace $|g(z)| < 1$ with $|g(z)|\leq 1$ for $|z|=1$?
+  Give an example if (a) is not true or give an proof if (a) is still true.
 
-
--   What happens if we simply assume that $f$ is analytic for
-    $|z| < 1$ and $|f(z)| < 1$ for $|z| < 1$? Suppose that $f(z)
-    \not\equiv  z$. Can f have more than one fixed point in
-    $|z| < 1$?
+- What happens if we simply assume that $f$ is analytic for $|z| < 1$ and $|f(z)| < 1$ for $|z| < 1$?
+  Suppose that $f(z)     \not\equiv  z$.
+  Can f have more than one fixed point in $|z| < 1$?
 
 > Hint: The map
 $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$
@@ -39,7 +36,10 @@ $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$
 :::
 
 ::: {.solution}
-**Goal:** Let $g$ be analytic on $|z| \le 1$ with $|g(z)| < 1$ for $|z| = 1$. (a) Show $g$ has a unique fixed point in $|z| < 1$. (b) What changes if $|g(z)| \le 1$ on $|z| = 1$? (c) If $f$ is analytic on $|z| < 1$ with $|f(z)| < 1$ and $f \not\equiv z$, can $f$ have more than one fixed point in $|z| < 1$?
+**Goal:** Let $g$ be analytic on $|z| \le 1$ with $|g(z)| < 1$ for $|z| = 1$.
+\(a) Show $g$ has a unique fixed point in $|z| < 1$.
+\(b) What changes if $|g(z)| \le 1$ on $|z| = 1$?
+\(c) If $f$ is analytic on $|z| < 1$ with $|f(z)| < 1$ and $f \not\equiv z$, can $f$ have more than one fixed point in $|z| < 1$?
 
 <1>1. (a) Setup: apply Rouch\'e to $g(z) - z$ on $|z| = 1$.
 <2>1. On $|z| = 1$, $|g(z)| < |z| = 1$.
@@ -98,7 +98,7 @@ There is still a unique fixed point.
 Use the Brouwer fixed point theorem: since $g$ is holomorphic on $\bar{\DD}$, it is in particular continuous.
 By the Brouwer fixed point theorem, every continuous map $\bar{\DD} \to \bar{\DD}$ has a fixed point.
 If $g$ is nonconstant, then the fixed point is unique by Schwarz: without loss of generality one can assume $f(0) = 0$ by composing with a Blaschke factor.
-Apply Schwarz to $f$, then if $f(a) = a$ we have the equality clause and $f(z) = \lambda z$. 
+Apply Schwarz to $f$, then if $f(a) = a$ we have the equality clause and $f(z) = \lambda z$.
 Since $a = f(a) = \lambda a$, $\lambda = 1$ and $f$ is the identity.
 If $g$ is constant, then $\abs{g(z)} < 1$ on $\abs{z} = 1$ forces $g\equiv 0$.
 :::
@@ -111,5 +111,5 @@ Moreover, not every map $f:\DD\to\DD$ need have a fixed point: consider
 g: \HH &\to \HH \\
 z &\mapsto z+1
 .\]
-Now conjugate with the Cayley map $C:\HH\to \DD$ to define $f\da CgC\inv:\DD\to \DD$ which has no fixed points at all.
+Now conjugate with the Cayley map $C:\HH\to \DD$ to define $f\da Cg\inverseof{C}:\DD\to \DD$ which has no fixed points at all.
 :::

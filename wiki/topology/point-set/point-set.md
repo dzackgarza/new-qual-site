@@ -29,8 +29,8 @@ topics:
 
 ::: {.proof}
 Let $f\colon X\to Y$ be continuous with $X$ a compact metric space, and let $\varepsilon>0$.
-The sets $f\inv\qty{B_{\varepsilon/2}(y)}$ for $y\in Y$ form an open cover of $X$; let $\delta>0$ be a Lebesgue number for it.
-If $d(x,x')<\delta$, then $\ts{x,x'}$ has diameter less than $\delta$, so it lies in some $f\inv\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
+The sets $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$ for $y\in Y$ form an open cover of $X$; let $\delta>0$ be a Lebesgue number for it.
+If $d(x,x')<\delta$, then $\ts{x,x'}$ has diameter less than $\delta$, so it lies in some $\inverseof{f}\qty{B_{\varepsilon/2}(y)}$, and $d(f(x),f(x'))<\varepsilon$.
 
 :::
 
@@ -69,7 +69,7 @@ A finite subcover $\ts{B_{i_1},\ldots,B_{i_k},W}$ exists by compactness, and $\t
 
 ::: {.proof}
 Let $f\colon X\to Y$ be continuous with $X$ compact, and let $\mathcal{U}$ be a cover of $f(X)$ by open subsets of $Y$.
-Since $f$ is continuous, $\ts{f\inv(U) \suchthat U\in\mathcal U}$ is an open cover of $X$, with a finite subcover $f\inv(U_1),\ldots,f\inv(U_k)$.
+Since $f$ is continuous, $\ts{\inverseof{f}(U) \suchthat U\in\mathcal U}$ is an open cover of $X$, with a finite subcover $\inverseof{f}(U_1),\ldots,\inverseof{f}(U_k)$.
 Then $U_1,\ldots,U_k$ cover $f(X)$.
 
 :::
@@ -96,7 +96,7 @@ A [[D-ZFRV4|Hausdorff space]] is one in which distinct points have disjoint open
 [[FT-M5BHD]]
 
 ::: {.proof}
-It suffices to show that $f$ is a closed map, since then $f\inv$ is continuous.
+It suffices to show that $f$ is a closed map, since then $\inverseof{f}$ is continuous.
 If $A\subseteq X$ is closed, then $A$ is compact because $X$ is compact, so $f(A)$ is compact, and a compact subset of the Hausdorff space $Y$ is closed.
 
 :::

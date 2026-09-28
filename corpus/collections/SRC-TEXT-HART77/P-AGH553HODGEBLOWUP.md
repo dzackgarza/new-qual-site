@@ -96,8 +96,7 @@ and the higher direct images
 $$
 R^q\pi_*\OO_{\widetilde X}
 $$
-vanish for $q>0$ by the blowup-cohomology theorem V.3.4; the same input
-underlies [[P-AGH531PABLOWUP]].
+vanish for $q>0$ by the blowup-cohomology theorem V.3.4; the same input underlies [[P-AGH531PABLOWUP]].
 
 Because $\Omega_X$ is locally free, the projection formula gives
 $$
@@ -105,9 +104,7 @@ R^q\pi_*(\pi^*\Omega_X)
 \cong
 \Omega_X\otimes R^q\pi_*\OO_{\widetilde X}.
 $$
-This is the higher-direct-image projection formula
-[[P-AGH383PROJFORMULA|Exercise III.8.3]].
-Thus
+This is the higher-direct-image projection formula [[P-AGH383PROJFORMULA|Exercise III.8.3]]. Thus
 $$
 \pi_*\mathcal A\cong\Omega_X
 $$
@@ -116,8 +113,7 @@ $$
 R^q\pi_*\mathcal A=0
 \qquad(q>0).
 $$
-Exercise III.8.1 [[P-AGH381DEGENLERAY]] therefore gives the displayed
-cohomology isomorphisms.
+Exercise III.8.1 [[P-AGH381DEGENLERAY]] therefore gives the displayed cohomology isomorphisms.
 :::
 
 <1>2. There is an exact sequence
@@ -145,11 +141,11 @@ $$
 \longrightarrow
 0.
 $$
-The first map is injective because it is an isomorphism away from the
-exceptional divisor and $\pi^*\Omega_X$ is locally free, hence torsion-free.
+The first map is injective because it is an isomorphism away from the exceptional divisor and $\pi^*\Omega_X$ is locally free, hence torsion-free.
 It remains to identify the quotient.
 
-Choose regular parameters $x,y$ at $P$. On the blowup chart
+Choose regular parameters $x,y$ at $P$.
+On the blowup chart
 $$
 U_x=\Spec k[x,t],
 \qquad
@@ -188,8 +184,8 @@ t=s^{-1},
 \qquad
 dt=-s^{-2}ds,
 $$
-which is exactly the transition rule for the cotangent sheaf of
-$E\cong\PP^1$. Thus the local cokernels glue to
+which is exactly the transition rule for the cotangent sheaf of $E\cong\PP^1$.
+Thus the local cokernels glue to
 $$
 \Omega_{\widetilde X/X}\cong\Omega_E,
 $$
@@ -223,12 +219,11 @@ Serre duality on $E$ gives
 $$
 H^1(E,\Omega_E)
 \cong
-H^0(E,\OO_E)^\dual
+\dualof{H^0(E,\OO_E)}
 \cong
 k.
 $$
-Finally a coherent sheaf on the one-dimensional projective scheme $E$ has
-no cohomology in degrees at least two.
+Finally a coherent sheaf on the one-dimensional projective scheme $E$ has no cohomology in degrees at least two.
 :::
 
 <1>4. The map
@@ -250,8 +245,7 @@ H^0(\widetilde X,\mathcal B)
 \longrightarrow
 H^0(E,\Omega_E).
 $$
-The last term is zero by step <1>3. Hence the first map is both injective
-and surjective.
+The last term is zero by step <1>3. Hence the first map is both injective and surjective.
 :::
 
 <1>5. The map
@@ -274,8 +268,8 @@ H^2(\widetilde X,\mathcal B)
 \longrightarrow
 H^2(E,\Omega_E)=0.
 $$
-Thus the displayed map on $H^2$ is surjective. We show its source and target
-have the same finite dimension.
+Thus the displayed map on $H^2$ is surjective.
+We show its source and target have the same finite dimension.
 
 By step <1>1,
 $$
@@ -283,8 +277,7 @@ h^2(\widetilde X,\mathcal A)
 =
 h^2(X,\Omega_X).
 $$
-For a nonsingular projective surface $S$, Serre duality and the rank-two
-identity
+For a nonsingular projective surface $S$, Serre duality and the rank-two identity
 $$
 (\Omega_S)^\vee\otimes\omega_S
 \cong
@@ -320,12 +313,10 @@ h^2(\widetilde X,\mathcal A)
 =
 h^2(\widetilde X,\mathcal B).
 $$
-A surjective linear map between finite-dimensional vector spaces of equal
-dimension is an isomorphism.
+A surjective linear map between finite-dimensional vector spaces of equal dimension is an isomorphism.
 :::
 
-<1>6. The long exact sequence of step <1>2 reduces in degree one to a short
-exact sequence
+<1>6. The long exact sequence of step <1>2 reduces in degree one to a short exact sequence
 $$
 \boxed{
 0
@@ -358,7 +349,8 @@ H^2(\widetilde X,\mathcal A)
 \longrightarrow
 H^2(\widetilde X,\mathcal B)
 $$
-is injective. Exactness therefore forces
+is injective.
+Exactness therefore forces
 $$
 \operatorname{im}\delta=0.
 $$
@@ -392,22 +384,17 @@ H^1(X,\Omega_X)\oplus k.}
 $$
 
 ::: {.proof}
-All groups in step <1>6 are vector spaces over $k$. Every short exact
-sequence of $k$-vector spaces splits. Choosing a lift in
-$H^1(\widetilde X,\Omega_{\widetilde X})$ of $1\in k$ therefore gives a
-splitting and the displayed isomorphism.
+All groups in step <1>6 are vector spaces over $k$.
+Every short exact sequence of $k$-vector spaces splits.
+Choosing a lift in $H^1(\widetilde X,\Omega_{\widetilde X})$ of $1\in k$ therefore gives a splitting and the displayed isomorphism.
 
-The splitting need not be canonical; the assertion of the exercise is the
-vector-space isomorphism.
+The splitting need not be canonical; the assertion of the exercise is the vector-space isomorphism.
 :::
 
 <1>8. Q.E.D.
 
 ::: {.proof}
-Step <1>1 identifies the cohomology of the pulled-back cotangent bundle,
-steps <1>2--<1>3 identify the relative differential contribution with the
-one-dimensional group $H^1(E,\Omega_E)$, and steps <1>4--<1>6 show that its
-connecting map to degree two vanishes. Step <1>7 gives the required direct
-sum.
+Step <1>1 identifies the cohomology of the pulled-back cotangent bundle, steps <1>2--<1>3 identify the relative differential contribution with the one-dimensional group $H^1(E,\Omega_E)$, and steps <1>4--<1>6 show that its connecting map to degree two vanishes.
+Step <1>7 gives the required direct sum.
 :::
 :::

@@ -43,7 +43,7 @@ The following are equivalent:
 
 (d) $p$ has a continuous section $s\colon M\to\tilde M$, $p\circ s = \id_M$.
 
-(e) The homomorphism $\pi_1(M, x)\to\ZZ/2$ given by the action of $\pi_1(M,x)$ on the two-point fiber $p\inv(x)$ is trivial.
+(e) The homomorphism $\pi_1(M, x)\to\ZZ/2$ given by the action of $\pi_1(M,x)$ on the two-point fiber $\inverseof{p}(x)$ is trivial.
 :::
 
 ::: {.concept}

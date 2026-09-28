@@ -60,13 +60,13 @@ For $e^{-iax}$ with $a>0$, the lower semicircle is used instead.
 
 **Contour.** The unit circle, by the substitution $z = e^{i\theta}$:
 $$
-\cos\theta = {z + z\inv \over 2}, \quad \sin\theta = {z - z\inv \over 2i}, \quad \dtheta = {\dz \over iz}
+\cos\theta = {z + \inverseof{z} \over 2}, \quad \sin\theta = {z - \inverseof{z} \over 2i}, \quad \dtheta = {\dz \over iz}
 .$$
 No pieces are added; the substitution writes the integral over $[0,2\pi]$ as an integral over $S^1$.
 
 **Result.**
 $$
-\int_0^{2\pi} R(\cos\theta,\sin\theta) \dtheta = 2\pi i \sum_{\abs{z_0} < 1} \Res_{z=z_0} R\qty{ {z+z\inv \over 2}, {z - z\inv \over 2i} } {1 \over iz}
+\int_0^{2\pi} R(\cos\theta,\sin\theta) \dtheta = 2\pi i \sum_{\abs{z_0} < 1} \Res_{z=z_0} R\qty{ {z+\inverseof{z} \over 2}, {z - \inverseof{z} \over 2i} } {1 \over iz}
 .$$
 
 The factor $1/iz$ can contribute a pole at $z = 0$.

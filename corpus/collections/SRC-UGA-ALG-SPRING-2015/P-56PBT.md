@@ -24,16 +24,15 @@ Let $\FF$ be a finite field.
 a. Give (with proof) the decomposition of the additive group $(\FF, +)$ into a direct sum of cyclic groups.
 
 b. The *exponent* of a finite group is the least common multiple of the orders of its elements.
-Prove that a finite abelian group has an element of order equal to its exponent.
+   Prove that a finite abelian group has an element of order equal to its exponent.
 
-c. Prove that the multiplicative group $(\FF\units, \cdot)$ is cyclic.
+c. Prove that the multiplicative group $(\unitsof{\FF}, \cdot)$ is cyclic.
 :::
 
 ::: {.solution}
-<1>1. Part (a): Additive structure of a finite field:
-<2>1. Let $\operatorname{char}(\mathbb{F}) = p$. Since $\mathbb{F}$ is a field, $p$ is a prime number, and the prime subfield of $\mathbb{F}$ is $\mathbb{F}_p \cong \mathbb{Z}/p\mathbb{Z}$.
-::: {.proof}
-characteristic of an integral domain is prime.
+<1>1. Part (a): Additive structure of a finite field: <2>1. Let $\operatorname{char}(\mathbb{F}) = p$.
+Since $\mathbb{F}$ is a field, $p$ is a prime number, and the prime subfield of $\mathbb{F}$ is $\mathbb{F}_p \cong \mathbb{Z}/p\mathbb{Z}$.
+::: {.proof} characteristic of an integral domain is prime.
 :::
 <2>2. The field $\mathbb{F}$ is a finite-dimensional vector space over $\mathbb{F}_p$.
 Let $n = [\mathbb{F} : \mathbb{F}_p] = \dim_{\mathbb{F}_p}(\mathbb{F})$.

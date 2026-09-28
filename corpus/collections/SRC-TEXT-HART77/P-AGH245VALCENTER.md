@@ -29,13 +29,13 @@ We say that a valuation of $K/k$ has **center** $x$ on $X$ if its valuation ring
 a. If $X$ is separated over $k$, then the center of any valuation of $K/k$ on $X$, if it exists, is unique.
 
 b. If $X$ is proper over $k$, then every valuation of $K/k$ has a unique center on $X$.
-Note: if $X$ is a variety over $k$, the criterion of (b) is sometimes taken as the definition of a complete variety.
+   Note: if $X$ is a variety over $k$, the criterion of (b) is sometimes taken as the definition of a complete variety.
 
 c. Prove the converses of (a) and (b). *Hint:* while (a) and (b) follow easily from (4.3) and (4.7), their converses require some comparison of valuations in different fields.
 
-d. If $X$ is proper over $k$, and if $k$ is algebraically closed, show that $\Gamma(X, \OO_X) = k$. This result generalizes (I, 3.4a).
-*Hint:* let $a \in \Gamma(X, \OO_X)$ with $a \not\in k$.
-Show that there is a valuation ring $R$ of $K/k$ with $a\inv \in \mfm_R$, then use (b) to get a contradiction.
+d. If $X$ is proper over $k$, and if $k$ is algebraically closed, show that $\Gamma(X, \OO_X) = k$.
+   This result generalizes (I, 3.4a). *Hint:* let $a \in \Gamma(X, \OO_X)$ with $a \not\in k$.
+   Show that there is a valuation ring $R$ of $K/k$ with $\inverseof{a} \in \mfm_R$, then use (b) to get a contradiction.
 :::
 
 ::: {.solution}
@@ -48,7 +48,8 @@ be the generic point, so
 \kappa(\eta)=K(X)=K.
 \]
 
-<1>1. Let $R\subseteq K$ be a valuation ring containing $k$.  Giving a center $x\in X$ of $R$ is equivalent to giving a $k$-morphism
+<1>1. Let $R\subseteq K$ be a valuation ring containing $k$.
+Giving a center $x\in X$ of $R$ is equivalent to giving a $k$-morphism
 \[
 \widetilde\eta:\Spec R\longrightarrow X
 \]
@@ -61,8 +62,8 @@ is the canonical morphism
 \Spec K\longrightarrow X
 \]
 with image $\eta$.
-::: {.proof}
-Suppose first that $x$ is a center.  By definition,
+::: {.proof} Suppose first that $x$ is a center.
+By definition,
 \[
 \mathcal O_{X,x}\subseteq R
 \]
@@ -76,26 +77,31 @@ Thus the inclusion
 \[
 \mathcal O_{X,x}\longrightarrow R
 \]
-is a local homomorphism.  A local homomorphism from the local ring at $x$ to a local ring defines a unique morphism
+is a local homomorphism.
+A local homomorphism from the local ring at $x$ to a local ring defines a unique morphism
 \[
 \Spec R\longrightarrow X
 \]
-sending the closed point to $x$.  On fraction fields this is the identity map
+sending the closed point to $x$.
+On fraction fields this is the identity map
 \[
 K(X)=K\longrightarrow K,
 \]
 so the generic point maps canonically to $\eta$.
 
-Conversely, let such a morphism $\widetilde\eta$ be given and let $x$ be the image of the closed point of $\Spec R$.  The induced homomorphism
+Conversely, let such a morphism $\widetilde\eta$ be given and let $x$ be the image of the closed point of $\Spec R$.
+The induced homomorphism
 \[
 \mathcal O_{X,x}\longrightarrow R
 \]
-is local because morphisms of schemes are morphisms of locally ringed spaces.  Its restriction on the generic point is the identity on $K$, hence it identifies $\mathcal O_{X,x}$ with a subring of $R$.  Therefore $R$ dominates $\mathcal O_{X,x}$, so $x$ is a center.
+is local because morphisms of schemes are morphisms of locally ringed spaces.
+Its restriction on the generic point is the identity on $K$, hence it identifies $\mathcal O_{X,x}$ with a subring of $R$.
+Therefore $R$ dominates $\mathcal O_{X,x}$, so $x$ is a center.
 :::
 
 <1>2. If $X$ is separated over $k$, every valuation of $K/k$ has at most one center on $X$.
-::: {.proof}
-Let $R$ be a valuation ring of $K/k$.  Two centers would, by <1>1, give two morphisms
+::: {.proof} Let $R$ be a valuation ring of $K/k$.
+Two centers would, by <1>1, give two morphisms
 \[
 \Spec R\rightrightarrows X
 \]
@@ -131,19 +137,20 @@ For a finite-type morphism
 T\longrightarrow S
 \]
 with $S$ locally noetherian, separatedness and properness may be tested using only discrete valuation rings whose fraction field is the residue field of the generic point of an irreducible component of $T$, with the generic point mapping canonically to that component.
-::: {.proof}
-This is the refined Noetherian valuative criterion; see the Stacks Project, Lemmas 32.15.2 and 32.15.3.
+::: {.proof} This is the refined Noetherian valuative criterion; see the Stacks Project, Lemmas 32.15.2 and 32.15.3.
 
 The comparison of valuations in different fields mentioned in Hartshorne's hint is the content of the reduction to these generic-component valuation rings.  Since the present $X$ is integral, it has only one irreducible component and its generic residue field is exactly $K(X)=K$.
 :::
 
-<1>5. Conversely, suppose every valuation of $K/k$ has at most one center on $X$.  Then $X$ is separated over $k$.
-::: {.proof}
-Let
+<1>5. Conversely, suppose every valuation of $K/k$ has at most one center on $X$.
+Then $X$ is separated over $k$.
+::: {.proof} Let
 \[
 R\subseteq K
 \]
-be any discrete valuation ring containing $k$ with fraction field $K$.  By hypothesis, $R$ has at most one center on $X$.  By <1>1, the diagram
+be any discrete valuation ring containing $k$ with fraction field $K$.
+By hypothesis, $R$ has at most one center on $X$.
+By <1>1, the diagram
 \[
 \begin{array}{ccc}
 \Spec K&\longrightarrow&X\\
@@ -160,9 +167,9 @@ X\longrightarrow\Spec k
 is separated.
 :::
 
-<1>6. Conversely, suppose every valuation of $K/k$ has a unique center on $X$.  Then $X$ is proper over $k$.
-::: {.proof}
-For every discrete valuation ring
+<1>6. Conversely, suppose every valuation of $K/k$ has a unique center on $X$.
+Then $X$ is proper over $k$.
+::: {.proof} For every discrete valuation ring
 \[
 R\subseteq K
 \]
@@ -203,8 +210,7 @@ The forward implications are <1>2--<1>3, and the converses are <1>5--<1>6.
 a\in\Gamma(X,\mathcal O_X).
 \]
 If $a\notin k$, then $a$ is transcendental over $k$.
-::: {.proof}
-Because $X$ is integral, restriction to the generic point gives an injection
+::: {.proof} Because $X$ is integral, restriction to the generic point gives an injection
 \[
 \Gamma(X,\mathcal O_X)\hookrightarrow K(X)=K.
 \]
@@ -220,12 +226,12 @@ of $K/k$ such that
 \[
 a^{-1}\in\mathfrak m_R.
 \]
-::: {.proof}
-Since $a$ is transcendental over $k$, the subfield
+::: {.proof} Since $a$ is transcendental over $k$, the subfield
 \[
 k(a)\subseteq K
 \]
-is a rational function field.  Consider the discrete valuation ring at infinity
+is a rational function field.
+Consider the discrete valuation ring at infinity
 \[
 A_0
 =
@@ -234,7 +240,8 @@ k[a^{-1}]_{(a^{-1})}
 \]
 Its maximal ideal is generated by $a^{-1}$.
 
-By the valuation-ring existence theorem, any local subring of a field is dominated by a valuation ring of that field.  Thus there is a valuation ring
+By the valuation-ring existence theorem, any local subring of a field is dominated by a valuation ring of that field.
+Thus there is a valuation ring
 \[
 R\subseteq K
 \]
@@ -249,8 +256,8 @@ a^{-1}\in\mathfrak m_{A_0}
 :::
 
 <1>10. The valuation ring from <1>9 cannot have a center on $X$.
-::: {.proof}
-Suppose it had center $x$.  Then
+::: {.proof} Suppose it had center $x$.
+Then
 \[
 \mathcal O_{X,x}\subseteq R.
 \]
@@ -274,8 +281,8 @@ Since $a\in R$ is the inverse of $a^{-1}$, the element $a^{-1}$ is a unit of $R$
 \[
 \boxed{\Gamma(X,\mathcal O_X)=k.}
 \]
-::: {.proof}
-If some $a\in\Gamma(X,\mathcal O_X)$ lay outside $k$, <1>9--<1>10 would produce a valuation of $K/k$ with no center on $X$.  This contradicts properness and part (b), proved in <1>3.
+::: {.proof} If some $a\in\Gamma(X,\mathcal O_X)$ lay outside $k$, <1>9--<1>10 would produce a valuation of $K/k$ with no center on $X$.
+This contradicts properness and part (b), proved in <1>3.
 
 The reverse inclusion
 \[

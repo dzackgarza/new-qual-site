@@ -20,7 +20,7 @@ review: draft
 Let $Y \subseteq \PP^n$ be a nonempty algebraic set, and let $\theta: \AA^{n+1} \sm \ts{(0,\ldots,0)} \to \PP^n$ send the point with affine coordinates $(a_0,\ldots,a_n)$ to the point with homogeneous coordinates $\tv{a_0 : \cdots : a_n}$.
 The **affine cone** over $Y$ is
 \[
-C(Y) = \theta\inv(Y) \union \ts{(0,\ldots,0)} .
+C(Y) = \inverseof{\theta}(Y) \union \ts{(0,\ldots,0)} .
 \]
 
 1. Show that $C(Y)$ is an algebraic set in $\AA^{n+1}$ whose ideal equals $I(Y)$, regarded as an ordinary ideal of $k[x_0,\ldots,x_n]$.

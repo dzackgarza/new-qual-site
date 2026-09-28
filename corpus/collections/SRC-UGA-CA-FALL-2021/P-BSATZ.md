@@ -26,13 +26,15 @@ The strategy:
 
 - Write the RHS as $a$.
   Note that we need to get rid of the $M^2$ on the LHS, so keep the $M$ around and write $a \da z/R$ so $z = aR$.
+
 - Make the substitution to get
 \[
-\abs{f(aR) - f(0) \over M^2 - \bar{f(0)} f(aR) } \leq M\inv \abs{a} \\
+\abs{f(aR) - f(0) \over M^2 - \bar{f(0)} f(aR) } \leq \inverseof{M} \abs{a} \\
 \implies
 \abs{M\qty{ f(aR) - f(0)}  \over M^2 - \bar{f(0)} f(aR) } \leq \abs{a} \\
 \abs{ f(aR)/M - f(0)/M  \over 1 - \bar{f(0)} f(aR)/M^2 } \leq \abs{a} 
 .\]
+
   - Recognize the LHS as $\psi_w(g(a))$ for $w\da f(0)/M$ and $g(a) \da f(aR)/M$.
 
 :::
@@ -66,8 +68,5 @@ Thus for all $z\in \DD$,
 \iff & \abs{f(w) - f(0) \over M^2 - \bar{f(0)} f(w) } \leq {\abs{w} \over MR}
 ,\]
 which holds for all $w\in \DD$ by replacing $Rz$ with $w$ (i.e. to show this equality for arbitrary $w\in \DD$, write $w = Rz$ for some $z\in \DD$ and run this chain of inequalities backward).
-
-
-
 
 :::

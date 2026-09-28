@@ -23,8 +23,8 @@ audit:
 ---
 
 ::: {.problem}
-a. Let $f: X \to Y$ be a morphism of schemes, and suppose that $Y$ can be covered by open subsets $U_i$ such that for each $i$ the induced map $f\inv(U_i) \to U_i$ is an isomorphism.
-Then $f$ is an isomorphism.
+a. Let $f: X \to Y$ be a morphism of schemes, and suppose that $Y$ can be covered by open subsets $U_i$ such that for each $i$ the induced map $\inverseof{f}(U_i) \to U_i$ is an isomorphism.
+   Then $f$ is an isomorphism.
 
 b. A scheme $X$ is affine if and only if there is a finite set of elements $f_1, \ldots, f_r \in A = \Gamma(X, \OO_X)$ such that the open subsets $X_{f_i}$ are affine and $f_1, \ldots, f_r$ generate the unit ideal in $A$.
 :::
@@ -42,8 +42,7 @@ glue to a morphism
 \[
 g:Y\longrightarrow X.
 \]
-::: {.proof}
-For each $i$, the restriction
+::: {.proof} For each $i$, the restriction
 \[
 f_i=f|_{f^{-1}(U_i)}:f^{-1}(U_i)\longrightarrow U_i
 \]
@@ -53,7 +52,8 @@ On $U_i\cap U_j$, both $g_i$ and $g_j$ are inverse to the restriction
 \[
 f:f^{-1}(U_i\cap U_j)\longrightarrow U_i\cap U_j.
 \]
-Hence they agree.  Morphisms of schemes glue uniquely on an open cover of the source, so the $g_i$ determine a morphism $g:Y\to X$.
+Hence they agree.
+Morphisms of schemes glue uniquely on an open cover of the source, so the $g_i$ determine a morphism $g:Y\to X$.
 :::
 
 <1>2. The morphism $g$ is inverse to $f$; therefore $f$ is an isomorphism.

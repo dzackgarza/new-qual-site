@@ -11,14 +11,14 @@ Throughout, $G$ is a group, $H\le G$ is a subgroup, $g,h,x\in G$, and $X$ is a s
 | Notation | Name | Definition |
 | --- | --- | --- |
 | $\mcp(X)$, $2^X$ | power set of $X$ | the set of subsets of $X$, in bijection with $\Hom_\Set(X,\ts{0,1})$ |
-| $[g,h]$ | [[D-BQ4BQ\|commutator]] of $g$ and $h$ | $ghg\inv h\inv$ |
+| $[g,h]$ | [[D-BQ4BQ\|commutator]] of $g$ and $h$ | $gh\inverseof{g} \inverseof{h}$ |
 | $[G,H]$ | commutator subgroup of $G$ and $H$ | $\gens{[g,h] \st g\in G,\ h\in H}$ |
-| $Z(G)$ | [[D-NK7G7\|center]] of $G$ | $\ts{x\in G \st gxg\inv = x \text{ for all } g\in G}$ |
+| $Z(G)$ | [[D-NK7G7\|center]] of $G$ | $\ts{x\in G \st gx\inverseof{g} = x \text{ for all } g\in G}$ |
 | $C_G(x)$, $Z(x)$ | [[D-PX64W\|centralizer]] of $x$ | $\ts{g\in G \st [g,x]=1}$ |
 | $C_G(H)$, $Z_G(H)$ | [[D-PX64W\|centralizer]] of $H$ | $\ts{g\in G \st [g,h]=1 \text{ for all } h\in H} = \Intersect_{h\in H} C_G(h)$ |
-| $[x]$, $\Conj(x)$ | [[D-HLDEY\|conjugacy class]] of $x$ | $\ts{gxg\inv \st g\in G}\subseteq G$ |
-| $N_G(H)$ | [[D-OZ2RR\|normalizer]] of $H$ | $\ts{g\in G \st gHg\inv = H}\le G$ |
-| $\Inn(G)$ | inner automorphisms | $\ts{\varphi_g \st g\in G}\le\Aut(G)$, where $\varphi_g(x) = gxg\inv$ |
+| $[x]$, $\Conj(x)$ | [[D-HLDEY\|conjugacy class]] of $x$ | $\ts{gx\inverseof{g} \st g\in G}\subseteq G$ |
+| $N_G(H)$ | [[D-OZ2RR\|normalizer]] of $H$ | $\ts{g\in G \st gH\inverseof{g} = H}\le G$ |
+| $\Inn(G)$ | inner automorphisms | $\ts{\varphi_g \st g\in G}\le\Aut(G)$, where $\varphi_g(x) = gx\inverseof{g}$ |
 | $\Out(G)$ | outer automorphisms | $\Aut(G)/\Inn(G)$ |
 
 ## Group actions

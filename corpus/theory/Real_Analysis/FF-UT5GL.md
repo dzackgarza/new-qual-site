@@ -18,6 +18,5 @@ review: draft
 ---
 
 ::: {.fact}
-Let $H$ be a [[D-7QQUO|Hilbert space]] over $\CC$ with inner product $\inner{\cdot}{\cdot}$ linear in the first argument, and let $\varphi \in H\dual$ be an element of its [[D-PQIQO|dual]].
-Then there exists a unique $f\in H$ such that $\varphi(x) = \inner{x}{f}$ for all $x\in H$, and $\norm{f}_H = \norm{\varphi}_{H\dual}$, the [[D-T4LOC|dual norm]] of $\varphi$.
+Let $H$ be a [[D-7QQUO|Hilbert space]] over $\CC$ with inner product $\inner{\cdot}{\cdot}$ linear in the first argument, and let $\varphi \in \dualof{H}$ be an element of its [[D-PQIQO|dual]]. Then there exists a unique $f\in H$ such that $\varphi(x) = \inner{x}{f}$ for all $x\in H$, and $\norm{f}_H = \norm{\varphi}_{\dualof{H}}$, the [[D-T4LOC|dual norm]] of $\varphi$.
 :::

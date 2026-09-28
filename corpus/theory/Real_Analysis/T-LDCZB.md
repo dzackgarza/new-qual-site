@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.theorem}
-Let $H$ be a [[D-7QQUO|Hilbert space]] and let $\Lambda\in H\dual$ be a continuous [[D-EPSKF|linear functional]] on $H$.
+Let $H$ be a [[D-7QQUO|Hilbert space]] and let $\Lambda\in \dualof{H}$ be a continuous [[D-EPSKF|linear functional]] on $H$.
 Then there exists a unique $y \in H$ such that
 $$
 \Lambda(x) = \inner{x}{y} \quad\text{for all } x\in H .

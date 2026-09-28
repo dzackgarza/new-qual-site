@@ -40,8 +40,7 @@ Big: $M(z) = e^z$.
 Small: $m(z) = az^n$.
 On $\abs{z} = 1$,
 \[
-\abs{m(z)} = \abs{az^n} = \abs{a} < e\inv \leq e^{\Re(z)} = \abs{e^z} = \abs{M(z)}
+\abs{m(z)} = \abs{az^n} = \abs{a} < \inverseof{e} \leq e^{\Re(z)} = \abs{e^z} = \abs{M(z)}
 ,\]
 and $M$ has no zeros in $\DD$ (and in fact none in $\CC$), so neither does $f$.
 :::
-

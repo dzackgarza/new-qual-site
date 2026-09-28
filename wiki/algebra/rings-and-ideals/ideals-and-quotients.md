@@ -65,9 +65,9 @@ A ring $R\neq 0$ is a field if and only if its only ideals are $0$ and $R$.
 [[PR-DDDXH]]
 
 ::: {.proof}
-$\implies$: If $0\neq x\in I\normal R$ and every nonzero element is a unit, then $1 = x\inv x \in I$, so $I = R$.
+$\implies$: If $0\neq x\in I\normal R$ and every nonzero element is a unit, then $1 = \inverseof{x} x \in I$, so $I = R$.
 
-$\impliedby$: For $x\in R\nonzero$, the ideal $Rx$ is nonzero, so $Rx = R$, and $1 = rx$ for some $r\in R$; hence $x$ is a unit.
+$\impliedby$: For $x\in \nonzeroof{R}$, the ideal $Rx$ is nonzero, so $Rx = R$, and $1 = rx$ for some $r\in R$; hence $x$ is a unit.
 :::
 
 ## Radicals

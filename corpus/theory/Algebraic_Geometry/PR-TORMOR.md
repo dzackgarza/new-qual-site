@@ -28,7 +28,7 @@ On affine pieces this is a semigroup map $S_2 \to S_1$ inducing $k[S_2] \to k[S_
 
 ::: {.proposition title="Completeness"}
 $X_\Sigma$ is complete iff $\abs{\Sigma} = N_\RR$.
-More generally $\phi$ is proper iff $\phi_\RR\inv(\abs{\Sigma_2}) = \abs{\Sigma_1}$.
+More generally $\phi$ is proper iff $\inverseof{\phi_\RR}(\abs{\Sigma_2}) = \abs{\Sigma_1}$.
 :::
 
 ::: {.remark title="Why, in one picture"}

@@ -25,7 +25,7 @@ A projective toric variety $X_P$ carries an action of the compact torus $T_c \co
 $$
 \mu : X_P \to M_\RR \cong \RR^n
 $$
-has image exactly $P$, with $\mu\inv(\text{relative interior of } F)$ the orbit attached to the face $F$.
+has image exactly $P$, with $\inverseof{\mu}(\text{relative interior of } F)$ the orbit attached to the face $F$.
 So $P$ is the quotient $X_P / T_c$, and the torus orbits of $X_P$ correspond to the faces of $P$, the orbit of a face $F$ having dimension $\dim F$.
 :::
 

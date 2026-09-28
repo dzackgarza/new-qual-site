@@ -22,14 +22,18 @@ Use summation by parts to show that $\sin(n)/n$ converges.
 Show that
 
 1. $\sum kz^k$ diverges on $S^1$.
+
 2. $\sum k^{-2} z^k$ converges on $S^1$.
-3. $\sum k\inv z^k$ converges on $S^1\sm\ts{1}$ and diverges at $1$.
+
+3. $\sum \inverseof{k} z^k$ converges on $S^1\sm\ts{1}$ and diverges at $1$.
 :::
 
 ::: {.solution}
 
 1. Use that $\abs{z^k} = 1$ and $\sum c_kz^k < \infty \implies \abs{c_k} \to 0$, but $\abs{kz^k} = \abs{k} \to \infty$ here.
+
 2. Use that absolutely convergent implies convergent, and $\sum \abs{k^{-2} z^k} = \sum \abs{k^{-2}}$ converges by the $p\dash$test.
+
 3. If $z=1$, this is the harmonic series. 
   Otherwise take $a_k = 1/k, b_k = e^{i k \theta}$ where $\theta \in (0, 2\pi)$ is some constant, and apply Dirichlet's test.
   It suffices to bound the partial sums of the $b_k$.
@@ -40,4 +44,3 @@ Show that
   which is a constant.
   Here we've used that two points on $S^1$ are at most distance 2 from each other.
 :::
-

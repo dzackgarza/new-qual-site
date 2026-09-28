@@ -15,11 +15,11 @@ review: draft
 
 ::: {.definition}
 Let $p\colon X\to Y$ be a surjective map.
-A subset $U\subseteq X$ is \dfn{saturated} with respect to $p$ if for every $y\in Y$ with $U\cap p\inv(y)\neq\emptyset$ we have $p\inv(y)\subseteq U$.
+A subset $U\subseteq X$ is \dfn{saturated} with respect to $p$ if for every $y\in Y$ with $U\cap \inverseof{p}(y)\neq\emptyset$ we have $\inverseof{p}(y)\subseteq U$.
 :::
 
 ::: {.proposition}
-A subset $U\subseteq X$ is saturated with respect to $p$ if and only if $U = p\inv(B)$ for some $B\subseteq Y$, in which case $B = p(U)$.
+A subset $U\subseteq X$ is saturated with respect to $p$ if and only if $U = \inverseof{p}(B)$ for some $B\subseteq Y$, in which case $B = p(U)$.
 :::
 
 ::: {.concept}

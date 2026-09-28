@@ -36,8 +36,7 @@ It reverses signed angles and is not conformal.
 :::
 
 ::: {.remark title="Inverses"}
-An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $f\inv\colon f(U)\to U$ is holomorphic ([[C-FVT4V]]).
-The biholomorphisms of an open set $\Omega$ onto itself therefore form a group $\Aut_\CC(\Omega)$, computed for the disc on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
+An injective holomorphic map $f$ on an open set $U$ has $f'\neq 0$ on $U$, and $\inverseof{f}\colon f(U)\to U$ is holomorphic ([[C-FVT4V]]). The biholomorphisms of an open set $\Omega$ onto itself therefore form a group $\Aut_\CC(\Omega)$, computed for the disc on [[complex-analysis/conformal-maps/blaschke-factors-and-automorphisms|Blaschke factors and automorphisms]].
 
 :::
 
@@ -52,7 +51,7 @@ $$
 .$$
 Nonzero scalar multiples of a matrix give the same transformation, so the inverse transformation is given by the adjugate matrix:
 $$
-{az + b\over cz+ d} \leadsto \matt a b c d \inv = \matt d {-b} {-c} a
+{az + b\over cz+ d} \leadsto \matt a b c \inverseof{d} = \matt d {-b} {-c} a
 \leadsto
 {dw-b \over -cw + a}
 .$$

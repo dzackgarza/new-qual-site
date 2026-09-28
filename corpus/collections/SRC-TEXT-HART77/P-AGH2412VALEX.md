@@ -30,14 +30,19 @@ audit:
 Let $k$ be an algebraically closed field.
 
 (a) If $K$ is a function field of dimension $1$ over $k$, then every valuation ring of $K/k$ except $K$ itself is discrete.
-Thus the set of all of them is just the abstract nonsingular curve $C_K$ of (I, §6).
+    Thus the set of all of them is just the abstract nonsingular curve $C_K$ of (I, §6).
 
 (b) If $K/k$ is a function field of dimension two, there are several different kinds of valuations.
-Suppose that $X$ is a complete nonsingular surface with function field $K$.
+    Suppose that $X$ is a complete nonsingular surface with function field $K$.
 
 - If $Y$ is an irreducible curve on $X$ with generic point $x_1$, then the local ring $R = \OO_{x_1, X}$ is a discrete valuation ring of $K/k$ with center at the nonclosed point $x_1$ on $X$.
+
 - If $f: X' \to X$ is a birational morphism, and if $Y'$ is an irreducible curve in $X'$ whose image in $X$ is a single closed point $x_0$, then the local ring $R$ of the generic point of $Y'$ on $X'$ is a discrete valuation ring of $K/k$ with center at the closed point $x_0$ on $X$.
-- Let $x_0 \in X$ be a closed point. Let $f: X_1 \to X$ be the blowing-up of $x_0$ (I, §4) and let $E_1 = f\inv(x_0)$ be the exceptional curve. Choose a closed point $x_1 \in E_1$, let $f_2: X_2 \to X_1$ be the blowing-up of $x_1$, and let $E_2 = f_2\inv(x_1)$ be the exceptional curve. Repeat.
+
+- Let $x_0 \in X$ be a closed point.
+  Let $f: X_1 \to X$ be the blowing-up of $x_0$ (I, §4) and let $E_1 = \inverseof{f}(x_0)$ be the exceptional curve.
+  Choose a closed point $x_1 \in E_1$, let $f_2: X_2 \to X_1$ be the blowing-up of $x_1$, and let $E_2 = \inverseof{f_2}(x_1)$ be the exceptional curve.
+  Repeat.
 
   In this way we obtain a sequence of varieties $X_i$ with closed points $x_i$ chosen on them, and for each $i$ the local ring $\OO_{x_{i+1}, X_{i+1}}$ dominates $\OO_{x_i, X_i}$.
   Let $R_0 = \bigcup_{i \geq 0} \OO_{x_i, X_i}$.
@@ -46,7 +51,8 @@ Suppose that $X$ is a complete nonsingular surface with function field $K$.
   Show that $R$ is a valuation ring of $K/k$, and that it has center $x_0$ on $X$.
   When is $R$ a discrete valuation ring?
 
-Note: we will see later (V, Ex. 5.6) that in fact the $R_0$ of the third kind is already a valuation ring itself, so $R_0 = R$.
+Note: we will see later (V, Ex.
+5.6) that in fact the $R_0$ of the third kind is already a valuation ring itself, so $R_0 = R$.
 Furthermore, every valuation ring of $K/k$ except $K$ itself is one of the three kinds just described.
 :::
 
@@ -147,8 +153,7 @@ Geometrically, this says that the prescribed sequence is realized by the success
 
 ::: {.proof}
 Apply step <1>4 to $V=R$.
-Then $R=R_0$ and its residue field is $k$ by step <1>3.
-Choose a uniformizer $\pi\in R$.
+Then $R=R_0$ and its residue field is $k$ by step <1>3. Choose a uniformizer $\pi\in R$.
 The completion map $R\to\widehat R$ is injective, since a nonzero element has finite valuation and cannot belong to every $(\pi^n)$.
 Every element of $\widehat R$ has a unique expansion $\sum_{n\ge0}c_n\pi^n$ with $c_n\in k$: subtract its residue, divide by $\pi$, and repeat, using completeness.
 Thus $\widehat R\cong k[[t]]$ with $\pi$ corresponding to $t$.
@@ -161,8 +166,7 @@ The inclusions of the $A_i$ into $R$ are local, giving the required conditions.
 ::: {.proof}
 Let $V=\iota^{-1}(k[[t]])$ and restrict the $t$-adic valuation to $K$.
 Its value group is a nonzero subgroup of $\ZZ$: every nonzero element of $\mathfrak m_0$ has positive value.
-A nonzero subgroup of $\ZZ$ is infinite cyclic, so $V$ is a DVR.
-For every $i$, units of $A_i$ map to units of $k[[t]]$, since both the unit and its inverse lie in $A_i$.
+A nonzero subgroup of $\ZZ$ is infinite cyclic, so $V$ is a DVR. For every $i$, units of $A_i$ map to units of $k[[t]]$, since both the unit and its inverse lie in $A_i$.
 The stated condition on $\mathfrak m_i$ therefore says that $V$ dominates $A_i$.
 By step <1>4, $V=R_0$.
 Since $R$ dominates the valuation ring $V$ inside the same field, $R=V$ [@Har10a, Theorem I.6.1A].
@@ -221,8 +225,7 @@ Its value group is not infinite cyclic, so it is not a DVR.
 <1>8. Q.E.D.
 
 ::: {.proof}
-Step <1>1 proves part (a).
-Step <1>2 proves the first two surface examples with the stated correction, and step <1>3 proves the domination and center assertions for the third.
+Step <1>1 proves part (a). Step <1>2 proves the first two surface examples with the stated correction, and step <1>3 proves the domination and center assertions for the third.
 Steps <1>4 and <1>5 characterize when the third construction is discrete; steps <1>6 and <1>7 show that both possibilities occur.
 :::
 :::

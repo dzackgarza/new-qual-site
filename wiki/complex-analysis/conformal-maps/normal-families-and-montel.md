@@ -59,12 +59,12 @@ Montel's theorem follows by applying the Arzelà--Ascoli theorem on each set of 
 [[D-HL4KE]]
 
 ::: {.remark title="Univalent maps"}
-If $f\colon \Omega \to \Omega'$ is holomorphic, injective, and surjective, then $f'$ does not vanish, and $f\inv$ is holomorphic.
+If $f\colon \Omega \to \Omega'$ is holomorphic, injective, and surjective, then $f'$ does not vanish, and $\inverseof{f}$ is holomorphic.
 So a univalent surjection produced by the Riemann mapping argument is a biholomorphism.
 :::
 
 ::: {.example title="The real analogue fails"}
-The map $f(x) = x^3$ is a bijection $\RR\to\RR$ with $f'(0)=0$, and $f\inv(x) = x^{1/3}$ is not differentiable at $0$.
+The map $f(x) = x^3$ is a bijection $\RR\to\RR$ with $f'(0)=0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
 :::
 
 [[E-ISFYB]] [[E-LXY7N]] [[E-YFL4K]]

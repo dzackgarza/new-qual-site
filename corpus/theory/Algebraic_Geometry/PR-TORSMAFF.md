@@ -31,7 +31,7 @@ Every smooth affine toric variety is of this form.
 
 ::: {.proof}
 Extend the minimal generators of $\sigma$ to a $\ZZ$-basis of $N$, which is possible exactly because $\sigma$ is smooth.
-In the dual basis $\sigma\dual$ is the cone spanned by $e_1, \ldots, e_k$ and $\pm e_{k+1}, \ldots, \pm e_n$, so
+In the dual basis $\dualof{\sigma}$ is the cone spanned by $e_1, \ldots, e_k$ and $\pm e_{k+1}, \ldots, \pm e_n$, so
 \[
 S_\sigma = \NN^k \oplus \ZZ^{n-k}, \qquad k[S_\sigma] = k[x_1, \ldots, x_k, x_{k+1}^{\pm 1}, \ldots, x_n^{\pm 1}] .
 \]

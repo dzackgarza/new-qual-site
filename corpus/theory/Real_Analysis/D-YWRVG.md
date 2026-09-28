@@ -16,13 +16,13 @@ review: draft
 ::: {.definition}
 Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f\colon X\to\RR$ be [[D-DHFN4|measurable]].
 
-- An \dfn{essential lower bound} of $f$ is a real number $b$ such that $S_{b} \coloneqq \theset{x\in X\suchthat f(x) < b } = f\inv((-\infty, b))$ has measure zero.
+- An \dfn{essential lower bound} of $f$ is a real number $b$ such that $S_{b} \coloneqq \theset{x\in X\suchthat f(x) < b } = \inverseof{f}((-\infty, b))$ has measure zero.
   The \dfn{essential infimum} of $f$ is the supremum of its essential lower bounds:
   $$
   \ess\inf f \coloneqq \sup \theset{b\in\RR\suchthat \mu (S_b) = 0}.
   $$
 
-- An \dfn{essential upper bound} of $f$ is a real number $c$ such that $T_c \coloneqq \theset{x\in X\suchthat f(x) > c} = f\inv((c, \infty))$ has measure zero.
+- An \dfn{essential upper bound} of $f$ is a real number $c$ such that $T_c \coloneqq \theset{x\in X\suchthat f(x) > c} = \inverseof{f}((c, \infty))$ has measure zero.
   The \dfn{essential supremum} of $f$ is the infimum of its essential upper bounds:
   $$
   \ess\sup f \coloneqq \inf \theset{c\in\RR\suchthat \mu (T_c) = 0}.

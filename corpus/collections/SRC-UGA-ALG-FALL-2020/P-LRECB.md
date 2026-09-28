@@ -42,7 +42,7 @@ The correspondence:
 
 Normalizers:
 \[
-N_G(P) = \ts{g\in G \st gPg\inv = P}
+N_G(P) = \ts{g\in G \st gP\inverseof{g} = P}
 .\]
 
 :::
@@ -59,12 +59,18 @@ N_G(P) = \ts{g\in G \st gPg\inv = P}
   .\]
 
 - Essential fact: if $P \in \Syl_p(G)$, we can use that $P \subseteq N_G(P) \subset H$ and so $P\in \Syl_p(H)$ as well.
+
 - Now use that $N_G(P) \subseteq H$, and do Sylow theory for $P$ in both $G$ and $H$:
+
   - Sylow 3 on $G$ yields $n_p(G) = [G: N_G(P)] \equiv 1 \mod p$.
+
   - Sylow 3 on $H$ yields $n_p(H) = [G: N_H(P)] \equiv 1 \mod p$.
+
 - Claim: $N_H(P) = N_G(P)$.
-  - We have $N_H(P) \subseteq N_G(P)$ since $H \subseteq G$, so $hPh\inv = P$ remains true regarding either $h\in H$ or $h\in G$.
-  - For $N_G(P) \subseteq N_H(P)$, use that $N_G(P) \subseteq H$ and so $gPg\inv = P$ implies $g\in H$, so $g\in N_H(P)$.
+
+  - We have $N_H(P) \subseteq N_G(P)$ since $H \subseteq G$, so $hP\inverseof{h} = P$ remains true regarding either $h\in H$ or $h\in G$.
+
+  - For $N_G(P) \subseteq N_H(P)$, use that $N_G(P) \subseteq H$ and so $gP\inverseof{g} = P$ implies $g\in H$, so $g\in N_H(P)$.
 
 - Now morally one might want to apply an isomorphism theorem:
 \[
@@ -93,4 +99,3 @@ N_G(P) = \ts{g\in G \st gPg\inv = P}
   .\]
 
 :::
-

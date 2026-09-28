@@ -32,12 +32,12 @@ a.
 Find the Jordan canonical form $J$ of $A$.
 
 b.
-Find an invertible matrix $P$ such that $P\inv A P = J$. 
+Find an invertible matrix $P$ such that $\inverseof{P} A P = J$.
 
 c.
 Write down the minimal polynomial of $A$.
 
-> You should not need to compute $P\inv$.
+> You should not need to compute $\inverseof{P}$.
 :::
 
 ::: {.solution}

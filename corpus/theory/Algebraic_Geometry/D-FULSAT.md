@@ -24,7 +24,7 @@ An affine semigroup $S \subseteq M$ is \dfn{saturated} if
 $$
 k \in \ZZ_{>0}, \quad m \in M, \quad km \in S \implies m \in S .
 $$
-$\Spec k[S]$ is normal exactly when $S$ is saturated in the lattice $\ZZ S$ it generates, and $S_\sigma = \sigma\dual \intersect M$ is saturated for every cone, since its defining inequalities are homogeneous.
+$\Spec k[S]$ is normal exactly when $S$ is saturated in the lattice $\ZZ S$ it generates, and $S_\sigma = \dualof{\sigma} \intersect M$ is saturated for every cone, since its defining inequalities are homogeneous.
 :::
 
 ::: {.example title="A semigroup that is not saturated"}
@@ -35,11 +35,11 @@ Then $2 \cdot (2,2) = (4,4) = (4,0) + (0,4) \in S$, but $(2,2) \notin S$, so $S$
 ::: {.remark title="Normalization of an affine toric variety"}
 Given a non-normal affine toric variety $X = \Spec k[S]$, set $M = \ZZ S$, take any finite generating set $S'$ of $S$, and put
 $$
-\sigma \da \Cone(S')\dual \subseteq N_\RR .
+\sigma \da \dualof{\Cone(S')} \subseteq N_\RR .
 $$
-Then $\sigma\dual \intersect M$ is the saturation of $S$, and
+Then $\dualof{\sigma} \intersect M$ is the saturation of $S$, and
 $$
-\Spec k[\sigma\dual \intersect M] \longrightarrow X
+\Spec k[\dualof{\sigma} \intersect M] \longrightarrow X
 $$
 is the normalisation.
 It is finite and birational, and it is an isomorphism if and only if $S$ is saturated.
@@ -47,7 +47,7 @@ It is finite and birational, and it is an isomorphism if and only if $S$ is satu
 
 ::: {.remark title="Non-normal toric varieties"}
 The toric variety $X_\Sigma$ of a fan $\Sigma$ is normal.
-A variety $X$ containing a torus $T$ as a dense open subset, with the action of $T$ on itself extending to $X$, need not be normal; if $X$ is affine, its normalization is $X_\sigma$ for $\sigma=\Cone(S')\dual$, with $S'$ a finite generating set of its semigroup $S$.
+A variety $X$ containing a torus $T$ as a dense open subset, with the action of $T$ on itself extending to $X$, need not be normal; if $X$ is affine, its normalization is $X_\sigma$ for $\sigma=\dualof{\Cone(S')}$, with $S'$ a finite generating set of its semigroup $S$.
 The cuspidal cubic $V(x^3 - y^2)$ contains the torus $\ts{(t^2, t^3) \st t \in \GG_m}$, so $S = \gens{2,3} \subseteq \ZZ$, which is not saturated because $2 \cdot 1 \in S$ while $1 \notin S$.
 The saturation is $\NN \subseteq \ZZ$, and the normalisation is $\AA^1 \to V(x^3 - y^2)$, $t \mapsto (t^2, t^3)$.
 :::

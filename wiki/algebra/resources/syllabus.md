@@ -222,7 +222,7 @@ See [@DF04, chaps. 1-9].
 
   - The rational root test
 
-- The structure of $(\ZZ/n\ZZ)\units$ as a product of cyclic groups
+- The structure of $\unitsof{(\ZZ/n\ZZ)}$ as a product of cyclic groups
 
   > See [@DF04] and [@Smi96, sec. 844-2.18].
 

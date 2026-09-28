@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-ET5PQ
 kind: proposition
 title: $H^1$ classifies line bundles and extensions
-slogan: '$H^1$ records gluing: units give line bundles, and $\mcf\tensor\mcg\dual$ gives extensions when $\mcg$ is locally free.'
+slogan: '$H^1$ records gluing: units give line bundles, and $\mcf\tensor\dualof{\mcg}$ gives extensions when $\mcg$ is locally free.'
 classification:
   areas:
   - algebraic-geometry
@@ -27,7 +27,7 @@ $\Pic(X) \cong H^1(X, \OO_X^*)$, and for $\OO_X$-modules $\mcf, \mcg$ the extens
 \[
 0 \to \mcf \to \mce \to \mcg \to 0
 \]
-up to equivalence are classified by $\Ext^1(\mcg,\mcf)$, which is $H^1(X, \mcf \tensor \mcg\dual)$ when $\mcg$ is locally free.
+up to equivalence are classified by $\Ext^1(\mcg,\mcf)$, which is $H^1(X, \mcf \tensor \dualof{\mcg})$ when $\mcg$ is locally free.
 :::
 
 ::: {.remark}

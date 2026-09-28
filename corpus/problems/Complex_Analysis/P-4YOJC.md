@@ -26,7 +26,7 @@ Prove that $f$ is a polynomial.
 The claim is that there is some $N$ such that $\dd{^N f}{z^N} \equiv 0$, making $f$ a polynomial.
 If no derivative is identically zero, the following set is countable:
 \[
-\Union_{n\in \NN} \dd{^n f}{z^n}\inv(0)
+\Union_{n\in \NN} \inverseof{\dd{^n f}{z^n}}(0)
 .\]
 This is because each derivative is analytic and the zeros of an analytic function are countable.
 But by hypothesis this set is uncountable.

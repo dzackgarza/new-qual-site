@@ -37,15 +37,14 @@ Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \inte
 
 - Show: $\QQ/\ZZ = T(\RR/\ZZ)$
 
-- Show: $\QQ/\ZZ \cong T(\CC\units)$, the group of roots of unity in $\CC\units$.
+- Show: $\QQ/\ZZ \cong T(\unitsof{\CC})$, the group of roots of unity in $\unitsof{\CC}$.
 
-  Note $\QQ/\ZZ \cong \CC\units$ is false: every element of $\QQ/\ZZ$ has finite order by the bullet above, while $2 \in \CC\units$ has infinite order.
+  Note $\QQ/\ZZ \cong \unitsof{\CC}$ is false: every element of $\QQ/\ZZ$ has finite order by the bullet above, while $2 \in \unitsof{\CC}$ has infinite order.
 :::
 
 ::: {.solution}
 <1>1. Every coset in $\mathbb Q/\mathbb Z$ has a representative in $[0,1)\cap\mathbb Q$.
-::: {.proof}
-Let
+::: {.proof} Let
 \[
 q=\frac mn\in\mathbb Q,
 \qquad

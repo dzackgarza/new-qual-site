@@ -15,8 +15,8 @@ review: draft
 
 ::: {.problem}
 Suppose $f:\DD\to \DD$ is analytic.
-Prove that 
-\[  
+Prove that
+\[
 \forall a\in \DD, \qquad {\abs{f'(a)} \over 1 - \abs{f(a)}^2 } \leq {1 \over 1 - \abs{a}^2}
 .\]
 
@@ -24,13 +24,12 @@ Prove that
 
 ::: {.solution}
 
-
-For $a\in\DD$, let $\psi_a(z)\coloneqq{a-z\over1-\bar az}$, an automorphism of $\DD$ with $\psi_a(0)=a$, $\psi_a(a)=0$ and $\psi_a\inv=\psi_a$.
+For $a\in\DD$, let $\psi_a(z)\coloneqq{a-z\over1-\bar az}$, an automorphism of $\DD$ with $\psi_a(0)=a$, $\psi_a(a)=0$ and $\inverseof{\psi_a}=\psi_a$.
 
 ::: {.claim}
 For $z,w\in\DD$,
 \[
-\abs{ \psi_w(z) } \geq \abs{\psi_{f(w)}(f(z)) } 
+\abs{ \psi_w(z) } \geq \abs{\psi_{f(w)}(f(z)) }
 ,\]
 i.e. 
 \[
@@ -39,7 +38,7 @@ i.e.
 :::
 
 ::: {.proof}
-Make a change of variables $a\da \psi_w(z)$ so $z=\psi_w\inv(a) = \psi_w(a)$, then the desired inequality follows if we can show
+Make a change of variables $a\da \psi_w(z)$ so $z=\inverseof{\psi_w}(a) = \psi_w(a)$, then the desired inequality follows if we can show
 \[
 \abs{ \psi_{f(w)}(f(\psi_w(a))) } \leq \abs{a}
 .\]
@@ -54,10 +53,10 @@ So $F$ satisfies Schwarz and the claim follows.
 
 Dividing the claim by $\abs{z-w}$ for $z\neq w$:
 \[
-\abs{f(w) - f(z) \over 1 - \bar{f(w)}f(z)} 
+\abs{f(w) - f(z) \over 1 - \bar{f(w)}f(z)}
 &\leq \abs{w-z \over 1-\bar{w} z} \\
-\implies 
-\abs{ 1\over 1-\bar{f(w)}f(z) } \cdot \abs{f(z) - f(w) \over z-w} 
+\implies
+\abs{ 1\over 1-\bar{f(w)}f(z) } \cdot \abs{f(z) - f(w) \over z-w}
 &\leq \abs{1\over 1-\bar{w}z} \\
     ,\]
 and taking $z\to w$ on both sides yields

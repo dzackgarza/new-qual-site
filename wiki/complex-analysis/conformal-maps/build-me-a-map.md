@@ -10,7 +10,7 @@ topics:
 
 # Build me a map
 
-If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standard region $W$ such as $\HH$ or $\DD$, then $g\inv\circ f\colon U\to V$ is a conformal bijection.
+If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standard region $W$ such as $\HH$ or $\DD$, then $\inverseof{g}\circ f\colon U\to V$ is a conformal bijection.
 
 ## Notation
 
@@ -42,7 +42,7 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
   \ts{\Re z \in [a,b],\ \Im z \in [c,d]} \mapsto \ts{Re^{i\theta} \st R\in[e^a,e^b],\ \theta\in[c,d]}
   .$$
 
-- **Half disc $\to$ half plane.** The Joukowski map $z\mapsto z + z\inv$ maps $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ onto $Q_{34}$, $\overline{\DD}^c \intersect \HH$ onto $\HH$, and $\overline{\DD}^c$ onto $\CC\sm[-2,2]$.
+- **Half disc $\to$ half plane.** The Joukowski map $z\mapsto z + \inverseof{z}$ maps $\abs z = 1$ onto $[-2,2]$, $\DD\intersect\HH$ onto $Q_{34}$, $\overline{\DD}^c \intersect \HH$ onto $\HH$, and $\overline{\DD}^c$ onto $\CC\sm[-2,2]$.
 
 - **Region bounded by two circular arcs $\to$ sector or strip.** A Möbius transformation sending the two intersection points of the arcs to $0$ and $\infty$ maps the region onto a sector.
   If the arcs are tangent at one point, a Möbius transformation sending that point to $\infty$ maps the region onto a strip.
@@ -52,7 +52,7 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
 - **Slit plane $\to \HH$.** The branch of $\sqrt z$ with argument in $(0,\pi)$ maps $\CC\sm[0,\infty)$ onto $\HH$.
 
 - **Reflections and inversions.** $z\mapsto -z$ maps $\HH$ onto $Q_{34}$.
-  The map $z\mapsto 1/z$ sends $Re^{it}$ to $R\inv e^{-it}$; it is reflection in $\RR$ composed with inversion in $S^1$, and on $\CP^1$ it is the rotation by $\pi$ about the axis through $\pm 1$.
+  The map $z\mapsto 1/z$ sends $Re^{it}$ to $\inverseof{R} e^{-it}$; it is reflection in $\RR$ composed with inversion in $S^1$, and on $\CP^1$ it is the rotation by $\pi$ about the axis through $\pm 1$.
 
 ## Boundary features
 
@@ -67,7 +67,7 @@ If $f\colon U\to W$ and $g\colon V\to W$ are conformal bijections onto a standar
 
 ## Computational facts
 
-- $z\inv = \bar z/\abs z^2$; for example, under $z\mapsto 1/z$ the point $1+i$ on $\abs{z-1}=1$ goes to ${1-i\over 2}$.
+- $\inverseof{z} = \bar z/\abs z^2$; for example, under $z\mapsto 1/z$ the point $1+i$ on $\abs{z-1}=1$ goes to ${1-i\over 2}$.
 
 - Conformal maps preserve angles between curves, including at $\infty$ on $\CP^1$.
   Circles meeting orthogonally map to generalized circles meeting orthogonally, and tangent circles map to tangent circles or parallel lines.
@@ -123,25 +123,15 @@ Joukowski maps:
 
 Cross ratios:
 
-[[E-Z23VB]]
-[[E-G55QF]]
+[[E-Z23VB]] [[E-G55QF]]
 
 Discs and planes:
 
-[[P-IIONX]]
-[[E-W6MWU]]
-[[E-4H3JY]]
-[[E-PGGNF]]
-[[E-6BH7D]]
-[[E-PQ7NC]]
+[[P-IIONX]] [[E-W6MWU]] [[E-4H3JY]] [[E-PGGNF]] [[E-6BH7D]] [[E-PQ7NC]]
 
 Slits:
 
-[[E-YAYQB]]
-[[P-DQTVL]]
-[[P-IJQ5Z]]
-[[P-A6PQA]]
-[[P-CWXEW]]
+[[E-YAYQB]] [[P-DQTVL]] [[P-IJQ5Z]] [[P-A6PQA]] [[P-CWXEW]]
 
 Strips:
 
@@ -149,12 +139,7 @@ Strips:
 
 Lunes:
 
-[[E-UUBBS]]
-[[E-VS4XE]]
-[[P-K7XDT]]
-[[P-5UKXY]]
-[[P-PYCCN]]
-[[P-64ZUP]]
+[[E-UUBBS]] [[E-VS4XE]] [[P-K7XDT]] [[P-5UKXY]] [[P-PYCCN]] [[P-64ZUP]]
 
 Sectors:
 
@@ -166,11 +151,4 @@ Joukowski regions:
 
 Mixed:
 
-[[E-H64WF]]
-[[E-3GIQS]]
-[[P-EEUV6]]
-[[P-K4WSJ]]
-[[E-YCHOS]]
-[[E-JPAJE]]
-[[E-PIB7A]]
-[[E-KZB33]]
+[[E-H64WF]] [[E-3GIQS]] [[P-EEUV6]] [[P-K4WSJ]] [[E-YCHOS]] [[E-JPAJE]] [[E-PIB7A]] [[E-KZB33]]

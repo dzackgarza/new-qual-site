@@ -30,13 +30,12 @@ The Schwarz conjugation trick:
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-11-27_01-09-06.png)
 
 Write the RHS as $a$, we then want something in the form $\abs{F(a)}\leq \abs{a}$.
-The choice $a=\psi_w(z)$ is forced, so $z= \psi_w\inv(a)$.
+The choice $a=\psi_w(z)$ is forced, so $z= \inverseof{\psi_w}(a)$.
 This forces the choice for the LHS
 \[
-{ f(w) - (f\circ \psi_w\inv)(a) \over 1 - \bar{f(w)} (f\circ \psi_w\inv)(a) } 
-= (\psi_{f(w)} \circ f \circ \psi_w\inv)(a) \da F(a)
+{ f(w) - (f\circ \inverseof{\psi_w})(a) \over 1 - \bar{f(w)} (f\circ \inverseof{\psi_w})(a) }
+= (\psi_{f(w)} \circ f \circ \inverseof{\psi_w})(a) \da F(a)
 .\]
-
 
 :::
 
@@ -79,14 +78,15 @@ f(z_1) - (f\circ \psi_{z_1})(z)
 - Since $z_1$ was arbitrary and fixed and $w$ was a free variable, this holds for all $z,w\in \DD$.
 
 - Strictness: suppose equality holds, we'll show that $f(z) = {az+b\over cz+d}$
+
 - By Schwarz, $F(z) = \lambda z$ for $\lambda \in S^1$.
   Thus
   \[
   (\psi_{f(z_1)} \circ f \circ \psi_{z_1}) (z) &= \lambda z \\
   \implies
-  (f \circ \psi_{z_1}) (z) &= \psi_{f(z_1)}\inv(\lambda z ) \\
+  (f \circ \psi_{z_1}) (z) &= \inverseof{\psi_{f(z_1)}}(\lambda z ) \\
   \implies
-  f(w) &= \psi_{f(z_1)}\inv(\lambda \psi_{z_1}\inv(w) ) 
+  f(w) &= \inverseof{\psi_{f(z_1)}}(\lambda \inverseof{\psi_{z_1}}(w) ) 
   && w\da \psi_{z_1}(z) \\
   &= \psi_{f(z_1)} \qty{\lambda \psi_{z_1}(w)} \\
   &= \lambda \psi_{\bar \lambda f(z_1)} \qty{\psi_{z_1}(w)} \\

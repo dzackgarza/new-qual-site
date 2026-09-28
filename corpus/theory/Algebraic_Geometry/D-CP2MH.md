@@ -27,7 +27,7 @@ prompts:
 - Show that there is a unique circle through any $3$ non-collinear points of $\RR^2$.
 - Describe $\PGL_{n+1}(k)$ as a quotient, and show that for two sets of $n+2$ points in linear general position in $\PP^n$ there is a unique element of $\PGL_{n+1}(k)$ carrying one to the other.
 - Show that the $(k+1)$-dimensional linear subspaces of $\PP^n$ containing a fixed $k$-dimensional subspace $W$ form a $\PP^{n-k-1}$.
-- For $\PP^n = \PP(V)$, show that $\PP(V\dual)$ parametrizes the hyperplanes of $\PP^n$.
+- For $\PP^n = \PP(V)$, show that $\PP(\dualof{V})$ parametrizes the hyperplanes of $\PP^n$.
 - Show that there is a unique rational normal curve through $n+3$ points in linear general position in $\PP^n$.
 - Show that $\dim(V_1 \cap V_2) \geq \dim V_1 + \dim V_2 - n$ for linear subspaces $V_1, V_2 \subseteq \PP^n$.
 ---

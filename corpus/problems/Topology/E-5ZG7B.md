@@ -22,7 +22,7 @@ Show that $\RR/\QQ$ has the indiscrete topology.
 
 - Let $U \subset \RR/\QQ$ be open and nonempty, show $U = \RR/\QQ$.
 
-- Let $[x] \in U$, then $x \in \pi\inv(U) \definedas V \subset\RR$ is open.
+- Let $[x] \in U$, then $x \in \inverseof{\pi}(U) \definedas V \subset\RR$ is open.
 
 - Then $V$ contains an interval $(a, b)$
 

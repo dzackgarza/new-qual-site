@@ -28,9 +28,9 @@ $$
 {1\over z-1} = -{1\over 1-z} = -\sum_{k\geq 0} z^k
 .$$
 
-On $\abs z > 1$, factoring out $z$ gives a geometric series in $z\inv$:
+On $\abs z > 1$, factoring out $z$ gives a geometric series in $\inverseof{z}$:
 $$
-{1\over z-1} = {1\over z}\cdot{1 \over 1 - z\inv} = \sum_{k \geq 1} z^{-k}
+{1\over z-1} = {1\over z}\cdot{1 \over 1 - \inverseof{z}} = \sum_{k \geq 1} z^{-k}
 .$$
 
 Each series converges to $f$ on its annulus.
@@ -42,7 +42,7 @@ Each series converges to $f$ on its annulus.
 By uniqueness of the Laurent expansion on a given annulus, any convergent expansion obtained from known series is the Laurent series, and its coefficients equal the coefficient integrals.
 
 - **Geometric series.** Write the expression as ${1 \over 1 - u}$ with $\abs u < 1$ on the given annulus, and expand.
-  On $\abs{z}<1$ one takes $u$ a multiple of $z$, and on $\abs z>1$ a multiple of $z\inv$.
+  On $\abs{z}<1$ one takes $u$ a multiple of $z$, and on $\abs z>1$ a multiple of $\inverseof{z}$.
 
 - **Products and compositions of known expansions.** For $f = g\cdot h$ with $g$ having a pole and $h$ holomorphic, expand $h$ as a Taylor series and multiply through by the finite principal part of $g$.
 

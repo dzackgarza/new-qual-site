@@ -29,5 +29,5 @@ The \dfn{degree} of a polarization on $X$ of dimension $n$ is the intersection n
 ::: {.example}
 $(\PP^n, \OO(1))$ is polarized of degree $1$, and a hypersurface of degree $d$ with $\OO(1)$ is polarized of degree $d$.
 A K3 surface with an ample class $h$ has a polarization of degree $h^2 = 2g - 2$, and a quartic surface in $\PP^3$ is a K3 surface of degree $4$.
-For an abelian variety $A$, a polarization is equivalently an isogeny $A \to A^\dual$ of the form $x \mapsto t_x^* \mcl \otimes \mcl^{-1}$; it is \dfn{principal} when this is an isomorphism, as for the theta divisor on the Jacobian of a curve.
+For an abelian variety $A$, a polarization is equivalently an isogeny $A \to \dualof{A}$ of the form $x \mapsto t_x^* \mcl \otimes \mcl^{-1}$; it is \dfn{principal} when this is an isomorphism, as for the theta divisor on the Jacobian of a curve.
 :::

@@ -19,6 +19,6 @@ review: draft
 Let $m \geq 1$ and let $\zeta_m$ be a [[FD-HM4P2|primitive $m$th root of unity]] in $\CC$.
 The splitting field of $x^m - 1$ over $\QQ$ is the [[D-IPR4B|cyclotomic field]] $\QQ(\zeta_m)$, and
 $$
-\Gal(\QQ(\zeta_m)/\QQ) \cong (\ZZ/m\ZZ)\units.
+\Gal(\QQ(\zeta_m)/\QQ) \cong \unitsof{(\ZZ/m\ZZ)}.
 $$
 :::

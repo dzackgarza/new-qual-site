@@ -84,7 +84,7 @@ So $\ts{m}$ is a basis of $I$.
 
 ## Tensor products and duals
 
-For finite-dimensional vector spaces $V$ and $W$ over a field $k$, $V\dual\tensor_k W\cong\Hom_k(V,W)$ and $V\dual\tensor_k W\dual\cong(V\tensor_k W)\dual$, and the trace pairing $(f,g)\mapsto\tr(g\circ f)$ identifies $\Hom_k(V,W)$ with $\Hom_k(W,V)\dual$.
+For finite-dimensional vector spaces $V$ and $W$ over a field $k$, $\dualof{V}\tensor_k W\cong\Hom_k(V,W)$ and $\dualof{V}\tensor_k \dualof{W}\dualof{\cong(V\tensor_k W)}$, and the trace pairing $(f,g)\mapsto\tr(g\circ f)$ identifies $\Hom_k(V,W)$ with $\dualof{\Hom_k(W,V)}$.
 For a module $M$ over a commutative ring $R$, the functor $M\tensor_R-$ preserves injective maps if and only if $M$ is flat.
 
 [[D-B5X33]]

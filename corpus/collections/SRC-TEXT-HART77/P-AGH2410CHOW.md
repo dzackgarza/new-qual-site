@@ -26,13 +26,13 @@ audit:
 This result says that proper morphisms are fairly close to projective morphisms.
 
 Let $X$ be proper over a noetherian scheme $S$.
-Then there is a scheme $X'$ and a morphism $g: X' \to X$ such that $X'$ is projective over $S$, and there is an open dense subset $U \subseteq X$ such that $g$ induces an isomorphism of $g\inv(U)$ onto $U$.
+Then there is a scheme $X'$ and a morphism $g: X' \to X$ such that $X'$ is projective over $S$, and there is an open dense subset $U \subseteq X$ such that $g$ induces an isomorphism of $\inverseof{g}(U)$ onto $U$.
 Prove this in the following steps.
 
 a. Reduce to the case $X$ irreducible.
 
 b. Show that $X$ can be covered by finitely many open subsets $U_i$, $i = 1, \ldots, n$, each of which is quasi-projective over $S$.
-Let $U_i \injects P_i$ be an open immersion of $U_i$ into a scheme $P_i$ which is projective over $S$.
+   Let $U_i \injects P_i$ be an open immersion of $U_i$ into a scheme $P_i$ which is projective over $S$.
 
 c. Let $U = \bigcap_i U_i$, and consider the map
 \[
@@ -43,13 +43,13 @@ Let $X'$ be the closed image subscheme structure on $\cl_X f(U)$ (see Ex. 3.11d)
 Let $g: X' \to X$ be the projection onto the first factor, and let $h: X' \to P = P_1 \fiberproduct{S} \cdots \fiberproduct{S} P_n$ be the projection onto the product of the remaining factors.
 Show that $h$ is a closed immersion, hence $X'$ is projective over $S$.
 
-d. Show that $g\inv(U) \to U$ is an isomorphism, completing the proof.
+d. Show that $\inverseof{g}(U) \to U$ is an isomorphism, completing the proof.
 :::
 
 ::: {.solution}
 <1>1. It is enough to prove the theorem when the underlying topological space of $X$ is irreducible.
-::: {.proof}
-Because $X$ is proper over the noetherian scheme $S$, it is noetherian.  Let
+::: {.proof} Because $X$ is proper over the noetherian scheme $S$, it is noetherian.
+Let
 \[
 X_1,\ldots,X_m
 \]
@@ -71,13 +71,16 @@ be the scheme-theoretic closure of the open immersion
 \[
 V_i\hookrightarrow X.
 \]
-Then $|Y_i|=X_i$, so $Y_i$ is irreducible as a topological space.  It is a closed subscheme of the proper $S$-scheme $X$, hence is proper over $S$.  Moreover
+Then $|Y_i|=X_i$, so $Y_i$ is irreducible as a topological space.
+It is a closed subscheme of the proper $S$-scheme $X$, hence is proper over $S$.
+Moreover
 \[
 Y_i|_{V_i}=V_i
 \]
 scheme-theoretically: over the open set $V_i$ the given immersion is already a closed immersion onto all of $V_i$, so its scheme-theoretic image there is $V_i$ itself.
 
-Assume the theorem known for schemes with irreducible underlying space.  For each $Y_i$ choose a projective $S$-scheme
+Assume the theorem known for schemes with irreducible underlying space.
+For each $Y_i$ choose a projective $S$-scheme
 \[
 Y_i'
 \]
@@ -114,7 +117,8 @@ The opens $W_i$ are pairwise disjoint by construction, and
 \[
 W=\bigcup_iW_i
 \]
-is open and dense in $X$: it meets every irreducible component in a dense open subset.  Over $W$ the morphism $g$ is the disjoint union of the isomorphisms
+is open and dense in $X$: it meets every irreducible component in a dense open subset.
+Over $W$ the morphism $g$ is the disjoint union of the isomorphisms
 \[
 g_i^{-1}(W_i)\xrightarrow{\sim}W_i.
 \]
@@ -123,13 +127,15 @@ Hence $g^{-1}(W)\to W$ is an isomorphism.
 Thus the irreducible case implies the general case, including the nonreduced scheme structure on the dense open.
 :::
 
-<1>2. We now assume $X$ irreducible.  Every point $x\in X$ has an open neighborhood which is quasi-projective over $S$.
-::: {.proof}
-Let $s\in S$ be the image of $x$.  Choose an affine open neighborhood
+<1>2. We now assume $X$ irreducible.
+Every point $x\in X$ has an open neighborhood which is quasi-projective over $S$.
+::: {.proof} Let $s\in S$ be the image of $x$.
+Choose an affine open neighborhood
 \[
 V=\Spec B\subseteq S
 \]
-of $s$.  The inverse image
+of $s$.
+The inverse image
 \[
 X_V=X\times_SV
 \]
@@ -139,7 +145,9 @@ Choose an affine open neighborhood
 \[
 W=\Spec A\subseteq X_V
 \]
-of $x$.  By Hartshorne II.3.3(c), $A$ is a finitely generated $B$-algebra.  Hence there is a surjection
+of $x$.
+By Hartshorne II.3.3(c), $A$ is a finitely generated $B$-algebra.
+Hence there is a surjection
 \[
 B[t_1,\ldots,t_N]\twoheadrightarrow A,
 \]
@@ -156,7 +164,8 @@ and $\mathbb P^N_V$ is itself an open subscheme of
 \[
 \mathbb P^N_S
 \]
-because $V\subseteq S$ is open.  Thus the composite
+because $V\subseteq S$ is open.
+Thus the composite
 \[
 W\longrightarrow\mathbb P^N_S
 \]
@@ -192,8 +201,7 @@ The open subset
 U=\bigcap_{i=1}^nU_i
 \]
 is nonempty and dense in $X$.
-::: {.proof}
-The first assertion is the definition of quasi-projectivity.
+::: {.proof} The first assertion is the definition of quasi-projectivity.
 
 Since $X$ is irreducible, every nonempty open subset is dense, and any finite intersection of nonempty open subsets is nonempty.  Thus the finite intersection $U$ is nonempty, open, and dense.
 :::
@@ -230,8 +238,7 @@ Let
 X'\hookrightarrow Q
 \]
 be the scheme-theoretic image of $f$.
-::: {.proof}
-The universal property of the fibre product gives the displayed morphism from its coordinate maps.
+::: {.proof} The universal property of the fibre product gives the displayed morphism from its coordinate maps.
 
 Since $U$ is noetherian, the morphism $f$ is quasi-compact and quasi-separated.  Hartshorne II.3.11 therefore supplies its scheme-theoretic image, a closed subscheme $X'\subseteq Q$ through which $f$ factors minimally.
 :::
@@ -244,8 +251,7 @@ h:X'\to P
 \]
 be the restrictions of the two projections from $Q=X\times_SP$.
 The morphism $h$ is proper.
-::: {.proof}
-The projection
+::: {.proof} The projection
 \[
 Q=X\times_SP\longrightarrow P
 \]
@@ -253,7 +259,8 @@ is the base change of the proper morphism
 \[
 X\longrightarrow S
 \]
-along $P\to S$.  Hence $Q\to P$ is proper.
+along $P\to S$.
+Hence $Q\to P$ is proper.
 
 The inclusion $X'\hookrightarrow Q$ is a closed immersion, hence proper.  Therefore their composite
 \[
@@ -307,8 +314,7 @@ along $\pi_i:P\to P_i$.  Open immersions are stable under base change.
 \[
 G_i\hookrightarrow O_i=U_i\times_SP.
 \]
-::: {.proof}
-The morphism is the graph of the composite
+::: {.proof} The morphism is the graph of the composite
 \[
 U_i\xrightarrow{j_i}P_i
 \]
@@ -330,8 +336,8 @@ Thus it is a closed immersion.
 X_i'=X'\cap O_i
 \]
 is a closed subscheme of $G_i$.
-::: {.proof}
-For $x\in U$, the $i$th projective coordinate of $f(x)$ is by definition $j_i(x)$.  Hence
+::: {.proof} For $x\in U$, the $i$th projective coordinate of $f(x)$ is by definition $j_i(x)$.
+Hence
 \[
 f(U)\subseteq G_i.
 \]
@@ -373,13 +379,15 @@ is an immersion.
 Being an immersion is local on the source.  The open subsets $X_i'$ cover $X'$ by <1>8, and the restriction of $h$ to each is an immersion by <1>12.  Hence $h$ is an immersion.
 :::
 
-<1>14. A proper immersion is a closed immersion.  Hence
+<1>14. A proper immersion is a closed immersion.
+Hence
 \[
 \boxed{h:X'\hookrightarrow P}
 \]
 is a closed immersion.
-::: {.proof}
-An immersion factors as an open immersion followed by a closed immersion onto a locally closed subscheme of the target.  A proper morphism is closed, so the image of the proper immersion $h$ is closed in $P$.  Thus the locally closed image is actually closed, and the immersion is a closed immersion.
+::: {.proof} An immersion factors as an open immersion followed by a closed immersion onto a locally closed subscheme of the target.
+A proper morphism is closed, so the image of the proper immersion $h$ is closed in $P$.
+Thus the locally closed image is actually closed, and the immersion is a closed immersion.
 
 Equivalently, a proper monomorphism is a closed immersion.
 :::
@@ -464,8 +472,7 @@ Thus $g$ restricts to an isomorphism over $U$.
 :::
 
 <1>20. This proves Chow's lemma.
-::: {.proof}
-In the irreducible case, <1>3--<1>4 produce the finite quasi-projective cover and dense open $U$ requested in part (b).  Steps <1>5--<1>15 construct the projective scheme $X'$ and prove part (c).  Steps <1>16--<1>19 prove part (d).
+::: {.proof} In the irreducible case, <1>3--<1>4 produce the finite quasi-projective cover and dense open $U$ requested in part (b). Steps <1>5--<1>15 construct the projective scheme $X'$ and prove part (c). Steps <1>16--<1>19 prove part (d).
 
 Finally <1>1 reduces the general noetherian proper scheme to this irreducible case.  Hence there exist a projective $S$-scheme $X'$ and a morphism
 \[

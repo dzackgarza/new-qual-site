@@ -40,23 +40,23 @@ The claim is that for any given $r$, the constant $C\da M/r$ works, where $M\da 
 The scaled Schwarz lemma gives $\abs{f(z)}\leq {M\over r}\abs{z} = C\abs{z}$, and $\abs{C} \leq 1$ since $\abs{M} \leq r$, which follows because $\abs{f(z)}\leq \abs{z}$ on $\DD$ itself.
 :::
 
-For $a\neq 0$, take a Blaschke factor $\psi_a(z)$ and consider $F \da \psi_a\inv \circ f\circ \psi_a$.
+For $a\neq 0$, take a Blaschke factor $\psi_a(z)$ and consider $F \da \inverseof{\psi_a} \circ f\circ \psi_a$.
 The claim is that this reduces to the case $a=0$.
 
 Note $F(0) = 0$, so $0$ is a fixed point of $F$.
 Moreover, a clever calculation shows
 \[
-F'(0) 
-&= (\psi_a\inv)'(f(\psi_a(0))) \cdot f'(\psi_a(0)) \cdot \psi_a'(0) \\ \\
-&= (\psi_a\inv)'(f( a )) \cdot f'(a ) \cdot \psi_a'(0) \\ \\
-&= (\psi_a\inv)'(a) \cdot f'(a ) \cdot \psi_a'(0) \qquad \text{since } f(a) = a \\ \\
-&= (\psi_a)'(a) \cdot \psi_a'(0) \cdot f'(a) \qquad \text{since } \psi_a\inv = \psi_a \\ \\
+F'(0)
+&= (\inverseof{\psi_a})'(f(\psi_a(0))) \cdot f'(\psi_a(0)) \cdot \psi_a'(0) \\ \\
+&= (\inverseof{\psi_a})'(f( a )) \cdot f'(a ) \cdot \psi_a'(0) \\ \\
+&= (\inverseof{\psi_a})'(a) \cdot f'(a ) \cdot \psi_a'(0) \qquad \text{since } f(a) = a \\ \\
+&= (\psi_a)'(a) \cdot \psi_a'(0) \cdot f'(a) \qquad \text{since } \inverseof{\psi_a} = \psi_a \\ \\
 &= (\psi_a)'( \psi_a(0) ) \cdot \psi_a'(0) \cdot f'(a) \\ \\
 &= (\psi_a \circ \psi_a)'(0) \cdot f'(a) \\
 &= 1 \cdot f'(a)
 ,\]
 so $\abs{F'(0)} = \abs{f'(a)} < 1$.
-Now setting $w_k \da \psi_a(z_n)$ and writing $f = \psi_a \circ F \circ \psi_a\inv$, by continuity we have 
+Now setting $w_k \da \psi_a(z_n)$ and writing $f = \psi_a \circ F \circ \inverseof{\psi_a}$, by continuity we have
 \[
 f(z_k) = \psi_a(F(w_k)) \convergesto{k\to\infty} \psi_a(0) = a
 .\]

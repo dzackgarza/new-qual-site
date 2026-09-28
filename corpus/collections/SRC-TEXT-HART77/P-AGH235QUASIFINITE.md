@@ -23,7 +23,7 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f: X \to Y$ is **quasi-finite** if for every point $y \in Y$ the fibre $f\inv(y)$ is a finite set.
+A morphism $f: X \to Y$ is **quasi-finite** if for every point $y \in Y$ the fibre $\inverseof{f}(y)$ is a finite set.
 
 a. Show that a finite morphism is quasi-finite.
 
@@ -33,17 +33,18 @@ c. Show by example that a surjective, finite-type, quasi-finite morphism need no
 :::
 
 ::: {.solution}
-<1>1. Let $f:X\to Y$ be finite and let $y\in Y$.  Then the scheme-theoretic fibre
+<1>1. Let $f:X\to Y$ be finite and let $y\in Y$.
+Then the scheme-theoretic fibre
 \[
 X_y=X\times_Y\Spec\kappa(y)
 \]
 is the spectrum of a finite-dimensional $\kappa(y)$-algebra.
-::: {.proof}
-Choose an affine neighborhood
+::: {.proof} Choose an affine neighborhood
 \[
 V=\Spec B\subseteq Y
 \]
-of $y$.  Since $f$ is finite, Hartshorne II.3.4 gives
+of $y$.
+Since $f$ is finite, Hartshorne II.3.4 gives
 \[
 f^{-1}(V)=\Spec A
 \]
@@ -68,25 +69,30 @@ Such an algebra is Artinian as a ring.  In an Artinian ring every prime ideal is
 For each $y\in Y$, <1>1--<1>2 show that the fibre $X_y$ has finitely many points.  Its underlying set is naturally the set-theoretic fibre $f^{-1}(y)$.  Thus every fibre of $f$ is finite.
 :::
 
-<1>4. Let $f:X\to Y$ be finite.  Then $f$ is a closed map.
-::: {.proof}
-It suffices to check closedness over an affine open cover of $Y$.  Let
+<1>4. Let $f:X\to Y$ be finite.
+Then $f$ is a closed map.
+::: {.proof} It suffices to check closedness over an affine open cover of $Y$.
+Let
 \[
 V=\Spec B\subseteq Y,
 \qquad
 f^{-1}(V)=\Spec A,
 \]
-with $A$ finite over $B$.  Let
+with $A$ finite over $B$.
+Let
 \[
 Z\cap f^{-1}(V)=V(J)\subseteq\Spec A
 \]
 for an ideal $J\subseteq A$.
 
-The quotient $A/J$ is integral over the image of $B/(J\cap B)$ because finite ring extensions are integral and integrality passes to quotients.  The induced map
+The quotient $A/J$ is integral over the image of $B/(J\cap B)$ because finite ring extensions are integral and integrality passes to quotients.
+The induced map
 \[
 B/(J\cap B)\hookrightarrow A/J
 \]
-is injective.  By lying over, every prime of $B/(J\cap B)$ is the contraction of a prime of $A/J$.  Hence the image of $V(J)$ in $\Spec B$ is exactly
+is injective.
+By lying over, every prime of $B/(J\cap B)$ is the contraction of a prime of $A/J$.
+Hence the image of $V(J)$ in $\Spec B$ is exactly
 \[
 V(J\cap B),
 \]
@@ -111,8 +117,7 @@ Then
 f:X\longrightarrow Y
 \]
 is surjective, of finite type, and quasi-finite.
-::: {.proof}
-The image of the first component is $Y\setminus\{0\}$, and the second component maps to $0$, so $f$ is surjective.
+::: {.proof} The image of the first component is $Y\setminus\{0\}$, and the second component maps to $0$, so $f$ is surjective.
 
 Both component maps are of finite type: the open immersion corresponds to
 \[
@@ -128,12 +133,12 @@ For $a\ne0$, the fibre over $a$ consists of the single point $a\in\mathbb G_m$. 
 :::
 
 <1>6. The morphism in <1>5 is not finite.
-::: {.proof}
-The component
+::: {.proof} The component
 \[
 \mathbb G_m\subseteq X
 \]
-is closed, because it is a component of a disjoint union.  Its image is
+is closed, because it is a component of a disjoint union.
+Its image is
 \[
 \mathbb A^1\setminus\{0\},
 \]

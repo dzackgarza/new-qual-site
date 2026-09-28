@@ -52,11 +52,13 @@ which is exact at $\mcf_1(X)$ and at $\mcf_2(X)$.
 \[
 (\ker f)(U) = (\mathbf 0)(U) = 0
 .\]
+
 - Since
 \[
 (\ker f)(U) &\da \ker f_U \da \ker( \mcf_1(U) \xrightarrow{f_U} \mcf_2(U)) \\
 \implies \ker f_X &= (\ker f)(X) = (\mathbf 0)(X) = 0
 .\]
+
 - The first equality holds because the kernel presheaf $U\mapsto\ker f_U$ is a sheaf.
   The image presheaf $U\mapsto\im g_U$ is in general not a sheaf; the image sheaf is its sheafification.
 
@@ -85,7 +87,6 @@ A sequence of sheaves is exact if and only if it is exact on stalks, and restric
 	\arrow[from=3-5, to=3-6]
 \end{tikzcd}
 
-
 - Suppose $s\in \mcf_1(X)$ and $f_X(s) = 0$ in $\mcf_2(X)$. Then
 \[
 (\mcf_2 \mid^X_p \circ f_X )(s) &= \mcf_2\mid^X_p( 0) = 0 \in (\mcf_2)_p \quad\text{group homomorphisms send $0$ to $0$}\\
@@ -95,7 +96,9 @@ A sequence of sheaves is exact if and only if it is exact on stalks, and restric
 which holds for all $p$.
 
 - By the sheaf condition on $\mcf_1$, $s= 0 \in \mcf_1(X)$:
-  - Fix $p$. For $s\in \mcf_1(X)$, write a representative $\mcf_1\mid^X_p(s) = [U, \tilde s\in \mcf_1(U)]$.
+
+  - Fix $p$.
+    For $s\in \mcf_1(X)$, write a representative $\mcf_1\mid^X_p(s) = [U, \tilde s\in \mcf_1(U)]$.
 
   > Recall $(U_1, s_1) \sim (U_2, s_2) \in \mcf_p \iff$ they are both equivalent to $(W, t)$ where $W \subseteq U_1 \intersect U_2$ and
   > \[
@@ -103,17 +106,19 @@ which holds for all $p$.
   > .\]
 
   - Then $s_p \da \mcf_1 \mid^X_p(s) = 0 \sim (W, 0) \in (\mcf_1)_p$ means there is some $W_p$ and a lift $\tilde s(p) = 0 \in \mcf_1(W_p)$ with $\mcf_1\mid^{W_p}_p(\tilde s(p)) = s_p$.
+
   - This holds for all $p$, and $\ts{W_p}_{p\in X} \covers X$, so by the gluing axiom for $\mcf_1$ the sections $\ts{ \tilde s(p) \in \mcf_1(W_p) \st p\in X}$ glue to a unique $\tilde s\in \mcf_1(X)$; by uniqueness $\tilde s = s = 0 \in \mcf_1(X)$.
 
 **Exactness at $\mcf_2(X)$.**
 
-- $\im f_X \subseteq \ker g_X$. Let $s \in \im f_X \subseteq \mcf_2(X)$; restriction to the stalk at $p$ gives the diagram
+- $\im f_X \subseteq \ker g_X$.
+  Let $s \in \im f_X \subseteq \mcf_2(X)$; restriction to the stalk at $p$ gives the diagram
 
 \begin{tikzcd}
-	& {\color{rgb,255:red,92;green,92;blue,214}f_X\inv(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \da g_X(s)} \\
+	& {\color{rgb,255:red,92;green,92;blue,214}\inverseof{f_X}(s)} & {\color{rgb,255:red,92;green,92;blue,214}s} & {\ell \da g_X(s)} \\
 	0 & {\mcf_1(X)} & {\mcf_2(X)} & {\mcf_3(X)} & {?} \\
 	0 & {(\mcf_1)_p} & {(\mcf_2)_p} & {(\mcf_3)_p} \\
-	& {\color{rgb,255:red,92;green,92;blue,214}\mcf_1\mid^U_p(f_X\inv(s))} & {\color{rgb,255:red,92;green,92;blue,214}t \da \mcf_2\mid^U_p(s)} & 0
+	& {\color{rgb,255:red,92;green,92;blue,214}\mcf_1\mid^U_p(\inverseof{f_X}(s))} & {\color{rgb,255:red,92;green,92;blue,214}t \da \mcf_2\mid^U_p(s)} & 0
 	\arrow[from=2-1, to=2-2]
 	\arrow["{f_X}", from=2-2, to=2-3]
 	\arrow["{g_X}", from=2-3, to=2-4]
@@ -133,10 +138,15 @@ which holds for all $p$.
 \[
 \mcf_2\mid^X_p(s) \in \im f_p = \ker g_p
 .\]
-- Put $\ell\da g_X(s)$. By commutativity, $\mcf_3 \mid^X_p(\ell) = g_p(\mcf_2\mid^X_p(s)) = 0$.
+
+- Put $\ell\da g_X(s)$.
+  By commutativity, $\mcf_3 \mid^X_p(\ell) = g_p(\mcf_2\mid^X_p(s)) = 0$.
   Since this is true at all stalks, $\ell = 0\in \mcf_3(X)$, so $s \in \ker g_X$.
-- $\ker g_X \subseteq \im f_X$. Let $s\in\mcf_2(X)$ with $g_X(s)=0$. For each $p\in X$, the germ $s_p$ lies in $\ker g_p = \im f_p$, so there are an open neighborhood $W_p$ of $p$ and $t_p\in\mcf_1(W_p)$ with $f_{W_p}(t_p) = s|_{W_p}$ (shrinking $W_p$ so that the germ equality holds on $W_p$).
-  On $W_p\cap W_q$, $f(t_p|_{W_p\cap W_q} - t_q|_{W_p\cap W_q}) = 0$, and $f_{W_p\cap W_q}$ is injective by exactness at $\mcf_1$ applied to the open set $W_p\cap W_q$. Hence the $t_p$ agree on overlaps and glue to $t\in\mcf_1(X)$.
+
+- $\ker g_X \subseteq \im f_X$.
+  Let $s\in\mcf_2(X)$ with $g_X(s)=0$.
+  For each $p\in X$, the germ $s_p$ lies in $\ker g_p = \im f_p$, so there are an open neighborhood $W_p$ of $p$ and $t_p\in\mcf_1(W_p)$ with $f_{W_p}(t_p) = s|_{W_p}$ (shrinking $W_p$ so that the germ equality holds on $W_p$). On $W_p\cap W_q$, $f(t_p|_{W_p\cap W_q} - t_q|_{W_p\cap W_q}) = 0$, and $f_{W_p\cap W_q}$ is injective by exactness at $\mcf_1$ applied to the open set $W_p\cap W_q$.
+  Hence the $t_p$ agree on overlaps and glue to $t\in\mcf_1(X)$.
   Then $f_X(t)-s$ restricts to $0$ on every $W_p$, so $f_X(t)=s$ by the sheaf axiom for $\mcf_2$.
 
 The arguments above use only the sheaf axioms on the open sets involved, so they apply verbatim with $X$ replaced by an arbitrary open $U\subseteq X$; hence $\Gamma(U,-)$ is left exact.
@@ -145,17 +155,18 @@ The arguments above use only the sheaf axioms on the open sets involved, so they
 
 The exponential $z\mapsto e^{2\pi i z}$ gives the exact sequence of groups
 \[
-0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\CC\units) \to 0 \in \Grp
+0 \to \ZZ \to \GG_a(\CC) \xrightarrow{\exp: z\mapsto e^{2\pi i z}} \GG_m(\unitsof{\CC}) \to 0 \in \Grp
 ,\]
-and, on $X\da \CC\units$, the exact sequence of sheaves
+and, on $X\da \unitsof{\CC}$, the exact sequence of sheaves
 \[
-0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \Hol_X({-})\units \to 0 \in \Sh(X, \Grp)
+0 \to \underline{\ZZ} \to \Hol_X({-}) \xrightarrow{\exp} \unitsof{\Hol_X({-})} \to 0 \in \Sh(X, \Grp)
 .\]
-Here $\Hol_X({-})\units$ denotes the multiplicatively invertible functions, i.e. the nonvanishing functions.
+Here $\unitsof{\Hol_X({-})}$ denotes the multiplicatively invertible functions, i.e. the nonvanishing functions.
 
 Applying $\Gamma(X; {-})$ gives
 \[
-0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \Hol_X(X)\units \to 0
+0 \to \ZZ \to \Hol_X(X) \xrightarrow{\exp} \unitsof{\Hol_X(X)} \to 0
 .\]
-If $\exp\colon\Hol_X(X)\to\Hol_X(X)\units$ were surjective, every nonvanishing holomorphic function on $\CC\units$ would have a logarithm on all of $\CC\units$. The identity function $z\mapsto z$ has none, since $\oint_{\abs{z}=1} dz/z = 2\pi i \neq 0$.
+If $\exp\colon\Hol_X(X)\to\unitsof{\Hol_X(X)}$ were surjective, every nonvanishing holomorphic function on $\unitsof{\CC}$ would have a logarithm on all of $\unitsof{\CC}$.
+The identity function $z\mapsto z$ has none, since $\oint_{\abs{z}=1} dz/z = 2\pi i \neq 0$.
 :::

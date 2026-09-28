@@ -24,26 +24,18 @@ audit:
 
 ::: {.problem}
 Let $(X,\OO_X)$ be a ringed space, and let $\mce$ be a locally free $\OO_X$-module of finite rank.
-We define the \dfn{dual} of $\mce$, denoted $\mce\dual$, to be the sheaf $\sheafhom_{\OO_X}(\mce,\OO_X)$.
+We define the \dfn{dual} of $\mce$, denoted $\dualof{\mce}$, to be the sheaf $\sheafhom_{\OO_X}(\mce,\OO_X)$.
 
-(a) Show that $(\mce\dual)\dual\cong\mce$.
+(a) Show that $\dualof{(\dualof{\mce})}\cong\mce$.
 
-(b) For any $\OO_X$-module $\mcf$, show that there is a natural isomorphism
-$$
-\mce\dual\otimes_{\OO_X}\mcf
-\cong\sheafhom_{\OO_X}(\mce,\mcf).
+(b) For any $\OO_X$-module $\mcf$, show that there is a natural isomorphism $$ \dualof{\mce}\otimes_{\OO_X}\mcf \cong\sheafhom_{\OO_X}(\mce,\mcf).
 $$
 
-(c) For any $\OO_X$-modules $\mcf$ and $\mcg$, show that there is a natural isomorphism
-$$
-\Hom_{\OO_X}(\mce\otimes_{\OO_X}\mcf,\mcg)
-\cong\Hom_{\OO_X}\bigl(\mcf,\sheafhom_{\OO_X}(\mce,\mcg)\bigr).
+(c) For any $\OO_X$-modules $\mcf$ and $\mcg$, show that there is a natural isomorphism $$ \Hom_{\OO_X}(\mce\otimes_{\OO_X}\mcf,\mcg) \cong\Hom_{\OO_X}\bigl(\mcf,\sheafhom_{\OO_X}(\mce,\mcg)\bigr).
 $$
 
-(d) (Projection formula.) If $f:(X,\OO_X)\to(Y,\OO_Y)$ is a morphism of ringed spaces, if $\mcf$ is an $\OO_X$-module, and if $\mce$ is a locally free $\OO_Y$-module of finite rank, then there is a natural isomorphism
-$$
-f_*\bigl(\mcf\otimes_{\OO_X}f^*\mce\bigr)
-\cong f_*\mcf\otimes_{\OO_Y}\mce.
+(d) (Projection formula.)
+    If $f:(X,\OO_X)\to(Y,\OO_Y)$ is a morphism of ringed spaces, if $\mcf$ is an $\OO_X$-module, and if $\mce$ is a locally free $\OO_Y$-module of finite rank, then there is a natural isomorphism $$ f_*\bigl(\mcf\otimes_{\OO_X}f^*\mce\bigr) \cong f_*\mcf\otimes_{\OO_Y}\mce.
 $$
 :::
 
@@ -52,32 +44,32 @@ For sheaves of modules $\mathcal A,\mathcal B$ on $X$, the sections of $\sheafho
 Here $\OO_U=\OO_X|_U$; in particular $\Hom_{\OO_X}(\mathcal A,\mathcal B)$ is the module of global sections of this sheaf [@Har10a, Chapter II, §5].
 Tensor products in parts (a)-(c) are over $\OO_X$.
 
-<1>1. For part (a), the evaluation morphism $\delta:\mce\to(\mce\dual)\dual$ is an isomorphism.
+<1>1. For part (a), the evaluation morphism $\delta:\mce\dualof{\to(\dualof{\mce})}$ is an isomorphism.
 
 ::: {.proof}
 For an open set $U$ and $e\in\mce(U)$, define $\delta_U(e)$ by the compatible maps
 $$
-\mce\dual(V)\longrightarrow\OO_X(V),
+\dualof{\mce}(V)\longrightarrow\OO_X(V),
 \qquad\lambda\longmapsto\lambda_V(e|_V),
 \qquad V\subseteq U.
 $$
 These maps are linear and compatible with restriction, so they define the morphism $\delta$.
 
-On a trivializing open set $U$, choose a frame $e_1,\ldots,e_r$ for $\mce|_U$ and its coordinate functionals $e_1\dual,\ldots,e_r\dual$.
-These functionals form a frame for $\mce\dual|_U$: a sheaf morphism $\mce|_V\to\OO_V$ is determined uniquely by its values on the restricted $e_j$ for every $V\subseteq U$.
-For $h\in(\mce\dual)\dual(V)$, the formula
+On a trivializing open set $U$, choose a frame $e_1,\ldots,e_r$ for $\mce|_U$ and its coordinate functionals $\dualof{e_1},\ldots,\dualof{e_r}$.
+These functionals form a frame for $\dualof{\mce}|_U$: a sheaf morphism $\mce|_V\to\OO_V$ is determined uniquely by its values on the restricted $e_j$ for every $V\subseteq U$.
+For $h\dualof{\in(\dualof{\mce})}(V)$, the formula
 $$
-h\longmapsto\sum_{j=1}^r h_V(e_j\dual|_V)e_j|_V
+h\longmapsto\sum_{j=1}^r h_V(\dualof{e_j}|_V)e_j|_V
 $$
 is inverse to $\delta_V$.
 Thus $\delta$ is locally, and hence globally, an isomorphism.
 The defining evaluation formula commutes with morphisms of locally free sheaves, so it is natural and does not depend on the frames used to verify it.
 :::
 
-<1>2. For part (b), the morphism $\beta:\mce\dual\otimes\mcf\to\sheafhom_{\OO_X}(\mce,\mcf)$ defined by evaluation and scalar multiplication is an isomorphism.
+<1>2. For part (b), the morphism $\beta:\dualof{\mce}\otimes\mcf\to\sheafhom_{\OO_X}(\mce,\mcf)$ defined by evaluation and scalar multiplication is an isomorphism.
 
 ::: {.proof}
-For $\lambda\in\mce\dual(U)$ and $s\in\mcf(U)$, define $\beta_U(\lambda\otimes s)$ on each $V\subseteq U$ by
+For $\lambda\in\dualof{\mce}(U)$ and $s\in\mcf(U)$, define $\beta_U(\lambda\otimes s)$ on each $V\subseteq U$ by
 $$
 e\longmapsto\lambda_V(e)s|_V,
 \qquad e\in\mce(V).
@@ -85,12 +77,12 @@ $$
 This construction is balanced over $\OO_X(U)$ and compatible with restrictions.
 It therefore induces $\beta$ by the universal property of the sheaf tensor product.
 
-On an open set $U$ with frame $e_1,\ldots,e_r$ and dual frame $e_1\dual,\ldots,e_r\dual$, the inverse sends a sheaf morphism $\theta:\mce|_V\to\mcf|_V$, for $V\subseteq U$, to
+On an open set $U$ with frame $e_1,\ldots,e_r$ and dual frame $\dualof{e_1},\ldots,\dualof{e_r}$, the inverse sends a sheaf morphism $\theta:\mce|_V\to\mcf|_V$, for $V\subseteq U$, to
 $$
-\sum_{j=1}^r e_j\dual|_V\otimes\theta_V(e_j|_V).
+\sum_{j=1}^r \dualof{e_j}|_V\otimes\theta_V(e_j|_V).
 $$
 Evaluation on the frame proves that applying $\beta$ to this section recovers $\theta$.
-Conversely, the identity $\lambda=\sum_j\lambda(e_j)e_j\dual$ proves that the reverse composite fixes every local elementary tensor, and these tensors locally generate the tensor product sheaf.
+Conversely, the identity $\lambda=\sum_j\lambda(e_j)\dualof{e_j}$ proves that the reverse composite fixes every local elementary tensor, and these tensors locally generate the tensor product sheaf.
 Thus $\beta$ is an isomorphism.
 Its evaluation formula commutes with precomposition in $\mce$ and postcomposition in $\mcf$, giving naturality.
 :::
@@ -141,8 +133,7 @@ Then $(f^*\mce)|_{f^{-1}U}\cong\OO_{f^{-1}U}^{\oplus r}$.
 Tensoring with either finite free sheaf takes the corresponding finite direct sum, and direct image commutes with finite direct sums because its sections are computed on inverse images of open sets.
 Thus both the source and target of $\pi|_U$ identify with $(f_*\mcf|_U)^{\oplus r}$.
 On these identifications $\pi|_U$ is the identity, since each frame section pulls back to the corresponding frame section.
-It follows that $\pi$ is an isomorphism on $Y$, and its inverse gives the displayed direction in part (d).
-The defining formula commutes with morphisms of $\mcf$ and $\mce$, so the isomorphism is natural.
+It follows that $\pi$ is an isomorphism on $Y$, and its inverse gives the displayed direction in part (d). The defining formula commutes with morphisms of $\mcf$ and $\mce$, so the isomorphism is natural.
 :::
 
 <1>5. Q.E.D.

@@ -16,5 +16,5 @@ review: draft
 
 ::: {.theorem}
 Let $X$ and $Y$ be [[D-BG455|Banach spaces]] and let $T\colon X\to Y$ be a continuous linear bijection.
-Then the linear map $T\inv\colon Y\to X$ is continuous, so $T$ is a homeomorphism.
+Then the linear map $\inverseof{T}\colon Y\to X$ is continuous, so $T$ is a homeomorphism.
 :::

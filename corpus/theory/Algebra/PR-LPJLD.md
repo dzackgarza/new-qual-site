@@ -20,7 +20,7 @@ Let $k$ be a field and $V, W$ finite-dimensional $k$-vector spaces.
 The $k$-linear map
 $$
 \begin{aligned}
-V\dual \tensor_k W &\to \Hom_k(V, W) \\
+\dualof{V} \tensor_k W &\to \Hom_k(V, W) \\
 \tilde v \tensor w &\mapsto \big(x \mapsto \tilde v(x)\, w\big)
 \end{aligned}
 $$

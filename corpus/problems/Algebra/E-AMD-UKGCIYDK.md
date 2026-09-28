@@ -22,18 +22,17 @@ audit:
 ---
 
 ::: {.exercise}
-Show that if $R$ is a local ring then $R\setminus R\units$ is a proper ideal that is contained in the Jacobson radical $J(R)$.
+Show that if $R$ is a local ring then $R\setminus \unitsof{R}$ is a proper ideal that is contained in the Jacobson radical $J(R)$.
 :::
-
 
 ::: {.solution}
 Let $\mathfrak m$ be the unique maximal ideal of the local ring $R$.
 
 <1>1. Every element of $\mathfrak m$ is a nonunit.
-::: {.proof}
-If $x\in\mathfrak m$ were a unit, then $1=x^{-1}x\in\mathfrak m$, contradicting the properness of the maximal ideal $\mathfrak m$. Thus
+::: {.proof} If $x\in\mathfrak m$ were a unit, then $1=x^{-1}x\in\mathfrak m$, contradicting the properness of the maximal ideal $\mathfrak m$.
+Thus
 \[
-\mathfrak m\subseteq R\setminus R\units.
+\mathfrak m\subseteq R\setminus \unitsof{R}.
 \]
 :::
 
@@ -41,7 +40,7 @@ If $x\in\mathfrak m$ were a unit, then $1=x^{-1}x\in\mathfrak m$, contradicting 
 ::: {.proof}
 Let $x\in R$ be a nonunit. Then the principal ideal $(x)$ is proper, so it is contained in a maximal ideal of $R$. Since $R$ is local, its only maximal ideal is $\mathfrak m$. Hence $x\in\mathfrak m$, and therefore
 \[
-R\setminus R\units\subseteq\mathfrak m.
+R\setminus \unitsof{R}\subseteq\mathfrak m.
 \]
 :::
 
@@ -49,7 +48,7 @@ R\setminus R\units\subseteq\mathfrak m.
 ::: {.proof}
 By <1>1 and <1>2,
 \[
-R\setminus R\units=\mathfrak m.
+R\setminus \unitsof{R}=\mathfrak m.
 \]
 Since $\mathfrak m$ is a proper ideal, so is the set of nonunits.
 :::
@@ -58,8 +57,8 @@ Since $\mathfrak m$ is a proper ideal, so is the set of nonunits.
 ::: {.proof}
 By definition, $J(R)$ is the intersection of all maximal ideals of $R$. A local ring has the single maximal ideal $\mathfrak m$, so
 \[
-J(R)=\mathfrak m=R\setminus R\units.
+J(R)=\mathfrak m=R\setminus \unitsof{R}.
 \]
-In particular, $R\setminus R\units\subseteq J(R)$.
+In particular, $R\setminus \unitsof{R}\subseteq J(R)$.
 :::
 :::

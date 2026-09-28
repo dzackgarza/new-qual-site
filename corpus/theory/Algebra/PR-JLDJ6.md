@@ -16,12 +16,11 @@ review: draft
 ---
 
 ::: {.proposition}
-Let $n \geq 1$ and let $\Phi_n$ be the $n$th [[D-BLV6F|cyclotomic polynomial]].
-Then
+Let $n \geq 1$ and let $\Phi_n$ be the $n$th [[D-BLV6F|cyclotomic polynomial]]. Then
 $$
 x^{n}-1=\prod_{\substack{d \divides n \\ d > 0}} \Phi_{d}(x),
 \qquad\text{so}\qquad
-\Phi_n(x) = \qty{x^n-1} \qty{\prod_{\substack{d \divides n \\ 0 < d < n}} \Phi_{d}(x)}\inv,
+\Phi_n(x) = \qty{x^n-1} \inverseof{\qty{\prod_{\substack{d \divides n \\ 0 < d < n}} \Phi_{d}(x)}},
 $$
 and
 $$

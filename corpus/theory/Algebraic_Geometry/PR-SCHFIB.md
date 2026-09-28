@@ -26,7 +26,7 @@ For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \da \OO_{Y,y}/\mfm_
 \[
 X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
 \]
-Its underlying space is $f\inv(y)$, but it carries a scheme structure over the field $\kappa(y)$.
+Its underlying space is $\inverseof{f}(y)$, but it carries a scheme structure over the field $\kappa(y)$.
 :::
 
 ::: {.example}

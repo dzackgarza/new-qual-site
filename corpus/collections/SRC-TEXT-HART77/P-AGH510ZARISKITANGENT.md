@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH510ZARISKITANGENT
 kind: problem
-title: The Zariski tangent space $T_P(X) = (\mfm/\mfm^2)\dual$
+title: The Zariski tangent space $T_P(X) = \dualof{(\mfm/\mfm^2)}$
 classification:
   areas:
   - algebraic-geometry

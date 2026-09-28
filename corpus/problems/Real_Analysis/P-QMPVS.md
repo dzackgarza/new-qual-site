@@ -15,10 +15,7 @@ review: draft
 ---
 
 ::: {.problem}
-a. Prove Holder's inequality:
-  let $f\in L^p, g\in L^q$ with $p, q$ conjugate, and show that
-\[
-\pnorm{fg}p \leq \pnorm{f}p \cdot \pnorm{g}q
+a. Prove Holder's inequality: let $f\in L^p, g\in L^q$ with $p, q$ conjugate, and show that \[ \pnorm{fg}p \leq \pnorm{f}p \cdot \pnorm{g}q
 .\]
 
 b. Prove Minkowski's Inequality:
@@ -29,17 +26,17 @@ Conclude that if $f, g\in L^p(\RR^n)$ then so is $f+g$.
 
 c. Let $X = [0, 1] \subset \RR$.
 
-    1. Give a definition of the Banach space $L^\infty(X)$ of essentially bounded functions of $X$.
+   1. Give a definition of the Banach space $L^\infty(X)$ of essentially bounded functions of $X$.
 
-    2. Let $f$ be non-negative and measurable on $X$, prove that
-    \[
-    \int_X f(x)^p \,dx \converges{p\to\infty}\to
-    \begin{dcases}
-    \infty \quad\text{or} \\
-    m\qty{\theset{f\inv(1)}}
-    \end{dcases}
-    ,\]
-    and characterize the functions of each type
+   2. Let $f$ be non-negative and measurable on $X$, prove that
+   \[
+   \int_X f(x)^p \,dx \converges{p\to\infty}\to
+   \begin{dcases}
+   \infty \quad\text{or} \\
+   m\qty{\theset{\inverseof{f}(1)}}
+   \end{dcases}
+   ,\]
+   and characterize the functions of each type
 :::
 
 ::: {.solution}

@@ -26,22 +26,21 @@ Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 
 - Determine the dimension of $K$ as a vector space over $F$ and exhibit a vector space basis for $K$.
 
-- If $\theta\in K$ denotes a root of $p(x)$, express $\theta\inv$ in terms of the basis found in part (b).
+- If $\theta\in K$ denotes a root of $p(x)$, express $\inverseof{\theta}$ in terms of the basis found in part (b).
 
 - Suppose $p(x)=x^3+9x+6$.
   Show $p(x)$ is irreducible over $\mathbb Q$.
   If $\theta$ is a root of $p(x)$, compute the inverse of $(1+\theta)$ in $\mathbb Q(\theta)$.
 :::
 
-
 ::: {.solution}
 <1>1. There exists an extension field $K/F$ in which $p$ has a root.
-::: {.proof}
-Let
+::: {.proof} Let
 \[
 K=F[x]/(p(x)).
 \]
-Because $p$ is irreducible, the ideal $(p)$ is maximal in the PID $F[x]$, so $K$ is a field. If
+Because $p$ is irreducible, the ideal $(p)$ is maximal in the PID $F[x]$, so $K$ is a field.
+If
 \[
 \theta=x+(p)\in K,
 \]
@@ -63,7 +62,8 @@ a_0+a_1\theta+\cdots+a_{n-1}\theta^{n-1}=0,
 then the polynomial $a_0+a_1x+\cdots+a_{n-1}x^{n-1}$ lies in $(p)$. Its degree is $<\deg p$, so it must be zero. Thus the displayed powers are linearly independent.
 :::
 
-<1>3. Assume $p(0)\ne0$. Write
+<1>3. Assume $p(0)\ne0$.
+Write
 \[
 p(x)=a_0+a_1x+\cdots+a_nx^n,
 \qquad a_0\ne0.
@@ -73,8 +73,7 @@ Then
 \theta^{-1}
 =-\frac{a_1+a_2\theta+\cdots+a_n\theta^{n-1}}{a_0}.
 \]
-::: {.proof}
-Since $p(\theta)=0$,
+::: {.proof} Since $p(\theta)=0$,
 \[
 a_0+\theta(a_1+a_2\theta+\cdots+a_n\theta^{n-1})=0.
 \]

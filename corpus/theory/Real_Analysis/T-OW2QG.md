@@ -35,15 +35,15 @@ For every $c\in[-1,1]$, the functional $F_c(x)\coloneqq x_1+cx_2$ extends $f$ an
 :::
 
 ::: {.corollary}
-Let $\mathcal X$ be a normed vector space over $\RR$ or $\CC$ with dual space $\mathcal X\dual$ of continuous linear functionals and [[D-T4LOC|dual norm]].
+Let $\mathcal X$ be a normed vector space over $\RR$ or $\CC$ with dual space $\dualof{\mathcal X}$ of continuous linear functionals and [[D-T4LOC|dual norm]].
 
 1. If $\mathcal M \subseteq \mathcal X$ is a closed linear subspace and $x\in\mathcal X\setminus\mathcal M$, put $\delta \coloneqq \inf_{y\in \mathcal M}\norm{x-y}$.
-   Then there is $f \in \mathcal X\dual$ with $\norm{f} = 1$, $\ro f {\mathcal M} = 0$, and $f(x) = \delta$.
+   Then there is $f \in \dualof{\mathcal X}$ with $\norm{f} = 1$, $\ro f {\mathcal M} = 0$, and $f(x) = \delta$.
 
-2. For each $x\in\mathcal X$ with $x\neq 0$ there is $f\in \mathcal X\dual$ with $\norm f = 1$ and $f(x) = \norm x$.
-   In particular, the functionals in $\mathcal X\dual$ separate the points of $\mathcal X$.
+2. For each $x\in\mathcal X$ with $x\neq 0$ there is $f\in \dualof{\mathcal X}$ with $\norm f = 1$ and $f(x) = \norm x$.
+   In particular, the functionals in $\dualof{\mathcal X}$ separate the points of $\mathcal X$.
 
-3. The map $\mathcal X \injects \mathcal X^{\vee\vee}$, $x \mapsto \hat x$ with $\hat x(f) \coloneqq f(x)$ for $f\in\mathcal X\dual$, is a linear isometry.
+3. The map $\mathcal X \injects \mathcal X^{\vee\vee}$, $x \mapsto \hat x$ with $\hat x(f) \coloneqq f(x)$ for $f\in\dualof{\mathcal X}$, is a linear isometry.
 
 [@Fol13]
 :::

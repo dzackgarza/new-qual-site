@@ -143,11 +143,11 @@ S^1
 2\pi i \ZZ \cong \ZZ
   \ar[r] 
 & 
-\hat{\CC\units} = \CC
+\hat{\unitsof{\CC}} = \CC
   \ar[d, "z\mapsto e^{z}"] 
 \\
 & 
-\CC\units
+\unitsof{\CC}
 \end{tikzcd}
 
 \begin{tikzcd}
@@ -190,11 +190,11 @@ where the universal cover is the $2n$-valent Cayley graph of the free group $F_n
 \ZZ/n
   \ar[r] 
 & 
-  \CC\units
+  \unitsof{\CC}
   \ar[d, "z\mapsto z^n"] 
 \\
 & 
-\CC\units
+\unitsof{\CC}
 \end{tikzcd}
 
 \begin{tikzcd}

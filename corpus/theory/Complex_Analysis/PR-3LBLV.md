@@ -22,7 +22,7 @@ Then $\sin$ restricts to a [[D-TM4TE|biholomorphism]] $S\to\HH$, and its inverse
 :::
 
 ::: {.proof}
-Let $J(u)\coloneqq\frac12\qty{u+u\inv}$ for $u\neq0$.
+Let $J(u)\coloneqq\frac12\qty{u+\inverseof{u}}$ for $u\neq0$.
 For every $z\in\CC$,
 $$
 \sin(z)=\frac{e^{iz}-e^{-iz}}{2i}=-\frac12\qty{ie^{iz}+\frac{1}{ie^{iz}}}=-J\qty{ie^{iz}},
@@ -36,8 +36,7 @@ so $\sin$ on $S$ is the composite of the following holomorphic maps, each of whi
 - $w\mapsto iw$ maps that half-disc onto the upper half-disc $\theset{u : \abs{u}<1,\ \Im u>0}$.
 
 - $J$ maps the upper half-disc onto the lower half-plane.
-For $u=re^{i\theta}$ with $0<r<1$ and $0<\theta<\pi$, $\Im J(u)=\frac12\qty{r-r\inv}\sin\theta<0$.
-For $c$ in the lower half-plane, the solutions of $J(u)=c$ are the roots of $u^2-2cu+1=0$, whose product is $1$; neither root lies on the unit circle, where $J$ is real, so exactly one root $u$ satisfies $\abs{u}<1$, and $\Im J(u)<0$ forces $\sin\theta>0$, so that root lies in the upper half-disc.
+  For $u=re^{i\theta}$ with $0<r<1$ and $0<\theta<\pi$, $\Im J(u)=\frac12\qty{r-\inverseof{r}}\sin\theta<0$. For $c$ in the lower half-plane, the solutions of $J(u)=c$ are the roots of $u^2-2cu+1=0$, whose product is $1$; neither root lies on the unit circle, where $J$ is real, so exactly one root $u$ satisfies $\abs{u}<1$, and $\Im J(u)<0$ forces $\sin\theta>0$, so that root lies in the upper half-disc.
 
 - $v\mapsto-v$ maps the lower half-plane onto $\HH$.
 

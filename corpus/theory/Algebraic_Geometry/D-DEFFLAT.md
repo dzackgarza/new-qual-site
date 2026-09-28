@@ -35,5 +35,5 @@ $\QQ$ is a flat $\ZZ$-module that is not projective; over a Noetherian local rin
 Over a domain, flat implies torsion-free.
 The ideal $(x,y)$ of $k[x,y]$ is torsion-free but not flat: its localization at $(x,y)$ is finitely generated over a Noetherian local ring and not free, since it has rank $1$ and needs two generators.
 Over a PID, flat and torsion-free coincide.
-Localisation $A \to S\inv A$ is flat; so on $\Spec A$, the functor $M\mapsto M_f=\Gamma(D(f),\widetilde M)$ is exact.
+Localisation $A \to \inverseof{S} A$ is flat; so on $\Spec A$, the functor $M\mapsto M_f=\Gamma(D(f),\widetilde M)$ is exact.
 :::

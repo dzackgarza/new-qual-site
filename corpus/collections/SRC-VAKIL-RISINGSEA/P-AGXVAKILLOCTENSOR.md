@@ -30,7 +30,7 @@ S^{-1}A &\da \ts{ {a\over s} \st a\in A,\, s\in S} / \sim \\
 ,\]
 and similarly $S^{-1}M = \ts{{m\over s}}/\sim$.
 
-The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq N\units$:
+The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morphisms $\alpha: M\to N$ such that $\alpha(S) \subseteq \unitsof{N}$:
 
 \begin{tikzcd}
 	& S^{-1}M \ar[d, dotted, "{\exists ! \tilde\alpha}"] \\
@@ -47,15 +47,21 @@ The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morph
 .\]
 
 - The tensor product $S^{-1}A \tensor_A M$ makes sense:
+
   - $S^{-1}A$ is a right $A\dash$module by $a_0 \mapsto \qty{ {a\over s} \mapsto {a_0 a \over s}}$.
+
   - $M$ is a left $A\dash$module by $a_0 \mapsto (m \mapsto a_0 \cdot m)$.
 
 - The map makes sense as an $A\dash$module morphism:
+
   - $S^{-1}A \tensor_A M$ is a left $A\dash$module by $a_0 \mapsto \qty{{a\over s}\tensor m \mapsto {a_0 a \over s} \tensor m}$.
+
   - $S^{-1}M$ is a left $A\dash$module by $a_0 \mapsto \qty{ {m\over s } \mapsto {a_0 \cdot m \over s}}$, using the $A\dash$module structure on $M$.
 
 - The map makes sense as an $S^{-1}A\dash$module morphism:
+
   - $S^{-1}A \tensor_A M$ is a left $S^{-1}A\dash$module by ${a_0\over s_0} \mapsto \qty{ {a\over s}\tensor m \mapsto {a_0 a \over s_0 s} \tensor m }$.
+
   - $S^{-1}M$ is a left $S^{-1}A\dash$module by ${a_0\over s_0} \mapsto \qty{{m \over s} \mapsto {a_0 \cdot m \over s_0 s} }$, by the $A\dash$module structure on $M$.
 
 - Well-defined: ?
@@ -77,8 +83,14 @@ So this lifts to a map out of the tensor product.
 ::: {.remark}
 Erratum: the argument above is unfinished and uses undefined notation.
 
-- A module has no units. The universal property of $M \to S^{-1}M$ is initial among $A$-module maps $\alpha: M\to N$ into modules $N$ on which multiplication by every $s \in S$ is bijective.
-- The map $\psi$ in the bilinearity computation is never defined, and "$\psi(a)$ is a ring morphism" has no meaning here. The $A$-balance of $\eta$ is $\eta\qty{\frac{ra}{s}, m} = \frac{ram}{s} = \eta\qty{\frac{a}{s}, rm}$ by the module axioms.
+- A module has no units.
+  The universal property of $M \to S^{-1}M$ is initial among $A$-module maps $\alpha: M\to N$ into modules $N$ on which multiplication by every $s \in S$ is bijective.
+
+- The map $\psi$ in the bilinearity computation is never defined, and "$\psi(a)$ is a ring morphism" has no meaning here.
+  The $A$-balance of $\eta$ is $\eta\qty{\frac{ra}{s}, m} = \frac{ram}{s} = \eta\qty{\frac{a}{s}, rm}$ by the module axioms.
+
 - Well-definedness, left as "?", holds because $t(s'a - sa') = 0$ implies $t(s'am - sa'm) = 0$, so $\frac{am}{s} = \frac{a'm}{s'}$.
-- The solution never shows that $\eta$ is an isomorphism. The map $\frac{m}{s} \mapsto \frac{1}{s}\tensor m$ is a well-defined inverse, and $S^{-1}A$-linearity, also left as "?", is checked on elementary tensors.
+
+- The solution never shows that $\eta$ is an isomorphism.
+  The map $\frac{m}{s} \mapsto \frac{1}{s}\tensor m$ is a well-defined inverse, and $S^{-1}A$-linearity, also left as "?", is checked on elementary tensors.
 :::

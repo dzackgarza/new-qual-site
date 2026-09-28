@@ -43,12 +43,11 @@ The stalk at $\mfp$ is $A_\mfp$, a local ring.
 
 ::: {.example}
 For a field $k$, the affine line punctured at $0$ and $1$ is the distinguished open set $D_{x(x-1)} \subseteq \AA^1_k = \Spec k[x]$, whose closed complement is $V(x(x-1)) = \{(x), (x-1)\}$.
-It is the affine scheme $\Spec R$ with
-$$R = k[x]_{x(x-1)} = k[x]\left[\frac{1}{x(x-1)}\right].$$
+It is the affine scheme $\Spec R$ with $$R = k[x]_{x(x-1)} = k[x]\left[\frac{1}{x(x-1)}\right].$$
 :::
 
 ::: {.remark}
-For a ring map $\varphi\colon A\to B$ and a prime $\mfq$ of $B$, $\varphi\inv(\mfq)$ is a prime of $A$, so $\varphi$ induces a continuous map $\Spec B\to\Spec A$.
+For a ring map $\varphi\colon A\to B$ and a prime $\mfq$ of $B$, $\inverseof{\varphi}(\mfq)$ is a prime of $A$, so $\varphi$ induces a continuous map $\Spec B\to\Spec A$.
 The preimage of a maximal ideal need not be maximal: for $\ZZ\subseteq\QQ$, the preimage of the maximal ideal $(0)$ of $\QQ$ is the prime $(0)$ of $\ZZ$, which is not maximal.
 
 Morphisms of schemes are morphisms of locally ringed spaces: the induced maps on stalks are local homomorphisms.

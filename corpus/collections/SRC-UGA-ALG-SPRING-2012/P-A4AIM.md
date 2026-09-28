@@ -21,12 +21,12 @@ audit:
 ::: {.problem}
 Let $k$ be a field and let the group $G = \GL(m, k) \cross \GL(n, k)$ acts on the set of $m\times n$ matrices $M_{m, n}(k)$ as follows:
 \[
-(A, B) \cdot X = AXB\inv
+(A, B) \cdot X = AX\inverseof{B}
 \]
 where $(A, B) \in G$ and $X\in M_{m, n}(k)$.
 
 a. State what it means for a group to act on a set.
-Prove that the above definition yields a group action.
+   Prove that the above definition yields a group action.
 
 b. Exhibit with justification a subset $S$ of $M_{m, n}(k)$ which contains precisely one element of each orbit under this action.
 :::
@@ -35,8 +35,7 @@ b. Exhibit with justification a subset $S$ of $M_{m, n}(k)$ which contains preci
 **Part (a).**
 
 <1>1. A group $G$ acts on a set $X$ if there is a map $G \times X \to X$, $(g, x) \mapsto g \cdot x$, such that $e \cdot x = x$ and $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$, $x \in X$.
-::: {.proof}
-definition of a group action.
+::: {.proof} definition of a group action.
 :::
 
 <1>2. The given formula defines a group action.

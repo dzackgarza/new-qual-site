@@ -24,7 +24,7 @@ $$
 
 :::
 
-For a Laurent series with finitely many negative terms converging on a neighborhood of $S^1$, the convergence is uniform on $S^1$, so term-by-term integration keeps only the coefficient of $z\inv$:
+For a Laurent series with finitely many negative terms converging on a neighborhood of $S^1$, the convergence is uniform on $S^1$, so term-by-term integration keeps only the coefficient of $\inverseof{z}$:
 $$
 \int_\gamma \sum_{k \geq -M} c_k z^k = \sum_{k \geq -M} \int_\gamma c_k z^k = 2\pi i c_{-1}
 .$$

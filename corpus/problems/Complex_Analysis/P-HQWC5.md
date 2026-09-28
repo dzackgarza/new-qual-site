@@ -32,10 +32,10 @@ F(w) \da {1\over 2\pi i}\oint_{S^1} \logd g_w(z) \dz
 .\]
 Start by computing $F(0)$.
 \[
-F(0) 
+F(0)
 &= {1\over 2\pi i }\oint_{S^1} \logd \prod_{1\leq k\leq n} \psi_{a_k}(z) \dz \\
 &= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} \logd \psi_{a_k}(z) \dz \\
-&= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} \qty{1-\abs{a_k}^2 \over (1-\bar{a_k} z)^2} \qty{z-a_k \over 1-\bar{a_k} z}\inv \dz \\
+&= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} \qty{1-\abs{a_k}^2 \over (1-\bar{a_k} z)^2} \inverseof{\qty{z-a_k \over 1-\bar{a_k} z}} \dz \\
 &= {1\over 2\pi i }\oint_{S^1} \sum_{1\leq k\leq n} {1-\abs{a_k}^2 \over (z-a_k)( 1-\bar{a_k}z) } \dz \\
 &= {1\over 2\pi i } \sum_{1\leq k\leq n} \oint_{S^1} {1-\abs{a_k}^2 \over (z-a_k)( 1-\bar{a_k}z) } \dz \\
 &= {1\over 2\pi i } \sum_{1\leq k\leq n} 2\pi i \\
@@ -49,4 +49,3 @@ So $F(w) = n$ for any $w$, meaning $f(z) = w$ has $n$ solutions in $\DD$ for eve
 > Alternative: $F$ continuously depends on the $a_k$, so send them all to zero to get $f(z) = z^n$, which has exactly $n$ zeros at the origin.
 
 :::
-

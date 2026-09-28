@@ -31,11 +31,11 @@ Instead compose:
 ::: {.solution title="Using Joukowski maps"}
 In parts:
 
-- Use $z\mapsto z\inv$ to send $\HH \intersect \DD$ to $Q_{34} \intersect \DD^c$.
+- Use $z\mapsto \inverseof{z}$ to send $\HH \intersect \DD$ to $Q_{34} \intersect \DD^c$.
 
 - Use $z\mapsto -z$ to map this to $\HH \intersect \DD^c$
 
-- Use $z\mapsto {1\over 2}(z+z\inv)$ to map $\HH \intersect \DD^c$ to $\HH$
+- Use $z\mapsto {1\over 2}(z+\inverseof{z})$ to map $\HH \intersect \DD^c$ to $\HH$
 
 - Then use the Cayley map $z\mapsto {z-i\over z+i}$ to map $\HH\to \DD$.
 :::

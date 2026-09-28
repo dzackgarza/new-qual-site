@@ -23,13 +23,12 @@ audit:
 ---
 
 ::: {.problem}
-Show that a morphism $f: X \to Y$ is locally of finite type if and only if for every open affine subset $V = \Spec B$ of $Y$, the preimage $f\inv(V)$ can be covered by open affine subsets $U_j = \Spec A_j$ where each $A_j$ is a finitely generated $B$-algebra.
+Show that a morphism $f: X \to Y$ is locally of finite type if and only if for every open affine subset $V = \Spec B$ of $Y$, the preimage $\inverseof{f}(V)$ can be covered by open affine subsets $U_j = \Spec A_j$ where each $A_j$ is a finitely generated $B$-algebra.
 :::
 
 ::: {.solution}
 <1>1. If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is locally of finite type.
-::: {.proof}
-Choose any affine open cover
+::: {.proof} Choose any affine open cover
 \[
 Y=\bigcup_i V_i.
 \]
@@ -37,7 +36,8 @@ By hypothesis, for each affine $V_i=\Spec B_i$, the inverse image $f^{-1}(V_i)$ 
 \[
 U_{ij}=\Spec A_{ij}
 \]
-with each $A_{ij}$ a finitely generated $B_i$-algebra.  This is exactly the definition of $f$ being locally of finite type.
+with each $A_{ij}$ a finitely generated $B_i$-algebra.
+This is exactly the definition of $f$ being locally of finite type.
 :::
 
 <1>2. Conversely, suppose $f$ is locally of finite type.  Fix an arbitrary affine open
@@ -98,8 +98,7 @@ Set $U'=D(a)$.
 U'=\Spec A_a
 \]
 has coordinate ring finitely generated as a $B$-algebra.
-::: {.proof}
-Because $W=D(g)\subseteq V=\Spec B$,
+::: {.proof} Because $W=D(g)\subseteq V=\Spec B$,
 \[
 W\cong\Spec B_g.
 \]
@@ -116,7 +115,8 @@ Localizing at $a$ gives
 \[
 A_a=B_i[\alpha_1,\ldots,\alpha_n,a^{-1}].
 \]
-The image of $B_i$ in $A_a$ factors through the coordinate ring $B_g$ of $W$, because the morphism $U'\to V_i$ factors through $W$.  Hence the same elements
+The image of $B_i$ in $A_a$ factors through the coordinate ring $B_g$ of $W$, because the morphism $U'\to V_i$ factors through $W$.
+Hence the same elements
 \[
 \alpha_1,\ldots,\alpha_n,a^{-1}
 \]

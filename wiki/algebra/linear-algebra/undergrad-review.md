@@ -28,7 +28,7 @@ $$
 $$
 and if $\det A$ is invertible, the adjugate gives the inverse:
 $$
-A\inv = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
+\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
 $$
 :::
 
@@ -38,7 +38,7 @@ If the characteristic polynomial of $A$ splits, with eigenvalues $\lambda_1,\ldo
 $$
 \chi_A(t) = t^n - \qty{\sum_i \lambda_i }t^{n-1} + \qty{\sum_{i < j} \lambda_i \lambda_j }t^{n-2} - \cdots + (-1)^n\qty{\prod_i \lambda_i}.
 $$
-Since $\tr(AB) = \tr(BA)$, similar matrices have equal traces: $\tr(PJP\inv) = \tr(P\inv PJ) = \tr(J)$.
+Since $\tr(AB) = \tr(BA)$, similar matrices have equal traces: $\tr(PJ\inverseof{P}) = \tr(\inverseof{P} PJ) = \tr(J)$.
 :::
 
 ::: {.fact title="Block multiplication"}

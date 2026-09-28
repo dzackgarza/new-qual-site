@@ -22,7 +22,7 @@ prompts:
 
 ::: {.proposition title="Separation"}
 Let $\sigma \subseteq N_\RR$ be a convex polyhedral cone and let $v \in N_\RR$ with $v \notin \sigma$.
-Then there is a **support vector** $u \in \sigma\dual$ with
+Then there is a **support vector** $u \in \dualof{\sigma}$ with
 \[
 \inp{u}{v} < 0 .
 \]
@@ -31,15 +31,15 @@ That is, $v$ lies strictly on the negative side of a hyperplane that has all of 
 
 ::: {.proposition title="Double duality"}
 \[
-(\sigma\dual)\dual = \sigma .
+\dualof{(\dualof{\sigma})} = \sigma .
 \]
 :::
 
 ::: {.proof}
-The inclusion $\sigma \subseteq (\sigma\dual)\dual$ is the definition: every $v \in \sigma$ pairs non-negatively with every $u \in \sigma\dual$.
+The inclusion $\sigma \subseteq \dualof{(\dualof{\sigma})}$ is the definition: every $v \in \sigma$ pairs non-negatively with every $u \in \dualof{\sigma}$.
 
-For the reverse, take $v \notin \sigma$ and apply separation to get $u \in \sigma\dual$ with $\inp{u}{v} < 0$.
-That $u$ witnesses $v \notin (\sigma\dual)\dual$.
+For the reverse, take $v \notin \sigma$ and apply separation to get $u \in \dualof{\sigma}$ with $\inp{u}{v} < 0$.
+That $u$ witnesses $v \notin \dualof{(\dualof{\sigma})}$.
 :::
 
 ::: {.remark title="What separation rests on"}

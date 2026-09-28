@@ -23,9 +23,9 @@ Let $\psi_a$ be a Blaschke factor and use the Schwarz lemma to prove that $\psi_
 First, $\psi_a$ maps $\DD\to \DD$.
 Fix $z\in S^1$, then
 \[
-\abs{\psi_a(z)} \da 
+\abs{\psi_a(z)} \da
 \abs{a-z\over 1-\bar{a} z}
-&= \abs{a-z\over 1-\bar{a} z} \cdot \abs{\bar z}\inv \\
+&= \abs{a-z\over 1-\bar{a} z} \cdot \inverseof{\abs{\bar z}} \\
 &= \abs{a-z\over \bar{a} - \bar{z}} \\
 &= \abs{a-z \over \bar{a-z} } \\
 &\da \abs{w \over \bar w } \\

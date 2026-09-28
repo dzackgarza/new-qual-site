@@ -27,9 +27,9 @@ A=\left[\begin{array}{lll}{0} & {1} & {-2} \\ {1} & {1} & {-3} \\ {1} & {2} & {-
 
 a. Find the Jordan canonical form $J$ of $A$.
 
-b. Find an invertible matrix $P$ such that $P\inv AP = J$.
+b. Find an invertible matrix $P$ such that $\inverseof{P} AP = J$.
 
-> You should not need to compute $P\inv$.
+> You should not need to compute $\inverseof{P}$.
 :::
 
 ::: {.solution}

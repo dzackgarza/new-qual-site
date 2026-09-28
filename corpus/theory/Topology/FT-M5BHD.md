@@ -24,5 +24,5 @@ If $X$ is compact and $Y$ is [[D-ZFRV4|Hausdorff]], then $f$ is a homeomorphism 
 
 ::: {.remark}
 Closed subspaces of compact spaces are compact, continuous images of compact spaces are compact, and compact subspaces of Hausdorff spaces are closed [@Mun00].
-Hence $f$ is a closed map, so $f\inv$ is continuous.
+Hence $f$ is a closed map, so $\inverseof{f}$ is continuous.
 :::

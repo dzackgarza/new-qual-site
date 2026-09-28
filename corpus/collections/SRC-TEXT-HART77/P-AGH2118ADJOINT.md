@@ -24,13 +24,13 @@ audit:
 
 ::: {.problem}
 Let $f: X \to Y$ be a continuous map of topological spaces.
-Show that for any sheaf $\mcf$ on $X$ there is a natural map $f\inv f_* \mcf \to \mcf$, and for any sheaf $\mcg$ on $Y$ there is a natural map $\mcg \to f_* f\inv \mcg$.
+Show that for any sheaf $\mcf$ on $X$ there is a natural map $\inverseof{f} f_* \mcf \to \mcf$, and for any sheaf $\mcg$ on $Y$ there is a natural map $\mcg \to f_* \inverseof{f} \mcg$.
 
 Use these maps to show that there is a natural bijection of sets, for any sheaves $\mcf$ on $X$ and $\mcg$ on $Y$,
 \[
-\Hom_X(f\inv \mcg, \mcf) = \Hom_Y(\mcg, f_* \mcf).
+\Hom_X(\inverseof{f} \mcg, \mcf) = \Hom_Y(\mcg, f_* \mcf).
 \]
-Hence $f\inv$ is a **left adjoint** of $f_*$, and $f_*$ is a **right adjoint** of $f\inv$.
+Hence $\inverseof{f}$ is a **left adjoint** of $f_*$, and $f_*$ is a **right adjoint** of $\inverseof{f}$.
 :::
 
 ::: {.solution}
@@ -49,8 +49,7 @@ where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 f^{-1}f_*\mathcal F\longrightarrow\mathcal F.
 }
 \]
-::: {.proof}
-Before sheafification, for an open $U\subseteq X$ one has
+::: {.proof} Before sheafification, for an open $U\subseteq X$ one has
 \[
 \mathcal P_{f_*\mathcal F}(U)
 =
@@ -120,16 +119,17 @@ These maps commute with restriction in $V$, hence define the desired sheaf morph
 :::
 
 <1>3. The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natural in $\mathcal G$.
-::: {.proof}
-Let
+::: {.proof} Let
 \[
 \alpha:\mathcal F\to\mathcal F'
 \]
-be a sheaf morphism on $X$.  In the construction of <1>1, applying $\alpha$ before or after restricting
+be a sheaf morphism on $X$.
+In the construction of <1>1, applying $\alpha$ before or after restricting
 \[
 \mathcal F(f^{-1}V)\to\mathcal F(U)
 \]
-gives the same result because $\alpha$ commutes with restrictions.  Hence
+gives the same result because $\alpha$ commutes with restrictions.
+Hence
 \[
 \varepsilon_{\mathcal F'}\circ f^{-1}f_*\alpha
 =
@@ -158,12 +158,12 @@ f^{-1}\eta_{\mathcal G}
 \operatorname{id}_{f^{-1}\mathcal G}.
 }
 \]
-::: {.proof}
-A section of $f^{-1}\mathcal G$ is locally represented by a section
+::: {.proof} A section of $f^{-1}\mathcal G$ is locally represented by a section
 \[
 s\in\mathcal G(V)
 \]
-on an open $V\subseteq Y$.  Under
+on an open $V\subseteq Y$.
+Under
 \[
 f^{-1}\eta_{\mathcal G},
 \]
@@ -175,7 +175,8 @@ represented by the image of $s$ in
 \[
 (f^{-1}\mathcal G)(f^{-1}V).
 \]
-The counit $\varepsilon_{f^{-1}\mathcal G}$ then restricts that section back to the open on which the original germ section was represented.  By construction this returns exactly the original local section.
+The counit $\varepsilon_{f^{-1}\mathcal G}$ then restricts that section back to the open on which the original germ section was represented.
+By construction this returns exactly the original local section.
 
 Since the equality holds locally on a cover, the two sheaf morphisms are equal globally.
 :::
@@ -190,8 +191,7 @@ f_*\varepsilon_{\mathcal F}
 \operatorname{id}_{f_*\mathcal F}.
 }
 \]
-::: {.proof}
-Let $V\subseteq Y$ and
+::: {.proof} Let $V\subseteq Y$ and
 \[
 s\in(f_*\mathcal F)(V)
 =\mathcal F(f^{-1}V).

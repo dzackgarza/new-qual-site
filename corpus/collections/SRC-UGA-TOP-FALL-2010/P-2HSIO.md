@@ -32,7 +32,7 @@ audit:
 Suppose that X has universal cover $p : \tilde X \to X$ and let $A \subset X$ be a subspace with $p(\tilde a) = a \in A$.
 Show that there is a group isomorphism
 \[
-\ker(\pi_1 (A, a) \to \pi_1 (X, a)) \cong \pi_1 (p\inv A, \tilde a).
+\ker(\pi_1 (A, a) \to \pi_1 (X, a)) \cong \pi_1 (\inverseof{p} A, \tilde a).
 \]
 :::
 
@@ -42,8 +42,7 @@ Show that there is a group isomorphism
 q=p|_{p^{-1}(A)}:p^{-1}(A)\longrightarrow A
 \]
 is a covering map, with $q(\tilde a)=a$.
-::: {.proof}
-Let $a_0\in A$.
+::: {.proof} Let $a_0\in A$.
 Choose an open neighborhood $U\subseteq X$ of $a_0$ that is evenly covered by $p$, so
 \[
 p^{-1}(U)=\bigsqcup_{\lambda}V_\lambda
@@ -105,8 +104,7 @@ Therefore every element of $\operatorname{im}(q_*)$ lies in $\ker(i_*)$.
 \[
 \ker(i_*)\subseteq\operatorname{im}(q_*).
 \]
-::: {.proof}
-Let $[\alpha]\in\pi_1(A,a)$ satisfy
+::: {.proof} Let $[\alpha]\in\pi_1(A,a)$ satisfy
 \[
 i_*[\alpha]=1\in\pi_1(X,a).
 \]

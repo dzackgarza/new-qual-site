@@ -63,7 +63,7 @@ A $C^1$ map is invertible, with $C^1$ inverse, on some neighborhood of each poin
 ## Convergence of series
 
 ::: {.example title="A convergent series that is not absolutely convergent"}
-$\sum_{k\geq 1} k\inv$ diverges, but $\sum_{k\geq 1} (-1)^{k+1} k\inv$ converges.
+$\sum_{k\geq 1} \inverseof{k}$ diverges, but $\sum_{k\geq 1} (-1)^{k+1} \inverseof{k}$ converges.
 Its partial sums $S_n$ satisfy $S_2 \leq S_4 \leq \cdots \leq S_3 \leq S_1$, since $S_{2n+2} - S_{2n} = \frac{1}{2n+1}-\frac{1}{2n+2} > 0$ and $S_{2n+3} - S_{2n+1} = -\frac{1}{2n+2} + \frac{1}{2n+3} < 0$.
 The even and odd partial sums are monotone and bounded, so they converge, and $S_{2n+1} - S_{2n} = \frac{1}{2n+1}\to 0$, so they have a common limit.
 
@@ -75,8 +75,11 @@ The even and odd partial sums are monotone and bounded, so they converge, and $S
 \envlist
 
 - For $f\colon\RR^2\to\RR$ differentiable, $\grad f = \tv{ \dd{f}{x}, \dd{f}{y} }$; a vector field of the form $F = \grad f$ is a gradient field.
+
 - For $f$ differentiable and a differentiable curve $\gamma$, the chain rule gives $\frac{d}{dt} (f\circ \gamma)(t) = \inner{ (\grad f)(\gamma(t))} {\gamma'(t)}$.
+
 - For $F(x, y) = \tv{M(x, y), N(x, y)}$, $\curl F = \dd{N}{x} - \dd{M}{y}$ and $\div F = \dd{M}{x} + \dd{N}{y}$.
+
 - For $\gamma\colon[a,b]\to\RR^2$ piecewise $C^1$, $\int_\gamma F\cdot \dr = \int_a^b F(\gamma(t))\cdot \gamma'(t) \dt$.
 
 :::
@@ -96,6 +99,7 @@ Let $p/q$ be a rational function with $\deg p < \deg q$ and $q$ factored over $\
 Then $p/q$ is a sum of the following terms:
 
 - for each linear factor $(x-r)$ of multiplicity $k$, terms $\frac{A_1}{x-r}, \frac{A_2}{(x-r)^2}, \ldots, \frac{A_k}{(x-r)^k}$;
+
 - for each irreducible quadratic factor $h$ of multiplicity $k$, terms $\frac{B_1x+C_1}{h(x)}, \ldots, \frac{B_kx+C_k}{h(x)^k}$.
 
 :::
@@ -143,8 +147,7 @@ For polynomials $f, g$ over a field with $g\neq 0$, there are unique polynomials
 
 ::: {.remark title="Arzelà--Ascoli"}
 For $X$ compact Hausdorff, equip $C(X; \RR)$ with the uniform norm $\norm{f}_{\infty} \coloneqq \sup_{x\in X} \abs{f(x)}$.
-A subset $A \subseteq C(X;\RR)$ is compact if and only if it is closed, bounded, and [[D-5Y4MC|equicontinuous]].
-In particular, every bounded equicontinuous sequence in $C(X;\RR)$ has a uniformly convergent subsequence.
+A subset $A \subseteq C(X;\RR)$ is compact if and only if it is closed, bounded, and [[D-5Y4MC|equicontinuous]]. In particular, every bounded equicontinuous sequence in $C(X;\RR)$ has a uniformly convergent subsequence.
 
 :::
 
@@ -158,8 +161,8 @@ A continuous function on a compact metric space is uniformly continuous.
 [[D-HL4KE]]
 
 ::: {.remark}
-If $f\colon \Omega \to \Omega'$ is a holomorphic bijection, then $f\inv$ is holomorphic.
-For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\to\RR$ with $f'(0) = 0$, and $f\inv(x) = x^{1/3}$ is not differentiable at $0$.
+If $f\colon \Omega \to \Omega'$ is a holomorphic bijection, then $\inverseof{f}$ is holomorphic.
+For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\to\RR$ with $f'(0) = 0$, and $\inverseof{f}(x) = x^{1/3}$ is not differentiable at $0$.
 
 :::
 
@@ -167,10 +170,4 @@ For real functions the analogue fails: $f(x) = x^3$ is a smooth bijection $\RR\t
 
 [[E-5GT6F]]
 
-[[E-2JGJL]]
-[[E-CLMEK]]
-[[E-DXXL4]]
-[[E-6ULIT]]
-[[E-5KI4G]]
-[[E-4P3T2]]
-[[E-XXUNZ]]
+[[E-2JGJL]] [[E-CLMEK]] [[E-DXXL4]] [[E-6ULIT]] [[E-5KI4G]] [[E-4P3T2]] [[E-XXUNZ]]

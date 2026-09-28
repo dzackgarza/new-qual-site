@@ -89,7 +89,9 @@ $$
 
 - $f'\neq 0$ on $U$: if $f'(z_0)=0$, then $f - f(z_0)$ has a zero of order $k\geq 2$ at $z_0$, and $f'$ has no other zeros near $z_0$.
   For a small circle $C$ about $z_0$ and $w$ with $0<\abs w<\min_C\abs{f-f(z_0)}$, Rouché's theorem shows that $f - f(z_0) - w$ has $k$ zeros inside $C$, all simple since $f'\neq 0$ away from $z_0$, contradicting injectivity.
-- By the open mapping theorem $f(U)$ is open and $f$ maps open sets to open sets, so $g \coloneqq f\inv\colon f(U)\to U$ is continuous.
+
+- By the open mapping theorem $f(U)$ is open and $f$ maps open sets to open sets, so $g \coloneqq \inverseof{f}\colon f(U)\to U$ is continuous.
+
 - For $w, w_0\in f(U)$ with $w\neq w_0$, write $z = g(w)$ and $z_0 = g(w_0)$, so $z\neq z_0$, and $z\to z_0$ as $w\to w_0$ by continuity of $g$:
 $$
 \frac{g(w)-g\left(w_{0}\right)}{w-w_{0}}=\frac{1}{\frac{w-w_{0}}{g(w)-g\left(w_{0}\right)}}=\frac{1}{\frac{f(z)-f\left(z_{0}\right)}{z-z_{0}}}

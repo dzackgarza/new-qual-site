@@ -25,8 +25,8 @@ audit:
 ::: {.problem}
 Let $k$ be an algebraically closed field of characteristic $\neq 2$.
 Let $C \subseteq \PP^2_k$ be the nodal cubic curve $y^2 z = x^3 + x^2 z$.
-If $P_0 = (0, 0, 1)$ is the singular point, then $C - P_0$ is isomorphic to the multiplicative group $\GG_m = \Spec k[t, t\inv]$ (Ex. 6.7).
-For each $a \in k$, $a \neq 0$, consider the translation of $\GG_m$ given by $t \mapsto at$.
+If $P_0 = (0, 0, 1)$ is the singular point, then $C - P_0$ is isomorphic to the multiplicative group $\GG_m = \Spec k[t, \inverseof{t}]$ (Ex.
+6.7). For each $a \in k$, $a \neq 0$, consider the translation of $\GG_m$ given by $t \mapsto at$.
 This induces an automorphism of $C$ which we denote $\varphi_a$.
 Now consider $C \times (\PP^1 - \ts{0})$ and $C \times (\PP^1 - \ts{\infty})$.
 We glue their open subsets $C \times (\PP^1 - \ts{0, \infty})$ by the isomorphism
@@ -39,18 +39,15 @@ The projections to the second factor are compatible with $\varphi$, so there is 
 
 (a) Show that $\pi$ is a proper morphism, and hence that $X$ is a complete variety over $k$.
 
-(b) Use the method of (Ex. 6.9) to show that
-$$
-\Pic(C \times \AA^1) \cong \GG_m \times \ZZ
-\quad\text{and}\quad
-\Pic(C \times (\AA^1 - \ts{0})) \cong \GG_m \times \ZZ \times \ZZ
+(b) Use the method of (Ex.
+    6.9) to show that $$ \Pic(C \times \AA^1) \cong \GG_m \times \ZZ \quad\text{and}\quad \Pic(C \times (\AA^1 - \ts{0})) \cong \GG_m \times \ZZ \times \ZZ
 .
 $$
 
 (c) Now show that the restriction map $\Pic(C \times \AA^1) \to \Pic(C \times (\AA^1 - \ts{0}))$ is of the form $\gens{t, n} \mapsto \gens{t, 0, n}$, and that the automorphism $\varphi$ of $C \times (\AA^1 - \ts{0})$ induces a map of the form $\gens{t, d, n} \mapsto \gens{t, d + n, n}$ on its Picard group.
 
 (d) Conclude that the image of the restriction map $\Pic X \to \Pic(C \times \ts{0})$ consists entirely of divisors of degree $0$ on $C$.
-   Hence $X$ is not projective over $k$, and $\pi$ is not a projective morphism.
+    Hence $X$ is not projective over $k$, and $\pi$ is not a projective morphism.
 :::
 
 ::: {.hint}
@@ -129,8 +126,7 @@ f_\infty=\eta f_0\qquad\text{for some }\eta\in R_{\mathfrak p}^\times.
 $$
 Lift $(1,\eta)$ to an element $h$ of the normalization ring.
 It avoids both maximal ideals and is therefore a unit.
-The matching module is exactly $hA_{\mathfrak q}$: division by $h$ turns the condition into equality of the two residues, which characterizes $A_{\mathfrak q}$ by step <1>1.
-It is consequently free of rank one, and its pullback is the original $L$.
+The matching module is exactly $hA_{\mathfrak q}$: division by $h$ turns the condition into equality of the two residues, which characterizes $A_{\mathfrak q}$ by step <1>1. It is consequently free of rank one, and its pullback is the original $L$.
 
 Starting with $M$, the matching construction recovers $M$ by tensoring the equalizer description of $\OO_{C_R}$ with this locally free sheaf.
 Starting with $(L,\theta)$, the local generator $h$ shows that both $L$ and the matching isomorphism are recovered.
@@ -155,11 +151,9 @@ $$
 For negative $n$ these are the corresponding dual tensor-power frames.
 The matching isomorphism is uniquely of the form $\theta(e_0)=\lambda e_\infty$ for $\lambda\in R^\times$.
 
-An automorphism of $\OO(n)$ is multiplication by an element of
-$\Gamma(\PP_R^1,\OO)^\times=R^\times$.
+An automorphism of $\OO(n)$ is multiplication by an element of $\Gamma(\PP_R^1,\OO)^\times=R^\times$.
 It multiplies both branch frames by the same unit, and therefore does not change $\lambda$.
-Consequently the pair $(\lambda,n)$ uniquely determines the isomorphism class on $C_R$, and every such pair occurs by step <1>3.
-Tensor products multiply $\lambda$ and add $n$, giving the group isomorphism.
+Consequently the pair $(\lambda,n)$ uniquely determines the isomorphism class on $C_R$, and every such pair occurs by step <1>3. Tensor products multiply $\lambda$ and add $n$, giving the group isomorphism.
 
 A unit of $k[u]$ is a nonzero constant, since degrees add under multiplication.
 A unit of $k[u,u^{-1}]$ is uniquely $cu^d$ with $c\in k^\times$ and $d\in\ZZ$: the largest and smallest exponents both add under multiplication, so an invertible Laurent polynomial has only one term.
@@ -198,8 +192,7 @@ $$
 =\varphi^*(c_0,0,n_0)
 =(c_0,n_0,n_0)
 $$
-by step <1>5.
-Equality of the middle coordinates gives $n_0=0$, and equality of the last coordinates also gives $n_\infty=0$.
+by step <1>5. Equality of the middle coordinates gives $n_0=0$, and equality of the last coordinates also gives $n_\infty=0$.
 The restriction to the fibre over zero therefore has normalization degree zero.
 This is the degree on the nodal curve, as in [[P-AGH267NODALCUBIC]], step <1>3, and [[P-AGH269SINGCURVEPIC]], step <1>8.
 :::

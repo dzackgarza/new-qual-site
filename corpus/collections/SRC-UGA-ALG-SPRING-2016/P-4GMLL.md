@@ -33,8 +33,8 @@ a.
 Find the Jordan canonical form $J$ of $A$.
 
 b.
-Find an invertible matrix $P$ such that $P\inv A P = J$.
-You do not need to compute $P\inv$.
+Find an invertible matrix $P$ such that $\inverseof{P} A P = J$.
+You do not need to compute $\inverseof{P}$.
 :::
 
 ::: {.solution}
@@ -42,7 +42,8 @@ The characteristic polynomial is
 \[
 \chi_A(x)=(x-1)(x-2)^2.
 \]
-For the eigenvalue $2$, the eigenspace is one-dimensional, so there is a single Jordan block of size $2$. Thus
+For the eigenvalue $2$, the eigenspace is one-dimensional, so there is a single Jordan block of size $2$.
+Thus
 \[
 J=\begin{bmatrix}
 1&0&0\\
@@ -59,7 +60,8 @@ P=\begin{bmatrix}
 1&-\tfrac12&0
 \end{bmatrix}.
 \]
-Its determinant is $1/4$, so $P$ is invertible. Its first column is an eigenvector for eigenvalue $1$; if $v_2,v_3$ are the second and third columns, then
+Its determinant is $1/4$, so $P$ is invertible.
+Its first column is an eigenvector for eigenvalue $1$; if $v_2,v_3$ are the second and third columns, then
 \[
 (A-2I)v_2=0,
 \qquad

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-JGCVGZJE
 kind: problem
-title: $R\units$ need not be closed under addition
+title: $\unitsof{R}$ need not be closed under addition
 classification:
   areas:
   - algebra
@@ -26,9 +26,12 @@ Show that $R^\times$ need not be closed under addition.
 :::
 
 ::: {.solution}
-Take any nonzero ring $R$ with identity. Both $1$ and $-1$ are units, while
+Take any nonzero ring $R$ with identity.
+Both $1$ and $-1$ are units, while
 \[
 1+(-1)=0
 \]
-is not a unit. Hence $R^\times$ need not be closed under addition. In particular, in $\mathbb Z$ the units are $\{\pm1\}$ and their sum can be $0$ or $2$, neither of which is a unit.
+is not a unit.
+Hence $R^\times$ need not be closed under addition.
+In particular, in $\mathbb Z$ the units are $\{\pm1\}$ and their sum can be $0$ or $2$, neither of which is a unit.
 :::

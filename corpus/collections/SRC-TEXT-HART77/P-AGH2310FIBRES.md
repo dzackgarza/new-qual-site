@@ -23,20 +23,21 @@ audit:
 ---
 
 ::: {.problem}
-a. If $f: X \to Y$ is a morphism and $y \in Y$ a point, show that $\operatorname{sp}(X_y)$ is homeomorphic to $f\inv(y)$ with the induced topology.
+a. If $f: X \to Y$ is a morphism and $y \in Y$ a point, show that $\operatorname{sp}(X_y)$ is homeomorphic to $\inverseof{f}(y)$ with the induced topology.
 
 b. Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ be the morphism defined by sending $s \mapsto s$.
-Assume $k$ algebraically closed.
+   Assume $k$ algebraically closed.
 
-    - If $y \in Y$ is the point $a \in k$ with $a \neq 0$, show that the fibre $X_y$ consists of two points, with residue field $k$.
-    - If $y \in Y$ corresponds to $0 \in k$, show that the fibre $X_y$ is a nonreduced one-point scheme.
-    - If $\eta$ is the generic point of $Y$, show that $X_\eta$ is a one-point scheme whose residue field is an extension of degree two of the residue field of $\eta$.
+   - If $y \in Y$ is the point $a \in k$ with $a \neq 0$, show that the fibre $X_y$ consists of two points, with residue field $k$.
+
+   - If $y \in Y$ corresponds to $0 \in k$, show that the fibre $X_y$ is a nonreduced one-point scheme.
+
+   - If $\eta$ is the generic point of $Y$, show that $X_\eta$ is a one-point scheme whose residue field is an extension of degree two of the residue field of $\eta$.
 :::
 
 ::: {.solution}
 <1>1. It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
-::: {.proof}
-Choose an affine neighborhood
+::: {.proof} Choose an affine neighborhood
 \[
 V=\Spec B\subseteq Y
 \]
@@ -90,8 +91,7 @@ such that
 \[
 \mathfrak q\cap B=\mathfrak p.
 \]
-::: {.proof}
-By <1>2, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
+::: {.proof} By <1>2, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
 
 The first condition gives
 \[
@@ -234,8 +234,7 @@ k(s)[t]/(t^2-s).
 t^2-s\in k(s)[t]
 \]
 is irreducible in every characteristic.
-::: {.proof}
-A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
+::: {.proof} A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
 
 But the discrete valuation $v_s$ on $k(s)$ associated to the prime $(s)$ satisfies
 \[
@@ -253,12 +252,12 @@ X_\eta
 \qquad
 [\kappa(X_\eta):k(s)]=2.}
 \]
-::: {.proof}
-By <1>12, the quotient
+::: {.proof} By <1>12, the quotient
 \[
 k(s)[t]/(t^2-s)
 \]
-is a field and has vector-space dimension $2$ over $k(s)$.  The spectrum of a field is one point.
+is a field and has vector-space dimension $2$ over $k(s)$.
+The spectrum of a field is one point.
 
 If $\operatorname{char}k\ne2$, the extension is separable.  If $\operatorname{char}k=2$, it is purely inseparable.  Its degree is $2$ in either case.
 :::

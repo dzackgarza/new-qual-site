@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 Suppose $A^* = A$.
-It is then a fact that $A$ is self-adjoint, and so for every $\vector{v}\in V$ we have 
+It is then a fact that $A$ is self-adjoint, and so for every $\vector{v}\in V$ we have
 $$
 \inner{A\vector{v}}{\vector{v}} =
 \inner{\vector{v}}{A^*\vector{v}} =
@@ -30,8 +30,7 @@ $$
 
 Let $(\lambda, \vector v)$ be an eigenvalue of $A$ with one of its corresponding eigenvectors, so $A\vector{v} = \lambda{\vector v}$.
 
-On one hand,
-\begin{align*}
+On one hand, \begin{align*}
 \inner{A\vector{v}}{\vector{v}}
 =
 \inner{\lambda\vector{v}}{\vector{v}}
@@ -64,36 +63,32 @@ $$
 
 We can make use of the following fact:
 
-**Theorem (Schur):**
-Every square matrix $A \in M_n(\CC)$ is unitarily similar to an upper triangular matrix, i.e. there exists a unitary matrix $U$ such that $A = UTU\inv$ where $T$ is upper-triangular.
+**Theorem (Schur):** Every square matrix $A \in M_n(\CC)$ is unitarily similar to an upper triangular matrix, i.e. there exists a unitary matrix $U$ such that $A = UT\inverseof{U}$ where $T$ is upper-triangular.
 
-Applying this theorem yields $A = UTU\inv$ and thus $T = U\inv A U$. In particular, $A \sim T$.
+Applying this theorem yields $A = UT\inverseof{U}$ and thus $T = \inverseof{U} A U$.
+In particular, $A \sim T$.
 
-Noting that if $U$ is unitary then $U\inv = U^*$, we have
+Noting that if $U$ is unitary then $\inverseof{U} = U^*$, we have
 
 \begin{align*}
 T^* 
-&= (U\inv A U)^* \\
-&= U^* A^* (U\inv)^* \\
+&= (\inverseof{U} A U)^* \\
+&= U^* A^* (\inverseof{U})^* \\
 &= U^* A^* U^{**} \\
-&= U\inv A^* U \\
+&= \inverseof{U} A^* U \\
 &= T
 ,\end{align*}
 
-and so $T^* = T$. 
+and so $T^* = T$.
 
-Since $T$ is upper triangular, this forces $T_{ij} = 0$ whenever $i\neq j$
-But this makes $T$ diagonal, so $A$ is similar to a diagonal matrix. 
+Since $T$ is upper triangular, this forces $T_{ij} = 0$ whenever $i\neq j$ But this makes $T$ diagonal, so $A$ is similar to a diagonal matrix.
 $\qed$
 
-*Proof of Schur's Theorem:*
-We'll proceed by induction on $n = \dim_\CC(V)$, and showing that there is an orthonormal basis of $V$ such that the matrix of $A$ is upper triangular.
+*Proof of Schur's Theorem:* We'll proceed by induction on $n = \dim_\CC(V)$, and showing that there is an orthonormal basis of $V$ such that the matrix of $A$ is upper triangular.
 
-**Lemma:** 
-If $V$ is finite dimensional and $\lambda$ is an eigenvalue of $A$, then $\overline{\lambda}$ is an eigenvalue of $A^*$.
+**Lemma:** If $V$ is finite dimensional and $\lambda$ is an eigenvalue of $A$, then $\overline{\lambda}$ is an eigenvalue of $A^*$.
 
-*Proof:*
-Since $A^* - \bar\lambda I = (A - \lambda I)^*$ and $\det(M^*) = \overline{\det M}$,
+*Proof:* Since $A^* - \bar\lambda I = (A - \lambda I)^*$ and $\det(M^*) = \overline{\det M}$,
 $$
 \operatorname{det}\left(A^{*} - \bar{\lambda} I\right) = \overline{\operatorname{det}(A-\lambda I)} = \bar 0 = 0. \qed
 $$
@@ -109,10 +104,9 @@ The inductive hypothesis will then apply to $\restrictionof{A}{S^\perp}$.
 Note that if this holds, there will be an orthonormal basis $\mathcal{B}$ of $S^\perp$ such that the matrix
 $$
 \mathbf{A}' \definedas [\restrictionof{A}{S^\perp}]_{\mathcal{B}}
-$$ 
-will be upper triangular. 
-We would then be able to obtain an orthonormal basis 
-$\mathcal{C} \definedas \mathcal{B} \union \theset{\vector{v_1}}$ of $S \oplus S^\perp = V$, **ordered with $\vector v_1$ last**.
+$$
+will be upper triangular.
+We would then be able to obtain an orthonormal basis $\mathcal{C} \definedas \mathcal{B} \union \theset{\vector{v_1}}$ of $S \oplus S^\perp = V$, **ordered with $\vector v_1$ last**.
 
 Only $S^\perp$ is $A\dash$invariant here; $S$ is an eigenspace of $A^*$, not of $A$, so $\restrictionof{A}{S}$ is not defined and the matrix is not block diagonal.
 What the invariance of $S^\perp$ gives is that the first $n-1$ columns have no $\vector v_1$ component, i.e. a zero in the last row:
@@ -166,17 +160,20 @@ For diagonalization, Schur's theorem gives a unitary $U$ such that
 \[
 T=U^*AU
 \]
-is upper triangular. Since $A^*=A$,
+is upper triangular.
+Since $A^*=A$,
 \[
 T^*=U^*A^*U=U^*AU=T.
 \]
-An upper-triangular self-adjoint matrix is diagonal: upper triangularity gives $T_{ij}=0$ for $i>j$, and $T=T^*$ then gives $T_{ij}=0$ also for $i<j$. Thus $T$ is diagonal and
+An upper-triangular self-adjoint matrix is diagonal: upper triangularity gives $T_{ij}=0$ for $i>j$, and $T=T^*$ then gives $T_{ij}=0$ also for $i<j$.
+Thus $T$ is diagonal and
 \[
 A=UTU^*
 \]
 is unitarily diagonalizable.
 
-For completeness, Schur's theorem itself follows by induction on dimension. Choose an eigenvector $v$ of $A^*$; then $v^\perp$ is $A$-invariant because
+For completeness, Schur's theorem itself follows by induction on dimension.
+Choose an eigenvector $v$ of $A^*$; then $v^\perp$ is $A$-invariant because
 \[
 \langle v,Aw\rangle=\langle A^*v,w\rangle=0
 \qquad(w\in v^\perp).

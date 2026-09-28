@@ -15,7 +15,7 @@ topics:
 
 A bilinear form $b$ on a finite-dimensional vector space $V$ has a [[D-RG5FO|Gram matrix]] $G=(b(e_i,e_j))_{i,j}$ in each basis $(e_i)$ of $V$, and $b$ is [[D-5BR4D|nondegenerate]] if and only if $G$ is invertible; for a nondegenerate symmetric form and a subspace $W\subseteq V$, $\dim W+\dim W^\perp=\dim V$.
 A complex matrix is [[D-BSUV4|normal]] if it commutes with its conjugate transpose, and normal matrices are exactly the unitarily diagonalizable ones.
-Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley decomposition $T=T_s+T_n$ with $T_s$ [[D-B4VTH|semisimple]], $T_n$ [[D-HGMOW|nilpotent]], and $T_sT_n=T_nT_s$; for invertible $T$, the multiplicative form is $T=T_sT_u$ with $T_u=I+T_s\inv T_n$ [[D-23FX7|unipotent]].
+Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley decomposition $T=T_s+T_n$ with $T_s$ [[D-B4VTH|semisimple]], $T_n$ [[D-HGMOW|nilpotent]], and $T_sT_n=T_nT_s$; for invertible $T$, the multiplicative form is $T=T_sT_u$ with $T_u=I+\inverseof{T_s} T_n$ [[D-23FX7|unipotent]].
 
 [[D-5BR4D]]
 
@@ -35,7 +35,7 @@ Over a perfect field, every linear operator $T$ has a unique Jordan--Chevalley d
 
 [[PR-WDPF7]]
 
-Square matrices $A$ and $B$ are [[D-JIGMN|similar]] if $B=PAP\inv$ for an invertible $P$, and $m\times n$ matrices are [[D-JRPTK|equivalent]] if $B=PAQ$ for invertible $P$ and $Q$.
+Square matrices $A$ and $B$ are [[D-JIGMN|similar]] if $B=PA\inverseof{P}$ for an invertible $P$, and $m\times n$ matrices are [[D-JRPTK|equivalent]] if $B=PAQ$ for invertible $P$ and $Q$.
 Similar matrices have the same characteristic polynomial, minimal polynomial, and Jordan form; two matrices over a field are equivalent if and only if they have the same size and rank.
 
 [[D-JIGMN]]
@@ -67,7 +67,7 @@ $$
 $$
 and if $\det A$ is invertible, the adjugate gives the inverse:
 $$
-A\inv = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
+\inverseof{A} = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
 $$
 :::
 
@@ -102,7 +102,7 @@ The eigenvalues of a triangular matrix are its diagonal entries, so its determin
 :::
 
 ::: {.fact title="Similarity invariants"}
-$\tr(AB) = \tr(BA)$, so similar matrices have the same trace: $\tr(PJP\inv) = \tr(P\inv P J) = \tr J$.
+$\tr(AB) = \tr(BA)$, so similar matrices have the same trace: $\tr(PJ\inverseof{P}) = \tr(\inverseof{P} P J) = \tr J$.
 The determinant, characteristic polynomial, and minimal polynomial are also similarity invariants.
 :::
 

@@ -18,21 +18,21 @@ review: draft
 
 ::: {.problem}
 (a) Let $Y$ be the plane curve $y = x^2$, the zero set of $f = y - x^2$.
-Show that $A(Y)$ is isomorphic to a polynomial ring in one variable over $k$.
+    Show that $A(Y)$ is isomorphic to a polynomial ring in one variable over $k$.
 
 (b) Let $Z$ be the plane curve $xy = 1$.
-Show that $A(Z)$ is not isomorphic to a polynomial ring in one variable over $k$.
+    Show that $A(Z)$ is not isomorphic to a polynomial ring in one variable over $k$.
 
 (c) Let $f$ be any irreducible quadratic polynomial in $k[x,y]$, and let $W$ be the conic it defines.
-Show that $A(W)$ is isomorphic to $A(Y)$ or to $A(Z)$.
-Which one, and when?
+    Show that $A(W)$ is isomorphic to $A(Y)$ or to $A(Z)$.
+    Which one, and when?
 :::
 
 ::: {.solution}
 **(a)** $A(Y) = k[x,y]/\gens{y-x^2} \cong k[t,t^2] \cong k[t]$.
 
 **(b)** $A(Z) = k[x,y]/\gens{xy-1} \cong k[x^{\pm 1}]$.
-This is not a polynomial ring: it contains the unit $x\inv \notin k$, while the units of $k[t]$ are exactly $k^*$.
+This is not a polynomial ring: it contains the unit $\inverseof{x} \notin k$, while the units of $k[t]$ are exactly $k^*$.
 
 **(c)** An affine change of coordinates reduces $F$ to one of the two cases above.
 Write the conic as

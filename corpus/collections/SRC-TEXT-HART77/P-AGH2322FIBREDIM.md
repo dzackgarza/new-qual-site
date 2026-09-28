@@ -26,19 +26,19 @@ audit:
 Let $f: X \to Y$ be a dominant morphism of integral schemes of finite type over a field $k$.
 
 a. Let $Y'$ be a closed irreducible subset of $Y$ whose generic point $\eta'$ is contained in $f(X)$.
-Let $Z$ be any irreducible component of $f\inv(Y')$ such that $\eta' \in f(Z)$, and show that $\codim(Z, X) \leq \codim(Y', Y)$.
+   Let $Z$ be any irreducible component of $\inverseof{f}(Y')$ such that $\eta' \in f(Z)$, and show that $\codim(Z, X) \leq \codim(Y', Y)$.
 
 b. Let $e = \krulldim X - \krulldim Y$ be the relative dimension of $X$ over $Y$.
-For any point $y \in f(X)$, show that every irreducible component of the fibre $X_y$ has dimension $\geq e$.
+   For any point $y \in f(X)$, show that every irreducible component of the fibre $X_y$ has dimension $\geq e$.
 
 c. Show that there is a dense open subset $U \subseteq X$ such that for any $y \in f(U)$ one has $\krulldim U_y = e$.
 
 d. Going back to the original morphism $f: X \to Y$, for any integer $h$ let $E_h$ be the set of points $x \in X$ such that, letting $y = f(x)$, there is an irreducible component $Z$ of the fibre $X_y$ containing $x$ with $\krulldim Z \geq h$.
-Show that $E_e = X$, that $E_h$ is not dense in $X$ when $h > e$, and that $E_h$ is closed for all $h$.
+   Show that $E_e = X$, that $E_h$ is not dense in $X$ when $h > e$, and that $E_h$ is closed for all $h$.
 
 e. Prove the following theorem of Chevalley.
-For each integer $h$, let $C_h$ be the set of points $y \in Y$ such that $\krulldim X_y = h$.
-Then the subsets $C_h$ are constructible, and $C_e$ contains an open dense subset of $Y$.
+   For each integer $h$, let $C_h$ be the set of points $y \in Y$ such that $\krulldim X_y = h$.
+   Then the subsets $C_h$ are constructible, and $C_e$ contains an open dense subset of $Y$.
 :::
 
 ::: {.remark}
@@ -49,7 +49,8 @@ See Cartan and Chevalley, exposé 8.
 :::
 
 ::: {.solution}
-We use the standard local dimension inequality for a homomorphism of noetherian rings.  If a prime $\mathfrak q\subseteq S$ lies over $\mathfrak p\subseteq R$, then
+We use the standard local dimension inequality for a homomorphism of noetherian rings.
+If a prime $\mathfrak q\subseteq S$ lies over $\mathfrak p\subseteq R$, then
 \[
 \dim S_{\mathfrak q}
 \le
@@ -75,10 +76,11 @@ Then
 \mathfrak q\cap B=\mathfrak p
 \]
 and $\mathfrak q$ is minimal over $\mathfrak pA$.
-::: {.proof}
-The equality of contractions says exactly that $f(\zeta)=\eta'$.
+::: {.proof} The equality of contractions says exactly that $f(\zeta)=\eta'$.
 
-The inverse image of $Y'$ in $X_0$ is cut out set-theoretically by $\mathfrak pA$.  Since $Z$ is an irreducible component of $f^{-1}(Y')$, its intersection with $X_0$ is an irreducible component of this inverse image.  Thus its generic prime $\mathfrak q$ is minimal over $\mathfrak pA$.
+The inverse image of $Y'$ in $X_0$ is cut out set-theoretically by $\mathfrak pA$.
+Since $Z$ is an irreducible component of $f^{-1}(Y')$, its intersection with $X_0$ is an irreducible component of this inverse image.
+Thus its generic prime $\mathfrak q$ is minimal over $\mathfrak pA$.
 :::
 
 <1>2. One has
@@ -123,7 +125,8 @@ Hartshorne II.3.20(c) identifies these local dimensions with the codimensions of
 This proves part (a).
 :::
 
-<1>4. Let $y\in f(X)$ and let $W$ be an irreducible component of the fibre $X_y$.  If
+<1>4. Let $y\in f(X)$ and let $W$ be an irreducible component of the fibre $X_y$.
+If
 \[
 Y'=\overline{\{y\}}
 \]
@@ -132,20 +135,21 @@ and
 Z=\overline W\subseteq X,
 \]
 then $Z$ is an irreducible component of $f^{-1}(Y')$, and its generic point maps to $y$, the generic point of $Y'$.
-::: {.proof}
-Work on affine neighborhoods
+::: {.proof} Work on affine neighborhoods
 \[
 Y_0=\Spec B\ni y,
 \qquad
 X_0=\Spec A
 \]
-meeting the generic point of $W$.  Let $\mathfrak p\subseteq B$ represent $y$.
+meeting the generic point of $W$.
+Let $\mathfrak p\subseteq B$ represent $y$.
 
 By Hartshorne II.3.10, the fibre is
 \[
 \Spec\bigl(A\otimes_B\kappa(\mathfrak p)\bigr).
 \]
-An irreducible component $W$ corresponds to a prime $\mathfrak q\subseteq A$ minimal among primes containing $\mathfrak pA$ and disjoint from $B\setminus\mathfrak p$.  Such a prime satisfies
+An irreducible component $W$ corresponds to a prime $\mathfrak q\subseteq A$ minimal among primes containing $\mathfrak pA$ and disjoint from $B\setminus\mathfrak p$.
+Such a prime satisfies
 \[
 \mathfrak q\cap B=\mathfrak p.
 \]
@@ -154,7 +158,8 @@ If a prime $\mathfrak r\subsetneq\mathfrak q$ contained $\mathfrak pA$, then
 \[
 \mathfrak p\subseteq\mathfrak r\cap B\subseteq\mathfrak q\cap B=\mathfrak p,
 \]
-so $\mathfrak r\cap B=\mathfrak p$ and $\mathfrak r$ would define a smaller prime in the fibre, contradicting minimality.  Hence $\mathfrak q$ is minimal over $\mathfrak pA$.
+so $\mathfrak r\cap B=\mathfrak p$ and $\mathfrak r$ would define a smaller prime in the fibre, contradicting minimality.
+Hence $\mathfrak q$ is minimal over $\mathfrak pA$.
 
 Thus $V(\mathfrak q)$ is an irreducible component of the inverse image of $V(\mathfrak p)=Y'\cap Y_0$.  Taking its closure in $X$ gives the asserted component $Z$ of $f^{-1}(Y')$.  Its generic point is the same point represented by $\mathfrak q$, and its image is $y$.
 :::
@@ -163,8 +168,8 @@ Thus $V(\mathfrak q)$ is an irreducible component of the inverse image of $V(\ma
 \[
 \boxed{\dim W=\dim Z-\dim Y'.}
 \]
-::: {.proof}
-Let $w$ be the generic point of $W$, equivalently of $Z$.  Since $w$ maps to the generic point $y$ of $Y'$, there is an inclusion of function fields
+::: {.proof} Let $w$ be the generic point of $W$, equivalently of $Z$.
+Since $w$ maps to the generic point $y$ of $Y'$, there is an inclusion of function fields
 \[
 K(Y')=\kappa(y)\hookrightarrow\kappa(w)=K(Z).
 \]
@@ -241,8 +246,7 @@ defines a dominant generically finite morphism
 \[
 g:X\longrightarrow X_1:=\Spec B[t_1,\ldots,t_e]\cong\mathbb A^e_Y.
 \]
-::: {.proof}
-By II.3.20(b),
+::: {.proof} By II.3.20(b),
 \[
 e
 =
@@ -254,7 +258,8 @@ Their algebraic independence over $K(Y)$ implies that
 \[
 B[t_1,\ldots,t_e]
 \]
-is a polynomial ring over $B$ and injects into $A$.  Hence $g$ is dominant.
+is a polynomial ring over $B$ and injects into $A$.
+Hence $g$ is dominant.
 
 The field extension
 \[
@@ -272,8 +277,7 @@ such that
 U:=g^{-1}(W)\longrightarrow W
 \]
 is finite and surjective.
-::: {.proof}
-Hartshorne II.3.7 applied to the generically finite morphism $g$ gives a dense open $W$ such that $U\to W$ is finite.
+::: {.proof} Hartshorne II.3.7 applied to the generically finite morphism $g$ gives a dense open $W$ such that $U\to W$ is finite.
 
 The restriction remains dominant because $U$ and $W$ contain the generic points.  A finite morphism is closed, so its image is both closed and dense in the irreducible space $W$.  Hence its image is all of $W$.
 :::
@@ -282,12 +286,13 @@ The restriction remains dominant because $U$ and $W$ contain the generic points.
 \[
 \boxed{\dim U_y=e.}
 \]
-::: {.proof}
-The morphism $X_1\to Y$ is affine $e$-space.  Its fibre at $y$ is
+::: {.proof} The morphism $X_1\to Y$ is affine $e$-space.
+Its fibre at $y$ is
 \[
 (X_1)_y\cong\mathbb A^e_{\kappa(y)}.
 \]
-The open set $W_y$ is nonempty because $y\in f(U)$ and $U\to W$ is surjective.  Hence
+The open set $W_y$ is nonempty because $y\in f(U)$ and $U\to W$ is surjective.
+Hence
 \[
 \dim W_y=e
 \]
@@ -313,17 +318,18 @@ Given $x\in X$, put $y=f(x)$ and choose an irreducible component of $X_y$ contai
 :::
 
 <1>12. If $h>e$, then $E_h$ is not dense in $X$.
-::: {.proof}
-Let $U\subseteq X$ be the dense open subset from part (c).  We claim
+::: {.proof} Let $U\subseteq X$ be the dense open subset from part (c). We claim
 \[
 E_h\cap U=\varnothing.
 \]
 
-Let $x\in U$ and $y=f(x)$.  If $Z$ is an irreducible component of $X_y$ containing $x$, then
+Let $x\in U$ and $y=f(x)$.
+If $Z$ is an irreducible component of $X_y$ containing $x$, then
 \[
 Z\cap U_y
 \]
-is a nonempty open subset of $Z$.  Therefore
+is a nonempty open subset of $Z$.
+Therefore
 \[
 \dim Z
 =
@@ -331,14 +337,14 @@ is a nonempty open subset of $Z$.  Therefore
 \le
 \dim U_y=e.
 \]
-Part (b) gives the reverse inequality, so in fact every fibre component through a point of $U$ has dimension exactly $e$.  Thus no point of $U$ lies in $E_h$ for $h>e$.
+Part (b) gives the reverse inequality, so in fact every fibre component through a point of $U$ has dimension exactly $e$.
+Thus no point of $U$ lies in $E_h$ for $h>e$.
 
 Since $U$ is nonempty open, $E_h$ cannot be dense.
 :::
 
 <1>13. We prove by induction on $\dim X$ that every $E_h$ is closed.
-::: {.proof}
-If $\dim X=0$, every nonempty fibre component has dimension $0$, so each $E_h$ is either $X$ or $\varnothing$.
+::: {.proof} If $\dim X=0$, every nonempty fibre component has dimension $0$, so each $E_h$ is either $X$ or $\varnothing$.
 
 Assume the assertion for dominant morphisms whose integral source has dimension $<\dim X$.
 
@@ -346,7 +352,9 @@ For $h\le e$, part (b) gives
 \[
 E_h=X,
 \]
-which is closed.  Now suppose $h>e$.  Let $U$ be the dense open from part (c).  By <1>12,
+which is closed.
+Now suppose $h>e$.
+Let $U$ be the dense open from part (c). By <1>12,
 \[
 E_h\subseteq F:=X\setminus U,
 \]
@@ -375,18 +383,21 @@ Thus the induction hypothesis applies to every $f_i$.
 \[
 E_h(f)=\bigcup_{i=1}^r E_h(f_i).
 \]
-::: {.proof}
-Let $x\in E_h(f)$.  Choose an irreducible component
+::: {.proof} Let $x\in E_h(f)$.
+Choose an irreducible component
 \[
 Z\subseteq X_{f(x)}
 \]
 containing $x$ with $\dim Z\ge h$.
 
-Every point of $Z$ belongs to $E_h(f)$ because the same component $Z$ witnesses the condition.  Hence
+Every point of $Z$ belongs to $E_h(f)$ because the same component $Z$ witnesses the condition.
+Hence
 \[
 Z\subseteq E_h(f)\subseteq F.
 \]
-As $Z$ is irreducible and $F$ is the finite union of the $F_i$, it lies in some $F_i$.  Then $Z$ is also an irreducible component of the fibre $(F_i)_{f(x)}$: any larger irreducible subset of that fibre would be a larger irreducible subset of $X_{f(x)}$, contradicting maximality of $Z$.  Thus
+As $Z$ is irreducible and $F$ is the finite union of the $F_i$, it lies in some $F_i$.
+Then $Z$ is also an irreducible component of the fibre $(F_i)_{f(x)}$: any larger irreducible subset of that fibre would be a larger irreducible subset of $X_{f(x)}$, contradicting maximality of $Z$.
+Thus
 \[
 x\in E_h(f_i).
 \]
@@ -399,12 +410,12 @@ Hence $x\in E_h(f)$.
 :::
 
 <1>15. Every set $E_h$ is closed.
-::: {.proof}
-For $h\le e$ this was already observed in <1>13.  For $h>e$, the induction hypothesis makes each
+::: {.proof} For $h\le e$ this was already observed in <1>13. For $h>e$, the induction hypothesis makes each
 \[
 E_h(f_i)
 \]
-closed in $F_i$, hence closed in $X$.  Step <1>14 expresses $E_h(f)$ as their finite union, so it is closed.
+closed in $F_i$, hence closed in $X$.
+Step <1>14 expresses $E_h(f)$ as their finite union, so it is closed.
 
 This completes the induction and proves the closedness assertion in part (d), together with <1>11--<1>12.
 :::
@@ -417,8 +428,7 @@ Then
 \[
 \boxed{D_h=f(E_h).}
 \]
-::: {.proof}
-If $y\in D_h$, some irreducible component of $X_y$ has dimension at least $h$; any point on that component belongs to $E_h$ and maps to $y$.
+::: {.proof} If $y\in D_h$, some irreducible component of $X_y$ has dimension at least $h$; any point on that component belongs to $E_h$ and maps to $y$.
 
 Conversely, if $y=f(x)$ for some $x\in E_h$, the component witnessing $x\in E_h$ has dimension at least $h$, so $\dim X_y\ge h$.
 :::
@@ -441,8 +451,9 @@ is constructible.
 \boxed{C_h=D_h\setminus D_{h+1}}
 \]
 and hence $C_h$ is constructible.
-::: {.proof}
-A nonempty fibre has dimension exactly $h$ if and only if its dimension is at least $h$ but not at least $h+1$.  For $h\ge0$, an empty fibre belongs to neither side.  Thus the displayed equality holds.
+::: {.proof} A nonempty fibre has dimension exactly $h$ if and only if its dimension is at least $h$ but not at least $h+1$.
+For $h\ge0$, an empty fibre belongs to neither side.
+Thus the displayed equality holds.
 
 Constructible subsets form a Boolean algebra, so the difference of the constructible sets $D_h$ and $D_{h+1}$ is constructible.
 
@@ -454,20 +465,21 @@ which is constructible because $f(X)$ is constructible by Hartshorne II.3.19.  F
 :::
 
 <1>19. The generic fibre $X_\eta$, where $\eta$ is the generic point of $Y$, is integral and has dimension $e$.
-::: {.proof}
-Work on affine neighborhoods
+::: {.proof} Work on affine neighborhoods
 \[
 Y_0=\Spec B,
 \qquad
 X_0=\Spec A
 \]
-of the generic points, with $B\hookrightarrow A$ an inclusion of domains.  The generic fibre has coordinate ring
+of the generic points, with $B\hookrightarrow A$ an inclusion of domains.
+The generic fibre has coordinate ring
 \[
 S^{-1}A,
 \qquad
 S=B\setminus\{0\},
 \]
-which is a domain.  Thus $X_\eta$ is integral.
+which is a domain.
+Thus $X_\eta$ is integral.
 
 Its function field is $K(X)$ and its ground field is
 \[
@@ -488,8 +500,8 @@ Additivity of transcendence degree and II.3.20(b) for $X$ and $Y$ give
 :::
 
 <1>20. The constructible subset $C_e\subseteq Y$ contains a dense open subset of $Y$.
-::: {.proof}
-By <1>19, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.  Step <1>18 shows that $C_e$ is constructible.
+::: {.proof} By <1>19, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.
+Step <1>18 shows that $C_e$ is constructible.
 
 Hartshorne II.3.18(b) says that a constructible subset of an irreducible Zariski space which contains the generic point is dense and contains a nonempty open subset.  Thus $C_e$ contains an open dense subset of $Y$.
 :::

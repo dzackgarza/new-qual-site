@@ -19,22 +19,23 @@ relations:
 review: draft
 prompts:
 - What is the correspondence between Cartier divisors and invertible sheaves?
-- Why is $\Pic(X) = H^1(X, \OO_X\units)$?
+- Why is $\Pic(X) = H^1(X, \unitsof{\OO_X})$?
 - Which line bundles come from divisors?
 - Why does $\Pic(X) \cong H^1(X, \OO_X^\times)$ need the comparison of Čech and derived-functor $H^1$?
 - Describe the maps between Cartier divisors, Weil divisors and line bundles with rational sections.
 ---
 
 ::: {.proposition}
-$D \mapsto \OO_X(D)$ is an injection $\CaCl(X) \injects \Pic(X)$, and it is a bijection onto the invertible subsheaves of $\mck$ [@Har10a, Proposition II.6.13]. When $X$ is integral every invertible sheaf is such a subsheaf, so $\CaCl(X) \cong \Pic(X)$ [@Har10a, Proposition II.6.15].
+$D \mapsto \OO_X(D)$ is an injection $\CaCl(X) \injects \Pic(X)$, and it is a bijection onto the invertible subsheaves of $\mck$ [@Har10a, Proposition II.6.13].
+When $X$ is integral every invertible sheaf is such a subsheaf, so $\CaCl(X) \cong \Pic(X)$ [@Har10a, Proposition II.6.15].
 :::
 
 ::: {.proposition}
-$\Pic(X) \cong H^1(X, \OO_X\units)$ ([[P-AGH345PICH1]]), and the sequence
+$\Pic(X) \cong H^1(X, \unitsof{\OO_X})$ ([[P-AGH345PICH1]]), and the sequence
 \[
-0 \to \OO_X\units \to \mck\units \to \mck\units/\OO_X\units \to 0
+0 \to \unitsof{\OO_X} \to \unitsof{\mck} \to \unitsof{\mck}/\unitsof{\OO_X} \to 0
 \]
-has cohomology sequence $\mck(X)\units \to \Div_{\mathrm{Ca}}(X) \to \Pic(X) \to H^1(X, \mck\units)$.
+has cohomology sequence $\unitsof{\mck(X)} \to \Div_{\mathrm{Ca}}(X) \to \Pic(X) \to H^1(X, \unitsof{\mck})$.
 :::
 
 ::: {.proposition title="Divisors, line bundles with sections, and class groups"}
@@ -45,13 +46,13 @@ Let $X$ be an integral separated Noetherian scheme with function field $K$, and 
 
 2. If $X$ is regular in codimension one, $\Div_{\mathrm{Ca}}(X) \to \Div(X)$, $\{(U_i, f_i)\} \mapsto \sum_Y v_Y(f_i) Y$ with $U_i \cap Y \neq \emptyset$, is a homomorphism, and $(\mathcal{L}, s) \mapsto \div s$ is the composite with the inverse of part 1.
 
-3. Under these maps, $t \in K\units$ goes to the principal Cartier divisor $\{(X, t)\}$, the pair $(\OO_X, t)$, and the principal Weil divisor $\div t$, so they descend to $\CaCl(X) \to \Cl(X)$ and $\CaCl(X) \cong \Pic(X)$.
+3. Under these maps, $t \in \unitsof{K}$ goes to the principal Cartier divisor $\{(X, t)\}$, the pair $(\OO_X, t)$, and the principal Weil divisor $\div t$, so they descend to $\CaCl(X) \to \Cl(X)$ and $\CaCl(X) \cong \Pic(X)$.
 
 4. If every local ring $\OO_{X,x}$ is a unique factorization domain, then $\CaCl(X) \cong \Cl(X) \cong \Pic(X)$, with inverse $D \mapsto (\OO_X(D), 1)$ [@Har10a, Proposition II.6.11].
 :::
 
 ::: {.remark}
-Both halves are the same observation: gluing data for a line bundle is a cocycle $g_{ij} \in \OO\units(U_{ij})$, and Cartier data $f_i$ produces the cocycle $g_{ij} = f_i/f_j$.
+Both halves are the same observation: gluing data for a line bundle is a cocycle $g_{ij} \in \unitsof{\OO}(U_{ij})$, and Cartier data $f_i$ produces the cocycle $g_{ij} = f_i/f_j$.
 Saying "a Cartier divisor is a line bundle together with a choice of rational section" is the cleanest one-line answer, and it explains the failure of surjectivity for non-integral $X$: a line bundle with no rational section is not a divisor.
 
 Combined with the injection $\CaCl \injects \Cl$, the chain to recite is

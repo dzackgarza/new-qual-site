@@ -27,7 +27,7 @@ The correspondence theorem identifies the subgroups of $G/N$ with the subgroups 
 ## Products
 
 A group $G$ is the internal direct product of subgroups $H$ and $K$ if $H,K\normal G$, $H\intersect K=1$, and $HK=G$; then $hk=kh$ for all $h\in H$, $k\in K$, and $G\cong H\times K$.
-If only $N\normal G$ is normal, $H\le G$, $N\intersect H=1$, and $NH=G$, then conjugation defines a homomorphism $\psi\colon H\to\Aut(N)$, $\psi(h)(n)=hnh\inv$, and $G\cong N\semidirect_\psi H$.
+If only $N\normal G$ is normal, $H\le G$, $N\intersect H=1$, and $NH=G$, then conjugation defines a homomorphism $\psi\colon H\to\Aut(N)$, $\psi(h)(n)=hn\inverseof{h}$, and $G\cong N\semidirect_\psi H$.
 In particular, when a Sylow subgroup $N$ of $G$ is normal and has a complement $H$, the isomorphism type of $G$ is determined by $N$, $H$, and $\psi$.
 
 [[PR-BEIVF]]

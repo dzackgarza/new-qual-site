@@ -93,7 +93,7 @@ need not be injective: its kernel is $\ts{x\in R \st sx=0 \text{ for some } s\in
 ::: {.remark}
 For an integral domain $R$,
 $$
-\ff(R) \cong R\localize{ (R\nonzero) }.
+\ff(R) \cong R\localize{ (\nonzeroof{R}) }.
 $$
 :::
 

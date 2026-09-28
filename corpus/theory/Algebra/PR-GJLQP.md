@@ -21,5 +21,5 @@ For every group $G$, the [[D-NK7G7|center]] $Z(G)$ is a [[D-53LTN|characteristic
 
 ::: {.proof}
 Let $\phi \in \Aut(G)$, $z \in Z(G)$, and $g \in G$.
-Then $\phi(z)\,g = \phi\big(z\,\phi\inv(g)\big) = \phi\big(\phi\inv(g)\,z\big) = g\,\phi(z)$, so $\phi(z) \in Z(G)$.
+Then $\phi(z)\,g = \phi\big(z\,\inverseof{\phi}(g)\big) = \phi\big(\inverseof{\phi}(g)\,z\big) = g\,\phi(z)$, so $\phi(z) \in Z(G)$.
 :::

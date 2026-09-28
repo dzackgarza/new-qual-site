@@ -37,7 +37,7 @@ The group $A_4$ has order $12$ and no subgroup of order $6$.
 Suppose $H\le A_4$ has order $6$.
 The $3$-cycles generate $A_4$, so some $3$-cycle $x$ satisfies $x\notin H$.
 Since $[A_4 : H] = 2$, two of the cosets $H, xH, x^2H$ coincide.
-But $H = xH$ gives $x\in H$; $x^2 H = H$ gives $x\inv = x^2 \in H$, hence $x\in H$; and $xH = x^2H$ gives $x = x\inv x^2 \in H$.
+But $H = xH$ gives $x\in H$; $x^2 H = H$ gives $\inverseof{x} = x^2 \in H$, hence $x\in H$; and $xH = x^2H$ gives $x = \inverseof{x} x^2 \in H$.
 $\contradiction$
 :::
 
@@ -46,7 +46,7 @@ $\contradiction$
 ::: {.proof}
 Let $p$ be a prime dividing $\size G$, and let $X = \ts{(g_1,\ldots,g_p)\in G^p \st g_1g_2\cdots g_p = e}$.
 Choosing $g_1,\ldots,g_{p-1}$ freely determines $g_p$, so $\size X = \size G^{p-1}$, which is divisible by $p$.
-The group $\ZZ/p$ acts on $X$ by cyclic rotation of the coordinates, since $g_1g_2\cdots g_p = e$ implies $g_2\cdots g_pg_1 = g_1\inv e\, g_1 = e$.
+The group $\ZZ/p$ acts on $X$ by cyclic rotation of the coordinates, since $g_1g_2\cdots g_p = e$ implies $g_2\cdots g_pg_1 = \inverseof{g_1} e\, g_1 = e$.
 Each orbit has size $1$ or $p$, and the orbits of size $1$ are the tuples $(g,\ldots,g)$ with $g^p = e$.
 Hence the number of $g\in G$ with $g^p=e$ is congruent to $\size X\equiv 0 \pmod p$; it is at least $1$, because $g=e$ qualifies, so it is at least $p$, and some $g\neq e$ has order $p$.
 :::
@@ -81,9 +81,9 @@ $$
 ::: {.proof title="of orbit-stabilizer"}
 Define $\Phi\colon G/G_x\to\Orb(x)$ by $\Phi(gG_x) = g\actson x$.
 
-- $\Phi$ is well defined: if $gG_x = hG_x$, then $g\inv h \in G_x$, so $h\actson x = g\actson\big((g\inv h)\actson x\big) = g\actson x$.
+- $\Phi$ is well defined: if $gG_x = hG_x$, then $\inverseof{g} h \in G_x$, so $h\actson x = g\actson\big((\inverseof{g} h)\actson x\big) = g\actson x$.
 
-- $\Phi$ is injective: if $g\actson x=h\actson x$, then $g\inv h \actson x = x$, so $g\inv h \in G_x$ and $gG_x = hG_x$.
+- $\Phi$ is injective: if $g\actson x=h\actson x$, then $\inverseof{g} h \actson x = x$, so $\inverseof{g} h \in G_x$ and $gG_x = hG_x$.
 
 - $\Phi$ is surjective, since every element of $\Orb(x)$ has the form $g\actson x$.
 :::
@@ -96,13 +96,13 @@ Then
 $$
 \begin{aligned}
 h\in H_x &\iff hx = x \\
-&\iff hg\inv y = g\inv y \\
-&\iff ghg\inv y = y \\
-&\iff ghg\inv \in H_y \\
-&\iff h\in g\inv H_y g,
+&\iff h\inverseof{g} y = \inverseof{g} y \\
+&\iff gh\inverseof{g} y = y \\
+&\iff gh\inverseof{g} \in H_y \\
+&\iff h\in \inverseof{g} H_y g,
 \end{aligned}
 $$
-so $H_x = g\inv H_y g$.
+so $H_x = \inverseof{g} H_y g$.
 :::
 
 [[T-QYDVH]]
@@ -139,7 +139,7 @@ $G$ acts on itself by $\phi\colon g \mapsto (h\mapsto gh)$.
 :::
 
 ::: {.example title="Conjugation on $G$: centers and centralizers"}
-$G$ acts on itself by $g\actson x = gxg\inv$.
+$G$ acts on itself by $g\actson x = gx\inverseof{g}$.
 
 - $\Orb(x) = [x]$ is the [[D-HLDEY|conjugacy class]] of $x$.
   The orbit of $e$ is $\ts e$, so the action is transitive only when $G$ is trivial; every orbit is a singleton if and only if $G$ is abelian.
@@ -156,7 +156,7 @@ $G$ acts on itself by $g\actson x = gxg\inv$.
 ::: {.example title="Conjugation on subgroups: normalizers"}
 $G$ acts on $\ts{H \st H\leq G}$ by conjugation.
 
-- $\Orb(H) = \ts{gHg\inv \st g\in G}$ is the set of conjugates of $H$.
+- $\Orb(H) = \ts{gH\inverseof{g} \st g\in G}$ is the set of conjugates of $H$.
 
 - $\Fix(\phi)$ is the set of normal subgroups of $G$.
 
@@ -164,9 +164,7 @@ $G$ acts on $\ts{H \st H\leq G}$ by conjugation.
 
 - The kernel is $\Intersect_{H\leq G} N_G(H)$.
 
-- Orbit-stabilizer gives the number of conjugates of $H$:
-$$
-\size{\ts{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
+- Orbit-stabilizer gives the number of conjugates of $H$: $$ \size{\ts{ gHg ^{-1} \st g \in G } } = [G: N_G(H)].
 $$
 :::
 
@@ -175,18 +173,18 @@ For a proper subgroup $H < G$, $G$ acts on $G/H$ by left translation.
 
 - $\Orb(eH) = G/H$, so the action is transitive.
 
-- $\Stab(xH) = xHx\inv$, since
-$$
-\begin{aligned}
-\Stab(xH) &= \ts{g\in G\st gxH = xH} \\
-&= \ts{g\in G \st x\inv g x\in H} \\
-&= xHx\inv.
-\end{aligned}
+- $\Stab(xH) = xH\inverseof{x}$, since
+  $$
+  \begin{aligned}
+  \Stab(xH) &= \ts{g\in G\st gxH = xH} \\
+  &= \ts{g\in G \st \inverseof{x} g x\in H} \\
+  &= xH\inverseof{x}.
+  \end{aligned}
 $$
 
 - $\Fix(\phi) = \emptyset$, because the action is transitive and $\size{G/H} > 1$.
 
-- The kernel is $\Intersect_{g\in G} gHg\inv$, the [[D-QMVEB|normal core]] of $H$, which is the largest normal subgroup of $G$ contained in $H$.
+- The kernel is $\Intersect_{g\in G} gH\inverseof{g}$, the [[D-QMVEB|normal core]] of $H$, which is the largest normal subgroup of $G$ contained in $H$.
 
 This action gives the index bounds on [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|Show $G$ is not simple]].
 :::

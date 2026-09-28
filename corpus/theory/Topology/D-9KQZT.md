@@ -16,8 +16,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ and $Y$ be topological spaces.
-A bijection $f\colon X\to Y$ is a \dfn{homeomorphism} if both $f$ and $f\inv\colon Y\to X$ are [[D-AEAAD|continuous]].
-The spaces $X$ and $Y$ are \dfn{homeomorphic}, written $X\cong Y$, if there exists a homeomorphism $X\to Y$.
+A bijection $f\colon X\to Y$ is a \dfn{homeomorphism} if both $f$ and $\inverseof{f}\colon Y\to X$ are [[D-AEAAD|continuous]]. The spaces $X$ and $Y$ are \dfn{homeomorphic}, written $X\cong Y$, if there exists a homeomorphism $X\to Y$.
 :::
 
 ::: {.remark}

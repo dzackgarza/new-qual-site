@@ -15,5 +15,5 @@ review: draft
 
 ::: {.definition}
 Let $X$ and $Y$ be topological spaces.
-A map $f\colon X\to Y$ is \dfn{continuous} if $f\inv(U)$ is open in $X$ for every open set $U \subseteq Y$.
+A map $f\colon X\to Y$ is \dfn{continuous} if $\inverseof{f}(U)$ is open in $X$ for every open set $U \subseteq Y$.
 :::

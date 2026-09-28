@@ -23,7 +23,7 @@ The composite of the following three maps is a conformal equivalence $\Delta\int
 
 - The squaring map $z\mapsto z^2$ sends $\Delta\intersect A$ onto $\DD \intersect \HH$.
 
-- The negated Joukowski map $z\mapsto -{1\over 2}(z+z\inv)$ sends $\DD\intersect\HH$ onto $\HH$.
+- The negated Joukowski map $z\mapsto -{1\over 2}(z+\inverseof{z})$ sends $\DD\intersect\HH$ onto $\HH$.
 
 - The principal branch of $z\mapsto z^{1\over 2}$ sends $\HH$ onto the first quadrant $A$.
 :::

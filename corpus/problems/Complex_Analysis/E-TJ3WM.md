@@ -20,15 +20,14 @@ audit:
 ---
 
 ::: {.exercise}
-Show that $\Aut_\CC(\CC) = \ts{ z \mapsto az+b\st a\in \CC\units, b\in \CC }$.
+Show that $\Aut_\CC(\CC) = \ts{ z \mapsto az+b\st a\in \unitsof{\CC}, b\in \CC }$.
 :::
 
 ::: {.solution}
 **Goal:** Show that the holomorphic automorphisms of $\CC$ are exactly the affine maps $z \mapsto az + b$ with $a \in \CC^{\times}$, $b \in \CC$.
 
 <1>1. Every affine map $z \mapsto az + b$, $a \neq 0$, is a holomorphic automorphism of $\CC$.
-::: {.proof}
-It is entire, and its inverse $z \mapsto (z - b)/a$ is also entire; both are bijections of $\CC$ onto itself.
+::: {.proof} It is entire, and its inverse $z \mapsto (z - b)/a$ is also entire; both are bijections of $\CC$ onto itself.
 :::
 
 <1>2. Let $f \in \Aut_\CC(\CC)$.

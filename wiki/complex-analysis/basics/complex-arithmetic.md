@@ -91,8 +91,8 @@ $$
 With $w\coloneqq e^{iz}$,
 $$
 \begin{aligned}
-\cos(z) &= \frac 1 2 \qty{e^{iz} + e^{-iz}} = {1\over 2}(w+ w\inv),\\
-\sin(z) &= \frac{1}{2i}\qty{e^{iz} - e^{-iz}} = {1\over 2i}(w-w\inv).
+\cos(z) &= \frac 1 2 \qty{e^{iz} + e^{-iz}} = {1\over 2}(w+ \inverseof{w}),\\
+\sin(z) &= \frac{1}{2i}\qty{e^{iz} - e^{-iz}} = {1\over 2i}(w-\inverseof{w}).
 \end{aligned}
 $$
 
@@ -110,13 +110,16 @@ $$
 \envlist
 
 - $\cosh$ and $\sinh$ are periodic with period $2\pi i$.
-- $\frac{d}{dz}\cosh(z) = \sinh(z)$ and $\frac{d}{dz}\sinh(z) = \cosh(z)$; more generally
+
+- $\frac{d}{dz}\cosh(z) = \sinh(z)$ and $\frac{d}{dz}\sinh(z) = \cosh(z)$; more generally $$ \cosh^{(n)}(z) = {e^z + (-1)^n e^{-z}\over 2}, \qquad \sinh^{(n)}(z) = {e^z - (-1)^{n} e^{-z}\over 2}.
 $$
-\cosh^{(n)}(z) = {e^z + (-1)^n e^{-z}\over 2}, \qquad \sinh^{(n)}(z) = {e^z - (-1)^{n} e^{-z}\over 2}.
-$$
+
 - $\sinh$ is odd and $\cosh$ is even.
+
 - $\cosh(z + i\pi) = -\cosh(z)$ and $\sinh(z + i\pi) = -\sinh(z)$.
+
 - The zeros of $\cosh$ are the points $i\qty{\pi/2 + k\pi}$ with $k\in\ZZ$.
+
 - The zeros of $\sinh$ are the points $i\pi k$ with $k\in\ZZ$.
 
 :::

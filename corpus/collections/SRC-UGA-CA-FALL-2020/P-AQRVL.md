@@ -31,9 +31,9 @@ General strategy: each has two expansions, so just compute them all and pick app
 
 For $1\over z-3$:
 \[
-{1\over z-3} &= -{1\over 3}{1\over 1- {z\over 3}} = -{1\over 3}\sum_{k\geq 0}3^{-k}z^k 
+{1\over z-3} &= -{1\over 3}{1\over 1- {z\over 3}} = -{1\over 3}\sum_{k\geq 0}3^{-k}z^k
 && \abs{z} < 3 \\
-&= {1\over z} {1\over 1 - {3\over z}} = z\inv \sum_{k\geq 0} 3^k z^{-k}
+&= {1\over z} {1\over 1 - {3\over z}} = \inverseof{z} \sum_{k\geq 0} 3^k z^{-k}
 && \abs{z} > 3
 .\]
 
@@ -46,14 +46,12 @@ For $1\over 1-z^2$:
 
 So take
 \[
-0 < \abs{z} < 1 
+0 < \abs{z} < 1
 && f(z) &= \sum_{k\geq 0}z^{2k} - {1\over 3}\sum_{k\geq 0} 3^{-k}z^k \\
-1 < \abs{z} < 3 
+1 < \abs{z} < 3
 && f(z) &= -z^{-2} \sum_{k\geq 0}z^{-2k} - {1\over 3}\sum_{k\geq 0} 3^{-k}z^k \\
-3 < \abs{z} < \infty 
-&& f(z) &= -z^{-2} \sum_{k\geq 0}z^{-2k} + z\inv \sum_{k\geq 0}3^k z^{-k} 
+3 < \abs{z} < \infty
+&& f(z) &= -z^{-2} \sum_{k\geq 0}z^{-2k} + \inverseof{z} \sum_{k\geq 0}3^k z^{-k}
 .\]
 
 :::
-
-

@@ -23,13 +23,11 @@ audit:
 ---
 
 ::: {.problem}
-As in (8.24), let $X$ be a nonsingular integral variety over an algebraically closed field $k$, let $Y$ be a nonempty nonsingular integral closed subvariety of codimension $r \geq 2$, let $\pi: \tilde X \to X$ be the blowing-up of $X$ along $Y$, and let $Y' = \pi\inv(Y)$.
+As in (8.24), let $X$ be a nonsingular integral variety over an algebraically closed field $k$, let $Y$ be a nonempty nonsingular integral closed subvariety of codimension $r \geq 2$, let $\pi: \tilde X \to X$ be the blowing-up of $X$ along $Y$, and let $Y' = \inverseof{\pi}(Y)$.
 
 (a) Show that the maps $\pi^*: \Pic X \to \Pic \tilde X$, and $\ZZ \to \Pic \tilde X$ defined by $n \mapsto$ the class of $nY'$, give rise to an isomorphism $\Pic \tilde X \cong \Pic X \oplus \ZZ$.
 
-(b) Show that
-$$
-\omega_{\tilde X} \cong \pi^* \omega_X \tensor \mcl((r-1) Y')
+(b) Show that $$ \omega_{\tilde X} \cong \pi^* \omega_X \tensor \mcl((r-1) Y')
 .
 $$
 :::
@@ -60,8 +58,7 @@ Dualizing gives the asserted sign for $\OO(E)|_E$.
 The conormal bundle $\mathcal I_Y/\mathcal I_Y^2$ has rank $r$.
 Since $Y$ is integral, its projective bundle is integral: local trivializations are projective spaces over integral opens and overlap over the generic point of $Y$.
 Thus $E$ is an irreducible prime divisor.
-The blowup of the integral $X$ along the proper center is integral, and is an isomorphism off that center, by the [[D-SCHBLOWUP|blowup construction]].
-For every closed point $y\in Y$, its fibre $Z=p^{-1}(y)$ is $\PP_k^{r-1}$ and
+The blowup of the integral $X$ along the proper center is integral, and is an isomorphism off that center, by the [[D-SCHBLOWUP|blowup construction]]. For every closed point $y\in Y$, its fibre $Z=p^{-1}(y)$ is $\PP_k^{r-1}$ and
 $$
 \OO_{\widetilde X}(E)|_Z\cong\OO_{\PP^{r-1}}(-1).
 $$
@@ -93,12 +90,10 @@ $$
 ::: {.proof}
 It is a homomorphism by compatibility of pullback and tensor products.
 Given an invertible sheaf $L$ on $\widetilde X$, use step <1>2 and $\widetilde U\cong U$ to choose $M$ on $X$ with $\pi^*M|_{\widetilde U}\cong L|_{\widetilde U}$.
-Then $L\otimes(\pi^*M)^{-1}$ has trivial restriction and is $\OO(qE)$ for some $q$, again by step <1>2.
-This proves surjectivity.
+Then $L\otimes(\pi^*M)^{-1}$ has trivial restriction and is $\OO(qE)$ for some $q$, again by step <1>2. This proves surjectivity.
 
 If $\pi^*M\otimes\OO(qE)$ is trivial, restriction to $\widetilde U$ and injectivity of $\Pic(X)\to\Pic(U)$ give $M\cong\OO_X$.
-Restrict the remaining trivial sheaf $\OO(qE)$ to a fibre $Z=\PP_k^{r-1}$ from step <1>1.
-This gives $\OO_Z(-q)\cong\OO_Z$.
+Restrict the remaining trivial sheaf $\OO(qE)$ to a fibre $Z=\PP_k^{r-1}$ from step <1>1. This gives $\OO_Z(-q)\cong\OO_Z$.
 Since $r-1\ge1$, $\Pic(Z)=\ZZ$ with generator $\OO_Z(1)$, so $q=0$ [@Har10a, Proposition II.6.4].
 Thus the kernel is zero.
 :::
@@ -120,8 +115,7 @@ Apply [[D-MODCONORM|adjunction]] to the nonsingular divisor $E\subseteq\widetild
 $$
 \omega_E\cong(\omega_{\widetilde X}\otimes\OO_{\widetilde X}(E))|_E.
 $$
-Substitute the first formula and use $\OO(E)|_E=\OO_E(-1)$ from step <1>1.
-This gives the second formula, including the exponent $-q-1$.
+Substitute the first formula and use $\OO(E)|_E=\OO_E(-1)$ from step <1>1. This gives the second formula, including the exponent $-q-1$.
 :::
 
 <1>5. Restricting to a fibre determines $q=r-1$ and proves (b).

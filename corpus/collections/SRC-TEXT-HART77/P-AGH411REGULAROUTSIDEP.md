@@ -26,8 +26,8 @@ RR says $$\chi(\mcl(nD)) = \deg D + 1 - g \implies h^0(\mcl(nD)) - h^1(\mcl(nD))
 
 Why this claim is true: by Serre duality,
 $$
-H^1(X; \mcl(nD)) \cong H^0(X; K_X \tensor \mcl(nD)\dual )\dual =
-H^0(X; K_X \tensor \mcl(-nD))\dual = H^0(X; \mcl(K_X - nD))\dual
+H^1(X; \mcl(nD)) \cong \dualof{H^0(X; K_X \tensor \dualof{\mcl(nD)} )} =
+\dualof{H^0(X; K_X \tensor \mcl(-nD))} = \dualof{H^0(X; \mcl(K_X - nD))}
 $$
 so $h^1(\mcl(nD)) = h^0(\mcl(K_X - nD)) =0$ as soon as $\deg(K_X - nD) < 0$, which happens for large $n$ since $\deg(K_X - nD) = 2g-2-n$.
 :::

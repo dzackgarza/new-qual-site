@@ -19,16 +19,15 @@ audit:
 ---
 
 ::: {.exercise}
-Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto ghg\inv)$ is $Z(G)$.
+Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto gh\inverseof{g})$ is $Z(G)$.
 :::
 
 ::: {.solution}
-<1>1. Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = ghg\inv$.
+<1>1. Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
 
 <1>2. $g \in \ker \varphi$ if and only if $g \in Z(G)$.
-::: {.proof}
-<2>1. $\ker \varphi = \ts{ g \in G \st c_g = \id_G }$, since the identity of $\aut(G)$ is the identity automorphism.
-<2>2. $c_g = \id_G$ says $ghg\inv = h$ for every $h \in G$.
+::: {.proof} <2>1. $\ker \varphi = \ts{ g \in G \st c_g = \id_G }$, since the identity of $\aut(G)$ is the identity automorphism.
+<2>2. $c_g = \id_G$ says $gh\inverseof{g} = h$ for every $h \in G$.
 <2>3. Multiplying on the right by $g$, this is equivalent to $gh = hg$ for every $h \in G$.
 <2>4. That is the defining condition for $g \in Z(G)$.
 

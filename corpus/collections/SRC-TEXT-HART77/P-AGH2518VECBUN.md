@@ -29,22 +29,22 @@ A \dfn{geometric vector bundle} of rank $n$ over $Y$ is a scheme $X$ and a morph
 An \dfn{isomorphism} $g:(X,f,\ts{U_i},\ts{\psi_i})\to(X',f',\ts{U'_i},\ts{\psi'_i})$ of vector bundles of rank $n$ is a scheme isomorphism $g:X\to X'$ with $f=f'\circ g$, such that the combined trivializations $\psi_i$ and $\psi'_i\circ g$ define a vector bundle structure on $X$.
 
 (a) Let $\mce$ be a locally free sheaf of rank $n$ on $Y$.
-Let $S(\mce)$ be its symmetric algebra and let $X=\Spec_Y S(\mce)$ with projection $f:X\to Y$.
-For each open affine $U\subseteq Y$ on which $\mce|_U$ is free, choose a basis and use $S(\mce(U))\cong\OO_Y(U)[x_1,\ldots,x_n]$ to define $\psi:f^{-1}(U)\to\AA^n_U$.
+    Let $S(\mce)$ be its symmetric algebra and let $X=\Spec_Y S(\mce)$ with projection $f:X\to Y$.
+    For each open affine $U\subseteq Y$ on which $\mce|_U$ is free, choose a basis and use $S(\mce(U))\cong\OO_Y(U)[x_1,\ldots,x_n]$ to define $\psi:f^{-1}(U)\to\AA^n_U$.
 
 Show that these trivializations define a vector bundle of rank $n$ whose isomorphism class does not depend on the bases.
 Denote it by $\mathbf V(\mce)$.
 
 (b) For a morphism $f:X\to Y$, a \dfn{section} over an open set $U\subseteq Y$ is a morphism $s:U\to f^{-1}(U)$ with $(f|_{f^{-1}(U)})\circ s=\id_U$.
-Sections restrict and glue to form a sheaf of sets $\mcs(X/Y)$ on $Y$.
-Show that for a rank-$n$ vector bundle this sheaf has a natural $\OO_Y$-module structure making it locally free of rank $n$.
+    Sections restrict and glue to form a sheaf of sets $\mcs(X/Y)$ on $Y$.
+    Show that for a rank-$n$ vector bundle this sheaf has a natural $\OO_Y$-module structure making it locally free of rank $n$.
 
 (c) Let $\mce$ be locally free of rank $n$, put $X=\mathbf V(\mce)$, and let $\mcs=\mcs(X/Y)$.
-For an open set $V\subseteq Y$, send a section $s\in\Gamma(V,\mce\dual)=\Hom_{\OO_V}(\mce|_V,\OO_V)$ to its induced $\OO_V$-algebra homomorphism $S(\mce|_V)\to\OO_V$, and then to the resulting section
+For an open set $V\subseteq Y$, send a section $s\in\Gamma(V,\dualof{\mce})=\Hom_{\OO_V}(\mce|_V,\OO_V)$ to its induced $\OO_V$-algebra homomorphism $S(\mce|_V)\to\OO_V$, and then to the resulting section
 $$
 V=\Spec_V\OO_V\longrightarrow\Spec_V S(\mce|_V)=f^{-1}(V).
 $$
-Show that this construction gives an isomorphism $\mce\dual\cong\mcs$.
+Show that this construction gives an isomorphism $\dualof{\mce}\cong\mcs$.
 
 (d) Prove the resulting bijection between isomorphism classes of locally free sheaves of rank $n$ on $Y$ and isomorphism classes of vector bundles of rank $n$ over $Y$.
 :::
@@ -94,27 +94,25 @@ A compatible change of bundle trivializations preserves these operations by the 
 
 <1>3. For $X=\mathbf V(\mce)$, the isomorphism in part (c) is
 $$
-\boxed{\mce\dual\xrightarrow{\cong}\mathcal S_X}.
+\boxed{\dualof{\mce}\xrightarrow{\cong}\mathcal S_X}.
 $$
 
 ::: {.proof}
-For an open set $U\subseteq Y$, a section of $\mce\dual$ is an $\OO_U$-linear sheaf morphism $\lambda:\mce|_U\to\OO_U$.
+For an open set $U\subseteq Y$, a section of $\dualof{\mce}$ is an $\OO_U$-linear sheaf morphism $\lambda:\mce|_U\to\OO_U$.
 By the symmetric-algebra universal property, it extends uniquely to an $\OO_U$-algebra morphism
 $$
 S(\mce|_U)\longrightarrow\OO_U.
 $$
-Taking spectra on affine opens of $U$ and gluing gives a section $s_\lambda:U\to X$ over $Y$, by the relative-spectrum construction of [[P-AGH2517AFFMOR]].
-Conversely, a section of $X$ over $U$ induces this algebra homomorphism on each affine open of $U$.
+Taking spectra on affine opens of $U$ and gluing gives a section $s_\lambda:U\to X$ over $Y$, by the relative-spectrum construction of [[P-AGH2517AFFMOR]]. Conversely, a section of $X$ over $U$ induces this algebra homomorphism on each affine open of $U$.
 Its restriction to degree one gives $\lambda$.
 The two constructions are inverse on affine opens and commute with restriction, so they are inverse for every $U$ and define an isomorphism of sheaves of sets.
 
 In a frame $e_1,\ldots,e_n$, the tuple representing $s_\lambda$ is $(\lambda(e_1),\ldots,\lambda(e_n))$.
-This identifies addition and scalar multiplication of functionals with the operations of step <1>2.
-Thus the isomorphism is $\OO_Y$-linear.
+This identifies addition and scalar multiplication of functionals with the operations of step <1>2. Thus the isomorphism is $\OO_Y$-linear.
 The construction is independent of frames since it uses the specified algebra homomorphism, and it is natural in $\mce$.
 :::
 
-<1>4. Every rank-$n$ bundle $f:X\to Y$ is canonically isomorphic, as a bundle, to $\mathbf V(\mathcal S_X\dual)$.
+<1>4. Every rank-$n$ bundle $f:X\to Y$ is canonically isomorphic, as a bundle, to $\mathbf V(\dualof{\mathcal S_X})$.
 
 ::: {.proof}
 The morphism $f$ is affine: refine the trivializing cover by affine opens, whose inverse images are affine $n$-spaces.
@@ -128,7 +126,7 @@ $$
 \mathcal E\otimes\mathcal S_X\longrightarrow\OO_Y.
 $$
 On a trivializing open set, its coordinate expression sends $\bigl(\sum_a b_ax_a,v\bigr)$ to $\sum_a b_av_a$.
-It is the perfect pairing between coordinate linear forms and tuples, and identifies $\mathcal E\cong\mathcal S_X\dual$.
+It is the perfect pairing between coordinate linear forms and tuples, and identifies $\mathcal E\cong\dualof{\mathcal S_X}$.
 It is invariant under the linear transition maps because the value of a function pulled back by a section does not depend on coordinates.
 
 The inclusion $\mathcal E\to\mathcal B$ extends to an algebra homomorphism $S(\mathcal E)\to\mathcal B$.
@@ -136,7 +134,7 @@ On each framed open set it is the polynomial algebra isomorphism sending the deg
 Hence it is an isomorphism globally.
 Part (d) of [[P-AGH2517AFFMOR]] now gives
 $$
-X\cong\Spec_Y\mathcal B\cong\Spec_Y S(\mathcal E)\cong\mathbf V(\mathcal S_X\dual).
+X\cong\Spec_Y\mathcal B\cong\Spec_Y S(\mathcal E)\cong\mathbf V(\dualof{\mathcal S_X}).
 $$
 On every trivializing open this map identifies the same linear coordinate functions, so it is an isomorphism of vector bundles, not only of schemes over $Y$.
 :::
@@ -144,7 +142,7 @@ On every trivializing open this map identifies the same linear coordinate functi
 <1>5. The inverse bijections in part (d) are
 $$
 \boxed{[\mce]\longmapsto[\mathbf V(\mce)],\qquad
-[X\to Y]\longmapsto[\mathcal S_X\dual]}.
+[X\to Y]\longmapsto[\dualof{\mathcal S_X}]}.
 $$
 
 ::: {.proof}
@@ -153,7 +151,7 @@ A bundle isomorphism carries sections to sections; step <1>2 makes the resulting
 Thus both maps are defined on the indicated isomorphism classes.
 For a locally free $\mce$, step <1>3 and the canonical bidual isomorphism from [[P-AGH251DUALSHEAF]] give
 $$
-\mathcal S_{\mathbf V(\mce)}\dual\cong(\mce\dual)\dual\cong\mce.
+\dualof{\mathcal S_{\mathbf V(\mce)}}\dualof{\cong(\dualof{\mce})}\cong\mce.
 $$
 For a vector bundle, step <1>4 gives the inverse reconstruction.
 Consequently the two maps are mutually inverse.

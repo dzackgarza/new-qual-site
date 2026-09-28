@@ -38,7 +38,7 @@ $\mathcal{M}_0$ is a point, $\mathcal{M}_1 \cong \AA^1$ by the $j$-invariant, $\
 :::
 
 ::: {.remark}
-The dimension $3g-3$ is reflected infinitesimally: first-order deformations of $C$ are $H^1(C,T_C)$, and by Serre duality this is $H^0(C,\omega_C^{\otimes 2})\dual$.
+The dimension $3g-3$ is reflected infinitesimally: first-order deformations of $C$ are $H^1(C,T_C)$, and by Serre duality this is $\dualof{H^0(C,\omega_C^{\otimes 2})}$.
 Since $\deg 2K = 4g-4 > 2g-2$ for $g \geq 2$, the divisor $2K$ is nonspecial and Riemann--Roch gives $h^0(\omega^{\otimes 2}) = (4g-4) + 1 - g = 3g-3$ outright.
 The hypothesis $g \geq 2$ is doing work in that line, which is why $\mathcal{M}_1$ has to be quoted separately: for $g = 1$ the same count returns $0$, while the actual dimension is $1$, because $T_C \cong \OO_C$ makes $h^1(T_C) = 1$ instead.
 

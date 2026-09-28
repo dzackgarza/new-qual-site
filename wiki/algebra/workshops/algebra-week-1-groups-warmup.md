@@ -11,7 +11,7 @@ title: "Algebra qual prep week 1: groups warmup"
 
   - The one-step subgroup test
 
-    - A nonempty subset $H\subseteq G$ with $xy\inv \in H$ for all $x,y\in H$ is a subgroup
+    - A nonempty subset $H\subseteq G$ with $x\inverseof{y} \in H$ for all $x,y\in H$ is a subgroup
 
   - Cosets
 

@@ -44,7 +44,7 @@ $$
 At an essential singularity the residue is the coefficient $a_{-1}$ of the Laurent series.
 
 ::: {.example title="Residue at an essential singularity"}
-Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $z\inv$ is $1$, so $\Res_{z=0} e^{1/z} = 1$.
+Since $e^{1/z} = \sum_{k\geq 0} z^{-k}/k!$ for $z\neq 0$, the coefficient of $\inverseof{z}$ is $1$, so $\Res_{z=0} e^{1/z} = 1$.
 
 :::
 
@@ -65,21 +65,8 @@ because for $\rho$ larger than every $\abs{z_j}$ the residue theorem gives $\fra
 
 Doing it without a formula:
 
-[[E-S6663]]
-[[E-M5MWL]]
-[[E-RGDJ7]]
-[[E-M7K4C]]
-[[E-AOQLK]]
-[[E-TOZQJ]]
-[[E-FCYUM]]
+[[E-S6663]] [[E-M5MWL]] [[E-RGDJ7]] [[E-M7K4C]] [[E-AOQLK]] [[E-TOZQJ]] [[E-FCYUM]]
 
 Applying the formulas:
 
-[[E-YNZYA]]
-[[E-ITVTT]]
-[[E-U2A4C]]
-[[E-V2VS5]]
-[[E-SNRS5]]
-[[E-ENWYG]]
-[[E-PMURO]]
-[[E-QF7KI]]
+[[E-YNZYA]] [[E-ITVTT]] [[E-U2A4C]] [[E-V2VS5]] [[E-SNRS5]] [[E-ENWYG]] [[E-PMURO]] [[E-QF7KI]]

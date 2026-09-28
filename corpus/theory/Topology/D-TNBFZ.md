@@ -19,7 +19,7 @@ A map $q\colon X\to Y$ is a \dfn{quotient map} if
 
 1. $q$ is surjective, and
 
-2. for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $q\inv(U)$ is open in $X$
+2. for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $\inverseof{q}(U)$ is open in $X$
 
 [@Mun00].
 :::

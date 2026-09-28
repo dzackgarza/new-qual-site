@@ -137,8 +137,8 @@ For a commutative ring $R$, $A(z) \coloneqq \sum_{k\geq 0} a_k z^k \in R[[z]]$ i
 In that case the coefficients of $B(z) \coloneqq \sum_{k\geq 0 } b_k z^k \coloneqq 1/A(z)$ are determined recursively by
 $$
 \begin{aligned}
-b_0 &= a_0\inv, \\
-b_n &= -a_0\inv \sum_{1\leq i \leq n} a_i b_{n-i} = -{1\over a_0}\qty{a_nb_0 + a_{n-1}b_1 + \cdots + a_1 b_{n-1} }, \qquad n\geq 1.
+b_0 &= \inverseof{a_0}, \\
+b_n &= -\inverseof{a_0} \sum_{1\leq i \leq n} a_i b_{n-i} = -{1\over a_0}\qty{a_nb_0 + a_{n-1}b_1 + \cdots + a_1 b_{n-1} }, \qquad n\geq 1.
 \end{aligned}
 $$
 
@@ -156,10 +156,7 @@ Conversely, if $a_0$ is a unit, the recursion defines $B$ with $AB = 1$; if $AB=
 
 [[FF-JKLWM]]
 
-[[P-VFAXW]]
-[[P-IM6MH]]
-[[P-OCOSY]]
-[[P-VT4TV]]
+[[P-VFAXW]] [[P-IM6MH]] [[P-OCOSY]] [[P-VT4TV]]
 
 ::: {.fact title="Inverting with the geometric series"}
 For $A(z) \coloneqq 1 + a_1 z + a_2z^2 + \cdots$,
@@ -178,8 +175,7 @@ If $A(z) = z^m \tilde A(z)$ with $\tilde A(0) \neq 0$, then $1/A(z) = z^{-m}/\ti
 
 [[FF-UQZNR]]
 
-[[P-VO5YR]]
-[[P-NBSTW]]
+[[P-VO5YR]] [[P-NBSTW]]
 
 ## Long division of power series
 
@@ -207,7 +203,7 @@ so $\frac{1+z^3}{1+z} = 1 - z + z^2$.
 :::
 
 ::: {.example title="The Laurent series of $1/\sin(z)$"}
-Write $\frac{1}{\sin(z)} = z\inv\qty{\frac{z}{\sin(z)}}$ and divide $z$ by $\sin(z) = z-\frac{1}{3!}z^3 + \frac{1}{5!}z^5 - \cdots$ in increasing powers:
+Write $\frac{1}{\sin(z)} = \inverseof{z}\qty{\frac{z}{\sin(z)}}$ and divide $z$ by $\sin(z) = z-\frac{1}{3!}z^3 + \frac{1}{5!}z^5 - \cdots$ in increasing powers:
 $$
   \begin{array}{rl}
     \underline{\hspace{8em} 1 + {1\over 3!}z^2 + \left({1\over 3!3!} - {1\over 5!} \right)z^4 + \cdots } &  \\[-5pt]

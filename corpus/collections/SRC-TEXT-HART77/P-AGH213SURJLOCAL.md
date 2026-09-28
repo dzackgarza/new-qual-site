@@ -16,7 +16,7 @@ review: draft
 
 ::: {.problem}
 a. Let $\varphi: \mcf \to \mcg$ be a morphism of sheaves on $X$.
-Show that $\varphi$ is surjective if and only if the following condition holds: for every open set $U \subseteq X$ and every $s \in \mcg(U)$, there is a covering $\ts{U_i}$ of $U$ and elements $t_i \in \mcf(U_i)$ such that $\varphi(t_i) = \ro{s}{U_i}$ for all $i$.
+   Show that $\varphi$ is surjective if and only if the following condition holds: for every open set $U \subseteq X$ and every $s \in \mcg(U)$, there is a covering $\ts{U_i}$ of $U$ and elements $t_i \in \mcf(U_i)$ such that $\varphi(t_i) = \ro{s}{U_i}$ for all $i$.
 
 b. Give an example of a surjective morphism of sheaves $\varphi: \mcf \to \mcg$ and an open set $U$ such that $\varphi(U): \mcf(U) \to \mcg(U)$ is not surjective.
 :::
@@ -35,9 +35,9 @@ So $\phi_P$ is surjective for all $P$, and hence $\phi$ is surjective.
 
 **Part b.** Take the exponential sequence of sheaves on $\CC$:
 \[
-0 \to \ul{\ZZ} \injects (\OO_\CC, +) \surjectsvia{\exp} (\OO_\CC\units, \cdot) \to 0.
+0 \to \ul{\ZZ} \injects (\OO_\CC, +) \surjectsvia{\exp} (\unitsof{\OO_\CC}, \cdot) \to 0.
 \]
-Let $U \da \cstar$ and let $f(z) = z$, a nowhere-vanishing holomorphic function, so $f \in \OO_\CC\units(U)$.
+Let $U \da \cstar$ and let $f(z) = z$, a nowhere-vanishing holomorphic function, so $f \in \unitsof{\OO_\CC}(U)$.
 There is no $g \in \OO_\CC(U)$ with $\exp(g) = z$ on all of $U$: such a $g$ would be a single-valued holomorphic branch of $\log z$ on the punctured plane, and $\log$ is multivalued there.
 So $\exp(U)$ is not surjective on sections.
 

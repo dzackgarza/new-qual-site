@@ -89,7 +89,8 @@ $$
 \cong
 \OO(n+1),
 $$
-and $\det(\OO)\cong\OO$. Hence
+and $\det(\OO)\cong\OO$.
+Hence
 $$
 \det T_{\PP^n}\cong\OO(n+1).
 $$
@@ -107,13 +108,13 @@ $$
 =
 \det\Omega^1_{\PP^n}
 =
-(\det T_{\PP^n})^\dual.
+\dualof{(\det T_{\PP^n})}.
 $$
 Step <1>2 therefore gives
 $$
 \omega_{\PP^n}
 \cong
-\OO(n+1)^\dual
+\dualof{\OO(n+1)}
 \cong
 \OO(-n-1).
 $$
@@ -135,8 +136,8 @@ $$
 \cong
 \OO_{\PP^n}(-n-1).
 $$
-By step <1>3 this is the canonical line bundle. Therefore the canonical
-divisor class is
+By step <1>3 this is the canonical line bundle.
+Therefore the canonical divisor class is
 $$
 K_{\PP^n}\sim -(n+1)H.
 $$
@@ -145,7 +146,6 @@ $$
 <1>5. Q.E.D.
 
 ::: {.proof}
-Step <1>4 is the asserted linear equivalence, and step <1>3 is its
-equivalent canonical-bundle form.
+Step <1>4 is the asserted linear equivalence, and step <1>3 is its equivalent canonical-bundle form.
 :::
 :::

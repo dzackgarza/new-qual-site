@@ -29,7 +29,7 @@ Define
 $$
 g(z) \coloneqq {1\over f(z) - w}
 ,$$
-which is holomorphic on $\Omega$ and bounded there by $\varepsilon\inv$, and not identically zero.
+which is holomorphic on $\Omega$ and bounded there by $\inverseof{\varepsilon}$, and not identically zero.
 By Riemann's removable singularity theorem $g$ extends holomorphically across $z_0$.
 
 Now $f(z) = {1\over g(z)} + w$.
@@ -62,8 +62,4 @@ Composing with the Cayley map gives a bounded entire function, which is constant
 
 ## Exercises
 
-[[E-HEJJK]]
-[[E-3ZHRE]]
-[[E-27X7K]]
-[[E-XZWER]]
-[[E-3LIG3]]
+[[E-HEJJK]] [[E-3ZHRE]] [[E-27X7K]] [[E-XZWER]] [[E-3LIG3]]

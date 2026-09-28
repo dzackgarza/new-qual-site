@@ -16,19 +16,18 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and each is order 1.
-Calculate the residue of $1/\sin(\pi z)$ at $z=n\in \ZZ$.
+Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and each is order 1. Calculate the residue of $1/\sin(\pi z)$ at $z=n\in \ZZ$.
 
 :::
 
 ::: {.solution}
 Write
 \[
-f(z) = \sin(\pi z) = (2i)\inv (e^{i\pi z} - e^{-i\pi z}) = 0 \iff e^{i 2\pi z} = 1 = e^{i 2k\pi} \iff 2\pi z = 2k\pi \iff z=k\in \ZZ
+f(z) = \sin(\pi z) = \inverseof{(2i)} (e^{i\pi z} - e^{-i\pi z}) = 0 \iff e^{i 2\pi z} = 1 = e^{i 2k\pi} \iff 2\pi z = 2k\pi \iff z=k\in \ZZ
 .\]
 To see that these zeros are order one, write
 \[
-\sin(\pi z) 
+\sin(\pi z)
 &= \sin(\pi(z-k) + k\pi) \\
 &= \pm \sin(\pi(z-k)) \\
 &= \pm\qty{ \pi(z-k) - {\pi^3\over 3!}(z-k)^3 + \cdots } \\

@@ -15,11 +15,11 @@ review: draft
 
 ::: {.definition}
 Let $X$ and $Y$ be topological spaces.
-A map $q\colon X\to Y$ is a \dfn{quotient map} if $q$ is surjective and, for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $q\inv(U)$ is open in $X$.
+A map $q\colon X\to Y$ is a \dfn{quotient map} if $q$ is surjective and, for every $U\subseteq Y$, $U$ is open in $Y$ if and only if $\inverseof{q}(U)$ is open in $X$.
 :::
 
 ::: {.remark}
-The implication from $U$ open to $q\inv(U)$ open is [[D-AEAAD|continuity]] of $q$; a quotient map is a continuous surjection that also satisfies the converse implication.
+The implication from $U$ open to $\inverseof{q}(U)$ open is [[D-AEAAD|continuity]] of $q$; a quotient map is a continuous surjection that also satisfies the converse implication.
 :::
 
 ::: {.proposition}

@@ -24,8 +24,7 @@ f(z) \da {1 \over e^{1-z}}
 
 ::: {.solution}
 \[
-f(z) = e^{-(1-z)} = e^{z-1} = e\inv e^z = e\inv\sum_{k\geq 0} {z^k\over k!}
+f(z) = e^{-(1-z)} = e^{z-1} = \inverseof{e} e^z = \inverseof{e}\sum_{k\geq 0} {z^k\over k!}
 .\]
 Since $e^z$ is entire, this converges on $\CC$.
 :::
-

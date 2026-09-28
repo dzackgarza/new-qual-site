@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGH73DUALCURVE
 kind: problem
-title: The dual curve $Y\dual \subseteq (\PP^2)\dual$ of a plane curve
+title: The dual curve $\dualof{Y} \subseteq \dualof{(\PP^2)}$ of a plane curve
 classification:
   areas:
   - algebraic-geometry
@@ -24,7 +24,7 @@ audit:
 
 ::: {.problem}
 Let $Y \subseteq \PP^2$ be a curve of degree greater than one.
-Regard the set of lines in $\PP^2$ as another projective space $(\PP^2)\dual$, taking $(a_0, a_1, a_2)$ as homogeneous coordinates of the line
+Regard the set of lines in $\PP^2$ as another projective space $\dualof{(\PP^2)}$, taking $(a_0, a_1, a_2)$ as homogeneous coordinates of the line
 $$
 L: a_0 x_0 + a_1 x_1 + a_2 x_2 = 0.
 $$
@@ -32,8 +32,8 @@ $$
 For each nonsingular point $P \in Y$, show that there is a unique line $T_P(Y)$ whose intersection multiplicity with $Y$ at $P$ is $> 1$.
 This is the *tangent line* to $Y$ at $P$.
 
-Show that the map $P \mapsto T_P(Y)$ defines a morphism from $\Reg Y$, the set of nonsingular points of $Y$, into $(\PP^2)\dual$.
-The closure of the image of this morphism is called the *dual curve* $Y\dual \subseteq (\PP^2)\dual$ of $Y$.
+Show that the map $P \mapsto T_P(Y)$ defines a morphism from $\Reg Y$, the set of nonsingular points of $Y$, into $\dualof{(\PP^2)}$.
+The closure of the image of this morphism is called the *dual curve* $\dualof{Y} \subseteq \dualof{(\PP^2)}$ of $Y$.
 :::
 
 ::: {.solution}
@@ -96,7 +96,7 @@ Step <1>2 therefore shows that it is the unique line whose intersection multipli
 
 <1>4. The assignment $P\mapsto T_P(Y)$ is a morphism
 $$
-\gamma:\Reg Y\longrightarrow(\PP^2)\dual.
+\gamma:\Reg Y\dualof{\longrightarrow(\PP^2)}.
 $$
 
 ::: {.proof}
@@ -110,23 +110,23 @@ Therefore these three homogeneous forms define a morphism from $\Reg Y$ to the d
 Its value at each point is exactly the tangent line from step <1>3.
 :::
 
-<1>5. The closure of $\gamma(\Reg Y)$ is the dual algebraic set $Y\dual$.
+<1>5. The closure of $\gamma(\Reg Y)$ is the dual algebraic set $\dualof{Y}$.
 
 ::: {.proof}
-The image of the irreducible open subset $\Reg Y$ is irreducible, and its closure in the projective plane $(\PP^2)\dual$ is therefore an irreducible closed subset.
-By definition this closure is the dual curve $Y\dual$.
+The image of the irreducible open subset $\Reg Y$ is irreducible, and its closure in the projective plane $\dualof{(\PP^2)}$ is therefore an irreducible closed subset.
+By definition this closure is the dual curve $\dualof{Y}$.
 :::
 
 <1>6. Q.E.D.
 
 ::: {.proof}
-Steps <1>1--<1>3 prove existence and uniqueness of the tangent line by intersection multiplicity, and step <1>4 proves that the tangent-line assignment is a morphism. Step <1>5 identifies its closure with the dual curve.
+Steps <1>1--<1>3 prove existence and uniqueness of the tangent line by intersection multiplicity, and step <1>4 proves that the tangent-line assignment is a morphism.
+Step <1>5 identifies its closure with the dual curve.
 :::
 :::
 
 ::: {.remark title="The line case"}
 Exercise I.7.3 is stated for an arbitrary plane curve, but its reference to the intersection multiplicity of Exercise I.5.4 requires the two curves to be distinct.
-If $Y$ is a line, its tangent line at every point is $Y$ itself, so $(Y.Y)_P$ is not defined by I.5.4.
-The gradient formula in step <1>4 still defines the constant tangent map, whose image is the single point of $(\PP^2)\dual$ representing $Y$.
+If $Y$ is a line, its tangent line at every point is $Y$ itself, so $(Y.Y)_P$ is not defined by I.5.4. The gradient formula in step <1>4 still defines the constant tangent map, whose image is the single point of $\dualof{(\PP^2)}$ representing $Y$.
 The degree-greater-than-one hypothesis above is therefore exactly what is needed for the exercise's literal intersection-multiplicity formulation.
 :::

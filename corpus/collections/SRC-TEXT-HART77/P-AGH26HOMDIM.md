@@ -42,15 +42,15 @@ These are mutually inverse ring maps: on the one hand
 and on the other hand $\beta(\alpha(f)) = f$ by the same computation read backwards.
 Hence $A(Y_0) \cong \qty{S(Y)_{x_0}}_0$.
 
-**Identifying the localization.** We have $S(Y) \cong A(Y_0)[x_0]$ and $S(Y)_{x_0} \cong S(Y)[x_0\inv]$, so
+**Identifying the localization.** We have $S(Y) \cong A(Y_0)[x_0]$ and $S(Y)_{x_0} \cong S(Y)[\inverseof{x_0}]$, so
 \[
-S(Y)_{x_0} \cong A(Y_0)[x_0, x_0\inv] .
+S(Y)_{x_0} \cong A(Y_0)[x_0, \inverseof{x_0}] .
 \]
 
-**Counting transcendence degree.** Adjoining $x_0\inv$ adds nothing transcendental, since $x_0$ and $x_0\inv$ satisfy the relation $uv - 1 = 0$.
-So the transcendence degree of $A(Y_0)[x_0, x_0\inv]$ over $A(Y_0)$ equals that of $A(Y_0)[x_0]$ over $A(Y_0)$, namely $1$, and therefore
+**Counting transcendence degree.** Adjoining $\inverseof{x_0}$ adds nothing transcendental, since $x_0$ and $\inverseof{x_0}$ satisfy the relation $uv - 1 = 0$.
+So the transcendence degree of $A(Y_0)[x_0, \inverseof{x_0}]$ over $A(Y_0)$ equals that of $A(Y_0)[x_0]$ over $A(Y_0)$, namely $1$, and therefore
 \[
-\trdeg_k A(Y_0)[x_0, x_0\inv] = \trdeg_k A(Y_0) + 1 .
+\trdeg_k A(Y_0)[x_0, \inverseof{x_0}] = \trdeg_k A(Y_0) + 1 .
 \]
 Using the isomorphism above, $\trdeg_k S(Y)_{x_0} = \trdeg_k A(Y_0) + 1$.
 
@@ -58,5 +58,5 @@ Using the isomorphism above, $\trdeg_k S(Y)_{x_0} = \trdeg_k A(Y_0) + 1$.
 \[
 \dim S(Y)_{x_0} = \dim Y_0 + 1 = \dim Y + 1 .
 \]
-It remains to see $\dim S(Y)_{x_0} = \dim S(Y)$, and this holds because $x_0 \in S(Y)$ already, so that $S(Y)_{x_0} \cong S(Y)[x_0\inv]$ adds only the element $x_0\inv$, which is algebraically dependent on $x_0$ via $uv - 1$.
+It remains to see $\dim S(Y)_{x_0} = \dim S(Y)$, and this holds because $x_0 \in S(Y)$ already, so that $S(Y)_{x_0} \cong S(Y)[\inverseof{x_0}]$ adds only the element $\inverseof{x_0}$, which is algebraically dependent on $x_0$ via $uv - 1$.
 :::

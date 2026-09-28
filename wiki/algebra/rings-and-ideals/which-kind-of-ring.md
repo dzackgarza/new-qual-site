@@ -19,7 +19,7 @@ $$
 ::: {.remark title="Proofs of the inclusions"}
 \envlist
 
-- **Field $\implies$ Euclidean domain.** With the norm $d(x)=0$ for $x\neq0$, write $x = qy+r$ with $q = y\inv x$ and $r=0$.
+- **Field $\implies$ Euclidean domain.** With the norm $d(x)=0$ for $x\neq0$, write $x = qy+r$ with $q = \inverseof{y} x$ and $r=0$.
 
 - **Euclidean domain $\implies$ PID.** Let $I\neq 0$ be an ideal and $a\in I$ a nonzero element with $d(a)$ minimal.
   If $b\in I$, write $b = aq+r$ with $r=0$ or $d(r) < d(a)$; then $r = b-aq \in I$, so minimality forces $r=0$, and $I = \gens a$.

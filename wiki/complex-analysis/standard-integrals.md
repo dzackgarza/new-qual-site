@@ -66,7 +66,7 @@ and dividing by $1-e^{2\pi i a} = -2i\,e^{i\pi a}\sin(\pi a)$ gives $\pi/\sin(\p
 
 **Contour.** The unit circle.
 
-**Substitution.** $z = e^{i\theta}$, $\cos\theta = (z+z\inv)/2$, $\dtheta = \dz/iz$, turning the integral into
+**Substitution.** $z = e^{i\theta}$, $\cos\theta = (z+\inverseof{z})/2$, $\dtheta = \dz/iz$, turning the integral into
 $$
 \oint_{\abs z = 1} {2\,\dz \over i\qty{bz^2 + 2az + b}}
 .$$

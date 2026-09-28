@@ -42,8 +42,7 @@ is a free homotopy from $\gamma_0$ to $\gamma_1$, then the track of the basepoin
 \alpha(t)=H(1,t),
 \]
 is a loop at $x_0$.
-::: {.proof}
-Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
+::: {.proof} Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
 \[
 \alpha(0)=\gamma_0(1)=x_0
 \qquad\text{and}\qquad
@@ -57,8 +56,7 @@ Thus $\alpha$ is indeed a loop based at $x_0$.
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}
 \qquad\text{in }\pi_1(X,x_0).
 \]
-::: {.proof}
-Let
+::: {.proof} Let
 \[
 q:I\to S^1=I/(0\sim1)
 \]
@@ -155,19 +153,19 @@ Concatenating the two homotopies gives a free homotopy from $\gamma_0$ to $\gamm
 :::
 :::
 
-- Claim: $\gamma_1$ and $T\ast \gamma_2 \ast T\inv$ are homotopic rel $x_0$, making $\gamma_1, \gamma_2$ conjugate in $\pi_1$.
+- Claim: $\gamma_1$ and $T\ast \gamma_2 \ast \inverseof{T}$ are homotopic rel $x_0$, making $\gamma_1, \gamma_2$ conjugate in $\pi_1$.
 
-  - Idea: for each fixed $s$, follow $T$ for the first third, $\gamma_2$ for the middle third, $T\inv$ for the last third.
+  - Idea: for each fixed $s$, follow $T$ for the first third, $\gamma_2$ for the middle third, $\inverseof{T}$ for the last third.
 
   ![figures/2020-02-04-20:23.png](../../assets/figures/2020-02-04-20%3A23.png)
 
 $\impliedby$:
 
-- Suppose $[\gamma_1] = [h] [\gamma_2] [h]\inv$ in $\pi_1(X; x_0)$.
-  The claim is that $\gamma_1 \homotopic h\gamma_2 h\inv$ are freely homotopic.
+- Suppose $[\gamma_1] = [h] [\gamma_2] \inverseof{[h]}$ in $\pi_1(X; x_0)$.
+  The claim is that $\gamma_1 \homotopic h\gamma_2 \inverseof{h}$ are freely homotopic.
 
-- Since these are equal in $\pi_1$, we get a square interpolating $\gamma_1$ and $h\gamma_2 h\inv$ with constant sides $\id_{x_0}$.
+- Since these are equal in $\pi_1$, we get a square interpolating $\gamma_1$ and $h\gamma_2 \inverseof{h}$ with constant sides $\id_{x_0}$.
 
-- For free homotopies, the sides don't have to be constant, to merge $h$ and $h\inv$ into the sides to get a free homotopy from $f$ to $g$:
+- For free homotopies, the sides don't have to be constant, to merge $h$ and $\inverseof{h}$ into the sides to get a free homotopy from $f$ to $g$:
 
 ![image_2021-06-04-00-44-45.png](../../assets/Topology/figures/image_2021-06-04-00-44-45.png)

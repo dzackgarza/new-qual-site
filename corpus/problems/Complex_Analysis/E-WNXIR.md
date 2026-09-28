@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-If $f$ is holomorphic on $\Omega$ and not identically zero, then $f\inv(0) \intersect \Omega$ is discrete.
+If $f$ is holomorphic on $\Omega$ and not identically zero, then $\inverseof{f}(0) \intersect \Omega$ is discrete.
 
 :::
 

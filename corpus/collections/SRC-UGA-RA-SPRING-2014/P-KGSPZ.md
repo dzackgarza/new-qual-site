@@ -31,7 +31,7 @@ $$
 \lim _{n \rightarrow \infty} \int_{X} f^{n} ~d \mu =
 \begin{cases}
 \infty & \text{or} \\
-\mu(f\inv(1)),
+\mu(\inverseof{f}(1)),
 \end{cases}
 $$
 and characterize the collection of functions of each type.
@@ -39,8 +39,7 @@ and characterize the collection of functions of each type.
 
 ::: {.solution}
 <1>1. If $\mu\{f>1\}>0$, the integrals diverge to infinity.
-::: {.proof}
-Let
+::: {.proof} Let
 \[
 B:=\{x\in X:f(x)>1\}.
 \]
@@ -52,7 +51,8 @@ positive measure of $B$ implies that for some $k$,
 \[
 C:=\{f\ge1+1/k\}
 \]
-has positive measure. Then
+has positive measure.
+Then
 \[
 \int_X f^n\,d\mu
 \ge \int_C f^n\,d\mu

@@ -57,6 +57,6 @@ Take $f: ([2], \tau_1) \to ([2], \tau_2)$ to be the identity map, where $\tau_1$
 Any map into an indiscrete topology is continuous, since the only open sets in the codomain are $\emptyset$ and $[2]$, whose preimages ($\emptyset$ and $[2]$) are open in $\tau_1$.
 The identity map is a bijection.
 
-Let $g$ be the inverse map; then note that $1 \in \tau_1$ but $g\inv(1) = 1$ is not in $\tau_2$, so $g$ is not continuous.
+Let $g$ be the inverse map; then note that $1 \in \tau_1$ but $\inverseof{g}(1) = 1$ is not in $\tau_2$, so $g$ is not continuous.
 :::
 :::

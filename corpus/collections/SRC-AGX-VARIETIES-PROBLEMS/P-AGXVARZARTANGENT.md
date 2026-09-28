@@ -42,11 +42,12 @@ Let $X$ be an affine variety over $\CC$, let $p\in X$, and let
 $$
 \mco_{X,p}
 $$
-be the local ring with maximal ideal $\mfm_p$. Show canonically that
+be the local ring with maximal ideal $\mfm_p$.
+Show canonically that
 $$
 T_pX
 \cong
-(\mfm_p/\mfm_p^2)\dual.
+\dualof{(\mfm_p/\mfm_p^2)}.
 $$
 :::
 
@@ -74,8 +75,8 @@ Let
 $$
 a,b\in\mfm.
 $$
-Their residues at $p$ are zero. The Leibniz rule for a derivation into the
-residue-field module gives
+Their residues at $p$ are zero.
+The Leibniz rule for a derivation into the residue-field module gives
 $$
 D(ab)
 =
@@ -83,8 +84,7 @@ a(p)D(b)+b(p)D(a)
 =
 0.
 $$
-Thus $D$ vanishes on every product of two elements of $\mfm$, hence on the
-ideal $\mfm^2$.
+Thus $D$ vanishes on every product of two elements of $\mfm$, hence on the ideal $\mfm^2$.
 :::
 
 <1>2. Restriction induces a linear map
@@ -102,9 +102,8 @@ $$
 \qquad
 a\in\mfm.
 $$
-Step <1>1 shows that this depends only on the class of $a$ modulo
-$\mfm^2$. Additivity and $\CC$-linearity of $D$ make $\Phi(D)$ a
-$\CC$-linear functional.
+Step <1>1 shows that this depends only on the class of $a$ modulo $\mfm^2$.
+Additivity and $\CC$-linearity of $D$ make $\Phi(D)$ a $\CC$-linear functional.
 :::
 
 <1>3. Every linear functional
@@ -159,12 +158,13 @@ $$
 \boxed{
 \Der_\CC(\mco,\CC)
 \cong
-(\mfm/\mfm^2)\dual.
+\dualof{(\mfm/\mfm^2)}.
 }
 $$
 
 ::: {.proof}
-Let $D$ be a derivation. Since derivations kill constants,
+Let $D$ be a derivation.
+Since derivations kill constants,
 $$
 D(a)=D(a-a(p)).
 $$
@@ -208,8 +208,7 @@ is determined by the values
 $$
 v_j=D(x_j-a_j).
 $$
-For every relation $f_i=0$ in the coordinate ring, the chain rule for
-polynomials gives
+For every relation $f_i=0$ in the coordinate ring, the chain rule for polynomials gives
 $$
 0
 =
@@ -234,14 +233,11 @@ h\longmapsto
 \sum_{j=1}^n
 v_j\frac{\partial h}{\partial x_j}(p)
 $$
-is a derivation on $\CC[x_1,\ldots,x_n]$ that annihilates $I(X)$, because
-the chosen generators and therefore the whole ideal have zero directional
-derivative at $p$. It descends to the coordinate ring and extends uniquely
-to the localization $\mco_{X,p}$. Hence every tangent vector gives a unique
-derivation.
+is a derivation on $\CC[x_1,\ldots,x_n]$ that annihilates $I(X)$, because the chosen generators and therefore the whole ideal have zero directional derivative at $p$.
+It descends to the coordinate ring and extends uniquely to the localization $\mco_{X,p}$.
+Hence every tangent vector gives a unique derivation.
 
-These constructions are inverse and independent of the chosen generators,
-so
+These constructions are inverse and independent of the chosen generators, so
 $$
 T_pX
 \cong
@@ -254,14 +250,12 @@ $$
 \boxed{
 T_pX
 \cong
-(\mfm_p/\mfm_p^2)\dual.
+\dualof{(\mfm_p/\mfm_p^2)}.
 }
 $$
 
 ::: {.proof}
-Step <1>5 identifies $T_pX$ with the derivation space, and step <1>4
-identifies that derivation space with the dual of the cotangent space
-$\mfm_p/\mfm_p^2$.
+Step <1>5 identifies $T_pX$ with the derivation space, and step <1>4 identifies that derivation space with the dual of the cotangent space $\mfm_p/\mfm_p^2$.
 :::
 
 <1>7. Q.E.D.

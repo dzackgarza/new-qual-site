@@ -21,7 +21,7 @@ prompts:
 
 ::: {.theorem title="Bertini's theorem for hyperplane sections"}
 Let $X \subseteq \PP^n$ be a smooth projective variety over an algebraically closed field $k$ of any characteristic.
-The hyperplanes $H \subseteq \PP^n$ with $H \not\supseteq X$ and $H \cap X$ smooth form a dense open subset of $(\PP^n)^\dual$.
+The hyperplanes $H \subseteq \PP^n$ with $H \not\supseteq X$ and $H \cap X$ smooth form a dense open subset of $\dualof{(\PP^n)}$.
 If $X$ is irreducible of dimension at least $2$, then $H \cap X$ is moreover connected, hence irreducible, for $H$ in that open set.
 :::
 

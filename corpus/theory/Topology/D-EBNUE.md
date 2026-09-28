@@ -24,7 +24,7 @@ where $\gamma\cdot\eta$ is the [[D-J6XOC|concatenation]] of $\gamma$ and $\eta$.
 
 ::: {.proposition}
 The multiplication on $\pi_1(X, x_0)$ is well defined and makes $\pi_1(X, x_0)$ a group.
-Its identity is the class of the constant loop at $x_0$, and $[\gamma]\inv = [\bar\gamma]$, where $\bar\gamma(s)\coloneqq\gamma(1-s)$.
+Its identity is the class of the constant loop at $x_0$, and $\inverseof{[\gamma]} = [\bar\gamma]$, where $\bar\gamma(s)\coloneqq\gamma(1-s)$.
 :::
 
 ::: {.proposition}

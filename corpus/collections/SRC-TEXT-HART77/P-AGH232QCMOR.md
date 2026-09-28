@@ -23,15 +23,14 @@ audit:
 ---
 
 ::: {.problem}
-A morphism $f: X \to Y$ of schemes is **quasi-compact** if there is a cover of $Y$ by open affines $V_i$ such that $f\inv(V_i)$ is quasi-compact for each $i$.
+A morphism $f: X \to Y$ of schemes is **quasi-compact** if there is a cover of $Y$ by open affines $V_i$ such that $\inverseof{f}(V_i)$ is quasi-compact for each $i$.
 
-Show that $f$ is quasi-compact if and only if for every open affine subset $V \subseteq Y$ the preimage $f\inv(V)$ is quasi-compact.
+Show that $f$ is quasi-compact if and only if for every open affine subset $V \subseteq Y$ the preimage $\inverseof{f}(V)$ is quasi-compact.
 :::
 
 ::: {.solution}
 <1>1. If $f^{-1}(V)$ is quasi-compact for every affine open $V\subseteq Y$, then $f$ is quasi-compact.
-::: {.proof}
-Choose any affine open cover
+::: {.proof} Choose any affine open cover
 \[
 Y=\bigcup_iV_i.
 \]
@@ -63,8 +62,8 @@ Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in 
 f^{-1}(W_y)
 \]
 is quasi-compact.
-::: {.proof}
-Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.  Since $f^{-1}(V_i)$ is quasi-compact, choose a finite affine open cover
+::: {.proof} Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.
+Since $f^{-1}(V_i)$ is quasi-compact, choose a finite affine open cover
 \[
 f^{-1}(V_i)=U_1\cup\cdots\cup U_n.
 \]
@@ -72,7 +71,8 @@ On each affine $U_j$, the pullback of $g_y$ is a global function, and
 \[
 U_j\cap f^{-1}(W_y)
 \]
-is its distinguished nonvanishing locus.  Hence it is affine, in particular quasi-compact.
+is its distinguished nonvanishing locus.
+Hence it is affine, in particular quasi-compact.
 
 Therefore
 \[

@@ -84,8 +84,11 @@ $V_1(\RR^n)=S^{n-1}$ and $V_n(\RR^n)=O(n)$.
 The following are topological groups, with the subspace topology from the space of matrices:
 
 - the general linear group $\GL_n(\RR)$ and the special linear group $\SL_n(\RR)$;
+
 - the orthogonal group $O(n)$ and the special orthogonal group $\SO(n)$;
+
 - the unitary group $U(n)$ and the special unitary group $SU(n)$ of complex unitary matrices of determinant $1$;
+
 - the real symplectic group $Sp(2n,\RR)$.
 
 :::
@@ -102,7 +105,9 @@ $$
 Such a space exists as a CW complex, and any two CW complexes of type $K(G,n)$ are homotopy equivalent.
 
 - $S^1$ is a $K(\ZZ, 1)$.
+
 - $\CP^\infty$ is a $K(\ZZ, 2)$.
+
 - $\RP^\infty$ is a $K(\ZZ/2, 1)$.
 
 :::
@@ -120,7 +125,9 @@ simply connected when $n\geq 2$.
 For $n\geq 2$ it is unique up to homotopy equivalence.
 
 - $S^n$ is an $M(\ZZ, n)$.
+
 - $\RP^2$ is an $M(\ZZ/2, 1)$.
+
 - For $p\geq 2$, attaching an $(n+1)$-cell to $S^n$ by a map of degree $p$ gives an $M(\ZZ/p,n)$.
 
 :::
@@ -129,7 +136,9 @@ For $n\geq 2$ it is unique up to homotopy equivalence.
 \envlist
 
 - The Möbius band $\MM$ deformation retracts onto its core circle, so $\MM \homotopic S^1$.
+
 - As a set, $\CP^n = \CC^n \Disjoint \CP^{n-1} = \coprod_{i=0}^n \CC^i$, which gives a CW structure with one cell in each even dimension $0,2,\ldots,2n$.
+
 - For $0\leq k<n$ and the standard inclusion $S^k\subseteq S^n$, $S^n / S^k \homotopic S^n \vee S^{k+1}$.
 
 :::
@@ -191,7 +200,7 @@ $F_m$ is the free group of rank $m$, and in the cohomology column $\abs{x}$ is t
 | $\RP^n$, $n\geq 3$ odd | $\ZZ/2$ | $\ZZ$ in degrees $0,n$, $\ZZ/2$ in odd degrees $<n$ | $1+x+\cdots+x^n$ | $\ZZ$ in degrees $0,n$, $\ZZ/2$ in even degrees $2,\ldots,n-1$ |
 | $\CP^n$ | $1$ | $\ZZ$ in degrees $0,2,\ldots,2n$ | $1+x^2+\cdots+x^{2n}$ | $\ZZ[x]/(x^{n+1})$, $\abs x=2$ |
 | Möbius band | $\ZZ$ | $\ZZ$, $\ZZ$ | $1+x$ | $\ZZ[x]/(x^2)$, $\abs x=1$ |
-| Klein bottle | $\gens{a,b \st abab\inv}$ | $\ZZ$, $\ZZ\oplus\ZZ/2$ | $1+2x+x^2$ | $\ZZ$, $\ZZ$, $\ZZ/2$ |
+| Klein bottle | $\gens{a,b \st aba\inverseof{b}}$ | $\ZZ$, $\ZZ\oplus\ZZ/2$ | $1+2x+x^2$ | $\ZZ$, $\ZZ$, $\ZZ/2$ |
 
 With $\ZZ/2$ coefficients, $H^*(\RP^n;\ZZ/2)\cong\FF_2[a]/(a^{n+1})$ with $\abs a=1$.
 
@@ -201,8 +210,11 @@ With $\ZZ/2$ coefficients, $H^*(\RP^n;\ZZ/2)\cong\FF_2[a]/(a^{n+1})$ with $\abs 
 \envlist
 
 - A covering map induces isomorphisms on $\pi_k$ for $k\geq 2$, so $\pi_k(\RP^n)\cong\pi_k(S^n)$ for $k\geq 2$.
+
 - $T^n$, the Klein bottle, and $\bigvee^n S^1$ have contractible universal covers ($\RR^n$, $\RR^2$, and a tree), so their $\pi_k$ vanish for $k\geq 2$.
+
 - The long exact sequence of the fibration $S^1\to S^{2n+1}\to\CP^n$ gives $\pi_2(\CP^n)\cong\ZZ$ and $\pi_k(\CP^n)\cong\pi_k(S^{2n+1})$ for $k\geq 3$.
+
 - $\RR^n$ and $D^n$ are contractible, so all their homotopy groups vanish.
 
 :::
