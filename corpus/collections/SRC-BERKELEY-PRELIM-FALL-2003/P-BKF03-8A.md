@@ -83,7 +83,7 @@ Its order divides $|G|=p^3$, so it must have order $p^3$ and hence equals $G$.
 Therefore the endomorphism is surjective, and since $G$ is finite it is an automorphism.
 :::
 
-<1>4. Count the allowable choices.
+<1>4. One has $|\operatorname{Aut}(G)|=p^3(p-1)^2$.
 ::: {.proof}
 There are
 \[
