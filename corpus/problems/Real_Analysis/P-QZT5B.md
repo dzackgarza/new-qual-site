@@ -22,21 +22,17 @@ Show that if $\sum \mu(E_k) < \infty$ then almost every $x\in X$ is in at most f
 :::
 
 ::: {.solution}
-<1>1. It suffices to show $\mu(\limsup_k E_k) = 0$.
+Let $(X, \mu)$ be a measure space and $E_k$ measurable. The set of points lying in infinitely many $E_k$ is $\limsup_k E_k = \bigcap_{n\ge1}\bigcup_{k\ge n} E_k$, which is measurable.
+
+<1>1. $\mu(\limsup_k E_k) \le \sum_{k\ge n}\mu(E_k)$ for every $n$.
+
 ::: {.proof}
-$\limsup_k E_k = \cap_{n\ge1}\cup_{k\ge n} E_k$ is the set of points lying in infinitely many $E_k$; if it has measure $0$, then almost every $x$ lies in only finitely many $E_k$.
+$\limsup_k E_k \subseteq \bigcup_{k\ge n} E_k$, and countable subadditivity gives $\mu(\bigcup_{k\ge n} E_k) \le \sum_{k\ge n}\mu(E_k)$.
 :::
-<1>2. $\mu(\cup_{k\ge n} E_k) \le \sum_{k\ge n}\mu(E_k)$.
+
+<1>2. Q.E.D.
+
 ::: {.proof}
-countable subadditivity of $\mu$.
+Since $\sum_k \mu(E_k) < \infty$, the tails $\sum_{k\ge n}\mu(E_k)$ tend to $0$, so step <1>1 gives $\mu(\limsup_k E_k) = 0$.
 :::
-<1>3. $\sum_{k\ge n}\mu(E_k) \to 0$ as $n \to \infty$.
-::: {.proof}
-$\sum_k \mu(E_k) < \infty$, so the tails of the series vanish.
-:::
-<1>4. $\mu(\limsup_k E_k) = 0$.
-::: {.proof}
-$\limsup_k E_k \subseteq \cup_{k\ge n} E_k$ for every $n$, so by <1>2 and <1>3, $\mu(\limsup_k E_k) \le \sum_{k\ge n}\mu(E_k) \to 0$.
-:::
-<1>5. Q.E.D.
 :::
