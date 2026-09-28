@@ -45,13 +45,14 @@ Determine, for each of these topologies, which of the others it contains.
     <2>5. **$\mathcal{T}_4 \supset \mathcal{T}_2$:** The basis elements of $\mathcal{T}_2$ are $(a, b)$ and $(a, b) \setminus K$. Since $(a, b) \in \mathcal{T}_4$, we only check $(a, b) \setminus K$:
         - For any $x \in (a, b) \setminus K$:
             - If $x \le 0$, there exists $\varepsilon > 0$ such that $(x - \varepsilon, x] \subseteq (a, b) \setminus K$.
-            - If $x > 0$ and $x \notin K$, choose $n$ such that $\frac{1}{n+1} < x < \frac{1}{n}$; then $(\frac{1}{n+1}, x] \subseteq (a, b) \setminus K$.
+            - If $x > 1$, then $(\max(a,1), x] \subseteq (a, b) \setminus K$.
+            - If $0 < x < 1$ and $x \notin K$, choose $n$ such that $\frac{1}{n+1} < x < \frac{1}{n}$; then $(\max(a,\frac{1}{n+1}), x] \subseteq (a, b) \setminus K$.
         - Thus $(a, b) \setminus K \in \mathcal{T}_4$, proving $\mathcal{T}_2 \subset \mathcal{T}_4$.
 
 <1>2. Verification of strictness and non-inclusions:
     *Proof:*
     <2>1. $\mathcal{T}_5 \not\subset \mathcal{T}_3$ because $(-\infty, a)$ has infinite complement.
-    <2>2. $\mathcal{T}_3 \not\subset \mathcal{T}_5$ because bounded cofinite open sets are not unions of rays $(-\infty, a)$.
+    <2>2. $\mathcal{T}_3 \not\subset \mathcal{T}_5$ because $\mathbb{R} \setminus \{0\} \in \mathcal{T}_3$, while every nonempty union of rays $(-\infty, a)$ is either $\mathbb{R}$ or a ray $(-\infty, c)$.
     <2>3. $\mathcal{T}_1 \not\subset \mathcal{T}_3$ and $\mathcal{T}_1 \not\subset \mathcal{T}_5$ (e.g. $(0, 1) \notin \mathcal{T}_3, \mathcal{T}_5$).
     <2>4. $\mathcal{T}_2 \not\subset \mathcal{T}_1$ because $(-1, 1) \setminus K \in \mathcal{T}_2 \setminus \mathcal{T}_1$.
     <2>5. $\mathcal{T}_4 \not\subset \mathcal{T}_2$ because $(0, 1] \in \mathcal{T}_4 \setminus \mathcal{T}_2$.
