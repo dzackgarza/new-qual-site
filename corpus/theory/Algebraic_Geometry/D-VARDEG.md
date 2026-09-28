@@ -24,9 +24,9 @@ prompts:
 ::: {.definition title="Degree"}
 Let $X \subseteq \PP^N$ be projective of dimension $n$.
 The \dfn{degree} of $X$ is the number of points of
-\[
+$$
 X \intersect H_1 \intersect \cdots \intersect H_n
-\]
+$$
 for $H_1, \ldots, H_n$ general hyperplanes.
 :::
 
@@ -35,10 +35,10 @@ This number is finite, independent of the general hyperplanes chosen, and equals
 :::
 
 ::: {.remark}
-Two definitions and one question: why is the count the same for every general choice.
-The answer is that cutting by a general hyperplane drops dimension by one and leaves the leading coefficient of the Hilbert polynomial alone, so the count is forced to be the Hilbert-theoretic number, which does not see the choice at all.
+If a hyperplane $H$ contains no irreducible component of $X$, the sequence $0\to\OO_X(-1)\to\OO_X\to\OO_{X\cap H}\to0$ is exact, so $P_{X\cap H}(r)=P_X(r)-P_X(r-1)$.
+If $P_X$ has leading term $\frac{d}{n!}r^n$, then $P_{X\cap H}$ has leading term $\frac{d}{(n-1)!}r^{n-1}$, so $X\cap H$ has dimension $n-1$ and the same degree $d$.
+After $n$ such cuts, $X\cap H_1\cap\cdots\cap H_n$ is a finite scheme of length $d$; for general hyperplanes it is reduced, so it consists of $d$ points.
 
-*General* is doing work — the hyperplanes must miss the singular locus and meet $X$ transversally. For example, a line tangent to a conic meets it in one point, not two, and the count is restored only by multiplicity.
-That repair is Bézout, and it is the reason intersection numbers are defined with multiplicities from the start.
-Degree is not intrinsic to the abstract variety: the twisted cubic and a line are both isomorphic to $\PP^1$ but have degrees $3$ and $1$ in their respective embeddings.
+For hyperplanes that are not general, the intersection can have fewer points: a line tangent to a smooth conic meets it in one point, of intersection multiplicity $2$, as Bézout's theorem requires.
+Degree depends on the embedding: the twisted cubic and a line are both isomorphic to $\PP^1$ but have degrees $3$ and $1$ in their respective embeddings.
 :::
