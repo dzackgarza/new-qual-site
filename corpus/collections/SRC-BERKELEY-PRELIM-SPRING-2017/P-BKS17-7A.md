@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Given two vectors $x$ and $y$ in $\mathbb{R}^n$ with $\|x\|_2 = \|y\|_2$, construct an orthogonal matrix $Q$ such that $Qx = y$. Can there be such a matrix if $\|x\|_2 \neq \|y\|_2$?
+Given two vectors $x$ and $y$ in $\RR^n$ with $\norm{x}_2 = \norm{y}_2$, construct an orthogonal matrix $Q$ such that $Qx = y$. Can there be such a matrix if $\norm{x}_2 \neq \norm{y}_2$?
 :::
