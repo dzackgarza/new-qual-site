@@ -7,15 +7,13 @@ topics:
 
 # Is it holomorphic?
 
-Four tests establish holomorphy, and each applies to a different form of input.
-When the function is not holomorphic, the answer is an obstruction rather than a computation.
-
 ## Given $u$ and $v$ explicitly
 
 **Cauchy–Riemann equations.**
 Write $f(x+iy) = u(x,y) + iv(x,y)$ and check $u_x = v_y$ and $u_y = -v_x$.
 
-The equations at a point do not imply complex differentiability there; the equations on an open set together with continuous partial derivatives imply holomorphy on that set.
+If $u$ and $v$ have continuous partial derivatives on an open set and satisfy the equations there, then $f$ is holomorphic on that set.
+At a single point the equations are weaker than complex differentiability: $f(x+iy) \coloneqq \sqrt{\abs{xy}}$ satisfies them at $0$, and along $y=x$ its difference quotient at $0$ is $\abs x/\bigl((1+i)x\bigr)$, which has no limit as $x\to 0$.
 In polar coordinates the equations read $u_r = \frac1r v_\theta$ and $v_r = -\frac1r u_\theta$.
 
 Equivalently, $f$ is holomorphic exactly when $\delbar f = 0$, the Cauchy–Riemann equations written as one equation.
@@ -55,8 +53,6 @@ $$
 which depends on the direction $\theta$ of approach, so the limit as $h\to 0$ does not exist.
 
 :::
-
-The failure of holomorphy takes one of three forms.
 
 - **Direction dependence.** The difference quotient has different limits along different rays, as for $\bar z$.
   A nonconstant real-valued function of $z$, such as $\Re z$, $\Im z$, $\abs z$, or $\arg z$, fails in this way.
