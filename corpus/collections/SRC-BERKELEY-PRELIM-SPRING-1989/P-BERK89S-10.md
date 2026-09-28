@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK89S-10
 kind: problem
-title: Invertibility of a commuting two-by-two block matrix
+title: Invertibility of a $2\times2$ block matrix with commuting blocks
 classification:
   areas: [prelim]
   topics: []
