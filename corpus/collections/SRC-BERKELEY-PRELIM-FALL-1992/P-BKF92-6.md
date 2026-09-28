@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF92-6
 kind: problem
-title: Completeness under the metric comparison stated in the Fall 1992 source
+title: Completeness along a continuous surjection with $d_1(p,q)\le d_2(f(p),f(q))$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
