@@ -33,11 +33,6 @@ A primitive polynomial $p\in \ZZ[x]$ of positive degree is irreducible in $\ZZ[x
 
 ## Standard factorizations and root counts
 
-::: {.remark}
-The identities below factor $x^n\pm y^n$.
-By Descartes' rule of signs, the number of positive real roots of a real polynomial, counted with multiplicity, is at most the number of sign changes in its sequence of nonzero coefficients, and differs from it by an even number.
-:::
-
 [[FF-UC7SQ]] [[FF-ED3CD]]
 
 [[FF-2AKVH]] [[FF-HAMDC]]
