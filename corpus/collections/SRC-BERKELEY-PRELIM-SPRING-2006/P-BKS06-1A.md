@@ -22,7 +22,7 @@ Let G be the subgroup of the free abelian group $\mathbb { Z } ^ { 4 }$ consisti
 (b) The linear map
 
 $$
-\mathbb { Z } ^ { 4 } \mapsto \mathbb { Z } , ( x , y , z , w ) \mapsto 2 x + 3 y + 5 z + 7 w
+\ZZ^4 \to \ZZ, \quad ( x , y , z , w ) \mapsto 2 x + 3 y + 5 z + 7 w
 $$
 
 has kernel G, and is onto because 2 and 3 are relatively prime.
@@ -47,10 +47,10 @@ The first three columns of U are in G, and we claim that they span $G$ as an abe
 Suppose $\mathbf { v } \in G$ . Then
 
 $$
-\begin{array} { r }  0 = \left( 2 \begin{array} { l l l } { 3 } & { 5 } & { 7 \right) \mathbf { v } = \left( 0 } & { 0 } & { 0 } & { 1 \right) U ^ { - 1 } \mathbf { v } , } \end{array} \end{array}
+0 = \begin{pmatrix} 2 & 3 & 5 & 7 \end{pmatrix} \mathbf { v } = \begin{pmatrix} 0 & 0 & 0 & 1 \end{pmatrix} U ^ { - 1 } \mathbf { v } ,
 $$
 
-so $U ^ { - 1 } \mathbf { v } = { \binom { \alpha } { \beta } }$ for some $\alpha , \beta , \gamma \in \mathbb { Z }$ . Thus
+so $U ^ { - 1 } \mathbf { v } = ( \alpha , \beta , \gamma , 0 )^{T}$ for some $\alpha , \beta , \gamma \in \mathbb { Z }$ . Thus
 
 $$
 \mathbf { v } = U \left( \begin{array} { l } { \alpha } \\ { \beta } \\ { \gamma } \\ { 0 } \end{array} \right) ,
