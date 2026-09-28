@@ -56,8 +56,7 @@ for every $z\in Z$, the regular-level-set theorem gives
 $$
 \dim Z=3-2=1.
 $$
-If $Z$ is empty, the same conclusion needed below is vacuous and the
-complement is all of $\RR^3$.
+If $Z$ is empty, its complement is $\RR^3$, which is arcwise connected.
 :::
 
 <1>2. Let $a,b\in\RR^3\setminus Z$ be distinct, and define the
