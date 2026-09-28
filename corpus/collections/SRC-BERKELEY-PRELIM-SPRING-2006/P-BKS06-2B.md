@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-2B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 2B
+title: Number of irreducible polynomials of prime degree over $\FF_2$
 classification:
   areas: [prelim]
   topics: []
