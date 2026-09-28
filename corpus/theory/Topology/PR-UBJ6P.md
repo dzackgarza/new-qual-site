@@ -32,5 +32,6 @@ In particular, $\hat X$ is unique up to isomorphism of covering spaces.
 :::
 
 ::: {.remark}
-The [[D-4VGAW|deck transformation group]] of the universal cover is isomorphic to $\pi_1(X)$; deck groups of general covers are described in [[T-F4PQY]] [@Hat02].
+The [[D-4VGAW|deck transformation group]] of the universal cover is isomorphic to $\pi_1(X)$.
+More generally, for a covering map $q\colon C\to X$ with $C$ path-connected and $H\coloneqq q_*\pi_1(C)\leq\pi_1(X)$, the deck transformation group of $q$ is [[T-F4PQY|isomorphic to $N_{\pi_1(X)}(H)/H$]] [@Hat02].
 :::
