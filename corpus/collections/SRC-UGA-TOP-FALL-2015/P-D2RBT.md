@@ -49,7 +49,7 @@ This gives a deformation retraction
 N_{3,1}\simeq S^1_a\vee S^1_b\vee S^1_c.
 \]
 
-When the boundary of $N_{3,1}$ is traversed once, the core of each twisted band is traversed twice in the same direction: the twist reverses the boundary side, so the two occurrences do not cancel as $a a^{-1}$ but contribute $a^2$, and similarly for the other two bands.
+When the boundary of $N_{3,1}$ is traversed once, the core of each twisted band is traversed twice in the same direction: the twist carries one edge of the band to the other edge with the same orientation, so the two traversals contribute $a^2$, and similarly for the other two bands.
 Ordering the bands as $a,b,c$, the boundary loop therefore represents
 \[
 a^2b^2c^2
