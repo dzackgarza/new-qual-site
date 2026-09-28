@@ -43,10 +43,11 @@ $$
 :::
 
 ::: {.solution}
-For $0<\varepsilon<1$, the uniform metric is
+The uniform metric is
 \[
-\bar\rho(\mathbf x,\mathbf y)=\sup_i\min\{|x_i-y_i|,1\}.
+\bar\rho(\mathbf x,\mathbf y)=\sup_i\min\{|x_i-y_i|,1\},
 \]
+and throughout $0<\varepsilon<1$.
 
 (a) Define
 \[
