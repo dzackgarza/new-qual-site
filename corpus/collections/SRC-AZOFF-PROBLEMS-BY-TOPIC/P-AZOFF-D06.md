@@ -36,7 +36,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose that $f$ is a continuous function on R which vanishes outside some finite interval and for each $z \in \mathbb { C }$ define
+Suppose that $f$ is a continuous function on $\RR$ which vanishes outside some finite interval and for each $z \in \mathbb { C }$ define
 
 $$
 g ( z ) = \int _ { - \infty } ^ { \infty } f ( t ) \exp ( - i z t ) d t .
