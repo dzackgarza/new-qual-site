@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-4H3JY
 kind: problem
-title: Disc to upper half-plane
+title: A conformal map from $\DD$ onto $\HH$
 classification:
   areas:
   - complex-analysis
