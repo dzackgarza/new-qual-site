@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EBRU5
 kind: problem
-title: $1/\sqrt{x^2-1}$
+title: $\int_0^1\frac{dx}{\sqrt{x^2-1}}$ by a dogbone contour
 classification:
   areas:
   - complex-analysis
