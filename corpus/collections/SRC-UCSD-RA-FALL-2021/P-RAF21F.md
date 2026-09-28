@@ -50,9 +50,10 @@ $$
 
 2. Assume every convergent subsequence has finite mass.
    2.1 Suppose by contradiction that some compact $C\subseteq\mathbb R^n$ has $\mu(C)=\infty$.
-   2.2 Fix any $x\in C$. If some $r>0$ satisfied
-   $\mu(C\cap B(x,r))<\infty$ for all smaller $r$, then compactness of $C$
-   would imply $\mu(C)<\infty$ by a finite cover; this contradicts 2.1.
+   2.2 Some $x\in C$ satisfies $\mu(C\cap B(x,r))=\infty$ for every $r>0$.
+   Otherwise every $y\in C$ has a radius $r_y>0$ with $\mu(C\cap B(y,r_y))<\infty$;
+   finitely many of the balls $B(y,r_y)$ cover the compact set $C$,
+   so $\mu(C)<\infty$, contradicting 2.1.
    2.3 Therefore there are radii $r_m\downarrow0$ with
    $$
    \mu(C\cap B(x,r_m))=\infty.
