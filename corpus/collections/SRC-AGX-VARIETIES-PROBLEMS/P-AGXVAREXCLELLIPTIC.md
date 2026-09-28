@@ -253,13 +253,13 @@ P\in X(k),
 $$
 the degree-zero class $[P-O]$ on $\overline X$ restricts to the divisor class
 $[P]$ on $X$. Hence every nonzero class of $\Cl(X)$ is represented by a
-point of $X$, exactly as stated in the source exercise.
+point of $X$.
 :::
 
 <1>8. Q.E.D.
 
 ::: {.proof}
-Step <1>6 computes the group, and step <1>7 gives the source's equivalent
-representative description.
+Step <1>6 computes the group, and step <1>7 represents each class by $0$ or
+a point of $X$.
 :::
 :::
