@@ -222,8 +222,7 @@ Thus
 $$
 v=(v_1,\ldots,v_n)
 $$
-lies in the kernel of the Jacobian matrix, which is the source definition of
-$T_pX$.
+lies in the kernel of the Jacobian matrix, which is $T_pX$ by definition.
 
 Conversely, if
 $$
