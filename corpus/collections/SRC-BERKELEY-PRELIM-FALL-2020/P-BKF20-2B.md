@@ -69,17 +69,12 @@ $$
 so $\sum(a_n+b_n)$ converges.
 :::
 
-<1>2. For part (b), define
+<1>2. For
 $$
 a_n=b_n=\frac{(-1)^n}{\sqrt n}
+\qquad(n\ge1),
 $$
-for $n\ge1$.
-
-::: {.proof}
-This specifies two real sequences to be used as a counterexample.
-:::
-
-<1>3. Both series
+both series
 $$
 \sum_{n=1}^{\infty}a_n
 \qquad\text{and}\qquad
@@ -100,7 +95,8 @@ converges by the alternating-series test. Since $a_n=b_n$, both stated
 series converge.
 :::
 
-<1>4. Their termwise-product series diverges.
+<1>3. For the sequences in step <1>2, the termwise-product series
+$\sum_n a_nb_n$ diverges.
 
 ::: {.proof}
 For every $n$,
@@ -121,10 +117,10 @@ which is the divergent harmonic series. Therefore statement (b) is
 false.
 :::
 
-<1>5. Q.E.D.
+<1>4. Q.E.D.
 
 ::: {.proof}
-Step <1>1 proves (a), while steps <1>2--<1>4 give a counterexample to
+Step <1>1 proves (a), while steps <1>2--<1>3 give a counterexample to
 (b).
 :::
 :::
