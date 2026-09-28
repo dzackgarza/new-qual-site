@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-20
 kind: problem
-title: "This exercise shows how the mean square convergence dominates the uniform conver"
+title: $L^2$ norms control sup norms of holomorphic functions on smaller discs
 classification:
   areas:
   - complex-analysis
@@ -47,7 +47,7 @@ $$
 \[
 \rho=\frac{r-s}{2}>0.
 \]
-For every $z\in D_s(z_0)$, the closed disc $\overline{D_\rho(z)}$ lies in $D_r(z_0)$. Since $|f|^2$ is subharmonic (equivalently, by the mean-value inequality for holomorphic functions),
+For every $z\in D_s(z_0)$, the closed disc $\overline{D_\rho(z)}$ lies in $D_r(z_0)$. By the mean-value property, $f(z)$ is the average of $f$ over $D_\rho(z)$, so the Cauchy--Schwarz inequality gives
 \[
 |f(z)|^2\le \frac1{\pi\rho^2}\int_{D_\rho(z)}|f(w)|^2\,dA(w)
 \le \frac1{\pi\rho^2}\|f\|_{L^2(D_r(z_0))}^2.
