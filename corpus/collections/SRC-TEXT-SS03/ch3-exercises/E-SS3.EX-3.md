@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-3
 kind: problem
-title: 'SS 3.3: $\int_{-\infty}^\infty\frac{\cos x}{x^2+a^2}\,dx$'
+title: $\int_{-\infty}^\infty\frac{\cos x}{x^2+a^2}\,dx=\pi\frac{e^{-a}}{a}$
 classification:
   areas:
   - complex-analysis
