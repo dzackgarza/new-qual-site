@@ -37,5 +37,5 @@ is an $\varepsilon$-net for $X$: given $x$, choose $y_i\in F_i$ with $\bar d_i(x
 \]
 so $D(x,y)<\varepsilon$. Thus $(X,D)$ is totally bounded.
 
-If every $X_i$ is compact, each is complete. A $D$-Cauchy sequence is Cauchy in every coordinate because $\bar d_i(x_i,y_i)\le iD(x,y)$; hence it converges coordinatewise to some $x\in X$. The same finite-head/tail estimate shows convergence in $D$, so $X$ is complete. A complete totally bounded metric space is compact. Hence the countable product of compact metrizable spaces is compact, without invoking Tychonoff.
+If every $X_i$ is compact, each is complete. A $D$-Cauchy sequence is Cauchy in every coordinate because $\bar d_i(x_i,y_i)\le iD(x,y)$; hence it converges coordinatewise to some $x\in X$. Given $\varepsilon>0$, choose $N$ with $1/(N+1)<\varepsilon$; the terms with $i>N$ in $D(x^{(k)},x)$ are at most $1/(N+1)$, and the finitely many terms with $i\le N$ are less than $\varepsilon$ for large $k$. So $x^{(k)}\to x$ in $D$, and $X$ is complete. A complete totally bounded metric space is compact. Hence the countable product of compact metrizable spaces is compact, without invoking Tychonoff.
 :::
