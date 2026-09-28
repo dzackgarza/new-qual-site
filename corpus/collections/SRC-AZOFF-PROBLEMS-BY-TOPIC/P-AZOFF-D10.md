@@ -27,7 +27,7 @@ audit:
 
 ::: {.problem}
 Suppose $f : \mathbb { C } \to \mathbb { C }$ is entire and bounded.
-Use Cauchy’s formula to prove that $f ^ { \prime }$ is identically zero and hence that f is constant.
+Use Cauchy’s formula to prove that $f ^ { \prime }$ is identically zero and hence that $f$ is constant.
 This is Liouville’s Theorem.
 :::
 
