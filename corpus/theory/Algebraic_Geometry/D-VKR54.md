@@ -30,9 +30,9 @@ prompts:
 ::: {.definition title="The spectrum"}
 $\Spec A$ is the set of prime ideals of $A$, with closed sets $V(J) = \ts{\mfp \st \mfp \supseteq J}$.
 Its structure sheaf sends $U$ to the functions
-\[
+$$
 \varphi : U \to \coprod_{\mfp \in U} A_\mfp
-\]
+$$
 with $\varphi(\mfp) \in A_\mfp$, locally of the form $f/g$ with $g \notin \mfp$.
 :::
 
@@ -48,9 +48,9 @@ $$R = k[x]_{x(x-1)} = k[x]\left[\frac{1}{x(x-1)}\right].$$
 :::
 
 ::: {.remark}
-Every clause of the definition is forced by one demand: that the ring be recoverable from the space.
-Points are primes rather than maximal ideals so that a ring map induces a continuous map, since the preimage of a prime is prime while the preimage of a maximal ideal need not be maximal.
-The "locally a quotient" clause is the sheaf condition written into the definition, and it is what makes the sections over $D_f$ come out as $A_f$ rather than something larger.
+For a ring map $\varphi\colon A\to B$ and a prime $\mfq$ of $B$, $\varphi\inv(\mfq)$ is a prime of $A$, so $\varphi$ induces a continuous map $\Spec B\to\Spec A$.
+The preimage of a maximal ideal need not be maximal: for $\ZZ\subseteq\QQ$, the preimage of the maximal ideal $(0)$ of $\QQ$ is the prime $(0)$ of $\ZZ$, which is not maximal.
 
-The stalks being local rings is not decoration: morphisms of schemes are morphisms of locally ringed spaces, meaning the induced maps on stalks are *local* homomorphisms, and without that condition $\Spec$ would not be fully faithful.
+Morphisms of schemes are morphisms of locally ringed spaces: the induced maps on stalks are local homomorphisms.
+With this condition, ring maps $A\to B$ correspond bijectively to morphisms $\Spec B\to\Spec A$ [@Har10a, Proposition II.2.3]; as morphisms of ringed spaces there are more ([[D-AN662]]).
 :::
