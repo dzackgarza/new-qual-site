@@ -59,18 +59,19 @@ closed. Hence smooth varieties are normal.
 <1>2. Every fiber of $f$ consists of a single point.
 
 ::: {.proof}
-By step <1>1, Theorem 8.6 of the source applies to the birational morphism
+By step <1>1, $Y$ is normal, so Zariski's Main Theorem applies to the
+birational morphism
 $$
-f:X\longrightarrow Y.
+f:X\longrightarrow Y:
 $$
-Zariski's Main Theorem there says that every fiber $f^{-1}(y)$ is connected,
-and that a fiber which is not a singleton has positive dimension.
+every fiber $f^{-1}(y)$ is connected, and a fiber which is not a singleton
+has positive dimension.
 
 Suppose some fiber had positive dimension. It is a closed subset of the
 irreducible curve $X$. Every proper closed subset of a curve has dimension
 $0$, so a positive-dimensional fiber must equal $X$. Then $f$ would be
 constant, contradicting birationality. Thus no fiber has positive dimension.
-The source theorem therefore forces every fiber to be a singleton.
+Zariski's Main Theorem therefore forces every fiber to be a singleton.
 :::
 
 <1>3. The morphism $f$ is finite.
