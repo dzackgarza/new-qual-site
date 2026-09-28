@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-ZI7M3
 kind: proposition
 title: Parseval's identity
-slogan: 'An orthonormal basis preserves squared norm as the sum of squared Fourier coefficients.'
+slogan: 'For an orthonormal basis $(e_k)$ of $H$, $\norm{x}^2=\sum_k\abs{\inner{x}{e_k}}^2$ for every $x\in H$.'
 classification:
   areas:
   - real-analysis
