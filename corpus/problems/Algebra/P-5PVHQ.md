@@ -41,7 +41,7 @@ Let $R$ be a commutative ring and $M$ an $R-$module.
 rm=0.
 \]
 ::: {.proof}
-This is the standard definition used here. The zero element is always torsion; a nonzero torsion element is one annihilated by some nonzero scalar.
+The zero element is always torsion; a nonzero torsion element is one annihilated by some nonzero scalar.
 :::
 
 <1>2. There is an infinite cyclic module with a nonzero torsion element.
