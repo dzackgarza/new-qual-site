@@ -26,7 +26,7 @@ I = \int_\RR {\cos(x) \over x^2 + 1 }\dx
 ::: {.solution}
 Write
 \[
-I = \Im \int_\RR f(z) \dz && f(z) \da {e^{iz} \over z^2 + 1}\dz
+I = \Re \int_\RR f(x) \dx && f(z) \da {e^{iz} \over z^2 + 1}
 .\]
 Define contours $C_1 = [-R, R]$, $C_2 = \ts{Re^{it} \st t\in [0, \pi]}$, and $\Gamma = C_1 + C_2$.
 Then noting that $z_0 = i$ is the only pole of $f$ in $\HH$, by the residue theorem
@@ -40,11 +40,11 @@ I = \Re \lim_{R\to\infty} \int_{C_1} f
 By the ML estimate,
 \[
 \abs{\int_{C_2} f(z)\dz } 
-&\leq 2\pi R \sup_{z\in C_2} \abs{f(z)} \\
-&\da 2\pi R \sup_{z\in C_2} \abs{e^{iz}\over z^2 + 1} \\
-&\leq 2\pi R \sup_{z\in C_2} {1 \over \abs{ z^2 + 1} } \\
-&\leq 2\pi R\sup_{z\in C_2} {1 \over \abs{z}^2 - 1 } \text{ by the reverse triangle ineq.}\\
-&= {2\pi R\over R^2-1} \\
+&\leq \pi R \sup_{z\in C_2} \abs{f(z)} \\
+&= \pi R \sup_{z\in C_2} \abs{e^{iz}\over z^2 + 1} \\
+&\leq \pi R \sup_{z\in C_2} {1 \over \abs{ z^2 + 1} } \text{ since } \abs{e^{iz}}=e^{-\Im z}\le1 \text{ on } \HH\\
+&\leq \pi R\sup_{z\in C_2} {1 \over \abs{z}^2 - 1 } \text{ by the reverse triangle ineq.}\\
+&= {\pi R\over R^2-1} \\
 &= \bigo(R^{-1}) \\
 &\convergesto{R\to\infty}0
 .\]
