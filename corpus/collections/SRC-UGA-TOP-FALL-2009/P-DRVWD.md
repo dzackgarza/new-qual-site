@@ -48,12 +48,12 @@ $X = (S^1 \times I)/((z,1) \sim (z^2,0))$.
 
 <1>2. Give $S^1$ a cell structure with one $0$-cell $e^0$ and one $1$-cell $e^1$.
 ::: {.proof}
-standard CW structure on the circle.
+This is the standard CW structure on the circle.
 :::
 
 <1>3. $X$ has one $0$-cell, two $1$-cells $a$ and $t$, and one $2$-cell.
 ::: {.proof}
-the $0$-cell is $e^0 \times \{0\}$ (with $e^0 \times \{1\}$ identified to it since $1^2 = 1$); the $1$-cells are $a = e^1 \times \{0\}$ and $t = e^0 \times I$; the $2$-cell is $e^1 \times I$.
+The $0$-cell is $e^0 \times \{0\}$ (with $e^0 \times \{1\}$ identified to it since $1^2 = 1$); the $1$-cells are $a = e^1 \times \{0\}$ and $t = e^0 \times I$; the $2$-cell is $e^1 \times I$.
 :::
 
 <1>4. $\partial t = 0$.
@@ -103,7 +103,7 @@ If $s=t^{-1}$, this becomes $s a s^{-1}=a^2$, the standard $BS(1,2)$ presentatio
 
 <1>7. The cellular chain complex is $0 \to \ZZ \xrightarrow{d_2} \ZZ^2 \xrightarrow{d_1} \ZZ \to 0$.
 ::: {.proof}
-one $0$-cell, two $1$-cells, one $2$-cell.
+By <1>3 the cells are one $0$-cell, two $1$-cells, and one $2$-cell.
 :::
 
 <1>8. One has $d_1=0$, and after choosing the orientation of the $2$-cell one may take
@@ -159,6 +159,6 @@ H_k(X;\ZZ)\cong
 \end{cases}}
 \]
 ::: {.proof}
-<1>6 and <1>9.
+Combine <1>6 and <1>9.
 :::
 :::
