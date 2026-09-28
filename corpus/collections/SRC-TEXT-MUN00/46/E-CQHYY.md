@@ -47,7 +47,7 @@ the uniform limit of bounded functions is bounded.
 :::
 
 <1>2. $\mathcal B(\RR,\RR)$ is not closed in the compact-convergence topology.
-<2>1. Take $f_n(x) = x$ for $|x| \le n$ and $f_n(x) = 0$ otherwise (or simply $f_n(x) = \min(|x|, n)$).
+<2>1. Take $f_n(x) = x$ for $|x| \le n$ and $f_n(x) = 0$ otherwise.
 ::: {.proof}
 define a sequence of bounded functions.
 :::
