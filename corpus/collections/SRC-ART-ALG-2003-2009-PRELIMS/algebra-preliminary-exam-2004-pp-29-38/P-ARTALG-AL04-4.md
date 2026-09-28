@@ -41,7 +41,6 @@ Composition agrees with multiplication in $G$, giving $\rho$.
 The action is transitive, since $yx^{-1}$ sends $xH$ to $yH$.
 Any element of the kernel fixes the coset $H$, hence belongs to
 its stabilizer, which is exactly $H$. Thus $K\subseteq H$.
-This construction uses cosets as a set, not a quotient group.
 :::
 
 <1>2. The image of $\rho$ has order exactly $p$.
