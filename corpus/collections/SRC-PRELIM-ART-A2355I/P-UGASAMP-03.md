@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGASAMP-03
 kind: problem
-title: Define convergence of a real sequence and prove a rational sequence tends to $1$
+title: Convergence of $\frac{n^2+2}{n^2+3n}$ to $1$
 classification:
   areas: [prelim]
   topics: []
