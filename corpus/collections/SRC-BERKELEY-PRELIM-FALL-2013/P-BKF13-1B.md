@@ -28,17 +28,14 @@ audit:
 ---
 
 ::: {.problem}
-For which pairs of real numbers (a, b) does the series $\scriptstyle \sum _ { n = 3 } ^ { \infty } n ^ { a } ( \log n ) ^ { b }$ converge?
+For which pairs of real numbers $(a,b)$ does the series $\sum_{n=3}^{\infty}n^a(\log n)^b$ converge?
 :::
 
 ::: {.solution}
-We use the standard growth fact that for every $c>0$ and
-$\varepsilon>0$,
+<1>1. For every $c>0$ and $\varepsilon>0$,
 $$
 (\log n)^c=o(n^\varepsilon).
 $$
-
-<1>1. The growth fact above holds.
 
 ::: {.proof}
 Taking logarithms, it is enough to show
