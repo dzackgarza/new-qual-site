@@ -42,10 +42,10 @@ has order $p$. The subgroup $C=\langle c\rangle$ lies in the center
 and is therefore normal in $G$.
 :::
 
-<1>2. Induction on $k$ gives the asserted normal subgroups.
+<1>2. For each integer $1\leq i\leq k$, a group $G$ of order $p^k$ has a normal subgroup of order $p^i$.
 
 ::: {.proof}
-When $k=1$, the only requested order is $p$, and $G$ itself is a
+We induct on $k$. When $k=1$, the only order is $p$, and $G$ itself is a
 normal subgroup of that order.
 
 Let $k\geq2$ and assume the assertion for groups of order $p^{k-1}$.
