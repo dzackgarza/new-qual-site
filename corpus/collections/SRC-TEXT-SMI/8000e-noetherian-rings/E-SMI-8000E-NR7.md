@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-NR7
 kind: problem
-title: In any ring every ideal sits in a maximal ideal, using Zorn
+title: In any ring every proper ideal lies in a maximal ideal, by Zorn's lemma
 classification:
   areas:
   - algebra
@@ -27,11 +27,6 @@ audit:
 
 ::: {.exercise}
 Using Zorn's lemma, prove in any ring $R$ that every proper ideal $I$ of $R$ is contained in a maximal ideal.
-:::
-
-::: {.remark}
-The source says “every ideal,” but the statement necessarily excludes
-$I=R$, since maximal ideals are proper.
 :::
 
 ::: {.solution}
@@ -81,4 +76,9 @@ $$
 \boxed{I\subseteq\mathfrak m.}
 $$
 :::
+:::
+
+::: {.remark}
+The source says "every ideal". The unit ideal $R$ lies in no maximal ideal,
+since maximal ideals are proper, so the statement holds for proper ideals.
 :::
