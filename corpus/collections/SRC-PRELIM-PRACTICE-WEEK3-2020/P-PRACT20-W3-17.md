@@ -22,5 +22,7 @@ $$
 2 x = 2 \lambda , 2 y = \lambda , 2 z = 3 \lambda .
 $$
 
-Plugging these into the constraint, we find $\lambda = 3 / 7$ and so the point is given by $( 6 / 1 4 , 3 / 1 4 , 9 / 1 4 )$ [Note: as a shortcut, you could reason that the closest point to the origin is found by travelling from the origin in the direction normal to the plane until you hit the plane. The normal direction here is (2, 1, 3) so you simply need to scale this vector to lie in the plane.]
+Plugging these into the constraint, we find $\lambda = 3 / 7$ and so the point is $\boxed{(6/14, 3/14, 9/14)}$.
+
+Equivalently, the closest point is the multiple $t(2,1,3)$ of the normal vector that lies in the plane: $14t = 3$ gives $t = 3/14$.
 :::
