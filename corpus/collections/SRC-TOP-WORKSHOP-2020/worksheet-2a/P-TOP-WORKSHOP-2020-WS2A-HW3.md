@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW3
 kind: problem
-title: Identify hypotheses relating compact and closed sets (warm-up)
+title: Compact subsets of Hausdorff spaces are closed; closed subsets of compact spaces are compact
 classification:
   areas:
   - topology
@@ -26,13 +26,11 @@ What property on a space guarantees that closed sets are compact?
 :::
 
 ::: {.solution}
-If a space is **Hausdorff**, every compact subset is closed.
+If a space is Hausdorff, every compact subset is closed.
 
-If a space is **compact**, every closed subset is compact: if \(F\subseteq X\) is closed and \(\{U_\alpha\}\) covers \(F\), then
+If a space is compact, every closed subset is compact: if \(F\subseteq X\) is closed and \(\{U_\alpha\}\) is a family of open subsets of \(X\) covering \(F\), then
 \[
 \{U_\alpha\}\cup\{X\setminus F\}
 \]
 is an open cover of \(X\); a finite subcover of \(X\) restricts to a finite subcover of \(F\).
-
-Thus Hausdorffness guarantees “compact \(\Rightarrow\) closed,” while compactness guarantees “closed \(\Rightarrow\) compact.”
 :::
