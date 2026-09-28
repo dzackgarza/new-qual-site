@@ -75,8 +75,8 @@ Assume
 $$
 k[x_1,\ldots,x_r]
 $$
-is Noetherian. The Hilbert basis theorem
-[[T-YYLPH|says]] that if a commutative ring $R$ is Noetherian, then
+is Noetherian. By the Hilbert basis theorem
+[[T-YYLPH]], if a commutative ring $R$ is Noetherian, then
 $$
 R[x]
 $$
