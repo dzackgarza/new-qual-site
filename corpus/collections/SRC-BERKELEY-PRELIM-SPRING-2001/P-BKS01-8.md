@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS01-8
 kind: problem
-title: Are the squares in a finite group always a subgroup?
+title: The squares in $A_4$ do not form a subgroup
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
@@ -110,8 +110,7 @@ contradicting step <1>3.
 subgroup.
 
 ::: {.proof}
-The finite group $A_4$ constructed above is a counterexample by step
-<1>4.
+The finite group $A_4$ of step <1>1 is a counterexample by step <1>4.
 :::
 
 <1>6. Q.E.D.
