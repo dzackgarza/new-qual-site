@@ -23,7 +23,7 @@ Define six fields as follows:
 
 • Let E be the field R of real numbers.
 
-• Let F be the field $\mathbb { Q } [ [ T ] ( T ^ { - 1 } )$ of formal Laurent series with rational coefficients.
+• Let F be the field $\mathbb { Q } [ [ T ] ] ( T ^ { - 1 } )$ of formal Laurent series with rational coefficients.
 
 For each pair of these, determine with proof whether or not they are isomorphic.
 :::
@@ -39,6 +39,6 @@ Hence $A \not \simeq B$
 
 If $a \in C$ , then $\mathbb { F } _ { 2 } ( a )$ is a finite extension of $\mathbb { F } _ { 2 }$ , hence finite, say of order $q ;$ if moreover $a \neq 0$ , then $a ^ { q - 1 } = 1$ . Hence $C \subseteq D$ . But $D \subseteq C$ , so $C = D$
 
-The square of a nonzero element of $\mathbb { Q } [ [ T ] ( T ^ { - 1 } )$ has a leading coefficient that is a rational square.
+The square of a nonzero element of $\mathbb { Q } [ [ T ] ] ( T ^ { - 1 } )$ has a leading coefficient that is a rational square.
 Thus 2 is not a square in $\mathbb { Q } [ [ T ] ] ( T ^ { - 1 } )$ . But 2 is a square in R. So $E \not \simeq F$
 :::
