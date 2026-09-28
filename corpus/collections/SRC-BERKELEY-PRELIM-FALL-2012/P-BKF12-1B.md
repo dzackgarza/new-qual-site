@@ -31,11 +31,11 @@ audit:
 Prove that
 
 $$
-{ \frac { \pi } { 4 } } = 4 \arctan { \frac { 1 } { 5 } } - \arctan { \frac { 1 } { 2 3 9 } } .
+\frac{\pi}{4}=4\arctan\frac{1}{5}-\arctan\frac{1}{239}.
 $$
 
 In 1706 John Machin used this formula to calculate $\pi$ to 100 decimal places.
-Explain briefly why he did not use the simpler formula $\begin{array} { r } { \frac { \pi } { 4 } = \arctan 1 } \end{array}$
+Explain briefly why he did not use the simpler formula $\frac{\pi}{4}=\arctan1$.
 :::
 
 ::: {.solution}
@@ -117,8 +117,9 @@ $(0,\pi/2)$ with tangent $1$ is $\pi/4$. Substituting the definitions
 of $\alpha$ and $\beta$ gives the displayed identity.
 :::
 
-<1>5. Machin's formula is much better suited to decimal computation
-than the direct identity $\pi/4=\arctan 1$.
+<1>5. The Taylor series for $\arctan\frac15$ and $\arctan\frac1{239}$
+converge geometrically, whereas the truncation error of the Taylor
+series for $\arctan1$ after $N$ terms is of order $1/N$.
 
 ::: {.proof}
 For $0<x\le1$,
