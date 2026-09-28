@@ -22,7 +22,7 @@ Suppose that $f(z_1)=f(z_2)$, where $\abs{z_i}<1$.
 Then $\frac{z_1}{(1-z_1)^2}=\frac{z_2}{(1-z_2)^2}$, and cross-multiplying, we have $z_1(1-z_2)^2=z_2(1-z_1)^2$.
 Thus, $z_1-z_2=z_2z_1^2-z_1z_2^2=z_1z_2(z_1-z_2)$.
 If $z_1\neq z_2$, then dividing we see that $1=z_1z_2$, which is impossible since then we would have $1=\abs{z_1z_2}=\abs{z_1}\abs{z_2}<1$, a contradiction.
-So $z_1\neq z_2$, and $f(z)$ is thus injective on $B_1(0)$.
+So $z_1=z_2$, and $f(z)$ is thus injective on $B_1(0)$.
 
 Noting that $f(z)=\frac{z-1+1}{(1-z)^2}=\frac{-1}{1-z}+\frac{1}{(1-z)^2}$, and that $\frac{1}{(1-z)^2}=\left(\frac{1}{1-z}\right)'=(1+z+z^2+\cdots)'=1+2z+3z^2+\cdots$, we have
 $$
