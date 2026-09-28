@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ALB7C
 kind: problem
-title: Poles of derivatives
+title: A pole of order $n$ of $f$ is a pole of order $n+k$ of $f^{(k)}$
 classification:
   areas:
   - complex-analysis
