@@ -100,7 +100,4 @@ $$
 \boxed{\operatorname{coker}(hfg)\cong\operatorname{coker}f.}
 $$
 :::
-
-Thus precomposing and postcomposing a module map with isomorphisms changes
-neither its kernel nor its cokernel up to isomorphism.
 :::
