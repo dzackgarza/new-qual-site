@@ -21,6 +21,6 @@ Then $G$ has an element of order $p$, and hence a subgroup of order $p$.
 :::
 
 ::: {.remark}
-Cauchy's theorem is a partial converse to Lagrange's theorem.
+By [[T-SZRXI|Lagrange's theorem]], the order of every element of $G$ divides $\abs G$; conversely, Cauchy's theorem gives an element of order $p$ for every prime $p$ dividing $\abs G$.
 [[T-WRMBM|Sylow's first theorem]] strengthens it: if $p^a$ is the largest power of $p$ dividing $\abs G$, then $G$ has a subgroup of order $p^a$.
 :::
