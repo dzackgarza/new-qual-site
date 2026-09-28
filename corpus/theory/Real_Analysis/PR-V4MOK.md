@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-V4MOK
 kind: proposition
 title: Differentiation under the integral sign
-slogan: 'An integrable dominating derivative lets differentiation pass through the integral.'
+slogan: 'If $\abs{\partial_t f(x,t)}\le g(x)$ with $g\in L^1$, then $F(t)=\int f(x,t)\,d\mu$ is differentiable with $F^\prime=\int\partial_t f\,d\mu$.'
 classification:
   areas:
   - real-analysis
