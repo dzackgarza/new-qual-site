@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-17
 kind: problem
-title: Maximality of the ideal $(5,x^2+2)$ in $\mathbb Z[x]$
+title: Maximality of the ideal $(5,x^2+2)$ in $\ZZ[x]$
 classification:
   areas:
   - prelim
