@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS82-6
 kind: problem
-title: Multiply a real polynomial to normalize its value and first two derivatives at a point
+title: A polynomial multiple of $f$ with value $1$ and vanishing first two derivatives at a point
 classification:
   areas: [prelim]
   topics: []
