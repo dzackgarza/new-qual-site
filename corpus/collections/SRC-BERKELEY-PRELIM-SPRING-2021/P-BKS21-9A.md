@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $G$ be finite and $H<G$ proper. Show that
-\[
+$$
 G\ne\bigcup_{g\in G}gHg^{-1}.
-\]
+$$
 :::
