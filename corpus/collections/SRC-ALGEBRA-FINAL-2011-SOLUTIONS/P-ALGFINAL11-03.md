@@ -22,13 +22,12 @@ review: draft
 :::
 
 ::: {.solution}
-(a) By substituting $y$ for $\bar { x }$ in (a) and (b) of problem 2, one sees that $N ( x y ) = N ( x ) N ( y )$ . (You could also just say this was proved—differently—in class.)
+(a) By substituting $y$ for $\bar x$ in parts (a) and (b) of [[P-ALGFINAL11-02]], $N(xy) = N(x)N(y)$.
 
-If $7 = x y$ with neither x nor y a unit, then $N ( 7 ) = 4 9 = N ( x ) N ( y )$ , and since $N ( x ) > 1$ $N ( y ) > 1$ (cf.
-problem 2), therefore $N ( x ) = N ( y ) = 7$ . But this can’t be, since $a ^ { 2 } + 5 b ^ { 2 } = 7$ has no integer solution.
-Thus 7 is irreducible.
+If $7 = xy$ with neither $x$ nor $y$ a unit, then $N(7) = 49 = N(x)N(y)$, and since $N(x) > 1$ and $N(y) > 1$ (units have norm $1$ by [[P-ALGFINAL11-02]]), $N(x) = N(y) = 7$. But $a^2 + 5b^2 = 7$ has no integer solution.
+Thus $7$ is irreducible.
 
-On the other hand, 7 divides $( 3 + { \sqrt { - 5 } } ) ( 3 - { \sqrt { - 5 } } )$ without dividing either factor; so 7 is not prime.
+On the other hand, $7$ divides $(3 + \sqrt{-5})(3 - \sqrt{-5}) = 14$ without dividing either factor; so $7$ is not prime.
 
-(b) $\mathbb { Z } [ { \sqrt { - 5 } } ]$ is not a Principal Ideal Domain, because Principal Ideal Domains are Unique Factorization Domains, rings in which irreducible elements are always prime.
+(b) $\mathbb Z[\sqrt{-5}]$ is not a principal ideal domain, because principal ideal domains are unique factorization domains, rings in which irreducible elements are always prime.
 :::
