@@ -30,36 +30,43 @@ c. Use the Dominated Convergence Theorem to evaluate
 .\]
 :::
 ::: {.solution}
-<1>1. (a) $f \in L^1(\RR^n) \Rightarrow |f(x)| < \infty$ for a.e. $x$.
-    ::: {.proof}
-    $\{x : |f(x)| = \infty\} = \bigcap_{M} \{x : |f(x)| \ge M\}$ has measure $0$: else $m\{|f| \ge M\} \ge \delta > 0$ for all $M$, giving $\int |f| \ge M\delta \to \infty$, contradicting $f \in L^1$. More directly: $\int |f| < \infty$ forces $\{|f| = \infty\}$ null (Markov: $m\{|f| \ge M\} \le \|f\|_1/M \to 0$).
-    :::
+<1>1. If $f \in L^1(\RR^n)$, then $|f(x)| < \infty$ for a.e. $x$.
 
-<1>2. (b) If $\ts{f_k} \subseteq L^1$ with $\sum \|f_k\|_1 < \infty$, then $\sum f_k$ converges a.e. and in $L^1$.
-    <2>1. Let $g_N = \sum_{k=1}^N |f_k|$; then $g_N \uparrow g := \sum_k |f_k|$ with $\int g = \sum_k \|f_k\|_1 < \infty$ (monotone convergence).
-        ::: {.proof}
-        monotone convergence theorem applied to the nonnegative increasing $g_N$.
-        :::
-    <2>2. $g(x) < \infty$ for a.e. $x$, and $\sum_k f_k(x)$ converges absolutely, hence converges, for those $x$.
-        ::: {.proof}
-        <2>1 gives $g \in L^1$, so $g < \infty$ a.e. by (a); absolute convergence implies convergence.
-        :::
-    <2>3. $\sum_{k=1}^N f_k \to \sum_{k=1}^\infty f_k$ in $L^1$.
-        ::: {.proof}
-        $\left\|\sum_{k=N+1}^\infty f_k\right\|_1 \le \sum_{k=N+1}^\infty \|f_k\|_1 \to 0$ (tail of a convergent series), and the limit function is in $L^1$ with $\int \sum_k f_k = \sum_k \int f_k$ (dominated by $g$).
-        :::
+::: {.proof}
+For every $M > 0$, $\theset{|f| = \infty} \subseteq \theset{|f| \ge M}$, and Markov's inequality gives $m\theset{|f| \ge M} \le \|f\|_1/M$. Letting $M \to \infty$ shows $m\theset{|f| = \infty} = 0$.
+:::
 
-<1>3. (c) $\lim_{t \to 0}\int_0^1 \frac{e^{tx^2} - 1}{t}\,dx = \frac{1}{3}$: the integrand converges pointwise to $x^2$, and dominated convergence applies.
-    <2>1. For $t \to 0$ (say $|t| \le 1$) and $x \in [0,1]$: $\left|\frac{e^{tx^2} - 1}{t}\right| \le e\,x^2 \le e$.
-        ::: {.proof}
-        for $|u| \le 1$, $|e^u - 1| \le e^{|u|}|u| \le e|u|$ (MVT: $e^u - 1 = e^\xi u$ with $|\xi| \le |u| \le 1$, so $|e^u - 1| \le e|u|$); with $u = tx^2$ this gives $\le e x^2 \le e$.
-        :::
-    <2>2. $\frac{e^{tx^2} - 1}{t} \to x^2$ pointwise as $t \to 0$.
-        ::: {.proof}
-        $e^{tx^2} = 1 + tx^2 + o(t)$.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        dominated convergence with the dominating function $e \in L^1[0,1]$: $\lim_{t\to0}\int_0^1 \frac{e^{tx^2}-1}{t}\,dx = \int_0^1 x^2\,dx = \frac13$.
-        :::
+<1>2. If $f_k \in L^1(\RR^n)$ and $\sum_k \|f_k\|_1 < \infty$, then $\sum_k f_k$ converges a.e. and in $L^1$.
+
+<2>1. $g = \sum_k |f_k|$ is in $L^1$, and $g < \infty$ a.e.
+
+::: {.proof}
+By the monotone convergence theorem applied to the partial sums, $\int g = \sum_k \|f_k\|_1 < \infty$. Step <1>1 applied to $g$ gives $g < \infty$ a.e.
+:::
+
+<2>2. Q.E.D.
+
+::: {.proof}
+Where $g(x) < \infty$, the series $\sum_k f_k(x)$ converges absolutely; call its sum $F(x)$, and put $F = 0$ elsewhere. Then $|F| \le g$, so $F \in L^1$, and $\left\|F - \sum_{k=1}^N f_k\right\|_1 \le \int \sum_{k > N}|f_k| = \sum_{k>N}\|f_k\|_1 \to 0$.
+:::
+
+<1>3. $\lim_{t \to 0}\int_0^1 \frac{e^{tx^2} - 1}{t}\,dx = \boxed{\tfrac{1}{3}}$.
+
+<2>1. For $0 < |t| \le 1$ and $x \in [0,1]$, $\left|\frac{e^{tx^2} - 1}{t}\right| \le e$.
+
+::: {.proof}
+By the mean value theorem, $e^u - 1 = e^\xi u$ for some $\xi$ between $0$ and $u$, so $|e^u - 1| \le e|u|$ for $|u| \le 1$. Take $u = tx^2$.
+:::
+
+<2>2. $\frac{e^{tx^2} - 1}{t} \to x^2$ as $t \to 0$ for each $x$.
+
+::: {.proof}
+This is the derivative of $t \mapsto e^{tx^2}$ at $t = 0$.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+By steps <2>1 and <2>2, dominated convergence with dominating function $e$ on $[0,1]$ gives the limit $\int_0^1 x^2\,dx = \frac13$ along every sequence $t_k \to 0$.
+:::
 :::
