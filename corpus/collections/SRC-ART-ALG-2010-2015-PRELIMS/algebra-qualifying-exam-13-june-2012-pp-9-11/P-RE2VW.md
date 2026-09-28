@@ -32,14 +32,6 @@ Prove that the minimal polynomial of $\alpha$ over $F$ has degree at least $n$.
 (You may use whatever group theoretic facts you know about $A_n$ without proof.)
 :::
 
-::: {.remark}
-The exclusion $\alpha\notin F$ is necessary: every element
-of $F$ has a linear minimal polynomial over $F$.
-The coefficient field in the conclusion must also be $F$,
-not $K$; over $K$, the minimal polynomial of $\alpha\in K$
-is always $T-\alpha$.
-:::
-
 ::: {.solution}
 Let $G=\operatorname{Gal}(K/F)$, let $m(T)\in F[T]$ be
 the minimal polynomial of $\alpha$, and put $d=\deg m$.
@@ -63,8 +55,7 @@ trivial and $\ker\rho\ne G$.
 <1>2. The homomorphism $\rho$ is injective.
 
 ::: {.proof}
-For $n\geq5$, the group $A_n$ is simple [@DF04], a
-group-theoretic fact permitted in the question. Hence
+For $n\geq5$, the group $A_n$ is simple [@DF04]. Hence
 $G\cong A_n$ has no normal subgroups other than $1$ and
 $G$. The kernel of a homomorphism is normal, and step
 <1>1 excludes the latter possibility. Therefore
@@ -80,7 +71,7 @@ $$
 d!\leq(n-1)!<\frac n2(n-1)!=\frac{n!}{2},
 $$
 where strictness follows from $n\geq5>2$.
-This contradicts the previous inequality. Thus $d\geq n$,
+This contradicts $n!/2\leq d!$. Thus $d\geq n$,
 as required.
 :::
 :::
