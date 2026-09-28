@@ -251,7 +251,50 @@ def fixture_repo(tmp_path: Path) -> Path:
     return work
 
 
-def test_a_standalone_image_is_a_figure_and_a_spaced_page_name_slugs(tmp_path: Path) -> None:
+@pytest.fixture(scope="module")
+def wiki_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
+    """One build carrying every page and card whose tests assert on that page alone.
+
+    Each test owns its page, so what it measures is local to it. Tests whose
+    claim is the shape of the whole tree -- the sidebar, the reading order --
+    build their own repo, because another page would change what they measure.
+    """
+    work = fixture_repo(tmp_path_factory.mktemp("wiki"))
+    cards = {
+        "DEF-NOWHERE.md": PROMPTED_CARD,
+        "PRP-TRACES.md": DIVERGENT_CARD,
+        "PRB-TWOWAYS.md": TWO_SOLUTIONS,
+        "PRB-ASIDE.md": FOOTNOTED_CARD,
+    }
+    pages = {
+        "Some Page.md": wiki_md("# Some page\n\n![](figures/diagram.png)\n", order=2),
+        "figures.md": wiki_md("# Figures\n\n![captioned](figures/diagram.png)\n\nSee [[Some Page]].\n", order=3),
+        "prompts.md": wiki_md("# Prompts\n\n[[DEF-NOWHERE]]\n\n[[LEM-FRATTINI]]\n", order=4),
+        "bare-reference.md": wiki_md("# Bare reference\n\nCompare [[PRB-INDEXP]] with the rest.\n", order=5),
+        "math-reference.md": wiki_md("# Math reference\n\nCompare [[PRB-INDEXP]] with [[DEF-PGROUP|the plain words]].\n", order=6),
+        "transclusion.md": wiki_md("# Transclusion\n\n[[DEF-PGROUP]] [[LEM-FRATTINI]]\n[[THM-SYLOW]]\n\nAs [[PRB-INDEXP]] shows.\n", order=7),
+        "twice.md": wiki_md("# Twice\n\n[[DEF-PGROUP]]\n\n[[LEM-FRATTINI]]\n\n[[DEF-PGROUP]]\n", order=8),
+        "yaml-title.md": wiki_md("# YAML title\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n", order=9),
+        "citations.md": wiki_md("# Citations\n\nReferences: [@DF04], [@Smi96].\n", order=10),
+        "captions.md": wiki_md("# Captions\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n", order=11),
+        "Algebra/index.md": wiki_md("# Algebra\n", order=2, title="Algebra"),
+        "Algebra/groups/index.md": wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"),
+        "Algebra/groups/sylow.md": wiki_md("# Sylow\n", order=1),
+        "Algebra/topic-groups.md": "---\ntitle: Groups topic\norder: 2\ntopics: [Groups]\n---\n\n# Groups topic\n\nThe chapter.\n",
+        "Algebra/topic-sheaves.md": "---\ntitle: Sheaves topic\norder: 3\ntopics: [Sheaf Cohomology]\n---\n\n# Sheaves topic\n\nThe chapter.\n",
+    }
+    for name, text in cards.items():
+        (work / "corpus" / name).write_text(text)
+    for relative, text in pages.items():
+        path = work / "wiki" / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text)
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+    return work
+
+
+def test_a_standalone_image_is_a_figure_and_a_spaced_page_name_slugs(wiki_site: Path) -> None:
     """An image alone in a paragraph is a figure whether or not it has a caption.
 
     Pandoc's `implicit_figures` covers `![caption](src)` only; `![](src)`
@@ -262,15 +305,8 @@ def test_a_standalone_image_is_a_figure_and_a_spaced_page_name_slugs(tmp_path: P
     The filename stays as authored and the route slugs, so the link a reader
     copies has no escape in it rather than a percent-encoded one.
     """
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "Some Page.md").write_text(wiki_md("# Some page\n\n![](figures/diagram.png)\n", order=2))
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n![captioned](figures/diagram.png)\n\nSee [[Some Page]].\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site"
-    index = (site / "wiki" / "index.html").read_text()
+    site = wiki_site / "build" / "quarto" / "_site"
+    index = (site / "wiki" / "figures.html").read_text()
     uncaptioned = (site / "wiki" / "some-page.html").read_text()
     assert '<figure class="qual-figure">' in uncaptioned
     assert "<figcaption" not in uncaptioned
@@ -306,21 +342,14 @@ $A$ is **nowhere dense** iff the closure of $A$ has empty interior.
 """
 
 
-def test_a_cards_review_prompts_render_wherever_the_card_does(tmp_path: Path) -> None:
+def test_a_cards_review_prompts_render_wherever_the_card_does(wiki_site: Path) -> None:
     """A prompt is the question this card answers, so it goes where the card goes.
 
     One block per prompt and none at all without them: the field is a list
     because one statement can be asked for in several ways, and a card that
     carries no question must not grow an empty container to say so.
     """
-    work = fixture_repo(tmp_path)
-    (work / "corpus" / "DEF-NOWHERE.md").write_text(PROMPTED_CARD)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[DEF-NOWHERE]]\n\n[[LEM-FRATTINI]]\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site"
+    site = wiki_site / "build" / "quarto" / "_site"
     expected = [
         '<div class="review-question">Give an example of a set that is not nowhere dense.</div>',
         '<div class="review-question">Is $\\QQ$ nowhere dense?</div>',
@@ -328,7 +357,7 @@ def test_a_cards_review_prompts_render_wherever_the_card_does(tmp_path: Path) ->
     card_page = (site / "tag" / "DEF-NOWHERE.html").read_text()
     assert [block for block in expected if block in card_page] == expected
 
-    wiki_page = (site / "wiki" / "index.html").read_text()
+    wiki_page = (site / "wiki" / "prompts.html").read_text()
     assert [block for block in expected if block in wiki_page] == expected
     # The statement is the answer, so the question follows it.
     assert wiki_page.index("empty interior") < wiki_page.index("review-question")
@@ -337,24 +366,21 @@ def test_a_cards_review_prompts_render_wherever_the_card_does(tmp_path: Path) ->
     assert "review-question" not in (site / "tag" / "LEM-FRATTINI.html").read_text()
 
 
-def test_a_card_shows_only_the_relation_panels_it_has(tmp_path: Path) -> None:
+def test_a_card_shows_only_the_relation_panels_it_has(wiki_site: Path) -> None:
     """A heading whose body reads "None." tells the reader nothing.
 
     Empty panels are dropped rather than framing headings around the word
-    "None." The fixture problem has one incoming wiki link and no card-level
+    "None." The fixture problem has incoming wiki links and no card-level
     relations, so that is the only relation panel it should show.
     """
-    work = fixture_repo(tmp_path)
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    tags = work / "build" / "quarto" / "_site" / "tag"
+    tags = wiki_site / "build" / "quarto" / "_site" / "tag"
     problem = (tags / "PRB-INDEXP.html").read_text()
     assert re.findall(r'data-relation-group="([a-z-]+)"', problem) == ["wiki-backlinks"]
     assert "None." not in problem
 
-    lemma = (tags / "LEM-FRATTINI.html").read_text()
-    assert "relation-groups" not in lemma
+    # Nothing links to COR-CAUCHY and it has no relations of its own.
+    corollary = (tags / "COR-CAUCHY.html").read_text()
+    assert "relation-groups" not in corollary
 
 
 def run(command: str, root: Path) -> subprocess.CompletedProcess[str]:
@@ -366,19 +392,14 @@ def run(command: str, root: Path) -> subprocess.CompletedProcess[str]:
     )
 
 
-def test_build_emits_every_authored_page_and_resolves_real_links(
-    tmp_path: Path,
-) -> None:
-    work = fixture_repo(tmp_path)
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    output = work / "build" / "quarto"
+def test_build_emits_every_authored_page_and_resolves_real_links(wiki_site: Path) -> None:
+    output = wiki_site / "build" / "quarto"
     site = output / "_site"
     manifest = json.loads((output / "wiki-manifest.json").read_text())
-    branches = {f"{subject}/index.md" for subject, _ in SUBJECTS}
-    assert {entry["source"] for entry in manifest} == {"index.md", "details.md"} | branches
-    assert {entry["route"] for entry in manifest} == {"wiki/index.html", "wiki/details.html"} | {"wiki/" + slug(subject) + "/index.html" for subject, _ in SUBJECTS}
+    authored = {path.relative_to(wiki_site / "wiki").as_posix() for path in (wiki_site / "wiki").rglob("*.md")}
+    assert {entry["source"] for entry in manifest} == authored
+    branches = {"wiki/" + slug(subject) + "/index.html" for subject, _ in SUBJECTS}
+    assert {"wiki/index.html", "wiki/details.html", "wiki/some-page.html"} | branches <= {entry["route"] for entry in manifest}
 
     links = LinkCollector()
     links.feed((site / "wiki" / "index.html").read_text())
@@ -394,14 +415,8 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
     assert "Fixture index" in indexed
 
 
-def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nCompare [[PRB-INDEXP]] with the rest.\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+def test_bare_card_reference_uses_the_card_title(wiki_site: Path) -> None:
+    html = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "bare-reference.html").read_text()
     links = LinkCollector()
     links.feed(html)
     link_texts = [text for _, _, text in links.links]
@@ -409,7 +424,7 @@ def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
     assert "PRB-INDEXP" not in link_texts
 
 
-def test_a_reference_whose_text_is_mathematics_is_marked_as_such(tmp_path: Path) -> None:
+def test_a_reference_whose_text_is_mathematics_is_marked_as_such(wiki_site: Path) -> None:
     """The anchor says its own text typesets, so the stylesheet can act on it.
 
     `PRB-INDEXP` is titled "... index $p$ in a $p\\dash$group ...", and that
@@ -417,20 +432,14 @@ def test_a_reference_whose_text_is_mathematics_is_marked_as_such(tmp_path: Path)
     distinguishes it from a link reading three plain words, and the underline
     is drawn straight through the typeset mathematics.
     """
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nCompare [[PRB-INDEXP]] with [[DEF-PGROUP|the plain words]].\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
     links = LinkCollector()
-    links.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    links.feed((wiki_site / "build" / "quarto" / "_site" / "wiki" / "math-reference.html").read_text())
     marked = {href: "qual-link-math" in classes for href, classes, _ in links.links}
     assert marked["../tag/PRB-INDEXP.html"] is True
     assert marked["../tag/DEF-PGROUP.html"] is False
 
 
-def test_a_standalone_reference_transcludes_the_card_it_names(tmp_path: Path) -> None:
+def test_a_standalone_reference_transcludes_the_card_it_names(wiki_site: Path) -> None:
     """A paragraph of nothing but card links is the statements, not links to them.
 
     Two links written on one line are two blocks. Each is one labelled section:
@@ -439,17 +448,11 @@ def test_a_standalone_reference_transcludes_the_card_it_names(tmp_path: Path) ->
     labelled box nested inside. A reference inside a sentence names somewhere
     else and stays a link.
     """
-    work = fixture_repo(tmp_path)
-    # Two links on one line and a third on the next: markdown joins adjacent
-    # lines into one paragraph, separating them by a soft break rather than a
-    # space, and most of the corpus is authored that way. Both separators have
-    # to be seen through for the paragraph to count as links and nothing else.
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[DEF-PGROUP]] [[LEM-FRATTINI]]\n[[THM-SYLOW]]\n\nAs [[PRB-INDEXP]] shows.\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    # The page has two links on one line and a third on the next: markdown
+    # joins adjacent lines into one paragraph, separating them by a soft break
+    # rather than a space, and most of the corpus is authored that way. Both
+    # separators have to be seen through for the paragraph to count as links.
+    html = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "transclusion.html").read_text()
     blocks = TransclusionParser()
     blocks.feed(html)
     assert [block.card_id for block in blocks.blocks] == ["DEF-PGROUP", "LEM-FRATTINI", "THM-SYLOW"]
@@ -479,15 +482,9 @@ def test_a_standalone_reference_transcludes_the_card_it_names(tmp_path: Path) ->
     assert [[name for name in classes if name.startswith("qual-")] for classes in inline] == [["qual-link-math"]]
 
 
-def test_a_card_referenced_twice_on_a_page_is_transcluded_once(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[DEF-PGROUP]]\n\n[[LEM-FRATTINI]]\n\n[[DEF-PGROUP]]\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
+def test_a_card_referenced_twice_on_a_page_is_transcluded_once(wiki_site: Path) -> None:
     blocks = TransclusionParser()
-    blocks.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    blocks.feed((wiki_site / "build" / "quarto" / "_site" / "wiki" / "twice.html").read_text())
     assert [block.card_id for block in blocks.blocks] == ["DEF-PGROUP", "LEM-FRATTINI"]
     assert [block.label for block in blocks.blocks] == ["Definition 1", "Lemma 1"]
 
@@ -520,7 +517,7 @@ Compare degrees.
 """
 
 
-def test_a_transcluded_card_is_named_by_its_yaml_title(tmp_path: Path) -> None:
+def test_a_transcluded_card_is_named_by_its_yaml_title(wiki_site: Path) -> None:
     """The card's name has one owner: YAML `title`. The body attribute is not it.
 
     582 cards carry a name in both places and 85 of them diverge, the body
@@ -529,15 +526,8 @@ def test_a_transcluded_card_is_named_by_its_yaml_title(tmp_path: Path) -> None:
     "of a"/"of b" labels stood in for; a nested `title=` is a part label and
     still renders.
     """
-    work = fixture_repo(tmp_path)
-    (work / "corpus" / "PRP-TRACES.md").write_text(DIVERGENT_CARD)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[PRP-PIDX]] [[WRN-SYLOWCOUNT]] [[PRP-TRACES]]\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
     blocks = TransclusionParser()
-    blocks.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    blocks.feed((wiki_site / "build" / "quarto" / "_site" / "wiki" / "yaml-title.html").read_text())
     # A label counts its own kind on the page. One sequence across every kind
     # put "Warning 2" on a page with one warning: the label asserts what it
     # counts, and the second proposition is the page's second proposition.
@@ -547,7 +537,7 @@ def test_a_transcluded_card_is_named_by_its_yaml_title(tmp_path: Path) -> None:
     assert "Useful computational trick" not in block.heading
     assert block.inner_labels == ["Proof 1", "Proof 2"]
 
-    card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRP-TRACES.html").read_text()
+    card_page = (wiki_site / "build" / "quarto" / "_site" / "tag" / "PRP-TRACES.html").read_text()
     # The authored title qualifies the block's own label -- "Proof 1 (of a)" --
     # so it is bracketed and carries the class the label line is built from,
     # not the class a card's name uses.
@@ -555,20 +545,16 @@ def test_a_transcluded_card_is_named_by_its_yaml_title(tmp_path: Path) -> None:
     assert '<p class="qual-section-qualifier">(of b)</p>' in card_page
 
 
-def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:
+def test_incoming_wiki_links_are_generated_from_the_resolved_graph(wiki_site: Path) -> None:
     """Who points at a page is the inverse of the wikilinks already resolved.
 
     The markdown does not list incoming links. The fixture index points at
-    details.md and at PRB-INDEXP; those targets must show that, and a page
-    nothing cites must not grow a handwritten 'linked from' list.
+    details.md, and four pages point at PRB-INDEXP; those targets must show
+    exactly that, and a page nothing cites must not grow a 'linked from' list.
     """
-    work = fixture_repo(tmp_path)
-    assert "What links to this" not in (work / "wiki" / "details.md").read_text()
+    assert "What links to this" not in (wiki_site / "wiki" / "details.md").read_text()
 
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site"
+    site = wiki_site / "build" / "quarto" / "_site"
     details = WikiBacklinkParser()
     details.feed((site / "wiki" / "details.html").read_text())
     assert details.titles == ["Fixture index"]
@@ -581,8 +567,9 @@ def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Pat
 
     card = WikiBacklinkParser()
     card.feed((site / "tag" / "PRB-INDEXP.html").read_text())
-    assert card.titles == ["Fixture index"]
-    assert card.hrefs == ["../wiki/index.html"]
+    linking = {"index": "Fixture index", "bare-reference": "Bare reference", "math-reference": "Math reference", "transclusion": "Transclusion"}
+    assert sorted(card.titles) == sorted(linking.values())
+    assert sorted(card.hrefs) == sorted(f"../wiki/{name}.html" for name in linking)
 
 
 def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
@@ -723,19 +710,13 @@ def test_check_rejects_a_directory_with_no_index_page(tmp_path: Path) -> None:
     assert diagnostic_codes(work) == [DiagnosticCode.PAGE_DIRECTORY_MISSING_INDEX]
 
 
-def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
+def test_a_citation_renders_against_the_bibliography(wiki_site: Path) -> None:
     """Pandoc reads `[@key]` as a citation and leaves the key as the element's
     own text, so without citeproc the reader is shown `[@dummit_foote_2004]`.
     citeproc resolves it against `references.bib`: the reader gets an author-date
     reference in place and a bibliography entry to look it up in."""
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nReferences: [@DF04], [@Smi96].\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
     # Pandoc's HTML writer wraps its output, so a name can straddle two lines.
-    html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    html = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "citations.html").read_text()
     assert "@DF04" not in html
 
     # The reference is only half of it: the key resolves to a work the reader can
@@ -773,19 +754,11 @@ def test_check_rejects_a_citation_the_bibliography_does_not_define(
     assert diagnostic_codes(work) == [DiagnosticCode.UNKNOWN_CITATION]
 
 
-def test_a_figure_captioned_with_its_own_filename_loses_the_caption(
-    tmp_path: Path,
-) -> None:
+def test_a_figure_captioned_with_its_own_filename_loses_the_caption(wiki_site: Path) -> None:
     """Pandoc's implicit-figure syntax makes the caption out of the alt text, and
     the authored vault wrote the attachment path there. A written caption is a
     caption and stays; a path is the file's name and is not one."""
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    page = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    page = (wiki_site / "build" / "quarto" / "_site" / "wiki" / "captions.html").read_text()
     captions = re.findall(r"<figcaption[^>]*>(.*?)</figcaption>", page)
     assert captions == ["The Tube Lemma"]
 
@@ -818,7 +791,7 @@ Differentiate under the integral.
 """
 
 
-def test_a_solution_names_its_method_before_it_is_opened(tmp_path: Path) -> None:
+def test_a_solution_names_its_method_before_it_is_opened(wiki_site: Path) -> None:
     """Two solutions on one card showed two disclosures both reading "Solution".
 
     The authored label is what tells them apart, and a disclosure is closed when
@@ -826,13 +799,7 @@ def test_a_solution_names_its_method_before_it_is_opened(tmp_path: Path) -> None
     it in the body instead would hide the distinction behind the click it is
     supposed to inform.
     """
-    work = fixture_repo(tmp_path)
-    (work / "corpus" / "PRB-TWOWAYS.md").write_text(TWO_SOLUTIONS)
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    card_page = (work / "build" / "quarto" / "_site" / "tag" / "PRB-TWOWAYS.html").read_text()
+    card_page = (wiki_site / "build" / "quarto" / "_site" / "tag" / "PRB-TWOWAYS.html").read_text()
     assert "<summary>Solution: Using Morera</summary>" in card_page
     assert "<summary>Solution: Using limit definition</summary>" in card_page
 
@@ -862,7 +829,7 @@ Pick $w_0$ in the image and bound $f$ below on a small circle.
 """
 
 
-def test_a_footnote_reaches_the_page_as_a_sidenote(tmp_path: Path) -> None:
+def test_a_footnote_reaches_the_page_as_a_sidenote(wiki_site: Path) -> None:
     """The note belongs beside the line that raises it, not in a list at the foot.
 
     Every note in the corpus is a technique aside on its own sentence -- "Using
@@ -870,12 +837,7 @@ def test_a_footnote_reaches_the_page_as_a_sidenote(tmp_path: Path) -> None:
     that a scroll away from the step it explains. The markdown written beside
     the HTML keeps the real footnote: only the page is rearranged.
     """
-    work = fixture_repo(tmp_path)
-    (work / "corpus" / "PRB-ASIDE.md").write_text(FOOTNOTED_CARD)
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
+    work = wiki_site
     # Pandoc's HTML writer wraps long lines, so the attribute can land on the
     # line after the tag it belongs to.
     card_page = re.sub(r"\s+", " ", (work / "build" / "quarto" / "_site" / "tag" / "PRB-ASIDE.html").read_text())
@@ -988,24 +950,14 @@ class BreadcrumbParser(HTMLParser):
             self._in_crumbs = False
 
 
-def test_a_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
+def test_a_breadcrumb_is_where_the_page_is_filed(wiki_site: Path) -> None:
     """One meaning, on every page that has one: the trail down to this page.
 
     A wiki subject's landing page had a single crumb repeating its own heading,
     because the wiki's index is filed beside the subjects rather than above
     them and walking the folder chain never reached it.
     """
-    work = fixture_repo(tmp_path)
-    algebra = work / "wiki" / "Algebra"
-    (algebra / "groups").mkdir(parents=True)
-    (algebra / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
-    (algebra / "groups" / "index.md").write_text(wiki_md("# Groups\n", order=1, title="Groups"))
-    (algebra / "groups" / "sylow.md").write_text(wiki_md("# Sylow\n", order=1))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site" / "wiki"
+    site = wiki_site / "build" / "quarto" / "_site" / "wiki"
 
     page = BreadcrumbParser()
     page.feed((site / "algebra" / "groups" / "sylow.html").read_text())
@@ -1027,7 +979,7 @@ def test_a_breadcrumb_is_where_the_page_is_filed(tmp_path: Path) -> None:
     assert root.crumbs == []
 
 
-def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
+def test_a_wiki_page_can_point_at_the_rest_of_the_site(wiki_site: Path) -> None:
     """The wiki index says what the guides are for, and links to them.
 
     Every href in a wiki page was read as a card id, an asset, or a wiki page,
@@ -1035,16 +987,7 @@ def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
     folders down cannot spell the way back itself, so the name is written from
     the site root and the page writer makes it relative.
     """
-    work = fixture_repo(tmp_path)
-    deep = work / "wiki" / "Algebra" / "groups"
-    deep.mkdir(parents=True)
-    (work / "wiki" / "Algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
-    (deep / "index.md").write_text(wiki_md("# Groups\n\nSee the [guides](guides.html) and the [browser](problems.html).\n", order=1, title="Groups"))
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site"
+    site = wiki_site / "build" / "quarto" / "_site"
     body = LinkCollector()
     body.feed((site / "wiki" / "algebra" / "groups" / "index.html").read_text())
     assert "../../../guides.html" in body.hrefs
@@ -1052,16 +995,10 @@ def test_a_wiki_page_can_point_at_the_rest_of_the_site(tmp_path: Path) -> None:
     assert (site / "guides.html").exists()
 
 
-def test_wiki_page_topics_automatically_produce_one_prefilled_browser_link(tmp_path: Path) -> None:
+def test_wiki_page_topics_automatically_produce_one_prefilled_browser_link(wiki_site: Path) -> None:
     """The wiki classifies the page; the central browser owns the live listing."""
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "Algebra" / "groups.md").write_text("---\ntitle: Groups\norder: 2\ntopics: [Groups]\n---\n\n# Groups\n\nThe chapter.\n")
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
-    site = work / "build" / "quarto" / "_site"
-    html = (site / "wiki" / "algebra" / "groups.html").read_text()
+    site = wiki_site / "build" / "quarto" / "_site"
+    html = (site / "wiki" / "algebra" / "topic-groups.html").read_text()
     links = LinkCollector()
     links.feed(html)
     practice = [(href, classes, text) for href, classes, text in links.links if "problem-browse-link" in html and text.startswith("Browse the problems")]
@@ -1071,15 +1008,10 @@ def test_wiki_page_topics_automatically_produce_one_prefilled_browser_link(tmp_p
     assert "tag/EXE-CENTER.html" not in html
 
 
-def test_wiki_topics_do_not_snapshot_the_catalog(tmp_path: Path) -> None:
+def test_wiki_topics_do_not_snapshot_the_catalog(wiki_site: Path) -> None:
     """A topic classification is authored state, not a build-time result set."""
-    work = fixture_repo(tmp_path)
-    (work / "wiki" / "Algebra" / "groups.md").write_text("---\ntitle: Groups\norder: 2\ntopics: [Sheaf Cohomology]\n---\n\n# Groups\n\nThe chapter.\n")
-
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
     links = LinkCollector()
-    links.feed((work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "groups.html").read_text())
+    links.feed((wiki_site / "build" / "quarto" / "_site" / "wiki" / "algebra" / "topic-sheaves.html").read_text())
     assert ("../../problems.html?area=algebra&topic=Sheaf+Cohomology", "", "Browse the problems on Sheaf Cohomology") in links.links
 
 
@@ -1097,12 +1029,8 @@ def test_check_rejects_the_retired_problems_query_block(tmp_path: Path) -> None:
     assert DiagnosticCode.PAGE_TOPICS_INVALID in diagnostic_codes(work)
 
 
-def test_subject_root_automatically_links_all_problems_in_its_area(tmp_path: Path) -> None:
+def test_subject_root_automatically_links_all_problems_in_its_area(wiki_site: Path) -> None:
     """A subject landing page is the whole area, so it does not invent a narrower topic filter."""
-    work = fixture_repo(tmp_path)
-    result = run("build", work)
-    assert result.returncode == 0, result.stderr
-
     links = LinkCollector()
-    links.feed((work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "index.html").read_text())
+    links.feed((wiki_site / "build" / "quarto" / "_site" / "wiki" / "algebra" / "index.html").read_text())
     assert ("../../problems.html?area=algebra", "", "Browse the problems") in links.links
