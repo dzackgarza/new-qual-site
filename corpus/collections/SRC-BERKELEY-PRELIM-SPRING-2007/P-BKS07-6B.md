@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-6B
 kind: problem
-title: UC Berkeley Spring 2007 prelim 6B
+title: An integral curve confined to a compact set has a limit at the right endpoint
 classification:
   areas: [prelim]
   topics: []
@@ -36,8 +36,10 @@ $$
 $$
 
 as required.
+:::
 
-Alternative solution, based on a suggestion of Andre Kornell (using the dominated convergence theorem of Lebesgue integration, however): Because of the given integral equation, it suffices to apply the following claim to the function $g ( s ) ~ = ~ f ( \varphi ( s ) )$ : for any continuous bounded function $g \colon [ 0 , b )   { \mathbb { R } } ^ { d }$ , the limit lim $\begin{array} { r } { \mathbf { \ i } _ { t  b ^ { - } } \int _ { 0 } ^ { t } g ( s ) } \end{array}$ ds exists.
+::: {.solution}
+This solution uses the dominated convergence theorem. Because of the given integral equation, it suffices to apply the following claim to the function $g ( s ) ~ = ~ f ( \varphi ( s ) )$ : for any continuous bounded function $g \colon [ 0 , b )   { \mathbb { R } } ^ { d }$ , the limit lim $\begin{array} { r } { \mathbf { \ i } _ { t  b ^ { - } } \int _ { 0 } ^ { t } g ( s ) } \end{array}$ ds exists.
 To prove this, it suffices to prove that for every increasing sequence $\left( t _ { k } \right)$ i n $[ 0 , b )$ tending to $b ,$ the limit $\begin{array} { r } { \operatorname* { l i m } _ { k \to \infty } \int _ { 0 } ^ { t _ { k } } g ( s ) } \end{array}$ ds exists.
 This follows from the dominated convergence theorem applied to the sequence of functions
 
