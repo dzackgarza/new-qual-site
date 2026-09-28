@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-JX4YU
 kind: proposition
 title: Continuity of translation in $L^p$ for $1\leq p<\infty$
-slogan: 'Small translations are continuous in finite $L^p$, while uniform continuity is exactly sup-norm translation continuity.'
+slogan: 'For $1\le p<\infty$, $\tau_h f\to f$ in $L^p$ as $h\to0$; a function is uniformly continuous exactly when $\tau_h f\to f$ in the sup norm.'
 classification:
   areas:
   - real-analysis
