@@ -40,7 +40,7 @@ $$
 $$
 
 $$
-\frac{\abs x}{\abs{x-y}}\geq\frac{\abs x}{\abs x+\abs y}=\frac1{1+\abs y/\abs x}\leq\frac1{1+1/n}=\frac n{n+1}.
+\frac{\abs x}{\abs{x-y}}\geq\frac{\abs x}{\abs x+\abs y}=\frac1{1+\abs y/\abs x}\geq\frac1{1+1/n}=\frac n{n+1}.
 $$
 
 Hence
