@@ -37,7 +37,7 @@ Prove that if $i:Y\to X$ is the inclusion map and $y\in Y$, then the induced hom
 ::: {.solution}
 <1>1. Definition of strong deformation retract.
 ::: {.proof}
-A subspace $Y\subseteq X$ is a **strong deformation retract** of $X$ if there is a continuous map
+A subspace $Y\subseteq X$ is a \dfn{strong deformation retract} of $X$ if there is a continuous map
 \[
 H:X\times[0,1]\longrightarrow X
 \]
