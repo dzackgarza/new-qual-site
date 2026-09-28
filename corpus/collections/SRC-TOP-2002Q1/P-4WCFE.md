@@ -30,65 +30,44 @@ audit:
 ---
 
 ::: {.problem}
-Show that $\mathbb{R}$ and $\mathbb{R}^2$ (with their usual topologies) are not homeomorphic.
+Show that $\RR$ and $\RR^2$ (with their usual topologies) are not homeomorphic.
 :::
 
 ::: {.solution}
-<1>1. For every $c\in\mathbb R$, the punctured line $\mathbb R\setminus\{c\}$ is disconnected.
+<1>1. For every $c\in\RR$, the punctured line $\RR\setminus\{c\}$ is disconnected.
+
 ::: {.proof}
-It is the disjoint union
-\[
-\mathbb R\setminus\{c\}
-=(-\infty,c)\sqcup(c,\infty).
-\]
-Both pieces are nonempty and open in the subspace $\mathbb R\setminus\{c\}$.
+It is the disjoint union $\RR\setminus\{c\}=(-\infty,c)\sqcup(c,\infty)$.
+Both pieces are nonempty and open in the subspace $\RR\setminus\{c\}$.
 Hence they form a separation.
 :::
 
-<1>2. For every $a\in\mathbb R^2$, the punctured plane $\mathbb R^2\setminus\{a\}$ is path-connected.
+<1>2. For every $a\in\RR^2$, the punctured plane $\RR^2\setminus\{a\}$ is path-connected.
+
 ::: {.proof}
-Translation by $-a$ is a homeomorphism from $\mathbb R^2\setminus\{a\}$ to $\mathbb R^2\setminus\{0\}$, so it suffices to prove the latter is path-connected.
+Translation by $-a$ is a homeomorphism from $\RR^2\setminus\{a\}$ to $\RR^2\setminus\{0\}$, so it suffices to prove the latter is path-connected.
 
-Take $x,y\in\mathbb R^2\setminus\{0\}$.
-Choose a point
-\[
-z\in\mathbb R^2
-\setminus
-\bigl(\operatorname{span}(x)\cup\operatorname{span}(y)\bigr).
-\]
-Such a $z$ exists because one or two lines through the origin do not fill the plane.
+Take $x,y\in\RR^2\setminus\{0\}$.
+Choose a point $z\in\RR^2\setminus\bigl(\operatorname{span}(x)\cup\operatorname{span}(y)\bigr)$.
+Such a $z$ exists because the union of two lines through the origin is not all of $\RR^2$.
 
-The line segment from $x$ to $z$ does not contain the origin: if
-\[
-(1-t)x+tz=0
-\]
-for some $0<t<1$, then
-\[
-z=-\frac{1-t}{t}x\in\operatorname{span}(x),
-\]
-contrary to the choice of $z$.
+The line segment from $x$ to $z$ does not contain the origin: if $(1-t)x+tz=0$ for some $0<t<1$, then $z=-\frac{1-t}{t}x\in\operatorname{span}(x)$, contrary to the choice of $z$.
 The same argument shows that the line segment from $z$ to $y$ avoids the origin.
-Concatenating these two line segments gives a path from $x$ to $y$ in $\mathbb R^2\setminus\{0\}$.
-Thus the punctured plane is path-connected.
+Concatenating these two line segments gives a path from $x$ to $y$ in $\RR^2\setminus\{0\}$.
 :::
 
-<1>3. A homeomorphism $h:\mathbb R\to\mathbb R^2$ would induce a homeomorphism between a disconnected space and a connected space.
+<1>3. There is no homeomorphism $h\colon\RR\to\RR^2$.
+
 ::: {.proof}
-Assume such an $h$ exists, choose $c\in\mathbb R$, and put $a=h(c)$.
-Restricting $h$ gives a bijection
-\[
-h|_{\mathbb R\setminus\{c\}}:
-\mathbb R\setminus\{c\}
-\longrightarrow
-\mathbb R^2\setminus\{a\}.
-\]
-Its inverse is the corresponding restriction of $h^{-1}$, so this restriction is a homeomorphism.
-But by <1>1 its domain is disconnected, while by <1>2 its codomain is path-connected and hence connected.
-Connectedness is preserved by homeomorphisms, a contradiction.
+Assume such an $h$ exists, choose $c\in\RR$, and put $a=h(c)$.
+The restriction $h|_{\RR\setminus\{c\}}\colon\RR\setminus\{c\}\to\RR^2\setminus\{a\}$ is a bijection whose inverse is the corresponding restriction of $h^{-1}$, so it is a homeomorphism.
+By step <1>1 its domain is disconnected, while by step <1>2 its codomain is path-connected and hence connected.
+A homeomorphic image of a disconnected space is disconnected, a contradiction.
 :::
 
-<1>4. Therefore $\mathbb R$ and $\mathbb R^2$ are not homeomorphic.
+<1>4. Q.E.D.
+
 ::: {.proof}
-The assumed homeomorphism in <1>3 cannot exist.
+Step <1>3 shows that $\RR$ and $\RR^2$ are not homeomorphic.
 :::
 :::
