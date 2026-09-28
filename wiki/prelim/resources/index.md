@@ -9,7 +9,7 @@ References, topic lists, problem banks, and solutions for the preliminary exam.
 
 - [[prelim/resources/references|References and notes]] -- textbooks and review notes by subject.
 
-- [[prelim/resources/topics|Topics]] -- the UCLA Basic Examination syllabus by subject.
+- [[prelim/resources/topics|Topics]] -- the UCLA Basic Examination syllabus, and topic lists with textbook references for linear algebra, abstract algebra, point-set topology, calculus, complex analysis, and real analysis.
 
 - [[prelim/resources/problems|Problems]] -- problem sets and exam problem collections.
 
