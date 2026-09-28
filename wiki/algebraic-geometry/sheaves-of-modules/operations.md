@@ -9,13 +9,9 @@ topics:
 
 # Operations and functoriality
 
-Before any sheaf is quasicoherent it is a sheaf of modules, and the category it lives in has the operations the rest of the subject is written with.
-
 [[D-MODOX]]
 
 ## Pullback and pushforward
-
-Every geometric construction in the subject is one of these two applied to a sheaf one already understands.
 
 [[D-MODPULL]]
 
@@ -52,7 +48,7 @@ For $\OO_X$-modules the pullback is written $f^*$.
 
 [[D-MODIDEAL]]
 
-The closed subscheme sequence is the standard way to move a question about a subvariety into the ambient space, where the twists are available and the cohomology is known.
+For a closed subscheme $i\colon Z\hookrightarrow X$ with ideal sheaf $\mci_Z$, $H^j(Z,\OO_Z)\cong H^j(X,i_*\OO_Z)$, and the long exact sequence of $0\to\mci_Z\to\OO_X\to i_*\OO_Z\to0$ relates $H^j(Z,\OO_Z)$ to $H^j(X,\OO_X)$ and $H^{j+1}(X,\mci_Z)$.
 
 ## What separates the classes
 
