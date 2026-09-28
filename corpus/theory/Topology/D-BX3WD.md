@@ -15,7 +15,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space.
-A \dfn{universal cover} of $X$ is a [[D-2PNEG|covering space]] $p\colon \tilde X\to X$ with $\tilde X$ [[D-GFM35|simply connected]] [@Hat02].
+A \dfn{universal cover} of $X$ is a [[D-ANO2D|covering space]] $p\colon \tilde X\to X$ with $\tilde X$ [[D-GFM35|simply connected]] [@Hat02].
 :::
 
 ::: {.remark}
