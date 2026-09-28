@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2B-HW3
 kind: problem
-title: The mapping cylinder of a constant map $D^2\to\{y\}$ (warm-up)
+title: The mapping cylinder of a constant map $D^2\to\{y\}$
 classification:
   areas:
   - topology
@@ -23,13 +23,18 @@ Construct and describe the mapping cylinder.
 :::
 
 ::: {.solution}
-**Goal:** Give an explicit description of the mapping cylinder for the constant map.
+For a map $f\colon X\to Y$, the mapping cylinder is
+$$
+M_f=\bigl((X\times[0,1])\sqcup Y\bigr)\big/\bigl((x,1)\sim f(x)\text{ for all }x\in X\bigr).
+$$
 
-<1>1. Definition: <2>1. For any map $f:X\to Y$, the mapping cylinder is $$M_f=(X\times [0,1])\sqcup Y\Big/\!\sim,$$ with $(x,1)\sim f(x)$ for every $x\in X$.
-<2>2. Here $Y=\{y\}$, so every point of $D^2\times\{1\}$ is identified to the same top point $y$.
-<2>3. The subset $D^2\times\{0\}$ remains the original disk, embedded as a subspace of the cylinder.
+<1>1. For $f\colon D^2\to\{y\}$, $M_f$ is the (unreduced) cone $CD^2=(D^2\times[0,1])/(D^2\times\{1\})$, which is also the join $D^2\ast\{y\}$.
+::: {.proof}
+Since $Y=\{y\}$, the relation identifies all of $D^2\times\{1\}$ with the single point $y$ and nothing else, which is the defining quotient of the cone. The base $D^2\times\{0\}$ is a copy of $D^2$ in $M_f$.
+:::
 
-<1>2. Geometry.
-<2>1. $M_f$ is the (unreduced) cone on $D^2$, which is also the join $D^2\ast\{y\}$. <2>2. It is homeomorphic to a 3-ball: points of $D^2\times(0,1]$ sweep all rays to the top tip $y$.
-<2>3. So the mapping cylinder is a cone with base $D^2$ and a single cone apex.
+<1>2. $M_f$ is homeomorphic to the closed $3$-ball.
+::: {.proof}
+Regard $D^2\subset\mathbb R^2\times\{0\}\subset\mathbb R^3$ and let $a=(0,0,1)$. The map $D^2\times[0,1]\to\mathbb R^3$, $(x,t)\mapsto(1-t)x+ta$, is continuous, collapses exactly $D^2\times\{1\}$ to $a$, and is otherwise injective, so it induces a continuous bijection from the compact space $M_f$ onto the solid cone $\{(1-t)x+ta\}$, which is Hausdorff; hence a homeomorphism. The solid cone is a compact convex subset of $\mathbb R^3$ with nonempty interior, hence homeomorphic to $D^3$.
+:::
 :::
