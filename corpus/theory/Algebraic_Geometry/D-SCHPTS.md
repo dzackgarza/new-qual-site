@@ -23,13 +23,13 @@ prompts:
 
 ::: {.definition}
 The \dfn{residue field} at $x \in X$ is $\kappa(x) \da \OO_{X,x}/\mfm_x$; for $x = \mfp \in \Spec A$ this is $\Frac(A/\mfp) = A_\mfp/\mfp A_\mfp$.
-To **evaluate** $f \in \OO_X(U)$ at $x$ is to take its image under $\OO_X(U) \to \OO_{X,x} \to \kappa(x)$.
+To \dfn{evaluate} $f \in \OO_X(U)$ at $x$ is to take its image under $\OO_X(U) \to \OO_{X,x} \to \kappa(x)$.
 
-A **closed point** is one whose closure is itself, corresponding to a maximal ideal in an affine chart.
-A **generic point** of an irreducible closed $Z$ is $\eta$ with $\closure{\ts{\eta}} = Z$.
-For $X$ over $k$, a **rational point** is an $x$ with $\kappa(x) = k$.
+A \dfn{closed point} is one whose closure is itself, corresponding to a maximal ideal in an affine chart.
+A \dfn{generic point} of an irreducible closed $Z$ is $\eta$ with $\closure{\ts{\eta}} = Z$.
+For $X$ over $k$, a \dfn{rational point} is an $x$ with $\kappa(x) = k$.
 
-Write $\tilde x \leadsto x$, "$\tilde x$ **specialises** to $x$", when $x \in \closure{\ts{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ in an affine chart.
+Write $\tilde x \leadsto x$, "$\tilde x$ \dfn{specialises} to $x$", when $x \in \closure{\ts{\tilde x}}$; equivalently $\mfp_{\tilde x} \subseteq \mfp_x$ in an affine chart.
 :::
 
 ::: {.definition title="General points and general fibres"}
@@ -39,17 +39,18 @@ For a morphism $f \colon X \to Y$ with $Y$ irreducible, a property holds for the
 :::
 
 ::: {.example}
-General and generic differ.
-On $\AA^1_k = \Spec k[t]$ over an algebraically closed field $k$, the property "$\kappa(x) = k$" holds at a general point, since it holds at every closed point and the closed points form the dense open set $\AA^1_k \setminus \{\eta\}$, but it fails at the generic point $\eta$, where $\kappa(\eta) = k(t)$.
+Every nonempty open subset of an irreducible scheme contains its generic point.
+On $\AA^1_k = \Spec k[t]$ over an algebraically closed field $k$, the property "$\kappa(x) = k$" holds at every closed point and fails at the generic point $\eta$, where $\kappa(\eta) = k(t)$; the set of closed points is dense but not open.
 For the family $V(xy - t) \to \AA^1_t$, the general fibre is a smooth conic $xy = c$ with $c \neq 0$, while the generic fibre is the curve $xy = t$ over the field $k(t)$.
 :::
 
 ::: {.remark}
-A section of the structure sheaf evaluates in the residue field $\kappa(x)$, which can vary with $x$; it is therefore not generally a set-theoretic function from $\abs X$ to one fixed field.
+A section of the structure sheaf evaluates in the residue field $\kappa(x)$, which can vary with $x$; so a section is not in general a function from $\abs X$ to one fixed field.
 On $\Spec \ZZ$ the element $5$ evaluates to $0 \in \FF_5$, to $5 \in \FF_7$, and to $5 \in \QQ$ at the generic point.
-On a nonreduced scheme a function can be nonzero and vanish at every point: $\eps \in k[\eps]/\eps^2$.
-This is why $\OO_X$ is a sheaf of rings imposed on the space rather than extracted from it.
+On a nonreduced scheme a nonzero section can vanish at every point: $\eps \in k[\eps]/\eps^2$.
+So a section of $\OO_X$ is not determined by its values at the points of $X$.
 
-Specialisation orders the points by inclusion of primes, so a scheme carries a partial order of which the classical picture only ever sees the minimal elements.
-A DVR is the smallest interesting example: $\Spec R$ is a generic point specialising to one closed point, and a morphism $\Spec R \to X$ is a choice of specialisation together with a valuation, which is exactly the data the valuative criteria for separatedness and properness test.
+Specialisation is a partial order on the points of a scheme; on $\Spec A$ it is inclusion of primes.
+For a variety over an algebraically closed field, the points of the classical variety are the closed points of the associated scheme.
+For a discrete valuation ring $R$ with fraction field $K$, $\Spec R$ consists of a generic point specialising to a closed point, and the valuative criteria ([[D-8XX95]]) test lifts of morphisms $\Spec K\to X$ to $\Spec R$.
 :::
