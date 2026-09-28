@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-7A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 7A
+title: Elements of $\operatorname{SL}(2,\RR)$ without real eigenvalues are conjugate to rotations
 classification:
   areas: [prelim]
   topics: []
