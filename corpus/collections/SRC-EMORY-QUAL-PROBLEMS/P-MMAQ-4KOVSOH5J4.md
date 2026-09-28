@@ -32,12 +32,10 @@ Let $G$ be a finite group.
 :::
 
 ::: {.solution}
-**Goal.** (1) A finite group is not a union of conjugates of a proper subgroup. (2) A transitive action on $|X| > 1$ points has a fixed-point-free element.
-
 <1>1. (1) $G \neq \bigcup_{g \in G} gHg^{-1}$ for $H < G$ proper.
 <2>1. The number of distinct conjugates of $H$ is $[G : N_G(H)] \le [G : H]$.
 ::: {.proof}
-the conjugates of $H$ are indexed by $G/N_G(H)$, and $N_G(H) \supseteq H$, so $[G : N_G(H)] \le [G : H]$.
+The conjugates of $H$ are indexed by $G/N_G(H)$, and $N_G(H) \supseteq H$, so $[G : N_G(H)] \le [G : H]$.
 :::
 <2>2. Each conjugate has $|H|$ elements, and all contain the identity.
 ::: {.proof}
@@ -45,21 +43,21 @@ $|gHg^{-1}| = |H|$, and $1 \in gHg^{-1}$ for all $g$.
 :::
 <2>3. Hence $\abs{\bigcup_g gHg^{-1}} \le 1 + [G:H](|H| - 1) = 1 + |G| - [G:H] < |G|$.
 ::: {.proof}
-the union has at most $1 + (\text{number of conjugates})(|H| - 1)$ elements (counting the identity once), and $[G:H] > 1$ since $H$ is proper.
+The union has at most $1 + (\text{number of conjugates})(|H| - 1)$ elements (counting the identity once), and $[G:H] > 1$ since $H$ is proper.
 :::
 <2>4. Hence the union is a proper subset of $G$.
 ::: {.proof}
-it has fewer than $|G|$ elements.
+It has fewer than $|G|$ elements.
 :::
 
 <1>2. (2) A transitive action on $|X| > 1$ has a fixed-point-free element.
 <2>1. Suppose every $g \in G$ fixes some point of $X$.
 ::: {.proof}
-assume for contradiction.
+Assume this for contradiction.
 :::
 <2>2. Then $G = \bigcup_{x \in X} G_x$, where $G_x$ is the stabilizer of $x$.
 ::: {.proof}
-every element fixes some point, so every element lies in some stabilizer.
+Every element fixes some point, so every element lies in some stabilizer.
 :::
 <2>3. The stabilizers $G_x$ are all conjugate (since the action is transitive).
 ::: {.proof}
