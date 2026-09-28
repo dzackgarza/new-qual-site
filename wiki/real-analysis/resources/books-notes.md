@@ -13,7 +13,8 @@ order: 15
 
 - [@SS05]
 
-  Does not treat $L^p$ spaces; Lieb and Loss, *Analysis*, Chapter 2, treats $L^p$ spaces and convexity inequalities.
+  Chapters 1--3 treat Lebesgue measure, integration, and differentiation on $\RR^d$; Chapters 4--5 treat $L^2$ and Hilbert spaces; Chapter 6 treats abstract measure spaces.
+  $L^p$ spaces for general $p$ are treated in [@Fol13, chap. 6] and, with convexity inequalities, in Lieb and Loss, *Analysis*, Chapter 2.
 
 - [@SS03a]
 
