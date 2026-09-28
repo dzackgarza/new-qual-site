@@ -120,7 +120,7 @@ Dominated convergence therefore gives
 
 <1>5. Evaluate the exponentially damped sine integral.
 ::: {.proof}
-The calculation in Step 2 gives, for \(a>0\),
+The calculation in step <1>2 gives, for \(a>0\),
 \[
 \int_0^\infty e^{-ax}\frac{\sin x}{x}\,dx=\arctan\frac1a.
 \]
