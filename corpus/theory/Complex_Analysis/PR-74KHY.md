@@ -39,6 +39,6 @@ If $S'$ is another Möbius transformation with $S'(z_j)=w_j$ for $j=1,2,3$, then
 :::
 
 ::: {.remark}
-Ahlfors, *Complex Analysis*, ch. 3, §3.2 (The Cross Ratio), Definition 12.
-Ahlfors normalizes with four arguments, $(z_1,z_2,z_3,z_4)$ being the image of $z_1$ under the map carrying $z_2, z_3, z_4$ to $1, 0, \infty$; the three-argument form above is that map with $z_2, z_3, z_4$ relabelled $z_2, z_1, z_3$.
+In [@Ahl79, Chapter 3, Section 3.2, Definition 12], the cross ratio $(z_1,z_2,z_3,z_4)$ has four arguments: it is the image of $z_1$ under the Möbius transformation carrying $z_2, z_3, z_4$ to $1, 0, \infty$.
+In that notation, $(z;z_1,z_2,z_3)=(z,z_2,z_1,z_3)$.
 :::
