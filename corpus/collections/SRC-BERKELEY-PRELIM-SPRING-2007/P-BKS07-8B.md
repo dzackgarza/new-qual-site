@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-8B
 kind: problem
-title: UC Berkeley Spring 2007 prelim 8B
+title: Harmonic function on the closed upper half-disk equal to $3$ on the diameter and $7$ on the arc
 classification:
   areas: [prelim]
   topics: []
