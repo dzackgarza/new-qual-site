@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK97S-08
 kind: problem
-title: Classify abelian groups of order $80$
+title: Abelian groups of order $80$
 classification:
   areas:
   - prelim
