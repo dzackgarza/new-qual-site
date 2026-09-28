@@ -29,7 +29,7 @@ Let $\phi : \mathbb { R } [ x ] \to \mathbb { R } [ x ]$ be defined by $f \mapst
 $$\phi(f) = a_0x + \frac{a_1}{2}x^2 + \cdots + \frac{a_n}{n+1}x^{n+1}.$$
 This formula is additive in the coefficients, so $\phi ( f + g ) = \phi ( f ) + \phi ( g )$ for all $f , g \in \mathbb { R } [ x ]$, and $\phi$ is a homomorphism.
 
-Now, the kernel of $\phi$ are the set of things that map to the identity, 0. So $K e r \phi = \{ f \vert \int f = 0 \} = \{ a _ { 0 } + a _ { 1 } x + \dotsc + a _ { n } x ^ { n } \vert a _ { 0 } x + \frac { a _ { 1 } } { 2 } x ^ { 2 } + \dotsc + \frac { a _ { n } } { n + 1 } x ^ { n + 1 } = 0 \} = \{ a _ { 0 } = a _ { 1 } = \dotsc = a _ { n } = 0 \} = \{ 0 \}$
+The kernel of $\phi$ is the set of polynomials that map to the identity $0$: $K e r \phi = \{ f \vert \int f = 0 \} = \{ a _ { 0 } + a _ { 1 } x + \dotsc + a _ { n } x ^ { n } \vert a _ { 0 } x + \frac { a _ { 1 } } { 2 } x ^ { 2 } + \dotsc + \frac { a _ { n } } { n + 1 } x ^ { n + 1 } = 0 \} = \{ a _ { 0 } = a _ { 1 } = \dotsc = a _ { n } = 0 \} = \{ 0 \}$
 
 If the function $\textstyle \int f$ goes through (0,1) instead, it is not a homomorphism.
 This is because $\phi ( f + g ) ( 0 ) = 1$ but $( \phi ( f ) + \phi ( g ) ) ( 0 ) = \phi ( f ) ( 0 ) + \phi ( g ) ( 0 ) = 1 + 1 = 2$ , so the functions are not the same.
