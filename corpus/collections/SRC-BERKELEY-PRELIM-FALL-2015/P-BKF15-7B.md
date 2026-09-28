@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Find the number of surjective linear maps from an n-dimensional vector space over the field with 2 elements to itself.
+Find the number of surjective linear maps from an $n$-dimensional vector space over the field with $2$ elements to itself.
 :::
 
 ::: {.solution}
