@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-7
 kind: problem
-title: "SS 10.7: Triangular and septagonal number identities via the theta function"
+title: Triangular and septagonal number identities from the Jacobi triple product
 classification:
   areas:
   - complex-analysis
