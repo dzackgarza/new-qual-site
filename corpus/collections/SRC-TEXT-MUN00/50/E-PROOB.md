@@ -42,7 +42,7 @@ with each \(K_i\) contained in one coordinate chart. Under that chart, \(K_i\) i
 \]
 The finite closed-union theorem for dimension then gives \(\dim K\le m\).
 
-Thus every compact subspace of \(M\) has dimension at most \(m\). Applying the preceding \(\sigma\)-compact theorem yields
+Thus every compact subspace of \(M\) has dimension at most \(m\). Applying the \(\sigma\)-compact theorem [[E-MVB8P]] yields
 \[
 \boxed{\dim M\le m}.
 \]
