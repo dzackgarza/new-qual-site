@@ -20,7 +20,8 @@ topics:
 ## Point-set topology
 
 ::: {.remark title="The prefix \"locally\""}
-For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some neighborhood with property $P$; some notions, such as local connectedness, instead require a neighborhood basis of sets with property $P$ at every point.
+For a property $P$ of spaces, \"$X$ is locally $P$\" has two definitions in use: every $x\in X$ has some neighborhood with property $P$, or every $x\in X$ has a neighborhood basis of sets with property $P$.
+Local connectedness and local path connectedness use the second.
 :::
 
 [[D-Y6JAS]]
