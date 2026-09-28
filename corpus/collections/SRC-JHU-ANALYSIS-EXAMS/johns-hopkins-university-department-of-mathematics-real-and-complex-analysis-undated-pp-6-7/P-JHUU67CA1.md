@@ -54,8 +54,6 @@ of closed sets with empty interior [@Fol13]. Hence
 some $Z_m$ has nonempty interior. The entire function
 $f^{(m)}$ vanishes on this open set. The identity theorem
 on the connected plane gives $f^{(m)}\equiv0$ [@SS03].
-This obtains a common derivative order from the hypothesis,
-rather than assuming the same coefficient vanishes at all centers.
 :::
 
 <1>2. The entire Taylor series terminates.
