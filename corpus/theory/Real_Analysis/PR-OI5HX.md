@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-OI5HX
 kind: proposition
 title: Essentially bounded functions agree almost everywhere with bounded functions
-slogan: 'An essentially bounded function has a genuinely bounded representative with the same $L^\infty$ bound.'
+slogan: 'An essentially bounded $f$ agrees almost everywhere with a bounded measurable $g$ with $\sup\abs{g}\le\norm{f}_\infty$.'
 classification:
   areas:
   - real-analysis
