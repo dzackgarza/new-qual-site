@@ -34,7 +34,7 @@ What is $\left(\mathbb Z/(q-1)\mathbb Z\right)^\times$?
 Put $N=|q-1|$. Write $C_d$ for a cyclic group of order $d$,
 with $C_1$ the trivial group. For $N\geq2$, factor
 $N=\prod_{\ell\mid N}\ell^{e_\ell}$ into prime powers.
-Then the complete group description is
+Then
 $$
 (\mathbb Z/N\mathbb Z)^\times
 \cong\prod_{\ell\mid N}U(\ell,e_\ell),
@@ -54,7 +54,10 @@ For $N=0$ the ring is $\mathbb Z$ and its unit group is
 $\{1,-1\}\cong C_2$. For $N=1$ the ring has one element
 and its unit group is trivial.
 
-<1>1. The coprimality criterion and product decomposition hold.
+<1>1. For $N\geq2$, the class $\bar a$ is a unit of $\mathbb Z/N\mathbb Z$ if
+and only if $\gcd(a,N)=1$, and
+$(\mathbb Z/N\mathbb Z)^\times\cong\prod_{\ell\mid N}(\mathbb Z/\ell^{e_\ell}\mathbb Z)^\times$,
+where the factor at $\ell$ has order $\ell^{e_\ell-1}(\ell-1)$.
 
 ::: {.proof}
 For $N\geq2$, a residue class $\bar a$ is a unit exactly
@@ -118,7 +121,9 @@ forces $h+1\geq e$. Thus $h=e-1$, giving an element
 whose order equals the whole unit-group order, as required.
 :::
 
-<1>3. The factors at powers of two have the stated structure.
+<1>3. $(\mathbb Z/2\mathbb Z)^\times\cong C_1$,
+$(\mathbb Z/4\mathbb Z)^\times\cong C_2$, and
+$(\mathbb Z/2^e\mathbb Z)^\times\cong C_2\times C_{2^{e-2}}$ for $e\geq3$.
 
 ::: {.proof}
 Modulo $2$ there is one unit. Modulo $4$ the units are
@@ -147,7 +152,8 @@ and is not in $\langle5\rangle$. The factors commute,
 so this gives $C_2\times C_{2^{e-2}}$.
 :::
 
-<1>4. The exceptional moduli cause no additional cases.
+<1>4. For $N=0$ the unit group is $\{1,-1\}\cong C_2$, and for $N=1$ it is
+trivial.
 
 ::: {.proof}
 The ideals $(q-1)$ and $(|q-1|)$ in $\mathbb Z$ coincide.
