@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-3
 kind: problem
-title: "SS 1.3: Solutions of z^n = omega and their count"
+title: The $n$ solutions of $z^n=\omega$
 classification:
   areas:
   - complex-analysis
