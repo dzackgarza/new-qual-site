@@ -24,6 +24,4 @@ Use the integral test.
 
 ::: {.solution}
 The integral test shows that $\begin{array} { r } { 1 / ( N + 1 ) < \sum _ { n = N + 1 } ^ { \infty } 1 / n ^ { 2 } < 1 / N . } \end{array}$ , so $N = 1 0 ^ { 6 }$
-
-Score:
 :::
