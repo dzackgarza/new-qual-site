@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGREV1-04
 kind: problem
-title: A homomorphism from Z8 to Z20
+title: A homomorphism $\ZZ_8\to\ZZ_{20}$ with $\phi(3)=15$
 classification:
   areas:
   - algebra
@@ -34,7 +34,7 @@ Suppose that $\phi:\mathbb{Z}_8\to\mathbb{Z}_{20}$ is a group homomorphism with 
 ::: {.solution}
 All groups are written additively.
 
-<1>1. Determine the homomorphism.
+<1>1. $\phi(x)=5x$ for all $x\in\mathbb Z_8$.
 ::: {.proof}
 Every homomorphism from the cyclic group $\mathbb Z_8$ is determined by
 $$
@@ -62,7 +62,7 @@ $$
 $$
 :::
 
-<1>2. Compute the image and kernel.
+<1>2. $\operatorname{im}\phi=\{0,5,10,15\}$ and $\ker\phi=\{0,4\}$.
 ::: {.proof}
 As $x$ ranges through $\mathbb Z_8$, the multiples $5x$ modulo $20$ are
 $$
@@ -85,7 +85,7 @@ $$
 $$
 :::
 
-<1>3. Compute the fiber over $5$.
+<1>3. $\phi^{-1}(5)=\{1,5\}$.
 ::: {.proof}
 We have
 $$
