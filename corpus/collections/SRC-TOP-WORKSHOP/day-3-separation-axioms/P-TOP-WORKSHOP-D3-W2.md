@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-W2
 kind: problem
-title: The separation-axiom implication chain (workshop warm-up)
+title: '$T_4\Rightarrow T_3\Rightarrow T_2\Rightarrow T_1\Rightarrow T_0$'
 classification:
   areas:
   - topology
