@@ -36,15 +36,7 @@ Do isomorphic varieties have isomorphic affine cones?
 :::
 
 ::: {.solution}
-<1>1. The answer is no: the affine cone depends on the chosen projective
-embedding, not only on the abstract variety.
-
-::: {.proof}
-We will exhibit two embeddings of the same abstract variety $\PP^1$ whose
-affine cones are not isomorphic.
-:::
-
-<1>2. For the standard embedding
+<1>1. For the standard embedding
 $$
 \PP^1\subseteq\PP^1,
 $$
@@ -62,7 +54,7 @@ is zero. By definition, the affine cone is the zero locus of the same
 homogeneous ideal in $\AA^2$, hence all of $\AA^2$.
 :::
 
-<1>3. Under the quadratic Veronese embedding
+<1>2. Under the quadratic Veronese embedding
 $$
 \nu_2:\PP^1\longrightarrow\PP^2,
 \qquad
@@ -84,7 +76,7 @@ irreducible projective curve contained in the irreducible conic
 $V(XZ-Y^2)$, the two coincide.
 :::
 
-<1>4. The affine cone over the Veronese image is
+<1>3. The affine cone over the Veronese image is
 $$
 \widehat C
 =
@@ -102,7 +94,7 @@ The affine cone is the zero locus of that same homogeneous ideal in
 $\AA^3$.
 :::
 
-<1>5. The cone $\widehat C$ is singular at the origin.
+<1>4. The cone $\widehat C$ is singular at the origin.
 
 ::: {.proof}
 Its coordinate ring is
@@ -129,11 +121,11 @@ Thus the local ring $A_\mfm$ has embedding dimension $3$ and Krull
 dimension $2$, so it is not regular. Therefore the vertex is singular.
 :::
 
-<1>6. The two affine cones are not isomorphic.
+<1>5. The two affine cones are not isomorphic.
 
 ::: {.proof}
 The affine plane $\AA^2$ is smooth, hence all of its local rings are
-regular. By step <1>5, $\widehat C$ has a nonregular local ring at its
+regular. By step <1>4, $\widehat C$ has a nonregular local ring at its
 vertex. An isomorphism of varieties induces isomorphisms of local rings
 and therefore preserves regularity. Consequently
 $$
@@ -145,10 +137,11 @@ copy of $\PP^1$ and the other is its Veronese image. Hence isomorphic
 projective varieties can have non-isomorphic affine cones.
 :::
 
-<1>7. Q.E.D.
+<1>6. Q.E.D.
 
 ::: {.proof}
-Steps <1>2--<1>4 construct the two cones, and steps <1>5--<1>6 distinguish
-them.
+Steps <1>1--<1>3 construct the affine cones of two embeddings of $\PP^1$,
+and steps <1>4--<1>5 show that they are not isomorphic. The answer is
+$\boxed{\text{no}}$: the affine cone depends on the projective embedding.
 :::
 :::
