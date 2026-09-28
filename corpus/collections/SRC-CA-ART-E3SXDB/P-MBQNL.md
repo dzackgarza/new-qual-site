@@ -29,62 +29,71 @@ Show that
 :::
 
 ::: {.solution}
-**Goal:** Show that $\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{\pi}{2}$.
+Let $f(z) \coloneqq e^{iz}/z$. For $0<\varepsilon<R$, let $\gamma_\varepsilon$ be the upper semicircle $z=\varepsilon e^{it}$ traversed from $-\varepsilon$ to $\varepsilon$ ($t$ from $\pi$ to $0$), and let $\Gamma_R$ be the upper semicircle $z=Re^{it}$, $t\in[0,\pi]$, traversed counterclockwise.
+The closed contour $C_{\varepsilon,R}$ consists of $[-R,-\varepsilon]$, $\gamma_\varepsilon$, $[\varepsilon,R]$, and $\Gamma_R$.
 
-<1>1. Reduce to a full-line integral: $\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{1}{2}\, \Im\qty(\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx)$ (principal value).
-    <2>1. $\frac{e^{ix}}{x} = \frac{\cos x}{x} + i\frac{\sin x}{x}$.
-        ::: {.proof}
-        Euler's formula $e^{ix} = \cos x + i \sin x$.
-        :::
-    <2>2. $\int_{-\infty}^{\infty} \frac{\cos x}{x}\, dx = 0$.
-        ::: {.proof}
-        The real part is odd, so its principal value vanishes.
-        :::
-    <2>3. $\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = 2\int_0^{\infty} \frac{\sin x}{x}\, dx$.
-        ::: {.proof}
-        $\sin x / x$ is even.
-        :::
-    <2>4. The reduction follows.
-        ::: {.proof}
-        <2>1--<2>3 give $\frac{1}{2}\Im\qty(\int e^{ix}/x\, dx) = \frac{1}{2}\int_{-\infty}^{\infty} \frac{\sin x}{x}\, dx = \int_0^{\infty} \frac{\sin x}{x}\, dx$.
-        :::
+<1>1. $\displaystyle\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{1}{2}\, \Im\left(\operatorname{PV}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx\right)$, where
+$$\operatorname{PV}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx \coloneqq \lim_{\varepsilon\to0,\,R\to\infty}\left(\int_{-R}^{-\varepsilon}+\int_{\varepsilon}^{R}\right)\frac{e^{ix}}{x}\,dx.$$
 
-<1>2. Integrate $f(z) := \frac{e^{iz}}{z}$ over the indented semicircle: the segment $[-R, -\varepsilon]$, the small semicircle $\gamma_\varepsilon$ from $-\varepsilon$ to $\varepsilon$ through the upper half-plane, the segment $[\varepsilon, R]$, and the upper semicircle $\Gamma_R$ of radius $R$.
+<2>1. $\dfrac{e^{ix}}{x} = \dfrac{\cos x}{x} + i\,\dfrac{\sin x}{x}$ for real $x\neq0$.
 
-<1>3. The integral over the closed contour is $0$.
-    ::: {.proof}
-    The simple pole of $f$ at $z = 0$ is excluded by the indentation $\gamma_\varepsilon$; inside the contour $f$ is holomorphic, so Cauchy's theorem applies.
-    :::
-
-<1>4. The integral over the small semicircle tends to $-i\pi$ as $\varepsilon \to 0$.
-    <2>1. Parametrize $z = \varepsilon e^{it}$ with $t$ running from $\pi$ to $0$.
-        ::: {.proof}
-        This traces the upper semicircle from $-\varepsilon$ to $\varepsilon$.
-        :::
-    <2>2. $\int_{\gamma_\varepsilon} f\, dz = i\int_\pi^0 e^{i\varepsilon e^{it}}\, dt \to i\int_\pi^0 1\, dt = -i\pi$.
-        ::: {.proof}
-        The exponential is continuous, so the limit passes inside; the sign is negative because the semicircle is traversed clockwise (as part of the positively oriented boundary, going from $-\varepsilon$ to $\varepsilon$ in the upper half-plane).
-        :::
-
-<1>5. The integral over the large semicircle tends to $0$ as $R \to \infty$.
-    <2>1. On $\Gamma_R$, $z = Re^{it}$ with $t \in [0, \pi]$, and $\Im z = R\sin t \geq 0$, so $\abs{e^{iz}} = e^{-R\sin t} \leq 1$.
-        ::: {.proof}
-        Direct computation of the modulus on the arc.
-        :::
-    <2>2. $\int_{\Gamma_R} \frac{e^{iz}}{z}\, dz = \int_0^\pi i e^{iRe^{it}}\, dt \to 0$.
-        ::: {.proof}
-        The crude bound $\abs{e^{iz}} \leq 1$ only gives $\pi$; the correct estimate is Jordan's lemma: $e^{-R\sin t} \to 0$ pointwise on $(0, \pi)$ and is dominated by $1$, so dominated convergence gives $\int_0^\pi i e^{iRe^{it}}\, dt \to \int_0^\pi i \cdot 0\, dt = 0$.
-        :::
-
-<1>6. Pass to the limit.
-    ::: {.proof}
-    $0 = \int_{[-R,-\varepsilon]} f + \int_{\gamma_\varepsilon} f + \int_{[\varepsilon,R]} f + \int_{\Gamma_R} f$; letting $\varepsilon \to 0$ and $R \to \infty$ and using <1>4 and <1>5 gives $\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx - i\pi = 0$, i.e. the principal value is $i\pi$.
-    :::
-
-<1>7. Q.E.D.
-    ::: {.proof}
-    <1>1 and <1>6 give $\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{1}{2} \Im(i\pi) = \frac{\pi}{2}$.
-    :::
-
+::: {.proof}
+This is Euler's formula $e^{ix} = \cos x + i \sin x$.
 :::
 
+<2>2. $\displaystyle\left(\int_{-R}^{-\varepsilon}+\int_{\varepsilon}^{R}\right)\frac{\cos x}{x}\,dx = 0$.
+
+::: {.proof}
+The function $\cos x/x$ is odd and the domain of integration is symmetric about $0$.
+:::
+
+<2>3. $\displaystyle\left(\int_{-R}^{-\varepsilon}+\int_{\varepsilon}^{R}\right)\frac{\sin x}{x}\,dx = 2\int_\varepsilon^{R} \frac{\sin x}{x}\, dx$.
+
+::: {.proof}
+The function $\sin x / x$ is even.
+:::
+
+<2>4. Q.E.D.
+
+::: {.proof}
+By steps <2>1--<2>3, the imaginary part of the truncated integral of $e^{ix}/x$ is $2\int_\varepsilon^R \frac{\sin x}{x}\,dx$; let $\varepsilon\to0$ and $R\to\infty$.
+:::
+
+<1>2. $\displaystyle\int_{C_{\varepsilon,R}} f(z)\,dz = 0$.
+
+::: {.proof}
+The only singularity of $f$ is the simple pole at $z=0$, which the indentation $\gamma_\varepsilon$ excludes. Hence $f$ is holomorphic on a neighborhood of the closed region bounded by $C_{\varepsilon,R}$, and Cauchy's theorem applies.
+:::
+
+<1>3. $\displaystyle\int_{\gamma_\varepsilon} f(z)\,dz \to -i\pi$ as $\varepsilon \to 0$.
+
+::: {.proof}
+With $z = \varepsilon e^{it}$, $dz/z = i\,dt$, so
+$$\int_{\gamma_\varepsilon} f\, dz = i\int_\pi^0 e^{i\varepsilon e^{it}}\, dt.$$
+The integrand converges uniformly to $1$ as $\varepsilon\to0$, so the integral tends to $i\int_\pi^0 dt=-i\pi$.
+:::
+
+<1>4. $\displaystyle\int_{\Gamma_R} f(z)\,dz \to 0$ as $R \to \infty$.
+
+::: {.proof}
+With $z = Re^{it}$, $dz/z = i\,dt$, so
+$$\int_{\Gamma_R} f\, dz = i\int_0^\pi e^{iRe^{it}}\, dt,
+\qquad
+\abs{e^{iRe^{it}}} = e^{-R\sin t} \le 1.$$
+For each $t\in(0,\pi)$, $e^{-R\sin t}\to0$ as $R\to\infty$. Dominated convergence, with dominating function $1$ on $[0,\pi]$, gives $\int_0^\pi e^{-R\sin t}\,dt\to0$, hence the claim.
+:::
+
+<1>5. $\displaystyle\operatorname{PV}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx = i\pi$.
+
+::: {.proof}
+By step <1>2,
+$$0 = \int_{-R}^{-\varepsilon} f + \int_{\gamma_\varepsilon} f + \int_{\varepsilon}^{R} f + \int_{\Gamma_R} f.$$
+Let $\varepsilon \to 0$ and $R \to \infty$. Steps <1>3 and <1>4 give $\operatorname{PV}\!\int_{-\infty}^{\infty} \frac{e^{ix}}{x}\, dx - i\pi = 0$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>5 give $\int_0^{\infty} \frac{\sin x}{x}\, dx = \frac{1}{2} \Im(i\pi) = \boxed{\frac{\pi}{2}}$.
+:::
+:::
