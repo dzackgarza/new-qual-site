@@ -36,5 +36,5 @@ $$
 :::
 
 ::: {.remark}
-The source does not reproduce table 5.1; the labels $\alpha_1, \ldots, \alpha_{12}$ in the solution refer to that table.
+The labels $\alpha_1, \ldots, \alpha_{12}$ are the names of the elements of $A_4$ in table 5.1 of the textbook.
 :::
