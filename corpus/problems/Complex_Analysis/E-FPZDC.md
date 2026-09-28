@@ -83,7 +83,7 @@ M(a)=\int_0^\infty {v^{a-1}\over1+v}\,dv,
 \]
 the same compact-majorant argument used above shows that $M$ is holomorphic
 on the strip $0<\Re a<1$. The function $\pi/\sin(\pi a)$ is holomorphic there
-as well. The preceding exercise proves
+as well. The formula in the statement with $n=1$ gives
 \[
 M(a)={\pi\over\sin(\pi a)}
 \]
