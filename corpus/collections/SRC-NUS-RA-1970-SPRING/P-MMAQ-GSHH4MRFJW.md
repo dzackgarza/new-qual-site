@@ -28,10 +28,8 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-**Goal:** Decide the truth of (b) and (c).
-
 <1>1. (b) is false.
-<2>1. Exhibit a counterexample: $f_k \definedas \frac{1}{k} \chi_{[0,k]}$ on $\RR$.
+<2>1. Let $f_k \definedas \frac{1}{k} \chi_{[0,k]}$ on $\RR$.
 ::: {.proof}
 Each $f_k$ is measurable (indicator of an interval), and $\int_\RR f_k = \frac{1}{k} \cdot k = 1$ for every $k$.
 :::
@@ -39,9 +37,9 @@ Each $f_k$ is measurable (indicator of an interval), and $\int_\RR f_k = \frac{1
 ::: {.proof}
 $\sup_{x \in \RR} \abs{f_k(x) - 0} = \frac{1}{k} \to 0$.
 :::
-<2>3. But $\int f_k = 1 \neq 0 = \int 0 = \lim_k \int f_k$ fails.
+<2>3. $\lim_k \int f_k = 1 \neq 0 = \int 0$.
 ::: {.proof}
-Each integral is $1$ while the limit function's integral is $0$; so $\int f = 0 \neq 1 = \lim_k \int f_k$.
+Each integral $\int f_k$ is $1$ by step <2>1, while the uniform limit $f = 0$ has integral $0$.
 :::
 <2>4. Q.E.D.
 ::: {.proof}
