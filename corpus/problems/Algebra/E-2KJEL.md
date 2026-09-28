@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2KJEL
 kind: problem
-title: "The Jordan canonical form of a matrix"
+title: Jordan form of $\begin{pmatrix}5&-1\\9&-1\end{pmatrix}\oplus\begin{pmatrix}7&-2\\12&-3\end{pmatrix}$
 classification:
   areas:
   - algebra
