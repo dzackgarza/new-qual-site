@@ -114,7 +114,7 @@ gives the inverse on every element of the product.
 Consequently $B\cong\mathbb F_2\times E$ as rings.
 :::
 
-<1>4. The product description determines the remaining ring structure.
+<1>4. The ring $B$ has eight elements, unit group $C_3$, four nonzero zero divisors, exactly the ideals $(0),(e_0),(e_1),B$, and no nonzero nilpotents.
 
 ::: {.proof}
 The ring $B$ has eight elements, characteristic $2$, and
