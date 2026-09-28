@@ -45,7 +45,7 @@ Show that
 
 <1>3. The arc contribution $\int_{\text{arc}} e^{-z^2}\, dz \to 0$ as $R \to \infty$.
     ::: {.proof}
-    On the arc $z = Re^{i\theta}$, $0 \leq \theta \leq \pi/4$, $\abs{e^{-z^2}} = e^{-R^2 \cos 2\theta}$; and $\cos 2\theta \geq \cos(2\theta) \geq 0$ with $\cos 2\theta \geq 1/\sqrt2$ for $0 \leq \theta \leq \pi/8$ and the standard estimate gives $\abs{\int_{\text{arc}}} \leq R\int_0^{\pi/4} e^{-R^2\cos 2\theta}\, d\theta \to 0$ as $R\to\infty$ (split the integral at $\pi/8$; on $[\pi/8, \pi/4]$ bound $e^{-R^2\cos2\theta}$ by the endpoint value, or note the integrand is exponentially small on both pieces).
+    On the arc $z = Re^{i\theta}$, $0 \leq \theta \leq \pi/4$, $\abs{e^{-z^2}} = e^{-R^2 \cos 2\theta}$. Since $\theta\mapsto\cos 2\theta$ is concave on $[0,\pi/4]$, it lies above its chord: $\cos 2\theta \geq 1 - 4\theta/\pi$. Hence $\abs{\int_{\text{arc}}} \leq R\int_0^{\pi/4} e^{-R^2(1-4\theta/\pi)}\, d\theta = R e^{-R^2}\cdot\frac{\pi}{4R^2}\bigl(e^{R^2}-1\bigr) \leq \frac{\pi}{4R} \to 0$ as $R\to\infty$.
     :::
 
 <1>4. $\int_{\text{ray}} e^{-z^2}\, dz = -e^{i\pi/4}\int_0^R e^{-ir^2}\, dr$.
