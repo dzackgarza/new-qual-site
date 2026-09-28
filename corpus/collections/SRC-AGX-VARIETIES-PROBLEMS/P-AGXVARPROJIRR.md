@@ -42,7 +42,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $k$ be the algebraically closed ground field of the source, and let
+Let $k$ be an algebraically closed field, and let
 $$
 X=V_+(P)\subseteq\PP^n_k
 $$

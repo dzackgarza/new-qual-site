@@ -22,6 +22,14 @@ source:
   - name: Ch1 Exercises
     problems:
     - E-SS1.EX-1
+    - E-SS1.EX-2
+    - E-SS1.EX-3
+    - E-SS1.EX-4
+    - E-SS1.EX-5
+    - E-SS1.EX-6
+    - E-SS1.EX-7
+    - E-SS1.EX-8
+    - E-SS1.EX-9
     - E-SS1.EX-10
     - E-SS1.EX-11
     - E-SS1.EX-12
@@ -32,7 +40,6 @@ source:
     - E-SS1.EX-17
     - E-SS1.EX-18
     - E-SS1.EX-19
-    - E-SS1.EX-2
     - E-SS1.EX-20
     - E-SS1.EX-21
     - E-SS1.EX-22
@@ -40,22 +47,9 @@ source:
     - E-SS1.EX-24
     - E-SS1.EX-25
     - E-SS1.EX-26
-    - E-SS1.EX-3
-    - E-SS1.EX-4
-    - E-SS1.EX-5
-    - E-SS1.EX-6
-    - E-SS1.EX-7
-    - E-SS1.EX-8
-    - E-SS1.EX-9
   - name: Ch2 Exercises
     problems:
     - E-SS2.EX-1
-    - E-SS2.EX-10
-    - E-SS2.EX-11
-    - E-SS2.EX-12
-    - E-SS2.EX-13
-    - E-SS2.EX-14
-    - E-SS2.EX-15
     - E-SS2.EX-2
     - E-SS2.EX-3
     - E-SS2.EX-4
@@ -64,13 +58,28 @@ source:
     - E-SS2.EX-7
     - E-SS2.EX-8
     - E-SS2.EX-9
+    - E-SS2.EX-10
+    - E-SS2.EX-11
+    - E-SS2.EX-12
+    - E-SS2.EX-13
+    - E-SS2.EX-14
+    - E-SS2.EX-15
   - name: Ch2 Problems
     problems:
     - E-SS2.PR-1
+    - E-SS2.PR-2
     - E-SS2.PR-3
   - name: Ch3 Exercises
     problems:
     - E-SS3.EX-1
+    - E-SS3.EX-2
+    - E-SS3.EX-3
+    - E-SS3.EX-4
+    - E-SS3.EX-5
+    - E-SS3.EX-6
+    - E-SS3.EX-7
+    - E-SS3.EX-8
+    - E-SS3.EX-9
     - E-SS3.EX-10
     - E-SS3.EX-11
     - E-SS3.EX-12
@@ -81,17 +90,9 @@ source:
     - E-SS3.EX-17
     - E-SS3.EX-18
     - E-SS3.EX-19
-    - E-SS3.EX-2
     - E-SS3.EX-20
     - E-SS3.EX-21
     - E-SS3.EX-22
-    - E-SS3.EX-3
-    - E-SS3.EX-4
-    - E-SS3.EX-5
-    - E-SS3.EX-6
-    - E-SS3.EX-7
-    - E-SS3.EX-8
-    - E-SS3.EX-9
   - name: Ch3 Problems
     problems:
     - E-SS3.PR-1
@@ -99,9 +100,6 @@ source:
   - name: Ch4 Exercises
     problems:
     - E-SS4.EX-1
-    - E-SS4.EX-10
-    - E-SS4.EX-11
-    - E-SS4.EX-12
     - E-SS4.EX-2
     - E-SS4.EX-3
     - E-SS4.EX-4
@@ -110,6 +108,9 @@ source:
     - E-SS4.EX-7
     - E-SS4.EX-8
     - E-SS4.EX-9
+    - E-SS4.EX-10
+    - E-SS4.EX-11
+    - E-SS4.EX-12
   - name: Ch4 Problems
     problems:
     - E-SS4.PR-1
@@ -117,11 +118,6 @@ source:
   - name: Ch5 Exercises
     problems:
     - E-SS5.EX-1
-    - E-SS5.EX-10
-    - E-SS5.EX-11
-    - E-SS5.EX-12
-    - E-SS5.EX-13
-    - E-SS5.EX-14
     - E-SS5.EX-2
     - E-SS5.EX-3
     - E-SS5.EX-4
@@ -130,6 +126,11 @@ source:
     - E-SS5.EX-7
     - E-SS5.EX-8
     - E-SS5.EX-9
+    - E-SS5.EX-10
+    - E-SS5.EX-11
+    - E-SS5.EX-12
+    - E-SS5.EX-13
+    - E-SS5.EX-14
   - name: Ch5 Problems
     problems:
     - E-SS5.PR-1
@@ -139,14 +140,6 @@ source:
   - name: Ch6 Exercises
     problems:
     - E-SS6.EX-1
-    - E-SS6.EX-10
-    - E-SS6.EX-11
-    - E-SS6.EX-12
-    - E-SS6.EX-13
-    - E-SS6.EX-14
-    - E-SS6.EX-15
-    - E-SS6.EX-16
-    - E-SS6.EX-17
     - E-SS6.EX-2
     - E-SS6.EX-3
     - E-SS6.EX-4
@@ -155,6 +148,14 @@ source:
     - E-SS6.EX-7
     - E-SS6.EX-8
     - E-SS6.EX-9
+    - E-SS6.EX-10
+    - E-SS6.EX-11
+    - E-SS6.EX-12
+    - E-SS6.EX-13
+    - E-SS6.EX-14
+    - E-SS6.EX-15
+    - E-SS6.EX-16
+    - E-SS6.EX-17
   - name: Ch6 Problems
     problems:
     - E-SS6.PR-1
@@ -170,6 +171,14 @@ source:
   - name: Ch8 Exercises
     problems:
     - E-SS8.EX-1
+    - E-SS8.EX-2
+    - E-SS8.EX-3
+    - E-SS8.EX-4
+    - E-SS8.EX-5
+    - E-SS8.EX-6
+    - E-SS8.EX-7
+    - E-SS8.EX-8
+    - E-SS8.EX-9
     - E-SS8.EX-10
     - E-SS8.EX-11
     - E-SS8.EX-12
@@ -180,19 +189,11 @@ source:
     - E-SS8.EX-17
     - E-SS8.EX-18
     - E-SS8.EX-19
-    - E-SS8.EX-2
     - E-SS8.EX-20
     - E-SS8.EX-21
     - E-SS8.EX-22
     - E-SS8.EX-23
     - E-SS8.EX-24
-    - E-SS8.EX-3
-    - E-SS8.EX-4
-    - E-SS8.EX-5
-    - E-SS8.EX-6
-    - E-SS8.EX-7
-    - E-SS8.EX-8
-    - E-SS8.EX-9
   - name: Ch8 Problems
     problems:
     - E-SS8.PR-1
@@ -214,9 +215,6 @@ source:
   - name: Ch10 Exercises
     problems:
     - E-SS10.EX-1
-    - E-SS10.EX-10
-    - E-SS10.EX-11
-    - E-SS10.EX-12
     - E-SS10.EX-2
     - E-SS10.EX-3
     - E-SS10.EX-4
@@ -225,6 +223,9 @@ source:
     - E-SS10.EX-7
     - E-SS10.EX-8
     - E-SS10.EX-9
+    - E-SS10.EX-10
+    - E-SS10.EX-11
+    - E-SS10.EX-12
   - name: Ch10 Problems
     problems:
     - E-SS10.PR-2

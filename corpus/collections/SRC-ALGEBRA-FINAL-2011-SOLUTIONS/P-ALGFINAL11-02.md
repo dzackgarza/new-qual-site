@@ -23,9 +23,7 @@ $$
 
 [4]
 
-$$
-( \mathrm { b } ) \mathrm { \ D e d u c e \ f r o m \ ( a ) \ t h a t \ } N ( x ) ^ { 2 } = [ R : x R ] [ x R : x \bar { x } R ] = [ R : x R ] ^ { 2 } .\tag{[3]}
-$$
+(b) Deduce from (a) that $N ( x ) ^ { 2 } = [ R : x R ] [ x R : x \bar { x } R ] = [ R : x R ] ^ { 2 }$ . [3]
 
 (c) Deduce from (b) that if N (x) is prime in $\mathbb { Z }$ then x is prime in R. [4]
 

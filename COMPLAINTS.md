@@ -734,11 +734,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Object and need:** the cards below. Each line is a reader's report made
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
-  - Statements that lost source text: P-AGXVARPROJIRR and P-ALGFINAL11-02
-    carry extraction or agent wording inside the statement.
-  - Card structure: E-AXBZQ holds two problems. E-SS2.PR-1 holds
-    Stein--Shakarchi Chapter 2 Problems 1 and 2. SRC-TEXT-SS03 lists section
-    problems in identifier order, not source order.
   - Proof gaps: E-SS1.EX-13 proves part (3) only. E-SS10.PR-2 (b) asserts the
     $\abs c=1$ corner cases. P-AGXHWDISTINGOPEN mixes the directions of the
     sheaf map on $D(f)$. P-AGXHWREDUCED solves part (a) only.
