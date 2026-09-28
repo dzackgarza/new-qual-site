@@ -57,7 +57,7 @@ This is the classification of finitely generated modules over the principal idea
 
 ## Distinguishing nonabelian groups
 
-Isomorphism invariants that separate nonabelian groups of the same order:
+A semidirect product decomposition and the following isomorphism invariants separate nonabelian groups of the same order:
 
 - A normal Sylow subgroup $N$ with a complement $H$ exhibits $G \cong N \semidirect H$; see [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]] and [[algebra/groups/quotients-and-products|Quotients, products, and automorphisms]].
 
