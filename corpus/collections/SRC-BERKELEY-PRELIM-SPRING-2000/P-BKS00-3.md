@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS00-3
 kind: problem
-title: The group $\mathbb Q/\mathbb Z$ has no proper subgroup of finite index
+title: The group $\QQ/\ZZ$ has no proper subgroup of finite index
 classification:
   areas: [prelim]
   topics: []
