@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF20A
 kind: problem
-title: "True or false: weakly closed sets, nested compacts, vague convergence, Schwartz convolution"
+title: "Sequential weak closure, nested compact sets, vague convergence, and zero convolutions of Schwartz functions"
 classification:
   areas:
   - real-analysis
