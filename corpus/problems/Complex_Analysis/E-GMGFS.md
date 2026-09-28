@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GMGFS
 kind: problem
-title: Expansion at an essential singularity
+title: Laurent series and residue of $\cos(1-1/z)$ at $0$
 classification:
   areas:
   - complex-analysis
@@ -33,7 +33,7 @@ g(z)
 &= {1\over 2}\qty{e^i e^{-iz} + e^{-i} e^{iz}}\\
 &= {1\over 2}\sum_{k\geq 0} \qty{ (-i)^k e^i + i^k e^{-i} } {z^k \over k!} \\
 \implies f(z) 
-&= {1\over 2}\sum_{k\geq 0}  \qty{ ( (-i)^k e^i + i^k e^{-i} } {1 \over k!z^k}
+&= {1\over 2}\sum_{k\geq 0}  \qty{ (-i)^k e^i + i^k e^{-i} } {1 \over k!z^k}
 .\]
 
 Taking $k=1$ yields
