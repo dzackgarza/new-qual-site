@@ -16,8 +16,7 @@ source:
   institution: uga
   area: topology
   problems:
-  - id: P-5ADNP
-    comment: Fall 2011
+  - P-5ADNP
   - P-8TF21
   - P-8TF22
   - P-HZBSC
