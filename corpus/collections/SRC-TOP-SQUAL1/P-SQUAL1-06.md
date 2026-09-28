@@ -15,7 +15,5 @@ audit:
 ::: {.problem}
 Let $M$ be the Möbius band and $S=\partial M$ its boundary circle.
 Show that there is no retraction
-\[
-M\longrightarrow S.
-\]
+$$M\longrightarrow S.$$
 :::
