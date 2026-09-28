@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-13
 kind: problem
-title: Extend a unimodular polynomial row to a determinant-one matrix
+title: A row over $F[x]$ is the first row of a determinant-one matrix exactly when its gcd is $1$
 classification:
   areas:
   - prelim
