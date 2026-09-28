@@ -29,13 +29,13 @@ audit:
 ---
 
 ::: {.problem}
-Let $U \subset \mathbf { C }$ be a bounded open set containing 0, and let $f : U \to U$ be an analytic function, whose Taylor series at 0 is
+Let $U\subset\CC$ be a bounded open set containing $0$, and let $f\colon U\to U$ be an analytic function, whose Taylor series at $0$ is
 
 $$
-f ( z ) = z + a _ { 2 } z ^ { 2 } + a _ { 3 } z ^ { 3 } + . . .
+f(z)=z+a_2z^2+a_3z^3+\cdots
 $$
 
-Prove that $a _ { 2 } = 0$ . (Hint : consider the functions $g _ { n } ( z ) = f \circ . . . \circ f ( z )$ obtained by composing f with itself n times.)
+Prove that $a_2=0$. (Hint: consider the functions $g_n(z)=f\circ\cdots\circ f(z)$ obtained by composing $f$ with itself $n$ times.)
 :::
 
 ::: {.solution}
