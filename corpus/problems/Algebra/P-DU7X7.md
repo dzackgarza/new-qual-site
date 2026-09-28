@@ -31,7 +31,7 @@ H^1(G,L^\times)=0
 \]
 for a finite Galois extension $L/K$ with Galois group $G$.
 
-In the cyclic case, say $G=\langle\sigma\rangle$ of order $n$, this is equivalent to the familiar norm-one formulation:
+In the cyclic case, say $G=\langle\sigma\rangle$ of order $n$, this is equivalent to the norm-one formulation:
 \[
 N_{L/K}(a)=1
 \quad\Longleftrightarrow\quad
