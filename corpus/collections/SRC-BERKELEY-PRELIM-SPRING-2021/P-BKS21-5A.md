@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS21-5A
 kind: problem
-title: Evaluate $\int_0^\infty dx/(x^4+1)$
+title: The integral $\int_0^\infty dx/(x^4+1)$ by residues
 classification:
   areas:
   - prelim
@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Use residues to compute
-\[
+$$
 \int_0^{\infty}\frac{dx}{x^4+1}.
-\]
+$$
 :::
