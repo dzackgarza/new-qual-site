@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3OJLH
 kind: problem
-title: The equality case
+title: $\abs{f(z)+f(-z)}\le2\abs z^2$ for a holomorphic self-map of $\DD$ fixing $0$
 classification:
   areas:
   - complex-analysis
