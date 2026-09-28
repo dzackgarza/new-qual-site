@@ -17,7 +17,7 @@ source:
   area: topology
   problems:
   - id: P-8TF27
-    comment: Fall 2015.1
+    comment: Problem 1
   - P-8TF35
   - P-8TF36
   - P-8TF37
@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2015
 ---
-
-::: {.remark}
-Problem 1 is the same problem as Fall 2013 Problem 1.
-:::
