@@ -29,13 +29,13 @@ audit:
 ---
 
 ::: {.problem}
-Suppose f is analytic on a region Ω in C containing the open unit disk D and we have $f ( z ) = \sum a _ { n } z ^ { n }$ with this power series having radius of convergence 1.
+Suppose $f$ is analytic on a region $\Omega$ in $\CC$ containing the open unit disk $\DD$ and we have $f(z) = \sum a_n z^n$ with this power series having radius of convergence $1$.
 
-a) Give an example of such an f so that the series converges at every point on the unit circle T.
+a) Give an example of such an $f$ so that the series converges at every point on the unit circle $\mathbb{T}$.
 
-b) Give an example of such an f which is analytic at 1, but $\sum a _ { n }$ diverges.
+b) Give an example of such an $f$ which is analytic at $1$, but $\sum a_n$ diverges.
 
-c) Prove that f cannot be analytic at each point of T.
+c) Prove that $f$ cannot be analytic at each point of $\mathbb{T}$.
 :::
 
 ::: {.solution}
