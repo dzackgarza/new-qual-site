@@ -50,13 +50,13 @@ If an equality fails, determine whether the statement becomes true if the “equ
 
 (k) The converse of (j).
 
-(1) The converse of (j), assuming that $A$ and $B$ are nonempty.
+(l) The converse of (j), assuming that $A$ and $B$ are nonempty.
 
 (m) $(A\times B)\cup (C\times D) = (A\cup C)\times (B\cup D).$
 
 (n) $(A\times B)\cap (C\times D) = (A\cap C)\times (B\cap D).$
 
-(0) $A \times (B - C) = (A \times B) - (A \times C)$ .
+(o) $A \times (B - C) = (A \times B) - (A \times C)$ .
 
 (p) $(A - B)\times (C - D) = (A\times C - B\times C) - A\times D.$
 
@@ -64,8 +64,6 @@ If an equality fails, determine whether the statement becomes true if the “equ
 :::
 
 ::: {.solution}
-We test each assertion by elementwise membership.
-
 (a) False as an equivalence.
 The forward implication holds:
 \[
@@ -138,7 +136,7 @@ Always
 \[
 (A\times B)\cup(C\times D)\subset (A\cup C)\times(B\cup D),
 \]
-but the reverse inclusion may contain the cross terms \(A\times D\) and \(C\times B\). For example take \(A=D=\{1\}\) and \(B=C=\varnothing\).
+and the right-hand side also contains \(A\times D\) and \(C\times B\), which need not lie in the left-hand side. For example take \(A=D=\{1\}\) and \(B=C=\varnothing\).
 
 (n) True:
 \[
@@ -166,5 +164,5 @@ One always has
 (A-C)\times(B-D)\subset (A\times B)-(C\times D),
 \]
 but equality need not hold.
-Indeed the left-hand side of the proposed equality also contains pairs with exactly one coordinate lying outside \(C\) or \(D\); for example \((A\times B)-(C\times D)\) contains \((A-C)\times(B\cap D)\).
+For example, \((A\times B)-(C\times D)\) contains \((A-C)\times(B\cap D)\), which is disjoint from \((A-C)\times(B-D)\).
 :::
