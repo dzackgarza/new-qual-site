@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-18
 kind: problem
-title: Every norm on finite-dimensional Euclidean space is equivalent to the Euclidean norm
+title: Every norm on $\RR^n$ is equivalent to the Euclidean norm
 classification:
   areas:
   - prelim
@@ -238,23 +238,23 @@ $$
 If $x=0$, all three quantities are zero and the inequalities hold.
 Suppose $x\neq0$ and set
 $$
-u=\frac{x}{\norm{x}}.
+y=\frac{x}{\norm{x}}.
 $$
 Then
 $$
-\norm{u}=1.
+\norm{y}=1.
 $$
 By the definitions of $A$ and $B$ in step <1>7,
 $$
-A\leq N(u)\leq B.
+A\leq N(y)\leq B.
 $$
 Absolute homogeneity gives
 $$
 N(x)
 =
-N(\norm{x}u)
+N(\norm{x}y)
 =
-\norm{x}N(u).
+\norm{x}N(y).
 $$
 Multiplying the preceding inequalities by the positive number
 $\norm{x}$ gives the desired bounds.
