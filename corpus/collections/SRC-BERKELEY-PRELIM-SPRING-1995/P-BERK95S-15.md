@@ -87,7 +87,7 @@ $$
 $$
 
 ::: {.proof}
-Because $K$ is a proper subfield of $F=\mathbb F_{2^n}$, there is a
+Because $K$ is a proper subfield of $F=\FF_{2^n}$, there is a
 proper divisor $d$ of $n$ such that
 $$
 \abs K=2^d.
