@@ -21,32 +21,30 @@ If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \
 :::
 
 ::: {.solution}
-**Goal:** If $\limsup_{n \to \infty} a_n \leq l$, show $\limsup_{n \to \infty} \frac{1}{n}\sum_{i=1}^n a_i \leq l$ (the Cesàro means do not increase the limsup).
+Write $\sigma_n = \frac{1}{n}\sum_{i=1}^n a_i$.
 
-<1>1. Reduction to the case $l \in \RR$; the cases $l = \pm\infty$ are handled at the end.
-::: {.proof}
-If $l = +\infty$ the claim is vacuous: $\limsup_n \frac{1}{n}\sum_{i=1}^n a_i \le +\infty$ holds for every real sequence $\{a_n\}$.
-:::
-If $l = -\infty$, the argument of <1>2 applied with $l$ replaced by arbitrarily negative $K$ gives the claim.
-So assume $l$ is finite.
+<1>1. If $K \in \RR$ and $a_n < K$ for all $n \geq N$, then $\limsup_n \sigma_n \leq K$.
 
-<1>2. Proof for finite $l$.
-<2>1. Fix $\eps > 0$.
-Since $\limsup_n a_n \leq l$, there is $N$ such that $a_n < l + \eps$ for all $n \geq N$.
 ::: {.proof}
-By definition of $\limsup$ as the infimum of eventual upper bounds: $\limsup_n a_n \leq l$ implies every value $l + \eps$ (with $\eps > 0$) is an eventual upper bound of $\{a_n\}$.
+With $C = \sum_{i=1}^{N-1} a_i$, for $n \geq N$
+$$\sigma_n = \frac{C}{n} + \frac{1}{n}\sum_{i=N}^{n} a_i \leq \frac{C}{n} + \frac{n - N + 1}{n} K.$$
+The right side converges to $K$ because $C/n \to 0$ and $(n - N + 1)/n \to 1$, and $x_n \leq y_n$ implies $\limsup x_n \leq \limsup y_n$.
 :::
-<2>2. Split the Cesàro mean: $\frac{1}{n}\sum_{i=1}^n a_i = \frac{1}{n}\sum_{i=1}^{N-1} a_i + \frac{1}{n}\sum_{i=N}^{n} a_i \leq \frac{C}{n} + \frac{n - N + 1}{n}(l + \eps)$, where $C = \sum_{i=1}^{N-1} a_i$ is fixed.
+
+<1>2. If $l \in \RR$, then $\limsup_n \sigma_n \leq l$.
+
 ::: {.proof}
-The first sum is a fixed finite quantity $C$ (it may be negative; the bound still holds); the second sum has $n - N + 1$ terms each $< l + \eps$ by <2>1. <2>3. Taking $\limsup$ as $n \to \infty$: $\limsup_n \frac{1}{n}\sum_{i=1}^n a_i \leq \limsup_n \left(\frac{C}{n} + \frac{n - N + 1}{n}(l + \eps)\right) = l + \eps$.
+For $\eps > 0$, $\limsup_n a_n \leq l < l + \eps$, so $a_n < l + \eps$ for all large $n$. Step <1>1 with $K = l + \eps$ gives $\limsup_n \sigma_n \leq l + \eps$ for every $\eps > 0$.
 :::
+
+<1>3. If $l = -\infty$, then $\limsup_n \sigma_n = -\infty$.
+
 ::: {.proof}
-$C/n \to 0$ and $(n - N + 1)/n \to 1$, so the right side converges to $l + \eps$; the inequality passes to $\limsup$ (for any sequences $x_n \leq y_n$, $\limsup x_n \leq \limsup y_n$). <2>4. Since $\eps > 0$ was arbitrary, $\limsup_n \frac{1}{n}\sum_{i=1}^n a_i \leq l$.
+For every $K \in \RR$, $\limsup_n a_n = -\infty < K$, so $a_n < K$ for all large $n$, and step <1>1 gives $\limsup_n \sigma_n \leq K$.
 :::
+
+<1>4. Q.E.D.
+
 ::: {.proof}
-Let $\eps \to 0$ in <2>3. <2>5. Q.E.D.
-::: {.proof}
-This proves the claim for finite $l$; the cases $l = \pm \infty$ were handled in <1>1.
-:::
-:::
+For $l = +\infty$ the inequality $\limsup_n \sigma_n \leq +\infty$ holds for every real sequence. Steps <1>2 and <1>3 cover the remaining cases.
 :::
