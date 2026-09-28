@@ -101,7 +101,6 @@ Equivalently,
 $$
 \boxed{P'=gPg^{-1}.}
 $$
-Thus any two Sylow $p$-subgroups are conjugate, using only the fixed-point
-congruence and the existence/equal order of Sylow subgroups.
+Thus any two Sylow $p$-subgroups are conjugate.
 :::
 :::
