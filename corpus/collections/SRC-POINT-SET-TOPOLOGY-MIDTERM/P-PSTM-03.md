@@ -16,11 +16,13 @@ Show that X is not a Hausdorff space.
 :::
 
 ::: {.solution}
-Recall that in a quotient space $X / A = ( X \setminus A ) \coprod [ \{ * \}$ , the open sets are of one of two types:
+Write $I = [0,1]$ and $A = \left(\frac14, \frac34\right)$, so $X = I/A = (I \setminus A) \sqcup \{*\}$. The open sets of $I/A$ are of two types:
 
-(1) either an open set in $X \setminus A ;$ ; or
+(1) an open subset of $I$ contained in $I \setminus A$; or
 
-(2) of the form $\{ * \} \cup ( W \cap ( X \setminus A ) )$ , where W is an open set in X, containing A. In our situation, $X = \left\lceil 0 , 1 \right\rceil$ and $\begin{array} { r } { A = \left( \frac { 1 } { 4 } , \frac { 3 } { 4 } \right) } \end{array}$ . Take $\textstyle x = { \frac { 1 } { 4 } }$ and $\begin{array} { r } { y = \frac { 3 } { 4 } } \end{array}$ , viewed as elements of $X / A$ Suppose U and and V are open, disjoint subsets of $X / A _ { ; }$ containing x and y, respectively.
-Then, necessarily, both U and V must be of type (2), since an open subset of [0, 1] containing one of the endpoints of the interval $\textstyle { \left( { \frac { 1 } { 4 } } , { \frac { 3 } { 4 } } \right) }$ must intersect that interval.
-But then both U and V must contain the element $\{ * \}$ , and thus cannot be disjoint—a contradiction.
+(2) a set $\{*\} \cup (W \cap (I \setminus A))$, where $W$ is an open subset of $I$ containing $A$.
+
+Take $x = \frac14$ and $y = \frac34$, viewed as elements of $I/A$. Suppose $U$ and $V$ are open, disjoint subsets of $I/A$ containing $x$ and $y$, respectively.
+Then both $U$ and $V$ are of type (2), since an open subset of $I$ containing an endpoint of the interval $\left(\frac14, \frac34\right)$ meets that interval.
+But then both $U$ and $V$ contain the point $*$, and so they are not disjoint, a contradiction.
 :::
