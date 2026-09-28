@@ -35,43 +35,51 @@ is a non-negative measurable function and
 :::
 
 ::: {.solution}
-<1>1. For measurable $E$ and $h \in \RR^n$: $E + h$ is measurable and $m(E + h) = m(E)$.
-    <2>1. Translation preserves outer measure: $m^*(A + h) = m^*(A)$ for every set $A$.
-        ::: {.proof}
-        the family of boxes covering $A$ is in bijection (by translation) with the family covering $A + h$, with identical total volumes; taking infima gives equality.
-        :::
-    <2>2. It suffices to prove measurability for Borel sets, then transfer to measurable sets.
-        ::: {.proof}
-        every Lebesgue measurable $E$ is $E = B \cup N$ with $B$ Borel and $N$ null; then $E + h = (B + h) \cup (N + h)$, where $B + h$ is Borel (translation is a homeomorphism, so it maps open sets to open sets and preserves the Borel $\sigma$-algebra), and $N + h$ is null by <2>1; a Borel set plus a null set is measurable.
-        :::
-    <2>3. $m(E + h) = m(E)$ for measurable $E$.
-        ::: {.proof}
-        from <2>1, $m^*(E + h) = m^*(E)$; for measurable sets outer measure equals measure.
-        :::
-    <2>4. Q.E.D.
-        ::: {.proof}
-        <2>2 gives measurability and <2>3 gives the measure identity.
-        :::
+Take $h \in \RR^n$, and write $\tau_h f(x) \coloneqq f(x-h)$.
 
-<1>2. For non-negative measurable $f$ and $h \in \RR^n$: $\tau_h f(x) := f(x - h)$ is non-negative measurable and $\int f(x)\,dx = \int f(x - h)\,dx$.
-    <2>1. $\tau_h f$ is measurable.
-        ::: {.proof}
-        $\tau_h f = f \circ T$ where $T(x) = x - h$ is continuous, and the composition of a measurable function with a continuous map (Borel measurable) is measurable.
-        :::
-    <2>2. The claim holds for indicators: $\int \tau_h \chi_E = m(E - h) = m(E)$.
-        ::: {.proof}
-        $\tau_h\chi_E(x) = \chi_E(x - h) = 1 \iff x \in E + h$, so $\tau_h\chi_E = \chi_{E + h}$, and $m(E + h) = m(E)$ by <1>1.
-        :::
-    <2>3. The claim holds for non-negative simple functions.
-        ::: {.proof}
-        linearity and <2>2.
-        :::
-    <2>4. The claim holds for all non-negative measurable $f$.
-        ::: {.proof}
-        choose simple $s_k \nearrow f$; then $\tau_h s_k \nearrow \tau_h f$, and monotone convergence plus <2>3 give $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
-        :::
-    <2>5. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>4.
-        :::
+<1>1. For measurable $E$, $E + h$ is measurable and $m(E + h) = m(E)$.
+
+<2>1. $m^*(A + h) = m^*(A)$ for every $A \subseteq \RR^n$.
+
+::: {.proof}
+Translation by $h$ is a bijection between countable covers of $A$ by closed boxes and countable covers of $A + h$ by closed boxes, and it preserves the volume of each box. Taking infima gives equality.
+:::
+
+<2>2. $E + h$ is measurable.
+
+::: {.proof}
+Write $E = G \setminus Z$ with $G$ a $G_\delta$ set and $Z$ null. Translation is a homeomorphism of $\RR^n$, so $G + h$ is a $G_\delta$ set, and $m^*(Z + h) = 0$ by step <2>1. So $E + h = (G + h) \setminus (Z + h)$ is measurable.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Step <2>2 gives measurability, and on measurable sets $m = m^*$, so step <2>1 gives $m(E + h) = m(E)$.
+:::
+
+<1>2. For measurable $f \geq 0$, $\tau_h f$ is measurable and $\int \tau_h f = \int f$.
+
+<2>1. $\tau_h f$ is measurable.
+
+::: {.proof}
+For every $a \in \RR$, $\theset{\tau_h f > a} = \theset{f > a} + h$, which is measurable by step <1>1.
+:::
+
+<2>2. For measurable $E$, $\int \tau_h \chi_E = m(E)$.
+
+::: {.proof}
+$\tau_h\chi_E(x) = \chi_E(x - h) = \chi_{E + h}(x)$, and $m(E + h) = m(E)$ by step <1>1.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+By linearity, step <2>2 gives $\int \tau_h s = \int s$ for nonnegative simple $s$. Choose simple $0 \leq s_k \nearrow f$. Then $\tau_h s_k \nearrow \tau_h f$, and the monotone convergence theorem gives $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 are the two parts.
+:::
 :::
