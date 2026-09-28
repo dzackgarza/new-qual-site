@@ -37,14 +37,12 @@ Set $\varepsilon(a)\coloneqq0$.
 
 <1>1. For every $n$,
 $$
-x_n<a<y_n.
+x_n\le a\le y_n.
 $$
 
 ::: {.proof}
-An increasing sequence converging to $a$ cannot have a term at least
-$a$: if $x_n\ge a$, strict increase would give $x_{n+1}>a$, contrary
-to convergence to $a$. Thus $x_n<a$. The same argument applied to the
-decreasing sequence $(y_n)$ gives $y_n>a$.
+For $m\ge n$, monotonicity gives $x_n\le x_m$ and $y_m\le y_n$.
+Letting $m\to\infty$ gives $x_n\le a$ and $a\le y_n$.
 :::
 
 <1>2. For every $n$,
@@ -64,10 +62,11 @@ f(y_n)-f(x_n)
 +\varepsilon(y_n)(y_n-a)
 +\varepsilon(x_n)(a-x_n).
 $$
-By step <1>1,
+The quotient in the problem is defined, so $y_n\ne x_n$. By step <1>1,
 $$
-y_n-x_n=(y_n-a)+(a-x_n)>0.
+y_n-x_n=(y_n-a)+(a-x_n)>0,
 $$
+and both summands are nonnegative.
 Therefore
 $$
 \begin{aligned}
