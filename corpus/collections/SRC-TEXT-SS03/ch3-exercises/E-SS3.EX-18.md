@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-18
 kind: problem
-title: "SS 3.18: The Cauchy integral formula via homotopy"
+title: The Cauchy integral formula via homotopy
 classification:
   areas:
   - complex-analysis
