@@ -27,7 +27,8 @@ audit:
 ::: {.solution}
 <1>1. Part (a): Points of $\beta(X) \setminus X$ are not sequential limits of points in $X$:
 <2>1. Suppose for contradiction that there exists a sequence $(x_n)_{n=1}^\infty \subseteq X$ such that $x_n \to y \in \beta(X) \setminus X$.
-Since $y \notin X$, the set of points $S = \{x_n \mid n \in \mathbb{N}\}$ has no accumulation points in $X$, so $S$ is a closed discrete subset of $X$.
+Each point $x \in X$ occurs only finitely often in the sequence: otherwise a constant subsequence converges to $x \neq y$, which contradicts uniqueness of limits in the Hausdorff space $\beta(X)$. Passing to a subsequence, assume the $x_n$ are pairwise distinct.
+Then the set $S = \{x_n \mid n \in \mathbb{N}\}$ has no accumulation point in $X$: an accumulation point $x \in X$ of $S$ is a cluster point of the sequence, so $x = y$ by the Hausdorff property, which contradicts $y \notin X$. Hence every subset of $S$ is closed in $X$.
 <2>2. Partition $S$ into two disjoint closed subsets of $X$:
 \[
 A = \{x_{2k} \mid k \in \mathbb{N}\}, \qquad B = \{x_{2k-1} \mid k \in \mathbb{N}\}.
@@ -51,8 +52,9 @@ Thus $0 = \beta f(y) = 1$, a contradiction.
 <2>3. Suppose for contradiction that $\beta(X)$ is metrizable.
 In any metric space, the topological closure coincides with the sequential closure: every point in the closure of a subset is the limit of a sequence of points in that subset.
 Thus there must exist a sequence $(x_n)_{n=1}^\infty \subseteq X$ such that $x_n \to y$ in $\beta(X)$.
-<2>4. By the same construction as in <1>1 (as $C(X, [0, 1])$ separates points and closed sets in completely regular spaces), the sequence $(x_n)$ can be split into two subsets separated by a continuous function to $[0, 1]$, showing that $x_n$ cannot converge to $y \in \beta(X) \setminus X$.
-This contradicts the existence of such a converging sequence.
+<2>4. The subspace $X$ of the metrizable space $\beta(X)$ is metrizable, hence normal.
+By step <1>1 applied to the normal space $X$, the point $y \in \beta(X) \setminus X$ is not the limit of a sequence of points of $X$.
+This contradicts step <2>3.
 <2>5. Therefore $\beta(X)$ is not metrizable.
 
 <1>3. Q.E.D.
