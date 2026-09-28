@@ -27,7 +27,7 @@ review: draft
 :::
 
 ::: {.solution}
-The $G/Z(G)$ theorem:
+If $G/Z(G)$ is cyclic, then $G$ is abelian:
 
 - Write $H\da Z(G)$ and $G/H = \gens{xH}$ as a cyclic quotient.
 
