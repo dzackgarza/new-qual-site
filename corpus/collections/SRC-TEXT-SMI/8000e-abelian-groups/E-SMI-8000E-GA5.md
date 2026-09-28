@@ -60,7 +60,7 @@ $$
 as $\mathbb Q$-vector spaces.
 :::
 
-<1>2. Exercise 4 identifies these Hom spaces with $\mathbb Q^t$ and $\mathbb Q^s$.
+<1>2. $\mathbb Q^t\cong\mathbb Q^s$ as $\mathbb Q$-vector spaces.
 ::: {.proof}
 By [[E-SMI-8000E-GA4]],
 $$
