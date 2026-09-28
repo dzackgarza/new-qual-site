@@ -44,12 +44,6 @@ audit:
 The number $\sqrt{2-\sqrt2}$ is another root of $p(x)$.
 :::
 
-::: {.remark}
-The leading term must be $x^4$. The expression
-$x^2-4x^2+2$ evaluates to $-4-3\sqrt2\ne0$
-at $x=\sqrt{2+\sqrt2}$.
-:::
-
 ::: {.solution}
 Put $a=\sqrt{2+\sqrt2}>0$ and $b=\sqrt{2-\sqrt2}>0$.
 
@@ -135,4 +129,10 @@ its roots are nonreal and hence not rational.
 Since $[K:\mathbb Q]=6$, both inclusions
 $\mathbb Q\subsetneq L\subsetneq K$ are strict.
 :::
+:::
+
+::: {.remark}
+The source prints $p(x)=x^2-4x^2+2$. This is a misprint for
+$x^4-4x^2+2$: at $x=\sqrt{2+\sqrt2}$ the printed expression
+evaluates to $-4-3\sqrt2\ne0$.
 :::
