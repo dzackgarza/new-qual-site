@@ -26,38 +26,23 @@ Prove every $m \times n$ matrix over $R$ can be diagonalized by invertible row a
 :::
 
 ::: {.solution}
-<1>1. Induction on the Euclidean size $N(a_{11})$ of the $(1,1)$-entry (after permuting rows/columns to make $a_{11}\neq0$ minimal).
+Let $N\colon R\setminus\{0\}\to\mathbb Z_{\ge0}$ be the Euclidean size function. The operations used are: interchanging two rows or two columns, and adding an $R$-multiple of one row (column) to another; each is invertible. Call two matrices equivalent if one is obtained from the other by such operations. We induct on $m+n$.
+
+<1>1. Every nonzero matrix $A$ is equivalent to a matrix $B$ with $b_{11}\ne0$ and $b_{1j}=b_{i1}=0$ for all $i,j>1$.
+
 ::: {.proof}
-setup; $R$ is Euclidean with size function $N$.
+Among all matrices equivalent to $A$, all of which are nonzero, choose $B$ and a nonzero entry of $B$ of least size; after interchanging rows and columns, that entry is $b_{11}$. Suppose $b_{11}\nmid b_{1j}$ for some $j$. Division gives $b_{1j}=qb_{11}+r$ with $r\ne0$ and $N(r)<N(b_{11})$; subtracting $q$ times column $1$ from column $j$ produces an equivalent matrix with the nonzero entry $r$, contradicting the choice of $b_{11}$. Hence $b_{11}$ divides every $b_{1j}$, and by the same argument with rows, every $b_{i1}$. Subtracting $b_{1j}/b_{11}$ times column $1$ from column $j$ and $b_{i1}/b_{11}$ times row $1$ from row $i$ clears the first row and column except $b_{11}$.
 :::
 
-<1>2. If every entry of the first row and column is divisible by $a_{11}$, clear the rest of the first row and column by elementary operations.
+<1>2. If every matrix with fewer than $m+n$ rows plus columns is equivalent to a diagonal matrix, so is every $m\times n$ matrix $A$.
+
 ::: {.proof}
-$a_{1j}=q_j a_{11}$, subtract $q_j$ times column $1$ from column $j$; similarly for rows.
+If $A=0$, it is diagonal. Otherwise, by step <1>1, $A$ is equivalent to $\begin{pmatrix}b_{11}&0\\0&A'\end{pmatrix}$ with $A'$ of size $(m-1)\times(n-1)$. If $m=1$ or $n=1$, this matrix is already diagonal. Otherwise, by hypothesis $A'$ is equivalent to a diagonal matrix, and each operation on the rows or columns of $A'$ is an operation on rows or columns $2,\ldots$ of the block matrix that leaves its first row and column unchanged.
 :::
 
-<1>3. Otherwise some entry $a_{1j}$ or $a_{i1}$ is not divisible by $a_{11}$; divide with remainder $a_{1j}=q a_{11}+r$ with $N(r)<N(a_{11})$ and replace column $j$ by column $j - q\cdot$column $1$ to get remainder $r$ in the first row, then permute to bring $r$ to the $(1,1)$-position, strictly decreasing $N$.
-::: {.proof}
-Euclidean division.
-:::
+<1>3. Q.E.D.
 
-<1>4. By induction on $N(a_{11})$ we reach the case of <1>2, so we can make the matrix $\begin{pmatrix} a_{11} & 0 \\ 0 & A' \end{pmatrix}$ with $a_{11}$ dividing all entries of $A'$.
 ::: {.proof}
-<1>2 and <1>3 (the process terminates).
-:::
-
-<1>5. Apply induction on the size of the matrix to $A'$.
-::: {.proof}
-induction on $m+n$.
-:::
-
-<1>6. Hence by invertible row and column operations the matrix is diagonalized (Smith normal form).
-::: {.proof}
-<1>4 and <1>5.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+A $1\times1$ matrix is diagonal, and step <1>2 is the induction step on $m+n$.
 :::
 :::
