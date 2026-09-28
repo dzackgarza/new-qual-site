@@ -93,7 +93,7 @@ because the quotient map identifies the relevant coset spaces.
 Append $C\supset\{1\}$ to obtain the required chain.
 :::
 
-<1>3. Part (a) follows from the Galois correspondence.
+<1>3. In part (a), every element of $K$ is constructible.
 
 ::: {.proof}
 The group $G=\operatorname{Gal}(K/\mathbb Q)$ has order $2^n$.
