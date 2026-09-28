@@ -36,17 +36,15 @@ defines a function in $L^1(\RR)$ that satisfies
 :::
 
 ::: {.strategy}
-Just do it! 
-Sort out the justification afterward.
-Use Tonelli.
+Tonelli's theorem applied to the nonnegative measurable function $\abs{H}$ gives $\norm{H}_{L^1(\RR^2)}=\norm{f}_1\norm{g}_1$.
+Fubini's theorem applied to $H$ then shows that $f\ast g$ is defined almost everywhere and bounds its $L^1$ norm.
 :::
 
 ::: {.concept}
 \envlist
 - Tonelli: non-negative and measurable yields measurability of slices and equality of iterated integrals
 - Fubini: $f(x, y) \in L^1$ yields *integrable* slices and equality of iterated integrals
-- F/T: apply Tonelli to $\abs{f}$; if finite, $f\in L^1$ and apply Fubini to $f$
-- See Folland's Real Analysis II, p. 68 for a discussion of using Fubini *and* Tonelli.
+- F/T: apply Tonelli to $\abs{f}$; if finite, $f\in L^1$ and apply Fubini to $f$ [@Fol13, Theorem 2.37].
 :::
 
 ::: {.solution}
