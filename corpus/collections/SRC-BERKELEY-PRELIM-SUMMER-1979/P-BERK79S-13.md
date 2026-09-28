@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-13
 kind: problem
-title: Count vectors and general and special linear groups over a finite field
+title: Cardinality of $V$ and orders of $GL_n(F)$ and $SL_n(F)$ over a finite field
 classification:
   areas: [prelim]
   topics: []
