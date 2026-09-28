@@ -74,8 +74,7 @@ gives
 \[
 [F:K]=[F:K(u)][K(u):K]=[F:K(u)]n.
 \]
-In particular, when $[F:K]$ is finite, this says in the usual integer sense that
-$n$ divides $[F:K]$; the displayed equality is the corresponding general degree
-factorization.
+When $[F:K]$ is finite, $[F:K(u)]$ is a positive integer, so $n$ divides
+$[F:K]$.
 :::
 :::
