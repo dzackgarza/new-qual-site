@@ -62,7 +62,7 @@ Sending a Cartier divisor with local equations $f_i$ to the Weil divisor with co
 It induces an injection $\CaCl(X)\to\Cl(X)$.
 For such $X$, the support of a Cartier divisor is the union of the prime divisors with nonzero coefficient in its associated Weil divisor [@Har10a, Remark II.6.11.2 and the proof of Proposition II.6.11].
 If $X$ is locally factorial, the comparison is an isomorphism, and $\Cl(X)\cong\Pic(X)$ [@Har10a, Proposition II.6.11 and Corollary II.6.16].
-In particular, these conclusions apply to regular integral separated noetherian schemes, since regular local rings are factorial [@Har10a, Remark II.6.11.1A].
+In particular, $\CaCl(X)\cong\Cl(X)\cong\Pic(X)$ for every regular integral separated noetherian scheme $X$, since regular local rings are factorial [@Har10a, Remark II.6.11.1A].
 :::
 
 ::: {.example title="A Weil divisor that is not Cartier"}
