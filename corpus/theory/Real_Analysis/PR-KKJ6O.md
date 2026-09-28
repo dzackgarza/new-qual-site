@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-KKJ6O
 kind: proposition
 title: Continuity of measure from below and from above
-slogan: 'Measures commute with increasing unions, and with decreasing intersections once the first set has finite measure.'
+slogan: 'For increasing $E_n$, $\mu(E_n)\to\mu(\bigcup E_n)$; for decreasing $E_n$ with $\mu(E_1)<\infty$, $\mu(E_n)\to\mu(\bigcap E_n)$.'
 prompts:
 - State continuity of measure from above and from below.
 classification:
