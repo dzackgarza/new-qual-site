@@ -24,7 +24,7 @@ Find an ideal $I\subseteq\mathbb{F}_7[x]$ such that $\langle g\rangle\subsetneq 
 :::
 
 ::: {.solution}
-Proof.
-(a) Plugging each element of F7 into g soon shows g(2) = 0, so that ( x− 2) is a factor of g. Long division reveals that g(x) = (x− 2)(x + 2), conﬁrming that g is reducible.
-(b) Let I =⟨x− 2⟩⊆ F7[x]. Any element of ⟨g⟩ is of the form hg for some h∈ F7[x], and hence hg = ( (x + 2)h ) · (x− 2)∈I. Thus, we have⟨g⟩⊆ I⊆ F7[x]. However, x− 2⁄∈⟨ g⟩, because any multiple hg of g must either be 0 or have degree deg(hg)≥ degg = 2, whereas deg(x− 2) = 1. Finally, 1 ⁄∈I, because any multiple h· (x− 2) of (x− 2) must either be 0 or have degree ≥ deg(x− 2) = 1, whereas deg(1) = 0. Hence,⟨g⟩ ⊊I ⊊ F 7[x]. QED
+(a) Evaluating $g$ at the elements of $\FF_7$ gives $g(2)=7=0$, so $x-2$ divides $g$. Long division gives $g(x)=(x-2)(x+2)$, so $g$ is reducible.
+
+(b) Let $I=\langle x-2\rangle\subseteq\FF_7[x]$. Every element of $\langle g\rangle$ has the form $hg$ with $h\in\FF_7[x]$, and $hg=\bigl((x+2)h\bigr)(x-2)\in I$. Thus $\langle g\rangle\subseteq I\subseteq\FF_7[x]$. Moreover $x-2\notin\langle g\rangle$, because a multiple $hg$ of $g$ is either $0$ or has degree $\deg(hg)\ge\deg g=2$, whereas $\deg(x-2)=1$. Finally $1\notin I$, because a multiple $h\cdot(x-2)$ is either $0$ or has degree at least $1$, whereas $\deg 1=0$. Hence $\langle g\rangle\subsetneq I\subsetneq\FF_7[x]$.
 :::
