@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-ZJQ2T
 kind: theorem
 title: Rouché's theorem on a closed disc
-slogan: 'If two boundary values never oppose enough to cross zero, they have the same zero count inside the disc.'
+slogan: 'If $\abs{f-g}<\abs{f}+\abs{g}$ on the circle $\abs{z-z_0}=R$, then $f$ and $g$ have the same number of zeros in $\abs{z-z_0}<R$.'
 prompts:
 - State Rouche's theorem on a closed disc $\abs{z - z_0} \leq R$.
 classification:
