@@ -5,9 +5,6 @@ order: 7
 
 # Review sheet
 
-The theorem statements of the real analysis chapters, grouped by chapter.
-Each section links to the chapter containing the proofs.
-
 ## Measure
 
 [[T-7LQ7X]]
@@ -16,7 +13,7 @@ Each section links to the chapter containing the proofs.
 
 [[T-OTR5M]]
 
-Proved in [[real-analysis/measure/index|Measure]].
+Chapter: [[real-analysis/measure/index|Measure]].
 
 ## Integration
 
@@ -36,7 +33,7 @@ Proved in [[real-analysis/measure/index|Measure]].
 
 [[T-BFOJT]]
 
-Proved in [[real-analysis/integration/index|Integration]].
+Chapter: [[real-analysis/integration/index|Integration]].
 
 ## Fubini and Tonelli
 
@@ -46,7 +43,7 @@ Proved in [[real-analysis/integration/index|Integration]].
 
 [[T-X7XZX]]
 
-Proved in [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
+Chapter: [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 ## $L^p$
 
@@ -56,7 +53,7 @@ Proved in [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 [[T-S3C3S]]
 
-Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].
+Chapter: [[real-analysis/lp-spaces/index|$L^p$ spaces]].
 
 ## Fourier
 
@@ -68,7 +65,7 @@ Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].
 
 [[T-4BDE3]]
 
-Proved in [[real-analysis/fourier/index|Fourier]].
+Chapter: [[real-analysis/fourier/index|Fourier]].
 
 ## Functional analysis
 
@@ -84,7 +81,7 @@ Proved in [[real-analysis/fourier/index|Fourier]].
 
 [[T-W5SDY]]
 
-Proved in [[real-analysis/functional-analysis/index|Functional analysis]].
+Chapter: [[real-analysis/functional-analysis/index|Functional analysis]].
 
 ## Undergraduate
 
@@ -94,9 +91,9 @@ Proved in [[real-analysis/functional-analysis/index|Functional analysis]].
 
 [[T-O4UD3]]
 
-Proved in [[real-analysis/undergraduate/index|Undergraduate analysis]].
+Chapter: [[real-analysis/undergraduate/index|Undergraduate analysis]].
 
 ## Hypotheses and counterexamples
 
 [[real-analysis/integration/which-convergence-theorem|Which convergence theorem?]], [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]], and [[real-analysis/lp-spaces/which-inequality|Which inequality?]] compare the hypotheses of these theorems.
-[[real-analysis/counterexamples|Counterexamples]] gives, for each hypothesis, an example showing that the theorem fails without it.
+[[real-analysis/counterexamples|Counterexamples]] gives examples in which one of these theorems fails when a hypothesis is removed.
