@@ -20,19 +20,20 @@ Repeat with $z_1=-4+3i$.
 :::
 
 ::: {.solution}
-The principal square root is holomorphic on
+For a center $c\neq0$, the disk $\abs{z-c}<\abs c$ does not contain $0$, so it carries a holomorphic branch of $\sqrt z$ agreeing with the principal branch near $c$; the Taylor series of the principal branch at $c$ converges on this disk. It converges on no larger disk: the binomial expansion
 \[
-\CC\setminus\RR_{\leq0}.
+\sqrt z=\sqrt c\sum_{n\ge0}\binom{1/2}{n}\qty{z-c\over c}^n
 \]
-The Taylor radius at a point is therefore the distance from the center to the branch cut.
+has radius of convergence exactly $\abs c$, since $\binom{1/2}{n}$ has ratio $\abs{1/2-n}/(n+1)\to1$.
 
-For $z_0=4+3i$, the closest point of $\RR_{\leq0}$ is $0$, so
+For $z_0=4+3i$,
 \[
-R_0=|4+3i|=5.
+R_0=|4+3i|=\boxed{5}.
 \]
 
-For $z_1=-4+3i$, the perpendicular projection $-4$ lies on the branch cut, so
+For $z_1=-4+3i$,
 \[
-R_1=|(-4+3i)-(-4)|=3.
+R_1=|-4+3i|=\boxed{5}.
 \]
+The branch cut $\RR_{\le0}$ meets this disk: the sum of the series equals the principal branch only on the part of the disk above the cut, including the disk $\abs{z-z_1}<3$, and equals its analytic continuation across the cut below it.
 :::
