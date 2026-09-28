@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF22C
 kind: problem
-title: "High-frequency parity oscillations integrate to zero against any L^1 function"
+title: "High-frequency parity oscillations integrate to zero against any $L^1$ function"
 classification:
   areas:
   - real-analysis
@@ -35,7 +35,7 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Construct a uniformly small primitive of $S_n$.
+<1>1. The primitive $F_n(x)\coloneqq\int_0^xS_n(t)\,dt$ satisfies $\|F_n\|_\infty\le10^{-n}$.
 ::: {.proof}
 The function $P$ has period $2$ and has mean zero on each period. Hence $S_n(x)=P(10^n x)$ has period
 \[
@@ -53,7 +53,7 @@ Because the integral over every full period is zero, $F_n$ is periodic with the 
 \]
 :::
 
-<1>2. Prove the result first for $C_c^1$ functions.
+<1>2. $\int_{\mathbb R}S_n\varphi\to0$ for every $\varphi\in C_c^1(\mathbb R)$.
 ::: {.proof}
 Let $\varphi\in C_c^1(\mathbb R)$. Since $F_n'=S_n$ almost everywhere and $\varphi$ has compact support, integration by parts gives
 \[
@@ -69,7 +69,7 @@ Hence
 \]
 :::
 
-<1>3. Extend to arbitrary $f\in L^1(\mathbb R)$.
+<1>3. $\int_{\mathbb R}S_nf\to0$ for every $f\in L^1(\mathbb R)$.
 ::: {.proof}
 Fix $f\in L^1(\mathbb R)$ and $\varepsilon>0$. Choose $\varphi\in C_c^1(\mathbb R)$ such that
 \[
@@ -80,7 +80,7 @@ Since $|S_n|=1$ almost everywhere,
 \left|\int S_n(f-\varphi)\right|
 \le \|f-\varphi\|_1<\varepsilon.
 \]
-By Step 2, for all sufficiently large $n$,
+By step <1>2, for all sufficiently large $n$,
 \[
 \left|\int S_n\varphi\right|<\varepsilon.
 \]
