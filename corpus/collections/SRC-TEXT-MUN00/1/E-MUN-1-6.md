@@ -29,7 +29,7 @@ Write the contrapositive of each of the statements of Exercise 5.
 :::
 
 ::: {.solution}
-The contrapositive of an implication \(P\Rightarrow Q\) is \(\neg Q\Rightarrow\neg P\). Applying this to Exercise 5 gives:
+The contrapositive of an implication \(P\Rightarrow Q\) is \(\neg Q\Rightarrow\neg P\). Applying this to the statements of [[E-MUN-1-5]] gives:
 
 (a)
 \[
@@ -58,5 +58,5 @@ x\notin\bigcap_{A\in\mathcal A}A.
 \Longrightarrow
 x\notin\bigcap_{A\in\mathcal A}A.
 \]
-As expected, (a), (c), and (d) are true and (b) is false, since a statement and its contrapositive have the same truth value.
+A statement and its contrapositive have the same truth value, so by [[E-MUN-1-5]], (a), (c), and (d) are true and (b) is false.
 :::
