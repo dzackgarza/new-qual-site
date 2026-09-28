@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF05-8B
 kind: problem
-title: A semicircle integral of exponential iz over z vanishes
+title: The integral of $e^{iz}/z$ over a large upper semicircle tends to zero
 classification:
   areas:
   - prelim
