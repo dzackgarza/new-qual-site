@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-6B
 kind: problem
-title: Maximal positive-definite subspace for a quadratic form on $\mathbb R^4$
+title: Maximal positive-definite subspace for a quadratic form on $\RR^4$
 classification:
   areas:
   - prelim
@@ -24,10 +24,10 @@ audit:
 ---
 
 ::: {.problem}
-What is the maximal dimension of a subspace of $\mathbb R^4$ on which the quadratic form
-\[
+What is the maximal dimension of a subspace of $\RR^4$ on which the quadratic form
+$$
 x_1x_2-3x_2^2+x_3^2+2x_2x_4+x_4^2
-\]
+$$
 is positive definite?
 :::
 
