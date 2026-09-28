@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-SCTER
 kind: proposition
 title: Pointwise limits of continuous functions need not be continuous
-slogan: 'Pointwise convergence can destroy continuity; $x^n$ on $[0,1]$ is the basic witness.'
+slogan: 'The continuous functions $x^n$ on $[0,1]$ converge pointwise to a discontinuous function.'
 classification:
   areas:
   - real-analysis
