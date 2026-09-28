@@ -31,15 +31,6 @@ Suppose that every proper principal ideal of $R$ is prime.
 Prove that $R$ is a field.
 :::
 
-::: {.remark}
-A prime ideal is proper. Thus the literal hypothesis that
-every principal ideal is prime is inconsistent: the principal
-ideal $(1)=R$ is not prime. The proper-ideal formulation
-above gives the nonvacuous assertion. It also requires
-$1\ne0$, since the zero ring has no proper ideals and is
-not a field.
-:::
-
 ::: {.solution}
 <1>1. The ring $R$ is an integral domain.
 
@@ -63,4 +54,12 @@ with $a\ne0$ gives $1=ac$. This makes $a$ a unit, a
 contradiction. Hence every nonzero element is invertible,
 and the nonzero commutative unital ring $R$ is a field.
 :::
+:::
+
+::: {.remark}
+The source states the hypothesis for every principal ideal. A prime
+ideal is proper, so $(1)=R$ is not prime and that hypothesis is never
+satisfied; the problem states it for proper principal ideals. The
+hypothesis $1\ne0$ excludes the zero ring, which has no proper ideals
+and is not a field.
 :::
