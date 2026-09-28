@@ -26,59 +26,39 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Uniform convergence implies pointwise convergence.
+<1>1. If $f_n \to f$ uniformly, then $f_n \to f$ pointwise.
+
 ::: {.proof}
-$\sup_x|f_n(x) - f(x)| \to 0$ forces $|f_n(x) - f(x)| \to 0$ for each fixed $x$.
+$|f_n(x) - f(x)| \leq \sup_y|f_n(y) - f(y)| \to 0$ for each fixed $x$.
 :::
 
-<1>2. Pointwise convergence implies a.e. convergence.
+<1>2. If $f_n \to f$ pointwise, then $f_n \to f$ a.e.
+
 ::: {.proof}
-if $f_n(x) \to f(x)$ for every $x$, then in particular for every $x$ outside any null set.
+The set where $f_n(x) \not\to f(x)$ is empty, hence null.
 :::
 
-<1>3. Pointwise convergence need not be uniform.
-<2>1. Take $f_n(x) = x^n$ on $[0,1]$.
+<1>3. $f_n(x) = x^n$ on $[0,1]$ converges pointwise but not uniformly.
+
 ::: {.proof}
-standard example.
-:::
-<2>2. $f_n \to f$ pointwise, where $f = 0$ on $[0,1)$ and $f(1) = 1$.
-::: {.proof}
-$x^n \to 0$ for $0 \le x < 1$, and $1^n = 1$.
-:::
-<2>3. The convergence is not uniform.
-::: {.proof}
-each $f_n$ is continuous but $f$ is discontinuous, and a uniform limit of continuous functions is continuous (<1>2 of the companion card); directly, $\sup_{[0,1]}|f_n - f| \ge (1 - 1/n)^n \approx e^{-1} \not\to 0$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>2 and <2>3.
+$x^n \to 0$ for $0 \le x < 1$ and $1^n = 1$, so $f_n \to f$ pointwise with $f = 0$ on $[0,1)$ and $f(1) = 1$. At $x = 1 - 1/n$, $|f_n(x) - f(x)| = (1 - 1/n)^n \to e^{-1}$, so $\sup_{[0,1]}|f_n - f| \not\to 0$.
 :::
 
-<1>4. A.e. convergence need not be pointwise.
-<2>1. Take $f_n = \chi_{[0, 1/n)}$ on $[0,1]$.
+<1>4. $f_n = \chi_{[0, 1/n)}$ on $[0,1]$ converges to $0$ a.e. but not pointwise to $0$.
+
 ::: {.proof}
-standard example.
-:::
-<2>2. $f_n \to 0$ a.e.
-::: {.proof}
-for every $x > 0$, $f_n(x) = 0$ once $1/n \le x$, so $f_n(x) \to 0$; only the null set $\{0\}$ is excluded.
-:::
-<2>3. $f_n$ does not converge pointwise to $0$: $f_n(0) = 1$ for every $n$.
-::: {.proof}
-$0 \in [0, 1/n)$ for all $n$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>2 and <2>3.
+For every $x > 0$, $f_n(x) = 0$ once $1/n \le x$, so $f_n \to 0$ off the null set $\theset{0}$. But $f_n(0) = 1$ for every $n$.
 :::
 
-<1>5. $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on every compact subset of $\RR$.
-<2>1. Let $K \subseteq [-M, M]$ be compact; then $\left|\frac{x^n}{n!}\right| \le \frac{M^n}{n!}$ on $K$.
+<1>5. $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on every compact $K \subseteq \RR$.
+
 ::: {.proof}
-$|x| \le M$ on $K$.
+Choose $M$ with $K \subseteq [-M, M]$. On $K$, $\left|\frac{x^n}{n!}\right| \le \frac{M^n}{n!}$, and $\sum_n \frac{M^n}{n!}$ converges by the ratio test, since $\frac{M^{n+1}/(n+1)!}{M^n/n!} = \frac{M}{n+1} \to 0$. The Weierstrass M-test gives uniform convergence on $K$.
 :::
-<2>2. $\sum_{n=0}^\infty \frac{M^n}{n!} = e^M < \infty$.
+
+<1>6. Q.E.D.
+
 ::: {.proof}
-the exponential series converges, e.g. by the ratio test ($\frac{M^{n+1}/(n+1)!}{M^n/n!} = \frac{M}{n+1} \to 0 < 1$). <2>3. Q.E.D. Proof: Weierstrass M-test from <2>1 and <2>2.
+Steps <1>1 and <1>2 are the implications, steps <1>3 and <1>4 show that neither reverses, and step <1>5 is the second part.
 :::
 :::
