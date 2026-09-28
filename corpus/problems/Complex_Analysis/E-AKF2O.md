@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AKF2O
 kind: problem
-title: $1/(1+x^2)^{n+1}$
+title: $\int_\RR\frac{dx}{(1+x^2)^{n+1}}$
 classification:
   areas:
   - complex-analysis
