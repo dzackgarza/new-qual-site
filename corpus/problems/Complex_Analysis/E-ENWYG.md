@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ENWYG
 kind: problem
-title: Keyhole contour and ML estimate
+title: $\int_0^\infty\frac{\log x}{(1+x^2)^2}\,dx$ by a keyhole contour
 classification:
   areas:
   - complex-analysis
