@@ -61,5 +61,8 @@ Substituting into the integration-by-parts identity yields
 \le\frac{\varepsilon}{t}
 \qquad(t\ge t_\varepsilon).
 \]
-The conditions $f'(0)=f'(2)=0$ are stronger than needed for this argument; the stated result follows already from $f(0)=f(2)=0$ and $f'\in L^1$.
+:::
+
+::: {.remark}
+The argument uses only $f(0)=f(2)=0$ and $f'\in L^1([0,2])$.
 :::
