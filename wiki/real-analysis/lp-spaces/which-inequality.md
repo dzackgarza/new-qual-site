@@ -22,7 +22,7 @@ The full statements are on [[real-analysis/inequalities|Inequalities]].
 ## Consequences of Hölder's inequality
 
 - **Inclusions.** If $\mu(X)<\infty$ and $p < q$, Hölder's inequality applied to $\abs f^p\cdot 1$ gives $L^q \subseteq L^p$.
-  On $(1,\infty)$ with Lebesgue measure, $x^{-1}\in L^2\setminus L^1$, and on $\RR$, $\frac{\sin x}{x}\in L^2(\RR)\setminus L^1(\RR)$.
+  For $\mu(X)=\infty$ the inclusion can fail: on $(1,\infty)$ with Lebesgue measure, $x^{-1}\in L^2\setminus L^1$, and on $\RR$, $\frac{\sin x}{x}\in L^2(\RR)\setminus L^1(\RR)$.
 
 - **Interpolation.** If $0<p<r<q\leq\infty$ and $\frac1r = \frac\theta p + \frac{1-\theta}q$ with $\theta\in(0,1)$, then $\norm f_r \leq \norm f_p^{\theta}\norm f_q^{1-\theta}$, by Hölder's inequality applied to $\abs f^{r\theta}\cdot\abs f^{r(1-\theta)}$ with exponents $\frac{p}{r\theta}$ and $\frac{q}{r(1-\theta)}$.
 
