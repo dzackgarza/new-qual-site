@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-W2
 kind: problem
-title: Compactness warm-up statement with $A\subseteq Y$ (verbatim source wording)
+title: A closed subset of a compact space is compact
 classification:
   areas:
   - topology
@@ -31,13 +31,8 @@ audit:
 If $X$ is compact, and $A\subseteq Y$ is closed, then $A$ is compact.
 :::
 
-::: {.remark}
-The rendered source literally uses $A\subseteq Y$ while introducing compact $X$; that apparent inconsistency is retained for review rather than repaired by inference.
-:::
-
 ::: {.solution}
-As printed, the source has an ambient-space typo: it assumes $X$ is compact but writes $A\subseteq Y$.
-We interpret the intended statement as: if $X$ is compact and $A\subseteq X$ is closed, then $A$ is compact.
+The statement assumes $X$ is compact but writes $A\subseteq Y$; we prove it with $A\subseteq X$: if $X$ is compact and $A\subseteq X$ is closed, then $A$ is compact.
 
 <1>1. Let $\mathcal U$ be an open cover of $A$ by sets open in $X$.
 ::: {.proof}
