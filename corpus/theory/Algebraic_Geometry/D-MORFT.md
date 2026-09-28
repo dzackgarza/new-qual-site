@@ -22,16 +22,17 @@ prompts:
 
 ::: {.definition title="Finite type"}
 $f : X \to Y$ is \dfn{locally of finite type} if $Y$ has an affine cover by $\Spec B_i$ such that $f^{-1}(\Spec B_i)$ has an affine cover by $\Spec A_{ij}$ with each $A_{ij}$ a finitely generated $B_i$-algebra.
-It is **of finite type** if in addition each $f^{-1}(\Spec B_i)$ is covered by finitely many of the $\Spec A_{ij}$, that is, locally of finite type and quasicompact.
+It is \dfn{of finite type} if in addition each $f^{-1}(\Spec B_i)$ is covered by finitely many of the $\Spec A_{ij}$, that is, locally of finite type and quasicompact.
 :::
 
 ::: {.definition title="Finite presentation"}
 $f$ is \dfn{locally of finite presentation} if each $B_i \to A_{ij}$ is of finite presentation: $B_i[x_1, \dots, x_n] \surjects A_{ij}$ with finitely generated kernel.
-It is **of finite presentation** if it is also quasicompact and quasi-separated.
+It is \dfn{of finite presentation} if it is also quasicompact and quasi-separated.
 :::
 
 ::: {.remark}
-Finite type means that on affine charts the coordinate algebras are finitely generated over the base, together with quasicompactness; it is a hypothesis in the valuative criteria and in properness.
-Finite presentation is finite type plus a condition on relations, and over a Noetherian base the two coincide, because every ideal of $B[x_1, \dots, x_n]$ is finitely generated.
-Thus finite presentation differs from finite type only over non-Noetherian bases, and it is the finiteness condition used in the definition of smooth morphisms and in limit arguments.
+Finite type is a hypothesis of the valuative criterion of properness and part of the definition of a proper morphism.
+Over a locally Noetherian base $Y$, locally of finite type and locally of finite presentation coincide, because every ideal of $B[x_1, \dots, x_n]$ is finitely generated for $B$ Noetherian; for $Y$ Noetherian, finite type and finite presentation coincide.
+Over the non-Noetherian ring $B=k[x_1,x_2,\ldots]$, the quotient $B\to B/(x_1,x_2,\ldots)\cong k$ is of finite type and not of finite presentation.
+Finite presentation is the finiteness condition in the definition of smooth and étale morphisms and in limit arguments.
 :::
