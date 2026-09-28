@@ -13,5 +13,5 @@ audit:
 ---
 
 ::: {.problem}
-Prove that if $\mathbb R^n$ is homeomorphic to $\mathbb R^m$, then $n=m$.
+Prove that if $\RR^n$ is homeomorphic to $\RR^m$, then $n=m$.
 :::
