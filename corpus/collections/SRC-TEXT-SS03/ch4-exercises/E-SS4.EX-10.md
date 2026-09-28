@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-10
 kind: problem
-title: "This exercise generalizes some of the properties of  related to the fact that it"
+title: Gaussian decay in a strip passes to the Fourier transform
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Entire Functions
 relations: []
 review: draft
 audit:

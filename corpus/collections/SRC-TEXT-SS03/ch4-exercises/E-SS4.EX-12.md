@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-12
 kind: problem
-title: "The principle that a function and its Fourier transform cannot both be too small"
+title: 'Hardy''s theorem: $f$ and $\hat f$ both $O(e^{-\pi x^2})$ force $f=ce^{-\pi x^2}$'
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Phragmén–Lindelöf
 relations: []
 review: draft
 audit:
@@ -31,7 +33,7 @@ $$
 then f is a constant multiple of $e ^ { - \pi x ^ { 2 } }$ . As a result, if $f ( x ) = O ( e ^ { - \pi A x ^ { 2 } } )$ , and $\hat { f } ( \xi ) = O ( e ^ { - \pi B \xi ^ { 2 } } )$ , with $A B > 1$ and $A , B > 0$ , then f is identically zero.
 
 (a) If f is even, show that $\hat { f }$ extends to an even entire function.
-Moreover, if $g ( \dot { z } ) = \hat { f } ( z ^ { 1 / 2 } )$ , then $g$ satisfies
+Moreover, if $g ( z ) = \hat { f } ( z ^ { 1 / 2 } )$ , then $g$ satisfies
 
 $$
 | g (x) | \leq c e ^ {- \pi x} \quad \text { and } \quad | g (z) | \leq c e ^ {\pi R \sin^ {2} (\theta / 2)} \leq c e ^ {\pi | z |}
@@ -39,7 +41,7 @@ $$
 
 when $x \in \mathbb { R }$ and $z = R e ^ { i \theta }$ with $R \geq 0$ and $\theta \in \mathbb { R }$
 
-(b) Apply the Phragm´en-Lindel¨of principle to the function
+(b) Apply the Phragmén–Lindelöf principle to the function
 
 $$
 F (z) = g (z) e ^ {\gamma z} \quad \mathrm{where} \gamma = i \pi \frac {e ^ {- i \pi / (2 \beta)}}{\sin \pi / (2 \beta)}

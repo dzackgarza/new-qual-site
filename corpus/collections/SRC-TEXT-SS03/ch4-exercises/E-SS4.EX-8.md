@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-8
 kind: problem
-title: "SS 4.8: Compact support of a Fourier transform and coefficient growth"
+title: Taylor coefficients of a function whose Fourier transform has compact support
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Power Series
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-5
 kind: problem
-title: "SS 4.5: Fourier transforms of rational functions by partial fractions"
+title: Fourier transforms of rational functions without real poles
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Residues
 relations: []
 review: draft
 audit:
@@ -28,7 +30,7 @@ $$
 \int_ {- \infty} ^ {\infty} R (x) e ^ {- 2 \pi i x \xi} d x = \sum_ {j = 1} ^ {k} P _ {j} (\xi) e ^ {- 2 \pi i \alpha_ {j} \xi}, \quad \text {when} \xi <   0.
 $$
 
-(b) In particular, if $Q ( z )$ has no zeros in the upper half-plane, then $\begin{array} { r } { \int _ { - \infty } ^ { \infty } R ( x ) e ^ { - 2 \pi i x \xi } \dot { d x } = 0 } \end{array}$ for $\xi < 0 .$
+(b) In particular, if $Q ( z )$ has no zeros in the upper half-plane, then $\begin{array} { r } { \int _ { - \infty } ^ { \infty } R ( x ) e ^ { - 2 \pi i x \xi } d x = 0 } \end{array}$ for $\xi < 0 .$
 
 (c) Show that similar results hold in the case $\xi > 0$
 

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-3
 kind: problem
-title: "SS 4.3: The Poisson kernel as a Fourier transform pair"
+title: The Fourier transform pair $\frac1\pi\frac{a}{a^2+x^2}$ and $e^{-2\pi a\abs\xi}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Residues
 relations: []
 review: draft
 audit:

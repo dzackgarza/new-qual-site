@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-1
 kind: problem
-title: "Vanishing Fourier transform forces f = 0 (uniqueness)"
+title: A continuous function of moderate decrease with $\hat f=0$ vanishes
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Liouville's Theorem
 relations: []
 review: draft
 audit:

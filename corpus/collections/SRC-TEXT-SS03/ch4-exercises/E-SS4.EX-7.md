@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-7
 kind: problem
-title: "The Poisson summation formula applied to specific examples often provides intere"
+title: $\sum_n(\tau+n)^{-k}$ and $\sum_n(\tau+n)^{-2}=\pi^2/\sin^2\pi\tau$ by Poisson summation
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Poisson Summation
+  - Residues
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-2
 kind: problem
-title: "SS 4.2: Derivatives of functions of moderate decrease"
+title: Derivatives of functions in $\mathfrak F_a$ lie in $\mathfrak F_b$ for $b<a$
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Cauchy Estimates
 relations: []
 review: draft
 audit:

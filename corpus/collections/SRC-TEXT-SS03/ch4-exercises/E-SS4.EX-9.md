@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-9
 kind: problem
-title: "Here are further results similar to the Phragm´en-Lindel¨of theorem"
+title: Phragmén--Lindelöf theorems in a half-plane and a sector
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Phragmén–Lindelöf
+  - Maximum Modulus Principle
 relations: []
 review: draft
 audit:
@@ -16,7 +18,7 @@ audit:
 ---
 
 ::: {.exercise}
-9. Here are further results similar to the Phragm´en-Lindel¨of theorem.
+9. Here are further results similar to the Phragmén–Lindelöf theorem.
 
 (a) Let $F$ be a holomorphic function in the right half-plane that extends continuously to the boundary, that is, the imaginary axis.
 Suppose that $| F ( i y ) | \le 1$ for all $y \in \mathbb { R }$ , and

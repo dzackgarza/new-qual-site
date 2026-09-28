@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-6
 kind: problem
-title: "SS 4.6: A partial-fraction sum evaluating to coth of pi-a"
+title: $\frac1\pi\sum_n\frac{a}{a^2+n^2}=\coth\pi a$ by Poisson summation
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Poisson Summation
+  - Series of Numbers
 relations: []
 review: draft
 audit:

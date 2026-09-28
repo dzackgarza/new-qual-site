@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS4.EX-4
 kind: problem
-title: "The Fourier transform of a reciprocal polynomial via residues"
+title: The Fourier transform of $1/Q(x)$ in terms of the roots of $Q$
 classification:
   areas:
   - complex-analysis
-  topics: ['Fourier Transform', 'Poisson Summation']
+  topics:
+  - Fourier Transform
+  - Residues
 relations: []
 review: draft
 audit:
