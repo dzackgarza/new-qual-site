@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-10
 kind: problem
-title: "Observe the following irregularities of the functions  and  as n becomes large:
+title: Irregular growth of $r_2(n)$ and $r_4(n)$
 "
 classification:
   areas:
@@ -31,7 +31,7 @@ audit:
 :::
 
 ::: {.solution}
-We use the formulas established in the chapter
+By the two-squares and four-squares theorems,
 \[
 r_2(n)=4\bigl(d_1(n)-d_3(n)\bigr),
 \qquad
