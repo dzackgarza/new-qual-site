@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF98-7
 kind: problem
-title: Characterize positive semidefinite matrices by traces against positive semidefinite matrices
+title: $A$ is positive semidefinite iff $\operatorname{tr}(AB)\ge0$ for all positive semidefinite $B$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
