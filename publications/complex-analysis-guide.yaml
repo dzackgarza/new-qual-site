@@ -389,8 +389,7 @@ sections:
     lede: >-
       Qualifying-exam problems from every part of the syllabus, grouped by type: growth bounds
       that force an entire function to be a polynomial, series and product expansions, limits
-      of sequences of holomorphic functions, and counterexamples. A problem carrying several
-      of these topics appears in each corresponding panel.
+      of sequences of holomorphic functions, and counterexamples.
     topics:
       - Entire Functions
       - Liouville's Theorem
