@@ -49,7 +49,7 @@ The vanishing first-jet condition specifies the meaning of
 is required, rather than vanishing to at least second order,
 there are no holomorphic examples in (a): the identity
 theorem forces the zero function, which has no zero of
-exact order two. The example below has exact quadratic
+exact order two. The function $F$ of step <1>2 has exact quadratic
 order at every prescribed point and therefore answers (b)
 under either interpretation.
 :::
