@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO37
 kind: problem
-title: Outline the proof of the Jordan-Dickson theorem
+title: Jordan--Dickson theorem on the simplicity of $\operatorname{PSL}_n(q)$
 classification:
   areas: [algebra]
   topics: [Group Theory]
