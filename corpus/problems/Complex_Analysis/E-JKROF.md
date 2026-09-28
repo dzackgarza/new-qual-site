@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JKROF
 kind: problem
-title: $1/a+b\cos(\theta)$
+title: $\int_0^{2\pi}\frac{d\theta}{a+b\cos\theta}$
 classification:
   areas:
   - complex-analysis
@@ -32,7 +32,7 @@ The usual substitution: $z=e^{i\theta}, \dtheta = (iz)\inv \dz$.
 &= -{2i\over b} \oint \qty{z^2 + {2a\over b}z + 1}\inv \dz \\
 &= -{2i\over b}\oint (z-r_1)\inv (z-r_2)\inv \dz
 ,\]
-where the roots can just be found using the quadratic formula
+where by the quadratic formula the roots are
 \[
 z_k 
 &= {1\over 2} \qty{-{2a\over b} \pm \sqrt{\qty{2a\over b}^2 - 4}} \\
