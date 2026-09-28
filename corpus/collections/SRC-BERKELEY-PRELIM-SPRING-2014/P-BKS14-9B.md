@@ -24,18 +24,18 @@ audit:
 ---
 
 ::: {.problem}
-Let a finite group \(G\) act transitively on a finite set \(X\). For \(g\in G\), let
-\[
+Let a finite group $G$ act transitively on a finite set $X$. For $g\in G$, let
+$$
 \operatorname{Fix}_g(X)=\{x\in X:g(x)=x\}.
-\]
+$$
 
 (a) Show that
-\[
+$$
 |G|=\sum_{g\in G}|\operatorname{Fix}_g(X)|.
-\]
-Hint: count \(\{(x,g)\in X\times G:gx=x\}\) in two ways.
+$$
+Hint: count $\{(x,g)\in X\times G:gx=x\}$ in two ways.
 
-(b) Show that if \(|X|>1\), then some \(g\in G\) fixes no point of \(X\).
+(b) Show that if $|X|>1$, then some $g\in G$ fixes no point of $X$.
 :::
 
 ::: {.solution}
