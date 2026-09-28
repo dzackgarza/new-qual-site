@@ -20,7 +20,7 @@ audit:
 Prove that the integrals
 
 $$
-\int _ { 0 } ^ { \infty } \cos x ^ { 2 } d x \quad a n d \quad \int _ { 0 } ^ { \infty } \sin x ^ { 2 } d x
+\int_0^\infty\cos x^2\,dx\quad\text{and}\quad\int_0^\infty\sin x^2\,dx
 $$
 
 converge.
