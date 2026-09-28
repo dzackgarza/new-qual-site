@@ -35,7 +35,7 @@ We first extend
 \[
 a^ra^s=a^{r+s}
 \]
-to all integers \(r,s\). The positive-positive case is Exercise 6. If \(r,s>0\), then
+to all integers \(r,s\). For \(r,s>0\) this is the addition law for positive exponents, [[E-MUN-4-6]]. If \(r,s>0\), then
 \[
 a^{-r}a^{-s}=\frac1{a^ra^s}=\frac1{a^{r+s}}=a^{-(r+s)}.
 \]
@@ -43,7 +43,7 @@ For mixed signs, say \(r\ge0\) and \(s=-q<0\),
 \[
 a^ra^{-q}=\frac{a^r}{a^q}.
 \]
-If \(r\ge q\), Exercise 6 gives \(a^r=a^{r-q}a^q\), hence the quotient is \(a^{r-q}\). If \(r<q\), then \(a^q=a^ra^{q-r}\), hence the quotient is
+If \(r\ge q\), [[E-MUN-4-6]] gives \(a^r=a^{r-q}a^q\), hence the quotient is \(a^{r-q}\). If \(r<q\), then \(a^q=a^ra^{q-r}\), hence the quotient is
 \[
 \frac1{a^{q-r}}=a^{r-q}.
 \]
@@ -63,7 +63,7 @@ Hence
 \]
 for all integers \(r,s\).
 
-Finally, Exercise 6 gives \((ab)^m=a^mb^m\) for \(m>0\). For \(m=0\) both sides are \(1\), and for \(m=-q<0\),
+Finally, [[E-MUN-4-6]] gives \((ab)^m=a^mb^m\) for \(m>0\). For \(m=0\) both sides are \(1\), and for \(m=-q<0\),
 \[
 (ab)^{-q}=\frac1{(ab)^q}=\frac1{a^qb^q}=a^{-q}b^{-q}.
 \]
