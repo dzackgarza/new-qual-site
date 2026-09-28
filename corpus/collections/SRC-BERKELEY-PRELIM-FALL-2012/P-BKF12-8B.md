@@ -28,9 +28,9 @@ audit:
 ---
 
 ::: {.problem}
-Let R be a commutative ring with unit.
+Let $R$ be a commutative ring with unit.
 Suppose that there is a monic polynomial $p ( x ) \in R [ x ]$ such that the ideal $( p ( x ) ) \subseteq R [ x ]$ is maximal.
-Prove that R is a field.
+Prove that $R$ is a field.
 :::
 
 ::: {.solution}
