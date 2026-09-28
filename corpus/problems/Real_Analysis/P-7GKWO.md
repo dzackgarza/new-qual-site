@@ -58,7 +58,7 @@ Because $F$ is closed, $F^c$ is open, so
 \[
 r\definedas\delta(x)=d(x,F)>0.
 \]
-By <1>1, whenever $|y-x|<r/2$,
+By step <1>1, whenever $|y-x|<r/2$,
 \[
 \delta(y)\ge \delta(x)-|x-y|>r/2.
 \]
@@ -101,7 +101,7 @@ Define the value on the diagonal $x=y$ to be $0$; this changes no integral. The 
 &=\int_\RR\left(\int_F{\delta(y)\over|x-y|^2}\,dx\right)dy.
 \end{aligned}
 \]
-For $y\in F$, the inner integrand is $0$ almost everywhere in $x$, so its integral is $0$. For $y\in F^c$, <1>3 gives
+For $y\in F$, the inner integrand is $0$ almost everywhere in $x$, so its integral is $0$. For $y\in F^c$, step <1>3 gives
 \[
 \int_F{\delta(y)\over|x-y|^2}\,dx
 =\delta(y)\int_F{dx\over|x-y|^2}\le2.
@@ -116,6 +116,6 @@ Thus
 
 <1>5. $I_F(x)<\infty$ for almost every $x\in F$.
 ::: {.proof}
-By <1>4, the nonnegative measurable function $I_F|_F$ has finite integral. Therefore it is finite almost everywhere on $F$.
+By step <1>4, the nonnegative measurable function $I_F|_F$ has finite integral. Therefore it is finite almost everywhere on $F$.
 :::
 :::
