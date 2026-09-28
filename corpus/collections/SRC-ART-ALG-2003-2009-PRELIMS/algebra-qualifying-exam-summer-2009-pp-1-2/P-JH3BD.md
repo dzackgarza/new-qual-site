@@ -73,8 +73,8 @@ $\mathbf Q$, so there are no further factors.
 
 ::: {.proof}
 Its leading coefficient is $1$, all other coefficients are divisible by
-$3$, and its constant coefficient is not divisible by $9$. Here is the
-Eisenstein argument in this case. By Gauss's lemma, a proper factorization
+$3$, and its constant coefficient is not divisible by $9$. By Eisenstein's
+criterion at $3$ it is irreducible. In detail, by Gauss's lemma, a proper factorization
 over $\mathbf Q$ would give monic positive-degree factors $g,h\in\mathbf Z[x]$
 [@DF04]. Modulo $3$, their product is $x^7$, so each reduction is a
 positive power of $x$. Consequently $3$ divides both $g(0)$ and $h(0)$,
