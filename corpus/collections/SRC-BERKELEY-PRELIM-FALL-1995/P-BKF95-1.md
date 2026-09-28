@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF95-1
 kind: problem
-title: Bound the number of index-$k$ subgroups of an $n$-generated group
+title: Upper bound for the number of index-$k$ subgroups of an $n$-generated group
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
