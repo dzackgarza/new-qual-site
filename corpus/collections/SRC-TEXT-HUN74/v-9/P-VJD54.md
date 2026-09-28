@@ -44,7 +44,6 @@ Let
 \[
 G=\operatorname{Aut}_K(F)\cong S_n.
 \]
-We first identify \(F/K\) as a Galois extension with this full Galois group.
 
 <1>1. One has
 \[
