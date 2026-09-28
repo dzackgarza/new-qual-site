@@ -23,23 +23,25 @@ Show that if $H < G$ is a proper subgroup, then $\Union_{g\in G} gHg\inv \subset
 :::
 
 ::: {.solution}
-Strategy: bound the cardinality.
-All conjugates of $H$ have the same cardinality, say $\size  H = m$.
-Suppose there are $n$ distinct conjugates of $H$.
-Then they intersect only at the identity, so count their elements:
-\[
-\size  \Union_{g\in G} gHg\inv = 1 + n(m-1)
-.\]
-Use that $n = [G: N_G(H)]$ by Orbit-Stabilizer, and $N_G(H) \leq G \implies n \leq n' \da [G:H]$.
-Now note $n'm = \size  H[G:H] = \size  G$ by Lagrange:
-\[
-\size  \Union_{g\in G} gHg\inv 
-&= 1 + n(m-1) \\
-&\leq 1 + n'(m-1) \\
-&= 1 + n'm -n' \\
-&= 1 + \size  G - n' \\
-&= \size  G - (n' - 1) \\
-&< \size  G && \iff n' \da [G:H] > 1
-.\]
+Let $G$ be finite, $m=\size H$, and $n'=[G:H]>1$.
+
+<1>1. $H$ has $n=[G:N_G(H)]\le n'$ distinct conjugates.
+
+::: {.proof}
+By orbit-stabilizer for the conjugation action on subgroups, $n=[G:N_G(H)]$, and $H\le N_G(H)$ gives $n\le[G:H]$.
+:::
+
+<1>2. $\size \Union_{g\in G} gHg\inv\le 1+n(m-1)$.
+
+::: {.proof}
+Each of the $n$ conjugates has $m$ elements, one of which is the identity, and the identity is common to all of them.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2 and Lagrange's theorem $n'm=\size G$,
+$$\size \Union_{g\in G} gHg\inv\le 1+n'(m-1)=\size G-(n'-1)<\size G .$$
+:::
 :::
 
