@@ -36,8 +36,6 @@ $$
 
 It is illustrated in Figure 3.
 
-Figure 3. The fundamental domain $\mathcal { F } _ { 1 }$
-
 Consider the two elements in $\operatorname { S L _ { 2 } } ( \mathbb { Z } )$ defined by $S ( \tau ) = - 1 / \tau$ and $T _ { 1 } ( \tau ) = \tau + 1$ These correspond (for example) to the matrices
 
 $$
