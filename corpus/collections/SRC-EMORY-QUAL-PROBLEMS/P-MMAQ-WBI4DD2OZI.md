@@ -26,17 +26,10 @@ State and prove Fatou's Lemma on a general measurable space.
 :::
 
 ::: {.solution}
-**Goal:** State and prove Fatou's Lemma on a general measure space.
+**Fatou's lemma.** Let $(X, \mathcal M, \mu)$ be a measure space and $\{f_n\}$ a sequence of measurable functions with $f_n \geq 0$ for all $n$.
+Then $$\int_X \liminf_{n \to \infty} f_n ~d\mu \leq \liminf_{n \to \infty} \int_X f_n ~d\mu,$$ where both sides may be $+\infty$.
 
-<1>1. Statement of Fatou's Lemma.
-<2>1. Let $(X, \mathcal M, \mu)$ be a measure space and $\{f_n\}$ a sequence of measurable functions with $f_n \geq 0$ for all $n$.
-Then $$\int_X \liminf_{n \to \infty} f_n ~d\mu \leq \liminf_{n \to \infty} \int_X f_n ~d\mu.$$ Proof: This is the statement to be proved; both sides may be $+\infty$.
-<2>2. Q.E.D.
-::: {.proof}
-The statement is recorded for the proof below.
-:::
-
-<1>2. Proof.
+<1>1. Proof of Fatou's lemma.
 <2>1. Define $g_k \definedas \inf_{n \geq k} f_n$; then $g_k$ is measurable, $0 \leq g_k \leq f_n$ for all $n \geq k$, and $g_k$ increases to $\liminf_n f_n$ as $k \to \infty$.
 ::: {.proof}
 Each $g_k$ is a countable infimum of measurable functions, hence measurable; $g_k \leq f_n$ for $n \geq k$ by definition; the sequence $(g_k)$ is nondecreasing; and $\lim_k g_k = \lim_k \inf_{n \geq k} f_n = \liminf_n f_n$ by definition of $\liminf$.
@@ -52,6 +45,6 @@ $g_k \leq f_n$ pointwise for $n \geq k$ (<2>1) and both are nonnegative, so mono
 <2>4. Take the limit as $k \to \infty$: $$\int_X \liminf_n f_n ~d\mu = \lim_k \int_X g_k ~d\mu \leq \lim_k \inf_{n \geq k} \int_X f_n ~d\mu = \liminf_n \int_X f_n ~d\mu.$$ Proof: Left equality by <2>2; inequality by <2>3 (passing to the limit); right equality by definition of $\liminf$ applied to the sequence $\int_X f_n$.
 <2>5. Q.E.D.
 ::: {.proof}
-This proves Fatou's Lemma.
+The inequality of step <2>4 is the conclusion of Fatou's lemma.
 :::
 :::
