@@ -201,8 +201,8 @@ Step <1>6 is the required conclusion.
 :::
 
 ::: {.remark}
-Erratum: the source does not say what $g$ is. The corrected statement above
-adds the standard hypothesis that $g$ is continuous on the range of
+Erratum: the source does not say what $g$ is. The corrected statement
+adds the hypothesis that $g$ is continuous on the range of
 $\gamma$; under this hypothesis the Cauchy-type integral is defined for
 every $z$ off that range.
 :::
