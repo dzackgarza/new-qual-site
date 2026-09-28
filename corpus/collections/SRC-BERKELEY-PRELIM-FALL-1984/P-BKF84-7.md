@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF84-7
 kind: problem
-title: Compute the Vandermonde determinant
+title: The Vandermonde determinant
 classification:
   areas: [prelim]
   topics: []
