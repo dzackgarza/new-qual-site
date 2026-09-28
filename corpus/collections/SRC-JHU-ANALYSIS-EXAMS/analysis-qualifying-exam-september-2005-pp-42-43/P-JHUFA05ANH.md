@@ -46,7 +46,7 @@ formula gives $z_1+z_2=1$, hence
 $\operatorname{Re}z_1+\operatorname{Re}z_2=1$.
 At least one root has real part at least $1/2$, so lies
 in $H$. That root maps to $w$. This proves surjectivity
-onto the whole plane, not only onto an open subset.
+onto $\mathbb C$.
 :::
 
 <1>2. Every holomorphic map from $\mathbb C$ to $H$ is constant.
