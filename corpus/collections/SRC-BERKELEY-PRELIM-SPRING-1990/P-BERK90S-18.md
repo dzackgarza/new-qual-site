@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK90S-18
 kind: problem
-title: Select a subset of complex numbers with a large vector sum
+title: A subset of complex numbers whose sum has modulus at least $\frac{1}{4\sqrt2}\sum\abs{z_j}$
 classification:
   areas: [prelim]
   topics: []
