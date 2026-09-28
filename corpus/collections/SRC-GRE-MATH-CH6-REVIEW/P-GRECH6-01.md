@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-01
 kind: problem
-title: Integer solution of 42x+55y=1
+title: Integer solution of $42x+55y=1$
 classification:
   areas:
   - algebra
