@@ -5,7 +5,6 @@ order: 8
 
 # Standard integrals
 
-Evaluations of standard real integrals by residues, each with its contour and the estimates for the added pieces.
 The contour cases are described on [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]].
 
 ## $\displaystyle\int_\RR {\dx \over 1+x^2} = \pi$
