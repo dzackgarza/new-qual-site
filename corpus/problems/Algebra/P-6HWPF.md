@@ -51,7 +51,7 @@ Cardano's formula solves the general cubic by radicals, and Ferrari's method red
 
 <1>3. A polynomial is solvable by radicals if and only if its Galois group is solvable.
 ::: {.proof}
-This is the fundamental Galois-theoretic criterion for solvability by radicals in characteristic $0$. A radical tower yields a Galois closure with a normal series having abelian cyclic factors, so its Galois group is solvable. Conversely, if the Galois group is solvable, adjoining the necessary roots of unity and using the cyclic factors in a solvable series realizes the splitting field inside a tower of radical extensions.
+This is Galois's criterion for solvability by radicals in characteristic $0$. A radical tower yields a Galois closure with a normal series having abelian cyclic factors, so its Galois group is solvable. Conversely, if the Galois group is solvable, adjoining the necessary roots of unity and using the cyclic factors in a solvable series realizes the splitting field inside a tower of radical extensions.
 :::
 
 <1>4. The symmetric group $S_n$ is not solvable for $n\ge5$.
@@ -64,7 +64,7 @@ For $n\ge5$, the alternating group $A_n$ is a nonabelian simple normal subgroup 
 The general degree-$n$ polynomial has Galois group $S_n$. By <1>4 this group is nonsolvable for $n\ge5$, and by <1>3 a polynomial with nonsolvable Galois group cannot be solved by radicals. This is the Abel--Ruffini theorem.
 :::
 
-<1>6. This does not mean that every quintic is unsolvable by radicals.
+<1>6. Some quintics are solvable by radicals.
 ::: {.proof}
 The criterion in <1>3 depends on the Galois group of the particular polynomial. For example,
 \[
