@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU51RA5
 kind: problem
-title: "L^p norms increase to the L^infinity norm"
+title: "$\\|f\\|_p\\to\\|f\\|_\\infty$ as $p\\to\\infty$ for $f\\in L^1\\cap L^\\infty$"
 classification:
   areas:
   - real-analysis
@@ -33,8 +33,6 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Prove that for $f \in L^1(\mu) \cap L^\infty(\mu)$, $\lim_{p \to \infty} \|f\|_p = \|f\|_\infty$ using the squeeze theorem with upper and lower bounds.
-
 <1>1. Trivial Case $\|f\|_\infty = 0$:
     *Proof:*
     <2>1. If $\|f\|_\infty = 0$, then $f = 0$ almost everywhere.
