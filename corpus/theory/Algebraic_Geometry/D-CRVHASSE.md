@@ -22,29 +22,26 @@ prompts:
 - Define the Hasse invariant.
 - Why does it take only two values?
 - What is $E[p]$ as a group scheme in each case?
-- How many points does $E[p]$ have, and why is counting points the wrong invariant here?
+- How many $\bar k$-points does $E[p]$ have in each case, and what is its order as a group scheme?
 - What is the endomorphism ring of a supersingular curve?
 ---
 
 ::: {.definition}
 Let $k$ be perfect with $\operatorname{ch} k = p > 0$ and let $E/k$ be elliptic, with Frobenius $F \colon E \to E$.
 Then $F$ acts on cohomology by
-\[
+$$
 F^* \colon H^1(E; \OO_E) \selfmap ,
-\]
+$$
 which is not $k$-linear but $p$-linear: $F^*(\lambda a) = \lambda^p F^*(a)$ for $\lambda \in k$.
 Since $E$ is elliptic, $h^1(\OO_E) = 1$.
-Say $E$ has \dfn{Hasse invariant $0$}, and call $E$ **supersingular**, when $F^* = 0$; otherwise $F^*$ is bijective, the **Hasse invariant is $1$**, and $E$ is **ordinary**.
+Say $E$ has \dfn{Hasse invariant $0$}, and call $E$ \dfn{supersingular}, when $F^* = 0$; otherwise $F^*$ is bijective, $E$ has \dfn{Hasse invariant $1$}, and $E$ is \dfn{ordinary}.
 :::
 
-::: {.remark title="Why only two values"}
+::: {.remark title="Independence of the basis"}
 Fix a basis vector $e$ of the line $H^1(E;\OO_E)$ and write $F^*(e) = c\, e$.
-Then $F^*(\lambda e) = \lambda^p c \, e = (\lambda^{p-1} c)(\lambda e)$, so changing the basis replaces $c$ by $\lambda^{p-1}c$.
-Whether $c = 0$ is therefore independent of the basis, and that dichotomy is the invariant.
-If $c \neq 0$ then $F^*$ is injective, and it is surjective because $k$ is perfect, so $p$-th roots exist: $\mu e = F^*\big( (\mu/c)^{1/p} e \big)$.
-Hence $F^*$ is zero or bijective, with no intermediate case.
-Perfectness is used only for surjectivity; over an imperfect field the statement would fail, which is why the definition carries that hypothesis.
-This is a discrete invariant of a smooth curve with no analogue over $\CC$.
+Then $F^*(\lambda e) = \lambda^p c \, e = (\lambda^{p-1} c)(\lambda e)$, so changing the basis replaces $c$ by $\lambda^{p-1}c$, and whether $c = 0$ is independent of the basis.
+If $c \neq 0$ then $F^*$ is injective, and it is surjective because every element of the perfect field $k$ has a $p$-th root: $\mu e = F^*\big( (\mu/c)^{1/p} e \big)$.
+Over an imperfect field with $c\ne0$, the image of $F^*$ is $k^pc\,e$, a proper subset of $k\,e$.
 :::
 
 ::: {.remark title="The $p$-torsion group scheme"}
@@ -57,13 +54,13 @@ The Hasse invariant separates the two possible $p$-torsion group schemes. In bot
 - **Supersingular.** $E[p]$ is connected with connected Cartier dual --- local-local --- of order $p^2$, the unique self-dual non-split extension of $\alpha_p$ by $\alpha_p$.
   It has no nontrivial $\bar k$-points at all, so $E[p](\bar k) = 0$.
 
-This is the contrast with $\ell \neq p$, where $E[\ell] \cong (\ZZ/\ell)^2$ always.
-Multiplication by $p$ still has degree $p^2$ in both cases; what changes is how much of that degree is inseparable, which is why the scheme and not the point set is the right object.
+For a prime $\ell \neq p$, $E[\ell] \cong (\ZZ/\ell)^2$ over $\bar k$.
+Multiplication by $p$ has degree $p^2$ in both cases; its separable degree is $p$ when $E$ is ordinary and $1$ when $E$ is supersingular.
 :::
 
 ::: {.remark title="Endomorphisms"}
-The dichotomy repeats in the endomorphism ring, and the supersingular case has no characteristic-zero analogue.
-For $E$ ordinary, $\operatorname{End}(E,p_0)$ is $\ZZ$ or an order in an imaginary quadratic field, as over $\CC$.
-For $E$ supersingular, $\operatorname{End}(E,p_0)$ is a maximal order in the quaternion algebra over $\QQ$ ramified exactly at $p$ and $\infty$ --- rank four, and noncommutative.
-"Supersingular" therefore does not mean singular: the curve is smooth, and the word records that the endomorphism ring is *larger* than singular values of $j$ over $\CC$ ever produce.
+Let $E_{\bar k}$ be the base change of $E$ to $\bar k$.
+For $E$ ordinary, $\operatorname{End}(E_{\bar k},p_0)$ is $\ZZ$ or an order in an imaginary quadratic field, and it is an order in an imaginary quadratic field when $k$ is finite.
+For $E$ supersingular, $\operatorname{End}(E_{\bar k},p_0)$ is a maximal order in the quaternion algebra over $\QQ$ ramified exactly at $p$ and $\infty$; it has rank four and is noncommutative.
+Over $\CC$, the endomorphism ring of an elliptic curve has rank $1$ or $2$, and the $j$-invariants of the curves with rank $2$ are the singular moduli; the name supersingular refers to the larger endomorphism ring, and a supersingular curve is smooth.
 :::
