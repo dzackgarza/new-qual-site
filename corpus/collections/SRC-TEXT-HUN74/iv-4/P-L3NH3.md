@@ -46,7 +46,11 @@ $f_a(r_1 + r_2) = (r_1 + r_2)a = r_1 a + r_2 a$ and $f_a(sr) = (sr)a = s(ra) = s
 :::
 
 <1>3. $\Phi$ is a ring homomorphism to $R^{\mathrm{op}}$.
-<2>1. $\Phi(f \circ g) = (f \circ g)(1) = f(g(1)) = f(1) \cdot g(1)$.
+<2>0. $\Phi(f+g)=\Phi(f)+\Phi(g)$ and $\Phi(\operatorname{id}_R)=1$.
+::: {.proof}
+$(f+g)(1)=f(1)+g(1)$ and $\operatorname{id}_R(1)=1$.
+:::
+<2>1. $\Phi(f \circ g) = (f \circ g)(1) = f(g(1)) = g(1) f(1)$.
 ::: {.proof}
 $g(1) = g(1) \cdot 1$, and $f(g(1)) = f(g(1)\cdot 1) = g(1) f(1)$.
 :::
