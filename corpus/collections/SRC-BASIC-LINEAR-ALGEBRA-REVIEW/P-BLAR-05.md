@@ -16,15 +16,13 @@ audit:
 ---
 
 ::: {.problem}
-Decide which of the following sets are vector spaces.
-It is permissible to show that a set is a subspace, but in that case identify the ambient vector space.
-For each set that is a vector space, find a basis.
+Decide which of the following sets are vector spaces. It is valid to show a set is a subspace, but you must indicate which vector space it is a subset of. If the set is a vector space, find a basis for it.
 
-1. The set of \(3\times3\) diagonal matrices.
+(a) The set of $3 \times 3$ diagonal matrices.
 
-2. The set of vectors of the form \((a,b,0)\).
+(b) The set of vectors of the form $[a, b, 0]$
 
-3. The set of vectors of the form \((a,6)\).
+(c) The set of vectors of the form $[a, 6]$
 
-4. The set of \(3\times3\) symmetric matrices.
+(d) The set of $3 \times 3$ symmetric matrices.
 :::
