@@ -89,7 +89,6 @@ $$
 Then $x-c=-ua\in(a)$ and $x-d=vb\in(b)$, proving both
 congruences. In terms of step <1>2, write $c-d=kg$ and
 $g=ra+sb$; the explicit solution becomes
-$x=c-kra=d+ksb$. No assumption that $a$ and $b$ are
-coprime was used.
+$x=c-kra=d+ksb$.
 :::
 :::
