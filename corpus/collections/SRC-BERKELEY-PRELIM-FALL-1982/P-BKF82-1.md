@@ -68,7 +68,7 @@ $$
 So a local $C^1$ solution exists.
 :::
 
-<1>2. The local solution is unique even though no Lipschitz hypothesis was assumed.
+<1>2. The local solution is unique.
 ::: {.proof}
 Let $z(x)$ be any $C^1$ solution with $z(0)=c$. Then
 $$
@@ -111,7 +111,6 @@ $$
 <1>4. Express the global-existence condition directly in terms of $f$.
 ::: {.proof}
 Since $f$ has constant sign, the condition in step <1>3 is equivalent to
-requiring infinite reciprocal travel time in both directions:
 $$
 \boxed{
 \int_0^{\infty}\frac{ds}{|f(s)|}=\infty
