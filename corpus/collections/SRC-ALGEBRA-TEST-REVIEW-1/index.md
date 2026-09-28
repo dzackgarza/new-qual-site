@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-ALGEBRA-TEST-REVIEW-1
 kind: collection
-title: Abstract Algebra Test Review 1
+title: Abstract algebra test review 1
 classification:
   areas:
   - algebra
