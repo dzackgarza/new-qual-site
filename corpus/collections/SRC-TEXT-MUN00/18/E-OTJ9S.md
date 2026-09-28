@@ -28,33 +28,30 @@ are imbeddings.
 :::
 
 ::: {.solution}
-<1>1. $f : X \to X \times Y$, $f(x) = (x, y_0)$ is injective.
+An imbedding is a map that is a homeomorphism onto its image.
+
+<1>1. $f$ is continuous and injective.
+
 ::: {.proof}
-if $f(x_1) = f(x_2)$ then $(x_1, y_0) = (x_2, y_0)$, so $x_1 = x_2$.
+Its coordinates are $\pi_1\circ f=\operatorname{id}_X$ and the constant map $\pi_2\circ f\equiv y_0$, both continuous, and a map into a product is continuous if and only if its coordinates are.
+If $f(x_1)=f(x_2)$, then $(x_1,y_0)=(x_2,y_0)$, so $x_1=x_2$.
 :::
 
-<1>2. $f$ is continuous.
+<1>2. $f$ is a homeomorphism onto $X\times\{y_0\}$.
+
 ::: {.proof}
-the coordinate functions are $\pi_1 \circ f = \operatorname{id}_X$ (continuous) and $\pi_2 \circ f = \text{constant } y_0$ (continuous), so $f$ is continuous (a map into a product is continuous iff its coordinates are).
+The inverse of $f\colon X\to X\times\{y_0\}$ is the restriction of $\pi_1$ to $X\times\{y_0\}$, which is continuous.
 :::
 
-<1>3. $f$ is a homeomorphism onto its image $X \times \{y_0\}$.
+<1>3. $g$ is an imbedding.
+
 ::: {.proof}
-the inverse is the projection $\pi_1$ restricted to $X \times \{y_0\}$, which is continuous.
+Exchange the roles of the factors in steps <1>1 and <1>2: $g$ has coordinates the constant map at $x_0$ and $\operatorname{id}_Y$, and its inverse on $\{x_0\}\times Y$ is the restriction of $\pi_2$.
 :::
 
-<1>4. Hence $f$ is an imbedding.
-::: {.proof}
-<1>1–<1>3 (an imbedding is an injective continuous map that is a homeomorphism onto its image).
-:::
+<1>4. Q.E.D.
 
-<1>5. The same argument shows $g : Y \to X \times Y$, $g(y) = (x_0, y)$ is an imbedding.
 ::: {.proof}
-symmetric to <1>1–<1>4, using $\pi_2$ as the inverse.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>4 and <1>5.
+Steps <1>1 and <1>2 show that $f$ is an imbedding, and step <1>3 treats $g$.
 :::
 :::
