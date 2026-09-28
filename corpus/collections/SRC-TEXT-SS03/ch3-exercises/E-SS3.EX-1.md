@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-1
 kind: problem
-title: "SS 3.1: Zeros of sin pi-z and residues of its reciprocal"
+title: Zeros of $\sin\pi z$ and residues of $1/\sin\pi z$
 classification:
   areas:
   - complex-analysis
