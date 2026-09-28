@@ -21,7 +21,7 @@ source:
   - P-A5CFD
   - P-8TF07
   - id: P-8TF06
-    comment: Problem 5; the Fall 2006 appearance uses slightly shorter wording.
+    comment: Problem 5
   - P-M2NVE
   - P-8TF08
   - P-VPPPN
