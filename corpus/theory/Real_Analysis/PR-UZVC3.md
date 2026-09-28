@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-UZVC3
 kind: proposition
 title: Limits and integrals need not commute
-slogan: 'Pointwise convergence alone does not justify passing a limit through an integral.'
+slogan: 'The functions $n\chi_{(0,1/n)}$ converge to $0$ at every point of $[0,1]$ while each has integral $1$.'
 classification:
   areas:
   - real-analysis
