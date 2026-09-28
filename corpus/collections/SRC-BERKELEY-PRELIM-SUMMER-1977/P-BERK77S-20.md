@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-20
 kind: problem
-title: Solve the infinite system $x_n+x_{n+2}+x_{n+4}=0$
+title: The solution space of the infinite linear system $x_n+x_{n+2}+x_{n+4}=0$
 classification:
   areas:
   - prelim
