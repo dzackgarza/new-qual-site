@@ -43,7 +43,7 @@ For each $z \in \Omega$, $\abs{f_n(z) - f_m(z)} \le \norm{f_n - f_m}_\infty \to 
 
 <1>3. The limit $f$ is holomorphic.
 ::: {.proof}
-Since $\{f_n\}$ converges uniformly on $\Omega$ to $f$ (Cauchy in sup norm implies uniform convergence), and each $f_n$ is holomorphic, Morera's theorem applies: for every closed curve $\gamma$, $\int_\gamma f = \lim_n \int_\gamma f_n = \lim_n 0 = 0$ (uniform convergence lets the limit pass through the integral; each integral vanishes by Cauchy's theorem).
+Since $\{f_n\}$ converges uniformly on $\Omega$ to $f$ (Cauchy in sup norm implies uniform convergence), $f$ is continuous on $\Omega$, and for every closed triangle $T\subseteq\Omega$, $\int_{\partial T} f = \lim_n \int_{\partial T} f_n = \lim_n 0 = 0$ (uniform convergence lets the limit pass through the integral; each integral vanishes by Goursat's theorem). Morera's theorem [[T-LHSMY]] applies.
 :::
 Hence $f$ is holomorphic.
 
