@@ -119,7 +119,7 @@ The generators $c_i$ can then be removed by Tietze transformations, leaving exac
 
 <1>5. The surface $X_k$ is the closed nonorientable surface of genus $k$:
 \[
-\boxed{X_k\cong N_k=\#^k\mathbb{RP}^2.}
+\boxed{X_k\cong N_k=\#^k\RP^2.}
 \]
 ::: {.proof}
 All $k$ boundary circles of $S_k$ are filled by Möbius bands, so $X_k$ is a closed connected surface.
@@ -140,6 +140,6 @@ Euler characteristic is unchanged when a Möbius band is glued along a boundary 
 By the classification of closed connected surfaces, the unique nonorientable surface with Euler characteristic $2-k$ is the connected sum of $k$ projective planes.
 This also agrees with the standard presentation in <1>4.
 
-Thus $X_1\cong\mathbb{RP}^2$, $X_2$ is the Klein bottle, and in general $X_k\cong N_k$.
+Thus $X_1\cong\RP^2$, $X_2$ is the Klein bottle, and in general $X_k\cong N_k$.
 :::
 :::
