@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-OTR5M
 kind: theorem
 title: Borel--Cantelli lemma
-slogan: 'If the total measure of the events is summable, almost every point occurs in only finitely many of them.'
+slogan: 'If $\sum_k m(E_k)<\infty$, then almost every point lies in only finitely many of the sets $E_k$.'
 classification:
   areas:
   - real-analysis
