@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-3A
 kind: problem
-title: Approximate an exponential integral
+title: Estimate of $\int_{-1/2}^{1/2}(e^x-1)/x\,dx$ to within $0.01$
 classification:
   areas:
   - prelim
@@ -24,10 +24,10 @@ audit:
 ---
 
 ::: {.problem}
-Find a real number \(c\) such that
-\[
+Find a real number $c$ such that
+$$
 \left|c-\int_{-1/2}^{1/2}\frac{e^x-1}{x}\,dx\right|<0.01.
-\]
+$$
 :::
 
 ::: {.solution}
