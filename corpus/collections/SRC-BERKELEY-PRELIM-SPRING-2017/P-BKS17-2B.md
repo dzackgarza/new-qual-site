@@ -17,7 +17,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f : [-1, 1] \to \mathbb{C}$ is a continuous complex-valued function, and for all non-negative integers $n$
+Suppose $f : [-1, 1] \to \CC$ is a continuous complex-valued function, and for all non-negative integers $n$
 
 $$
 \int_{-1}^{1} x^n f(x) \, dx = 0.
