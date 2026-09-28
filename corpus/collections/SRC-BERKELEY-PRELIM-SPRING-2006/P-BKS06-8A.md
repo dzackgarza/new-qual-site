@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-8A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 8A
+title: A holomorphic function on the disk injective off the origin is injective
 classification:
   areas: [prelim]
   topics: []
