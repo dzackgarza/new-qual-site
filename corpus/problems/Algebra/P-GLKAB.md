@@ -54,5 +54,5 @@ f\text{ has a repeated root}
 \iff
 \gcd(f,f')\ne1.
 \]
-For a monic quadratic $x^2+bx+c$, this recovers the familiar discriminant $b^2-4c$.
+For a monic quadratic $x^2+bx+c$, this gives $\operatorname{Disc}(f)=b^2-4c$.
 :::
