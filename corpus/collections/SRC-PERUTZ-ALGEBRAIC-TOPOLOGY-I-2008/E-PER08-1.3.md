@@ -64,5 +64,5 @@ c_{x_0}\simeq\operatorname{id}_C.
 \]
 :::
 
-By the contractibility criterion, $C$ is contractible.
+A nonempty space whose identity map is homotopic to a constant map is contractible ([[E-PER08-1.2]]), so $C$ is contractible.
 :::
