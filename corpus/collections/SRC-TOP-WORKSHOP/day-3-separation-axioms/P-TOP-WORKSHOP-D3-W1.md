@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-W1
 kind: problem
-title: Metric spaces are Hausdorff (workshop warm-up)
+title: Metric spaces are Hausdorff
 classification:
   areas:
   - topology
