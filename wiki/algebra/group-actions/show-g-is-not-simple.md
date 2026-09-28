@@ -36,7 +36,7 @@ For $n = 20 = 2^2\cdot 5$: $n_5 \equiv 1 \pmod 5$ and $n_5 \divides 4$, so $n_5 
 ## Counting elements
 
 Distinct subgroups of prime order $p$ intersect trivially, so if the Sylow $p$-subgroups have order $p$, they contain $n_p(p-1)$ elements of order $p$.
-If the sum of these counts over several primes exceeds $n$, then some $n_p$ is smaller than assumed.
+Elements of distinct prime orders are distinct and nonidentity, so summing over the primes $p$ whose Sylow $p$-subgroups have order $p$ gives $\sum_p n_p(p-1)\leq n-1$; values of the $n_p$ that violate this inequality do not occur.
 Sylow subgroups of order $p^2$ can intersect in a subgroup of order $p$, and then this count does not apply; see [[algebra/group-actions/show-g-is-not-simple#Two Sylow subgroups meeting nontrivially|Two Sylow subgroups meeting nontrivially]].
 
 ::: {.example}
@@ -75,7 +75,7 @@ Hence a bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to whic
 
 Suppose the Sylow $p$-subgroups have order $p^2$ and two of them, $P \neq Q$, satisfy $\size{P\intersect Q} = p$.
 Groups of order $p^2$ are abelian, so $D \da P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
-Hence $[G:N_G(D)]$ is a proper divisor of $m$, and either $N_G(D) = G$, so that $D$ is a proper nontrivial normal subgroup, or $[G:N_G(D)]$ is small enough for [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]]. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
+Hence $[G:N_G(D)]$ is a proper divisor of $m$, and either $N_G(D) = G$, so that $D$ is a proper nontrivial normal subgroup, or $N_G(D)$ is a proper subgroup whose index $k$ is a proper divisor of $m$, and if $G$ is simple then $\size G\divides k!$ by [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]]. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
 
 ## The action on the Sylow subgroups
 
