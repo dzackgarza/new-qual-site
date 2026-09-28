@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-5
 kind: problem
-title: "Cauchy's theorem via Green's theorem for C1 functions"
+title: Goursat's theorem for $C^1$ functions via Green's theorem
 classification:
   areas:
   - complex-analysis
