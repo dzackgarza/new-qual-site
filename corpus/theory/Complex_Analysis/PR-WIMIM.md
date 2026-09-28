@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-WIMIM
 kind: proposition
 title: Ratio test
-slogan: 'Successive-term ratios below $1$ force absolute convergence; above $1$ force divergence.'
+slogan: 'If $\abs{a_{k+1}/a_k}\to L$, then $\sum a_k$ converges absolutely when $L<1$ and diverges when $L>1$.'
 classification:
   areas:
   - complex-analysis
