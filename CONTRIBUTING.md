@@ -1,5 +1,22 @@
 # Contributing
 
+## Contributing to this document
+
+Contributing to CONTRIBUTING.md requires the same substantive work it demands of other writing:
+
+- **Start from observed defects.** Quote actual repository passages with stable source locations. Invented caricatures conceal how ordinary and plausible the defective prose looked.
+- **Extract the general mechanism.** A resource page can expose a framing failure that applies throughout the site. The policy belongs at that general level; the page supplies evidence.
+- **Cover the whole correction interval.** “Such patterns” includes everything discussed since the previous update, not merely the last objection.
+- **Explain the relationship the prose imposes.** Identify who is being judged, supervised, or spoken for, and what authority the writer assumes.
+- **Teach recognition and severity.** Explain how repeated, superficially helpful sentences establish sustained condescension or professional contempt. Explicitly address the temptation to minimize this as verbosity, missing citations, or isolated mistakes.
+- **Make replacements demonstrate the actual correction.** Softer commands, first-person suggestions, and “Suggested reading” can preserve the same hierarchy. Replace prescription with useful knowledge and its supporting reasons.
+- **Revise earlier policies when their model proves wrong.** Appending a stronger rule while leaving contradictory guidance authoritative preserves the defect.
+- **Maintain one source of truth.** Integrate related rules coherently in CONTRIBUTING.md rather than accumulating overlapping catalogues or parallel policy documents.
+- **Separate evidence from proposals.** Observed quotations establish the finding; proposed replacements must not invent mathematical coverage, historical events, or source facts.
+
+The document must make the difficult recognition reproducible for a future contributor.
+Recording agreement, adding prohibitions, or producing more policy text does not establish that it does.
+
 Contributions can improve mathematical content, source records, study guides, or the website.
 
 ## Named policies
@@ -573,8 +590,9 @@ Assess the relationship the prose establishes with readers and scholars, rather 
 
 **Observed — “The one book the exam is drawn from”:** “Read II.1--II.8, III.1--III.5 with III.9, and IV.1--IV.3, plus the statement of Serre duality in III.6.”
 
-**Proposed replacement:** “Relevant sections: II.1–II.8, III.1–III.5, III.9, IV.1–IV.3, and the statement of Serre duality in III.6.” Explain the subject or documented syllabus to which these sections are relevant and verify the selection.
-Better still, organize the references by the topics they cover.
+**Proposed replacement:** Describe what the named sections contain, connect their topics, and identify relevant recorded questions with source locations.
+A bare list labelled “Relevant sections” does not supply the rationale for the selection.
+Verify each content claim and relation against its source.
 
 The section locations are information; the imperative adds an assignment.
 Writing a reference page does not establish a supervisory relationship.
@@ -626,7 +644,7 @@ Invoking an examiner gives that prescription borrowed authority without making i
 Describe the specific results used by later material.
 Do not turn chapter order or topic coverage into a judgement about which study choices deserve credit.
 
-### `STANCE-20`: Calibrate informal judgement without manufacturing certainty
+### `STANCE-20`: Express epistemic limits in the information presented
 
 **Observed — “The first pass”, `[@Gat21]`:** “should read these and nothing else”.
 The exclusion leaves no room for circumstances the writer has not examined.
@@ -634,24 +652,23 @@ The exclusion leaves no room for circumstances the writer has not examined.
 **Proposed replacement:** On a reference page, provide coverage and locations.
 When advice is actually requested, state its purpose, supporting reasons, and conditions under which another choice may be preferable.
 
-Informal judgements can be informed and still uncertain.
-Expressions such as “may help with” or “I would suggest” can communicate that a recommendation is defeasible.
-They must correspond to a real limit in the claim, not decorate an unchanged command.
+Express uncertainty through the scope and evidence of the claim: which records were examined, which topics they contain, and which inference remains tentative.
+Changing a command into a first-person suggestion does not supply the missing work or establish a relationship with the reader.
 Do not invent numerical probabilities or imply that all mathematicians follow one conversational practice.
-The governing distinction is between established mathematics and contingent judgement about its use.
-Neither blanket certainty nor indiscriminate hedging expresses that distinction.
+Neither blanket certainty nor indiscriminate hedging communicates the actual limits of knowledge.
 
-### `STANCE-21`: Make peer advice conditional and preserve decision ownership
+### `STANCE-21`: Replace advice with the reasons and material it displaced
 
 **Observed — “The commutative algebra underneath”, `[@AM18]`:** “Work its exercises rather than reading it.”
 
-**Proposed replacement:** For the reference page, identify relevant exercises and sections.
-In a requested discussion of practice methods, a recommendation could identify particular exercises and explain which technique they exercise.
+**Proposed replacement:** Identify the exercises, the techniques they develop, and their relations to the surrounding exposition.
+Supply section locations.
 
-A recommendation contributes the writer's judgement while leaving the decision with the person who knows their own circumstances.
-Strength of preference does not confer supervisory authority.
-Explain the reasons for advice instead of making obedience the expected response.
-Merely changing “read” to “you should read” or adding “perhaps” preserves the original presumption when the reader has not requested guidance of that kind.
+A recommendation can retain the same hierarchy as a command: the author still sets the reader's course.
+In this wiki, the corrective form presents the knowledge behind a proposed choice rather than making the choice.
+Readers can use that knowledge for purposes the author has not anticipated.
+Conditional phrasing and politeness do not substitute for mathematical or bibliographic synthesis.
+Advice explicitly requested in a personal exchange has a different context; do not import that relationship into an independently read page.
 
 Imperatives are appropriate for posed problems, proof constructions, specified procedures, and assignments within an actual instructional relationship.
 “Let R be a ring” does not regulate someone's study choices.
