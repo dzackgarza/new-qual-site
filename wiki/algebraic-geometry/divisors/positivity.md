@@ -9,14 +9,12 @@ topics:
 
 # Positivity
 
-Ampleness links projective embeddings, eventual global generation, and vanishing of higher cohomology.
-
 [[D-DIVAMPLE]]
 
 [[T-DIVSERRE]]
 
-The geometric criterion says that a positive tensor power gives an embedding; the cohomological criterion says that sufficiently high twists kill higher cohomology of any coherent sheaf.
-They agree on a proper scheme.
+For $X$ of finite type over a noetherian ring $A$, an invertible sheaf $\mcl$ is ample exactly when $\mcl^{\otimes m}$ is very ample over $A$ for some $m>0$.
+When $X$ is proper over $A$, this holds exactly when $H^i(X,\mcf\otimes\mcl^{\otimes n})=0$ for every coherent $\mcf$, every $i>0$, and every $n\ge n_0(\mcf)$.
 
 [[PR-DIVAMPCURVE]]
 
@@ -24,8 +22,8 @@ They agree on a proper scheme.
 
 [[D-DIVEQUIV]]
 
-Ampleness and nefness do not see linear equivalence at all, only intersection numbers, so they live on the Néron--Severi group.
-That is the reason to introduce numerical equivalence: it replaces $\Pic(X)$, which can be a positive-dimensional variety, by a finitely generated lattice carrying an intersection form, and positivity becomes a question about cones in that lattice.
+On a projective variety $X$, whether a divisor is ample depends only on its numerical class, by the Nakai--Moishezon and Kleiman criteria; nefness depends only on it by definition.
+The group $N^1(X)=\Pic(X)/{\equiv}$ is free abelian of rank $\rho(X)$, and by Kleiman's criterion the ample classes are the interior of the nef cone in $N^1(X)\otimes\RR$.
 
 ## Polarizations
 
