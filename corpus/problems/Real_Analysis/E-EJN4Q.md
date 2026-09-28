@@ -22,24 +22,29 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Show every open $U \subseteq \RR$ is a countable union of pairwise disjoint open intervals.
+Let $U \subseteq \RR$ be open.
 
-<1>1. The connected components of $U$ are open intervals.
-<2>1. Each component $C$ of $U$ is an open interval.
+<1>1. Each connected component $C$ of $U$ is an open interval $(a,b)$ with $-\infty \leq a < b \leq \infty$.
+
 ::: {.proof}
-$C$ is connected in $\RR$ and open in $U$ (components of an open subset of a locally connected space are open), and a nonempty connected subset of $\RR$ is an interval.
+Components of an open subset of a locally connected space are open, so $C$ is open in $\RR$. A nonempty connected subset of $\RR$ is an interval, and an open interval of $\RR$ has the form $(a,b)$ with $a,b \in [-\infty, \infty]$.
 :::
-Conversely an open interval is connected, so $C$ is exactly an open interval $(a,b)$ with $a,b \in [-\infty, \infty]$.
-<2>2. Distinct components are disjoint, and $U$ is their union.
+
+<1>2. Distinct components are disjoint, and $U$ is their union.
+
 ::: {.proof}
-components are equivalence classes of the relation $x \sim y$ iff $x,y$ lie in a common connected subset of $U$; equivalence classes partition $U$.
+The components are the equivalence classes of the relation $x \sim y$ if and only if $x$ and $y$ lie in a common connected subset of $U$, and equivalence classes partition $U$.
 :::
-<1>2. There are at most countably many components.
+
+<1>3. There are at most countably many components.
+
 ::: {.proof}
-each component is a nonempty open interval and therefore contains a rational $q$; distinct components are disjoint, so the rationals so chosen are distinct; $\QQ$ is countable.
+Each component is a nonempty open interval, so it contains a rational number; choose one, $q_C$, for each component $C$. By step <1>2 distinct components are disjoint, so $C \mapsto q_C$ is injective into the countable set $\QQ$.
 :::
-<1>3. Q.E.D.
+
+<1>4. Q.E.D.
+
 ::: {.proof}
-<1>1 expresses $U$ as a disjoint union of open intervals and <1>2 shows the family is countable.
+Steps <1>1 and <1>2 express $U$ as a disjoint union of open intervals, and step <1>3 shows the family is countable.
 :::
 :::
