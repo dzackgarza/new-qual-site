@@ -9,29 +9,23 @@ topics:
 
 # Affine or projective
 
-Many presentations reduce to deciding whether a variety is affine, projective, or complete.
-The useful criteria below turn those classifications into concrete computations.
-
 [[D-CP2MH]]
 
 ## Is it projective?
 
 Projectivity is established by exhibiting a closed embedding into some $\PP^N$.
-Two constructions cover many standard cases.
 
 [[PR-VA4S3]]
 
-The other is the $d$-uple Veronese, which re-embeds $\PP^n$ so that degree-$d$ hypersurfaces become hyperplane sections.
-It converts a statement about a hypersurface of high degree into a statement about a hyperplane, and it is used below for exactly that.
+The $d$-uple Veronese embedding $\nu_d\colon\PP^n\to\PP^{\binom{n+d}{d}-1}$ sends each degree-$d$ hypersurface $V(f)$ to a hyperplane section of $\nu_d(\PP^n)$.
+So $\PP^n\setminus V(f)$ is isomorphic to $\nu_d(\PP^n)$ minus a hyperplane section, a closed subvariety of $\AA^{\binom{n+d}{d}-1}$, and is affine.
 
 ## Is it affine?
 
-The obstruction is a function count.
-
 [[PR-EFW6B]]
 
-So a variety with a complete curve inside it is not affine, and this settles $\PP^n$, $\PP^m \times \PP^n$, and every projective variety of positive dimension in one stroke.
-In the other direction the affine examples are produced by inverting something.
+A closed subvariety of an affine variety is affine, and a complete connected affine variety is a point, so a variety containing a complete curve is not affine.
+In particular $\PP^n$, $\PP^m \times \PP^n$, and every projective variety of positive dimension are not affine.
 
 [[PR-WZGOQ]]
 
@@ -40,12 +34,10 @@ In the other direction the affine examples are produced by inverting something.
 [[D-VARCOMP]]
 
 Projective implies complete and not conversely, so the three classes nest: projective inside complete inside separated of finite type.
-In many examples completeness follows immediately from projectivity.
 
-## The two answers together
+## Examples
 
-$\PP^1 \times \PP^1$ is projective by Segre and not affine by the function count.
-The complement of a hypersurface in $\PP^2$ is affine, and it is not projective, because it is a proper open subset of an irreducible projective surface.
-Neither answer needs cohomology.
+$\PP^1 \times \PP^1$ is projective by the Segre embedding and not affine because it contains the complete curve $\PP^1\times\{p\}$.
+The complement of a curve in $\PP^2$ is affine by the Veronese argument, and it is not projective, because it is a proper open subset of an irreducible projective surface.
 
-Serre's cohomological criterion — $X$ Noetherian is affine exactly when $H^1(X, \mcf) = 0$ for every quasicoherent $\mcf$ — is developed in [[algebraic-geometry/cohomology/index|cohomology]]. Function counts decide many concrete cases, while Serre's theorem supplies a general criterion.
+[[algebraic-geometry/cohomology/vanishing-and-duality|Serre's criterion]] characterizes affineness cohomologically: a noetherian scheme $X$ is affine exactly when $H^1(X,\mcf)=0$ for every quasicoherent $\mcf$.
