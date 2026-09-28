@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JXU5L
 kind: problem
-title: Dirichlet function is nowhere continuous and not Riemann integrable
+title: The Dirichlet function is nowhere continuous and not Riemann integrable
 classification:
   areas:
   - complex-analysis
