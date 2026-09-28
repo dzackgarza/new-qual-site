@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-4OXGZ
 kind: proposition
 title: Absolute continuity of the integral of an $L^1$ function
-slogan: 'An $L^1$ function carries arbitrarily little integral mass on sets of sufficiently small measure.'
+slogan: 'For $f\in L^1$ and $\varepsilon>0$, $\int_E\abs{f}<\varepsilon$ for every set $E$ of sufficiently small measure.'
 classification:
   areas:
   - real-analysis
