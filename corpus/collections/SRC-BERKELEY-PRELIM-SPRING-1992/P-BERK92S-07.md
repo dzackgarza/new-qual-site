@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-07
 kind: problem
-title: Ten integers between one and twenty-five are multiplicatively dependent
+title: Ten integers in $[1,25]$ are multiplicatively dependent
 classification:
   areas:
   - prelim
