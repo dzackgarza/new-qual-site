@@ -100,7 +100,9 @@ $d_2\sim m$.
 \]
 ::: {.proof}
 By <1>3 and <1>4 the invariant factors are associated to $d$ and $m$.
-Moreover $d\mid m$, as required for invariant-factor order. Invariant factors are
+Moreover $d\mid m$, as required for invariant-factor order, and $d$ is not a
+unit because $r$ and $s$ are not relatively prime, so neither factor is trivial
+and $A\oplus B$ has exactly two invariant factors. Invariant factors are
 defined only up to multiplication by units, so these representatives give the
 claimed pair.
 :::
