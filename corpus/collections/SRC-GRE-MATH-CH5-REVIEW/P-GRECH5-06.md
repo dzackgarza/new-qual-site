@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-06
 kind: problem
-title: Exceptional parameter for a basis of R3
+title: Exceptional parameter for a basis of $\RR^3$
 classification:
   areas:
   - applied-algebra
