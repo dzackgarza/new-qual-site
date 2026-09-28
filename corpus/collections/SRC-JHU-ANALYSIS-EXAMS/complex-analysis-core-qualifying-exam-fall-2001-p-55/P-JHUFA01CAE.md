@@ -95,9 +95,9 @@ $$
 g(z)=F(h(z))\in F(K_r).
 $$
 This includes $r=0$, where $K_0=\{0\}$ and $g(0)=0$.
-The open-disk subordination statement above follows
+The open-disk subordination statement in the problem follows
 from the same estimate whenever $|z|<r$; the pointwise
-estimate at $r=|z|$ needs the closed disk instead.
+estimate at $r=|z|$ uses the closed disk $K_r$.
 :::
 
 <1>3. The explicit strip map has the required radial bound.
