@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-Let M be a (possibly singular) square matrix over a field F . Let p be the product of the nonzero eigenvalues of M (counted with multiplicities) in some algebraically closed extension K of F . Prove that $p \in F$
+Let $M$ be a (possibly singular) square matrix over a field $F$. Let $p$ be the product of the nonzero eigenvalues of $M$ (counted with multiplicities) in some algebraically closed extension $K$ of $F$. Prove that $p\in F$.
 :::
 
 ::: {.solution}
