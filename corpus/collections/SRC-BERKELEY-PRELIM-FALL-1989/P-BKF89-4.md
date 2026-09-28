@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF89-4
 kind: problem
-title: A growth bound in the unit disk implies $|f'(0)|\le4$
+title: $\abs{f(z)}\le(1-\abs{z})^{-1}$ on the unit disk implies $\abs{f'(0)}\le4$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
