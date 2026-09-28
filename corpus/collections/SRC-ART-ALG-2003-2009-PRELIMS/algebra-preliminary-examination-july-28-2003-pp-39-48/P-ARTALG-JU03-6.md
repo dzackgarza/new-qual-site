@@ -42,7 +42,7 @@ Justify your answers.
 :::
 
 ::: {.solution}
-The possible answers are **(c), (d), and (e)**. Parts (c) and (d)
+The possible answers are (c), (d), and (e). Parts (c) and (d)
 describe the same isomorphism type. The unlabeled lattice does not
 distinguish that type from $C_3\times C_3$.
 
@@ -110,7 +110,7 @@ partitioned among $8/2=4$ such subgroups. Lagrange's theorem
 rules out any other nontrivial proper subgroup. Distinct subgroups
 of order $3$ are incomparable, giving exactly the required lattice.
 
-To verify realization over the specified base field, let $L$ be
+For realization over $\mathbb Q$, let $L$ be
 the cyclotomic field $\mathbb Q(\zeta_{91})$. The cyclotomic
 Galois theorem and the Chinese remainder theorem give
 $$
@@ -133,8 +133,8 @@ $$
 \cong(C_6\times C_{12})/(C_2\times C_4)
 \cong C_3\times C_3.
 $$
-This $E$ is a splitting field of a polynomial over $\mathbb Q$,
-as required in the question. Indeed, choose a finite basis
+The field $E$ is the splitting field of a polynomial over $\mathbb Q$.
+Indeed, choose a finite basis
 $e_1,\ldots,e_d$ of $E$ over $\mathbb Q$ and let $g$ be the
 product of their minimal polynomials. Normality of $E/\mathbb Q$
 implies that all those polynomials split in $E$, and their roots
