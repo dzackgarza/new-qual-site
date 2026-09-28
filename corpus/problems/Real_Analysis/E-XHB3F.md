@@ -32,91 +32,69 @@ audit:
 :::
 
 ::: {.solution}
-The equivalence $f=0$ a.e. $\iff \int f=0$ holds for non-negative measurable $f$ (or for $|f|$). For signed $f \in L^1$, $\int f = 0$ does not imply $f = 0$ a.e. (e.g. $f = \chi_{[0,1]} - \chi_{[1,2]}$).
+<1>1. For measurable $f \geq 0$, $f = 0$ a.e. if and only if $\int f = 0$.
 
-<1>1. For non-negative measurable $f$: $f = 0$ a.e. $\iff$ $\int f = 0$.
-<2>1. If $f = 0$ a.e., then $\int f = 0$.
 ::: {.proof}
-an integral over a null set vanishes; every non-negative measurable function zero a.e. has integral $0$ (e.g. by definition of the integral via simple functions).
-:::
-<2>2. If $\int f = 0$ and $f \ge 0$, then $f = 0$ a.e.
-::: {.proof}
-write $\{f > 0\} = \bigcup_{k} \{f > 1/k\}$; if $\mu\{f > 1/k\} > 0$ for some $k$, then $\int f \ge \frac{1}{k}\mu\{f > 1/k\} > 0$, contradicting $\int f = 0$.
-:::
-<2>3. The signed version fails.
-::: {.proof}
-$f = \chi_{[0,1]} - \chi_{[1,2]}$ is measurable with $\int f = 0$ but $f \ne 0$ on a set of measure $2$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>1 and <2>2; <2>3 records the failure of the unrestricted statement.
+If $f = 0$ a.e., every simple function $0 \leq s \leq f$ vanishes a.e. and has integral $0$, so $\int f = 0$. Conversely, $\theset{f > 0} = \bigcup_{k} \theset{f > 1/k}$, and $\int f \ge \frac{1}{k}\mu\theset{f > 1/k}$ for each $k$; if $\int f = 0$, each $\theset{f > 1/k}$ is null, hence so is $\theset{f > 0}$.
 :::
 
-<1>2. A bounded function on a finite measure space is Lebesgue integrable iff it is measurable.
-<2>1. If a bounded function is integrable, it is measurable.
+<1>2. On a measure space $(X,\mu)$ with $\mu(X) < \infty$, a bounded function is Lebesgue integrable if and only if it is measurable.
+
 ::: {.proof}
-Lebesgue integrability is defined for measurable functions.
-:::
-<2>2. A bounded measurable function on a finite measure space is integrable.
-::: {.proof}
-$|f| \le M$ a.e. for some $M$, so $|f|$ is dominated by the integrable constant function $M$ (constant functions are integrable since the measure is finite), and the dominated convergence theorem (or the definition of the integral) gives integrability.
-:::
-<2>3. The finiteness of the measure is needed.
-::: {.proof}
-on $\RR$ with Lebesgue measure, the bounded measurable function $f \equiv 1$ is not integrable ($\int 1 = \infty$). For compactly supported bounded functions the claim holds without a finite measure assumption.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>1 and <2>2.
+The Lebesgue integral is defined for measurable functions, so an integrable function is measurable. Conversely, if $f$ is measurable and $|f| \le M$, then $\int|f| \le M\mu(X) < \infty$.
 :::
 
 <1>3. Simple functions are dense in $L^1$.
-<2>1. It suffices to approximate non-negative $f \in L^1$; then handle $f = f^+ - f^-$.
+
 ::: {.proof}
-$\|f - s\|_1 \le \|f^+ - s_1\|_1 + \|f^- - s_2\|_1$.
-:::
-<2>2. For non-negative $f \in L^1$, define $s_k = \sum_{j=1}^{k 2^k}\frac{j-1}{2^k}\chi_{\{\frac{j-1}{2^k} \le f < \frac{j}{2^k}\}} + k\chi_{\{f \ge k\}}$.
-::: {.proof}
-standard dyadic approximation; each $s_k$ is simple, $s_k \nearrow f$ pointwise, and $s_k \le f$.
-:::
-<2>3. $\|s_k - f\|_1 \to 0$.
-::: {.proof}
-$|s_k - f| = f - s_k \le f \in L^1$ and $f - s_k \to 0$ pointwise (as $s_k \nearrow f$), so dominated convergence applies.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>1–<2>3.
+For $f \geq 0$ in $L^1$, the dyadic simple functions
+$$
+s_k = \sum_{j=1}^{k 2^k}\frac{j-1}{2^k}\chi_{\theset{\frac{j-1}{2^k} \le f < \frac{j}{2^k}}} + k\chi_{\theset{f \ge k}}
+$$
+satisfy $0 \le s_k \nearrow f$ pointwise, so $|f - s_k| \le f$ and the dominated convergence theorem gives $\|f - s_k\|_1 \to 0$. For general $f$, approximate $f^+$ and $f^-$ separately.
 :::
 
-<1>4. Step functions are dense in $L^1$.
-<2>1. Every indicator $\chi_E$ of a measurable set of finite measure is approximated in $L^1$ by step functions.
+<1>4. Step functions, finite linear combinations of indicators of bounded intervals, are dense in $L^1(\RR)$.
+
+<2>1. For measurable $E \subseteq \RR$ with $m(E) < \infty$ and $\eps > 0$, there is a finite union $A$ of bounded open intervals with $\|\chi_E - \chi_A\|_1 < 2\eps$.
+
 ::: {.proof}
-outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, and $U$ is a countable disjoint union of open intervals $U = \bigcup_i I_i$; the finite union $U_N = \bigcup_{i \le N} I_i$ has $\chi_{U_N} \to \chi_U$ pointwise with $|\chi_{U_N} - \chi_U| \le \chi_U \in L^1$ (since $m(U) \le m(E) + \eps < \infty$), so $\|\chi_{U_N} - \chi_U\|_1 \to 0$ by dominated convergence; then $\|\chi_E - \chi_{U_N}\|_1 \le \|\chi_E - \chi_U\|_1 + \|\chi_U - \chi_{U_N}\|_1 = m(U \setminus E) + m(U \setminus U_N) < 2\eps$ for $N$ large.
+Outer regularity gives an open $U \supseteq E$ with $m(U \setminus E) < \eps$, so $m(U) < \infty$. $U$ is a countable disjoint union of open intervals $I_i$, each bounded because $m(U) < \infty$, and $\sum_i m(I_i) = m(U)$. Choose $N$ with $\sum_{i > N} m(I_i) < \eps$ and put $A = \bigcup_{i \le N} I_i$. Then $\|\chi_E - \chi_A\|_1 \le m(U \setminus E) + m(U \setminus A) < 2\eps$.
 :::
-<2>2. Every simple function is approximated in $L^1$ by step functions.
+
+<2>2. Q.E.D.
+
 ::: {.proof}
-finite linear combinations of the approximations from <2>1, with $\|s - s'\|_1 \le \sum_i |a_i|\,\|\chi_{E_i} - \chi_{I_i}\|_1$.
+Given $f \in L^1$ and $\eps > 0$, step <1>3 gives a simple $s = \sum_{i=1}^m a_i\chi_{E_i}$ with $m(E_i) < \infty$ and $\|f - s\|_1 < \eps$. Step <2>1 gives finite unions of intervals $A_i$ with $\|\chi_{E_i} - \chi_{A_i}\|_1 < \eps/(1 + \sum_i|a_i|)$, and $\sum_i a_i\chi_{A_i}$ is a step function within $2\eps$ of $f$.
 :::
+
+<1>5. $C_c^\infty(\RR^n)$ is dense in $L^1(\RR^n)$.
+
+<2>1. For $f \in L^1$, $f_R = f\chi_{B(0,R)}$ satisfies $\|f - f_R\|_1 \to 0$ as $R \to \infty$.
+
+::: {.proof}
+$|f - f_R| = |f|\chi_{\RR^n \setminus B(0,R)}$ tends to $0$ pointwise and is bounded by $|f| \in L^1$; apply dominated convergence.
+:::
+
+<2>2. Let $\phi \in C_c^\infty(\RR^n)$ with $\phi \ge 0$ and $\int\phi = 1$, and $\phi_\eps(x) = \eps^{-n}\phi(x/\eps)$. Then $f_R \ast \phi_\eps \in C_c^\infty(\RR^n)$ and $\|f_R \ast \phi_\eps - f_R\|_1 \to 0$ as $\eps \to 0$.
+
+::: {.proof}
+Differentiation under the integral gives $D^\alpha(f_R \ast \phi_\eps) = f_R \ast D^\alpha\phi_\eps$, which is continuous, and $\supp(f_R \ast \phi_\eps) \subseteq \overline{B(0,R)} + \supp\phi_\eps$ is compact. The $L^1$ convergence is the $L^1$ convergence of approximations to the identity, which follows from continuity of translation in $L^1$.
+:::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-<1>3 approximates $f$ by simple functions, <2>1–<2>2 approximate simple functions by step functions, and the triangle inequality combines them ($\eps/3$ argument).
+$\|f - f_R \ast \phi_\eps\|_1 \le \|f - f_R\|_1 + \|f_R - f_R \ast \phi_\eps\|_1$, and steps <2>1 and <2>2 make both terms small.
 :::
 
-<1>5. Smooth compactly supported functions are dense in $L^1(\RR^n)$.
-<2>1. First truncate: $f_R = f\chi_{B(0,R)}$ has $\|f - f_R\|_1 \to 0$ as $R \to \infty$.
+<1>6. Q.E.D.
+
 ::: {.proof}
-$|f - f_R| = |f|\chi_{\RR^n \setminus B(0,R)} \to 0$ pointwise with domination by $|f| \in L^1$; dominated convergence.
+Steps <1>1--<1>5 treat the five parts in order.
 :::
-<2>2. Convolve with a mollifier: $\|f_R \ast \phi_\eps - f_R\|_1 \to 0$ as $\eps \to 0$.
-::: {.proof}
-$\phi_\eps$ is an approximate identity, and $\|g \ast \phi_\eps - g\|_1 \to 0$ for $g \in L^1$ (standard; the translation-continuity argument).
 :::
-<2>3. $f_R \ast \phi_\eps$ is smooth and compactly supported.
-::: {.proof}
-differentiation under the integral gives smoothness; and $\supp(f_R \ast \phi_\eps) \subseteq \overline{\supp f_R + \supp \phi_\eps}$, which is compact.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-$\|f - f_R \ast \phi_\eps\|_1 \le \|f - f_R\|_1 + \|f_R - f_R \ast \phi_\eps\|_1 \to 0$ by <2>1 and <2>2, and <2>3 shows the approximants are smooth with compact support.
-:::
+
+::: {.remark}
+Erratum: the first part needs $f \geq 0$ (or $|f|$ in place of $f$). For $f = \chi_{[0,1]} - \chi_{[1,2]}$, $\int f = 0$ but $f \neq 0$ on a set of measure $2$. The second part needs a finite measure space: on $\RR$ with Lebesgue measure, $f \equiv 1$ is bounded and measurable but not integrable.
 :::
