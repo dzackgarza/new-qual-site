@@ -37,8 +37,6 @@ We call it the fine topology.
 :::
 
 ::: {.solution}
-**Goal:** Prove the foundational properties of the fine topology on the function space $\mathcal{C}(X, Y)$ and compare it with the uniform and box topologies.
-
 <1>1. Part (a): The sets $\mathcal{B} = \{B(f, \delta) : f \in \mathcal{C}(X, Y), \delta \in \mathcal{C}(X, \mathbb{R}_+)\}$ form a basis.
     *Proof:*
     <2>1. Covering: For any $f \in \mathcal{C}(X, Y)$, the constant function $\delta_1(x) = 1$ is continuous and positive, and $d(f(x), f(x)) = 0 < 1$ for all $x$, so $f \in B(f, \delta_1)$.
