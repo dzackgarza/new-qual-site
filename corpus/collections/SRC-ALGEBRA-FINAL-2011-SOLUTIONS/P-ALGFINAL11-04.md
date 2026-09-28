@@ -21,7 +21,7 @@ Let K be a finite field of cardinality $q ,$ let $n > 0$ be an integer relativel
 :::
 
 ::: {.solution}
-(a) $\mathrm { B y }$ the definition of “primitive n-th root of $\mathrm { { u n i t y } } , \mathrm { { \dot { \Omega } } }$ n is the order of $\zeta$ in the multiplicative group $L ^ { * } ;$ so $n | | L ^ { * } | = q ^ { m } - 1$
+(a) By the definition of a primitive $n$-th root of unity, $n$ is the order of $\zeta$ in the multiplicative group $L^*$; so $n \mid \abs{L^*} = q^m - 1$.
 
-(b) By (a), the order $\mu$ of q divides $[ K ( \zeta ) : K ]$ . So $K ( \zeta )$ contains a subfield $L ^ { \prime } \supset K$ such that $[ L ^ { \prime } : K ] = \mu$ . The cyclic group $L ^ { \prime * }$ has order $q ^ { \mu } - 1$ divisible by $n ,$ so it contains a cyclic subgroup of order n, and therefore it contains all the n solutions of $X ^ { n } - 1$ , one of which is $\zeta ,$ , whence $L ^ { \prime } = K ( \zeta )$ and $[ K ( \zeta ) : K ] = [ L ^ { \prime } : K ] = \mu .$
+(b) By (a) applied to $K(\zeta)$, the order $\mu$ of $q$ in $(\mathbb Z/n\mathbb Z)^*$ divides $[K(\zeta) : K]$. So $K(\zeta)$ contains a subfield $L' \supset K$ such that $[L' : K] = \mu$. The cyclic group $L'^*$ has order $q^\mu - 1$ divisible by $n$, so it contains a cyclic subgroup of order $n$, and therefore it contains all $n$ roots of $X^n - 1$, one of which is $\zeta$. Hence $L' = K(\zeta)$ and $[K(\zeta) : K] = [L' : K] = \mu$.
 :::
