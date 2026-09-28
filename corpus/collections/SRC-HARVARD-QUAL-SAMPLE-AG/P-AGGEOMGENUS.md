@@ -153,7 +153,7 @@ p_a(C)=1,
 p_g(C)=0.
 \]
 ::: {.proof}
-The preceding arithmetic-genus computation gives $p_a(C)=1$.  The cusp has
+By [[P-AGARITHGENUS]], $p_a(C)=1$.  The cusp has
 \[
 \delta=1,
 \]
