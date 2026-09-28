@@ -34,40 +34,54 @@ Find the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$, and t
 :::
 
 ::: {.solution}
-**Goal:** Prove intersection and union properties of families of topologies, establish lattice bounds on topologies, and compute the meet and join of specific topologies on a 3-point set.
+<1>1. For any family $\{\mathcal T_\alpha\}$ of topologies on $X$, $\bigcap_\alpha\mathcal T_\alpha$ is a topology on $X$.
 
-<1>1. Part (a): Intersections and unions of topologies.
-    *Proof:*
-    <2>1. Let $\mathcal{T} = \bigcap_\alpha \mathcal{T}_\alpha$.
-        - $\emptyset, X \in \mathcal{T}_\alpha$ for every $\alpha$, so $\emptyset, X \in \mathcal{T}$.
-        - Let $\{U_\beta\}_{\beta \in B} \subseteq \mathcal{T}$. For each $\alpha$, $\{U_\beta\}_{\beta \in B} \subseteq \mathcal{T}_\alpha$, so $\bigcup_{\beta \in B} U_\beta \in \mathcal{T}_\alpha$. Thus $\bigcup_{\beta \in B} U_\beta \in \mathcal{T}$.
-        - Let $U_1, \dots, U_n \in \mathcal{T}$. For each $\alpha$, $U_1, \dots, U_n \in \mathcal{T}_\alpha$, so $\bigcap_{i=1}^n U_i \in \mathcal{T}_\alpha$. Thus $\bigcap_{i=1}^n U_i \in \mathcal{T}$.
-        - Therefore $\bigcap_\alpha \mathcal{T}_\alpha$ is a topology on $X$.
-    <2>2. The union $\bigcup_\alpha \mathcal{T}_\alpha$ is not generally a topology.
-        - Counterexample: On $X = \{a, b, c\}$, let $\mathcal{T}_A = \{\emptyset, X, \{a\}\}$ and $\mathcal{T}_B = \{\emptyset, X, \{b\}\}$.
-        - The union is $\mathcal{T}_A \cup \mathcal{T}_B = \{\emptyset, X, \{a\}, \{b\}\}$.
-        - $\{a\} \cup \{b\} = \{a, b\} \notin \mathcal{T}_A \cup \mathcal{T}_B$, so it is not closed under unions.
+::: {.proof}
+Put $\mathcal T=\bigcap_\alpha\mathcal T_\alpha$.
+Each $\mathcal T_\alpha$ contains $\varnothing$ and $X$, so $\mathcal T$ does.
+If $\{U_\beta\}_{\beta\in B}\subseteq\mathcal T$, then for every $\alpha$ each $U_\beta$ lies in $\mathcal T_\alpha$, so $\bigcup_\beta U_\beta\in\mathcal T_\alpha$; hence $\bigcup_\beta U_\beta\in\mathcal T$.
+If $U_1,\ldots,U_n\in\mathcal T$, then for every $\alpha$, $U_1\cap\cdots\cap U_n\in\mathcal T_\alpha$; hence $U_1\cap\cdots\cap U_n\in\mathcal T$.
+:::
 
-<1>2. Part (b): Existence and uniqueness of supremum and infimum topologies.
-    *Proof:*
-    <2>1. Largest topology contained in all $\mathcal{T}_\alpha$:
-        - By <1>1, $\mathcal{T}_{\text{inf}} = \bigcap_\alpha \mathcal{T}_\alpha$ is a topology on $X$ and $\mathcal{T}_{\text{inf}} \subseteq \mathcal{T}_\alpha$ for all $\alpha$.
-        - If $\mathcal{T}'$ is any topology with $\mathcal{T}' \subseteq \mathcal{T}_\alpha$ for all $\alpha$, then $\mathcal{T}' \subseteq \bigcap_\alpha \mathcal{T}_\alpha = \mathcal{T}_{\text{inf}}$. Thus $\mathcal{T}_{\text{inf}}$ is the unique largest.
-    <2>2. Smallest topology containing all $\mathcal{T}_\alpha$:
-        - Consider the family $\mathfrak{F} = \{\mathcal{T} : \mathcal{T} \text{ is a topology on } X \text{ and } \bigcup_\alpha \mathcal{T}_\alpha \subseteq \mathcal{T}\}$.
-        - $\mathfrak{F}$ is non-empty because the power set $\mathcal{P}(X)$ (discrete topology) belongs to $\mathfrak{F}$.
-        - Define $\mathcal{T}_{\text{sup}} = \bigcap_{\mathcal{T} \in \mathfrak{F}} \mathcal{T}$. By <1>1, $\mathcal{T}_{\text{sup}}$ is a topology on $X$.
-        - By construction, $\bigcup_\alpha \mathcal{T}_\alpha \subseteq \mathcal{T}_{\text{sup}}$, and every topology containing all $\mathcal{T}_\alpha$ belongs to $\mathfrak{F}$ and hence contains $\mathcal{T}_{\text{sup}}$. Thus $\mathcal{T}_{\text{sup}}$ is the unique smallest.
+<1>2. A union of topologies on $X$ need not be a topology on $X$.
 
-<1>3. Part (c): Computation on $X = \{a, b, c\}$.
-    *Proof:*
-    <2>1. Largest topology contained in $\mathcal{T}_1$ and $\mathcal{T}_2$:
-        $$\mathcal{T}_1 \cap \mathcal{T}_2 = \{\emptyset, X, \{a\}\}.$$
-    <2>2. Smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$:
-        - Subbasis: $\mathcal{S} = \{\{a\}, \{a, b\}, \{b, c\}\}$.
-        - Finite intersections of subbasis elements yield the basis:
-          $$\mathcal{B} = \{\emptyset, X, \{a\}, \{b, c\}, \{a, b\}, \{a, b\} \cap \{b, c\} = \{b\}\}.$$
-        - Arbitrary unions of elements in $\mathcal{B}$:
-          $$\mathcal{T}_{\text{sup}} = \{\emptyset, X, \{a\}, \{b\}, \{a, b\}, \{b, c\}\}.$$
-    Q.E.D.
+::: {.proof}
+On $X=\{a,b,c\}$ let $\mathcal T_A=\{\varnothing,X,\{a\}\}$ and $\mathcal T_B=\{\varnothing,X,\{b\}\}$.
+Then $\mathcal T_A\cup\mathcal T_B=\{\varnothing,X,\{a\},\{b\}\}$ contains $\{a\}$ and $\{b\}$ but not $\{a\}\cup\{b\}=\{a,b\}$.
+:::
+
+<1>3. $\bigcap_\alpha\mathcal T_\alpha$ is the unique largest topology on $X$ contained in every $\mathcal T_\alpha$.
+
+::: {.proof}
+By step <1>1 it is a topology, and it is contained in every $\mathcal T_\alpha$.
+If $\mathcal T'$ is a topology with $\mathcal T'\subseteq\mathcal T_\alpha$ for every $\alpha$, then $\mathcal T'\subseteq\bigcap_\alpha\mathcal T_\alpha$.
+A largest element of a family of sets ordered by inclusion is unique.
+:::
+
+<1>4. Let $\mathfrak F$ be the set of topologies on $X$ that contain every $\mathcal T_\alpha$. Then $\bigcap_{\mathcal T\in\mathfrak F}\mathcal T$ is the unique smallest topology on $X$ containing every $\mathcal T_\alpha$.
+
+::: {.proof}
+The discrete topology $\mathcal P(X)$ lies in $\mathfrak F$, so $\mathfrak F$ is nonempty and, by step <1>1, $\mathcal T_{\sup}=\bigcap_{\mathcal T\in\mathfrak F}\mathcal T$ is a topology.
+Each $\mathcal T\in\mathfrak F$ contains every $\mathcal T_\alpha$, so $\mathcal T_{\sup}$ does, and every topology containing every $\mathcal T_\alpha$ belongs to $\mathfrak F$ and therefore contains $\mathcal T_{\sup}$.
+A smallest element is unique.
+:::
+
+<1>5. In (c), the largest topology contained in $\mathcal T_1$ and $\mathcal T_2$ is $\boxed{\{\varnothing,X,\{a\}\}}$.
+
+::: {.proof}
+By step <1>3 it is $\mathcal T_1\cap\mathcal T_2=\{\varnothing,X,\{a\}\}$.
+:::
+
+<1>6. In (c), the smallest topology containing $\mathcal T_1$ and $\mathcal T_2$ is $\boxed{\{\varnothing,X,\{a\},\{b\},\{a,b\},\{b,c\}\}}$.
+
+::: {.proof}
+The smallest topology containing $\mathcal T_1\cup\mathcal T_2$ is the topology generated by the subbasis $\{\{a\},\{a,b\},\{b,c\}\}$.
+Its finite intersections are $X$, $\{a\}$, $\{a,b\}$, $\{b,c\}$, $\{a,b\}\cap\{b,c\}=\{b\}$, and $\varnothing$, and this collection is already closed under unions.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 answer (a), steps <1>3 and <1>4 prove (b), and steps <1>5 and <1>6 answer (c).
+:::
 :::
