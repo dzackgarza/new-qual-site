@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-06
 kind: problem
-title: Use the Meyer–Vietoris sequence to calculate the homology of a wedge
+title: Homology of a wedge sum by Mayer--Vietoris
 classification:
   areas:
   - topology
@@ -24,12 +24,8 @@ audit:
 Use the Meyer-Vietoris sequence to calculate the homology of $X\vee Y$.
 :::
 
-::: {.remark}
-The source page spells the sequence name “Meyer-Vietoris”; that spelling is preserved in the statement.
-:::
-
 ::: {.solution}
-Assume the usual CW (or well-pointed) hypotheses so that the wedge point has contractible neighborhoods in both summands. Choose open neighborhoods \(U,V\subset X\vee Y\) deformation retracting onto \(X\) and \(Y\), respectively, with \(U\cap V\) contractible. The reduced Mayer--Vietoris sequence then has, for every \(n\),
+Assume that the wedge point has an open neighborhood in $X$ and one in $Y$ that deformation retract onto it; this holds when $X$ and $Y$ are CW complexes wedged at $0$-cells. Choose open neighborhoods \(U,V\subset X\vee Y\) deformation retracting onto \(X\) and \(Y\), respectively, with \(U\cap V\) contractible. The reduced Mayer--Vietoris sequence then has, for every \(n\),
 \[
 0=\widetilde H_n(U\cap V)
 \longrightarrow
