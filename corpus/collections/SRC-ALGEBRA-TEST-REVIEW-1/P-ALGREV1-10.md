@@ -31,7 +31,7 @@ U(R_1\oplus\cdots\oplus R_n)=U(R_1)\oplus\cdots\oplus U(R_n).
 :::
 
 ::: {.solution}
-The assertion is **true**.
+The assertion is true.
 
 <1>1. A unit in the product has unit coordinates.
 ::: {.proof}
