@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-8A
 kind: problem
-title: Factor $11x^5-11x^4+14x^2-21x+7$ over $\mathbb Q$
+title: Factorization of $11x^5-11x^4+14x^2-21x+7$ over $\QQ$
 classification:
   areas:
   - prelim
@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Factor
-\[
+$$
 11x^5-11x^4+14x^2-21x+7
-\]
-into irreducible polynomials in $\mathbb Q[x]$.
+$$
+into irreducible polynomials in $\QQ[x]$.
 :::
 
 ::: {.solution}
@@ -69,17 +69,17 @@ $$
 $$
 11x^4+14x-7
 $$
-is irreducible in $\mathbb Q[x]$.
+is irreducible in $\QQ[x]$.
 
 ::: {.proof}
 Apply Eisenstein's criterion with the prime $7$. The prime $7$ does not divide the leading coefficient $11$; it divides each remaining coefficient
 $$
 0,\qquad 0,\qquad 14,\qquad -7;
 $$
-and $7^2$ does not divide the constant coefficient $-7$. Hence the quartic is irreducible over $\mathbb Q$.
+and $7^2$ does not divide the constant coefficient $-7$. Hence the quartic is irreducible over $\QQ$.
 :::
 
-<1>3. Therefore the factorization into irreducibles in $\mathbb Q[x]$ is
+<1>3. Therefore the factorization into irreducibles in $\QQ[x]$ is
 $$
 \boxed{
 11x^5-11x^4+14x^2-21x+7
