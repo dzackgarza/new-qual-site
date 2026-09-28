@@ -25,11 +25,13 @@ Show that
 :::
 
 ::: {.solution}
+Here $\psi_a(z)\da{a-z\over1-\bar az}$, and the zeros $a_k$ are listed with multiplicity.
 Define $\Psi(z) \da \prod_{k\leq n} \psi_{a_k}(z)$ and $g(z) \da f(z)/\Psi(z)$.
+Each zero of $\Psi$ in $\DD$ is a zero of $f$ of at least the same order, so $g$ has removable singularities and is holomorphic on $\DD$.
 The claim is that $\abs{g(z)} \leq 1$, which implies the result directly.
-Note that $\abs{\Psi(z)} = 1$ for $\abs{z} = 1$, so $\lim_{r\to 1^-} \abs{\Psi(re^{it})} = 1$ along any ray.
-Now for $z_r \da re^{it}$ for $r< 1$,
+Since $\Psi$ is continuous on $\overline\DD$ with $\abs{\Psi} = 1$ on $\abs{z} = 1$, $m(r)\da\min_{\abs z=r}\abs{\Psi(z)}\to1$ as $r\to1^-$.
+Fix $z\in\DD$. For $\abs z<r<1$ close enough to $1$ that $m(r)>0$, the maximum modulus principle on $\abs\zeta\le r$ gives
 \[
-\abs{g(z_r)} = { \abs{f(z_r)} \over \abs{\Psi(z_r)} } \leq {1\over \abs{\Psi(z_r)} } \leq {1\over \displaystyle\sup_{t\in [0, 2\pi]} \abs{\Psi(z_r) } } \convergesto{r\to 1^-} 1
+\abs{g(z)}\le\max_{\abs\zeta=r}\abs{g(\zeta)} = \max_{\abs\zeta=r}{ \abs{f(\zeta)} \over \abs{\Psi(\zeta)} } \leq {1\over m(r)} \convergesto{r\to 1^-} 1
 .\]
 :::
