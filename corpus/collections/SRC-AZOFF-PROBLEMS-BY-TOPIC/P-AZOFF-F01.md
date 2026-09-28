@@ -30,7 +30,7 @@ Find the Laurent expansions of $\textstyle { \frac { z + 1 } { z ( z - 1 ) } }$ 
 
 a) $z = 0$
 
-b) $\mathbf { Z } { = } 1$
+b) $z = 1$
 :::
 
 ::: {.solution}
