@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-09
 kind: problem
-title: Infinitely many pairwise nonisomorphic quadratic extensions of $\mathbb Q$
+title: Infinitely many pairwise nonisomorphic quadratic extensions of $\QQ$
 classification:
   areas:
   - prelim
