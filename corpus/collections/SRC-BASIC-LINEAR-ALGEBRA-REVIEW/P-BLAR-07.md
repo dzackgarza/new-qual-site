@@ -16,18 +16,17 @@ audit:
 ---
 
 ::: {.problem}
-Decide which of the following transformations are linear.
-For those that are linear, find the matrix of the transformation using the standard bases.
+Decide which of the following transformations are linear. For those that are, find the matrix of the transformation (using the standard bases):
 
-1. \(T:\mathbb R^2\to\mathbb R^2\), \(T(x,y)=(2x,y)\).
+(a) $T\colon \RR^2 \to \RR^2$ is defined by $T(x,y) = (2x, y)$
 
-2. \(T:\mathbb R^2\to\mathbb R^2\), \(T(x,y)=(x+1,y+2)\).
+(b) $T\colon \RR^2 \to \RR^2$ is defined by $T(x,y) = (x+1, y+2)$
 
-3. \(T:\mathbb R^2\to\mathbb R^2\) rotates an object through an angle of \(\pi/3\).
+(c) $T\colon \RR^2 \to \RR^2$ rotates an object by an angle of $\pi/3$
 
-4. The source declares \(T:\mathbb R^3\to\mathbb R^2\) and then gives the formula
-   \[
-   T(x,y)=(x+2y,x+3y).
-   \]
-   Analyze the stated transformation, noting the source's domain/formula mismatch.
+(d) $T\colon \RR^3 \to \RR^2$ is defined by $T(x,y) = (x+2y, x+3y)$
+:::
+
+::: {.remark}
+In part (d) the declared domain is $\RR^3$, but the formula has two input variables. As a map $\RR^2\to\RR^2$, $T(x,y)=(x+2y,x+3y)$ is linear with matrix $\begin{pmatrix}1&2\\1&3\end{pmatrix}$.
 :::
