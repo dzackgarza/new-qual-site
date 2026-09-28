@@ -56,8 +56,8 @@ If $X$ is compact in the metric $d$, then the space $\mathcal{H}$ is compact in 
     <2>3. Since $(X, d)$ is complete and $d(x_n, x_{n+p}) < \sum_{k=n}^{n+p-1} 2^{-k} < 2^{-(n-1)}$, every such sequence is Cauchy, so the limit $x \in X$ exists.
     <2>4. Let $A = \overline{A_\infty}$. Then $A \in \mathcal{H}$ is closed and bounded.
     <2>5. For any $x = \lim x_k \in A_\infty$, $d(x_n, x) \le 2^{-(n-1)}$, which implies $x \in \overline{U(A_n, 2^{-(n-1)})} \subseteq U(A_n, 2^{-(n-2)})$, so $A \subseteq U(A_n, 2^{-(n-2)})$.
-    <2>6. Conversely, given $y_n \in A_n$, inductively choose $y_{k+1} \in A_{k+1}$ with $d(y_k, y_{k+1}) < 2^{-k}$ for all $k \ge n$. The limit $y = \lim y_k \in A_\infty \subseteq A$ satisfies $d(y_n, y) \le 2^{-(n-1)}$, so $A_n \subseteq U(A, 2^{-(n-1)})$.
-    <2>7. Thus $D(A_n, A) \le 2^{-(n-2)} \to 0$ as $n \to \infty$, proving $(\mathcal{H}, D)$ is complete.
+    <2>6. Conversely, given $y_n \in A_n$, inductively choose $y_{k+1} \in A_{k+1}$ with $d(y_k, y_{k+1}) < 2^{-k}$ for all $k \ge n$, and $y_k \in A_k$ with $d(y_k, y_{k+1}) < 2^{-k}$ for $k = n-1, \ldots, 1$; both choices exist because $D(A_k, A_{k+1}) < 2^{-k}$. The limit $y = \lim y_k \in A_\infty \subseteq A$ satisfies $d(y_n, y) \le 2^{-(n-1)}$, so $A_n \subseteq U(A, 2^{-(n-1)})$.
+    <2>7. Thus $D(A_n, A) \le 2^{-(n-2)} \to 0$ as $n \to \infty$, so the subsequence of step <2>1 converges to $A$. A Cauchy sequence with a convergent subsequence converges to the same limit, so the original sequence converges to $A$, and $(\mathcal{H}, D)$ is complete.
 
 <1>3. Part (c): Total boundedness of $(\mathcal{H}, D)$ when $(X, d)$ is totally bounded.
     *Proof:*
