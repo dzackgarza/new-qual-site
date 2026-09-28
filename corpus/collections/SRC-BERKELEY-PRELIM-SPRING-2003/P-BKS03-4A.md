@@ -25,17 +25,20 @@ for every $z$.
 :::
 
 ::: {.solution}
-Put $q = e ^ { i z }$ , so $2 \cos z = q + q ^ { - 1 }$ , and 2 cos $n z = q ^ { n } + q ^ { - n }$ . Then the problem is to find $T _ { n }$ such that $T _ { n } ( q + q ^ { - 1 } ) = q ^ { n } + q ^ { - n }$ . We have
+Put $q=e^{iz}$, so $2\cos z=q+q^{-1}$, and $2\cos nz=q^n+q^{-n}$. Then the problem is to find $T_n$ such that $T_n(q+q^{-1})=q^n+q^{-n}$. We have
 
 $$
-( q + q ^ { - 1 } ) ^ { n } = \sum _ { k = 0 } ^ { n } { \binom { n } { k } } q ^ { 2 k - n } = q ^ { n } + q ^ { - n } + \sum _ { \tiny { n < j < n \atop n - j \mathrm { ~ e v e n } } } { \binom { n } { ( n - j ) / 2 } } ( q ^ { j } + q ^ { - j } ) + \left\{ { \binom { n } { 0 / 2 } } \quad { \mathrm { i f ~ } } n { \mathrm { ~ i s ~ e v e n } } , \atop 0  \right\} .
+(q+q^{-1})^n=\sum_{k=0}^n\binom nk q^{2k-n}
+=q^n+q^{-n}+\sum_{\substack{0<j<n\\ n-j\text{ even}}}\binom{n}{(n-j)/2}(q^j+q^{-j})
++\begin{cases}\binom{n}{n/2}&\text{if }n\text{ is even},\\ 0&\text{otherwise.}\end{cases}
 $$
 
-We can assume we have found $T _ { j }$ for $j < n$ by induction.
+We can assume we have found $T_j$ for $j<n$ by induction.
 Then
 
 $$
-T _ { n } ( x ) = x ^ { n } - \sum _ { \stackrel { 0 < j < n } { n - j \mathrm { ~ e v e n } } } { \binom { n } { ( n - j ) / 2 } } ( T _ { j } ( x ) ) - { \left\{ \begin{array} { l l } { { \binom { n } { n / 2 } } } & { { \mathrm { i f ~ } } n { \mathrm { ~ i s ~ e v e n , } } } \\ { { 0 } } & { { \mathrm { o t h e r w i s e } } } \end{array} \right. }
+T_n(x)=x^n-\sum_{\substack{0<j<n\\ n-j\text{ even}}}\binom{n}{(n-j)/2}T_j(x)
+-\begin{cases}\binom{n}{n/2}&\text{if }n\text{ is even},\\ 0&\text{otherwise}\end{cases}
 $$
 
 has the required property.
