@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Find the sum of the series
-\[
+$$
 \frac1{1\cdot2\cdot3}+\frac1{2\cdot3\cdot4}+\frac1{3\cdot4\cdot5}+\cdots.
-\]
+$$
 :::
 
 ::: {.solution}
