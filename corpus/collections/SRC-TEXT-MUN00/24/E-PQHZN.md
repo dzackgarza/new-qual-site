@@ -62,9 +62,9 @@ by order isomorphisms. Their union gives an order isomorphism $[a,c)\cong[0,1)$.
 
 (b) If $[x_0,b)\cong[0,1)$, the images $t_i$ of $x_i$ increase to $1$ because $b=\sup x_i$. Hence each $[x_i,x_{i+1})$ corresponds to $[t_i,t_{i+1})$, which has order type $[0,1)$. Conversely, if every $[x_i,x_{i+1})$ has order type $[0,1)$, map the $i$th piece order-isomorphically onto
 \[
-[1-2^{-i},\,1-2^{-(i+1)})
+[1-2^{-i},\,1-2^{-(i+1)})\qquad(i\ge0).
 \]
-(after indexing from $i=0$ in the evident way). These maps concatenate to an order isomorphism $[x_0,b)\cong[0,1)$.
+These maps concatenate to an order isomorphism $[x_0,b)\cong[0,1)$.
 
 (c) Proceed by transfinite induction on $a\in S_\Omega-\{a_0\}$. If $a$ has immediate predecessor $b$, then
 \[
@@ -73,11 +73,11 @@ by order isomorphisms. Their union gives an order isomorphism $[a,c)\cong[0,1)$.
 \]
 and the second piece is exactly the fiber $\{b\}\times[0,1)$, so part (a) and the induction hypothesis apply.
 
-If $a$ has no immediate predecessor, its section $S_a$ is countable by minimality of $S_\Omega$. Enumerate a cofinal increasing sequence $a_0'<a_1'<\cdots$ with supremum $a$ (take running maxima of an enumeration of $S_a$). By induction, each interval
+If $a$ has no immediate predecessor, its section $S_a$ is countable by minimality of $S_\Omega$ and has no largest element. Enumerate $S_a=\{e_0,e_1,\ldots\}$, put $c_0=a_0$, and choose $c_{i+1}\in S_a$ with $c_{i+1}>\max\{c_i,e_i\}$. Then $c_0<c_1<\cdots$ and $\sup_i(c_i\times0)=a\times0$. By the induction hypothesis $[a_0\times0,c_{i+1}\times0)$ has order type $[0,1)$, so by part (a) each interval
 \[
-[a_i'\times0,a_{i+1}'\times0)
+[c_i\times0,c_{i+1}\times0)
 \]
-has order type $[0,1)$, so part (b) yields the result for $a$.
+has order type $[0,1)$, and part (b) yields the result for $a$.
 
 (d) The argument in (c), together with (a), shows more generally that every bounded interval in $L$ is order-isomorphic to a real interval. Thus if $p<q$ in $L$, the closed interval $[p,q]$ is homeomorphic to $[0,1]$. Composing such a homeomorphism with the standard path $[0,1]\to[0,1]$ gives a path from $p$ to $q$. Hence $L$ is path connected.
 
