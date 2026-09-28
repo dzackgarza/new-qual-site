@@ -48,8 +48,6 @@ $$
 
 satisfies the following conditions:
 
-4. Exercises
-
 (i) F maps the unit disc to itself (that is, $F : \mathbb { D } \to \mathbb { D } )$ , and is holomorphic.
 
 (ii) F interchanges 0 and $w ,$ namely $F ( 0 ) = w$ and $F ( w ) = 0$
