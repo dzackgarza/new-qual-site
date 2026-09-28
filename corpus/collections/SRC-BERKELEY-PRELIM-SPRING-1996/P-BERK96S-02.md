@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-02
 kind: problem
-title: Lebesgue number for a ball cover of a compact subset of $\mathbb R^n$
+title: Lebesgue number for a ball cover of a compact subset of $\RR^n$
 classification:
   areas:
   - prelim
