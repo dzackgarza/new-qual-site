@@ -41,7 +41,7 @@ For $m \gg 0$, $h_\mcf(m) = \chi(X, \mcf(m)) = P_\mcf(m)$, the value of the Hilb
 Write $\dim X = d$.
 Then $\deg P_X = d$, and
 
-- the leading coefficient is $\deg(X)/d!$; this is Hartshorne's definition of the degree of $X$ [@Har10a, §I.7];
+- the leading coefficient is $\deg(X)/d!$; this defines the degree of $X$ [@Har10a, §I.7];
 
 - the constant term is $P_X(0) = \chi(\OO_X)$, and the arithmetic genus is $p_a(X) = (-1)^d \qty(P_X(0) - 1)$, which is $1 - \chi(\OO_X)$ for a curve.
 
