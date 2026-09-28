@@ -31,8 +31,6 @@ $$
 A=\begin{pmatrix}1&0\\0&2\end{pmatrix}.
 $$
 Find the minimum distance from $A$ to $\Sigma$, and exhibit a matrix $S\in\Sigma$ attaining the minimum.
-
-The retained extraction prints the displayed formula for $\|X\|$ exactly as above, although with that formula $d$ is not literally a metric; the missing typographic detail is unrecovered.
 :::
 
 ::: {.solution}
@@ -109,4 +107,8 @@ Together with the lower bound in step <1>2, this proves that the minimum is $1$ 
 ::: {.proof}
 Step <1>3 gives both requested conclusions.
 :::
+:::
+
+::: {.remark}
+With $\|X\|$ the sum of the squared entries, $d(X,Y)=\norm{X-Y}_F^2$ is the square of the Frobenius distance and does not satisfy the triangle inequality. For the Frobenius distance $\norm{X-Y}_F$ itself, the minimum distance from $A$ to $\Sigma$ is also $1$, attained at the same $S$.
 :::
