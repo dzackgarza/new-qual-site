@@ -24,8 +24,8 @@ audit:
 ---
 
 ::: {.problem}
-Let \(V\) be a finite-dimensional vector space over a field \(k\), let \(T:V\to V\) be linear, and let \(W\subseteq V\) be a \(T\)-invariant subspace.
-Show that the characteristic polynomial of \(T|_W\) divides the characteristic polynomial of \(T\).
+Let $V$ be a finite-dimensional vector space over a field $k$, let $T:V\to V$ be linear, and let $W\subseteq V$ be a $T$-invariant subspace.
+Show that the characteristic polynomial of $T|_W$ divides the characteristic polynomial of $T$.
 :::
 
 ::: {.solution}
