@@ -29,28 +29,41 @@ Show that
 :::
 
 ::: {.solution}
-Note that $g$ is entire by Morera's theorem, since $0 = \int_T f_n \to \int_T g$ by uniform convergence and the $f_n$ are holomorphic.
-By Cauchy's theorem, up to a constant we have
+Let $K\subset\CC$ be compact. Choose a closed square $Q$ and $\delta>0$ such that every point of $K$ has distance at least $\delta$ from $\partial Q$, and let $L$ be the perimeter of $Q$.
+
+<1>1. $f_n\to g$ uniformly on $\partial Q$.
+
+::: {.proof}
+$\partial Q$ is the union of four line segments, and $f_n\to g$ uniformly on each.
+:::
+
+<1>2. $\sup_{z\in K}\abs{f_n(z)-f_m(z)}\le{L\over2\pi\delta}\sup_{\xi\in\partial Q}\abs{f_n(\xi)-f_m(\xi)}$.
+
+::: {.proof}
+For $z\in K$, the Cauchy integral formula applied to the entire function $f_n-f_m$ gives
 \[
-f_n(z) = \oint_T {f_n(\xi) \over \xi - z}\dxi
-g(z) = \oint_T {g(\xi) \over \xi - z}\dxi
+f_n(z)-f_m(z)={1\over2\pi i}\oint_{\partial Q}{f_n(\xi)-f_m(\xi)\over\xi-z}\dxi
 ,\]
-Thus fixing $K$ and $\eps$, for any $T \subseteq K$ containing $z$,
-\[
-\abs{f_n(z) - g(z)}
-&= \abs{ 
-\oint_T {f_n(\xi) \over \xi - z}\dxi
-- \oint_T {g(\xi) \over \xi - z}\dxi
-} \\
-&\leq \oint_T {\abs{f_n(\xi) - g(\xi)} \over \xi - z }\dxi \\
-&\leq \oint_T { \sup_{\xi\in T}\abs{f_n(\xi) - g(\xi)} \over \xi - z }\dxi \\
-&\leq \oint_T { \eps \over \xi - z }\dxi \\
-&= \eps C \to 0
-,\]
-where $n = n(\eps, T)$ can be chosen to produce this $\eps$ using that $f_n\to g$ uniformly on $T$.
-Taking a sup over the $z$ enclosed by $T$ on the LHS yields a bound on the open region enclosed by $T$.
-Taking a union of all such $T$ in $K$ yields an open cover of $K$, which by compactness has a finite subcover. 
-This yields a finite collection $\ts{n = n(\eps, T_k)}_{k\leq N}$, and taking the maximum such $n$ yields a uniform bound for all of $K$.
+and $\abs{\xi-z}\ge\delta$ on $\partial Q$.
+:::
+
+<1>3. $f_n\to g$ uniformly on $K$.
+
+::: {.proof}
+By step <1>1 the right side of step <1>2 tends to $0$ as $n,m\to\infty$, so $(f_n)$ is uniformly Cauchy on $K$. It converges uniformly on $K$, and the limit is the pointwise limit $g$.
+:::
+
+<1>4. $g$ is entire.
+
+::: {.proof}
+By step <1>3, $g$ is a uniform limit of continuous functions on every compact set, hence continuous. For every closed triangle $T$, $\int_{\partial T} g=\lim_n\int_{\partial T} f_n=0$ by uniform convergence on $\partial T$ and Cauchy's theorem. By Morera's theorem, $g$ is entire.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>4 and <1>3 are the two claims.
+:::
 :::
 
 
