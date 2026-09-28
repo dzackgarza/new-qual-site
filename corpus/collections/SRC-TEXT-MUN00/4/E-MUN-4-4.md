@@ -41,5 +41,5 @@ A\subset\{1,\dots,n\},
 \]
 so \(A\) has a largest element by the inductive hypothesis. Thus \(P(n+1)\) holds. By induction, \(P(n)\) holds for every \(n\in\mathbb Z_+\).
 
-(b) Part (a) concerns subsets contained in one *fixed finite initial segment* \(\{1,\dots,n\}\). A general nonempty subset of \(\mathbb Z_+\) need not be bounded above and hence need not lie in any such segment. For example, \(\mathbb Z_+\) itself has no largest element, since \(m+1\in\mathbb Z_+\) and \(m+1>m\) for every \(m\in\mathbb Z_+\).
+(b) Part (a) concerns subsets contained in one fixed finite initial segment \(\{1,\dots,n\}\). A general nonempty subset of \(\mathbb Z_+\) need not be bounded above and hence need not lie in any such segment. For example, \(\mathbb Z_+\) itself has no largest element, since \(m+1\in\mathbb Z_+\) and \(m+1>m\) for every \(m\in\mathbb Z_+\).
 :::
