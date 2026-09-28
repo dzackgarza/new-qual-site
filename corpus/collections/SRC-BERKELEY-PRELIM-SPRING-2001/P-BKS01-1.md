@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS01-1
 kind: problem
-title: Count two-dimensional endomorphisms over $\mathbb F_q$ with a nonzero fixed vector
+title: Number of endomorphisms of $\FF_q^2$ fixing a nonzero vector
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
