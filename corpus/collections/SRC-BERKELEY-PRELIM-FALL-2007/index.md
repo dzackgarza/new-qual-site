@@ -41,7 +41,3 @@ source:
     term: fall
     year: 2007
 ---
-
-::: {.remark}
-A solution packet for this exam prints each problem with its solution. Part A precedes Part B.
-:::
