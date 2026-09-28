@@ -54,13 +54,13 @@ S_\Omega=S_\alpha\cup\{\alpha\}\cup T_\alpha
 \]
 would be countable. Hence \(T_\alpha\) is uncountable.
 
-(c) Let \(X_0\) be the set of points having no immediate predecessor. Suppose \(X_0\) were countable. By Theorem 10.3 it would have an upper bound \(a\in S_\Omega\).
+(c) Let \(X_0\) be the set of points having no immediate predecessor. Suppose \(X_0\) were countable. Every countable subset of \(S_\Omega\) has an upper bound in \(S_\Omega\), so \(X_0\) would have an upper bound \(a\in S_\Omega\).
 
 Starting at \(a\), form the successor sequence
 \[
 a=a_0<a_1<a_2<\cdots,
 \]
-where \(a_{n+1}\) is the immediate successor of \(a_n\); this is possible by part (a) and Exercise 2. The countable set \(\{a_n:n\ge0\}\) has an upper bound in \(S_\Omega\), hence, by Exercise 1, a least upper bound \(\beta\in S_\Omega\).
+where \(a_{n+1}\) is the immediate successor of \(a_n\); this is possible by part (a) and [[E-MUN-10-2]]. The countable set \(\{a_n:n\ge0\}\) has an upper bound in \(S_\Omega\), hence, by [[E-MUN-10-1]], a least upper bound \(\beta\in S_\Omega\).
 
 The point \(\beta\) is not one of the \(a_n\), since \(a_{n+1}>a_n\) for every \(n\). We claim \(\beta\) has no immediate predecessor. If \(\gamma\) were an immediate predecessor of \(\beta\), then \(\gamma\) could not be an upper bound of the sequence, so \(a_n>\gamma\) for some \(n\). Then
 \[
