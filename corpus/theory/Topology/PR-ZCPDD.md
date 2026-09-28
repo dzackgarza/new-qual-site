@@ -21,5 +21,5 @@ Then $H_i(M;R) = 0$ for $i > n$ and every coefficient ring $R$ [@Hat02], and $H^
 :::
 
 ::: {.remark}
-Degree $n$ itself does not vanish: $H^n(M;\ZZ) \cong \ZZ$ when $M$ is orientable.
+In degree $n$, $H^n(M;\ZZ)\cong\ZZ$ if $M$ is orientable and $H^n(M;\ZZ)\cong\ZZ/2$ otherwise, by the universal coefficient theorem applied to $H_n(M;\ZZ)$ and the torsion subgroup of $H_{n-1}(M;\ZZ)$ [@Hat02].
 :::
