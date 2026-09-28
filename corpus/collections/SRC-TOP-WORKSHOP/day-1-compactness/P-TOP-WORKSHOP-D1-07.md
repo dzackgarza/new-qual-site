@@ -24,20 +24,23 @@ Prove that every one-to-one, onto, continuous map $f:X\to Y$ is a homeomorphism.
 :::
 
 ::: {.solution}
-**Goal:** Show that continuity plus bijective compact-to-Hausdorff implies open and hence homeomorphic.
+<1>1. $f$ maps closed subsets of $X$ to closed subsets of $Y$.
 
-<1>1. Continuity of inverse from closed sets: *Proof:*\
+::: {.proof}
 Let $C\subseteq X$ be closed.
-Since $X$ is compact, $C$ is compact.
-The image $f(C)$ is compact because $f$ is continuous, and compact subsets of Hausdorff spaces are closed.
-So $f$ sends closed sets in $X$ to closed sets in $Y$.
+A closed subset of the compact space $X$ is compact, so $C$ is compact.
+The image $f(C)$ is compact because $f$ is continuous, and a compact subset of the Hausdorff space $Y$ is closed.
+:::
 
-<1>2. Inverse image of open sets: *Proof:*\
-For any open $U\subseteq X$, $$f^{-1}(f(U))=U.$$ Its complement in $Y$ is $$Y\setminus f(U)=f(X\setminus U),$$ because $f$ is bijective.
-Since $X\setminus U$ is closed in compact $X$, $f(X\setminus U)$ is closed in Hausdorff $Y$.
-Hence $Y\setminus f(U)$ is closed, so $f(U)$ is open.
+<1>2. $f^{-1}\colon Y\to X$ is continuous.
 
-<1>3. Conclusion: *Proof:*\
-$f$ is continuous, bijective, and open, so $f^{-1}$ is continuous.
-Therefore $f$ is a homeomorphism.
+::: {.proof}
+For a closed set $C\subseteq X$, $(f^{-1})^{-1}(C)=f(C)$ because $f$ is bijective, and $f(C)$ is closed by step <1>1.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+$f$ is a continuous bijection whose inverse is continuous by step <1>2, so $f$ is a homeomorphism.
+:::
 :::
