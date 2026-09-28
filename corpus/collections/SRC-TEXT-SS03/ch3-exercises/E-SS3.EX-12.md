@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-12
 kind: problem
-title: "The partial fractions identity for csc-squared"
+title: $\sum_{n\in\ZZ}(u+n)^{-2}=\pi^2/\sin^2\pi u$ by residues
 classification:
   areas:
   - complex-analysis
