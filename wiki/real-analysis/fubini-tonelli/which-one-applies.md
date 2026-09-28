@@ -61,4 +61,4 @@ Apply Tonelli's theorem to $\chi_{\theset{(x,t) \st 0<t<\abs{f(x)}}}$ on $X\time
 
 :::
 
-The basic properties of convolution are also consequences of Tonelli's and Fubini's theorems; see [[real-analysis/fourier/convolution|Convolution]].
+For $f,g\in L^1(\RR^n)$, Tonelli's theorem gives $\norm{f*g}_1\leq\norm f_1\norm g_1$, and Fubini's theorem gives associativity of convolution; see [[real-analysis/fourier/convolution|Convolution]].
