@@ -19,7 +19,7 @@ The convergence is not uniform on $(0,\infty)$: at $x = 1/N^2$ the $N$th term eq
 
 ## Variations on the Dirichlet function
 
-For each function below, the discontinuity set $D_f$, the set $D_f'$ of points where $f$ is not differentiable, and Riemann and Lebesgue integrability are recorded.
+For $f\colon\RR\to\RR$, $D_f$ denotes the set of points where $f$ is discontinuous and $D_f'$ the set of points where $f$ is not differentiable.
 Every function $f\colon\RR\to\RR$ has $D_f$ an $F_\sigma$ set, since $D_f = \bigcup_{k\geq1}\theset{x \st \operatorname{osc}_f(x)\geq 1/k}$ and each of these sets is closed.
 
 ::: {.example title="The Dirichlet function"}
