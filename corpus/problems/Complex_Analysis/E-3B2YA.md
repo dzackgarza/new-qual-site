@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3B2YA
 kind: problem
-title: Evaluating integrals
+title: Integrals over circles by Cauchy's integral formula
 classification:
   areas:
   - complex-analysis
