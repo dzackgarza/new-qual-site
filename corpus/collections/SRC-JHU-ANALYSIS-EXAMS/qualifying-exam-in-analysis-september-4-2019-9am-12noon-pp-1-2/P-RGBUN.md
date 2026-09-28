@@ -54,7 +54,7 @@ $$
 For $x>0$ the boundary values are
 $\operatorname{Log}x=\log x$ and
 $\operatorname{Log}(-x)=\log x+i\pi$. Substituting
-$z=-x$ on the negatively located real segment therefore
+$z=-x$ on the negative real segment therefore
 makes the sum of the two real-segment integrals equal to
 $$
 2\int_\varepsilon^R\frac{\log x}{x^2+2}\,dx
