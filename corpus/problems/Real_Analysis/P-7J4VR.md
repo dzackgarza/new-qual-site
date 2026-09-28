@@ -37,57 +37,49 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If $f$ is continuous, is $f'$ necessarily continuous?
-No: $f(x) = x^2\sin(1/x)$ (with $f(0) = 0$) is differentiable everywhere but $f'$ is discontinuous at $0$.
+<1>1. $f(x) = x^2\sin(1/x)$, $f(0) = 0$, is differentiable on $\RR$ and $f'$ is discontinuous at $0$.
+
 ::: {.proof}
-$f'(0) = 0$ (difference quotient $h\sin(1/h) \to 0$), while for $x \ne 0$, $f'(x) = 2x\sin(1/x) - \cos(1/x)$ has no limit as $x \to 0$.
+$\frac{f(h) - f(0)}{h} = h\sin(1/h) \to 0$, so $f'(0) = 0$. For $x \ne 0$, $f'(x) = 2x\sin(1/x) - \cos(1/x)$, and $f'(1/(2k\pi)) = -1$ for every $k \geq 1$.
 :::
 
-<1>2. If $f_n \to f$, does $f_n'$ converge to $f'$ (or at all)?
-No: $f_n(x) = \frac{\sin(nx)}{n} \to 0$ uniformly, but $f_n'(x) = \cos(nx)$ fails to converge pointwise (e.g. $f_n'(0) = 1 \to 1 \ne 0$; for $x \ne 0$ the limit does not exist).
+<1>2. $f_n(x) = \frac{\sin(nx)}{n} \to 0$ uniformly, while $f_n'(x) = \cos(nx)$ satisfies $f_n'(0) = 1$ for all $n$ and $f_n'(\pi) = (-1)^n$.
+
 ::: {.proof}
-standard counterexample; differentiability is not preserved by limits without extra hypotheses (e.g. uniform convergence of the derivatives).
+$|f_n| \le 1/n$. So $f_n'(0) \to 1 \neq 0$, the derivative of the limit, and $f_n'(\pi)$ does not converge.
 :::
 
-<1>3. Is the sum of differentiable functions differentiable?
-Yes: $(f + g)' = f' + g'$.
+<1>3. If $f$ and $g$ are differentiable at $x$, so is $f + g$, with $(f + g)'(x) = f'(x) + g'(x)$.
+
 ::: {.proof}
-linearity of the derivative — the difference quotient of $f + g$ is the sum of the difference quotients.
+The difference quotient of $f + g$ is the sum of the difference quotients of $f$ and $g$.
 :::
 
-<1>4. Is the limit of integrals equal to the integral of the limit?
-No: $f_n = n\chi_{(0, 1/n)}$ on $[0,1]$ has $f_n \to 0$ pointwise but $\int f_n = 1 \not\to 0 = \int 0$.
+<1>4. $f_n = n\chi_{(0, 1/n)}$ on $[0,1]$ satisfies $f_n \to 0$ pointwise and $\int f_n = 1$ for all $n$.
+
 ::: {.proof}
-convergence theorems need hypotheses (domination, monotonicity, uniformity).
+For each $x \in [0,1]$, $f_n(x) = 0$ once $1/n \le x$ or if $x = 0$, and $\int f_n = n \cdot \frac1n$.
 :::
 
-<1>5. Is a limit of continuous functions continuous?
-Only if the convergence is uniform (or suitably strengthened): $f_n(x) = x^n$ on $[0,1]$ converges pointwise to the discontinuous $\chi_{\{1\}}$-type limit.
+<1>5. $f_n(x) = x^n$ on $[0,1]$ are continuous and converge pointwise to $\chi_{\theset{1}}$, which is discontinuous at $1$.
+
 ::: {.proof}
-the uniform limit theorem gives continuity under uniform convergence; pointwise convergence alone fails.
+$x^n \to 0$ for $0 \le x < 1$ and $1^n = 1$. By the uniform limit theorem the convergence is not uniform.
 :::
 
-<1>6. A subset of a metric space is closed iff it is complete.
-<2>1. Complete subsets are closed.
+<1>6. Let $A$ be a subset of a metric space $X$. If $A$ is complete, then $A$ is closed. If $X$ is complete and $A$ is closed, then $A$ is complete.
+
 ::: {.proof}
-if $x_k \in A$ with $x_k \to x$, then $(x_k)$ is Cauchy, and completeness of $A$ gives $x \in A$.
-:::
-<2>2. Closed subsets of complete spaces are complete.
-::: {.proof}
-a Cauchy sequence in $A$ is Cauchy in $X$, converges to some $x \in X$ (completeness), and closedness of $A$ gives $x \in A$.
-:::
-<2>3. Q.E.D.
-::: {.proof}
-<2>1 and <2>2 (the second direction needs $X$ complete; the first does not).
+If $A$ is complete and $x_k \in A$ with $x_k \to x \in X$, then $(x_k)$ is Cauchy, so it converges in $A$, and by uniqueness of limits $x \in A$. If $X$ is complete and $A$ is closed, a Cauchy sequence in $A$ converges to some $x \in X$, and $x \in A$ because $A$ is closed.
 :::
 
-<1>7. If $m(E) < \infty$ and $f_n \to f$ uniformly, then $\lim_n \int_E f_n = \int_E f$.
-<2>1. $\left|\int_E f_n - \int_E f\right| \le \int_E |f_n - f| \le \|f_n - f\|_\infty\, m(E) \to 0$.
+<1>7. If $m(E) < \infty$ and $f_n \to f$ uniformly on $E$, then $\lim_n \int_E f_n = \int_E f$.
+
 ::: {.proof}
-triangle inequality and uniform convergence.
+$\left|\int_E f_n - \int_E f\right| \le \int_E |f_n - f| \le m(E)\sup_E|f_n - f| \to 0$.
 :::
-<2>2. Q.E.D.
-::: {.proof}
-<2>1.
 :::
+
+::: {.remark}
+The closed-iff-complete statement needs the ambient space to be complete: $(0,1]$ is closed in the metric space $(0,1]$ but is not complete, since $1/n$ is Cauchy with no limit in it. Complete subsets are closed in every metric space.
 :::
