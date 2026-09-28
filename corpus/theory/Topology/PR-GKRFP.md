@@ -22,5 +22,5 @@ $$
 :::
 
 ::: {.remark}
-Gluing two Möbius bands along their boundary circles gives the Klein bottle, not $\RP^2$ [@Hat02].
+Gluing two Möbius bands along their boundary circles gives the Klein bottle [@Hat02].
 :::
