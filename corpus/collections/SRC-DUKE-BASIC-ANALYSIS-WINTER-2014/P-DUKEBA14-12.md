@@ -65,6 +65,6 @@ and therefore
 \[
 \|L(v)\|<\frac2\delta\|v\|.
 \]
-The same inequality is trivial for $v=0$. Hence the required estimate holds with $c=2/\delta$.
+For $v=0$ both sides of $\|L(v)\|\le\frac2\delta\|v\|$ are $0$. Hence $\|L(v)\|\le c\|v\|$ for every $v\in V_1$, with $c=2/\delta$.
 :::
 :::
