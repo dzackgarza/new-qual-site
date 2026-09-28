@@ -21,7 +21,7 @@ audit:
 
 ::: {.problem}
 Let $V$ be a finite-dimensional complex inner-product space and let $T:V\to V$ be linear.
-Prove that there exists an ordered orthonormal basis of $V$ such that the matrix $A=(A_{ij})$ of $T$ in this basis is, in the wording of the source, "upper triangular," with
+Prove that there exists an ordered orthonormal basis of $V$ such that the matrix $A=(A_{ij})$ of $T$ in this basis is upper triangular, i.e.,
 \[
 A_{ij}=0
 \qquad\text{if }i<j.
@@ -31,13 +31,13 @@ Hint: first show that if $S:V\to V$ is linear and $W\subset V$ is a subspace, th
 :::
 
 ::: {.solution}
-The source's terminology and index condition disagree: under the standard convention, $A_{ij}=0$ for $i<j$ means that $A$ is lower triangular.
-Both triangularization orientations exist.
+Under the standard convention, $A_{ij}=0$ for $i<j$ says that $A$ is lower triangular, and $A_{ij}=0$ for $i>j$ says that $A$ is upper triangular.
+We construct an orthonormal basis for each form.
 
 For the standard upper-triangular form, use induction on $n=\dim V$.
 Over $\mathbb C$, the adjoint $T^*$ has an eigenvector $0\ne w\in V$.
 Let $W=\mathbb Cw$.
-Then $W$ is $T^*$-invariant, so by the hinted orthogonal-complement criterion, $W^\perp$ is $T$-invariant.
+Then $W$ is $T^*$-invariant, so by the orthogonal-complement criterion of the hint, $W^\perp$ is $T$-invariant.
 By induction, $T|_{W^\perp}$ has an orthonormal basis in which its matrix is upper triangular.
 Appending the unit vector $w/\|w\|$ gives an orthonormal basis of $V$ in which the matrix of $T$ is upper triangular, i.e. its entries vanish for $i>j$.
 
@@ -46,5 +46,5 @@ Conjugation by the reversal permutation matrix converts an upper-triangular matr
 \[
 A_{ij}=0\qquad(i<j),
 \]
-which is exactly the index condition printed in the source.
+which is the index condition in the statement.
 :::
