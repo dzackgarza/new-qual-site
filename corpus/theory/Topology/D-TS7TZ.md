@@ -20,5 +20,6 @@ A \dfn{fundamental class} of $M$ is a class $[M]\in H_n(M;\ZZ)$ whose image unde
 :::
 
 ::: {.theorem}
-In this situation $H_n(M;\ZZ)\cong\ZZ$, the fundamental class $[M]$ exists and is unique, and it generates $H_n(M;\ZZ)$ [@Hat02].
+Let $M$ be a closed connected $n$-manifold with an orientation $x\mapsto\mu_x$.
+Then $H_n(M;\ZZ)\cong\ZZ$, the fundamental class $[M]$ exists and is unique, and it generates $H_n(M;\ZZ)$ [@Hat02].
 :::
