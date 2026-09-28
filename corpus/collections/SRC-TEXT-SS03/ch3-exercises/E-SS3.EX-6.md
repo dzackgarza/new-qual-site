@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-6
 kind: problem
-title: "SS 3.6: The integral of 1/(1+x^2)^(n+1)"
+title: $\int_{-\infty}^\infty\frac{dx}{(1+x^2)^{n+1}}=\frac{1\cdot3\cdots(2n-1)}{2\cdot4\cdots(2n)}\pi$
 classification:
   areas:
   - complex-analysis
