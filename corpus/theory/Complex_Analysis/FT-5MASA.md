@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-5MASA
 kind: theorem
 title: Cauchy inequalities
-slogan: 'Cauchy converts boundary sup-norm control into derivative bounds: $\abs{f^{(n)}(z_0)}\le n!M/R^n$.'
+slogan: 'If $\abs{f}\le M$ on the circle $\abs{z-z_0}=R$, then $\abs{f^{(n)}(z_0)}\le n!M/R^n$.'
 prompts:
 - State the Cauchy inequalities for $f^{(n)}(z_0)$.
 classification:
