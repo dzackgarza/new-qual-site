@@ -75,9 +75,9 @@ $$
     *Proof:*
     <2>1. For any fixed $x_0 \in (0, 1]$, the point $(x_0, 0)$ is approached by $x \to x_0$ from the right, while the point $(x_0, 1)$ is approached by points $(x, 0)$ with $x < x_0$ (since $(x, 0) < (x_0, 1)$).
     <2>2. But the points $(x, y)$ with $0 < y < 1$ are isolated from $C$: $\{x\} \times (0, 1)$ is open and disjoint from $C$ except at $y = 0$.
-    <2>3. The limit points of $C$ are $x \times 0$ for $x \in [0, 1]$ and $x \times 1$ for $x \in [0, 1)$.
+    <2>3. The limit points of $C$ are $x \times 0$ for $x \in (0, 1]$ and $x \times 1$ for $x \in [0, 1)$; the smallest element $0 \times 0$ has the neighborhood $[0 \times 0, 0 \times \tfrac12)$, which misses $C$.
     <2>4. Thus:
-        $$\overline{C} = C \cup \{ 0 \times 0, 1 \times 0 \} \cup \{ x \times 1 \mid 0 \le x < 1 \} = ([0, 1] \times \{0\}) \cup ([0, 1) \times \{1\}).$$
+        $$\overline{C} = C \cup \{ 1 \times 0 \} \cup \{ x \times 1 \mid 0 \le x < 1 \} = ((0, 1] \times \{0\}) \cup ([0, 1) \times \{1\}).$$
 
 <1>5. Closure of $D = \{ x \times \frac{1}{2} \mid 0 < x < 1 \}$:
     *Proof:*
@@ -100,7 +100,7 @@ $$
 <1>7. Conclusion:
     - $\overline{A} = A \cup \{ (0, 1) \}$
     - $\overline{B} = B \cup \{ (1, 0) \}$
-    - $\overline{C} = ([0, 1] \times \{0\}) \cup ([0, 1) \times \{1\})$
+    - $\overline{C} = ((0, 1] \times \{0\}) \cup ([0, 1) \times \{1\})$
     - $\overline{D} = D \cup ((0, 1] \times \{0\}) \cup ([0, 1) \times \{1\})$
     - $\overline{E} = \{1/2\} \times [0, 1]$. Q.E.D.
 :::
