@@ -136,8 +136,8 @@ K_{\AA^n_k}
 $$
 
 ::: {.proof}
-Zaidenberg Definition 13.3 defines the canonical bundle of a smooth
-$n$-fold as the determinant of the cotangent bundle:
+The canonical bundle of a smooth $n$-fold $X$ is the determinant of the
+cotangent bundle:
 $$
 K_X=\det T^*(X).
 $$
