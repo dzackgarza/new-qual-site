@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK83SU-18
 kind: problem
-title: Solve $xy'+y=x$ by $C^1$ functions across the singular point
+title: $C^1$ solutions of $xy'+y=x$ across the singular point $x=0$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
