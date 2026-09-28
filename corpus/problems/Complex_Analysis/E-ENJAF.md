@@ -23,9 +23,8 @@ f(z) \da e^{1\over z}\cos\qty{1\over z}
 :::
 
 ::: {.solution}
-Note that a direct expansion won't work, since there are infinitely many contributions to the constant term.
-Instead, a trick: consider $g(z) \da e^z\cos(z)$, so $g(1/z ) = f(z)$.
-Expanding $g$ is easier:
+Let $g(z) \da e^z\cos(z)$, an entire function with $g(1/z ) = f(z)$ for $z\ne0$.
+The Taylor series of $g$ at $0$, evaluated at $1/z$, is the Laurent series of $f$ on $\abs z>0$:
 \[
 g(z) 
 &= e^{z}\cos(z)\\
