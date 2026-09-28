@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-2B
 kind: problem
-title: UC Berkeley Fall 2004 prelim 2B
+title: Decay of the Newtonian potential $\int f(y)/|x-y|\,dy$ of a compactly supported $f$ on $\RR^3$
 classification:
   areas: [prelim]
   topics: []
@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f \colon  { \mathbb { R } } ^ { 3 } \to  { \mathbb { R } }$ be a continuous function of compact support $( \mathrm { i . e . , ~ } f$ vanishes outside some bounded set).
+Let $f \colon  { \mathbb { R } } ^ { 3 } \to  { \mathbb { R } }$ be a continuous function of compact support (i.e., $f$ vanishes outside some bounded set).
 
 (a) Show that
 
@@ -21,33 +21,33 @@ $$
 
 converges, where the integral is over all $\boldsymbol { y } \in \mathbb { R } ^ { 3 }$
 
-(b) Show that $\scriptstyle \operatorname* { l i m } _ { | x | \to \infty } u ( x ) | x |$ exists.
+(b) Show that $\lim_{|x|\to\infty}u(x)|x|$ exists.
 :::
 
 ::: {.solution}
-(a) Let M be the maximum value of $| f |$ (this exists, since f is 0 outside some compact set and is continuous). Fix x. Choose R large enough that $f ( y ) = 0 { \mathrm { ~ i f ~ } } | x - y | > R$ Using polar coordinates centered at x, we have
+(a) Let $M$ be the maximum value of $\abs{f}$; it exists because $f$ is continuous and vanishes outside a compact set. Fix $x$. Choose $R$ large enough that $f(y)=0$ whenever $\abs{x-y}>R$. Using polar coordinates centered at $x$,
 
 $$
-\int { \frac { | f ( y ) | } { | x - y | } } d y \leq \int _ { 0 } ^ { R } { \frac { M } { r } } ( 4 \pi r ^ { 2 } d r ) ,
+\int\frac{\abs{f(y)}}{\abs{x-y}}\,dy\leq\int_0^R\frac{M}{r}\,4\pi r^2\,dr,
 $$
 
-which converges, so the integral defining $u ( x )$ converges absolutely.
+which is finite, so the integral defining $u(x)$ converges absolutely.
 
-(b) By writing $f ( y ) = \operatorname* { m a x } \{ f ( y ) , 0 \} + \operatorname* { m i n } \{ f ( y ) , 0 \}$ , we may reduce to the case that $f$ is nonnegative everywhere. Let $R _ { 0 } > 0$ be such that $f ( y ) = 0$ for $| y | > R _ { 0 }$ $\operatorname { I f } \left| x \right| \geq n R _ { 0 }$ where n is large, and $| y | \le R _ { 0 }$ , then
-
-$$
-{ \frac { | x | } { | x - y | } } \leq { \frac { | x | } { | x | - | y | } } = { \frac { 1 } { 1 - | y | / | x | } } \leq { \frac { 1 } { 1 - 1 / n } } = { \frac { n } { n - 1 } }
-$$
+(b) Writing $f(y)=\max\{f(y),0\}+\min\{f(y),0\}$ and using linearity of $u$ in $f$ reduces the problem to the case that $f$ is nonnegative everywhere. Let $R_0>0$ be such that $f(y)=0$ for $\abs y>R_0$. If $\abs x\geq nR_0$ with $n\geq2$, and $\abs y\leq R_0$, then
 
 $$
-{ \frac { | x | } { | x - y | } } \geq { \frac { | x | } { | x | + | y | } } = { \frac { 1 } { 1 + | y | / | x | } } \leq { \frac { 1 } { 1 + 1 / n } } = { \frac { n } { n + 1 } } .
+\frac{\abs x}{\abs{x-y}}\leq\frac{\abs x}{\abs x-\abs y}=\frac1{1-\abs y/\abs x}\leq\frac1{1-1/n}=\frac n{n-1},
+$$
+
+$$
+\frac{\abs x}{\abs{x-y}}\geq\frac{\abs x}{\abs x+\abs y}=\frac1{1+\abs y/\abs x}\leq\frac1{1+1/n}=\frac n{n+1}.
 $$
 
 Hence
 
 $$
-{ \frac { n } { n + 1 } } \int f d y \leq u ( x ) | x | \leq { \frac { n } { n - 1 } } \int f d y
+\frac n{n+1}\int f\,dy\leq u(x)\abs x\leq\frac n{n-1}\int f\,dy
 $$
 
-for large x. Thus lim $| x | {  } \infty u ( x ) | x | = \textstyle \int f d y$
+whenever $\abs x\geq nR_0$. Since $n$ is arbitrary, $\lim_{\abs x\to\infty}u(x)\abs x=\int f\,dy$.
 :::
