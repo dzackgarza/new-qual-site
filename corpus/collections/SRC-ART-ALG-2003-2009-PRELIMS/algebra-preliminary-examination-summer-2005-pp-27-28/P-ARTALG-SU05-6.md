@@ -23,36 +23,39 @@ For each, determine its elementary divisors, minimal polynomial and characterist
 :::
 
 ::: {.solution}
-<1>1. We need three $3 \times 3$ matrices over $\QQ$ with $-2$ as the only rational eigenvalue, pairwise non-similar.
-
-<1>2. Take
+<1>1. Let
 $$A_1 = \begin{pmatrix} -2 & 0 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
 A_2 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 0 \\ 0 & 0 & -2 \end{pmatrix}, \qquad
 A_3 = \begin{pmatrix} -2 & 1 & 0 \\ 0 & -2 & 1 \\ 0 & 0 & -2 \end{pmatrix}.$$
+Each has characteristic polynomial $(x+2)^3$, and $-2$ is its only eigenvalue.
+
 ::: {.proof}
-three Jordan forms with eigenvalue $-2$ and Jordan blocks of sizes $(1,1,1)$, $(2,1)$, and $(3)$ respectively.
+Each $A_j$ is upper triangular with every diagonal entry $-2$, so $\det(xI-A_j)=(x+2)^3$.
+The eigenvalues are the roots of the characteristic polynomial, so $-2$ is the only one.
 :::
 
-<1>3. Each has characteristic polynomial $(x + 2)^3$.
+<1>2. The elementary divisors and minimal polynomials are:
+
+- $A_1$: elementary divisors $x+2,\ x+2,\ x+2$; minimal polynomial $x+2$.
+- $A_2$: elementary divisors $(x+2)^2,\ x+2$; minimal polynomial $(x+2)^2$.
+- $A_3$: elementary divisor $(x+2)^3$; minimal polynomial $(x+2)^3$.
+
 ::: {.proof}
-all eigenvalues are $-2$ with algebraic multiplicity $3$.
+The matrices are in Jordan form with eigenvalue $-2$ and Jordan blocks of sizes $(1,1,1)$, $(2,1)$, and $(3)$.
+A Jordan block of size $k$ with eigenvalue $-2$ contributes the elementary divisor $(x+2)^k$.
+The characteristic polynomial is the product of the elementary divisors, and the minimal polynomial is their least common multiple, here $(x+2)^m$ for the largest block size $m$ [@DF04].
 :::
 
-<1>4. The minimal polynomials are:
-- $A_1$: $x + 2$ (elementary divisors $x+2, x+2, x+2$);
-- $A_2$: $(x+2)^2$ (elementary divisors $(x+2)^2, x+2$);
-- $A_3$: $(x+2)^3$ (elementary divisor $(x+2)^3$).
+<1>3. No two of $A_1,A_2,A_3$ are similar.
+
 ::: {.proof}
-the minimal polynomial is the product of the elementary divisors (the invariant factors), and the elementary divisors are the $(x+2)^k$ for the Jordan blocks of size $k$.
+Similar matrices have the same elementary divisors [@DF04].
+The three lists in step <1>2 are distinct.
 :::
 
-<1>5. The three matrices are pairwise non-similar.
-::: {.proof}
-similar matrices have the same elementary divisors (or the same rational canonical form / Jordan form); the three sets of elementary divisors are distinct, so no two are similar.
-:::
+<1>4. Q.E.D.
 
-<1>6. Q.E.D.
 ::: {.proof}
-<1>2–<1>5.
+Steps <1>1 and <1>3 show that $A_1,A_2,A_3$ are pairwise nonsimilar $3\times3$ matrices over $\QQ$ whose only rational eigenvalue is $-2$, and steps <1>1 and <1>2 give their characteristic polynomials, elementary divisors, and minimal polynomials.
 :::
 :::
