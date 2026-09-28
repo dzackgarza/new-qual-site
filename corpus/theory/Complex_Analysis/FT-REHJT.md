@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-REHJT
 kind: theorem
 title: Cauchy inequalities for Taylor coefficients
-slogan: 'Boundary sup-norm bounds Taylor coefficients by $M/R^n$.'
+slogan: 'If $\abs{f}\le M$ on the circle $\abs{z-z_0}=R$, then the $n$th Taylor coefficient of $f$ at $z_0$ has modulus at most $M/R^n$.'
 prompts:
 - State the Cauchy inequalities in the form bounding $\abs{f^{(n)}(z_0)/n!}$.
 classification:
