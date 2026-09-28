@@ -16,7 +16,7 @@ For a finite group $G$, each element $g$ either lies in the [[D-NK7G7|center]] $
 [[FD-L2TEC]]
 
 ::: {.remark title="Derivation from orbit-stabilizer"}
-For the conjugation action of $G$ on itself, the fixed points are the elements of $Z(G)$ and the orbit of $g$ is $[g]$, with $\size{[g]} = [G : C_G(g)]$.
+For the conjugation action $\phi$ of $G$ on itself, the fixed points are the elements of $Z(G)$ and the orbit of $g$ is $[g]$, with $\size{[g]} = [G : C_G(g)]$.
 If $g_1,\ldots,g_r$ represent the conjugacy classes of size greater than $1$, then
 $$
 \begin{aligned}
