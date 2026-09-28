@@ -39,7 +39,7 @@ Let $I = \int_{-\infty}^{\infty} \frac{e^{itx}}{e^x+e^{-x}}\,dx$.
 Then
 
 $$
-\operatorname* { l i m } _ { R  \infty } \oint _ { C } { \frac { e ^ { i t z } } { e ^ { z } + e ^ { - z } } } d z = ( 1 + e ^ { - \pi t } ) I .
+\lim _ { R \to \infty } \oint _ { C } { \frac { e ^ { i t z } } { e ^ { z } + e ^ { - z } } } d z = ( 1 + e ^ { - \pi t } ) I .
 $$
 
 On the other hand,
