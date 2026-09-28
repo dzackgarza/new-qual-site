@@ -60,5 +60,4 @@ x\in X-\bigcap_iA_i
 &\iff x\in\bigcup_i(X-A_i).
 \end{aligned}
 \]
-Thus both identities hold for arbitrary indexed families.
 :::
