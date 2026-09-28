@@ -37,8 +37,6 @@ Write out the missing details.
 :::
 
 ::: {.solution}
-We supply the omitted details in Lemma 5.7.
-
 <1>1. Paths and homotopies lift uniquely once an initial lift is fixed.
 ::: {.proof}
 Cover the compact interval $I$ by finitely many subintervals on each of which the given path lies in an evenly covered open set.
