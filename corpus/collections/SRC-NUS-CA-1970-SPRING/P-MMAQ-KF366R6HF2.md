@@ -24,12 +24,11 @@ Use Cauchy's theorem to prove the argument principle.
 :::
 
 ::: {.solution}
-**Goal:** State and prove the Argument Principle using Cauchy's Theorem.
-Specifically, if $f$ is meromorphic in a simply connected domain $\Omega$, and $\gamma$ is a positively oriented simple closed contour in $\Omega$ passing through no zeros or poles of $f$, then: $$\frac{1}{2\pi i} \oint_\gamma \frac{f'(z)}{f(z)} \, dz = Z_f - P_f,$$ where $Z_f$ and $P_f$ are the total number of zeros and poles of $f$ inside $\gamma$, counted with multiplicity.
+The argument principle: if $f$ is meromorphic and not identically zero in a simply connected domain $\Omega$, and $\gamma$ is a positively oriented simple closed contour in $\Omega$ passing through no zeros or poles of $f$, then: $$\frac{1}{2\pi i} \oint_\gamma \frac{f'(z)}{f(z)} \, dz = Z_f - P_f,$$ where $Z_f$ and $P_f$ are the total number of zeros and poles of $f$ inside $\gamma$, counted with multiplicity.
 
 * * *
 
-### Step 1: Local Analysis of the Logarithmic Derivative $\frac{f'(z)}{f(z)}$
+### Step 1: The logarithmic derivative $\frac{f'(z)}{f(z)}$ near zeros and poles
 
 <1>1. **Behavior near a zero $z_0$ of multiplicity $m \geq 1$.** <2>1. In a disk $D(z_0, r)$, $f(z) = (z - z_0)^m g(z)$, where $g$ is holomorphic and $g(z) \neq 0$ for all $z \in D(z_0, r)$.
 *Proof:* Factoring out the zero of order $m$.
@@ -53,7 +52,7 @@ Specifically, if $f$ is meromorphic in a simply connected domain $\Omega$, and $
 
 * * *
 
-### Step 2: Global Integration via Cauchy's Theorem on Multiply Connected Domains
+### Step 2: Cauchy's theorem on the region with small disks removed
 
 <1>3. **Finiteness of zeros and poles inside $\gamma$.** <2>1. The interior $\text{Int}(\gamma)$ is bounded, and its closure $\text{Int}(\gamma) \cup \gamma$ is compact.
 *Proof:* $\gamma$ is a Jordan curve in $\mathbb{C}$.
@@ -70,7 +69,7 @@ Specifically, if $f$ is meromorphic in a simply connected domain $\Omega$, and $
 
 * * *
 
-### Step 3: Evaluate Circle Integrals and Conclude
+### Step 3: The integrals over the small circles
 
 <1>5. **Evaluate the small circle integrals.** <2>1. For each zero $a_j$, using <1>1.<2>3 and Cauchy's Theorem on the holomorphic term $\frac{g_j'}{g_j}$: $$\oint_{C(a_j, \varepsilon)} \frac{f'(z)}{f(z)} \, dz = \oint_{C(a_j, \varepsilon)} \left( \frac{m_j}{z - a_j} + \frac{g_j'(z)}{g_j(z)} \right) dz = m_j (2\pi i) + 0 = 2\pi i m_j.$$ *Proof:* $\oint_{|z-a_j|=\varepsilon} \frac{dz}{z-a_j} = 2\pi i$ and $\oint \frac{g_j'}{g_j}\,dz = 0$ by Cauchy's theorem for holomorphic functions.
 <2>2. For each pole $b_l$, using <1>2.<2>3 and Cauchy's Theorem on the holomorphic term $\frac{h_l'}{h_l}$: $$\oint_{C(b_l, \varepsilon)} \frac{f'(z)}{f(z)} \, dz = \oint_{C(b_l, \varepsilon)} \left( \frac{-k_l}{z - b_l} + \frac{h_l'(z)}{h_l(z)} \right) dz = -k_l (2\pi i) + 0 = -2\pi i k_l.$$ *Proof:* $\oint_{|z-b_l|=\varepsilon} \frac{dz}{z-b_l} = 2\pi i$ and $\oint \frac{h_l'}{h_l}\,dz = 0$ by Cauchy's theorem for holomorphic functions.
