@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Find $\textstyle \int _ { 0 } ^ { 1 }$ arctan(x)dx.
+Find $\int_0^1 \arctan(x)\,dx$.
 :::
 
 ::: {.solution}
