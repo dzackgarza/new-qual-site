@@ -18,19 +18,19 @@ Compute $\int_\Gamma \Re(z) \dz$ for $\Gamma$ the unit square.
 :::
 
 ::: {.solution}
-Write $\Gamma = \sum_{1\leq k \leq 4}\gamma_k$, starting at zero and traversing clockwise:
+Write $\Gamma = \sum_{1\leq k \leq 4}\gamma_k$, starting at zero and traversing counterclockwise through $0$, $1$, $1+i$, $i$:
 
 ![](../../assets/Complex_Analysis/010_Basics/figures/2021-12-19_03-22-20.png)
 
-Compute:
+For $t\in[0,1]$:
 
-- $\gamma_1$: parameterize to get $\int_0^1t1\dt = 1/2$.
+- $\gamma_1(t)=t$: $\int_0^1 t\dt = 1/2$.
 
-- $\gamma_2$: $\int_0^1 i \dt = i$
+- $\gamma_2(t)=1+it$: $\int_0^1 1\cdot i \dt = i$.
 
-- $\gamma_2$: $-\int_0^1 (1-t)\dt = -1/2$
+- $\gamma_3(t)=(1-t)+i$: $-\int_0^1 (1-t)\dt = -1/2$.
 
-- $\gamma_2$: $- \int_0^1 0 \dt = 0$
+- $\gamma_4(t)=i(1-t)$: $-i\int_0^1 0 \dt = 0$.
 
 So $\int_\Gamma \Re(z) \dz = i$.
 :::
