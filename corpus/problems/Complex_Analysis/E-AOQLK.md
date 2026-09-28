@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AOQLK
 kind: problem
-title: Residues using partial fractions/principal parts
+title: Residues of $z^3/(z^2+1)$ from its principal parts
 classification:
   areas:
   - complex-analysis
