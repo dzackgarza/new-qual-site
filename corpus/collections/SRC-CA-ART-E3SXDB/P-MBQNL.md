@@ -25,7 +25,7 @@ Show that
 \int_{0}^{\infty} \frac{\sin x}{x} d x=\frac{\pi}{2}
 .\]
 
-> Hint: use the fact that this integral eexercises $\frac{1}{2 i} \int_{-\infty}^{\infty} \frac{e^{i x}-1}{x} d x$, and integrate around an indented semicircle.
+> Hint: use the fact that this integral equals $\frac{1}{2 i} \int_{-\infty}^{\infty} \frac{e^{i x}-1}{x} d x$, and integrate around an indented semicircle.
 :::
 
 ::: {.solution}
