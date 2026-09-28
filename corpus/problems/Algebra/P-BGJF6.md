@@ -38,7 +38,7 @@ E=F[x]/(p).
 \]
 The class of \(x\) is a root of \(p\), hence of \(f\), so over \(E\) one linear factor can be removed. Induction on the remaining degree produces a field in which all roots lie; adjoining exactly those roots gives a splitting field.
 
-For uniqueness, let \(L_1,L_2\) be splitting fields of \(f\) over \(F\). We extend an embedding one root at a time. Suppose \(E\subseteq L_1\) has already been embedded into \(L_2\) by \(\varphi:E\to L_2\), and let \(\alpha\in L_1\) be another root of \(f\). Let \(m_{\alpha,E}(x)\in E[x]\) be its minimal polynomial over \(E\). Since \(m_{\alpha,E}\mid f\) in \(E[x]\), the transported polynomial \(\varphi(m_{\alpha,E})\) divides \(f\) in \(\varphi(E)[x]\). Because \(f\) splits in \(L_2\), this polynomial has a root \(\beta\in L_2\). The standard simple-extension theorem therefore extends \(\varphi\) to
+For uniqueness, let \(L_1,L_2\) be splitting fields of \(f\) over \(F\). We extend an embedding one root at a time. Suppose \(E\subseteq L_1\) has already been embedded into \(L_2\) by \(\varphi:E\to L_2\), and let \(\alpha\in L_1\) be another root of \(f\). Let \(m_{\alpha,E}(x)\in E[x]\) be its minimal polynomial over \(E\). Since \(m_{\alpha,E}\mid f\) in \(E[x]\), the transported polynomial \(\varphi(m_{\alpha,E})\) divides \(f\) in \(\varphi(E)[x]\). Because \(f\) splits in \(L_2\), this polynomial has a root \(\beta\in L_2\). Since \(E(\alpha)\cong E[x]/(m_{\alpha,E})\) and \(\beta\) is a root of \(\varphi(m_{\alpha,E})\), the map \(\varphi\) extends to
 \[
 E(\alpha)\longrightarrow L_2,
 \qquad \alpha\longmapsto\beta.
