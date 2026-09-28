@@ -24,30 +24,25 @@ If $x$ is a limit point of the subset $A$ of $X$, is it necessarily true that $f
 :::
 
 ::: {.solution}
-**Goal.** Decide whether continuity of $f: X \to Y$ and $x$ a limit point of $A$ force $f(x)$ to be a limit point of $f(A)$.
+<1>1. No: for the constant map $f\equiv0\colon\RR\to\RR$ and $A=\theset{1/n : n\in\NN}$, the point $0$ is a limit point of $A$, but $f(0)$ is not a limit point of $f(A)$.
 
-<1>1. The statement is false in general.
-<2>1. Counterexample: $X = Y = \RR$, $A = \theset{1/n : n \in \NN}$, and $f$ the constant map $f \equiv 0$.
 ::: {.proof}
-$0$ is a limit point of $A$ (the sequence $1/n \to 0$), but $f(A) = \theset{0}$ has no limit point (a singleton has no limit point).
-:::
-<2>2. $f$ is continuous.
-::: {.proof}
-a constant map is continuous.
+A constant map is continuous.
+Every interval about $0$ contains $1/n\ne0$ for large $n$, so $0$ is a limit point of $A$.
+But $f(A)=\theset{0}$, and a limit point of $\theset{0}$ would need neighborhoods meeting $\theset{0}$ in a point other than itself, which is impossible for $f(0)=0$.
 :::
 
-<1>2. The correct statement requires $f$ to be injective (or at least $f(x) \notin f(A)$ in a neighborhood).
-<2>1. If $f$ is continuous and $x$ is a limit point of $A$, then $f(x) \in \overline{f(A)}$.
+<1>2. For continuous $f$ and a limit point $x$ of $A$, $f(x)\in\overline{f(A)}$; if moreover $f(x)\notin f(A)$, then $f(x)$ is a limit point of $f(A)$.
+
 ::: {.proof}
-for any neighborhood $V$ of $f(x)$, $f^{-1}(V)$ is a neighborhood of $x$, so it meets $A$ in a point $a \neq x$; then $f(a) \in V \cap f(A)$, so $V$ meets $f(A)$.
-:::
-<2>2. If moreover $f(x)\notin f(A)$, then $f(x)$ is a limit point of $f(A)$.
-::: {.proof}
-every neighborhood of $f(x)$ meets $f(A)$ by <2>1, and every point of $f(A)$ differs from $f(x)$.
+Let $V$ be a neighborhood of $f(x)$.
+Then $f^{-1}(V)$ is a neighborhood of $x$, so it contains a point $a\in A$ with $a\ne x$, and $f(a)\in V\cap f(A)$.
+If $f(x)\notin f(A)$, the point $f(a)$ differs from $f(x)$.
 :::
 
 <1>3. Q.E.D.
+
 ::: {.proof}
-<1>1 shows the answer is "no"; <1>2 gives the corrected statement.
+Step <1>1 answers the question.
 :::
 :::
