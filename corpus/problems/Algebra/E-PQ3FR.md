@@ -25,13 +25,20 @@ Show that under either of the following two conditions, $R$ is local:
 :::
 
 ::: {.solution}
-- Sketch: $\mfm$ must contain every non-unit.
+Let $R$ be a commutative ring with identity and $N \da R\sm R\units$ its set of nonunits.
 
-  - If $I \neq R$ then $I$ contains no units, so $I\subseteq N \da R\sm R\units$, i.e. $I$ is contained in the non-units.
-    But $N \subseteq \mfm$ since no element of $\mfm$ is a unit and no element of $R\sm \mfm$ is a non-unit.
+<1>1. If $R\sm \mfm \subseteq R\units$, then $\mfm$ is the only maximal ideal of $R$.
 
-- Sketch: show that every $r\in R\sm \mfm$ is a unit and apply the first part.
+::: {.proof}
+The proper ideal $\mfm$ contains no unit, so $\mfm\subseteq N$, and the hypothesis gives $N\subseteq\mfm$; hence $\mfm=N$.
+A proper ideal $I$ contains no unit, so $I\subseteq N=\mfm$.
+:::
 
-  - If $r\in R\sm \mfm$ then $\gens{r, \mfm} = R = \gens{ 1 }$ so $rt + m = 1$ for some $t\in R, m\in \mfm$, so $rt = 1-m \in 1 + \mfm \subseteq R\units$ by assumption.
-    Now apply (1).
+<1>2. If $1 + \mfm \subseteq R\units$, then $R\sm \mfm \subseteq R\units$, so $R$ is local by step <1>1.
+
+::: {.proof}
+Let $r\in R\sm \mfm$.
+By maximality, $\mfm+\gens{r} = R$, so $rt + m = 1$ for some $t\in R$ and $m\in \mfm$.
+Then $rt = 1-m \in 1 + \mfm \subseteq R\units$, so $r$ is a unit.
+:::
 :::
