@@ -23,31 +23,29 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $\hat f$ is bounded: $|\hat f(\xi)| \le \|f\|_1$ for every $\xi$.
+Use $\hat f(\xi) = \int f(x)e^{-ix\xi}\,dx$.
+
+<1>1. $|\hat f(\xi)| \le \|f\|_1$ for every $\xi$.
+
 ::: {.proof}
-$|\hat f(\xi)| = \left|\int f(x)e^{-ix\xi}\,dx\right| \le \int |f(x)|\,dx = \|f\|_1$.
+$|\hat f(\xi)| = \left|\int f(x)e^{-ix\xi}\,dx\right| \le \int |f(x)|\,dx$.
 :::
 
-<1>2. $\hat f$ is uniformly continuous.
-<2>1. $|\hat f(\xi + h) - \hat f(\xi)| \le \int |f(x)|\,|e^{-ihx} - 1|\,dx$.
+<1>2. $\sup_\xi|\hat f(\xi + h) - \hat f(\xi)| \le \int |f(x)|\,|e^{-ihx} - 1|\,dx$.
+
 ::: {.proof}
-$|\hat f(\xi+h) - \hat f(\xi)| = \left|\int f(x)e^{-ix\xi}(e^{-ihx} - 1)\,dx\right| \le \int |f(x)||e^{-ihx}-1|\,dx$.
-:::
-<2>2. The bound tends to $0$ as $h \to 0$.
-::: {.proof}
-dominated convergence — $|e^{-ihx} - 1| \le 2$ and $|f| \in L^1$, while $e^{-ihx} \to 1$ pointwise as $h \to 0$.
-:::
-<2>3. The convergence is uniform in $\xi$.
-::: {.proof}
-the bound in <2>1 is independent of $\xi$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>1–<2>3 show $\sup_\xi|\hat f(\xi + h) - \hat f(\xi)| \to 0$ as $h \to 0$, which is exactly uniform continuity.
+$\hat f(\xi+h) - \hat f(\xi) = \int f(x)e^{-ix\xi}(e^{-ihx} - 1)\,dx$, and $|e^{-ix\xi}| = 1$.
 :::
 
-<1>3. Q.E.D.
+<1>3. $\int |f(x)|\,|e^{-ihx} - 1|\,dx \to 0$ as $h \to 0$.
+
 ::: {.proof}
-<1>1 and <1>2.
+The integrand tends to $0$ pointwise and is bounded by $2|f| \in L^1$, so the dominated convergence theorem applies along every sequence $h_k \to 0$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>1 is boundedness, and steps <1>2 and <1>3 give $\sup_\xi|\hat f(\xi + h) - \hat f(\xi)| \to 0$ as $h \to 0$, which is uniform continuity.
 :::
 :::
