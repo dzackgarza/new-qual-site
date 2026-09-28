@@ -44,3 +44,7 @@ By steps <1>1 and <1>2 and Lagrange's theorem $n'm=\# G$,
 $$\# \Union_{g\in G} gHg\inv\le 1+n'(m-1)=\# G-(n'-1)<\# G .$$
 :::
 :::
+
+::: {.remark}
+Erratum: the statement needs $G$ finite. Every matrix in $\mathrm{GL}_2(\CC)$ is conjugate to an upper-triangular matrix, so the conjugates of the proper subgroup of invertible upper-triangular matrices cover $\mathrm{GL}_2(\CC)$.
+:::

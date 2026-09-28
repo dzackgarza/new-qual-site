@@ -45,3 +45,7 @@ $$\size \Union_{g\in G} gHg\inv\le 1+n'(m-1)=\size G-(n'-1)<\size G .$$
 :::
 :::
 
+::: {.remark}
+Erratum: the statement needs $G$ finite. Every matrix in $\mathrm{GL}_2(\CC)$ is conjugate to an upper-triangular matrix, so the conjugates of the proper subgroup of invertible upper-triangular matrices cover $\mathrm{GL}_2(\CC)$.
+:::
+
