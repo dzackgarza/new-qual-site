@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-09
 kind: problem
-title: A divisibility consequence modulo 11
+title: $11\mid 3x+7y$ implies $11\mid 4x-9y$
 classification:
   areas:
   - algebra
@@ -29,7 +29,7 @@ Which of the listed expressions must also be divisible by $11$?
 ::: {.solution}
 The answer is $\boxed{\text{(D)}\;4x-9y}$.
 
-<1>1. Rewrite the hypothesis modulo $11$.
+<1>1. $x\equiv5y\pmod{11}$.
 ::: {.proof}
 From
 \[
@@ -41,7 +41,7 @@ x\equiv-7\cdot4\,y\equiv5y\pmod{11}.
 \]
 :::
 
-<1>2. Test the listed linear expressions.
+<1>2. Among the choices, $4x-9y$ is the only expression that is divisible by $11$ for all admissible $x,y$.
 ::: {.proof}
 Substituting $x\equiv5y$ gives
 \[
