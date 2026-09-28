@@ -8,7 +8,7 @@ order: 0
 
 - [@Hat02]
 
-- [@CE12] — [vendored PDF](attachments/From%20Stein%20to%20Weinstein%20and%20Back.pdf)
+- [@CE12] — [PDF](attachments/From%20Stein%20to%20Weinstein%20and%20Back.pdf)
 
 - W. Fulton, *Algebraic Topology: A First Course*
 
