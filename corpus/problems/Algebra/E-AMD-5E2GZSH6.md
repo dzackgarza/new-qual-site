@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-5E2GZSH6
 kind: problem
-title: Burnside's theorem
+title: Burnside's orbit-counting lemma
 classification:
   areas:
   - algebra
