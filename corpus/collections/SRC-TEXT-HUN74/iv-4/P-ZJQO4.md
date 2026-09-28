@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZJQO4
 kind: problem
-title: Hungerford 4.4.3
+title: $\operatorname{Hom}(\ZZ_2,-)$ sends the epimorphism $\ZZ\to\ZZ_2$ to the zero map
 classification:
   areas:
   - algebra
@@ -25,62 +25,29 @@ Conclude that $\overline{\pi}$ is not an epimorphism.
 :::
 
 ::: {.solution}
-<1>1. Compute $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z})$:
-<2>1. Let $\varphi \in \operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z})$.
+The induced map is post-composition, $\overline{\pi}(\varphi) = \pi \circ \varphi$.
+
+<1>1. $\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ) = 0$.
+
 ::: {.proof}
-setup.
-:::
-<2>2. Since $2 \cdot 1 = 0$ in $\mathbb{Z}_2$, linearity implies:
-\[
-2 \varphi(1) = \varphi(2 \cdot 1) = \varphi(0) = 0 \quad \text{in } \mathbb{Z}.
-\]
-::: {.proof}
-group homomorphism property.
-:::
-<2>3. In the ring of integers $\mathbb{Z}$, $2k = 0 \implies k = 0$. Thus $\varphi(1) = 0$.
-::: {.proof}
-$\mathbb{Z}$ has no non-zero torsion.
-:::
-<2>4. Since $\mathbb{Z}_2 = \langle 1 \rangle$, $\varphi(x) = 0$ for all $x \in \mathbb{Z}_2$, so $\varphi = 0$.
-::: {.proof}
-homomorphisms out of cyclic groups are determined by the generator.
-:::
-<2>5. Therefore $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z}) = \{0\}$ is the trivial zero group.
-::: {.proof}
-<2>1 through <2>4.
+Let $\varphi \in \operatorname{Hom}_\ZZ(\ZZ_2, \ZZ)$. Since $2 \cdot 1 = 0$ in $\ZZ_2$,
+$$2 \varphi(1) = \varphi(2 \cdot 1) = \varphi(0) = 0 \quad \text{in } \ZZ.$$
+As $\ZZ$ is torsion-free, $\varphi(1) = 0$, and since $1$ generates $\ZZ_2$, $\varphi = 0$.
 :::
 
-<1>2. Show that $\overline{\pi} = \pi_*$ is the zero map:
-<2>1. The induced map $\overline{\pi}: \operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z}) \to \operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z}_2)$ is defined by post-composition: $\overline{\pi}(\varphi) = \pi \circ \varphi$.
+<1>2. $\overline{\pi}$ is the zero map.
+
 ::: {.proof}
-definition of the covariant functor $\operatorname{Hom}(M, -)$.
-:::
-<2>2. Since the domain $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z}) = \{0\}$ contains only the zero map, $\overline{\pi}(0) = \pi \circ 0 = 0$.
-::: {.proof}
-composition with zero homomorphism.
-:::
-<2>3. Thus the image of $\overline{\pi}$ is the single element $\{0\}$, so $\overline{\pi}$ is the zero map.
-::: {.proof}
-<2>2.
+By step <1>1 the domain of $\overline\pi$ is $\{0\}$, and $\overline{\pi}(0) = \pi \circ 0 = 0$.
 :::
 
-<1>3. Show that $\overline{\pi}$ is not an epimorphism:
-<2>1. The identity homomorphism $\operatorname{id}_{\mathbb{Z}_2}: \mathbb{Z}_2 \to \mathbb{Z}_2$ is a non-zero element of $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z}_2) \cong \mathbb{Z}_2$.
+<1>3. $\overline{\pi}$ is not an epimorphism.
+
 ::: {.proof}
-$\operatorname{id}_{\mathbb{Z}_2}(1) = 1 \neq 0$.
+The identity $\operatorname{id}_{\ZZ_2}$ is a nonzero element of $\operatorname{Hom}_\ZZ(\ZZ_2, \ZZ_2)$, since $\operatorname{id}_{\ZZ_2}(1) = 1 \neq 0$. By step <1>2 the image of $\overline{\pi}$ is $\{0\}$, so $\overline\pi$ is not surjective.
 :::
-<2>2. Since $\operatorname{im}(\overline{\pi}) = \{0\}$ and $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, \mathbb{Z}_2)$ has $2$ elements, $\operatorname{id}_{\mathbb{Z}_2} \notin \operatorname{im}(\overline{\pi})$.
-::: {.proof}
-<1>2 and <2>1.
-:::
-<2>3. Therefore $\overline{\pi}$ is not surjective (not an epimorphism).
-::: {.proof}
-<2>2.
 :::
 
-<1>4. Conclusion:
-$\overline{\pi}$ is the zero map and fails to be an epimorphism, demonstrating that $\operatorname{Hom}_\mathbb{Z}(\mathbb{Z}_2, -)$ is not right exact. Q.E.D.
-::: {.proof}
-<1>1 through <1>3.
-:::
+::: {.remark}
+Thus the functor $\operatorname{Hom}_\ZZ(\ZZ_2,-)$ applied to the short exact sequence $0\to\ZZ\xrightarrow{2}\ZZ\xrightarrow{\pi}\ZZ_2\to0$ gives a sequence that is not exact at $\operatorname{Hom}(\ZZ_2,\ZZ_2)$: the functor $\operatorname{Hom}_\ZZ(M,-)$ is left exact but not right exact in general.
 :::
