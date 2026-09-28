@@ -12,13 +12,13 @@ Each subject page lists its chapters and syllabus; the [guides](guides.html) arr
 
 - [[algebra/index|Algebra]]
 
-- [[real-analysis/index|Real Analysis]]
+- [[real-analysis/index|Real analysis]]
 
-- [[complex-analysis/index|Complex Analysis]]
+- [[complex-analysis/index|Complex analysis]]
 
 - [[topology/index|Topology]]
 
-- [[applied-algebra/index|Applied Algebra]]
+- [[applied-algebra/index|Applied algebra]]
 
 - [[algebraic-geometry/index|Algebraic geometry]]
 
