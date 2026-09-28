@@ -29,76 +29,17 @@ Prove that any function $f \in L^1(I) \cap L^2(I)$ on an interval $I \subset \ma
 :::
 
 ::: {.solution}
-<1>1. Pointwise splitting method: <2>1. For $p = 1$ and $p = 2$, $f \in L^1(I)$ and $f \in L^2(I)$ by hypothesis.
+Fix $p\in[1,2]$ and let $E_1=\{x\in I:\abs{f(x)}\le1\}$ and $E_2=\{x\in I:\abs{f(x)}>1\}$.
+
+<1>1. $\abs f^p\le\abs f$ on $E_1$ and $\abs f^p\le\abs f^2$ on $E_2$.
+
 ::: {.proof}
-hypothesis $f \in L^1(I) \cap L^2(I)$.
-:::
-<2>2. Fix $p \in (1, 2)$.
-Partition $I$ into two disjoint measurable sets:
-\[
-E_1 = \{x \in I : |f(x)| \le 1\}, \quad E_2 = \{x \in I : |f(x)| > 1\}.
-\]
-::: {.proof}
-preimage of Borel sets under the measurable function $|f|$.
-:::
-<2>3. On $E_1$, since $|f(x)| \le 1$ and $p > 1$, $|f(x)|^p \le |f(x)|$.
-::: {.proof}
-for $t \in [0, 1]$ and $p \ge 1$, $t^p \le t$.
-:::
-<2>4. On $E_2$, since $|f(x)| > 1$ and $p < 2$, $|f(x)|^p \le |f(x)|^2$.
-::: {.proof}
-for $t > 1$ and $p \le 2$, $t^p \le t^2$.
-:::
-<2>5. Integrating $|f|^p$ over $I$:
-\[
-\int_I |f|^p\,dx = \int_{E_1} |f|^p\,dx + \int_{E_2} |f|^p\,dx \le \int_{E_1} |f|\,dx + \int_{E_2} |f|^2\,dx \le \|f\|_{L^1(I)} + \|f\|_{L^2(I)}^2 < \infty.
-\]
-::: {.proof}
-<2>3, <2>4, and additivity of the Lebesgue integral.
-:::
-<2>6. Thus $f \in L^p(I)$ for every $p \in (1, 2)$.
-::: {.proof}
-$\int_I |f|^p\,dx < \infty$.
+For $0\le t\le1$ and $p\ge1$, $t^p\le t$; for $t>1$ and $p\le2$, $t^p\le t^2$.
 :::
 
-<1>2. Hölder interpolation inequality.
+<1>2. Q.E.D.
 
-<2>1. For $1<p<2$, choose $\theta = \frac{2(p-1)}{p} \in (0, 1)$, so that $1 - \theta = \frac{2-p}{p}$ and $\frac{1}{p} = \frac{1-\theta}{1} + \frac{\theta}{2}$.
 ::: {.proof}
-arithmetic.
+By step <1>1, $\int_I\abs f^p\le\int_{E_1}\abs f+\int_{E_2}\abs f^2\le\norm f_{L^1(I)}+\norm f_{L^2(I)}^2<\infty$, so $f\in L^p(I)$.
 :::
-<2>2. Decompose $|f|^p = |f|^{(1-\theta)p} |f|^{\theta p} = |f|^{2-p} |f|^{2(p-1)}$.
-::: {.proof}
-exponent addition $(1-\theta)p + \theta p = p$.
-:::
-<2>3. Apply Hölder's inequality with $r=1/(2-p)>1$ and $s=1/(p-1)>1$:
-\[
-\begin{aligned}
-\int_I |f|^p\,dx
-&\leq\left(\int_I |f|^{(2-p)r}\,dx\right)^{1/r}
-\left(\int_I |f|^{2(p-1)s}\,dx\right)^{1/s}\\
-&=\left(\int_I |f|\,dx\right)^{2-p}
-\left(\int_I |f|^2\,dx\right)^{p-1}
-=\|f\|_{L^1(I)}^{2-p}\|f\|_{L^2(I)}^{2(p-1)}.
-\end{aligned}
-\]
-::: {.proof}
-The exponents are conjugate because $1/r+1/s=(2-p)+(p-1)=1$.
-Moreover $(2-p)r=1$ and $2(p-1)s=2$, so the two factors
-belong to $L^r$ and $L^s$ by the hypotheses. Hölder's
-inequality therefore gives the displayed estimate [@Fol13].
-:::
-<2>4. Taking the $p$-th root yields the $L^p$ interpolation inequality:
-\[
-\|f\|_{L^p(I)} \le \|f\|_{L^1(I)}^{1-\theta} \|f\|_{L^2(I)}^\theta < \infty.
-\]
-::: {.proof}
-<2>3.
-:::
-
-<1>3. Conclusion: $f \in L^p(I)$ for all $p \in [1, 2]$.
-::: {.proof}
-<1>1 and <1>2.
-:::
-Q.E.D.
 :::

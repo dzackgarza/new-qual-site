@@ -35,77 +35,52 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a): Statement of Fatou’s Lemma: <2>1. **Fatou's Lemma:** Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $\{f_n\}_{n=1}^\infty$ be a sequence of non-negative measurable functions $f_n: X \to [0, \infty]$.
-Then:
-\[
-\int_X \liminf_{n \to \infty} f_n \, d\mu \le \liminf_{n \to \infty} \int_X f_n \, d\mu.
-\]
+Throughout, $(X,\mu)$ is $[0,1]$ with Lebesgue measure.
+
+<1>1. (a) Fatou's lemma: if $f_n\ge0$ are measurable, then $\int\liminf_n f_n\le\liminf_n\int f_n$.
+
 ::: {.proof}
-statement of Fatou's Lemma.
+This is the requested statement.
 :::
 
-<1>2. Part (b): Statement and Proof of the Dominated Convergence Theorem: <2>1. **Statement:** Let $\{f_n\}$ be a sequence of measurable functions on $(X, \mu)$ converging pointwise almost everywhere to $f$.
-If there exists an integrable function $g \in L^1(X, \mu)$ such that $|f_n(x)| \le g(x)$ for almost every $x$ and all $n \ge 1$, then $f \in L^1(X, \mu)$ and:
-\[
-\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu.
-\]
+<1>2. (b) If $f_n\to f$ a.e., and $\abs{f_n}\le g$ a.e. for all $n$ with $g\in L^1$, then $f\in L^1$ and $\int f_n\to\int f$.
+
+<2>1. $f\in L^1$.
+
 ::: {.proof}
-statement of DCT. <2>2. **Proof:** Since $|f_n(x)| \le g(x)$ a.e. and $f_n(x) \to f(x)$ a.e., taking $n \to \infty$ gives $|f(x)| \le g(x)$ a.e., so $f \in L^1(X, \mu)$.
-:::
-::: {.proof}
-monotonicity of limits and integrability of dominator.
-:::
-<2>3. Consider the non-negative sequence $u_n = g + f_n \ge 0$.
-Applying Fatou's Lemma to $\{u_n\}$:
-\[
-\int_X (g + f) \, d\mu = \int_X \liminf_{n \to \infty} (g + f_n) \, d\mu \le \liminf_{n \to \infty} \int_X (g + f_n) \, d\mu = \int_X g \, d\mu + \liminf_{n \to \infty} \int_X f_n \, d\mu.
-\]
-Subtracting the finite value $\int_X g \, d\mu < \infty$:
-\[
-\int_X f \, d\mu \le \liminf_{n \to \infty} \int_X f_n \, d\mu.
-\]
-::: {.proof}
-linearity of integrals and Fatou's Lemma.
-:::
-<2>4. Symmetrically, consider the non-negative sequence $v_n = g - f_n \ge 0$.
-Applying Fatou's Lemma to $\{v_n\}$:
-\[
-\int_X (g - f) \, d\mu = \int_X \liminf_{n \to \infty} (g - f_n) \, d\mu \le \liminf_{n \to \infty} \int_X (g - f_n) \, d\mu = \int_X g \, d\mu - \limsup_{n \to \infty} \int_X f_n \, d\mu.
-\]
-Subtracting $\int_X g \, d\mu$ and multiplying by $-1$:
-\[
-\limsup_{n \to \infty} \int_X f_n \, d\mu \le \int_X f \, d\mu.
-\]
-::: {.proof}
-$\liminf(-a_n) = -\limsup(a_n)$.
-:::
-<2>5. Combining <2>3 and <2>4:
-\[
-\limsup_{n \to \infty} \int_X f_n \, d\mu \le \int_X f \, d\mu \le \liminf_{n \to \infty} \int_X f_n \, d\mu.
-\]
-Since $\liminf \le \limsup$, all inequalities are equalities, establishing $\lim_{n \to \infty} \int_X f_n \, d\mu = \int_X f \, d\mu$.
-::: {.proof}
-squeeze principle.
+Letting $n\to\infty$ in $\abs{f_n}\le g$ gives $\abs f\le g$ a.e., and $g$ is integrable.
 :::
 
-<1>3. Part (c): Counterexample with vanishing pointwise limit and non-zero integral: <2>1. Define $f_n: [0, 1] \to \mathbb{R}$ by:
-\[
-f_n(x) = n \, \mathbf{1}_{(0, 1/n)}(x) = \begin{cases} n & \text{if } 0 < x < 1/n, \\ 0 & \text{otherwise.} \end{cases}
-\]
-(Alternatively, $f_n(x) = \mathbf{1}_{[n, n+1]}(x)$ on $\mathbb{R}$).
+<2>2. $\int f\le\liminf_n\int f_n$.
+
 ::: {.proof}
-explicit construction.
+Fatou's lemma applied to $g+f_n\ge0$ gives $\int(g+f)\le\int g+\liminf_n\int f_n$, and $\int g$ is finite.
 :::
-<2>2. **Pointwise limit:**
 
-- If $x = 0$, $f_n(0) = 0$ for all $n$.
+<2>3. $\limsup_n\int f_n\le\int f$.
 
-- If $x \in (0, 1]$, choose $N > 1/x$.
-  For all $n \ge N$, $1/n < x$, so $f_n(x) = 0$.
-  Thus $f_n(x) \to 0$ for all $x \in [0, 1]$ (pointwise everywhere).
-  ::: {.proof}
-  Archimedean property of $\mathbb{R}$.
-  :::
+::: {.proof}
+Fatou's lemma applied to $g-f_n\ge0$ gives $\int(g-f)\le\int g-\limsup_n\int f_n$, and $\int g$ is finite.
+:::
+
+<2>4. Q.E.D.
+
+::: {.proof}
+Steps <2>2 and <2>3 give $\limsup_n\int f_n\le\int f\le\liminf_n\int f_n$, so $\int f_n\to\int f$; step <2>1 gives $f\in L^1$.
+:::
+
+<1>3. (c) $\boxed{f_n=n\,\mathbf 1_{(0,1/n)}}$ satisfies $f_n\to0$ everywhere on $[0,1]$ and $\int_0^1f_n=1$ for all $n$.
+
+::: {.proof}
+$f_n(0)=0$, and for $x\in(0,1]$, $f_n(x)=0$ once $n>1/x$. Also $\int_0^1f_n=n\cdot\frac1n=1$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2 and <1>3 answer parts (a), (b) and (c).
+:::
+:::
   <2>3. **Integral limit:** For every $n \ge 1$:
 \[
 \int_0^1 f_n(x) \, dx = \int_0^{1/n} n \, dx = n \cdot \frac{1}{n} = 1.

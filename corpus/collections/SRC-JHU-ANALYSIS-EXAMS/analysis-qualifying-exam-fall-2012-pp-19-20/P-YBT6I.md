@@ -34,51 +34,29 @@ Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \
 :::
 
 ::: {.solution}
-**Part (a).**
+Write $\tau_hg(y)\da g(y-h)$ and $\norm\cdot_p$ for the $L^p(\RR)$ norm.
 
-<1>1. $f \ast g$ is bounded.
-<2>1. $|(f \ast g)(x)| \le \|f\|_{L^2} \|g\|_{L^2}$ for all $x$.
+<1>1. (a) For $f,g\in L^2$, $\abs{(f\ast g)(x)}\le\norm f_2\norm g_2$ for every $x$.
+
 ::: {.proof}
-by Cauchy–Schwarz, $|(f\ast g)(x)| = \left|\int f(y) g(x-y)\, dy\right| \le \|f\|_{L^2} \|g\|_{L^2}$.
-:::
-<2>2. Hence $f \ast g$ is bounded.
-::: {.proof}
-<2>1 gives a uniform bound.
+By the Cauchy--Schwarz inequality, $\abs{\int f(y)g(x-y)\,dy}\le\norm f_2\norm{g(x-\cdot)}_2=\norm f_2\norm g_2$.
 :::
 
-<1>2. $f \ast g$ is continuous.
-<2>1. Translation is continuous in $L^2$: $\|g(\cdot - (x+h)) - g(\cdot - x)\|_{L^2} \to 0$ as $h \to 0$.
+<1>2. (a) $f\ast g$ is continuous.
+
 ::: {.proof}
-standard continuity of translation in $L^p$ for $1 \le p < \infty$.
-:::
-<2>2. $|(f\ast g)(x+h) - (f\ast g)(x)| \le \|f\|_{L^2} \|g(\cdot - (x+h)) - g(\cdot - x)\|_{L^2} \to 0$.
-::: {.proof}
-Cauchy–Schwarz and <2>1.
-:::
-<2>3. Hence $f \ast g$ is continuous.
-::: {.proof}
-<2>2.
+By the Cauchy--Schwarz inequality, $\abs{(f\ast g)(x+h)-(f\ast g)(x)}\le\norm f_2\norm{\tau_{-h}g-g}_2$, which tends to $0$ as $h\to0$ by continuity of translation in $L^2$ [@Fol13].
 :::
 
-<1>3. Q.E.D.
+<1>3. (b) For $f,h\in L^1$, $\norm{f\ast h}_1\le\norm f_1\norm h_1$, so $A$ is a bounded operator on $L^1$ with $\norm A\le\norm h_1$.
+
 ::: {.proof}
-<1>1 and <1>2.
+By Tonelli's theorem, $\int\abs{(f\ast h)(x)}\,dx\le\iint\abs{f(y)}\abs{h(x-y)}\,dy\,dx=\norm f_1\norm h_1$. The map $A$ is linear, so this bound makes it bounded.
 :::
 
-**Part (b).**
+<1>4. Q.E.D.
 
-<1>1. $\|A(f)\|_{L^1} = \|f \ast h\|_{L^1} \le \|f\|_{L^1} \|h\|_{L^1}$.
 ::: {.proof}
-Young's convolution inequality (or Fubini–Tonelli): $\int |(f\ast h)(x)|\, dx \le \int \int |f(y)| |h(x-y)|\, dy\, dx = \|f\|_{L^1} \|h\|_{L^1}$.
-:::
-
-<1>2. Hence $A$ is a bounded operator $L^1 \to L^1$ with $\|A\| \le \|h\|_{L^1}$.
-::: {.proof}
-<1>1.
-:::
-
-<1>3. Q.E.D.
-::: {.proof}
-<1>2.
+Steps <1>1 and <1>2 prove part (a), and step <1>3 proves part (b).
 :::
 :::
