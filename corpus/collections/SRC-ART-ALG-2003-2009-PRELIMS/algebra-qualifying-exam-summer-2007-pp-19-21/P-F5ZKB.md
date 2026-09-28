@@ -27,30 +27,38 @@ c. Give an example of an infinite field of characteristic $3$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that finite fields have prime-power cardinality, determine all subfields of $\mathbb{F}_{3^{12}}$, and provide an explicit example of an infinite field of characteristic $3$.
+<1>1. In part (a), a finite field $F$ has $p^n$ elements for a prime $p$ and an integer $n\ge1$.
 
-<1>1. Part (a): Any finite field $F$ has cardinality $|F| = p^n$ for a prime $p$ and integer $n \ge 1$.
-    *Proof:*
-    <2>1. The characteristic $\operatorname{char}(F)$ of any field $F$ is either $0$ or a prime $p$. If $\operatorname{char}(F) = 0$, the prime subfield is isomorphic to $\mathbb{Q}$, which is infinite, contradicting the finiteness of $F$. Thus $\operatorname{char}(F) = p$ for some prime $p$.
-    <2>2. The prime subfield of $F$ is $K_0 \cong \mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$.
-    <2>3. $F$ is a vector space over its prime subfield $\mathbb{F}_p$ under field addition and scalar multiplication by elements of $\mathbb{F}_p$.
-    <2>4. Since $F$ is finite, $F$ is finite-dimensional as an $\mathbb{F}_p$-vector space. Let $n = \dim_{\mathbb{F}_p}(F) \ge 1$.
-    <2>5. Any $n$-dimensional vector space over $\mathbb{F}_p$ is isomorphic to $\mathbb{F}_p^n$ as an $\mathbb{F}_p$-vector space, hence has cardinality $|\mathbb{F}_p|^n = p^n$.
+::: {.proof}
+The characteristic of a field is $0$ or a prime.
+In characteristic $0$ the prime subfield is isomorphic to $\QQ$, which is infinite, so $F$ has prime characteristic $p$ and prime subfield $\FF_p=\ZZ/p\ZZ$.
+Field addition and multiplication by elements of $\FF_p$ make $F$ an $\FF_p$-vector space, which is finite-dimensional because $F$ is finite.
+If $n=\dim_{\FF_p}F$, then $n\ge1$ and $F\cong\FF_p^n$ as vector spaces, so $\abs{F}=p^n$.
+:::
 
-<1>2. Part (b): Subfields of $\mathbb{F}_{3^{12}}$.
-    *Proof:*
-    <2>1. For a finite field $\mathbb{F}_{p^m}$, every subfield is a finite field containing $\mathbb{F}_p$, so its degree $d$ over $\mathbb{F}_p$ must divide $m = [\mathbb{F}_{p^m} : \mathbb{F}_p]$ by the tower law.
-    <2>2. Conversely, for each positive divisor $d \mid m$, the polynomial $x^{p^d} - x$ divides $x^{p^m} - x$ in $\mathbb{F}_p[x]$, and the roots of $x^{p^d} - x$ in $\mathbb{F}_{p^m}$ form the unique subfield of size $p^d$, isomorphic to $\mathbb{F}_{p^d}$.
-    <2>3. Here $p = 3$ and $m = 12$. The positive divisors of $12$ are $d \in \{1, 2, 3, 4, 6, 12\}$.
-    <2>4. Therefore, the subfields of $\mathbb{F}_{3^{12}}$ are precisely the six subfields isomorphic to:
-        $$\mathbb{F}_3, \quad \mathbb{F}_{3^2} = \mathbb{F}_9, \quad \mathbb{F}_{3^3} = \mathbb{F}_{27}, \quad \mathbb{F}_{3^4} = \mathbb{F}_{81}, \quad \mathbb{F}_{3^6} = \mathbb{F}_{729}, \quad \mathbb{F}_{3^{12}} = \mathbb{F}_{531441}.$$
+<1>2. In part (b), the subfields of $\FF_{3^{12}}$ are its unique subfields of orders
+$$
+3,\quad 3^2=9,\quad 3^3=27,\quad 3^4=81,\quad 3^6=729,\quad 3^{12}=531441.
+$$
 
-<1>3. Part (c): Example of an infinite field of characteristic $3$.
-    *Proof:*
-    <2>1. Consider the field of rational functions in one indeterminate $t$ over $\mathbb{F}_3$:
-        $$K = \mathbb{F}_3(t) = \left\{ \frac{f(t)}{g(t)} : f(t), g(t) \in \mathbb{F}_3[t], \; g(t) \neq 0 \right\}.$$
-    <2>2. $K$ is the field of fractions of the polynomial ring $\mathbb{F}_3[t]$, which is an integral domain, so $K$ is a field.
-    <2>3. The characteristic of $K$ is $3$, since $1_K + 1_K + 1_K = 3 \cdot 1_{\mathbb{F}_3} = 0$.
-    <2>4. $K$ contains the monomials $\{t^k : k \in \mathbb{N}\}$, which are pairwise distinct in $\mathbb{F}_3[t] \subset K$, so $K$ is infinite.
-    *(Alternatively, the algebraic closure $\overline{\mathbb{F}}_3 = \bigcup_{n=1}^\infty \mathbb{F}_{3^n}$ is also an infinite field of characteristic $3$.)* Q.E.D.
+::: {.proof}
+A subfield $K$ of $\FF_{p^m}$ contains $\FF_p$, and by the tower law $d=[K:\FF_p]$ divides $m=[\FF_{p^m}:\FF_p]$.
+Conversely, for each positive divisor $d$ of $m$, the polynomial $x^{p^d}-x$ divides $x^{p^m}-x$ in $\FF_p[x]$, and its roots in $\FF_{p^m}$ form the unique subfield of order $p^d$ [@DF04].
+Here $p=3$, $m=12$, and the positive divisors of $12$ are $1,2,3,4,6,12$.
+:::
+
+<1>3. In part (c), $\FF_3(t)$, the field of rational functions in one indeterminate $t$ over $\FF_3$, is an infinite field of characteristic $3$.
+
+::: {.proof}
+$\FF_3(t)$ is the field of fractions of the integral domain $\FF_3[t]$, so it is a field.
+Its characteristic is $3$, since $1+1+1=0$ in $\FF_3\subseteq\FF_3(t)$.
+The monomials $t^k$, $k\ge0$, are pairwise distinct elements, so $\FF_3(t)$ is infinite.
+An algebraic closure $\overline{\FF}_3=\bigcup_{n\ge1}\FF_{3^n}$ is another infinite field of characteristic $3$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2, and <1>3 answer parts (a), (b), and (c).
+:::
 :::
