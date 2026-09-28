@@ -81,12 +81,12 @@ Transitivity: if
 \[
 B=PAQ,
 \qquad
-C=RBS
+C=P'BQ'
 \]
-with $R\in\operatorname{GL}_m(R)$ and $S\in\operatorname{GL}_n(R)$, then
+with $P'\in\operatorname{GL}_m(R)$ and $Q'\in\operatorname{GL}_n(R)$, then
 \[
-C=(RP)A(QS),
+C=(P'P)A(QQ'),
 \]
-and $RP$, $QS$ are invertible. Thus matrix equivalence is an equivalence relation.
+and $P'P$, $QQ'$ are invertible. Thus matrix equivalence is an equivalence relation.
 :::
 :::
