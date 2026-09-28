@@ -172,8 +172,8 @@ The real part of the integrand extends continuously across $x=0$, because
 $$
 \cos x-\cos4x=O(x^2).
 $$
-Thus no principal-value qualification is needed for the real part used
-below.
+Hence $\int_{-\infty}^{\infty}(\cos x-\cos4x)x^{-2}\,dx$ converges as an
+ordinary improper integral and equals the real part of the limit $3\pi$.
 :::
 
 <1>5. The whole-line real integral is
