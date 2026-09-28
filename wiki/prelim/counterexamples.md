@@ -8,8 +8,6 @@ topics:
 
 # Counterexamples
 
-Each entry names a statement and gives a counterexample, or states the correct version.
-
 ## Limits and continuity
 
 **Continuity does not imply differentiability.** $\abs x$ is continuous and not differentiable at $0$, and Weierstrass's function is continuous on $\RR$ and differentiable nowhere.
