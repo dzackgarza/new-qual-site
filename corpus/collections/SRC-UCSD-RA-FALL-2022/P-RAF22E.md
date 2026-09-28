@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF22E
 kind: problem
-title: "Invertibility on Hilbert space is equivalent to T and T* both bounded below"
+title: "Invertibility on Hilbert space is equivalent to $T$ and $T^*$ both bounded below"
 classification:
   areas:
   - real-analysis
@@ -72,7 +72,7 @@ Tx_n\to Tx.
 Hence the limit belongs to $\operatorname{ran}T$, so $\operatorname{ran}T$ is closed.
 :::
 
-<1>3. The lower bound for $T^*$ forces the range of $T$ to be dense.
+<1>3. If $T$ and $T^*$ are bounded below, then $T$ is bijective.
 ::: {.proof}
 If $T^*$ is bounded below, then $T^*$ is injective, hence
 \[
@@ -90,14 +90,14 @@ which implies
 \[
 \overline{\operatorname{ran}T}=H.
 \]
-By Step 2 the range is already closed, so
+By step <1>2 the range is already closed, so
 \[
 \operatorname{ran}T=H.
 \]
 Thus $T$ is surjective as well as injective.
 :::
 
-<1>4. The inverse is bounded.
+<1>4. If $T$ and $T^*$ are bounded below, then $T^{-1}$ is bounded.
 ::: {.proof}
 Since $T$ is bijective, define $T^{-1}:H\to H$. If $y=Tx$, then
 \[
