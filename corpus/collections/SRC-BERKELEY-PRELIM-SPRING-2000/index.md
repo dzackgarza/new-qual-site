@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-BERKELEY-PRELIM-SPRING-2000
 kind: collection
-title: UC Berkeley Preliminary Exam Spring 2000
+title: Berkeley preliminary exam Spring 2000
 classification:
   areas: [prelim]
   topics: []
@@ -20,7 +20,7 @@ source:
   - P-BKS00-2
   - P-BKS00-3
   - id: P-BERK89S-16
-    comment: Spring 2000 Problem 4; repeated verbatim as Spring 1989 Problem 16
+    comment: Problem 4
   - P-BKS00-5
   - P-BKS00-6
   - P-BKS00-7
