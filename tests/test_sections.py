@@ -13,6 +13,7 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
+import pytest
 from conftest import fixture_repo, run_qualc
 from test_invariants import read_html
 
@@ -84,24 +85,28 @@ This proves the second subclaim.
 """
 
 
-def build(tmp_path: Path) -> sqlite3.Connection:
-    """The claim under test is about the nested card, so it is the only card that
-    needs to be here. This used to copy and build the whole real corpus -- three
-    times in this file -- to assert something one card proves."""
-    work = fixture_repo(tmp_path, {"nested.md": NESTED_CARD})
+@pytest.fixture(scope="module")
+def site(tmp_path_factory: pytest.TempPathFactory) -> Path:
+    """The claims under test are about the two nested cards, so they are the only
+    cards added to the fixtures; one build serves every test in this module."""
+    work = fixture_repo(tmp_path_factory.mktemp("sections"), {"nested.md": NESTED_CARD, "compact-nested.md": COMPACT_NESTED_CARD})
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
-    return sqlite3.connect(work / "build" / "catalog.sqlite")
+    return work
 
 
-def test_nested_section_is_indexed(tmp_path: Path) -> None:
-    con = build(tmp_path)
+@pytest.fixture(scope="module")
+def con(site: Path) -> sqlite3.Connection:
+    return sqlite3.connect(site / "build" / "catalog.sqlite")
+
+
+def test_nested_section_is_indexed(con: sqlite3.Connection) -> None:
     kinds = [k for (k,) in con.execute("select section_kind from sections where card_id = 'P-NEST1'")]
     assert "solution" in kinds, "the enclosing solution should be indexed"
     assert "proof" in kinds, "the proof nested inside it should be indexed too"
 
 
-def test_nested_section_is_searchable_as_its_own_kind(tmp_path: Path) -> None:
+def test_nested_section_is_searchable_as_its_own_kind(con: sqlite3.Connection) -> None:
     """Searching must be able to distinguish a hit *in a proof* from one merely in
     the solution that encloses it.
 
@@ -110,19 +115,17 @@ def test_nested_section_is_searchable_as_its_own_kind(tmp_path: Path) -> None:
     so that assertion passes while the bug is present. The discriminating question
     is whether the proof reaches the index as a proof.
     """
-    con = build(tmp_path)
     hits = con.execute("select section_kind from search where search match 'Sylow' and card_id = 'P-NEST1'").fetchall()
     assert ("proof",) in hits, "the nested proof must be searchable as a proof"
 
 
-def test_enclosing_section_still_carries_its_own_text(tmp_path: Path) -> None:
+def test_enclosing_section_still_carries_its_own_text(con: sqlite3.Connection) -> None:
     """Recursing must not move the nested text out of its parent, only add a row."""
-    con = build(tmp_path)
     (solution_text,) = con.execute("select text from sections where card_id = 'P-NEST1' and section_kind = 'solution'").fetchone()
     assert "follows from Sylow" in solution_text
 
 
-def test_compact_and_indented_proof_fences_do_not_leak_a_solution(tmp_path: Path) -> None:
+def test_compact_and_indented_proof_fences_do_not_leak_a_solution(site: Path, con: sqlite3.Connection) -> None:
     """The corpus's compact proof spelling is normalized before Pandoc reads it.
 
     A generated proof opener often follows its Lamport step with no intervening
@@ -130,11 +133,6 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(tmp_path: Path
     Pandoc otherwise reads those as paragraph/code text and the first bare
     `:::` closes the surrounding solution, exposing everything after it.
     """
-    work = fixture_repo(tmp_path, {"compact-nested.md": COMPACT_NESTED_CARD})
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    con = sqlite3.connect(work / "build" / "catalog.sqlite")
     sections = con.execute(
         "select section_kind, text from sections where card_id='P-NEST2' order by ordinal",
     ).fetchall()
@@ -144,7 +142,7 @@ def test_compact_and_indented_proof_fences_do_not_leak_a_solution(tmp_path: Path
     assert "This proves the first claim" in solution
     assert "This proves the first subclaim and must remain hidden with the solution" in solution
 
-    page = read_html(work / "build" / "quarto" / "_site" / "tag" / "P-NEST2.html")
+    page = read_html(site / "build" / "quarto" / "_site" / "tag" / "P-NEST2.html")
     disclosures = page.root.find_all("details", **{"class": "reveal qual-solution"})
     assert len(disclosures) == 1
     disclosure_text = " ".join(disclosures[0].text.split())
