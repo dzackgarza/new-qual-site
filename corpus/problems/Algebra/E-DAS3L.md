@@ -33,58 +33,43 @@ review: draft
 :::
 
 ::: {.solution}
-*Any cyclic group is abelian.*  
-If $G=\langle g\rangle$, then any elements are $g^a,g^b$. Then
-$g^a g^b=g^{a+b}=g^b g^a$, so $G$ is abelian.
+<1>1. A cyclic group $G=\langle g\rangle$ is abelian.
 
-*Subgroups of a cyclic group are cyclic.*  
-Let $H\le G=\langle g\rangle$ and let
-\[
-m=\min\{k>0:g^k\in H\}
-\]
-(the minimum over a nonempty set if $H\neq \{e\}$; take $m=0$ for $H=\{e\}$).
-Then $H=\langle g^m\rangle$ by the usual Euclidean remainder argument.
+::: {.proof}
+Any two elements are $g^a,g^b$, and $g^ag^b=g^{a+b}=g^bg^a$.
+:::
 
-\[
-\phi(n)=|\mathrm{Aut}(\ZZ/n\ZZ)|=
-\left|(\ZZ/n\ZZ)^\times\right|
-=n\prod_{p\mid n}\left(1-\frac1p\right).
-\]
-This follows from the decomposition
-\[
-(\ZZ/n\ZZ)^\times \cong \prod_{p^a\| n}(\ZZ/p^a\ZZ)^\times
-\]
-and inclusion--exclusion on each prime factor.
+<1>2. Every subgroup $H$ of $G=\langle g\rangle$ is cyclic.
 
-\[
-\mathrm{Aut}(\ZZ/n\ZZ)\cong (\ZZ/n\ZZ)^\times.
-\]
-Any automorphism is determined by where $1$ maps, and the image must be a unit mod $n$.
+::: {.proof}
+If $H=\{e\}$, then $H=\langle e\rangle$.
+Otherwise $H$ contains some $g^k$ with $k\neq0$, hence also $g^{|k|}$, so let $m$ be the least positive integer with $g^m\in H$.
+For $g^k\in H$, write $k=qm+r$ with $0\le r<m$; then $g^r=g^k(g^m)^{-q}\in H$, so $r=0$ by minimality.
+Hence $H=\langle g^m\rangle$.
+:::
 
-For $n$ composite, this group may be non-cyclic.
-\[
-(\ZZ/2^a\ZZ)^\times\cong
-\begin{cases}
-1,&a=1,\\
-C_2,&a=2,\\
-C_2\times C_{2^{a-2}},&a\ge3,
-\end{cases}
-\quad
-(\ZZ/p^a\ZZ)^\times\text{ is cyclic of order }p^{a-1}(p-1)\ (p\text{ odd})
-\]
-and for general $n=\prod p_i^{a_i}$ we get
-\[
-\mathrm{Aut}(\ZZ/n\ZZ)\cong \prod_i (\ZZ/p_i^{a_i}\ZZ)^\times,\qquad
-|\mathrm{Aut}(\ZZ/n\ZZ)|=\phi(n).
-\]
+<1>3. $\phi(n)=|(\ZZ/n\ZZ)^\times|=n\prod_{p\mid n}\left(1-\frac1p\right)$.
 
-Finally,
-\[
-\mathrm{Aut}((\ZZ/p\ZZ)^n)\cong \operatorname{GL}_n(\mathbb F_p),
-\]
-with
-\[
-|\operatorname{GL}_n(\mathbb F_p)|
-=\prod_{i=0}^{n-1}(p^n-p^i).
-\]
+::: {.proof}
+For $n=\prod_i p_i^{a_i}$, the Chinese remainder theorem gives $(\ZZ/n\ZZ)^\times\cong\prod_i(\ZZ/p_i^{a_i}\ZZ)^\times$.
+The nonunits of $\ZZ/p^a\ZZ$ are the $p^{a-1}$ multiples of $p$, so $|(\ZZ/p^a\ZZ)^\times|=p^a-p^{a-1}=p^a(1-1/p)$.
+Multiplying over the prime powers dividing $n$ gives the formula.
+:::
+
+<1>4. $\Aut(\ZZ/n\ZZ)\cong(\ZZ/n\ZZ)^\times\cong\prod_i(\ZZ/p_i^{a_i}\ZZ)^\times$, where
+$$(\ZZ/2^a\ZZ)^\times\cong\begin{cases}1,&a=1,\\ C_2,&a=2,\\ C_2\times C_{2^{a-2}},&a\ge3,\end{cases}$$
+and $(\ZZ/p^a\ZZ)^\times$ is cyclic of order $p^{a-1}(p-1)$ for $p$ odd.
+
+::: {.proof}
+An endomorphism of $\ZZ/n\ZZ$ is multiplication by $u=\varphi(1)$, and it is bijective exactly when $u$ is a unit; composition corresponds to multiplication of the units.
+The product decomposition is step <1>3, For odd $p$ there is a primitive root modulo $p^a$; for $a\ge3$, the class of $5$ has order $2^{a-2}$ modulo $2^a$ and $(\ZZ/2^a\ZZ)^\times=\langle-1\rangle\times\langle5\rangle$.
+For composite $n$ the group need not be cyclic, e.g. $\Aut(\ZZ/8\ZZ)\cong C_2\times C_2$.
+:::
+
+<1>5. $\Aut((\ZZ/p\ZZ)^n)\cong\operatorname{GL}_n(\FF_p)$, of order $\prod_{i=0}^{n-1}(p^n-p^i)$.
+
+::: {.proof}
+A group homomorphism of $(\ZZ/p\ZZ)^n=\FF_p^n$ is additive, hence $\FF_p$-linear, so the automorphisms are the invertible $\FF_p$-linear maps.
+An invertible matrix is a choice of columns $v_1,\dots,v_n$ with $v_{i+1}\notin\operatorname{span}(v_1,\dots,v_i)$, which leaves $p^n-p^i$ choices for $v_{i+1}$.
+:::
 :::
