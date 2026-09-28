@@ -18,15 +18,15 @@ audit:
 
 ::: {.problem}
 If $f(z)$ is analytic in the open disc
-\[
-\mathbb D=\{z:|z|<1\},
-\]
+$$
+\DD=\{z:|z|<1\},
+$$
 and
-\[
-|f(z)|<\frac1{1-|z|}\qquad(z\in\mathbb D),
-\]
+$$
+|f(z)|<\frac1{1-|z|}\qquad(z\in\DD),
+$$
 show that
-\[
+$$
 \left|\frac{f^{(n)}(0)}{n!}\right|\le (n+1)\left(1+\frac1n\right)^n<e(n+1).
-\]
+$$
 :::
