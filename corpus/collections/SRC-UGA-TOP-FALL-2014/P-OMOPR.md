@@ -35,13 +35,13 @@ Prove that every continuous map $f : \RP^2 \to S^1$ is homotopic to a constant.
 ::: {.solution}
 <1>1. The induced homomorphism
 \[
-f_*:\pi_1(\mathbb{RP}^2,x_0)\to\pi_1(S^1,f(x_0))
+f_*:\pi_1(\RP^2,x_0)\to\pi_1(S^1,f(x_0))
 \]
 is trivial.
 ::: {.proof}
 The fundamental groups are
 \[
-\pi_1(\mathbb{RP}^2,x_0)\cong\mathbb Z/2
+\pi_1(\RP^2,x_0)\cong\mathbb Z/2
 \qquad\text{and}\qquad
 \pi_1(S^1,f(x_0))\cong\mathbb Z.
 \]
@@ -70,11 +70,11 @@ p(\widetilde y_0)=f(x_0).
 \]
 The covering-space lifting criterion says that a based map
 \[
-f:(\mathbb{RP}^2,x_0)\to(S^1,f(x_0))
+f:(\RP^2,x_0)\to(S^1,f(x_0))
 \]
 lifts to $(\mathbb R,\widetilde y_0)$ if and only if
 \[
-f_*\bigl(\pi_1(\mathbb{RP}^2,x_0)\bigr)
+f_*\bigl(\pi_1(\RP^2,x_0)\bigr)
 \subseteq
 p_*\bigl(\pi_1(\mathbb R,\widetilde y_0)\bigr).
 \]
@@ -82,7 +82,7 @@ By <1>1 the left-hand side is $0$.
 Since $\mathbb R$ is simply connected, the right-hand side is also $0$.
 Thus the criterion applies and gives a continuous lift
 \[
-\widetilde f:\mathbb{RP}^2\to\mathbb R
+\widetilde f:\RP^2\to\mathbb R
 \]
 such that
 \[
@@ -104,7 +104,7 @@ Then $\widetilde H$ is a homotopy from $\widetilde f$ to the constant map $x\map
 ::: {.proof}
 Compose the homotopy in <1>3 with $p$:
 \[
-H=p\circ\widetilde H:\mathbb{RP}^2\times[0,1]\to S^1.
+H=p\circ\widetilde H:\RP^2\times[0,1]\to S^1.
 \]
 At $t=0$,
 \[
