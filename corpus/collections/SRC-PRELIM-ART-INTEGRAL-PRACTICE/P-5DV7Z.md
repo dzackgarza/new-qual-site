@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5DV7Z
 kind: problem
-title: Evaluate $\int\frac{x}{x^2+9}\,dx$
+title: $\int\frac{x}{x^2+9}\,dx$
 classification:
   areas:
   - prelim
@@ -28,8 +28,6 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the indefinite integral $\int \frac{x}{x^2+9} \, dx$.
-
 <1>1. Make the substitution $u = x^2 + 9$.
 Then $du = 2x \, dx \implies x \, dx = \frac{1}{2} \, du$.
 ::: {.proof}
