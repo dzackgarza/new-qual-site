@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WHHDI
 kind: problem
-title: Hungerford 4.4.9
+title: Naturality of the map $A\to A^{**}$ into the double dual
 classification:
   areas:
   - algebra
@@ -25,34 +25,24 @@ where $\theta_A, \theta_B$ are as in Theorem 4.12 and $f^*$ is the map induced o
 :::
 
 ::: {.solution}
-<1>1. Recall $\theta_A : A \to A^{**}$ is defined by $\theta_A(a)(g) = g(a)$ for $a \in A$, $g \in A^* = \operatorname{Hom}_R(A, R)$.
+For a left $R$-module $M$ write $M^*=\operatorname{Hom}_R(M,R)$, and let $\theta_M\colon M \to M^{**}$ be the canonical map, $\theta_M(m)(g) = g(m)$ for $m \in M$ and $g \in M^*$. Let $\overline f\colon B^* \to A^*$ be $\overline f(g) = g \circ f$, and let $f^{**}\colon A^{**} \to B^{**}$ be $f^{**}(\varphi) = \varphi \circ \overline f$; this is the map the problem calls $f^*$. The diagram asserts $f^{**} \circ \theta_A = \theta_B \circ f$.
+
+<1>1. For $a \in A$ and $g \in B^*$, $(f^{**} \circ \theta_A)(a)(g) = g(f(a))$.
+
 ::: {.proof}
-Theorem 4.12 (the canonical map into the double dual).
+By the definitions of $f^{**}$, $\overline f$, and $\theta_A$,
+$$(f^{**} \circ \theta_A)(a)(g) = \theta_A(a)(\overline f(g)) = \theta_A(a)(g \circ f) = g(f(a)).$$
 :::
 
-<1>2. The induced map $f^{**} : A^{**} \to B^{**}$ is defined by $f^{**}(\varphi) = \varphi \circ \overline f$ for $\varphi \in A^{**}$, where $\overline f(g) = g \circ f$ for $g \in B^*$.
+<1>2. For $a \in A$ and $g \in B^*$, $(\theta_B \circ f)(a)(g) = g(f(a))$.
+
 ::: {.proof}
-$\overline f : B^* \to A^*$ is precomposition with $f$, and $f^{**}$ is precomposition with $\overline f$.
+This is the definition of $\theta_B$ evaluated at $f(a)$.
 :::
 
-<1>3. For $a \in A$ and $g \in B^*$,
-$$(f^{**} \circ \theta_A)(a)(g) = \theta_A(a)(\overline f(g)) = \theta_A(a)(g \circ f) = (g \circ f)(a) = g(f(a)).$$
-::: {.proof}
-<1>1 and <1>2.
-:::
+<1>3. Q.E.D.
 
-<1>4. Also $(\theta_B \circ f)(a)(g) = \theta_B(f(a))(g) = g(f(a))$.
 ::: {.proof}
-<1>1 applied to $B$.
-:::
-
-<1>5. Hence $f^{**} \circ \theta_A = \theta_B \circ f$, so the diagram commutes.
-::: {.proof}
-<1>3 and <1>4 agree for every $a \in A$ and $g \in B^*$.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+By steps <1>1 and <1>2, the maps $f^{**} \circ \theta_A$ and $\theta_B \circ f$ agree on every $a\in A$ and every $g\in B^*$, so $f^{**} \circ \theta_A = \theta_B \circ f$.
 :::
 :::
