@@ -27,8 +27,8 @@ Hence every nonzero prime ideal in $\mathbb { Z }$ is maximal.
 
 The polynomial ring $\mathbb { Z } [ x ]$ in one variable x over the ring of integers Z is not a principal ideal domain.
 For instance, $\langle 2 , x \rangle$ is not a principal ideal; it strictly contains the ideal $\langle 2 \rangle$ , which is therefore not a maximal ideal.
-The ideal h2i is a prime ideal, because $\mathbb { Z } [ x ] / \langle 2 \rangle = \mathbb { F } _ { 2 } [ x ]$ is a polynomial ring over a field, and hence an integral domain.
-Hence h2i is a nonzero prime ideal in $\mathbb { Z } [ x ]$ which is not maximal.
+The ideal $\langle 2 \rangle$ is a prime ideal, because $\mathbb { Z } [ x ] / \langle 2 \rangle = \mathbb { F } _ { 2 } [ x ]$ is a polynomial ring over a field, and hence an integral domain.
+Hence $\langle 2 \rangle$ is a nonzero prime ideal in $\mathbb { Z } [ x ]$ which is not maximal.
 
 The polynomial ring $\mathbb { R } [ x ]$ in one variable x over the field R is a principal ideal domain.
 Hence every nonzero ideal has the form $\langle f ( x ) \rangle$ where $f ( x )$ is a nonzero polynomial with real coefficients.
@@ -37,5 +37,5 @@ In either case, the quotient $\mathbb { R } [ x ] / \langle f \rangle$ is a fiel
 Hence every nonzero prime ideal in $\mathbb { R } [ x ]$ is a maximal ideal.
 
 The polynomial ring $\mathbb { R } [ x , y ]$ in two variables $x , y$ over R has many nonzero prime ideals which are not maximal ideals.
-For instance, hxi is a prime ideal, but it is not maximal since it is contained in the ideal $\langle x , y \rangle$
+For instance, $\langle x \rangle$ is a prime ideal, but it is not maximal since it is contained in the ideal $\langle x , y \rangle$
 :::
