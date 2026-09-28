@@ -9,29 +9,24 @@ topics:
 
 # Genus
 
-Several notions of genus coexist, and the main task is to identify which one is being computed and how it behaves under singularities and normalization.
-
 [[D-G1AEH]]
 
-The three senses are arithmetic genus from the Hilbert polynomial, geometric genus from the normalization, and topological genus from the smooth model over $\CC$.
-They agree for a smooth curve and differ by a sum of local terms otherwise, which is the whole answer to what the geometric genus of a singular curve might be.
+The arithmetic genus is read from the Hilbert polynomial, the geometric genus is the genus of the normalization, and over $\CC$ the topological genus of the smooth model equals the geometric genus.
+For an integral projective curve $C$ over an algebraically closed field with normalization $\tilde C$, $p_a(C)=g(\tilde C)+\sum_{p\in C}\delta_p$, where $\delta_p=\dim_k\tilde\OO_p/\OO_{C,p}$ and $\tilde\OO_p$ is the integral closure of $\OO_{C,p}$; so $p_a(C)=g(\tilde C)$ exactly when $C$ is smooth.
 
-Neither genus depends on the embedding; the degree does.
-The twisted cubic and a line in $\PP^3$ make the contrast concrete.
+Both genera are invariants of the curve, while the degree depends on the embedding: the twisted cubic and a line in $\PP^3$ are both isomorphic to $\PP^1$, of genus $0$, and have degrees $3$ and $1$.
 
-## Computing one
+## Computing the genus
 
-Three standard computations are:
+- **Plane curves.** A plane curve of degree $d$ has $p_a=\binom{d-1}{2}$, and its geometric genus is $p_a-\sum_p\delta_p$.
 
-- **plane curve of degree $d$**: $p_a = \binom{d-1}{2}$, then subtract $\delta_p$ at each singularity;
+- **Hilbert polynomial.** A curve $C\subseteq\PP^n$ of degree $d$ has Hilbert polynomial $P_C(m)=dm+1-p_a$.
 
-- **Hilbert polynomial**: read the constant term, which is $1 - p_a$;
-
-- **a map to a known curve**: Riemann--Hurwitz.
+- **Maps to a known curve.** A finite separable morphism $f\colon X\to Y$ of smooth projective curves satisfies Riemann--Hurwitz.
 
 [[T-LKT0U]]
 
-The Riemann--Hurwitz proof is built from the cotangent sequence, the map on differentials, and the resulting ramification divisor.
+The ramification divisor $R$ is the divisor of zeros of $f^*\colon f^*\Omega_Y\to\Omega_X$, so $K_X\sim f^*K_Y+R$; taking degrees gives the Riemann--Hurwitz formula.
 
 ## The small genera
 
