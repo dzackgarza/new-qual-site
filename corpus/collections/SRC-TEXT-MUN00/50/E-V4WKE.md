@@ -29,9 +29,9 @@ Show that the long line ([[E-PQHZN]]) is locally 1-euclidean and satisfies (iv) 
 :::
 
 ::: {.solution}
-The long line \(L\) was constructed in Exercise [[E-PQHZN]]. That exercise proves that every point of \(L\) has a neighborhood homeomorphic to an open interval in \(\mathbb R\), so \(L\) is locally \(1\)-euclidean.
+Let \(L\) be the long line of [[E-PQHZN]]. By [[E-PQHZN]], every point of \(L\) has a neighborhood homeomorphic to an open interval in \(\mathbb R\), so \(L\) is locally \(1\)-euclidean.
 
-As a linearly ordered space in its order topology, \(L\) is a linear continuum; every linear continuum is normal. Hence \(L\) satisfies condition (iv).
+As a linearly ordered space in its order topology, \(L\) is a linear continuum; every linear continuum is normal. Hence \(L\) satisfies condition (iv) of [[E-OYPV7]].
 
-It is not metrizable. If it were metrizable, then because it is connected and locally compact, the argument of Exercise [[E-LI4O5]] would give a countable basis on its unique component. But Exercise [[E-PQHZN]] proves that the long line has no countable basis (indeed no embedding into any \(\mathbb R^n\)). Therefore condition (iii) fails. Thus \(L\) satisfies (iv) but not (iii).
+It is not metrizable. If it were metrizable, then because it is connected and locally compact, [[E-LI4O5]] would give a countable basis on its unique component. But by [[E-PQHZN]] the long line has no countable basis (indeed no embedding into any \(\mathbb R^n\)). Therefore condition (iii) fails. Thus \(L\) satisfies (iv) but not (iii).
 :::
