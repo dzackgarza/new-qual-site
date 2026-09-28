@@ -68,7 +68,8 @@ If $IB=JB$, the right-hand side is zero. Faithful flatness detects zero
 modules, so $J/I=0$. Hence $I=J$.
 :::
 
-<1>3. Equivalently, faithful flatness gives contraction of extended ideals:
+<1>3. If $B$ is faithfully flat over $A$, then every ideal is contracted from
+its extension:
 \[
 IB\cap A=I
 \]
