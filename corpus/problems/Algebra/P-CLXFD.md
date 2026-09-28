@@ -23,33 +23,27 @@ What are the Galois groups of irreducible cubics?
 :::
 
 ::: {.solution}
-<1>1. Let $f \in F[x]$ be irreducible of degree $3$.
+Let $F$ be a field of characteristic not $2$, let $f\in F[x]$ be an irreducible separable cubic with roots $r_1,r_2,r_3$ in a splitting field $L$, and let $G=\Gal(L/F)$ act on the roots.
+Put $\delta=(r_1-r_2)(r_1-r_3)(r_2-r_3)$ and $\Delta(f)=\delta^2\in F$.
+
+<1>1. $G$ is a transitive subgroup of $S_3$, so $G=A_3\cong\ZZ/3\ZZ$ or $G=S_3$.
+
 ::: {.proof}
-setup.
+$G$ acts faithfully on the roots, and transitively since $f$ is irreducible.
+A transitive subgroup of $S_3$ has order divisible by $3$ by orbit-stabilizer, so it is $A_3$ or $S_3$.
 :::
 
-<1>2. The Galois group $G = \operatorname{Gal}(f)$ embeds as a transitive subgroup of $S_3$.
+<1>2. $G\le A_3$ if and only if $\Delta(f)$ is a square in $F$.
+
 ::: {.proof}
-$G$ acts faithfully and transitively on the three roots (irreducibility).
+Each $\sigma\in G$ satisfies $\sigma(\delta)=\operatorname{sgn}(\sigma)\delta$.
+Since $f$ is separable, $\delta\neq0$, and since $\operatorname{char}F\neq2$, $-\delta\neq\delta$.
+So $\delta$ is fixed by $G$, that is $\delta\in F$, exactly when $G$ consists of even permutations; and $\Delta(f)$ is a square in $F$ exactly when $\delta\in F$.
 :::
 
-<1>3. The transitive subgroups of $S_3$ are $A_3 \cong \mathbb{Z}/3$ and $S_3$ itself.
-::: {.proof}
-classification ($|G|$ is divisible by $3$, and the only transitive subgroups of $S_3$ are $A_3$ and $S_3$).
-:::
+<1>3. Q.E.D.
 
-<1>4. $G \cong A_3$ iff the discriminant $\Delta(f)$ is a square in $F$; otherwise $G \cong S_3$.
 ::: {.proof}
-$G \le A_3$ iff $G$ consists of even permutations iff $\sqrt{\Delta} \in F$.
-:::
-
-<1>5. Hence the Galois group of an irreducible cubic is $A_3$ (cyclic of order $3$) when the discriminant is a square in $F$, and $S_3$ (of order $6$) otherwise.
-::: {.proof}
-<1>3 and <1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>5.
+By steps <1>1 and <1>2, $G\cong\ZZ/3\ZZ$ when $\Delta(f)$ is a square in $F$, and $G\cong S_3$ otherwise.
 :::
 :::
