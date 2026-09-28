@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-2
 kind: problem
-title: 'SS 2.2: $\int_0^\infty\frac{\sin x}{x}\,dx$'
+title: $\int_0^\infty\frac{\sin x}{x}\,dx=\frac\pi2$
 classification:
   areas:
   - complex-analysis
