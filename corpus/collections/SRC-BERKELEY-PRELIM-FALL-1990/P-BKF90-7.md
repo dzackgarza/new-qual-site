@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF90-7
 kind: problem
-title: A maximal proper normal subgroup has prime finite index
+title: A normal maximal subgroup has finite prime index
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
