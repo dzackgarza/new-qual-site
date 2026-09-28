@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-X7XZX
 kind: theorem
 title: Fubini--Tonelli theorem
-slogan: 'For measurable functions on $\sigma$-finite products, finite absolute iterated mass makes both orders of integration agree.'
+slogan: 'On a product of $\sigma$-finite spaces, if one iterated integral of $\abs{f}$ is finite, then $f\in L^1$ and both iterated integrals of $f$ equal $\int f$.'
 classification:
   areas:
   - real-analysis
