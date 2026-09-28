@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK96S-11
 kind: problem
-title: If a function and its derivative both converge at infinity, must the derivative limit vanish?
+title: If $\varphi$ and $\varphi'$ both have limits at $\infty$, then $\varphi'\to0$
 classification:
   areas:
   - prelim
