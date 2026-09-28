@@ -28,14 +28,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $( X , d _ { X } )$ and $( Y , d _ { Y } )$ be metric spaces.
-Suppose that a map $\pi : X \to Y$ is a submetry; this means that for every $x \in X$ and any $r > 0$ , the image of the closed r-ball around x is the closed r-ball around $\pi ( x )$
+Let $(X,d_X)$ and $(Y,d_Y)$ be metric spaces.
+Suppose that a map $\pi\colon X\to Y$ is a submetry; this means that for every $x\in X$ and any $r>0$, the image of the closed $r$-ball around $x$ is the closed $r$-ball around $\pi(x)$.
 
-(a) Show that π is surjective if X is nonempty.
+(a) Show that $\pi$ is surjective if $X$ is nonempty.
 
-(b) Show that π is continuous.
+(b) Show that $\pi$ is continuous.
 
-(c) Show that π is open (meaning that the image of any open subset is open).
+(c) Show that $\pi$ is open (meaning that the image of any open subset is open).
 :::
 
 ::: {.solution}
