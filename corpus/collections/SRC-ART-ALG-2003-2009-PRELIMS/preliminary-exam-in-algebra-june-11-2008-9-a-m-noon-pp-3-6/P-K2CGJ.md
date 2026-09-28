@@ -31,97 +31,45 @@ c. If $H$ is a subgroup of index 2 in $G$ and $x \in H$, prove that either $|x^H
 :::
 
 ::: {.solution}
-**Part (a).**
+<1>1. In part (a), $|x^G|=[G:Z_G(x)]$.
 
-<1>1. Consider the group action of $G$ on itself by conjugation: $(g, y) \mapsto gyg^{-1}$.
 ::: {.proof}
-$(gh)y(gh)^{-1} = g(hyh^{-1})g^{-1}$ and $1y1^{-1} = y$.
-:::
-
-<1>2. The orbit of $x$ is the conjugacy class $x^G = \{gxg^{-1} : g \in G\}$, and the stabilizer of $x$ is the centralizer $Z_G(x) = \{g \in G : gxg^{-1} = x\}$.
-::: {.proof}
-definitions of orbit and stabilizer for the conjugation action.
+The map $\Phi\colon G/Z_G(x)\to x^G$, $gZ_G(x)\mapsto gxg^{-1}$, is well defined and injective, because
+$$
+g_1Z_G(x)=g_2Z_G(x)\iff g_2^{-1}g_1\in Z_G(x)\iff (g_2^{-1}g_1)x(g_2^{-1}g_1)^{-1}=x\iff g_1xg_1^{-1}=g_2xg_2^{-1}.
+$$
+It is surjective by the definition of $x^G$. Hence $|x^G|=\abs{G/Z_G(x)}=[G:Z_G(x)]$.
 :::
 
-<1>3. By the Orbit–Stabilizer Theorem, the map $\Phi: G/Z_G(x) \to x^G$ given by $g Z_G(x) \mapsto gxg^{-1}$ is a well-defined bijection.
+<1>2. In part (b), $Z_H(x)=H\cap Z_G(x)$.
+
 ::: {.proof}
-$g_1 Z_G(x) = g_2 Z_G(x) \iff g_2^{-1} g_1 \in Z_G(x) \iff (g_2^{-1} g_1)x(g_2^{-1} g_1)^{-1} = x \iff g_1 x g_1^{-1} = g_2 x g_2^{-1}$.
+$Z_H(x)=\{h\in H: hxh^{-1}=x\}=\{g\in G: g\in H\text{ and }gxg^{-1}=x\}=H\cap Z_G(x)$.
 :::
 
-<1>4. Therefore $|x^G| = |G / Z_G(x)| = [G : Z_G(x)]$.
+Assume for part (c) that $[G:H]=2$ and $x\in H$.
+
+<1>3. $2\,|x^H|=|x^G|\,[Z_G(x):Z_H(x)]$.
+
 ::: {.proof}
-<1>3.
+By step <1>1 applied in $G$ and in $H$, $|x^G|=[G:Z_G(x)]$ and $|x^H|=[H:Z_H(x)]$.
+Since $Z_H(x)\le H\le G$ and $Z_H(x)\le Z_G(x)\le G$ by step <1>2, multiplicativity of indices gives
+$$
+[G:Z_H(x)]=[G:H]\,[H:Z_H(x)]=2\,|x^H|,\qquad
+[G:Z_H(x)]=[G:Z_G(x)]\,[Z_G(x):Z_H(x)]=|x^G|\,[Z_G(x):Z_H(x)].
+$$
 :::
 
-**Part (b).**
+<1>4. $[Z_G(x):Z_H(x)]\in\{1,2\}$.
 
-<1>5. For $H \le G$ and $x \in H$:
-\[
-Z_H(x) = \{h \in H : hxh^{-1} = x\} = \{g \in G : g \in H \text{ and } gxg^{-1} = x\} = H \cap Z_G(x).
-\]
 ::: {.proof}
-intersection of subsets in $G$.
+A subgroup of index $2$ is normal, so $HZ_G(x)$ is a subgroup of $G$ containing $H$.
+By step <1>2 and the second isomorphism theorem, $[Z_G(x):Z_H(x)]=[Z_G(x):H\cap Z_G(x)]=[HZ_G(x):H]$, which divides $[G:H]=2$.
 :::
 
-**Part (c).**
+<1>5. Q.E.D.
 
-<1>6. Assume $[G : H] = 2$ and $x \in H$.
 ::: {.proof}
-hypothesis.
+By steps <1>3 and <1>4, if $[Z_G(x):Z_H(x)]=2$ then $|x^H|=|x^G|$, and if $[Z_G(x):Z_H(x)]=1$ then $|x^H|=\tfrac12|x^G|$. Steps <1>1 and <1>2 answer parts (a) and (b).
 :::
-
-<1>7. Relate the indices of centralizers: <2>1. By (a), $|x^G| = [G : Z_G(x)]$ and $|x^H| = [H : Z_H(x)]$.
-::: {.proof}
-(a) applied to $G$ and $H$.
-:::
-<2>2. By the tower law for subgroup indices:
-\[
-[G : Z_H(x)] = [G : H][H : Z_H(x)] = 2 |x^H|.
-\]
-::: {.proof}
-multiplicativity of index and $[G : H] = 2$.
-:::
-<2>3. On the other hand:
-\[
-[G : Z_H(x)] = [G : Z_G(x)][Z_G(x) : Z_H(x)] = |x^G| [Z_G(x) : Z_H(x)].
-\]
-::: {.proof}
-$Z_H(x) = H \cap Z_G(x) \le Z_G(x) \le G$.
-:::
-<2>4. Equating the two expressions for $[G : Z_H(x)]$ yields:
-\[
-2 |x^H| = |x^G| [Z_G(x) : Z_H(x)].
-\]
-::: {.proof}
-<2>2 and <2>3.
-:::
-
-<1>8. Determine the possible values of $[Z_G(x) : Z_H(x)]$: <2>1. By the Second Isomorphism Theorem / product formula:
-\[
-[Z_G(x) : Z_H(x)] = [Z_G(x) : H \cap Z_G(x)] = [H Z_G(x) : H].
-\]
-::: {.proof}
-$H \cap Z_G(x) = Z_H(x)$ from (b). <2>2. Since $H \le H Z_G(x) \le G$ and $[G : H] = 2$, the index $[H Z_G(x) : H]$ divides $[G : H] = 2$.
-:::
-::: {.proof}
-tower law $[G : H] = [G : H Z_G(x)][H Z_G(x) : H]$.
-:::
-<2>3. Thus $[Z_G(x) : Z_H(x)] \in \{1, 2\}$.
-::: {.proof}
-the only divisors of 2 are 1 and 2.
-:::
-
-<1>9. Evaluate $|x^H|$ for both cases: <2>1. **Case 1:** If $[Z_G(x) : Z_H(x)] = 2$ (equivalently $Z_G(x) \not\subseteq H$), then $2 |x^H| = 2 |x^G| \implies |x^H| = |x^G|$.
-::: {.proof}
-<1>7 and <1>8. <2>2. **Case 2:** If $[Z_G(x) : Z_H(x)] = 1$ (equivalently $Z_G(x) \subseteq H$), then $2 |x^H| = |x^G| \implies |x^H| = \frac{1}{2} |x^G|$.
-:::
-::: {.proof}
-<1>7 and <1>8.
-:::
-
-<1>10. Conclusion: Either $|x^H| = |x^G|$ or $|x^H| = \frac{1}{2}|x^G|$.
-::: {.proof}
-<1>4, <1>5, and <1>9.
-:::
-Q.E.D.
 :::
