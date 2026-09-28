@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK97S-17
 kind: problem
-title: Order of $GL_2(\mathbb Z_{p^n})$
+title: Order of $GL_2(\ZZ/p^n\ZZ)$
 classification:
   areas:
   - prelim
