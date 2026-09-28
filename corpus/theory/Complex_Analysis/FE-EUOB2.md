@@ -4,7 +4,7 @@ id: FE-EUOB2
 kind: example
 title: A power series of radius $1$ diverging at every point of $S^1$
 prompts:
-- Give an analytic function of convergence radius 1 that converges nowhere on $S^1$.
+- Give a power series with radius of convergence $1$ that diverges at every point of $S^1$.
 classification:
   areas:
   - complex-analysis
