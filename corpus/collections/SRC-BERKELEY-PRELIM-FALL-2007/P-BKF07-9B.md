@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF07-9B
 kind: problem
-title: A holomorphic self-boundary map has a fixed point in the disk
+title: A holomorphic map with $\abs{f}\le1$ on the unit circle has a fixed point in the closed disk
 classification:
   areas:
   - prelim
