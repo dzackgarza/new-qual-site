@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BXDQY
 kind: problem
-title: Entire $f,g$ with $\abs f\le\abs g$ satisfy $f=cg$
+title: Entire functions $f,g$ with $\abs f\le\abs g$
 classification:
   areas:
   - complex-analysis
