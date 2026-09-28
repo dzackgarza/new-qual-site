@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK89S-12
 kind: problem
-title: Evaluate $\int_{|z|=2}(2z-1)e^{z/(z-1)}\,dz$
+title: The contour integral $\int_{|z|=2}(2z-1)e^{z/(z-1)}\,dz$
 classification:
   areas: [prelim]
   topics: []
