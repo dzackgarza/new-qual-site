@@ -35,12 +35,6 @@ b. Show that a non-abelian simple group $G$ has no proper subgroup of index $\le
 (You may assume without proof that the alternating group $A_5$ is the smallest non-abelian simple group.)
 :::
 
-::: {.remark}
-The proper-subgroup qualification in part (b) is necessary:
-every group is a subgroup of itself of index $1$. Thus
-the nontrivial assertion excludes indices $2,3,4$.
-:::
-
 ::: {.solution}
 <1>1. For part (a), the Sylow count satisfies
 $$
@@ -91,10 +85,8 @@ coset $H$ to the different coset $gH$. Simplicity
 therefore makes the kernel trivial.
 
 Thus $G$ embeds in $S_n$, so it is finite and
-$|G|\leq n!\leq24$. The permitted fact that $A_5$
-is the smallest nonabelian simple group gives instead
-$|G|\geq|A_5|=5!/2=60$, a contradiction. The argument
-does not assume beforehand that the simple group is
-finite; finiteness follows from the faithful action.
+$|G|\leq n!\leq24$. Since $A_5$ is the smallest
+nonabelian simple group, $|G|\geq|A_5|=5!/2=60$,
+a contradiction.
 :::
 :::
