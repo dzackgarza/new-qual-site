@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Show that if $V$ is a real vector space with a positive definite symmetric bilinear form $\langle\cdot,\cdot\rangle$ and $W\subset V$ is a linear subspace, then
-\[
+$$
 W^\perp=((W^\perp)^\perp)^\perp.
-\]
+$$
 Give an example such that $W\ne (W^\perp)^\perp$.
 :::
 
