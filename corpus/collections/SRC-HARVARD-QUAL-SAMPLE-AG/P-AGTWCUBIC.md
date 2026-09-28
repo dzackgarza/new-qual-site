@@ -31,10 +31,6 @@ Is it the scheme-theoretic intersection of two surfaces?
 More generally, for a curve $Y \subseteq \AA^3$ with $Y \cong \AA^1$: is it a set-theoretic or scheme-theoretic intersection of two surfaces?
 :::
 
-::: {.remark}
-The examiner withdrew the final question, about curves $Y \cong \AA^1$ in $\AA^3$, after posing it.
-:::
-
 ::: {.solution}
 Let $C\subseteq\mathbb P^3$ be the projective closure of the affine twisted cubic.  In homogeneous coordinates $[x:y:z:w]$ it is parametrized by
 \[
@@ -197,11 +193,15 @@ Thus no plane contains $C$, a contradiction.
 
 <1>4. Equivalently, the pair $(F,G)$ from <1>2 cuts out a nonreduced scheme supported on $C$, rather than the twisted cubic scheme itself.
 ::: {.proof}
-Step <1>2 proves that the reduced closed subscheme underlying $V(F,G)$ is $C$.  If $V(F,G)$ itself were the twisted cubic scheme, then $C$ would be the scheme-theoretic complete intersection of a quadric and a cubic, contradicting <1>3.  Thus the two equations have the correct support but a thicker scheme structure along that support.
+Step <1>2 proves that the reduced closed subscheme underlying $V(F,G)$ is $C$.  If $V(F,G)$ itself were the twisted cubic scheme, then $C$ would be the scheme-theoretic complete intersection of a quadric and a cubic, contradicting <1>3.  Thus $V(F,G)$ has underlying set $C$ and a nonreduced scheme structure along $C$.
 :::
 
 <1>5. Q.E.D.
 ::: {.proof}
 Step <1>2 proves the set-theoretic intersection statement, and step <1>3 proves the failure of scheme-theoretic complete intersection.
 :::
+:::
+
+::: {.remark}
+The examiner withdrew the final question, about curves $Y \cong \AA^1$ in $\AA^3$, after posing it.
 :::
