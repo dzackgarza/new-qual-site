@@ -52,7 +52,7 @@ After removing consecutive repetitions, such a word alternates. Moreover
 \[
 kiki=ki,\qquad ikik=ik.
 \]
-For example, if $U=iA$ is open, then
+For the first identity, the set $U=iA$ is open, so $U=iU\subseteq ikU$ and
 \[
 U\subseteq ikU\subseteq kU,
 \]
