@@ -33,9 +33,7 @@ Let $K$ and $F$ be fields, with $K$ a finite-dimensional algebraic extension of 
 :::
 
 ::: {.solution}
-<1>1. Definition for part (a).
-
-The finite extension $K/F$ is **Galois** if it is both normal and
+(a) The finite extension $K/F$ is \dfn{Galois} if it is both normal and
 separable. Normality means that every irreducible polynomial in
 $F[x]$ with a root in $K$ splits into linear factors in $K[x]$.
 Separability means that the minimal polynomial over $F$ of every
@@ -48,13 +46,11 @@ $$
 $$
 with composition as the group operation.
 
-<1>2. The fundamental theorem for part (b).
-
-Assume now that $K/F$ is finite Galois, and set
+(b) Let $K/F$ be a finite Galois extension with
 $G=\operatorname{Gal}(K/F)$. Then the following statements hold
 [@DF04].
 
-<2>1. There is an inclusion-reversing bijection between intermediate
+(i) There is an inclusion-reversing bijection between intermediate
 fields $F\subseteq E\subseteq K$ and subgroups $H\leq G$, given by
 $$
 E\longmapsto\operatorname{Gal}(K/E),\qquad
@@ -74,15 +70,15 @@ E_1\subseteq E_2
 \operatorname{Gal}(K/E_2)\subseteq\operatorname{Gal}(K/E_1).
 $$
 
-<2>2. For every intermediate field $E$, the extension $K/E$ is
-Galois. With $H=\operatorname{Gal}(K/E)$, the degree formulas are
+(ii) For every intermediate field $E$, the extension $K/E$ is
+Galois. With $H=\operatorname{Gal}(K/E)$,
 $$
 [K:E]=|H|,\qquad [E:F]=[G:H],\qquad [K:F]=|G|.
 $$
 
-<2>3. The extension $E/F$ is Galois if and only if
+(iii) The extension $E/F$ is Galois if and only if
 $H=\operatorname{Gal}(K/E)$ is normal in $G$.
-When these equivalent conditions hold, restriction to $E$ is a
+In that case restriction to $E$ is a
 surjective homomorphism
 $$
 G\longrightarrow\operatorname{Gal}(E/F)
