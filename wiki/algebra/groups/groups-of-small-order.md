@@ -12,7 +12,7 @@ topics:
 
 Every group of prime order $p$ is cyclic, and every group of order $p^2$ is abelian, hence isomorphic to $\ZZ/p^2$ or $\ZZ/p\times\ZZ/p$.
 For primes $p<q$, a group of order $pq$ has a normal Sylow $q$-subgroup $Q\cong\ZZ/q$, and is isomorphic to $\ZZ/q\semidirect_\psi\ZZ/p$ for a homomorphism $\psi\colon\ZZ/p\to\Aut(\ZZ/q)\cong(\ZZ/q)^\times$; a nontrivial $\psi$ exists if and only if $p\divides q-1$.
-For orders with more prime factors, the lemmas in this section produce normal subgroups: [[L-6QBOJ|Frattini's argument]] factors $G$ as $N_G(P)\,N$ for a normal subgroup $N$ and a Sylow subgroup $P$ of $N$, every finite [[D-FIB7S|$p$-group]] is [[D-DFIDP|solvable]], and a group of order $pqr$ for distinct primes $p<q<r$ is solvable.
+For orders with more prime factors, [[L-6QBOJ|Frattini's argument]] factors $G$ as $N_G(P)\,N$ for a normal subgroup $N$ and a Sylow subgroup $P$ of $N$, every finite [[D-FIB7S|$p$-group]] is [[D-DFIDP|solvable]], and a group of order $pqr$ for distinct primes $p<q<r$ is solvable.
 
 [[PR-LFGHA]]
 
@@ -30,7 +30,6 @@ For orders with more prime factors, the lemmas in this section produce normal su
 
 ## The small orders
 
-Each card lists the groups of one order up to isomorphism.
 The abelian groups of each order are given by the structure theorem for finite abelian groups ([[PR-2JG3F]]).
 
 [[FF-VAKLJ]]
