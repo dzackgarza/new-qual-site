@@ -28,7 +28,7 @@ $$
 g ( x ) = \sum _ { n = 0 } ^ { \infty } \left( \sum _ { k = 0 } ^ { n } a _ { k } \right) x ^ { n } .
 $$
 
-Note: more generally, if two power series converge in the same interval, their product will also converge on that interval and you can multiply them using the Cauchy formula for the product of infinite sums:
+More generally, if two power series converge on an open interval $(-r,r)$, then on that interval their product is given by the Cauchy product formula:
 
 $$
 \left( \sum _ { n = 0 } ^ { \infty } c _ { n } x ^ { n } \right) \left( \sum _ { n = 0 } ^ { \infty } d _ { n } x ^ { n } \right) = \sum _ { n = 0 } ^ { \infty } \left( \sum _ { k = 0 } ^ { n } c _ { k } d _ { n - k } \right) x ^ { n } .
