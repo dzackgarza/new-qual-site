@@ -36,8 +36,7 @@ Now form the upper central series
 1=Z_0(G)\le Z_1(G)\le Z_2(G)\le\cdots,
 \qquad Z_{i+1}(G)/Z_i(G)=Z(G/Z_i(G)).
 \]
-If $Z_i(G)
-e G$, then $G/Z_i(G)$ is a nontrivial finite $p$-group, so its center is nontrivial. Hence
+If $Z_i(G)\ne G$, then $G/Z_i(G)$ is a nontrivial finite $p$-group, so its center is nontrivial. Hence
 \[
 Z_i(G)<Z_{i+1}(G).
 \]
