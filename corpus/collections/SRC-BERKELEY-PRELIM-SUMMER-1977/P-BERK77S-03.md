@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-03
 kind: problem
-title: Find a rational polynomial satisfied by $\sqrt3+\sqrt5$
+title: A polynomial in $\QQ[x]$ with root $\sqrt3+\sqrt5$
 classification:
   areas:
   - prelim
