@@ -28,36 +28,35 @@ B(z, w) = {\Gamma(z) \Gamma(w) \over \Gamma(z+w)}
 :::
 
 ::: {.solution}
-**Goal:** Prove the identity $B(z, w) = \frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}$ for $\operatorname{Re}(z) > 0$ and $\operatorname{Re}(w) > 0$ using Laplace transforms and convolution.
+Let $\operatorname{Re}(z) > 0$ and $\operatorname{Re}(w) > 0$, let $s>0$, and define $f(t) = t^{z-1}$ and $g(t) = t^{w-1}$ for $t > 0$. Recall $B(z, w) = \int_0^1 u^{z-1} (1 - u)^{w-1}\,du$.
 
-<1>1. Laplace transforms of power functions on $[0, \infty)$:
-    *Proof:*
-    <2>1. For $\operatorname{Re}(z) > 0$ and $s > 0$, define $f(t) = t^{z-1}$ for $t > 0$.
-    <2>2. The Laplace transform of $f$ is
-    $$\mathcal{L}\{f\}(s) = \int_0^\infty t^{z-1} e^{-st}\,dt.$$
-    <2>3. Substituting $u = st$ (so $t = u/s$ and $dt = du/s$):
-    $$\mathcal{L}\{f\}(s) = \int_0^\infty \left(\frac{u}{s}\right)^{z-1} e^{-u} \frac{du}{s} = \frac{1}{s^z} \int_0^\infty u^{z-1} e^{-u}\,du = \frac{\Gamma(z)}{s^z}.$$
-    <2>4. Similarly, for $g(t) = t^{w-1}$ with $\operatorname{Re}(w) > 0$:
-    $$\mathcal{L}\{g\}(s) = \frac{\Gamma(w)}{s^w}.$$
+<1>1. $\mathcal{L}\{f\}(s) = \frac{\Gamma(z)}{s^z}$ and $\mathcal{L}\{g\}(s) = \frac{\Gamma(w)}{s^w}$.
 
-<1>2. Convolution of $f$ and $g$:
-    *Proof:*
-    <2>1. The convolution $(f * g)(x)$ for $x > 0$ is defined by
-    $$(f * g)(x) = \int_0^x f(t) g(x - t)\,dt = \int_0^x t^{z-1} (x - t)^{w-1}\,dt.$$
-    <2>2. Make the substitution $t = xu$, so $dt = x\,du$, where $u$ ranges from $0$ to $1$:
-    $$(f * g)(x) = \int_0^1 (xu)^{z-1} (x - xu)^{w-1} x\,du = x^{z-1+w-1+1} \int_0^1 u^{z-1} (1 - u)^{w-1}\,du.$$
-    <2>3. By definition of the Beta integral $B(z, w) = \int_0^1 u^{z-1} (1 - u)^{w-1}\,du$:
-    $$(f * g)(x) = x^{z+w-1} B(z, w).$$
+::: {.proof}
+Substituting $u = st$, so $t = u/s$ and $dt = du/s$,
+$$\mathcal{L}\{f\}(s) = \int_0^\infty t^{z-1} e^{-st}\,dt = \int_0^\infty \left(\frac{u}{s}\right)^{z-1} e^{-u} \frac{du}{s} = \frac{1}{s^z} \int_0^\infty u^{z-1} e^{-u}\,du = \frac{\Gamma(z)}{s^z}.$$
+The same computation with $w$ in place of $z$ gives $\mathcal{L}\{g\}$.
+:::
 
-<1>3. Laplace transform of the convolution:
-    *Proof:*
-    <2>1. Taking the Laplace transform of $(f * g)(x) = B(z, w) x^{z+w-1}$:
-    $$\mathcal{L}\{f * g\}(s) = B(z, w) \int_0^\infty x^{z+w-1} e^{-sx}\,dx = B(z, w) \frac{\Gamma(z+w)}{s^{z+w}}.$$
-    <2>2. By the Convolution Theorem for Laplace transforms:
-    $$\mathcal{L}\{f * g\}(s) = \mathcal{L}\{f\}(s) \cdot \mathcal{L}\{g\}(s) = \frac{\Gamma(z)}{s^z} \cdot \frac{\Gamma(w)}{s^w} = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}}.$$
+<1>2. $(f * g)(x) = x^{z+w-1} B(z, w)$ for $x > 0$.
 
-<1>4. Conclusion:
-    *Proof:*
-    Equating the two expressions from <1>3 gives
-    $$B(z, w) \frac{\Gamma(z+w)}{s^{z+w}} = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}} \implies B(z, w) = \frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}.$$
+::: {.proof}
+Substituting $t = xu$, so $dt = x\,du$,
+$$(f * g)(x) = \int_0^x t^{z-1} (x - t)^{w-1}\,dt = \int_0^1 (xu)^{z-1} (x - xu)^{w-1} x\,du = x^{z+w-1} \int_0^1 u^{z-1} (1 - u)^{w-1}\,du.$$
+:::
+
+<1>3. $B(z, w) \frac{\Gamma(z+w)}{s^{z+w}} = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}}$.
+
+::: {.proof}
+By step <1>2 and step <1>1 with $z+w$ in place of $z$,
+$$\mathcal{L}\{f * g\}(s) = B(z, w) \int_0^\infty x^{z+w-1} e^{-sx}\,dx = B(z, w) \frac{\Gamma(z+w)}{s^{z+w}}.$$
+By the convolution theorem for Laplace transforms and step <1>1,
+$$\mathcal{L}\{f * g\}(s) = \mathcal{L}\{f\}(s) \cdot \mathcal{L}\{g\}(s) = \frac{\Gamma(z)\Gamma(w)}{s^{z+w}}.$$
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Multiply step <1>3 by $s^{z+w}$ and divide by $\Gamma(z+w)$, which has no zeros.
+:::
 :::
