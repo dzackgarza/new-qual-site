@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARTALG-AL04-5
 kind: problem
-title: Euclidean domains and failures of the converse factorization implications
+title: A Euclidean domain, a UFD that is not a PID, and a domain that is not a UFD
 classification:
   areas:
   - algebra
