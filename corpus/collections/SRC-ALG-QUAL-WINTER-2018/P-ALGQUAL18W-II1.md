@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGQUAL18W-II1
 kind: problem
-title: Large proper subgroups of the symmetric groups
+title: Proper subgroups of $S_n$ of order greater than $(n-1)!$
 classification: {areas: [algebra], topics: []}
 relations: []
 review: draft
