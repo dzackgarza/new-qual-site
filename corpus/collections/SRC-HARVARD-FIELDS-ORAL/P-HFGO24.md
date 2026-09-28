@@ -57,7 +57,7 @@ namely $\varphi(8)=4$.
 \]
 and every such choice occurs.
 ::: {.proof}
-The conjugates of the primitive eighth root $\zeta_8$ over $\mathbb Q$ are exactly the primitive eighth roots $\zeta_8^a$ with $\gcd(a,8)=1$. Since $K=\mathbb Q(\zeta_8)$, an automorphism is determined by the image of $\zeta_8$, and the standard cyclotomic automorphisms realize all four choices.
+The conjugates of the primitive eighth root $\zeta_8$ over $\mathbb Q$ are exactly the primitive eighth roots $\zeta_8^a$ with $\gcd(a,8)=1$. Since $K=\mathbb Q(\zeta_8)$, an automorphism is determined by the image of $\zeta_8$. The minimal polynomial $\Phi_8(x)=x^4+1$ of $\zeta_8$ has these four roots, and $K/\mathbb Q$ is Galois, so each root $\zeta_8^a$ is the image of $\zeta_8$ under some automorphism.
 :::
 
 <1>4. Hence
