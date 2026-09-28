@@ -58,7 +58,7 @@ For Lebesgue measure on $\RR^d$ and $1\leq p<\infty$, continuous functions with 
 
 ## Density and duality arguments
 
-An identity between quantities that depend continuously on $f\in L^p$ holds on $L^p$ once it holds on a dense subclass, such as $C_c(\RR^d)$.
+If $\Phi,\Psi\colon L^p\to Y$ are continuous maps into a metric space $Y$ and $\Phi=\Psi$ on a dense subset of $L^p$, such as $C_c(\RR^d)$ for $1\leq p<\infty$, then $\Phi=\Psi$ on $L^p$.
 For $1\leq p<\infty$ and $f\in L^p$, if $\int fg=0$ for every $g$ in a dense subset of $L^q$, then $f=0$ almost everywhere.
 
 [[E-IAQ6D]]
