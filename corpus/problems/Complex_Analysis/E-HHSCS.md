@@ -25,7 +25,7 @@ I\da \int_0^\infty {\log(x) \over 1+x^a}\dx
 :::
 
 ::: {.solution}
-For the usual reasons, integrals along semicircles of radius $R$ and $\eps$ go to zero, so noting the poles at $\omega_a \da e^{i\pi\over a}$, take an indented sector:^[Sector monodromy.]
+Assume $a>1$, so that the integral converges. The pole of $f(z)\da{\log(z)\over1+z^a}$ nearest the positive axis is $\omega_a \da e^{i\pi\over a}$. Take the sector $0\le\arg z\le 2\pi/a$ indented at $0$, which contains only this pole. By the ML estimate, the integrals over its arcs of radius $R$ and $\eps$ are $O\qty{R\log R/R^a}$ and $O\qty{\eps\abs{\log\eps}}$, so both tend to zero:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-25-35.png)
 
@@ -56,7 +56,7 @@ The contributions from the contours:
 \[
 \qty{ \int_{\gamma_1} + \int_{\gamma_2}} g(z) \to (1-e^{2\pi i })I' = -2i\sin\qty{\pi\over a}e^{i\pi\over a}
 ,\]
-using the exponential balancing trick.
+using $1-e^{2i\theta}=-2i\sin(\theta)e^{i\theta}$.
 
 Computing the residue:
 \[
