@@ -38,5 +38,5 @@ For $S$ generated in degree $1$ over a Noetherian ring $S_0$, every quasicoheren
 ::: {.remark}
 Under the hypotheses of the theorem, the functor $M\mapsto\tilde M$ is essentially surjective onto quasicoherent sheaves, with $\mcf\cong\widetilde{\Gamma_*(\mcf)}$, and it is not an equivalence.
 A graded homomorphism $M\to M'$ that is an isomorphism in all sufficiently large degrees induces an isomorphism $\tilde M\cong\tilde M'$, and a graded module with $M_n=0$ for all $n\gg0$ has $\tilde M=0$; for example, $\widetilde{S/S_+}=0$ while $S/S_+\ne0$.
-The category $\QCoh(\Proj S)$ is the quotient of the category of graded $S$-modules by the modules annihilated by a power of $S_+$.
+The category $\QCoh(\Proj S)$ is the quotient of the category of graded $S$-modules by the modules in which every element is annihilated by a power of $S_+$.
 :::
