@@ -11,12 +11,10 @@ topics:
 
 # Compute $H_*$
 
-Three methods compute singular homology: cellular homology, the Mayer--Vietoris sequence, and the long exact sequence of a pair.
-
 ## Cellular homology
 
 ::: {.fact title="Cellular homology"}
-For a [[D-ZOU5G|CW complex]] $X$, $H_*(X)$ is the homology of the [[D-A3PUW|cellular chain complex]], whose group $C_n$ is free abelian on the $n$-cells.
+For a [[D-ZOU5G|CW complex]] $X$, the [[D-6BUWA|singular homology]] $H_*(X)$ is the homology of the [[D-A3PUW|cellular chain complex]], whose group $C_n$ is free abelian on the $n$-cells.
 The coefficient of an $(n-1)$-cell $e^{n-1}_\beta$ in $\del e^n_\alpha$ is the [[D-XC53X|degree]] of the composite of the attaching map $S^{n-1}\to X^{(n-1)}$ with the quotient $X^{(n-1)}\to X^{(n-1)}/\qty{X^{(n-1)}\sm e^{n-1}_\beta}\cong S^{n-1}$.
 
 :::
