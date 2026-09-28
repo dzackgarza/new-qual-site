@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS03-6A
 kind: problem
-title: A recurrence limit from $2x_{n+1}-x_n$
+title: If $2x_{n+1}-x_n\to x$, then $x_n\to x$
 classification:
   areas:
   - prelim
@@ -25,28 +25,28 @@ Show that $x_n\to x$.
 :::
 
 ::: {.solution}
-First show that $\{ x _ { n } \}$ is bounded.
-We know that the sequence $\{ 2 x _ { n + 1 } - x _ { n } \}$ is bounded.
-Then we can choose M large so that $| x _ { 1 } | \le M$ and $| 2 x _ { n + 1 } - x _ { n } | \leq M$ for all n. We prove by induction that $| x _ { n } | \leq M$ for all n. Indeed, suppose that $| x _ { n } | \leq M$ . Then
+First show that $\{x_n\}$ is bounded.
+We know that the sequence $\{2x_{n+1}-x_n\}$ is bounded.
+Then we can choose $M$ large so that $\abs{x_1}\leq M$ and $\abs{2x_{n+1}-x_n}\leq M$ for all $n$. We prove by induction that $\abs{x_n}\leq M$ for all $n$. Indeed, suppose that $\abs{x_n}\leq M$. Then
 
 $$
-| x _ { n + 1 } | = | \frac { x _ { n } + ( 2 x _ { n + 1 } - x _ { n } ) } { 2 } | \leq \frac { 1 } { 2 } ( | x _ { n } | + | 2 x _ { n + 1 } - x _ { n } | ) \leq M
+\abs{x_{n+1}}=\abs{\frac{x_n+(2x_{n+1}-x_n)}{2}}\leq\frac12\bigl(\abs{x_n}+\abs{2x_{n+1}-x_n}\bigr)\leq M.
 $$
 
-This concludes the induction and shows that $\{ x _ { n } \}$ is bounded.
+This concludes the induction and shows that $\{x_n\}$ is bounded.
 
 Now write again
 
 $$
-x _ { n + 1 } = { \frac { x _ { n } + ( 2 x _ { n + 1 } - x _ { n } ) } { 2 } }
+x_{n+1}=\frac{x_n+(2x_{n+1}-x_n)}{2}
 $$
 
-and take lim sup.
+and take $\limsup$.
 We get
 
 $$
-\operatorname* { l i m } \operatorname* { s u p } x _ { n } \leq { \frac { \operatorname* { l i m } \operatorname* { s u p } x _ { n } + x } { 2 } }
+\limsup x_n\leq\frac{\limsup x_n+x}{2},
 $$
 
-which gives lim sup $x _ { n } \leq x$ . Similarly we get lim inf $x _ { n } \geq x$ . Together these two inequalities imply that lim $x _ { n } = x$
+which gives $\limsup x_n\leq x$. Similarly we get $\liminf x_n\geq x$. Together these two inequalities imply that $\lim x_n=x$.
 :::
