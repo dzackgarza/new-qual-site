@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Prove that the real and imaginary parts of a holomorphic complex function are harmonic (solutions of Laplace’s equation $\begin{array} { r } { \frac { \partial ^ { 2 } f } { \partial x ^ { 2 } } + \frac { \partial ^ { 2 } f } { \partial y ^ { 2 } } = 0 ) } \end{array}$ . Find two linearly independent real solutions of Laplace’s equation in two variables that are homogeneous polynomials of degree 6.
+Prove that the real and imaginary parts of a holomorphic complex function are harmonic (solutions of Laplace's equation $\frac { \partial ^ { 2 } f } { \partial x ^ { 2 } } + \frac { \partial ^ { 2 } f } { \partial y ^ { 2 } } = 0$). Find two linearly independent real solutions of Laplace's equation in two variables that are homogeneous polynomials of degree 6.
 :::
 
 ::: {.solution}
