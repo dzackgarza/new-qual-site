@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB17S-04
 kind: problem
-title: Derivative at zero of a structured determinant
+title: Derivative at zero of a $5\times5$ determinant with monomial entries
 classification:
   areas:
   - prelim
