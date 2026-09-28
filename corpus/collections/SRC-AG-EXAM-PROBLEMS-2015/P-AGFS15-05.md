@@ -65,8 +65,7 @@ Near \(P_j\), the curve equation is
 \[
 y^2=(x-e_j)g_j(x).
 \]
-Since \(g_j(e_j)
-e0\), the function \(g_j(x)\) is a unit in the local ring at \(P_j\). Moreover,
+Since \(g_j(e_j)\ne0\), the function \(g_j(x)\) is a unit in the local ring at \(P_j\). Moreover,
 \[
 \frac{\partial}{\partial x}\bigl(y^2-g(x)\bigr)(P_j)=-g'(e_j)\ne0,
 \]
@@ -149,7 +148,7 @@ Because \(\operatorname{char}k=0\), the leading coefficient is nonzero, so
 \]
 :::
 
-<1>3. Assemble the divisors.
+<1>3. Q.E.D.
 ::: {.proof}
 The only zeros of \(y\) are \(P_1,P_2,P_3\), each of order \(1\), and its only pole is \(P_\infty\), of order \(3\). Thus
 \[
@@ -157,7 +156,7 @@ The only zeros of \(y\) are \(P_1,P_2,P_3\), each of order \(1\), and its only p
 =[P_1]+[P_2]+[P_3]-3[P_\infty].
 \]
 
-By <1>1, \(dx\) has a simple zero at each \(P_j\), and by <1>2 it has a pole of order \(3\) at \(P_\infty\). These account for degree \(0\), the degree of a canonical divisor on this genus-one curve, so there are no further zeros or poles. Hence
+By step <1>1, \(dx\) has a simple zero at each \(P_j\), and by step <1>2 it has a pole of order \(3\) at \(P_\infty\). These account for degree \(0\), the degree of a canonical divisor on this genus-one curve, so there are no further zeros or poles. Hence
 \[
 \operatorname{div}(dx)
 =[P_1]+[P_2]+[P_3]-3[P_\infty].
