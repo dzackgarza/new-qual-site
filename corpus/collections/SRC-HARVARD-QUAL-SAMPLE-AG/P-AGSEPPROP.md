@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AGSEPPROP
 kind: problem
-title: A good property of separated morphisms, and its quasi-separated analogue
+title: Equalizers of morphisms to separated and quasi-separated targets
 classification:
   areas:
   - algebraic-geometry
@@ -145,10 +145,10 @@ because that is precisely the open along which the two copies were glued, but th
 g\ne h.
 \]
 
-Their equalizer is exactly $\mathbb G_m\hookrightarrow\mathbb A^1$, which is quasicompact but not closed.  This is the quasi-separated analogue from <1>4 in its sharp form.
+Their equalizer is exactly $\mathbb G_m\hookrightarrow\mathbb A^1$, which is a quasicompact immersion, as <1>4 predicts, but not a closed immersion.
 :::
 
-<1>6. Thus a useful separatedness principle is:
+<1>6. Thus
 \[
 \boxed{
 \begin{gathered}
@@ -166,6 +166,6 @@ This is exactly the combination of <1>3--<1>5.
 
 <1>7. Q.E.D.
 ::: {.proof}
-Step <1>3 gives the good property of separated morphisms, and steps <1>4--<1>5 give the quasi-separated analogue and its limitation.
+Step <1>3 gives the dense-open uniqueness property of separated morphisms, and steps <1>4--<1>5 give the quasi-separated analogue and a counterexample to uniqueness in that case.
 :::
 :::
