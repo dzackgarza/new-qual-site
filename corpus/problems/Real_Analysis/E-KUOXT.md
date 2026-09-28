@@ -25,45 +25,67 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** (1) If $\phi$ decays like $|\phi(x)| \leq c(1+|x|)^{-n-\eps}$ with $c, \eps > 0$, then $f \ast \phi_t \to f$ almost everywhere as $t \to 0$ for $f \in L^1$; (2) if $f$ is bounded and uniformly continuous and $\phi_t$ is an approximation to the identity, then $f \ast \phi_t \to f$ uniformly.
+Let $\phi \in L^1(\RR^n)$ with $\int \phi = 1$, and put $\phi_t(x) \coloneqq t^{-n}\phi(x/t)$ for $t > 0$, so that $\int \phi_t = 1$ and $\norm{\phi_t}_1 = \norm{\phi}_1$. Part (a) concerns $f \in L^1(\RR^n)$ and the convergence $f \ast \phi_t \to f$ as $t \to 0$. Let $Mf$ denote the Hardy--Littlewood maximal function of $f$.
 
-<1>1. Setup: $\phi_t(x) := t^{-n} \phi(x/t)$, $\int \phi = 1$; $\phi$ satisfies the pointwise decay bound $|\phi(x)| \leq c(1+|x|)^{-n-\eps}$.
+(a)
+
+<1>1. There is a constant $A$ with $\sup_{t>0}\abs{f \ast \phi_t(x)} \leq A\, Mf(x)$ for every $x$ and every $f \in L^1$.
+
 ::: {.proof}
-this is the standing hypothesis; the decay bound makes $\phi \in L^1$ and gives a majorant $\Psi(x) := c(1+|x|)^{-n-\eps}$ that is radially decreasing and integrable.
+$\Psi(x) \coloneqq c(1+\abs x)^{-n-\eps}$ is radial, radially decreasing, and integrable, and $\abs\phi \leq \Psi$. For a radial, radially decreasing, integrable $\Psi$, $\sup_{t>0}\abs{f\ast\Psi_t(x)} \leq \norm{\Psi}_1\, Mf(x)$; this is the standard maximal inequality for such kernels, proved by writing $\Psi$ as an increasing limit of positive combinations of normalized indicators of balls centered at $0$. Since $\abs{f\ast\phi_t} \leq \abs f \ast \Psi_t$, take $A = \norm\Psi_1$.
 :::
-<1>2. Almost everywhere convergence: for $f \in L^1$, $f \ast \phi_t(x) \to f(x)$ for a.e. $x$.
-<2>1. It suffices to show $\sup_{t>0} |f \ast \phi_t(x)| \leq C \, Mf(x)$ for a.e. $x$, where $Mf$ is the Hardy–Littlewood maximal function.
+
+<1>2. For $g \in C_c(\RR^n)$, $g \ast \phi_t \to g$ uniformly as $t \to 0$.
+
 ::: {.proof}
-the maximal function is finite a.e. for $f \in L^1$ (weak-type $(1,1)$ estimate).
+$g$ is bounded and uniformly continuous, so this is part (b) below.
 :::
-Once the sup bound holds, split $f\ast\phi_t(x) - f(x) = \int \phi_t(y)\big(f(x-y) - f(x)\big)\,dy$ and argue as follows: for any $\eta > 0$ choose continuous compactly supported $g$ with $\|f - g\|_1 < \eta$; then $|f\ast\phi_t - f| \leq |(f-g)\ast\phi_t| + |g\ast\phi_t - g| + |g - f|$; the middle term tends to $0$ uniformly in $x$ (uniform continuity of $g$, standard mollifier argument) and the two outer terms are each bounded by $C\, M(f-g)(x) + |f-g|(x)$-type quantities that are small in $L^1$, so a.e. convergence follows from the a.e. finiteness of the maximal function applied to $f-g$ and the Borel–Cantelli/diagonal argument.
-<2>2. The maximal bound: $|f \ast \phi_t(x)| \leq C \, Mf(x)$.
+
+<1>3. For $f \in L^1$ let $\Omega f(x) \coloneqq \limsup_{t \to 0}\abs{f\ast\phi_t(x) - f(x)}$. Then $\Omega f \leq A\, M(f-g) + \abs{f - g}$ for every $g \in C_c(\RR^n)$.
+
 ::: {.proof}
-the decay bound gives $|\phi(y)| \leq \Psi(|y|)$ with $\Psi$ radially decreasing and integrable; the standard computation (layer-cake / dyadic annuli) shows $\sup_t |f\ast\phi_t(x)| \leq \|\Psi\|_1^{-1}\! \int_0^\infty \Psi(s) \frac{1}{m(B_s)}\int_{B_s} |f(x-y)|\,dy\,ds' \leq C Mf(x)$; that is, the convolution against a radially decreasing integrable kernel is controlled by the maximal function.
+$f\ast\phi_t - f = (f-g)\ast\phi_t - (f-g) + (g\ast\phi_t - g)$. The last term tends to $0$ by step <1>2, and the first two are bounded by $A\,M(f-g)$ and $\abs{f-g}$ by step <1>1.
 :::
-<1>3. Uniform convergence when $f$ is bounded and uniformly continuous.
-<2>1. Split: $f\ast\phi_t(x) - f(x) = \int \phi_t(y)\big(f(x-y) - f(x)\big)\,dy$, using $\int \phi_t = 1$.
+
+<1>4. $\Omega f = 0$ a.e.
+
 ::: {.proof}
-$\int \phi_t = \int \phi = 1$.
+Fix $\alpha > 0$ and $\eta > 0$, and choose $g \in C_c(\RR^n)$ with $\norm{f-g}_1 < \eta$. By step <1>3, the weak type $(1,1)$ bound $m\theset{M h > \beta} \leq \frac{3^n}{\beta}\norm h_1$, and Chebyshev's inequality,
+$$
+m\theset{\Omega f > 2\alpha} \leq m\theset{A\,M(f-g) > \alpha} + m\theset{\abs{f-g} > \alpha} \leq \frac{3^n A + 1}{\alpha}\,\eta.
+$$
+Since $\eta$ is arbitrary, $m\theset{\Omega f > 2\alpha} = 0$ for every $\alpha > 0$.
 :::
-<2>2. Given $\eps > 0$, pick $\delta > 0$ with $|f(x-y) - f(x)| < \eps/2$ whenever $|y| < \delta$ (uniform continuity), and split the integral at $|y| = \delta$.
+
+<1>5. Q.E.D.
+
 ::: {.proof}
-uniform continuity of $f$ is the hypothesis.
+Step <1>4 says $f\ast\phi_t(x) \to f(x)$ for a.e. $x$.
 :::
-<2>3. The inner part satisfies $|\int_{|y|<\delta} \phi_t(y)(f(x-y)-f(x))\,dy| \leq \eps/2$.
+
+(b) Let $f$ be bounded and uniformly continuous.
+
+<1>1. $f\ast\phi_t(x) - f(x) = \int \phi_t(y)\big(f(x-y) - f(x)\big)\,dy$.
+
 ::: {.proof}
-bound the integrand by $(\eps/2)|\phi_t(y)|$ and use $\int_{|y|<\delta} |\phi_t| \leq \int |\phi_t| = \|\phi\|_1$; more precisely $\leq \eps/2 \cdot \int |\phi_t| = \eps/2 \cdot \|\phi\|_1$, so normalize $\|\phi\|_1$ into the constant.
+This uses $\int \phi_t = 1$.
 :::
-<2>4. The outer part satisfies $\int_{|y|\geq\delta} |\phi_t(y)|\,|f(x-y) - f(x)|\,dy \leq 2\|f\|_\infty \int_{|y| \geq \delta} |\phi_t(y)|\,dy \to 0$ as $t \to 0$, uniformly in $x$.
+
+<1>2. Given $\eps > 0$, there is $\delta > 0$ with $\int_{\abs y<\delta} \abs{\phi_t(y)}\,\abs{f(x-y)-f(x)}\,dy \leq \eps/2$ for every $x$ and $t$.
+
 ::: {.proof}
-$\int_{|y| \geq \delta} |\phi_t(y)|\,dy = \int_{|z| \geq \delta/t} |\phi(z)|\,dz \to 0$ since $\phi \in L^1$ (or $\phi$ has compact support for a standard approximation to the identity).
+By uniform continuity choose $\delta$ with $\abs{f(x-y) - f(x)} < \eps/(2\norm\phi_1)$ for $\abs y < \delta$, and use $\int \abs{\phi_t} = \norm\phi_1$.
 :::
-<2>5. Q.E.D.
+
+<1>3. For this $\delta$, $\int_{\abs y\geq\delta} \abs{\phi_t(y)}\,\abs{f(x-y) - f(x)}\,dy \leq 2\norm f_\infty \int_{\abs z \geq \delta/t} \abs{\phi(z)}\,dz$, which tends to $0$ as $t \to 0$ uniformly in $x$.
+
 ::: {.proof}
-<2>3 and <2>4 show $|f\ast\phi_t(x) - f(x)| < \eps$ for all $x$ once $t$ is small, i.e. uniform convergence.
+Bound $\abs{f(x-y) - f(x)}$ by $2\norm f_\infty$ and substitute $y = tz$. The tail integral of $\abs\phi \in L^1$ tends to $0$ by dominated convergence.
 :::
+
 <1>4. Q.E.D.
+
 ::: {.proof}
-<1>2 gives a.e. convergence under the decay hypothesis; <1>3 gives uniform convergence for bounded uniformly continuous $f$.
+By steps <1>1--<1>3, $\abs{f\ast\phi_t(x) - f(x)} < \eps$ for every $x$ once $t$ is small.
 :::
 :::
