@@ -735,12 +735,10 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
   - Statements: E-EMISN claims continuity on the whole domain of convergence,
-    and the solution proves the open disk only. E-6IZL3 has codomain
-    $\CC$, where nonconstant solutions such as $2+iy$ exist; the solution
-    treats real $u$. E-EBRU5 does not fix the branch of $\sqrt{x^2-1}$ on
-    $(0,1)$, which decides the sign of $i\pi/2$. E-SS2.EX-9 is false without
-    connectedness; a remark carries the component statement. E-SS10.EX-6 is
-    false at $n=1$; the solution proves $n\ge2$.
+    and the solution proves the open disk only. E-EBRU5 does not fix the
+    branch of $\sqrt{x^2-1}$ on $(0,1)$, which decides the sign of $i\pi/2$.
+    E-SS2.EX-9 is false without connectedness; a remark carries the component
+    statement.
   - Statements that lost source text: P-WHHDI lost its commutative diagram.
     E-SS1.EX-25 names three calculations and carries two; Stein--Shakarchi
     1.25 has a part (c). E-SS10.EX-2 ends mid-sentence, and its figure
