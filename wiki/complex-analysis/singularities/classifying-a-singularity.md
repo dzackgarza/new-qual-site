@@ -41,13 +41,13 @@ For an isolated singularity $z_0$ of $f$:
 The cases are exhaustive and mutually exclusive.
 For example, $\sin(z)/z \to 1$ as $z\to 0$, and $\abs{1/(z-1)^3}\to\infty$ as $z\to 1$.
 
-Showing that neither limit exists requires, for instance, two paths along which $f$ has different limiting behavior.
+Two paths to $z_0$ along which $f$ has different limiting behavior show that neither limit exists.
 For $e^{1/z}$ at $0$: along $\RR_{>0}$, $e^{1/z}\to\infty$, and along $\RR_{<0}$, $e^{1/z}\to 0$.
 
 ## The boundedness criterion
 
 By Riemann's removable singularity theorem, if $f$ is bounded on a punctured neighborhood of $z_0$, then the singularity is removable and $f$ extends holomorphically across $z_0$.
-The criterion does not require the value of the limit, so it applies when $\abs f$ can be estimated but not evaluated, for instance to show that a function extends to an entire function.
+The criterion uses only a bound on $\abs f$, so it applies when $\abs f$ can be estimated but not evaluated, for instance to show that a function extends to an entire function.
 
 ## The Laurent series criterion
 
@@ -78,4 +78,4 @@ Then a zero of order $n$ has $v_a(f) = n$, a pole of order $n$ has $v_a(f) = -n$
 
 ## Singularities at infinity
 
-The type of the singularity of $f$ at $z=\infty$ is the type of the singularity of $g(w) \coloneqq f(1/w)$ at $w = 0$, and each criterion above applies to $g$.
+The type of the singularity of $f$ at $z=\infty$ is the type of the singularity of $g(w) \coloneqq f(1/w)$ at $w = 0$, and the limit, boundedness, and Laurent series criteria apply to $g$.
