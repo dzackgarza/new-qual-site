@@ -25,10 +25,6 @@ State and prove the Cauchy integral formula for holomorphic functions.
 :::
 
 ::: {.solution}
-**Goal:** State and prove the Cauchy Integral Formula for holomorphic functions.
-
-* * *
-
 ### Statement of the Cauchy Integral Formula
 
 **Theorem:** Let $\Omega \subseteq \mathbb{C}$ be an open domain, and let $f: \Omega \to \mathbb{C}$ be a holomorphic function.
@@ -42,7 +38,7 @@ Then for every point $z_0 \in \text{Int}(\gamma)$: $$f(z_0) = \frac{1}{2\pi i} \
 <1>1. **Isolate the singularity at $z_0$ using a small circle $C_\varepsilon$.** <2>1. Since $z_0 \in \text{Int}(\gamma)$ and $\text{Int}(\gamma)$ is open, there exists $\varepsilon_0 > 0$ such that the closed disk $\overline{D}(z_0, \varepsilon_0) \subset \text{Int}(\gamma)$.
 *Proof:* $\text{Int}(\gamma)$ is an open neighborhood of $z_0$.
 <2>2. For any $\varepsilon \in (0, \varepsilon_0)$, let $C_\varepsilon$ denote the circle $\{z \in \mathbb{C} : |z - z_0| = \varepsilon\}$, oriented counterclockwise.
-*Proof:* Standard circular contour definition.
+*Proof:* This is a definition.
 <2>3. The function $g(z) \coloneqq \frac{f(z)}{z - z_0}$ is holomorphic in the region $\Omega' = \text{Int}(\gamma) \setminus \overline{D}(z_0, \varepsilon)$.
 *Proof:* Quotient of holomorphic functions with non-vanishing denominator on $\Omega'$.
 <2>4. By Cauchy's Integral Theorem for multiply connected domains: $$\oint_\gamma \frac{f(z)}{z - z_0} \, dz = \oint_{C_\varepsilon} \frac{f(z)}{z - z_0} \, dz.$$ *Proof:* The boundary of $\Omega'$ is $\gamma - C_\varepsilon$, and $\oint_{\partial \Omega'} g(z)\,dz = 0$.
