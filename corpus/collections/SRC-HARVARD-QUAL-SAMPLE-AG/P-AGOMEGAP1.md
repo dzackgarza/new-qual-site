@@ -101,7 +101,7 @@ Thus the global section is zero.
 \[
 \Omega^1_{\mathbb P^1/k}\cong\mathcal O_{\mathbb P^1}(-2),
 \]
-so the calculation is the familiar identity
+so the calculation is the identity
 \[
 H^0(\mathbb P^1,\mathcal O(-2))=0.
 \]
