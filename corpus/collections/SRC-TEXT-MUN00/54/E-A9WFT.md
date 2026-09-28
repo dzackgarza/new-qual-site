@@ -24,8 +24,6 @@ Consider the maps $g, h: S^1 \to S^1$ given by $g(z) = z^n$ and $h(z) = 1/z^n$.
 :::
 
 ::: {.solution}
-**Goal:** Compute the induced homomorphisms $g_*, h_*: \pi_1(S^1, 1) \to \pi_1(S^1, 1)$ for the power map $g(z) = z^n$ and reciprocal power map $h(z) = z^{-n}$.
-
 <1>1. Identification of $\pi_1(S^1, 1)$ with $\mathbb{Z}$:
     *Proof:*
     <2>1. Take the basepoint $b_0 = 1 = e^{i \cdot 0} \in S^1$.
@@ -54,6 +52,6 @@ Consider the maps $g, h: S^1 \to S^1$ given by $g(z) = z^n$ and $h(z) = 1/z^n$.
     <2>5. Expressing $\pi_1(S^1, 1) \cong \mathbb{Z}$ additively, $h_*$ is multiplication by $-n$:
         $$h_*(k) = -n k \quad \text{for all } k \in \mathbb{Z}.$$
 
-<1>4. Conclusion:
-    Under the canonical identification $\pi_1(S^1, 1) \cong \mathbb{Z}$, the induced homomorphisms are $g_*(k) = n k$ and $h_*(k) = -n k$. Q.E.D.
+<1>4. Q.E.D.
+    By steps <1>2 and <1>3, under the identification $\pi_1(S^1, 1) \cong \mathbb{Z}$ of step <1>1, $\boxed{g_*(k) = n k \text{ and } h_*(k) = -n k}$.
 :::
