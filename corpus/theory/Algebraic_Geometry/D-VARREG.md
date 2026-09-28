@@ -64,7 +64,7 @@ In particular $X$ and $Y$ are birational if and only if $k(X) \cong k(Y)$ over $
 :::
 
 ::: {.remark}
-The condition is *locally* a quotient, not globally one, and the gap between those two is the whole content: on $\PP^n$ every function is locally a ratio of forms of equal degree and there are no nonconstant global ones, and the standard affine example is $X = V(xw - yz) \subseteq \AA^4$, where $x/y = z/w$ is regular on a union of two opens but is not a single quotient on it.
+Regularity requires a quotient presentation only locally, not globally. On $\PP^n$ every regular function is locally a ratio of forms of equal degree although there are no nonconstant global regular functions; on $X=V(xw-yz)\subseteq\AA^4$, the function $x/y=z/w$ is regular on a union of two opens without being represented there by one global quotient.
 
 The definition is stated so that it transports verbatim to $\Spec A$ — replace $k$ by $\coprod_{\mfp} A_\mfp$ and "polynomial" by "element of $A$" — rather than depending on an ambient polynomial presentation.
 :::

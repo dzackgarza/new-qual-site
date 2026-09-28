@@ -48,7 +48,7 @@ This is a discrete invariant of a smooth curve with no analogue over $\CC$.
 :::
 
 ::: {.remark title="The $p$-torsion group scheme"}
-The Hasse invariant is exactly the invariant that separates the two possible $p$-torsion group schemes, and the point of stating it schematically is that $E[p]$ always has order $p^2$ while its point count collapses.
+The Hasse invariant separates the two possible $p$-torsion group schemes. In both cases $E[p]$ has order $p^2$, while the group of geometric points is $\ZZ/p$ in the ordinary case and trivial in the supersingular case.
 
 - **Ordinary.** $E[p] \cong \mu_p \times \ZZ/p$ over $\bar k$.
   The connected-étale sequence has étale quotient $\ZZ/p$ and connected part $\mu_p$, which is forced by Cartier self-duality of $E[p]$.

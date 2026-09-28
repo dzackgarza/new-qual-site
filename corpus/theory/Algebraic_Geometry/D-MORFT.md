@@ -31,7 +31,7 @@ It is **of finite presentation** if it is also quasicompact and quasi-separated.
 :::
 
 ::: {.remark}
-Finite type is a hypothesis in the definition of properness and in the valuative criterion for properness.
+Finite type means that on affine charts the coordinate algebras are finitely generated over the base, together with quasicompactness; it is a hypothesis in the valuative criteria and in properness.
 Finite presentation is finite type plus a condition on relations, and over a Noetherian base the two coincide, because every ideal of $B[x_1, \dots, x_n]$ is finitely generated.
 Thus finite presentation differs from finite type only over non-Noetherian bases, and it is the finiteness condition used in the definition of smooth morphisms and in limit arguments.
 :::

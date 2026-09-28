@@ -28,8 +28,9 @@ A **sheaf of ideals** is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
 :::
 
 ::: {.remark}
-The sectionwise tensor-product presheaf need not satisfy the sheaf axioms. Morphisms of sheaves glue uniquely, so the sheaf-hom assignment already is a sheaf.
-The functor $\tensor$ is right exact and $\sheafhom$ is left exact. The stalk formula $(\mcf \tensor \mcg)_x = \mcf_x \tensor \mcg_x$ holds while $\sheafhom(\mcf,\mcg)_x = \Hom(\mcf_x, \mcg_x)$ can fail without finiteness on $\mcf$.
+Tensor product and sheaf Hom differ in how locality enters their construction.
+Tensor needs sheafifying because a tensor product of sections is not determined locally; sheaf hom does not, because a morphism of sheaves is already a local object and the assignment is a sheaf on the nose.
+So $\tensor$ is right exact and $\sheafhom$ is left exact, and the stalk formula $(\mcf \tensor \mcg)_x = \mcf_x \tensor \mcg_x$ holds while $\sheafhom(\mcf,\mcg)_x = \Hom(\mcf_x, \mcg_x)$ can fail without finiteness on $\mcf$.
 
 $\mods{\OO_X}$ has enough injectives [@Har10a, Proposition III.2.2], but it need not have enough projectives.
 On $\PP_k^1$ over an infinite field, no projective object surjects onto $\OO_X$, as proved in [[P-AGH362NOPROJECTIVES]].
