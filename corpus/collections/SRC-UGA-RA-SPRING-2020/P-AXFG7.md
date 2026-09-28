@@ -22,8 +22,6 @@ audit:
   note: Reviewed both finite- and infinite-outer-measure cases for the Borel hull and the Caratheodory-measurable-set decomposition; the proof correctly handles the infinite case by bounded pieces.
 ---
 
-Let $m_*$ denote the Lebesgue outer measure on \( \RR \).
-
 ::: {.problem}
 Let $m_*$ denote the Lebesgue outer measure on $\mathbb{R}$.
 
@@ -40,9 +38,11 @@ then there exists a Borel set $B \subseteq \mathbb{R}$ such that $E = B \setminu
 Be sure to address the case when $m_*(E) = \infty$.
 :::
 
-::: {.solution}
-**Goal:** Construct a Borel $G_\delta$ hull $B \supseteq E$ with $m(B) = m_*(E)$ in (a), and apply Carathéodory's criterion with test set $A = B$ in (b) to show $E$ differs from $B$ by a null set.
+::: {.hint}
+For (a), intersect open covers of $E$ whose total lengths decrease to $m_*(E)$; the intersection is a $G_\delta$ set $B\supseteq E$ with $m_*(B)=m_*(E)$. For (b), apply Carathéodory's condition with test set $A=B$ to get $m_*(B\setminus E)=0$ when $m_*(E)<\infty$, and treat $E\cap[n,n+1)$ separately when $m_*(E)=\infty$.
+:::
 
+::: {.solution}
 <1>1. Part (a): Case $m_*(E) < \infty$.
 ::: {.proof}
     <2>1. By definition of outer measure on $\mathbb{R}$, for any $E \subseteq \mathbb{R}$:
