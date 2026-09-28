@@ -9,8 +9,6 @@ topics:
 
 # Smooth and singular
 
-Smoothness has complementary extrinsic and intrinsic criteria.
-
 [[D-0SYCY]]
 
 The Jacobian rank condition is computational for a presented variety, while regularity of the local ring is intrinsic and extends to schemes.
@@ -32,8 +30,8 @@ Over a perfect field the two criteria agree.
 
 [[D-QJ5M9]]
 
-Normality sits between regularity and nothing, and it is the condition under which the singular locus has codimension at least two.
-For a curve that leaves no room, which is why normalization resolves curve singularities and why the local rings of a smooth curve are discrete valuation rings — the fact the divisor theory of the next chapters runs on.
+A normal variety is regular in codimension one, so its singular locus has codimension at least two.
+A normal curve is therefore smooth: normalization resolves curve singularities, and the local rings at closed points of a smooth curve are discrete valuation rings.
 
 ## Where the singular points are
 
