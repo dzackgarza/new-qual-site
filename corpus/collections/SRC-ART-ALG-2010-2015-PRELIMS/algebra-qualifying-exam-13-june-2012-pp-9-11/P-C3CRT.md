@@ -92,7 +92,6 @@ $\overline\phi\psi(a+I,b+J)=(a+I,b+J)$.
 In the other direction,
 $\psi\overline\phi(r+IJ)=r(v+u)+IJ=r+IJ$.
 Therefore $\overline\phi$ is a bijective ring homomorphism
-and hence the desired ring isomorphism. The argument does
-not require $I$ or $J$ to be proper.
+and hence a ring isomorphism.
 :::
 :::
