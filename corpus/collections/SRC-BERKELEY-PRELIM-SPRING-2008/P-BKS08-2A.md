@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-2A
 kind: problem
-title: Evaluate the cosine integral over one plus x squared
+title: Evaluation of $\int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx$ by residues
 classification:
   areas:
   - prelim
@@ -27,9 +27,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{\cos x}{1+x^2}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
