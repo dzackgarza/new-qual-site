@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-HR-05
 kind: problem
-title: A wedge of two circles cannot retract a torus through a right inverse
+title: No map from the torus to $S^1\vee S^1$ has a left inverse
 classification:
   areas: [topology]
   topics: []
