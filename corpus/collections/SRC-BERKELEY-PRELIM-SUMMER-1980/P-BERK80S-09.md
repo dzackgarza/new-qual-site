@@ -24,13 +24,13 @@ audit:
 ---
 
 ::: {.problem}
-For each $( a , b , c ) \in \mathbb { R } ^ { 3 }$ , consider the series
+For each $(a,b,c)\in\RR^3$, consider the series
 
 $$
-\sum _ { n = 3 } ^ { \infty } { \frac { a ^ { n } } { n ^ { b } ( \log n ) ^ { c } } } \cdotp
+\sum_{n=3}^{\infty}\frac{a^n}{n^b(\log n)^c}.
 $$
 
-Determine the values of $( a , b , c )$ for which the series
+Determine the values of $(a,b,c)$ for which the series
 
 1. converges absolutely;
 
@@ -39,120 +39,110 @@ Determine the values of $( a , b , c )$ for which the series
 3. diverges.
 :::
 
-
 ::: {.solution}
 Write
-\[
+$$
 u_n=\frac{a^n}{n^b(\log n)^c}.
-\]
-Then the classification is as follows.
+$$
 
-- The series converges **absolutely** if
-  \[
-  |a|<1,
-  \]
-  or if $|a|=1$ and
-  \[
-  b>1,
-  \qquad\text{or}\qquad
-  b=1\text{ and }c>1.
-  \]
-- It converges **conditionally** precisely when
-  \[
-  a=-1,
-  \]
-  the terms tend to zero, i.e.
-  \[
-  b>0\quad\text{or}\quad (b=0\text{ and }c>0),
-  \]
-  and the absolute-convergence condition above fails.
-- It **diverges** in all remaining cases.
+<1>1. If $\abs{a}<1$, the series converges absolutely; if $\abs{a}>1$, it
+diverges.
 
-<1>1. If $|a|<1$, the series converges absolutely; if $|a|>1$, it diverges.
 ::: {.proof}
-For the absolute values,
-\[
-|u_n|=\frac{|a|^n}{n^b(\log n)^c}.
-\]
-The $n$th root satisfies
-\[
-|u_n|^{1/n}
-=|a|\,n^{-b/n}(\log n)^{-c/n}
-\longrightarrow |a|.
-\]
-Thus the root test gives absolute convergence when $|a|<1$ and divergence when $|a|>1$. In the latter case, in particular, the terms do not tend to zero.
+The $n$th root of $\abs{u_n}$ satisfies
+$$
+\abs{u_n}^{1/n}
+=\abs{a}\,n^{-b/n}(\log n)^{-c/n}
+\longrightarrow \abs{a}.
+$$
+The root test gives absolute convergence when $\abs{a}<1$ and divergence
+when $\abs{a}>1$.
 :::
 
-<1>2. For $|a|=1$, absolute convergence is governed by
-\[
-\sum_{n=3}^\infty \frac1{n^b(\log n)^c},
-\]
-which converges exactly when $b>1$, or when $b=1$ and $c>1$.
+<1>2. For $\abs{a}=1$, the series
+$$
+\sum_{n=3}^\infty \abs{u_n}=\sum_{n=3}^\infty \frac1{n^b(\log n)^c}
+$$
+converges exactly when $b>1$, or when $b=1$ and $c>1$.
+
 ::: {.proof}
-If $b=1$, the integral test gives
-\[
+If $b=1$, the integral test compares the series with
+$$
 \int_3^\infty \frac{dx}{x(\log x)^c}.
-\]
+$$
 With $u=\log x$, this becomes
-\[
+$$
 \int_{\log 3}^\infty u^{-c}\,du,
-\]
+$$
 which converges exactly when $c>1$.
 
-If $b>1$, then for $c\ge0$ the summand is eventually bounded by $n^{-b}$. If $c<0$, the standard estimate
-\[
-(\log n)^{|c|}=o(n^\varepsilon)
-\]
-for every $\varepsilon>0$ lets us choose $0<\varepsilon<b-1$ and bound the summand eventually by $n^{-(b-\varepsilon)}$, with exponent $>1$. Hence the series converges.
+If $b>1$ and $c\ge0$, the summand is eventually bounded by $n^{-b}$. If
+$b>1$ and $c<0$, choose $0<\varepsilon<b-1$. Since
+$(\log n)^{\abs{c}}=o(n^\varepsilon)$, the summand is eventually bounded by
+$n^{-(b-\varepsilon)}$, and $b-\varepsilon>1$. In both cases the series
+converges.
 
-If $b<1$, choose $0<\varepsilon<1-b$. When $c>0$, the estimate $(\log n)^c=o(n^\varepsilon)$ gives, for large $n$,
-\[
+If $b<1$, choose $0<\varepsilon<1-b$. When $c>0$, the estimate
+$(\log n)^c=o(n^\varepsilon)$ gives, for large $n$,
+$$
 \frac1{n^b(\log n)^c}\ge \frac1{n^{b+\varepsilon}},
-\]
-and $b+\varepsilon<1$, so the series diverges. When $c\le0$, the summand is eventually at least a positive constant multiple of $n^{-b}$, which also diverges because $b<1$.
+$$
+and $b+\varepsilon<1$, so the series diverges. When $c\le0$, the summand
+is at least $n^{-b}$ for $n\ge3$, and the series diverges because $b<1$.
 :::
 
-<1>3. Conditional convergence can occur only for $a=-1$.
-::: {.proof}
-For real $a$ with $|a|=1$, the only possibilities are $a=1$ and $a=-1$.
-If $a=1$, every term is positive, so convergence is the same as absolute convergence.
+<1>3. For $a=1$, the series converges exactly when it converges
+absolutely.
 
-For $a=-1$, write
-\[
-d_n=\frac1{n^b(\log n)^c}>0.
-\]
-The alternating series
-\[
-\sum_{n=3}^\infty (-1)^n d_n
-\]
-converges whenever $d_n\to0$ and $d_n$ is eventually decreasing.
-Now
-\[
-\log d_n=-b\log n-c\log\log n,
-\]
-so
-\[
-\frac{d}{dn}\log d_n
-=-\frac1n\left(b+\frac{c}{\log n}\right).
-\]
-Thus $d_n$ is eventually decreasing whenever $b>0$, and also when $b=0,c>0$.
-These are exactly the cases in which $d_n\to0$:
-\[
-b>0,
+::: {.proof}
+For $a=1$ every term is positive, so $u_n=\abs{u_n}$.
+:::
+
+<1>4. For $a=-1$, the series converges exactly when
+$$
+b>0
 \qquad\text{or}\qquad
 b=0,\ c>0.
-\]
-Hence the alternating series converges in exactly those cases. It is conditional precisely when, in addition, the absolute-convergence criterion of <1>2 fails.
+$$
+
+::: {.proof}
+Write
+$$
+d_n=\frac1{n^b(\log n)^c}>0,
+$$
+so that $u_n=(-1)^nd_n$. The sequence $d_n$ tends to $0$ exactly when
+$b>0$, or $b=0$ and $c>0$; otherwise $d_n\not\to0$ and the series
+diverges. In the two convergent cases,
+$$
+\frac{d}{dx}\log\frac1{x^b(\log x)^c}
+=-\frac1x\left(b+\frac{c}{\log x}\right)<0
+$$
+for large $x$, so $d_n$ is eventually decreasing, and the alternating
+series test gives convergence.
 :::
 
-<1>4. The remaining parameter values give divergence.
+<1>5. The series
+$$
+\boxed{
+\begin{aligned}
+&\text{converges absolutely iff } \abs{a}<1, \text{ or } \abs{a}=1 \text{ and } (b>1 \text{ or } b=1,\ c>1);\\
+&\text{converges but not absolutely iff } a=-1 \text{ and } (0<b<1,\ \text{or } b=1,\ c\le1,\ \text{or } b=0,\ c>0);\\
+&\text{diverges in all other cases.}
+\end{aligned}
+}
+$$
+
 ::: {.proof}
-The only cases not covered by absolute or conditional convergence are:
+Steps <1>1 and <1>2 give the absolute-convergence region. Conditional
+convergence requires convergence without absolute convergence; by step
+<1>1 this forces $\abs{a}=1$, by step <1>3 it forces $a=-1$, and step <1>4
+together with step <1>2 gives the listed parameters. Every other
+parameter value gives a divergent series by steps <1>1--<1>4.
+:::
 
-- $|a|>1$, already divergent by <1>1;
-- $a=1$ with $b<1$, or $b=1,c\le1$, divergent by <1>2;
-- $a=-1$ with $b<0$, or $b=0,c\le0$, for which $d_n\not\to0$.
+<1>6. Q.E.D.
 
-In each case the series diverges.
+::: {.proof}
+Step <1>5 answers all three parts.
 :::
 :::
