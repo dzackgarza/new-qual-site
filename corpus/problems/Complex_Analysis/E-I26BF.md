@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-I26BF
 kind: problem
-title: Injective implies nonvanishing derivative
+title: An injective holomorphic function has nonvanishing derivative
 classification:
   areas:
   - complex-analysis
