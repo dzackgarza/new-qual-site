@@ -28,11 +28,11 @@ Classify the following assertion as true, sometimes true, or false: if $H\cong K
 :::
 
 ::: {.solution}
-The assertion is **sometimes true**.
+The assertion is sometimes true.
 
-<1>1. There are cases in which the quotients are isomorphic.
+<1>1. If $H=K$, then $G/H\cong G/K$.
 ::: {.proof}
-For example, if $H=K$, then certainly $H\cong K$ and
+If $H=K$, then $H\cong K$ and
 $$
 G/H=G/K.
 $$
@@ -66,7 +66,7 @@ The first quotient has no element of order $4$, while the second does, so
 they are not isomorphic.
 :::
 
-<1>3. Conclude the classification.
+<1>3. Q.E.D.
 ::: {.proof}
 The assertion holds in step <1>1 and fails in step <1>2. Hence
 $$
