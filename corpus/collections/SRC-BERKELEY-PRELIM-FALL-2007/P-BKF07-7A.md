@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF07-7A
 kind: problem
-title: Factor a matrix satisfying P cubed equals P
+title: Factorization $P=USV^T$ of a real matrix with $P^3=P$
 classification:
   areas:
   - prelim
