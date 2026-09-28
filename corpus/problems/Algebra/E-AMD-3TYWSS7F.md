@@ -35,5 +35,5 @@ Z_{i+1}/Z_i\le Z(G/Z_i)
 \]
 for every \(i\).
 
-Each quotient \(Z_{i+1}/Z_i\) is therefore abelian. Hence this central series is, in particular, a finite subnormal series with abelian successive quotients. By the standard criterion for solvability, \(G\) is solvable.
+Each quotient \(Z_{i+1}/Z_i\) is therefore abelian. Hence this central series is a finite subnormal series with abelian successive quotients, so \(G\) is solvable.
 :::
