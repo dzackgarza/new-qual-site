@@ -155,9 +155,8 @@ will write.
 describe an appearance in a source collection, not different mathematical
 objects. The collection/source kind and its `ProblemEntry.comment` preserve that
 appearance. Existing `E-*` ids are not renamed to another prefix; the prefix does not
-declare a card kind. One statement has one card: when reading proves two cards state the
-same mathematics, merge them into one, repoint every collection and wiki reference to the
-survivor, and delete the other card and its id. An authored `::: exercise` fence likewise records how the
+declare a card kind. One statement has one card and one id; a proven duplicate is merged
+and its id deleted under `CARD-04` in [CONTRIBUTING.md](CONTRIBUTING.md). An authored `::: exercise` fence likewise records how the
 source presented the item and parses as a problem section.
 
 Good work on this corpus is reading mathematics, understanding what a statement
@@ -724,9 +723,9 @@ It is common and expected for a problem to appear in multiple collections. An
 exam may reuse a question from a textbook, the same problem may appear on
 different exams, or a compilation may contain overlapping problem sets. Each
 collection independently lists the problems it contains; the same problem card
-may be referenced by many collections. Do not merge, deduplicate, or suppress
-a problem card because it appears in multiple places — that is correct behavior,
-not redundancy. What a rendered remark may say about a card's sources is `SEC-7`.
+may be referenced by many collections. One card listed in several collections
+is correct, not redundancy; do not suppress an appearance. Two cards for one
+statement are the opposite case: that is a duplicate, merged under `CARD-04`. What a rendered remark may say about a card's sources is `SEC-7`.
 
 # Data issues
 

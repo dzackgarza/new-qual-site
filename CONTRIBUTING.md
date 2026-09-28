@@ -2116,11 +2116,25 @@ A card carries no `subtitle:` for provenance.
 Look for undefined fields, rings, maps, or indices; variables introduced only in a source context; or missing hypotheses that make the statement false.
 **Origin:** [#70](https://github.com/dzackgarza/new-qual-site/issues/70).
 
-### `CARD-04`: Duplicate mathematics candidate
+### `CARD-04`: One statement, one card, one id
+
+A mathematical statement has exactly one card and one id, as a result has one tag in the
+Stacks Project or Kerodon. A second card for the same statement is a defect, never a
+variant to keep: every correction, solution and backlink splits between two addresses that
+then drift apart. Where the statement occurs is recorded by collection appearances, not by
+copies of the card.
 
 **Reading task:** read both complete statements, including hypotheses and roles in collections.
-Flag only when they appear to ask the same mathematics; identical wording is evidence to read, not a merge decision.
-Distinguish source appearances and variants.
+Identical wording is evidence to read, not a merge decision, and different wording does not
+make two statements different. Two cards whose hypotheses differ (uniform against locally
+uniform convergence) state different mathematics and both stay.
+
+**Repair:** when reading proves the same mathematics, merge in the same commit. Keep one
+survivor with the clearest source-faithful statement and the complete solution; a correct
+alternative method from the other card may become a `remark` on the survivor. Repoint every
+collection appearance, wiki reference and guide reference to the survivor, delete the other
+card and any asset only it used, and do not keep the retired id as an alias, a
+`duplicate-of` relation, or a record that both exist. Do not stop to ask whether to merge.
 **Origin:** [#70](https://github.com/dzackgarza/new-qual-site/issues/70), [#61](https://github.com/dzackgarza/new-qual-site/issues/61).
 
 ### `CARD-05`: Source appearance label treated as an intrinsic problem kind
