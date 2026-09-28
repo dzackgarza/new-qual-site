@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LATEST2-48
 kind: problem
-title: Commutator of differentiation and multiplication by x
+title: Commutator of differentiation and multiplication by $x$
 classification:
   areas:
   - applied-algebra
