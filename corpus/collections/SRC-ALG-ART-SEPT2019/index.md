@@ -26,7 +26,3 @@ source:
     term: fall
     year: 2019
 ---
-
-::: {.remark}
-The document names no institution. It contains six problems with worked solutions.
-:::
