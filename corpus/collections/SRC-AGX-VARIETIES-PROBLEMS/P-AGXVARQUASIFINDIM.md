@@ -99,13 +99,13 @@ $$
 is nonempty and finite. Hence every irreducible component of this fibre is a
 point and has dimension $0$.
 
-Apply
+By
 [[P-AGXVARFIBERDIM|the fibre-dimension theorem]]
-to the dominant morphism
+for the dominant morphism
 $$
-g:X\longrightarrow Z.
+g:X\longrightarrow Z,
 $$
-Every irreducible component of every nonempty fibre has dimension at least
+every irreducible component of every nonempty fibre has dimension at least
 $$
 \dim X-\dim Z.
 $$
@@ -139,7 +139,7 @@ $$
 $$
 
 ::: {.proof}
-Combine step <1>2 and step <1>3:
+Steps <1>2 and <1>3 give
 $$
 \dim X
 \leq
