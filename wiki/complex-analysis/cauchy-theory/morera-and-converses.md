@@ -34,10 +34,9 @@ So $F$ is holomorphic on $D$ with $F' = f$, and $f$ is holomorphic because deriv
 
 :::
 
-::: {.remark title="Hypotheses"}
-The hypotheses are continuity of $f$ and vanishing of its triangle integrals; differentiability of $f$ is not assumed.
-The theorem therefore applies to a locally uniform limit of holomorphic functions, whose differentiability is not known in advance.
-Some texts state it for rectangles with sides parallel to the axes, and the proof is the same with the segment replaced by a horizontal segment followed by a vertical one.
+::: {.remark title="Rectangles"}
+The conclusion also holds for continuous $f$ whose integrals over the boundaries of all closed rectangles in $\Omega$ with sides parallel to the axes vanish.
+The proof is the same, with the segment $[z_0, z]$ replaced by a horizontal segment followed by a vertical one.
 
 :::
 
@@ -57,7 +56,7 @@ For $z\in K$, Cauchy's estimate on the circle $\abs{\xi - z} = r$ gives $\abs{f_
 :::
 
 ::: {.remark}
-Applied to partial sums, the corollary shows that a series $\sum_k f_k$ of holomorphic functions converging uniformly on compact subsets of $\Omega$ is holomorphic and can be differentiated term by term.
+Applied to partial sums, [[C-TODSQ|the holomorphy of locally uniform limits]] shows that a series $\sum_k f_k$ of holomorphic functions converging uniformly on compact subsets of $\Omega$ is holomorphic and can be differentiated term by term.
 
 :::
 
