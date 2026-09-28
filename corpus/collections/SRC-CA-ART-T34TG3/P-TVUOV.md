@@ -24,61 +24,67 @@ Prove that $z^4 + 2 z^3 - 2z + 10 =0$ has exactly one root in each open quadrant
 :::
 
 ::: {.solution}
-Let $P(z) = z^4 + 2z^3 - 2z + 10$.
-Since $P(z)$ has real coefficients, its complex roots come in conjugate pairs: if $z_0$ is a root, then $\overline{z_0}$ is also a root.
+Let $P(z) = z^4 + 2z^3 - 2z + 10$. For $R>0$, let $Q_R=\{z:\abs{z}<R,\ 0<\arg z<\pi/2\}$, whose boundary consists of $\gamma_1=[0,R]$, the arc $\gamma_2$: $z=Re^{i\theta}$, $0\le\theta\le\pi/2$, and the segment $\gamma_3$ from $iR$ to $0$.
 
-1. **No roots on the axes:**
+<1>1. $P$ has no real root.
 
-   - **Real axis ($z = x \in \RR$):** $P(x) = x^4 + 2x^3 - 2x + 10 = (x^2 + x)^2 - x^2 + 2x^3 - 2x + 10 = x^2(x+1)^2 + (x-1)^2 + 9 > 0$ for all $x \in \RR$.
-     Specifically:
+::: {.proof}
+For real $x$, $P(x) = (x^2 + x - 1)^2 + x^2 + 9 \ge 9$.
+:::
 
-     - For $x \geq 0$, $x^4 + 2x^3 + 10 > 2x$, so $P(x) > 0$.
+<1>2. $P$ has no root on the imaginary axis, and $\operatorname{Re}P(iy)>0$ for all real $y$.
 
-     - For $x < 0$, let $x = -t$ with $t > 0$: $P(-t) = t^4 - 2t^3 + 2t + 10 = t^2(t-1)^2 - t^3 + 2t + 10 > 0$.
-       Thus $P(z) \neq 0$ for all $z \in \RR$.
+::: {.proof}
+$P(iy) = (y^4 + 10) - 2iy(y^2 + 1)$, whose real part is at least $10$.
+:::
 
-   - **Imaginary axis ($z = iy$ with $y \in \RR$):**
-     $$
-     P(iy) = (iy)^4 + 2(iy)^3 - 2(iy) + 10 = (y^4 + 10) + i(-2y^3 - 2y) = (y^4 + 10) - 2iy(y^2 + 1).
-     $$
-     For $P(iy) = 0$, both real and imaginary parts must vanish.
-     The real part is $y^4 + 10 \geq 10 > 0$ for all $y \in \RR$.
-     Thus $P(z) \neq 0$ on the imaginary axis.
+<1>3. For $R\ge3$ and $\abs{z}=R$, $\abs{P(z)-z^4} < \abs{z^4}$. In particular every root of $P$ satisfies $\abs{z}<3$.
 
-2. **Argument Principle in the First Quadrant:** Consider the first quadrant contour $\Gamma_R = \gamma_1 \cup \gamma_2 \cup \gamma_3$:
+::: {.proof}
+$\abs{P(z) - z^4} \le 2R^3 + 2R + 10$, and $R^4 - 2R^3 - 2R - 10$ is positive at $R=3$ (it equals $11$) and increasing for $R\ge3$, since its derivative $4R^3-6R^2-2$ is positive there.
+:::
 
-   - $\gamma_1$: Along the positive real axis from $0$ to $R$.
-     $P(x) > 0$ is real and positive, so $\Delta_{\gamma_1} \arg P(z) = 0$.
+<1>4. For $R\ge3$, a continuous argument of $P$ increases by exactly $2\pi$ around $\partial Q_R$.
 
-   - $\gamma_2$: Along the circular arc $z = R e^{i\theta}$ from $\theta = 0$ to $\theta = \pi/2$.
-     For large $R$, $P(z) \approx z^4 = R^4 e^{4i\theta}$.
-     As $\theta$ goes from $0$ to $\pi/2$, $\arg(z^4)$ changes by $4(\pi/2) = 2\pi$.
-     Thus $\Delta_{\gamma_2} \arg P(z) \to 2\pi$ as $R \to \infty$.
+<2>1. Along $\gamma_1$ the argument does not change.
 
-   - $\gamma_3$: Down the imaginary axis from $iR$ to $0$ ($z = iy$ with $y$ going from $R$ to $0$). $P(iy) = (y^4 + 10) - 2iy(y^2 + 1) = u(y) + i v(y)$ where $u(y) > 0$ and $v(y) \leq 0$.
-     At $y = R$, $\frac{v(R)}{u(R)} \approx -\frac{2R^3}{R^4} \to 0^-$, so $\arg P(iR) \approx 2\pi$ (or $0^-$). As $y$ decreases from $R$ to $0$, $u(y) > 0$ remains strictly positive and $v(y) < 0$ for $y > 0$, ending at $P(0) = 10 > 0$ ($\arg = 0$). The trajectory of $P(iy)$ stays entirely in the fourth quadrant (positive real, negative imaginary part).
-     Thus $\Delta_{\gamma_3} \arg P(z) = 0 - 2\pi = -2\pi + \text{net change}$.
-     More precisely: At the start of $\gamma_3$ (top of arc, $\theta = \pi/2$), $\arg P(iR) \approx 2\pi$.
-     Moving down to $y = 0$, $P(iy)$ remains in $\{u > 0, v \leq 0\}$, so the argument returns to $0$ (which is $2\pi - 2\pi = 0$), contributing $\Delta_{\gamma_3} \arg P(z) = -2\pi + \pi/2 \cdot \dots$ Tracking total winding:
-     $$
-     \Delta_\Gamma \arg P(z) = 0 + 2\pi - 0 = 2\pi.
-     $$
-     By the Argument Principle, the number of roots in the first quadrant is:
-     $$
-     N_{Q_1} = \frac{1}{2\pi} \Delta_\Gamma \arg P(z) = \frac{2\pi}{2\pi} = 1.
-     $$
+::: {.proof}
+$P>0$ on $[0,R]$ by step <1>1 (and $P(0)=10$).
+:::
 
-3. **Distribution across all four quadrants:**
+<2>2. Along $\gamma_2$ the argument increases by $2\pi+\delta$, where $\delta\in(-\pi/2,\pi/2)$ is the principal argument of $P(iR)$.
 
-   - First quadrant ($Q_1$): Exactly 1 root $z_1 = x_1 + i y_1$ ($x_1 > 0, y_1 > 0$).
+::: {.proof}
+Write $P(z) = z^4\,w(z)$ with $w(z) = P(z)/z^4$. By step <1>3, $\abs{w(z)-1}<1$ on $\gamma_2$, so $w$ stays in the right half-plane and its principal argument is a continuous argument there. It is $0$ at $z=R$ (where $w>0$) and $\delta$ at $z=iR$ (where $w=P(iR)/R^4$). The factor $z^4$ contributes $4\cdot\pi/2=2\pi$.
+:::
 
-   - Fourth quadrant ($Q_4$): By complex conjugation of roots, $\overline{z_1} = x_1 - i y_1 \in Q_4$ is a root, so $N_{Q_4} \geq 1$.
+<2>3. Along $\gamma_3$ the argument changes by $-\delta$.
 
-   - Since total degree is 4 and there are no real or pure imaginary roots, the remaining 2 roots must lie in the left half-plane ($Q_2 \cup Q_3$).
+::: {.proof}
+By step <1>2, $P(iy)$ lies in the right half-plane for every $y$, so the principal argument is continuous along $\gamma_3$. It equals $\delta$ at $iR$ and $0$ at $P(0)=10$.
+:::
 
-   - By complex conjugation, the remaining roots must be a conjugate pair $z_2 \in Q_2$ and $\overline{z_2} \in Q_3$.
+<2>4. Q.E.D.
 
-   - Therefore, $N_{Q_1} = N_{Q_2} = N_{Q_3} = N_{Q_4} = 1$.
+::: {.proof}
+Add steps <2>1--<2>3: $0 + (2\pi+\delta) - \delta = 2\pi$.
+:::
 
-Thus, $P(z)$ has exactly one root in each open quadrant.
+<1>5. $P$ has exactly one root in the open first quadrant.
+
+::: {.proof}
+$P$ has no zeros on $\partial Q_R$ by steps <1>1--<1>3. By the argument principle and step <1>4, $P$ has exactly one zero in $Q_R$ for every $R\ge3$, and by step <1>3 all zeros lie in $\abs{z}<3$.
+:::
+
+<1>6. $P$ has exactly one root in each open quadrant.
+
+::: {.proof}
+$P$ has real coefficients, so $z\mapsto\bar z$ maps its roots in the first quadrant bijectively onto its roots in the fourth; by step <1>5 there is exactly one in each. $P$ has degree $4$ and no roots on the axes (steps <1>1 and <1>2), so the remaining two roots lie in the open second and third quadrants, and conjugation again matches them, giving one in each.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Step <1>6 is the required statement.
+:::
 :::
