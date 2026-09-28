@@ -28,11 +28,27 @@ Show that
 :::
 
 ::: {.solution}
-Since $f$ is injective, it has a left-inverse $f\inv$, and $F\da f\inv g$ is well-defined.
-Since $F:\DD\to \DD$ and $F(0) = 0$, Schwarz applies and $\abs{F(z)} \leq z$ on $\DD$.
-Unwinding:
-\[
-\abs{(f\inv \circ g)(z)} \leq \abs{z} \implies \abs{g(z)} \leq \abs{f(z)} \qquad \forall \DD\in \ZZ
-.\]
-This says that $g(\DD) \subseteq f(\DD)$, and in particular this holds on all $\DD_r(0)$, so $g(\DD_r(0)) \subseteq f(\DD_r(0))$.
+Assume that $f$ is a bijection $\DD\to\Omega$; the remark gives a counterexample without this hypothesis.
+
+<1>1. $F\coloneqq f\inv\circ g$ is a holomorphic map $\DD\to\DD$ with $F(0)=0$.
+
+::: {.proof}
+The inverse $f\inv\colon\Omega\to\DD$ of the bijective holomorphic map $f$ is holomorphic, and $g(\DD)\subseteq\Omega$, so $F$ is defined and holomorphic on $\DD$ with values in $\DD$. Since $g(0)=f(0)$, we have $F(0)=f\inv(f(0))=0$.
+:::
+
+<1>2. $\abs{F(z)}\le\abs{z}$ for all $z\in\DD$.
+
+::: {.proof}
+This is the Schwarz lemma applied to $F$, which step <1>1 permits.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Let $0<r<1$ and $\abs{z}<r$. By step <1>2, $w\coloneqq F(z)$ satisfies $\abs{w}<r$, so $g(z)=f(F(z))=f(w)\in f\qty{\theset{\abs{w}<r}}$.
+:::
+:::
+
+::: {.remark}
+The inclusion requires $f(\DD)=\Omega$. For $\Omega=\CC$, $f(z)=z$ and $g(z)=2z$, the image $g\qty{\theset{\abs z<r}}$ is the disk of radius $2r$, which is not contained in $f\qty{\theset{\abs z<r}}$.
 :::
