@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-15
 kind: problem
-title: Which listed ring has zero divisors
+title: Zero divisors among $\CC$, $\ZZ/11$, $C([0,1],\RR)$, $\QQ(\sqrt2)$, and $\RR[x]$
 classification:
   areas:
   - algebra
