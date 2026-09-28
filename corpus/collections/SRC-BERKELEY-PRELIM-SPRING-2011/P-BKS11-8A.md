@@ -78,7 +78,7 @@ $$
 <1>3. Assertion (c) is false.
 
 ::: {.proof}
-Use the same matrix $N$ as in step <1>1$, now regarded as a complex
+Use the same matrix $N$ as in step <1>1, now regarded as a complex
 matrix. It is still nonzero and nilpotent, so its only eigenvalue over
 $\CC$ is $0$. A diagonalizable complex matrix with only eigenvalue $0$
 would be the zero matrix. Hence $N$ is not diagonalizable over $\CC$.
