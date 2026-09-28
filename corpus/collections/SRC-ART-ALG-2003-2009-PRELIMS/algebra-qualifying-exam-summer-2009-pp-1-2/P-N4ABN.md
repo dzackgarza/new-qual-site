@@ -26,30 +26,21 @@ If $A$ and $B$ are normal in $G$, and $G/A$ and $G/B$ are abelian, show that $G/
 :::
 
 ::: {.solution}
-**Goal.** If $A, B \normal G$ with $G/A$ and $G/B$ abelian, show $G/(A \cap B)$ is abelian.
+<1>1. For a normal subgroup $N\lhd G$, the quotient $G/N$ is abelian if and only if $[G,G]\subseteq N$.
 
-<1>1. $G/A$ abelian means $[G, G] \subseteq A$.
 ::: {.proof}
-$G/A$ abelian iff the commutator subgroup $[G,G]$ maps to the identity in $G/A$, i.e. $[G,G] \subseteq A$.
+$G/N$ is abelian exactly when $xyx^{-1}y^{-1}N=N$ for all $x,y\in G$, that is, when every commutator lies in $N$; since $N$ is a subgroup, this is equivalent to $[G,G]\subseteq N$.
 :::
 
-<1>2. Similarly $[G, G] \subseteq B$.
+<1>2. $[G,G]\subseteq A\cap B$.
+
 ::: {.proof}
-same argument for $G/B$.
+Step <1>1 applied to $A$ and to $B$ gives $[G,G]\subseteq A$ and $[G,G]\subseteq B$.
 :::
 
-<1>3. Hence $[G, G] \subseteq A \cap B$.
-::: {.proof}
-$[G,G]$ is contained in both $A$ and $B$.
-:::
+<1>3. Q.E.D.
 
-<1>4. Therefore $G/(A \cap B)$ is abelian.
 ::: {.proof}
-$G/N$ is abelian iff $[G,G] \subseteq N$; here $N = A \cap B$ contains $[G,G]$.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>4 is the claim.
+The intersection $A\cap B$ of normal subgroups is normal, so step <1>1 applied to $N=A\cap B$, together with step <1>2, shows that $G/(A\cap B)$ is abelian.
 :::
 :::
