@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-11
 kind: problem
-title: "Cauchy estimates on a smaller disk"
+title: The Cauchy formula with kernel $\Re\frac{\zeta+z}{\zeta-z}$ and the Poisson kernel
 classification:
   areas:
   - complex-analysis
