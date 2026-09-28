@@ -44,7 +44,7 @@ Both \(U\) and \(V\) are homeomorphic to \(\mathbb R^n\), hence simply connected
 \[
 \pi_1(S^n)=0.
 \]
-Notice that for \(n=2\) the intersection has fundamental group \(\mathbb Z\), but both maps into the trivial groups \(\pi_1(U)\) and \(\pi_1(V)\) are trivial, so the conclusion is still \(0\).
+For \(n=2\) the intersection has fundamental group \(\mathbb Z\), but both maps into the trivial groups \(\pi_1(U)\) and \(\pi_1(V)\) are trivial, so the conclusion is still \(0\).
 
 For \(n=1\), the same cover has
 \[
