@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF23C
 kind: problem
-title: "Measure equality implies density one"
+title: "If $\\mu(U)=\\int_U f\\,d\\mu$ for every open $U$, then $f=1$ $\\mu$-a.e."
 classification:
   areas:
   - real-analysis
@@ -31,7 +31,7 @@ Prove that if for any open subset $U$, $\mu(U) = \int_U f\,d\mu$, then $f = 1$ $
 :::
 
 ::: {.solution}
-<1>1. Show that $f\le1$ almost everywhere.
+<1>1. $f\le1$ $\mu$-almost everywhere.
 ::: {.proof}
 Fix $\varepsilon>0$ and set
 \[
@@ -61,7 +61,7 @@ f\le1\qquad\mu\text{-a.e.}
 \]
 :::
 
-<1>2. Use the open-set identity to rule out $f<1$ on a set of positive measure.
+<1>2. $f=1$ $\mu$-almost everywhere.
 ::: {.proof}
 After changing $f$ on a null set if necessary, assume $0\le f\le1$ everywhere. For every open set $U$,
 \[
