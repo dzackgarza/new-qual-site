@@ -26,20 +26,20 @@ audit:
 ---
 
 ::: {.problem}
-Let \(y:[0,\infty)\to\mathbb R\) be smooth and satisfy
-\[
+Let $y:[0,\infty)\to\mathbb R$ be smooth and satisfy
+$$
 y''-y=f(x)\qquad(x>0),
-\]
+$$
 with
-\[
+$$
 y(0)=y'(0)=0,
-\]
-and suppose \(y(x)\to0\) and \(y'(x)\to0\) as \(x\to\infty\). Here \(f\) is continuous on \([0,\infty)\) and vanishes for \(x>1\).
+$$
+and suppose $y(x)\to0$ and $y'(x)\to0$ as $x\to\infty$. Here $f$ is continuous on $[0,\infty)$ and vanishes for $x>1$.
 
-Find a nonzero function \(g\), independent of \(y\) and \(f\), such that
-\[
+Find a nonzero function $g$, independent of $y$ and $f$, such that
+$$
 \int_0^1 f(x)g(x)\,dx=0.
-\]
+$$
 :::
 
 ::: {.solution}
