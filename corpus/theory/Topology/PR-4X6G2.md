@@ -25,6 +25,7 @@ for all $k$ [@Hat02].
 :::
 
 ::: {.remark}
-Closedness and orientability are hypotheses of the duality.
+For $n\geq 1$, the orientable manifold $\RR^n$ is not closed, and $H^0(\RR^n;\ZZ)\cong\ZZ$ while $H_n(\RR^n;\ZZ) = 0$.
+The closed manifold $\RP^2$ is not orientable, and $H^0(\RP^2;\ZZ)\cong\ZZ$ while $H_2(\RP^2;\ZZ) = 0$.
 For a field $F$ of characteristic $2$, every closed manifold is $F$-orientable, so the duality holds for all closed manifolds with $\ZZ/2$ coefficients.
 :::
