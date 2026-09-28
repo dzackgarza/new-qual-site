@@ -22,7 +22,7 @@ Given $n$ and $\epsilon$, define a continuous function $f: I \to \mathbb{R}$ suc
 :::
 
 ::: {.solution}
-**Goal:** Construct a continuous function $f: [0, 1] \to [-\varepsilon, \varepsilon]$ in the nowhere-differentiability open set $U_n = \{f \in \mathcal{C}(I, \mathbb{R}) : \forall x \in I, \exists t \in I, 0 < |x - t| < \frac{1}{n} \text{ and } |\frac{f(x) - f(t)}{x - t}| > n\}$.
+Here $U_n = \{f \in \mathcal{C}(I, \mathbb{R}) : \forall x \in I, \exists t \in I, 0 < |x - t| < \frac{1}{n} \text{ and } |\frac{f(x) - f(t)}{x - t}| > n\}$.
 
 <1>1. Parameter selection:
     Given $n \in \mathbb{Z}_+$ and $\varepsilon > 0$, choose an integer $k \in \mathbb{Z}_+$ sufficiently large such that:
@@ -49,6 +49,6 @@ Given $n$ and $\epsilon$, define a continuous function $f: I \to \mathbb{R}$ suc
     <2>4. If $x = t_j$, choose $t = t_{j-1}$ (or $t_{j+1}$ if $j = 0$). Then $0 < |t - x| = h < \frac{1}{n}$, and the secant slope is $\frac{\varepsilon}{h} > n$.
     <2>5. Hence $f \in U_n$.
 
-<1>5. Conclusion:
-    The constructed continuous function $f$ satisfies $f \in U_n$ and $|f(x)| \le \varepsilon$ for all $x \in [0, 1]$. Q.E.D.
+<1>5. Q.E.D.
+    By steps <1>3 and <1>4, the continuous function $f$ satisfies $f \in U_n$ and $|f(x)| \le \varepsilon$ for all $x \in [0, 1]$.
 :::
