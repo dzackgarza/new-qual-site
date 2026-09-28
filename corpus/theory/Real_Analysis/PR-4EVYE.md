@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-4EVYE
 kind: proposition
 title: The Cauchy condensation test
-slogan: 'For a decreasing nonnegative series, convergence is detected by its dyadic block masses.'
+slogan: 'For $(a_k)$ nonincreasing and nonnegative, $\sum a_k$ converges exactly when $\sum 2^k a_{2^k}$ converges.'
 classification:
   areas:
   - real-analysis
