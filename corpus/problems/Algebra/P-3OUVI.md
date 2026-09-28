@@ -63,8 +63,7 @@ G/K\cong C_4.
 \]
 :::
 
-<1>4. Hence $G/H
-ot\cong G/K$.
+<1>4. Hence $G/H\not\cong G/K$.
 ::: {.proof}
 The group $C_4$ contains an element of order $4$, whereas every nonzero element of $C_2\oplus C_2$ has order $2$. Thus the quotients are not isomorphic even though $H\cong K$.
 :::
