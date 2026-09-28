@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-6A
 kind: problem
-title: UC Berkeley Spring 2007 prelim 6A
+title: Exponential of a complex linear combination of the Pauli matrices
 classification:
   areas: [prelim]
   topics: []
@@ -12,22 +12,22 @@ review: draft
 
 ::: {.problem}
 Let
-\[
+$$
 A=\alpha_1\sigma_1+\alpha_2\sigma_2+\alpha_3\sigma_3,
 \qquad \alpha_1,\alpha_2,\alpha_3\in\mathbb C,
-\]
+$$
 where
-\[
+$$
 \sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
 \sigma_2=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\qquad
 \sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
-\]
+$$
 Let $\beta\in\mathbb C$ be any square root of $\alpha_1^2+\alpha_2^2+\alpha_3^2$.
 
 (a) Prove that
-\[
+$$
 \exp(A)=\cosh(\beta)I+\frac{\sinh\beta}{\beta}A,
-\]
+$$
 where $\frac{\sinh\beta}{\beta}$ is interpreted as $1$ if $\beta=0$.
 (Hint: first show that $A^2$ is a scalar multiple of the identity.)
 
