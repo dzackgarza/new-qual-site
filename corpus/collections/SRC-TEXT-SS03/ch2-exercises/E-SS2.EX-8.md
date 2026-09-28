@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-8
 kind: problem
-title: "SS 2.8: Derivatives inherit polynomial growth on a strip"
+title: Derivatives inherit polynomial growth on a strip
 classification:
   areas:
   - complex-analysis
