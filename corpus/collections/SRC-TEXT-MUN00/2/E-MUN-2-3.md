@@ -56,5 +56,5 @@ For intersections one always has
 \[
 f\!\left(\bigcap_i A_i\right)\subset\bigcap_i f(A_i),
 \]
-since a point of the common domain intersection maps into every \(f(A_i)\). Equality can fail for noninjective \(f\), exactly as in Exercise 2(g). If \(f\) is injective and the index set is nonempty, equality holds: if \(y\in\bigcap_i f(A_i)\), then for each \(i\) there is \(a_i\in A_i\) with \(f(a_i)=y\); injectivity forces all \(a_i\) to be the same point, lying in \(\bigcap_iA_i\).
+since a point of the common domain intersection maps into every \(f(A_i)\). Equality can fail for noninjective \(f\): the two-set counterexample of [[E-MUN-2-2]](g) is a family indexed by \(I=\{0,1\}\). If \(f\) is injective and the index set is nonempty, equality holds: if \(y\in\bigcap_i f(A_i)\), then for each \(i\) there is \(a_i\in A_i\) with \(f(a_i)=y\); injectivity forces all \(a_i\) to be the same point, lying in \(\bigcap_iA_i\).
 :::
