@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK95S-11
 kind: problem
-title: Extend an isometry of a finite subset fixing the origin to a linear map
+title: An isometry of a finite subset fixing the origin extends to a linear map
 classification:
   areas:
   - prelim
