@@ -75,7 +75,7 @@ x\longmapsto t^2,
 \qquad
 y\longmapsto t^3.
 $$
-Certainly
+Then
 $$
 x^3-y^2\in\ker\phi.
 $$
@@ -220,7 +220,7 @@ and the normalization morphism is precisely $\nu$.
 <1>5. The germ $(X,0)$ is unibranch.
 
 ::: {.proof}
-The source defines the analytic branches at the origin by the irreducible
+The analytic branches of $X$ at the origin correspond to the irreducible
 factors of
 $$
 y^2-x^3
