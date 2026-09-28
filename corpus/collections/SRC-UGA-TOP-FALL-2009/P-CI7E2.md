@@ -36,7 +36,7 @@ Show that both $A$ and the quotient $X/A$ are normal.
 ::: {.solution}
 <1>1. The closed subspace $A$ is Hausdorff.
 ::: {.proof}
-The space $X$ is normal, so by the definition in the problem it is Hausdorff.
+A normal space is Hausdorff and separates disjoint closed sets by disjoint open sets; in particular $X$ is Hausdorff.
 Every subspace of a Hausdorff space is Hausdorff.
 Therefore $A$, with its subspace topology, is Hausdorff.
 :::
@@ -63,7 +63,7 @@ are disjoint open subsets of $A$ containing $C$ and $D$, respectively.
 <1>3. Hence $A$ is normal.
 ::: {.proof}
 Step <1>1 verifies the Hausdorff requirement, and <1>2 verifies separation of arbitrary disjoint closed subsets of $A$.
-These are exactly the two conditions in the definition of normality given in the problem.
+These are the two conditions defining normality.
 :::
 
 <1>4. Let
@@ -155,6 +155,6 @@ Thus $X/A$ is Hausdorff.
 <1>8. Therefore $X/A$ is normal.
 ::: {.proof}
 Step <1>7 verifies the Hausdorff requirement, while <1>6 separates arbitrary disjoint closed subsets by disjoint open neighborhoods.
-This is precisely normality in the definition given by the problem.
+These are the two conditions defining normality.
 :::
 :::
