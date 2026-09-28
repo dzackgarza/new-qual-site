@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYIBX
 kind: problem
-title: Evaluate $\int\frac{1-\sqrt{x}}{1+\sqrt{x}}\,dx$
+title: Antiderivatives by radical substitution, starting with $\int\frac{1-\sqrt{x}}{1+\sqrt{x}}\,dx$
 classification:
   areas:
   - prelim
@@ -47,7 +47,6 @@ Hence
 \[
 \boxed{-x+4\sqrt x-4\ln(1+\sqrt x)+C.}
 \]
-The stored $\ln(1+x)$ was incorrect.
 
 For (2), put $t=x^{1/6}$. Then
 \[
