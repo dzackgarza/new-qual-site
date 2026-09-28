@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-04
 kind: problem
-title: Prime expressions selected by an arithmetic property
+title: Number of field automorphisms of $\QQ$
 classification:
   areas:
   - algebra
