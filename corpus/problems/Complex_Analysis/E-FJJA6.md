@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FJJA6
 kind: problem
-title: $\log(x)/1+x^2$
+title: $\int_0^\infty\frac{\log x}{1+x^2}\,dx$
 classification:
   areas:
   - complex-analysis
