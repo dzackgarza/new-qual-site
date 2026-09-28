@@ -240,8 +240,8 @@ $$
 
 ::: {.proof}
 Step <1>1 shows that it is Zariski closed in affine space, and step <1>3
-shows that it is irreducible. This is exactly an affine variety in the
-source's convention.
+shows that it is irreducible. An irreducible Zariski-closed subset of affine
+space is an affine variety.
 :::
 
 <1>6. Q.E.D.
