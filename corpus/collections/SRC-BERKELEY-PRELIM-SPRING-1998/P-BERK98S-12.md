@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-12
 kind: problem
-title: Evaluate a coupled two-dimensional Gaussian integral
+title: Integral of $e^{-(x^2+(y-x)^2+y^2)}$ over $\RR^2$
 classification:
   areas:
   - prelim
