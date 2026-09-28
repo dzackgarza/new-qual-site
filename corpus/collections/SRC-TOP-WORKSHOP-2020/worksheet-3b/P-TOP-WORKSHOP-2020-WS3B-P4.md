@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-P4
 kind: problem
-title: Lift maps between simply connected covering spaces
+title: Maps between base spaces lift to maps between simply connected covering spaces
 classification:
   areas:
   - topology
