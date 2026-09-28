@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS84-4
 kind: problem
-title: Compare $\pi^3$ and $3^\pi$
+title: $\pi^3$ versus $3^\pi$
 classification:
   areas: [prelim]
   topics: []
