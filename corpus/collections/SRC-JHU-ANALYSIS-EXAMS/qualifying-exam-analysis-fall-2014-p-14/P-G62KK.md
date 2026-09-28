@@ -52,7 +52,6 @@ $f_k\to f$ uniformly on $A_\varepsilon$.
 Choose a measurable null set $Z\subset E$ outside which
 the given convergence holds and $g$ is finite. On
 $E_0=E\setminus Z$, passage to the limit gives $|f|\leq g$.
-We leave every value of the original functions unchanged.
 
 For $N\ge1$, define
 \[
@@ -63,7 +62,7 @@ h_N(x):=\begin{cases}
 \]
 Then each $h_N$ is measurable,
 \[
-0\le h_{N+1}\le h_N\le 2g,
+0\le h_{N+1}\le h_N\le 2g.
 \]
 The displayed domination holds almost everywhere, and
 $h_N\downarrow0$ everywhere by its definition on $Z$.
@@ -143,7 +142,6 @@ such that $f_k\to f$ uniformly on $A_\varepsilon$, as required.
 Choose a measurable null set $Z\subset E$ outside which
 $f_k(x)\to f(x)$ and $g$ is finite. Put $E_0=E\setminus Z$.
 On $E_0$, the bound on $f_k$ implies $|f|\leq g$.
-No function values need to be changed.
 
 For positive integers $j,N$, define
 \[
