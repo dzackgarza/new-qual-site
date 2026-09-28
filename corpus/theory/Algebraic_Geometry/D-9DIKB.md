@@ -32,6 +32,5 @@ A topological space is \dfn{Noetherian} if its closed subsets satisfy the descen
 :::
 
 ::: {.remark}
-The descending chain condition is on all closed subsets, irreducible or not.
-$\AA^n$ is Noetherian because the correspondence turns a descending chain of closed sets into an ascending chain of radical ideals in $k[x_1,\ldots,x_n]$, which stabilises by the Hilbert basis theorem.
+$\AA^n$ is Noetherian: the map $Z\mapsto I(Z)$ is injective and inclusion-reversing on closed subsets, so it turns a descending chain of closed sets into an ascending chain of radical ideals in $k[x_1,\ldots,x_n]$, which stabilises by the Hilbert basis theorem.
 :::
