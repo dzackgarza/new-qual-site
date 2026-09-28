@@ -61,7 +61,7 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 
 [[PR-CZS5F]]
 
-## From the UNL summer workshop
+## Continuous functions of a real variable
 
 [[T-RA-WORKSHOP-D4-3-1]]
 
@@ -73,11 +73,15 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 
 [[T-RA-WORKSHOP-D4-3-5]]
 
+## Derivatives
+
 [[T-RA-WORKSHOP-D5-4-1]]
 
 [[T-RA-WORKSHOP-D5-4-2]]
 
 [[T-RA-WORKSHOP-D5-4-3]]
+
+## Riemann--Stieltjes integration
 
 [[T-RA-WORKSHOP-D6-5-1]]
 
@@ -88,6 +92,10 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 [[T-RA-WORKSHOP-D6-5-4]]
 
 [[T-RA-WORKSHOP-D6-5-5]]
+
+## Sequences and series of functions
+
+[[D-RA-WORKSHOP-D7-CONVERGENCE]]
 
 [[T-RA-WORKSHOP-D7-6-1]]
 
@@ -100,5 +108,3 @@ Proofs of Egorov's and Lusin's theorems are on [[real-analysis/measure/littlewoo
 [[T-RA-WORKSHOP-D7-6-5]]
 
 [[T-RA-WORKSHOP-D7-6-7]]
-
-[[D-RA-WORKSHOP-D7-CONVERGENCE]]
