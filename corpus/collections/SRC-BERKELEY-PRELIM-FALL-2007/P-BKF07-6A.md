@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF07-6A
 kind: problem
-title: Count zeros of a quartic in an annulus
+title: Zeros of a quartic in an annulus
 classification:
   areas:
   - prelim
