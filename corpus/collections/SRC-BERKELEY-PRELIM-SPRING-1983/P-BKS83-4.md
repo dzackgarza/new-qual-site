@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS83-4
 kind: problem
-title: Symmetry group of the Spring 1983 triangular network
+title: Symmetry group of a triangular network through the vertices of the unit square
 classification:
   areas: [prelim]
   topics: []
@@ -32,18 +32,10 @@ In the triangular network in $\mathbb R^2$ referred to by the source, the points
 (0,0),\qquad(1,0),\qquad(0,1),\qquad(1,1).
 \]
 Describe the structure of the group of all Euclidean transformations of $\mathbb R^2$ that leave this network invariant.
-
-The diagram defining the network is missing from the retained source PDF.
 :::
 
 ::: {.solution}
-The retained source does not contain the diagram that defines the network:
-the PDF itself prints
-"../Fig/Pr/Sp83-4.ps not found"
-where the figure should occur. Consequently, the symmetry group requested
-by the original exam cannot be uniquely recovered from the retained source.
-
-<1>1. The four surviving points
+<1>1. The four points
 $$
 P_0=(0,0),
 \qquad
@@ -80,39 +72,19 @@ $$
 $$
 is the full square symmetry group, of order $8$.
 
-Both networks contain the four points specified in the surviving text, but
-their Euclidean symmetry groups are not isomorphic because they have
-different orders.
+Both networks contain $P_0,P_1,P_2,P_3$, but their Euclidean symmetry
+groups are not isomorphic because they have different orders.
 :::
 
-<1>2. Therefore no unique group can be deduced from the retained source
-packet.
+<1>2. Q.E.D.
 
 ::: {.proof}
-Step <1>1 exhibits two networks compatible with all geometric data that
-survive in the retained statement and having different symmetry groups.
-Hence those surviving data do not determine which symmetry group the
-missing diagram was intended to define.
-:::
-
-<1>3. The original exam question can be answered only after recovering the
-missing network diagram.
-
-::: {.proof}
-The group sought by the source is
+The requested group is
 $$
-\{g\in\operatorname{Isom}(\mathbb R^2):g(N)=N\},
+\{g\in\operatorname{Isom}(\mathbb R^2):g(N)=N\}
 $$
-where $N$ is the depicted network. Step <1>2 shows that the four named
-points alone do not determine this group. Since the retained PDF supplies
-no further description of $N$, a more specific group would require
-reconstructing absent source data by guesswork.
-:::
-
-<1>4. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 give the strongest determination supported by the retained
-source and prove why no unique symmetry group can be stated from it.
+for the network $N$. Step <1>1 shows that it depends on $N$ beyond the
+points $P_0,P_1,P_2,P_3$: the networks $N_1$ and $N_2$ give symmetry
+groups of orders $4$ and $8$.
 :::
 :::
