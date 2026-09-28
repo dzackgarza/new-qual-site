@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KAQ4G
 kind: problem
-title: Evaluate $\int\frac{\sin x}{\cos^2 x}\,dx$ and $\int\csc(ax)\cot(ax)\,dx$
+title: $\int\frac{\sin x}{\cos^2 x}\,dx$ and $\int\csc(ax)\cot(ax)\,dx$
 classification:
   areas:
   - prelim
