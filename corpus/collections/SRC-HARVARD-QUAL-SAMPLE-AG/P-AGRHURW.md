@@ -215,6 +215,6 @@ The first equality merely rewrites the finite length in <1>6 as the degree of it
 
 <1>8. Q.E.D.
 ::: {.proof}
-Steps <1>1--<1>3 answer the questions about differentials and exactness.  Steps <1>4--<1>6 prove weak Riemann--Hurwitz, and step <1>7 records the familiar ramification-index form.
+Steps <1>1--<1>3 answer the questions about differentials and exactness.  Steps <1>4--<1>6 prove weak Riemann--Hurwitz, and step <1>7 gives the ramification-index form.
 :::
 :::
