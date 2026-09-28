@@ -50,8 +50,6 @@ Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \mathbb{R}^N)$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that every second-countable locally compact Hausdorff space $X$ with $\dim C \le m$ for all compact $C \subset X$ embeds as a closed subspace of $\mathbb{R}^{2m+1}$.
-
 <1>1. Part (a): Perturbation of proper maps.
 *Proof:* <2>1. Let $n \in \mathbb{Z}_+$.
 Since $f(x) \to \infty$, there exists a compact $C \subset X$ such that $\|f(x)\| > n + 1$ for all $x \in X \setminus C$.
@@ -75,7 +73,7 @@ Thus $f^*$ is continuous.
 <2>4. If $\bar{\rho}(f, g) < \frac{\delta}{3}$, then for all $(x_1, x_2) \in S$: $$\|g(x_1) - g(x_2)\| \ge \|f(x_1) - f(x_2)\| - 2\bar{\rho}(f, g) \ge \delta - \frac{2\delta}{3} = \frac{\delta}{3} > 0.$$ <2>5. Thus $g \in U_\varepsilon(C)$, so $U_\varepsilon(C)$ is open.
 
 <1>4. Part (d): Density of $U_\varepsilon(C)$ for $N = 2m + 1$.
-*Proof:* <2>1. Since $\dim C \le m$, the classical Menger-Nöbeling embedding theorem shows that maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \mathbb{R}^{2m+1})$.
+*Proof:* <2>1. Since $C$ is compact metrizable with $\dim C \le m$, the maps with $\Delta < \varepsilon$ are dense in $\mathcal{C}(C, \mathbb{R}^{2m+1})$; this is the density lemma in the proof of the imbedding theorem for compact metrizable spaces of dimension $m$.
 <2>2. Given $f \in \mathcal{C}(X, \mathbb{R}^N)$ and $\delta > 0$, choose $g_0 \in \mathcal{C}(C, \mathbb{R}^N)$ such that $\|f|_C - g_0\| < \delta$ and $\Delta(g_0) < \varepsilon$.
 <2>3. By the Tietze Extension Theorem, extend the coordinate functions of $g_0 - f|_C: C \to [-\delta, \delta]^N$ to a continuous map $h: X \to [-\delta, \delta]^N$.
 <2>4. Define $g = f + h \in \mathcal{C}(X, \mathbb{R}^N)$.
@@ -88,11 +86,11 @@ Then $\bar{\rho}(f, g) \le \delta$ and $g|_C = g_0 \in U_\varepsilon(C)$, provin
 For $x \in X \setminus C_k$, $\psi(x) \ge k - 1$.
 <2>4. The map $f_0(x) = (\psi(x), 0, \dots, 0) \in \mathbb{R}^N$ is continuous and satisfies $f_0(x) \to \infty$ as $x \to \infty$.
 
-<1>6. Part (f): Synthesis via Baire Category Theorem.
+<1>6. Part (f): an injective map $f$ with $f(x) \to \infty$ exists.
 *Proof:* <2>1. Since $\mathbb{R}^N$ is complete, $(\mathcal{C}(X, \mathbb{R}^N), \bar{\rho})$ is a complete metric space, hence a Baire space.
 <2>2. Let $B = \{g \in \mathcal{C}(X, \mathbb{R}^N) : \bar{\rho}(f_0, g) < 1\}$.
 $B$ is a non-empty open subspace, hence a Baire space.
-<2>3. For each $n \in \mathbb{Z}_+$, $U_{1/n}(C_n) \cap B$ is open and dense in $B$ by <1>3 and <1>4. <2>4. By the Baire Category Theorem, the intersection $G = \bigcap_{n=1}^\infty U_{1/n}(C_n) \cap B$ is dense in $B$, hence non-empty.
+<2>3. For each $n \in \mathbb{Z}_+$, $U_{1/n}(C_n) \cap B$ is open and dense in $B$ by <1>3 and <1>4. <2>4. By the Baire category theorem, the intersection $G = \bigcap_{n=1}^\infty U_{1/n}(C_n) \cap B$ is dense in $B$, hence non-empty.
 <2>5. Choose $f \in G$.
 Since $f \in B$, $f(x) \to \infty$ as $x \to \infty$ by <1>1. <2>6. For any distinct $x_1, x_2 \in X$, there exists $n$ such that $x_1, x_2 \in C_n$ and $d(x_1, x_2) \ge \frac{1}{n}$.
 Since $f \in U_{1/n}(C_n)$, $f(x_1) \neq f(x_2)$.
