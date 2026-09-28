@@ -9,45 +9,46 @@ topics:
 
 # Elliptic curves over $\CC$
 
-Over $\CC$ the classification of genus $1$ is available twice, and the two answers are the same answer stated in two languages.
-The algebraic route produces the Legendre model and $j$ as a rational function of $\lambda$.
-The analytic route produces a lattice, and everything after that is a computation with series.
+Over $\CC$, every elliptic curve $E$ is isomorphic to $\CC/\Lambda$ for a lattice $\Lambda$, unique up to homothety, and to a Legendre curve $y^2=x(x-1)(x-\lambda)$.
+For $\Lambda=\ZZ+\ZZ\tau$ the $j$-invariant is $j(\tau)$, and for the Legendre curve it is $2^8(\lambda^2-\lambda+1)^3/(\lambda^2(\lambda-1)^2)$.
 
 ## The functions
 
 [[D-CRVWEIER]]
 
-Two facts drive the whole construction and both are consequences of compactness: residues of an elliptic function sum to zero on the torus, so nothing has a single simple pole, and a holomorphic elliptic function is constant.
-The first says $\wp$ is the smallest thing that can exist; the second turns every identity into a cancellation of principal parts.
+The residues of an elliptic function sum to zero on $\CC/\Lambda$, so a nonconstant elliptic function has degree at least $2$, and $\wp$, with a double pole at $0$, has degree exactly $2$.
+A holomorphic elliptic function is bounded on a fundamental parallelogram, hence constant; so two elliptic functions with the same principal parts differ by a constant, and comparing principal parts at $0$ proves $(\wp')^2=4\wp^3-g_2\wp-g_3$.
 
 ## From a lattice to a cubic
 
 [[T-CRVUNIF]]
 
-The map $z \mapsto (\wp(z), \wp'(z))$ lands in the cubic because of the differential equation, and is bijective by degree counting: $\wp$ has degree $2$ and is even, $\wp'$ is odd and breaks the tie.
+By the differential equation, $z\mapsto[\wp(z):\wp'(z):1]$, with $0\mapsto[0:1:0]$, maps $\CC/\Lambda$ into the cubic $y^2=4x^3-g_2x-g_3$.
+The map is bijective: $\wp$ is even of degree $2$, so $\wp(z)=\wp(w)$ exactly when $w\equiv\pm z$, and $\wp'(-z)=-\wp'(z)$ separates $z$ from $-z$ unless $2z\in\Lambda$.
 
-Abel's theorem on the torus identifies the analytic and algebraic group laws, so the uniformization $\CC/\Lambda \to E$ is a group isomorphism rather than merely a bijection.
-The torsion reading is immediate: $E[n] = \tfrac{1}{n}\Lambda/\Lambda \cong (\ZZ/n)^2$.
+By Abel's theorem on the torus, the chord-and-tangent law on the cubic corresponds to addition on $\CC/\Lambda$, so the uniformization $\CC/\Lambda\to E$ is a group isomorphism.
+In particular $E[n]\cong\tfrac{1}{n}\Lambda/\Lambda\cong(\ZZ/n)^2$.
 
 ## The modular function
 
 [[T-CRVMODJ]]
 
-The normalisation must be fixed because conventions for $J$ and $j$ differ by the factor $1728$.
-The invariance is a weight count --- $g_2^3$ and $\Delta$ both scale by $\alpha^{-12}$ --- and the restriction to $\SL_2(\ZZ)$ rather than $\GL_2(\ZZ)$ comes from the formula for $\Im\qty{\tfrac{a\tau+b}{c\tau+d}}$, which is the usual place to slip.
+Under $\Lambda\mapsto\alpha\Lambda$, both $g_2^3$ and $\Delta$ scale by $\alpha^{-12}$, so $J$ depends only on the homothety class of $\Lambda$.
+The group is $\SL_2(\ZZ)$ because $\Im\qty{\tfrac{a\tau+b}{c\tau+d}}=(ad-bc)\Im\tau/\abs{c\tau+d}^2$: a matrix of determinant $-1$ sends $\HH$ to the lower half plane.
 
-Uniqueness of a representative in the fundamental region upgrades invariance into a moduli statement, and the two points where the region folds onto itself are the two curves with extra automorphisms.
+Since each $\SL_2(\ZZ)$-orbit meets the fundamental region once, $J$ is a bijection from isomorphism classes of elliptic curves over $\CC$ onto $\CC$.
+The points of the fundamental region with nontrivial stabilizer in $\PSL_2(\ZZ)$ are $\tau=i$, of order $2$, and $\tau=\rho$, of order $3$; these are the curves with $j=1728$ and $j=0$, the only ones with automorphism group larger than $\{\pm1\}$.
 
 ## Complex multiplication
 
 [[T-CRVCM]]
 
-The endomorphism ring is realized inside $\CC$ as the scalars preserving the lattice.
-It is therefore either $\ZZ$ or an order in an imaginary quadratic field, and the order need not be maximal; $\tau=2i$ gives conductor $2$.
+The endomorphism ring $R_\Lambda=\{\alpha\in\CC\st\alpha\Lambda\subseteq\Lambda\}$ lies in $\Lambda$, so it is either $\ZZ$ or an order in an imaginary quadratic field.
+The order need not be maximal: $\tau=2i$ gives $\ZZ[2i]$, of conductor $2$ in $\ZZ[i]$.
 
 [[T-CRVCMCFT]]
 
-Nine counts imaginary quadratic fields of class number one; thirteen counts imaginary quadratic *orders*, and endomorphism rings range over orders.
-The four extra ones have discriminant $-12$, $-16$, $-27$, and $-28$.
+Nine imaginary quadratic fields have class number one, and thirteen imaginary quadratic orders have class number one; endomorphism rings of CM elliptic curves range over all orders.
+The four non-maximal orders among the thirteen have discriminants $-12$, $-16$, $-27$, and $-28$.
 
-A non-algebraic-integer $j$ cannot be the $j$-invariant of a CM elliptic curve.
+If $j(E)$ is not an algebraic integer, then $E$ has no complex multiplication.
