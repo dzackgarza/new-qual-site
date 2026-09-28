@@ -33,7 +33,6 @@ Let $X$ be the 2-sphere, and $A \subseteq X$ the equatorial circle in $X$.
 Show that there is no retraction $r : X \to A$.
 :::
 
-
 ::: {.solution}
 Fix a basepoint $x_0\in A$ and let $i\colon A\hookrightarrow S^2$ be the inclusion.
 Suppose $r\colon S^2\to A$ is a retraction.
