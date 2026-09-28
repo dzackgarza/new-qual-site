@@ -29,7 +29,7 @@ Suppose that $f,g\in L^1(\mathbb R)$ have compact support, and define
 \[
 h(x)=(f*g)(x)=\int_{\mathbb R} f(x-y)g(y)\,dy.
 \]
-The source asks to prove that $h$ is uniformly continuous. Is this claim true? Prove it or give a counterexample.
+Is $h$ necessarily uniformly continuous? Prove it or give a counterexample.
 :::
 
 ::: {.solution}
@@ -64,7 +64,9 @@ The integral is the finite positive beta value $B(1/3,1/3)$. Hence
 \qquad(0<x<1).
 \]
 Thus $(f*g)(x)\to\infty$ as $x\downarrow0$. In particular $f*g$ is not continuous, and therefore cannot be uniformly continuous.
-
-So the source claim is false as stated.
 :::
+:::
+
+::: {.remark}
+Erratum: the source exam asks for a proof that $h$ is uniformly continuous. The solution's example shows that this fails for $f,g\in L^1(\mathbb R)$ with compact support; it holds when one of $f,g$ is in $L^\infty$, or when $f,g\in L^2$.
 :::
