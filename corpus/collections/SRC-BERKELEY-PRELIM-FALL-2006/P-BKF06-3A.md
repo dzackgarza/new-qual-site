@@ -35,8 +35,6 @@ Prove that
 \[
 f(-2)\in\left\{\frac13,-\frac13\right\}.
 \]
-
-*Source note.* The retained Fall 2006 solution packet states that the original problem incorrectly printed $\{3,-3\}$; the set above is its explicit correction.
 :::
 
 ::: {.solution}
@@ -138,4 +136,8 @@ so the conclusion follows from step <1>3.
 ::: {.proof}
 Step <1>4 is the required conclusion.
 :::
+:::
+
+::: {.remark}
+Erratum: the exam paper prints the set as $\{3,-3\}$. By the identity $(1-4z)f(z)^2=1$ on $U$, $f(-2)^2=1/9$, so the correct set is $\{1/3,-1/3\}$.
 :::
