@@ -66,7 +66,7 @@ is well defined on \(\pi_1(G,e)\).
 \[
 [f]\otimes[g]=[f*e_e]\otimes[e_e*g].
 \]
-Pointwise multiplication distributes over these two half-interval descriptions, and one checks directly that
+For \(s\le1/2\), \(((f*e_e)\otimes(e_e*g))(s)=f(2s)\cdot e=f(2s)\), and for \(s\ge1/2\) it equals \(e\cdot g(2s-1)=g(2s-1)\). So
 \[
 (f*e_e)\otimes(e_e*g)=f*g.
 \]
