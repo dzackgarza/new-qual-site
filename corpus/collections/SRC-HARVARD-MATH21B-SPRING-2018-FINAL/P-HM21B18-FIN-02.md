@@ -31,5 +31,9 @@ decide which of the following properties hold: projection, reflection, orthogona
 \[
 f''=1,\qquad f'=1,\qquad f'=-f+1,\qquad f'''=-f'
 \]
-to the source graphs A--D. The drawings themselves are not recovered in the retained extraction.
+to the solution graphs A--D; each equation matches exactly one graph.
+:::
+
+::: {.remark}
+Part (c) refers to four solution graphs labelled A--D that are printed in the source exam.
 :::
