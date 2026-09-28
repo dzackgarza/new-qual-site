@@ -23,20 +23,10 @@ Let the power series series $\sum_{n=0}^\infty a_nx^n$ and $\sum_{n=0}^\infty b_
 ::: {.solution}
 <1>1. Cauchy–Hadamard formula: the radius of convergence of $\sum a_n x^n$ is $R = 1/\limsup_{n \to \infty} |a_n|^{1/n}$ (with $1/0 = \infty$, $1/\infty = 0$).
 ::: {.proof}
-the root test: $\limsup |a_n x^n|^{1/n} = |x| \limsup |a_n|^{1/n}$; the series converges absolutely when this is $< 1$, i.e. $|x| < R$, and diverges when $|x| > R$.
+By the root test, since $\limsup |a_n x^n|^{1/n} = |x| \limsup |a_n|^{1/n}$, the series converges absolutely when $|x| < R$ and diverges when $|x| > R$, because then its terms do not tend to $0$.
 :::
 
-<1>2. The series $\sum a_n x^n$ converges absolutely for $|x| < R_1$ and diverges for $|x| > R_1$; likewise for $\sum b_n x^n$ with $R_2$.
-::: {.proof}
-<1>1 applied to each series.
-:::
+<1>2. If $R_1 \neq R_2$, the radius of convergence of $\sum (a_n + b_n) x^n$ is $\min\{R_1, R_2\}$, and in general it is at least $\min\{R_1, R_2\}$. See [[P-E4WZN]].
 
-<1>3. Standard consequence: if $R_1 \neq R_2$, the radius of $\sum (a_n + b_n) x^n$ is $\min\{R_1, R_2\}$; in general it is $\ge \min\{R_1, R_2\}$ (see P-E4WZN).
-
-<1>4. Standard consequence: the radius of $\sum a_n b_n x^n$ satisfies $R \ge R_1 R_2$ (see P-FYGQ6).
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>1 is the definition one applies in <1>3 and <1>4.
-:::
+<1>3. The radius of convergence of $\sum a_n b_n x^n$ is at least $R_1 R_2$. See [[P-FYGQ6]].
 :::
