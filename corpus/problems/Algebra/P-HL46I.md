@@ -30,13 +30,13 @@ What does “integral over $\ZZ$” mean?
 ::: {.solution}
 Let $K$ be a number field, i.e. a finite extension of $\QQ$.
 
-An element $\alpha\in K$ is **integral over $\ZZ$** if it satisfies a monic polynomial
+An element $\alpha\in K$ is \dfn{integral over $\ZZ$} if it satisfies a monic polynomial
 \[
 \alpha^n+a_{n-1}\alpha^{n-1}+\cdots+a_0=0
 \]
 with coefficients $a_i\in\ZZ$.
 
-The **ring of integers** of $K$ is
+The \dfn{ring of integers} of $K$ is
 \[
 \mathcal O_K
 =
