@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Let $B$ be an integral domain with field of fractions $K$, let $A = B[X]$, and let $P$ be a prime ideal of $A$; then $P \cap B$ is a prime ideal in $B$.
-Problem 3 of the same sheet establishes the following.
+By [[P-TATE85-PI-03]]:
 
 (3a) If $P \cap B = (0)$, then (i) $PK = P(K[X])$ is a prime ideal in $AK = K[X]$; (ii) $P = PK \cap A$; (iii) if $B$ is a u.f.d., then either $P = (0)$, or $P = f(X)A$, where $f(X)$ is a polynomial with coefficients in $B$, these coefficients having "no" common divisor (i.e., none except units in $B$), and $f(X)$ being irreducible in $K[X]$. Moreover $f$ is determined by $P$ up to a unit (invertible element) of $B$.
 
@@ -41,6 +41,5 @@ The ideals of type IV which contain a given $f(X)A$ of type II are those for whi
 :::
 
 ::: {.remark}
-The paragraphs labelled (3a) and (3b) restate Problem 3 of the "Examples of prime ideals" sheet (source PDF p. 12), on which this problem depends.
-The source statement of (4) has evident misprints, kept above: in type IV the ideal is $\pi^* A + g(X)A$ with $M = \pi^* B$; $h(X) \in B[X]$; and the closing parenthetical should read $\bar{f} = f \pmod{\pi_i} = 1$.
+Errata to the statement: in type IV the ideal is $\pi^* A + g(X)A$ with $M = \pi^* B$; $h(X) \in B[X]$; and the closing parenthetical should read $\bar{f} = f \pmod{\pi_i} = 1$.
 :::
