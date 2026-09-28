@@ -9,37 +9,34 @@ topics:
 
 # Derived functors and vanishing
 
-Where the theory comes from, and the two vanishing statements that bound every computation from above and below.
-
 [[D-COHDER]]
 
-Sheaf cohomology is the right-derived functor of $\globsec{X;\wait}$ because global sections is left exact, and any acyclic resolution computes it.
+Any resolution of $\mcf$ by $\globsec{X;\wait}$-acyclic sheaves computes $H^*(X,\mcf)$.
 
 [[D-COHFLQ]]
 
-Flasque sheaves provide an explicit class of acyclic sheaves.
-Injective implies flasque implies acyclic; the second implication explains why flasque resolutions compute sheaf cohomology.
+Since flasque sheaves are $\globsec{X;\wait}$-acyclic, a flasque resolution, such as the Godement resolution, computes sheaf cohomology.
 
 [[D-SHFFINE]]
 
 [[D-COHGODEMENT]]
 
-## The two bounds
+## Affine and Grothendieck vanishing
 
 [[T-COHAFF]]
 
 [[T-COHGROTH]]
 
-These bound cohomology from opposite ends.
-Affine vanishing says a single affine chart contributes nothing above degree $0$, so all cohomology is a gluing phenomenon; Grothendieck vanishing says nothing survives above the dimension of the space.
-The hypotheses are complementary: affine vanishing requires a quasicoherent sheaf, while Grothendieck vanishing applies to every abelian sheaf on a Noetherian space.
+For a quasicoherent sheaf $\mcf$ on a noetherian separated scheme $X$ with a finite affine open cover $\mathfrak U$, every finite intersection of members of $\mathfrak U$ is affine, affine vanishing makes $\mcf$ acyclic on each of them, and so the Čech complex of $\mathfrak U$ computes $H^*(X,\mcf)$ ([[D-PTIW0]]).
+Grothendieck vanishing holds for every sheaf of abelian groups on a noetherian topological space, with bound $\dim X$.
+Affine vanishing fails for sheaves that are not quasicoherent: on $X=\AA^1_k$ with distinct closed points $P,Q$, $U=X\setminus\{P,Q\}$, and $j\colon U\hookrightarrow X$, the sequence $0\to j_!\ZZ_U\to\ZZ_X\to\ZZ_P\oplus\ZZ_Q\to0$, with skyscraper sheaves $\ZZ_P,\ZZ_Q$, gives $H^1(X,j_!\ZZ_U)\cong\ZZ^2/\ZZ\neq0$, because $\ZZ_X$ is flasque on the irreducible space $X$ [@Har10a, Exercise III.2.1].
 
 ## The long exact sequence
 
 [[PR-COHLES]]
 
-Many computations apply this sequence to an ideal sequence or skyscraper sequence, with one term known from projective space.
-The twisted ideal sequence converts vanishing results into numerical cohomology calculations.
+For a closed subscheme $Y\subseteq\PP^n$ with ideal sheaf $\mci_Y$, the twisted ideal sequence $0\to\mci_Y(d)\to\OO_{\PP^n}(d)\to\OO_Y(d)\to0$ and $H^i(\PP^n,\OO(d))=0$ for $0<i<n$ give $H^i(Y,\OO_Y(d))\cong H^{i+1}(\PP^n,\mci_Y(d))$ for $1\le i\le n-2$.
+For a $k$-rational point $p$ on a curve over $k$, the skyscraper sequence $0\to\OO(D-p)\to\OO(D)\to k(p)\to0$ gives $\ell(D)-1\le\ell(D-p)\le\ell(D)$.
 
 ## The six operations
 
