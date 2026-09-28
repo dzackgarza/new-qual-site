@@ -22,28 +22,39 @@ Show that the general version of Ascoli's theorem implies the classical version 
 :::
 
 ::: {.solution}
-<1>1. The classical Ascoli theorem (Theorem 45.4) states: a subset $\mathcal{F}$ of $C(X, \mathbb{R}^n)$ (for compact Hausdorff $X$) is compact iff it is closed, bounded, and equicontinuous.
+The classical version (Theorem 45.4) states: for $X$ compact and $\mathcal C(X, \RR^n)$ in the uniform topology, a subset $\mathcal F$ has compact closure if and only if $\mathcal F$ is equicontinuous and pointwise bounded.
+
+The general version states: for a space $X$, a metric space $(Y, d)$, and $\mathcal C(X, Y)$ in the topology of compact convergence, if $\mathcal F \subseteq \mathcal C(X, Y)$ is equicontinuous and each set $\mathcal F_a = \{f(a) : f \in \mathcal F\}$ has compact closure, then $\mathcal F$ is contained in a compact subspace of $\mathcal C(X, Y)$; the converse holds if $X$ is locally compact Hausdorff.
+
+Let $X$ be compact Hausdorff and $Y = \RR^n$.
+
+<1>1. On $\mathcal C(X, \RR^n)$, the topology of compact convergence equals the uniform topology, and it is Hausdorff.
+
 ::: {.proof}
-statement of the classical version.
+$X$ is compact, so the two topologies coincide by [[E-2AWO8]]. The uniform topology is induced by a metric.
 :::
 
-<1>2. The general Ascoli theorem states: a subset $\mathcal{F}$ of $C(X, Y)$ (for $X$ compact Hausdorff, $Y$ metric) is compact iff it is closed, pointwise relatively compact, and equicontinuous.
+<1>2. For $a \in X$, $\mathcal F_a$ has compact closure in $\RR^n$ if and only if $\mathcal F_a$ is bounded.
+
 ::: {.proof}
-statement of the general version.
+The closure of a bounded subset of $\RR^n$ is closed and bounded, hence compact by the Heine--Borel theorem; a set with compact closure is bounded.
 :::
 
-<1>3. For $Y = \mathbb{R}^n$, "pointwise relatively compact" is equivalent to "bounded" (a subset of $\mathbb{R}^n$ is relatively compact iff it is bounded).
+<1>3. If $\mathcal F$ is equicontinuous and pointwise bounded, then $\overline{\mathcal F}$ is compact.
+
 ::: {.proof}
-Heine–Borel.
+By step <1>2 each $\mathcal F_a$ has compact closure, so the general version puts $\mathcal F$ inside a compact subspace $K$. By step <1>1, $K$ is closed in the Hausdorff space $\mathcal C(X, \RR^n)$, so $\overline{\mathcal F} \subseteq K$ is a closed subset of a compact space, hence compact.
 :::
 
-<1>4. Hence the general version, specialized to $Y = \mathbb{R}^n$, gives exactly the classical version: $\mathcal{F}$ compact iff closed, bounded, and equicontinuous.
+<1>4. If $\overline{\mathcal F}$ is compact, then $\mathcal F$ is equicontinuous and pointwise bounded.
+
 ::: {.proof}
-<1>2 and <1>3.
+$\mathcal F$ is contained in the compact subspace $\overline{\mathcal F}$. A compact Hausdorff space is locally compact Hausdorff, so the converse in the general version shows that $\mathcal F$ is equicontinuous and each $\mathcal F_a$ has compact closure; by step <1>2, each $\mathcal F_a$ is bounded.
 :::
 
 <1>5. Q.E.D.
+
 ::: {.proof}
-<1>4.
+Steps <1>3 and <1>4 are the two implications of the classical version.
 :::
 :::
