@@ -63,10 +63,9 @@ So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to
 [[PR-2MTPE]]
 
 :::{.proof}
-An inelegant proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum to pattern-match.
+A direct proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum.
 \
 
-Behold:
 \[
 \sum_{m\leq k \leq n} a_k b_k 
 &= \sum_{m\leq k \leq n} (A_k - A_{k-1}) b_k \\

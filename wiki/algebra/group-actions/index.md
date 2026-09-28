@@ -10,7 +10,7 @@ topics:
 
 Counting arguments, and the subgroups they produce.
 
-- [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]], the seven arguments and the order to try them in.
+- [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]], criteria for a proper nontrivial normal subgroup.
 
 - [[algebra/group-actions/orbit-stabilizer|Orbit-stabilizer]], Lagrange, Cauchy, and the four standard actions.
 

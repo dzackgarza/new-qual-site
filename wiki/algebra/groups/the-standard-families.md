@@ -8,13 +8,11 @@ topics:
 
 # The standard families
 
-These are the model groups to test every general statement against.
-Cyclic groups are the completely arithmetic case; dihedral and quaternion groups are the first recurring nonabelian examples; symmetric and alternating groups supply permutation actions and simple groups; finite $p$-groups are where center and Sylow arguments are strongest.
+Cyclic groups connect group structure with divisibility; dihedral and quaternion groups provide nonabelian examples; symmetric and alternating groups supply permutation actions and simple groups; finite $p$-groups have nontrivial centres.
 
 ## Nonabelian models and $p$-groups
 
-Know the presentations and obvious normal subgroups of the dihedral and quaternion families well enough to produce examples without recomputing them.
-A transitive subgroup should be read through its action, while a $p$-group should immediately suggest the class equation, a nontrivial center, and induction on the group order.
+Presentations describe the dihedral and quaternion families by generators and relations. For finite $p$-groups, the class equation gives a nontrivial centre, whose quotients support induction on group order.
 
 [[D-4R2Z5]]
 
@@ -58,5 +56,5 @@ The structure theorem reduces a finite abelian group further to a product of cyc
 
 ::: {.remark title="Cycle type is the invariant"}
 Conjugacy classes in $S_n$ are exactly the cycle types, so the class equation for $S_n$ is a statement about partitions of $n$.
-In $A_n$ a class can split into two, which is what makes $A_n$ harder and is the source of the exceptional behaviour at $n=4$.
+An $S_n$ conjugacy class contained in $A_n$ can split into two $A_n$ conjugacy classes.
 :::

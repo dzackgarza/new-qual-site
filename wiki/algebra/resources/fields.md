@@ -7,7 +7,7 @@ order: 60
 
 ## Notes and review
 
-- [[SRC-UCSD-ALG-REVIEW-FIELDS|UCSD Field Theory Qual Review]], with the review PDF as collection provenance and canonical problem links.
+- [[SRC-UCSD-ALG-REVIEW-FIELDS|UCSD Field Theory Qual Review]], with a PDF and problem links.
 
 - [Galois theory notes (Edinburgh)](https://www.maths.ed.ac.uk/~tl/gt/gt.pdf)
 

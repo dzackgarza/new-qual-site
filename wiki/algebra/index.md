@@ -5,11 +5,11 @@ order: 10
 
 # Algebra
 
-## What the exam asks
+## Problem-solving methods
 
-The paper is a small number of recurring questions, and each one is decided by a page here.
+These pages collect criteria and examples for group, ring, module, matrix, and field computations.
 
-| The question | Where it is decided |
+| The question | Methods and examples |
 | --- | --- |
 | Show $G$ is not simple, or classify the groups of order $n$ | [[algebra/group-actions/show-g-is-not-simple\|Show $G$ is not simple]] |
 | Is this group abelian? | [[algebra/groups/is-this-group-abelian\|Is this group abelian?]] |
@@ -40,7 +40,7 @@ Three of those are the same theorem in different clothes: classifying a finitely
 
 Across the chapters:
 
-- [[algebra/review|Review sheet]] -- every statement, on one page.
+- [[algebra/review|Review sheet]] -- statements grouped by topic.
 
 - [[algebra/counterexamples|Counterexamples]] -- filed by the statement each refutes.
 

@@ -8,7 +8,7 @@ topics:
 
 # Classifying a singularity
 
-A point where $f$ misbehaves is one of four things, and the exam question is almost always which one.
+A point where $f$ is not holomorphic is one of four things, and the question is almost always which one.
 There are three tests, they cost different amounts, and the right one depends on what you can compute.
 
 ## First: is it isolated?
@@ -48,7 +48,7 @@ For $e^{1/z}$ at $0$: along $\RR_{>0}$ it blows up, along $\RR_{<0}$ it goes to 
 Riemann's theorem says bounded near $z_0$ is already enough: the singularity is removable and $f$ extends holomorphically.
 You never have to produce the limiting value.
 
-Use this whenever you can estimate $\abs f$ but cannot evaluate it, which is the usual shape of a qual problem that says "show $f$ extends to an entire function".
+Use this whenever you can estimate $\abs f$ but cannot evaluate it, which is the usual shape of a problem that says "show $f$ extends to an entire function".
 
 ## The Laurent test: the only one that gives the order
 

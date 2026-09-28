@@ -54,7 +54,7 @@ Since $\Aut(\CP^1) \cong \PGL_2(\CC)$, acting on projective coordinates gives a 
 \[
 \matt a b c d \cdot \tv{z: 1}^t = \tv{ {az+b \over cz + d }: 1} = \tv{f(z): 1}
 .\]
-This is the fastest way to invert one: invert the matrix and ignore the determinant, which only scales every entry.
+This is one way to invert one: invert the matrix and ignore the determinant, which only scales every entry.
 \[
 {az + b\over cz+ d} \leadsto \matt a b c d \inv = \matt d {-b} {-c} a
 \leadsto

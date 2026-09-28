@@ -6,15 +6,15 @@ order: 20
 
 ## Books
 
-- Standards
+- Algebra
 
-  - [@DF04, except chaps. 15-17]
+  - [@DF04]
 
   - Groups, Rings, Modules: [Cambridge Part IB lecture notes](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
 
   - Galois Theory: [Cambridge Part II lecture notes](https://dec41.user.srcf.net/notes/II_M/galois_theory.pdf)
 
-- Extra Topics
+- Representation theory and Lie theory
 
   - Serre: Representations of Finite Groups (Sections 1-6).
 

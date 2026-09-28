@@ -8,10 +8,9 @@ topics:
 
 # Compute this Galois group
 
-You are given $f \in \QQ[x]$ and asked for $\Gal(\SF(f)/\QQ)$.
-The computation is always the same shape: bound the group above by $S_n$, below by the elements you can exhibit, and squeeze until one candidate survives.
+For $f \in \QQ[x]$, the action on its roots embeds $\Gal(\SF(f)/\QQ)$ in a symmetric group. Degree bounds and exhibited cycle types restrict the possible subgroups.
 
-> Useful: [Galois theory exercises and solutions](https://feog.github.io/chap4.pdf).
+> [Galois theory exercises and solutions](https://feog.github.io/chap4.pdf).
 
 ## 1. The degree bounds the group
 
@@ -21,7 +20,7 @@ The computation is always the same shape: bound the group above by $S_n$, below 
   n\divides \size G \divides n!
   .\]
   Transitivity is orbit-stabilizer: the roots form a single orbit, so $n = \size{\Orb(r)}$ divides $\size G$.
-- $[\QQ(\alpha):\QQ] = \deg \min_\alpha$ divides $[\SF(f):\QQ]$ for every root $\alpha$, and this is usually *not* $\deg f$.
+- $[\QQ(\alpha):\QQ] = \deg \min_\alpha$ divides $[\SF(f):\QQ]$ for every root $\alpha$; it can differ from $\deg f$ when $f$ is reducible.
 
 [[PR-LXSGE]]
 
@@ -35,7 +34,7 @@ Since $G$ acts transitively on the $n$ roots, orbit-stabilizer gives $\size G = 
 
 ## 2. The transitive subgroups of $S_n$ are the candidate list
 
-:::{.fact title="Transitive subgroups for qual-sized $n$"}
+:::{.fact title="Transitive subgroups in degrees one through five"}
 Writing $C_n$ for the cyclic group of order $n$, with nonabelian groups in blue:
 
 | $n \text{ in }S_n$ | Transitive Subgroups        | Sizes |
@@ -46,7 +45,7 @@ Writing $C_n$ for the cyclic group of order $n$, with nonabelian groups in blue:
 | 4            | ${\color{blue}S_4, A_4, D_4}, C_4, C_2^2$       |24,12,8,4,4 |
 | 5            | ${\color{blue}S_5, A_5 , F_5\cong C_5\semidirect C_4, D_5}, C_5$ | 120,60,20,10,5 |
 
-Sizes worth having: $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, $\size{F_5} = 20$.
+Group orders: $\size{D_n} = 2n$, $\size{S_n} = n!$, $\size{A_n} = n!/2$, $\size{F_5} = 20$.
 
 For degree $8$, which arises as a quadratic extension of a quartic one, $Q_8\leq S_8$ is transitive and nonabelian of order $8$, with
 \[
@@ -57,18 +56,18 @@ $F_5$ has presentation $\gens{a,b \st a^5, b^4, bab\inv = a^2}$.
 
 :::
 
-## 3. The discriminant halves the list
+## 3. The discriminant detects containment in $A_n$
 
 [[D-W3DSO]]
 
 \[
 G \subseteq A_n \iff \sqrt{\Delta_f} \in k
 ,\]
-so one square-root test cuts the candidates in half.
+so the square class of the discriminant determines whether $G$ lies in $A_n$.
 
 :::{.remark title="Computing it"}
 $\Delta_f = \prod_{i<j}(r_i - r_j)^2$, which has $n(n-1)/2$ factors.
-The cases worth memorizing:
+In degrees two and three:
 
 - Quadratic: $f = ax^2+bx+c$ gives $\Delta = b^2-4ac$.
 - Cubic: $f = ax^3+bx^2+cx+d$ gives $\Delta = b^2c^2 - 4ac^3 - 4b^3d - 27a^2d^2 + 18abcd$.
@@ -87,12 +86,11 @@ This requires the factorization mod $p$ to be squarefree: repeated factors inval
 
 :::
 
-The factorization type of $f \bmod p$ is the cycle type of some element of $G$, so each prime you try exhibits an element.
-Two or three primes usually pin the group down.
+The squarefree factorization type of $f \bmod p$ gives the cycle type of an element of $G$. These types restrict the candidate subgroups.
 
 :::{.example title="Ruling candidates out by Lagrange"}
-For $\deg f = 5$ with exactly one conjugate pair of roots: complex conjugation is a transposition $\tau = (1,2)$, and $5 \divides \size G$ gives a $5\dash$cycle $\sigma$.
-Then $\sigma\tau\sigma\inv = (1,5)$ and $(1,5)\tau = (1,5,2)$ is a $3\dash$cycle, so $3\divides\size G$, which rules out $F_5$ of order $20$.
+For irreducible $f$ of degree $5$ with exactly one conjugate pair of nonreal roots, complex conjugation is a transposition $\tau$, and $5 \divides \size G$ gives a $5\dash$cycle $\sigma$.
+The conjugates $\sigma^i\tau\sigma^{-i}$ correspond to the edges of a connected graph on the five roots, and their transpositions generate $S_5$. Thus $G=S_5$.
 
 :::
 
@@ -102,7 +100,7 @@ $f(x) = x^5+2x+1$: mod $3$ it has no roots and is irreducible, so $G$ contains a
 :::
 
 :::{.example title="Two primes suffice"}
-$f(x) \da x^4+x+1$: type $(4)$ mod $2$ and type $(1,3)$ mod $3$, so $G$ contains a $4\dash$cycle and a $3\dash$cycle, which forces $G = A_4$.
+$f(x) \da x^4+x+1$: type $(4)$ mod $2$ and type $(1,3)$ mod $3$, so $G$ contains a $4\dash$cycle and a $3\dash$cycle, which forces $G = S_4$.
 
 :::
 
@@ -119,7 +117,7 @@ The same trick settles $x^7-x-1$ (types $(7)$ and $(2,5)$, with $(2,5)^5$ a tran
 :::{.remark title="By $n$"}
 $n=4$:
 
-- $C_2^2$ against $C_4$: $C_2^2$ has three elements of order $2$ and $C_4$ has one, so a cycle of type $(2,2)$ forces $C_2^2$.
+- $C_2^2$ against $C_4$: $C_2^2$ has three elements of order $2$ and $C_4$ has one. Both contain a double transposition; an element of order $4$ distinguishes $C_4$.
 - $S_4$ against $A_4$: $S_4$ has a Sylow $2\dash$subgroup of order $8$ and $A_4$, of order $12$, cannot.
   A transposition in $G$ rules out $A_4$ entirely.
 
@@ -136,7 +134,7 @@ $n=5$:
 \envlist
 
 - An element of $A_n$ has an even number of even-length cycles, possibly zero.
-- $A_4$ has no subgroup isomorphic to $C_2^2$ acting transitively, and no transposition.
+- $A_4$ contains the transitive subgroup $\{1,(12)(34),(13)(24),(14)(23)\}\cong C_2^2$, and contains no transposition.
 
 :::
 
@@ -164,7 +162,7 @@ See [Keith Conrad's notes on generating sets](https://kconrad.math.uconn.edu/blu
 - $k$ conjugate pairs of complex roots give an element of cycle type $(2,2,\dots,2)$ with $k$ transpositions, from complex conjugation.
 - If every exponent in $f$ is even then roots come in pairs $\pm r$, and $G$ preserves the pairing.
   $x^4-5x^2+5$ is the standard example.
-- $\QQ(\zeta_a) = \QQ(\zeta_b)$ exactly when $a = 2b$ with $b$ odd.
+- For positive $a,b$, $\QQ(\zeta_a) = \QQ(\zeta_b)$ exactly when $a=b$, or one of $a,b$ is twice the other and the latter is odd.
 - Rational root test: for $f = a_nx^n + \cdots + a_0$, any rational root is $p_0/p_n$ with $p_i \divides a_i$.
 
 Subgroup lattices for small groups: [tables of small groups](https://hobbes.la.asu.edu/groups/groups.html).
@@ -174,7 +172,7 @@ Subgroup lattices for small groups: [tables of small groups](https://hobbes.la.a
 :::{.remark title="Matching degrees to indices"}
 $L/K/F$ corresponds to $1/H/G$, and
 \[
-[L:K] = [H:1] = \size H, \qquad [F:K] = [G:H], \qquad [L:F] = [G:1] = \size G
+[L:K] = [H:1] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = [G:1] = \size G
 .\]
 
 :::

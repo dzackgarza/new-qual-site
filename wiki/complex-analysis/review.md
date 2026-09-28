@@ -5,7 +5,7 @@ order: 7
 
 # Review sheet
 
-Every statement the exam assumes you know, on one page, in the order the chapters develop them.
+Every statement these chapters develop, on one page, in the order the chapters develop them.
 Nothing is proved here; each result links to the chapter that proves it and to the problems that use it.
 
 ## Holomorphic functions
@@ -123,4 +123,4 @@ Proved in [[complex-analysis/conformal-maps/index|Conformal maps]].
 ## What to check before using each one
 
 The statements above are the easy half.
-The hypotheses that actually decide exam problems are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the examples showing each hypothesis is necessary are on [[complex-analysis/counterexamples|Counterexamples]].
+The hypotheses that decide exam problems are collected on [[complex-analysis/cauchy-theory/theorems-that-give-a-constant|Theorems that give a constant]], and the examples showing each hypothesis is necessary are on [[complex-analysis/counterexamples|Counterexamples]].

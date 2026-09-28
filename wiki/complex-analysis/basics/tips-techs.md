@@ -17,9 +17,9 @@ Some useful notation:
 - $\Omega$ an open simply-connected subset of $\CC$.
 - $\OO(\Omega), \Hol(\Omega), \Hol(\Omega, \CC)$ the holomorphic functions $f:\Omega \to \CC$, equipped with the structure of a $\CC\dash$algebra.
 
-## Greatest Hits
+## Named theorems
 
-Things to know well:
+The working list:
 
 - Estimates for derivatives
 - [[complex-analysis/cauchy-theory/cauchys-theorem]]
@@ -159,9 +159,9 @@ Integral of a complex exponential:
 
 ## Arithmetic
 
-Some silly arithmetic tricks:
+Some arithmetic identities:
 
-- Absolutely essential: $\abs{f}^2 = f\bar{f}$.
+- $\abs{f}^2 = f\bar{f}$.
 - $z$ is purely imaginary $\iff \bar{z} = -z$.
 - $z\in \RR \iff \bar z = z$.
 - $\log\qty{\abs{z}} = {1\over 2}\log\qty{\abs{z}^2} = {1\over 2}\log\qty{x^2 + y^2}$, which is easier to differentiate.

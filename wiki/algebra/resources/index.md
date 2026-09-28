@@ -31,4 +31,4 @@ Books, topic lists, problem sheets, and solutions for the algebra qual.
 
 - [[algebra/resources/representations|Representation Theory Resources]].
 
-Browse the [Sources listing](exams.html) by subject, institution, and year for exam collections already represented in the corpus.
+The [Sources listing](exams.html) groups exam collections by subject, institution, and year.

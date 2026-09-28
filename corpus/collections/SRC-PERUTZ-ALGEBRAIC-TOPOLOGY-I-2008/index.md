@@ -151,5 +151,5 @@ source:
 ---
 
 ::: remark
-The retained PDF is Tim Perutz’s Algebraic Topology I lecture notes for Fall 2008. Exercise statements are extracted from the PDF’s exercise typography; the inventory’s earlier count of 58 undercounted the 89 explicit `Exercise x.y` statements.
+The retained PDF is Tim Perutz's Algebraic Topology I lecture notes for Fall 2008. The 89 exercise statements are extracted from the PDF's exercise typography. The sections present are 1--10, 12--17, 19--21, 23--24, and 26; sections 11, 18, 22, and 25 are not present in the PDF.
 :::

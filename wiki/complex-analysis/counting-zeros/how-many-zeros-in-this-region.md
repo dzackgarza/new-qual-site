@@ -11,7 +11,7 @@ topics:
 
 # How many zeros in this region?
 
-Counting the zeros of a function in a region is one exam question with three standard answers, and choosing between them is the whole difficulty.
+Counting the zeros of a function in a region is one question with three standard answers, and choosing between them is the whole difficulty.
 The choice is made on what you are handed, not on what the theorems say.
 
 ## Can you just factor it?

@@ -16,7 +16,7 @@ Where the tower on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of r
 Factorization starts with divisibility modulo units.
 Associates differ by a unit and therefore represent the same factor for uniqueness questions.
 An irreducible element cannot be factored nontrivially; a prime element has the stronger divisibility property $p\mid ab\Rightarrow p\mid a$ or $p\mid b$.
-Keeping those two notions distinct is the point of most counterexamples in this section.
+The distinction is witnessed by irreducible nonprime elements in $\ZZ[\sqrt{-5}]$.
 
 [[D-AVBIP]]
 
@@ -33,8 +33,7 @@ Keeping those two notions distinct is the point of most counterexamples in this 
 [[D-R4H6F]]
 
 ::: {.remark title="Prime against irreducible"}
-Prime always implies irreducible in a domain; the converse needs a UFD, and its failure is exactly what $\ZZ[\sqrt{-5}]$ exhibits.
-A problem that asks you to distinguish the two is asking whether the ring is a UFD.
+Prime implies irreducible in a domain, and the converse holds in a UFD. An irreducible nonprime element proves that a domain is not a UFD.
 :::
 
 ## Types of ring
@@ -61,7 +60,7 @@ These hypotheses determine which cancellation and factorization arguments are le
 
 ### The big ones
 
-For integral domains, remember the implication chain
+The implication chain is
 \[
 \text{Euclidean domain}\Longrightarrow\text{PID}\Longrightarrow\text{UFD}
 \Longrightarrow\text{integral domain}.
@@ -85,11 +84,10 @@ None of the reverse implications is automatic, so examples separating adjacent c
 
 ### Others
 
-The remaining adjectives answer different structural questions and should not be read as further steps in the chain above.
+The remaining properties concern ideal chains, nilpotents, maximal ideals, and dimension.
 Noetherian means ascending chains of ideals stop; reduced means nilpotents vanish; local means there is a unique maximal ideal.
 Valuation rings and DVRs organize divisibility locally, while Dedekind domains replace global element factorization by unique factorization of nonzero ideals.
 Regularity is a local dimension/generator condition.
-In a problem, identify which of these properties is actually being used rather than trying to place the ring on one master ladder.
 
 [[D-TZXBO]]
 

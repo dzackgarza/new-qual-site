@@ -7,7 +7,7 @@ topics:
 
 # Separability
 
-The hypothesis that is automatic in characteristic zero and over finite fields, and therefore the one a problem is testing whenever it is stated in characteristic $p$.
+Algebraic extensions of fields of characteristic zero and of finite fields are separable. Over imperfect fields, inseparability can occur.
 
 [[D-ZT46D]]
 
@@ -32,7 +32,7 @@ The canonical inseparable extension is $\FF_p(t^{1/p})/\FF_p(t)$, where $x^p - t
 ## Permanence and the Galois condition
 
 For finite extensions, separability is the condition that the embedding count has the expected size: no degree is lost to repeated roots.
-Over a perfect base field it is automatic for algebraic extensions, which is why characteristic zero and finite fields usually let a Galois problem focus on normality.
+Over a perfect base field it is automatic for algebraic extensions, so a finite extension is Galois exactly when it is normal.
 Separability is also stable through towers and composita, so once the pieces of a construction are separable the combined extension remains in the separable regime.
 
 [[PR-3VQBI]]
@@ -53,4 +53,4 @@ Separability is also stable through towers and composita, so once the pieces of 
 
 A finite extension is Galois when normality and separability hold together.
 In practice, constructing an extension as a splitting field supplies normality; the derivative/perfect-field tests above supply separability.
-Keeping those two checks separate prevents the common mistake of treating "splitting field" alone as a synonym for "Galois" in positive characteristic.
+A splitting field in positive characteristic need not be separable, as the extension $\FF_p(t^{1/p})/\FF_p(t)$ above shows.

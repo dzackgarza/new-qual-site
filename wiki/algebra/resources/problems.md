@@ -4,7 +4,7 @@ order: 40
 
 # Algebra Problem Collections
 
-Two compiled algebra-prelim scans are already represented as source collections; use the collection pages for the problems and the original PDF provenance:
+Compiled algebra-prelim papers, with problems and original PDFs:
 
 - [[SRC-ART-ALG-2010-2015-PRELIMS]]
 

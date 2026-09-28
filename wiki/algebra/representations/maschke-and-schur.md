@@ -22,7 +22,6 @@ Maschke decomposes finite complex representations into irreducibles; Schur deter
 Maschke says every representation of a finite $G$ over a field of characteristic not dividing $\size G$ is a direct sum of irreducibles.
 Thus $\CC[G]$ is semisimple, and a finite-dimensional complex representation is determined up to isomorphism by its irreducible multiplicities.
 
-Both hypotheses are load-bearing.
 Over $\FF_p$ with $p \divides \size G$ it fails: the regular representation of $\ZZ/p$ over $\FF_p$ is indecomposable but not irreducible.
 For infinite $G$ it can fail as well; integral and modular representation theory therefore require non-semisimple methods.
 
@@ -55,4 +54,4 @@ $\CC[G] \cong \bigoplus_i \End(V_i) \cong \bigoplus_i \Mat_{d_i}(\CC)$ over the 
 \size G = \sum_i d_i^2
 ,\]
 and the number of irreducibles equals the number of conjugacy classes.
-Those two facts determine the degrees outright for small groups, which is how a character table is started.
+These facts constrain the degrees and the number of rows in the character table.

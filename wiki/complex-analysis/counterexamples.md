@@ -8,7 +8,7 @@ topics:
 # Counterexamples
 
 Filed by the hypothesis they show is load-bearing.
-Half the true-or-false questions on the exam are one of these with the hypothesis quietly removed, so the useful form to remember is not the example but the theorem it breaks.
+Each example has a hypothesis quietly removed, so the useful form to remember is not the example but the theorem it breaks.
 
 ## Liouville
 

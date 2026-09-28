@@ -35,13 +35,13 @@ topics:
 [[PR-FM5FN]]
 
 ::: {.remark title="What corresponds to what"}
-The correspondence is inclusion-reversing, and the three dictionary entries used constantly are
+The correspondence reverses inclusion and relates degrees to subgroup indices:
 \[
-[L:K] = \size H, \qquad [F:K] = [G:H], \qquad [L:F] = \size G
+[L:K] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = \size G
 \]
-for $L/K/F$ matching $1/H/G$.
+for a finite Galois extension $L/F$ and intermediate field $K$, with $G=\Gal(L/F)$ and $H=\Gal(L/K)$.
 An intermediate field is normal over the base exactly when its subgroup is normal in $G$, and then the quotient $G/H$ is its Galois group.
-That is the entire content: normality of extensions and normality of subgroups are the same condition read on two sides.
+Thus normality of an intermediate extension corresponds to normality of its subgroup.
 :::
 
 ## Showing an extension is Galois
@@ -51,7 +51,7 @@ That is the entire content: normality of extensions and normality of subgroups a
 
 - Eisenstein, including after shifting or inverting.
 
-- Irreducible over some $\FF_p[x]$ implies irreducible over $\ZZ[x]$.
+- A primitive polynomial in $\ZZ[x]$ whose reduction modulo a prime $p$ has the same degree and is irreducible is irreducible over $\QQ$ and $\ZZ$.
 
 - A quadratic with no root in the field is irreducible.
 
@@ -69,7 +69,7 @@ That is the entire content: normality of extensions and normality of subgroups a
 
 - Algebraic extensions of perfect fields are separable, so in characteristic zero only normality needs checking.
 
-- Harder routes: show $[L:k]_s = [L:k]$, or use that separability is a distinguished class.
+- Other criteria: $[L:k]_s = [L:k]$, or the permanence properties of separability as a distinguished class.
 
 **Normality:**
 
@@ -87,7 +87,7 @@ That is the entire content: normality of extensions and normality of subgroups a
 [[PR-PB6UE]]
 
 ::: {.remark}
-Finding a good prime is the hard part, but irreducibility over a small field can be checked exhaustively: enumerate the low-degree polynomials and divide.
+Over a finite field, irreducibility can be checked by division by the monic irreducible polynomials of degree at most half the degree of $f$.
 :::
 
 ::: {.example title="Irreducibility mod $p$"}
@@ -99,7 +99,7 @@ $f(x) \da x^4 + x + 1$ is irreducible over $\ZZ[x]$: mod $2$, neither $0$ nor $1
 [[FT-2P5VV]]
 
 ::: {.remark title="Shifting"}
-If $f(x+a)$ satisfies Eisenstein for some $p$, then $f$ is irreducible, since $\Delta_{f(x)} = \Delta_{f(x+a)}$ and a working prime divides the discriminant.
+If $a\in\QQ$ and $f(x+a)$ is irreducible over $\QQ$ by Eisenstein's criterion, then $f$ is irreducible: substitution $x\mapsto x+a$ is an automorphism of $\QQ[x]$, with inverse $x\mapsto x-a$.
 :::
 
 [[T-AILFB]]

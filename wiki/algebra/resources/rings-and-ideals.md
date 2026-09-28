@@ -7,7 +7,7 @@ order: 50
 
 ## Notes and review
 
-- [[SRC-UCSD-ALG-REVIEW-RINGS-MODULES|UCSD Ring and Module Theory Qual Review]], with the review PDF as collection provenance; its modified scalar-extension problem is recorded as an explicit variant card.
+- [[SRC-UCSD-ALG-REVIEW-RINGS-MODULES|UCSD Ring and Module Theory Qual Review]], with a PDF and problems, including a scalar-extension variant.
 
 - [McNulty's ring-theory qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/rng.pdf)
 

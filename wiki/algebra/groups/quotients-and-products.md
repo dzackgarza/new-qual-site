@@ -16,7 +16,7 @@ The isomorphism theorems say precisely when these operations undo one another, a
 
 For a homomorphism $\varphi:G\to H$, the first theorem replaces $G$ by $G/\ker\varphi$ without changing its image.
 The remaining theorems control a subgroup against a normal subgroup, nested normal subgroups, and the subgroup lattice of a quotient.
-On an exam they are usually used backwards: recognize a quotient already present in the problem and choose the theorem that identifies it with something easier.
+These theorems identify quotients through homomorphisms and inclusions.
 
 [[T-I5N43]]
 
@@ -58,7 +58,7 @@ For cyclic kernels, $\Aut(\ZZ/n) \cong (\ZZ/n)^\times$, so the possible actions 
 ## Automorphism groups
 
 Automorphism counts enter twice: as a classification invariant in their own right, and as the target for the action $H\to\operatorname{Aut}(N)$ defining a semidirect product.
-For cyclic $N$, reduce immediately to $(\ZZ/n)^{\times}$.
+For cyclic $N$ of order $n$, the automorphism group is $(\ZZ/n)^{\times}$.
 
 [[PR-N6S6P]]
 
@@ -66,7 +66,7 @@ For cyclic $N$, reduce immediately to $(\ZZ/n)^{\times}$.
 
 Finite abelian groups are the case where the product decomposition is canonical enough to classify completely.
 The invariant-factor and elementary-divisor forms encode the same module decomposition in different groupings; converting between them is a matter of regrouping prime powers.
-Use whichever form makes the requested invariant—order, exponent, or quotient structure—visible fastest.
+Both forms determine the order, exponent, and quotient structure.
 
 [[D-SS34F]]
 

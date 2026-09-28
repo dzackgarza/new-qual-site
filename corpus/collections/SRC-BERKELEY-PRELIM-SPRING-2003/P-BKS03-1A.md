@@ -26,5 +26,5 @@ Prove that the following are equivalent:
 :::
 
 ::: {.solution}
-Obviously (a) implies (b). If (b) holds, then in particular, the standard basis vectors $e _ { j }$ are eigenvectors of A, so A is diagonal, say with entries $A _ { i i } = \lambda _ { i }$ . If $\lambda _ { i } \neq \lambda _ { j }$ , then $A ( e _ { i } + e _ { j } ) = \lambda _ { i } e _ { i } + \lambda _ { j } e _ { j }$ is not a scalar multiple of $e _ { i } + e _ { j }$ This contradicts the hypothesis that $e _ { i } + e _ { j }$ is an eigenvector of A. Hence the diagonal entries $\lambda _ { i }$ are all equal and we have (a).
+(a) implies (b). If (b) holds, then in particular, the standard basis vectors $e _ { j }$ are eigenvectors of A, so A is diagonal, say with entries $A _ { i i } = \lambda _ { i }$ . If $\lambda _ { i } \neq \lambda _ { j }$ , then $A ( e _ { i } + e _ { j } ) = \lambda _ { i } e _ { i } + \lambda _ { j } e _ { j }$ is not a scalar multiple of $e _ { i } + e _ { j }$ This contradicts the hypothesis that $e _ { i } + e _ { j }$ is an eigenvector of A. Hence the diagonal entries $\lambda _ { i }$ are all equal and we have (a).
 :::

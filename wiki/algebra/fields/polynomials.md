@@ -30,14 +30,13 @@ Over $\ZZ[x]$, Gauss's lemma is the bridge back to $\QQ[x]$: strip off the conte
 [[FT-OXN3Y]]
 
 ::: {.corollary}
-A primitive $p\in \QQ[x]$ is irreducible exactly when it is irreducible in $\ZZ[x]$.
+A nonconstant primitive $p\in \ZZ[x]$ is irreducible in $\QQ[x]$ exactly when it is irreducible in $\ZZ[x]$.
 :::
 
 ## Standard factorizations and root counts
 
 ::: {.remark}
-Irreducibility arguments usually begin with an attempt to factor by hand, so the identities below are worth having ready.
-Descartes' rule bounds how many real roots such a factorization can account for, which is often enough to finish a problem over $\QQ$ or $\RR$.
+The identities below give polynomial factorizations. Descartes' rule bounds the number of positive and negative real roots through sign changes in the coefficients.
 :::
 
 [[FF-UC7SQ]] [[FF-ED3CD]]
@@ -50,7 +49,7 @@ Descartes' rule bounds how many real roots such a factorization can account for,
 
 Polynomial behavior depends on the base field.
 Characteristic determines the prime subfield and controls derivatives; automorphisms and fixed fields are what later turn roots into Galois data; perfectness is the condition that removes inseparability.
-Keep these notions adjacent to the polynomial criteria because changing the base field can change factorization and which roots lie in the base field.
+Changing the base field can change factorization and which roots lie in the base field.
 
 [[D-JNCUB]]
 

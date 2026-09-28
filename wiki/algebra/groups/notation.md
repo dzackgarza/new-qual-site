@@ -6,12 +6,12 @@ order: 0
 
 ## Standard Subsets
 
-- $\mcp(X), 2^X \da \Hom_\Set(\ts{0, 1}, X)$ all define the powerset of $X$.
+- $\mcp(X), 2^X$ denote the powerset of $X$, identified with $\Hom_\Set(X,\ts{0,1})$ by characteristic functions.
 
 - Commuting: 
 \[
 [g, h], [gh] && \text{Commutator of elements} \\
-&& \da ghg\inv \in G \\
+&& \da ghg\inv h\inv \in G \\
 \\
 [G,H], [GH] && \text{Commutator of subgroups} \\
 && \da \gens{ \ts{ [gh] \st g \in G,\, h \in H } } \leq G 
@@ -26,10 +26,10 @@ C_G(x), Z(x) && \text{Centralizer of an element} \\
 && \da \ts{g\in G \st [g, x] = 1} \subseteq G \\
 \\
 C_G(H), Z_G(H) && \text{Centralizer of a subgroup} \\
-&& \da \ts{g\in G \st [g, x] = 1\,\, \forall h\in H} = \Intersect_{h\in H} C_H(h) \subseteq G \\
+&& \da \ts{g\in G \st [g, h] = 1\,\, \forall h\in H} = \Intersect_{h\in H} C_G(h) \subseteq G \\
 \\
-[h], \Conj(h) && \text{Conjuacy class of an element} \\
-&& \da \ts{ ghg ^{-1} \st g\in G} \leq G \subseteq G \\
+[h], \Conj(h) && \text{Conjugacy class of an element} \\
+&& \da \ts{ ghg ^{-1} \st g\in G} \subseteq G \\
 \\
 .\]
 
@@ -67,4 +67,3 @@ X/G && \text{Set of orbits} \\
 &&
 \da \theset{x\in X \suchthat g\cdot x = x\, \forall g\in G} \subseteq X 
 .\]
-

@@ -7,8 +7,7 @@ topics:
 
 # Minimal and characteristic polynomials
 
-The two invariants every canonical-form question is asked in terms of.
-Viewing $V$ as an $F[t]\dash$module through $p(t)\actson v \da p(A)v$ is what makes them the same object seen twice, and it is the reason the structure theorem for modules over a PID answers questions about matrices.
+Viewing $V$ as an $F[t]\dash$module through $p(t)\actson v \da p(A)v$ relates both polynomials to the invariant factors: their product is the characteristic polynomial, and the largest is the minimal polynomial.
 
 [[PR-EDD7U]]
 
@@ -31,7 +30,7 @@ Viewing $V$ as an $F[t]\dash$module through $p(t)\actson v \da p(A)v$ is what ma
 [[T-SJCF7]]
 
 :::{.proof}
-By minimality $\min_A$ divides $\chi_A$.
+By Cayley--Hamilton, $\chi_A(A)=0$. Division by the minimal polynomial therefore gives $\min_A\mid\chi_A$.
 Every eigenvalue is a root of $\min_A$: for a nontrivial eigenpair $(\vector v_i, \lambda_i)$, linearity gives
 $$
 \min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
@@ -42,7 +41,7 @@ forcing $\min_A(\lambda_i) = 0$.
 
 :::{.remark title="What this leaves free"}
 $\min_A$ and $\chi_A$ have the same irreducible factors and $\min_A \divides \chi_A$, so all that is undetermined is the exponents.
-That is exactly the data the Jordan blocks encode, and it is why a problem can hand you both polynomials and still not determine the matrix.
+For each eigenvalue, the characteristic polynomial records the total block size and the minimal polynomial records the largest block size. These need not determine the partition into Jordan blocks.
 
 :::
 
@@ -52,7 +51,7 @@ That is exactly the data the Jordan blocks encode, and it is why a problem can h
 
 :::{.remark title="In practice"}
 Factor $\chi_A$, then test the divisors in increasing degree: the first monic $p$ with $p(A) = 0$ is $\min_A$.
-The search is short because the only candidates are products of the known irreducible factors with exponents between one and their multiplicity in $\chi_A$.
+The candidates are products of the known irreducible factors with exponents between one and their multiplicity in $\chi_A$.
 
 :::
 

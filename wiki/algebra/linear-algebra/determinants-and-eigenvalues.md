@@ -43,8 +43,7 @@ semisimple and unipotent pieces).
 Similarity and matrix equivalence are different relations.  Similarity changes the
 basis of one endomorphism and therefore preserves characteristic/minimal polynomials and
 Jordan data; row-column equivalence changes bases independently in domain and codomain
-and instead records the rank-type data of a linear map.  Decide which relation the
-problem is asking about before reaching for an invariant.
+and classifies a linear map by its rank.
 
 [[D-JIGMN]]
 

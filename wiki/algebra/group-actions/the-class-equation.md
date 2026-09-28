@@ -30,7 +30,7 @@ and taking cardinalities is the class equation.
 
 ## What it is used for
 
-Almost always for $p\dash$groups, where the two sides are compared mod $p$.
+For finite $p\dash$groups, comparison modulo $p$ gives a constraint on the centre.
 
 :::{.proposition title="A nontrivial $p$-group has nontrivial centre"}
 Every term $[G : Z(g)]$ in the sum is a proper divisor of $\size G = p^k$, hence divisible by $p$, and $\size G$ is divisible by $p$.
@@ -38,7 +38,7 @@ So $\size{Z(G)}$ is divisible by $p$ and in particular is not $1$.
 
 :::
 
-That single fact carries most of the $p\dash$group results: groups of order $p^2$ are abelian, a $p$-group has a normal subgroup of every order dividing $\size G$, and a $p\dash$group is nilpotent.
+Consequences include: groups of order $p^2$ are abelian, a finite $p$-group has a normal subgroup of every order dividing $\size G$, and a finite $p\dash$group is nilpotent.
 It is also the reason a $p\dash$group is never simple unless it has prime order.
 
 ## Burnside
@@ -82,8 +82,8 @@ and partitioning that sum by orbit collapses it:
 :::
 
 :::{.remark title="What Burnside is for"}
-Counting orbits, which on an exam means counting colourings up to symmetry: necklaces, faces of a cube, arrangements fixed by a rotation group.
-The left side is an average over the group of how much each element fixes, so the computation is always a sum over conjugacy classes.
+Burnside's lemma counts orbits, including colourings up to symmetry: necklaces, faces of a cube, and arrangements under a rotation group.
+The left side averages fixed-point counts over the group. Since conjugate elements have equal fixed-point counts, the sum can be grouped by conjugacy class.
 
 :::
 

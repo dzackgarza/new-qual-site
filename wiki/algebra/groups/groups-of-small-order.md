@@ -8,14 +8,13 @@ topics:
 
 # Groups of small order
 
-The table to check a counting argument against.
-The general classifications for orders $p$, $p^2$ and $pq$ give the shape of the answer; these are those results read off for the orders that actually appear.
+The classifications for orders $p$, $p^2$ and $pq$ relate the prime factorization of the order to cyclic, abelian, and semidirect-product descriptions.
 
 ## Groups of special orders
 
 Prime and prime-square orders are controlled before any case-by-case presentation is needed: groups of order \(p\) are cyclic, and groups of order \(p^2\) are abelian.
 For order \(pq\), the Sylow counts determine when the larger-prime Sylow subgroup is normal and hence when a semidirect-product description is available.
-The remaining lemmas in this block are the structural shortcuts used when the order has more prime factors: normal-subgroup arguments, solvability of \(p\)-groups, and Frattini-type reductions should be tried before enumerating presentations.
+For orders with more prime factors, the lemmas below concern normal subgroups, solvability of \(p\)-groups, and Frattini-type reductions.
 
 [[PR-LFGHA]]
 
@@ -33,8 +32,7 @@ The remaining lemmas in this block are the structural shortcuts used when the or
 
 ## The small orders
 
-Read these entries as outputs of those arguments, not as independent facts to prove by memorization.
-For a concrete order, first classify the abelian possibilities from the finite-abelian structure theorem, then use Sylow counts and conjugation actions to restrict the nonabelian possibilities; only then compare with the recorded list.
+The finite-abelian structure theorem classifies the abelian possibilities. Sylow counts and conjugation actions restrict the nonabelian possibilities.
 
 [[FF-VAKLJ]]
 
@@ -50,7 +48,6 @@ For a concrete order, first classify the abelian possibilities from the finite-a
 
 [[FF-JKCAM]]
 
-::: {.remark title="How to use the table"}
-Work the counting argument first and check the answer against the list; the table is a check, not a substitute.
-Two orders are worth memorizing outright because they recur: order $8$ has five groups, of which $D_4$ and $Q_8$ are the nonabelian ones, and order $12$ has five, of which $A_4$, $D_6$ and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
+::: {.remark title="Orders eight and twelve"}
+Up to isomorphism, order $8$ has five groups, of which $D_4$ and $Q_8$ are the nonabelian ones, and order $12$ has five, of which $A_4$, $D_6$ and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
 :::

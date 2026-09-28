@@ -20,23 +20,25 @@ audit:
 1. Let f be an entire function such that the image of f does not intersect $\{ z \in \mathbb { R } : z \geq 5 \}$ . Prove that $f$ is a constant.
 
 ::: {.solution}
-<1>1. $f(\C)$ omits $[5,\infty)$, so $\sqrt{5-f}$ entire omitting upper half-plane? Compose to bounded.
+The function $f$ is constant.
+
+<1>1. The auxiliary function $5-f$ omits the nonpositive real axis.
 ::: {.proof}
-$5-f$ omits $(-\infty,0]$, so $h=\sqrt{5-f}$ entire and $\operatorname{Re}h>0$? Actually $5-f$ omits $[0,\infty)$? Wait $f$ omits $[5,\infty)$, so $5-f$ omits $(-\infty,0]$.
+By hypothesis $f(z)\notin[5,\infty)$ for every $z$, so $5-f(z)\notin(-\infty,0]$. Thus the entire function $5-f$ takes values in $\mathbb C\setminus(-\infty,0]$.
 :::
 
-<1>2. $g=\sqrt{5-f}$ maps $\C$ into right half-plane, then $\phi=(g-1)/(g+1)$ bounded by $1$.
+<1>2. The function $5-f$ has a holomorphic square root.
 ::: {.proof}
-Cayley.
+The plane minus the nonpositive real axis is simply connected and does not contain $0$. On this domain the principal branch of the square root is holomorphic. Since $5-f$ is entire and maps into that domain, the composition $g(z)=\sqrt{5-f(z)}$ is entire, and its square is $5-f$. Moreover $\operatorname{Re}g(z)>0$ for every $z$, because a square root of a point off $(-\infty,0]$ lies in the open right half-plane.
 :::
 
-<1>3. $\phi$ entire bounded, so constant by Liouville, hence $f$ constant.
+<1>3. A Cayley transform of $g$ is a bounded entire function.
 ::: {.proof}
-<1>2.
+The map $\phi(w)=(w-1)/(w+1)$ sends the open right half-plane biholomorphically onto the unit disk, since for $\operatorname{Re}w>0$ one has $|w+1|^2-|w-1|^2=4\operatorname{Re}w>0$. The denominator $g(z)+1$ never vanishes because $\operatorname{Re}g(z)>0$. Hence $\phi\circ g$ is an entire function with $|\phi(g(z))|<1$ for all $z$.
 :::
 
-<1>4. Q.E.D.
+<1>4. Liouville's theorem forces $f$ to be constant.
 ::: {.proof}
-<1>3.
+The entire function $\phi\circ g$ is bounded, so by Liouville's theorem it is constant [@SS03]. Because $\phi$ is injective, $g$ is constant, and therefore $5-f=g^2$ is constant. Hence $f$ itself is constant.
 :::
 :::

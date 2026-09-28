@@ -116,8 +116,7 @@ So given $ax^2+bx+c=0$, you can always write it as $a(x+d)^2 + e$ where $d\da b/
 ## Trigonometry
 
 :::{.remark}
-These are the values that come up when a contour is parameterized, when a root of unity is written in rectangular form, or when a pole sits at a standard angle.
-They are recall rather than derivation, and they are collected here for the same reason as the numerology above: an exam is a bad place to rebuild them.
+These are the values that come up when a contour is parameterized, when a root of unity is written in rectangular form, or when a pole sits at a standard angle. They are collected here as a reference, not derived.
 
 :::
 

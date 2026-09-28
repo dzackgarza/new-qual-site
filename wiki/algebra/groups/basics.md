@@ -11,8 +11,7 @@ topics:
 
 # Basics
 
-Most finite-group arguments on a qual reduce quickly to three pieces of bookkeeping: which subsets are subgroups, how conjugation moves them, and how cosets count them.
-The definitions below are arranged in that order so that Lagrange's theorem at the end is a consequence of a partition rather than an isolated divisibility fact.
+Subgroup tests, conjugation, and cosets relate the structure of a finite group to its order. The coset partition gives Lagrange's theorem.
 
 ## Definitions
 
@@ -49,7 +48,7 @@ Commutators are recorded here because they measure exactly the obstruction to co
 
 Conjugation is the action of $G$ on itself and on its subgroups.
 For the action on elements, the orbit of $x$ is its conjugacy class and the stabilizer is $C_G(x)$, hence $|\operatorname{Cl}(x)|=[G:C_G(x)]$ in the finite case.
-The same viewpoint on subgroups turns "all conjugates of $H$" into a single orbit and is the quickest route from orbit--stabilizer to normality tests.
+For the action on subgroups, the conjugates of $H$ form its orbit; that orbit is a singleton exactly when $H$ is normal.
 
 [[D-HLDEY]]
 
@@ -79,7 +78,6 @@ Two useful finite-group consequences recur in classification problems: a nontriv
 
 ## Centralizers and centres
 
-Keep the two stabilizers separate.
 The centralizer $C_G(S)$ fixes every element of $S$ under conjugation, whereas the normalizer $N_G(S)$ only preserves $S$ as a set; thus $C_G(S)\le N_G(S)$.
 The center is the common fixed set for conjugation by all of $G$, and quotienting by it gives the standard test that $G/Z(G)$ cyclic forces $G$ abelian.
 
@@ -99,7 +97,7 @@ The center is the common fixed set for conjugation by all of $G$, and quotientin
 
 Left cosets of $H$ are either equal or disjoint, so they partition $G$.
 Their number is the index $[G:H]$, and for finite groups the partition gives $|G|=[G:H]|H|$.
-This is Lagrange's theorem in the form actually used in proofs; the tower law then lets indices be multiplied through a chain of subgroups, while nested normal subgroups give the corresponding quotient-of-a-quotient statements.
+This is Lagrange's theorem. The tower law multiplies indices through a chain of subgroups, while nested normal subgroups give the corresponding quotient-of-a-quotient statements.
 
 [[PR-SF6ZE]]
 

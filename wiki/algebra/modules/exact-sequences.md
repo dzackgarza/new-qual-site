@@ -19,7 +19,7 @@ topics:
 
 ::: {.remark title="Why splitting is the question"}
 A short exact sequence $0\to A\to B\to C\to 0$ always says $B$ is built from $A$ and $C$; it says $B \cong A\oplus C$ only when it splits.
-Two sufficient conditions do nearly all the work on an exam: $C$ projective, and a retraction of the first map.
+Projectivity of $C$ is sufficient for splitting; a retraction of the first map is equivalent to splitting.
 Free implies projective, so a sequence ending in a free module always splits, which is the step used to peel the free part off a module over a PID.
 :::
 

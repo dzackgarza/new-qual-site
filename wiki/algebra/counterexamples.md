@@ -7,7 +7,7 @@ topics:
 
 # Counterexamples
 
-Filed by the statement each one refutes, because that is the form the question takes: "is every $X$ a $Y$", with the answer nearly always no and the work being to name the witness.
+Each example is grouped under the statement it refutes.
 
 ## Groups
 
@@ -22,11 +22,11 @@ Order $p^2$ is the largest prime power that forces abelian.
 **Normality is transitive** -- false.
 $\ZZ/2 \normal V_4 \normal A_4$ but $\ZZ/2$ is not normal in $A_4$.
 
-**A quotient of $G$ embeds in $G$** -- false in general; it holds for abelian groups and fails for $Q_8$.
+**A quotient of $G$ embeds in $G$** -- false: $Q_8/\{\pm1\}\cong V_4$ does not embed in $Q_8$. It also fails for abelian groups: $\QQ/\ZZ$ is nonzero torsion, whereas the additive group $\QQ$ is torsion-free.
 
 ## Rings
 
-The tower and one witness per step is on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]]. The three that recur:
+The implication tower and a counterexample to each converse appear on [[algebra/rings-and-ideals/which-kind-of-ring|Which kind of ring is this?]]. Further examples:
 
 **Every irreducible is prime** -- false: $3$ in $\ZZ[\sqrt{-5}]$, where $9 = 3\cdot 3 = (2+\sqrt{-5})(2-\sqrt{-5})$.
 
@@ -46,7 +46,7 @@ The tower and one witness per step is on [[algebra/rings-and-ideals/which-kind-o
 
 ## Linear algebra
 
-The matrix witnesses are on [[algebra/linear-algebra/matrix-counterexamples|Matrix counterexamples]], and the ones worth having in mind:
+[[algebra/linear-algebra/matrix-counterexamples|Matrix counterexamples]] gives matrix witnesses for the following statements:
 
 **Same characteristic polynomial implies similar** -- false.
 $\min$ and $\chi$ together are still not enough: $J_2\oplus J_2$ and $J_2\oplus J_1 \oplus J_1$ share both.
@@ -59,9 +59,9 @@ $\min$ and $\chi$ together are still not enough: $J_2\oplus J_2$ and $J_2\oplus 
 
 **Every extension is normal** -- false: $\QQ(2^{1/3})/\QQ$.
 
-**Normality is transitive** -- false: $\QQ(2^{1/4})/\QQ(\sqrt2)/\QQ$, and this is the failure the Galois correspondence is built around.
+**Normality is transitive** -- false: $\QQ(2^{1/4})/\QQ(\sqrt2)/\QQ$.
 
 **Every irreducible polynomial is separable** -- false in characteristic $p$: $x^p - t$ over $\FF_p(t)$.
-True over perfect fields, which is why the hypothesis is invisible in characteristic zero.
+True over perfect fields; every field of characteristic zero is perfect.
 
 **Every finite extension is simple** -- true in characteristic zero and false in general, the standard witness being $\FF_p(s,t)/\FF_p(s^p,t^p)$.

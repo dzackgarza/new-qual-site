@@ -31,6 +31,6 @@ Since each contraction raises $K^2$ by one and $\rho$ drops by one, the process 
 
 By adjunction, $E \cong \PP^1$ with $E^2 = -1$ is equivalent to $E^2 = -1$ and $K \cdot E = -1$, which is the form the criterion is usually applied in.
 
-The natural follow-up is whether a surface has finitely many $(-1)$-curves, and the answer is no: $\Bl_n \PP^2$ for $n \geq 9$ has infinitely many.
+A surface need not have finitely many $(-1)$-curves: $\Bl_n \PP^2$ for $n \geq 9$ has infinitely many.
 The minimal model is then not unique in general — for rational surfaces one can reach both $\PP^2$ and the Hirzebruch surfaces — which is exactly the dimension-two failure that makes the classification of rational and ruled surfaces a separate theorem.
 :::

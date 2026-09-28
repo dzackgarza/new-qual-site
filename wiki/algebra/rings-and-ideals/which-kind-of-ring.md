@@ -8,7 +8,7 @@ topics:
 
 # Which kind of ring is this?
 
-Ring theory questions are almost all of one shape: place the ring in the tower, or produce the counterexample showing it is not one step higher.
+The inclusions below relate fields, Euclidean domains, PIDs, UFDs, and integral domains. Counterexamples show that each inclusion is strict.
 
 ## The tower
 
@@ -54,11 +54,9 @@ A polynomial ring over a PID need not be a PID: $\gens{2,x}\normal \ZZ[x]$ again
 
 :::
 
-Memorizing this column is most of what a ring theory problem needs, because the question is nearly always "is every $X$ a $Y$" and the answer is one of these five.
-
 ## Reading a quotient
 
-The other standard question is what $R/I$ is, and two facts answer it:
+For a commutative ring with identity, primality and maximality of $I$ have quotient-ring characterizations:
 
 [[PR-76BDN]]
 
@@ -66,14 +64,14 @@ The other standard question is what $R/I$ is, and two facts answer it:
 \[
 I \text{ maximal} \iff R/I \text{ is a field}, \qquad I \text{ prime} \iff R/I \text{ is a domain}
 .\]
-Since fields are domains, maximal implies prime, which is the quickest proof of $\mspec R \subseteq \spec R$:
+Since fields are domains, maximal implies prime, giving $\mspec R \subseteq \spec R$:
 \[
 I \text{ maximal } \iff R/I \in \Field {\color{blue} \implies } R/I \in \mathsf{IntDomain} \iff I \text{ prime}
 .\]
 
 :::
 
-So "is $\gens{f}$ maximal in $k[x]$" is "is $k[x]/\gens f$ a field", which is "is $f$ irreducible" -- three phrasings of one question, and a problem will use whichever is least convenient.
+For a field $k$, $(f)$ is maximal in $k[x]$ exactly when $k[x]/(f)$ is a field, equivalently when $f$ is irreducible.
 
 ## Transporting properties
 
@@ -92,6 +90,6 @@ This is the standard way a maximality hypothesis gets used: it turns "not in $\m
 [[D-DU4UQ]]
 
 :::{.example title="Finite-dimensional graded Gorenstein criterion"}
-If $R\in \gr\kAlg$ with $\dim_k R < \infty$, then $R$ decomposes as $R = R_0 \oplus R_1 \oplus \cdots R_n$ with $R_0 \da k$, and $R$ is Gorenstein iff $R$ satisfies "Poincaré duality": $\dim_k R_0 = \dim_k R_n = 1$ and there is a perfect pairing $R_i \tensor_k R_{n-j} \to R_n$.
+Let $R=R_0\oplus\cdots\oplus R_n$ be a finite-dimensional commutative nonnegatively graded $k$-algebra with $R_0=k$ and $R_n\ne0$. Then $R$ is Gorenstein exactly when $\dim_k R_n=1$ and multiplication gives a perfect pairing $R_i\tensor_k R_{n-i}\to R_n$ for every $i$.
 
 :::

@@ -17,4 +17,4 @@ topics:
 
 - [[algebra/rings-and-ideals/polynomial-rings|Polynomial rings]], and what survives adjoining a variable.
 
-- [[algebra/rings-and-ideals/number-theory|Number theory]], the $\ZZ$ and $\ZZ[i]$ layer the qual treats as ring theory.
+- [[algebra/rings-and-ideals/number-theory|Number theory]], arithmetic in $\ZZ$ and $\ZZ[i]$.

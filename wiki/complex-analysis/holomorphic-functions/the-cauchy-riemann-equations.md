@@ -58,7 +58,7 @@ Thus
 
 :::
 
-Use the polar form on anything stated in $r$ and $\theta$; converting to $x$ and $y$ first is the usual way these computations become unpleasant.
+Use the polar form on anything stated in $r$ and $\theta$; converting to $x$ and $y$ first makes these computations longer.
 
 [[PR-EMFAN]]
 

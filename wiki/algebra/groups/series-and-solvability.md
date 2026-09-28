@@ -10,7 +10,7 @@ topics:
 
 Series turn global structure into successive quotients.
 Composition series ask that the factors be simple; central and derived series instead measure how far the group is from being nilpotent or solvable.
-On a qual, the point is rarely to write down a chain for its own sake: the factors or the point at which a canonical series terminates are the invariants used in the next step.
+The factors and the termination of canonical series provide group invariants.
 
 ## Normal and composition series
 
@@ -97,8 +97,7 @@ For $G$ a finite group, TFAE:
 - A finite nilpotent group $G$ has normal subgroups of order $d$ for *every* $d$ dividing $\abs{G}$.
 :::
 
-The characterization via normalizers is the most useful for computations: to check nilpotence, pick a proper subgroup $H$ and verify $H < N_G(H)$.
-If normalizers always grow, the group is nilpotent.
+For a finite group, the normalizer criterion requires $H < N_G(H)$ for every proper subgroup $H$.
 This is a Sylow-theoretic condition — for finite groups, nilpotence is equivalent to every Sylow subgroup being normal, which is equivalent to $G$ being the direct product of its Sylow subgroups.
 
 The lower central series $G = \gamma_1(G) \geq \gamma_2(G) \geq \cdots$ where $\gamma_{i+1}(G) = [\gamma_i(G), G]$ terminates at the trivial group iff $G$ is nilpotent.

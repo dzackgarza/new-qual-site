@@ -18,6 +18,6 @@ Which of the following most closely represents the graph of the solution to $y ^
 :::
 
 ::: {.solution}
-The answer is (A). There are a number of ways one caould arrive at this answer, but perhaps most obviously, the equation gives $y ^ { \prime } \geq 1$ and thus the slope of the graph is always bigger than 1, whereas there are portions of graphs (B), (C), (D), (E) where there slope is very near zero.
-Another good heuristic, is that if we change $y ^ { 4 }$ to $y ^ { 2 } .$ , the dynamics shouldn’t change much qualitatively, and the equation $y ^ { \prime } = 1 + y ^ { 2 }$ has solution $y = \tan ( x )$ , so the solution to $y ^ { \prime } = 1 + y ^ { 4 }$ should look somewhat similar, which the graph of (A) does.
+The answer is (A). The equation gives $y ^ { \prime } \geq 1$ and thus the slope of the graph is always bigger than 1, whereas there are portions of graphs (B), (C), (D), (E) where the slope is very near zero.
+Changing $y ^ { 4 }$ to $y ^ { 2 }$ does not alter the qualitative behaviour: the equation $y ^ { \prime } = 1 + y ^ { 2 }$ has solution $y = \tan ( x )$ , so the solution to $y ^ { \prime } = 1 + y ^ { 4 }$ resembles it, which the graph of (A) does.
 :::

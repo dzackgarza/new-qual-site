@@ -34,5 +34,5 @@ Characteristic zero is the hypothesis to flag, and Frobenius is the counterexamp
 The proof in characteristic zero rests on separability of every field extension of $k(Y)$, which is exactly what fails in characteristic $p$.
 
 The companion statement, generic flatness, has no such restriction: a finite type morphism to an integral Noetherian base is flat over a nonempty open.
-Distinguishing which half needs characteristic zero is the usual follow-up.
+Distinguishing which half needs characteristic zero is the content of the two hypotheses.
 :::

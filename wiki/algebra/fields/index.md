@@ -14,6 +14,6 @@ topics:
 
 - [[algebra/fields/separability|Separability]], and where it fails.
 
-- [[algebra/fields/finite-fields|Finite fields]], where everything is cyclic.
+- [[algebra/fields/finite-fields|Finite fields]], cyclic multiplicative groups, and cyclic Galois groups.
 
 The correspondence itself is [[algebra/galois-theory/index|Galois theory]].

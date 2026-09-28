@@ -38,7 +38,7 @@ $$
 \operatorname* { l i m } _ { t \to 0 } { \frac { f ( t x , t y ) } { t } } = \operatorname* { l i m } _ { t \to 0 } \left( 1 - \cos { \frac { t ^ { 2 } x ^ { 2 } } { t y } } \right) { \sqrt { x ^ { 2 } + y ^ { 2 } } } = 0 ,
 $$
 
-and the limit is trivially zero in the direction of $( x , 0 )$ for any x.
+and the limit is zero in the direction of $( x , 0 )$ for any x.
 
 (c) If f were differentiable, the derivative would be zero, and then $f ( x , y ) / \sqrt { x ^ { 2 } + y ^ { 2 } } \to 0$ as $( x , y ) \to ( 0 , 0 )$ . This is false, since if we approach (0, 0) along the curve $x ^ { 2 } / y = \pi$ , the limit of $f ( x , y ) / \sqrt { x ^ { 2 } + y ^ { 2 } } \mathrm { ~ i s ~ } 1 - \cos \pi = 2$
 :::

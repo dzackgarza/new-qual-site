@@ -9,7 +9,7 @@ topics:
 
 # Theorems that give a constant
 
-"Show that $f$ is constant" is the most common sentence in a complex analysis exam, and there are about eight theorems that end it.
+"Show that $f$ is constant" problems are settled by one of about eight theorems.
 Each one is triggered by a different hypothesis, so the work is matching what you were given to the theorem that consumes it.
 
 ## Bounded, and entire

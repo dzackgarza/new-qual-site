@@ -5,9 +5,9 @@ order: 30
 
 # Complex Analysis
 
-## What the exam asks
+## The recurring question types
 
-The paper is six recurring kinds of question, and each one is treated by a chapter here.
+Six kinds of question recur, and each one is treated by a chapter here.
 
 | The question | Where it is treated |
 | --- | --- |
@@ -18,8 +18,7 @@ The paper is six recurring kinds of question, and each one is treated by a chapt
 | How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
 | Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map\|Build me a map]] |
 
-Each of those pages is a decision procedure keyed on the form of the problem, since at minute forty that is all you have.
-The chapter behind each one carries the statements and proofs.
+Each of those pages is a decision procedure keyed on the form of the problem. The chapter behind each one carries the statements and proofs.
 
 ## The chapters, in dependency order
 

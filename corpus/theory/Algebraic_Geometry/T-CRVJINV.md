@@ -34,7 +34,7 @@ So $\AA^1$ is a coarse moduli space for elliptic curves.
 :::
 
 ::: {.remark}
-The construction is a chain of the earlier tools, and reciting it is the usual follow-up.
+The construction is a chain of the earlier tools.
 Take $\abs{2p_0}$: it is nonspecial, so Riemann--Roch gives $\dim = 1$, and it is base-point free since $E$ is not rational, giving a degree-two map $E \to \PP^1$ with $p_0 \mapsto \infty$.
 Riemann--Hurwitz forces exactly four branch points, which a Möbius transformation fixing $\infty$ normalizes to $0, 1, \lambda, \infty$.
 The residual ambiguity is the $S_3$-action permuting $\{0,1,\lambda\}$, whose orbit is $\lambda, \lambda^{-1}, 1-\lambda, (1-\lambda)^{-1}, \lambda(\lambda-1)^{-1}, \lambda^{-1}(\lambda-1)$; the formula for $j$ is the symmetric function that kills it.

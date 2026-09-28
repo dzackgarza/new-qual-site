@@ -9,7 +9,7 @@ topics:
 
 # Casorati-Weierstrass and Picard
 How much of the plane a function must cover near an essential singularity.
-The two theorems say the same kind of thing at different strengths, and the exam usually wants the weaker one.
+The two theorems say the same kind of thing at different strengths, and the weaker one is the one to reach for first.
 
 ## Casorati–Weierstrass
 
@@ -67,7 +67,7 @@ That is a bounded entire function, hence constant by Liouville.
 :::
 
 :::{.remark title="Which one a problem wants"}
-Casorati–Weierstrass is elementary and self-contained, and it is what a qual problem expects unless it says otherwise.
+Casorati–Weierstrass is elementary and self-contained, and it is the one to reach for first, unless the problem asks for the sharper statement.
 Picard is the sharper statement and its proof is not elementary, so quoting it is fine but proving it is not what is being asked.
 If a problem can be closed by density, close it by density.
 

@@ -12,7 +12,7 @@ topics:
 # Ideals and quotients
 
 Ideals are the subobjects seen by ring homomorphisms: every kernel is an ideal, and quotienting by an ideal is the universal way to force its elements to vanish.
-Most qual problems in this chapter therefore alternate between intrinsic ideal conditions and the corresponding property of a quotient ring.
+Ideal conditions correspond to properties of quotient rings: prime ideals give domains, maximal ideals give fields, and radical ideals give reduced rings.
 
 [[PR-PZZUO]]
 
@@ -24,7 +24,7 @@ Most qual problems in this chapter therefore alternate between intrinsic ideal c
 
 The first isomorphism theorem identifies $R/\ker\varphi$ with $\operatorname{im}\varphi$.
 The second and correspondence theorems are the bookkeeping rules for nested ideals: ideals above $I$ are exactly ideals of $R/I$, and properties defined through quotients can be transported across that correspondence.
-In particular this is the clean way to compare prime, maximal, and radical ideals before and after quotienting.
+For ideals containing $I$, the correspondence preserves primality, maximality, and radicality.
 
 [[PR-Z3YWJ]]
 
@@ -61,7 +61,7 @@ The spectra below package these two families when one needs to range over all of
 
 ## Units and simplicity
 
-A commutative ring with identity is a field precisely when it has no nonzero proper ideals: if $0\ne x$, the ideal $(x)$ must be all of $R$, so $x$ is a unit.
+A nonzero commutative ring with identity is a field precisely when it has no nonzero proper ideals: if $0\ne x$, the ideal $(x)$ must be all of $R$, so $x$ is a unit.
 This is the one-line conversion between an ideal-theoretic hypothesis and the usual elementwise definition of a field.
 
 [[PR-DDDXH]]
@@ -103,7 +103,7 @@ Zorn's lemma, and the maximal ideal it produces, are on [[algebra/rings-and-idea
 
 ## Nilradicals and Jacobson radicals, worked
 
-These exercises are the standard conversions to be able to reproduce: pass between nilpotence and reduction modulo $\sqrt{(0)}$, prove maximal ideals are prime, compare the nilradical with the Jacobson radical, and recover the prime-intersection description from the definitions.
+These exercises relate nilpotence to reduction modulo $\sqrt{(0)}$, establish that maximal ideals are prime, compare the nilradical with the Jacobson radical, and derive the prime-intersection description.
 
 [[E-AMD-4SSSVQJY]]
 

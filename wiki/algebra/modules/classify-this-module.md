@@ -8,17 +8,15 @@ topics:
 
 # Classify this module
 
-A classification question is answerable exactly when the ring is a PID, and then it is one computation.
-Over anything else the question is different, and the first job is noticing which case you are in.
+The structure theorem classifies finitely generated modules over a PID by a free rank and torsion invariant factors. Over other rings, the available classification depends on the ring and the class of modules.
 
 ## Is the ring a PID?
 
 **Yes** -- $\ZZ$, $k[x]$, $k[[x]]$, any Euclidean domain, any local PID.
 Then the structure theorem applies and the classification is complete: every finitely generated module is a free part plus a torsion part, and the torsion part is determined by its invariant factors.
 
-**No** -- $k[x,y]$, $\ZZ[x]$, $k[x,y]/I$, any ring with a non-principal ideal.
-Then there is no classification, and the question being asked is something else: is this module free, projective, flat, torsion-free, or finitely generated?
-Those are the properties that separate over a general ring and coincide over a PID.
+**Non-PID examples** -- $k[x,y]$ and $\ZZ[x]$. A quotient such as $k[x,y]/I$ depends on $I$: for example, $k[x,y]/(y)\cong k[x]$ is a PID.
+Freeness, projectivity, flatness, and torsion-freeness are distinct conditions over general domains. They coincide for finitely generated modules over a PID.
 
 ## Over a PID: the computation
 
@@ -48,7 +46,6 @@ Those are the properties that separate over a general ring and coincide over a P
 | $k[x]$ | vector space with an operator | [[algebra/linear-algebra/rational-canonical-form\|rational canonical form]] |
 | $k[x]$, $\chi$ split | the same | [[algebra/linear-algebra/jordan-canonical-form\|Jordan canonical form]] |
 
-Recognizing which one a problem is asking is usually the difficulty.
 A question about a matrix over $\QQ$ and a question about an abelian group of order $360$ are the same computation over different rings.
 
 ## Over a general ring: which property is being asked

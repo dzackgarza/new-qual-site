@@ -70,10 +70,9 @@ The congruence comes from letting a fixed $S_p$ act on $\Syl_p(G)$: it fixes onl
 
 ## Using it
 
-The systematic use is [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]], where a Sylow count is the first thing to try.
-The other standard uses:
+[[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]] applies Sylow counts to the existence of proper normal subgroups. Other applications:
 
-- **Classifying groups of a given order.** Once $n_p = 1$ for some $p$, that Sylow is normal and $G$ is an extension, usually a semidirect product, of the two Sylow subgroups.
+- **Classifying groups of a given order.** If $n_p=1$, the Sylow subgroup $P$ is normal and gives an extension $1\to P\to G\to G/P\to1$. A complement $H$ with $P\cap H=1$ and $PH=G$ gives $G\cong P\semidirect H$.
 
 - **Finding a normal subgroup to quotient by**, reducing to a smaller order.
 

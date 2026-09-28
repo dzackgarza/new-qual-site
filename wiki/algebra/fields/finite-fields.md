@@ -20,7 +20,7 @@ Once the prime subfield \(\FF_p\) is fixed, an irreducible polynomial of degree 
 
 [[PR-Q2IFX]]
 
-The divisor lattice of \(n\) therefore appears twice: \(\FF_{p^m}\) is a subfield of \(\FF_{p^n}\) exactly when \(m\mid n\), and the irreducible factors detected by \(x^{p^n}-x\) have degrees dividing \(n\).  Use the same degree arithmetic for both subfield and factorization questions rather than treating them as separate tricks.
+The divisor lattice of \(n\) therefore appears twice: \(\FF_{p^m}\) is a subfield of \(\FF_{p^n}\) exactly when \(m\mid n\), and the irreducible factors detected by \(x^{p^n}-x\) have degrees dividing \(n\). The same divisibility condition thus governs subfields and irreducible factors.
 
 [[PR-32R3E]]
 
@@ -28,7 +28,7 @@ The divisor lattice of \(n\) therefore appears twice: \(\FF_{p^m}\) is a subfiel
 
 [[PR-DEG36]]
 
-::: {.remark title="The four facts that answer most problems"}
+::: {.remark title="Classification, subfields, and Galois groups"}
 \envlist
 
 - $\FF_{p^n}$ exists and is unique up to isomorphism, realized as the splitting field of $x^{p^n} - x$ over $\FF_p$.

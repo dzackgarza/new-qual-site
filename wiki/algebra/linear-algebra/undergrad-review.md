@@ -6,7 +6,7 @@ order: 20
 
 :::{.fact title="Undergrad reminders"}
 \[
-\det M = \prod_{\sigma \in S_n} \eps(\sigma) \prod_{i=1}^n a_{i, \sigma(i)}
+\det M = \sum_{\sigma \in S_n} \eps(\sigma) \prod_{i=1}^n a_{i, \sigma(i)}
 .\]
 
 For example,
@@ -50,8 +50,6 @@ G & H
 = \matt{AE + BG}{AF + BH}{CE + DG}{ CF + DH}
 .\]
 
-> Note that if any of these matrix multiplications don't make sense, the results won't be valid!
-
 If $A$ is upper triangular, the diagonal entries of $A^k$ are the $k$-th powers of the diagonal entries of $A$:
 
 \[
@@ -90,4 +88,3 @@ f(x) = (x-2)(x^2-4x+4) = (x-2)^3
 .\]
 
 :::
-

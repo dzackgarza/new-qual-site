@@ -65,18 +65,18 @@ Writing $\Ann(\vector v)$ for the annihilator of $\vector v$, view $V$ as a $k[x
 \[
 \Ann(\vector v) \da \ts{ q(x) \in k[x] \st q(A)(\vector v) = 0}
 .\]
-Then $\vector w$ is an eigenvector with eigenvalue $\lambda_i$ exactly when $A - \lambda_i I \in \Ann(\vector w)$, and a *generalized* eigenvector exactly when
+Then a nonzero $\vector w$ is an eigenvector with eigenvalue $\lambda_i$ exactly when $x - \lambda_i \in \Ann(\vector w)$, and a *generalized* eigenvector exactly when
 \[
-(A-\lambda_i I)^k\in \Ann(\vector w) \text{ for some } k \iff A-\lambda_i I \in \sqrt{\Ann(\vector w)}
+(x-\lambda_i)^k\in \Ann(\vector w) \text{ for some } k \iff x-\lambda_i \in \sqrt{\Ann(\vector w)}
 .\]
 So the generalized eigenspace is
 \[
 V^{\lambda_i}
 &\da \ts{\vector v\in V \st (A-\lambda_i I)^n \vector v = 0 \text{ for some }n } \\
-&= \ts{\vector v\in V \st A-\lambda_i I \in \sqrt{\Ann(\vector v)} }
+&= \ts{\vector v\in V \st x-\lambda_i \in \sqrt{\Ann(\vector v)} }
 ,\]
 the theorem is $V \cong \bigoplus_i V^{\lambda_i}$, and $V^{\lambda_i} = \ker (A-\lambda_i I)^n$ for $n \da \dim V$.
-Taking radicals is what turns eigenvectors into generalized ones, which is the whole difference between diagonalizable and not.
+The operator is diagonalizable exactly when each generalized eigenspace equals its eigenspace.
 
 :::
 

@@ -2273,9 +2273,7 @@ GUIDES_LEDE = (
 )
 
 
-ACROSS_SUBJECTS_LEDE = (
-    "Workshop and preliminary-exam problems spanning several subjects."
-)
+ACROSS_SUBJECTS_LEDE = "Workshop and preliminary-exam problems spanning several subjects."
 
 
 def _guide_sections(

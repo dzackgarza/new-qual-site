@@ -7,7 +7,7 @@ order: 40
 
 ## Notes and review
 
-- [[SRC-UCSD-ALG-REVIEW-GROUPS|UCSD Group Theory Qual Review]], with the review PDF as collection provenance and its selected exam problems linked to canonical cards.
+- [[SRC-UCSD-ALG-REVIEW-GROUPS|UCSD Group Theory Qual Review]], with a PDF and links to its exam problems.
 
 - [McNulty's group-theory qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/gp.pdf)
 

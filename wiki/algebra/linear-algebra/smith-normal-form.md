@@ -13,13 +13,13 @@ The form for a matrix over a PID rather than a field, and therefore the form tha
 ::: {.fact}
 For $A\in \Mat(m\times n; R)$ with $R$ a PID, $\SNF(A)$ is diagonal and its entries are the invariant factors.
 
-To compute it: $\SNF(A) = \diag(a_i)$ where $a_i = d_i/d_{i-1}$ and $d_i$ is the $\gcd$ of the determinants of all $i\times i$ minors of $A$.
+If $A$ has rank $r$, its nonzero diagonal entries satisfy $a_i=d_i/d_{i-1}$ for $1\leq i\leq r$, where $d_0=1$ and $d_i$ is a greatest common divisor of the $i\times i$ minors. These entries are determined up to units, and the remaining diagonal entries are zero.
 
 Two matrices are equivalent exactly when they have the same Smith normal form.
 :::
 
 ::: {.remark}
-The algorithm by row and column operations is in Dummit and Foote, page 479. The minors formula above is usually faster on an exam, since it needs no bookkeeping: each $d_i$ is one gcd computation.
+The algorithm by row and column operations is in Dummit and Foote, page 479. The minors formula instead computes the invariant factors from greatest common divisors of determinants.
 :::
 
 ::: {.remark title="What it is for"}

@@ -56,6 +56,6 @@ For finitely generated modules over an integral domain,
 \text{free} \implies \text{projective} \implies \text{flat} \implies \text{torsion-free}
 ,\]
 with no arrow reversing in general and all four coinciding over a PID.
-Which arrow a problem is asking about is usually decided by the ring, so read the ring first.
+The PID hypothesis makes torsion-freeness sufficient for freeness in this finitely generated setting.
 
 :::

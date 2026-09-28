@@ -5,7 +5,7 @@ order: 7
 
 # Review sheet
 
-Every statement the exam assumes, in the order the chapters develop them.
+Statements grouped by chapter, with links to their exposition.
 
 ## Groups
 
@@ -147,6 +147,6 @@ Proved in [[algebra/fields/index|Fields]] and [[algebra/galois-theory/index|Galo
 
 Proved in [[algebra/representations/index|Representations]].
 
-## What to check before using each one
+## Hypotheses and counterexamples
 
-The hypotheses that decide problems are collected on the recognition pages, and the examples showing each is necessary are on [[algebra/counterexamples|Counterexamples]].
+The method pages discuss hypotheses; [[algebra/counterexamples|Counterexamples]] gives witnesses to false converses and generalizations.

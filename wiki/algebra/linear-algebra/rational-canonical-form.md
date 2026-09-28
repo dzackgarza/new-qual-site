@@ -9,7 +9,7 @@ topics:
 # Rational canonical form
 
 The invariant factor decomposition, read as a matrix.
-Unlike the [[algebra/linear-algebra/jordan-canonical-form|Jordan form]] it exists over every field, because it never needs $\chi_A$ to split -- which is why a problem stated over $\QQ$ almost always wants this one.
+Unlike the [[algebra/linear-algebra/jordan-canonical-form|Jordan form]], it exists over every field, since it does not require $\chi_A$ to split.
 
 [[D-HJR7M]]
 
@@ -22,7 +22,7 @@ Unlike the [[algebra/linear-algebra/jordan-canonical-form|Jordan form]] it exist
 :::{.proof}
 $\not\Longleftarrow$:
 In general $\min_A \divides \chi_A$, so suppose they differ.
-Set $n\da \deg \chi_A$ and $n' \da \deg\min_A < n$; then $\min_A(A) = 0$ exhibits a linear dependence in $\ts{v, Av, \cdots, A^{n'}v}$ for every $v$, so no set $\ts{v, Av, \cdots, A^nv}$ is independent.
+Set $n\da \deg \chi_A$ and $n' \da \deg\min_A < n$; then $\min_A(A) = 0$ exhibits a linear dependence in $\ts{v, Av, \cdots, A^{n'}v}$ for every $v$, so no set $\ts{v, Av, \cdots, A^{n-1}v}$ is independent.
 
 $\implies$:
 By the structure theorem $V\cong \bigoplus_{i=1}^m k[x]/\gens{p_i}$, with $\chi_A = \prod p_i$ and $\min_A = p_m$.
@@ -55,7 +55,7 @@ V \cong \bigoplus_{i=1}^m k[x] / \gens{ p_i(x) }, \qquad p_1 \divides p_2 \divid
 
 - So $T$ is block diagonal with one block per invariant factor, and it suffices to identify a single block, so assume $V = k[x]/\gens{p(x)}$ is cyclic with $\deg p = n$.
 
-- Then $\ts{\vector v, T\vector v, \cdots, T^{n-1}\vector v}$ is a basis: a dependence among them would give a polynomial of degree below $n$ annihilating $T$, contradicting minimality of $p$.
+- Let $\vector v$ be the residue class of $1$. Then $\ts{\vector v, T\vector v, \cdots, T^{n-1}\vector v}$ is a basis: a dependence would give a nonzero polynomial of degree below $n$ in the ideal $(p)$.
 
 - In that basis $T$ shifts each basis vector to the next, and the last one is expanded by $p(T) = 0$, giving the companion matrix
 \[

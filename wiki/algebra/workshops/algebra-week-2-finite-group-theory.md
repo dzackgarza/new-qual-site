@@ -29,7 +29,7 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
     - Self-action by conjugation
 
-    - Action on subgroup lattice by left-translation
+    - Action on subgroups by conjugation
 
     - Action on cosets of a fixed $G/H$ by left-translation
 
@@ -49,11 +49,11 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
   - Inner automorphisms
 
-  - Outer automorphisms  (not often tested directly)
+  - Outer automorphisms
 
-  - Characteristic subgroups  (not often tested directly)
+  - Characteristic subgroups
 
-- Series of groups (not often tested)
+- Series of groups
 
   - Normal series
 
@@ -72,9 +72,6 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
     - Lower central series
 
     - Upper central series
-
-> A remark: automorphisms and series of groups aren't often directly tested on the qual, but are useful practice.
-> Simple/solvable groups *do* come up often.
 
 ## Exercises
 

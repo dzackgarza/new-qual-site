@@ -35,13 +35,13 @@ $A^t$ is the transpose and $A^{\dagger}$ the conjugate transpose.
 [[FT-BC6S2]]
 
 :::{.proof}
-$\implies$: if $\min_A$ splits into linear factors then so does every invariant factor, so every elementary divisor is linear and the Jordan form is diagonal.
+$\implies$: if $\min_A$ splits into distinct linear factors then so does every invariant factor, so every elementary divisor is linear and the Jordan form is diagonal.
 
 :::
 
-:::{.remark title="The test to remember"}
+:::{.remark title="Minimal-polynomial criterion"}
 $A$ is diagonalizable over $F$ exactly when $\min_A$ is a product of *distinct* linear factors over $F$.
-Squarefree is the whole criterion, which is why hypotheses like $A^2 = A$ or $A^k=I$ settle diagonalizability immediately -- see [[algebra/linear-algebra/find-the-canonical-form|Find the canonical form]].
+For $A^2=A$, the minimal polynomial divides $t(t-1)$, so $A$ is diagonalizable. For $A^k=I$, diagonalizability follows over a splitting field when the characteristic does not divide $k$; see [[algebra/linear-algebra/find-the-canonical-form|Find the canonical form]].
 
 :::
 
@@ -50,7 +50,7 @@ Squarefree is the whole criterion, which is why hypotheses like $A^2 = A$ or $A^
 [[T-WQHMA]]
 
 :::{.remark}
-$A$ is symmetric exactly when the spectrum provides an orthonormal basis.
+A real matrix is symmetric exactly when it has an orthonormal basis of real eigenvectors.
 
 :::
 
@@ -94,6 +94,6 @@ By induction on the number of operators.
 
 :::{.remark title="Why commuting is the hypothesis"}
 Commuting operators preserve each other's eigenspaces, which is what lets the induction descend.
-Without it the eigenspaces of one operator are not invariant under the other and there is no basis to build.
+A simultaneous eigenbasis would make all the operators diagonal in the same basis, so they would commute.
 
 :::

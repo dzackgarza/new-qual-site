@@ -64,11 +64,11 @@ Non-similar matrices with the same characteristic polynomial
 \end{array}\right)
 \text { and }
 \left(\begin{array}{ll}
-{0} & {0} \\
+{0} & {1} \\
 {0} & {0}
 \end{array}\right)
 \]
-Here $\chi_A(x) = \chi_B(x) = x^2$, but they are not conjugate since their JCFs differ (note that they're already in JCF!)
+Here $\chi_A(x) = \chi_B(x) = x^2$, but their minimal polynomials are $x$ and $x^2$, respectively, so they are not similar.
 
 :::
 
@@ -109,4 +109,3 @@ The matrix roots of unity above are already counterexamples to a cancellation la
 [[FF-VKYM3]]
 
 [[FE-W56LS]] [[FE-ISVDM]]
-

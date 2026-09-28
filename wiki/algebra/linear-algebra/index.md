@@ -13,7 +13,7 @@ Canonical forms, and the computations they are read off from.
 
 - [[algebra/linear-algebra/determinants-and-eigenvalues|Determinants and eigenvalues]], the computational layer and the matrix groups.
 
-- [[algebra/linear-algebra/minimal-and-characteristic-polynomials|Minimal and characteristic polynomials]], the two invariants everything is stated in.
+- [[algebra/linear-algebra/minimal-and-characteristic-polynomials|Minimal and characteristic polynomials]], their divisibility relation and implications for canonical forms.
 
 - [[algebra/linear-algebra/jordan-canonical-form|Jordan canonical form]], the elementary divisors.
 

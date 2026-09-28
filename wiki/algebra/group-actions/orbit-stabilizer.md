@@ -14,7 +14,7 @@ topics:
 [[T-GJNT5]]
 
 :::{.proof title="of Lagrange's theorem"}
-Write $G/H = \ts{g_0 H, g_1 H, \cdots, g_N H}$ for $N \da [G:H]$.
+For a finite group $G$, write $G/H = \ts{g_1 H, \cdots, g_N H}$ for $N \da [G:H]$.
 Cosets are equal or disjoint and all have the same cardinality, so
 \[
 G = \disjoint_{k \leq N} g_k H \implies \size G = \sum_{k\leq N} \size \qty{g_k H} = \sum_{k\leq N} \size H = N \size H
@@ -86,12 +86,12 @@ This one identity is behind most of the examples below: each choice of $X$ turns
 :::{.proof title="of orbit-stabilizer"}
 \envlist
 
-- Well defined: $gG_x = hG_x \iff gh\inv \in G_x \iff g\inv h\actson x = x$, and then
+- Well defined: $gG_x = hG_x \iff g\inv h \in G_x \iff g\inv h\actson x = x$, and then
   \[
   \Phi(hG_x) \da h\actson x = (gg\inv) h\actson x = g(g\inv h)\actson x = g\actson x = \Phi(gG_x)
   .\]
 
-- Injective: $\Phi(gG_x) = \Phi(hG_x) \iff g\actson x=h\actson x \iff gh\inv \actson x = x \iff gh\inv \in G_x \iff gG_x = hG_x$.
+- Injective: $\Phi(gG_x) = \Phi(hG_x) \iff g\actson x=h\actson x \iff g\inv h \actson x = x \iff g\inv h \in G_x \iff gG_x = hG_x$.
 
 - Surjective: this is transitivity onto the orbit.
 
@@ -125,7 +125,7 @@ Since orbits partition $X$, for any action $\phi: G\actson X$,
 X = \Fix(\phi) + \Disjoint_{x}' \Orb(x)
 ,\]
 where $\Fix(\phi)$ collects the orbits of size one and the remaining union takes one representative from each nontrivial orbit.
-Substituting orbit-stabilizer into the second term is how every counting formula in this chapter is produced, the class equation included.
+Substituting orbit-stabilizer into the second term expresses each orbit size as a stabilizer index. For conjugation on $G$, this gives the class equation.
 
 :::
 
@@ -135,7 +135,7 @@ Substituting orbit-stabilizer into the second term is how every counting formula
 $G$ acts on itself by $\phi: g \mapsto (h\mapsto gh)$.
 
 - $\Orb(x) = G$, so the action is transitive.
-- $\Fix(\phi) = \ts e$ and $\Stab(x) = \ts e$.
+- $\Fix(\phi) = \emptyset$ if $G$ is nontrivial, and $\Stab(x) = \ts e$.
 - The kernel is trivial.
 - Orbit-stabilizer says only $G \cong G/\ts e$.
 
@@ -145,7 +145,7 @@ $G$ acts on itself by $\phi: g \mapsto (h\mapsto gh)$.
 $G$ acts on itself by $g\actson x = gxg\inv$.
 
 - $\Orb(g) = [g]$ is the conjugacy class.
-  The action is transitive only when $\size G \leq 2$; every orbit is a singleton exactly when $G$ is abelian.
+  The action is transitive only when $G$ is trivial; every orbit is a singleton exactly when $G$ is abelian.
 - $\Fix(\phi) = Z(G)$, the centre.
 - $\Stab(g) = Z(g)$, the centralizer.
 - The kernel is again $Z(G)$.

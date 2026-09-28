@@ -43,5 +43,5 @@ $$
 $$
 
 Subtracting the second equation from the first gives $x _ { 1 } = 0$ . Then subtracting the third from the first gives $x _ { 2 } = 0$ . Continuing this procedure, subtracting the $k ^ { \mathrm { t h } }$ equation from the first will give $x _ { k } = 0$ until the last equation simply reads $x _ { n } = 0$ . Thus $x = 0$ is the only solution to $A x = 0$ and so A is invertible.
-(One can also show by induction on the dimension n that det $( A ) = 1$ , though this is a bit tricky).
+(One can also show by induction on the dimension $n$ that $\det A = 1$.)
 :::

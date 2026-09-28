@@ -8,9 +8,9 @@ title: "Algebra Qual Prep Week 1: Groups Warmup"
 
 - Subgroups
 	- The one-step subgroup test
-		- $(x,y\in H\implies xy\inv \in H) \implies H\leq G$
+		- A nonempty subset $H\subseteq G$ is a subgroup if $x,y\in H\implies xy\inv\in H$.
 	- Cosets
-		> $xH := \ts{xh\st h\in H}, G/H := \disjoint_{x} xH$
+		> $xH := \ts{xh\st h\in H}, G/H := \ts{xH\st x\in G}$.
 	- The index of a subgroup
 	- Normal subgroups
 	- Quotients

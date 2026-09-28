@@ -83,72 +83,72 @@ Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-s
 - [x] `wiki/algebraic-geometry/cohomology/index.md` — replaced the expectation of being asked to prove the affineness criterion with the criterion statement and its quasicompactness hypothesis.
 - [x] `wiki/algebraic-geometry/cohomology/projective-schemes.md` — replaced exam-frequency and examiner-probe framing with the cohomology bounds and the sheaf-dependent vanishing threshold; dropped an importance judgment.
 - [x] `wiki/algebraic-geometry/cohomology/vanishing-and-duality.md` — replaced exam-script framing ("asked as state and prove", "examiner picks", "specialisations are asked") with readings of the theorems; removed a coaching directive redundant with the two hypothesis-uses already stated.
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/curves-in-projective-space.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/genus.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/index.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/moduli-of-curves.md`
-- [ ] `wiki/algebraic-geometry/curves-and-surfaces/special-divisors-and-the-canonical-map.md`
-- [ ] `wiki/algebraic-geometry/divisors/index.md`
-- [ ] `wiki/algebraic-geometry/divisors/line-bundles-and-linear-systems.md`
-- [ ] `wiki/algebraic-geometry/divisors/positivity.md`
-- [ ] `wiki/algebraic-geometry/divisors/weil-and-cartier.md`
-- [ ] `wiki/algebraic-geometry/index.md`
-- [ ] `wiki/algebraic-geometry/morphisms/classes-of-morphism.md`
-- [ ] `wiki/algebraic-geometry/morphisms/fibres-and-images.md`
-- [ ] `wiki/algebraic-geometry/morphisms/finite-and-flat.md`
-- [ ] `wiki/algebraic-geometry/morphisms/index.md`
-- [ ] `wiki/algebraic-geometry/morphisms/inseparable-morphisms-and-luroth.md`
-- [ ] `wiki/algebraic-geometry/morphisms/separated-and-proper.md`
-- [ ] `wiki/algebraic-geometry/morphisms/smooth-unramified-etale.md`
-- [ ] `wiki/algebraic-geometry/resources.md`
-- [ ] `wiki/algebraic-geometry/schemes/fibre-products-and-base-change.md`
-- [ ] `wiki/algebraic-geometry/schemes/index.md`
-- [ ] `wiki/algebraic-geometry/schemes/proj-and-gluing.md`
-- [ ] `wiki/algebraic-geometry/schemes/properties-from-the-ring.md`
-- [ ] `wiki/algebraic-geometry/schemes/subschemes-and-points.md`
-- [ ] `wiki/algebraic-geometry/schemes/what-is-a-scheme.md`
-- [ ] `wiki/algebraic-geometry/sheaves-of-modules/differentials.md`
-- [ ] `wiki/algebraic-geometry/sheaves-of-modules/index.md`
-- [ ] `wiki/algebraic-geometry/sheaves-of-modules/line-bundles.md`
-- [ ] `wiki/algebraic-geometry/sheaves-of-modules/operations.md`
-- [ ] `wiki/algebraic-geometry/sheaves-of-modules/projective-sheaves.md`
-- [ ] `wiki/algebraic-geometry/sheaves-of-modules/quasicoherence.md`
-- [ ] `wiki/algebraic-geometry/sheaves/index.md`
-- [ ] `wiki/algebraic-geometry/sheaves/stalks-and-exactness.md`
-- [ ] `wiki/algebraic-geometry/sheaves/the-sheaf-condition.md`
-- [ ] `wiki/algebraic-geometry/toric/affine-computations.md`
-- [ ] `wiki/algebraic-geometry/toric/criteria.md`
-- [ ] `wiki/algebraic-geometry/toric/index.md`
-- [ ] `wiki/algebraic-geometry/toric/polytopes-and-divisors.md`
-- [ ] `wiki/algebraic-geometry/toric/surfaces-and-morphisms.md`
-- [ ] `wiki/algebraic-geometry/toric/the-dictionary.md`
-- [ ] `wiki/algebraic-geometry/varieties/affine-or-projective.md`
-- [ ] `wiki/algebraic-geometry/varieties/blowups.md`
-- [ ] `wiki/algebraic-geometry/varieties/canonical-class.md`
-- [ ] `wiki/algebraic-geometry/varieties/dimension-and-degree.md`
-- [ ] `wiki/algebraic-geometry/varieties/index.md`
-- [ ] `wiki/algebraic-geometry/varieties/regular-functions.md`
-- [ ] `wiki/algebraic-geometry/varieties/smooth-and-singular.md`
-- [ ] `wiki/algebraic-geometry/varieties/the-dictionary.md`
-- [ ] `wiki/applied-algebra/grobner-bases/index.md`
-- [ ] `wiki/applied-algebra/index.md`
-- [ ] `wiki/applied-algebra/invariant-theory/index.md`
-- [ ] `wiki/applied-algebra/matrix-analysis/index.md`
-- [ ] `wiki/applied-algebra/representation-theory/index.md`
-- [ ] `wiki/applied-algebra/resources/index.md`
-- [ ] `wiki/applied-algebra/symmetric-functions/index.md`
-- [ ] `wiki/archives/card-archives.md`
-- [ ] `wiki/archives/further-studying.md`
-- [ ] `wiki/archives/graduate-topics.md`
-- [ ] `wiki/archives/index.md`
-- [ ] `wiki/archives/qual-workshop-index.md`
-- [ ] `wiki/archives/solution-compendia.md`
-- [ ] `wiki/archives/topics.md`
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/blowups-and-the-classification-of-surfaces.md` — removed "an examiner wants" framing; kept blowup formulas and classification
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/curves-in-projective-space.md` — removed examiner/slogan framing; stated projection singularity as a codimension-one coincidence
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves-over-c.md` — removed "done twice"/"have to be recognised" and "one move to remember" framing
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/elliptic-curves.md` — removed "Asked whether"/"error the question is built around" and "trap is stopping" framing
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/embeddings-and-jacobians.md` — removed "thing to remember" and "one asked about" framing
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/genus.md` — removed "More oral questions land on this page than any other" and "an examiner will accept whichever fits"
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/index.md` — removed "More oral questions land here than anywhere else"
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/intersection-theory-on-surfaces.md` — removed "the examiner goes" framing
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/moduli-of-curves.md` — removed "An examiner asking for the dimension" framing
+- [x] `wiki/algebraic-geometry/curves-and-surfaces/special-divisors-and-the-canonical-map.md` — removed "pattern to expect" and "An examiner asking about genus 2,3 or 4 wants the model"
+- [x] `wiki/algebraic-geometry/divisors/index.md` — removed "as something you compute rather than define"
+- [x] `wiki/algebraic-geometry/divisors/line-bundles-and-linear-systems.md` — removed "an examiner moves through without warning" framing
+- [x] `wiki/algebraic-geometry/divisors/positivity.md` — removed "the exam question is usually" framing
+- [x] `wiki/algebraic-geometry/divisors/weil-and-cartier.md` — removed "the bank asks" framing
+- [x] `wiki/algebraic-geometry/index.md` — removed oral-exam/conversation framing; stated card purposes directly
+- [x] `wiki/algebraic-geometry/morphisms/classes-of-morphism.md` — removed "the definitions are cheap"/"syllabus asks" framing
+- [x] `wiki/algebraic-geometry/morphisms/fibres-and-images.md` — removed "the value is in knowing" framing
+- [x] `wiki/algebraic-geometry/morphisms/finite-and-flat.md` — removed "invisible in the curve questions on the exam" framing
+- [x] `wiki/algebraic-geometry/morphisms/index.md` — removed "Have the counterexamples ready" framing
+- [x] `wiki/algebraic-geometry/morphisms/inseparable-morphisms-and-luroth.md` — no stance revision
+- [x] `wiki/algebraic-geometry/morphisms/separated-and-proper.md` — no stance revision
+- [x] `wiki/algebraic-geometry/morphisms/smooth-unramified-etale.md` — removed "cheapest check available on a branching count" framing
+- [x] `wiki/algebraic-geometry/resources.md` — no stance revision
+- [x] `wiki/algebraic-geometry/schemes/fibre-products-and-base-change.md` — removed "the examiner will ask for an exception" framing
+- [x] `wiki/algebraic-geometry/schemes/index.md` — removed "The definition is the entry fee" framing
+- [x] `wiki/algebraic-geometry/schemes/proj-and-gluing.md` — removed "the examiner knows it" framing
+- [x] `wiki/algebraic-geometry/schemes/properties-from-the-ring.md` — no stance revision
+- [x] `wiki/algebraic-geometry/schemes/subschemes-and-points.md` — no stance revision
+- [x] `wiki/algebraic-geometry/schemes/what-is-a-scheme.md` — added the definition; removed "examiner's follow-up" framing
+- [x] `wiki/algebraic-geometry/sheaves-of-modules/differentials.md` — no stance revision
+- [x] `wiki/algebraic-geometry/sheaves-of-modules/index.md` — no stance revision
+- [x] `wiki/algebraic-geometry/sheaves-of-modules/line-bundles.md` — removed "rarely asked about for its own sake" framing
+- [x] `wiki/algebraic-geometry/sheaves-of-modules/operations.md` — no stance revision
+- [x] `wiki/algebraic-geometry/sheaves-of-modules/projective-sheaves.md` — no stance revision
+- [x] `wiki/algebraic-geometry/sheaves-of-modules/quasicoherence.md` — no stance revision
+- [x] `wiki/algebraic-geometry/sheaves/index.md` — removed "a definition alone will not answer it" framing
+- [x] `wiki/algebraic-geometry/sheaves/stalks-and-exactness.md` — removed "a student who has only memorised definitions" framing
+- [x] `wiki/algebraic-geometry/sheaves/the-sheaf-condition.md` — no stance revision
+- [x] `wiki/algebraic-geometry/toric/affine-computations.md` — removed "short enough to do at a board, which is why an examiner asks" framing
+- [x] `wiki/algebraic-geometry/toric/criteria.md` — removed "what an examiner can ask" framing
+- [x] `wiki/algebraic-geometry/toric/index.md` — removed "fastest source of examples when an examiner asks for one" framing
+- [x] `wiki/algebraic-geometry/toric/polytopes-and-divisors.md` — no stance revision
+- [x] `wiki/algebraic-geometry/toric/surfaces-and-morphisms.md` — no stance revision
+- [x] `wiki/algebraic-geometry/toric/the-dictionary.md` — removed "an examiner who wants a general argument will not accept a fan" framing
+- [x] `wiki/algebraic-geometry/varieties/affine-or-projective.md` — removed "an examiner is asking for" framing
+- [x] `wiki/algebraic-geometry/varieties/blowups.md` — removed "Everything an examiner wants" framing
+- [x] `wiki/algebraic-geometry/varieties/canonical-class.md` — removed "the exam question is almost always" framing
+- [x] `wiki/algebraic-geometry/varieties/dimension-and-degree.md` — removed "where the examiner goes" framing
+- [x] `wiki/algebraic-geometry/varieties/index.md` — removed "Examiners use this topic to check" framing
+- [x] `wiki/algebraic-geometry/varieties/regular-functions.md` — removed "An examiner asking for k[V], A(V) and k(V) in one breath" framing
+- [x] `wiki/algebraic-geometry/varieties/smooth-and-singular.md` — no stance revision
+- [x] `wiki/algebraic-geometry/varieties/the-dictionary.md` — removed "An examiner uses this topic to check" framing
+- [x] `wiki/applied-algebra/grobner-bases/index.md` — no stance revision
+- [x] `wiki/applied-algebra/index.md` — no stance revision
+- [x] `wiki/applied-algebra/invariant-theory/index.md` — no stance revision
+- [x] `wiki/applied-algebra/matrix-analysis/index.md` — no stance revision
+- [x] `wiki/applied-algebra/representation-theory/index.md` — no stance revision
+- [x] `wiki/applied-algebra/resources/index.md` — no stance revision
+- [x] `wiki/applied-algebra/symmetric-functions/index.md` — no stance revision
+- [x] `wiki/archives/card-archives.md` — no stance revision
+- [x] `wiki/archives/further-studying.md` — no stance revision
+- [x] `wiki/archives/graduate-topics.md` — no stance revision
+- [x] `wiki/archives/index.md` — no stance revision
+- [x] `wiki/archives/qual-workshop-index.md` — no stance revision
+- [x] `wiki/archives/solution-compendia.md` — no stance revision
+- [x] `wiki/archives/topics.md` — no stance revision
 - [ ] `wiki/complex-analysis/appendices/appendix-fta-proofs.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
 - [ ] `wiki/complex-analysis/appendices/appendix-unsorted.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
 - [ ] `wiki/complex-analysis/appendices/gauss-lucas-theorem.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
@@ -213,26 +213,26 @@ Policy: [STANCE](../CONTRIBUTING.md#professional-equality-and-authorial-stance-s
 - [ ] `wiki/complex-analysis/workshops/complex-week-1-preliminaries.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
 - [ ] `wiki/complex-analysis/workshops/complex-week-2-cauchy.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
 - [ ] `wiki/complex-analysis/workshops/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
-- [ ] `wiki/index.md`
-- [ ] `wiki/prelim/counterexamples.md`
-- [ ] `wiki/prelim/index.md`
-- [ ] `wiki/prelim/problems/berkeley-prelims.md`
-- [ ] `wiki/prelim/problems/index.md`
-- [ ] `wiki/prelim/problems/integral-practice.md`
-- [ ] `wiki/prelim/problems/ucla-prelims.md`
-- [ ] `wiki/prelim/resources/index.md`
-- [ ] `wiki/prelim/resources/problems.md`
-- [ ] `wiki/prelim/resources/references.md`
-- [ ] `wiki/prelim/resources/solutions.md`
-- [ ] `wiki/prelim/resources/topics.md`
-- [ ] `wiki/prelim/useful-tricks.md`
-- [ ] `wiki/prelim/which-technique.md`
-- [ ] `wiki/prelim/worked-exams/all.md`
-- [ ] `wiki/prelim/worked-exams/fall-2014.md`
-- [ ] `wiki/prelim/worked-exams/fall-2015.md`
-- [ ] `wiki/prelim/worked-exams/fall-2016.md`
-- [ ] `wiki/prelim/worked-exams/fall-2017.md`
-- [ ] `wiki/prelim/worked-exams/index.md`
+- [x] `wiki/index.md` — no stance revision
+- [x] `wiki/prelim/counterexamples.md` — no stance revision
+- [x] `wiki/prelim/index.md` — removed "the recognition page carries more of the weight" framing
+- [x] `wiki/prelim/problems/berkeley-prelims.md` — no stance revision
+- [x] `wiki/prelim/problems/index.md` — no stance revision
+- [x] `wiki/prelim/problems/integral-practice.md` — removed "in order of difficulty" framing
+- [x] `wiki/prelim/problems/ucla-prelims.md` — no stance revision
+- [x] `wiki/prelim/resources/index.md` — no stance revision
+- [x] `wiki/prelim/resources/problems.md` — no stance revision
+- [x] `wiki/prelim/resources/references.md` — no stance revision
+- [x] `wiki/prelim/resources/solutions.md` — no stance revision
+- [x] `wiki/prelim/resources/topics.md` — no stance revision
+- [x] `wiki/prelim/useful-tricks.md` — removed "show up constantly" and "Apply the method systematically rather than searching for a shortcut" framing
+- [x] `wiki/prelim/which-technique.md` — removed "recognizing the form is the whole exam" framing
+- [x] `wiki/prelim/worked-exams/all.md` — no stance revision
+- [x] `wiki/prelim/worked-exams/fall-2014.md` — no stance revision
+- [x] `wiki/prelim/worked-exams/fall-2015.md` — no stance revision
+- [x] `wiki/prelim/worked-exams/fall-2016.md` — no stance revision
+- [x] `wiki/prelim/worked-exams/fall-2017.md` — no stance revision
+- [x] `wiki/prelim/worked-exams/index.md` — no stance revision
 - [ ] `wiki/real-analysis/appendices/appendix-inequalities.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
 - [ ] `wiki/real-analysis/appendices/functional-analysis.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.
 - [ ] `wiki/real-analysis/appendices/index.md` — transferred to main; coverage in tone-audit-wiki-analysis-topology.md.

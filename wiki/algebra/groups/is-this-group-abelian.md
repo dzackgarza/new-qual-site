@@ -8,7 +8,7 @@ topics:
 
 # Is this group abelian?
 
-The question is asked directly, and it is also the hidden form of "classify the groups of order $n$", since the abelian ones are settled by the structure theorem and only the rest need work.
+The finite-abelian structure theorem classifies the abelian groups of a given order. The criteria below determine when all groups of that order are abelian.
 
 ## From the order alone
 
@@ -26,7 +26,7 @@ For the $p^2$ case, the class equation forces $Z(G)\neq 1$, and $G/Z(G)$ cyclic 
 
 ::: {.remark title="The $G/Z(G)$ trick"}
 If $G/Z(G)$ is cyclic then $G$ is abelian.
-So $\size{Z(G)}$ can never be exactly $\size G / p$ for $p$ prime, which rules out most of the possibilities the class equation leaves open.
+Thus $\size{Z(G)}$ cannot equal $\size G / p$ for $p$ prime.
 :::
 
 ## From the structure theorem
@@ -39,10 +39,10 @@ This is the same computation as [[algebra/modules/classify-this-module|Classify 
 
 Then the question is which nonabelian group, and the tools are:
 
-- A normal Sylow subgroup, giving a semidirect product, from [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
+- A normal Sylow subgroup and a complement, giving a semidirect product; normal-subgroup criteria appear in [[algebra/group-actions/show-g-is-not-simple|Show $G$ is not simple]].
 
 - The number of elements of each order, which distinguishes $D_4$ from $Q_8$: $D_4$ has five elements of order $2$ and $Q_8$ has one.
 
 - The abelianization $G/[G,G]$, which is an invariant computable from a presentation.
 
-- The centre, the conjugacy class sizes, and the automorphism group, in that order of cheapness.
+- The centre, the conjugacy class sizes, and the automorphism group.

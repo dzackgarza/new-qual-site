@@ -30,7 +30,7 @@ Then show $F' = f$.
 
 :::
 
-:::{.remark title="What makes it powerful"}
+:::{.remark title="What makes the converse applicable"}
 Almost nothing is assumed about $f$: not smoothness, not differentiability, only continuity and the vanishing integrals.
 That is why it can be applied to a limit, where differentiability of the limit is exactly what is unknown.
 It is sometimes stated for rectangles with sides parallel to the axes, which is the form the Goursat argument below produces.

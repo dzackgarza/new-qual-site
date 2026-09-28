@@ -9,7 +9,7 @@ topics:
 
 # Commutative algebra
 
-The layer past the qual's core that the qual still asks about: Zorn, Nakayama, Noetherian conditions, localization.
+Existence arguments, finite generation, ideal chains, integral extensions, and localization.
 
 ## Zorn's lemma
 
@@ -28,8 +28,8 @@ The layer past the qual's core that the qual still asks about: Zorn, Nakayama, N
 [[E-NXHG6]]
 
 :::{.remark title="What Zorn is for here"}
-Three existence statements, all proved the same way: every nonzero ring has a maximal ideal, every proper ideal is contained in a maximal one, and every vector space has a basis.
-The pattern is a chain argument on a poset of partial objects, and the only step with content is that the union of a chain is an upper bound.
+Zorn's lemma proves that every nonzero commutative ring with identity has a maximal ideal, that every proper ideal is contained in a maximal ideal, and that every vector space has a basis.
+For ideals the poset consists of proper ideals containing the given ideal; for bases it consists of linearly independent subsets. In each case the union of a chain remains in the poset and is an upper bound.
 
 :::
 
@@ -82,8 +82,8 @@ from field extensions.
 
 [[D-OXIVT]]
 
-Use the [Stacks Project localization section](https://stacks.math.columbia.edu/tag/00CM)
-for the canonical construction and universal property.
+The [Stacks Project localization section](https://stacks.math.columbia.edu/tag/00CM)
+gives the construction and universal property.
 
 For a submonoid $S\leq (R,\cdot)$, write $S^{-1}R$ for the localization of $R$
 obtained by inverting the image of $S$.
@@ -110,10 +110,10 @@ For an integral domain $R$,
 
 [[D-JGYK4]]
 
-Hilbert's basis theorem is the permanence result to remember: adjoining finitely many
+Hilbert's basis theorem states that adjoining finitely many
 polynomial variables to a Noetherian ring keeps it Noetherian.  Primary ideals refine
 prime ideals by allowing nilpotence in the quotient, and are the language in which
-Noetherian ideals are decomposed when a problem asks for more than their radical.
+ideals in Noetherian rings admit primary decompositions.
 
 :::{.fact}
 The division algorithm for Euclidean domains.
