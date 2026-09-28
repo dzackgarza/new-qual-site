@@ -31,8 +31,7 @@ Show that the only two-sided ideals in $\mathcal A$ are $\{0\}$ and $\mathcal A$
 :::
 
 ::: {.solution}
-As literally defined in the source, the assertion has the additional vacuous example $\mathcal I=\varnothing$.
-Thus a nonempty hypothesis is needed for the stated conclusion.
+The empty set satisfies (i) and (ii) vacuously, so the statement holds for nonempty $\mathcal I$: the two-sided ideals are $\varnothing$, $\{0\}$, and $\mathcal A$.
 
 Assume $\mathcal I\ne\varnothing$.
 If $\mathcal I$ contains only $0$, then $\mathcal I=\{0\}$.
