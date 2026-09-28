@@ -23,19 +23,20 @@ What happens if this bound holds on all of $\CC$?
 :::
 
 ::: {.solution}
-Use that $f$ is entire to Laurent expand at $z=0$ to get $f(z) = \sum_{k\geq 0}c_k z^k$ everywhere.
-Claim: $c_{n+k} = 0$ for all $k\geq n+1$
-By the formula for Taylor coefficients, it suffices to show $f^{(n+k)}(0) = 0$ for all $k\geq n+1$.
-Apply the Cauchy estimate on a curve of radius $R\gg 1$:
+Assume $f$ is entire (as the title states) and $\abs{f(z)}\le M\abs z^n$ for $\abs z\ge R$.
+Taylor expand at $z=0$ to get $f(z) = \sum_{j\geq 0}c_j z^j$ everywhere.
+Claim: $c_{n+k} = 0$ for all $k\geq 1$.
+By the formula for Taylor coefficients, it suffices to show $f^{(n+k)}(0) = 0$ for all $k\geq 1$.
+Apply the Cauchy estimate on the circle of radius $\rho\geq R$:
 \[
-\abs{ f^{n+k} (0)} 
-&\leq {(n+k)! \over 2\pi} \int_{\abs{z} = R} \abs{f(\xi) \over \xi^{n+k+1}}\dxi\\
-&\leq {(n+k)! \over 2\pi} \int_{\abs{z} = R} \abs{M \over \xi^n \xi^{k+1}}\dxi\\
-&= {(n+k)! \over 2\pi} \int_{\abs{z} = R} \abs{M \over R ^{k+1}}\dxi\\
-&= {(n+k)! \over 2\pi} {M\over R^{k+1}} \cdot 2\pi R \\
-&= \bigo(1/R) \to 0
+\abs{ f^{(n+k)} (0)} 
+&\leq {(n+k)! \over 2\pi} \int_{\abs{\xi} = \rho} \abs{f(\xi) \over \xi^{n+k+1}}\abs{\dxi}\\
+&\leq {(n+k)! \over 2\pi} \int_{\abs{\xi} = \rho} {M\abs{\xi}^n \over \abs{\xi}^{n+k+1}}\abs{\dxi}\\
+&= {(n+k)! \over 2\pi} {M\over \rho^{k+1}} \cdot 2\pi \rho \\
+&= (n+k)!\,M\rho^{-k} \convergesto{\rho\to\infty} 0
 .\]
+So $f$ is a polynomial of degree at most $n$.
 
-If this holds on all of $\CC$, then $h(z) \da f(z)/z^n$ is constant and thus $f(z) = cz^n$.
+If the bound holds on all of $\CC\setminus\theset0$, then $h(z) \da f(z)/z^n$ is bounded near $0$, so its singularity at $0$ is removable, and $h$ is a bounded entire function. By Liouville $h$ is constant, and $f(z) = cz^n$.
 :::
 
