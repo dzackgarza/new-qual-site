@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $( f _ { n } ) _ { n \in \mathbb { N } }$ is a sequence of analytic functions on $\mathbb { D } : = \{ z \in \mathbb { C } : | z | < 1 \}$ Show that if $\left( f _ { n } \right)$ converges to a function $g : \mathbb { D }  \mathbb { C }$ uniformly on each compact subset of D, then g is analytic on D
+Suppose $( f _ { n } ) _ { n \in \mathbb { N } }$ is a sequence of analytic functions on $\mathbb { D } : = \{ z \in \mathbb { C } : | z | < 1 \}$ Show that if $\left( f _ { n } \right)$ converges to a function $g\colon \DD \to \CC$ uniformly on each compact subset of $\DD$, then $g$ is analytic on $\DD$.
 :::
 
 ::: {.solution}
