@@ -27,7 +27,7 @@ audit:
 
 
 ::: {.solution}
-<1>1. Determine the Sylow subgroups for the nonabelian groups of orders \(21\) and \(39\).
+<1>1. A nonabelian group of order \(21\) has one Sylow \(7\)-subgroup and seven Sylow \(3\)-subgroups; a nonabelian group of order \(39\) has one Sylow \(13\)-subgroup and thirteen Sylow \(3\)-subgroups.
 ::: {.proof}
 First let \(|G|=21=3\cdot7\). If \(n_7\) is the number of Sylow \(7\)-subgroups, Sylow's theorems give
 \[
