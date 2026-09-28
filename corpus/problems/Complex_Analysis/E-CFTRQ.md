@@ -44,9 +44,9 @@ f(z)=\frac{p(z)}{q(z)}
 \]
 with coprime polynomials $p,q$, and put
 \[
-d=\max\{\deg p,\deg q\}.
+n=\max\{\deg p,\deg q\}.
 \]
-For every finite value $w$ except possibly the ratio of the leading coefficients when $\deg p=\deg q=d$, the equation
+For every finite value $w$ except possibly the ratio of the leading coefficients when $\deg p=\deg q=n$, the equation
 \[
 f(z)=w
 \]
@@ -54,8 +54,8 @@ is equivalent to
 \[
 p(z)-wq(z)=0,
 \]
-a polynomial equation of degree $d$.
-Hence it has $d$ solutions counted with multiplicity.
+a polynomial equation of degree $n$.
+Hence it has $n$ solutions counted with multiplicity.
 
 Because $f$ is an automorphism, its inverse is holomorphic.
 Therefore $f$ has no critical points: in local coordinates,
@@ -64,7 +64,7 @@ Therefore $f$ has no critical points: in local coordinates,
 \]
 Thus every point in every fiber has multiplicity one.
 Since $f$ is also injective, a generic fiber contains exactly one point.
-Consequently $d=1$.
+Consequently $n=1$.
 
 Therefore $p(z)=az+b$ and $q(z)=cz+d$ for some $a,b,c,d\in\CC$.
 The determinant $ad-bc$ is nonzero, since otherwise the two linear polynomials are proportional and $f$ is constant.
