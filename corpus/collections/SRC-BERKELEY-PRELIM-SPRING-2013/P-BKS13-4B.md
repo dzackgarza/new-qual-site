@@ -24,14 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Let $U$ be an open subset of $\mathbb C$.
-Let $K$ be a closed bounded subset of $\mathbb C$ that is contained in $U$.
+Let $U$ be an open subset of $\CC$.
+Let $K$ be a closed bounded subset of $\CC$ that is contained in $U$.
 Put
-\[
+$$
 D=\min_{p\in K,\ q\notin U}|p-q|.
-\]
-That is, $D$ is the closest distance between $K$ and $\mathbb C\setminus U$.
-(If $U=\mathbb C$, then we put $D=\infty$.)
+$$
+That is, $D$ is the closest distance between $K$ and $\CC\setminus U$.
+(If $U=\CC$, then we put $D=\infty$.)
 
 Suppose that $f$ is an analytic function on $U$ so that for all $z\in U$, we have $|f(z)|\le M$.
 Here $M$ is a fixed positive number.
