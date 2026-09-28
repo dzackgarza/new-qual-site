@@ -26,7 +26,7 @@ If $f$ is a nonnegative measurable function on $[0, \pi]$ and $\int_0^\pi f(x)^3
 :::
 
 ::: {.solution}
-**Goal:** For nonnegative measurable $f$ on $[0, \pi]$ with $\int_0^\pi f^3 < \infty$, prove that $\lim_{\alpha \to \infty} \int_{\theset{x : f(x) > \alpha}} f^2 = 0$.
+Let $\alpha > 0$.
 
 <1>1. On the set $\theset{x : f(x) > \alpha}$, the pointwise bound $f^2 \leq \frac{1}{\alpha} f^3$ holds.
 ::: {.proof}
