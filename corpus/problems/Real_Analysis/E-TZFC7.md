@@ -26,31 +26,31 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. A uniform limit of bounded functions is bounded.
-<2>1. Choose $N$ with $\|f - f_N\|_\infty \le 1$.
+Let $f_n \to f$ uniformly on a set $E$.
+
+<1>1. If each $f_n$ is bounded, then $f$ is bounded.
+
 ::: {.proof}
-definition of uniform convergence with $\eps = 1$.
-:::
-<2>2. $|f(x)| \le |f_N(x)| + 1 \le \|f_N\|_\infty + 1$ for every $x$.
-::: {.proof}
-triangle inequality, and boundedness of $f_N$.
-:::
-<2>3. Q.E.D.
-::: {.proof}
-<2>2 bounds $|f|$ uniformly by $\|f_N\|_\infty + 1$.
+Uniform convergence with $\eps = 1$ gives $N$ with $\|f - f_N\|_\infty \le 1$. By the triangle inequality, $|f(x)| \le |f_N(x)| + 1 \le \|f_N\|_\infty + 1$ for every $x \in E$.
 :::
 
-<1>2. A uniform limit of continuous functions is continuous.
-<2>1. Fix $x_0$ and $\eps > 0$; choose $n$ with $\|f - f_n\|_\infty < \eps/3$.
+<1>2. If each $f_n$ is continuous, then $f$ is continuous.
+
+<2>1. Fix $x_0 \in E$ and $\eps > 0$. There are $n$ with $\|f - f_n\|_\infty < \eps/3$ and $\delta > 0$ with $|f_n(x) - f_n(x_0)| < \eps/3$ whenever $x \in E$ and $|x - x_0| < \delta$.
+
 ::: {.proof}
-uniform convergence.
+The first is uniform convergence and the second is continuity of $f_n$ at $x_0$.
 :::
-<2>2. Choose $\delta > 0$ such that $|f_n(x) - f_n(x_0)| < \eps/3$ whenever $|x - x_0| < \delta$.
+
+<2>2. Q.E.D.
+
 ::: {.proof}
-continuity of $f_n$ at $x_0$.
+For $x \in E$ with $|x - x_0| < \delta$, the triangle inequality and step <2>1 give $|f(x) - f(x_0)| \le |f(x) - f_n(x)| + |f_n(x) - f_n(x_0)| + |f_n(x_0) - f(x_0)| < \eps$. So $f$ is continuous at the arbitrary point $x_0$.
 :::
-<2>3. For $|x - x_0| < \delta$: $|f(x) - f(x_0)| \le |f(x) - f_n(x)| + |f_n(x) - f_n(x_0)| + |f_n(x_0) - f(x_0)| < \eps$.
+
+<1>3. Q.E.D.
+
 ::: {.proof}
-triangle inequality; the first and third terms are $< \eps/3$ by uniform convergence (<2>1), the middle by <2>2. <2>4. Q.E.D. Proof: <2>3 shows $f$ is continuous at the arbitrary point $x_0$.
+Steps <1>1 and <1>2.
 :::
 :::
