@@ -27,7 +27,7 @@ have in the annulus $\{ 1 \leq | z | \leq 3 \}$ . Justify your answer.
 :::
 
 ::: {.solution}
-**Goal:** Determine the number of zeros of the polynomial $P(z) = z^9 + z^6 + 30z^5 - 3z + 2$ in the closed annulus $A = \{z \in \mathbb{C} : 1 \le |z| \le 3\}$ counted with multiplicity.
+Let $P(z) = z^9 + z^6 + 30z^5 - 3z + 2$; zeros are counted with multiplicity.
 
 <1>1. Number of zeros inside the open disk $D_3 = \{z \in \mathbb{C} : |z| < 3\}$:
     *Proof:*
