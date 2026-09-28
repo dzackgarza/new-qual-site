@@ -28,67 +28,49 @@ Show that if $a,b\in \RR$ with $a > \abs{b}$, then
 :::
 
 ::: {.solution}
-<1>1. Special case $b = 0$:
-<2>1. If $b = 0$, the integral simplifies directly to:
-\[
-\int_0^{2\pi} \frac{d\theta}{a} = \frac{2\pi}{a} = \frac{2\pi}{\sqrt{a^2 - b^2}}.
-\]
+Write $I$ for the integral.
+
+<1>1. If $b = 0$, then $I = \dfrac{2\pi}{\sqrt{a^2 - b^2}}$.
+
 ::: {.proof}
-elementary integration of a constant.
+The integrand is the constant $1/a$, so $I = 2\pi/a = 2\pi/\sqrt{a^2}$.
 :::
 
-<1>2. Transformation to a contour integral on $|z| = 1$ for $b \neq 0$:
-<2>1. Let $z = e^{i\theta}$, so $d\theta = \frac{dz}{iz}$ and $\cos \theta = \frac{z + z^{-1}}{2}$.
-The integrand becomes:
-\[
-a + b \cos \theta = a + \frac{b(z + z^{-1})}{2} = \frac{bz^2 + 2az + b}{2z}.
-\]
+<1>2. If $b\neq0$, then
+$$I = \frac{2}{i} \oint_{\abs{z} = 1} g(z)\,dz,
+\qquad
+g(z)\coloneqq\frac{1}{bz^2 + 2az + b},$$
+with the unit circle oriented counterclockwise.
+
 ::: {.proof}
-Euler's formula for cosine.
-:::
-<2>2. Substituting into the integral:
-\[
-I = \oint_{|z| = 1} \frac{1}{\frac{bz^2 + 2az + b}{2z}} \frac{dz}{iz} = \frac{2}{i} \oint_{|z| = 1} \frac{dz}{bz^2 + 2az + b}.
-\]
-::: {.proof}
-substitution along the unit circle oriented counterclockwise.
+With $z = e^{i\theta}$, one has $d\theta = \frac{dz}{iz}$ and $\cos \theta = \frac{z + z^{-1}}{2}$, so
+$$a + b \cos \theta = \frac{bz^2 + 2az + b}{2z}
+\qquad\text{and}\qquad
+\frac{d\theta}{a+b\cos\theta} = \frac{2z}{bz^2 + 2az + b}\cdot\frac{dz}{iz}.$$
 :::
 
-<1>3. Poles and Residue Calculation:
-<2>1. The denominator $bz^2 + 2az + b = 0$ has roots:
-\[
-z_1 = \frac{-a + \sqrt{a^2 - b^2}}{b}, \qquad z_2 = \frac{-a - \sqrt{a^2 - b^2}}{b}.
-\]
-Notice that $z_1 z_2 = \frac{a^2 - (a^2 - b^2)}{b^2} = 1$.
+<1>3. If $b\neq0$, the only pole of $g$ inside the unit circle is
+$$z_1 = \frac{-a + \sqrt{a^2 - b^2}}{b},
+\qquad\text{and}\qquad
+\operatorname{Res}(g, z_1) = \frac{1}{2\sqrt{a^2 - b^2}}.$$
+
 ::: {.proof}
-quadratic formula.
-:::
-<2>2. Since $a > |b| > 0$, $|z_2| = \frac{a + \sqrt{a^2 - b^2}}{|b|} > \frac{a}{|b|} > 1$.
-Since $z_1 z_2 = 1$, we have $|z_1| = \frac{1}{|z_2|} < 1$.
-Thus $z_1$ is the unique pole lying strictly inside the unit circle $|z| = 1$.
-::: {.proof}
-root product equals 1.
-:::
-<2>3. The integrand $g(z) = \frac{1}{b(z - z_1)(z - z_2)}$ has a simple pole at $z_1$, with residue:
-\[
-\operatorname{Res}(g, z_1) = \lim_{z \to z_1} (z - z_1) g(z) = \frac{1}{b(z_1 - z_2)} = \frac{1}{b \cdot \frac{2\sqrt{a^2 - b^2}}{b}} = \frac{1}{2\sqrt{a^2 - b^2}}.
-\]
-::: {.proof}
-formula for simple pole residue.
+The roots of $bz^2 + 2az + b$ are $z_1$ and $z_2 = \frac{-a - \sqrt{a^2 - b^2}}{b}$, and $z_1 z_2 = 1$. Since $a > \abs{b} > 0$,
+$$\abs{z_2} = \frac{a + \sqrt{a^2 - b^2}}{\abs{b}} > \frac{a}{\abs{b}} > 1,$$
+so $\abs{z_1} = 1/\abs{z_2} < 1$. The pole at $z_1$ is simple, with residue
+$$\frac{1}{b(z_1 - z_2)} = \frac{1}{b \cdot \frac{2\sqrt{a^2 - b^2}}{b}}.$$
 :::
 
-<1>4. Evaluation by the Residue Theorem:
-<2>1. By the Cauchy Residue Theorem:
-\[
-I = \frac{2}{i} \cdot 2\pi i \operatorname{Res}(g, z_1) = 4\pi \left(\frac{1}{2\sqrt{a^2 - b^2}}\right) = \frac{2\pi}{\sqrt{a^2 - b^2}}.
-\]
+<1>4. If $b\neq0$, then $I = \dfrac{2\pi}{\sqrt{a^2 - b^2}}$.
+
 ::: {.proof}
-Residue Theorem.
+By steps <1>2 and <1>3 and the residue theorem,
+$$I = \frac{2}{i} \cdot 2\pi i \operatorname{Res}(g, z_1) = \frac{4\pi}{2\sqrt{a^2 - b^2}}.$$
 :::
 
-<1>5. Conclusion:
-$\int_0^{2\pi} \frac{d\theta}{a + b\cos\theta} = \frac{2\pi}{\sqrt{a^2 - b^2}}$. Q.E.D.
+<1>5. Q.E.D.
+
 ::: {.proof}
-<1>1 through <1>4.
+Steps <1>1 and <1>4 give $I = \boxed{\dfrac{2\pi}{\sqrt{a^2 - b^2}}}$ in both cases.
 :::
 :::
