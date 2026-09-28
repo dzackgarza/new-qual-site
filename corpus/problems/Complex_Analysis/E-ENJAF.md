@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ENJAF
 kind: problem
-title: Expansion at an essential singularity
+title: Laurent series of $e^{1/z}\cos(1/z)$ at its essential singularity $0$
 classification:
   areas:
   - complex-analysis
