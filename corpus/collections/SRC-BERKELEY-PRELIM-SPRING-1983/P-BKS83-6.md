@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS83-6
 kind: problem
-title: Basic consequences of continuity and period one
+title: Extrema, uniform continuity, and a point with $f(x_0+\pi)=f(x_0)$ for a continuous $1$-periodic function
 classification:
   areas: [prelim]
   topics: []
