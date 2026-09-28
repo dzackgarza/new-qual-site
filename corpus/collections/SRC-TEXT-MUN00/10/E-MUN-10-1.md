@@ -37,5 +37,4 @@ of upper bounds is nonempty. Since \(A\) is well-ordered, \(U\) has a smallest e
 \[
 u_0=\sup B.
 \]
-Thus every well-ordered set has the least upper bound property.
 :::
