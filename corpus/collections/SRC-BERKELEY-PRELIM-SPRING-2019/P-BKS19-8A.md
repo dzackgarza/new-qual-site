@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-8A
 kind: problem
-title: The elementary symmetric polynomial map on $\mathbb C^3$ is surjective but not injective
+title: The elementary symmetric polynomial map on $\CC^3$ is surjective but not injective
 classification:
   areas:
   - prelim
@@ -17,9 +17,9 @@ audit:
 ---
 
 ::: {.problem}
-Show that $F:\mathbb C^3\to\mathbb C^3$ defined by
-\[
+Show that $F:\CC^3\to\CC^3$ defined by
+$$
 F(u,v,w)=(-u-v-w,\ uv+uw+vw,\ -uvw)
-\]
+$$
 is surjective but not injective.
 :::
