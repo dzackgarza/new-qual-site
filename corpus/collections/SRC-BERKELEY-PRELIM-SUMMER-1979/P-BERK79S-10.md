@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-10
 kind: problem
-title: Solve a coupled constant-coefficient first-order system
+title: All solutions of the linear system $x'=2x-y$, $y'=x$
 classification:
   areas: [prelim]
   topics: []
