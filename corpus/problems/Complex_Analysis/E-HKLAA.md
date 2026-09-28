@@ -35,47 +35,51 @@ Find a conformal map
 :::
 
 ::: {.solution}
-**Part 1**:
-this is a bigon with vertices $0, \infty$, so send $0\to\infty$ with $1/z$.
-Orient $i\RR$ and the circle $S$ positively, note that both will be mapped to generalized circles.
-To find the resulting region, use handedness -- it's on the right of $i\RR$ and the right of $S$.
-The map preserves $i\RR$ and as $t$ traces out $(-\infty, 0^-, 0^+, \infty)$, $f(it)$ traces out $(0^+, \infty, -\infty, 0^-)$, so this preserves the orientation of $i\RR$.
-For $S$, let $z_0\da {1\over 2}(1+i)\in S$, then $f(z_0) = 1-i$.
-So the arc $(1,z_0, 0)$ maps to $(1, 1-i,\infty)$, so this is a vertical line through $\Re(z) = 1$ oriented downward.
-The region is to the right of $S$, so we have
+**Part 1.**
+The region is bounded by $i\RR$ and the circle $S=\theset{\abs{z-1/2}=1/2}$, which meet at $0$ and $\infty$. Let $f(z)=1/z$ and write $z=x+iy$. Then $\Re f(z)=x/\abs z^2$, so $\Re z>0$ if and only if $\Re f(z)>0$, and
+\[
+\abs{z-1/2}>1/2 \iff x^2+y^2>x \iff \Re f(z)<1
+.\]
+So $f$ maps the region onto the strip $0<\Re(w)<1$:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_18-14-29.png)
 
 The remaining steps are:
 
-- Dilate and rotate to $0<\Im(z) < \pi$ using $z\mapsto i\pi z$.
-- Exponentiate using $z\mapsto e^z$ to get $\HH$.
-- Apply the Cayley map $z\mapsto {z-i\over z+i}$ to get $\DD$.
+- Dilate and rotate to $0<\Im(w) < \pi$ using $w\mapsto i\pi w$.
+- Exponentiate using $w\mapsto e^w$ to get $\HH$.
 
-**Part 2**:
-a bigon with vertex $1$, i.e. a lune.
-Send $1\to \infty$ with $f(z) \da {1\over z-1}$, and check that
+The composite is $z\mapsto e^{i\pi/z}$.
 
-- $1\mapsto \infty$
+**Part 2.**
+The region is a lune with vertex $1$, where the circles $\abs z=1$ and $\abs{z-1/2}=1/2$ are tangent.
+Send $1\to \infty$ with $f(z) \da {1\over z-1}$. For $z=x+iy$,
+\[
+\Re f(z)={x-1\over\abs{z-1}^2},
+\qquad
+\Re f(z)>-1\iff x^2+y^2>x,
+\qquad
+\Re f(z)<-{1\over2}\iff x^2+y^2<1
+,\]
+so $f$ maps the region onto the strip $-1<\Re(w) < -{1\over 2}$. For instance
+
 - ${1\over 2}(1+i) \mapsto -(1+i)$
 - $0\mapsto -1$
 - $i\mapsto -{1\over 2}(1+i)$
 - $-1\mapsto -{1\over 2}$
 
-By tracking tangent/normal vectors, this results in the region $-1<\Re(z) < -{1\over 2}$:
-
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_18-32-10.png)
 
 The remaining steps are:
 
-- Translate to the right by $z\mapsto z+{1\over 2}$ to get $-{1\over 2}<\Re(z) < 0$.
-- Rotate and dilate by $z\mapsto -2i\pi z$ to get $0<\Im(z) < \pi$
-- Exponentiate by $z\mapsto e^z$ to get $\HH$,
-- Cayley map $z\mapsto {z-i\over z+i}$ to get $\DD$.
+- Translate by $w\mapsto w+{1\over 2}$ to get $-{1\over 2}<\Re(w) < 0$.
+- Rotate and dilate by $w\mapsto -2i\pi w$ to get $0<\Im(w) < \pi$.
+- Exponentiate by $w\mapsto e^w$ to get $\HH$.
+- Apply the Cayley map $w\mapsto {w-i\over w+i}$ to get $\DD$.
 
-**Part 3**:
-a bigon in $\HH$ with vertices $\pm 1$, with an arc passing through $z_3 \da i(\sqrt{2} - 1)$.
-Take $z\mapsto {z+1\over z-1}$ to obtain
+**Part 3.**
+The circle $\abs{z+i}=\sqrt2$ passes through $\pm1$ and meets $i\RR$ in $\HH$ at $z_3 \da i(\sqrt{2} - 1)$, so the region is a lune with vertices $\pm 1$ bounded by $(-1,1)$ and the arc through $z_3$.
+Take $f(z)={z+1\over z-1}$, so that
 
 - $-1\mapsto 0$
 - $1\mapsto \infty$
@@ -96,48 +100,39 @@ f(z_3)
 &= -{(1+ic)^2 \over 1+c^2} \\
 &= -\qty{ {1-c^2 \over 1+c^2} + i{2c\over 1+c^2} }
 .\]
-Now check that $c^2 = 3-2\sqrt 2$ and $1-c^2 = -2+2\sqrt{2}$, so
+Now $c^2 = 3-2\sqrt 2$ and $1-c^2 = -2+2\sqrt{2}$, so
 \[
 { 2c\over 1-c^2} = {2(\sqrt 2 - 1) \over -2 + 2\sqrt 2 } = 1
 ,\]
 so the argument is $\arctan(1) = { \pi \over 4}$ or $-{3\pi \over 4}$.
-Since $1-c^2>0, 2c>0$, noting the negative sign above, $f(z_3)$ is in $Q_3$, so take $-3\pi \over 4$.
+Since $1-c^2>0$ and $2c>0$, the negative sign places $f(z_3)$ in the third quadrant, so the argument is $-{3\pi \over 4}$.
 :::
 
-Orienting the bigon positively, we have $(-1, 0, 1)\mapsto (0, -1, \infty)$, i.e. the real axis oriented from $+\infty\to-\infty$.
-Similarly $(1, z_3, -1)\mapsto (\infty, \omega_4^3, 0)$, which is a line passing through $\omega_4^3$, oriented from $Q_3\to Q_1$.
-Since the original region was on the left of both curves, we get
+The segment $(-1,1)$ maps onto the negative real axis, and the arc through $z_3$ maps onto the ray from $0$ through $w_0$. The image of the region is the sector between these rays containing $f(0.2i)=(-0.96-0.4i)/1.04$, namely $-\pi<\Arg(w)<-3\pi/4$:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_20-01-07.png)
 
 Now
 
-- Flip this to $Q_1$ with $z\mapsto -z$ to get $0<\Arg(z) < \pi/4$.
-- Rotate clockwise with $z\mapsto e^{-i\pi\over 8}$ to get $-\pi/8<\Arg(z) < \pi/8$.
-- Dilate the argument to a half-plane with $z\mapsto z^{\pi\over 2\theta_0}$ where $\theta_0 = \pi/8$ to get $-\pi/2<\Arg(z) < \pi/2$.
-- Rotate with $z\mapsto iz$ to get $\HH$.
-- Cayley map, $z\mapsto {z-i\over z+i}$.
+- Flip this with $w\mapsto -w$ to get $0<\Arg(w) < \pi/4$.
+- Rotate clockwise with $w\mapsto e^{-i\pi/8}w$ to get $-\pi/8<\Arg(w) < \pi/8$.
+- Dilate the argument to a half-plane with $w\mapsto w^{\pi/(2\theta_0)}=w^4$, where $\theta_0 = \pi/8$, to get $-\pi/2<\Arg(w) < \pi/2$.
+- Rotate with $w\mapsto iw$ to get $\HH$.
+- Apply the Cayley map $w\mapsto {w-i\over w+i}$.
 
-**Part 4**:
-See part 5.
-The critical step is a Blaschke map $\psi_a$ which sends $a\to 0$.
-For $a\in \RR$, $\psi_a(\RR) = \RR$ and this will map the partial slit from $a$ to the boundary to a usual slit from $0$ to the boundary.
+**Part 4.**
+The Blaschke-type map
+\[
+\varphi(z)={z-a\over1-az}
+\]
+is an automorphism of $\DD$ since $a\in(0,1)$ is real. It maps $\RR$ to $\RR$, is increasing on $(-1,1)$ since $\varphi'(x)=(1-a^2)/(1-ax)^2>0$, and satisfies $\varphi(a)=0$ and $\varphi(1)=1$. So $\varphi([a,1))=[0,1)$ and $\varphi$ maps $\DD\setminus[a,1)$ onto $\DD\setminus[0,1)$.
 
-**Part 5**:
-Dealing with the slit:
+**Part 5.**
+Let $U$ be the region.
 
-![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-31_22-17-44.png)
-
-- Use a Blaschke factor to send $a\da -1/2\to 0$, so $z\mapsto {a-z\over 1-\bar{a} z}$.
-  Checking that $(-1/2, 0, 1)\to (0, -1/2, -1)$, the image is $\DD\sm(-1, 0]$.
-- Rotate with $z\mapsto e^{-i\pi}z$ to get $\DD\sm[0, 1)$.
-- Unfold with $z\mapsto z^{1\over 2}$ to get $\DD \intersect \HH$, noting that the slit becomes $[-1, 1]$ and is erased here.
-- Use $z\mapsto -1/z$ to get $\DD^c \intersect \HH$.
-- Use the Joukowski map $z\mapsto z+z\inv$ to map to $Q_{34}$
-- Use $z\mapsto -z$ to get $\HH$.
-
+- The squaring map $z\mapsto z^2$ sends the right half-disk $\theset{\abs z<1,\ \Re z>0}$ bijectively onto $\DD\setminus(-1,0]$, and sends the slit $(0,1/2]$ onto $(0,1/4]$. So it maps $U$ onto $\DD\setminus(-1,1/4]$.
+- As in Part 4, $z\mapsto {z-1/4\over1-z/4}$ is an automorphism of $\DD$, increasing on $(-1,1)$, with $-1\mapsto-1$ and $1/4\mapsto0$. It maps $\DD\setminus(-1,1/4]$ onto $\DD\setminus(-1,0]$.
+- The map $z\mapsto -z$ gives $\DD\setminus[0,1)$.
+- The branch of $z\mapsto z^{1/2}$ with argument in $(0,\pi)$ maps $\DD\setminus[0,1)$ onto the upper half-disk $\DD\intersect\HH$.
+- The map $z\mapsto -{1\over2}\qty{z+z\inv}$ sends $\DD\intersect\HH$ onto $\HH$, as in [[E-FCTXH]].
 :::
-
-		
-		
-
