@@ -115,6 +115,11 @@ extraction-detector:
 _extraction-detector-push:
     uv run python tools/extraction_detector.py --range-gate "$(git merge-base HEAD @{upstream})"
 
+# The committed macro mirror matches a fresh read of pandoc-config.
+[private]
+_macros-push:
+    uv run python tools/sync_macros.py --check
+
 # Update Queue C over the commits being pushed. Content commits run no gate, so the queue is
 # regenerated here from the upstream queue and the pushed card diff; `just unsolved` remains
 # the independent full rebuild. A queue that moved is committed and this push is refused, so
@@ -192,7 +197,7 @@ test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
-test-push: _extraction-detector-push _unsolved-push backlog crawl
+test-push: _extraction-detector-push _unsolved-push _macros-push backlog crawl
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate

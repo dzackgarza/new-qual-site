@@ -803,9 +803,20 @@ def load_front_matter(text: str) -> object:
 
 # Pandoc's YAML metadata block: both delimiters stand on lines of their own.
 FRONT_MATTER = re.compile(r"\A---\n(?P<front>.*?)^---\n(?P<body>.*)\Z", re.DOTALL | re.MULTILINE)
+# C0 controls other than tab and newline. An extractor writes NUL where a PDF
+# glyph failed to map, and the page renders a statement with its sigma missing.
+CONTROL_CHARACTER = re.compile(r"[\x00-\x08\x0b-\x1f\x7f]")
+
+
+def reject_control_characters(text: str, path: Path) -> None:
+    match = CONTROL_CHARACTER.search(text)
+    if match is not None:
+        line = text.count("\n", 0, match.start()) + 1
+        raise ValueError(f"{path}:{line}: control character U+{ord(match.group()):04X}")
 
 
 def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
+    reject_control_characters(text, path)
     match = FRONT_MATTER.match(text)
     if match is None:
         raise ValueError(f"{path}: card must start with a YAML front matter block closed by a --- line")

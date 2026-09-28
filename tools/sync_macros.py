@@ -182,11 +182,15 @@ def main() -> int:
         frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
 
     macros = {"\\" + name: UNRENDERABLE[name] if name in UNRENDERABLE else TEX_ONLY.sub("", body).strip() for name, body in sorted(keep.items()) if name not in NATIVE}
-    (ROOT / "vocabularies" / "macros.json").write_text(json.dumps(macros, indent=2, ensure_ascii=False) + "\n")
+    mirror = ROOT / "vocabularies" / "macros.json"
+    text = json.dumps(macros, indent=2, ensure_ascii=False) + "\n"
+    if "--check" in sys.argv[1:]:
+        if mirror.read_text() != text:
+            print(f"{mirror.relative_to(ROOT)} differs from {PREAMBLE}: run `uv run python tools/sync_macros.py`", file=sys.stderr)
+            return 1
+        return 0
+    mirror.write_text(text)
     print(f"{len(macros)} macros used by {' and '.join(USED_IN)}, from {PREAMBLE}")
-    undefined = sorted(n for n in used if n not in defined)
-    if undefined:
-        print(f"not defined in the preamble (assumed standard LaTeX): {' '.join(undefined)}")
     return 0
 
 
