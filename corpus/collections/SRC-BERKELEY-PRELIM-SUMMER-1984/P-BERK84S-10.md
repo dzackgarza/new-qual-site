@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-10
 kind: problem
-title: Completeness of a one-third Holder space
+title: Completeness of the Hölder space $C^{1/3}$
 classification:
   areas:
   - prelim
