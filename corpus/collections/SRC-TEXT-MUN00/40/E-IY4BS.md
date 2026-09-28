@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-IY4BS
 kind: problem
-title: F-sigma and G-delta sets
+title: Complements of $F_\sigma$ sets are $G_\delta$ sets
 classification:
   areas:
   - topology
