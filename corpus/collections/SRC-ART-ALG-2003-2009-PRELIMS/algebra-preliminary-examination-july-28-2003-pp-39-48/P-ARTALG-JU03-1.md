@@ -71,7 +71,7 @@ is therefore equality.
 
 ::: {.proof}
 Here $Z_G(Q)$ denotes the set of elements commuting with every
-element of $Q$, not merely with one chosen element. The group
+element of $Q$. The group
 $Q$ has prime order $3$ and is cyclic, hence abelian. Thus
 $Q\subseteq Z_G(Q)$. Every element centralizing $Q$ fixes each
 of its elements under conjugation and therefore normalizes $Q$.
