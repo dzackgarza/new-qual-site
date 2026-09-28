@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-11
 kind: problem
-title: Subgroups of S4 isomorphic to S3 and S2
+title: Subgroups of $S_4$ isomorphic to $S_3$ and $S_2$
 classification:
   areas:
   - prelim
