@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BXDQY
 kind: problem
-title: Rudin 10.3
+title: Entire $f,g$ with $\abs f\le\abs g$ satisfy $f=cg$
 classification:
   areas:
   - complex-analysis
