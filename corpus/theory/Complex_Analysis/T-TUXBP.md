@@ -34,7 +34,6 @@ and this $g$ is of class $C^r$.
 :::
 
 ::: {.remark}
-The invertibility hypothesis is on the $n\times n$ block $\partial f/\partial\vector y$ belonging to the variables $\vector y$ being solved for; $Df$ itself is an $n\times(k+n)$ matrix.
 Differentiating $f(\vector x,g(\vector x))=0$ gives
 $$
 \frac{\partial f}{\partial\vector x}+\frac{\partial f}{\partial\vector y}\,Dg=0,
@@ -45,5 +44,5 @@ The proof applies the inverse function theorem to $F(\vector x,\vector y)\colone
 :::
 
 ::: {.concept}
-See Munkres, *Analysis on Manifolds*, §9, Theorem 9.2, p. 71; the derivative formula is Theorem 9.1.
+See [@Mun91, Section 9, Theorem 9.2]; the formula for $Dg$ is [@Mun91, Theorem 9.1].
 :::
