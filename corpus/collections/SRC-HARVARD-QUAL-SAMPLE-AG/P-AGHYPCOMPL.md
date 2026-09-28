@@ -87,9 +87,9 @@ Conversely, a prime of $(S_F)_0$ determines the corresponding homogeneous prime 
 By <1>1 the complement is $D_+(F)$, and by <1>2 this is the spectrum of the ring $(S_F)_0$.
 :::
 
-<1>4. The conclusion does not require $H$ to be smooth, reduced, or irreducible.
+<1>4. The complement of every hypersurface $V_+(F)$ in $\mathbb P^2_k$ is affine, whether $F$ is irreducible, reducible, or has repeated factors, and whether $V_+(F)$ is smooth or singular.
 ::: {.proof}
-The proof used only that $H$ is cut out scheme-theoretically by one homogeneous equation $F$.  Repeated factors or a factorization of $F$ do not affect the fact that its complement is the standard affine open $D_+(F)$.
+Steps <1>1--<1>3 use only that $H$ is cut out scheme-theoretically by one homogeneous equation $F$ of positive degree, so its complement is the standard affine open $D_+(F)$.
 :::
 
 <1>5. For example, if
