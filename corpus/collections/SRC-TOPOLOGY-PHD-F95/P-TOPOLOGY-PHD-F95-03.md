@@ -45,7 +45,6 @@ X=\prod_{\alpha\in I}X_\alpha,
 A=\prod_{\alpha\in I}A_\alpha,
 \]
 and let $\pi_\alpha:X\to X_\alpha$ denote the coordinate projection.
-We use the usual ZFC convention for arbitrary products.
 
 <1>1. If every $A_\alpha$ is closed in $X_\alpha$, then $A$ is closed in $X$.
 ::: {.proof}
@@ -92,11 +91,10 @@ Otherwise let
 x=(x_\alpha)_{\alpha\in I}\in\prod_{\alpha\in I}\overline{A_\alpha}.
 \]
 Then every $A_\alpha$ is nonempty.
-Choose once and for all a point
+By the axiom of choice, the product of the nonempty sets $A_\alpha$ is nonempty; choose a point
 \[
-b=(b_\alpha)_{\alpha\in I}\in\prod_{\alpha\in I}A_\alpha;
+b=(b_\alpha)_{\alpha\in I}\in\prod_{\alpha\in I}A_\alpha.
 \]
-this is the only place where the usual axiom-of-choice convention for an arbitrary family is used.
 
 Let $U$ be any open neighborhood of $x$ in $X$.
 By the definition of the product topology, $U$ contains a basic neighborhood
