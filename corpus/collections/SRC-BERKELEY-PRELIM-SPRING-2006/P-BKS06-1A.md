@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-1A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 1A
+title: Basis of the kernel of $2x+3y+5z+7w$ on $\ZZ^4$ and its free quotient
 classification:
   areas: [prelim]
   topics: []
