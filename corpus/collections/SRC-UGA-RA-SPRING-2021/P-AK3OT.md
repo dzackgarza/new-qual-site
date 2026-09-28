@@ -46,7 +46,7 @@ Prove that \( \sum_{n\in \NN} f_n \) converges in the Hilbert space \( L^2([0, 1
 :::
 
 ::: {.warnings}
-Although this mentions Plancherel, probably what is needed is Parseval's identity:
+For Fourier series on $L^2([0,1])$, the identity in question is Parseval's identity:
 \[
 \sum_{k\in \ZZ} \abs{\hat{f}(k)}^2 = \int_0^1 \abs{f(x)}^2\dx
 .\]
