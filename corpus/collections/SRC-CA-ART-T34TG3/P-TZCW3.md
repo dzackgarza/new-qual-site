@@ -64,7 +64,7 @@ h(z) = \frac{1}{P(z)}
 $$
 is entire (holomorphic on all of $\CC$).
 
-For $|z| = R > 0$:
+For $|z| = R$ with $R$ large enough that $\frac{|a_{n-1}|}{|a_n| R} + \cdots + \frac{|a_0|}{|a_n| R^n} \le \frac12$:
 $$
 |P(z)| = |a_n| R^n \left| 1 + \frac{a_{n-1}}{a_n z} + \cdots + \frac{a_0}{a_n z^n} \right| \geq |a_n| R^n \left( 1 - \frac{1}{2} \right) = \frac{|a_n|}{2} R^n \to \infty \quad \text{as } R \to \infty.
 $$
