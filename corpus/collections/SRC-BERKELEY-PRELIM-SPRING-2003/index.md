@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-BERKELEY-PRELIM-SPRING-2003
 kind: collection
-title: UC Berkeley Preliminary Exam Spring 2003
+title: Berkeley preliminary exam Spring 2003
 classification:
   areas:
   - prelim
@@ -43,5 +43,5 @@ source:
 ---
 
 ::: {.remark}
-Part A consists of Problems 1A--9A and Part B of Problems 1B--9B. A companion solution packet covers all eighteen problems.
+Part A consists of Problems 1A--9A and Part B of Problems 1B--9B.
 :::
