@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RASP16G
 kind: problem
-title: "Weak convergence in C_0 is uniform boundedness plus pointwise convergence"
+title: "Weak convergence in $C_0(X)$ is uniform boundedness plus pointwise convergence"
 classification:
   areas:
   - real-analysis
@@ -32,67 +32,43 @@ Let $f \in C_0(X)$ and $f_k \in C_0(X)$ ($k = 1, 2, \ldots$). Prove that $f_k \t
 :::
 
 ::: {.solution}
-<1>1. Duality for $C_0(X)$:
+<1>1. $f_k \to f$ weakly in $C_0(X)$ if and only if $\int_X f_k\,d\mu \to \int_X f\,d\mu$ for every $\mu \in M(X)$.
 <2>1. By the Riesz–Markov–Kakutani Representation Theorem, the continuous dual space $C_0(X)^*$ is isometrically isomorphic to $M(X)$, the Banach space of regular complex Borel measures on $X$ equipped with the total variation norm $\|\mu\| = |\mu|(X)$.
 ::: {.proof}
-Riesz–Markov–Kakutani Representation Theorem on locally compact Hausdorff spaces.
+This is the Riesz–Markov–Kakutani representation theorem for a locally compact Hausdorff space $X$.
 :::
-<2>2. Thus $f_k \to f$ weakly in $C_0(X)$ if and only if $\int_X f_k\,d\mu \to \int_X f\,d\mu$ for every $\mu \in M(X)$.
+<2>2. Q.E.D.
 ::: {.proof}
-definition of weak convergence.
+By definition, $f_k\to f$ weakly if and only if $\Lambda(f_k)\to\Lambda(f)$ for every $\Lambda\in C_0(X)^*$; by step <2>1 these functionals are exactly $g\mapsto\int_X g\,d\mu$ for $\mu\in M(X)$.
 :::
 
-<1>2. Forward direction ($\implies$): Weak convergence implies uniform boundedness and pointwise convergence:
-<2>1. In any normed space, every weakly convergent sequence $\{f_k\}$ is norm-bounded.
-Viewing each $f_k$ as a linear functional on the dual space $C_0(X)^*$, the principle of uniform boundedness implies:
+<1>2. If $f_k \to f$ weakly, then $\sup_k\|f_k\|_u<\infty$ and $f_k\to f$ pointwise.
+<2>1. $\sup_{k \ge 1} \|f_k\|_u < \infty$.
+::: {.proof}
+Regard each $f_k$ as a bounded linear functional on the Banach space $C_0(X)^*$, with norm $\sup_{\|\mu\|\le1}\abs{\int_X f_k\,d\mu}=\|f_k\|_u$. Weak convergence makes $\sup_k\abs{\int_X f_k\,d\mu}$ finite for each $\mu\in M(X)$, so the uniform boundedness principle gives
 \[
 \sup_{k \ge 1} \|f_k\|_u = \sup_{k \ge 1} \sup_{\|\mu\| \le 1} \left|\int_X f_k\,d\mu\right| < \infty.
 \]
-::: {.proof}
-Uniform Boundedness Principle (Banach–Steinhaus).
 :::
-<2>2. For each fixed point $x \in X$, the Dirac point mass $\delta_x \in M(X)$ is a bounded Radon measure with $\|\delta_x\| = 1$.
+<2>2. $f_k(x) \to f(x)$ for every $x \in X$.
 ::: {.proof}
-definition of Dirac measure.
-:::
-<2>3. Applying weak convergence to $\mu = \delta_x$ yields:
+For $x\in X$, the Dirac measure $\delta_x$ lies in $M(X)$ with $\|\delta_x\| = 1$. Step <1>1 applied to $\mu=\delta_x$ gives
 \[
 f_k(x) = \int_X f_k\,d\delta_x \xrightarrow{k \to \infty} \int_X f\,d\delta_x = f(x).
 \]
-Thus $f_k(x) \to f(x)$ pointwise on $X$.
-::: {.proof}
-definition of integration against Dirac delta.
 :::
 
-<1>3. Reverse direction ($\impliedby$): Uniform boundedness and pointwise convergence imply weak convergence:
-<2>1. Assume $\sup_{k \ge 1} \|f_k\|_u \le M < \infty$ and $f_k(x) \to f(x)$ for all $x \in X$.
+<1>3. If $\sup_{k \ge 1} \|f_k\|_u \le M < \infty$ and $f_k \to f$ pointwise, then $f_k \to f$ weakly.
 ::: {.proof}
-hypothesis.
-:::
-<2>2. Let $\mu \in M(X)$ be an arbitrary regular complex Borel measure.
-Then $|\mu|(X) < \infty$, so the constant function $g(x) \equiv M$ is in $L^1(X, |\mu|)$.
-::: {.proof}
-finiteness of total variation for measures in $M(X)$.
-:::
-<2>3. For all $k \ge 1$ and $x \in X$, $|f_k(x)| \le M$.
-::: {.proof}
-<2>1.
-:::
-<2>4. By the Lebesgue Dominated Convergence Theorem:
+Let $\mu \in M(X)$. Then $|\mu|(X) < \infty$, so the constant function $M$ lies in $L^1(X, |\mu|)$ and dominates every $|f_k|$. By the dominated convergence theorem,
 \[
-\lim_{k \to \infty} \int_X f_k(x)\,d\mu(x) = \int_X \lim_{k \to \infty} f_k(x)\,d\mu(x) = \int_X f(x)\,d\mu(x).
+\lim_{k \to \infty} \int_X f_k\,d\mu = \int_X f\,d\mu.
 \]
-::: {.proof}
-Dominated Convergence Theorem applied with dominating function $g \equiv M$.
-:::
-<2>5. Since this holds for all $\mu \in M(X) \cong C_0(X)^*$, $f_k \to f$ weakly in $C_0(X)$.
-::: {.proof}
-<1>1.
+Since $\mu \in M(X)$ was arbitrary, step <1>1 gives $f_k \to f$ weakly in $C_0(X)$.
 :::
 
-<1>4. Conclusion:
-$f_k \to f$ weakly in $C_0(X)$ if and only if $\sup_{k \ge 1} \|f_k\|_u < \infty$ and $f_k \to f$ pointwise. Q.E.D.
+<1>4. Q.E.D.
 ::: {.proof}
-<1>2 and <1>3.
+Steps <1>2 and <1>3 prove the two implications.
 :::
 :::
