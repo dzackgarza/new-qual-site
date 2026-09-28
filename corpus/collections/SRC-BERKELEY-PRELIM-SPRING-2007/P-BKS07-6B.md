@@ -17,7 +17,7 @@ $$
 \varphi ( t ) = \varphi ( 0 ) + \int _ { 0 } ^ { t } f ( \varphi ( s ) ) d s , \qquad ( 0 \leq t < b ) .
 $$
 
-Prove that $\operatorname* { l i m } _ { t  b ^ { - } } \varphi ( t )$ exists, where $t \to b ^ { - }$ means t approaches b from the left.
+Prove that $\lim _ { t \to b ^ { - } } \varphi ( t )$ exists, where $t \to b ^ { - }$ means t approaches b from the left.
 :::
 
 ::: {.solution}
@@ -29,10 +29,10 @@ $$
 
 so $\varphi$ is Lipschitz continuous on [0, b) and hence preserves Cauchy sequences.
 Let $t _ { k } \to b$ from the left.
-Then $\varphi ( t _ { k } )$ is Cauchy and hence converges to some $y _ { 0 } ~ \in ~ \mathbb { R } ^ { d }$ . We claim that $\begin{array} { r } { \operatorname* { l i m } _ { t \to b ^ { - } } \varphi ( t ) = y _ { 0 } } \end{array}$ Let $\varepsilon > 0$ and choose k large enough that $\begin{array} { r } { | t _ { k } - b | < \frac { \varepsilon } { M + 1 } } \end{array}$ and $\begin{array} { r } { \| \varphi ( t _ { k } ) - y _ { 0 } \| < \frac { \varepsilon } { M + 1 } } \end{array}$ . Then for $\begin{array} { r } { 0 < b - t < \delta = \frac { \varepsilon } { M + 1 } } \end{array}$ we have
+Then $\varphi ( t _ { k } )$ is Cauchy and hence converges to some $y _ { 0 } ~ \in ~ \mathbb { R } ^ { d }$ . We claim that $\lim _ { t \to b ^ { - } } \varphi ( t ) = y _ { 0 }$. Let $\varepsilon > 0$ and choose k large enough that $| t _ { k } - b | < \frac { \varepsilon } { 4 ( M + 1 ) }$ and $\| \varphi ( t _ { k } ) - y _ { 0 } \| < \frac { \varepsilon } { 2 }$ . Then for $0 < b - t < \delta = \frac { \varepsilon } { 4 ( M + 1 ) }$ we have $| t - t _ { k } | < \frac { \varepsilon } { 2 ( M + 1 ) }$, so
 
 $$
-\begin{array} { c } { \displaystyle \| \varphi ( t ) - y _ { 0 } \| \le \| \varphi ( t ) - \varphi ( t _ { k } ) \| + \| \varphi ( t _ { k } ) - y _ { 0 } \| } \\ { \displaystyle \le M | t - t _ { k } | + \frac { \varepsilon } { M + 1 } \le \varepsilon } \end{array}
+\begin{aligned} \| \varphi ( t ) - y _ { 0 } \| &\le \| \varphi ( t ) - \varphi ( t _ { k } ) \| + \| \varphi ( t _ { k } ) - y _ { 0 } \| \\ &\le M | t - t _ { k } | + \frac { \varepsilon } { 2 } < \frac { \varepsilon } { 2 } + \frac { \varepsilon } { 2 } = \varepsilon \end{aligned}
 $$
 
 as required.
