@@ -43,7 +43,7 @@ For a holomorphic function, the Cauchy-Riemann equations are equivalent to vanis
 
 <1>3. Hence $\Delta f=0$.
 ::: {.proof}
-Holomorphic functions are smooth, so the second-order identity from the preceding exercise applies. Thus
+Holomorphic functions are smooth, so the identity $4\partial_z\partial_{\overline z}=\Delta$ of [[E-SS1.EX-10]] applies. Thus
 \[
 \Delta f
 =4\frac{\partial}{\partial z}\frac{\partial f}{\partial\overline z}
