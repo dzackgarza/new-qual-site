@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-11
 kind: problem
-title: Dimension of a displayed span in R5
+title: Dimension of a displayed span in $\RR^5$
 classification:
   areas:
   - applied-algebra
