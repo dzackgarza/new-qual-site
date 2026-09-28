@@ -98,7 +98,7 @@ The locality requirement means
 \[
 (f_x^\sharp)^{-1}(\mathfrak m_x)=\mathfrak m_{f(x)}.
 \]
-It is what makes affine schemes recover the contravariant algebraic category:
+With this requirement, morphisms of affine schemes correspond contravariantly to ring homomorphisms:
 \[
 \operatorname{Hom}_{\mathrm{Sch}}(\operatorname{Spec}B,\operatorname{Spec}A)
 \cong
