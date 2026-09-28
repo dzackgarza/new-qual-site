@@ -26,7 +26,7 @@ The poles, residues, product expansion, and reflection formula of $\Gamma$ are o
 :::
 
 ::: {.fact title="Classification by the discriminant"}
-For a nondegenerate real conic $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ with discriminant $\Delta \coloneqq B^2 - 4AC$:
+For a nondegenerate real conic $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ with at least one real point and discriminant $\Delta \coloneqq B^2 - 4AC$:
 
 - $\Delta < 0$ if and only if the conic is an ellipse, and it is a circle if and only if moreover $A=C$ and $B=0$;
 - $\Delta = 0$ if and only if the conic is a parabola;
