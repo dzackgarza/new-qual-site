@@ -90,30 +90,29 @@ ok
 - SRC-UNSORTED-REAL-ANALYSIS
 - SRC-UNSORTED-TOPOLOGY
 
-## dead-provenance-hrefs (30)
+## dead-provenance-hrefs (29)
 
 - SRC-GATHMANN-AG: https://www.mathematik.uni-kl.de/~gathmann/class/alggeom-2019/alggeom-2019-c1.pdf -> 404
-- SRC-TEXT-DF04: https://www.wiley.com/en-us/Abstract+Algebra%2C+3rd+Edition-p-9780471433347 -> 403
-- SRC-UCLA-RA-FALL-2009: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-09F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-FALL-2010: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-FALL-2014: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-14F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-FALL-2015: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-15F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-FALL-2016: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-16F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-FALL-2017: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-17F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-FALL-2018: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-18F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2009: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-09S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2010: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2011: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-11S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2015: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-15S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2016: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-16S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2017: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-17S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCLA-RA-SPRING-2018: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-18S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw1.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw2.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw3.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw4.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw5.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
-- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw6.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+- SRC-UCLA-RA-FALL-2009: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-09F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-FALL-2010: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-FALL-2014: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-14F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-FALL-2015: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-15F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-FALL-2016: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-16F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-FALL-2017: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-17F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-FALL-2018: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-18F.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2009: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-09S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2010: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2011: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-11S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2015: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-15S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2016: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-16S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2017: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-17S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCLA-RA-SPRING-2018: https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-18S.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw1.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw2.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw3.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw4.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw5.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
+- SRC-UCSD-ALG-200A-HOMEWORK: https://mathweb.ucsd.edu/~fthilman/teaching/2016math200a/200a-f16-hw6.pdf -> error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)
 - SRC-UGA-CA-FALL-2017: https://www.math.uga.edu/sites/default/files/ComplexAnaQual2017.pdf -> 404
 - SRC-UGA-CA-FALL-2018: https://www.math.uga.edu/sites/default/files/inline-files/Complex%20Fall%202018pdf.pdf -> 404
 - SRC-UGA-CA-FALL-2019: https://www.math.uga.edu/sites/default/files/ComplexQual_Fall2019.pdf -> 404
