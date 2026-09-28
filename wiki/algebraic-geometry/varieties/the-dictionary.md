@@ -9,7 +9,7 @@ topics:
 
 # The dictionary
 
-Classical algebraic geometry is one translation, applied repeatedly: a subset of $\AA^n$ is cut out by an ideal, and every geometric word has an algebraic one on the other side.
+Over an algebraically closed field $k$, $I\mapsto V(I)$ and $Z\mapsto I(Z)$ are inclusion-reversing bijections between radical ideals of $k[x_1,\ldots,x_n]$ and closed subsets of $\AA^n$; prime ideals correspond to irreducible closed subsets and maximal ideals to points.
 
 [[D-BIVAU]]
 
@@ -17,9 +17,7 @@ Classical algebraic geometry is one translation, applied repeatedly: a subset of
 
 [[PR-7OT2Z]]
 
-The translation is only a bijection on **radical** ideals, and the failure is the interesting part: $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$.
-Nothing in this chapter can tell them apart.
-Schemes recover this distinction by retaining nilpotent and nonreduced structure.
+The ideals $(x)$ and $(x^2)$ cut out the same closed subset of $\AA^1$; as closed subschemes of $\AA^1$, $V(x)$ and $V(x^2)$ are distinct.
 
 ## Irreducibility, and decomposition
 
@@ -27,8 +25,7 @@ Schemes recover this distinction by retaining nilpotent and nonreduced structure
 
 [[PR-TNVSI]]
 
-Irreducibility differs sharply from Hausdorff intuition: in an irreducible space any two nonempty open subsets meet.
-The following examples make that distinction explicit.
+In an irreducible space any two nonempty open subsets meet, so an irreducible Hausdorff space has at most one point.
 
 [[FE-ISIPR]]
 
