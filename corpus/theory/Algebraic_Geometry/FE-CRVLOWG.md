@@ -42,6 +42,6 @@ The quadric $Q$ is smooth or a cone: on a smooth $Q$ the curve is of type $(3,3)
 :::
 
 ::: {.remark}
-For a non-hyperelliptic curve, $\abs{K}$ embeds $C$ as a curve of degree $2g-2$ in $\PP^{g-1}$, and for $g=3,4$ that image has the named models above.
+For a non-hyperelliptic curve, $\abs{K}$ embeds $C$ as a curve of degree $2g-2$ in $\PP^{g-1}$, and for $g=3,4$ that image is the plane quartic or the quadric-cubic complete intersection of the genus-3 and genus-4 examples.
 Counting equations gives the unique quadric in genus $4$: $h^0(\PP^3, \OO(2)) = 10$ while $h^0(C, \OO_C(2)) = 2 \cdot 6 + 1 - 4 = 9$, so the ideal of $C$ contains a quadric, and it contains only one.
 :::
