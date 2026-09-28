@@ -68,7 +68,7 @@ For $(x,y)\in U\times Y$, choose $i$ with $y\in V_{y_i}$; then $(x,y)\in U_{y_i}
    Given a closed $A \subseteq X \times Y$ and $x \notin p(A)$, the complement of $A$ is open and contains $\ts{x} \times Y$.
    The tube lemma gives a neighborhood $U$ of $x$ with $U \times Y$ disjoint from $A$, so $U \cap p(A) = \emptyset$.
 
-3. **Products of quotient maps with a locally compact factor.** A product of quotient maps need not be a quotient map.
+3. **Products of quotient maps with a locally compact factor.** For the quotient map $p\colon\RR\to\RR/\ZZ_{+}$ collapsing the positive integers to a point, $p\times\id_\QQ\colon\RR\times\QQ\to(\RR/\ZZ_{+})\times\QQ$ is not a quotient map [@Mun00, sec. 22, Example 7].
    If $f\colon X \to Y$ is a quotient map and $Z$ is locally compact Hausdorff, then $f \times \operatorname{id}_Z\colon X \times Z \to Y \times Z$ is a quotient map; the proof uses compact neighborhoods in $Z$ and the tube lemma to show that the image of a saturated open subset of $X \times Z$ is open in $Y \times Z$.
 
 :::
