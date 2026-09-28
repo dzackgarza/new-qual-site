@@ -26,7 +26,7 @@ State conditions on $S$ which ensure that its Hilbert function agrees with a pol
 ::: {.solution}
 **Goal:** State the precise conditions on a graded ring $S$ ensuring its Hilbert function is eventually polynomial (the Hilbert polynomial) and prove this via the Hilbert–Serre Theorem.
 
-<1>1. Necessary and sufficient conditions on $S$:
+<1>1. Sufficient conditions on $S$:
     *Proof:*
     <2>1. Base ring condition: $S_0 = k$ is a field (or more generally, an Artinian ring, so that finite-length $S_0$-modules have well-defined finite length).
     <2>2. Generation condition: $S$ is finitely generated as an $S_0$-algebra by elements of degree 1:
