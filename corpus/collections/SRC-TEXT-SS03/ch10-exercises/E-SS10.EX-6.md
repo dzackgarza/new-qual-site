@@ -54,6 +54,6 @@ for any $c_1'\in(0,c_0/A)$, after enlarging $M$.
 <1>3. Q.E.D.
 
 ::: {.proof}
-Step <1>1 is the upper bound. For the lower bound, step <1>2 covers $n\ge M$, and for the finitely many $n<M$ with $p(n)\ge1$ we decrease $c_1\le c_1'$ so that $e^{c_1\sqrt n}\le p(n)$; this gives $e^{c_1 \sqrt{n}} \le p(n)$ for all $n \ge 1$.
+Step <1>1 is the upper bound. For the lower bound, step <1>2 covers $n\ge M$. For $2\le n<M$ we have $p(n)\ge2$, so decreasing $c_1\le c_1'$ gives $e^{c_1\sqrt n}\le p(n)$ for these finitely many $n$; hence $e^{c_1 \sqrt{n}} \le p(n)$ for all $n \ge 2$. The lower bound cannot hold at $n=1$ for any $c_1>0$, since $p(1)=1<e^{c_1}$.
 :::
 :::
