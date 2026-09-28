@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-6B
 kind: problem
-title: UC Berkeley Spring 2004 prelim 6B
+title: Harmonic $u_n$ with $\partial_yu_n(x,0)=0$ and $u_n(x,0)\to0$ uniformly need not tend to $0$
 classification:
   areas: [prelim]
   topics: []
