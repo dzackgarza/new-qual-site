@@ -19,14 +19,12 @@ Show that the nilradical is the intersection of all prime ideals.
 :::
 
 ::: {.solution}
-
-> See A&M 1.8
-
-Write $P$ as the intersection of all prime ideals of $R$.
+This is [@AM18, Proposition 1.8].
+Let $R$ be a commutative ring and let $P$ be the intersection of all prime ideals of $R$.
 \
 
 $\nilrad{R} \subseteq P$: Suppose $r\in \nilrad{R}$ so $r^n = 0$ and let $\mfp \in \spec R$.
-Then use that $0\in I$ for any ideal: $r^n = 0 \in \mfp \implies r\in \mfp$, by induction on $n$ using that $\mfp$ is prime.
+Then $r^n = 0 \in \mfp$, and induction on $n$ using that $\mfp$ is prime gives $r\in \mfp$.
 \
 
 $\nilrad{R}^c \subseteq P^c$: Fix $f$ non-nilpotent; we want to produce one prime ideal that does not contain $f$.
