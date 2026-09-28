@@ -19,5 +19,6 @@ Show that the nilradical of a commutative ring is contained in its Jacobson radi
 :::
 
 ::: {.solution}
-Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it is necessarily in every maximal ideal as well.
+For a commutative ring $R$, the nilradical is the intersection of all prime ideals ([[E-2ZO7O]]) and $J(R)$ is the intersection of all maximal ideals.
+Every maximal ideal is prime, so an element in every prime ideal is in every maximal ideal.
 :::
