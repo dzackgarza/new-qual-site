@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-4A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 4A
+title: Holomorphic functions on the unit disk that are real at $\frac1n+ie^{-n}$
 classification:
   areas: [prelim]
   topics: []
