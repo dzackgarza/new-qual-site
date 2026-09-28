@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring81.pdf",
+  "source_pdf_sha256": "437f65b52d74a3530742ac83ed183526da9213745f4886fdf28bf1a6a2dd3335",
+  "extracted_markdown": "assets/attachments/Spring81_extracted.md",
+  "extracted_markdown_sha256": "e8488ca78463c60e11a63c9a90fb7024d73d70b65b586baa3725383b5f6114fe",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring81.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring81.md",
+  "old_unknown_provenance_sha256": "e8488ca78463c60e11a63c9a90fb7024d73d70b65b586baa3725383b5f6114fe",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1981, containing Problems 1 through 20 in source order; the retained PDF omits the institution name, while repository source lineage supplies the Berkeley attribution.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1981 collection represents all 20 source positions in order with 20 source-local cards. Problem 11 preserves the omitted-contour dependency explicitly rather than guessing the curve; Problem 9 already records the source-forced eigenvalue-sum interpretation of the extraction's undefined symbols. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

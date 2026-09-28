@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Recall that a bounded linear operator $T : \mathcal{H} \to \mathcal{H}$ on a Hilbert space $\mathcal{H}$ is self-adjoint if $\langle Tv, w \rangle = \langle v, Tw \rangle$ for all vectors $v, w \in \mathcal{H}$.
 
 (a) Suppose that $T$ is a bounded self-adjoint operator such that $\|v\| \leq \|Tv\|$ for all $v \in \mathcal{H}$.
@@ -36,9 +36,9 @@ Hint: Prove first that the range of $T$ is a closed subspace of $\mathcal{H}$.
 (c) Can an example for (b) exist on a finite dimensional Hilbert space $\mathcal{H}$?
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that the range of $T$ is closed.
-::: proof
+::: {.proof}
 Suppose
 \[
 Tx_n\to y
@@ -61,7 +61,7 @@ Hence $y=Tx$, so $\operatorname{Ran}T$ is closed.
 :::
 
 <1>2. Show that the range is dense and conclude surjectivity.
-::: proof
+::: {.proof}
 The lower bound implies
 \[
 Tv=0\quad\Longrightarrow\quad v=0,
@@ -93,7 +93,7 @@ Tx=y.
 :::
 
 <1>3. Give an injective self-adjoint operator that is not onto.
-::: proof
+::: {.proof}
 Take
 \[
 \mathcal H=L^2([0,1])
@@ -126,7 +126,7 @@ so $1/x\notin L^2([0,1])$. Thus $1\notin\operatorname{Ran}T$.
 :::
 
 <1>4. Explain why no finite-dimensional example exists.
-::: proof
+::: {.proof}
 On a finite-dimensional vector space, every injective linear map from the space to itself is automatically surjective. Therefore an injective bounded self-adjoint operator on a finite-dimensional Hilbert space cannot fail to be onto.
 
 Hence the answer to part (c) is

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f_n : \mathbb{R} \to \mathbb{R}$ be a sequence of absolutely continuous functions such that $f_n' \in L^1(\mathbb{R}, m)$ and $c := \lim_{n \to \infty} f_n(0)$ exists in $\mathbb{R}$.
 Further assume there exists $g \in L^1(\mathbb{R}, m)$ such that $\lim_{n \to \infty} \int_\mathbb{R} |g(x) - f_n'(x)| \, dx = 0$.
 
@@ -34,9 +34,9 @@ Further assume there exists $g \in L^1(\mathbb{R}, m)$ such that $\lim_{n \to \i
 (b) Show that $f$ is absolutely continuous and $f'(x) = g(x)$ for $m$-a.e. $x$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Write each $f_n$ as a primitive of its derivative.
-::: proof
+::: {.proof}
 Since $f_n$ is absolutely continuous, for every $x\in\mathbb R$,
 \[
 f_n(x)=f_n(0)+\int_0^x f_n'(t)\,dt.
@@ -68,7 +68,7 @@ Therefore $f_n(x)\to F(x)$ for every $x$, so the pointwise limit exists and
 :::
 
 <1>2. Prove absolute continuity of the limit.
-::: proof
+::: {.proof}
 Let $\varepsilon>0$. Since $g\in L^1(\mathbb R)$, the Lebesgue integral is absolutely continuous: there exists $\delta>0$ such that
 \[
 m(E)<\delta\quad\Longrightarrow\quad\int_E|g|<\varepsilon.
@@ -90,7 +90,7 @@ Thus $f$ is absolutely continuous.
 :::
 
 <1>3. Identify the derivative.
-::: proof
+::: {.proof}
 The Lebesgue Fundamental Theorem of Calculus applied to
 \[
 f(x)=c+\int_0^x g(t)\,dt

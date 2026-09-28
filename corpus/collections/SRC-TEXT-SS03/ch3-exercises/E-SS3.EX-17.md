@@ -17,7 +17,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 17. Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
 
 (a) Show that if $|f(z)| = 1$ whenever $|z| = 1$, then the image of $f$ contains the unit disc.
@@ -26,7 +26,7 @@ audit:
 (b) If $|f(z)| \geq 1$ whenever $|z| = 1$ and there exists a point $z_0 \in \mathbb{D}$ such that $|f(z_0)| < 1$, then the image of $f$ contains the unit disc.
 :::
 
-::: solution
+::: {.solution}
 (a) First, $f$ must vanish somewhere in $\mathbb D$. Otherwise $1/f$ would be holomorphic on a neighborhood of the closed disc and satisfy $|1/f|=1$ on $|z|=1$. The maximum modulus principle applied to both $f$ and $1/f$ would give $|f|\le1$ and $|f|\ge1$ in $\mathbb D$, so $|f|\equiv1$ there; then $f$ would be constant, contrary to hypothesis.
 
 Now fix $w_0\in\mathbb D$. On $|z|=1$,

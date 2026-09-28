@@ -22,7 +22,7 @@ Define $f_n: [0,1] \to \mathbb{R}$ by the equation $f_n(x) = x^n$.
 Show that the sequence $(f_n(x))$ converges for each $x \in [0,1]$, but that the sequence $(f_n)$ does not converge uniformly.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the sequence of power functions $f_n(x) = x^n$ on $[0, 1]$ converges pointwise to a discontinuous limit function and fails to converge uniformly.
 
 <1>1. Pointwise convergence:

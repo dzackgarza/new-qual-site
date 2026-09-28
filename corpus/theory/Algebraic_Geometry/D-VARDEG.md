@@ -23,7 +23,7 @@ prompts:
 
 ::: {.definition title="Degree"}
 Let $X \subseteq \PP^N$ be projective of dimension $n$.
-The **degree** of $X$ is the number of points of
+The \dfn{degree} of $X$ is the number of points of
 \[
 X \intersect H_1 \intersect \cdots \intersect H_n
 \]
@@ -40,5 +40,5 @@ The answer is that cutting by a general hyperplane drops dimension by one and le
 
 *General* is doing work — the hyperplanes must miss the singular locus and meet $X$ transversally. For example, a line tangent to a conic meets it in one point, not two, and the count is restored only by multiplicity.
 That repair is Bézout, and it is the reason intersection numbers are defined with multiplicities from the start.
-The degree is not intrinsic to the abstract variety: the twisted cubic and a line are the same abstract curve with degrees $3$ and $1$.
+Degree is not intrinsic to the abstract variety: the twisted cubic and a line are both isomorphic to $\PP^1$ but have degrees $3$ and $1$ in their respective embeddings.
 :::

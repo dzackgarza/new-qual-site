@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Prove that for every integer $n\ge0$ there is a polynomial $T_n(x)\in\mathbb Z[x]$ such that
 \[
 2\cos(nz)=T_n(2\cos z)

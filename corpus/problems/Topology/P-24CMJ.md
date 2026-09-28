@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the fundamental group $\pi_1(S^1 \vee S^1, x_0)$ of the wedge sum of two circles (the figure eight space).
 :::
 
-::: solution
+::: {.solution}
 Let $X=S^1_a\vee S^1_b$ with wedge point $x_0$.
 
 <1>1. Choose points $p_a\in S^1_a\setminus\{x_0\}$ and $p_b\in S^1_b\setminus\{x_0\}$, and put

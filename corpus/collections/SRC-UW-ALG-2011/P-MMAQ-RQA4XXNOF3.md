@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 In this problem, as you apply Sylow's Theorem, state precisely which portions you are using.
 
 - Prove that there is no simple group of order 30.
@@ -30,7 +30,7 @@ In this problem, as you apply Sylow's Theorem, state precisely which portions yo
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. There is no simple group of order $30$.
 ::: {.proof}
 Suppose $|G|=30$ and $G$ is simple. By Sylow's third theorem,

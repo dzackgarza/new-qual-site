@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Does this hold when $A$ is instead an open subset?
 :::
 

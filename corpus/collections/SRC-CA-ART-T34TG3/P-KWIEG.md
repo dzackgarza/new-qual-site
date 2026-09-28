@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Find the number of roots of $p(z) = 4z^4 - 6z + 3$ in $\abs{z} < 1$ and $1 < \abs{z} < 2$ respectively.
 :::
 

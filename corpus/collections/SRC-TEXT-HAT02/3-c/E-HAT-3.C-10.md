@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $X$ be a path-connected H-space with $H^*(X; R)$ free and finitely generated in each dimension.
 For maps $f, g: X \to X$, the product $fg: X \to X$ is defined by $(fg)(x) = f(x)g(x)$, using the H-space product.
 
@@ -33,6 +34,7 @@ In particular the quaternionic $k$-th power map $S^3 \to S^3$ has degree $k$.
 
 (c) Show that every polynomial $a_n x^n b_n + \dotsb + a_1 x b_1 + a_0$ of nonzero degree with coefficients in $\mathbb{H}$ has a root in $\mathbb{H}$.
 [See Theorem 1.8.]
+:::
 
 ::: {.solution}
 Let $\mu:X\times X\to X$ be the H-space multiplication and let

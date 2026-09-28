@@ -27,7 +27,3 @@ source:
     term: spring
     year: 2021
 ---
-
-::: remark
-Exam #1 is [[P-RLZK3]] (the Poincaré identity; the Quals dump writes $|z_1-\bar z_1 z_2|^2$ for $|1-\bar z_1 z_2|^2$).
-:::

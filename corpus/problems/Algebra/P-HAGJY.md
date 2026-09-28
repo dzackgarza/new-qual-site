@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $R$-module. Prove that
 \[
 \operatorname{End}_R(A)=\operatorname{Hom}_R(A,A)

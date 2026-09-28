@@ -11,8 +11,8 @@ topics:
 
 A presheaf that fails to glue, and the sheafification that repairs it.
 
-The useful thing to have ready is an example of each failure: a presheaf that is not a sheaf, a morphism of sheaves that is surjective on stalks but not on sections, and the exact sequence where surjectivity is lost in the middle.
-Where each failure occurs is the standard follow-up question.
+The chapter separates three failures by example: a presheaf that is not a sheaf, a morphism of sheaves that is surjective on stalks but not on sections, and an exact sequence whose global sections lose surjectivity.
+Each failure is located by the gluing or overlap obstruction that produces it.
 
 - [[algebraic-geometry/sheaves/the-sheaf-condition|The sheaf condition]], which axiom a given presheaf violates, and what sheafification repairs.
 

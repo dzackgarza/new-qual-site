@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Show that no finite group is the union of conjugates of a proper subgroup.
 :::
 

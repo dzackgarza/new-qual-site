@@ -1,0 +1,21 @@
+{
+  "source_pdf": "assets/attachments/DG Sample Problems 1.pdf",
+  "source_pdf_sha256": "c76da1618392449b3d284ee8954f688d118ff2db0a192ffda6576bc8ac50512c",
+  "extracted_markdown": "assets/attachments/DG Sample Problems 1_extracted.md",
+  "extracted_markdown_sha256": "75e323cd2ecdd1eca8a5249bd9dcb3d525e33ed94b967957320f73e406d61930",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/DG Sample Problems 1.pdf' --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/DG Sample Problems 1.md",
+  "byte_identical_duplicate_pdf": "assets/attachments/DG Sample Problems.pdf",
+  "byte_identical_duplicate_pdf_sha256": "c76da1618392449b3d284ee8954f688d118ff2db0a192ffda6576bc8ac50512c",
+  "card_comparison": "The deterministic extraction contains twenty top-level sample problems, numbered I through XX. They are represented in source order by P-MTH674-01 through P-MTH674-20; the worked solution following Problem VII(c) remains source material rather than a second problem card.",
+  "known_extractor_repairs": [
+    "Problem V(c) prints z^1 in the equation immediately identified as the three-dimensional unit sphere in R^4; the card restores z^2 from that deterministic local context.",
+    "Dropped map arrows in Problems VI(b), VII(c), XIII(a), XV(d), XVIII(a), and XIX are restored from their displayed source and target objects.",
+    "Problem VIII(b) renders the exponent in (x^1)^2 as a malformed hat-2 token; the card restores the exponent 2 from the displayed transition-function pair.",
+    "Problem XII(e) has a mangled matrix display; the card preserves the stated (n-2)-by-2 size and reconstructs the 2-by-2 n=4 example from the two displayed basis vectors.",
+    "Problem XVI(b) mangles the bracket around the two hatted vector fields; the card restores the Lie bracket notation from the immediately stated F-relatedness claim."
+  ]
+}

@@ -22,7 +22,7 @@ Let $p: E \to X$ be the map constructed in the proof of Lemma 60.5. Let $E'$ be 
 Show that $p \mid E'$ is not a covering map.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the restriction $q = p|_{E'}: E' \to X = A \vee B$ of the grid covering map to the union of the coordinate axes $E' = (\mathbb{R} \times \{0\}) \cup (\{0\} \times \mathbb{R})$ is not a covering map.
 
 <1>1. Setting and structure of the map $p$:

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Consider the function
 \[
 f(x) \da 

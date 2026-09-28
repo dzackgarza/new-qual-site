@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A,B$ be $R$-modules. Show that
 \[
 \Hom_R(A,B)

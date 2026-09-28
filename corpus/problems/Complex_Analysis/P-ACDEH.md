@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be entire and assume that $f(z) \leq M |z|^2$ outside some disk for some constant $M$.
 Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.
 :::
@@ -58,7 +58,7 @@ Cauchy's estimate <1>2.
 :::
 :::
 
-:::{.solution}
+::: {.solution}
 Take a Laurent expansion at zero:
 \[
 f(z) = \sum_{k\geq 0} c_k z^k,\qquad c_k = {1\over k!} f^{(k)}(0) = {1\over 2\pi i}\oint_{\abs{\xi} = R} {f(\xi) \over \xi^{k+1}}\dxi

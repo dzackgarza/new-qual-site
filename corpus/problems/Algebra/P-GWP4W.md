@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Prove that every simple abelian group is cyclic.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be a nontrivial simple abelian group. Choose $1\ne g\in G$. Since $G$ is abelian, every subgroup is normal, so the nontrivial subgroup $\langle g\rangle$ must equal $G$. Hence $G$ is cyclic.
 
 If $G$ were infinite, then $G\cong\mathbb Z$, which has the proper nontrivial subgroup $2\mathbb Z$, contradicting simplicity. Thus $G$ is finite cyclic, say of order $n$. If $n$ were composite, a proper divisor of $n$ would give a proper nontrivial subgroup of $G$. Therefore $n=p$ is prime.

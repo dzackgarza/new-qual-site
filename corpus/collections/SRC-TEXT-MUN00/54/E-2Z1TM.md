@@ -35,7 +35,7 @@ $$
 Sketch these paths and their liftings.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute explicit formulas for the unique liftings of paths $f, g, h$ in $\mathbb{R}^2 \setminus \{0\}$ under the polar covering map $p: \mathbb{R} \times \mathbb{R}_+ \to \mathbb{R}^2 \setminus \{0\}$ given by $p(\theta, r) = (r \cos 2\pi \theta, r \sin 2\pi \theta)$.
 
 <1>1. Lifting of $f(t) = (2 - t, 0)$ for $t \in [0, 1]$:

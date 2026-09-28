@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a.  
 Complete this definition: "$f: \RR^n\to \RR^m$ is real-differentiable a point $p\in \RR^n$ iff there exists a linear transformation..."
 
@@ -26,7 +26,7 @@ c.
 Give an example of a function $f: \RR^2 \to \RR$ which is real-differentiable everywhere but nowhere complex-differentiable.
 :::
 
-::: solution
+::: {.solution}
 **(a)** A map $f:\mathbb R^n\to\mathbb R^m$ is differentiable at $p$ if there
 exists a linear map $L:\mathbb R^n\to\mathbb R^m$ such that
 \[

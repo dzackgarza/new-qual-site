@@ -9,11 +9,23 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Re-transcribed from Chapter 5 review Question 11 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR) and checked against the source scans in assets/attachments/gre-math-ch5-review/, replacing the earlier chapter-5.pdf transcription.
 ---
 
 ::: {.problem}
-What is the dimension of the subspace of $\mathbb R^5$ displayed in Question 11 on the source page?
-The OCR extraction corrupts two vector lengths, so use the preserved scan below as the authoritative statement.
+What is the dimension of the following subspace of $\RR^5$?
 
-![Source scan for Chapter 5, page 3](../../../assets/attachments/gre-math-ch5-review/page-3.png)
+\[
+\operatorname{span} \left\{ \begin{pmatrix} 1 \\ 0 \\ -1 \\ 0 \\ 1 \end{pmatrix}, \begin{pmatrix} 0 \\ 1 \\ -1 \\ 1 \\ 0 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{pmatrix}, \begin{pmatrix} -1 \\ 0 \\ 1 \\ 0 \\ -1 \end{pmatrix}, \begin{pmatrix} 0 \\ 0 \\ 1 \\ 0 \\ -1 \end{pmatrix}, \begin{pmatrix} 0 \\ -1 \\ 1 \\ -1 \\ 0 \end{pmatrix} \right\}
+\]
+
+(A) $1$
+(B) $2$
+(C) $3$
+(D) $4$
+(E) $5$
 :::

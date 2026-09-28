@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a compact non-orientable $3$-manifold.
 Prove $H^1(X; \mathbb{Z}) \neq 0$.
 :::

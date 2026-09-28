@@ -23,7 +23,7 @@ audit:
   note: "Evaluated the positive-half integral on a sector of angle pi/n with one enclosed pole and doubled by evenness."
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_{-\infty}^{\infty}\frac{dx}{1+x^{2n}},
@@ -31,7 +31,7 @@ Evaluate
 where $n$ is a positive integer.
 :::
 
-::: solution
+::: {.solution}
 Set
 $$
 I_n=\int_0^\infty\frac{dx}{1+x^{2n}}.
@@ -39,7 +39,7 @@ $$
 Since the integrand is even, the required integral is $2I_n$.
 
 <1>1. Integrate over a sector of angle $\pi/n$.
-::: proof
+::: {.proof}
 Let
 $$
 F(z)=\frac1{1+z^{2n}},
@@ -73,7 +73,7 @@ $$
 :::
 
 <1>2. Compute the two radial contributions and show the arc vanishes.
-::: proof
+::: {.proof}
 The integral along the positive real radius is
 $$
 I_n(R)=\int_0^R\frac{dx}{1+x^{2n}}.
@@ -104,7 +104,7 @@ which tends to $0$ as $R\to\infty$.
 :::
 
 <1>3. Apply the residue theorem.
-::: proof
+::: {.proof}
 Letting $R\to\infty$ in the sector integral gives
 $$
 \left(1-e^{i\pi/n}\right)I_n

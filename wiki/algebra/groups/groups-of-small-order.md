@@ -8,13 +8,11 @@ topics:
 
 # Groups of small order
 
-The classifications for orders $p$, $p^2$ and $pq$ relate the prime factorization of the order to cyclic, abelian, and semidirect-product descriptions.
-
 ## Groups of special orders
 
-Prime and prime-square orders are controlled before any case-by-case presentation is needed: groups of order \(p\) are cyclic, and groups of order \(p^2\) are abelian.
-For order \(pq\), the Sylow counts determine when the larger-prime Sylow subgroup is normal and hence when a semidirect-product description is available.
-For orders with more prime factors, the lemmas below concern normal subgroups, solvability of \(p\)-groups, and Frattini-type reductions.
+Every group of prime order $p$ is cyclic, and every group of order $p^2$ is abelian, hence isomorphic to $\ZZ/p^2$ or $\ZZ/p\times\ZZ/p$.
+For primes $p<q$, a group of order $pq$ has a normal Sylow $q$-subgroup $Q\cong\ZZ/q$, and is isomorphic to $\ZZ/q\semidirect_\psi\ZZ/p$ for a homomorphism $\psi\colon\ZZ/p\to\Aut(\ZZ/q)\cong(\ZZ/q)^\times$; a nontrivial $\psi$ exists if and only if $p\divides q-1$.
+For orders with more prime factors, the lemmas in this section produce normal subgroups: [[L-6QBOJ|Frattini's argument]] factors $G$ as $N_G(P)\,N$ for a normal subgroup $N$ and a Sylow subgroup $P$ of $N$, every finite [[D-FIB7S|$p$-group]] is [[D-DFIDP|solvable]], and a group of order $pqr$ for distinct primes $p<q<r$ is solvable.
 
 [[PR-LFGHA]]
 
@@ -32,7 +30,8 @@ For orders with more prime factors, the lemmas below concern normal subgroups, s
 
 ## The small orders
 
-The finite-abelian structure theorem classifies the abelian possibilities. Sylow counts and conjugation actions restrict the nonabelian possibilities.
+Each card lists the groups of one order up to isomorphism.
+The abelian groups of each order are given by the structure theorem for finite abelian groups ([[PR-2JG3F]]).
 
 [[FF-VAKLJ]]
 
@@ -48,6 +47,6 @@ The finite-abelian structure theorem classifies the abelian possibilities. Sylow
 
 [[FF-JKCAM]]
 
-::: {.remark title="Orders eight and twelve"}
-Up to isomorphism, order $8$ has five groups, of which $D_4$ and $Q_8$ are the nonabelian ones, and order $12$ has five, of which $A_4$, $D_6$ and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
+::: {.remark}
+There are five groups of order $8$ up to isomorphism, of which $D_4$ and $Q_8$ are nonabelian, and five groups of order $12$, of which $A_4$, $D_6$, and $\ZZ/3\semidirect\ZZ/4$ are nonabelian.
 :::

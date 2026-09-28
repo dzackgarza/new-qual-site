@@ -22,19 +22,19 @@ audit:
   note: "Checked both exceptional cases, the exact elementary-matrix factorizations, faithfulness and double transitivity on the projective line, perfectness in characteristic two, and the normal-subgroup argument for arbitrary finite or infinite fields."
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field. Is the group $\operatorname{SL}_2(F)$
 of $2\times2$ matrices over $F$ with determinant $1$ simple?
 :::
 
-::: remark
+::: {.remark}
 The answer depends on the field. The group here is
 $\operatorname{SL}_2(F)$, not its quotient by scalar matrices.
 In particular, the nontrivial central subgroup $\{I,-I\}$
 already obstructs simplicity when the characteristic is not two.
 :::
 
-::: solution
+::: {.solution}
 The exact criterion is
 $$
 \boxed{\operatorname{SL}_2(F)\text{ is simple}
@@ -45,7 +45,7 @@ The proof covers infinite fields as well as finite ones.
 <1>1. The group is not simple when $\operatorname{char}F\ne2$,
 or when $F=\mathbb F_2$.
 
-::: proof
+::: {.proof}
 If the characteristic is not two, the subgroup $\{I,-I\}$
 is central, nontrivial, and proper: the matrix
 $\left(\begin{smallmatrix}1&1\\0&1\end{smallmatrix}\right)$
@@ -74,7 +74,7 @@ for $t\in F$ and $a\in F^\times$, and put $U=\{u(t):t\in F\}$.
 
 <1>2. The conjugates of the abelian subgroup $U$ generate $G$.
 
-::: proof
+::: {.proof}
 One has $u(t)u(s)=u(t+s)$, so $U$ is abelian. Direct
 multiplication, with signs retained in the formulas, gives
 $$
@@ -102,7 +102,7 @@ $H=G$, and therefore the conjugates of $U$ generate $G$.
 <1>3. The action of $G$ on the projective line is faithful
 and doubly transitive, and its stabilizer of infinity normalizes $U$.
 
-::: proof
+::: {.proof}
 The projective line $X$ is the set of one-dimensional
 subspaces of $F^2$. Write
 $\infty=F(1,0)$ and $z=F(z,1)$ for $z\in F$.
@@ -128,7 +128,7 @@ to $u(a^2t)$. Hence $U\lhd B$.
 
 <1>4. The group $G$ is perfect: it equals its commutator subgroup.
 
-::: proof
+::: {.proof}
 Choose $a\in F\setminus\{0,1\}$. Since the characteristic
 is two, $a^2-1=(a-1)^2\ne0$. With
 $[g,h]=ghg^{-1}h^{-1}$, the matrix identity
@@ -145,7 +145,7 @@ therefore contains every conjugate of $U$, and step
 
 <1>5. Every nontrivial normal subgroup $N\lhd G$ equals $G$.
 
-::: proof
+::: {.proof}
 First $N$ acts transitively on $X$. If $N$ fixed infinity,
 normality and the transitivity of $G$ would make it fix
 every point: for $x=g\infty$ and $n\in N$,

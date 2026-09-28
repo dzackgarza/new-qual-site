@@ -22,21 +22,21 @@ audit:
   note: "Exhibited explicit order-two complements, checked normal kernels, trivial intersections, and factorizations for both the sign and determinant homomorphisms."
 ---
 
-::: problem
+::: {.problem}
 1. For $n\ge2$, prove that $S_n$ is a semidirect product of $A_n$ and a group of order $2$.
 
 2. Prove that $O(2)$ is a semidirect product of $SO(2)$ and a group of order $2$.
 :::
 
 
-::: remark
+::: {.remark}
 The restriction $n\ge2$ is necessary: $S_1=A_1$ is trivial and has no subgroup
 of order two.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For $n\ge2$, $S_n=A_n\rtimes\langle(12)\rangle$.
-::: proof
+::: {.proof}
 The sign map
 $$
 \operatorname{sgn}:S_n\to\{\pm1\}
@@ -65,7 +65,7 @@ $\tau$.
 :::
 
 <1>2. $O(2)=SO(2)\rtimes\langle R\rangle$ for a reflection $R$.
-::: proof
+::: {.proof}
 The determinant map
 $$
 \det:O(2)\to\{\pm1\}

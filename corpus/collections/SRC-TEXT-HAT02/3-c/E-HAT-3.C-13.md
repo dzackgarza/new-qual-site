@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Verify that the Hopf algebras $\Lambda_R[\alpha]$ and $\mathbb{Z}_p[\alpha]/(\alpha^p)$ are self-dual.
+:::
 
 ::: {.solution}
 <1>1. Duality for the exterior Hopf algebra $\Lambda_R[\alpha]$:

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that all groups of order 45 are abelian.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=45=3^2\cdot5$. Sylow's theorem gives
 \[
 n_5\mid9,\qquad n_5\equiv1\pmod5,

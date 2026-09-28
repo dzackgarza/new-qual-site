@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute, on each interval where the integrand is defined,
 \[
 \int\frac{dx}{\sin x+\cos x},
@@ -32,9 +32,9 @@ Compute, on each interval where the integrand is defined,
 Also deduce antiderivatives of \(1/(1+\sin x)\) and \(\tan x/(\tan x+\sec x)\).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Integrate \(1/(\sin x+\cos x)\).
-::: proof
+::: {.proof}
 Since
 \[
 \sin x+\cos x=\sqrt2\sin\left(x+\frac\pi4\right),
@@ -57,7 +57,7 @@ Equivalently this is
 :::
 
 <1>2. Integrate \(\sin x/(1+\sin x)\).
-::: proof
+::: {.proof}
 Write
 \[
 \frac{\sin x}{1+\sin x}=1-\frac1{1+\sin x}.
@@ -86,7 +86,7 @@ the same antiderivative applies to that quotient.
 :::
 
 <1>3. Integrate \(\sin x/(1-\sin x)\).
-::: proof
+::: {.proof}
 Now
 \[
 \frac{\sin x}{1-\sin x}=-1+\frac1{1-\sin x},

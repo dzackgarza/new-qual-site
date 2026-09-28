@@ -25,7 +25,7 @@ Show that $\ts{f_k}$ is equicontinuous.
 > Hint: MVT.
 :::
 
-::: solution
+::: {.solution}
 For all $x,y\in[0,1]$ and all $k$, the mean-value estimate gives
 \[
 |f_k(x)-f_k(y)|\le M|x-y|.

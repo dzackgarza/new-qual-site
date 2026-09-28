@@ -25,7 +25,3 @@ source:
     term: spring
     year: 2008
 ---
-
-::: remark
-Exam #5 is $L^1(\mathbb{R})$ convergence implying a subsequence a.e.; `P-YPGAW` is the $[0,1]$ statement with an extra uniform-convergence counterexample and was not used.
-:::

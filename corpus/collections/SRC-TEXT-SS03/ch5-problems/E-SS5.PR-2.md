@@ -17,7 +17,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 In this problem, we discuss Blaschke products, which are bounded analogues in the disc of the Weierstrass products for entire functions.
 
 1. Show that for $0<|\alpha|<1$ and $|z|\leq r<1$, the inequality
@@ -47,7 +47,7 @@ In this problem, we discuss Blaschke products, which are bounded analogues in th
    Show also that $|f(z)|\leq 1$.
 :::
 
-::: solution
+::: {.solution}
 For part 1, write $\rho=|\alpha|$. Then
 \[
 \left|\frac{\alpha+\rho z}{(1-\overline\alpha z)\alpha}\right|

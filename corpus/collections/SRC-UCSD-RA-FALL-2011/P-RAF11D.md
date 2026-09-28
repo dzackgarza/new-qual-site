@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $K \in L^1(\mathbb{R}^d)$ with Lebesgue measure.
 Suppose that $\psi_n \in L^2(\mathbb{R}^d)$ is a sequence of functions such that $\psi_n \to \psi$ (weak $L^2$ convergence), and also with the property that $\psi_n \equiv 0$ for $|x| > 1$.
 Show that
@@ -37,9 +37,9 @@ $$
 strongly in $L^2(\mathbb{R}^d)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The weak limit is also supported in the unit ball.
-::: proof
+::: {.proof}
 Let
 \[
 B:=\{x\in\mathbb R^d:|x|\le1\}.
@@ -60,7 +60,7 @@ almost everywhere on $B^c$. Thus both $\psi_n$ and $\psi$ may be regarded as ele
 :::
 
 <1>2. Define the restricted convolution operator and prove it is bounded.
-::: proof
+::: {.proof}
 For $u\in L^2(B)$, extend $u$ by zero to $\mathbb R^d$ and set
 \[
 T_Ku:=K*u.
@@ -78,7 +78,7 @@ is bounded.
 :::
 
 <1>3. Approximate $T_K$ in operator norm by Hilbert--Schmidt operators.
-::: proof
+::: {.proof}
 Choose $K_m\in C_c(\mathbb R^d)$ such that
 \[
 \|K_m-K\|_1\longrightarrow0.
@@ -112,7 +112,7 @@ Thus $T_{K_m}$ is Hilbert--Schmidt, hence compact. Since compact operators are c
 :::
 
 <1>4. Compact operators send weakly convergent sequences to norm-convergent sequences.
-::: proof
+::: {.proof}
 We have
 \[
 \psi_n\rightharpoonup\psi

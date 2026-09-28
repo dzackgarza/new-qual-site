@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider $A \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$.
 Prove the result: $A$ is unitarily diagonalizable if and only if $A$ is normal.
 

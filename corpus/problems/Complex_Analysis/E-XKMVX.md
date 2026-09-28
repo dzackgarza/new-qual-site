@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Use Rouché's theorem and the Schwarz lemma to prove the following: if $f:\DD\to \bar{ \DD}$ is holomorphic with $f(0) = 0$, then there are exactly $m$ solutions (counted with multiplicity) to $f(z) = (2z)^m$ in the disc $\abs{z} < 1/2$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 First note that the image of $f$ is in fact $\DD$ rather than $\bar{\DD}$, using the open mapping theorem and that the domain $\DD$ is open.
 So Schwarz applies to $f$.
 Write $g(z) \da f(z) - (2z)^m$, the claim is that $g$ has $m$ zeros.

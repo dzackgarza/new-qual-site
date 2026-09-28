@@ -1,0 +1,26 @@
+---
+schema: qual/card@1
+id: P-UCLARA15S-10
+kind: problem
+title: Evaluation of $\int_{\mathbb R}\frac{dy}{(1+y^2)(1+(x-y)^2)}$
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Transcribed from the official UCLA Analysis Qualifying Exam, Spring 2015, and reconciled with the retained UCLA Analysis Qualifying Exam Solutions compendium.
+---
+
+::: {.problem}
+Determine
+\[
+\int_{-\infty}^{\infty}\frac{dy}{(1+y^2)(1+(x-y)^2)}
+\]
+for all $x\in\mathbb R$.
+Justify all manipulations.
+:::

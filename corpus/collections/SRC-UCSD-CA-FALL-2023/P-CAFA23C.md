@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that the image of a nonconstant entire function $E : \mathbb{C} \to \mathbb{C}$ is dense in $\mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 Suppose the image were not dense. Then some open disk
 \[
 D(a,r)

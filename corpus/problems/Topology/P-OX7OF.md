@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 8. Here we go:
 
 9. Let $\alpha(t) = e^{2\pi it}$ where $t \in [0, 1]$, be a loop in $S^1$ parameterized by $t$, which goes around $S^1$ exactly once.

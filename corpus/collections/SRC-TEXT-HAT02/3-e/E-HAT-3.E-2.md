@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 In this problem we will derive one half of the classification of lens spaces up to homotopy equivalence, by showing that if $L_m(\ell_1, \dots, \ell_n) \simeq L_m(\ell_1', \dots, \ell_n')$ then $\ell_1 \cdots \ell_n \equiv \pm \ell_1' \cdots \ell_n' k^n \pmod{m}$ for some integer $k$. The converse is Exercise 29 for §4.2.
 
 (a) Let $L = L_m(\ell_1, \dots, \ell_n)$ and let $\mathbb{Z}_m^*$ be the multiplicative group of invertible elements of $\mathbb{Z}_m$. Define $t \in \mathbb{Z}_m^*$ by the equation $xy^{n-1} = tz$ where $x$ is a generator of $H^1(L; \mathbb{Z}_m)$, $y = \beta(x)$, and $z \in H^{2n-1}(L; \mathbb{Z}_m)$ is the image of a generator of $H^{2n-1}(L; \mathbb{Z})$. Show that the image $\tau(L)$ of $t$ in the quotient group $\mathbb{Z}_m^* / \pm(\mathbb{Z}_m^*)^n$ depends only on the homotopy type of $L$.
@@ -36,6 +37,7 @@ In this problem we will derive one half of the classification of lens spaces up 
 (c) Using the $f$ in (b), show that $\tau(L) = k_1 \cdots k_n \tau(L')$.
 
 (d) Deduce that if $L_m(\ell_1, \dots, \ell_n) \simeq L_m(\ell_1', \dots, \ell_n')$, then $\ell_1 \cdots \ell_n \equiv \pm \ell_1' \cdots \ell_n' k^n \pmod{m}$ for some integer $k$.
+:::
 
 ::: {.solution}
 Write

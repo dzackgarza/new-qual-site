@@ -24,7 +24,7 @@ Find the standard matrix for the linear transformation $T : \mathbb{R}^2 \to \ma
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The vectors
 \[
 \ell=\begin{pmatrix}1\\2\end{pmatrix},
@@ -82,5 +82,4 @@ Expanding <1>3 gives
 T(x,y)=\left(\frac{4x-2y}{5},\frac{-2x+y}{5}\right),
 \]
 whose coefficient matrix is the displayed matrix.
-:::
 :::

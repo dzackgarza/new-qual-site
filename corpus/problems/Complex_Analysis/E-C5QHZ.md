@@ -24,7 +24,7 @@ Show that $\mcf$ is equicontinuous.
 > Hint: apply the MVT.
 :::
 
-::: solution
+::: {.solution}
 For every $f\in\mcf$ and $x,y\in[0,1]$, the mean-value estimate gives
 \[
 |f(x)-f(y)|\le M|x-y|.

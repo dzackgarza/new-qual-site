@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-20
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 20"
+title: Standard deviation of the density $\frac34(1-x^2)$ on $[-1,1]$
 classification:
   areas:
   - prelim

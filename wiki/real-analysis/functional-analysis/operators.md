@@ -9,12 +9,12 @@ topics:
 
 # Operators and their norms
 
-For a linear map between normed spaces, continuity is equivalent to boundedness, and the optimal bound is the operator norm
-\[
-\|T\|=\sup_{\|x\|\le 1}\|Tx\|.
-\]
-Thus a continuity question about a linear operator is an inequality question.
-The dual space \(X^*\), equipped with this norm, is Banach even when \(X\) itself is not complete.
+For normed spaces $X$ and $Y$ and a linear map $T\colon X\to Y$, the operator norm is
+$$
+\norm{T}\coloneqq\sup_{\norm{x}\le 1}\norm{Tx}.
+$$
+$T$ is continuous if and only if it is continuous at $0$, if and only if $\norm T<\infty$.
+The dual space $X^*$ of bounded linear functionals, with the operator norm, is a Banach space whether or not $X$ is complete.
 
 [[T-5IWCG]]
 
@@ -22,12 +22,12 @@ The dual space \(X^*\), equipped with this norm, is Banach even when \(X\) itsel
 
 [[T-W5SDY]]
 
-Compactness is stronger than boundedness: a compact operator sends the unit ball to a relatively compact set.
-Consequently a compact-operator problem usually has two separate steps—prove boundedness, then prove precompactness of the image rather than trying to infer compactness from an operator-norm estimate alone.
+## Compact operators
 
 [[FF-BSYDE]]
 
-::: {.remark title="Bounded is continuous"}
-For linear maps between normed spaces, bounded, continuous, and continuous at a single point are the same condition.
-So every continuity question about a linear operator is a computation of $\sup_{\norm x = 1}\norm{Tx}$, and that is the only computation in the subject.
+::: {.example}
+Every compact operator is bounded, since a relatively compact set is bounded.
+The identity map of an infinite-dimensional Banach space is bounded and not compact, since its closed unit ball is not compact.
+
 :::

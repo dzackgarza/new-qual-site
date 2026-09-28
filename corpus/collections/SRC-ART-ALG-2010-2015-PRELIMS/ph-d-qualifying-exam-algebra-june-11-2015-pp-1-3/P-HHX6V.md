@@ -37,14 +37,14 @@ b. Show that if $N$ is pure in $M$, $z \in M$, and $\mathrm{ann}(z+N) = (d)$, th
 c. Show that if $N$ is pure in $M$, $M$ is a finitely generated torsion module, and $D$ is a p.i.d., then $N$ is a direct summand of $M$.
 :::
 
-::: solution
+::: {.solution}
 For an element $v$ of a $D$-module, write
 $\operatorname{ann}_D(v)=\{a\in D:av=0\}$.
 We use exactly the single-equation definition of purity in the question.
 
 <1>1. A direct summand is pure, proving part (a).
 
-::: proof
+::: {.proof}
 Suppose $M=N\oplus N'$ and let $\pi:M\to N$ be the projection
 onto $N$. It is $D$-linear and restricts to the identity on $N$.
 If $y\in N$, $a\in D$, and $ax=y$ has a solution $x\in M$,
@@ -58,7 +58,7 @@ Thus $\pi(x)\in N$ solves the same equation, as required.
 <1>2. A coset with principal annihilator has a representative
 with that same annihilator, proving part (b).
 
-::: proof
+::: {.proof}
 Since $d\in\operatorname{ann}_D(z+N)$, the element $dz$ lies
 in $N$. The equation $dx=dz$ has the solution $z\in M$.
 Purity supplies a solution $n\in N$. Put $w=z-n$.
@@ -76,7 +76,7 @@ No assumption that $d$ is nonzero or a nonunit is needed.
 <1>3. Under the hypotheses in part (c), the quotient map
 $q:M\to M/N$ admits a $D$-linear section.
 
-::: proof
+::: {.proof}
 The quotient $Q=M/N$ is finitely generated, by the images of a
 finite generating set of $M$. It is torsion: a nonzero scalar
 annihilating a representative also annihilates its coset.
@@ -107,7 +107,7 @@ the required section.
 
 <1>4. The section yields the direct summand in part (c).
 
-::: proof
+::: {.proof}
 For every $m\in M$,
 $$
 m=(m-s(q(m)))+s(q(m)),

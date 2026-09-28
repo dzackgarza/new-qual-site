@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove that any linear function $L: \mathbb{R}^2 \to \mathbb{R}^2$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 L(x,y)=(ax+by,cx+dy)
@@ -65,5 +65,4 @@ If $C=0$, then $L=0$ and continuity is immediate. Suppose $C>0$. Given $\varepsi
 :::
 
 <1>4. Therefore every linear map $\mathbb R^2\to\mathbb R^2$ is continuous.
-:::
 :::

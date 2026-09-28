@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F_1,F_2$ be free modules over a ring for which free-module rank is well-defined. Prove
 \[
 \operatorname{rank}(F_1\oplus F_2)

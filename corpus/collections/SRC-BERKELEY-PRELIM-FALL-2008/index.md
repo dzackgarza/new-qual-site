@@ -15,24 +15,42 @@ source:
   institution: berkeley
   area: prelim
   problems:
-  - P-BKF08-1A
-  - P-BKF08-2A
-  - P-BKF08-3A
-  - P-BKF08-4A
-  - P-BKF08-5A
-  - P-BKF08-6A
-  - P-BKF08-7A
-  - P-BKF08-8A
-  - P-BKF08-9A
-  - P-BKF08-1B
-  - P-BKF08-2B
-  - P-BKF08-3B
-  - P-BKF08-4B
-  - P-BKF08-5B
-  - P-BKF08-6B
-  - P-BKF08-7B
-  - P-BKF08-8B
-  - P-BKF08-9B
+  - id: P-BKF08-1A
+    comment: Problem 1A
+  - id: P-BKF08-2A
+    comment: Problem 2A
+  - id: P-BKF08-3A
+    comment: Problem 3A
+  - id: P-BKF08-4A
+    comment: Problem 4A
+  - id: P-BKF08-5A
+    comment: Problem 5A
+  - id: P-BKF08-6A
+    comment: Problem 6A
+  - id: P-BKF08-7A
+    comment: Problem 7A
+  - id: P-BKF08-8A
+    comment: Problem 8A
+  - id: P-BKF08-9A
+    comment: Problem 9A
+  - id: P-BKF08-1B
+    comment: Problem 1B
+  - id: P-BKF08-2B
+    comment: Problem 2B
+  - id: P-BKF08-3B
+    comment: Problem 3B
+  - id: P-BKF08-4B
+    comment: Problem 4B
+  - id: P-BKF08-5B
+    comment: Problem 5B
+  - id: P-BKF08-6B
+    comment: Problem 6B
+  - id: P-BKF08-7B
+    comment: Problem 7B
+  - id: P-BKF08-8B
+    comment: Problem 8B
+  - id: P-BKF08-9B
+    comment: Problem 9B
   date:
     kind: academic-term
     term: fall

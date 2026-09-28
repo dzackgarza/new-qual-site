@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-03
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 3
+title: Dini's theorem
 classification:
   areas:
   - prelim

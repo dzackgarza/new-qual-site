@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-BEIVF
 kind: proposition
-title: HK Subgroup Theorem
+title: The product $HK$ is a subgroup when $H$ normalizes $K$
+slogan: 'If $H$ normalizes $K$, their setwise product $HK$ is a subgroup.'
 classification:
   areas:
   - algebra
@@ -15,5 +16,7 @@ review: draft
 ---
 
 ::: {.proposition}
-If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a subgroup.
+Let $G$ be a group and $H, K \leq G$ [[D-IQ4OX|subgroups]] with $H \leq N_G(K)$, where $N_G(K)$ is the [[D-OZ2RR|normalizer]] of $K$.
+Then $HK = \theset{hk \st h \in H,\ k \in K}$ is a subgroup of $G$.
+In particular, this holds when $K \normal G$.
 :::

@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f_n(x) = \frac{nx}{n+x}$ for $x \in [0, \infty)$ and $n \in \mathbb{N}$.
 
 (a) Find a function $f$ such that $\{f_n\}$ converges to $f$ pointwise on $[0, \infty)$.
@@ -25,7 +25,7 @@ Let $f_n(x) = \frac{nx}{n+x}$ for $x \in [0, \infty)$ and $n \in \mathbb{N}$.
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 For fixed $x\ge0$,
 \[
 f_n(x)=\frac{nx}{n+x}=\frac{x}{1+x/n}\longrightarrow x.

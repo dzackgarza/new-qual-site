@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Extend the results proved near the beginning of this section for the change-of-basepoint maps $\beta_\gamma$ to the case of relative homotopy groups.
+:::
 
 ::: {.solution}
 Let \(\gamma:I\to A\) be a path from \(x_0\) to \(x_1\). For \(n\ge2\), define
@@ -55,7 +57,7 @@ These maps commute with the maps in the long exact sequence of the pair. In part
 \]
 then
 \[
-\partial\beta_\gamma=eta_\gamma\partial,
+\partial\beta_\gamma=\beta_\gamma\partial,
 \]
 and the analogous naturality holds for \(\pi_n(A)\to\pi_n(X)\) and \(\pi_n(X)\to\pi_n(X,A)\).
 

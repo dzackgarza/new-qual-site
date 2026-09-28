@@ -22,6 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $f,g\in L^1([a,b])$ be real-valued with
 $$
 \int_{a}^{b} f(x) ~d x=\int_{a}^{b} g(x) ~d x.
@@ -33,21 +34,22 @@ Show that either
 \[
 \int _{E} f(x) \, dx > \int _{E} g(x) \, dx
 \]
+:::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Monotonicity of the Lebesgue integral: $f\leq g$ on $A$ $\implies \int_A f \leq \int_A g$
 
 :::
 
-:::{.strategy}
+::: {.strategy}
 Take the assumption and the negation of (1) and show (2).
 The obvious move: define the set $A$ where they differ.
 The non-obvious move: split $A$ itself up to get a strict inequality.
 
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 h=f-g.

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $K/F$ be a finite Galois extension and let $n=[K:F]$. There is a theorem
 (often referred to as the "normal basis theorem") which states that there
 exists an irreducible polynomial $f(x)\in F[x]$ whose

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 \[
 \sum_{k\geq 1}{1\over k^2 + a^2} = {1\over 2}{\pi \coth(\pi a)\over a} - {1\over 2a^2} \qquad a>0
@@ -31,7 +31,7 @@ Show that
 
 :::
 
-::: solution
+::: {.solution}
 Fix $a>0$ and set
 $$
 F(z)=\frac{\pi\cot(\pi z)}{z^2+a^2}.

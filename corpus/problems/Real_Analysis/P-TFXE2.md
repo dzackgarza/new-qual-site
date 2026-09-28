@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $f\in L^1(\RR^n)$ with $f\neq 0$.
 
 a. Prove that there exists a $c>0$ such that

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ and let $x\in\mathbb{C}^n$, $x\neq 0$.
 Prove that if
 \[
@@ -24,7 +24,7 @@ is an invariant subspace of $A$, meaning $AS\subseteq S$, then $x$ is an eigenve
 Note: $A^H=\overline{A^T}$.
 :::
 
-::: solution
+::: {.solution}
 Let $S=(\operatorname{span}\{x\})^\perp$. For every $s\in S$, the invariance hypothesis gives $As\in S$. Hence
 \[
 \langle As,x\rangle=0.

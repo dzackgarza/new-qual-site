@@ -14,7 +14,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Define a $k$-transitive group action and a sharply $k$-transitive group action.
 Discuss multiple transitivity.
 :::

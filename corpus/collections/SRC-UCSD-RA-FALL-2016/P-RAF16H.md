@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a real Hilbert space and $M$ a nonempty, closed subspace of $H$.
 Suppose $x_0 \in H \setminus M$.
 Prove that
@@ -32,9 +32,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Decompose $x_0$ orthogonally relative to $M$.
-::: proof
+::: {.proof}
 Since $M$ is a closed subspace of the Hilbert space $H$, the projection theorem gives unique vectors
 \[
 m_0\in M,
@@ -49,7 +49,7 @@ Because $x_0\notin M$, we have $z\ne0$.
 :::
 
 <1>2. Compute the minimum distance to $M$.
-::: proof
+::: {.proof}
 For any $x\in M$,
 \[
 x_0-x=(m_0-x)+z,
@@ -67,7 +67,7 @@ Equality holds at $x=m_0$. Therefore
 :::
 
 <1>3. Compute the maximum over the unit sphere of $M^\perp$.
-::: proof
+::: {.proof}
 If $y\in M^\perp$ and $\|y\|=1$, then
 \[
 \langle x_0,y\rangle

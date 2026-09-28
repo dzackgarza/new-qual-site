@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 The symmetric group $S_5$ acts on the set $X$ of ordered pairs $(i, j)$ of (not necessarily distinct!)
 elements of $\{1, 2, 3, 4, 5\}$.
 Let $\mathbb{C}[X]$ be the associated permutation representation.
@@ -23,7 +23,7 @@ Let $\mathbb{C}[X]$ be the associated permutation representation.
 (2) Find the dimension of the endomorphism algebra $\operatorname{End}_{S_5}(\mathbb{C}[X])$.
 :::
 
-::: solution
+::: {.solution}
 Split $X$ into the two $S_5$-orbits
 \[
 X_{=}=\{(i,i):1\le i\le5\},

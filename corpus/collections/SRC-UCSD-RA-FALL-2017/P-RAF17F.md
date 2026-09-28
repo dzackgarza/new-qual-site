@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $\lambda \in \mathbb{C}$ and $f \in L^1(m) = L^1(\mathbb{R}, m)$ satisfies $f * f * f(x) = \lambda f * f(x)$ for $m$-a.e. $x$.
 Show $f(x) = 0$ for $m$-a.e. $x$.
 
 Recall that $\|f * g\|_{L^1(m)} \leq \|f\|_{L^1(m)} \|g\|_{L^1(m)}$ for all $f, g \in L^1(m)$ and therefore $f * f$ and $f * f * f$ are still in $L^1(m)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Take Fourier transforms of the convolution equation.
-::: proof
+::: {.proof}
 Since $f\in L^1(\mathbb R)$, both $f*f$ and $f*f*f$ belong to $L^1(\mathbb R)$. The Fourier transform converts convolution into multiplication, so the assumed identity gives
 \[
 \widehat f(\xi)^3
@@ -50,7 +50,7 @@ and hence
 :::
 
 <1>2. Use continuity and decay of the Fourier transform.
-::: proof
+::: {.proof}
 If $\lambda=0$, Step 1 immediately gives
 \[
 \widehat f\equiv0.
@@ -74,7 +74,7 @@ Therefore the only possible constant is $0$, so again
 :::
 
 <1>3. Invoke uniqueness of the Fourier transform.
-::: proof
+::: {.proof}
 The Fourier transform is injective on $L^1(\mathbb R)$. Since
 \[
 \widehat f=0,

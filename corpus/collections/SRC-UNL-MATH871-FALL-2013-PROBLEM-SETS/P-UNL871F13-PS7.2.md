@@ -20,7 +20,10 @@ X=\{(0,1)\}\cup\{(x,0):0\le x\le1\}\cup
 with the subspace topology.
 
 1. Show that $X\setminus\{(0,1)\}$ is path-connected.
+
 2. Show that $X$ is connected.
+
 3. Show that $X$ is not path-connected.
+
 4. Prove that $X$ has exactly two path components, one of which is not closed in $X$.
 :::

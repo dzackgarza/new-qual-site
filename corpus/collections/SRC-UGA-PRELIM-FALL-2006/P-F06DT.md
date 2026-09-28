@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute the determinant of the matrix $$B = \begin{bmatrix} 1 & 0 & -1 & 2 \\ 3 & 1 & 0 & 1 \\ 4 & -1 & 1 & 1 \\ -1 & 2 & 1 & 2 \end{bmatrix}.$$
 :::
 
-::: solution
+::: {.solution}
 Expand along the first row:
 \[
 \det B

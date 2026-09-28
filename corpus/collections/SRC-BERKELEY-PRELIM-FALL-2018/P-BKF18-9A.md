@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose a prime $p$ divides the order of a finite group $G$.
 Prove that there exists an element $g\in G$ of order $p$.
 :::

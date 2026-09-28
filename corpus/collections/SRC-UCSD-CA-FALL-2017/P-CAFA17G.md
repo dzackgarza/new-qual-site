@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume that $f$ and $g$ are entire functions without common zeros.
 Show that there exist entire functions $A$, $B$ such that $Af + Bg = 1$.
 
 Hint: Ensure that $A = (1 - Bg)/f$ is entire by matching the principal parts of $1/f$ and $Bg/f$.
 :::
 
-::: solution
+::: {.solution}
 Let $\{a_j\}$ be the zeros of $f$, repeated through their multiplicities only in the local data below. Because $f$ and $g$ have no common zero, $g(a_j)\ne0$.
 
 Consider the meromorphic function

@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that a direct limit of countable abelian groups over a countable indexing set is countable.
 Apply this to show that if $X$ is an open set in $\mathbb{R}^n$ then $H_i(X; \mathbb{Z})$ is countable for all $i$.
+:::
 
 ::: {.solution}
 If the indexing set is countable and every $G_\alpha$ is countable, then the disjoint union

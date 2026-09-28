@@ -1,0 +1,22 @@
+{
+  "source_pdf": "assets/attachments/Fall80.pdf",
+  "source_pdf_sha256": "b77b378f096110eed267242b1ac36ee28e8ccc020c0bb1d85903be870012905d",
+  "source_pages": 4,
+  "extracted_markdown": "assets/attachments/Fall80_extracted.md",
+  "extracted_markdown_sha256": "0598ddc10111cbcadb4f206aa7e1d3f3e7b2c0c99358ed918c419c4cbaa5ab89",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall80.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall80.md",
+  "old_unknown_provenance_sha256": "0598ddc10111cbcadb4f206aa7e1d3f3e7b2c0c99358ed918c419c4cbaa5ab89",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1980, containing Problems 1 through 20 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1980 collection represents all 20 source positions in order with exact canonical reuse for Problems 2 and 19.",
+  "raw_control_bytes": 0,
+  "known_source_or_extractor_defects": [
+    "Problem 9's displayed generic 2-by-2 matrix and the displayed matrix A are malformed in the fresh raw Flash output exactly as in the retained extraction.",
+    "Problem 9 prints ||X||=x^2+y^2+z^2+t^2 while calling d(X,Y)=||X-Y|| a metric; the source may have lost a square root or a square on the norm symbol. The existing source-checked card preserves this ambiguity rather than guessing the missing typography."
+  ]
+}

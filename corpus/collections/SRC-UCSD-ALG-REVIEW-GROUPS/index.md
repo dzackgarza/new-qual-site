@@ -44,5 +44,4 @@ source:
     - P-ALGS06D
 ---
 
-The review sheet reproduces selected qualifying-exam problems and adds short technique reminders.
-The problem entries above reuse the existing canonical cards; the printed semester/problem labels are retained here as review-sheet locators.
+The review sheet reproduces selected qualifying-exam problems with their semester and problem labels, and adds short reminders of techniques.

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity, $p \in R$ an element, and $A$ an $R$-module.
 Show that the quotient group $A/pA$ is naturally an $R/(p)$-module with scalar multiplication defined by
 \[

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\zeta \in \mathbb{C}$ be a primitive $n$th root of unity for $n \geq 3$.
 Let $K = \mathbb{Q}(\zeta)$.
 

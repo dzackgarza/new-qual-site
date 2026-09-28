@@ -20,7 +20,7 @@ prompts:
 
 ::: {.definition title="adjoint"}
 Suppose $\mca$ and $\mcb$ are categories with functors $F: \mca \to \mcb$ and $G: \mcb \to \mca$.
-$F$ and $G$ are **adjoint** if there is a bijection
+$F$ and $G$ are \dfn{adjoint} if there is a bijection
 \[
 \tau_{AB}: \Mor_{\mcb}(F(A), B) \to \Mor_{\mca}(A, G(B))
 \]

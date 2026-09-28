@@ -17,13 +17,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\sigma$ be an $(n-1)$-cycle in $S_n$.
 Determine all Young diagrams $\lambda$ with $n$ boxes for which $\chi^\lambda(\sigma) \neq 0$.
 Partial credit if you calculate all characters of an $(n-1)$-cycle for $n = 3, 4$.
 :::
 
-::: solution
+::: {.solution}
 The cycle type of $\sigma$ is $(n-1,1)$. Apply the Murnaghan--Nakayama rule by removing the $(n-1)$-cycle first. After removing a rim hook of length $n-1$, one box remains. The only Young diagram with one box is $(1)$, so
 \[
 \chi^\lambda(\sigma)

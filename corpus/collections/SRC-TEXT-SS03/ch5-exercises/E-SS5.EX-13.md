@@ -19,13 +19,13 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 13. Show that the equation $e ^ { z } - z = 0$ has infinitely many solutions in $\mathbb { C } .$
 
 [Hint: Apply Hadamard’s theorem.]
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 F(z)=e^z-z.

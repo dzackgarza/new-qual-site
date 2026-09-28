@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall83.pdf",
+  "source_pdf_sha256": "258d987e64cf1a1df3d936a01e2cb970c0a4bfced8095ef5d9cf70c04ae42338",
+  "extracted_markdown": "assets/attachments/Fall83_extracted.md",
+  "extracted_markdown_sha256": "aeaaadf133bc162f2344c11f23f90317d99a8e3bcb9533e3647d4039d50ddebd",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall83.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall83.md",
+  "old_unknown_provenance_sha256": "aeaaadf133bc162f2344c11f23f90317d99a8e3bcb9533e3647d4039d50ddebd",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1983, containing Problems 1 through 20 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1983 collection represents all 20 source positions in order with 16 source-local cards and exact canonical reuse for Problems 5, 14, 17, and 19. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

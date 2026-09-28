@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a compact $7$-dimensional manifold with
 $$
 H_7(X, \mathbb{Z}) \cong \mathbb{Z}, \quad H_6(X, \mathbb{Z}) \cong \mathbb{Z}, \quad H_5(X, \mathbb{Z}) \cong \mathbb{Z}/2\mathbb{Z}, \quad H_4(X, \mathbb{Z}) \cong \mathbb{Z} \oplus \mathbb{Z}/3\mathbb{Z}.

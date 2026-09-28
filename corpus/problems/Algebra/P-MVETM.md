@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field of characteristic $p>0$. Suppose every irreducible polynomial in $F[x]$ is separable. Show that every $a\in F$ is a $p$-th power in $F$.
 :::
 

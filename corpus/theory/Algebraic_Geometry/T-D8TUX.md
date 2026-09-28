@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-D8TUX
 kind: theorem
 title: When the canonical divisor is very ample
+slogan: 'The canonical map embeds exactly the non-hyperelliptic curves of genus at least $3$; a degree-two pencil is the obstruction.'
 classification:
   areas:
   - algebraic-geometry
@@ -25,6 +26,7 @@ The canonical divisor $K$ is very ample exactly when $g \geq 3$ and $C$ is not h
 :::
 
 ::: {.proposition title="The criterion it comes from"}
+For every divisor $D$ and closed point $p$ on $C$, $\ell(D) - 1 \leq \ell(D - p) \leq \ell(D)$.
 A divisor $D$ on $C$ is very ample if and only if
 \[
 \ell(D - p - q) = \ell(D) - 2 \quad \text{for all points } p, q ,
@@ -32,10 +34,12 @@ A divisor $D$ on $C$ is very ample if and only if
 including $p = q$.
 It is base-point free if and only if $\ell(D - p) = \ell(D) - 1$ for all $p$.
 Any $D$ with $\deg D \geq 2g+1$ is very ample.
+[@Har10a, Proposition IV.3.1, Corollary IV.3.2]
 :::
 
 ::: {.remark}
 The criterion says the linear system separates points and tangent vectors, which is exactly what an embedding must do.
+The inequalities come from the exact sequence $0 \to \mcl(D - p) \to \mcl(D) \to k(p) \to 0$, with $k(p)$ the skyscraper sheaf at $p$, whose global sections drop by at most $\dim_k k(p) = 1$.
 Applied to $K$ and using duality, $\ell(K-p-q) = \ell(K) - 2$ fails precisely when $\ell(p+q) = 2$, that is, when there is a degree-two map to $\PP^1$ — the definition of hyperelliptic.
 
 The excluded cases are genuinely excluded: for $g = 0$, $\deg K < 0$; for $g = 1$, $K = 0$; for $g = 2$, every curve is hyperelliptic and $K$ gives the degree-two map rather than an embedding.

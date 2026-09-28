@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be meromorphic in $\mathbb{C}$ with finitely many zeros and poles.
 Write $\alpha_1,\ldots,\alpha_n$ for the zeros and poles of $f$, and let $m_1,\ldots,m_n$ be their orders.
 Assume that
@@ -27,7 +27,7 @@ Assume that
 (ii) Show that $\displaystyle\sum_{i=1}^{n} m_i \alpha_i = 0$.
 :::
 
-::: solution
+::: {.solution}
 We use the standard signed order convention: $m_i>0$ at a zero and $m_i<0$
 at a pole.
 

@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-18F.pdf",
+  "source_pdf_sha256": "2ff8d89b709e2f625a903a0aadfcd689e566b50147414b864d16930e1705bf2e",
+  "extracted_markdown": "assets/attachments/basic-18F_extracted.md",
+  "extracted_markdown_sha256": "d15317670997235ee0e6795b7f3873416d23761ceb0e440155961c6ccf6c564a",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-18F.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-18F.md",
+  "old_unknown_provenance_sha256": "2ddaf5e969026814bb39364f0a26732da69bfa3ef72ede2379f2fa39f443de7f",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Exam, Fall 2018, containing twelve numbered problems: six analysis problems followed by six linear-algebra problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction and is locally noisier: it drops map arrows in Problems 3 and 5, degrades text/math rendering in several problems, flattens the displayed limit in Problem 10, and corrupts dim(W) in Problem 12. The correction ledger independently records prior repairs to the 2018 Basic extraction, including with/and/if text, degree-two matrix notation, dim(W), rank, matrix digits, real-domain/image notation, sqrt(n)x_n, and f:R->R. The existing source-checked cards preserve the source statements. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The committed SRC-UCLA-BASIC-FALL-2018 collection already represents all twelve numbered source positions in order with source-checked cards. Several collection paths carry unrelated live formatting-only edits in the shared tree; this intake does not modify or stage those paths.",
+  "raw_control_bytes": 0
+}

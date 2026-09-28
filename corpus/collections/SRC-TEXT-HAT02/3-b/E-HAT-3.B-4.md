@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the cross product of fundamental classes for closed $\mathbb{R}$-orientable manifolds $M$ and $N$ is a fundamental class for $M \times N$.
+:::
 
 ::: {.solution}
 Let $M^m$ and $N^n$ be closed $\mathbb R$-orientable manifolds with chosen fundamental classes

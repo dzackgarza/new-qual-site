@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Determine if each of the following statements is true or false.
 
 1. If $f, g : \mathbb{R} \to \mathbb{R}$ belong to $L^1(\mathbb{R})$ and satisfy $\int_{-\infty}^{x} f(t)\,dt \leq \int_{-\infty}^{x} g(t)\,dt$ for all $x \in \mathbb{R}$, then $f \leq g$ almost everywhere.
@@ -37,9 +37,9 @@ Determine if each of the following statements is true or false.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Statement 1 is false.
-::: proof
+::: {.proof}
 Take $g=0$ and
 \[
 f=-\mathbf1_{(0,1)}+\mathbf1_{(1,2)}.
@@ -59,7 +59,7 @@ which is always $\le0=\int_{-\infty}^xg$. But $f=1>0=g$ on $(1,2)$. Thus the ass
 :::
 
 <1>2. Statement 2 is true.
-::: proof
+::: {.proof}
 Let
 \[
 M:=\sup_n\|f_n\|_2<\infty.
@@ -86,7 +86,7 @@ Hence
 :::
 
 <1>3. Statement 3 is true.
-::: proof
+::: {.proof}
 Because $A$ is open, it is Borel, so $\mu_A(E)=\mu(A\cap E)$ defines a Borel measure. If $K\subseteq X$ is compact, then
 \[
 \mu_A(K)=\mu(A\cap K)\le\mu(K)<\infty,

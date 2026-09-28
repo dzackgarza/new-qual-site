@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $K$ and $L$ be fields of orders $9$ and $27$, respectively.
 Is $K$ isomorphic to a subfield of $L$?
 :::

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Prove Picard's theorem using the fact that the modular invariant $j$ uniformizes the hyperbolic triangle of type $(2,3,\infty)$ by the upper half-plane.
 :::
 

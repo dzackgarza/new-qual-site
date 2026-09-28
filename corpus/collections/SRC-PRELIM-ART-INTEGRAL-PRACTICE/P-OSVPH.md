@@ -17,14 +17,14 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Evaluate the indefinite integral:
 $$
 \int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the antiderivative $\int \frac{\sin^3(x)}{\cos(x) - \cos^3(x)} \, dx$.
 
 <1>1. Algebraic simplification of the integrand:

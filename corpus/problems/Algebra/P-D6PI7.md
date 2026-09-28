@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that if a matrix is diagonalizable, its minimal polynomial is squarefree.
 :::
 
-::: solution
+::: {.solution}
 Suppose $A$ is diagonalizable over $F$. Then for some $P\in\operatorname{GL}_n(F)$,
 \[
 P^{-1}AP=\operatorname{diag}(\lambda_1,\dots,\lambda_n).

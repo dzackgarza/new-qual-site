@@ -22,13 +22,13 @@ audit:
   note: "Proved both implications directly using Bezout's identity and divisibility of integer linear combinations."
 ---
 
-::: problem
+::: {.problem}
 Prove that $m,n\in\mathbb Z$ are relatively prime if and only if $m\mathbb Z+n\mathbb Z=\mathbb Z$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $m$ and $n$ are relatively prime, then they generate $\mathbb Z$.
-::: proof
+::: {.proof}
 Relative primality means $\gcd(m,n)=1$. By Bezout's identity there exist integers $a,b$ such that
 $$
 am+bn=1.
@@ -37,7 +37,7 @@ Hence $1\in m\mathbb Z+n\mathbb Z$. Since $m\mathbb Z+n\mathbb Z$ is an ideal of
 :::
 
 <1>2. If $m\mathbb Z+n\mathbb Z=\mathbb Z$, then $m$ and $n$ are relatively prime.
-::: proof
+::: {.proof}
 The equality implies $1\in m\mathbb Z+n\mathbb Z$, so there exist integers $a,b$ with
 $$
 am+bn=1.

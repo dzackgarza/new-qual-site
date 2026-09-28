@@ -25,7 +25,7 @@ audit:
   note: "Repaired the unjustified varying-function continuity step by a compact-uniform estimate, proved the full zero-escape criterion, and supplied an example with a nonconstant zero-free limit and globally uniform convergence."
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be connected and open, and let
 $f_n:U\to\mathbb C$ be holomorphic with $f_n^{-1}(0)=\{c_n\}$
 for every $n\geq1$. Suppose $f_n\to f_0$ uniformly on
@@ -37,14 +37,14 @@ $U$, where $f_0$ is nonconstant.
 sufficient condition on $(c_n)$ for this to happen.
 :::
 
-::: solution
+::: {.solution}
 The zero-free case does occur. Its exact condition is
 that $(c_n)$ eventually leaves every compact subset of $U$,
 equivalently that it has no subsequence converging to a point
 of $U$.
 
 <1>1. The limit has at most one zero.
-::: proof
+::: {.proof}
 Uniform convergence implies compact-uniform convergence,
 so $f_0$ is holomorphic [@SS03]. Since it is nonconstant
 on connected $U$, its zeros are isolated. If it had
@@ -61,7 +61,7 @@ single-point fiber $f_n^{-1}(0)=\{c_n\}$. This proves (a).
 :::
 
 <1>2. A zero of the limit forces $c_n$ to converge to it.
-::: proof
+::: {.proof}
 Suppose $f_0(a)=0$. For every sufficiently small $r>0$,
 the closed disk $\overline{D(a,r)}$ lies in $U$ and
 $f_0$ has no zero on its boundary. As in step <1>1,
@@ -73,7 +73,7 @@ sequence $c_n$ converges to $a$.
 :::
 
 <1>3. An interior subsequential limit of the zeros is a zero of $f_0$.
-::: proof
+::: {.proof}
 Suppose $c_{n_k}\to a\in U$. Choose a fixed compact
 disk $K\subset U$ about $a$; it contains $c_{n_k}$
 for all sufficiently large $k$. Since $f_{n_k}(c_{n_k})=0$,
@@ -96,7 +96,7 @@ the equivalent compact-escape formulation.
 :::
 
 <1>4. A nonconstant zero-free limit is possible under the stated uniform convergence.
-::: proof
+::: {.proof}
 Take $U=D=\{|z|<1\}$ and
 $$
 c_n=1-\frac1{n+1},\qquad f_n(z)=z-c_n,

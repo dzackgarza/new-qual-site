@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $w \in \mathbb{D}$, consider the equation in $z$: $$(*)\quad z^5(z - 2) = w.$$
 
 (a) Show that (*) has 5 roots in $\mathbb{D}$ (possibly with multiplicity).
@@ -21,7 +21,7 @@ Show that for $w \in \mathbb{D} \setminus \{0\}$ the 5 roots are distinct.
 (b) Show that (*) has exactly one simple root in $B(2, 1)$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 F_w(z)=z^5(z-2)-w=z^6-2z^5-w.

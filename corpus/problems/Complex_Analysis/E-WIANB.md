@@ -21,7 +21,7 @@ For $\Omega\subseteq\CC$, show that $A(\CC)\definedas \theset{f: \Omega \to \CC 
 > Hint: Apply Morera's Theorem and Cauchy's Theorem
 :::
 
-::: solution
+::: {.solution}
 Interpreting the displayed space as
 \[
 A(\Omega)=\{f:\Omega\to\mathbb C:f\text{ is holomorphic and bounded}\}

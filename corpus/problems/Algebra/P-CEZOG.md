@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A=Ra$ be a cyclic module over a commutative ring $R$.
 Define the order ideal of $a$ by
 \[

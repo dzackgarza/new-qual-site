@@ -22,7 +22,7 @@ Let $X=D^2$, $Y=\{y\}$ a singleton, and $f:X\to Y$ be the constant function.
 Construct and describe the mapping cylinder.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Give an explicit description of the mapping cylinder for the constant map.
 
 <1>1. Definition: <2>1. For any map $f:X\to Y$, the mapping cylinder is $$M_f=(X\times [0,1])\sqcup Y\Big/\!\sim,$$ with $(x,1)\sim f(x)$ for every $x\in X$.

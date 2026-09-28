@@ -21,14 +21,14 @@ prompts:
 ---
 
 ::: {.definition title="Étale"}
-$f : X \to Y$ is **étale** if it is flat and unramified, equivalently flat, locally of finite presentation, with $\Omega_{X/Y} = 0$, equivalently smooth of relative dimension $0$.
+$f : X \to Y$ is \dfn{étale} if it is flat and unramified, equivalently flat, locally of finite presentation, with $\Omega_{X/Y} = 0$, equivalently smooth of relative dimension $0$.
 :::
 
 ::: {.remark}
 An étale morphism is open. Finite étale morphisms form the category of covers used to define the étale fundamental group.
 
 Étale does not imply local isomorphism in the Zariski topology: $\GG_m \to \GG_m$, $t \mapsto t^2$, over a field of characteristic not $2$ is finite étale of degree $2$ and is not an isomorphism over any nonempty Zariski open.
-Pulling this cover back along itself gives a disjoint union of two copies of the base.
+It becomes trivial only after an étale base change, which is the whole reason for introducing the étale topology.
 
 A finite étale morphism of degree $1$ is an isomorphism. Bijectivity on underlying points does not suffice: $\Spec L\to\Spec k$ is bijective and finite étale for a nontrivial finite separable field extension $L/k$.
 :::

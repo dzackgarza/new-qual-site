@@ -25,8 +25,9 @@ audit:
   note: Identified the quotient polygon as the standard one-triangle model of the Möbius band.
 ---
 
+::: {.problem}
 What familiar space is the quotient $\Delta$-complex of a 2 simplex $[\nu_0, \nu_1, \nu_2]$ obtained by identifying the edges $[\nu_0, \nu_1]$ and $[\nu_1, \nu_2]$, preserving the ordering of vertices?
-
+:::
 
 ::: {.solution}
 Let

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Take
 \[
 A := \begin{pmatrix} 2 & -2 \\ -2 & 5 \end{pmatrix}.
@@ -22,7 +22,7 @@ A := \begin{pmatrix} 2 & -2 \\ -2 & 5 \end{pmatrix}.
 Find an orthogonal matrix $P$ for which $P^{-1}AP$ is diagonal. Then find the minimum value of the dot products $Ax \cdot x$ as $x$ ranges through the unit vectors in $\mathbb{R}^2$.
 :::
 
-::: solution
+::: {.solution}
 If $A$ has two distinct eigenvalues, we will have $A = PDP\inv$ where $P$ is the matrix of eigenvectors and $D$ has eigenvalues on the diagonal. We can compute the characteristic polynomial
   $$
   p_\chi(x) = x^2 - (\Tr A)x + \det A = x^2 - 7x + 6 = (x-6)(x-1),

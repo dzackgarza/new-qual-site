@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^2(\mathbb{R}^n)$ such that $\hat{f}(\xi) \neq 0$ for a.e. $\xi \in \mathbb{R}^n$.
 For $a \in \mathbb{R}^n$, let $f_a \in L^2(\mathbb{R}^n)$ be given by $f_a(x) = f(x - a)$.
 
@@ -35,9 +35,9 @@ For $a \in \mathbb{R}^n$, let $f_a \in L^2(\mathbb{R}^n)$ be given by $f_a(x) = 
 (2) Prove that the linear span of $\{f_a : a \in \mathbb{R}^n\}$ is dense in $L^2(\mathbb{R}^n)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Extend the translation identity from $L^1\cap L^2$ to all of $L^2$.
-::: proof
+::: {.proof}
 Fix $a\in\mathbb R^n$. Choose $f_j\in L^1(\mathbb R^n)\cap L^2(\mathbb R^n)$ such that
 \[
 f_j\to f
@@ -74,7 +74,7 @@ and multiplication by the unimodular factor $e^{-2\pi i\xi\cdot a}$ is an $L^2$ 
 :::
 
 <1>2. Compute the orthogonal complement of the translation span.
-::: proof
+::: {.proof}
 Let
 \[
 V:=\overline{\operatorname{span}}\{f_a:a\in\mathbb R^n\}
@@ -117,7 +117,7 @@ and therefore $g=0$ by Plancherel.
 :::
 
 <1>3. Conclude density.
-::: proof
+::: {.proof}
 Step 2 shows
 \[
 V^\perp=\{0\}.

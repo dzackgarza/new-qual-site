@@ -27,4 +27,6 @@ source:
     year: 2019
 ---
 
-Problems and solutions on canonical forms, invariant bilinear forms, semisimple rings, characters, invariant theory, and affine varieties.
+::: {.remark}
+The document names no institution. It contains six problems with worked solutions.
+:::

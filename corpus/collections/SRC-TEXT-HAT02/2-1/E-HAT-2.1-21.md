@@ -26,7 +26,9 @@ audit:
   note: Complete proof checked at chain/skeletal/combinatorial level.
 ---
 
+::: {.problem}
 Making the preceding problem more concrete, construct explicit chain maps $s: C_n(X) \to C_{n+1}(SX)$ inducing isomorphisms $\tilde{H}_n(X) \to \tilde{H}_{n+1}(SX)$.
+:::
 
 ::: {.solution}
 Let $i:X\hookrightarrow SX$ be the equatorial inclusion. For a singular simplex $\sigma:\Delta^n\to X$, let $C_+\sigma$ and $C_-\sigma$ be the singular $(n+1)$-simplices obtained by coning $i\sigma$ to the upper and lower suspension vertices, respectively, with the cone vertex listed first in the orientation. Define

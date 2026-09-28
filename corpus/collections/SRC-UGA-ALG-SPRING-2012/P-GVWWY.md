@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional vector space over a field $k$ and $T:V\to V$ a linear transformation.
 
 a. Provide a definition for the *minimal polynomial* in $k[x]$ for $T$.

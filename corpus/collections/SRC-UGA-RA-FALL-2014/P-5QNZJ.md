@@ -29,7 +29,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 1. Let $f \in C_c^0(\RR^n)$, and show
 \[
 \lim _{t \to 0} \int_{\RR^n} |f(x+t) - f(x)| \, dx = 0
@@ -42,9 +42,9 @@ f\in L^1(\RR^n), \quad g\in L^\infty(\RR^n) \quad
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove translation continuity for $f\in C_c(\mathbb R^n)$.
-::: proof
+::: {.proof}
 Let $K=\operatorname{supp}f$. For $|t|\le1$, the function
 \[
 x\longmapsto f(x+t)-f(x)
@@ -61,7 +61,7 @@ satisfies $\omega_f(r)\to0$ as $r\downarrow0$. Hence, for $|t|\le1$,
 :::
 
 <1>2. Extend translation continuity to every $f\in L^1(\mathbb R^n)$.
-::: proof
+::: {.proof}
 Write $\tau_t f(x)=f(x+t)$. Fix $\varepsilon>0$. Choose $\varphi\in C_c(\mathbb R^n)$ with
 \[
 \|f-\varphi\|_1<\frac\varepsilon3.
@@ -82,7 +82,7 @@ By Step 1, the last term is below $\varepsilon/3$ for all sufficiently small $t$
 :::
 
 <1>3. Prove boundedness of $f*g$ for $f\in L^1$ and $g\in L^\infty$.
-::: proof
+::: {.proof}
 Using
 \[
 (f*g)(x)=\int_{\mathbb R^n} f(x-y)g(y)\,dy,
@@ -97,7 +97,7 @@ Hence $f*g$ is bounded.
 :::
 
 <1>4. Prove uniform continuity of $f*g$.
-::: proof
+::: {.proof}
 For $t\in\mathbb R^n$,
 \[
 \begin{aligned}

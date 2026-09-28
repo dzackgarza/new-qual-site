@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $R = \mathbb{Z}[\sqrt{-6}]$.
 
 (a) Prove that 3 is an irreducible element of $R$ which is not prime.

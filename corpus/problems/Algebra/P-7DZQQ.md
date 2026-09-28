@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $K/F$ be a finite cyclic Galois extension of degree $n$. Prove that for every divisor $d\mid n$, there is a unique intermediate field $E$ with
 \[
 [E:F]=d.

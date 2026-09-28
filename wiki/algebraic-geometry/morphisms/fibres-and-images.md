@@ -32,3 +32,7 @@ Miracle flatness runs the implication the other way, turning the expected fibre 
 Stein factorisation is the general structure theorem: every proper morphism is a contraction with connected fibres followed by a finite cover.
 Zariski's main theorem is the case where the finite part is trivial, and normality of the target is what forces that.
 The nodal cubic and its normalisation are the standard witness that dropping normality breaks it, and they are the same example that shows a normalisation is not flat.
+
+## Connected fibres and integral closure
+
+[[P-AGXMISCOCONNECTED]]

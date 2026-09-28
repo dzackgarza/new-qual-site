@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-033
 kind: problem
-title: Kent State ring-theory qualifying problem 33
+title: 'The ring $C[0,1]$: units, idempotents and nilpotents'
 classification:
   areas: [algebra]
   topics: []

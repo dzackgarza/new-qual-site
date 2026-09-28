@@ -24,13 +24,13 @@ audit:
   note: "Checked the characteristic and tower-degree restriction, existence via divisibility of Frobenius polynomials, field closure of each root set, and uniqueness as an actual subfield rather than merely up to isomorphism."
 ---
 
-::: problem
+::: {.problem}
 (a) Let $F$ be a field of order $5^{20}$. List the orders of all the subfields of $F$.
 
 (b) Does $F$ have more than one subfield of order $25$? Explain.
 :::
 
-::: solution
+::: {.solution}
 The subfield orders are
 $$
 5,\quad 5^2,\quad 5^4,\quad 5^5,\quad 5^{10},\quad 5^{20}.
@@ -40,7 +40,7 @@ there is exactly one subfield of order $25$.
 
 <1>1. Every subfield has order $5^d$ with $d$ a positive divisor of $20$.
 
-::: proof
+::: {.proof}
 The characteristic of a finite field is a prime dividing its order:
 the additive order of $1$ divides the additive group order, and a
 composite characteristic would give nonzero zero divisors.
@@ -60,7 +60,7 @@ of $20=2^2\cdot5$ are exactly $1,2,4,5,10,20$.
 <1>2. For each $d\mid20$, the set
 $F_d=\{a\in F:a^{5^d}=a\}$ is a subfield with exactly $5^d$ elements.
 
-::: proof
+::: {.proof}
 Put $h_d(T)=T^{5^d}-T$. First, $h_d$ divides $h_{20}$ in
 $\mathbb F_5[T]$. Indeed, in the quotient ring by $(h_d)$ the
 class $t$ of $T$ satisfies $t^{5^d}=t$. Repeatedly taking the
@@ -95,7 +95,7 @@ is a subfield, with the cardinality already established.
 
 <1>3. A subfield of a given listed order is unique.
 
-::: proof
+::: {.proof}
 If $K\subseteq F$ has order $5^d$, every nonzero $a\in K$
 satisfies $a^{5^d-1}=1$ by Lagrange's theorem in $K^\times$.
 Including zero, every element of $K$ satisfies $a^{5^d}=a$.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-V6UJ7
 kind: definition
-title: Group Presentation
+title: Group presentation
 classification:
   areas:
   - algebra
@@ -15,5 +15,11 @@ review: draft
 ---
 
 ::: {.definition}
-An expression of the form $G = \gens{S \st R}$ where $S$ is a set of elements and $R$ a set of words defining relations means that $G \da F[S] / \cl_n(R)$ where $F[S]$ is the free group on the set $S$ and $\cl_n(R)$ is the normal closure, the smallest normal subgroup of $F[S]$ containing $R$.
+Let $S$ be a set, let $F[S]$ be the free group on $S$, and let $R\subseteq F[S]$ be a set of words in $S$.
+The group \dfn{presented} by generators $S$ and relations $R$ is
+$$
+\gens{S \st R} \coloneqq F[S] / \cl_n(R),
+$$
+where $\cl_n(R)$ is the [[D-BPRD3|normal closure]] of $R$ in $F[S]$, the smallest [[D-EKE4Q|normal subgroup]] of $F[S]$ containing $R$.
+A \dfn{presentation} of a group $G$ is an isomorphism $G\cong\gens{S \st R}$.
 :::

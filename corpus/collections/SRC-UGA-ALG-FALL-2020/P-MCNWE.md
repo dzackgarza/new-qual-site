@@ -14,14 +14,15 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 a. Define what it means for a finite extension of fields $E$ over $F$ to be a *Galois* extension.
 
 b. Determine the Galois group of $f(x) = x^3 - 7$ over $\QQ$, and justify your answer carefully.
 
 c. Find all subfields of the splitting field of $f(x)$ over $\QQ$.
+:::
 
-
-:::{.solution}
+::: {.solution}
 Part a:
 
 - A finite extension $E/F$ is **Galois** if it is normal and separable:

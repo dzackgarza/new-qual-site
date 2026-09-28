@@ -23,13 +23,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show by example that there exists a function $f(z)$ that is holomorphic on the punctured disk $D^*(0, 1) = \{z \in \mathbb{C} \mid 0 < |z| < 1\}$ such that for all $0 < r < 1$:
 $$\oint_{|z| = r} f(z) \, dz = 0,$$
 but $f$ is not holomorphic at $z = 0$.
 :::
 
-::: solution
+::: {.solution}
 Take
 \[
 f(z)=\frac1{z^2}.

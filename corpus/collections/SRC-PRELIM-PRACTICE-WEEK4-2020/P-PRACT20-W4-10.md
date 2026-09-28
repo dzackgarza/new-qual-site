@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-10
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 10"
+title: Solution sets of second-order equations that are subspaces of $C(\mathbb R)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
+  - Linear Algebra
+  - Subspaces
 relations: []
 review: draft
 ---

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 9. Prove that the function u defined by
 
 $$
@@ -26,7 +26,7 @@ is harmonic in the unit disc and vanishes on its boundary.
 Note that u is not bounded in D.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 F(z)=\frac{i+z}{i-z}.

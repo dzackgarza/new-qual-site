@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-01
 kind: problem
-title: Nori Galois theory problem 5.1
+title: Galois group over a compositum of fixed fields is $H_1\cap H_2$
 classification:
   areas: [algebra]
   topics: []

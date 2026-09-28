@@ -29,11 +29,11 @@ Let $\left| G \right| = p^n q$ for some primes $p > q$.
 Show that $G$ contains a unique normal subgroup of index $q$.
 :::
 
-::: solution
+::: {.solution}
 Let $P$ be a Sylow $p$-subgroup of $G$. Then $|P|=p^n$, so $[G:P]=q$.
 
 <1>1. The number $n_p$ of Sylow $p$-subgroups is $1$.
-::: proof
+::: {.proof}
 By Sylow's theorems,
 \[
 n_p\mid q
@@ -46,7 +46,7 @@ is impossible. Hence $n_p=1$.
 :::
 
 <1>2. The subgroup $P$ is normal and has index $q$.
-::: proof
+::: {.proof}
 A unique Sylow subgroup is normal, so <1>1 gives $P\trianglelefteq G$. Also
 \[
 [G:P]=\frac{p^nq}{p^n}=q.
@@ -54,7 +54,7 @@ A unique Sylow subgroup is normal, so <1>1 gives $P\trianglelefteq G$. Also
 :::
 
 <1>3. Any subgroup $H\le G$ of index $q$ equals $P$.
-::: proof
+::: {.proof}
 If $[G:H]=q$, then
 \[
 |H|=\frac{|G|}{q}=p^n.
@@ -64,7 +64,7 @@ $H=P$.
 :::
 
 <1>4. Therefore $G$ has a unique normal subgroup of index $q$.
-::: proof
+::: {.proof}
 Existence follows from <1>2, and uniqueness from <1>3.
 :::
 :::

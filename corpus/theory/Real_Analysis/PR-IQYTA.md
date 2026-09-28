@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-IQYTA
 kind: proposition
-title: AM-GM Inequality
+title: AM--GM inequality for two numbers
+slogan: 'For two nonnegative numbers, the geometric mean never exceeds the arithmetic mean.'
 classification:
   areas:
   - real-analysis
@@ -12,8 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-\sqrt{ab} \leq \frac{a+b}{2}
-.\]
+::: {.proposition}
+For all real numbers $a,b\geq0$,
+$$
+\sqrt{ab} \leq \frac{a+b}{2},
+$$
+with equality if and only if $a=b$.
 :::

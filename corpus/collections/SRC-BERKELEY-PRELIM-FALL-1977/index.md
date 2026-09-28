@@ -41,7 +41,3 @@ source:
     term: fall
     year: 1977
 ---
-
-::: remark
-UC Berkeley Preliminary Exam, Fall 1977. Problems are listed in paper order.
-:::

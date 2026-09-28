@@ -28,15 +28,15 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $1 \leq p,q \leq \infty$ be conjugate exponents, and show that
 \[
 f \in L^p(\RR^n) \implies \|f\|_{p} = \sup _{\|g\|_{q}=1}\left|\int f(x) g(x) d x\right|
 \]
 :::
-::: solution
+::: {.solution}
 <1>1. Hölder gives the upper bound.
-::: proof
+::: {.proof}
 For every $g\in L^q(\mathbb R^n)$ with $\|g\|_q=1$, Hölder's inequality gives
 \[
 \left|\int_{\mathbb R^n}f(x)g(x)\,dx\right|
@@ -50,7 +50,7 @@ Hence
 :::
 
 <1>2. Prove equality when $1<p<\infty$.
-::: proof
+::: {.proof}
 If $f=0$, the result is immediate. Otherwise define
 \[
 g(x)=\frac{\overline{f(x)}|f(x)|^{p-2}}{\|f\|_p^{p-1}},
@@ -71,7 +71,7 @@ Thus the supremum is at least $\|f\|_p$, and Step 1 gives equality.
 :::
 
 <1>3. Prove equality when $p=1$ and $q=\infty$.
-::: proof
+::: {.proof}
 If $f=0$, there is nothing to prove. Define the phase
 \[
 \theta(x)=
@@ -88,7 +88,7 @@ Hence the supremum equals $\|f\|_1$.
 :::
 
 <1>4. Prove equality when $p=\infty$ and $q=1$.
-::: proof
+::: {.proof}
 Let $M=\|f\|_\infty$. If $M=0$, the result is immediate. Fix $\varepsilon\in(0,M)$. By the definition of essential supremum,
 \[
 A_\varepsilon:=\{x:|f(x)|>M-\varepsilon\}
@@ -119,7 +119,7 @@ Letting $\varepsilon\downarrow0$ shows that the supremum is at least $M$. Step 1
 :::
 
 <1>5. Conclude.
-::: proof
+::: {.proof}
 All conjugate pairs $1\le p,q\le\infty$ have been covered, so
 \[
 \boxed{

@@ -72,7 +72,7 @@ have the same initial point \(f(t_{i-1})\) and terminal point \(p(B_i)\). Their 
 \[
 B_{i-1}\cup B_i.
 \]
-Because \(B_{i-1}\cap B_i\ne\varnothing\), this union lies in some \(A\in\mathcal A\). The inclusion-induced map \(\pi_1(A)	o\pi_1(X)\) is trivial, so the loop is nullhomotopic in \(X\). Hence the two paths are homotopic rel endpoints:
+Because \(B_{i-1}\cap B_i\ne\varnothing\), this union lies in some \(A\in\mathcal A\). The inclusion-induced map \(\pi_1(A)\to\pi_1(X)\) is trivial, so the loop is nullhomotopic in \(X\). Hence the two paths are homotopic rel endpoints:
 \[
 [f_i]*[\alpha_i]=[\alpha_{i-1}]*[g_i].
 \]

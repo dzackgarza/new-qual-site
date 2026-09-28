@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f$ is an analytic function in the region $D$ which
 contains the point $a$. Let
 $$F(z)= z-a-qf(z),\quad \text{where}~ q \ \text{is a complex parameter}.$$
@@ -37,7 +37,7 @@ series with respect to $q$: $\displaystyle{
 \frac{1}{F(z)}=\sum_{n=0}^{\infty} \frac{(qf(z))^n}{(z-a)^{n+1}}.}$
 :::
 
-::: solution
+::: {.solution}
 Let the circle $K$ have radius $R$ and center $a$. On $K$ the hypothesis gives
 \[
 |qf(z)|<|z-a|=R.

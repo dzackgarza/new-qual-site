@@ -60,11 +60,11 @@ Starting at \(a\), form the successor sequence
 \[
 a=a_0<a_1<a_2<\cdots,
 \]
-where \(a_{n+1}\) is the immediate successor of \(a_n\); this is possible by part (a) and Exercise 2. The countable set \(\{a_n:n\ge0\}\) has an upper bound in \(S_\Omega\), hence, by Exercise 1, a least upper bound \(eta\in S_\Omega\).
+where \(a_{n+1}\) is the immediate successor of \(a_n\); this is possible by part (a) and Exercise 2. The countable set \(\{a_n:n\ge0\}\) has an upper bound in \(S_\Omega\), hence, by Exercise 1, a least upper bound \(\beta\in S_\Omega\).
 
-The point \(eta\) is not one of the \(a_n\), since \(a_{n+1}>a_n\) for every \(n\). We claim \(eta\) has no immediate predecessor. If \(\gamma\) were an immediate predecessor of \(eta\), then \(\gamma\) could not be an upper bound of the sequence, so \(a_n>\gamma\) for some \(n\). Then
+The point \(\beta\) is not one of the \(a_n\), since \(a_{n+1}>a_n\) for every \(n\). We claim \(\beta\) has no immediate predecessor. If \(\gamma\) were an immediate predecessor of \(\beta\), then \(\gamma\) could not be an upper bound of the sequence, so \(a_n>\gamma\) for some \(n\). Then
 \[
 \gamma<a_n<a_{n+1}<\beta,
 \]
-contradicting immediacy. Thus \(eta\in X_0\). But \(eta>a=a_0\), contradicting that \(a\) is an upper bound for \(X_0\). Therefore \(X_0\) is uncountable.
+contradicting immediacy. Thus \(\beta\in X_0\). But \(\beta>a=a_0\), contradicting that \(a\) is an upper bound for \(X_0\). Therefore \(X_0\) is uncountable.
 :::

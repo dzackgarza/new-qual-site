@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 The following provides steps to give an alternate proof of the Lebesgue-Radon-Nikodym theorem.
 Suppose that $\mu$ and $\nu$ are positive finite measures on $(X, \mathcal{M})$ and let $\lambda = \mu + \nu$.
 
@@ -37,9 +37,9 @@ Then $\nu_a \ll \mu$ and $\nu_s \perp \mu$.
 (d) Moreover $d\nu_a = g(1-g)^{-1}\,d\mu$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a) by the Riesz representation theorem.
-::: proof
+::: {.proof}
 Since $\nu\le\lambda$ and $\lambda(X)<\infty$, for $f\in L^2(\lambda)$,
 \[
 \left|\int_X f\,d\nu\right|
@@ -66,7 +66,7 @@ Hence for every $f\in L^2(\lambda)$,
 :::
 
 <1>2. Prove that $0\le g\le1$ almost everywhere.
-::: proof
+::: {.proof}
 Because $\lambda$ is finite, indicators of measurable sets lie in $L^2(\lambda)$.
 
 Let
@@ -100,7 +100,7 @@ Changing $g$ on a $\lambda$-null set, we may assume this holds everywhere.
 :::
 
 <1>3. Prove the Lebesgue decomposition in part (c).
-::: proof
+::: {.proof}
 Let
 \[
 A=\{g<1\},
@@ -143,7 +143,7 @@ Hence
 :::
 
 <1>4. Identify the Radon--Nikodym density on $A$.
-::: proof
+::: {.proof}
 Fix $E\in\mathcal M$ and again let
 \[
 A_n=\left\{g\le1-\frac1n\right\}.

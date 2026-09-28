@@ -30,6 +30,6 @@ source:
     year: 2009
 ---
 
-::: remark
-Exam #3 lists [[P-2HMGE]] (same statement as Spring 2005 #2).
+::: {.remark}
+Problem 3 is the same problem as Spring 2005 Problem 2.
 :::

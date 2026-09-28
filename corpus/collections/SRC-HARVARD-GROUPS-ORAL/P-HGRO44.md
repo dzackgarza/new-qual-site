@@ -22,7 +22,7 @@ audit:
   note: "Checked the exact finite count, uniqueness of an involution in a point stabilizer, fixed-point-free products of distinct involutions, the infinite cardinal comparison, finite subgroup closure in both parity cases, and regularity whenever K is a subgroup."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ act sharply $2$-transitively on a set $X$ with $|X|\geq2$.
 Put
 $$
@@ -32,7 +32,7 @@ Prove that $|K|=|X|$. When $X$ is finite, also prove that
 $K$ is a normal subgroup, the Frobenius kernel of the action.
 :::
 
-::: remark
+::: {.remark}
 The set $K$ is specified before any subgroup property is used.
 Its cardinality statement holds without a finiteness hypothesis.
 Subgroup closure is proved below when $X$ is finite; the
@@ -41,7 +41,7 @@ Whenever $K$ is a subgroup, its action is regular and the map
 $k\mapsto kx$ is a bijection $K\to X$ for each $x\in X$.
 :::
 
-::: solution
+::: {.solution}
 Sharp double transitivity means that for any two ordered
 pairs of distinct points there is exactly one group element
 mapping the first pair to the second. In particular, only
@@ -51,7 +51,7 @@ derangement. We use the axiom of choice for infinite cardinalities.
 
 <1>1. If $X$ is finite of size $n\geq2$, then $|K|=n$.
 
-::: proof
+::: {.proof}
 Fix distinct $x,y\in X$. Sharp double transitivity makes
 $$
 G\longrightarrow\{(a,b)\in X^2:a\ne b\},
@@ -76,7 +76,7 @@ This includes $n=2$, when every point stabilizer is trivial.
 <1>2. Each pair of distinct points has a unique swapping
 involution, and each point stabilizer contains at most one involution.
 
-::: proof
+::: {.proof}
 For distinct $x,y$, the unique element swapping $x,y$
 has square fixing both and is not the identity. It is
 therefore an involution, uniquely determined by that pair.
@@ -94,7 +94,7 @@ two points. Now $g$ fixes both $x,y$, so $g=1$ and $i=j$.
 
 <1>3. A product of two distinct involutions is fixed-point-free.
 
-::: proof
+::: {.proof}
 Let $i,j$ be involutions, and suppose $ij$ fixes $x$.
 Then $jx=ix$. If this common point is $x$, both involutions
 belong to $G_x$ and are equal by step <1>2. Otherwise
@@ -106,7 +106,7 @@ set of involutions and $i\in J$, then $iJ\subseteq K$.
 
 <1>4. If $X$ is infinite, then $|K|=|X|$ as well.
 
-::: proof
+::: {.proof}
 We first justify the cardinal arithmetic being used.
 Deleting one point from an infinite set does not change
 its cardinality: choose a sequence of distinct points
@@ -145,7 +145,7 @@ subtraction of infinite cardinals.
 
 <1>5. When $X$ is finite, the set $K$ is a normal subgroup.
 
-::: proof
+::: {.proof}
 The set is closed under inverses, because an element
 and its inverse have the same fixed points. It is
 preserved by conjugation, because conjugation carries
@@ -186,7 +186,7 @@ assertion without invoking a general kernel theorem.
 
 <1>6. Whenever $K$ is a subgroup, it acts regularly on $X$.
 
-::: proof
+::: {.proof}
 The set $K$ is conjugation invariant as above, so such
 a subgroup is normal. Steps <1>1 and <1>4 imply
 $|K|=|X|\geq2$, hence $K$ contains a nonidentity element.

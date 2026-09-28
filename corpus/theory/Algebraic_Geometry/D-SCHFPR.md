@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition}
-For morphisms $X \to S$ and $Y \to S$, the **fibre product** $\fiberprod{X}{S}{Y}$ is a scheme over $S$ with projections to $X$ and $Y$, universal among schemes mapping compatibly to both:
+For morphisms $X \to S$ and $Y \to S$, the \dfn{fibre product} $\fiberprod{X}{S}{Y}$ is a scheme over $S$ with projections to $X$ and $Y$, universal among schemes mapping compatibly to both:
 \[
 \Hom_S(T, \fiberprod{X}{S}{Y}) \cong \Hom_S(T, X) \times \Hom_S(T, Y) .
 \]
@@ -37,7 +37,10 @@ The general case is obtained by covering $X$, $Y$, $S$ by affines, building the 
 :::
 
 ::: {.remark}
-The underlying set need not be the fibre product of sets.
-$\fiberprod{\Spec \CC}{\Spec \RR}{\Spec \CC} \cong \Spec (\CC \tensor_\RR \CC) \cong \Spec (\CC \times \CC)$ has two points, whereas the set-theoretic fibre product has one.
-Nilpotents can also appear: for $k=\FF_p(t)$ and $L=k(u)$ with $u^p=t$, $L\tensor_k L\cong L[\eps]/(\eps^p)$.
+For affine schemes, every fibre-product computation reduces to the tensor-product formula above; the general construction is obtained by gluing these affine pieces.
+
+The underlying set is *not* in general the fibre product of the underlying sets.
+$\fiberprod{\Spec \CC}{\Spec \RR}{\Spec \CC} \cong \Spec (\CC \tensor_\RR \CC) \cong \Spec (\CC \times \CC)$ is two points over a one-point set product, and for $K = \FF_p(t)$ over $L = \FF_p(t^p)$, $\fiberprod{\Spec K}{\Spec L}{\Spec K} \cong \Spec K[x]/(x-t)^p$ is one point but gains nilpotents.
+The Frobenius of $\FF_p$ itself is the identity, so base change along it changes nothing.
+The universal property identifies the fibre product by the functor it represents.
 :::

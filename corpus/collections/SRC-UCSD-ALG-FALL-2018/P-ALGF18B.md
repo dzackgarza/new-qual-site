@@ -25,7 +25,7 @@ audit:
   note: Verified the Frobenius-power nilpotence argument and the explicit GL_3(F_2) counterexample to part (b).
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a prime which is at most $n$, and $F$ is a field of characteristic $p$.
 Suppose $g \in \mathrm{GL}_n(F)$ and $g^{p^m} = I$ for some positive integer $m$.
 

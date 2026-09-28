@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Define the **nilradical** $\operatorname{Nil}(R)$ of a commutative ring $R$, and state the characterization theorem relating it to the intersection of all prime ideals of $R$.
 (2) Prove that the polynomial ring $F[x]$ over a field $F$ contains **infinitely many prime ideals**.
 :::
 
-::: solution
+::: {.solution}
 The nilradical is
 \[
 \operatorname{Nil}(R)=\sqrt{(0)}

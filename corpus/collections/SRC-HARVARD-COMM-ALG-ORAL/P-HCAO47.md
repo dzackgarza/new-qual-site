@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A\subseteq B$ be commutative rings, with $B$ integral over $A$.
 If $x\in A$ is a unit in $B$, show that $x$ is a unit in $A$.
 :::
 
-::: solution
+::: {.solution}
 Let $y=x^{-1}\in B$. Since $B$ is integral over $A$, the element $y$ is
 integral over $A$. Hence there is a monic relation
 \[

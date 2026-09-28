@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A solid hexagon and a solid triangle are glued together along their edges, according to the following scheme.
 Calculate the fundamental group and the homology of the resulting space $X$.
 :::

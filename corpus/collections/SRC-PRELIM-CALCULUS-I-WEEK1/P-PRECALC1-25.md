@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-25
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 25'
+title: Intermediate and mean value theorems for $f$ with $f(0)=1$ and $f(1)=0$
 classification:
   areas:
   - prelim

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Talk about factorisation and primes in a polynomial ring.
 What is irreducibility?
 For what rings $R$ is it true that $R[x_1, \dots , x_n]$ is a unique factorisation domain?
@@ -29,7 +29,7 @@ What is wrong with unique factorisation if we don't have a domain?
 Now, PIDs are Noetherian, but are there UFDs which are not?
 :::
 
-::: solution
+::: {.solution}
 Let $R$ be an integral domain. A nonzero nonunit $a\in R$ is **irreducible** if
 \[
 a=bc\implies b\in R^\times\text{ or }c\in R^\times,

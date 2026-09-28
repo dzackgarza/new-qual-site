@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Consider
 \[
 f(z) \da {1\over \sin(z)} - {1\over z} + {2z\over z^2-\pi^2}
@@ -24,7 +24,7 @@ Show that on $\abs{z} < 2\pi$, all singularities are removable, and find a Laure
 
 :::
 
-:::{.solution title="Using L'Hopital and boundedness"}
+::: {.solution title="Using L'Hopital and boundedness"}
 Note that the singularities are
 \[
 z = 0, \pi, -\pi
@@ -90,7 +90,7 @@ f(z) &=
 .\]
 :::
 
-:::{.solution title="Comparing orders of vanishing"}
+::: {.solution title="Comparing orders of vanishing"}
 Write
 \[
 f(z) = {z-\sin(z) \over z\sin(z)} - {2z\over z^2-\pi^2}

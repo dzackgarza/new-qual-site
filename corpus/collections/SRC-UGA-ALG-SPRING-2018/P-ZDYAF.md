@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 M &= \{(w, x, y, z) \in \ZZ^4 \suchthat w + x + y + z \in 2\ZZ\} \\

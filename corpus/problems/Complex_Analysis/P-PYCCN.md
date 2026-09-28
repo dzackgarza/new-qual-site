@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find a conformal  map from $\theset{\abs{z-1} < 2} \intersect \theset{\abs{z+1} < 2}$ to $\HH$.
 :::
 
-::: solution
+::: {.solution}
 The two boundary circles meet at
 \[
 z=\pm i\sqrt3.

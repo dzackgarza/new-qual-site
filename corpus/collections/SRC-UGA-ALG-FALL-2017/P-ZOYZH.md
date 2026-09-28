@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A ring $R$ is called *simple* if its only two-sided ideals are $\{0\}$ and $R$.
 
 (a) Suppose $R$ is a commutative ring with identity $1 \ne 0$. Prove that $R$ is simple if and only if $R$ is a field.
@@ -22,7 +22,7 @@ A ring $R$ is called *simple* if its only two-sided ideals are $\{0\}$ and $R$.
 (b) Let $k$ be a field and $n \ge 1$. Show that the ring $M_n(k)$ of $n \times n$ matrices with entries in $k$ is a simple ring.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that commutative unital simple rings are fields in (a), and that matrix rings $M_n(k)$ over a field are simple in (b) using matrix units.
 
 <1>1. Part (a): $R$ is simple if and only if $R$ is a field.

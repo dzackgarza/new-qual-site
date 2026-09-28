@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 - Prove Cauchy's theorem.
 
 > Induce on $\size G$.
@@ -29,7 +29,7 @@ audit:
 > Get $p\divides \size \gens{y}$, apply IH.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Let $G$ be a finite group and let $p$ be a prime dividing $|G|$.
 Then there exists $x\in G$ with order $p$.

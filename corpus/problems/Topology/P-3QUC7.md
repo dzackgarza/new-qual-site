@@ -18,11 +18,11 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a path-connected topological space such that $\pi_1(X) = 0$. Prove that every continuous map $f: S^1 \to X$ can be extended to a continuous map $F: D^2 \to X$ (where $S^1 = \partial D^2$).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $\pi_1(X) = 0$, every continuous map $f: S^1 \to X$ extends continuously to $F: D^2 \to X$.
 
 <1>1. Realization of the 2-disk $D^2$ as a quotient cone of the cylinder $S^1 \times [0, 1]$:

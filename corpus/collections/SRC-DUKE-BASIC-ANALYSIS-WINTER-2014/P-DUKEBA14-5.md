@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 x_n=
@@ -30,9 +30,9 @@ x_n=
 Prove that $(x_n)_{n\ge1}$ has a convergent subsequence.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that the sequence is bounded.
-::: proof
+::: {.proof}
 Since $|\sin(n^3)|\le1$ and $0\le2\sin^2n\le2$,
 \[
 |x_n|
@@ -42,7 +42,7 @@ For $n\ge1$ this is bounded, for example by $37$. Hence $(x_n)$ is a bounded seq
 :::
 
 <1>2. Apply Bolzano--Weierstrass.
-::: proof
+::: {.proof}
 Every bounded sequence in $\mathbb R$ has a convergent subsequence. Therefore $(x_n)$ has a convergent subsequence.
 :::
 :::

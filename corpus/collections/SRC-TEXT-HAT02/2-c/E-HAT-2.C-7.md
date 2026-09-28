@@ -24,7 +24,9 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 Verify that the Lefschetz fixed point theorem holds also when $\tau(f)$ is defined using homology with coefficients in a field $F$.
+:::
 
 ::: {.solution}
 Let $F$ be a field and define

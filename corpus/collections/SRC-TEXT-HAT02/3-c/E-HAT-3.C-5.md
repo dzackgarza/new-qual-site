@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that if $(X, e)$ is an H-space then $\pi_1(X, e)$ is abelian.
 [Compare the usual composition $f \cdot g$ of loops with the product $\mu(f(t), g(t))$ coming from the H-space multiplication $\mu$.]
+:::
 
 ::: {.solution}
 <1>1. Setup the two binary operations on the space of based loops $\Omega(X, e)$: <2>1. Let $(X, e, \mu)$ be an H-space with multiplication $\mu: X \times X \to X$, so $\mu(x, e) \simeq x$ and $\mu(e, x) \simeq x$ via homotopies fixing the basepoint $e$.

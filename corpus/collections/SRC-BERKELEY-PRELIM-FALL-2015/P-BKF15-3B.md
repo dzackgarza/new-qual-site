@@ -2,13 +2,30 @@
 schema: qual/card@1
 id: P-BKF15-3B
 kind: problem
-title: Berkeley Fall 2015 prelim problem 3B
+title: A plane section of the unit ball of $C[0,1]$ that is a circular disk
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Independently checked the retained Fall 2015 solution packet: the plane
+    spanned by cos(2 pi t) and sin(2 pi t) has sup norm equal to the
+    Euclidean norm of its coefficient pair.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-24
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-24
+  note: >-
+    Checked linear independence, the exact supremum over one full period,
+    and identification of the section with the closed Euclidean unit disk.
 ---
 
 ::: {.problem}
@@ -19,4 +36,121 @@ $$
 $$
 
 Prove that there exists a 2-dimensional linear subspace in $C [ 0 , 1 ]$ whose intersection with the unit cube is a circular disk.
+:::
+
+::: {.solution}
+Let
+$$
+u(t)\coloneqq\cos(2\pi t),
+\qquad
+v(t)\coloneqq\sin(2\pi t),
+$$
+and let
+$$
+W\coloneqq\operatorname{span}_{\RR}\{u,v\}.
+$$
+
+<1>1. The subspace $W$ has dimension $2$.
+
+::: {.proof}
+Suppose
+$$
+au+bv=0
+$$
+as a function on $[0,1]$. Evaluating at $t=0$ gives
+$$
+a=0.
+$$
+Then evaluating at $t=1/4$ gives
+$$
+b=0.
+$$
+Thus $u$ and $v$ are linearly independent.
+:::
+
+<1>2. For every $a,b\in\RR$,
+$$
+\left\|
+a\cos(2\pi t)+b\sin(2\pi t)
+\right\|_\infty
+=
+\sqrt{a^2+b^2}.
+$$
+
+::: {.proof}
+Put
+$$
+R\coloneqq\sqrt{a^2+b^2}.
+$$
+If $R=0$, the identity is immediate. Suppose $R>0$. Choose
+$\phi\in\RR$ such that
+$$
+\cos\phi=\frac aR,
+\qquad
+\sin\phi=\frac bR.
+$$
+Then
+$$
+a\cos(2\pi t)+b\sin(2\pi t)
+=
+R\cos(2\pi t-\phi).
+$$
+Therefore the absolute value is at most $R$ for every $t$. Since
+$2\pi t$ runs through a complete interval of length $2\pi$ as
+$t$ runs from $0$ to $1$, there is some $t$ for which
+$$
+\cos(2\pi t-\phi)=\pm1.
+$$
+Hence the supremum of the absolute value is exactly $R$.
+:::
+
+<1>3. The intersection of $W$ with the unit cube is
+$$
+\left\{
+au+bv:
+a^2+b^2\le1
+\right\}.
+$$
+
+::: {.proof}
+By step <1>2,
+$$
+\|au+bv\|_\infty\le1
+\iff
+\sqrt{a^2+b^2}\le1
+\iff
+a^2+b^2\le1.
+$$
+:::
+
+<1>4. Under the linear coordinates
+$$
+\RR^2\longrightarrow W,
+\qquad
+(a,b)\longmapsto au+bv,
+$$
+the section in step <1>3 is the closed Euclidean unit disk.
+
+::: {.proof}
+Step <1>1 makes the displayed map a linear isomorphism, and step <1>3
+identifies the section with
+$$
+\{(a,b)\in\RR^2:a^2+b^2\le1\},
+$$
+which is the closed circular unit disk.
+:::
+
+<1>5. Therefore there exists a $2$-dimensional linear subspace of
+$C[0,1]$ whose intersection with the unit cube is a circular disk.
+
+::: {.proof}
+The subspace $W$ constructed above has dimension $2$ by step <1>1 and
+has the required section by step <1>4.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required existence statement.
+:::
 :::

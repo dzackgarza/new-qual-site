@@ -23,15 +23,15 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space.
 Suppose it is sequentially compact (i.e., any sequence has a convergent subsequence).
 Prove that it is countably compact (i.e., any countable open cover of $X$ has a finite subcover).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Assume a countable open cover has no finite subcover.
-::: proof
+::: {.proof}
 Let
 \[
 X=\bigcup_{n=1}^\infty U_n
@@ -43,7 +43,7 @@ x_n\in X\setminus\bigcup_{j=1}^n U_j.
 :::
 
 <1>2. Use sequential compactness.
-::: proof
+::: {.proof}
 By sequential compactness, some subsequence $(x_{n_k})$ converges to a point $x\in X$. Since the $U_j$ cover $X$, choose $m$ with
 \[
 x\in U_m.

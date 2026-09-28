@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that if $M$ is a compact orientable manifold with boundary $\partial M$, then there does not exist a retraction $r : M \to \partial M$.
+:::
 
 ::: {.solution}
 <1>1. Let $i:\partial M\hookrightarrow M$ be the inclusion and let $n=\dim M$.

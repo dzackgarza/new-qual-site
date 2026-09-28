@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that homology groups $H_n^{lf}(X; G)$ can be defined using locally finite chains, which are formal sums $\sum_\sigma g_\sigma \sigma$ of singular simplices $\sigma: \Delta^n \to X$ with coefficients $g_\sigma \in G$, such that each $x \in X$ has a neighborhood meeting the images of only finitely many $\sigma$'s with $g_\sigma \neq 0$.
 Develop this version of homology far enough to show that for a finite-dimensional locally compact CW complex $X$, $H_n^{lf}(X; G)$ can be computed using infinite cellular chains $\sum_\alpha g_\alpha e_\alpha^n$.
+:::
 
 ::: {.solution}
 A locally finite singular $n$-chain is a formal sum

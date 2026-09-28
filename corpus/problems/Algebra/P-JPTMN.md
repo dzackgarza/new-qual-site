@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that the center of the symmetric group $S_n$ is trivial for all $n \ge 3$:
 $$Z(S_n) = \{e\} \quad \text{for all } n \ge 3.$$
 :::
 
-::: solution
+::: {.solution}
 Let $\sigma\in Z(S_n)$ with $n\ge3$. Suppose $\sigma\ne1$. Then for some $i$,
 \[
 \sigma(i)=j\ne i.

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If $A$ and $B$ are normal in $G$, and $G/A$ and $G/B$ are abelian, show that $G/(A \cap B)$ is also abelian.
 :::
 

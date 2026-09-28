@@ -24,7 +24,7 @@ audit:
 Show that an entire doubly periodic function is constant.
 :::
 
-::: solution
+::: {.solution}
 Let $\omega_1,\omega_2$ be two real-linearly independent periods of the entire function $f$. Consider the closed fundamental parallelogram
 $$
 P=\{t_1\omega_1+t_2\omega_2:0\le t_1,t_2\le1\}.

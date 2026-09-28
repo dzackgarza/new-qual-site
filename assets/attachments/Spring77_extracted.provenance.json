@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring77.pdf",
+  "source_pdf_sha256": "af6fa56ea334dadd777dcbf0a1eb663616c7224ca692660cb212d3759b49be23",
+  "extracted_markdown": "assets/attachments/Spring77_extracted.md",
+  "extracted_markdown_sha256": "9a1ee1ad67c7d4d07e25ae2df0e5e20f52cd13375e52bd714b1e3db0d320f22d",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring77.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring77.md",
+  "old_unknown_provenance_sha256": "9a1ee1ad67c7d4d07e25ae2df0e5e20f52cd13375e52bd714b1e3db0d320f22d",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1977, containing Problems 1 through 20 in source order; the retained PDF omits the institution name, while repository source lineage supplies the Berkeley attribution.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1977 collection represents all 20 source positions in order with 20 source-local cards. Problem 3 remains mathematically complete without its missing illustration because the regular-polygon construction and chord lengths are specified textually. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

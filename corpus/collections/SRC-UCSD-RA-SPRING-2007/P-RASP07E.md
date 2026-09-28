@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove that $L^2(X, \mu)$ is complete.
 This is stated and proved in Folland, but you are being asked to give a proof here.
 For this, you may use without proof the following: A normed vector space $X$ is complete if and only if every absolutely convergent series in $X$ converges.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Start with an absolutely convergent series in $L^2$.
-::: proof
+::: {.proof}
 Suppose
 \[
 \sum_{n=1}^\infty \|f_n\|_2<\infty.
@@ -55,7 +55,7 @@ for every $N$.
 :::
 
 <1>2. Show that the series converges absolutely almost everywhere.
-::: proof
+::: {.proof}
 The sequence $(G_N)$ is increasing, so
 \[
 G_N^2\uparrow G^2,
@@ -80,7 +80,7 @@ on that full-measure set, and define $f$ arbitrarily on the null exceptional set
 :::
 
 <1>3. Prove convergence in the $L^2$ norm.
-::: proof
+::: {.proof}
 For $N<M$,
 \[
 \left\|\sum_{n=N+1}^M f_n\right\|_2

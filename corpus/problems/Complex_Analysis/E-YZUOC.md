@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 a.
 Let $F$ be an analytic function inside and on a simple closed curve $C$, except for a pole of order $m\geq 1$ at $z=a$ inside $C$.
 Prove that
@@ -27,7 +27,7 @@ Evaluate $$\oint_{C}\frac{e^{\tau}}{(\tau^2+\pi^2)^2}d\tau$$
 where $C$ is the circle $|z|=4$.
 :::
 
-::: solution
+::: {.solution}
 Part (a) is missing the standard factor $1/(m-1)!$ and is false as
 printed when $m>2$. The correct formula is
 \[

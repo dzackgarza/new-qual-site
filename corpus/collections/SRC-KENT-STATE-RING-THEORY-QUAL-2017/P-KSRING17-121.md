@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-121
 kind: problem
-title: Kent State ring-theory qualifying problem 121
+title: Local rings are those whose non-units form an ideal
 classification:
   areas: [algebra]
   topics: []

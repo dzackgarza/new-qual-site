@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-1
 kind: problem
-title: Hatcher Section 3.2 Exercise 1
+title: Cup product structure on closed orientable surfaces
 classification:
   areas:
   - topology
@@ -23,9 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
-# E-HAT-3.2-1
-
+::: {.problem}
 Assuming as known the cup product structure on the torus $S^1 \times S^1$, compute the cup product structure in $H^*(M_g)$ for $M_g$ the closed orientable surface of genus $g$ by using the quotient map from $M_g$ to a wedge sum of $g$ tori.
+:::
 
 ::: {.solution}
 Choose the standard symplectic basis

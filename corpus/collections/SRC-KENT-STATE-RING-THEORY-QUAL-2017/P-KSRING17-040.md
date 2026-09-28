@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-040
 kind: problem
-title: Kent State ring-theory qualifying problem 40
+title: An ideal is prime if and only if the quotient is an integral domain
 classification:
   areas: [algebra]
   topics: []

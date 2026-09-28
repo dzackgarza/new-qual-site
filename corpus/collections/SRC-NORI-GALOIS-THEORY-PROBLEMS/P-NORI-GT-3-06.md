@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-06
 kind: problem
-title: Nori Galois theory problem 3.6
+title: Image of $x\mapsto x-x^p$ on $\mathbb F_q$
 classification:
   areas: [algebra]
   topics: []

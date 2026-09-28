@@ -38,7 +38,7 @@ These properties tell us that the correspondence we have constructed is what is 
 ::: {.solution}
 Let \(i_X:X\hookrightarrow\beta X\) denote the canonical embedding.
 
-(i) Both \(eta(\mathsf l_X)\) and \(\mathsf l_{\beta X}\) are continuous maps \(eta X\to\beta X\) whose restriction to the dense subspace \(X\) is \(i_X\). By uniqueness in the Stone--Čech extension property,
+(i) Both \(\beta(\mathsf l_X)\) and \(\mathsf l_{\beta X}\) are continuous maps \(\beta X\to\beta X\) whose restriction to the dense subspace \(X\) is \(i_X\). By uniqueness in the Stone--Čech extension property,
 \[
 \beta(\mathsf l_X)=\mathsf l_{\beta X}.
 \]
@@ -53,9 +53,9 @@ are continuous. For \(x\in X\),
  =\beta(g)(i_Y(f(x)))
  =i_Z(g(f(x))),
 \]
-which is also the value of \(eta(g\circ f)\) at \(i_X(x)\). Since \(X\) is dense in \(eta X\) and \(eta Z\) is Hausdorff, two continuous maps \(eta X\to\beta Z\) agreeing on \(X\) agree everywhere. Therefore
+which is also the value of \(\beta(g\circ f)\) at \(i_X(x)\). Since \(X\) is dense in \(\beta X\) and \(\beta Z\) is Hausdorff, two continuous maps \(\beta X\to\beta Z\) agreeing on \(X\) agree everywhere. Therefore
 \[
 \beta(g\circ f)=\beta(g)\circ\beta(f).
 \]
-Thus \(eta\) preserves identities and composition, so it is a functor.
+Thus \(\beta\) preserves identities and composition, so it is a functor.
 :::

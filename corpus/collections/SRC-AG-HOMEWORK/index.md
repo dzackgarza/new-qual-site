@@ -27,12 +27,12 @@ source:
       comment: Hartshorne II.2.1
     - id: P-AGXHWREDUCED
       comment: Hartshorne II.2.3
-    - id: P-AGXHWSPECZTERM
+    - id: P-AGH225SPECZ
       comment: Hartshorne II.2.5
-    - id: P-AGXHWSPECFIELD
+    - id: P-AGH227SPECFIELD
       comment: Hartshorne II.2.7
   date:
     kind: unknown
 ---
 
-A homework sheet on the opening sections of Hartshorne chapter II: sheaves, their stalks and supports, and the first properties of affine schemes.
+A homework sheet of exercises from Chapter II of Hartshorne's *Algebraic Geometry*: sheaves, their stalks and supports, and the first properties of affine schemes.

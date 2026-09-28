@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-GYVNQ
 kind: theorem
-title: Wedderburn
+title: Wedderburn's little theorem
+slogan: 'Finite division rings are fields.'
 classification:
   areas:
   - algebra
@@ -15,5 +16,5 @@ review: draft
 ---
 
 ::: {.theorem}
-Every finite division ring is a field, i.e. finite division rings must be commutative.
+Every finite [[D-7O2CH|division ring]] is commutative, and hence a [[D-UI6CU|field]].
 :::

@@ -31,6 +31,6 @@ source:
     year: 2015
 ---
 
-::: remark
-Exam #1 repeats the compact-product theorem from Fall 2013 #1 and reuses [[P-8TF27]].
+::: {.remark}
+Problem 1 is the same problem as Fall 2013 Problem 1.
 :::

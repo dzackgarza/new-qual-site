@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Can we solve general quadratic equations by radicals?
 And what about cubics and so on?
 Why can't you solve 5th degree equations by radicals?

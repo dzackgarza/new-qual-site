@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $S\subseteq A$ is multiplicative and $M\in \mods{A}$, describe a natural isomorphism
 \[
 \eta: (S^{-1}A)\tensor_A M \to S^{-1}M
@@ -22,7 +22,7 @@ If $S\subseteq A$ is multiplicative and $M\in \mods{A}$, describe a natural isom
 of both $S^{-1}A\dash$modules and $A\dash$modules.
 :::
 
-::: solution
+::: {.solution}
 Recall the definition
 \[
 S^{-1}A &\da \ts{ {a\over s} \st a\in A,\, s\in S} / \sim \\
@@ -72,4 +72,13 @@ The universal property: in $\mods{A}$, $M\to S^{-1}M$ is initial among all morph
 So this lifts to a map out of the tensor product.
 
 - $S^{-1}A\dash$bilinear: ?
+:::
+
+::: {.remark}
+Erratum: the argument above is unfinished and uses undefined notation.
+
+- A module has no units. The universal property of $M \to S^{-1}M$ is initial among $A$-module maps $\alpha: M\to N$ into modules $N$ on which multiplication by every $s \in S$ is bijective.
+- The map $\psi$ in the bilinearity computation is never defined, and "$\psi(a)$ is a ring morphism" has no meaning here. The $A$-balance of $\eta$ is $\eta\qty{\frac{ra}{s}, m} = \frac{ram}{s} = \eta\qty{\frac{a}{s}, rm}$ by the module axioms.
+- Well-definedness, left as "?", holds because $t(s'a - sa') = 0$ implies $t(s'am - sa'm) = 0$, so $\frac{am}{s} = \frac{a'm}{s'}$.
+- The solution never shows that $\eta$ is an isomorphism. The map $\frac{m}{s} \mapsto \frac{1}{s}\tensor m$ is a well-defined inverse, and $S^{-1}A$-linearity, also left as "?", is checked on elementary tensors.
 :::

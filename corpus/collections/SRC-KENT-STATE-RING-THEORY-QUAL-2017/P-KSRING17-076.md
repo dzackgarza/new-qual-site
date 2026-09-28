@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-076
 kind: problem
-title: Kent State ring-theory qualifying problem 76
+title: Transitivity of integral extensions
 classification:
   areas: [algebra]
   topics: []

@@ -21,7 +21,7 @@ Let $\alpha$ be the complex number $-2+2\sqrt{3}i$.
 Express $\alpha^3$ and the two square roots of $\alpha$ in the standard form $a+bi$.
 :::
 
-::: solution
+::: {.solution}
 The number
 \[
 \alpha=-2+2\sqrt3\,i

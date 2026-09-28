@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.2-2
 kind: problem
-title: Hatcher Section 3.2 Exercise 2
+title: Cup products vanish on unions of contractible open sets
 classification:
   areas:
   - topology
@@ -23,11 +23,11 @@ audit:
   date: 2026-09-09
 ---
 
-# E-HAT-3.2-2
-
+::: {.problem}
 Using the cup product $H^k(X, A; R) \times H^\ell(X, B; R) \to H^{k+\ell}(X, A \cup B; R)$, show that if $X$ is the union of contractible open subsets $A$ and $B$, then all cup products of positive-dimensional classes in $H^*(X; R)$ are zero.
 This applies in particular if $X$ is a suspension.
 Generalize to the situation that $X$ is the union of $n$ contractible open subsets, to show that all $n$-fold cup products of positive-dimensional classes are zero.
+:::
 
 ::: {.solution}
 Suppose first that $X=A\cup B$ with $A,B$ contractible and let $x\in H^p(X;R)$, $y\in H^q(X;R)$ with $p,q>0$.

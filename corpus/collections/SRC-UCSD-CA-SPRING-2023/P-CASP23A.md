@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A(z) = \sum_{n=0}^\infty a_n z^n$ be a power series with radius of convergence equal to one.
 
 (a) Give an example where $A(z)$ diverges at each point of $\mathbb{T}$, and explain why.
@@ -29,13 +29,13 @@ Let $A(z) = \sum_{n=0}^\infty a_n z^n$ be a power series with radius of converge
 (e) Verify that $A(z) = \sum_{n=0}^\infty z^{n!}$ has radius of convergence one, and that each point of $\mathbb{T}$ is a singularity of $A(z)$.
 :::
 
-::: remark
+::: {.remark}
 The official Spring 2023 UCSD exam has $A(z)=\sum_{n=0}^\infty z^{n!}$ in
 part (e). An earlier transcription of this card incorrectly read
 $\sum n!z^n$, which has radius of convergence $0$.
 :::
 
-::: solution
+::: {.solution}
 (a) Take
 \[
 A(z)=\sum_{n=0}^\infty z^n.

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{R} \to \mathbb{R}$ be a $2\pi$-periodic function, i.e. $f(x) = f(x + 2\pi)$, such that there exists $C > 0$ (possibly large) and $\epsilon > 0$ (possibly small) with
 $$
 |f(x) - f(y)| \leq C|x - y|^{1/2 + \epsilon}.
@@ -34,9 +34,9 @@ Hint: Half credit will be given for the special case $\epsilon = 1/2$, which can
 For the general case try computing $\int_0^{2\pi} |f(x+h) - f(x)|^2\,dx$ two different ways.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Estimate the $L^2$ norm of a translation difference.
-::: proof
+::: {.proof}
 Set
 \[
 \alpha:=\frac12+\varepsilon>\frac12.
@@ -53,7 +53,7 @@ Therefore
 :::
 
 <1>2. Express the same quantity using Fourier coefficients.
-::: proof
+::: {.proof}
 Let
 \[
 c_n:=\frac1{2\pi}\int_0^{2\pi}f(x)e^{-inx}\,dx.
@@ -79,7 +79,7 @@ Combining this with Step 1 gives
 :::
 
 <1>3. Obtain a dyadic $\ell^2$ estimate for the coefficients.
-::: proof
+::: {.proof}
 Fix an integer $N\ge1$ and take
 \[
 h=\frac1N.
@@ -105,7 +105,7 @@ for a constant $C_1$ independent of $N$.
 :::
 
 <1>4. Upgrade the dyadic estimate to absolute summability.
-::: proof
+::: {.proof}
 By Cauchy--Schwarz,
 \[
 \begin{aligned}
@@ -132,7 +132,7 @@ we obtain
 :::
 
 <1>5. Conclude uniform convergence to $f$.
-::: proof
+::: {.proof}
 Absolute summability implies that
 \[
 \sum_{n\in\mathbb Z}c_ne^{inx}

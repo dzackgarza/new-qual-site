@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the Galois group of $p(x) = x^7 - 3$ over $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \alpha=3^{1/7},\qquad \zeta=\zeta_7.

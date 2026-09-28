@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given a compact, oriented, boundaryless $n$-manifold $M^n$, show that there always exists a continuous map $f : M^n \to S^n$, such that $f_*([M]) = [S^n]$.
 :::
 

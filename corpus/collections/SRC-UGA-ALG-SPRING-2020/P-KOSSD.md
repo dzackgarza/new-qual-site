@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $N$ be a normal subgroup of a finite group $G$ such that the order of $N$ and the index of $N$ in $G$ are relatively prime ($\gcd(|N|, [G : N]) = 1$).
 
 Prove that $N$ is the unique subgroup of $G$ of order $|N|$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $N \trianglelefteq G$ has $\gcd(|N|, [G : N]) = 1$, then any subgroup $K \le G$ with $|K| = |N|$ satisfies $K = N$, using Bézout's identity and orders in the quotient group $G/N$.
 
 <1>1. Setting up notation and Bézout's identity:

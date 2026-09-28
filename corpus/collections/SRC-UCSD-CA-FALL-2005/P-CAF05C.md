@@ -12,18 +12,18 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that if $f$ is a non-constant analytic function on a bounded region $G \subset \mathbb{C}$ and is continuous on $\overline{G}$, then either $f$ has a zero in $G$ or $|f(z)|$ reaches its minimum value on $\partial G$.
 :::
 
-::: remark
+::: {.remark}
 The Fall 2005 source says only that $G$ is a bounded open set. Connectedness is
 necessary: on a disconnected open set, a zero-free holomorphic function may be
 constant with smaller modulus on one component and nonconstant on another. The
 statement above makes the intended region hypothesis explicit.
 :::
 
-::: solution
+::: {.solution}
 Assume that $f$ has no zeros in $G$. Then
 \[
 g=\frac1f

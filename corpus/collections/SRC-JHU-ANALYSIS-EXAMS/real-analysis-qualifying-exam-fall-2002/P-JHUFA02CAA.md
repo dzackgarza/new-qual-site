@@ -25,6 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 1. Let $\psi ( x ) = x$ on $[ 0 , \frac { 1 } { 2 } ] \ , \ \psi ( x ) = 1 - x$ on $[ \textstyle { \frac { 1 } { 2 } } , 1 ]$ and extended periodically of period 1. Define $\begin{array} { r } { f ( x ) = \sum _ { n = 0 } ^ { \infty } 2 ^ { - n } \psi ( 8 ^ { n } x ) } \end{array}$
 
 i. Show that $f ( x )$ is continuous everywhere.
@@ -43,6 +44,7 @@ where $h = \pm 8 ^ { - k }$ and the sign is chosen so that x and $x + h$ lie on 
 a. $\begin{array} { r } { \Delta _ { h } f ( x ) = \sum _ { n = 0 } ^ { k - 1 } 2 ^ { - n } \Delta _ { h } \psi ( 8 ^ { n } x ) } \end{array}$
 
 b. $\begin{array} { r } { | \Delta _ { h } f ( x ) | \geq 4 ^ { k - 1 } - \sum _ { n = 0 } ^ { k - 2 } 4 ^ { n } } \end{array}$
+:::
 
 ::: {.solution}
 <1>1. The series converges uniformly, hence defines a continuous function.

@@ -17,7 +17,7 @@ relations:
   target: FE-CRVQUAD
 review: draft
 prompts:
-- Classify the curves of degree at most $5$ in $\PP^3$.
+- Classify the curves of degree at most $7$ in $\PP^3$.
 - Which pairs $(d,g)$ occur for curves in $\PP^3$?
 ---
 
@@ -35,6 +35,17 @@ By degree, for smooth curves in $\PP^3$:
 - $d=5$: the plane quintic with $g=6$, and curves with nonspecial hyperplane section of genus $0, 1, 2$.
 
 - $d=6$: the plane sextic with $g=10$; nonspecial curves of genus $0,1,2,3$; and the canonical curve of genus $4$, the complete intersection of a quadric and a cubic.
+
+- $d=7$: the plane septic with $g=15$; nonspecial curves of every genus $g \leq 4$; curves of genus $5$; and curves of genus $6$, the maximum allowed by Castelnuovo's bound, which all lie on a quadric, for instance the curves of type $(3,4)$ on a smooth quadric.
+:::
+
+::: {.example title="Degree $7$ and genus $5$"}
+Let $X$ have genus $5$ and $P \in X$.
+Since $\abs{K}$ is base-point free, $D = K - P$ has degree $7$ and $h^0(D) = 4$.
+By the very-ampleness criterion and Serre duality, $D$ is very ample exactly when $h^0(P + Q + R) = 1$ for all $Q, R \in X$.
+If $X$ has no $g^1_3$ this holds for every $P$, and $\abs{K - P}$ embeds $X$ in $\PP^3$ as a curve of degree $7$; curves of genus $5$ without a $g^1_3$ exist, so $(d, g) = (7, 5)$ occurs.
+The hyperplane section $K - P$ is special, in accordance with $g \geq \tfrac{1}{2} d + 1$.
+[@Har10a]
 :::
 
 ::: {.proposition}

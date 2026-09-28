@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-072
 kind: problem
-title: Kent State ring-theory qualifying problem 72
+title: Non-units form an ideal when $a$ or $1-a$ is always invertible
 classification:
   areas: [algebra]
   topics: []

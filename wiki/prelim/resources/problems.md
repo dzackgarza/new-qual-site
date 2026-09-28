@@ -7,9 +7,9 @@ order: 20
 
 - [[attachments/Big_List_of_Math_Problems.pdf|Mathematical Trivium problem collection]]
 
-- [Duke Analysis and Linear Algebra Quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
+- [Duke analysis and linear algebra quals](https://services.math.duke.edu/graduate/wqual/oldquals.html)
 
-- [UCLA Practice GRE Problems (No Solutions)](https://www.math.ucla.edu/~bonsoon/summer2020/files/problems.pdf)
+- [UCLA practice GRE problems, without solutions](https://www.math.ucla.edu/~bonsoon/summer2020/files/problems.pdf)
 
 - [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 

@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Prove that the set of diagonalizable $N \times N$ matrices over $\mathbb{C}$ is **dense** in $M_N(\mathbb{C})$ in the standard Euclidean/metric topology.
 (2) Prove that over any algebraically closed field $K$, the set of diagonalizable matrices is **Zariski dense** in $M_N(K) \cong \mathbb{A}^{N^2}$.
 :::
 
-::: solution
+::: {.solution}
 Let $A\in M_N(K)$. If the characteristic polynomial $\chi_A(t)$ has $N$ distinct roots, then $A$ is diagonalizable. The discriminant
 \[
 \Delta(A)=\operatorname{Disc}(\chi_A)

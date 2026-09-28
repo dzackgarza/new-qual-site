@@ -19,7 +19,7 @@ audit:
   note: Repaired a statement or hint transcription defect before solving.
 ---
 
-::: exercise
+::: {.exercise}
 12. Here we give another identity involving $\theta ^ { 4 }$ , which is equivalent to the foursquares theorem.
 
 (a) Show that for $| q | < 1$
@@ -45,7 +45,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For \(|q|<1\), all series below converge absolutely. Using
 \[
 \frac{x}{(1-x)^2}=\sum_{k=1}^\infty kx^k,

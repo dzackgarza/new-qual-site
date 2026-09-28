@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that
 \[
 \max_{\abs z = 1} \abs{a_0 + a_1 z + \cdots + a_{n-1}z^{n-1} + z^n} \geq 1
@@ -24,7 +24,7 @@ Prove that
 
 :::
 
-:::{.solution}
+::: {.solution}
 Rouché's theorem: if $f,g$ are holomorphic on a domain containing a simple closed contour $\gamma$ and $\abs{g(z)} < \abs{f(z)}$ for all $z\in\gamma$, then $f$ and $f+g$ have the same number of zeros (counting multiplicity) inside $\gamma$.
 
 Write $p(z) \da a_0 + \cdots + z^n$.

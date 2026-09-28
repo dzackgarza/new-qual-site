@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G_N(z) = \sum_{n=0}^{N} z^n$ and $G(z) = (1-z)^{-1}$.
 
 (a) Carefully prove that $G_N \to G$ as $N \to \infty$, uniformly on compact subsets of $\mathbb{D}$.
@@ -20,7 +20,7 @@ Let $G_N(z) = \sum_{n=0}^{N} z^n$ and $G(z) = (1-z)^{-1}$.
 (b) What is the power series expansion of $G(z)$ at $z = 2023$, and what is its radius of convergence?
 :::
 
-::: solution
+::: {.solution}
 (a) For $z\ne1$,
 \[
 G_N(z)=\frac{1-z^{N+1}}{1-z},

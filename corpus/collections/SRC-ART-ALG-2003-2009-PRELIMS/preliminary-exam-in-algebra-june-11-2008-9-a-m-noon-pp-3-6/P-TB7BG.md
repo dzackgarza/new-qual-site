@@ -41,7 +41,7 @@ smaller dimensions. Let $r\geq1$ be the least integer with $T^r=0$.
 <1>1. There is an invariant subspace $U$ with basis
 $v,Tv,\ldots,T^{r-1}v$.
 
-::: proof
+::: {.proof}
 Minimality of $r$ gives $v\in V$ with $T^{r-1}v\ne0$.
 If $\sum_{j=0}^{r-1}a_jT^jv=0$ is a nonzero linear relation, let $k$
 be the least index with $a_k\ne0$. Applying $T^{r-1-k}$ gives
@@ -52,7 +52,7 @@ span $U$ is invariant because $T(T^{r-1}v)=0$.
 
 <1>2. The subspace $U$ has a $T$-invariant complement.
 
-::: proof
+::: {.proof}
 Extend the chain in step <1>1 to a basis of $V$. Define a linear
 functional $\ell:V\to\mathbb C$ to be $1$ on $T^{r-1}v$ and $0$
 on every other vector of this basis. Define
@@ -81,7 +81,7 @@ Indeed, the second term lies in $\ker\pi$ and $U\cap\ker\pi=0$.
 
 <1>3. Combining bases of $U$ and $W$ produces the asserted blocks.
 
-::: proof
+::: {.proof}
 On the ordered basis $v,Tv,\ldots,T^{r-1}v$ of $U$, the matrix of
 $T|_U$ has ones immediately below the diagonal and all other entries
 zero. The restriction $T|_W$ is nilpotent and $\dim W=n-r<n$.
@@ -93,7 +93,7 @@ exactly that block diagonal matrix.
 :::
 :::
 
-::: remark
+::: {.remark}
 An arbitrary equality $N^a=0$ only implies that the minimal polynomial
 divides $x^a$. It does not imply equality: for a nonempty zero matrix,
 $N^2=0$ but the minimal polynomial is $x$. Also,

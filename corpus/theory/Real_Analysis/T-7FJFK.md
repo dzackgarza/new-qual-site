@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: T-7FJFK
 kind: theorem
-title: 'Baire category theorem: $\RR$ cannot be written as a countable union of nowhere
-  dense sets'
+title: $\RR$ is not a countable union of nowhere dense sets
+slogan: '$\RR$ is Baire, so countably many nowhere dense sets cannot cover it.'
 classification:
   areas:
   - real-analysis
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.theorem}
-$\RR$ is a **Baire space**, i.e. $\RR$ can not be written as a countable union of nowhere dense sets.
+$\RR$ is a [[D-VFNTY|Baire space]].
+In particular, $\RR$ is not a countable union of [[D-2MJRE|nowhere dense]] subsets of $\RR$.
 :::

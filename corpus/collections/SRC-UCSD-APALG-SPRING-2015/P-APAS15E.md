@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be an algebraically closed field, let $K^n$ be affine $n$-space over $K$, and consider the polynomial ring $K[x_1, \ldots, x_n]$.
 
 (1) Suppose that $I \subseteq K[x_1, \ldots, x_n]$ is an ideal such that $V(I) \subseteq K^n$ is a finite set.

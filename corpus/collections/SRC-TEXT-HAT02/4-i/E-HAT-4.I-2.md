@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Using the Künneth formula, show that $\Sigma K(\mathbb{Z}_m \times \mathbb{Z}_n, 1) \simeq \Sigma K(\mathbb{Z}_m, 1) \vee \Sigma K(\mathbb{Z}_n, 1)$ if $m$ and $n$ are relatively prime.
+:::
 
 ::: {.solution}
 <1>1. Suspension of a Cartesian product:

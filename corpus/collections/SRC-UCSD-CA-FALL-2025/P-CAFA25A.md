@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many zeros does the polynomial equation $z^4 - 6z + 3 = 0$ have in the annulus $G = \{z \in \mathbb{C} : 1 < |z| < 2\}$?
 Please justify your answer.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 p(z)=z^4-6z+3.

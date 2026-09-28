@@ -26,9 +26,11 @@ audit:
   note: Complete Mayer--Vietoris/Wang-sequence calculation checked.
 ---
 
+::: {.problem}
 (a) Use the Mayer–Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $S^1 \times \{x_0\}$ in the torus.
 
 (b) Do the same for the space obtained by attaching a Möbius band to $\mathbb{RP}^2$ via a homeomorphism of its boundary circle to the standard $\mathbb{RP}^1 \subset \mathbb{RP}^2$.
+:::
 
 ::: {.solution}
 For each attachment, use Mayer--Vietoris with the original space and the Möbius band, whose intersection is the common attaching circle. The Möbius band deformation retracts onto its core circle, and its boundary circle represents twice the core generator in $H_1$.

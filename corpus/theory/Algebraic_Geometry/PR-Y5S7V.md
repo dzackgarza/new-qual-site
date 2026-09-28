@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-Y5S7V
 kind: proposition
 title: The degree of a divisor on a projective curve
+slogan: 'On a smooth projective curve, zeros and poles balance: every principal divisor has degree zero.'
 classification:
   areas:
   - algebraic-geometry
@@ -29,7 +30,7 @@ Degree therefore descends to a homomorphism $\Pic(X) \to \ZZ$, and $\Pic^0(X)$ i
 :::
 
 ::: {.remark}
-The proof is worth knowing in one sentence, because it explains why projectivity is the hypothesis: a nonconstant $f$ is a finite morphism $X \to \PP^1$, and $\div(f) = f^*(0) - f^*(\infty)$, where both fibres have $\deg f$ points counted with multiplicity.
+Projectivity enters because a nonconstant $f$ defines a finite morphism $X\to\PP^1$, and $\div(f)=f^*(0)-f^*(\infty)$, where both fibres have degree $\deg f$ counted with multiplicity.
 Zeros and poles balance because the map has a well-defined degree, and the map has one because $X$ is projective.
 
 On $\AA^1$ the statement is false — $\div(x) = [0]$ has degree one — and this is the cleanest illustration that divisor theory is a theory about complete curves.

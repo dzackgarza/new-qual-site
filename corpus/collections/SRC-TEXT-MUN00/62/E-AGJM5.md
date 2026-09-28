@@ -23,7 +23,7 @@ Let $A$ be a closed subspace of $X$; let $f: A \to Y$ be a continuous map, where
 If $f$ is homotopic to a map that is extendable to a continuous map $h: X \to Y$, then $f$ itself is extendable to a continuous map $g: X \to Y$, such that $g \simeq h$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Homotopy Extension Property for $(X, A)$ into an open set $Y \subseteq \mathbb{R}^n$ under the hypothesis that $X \times I$ is normal.
 
 <1>1. Setup of the cylinder extension problem:

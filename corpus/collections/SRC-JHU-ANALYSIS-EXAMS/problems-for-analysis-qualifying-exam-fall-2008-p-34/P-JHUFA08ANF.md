@@ -17,6 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 6) (10 points) Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function. Prove that if there exists some real number C and some positive integer k so that
 
 $$
@@ -24,6 +25,7 @@ $$
 $$
 
 for all z with $| z | > 1$ , then f is a polynomial in z of degree at most $k .$
+:::
 
 ::: {.solution}
 <1>1. Power series expansion of the entire function:

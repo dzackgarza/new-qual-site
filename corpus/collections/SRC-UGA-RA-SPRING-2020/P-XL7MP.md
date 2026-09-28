@@ -25,7 +25,7 @@ audit:
   note: Reviewed the L2-to-L1 and ell1-to-ell2 inclusions, M-test uniform convergence, coefficient identification, and Fejer uniqueness argument; the proof is correct.
 ---
 
-::: problem
+::: {.problem}
 (a) Show that
 $$
 L^2([0, 1]) \subseteq L^1([0, 1]) \quad \text{and} \quad \ell^1(\mathbb{Z}) \subseteq \ell^2(\mathbb{Z}).
@@ -42,7 +42,7 @@ $$
 converge uniformly on $[0, 1]$ to a continuous function $g$ such that $g(x) = f(x)$ almost everywhere.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove space inclusions in (a) via Hölder's inequality and norm inequalities, and prove uniform convergence to an almost-everywhere representative in (b) via the Weierstrass $M$-test and Fourier uniqueness.
 
 <1>1. Part (a): $L^2([0, 1]) \subseteq L^1([0, 1])$.

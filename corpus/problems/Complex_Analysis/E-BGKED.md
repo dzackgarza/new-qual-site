@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $f = u+iv$ with $u, v\in C^1(\RR)$ satisfying the Cauchy-Riemann equations on $\Omega$, then $f$ is holomorphic on $\Omega$ with
 \[
 f'(z) = \dd{f}{x} = {1\over i} \dd{f}{y} = {1\over 2}\qty{u_x + iv_x}
@@ -21,7 +21,7 @@ f'(z) = \dd{f}{x} = {1\over i} \dd{f}{y} = {1\over 2}\qty{u_x + iv_x}
 Conversely, show that if $f$ is holomorphic, then $f$ satisfies the Cauchy-Riemann equations.
 :::
 
-:::{.solution}
+::: {.solution}
 **Goal:** Show that holomorphic implies Cauchy-Riemann, and conversely that Cauchy-Riemann (with $C^1$ hypothesis) implies holomorphic.
 
 **Direction 1: Holomorphic $\implies$ CR.**

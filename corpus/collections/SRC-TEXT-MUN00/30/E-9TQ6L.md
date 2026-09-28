@@ -23,7 +23,7 @@ Let $X$ have a countable basis; let $A$ be an uncountable subset of $X$.
 Show that uncountably many points of $A$ are limit points of $A$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $X$ is a second-countable topological space and $A \subseteq X$ is uncountable, then uncountably many points of $A$ are limit points of $A$ (i.e. $A \cap A'$ is uncountable).
 
 <1>1. Identification of non-limit points (isolated points of $A$):

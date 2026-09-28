@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many isomorphism classes of groups of order 45 are there? Describe a representative from each class with full justification.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Classify all groups of order $45 = 3^2 \cdot 5$ up to isomorphism using Sylow's Theorems.
 
 <1>1. Sylow subgroup analysis:

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D4-3-4
 kind: theorem
-title: 'Theorem 3.4: Intermediate Value Theorem'
+title: Intermediate value theorem
+slogan: 'A continuous real function on an interval takes every value between its endpoint values.'
 classification:
   areas:
   - real-analysis
@@ -13,5 +14,7 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f:[a,b]\subset\mathbb R\to\mathbb R$ is continuous and $f(a)<f(b)$, then for any real number $x$ such that $f(a)<x<f(b)$ there exists some $c\in(a,b)$ such that $f(c)=x$.
+Let $a<b$ and let $f\colon[a,b]\to\RR$ be continuous with $f(a)<f(b)$.
+For every $y\in\RR$ with $f(a)<y<f(b)$ there exists $c\in(a,b)$ such that $f(c)=y$.
+[@Rud76].
 :::

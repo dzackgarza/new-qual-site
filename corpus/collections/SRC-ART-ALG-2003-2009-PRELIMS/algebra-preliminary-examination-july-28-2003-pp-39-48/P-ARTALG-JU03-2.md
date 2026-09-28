@@ -24,19 +24,19 @@ audit:
   note: "Checked the explicit dihedral generators, disjoint-support direct product, block-swap conjugation, order 128, and transport to an arbitrary Sylow subgroup."
 ---
 
-::: problem
+::: {.problem}
 Let $D_8$ be the dihedral group with 8 elements.
 Show that every Sylow 2-subgroup of $S_8$ contains a normal subgroup that is isomorphic to $D_8 \times D_8$.
 :::
 
-::: solution
+::: {.solution}
 We first construct one Sylow subgroup with the required normal subgroup.
 All permutations below act on $\{1,\ldots,8\}$ and fix unlisted points.
 
 <1>1. The subgroup $H_1=\langle r,s\rangle$, where
 $r=(1\,2\,3\,4)$ and $s=(2\,4)$, is isomorphic to $D_8$.
 
-::: proof
+::: {.proof}
 We have $r^4=s^2=1$ and
 $$
 srs=(1\,4\,3\,2)=r^{-1}.
@@ -53,7 +53,7 @@ reflection of a square. They generate its dihedral group of order $8$.
 
 <1>2. There is a subgroup $H\cong D_8\times D_8$ of order $64$.
 
-::: proof
+::: {.proof}
 Let
 $$
 t=(1\,5)(2\,6)(3\,7)(4\,8),\qquad H_2=tH_1t^{-1}.
@@ -74,7 +74,7 @@ direct-product structure.
 
 <1>3. The group $P=\langle H,t\rangle$ is Sylow and $H\lhd P$.
 
-::: proof
+::: {.proof}
 The involution $t$ interchanges $H_1$ and $H_2$ under conjugation,
 so it normalizes their product $H$. Also $t\notin H$, because
 every element of $H$ preserves each four-point block, whereas
@@ -93,7 +93,7 @@ $|S_8|=8!$, so $P$ is a Sylow $2$-subgroup.
 
 <1>4. Every Sylow $2$-subgroup has the asserted normal subgroup.
 
-::: proof
+::: {.proof}
 Let $P'$ be any Sylow $2$-subgroup of $S_8$. Sylow conjugacy
 [@DF04] gives $g\in S_8$ with $P'=gPg^{-1}$.
 Then $H'=gHg^{-1}$ is isomorphic to $H\cong D_8\times D_8$.

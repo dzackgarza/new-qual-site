@@ -25,14 +25,14 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let functions $f_n \in C([0, 1])$ satisfy $\sup_n |f_n(x)| < \infty$ for each $x \in [0, 1]$.
 Show that there are $0 \leq a < b \leq 1$ such that $\sup_n \|f_n \chi_{(a,b)}\|_u < \infty$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Form closed pointwise-boundedness sets.
-::: proof
+::: {.proof}
 For each integer $m\ge1$, define
 \[
 E_m:=\{x\in[0,1]: |f_n(x)|\le m\text{ for every }n\}.
@@ -50,7 +50,7 @@ The pointwise boundedness hypothesis says that for every $x\in[0,1]$ there exist
 :::
 
 <1>2. Apply the Baire Category Theorem.
-::: proof
+::: {.proof}
 The compact metric space $[0,1]$ is complete. By the Baire Category Theorem, it cannot be a countable union of closed sets all having empty interior. Therefore some $E_{m_0}$ has nonempty interior relative to $[0,1]$.
 
 Choose $0\le a<b\le1$ such that

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 
 \[
 I\da \int_\RR {x\over (x^2 + 4x+13)^2}\dx
@@ -23,17 +23,17 @@ I\da \int_\RR {x\over (x^2 + 4x+13)^2}\dx
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write the integrand as $f$.
 
-:::{.claim}
+::: {.claim}
 $f\in \bigo\qty{1\over z^{3}} \subseteq \bigo\qty{1\over z^{1+\eps}}$ means that a semicircular contour will work:
 
 ![Semicircular contour](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_18-14-14.png)
 
 :::
 
-:::{.proof title="Of integrand decay"}
+::: {.proof title="Of integrand decay"}
 A quick justification: for $R>1$, if $n>k$ then $\abs{z}^n > \abs{z}^k$, so using the reverse triangle inequality,
 \[
 \abs{z\over (z^2 + 4z + 13)^2} 

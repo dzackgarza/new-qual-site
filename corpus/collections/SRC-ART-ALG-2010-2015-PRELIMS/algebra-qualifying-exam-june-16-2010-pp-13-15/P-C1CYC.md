@@ -26,16 +26,16 @@ audit:
   note: "Checked uniqueness in cyclic groups by the least positive exponent, construction of distinct order-p subgroups from two primary factors, coprime generator orders, and the trivial-group case."
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a finite abelian group of order $n$.
 Prove that $A$ is cyclic if and only if $A$ has a unique subgroup of each order $k$ such that $k$ divides $n$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A cyclic group of order $n$ has exactly one subgroup
 of order $k$ for every positive divisor $k$ of $n$.
 
-::: proof
+::: {.proof}
 Write $A=\langle g\rangle$. The element $g^{n/k}$ has
 order $k$: its $j$th power is one exactly when
 $n\mid jn/k$, equivalently $k\mid j$. Thus the subgroup
@@ -54,7 +54,7 @@ If that order is $k$, then $t=n/k$, proving uniqueness.
 <1>2. Under the uniqueness hypothesis, the primary
 decomposition of $A$ has at most one cyclic factor for each prime.
 
-::: proof
+::: {.proof}
 The structure theorem for finite abelian groups expresses
 $A$ as a product of cyclic groups of prime-power order
 [@DF04]. Suppose two factors belonging to the same prime
@@ -75,7 +75,7 @@ assumed uniqueness for the divisor $k=p$.
 
 <1>3. The group $A$ is cyclic.
 
-::: proof
+::: {.proof}
 By step <1>2 its primary decomposition has the form
 $A\cong\prod_{p\mid n}C_{p^{a_p}}$. Choose a generator
 in each factor. The resulting tuple has order equal to

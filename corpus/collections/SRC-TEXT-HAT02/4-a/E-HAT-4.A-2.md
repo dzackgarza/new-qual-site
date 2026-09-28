@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that under the map $\langle X, Y \rangle \to \operatorname{Hom}(\pi_n(X, x_0), \pi_n(Y, y_0))$, $[f] \mapsto f_*$, the action of $\pi_1(Y, y_0)$ on $\langle X, Y \rangle$ corresponds to composing with the action on $\pi_n(Y, y_0)$, that is, $(\gamma f)_* = \beta_\gamma f_*$.
 Deduce a bijection of $[X, K(\pi, 1)]$ with the set of orbits of $\operatorname{Hom}(\pi_1(X), \pi)$ under composition with inner automorphisms of $\pi$.
+:::
 
 ::: {.solution}
 <1>1. The action of $\gamma \in \pi_1(Y, y_0)$ on $[f] \in \langle X, Y \rangle$ is given by $\gamma f$, the map obtained by "dragging" $f$ along $\gamma$.

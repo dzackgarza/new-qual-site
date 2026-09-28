@@ -8,12 +8,12 @@ topics:
 
 # Integration
 
-- [[real-analysis/integration/which-convergence-theorem|Which convergence theorem?]], the four and what each costs.
+- [[real-analysis/integration/which-convergence-theorem|Which convergence theorem?]] -- the monotone, dominated, and bounded convergence theorems and Fatou's lemma, compared by hypothesis.
 
-- [[real-analysis/integration/construction|Constructing the integral]], the three-step definition.
+- [[real-analysis/integration/construction|Constructing the integral]] -- simple functions, nonnegative measurable functions, and integrable functions.
 
-- [[real-analysis/integration/the-convergence-theorems|The convergence theorems]], with Egorov and Lusin.
+- [[real-analysis/integration/the-convergence-theorems|The convergence theorems]] -- statements and proofs, with Egorov's and Lusin's theorems.
 
-- [[real-analysis/integration/l1|$L^1$]], and the functions that are not in it.
+- [[real-analysis/integration/l1|$L^1$]] -- basic properties of integrable functions and the modes of convergence.
 
-The two-variable case is [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]], and the scale of spaces is [[real-analysis/lp-spaces/index|$L^p$ spaces]].
+Integrals over products are treated in [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]], and the spaces $L^p$ in [[real-analysis/lp-spaces/index|$L^p$ spaces]].

@@ -19,7 +19,7 @@ prompts:
 ---
 
 ::: {.definition title="faithfully flat"}
-An $A$-module $N$ is **faithfully flat** if for every complex of $A$-modules
+An $A$-module $N$ is \dfn{faithfully flat} if for every complex of $A$-modules
 \[
 M' \to M \to M''
 \]

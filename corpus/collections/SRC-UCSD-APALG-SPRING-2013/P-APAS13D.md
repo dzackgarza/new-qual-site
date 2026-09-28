@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Prove that if $A\in M_n$ is positive semidefinite, then there exists a unique positive semidefinite $X$ such that $A=X^2$.
 
 (b) Let $X$ be a matrix whose columns define a basis for a subspace $\mathcal{X}\subset\mathbb{C}^n$.
@@ -22,7 +22,7 @@ Consider the matrix $\widehat{X}=X|X|^{-1}$, where $|X|$ denotes the modulus of 
 Prove that $\widehat{X}$ exists and that $\widehat{X}\widehat{X}^H$ is an orthogonal projection onto $\mathcal{X}$.
 :::
 
-::: solution
+::: {.solution}
 For part (a), since \(A\) is Hermitian positive semidefinite, the spectral theorem gives a unitary matrix \(U\) and nonnegative real numbers \(\lambda_1,\ldots,\lambda_n\) such that
 \[
 A=U\operatorname{diag}(\lambda_1,\ldots,\lambda_n)U^H.

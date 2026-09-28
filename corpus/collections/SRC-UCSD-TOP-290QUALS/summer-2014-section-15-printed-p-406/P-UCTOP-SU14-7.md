@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Suppose $f : M \to N$ is a map between two closed connected oriented $n$-manifolds which induces an isomorphism $H_*(M) \cong H_*(N)$ (that is, it is a map of degree $\pm 1$). Prove that the induced map $\pi_1(M) \to \pi_1(N)$ must be surjective.
+:::
 
 ::: {.solution}
 **Goal.** Let $f:M\to N$ have degree $\pm1$, where $M,N$ are closed connected oriented $n$-manifolds. Prove that $f_*:\pi_1(M)\to\pi_1(N)$ is surjective.

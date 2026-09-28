@@ -31,7 +31,7 @@ audit:
     distinguish all eight homeomorphism classes.
 ---
 
-::: problem
+::: {.problem}
 How many surfaces are there, up to homeomorphism, which are:
 
 - Connected,

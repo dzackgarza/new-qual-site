@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-13
 kind: problem
-title: Questions from Tie — Fall 2015, question 13
+title: Roots of $z^4-6z+3$ in $|z|<1$ and $1<|z|<2$
 classification:
   areas:
   - complex-analysis

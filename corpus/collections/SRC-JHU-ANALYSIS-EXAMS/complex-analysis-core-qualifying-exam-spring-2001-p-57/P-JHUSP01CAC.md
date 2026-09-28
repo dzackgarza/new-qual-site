@@ -17,7 +17,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Question 3. Assume that $f _ { n }$ is holomorphic in $| z | < 1$ and $| f _ { n } | \leq 1 0$ . Assume also that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } \left( 2 ^ { - j } \right)$ exists for each $j = 1 , 2 , \dots$ . Prove that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } ( z )$ exists for all z with $| z | < 1$
+:::
 
 ::: {.solution}
 <1>1. $\{f_n\}$ is uniformly bounded by $10$, hence normal (Montel).

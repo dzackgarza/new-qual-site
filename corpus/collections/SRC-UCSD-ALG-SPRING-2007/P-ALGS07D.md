@@ -24,7 +24,7 @@ audit:
   note: Verified the canonical isomorphism (R/I) tensor_R (R/J) = R/(I+J) and hence k=1 with a_1=min(m,n).
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{C}[x]/\langle x^n \rangle$ denote the evident $\mathbb{C}[x]$-module, and let $m, n \in \mathbb{N}$.
 
 (a) Show that there exist $a_1, \ldots, a_k$ such that $$\mathbb{C}[x]/\langle x^n \rangle \otimes_{\mathbb{C}[x]} \mathbb{C}[x]/\langle x^m \rangle \cong \bigoplus_{i=1}^{k} \mathbb{C}[x]/(x^{a_i}).$$

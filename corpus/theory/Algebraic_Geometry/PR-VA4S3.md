@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VA4S3
 kind: proposition
 title: The Segre embedding, and why $\PP^m \times \PP^n$ is projective
+slogan: 'The Segre embedding identifies $\PP^m\times\PP^n$ with the rank-one tensor locus, cut out by the $2\times2$ minors.'
 classification:
   areas:
   - algebraic-geometry
@@ -17,6 +18,11 @@ review: draft
 prompts:
 - Is $\PP^1 \times \PP^1$ a projective variety?
 - What equations cut out the Segre image?
+- Show that the Segre variety is the categorical product of projective varieties $X \subseteq \PP^n$ and $Y \subseteq \PP^m$.
+- What is the graph $\Gamma_f$ of a morphism $f \colon X \to B$ of quasi-projective varieties?
+- Give a precise definition of a morphism of projective varieties, in terms of homogeneous coordinates locally.
+- 'Describe the image of $[x:y] \mapsto [x^2 : xy : y^2]$, and give equations for the Veronese surface and its ambient $\PP^N$.'
+- What is a determinantal variety?
 ---
 
 ::: {.proposition}

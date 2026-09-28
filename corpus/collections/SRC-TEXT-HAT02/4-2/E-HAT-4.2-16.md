@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that the closed surfaces with infinite fundamental group are $K(\pi, 1)$'s by showing that their universal covers are contractible, via the Hurewicz theorem and results of §3.3.
+:::
 
 ::: {.solution}
 Let \(M\) be a closed surface with infinite fundamental group, and let

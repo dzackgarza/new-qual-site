@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-12S.pdf",
+  "source_pdf_sha256": "b54eb6fc28a3e0f9d36be67df3f30b31efa350b4cfd11ce64e9ec655f89cc8dd",
+  "extracted_markdown": "assets/attachments/basic-12S_extracted.md",
+  "extracted_markdown_sha256": "9d604695d77a4ee322c0faa173ae6cdc0a142573d2ec422d212db85cf8a77e6b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-12S.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-12S.md",
+  "old_unknown_provenance_sha256": "037827096274366beeca9747cb03fb998a6c01418aea14b83a3bb4066c75dcb8",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Qual, Winter 2012, containing twelve numbered problems; candidates are instructed to submit any ten, with at least four from Problems 1–6 and four from Problems 7–12.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction and is locally noisier. It loses several map/convergence arrows, garbles the partial-sum index in Problem 4, and still garbles the displayed matrix in Problem 11. Existing source-checked cards record source-faithful repairs, including the Problem 11 matrix [[1,3],[4,2]]. The source itself also has a Hausdorff-distance empty-set issue in Problem 1 and an unused parameter k in Problem 7, both recorded on cards. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The current shared SRC-UCLA-BASIC-WINTER-2012 collection represents all twelve source positions in order with twelve source-local cards. Several collection paths have unrelated live formatting edits in the shared tree; this intake does not modify or stage any of them.",
+  "raw_control_bytes": 0
+}

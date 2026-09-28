@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Can a surjective homomorphism of rings fail to be finite?
 :::
 

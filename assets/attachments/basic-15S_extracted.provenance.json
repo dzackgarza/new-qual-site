@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-15S.pdf",
+  "source_pdf_sha256": "c2e008ccb6fc8215061be2fcac0eb53c1d5543eaaed4477c808ef89bc9a7591c",
+  "extracted_markdown": "assets/attachments/basic-15S_extracted.md",
+  "extracted_markdown_sha256": "55eb4c3434bf0689df473189262f1ea5121ec740c3437658bfae4de47c965092",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-15S.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-15S.md",
+  "old_unknown_provenance_sha256": "c953bd07373e82d8fba40f470a775f590519128bbc496600ee60af90a187db8c",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Exam, Spring 2015, containing twelve numbered problems: six analysis and six linear algebra.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction and is locally noisier in several map arrows, limit typography, coefficients, and matrix/operator notation. Existing source-checked cards record source-faithful statements. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The current shared SRC-UCLA-BASIC-SPRING-2015 collection represents all twelve source positions in order with twelve source-local cards. Several collection paths have unrelated live formatting edits; this intake does not modify or stage any collection path.",
+  "raw_control_bytes": 0
+}

@@ -24,7 +24,7 @@ prompts:
 ---
 
 ::: {.definition title="Étale cover"}
-A morphism $f : X \to Y$ is an **étale cover** if it is finite and étale.
+A morphism $f : X \to Y$ is an \dfn{étale cover} if it is finite and étale.
 It is a **trivial** cover if $X \cong \coprod_{i \in I} Y$ for a finite index set $I$, with $f$ the identity on each copy.
 $Y$ is **simply connected** if every étale cover of $Y$ is trivial, equivalently $\pi_1^{\Et}(Y) = 0$.
 :::
@@ -43,16 +43,17 @@ Riemann--Hurwitz therefore applies, and $R = 0$ since $f$ is unramified, so with
 Then $g_X \geq 0$ gives $-2n \geq -2$, so $n = 1$ and $g_X = 0$, and a finite morphism of degree $1$ between curves is an isomorphism.
 :::
 
-::: {.remark title="Reading the argument"}
-Finiteness makes $X$ a projective curve so that the genus exists, étaleness supplies both the separability needed for Riemann--Hurwitz and the vanishing $R = 0$, and the inequality $g_X \geq 0$ bounds the degree.
+::: {.remark title="Role of the hypotheses"}
+Each hypothesis enters at a specific step: finiteness makes $X$ a projective curve, étaleness supplies separability and the vanishing $R=0$, and the final inequality is $g_X\ge0$.
 The argument is the algebraic analogue of the topological computation of $\pi_1(S^2)$ by Euler characteristic, with $2 - 2g$ in the role of $\chi$.
 
-The argument holds in every characteristic.
+The proof is characteristic-independent.
 $\AA^1$ is *not* simply connected in characteristic $p$: the Artin--Schreier cover $y^p - y = x$ is finite étale of degree $p$ and connected, because $d(y^p - y) = -dy$ never vanishes.
 So the projective line and the affine line separate here, the missing point at infinity is where the cover of $\AA^1$ ramifies wildly, and $\pi_1^{\Et}(\AA^1_{\overline{\FF}_p})$ is enormous while $\pi_1^{\Et}(\PP^1) = 0$.
-Over $\CC$ both are topologically simply connected.
+Over $\CC$ both are topologically simply connected, whereas in characteristic $p$ the affine line has the Artin--Schreier covers above.
 :::
 
-::: {.remark title="Finiteness of covers"}
-The finite étale covers of [[D-MORETALE]] are classified by $\pi_1^{\Et}$. An open immersion is étale but need not be finite, so finiteness is required in the statement about covers of $\PP^1$.
+::: {.remark title="Finite étale covers"}
+[[D-MORETALE]] defines étale morphisms and relates finite étale morphisms to algebraic covering spaces.
+Here finiteness is essential: an open immersion is étale but is not an étale cover in the sense used above, and dropping finiteness would make simple connectedness false for open-subset reasons.
 :::

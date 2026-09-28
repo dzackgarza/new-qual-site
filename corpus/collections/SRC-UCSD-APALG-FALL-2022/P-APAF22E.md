@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $s$ denote the Schur function.
 Express the product
 \[

@@ -24,7 +24,7 @@ Let $A \subset X$.
 Show that if $f: A \to Y$ is uniformly continuous, then $f$ can be uniquely extended to a continuous function $g: \overline{A} \to Y$, and $g$ is uniformly continuous.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a uniformly continuous map $f: A \to Y$ into a complete metric space $Y$ extends uniquely to a uniformly continuous map $g: \overline{A} \to Y$.
 
 <1>1. Definition and well-definedness of the extension $g$:

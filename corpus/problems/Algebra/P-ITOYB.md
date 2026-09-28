@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring, let $A$ be an $R$-module, and let $p\in R$.
 Define
 \[

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) = x^6 - 3$.
 Let $K$ be the splitting field of $f(x)$ over $\mathbb{Q}$.
 Show that $\mathrm{Gal}(K/\mathbb{Q})$ is isomorphic to a dihedral group.

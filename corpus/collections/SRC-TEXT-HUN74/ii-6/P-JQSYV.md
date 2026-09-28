@@ -29,12 +29,12 @@ audit:
 Classify up to isomorphism all groups of order 18. Do the same for orders 20 and 30.
 :::
 
-::: solution
+::: {.solution}
 We classify each order by first finding a normal Hall subgroup and then recording
 the possible conjugation actions of a complement.
 
 <1>1. Up to isomorphism there are exactly five groups of order $18$.
-::: proof
+::: {.proof}
 Let $|G|=18=2\cdot3^2$. By Sylow,
 \[
 n_3\mid2,\qquad n_3\equiv1\pmod3,
@@ -81,7 +81,7 @@ nontrivial). Hence exactly five isomorphism types occur.
 :::
 
 <1>2. Up to isomorphism there are exactly five groups of order $20$.
-::: proof
+::: {.proof}
 Let $|G|=20=2^2\cdot5$. Sylow gives
 \[
 n_5\mid4,\qquad n_5\equiv1\pmod5,
@@ -130,7 +130,7 @@ five groups of order $20$.
 :::
 
 <1>3. Every group of order $30$ has a normal cyclic subgroup of order $15$.
-::: proof
+::: {.proof}
 Let $|G|=30=2\cdot3\cdot5$. Sylow gives
 \[
 n_5\in\{1,6\},\qquad n_3\in\{1,10\}.
@@ -150,7 +150,7 @@ P_5\to\operatorname{Aut}(P_3)\cong\ZZ_2,
 which is trivial because $|P_5|=5$; hence $P_5$ normalizes and centralizes
 $P_3$, so again $P_3P_5$ is a subgroup of order $15$. Similarly, if only $P_5$
 is normal, conjugation by $P_3$ on $P_5$ maps a group of order $3$ into
-\operatorname{Aut}(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a
+$\operatorname{Aut}(\ZZ_5)\cong\ZZ_4$ and is trivial, so $P_3P_5$ is again a
 subgroup of order $15$.
 
 Call this subgroup $N$. Since $[G:N]=2$, it is normal. Also any group of order
@@ -163,7 +163,7 @@ N\cong\ZZ_{15}.
 :::
 
 <1>4. Up to isomorphism there are exactly four groups of order $30$.
-::: proof
+::: {.proof}
 By <1>3, $G$ has a normal subgroup $N\cong\ZZ_{15}$. Cauchy's theorem supplies
 an involution $t\in G$, necessarily outside the odd-order subgroup $N$. Thus
 \[

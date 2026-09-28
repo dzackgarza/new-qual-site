@@ -30,4 +30,13 @@ source:
   - P-WESRA03-I8
   - P-WESRA03-I9
   - P-WESRA03-I10
+  - P-WESRA03-II1
+  - P-WESRA03-II2
+  - P-WESRA08-II4
+  - P-WESRA03-II4
+  - P-WESRA03-II5
 ---
+
+::: {.remark}
+Ten short-answer questions are followed by five Part II problems. Part II Problem 3 is the same problem as [[P-WESRA08-II4]].
+:::

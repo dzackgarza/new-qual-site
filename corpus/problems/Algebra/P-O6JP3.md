@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Prove that if $R$ is an integral domain, then $R[t]$ is again an integral domain.
 :::
 

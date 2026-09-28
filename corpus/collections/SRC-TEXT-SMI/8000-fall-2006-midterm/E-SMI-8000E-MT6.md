@@ -42,9 +42,9 @@ You do not need to find a matrix $Q$ such that $Q^{-1}AQ = J$.
 (b) Write the matrix $J$ as the sum of a diagonal matrix plus a nilpotent matrix.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compute the characteristic polynomial.
-::: proof
+::: {.proof}
 The matrix is block upper triangular with diagonal blocks
 $$
 B=\begin{pmatrix}-1&1\\-4&3\end{pmatrix}
@@ -81,7 +81,7 @@ $$
 :::
 
 <1>2. Determine the Jordan blocks for eigenvalue $1$.
-::: proof
+::: {.proof}
 Let
 $$
 N=A-I.
@@ -122,7 +122,7 @@ $$
 :::
 
 <1>3. Determine the Jordan form and minimal polynomial.
-::: proof
+::: {.proof}
 The eigenvalue $2$ has algebraic multiplicity one, so it contributes a single
 $1\times1$ block. Thus, up to the ordering of blocks,
 $$
@@ -150,7 +150,7 @@ $$
 :::
 
 <1>4. Split $J$ into a diagonal matrix plus a nilpotent matrix.
-::: proof
+::: {.proof}
 Write
 $$
 J=D+N_J,

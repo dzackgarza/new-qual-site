@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Evaluate the integral
 \[
 \int_\RR {dx \over 1 + x^4}

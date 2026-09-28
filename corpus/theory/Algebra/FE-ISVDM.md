@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FE-ISVDM
 kind: example
-title: $A^n = B^n$ does not imply $A = B$
+title: $A^n = B^n$ does not imply $A = B$ for matrices
 prompts:
 - Does $A^n=B^n$ imply $A=B$?
 classification:
@@ -16,5 +16,10 @@ review: draft
 ---
 
 ::: {.example}
-No, counterexample: $M = \matt 0 1 1 0$ satisfies $$ M^2 = I .$$
+For square matrices $A,B$ and $n\ge2$, $A^n=B^n$ does not imply $A=B$.
+In $\Mat_2(\RR)$, let
+$$
+M=\matt 0 1 1 0 .
+$$
+Then $M^2=I=I^2$, but $M\ne I$.
 :::

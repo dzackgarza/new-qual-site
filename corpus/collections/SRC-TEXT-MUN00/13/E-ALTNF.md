@@ -33,7 +33,7 @@ $\mathcal{T}_5$ = the topology having all sets $(-\infty, a) = \ts{x \mid x < a}
 Determine, for each of these topologies, which of the others it contains.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine all inclusion relations among the five given topologies $\mathcal{T}_1, \mathcal{T}_2, \mathcal{T}_3, \mathcal{T}_4, \mathcal{T}_5$ on $\mathbb{R}$.
 
 <1>1. Verification of pairwise inclusions:

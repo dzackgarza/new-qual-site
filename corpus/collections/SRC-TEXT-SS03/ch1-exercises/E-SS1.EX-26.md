@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 26. Suppose f is continuous in a region Ω. Prove that any two primitives of f (if they exist) difer by a constant.
 
 # 2 <sub>Cauchy’s</sub> <sub>Theorem</sub> <sub>and</sub> <sub>Its</sub> Applications
@@ -70,7 +70,7 @@ The theory developed up to that point already has a number of noteworthy consequ
 This is a consequence of the fact that holomorphic functions have power series expansions.
 :::
 
-::: solution
+::: {.solution}
 Let $F$ and $G$ be primitives of $f$ on the region $\Omega$, and set $H=F-G$. Then
 \[
 H'(z)=F'(z)-G'(z)=f(z)-f(z)=0

@@ -32,7 +32,7 @@ If $H$ is compact, show that $p$ is a closed map.
 Show that if $G/H$ is compact, then $G$ is compact.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the product of a closed set and a compact set in a topological group is closed, deduce that quotient maps by compact subgroups are closed, and prove that group extensions by compact groups are compact.
 
 <1>1. Part (a): If $A$ is closed and $B$ is compact in a topological group $G$, then $A \cdot B$ is closed.

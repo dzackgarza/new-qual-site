@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use de Moivre's theorem (i.e. $\left(e^{i \theta}\right)^{n}==\cos n \theta+i \sin n \theta$, or $\left.(\cos \theta+i \sin \theta)^{n}=\cos n \theta+i \sin n \theta\right)$ to find the sum
 
 $$
@@ -21,7 +21,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For $e^{ix}\ne1$, the geometric-series identity gives
 \[
 \sum_{k=1}^n e^{ikx}

@@ -12,9 +12,11 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $M^3$ be a homology sphere – a closed 3-manifold having the same homology groups as $S^3$ – and let $X = \Sigma M$ be its suspension.
 What are the fundamental group and homology groups of $X$?
 Show that $X$ is homotopy-equivalent to $S^4$.
+:::
 
 ::: {.solution}
 <1>1. The suspension $X=\Sigma M$ is simply connected.
@@ -39,7 +41,6 @@ H_i(X;\mathbb Z)\cong
 0,&\text{otherwise}.
 \end{cases}
 $$
-:::
 ::: {.proof}
 By hypothesis $M$ has the homology of $S^3$, so its only nonzero reduced homology group is $\widetilde H_3(M)\cong\mathbb Z$. Apply <1>2.
 :::
@@ -72,9 +73,7 @@ It is an isomorphism on $H_4$ by construction and on $H_0$ because both spaces a
 $$
 \boxed{\Sigma M\simeq S^4}.
 $$
-:::
 ::: {.proof}
 Both spaces are simply connected CW complexes: $M$ is a closed manifold and hence has CW type, and suspension preserves CW type. By the homological Whitehead theorem, a homology equivalence between simply connected CW complexes is a homotopy equivalence. Apply this to $f$.
-:::
 :::
 

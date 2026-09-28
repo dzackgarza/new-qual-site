@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is every finite group the Galois group over $\mathbb Q$ of the splitting field of a polynomial in $\mathbb Q[x]$?
 :::
 
-::: solution
+::: {.solution}
 This is the inverse Galois problem over $\mathbb Q$. It is not known in general
 whether every finite group occurs in this way.
 

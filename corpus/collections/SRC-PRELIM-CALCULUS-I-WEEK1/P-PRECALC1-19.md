@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-19
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 19'
+title: Symmetric difference quotient $\frac{f(x_0+h)-f(x_0-h)}{h}$
 classification:
   areas:
   - prelim

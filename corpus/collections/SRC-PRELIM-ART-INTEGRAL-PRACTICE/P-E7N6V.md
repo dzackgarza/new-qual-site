@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Evaluate or justify the following:
 
 1. For \(x>0\), the infinite nested radical
@@ -37,9 +37,9 @@ and an antiderivative of \(R(x)\).
 7. \(\displaystyle \int\sqrt{\frac{1+x}{1-x}}\,dx\) for \(-1<x<1\).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Evaluate the infinite nested radical.
-::: proof
+::: {.proof}
 Truncate after the \(N\)-th root and write the result as \(R_N(x)=x^{a_{2,N}}\). If the exponent at the \(k\)-th level is \(a_{k,N}\), then
 \[
 a_{N,N}=\frac1N,
@@ -65,7 +65,7 @@ Therefore
 :::
 
 <1>2. Evaluate the logarithmic sine integral.
-::: proof
+::: {.proof}
 Put \(t=-\log x\). Then \(x=e^{-t}\), \(dx=-e^{-t}dt\), and
 \[
 \int_0^1\frac{\sin(\log x)}{\log x}\,dx
@@ -86,7 +86,7 @@ and \(F(0)=0\). Thus \(F(b)=\arctan(b/a)\). Taking \(a=b=1\),
 :::
 
 <1>3. Evaluate the squared-sinc integral.
-::: proof
+::: {.proof}
 Use the Fourier transform \(\widehat f(\xi)=\int_{\mathbb R}f(t)e^{-it\xi}\,dt\). For \(f=\mathbf1_{[-1,1]}\),
 \[
 \widehat f(\xi)=\frac{2\sin\xi}{\xi}.
@@ -107,7 +107,7 @@ so
 :::
 
 <1>4. Pass the limit through the integral.
-::: proof
+::: {.proof}
 For \(x\in[0,1)\), \(x^n/(1+x)\to0\), while
 \[
 0\le\frac{x^n}{1+x}\le1.
@@ -119,7 +119,7 @@ Dominated convergence therefore gives
 :::
 
 <1>5. Evaluate the exponentially damped sine integral.
-::: proof
+::: {.proof}
 The calculation in Step 2 gives, for \(a>0\),
 \[
 \int_0^\infty e^{-ax}\frac{\sin x}{x}\,dx=\arctan\frac1a.
@@ -132,7 +132,7 @@ With \(a=\sqrt3\),
 :::
 
 <1>6. Evaluate the Cauchy-kernel cosine transform.
-::: proof
+::: {.proof}
 Integrate
 \[
 \frac{e^{iz}}{1+z^2}
@@ -153,7 +153,7 @@ Taking real parts yields
 :::
 
 <1>7. Integrate the square-root quotient.
-::: proof
+::: {.proof}
 Put \(x=\cos\theta\), where \(0<\theta<\pi\). Then
 \[
 \sqrt{\frac{1+x}{1-x}}

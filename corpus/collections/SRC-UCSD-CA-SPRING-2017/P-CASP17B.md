@@ -13,13 +13,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{C} \to \mathbb{C}$ be entire.
 Assume that the function $g(z) = f(z) \cdot f\!\left(\frac{1}{z}\right)$ is bounded on $\mathbb{C} \setminus \{0\}$.
 Show that $f(z) = cz^m$.
 :::
 
-::: solution
+::: {.solution}
 If $f\equiv0$, the conclusion is immediate. Otherwise let $m$ be the order of
 the zero of $f$ at $0$, so
 \[

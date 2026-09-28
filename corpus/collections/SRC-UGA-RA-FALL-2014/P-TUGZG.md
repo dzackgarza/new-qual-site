@@ -25,14 +25,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(f_n)$ be a sequence of continuous functions such that $\sum_{n=1}^\infty f_n$ converges uniformly.
 Prove that $\sum_{n=1}^\infty f_n$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Apply the uniform-limit theorem to the partial sums.
-::: proof
+::: {.proof}
 Let
 \[
 F_N(x):=\sum_{n=1}^N f_n(x),

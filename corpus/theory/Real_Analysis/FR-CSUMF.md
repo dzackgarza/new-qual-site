@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FR-CSUMF
 kind: proof
-title: Proof of Borel-Cantelli Lemma
+title: First Borel--Cantelli lemma for measures
 classification:
   areas:
   - real-analysis
@@ -13,16 +13,16 @@ relations: []
 review: draft
 ---
 
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space, let $(E_j)_{j\geq 1}$ be a sequence in $\mcm$ with $\sum_{j\geq 1}\mu(E_j) < \infty$, and let $E\coloneqq\limsup_j E_j$ be its [[D-PAEDW|limit superior]].
+Then $E\in\mcm$ and $\mu(E) = 0$.
+:::
+
 ::: {.proof}
-*Proof of Borel Cantelli:*
-
-- If $E = \limsup_j E_j$ with $\sum m(E_j) < \infty$ then $m(E) = 0$.
-
-- If $E_j$ are measurable, then $\limsup_j E_j$ is measurable.
-
-- If $\sum_j m(E_j) < \infty$, then $\sum_{j=N}^\infty m(E_j) \converges{N\to\infty}\to 0$ as the tail of a convergent sequence.
-
-- $$E = \limsup_j E_j = \intersect_{k=1}^\infty \union_{j=k}^\infty E_j \implies E \subseteq \union_{j=k}^\infty E_j \quad \forall k $$
-
-- $$E \subset \union_{j=k}^\infty E_j \implies m(E) \leq \sum_{j=k}^\infty m(E_j) \converges{k\to\infty}\to 0.$$
+We have $E = \bigcap_{k\geq 1}\bigcup_{j\geq k} E_j$, a countable intersection of countable unions of sets in $\mcm$, so $E\in\mcm$.
+For every $k\geq 1$, $E\subseteq\bigcup_{j\geq k}E_j$, so by countable subadditivity
+$$
+\mu(E)\leq\sum_{j\geq k}\mu(E_j).
+$$
+The right side is the tail of a convergent series, so it tends to $0$ as $k\to\infty$, and $\mu(E) = 0$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\pi(x)\in\FF_p[x]$ be irreducible of degree $d$. Prove
 \[
 \pi(x)\mid x^{p^n}-x
@@ -23,7 +23,7 @@ d\mid n.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $\alpha$ be a root of $\pi$ in an algebraic closure of $\FF_p$. Since $\pi$ is irreducible of degree $d$,
 \[
 \FF_p(\alpha)\cong\FF_{p^d}.

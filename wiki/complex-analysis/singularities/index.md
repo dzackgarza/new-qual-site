@@ -7,14 +7,14 @@ topics:
 
 # Singularities
 
-What a function does at a point where it is not holomorphic, and how much that costs.
+Isolated singularities of holomorphic functions: their classification, Laurent series, meromorphic functions, and the behavior near an essential singularity.
 
-- [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]], the three tests and what each one returns.
+- [[complex-analysis/singularities/classifying-a-singularity|Classifying a singularity]], the limit, boundedness, and Laurent series criteria.
 
 - [[complex-analysis/singularities/laurent-series|Laurent series]], the expansion on an annulus.
 
-- [[complex-analysis/singularities/removable-poles-essential|Removable singularities, poles, essential singularities]], the theory of each kind.
+- [[complex-analysis/singularities/removable-poles-essential|Removable singularities, poles, essential singularities]], statements and proofs for each kind.
 
-- [[complex-analysis/singularities/meromorphic-functions|Meromorphic functions]], where only poles occur.
+- [[complex-analysis/singularities/meromorphic-functions|Meromorphic functions]], functions whose singularities are poles.
 
-- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass and Picard]], how much of the plane an essential singularity covers.
+- [[complex-analysis/singularities/casorati-weierstrass-and-picard|Casorati-Weierstrass and Picard]], the values taken near an essential singularity.

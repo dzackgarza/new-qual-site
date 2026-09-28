@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a Hilbert space.
 Suppose that there is a sequence $\{x_j\}$ in $H$ such that the finite linear combinations of the $x_j$ are dense in $H$ and
 $$
@@ -34,9 +34,9 @@ $$
 Prove that $x_j \to 0$ weakly.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Obtain a uniform norm bound.
-::: proof
+::: {.proof}
 Taking $j=k$ in the assumed estimate gives
 \[
 \|x_j\|^2=|\langle x_j,x_j\rangle|\le1.
@@ -48,7 +48,7 @@ Hence
 :::
 
 <1>2. Prove convergence against the dense linear span.
-::: proof
+::: {.proof}
 Let
 \[
 y=\sum_{k=1}^N a_kx_k.
@@ -69,7 +69,7 @@ for every finite linear combination $y$ of the $x_k$.
 :::
 
 <1>3. Extend the convergence to every vector in $H$.
-::: proof
+::: {.proof}
 Fix $y\in H$ and $\varepsilon>0$. By density of the finite linear span, choose a finite linear combination $z$ of the $x_k$ such that
 \[
 \|y-z\|<\varepsilon.

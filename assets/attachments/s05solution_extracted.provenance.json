@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/s05solution.pdf",
+  "source_pdf_sha256": "d91cc3f25ebdb457537ebdae019adaba0a303231cd81801213017868b2708438",
+  "extracted_markdown": "assets/attachments/s05solution_extracted.md",
+  "extracted_markdown_sha256": "21d230e80c18e0cd5ceb2f4495f64f7b7225a2729b82c1e115e0d951f2566e52",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/s05solution.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/s05solution.md",
+  "source_identification": "Companion solution packet for the UC Berkeley Preliminary Examination, Spring 2005, repeating problems 1A-9A and 1B-9B before their worked solutions.",
+  "card_reconciliation": "The packet's repeated problem statements independently support the 18 source-checked cards. The worked solution prose is retained as provenance rather than imported wholesale into cards because the deterministic solution extraction contains visible glyph corruption; no guessed solution repair was made."
+}

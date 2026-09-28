@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Make the transfer sequence explicit in the case of a trivial covering $\tilde{X} \to X$, where $\tilde{X} = X \times S^0$.
+:::
 
 ::: {.solution}
 **Setup.** The trivial covering $p: X \times S^0 \to X$, $p(x, \epsilon) = x$, is $2$-sheeted. The transfer $\tau: C_n(X) \to C_n(X \times S^0)$ sends each singular simplex $\sigma: \Delta^n \to X$ to the sum of its two lifts, and satisfies $p_\# \tau = 2 \cdot \id$. The transfer sequence is the long exact sequence of the short exact sequence of chain complexes

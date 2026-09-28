@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $P\in\mathbb{C}^{n\times n}$ be a positive definite Hermitian matrix.
 Show that
 \[
@@ -22,7 +22,7 @@ Show that
 for all $x,y\in\mathbb{C}^n$.
 :::
 
-::: solution
+::: {.solution}
 Because \(P\) is Hermitian positive definite, its positive definite square root \(P^{1/2}\) exists and is invertible. Write
 \[
 x^*y=(P^{1/2}x)^*(P^{-1/2}y).

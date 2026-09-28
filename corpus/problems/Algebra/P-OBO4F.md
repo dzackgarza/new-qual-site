@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group of order $n$. Prove that
 \[
 g^n=e

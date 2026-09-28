@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $N\normal G$. Show that if $N$ and $G/N$ are solvable, then $G$ is solvable.
 :::
 
-::: solution
+::: {.solution}
 Let $\pi:G\to G/N$ be the quotient map. Since $G/N$ is solvable, its derived series reaches the identity:
 \[
 (G/N)^{(r)}=1

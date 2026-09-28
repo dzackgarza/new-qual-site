@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Is the following function continuous, differentiable, continuously differentiable?
 \[  
 f: \RR^2 &\to \RR  \\
@@ -26,7 +26,7 @@ f(x, y) &=
 \]
 :::
 
-::: solution
+::: {.solution}
 Away from $(0,0)$ the function is smooth. At the origin,
 \[
 |f(x,y)|=\frac{|xy|}{\sqrt{x^2+y^2}}

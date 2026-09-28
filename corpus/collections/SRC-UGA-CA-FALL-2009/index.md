@@ -27,7 +27,3 @@ source:
     term: fall
     year: 2009
 ---
-
-::: remark
-Exam #1 is `P-8CA37` (the paper asks $f(1/n)=1/\lfloor\sqrt{n}\rfloor$ in part (c); `P-GRNXH` and `P-3EAU2` ask $f(1/n^2)=1/n$ instead).
-:::

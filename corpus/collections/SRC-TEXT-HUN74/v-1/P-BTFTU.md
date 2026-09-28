@@ -34,9 +34,9 @@ Show that
 3. If $u\in F$ has degree $n$ over $K$, then $n$ divides $[F: K]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. One has $[F:K]=1$ if and only if $F=K$.
-::: proof
+::: {.proof}
 If $F=K$, then $\{1\}$ is a $K$-basis of $F$, so $[F:K]=1$.
 
 Conversely, suppose $[F:K]=1$. Since $1\ne0$, the singleton $\{1\}$ is a
@@ -47,7 +47,7 @@ so $F\subseteq K$. Since $K\subseteq F$ by hypothesis, $F=K$.
 
 <1>2. If $[F:K]$ is prime, there is no proper intermediate field
 $K\subsetneq L\subsetneq F$.
-::: proof
+::: {.proof}
 Let $K\subseteq L\subseteq F$. The tower law gives
 \[
 [F:K]=[F:L][L:K].
@@ -61,7 +61,7 @@ proper intermediate field exists.
 \[
 [F:K]=[F:K(u)]\,n.
 \]
-::: proof
+::: {.proof}
 By definition of the degree of an algebraic element,
 \[
 [K(u):K]=n.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Use $n$th roots of unity to show that $2^{n-1}\sin\frac{\pi}{n}\sin\frac{2\pi}{n}\cdots\sin\frac{(n-1)\pi}{n}=n$.
 
 1. Let $f$ be continuous on
@@ -95,7 +95,7 @@ Use $n$th roots of unity to show that $2^{n-1}\sin\frac{\pi}{n}\sin\frac{2\pi}{n
     for all $z\in\DD$ if and only if $f(z)=cz^2$ for some constant $c$.
 :::
 
-::: solution
+::: {.solution}
 Let $\zeta=e^{2\pi i/n}$. From
 \[
 z^n-1=(z-1)\prod_{k=1}^{n-1}(z-\zeta^k)

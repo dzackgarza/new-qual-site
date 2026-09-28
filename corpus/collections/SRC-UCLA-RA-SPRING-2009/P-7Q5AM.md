@@ -27,7 +27,7 @@ a. Prove that the unit sphere $S=\{x\in H: ||x||=1\}$ is weakly dense in the uni
 b. Prove there is a sequence $T_n$ of bounded linear operators from $H$ to $H$ such that $||T_n||=1$ for all $n$ but $\lim_{n\to\infty} T_n(x)=0$ for all $x\in H$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the unit sphere $S$ of an infinite-dimensional real Hilbert space $H$ is weakly dense in the closed unit ball $B$ in (a), and construct operators $T_n$ with $\|T_n\| = 1$ converging strongly to 0 in (b).
 
 <1>1. Part (a): Reduction to the open unit ball.

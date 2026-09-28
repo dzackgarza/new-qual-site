@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A manifold for which an orientation exists, see "Orientation of a Manifold".
+An $n$-[[D-UBWVX|manifold]] $M$ is \dfn{orientable} if there exists an [[D-CNLBT|orientation]] of $M$.
 :::

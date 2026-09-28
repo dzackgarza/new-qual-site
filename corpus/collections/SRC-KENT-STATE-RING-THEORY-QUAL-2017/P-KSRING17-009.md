@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-009
 kind: problem
-title: Kent State ring-theory qualifying problem 9
+title: Euler's criterion for the Legendre symbol
 classification:
   areas: [algebra]
   topics: []

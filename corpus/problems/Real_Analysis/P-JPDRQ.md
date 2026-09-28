@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Can a convergent sequence of real numbers have a subsequence converging to a different limit?
 
 - What does it mean for a sequence of functions to converge **pointwise** and to converge **uniformly**?

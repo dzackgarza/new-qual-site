@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-01
 kind: problem
-title: Questions from Tie — Fall 2009, question 1
+title: Parseval's identity for power series and Liouville's theorem
 classification:
   areas:
   - complex-analysis

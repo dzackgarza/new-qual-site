@@ -6,7 +6,7 @@ title: Groups of order $pq$ with $p<q$ primes are not simple, abelian if $p\nmid
   and the possibilities when $p\mid q-1$
 classification:
   areas:
-  - prelim
+  - algebra
   topics:
   - Groups
   - Simple Groups

@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Prove the following inclusions of $L^p$ spaces for $m(X) < \infty$:
 \[
 L^\infty(X) &\subset L^2(X) \subset L^1(X) \\

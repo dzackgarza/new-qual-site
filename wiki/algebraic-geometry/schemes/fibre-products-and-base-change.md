@@ -9,12 +9,12 @@ topics:
 
 # Fibre products and base change
 
-The fibre product is the one construction that appears under several names: intersections, fibres, field extensions and products are all the same operation with different labels.
+Fibre products unify intersections, fibres, field extensions, and products as instances of one universal construction.
 
 [[D-SCHFPR]]
 
-The affine case is the whole computation, and the gluing is bookkeeping.
-Say the tensor product first, then note that the underlying set of a fibre product is not the fibre product of the underlying sets — this is the standard follow-up and the place where a set-theoretic instinct goes wrong.
+On affine schemes the construction is computed by a tensor product and then glued.
+The underlying set of a scheme-theoretic fibre product need not be the fibre product of the underlying sets.
 
 ## Fibres
 
@@ -27,9 +27,9 @@ A morphism is a family of schemes parametrised by the target, and the scheme-the
 
 [[D-SCHBC]]
 
-Base change is the single operation behind three different questions, and naming which one is in play is most of an answer.
+Base change appears in three common forms.
 "Geometrically integral" is base change to every field extension; "the fibre over $y$" is base change to $\Spec \kappa(y)$; "spread out over a smaller base" is base change along a map of bases.
-The list of adjectives stable under base change is long and the exceptions are few.
+Stability under base change depends on the property in question, so each adjective carries its own preservation theorem or counterexample.
 
 ## The functor of points
 
@@ -37,3 +37,7 @@ The list of adjectives stable under base change is long and the exceptions are f
 
 The universal property in the definition of the fibre product is a statement about $\Hom(T, -)$ for all $T$, which is to say it is a statement about the functor of points.
 Reading it that way turns the two standard computations — maps out of a field and maps out of the dual numbers — into the statement that points and tangent vectors are both things a scheme is probed by, and it is the language in which moduli problems are posed.
+
+## Fibres of families
+
+[[D-SCHFIBRES]]

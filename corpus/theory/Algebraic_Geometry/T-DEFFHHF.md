@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-DEFFHHF
 kind: theorem
 title: The FHHF theorem, on functors and cohomology
+slogan: 'Exact functors commute with cohomology; right exactness gives $F(H^i)\to H^i(F(C^\bullet))$, and left exactness gives the reverse map.'
 classification:
   areas:
   - algebraic-geometry
@@ -42,6 +43,6 @@ The resulting diagram induces the map by universal properties.
 Part (i) is the same argument on $0 \to H^i \to \coker\delta^{i-1}\to \im\delta^i \to 0$ with the arrows reversed.
 For (iii), an exact $F$ commutes with both kernels and cokernels, so $F(\ker\delta^i) = \ker F(\delta^i)$ and $F(\im\delta^{i-1}) = \im F(\delta^{i-1})$, and the quotients agree.
 
-The slogan is that exact functors commute with cohomology, and the direction of the map in the inexact cases is worth memorising rather than re-deriving.
+Exact functors commute with cohomology; for one-sided exact functors, the direction of the natural map is determined by which kernels or cokernels the functor preserves.
 The standard application is that filtered colimits are exact in $\mods{A}$, so $H^i$ commutes with filtered direct systems of sheaves --- which is how one reduces cohomology computations to finitely generated pieces.
 :::

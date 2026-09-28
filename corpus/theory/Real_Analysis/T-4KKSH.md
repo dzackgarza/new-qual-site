@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4KKSH
 kind: theorem
 title: $L^p$ norms approach $\norm{f}_\infty$ on finite measure spaces
+slogan: 'On finite measure spaces, $L^p$ norms increase toward the essential supremum as $p\to\infty$.'
 classification:
   areas:
   - real-analysis
@@ -14,8 +15,11 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-\[
-m(X) < \infty \implies \lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 
-.\]
+::: {.theorem}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space with $\mu(X)<\infty$, and let $f\colon X\to\CC$ be [[D-DHFN4|measurable]].
+Then, in $[0,\infty]$,
+$$
+\lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty ,
+$$
+where $\norm{f}_\infty$ is the [[D-3PVRB|essential supremum]] of $\abs{f}$.
 :::

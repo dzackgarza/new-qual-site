@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\zeta_n \in \mathbb{C}$ denote a primitive $n$-th root of unity, and let $p_n(x) \in \mathbb{Q}[x]$ be its minimal polynomial over $\mathbb{Q}$. You may assume that the roots of $p_n(x)$ are precisely the primitive $n$-th roots of unity in $\mathbb{C}$.
 
 (a) Show that the field extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois, and prove that its Galois group is isomorphic to $(\mathbb{Z}/n\mathbb{Z})^\times$.
@@ -23,7 +23,7 @@ Let $\zeta_n \in \mathbb{C}$ denote a primitive $n$-th root of unity, and let $p
 (b) How many subfields are there of $\mathbb{Q}(\zeta_{20})$?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that cyclotomic extensions are Galois with abelian Galois group $(\mathbb{Z}/n\mathbb{Z})^\times$ in (a), and count the subfields of $\mathbb{Q}(\zeta_{20})$ via the Galois correspondence in (b).
 
 <1>1. Part (a): $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois.

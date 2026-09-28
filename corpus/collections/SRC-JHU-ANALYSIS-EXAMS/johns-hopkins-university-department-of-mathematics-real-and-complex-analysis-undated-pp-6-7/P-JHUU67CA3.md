@@ -24,15 +24,17 @@ audit:
   note: "Checked that the maximum principle is applied to polynomial differences, obtained the uniform Cauchy property on every compact subset of the disk, and identified the limit with the original annular function."
 ---
 
+::: {.problem}
 Suppose $f$ is holomorphic in an annulus $r < |z| < R$, and there exists a sequence of holomorphic polynomials $p_n$ converging to $f$ uniformly on compact subsets of the annulus.
 Show that $f$ can be extended to the disc $\{|z| < R\}$ as a holomorphic function.
+:::
 
-::: solution
+::: {.solution}
 Let $D_R=\{z:|z|<R\}$ and $A=\{z:r<|z|<R\}$.
 
 <1>1. The sequence $(p_n)$ is uniformly Cauchy on each compact subset of $D_R$.
 
-::: proof
+::: {.proof}
 Fix a nonempty compact set $K\subset D_R$. Choose a radius
 $\rho$ satisfying
 $$
@@ -54,7 +56,7 @@ compact set requires no estimate.
 
 <1>2. The limit on the disk is a holomorphic extension of $f$.
 
-::: proof
+::: {.proof}
 By completeness of $\mathbb C$, step <1>1 first gives
 the pointwise limit $F(z)=\lim_n p_n(z)$ at each $z\in D_R$.
 For a compact $K\subset D_R$, let $m\to\infty$ in the

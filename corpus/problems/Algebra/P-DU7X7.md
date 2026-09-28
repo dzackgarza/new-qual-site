@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What's Hilbert's theorem 90?
 :::
 

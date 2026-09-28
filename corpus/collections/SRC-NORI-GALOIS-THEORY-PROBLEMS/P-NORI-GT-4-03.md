@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-03
 kind: problem
-title: Nori Galois theory problem 4.3
+title: The norm of an element of a free ring extension is a multiple of the element
 classification:
   areas: [algebra]
   topics: []

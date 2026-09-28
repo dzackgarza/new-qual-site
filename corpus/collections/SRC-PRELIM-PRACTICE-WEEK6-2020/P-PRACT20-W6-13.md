@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-13
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 13"
+title: Continuous images of compact sets are compact
 classification:
   areas:
   - prelim

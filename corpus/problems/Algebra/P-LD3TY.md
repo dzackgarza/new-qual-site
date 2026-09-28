@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Explain geometrically how you diagonalize a real quadratic form $q(x) = x^t A x$ on $\mathbb{R}^n$ (Principal Axis Theorem and Gram-Schmidt orthogonalization).
 :::
 
-::: solution
+::: {.solution}
 Write the real quadratic form as
 \[
 q(x)=x^TAx

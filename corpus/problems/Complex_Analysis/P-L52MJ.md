@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f(z)$ be analytic in an open set $\Omega$ except possibly at a
 point $z_0$ inside $\Omega$. Show that if $f(z)$ is bounded in near
 $z_0$, then $\displaystyle \int_\Delta f(z) dz = 0$ for all triangles
 $\Delta$ in $\Omega$.
 :::
 
-:::{.solution}
+::: {.solution}
 Write $\DD_\eps(z_0)$ for a disc in which $f$ is bounded, say by $\abs{f}\leq M$ here.
 Note that if $z_0$ is not in the region enclosed by $\Delta$, then $\int_\Delta f = 0$ since $f$ is holomorphic throughout $\Delta$, so suppose $z_0$ is in this region.
 

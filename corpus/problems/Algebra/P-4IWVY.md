@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a Principal Ideal Domain (PID).
 (1) If $R$ is not a field, prove that the irreducible (simple) $R$-modules are precisely $R/(p)$ where $p\in R$ is irreducible. If $R$ is a field, show that the only simple $R$-module up to isomorphism is $R$.
 (2) Prove that the finitely generated indecomposable $R$-modules are precisely $R$ and $R/(p^n)$ where $p\in R$ is irreducible and $n\ge1$.
 :::
 
-::: solution
+::: {.solution}
 Let $M$ be a nonzero simple $R$-module and choose $0\ne m\in M$. Then $Rm=M$, so
 \[
 M\cong R/\operatorname{Ann}(m).

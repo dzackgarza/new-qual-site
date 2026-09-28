@@ -40,5 +40,6 @@ The functor $\tilde{\wait\,}$ is essentially surjective but is not an equivalenc
 Two graded modules agreeing in all large degrees give the same sheaf, so the functor kills modules supported at the irrelevant ideal $S_+$, and $\QCoh(\Proj S)$ is the quotient of graded modules by that torsion.
 $\Gamma_*$ is the chosen splitting: it picks the saturated module in each class.
 
-This is the projective analogue of $M \leftrightarrow \tilde M$ on $\Spec A$, using the degree-zero part of the localization. For example, $S/S_+$ has zero associated sheaf.
+This is the projective analogue of $M \leftrightarrow \tilde M$ on $\Spec A$, with the degree-zero part of the localization playing the role of localization, and the loss of injectivity coming from modules supported at the irrelevant ideal.
+For example, $S/S_+$ sheafifies to zero.
 :::

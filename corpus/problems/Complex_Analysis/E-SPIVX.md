@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I \da \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-b}}{2 b}
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 The integrand is even, so 
 \[
 I = \Re{1\over 2} \tilde I \da {1\over 2} \int_\RR {e^{iz} \over (z+ib)(z-ib)}

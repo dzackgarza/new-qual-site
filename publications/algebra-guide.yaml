@@ -7,11 +7,16 @@ sections:
   - slug: preliminaries
     title: Preliminaries
     parent: GUIDE-ALGEBRA
-    lede: "Zorn's lemma gives maximal elements in nonempty posets whose chains have upper
-      bounds. Applications include maximal ideals containing a proper ideal and bases of vector
-      spaces. Euler's totient counts generators of a finite cyclic group. The Chinese remainder
-      theorem decomposes cyclic groups of composite order into factors of coprime orders.
-      Fermat's little theorem and Euler's theorem give congruences from multiplicative orders."
+    lede: >-
+      Zorn's lemma: a nonempty partially ordered set in which every chain has an upper bound
+      has a maximal element. It gives a maximal ideal containing any proper ideal of a ring
+      with $1$, an algebraic closure of every field, and a basis of every vector space.
+      Euler's totient $\varphi(n)$ is the number of generators of a cyclic group of order $n$
+      and the degree $[\QQ(\zeta_n):\QQ]$ of the $n$th cyclotomic field. The Chinese remainder
+      theorem gives $R/(I\cap J)\cong R/I\times R/J$ for comaximal ideals $I,J$ of a
+      commutative ring $R$, in particular $\ZZ/mn\ZZ\cong\ZZ/m\ZZ\times\ZZ/n\ZZ$ for coprime
+      $m,n$. Euler's theorem $a^{\varphi(n)}\equiv1\pmod{n}$ for $\gcd(a,n)=1$ is Lagrange's
+      theorem in $(\ZZ/n\ZZ)^\times$, and Fermat's little theorem is its case $n=p$ prime.
     topics:
       - Zorn's Lemma
       - Number Theory
@@ -31,13 +36,19 @@ sections:
       - ref: FD-JI2RH
       - ref: FD-BWVRA
   - slug: groups-and-subgroups
-    title: Groups and Subgroups
+    title: Groups and subgroups
     parent: preliminaries
-    lede: 'Cosets of a subgroup partition a group; for finite groups this gives Lagrange''s
-      theorem. A normal subgroup defines a quotient group. The isomorphism theorems describe
-      kernels, images, products of subgroups, and successive quotients. Subgroups of a quotient
-      correspond to subgroups containing the kernel. Cauchy''s theorem gives an element of
-      order $p$ for every prime $p$ dividing the order of a finite group.'
+    lede: >-
+      Two left cosets of a subgroup $H\le G$ are equal or disjoint, so for finite $G$,
+      $\abs{G}=[G:H]\,\abs{H}$ (Lagrange's theorem). A subgroup $N\le G$ is normal if and only
+      if $(aN)(bN)=abN$ is well defined on cosets, and then $G/N$ is a group. The isomorphism
+      theorems: a homomorphism $\varphi\colon G\to G'$ induces $G/\ker\varphi\cong\im\varphi$;
+      for $H\le G$ and $N\trianglelefteq G$, $HN/N\cong H/(H\cap N)$; for normal subgroups
+      $N\le M$ of $G$, $(G/N)/(M/N)\cong G/M$; and $M\mapsto M/N$ is a bijection from the
+      subgroups of $G$ containing $N$ to the subgroups of $G/N$. Every subgroup of a cyclic
+      group is cyclic, and a cyclic group of order $n$ has exactly one subgroup of each order
+      dividing $n$. Cauchy's theorem: if a prime $p$ divides $\abs{G}$, then $G$ has an
+      element of order $p$.
     topics:
       - Groups
       - Subgroups
@@ -55,7 +66,7 @@ sections:
       - ref: PR-VUKHO
       - ref: T-5KGVV
       - ref: T-SZRXI
-      - ref: T-F4O3E
+      - ref: T-GJNT5
       - ref: C-HWX2P
       - ref: PR-SF6ZE
       - ref: PR-YY3JG
@@ -75,13 +86,20 @@ sections:
       - ref: T-RLVA4
       - ref: PR-DJZLY
   - slug: group-actions-and-counting
-    title: Group Actions and Counting
+    title: Group actions and counting
     parent: groups-and-subgroups
-    lede: "For a finite group action, an orbit's size is the index of its stabilizer and therefore
-      divides the group order. Conjugation has conjugacy classes as orbits and centralizers
-      as stabilizers, giving the class equation. In a nontrivial finite $p$-group every noncentral
-      conjugacy class has size divisible by $p$, so $p$ divides the order of the center. Burnside's
-      lemma counts orbits by averaging fixed-point counts."
+    lede: >-
+      For an action of a group $G$ on a set $X$ and $x\in X$, the orbit-stabilizer theorem
+      gives a bijection $G/G_x\to G\cdot x$, $gG_x\mapsto g\cdot x$, so $\abs{G\cdot
+      x}=[G:G_x]$, which divides $\abs{G}$ when $G$ is finite. For the conjugation action of
+      $G$ on itself, the orbits are the conjugacy classes and the stabilizer of $g$ is its
+      centralizer $C_G(g)$, which gives the class equation
+      $\abs{G}=\abs{Z(G)}+\sum_i[G:C_G(g_i)]$ over representatives $g_i$ of the noncentral
+      conjugacy classes. For a nontrivial finite $p$-group each $[G:C_G(g_i)]$ is a positive
+      power of $p$, so $p$ divides $\abs{Z(G)}$ and $Z(G)\ne1$. Burnside's lemma: for a finite
+      group $G$ acting on a finite set $X$, the number of orbits is
+      $\frac{1}{\abs{G}}\sum_{g\in G}\abs{X^g}$, where $X^g$ is the set of points fixed by
+      $g$.
     topics:
       - Group Actions
       - Orbit-Stabilizer
@@ -93,10 +111,9 @@ sections:
       - ref: D-WYC7C
       - ref: D-3T6O2
       - ref: D-KGGWK
-      - ref: FD-W3MQW
+      - ref: FD-IGEOR
       - ref: FD-XRRNZ
-      - ref: T-OBPSZ
-      - ref: T-KANHW
+      - ref: T-QYDVH
       - ref: PR-GSDKO
       - ref: PR-KGHJ2
       - ref: PR-E6VI4
@@ -113,22 +130,22 @@ sections:
       - ref: C-CM7ZS
       - ref: FF-OL75S
   - slug: sylow-theory
-    title: Sylow Theory
+    title: Sylow theory
     parent: group-actions-and-counting
-    lede: Sylow theory applies [Group Actions and
-      Counting](group-actions-and-counting.html) to subgroups of prime-power order. If
-      $|G|=p^a m$ with $p\nmid m$, then $G$ has a subgroup of order $p^a$, all such
-      subgroups are conjugate, and their number divides $m$ and is congruent to $1$
-      modulo $p$. A unique Sylow subgroup is normal. Frattini's argument relates a
-      normal subgroup to the normalizer of one of its Sylow subgroups.
+    lede: >-
+      Let $G$ be a finite group with $\abs{G}=p^km$, $p$ prime and $p\nmid m$. The Sylow
+      theorems, proved with the actions of [group actions and
+      counting](group-actions-and-counting.html): $G$ has a subgroup of order $p^k$; every
+      $p$-subgroup of $G$ is contained in one, and any two are conjugate; and their number
+      $n_p$ divides $m$ and satisfies $n_p\equiv1\pmod{p}$. A Sylow $p$-subgroup is normal if
+      and only if $n_p=1$. Frattini's argument: if $N\trianglelefteq G$ and $P$ is a Sylow
+      $p$-subgroup of $N$, then $G=N_G(P)\,N$.
     topics:
       - Sylow Theory
       - p-Groups
     items:
       - ref: D-7TQ2M
-      - ref: T-4RADG
       - ref: T-WRMBM
-      - ref: T-RRK4J
       - ref: T-EF2MZ
       - ref: T-3X5FF
       - ref: ST-DKYXZ
@@ -142,12 +159,16 @@ sections:
       - ref: PR-IGLFV
       - ref: L-Q44MT
   - slug: permutation-groups
-    title: Permutation Groups
+    title: Permutation groups
     parent: group-actions-and-counting
-    lede: 'Cayley''s theorem embeds each group in a symmetric group. Conjugacy classes in
-      $S_n$ are determined by cycle type and indexed by partitions of $n$. The sign homomorphism
-      has kernel $A_n$, which is simple for $n\geq 5$. The Galois group of an irreducible
-      separable polynomial acts transitively on its roots.'
+    lede: >-
+      By Cayley's theorem, left multiplication embeds a group $G$ in the symmetric group on
+      the set $G$. The sign $\operatorname{sgn}\colon S_n\to\{\pm1\}$ is a homomorphism, and a
+      cycle of length $\ell$ has sign $(-1)^{\ell-1}$. Two permutations in $S_n$ are conjugate
+      if and only if they have the same cycle type, so the conjugacy classes of $S_n$
+      correspond to the partitions of $n$. The alternating group $A_n$ is simple for $n\ge5$,
+      so $S_n$ is not solvable for $n\ge5$. The Galois group of an irreducible separable
+      polynomial of degree $n$ is a transitive subgroup of $S_n$.
     topics:
       - Permutations
       - Simple Groups
@@ -170,13 +191,21 @@ sections:
       - ref: PR-2JG3F
       - ref: PR-434DX
   - slug: series-and-solvability
-    title: Series, Solvability, and Nilpotence
+    title: Series, solvability, and nilpotence
     parent: group-actions-and-counting
-    lede: The Jordan–Hölder theorem identifies the composition factors of a finite group
-      up to isomorphism and permutation. A group is solvable when its derived series
-      reaches the identity. A finite group is nilpotent precisely when all its Sylow
-      subgroups are normal. Nilpotence implies solvability. The symmetric group $S_n$ is
-      solvable precisely when $n\leq 4$.
+    lede: >-
+      A composition series of a finite group $G$ is a chain $1=G_0\trianglelefteq
+      G_1\trianglelefteq\cdots\trianglelefteq G_r=G$ with every factor $G_{i+1}/G_i$ simple;
+      by the Jordan--Hölder theorem, the factors, with multiplicity and up to isomorphism, do
+      not depend on the series. A group is solvable if its derived series
+      $G\trianglerighteq[G,G]\trianglerighteq[[G,G],[G,G]]\trianglerighteq\cdots$ reaches $1$;
+      a finite group is solvable if and only if its composition factors are cyclic of prime
+      order. A group is nilpotent if its lower central series
+      $G\trianglerighteq[G,G]\trianglerighteq[G,[G,G]]\trianglerighteq\cdots$ reaches $1$.
+      Nilpotent groups are solvable, and $S_3$ is solvable and not nilpotent. A finite group
+      is nilpotent if and only if every Sylow subgroup is normal, if and only if it is the
+      direct product of its Sylow subgroups. The symmetric group $S_n$ is solvable if and only
+      if $n\le4$.
     topics:
       - Subgroup Series
       - Solvable Groups
@@ -204,14 +233,19 @@ sections:
       - ref: T-OHEFT
       - ref: D-43MDF
   - slug: products-and-classification
-    title: Presentations, Products, and Classification
+    title: Presentations, products, and classification
     parent: sylow-theory
-    lede: 'If $G=HK$ and $H\cap K=\{1\}$, then $G$ is an internal direct product when both
-      subgroups are normal and an internal semidirect product when $H$ is normal. An action
-      $K\to\operatorname{Aut}(H)$ defines an external semidirect product. Sylow theory can
-      establish normality of a subgroup. The structure theorem classifies finite abelian groups
-      by invariant factors or elementary divisors; presentations specify generators and relations
-      for further finite-group examples.'
+    lede: >-
+      Let $H,K\le G$ with $H\cap K=1$ and $HK=G$. If $H$ and $K$ are both normal, then $G\cong
+      H\times K$; if $H$ is normal, then $G\cong H\rtimes_\varphi K$ with
+      $\varphi(k)(h)=khk^{-1}$. For $K$ cyclic and homomorphisms $\varphi_1,\varphi_2\colon
+      K\to\Aut(H)$ whose images are conjugate in $\Aut(H)$, $H\rtimes_{\varphi_1}K\cong
+      H\rtimes_{\varphi_2}K$; and $\Aut(\ZZ/n\ZZ)\cong(\ZZ/n\ZZ)^\times$. The fundamental
+      theorem of finite abelian groups writes a finite abelian group uniquely as
+      $\ZZ/d_1\ZZ\times\cdots\times\ZZ/d_r\ZZ$ with $1<d_1\mid d_2\mid\cdots\mid d_r$
+      (invariant factors), and uniquely up to order as a product of cyclic groups of
+      prime-power order (elementary divisors). A presentation $\langle S\mid R\rangle$ is the
+      quotient of the free group on $S$ by the normal subgroup generated by $R$.
     topics:
       - Group Presentations
       - Free Groups
@@ -245,14 +279,15 @@ sections:
       - ref: FF-JKCAM
       - ref: FF-VAKLJ
   - slug: rings-and-ideals
-    title: Rings and Ideals
+    title: Rings and ideals
     parent: preliminaries
-    lede: "Ideals are exactly kernels of ring maps, so quotient rings carry the isomorphism
-      theorems. Prime and maximal ideals are recognised by their quotients: an ideal is prime
-      exactly when the quotient is a domain, and maximal exactly when the quotient is a field,
-      which makes maximal imply prime and shows the converse fails already in the integers
-      at the zero ideal. [Preliminaries](preliminaries.html) supplies Zorn's lemma, which
-      produces maximal ideals in the first place."
+    lede: >-
+      Let $R$ be a commutative ring with $1$. The ideals of $R$ are exactly the kernels of
+      ring homomorphisms out of $R$, and the isomorphism theorems hold for quotient rings. An
+      ideal $P$ is prime if and only if $R/P$ is an integral domain, and maximal if and only
+      if $R/P$ is a field; so every maximal ideal is prime, and $(0)\subseteq\ZZ$ is prime and
+      not maximal. By Zorn's lemma ([preliminaries](preliminaries.html)), every proper ideal
+      of $R$ is contained in a maximal ideal.
     topics:
       - Rings
       - Ideals
@@ -271,7 +306,6 @@ sections:
       - ref: D-7O2CH
       - ref: D-UI6CU
       - ref: D-JNCUB
-      - ref: D-O26OY
       - ref: T-U3EZL
       - ref: D-EOCCU
       - ref: D-GOFWL
@@ -291,14 +325,21 @@ sections:
       - ref: FD-SNOTW
       - ref: T-GYVNQ
   - slug: factorization-and-polynomials
-    title: Factorization and Polynomials
+    title: Factorization and polynomials
     parent: rings-and-ideals
-    lede: "Every field is a Euclidean domain, every Euclidean domain is a principal ideal
-      domain, and every principal ideal domain is a unique factorization domain. In a domain
-      every prime element is irreducible; the converse holds in a unique factorization domain
-      but can fail in $\\mathbb Z[\\sqrt{-5}]$. Gauss's lemma relates factorization of primitive
-      integer polynomials to factorization over the rationals. Eisenstein's criterion and
-      degree-preserving reduction modulo a prime give sufficient conditions for irreducibility."
+    lede: >-
+      Among integral domains, fields $\subsetneq$ Euclidean domains $\subsetneq$ principal
+      ideal domains $\subsetneq$ unique factorization domains $\subsetneq$ integral domains.
+      In an integral domain every prime element is irreducible, and in a unique factorization
+      domain every irreducible element is prime. In $\ZZ[\sqrt{-5}]$ the element $2$ is
+      irreducible and not prime: it divides $(1+\sqrt{-5})(1-\sqrt{-5})=6$ and neither factor.
+      Gauss's lemma: a primitive polynomial of positive degree in $\ZZ[x]$ is irreducible in
+      $\ZZ[x]$ if and only if it is irreducible in $\QQ[x]$. Eisenstein's criterion: if a
+      prime $p$ divides every coefficient of $f\in\ZZ[x]$ except the leading one, does not
+      divide the leading coefficient, and $p^2$ does not divide the constant term, then $f$ is
+      irreducible in $\QQ[x]$. If $p$ does not divide the leading coefficient of $f\in\ZZ[x]$
+      and the reduction of $f$ in $\FF_p[x]$ is irreducible, then $f$ is irreducible in
+      $\QQ[x]$.
     topics:
       - Factorization
       - Principal Ideal Domains
@@ -338,15 +379,19 @@ sections:
       - ref: FF-2AKVH
       - ref: FF-HAMDC
   - slug: commutative-algebra
-    title: Commutative Algebra
+    title: Commutative algebra
     parent: factorization-and-polynomials
-    lede: "Localization inverts a submonoid of the multiplicative monoid of a ring. Localization
-      at a prime gives a local ring $(R_{\\mathfrak p},\\mathfrak pR_{\\mathfrak p})$. For
-      a finitely generated module over a local ring, Nakayama's lemma gives $M=0$ if $\\mathfrak
-      mM=M$. The nilradical is the intersection of the prime ideals; the Jacobson radical
-      is the intersection of the maximal ideals. They agree for a finitely generated algebra
-      over a field. Hilbert's basis theorem states that a polynomial ring over a Noetherian
-      ring is Noetherian."
+    lede: >-
+      For a multiplicative submonoid $S$ of a commutative ring $R$, the localization $S^{-1}R$
+      is the initial ring under $R$ in which every element of $S$ is a unit. For a prime ideal
+      $\mathfrak p$, $R_\mathfrak p=(R\setminus\mathfrak p)^{-1}R$ is a local ring with
+      maximal ideal $\mathfrak pR_\mathfrak p$. Nakayama's lemma: for a finitely generated
+      module $M$ over a local ring $(R,\mathfrak m)$, $\mathfrak mM=M$ implies $M=0$. The
+      nilradical of $R$, the set of nilpotent elements, is the intersection of all prime
+      ideals; the Jacobson radical is the intersection of all maximal ideals; and for a
+      finitely generated algebra over a field the two coincide. A ring is Noetherian if every
+      ideal is finitely generated, and by Hilbert's basis theorem $R[x]$ is Noetherian when
+      $R$ is Noetherian.
     topics:
       - Commutative Algebra
       - Localization
@@ -362,7 +407,7 @@ sections:
     items:
       - ref: D-OXIVT
       - ref: D-TGB4R
-      - ref: D-JSZ77
+      - ref: D-DEFREGLR
       - ref: FF-CQSNC
       - ref: D-HWLVG
       - ref: D-VK2KZ
@@ -394,11 +439,15 @@ sections:
   - slug: modules
     title: Modules
     parent: rings-and-ideals
-    lede: 'Over a domain, free modules are projective and projective modules are torsion-free;
-      the converse implications need not hold. Every short exact sequence with a projective
-      quotient splits. Conversely, a module is projective if every short exact sequence having
-      it as quotient splits. Tensor products represent bilinear maps and are right exact;
-      tensoring with a flat module is exact.'
+    lede: >-
+      Over a commutative ring $R$, free modules are projective, and over an integral domain
+      projective modules are torsion-free. Neither implication reverses in general: the ideal
+      $(2,1+\sqrt{-5})$ of $\ZZ[\sqrt{-5}]$ is a projective module that is not free, and $\QQ$
+      is a torsion-free $\ZZ$-module that is not projective. A short exact sequence $0\to A\to
+      B\to C\to0$ of $R$-modules splits if $C$ is projective. The tensor product $M\otimes_RN$
+      represents $R$-bilinear maps out of $M\times N$, and $-\otimes_RN$ is right exact and in
+      general not left exact: applying $-\otimes_\ZZ\ZZ/2\ZZ$ to the injection
+      $\ZZ\xrightarrow{2}\ZZ$ gives the zero map $\ZZ/2\ZZ\to\ZZ/2\ZZ$.
     topics:
       - Modules
       - Free Modules
@@ -417,7 +466,6 @@ sections:
       - ref: FD-S2W5E
       - ref: PR-RIJSC
       - ref: D-LIEMF
-      - ref: D-IGB7I
       - ref: FD-CVEAI
       - ref: PR-DLPTR
       - ref: PR-RPL4Q
@@ -436,20 +484,24 @@ sections:
       - ref: PR-5PDNQ
       - ref: PR-KX7L7
       - ref: D-4KM4P
-      - ref: D-CRWZ7
       - ref: D-CYAJI
       - ref: D-4HEUB
       - ref: FD-2EUYX
       - ref: FD-BVM37
   - slug: structure-theorem
-    title: The Structure Theorem over a PID
+    title: The structure theorem over a PID
     parent: modules
-    lede: A finitely generated module over a principal ideal domain is a direct sum of a
-      free module and cyclic torsion modules. Invariant factors or elementary divisors
-      determine its isomorphism class. Over the integers this classifies finitely
-      generated abelian groups. A linear operator makes a vector space a module over a
-      polynomial ring, giving the applications in [Canonical
-      Forms](canonical-forms.html).
+    lede: >-
+      Let $R$ be a principal ideal domain and $M$ a finitely generated $R$-module. Then
+      $M\cong R^r\oplus R/(d_1)\oplus\cdots\oplus R/(d_s)$ for nonzero nonunits $d_1\mid
+      d_2\mid\cdots\mid d_s$ (invariant factors), and $M\cong
+      R^r\oplus\bigoplus_iR/(p_i^{e_i})$ for primes $p_i$ (elementary divisors); the rank $r$,
+      the ideals $(d_j)$, and the multiset of ideals $(p_i^{e_i})$ are determined by $M$. The
+      Smith normal form of a presentation matrix of $M$ computes the invariant factors. For
+      $R=\ZZ$ the theorem classifies finitely generated abelian groups. For $R=F[x]$ with $F$
+      a field, a finite-dimensional $F$-vector space with an operator $T$ is an $F[x]$-module
+      on which $x$ acts as $T$, and the theorem gives the [canonical
+      forms](canonical-forms.html) of $T$.
     topics:
       - Structure Theorem
       - Smith Normal Form
@@ -464,14 +516,20 @@ sections:
       - ref: L-Y5KNM
       - ref: L-W5S2W
   - slug: fields-and-extensions
-    title: Fields and Extensions
+    title: Fields and extensions
     parent: factorization-and-polynomials
-    lede: 'Field degrees multiply in finite towers. An algebraic element generates a finite
-      extension whose degree is that of its minimal polynomial. A finite normal extension
-      is a splitting field; separability requires the minimal polynomials to have distinct
-      roots. The derivative criterion detects repeated roots. Every algebraic extension of
-      a perfect field is separable. Finite fields of the same order are isomorphic, and their
-      finite extensions are Galois.'
+    lede: >-
+      For fields $K\subseteq L\subseteq M$, $[M:K]=[M:L][L:K]$. An element $\alpha\in L$ is
+      algebraic over $K$ if and only if $[K(\alpha):K]$ is finite, and then $[K(\alpha):K]$ is
+      the degree of the minimal polynomial of $\alpha$. An algebraic extension $L/K$ is normal
+      if every irreducible polynomial in $K[x]$ with a root in $L$ splits into linear factors
+      in $L[x]$; a finite extension is normal if and only if it is the splitting field of a
+      polynomial in $K[x]$. It is separable if the minimal polynomial of every element of $L$
+      has distinct roots. A polynomial $f$ has a repeated root in its splitting field if and
+      only if $\gcd(f,f')\ne1$, and every algebraic extension of a perfect field, such as a
+      field of characteristic $0$ or a finite field, is separable. For each prime power $q$
+      there is a field $\FF_q$ with $q$ elements, unique up to isomorphism, and every finite
+      extension of a finite field is normal and separable.
     topics:
       - Field Extensions
       - Fields
@@ -506,13 +564,11 @@ sections:
       - ref: D-WB4M5
       - ref: PR-3VQBI
       - ref: PR-ENHVC
-      - ref: PR-OMKPN
       - ref: PR-TLBPS
       - ref: C-C2GYX
       - ref: D-KQFIV
       - ref: FD-YYLYR
       - ref: PR-IK6AM
-      - ref: PR-XB3O7
       - ref: PR-25FLW
       - ref: T-3HPWT
       - ref: PR-YCTNC
@@ -532,16 +588,20 @@ sections:
       - ref: FF-MUJDE
       - ref: FF-UACKH
   - slug: galois-theory
-    title: Galois Theory
+    title: Galois theory
     parent: fields-and-extensions
-    lede: 'For a finite extension, being Galois is equivalent to being normal and separable,
-      and to having as many base-field automorphisms as its degree. The Galois correspondence
-      is an inclusion-reversing bijection between intermediate fields and subgroups. Field
-      degrees over the base correspond to subgroup indices. Normal intermediate extensions
-      correspond to normal subgroups, with the quotient group acting as their Galois group.
-      The Galois group of an irreducible separable polynomial acts transitively on its roots.
-      In characteristic different from two, the discriminant detects whether this group lies
-      in the alternating group. Resolvents provide further information for quartics.'
+    lede: >-
+      A finite extension $L/K$ is Galois if it is normal and separable, equivalently if the
+      fixed field of $\Aut(L/K)$ is $K$, equivalently if $\abs{\Aut(L/K)}=[L:K]$. For $L/K$
+      finite Galois with group $G$, $H\mapsto L^H$ is an inclusion-reversing bijection from
+      the subgroups of $G$ to the intermediate fields, with $[L:L^H]=\abs{H}$; the extension
+      $L^H/K$ is Galois if and only if $H\trianglelefteq G$, and then $\Gal(L^H/K)\cong G/H$.
+      The Galois group of a separable polynomial of degree $n$ embeds in $S_n$ through its
+      action on the roots, as a transitive subgroup when the polynomial is irreducible; in
+      characteristic different from $2$ it lies in $A_n$ if and only if the discriminant is a
+      square in $K$. For an irreducible separable quartic, the factorization of the resolvent
+      cubic and whether the discriminant is a square determine the Galois group among $S_4$,
+      $A_4$, $V_4$, and $\{D_4,C_4\}$.
     topics:
       - Galois Theory
     items:
@@ -569,16 +629,26 @@ sections:
       - ref: PR-XDWOP
       - ref: T-QX5QU
   - slug: linear-algebra
-    title: Linear Algebra
+    title: Linear algebra
     parent: modules
-    lede: "Vector spaces are modules over a field. In finite dimension, rank and nullity sum
-      to the dimension, and nondegeneracy of a bilinear form is equivalent to invertibility
-      of its Gram matrix. In characteristic different from two, polarization identifies quadratic
-      forms with symmetric bilinear forms. Over the reals, symmetric matrices are orthogonally
-      diagonalizable, and signature classifies nondegenerate symmetric forms up to change
-      of basis. Classical matrix groups preserve specified forms; ordered-basis counts give
-      their orders over finite fields. This section also includes problems on Toeplitz operators,
-      polar decomposition, and the spectral theorem on a Hilbert space."
+    lede: >-
+      A vector space is a module over a field: every vector space has a basis, every short
+      exact sequence of vector spaces splits, and $\dim\ker T+\dim\im T=\dim V$ for a linear
+      map $T$ on a finite-dimensional space $V$. A bilinear form $b$ on $V$ with ordered basis
+      $e=(e_1,\ldots,e_n)$ has Gram matrix $G_e=(b(e_i,e_j))_{i,j}$; for $e'=eP$ with
+      $P\in\GL_n(F)$, $G_{e'}=P^tG_eP$, so $b$ is nondegenerate if and only if $\det G_e\ne0$,
+      a condition independent of $e$. In characteristic different from $2$, $q(v)=b(v,v)$ and
+      $b(v,w)=\frac12\big(q(v+w)-q(v)-q(w)\big)$ identify symmetric bilinear forms with
+      quadratic forms. A real symmetric matrix is orthogonally diagonalizable (the spectral
+      theorem), and by Sylvester's law of inertia a real symmetric bilinear form is determined
+      up to change of basis by its rank and signature. The groups $\GL_n(F)$,
+      $\operatorname{O}(q)$, and $\operatorname{Sp}(b)$ are the automorphism groups of $V$, of
+      a quadratic form $q$, and of an alternating form $b$; counting ordered bases one vector
+      at a time gives $\abs{\GL_n(\FF_q)}=\prod_{i=0}^{n-1}(q^n-q^i)$.
+
+      The section also lists problems on operators on infinite-dimensional spaces: Toeplitz
+      operators, the polar decomposition, and the spectral theorem for operators on a Hilbert
+      space.
     topics:
       - Linear Algebra
       - Vector Spaces
@@ -610,7 +680,6 @@ sections:
       - ref: D-MCUTE
       - ref: D-3V3SP
       - ref: D-3V3SP
-      - ref: PR-OYP6J
       - ref: PR-UQ3XJ
       - ref: PR-GXII2
       - ref: PR-TGFTL
@@ -634,15 +703,21 @@ sections:
       - ref: D-23FX7
       - ref: FF-VKYM3
   - slug: canonical-forms
-    title: Canonical Forms
+    title: Canonical forms
     parent: structure-theorem
-    lede: 'A linear operator on a finite-dimensional vector space defines a module over the
-      polynomial ring in one variable. The [structure theorem](structure-theorem.html) gives
-      rational canonical form through invariant factors and Jordan form when the characteristic
-      polynomial splits. For each eigenvalue, its exponent in the minimal polynomial is the
-      largest Jordan-block size; its exponent in the characteristic polynomial is the sum
-      of those sizes; its eigenspace dimension is the number of blocks. An operator is diagonalizable
-      precisely when its minimal polynomial is a product of distinct linear factors.'
+    lede: >-
+      A linear operator $T$ on a finite-dimensional vector space $V$ over a field $F$ makes
+      $V$ a finitely generated torsion $F[x]$-module, to which [the structure
+      theorem](structure-theorem.html) applies. The invariant factors $d_1\mid\cdots\mid d_s$
+      give the rational canonical form, the block diagonal matrix of their companion matrices,
+      which exists over every field; $d_s$ is the minimal polynomial of $T$ and $d_1\cdots
+      d_s$ its characteristic polynomial. When the characteristic polynomial splits over $F$,
+      the elementary divisors $(x-\lambda)^e$ give the Jordan form. For an eigenvalue
+      $\lambda$, the exponent of $x-\lambda$ in the minimal polynomial is the size of the
+      largest Jordan block for $\lambda$, its exponent in the characteristic polynomial is the
+      sum of the sizes of the Jordan blocks for $\lambda$, and $\dim\ker(T-\lambda)$ is the
+      number of those blocks. $T$ is diagonalizable if and only if its minimal polynomial is a
+      product of distinct linear factors in $F[x]$.
     topics:
       - Canonical Forms
       - Minimal and Characteristic Polynomials
@@ -671,17 +746,18 @@ sections:
       - ref: PR-K6MMW
       - ref: PR-K6MMW
   - slug: semisimplicity-and-representations
-    title: Semisimplicity and Representations
+    title: Semisimplicity and representations
     parent: modules
     lede: >-
-      A finite-dimensional [representation](../../wiki/algebra/representations/index.html)
-      of a finite group $G$ over a field $k$ is a finite-dimensional left $k[G]$-module. A
-      module is [semisimple](../../tag/D-CYAJI.html) when it is a direct sum of simple modules.
-      If the characteristic of $k$ does not divide $|G|$, Maschke's theorem gives decomposition
-      into irreducibles. A semisimple Artinian ring is a finite product of matrix rings over
-      division rings. Over an algebraically closed field, equivariant endomorphisms of a finite-dimensional
-      irreducible representation are scalar. Over $\mathbb C$, the number of irreducible characters
-      equals the number of conjugacy classes.
+      A [representation](../../wiki/algebra/representations/index.html) of a finite group $G$
+      over a field $k$ is a finite-dimensional left $k[G]$-module. A module is
+      [semisimple](../../tag/D-CYAJI.html) if it is a direct sum of simple modules. Maschke's
+      theorem: if the characteristic of $k$ does not divide $\abs{G}$, every $k[G]$-module is
+      semisimple. By the Artin--Wedderburn theorem, a semisimple ring is a finite product of
+      matrix rings $M_{n_i}(D_i)$ over division rings $D_i$. Schur's lemma: over an
+      algebraically closed field, the $G$-equivariant endomorphisms of an irreducible
+      representation are the scalars. Complex characters of $G$ are class functions, and the
+      number of irreducible complex characters of $G$ equals the number of conjugacy classes.
     topics:
       - Semisimplicity
       - Algebras

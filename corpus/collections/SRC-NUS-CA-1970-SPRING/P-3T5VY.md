@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Find the number of zeroes, counting multiplicities, of the polynomial
 
 $f(z) = 2z^5 - 6z^2 - z + 1 = 0$

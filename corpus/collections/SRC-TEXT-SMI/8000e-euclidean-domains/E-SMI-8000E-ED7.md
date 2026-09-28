@@ -36,7 +36,7 @@ where the $a_i$ are elements of $R$.
 :::
 
 
-::: solution
+::: {.solution}
 Let
 $$
 N=Ra_1e_1+\cdots+Ra_me_m\subseteq R^m.
@@ -45,7 +45,7 @@ Because the $e_i$ are the standard coordinate vectors, this is exactly the
 submodule whose $i$th coordinate lies in $Ra_i$.
 
 <1>1. Define the coordinatewise quotient map.
-::: proof
+::: {.proof}
 Set
 $$
 \Phi:R^m\longrightarrow
@@ -61,7 +61,7 @@ $R$-linear.
 :::
 
 <1>2. The map $\Phi$ is surjective.
-::: proof
+::: {.proof}
 Given arbitrary residue classes
 $$
 (r_1+Ra_1,\ldots,r_m+Ra_m),
@@ -71,7 +71,7 @@ surjective.
 :::
 
 <1>3. The kernel of $\Phi$ is $N$.
-::: proof
+::: {.proof}
 A vector $(r_1,\ldots,r_m)$ lies in $\ker\Phi$ exactly when
 $$
 r_i+Ra_i=Ra_i
@@ -96,7 +96,7 @@ $$
 :::
 
 <1>4. Apply the first isomorphism theorem.
-::: proof
+::: {.proof}
 Since $\Phi$ is surjective and has kernel $N$,
 $$
 R^m/N\cong

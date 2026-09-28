@@ -23,7 +23,7 @@ Define the span $V = \langle v_1, \dots, v_k \rangle$ of the vectors.
 Prove that there is a subset of the vectors $v_1, \dots, v_k$ that forms a basis for $V$.
 :::
 
-::: solution
+::: {.solution}
 The span of $v_1,\ldots,v_k$ is
 \[
 V=\langle v_1,\ldots,v_k\rangle

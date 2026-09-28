@@ -26,7 +26,7 @@ If both $i_*$ and $j_*$ are trivial?
 (b) Give an example where $i_*$ and $j_*$ are trivial but neither $U$ nor $V$ have trivial fundamental groups.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the fundamental group $\pi_1(X, x_0)$ under Seifert-van Kampen when one or both inclusion homomorphisms $i_*, j_*$ from $\pi_1(U \cap V)$ are trivial, and provide an explicit non-trivial example.
 
 <1>1. General Seifert-van Kampen relation structure:

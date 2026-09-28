@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F/k$ be a Galois extension of degree $n$.
 Determine the order of $\operatorname{Gal}(F/k)$.
 :::
 
-::: solution
+::: {.solution}
 One has
 \[
 |\operatorname{Gal}(F/k)|=n.
@@ -34,14 +34,14 @@ One has
 
 <1>1. A finite separable extension of degree $n$ has exactly $n$ distinct
 $k$-embeddings into an algebraic closure of $k$.
-::: proof
+::: {.proof}
 This is the standard embedding theorem for finite separable extensions. Since
 $F/k$ is Galois, it is separable.
 :::
 
 <1>2. Every $k$-embedding $F\hookrightarrow\overline{k}$ has image equal to
 $F$.
-::: proof
+::: {.proof}
 Because $F/k$ is Galois, it is normal. Normality means that every irreducible
 polynomial over $k$ having one root in $F$ splits completely in $F$; equivalently,
 every $k$-embedding of $F$ into an algebraic closure maps $F$ onto itself.
@@ -49,7 +49,7 @@ every $k$-embedding of $F$ into an algebraic closure maps $F$ onto itself.
 
 <1>3. Hence the $n$ embeddings in <1>1 are exactly the $k$-automorphisms of
 $F$.
-::: proof
+::: {.proof}
 By <1>2 each embedding is an automorphism of $F$ over $k$, and every element of
 $\operatorname{Gal}(F/k)$ is such an embedding. Therefore
 \[

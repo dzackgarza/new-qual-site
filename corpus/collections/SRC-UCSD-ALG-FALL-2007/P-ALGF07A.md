@@ -25,7 +25,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $240 = 2^4 \cdot 3 \cdot 5$.
 
 (a) How many $p$-Sylow subgroups might $G$ have, for $p = 2, 3, 5$?

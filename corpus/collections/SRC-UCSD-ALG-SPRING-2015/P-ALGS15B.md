@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Let $K/F$ be a field extension and let $f \in F[x]$.
 If $A = F[x]/(f)$, show that $K \otimes_F A \cong K[x]/(f)$ as $F$-algebras.
 

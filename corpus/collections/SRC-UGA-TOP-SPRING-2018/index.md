@@ -31,6 +31,6 @@ source:
     year: 2018
 ---
 
-::: remark
-Exam #3 repeats the compact-subset-of-a-Hausdorff-space theorem already represented by [[P-SG462]], and reuses that card.
+::: {.remark}
+Problem 3 is the same problem as Spring 2008 Problem 1.
 :::

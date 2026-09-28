@@ -30,7 +30,7 @@ Prove that the commutator subgroup $G'$ of $G$ is a characteristic subgroup — 
 [A subgroup $H$ of $G$ is a *characteristic* subgroup iff $f(H) = H$ for all automorphisms $f$ of $G$.]
 :::
 
-::: solution
+::: {.solution}
 Recall that
 $$
 G'=\langle [x,y]:x,y\in G\rangle,
@@ -39,7 +39,7 @@ G'=\langle [x,y]:x,y\in G\rangle,
 $$
 
 <1>1. The commutator subgroup is characteristic.
-::: proof
+::: {.proof}
 Let
 $$
 \varphi:G\longrightarrow G
@@ -71,7 +71,7 @@ $$
 :::
 
 <1>2. The quotient $G/G'$ is abelian.
-::: proof
+::: {.proof}
 For arbitrary $x,y\in G$, the commutator
 $$
 [x,y]=xyx^{-1}y^{-1}
@@ -91,7 +91,7 @@ $$
 :::
 
 <1>3. Every homomorphism from $G$ to an abelian group kills $G'$.
-::: proof
+::: {.proof}
 Let
 $$
 f:G\longrightarrow K

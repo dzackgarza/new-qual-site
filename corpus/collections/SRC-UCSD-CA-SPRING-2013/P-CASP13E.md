@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $x_n$ be a sequence of distinct real numbers.
 Show that there exists a function holomorphic on the upper half-plane, $f \in \operatorname{Hol}(\mathbb{C}_+)$, such that $f(i + x_n) = 0$ for all $n$ if and only if $$\sum_n \frac{1}{x_n^2 + 4} < \infty.$$
 :::
 
-::: solution
+::: {.solution}
 The statement is false as printed. In fact the identically zero function is
 already a holomorphic function vanishing at all $x_n+i$, regardless of the
 series. Even if one requires $f\not\equiv0$, the claim remains false for

@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(X, d)$ and $(Y, \rho)$ be metric spaces, let $f: X \to Y$ be a function, and let $x_0 \in X$. Prove that the following two statements are equivalent:
 
 1. For every $\varepsilon > 0$, there exists $\delta > 0$ such that $\rho(f(x), f(x_0)) < \varepsilon$ whenever $d(x, x_0) < \delta$.
 2. For every sequence $(x_n)_{n=1}^\infty$ in $X$ with $\lim_{n \to \infty} x_n = x_0$, the image sequence satisfies $\lim_{n \to \infty} f(x_n) = f(x_0)$ in $Y$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the equivalence between $\varepsilon$-$\delta$ continuity and sequential continuity of $f$ at a point $x_0$.
 
 <1>1. Statement (1) implies Statement (2):

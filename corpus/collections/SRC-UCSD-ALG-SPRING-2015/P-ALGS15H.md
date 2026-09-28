@@ -20,7 +20,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field with $G \subseteq \mathrm{Aut}(K)$ a finite group of automorphisms of $K$.
 Let $F = \mathrm{Fix}(G)$.
 Let $\alpha \in K$ and let $f = \mathrm{minpoly}_F(\alpha)$.

@@ -16,7 +16,7 @@ Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/top
 
 [Harvard Math 131 midterm](https://people.math.harvard.edu/~bullery/math131/Midterm.pdf)
 
-## Qual Workshop Materials
+## Qualifying exam workshop materials
 
 - [[SRC-TOP-WORKSHOP]], the numbered-day UNL topology workshop packet.
 
@@ -24,10 +24,9 @@ Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/top
 
 ## Qualifying-exam collections
 
-The vendored UNL topology exam PDFs from 2002–2020 are already represented as source collections.
-Browse them on the [Sources listing](exams.html) rather than through a second raw-PDF list here.
+The UNL topology qualifying exams from 2002–2020 are source collections on the [Sources listing](exams.html).
 
-The older compiled scans are also source collections:
+Compiled scans of earlier exams:
 
 - [[SRC-TOPOLOGY-PHD-F07]]
 

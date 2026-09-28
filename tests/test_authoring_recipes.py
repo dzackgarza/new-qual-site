@@ -92,6 +92,51 @@ def test_card_commit_preserves_other_staged_work_and_skips_hook(tmp_path: Path) 
     assert not (tmp_path / "hook-invoked").exists()
 
 
+def authoring_repo(tmp_path: Path) -> tuple[Path, Path]:
+    collection = workspace(tmp_path)
+    run(tmp_path, "git", "init", "-q")
+    run(tmp_path, "git", "config", "user.name", "Authoring recipe test")
+    run(tmp_path, "git", "config", "user.email", "authoring@example.invalid")
+    run(tmp_path, "git", "config", "commit.gpgsign", "false")
+    hooks = tmp_path / "hooks"
+    hooks.mkdir()
+    run(tmp_path, "git", "config", "core.hooksPath", str(hooks))
+    run(tmp_path, "git", "add", "corpus")
+    run(tmp_path, "git", "commit", "-qm", "initial cards")
+    hook = hooks / "pre-commit"
+    hook.write_text("#!/bin/sh\necho invoked > hook-invoked\nexit 1\n")
+    hook.chmod(0o755)
+    return collection, collection / "open card.md"
+
+
+def test_card_commit_skips_hooks_when_the_problem_statement_changes(tmp_path: Path) -> None:
+    """Content commits run no gate; the extraction detector refuses the push instead."""
+    _, target = authoring_repo(tmp_path)
+    target.write_text(target.read_text().replace("Show that", "Prove that", 1))
+
+    run(tmp_path, "just", "commit-card", "E-CENTER", "statement edit")
+
+    assert not (tmp_path / "hook-invoked").exists()
+    assert run(tmp_path, "git", "log", "-1", "--format=%s").stdout.strip() == "statement edit"
+
+
+def test_card_commit_refuses_to_run_from_a_secondary_worktree(tmp_path: Path) -> None:
+    """QUAL-09: a stream that opened a worktree learns it at its next card commit."""
+    _, target = authoring_repo(tmp_path)
+    run(tmp_path, "git", "worktree", "add", "-q", str(tmp_path / "second"))
+    target.write_text(target.read_text() + "\nAn authored remark.\n")
+
+    result = subprocess.run(
+        ("just", "--justfile", str(ROOT / "justfile"), "--working-directory", str(tmp_path), "commit-card", "E-CENTER", "remark"),
+        text=True,
+        capture_output=True,
+    )
+
+    assert result.returncode != 0
+    assert "QUAL-09" in result.stderr
+    assert run(tmp_path, "git", "log", "-1", "--format=%s").stdout.strip() == "initial cards"
+
+
 def collection_workspace(root: Path) -> Path:
     collection = workspace(root)
     source = yaml.safe_load((KINDS / "SRC-NEILNOTES.md").read_text().split("---\n")[1])

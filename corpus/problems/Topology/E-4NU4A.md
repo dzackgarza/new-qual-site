@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that an injective continuous map from a compact space to a Hausdorff space is an embedding (a homeomorphism onto its image).
 :::
 
-::: solution
+::: {.solution}
 Let $f:X\to Y$ be continuous and injective, with $X$ compact and $Y$ Hausdorff.
 
 <1>1. The corestriction
@@ -35,7 +35,7 @@ $$
 is a continuous bijection.
 
 <1>2. It is a closed map.
-::: proof
+::: {.proof}
 If $C\subseteq X$ is closed, then $C$ is compact. Hence $f(C)$ is compact in $Y$, and compact subsets of a Hausdorff space are closed. Therefore $f(C)$ is closed in the subspace $f(X)$.
 :::
 

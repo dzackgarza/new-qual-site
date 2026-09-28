@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field and let the group $G = \GL(m, k) \cross \GL(n, k)$ acts on the set of $m\times n$ matrices $M_{m, n}(k)$ as follows:
 \[
 (A, B) \cdot X = AXB\inv

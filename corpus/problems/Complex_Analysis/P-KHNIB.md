@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate the integral
 $$
 \int_\mathbb{R} {dx \over 1 + x^4}
@@ -24,7 +24,7 @@ $$
 What are the poles of ${1\over 1 + z^4}$ ?
 :::
 
-::: solution
+::: {.solution}
 The poles are the four roots of
 \[
 z^4=-1=e^{i(\pi+2\pi k)},

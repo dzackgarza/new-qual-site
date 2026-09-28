@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Recall that a subgroup $H$ of $K$ is characteristic in $K$, written $H\,\mathrm{char}\,K$, if for every automorphism $\sigma \in \mathrm{Aut}(K)$, we have $\sigma(H) = H$.
 Recall also that the notation $K \trianglelefteq G$ means that $K$ is a normal subgroup of $G$.
 

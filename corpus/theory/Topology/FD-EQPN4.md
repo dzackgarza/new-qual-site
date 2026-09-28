@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-EQPN4
 kind: definition
-title: 'Definition: the indiscrete topology'
+title: Indiscrete topology
 prompts:
 - What is the indiscrete topology on a set $X$?
 classification:
@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-For $X$ a space, the indiscrete topology is given by $\tau = \theset{\emptyset, X}$.
+Let $X$ be a set.
+The \dfn{indiscrete topology} on $X$ is the [[D-2TZAI|topology]] $\tau = \ts{\emptyset, X}$.
 :::

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $A_1 = \{z \in \mathbb{C} : 0 < |z| < 1\}$ and $A_2 = \{z \in \mathbb{C} : 1 < |z| < 2\}$.
 Prove $A_1$ and $A_2$ are not conformally equivalent.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 a.
 Let Let $f:{\mathbb C}\rightarrow {\mathbb C}$ be an entire function. Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $|z|>R$ the inequality $$|f(z)| \leq L |z|^m$$ holds. 
 Prove that $f$ is a polynomial of degree $\leq m$.
@@ -25,7 +25,7 @@ Let $f:{\mathbb C}\rightarrow {\mathbb C}$ be an entire function. Suppose that t
 Prove that $f$ must be a constant.
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 \abs{f^{(n)}(z)} 
 &= \abs{ {1\over 2\pi i} \oint_\gamma {f(\xi) \over (\xi - z)^{n+1}} \dxi } \\

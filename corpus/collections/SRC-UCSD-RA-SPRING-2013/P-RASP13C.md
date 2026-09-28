@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f : [0, 1] \to \mathbb{R}$ be a continuous function.
 Define the signed Borel measure $\mu$ on $[0, 1]$ by $d\mu = f \, dm$.
 Assume
@@ -35,8 +35,8 @@ $$
 Prove that $\mu = 0$.
 :::
 
-::: solution
-::: proof
+::: {.solution}
+::: {.proof}
 By linearity, the moment hypothesis implies
 \[
 \int_0^1 p(x)f(x)\,dx=0

@@ -15,14 +15,14 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 11. Show that if f is an entire function of finite order that omits two values, then f is constant.
     This result remains true for any entire function and is known as Picard’s little theorem.
 
 [Hint: If f misses a, then $f ( z ) - a$ is of the form $e ^ { p ( z ) }$ where p is a polynomial.]
 :::
 
-::: solution
+::: {.solution}
 Suppose the entire function $f$ has finite order and omits two distinct values $a,b\in\mathbb C$.
 
 Since $f-a$ is an entire finite-order function with no zeros, Hadamard's factorization theorem implies

@@ -40,7 +40,7 @@ $$
 If $X$ is compact in the metric $d$, then the space $\mathcal{H}$ is compact in the Hausdorff metric $D$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the foundational theory of the hyperspace $(\mathcal{H}, D)$ of non-empty closed, bounded subsets equipped with the Hausdorff metric: metric axioms, completeness inheritance, total boundedness inheritance, and compactness.
 
 <1>1. Part (a): $D$ is a well-defined metric on $\mathcal{H}$.

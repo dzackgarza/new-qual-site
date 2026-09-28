@@ -27,6 +27,6 @@ source:
     year: 2019
 ---
 
-::: remark
-UNL Math 825/826 qualifying exam, January 23, 2019. UGA Spring 2019 is the departmental Quals paper (`SRC-UGA-RA-SPRING-2019`).
+::: {.remark}
+UNL Math 825/826 qualifying exam, January 23, 2019. It is a different exam from the [[SRC-UGA-RA-SPRING-2019|UGA real analysis exam of Spring 2019]].
 :::

@@ -1,0 +1,19 @@
+{
+  "source_pdf": "assets/attachments/solution8.pdf",
+  "source_pdf_sha256": "754a531c1e2f27bd520523f765aaa9389ff14fe8973e6443874f5ef9aa788d97",
+  "extracted_markdown": "assets/attachments/solution8_extracted.md",
+  "extracted_markdown_sha256": "07cc8e6826f9999d4772d342065e975ed237db8c6c484a71f4d752d063002969",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution8.pdf --language en",
+  "generated_at": "2026-09-14",
+  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/solution8.md",
+  "superseded_extraction_sha256": "35cddf3d95fa0dbf5c5ed70e21f130f55690df852155fd56b575fca65ff4052d",
+  "fresh_vs_superseded_delta": "The fresh baseline has the same 517-line source structure. It changes only Problem 1's boxed T/F label capitalization and one worked-solution line in Problem 5, where Flash now emits the missing sine integrand/upper limit. No problem-card obligation changes.",
+  "source_identification": "Harvard Math 21b Spring 2018 Practice Final 8 with worked solutions and fourteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-8 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the fresh deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 2 contains source matching/graph material that Flash does not fully recover; the existing card records the unrecoverable display content rather than inventing it.",
+    "Several problem headings are absent from the extraction and are located only by their position between numbered problems and the fourteen-problem score table; affected cards already record that source condition."
+  ]
+}

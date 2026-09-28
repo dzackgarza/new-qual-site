@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BF5L2
 kind: definition
-title: '$L^+$: Measurable non-negative functions.'
+title: The class $L^+$ of nonnegative measurable functions
 classification:
   areas:
   - real-analysis
@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: {.definition}
-$f\in L^+$ iff $f$ is measurable and non-negative.
+Let $(X,\mcm)$ be a measurable space.
+The class \dfn{$L^+$}, or $L^+(X,\mcm)$, is the set of [[D-DHFN4|measurable]] functions $f\colon X\to[0,\infty]$.
 :::

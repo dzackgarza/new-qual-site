@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_0^\infty {\sin(x) \over x(x^2+1)}\, dx

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $X\colon G\to\mathrm{GL}_d(\mathbb{R})$ be an irreducible matrix representation of $G$ over the field of real numbers.
 Let $T\colon\mathbb{R}^d\to\mathbb{R}^d$ be an endomorphism of $X$.
 
@@ -27,7 +27,7 @@ Is it possible for $X'$ to be irreducible (as a complex matrix representation)?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 For (a), let \(G=C_4=\langle g:g^4=1
 angle\) and let \(V=\mathbb R^2\) with
 \[

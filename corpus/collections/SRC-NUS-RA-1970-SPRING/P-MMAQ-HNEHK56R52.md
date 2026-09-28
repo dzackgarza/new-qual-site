@@ -21,7 +21,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove each of the following statements.
 
 (f) If $f$ is Riemann integrable on $[\eps, 1]$ for all $0 < \eps < 1$, then $f$ is Lebesgue integrable on $[0,1]$ if $f$ is nonnegative and the following limit exists $\lim_{\varepsilon\to 0^+} \int_\varepsilon^1 f dx$.

@@ -32,6 +32,8 @@ so $X_\sigma = \hat C_d$ is the affine cone over the rational normal curve of de
 \begin{bmatrix} z_0 & z_1 & \cdots & z_{d-1} \\ z_1 & z_2 & \cdots & z_d \end{bmatrix} .
 \]
 For $d = 2$ this is the quadric cone $V(z_0 z_2 - z_1^2)$.
+
+![The cone $\sigma = \Cone(e_2, 2e_1 - e_2)$ and its dual $\sigma\dual$, with the generators $(1,0), (1,1), (1,2)$ of $S_\sigma$ circled.](../../../assets/algebraic-geometry/toric/quadric-cone-and-dual-cone-lattice.png){width=500px}
 :::
 
 ::: {.example title="The class group"}

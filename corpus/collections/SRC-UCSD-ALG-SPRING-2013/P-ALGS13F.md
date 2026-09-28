@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $E$ be the splitting field of $x^p - 2$ over $\mathbb{Q}$, where $p$ is an odd prime.
 
 (a) Prove that $E = \mathbb{Q}[\zeta_p, \sqrt[p]{2}]$ and find $[E:\mathbb{Q}]$.

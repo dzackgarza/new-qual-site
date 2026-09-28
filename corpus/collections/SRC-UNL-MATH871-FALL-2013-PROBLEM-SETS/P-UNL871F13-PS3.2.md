@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X=Y=\mathbb Z$, each with the finite-complement topology. Let $\mathcal T_{prod}$ be the product topology on $X\times Y$, and let $\mathcal T_{fc}$ be the finite-complement topology on $X\times Y$.
+Let $X=Y=\mathbb Z$, each with the finite-complement topology.
+Let $\mathcal T_{prod}$ be the product topology on $X\times Y$, and let $\mathcal T_{fc}$ be the finite-complement topology on $X\times Y$.
 
 Determine whether
 \[

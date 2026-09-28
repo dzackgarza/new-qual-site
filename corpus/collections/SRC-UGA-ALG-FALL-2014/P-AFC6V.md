@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order 96.
 
 a. Show that $G$ has either one or three 2-Sylow subgroups.
@@ -23,7 +23,7 @@ a. Show that $G$ has either one or three 2-Sylow subgroups.
 b. Show that either $G$ has a normal subgroup of order 32, or a normal subgroup of order 16.
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 |G|=96=2^5\cdot3,

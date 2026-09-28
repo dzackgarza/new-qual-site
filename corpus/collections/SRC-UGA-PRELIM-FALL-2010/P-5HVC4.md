@@ -24,7 +24,7 @@ Let $A = \begin{bmatrix} 0 & 1 \\ 6 & -1 \end{bmatrix}$.
 Prove that $A$ is diagonalizable and find a closed-form expression for $A^k \begin{bmatrix} 1 \\ 7 \end{bmatrix}$, $k \in \mathbb{N}$.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial is
 \[
 \det(\lambda I-A)=\lambda^2+\lambda-6=(\lambda-2)(\lambda+3).

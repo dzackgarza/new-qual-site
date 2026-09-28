@@ -24,7 +24,7 @@ audit:
   note: "Checked necessity by the tower law and constructed each subfield as an exact Frobenius root set, including splitting, cardinality, closure, and uniqueness."
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field of order 1024.
 
 (a) Find the prime field of $F$.
@@ -33,7 +33,7 @@ Let $F$ be a field of order 1024.
 Find all possible orders for $K$.
 :::
 
-::: solution
+::: {.solution}
 The prime field is $\mathbb F_2$. The possible subfield orders are
 $$
 \boxed{2,\quad4,\quad32,\quad1024},
@@ -42,7 +42,7 @@ with exactly one subfield of each order.
 
 <1>1. The characteristic is $2$ and $[F:\mathbb F_2]=10$.
 
-::: proof
+::: {.proof}
 The additive order of $1$ is a positive divisor of $1024$.
 It is greater than $1$, since a field has $1\ne0$, and is prime:
 a composite characteristic $ab$ with $1<a,b<ab$ would give
@@ -55,7 +55,7 @@ elements, so $[F:\mathbb F_2]=10$.
 
 <1>2. Any subfield has one of the four displayed orders.
 
-::: proof
+::: {.proof}
 Every subfield $K$ contains $\mathbb F_2$. Put
 $d=[K:\mathbb F_2]$ and $e=[F:K]$. These are finite positive
 integers, and the tower law gives $de=10$. Thus
@@ -64,7 +64,7 @@ $d\in\{1,2,5,10\}$, and $|K|=2^d$ belongs to the displayed list.
 
 <1>3. Each possible order occurs.
 
-::: proof
+::: {.proof}
 Fix a positive divisor $d$ of $10$ and put $q=2^d$.
 The polynomial $X^q-X$ divides $X^{1024}-X$ in $\mathbb F_2[X]$.
 Indeed, in the quotient by $(X^q-X)$ the residue class $x$ satisfies
@@ -93,7 +93,7 @@ and the root count gives $|K_d|=q=2^d$.
 
 <1>4. There is no second subfield of any listed order.
 
-::: proof
+::: {.proof}
 If $K\subseteq F$ is a subfield of order $2^d$, then Lagrange's
 theorem in $K^\times$ gives $a^{2^d}=a$ for each nonzero $a\in K$,
 and the equation holds at zero as well. Hence $K\subseteq K_d$.

@@ -17,6 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Let $\{e_n\}$ be an orthonormal basis for a Hilbert space $H$.
 
 a) Show that $e_n \to 0$ weakly.
@@ -27,6 +28,7 @@ b) Show that $e_n$ does not tend to zero strongly.
 
 c) Let $v_n = \frac{1}{n} \sum_{j=1}^{n} e_j$.
 Show that $v_n \to 0$ strongly.
+:::
 
 ::: {.solution}
 <1>1. Part (a): Weak convergence $e_n \rightharpoonup 0$:

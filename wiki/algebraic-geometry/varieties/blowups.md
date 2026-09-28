@@ -9,8 +9,8 @@ topics:
 
 # Blowups
 
-The one birational modification that is asked about by name.
-Everything useful follows from two formulas, and both are worth being able to derive rather than quote.
+Blowups are the basic birational modification used throughout the surface theory.
+Their numerical behavior is controlled by the exceptional divisor and the canonical-class formula.
 
 [[D-VARBLOW]]
 
@@ -18,7 +18,7 @@ Everything useful follows from two formulas, and both are worth being able to de
 
 ## What it is used for
 
-Resolving curve singularities is the first use, and in dimension one it is not even needed: the normalization already does it, because normal plus dimension one is regular.
+For curves, normalization resolves singularities because a normal one-dimensional variety is regular.
 
 [[D-QJ5M9]]
 

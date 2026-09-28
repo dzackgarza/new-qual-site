@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-001
 kind: problem
-title: Kent State ring-theory qualifying problem 1
+title: 'Examples of rings: irreducible polynomials, non-UFD domains, non-Euclidean PIDs, local rings'
 classification:
   areas: [algebra]
   topics: []

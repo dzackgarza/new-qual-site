@@ -2,13 +2,25 @@
 schema: qual/card@1
 id: P-BKS09-9B
 kind: problem
-title: Berkeley Spring 2009 prelim problem 9B
+title: $\sin nx$ has no pointwise convergent subsequence
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-25
+  note: Compared the authored statement and elementary nested-interval solution with the Spring 2009 solution-packet extraction.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: Independently supplied and checked the interval-oscillation lemma and the nested compact interval argument for an arbitrary subsequence.
 ---
 
 ::: {.problem}
@@ -19,4 +31,175 @@ Remark.
 This is an example from Ch. 7 of W. Rudin’s Principles of Mathematical Analysis, which is treated by the author using a result from the more advanced chapter on Lebesgue measure, namely the bounded convergence theorem.
 According to it, if a sequence of bounded continuous functions $g _ { k } \ ( = ( \sin n _ { k } x - \sin n _ { k + 1 } x ) ^ { 2 }$ in this example) tends to 0 pointwise, then $\textstyle \int g _ { k } ( t ) d t$ tend to 0 too.
 (In the example, the integral over the period $[ 0 , 2 \pi ]$ is equal to 2π regardless of k.) Below, an elementary proof is given; it is due to Evan O’Dorney (a high-school student taking Givental’s H104 class).
+:::
+
+::: {.solution}
+Let
+$$
+\sin(n_kx)
+$$
+be an arbitrary subsequence of the original sequence. Then
+$$
+n_k\longrightarrow\infty.
+$$
+
+<1>1. Let $I=[a,b]$ be a closed interval with $a<b$. For every sufficiently
+large positive integer $n$, there is a nondegenerate closed subinterval
+$J^+\subseteq I$ on which
+$$
+\sin(nx)\geq\frac12.
+$$
+
+::: {.proof}
+For each integer $m$, set
+$$
+J_{m,n}^+
+\coloneqq
+\left[
+\frac{2\pi m+\pi/6}{n},
+\frac{2\pi m+5\pi/6}{n}
+\right].
+$$
+On this interval,
+$$
+nx\in
+[2\pi m+\pi/6, 2\pi m+5\pi/6],
+$$
+so
+$$
+\sin(nx)\geq\frac12.
+$$
+
+The left endpoints of the intervals $J_{m,n}^+$ are spaced by
+$2\pi/n$. Choose $m$ so that the left endpoint lies in
+$$
+[a,a+2\pi/n).
+$$
+The corresponding right endpoint is then less than
+$$
+a+\frac{2\pi}{n}+\frac{2\pi}{3n}
+=
+a+\frac{8\pi}{3n}.
+$$
+For all sufficiently large $n$,
+$$
+\frac{8\pi}{3n}<b-a,
+$$
+so this whole interval $J_{m,n}^+$ lies inside $I$.
+:::
+
+<1>2. Let $I=[a,b]$ be a closed interval with $a<b$. For every sufficiently
+large positive integer $n$, there is a nondegenerate closed subinterval
+$J^-\subseteq I$ on which
+$$
+\sin(nx)\leq-\frac12.
+$$
+
+::: {.proof}
+For each integer $m$, set
+$$
+J_{m,n}^-
+\coloneqq
+\left[
+\frac{2\pi m+7\pi/6}{n},
+\frac{2\pi m+11\pi/6}{n}
+\right].
+$$
+On this interval,
+$$
+nx\in
+[2\pi m+7\pi/6, 2\pi m+11\pi/6],
+$$
+so
+$$
+\sin(nx)\leq-\frac12.
+$$
+The left endpoints are again spaced by $2\pi/n$. The same argument as in
+step <1>1 shows that one of these intervals is contained in $I$ for all
+sufficiently large $n$.
+:::
+
+<1>3. There exist indices
+$$
+k_1<k_2<k_3<\cdots
+$$
+and nested nondegenerate closed intervals
+$$
+I_1\supseteq I_2\supseteq I_3\supseteq\cdots
+$$
+such that
+$$
+\sin(n_{k_j}x)\geq\frac12
+$$
+for every $x\in I_j$ when $j$ is odd, and
+$$
+\sin(n_{k_j}x)\leq-\frac12
+$$
+for every $x\in I_j$ when $j$ is even.
+
+::: {.proof}
+Begin with the compact interval
+$$
+I_0=[0,1].
+$$
+Because $n_k\to\infty$, step <1>1 permits choosing an index $k_1$ and a
+nondegenerate closed interval $I_1\subseteq I_0$ on which
+$$
+\sin(n_{k_1}x)\geq\frac12.
+$$
+
+Suppose $k_j$ and $I_j$ have been chosen. Since the tail
+$$
+n_{k_j+1},n_{k_j+2},\ldots
+$$
+is still unbounded, choose $k_{j+1}>k_j$ sufficiently large that step <1>2
+applies to $I_j$ when $j+1$ is even, or step <1>1 applies when $j+1$ is
+odd. The corresponding subinterval is $I_{j+1}$. This recursive
+construction has all the stated properties.
+:::
+
+<1>4. There exists $x_0\in\RR$ such that the numerical sequence
+$$
+\sin(n_{k_j}x_0)
+$$
+does not converge.
+
+::: {.proof}
+The intervals in step <1>3 are nonempty compact subsets of the compact
+interval $I_0$ and are nested. Hence
+$$
+\bigcap_{j=1}^{\infty}I_j\neq\varnothing.
+$$
+Choose
+$$
+x_0\in\bigcap_{j=1}^{\infty}I_j.
+$$
+Then step <1>3 gives
+$$
+\sin(n_{k_j}x_0)\geq\frac12
+$$
+for every odd $j$, while
+$$
+\sin(n_{k_j}x_0)\leq-\frac12
+$$
+for every even $j$. A sequence with these two infinite families of values
+cannot converge.
+:::
+
+<1>5. The original sequence $f_n(x)=\sin(nx)$ has no pointwise convergent
+subsequence.
+
+::: {.proof}
+The subsequence $\sin(n_kx)$ was arbitrary. Step <1>4 constructs a further
+subsequence that fails to converge at the point $x_0$. If
+$\sin(n_kx)$ converged pointwise, then every further subsequence would
+converge at every point, in particular at $x_0$. This contradiction shows
+that the arbitrary subsequence is not pointwise convergent.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 proves the required assertion.
+:::
 :::

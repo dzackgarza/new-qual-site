@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-10
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 10'
+title: The product $e^{g}h$ when $h'=-g'h$
 classification:
   areas:
   - prelim

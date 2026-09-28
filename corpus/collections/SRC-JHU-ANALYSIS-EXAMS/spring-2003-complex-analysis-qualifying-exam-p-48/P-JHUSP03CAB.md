@@ -28,13 +28,14 @@ audit:
   note: "Visually checked problem 2 and the unit-disk convention on PDF page 48; restored Delta's definition and avoided a positive-separation claim when M=0."
 ---
 
+::: {.problem}
 Let $\Delta=\{z\in\mathbb C:|z|<1\}$, and let $f : \Delta \to \Delta$ be a holomorphic function with $f(0) = 0$ and $|f'(0)| = M$.
 If $0 \neq w \in \Delta$ is any other zero of $f(z)$, show that:
 
 $$\frac{M}{1 + M} \leq |w|.$$
+:::
 
-
-::: solution
+::: {.solution}
 In fact the stronger estimate
 $$
 \boxed{M\le |w|}
@@ -42,7 +43,7 @@ $$
 holds.
 
 <1>1. Dividing by the fixed zero produces a holomorphic disk map.
-::: proof
+::: {.proof}
 Because $f(0)=0$, define
 $$
 g(z)=\begin{cases}f(z)/z,&z\ne0,\\ f'(0),&z=0.\end{cases}
@@ -56,7 +57,7 @@ $g:\Delta\to\Delta$ is a holomorphic self-map.
 :::
 
 <1>2. Schwarz-Pick gives a stronger inequality than required.
-::: proof
+::: {.proof}
 Apply the Schwarz-Pick inequality [@SS03] to $g$ at the two points $0$ and $w$:
 $$
 \left|\frac{g(0)-g(w)}{1-\overline{g(w)}g(0)}\right|

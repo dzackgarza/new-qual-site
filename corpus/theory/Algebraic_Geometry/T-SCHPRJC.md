@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SCHPRJC
 kind: theorem
 title: $\Proj S$ is a scheme, with affine charts $D_+(f) \cong \Spec S_{(f)}$
+slogan: '$\Proj$ becomes affine wherever a homogeneous element is invertible: localize at $f$, then keep degree zero.'
 classification:
   areas:
   - algebraic-geometry
@@ -37,7 +38,7 @@ For $S = \kxnz$ with the usual grading, $D_+(x_i) \cong \Spec k[x_0/x_i, \dots, 
 :::
 
 ::: {.remark}
-"Why is $\Proj$ a scheme" is answered by naming the chart and the ring, not by reciting the definition: the charts are the loci where one homogeneous coordinate is invertible, and dividing by it turns degree-$d$ things into functions.
+The scheme structure is exhibited by the affine charts $D_+(f)\cong\Spec S_{(f)}$: inverting a homogeneous element and passing to degree zero produces ordinary affine functions.
 Discarding $V(S_+)$ is what makes the $D_+(f)$ a cover, since a prime containing all of $S_+$ lies in no chart.
 
 Over a base, define $\PP^n\slice \ZZ \da \Proj \ZZ[x_0, \dots, x_n]$ and then
@@ -45,5 +46,5 @@ Over a base, define $\PP^n\slice \ZZ \da \Proj \ZZ[x_0, \dots, x_n]$ and then
 \PP^n\slice S \da \fiberprod{\PP^n\slice \ZZ}{\Spec \ZZ}{S} .
 \]
 The same pattern gives $\AA^n\slice S$ from $\Spec \ZZ[x_1, \dots, x_n]$.
-This is the right answer to "what is projective space over a scheme": one absolute object, base changed, rather than a fresh gluing for each base.
+Thus projective space over a base scheme is obtained by base change from the universal projective space over $\Spec\ZZ$, rather than by choosing new gluing data for each base.
 :::

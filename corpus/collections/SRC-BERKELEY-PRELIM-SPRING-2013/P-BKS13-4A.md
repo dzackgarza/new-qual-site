@@ -2,13 +2,25 @@
 schema: qual/card@1
 id: P-BKS13-4A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 4A
+title: Contour integral of $\cosh(\pi z)/(z(z^2+1))$ over $|z|=2$
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-25
+  note: Compared the authored statement with page 2 of the retained Spring 2013 solution PDF and independently reviewed the residue computation.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: Independently checked the pole set, all three residues, and the positive-orientation residue theorem.
 ---
 
 ::: {.problem}
@@ -19,4 +31,138 @@ $$
 $$
 
 when C is the circle $| z | = 2 ,$ , described in the positive sense.
+:::
+
+::: {.solution}
+Set
+$$
+F(z)
+\coloneqq
+\frac{\cosh(\pi z)}{z(z^2+1)}.
+$$
+
+<1>1. The poles of $F$ inside
+$$
+C=\{z:\abs{z}=2\}
+$$
+are
+$$
+0,\ i,\ -i,
+$$
+and they are all simple.
+
+::: {.proof}
+The denominator factors as
+$$
+z(z^2+1)
+=
+z(z-i)(z+i).
+$$
+Its three zeros are distinct and all have modulus less than $2$. The
+numerator is entire.
+:::
+
+<1>2. The residue at $0$ is
+$$
+\operatorname{Res}_{z=0}F(z)=1.
+$$
+
+::: {.proof}
+Since the pole is simple,
+$$
+\operatorname{Res}_{z=0}F(z)
+=
+\lim_{z\to0}
+\frac{\cosh(\pi z)}{z^2+1}
+=
+1.
+$$
+:::
+
+<1>3. The residue at $i$ is
+$$
+\operatorname{Res}_{z=i}F(z)
+=
+\frac12.
+$$
+
+::: {.proof}
+Using
+$$
+\cosh(\pi i)=\cos\pi=-1,
+$$
+one gets
+$$
+\begin{aligned}
+\operatorname{Res}_{z=i}F(z)
+&=
+\frac{\cosh(\pi i)}
+{i(i+i)}\\
+&=
+\frac{-1}{i(2i)}
+=
+\frac12.
+\end{aligned}
+$$
+:::
+
+<1>4. The residue at $-i$ is
+$$
+\operatorname{Res}_{z=-i}F(z)
+=
+\frac12.
+$$
+
+::: {.proof}
+Similarly,
+$$
+\cosh(-\pi i)=\cos\pi=-1,
+$$
+and therefore
+$$
+\begin{aligned}
+\operatorname{Res}_{z=-i}F(z)
+&=
+\frac{\cosh(-\pi i)}
+{(-i)(-i-i)}\\
+&=
+\frac{-1}{(-i)(-2i)}
+=
+\frac12.
+\end{aligned}
+$$
+:::
+
+<1>5. The contour integral is
+$$
+\boxed{
+\int_C
+\frac{\cosh(\pi z)}{z(z^2+1)}\,dz
+=
+4\pi i
+}.
+$$
+
+::: {.proof}
+The contour is positively oriented. By the residue theorem and steps
+<1>2--<1>4,
+$$
+\begin{aligned}
+\int_CF(z)\,dz
+&=
+2\pi i
+\left(
+1+\frac12+\frac12
+\right)\\
+&=
+4\pi i.
+\end{aligned}
+$$
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required value.
+:::
 :::

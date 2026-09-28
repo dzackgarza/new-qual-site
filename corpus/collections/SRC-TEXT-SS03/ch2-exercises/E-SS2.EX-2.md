@@ -15,13 +15,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 2. Show that $\int _ { 0 } ^ { \infty } { \frac { \sin { x } } { x } } d x = { \frac { \pi } { 2 } }$
 
 [Hint: The integral equals $\begin{array} { r } { \frac { 1 } { 2 i } \int _ { - \infty } ^ { \infty } \frac { e ^ { i x } - 1 } { x } } \end{array}$ dx. Use the indented semicircle.]
 :::
 
-::: solution
+::: {.solution}
 For $R>0$, let $C_R$ be the positively oriented upper semicircle from $R$ to $-R$. The function
 \[
 F(z)=\frac{e^{iz}-1}{z}

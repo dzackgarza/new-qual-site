@@ -29,7 +29,7 @@ Recall that $\mathbb{R}_K$ denotes $\mathbb{R}$ in the $K$-topology.
 (c) Show that $\mathbb{R}_K$ is not path connected.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Analyze compactness of $[0, 1]$, connectedness of $\mathbb{R}_K$, and non-path-connectedness of $\mathbb{R}_K$.
 
 <1>1. Part (a): $[0, 1]$ is not compact in $\mathbb{R}_K$.

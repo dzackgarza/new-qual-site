@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What are the groups of order $p^2$ for $p$ prime?
 (2) What are the groups of order $pq$ for distinct primes $p < q$?
 (3) What if $q \equiv 1 \pmod p$?
 :::
 
-::: solution
+::: {.solution}
 For \(|G|=p^2\), the center of the \(p\)-group \(G\) is nontrivial. If \(|Z(G)|=p\), then \(G/Z(G)\) is cyclic, which forces \(G\) abelian; hence in fact \(Z(G)=G\). Therefore
 \[
 G\cong C_{p^2}\quad\text{or}\quad C_p\times C_p.

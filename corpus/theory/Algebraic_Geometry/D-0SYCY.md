@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Zariski tangent space"}
-For $p \in X$ with local ring $\OO_{X,p}$ and maximal ideal $\mfm_p$, the **Zariski tangent space** is
+For $p \in X$ with local ring $\OO_{X,p}$ and maximal ideal $\mfm_p$, the \dfn{Zariski tangent space} is
 \[
 T_p X \da (\mfm_p / \mfm_p^2)\dual .
 \]
@@ -34,10 +34,11 @@ Then $p$ is a smooth point exactly when $\rank J_X(p) = r$.
 :::
 
 ::: {.remark}
-The extrinsic rank condition is a computation. The intrinsic condition that $\OO_{X,p}$ be a regular local ring extends to schemes and to non-closed points.
+There are two complementary criteria for nonsingularity: the extrinsic Jacobian-rank computation and the intrinsic condition that $\OO_{X,p}$ be a regular local ring, which extends to schemes and non-closed points.
 
 The rank condition is stated for a *complete intersection* presentation.
 If $X$ is cut out by more equations than its codimension, the rank of $J_X$ drops everywhere and the criterion reports singularities that are not there.
 The two criteria are equivalent over a perfect field and part company over an imperfect one: the Jacobian condition is smoothness, which is geometric and survives base change to $\bar{k}$, while regularity of $\OO_{X,p}$ does not.
 Over $k = \FF_p(t)$ the closed subscheme $V(x^p - t) \subseteq \AA^1$ is the spectrum of a field, hence regular, but it is not smooth: after base change to $k(t^{1/p})$ it becomes $V((x - t^{1/p})^p)$, which is not even reduced.
+Thus perfectness is exactly what makes regularity agree with geometric smoothness in this criterion.
 :::

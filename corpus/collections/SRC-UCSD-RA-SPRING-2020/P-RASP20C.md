@@ -23,16 +23,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Consider the Lebesgue measure $m$ on $[0,1]$ and denote by $\|\cdot\|_p$ the $L^p([0,1])$-norm for any $p \in [1, \infty]$.
 Define $B = \{f \in L^2([0,1]) : \|f\|_2 \leq 1\}$.
 Prove that, with respect to the $L^1([0,1])$-norm, $B$ is closed and has an empty interior.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove that \(B\) is closed in the \(L^1\)-norm.
-::: proof
+::: {.proof}
 Let \((f_n)\subset B\) and suppose
 \[
 f_n\to f
@@ -52,7 +52,7 @@ Hence \(f\in L^2([0,1])\) and \(\|f\|_2\le1\), so \(f\in B\). Therefore \(B\) is
 :::
 
 <1>2. Prove that \(B\) has empty \(L^1\)-interior.
-::: proof
+::: {.proof}
 Fix \(f\in B\) and \(\varepsilon>0\). Let
 \[
 h(x)=c\,x^{-1/2}\mathbf1_{(0,1)}(x),

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-2B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 2B
+title: Real matrices with $P^TP=P$ are orthogonal projections $A(A^TA)^{-1}A^T$
 classification:
   areas:
   - prelim

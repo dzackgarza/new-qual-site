@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Recall that the Riemann–Lebesgue lemma implies that for all $f \in L^1([0,1], m)$,
 \[
 \lim_{n \to \infty} \int_0^1 f(x) e^{inx}\, dx = 0.
@@ -39,9 +39,9 @@ Specifically, show that there cannot exist any sequence of positive numbers $(a_
 Hint: If such $(a_n)$ existed, find a sequence of linear functionals that yields a contradiction.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Assume a uniform rate exists and define the associated functionals.
-::: proof
+::: {.proof}
 Suppose there were positive numbers $a_n\to\infty$ such that for every $f\in L^1([0,1])$ there is $C_f<\infty$ with
 \[
 \left|\int_0^1 f(x)e^{inx}\,dx\right|
@@ -58,7 +58,7 @@ Each $T_n$ is a bounded linear functional.
 :::
 
 <1>2. The family is pointwise bounded.
-::: proof
+::: {.proof}
 For every fixed $f\in L^1([0,1])$, the assumed estimate gives
 \[
 |T_n(f)|
@@ -77,7 +77,7 @@ Since $L^1([0,1])$ is Banach, the Uniform Boundedness Principle implies
 :::
 
 <1>3. Compute the operator norms and obtain the contradiction.
-::: proof
+::: {.proof}
 The functional
 \[
 f\longmapsto\int_0^1f(x)e^{inx}\,dx

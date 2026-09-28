@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $g$ be a positive Riemann integrable function on $[1,2]$. Prove that there exists $c\in[1,2]$ such that
 \[
 \int_1^2 e^{t^2}g(t)\,dt
@@ -29,9 +29,9 @@ Let $g$ be a positive Riemann integrable function on $[1,2]$. Prove that there e
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Bound the weighted average.
-::: proof
+::: {.proof}
 On $[1,2]$,
 \[
 e\le e^{t^2}\le e^4.
@@ -53,7 +53,7 @@ e\le
 :::
 
 <1>2. Apply the intermediate value theorem.
-::: proof
+::: {.proof}
 The continuous function $h(t)=e^{t^2}$ maps $[1,2]$ onto $[e,e^4]$. Therefore there exists $c\in[1,2]$ such that
 \[
 e^{c^2}

@@ -39,7 +39,7 @@ $\FF_0 = \PP^1 \times \PP^1$ is the quadric surface, $\FF_1 = \Bl_1 \PP^2$, and 
 
 Inserting a ray between two adjacent rays raises $\rank\Pic$ by one, raises $\chi$ by one, creates a $-1$-curve, and drops the self-intersection of each neighbour by one.
 Contracting reverses all four.
-An examiner asking for a surface with prescribed intersection numbers is asking for a sequence of insertions.
+Prescribed boundary self-intersection data can therefore be studied through sequences of ray insertions and contractions.
 
 ## Beyond surfaces
 
@@ -47,3 +47,7 @@ An examiner asking for a surface with prescribed intersection numbers is asking 
 
 Weighted projective space is the standard first example of a variety that is simplicial but not smooth, so it is $\QQ$-factorial with $\Pic$ of finite index in $\Cl$.
 In three dimensions the same construction gives $V(xy - zw)$, the cone over the quadric surface, from the four rays $(1,0,0), (0,1,0), (1,0,1), (0,1,1)$ — a cone that is not simplicial, and the standard example of a singularity with two small resolutions and no preferred one.
+
+## Cohomology of smooth toric varieties
+
+[[T-TORCOHOM]]

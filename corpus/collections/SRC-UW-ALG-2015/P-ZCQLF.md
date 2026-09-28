@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 - Let $L$ be a Galois extension of a field $K$ of degree 4. What is the minimum number of subfields there could be strictly between $K$ and $L$?
   What is the maximum number of such subfields?
   Give examples where these bounds are attained.
@@ -26,7 +26,7 @@ audit:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. If \(L/K\) is Galois of degree \(4\), then
 \[
 \operatorname{Gal}(L/K)\cong C_4
@@ -105,5 +105,4 @@ The subgroup fixing \(\alpha\) is a point stabilizer \(S_3\), which is maximal i
 The upper bound is <1>6, the example in <1>7 attains \(0\), and the biquadratic example in <1>4 attains \(3\).
 
 If one restricts specifically to separable quartic extensions that are not Galois, then <1>6 shows there can be at most one intermediate field. Both possibilities occur: <1>7 gives none, while \(\mathbb Q(\sqrt[4]{2})/\mathbb Q\) has the intermediate field \(\mathbb Q(\sqrt2)\), and cannot have a second one because two distinct quadratic intermediate fields would make the quartic extension Galois.
-:::
 :::

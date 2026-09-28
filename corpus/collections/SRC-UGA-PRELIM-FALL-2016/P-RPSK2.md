@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 1. Choose a path $C$ from $(2,1)$ to $(3,5)$ and compute
 \[
 \int_C(2x+y)\,dx+y\,dy.
@@ -22,7 +22,7 @@ review: draft
 2. Give and apply a criterion that shows whether this integral is path independent.
 :::
 
-::: solution
+::: {.solution}
 Parametrize the line segment by
 \[
 r(t)=(1-t)(2,1)+t(3,5)=(2+t,1+4t),\qquad 0\leq t\leq1.

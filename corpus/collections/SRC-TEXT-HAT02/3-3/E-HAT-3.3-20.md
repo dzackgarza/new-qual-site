@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $H_c^0(X; G) = 0$ if $X$ is path-connected and noncompact.
+:::
 
 ::: {.solution}
 A degree-zero cocycle with coefficients in $G$ is a locally constant function

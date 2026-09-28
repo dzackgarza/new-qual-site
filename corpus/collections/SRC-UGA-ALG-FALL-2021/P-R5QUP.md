@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 What is the Jordan normal form over $\mathbb{C}$ of a $7 \times 7$ matrix $A$ which satisfies all of the following conditions:
 
 a.
@@ -33,9 +34,9 @@ $\mathrm{rk} A^{3}-I=4$,
 
 f.
 $\operatorname{tr} A=1 ?$
+:::
 
-
-:::{.solution}
+::: {.solution}
 \envlist
 
 - We'll use rank-nullity throughout: $\rank M + \dim \ker M = 7$.

@@ -21,12 +21,13 @@ Dimension has three descriptions and they are used for different things: the cha
 
 [[D-VARDEG]]
 
+[[D-VARSCROLL]]
+
 ## The Hilbert polynomial
 
 [[D-L6ERW]]
 
-The coefficients are where the detail lies.
-Asking what the leading term means is asking for the degree; asking what the constant term means is asking for the arithmetic genus, which is the first place $\chi(\OO_X)$ appears and the reason $p_a$ is defined the way it is.
+The leading coefficient determines the degree, while for a projective curve the constant term records the arithmetic genus through $\chi(\OO_X)$.
 
 [[PR-JR7TS]]
 
@@ -34,4 +35,12 @@ Asking what the leading term means is asking for the degree; asking what the con
 
 Degree does, and so does the whole Hilbert polynomial, because the homogeneous coordinate ring does: $\PP^1$ embedded as a line has degree $1$, and embedded as the twisted cubic it has degree $3$, and it is the same curve.
 Dimension does not.
-Neither does the arithmetic genus of a smooth projective curve, which is why the constant term is a better invariant than the leading one — and why "does the genus depend on the embedding" has the answer it has.
+Neither does the arithmetic genus of a smooth projective curve, so the constant term remains unchanged when the embedding changes even though the leading coefficient need not.
+
+## Families of varieties
+
+Hypersurfaces of degree $d$ are the points of a projective space, and effective cycles of fixed dimension and degree are the points of the Chow variety.
+
+[[D-VARVERYGEN]]
+
+[[D-VARCHOW]]

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the following two limits allowing for the values of $\pm\infty$:
 
 (a) $\displaystyle\lim_{n \to \infty} \int_0^\infty \frac{x^n}{1 + x^{n+2}} e^{-x/n}\,dx$
@@ -32,9 +32,9 @@ Compute the following two limits allowing for the values of $\pm\infty$:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Evaluate part (a).
-::: proof
+::: {.proof}
 For fixed \(x\ne1\),
 \[
 \frac{x^n}{1+x^{n+2}}e^{-x/n}
@@ -67,7 +67,7 @@ The Dominated Convergence Theorem gives
 :::
 
 <1>2. Evaluate part (b).
-::: proof
+::: {.proof}
 The integrands are nonnegative. For every fixed \(x>1\),
 \[
 \frac{x^n}{1+x^{n+1}}e^{-x/n}

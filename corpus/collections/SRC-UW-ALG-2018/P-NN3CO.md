@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Show that the field extension $\mathbb Q\subseteq\mathbb Q\left(
 \sqrt{2+\sqrt2}\right)$ is Galois and determine its Galois group.
 :::

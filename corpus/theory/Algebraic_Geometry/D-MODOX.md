@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="$\OO_X$-modules"}
-An **$\OO_X$-module** is a sheaf $\mcf$ on $X$ with each $\mcf(U)$ an $\OO_X(U)$-module, compatibly with restriction: $\ro{(rm)}{V} = \ro{r}{V}\ro{m}{V}$.
+An \dfn{$\OO_X$-module} is a sheaf $\mcf$ on $X$ with each $\mcf(U)$ an $\OO_X(U)$-module, compatibly with restriction: $\ro{(rm)}{V} = \ro{r}{V}\ro{m}{V}$.
 The **tensor product** $\mcf \tensor_{\OO_X} \mcg$ is the sheafification of $U \mapsto \mcf(U) \tensor_{\OO_X(U)} \mcg(U)$.
 The **sheaf hom** $\sheafhom_{\OO_X}(\mcf, \mcg)$ is $U \mapsto \Hom_{\ro{\OO_X}{U}}(\ro{\mcf}{U}, \ro{\mcg}{U})$.
 A **sheaf of ideals** is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
@@ -31,5 +31,7 @@ A **sheaf of ideals** is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
 The sectionwise tensor-product presheaf need not satisfy the sheaf axioms. Morphisms of sheaves glue uniquely, so the sheaf-hom assignment already is a sheaf.
 The functor $\tensor$ is right exact and $\sheafhom$ is left exact. The stalk formula $(\mcf \tensor \mcg)_x = \mcf_x \tensor \mcg_x$ holds while $\sheafhom(\mcf,\mcg)_x = \Hom(\mcf_x, \mcg_x)$ can fail without finiteness on $\mcf$.
 
-$\mods{\OO_X}$ has enough injectives, so right derived functors define sheaf cohomology and $\Ext$; it need not have enough projectives.
+$\mods{\OO_X}$ has enough injectives [@Har10a, Proposition III.2.2], but it need not have enough projectives.
+On $\PP_k^1$ over an infinite field, no projective object surjects onto $\OO_X$, as proved in [[P-AGH362NOPROJECTIVES]].
+In contrast, on a one-point ringed space with structure ring $A$, a sheaf of modules is just an $A$-module; free-module surjections show that this category has enough projectives.
 :::

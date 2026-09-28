@@ -22,7 +22,7 @@ audit:
   note: Reviewed the limsup measurability argument and both Borel-Cantelli proofs, including the stated finite-block complement-independence hypothesis.
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{B}, \mu)$ be a measure space with $\mu(X) = 1$, and let $\{B_n\}_{n=1}^\infty$ be a sequence of $\mathcal{B}$-measurable subsets of $X$. Define
 $$
 B = \{x \in X : x \in B_n \text{ for infinitely many } n\}.
@@ -39,7 +39,7 @@ $$
 for all positive integers $k < K$, then $\mu(B) = 1$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the measurability of $\limsup B_n$ in (a), the First Borel–Cantelli Lemma via countable subadditivity in (b), and the Second Borel–Cantelli Lemma via complement independence and exponential bounds in (c).
 
 <1>1. Part (a): $B$ is $\mathcal{B}$-measurable.

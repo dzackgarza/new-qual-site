@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 7. Use the product formula for $\Theta$ to prove:
 
 (a) The “triangular number” identity
@@ -35,7 +35,7 @@ $$
 which holds for $| x | < 1$
 :::
 
-::: solution
+::: {.solution}
 We use the Jacobi triple product in the form
 \[
 \sum_{n\in\mathbb Z}z^n q^{n(n+1)/2}

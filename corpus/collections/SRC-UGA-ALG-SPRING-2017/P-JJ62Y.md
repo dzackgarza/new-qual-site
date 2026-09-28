@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $K$ denote the splitting field of $x^5 - 2$ over $\mathbb{Q}$. Show that the Galois group $\operatorname{Gal}(K/\mathbb{Q})$ is isomorphic to the matrix group
 $$
 \operatorname{Aff}(\mathbb{F}_5) = \left\{ \begin{pmatrix} a & b \\ 0 & 1 \end{pmatrix} \;\middle|\; a \in \mathbb{F}_5^\times, \, b \in \mathbb{F}_5 \right\}.
@@ -24,7 +24,7 @@ $$
 (b) Determine all intermediate fields between $K$ and $\mathbb{Q}$ that are Galois over $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the Galois group of the splitting field of $x^5 - 2$ as an affine matrix group over $\mathbb{F}_5$, and classify all normal subgroups to determine the Galois intermediate extensions.
 
 <1>1. Part (a): Splitting field and extension degree.

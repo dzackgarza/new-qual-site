@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $N$ be a positive integer, and let $G$ be a finite group of order $N$.
 
 (a) Let $\operatorname{Sym}(G)$ denote the symmetric group of all bijections from $G$ to $G$ under composition. Prove that the Cayley map
@@ -32,7 +32,7 @@ $$
 (c) Suppose $N > 2$ and $N \equiv 2 \pmod 4$. Prove that $G$ is not simple.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Cayley's embedding in (a), determine the parity of left translation permutations in (b), and construct an index-2 normal subgroup via the sign homomorphism to prove nonsimplicity in (c).
 
 <1>1. Part (a): Cayley map is an injective group homomorphism.

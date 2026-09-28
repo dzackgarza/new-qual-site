@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-06
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 6"
+title: Convergence of $\sum n!\,x^n$ and $\sum n!\,x^{n^2}$
 classification:
   areas:
   - real-analysis

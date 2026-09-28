@@ -25,14 +25,14 @@ audit:
   note: "Checked the normalization derivatives, the numerical maximum, both directions of the equality case and the nonvanishing denominator of every displayed extremizer."
 ---
 
-::: problem
+::: {.problem}
 Let $D=\{z\in\mathbb C:|z|<1\}$. What is the maximum
 possible value of $|f'(1/2)|$ for a holomorphic function
 $f:D\to D$ satisfying $f(1/2)=3/4$? Find all such
 functions that attain this maximum.
 :::
 
-::: solution
+::: {.solution}
 The maximum is $\boxed{7/12}$. Every extremizer, and no
 other function, has the form
 $$
@@ -44,7 +44,7 @@ $$
 
 <1>1. Disk automorphisms reduce the derivative estimate to the origin.
 
-::: proof
+::: {.proof}
 For $c\in D$, set
 $$
 \phi_c(z)=\frac{z-c}{1-\overline c z},
@@ -76,7 +76,7 @@ $|f'(1/2)|\leq7/12$.
 
 <1>2. Equality holds exactly for the displayed functions.
 
-::: proof
+::: {.proof}
 Schwarz's lemma also gives $|G(w)|\leq|w|$. Thus
 $H(w)=G(w)/w$ extends holomorphically across zero, with
 $H(0)=G'(0)$, and satisfies $|H|\leq1$ on $D$.

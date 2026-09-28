@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a path-connected topological group, with identity element $1$.
 Show that the fundamental group $\pi_1(G, 1)$ is abelian.
 :::

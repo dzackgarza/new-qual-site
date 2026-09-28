@@ -14,10 +14,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $G$ be a nonabelian group of order $p^3$ for $p$ prime.
 Show that $Z(G) = [G, G]$.
-
-> Proof due to Paco Adajar.
+:::
 
 ::: {.concept}
 \envlist
@@ -50,6 +50,8 @@ Theorems used in the proof:
 :::
 
 ::: {.solution}
+> Proof due to Paco Adajar.
+
 Since $Z(G)$ is a subgroup of $G$ and $|G| = p^3$, by Lagrange's theorem, $|Z(G)| \in \{1, p, p^2, p^3\}$.
 
 Since we stipulated that $G$ is nonabelian, $|Z(G)| \ne p^3$.

@@ -24,15 +24,15 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological vector space.
 A net (or, less generally, a sequence) $\langle x_\alpha \rangle_{\alpha \in A}$ in $X$ is *Cauchy* if the net of pairwise differences $\langle x_\alpha - x_\beta \rangle_{(\alpha,\beta) \in A \times A}$, with $A \times A$ directed by the rule $(\alpha, \beta) \preceq (\alpha', \beta') \Leftrightarrow (\alpha \preceq \alpha' \text{ and } \beta \preceq \beta')$, converges to $0 \in X$.
 Prove that if $X$ is first countable and every Cauchy sequence in $X$ converges, then every Cauchy net in $X$ converges.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose a nested local base at the origin.
-::: proof
+::: {.proof}
 Because $X$ is first countable, there is a countable local base at $0$. Using continuity of addition and negation, refine it to a decreasing sequence of symmetric neighborhoods
 \[
 V_1\supset V_2\supset\cdots
@@ -46,7 +46,7 @@ This is still a local base at $0$.
 :::
 
 <1>2. Extract a Cauchy sequence from the Cauchy net.
-::: proof
+::: {.proof}
 Let $(x_\alpha)_{\alpha\in A}$ be a Cauchy net. For each $n$, there exists $\gamma_n\in A$ such that
 \[
 \alpha,\beta\succeq\gamma_n
@@ -75,7 +75,7 @@ x_{\alpha_n}\to x.
 :::
 
 <1>3. Show that the original net converges to the same limit.
-::: proof
+::: {.proof}
 Let $U$ be any neighborhood of $0$. Choose $N$ so large that
 \[
 V_N+V_N\subset U.

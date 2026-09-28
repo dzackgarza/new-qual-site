@@ -27,24 +27,24 @@ audit:
 Prove or disprove that $\mathbb{Q}^*$ under multiplication is isomorphic to $\mathbb{R}^*$ under multiplication.
 :::
 
-::: solution
+::: {.solution}
 The two groups are not isomorphic.
 
 <1>1. The multiplicative group $\mathbb Q^*$ is countable.
-::: proof
+::: {.proof}
 $\mathbb Q$ is countable, and removing the single element $0$ preserves
 countability. Hence $\mathbb Q^*=\mathbb Q\setminus\{0\}$ is countable.
 :::
 
 <1>2. The multiplicative group $\mathbb R^*$ is uncountable.
-::: proof
+::: {.proof}
 $\mathbb R$ is uncountable. If $\mathbb R^*=\mathbb R\setminus\{0\}$ were
 countable, then adjoining the one-element set $\{0\}$ would make $\mathbb R$
 countable, a contradiction. Thus $\mathbb R^*$ is uncountable.
 :::
 
 <1>3. Therefore no group isomorphism can exist.
-::: proof
+::: {.proof}
 A group isomorphism is, in particular, a bijection of the underlying sets.
 Steps <1>1 and <1>2 show that the two underlying sets have different
 cardinalities. Hence

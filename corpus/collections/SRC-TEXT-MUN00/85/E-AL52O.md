@@ -22,7 +22,7 @@ Show that the Euler number of a finite linear graph $X$ is a topological invaria
 [Hint: First consider the case where $X$ is connected.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the Euler characteristic $\chi(X) = V - E$ of a finite linear graph (1-dimensional CW complex) $X$ is a topological invariant.
 
 <1>1. Connected finite graphs:

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-WZGOQ
 kind: proposition
 title: Hypersurface complements are affine
+slogan: 'A hypersurface complement is affine: localize by its equation in affine space, or use Veronese to make it a hyperplane complement projectively.'
 classification:
   areas:
   - algebraic-geometry
@@ -33,5 +34,5 @@ Projective case, in two steps.
 For a hyperplane, $\PP^n \sm V(x_i)$ is the standard chart $\AA^n$.
 For $\deg f = d$, the $d$-uple Veronese $\PP^n \injects \PP^N$ carries $V(f)$ into a hyperplane section, so the complement becomes a closed subvariety of $\PP^N$ minus a hyperplane, hence a closed subvariety of $\AA^N$.
 
-The second case is worth rehearsing, because a projective variety minus a nonempty closed set being affine is the first thing that makes "affine" and "projective" feel like properties of a variety rather than of a presentation.
+The projective case shows that affineness of a complement is intrinsic rather than an artifact of an affine presentation.
 :::

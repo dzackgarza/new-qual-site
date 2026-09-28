@@ -24,7 +24,7 @@ audit:
   note: "Rewrote the proof around the precise Galois-correspondence obstruction: every intermediate field of a finite abelian Galois extension is Galois, whereas Q(cuberoot 2)/Q is not normal."
 ---
 
-::: problem
+::: {.problem}
 Let $\zeta \in \mathbb{C}$ be a primitive $n$th root of unity for some integer $n \geq 2$.
 Prove that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta)$.
 *(Use the Fundamental Theorem of Galois Theory).*

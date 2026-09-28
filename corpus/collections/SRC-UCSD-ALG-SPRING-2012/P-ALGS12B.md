@@ -25,7 +25,7 @@ audit:
   note: Verified the localization factorization argument and made the primality proof apply explicitly to an arbitrary irreducible via the associate classification from part (a).
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a UFD. Let $S$ be any multiplicative system of nonzero elements in $R$, and let $S^{-1}R$ be the localization of $R$ at $S$.
 
 (a) Let $x$ be an irreducible element of $R$.

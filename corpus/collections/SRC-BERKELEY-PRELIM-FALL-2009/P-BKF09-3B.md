@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-3B
 kind: problem
-title: Berkeley Fall 2009 prelim problem 3B
+title: 'The Koebe function $z/(1-z)^2$: injectivity, Taylor series and image of the disk'
 classification:
   areas:
   - prelim

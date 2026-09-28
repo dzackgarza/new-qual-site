@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be differentiable on $[a, b]$.
 Say that $f$ is *uniformly differentiable* iff 
 
@@ -25,7 +25,7 @@ Say that $f$ is *uniformly differentiable* iff
 Prove that $f$ is uniformly differentiable on $[a, b] \iff f'$ is continuous on $[a, b]$.
 :::
 
-:::{.solution}
+::: {.solution}
 $\implies$:
 Fix $\eps>0$ and choose $\delta = \delta(\eps)$ to get a bound corresponding to $\eps/2$, then for all $x,y$ with $\abs{x-y} < \delta$ on $[a, b]$, we have
 \[

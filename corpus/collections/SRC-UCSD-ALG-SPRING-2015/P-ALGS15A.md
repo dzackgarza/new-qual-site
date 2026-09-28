@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $p^2 q^2$, where $p$ and $q$ are primes with $p > q$.
 
 (a) Prove that either $|G| = 36$ or else $G$ has a normal Sylow $p$-subgroup.

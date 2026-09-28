@@ -30,7 +30,7 @@ If $R$ is normal and $P$ prime, prove that $R_P$ is also normal.
 :::
 
 
-::: solution
+::: {.solution}
 Let $K$ be the fraction field of $R$. Since
 $$
 R\subseteq R_P\subseteq K,
@@ -44,7 +44,7 @@ $$
 be integral over $R_P$. We prove that $z\in R_P$.
 
 <1>1. Choose one common denominator for the coefficients of an integral equation.
-::: proof
+::: {.proof}
 There is a monic equation
 $$
 z^n+c_1z^{n-1}+\cdots+c_n=0
@@ -82,7 +82,7 @@ $$
 :::
 
 <1>2. The element $sz$ is integral over $R$.
-::: proof
+::: {.proof}
 Put
 $$
 y=sz.
@@ -101,7 +101,7 @@ with all coefficients in $R$. Hence $y=sz$ is integral over $R$.
 :::
 
 <1>3. Use normality of $R$.
-::: proof
+::: {.proof}
 Because $R$ is normal and $y=sz\in K$ is integral over $R$, one has
 $$
 y=sz\in R.

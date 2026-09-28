@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define a Dedekind domain.
 :::
 
-::: solution
+::: {.solution}
 A Dedekind domain is an integral domain $R$ satisfying the following three
 conditions:
 

@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $u$ is harmonic and bounded in $0 < |z| < \rho$, then show that $u$ may be extended to a harmonic function on the whole disk $|z| < \rho$.
 :::
 
-::: solution
+::: {.solution}
 Fix $R$ with $0<R<\rho$. Let $h$ be the harmonic function on $|z|<R$ whose boundary values on $|z|=R$ equal those of $u$; for example, $h$ is given by the Poisson integral. Set
 \[
 w=u-h

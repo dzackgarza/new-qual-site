@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the equations
 \begin{align*}
 xy+x^2&=1,\\
@@ -30,7 +30,7 @@ Find the Gröbner basis for $I$ relative to lexicographic order where $y>x$.
 (d) Find a vector space basis for $\mathbb{C}[x,y]/I$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 f_1=xy+x^2-1,\qquad f_2=y^2-2x^2+2.

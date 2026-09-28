@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(x,y) = xy$.
 Show that $\nabla f$ is orthogonal to the level curves of $f$.
 :::

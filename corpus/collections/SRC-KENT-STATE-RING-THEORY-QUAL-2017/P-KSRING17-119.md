@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-119
 kind: problem
-title: Kent State ring-theory qualifying problem 119
+title: The smallest ideal with nilpotent-free quotient
 classification:
   areas: [algebra]
   topics: []

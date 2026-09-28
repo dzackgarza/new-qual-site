@@ -21,7 +21,7 @@ audit:
 Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** both sides collect the elements with a power in $(0)$, so the two descriptions of the nilradical agree.
 
 <1>1. Write $\rad{I} = \ts{ x \in R \st x^n \in I \text{ for some } n \geq 1 }$ for the radical of an ideal $I$, and $\nilrad{R} = \ts{ x \in R \st x^n = 0 \text{ for some } n \geq 1 }$ for the nilradical.

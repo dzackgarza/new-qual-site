@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that $\frac{1}{z}\sum_{k=1}^\infty \frac{z^k}{k}$ converges for all $z \in S^1 \setminus \{1\}$ using summation by parts (Dirichlet's test).
 :::
 
-::: solution
+::: {.solution}
 Fix $z\in S^1\setminus\{1\}$ and set
 $$
 A_n=\sum_{k=1}^n z^k

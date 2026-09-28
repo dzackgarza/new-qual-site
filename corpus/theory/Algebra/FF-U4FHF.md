@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-U4FHF
 kind: fact
 title: Reduced ring
+slogan: Reduced means no nonzero nilpotents.
 prompts:
 - What is a reduced ring?
 classification:
@@ -16,5 +17,5 @@ review: draft
 ---
 
 ::: {.fact}
-No nonzero nilpotents.
+A commutative ring $R$ is [[D-PQHHJ|reduced]] if and only if it has no nonzero [[D-GIGM2|nilpotent]] elements, that is, its [[D-C2IM4|nilradical]] $\nilrad{R}$ is $0$.
 :::

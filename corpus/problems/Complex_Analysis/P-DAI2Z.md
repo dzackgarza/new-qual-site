@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $n\in \ZZ^{\geq 0}$ and show that the equation
 \[
 e^z = az^n

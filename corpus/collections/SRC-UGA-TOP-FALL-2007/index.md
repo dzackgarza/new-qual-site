@@ -30,6 +30,6 @@ source:
     year: 2007
 ---
 
-::: remark
-Exam #4 lists [[P-FD3UV]] (same statement as Spring 2013 #6).
+::: {.remark}
+Problem 4 is the same problem as Spring 2013 Problem 6.
 :::

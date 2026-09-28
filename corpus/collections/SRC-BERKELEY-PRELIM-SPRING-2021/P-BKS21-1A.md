@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Find the volume of the solid
 \[
 x^2+z^2\le1,\qquad y^2+z^2\le1.

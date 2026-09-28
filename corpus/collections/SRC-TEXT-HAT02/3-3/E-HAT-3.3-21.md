@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 For a space $X$, let $X^+$ be the one-point compactification.
 If the added point, denoted $\infty$, has a neighborhood in $X^+$ that is a cone with $\infty$ the cone point, show that the evident map $H_c^n(X; G) \to H^n(X^+, \infty; G)$ is an isomorphism for all $n$.
+:::
 
 ::: {.solution}
 <1>1. $H_c^n(X; G) = \varinjlim_K H^n(X, X - K; G)$, the direct limit over compact subsets $K \subseteq X$.

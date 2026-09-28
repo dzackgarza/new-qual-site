@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that every abelian group is nilpotent.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be abelian. Then
 \[
 [G,G]=1.

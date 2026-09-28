@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a power series expansion of 
 \[
 f(z) = {1\over e^z-1}
@@ -22,7 +22,7 @@ f(z) = {1\over e^z-1}
 
 :::
 
-:::{.solution}
+::: {.solution}
 One way: polynomial long division.
 \[
 {1\over e^z-1} 

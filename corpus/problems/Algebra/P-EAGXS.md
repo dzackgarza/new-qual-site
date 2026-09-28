@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the connection between the structure theorem for modules over a PID and conjugacy classes in the general linear group over a field?
 :::
 

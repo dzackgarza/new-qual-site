@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Show that $f=0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
 :::
 

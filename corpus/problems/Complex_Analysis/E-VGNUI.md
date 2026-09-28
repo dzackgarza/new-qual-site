@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f$ is holomorphic on $\Omega$, a simply connected region, and suppose $\gamma \subseteq \Omega$.
 Using the Cauchy integral formula, show that
 \[
@@ -23,7 +23,7 @@ Also prove this when $\Omega$ is *not* simply connected.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Use the integral formula directly:
 \[
 \int_\gamma {f'(z) \over z-a}\dz = 2\pi i f'(a)

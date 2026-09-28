@@ -25,8 +25,10 @@ audit:
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
 ---
 
+::: {.problem}
 Prove the Brouwer fixed point theorem for maps $f: D^n \to D^n$ by applying degree theory to the map $S^n \to S^n$ that sends both the northern and southern hemispheres of $S^n$ to the southern hemisphere via $f$.
 [This was Brouwer's original proof.]
+:::
 
 ::: {.solution}
 Regard $S^n$ as the double of $D^n$, with northern and southern hemispheres each identified with $D^n$ and glued along their common boundary. Given

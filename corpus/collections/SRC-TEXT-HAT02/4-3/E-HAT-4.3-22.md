@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that a principal fibration $\Omega C \to E \xrightarrow{p} B$ is fiber homotopy equivalent to the product $\Omega C \times B$ if it has a section, a map $s: B \to E$ with $ps = \mathbb{1}$.
+:::
 
 ::: {.solution}
 <1>1. A principal fibration $\Omega C \to E \xrightarrow{p} B$ is a fibration whose fiber is the loop space $\Omega C$, with a compatible action of $\Omega C$ on $E$.

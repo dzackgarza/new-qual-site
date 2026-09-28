@@ -18,14 +18,14 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $X \subseteq \mathbb{R}$ is a measurable set with finite measure $\mu(X) < \infty$, then for any measurable function $f: X \to \mathbb{C}$,
 $$
 \lim_{p \to \infty} \|f\|_{L^p(X)} = \|f\|_{L^\infty(X)}.
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that on a finite measure space $(X, \mu)$ with $\mu(X) < \infty$, $\lim_{p \to \infty} \|f\|_{L^p(X)} = \|f\|_{L^\infty(X)}$ for any measurable function $f$.
 
 <1>1. Upper bound: $\limsup_{p \to \infty} \|f\|_{L^p} \le \|f\|_{L^\infty}$.
@@ -60,4 +60,5 @@ $$\liminf_{p \to \infty} \|f\|_{L^p} \ge \alpha \lim_{p \to \infty} (\mu(A_\alph
 ::: {.proof}
 Combining <1>1 and <1>2 gives $\lim_{p \to \infty} \|f\|_{L^p} = \|f\|_{L^\infty}$.
 :::
+
 :::

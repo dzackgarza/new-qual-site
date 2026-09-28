@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a $4\times4$ matrix over a field of characteristic not equal to $2$ with
 \[
 \chi_A(x)=(x-1)^2(x+1)^2

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that a field $k$ of characteristic $p\neq 0$ is perfect $\iff$ for every $x\in k$ there exists a $y\in k$ such that $y^p=x$.
 :::
 

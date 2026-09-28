@@ -23,7 +23,7 @@ audit:
   note: Verified descent of the integral unimodular matrix to T^2 and the mapping-torus calculation coker(I-A) plus Z, giving H_1 isomorphic to Z^2.
 ---
 
-::: problem
+::: {.problem}
 (a) Consider the 2-torus as the quotient space
 $$
 T^2 = \mathbb{R}^2 / \sim \quad \text{where } (x, y) \sim (x + m, y + n) \text{ for } m, n \in \mathbb{Z},
@@ -38,7 +38,7 @@ $$
 Compute $H_1(T_A^3; \mathbb{Z})$ for $A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove well-definedness and invertibility of the induced map $\bar{f}_A$ in (a), and compute $H_1(T_A^3; \mathbb{Z})$ using the Mayer–Vietoris sequence (and fundamental group abelianization) for the mapping torus in (b).
 
 <1>1. Part (a): Well-definedness and continuity of $\bar{f}_A$.

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute, on each interval where the integrand is defined,
 \[
 \int \frac{x}{x^4-16}\,dx,
@@ -30,9 +30,9 @@ Compute, on each interval where the integrand is defined,
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Integrate \(x/(x^4-16)\).
-::: proof
+::: {.proof}
 Let \(u=x^2\), so \(du=2x\,dx\). Then
 \[
 \int\frac{x}{x^4-16}\,dx
@@ -51,7 +51,7 @@ we get
 :::
 
 <1>2. Integrate \(x\arctan x/(1+x^2)^2\).
-::: proof
+::: {.proof}
 Integrate by parts with
 \[
 u=\arctan x,

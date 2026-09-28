@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $X$ is a metric space and $A\subseteq X$ is compact then $A$ is bounded.
 :::
 
-::: solution
+::: {.solution}
 If $A=\varnothing$, it is bounded. Assume $A\ne\varnothing$ and fix $x_0\in A$.
 
 <1>1. The nested balls

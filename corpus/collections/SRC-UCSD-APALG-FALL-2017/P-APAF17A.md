@@ -20,7 +20,7 @@ audit:
   note: Verified the image-chain stabilization argument.
 ---
 
-::: problem
+::: {.problem}
 Let $A \in \mathbb{R}^{n \times n}$ be a square matrix such that:
 $$\operatorname{rank}(A^2) \le \operatorname{rank}(A^3).$$
 Show that:

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{F}$ be a non-empty family of analytic functions on the unit disc $\mathbb{D}$.
 Assume for every $f \in \mathcal{F}$ it holds that $$\int_{\mathbb{D}} |f(z)|(1 - |z|)^5 \, dm < 10.$$ Prove $\mathcal{F}$ is a normal family.
 

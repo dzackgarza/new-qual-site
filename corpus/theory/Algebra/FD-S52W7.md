@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-S52W7
 kind: definition
-title: 'Definition: prime.'
+title: Prime element of a ring
 prompts:
 - When is a ring element prime?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-A nonzero nonunit ring element $r$ is prime iff $r\divides ab$ implies $r\divides a$ or $r\divides b$.
+Let $R$ be a commutative [[D-GURUB|ring]].
+An element $r\in R$ is \dfn{prime} if $r$ is nonzero, $r$ is not a [[D-QQIQZ|unit]], and for all $a,b\in R$, $r\divides ab$ implies $r\divides a$ or $r\divides b$.
 :::

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 10. This exercise generalizes some of the properties of $e ^ { - \pi x ^ { 2 } }$ related to the fact that it is its own Fourier transform.
 
 Suppose $f ( z )$ is an entire function that satisfies
@@ -47,7 +47,7 @@ $$
 Finally, choose $y = d \xi$ where d is a small constant.]
 :::
 
-::: solution
+::: {.solution}
 For real $x$, the hypothesis gives $|f(x)|\le c e^{-ax^2}$, so $f|_{\mathbb R}\in L^1(\mathbb R)$. For $\zeta=\xi+i\eta$,
 \[
 |f(x)e^{-2\pi i x\zeta}|\le c e^{-ax^2+2\pi |\eta||x|},

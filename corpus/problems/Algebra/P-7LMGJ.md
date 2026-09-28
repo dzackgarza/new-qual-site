@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $G$ is solvable iff its derived series terminates.
 :::
 

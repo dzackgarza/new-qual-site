@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULFACEDUAL
 kind: proposition
 title: Faces of a cone and faces of its dual correspond contravariantly
+slogan: 'Duality reverses the face lattice: a $d$-face of an $n$-cone corresponds to an $(n-d)$-face of the dual.'
 classification:
   areas:
   - algebraic-geometry

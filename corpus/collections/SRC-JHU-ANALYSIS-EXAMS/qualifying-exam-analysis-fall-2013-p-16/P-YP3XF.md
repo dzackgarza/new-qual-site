@@ -23,9 +23,11 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 (a) Prove that the operator $T : L^2([0,1]) \to L^2([0,1])$ defined by setting $T[f](x) = xf(x)$ is continuous and symmetric (self-adjoint).
 
 (b) Prove that $T$ is not compact.
+:::
 
 ::: {.solution}
 <1>1. Prove boundedness and self-adjointness.

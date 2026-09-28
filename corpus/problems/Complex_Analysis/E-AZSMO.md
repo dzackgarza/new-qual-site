@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose that $f$ is entire and $f$ has sublinear growth in the following sense:
 \[
 \abs{f(z)\over z}\to 0
@@ -24,7 +24,7 @@ Show that $f$ must be constant.
 
 :::
 
-:::{.solution title="Direct bound"}
+::: {.solution title="Direct bound"}
 Claim: $f'(z_0) = 0$ for every $z_0\in \CC$, so $f'\equiv 0$, making $f$ constant.
 Fix $z_0$, then define
 \[
@@ -45,7 +45,7 @@ In particular, $\abs{g(z)}<\eps$ on the circle $\abs{z} = R_\eps$, and by the MM
 Taking $\eps\to 0$ yields $g(z) = 0$ for all $z\in \CC$, so $f(z) = f(0)$ is a constant for all $z$.
 :::
 
-:::{.solution title="Cauchy bound"}
+::: {.solution title="Cauchy bound"}
 Claim: $f'(z) \equiv 0$.
 Choose $R = R(\eps) \gg 1$ so that $\abs{f(z)} \leq \eps \abs{z}$ for $\abs{z} \geq R$, and apply Cauchy's formula:
 \[

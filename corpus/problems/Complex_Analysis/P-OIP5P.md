@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Show that
 \[
 \int_0^{\infty} {\cos(x) \over x^2 + b^2}\dx = {\pi e^{-b} \over 2b}
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Let $I$ be the integral over $\RR$.

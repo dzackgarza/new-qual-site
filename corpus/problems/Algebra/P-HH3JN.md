@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that every real symmetric matrix $A \in M_n(\mathbb{R})$ has **real eigenvalues** and can be **orthogonally diagonalized**: there exists an orthogonal matrix $Q \in O(n)$ such that $Q^T A Q = \operatorname{diag}(\lambda_1, \dots, \lambda_n)$ (The Real Spectral Theorem).
 :::
 
-::: solution
+::: {.solution}
 Let $A=A^T\in M_n(\mathbb R)$. Regard $A$ as a complex matrix. If $Av=\lambda v$ with $v\ne0$, then
 \[
 v^*Av=\lambda v^*v.

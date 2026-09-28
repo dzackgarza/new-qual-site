@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 When does an $S_n$-conjugacy class contained in $A_n$ split into two $A_n$-conjugacy classes?
 :::
 
-::: solution
+::: {.solution}
 An $S_n$-conjugacy class contained in $A_n$ splits into two $A_n$-classes exactly when its cycle type consists of **distinct odd parts**.
 
 Let $\sigma\in A_n$. Since $A_n\normal S_n$ has index $2$, the $S_n$-class of $\sigma$ either stays one $A_n$-class or splits into two equal $A_n$-classes. By orbit--stabilizer,

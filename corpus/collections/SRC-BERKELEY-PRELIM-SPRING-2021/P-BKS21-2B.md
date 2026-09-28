@@ -16,6 +16,6 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be compact metric, $Y$ metric, and $p:X\times Y\to Y$ the projection. Show that if $Z\subseteq X\times Y$ is closed, then $p(Z)$ is closed in $Y$.
 :::

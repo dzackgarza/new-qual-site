@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IP6ZG
 kind: proposition
 title: Direct limits of sheaves, and the Noetherian hypothesis that removes the sheafification
+slogan: 'Noetherian means finite gluing: filtered colimits already satisfy the sheaf axioms and commute with global sections.'
 classification:
   areas:
   - algebraic-geometry

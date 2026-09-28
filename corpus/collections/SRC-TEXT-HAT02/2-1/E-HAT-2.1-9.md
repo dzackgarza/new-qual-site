@@ -25,8 +25,10 @@ audit:
   note: Observed that the unique k-simplex has boundary coefficient sum 1 for even k and 0 for odd k, so the chain complex alternates identity and zero maps.
 ---
 
+::: {.problem}
 Compute the homology groups of the $\Delta$-complex $X$ obtained from $\Delta^n$ by identifying all faces of the same dimension.
 Thus $X$ has a single $k$ simplex for each $k \leq n$.
+:::
 
 ::: {.solution}
 Let $\sigma_k$ denote the unique $k$-simplex of $X$. Then

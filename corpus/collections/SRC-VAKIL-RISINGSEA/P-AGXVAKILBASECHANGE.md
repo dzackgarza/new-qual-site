@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 **Part a**: for $M$ an $A\dash$module and $\phi: A\to B$ a morphism of rings, give $B\tensor_A M$ the structure of a $B\dash$module and show that it describes a functor $\mods{A}\to \mods{B}$.
 
 **Part b**: if $\psi: A\to C$ is another ring morphism, show that $B\tensor_A C$ has a ring structure.
 :::
 
-::: solution
+::: {.solution}
 **Part a**:
 
 - $B\tensor_A M$ makes sense: $B$ is a $(B, A)\dash$bimodule with the usual multiplication on the left and the right action
@@ -93,4 +93,12 @@ M(a\cdot (b_1\tensor c_1),\, (b_2\tensor c_2))
 &= (b_0 b_1 + b_0 b_2) \tensor (c_0 c_1 + c_0 c_2) \\
 &= \cdots
 .\]
+:::
+
+::: {.remark}
+Erratum: part b defines the ring operations incorrectly and does not finish.
+
+- Addition on $B\tensor_A C$ is the abelian-group addition the tensor product already has; the formula $(b_1\tensor c_1) + (b_2\tensor c_2) = (b_1+b_2)\tensor(c_1+c_2)$ is false, since the right side expands to $b_1\tensor c_1 + b_1\tensor c_2 + b_2\tensor c_1 + b_2\tensor c_2$.
+- Multiplication $(b_1\tensor c_1)(b_2\tensor c_2) = b_1b_2 \tensor c_1c_2$ is well-defined because the map $(b_1, c_1, b_2, c_2) \mapsto b_1b_2\tensor c_1c_2$ is $A$-multilinear and balanced in each tensor factor, $b_1\phi(a)b_2\tensor c_1c_2 = b_1b_2\tensor \psi(a)c_1c_2$ as $B$ and $C$ are commutative; it therefore induces $(B\tensor_A C)\tensor_A(B\tensor_A C) \to B\tensor_A C$. The displayed bilinearity check moves a scalar across the whole product rather than across one tensor factor.
+- Distributivity, left as "$\cdots$", is the bilinearity of this induced multiplication; associativity and the unit $1\tensor 1$ are checked on elementary tensors.
 :::

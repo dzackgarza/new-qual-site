@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order 70.
 
 a. Show that $G$ is not simple.
@@ -26,7 +26,7 @@ a. Show that $G$ is not simple.
 b. Exhibit 3 nonisomorphic groups of order 70 and prove that they are not isomorphic.
 :::
 
-::: solution
+::: {.solution}
 For (a), let $n_5$ be the number of Sylow $5$-subgroups. Sylow's theorem gives
 \[
 n_5\equiv1\pmod5,

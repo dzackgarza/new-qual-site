@@ -26,7 +26,9 @@ audit:
   note: Exhausted the surface by compact finite-genus subsurfaces with compatible graph spines, then used compactness of loops and nullhomotopies to identify the direct-limit group with a countably generated free group.
 ---
 
+::: {.problem}
 Show that the fundamental group of the surface of infinite genus shown below is free on an infinite number of generators.
+:::
 
 ::: {.solution}
 Let $X$ denote the pictured surface.

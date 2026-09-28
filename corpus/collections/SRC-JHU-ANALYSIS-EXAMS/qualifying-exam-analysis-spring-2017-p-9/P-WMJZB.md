@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 2. Let H be a Hilbert space equipped with an inner product $( \cdot , \cdot )$ and a norm $| | \cdot | | = ( \cdot , \cdot ) ^ { \frac { 1 } { 2 } }$ Recall the following: A sequence $\{ f _ { k } \} \subset { \mathcal { H } }$ is said converge to $f \in \mathcal H$ if $\vert \vert f _ { k } - f \vert \vert  0$ . A sequence $\{ f _ { k } \} \subset { \mathcal { H } }$ is said converge weakly to $f \in { \mathcal { H } }$ if $( f _ { k } , g )  ( f , g )$ for any $g \in { \mathcal { H } }$ . Prove the following statements:
 
 (a) $\{ f _ { k } \}$ converges to f if and only if $\vert \vert f _ { k } \vert \vert  \vert \vert f \vert \vert$ and $\{ f _ { k } \}$ converges weakly to $f .$
@@ -37,10 +38,11 @@ $$
 $$
 
 converges to $f .$ (You may use the fact that a weakly convergent sequence is a bounded sequence.)
+:::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a).
-::: proof
+::: {.proof}
 If $f_k\to f$ in norm, then continuity of the norm gives
 \[
 \|f_k\|\to\|f\|,
@@ -76,7 +78,7 @@ This proves the equivalence.
 :::
 
 <1>2. Prove part (b).
-::: proof
+::: {.proof}
 Suppose first that $H$ is finite dimensional, and let
 \[
 e_1,\dots,e_N
@@ -109,7 +111,7 @@ Thus $e_n\rightharpoonup0$ but not strongly.
 :::
 
 <1>3. Reduce part (c) to a weakly null bounded sequence.
-::: proof
+::: {.proof}
 Set
 \[
 u_k:=f_k-f.
@@ -137,7 +139,7 @@ for each $j<n$. Hence we can choose $k_n>k_{n-1}$ so large that
 :::
 
 <1>4. Show that the Cesàro means of the selected subsequence converge in norm.
-::: proof
+::: {.proof}
 Let
 \[
 A_n:=\frac1n\sum_{j=1}^n u_{k_j}.

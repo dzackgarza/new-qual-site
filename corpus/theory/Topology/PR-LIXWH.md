@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-LIXWH
 kind: proposition
-title: Decomposing a Klein Bottle
+title: Decomposing a Klein bottle
+slogan: 'The Klein bottle is two projective planes connected-summed, equivalently two Möbius bands glued along their boundary.'
 classification:
   areas:
   - topology
@@ -13,8 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[  
+::: {.proposition}
+The Klein bottle is a connected sum of two projective planes,
+$$
 \KK \cong \RP^2 \# \RP^2
-.\]
+.$$
+Equivalently, $\KK$ is the union of two Möbius bands glued along their boundary circles [@Hat02].
 :::

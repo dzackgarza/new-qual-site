@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $U \subset \mathbb{C}$ be an open set and $f$ a continuous function on $U$.
 Assume $f^2$ is analytic on $U$.
 Prove $f$ is analytic on $U$.

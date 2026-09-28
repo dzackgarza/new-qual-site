@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(a_n)$ be a sequence of nonnegative real numbers such that for every nonnegative sequence $(b_n)\in\ell^2(\mathbb N)$,
 \[
 \sum_{n=1}^\infty a_n b_n<\infty.
@@ -36,9 +36,9 @@ Show that
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define the partial-sum functionals.
-::: proof
+::: {.proof}
 For each $N\ge1$, define
 \[
 T_N:\ell^2(\mathbb N)\to\mathbb R,
@@ -56,7 +56,7 @@ Hence
 :::
 
 <1>2. Prove pointwise boundedness.
-::: proof
+::: {.proof}
 Fix $b\in\ell^2(\mathbb N)$. By replacing $b$ with $|b|$, it is enough to consider nonnegative sequences. The hypothesis says
 \[
 \sum_{n=1}^\infty a_n|b_n|<\infty.
@@ -75,7 +75,7 @@ for every $b\in\ell^2$.
 :::
 
 <1>3. Apply the Uniform Boundedness Principle.
-::: proof
+::: {.proof}
 Since $\ell^2$ is Banach and the family $(T_N)$ is pointwise bounded, the Uniform Boundedness Principle gives
 \[
 \sup_N\|T_N\|<\infty.

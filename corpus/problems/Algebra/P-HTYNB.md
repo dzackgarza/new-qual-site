@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $m\ne0$. Prove that
 \[
 \operatorname{Hom}_{\ZZ}(\ZZ/m\ZZ,\ZZ)=0.

@@ -13,14 +13,12 @@ topics:
 # Sets and compactness
 
 ## Compactness
-    
-[[T-YOZX6]]
 
-## Topology / Sets
+[[T-YOZX6]]
 
 [[PR-25GM2]]
 
-:::{.proof title="Compact iff sequentially compact, metric spaces"}
+::: {.proof title="Compact if and only if sequentially compact, for metric spaces"}
 Let $(X,d)$ be a metric space.
 
 - Compact $\implies$ sequentially compact.
@@ -31,20 +29,22 @@ Let $(X,d)$ be a metric space.
 
 - Sequentially compact $\implies$ compact.
   A sequentially compact metric space is complete: a Cauchy sequence has a convergent subsequence, hence converges to the same limit.
-  It is totally bounded: if not, some $\eps>0$ admits a sequence with $d(x_i,x_j)\geq \eps$ for $i\neq j$, and that sequence has no Cauchy (hence no convergent) subsequence.
-  Complete and totally bounded metric spaces are compact: if an open cover $\mathcal{U}$ had no finite subcover, total boundedness would produce a nested sequence of nonempty closed sets $F_n$ with $\operatorname{diam} F_n \to 0$ and no $F_n$ covered by finitely many members of $\mathcal{U}$; completeness supplies a point of $\intersect_n F_n$, which lies in some $U\in\mathcal{U}$, and for large $n$ one has $F_n\subset U$.
+  It is totally bounded: if not, some $\varepsilon>0$ admits a sequence with $d(x_i,x_j)\geq \varepsilon$ for $i\neq j$, and that sequence has no Cauchy subsequence, hence no convergent subsequence.
+  Complete and totally bounded metric spaces are compact: if an open cover $\mathcal{U}$ had no finite subcover, total boundedness would produce a nested sequence of nonempty closed sets $F_n$ with $\operatorname{diam} F_n \to 0$ and no $F_n$ covered by finitely many members of $\mathcal{U}$; completeness supplies a point of $\bigcap_n F_n$, which lies in some $U\in\mathcal{U}$, and for large $n$ one has $F_n\subseteq U$.
 
 :::
 
 [[PR-FKJCO]]
 
-:::{.proof}
-Take $f_k(x) = x^n$, which converges to $\chi(x=1)$. 
-The limit is not continuous, so no subsequence can converge.
+::: {.proof}
+The functions $f_n(x)\coloneqq x^n$ lie in the closed unit ball of $C([0,1])$.
+A subsequence converging in $\norm{\wait}_\infty$ would converge uniformly to its pointwise limit $\chi_{\theset1}$, which is not continuous; so no subsequence converges, and the unit ball is not sequentially compact, hence not compact.
 
 :::
 
 [[T-QPTHZ]]
+
+## Series and suprema
 
 [[PR-6C3GQ]]
 
@@ -54,7 +54,7 @@ The limit is not continuous, so no subsequence can converge.
 
 [[L-JBMRH]]
 
-## Smallness for sets
+## Nowhere dense sets
 
 [[PR-CZS5F]]
 
@@ -64,82 +64,59 @@ The limit is not continuous, so no subsequence can converge.
 
 [[PR-JTFMW]]
 
-:::{.proof}
-Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
+::: {.proof}
+Let $C_n$ be the union of the $2^n$ closed intervals of length $3^{-n}$ remaining at stage $n$, so $C = \bigcap_n C_n$.
+Each $C_n$ is closed, so $C$ is closed.
+An interval contained in $C$ lies in some component of $C_n$ for every $n$, so has length at most $3^{-n}$ for every $n$; hence $C$ contains no interval and has empty interior.
 
 :::
 
 [[C-44LL4]]
 
-## Smallness for functions
+## Compactness in function spaces
 
 [[PR-HRAOC]]
 
-- **Arzela - Ascoli 1**:
-If $\mathcal{F}$ is pointwise bounded and equicontinuous, then $\mathcal{F}$ is totally bounded in the uniform metric and its closure $\overline{\mathcal{F}} \in C(X)$ in the space of continuous functions is compact.
+::: {.theorem title="Arzelà--Ascoli"}
+Let $X$ be a compact metric space and $\mathcal F\subseteq C(X)$.
+If $\mathcal{F}$ is pointwise bounded and equicontinuous, then $\mathcal{F}$ is totally bounded in the metric $\norm{\wait}_\infty$, and its closure in $C(X)$ is compact.
 
-- **Arzela - Ascoli 2**:
-If $\theset{f_k}$ is pointwise bounded and equicontinuous, then there exists a continuous $f$ such that $f_k \mapsvia{u} f$ on every compact set.
-
-:::{.proof title="of Arzelà–Ascoli"}
-Let $X$ be compact metric and $\mathcal{F}\subseteq C(X)$ pointwise bounded and equicontinuous.
-
-- Totally bounded in the uniform metric.
-  Given $\eps>0$, equicontinuity supplies $\delta>0$ such that $d(x,y)<\delta$ implies $\abs{f(x)-f(y)}<\eps$ for every $f\in\mathcal{F}$.
-  Cover $X$ by finitely many $\delta$-balls with centres $x_1,\ldots,x_m$.
-  Pointwise boundedness puts $\theset{(f(x_1),\ldots,f(x_m))\st f\in\mathcal{F}}$ in a bounded subset of $\RR^m$, hence in a totally bounded set: finitely many functions $f_1,\ldots,f_N\in\mathcal{F}$ $\eps$-net the values on the finite set $\theset{x_1,\ldots,x_m}$.
-  For arbitrary $f\in\mathcal{F}$ some $f_j$ then satisfies $\abs{f(x_i)-f_j(x_i)}<\eps$ at each centre, and equicontinuity upgrades this to $\norm{f-f_j}_\infty < 3\eps$.
-
-- Compactness of the closure.
-  $C(X)$ is complete in $\norm{\,\cdot\,}_\infty$, so $\overline{\mathcal{F}}$ is complete and totally bounded, hence compact.
-  Compactness in a metric space is sequential compactness, which is version 1.
-
-- Version 2.
-  Exhaust the domain by compact sets $K_n\nearrow$.
-  Version 1 on each $K_n$ produces a subsequence uniformly Cauchy on $K_n$; the diagonal subsequence is uniformly Cauchy on every compact, and the uniform limit is continuous.
+If $U\subseteq\RR^n$ is open and $(f_k)$ is a pointwise bounded, equicontinuous sequence in $C(U)$, then some subsequence converges uniformly on every compact subset of $U$ to a continuous function.
 
 :::
-
-- **Bolzano-Weierstrass**:
-Every bounded sequence has a convergent subsequence.
-
-- **Heine-Borel**:
-$$
-X \subseteq \RR^n \text{ is compact }
-\iff
-X \text{ is closed and bounded}
-.$$
-
-- **Baire Category Theorem:**
-If $X$ is a complete metric space, then $X$ is a Baire space:
-
-  - For any sequence $\theset{U_k}$ of open, dense sets, $\intersect_k U_k$ is also dense.
-  - $X$ is *not* a countable union of nowhere-dense sets
-
-- **Nested Interval Characterization of Completeness:**
-$\RR$ being complete $\implies$ for any sequence of intervals $\theset{I_n}$ such that $I_{n+1} \subseteq I_n$, $\intersect I_n \neq \emptyset$.
-
-- **Convergence Characterization of Completeness:**
-$\RR$ being complete is equivalent to "absolutely convergent implies convergent" for sums of real numbers.
-
-- Compacts subsets $K \subseteq \RR^n$ are also *sequentially compact*, i.e. every sequence in $K$ has a convergent subsequence.
-
-- Closed subsets of compact sets are compact.
-
-- Every compact subset of a Hausdorff space is closed
-
-- **Urysohn's Lemma:**
-For any two sets $A, B$ in a metric space or compact Hausdorff space $X$, there is a function $f:X \to I$ such that $f(A) = 0$ and $f(B) = 1$.
-
-- Continuous compactly supported functions are
-  - Bounded almost everywhere
-  - Uniformly bounded
-  - Uniformly continuous
 
 ::: {.proof}
+Let $\mathcal{F}\subseteq C(X)$ be pointwise bounded and equicontinuous, with $X$ compact.
 
-    ![figures/2019-12-19-16-49-56.png](../../../../assets/assets/figures/2019-12-19-16-49-56.png)
-		
-- Uniform convergence allows commuting sums with integrals
+- Total boundedness.
+  Given $\varepsilon>0$, equicontinuity supplies $\delta>0$ such that $d(x,y)<\delta$ implies $\abs{f(x)-f(y)}<\varepsilon$ for every $f\in\mathcal{F}$.
+  Cover $X$ by finitely many $\delta$-balls with centres $x_1,\ldots,x_m$.
+  Pointwise boundedness puts $\theset{(f(x_1),\ldots,f(x_m))\st f\in\mathcal{F}}$ in a bounded, hence totally bounded, subset of $\RR^m$, so there are $f_1,\ldots,f_N\in\mathcal{F}$ such that every $f\in\mathcal F$ has some $f_j$ with $\abs{f(x_i)-f_j(x_i)}<\varepsilon$ for all $i$.
+  For $x\in X$ choose $i$ with $d(x,x_i)<\delta$; then $\abs{f(x)-f_j(x)}\leq\abs{f(x)-f(x_i)}+\abs{f(x_i)-f_j(x_i)}+\abs{f_j(x_i)-f_j(x)}<3\varepsilon$, so $\norm{f-f_j}_\infty < 3\varepsilon$.
+
+- Compactness of the closure.
+  $C(X)$ is complete in $\norm{\wait}_\infty$, so the closure $\overline{\mathcal{F}}$ is complete, and it is totally bounded because $\mathcal F$ is; hence $\overline{\mathcal F}$ is compact.
+
+- Sequences on an open set $U\subseteq\RR^n$.
+  Write $U = \bigcup_n K_n$ with $K_n$ compact and $K_n\subseteq\operatorname{int}K_{n+1}$.
+  By the first part applied on each $K_n$ and sequential compactness of compact metric spaces, there are successive subsequences converging uniformly on $K_1, K_2,\ldots$; the diagonal subsequence converges uniformly on every $K_n$, hence on every compact subset of $U$, and its limit is continuous.
 
 :::
+
+## Standard facts
+
+- **Bolzano--Weierstrass.** Every bounded sequence in $\RR^n$ has a convergent subsequence.
+
+- **Heine--Borel.** A subset of $\RR^n$ is compact if and only if it is closed and bounded.
+
+- **Baire category theorem.** If $X$ is a complete metric space and $U_k\subseteq X$ are open and dense, then $\bigcap_k U_k$ is dense; in particular, a nonempty complete metric space is not a countable union of nowhere dense sets.
+
+- **Nested intervals.** If $I_n = [a_n,b_n]$ are nonempty closed bounded intervals with $I_{n+1} \subseteq I_n$, then $\bigcap_n I_n \neq \emptyset$.
+
+- **Completeness via series.** A normed space is complete if and only if every absolutely convergent series in it converges.
+
+- Closed subsets of compact sets are compact, and compact subsets of Hausdorff spaces are closed.
+
+- **Urysohn's lemma.** If $A$ and $B$ are disjoint closed subsets of a metric space or of a compact Hausdorff space $X$, there is a continuous $f\colon X \to [0,1]$ with $f|_A = 0$ and $f|_B = 1$.
+
+- A continuous function with compact support on $\RR^n$ is bounded and uniformly continuous; see [[real-analysis/undergraduate/continuity#Uniform continuity|Continuity]] for the proof of the Heine--Cantor theorem.

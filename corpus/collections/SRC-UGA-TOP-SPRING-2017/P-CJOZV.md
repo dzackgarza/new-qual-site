@@ -25,7 +25,7 @@ audit:
   note: Replaced the incorrect direct-product fundamental group and incomplete cover list by the full monodromy classification; there are five three-sheeted covers without a connectedness convention and exactly one connected three-sheeted cover.
 ---
 
-::: problem
+::: {.problem}
 Find all three-fold covers of the wedge of two copies of $\RP^2$.
 Justify your answer.
 :::

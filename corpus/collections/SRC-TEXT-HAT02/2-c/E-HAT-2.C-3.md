@@ -25,7 +25,9 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 Verify that the formula $f(z_1, \cdots, z_{2k}) = (\bar{z}_2, -\bar{z}_1, \bar{z}_4, -\bar{z}_3, \cdots, \bar{z}_{2k}, -\bar{z}_{2k-1})$ defines a map $f: \mathbb{C}^{2k} \to \mathbb{C}^{2k}$ inducing a quotient map $\mathbb{CP}^{2k-1} \to \mathbb{CP}^{2k-1}$ without fixed points.
+:::
 
 ::: {.solution}
 Define

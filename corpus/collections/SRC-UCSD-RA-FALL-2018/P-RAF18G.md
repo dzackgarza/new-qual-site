@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $g \in L^1([0,1], m)$ and $h : [0,1] \to \mathbb{R}$ be a continuous function.
 
 1. If $f : [0,1] \to \mathbb{R}$ is absolutely continuous and satisfies $f'(x) = h(x)$ for a.e. $x$, show $f'(x) = h(x)$ for all $x \in (0,1)$.
@@ -35,9 +35,9 @@ $$
 Show $f'(x) = \int_x^1 g(y)\,dy$ for all $x \in (0,1)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Upgrade the a.e. derivative identity to an everywhere identity.
-::: proof
+::: {.proof}
 Since $f$ is absolutely continuous,
 \[
 f(x)=f(0)+\int_0^x f'(t)\,dt
@@ -57,7 +57,7 @@ for every $x\in(0,1)$. Hence
 :::
 
 <1>2. Rewrite the integral involving $\min(x,y)$.
-::: proof
+::: {.proof}
 For $x\in[0,1]$,
 \[
 \min(x,y)=
@@ -82,7 +82,7 @@ for almost every $x$.
 :::
 
 <1>3. Upgrade the formula to every interior point.
-::: proof
+::: {.proof}
 Define
 \[
 h(x):=\int_x^1g(y)\,dy.

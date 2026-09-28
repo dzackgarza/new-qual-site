@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 a) State the Spectral Theorem (over $\mathbb{R}$).
 
 b) Let $A = \begin{bmatrix} 2 & -2 \\ -2 & 5 \end{bmatrix}$.

@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Prove that $A_n$ is normal in $S_n$.
 :::
 

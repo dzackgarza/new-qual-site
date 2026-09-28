@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give generators and relations (a presentation) for a non-abelian group $G$ of order $63$ containing an element of order $9$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct a non-abelian group of order $63$ with an element of order $9$ as a semidirect product $\mathbb{Z}/7\mathbb{Z} \rtimes_\theta \mathbb{Z}/9\mathbb{Z}$ and derive its presentation.
 
 <1>1. Sylow structure and semidirect product:

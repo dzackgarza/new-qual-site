@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Determine the values of $x\in\mathbb{R}$ for which $\displaystyle\sum_{n=1}^\infty \frac{x^n}{1+n|x|^n}$ converges, justifying your answer carefully.
 :::
 ::: {.solution}

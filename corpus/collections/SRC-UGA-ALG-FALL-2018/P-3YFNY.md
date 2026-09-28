@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A \in M_n(k)$ be an $n \times n$ matrix over a field $k$.
 
 (a) Suppose that $v \in k^n$ is a column vector such that the set $\{v, A v, \dots, A^{n-1} v\}$ is linearly independent. Show that every matrix $B \in M_n(k)$ that commutes with $A$ ($A B = B A$) is a polynomial in $A$ with coefficients in $k$.
@@ -22,7 +22,7 @@ Let $A \in M_n(k)$ be an $n \times n$ matrix over a field $k$.
 (b) Show that there exists a vector $v \in k^n$ such that $\{v, A v, \dots, A^{n-1} v\}$ is linearly independent if and only if the characteristic polynomial $\chi_A(x)$ equals the minimal polynomial $m_A(x)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the centralizer of a cyclic operator is the polynomial algebra $k[A]$ in (a), and characterize cyclicity via $\chi_A(x) = m_A(x)$ in (b).
 
 <1>1. Part (a): Any commuting matrix $B$ is a polynomial in $A$.

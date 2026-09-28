@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-Suppose $V$ is $6$-dimensional and $T\in\End(V)$ satisfies
+Suppose $V$ is $6$-dimensional and $T\in\operatorname{End}(V)$ satisfies
 \[
 T^6=0,
 \qquad

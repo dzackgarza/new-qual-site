@@ -2,21 +2,28 @@
 schema: qual/card@1
 id: P-BKF09-9A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 9A
+title: Locally uniform convergence of $(1+z/n)^n$ to $e^z$
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the lost arrow under the limit and separated the display from the prose against f09solutions.pdf page 4 problem 9A.
 ---
 
 ::: {.problem}
 Show that
 
-$$\operatorname* { l i m } _ { n  \infty } ( 1 + { \frac { z } { n } } ) ^ { n } = e ^ { z }$$
+$$
+\lim_{n \to \infty} \left( 1 + \frac{z}{n} \right)^n = e^z
+$$
 
-uniformly on compact subsets of C.
+uniformly on compact subsets of $\mathbb{C}$.
 :::
 
 ::: {.solution}

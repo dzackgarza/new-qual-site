@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
 :::
 
-::: solution
+::: {.solution}
 Write the Taylor expansion at $0$ as
 \[
 f(z)=\sum_{n=0}^\infty a_nz^n,

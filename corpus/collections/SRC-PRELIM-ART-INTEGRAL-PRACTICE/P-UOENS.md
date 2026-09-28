@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int \sin x\cos x\cot x\tan x\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Where the integrand is defined,
 \[
 \cot x\tan x=1,

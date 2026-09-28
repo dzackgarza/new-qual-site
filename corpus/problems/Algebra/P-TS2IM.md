@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe all conjugacy classes of $3\times3$ matrices $A\in M_3(\QQ)$ satisfying
 \[
 A^4-A^3-A+I=0.
@@ -22,7 +22,7 @@ A^4-A^3-A+I=0.
 Give a representative of each class.
 :::
 
-::: solution
+::: {.solution}
 Factor the annihilating polynomial:
 \[
 x^4-x^3-x+1=(x-1)(x^3-1)=(x-1)^2(x^2+x+1).

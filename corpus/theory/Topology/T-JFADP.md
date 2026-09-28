@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-JFADP
 kind: theorem
-title: Compact in Hausdorff $\implies$ closed
+title: Compact subsets of Hausdorff spaces are closed
+slogan: 'Compact subsets of Hausdorff spaces are closed.'
 classification:
   areas:
   - topology
@@ -14,9 +15,9 @@ review: draft
 ---
 
 ::: {.theorem}
-A compact subset of a Hausdorff space is closed.
+Every compact subset of a [[D-ZFRV4|Hausdorff space]] is closed [@Mun00].
+:::
 
 ::: {.remark}
-Munkres, *Topology*, 2nd ed., Theorem 26.3. The converse direction fails: $\RR$ is closed in the Hausdorff space $\RR$ and is not compact.
-:::
+The converse fails: $\RR$ is closed in the Hausdorff space $\RR$ and is not compact.
 :::

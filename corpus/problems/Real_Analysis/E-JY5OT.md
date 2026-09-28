@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Derive the reverse triangle inequality from the triangle inequality.
 
 - Let $E\subseteq \RR$.

@@ -1,10 +1,11 @@
 ---
+title: Definitions
 order: 10
 ---
 
 # Definitions
 
-## Convergence and Continuity
+## Convergence and continuity
 
 [[D-HOKQD]]
 
@@ -12,9 +13,8 @@ order: 10
 
 [[FD-ST7TD]]
 
-:::{.remark}
-The main difference is that $\delta$ may depend on $x_0$ and $\eps$ in continuity, but only depends on $\eps$ in the uniform version.
-I.e. once $\delta$ is fixed, for continuity one may only range over $x$, but in uniform continuity one can range over all pairs $x,y$.
+::: {.remark}
+In the definition of continuity on a set, $\delta$ may depend on both $\varepsilon$ and the point $x_0$; in the definition of uniform continuity, $\delta$ depends only on $\varepsilon$, and the condition holds for all pairs $x,y$.
 
 :::
 
@@ -28,14 +28,14 @@ I.e. once $\delta$ is fixed, for continuity one may only range over $x$, but in 
 
 [[FD-ZTRHG]] [[FD-F3UU4]]
 
-## Function Spaces
+## Function spaces
 
 [[D-G5N6I]]
 
 [[FD-WN55Z]] [[FF-HORGP]]
 
-:::{.fact}
-If $X$ is complete, then absolutely convergent implies convergent.
+::: {.fact}
+If $X$ is a Banach space and $\sum_n\norm{x_n}<\infty$, then $\sum_n x_n$ converges in $X$.
 
 :::
 
@@ -59,38 +59,28 @@ If $X$ is complete, then absolutely convergent implies convergent.
 
 [[FD-WHWSQ]] [[FF-VON2D]]
 
-## Measure Theory
+## Measure theory
 
 [[D-PAEDW]]
 
 [[FD-AI6XN]] [[FF-JBCFQ]]
 
-:::{.remark}
-How to derive these definitions: use that $\inf$ corresponds to intersections/existence and $\sup$ corresponds to unions/forall.
+::: {.remark}
+For sets $E_n\subseteq X$,
+$$
+\liminf_n E_n = \bigcup_{N\geq1}\bigcap_{n\geq N}E_n, \qquad \limsup_n E_n = \bigcap_{N\geq1}\bigcup_{n\geq N}E_n,
+$$
+so $x\in\liminf_nE_n$ if and only if $x\in E_n$ for all but finitely many $n$, and $x\in\limsup_nE_n$ if and only if $x\in E_n$ for infinitely many $n$.
+These parallel $\liminf_n x_n = \sup_N\inf_{n\geq N}x_n$ and $\limsup_n x_n = \inf_N\sup_{n\geq N}x_n$, with suprema corresponding to unions and infima to intersections.
+In particular $\liminf_n E_n\subseteq\limsup_n E_n$.
 
-- For $\liminf E_n$: 
-  - $x\in \liminf E_n \iff$ there exists some $N$ such that $x\in \intersect_{n\geq N} E_n$, i.e. $x\in E_n$ for all $n\geq N$.
-    So $x$ is in *all* but finitely many $n$.
-  - How to remember:  $\liminf_{n} x_n = \sup_{n} \inf_{k\geq n} x_n$ for sequences, where sups look like unions and infs look like intersections.
-  - Alternatively: there exists an $n$ (union) such that for all $k\geq n$ (intersection)...
-    
-
-- For $\limsup E_n$: 
-  - $x\in \limsup E_n \iff$ for every $N$, there exists some $n\geq N$ such that $x\in E_n$.
-    So $x$ is an infinitely many $E_n$.
-  - How to remember:  $\limsup_{n} x_n = \inf{n} \sup{k\geq n} x_n$ for sequences, where sups look like unions and infs look like intersections.
-  - Alternatively: for all $n$ (intersection) there exists a $k\geq n$ (union)...
-
-It's also useful to note that $\liminf E_n \subseteq \limsup E_n$, since $\liminf E_n$ are elements that are eventually in all sets, and $\limsup E_n$ are elements in infinitely many sets.
-
-For finite measure spaces,
-\[
-\mu\qty{\liminf_n E_n }\leq \liminf_n \mu(E_n) \leq \lim_n \mu(E_n) \leq \limsup_n \mu(E_n) \leq \mu\qty{\limsup_n E_n}
-.\]
-If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim_n E_n \da \union_n E_n$ if $E_n \increasesto E$ or $\lim_n E_n \da \intersect_n E_n$ if $E_n\decreasesto E$ in which case continuity of measure states
-\[
-\mu\qty{\lim_n E_n} = \lim_n \mu(E_n)
-.\]
+For a measure $\mu$ and measurable $E_n$,
+$$
+\mu\qty{\liminf_n E_n }\leq \liminf_n \mu(E_n),
+$$
+and if $\mu\qty{\bigcup_nE_n}<\infty$, then also $\limsup_n\mu(E_n)\leq\mu\qty{\limsup_n E_n}$.
+If $\liminf_nE_n = \limsup_nE_n\eqqcolon E$ and $\mu\qty{\bigcup_nE_n}<\infty$, then $\mu(E) = \lim_n\mu(E_n)$.
+For $E_n\nearrow E=\bigcup_nE_n$ the equality holds without the finiteness hypothesis, and for $E_n\searrow E=\bigcap_nE_n$ it holds when $\mu(E_1)<\infty$.
 
 :::
 
@@ -120,7 +110,7 @@ If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim
 
 [[D-BF5L2]]
 
-## Integrals and $L^p$ Spaces
+## Integrals and $L^p$ spaces
 
 [[D-R5DL3]]
 
@@ -142,7 +132,7 @@ If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim
 
 [[D-ARQFC]]
 
-## Functional Analysis
+## Functional analysis
 
 [[D-T4LOC]]
 

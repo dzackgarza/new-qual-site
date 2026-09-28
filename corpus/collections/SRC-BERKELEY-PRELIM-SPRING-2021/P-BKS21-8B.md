@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Does there exist a unital homomorphism
 \[
 \mathbb Z[x]/(x^2+3)\longrightarrow\mathbb Z[x]/(x^2-x+1)?

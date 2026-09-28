@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-021
 kind: problem
-title: Kent State ring-theory qualifying problem 21
+title: An ideal is comaximal with the intersection of ideals comaximal to it
 classification:
   areas: [algebra]
   topics: []

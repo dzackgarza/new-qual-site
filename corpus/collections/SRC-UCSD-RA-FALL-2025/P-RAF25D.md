@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega$ be a bounded, Lebesgue measurable subset of $\mathbb{R}^n$ such that $L^n(\Omega) > 0$, where $L^n$ is the Lebesgue measure on $\mathbb{R}^n$.
 Let
 $$
@@ -43,9 +43,9 @@ where $P_C(g)$ denotes the orthogonal projection of $g$ onto $C$.
 (3) Prove that $C^\perp = \{g \in L^2(\Omega) : g = c \text{ a.e. in } \Omega \text{ for some } c \in \mathbb{C}\}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that $C$ is a closed subspace.
-::: proof
+::: {.proof}
 Define
 \[
 L:L^2(\Omega)\to\mathbb C,
@@ -65,7 +65,7 @@ so $C$ is a closed linear subspace of $L^2(\Omega)$.
 :::
 
 <1>2. Compute the orthogonal projection.
-::: proof
+::: {.proof}
 For $g\in L^2(\Omega)$, set
 \[
 m_g:=\frac1{L^n(\Omega)}\int_\Omega g(x)\,dx
@@ -97,7 +97,7 @@ P_C(g)
 :::
 
 <1>3. Identify $C^\perp$.
-::: proof
+::: {.proof}
 Every constant function belongs to $C^\perp$ by the calculation in Step 2. Conversely, let $g\in C^\perp$. By Step 2,
 \[
 g=P_C(g)+(g-P_C(g)),

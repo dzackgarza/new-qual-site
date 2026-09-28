@@ -26,18 +26,18 @@ For a map of curves the condition is that every ramification index is $1$, which
 [[D-IV2RAM]]
 
 Ramified is the negation of unramified, and it is measured rather than merely observed: $e_p$ counts how far the pulled-back uniformizer is from being one, and the length of $(\Omega_{X/Y})_p$ turns that count into the divisor Riemann--Hurwitz adds up.
-The two agree only when $e_p$ is invertible in $k$, and the follow-up is always which way the discrepancy runs.
+The two agree only when $e_p$ is invertible in $k$; in the wild case the length is strictly larger than $e_p-1$.
 
 [[PR-IV2DEGREVEN]]
 
-The parity statement costs one line and is the cheapest check available on a branching count.
+The parity statement gives an immediate consistency check on any branching count.
 
 ## Étale covers
 
 [[D-IV2ETCOV]]
 
 Finite étale is the algebraic covering space, and the projective line has only the trivial ones, by the same Riemann--Hurwitz with the ramification term set to zero.
-The affine line is where this fails in characteristic $p$, and the two answers side by side are the test of whether the étale fundamental group has been understood or recited.
+In characteristic $p$ the affine line has nontrivial Artin--Schreier covers, while $\PP^1$ has no nontrivial finite étale covers.
 
 ## Smoothness
 
@@ -46,11 +46,11 @@ The affine line is where this fails in characteristic $p$, and the two answers s
 [[T-MORSMREG]]
 
 Smooth is a property of a morphism, regular is a property of a local ring, and they agree over a perfect field and not otherwise.
-The failure is always inseparability, and the single example $\Spec \FF_p(t)[x]/(x^p - t)$ answers every version of the question.
+The failure over imperfect fields comes from inseparability; $\Spec \FF_p(t)[x]/(x^p-t)$ is regular but not smooth.
 
 [[PR-MORJAC]]
 
-The jacobian criterion is the only computational tool here, and the thing that gets dropped in the answer is that one must also impose the equations of $X$: a point where the jacobian drops rank is singular only if it lies on $X$.
+The Jacobian criterion must be applied on the variety itself: a rank drop is relevant only at points satisfying the defining equations.
 
 ## Where smoothness fails
 
@@ -58,5 +58,13 @@ The jacobian criterion is the only computational tool here, and the thing that g
 
 [[T-MORGEN]]
 
-Frobenius is the example that defeats every cheap criterion at once, and generic smoothness is the theorem it obstructs, which is why characteristic zero appears in the statement.
-Generic *flatness* needs no such hypothesis, and keeping the two apart is the usual follow-up.
+Frobenius is nowhere smooth and shows why generic smoothness needs characteristic zero.
+Generic *flatness* has no characteristic-zero hypothesis.
+
+## Normal and regular morphisms
+
+[[D-MORNORMREG]]
+
+## Henselian rings
+
+[[D-HENSEL]]

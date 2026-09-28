@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $\CC\setminus\theset{x\in \RR\suchthat x\geq 1}$ to $\DD$.
 :::
 
-::: solution
+::: {.solution}
 The map
 \[
 z\longmapsto 1-z

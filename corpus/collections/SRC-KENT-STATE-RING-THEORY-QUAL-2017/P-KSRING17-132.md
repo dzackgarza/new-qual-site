@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-132
 kind: problem
-title: Kent State ring-theory qualifying problem 132
+title: Hilbert basis theorem
 classification:
   areas: [algebra]
   topics: []

@@ -25,7 +25,7 @@ audit:
   note: Verified the Burnside-transfer argument for a normal odd-order complement and the uniqueness argument making that complement characteristic.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $G$ is a group with $|G| = 2^k m$, where $m$ is odd and $k \geq 0$.
 Assume that $G$ has a cyclic Sylow $2$-subgroup.
 Prove that $G$ has a characteristic subgroup $H$ which has order $m$.

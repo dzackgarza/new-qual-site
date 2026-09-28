@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find a conformal map from 
 \[
 D=\ts{ z\in \CC\st |z|<1 \text{ and } \abs{ z-{1\over 2}}>{1\over 2}}
@@ -21,7 +21,7 @@ D=\ts{ z\in \CC\st |z|<1 \text{ and } \abs{ z-{1\over 2}}>{1\over 2}}
 to the unit disk $\Delta=\{z:|z|<1\}$.
 :::
 
-:::{.solution}
+::: {.solution}
 This is a lune-type region:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_02-25-54.png)
@@ -31,14 +31,14 @@ The usual strategy is to blow up the tangency, so send $1\to\infty$ with
 f(z) \da {1\over z-1}
 .\]
 
-:::{.claim}
+::: {.claim}
 $f$ has the following effect:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_03-27-22.png)
 
 :::
 
-:::{.proof title="of claim"}
+::: {.proof title="of claim"}
 Write $C_1$ for $S^1$ and $C_2$ for the smaller circle.
 Computing the image of $C_1$: parameterize as $\gamma_1(t) = e^{it}$ for $t\in [-\pi, \pi]$, then
 \[

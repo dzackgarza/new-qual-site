@@ -24,7 +24,7 @@ audit:
   note: Re-derived both Sylow counts and made the internal-direct-product step explicit by proving the normal coprime Sylow subgroups commute elementwise.
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order $99 = 3^2 \cdot 11$ up to isomorphism.
 :::
 

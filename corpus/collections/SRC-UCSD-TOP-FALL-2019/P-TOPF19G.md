@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ and $g$ be two continuous maps from the three-torus $T^3 = S^1 \times S^1 \times S^1$ to the three-sphere $S^3$.
 Show that $f$ is homotopic to $g$ if and only if they have the same mapping degree.
 :::

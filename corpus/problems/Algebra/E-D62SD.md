@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Consider the Vandermonde matrix:
 \[
 A \da 

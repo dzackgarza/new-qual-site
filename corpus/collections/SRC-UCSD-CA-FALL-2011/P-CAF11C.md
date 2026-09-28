@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f \in H(\mathbb{D})$ be nonconstant such that $f(\mathbb{D}) \subset \{z \in \mathbb{C} : \operatorname{Re} z < 0\}$ and $f(0) = -1$.
 Prove that for any $z \in \mathbb{D}$, $$\frac{1 - |z|}{1 + |z|} \leq |f(z)| \leq \frac{1 + |z|}{1 - |z|}.$$
 :::
 
-::: solution
+::: {.solution}
 The Möbius map
 \[
 \Phi(w)=\frac{w+1}{w-1}

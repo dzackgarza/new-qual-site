@@ -24,7 +24,7 @@ audit:
   note: "Checked the equivalence of the solvability criteria, every normal-series factor for S4, the faithful root action for reducible as well as irreducible quartics, and a radical tower containing all roots of the quintic."
 ---
 
-::: problem
+::: {.problem}
 (a) Given a group $G$, state the criteria that make $G$ a solvable group.
 Use your definition to prove that $S_4$ is solvable.
 
@@ -33,12 +33,12 @@ Use your definition to prove that $S_4$ is solvable.
 (c) Let $g(x) \in \mathbb{Q}[x]$ have degree 5. Prove or disprove: $g(x)$ is not solvable by radicals.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A group is solvable when its derived series reaches the
 trivial subgroup after finitely many steps. Equivalently, it has
 a finite subnormal series with abelian factors.
 
-::: proof
+::: {.proof}
 Define $G^{(0)}=G$ and let $G^{(j+1)}$ be the subgroup generated
 by all commutators $xyx^{-1}y^{-1}$ with $x,y\in G^{(j)}$.
 Solvability means $G^{(n)}=1$ for some finite $n$.
@@ -58,7 +58,7 @@ so $G$ is solvable under the derived-series definition.
 
 <1>2. The group $S_4$ is solvable.
 
-::: proof
+::: {.proof}
 Let
 $$
 V=\{1,(12)(34),(13)(24),(14)(23)\}.
@@ -82,7 +82,7 @@ proves solvability.
 <1>3. The assertion in part (b) is false: every degree-four
 polynomial over $\mathbb Q$ is solvable by radicals.
 
-::: proof
+::: {.proof}
 Let $K$ be its splitting field. This is a finite Galois extension
 because the base field has characteristic zero. Its Galois group
 acts faithfully on the distinct roots: an automorphism fixing
@@ -103,7 +103,7 @@ Applying it proves the claim and disproves the proposed negation.
 <1>4. The assertion in part (c) is also false. An irreducible
 counterexample is $g(x)=x^5-2$.
 
-::: proof
+::: {.proof}
 This polynomial is irreducible over $\mathbb Q$ by Eisenstein's
 criterion at $2$ [@DF04]. Let $a=\sqrt[5]{2}$, and let $\zeta$
 be a primitive fifth root of unity. Its five roots are

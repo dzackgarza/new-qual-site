@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Define what a composition series is, and state what it means for a group to be simple, solvable, or nilpotent.
 
   - How are the derived and lower/upper central series defined?

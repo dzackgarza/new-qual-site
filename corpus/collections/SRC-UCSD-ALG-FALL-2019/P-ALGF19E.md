@@ -25,7 +25,7 @@ audit:
   note: Verified non-principality using the norm in Z[sqrt(-5)] and projectivity by constructing an explicit inverse fractional ideal and a splitting of D^2 onto the ideal.
 ---
 
-::: problem
+::: {.problem}
 Suppose $D = \mathbb{Z}[\sqrt{-5}]$ and $\mathfrak{a} = \langle 3, 1 + \sqrt{-5} \rangle$.
 
 (a) Prove that $\mathfrak{a}$ is not a principal ideal.

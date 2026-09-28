@@ -22,20 +22,20 @@ audit:
   date: 2026-09-04
 ---
 
-:::{.problem}
+::: {.problem}
 Let $X$ and $Y$ be nonempty topological spaces.
 Show that $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
 
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Proof of the tube lemma: 
 - Continuous image of compact is compact.
 :::
 
 
-:::{.strategy}
+::: {.strategy}
 ![figures/image_2021-05-21-01-16-52.png](../../assets/figures/image_2021-05-21-01-16-52.png)
 
 Take an open cover of the product, use that vertical fibers are compact to get a finite cover for each fiber.
@@ -45,7 +45,7 @@ Use that $X$ is compact to get a finite subcover.
 :::
 
 
-:::{.solution}
+::: {.solution}
 <1>1. If $X\times Y$ is compact, then both $X$ and $Y$ are compact.
 ::: {.proof}
 The coordinate projections

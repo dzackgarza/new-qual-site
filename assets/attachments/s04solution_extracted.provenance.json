@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/s04solution.pdf",
+  "source_pdf_sha256": "bedcc0e1e193b7bfbccbd4904697e8d05464ee1b2731311a6246e45879e71c88",
+  "extracted_markdown": "assets/attachments/s04solution_extracted.md",
+  "extracted_markdown_sha256": "cee6692126ab1499bb7707500e10a93e6d25c07fd6073708f5d7f1bc1f30a2c6",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/s04solution.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/s04solution.md",
+  "source_identification": "Companion solution packet for the UC Berkeley Preliminary Examination, Spring 2004, with solutions 1A-9A and 1B-9B.",
+  "card_reconciliation": "All 18 SRC-BERKELEY-PRELIM-SPRING-2004 cards carry solution-reviewed audit events against this retained solution packet."
+}

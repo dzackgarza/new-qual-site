@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $X$ is a metric space and $A\subseteq X$ is compact then $A$ is bounded.
 :::
 

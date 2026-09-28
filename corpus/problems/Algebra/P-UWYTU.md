@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the cyclic extensions of prime degree $p$?
 :::
 
-::: solution
+::: {.solution}
 Let $K/F$ be cyclic of prime degree $p$.
 
 If $\operatorname{char}F\ne p$ and $F$ contains a primitive $p$th root of unity $\zeta_p$, Kummer theory gives

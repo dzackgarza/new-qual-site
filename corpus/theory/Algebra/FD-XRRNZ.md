@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-XRRNZ
 kind: definition
-title: Notation and definition of fixed points of a group action.
+title: Fixed-point set $X^g$ of a group element
 prompts:
 - What is the fixed-point set $X^g$ of a group action?
 classification:
@@ -16,5 +16,9 @@ review: draft
 ---
 
 ::: {.definition}
-$X^g = \theset{x\in X \suchthat g.x = x} \subseteq X$
+Let a group $G$ act on a set $X$, and let $g\in G$.
+The \dfn{fixed-point set} of $g$ is
+$$
+X^g \coloneqq \theset{x\in X \st g\cdot x = x} \subseteq X.
+$$
 :::

@@ -27,4 +27,4 @@ source:
     year: 2018
 ---
 
-
+A handwritten solution packet covers the five problems of this exam.

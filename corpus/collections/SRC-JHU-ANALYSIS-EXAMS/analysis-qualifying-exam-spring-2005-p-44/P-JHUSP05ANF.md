@@ -24,17 +24,19 @@ audit:
   note: "Checked the two simple residues, the upper-arc decay and absolute convergence before taking the imaginary part of the complex integral."
 ---
 
+::: {.problem}
 Use residues to evaluate the integral
 
 $$
 \int_{-\infty}^{\infty} \frac{x \sin x \, dx}{(x^{2}+1)(x^{2}+4)}.
 $$
+:::
 
-::: solution
+::: {.solution}
 The value is $\boxed{\frac\pi3(e^{-1}-e^{-2})}$.
 
 <1>1. A complex exponential produces the required sine integral as its imaginary part.
-::: proof
+::: {.proof}
 Set $F(z)=ze^{iz}/((z^2+1)(z^2+4))$. For real $x$,
 the imaginary part of $F(x)$ is the integrand in the
 question. The complex integral is absolutely convergent:
@@ -45,7 +47,7 @@ limits of its truncated integrals.
 :::
 
 <1>2. The upper-half-plane residues determine the complex integral.
-::: proof
+::: {.proof}
 The only poles in the upper half-plane are the simple
 poles $i$ and $2i$. Factoring the corresponding quadratic
 terms gives

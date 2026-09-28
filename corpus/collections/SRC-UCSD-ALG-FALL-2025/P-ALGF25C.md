@@ -25,7 +25,7 @@ audit:
   note: Checked the rank-n lattice argument and the conjugation orientation arising from the G-invariant lattice sum.
 ---
 
-::: problem
+::: {.problem}
 A subgroup $L$ of $\mathbb{Q}^n$ is called a lattice if it is finitely generated and its $\mathbb{Q}$-span is $\mathbb{Q}^n$.
 
 (a) Prove that for every lattice $L$ of $\mathbb{Q}^n$, there exists $x \in \mathrm{GL}_n(\mathbb{Q})$ such that $L = x\mathbb{Z}^n$.

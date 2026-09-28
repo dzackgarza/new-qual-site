@@ -49,7 +49,7 @@ Then show that the following hold:
 3. $\mathrm{Aut}_E(F) = \mathrm{Aut}_K(F)$.
 :::
 
-::: solution
+::: {.solution}
 Because $F$ is the splitting field of $f$ over $K$, it is generated over $K$
 by the distinct roots:
 $$
@@ -62,7 +62,7 @@ K\subseteq E\subseteq F.
 $$
 
 <1>1. $F$ is the splitting field of $g$ over $E$.
-::: proof
+::: {.proof}
 The polynomial $g$ belongs to $E[x]$ by definition of $E$, and in $F[x]$ it
 splits as
 $$
@@ -84,7 +84,7 @@ therefore $F$ is the splitting field of $g$ over $E$.
 :::
 
 <1>2. The extension $F/E$ is Galois.
-::: proof
+::: {.proof}
 The roots $u_1,\ldots,u_k$ of $g$ are pairwise distinct. Hence $g$ is
 separable over $E$: equivalently, every irreducible factor of $g$ has only
 simple roots in its splitting field.
@@ -94,7 +94,7 @@ $g$. Therefore $F/E$ is finite, normal, and separable, hence Galois.
 :::
 
 <1>3. Every $E$-automorphism of $F$ is a $K$-automorphism.
-::: proof
+::: {.proof}
 Since $K\subseteq E$, any automorphism fixing $E$ pointwise also fixes $K$
 pointwise. Thus
 $$
@@ -103,7 +103,7 @@ $$
 :::
 
 <1>4. Every $K$-automorphism of $F$ fixes $E$ pointwise.
-::: proof
+::: {.proof}
 Let
 $$
 \sigma\in\operatorname{Aut}_K(F).

@@ -29,7 +29,7 @@ $$
 is connected.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the complement of a product of proper subsets in a product of connected spaces, $Z = (X \times Y) \setminus (A \times B)$, is connected.
 
 <1>1. Selection of basepoint $(x_0, y_0)$:

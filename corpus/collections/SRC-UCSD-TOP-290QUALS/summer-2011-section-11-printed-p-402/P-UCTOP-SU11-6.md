@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 For any topological space $X$, let $X$ be a path-connected space with $\pi_{\geq 2}(X) = 0$ and whose fundamental group is a free group on a set $S$.
 Show that there is a homotopy equivalence between a bouquet of circles, indexed by $S$, and $X$.
+:::
 
 ::: {.solution}
 <1>1. As printed for an arbitrary topological space, the statement is false.

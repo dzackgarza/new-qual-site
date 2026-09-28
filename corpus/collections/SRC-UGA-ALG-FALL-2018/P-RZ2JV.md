@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ is called **maximal** if $N \ne M$ and there is no $R$-submodule $P$ satisfying $N \subsetneq P \subsetneq M$.
 
 (a) Show that an $R$-submodule $N$ of $M$ is maximal if and only if the quotient module $M/N$ is a **simple** $R$-module (that is, $M/N \ne \{0\}$ and $M/N$ has no submodules other than $\{0\}$ and $M/N$).
@@ -25,7 +25,7 @@ Let $R$ be a ring, and let $M$ be an $R$-module. An $R$-submodule $N \subset M$ 
 (c) Let $M = \mu_\infty = \{z \in \mathbb{C}^\times : z^n = 1 \text{ for some } n \in \mathbb{Z}^+\}$ be the multiplicative group of all complex roots of unity, viewed as a $\mathbb{Z}$-module. Show that $M$ has no maximal $\mathbb{Z}$-submodules.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Characterize maximal submodules via simplicity of quotients in (a), deduce prime-order quotients for abelian groups in (b), and prove that the divisible group of roots of unity has no maximal submodules in (c).
 
 <1>1. Part (a): $N \subset M$ is maximal if and only if $M/N$ is simple.

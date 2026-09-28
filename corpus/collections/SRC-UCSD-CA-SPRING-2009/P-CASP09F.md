@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and prove the Weierstrass Product Theorem.
 You may use any general convergence criteria without proof, but you should state what these criteria are.
 :::
 
-::: solution
+::: {.solution}
 For $p\ge0$ define the primary factor
 \[
 E_p(w)=(1-w)\exp\left(w+\frac{w^2}{2}+\cdots+\frac{w^p}{p}\right),

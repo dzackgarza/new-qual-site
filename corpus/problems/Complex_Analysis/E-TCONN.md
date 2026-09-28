@@ -15,16 +15,16 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f:\DD\to \DD$ with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.
 Show that for any initial point $z_0$, the sequence $z_k \da f(z_{k-1})$ converges to $a$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 First suppose $a=0$ -- then Schwarz applies, and since $\abs{f'(a)} < 1$ is strict, $f$ is *not* a rotation.
 
-:::{.claim}
+::: {.claim}
 For any choice of $z_0\in \DD$, there is an $r$ with $0< \abs{z_0} < r < 1$ and a constant $C<1$ such that $\abs{f(z)} \leq C\abs{z}$ for $\abs{z} < r$.
 :::
 
@@ -35,7 +35,7 @@ With such an $r$ and $C<1$ in hand,
 ,\]
 which proves the $a=0$ case.
 
-:::{.proof title="That $f$ is a contraction"}
+::: {.proof title="That $f$ is a contraction"}
 The claim is that for any given $r$, the constant $C\da M/r$ works, where $M\da \max_{\abs{z} = r} \abs{f(z)}>0$.
 The scaled Schwarz lemma gives $\abs{f(z)}\leq {M\over r}\abs{z} = C\abs{z}$, and $\abs{C} \leq 1$ since $\abs{M} \leq r$, which follows because $\abs{f(z)}\leq \abs{z}$ on $\DD$ itself.
 :::

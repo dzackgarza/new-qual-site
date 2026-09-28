@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the **Galois group** of the polynomial $f(x) = x^4 - 3$ over $\mathbb{Q}$, and describe its action on the roots.
 :::
 
-::: solution
+::: {.solution}
 Let \(\alpha=\sqrt[4]{3}\). The roots are \(\alpha,i\alpha,-\alpha,-i\alpha\), so the splitting field is
 \[
 K=\mathbb Q(\alpha,i).

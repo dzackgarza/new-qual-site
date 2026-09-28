@@ -34,7 +34,7 @@ Find a row-reduced echelon matrix R which is row-equivalent to A and an invertib
 :::
 
 
-::: solution
+::: {.solution}
 A row-reduced echelon form of $A$ is
 \[
 R=

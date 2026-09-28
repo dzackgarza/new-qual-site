@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and prove the core theorem.
 :::
 
-::: solution
+::: {.solution}
 **Core theorem.** Let $H\le G$ have finite index $n$. Define
 \[
 \operatorname{core}_G(H)=\bigcap_{g\in G}gHg^{-1}.
@@ -42,7 +42,7 @@ is isomorphic to a subgroup of $S_n$. In particular,
 when $G$ is finite.
 
 <1>1. The core is normal in $G$ and contained in $H$.
-::: proof
+::: {.proof}
 It is contained in the conjugate corresponding to $g=1$, namely $H$. For any
 $x\in G$,
 \[
@@ -54,7 +54,7 @@ so it is normal.
 :::
 
 <1>2. Every normal subgroup of $G$ contained in $H$ lies in the core.
-::: proof
+::: {.proof}
 If $N\trianglelefteq G$ and $N\le H$, then for every $g\in G$,
 \[
 N=gNg^{-1}\le gHg^{-1}.
@@ -63,7 +63,7 @@ Hence $N$ lies in the intersection of all conjugates of $H$.
 :::
 
 <1>3. The kernel of the action of $G$ on the left cosets $G/H$ is the core.
-::: proof
+::: {.proof}
 The action gives
 \[
 \varphi:G\to S_{G/H}\cong S_n.
@@ -81,7 +81,7 @@ $x\in\bigcap_g gHg^{-1}$.
 :::
 
 <1>4. Therefore $G/\operatorname{core}_G(H)$ embeds in $S_n$.
-::: proof
+::: {.proof}
 By <1>3 and the first isomorphism theorem,
 \[
 G/\operatorname{core}_G(H)\cong\operatorname{im}\varphi\le S_n.

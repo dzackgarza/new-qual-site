@@ -26,7 +26,7 @@ audit:
   note: "Checked the complex constructibility convention, the index-two subgroup chain, and the explicit Galois enclosure of a quadratic tower before using the degree obstruction."
 ---
 
-::: problem
+::: {.problem}
 a. Suppose that $K$ is a Galois extension of $\mathbb{Q}$ of dimension $2^n$ for some positive integer $n$.
 Prove that every element of $K$ is constructible.
 
@@ -34,7 +34,7 @@ b. Suppose $f(x) \in \mathbb{Q}[x]$ is an irreducible quartic such that the spli
 Prove that $\alpha$ is not constructible.
 :::
 
-::: solution
+::: {.solution}
 View the number fields inside $\mathbb C$. A complex number is
 constructible when its real and imaginary coordinates are
 straightedge-and-compass constructible from $0$ and $1$.
@@ -47,7 +47,7 @@ $$
 $$
 The tower of length zero is allowed.
 
-::: proof
+::: {.proof}
 Use the real quadratic-tower criterion and the fact that the real
 constructible numbers form a field closed under nonnegative square
 roots [@DF04]. For constructible real and imaginary coordinates,
@@ -77,7 +77,7 @@ constructible numbers. Induction up the tower proves the converse.
 <1>2. A group of order $2^n$ admits a chain from the whole group
 to the identity subgroup with every successive index equal to $2$.
 
-::: proof
+::: {.proof}
 We induct on $n$, with the trivial group as the case $n=0$.
 For a nontrivial $2$-group $G$, the conjugacy-class equation shows
 that $|Z(G)|$ is even: every noncentral conjugacy class has size
@@ -95,7 +95,7 @@ Append $C\supset\{1\}$ to obtain the required chain.
 
 <1>3. Part (a) follows from the Galois correspondence.
 
-::: proof
+::: {.proof}
 The group $G=\operatorname{Gal}(K/\mathbb Q)$ has order $2^n$.
 Choose the chain
 $$
@@ -114,7 +114,7 @@ constructible by step <1>1.
 <1>4. Every finite quadratic tower over $\mathbb Q$ is contained
 in a finite Galois extension of $\mathbb Q$ of power-of-two degree.
 
-::: proof
+::: {.proof}
 Let $\mathbb Q=E_0\subset\cdots\subset E_r$ be such a tower.
 In characteristic zero, completing the square in a quadratic
 minimal polynomial gives
@@ -150,7 +150,7 @@ $N_r$ is the required extension.
 
 <1>5. The root in part (b) is not constructible.
 
-::: proof
+::: {.proof}
 Suppose $\alpha$ were constructible. Steps <1>1 and <1>4 put it in
 a finite Galois extension $N/\mathbb Q$ with $[N:\mathbb Q]=2^m$
 for some $m\geq0$. The irreducible polynomial $f$ has a root in

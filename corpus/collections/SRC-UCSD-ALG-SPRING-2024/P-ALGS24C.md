@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring.
 
 (a) Suppose $I \trianglelefteq A$ (that means $I$ is an ideal of $A$) and $a \in A$.

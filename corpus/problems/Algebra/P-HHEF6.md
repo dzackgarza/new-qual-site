@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and prove the Jordan-Holder theorem for finite groups.
 :::
 
-::: solution
+::: {.solution}
 **Jordan--Hölder theorem.** If
 \[
 1=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_m=G

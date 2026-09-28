@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-18
 kind: problem
-title: Questions from Tie — Fall 2011, question 18
+title: Goursat's theorem with a bounded isolated singularity
 classification:
   areas:
   - complex-analysis

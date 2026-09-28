@@ -16,7 +16,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $m_*(E)$ denote the Lebesgue outer measure of a set \( E \subseteq \RR^n \).
 
 a. Prove using the definition of Lebesgue outer measure that

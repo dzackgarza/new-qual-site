@@ -26,7 +26,9 @@ audit:
   note: Complete Mayer--Vietoris/algebraic proof checked.
 ---
 
+::: {.problem}
 For $SX$ the suspension of $X$, show by a Mayer–Vietoris sequence that there are isomorphisms $\tilde{H}_n(SX) \approx \tilde{H}_{n-1}(X)$ for all $n$.
+:::
 
 ::: {.solution}
 Write the suspension as the union of the upper and lower cones,

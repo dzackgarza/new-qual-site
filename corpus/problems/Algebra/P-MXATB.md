@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be prime, let $\sigma\in S_p$ be a $p$-cycle, and let $\tau\in S_p$ be any transposition. Show that
 \[
 \langle\sigma,\tau\rangle=S_p.

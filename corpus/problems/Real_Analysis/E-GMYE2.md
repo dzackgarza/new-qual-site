@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Find a function that is differentiable but not continuously differentiable.
 
 - Prove the **uniform limit theorem**: a uniform limit of continuous function is continuous.

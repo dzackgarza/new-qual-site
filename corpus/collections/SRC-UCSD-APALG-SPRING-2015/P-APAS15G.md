@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $I \subseteq \mathbb{C}[x, y]$ be the ideal given by $I = \langle y^2 + xy,\ xy^2 + x^2 y + x^2 \rangle$.
 
 (1) Find the reduced Gröbner basis for $I$ with respect to the lexicographic order where $y > x$.

@@ -33,7 +33,7 @@ Let $R$ be a PID and let $A$ be a cyclic $R$-module of nonzero order $r\in R$.
 2. If $s$ divides $r$, so $sk = r$, then $sA \cong R/(k)$ and $A[s] \cong R/(s)$.
 :::
 
-::: solution
+::: {.solution}
 Choose a generator $a\in A$ with annihilator
 \[
 \operatorname{Ann}_R(a)=(r).
@@ -41,7 +41,7 @@ Choose a generator $a\in A$ with annihilator
 Thus $A\cong R/(r)$ and $ra=0$.
 
 <1>1. If $(s,r)=1$, then $sA=A$.
-::: proof
+::: {.proof}
 By Bézout's identity there are $u,v\in R$ such that
 \[
 us+vr=1.
@@ -54,7 +54,7 @@ Thus $A\subseteq sA$, while $sA\subseteq A$ is immediate. Therefore $sA=A$.
 :::
 
 <1>2. If $(s,r)=1$, then $A[s]=0$.
-::: proof
+::: {.proof}
 Let $x\in A[s]$, so $sx=0$. With $u,v$ as in <1>1,
 \[
 x=(us+vr)x=u(sx)+v(rx)=0.
@@ -68,7 +68,7 @@ Now suppose $s\mid r$, say $r=sk$.
 \[
 sA\cong R/(k).
 \]
-::: proof
+::: {.proof}
 Define
 \[
 \phi:R\longrightarrow sA,
@@ -94,7 +94,7 @@ sA\cong R/(k).
 \[
 A[s]\cong R/(s).
 \]
-::: proof
+::: {.proof}
 Define
 \[
 \psi:R\longrightarrow A[s],

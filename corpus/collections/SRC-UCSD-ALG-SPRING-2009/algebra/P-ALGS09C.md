@@ -24,7 +24,7 @@ audit:
   note: Proved necessity by viewing K as a finite-dimensional subspace of L, and sufficiency by identifying the roots of X^(p^m)-X inside F_(p^n) when m divides n.
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime number and let $K$, $L$ be fields of orders $p^m$, $p^n$ respectively, where $m < n$.
 When is $K$ isomorphic to a subfield of $L$?
 :::

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
 Let $1 < p < \infty$.
 Suppose $f_k \in L^p(\mu)$ ($k = 1, 2, \ldots$) are such that $\sup_{k \geq 1} \|f_k\|_p < \infty$ and $f_k \to f$ in $L^1(\mu)$ for some $f \in L^1(\mu)$.
@@ -33,9 +33,9 @@ Prove that $f \in L^p(\mu)$ and $f_k \to f$ in $L^q(\mu)$ for any $q \in (1, p)$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Show that the limit belongs to \(L^p\).
-::: proof
+::: {.proof}
 Let
 \[
 M:=\sup_k\|f_k\|_p<\infty.
@@ -57,7 +57,7 @@ Hence
 :::
 
 <1>2. Obtain a uniform \(L^p\) bound for the differences.
-::: proof
+::: {.proof}
 Set
 \[
 h_k:=f_k-f.
@@ -75,7 +75,7 @@ and, by the triangle inequality,
 :::
 
 <1>3. Interpolate between \(L^1\) and \(L^p\).
-::: proof
+::: {.proof}
 Fix \(q\in(1,p)\). Choose \(\theta\in(0,1)\) so that
 \[
 \frac1q=\frac\theta1+\frac{1-\theta}{p}.

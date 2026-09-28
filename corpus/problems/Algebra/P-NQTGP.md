@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Phi_m(x)$ be the $m$th cyclotomic polynomial, with $m>1$.
 
 1. Prove that if a prime $p$ divides $\Phi_m(a)$ and $\gcd(p,m)=1$, then $m\mid p-1$.

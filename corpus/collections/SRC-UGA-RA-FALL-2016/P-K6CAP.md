@@ -22,18 +22,20 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Let $f, g \in L^2(\RR)$. Show that
 \[
 \lim _{n \to \infty} \int _{\RR} f(x) g(x+n) \,dx = 0
 \]
+:::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Cauchy Schwarz: $\norm{fg}_1 \leq \norm{f}_1 \norm{g}_1$.
 - Small tails in $L^p$.
 :::
 
-::: solution
+::: {.solution}
 
 Let
 \[

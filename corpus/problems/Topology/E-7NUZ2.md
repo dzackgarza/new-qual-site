@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $A\subset X$ with $A$ closed and $X$ compact, and show that $A$ is compact.
+:::
 
 ::: {.solution}
 \envlist

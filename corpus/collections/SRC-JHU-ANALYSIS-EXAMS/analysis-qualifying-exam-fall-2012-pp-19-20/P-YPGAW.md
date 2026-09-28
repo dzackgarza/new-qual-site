@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 5. For each natural number n, let $f _ { n } : [ 0 , 1 ] \to \mathbb { R }$ be a sequence of absolutely integrable functions, and let $f : [ 0 , 1 ] \to$ R be another absolutely integrable function such that
 
 $$
@@ -32,10 +33,11 @@ $$
 (a) Show that there exists a subsequence $f _ { n _ { j } }$ of $f _ { n }$ which converges to $f$ pointwise almost everywhere.
 
 (b) Give a counterexample to show that the assertion fails if ”pointwise almost everywhere” is replaced by ”uniformly”.
+:::
 
-::: solution
+::: {.solution}
 <1>1. Choose a subsequence with summable $L^1$ errors.
-::: proof
+::: {.proof}
 Since
 \[
 \|f_n-f\|_1\longrightarrow0,
@@ -52,7 +54,7 @@ for every $j$.
 :::
 
 <1>2. Prove almost-everywhere convergence of that subsequence.
-::: proof
+::: {.proof}
 By Tonelli's theorem,
 \[
 \begin{aligned}
@@ -74,7 +76,7 @@ for almost every $x$, proving part (a).
 :::
 
 <1>3. Give a counterexample to uniform convergence.
-::: proof
+::: {.proof}
 Let
 \[
 f_n=\mathbf1_{(0,1/n)},

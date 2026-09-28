@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be an $A$-module, and let $S\subseteq A$ be a multiplicative set.
 Must
 \[
@@ -38,7 +38,7 @@ Prove the equality or give a counterexample.
 What changes if $M$ is finitely generated?
 :::
 
-::: solution
+::: {.solution}
 There is always an inclusion
 \[
 S^{-1}\operatorname{Ann}_A(M)
@@ -49,7 +49,7 @@ but equality can fail for infinitely generated $M$. It holds when $M$ is
 finitely generated.
 
 <1>1. The inclusion always holds.
-::: proof
+::: {.proof}
 If $a\in\operatorname{Ann}_A(M)$, then $am=0$ for every $m\in M$. Hence for
 every $s,t\in S$,
 \[
@@ -59,7 +59,7 @@ in $S^{-1}M$.
 :::
 
 <1>2. Equality can fail without finite generation.
-::: proof
+::: {.proof}
 Take
 \[
 A=\mathbb Z,
@@ -78,7 +78,7 @@ is zero.
 :::
 
 <1>3. If $M$ is finitely generated, equality holds.
-::: proof
+::: {.proof}
 Let $m_1,\ldots,m_r$ generate $M$, and suppose
 $a/s\in S^{-1}A$ annihilates $S^{-1}M$. For each $i$,
 \[

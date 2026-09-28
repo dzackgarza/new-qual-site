@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order 30.
 
 a. Show that $G$ has a subgroup of order 15.
@@ -27,7 +27,7 @@ d. Exhibit three nonisomorphic groups of order 30 and prove that they are not is
 You are not required to use your answer to (c).
 :::
 
-::: solution
+::: {.solution}
 (a) Let $n_p$ be the number of Sylow $p$-subgroups of $G$. Sylow's theorems
 give
 \[

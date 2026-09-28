@@ -14,7 +14,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 What can be said about the subgroups of a group of order $30$?
 :::
 

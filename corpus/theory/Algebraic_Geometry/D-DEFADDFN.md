@@ -19,7 +19,7 @@ prompts:
 ---
 
 ::: {.definition title="additive functor"}
-A covariant functor $F: \mca \to \mcb$ between abelian categories is **additive** if the induced map
+A covariant functor $F: \mca \to \mcb$ between abelian categories is \dfn{additive} if the induced map
 \[
 \Hom_{\mca}(A, A') \to \Hom_{\mcb}(F(A), F(A'))
 \]

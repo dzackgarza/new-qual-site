@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-4RLPQ
 kind: theorem
 title: Sequentially compact if and only if complete and totally bounded
+slogan: 'In metric spaces, sequential compactness is exactly completeness plus total boundedness.'
 classification:
   areas:
   - topology
@@ -15,5 +16,9 @@ review: draft
 ---
 
 ::: {.theorem}
-A metric space $X$ is sequentially compact iff it is complete and totally bounded.
+A metric space $X$ is sequentially compact if and only if it is complete and [[FF-VWKGM|totally bounded]].
+:::
+
+::: {.remark}
+For metric spaces, sequential compactness is equivalent to compactness [@Mun00], and compactness is equivalent to being complete and totally bounded [@Mun00].
 :::

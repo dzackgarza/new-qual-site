@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-002
 kind: problem
-title: Kent State ring-theory qualifying problem 2
+title: Units and ideals of $\mathbb Z/60\mathbb Z$
 classification:
   areas: [algebra]
   topics: []

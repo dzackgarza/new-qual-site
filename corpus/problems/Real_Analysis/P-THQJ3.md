@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $E \subseteq H$ a Hilbert space.
 
 a. Show that $E\perp \subseteq H$ is a closed subspace.

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 Show that $\RR$ with the cofinite topology is compact.
 :::
 

@@ -24,7 +24,7 @@ audit:
   note: Checked the degree-index correspondence and the index-two normality conclusion, including the case Gal(F/L) is trivial.
 ---
 
-::: problem
+::: {.problem}
 Suppose there exists an intermediate field $L$ of the Galois extension $F/E$ of degree 2 over $E$.
 What can we say about $\operatorname{Gal}(F/E)$?
 :::

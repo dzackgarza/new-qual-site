@@ -26,7 +26,7 @@ audit:
   note: Corrected the false free-product computation; van Kampen imposes the boundary relation a^2[b,c]=1.
 ---
 
-::: problem
+::: {.problem}
 a. Let $S_1$ and $S_2$ be disjoint surfaces.
 Give the definition of their connected sum $S_1 \# S_2$.
 

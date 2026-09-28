@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 a. $f: D\rightarrow {\mathbb C}$ be a continuous function, where $D\subset {\mathbb C}$ is a domain.Let $\alpha:[a,b]\rightarrow D$ be a smooth curve.
 Give a precise definition of the *complex line integral* $$\int_{\alpha} f.$$
 
@@ -31,7 +31,7 @@ c. Let $C_R$ be the circle $|z|=R$, described in the counterclockwise direction,
 Using the parametrization $z=Re^{it}$ for $0\le t\le2\pi$ and the pathwise determination $\log(Re^{it})=\log R+it$, provide an upper bound for $\big | \int_{C_R} \dfrac{\log{(z)} }{z^2} \big |$ depending only on $R$ and universal constants.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $\alpha:[a,b]\to D$ is piecewise $C^1$, define
 \[
 \int_\alpha f(z)\,dz

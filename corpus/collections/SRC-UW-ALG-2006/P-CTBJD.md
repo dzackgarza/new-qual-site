@@ -18,14 +18,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 - Let $p<q<r$ be prime integers.
   Show that a group of order $pqr$ cannot be simple.
 
 - Consider groups of orders $2^2\cdot 3\cdot p$ where $p$ has the values 5, 7, and 11. For each of those values of $p$, either display a simple group of order $2^2\cdot 3\cdot p$, or show that there cannot be a simple group of that order.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $G$ have order $pqr$ with $p<q<r$ prime. Then $G$ is not simple.
 ::: {.proof}
 Suppose for contradiction that $G$ is simple. Let $n_r$ be the number of Sylow $r$-subgroups. The Sylow theorems give

@@ -24,6 +24,8 @@ class DiagnosticCode(Enum):
     READER_WARNING = "reader-warning"
     UNREAD_MATH = "unread-math"
     UNMAPPED_DIV_CLASS = "unmapped-div-class"
+    RAW_TEX_DROPPED = "raw-tex-dropped"
+    UNDEFINED_MACRO = "undefined-macro"
     # pages
     PAGE_REFERENCE_MISSING = "page-reference-missing"
     PUBLICATION_REFERENCE_MISSING = "publication-reference-missing"

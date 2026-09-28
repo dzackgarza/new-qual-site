@@ -9,10 +9,6 @@ classification:
 relations: []
 review: draft
 audit:
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked against Part II, item 2 of the Real Analysis section of the Wesleyan University Analysis Qualifier, Summer 2007, in analysis_2003-2007.pdf.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -21,8 +17,9 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
-Let $(X,\mathcal A,\mu)$ be a measure space. Suppose $f_n,f\in L^1(X,\mu)$ and
+::: {.problem}
+Let $(X,\mathcal A,\mu)$ be a measure space.
+Suppose $f_n,f\in L^1(X,\mu)$ and
 \[
 \int_X|f_n-f|\,d\mu\longrightarrow0.
 \]
@@ -32,7 +29,7 @@ Prove that for every $a>0$,
 \]
 :::
 
-::: solution
+::: {.solution}
 Fix $a>0$ and set
 \[
 E_n=\{x:|f_n(x)-f(x)|>a\}.

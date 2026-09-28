@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SRFZMT
 kind: theorem
 title: Zariski's main theorem, and the factorization of birational maps of surfaces
+slogan: 'On smooth projective surfaces, exceptional fibres stay connected and every birational map is built from finitely many blowups and blowdowns.'
 classification:
   areas:
   - algebraic-geometry
@@ -25,15 +26,16 @@ Then every fibre $f^{-1}(y)$ is connected.
 :::
 
 ::: {.theorem title="Elimination of indeterminacy (Hironaka)"}
-Let $X$ and $Y$ be smooth projective varieties and $F \colon X \dashrightarrow Y$ a birational map.
+Let $X$ and $Y$ be smooth projective varieties over an algebraically closed field $k$, and $F \colon X \dashrightarrow Y$ a birational map.
+Assume that $k$ has characteristic $0$, or that $\dim X = 2$.
 Then there exist a smooth projective variety $W$ and birational morphisms $g \colon W \to X$ and $f \colon W \to Y$ fitting into
-\[
+
 \begin{tikzcd}
 & W \arrow[dl, "g"'] \arrow[dr, "f"] & \\
 X \arrow[rr, dashed, "F"] & & Y
 \end{tikzcd}
-\]
-where $W$, $f$ and $g$ are as in Theorem 15.4. In particular every birational map is dominated by a common smooth blowup.
+
+with $F \circ g = f$ on the open subset of $W$ where $F \circ g$ is defined.
 :::
 
 ::: {.theorem title="Factorization"}
@@ -43,7 +45,7 @@ Consequently every birational map of smooth projective surfaces is a finite sequ
 :::
 
 ::: {.remark}
-The version to state first is the connectedness one, because that is the theorem; the surface statement is what it is used for.
+The connectedness theorem supplies the fibre structure used in the surface factorization statement.
 A birational morphism of smooth surfaces is an isomorphism away from finitely many points, and at each such point the fibre is connected of dimension one — so it is a curve that gets contracted, and contraction of a curve to a smooth point is a blowup.
 
 Fundamental points are the points where the inverse map fails to be defined: the map is a morphism on a largest open $U$, and $X \setminus U$ is that finite set.

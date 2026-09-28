@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-067
 kind: problem
-title: Kent State ring-theory qualifying problem 67
+title: Lifting idempotents modulo a square-zero ideal
 classification:
   areas: [algebra]
   topics: []

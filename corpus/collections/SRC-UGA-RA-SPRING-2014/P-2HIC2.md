@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $f, g \in L^1([0, 1])$, and for all $x \in [0, 1]$ define
 $$
 F(x) = \int_0^x f(y) \, dy \quad \text{and} \quad G(x) = \int_0^x g(y) \, dy.
@@ -30,7 +30,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the integration by parts formula for absolutely continuous functions using Tonelli's and Fubini's Theorems on the triangular domain $0 \le y \le x \le 1$.
 
 <1>1. Absolute integrability on the product space:

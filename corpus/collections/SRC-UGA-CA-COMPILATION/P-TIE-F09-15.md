@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-15
 kind: problem
-title: Questions from Tie — Fall 2009, question 15
+title: Termwise differentiation of locally uniformly absolutely convergent series of analytic functions
 classification:
   areas:
   - complex-analysis

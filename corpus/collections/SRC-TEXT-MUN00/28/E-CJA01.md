@@ -21,7 +21,7 @@ audit:
 Show that $[0, 1]$ is not limit point compact as a subspace of $\mathbb{R}_\ell$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the closed unit interval $[0, 1]$ endowed with the subspace topology from the lower limit line $\mathbb{R}_\ell$ is not limit point compact.
 
 <1>1. Definition of limit point compactness:

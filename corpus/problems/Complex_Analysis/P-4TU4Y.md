@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find all entire functions satisfying
 \[
 \abs{f(z)} \leq \abs{z}^{1\over 2} \quad\text{ for } \abs{z} > 10
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Since $f$ is entire, take a Laurent expansion at $z=0$, so $f(z) = \sum_{k\geq 0} c_k z^k$ where ${2\pi i\over k!} c_k = f^{(k)}(0)$ by Cauchy's integral formula.
 Take a Cauchy estimate on a disc of radius $R>10$:
 \[

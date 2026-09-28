@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 Let
 
 $$
@@ -74,7 +74,7 @@ for some constant $c$, since $n^n\geq n!$.
 This reduces the problem to Problem 3.
 :::
 
-::: solution
+::: {.solution}
 For part 1, Cauchy's inequality gives, for every $r>0$,
 \[
 |a_n|\le \frac{A}{r^n}e^{ar^\rho}.

@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos (\theta)}
 = \begin{cases}\frac{2 \pi}{a^{2}-1} & \text { if }|a|>1 \\ \frac{2 \pi}{1-a^{2}} & \text { if }|a|<1\end{cases}
@@ -24,7 +24,7 @@ review: draft
 
 :::
 
-:::{.solution}
+::: {.solution}
 The usual substitution: $z=e^{i\theta}, \dz = (iz)\dtheta$.
 \[
 I\da \int_{[0, 2\pi]} \qty{a^2 - 2a\cos(\theta) + 1}\inv \dtheta

@@ -20,7 +20,7 @@ audit:
 Show that a metric space $(X, d)$ is **complete** if and only if for every nested sequence $A_1 \supset A_2 \supset A_3 \supset \cdots$ of non-empty closed subsets of $X$ such that $\lim_{n \to \infty} \operatorname{diam}(A_n) = 0$, the intersection $\bigcap_{n=1}^\infty A_n$ is **non-empty** (and in fact consists of a unique point).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the equivalence between Cauchy sequence completeness of $(X, d)$ and the Cantor Intersection Property for nested closed sets with vanishing diameter.
 
 <1>1. Direct Implication ($\implies$): Assume $(X, d)$ is Complete:

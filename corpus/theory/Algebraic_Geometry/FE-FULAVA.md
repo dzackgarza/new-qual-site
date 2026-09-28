@@ -54,5 +54,8 @@ The four lattice points give a morphism $X_P \to \PP^3$, and
 so the map is finite of degree $2$ rather than an embedding: $X_P$ is a double cover of $\PP^3$ branched over the four coordinate hyperplanes.
 Doubling repairs it: $2P$ is normal and hence very ample, so $2D$ is very ample while $D$ is ample but not.
 
-The example has three features worth noting. It must be three-dimensional, because ample and very ample agree on complete toric surfaces. It must be singular, because they also agree on smooth complete toric varieties. And the obstruction is a single determinant, which is the same index computation that detects a quotient singularity at the corresponding fixed point.
+Three structural features make the example minimal.
+It must be three-dimensional, because ample and very ample agree on complete toric surfaces.
+It must be singular, because they also agree on smooth complete toric varieties.
+And the obstruction is a single determinant, which is the same index computation that detects a quotient singularity at the corresponding fixed point.
 :::

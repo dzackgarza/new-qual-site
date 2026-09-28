@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $C_G(H) \subseteq N_G(H) \leq G$.
 :::
 

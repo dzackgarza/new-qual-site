@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define
 \[
 X \da \ts{M \in \mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
@@ -23,7 +23,7 @@ X \da \ts{M \in \mat(2\times 3, k) \st \rk M \leq 1} \subseteq \AA^6/k
 Show that $X$ is an irreducible variety, and find its dimension.
 :::
 
-::: solution
+::: {.solution}
 We use the following fact from linear algebra.
 
 *Matrix minor*: for an $m\times n$ matrix, a *minor of order* $\ell$ is the determinant of an $\ell\times \ell$ submatrix obtained by deleting any $m-\ell$ rows and any $n-\ell$ columns.
@@ -53,4 +53,9 @@ Heuristic: there are three degrees of freedom in choosing the first row $x,y,z$.
 To enforce the rank one condition, the second row must be a scalar multiple of the first, yielding one degree of freedom for the scalar.
 
 > Note: I looked at this for a couple of hours, but I don't know how to prove either of these statements with the tools we have so far.
+:::
+
+::: {.remark}
+Erratum: the solution above is unfinished.
+It shows that $X$ is the zero locus of the three $2 \times 2$ minors, but both claims it then needs, that the ideal $\gens{xb-ya, yc-zb, xc-za}$ is prime and that $\dim X = 4$, are asserted without proof, and the degree-of-freedom count is a heuristic rather than an argument.
 :::

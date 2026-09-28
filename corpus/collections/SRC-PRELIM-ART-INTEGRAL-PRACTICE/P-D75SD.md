@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int \sin x\,\cos(\cos x)\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $u=\cos x$, so $du=-\sin x\,dx$. Then
 \[
 \int \sin x\,\cos(\cos x)\,dx

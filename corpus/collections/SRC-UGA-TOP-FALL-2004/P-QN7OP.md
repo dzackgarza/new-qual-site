@@ -27,7 +27,7 @@ audit:
     counterexample.
 ---
 
-:::{.problem}
+::: {.problem}
 Let $X$ be a topological space.
 
 a.  

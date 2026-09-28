@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MORBC
 kind: proposition
 title: Which properties are stable under base change and composition
+slogan: 'The standard geometric properties of morphisms are universal: they survive composition and arbitrary base change.'
 classification:
   areas:
   - algebraic-geometry
@@ -24,7 +25,8 @@ The following are stable under arbitrary base change and under composition: open
 :::
 
 ::: {.remark}
-The list is long because each property is defined by a condition on the ring maps in an affine cover, and that condition survives $\wait \tensor_B B'$: finite generation, flatness, and surjectivity all do. A property defined this way is stable under base change whenever the corresponding module-theoretic condition survives $\wait \tensor_B B'$.
+The length of the list reflects common stability mechanisms under tensor product and fibre product.
+A property defined by a condition on the ring maps in an affine cover is stable under base change whenever the corresponding module-theoretic condition survives $\wait \tensor_B B'$, and finite generation, flatness, and surjectivity all do.
 
 The instructive entries are the ones that are *not* on it.
 Being an isomorphism onto the image, being a closed map, and being dominant are not stable, and universal closedness is defined by forcing the issue: it is exactly "closed after every base change", which is why the definition of proper contains the word universally.

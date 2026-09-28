@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ and $H$ be finite groups and let $A\colon G\to\mathrm{GL}_n(\mathbb{C})$ and $B\colon H\to\mathrm{GL}_m(\mathbb{C})$ be representations of $G$ and $H$ respectively.
 
 (a) Show that $A\times B\colon G\times H\to\mathrm{GL}_{nm}(\mathbb{C})$ is a representation where for $(\sigma,\tau)\in G\times H$,
@@ -29,7 +29,7 @@ and for matrices $M$ and $N$, $M\otimes N$ is the Kronecker product of $M$ and $
 (Hint: Consider the two-dimensional representations of $S_2\times S_2$.)
 :::
 
-::: solution
+::: {.solution}
 For part (a), recall the Kronecker-product identity
 \[
 (M_1\otimes N_1)(M_2\otimes N_2)

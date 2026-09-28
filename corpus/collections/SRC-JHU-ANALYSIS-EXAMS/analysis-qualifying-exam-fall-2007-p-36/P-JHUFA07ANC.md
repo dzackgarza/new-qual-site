@@ -25,7 +25,7 @@ audit:
   note: "Proved positivity and target-independence of the annular zero count, then excluded count one through the inverse map and a forbidden logarithm of the annular coordinate."
 ---
 
-::: problem
+::: {.problem}
 Let $A=\{z\in\mathbb C:1<|z|<2\}$ and let $f$ be
 holomorphic on a neighborhood of $\overline A$, with
 $f|_A$ nonconstant and $|f|=1$ on $\partial A$.
@@ -33,10 +33,10 @@ Prove that $f$ has at least two zeros in $A$, counted
 with multiplicity.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The function maps $A$ into the unit disk and has a positive finite zero count.
 
-::: proof
+::: {.proof}
 The maximum modulus principle on the compact closed
 annulus gives $|f|\leq1$, with strict inequality in $A$
 because $f|_A$ is nonconstant [@SS03]. If $f$ had no
@@ -51,7 +51,7 @@ on its component, by the identity theorem [@SS03].
 
 <1>2. Every point of the unit disk has exactly $N$ preimages in $A$, with multiplicity.
 
-::: proof
+::: {.proof}
 Give $\partial A$ the positive orientation, outer circle
 counterclockwise and inner circle clockwise. For a fixed
 $w$ with $|w|<1$ and $0\leq t\leq1$, one has
@@ -69,7 +69,7 @@ $N_w(1)=N_w(0)=N$.
 
 <1>3. A zero count of one is impossible.
 
-::: proof
+::: {.proof}
 Suppose $N=1$. Step <1>2 makes $f:A\to D$ bijective,
 where $D$ is the unit disk, and every fiber point is
 simple. Hence $f'$ never vanishes in $A$, and its

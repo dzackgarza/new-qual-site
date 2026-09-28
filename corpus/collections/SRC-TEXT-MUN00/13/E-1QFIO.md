@@ -33,7 +33,7 @@ $$
 Find the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$, and the largest topology contained in $\mathcal{T}_1$ and $\mathcal{T}_2$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove intersection and union properties of families of topologies, establish lattice bounds on topologies, and compute the meet and join of specific topologies on a 3-point set.
 
 <1>1. Part (a): Intersections and unions of topologies.

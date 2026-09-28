@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Construct the group $G$ of $3 \times 3$ matrices by applying the Young natural representation indexed by $[2,1,1]$ to the permutations of $S_4$.
 
 (1) Compute the Hilbert series $F_{\mathbb{R}[x_1,x_2,x_3]^G}(q)$ of the ring of $G$-invariants.
@@ -46,7 +46,7 @@ If not, go back to step (4).
 Why?
 :::
 
-::: solution
+::: {.solution}
 The irreducible $S_4$-representation indexed by $(2,1,1)$ is the sign twist of the standard representation indexed by $(3,1)$. A convenient equivalent matrix model is the orientation-preserving signed permutation group
 \[
 G=

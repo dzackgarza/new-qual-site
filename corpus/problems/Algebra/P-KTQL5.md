@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the center $Z(S_n)$ of the symmetric group $S_n$? Prove it.
 :::
 
-::: solution
+::: {.solution}
 For $n=1$, $S_1$ is trivial, so $Z(S_1)=S_1$. For $n=2$, $S_2$ is abelian, so $Z(S_2)=S_2$.
 
 Now let $n\ge3$ and suppose $\sigma\in Z(S_n)$ is nontrivial. Choose $a$ with $\sigma(a)=b\ne a$, and choose $c$ distinct from $a,b$. Let $\tau=(bc)$. Then $\tau(a)=a$, so

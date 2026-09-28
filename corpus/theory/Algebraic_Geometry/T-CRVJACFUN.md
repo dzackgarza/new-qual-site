@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVJACFUN
 kind: theorem
 title: The Jacobian represents $\Pic^0(X/-)$, and is a smooth proper group scheme of dimension $g$
+slogan: 'The Jacobian represents degree-zero line bundles; its tangent space is $H^1(\OO_X)$, so it is a smooth proper group variety of dimension $g$.'
 classification:
   areas:
   - algebraic-geometry
@@ -66,27 +67,26 @@ is a morphism, symmetric in its arguments, so it factors through $\Sym^n X$.
 It is surjective for $n \geq g$, and the fibre of $\Sym^n X \to \Jac(X)$ over the class of $D$ is the complete linear system $\abs{D} \iso \PP^{\ell(D)-1}$.
 :::
 
-::: {.remark title="Reading the definition"}
-Two features of the functor are where the questions land.
+::: {.remark title="Representability and rigidification"}
+Two features of the functor control representability.
 
 The quotient by $p^*\Pic(T)$ is not a technicality: without it the functor is not representable, because a line bundle on $X \times T$ can be twisted by one pulled back from the base without changing any fibre, so the assignment $T \mapsto \Pic^0(X\times T)$ has automorphisms and cannot have a universal object.
 Quotienting kills exactly that ambiguity.
 The same issue reappears as the reason a universal family needs a rigidification, and it is why $\Jac$ is a fine moduli space while $\AA^1$ for elliptic curves is only coarse.
 
 That $k$-points give $\Pic^0(X)$ is then formal: a $k$-point is a map $\spec k \to \Jac(X)$, which by the universal property is an element of $\Pic^0(X/k) = \Pic^0(X)$.
-So the scheme structure is extra information laid over a set one already knew.
+Thus $\Jac(X)$ upgrades the set $\Pic^0(X)$ of degree-zero line-bundle classes to a smooth proper group scheme representing families of such classes.
 :::
 
 ::: {.remark title="Smooth, of dimension $g$, and proper"}
-The dimension computation is the cleanest use of dual numbers in the subject.
+Dual numbers identify the tangent space directly.
 A tangent vector at $0$ is a map $T = \spec k[\eps]/\eps^2 \to \Jac(X)$ sending the closed point to $0$, hence a class in $\Pic^0(X/T)$ restricting to $0$ over $\spec k$.
 The exponential sequence for dual numbers gives
 \[
 0 \to H^1(X; \OO_X) \to \Pic\big(X[\eps]\big) \to \Pic(X) \to 0 ,
 \]
 so those classes are exactly $H^1(X;\OO_X)$, of dimension $g$.
-That is smoothness at the origin only; a group scheme is homogeneous under its own translations, so smoothness propagates to every point.
-This "check it at the identity, translate everywhere else" step is what makes group schemes easy and is worth naming.
+Translation by group elements propagates smoothness from the identity to every point.
 
 Properness is the valuative criterion applied to a DVR $R$ with fraction field $K$: one must extend a line bundle on $X \times \spec K$ over $X \times \spec R$.
 But $X \times \spec R$ is regular, so a Weil divisor extends and is automatically Cartier, and the extension is unique.
@@ -94,10 +94,10 @@ Irreducibility comes from the other direction, via $\phi^n$: for $n \geq g$ Riem
 Hence $\dim \Jac(X) = g$ by a second, independent route.
 :::
 
-::: {.remark title="Against the analytic construction"}
+::: {.remark title="Comparison with the analytic construction"}
 Over $\CC$ one can write $\Jac(X) = H^0(\Omega^1)\dual / H_1(X,\ZZ)$ and prove Abel and Jacobi inversion by integration; that construction produces a complex torus and needs GAGA to become algebraic.
-The functorial construction above needs no ground field hypothesis, which is the reason to carry it: in characteristic $p$, and for families, the analytic route is unavailable and the representability statement is the definition.
+The functorial construction above needs no ground-field hypothesis and therefore applies in characteristic $p$ and to families, where the analytic construction is unavailable.
 The two agree over $\CC$, and the agreement is Abel's theorem.
 
-The genus $1$ case is the one to state last, because it is where the two theories collapse into each other: $\phi^1 \colon X \to \Jac(X)$ is already an isomorphism, so an elliptic curve carries a group law with no auxiliary object, and every statement about $\Pic^0$ can be read as a statement about points of the curve.
+In genus $1$ the two theories coincide: $\phi^1 \colon X \to \Jac(X)$ is an isomorphism, so an elliptic curve carries its group law directly and statements about $\Pic^0$ become statements about points of the curve.
 :::

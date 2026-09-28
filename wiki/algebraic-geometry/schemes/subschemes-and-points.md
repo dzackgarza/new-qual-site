@@ -21,7 +21,7 @@ $V(x)$ and $V(x^2)$ in $\AA^1$ have the same points and are different closed sub
 
 [[D-SCHIMG]]
 
-The scheme-theoretic image is the answer to "the image of a morphism is not a subscheme, so what do you use instead", and its nonreduced behaviour is the point: the image of a tangent vector in $\AA^1$ is the double point, not the origin.
+The scheme-theoretic image is the smallest closed subscheme through which the morphism factors. For a tangent vector mapping into $\AA^1$, it is the double point rather than the reduced origin.
 Chevalley's theorem covers the topological half of the same problem, that the set-theoretic image is only constructible.
 
 [[PR-SCHINT]]
@@ -30,7 +30,7 @@ Chevalley's theorem covers the topological half of the same problem, that the se
 
 [[D-SCHPTS]]
 
-Evaluation is the idea that needs rehearsing out loud.
+Evaluation takes values in residue fields that vary with the point.
 A section of $\OO_X$ is not a function to a fixed set; its value at $x$ lives in $\kappa(x)$, and on $\Spec \ZZ$ that field changes from point to point.
 Specialisation then orders the points, and the classical picture is the bottom layer of that order — the closed points — with everything above it invisible.
 Generic points and their use in "generically" are in [[algebraic-geometry/schemes/properties-from-the-ring|properties from the ring]].

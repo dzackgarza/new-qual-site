@@ -27,13 +27,13 @@ The extremal case is hyperelliptic.
 
 [[D-CRVGON]]
 
-The $g^r_d$ notation is how a question of this shape gets asked: a $g^1_2$ is a degree-two map to $\PP^1$, a $g^1_3$ makes the curve trigonal, and the canonical system on a non-hyperelliptic curve is a $g^{g-1}_{2g-2}$.
+In $g^r_d$ notation, a $g^1_2$ is a degree-two map to $\PP^1$, a $g^1_3$ makes the curve trigonal, and the canonical system on a non-hyperelliptic curve is a $g^{g-1}_{2g-2}$.
 
 [[D-CRVHYP]]
 
 The hyperelliptic case is the exception in the statement of almost every theorem here, and it is always the same picture underneath: the canonical map is two-to-one onto a rational normal curve rather than an embedding.
 
-## The curves one can actually name
+## Low-genus canonical models
 
 [[FE-CRVLOWG]]
 
@@ -44,3 +44,7 @@ Genus $3$ is the plane quartic, genus $4$ is the intersection of a quadric and a
 [[PR-CRVHYPCI]]
 
 Genus $4$ is the case to hold next to this one: the canonical curve there *is* a complete intersection, and the formula $\omega_C \cong \OO_C(\sum d_i - n - 1)$ is what makes both statements the same computation.
+
+## Brill--Noether theory
+
+[[D-CRVBRILLNOETHER]]

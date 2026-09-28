@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega$ be an open subset of $\mathbb{C}$.
 For a compact subset $K$ of $\Omega$, define the hull $$\hat{K} = \{z \in \Omega : |f(z)| \leq \sup_{w \in K} |f(w)|, \text{ for every } f \in \mathcal{O}(\Omega)\}.$$ Let $\hat{K}_c$ be the convex hull of $K$, namely the smallest convex subset of $\mathbb{C}$ containing $K$.
 Show that
@@ -22,7 +22,7 @@ Show that
 (b) $\hat{K} \subset \hat{K}_c$.
 :::
 
-::: solution
+::: {.solution}
 Because $K\subset\widehat K$, one direction in (a) is immediate:
 \[
 d(\widehat K,\mathbb C\setminus\Omega)

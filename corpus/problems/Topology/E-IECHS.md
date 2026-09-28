@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Show that a closed subset of a Hausdorff space need not be compact.
 :::
 

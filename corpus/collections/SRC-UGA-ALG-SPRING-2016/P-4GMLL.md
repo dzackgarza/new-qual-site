@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A=\left(\begin{array}{ccc}
@@ -37,7 +37,7 @@ Find an invertible matrix $P$ such that $P\inv A P = J$.
 You do not need to compute $P\inv$.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial is
 \[
 \chi_A(x)=(x-1)(x-2)^2.

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-ENSFJ
 kind: fact
-title: Series expansion for $\sech(z) = {1\over \cosh(z)}$
+title: Taylor series of $\sech z$ at $0$
+slogan: '$\sech z$ has an even Taylor series whose radius $\pi/2$ is set by the nearest zeros of $\cosh z$.'
 prompts:
 - What is the series expansion of $\sech(z)$?
 classification:
@@ -16,7 +17,9 @@ review: draft
 ---
 
 ::: {.fact}
+For $z\in\CC$ with $\abs{z}<\pi/2$,
 $$
-\operatorname{sech} x=1-\frac{x^{2}}{2}+\frac{5 x^{4}}{24}-\frac{61 x^{6}}{720}+\cdots
-.$$
+\sech z = \frac{1}{\cosh z} = 1-\frac{z^{2}}{2}+\frac{5 z^{4}}{24}-\frac{61 z^{6}}{720}+\cdots.
+$$
+The radius of convergence is $\pi/2$, the distance from $0$ to the nearest zeros $\pm i\pi/2$ of $\cosh$.
 :::

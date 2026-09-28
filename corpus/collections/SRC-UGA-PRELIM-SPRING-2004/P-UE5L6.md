@@ -23,7 +23,7 @@ Suppose $f$ is a continuous function satisfying the equation $f(x) = 5 + \int_0^
 Argue that $f$ must be differentiable and then find all such function(s) explicitly.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The function $f$ is differentiable and satisfies
 \[
 f'(x)=3f(x)

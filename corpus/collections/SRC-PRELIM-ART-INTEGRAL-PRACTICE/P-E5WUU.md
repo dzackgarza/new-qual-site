@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int_0^1\int_y^1\sin(x^2)\,dx\,dy.
 \]
 :::
 
-::: solution
+::: {.solution}
 The region is $0\le y\le x\le1$. Reversing the order of integration,
 \[
 \int_0^1\int_y^1\sin(x^2)\,dx\,dy

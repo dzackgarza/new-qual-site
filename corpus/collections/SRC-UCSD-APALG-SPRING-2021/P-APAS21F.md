@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{R}_+$ be the group of positive real numbers under multiplication.
 Is every indecomposable $\mathbb{R}_+$-module over the complex numbers irreducible?
 :::
 
-::: solution
+::: {.solution}
 No. Via the logarithm, the multiplicative group $\mathbb R_+$ is isomorphic to the additive group $(\mathbb R,+)$. Let $V=\mathbb C^2$ and define
 \[
 \rho(t)=

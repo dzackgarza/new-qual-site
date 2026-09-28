@@ -36,5 +36,5 @@ The construction of $\mu$ is the symplectic-quotient picture: realise $X_\Sigma$
 \]
 For $\PP^n$ this is $\mu(z) = \abs{z}^{-2}(\abs{z_0}^2, \ldots, \abs{z_n}^2)$ with image the standard simplex, and the vertices are the coordinate points.
 
-The explicit construction is illustrative; the statement itself carries the combinatorial content, already visible as the orbit-cone correspondence.
+The combinatorial content of the moment-map statement is already encoded by the orbit-cone correspondence.
 :::

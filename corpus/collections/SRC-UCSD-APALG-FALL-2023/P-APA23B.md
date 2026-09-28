@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex entries, and $\operatorname{eig}(A)$ denotes the set of eigenvalues of $A$ counting multiplicities.
 
 (a) Prove that every $A \in M_n$ may be written uniquely as $A = S + iT$, where $S$ and $T$ are Hermitian.

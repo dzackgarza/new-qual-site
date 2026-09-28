@@ -20,7 +20,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a normed vector space.
 
 a. Give the definition of what it means for a map $L:X\to \CC$ to be a *linear functional*.

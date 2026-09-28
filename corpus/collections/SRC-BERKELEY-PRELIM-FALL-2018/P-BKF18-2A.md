@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose $f:\mathbb R\to\mathbb R$ is differentiable and satisfies $f'(x)>f(x)$ for all real $x$.
 Show that if $f(0)=0$, then $f(x)>0$ for all $x>0$.
 :::

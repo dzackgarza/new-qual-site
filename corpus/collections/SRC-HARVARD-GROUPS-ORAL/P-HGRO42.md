@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 How many distinct six-bead necklaces can be made with two colors, where necklaces related by a symmetry are identified?
 :::
 
-::: solution
+::: {.solution}
 There are $13$.
 
 Let the dihedral group $D_{12}$ act on the $2^6=64$ two-colorings of the six
@@ -37,7 +37,7 @@ number of colorings fixed by the twelve symmetries.
 64,\ 2,\ 4,\ 8,\ 4,\ 2
 \]
 colorings.
-::: proof
+::: {.proof}
 A rotation through $k$ bead positions has $\gcd(6,k)$ cycles on the six
 positions, and a coloring fixed by that rotation is constant on each cycle.
 Hence it fixes
@@ -49,7 +49,7 @@ colorings. For $k=0,1,2,3,4,5$ this gives the displayed numbers.
 
 <1>2. Three reflections fix $16$ colorings each and the other three fix $8$
 colorings each.
-::: proof
+::: {.proof}
 For even $6$, three reflection axes pass through a pair of opposite beads. Such
 a reflection has two fixed beads and two transposed pairs, hence four orbits and
 $2^4=16$ fixed colorings.
@@ -62,7 +62,7 @@ transposed pairs, hence three orbits and $2^3=8$ fixed colorings.
 \[
 \frac{64+2+4+8+4+2+3\cdot16+3\cdot8}{12}=13.
 \]
-::: proof
+::: {.proof}
 The numerator is $156$, and $156/12=13$.
 :::
 :::

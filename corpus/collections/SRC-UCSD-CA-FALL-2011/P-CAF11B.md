@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a set and $\{\rho_n\}$ a sequence of metrics on $X$.
 Define $\rho$ on $X \times X$ by $$\rho(x, y) := \sum_{n=1}^{\infty} \frac{1}{n^2} \cdot \frac{\rho_n(x, y)}{1 + \rho_n(x, y)}.$$
 

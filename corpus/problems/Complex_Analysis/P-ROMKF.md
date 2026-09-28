@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a_n \neq 0$ and assume that $\displaystyle
 \lim_{n \rightarrow \infty} \frac{|a_{n+1}|}{|a_n|} = L$. Show that
 $\displaystyle
@@ -25,7 +25,7 @@ applicable, the ratio test can be used to calculate the radius of
 convergence of a power series.
 :::
 
-::: solution
+::: {.solution}
 First suppose $0<L<\infty$. Set
 \[
 r_k=\frac{|a_{k+1}|}{|a_k|}.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_0^\infty {\sqrt x \over 1 + x^2} \, dx
@@ -23,7 +23,7 @@ Calculate
 
 :::
 
-::: solution
+::: {.solution}
 Use the standard beta-integral identity
 \[
 \int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx

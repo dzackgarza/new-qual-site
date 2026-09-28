@@ -25,15 +25,15 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Without using the Riesz Representation Theorem, compute
 \[
 \sup \left\{\left|\int_{0}^{1} f(x) e^{x} d x\right| \suchthat f \in L^{2}([0,1], m),~~ \|f\|_{2} \leq 1\right\}
 \]
 :::
-::: solution
+::: {.solution}
 <1>1. Obtain the sharp upper bound.
-::: proof
+::: {.proof}
 For any $f\in L^2([0,1])$ with $\|f\|_2\le1$, Cauchy--Schwarz gives
 \[
 \left|\int_0^1 f(x)e^x\,dx\right|
@@ -53,7 +53,7 @@ so the supremum is at most
 :::
 
 <1>2. Show that the bound is attained.
-::: proof
+::: {.proof}
 Let
 \[
 f_0(x):=\frac{e^x}{\|e^x\|_2}.

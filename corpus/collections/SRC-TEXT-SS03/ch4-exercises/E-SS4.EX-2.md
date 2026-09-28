@@ -19,13 +19,13 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. If $f \in \mathfrak { F } _ { a }$ with $a > 0$ , then for any positive integer n one has $f ^ { ( n ) } \in \mathfrak { F } _ { b }$ whenever $0 \leq b < a$
 
 [Hint: Modify the solution to Exercise 8 in Chapter 2.]
 :::
 
-::: solution
+::: {.solution}
 By definition, $f\in\mathfrak F_a$ means that $f$ is holomorphic on
 \[
 S_a=\{z:|\Im z|<a\}

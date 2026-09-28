@@ -14,6 +14,10 @@ review: draft
 ---
 
 ::: {.definition}
-Two subgroups $H, K \leq G$ are **conjugate** iff there exists some $g\in G$ such that $gHg\inv = K$.
-Note that all conjugate subgroups have the same cardinality.
+Let $G$ be a group.
+Two subgroups $H, K \leq G$ are \dfn{conjugate} if there exists $g\in G$ such that $gHg^{-1} = K$.
+:::
+
+::: {.remark}
+Conjugate subgroups have the same cardinality: if $gHg^{-1} = K$, then $h\mapsto ghg^{-1}$ is a bijection $H\to K$.
 :::

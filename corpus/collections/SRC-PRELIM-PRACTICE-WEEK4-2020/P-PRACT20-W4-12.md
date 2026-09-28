@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: P-PRACT20-W4-12
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 12"
+title: Nullity of a linear map from $2\times3$ matrices onto $\mathbb R^4$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Rank and Nullity
 relations: []
 review: draft
 ---

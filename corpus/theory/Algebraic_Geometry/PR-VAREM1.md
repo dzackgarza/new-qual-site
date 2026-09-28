@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VAREM1
 kind: proposition
 title: The exceptional curve has self-intersection $-1$
+slogan: 'Blowing up a smooth point creates $E\cong\PP^1$ with $E^2=-1$, and adds $(n-1)E$ to the canonical class.'
 classification:
   areas:
   - algebraic-geometry
@@ -38,7 +39,7 @@ Intersecting with $E$:
 :::
 
 ::: {.remark}
-A second computation of $E^2$ uses two lines in $\PP^2$ meeting transversally away from $p$: $\pi^* L_1 . \pi^* L_2 = L_1 . L_2 = 1$; move them to meet at $p$, so $\pi^* L_i' = \tilde{L}_i' + E$ and the proper transforms now miss each other; expanding gives $1 = 0 + 1 + 1 + E^2$.
+An alternative geometric computation uses two lines in $\PP^2$: when they meet transversally away from $p$, $\pi^* L_1 . \pi^* L_2 = L_1 . L_2 = 1$; moving them to meet at $p$ gives $\pi^* L_i' = \tilde{L}_i' + E$, while the proper transforms miss each other, so expanding gives $1 = 0 + 1 + 1 + E^2$.
 Both arguments run on the same two facts, $\pi^*A.E = 0$ and $\pi^*C = \tilde{C} + E$.
 
 The consequence is Castelnuovo's criterion — a smooth rational curve with $E^2 = -1$ on a surface is the exceptional curve of a blowup and can be contracted — which is what makes minimal models of surfaces possible.

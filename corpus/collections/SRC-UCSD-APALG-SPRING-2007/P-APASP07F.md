@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 (a) Expand the product of Schur functions $s_{(2)} \cdot s_{(1)}$ into a linear combination of Schur functions for all Young diagrams $\lambda$ with three boxes.
 
 (b) Decompose the simple $S_5$-module $V_{(3,2)}$ into a direct sum of simple $S_3 \times S_2$-modules, with $S_3$ permuting the letters $\{1, 2, 3\}$ and $S_2$ permuting the letters $\{4, 5\}$.

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-WDDTM
 kind: fact
-title: $\arctan(1) = \cdots$
+title: Value of $\arctan(1)$
+slogan: '$\arctan(1)=\pi/4$: the principal angle whose tangent is $1$.'
 prompts:
 - What is $\arctan(1)$?
 classification:

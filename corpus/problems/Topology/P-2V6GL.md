@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 - Find a space that is connected but not locally connected.
   Can there be a space that is locally connected but not connected?
 :::

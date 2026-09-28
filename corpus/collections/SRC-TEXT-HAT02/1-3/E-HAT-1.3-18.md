@@ -24,9 +24,11 @@ audit:
   note: Identified the universal abelian cover with the commutator-subgroup cover and described the two- and three-generator cases as integer lattice Cayley graphs.
 ---
 
+::: {.problem}
 For a path-connected, locally path-connected, and semilocally simply-connected space $X$, call a path-connected covering space $\tilde{X} \to X$ abelian if it is normal and has abelian deck transformation group.
 Show that $X$ has an abelian covering space that is a covering space of every other abelian covering space of $X$, and that such a "universal" abelian covering space is unique up to isomorphism.
 Describe this covering space explicitly for $X = S^1 \vee S^1$ and $X = S^1 \vee S^1 \vee S^1$.
+:::
 
 ::: {.solution}
 Let

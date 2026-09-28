@@ -20,14 +20,25 @@ prompts:
 - When is a Noetherian local ring regular?
 - Characterise discrete valuation rings among Noetherian local rings.
 - Is a regular local ring a domain? Is it integrally closed?
+- Show that $R$ is a discrete valuation ring if and only if $R$ is a local PID that is not a field, and define a uniformizer.
+- Show that the ring of germs at $0$ of holomorphic functions on a disc is a discrete valuation ring with uniformizer $z$.
+- For the local ring $R$ of a curve at a point, over $k = \bar k$, identify the closed and generic points of $\Spec R$ and their residue fields, and decide which maps between $\Spec R$ and $\Spec \operatorname{Frac} R$ are morphisms of schemes.
 ---
 
 ::: {.definition title="regular local ring"}
-A Noetherian local ring $(A,\mm)$ is a **regular local ring** if
+A Noetherian local ring $(A,\mm)$ is a \dfn{regular local ring} if
 \[
 \dim A = \dim_{A/\mm} \mm/\mm^2 .
 \]
 A Noetherian ring $A$ is a **regular ring** if $A_\mfp$ is a regular local ring for every prime $\mfp$.
+:::
+
+::: {.definition title="valuation"}
+Let $K$ be a field and $G$ a totally ordered abelian group.
+A \dfn{valuation} of $K$ with values in $G$ is a group homomorphism $v \colon K^\times \to G$ such that $v(x+y) \geq \min(v(x), v(y))$ for all $x, y \in K^\times$ with $x + y \neq 0$.
+Its **valuation ring** is $R = \ts{x \in K^\times \st v(x) \geq 0} \cup \ts{0}$.
+A domain $R$ is a **valuation ring** if it is the valuation ring of some valuation of $\operatorname{Frac} R$, and the valuation is **discrete** if $G = \ZZ$.
+[@Har10a, §I.6]
 :::
 
 ::: {.remark}

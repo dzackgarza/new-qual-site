@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $M_n$ be the set of perfect matchings of $\{1, 2, \ldots, 2n\}$, i.e., a decomposition of this set into disjoint $2$-element subsets.
 The permutation action of $S_{2n}$ induces an action on $M_n$.
 Let $k$ be a field.
@@ -26,7 +26,7 @@ Let $k$ be a field.
 :::
 
 
-::: solution
+::: {.solution}
 Part (a) is valid, but part (b) is false as stated for general $n$ and $k$.
 
 For (a), fix the standard matching

@@ -38,12 +38,12 @@ c. All torsion-free $\mathbb{Z}$-modules are free.
 d. All degree two field extensions are Galois.
 :::
 
-::: solution
+::: {.solution}
 The assertions are respectively true, true, false, and false.
 
 <1>1. If $R[x]$ is a principal ideal domain, then $R$ is a field.
 
-::: proof
+::: {.proof}
 The constant polynomials identify $R$ with a subring of the
 commutative integral domain $R[x]$, so $R$ is a commutative
 integral domain with $1\ne0$. Fix $0\ne a\in R$. The ideal
@@ -60,7 +60,7 @@ gives $1=au(0)$. Every nonzero $a\in R$ is therefore invertible.
 
 <1>2. All cyclic subgroups of order $15$ in $S_8$ are conjugate.
 
-::: proof
+::: {.proof}
 The order of a permutation is the least common multiple of its
 disjoint-cycle lengths [@DF04]. A permutation of order $15$ in
 $S_8$ must have a cycle with length divisible by $5$. Every cycle
@@ -79,7 +79,7 @@ that such subgroups exist.
 
 <1>3. The $\mathbb Z$-module $\mathbb Q$ is torsion-free but not free.
 
-::: proof
+::: {.proof}
 For a nonzero integer $n$ and $q\in\mathbb Q$, the equation
 $nq=0$ implies $q=0$, so the module is torsion-free.
 Moreover, $2\mathbb Q=\mathbb Q$, since $q=2(q/2)$.
@@ -93,7 +93,7 @@ $e$ in itself is $1$. This contradicts $2\mathbb Q=\mathbb Q$.
 
 <1>4. In characteristic $2$ a quadratic extension need not be Galois.
 
-::: proof
+::: {.proof}
 Let $F=\mathbb F_2(t)$ with $t$ an indeterminate. The polynomial
 $X^2-t$ has no root in $F$. Indeed, a root $A(t)/B(t)$ with
 nonzero polynomials $A,B$ would imply $A(t)^2=tB(t)^2$.

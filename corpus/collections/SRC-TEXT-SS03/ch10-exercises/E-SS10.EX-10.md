@@ -20,7 +20,7 @@ audit:
   note: Repaired a statement or hint transcription defect before solving.
 ---
 
-::: exercise
+::: {.exercise}
 10. Observe the following irregularities of the functions $r _ { 2 } ( n )$ and $r _ { 4 } ( n )$ as n becomes large:
 
 (a) $r _ { 2 } ( n ) = 0$ for infinitely many n, while lim $\begin{array} { r } { \operatorname* { s u p } _ { n  \infty } r _ { 2 } ( n ) = \infty , } \end{array}$
@@ -30,7 +30,7 @@ audit:
 [Hint: For (a) consider $n = 5 ^ { k }$ ; for (b) consider alternatively $n = 2 ^ { k }$ , and $n = q ^ { k }$ using products of many distinct odd primes.]
 :::
 
-::: solution
+::: {.solution}
 We use the formulas established in the chapter
 \[
 r_2(n)=4\bigl(d_1(n)-d_3(n)\bigr),

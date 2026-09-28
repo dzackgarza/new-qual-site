@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Use Taylor's theorem to prove that
 \[
 \sum_{k=1}^\infty \log(1+k^{-2/3})
@@ -34,9 +34,9 @@ diverges, while
 converges.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Obtain uniform Taylor estimates near $0$.
-::: proof
+::: {.proof}
 For $0\le x\le1$, Taylor's theorem for $\log(1+x)$ at $0$ gives
 \[
 \log(1+x)=x-\frac{x^2}{2}+R_3(x),
@@ -53,7 +53,7 @@ In particular, after decreasing the neighborhood of $0$ if necessary,
 :::
 
 <1>2. Prove divergence of the first series.
-::: proof
+::: {.proof}
 Put $x_k=k^{-2/3}$. Then $x_k\to0$, so for all sufficiently large $k$,
 \[
 \log(1+x_k)\ge\frac{x_k}{2}
@@ -66,7 +66,7 @@ Since $\sum k^{-2/3}$ diverges, the comparison test gives
 :::
 
 <1>3. Prove convergence after subtracting the linear term.
-::: proof
+::: {.proof}
 Taylor's formula gives
 \[
 \log(1+x)-x=-\frac{x^2}{2}+R_3(x).

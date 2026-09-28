@@ -28,7 +28,7 @@ audit:
   note: Corrected the statement and proof to use Fourier series coefficients and Parseval on L2([0,1]); adjacent dyadic frequency blocks may share one endpoint coefficient, which is handled by Cauchy-Schwarz.
 ---
 
-:::{.problem}
+::: {.problem}
 Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that 
 
 - \( \norm{f_n}_2 \leq n^{-51 \over 100} \)  for all \( n\in \NN \),
@@ -45,7 +45,7 @@ Prove that \( \sum_{n\in \NN} f_n \) converges in the Hilbert space \( L^2([0, 1
 
 :::
 
-:::{.warnings}
+::: {.warnings}
 Although this mentions Plancherel, probably what is needed is Parseval's identity:
 \[
 \sum_{k\in \ZZ} \abs{\hat{f}(k)}^2 = \int_0^1 \abs{f(x)}^2\dx

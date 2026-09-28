@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 \[
 \sum_{k\in \mathbb{Z}} { (-1)^k \over (k+a)^2} = \pi^2 \cos(\pi a)\csc^2(\pi a) \quad \text{for } a\in \mathbb{R}\setminus\mathbb{Z}
@@ -31,7 +31,7 @@ Show that
 
 :::
 
-::: solution
+::: {.solution}
 Fix $a\in\mathbb R\setminus\mathbb Z$ and set
 $$
 F(z)=\frac{\pi\csc(\pi z)}{(z+a)^2}.

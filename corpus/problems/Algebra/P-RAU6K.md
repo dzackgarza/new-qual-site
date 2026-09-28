@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a cubic polynomial over $\mathbb{Q}$ with Galois group $S_3$, and prove that its Galois group is indeed $S_3$.
 :::
 
-::: solution
+::: {.solution}
 Take
 \[
 f(x)=x^3-2.

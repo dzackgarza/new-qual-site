@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-12
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 12"
+title: Area of the Koch snowflake
 classification:
   areas:
   - real-analysis

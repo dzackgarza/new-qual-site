@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\Inn(G)\normal\Aut(G)$.
 :::
 
-::: solution
+::: {.solution}
 For $g\in G$, let $c_g\in\Inn(G)$ denote conjugation by $g$:
 \[
 c_g(x)=gxg^{-1}.

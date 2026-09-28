@@ -26,7 +26,7 @@ Proof.
 Show that $f(N)$ is normal; conclude that $\ker(g \circ f) = f^{-1}(\ker g) \subset f^{-1}f(N) = N$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $f: G \to H$ is a surjective homomorphism and $\ker g = \langle\langle f(x_0) \rangle\rangle_H$, then $\ker(g \circ f)$ is the least normal subgroup $N = \langle\langle \ker f \cup \{x_0\} \rangle\rangle_G$.
 
 <1>1. Inclusion $N \subseteq \ker(g \circ f)$:

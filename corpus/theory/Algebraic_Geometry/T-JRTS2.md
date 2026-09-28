@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-JRTS2
 kind: theorem
 title: Hilbert's Nullstellensatz
+slogan: 'Over an algebraically closed field, affine geometry sees exactly radicals: $I(V(J))=\sqrt J$.'
 classification:
   areas:
   - algebraic-geometry
@@ -15,6 +16,9 @@ prompts:
 - State the Nullstellensatz.
 - What is $I(V(J))$?
 - Where does the Nullstellensatz use that $k$ is algebraically closed?
+- How is the Nullstellensatz proved?
+- If $L/k$ is a field extension and $L$ is a finitely generated $k$-algebra, show that $L/k$ is algebraic.
+- State the weak Nullstellensatz in terms of maximal ideals and in terms of systems of polynomial equations, and deduce the strong form by the Rabinowitsch trick.
 ---
 
 ::: {.theorem title="Hilbert's Nullstellensatz"}
@@ -23,6 +27,7 @@ Then
 \[
 I(V(J)) = \sqrt{J} .
 \]
+[@Har10a, Theorem I.1.3A]
 :::
 
 ::: {.remark}

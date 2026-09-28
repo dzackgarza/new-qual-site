@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-13
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 13"
+title: Properties of the square of a real $2\times2$ matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 ---

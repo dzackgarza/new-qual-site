@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORMIRACLE
 kind: theorem
 title: Miracle flatness
+slogan: 'For a Cohen--Macaulay source over a regular base, fibres of the expected dimension force flatness.'
 classification:
   areas:
   - algebraic-geometry
@@ -35,5 +36,5 @@ In the form one uses it: a morphism between smooth varieties with equidimensiona
 It also explains the blowup counterexample rather than merely contradicting it: $\Bl_0 \AA^2 \to \AA^2$ has a fibre of dimension $1$ where the expected dimension is $0$, so the hypothesis fails at exactly the point where flatness does.
 
 The displayed dimension formula is itself a consequence of flatness in general, so the theorem says that for a Cohen--Macaulay source over a regular base the necessary condition is sufficient.
-Cohen--Macaulay is the hypothesis people forget, and it is what rules out a source with an embedded component in one fibre.
+The Cohen--Macaulay hypothesis rules out embedded depth defects that would otherwise allow the expected dimension formula without flatness.
 :::

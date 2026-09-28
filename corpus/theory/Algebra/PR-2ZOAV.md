@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-2ZOAV
 kind: proposition
-title: PQR Theorem
+title: Groups of order $pqr$ are solvable
+slogan: 'A group whose order is the product of three distinct primes is solvable.'
 classification:
   areas:
   - algebra
@@ -14,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $|G| = pqr$ where $p<q<r$ are distinct primes then $G$ is solvable.
+Let $p < q < r$ be primes and let $G$ be a group with $\abs{G} = pqr$.
+Then $G$ is [[D-DFIDP|solvable]].
 :::

@@ -30,17 +30,17 @@ Find if possible a choice function for each of the following collections, withou
 :::
 
 ::: {.solution}
-<1>1. (a) Yes: $c(A)=\min A$ (least element) is a choice function for nonempty subsets of $\Z_+$.
+<1>1. (a) Yes: $c(A)=\min A$ (least element) is a choice function for nonempty subsets of $\ZZ_+$.
 ::: {.proof}
-$\Z_+$ well-ordered.
+$\ZZ_+$ well-ordered.
 :::
 
-<1>2. (b) Yes: well-order $\Z$ as $0,1,-1,2,-2,\dots$ and take least in that order.
+<1>2. (b) Yes: well-order $\ZZ$ as $0,1,-1,2,-2,\dots$ and take least in that order.
 ::: {.proof}
 explicit well-ordering.
 :::
 
-<1>3. (c) Yes: $\Q$ countable, fix enumeration $q_1,q_2,\dots$ and take $c(A)=q_{\min\{n:q_n\in A\}}$.
+<1>3. (c) Yes: $\QQ$ countable, fix enumeration $q_1,q_2,\dots$ and take $c(A)=q_{\min\{n:q_n\in A\}}$.
 ::: {.proof}
 countable well-ordering.
 :::

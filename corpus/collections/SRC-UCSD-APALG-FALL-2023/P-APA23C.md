@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex entries, and $A^H$ denotes the Hermitian transpose of $A$.
 
 Consider any $A \in M_{m,n}$.

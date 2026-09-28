@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that a compact manifold does not retract onto its boundary.
+:::
 
 ::: {.solution}
 It is enough to use $R=\mathbb Z_2$, over which every manifold is orientable. Suppose there were a retraction

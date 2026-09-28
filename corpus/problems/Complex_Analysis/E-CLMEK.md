@@ -17,7 +17,7 @@ review: draft
 Show that if $f$ is a differentiable contraction, $f$ is uniformly continuous.
 :::
 
-::: solution
+::: {.solution}
 By definition, a contraction satisfies
 \[
 d(f(x),f(y))\le c\,d(x,y)

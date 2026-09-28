@@ -26,6 +26,7 @@ audit:
   note: Proved finite edge-crossing for loops in the unreduced suspension by uniform continuity, used finite retractions for freeness, and factored the Hawaiian-earring winding map through the mapping-cone quotient.
 ---
 
+::: {.problem}
 In this problem we use the notions of suspension, reduced suspension, cone, and mapping cone defined in Chapter 0. Let $X$ be the subspace of $\mathbb{R}$ consisting of the sequence $1, {^1/_2}, {^1/_3}, {^1/_4}, \cdots$ together with its limit point 0.
 
 (a) For the suspension $SX$, show that $\pi_1(SX)$ is free on a countably infinite set of generators, and deduce that $\pi_1(SX)$ is countable.
@@ -35,6 +36,7 @@ In contrast to this, the reduced suspension $\Sigma X$, obtained from $SX$ by co
 Show that $\pi_1(C)$ is uncountable by constructing a homomorphism from $\pi_1(C)$ onto $\Pi_\infty \mathbb{Z} / \oplus_\infty \mathbb{Z}$.
 Note that $C$ is the reduced suspension of the cone $CX$.
 Thus the reduced suspension of a contractible space need not be contractible, unlike the unreduced suspension.
+:::
 
 ::: {.solution}
 Write

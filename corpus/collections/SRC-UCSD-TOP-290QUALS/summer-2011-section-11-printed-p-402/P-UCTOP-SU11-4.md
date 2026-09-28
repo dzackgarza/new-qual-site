@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 For which $n$ and $k$ is $X = \mathbb{CP}^n / \mathbb{CP}^k$ homotopy-equivalent to a manifold?
+:::
 
 ::: {.solution}
 <1>1. The quotient $X=\mathbb{CP}^n/\mathbb{CP}^k$ has integral cohomology

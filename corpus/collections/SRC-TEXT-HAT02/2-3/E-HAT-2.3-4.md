@@ -25,8 +25,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the wedge axiom for homology theories follows from the other axioms in the case of finite wedge sums.
-
+:::
 
 ::: {.solution}
 It suffices to prove the binary case and then induct.

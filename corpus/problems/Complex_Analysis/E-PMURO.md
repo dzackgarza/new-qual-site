@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show
 \[
 \int_{(0, \infty)} {\sin(x) \over x }\dx = {\pi \over 2}
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Take an indented semicircle.
 Let $I$ be the original integral, then 
 \[

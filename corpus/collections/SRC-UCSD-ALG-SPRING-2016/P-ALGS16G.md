@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove that there exists a Galois extension of $\mathbb{Q}$ whose Galois group is a cyclic group of order $4$.
 :::
 

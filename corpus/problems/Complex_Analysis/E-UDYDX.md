@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I \da \int_0^\infty {1\over x^4 + 1 }\dx = {\pi \over 2\sqrt 2}
 .\]
 
 :::
 
-:::{.solution title="Integrand symmetry"}
+::: {.solution title="Integrand symmetry"}
 Note that the function is even, so
 \[
 \int_{0^\infty} f(x) \dx = {1\over 2} \int_\RR f(x)\dx = {1\over 2} {\pi \over \sqrt 2} = {\pi \over 2 \sqrt 2}
@@ -30,7 +30,7 @@ Note that the function is even, so
 using the solution from a previous problem.
 :::
 
-:::{.solution title="Sector"}
+::: {.solution title="Sector"}
 A sector will work, since there is a symmetry under $z\to \zeta_4 z$ and $f(z) \sim z^{-4}$, so the semicircular piece will vanish.
 Take the contour $\Gamma$ comprised of
 
@@ -74,7 +74,7 @@ I
 
 :::
 
-:::{.solution title="The log trick"}
+::: {.solution title="The log trick"}
 Consider the auxiliary function $g(z) \da \log(z) f(z)$, and take a keyhole contour:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-23_00-39-57.png)

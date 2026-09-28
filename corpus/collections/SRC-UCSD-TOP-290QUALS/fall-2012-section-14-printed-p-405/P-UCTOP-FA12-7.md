@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Prove the Borsuk-Ulam theorem: that if $n > m \geq 1$, then there is no map $g : S^n \to S^m$ which satisfies $g(-x) = -g(x)$ for all $x$.
+:::
 
 ::: {.solution}
 <1>1. Suppose an antipodal-equivariant map $g:S^n\to S^m$ existed, with $n>m\ge1$.

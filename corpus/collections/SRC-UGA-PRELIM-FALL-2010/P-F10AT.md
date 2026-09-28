@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove that $x - \frac{x^3}{3} \le \arctan x \le x$ for all $x \ge 0$.
 :::
 
-::: solution
+::: {.solution}
 For every $t\ge0$,
 \[
 1-t^2\le \frac1{1+t^2}\le1.

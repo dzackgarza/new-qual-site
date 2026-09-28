@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall98.pdf",
+  "source_pdf_sha256": "7a2ecad159cd587ba951738bfdfcbf5d59ec52dd0fc6866744a957127d6a8f6f",
+  "extracted_markdown": "assets/attachments/Fall98_extracted.md",
+  "extracted_markdown_sha256": "b14c7716de0d6d9ff9e6bd30bb20b4d8ed8658566897274520c50ab4aaf4c183",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall98.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Fall98.md",
+  "old_unknown_provenance_sha256": "b14c7716de0d6d9ff9e6bd30bb20b4d8ed8658566897274520c50ab4aaf4c183",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Fall 1998, containing Problems 1 through 18 in source order.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-FALL-1998 collection represents all 18 source positions in order with 17 source-local cards plus exact canonical reuse of P-BJDIE for Problem 17. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

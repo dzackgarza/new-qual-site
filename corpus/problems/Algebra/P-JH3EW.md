@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 L=\QQ(\sqrt{n_1},\ldots,\sqrt{n_m}),

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that any map $\mathbb{RP}^2 \to T^2$ must be null-homotopic.
 :::
 

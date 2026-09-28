@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that $\mathbb{RP}^2$ is not the boundary of a compact $3$-manifold.
 Do you think that $\mathbb{RP}^3$ is the boundary of a compact $4$-manifold?
 :::

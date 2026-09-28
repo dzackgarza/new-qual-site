@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 8. The Bessel functions arise in the study of spherical symmetries and the Fourier transform.
    See Chapter 6 in Book I. Prove that the following power series identity holds for Bessel functions of real order $\nu > - 1 / 2$
 

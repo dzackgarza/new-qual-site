@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If you have an irreducible representation of a subgroup, is the induced representation of the whole group still irreducible?
 :::
 

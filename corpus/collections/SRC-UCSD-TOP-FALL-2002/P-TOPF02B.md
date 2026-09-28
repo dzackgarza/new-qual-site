@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $T$ be the torus which is obtained by identifying the edges of the unit square in the usual manner.
 Let $S^1 \vee S^1$ be the one-point union of circles which is the image of the boundary of the unit square.
 

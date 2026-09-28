@@ -25,7 +25,7 @@ audit:
   note: Verified the primitive-root and Frobenius arguments and treated separately the primes dividing n in the universal reducibility assertion.
 ---
 
-::: problem
+::: {.problem}
 Let $n$ be a positive integer, $p$ a prime, $p \nmid n$, and $\Phi_n(x)$ the $n$-th cyclotomic polynomial.
 Let $E_{n,p}$ denote the splitting field of $\Phi_n(x)$ over $\mathbb{F}_p$.
 

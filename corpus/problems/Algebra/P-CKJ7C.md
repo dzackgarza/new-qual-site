@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the finite-dimensional complex representations of $S_3$?
 How do they restrict to $S_2$?
 :::

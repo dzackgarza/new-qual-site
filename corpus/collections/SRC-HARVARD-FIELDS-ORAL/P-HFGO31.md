@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Is every extension of $\mathbb Q$ of degree $2$ normal?
 Justify your answer.
 :::

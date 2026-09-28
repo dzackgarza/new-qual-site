@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Construct a nonabelian group of order $75 = 5^2 \cdot 3$.
 :::
 

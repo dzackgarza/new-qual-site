@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LFGHA
 kind: proposition
 title: Classification of groups of order $p$
+slogan: 'Every group of prime order is cyclic.'
 classification:
   areas:
   - algebra
@@ -15,5 +16,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Every group $G$ of prime order $p\geq 2$ is cyclic and thus isomorphic to $\ZZ/p$.
+Let $p$ be a prime.
+Every group $G$ of order $p$ is cyclic, and hence $G \cong \ZZ/p\ZZ$.
 :::

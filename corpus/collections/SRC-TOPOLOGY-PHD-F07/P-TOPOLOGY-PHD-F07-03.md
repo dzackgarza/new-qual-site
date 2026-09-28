@@ -41,7 +41,7 @@ If $X$ is a topological space with an uncountably infinite number of points is t
 Justify your answer carefully.
 :::
 
-::: remark
+::: {.remark}
 The source first names the countable-closed topology and then asks about the finite-complement topology; both terms are retained as printed.
 :::
 

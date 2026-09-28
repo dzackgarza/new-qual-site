@@ -19,7 +19,7 @@ audit:
   note: Repaired the derivative-index transcription defect using the supplied integration-by-parts identity.
 ---
 
-::: exercise
+::: {.exercise}
 17. Let f be an indefinitely diferentiable function on R that has compact support, or more generally, let $f$ belong to the Schwartz space.<sup>4</sup> Consider
 
 $$
@@ -37,7 +37,7 @@ $$
 [Hint: To prove the analytic continuation, as well as the formulas in the second part, integrate by parts to show that $\begin{array} { r } { I ( s ) = \frac { ( - 1 ) ^ { k } } { \Gamma ( s + k ) } \int _ { 0 } ^ { \infty } f ^ { ( k ) } ( x ) x ^ { s + k - 1 } d x . } \end{array}$
 :::
 
-::: solution
+::: {.solution}
 For $\Re s>0$,
 \[
 I(s)=\frac1{\Gamma(s)}\int_0^\infty f(x)x^{s-1}\,dx

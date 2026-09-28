@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $z_{k}(k=1, \cdots, n)$ be complex numbers lying on the same side of a straight line passing through the origin.
 Show that
 
@@ -24,7 +24,7 @@ $$
 > Hint: Consider a special situation first.
 :::
 
-::: solution
+::: {.solution}
 Rotate the plane so that the given line becomes the imaginary axis and all the
 $z_k$ lie in the open right half-plane. Multiplication by a unimodular constant
 does not affect whether either displayed sum is zero, so it is enough to treat

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-LDJNS
 kind: theorem
-title: Fatou
+title: Fatou's lemma and reverse Fatou's lemma
+slogan: 'Fatou sends liminf below the integral; domination reverses the inequality for limsup.'
 classification:
   areas:
   - real-analysis
@@ -13,11 +14,21 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-If $f_n$ is a sequence of nonnegative measurable functions, then
-\[
-\liminf_n \int f_n 
-&\geq \int \liminf_n f_n \\
-\limsup_n \int f_n &\leq \int \limsup_n f_n
-.\]
+::: {.theorem}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f_n\colon X\to[0,\infty]$ be [[D-DHFN4|measurable]] for $n\geq1$.
+
+1. (Fatou's lemma [@Fol13])
+$$
+\liminf_{n\to\infty} \int_X f_n\dmu \geq \int_X \liminf_{n\to\infty} f_n\dmu .
+$$
+
+2. (Reverse Fatou's lemma) If moreover there is an [[D-R5DL3|integrable]] $g\colon X\to[0,\infty)$ with $f_n\leq g$ for all $n$, then
+$$
+\limsup_{n\to\infty} \int_X f_n\dmu \leq \int_X \limsup_{n\to\infty} f_n\dmu .
+$$
+:::
+
+::: {.example}
+The domination hypothesis in (2) cannot be dropped.
+On $\RR$ with Lebesgue measure, $f_n\coloneqq\chi_{[n,n+1]}$ satisfies $\int f_n=1$ for all $n$, while $\limsup_n f_n=0$ pointwise, so $\limsup_n\int f_n=1>0=\int\limsup_n f_n$.
 :::

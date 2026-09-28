@@ -29,20 +29,20 @@ audit:
   note: "Visually verified the omitted nonconstancy on PDF page 57, supplied the concrete constant-polynomial counterexample, and justified nonempty compactness of the root hull used in the closest-point argument."
 ---
 
-::: problem
+::: {.problem}
 Let $P$ be a nonconstant complex polynomial. Show that every zero of $P'$ lies
 in the convex hull of the zeros of $P$.
 :::
 
 
-::: remark
+::: {.remark}
 The nonconstant hypothesis is necessary. For $P=1$, the
 derivative is identically zero and vanishes at every
 complex point, whereas $P$ has no roots and their convex
 hull is empty. Thus the containment fails in that case.
 :::
 
-::: solution
+::: {.solution}
 Let $n=\deg P\geq1$. The fundamental theorem of algebra
 gives roots $\zeta_1,\ldots,\zeta_n$, repeated with their
 multiplicities [@SS03]. Their convex hull is
@@ -54,14 +54,14 @@ of the nonempty closed, bounded simplex of the coefficient
 vectors $(t_1,\ldots,t_n)$ in $\mathbb R^n$.
 
 <1>1. A critical point that is itself a zero of $P$ already lies in $K$.
-::: proof
+::: {.proof}
 If $w$ satisfies $P'(w)=0$ and also $P(w)=0$, then $w$ is one of the zeros used
 to form the convex hull $K$. Hence $w\in K$. It remains only to consider a
 critical point $w$ with $P(w)\ne0$.
 :::
 
 <1>2. A point outside $K$ admits a direction in which every vector from a root to that point has positive real projection.
-::: proof
+::: {.proof}
 Suppose $w\notin K$. The set $K$ is compact and convex, so there is a point
 $q\in K$ minimizing $|w-q|$. Put $v=w-q\ne0$.
 
@@ -84,7 +84,7 @@ In particular this holds for every zero $\zeta$ of $P$.
 :::
 
 <1>3. The logarithmic derivative rules out a critical point outside $K$.
-::: proof
+::: {.proof}
 Factor
 $$
 P(z)=c\prod_{j=1}^n(z-\zeta_j),

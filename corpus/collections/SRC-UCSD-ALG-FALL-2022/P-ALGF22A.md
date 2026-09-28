@@ -24,7 +24,7 @@ audit:
   note: Verified the Sylow count, the normalizer bijection for order-21 subgroups, and the index-four action obstruction for order 42.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a simple group of order $168 = (2^3)(3)(7)$.
 For each $n$ below, calculate the number of subgroups of order $n$ inside $G$.
 (For some $n$ the answer could be 0.)

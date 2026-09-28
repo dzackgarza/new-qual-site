@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and $X$ a set on which $G$ acts.
 
 a. Let $x\in X$ and $G_x \definedas \theset{g\in G \suchthat g\cdot x = x}$. Show that

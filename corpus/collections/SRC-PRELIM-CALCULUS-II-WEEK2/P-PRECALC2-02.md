@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-02
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 2'
+title: Integral of $\frac{1}{x\log x}$ over $[e^{-3},e^{-2}]$
 classification:
   areas:
   - prelim

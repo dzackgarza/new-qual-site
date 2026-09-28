@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
  \envlist
 
 - Show that the function $u=u(x,y)$ given by
@@ -29,7 +29,7 @@ $\displaystyle{\limsup_{n\to\infty} |u(x,y)|=\infty}$.
 
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 u_n(x,y)=\frac{\sinh(ny)}{n^2}\sin(nx).

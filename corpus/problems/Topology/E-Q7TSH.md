@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Show that any countable space with the discrete topology is separable.
 :::
 

@@ -25,7 +25,7 @@ audit:
   note: Verified the hint argument via the conjugation homomorphism into Aut(H), using that every prime divisor of |G| is at least p whereas every prime divisor of |Aut(H)|=p-1 is smaller than p.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $p$ be the smallest prime dividing $|G|$.
 Assume that $G$ has a unique subgroup $H$ of order $p$.
 Show that $H$ is contained in the center of $G$.

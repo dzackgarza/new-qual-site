@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 \int_\RR {\sin(x) \over x}\dx
@@ -22,7 +22,7 @@ Compute
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note that the ML bound is not sufficient to bound a semicircular contour:
 \[
 \abs{\int_{C_R} { e^{iz} \over z}\dz } \leq \pi R \sup_{z\in C_R} \abs{1\over z} = \pi \not\to 0

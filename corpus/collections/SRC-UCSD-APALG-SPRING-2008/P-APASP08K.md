@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Use the partial fraction package of Guoce Xin to compute the generating function
 $$
 F_{S_2}(x_1, x_2, x_3, x_4) = \sum_{p \in S_2} x_1^{p_1}\, x_2^{p_2}\, x_3^{p_3}\, x_4^{p_4}
@@ -32,7 +32,7 @@ p_1 - p_2 + p_3 - p_4 = 0.
 $$
 :::
 
-::: solution
+::: {.solution}
 Add and subtract the two equations:
 \[
 \begin{aligned}

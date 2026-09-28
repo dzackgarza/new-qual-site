@@ -27,7 +27,7 @@ audit:
 If $f\in k[x]^{\irr}$ with $\ch k = p$, then there is a unique separable $g\in k[x]^{\irr}$ such that $f(x) = g(x^{p^e})$ for some unique $e \ge 0$.
 :::
 
-::: solution
+::: {.solution}
 Let $f\in k[x]$ be irreducible and $\operatorname{char}k=p>0$.
 
 For any polynomial $h(x)=\sum a_i x^i$,

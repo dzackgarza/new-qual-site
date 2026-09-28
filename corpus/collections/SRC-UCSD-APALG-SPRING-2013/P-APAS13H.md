@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$.
 Then $A^\lambda$ denotes the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$, and $S_{\lambda_1}\times\cdots\times S_{\lambda_k}$ denotes the Young subgroup of $S_n$ corresponding to $\lambda$.
 
@@ -31,7 +31,7 @@ as a sum of irreducible characters of $S_6$.
 (c) Find the decomposition of $A^{(2,1)}\times A^{(3,1)}\uparrow_{S_3\times S_4}^{S_7}$ as a sum of irreducible representations of $S_7$.
 :::
 
-::: solution
+::: {.solution}
 Under the Frobenius characteristic map, induction from a Young subgroup corresponds to multiplication of symmetric functions.
 
 For part (a), the trivial character of \(S_r\) has Frobenius image \(h_r=s_{(r)}\). Hence

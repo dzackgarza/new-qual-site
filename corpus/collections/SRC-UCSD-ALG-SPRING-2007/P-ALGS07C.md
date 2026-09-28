@@ -24,7 +24,7 @@ audit:
   note: Re-derived the classification from Cayley-Hamilton and the elementary-divisor theorem over R[x], including all degree-three partitions and the irreducible-quadratic case.
 ---
 
-::: problem
+::: {.problem}
 Describe, up to isomorphism, all the $\mathbb{R}[x]$-module structures one might put on a 3-dimensional real vector space (extending the fixed $\mathbb{R}$-action).
 :::
 

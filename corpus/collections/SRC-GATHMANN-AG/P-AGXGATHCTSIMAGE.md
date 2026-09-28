@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f:X\to Y$ be a continuous map of topological spaces.
 
 a. Show that if $X$ is connected then $f(X)$ is connected.
@@ -22,7 +22,7 @@ a. Show that if $X$ is connected then $f(X)$ is connected.
 b. Show that if $X$ is irreducible then $f(X)$ is irreducible.
 :::
 
-::: solution
+::: {.solution}
 **Part a**: Toward a contradiction, if $f(X) = Y_1 {\textstyle\coprod} Y_2$ with $Y_1, Y_2$ nonempty and open in $Y$, then
 \[
 f^{-1}(f(X)) \subseteq X
@@ -39,4 +39,11 @@ However, every subset of a connected set must be connected, contradicting the co
 Then $f^{-1}(Y_1) \union f^{-1}(Y_2) = (f^{-1} \circ f)(X) \subseteq X$ are closed in $X$, since $f$ is continuous.
 Since $X$ is irreducible, without loss of generality (by relabeling) this forces $X_1 = \emptyset$.
 But then $f(X_1) = \emptyset$, forcing $f(X) = Y_2$.
+:::
+
+::: {.remark}
+Erratum: both parts of the argument above contain false or undefined steps.
+
+- Part a rests on the claim that every subset of a connected space is connected, which is false: $\ts{0,1}\subset\RR$ is disconnected. The decomposition should be taken with $Y_1,Y_2$ disjoint, nonempty and open in the subspace $f(X)$; then $f^{-1}(Y_1)$ and $f^{-1}(Y_2)$ are disjoint nonempty open subsets of $X$ whose union is all of $X$, which contradicts connectedness of $X$ directly.
+- In part b the sets $Y_i$ should be proper closed subsets of the subspace $f(X)$, and $X_1$ is never defined. Since $X=f^{-1}(Y_1)\union f^{-1}(Y_2)$ with both preimages closed, irreducibility of $X$ gives $X=f^{-1}(Y_i)$ for some $i$, hence $f(X)\subseteq Y_i$, contradicting properness of $Y_i$.
 :::

@@ -27,7 +27,7 @@ audit:
   note: Corrected the deformation-retract definition so the retract is fixed pointwise throughout; retained the valid maximal-tree collapse computation.
 ---
 
-::: problem
+::: {.problem}
 a. Let $A$ be a subspace of a topological space $X$.
 Define what it means for $A$ to be a **deformation retract** of $X$.
 

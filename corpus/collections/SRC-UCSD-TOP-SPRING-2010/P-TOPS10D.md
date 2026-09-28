@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For which $n$ and $k$ (with $0 < k < n$) is $X = \mathbb{CP}^n / \mathbb{CP}^k$ homotopy equivalent to a manifold?
 :::
 

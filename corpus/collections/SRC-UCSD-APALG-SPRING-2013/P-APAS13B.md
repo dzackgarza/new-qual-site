@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Prove that every $A\in M_n$ may be written uniquely as $A=S+iT$, where $S$ and $T$ are Hermitian.
 
 (b) For any $A\in M_n$, consider the unique expansion $A=S+iT$, where $S$ and $T$ are Hermitian.
@@ -28,7 +28,7 @@ where, by convention, the eigenvalues of a Hermitian matrix $C\in M_n$ are arran
 \]
 :::
 
-::: solution
+::: {.solution}
 For part (a), define
 \[
 S=\frac{A+A^H}{2},\qquad T=\frac{A-A^H}{2i}.

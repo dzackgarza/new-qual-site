@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and prove Frobenius reciprocity for group representations.
 :::
 
-::: solution
+::: {.solution}
 Let $H\le G$, let $R$ be a commutative coefficient ring, let $V$ be an $R[H]$-module, and let $W$ be an $R[G]$-module. Frobenius reciprocity is the natural isomorphism
 \[
 \operatorname{Hom}_{R[G]}\!\left(R[G]\otimes_{R[H]}V,W\right)

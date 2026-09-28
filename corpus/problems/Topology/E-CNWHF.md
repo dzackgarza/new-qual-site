@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that every compact metric space $(X, d)$ is complete (every Cauchy sequence in $X$ converges to a point in $X$).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $(x_n)$ be a Cauchy sequence in the compact metric space $X$. Compactness of a metric space implies sequential compactness, so some subsequence satisfies
 \[
 x_{n_k}\longrightarrow x\in X.

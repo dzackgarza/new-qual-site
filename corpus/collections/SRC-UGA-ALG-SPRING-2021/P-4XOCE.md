@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $H \normal G$ be a normal subgroup of a finite group $G$, where the order of $H$ is the smallest prime $p$ dividing $\abs{G}$.
 Prove that $H$ is contained in the center of $G$.
+:::
 
-> Solution due to Swaroop Hegde, typed up + modifications added by DZG.
-
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $x\in Z(G)$ iff $\size C_x = 1$, i.e. the size of its conjugacy class is one.
@@ -32,12 +32,14 @@ Prove that $H$ is contained in the center of $G$.
 :::
 
 
-:::{.strategy}
+::: {.strategy}
 Show an element $x$ is central by showing $\size C_x = 1$.
 :::
 
 
-:::{.proof}
+::: {.proof}
+> Solution due to Swaroop Hegde, typed up + modifications added by DZG.
+
 \envlist
 
 - Let $p \da \size H$.
@@ -70,7 +72,7 @@ p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
 
 :::
 
-::: solution
+::: {.solution}
 Because $|H|=p$ is prime, $H\cong C_p$. Conjugation by $G$ on $H$ gives a homomorphism
 \[
 \varphi:G\longrightarrow \operatorname{Aut}(H)\cong C_{p-1}.

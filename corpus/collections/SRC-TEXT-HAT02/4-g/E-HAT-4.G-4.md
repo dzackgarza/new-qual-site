@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that Proposition 4G.2 and its corollary hold also for CW complexes and covers by families of subcomplexes.
+:::
 
 ::: {.solution}
 <1>1. Proposition 4G.2 (the nerve lemma) states: if $X$ is covered by a family of open sets $\{U_\alpha\}$ such that every nonempty finite intersection $U_{\alpha_1} \cap \cdots \cap U_{\alpha_k}$ is contractible, then $X$ is homotopy equivalent to the nerve $N$ of the cover.

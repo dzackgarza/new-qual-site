@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Suppose $f\colon[0,1]\to\mathbb{R}$ is continuous and $\int_0^1 f(t)t^n\,dt=0$ for all $n=0,1,2,\ldots$.
 Show that $f(t)=0$ for all $t\in[0,1]$.
 
@@ -28,9 +28,9 @@ Show that $f(t)=0$ for all $t\in[0,1]$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Extend the moment condition from monomials to all polynomials.
-::: proof
+::: {.proof}
 If
 \[
 p(t)=\sum_{k=0}^N a_k t^k,
@@ -46,7 +46,7 @@ Thus $f$ is orthogonal, in the integral pairing, to every polynomial.
 :::
 
 <1>2. Approximate $f$ uniformly by polynomials.
-::: proof
+::: {.proof}
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
 \[
 \|p_n-f\|_\infty\longrightarrow0.

@@ -14,6 +14,7 @@ import sqlite3
 from pathlib import Path
 
 from conftest import fixture_repo, run_qualc
+from test_invariants import read_html
 
 NESTED_CARD = """---
 schema: qual/card@1
@@ -43,11 +44,11 @@ of the index congruent to $1$ is $1$ itself, so the subgroup is normal.
 """
 
 
-ADJACENT_LAMPORT_CARD = """---
+COMPACT_NESTED_CARD = """---
 schema: qual/card@1
-id: P-FENCE1
+id: P-NEST2
 kind: problem
-title: A solution with adjacent Lamport proof fences
+title: A solution whose proof fences follow their Lamport steps directly
 classification:
   areas: [algebra]
   topics: [groups]
@@ -56,28 +57,28 @@ review: draft
 ---
 
 ::: problem
-Show the claim.
+Prove two claims.
 :::
 
 ::: solution
-<1>1. First step.
-::: proof
-First reason.
+<1>1. The first claim.
+::: {.proof}
+This proves the first claim.
 :::
 
-<1>2. Second step.
-    ::: proof
-    <2>1. Nested reason.
-    <2>2. Another nested reason.
+<1>2. The second claim.
+<2>1. Its first subclaim.
+    ::: {.proof}
+    This proves the first subclaim and must remain hidden with the solution.
+    :::
+<2>2. Its second subclaim.
+::: {.proof}
+This proves the second subclaim.
 :::
 
-<1>3. Third step.
-:::
-::: proof
-Third reason.
-:::
-
-<1>4. Final step.
+<1>3. The third claim.
+::: {.proof}
+<1>2.2.
 :::
 :::
 """
@@ -121,38 +122,35 @@ def test_enclosing_section_still_carries_its_own_text(tmp_path: Path) -> None:
     assert "follows from Sylow" in solution_text
 
 
-def test_adjacent_lamport_proof_fences_stay_inside_the_solution(tmp_path: Path) -> None:
-    """A proof fence adjacent to a Lamport step must not terminate the solution.
+def test_compact_and_indented_proof_fences_do_not_leak_a_solution(tmp_path: Path) -> None:
+    """The corpus's compact proof spelling is normalized before Pandoc reads it.
 
-    The corpus has both unindented and Lamport-indented spellings.  Pandoc
-    otherwise reads the opener as paragraph/code text and uses its closing
-    fence to close the surrounding solution, exposing later solution steps as
-    part of the public statement.
+    A generated proof opener often follows its Lamport step with no intervening
+    blank line, and deeper proof openers are indented by four or eight spaces.
+    Pandoc otherwise reads those as paragraph/code text and the first bare
+    `:::` closes the surrounding solution, exposing everything after it.
     """
-    work = fixture_repo(tmp_path, {"fence.md": ADJACENT_LAMPORT_CARD})
+    work = fixture_repo(tmp_path, {"compact-nested.md": COMPACT_NESTED_CARD})
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    sections = con.execute("select section_kind, text from sections where card_id='P-FENCE1' order by ordinal").fetchall()
-    assert [kind for kind, _ in sections] == ["problem", "solution", "proof", "proof", "proof"]
+    sections = con.execute(
+        "select section_kind, text from sections where card_id='P-NEST2' order by ordinal",
+    ).fetchall()
+    assert [kind for kind, _ in sections].count("solution") == 1
+    assert [kind for kind, _ in sections].count("proof") == 4
     solution = next(text for kind, text in sections if kind == "solution")
-    assert "First step" in solution
-    assert "Second step" in solution
-    assert "Third step" in solution
-    assert "Final step" in solution
+    assert "This proves the first claim" in solution
+    assert "This proves the first subclaim and must remain hidden with the solution" in solution
 
-    page = (work / "build" / "quarto" / "_site" / "tag" / "P-FENCE1.html").read_text()
-    statement = page.split('<div class="card-statement">', 1)[1].split('<details class="reveal qual-solution">', 1)[0]
-    disclosure = page.split('<details class="reveal qual-solution">', 1)[1].split("</details>", 1)[0]
-    assert "First reason" not in statement
-    assert "Second step" not in statement
-    assert "Final step" not in statement
-    assert "First reason" in disclosure
-    assert "Nested reason" in disclosure
-    assert "Another nested reason" in disclosure
-    assert "Third reason" in disclosure
-    assert "Final step" in disclosure
-    assert ":::" not in page
-    assert "<pre><code>" not in disclosure
-    assert 'class="pf-step pf-level-2"' in disclosure
+    page = read_html(work / "build" / "quarto" / "_site" / "tag" / "P-NEST2.html")
+    disclosures = page.root.find_all("details", **{"class": "reveal qual-solution"})
+    assert len(disclosures) == 1
+    disclosure_text = " ".join(disclosures[0].text.split())
+    assert "This proves the first claim" in disclosure_text
+    assert "This proves the first subclaim and must remain hidden with the solution" in disclosure_text
+    numbers = [node.text.strip() for node in disclosures[0].find_all("span", **{"class": "pf-number"})]
+    assert numbers == ["1.", "2.", "2.1.", "2.2.", "3."], numbers
+    assert disclosure_text.endswith("2.2.")
+    assert ":::" not in page.root.text

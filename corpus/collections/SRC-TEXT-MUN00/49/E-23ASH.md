@@ -21,7 +21,7 @@ audit:
 Given $n$ and $\epsilon$, define a continuous function $f: I \to \mathbb{R}$ such that $f \in U_n$ and $\abs{f(x)} \leq \epsilon$ for all $x$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct a continuous function $f: [0, 1] \to [-\varepsilon, \varepsilon]$ in the nowhere-differentiability open set $U_n = \{f \in \mathcal{C}(I, \mathbb{R}) : \forall x \in I, \exists t \in I, 0 < |x - t| < \frac{1}{n} \text{ and } |\frac{f(x) - f(t)}{x - t}| > n\}$.
 
 <1>1. Parameter selection:

@@ -21,20 +21,20 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $L \in M_5(\mathbb{R})$ be a $5 \times 5$ real matrix with eigenvalues $0, 1 + i, 1 + 2i$.
 Find the characteristic polynomial $\chi_L(x)$ and the minimal polynomial $\mu_L(x)$ of $L$ over $\mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 Because $L$ has real entries, nonreal eigenvalues occur in complex-conjugate pairs. Thus from the given eigenvalues $0$, $1+i$, and $1+2i$, we also obtain $1-i$ and $1-2i$. These are five distinct complex eigenvalues of a $5\times5$ matrix, so each has algebraic multiplicity $1$.
 
 Hence
 \[
-egin{aligned}
+\begin{aligned}
 \chi_L(x)
 &=x(x-(1+i))(x-(1-i))(x-(1+2i))(x-(1-2i))\
-&=xigl((x-1)^2+1igr)igl((x-1)^2+4igr)\
+&=x\bigl((x-1)^2+1\bigr)\bigl((x-1)^2+4\bigr)\
 &=x(x^2-2x+2)(x^2-2x+5).
 \end{aligned}
 \]

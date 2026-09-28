@@ -22,7 +22,7 @@ Recall that a space $X$ is said to be contractible if the identity map of $X$ to
 Show that $X$ is contractible if and only if $X$ has the homotopy type of a one-point space.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a topological space $X$ is contractible (i.e. $\operatorname{id}_X$ is nullhomotopic) if and only if $X$ is homotopy equivalent to a one-point space $P = \{p_0\}$.
 
 <1>1. Direct implication ($\implies$): If $X$ is contractible, then $X \simeq \{p_0\}$.

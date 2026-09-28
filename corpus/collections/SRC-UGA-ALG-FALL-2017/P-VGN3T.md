@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For a commutative ring $R$, let $U(R) = R^\times$ denote the group of units in $R$. Recall that in an integral domain $R$, a non-zero, non-unit element $r \in R$ is called *irreducible* if whenever $r = x y$ with $x, y \in R$, then either $x \in U(R)$ or $y \in U(R)$. A non-zero, non-unit element $r \in R$ is called *prime* in $R$ if $r \mid a b \implies r \mid a \text{ or } r \mid b$.
 
 Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \mathbb{Z}\} \subset \mathbb{C}$.
@@ -31,7 +31,7 @@ Consider the ring $R = \mathbb{Z}[\sqrt{-5}] = \{a + b \sqrt{-5} \mid a, b \in \
 (e) Conclude that $R$ is not a principal ideal domain (PID).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove properties of the ring $\mathbb{Z}[\sqrt{-5}]$ using the field norm $N(a + b\sqrt{-5}) = a^2 + 5b^2$, deduce that $3$ is irreducible but not prime, and conclude $R$ is not a PID.
 
 <1>1. Part (a): $R$ is an integral domain.

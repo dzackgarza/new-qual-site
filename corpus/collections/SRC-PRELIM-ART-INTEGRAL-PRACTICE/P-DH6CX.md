@@ -24,7 +24,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 The original integral is missing from the surviving drill-sheet data. The only mathematical information preserved is the suggested substitution
 \[
 u=\frac1x,
@@ -35,9 +35,9 @@ du=-\frac1{x^2}\,dx.
 - **Used 2018**
 :::
 
-::: solution
+::: {.solution}
 <1>1. The original integral cannot be reconstructed from the surviving data.
-::: proof
+::: {.proof}
 The substitution
 \[
 u=\frac1x,
@@ -58,7 +58,7 @@ The collection metadata has no provenance and states that the original drill she
 :::
 
 <1>2. Record the only valid mathematical conclusion supplied by the surviving fragment.
-::: proof
+::: {.proof}
 If an integral contains a factor $x^{-2}\,dx$ together with an expression depending on $1/x$, then the substitution $u=1/x$ converts that factor according to
 \[
 \frac{dx}{x^2}=-du.

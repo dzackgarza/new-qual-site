@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 Consider a Hermitian matrix $A \in M_n$.
@@ -31,7 +31,7 @@ State, but do not prove, the Courant–Fischer theorem.
 :::
 
 
-::: solution
+::: {.solution}
 (a) Let $Av=\lambda v$ with $v\ne0$. Since $A=A^H$,
 \[
 \lambda\,v^Hv=v^HAv=(v^HAv)^*=\overline\lambda\,v^Hv.

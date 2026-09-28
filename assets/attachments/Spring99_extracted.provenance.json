@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/Spring99.pdf",
+  "source_pdf_sha256": "0a1427945909cd218b1efea80f0b169a7f02b81531713cbb51837164d959c278",
+  "extracted_markdown": "assets/attachments/Spring99_extracted.md",
+  "extracted_markdown_sha256": "a1e07dc776af559f3b8fd29931347efdf79d7b693d6052cde9c77420b4bd733f",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring99.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Spring99.md",
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1999, containing Problems 1-18 in source order.",
+  "card_reconciliation": "The existing complete collection SRC-BERKELEY-PRELIM-SPRING-1999 represents all eighteen source positions in order. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 8's displayed 3-by-3 matrix on the right-hand side of M^3 loses its third row in the deterministic extraction. The existing card preserves the first two rows and explicitly marks the third row unrecovered rather than reconstructing it."
+  ]
+}

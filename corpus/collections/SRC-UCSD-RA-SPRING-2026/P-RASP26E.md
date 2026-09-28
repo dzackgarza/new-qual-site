@@ -23,11 +23,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Construct a meager (i.e. first category) subset $E$ of $\mathbb{R}$ that is conull in $\mathbb{R}$ with respect to the Lebesgue measure (i.e., $m(\mathbb{R} \setminus E) = 0$).
 :::
 
-::: solution
+::: {.solution}
 Enumerate the rationals as
 \[
 \mathbb Q=\{q_1,q_2,\ldots\}.

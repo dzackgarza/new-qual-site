@@ -14,7 +14,10 @@ review: draft
 ---
 
 ::: {.strategy}
-Fix $\varepsilon$, find $x(\varepsilon, n)$ with $\abs{f_n(x) - f(x)} > \varepsilon$.
+Let $S$ be a set, and let $f_n\colon S\to\CC$ for $n\geq1$ and $f\colon S\to\CC$ be functions.
+To show that $(f_n)$ does not [[D-YZC3C|converge uniformly]] to $f$ on $S$, exhibit $\varepsilon>0$ and, for infinitely many $n$, a point $x_n\in S$ with $\abs{f_n(x_n) - f(x_n)} \geq \varepsilon$.
+:::
 
-Example: ${1 \over 1 + nx}$, take $x={1\over n}$.
+::: {.example}
+On $S=(0,\infty)$, the functions $f_n(x)=\frac{1}{1+nx}$ converge pointwise to $f=0$, but not uniformly: with $\varepsilon=\frac12$ and $x_n=\frac1n$, $\abs{f_n(x_n)-f(x_n)}=\frac{1}{2}$ for every $n$.
 :::

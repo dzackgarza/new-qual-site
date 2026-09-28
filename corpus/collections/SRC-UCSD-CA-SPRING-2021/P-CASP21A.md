@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many solutions, counted with multiplicities, does the equation
 $$
 z^3 \sin z + 5z^2 + 2 = 0
@@ -22,7 +22,7 @@ $$
 have in the unit disc $|z| < 1$?
 :::
 
-::: solution
+::: {.solution}
 On $|z|=1$,
 \[
 |z^3\sin z|\le \sinh 1<2,

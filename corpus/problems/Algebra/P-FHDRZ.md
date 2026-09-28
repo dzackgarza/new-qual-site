@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f\in\FF_q[x]$ have degree at most $4$.
 Find the smallest extension $\FF_{q^N}$ that is guaranteed to split every such polynomial completely.
 :::

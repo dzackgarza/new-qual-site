@@ -31,7 +31,7 @@ audit:
     the constant loop, contradicting pi_1(S^1)=Z.
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be the map of $S^1 \times [0, 1]$ to itself defined by
 \[
 f(e^{i\theta},s)=(e^{i(\theta+2\pi s)},s),

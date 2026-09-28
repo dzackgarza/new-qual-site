@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\alpha,\beta$ be algebraic over a field $F$. Prove that
 \[
 \alpha\pm\beta,

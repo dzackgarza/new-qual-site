@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3. Show that
 
 $$
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Consider
 \[
 F(z)=\frac{e^{iz}}{z^2+a^2},\qquad a>0,

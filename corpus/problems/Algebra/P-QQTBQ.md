@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that every finitely generated torsion-free abelian group is free abelian.
 :::
 
-::: solution
+::: {.solution}
 By the structure theorem for finitely generated abelian groups,
 \[
 G\cong \mathbb Z^r\oplus \mathbb Z/d_1\mathbb Z\oplus\cdots\oplus\mathbb Z/d_s\mathbb Z

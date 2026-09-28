@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Prove that if $f'$ exists and is bounded on $(a,b]$, then $\lim_{x\to a^+}f(x)$ exists.
 :::
 ::: {.solution}

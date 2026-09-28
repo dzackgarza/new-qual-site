@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that if $X$ and $Y$ are finite CW complexes such that $H^*(X; \mathbb{Z})$ and $H^*(Y; \mathbb{Z})$ contain no elements of order a power of a given prime $p$, then the same is true for $X \times Y$.
 [Apply Theorem 3.15 with coefficients in various fields.]
+:::
 
 ::: {.solution}
 <1>1. For a finite CW complex $Z$, $H^*(Z;\ZZ)$ has no $p$-torsion iff $\dim_{\FF_p} H^n(Z;\FF_p) = \dim_{\QQ} H^n(Z;\QQ)$ for all $n$.

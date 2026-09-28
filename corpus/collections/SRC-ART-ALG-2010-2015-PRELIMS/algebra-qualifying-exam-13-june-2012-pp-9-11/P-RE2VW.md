@@ -32,7 +32,7 @@ Prove that the minimal polynomial of $\alpha$ over $F$ has degree at least $n$.
 (You may use whatever group theoretic facts you know about $A_n$ without proof.)
 :::
 
-::: remark
+::: {.remark}
 The exclusion $\alpha\notin F$ is necessary: every element
 of $F$ has a linear minimal polynomial over $F$.
 The coefficient field in the conclusion must also be $F$,
@@ -40,14 +40,14 @@ not $K$; over $K$, the minimal polynomial of $\alpha\in K$
 is always $T-\alpha$.
 :::
 
-::: solution
+::: {.solution}
 Let $G=\operatorname{Gal}(K/F)$, let $m(T)\in F[T]$ be
 the minimal polynomial of $\alpha$, and put $d=\deg m$.
 
 <1>1. The action of $G$ on the roots of $m$ defines a
 nontrivial homomorphism $\rho:G\to S_d$.
 
-::: proof
+::: {.proof}
 Normality and separability of the Galois extension imply
 that $m$ splits in $K$ with $d$ distinct roots [@DF04].
 Every $\sigma\in G$ fixes its coefficients, so sends each
@@ -62,7 +62,7 @@ trivial and $\ker\rho\ne G$.
 
 <1>2. The homomorphism $\rho$ is injective.
 
-::: proof
+::: {.proof}
 For $n\geq5$, the group $A_n$ is simple [@DF04], a
 group-theoretic fact permitted in the question. Hence
 $G\cong A_n$ has no normal subgroups other than $1$ and
@@ -73,7 +73,7 @@ $\ker\rho=1$.
 
 <1>3. One has $d\geq n$.
 
-::: proof
+::: {.proof}
 Injectivity gives $|A_n|=n!/2\leq |S_d|=d!$.
 If $d<n$, then $d\leq n-1$, so
 $$

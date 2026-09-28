@@ -19,13 +19,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $p$, $q$ be two distinct primes.
 Prove that there is at most one non-abelian group of order $pq$ and describe the pairs $(p,q)$ such that there is no non-abelian group of order $pq$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Without loss of generality, suppose \(p<q\). Then every group \(G\) of order \(pq\) has a unique Sylow \(q\)-subgroup \(Q\), hence
 \[
 Q\trianglelefteq G,

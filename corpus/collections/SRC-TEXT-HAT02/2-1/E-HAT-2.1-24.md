@@ -18,7 +18,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that each $n$ simplex in the barycentric subdivision of $\Delta^n$ is defined by $n$ inequalities $t_{i_0} \leq t_{i_1} \leq \dots \leq t_{i_n}$ in its barycentric coordinates, where $(i_0, \cdots, i_n)$ is a permutation of $(0, \cdots, n)$.
+:::
 
 ::: {.solution}
 <1>1. The barycentric subdivision of $\Delta^n$ has one vertex for each nonempty face of $\Delta^n$, i.e. for each nonempty subset $S \subseteq \{0, \ldots, n\}$.

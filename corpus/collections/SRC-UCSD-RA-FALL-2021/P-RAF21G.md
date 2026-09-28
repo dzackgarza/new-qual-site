@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For any $f \in L^2(\mathbb{R}) \cap C^1(\mathbb{R})$ show that
 $$
 \left(\int_\mathbb{R} x^2 |f(x)|^2 \, dx\right) \left(\int_\mathbb{R} \xi^2 |\hat{f}(\xi)|^2 \, d\xi\right) \geq \frac{1}{16\pi^2} \left(\int_\mathbb{R} |f(x)|^2 \, dx\right)^2.
@@ -34,9 +34,9 @@ $$
 Here $\hat{f}$ is the Fourier transform of $f$ and $dx, d\xi$ represent the Lebesgue measure on $\mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Reduce to the case in which both second moments are finite.
-::: proof
+::: {.proof}
 If $f=0$ almost everywhere, the inequality is immediate. For nonzero $f$, if either
 \[
 \int_{\mathbb R}x^2|f(x)|^2\,dx
@@ -58,7 +58,7 @@ in the distributional sense. Plancherel therefore gives
 :::
 
 <1>2. Establish the basic integration-by-parts inequality.
-::: proof
+::: {.proof}
 Choose $\chi\in C_c^\infty(\mathbb R)$ with $0\le\chi\le1$, $\chi=1$ on $[-1,1]$, and $\operatorname{supp}\chi\subset[-2,2]$. Put
 \[
 \chi_R(x)=\chi(x/R).
@@ -107,7 +107,7 @@ Taking absolute values and applying Cauchy--Schwarz yields
 :::
 
 <1>3. Substitute the Fourier derivative identity.
-::: proof
+::: {.proof}
 Using
 \[
 \|f'\|_2=2\pi\|\xi\widehat f\|_2,

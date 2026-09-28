@@ -28,7 +28,7 @@ audit:
     pi_1(A,a) -> pi_1(X,a) by path and homotopy lifting.
 ---
 
-::: problem
+::: {.problem}
 Suppose that X has universal cover $p : \tilde X \to X$ and let $A \subset X$ be a subspace with $p(\tilde a) = a \in A$.
 Show that there is a group isomorphism
 \[

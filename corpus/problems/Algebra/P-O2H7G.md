@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H,K\le G$ and suppose $H\le N_G(K)$. Prove that $HK$ is a subgroup of $G$.
 Give a counterexample if $K$ is only a subset, not a subgroup.
 :::

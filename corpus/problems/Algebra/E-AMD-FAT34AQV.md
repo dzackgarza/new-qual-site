@@ -26,7 +26,7 @@ audit:
 Does diagonalizable imply distinct eigenvalues?
 :::
 
-::: solution
+::: {.solution}
 No. For $n\ge2$, the identity matrix
 \[
 I_n

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $f_n(x) = n^\beta x(1-x^2)^n$, $x \in [0,1]$, $n \in \mathbb{N}$.
 
 Prove that $\{f_n\}_{n=1}^\infty$ converges pointwise on $[0,1]$ for every $\beta \in \mathbb{R}$.

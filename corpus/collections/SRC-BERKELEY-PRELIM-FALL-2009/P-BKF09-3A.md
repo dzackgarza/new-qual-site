@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-3A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 3A
+title: Contour integral of $1/\cos z$ over $\lvert z\rvert=2$
 classification:
   areas:
   - prelim

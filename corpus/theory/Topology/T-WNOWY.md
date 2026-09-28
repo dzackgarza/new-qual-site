@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-WNOWY
 kind: theorem
-title: Borsuk-Ulam
+title: Borsuk--Ulam theorem
+slogan: 'Every continuous map $S^n\to\RR^n$ identifies an antipodal pair.'
 classification:
   areas:
   - topology
@@ -14,5 +15,5 @@ review: draft
 ---
 
 ::: {.theorem}
-For every $S^n \mapsvia{f} \RR^n \exists x\in S^n$ such that $f(x) = f(-x)$.
+For every continuous map $f\colon S^n \to \RR^n$ there is a point $x\in S^n$ with $f(x) = f(-x)$ [@Hat02].
 :::

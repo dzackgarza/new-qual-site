@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the group structure on $S^1$ coming from multiplication in $\mathbb{C}$ induces a group structure on $\langle X, S^1 \rangle$ such that the bijection $\langle X, S^1 \rangle \to H^1(X; \mathbb{Z})$ of Theorem 4.57 is an isomorphism.
+:::
 
 ::: {.solution}
 For maps \(f,g:X\to S^1\), define

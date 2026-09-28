@@ -27,7 +27,7 @@ Throughout these exercises, let $X$ be a space that is locally $m$-euclidean.
 Show that $X$ is locally compact and locally metrizable.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a locally $m$-euclidean space is locally compact and locally metrizable.
 
 <1>1. Let $x\in X$. By local euclidean-ness choose an open neighborhood $U$ of $x$ and a homeomorphism

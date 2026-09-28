@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 A linear map $\phi \colon \mathbb{C}^7 \to \mathbb{C}^7$ is given.
 It has the following properties.
 
@@ -51,7 +51,7 @@ Determine, with proof, the Jordan Normal Form of $\phi$.
 :::
 
 
-::: solution
+::: {.solution}
 The second displayed matrix is upper triangular, so the characteristic polynomial of $\phi$ is
 \[
 \chi_\phi(t)=t^3(t-1)^3(t-17).

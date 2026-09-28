@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f \in C^1(\mathbb{T})$.
 Let $\hat{f}(k)$ ($k \in \mathbb{Z}$) be the Fourier coefficients of $f$.
 Prove that
@@ -33,9 +33,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Control the zero Fourier mode.
-::: proof
+::: {.proof}
 With
 \[
 \widehat f(k)=\int_0^1 f(x)e^{-2\pi ikx}\,dx,
@@ -49,7 +49,7 @@ we have
 :::
 
 <1>2. Express the nonzero Fourier coefficients through \(f'\).
-::: proof
+::: {.proof}
 For \(k\ne0\), periodicity of \(f\) and integration by parts give
 \[
 \widehat{f'}(k)
@@ -87,7 +87,7 @@ Thus
 :::
 
 <1>3. Combine the estimates.
-::: proof
+::: {.proof}
 Adding the zero mode from Step 1 yields
 \[
 \boxed{

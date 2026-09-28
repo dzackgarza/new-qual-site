@@ -23,11 +23,18 @@ prompts:
 ---
 
 ::: {.definition title="Hilbert polynomial"}
-For $X \subseteq \PP^n$ closed with homogeneous coordinate ring $S(X) = k[x_0,\ldots,x_n]/I(X)$, the **Hilbert function** is
+For $X \subseteq \PP^n$ closed with homogeneous coordinate ring $S(X) = k[x_0,\ldots,x_n]/I(X)$, the \dfn{Hilbert function} is
 \[
 h_X(r) \da \dim_k S(X)_r .
 \]
 For $r \gg 0$ it agrees with a polynomial $P_X(r)$, the **Hilbert polynomial** of $X$.
+
+For a coherent sheaf $\mcf$ on a closed subscheme $X \subseteq \PP^n_k$, the **Hilbert function of $\mcf$** is $h_\mcf(m) \da h^0(X, \mcf(m))$.
+:::
+
+::: {.proposition}
+For $m \gg 0$, $h_\mcf(m) = \chi(X, \mcf(m)) = P_\mcf(m)$, the value of the Hilbert polynomial of $\mcf$ ([[D-COHEULER]]), and $P_X = P_{\OO_X}$.
+[@Har10a, Exercise III.5.2]
 :::
 
 ::: {.remark title="Reading off the coefficients"}
@@ -36,14 +43,16 @@ Then $\deg P_X = d$, and
 
 - the leading coefficient is $\deg(X)/d!$, which *defines* the degree of $X$;
 
-- the constant term is $\chi(\OO_X) = 1 - p_a(X)$, which defines the arithmetic genus.
+- the constant term is $P_X(0) = \chi(\OO_X)$, and the arithmetic genus is $p_a(X) = (-1)^d \qty(P_X(0) - 1)$, which is $1 - \chi(\OO_X)$ for a curve.
 
-Both readings are sensitive to the embedding, because $S(X)$ is: $P_X$ is an invariant of $X \subseteq \PP^n$ together with $\OO_X(1)$, not of $X$ alone.
-This is the precise sense in which degree depends on the embedding while the genus of a smooth curve does not.
+The leading coefficient, and hence the degree, can change with the embedding.
+The constant term is the intrinsic Euler characteristic $\chi(X,\OO_X)$ and does not change with the embedding; neither does the arithmetic genus [@Har10a, Exercise III.5.2].
+Thus the whole polynomial depends on the chosen $\OO_X(1)$, but its constant term does not.
 :::
 
-::: {.remark title="Projective space and the twisted cubic"}
+::: {.remark title="Basic examples"}
 $P_{\PP^n}(r) = \binom{r+n}{n}$, of degree $n$ and leading coefficient $1/n!$, so $\deg \PP^n = 1$ and $p_a(\PP^n) = 0$.
 
-On $\PP^1$ the connection to line bundles is visible: $h^0(\PP^1, \OO(m)) = m+1$, and taking $m = 3r$ recovers the Hilbert polynomial of the twisted cubic, $P(r) = 3r+1$ — degree $3$, arithmetic genus $0$.
+On $\PP^1$, one has $h^0(\PP^1,\OO(m))=m+1$ for $m\ge0$ and zero for $m<0$ [@Har10a, Proposition II.5.13].
+Taking $m=3r$ for $r\ge0$ gives the Hilbert polynomial of the twisted cubic, $P(r)=3r+1$, with degree $3$ and arithmetic genus $0$.
 :::

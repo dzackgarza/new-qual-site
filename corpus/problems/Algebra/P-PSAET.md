@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Determine the orders $|\operatorname{GL}_n(\mathbb{F}_p)|$ and $|\operatorname{SL}_n(\mathbb{F}_p)|$ for any prime $p$ and integer $n \ge 1$.
 :::
 
-::: solution
+::: {.solution}
 An invertible $n\times n$ matrix over $\mathbb F_p$ is exactly an ordered basis of $\mathbb F_p^n$ written as columns. The first column has $p^n-1$ choices, the second has $p^n-p$ choices, and in general the $(k+1)$-st column has $p^n-p^k$ choices. Hence
 \[
 \boxed{|\operatorname{GL}_n(\mathbb F_p)|=\prod_{k=0}^{n-1}(p^n-p^k).}

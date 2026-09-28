@@ -26,7 +26,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 The problem concerns finding an explicit solution to the equation $-\Delta u + u = f$ for $f \in C_c^\infty(\mathbb{R}^n)$, using the Fourier transform.
 
 (a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\mathbb{R}^n) \cap L^2(\mathbb{R}^n)$.
@@ -41,9 +41,9 @@ u(x) = \int_0^\infty \frac{e^{-t}}{(4\pi t)^{n/2}} \int_{\mathbb{R}^n} e^{-\frac
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Fourier transform the equation.
-::: proof
+::: {.proof}
 Use the convention
 \[
 \widehat v(z)=\int_{\mathbb R^n}e^{-2\pi i x\cdot z}v(x)\,dx.
@@ -70,7 +70,7 @@ and hence
 :::
 
 <1>2. Express the multiplier by Gaussian multipliers.
-::: proof
+::: {.proof}
 For every $z$,
 \[
 \frac1{1+4\pi^2|z|^2}
@@ -92,7 +92,7 @@ e^{-4\pi^2t|z|^2}\widehat f(z)
 :::
 
 <1>3. Integrate the heat kernels and invert the transform.
-::: proof
+::: {.proof}
 Define
 \[
 v(x)=\int_0^\infty e^{-t}(H_t*f)(x)\,dt.

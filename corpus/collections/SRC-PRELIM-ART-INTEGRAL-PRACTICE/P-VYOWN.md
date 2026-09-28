@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{x+\sin x}{1+\cos x}\,dx
@@ -31,7 +31,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 \frac{\sin x}{1+\cos x}=\tan\frac x2,

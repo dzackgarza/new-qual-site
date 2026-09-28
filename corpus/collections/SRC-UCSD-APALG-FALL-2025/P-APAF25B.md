@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given $n\geq 1$, let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$.
 Prove if $x^H Ax=0$, for all $x\in\mathbb{C}^n$, then $A=0$.
 

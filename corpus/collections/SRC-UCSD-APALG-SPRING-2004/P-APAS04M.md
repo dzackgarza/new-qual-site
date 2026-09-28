@@ -21,7 +21,7 @@ audit:
   note: Verified the invariant-ring presentation and added the missing algebraic-independence/freeness justification.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.

@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that a map $f: X \to Y$ between connected CW complexes factors as a composition $X \to Z_n \to Y$ where the first map induces isomorphisms on $\pi_i$ for $i \leq n$ and the second map induces isomorphisms on $\pi_i$ for $i \geq n+1$.
+:::
 
 ::: {.solution}
 Use the relative cell-attachment construction from the proof preceding Proposition 4.13. Starting with

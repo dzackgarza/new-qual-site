@@ -24,8 +24,9 @@ audit:
   note: Observed that the graph-of-spaces model collapses to the underlying graph when every vertex and edge group is trivial, so its fundamental group is free.
 ---
 
+::: {.problem}
 Show that every graph product of trivial groups is free.
-
+:::
 
 ::: {.solution}
 Let $\Gamma$ be the underlying graph of the graph of groups.

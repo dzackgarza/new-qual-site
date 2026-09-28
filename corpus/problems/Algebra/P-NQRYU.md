@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that for any ring $R$ with identity and $n\ge 1$,
 \[
 Z(M_n(R))=Z(R)I_n.

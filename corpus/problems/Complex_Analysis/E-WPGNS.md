@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be entire and suppose that
 $\lim_{z \rightarrow \infty} f(z) = \infty$. Show that $f$ is a polynomial.
 :::
 
-:::{.solution}
+::: {.solution}
 Note that $f$ has finitely many zeros: since $f$ is unbounded, there is some $R$ such that $f(\DD_R^c) \subseteq \DD^c$, so in particular $f$ is nonvanishing on $\DD_R^c$.
 So $Z_f$ is a closed subset of a compact set, so is either finite or has an accumulation point.
 In the latter case, $f\equiv 0$ by the identity principle, so suppose not.
@@ -31,11 +31,11 @@ Write $Z_f = \ts{z_k}_{k\leq n}$ for the $n$ many zeros of $f$, included with mu
 .\]
 Now $F$ is a nonvanishing entire function.
 
-:::{.claim}
+::: {.claim}
 $F$ is bounded on $\CC$.
 :::
 
-:::{.proof title="of claim"}
+::: {.proof title="of claim"}
 Choose $R\gg 1$ so that all of $z_k$ are in $\DD_R$, so $\abs{\xi - z_k} < R$ for all $\xi \in \DD_R$ and all $k$.
 By Cauchy's integral formula,
 \[

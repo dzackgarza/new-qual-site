@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group, and let $e_\lambda = \sum_g c_g g$ be a minimal idempotent in the simple component of $\mathbb{C}[G]$ labeled by $\lambda$.
 Let $d_\lambda$ be the dimension of a simple $G$-module on which $e_\lambda$ acts nonzero.
 
@@ -26,7 +26,7 @@ What is $\chi^{\text{reg}}(e_\lambda)$, where $\chi^{\text{reg}}$ is the charact
 (b) Calculate the coefficient $c_e$.
 :::
 
-::: solution
+::: {.solution}
 By Maschke's theorem and Wedderburn decomposition,
 \[
 \mathbb C[G]\cong \bigoplus_{\mu} M_{d_\mu}(\mathbb C),

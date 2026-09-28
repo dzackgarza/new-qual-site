@@ -8,6 +8,15 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Checked against the retained UC Berkeley Spring 2004 preliminary exam and its companion solution packet.
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-12
+  note: Compared the authored solution with the retained `s04solution.pdf` solution packet.
 ---
 
 ::: {.problem}

@@ -24,6 +24,7 @@ audit:
   date: 2026-09-10
 ---
 
+::: {.problem}
 6. For this problem, consider just Lebesgue measurable functions $f : [ 0 , 1 ] \to \mathbb { R }$ . together with the Lebesgue measure.
 
 (a) State Fatou’s lemma (no proof required).
@@ -31,6 +32,7 @@ audit:
 (b) State and prove the Dominated Convergence Theorem.
 
 (c) Give an example where $f_n(x) \to 0$ a.e. on $[0,1]$, but $\int_0^1 f_n(x)\,dx \to 1$.
+:::
 
 ::: {.solution}
 <1>1. Part (a): Statement of Fatou’s Lemma: <2>1. **Fatou's Lemma:** Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $\{f_n\}_{n=1}^\infty$ be a sequence of non-negative measurable functions $f_n: X \to [0, \infty]$.

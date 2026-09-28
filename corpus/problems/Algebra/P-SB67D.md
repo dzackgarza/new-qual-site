@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be prime and let $\zeta_p$ be a primitive $p$th root of unity. Is the homomorphism
 \[
 \ZZ[t]/(t^p-1)\longrightarrow \ZZ[\zeta_p],
@@ -23,7 +23,7 @@ Let $p$ be prime and let $\zeta_p$ be a primitive $p$th root of unity. Is the ho
 an isomorphism?
 :::
 
-::: solution
+::: {.solution}
 No. The map is surjective but not injective.
 
 Let

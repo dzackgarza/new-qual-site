@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 8. If f is a holomorphic function on the strip $- 1 < y < 1 , x \in \mathbb { R }$ with
 
 $$
@@ -31,7 +31,7 @@ $$
 [Hint: Use the Cauchy inequalities.]
 :::
 
-::: solution
+::: {.solution}
 Fix $x\in\mathbb R$ and use the circle
 \[
 |z-x|=\frac12.

@@ -9,4 +9,4 @@ topics:
 
 The classification of covers by subgroups of $\pi_1$, lifting criteria for maps and homotopies, deck transformation groups, and universal covers.
 
-See [[topology/covering-spaces/covering-spaces|Covering spaces (detailed)]].
+The statements and examples are on [[topology/covering-spaces/covering-spaces|Covering spaces (detailed)]].

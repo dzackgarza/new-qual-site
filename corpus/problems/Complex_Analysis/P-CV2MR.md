@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove that $f(z) = \abs{z}^2$ has a derivative at $z=0$ and nowhere else.
 :::
 
-:::{.solution}
+::: {.solution}
 The easy check: $f$ is differentiable iff $\delbar_z f = 0$, but
 \[
 \delbar_z \abs{z}^2 = \delbar_z z\bar{z} = z \neq 0

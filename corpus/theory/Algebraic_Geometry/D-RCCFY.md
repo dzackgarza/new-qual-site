@@ -17,11 +17,14 @@ prompts:
 ---
 
 ::: {.definition title="Presheaf"}
-A **presheaf** $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially, with $\mcf(\emptyset) = 0$.
+A \dfn{presheaf} $\mcf$ of abelian groups on a space $X$ assigns a group $\mcf(U)$ to each open $U$ and a restriction $\res{U}{V}: \mcf(U) \to \mcf(V)$ to each inclusion $V \subseteq U$, functorially, with $\mcf(\emptyset) = 0$.
+Equivalently, $\mcf$ is a contravariant functor from the category of open subsets of $X$, with inclusions as morphisms, to abelian groups.
+More generally, a presheaf with values in a category $\mcc$ (sets, rings, modules) is a contravariant functor from open subsets of $X$ to $\mcc$, and sheaves with values in $\mcc$ are defined by the same two axioms.
+Elements of $\mcf(U)$ are **sections** of $\mcf$ over $U$, and elements of $\mcf(X)$ are **global sections**.
 :::
 
 ::: {.definition title="Sheaf"}
-A presheaf is a **sheaf** if for every open $U$ and every open cover $\ts{U_i}$ of $U$:
+A presheaf is a \dfn{sheaf} if for every open $U$ and every open cover $\ts{U_i}$ of $U$:
 
 - *identity*: a section $s \in \mcf(U)$ with $\ro{s}{U_i} = 0$ for all $i$ is $0$;
 
@@ -32,7 +35,7 @@ A presheaf is a **sheaf** if for every open $U$ and every open cover $\ts{U_i}$ 
 The two axioms say that a section is determined by local data and that compatible local data assembles.
 Together they make $\mcf(U)$ the limit of the diagram of its restrictions, which is why a sheaf is exactly a presheaf satisfying descent for open covers.
 
-A presheaf satisfying identity is a **separated presheaf**. Its map to its sheafification is injective; for a general presheaf, the kernel consists of the sections that are locally zero.
+Identity without gluing is a **separated presheaf**. Sheafification of a separated presheaf only adds the missing glued sections, while in general it must also kill sections that are locally zero.
 :::
 
 ::: {.remark title="The equalizer form"}
@@ -42,5 +45,5 @@ Both axioms at once say that
 \]
 is an equalizer, the two maps being restriction from $U_i$ and from $U_j$ to the overlap.
 Injectivity of the first map is identity; that its image is exactly the equalizer is gluing.
-The equalizer formulation extends to sheaves on sites, using covering families and their overlaps.
+The equalizer formulation extends directly to sites and descent, where pointwise tests need not be available.
 :::

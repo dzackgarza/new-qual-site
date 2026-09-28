@@ -15,12 +15,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 10. Weierstrass’s theorem states that a continuous function on [0, 1] can be uni formly approximated by polynomials.
     Can every continuous function on the closed unit disc be approximated uniformly by polynomials in the variable $z ?$
 :::
 
-::: solution
+::: {.solution}
 No. Consider the continuous function
 \[
 f(z)=\overline z

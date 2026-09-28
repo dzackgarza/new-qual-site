@@ -26,7 +26,7 @@ audit:
   note: Checked both implications of the p-element criterion, Jordan form over the base field, uniqueness from kernel dimensions, and the identity element of order p^0.
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a prime and $n$ is a positive integer.
 An element $x \in \mathrm{GL}_n(\mathbb{F}_p)$ is called a $p$-element if its order is a power of $p$.
 

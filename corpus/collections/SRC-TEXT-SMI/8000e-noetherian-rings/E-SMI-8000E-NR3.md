@@ -38,7 +38,7 @@ an exact sequence of $R$-modules, prove $B$ is noetherian if and only if both $A
 :::
 
 
-::: solution
+::: {.solution}
 Write the exact sequence as
 $$
 0\longrightarrow A\xrightarrow{i}B\xrightarrow{q}C\longrightarrow0.
@@ -46,13 +46,13 @@ $$
 We identify $A$ with the submodule $i(A)\subseteq B$.
 
 <1>1. If $B$ is noetherian, then $A$ is noetherian.
-::: proof
+::: {.proof}
 Every submodule of $A$ is also a submodule of $B$. Since $B$ is noetherian,
 every such submodule is finitely generated. Hence $A$ is noetherian.
 :::
 
 <1>2. If $B$ is noetherian, then $C$ is noetherian.
-::: proof
+::: {.proof}
 Let $D\subseteq C$ be a submodule. Its preimage
 $$
 q^{-1}(D)\subseteq B
@@ -73,7 +73,7 @@ Thus every submodule of $C$ is finitely generated, so $C$ is noetherian.
 :::
 
 <1>3. If $A$ and $C$ are noetherian, then $B$ is noetherian.
-::: proof
+::: {.proof}
 Let $N\subseteq B$ be any submodule. Since $A$ is noetherian,
 $$
 N\cap A
@@ -112,7 +112,7 @@ Thus every submodule of $B$ is finitely generated, and $B$ is noetherian.
 :::
 
 <1>4. If $A$ and $C$ are merely finitely generated, then $B$ is finitely generated.
-::: proof
+::: {.proof}
 Choose generators
 $$
 a_1,\ldots,a_r
@@ -136,7 +136,7 @@ $$
 :::
 
 <1>5. Apply the result to a submodule and its quotient.
-::: proof
+::: {.proof}
 For any submodule $N\subseteq M$, there is an exact sequence
 $$
 0\longrightarrow N\longrightarrow M\longrightarrow M/N\longrightarrow0.

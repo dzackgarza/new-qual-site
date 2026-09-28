@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-008
 kind: problem
-title: Kent State ring-theory qualifying problem 8
+title: Primes $p\equiv 1 \pmod 4$ are sums of two squares
 classification:
   areas: [algebra]
   topics: []

@@ -23,7 +23,7 @@ audit:
   note: "Reviewed and repaired the legacy proof: the original slice inequality had a sign/index error; the half-tail argument gives the result directly."
 ---
 
-:::{.problem}
+::: {.problem}
 Show that if $x_n$ is a decreasing sequence of positive real numbers such that $\sum_{n=1}^\infty x_n$ converges, then
 $$
 \lim_{n\to\infty} n x_n = 0.
@@ -31,7 +31,7 @@ $$
 
 :::
 
-::: solution
+::: {.solution}
 
 Since $\sum_{n=1}^\infty x_n$ converges, its tails tend to zero. For $n\ge2$, put $m=\lfloor n/2\rfloor$. Because $(x_n)$ is decreasing and positive,
 \[

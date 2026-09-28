@@ -24,34 +24,61 @@ audit:
 ---
 
 ::: {.problem}
-Suppose $f_j\rightharpoonup f$ weakly in $L^2(\mathbb R^n)$.
+Suppose $f_j\rightharpoonup f$ weakly in $L^2(\RR^n)$.
 
 (a) Prove
-\[
-\|f\|_2\le\liminf_j\|f_j\|_2,
-\]
+$$
+\norm{f}_2\le\liminf_j\norm{f_j}_2,
+$$
 and give an example of strict inequality.
 
-(b) If $\|f_j\|_2\to\|f\|_2$, prove $\|f_j-f\|_2\to0$.
+(b) If $\norm{f_j}_2\to\norm{f}_2$, prove $\norm{f_j-f}_2\to0$.
 :::
 
 ::: {.solution}
-If $f\ne0$, test weak convergence against $g=f/\|f\|_2$. Then
-\[
-\|f\|_2=\lim_j|\langle f_j,g\rangle|\le\liminf_j\|f_j\|_2.
-\]
-The case $f=0$ is immediate.
+<1>1. Weak convergence implies
+$$
+\norm{f}_2\le\liminf_j\norm{f_j}_2.
+$$
+::: {.proof}
+If $f=0$, the inequality is immediate. If $f\ne0$, set $g=f/\norm{f}_2$. Then $\norm{g}_2=1$, and weak convergence gives
+$$
+\norm{f}_2
+=\abs{\inner{f}{g}}
+=\lim_j\abs{\inner{f_j}{g}}
+\le\liminf_j\norm{f_j}_2.
+$$
+:::
 
-Strict inequality occurs for any orthonormal sequence $(e_j)$: one has $e_j\rightharpoonup0$ by Bessel's inequality, while $\|e_j\|_2=1$.
+<1>2. Strict inequality can occur.
+::: {.proof}
+Let $(e_j)$ be an orthonormal sequence in $L^2(\RR^n)$. Bessel's inequality gives $e_j\rightharpoonup0$, whereas $\norm{e_j}_2=1$ for every $j$. Thus
+$$
+\norm{0}_2=0<1=\liminf_j\norm{e_j}_2.
+$$
+:::
 
-For part (b), weak convergence gives
-\[
-\langle f_j,f\rangle\to\|f\|_2^2.
-\]
-Hence
-\[
-\|f_j-f\|_2^2
-=\|f_j\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_j,f\rangle\longrightarrow0.
-\]
-Thus $f_j\to f$ strongly in $L^2$.
+<1>3. If $\norm{f_j}_2\to\norm{f}_2$, then
+$$
+\boxed{\norm{f_j-f}_2\to0}.
+$$
+::: {.proof}
+Weak convergence gives
+$$
+\inner{f_j}{f}\to\inner{f}{f}=\norm{f}_2^2.
+$$
+Therefore
+$$
+\begin{aligned}
+\norm{f_j-f}_2^2
+&=\norm{f_j}_2^2+\norm{f}_2^2-2\operatorname{Re}\inner{f_j}{f}\\
+&\longrightarrow 0.
+\end{aligned}
+$$
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves the lower-semicontinuity assertion in part (a), step <1>2 gives the requested strict example, and step <1>3 proves part (b).
+:::
 :::

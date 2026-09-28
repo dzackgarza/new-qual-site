@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\ts{f_n}_{n=1}^\infty$ is a sequence of holomorphic functions on $\DD$ and $f$ is also holomorphic on $\DD$. 
 Show that the following are equivalent:
 
@@ -29,7 +29,7 @@ Show that the following are equivalent:
 
 :::
 
-:::{.solution}
+::: {.solution}
 $\implies$: 
 
 - Fix $r \in (0, 1)$ and let $\gamma = \ts{\abs{z} = r}$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X\in \Top$, $A\in \mathsf{Ab}\mathsf{Grp}$, $p\in X$, and define the skyscraper sheaf by
 \[
 \iota_p(A)(U) \da
@@ -26,7 +26,7 @@ A & p\in U  \\
 Show that the stalk $\iota_p(A)_q = A$ when $q\in \cl_X(\ts{p})$ and $0$ otherwise, and that there is an equality of sheaves $\iota_p(A) = \iota_*(\underline{A})$ where $\iota: \cl_X(\ts{p}) \injects X$ is the inclusion.
 :::
 
-::: solution
+::: {.solution}
 Computation of stalks: see the preceding problem.
 
 That $\iota_p A \da (U\mapsto A \chi_{p\in U})$ is *equal* to the pushforward sheaf $\iota_* \underline{A}$:

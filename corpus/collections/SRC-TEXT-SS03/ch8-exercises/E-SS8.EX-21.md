@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 21. We consider conformal mappings to triangles.
 
 (a) Show that
@@ -33,7 +33,7 @@ with $0 < \beta _ { 1 } < 1 , \ 0 < \beta _ { 2 } < 1$ , and $1 < \beta _ { 1 } 
 (d) In (a), the length of the side of the triangle opposite angle $\alpha _ { j } \pi$ is $\begin{array} { r l } {  { \frac { \sin ( \alpha _ { j } \pi ) } { \pi } \Gamma ( \alpha _ { 1 } ) \Gamma ( \alpha _ { 2 } ) \Gamma ( \alpha _ { 3 } ) } } \end{array}$
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 F(z)=\int_0^z \zeta^{-\beta_1}(1-\zeta)^{-\beta_2}\,d\zeta

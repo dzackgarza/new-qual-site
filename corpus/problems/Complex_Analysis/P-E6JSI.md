@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $S \coloneqq \{z \in \mathbb{D} \mid \operatorname{Im}(z) \ge 0\}$ be the closed upper half of the unit disk $\mathbb{D}$.
 Suppose $f: S \to \mathbb{C}$ is continuous on $S$, real-valued on $S \cap \mathbb{R} = (-1, 1)$, and holomorphic on the interior $S^\circ = \{z \in \mathbb{D} \mid \operatorname{Im}(z) > 0\}$.
 
 Prove that $f$ extends to a holomorphic function on the entire unit disk $\mathbb{D}$ (the Schwarz Reflection Principle).
 :::
 
-::: solution
+::: {.solution}
 Define
 \[
 F(z)=

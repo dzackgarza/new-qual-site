@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $n$ is a positive integer, $p$ is a prime number, and $a \in \mathbb{F}_p^\times$.
 Suppose $n \mid p - 1$.
 Suppose $E$ is a splitting field of $x^n - a$ over $\mathbb{F}_p$.

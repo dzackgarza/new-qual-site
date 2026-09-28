@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $A_i \subseteq X$, then $\cl_X(\union_i A_i) = \union_i \cl_X(A_i)$.
 :::
 

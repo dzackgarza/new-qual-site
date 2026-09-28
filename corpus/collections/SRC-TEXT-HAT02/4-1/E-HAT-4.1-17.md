@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that if $X$ and $Y$ are CW complexes with $X$ $m$-connected and $Y$ $n$-connected, then $(X \times Y, X \vee Y)$ is $(m+n+1)$-connected, as is the smash product $X \wedge Y$.
+:::
 
 ::: {.solution}
 By the CW version of the relative Hurewicz/cellular approximation argument, an \(m\)-connected CW complex is homotopy equivalent to a CW complex with one \(0\)-cell and no cells in dimensions \(1,\dots,m\). Likewise, replace \(Y\) by a CW model with no positive-dimensional cells below dimension \(n+1\). This replacement does not change the connectivity assertion.

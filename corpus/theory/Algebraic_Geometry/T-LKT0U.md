@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-LKT0U
 kind: theorem
 title: Riemann--Hurwitz
+slogan: 'Riemann--Hurwitz is genus bookkeeping: pull back the canonical degree by $n$, then add ramification, $2g_X-2=n(2g_Y-2)+\deg R$.'
 classification:
   areas:
   - algebraic-geometry
@@ -32,7 +33,7 @@ where $R = \sum_{p} \length(\Omega_{X/Y})_p$ is the ramification divisor.
 When every ramification is tame, $\deg R = \sum_p (e_p - 1)$.
 :::
 
-::: {.remark title="The proof, in the order it is asked"}
+::: {.remark title="Proof structure"}
 The relative cotangent sequence for $X \to Y \to \Spec k$ is
 \[
 f^* \Omega_{Y} \to \Omega_{X} \to \Omega_{X/Y} \to 0 .
@@ -40,7 +41,7 @@ f^* \Omega_{Y} \to \Omega_{X} \to \Omega_{X/Y} \to 0 .
 For a nonconstant separable map of smooth curves the left map is injective, so the sequence is short exact, and $\Omega_{X/Y}$ is a torsion sheaf supported at the ramification points.
 Taking degrees gives $\deg \Omega_X = n \deg \Omega_Y + \deg R$, and $\deg \Omega_C = 2g_C - 2$ from Riemann--Roch.
 
-That is the whole proof, and it explains why the examiner's first two questions are about the map on differentials and whether the sequence is short exact: those *are* the theorem.
+Thus the proof reduces to injectivity of the map on differentials, exactness of the cotangent sequence, and taking degrees.
 Separability is what makes the left map injective, and in characteristic $p$ the Frobenius $\PP^1 \to \PP^1$ shows the statement fails without it — the map on differentials is zero.
 :::
 

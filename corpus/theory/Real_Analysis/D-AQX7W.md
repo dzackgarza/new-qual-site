@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-A set $\theset{u_{n}}$ is a **basis** for a Hilbert space $\mch$ iff it is dense in $\mch$.
+Let $\mch$ be a [[D-7QQUO|Hilbert space]].
+An [[D-4IXAO|orthonormal]] sequence $(u_n)_{n\geq 1}$ in $\mch$ is a \dfn{basis} of $\mch$ if the linear span of $\theset{u_n \suchthat n\geq 1}$, the set of finite linear combinations of the $u_n$, is [[D-KJBAK|dense]] in $\mch$.
 :::

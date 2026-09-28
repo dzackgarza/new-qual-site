@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 For a real symmetric positive definite matrix $A$ and $v\in\mathbb R^n$, show that
 \[
 \int_{\mathbb R^n}\exp(-x^TAx+2v^Tx)\,dx

@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 For a pair $(X, A)$ of path-connected spaces, show that $\pi_1(X, A, x_0)$ can be identified in a natural way with the set of cosets $H\alpha$ of the subgroup $H \subset \pi_1(X, x_0)$ represented by loops in $A$ at $x_0$.
+:::
 
 ::: {.solution}
 Use Hatcher's interval model for $\pi_1(X,A,x_0)$: an element is represented by a path

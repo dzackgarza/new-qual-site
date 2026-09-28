@@ -17,5 +17,6 @@ review: draft
 ---
 
 ::: {.example}
-The box of height $1\over n$ and width $n$ uniformly converges to zero but integrates to 1.
+For $n\geq 1$ let $f_n\coloneqq\frac1n\chi_{[0,n]}\colon\RR\to\RR$, the box of height $\frac1n$ over $[0,n]$.
+Then $\sup_{x\in\RR}\abs{f_n(x)} = \frac1n\to 0$, so $f_n\to 0$ [[D-YZC3C|uniformly]] on $\RR$, but $\int_\RR\abs{f_n - 0}\dx = 1$ for every $n$, so $f_n\not\to 0$ in $L^1(\RR)$.
 :::

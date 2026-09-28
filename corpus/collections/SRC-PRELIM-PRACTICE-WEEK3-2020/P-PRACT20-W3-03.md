@@ -2,17 +2,22 @@
 schema: qual/card@1
 id: P-PRACT20-W3-03
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 3"
+title: The integral $\int_0^\infty\lfloor x\rfloor e^{-x}\,dx$
 classification:
   areas:
   - real-analysis
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Removed OCR junk from the integrand, checked against Week3_solns.pdf page 1 (Problem 3).
 ---
 
 ::: {.problem}
-Compute $\int _ { 0 } ^ { \infty } \lfloor x \rfloor e ^ { - x } { \cal { \Phi } }$ dx where $\lfloor x \rfloor$ denotes the largest integer smaller than x.
+Compute $\int_0^\infty \lfloor x \rfloor e^{-x}\,dx$ where $\lfloor x \rfloor$ denotes the largest integer smaller than $x$.
 :::
 
 ::: {.solution}

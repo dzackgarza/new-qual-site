@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Here is the character table for some group of size $360$ (rows are characters, the columns are conjugacy classes):
 \[
 \begin{array}{c|ccccccc}
@@ -36,7 +36,7 @@ For your convenience, the divisors of $360$ are:
 \]
 :::
 
-::: solution
+::: {.solution}
 If \(g\in G\), column orthogonality for the irreducible character table gives
 \[
 \sum_{\chi\in\operatorname{Irr}(G)} |\chi(g)|^2=|C_G(g)|.

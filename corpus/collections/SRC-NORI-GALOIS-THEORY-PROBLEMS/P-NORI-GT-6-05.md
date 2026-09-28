@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-6-05
 kind: problem
-title: Nori Galois theory problem 6.5
+title: Additive subgroups of an algebraically closed field and additive polynomials
 classification:
   areas: [algebra]
   topics: []

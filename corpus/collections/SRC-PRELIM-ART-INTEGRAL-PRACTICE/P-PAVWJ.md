@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate the nine rational antiderivatives listed below:
 \[
 \frac{x^2}{x^2+1},\quad
@@ -42,7 +42,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 The corresponding primitives are, respectively,
 \[
 \boxed{x-\arctan x+C,}

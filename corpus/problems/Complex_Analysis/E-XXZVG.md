@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Prove the uniform limit theorem for holomorphic functions: if $f_n\to f$ locally uniformly and each $f_n$ is holomorphic then $f$ is holomorphic.
 :::
 
-:::{.solution}
+::: {.solution}
 This is S&S Theorem 5.2.
 Statement: if $f_n\to f$ uniformly locally uniformly on $\Omega$ then $f$ is holomorphic on $\Omega$.
 

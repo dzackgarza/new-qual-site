@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field of characteristic $p>0$ such that every element of $F$ has a $p$th root in $F$. Show that every irreducible polynomial in $F[x]$ is separable.
 :::
 
-::: solution
+::: {.solution}
 Let $f\in F[x]$ be irreducible. Suppose, for contradiction, that $f$ is inseparable. Since $f$ is irreducible, inseparability implies
 \[
 \gcd(f,f')=f.

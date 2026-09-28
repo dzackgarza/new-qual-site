@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-IGLFV
 kind: proposition
 title: Classification of groups of order $p^2$
+slogan: 'Every group of order $p^2$ is abelian: cyclic or $C_p\times C_p$.'
 classification:
   areas:
   - algebra
@@ -15,5 +16,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Every group $G$ of order $p^2$ is abelian, and thus isomorphic to either $C_{p^2}$ or $C_p^2$.
+Let $p$ be a prime.
+Every group $G$ of order $p^2$ is abelian, and hence $G \cong C_{p^2}$ or $G \cong C_p \times C_p$.
 :::

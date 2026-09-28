@@ -17,8 +17,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 In an exercise for §1.2 we described a 3 dimensional CW complex obtained from the cube $I^3$ by identifying opposite faces via a one-quarter twist.
 Compute the homology groups of this complex.
+:::
 
 ::: {.solution}
 <1>1. The complex $X$ is the quaternionic $3$-manifold $S^3/Q_8$: identifying opposite faces of the cube via a one-quarter twist gives the quotient of $S^3$ by the quaternion group $Q_8$.

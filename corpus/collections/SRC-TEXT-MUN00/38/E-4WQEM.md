@@ -21,7 +21,7 @@ audit:
 Verify the statements made in Example 4 of §38 concerning the one-point compactification of $X = (0, 1)$ obtained from the imbedding $h: (0, 1) \to \mathbb{R}^2$ with component functions $x$ and $\sin(1/x)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Verify the topological properties of the compactification of $X = (0, 1)$ formed by the closure of the embedding $h(x) = (x, \sin(1/x))$ in $\mathbb{R}^2$, its remainder structure, and its relationship to the one-point compactification.
 
 <1>1. Embedding and closure in $\mathbb{R}^2$:

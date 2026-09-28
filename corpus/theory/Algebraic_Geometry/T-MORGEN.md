@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORGEN
 kind: theorem
 title: Generic smoothness
+slogan: 'In characteristic zero, a dominant map from a smooth variety becomes smooth after shrinking the target to a nonempty open.'
 classification:
   areas:
   - algebraic-geometry
@@ -28,11 +29,10 @@ Then there is a nonempty open $V \subseteq Y$ such that $\ro{f}{f^{-1}(V)} : f^{
 
 ::: {.remark}
 The theorem says that bad behaviour of a morphism is confined to a proper closed subset, so one may always shrink the base and assume smoothness.
-That is how it is used: to define the ramification divisor, to prove Sard-type statements, and to reduce a question about a family to the general member.
+It is used to define ramification divisors, prove Sard-type statements, and reduce statements about a family to its general member.
 
-Characteristic zero is the hypothesis to flag, and Frobenius is the counterexample: it is a dominant morphism from a smooth variety that is smooth over no nonempty open, because it is nowhere smooth.
+Characteristic zero is essential: Frobenius gives a dominant morphism from a smooth variety that is smooth over no nonempty open.
 The proof in characteristic zero rests on separability of every field extension of $k(Y)$, which is exactly what fails in characteristic $p$.
 
-The companion statement, generic flatness, has no such restriction: a finite type morphism to an integral Noetherian base is flat over a nonempty open.
-Distinguishing which half needs characteristic zero is the content of the two hypotheses.
+The companion statement, generic flatness, has no characteristic-zero restriction: a finite type morphism to an integral Noetherian base is flat over a nonempty open.
 :::

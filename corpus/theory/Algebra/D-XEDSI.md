@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-XEDSI
 kind: definition
-title: Upper Central Series
+title: Upper central series
 classification:
   areas:
   - algebra
@@ -15,11 +15,16 @@ review: draft
 ---
 
 ::: {.definition}
-Set $Z_0 = 1$, $Z_1 = Z(G)$, and $Z_{i+1} \leq G$ to be the subgroup satisfying $Z_{i+1}/Z_i = Z(G/Z_i)$.
-Then $Z_0 \leq Z_1 \leq \cdots$ is the *upper central series* of $G$.
+Let $G$ be a group.
+Define normal subgroups $Z_i\normal G$ inductively by $Z_0\coloneqq 1$ and, for $i\geq 0$,
+$$
+Z_{i+1}\coloneqq \pi_i^{-1}\bigl(Z(G/Z_i)\bigr),
+$$
+where $\pi_i\colon G\to G/Z_i$ is the quotient map and $Z(G/Z_i)$ is the [[D-NK7G7|center]] of $G/Z_i$.
+The \dfn{upper central series} of $G$ is the chain $Z_0\leq Z_1\leq Z_2\leq\cdots$.
+:::
 
-Equivalently, since $Z_i\normal G$, there is a quotient map $\pi:G\to G/Z_i$, so define $Z_{i+1} \definedas \pi\inv(Z(G/Z_i))$ (?).
-
-> Mnemonic: "upper" because the chain is ascending.
-> "Take higher centers".
+::: {.remark}
+The induction is well defined: if $Z_i\normal G$, then $Z(G/Z_i)$ is normal in $G/Z_i$, so its preimage $Z_{i+1}$ is normal in $G$.
+$Z_{i+1}$ is the unique subgroup of $G$ containing $Z_i$ with $Z_{i+1}/Z_i=Z(G/Z_i)$; in particular $Z_1=Z(G)$.
 :::

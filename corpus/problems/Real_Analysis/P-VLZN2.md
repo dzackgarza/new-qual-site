@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that if $f\in L^1$ then $\hat f$ is bounded and uniformly continuous.
 
 - Is it the case that $f\in L^1$ implies $\hat f\in L^1$?

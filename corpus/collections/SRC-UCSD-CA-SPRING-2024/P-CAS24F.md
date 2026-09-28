@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $U \subset \mathbb{C}$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$.
 Write
 \[

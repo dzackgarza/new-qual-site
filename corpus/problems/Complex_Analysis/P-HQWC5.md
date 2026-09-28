@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 For $k=1,2,\cdots, n$, suppose $\abs{a_k} < 1$ and
 \[
 f(z) \da \qty{z - a_1 \over 1 - \bar a_1 z} \qty{z-a_2 \over 1 - \bar a_2 z} \cdots \qty{z - a_n \over 1 - \bar a_n z}
@@ -23,7 +23,7 @@ f(z) \da \qty{z - a_1 \over 1 - \bar a_1 z} \qty{z-a_2 \over 1 - \bar a_2 z} \cd
 Show that $f(z) = b$ has $n$ solutions in $\abs{z} < 1$.
 :::
 
-:::{.solution}
+::: {.solution}
 Note that $f$ is holomorphic on $\DD$ and $S^1$, since the poles are at $1/\bar{a_k}$ and if $\abs{a_l} < 1$ then $\abs{\bar{a_k}} > 1$.
 Fix $b$, then define $g_w(z) \da f(z) - w$ and form the solution counting function
 \[

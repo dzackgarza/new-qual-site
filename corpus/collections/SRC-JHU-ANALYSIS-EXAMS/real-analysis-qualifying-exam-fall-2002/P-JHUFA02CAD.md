@@ -25,11 +25,13 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 4. Let K be a closed convex subset of a Hilbert space H. Show that for each $x \in H$ , there is a unique $y \in K$ such that
 
 $$
 | | x - y | | = i n f _ { z \in K } | | x - z | |
 $$
+:::
 
 ::: {.solution}
 **Goal.** For a closed convex subset $K$ of a Hilbert space $H$, show each $x \in H$ has a unique closest point $y \in K$.

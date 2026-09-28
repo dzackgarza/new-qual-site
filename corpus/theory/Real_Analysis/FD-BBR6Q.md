@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-$X$ is $F_\sigma$ iff $X$ is a countable union of closed sets.
+Let $X$ be a topological space.
+A subset $A\subseteq X$ is an \dfn{$F_\sigma$ set} if $A$ is a countable union of closed subsets of $X$.
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-YJXMF
 kind: fact
 title: The uniform boundedness principle
+slogan: 'Pointwise bounded families of operators on a Banach space are uniformly bounded in operator norm.'
 prompts:
 - What is the uniform boundedness principle?
 classification:
@@ -16,11 +17,10 @@ review: draft
 ---
 
 ::: {.fact}
-If $\mathcal{F}$ is a family of bounded operators $T_n:X\to Y$ between Banach spaces with
-
-$$\forall x\in X, \qquad \sup_{T_n \in \mathcal{F}} {\left\lVert {T_n(x)} \right\rVert}_Y < \infty$$
-
-then $\sup_{T_n\in \mathcal{F}} {\left\lVert {T_n} \right\rVert}_X < \infty$.
-
-Slogan: pointwise bounded sequences of operators are uniformly bounded.
+Let $X$ be a [[D-BG455|Banach space]], let $Y$ be a normed vector space, and let $\mcf$ be a family of bounded linear operators $X\to Y$.
+If
+$$
+\sup_{T \in \mcf} \norm{Tx}_Y < \infty \quad\text{for every } x\in X,
+$$
+then $\sup_{T\in \mcf} \norm{T} < \infty$, where $\norm{T}\coloneqq\sup_{\norm{x}_X\leq 1}\norm{Tx}_Y$ is the operator norm.
 :::

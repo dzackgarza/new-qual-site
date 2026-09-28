@@ -23,7 +23,7 @@ audit:
   note: "Solved the repeated-root homogeneous equation, found a trigonometric particular solution, and imposed both initial conditions."
 ---
 
-::: problem
+::: {.problem}
 Find all solutions of
 \[
 x''-2x'+x=\sin t
@@ -31,9 +31,9 @@ x''-2x'+x=\sin t
 subject to $x(0)=1$ and $x'(0)=0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Solve the homogeneous equation.
-::: proof
+::: {.proof}
 The characteristic polynomial of
 $$
 x''-2x'+x=0
@@ -49,7 +49,7 @@ $$
 :::
 
 <1>2. Find a particular solution.
-::: proof
+::: {.proof}
 Try
 $$
 x_p(t)=a\sin t+b\cos t.
@@ -80,7 +80,7 @@ $$
 :::
 
 <1>3. Impose the initial conditions.
-::: proof
+::: {.proof}
 The general solution is
 $$
 x(t)=(C_1+C_2t)e^t+\frac12\cos t.

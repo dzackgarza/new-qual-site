@@ -8,7 +8,9 @@ classification:
   - real-analysis
   topics:
   - Lp Spaces
-relations: []
+relations:
+- kind: variant-of
+  target: P-TCUDY
 review: draft
 audit:
 - event: source-checked

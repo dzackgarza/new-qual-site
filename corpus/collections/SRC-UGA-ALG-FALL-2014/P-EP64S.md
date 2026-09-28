@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the polynomial $f(x) = x^4 - 7 \in \QQ[x]$ and let $E/\QQ$ be the splitting field of $f$.
 
 a. What is the structure of the Galois group of $E/\QQ$?
@@ -23,7 +23,7 @@ b. Give an explicit description of all of the intermediate subfields $\QQ \subse
 Describe the corresponding subgroups of the Galois group.
 :::
 
-::: solution
+::: {.solution}
 Put
 \[
 a=\sqrt[4]{7}>0.

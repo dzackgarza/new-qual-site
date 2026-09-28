@@ -19,7 +19,7 @@ audit:
   note: Repaired the non-strict bound so the displayed Möbius quotient is defined in the extremal constant case.
 ---
 
-::: exercise
+::: {.exercise}
 11. Show that if $f : D ( 0 , R ) \to \mathbb { C }$ is holomorphic, with $| f ( z ) | < M$ for some $M > 0 ,$ then
 
 $$
@@ -29,7 +29,7 @@ $$
 [Hint: Use the Schwarz lemma.]
 :::
 
-::: solution
+::: {.solution}
 Define
 \[
 g(\zeta)=\frac{f(R\zeta)}{M},\qquad \zeta\in\mathbb D.

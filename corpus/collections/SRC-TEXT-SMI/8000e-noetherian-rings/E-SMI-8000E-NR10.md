@@ -31,9 +31,9 @@ If $R^n \cong R^m$, deduce $n = m$, assuming it holds when $R$ is a field.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Identify $IR^n$ coordinatewise.
-::: proof
+::: {.proof}
 Let $e_1,\ldots,e_n$ be the standard basis of $R^n$. Every generator of
 $IR^n$ has the form
 $$
@@ -56,7 +56,7 @@ inside $R^n$.
 :::
 
 <1>2. Construct the quotient isomorphism.
-::: proof
+::: {.proof}
 Define
 $$
 \Phi:R^n\longrightarrow(R/I)^n
@@ -78,7 +78,7 @@ as $R$-modules.
 :::
 
 <1>3. The same map is an isomorphism of $R/I$-modules.
-::: proof
+::: {.proof}
 The ideal $I$ annihilates the quotient $R^n/IR^n$, so scalar multiplication
 by $R$ factors through $R/I$: define
 $$
@@ -96,7 +96,7 @@ Hence the isomorphism is $R/I$-linear as well.
 :::
 
 <1>4. An isomorphism $R^n\cong R^m$ descends modulo every ideal.
-::: proof
+::: {.proof}
 Let
 $$
 F:R^n\xrightarrow{\sim}R^m
@@ -118,7 +118,7 @@ as $R/I$-modules.
 :::
 
 <1>5. Reduce rank invariance to the field case.
-::: proof
+::: {.proof}
 Choose a maximal ideal $\mathfrak m$ of $R$. Then
 $$
 k=R/\mathfrak m

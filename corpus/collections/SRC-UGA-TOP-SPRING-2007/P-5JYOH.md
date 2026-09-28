@@ -30,7 +30,7 @@ audit:
     records these Euler-characteristic formulas.
 ---
 
-::: problem
+::: {.problem}
 Describe the topological classification of all compact connected surfaces $M$ without boundary having Euler characteristic $\chi(M )\geq -2$.
 
 No proof is required.

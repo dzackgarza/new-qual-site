@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove that TFAE for a Möbius transformation $T$ given by $T(z) = {az + b \over cz + d}$:
 
 a. $T$ maps $\RR\union \theset{\infty}$ to itself.

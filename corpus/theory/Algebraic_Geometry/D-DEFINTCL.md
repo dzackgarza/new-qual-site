@@ -20,7 +20,7 @@ prompts:
 
 ::: {.definition title="integrally closed"}
 Let $A$ be an integral domain with fraction field $K(A)$.
-$A$ is **integrally closed** if for every monic $f(x) \in A[x]$, any root $\alpha \in K(A)$ of $f$ already lies in $A$.
+$A$ is \dfn{integrally closed} if for every monic $f(x) \in A[x]$, any root $\alpha \in K(A)$ of $f$ already lies in $A$.
 Equivalently, $A$ equals its integral closure in $K(A)$.
 :::
 
@@ -30,5 +30,5 @@ Every UFD is integrally closed, by the rational root argument, and localisations
 The standard failure is the cusp, $A = k[t^2,t^3] \subseteq k[t]$: the element $t = t^3/t^2$ lies in $K(A)$ and satisfies $x^2 - t^2 = 0$, so it is integral over $A$ but not in $A$, and $k[t]$ is the integral closure.
 Geometrically the normalisation $\Spec k[t] \to \Spec A$ is the map resolving the cusp of $y^2 = x^3$.
 
-Regular $\implies$ UFD $\implies$ integrally closed, with both implications strict, and all three coinciding in dimension one, where they characterise the DVRs.
+The hierarchy is regular $\implies$ UFD $\implies$ integrally closed, with both implications strict; in dimension one these conditions coincide for Noetherian local domains and characterize DVRs.
 :::

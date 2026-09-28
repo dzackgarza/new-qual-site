@@ -18,7 +18,7 @@ review: draft
 Use summation by parts to show that $\sin(n)/n$ converges.
 :::
 
-::: solution
+::: {.solution}
 As written, $\sin(n)/n$ is a sequence rather than a series, and its
 convergence is immediate:
 \[

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-11
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 11"
+title: Expanding $x^3-x+1$ in powers of $x-2$
 classification:
   areas:
   - real-analysis

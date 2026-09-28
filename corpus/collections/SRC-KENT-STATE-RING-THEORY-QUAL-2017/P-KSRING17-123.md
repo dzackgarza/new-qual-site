@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-123
 kind: problem
-title: Kent State ring-theory qualifying problem 123
+title: Localization of a domain at a prime ideal is local
 classification:
   areas: [algebra]
   topics: []

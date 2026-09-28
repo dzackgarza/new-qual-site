@@ -19,7 +19,7 @@ audit:
   note: Added the necessary exclusion of nonpositive integral alpha and handled that exceptional polynomial case separately.
 ---
 
-::: exercise
+::: {.exercise}
 4. Prove that if we take
 
 $$
@@ -44,7 +44,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 The generalized binomial theorem gives
 \[
 (1-z)^{-\alpha}=\sum_{n=0}^\infty \frac{(\alpha)_n}{n!}z^n,

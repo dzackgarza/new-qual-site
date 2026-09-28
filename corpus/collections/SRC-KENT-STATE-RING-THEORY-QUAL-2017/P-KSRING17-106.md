@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-106
 kind: problem
-title: Kent State ring-theory qualifying problem 106
+title: Units of a polynomial ring over an integral domain are constants
 classification:
   areas: [algebra]
   topics: []

@@ -1,5 +1,7 @@
 # Queue E corrections: OCR repair of 354 extracted markdown files
 
+**Superseded.** This hand-repair pass stopped on 2026-08-28. `AGENTS.md` now requires a checked-in MinerU Flash extraction for every consumed PDF, and an extraction of unknown provenance is regenerated rather than repaired; `pdf-source-intake` in `TODO.md` owns that work. The record below is historical.
+
 Read each extracted markdown file fully.
 Fix OCR mistakes, remove hallucination notes, fix encoding.
 Flag unrecoverably bad extractions.

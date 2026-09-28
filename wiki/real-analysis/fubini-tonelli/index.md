@@ -7,6 +7,6 @@ topics:
 
 # Fubini and Tonelli
 
-- [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]], and what each hypothesis is doing.
+- [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]] -- the hypotheses of each theorem and counterexamples without them.
 
-- [[real-analysis/fubini-tonelli/statements|The statements]], with the product measure they are stated over.
+- [[real-analysis/fubini-tonelli/statements|The statements]] -- Tonelli's and Fubini's theorems for product measures, and other interchanges of limits.

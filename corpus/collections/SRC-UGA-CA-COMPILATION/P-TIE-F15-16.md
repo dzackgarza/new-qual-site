@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-16
 kind: problem
-title: Questions from Tie — Fall 2015, question 16
+title: Convergence of the iterates $\sum f^n$ of a non-rotation self-map of the disk fixing $0$
 classification:
   areas:
   - complex-analysis

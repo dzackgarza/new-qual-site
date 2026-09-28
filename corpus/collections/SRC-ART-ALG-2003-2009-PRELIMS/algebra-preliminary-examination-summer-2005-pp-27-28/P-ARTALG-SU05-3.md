@@ -24,7 +24,7 @@ audit:
   note: "Verified properness of (2,x) and excluded every possible generator using the constant polynomial 2 and the coefficient of x."
 ---
 
-::: problem
+::: {.problem}
 (a) State the definition of a principal ideal domain.
 
 (b) Let $\mathbb{Z}$ be the ring of integers.
@@ -32,14 +32,14 @@ Is $\mathbb{Z}[x]$ a principal ideal domain?
 Either prove that it is, or present an example showing that it is not.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A principal ideal domain is a commutative ring $R$ with
 identity $1\ne0$, no zero divisors, and every ideal of the form
 $(a)=\{ra:r\in R\}$ for some $a\in R$ [@DF04].
 
 <1>2. The ideal $I=(2,x)$ of $\mathbb Z[x]$ is proper.
 
-::: proof
+::: {.proof}
 Every element of $I$ has the form $2g(x)+xh(x)$ with
 $g,h\in\mathbb Z[x]$. Its constant coefficient is $2g(0)$,
 which is even. The polynomial $1$ has odd constant coefficient,
@@ -49,7 +49,7 @@ so $1\notin I$ and $I\ne\mathbb Z[x]$.
 <1>3. The ideal $I$ is not principal, so $\mathbb Z[x]$ is not a
 principal ideal domain.
 
-::: proof
+::: {.proof}
 Suppose $I=(f)$. Since $2\in I$, there is $g\in\mathbb Z[x]$
 such that $fg=2$. Neither factor is zero. Leading coefficients
 of nonzero integer polynomials have nonzero product, so degrees

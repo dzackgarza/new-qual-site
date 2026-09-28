@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $a\in\mathbb R$ with $|a|<1$.
 Prove that
 \[

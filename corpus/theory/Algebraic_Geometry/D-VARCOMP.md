@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="Complete"}
-A variety $X$ over $k$ is **complete**, equivalently **proper**, if the structure morphism $X \to \Spec k$ is proper: separated and universally closed.
+A variety $X$ over $k$ is \dfn{complete}, equivalently **proper**, if the structure morphism $X \to \Spec k$ is proper: separated and universally closed.
 Finite type is automatic for varieties, so only the two substantive conditions are being asserted.
 :::
 

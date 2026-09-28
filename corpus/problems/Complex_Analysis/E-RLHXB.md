@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Without using the residue formula, compute
 \[
 \int_\RR f(x) \dx && f(x) \da {1\over x^4 + 16}
@@ -23,7 +23,7 @@ Without using the residue formula, compute
 
 :::
 
-:::{.solution}
+::: {.solution}
 Use a semicircular contour, noting the poles are at $\pm \sqrt 2 \pm i\sqrt 2$. 
 Write
 

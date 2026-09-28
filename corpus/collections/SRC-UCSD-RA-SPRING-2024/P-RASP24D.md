@@ -23,16 +23,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a set and $1 < p < \infty$.
 Prove that a sequence $f_n \in \ell^p(A)$ converges weakly to $f \in \ell^p(A)$ if and only if $(f_n)$ converges to $f$ pointwise and $\sup_n \|f_n\|_p < \infty$.
 :::
 
-::: solution
+::: {.solution}
 Let $q=p/(p-1)$.
 
 <1>1. Weak convergence implies pointwise convergence.
-::: proof
+::: {.proof}
 For each $a\in A$, define
 \[
 \delta_a(h):=h(a).
@@ -49,7 +49,7 @@ for every $a\in A$.
 :::
 
 <1>2. Weak convergence implies norm boundedness.
-::: proof
+::: {.proof}
 For each $n$, define
 \[
 T_n:(\ell^p(A))^*\to\mathbb C,
@@ -71,7 +71,7 @@ Therefore
 :::
 
 <1>3. Assume pointwise convergence and uniform boundedness, and prove weak convergence.
-::: proof
+::: {.proof}
 Assume
 \[
 f_n(a)\to f(a)

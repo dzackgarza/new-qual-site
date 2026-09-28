@@ -24,7 +24,7 @@ such that
 Show that either $f$ is constant or $f$ has a zero in $G$.
 :::
 
-::: solution
+::: {.solution}
 If $c=0$, the maximum modulus principle gives
 \[
 |f(z)|\le0

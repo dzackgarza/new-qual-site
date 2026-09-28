@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 Z(G)=\bigcap_{a\in G}C_G(a).

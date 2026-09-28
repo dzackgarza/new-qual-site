@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f: \RR\to\RR$ is a continuous function that vanishes outside of some finite interval.
 For each $z\in \CC$, define
 \[
@@ -24,7 +24,7 @@ g(z) = \int_{-\infty}^\infty f(t) e^{-izt} \,dt
 Show that $g$ is entire.
 :::
 
-::: solution
+::: {.solution}
 Choose $R>0$ such that $f(t)=0$ for $|t|>R$. Then
 \[
 g(z)=\int_{-R}^R f(t)e^{-izt}\,dt.

@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\prod_{n=2}^{\infty}\left(1 - \frac{1}{n^2}\right)$ in two different ways.
 :::
 
-::: solution
+::: {.solution}
 First telescope directly:
 \[
 1-\frac1{n^2}=\frac{(n-1)(n+1)}{n^2}

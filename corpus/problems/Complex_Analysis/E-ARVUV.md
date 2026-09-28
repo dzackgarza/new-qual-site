@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that
 \[
 \sum_{k\in \ZZ} {1\over k^2 + a^2} = {\pi \coth(\pi a) \over a} \qquad\text{for } a>0

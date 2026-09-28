@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-F2N4L
 kind: proposition
 title: Quadratic extensions of $\FF_p$ are unique up to isomorphism
+slogan: '$\FF_p$ has a unique quadratic extension up to isomorphism.'
 classification:
   areas:
   - algebra
@@ -14,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-For $\FF_p$ a finite field of prime order, all quadratic extensions $E/\FF_p$ are isomorphic.
+Let $p$ be a prime.
+Any two field extensions $E/\FF_p$ and $E'/\FF_p$ of degree $2$ are isomorphic.
 :::

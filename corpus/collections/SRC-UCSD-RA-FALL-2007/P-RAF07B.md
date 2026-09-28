@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Recall that a measure $\mu$ is semifinite if for any $E \in \mathcal{M}$ with $\mu(E) = \infty$, there exists $F \in \mathcal{M}$ with $F \subset E$ and $0 < \mu(F) < \infty$.
 Show that if $\mu$ is semifinite, then for any $E \in \mathcal{M}$,
 $$
@@ -32,9 +32,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The finite-measure case is immediate.
-::: proof
+::: {.proof}
 Set
 \[
 S_E:=\sup\{\mu(F):F\in\mathcal M,\ F\subset E,\ \mu(F)<\infty\}.
@@ -47,7 +47,7 @@ Thus $S_E=\mu(E)$ in this case.
 :::
 
 <1>2. Treat the case $\mu(E)=\infty$ by contradiction.
-::: proof
+::: {.proof}
 Suppose $\mu(E)=\infty$ but $S_E<\infty$. Choose measurable sets $F_n\subset E$ with $\mu(F_n)<\infty$ and
 \[
 \mu(F_n)>S_E-\frac1n.

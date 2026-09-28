@@ -23,7 +23,7 @@ audit:
   note: "Computed the characteristic polynomial, exhibited two independent real eigenvectors, and checked that their eigenbasis diagonalizes A."
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A=\begin{pmatrix}7&15\\-2&-4\end{pmatrix}.
@@ -31,7 +31,7 @@ A=\begin{pmatrix}7&15\\-2&-4\end{pmatrix}.
 Find a real matrix $B$ such that $B^{-1}AB$ is diagonal.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial of $A$ is
 $$
 \begin{aligned}
@@ -45,7 +45,7 @@ $$
 Thus the eigenvalues are $1$ and $2$.
 
 <1>1. Find an eigenvector for $\lambda=1$.
-::: proof
+::: {.proof}
 We have
 $$
 A-I=\begin{pmatrix}6&15\\-2&-5\end{pmatrix}.
@@ -65,7 +65,7 @@ $$
 :::
 
 <1>2. Find an eigenvector for $\lambda=2$.
-::: proof
+::: {.proof}
 We have
 $$
 A-2I=\begin{pmatrix}5&15\\-2&-6\end{pmatrix}.
@@ -85,7 +85,7 @@ $$
 :::
 
 <1>3. Form the eigenvector matrix.
-::: proof
+::: {.proof}
 Let
 $$
 B=\begin{pmatrix}-5&-3\\2&1\end{pmatrix}.

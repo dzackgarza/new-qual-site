@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field such that $n\neq0$ in $F$, and let $M\in M_n(F)$ be the matrix whose entries are all $1$.
 Find its Jordan canonical form (over a splitting field, if necessary).
 :::

@@ -9,14 +9,13 @@ topics:
 
 # Criteria and numerical invariants
 
-Almost every toric question on an exam has the same shape: a property of the variety is named, and the answer is a condition on the fan.
+Many geometric properties of a toric variety are equivalent to explicit conditions on its fan.
 This page collects those equivalences in one place, then adds the numbers that the same combinatorics produces for free.
 
 [[PR-FULCRIT]]
 
-Read the table downwards when a fan is in front of you and upwards when a property is demanded and an example is wanted.
-Downwards, each row is a determinant, a support check, or a convexity check on a piecewise-linear function.
-Upwards, each row says what to draw: full support for completeness, a polytope for projectivity, a reflexive polytope for Fano.
+Each row works in both directions.
+From a fan, it gives a determinant, support, or convexity check; from a desired property, it specifies fan data that realizes it: full support for completeness, a polytope for projectivity, and a reflexive polytope for Fano.
 
 ## The numbers that come with the fan
 
@@ -24,12 +23,11 @@ Upwards, each row says what to draw: full support for completeness, a polytope f
 
 [[T-FULDEG]]
 
-Between them these two cover most of what can be asked about a projective toric variety without leaving the combinatorics.
+Together these recover standard numerical invariants of a projective toric variety from the combinatorics.
 Cohomology is a count of cones, sections are a count of lattice points, and the degree is a volume.
 
 ## Properties that hold automatically
 
 [[PR-FULCM]]
 
-These are worth stating early in an answer, because they remove hypotheses from everything that follows.
-Normality and Cohen-Macaulayness are free, Gorenstein is a real condition, and smoothness is the strongest of the three.
+Normality and Cohen--Macaulayness hold automatically in this setting, while Gorensteinness and smoothness impose additional conditions on the fan.

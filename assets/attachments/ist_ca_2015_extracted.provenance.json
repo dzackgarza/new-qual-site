@@ -1,0 +1,22 @@
+{
+  "source_pdf": "assets/attachments/ist_ca_2015.pdf",
+  "source_pdf_sha256": "4b5f9c1795c6b244952b1ca0a3b97f40037eb6a65ceb79685bcffaeaec88b3e2",
+  "extracted_markdown": "assets/attachments/ist_ca_2015_extracted.md",
+  "extracted_markdown_sha256": "b5be95e1555c82b94b248412230ad7883cf19735b11d76e698e0f60210734c90",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/ist_ca_2015.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/ist_ca_2015.md",
+  "problem_count": 25,
+  "card_comparison": "Twenty-four explicit Problem x.y headings are represented by source-local cards; Problem 8.7 reuses canonical card E-TJ3WM because it asks exactly for the holomorphic automorphisms of C.",
+  "transcription_corrections": [
+    "Problem 1.1 describes an (n+1)-by-(n+1) matrix but calls the standard basis vectors n-by-1; the card uses the dimension forced by the displayed construction.",
+    "Problem 1.2 inconsistently writes f for p and z for z_0 in the maximum/integral formulas; the card uses the polynomial and center defined by the problem.",
+    "Problem 3.5's first clause is normalized to existence of a zero in the open unit disc, as forced by its Maximum Modulus hint and the following Rouché clause.",
+    "Problem 4.2 omits the center value in the phrase 'disc with center and radius pi/2'; the card spells out the intended disc centered at 0 and the Taylor partial sums of cosine.",
+    "Problems 5.3 and 5.6 lose overlines on Omega in the machine extraction; the public text rendering of the same source confirms compactness/continuity on the closure.",
+    "Problem 9.1 drops the condition det != 0; the surrounding discussion that the determinant zero set has empty interior forces the statement that invertible matrices are dense.",
+    "Problem 9.4 renders the final p with a stray dot; the same-source public text confirms the intended polynomial p."
+  ]
+}

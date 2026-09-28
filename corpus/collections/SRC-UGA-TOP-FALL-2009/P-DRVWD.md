@@ -33,7 +33,7 @@ audit:
     word, and verified the cellular boundary and all integral homology groups.
 ---
 
-::: problem
+::: {.problem}
 Denote the points of $S^1 \times I$ by $(z, t)$ where $z$ is a unit complex number and $0 \leq t \leq 1$.
 Let $X$ denote the quotient of $S^1 \times I$ given by identifying $(z, 1)$ and $(z^2 , 0)$ for all $z \in S^1$.
 

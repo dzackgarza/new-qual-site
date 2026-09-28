@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose $f: A \to B$ and $g: B \to C$ are functions.
 Prove or give a counterexample:
 
@@ -25,7 +25,7 @@ a. If $f$ and $g$ are injective (one-to-one), then $g \circ f$ is injective.
 b. If $g \circ f$ is injective, then $f$ and $g$ are injective.
 :::
 
-::: solution
+::: {.solution}
 (a) True. If $(g\circ f)(a_1)=(g\circ f)(a_2)$, injectivity of $g$ gives $f(a_1)=f(a_2)$, and injectivity of $f$ then gives $a_1=a_2$.
 
 (b) False as stated. Injectivity of $g\circ f$ does force $f$ to be injective: if $f(a_1)=f(a_2)$, then $(g\circ f)(a_1)=(g\circ f)(a_2)$, hence $a_1=a_2$.

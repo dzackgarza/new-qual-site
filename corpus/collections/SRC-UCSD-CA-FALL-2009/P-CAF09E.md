@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate the integral $\int_0^{\infty} \frac{x\,dx}{x^4 + 1}$ via residue theory.
 It is not necessary to simplify your answer.
 :::
 
-::: solution
+::: {.solution}
 Integrate
 \[
 F(z)=\frac{z}{z^4+1}

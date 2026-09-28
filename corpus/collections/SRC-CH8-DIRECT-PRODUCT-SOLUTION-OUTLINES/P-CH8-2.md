@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH8-2
 kind: problem
-title: Chapter 8 exercise 2
+title: Subgroups of order $2$ in $\mathbb Z_2\oplus\mathbb Z_2\oplus\mathbb Z_2$
 classification:
   areas:
   - algebra

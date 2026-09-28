@@ -25,8 +25,9 @@ audit:
   note: Used Zorn for Choice implies maximal trees, and encoded an arbitrary family of nonempty sets as parallel edges from a common root to recover a choice function from a spanning tree.
 ---
 
+::: {.problem}
 Show that the existence of maximal trees is equivalent to the Axiom of Choice.
-
+:::
 
 ::: {.solution}
 We prove the equivalence between the assertion

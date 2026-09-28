@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A \in M_n(\mathbb{Z})$ be an $n \times n$ matrix with integer entries, viewed as a $\mathbb{Z}$-module homomorphism $A: \mathbb{Z}^n \to \mathbb{Z}^n$.
 (1) Prove that the cokernel $\operatorname{coker}(A) = \mathbb{Z}^n / \operatorname{im}(A)$ is **finite** if and only if $\det(A) \ne 0$.
 (2) Prove that when $\det(A) \ne 0$, the order of the cokernel is given by:
 $$|\operatorname{coker}(A)| = |\det(A)|.$$
 :::
 
-::: solution
+::: {.solution}
 Take Smith normal form
 \[
 UAV=\operatorname{diag}(d_1,\dots,d_n),

@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 A linear map $\phi \colon \mathbb{C}^{10} \to \mathbb{C}^{10}$ is given in the standard basis $e_1, \ldots, e_{10}$ by the matrix
 \[
 \begin{pmatrix}

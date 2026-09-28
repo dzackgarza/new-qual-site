@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/grad_prelim_Fall11.pdf",
+  "source_pdf_sha256": "296f1af39c78a97ab2b05bf9e71c15f6b98fe598626e5f1d5dafbdf7d43282b6",
+  "extracted_markdown": "assets/attachments/grad_prelim_Fall11_extracted.md",
+  "extracted_markdown_sha256": "33a1ec46185bace9d5624b8594b99da5b08e3f2a081da3124a982f426eedad32",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/grad_prelim_Fall11.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/grad_prelim_Fall11.md",
+  "old_unknown_provenance_sha256": "33a1ec46185bace9d5624b8594b99da5b08e3f2a081da3124a982f426eedad32",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UGA Mathematics Preliminary Examination, Fall 2011, containing Problems 1 through 9 in source order.",
+  "card_reconciliation": "The existing complete SRC-UGA-PRELIM-FALL-2011 collection represents all 9 numbered source positions in order with 9 source-local cards. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

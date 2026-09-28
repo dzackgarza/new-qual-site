@@ -25,6 +25,7 @@ audit:
   note: "Checked absolute convergence, clockwise orientation of the lower semicircle, the residue at minus i and a uniform vanishing-arc estimate for the stated Fourier convention."
 ---
 
+::: {.problem}
 4. Let $f ( x ) = { \frac { 1 } { x ^ { 2 } + 1 } }$ . Use a contour integral consisting of the interval $[ - R , R ] \subset \mathbb { R }$ and a semicircle of radius R to compute the Fourier transform
 
 $$
@@ -32,13 +33,14 @@ $$
 $$
 
 Show that the contour integral converges to your answer as $R \to + \infty$
+:::
 
-::: solution
+::: {.solution}
 The value is $\boxed{\widehat f(1)=\pi/e}$.
 
 <1>1. The real integral exists absolutely.
 
-::: proof
+::: {.proof}
 For real $x$, $|e^{-ix}|=1$. The function
 $(1+x^2)^{-1}$ is bounded on $[-1,1]$ and is at most
 $x^{-2}$ for $|x|\geq1$. Since the latter is integrable
@@ -50,7 +52,7 @@ a principal value.
 
 <1>2. The clockwise lower semicircle encloses one pole.
 
-::: proof
+::: {.proof}
 Set $F(z)=e^{-iz}/(1+z^2)$. For $R>1$, traverse
 $[-R,R]$ from left to right, then return from $R$ to
 $-R$ along the lower semicircle $\Gamma_R$.
@@ -73,7 +75,7 @@ for the prescribed sign $e^{-iz}$.
 
 <1>3. The semicircle contribution tends to zero.
 
-::: proof
+::: {.proof}
 On $\Gamma_R$, one has $\operatorname{Im}z\leq0$ and
 $$
 |e^{-iz}|=e^{\operatorname{Im}z}\leq1,

@@ -11,6 +11,7 @@ relations: []
 review: draft
 provenance:
 - assets/attachments/chapter-6.pdf
+- assets/attachments/Cracking_the_GRE_Mathematics_Subject.pdf
 source:
   source_kind: compilation
   area: algebra

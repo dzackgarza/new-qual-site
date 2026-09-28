@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-NJ2Y6
 kind: definition
-title: Simplicial Complex
+title: Simplicial complex
 classification:
   areas:
   - topology
@@ -14,19 +14,17 @@ review: draft
 ---
 
 ::: {.definition}
-Given a simplex $\sigma = [v_1 \cdots v_n]$, define the **face map**
-\[
-\del_i:\Delta^n &\to \Delta^{n-1} \\ 
-\sigma &\mapsto  [v_1 \cdots \hat v_i \cdots v_n]
-\]
+Let $N\geq0$ and let $v_0,\ldots,v_k\in\RR^N$ be affinely independent, meaning that $v_1-v_0,\ldots,v_k-v_0$ are linearly independent.
+The \dfn{$k$-simplex} $[v_0,\ldots,v_k]\subseteq\RR^N$ is the convex hull of $v_0,\ldots,v_k$, and these points are its \dfn{vertices}.
+A \dfn{face} of $[v_0,\ldots,v_k]$ is a simplex spanned by a nonempty subset of $\ts{v_0,\ldots,v_k}$; for $0\leq i\leq k$ and $k\geq1$, the $i$-th \dfn{facet} is
+$$
+\del_i[v_0,\ldots,v_k]\coloneqq[v_0,\ldots,\hat v_i,\ldots,v_k].
+$$
+A \dfn{simplicial complex} in $\RR^N$ is a set $K$ of simplices in $\RR^N$ such that:
 
-A **simplicial complex** is a set $K$ satisfying
+1. every face of a simplex in $K$ belongs to $K$;
 
-1. $\sigma \in K \implies \del_i\sigma \in K$.
+2. for $\sigma,\tau\in K$, the intersection $\sigma\cap\tau$ is either empty or a face of both $\sigma$ and $\tau$;
 
-2. $\sigma,\tau\in K \implies \sigma\intersect\tau = \emptyset,~ \del_i\sigma,~\text{or}~\del_i\tau$.
-
-This amounts to saying that any collection of $(n-1)$-simplices uniquely determines an $n$-simplex (or its lack thereof), or that that map $\Delta^k \into X$ is a continuous injection from the standard simplex in $\RR^n$.
-
-3. $\abs{K\intersect B_\varepsilon(\sigma)} < \infty$ for every $\sigma\in K$, identifying $\sigma \subseteq \RR^n$.
+3. every point of $\RR^N$ has a neighborhood that meets only finitely many simplices of $K$.
 :::

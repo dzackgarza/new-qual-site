@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-:::{.exercise}
+::: {.exercise}
 Assume throughout that $R$ is a commutative ring with identity. Let $N(R)$ be the set of nilpotent elements, $ZD(R)$ the set of zero divisors, and $R\units$ the group of units.
 
 - Show that every nilpotent element is either zero or a zero divisor.

@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a. Complete the $\delta$-$\varepsilon$ definition of a limit: Given a function $f: \mathbb{R} \to \mathbb{R}$ and $a, L \in \mathbb{R}$, $\lim_{x \to a} f(x) = L$ means ...
 
 b. Using the definition, prove that $\lim_{x \to 1} \frac{1}{1 + x^2} = \frac{1}{2}$.
 :::
 
-::: solution
+::: {.solution}
 The statement
 \[
 \lim_{x\to a}f(x)=L

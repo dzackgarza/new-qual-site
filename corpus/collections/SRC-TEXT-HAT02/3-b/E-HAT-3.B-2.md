@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Let $C$ and $C'$ be chain complexes, and let $I$ be the chain complex consisting of $\mathbb{Z}$ in dimension 1 and $\mathbb{Z} \times \mathbb{Z}$ in dimension 0, with the boundary map taking a generator $e$ in dimension 1 to the difference $v_1 - v_0$ of generators $v_i$ of the two $\mathbb{Z}$'s in dimension 0. Show that a chain map $f: I \otimes C \to C'$ is precisely the same as a chain homotopy between the two chain maps $f_i: C \to C'$, $c \mapsto f(v_i \otimes c)$, $i = 0, 1$.
 [The chain homotopy is $h(c) = f(e \otimes c)$.]
+:::
 
 ::: {.solution}
 <1>1. $I \otimes C$ has, in degree $n$, the group $(I_0 \otimes C_n) \oplus (I_1 \otimes C_{n-1}) = (v_0 \otimes C_n) \oplus (v_1 \otimes C_n) \oplus (e \otimes C_{n-1})$.

@@ -18,7 +18,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that every homomorphism $\pi_1(S^1) \to \pi_1(S^1)$ can be realized as the induced homomorphism $\varphi_*$ of a map $\varphi: S^1 \to S^1$.
+:::
 
 ::: {.solution}
 <1>1. $\pi_1(S^1) = \ZZ$, so a homomorphism $\pi_1(S^1) \to \pi_1(S^1)$ is multiplication by some integer $n$.

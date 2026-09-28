@@ -26,7 +26,7 @@ audit:
   note: Verified the punctured-space argument by comparing H_1(S^1) with H_1(S^{n-1}) for n greater than 2.
 ---
 
-::: problem
+::: {.problem}
 Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for $n > 2$.
 :::
 

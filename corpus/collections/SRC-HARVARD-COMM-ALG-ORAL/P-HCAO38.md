@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State Nakayama's lemma.
 Give an example of a ring and a nonzero ideal which satisfy its hypotheses.
 :::
 
-::: solution
+::: {.solution}
 One standard form of Nakayama's lemma is the following.
 
 <1>1. Let $R$ be a commutative ring, let $M$ be a finitely generated
@@ -39,7 +39,7 @@ $R$-module, and let $I\subseteq\operatorname{Jac}(R)$. If
 IM=M,
 \]
 then $M=0$.
-::: proof
+::: {.proof}
 Choose a minimal generating set $m_1,\ldots,m_r$ for $M$. If $r>0$, the
 equality $IM=M$ gives
 \[
@@ -60,7 +60,7 @@ M=N+IM,
 \]
 with $M$ finitely generated and $I\subseteq\operatorname{Jac}(R)$, then
 $M=N$.
-::: proof
+::: {.proof}
 Apply <1>1 to the finitely generated quotient $M/N$.
 :::
 
@@ -68,7 +68,7 @@ Apply <1>1 to the finitely generated quotient $M/N$.
 \[
 I=(x)\subset R=k[x]_{(x)}.
 \]
-::: proof
+::: {.proof}
 The localization $R=k[x]_{(x)}$ is a local ring with maximal ideal $(x)$.
 For every local ring, its maximal ideal is the Jacobson radical. Thus the
 nonzero ideal $I=(x)$ lies in $\operatorname{Jac}(R)$, as required in

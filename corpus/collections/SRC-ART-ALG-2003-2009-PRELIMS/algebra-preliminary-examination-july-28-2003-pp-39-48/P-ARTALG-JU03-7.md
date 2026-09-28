@@ -24,18 +24,18 @@ audit:
   note: "Checked equality of the generated root fields, repeated roots, inseparable polynomials, and the constant quotient when the original polynomial is linear."
 ---
 
-::: problem
+::: {.problem}
 Prove that if $F$ is a field and $g(x) \in F[x]$ has a root $\alpha \in F$, then its Galois group is the same as the Galois group of $g(x)/(x - \alpha)$.
 :::
 
-::: solution
+::: {.solution}
 The Galois group of a nonzero polynomial means the group of
 $F$-automorphisms of its splitting field. As usual this notation
 presupposes $g\ne0$. Fix an algebraic closure $\overline F$.
 
 <1>1. The quotient $h(x)=g(x)/(x-\alpha)$ belongs to $F[x]$.
 
-::: proof
+::: {.proof}
 Division by the monic linear polynomial $x-\alpha$ gives
 $g=(x-\alpha)h+c$, with $h\in F[x]$ and $c\in F$.
 Evaluation at $\alpha$ gives $c=g(\alpha)=0$.
@@ -45,7 +45,7 @@ $\deg h=\deg g-1$.
 
 <1>2. The two splitting fields inside $\overline F$ are equal.
 
-::: proof
+::: {.proof}
 Let $R_g$ and $R_h$ be the sets of roots in $\overline F$,
 without counting multiplicities. The identity
 $g=(x-\alpha)h$ implies
@@ -66,7 +66,7 @@ are $F$; the same equality covers that case.
 
 <1>3. The Galois groups coincide.
 
-::: proof
+::: {.proof}
 Writing the common splitting field as $L$, both groups are
 literally $\operatorname{Aut}_F(L)$, with the same composition
 law. No separability assumption was used. A repeated root

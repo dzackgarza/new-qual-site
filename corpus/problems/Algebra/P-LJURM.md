@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give a polynomial with $S_3$ as its Galois group over $\mathbb{Q}$, and prove it.
 :::
 
-::: solution
+::: {.solution}
 Take
 \[
 f(x)=x^3-2.

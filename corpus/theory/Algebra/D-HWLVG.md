@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-HWLVG
 kind: definition
-title: Valuation Ring
+title: Valuation ring
 classification:
   areas:
   - algebra
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.definition}
-A **valuation ring** is an integral domain $R$ such that for every $x\in \ff(R)$, $x\in R$ or $x\inv \in R$.
+An [[D-QJ3QL|integral domain]] $R$ with [[D-OXIVT|field of fractions]] $K$ is a \dfn{valuation ring} if for every nonzero $x\in K$, $x\in R$ or $x^{-1} \in R$.
 :::

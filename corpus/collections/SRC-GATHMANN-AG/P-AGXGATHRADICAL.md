@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine $\sqrt{I}$ for
 \[
 I\da \gens{x_1^3 - x_2^6,\, x_1 x_2 - x_2^3} \normal \CC[x_1, x_2]
 .\]
 :::
 
-::: solution
+::: {.solution}
 Let $\mci, V$ denote the maps in Hilbert's Nullstellensatz, so that
 \[
 (\mci \circ V)(I) = \sqrt{I}
@@ -46,4 +46,9 @@ In fact $P = V(I)$, and so taking the ideal of $P$ yields
 \qty{\mci \circ V} (I) = \mci(P) = \gens{y-x^2} \normal \CC[x ,y]
 ,\]
 and thus $\sqrt{I} = \gens{y-x^2}$.
+:::
+
+::: {.remark}
+Erratum: the source's conclusion swaps the variables.
+With $x=x_1$ and $y=x_2$, the locus $P=\ts{(t^2,t)}$ is the zero locus of $x-y^2$, so $\mci(P)=\gens{x-y^2}$ and $\sqrt{I}=\gens{x_1-x_2^2}$; the ideal $\gens{y-x^2}$ vanishes on the different parabola $\ts{(t,t^2)}$.
 :::

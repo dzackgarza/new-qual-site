@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-030
 kind: problem
-title: Kent State ring-theory qualifying problem 30
+title: The center of a simple ring is zero or a field
 classification:
   areas: [algebra]
   topics: []

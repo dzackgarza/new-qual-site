@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that a triangular matrix is normal if and only if it is diagonal.
 :::
 

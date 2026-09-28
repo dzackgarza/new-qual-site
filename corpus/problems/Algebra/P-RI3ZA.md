@@ -25,7 +25,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give an example of a tower of field extensions
 \[
 K\subseteq L\subseteq M

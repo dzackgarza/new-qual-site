@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $E\subset \CC$ denote the splitting field over $\QQ$ of the polynomial $x^3 - 11$.
 
 a.
@@ -33,7 +33,7 @@ c.
 Prove that the minimal polynomial of $11^{1/3} + 2^{1/2}$ over $\QQ$ has degree 6.
 :::
 
-::: solution
+::: {.solution}
 Let $a=11^{1/3}$ and let $\omega$ be a primitive cube root of unity. Then
 \[
 E=\mathbb Q(a,\omega).

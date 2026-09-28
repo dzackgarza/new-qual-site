@@ -24,11 +24,12 @@ audit:
   note: Used the Bass--Serre tree of lines for the general product statement and identified the ray example with the direct limit union of 1/n! Z; replacing every map by times 2 gives the dyadic subgroup.
 ---
 
+::: {.problem}
 Show that for a graph of groups all of whose edge homomorphisms are injective maps $\mathbb{Z} \to \mathbb{Z}$, we can choose $K$ to have universal cover a product $T \times \mathbb{R}$ with $T$ a tree.
 Work out in detail the case that the graph of groups is the infinite sequence $\mathbb{Z} \xrightarrow{2} \mathbb{Z} \xrightarrow{3} \mathbb{Z} \xrightarrow{4} \mathbb{Z} \to \cdots$ where the map $\mathbb{Z} \xrightarrow{n} \mathbb{Z}$ is multiplication by $n$.
 Show that $\pi_1(K\Gamma)$ is isomorphic to $\mathbb{Q}$ in this case.
 How would one modify this example to get $\pi_1(K\Gamma)$ isomorphic to the subgroup of $\mathbb{Q}$ consisting of rational numbers with denominator a power of 2?
-
+:::
 
 ::: {.solution}
 Consider first an arbitrary graph of groups in which every vertex and edge group is infinite cyclic and every edge homomorphism is injective.

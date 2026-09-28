@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a conformal map
 \[
 \DD\sm \left[ {1\over 2}, 1\right) \to \DD
@@ -22,7 +22,7 @@ Find a conformal map
 
 :::
 
-:::{.solution}
+::: {.solution}
 The picture:
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-11-28_16-51-43.png)

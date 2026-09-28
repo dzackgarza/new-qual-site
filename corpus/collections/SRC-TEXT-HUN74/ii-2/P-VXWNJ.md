@@ -30,14 +30,14 @@ Let $G$ be a finite abelian group that is not cyclic.
 Show that $G$ contains a subgroup isomorphic to $\mathbb{Z}_p \oplus \mathbb{Z}_p$ for some prime $p$.
 :::
 
-::: solution
+::: {.solution}
 Write $G$ as the direct sum of its Sylow subgroups,
 \[
 G=\bigoplus_{p\mid |G|}G_p.
 \]
 
 <1>1. At least one Sylow subgroup $G_p$ is noncyclic.
-::: proof
+::: {.proof}
 If every $G_p$ were cyclic, then their orders would be pairwise coprime. The
 direct product of finite cyclic groups of pairwise coprime orders is cyclic, so
 $G$ would be cyclic, contrary to hypothesis.
@@ -45,7 +45,7 @@ $G$ would be cyclic, contrary to hypothesis.
 
 <1>2. A noncyclic finite abelian $p$-group contains a subgroup isomorphic to
 $\ZZ_p\oplus\ZZ_p$.
-::: proof
+::: {.proof}
 By the structure theorem for finite abelian $p$-groups,
 \[
 G_p\cong \ZZ_{p^{a_1}}\oplus\cdots\oplus\ZZ_{p^{a_r}}
@@ -66,7 +66,7 @@ both have order $p$. They lie in distinct direct summands, so
 
 <1>3. Hence $G$ contains a subgroup isomorphic to $\ZZ_p\oplus\ZZ_p$ for some
 prime $p$.
-::: proof
+::: {.proof}
 Choose the prime supplied by <1>1 and apply <1>2 inside the subgroup $G_p\le G$.
 :::
 :::

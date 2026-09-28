@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F09-03
 kind: problem
-title: Questions from Tie — Fall 2009, question 3
+title: Lagrange inversion for $z-a-qf(z)=0$ via the residue theorem
 classification:
   areas:
   - complex-analysis

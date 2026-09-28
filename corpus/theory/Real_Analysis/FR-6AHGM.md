@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FR-6AHGM
 kind: proof
-title: 'Proposition: $\int \abs{f} = 0 \implies f = 0$ a.e.'
+title: If $\int\abs{f}\,d\mu = 0$ then $f = 0$ almost everywhere
 classification:
   areas:
   - real-analysis
@@ -13,14 +13,18 @@ relations: []
 review: draft
 ---
 
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f\colon X\to\CC$ be [[D-DHFN4|measurable]] with $\int_X \abs{f}\dmu = 0$.
+Then $f = 0$ $\mu$-almost everywhere.
+:::
+
 ::: {.proof}
-Suppose $f$ is measurable with $\int \abs{f} = 0$.
-For each $n \ge 1$ define $E_n \da \ts{x \st \abs{f(x)} \ge \frac1n}$.
-On $E_n$ we have $\abs{f} \ge \frac1n$, so
-\[
-0 = \int \abs{f} \ge \int_{E_n} \abs{f} \ge \int_{E_n} \frac1n = \frac1n \mu(E_n),
-\]
-which forces $\mu(E_n) = 0$ for every $n$.
-Now $\ts{x \st f(x) \neq 0} = \ts{x \st \abs{f(x)} > 0} = \bigcup_{n \ge 1} E_n$ is a countable union of null sets, hence null.
+For each $n \geq 1$ put $E_n \coloneqq \theset{x\in X \suchthat \abs{f(x)} \geq \frac1n}\in\mcm$.
+On $E_n$ we have $\abs{f} \geq \frac1n$, so
+$$
+0 = \int_X \abs{f}\dmu \geq \int_{E_n} \abs{f}\dmu \geq \int_{E_n} \frac1n\dmu = \frac1n \mu(E_n),
+$$
+and hence $\mu(E_n) = 0$ for every $n$.
+Now $\theset{x\in X \suchthat f(x) \neq 0} = \bigcup_{n \geq 1} E_n$ is a countable union of null sets, hence null.
 Therefore $f = 0$ almost everywhere.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\ldots,\lambda_n\in\mathbb{C}$ and singular values $\sigma_1\geq\cdots\geq\sigma_n\geq 0$.
 Show that
 \[
@@ -22,7 +22,7 @@ Show that
 If the above is an equality, is the matrix $A$ normal (i.e., $AA^*=A^*A$)? If yes, explain why; if no, give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 By Schur decomposition there is a unitary matrix \(U\) such that
 \[
 U^*AU=T,

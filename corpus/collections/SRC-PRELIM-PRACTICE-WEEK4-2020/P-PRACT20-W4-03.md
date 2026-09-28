@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-PRACT20-W4-03
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 3"
+title: Salt in a tank with equal inflow and outflow rates
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---

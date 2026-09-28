@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVCLIFF
 kind: theorem
 title: Clifford's theorem
+slogan: 'Special divisors satisfy $\ell(D)\leq \deg D/2+1$; equality beyond $0$ and $K$ is the signature of a hyperelliptic $g^1_2$.'
 classification:
   areas:
   - algebraic-geometry

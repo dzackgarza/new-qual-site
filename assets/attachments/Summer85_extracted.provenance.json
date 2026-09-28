@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/Summer85.pdf",
+  "source_pdf_sha256": "ed8affd474e660bdb07a370dd23e325ec095beaea0f01368c9be741511f2ba48",
+  "extracted_markdown": "assets/attachments/Summer85_extracted.md",
+  "extracted_markdown_sha256": "2a8acf3ad52385af21be0b8e4e88c83e59d0cad30802c53e1581fc3502438458",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Summer85.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Summer85.md",
+  "source_identification": "UC Berkeley Preliminary Exam, Summer 1985, containing Problems 1-20 in source order.",
+  "card_reconciliation": "The existing complete collection SRC-BERKELEY-PRELIM-SUMMER-1985 represents all twenty source positions in order by eighteen source-local cards plus exact canonical reuse of P-BKF89-13 for Problem 12 and P-BKF83-2 for Problem 14. No collection path is modified in this intake because the live shared tree owns those paths separately."
+}

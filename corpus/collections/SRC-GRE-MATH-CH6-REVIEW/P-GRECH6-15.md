@@ -9,19 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Re-transcribed from Chapter 6 review Question 15 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription."
 ---
 
 ::: {.problem}
-Let $G$ be a group of order $9$ with identity $e$.
-Which statement cannot be true?
+Let $G$ be a group of order $9$, and let $e$ denote the identity of $G$. Which one of the following statements about $G$ CANNOT be true?
 
-(A) There is $x\ne e$ with $x^{-1}=x$.
-
-(B) There is $x\ne e$ with $x^2=x^5$.
-
-(C) There is $x$ with $|\langle x\rangle|=3$.
-
+(A) There exists an element $x$ in $G$ such that $x \neq e$ and $x^{-1} = x$.
+(B) There exists an element $x$ in $G$ such that $x \neq e$ and $x^2 = x^5$.
+(C) There exists an element $x$ in $G$ such that $\langle x \rangle$ has order $3$.
 (D) $G$ is cyclic.
-
-(E) $G$ is abelian.
+(E) $G$ is Abelian.
 :::

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that if $f$ is once complex differentiable at each point of $\Omega$, then $f$ is holomorphic.
 :::
 

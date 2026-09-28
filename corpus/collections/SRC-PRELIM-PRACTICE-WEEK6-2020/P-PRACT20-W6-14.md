@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-14
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 14"
+title: Compactness, Hausdorffness and connectedness of $[0,1]$ in the Sorgenfrey line
 classification:
   areas:
   - prelim

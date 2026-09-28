@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Determine the order of the pole of 
 
 - ${1\over z\sin(z)}$ at $z_0 = 0$.
@@ -22,7 +22,7 @@ Determine the order of the pole of
 
 :::
 
-:::{.solution}
+::: {.solution}
 - Order 2:
 \[
 \lim_{z\to 0}z^0 f(z) &= \infty\\

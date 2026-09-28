@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define
 \[
 f(x)=\sum_{k=0}^\infty\frac{\cos(kx)}{k^3+k^2+1}.
@@ -33,9 +33,9 @@ f'(x)=\sum_{k=0}^\infty
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove uniform convergence of the derivative series.
-::: proof
+::: {.proof}
 For $k\ge1$,
 \[
 \left|
@@ -54,7 +54,7 @@ converges uniformly on $\mathbb R$.
 :::
 
 <1>2. Verify convergence of the original series at one point.
-::: proof
+::: {.proof}
 At $x=0$,
 \[
 \sum_{k=0}^\infty\frac1{k^3+k^2+1}
@@ -63,7 +63,7 @@ converges by comparison with $\sum_{k\ge1}k^{-3}$.
 :::
 
 <1>3. Apply the termwise differentiation theorem.
-::: proof
+::: {.proof}
 Each summand
 \[
 f_k(x)=\frac{\cos(kx)}{k^3+k^2+1}

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Describe the irreducible complex representations and character table of the dihedral group $D_4$ (order 8).
 (2) Explicitly construct the 2-dimensional irreducible representation.
 (3) Provide its geometric interpretation as symmetries of the square.

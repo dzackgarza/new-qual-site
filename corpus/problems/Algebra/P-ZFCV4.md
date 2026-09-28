@@ -19,12 +19,12 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Tell me a condition on the Galois group which is implied by irreducibility of the polynomial.
 What happens when the polynomial has a root in the base field?
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Let $f\in F[x]$ be irreducible of degree $n\ge1$ and let $L$ be its splitting field.
 Then $G=\mathrm{Gal}(L/F)$ acts transitively on the $n$ roots of $f$.

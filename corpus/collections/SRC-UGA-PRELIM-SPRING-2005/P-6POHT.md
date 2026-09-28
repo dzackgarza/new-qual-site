@@ -23,7 +23,7 @@ Recall that the Fibonacci numbers are defined by $F_0 = 1, F_1 = 1$, and then $$
 Prove that any two successive Fibonacci numbers $F_n, F_{n+1}$ are relatively prime.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For every $n\ge1$,
 \[
 \gcd(F_{n+1},F_n)=\gcd(F_n,F_{n-1}).
@@ -48,5 +48,4 @@ For $n=0$, this is immediate from $F_0=F_1=1$. For $n\ge1$, repeated application
 :::
 
 <1>3. Hence every two successive Fibonacci numbers are relatively prime.
-:::
 :::

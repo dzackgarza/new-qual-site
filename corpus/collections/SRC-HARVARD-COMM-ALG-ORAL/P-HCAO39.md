@@ -25,16 +25,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(R,\mathfrak m)$ be a local ring, and let $M$ be an $n\times n$ matrix whose entries lie in $\mathfrak m$.
 Prove, possibly using Nakayama's lemma, that $I_n+M$ is invertible.
 :::
 
-::: solution
+::: {.solution}
 Let $T=I_n+M$.
 
 <1>1. Modulo the maximal ideal, $T$ becomes the identity matrix.
-::: proof
+::: {.proof}
 Every entry of $M$ lies in $\mathfrak m$, so its image in
 $R/\mathfrak m$ is zero. Hence
 \[
@@ -44,7 +44,7 @@ in $M_n(R/\mathfrak m)$.
 :::
 
 <1>2. Therefore $\det(T)$ is a unit of $R$.
-::: proof
+::: {.proof}
 Reducing the determinant modulo $\mathfrak m$ gives
 \[
 \det(T)\equiv1\pmod{\mathfrak m}.
@@ -54,7 +54,7 @@ elements of the maximal ideal, so $\det(T)$ is a unit.
 :::
 
 <1>3. Hence $T=I_n+M$ is invertible.
-::: proof
+::: {.proof}
 The adjugate identity gives
 \[
 T\operatorname{adj}(T)=\det(T)I_n.

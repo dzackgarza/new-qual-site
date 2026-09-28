@@ -16,13 +16,13 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that a uniform limit of continuous functions is continuous, and a uniform limit of uniformly continuous functions is uniformly continuous.
 Show that this is not true if uniform convergence is weakened to pointwise convergence.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Suppose $\norm{f_n - f}_\infty\to 0$, fix $\eps$, we then need to produce a $\delta$ so that
 \[
 \abs{z-w}\leq \delta \implies \abs{f(z) - f(w) } < \eps

@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many roots does the polynomial $z^4 - 6z + 3 = 0$ have in the annulus $U = \{z \in \mathbb{C} \mid 1 < |z| < 2\}$?
 :::
 
-::: solution
+::: {.solution}
 On $|z|=1$,
 \[
 |z^4+3|\le4<6=|-6z|,

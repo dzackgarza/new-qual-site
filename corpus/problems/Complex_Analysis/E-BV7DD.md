@@ -19,7 +19,7 @@ audit:
   date: 2026-08-19
 ---
 
-::: problem
+::: {.problem}
 (1) Let $p(z)$ be a polynomial, $R>0$ any positive number, and $m \geq 1$ an integer.
 Let $M_R = \sup \{ |z^{m} p(z) - 1|: |z| = R  \}$.
 Show that $M_R>1$.

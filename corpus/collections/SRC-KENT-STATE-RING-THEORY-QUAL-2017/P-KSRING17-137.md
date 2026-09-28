@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-137
 kind: problem
-title: Kent State ring-theory qualifying problem 137
+title: The Jacobson radical of a right Artinian ring is nilpotent
 classification:
   areas: [algebra]
   topics: []

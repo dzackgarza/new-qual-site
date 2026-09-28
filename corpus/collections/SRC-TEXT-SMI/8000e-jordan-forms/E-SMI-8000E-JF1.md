@@ -35,11 +35,11 @@ audit:
 :::
 
 
-::: solution
+::: {.solution}
 Write $J_r(a)$ for a Jordan block of size $r$ with eigenvalue $a$.
 
 <1>1. Solve part (i).
-::: proof
+::: {.proof}
 If the minimal polynomial is
 $$
 (X-5)^2,
@@ -66,7 +66,7 @@ $$
 :::
 
 <1>2. Solve part (ii).
-::: proof
+::: {.proof}
 The minimal polynomial
 $$
 (X-1)(X-3)(X+6)
@@ -96,7 +96,7 @@ There are six Jordan forms.
 :::
 
 <1>3. Solve part (iii).
-::: proof
+::: {.proof}
 The minimal polynomial
 $$
 (X-1)^2(X-2)^2
@@ -133,7 +133,7 @@ partition pair occurs exactly once.
 :::
 
 <1>4. Convert the invariant factors in part (iv) to elementary divisors.
-::: proof
+::: {.proof}
 The invariant factors are
 $$
 f_1=(X-1)(X-2),
@@ -169,7 +169,7 @@ For $X-5$, only the exponent $3$ occurs, giving one size-$3$ block.
 :::
 
 <1>5. State the Jordan form in part (iv).
-::: proof
+::: {.proof}
 Combining the elementary divisors from step <1>4 gives
 $$
 \boxed{

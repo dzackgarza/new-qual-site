@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $H$ and $K$ be separable Hilbert spaces, $T : H \to K$ be a bounded linear operator, and $\{u_j\}_{j=1}^{\infty}$ and $\{v_k\}_{k=1}^{\infty}$ be orthonormal bases for $H$ and $K$ respectively.
 Show:
 
@@ -32,9 +32,9 @@ Show:
 2. $\|T\|_{op}^2 \leq \sum_{j=1}^{\infty} \|Tu_j\|_K^2$, where $\|T\|_{op}$ denotes the operator norm of $T$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Expand both sums in the two orthonormal bases.
-::: proof
+::: {.proof}
 For each fixed $j$, Parseval's identity in $K$ gives
 \[
 \|Tu_j\|_K^2
@@ -63,7 +63,7 @@ with equality in $[0,\infty]$.
 :::
 
 <1>2. Bound $T$ on finite linear combinations of the basis vectors.
-::: proof
+::: {.proof}
 Let
 \[
 x=\sum_{j=1}^N a_j u_j.
@@ -87,7 +87,7 @@ so by the triangle inequality and Cauchy--Schwarz,
 :::
 
 <1>3. Pass to all of $H$.
-::: proof
+::: {.proof}
 If
 \[
 \sum_{j=1}^\infty\|Tu_j\|_K^2=\infty,

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that if $\phi$ is an approximate identity, then $$\norm{f\ast \phi_t - f}_1 \converges{t\to 0}\to 0.$$
 
   - Show that if additionally $\abs{\phi(x)} \leq c(1 + \abs{x})^{-n-\eps}$ for some $c,\eps>0$, then this converges is almost everywhere.

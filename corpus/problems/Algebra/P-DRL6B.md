@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional vector space over a field $K$, and let $T: V \to V$ be a linear operator.
 Show that $T$ is diagonalizable if and only if $V$ is the direct sum of its eigenspaces:
 $$V = \bigoplus_{i=1}^k E_{\lambda_i}(T) = \bigoplus_{i=1}^k \ker(T - \lambda_i I)$$
 where $\lambda_1, \dots, \lambda_k \in K$ are the distinct eigenvalues of $T$.
 :::
 
-::: solution
+::: {.solution}
 For each eigenvalue $\lambda$ of $T$, write
 \[
 E_\lambda=\ker(T-\lambda I).

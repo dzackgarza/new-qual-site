@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A, C \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$ be Hermitian and suppose the following:
 
 - The $n$ eigenvalues of $A$ are notated and ordered as follows:
@@ -304,7 +304,6 @@ Hence
 \qquad(1\le k\le n-2).
 \]
 :::
-:::
 
 ::: {.solution}
 Let
@@ -584,7 +583,6 @@ Since this holds for every $(n-k+1)$-dimensional subspace $L$, taking the minimu
 \lambda_k(A).
 \]
 This is exactly the desired interlacing inequality.
-:::
 :::
 
 ::: {.solution}

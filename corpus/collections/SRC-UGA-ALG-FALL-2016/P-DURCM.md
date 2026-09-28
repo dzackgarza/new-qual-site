@@ -14,11 +14,12 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $R$ be a ring and $f: M\to N$ and $g: N\to M$ be $R\dash$module homomorphisms such that $g\circ f = \id_M$.
 Show that $N \cong \im f \oplus \ker g$.
+:::
 
-
-:::{.solution}
+::: {.solution}
 \envlist
 
 - We have the following situation:

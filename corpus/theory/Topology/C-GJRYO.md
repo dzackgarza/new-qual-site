@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-GJRYO
 kind: corollary
 title: Factoring through a contractible space implies nullhomotopic
+slogan: 'Any map that factors through a contractible space is nullhomotopic.'
 classification:
   areas:
   - topology
@@ -13,5 +14,6 @@ review: draft
 ---
 
 ::: {.corollary}
-Any map $f:X\to Y$ that factors through a contractible space $Z$ is nullhomotopic.
+Let $X$, $Y$ and $Z$ be topological spaces with $Z$ [[D-K43GA|contractible]], and let $\tilde f\colon X\to Z$ and $p\colon Z\to Y$ be continuous maps.
+Then $f \coloneqq p\circ \tilde f\colon X\to Y$ is [[D-MGRZP|nullhomotopic]].
 :::

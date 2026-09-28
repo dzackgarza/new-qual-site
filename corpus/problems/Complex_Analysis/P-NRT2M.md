@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f = u+iv$ be complex-differentiable with continuous partial derivatives at a point $z = re^{i\theta}$ with $r\neq 0$.
 Show that
 \[  
@@ -20,7 +20,7 @@ Show that
 .\]
 :::
 
-::: solution
+::: {.solution}
 With $x=r\cos\theta$ and $y=r\sin\theta$, the chain rule gives
 \[
 u_r=u_x\cos\theta+u_y\sin\theta,

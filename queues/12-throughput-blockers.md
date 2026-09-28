@@ -3,8 +3,8 @@
 Source: observed fleet measurement, 2026-09-10 → 2026-09-11. Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) surface.
 
 These are not corpus defects. They are defects in the surfaces that tell a stream what is
-left to do, and each one costs authoring time directly. Take them before taking cards from
-Queue C: a stream that fixes 12.1 stops several streams from re-solving solved cards.
+left to do, and each one costs authoring time directly. All items below are closed; the
+Queue C counts they cite are dated measurements, not the current count.
 
 ## Open items
 

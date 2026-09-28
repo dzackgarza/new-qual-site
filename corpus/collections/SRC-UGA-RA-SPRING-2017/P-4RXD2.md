@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $0 < a < b$, and define the sequence of functions on $[0, \infty)$ by
 $$
 f_n(x) = a e^{-n a x} - b e^{-n b x} \quad (n \ge 1).
@@ -29,7 +29,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove divergence of the integrated absolute sum via Tonelli's Theorem in (a), and compute the closed form of the geometric series and its improper integral in (b).
 
 <1>1. Part (a): Integration of single terms and root location.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 a. Let $z, w \in \CC$ with $\bar z w \neq 1$. 
 Prove that
 \[
@@ -32,7 +32,7 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 
 :::
 
-:::{.solution}
+::: {.solution}
 
 **Part 1**: 
 See Spring 2021.1 above.

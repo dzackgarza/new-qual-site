@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BLV6F
 kind: definition
-title: Cyclotomic Polynomials
+title: Cyclotomic polynomials
 classification:
   areas:
   - algebra
@@ -14,15 +14,16 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-Let $\zeta_n = e^{2\pi i/n}$, then the **$n$th cyclotomic polynomial** is given by
+::: {.definition}
+Let $n\geq 1$ and $\zeta_n \coloneqq e^{2\pi i/n}\in\CC$.
+The \dfn{$n$th cyclotomic polynomial} is the product over the primitive $n$th roots of unity
 $$
-\Phi_{n}(x)=\prod_{k=1 \atop (j, n)=1}^{n}\left(x- \zeta_n^k\right) \in \ZZ[x]
-,$$
+\Phi_{n}(x) \coloneqq \prod_{\substack{1\leq k\leq n \\ \gcd(k, n)=1}}\left(x- \zeta_n^k\right) \in \CC[x].
+$$
+:::
 
-which is a product over primitive roots of unity.
-It is the unique irreducible polynomial which is a divisor of $x^n - 1$ but *not* a divisor of $x^k-1$ for any $k<n$.
-
-
-Note that $\deg \Phi_n(x) = \phi(n)$ for $\phi$ the totient function.
+::: {.proposition}
+Let $n\geq 1$.
+Then $\Phi_n(x)$ lies in $\ZZ[x]$, is monic of degree $\phi(n)$, where $\phi$ is [[D-JX3YC|Euler's totient function]], and is [[D-BVMTZ|irreducible]] in $\QQ[x]$.
+Moreover, $\Phi_n$ is the unique monic irreducible polynomial in $\QQ[x]$ that divides $x^n - 1$ and does not divide $x^k-1$ for any $1\leq k<n$.
 :::

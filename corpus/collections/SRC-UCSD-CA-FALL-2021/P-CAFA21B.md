@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K = \{ z \in \mathbb{C} : |z| \leq 3,\, |z-1| \geq 1,\, |z+1| \geq 1 \}$.
 
 (i) True/false: every holomorphic function in a neighborhood of $K$ is the local uniform limit on $K$ of a sequence of polynomials.
@@ -24,7 +24,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 (i) False. The complement of $K$ has two bounded components, namely the open
 unit disks centered at $1$ and $-1$. For instance,
 \[

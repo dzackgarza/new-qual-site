@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional inner product space and $\alpha,\beta\colon V\to V$ two positive definite self-adjoint linear maps.
 We write $\alpha^{1/2}$ to denote the unique positive definite square-root of $\alpha$; you may assume without proof that this exists.
 

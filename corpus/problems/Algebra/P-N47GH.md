@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Write the complete character table for the symmetric group $S_4$, giving the construction and justification for each irreducible character.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes of $S_4$ are indexed by cycle type:
 \[
 1^4,\quad 2\,1^2,\quad 2^2,\quad 3\,1,\quad 4,

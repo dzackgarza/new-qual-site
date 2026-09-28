@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Construct a $2\times2$ matrix $A$ over $F[x]$ whose cokernel is
 \[
 F[x]\oplus F.

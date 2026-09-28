@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X = S^1 \vee S^1$ be the figure-of-eight space.
 Draw pictures of the covers of $X$ corresponding to the subgroups $\langle abab \rangle$ and $\langle ab, ba \rangle$.
 :::

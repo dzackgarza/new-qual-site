@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Find all entire functions with have poles at $\infty$.
 :::
 

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-MORJAC
 kind: proposition
 title: The jacobian criterion for smoothness
+slogan: 'For a pure-codimension-$r$ affine variety over $\kbar$, smoothness at a point is exactly Jacobian rank $r$.'
 classification:
   areas:
   - algebraic-geometry

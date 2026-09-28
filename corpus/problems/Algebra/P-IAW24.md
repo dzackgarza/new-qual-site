@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Which numbers are constructible?
 Give an example of a non-constructible number whose degree is nevertheless a power of 2.
 :::

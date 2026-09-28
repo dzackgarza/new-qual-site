@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 \Omega=\mathbb C\setminus(-\infty,-1/4].

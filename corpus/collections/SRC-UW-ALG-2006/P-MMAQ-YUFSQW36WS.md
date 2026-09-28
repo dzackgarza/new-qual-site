@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be the group of matrices of the form `\begin{align*}
 \begin{pmatrix}
   1 & a & b\\

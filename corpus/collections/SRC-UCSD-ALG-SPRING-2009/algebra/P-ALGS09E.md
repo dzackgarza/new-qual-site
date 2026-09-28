@@ -24,7 +24,7 @@ audit:
   note: Verified both directions using extension of F-embeddings in a finite Galois extension and the fixed-field identity E^(gHg^-1)=g(E^H).
 ---
 
-::: problem
+::: {.problem}
 Let $E/F$ be a Galois extension and let $K$, $L$ be intermediate fields.
 Show that $K$ and $L$ are $F$-isomorphic (i.e.\ there exists an isomorphism from $K$ to $L$ which is the identity on $F$) if and only if the subgroups of $G = \operatorname{Gal}(E/F)$ corresponding to $K$ and $L$ are conjugate in $G$.
 :::

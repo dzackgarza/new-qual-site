@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a $\sigma$-finite Radon measure on an LCH space $X$, and $\varphi$ a positive continuous function on $X$.
 Show that $\nu(E) := \int_E \varphi\,d\mu$ defines a Radon measure $\nu$ on $X$.
 
@@ -31,7 +31,7 @@ Hint: First consider the positive linear functional $I(f) := \int f\varphi\,d\mu
 :::
 
 
-::: solution
+::: {.solution}
 Define
 \[
 I:C_c(X)\to\mathbb R,

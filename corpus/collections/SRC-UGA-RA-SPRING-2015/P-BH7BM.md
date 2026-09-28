@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal H$ be a Hilbert space.
 
 1. Let $x\in \mathcal H$ and $\theset{u_n}_{n=1}^N$ be an orthonormal set.
@@ -35,7 +35,7 @@ Let $\mathcal H$ be a Hilbert space.
   $$
 2. Conclude that finite dimensional subspaces of $\mathcal H$ are always closed.
 :::
-::: solution
+::: {.solution}
 <1>1. $\hat x = \sum_{n=1}^N \inner{x}{u_n} u_n$ satisfies $x - \hat x \perp u_m$ for every $m$.
     ::: proof
     $\inner{x - \hat x}{u_m} = \inner{x}{u_m} - \sum_n \inner{x}{u_n}\inner{u_n}{u_m} = \inner{x}{u_m} - \inner{x}{u_m} = 0$, using orthonormality $\inner{u_n}{u_m} = \delta_{nm}$.

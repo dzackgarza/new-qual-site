@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State the formula for a conformal map from the unit disk onto the interior of a polygon whose angles are $(2-\beta_i)\pi$.
 :::
 
-::: solution
+::: {.solution}
 Let $\zeta_1,\dots,\zeta_n\in \partial\mathbb D$ be the prevertices corresponding to the vertices of the polygon. If the interior angle at the $i$th vertex is
 \[
 \alpha_i\pi=(2-\beta_i)\pi,

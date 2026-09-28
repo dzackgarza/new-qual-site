@@ -13,10 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t} \dt
-.\]
-
-
+::: {.definition}
+For $z\in\CC$ with $\operatorname{Re}z>0$, the \dfn{gamma function} is
+$$
+\Gamma(z)\coloneqq\int_0^\infty t^{z-1}e^{-t}\dt,
+$$
+where $t^{z-1}\coloneqq e^{(z-1)\log t}$ for $t>0$, with $\log$ the real natural logarithm.
 :::

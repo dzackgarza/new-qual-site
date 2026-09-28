@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a set equipped with the discrete topology, and let $X^* = X \cup \{\infty\}$ be the one-point compactification of $X$.
 Let $\mu$ be a Radon measure on $X^*$ and define the support of $\mu$ as
 $$
@@ -25,7 +25,7 @@ $$
 Prove that $\operatorname{supp}(\mu)$ is countable.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\operatorname{supp}(\mu)$ is at most countable for any Radon measure $\mu$ on the one-point compactification $X^* = X \cup \{\infty\}$ of a discrete space $X$.
 
 <1>1. Finiteness of the Radon measure:

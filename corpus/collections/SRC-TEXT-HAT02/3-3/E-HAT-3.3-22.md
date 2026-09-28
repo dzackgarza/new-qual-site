@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $H_c^n(X \times \mathbb{R}; G) \approx H_c^{n-1}(X; G)$ for all $n$.
+:::
 
 ::: {.solution}
 Under the standing locally compact Hausdorff hypotheses for compactly supported cohomology,

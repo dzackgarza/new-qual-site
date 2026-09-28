@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 24. Let $\gamma$ be a smooth curve in $\mathbb { C }$ parametrized by $z ( t ) : [ a , b ] \to \mathbb { C }$ . Let $\gamma ^ { - }$ denote the curve with the same image as $\gamma$ but with the reverse orientation.
     Prove that for any continuous function $f$ on γ
 
@@ -24,7 +24,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 If $\gamma$ is parametrized by $z:[a,b]\to\mathbb C$, then the reverse curve is parametrized by
 \[
 z^-(t)=z(a+b-t),\qquad a\le t\le b.

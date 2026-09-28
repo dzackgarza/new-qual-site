@@ -16,7 +16,10 @@ review: draft
 ---
 
 ::: {.definition}
-The smallest number $n$ such that $\sum_{j=1}^n 1_R = 0_R$.
+Let $R$ be a [[D-GURUB|ring]].
+If there is an integer $n\geq 1$ with $\sum_{j=1}^n 1_R = 0_R$, the \dfn{characteristic} of $R$ is the smallest such $n$; otherwise the characteristic of $R$ is $0$.
+:::
 
-Equivalently, the kernel $n\ZZ$ of the unique map $\ZZ\to R$.
+::: {.remark}
+The characteristic of $R$ is the nonnegative generator $n$ of the kernel $n\ZZ$ of the unique ring homomorphism $\ZZ\to R$: an integer $m\geq 1$ lies in the kernel exactly when $\sum_{j=1}^m 1_R=0_R$, and the kernel is $0$ exactly when no such $m$ exists.
 :::

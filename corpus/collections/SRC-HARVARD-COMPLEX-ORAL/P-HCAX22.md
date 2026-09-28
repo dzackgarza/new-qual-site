@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine all conformal automorphisms of the unit disk.
 :::
 
-::: solution
+::: {.solution}
 For $a\in\mathbb D$, define
 \[
 \phi_a(z)=\frac{z-a}{1-\overline a z}.

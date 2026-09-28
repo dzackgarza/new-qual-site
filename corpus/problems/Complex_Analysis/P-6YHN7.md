@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$.
 
 Show that 
@@ -26,7 +26,7 @@ Show that
 > The first part of this problem asks for a statement of the Schwarz lemma.
 :::
 
-::: solution
+::: {.solution}
 The statement is false as written. Take $\Omega=\DD$,
 \[
 f(z)=\frac z2,

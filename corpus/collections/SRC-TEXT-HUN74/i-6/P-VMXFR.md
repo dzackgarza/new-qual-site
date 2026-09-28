@@ -28,7 +28,7 @@ audit:
 Show that $S_n \cong \left\langle (12), (123\cdots n)\right\rangle$ and also that $S_n \cong \left\langle (12), (23\cdots n)\right\rangle$
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \sigma=(1\ 2\ \cdots\ n),\qquad \tau=(2\ 3\ \cdots\ n).
@@ -37,7 +37,7 @@ In each case it is enough to show that the indicated permutations generate all
 transpositions of a standard generating set for $S_n$.
 
 <1>1. The permutations $(12)$ and $\sigma$ generate $S_n$.
-::: proof
+::: {.proof}
 For $0\le k\le n-2$, conjugation gives
 \[
 \sigma^k(12)\sigma^{-k}=(k+1\ k+2).
@@ -53,7 +53,7 @@ Every permutation is a product of adjacent transpositions, so
 :::
 
 <1>2. The permutations $(12)$ and $\tau$ generate $S_n$.
-::: proof
+::: {.proof}
 For $0\le k\le n-2$,
 \[
 \tau^k(12)\tau^{-k}=(1\ \tau^k(2)).

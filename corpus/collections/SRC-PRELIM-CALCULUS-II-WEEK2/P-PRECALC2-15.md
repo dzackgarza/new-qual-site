@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-15
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 15'
+title: Telescoping sum $\sum_{n\ge1}\frac{m}{n(n+m)}$
 classification:
   areas:
   - prelim

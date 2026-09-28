@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $\alpha/F$ is algebraic $\iff F(\alpha)/F$ is a finite extension.
 :::
 

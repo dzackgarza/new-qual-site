@@ -25,7 +25,7 @@ audit:
   note: Computed the symmetrizer trace as a complete symmetric function, used Pieri twice for the Schur coefficient, and used Schur-Weyl duality plus the hook-content formula for the Specht multiplicity.
 ---
 
-::: problem
+::: {.problem}
 For $n\ge 1$, let
 \[
 p_n=\frac{1}{n!}\sum_{\sigma\in S_n}\sigma,

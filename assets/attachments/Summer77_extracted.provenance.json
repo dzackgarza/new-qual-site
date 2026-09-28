@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/Summer77.pdf",
+  "source_pdf_sha256": "72bcfb0bba66d880c788db461576fff847ab3887faa07c7deb3f66664d4be4a5",
+  "extracted_markdown": "assets/attachments/Summer77_extracted.md",
+  "extracted_markdown_sha256": "705cc6667a1438ed6a4ebaed2295222d2424dd402c918f31bf1f9704f6bf81a4",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Summer77.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Summer77.md",
+  "old_unknown_provenance_sha256": "705cc6667a1438ed6a4ebaed2295222d2424dd402c918f31bf1f9704f6bf81a4",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Summer 1977, containing Problems 1 through 20 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output reproduces the retained extraction exactly. Problems 8, 9, and 20 retain localized extraction defects: spaced digits in the constants 85 and 77, a garbled 3-by-3 matrix-size glyph, and sign noise in the first displayed infinite-system equation. Existing source-checked cards record the localized recoveries. No alternate OCR, parser, PDF-render, or model-vision fallback was used in this intake.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SUMMER-1977 collection represents all 20 source positions with 20 source-local cards. All 21 tracked collection paths (index plus cards) are byte-identical to HEAD, so no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}

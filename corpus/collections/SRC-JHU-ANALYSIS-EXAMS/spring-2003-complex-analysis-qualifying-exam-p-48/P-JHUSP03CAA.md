@@ -32,17 +32,18 @@ audit:
   note: "Gave the explicit polynomial and principal parts, proved a nonvanishing collar at the unit circle, and replaced implicit curved-boundary gluing by a local fractional coordinate and a uniform translated-boundary estimate."
 ---
 
+::: {.problem}
 Let $\Delta=\{z\in\mathbb C:|z|<1\}$.
 
 (a) Let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic with a pole at infinity.
 Show that $f$ must be a rational function.
 
 (b) Use the above to prove the following: if $f : \Delta \to \mathbb{C}$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $|f(z)| = 1$ for all $|z| = 1$, then $f(z)$ is the restriction of a rational function.
+:::
 
-
-::: solution
+::: {.solution}
 <1>1. A meromorphic function on the sphere is rational; in particular, part (a) holds.
-::: proof
+::: {.proof}
 Suppose $f$ is meromorphic on $\mathbb C$ and has either
 a pole or a removable singularity at infinity. Then it
 has no finite pole for $|z|>R$, for some $R>0$. Its
@@ -80,7 +81,7 @@ case at infinity that will be needed in (b).
 :::
 
 <1>2. The boundary condition in part (b) produces a meromorphic function on the sphere.
-::: proof
+::: {.proof}
 Let $f$ be as in part (b). Define for $|z|>1$
 $$
 F(z)=\frac{1}{\overline{f(1/\overline z)}}.
@@ -157,7 +158,7 @@ meromorphic on the Riemann sphere.
 :::
 
 <1>3. The reflected extension is rational, proving part (b).
-::: proof
+::: {.proof}
 By step <1>1, the meromorphic sphere function $F$ from step <1>2 is rational.
 On the unit disk its definition is exactly the original $f$. Therefore $f$ is
 the restriction to $\Delta$ of a rational function, as required.

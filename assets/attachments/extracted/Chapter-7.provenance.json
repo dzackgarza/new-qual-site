@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Chapter-7.pdf",
+  "source_pdf_sha256": "51c2a0256829801b31a7745542b87691fbdeac23a562bf6663c699b31a4a00b2",
+  "extracted_markdown": "assets/attachments/extracted/Chapter-7.md",
+  "extracted_markdown_sha256": "abeaf5d465410a67742a74692073fda20c94e9d2b3ea672a170f43f7b6780bf6",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 11,
+  "command": "just ocr-pdf assets/attachments/Chapter-7.pdf assets/attachments/extracted/Chapter-7.md",
+  "generated_at": "2026-09-16"
+}

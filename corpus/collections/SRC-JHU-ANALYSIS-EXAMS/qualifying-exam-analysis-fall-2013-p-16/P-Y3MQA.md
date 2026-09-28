@@ -24,15 +24,17 @@ audit:
   note: "Checked the disk normalization, both reverse-triangle estimates, positivity of the denominators, and the lower bound when its numerator is negative."
 ---
 
+::: {.problem}
 Let $D = \{z \in \mathbb{C} : |z| < 1\}$ and $f : D \to D$ be a holomorphic function.
 Prove
 
 $$\frac{|f(0)| - |z|}{1 + |f(0)| \cdot |z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)| \cdot |z|}, \quad \forall z \in D.$$
+:::
 
-::: solution
+::: {.solution}
 <1>1. Normalization at the origin gives a Schwarz-lemma estimate.
 
-::: proof
+::: {.proof}
 Put $c=f(0)$ and define
 $$
 H(z)=\frac{f(z)-c}{1-\overline c f(z)}.
@@ -52,7 +54,7 @@ $$
 
 <1>2. The triangle inequalities give both requested bounds.
 
-::: proof
+::: {.proof}
 For fixed $z\in D$, write $a=|c|$, $b=|f(z)|$ and
 $r=|z|$. Step <1>1 implies
 $$

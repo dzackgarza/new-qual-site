@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 8. Suppose $\hat { f }$ has compact support contained in $[ - M , M ]$ and let $\begin{array} { r } { f ( z ) = \sum _ { n = 0 } ^ { \infty } a _ { n } z ^ { n } } \end{array}$ Show that
 
 $$
@@ -35,7 +35,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Assume $\operatorname{supp}\widehat f\subset[-M,M]$. Fourier inversion gives, for real $x$ and hence by analytic continuation for complex $z$,
 \[
 f(z)=\int_{-M}^{M}\widehat f(\xi)e^{2\pi i\xi z}\,d\xi.

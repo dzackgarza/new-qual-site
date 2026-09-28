@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2005
 ---
-
-::: remark
-Exam #4 is the complete statement [[P-LLCQX]] (the paper asks $H_*$; the card also asks $\pi_1$). Exam #5 lists [[P-8TS01]] (the figure's arrows are the common orientation $a^5$).
-:::

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-1
 kind: theorem
-title: 'Theorem 6.1: Uniform limits of continuous functions are continuous'
+title: Uniform limits of continuous functions are continuous
+slogan: 'Uniform convergence preserves continuity.'
 classification:
   areas:
   - real-analysis
@@ -15,5 +16,7 @@ review: draft
 ---
 
 ::: {.theorem}
-If $\{f_n\}$ is a sequence of continuous functions on $E$ and $f_n\to f$ uniformly on $E$, then $f$ is continuous on $E$.
+Let $E$ be a metric space, and let $f_n\colon E\to\RR$ for $n\geq1$ and $f\colon E\to\RR$ be functions.
+If each $f_n$ is continuous on $E$ and $f_n\to f$ [[D-RA-WORKSHOP-D7-CONVERGENCE|uniformly]] on $E$, then $f$ is continuous on $E$.
+[@Rud76].
 :::

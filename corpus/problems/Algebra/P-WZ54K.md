@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that
 \[
 x^{p^n}-x
@@ -23,7 +23,7 @@ x^{p^n}-x
 is the product of all monic irreducible polynomials in $\FF_p[x]$ whose degrees divide $n$.
 :::
 
-::: solution
+::: {.solution}
 Let $f\in\FF_p[x]$ be monic irreducible of degree $d$, and let $\alpha$ be one of its roots. Then
 \[
 \FF_p(\alpha)\cong\FF_{p^d}.

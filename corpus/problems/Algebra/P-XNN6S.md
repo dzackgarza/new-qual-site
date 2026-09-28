@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a simple module and let
 \[
 \phi:A\to A
@@ -22,7 +22,7 @@ Let $A$ be a simple module and let
 be a module endomorphism. Prove that either $\phi=0$ or $\phi$ is an isomorphism.
 :::
 
-::: solution
+::: {.solution}
 Both
 \[
 \ker\phi

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Construct a $2$-dimensional connected CW complex $X$ with one $0$-cell and one $2$-cell, whose fundamental group has the presentation:
 $$
 \pi_1(X) = \langle a, b, c \mid abca = cb \rangle.

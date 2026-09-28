@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-QLRXX
 kind: fact
-title: Growth Rates of Common Functions
+title: Growth rates of common functions
+slogan: 'Factorials outrun exponentials, exponentials outrun powers, and powers outrun logarithms.'
 prompts:
 - How do $n!$, $c^n$, $n^c$, $n\log n$, $n$ and $\log n$ rank by growth rate?
 classification:
@@ -16,10 +17,9 @@ review: draft
 ---
 
 ::: {.fact}
-For $c>1$,
+For real sequences $a(n)$, $b(n)$ that are positive for all sufficiently large $n$, write $a\prec b$ if $a(n)/b(n)\to 0$ as $n\to\infty$.
+For every real $c>1$,
 $$
-n! > c^n > n^{c} > n\log(n) >  n > \log(n) > \log(\log(n)) > \cdots > 1
-.$$
-
-![](https://i.imgur.com/M9u3lOr.png)
+1 \prec \log(\log n) \prec \log n \prec n \prec n\log n \prec n^{c} \prec c^n \prec n!.
+$$
 :::

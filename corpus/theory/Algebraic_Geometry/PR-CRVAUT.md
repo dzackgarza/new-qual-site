@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CRVAUT
 kind: proposition
 title: Automorphisms of a curve of genus $g \geq 2$
+slogan: 'Curves of genus at least $2$ have finite automorphism groups; in characteristic zero, Hurwitz bounds their order by $84(g-1)$.'
 classification:
   areas:
   - algebraic-geometry
@@ -23,6 +24,7 @@ prompts:
 - State the sharp bound on $\size \Aut C$ and the curve that attains it.
 - Where do the automorphisms of a genus-$3$ curve come from?
 - Does the general curve of genus $g \geq 3$ have a nontrivial automorphism?
+- What is Hurwitz's theorem?
 ---
 
 ::: {.proposition}
@@ -36,7 +38,7 @@ The general curve of genus $g \geq 3$ has $\Aut C = 1$.
 :::
 
 ::: {.remark}
-Finiteness has a one-line reason and an argument.
+Finiteness follows from the vanishing of infinitesimal automorphisms together with a projective realization of the automorphism group.
 The reason: $T_C \cong \omega_C\dual$ has degree $2-2g < 0$, so $h^0(T_C) = 0$ and there are no infinitesimal automorphisms; $\Aut C$ is an algebraic group of dimension $0$.
 The argument that makes it a *finite* group rather than merely $0$-dimensional runs through the canonical embedding: $\omega_C$ is intrinsic, so any automorphism carries $\abs{K}$ to itself and acts on $\PP^{g-1} = \PP(H^0(\omega_C)\dual)$.
 For non-hyperelliptic $C$ the canonical map is an embedding, so $\Aut C$ is exactly the closed subgroup of $\PGL_g$ stabilizing the canonical curve, hence an algebraic group of dimension $0$ in a variety, hence finite.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-P6XCN
 kind: definition
-title: Refinement
+title: Refinement of a cover
 classification:
   areas:
   - topology
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A cover $\mcv \covers X$ is a **refinement** of $\mcu \covers X$ iff for each $V\in \mcv$ there exists a $U\in\mcu$ such that $V\subseteq U$.
+Let $X$ be a topological space and let $\mathcal U$ and $\mathcal V$ be [[D-AOJG3|covers]] of $X$.
+The cover $\mathcal V$ is a \dfn{refinement} of $\mathcal U$ if for every $V\in\mathcal V$ there exists $U\in\mathcal U$ with $V\subseteq U$.
 :::

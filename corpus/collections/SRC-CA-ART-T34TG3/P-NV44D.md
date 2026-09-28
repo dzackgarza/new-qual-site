@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For $a> 0$, evaluate
 \[
 \int_0^{\pi/2} \frac{d\theta}{a + \sin^2 \theta}
 \]
 :::
 
-::: solution
+::: {.solution}
 Set $t=\tan\theta$. Then
 \[
 \sin^2\theta=\frac{t^2}{1+t^2},

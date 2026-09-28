@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a \in \mathbb{R}$ with $0<a<3$. Evaluate 
 \[
 \int_{0}^{\infty} \frac{x^{a-1}}{1+x^{3}} d x
@@ -23,7 +23,7 @@ Let $a \in \mathbb{R}$ with $0<a<3$. Evaluate
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $I$ for the integral, $\zeta_3\da e^{2\pi i\over 3}, \omega_3 \da e^{i\pi\over 3}$.
 Take a indented semicircular wedge $\Gamma$ at an angle of $2\pi/3$, noting the pole at $\omega_3 \da e^{i \pi \over 3}$:
 

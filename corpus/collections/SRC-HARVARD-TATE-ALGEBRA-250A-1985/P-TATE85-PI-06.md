@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-06
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 6"
+title: Prime ideals of $\mathbb C[X,Y,Z]$ and a prime ideal needing three generators
 classification:
   areas:
   - algebra

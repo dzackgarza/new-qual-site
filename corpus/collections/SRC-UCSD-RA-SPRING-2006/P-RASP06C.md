@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\{a_k\}$ be a sequence of complex numbers such that $\sum_{k=0}^{\infty} a_k$ is convergent.
 Set $S_m^n := \sum_{i=m}^{n} a_i$.
 
@@ -40,9 +40,9 @@ $$
 Hint: Estimate the left hand side of the formula in (b).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the finite summation-by-parts identity.
-::: proof
+::: {.proof}
 Since
 \[
 a_k=S_m^k-S_m^{k-1}
@@ -60,7 +60,7 @@ This is the desired formula.
 :::
 
 <1>2. Rewrite the Abel sum using ordinary partial sums.
-::: proof
+::: {.proof}
 Let
 \[
 A_j:=\sum_{k=0}^j a_k,
@@ -81,7 +81,7 @@ The series on the left converges absolutely because the convergent series $\sum 
 :::
 
 <1>3. Pass to the boundary $x\uparrow1$.
-::: proof
+::: {.proof}
 Because
 \[
 (1-x)\sum_{j=0}^\infty x^j=1,

@@ -25,7 +25,7 @@ audit:
   note: Verified the Sylow-11 count for n<10 and the coset-action reduction through a solvable 2-group kernel and an image of order 2^r*11 with r at most 8.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $2^n \cdot 11$ for some $n \geq 0$.
 Prove that $G$ is solvable.
 (Hint: Consider the cases $n < 10$ and $n \geq 10$ separately.

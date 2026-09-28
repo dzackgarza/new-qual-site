@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What are all the groups of order 12 up to isomorphism?
 (2) Can a group of order 12 have two non-isomorphic subgroups of the same order?
 :::
 
-::: solution
+::: {.solution}
 There are five groups of order $12$ up to isomorphism:
 \[
 C_{12},\qquad C_6\times C_2,\qquad A_4,\qquad D_{12},\qquad \operatorname{Dic}_3.

@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define analytic continuation and prove its uniqueness.
 :::
 
-::: solution
+::: {.solution}
 Let $U,V\subset\mathbb C$ be domains, let $f$ be holomorphic on $U$, and let $g$ be holomorphic on $V$. We say that $g$ is an analytic continuation of $f$ to $V$ if there is a nonempty connected open set
 \[
 W\subset U\cap V

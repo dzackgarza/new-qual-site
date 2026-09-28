@@ -21,7 +21,7 @@ Find all cube roots of $2-2i$ and express them in the standard form $a + bi$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Write $2-2i$ in polar form as
 \[
 2-2i=2\sqrt2\,e^{-i\pi/4}.
@@ -74,5 +74,4 @@ Here the argument is $225^\circ$, and
 <1>6. These are all the cube roots of $2-2i$.
 ::: {.proof}
 The equation $z^3=2-2i$ has degree $3$, and <1>2 gives three distinct roots.
-:::
 :::

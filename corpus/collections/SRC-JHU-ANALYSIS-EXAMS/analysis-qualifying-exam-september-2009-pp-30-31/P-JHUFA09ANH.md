@@ -25,6 +25,7 @@ audit:
   note: "Constructed a conjugate after lifting to the left half-plane, proved that the period is purely imaginary and constant, and descended the corrected periodic function using local logarithm branches."
 ---
 
+::: {.problem}
 8. Let h be a harmonic function on the punctured disk
 
 $$
@@ -32,8 +33,9 @@ U : = \left\{ z \in \mathbb { C } : 0 < | z | < 1 \right\} .
 $$
 
 Show that there exists a constant $c \in \mathbb { R }$ and a holomorphic function f on U such that $\mathrm { R e } f ( z ) = h ( z ) + c \log | z |$ for all $z \in U$
+:::
 
-::: solution
+::: {.solution}
 Let $L=\{w\in\mathbb C:\operatorname{Re}w<0\}$.
 The exponential maps $L$ onto $U$, and two points of
 $L$ have the same exponential exactly when their difference
@@ -41,7 +43,7 @@ is $2\pi i k$ for an integer $k$.
 
 <1>1. The lifted harmonic function is the real part of a holomorphic function on $L$.
 
-::: proof
+::: {.proof}
 Define $\widetilde h(w)=h(e^w)$. Composition with the
 holomorphic map $w\mapsto e^w$ preserves harmonicity:
 the chain rule gives
@@ -62,7 +64,7 @@ than assuming a conjugate on the punctured disk.
 
 <1>2. A real linear term removes the period of this conjugate.
 
-::: proof
+::: {.proof}
 The function $A(w)=H(w+2\pi i)-H(w)$ is holomorphic on $L$.
 Since $e^{w+2\pi i}=e^w$, it has real part zero. The
 Cauchy–Riemann equations then force its imaginary part
@@ -78,7 +80,7 @@ every translation by $2\pi ik$, $k\in\mathbb Z$.
 
 <1>3. The periodic holomorphic function descends to the desired function on $U$.
 
-::: proof
+::: {.proof}
 For $z\in U$, choose any $w\in L$ with $e^w=z$ and
 define $f(z)=G(w)$. Any two choices differ by $2\pi ik$,
 so step <1>2 makes this definition independent of the choice.

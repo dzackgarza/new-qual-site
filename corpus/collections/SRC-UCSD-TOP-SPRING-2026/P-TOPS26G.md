@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the cohomology ring of $\mathbb{CP}^n$.
 Show the following statements are equivalent:
 

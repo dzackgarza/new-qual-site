@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f_1,\ldots,f_n$ be harmonic on the unit disk and continuous on its closure.
 Show that no linear combination of the $f_i$ can be negative on the boundary and positive at an interior point.
 :::

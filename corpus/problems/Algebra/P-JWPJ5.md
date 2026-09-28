@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) How many non-isomorphic irreducible complex representations does the symmetric group $S_n$ have?
 (2) What classical function in mathematics does this number equal, and how are the irreducible representations explicitly indexed?
 :::
 
-::: solution
+::: {.solution}
 For a finite group over $\mathbb C$, the number of isomorphism classes of irreducible representations equals the number of conjugacy classes. In $S_n$, two permutations are conjugate exactly when they have the same cycle type.
 
 A cycle type is precisely a partition

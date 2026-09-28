@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find all entire functions $f$ satisfying
 \[
 \abs{f(z)} \geq \abs{z} + 1 &&\forall z\in \CC
@@ -22,7 +22,7 @@ Find all entire functions $f$ satisfying
 
 :::
 
-:::{.solution}
+::: {.solution}
 The inequality implies $f$ has no zeros, so $g(z) \da 1/f(z)$ is entire.
 Moreover it is bounded on $\CC$, since
 \[

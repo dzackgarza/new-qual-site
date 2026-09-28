@@ -17,11 +17,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Determine all entire functions $f: \mathbb{C} \to \mathbb{C}$ for which $|f(z)| \le |z|^2$ for all $z \in \mathbb{C}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine all entire functions $f(z)$ satisfying $|f(z)| \le |z|^2$ for all $z \in \mathbb{C}$.
 
 <1>1. Vanishing of coefficients $a_n$ for $n \ge 3$ via Cauchy estimates:

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider complex-valued square matrices $A$ satisfying:
 
 - $A$ has exactly two distinct eigenvalues of $-2$ and $-3$, with algebraic multiplicities of $6$ and $1$, respectively;

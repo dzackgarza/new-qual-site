@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the polynomial ring $R := \mathbb{Q}[x, y]$ and make $\mathbb{Q}$ an $R$-module via the zero actions of $x$ and $y$.
 Compute for all $i$
 $$

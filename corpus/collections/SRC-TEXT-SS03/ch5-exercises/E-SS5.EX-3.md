@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3. Show that if $\tau$ is fixed with Im $( \tau ) > 0$ , then the Jacobi theta function
 
 $$
@@ -31,7 +31,7 @@ is of order 2 as a function of $z .$ . Further properties of $\Theta$ will be st
 [Hint: $- n ^ { 2 } t + 2 n | z | \leq - n ^ { 2 } t / 2$ when $t > 0$ and $n \geq 4 | z | / t . ]$
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 \tau=u+it,

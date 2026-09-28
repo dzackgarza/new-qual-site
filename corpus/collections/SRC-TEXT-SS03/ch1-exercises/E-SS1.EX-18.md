@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Let $f$ be a power series centered at the origin. Prove that $f$ has a power-series expansion around every point in its disc of convergence.
 :::
 

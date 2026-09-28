@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine if the following statements are True or False.
 If True, give a brief proof.
 If False, give a counterexample or prove your assertion otherwise.
@@ -33,7 +33,7 @@ If every subsequence of $\{x_n\}_{n=1}^{\infty}$ has a subsequence that converge
 For any two points $a, b \in G$, there exists an automorphism of $G$ (i.e.\ an analytic bijection of $G$ onto itself) sending $a$ to $b$.
 :::
 
-::: solution
+::: {.solution}
 **(a) False.** Consider
 \[
 f(z)=\frac1{1+z}=\sum_{n=0}^\infty(-1)^n z^n,

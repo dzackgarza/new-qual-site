@@ -24,7 +24,7 @@ audit:
   note: "Verified existence of the automorphisms, exhaustiveness of the ten subgroups, invariance and degrees of all fixed-field generators, and every normality decision."
 ---
 
-::: problem
+::: {.problem}
 This question asks you to describe the splitting field $K$ of the polynomial $x^4 - 5$ over $\mathbb{Q}$.
 
 (a) What is $[K:\mathbb{Q}]$?
@@ -36,7 +36,7 @@ This question asks you to describe the splitting field $K$ of the polynomial $x^
 (d) Which of the fixed fields in part (c) is Galois over $\mathbb{Q}$?
 :::
 
-::: solution
+::: {.solution}
 Put $a=\sqrt[4]{5}>0$. The splitting field is $K=\mathbb Q(a,i)$,
 of degree $8$, and its Galois group is dihedral of order $8$.
 Use generators
@@ -60,7 +60,7 @@ The complete subgroup and fixed-field list is as follows.
 
 <1>1. The field degree and group presentation are as stated.
 
-::: proof
+::: {.proof}
 The four roots are $a,ia,-a,-ia$. They generate $\mathbb Q(a,i)$,
 since their ratio $(ia)/a$ is $i$. Eisenstein's criterion at $5$
 makes $x^4-5$ irreducible over $\mathbb Q$, so $\mathbb Q(a)$
@@ -91,7 +91,7 @@ dihedral group of order $8$.
 
 <1>2. The table contains every subgroup, exactly once.
 
-::: proof
+::: {.proof}
 Let $R=\langle r\rangle$, a normal subgroup of index $2$.
 For $H\leq G$, the quotient map to $G/R$ has kernel $H\cap R$
 on $H$, so $[H:H\cap R]\leq2$.
@@ -113,7 +113,7 @@ give precisely the ten subgroups in the table.
 
 <1>3. Every field in the table is the indicated fixed field.
 
-::: proof
+::: {.proof}
 The Galois correspondence gives $[K^H:\mathbb Q]=8/|H|$ [@DF04].
 It suffices to show that the proposed generators are fixed by $H$
 and generate a field of this degree.
@@ -149,7 +149,7 @@ inclusions between fields reverse the inclusions of their subgroups.
 
 <1>4. Exactly the six fields marked Yes are Galois over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 An intermediate field $K^H$ is Galois over $\mathbb Q$ exactly
 when $H\lhd G$ [@DF04]. The trivial and whole subgroups are
 normal, as are all three subgroups of order $4$, since they

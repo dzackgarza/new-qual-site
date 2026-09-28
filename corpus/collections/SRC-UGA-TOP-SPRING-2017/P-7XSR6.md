@@ -25,7 +25,7 @@ audit:
   note: Verified the lift to the universal double cover and the contraction inside the complement of a lift of the omitted projective point.
 ---
 
-::: problem
+::: {.problem}
 Suppose that a continuous map $f : S^3 \times S^3 \to \RP^3$ is not surjective.
 
 Prove that $f$ is homotopic to a constant function.

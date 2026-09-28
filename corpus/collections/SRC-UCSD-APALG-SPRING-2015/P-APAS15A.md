@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $D_5 = \langle r, s : s^2 = r^5 = 1,\ srs = r^{-1} \rangle$ denote the group of symmetries of a regular pentagon.
 Find the character table of $D_5$.
 :::
 
-::: solution
+::: {.solution}
 The elements are
 \[
 1,r,r^2,r^3,r^4,s,sr,sr^2,sr^3,sr^4.

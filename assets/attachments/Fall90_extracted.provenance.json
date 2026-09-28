@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/Fall90.pdf",
+  "source_pdf_sha256": "9a0a717271059c67f75c9fc463c6c8d6dff4a10f6f8558ddb52e5a71925df219",
+  "extracted_markdown": "assets/attachments/Fall90_extracted.md",
+  "extracted_markdown_sha256": "09b436322374e80379c61c379e5fb93aab95caf8d4bc87ad4c72fb1f54de1756",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall90.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall90.md",
+  "card_comparison": "All eighteen top-level source problems are represented by source-local cards P-BKF90-1 through P-BKF90-18.",
+  "known_extractor_defects": [
+    "Problem 12 drops both arrows in the homomorphisms u,v:A->A; the card restores the domain and codomain from the deterministic sentence.",
+    "Several prose fragments have OCR spacing noise (for example 'and u' and 'as |z| tends to infinity') that does not change the mathematical statement."
+  ]
+}

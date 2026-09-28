@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define
 \[
 f(x,y)=
@@ -37,9 +37,9 @@ f(x,y)=
 Carefully show that $f\in L^1(\mathbb R^2)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Use Tonelli and compute the inner integral.
-::: proof
+::: {.proof}
 The function $f$ is nonnegative and measurable, so Tonelli's theorem gives
 \[
 \int_{\mathbb R^2}|f|\,d(x,y)
@@ -61,7 +61,7 @@ Hence
 :::
 
 <1>2. Check integrability at zero and infinity.
-::: proof
+::: {.proof}
 For $0<x\le1$,
 \[
 \frac{2}{x^{2/3}\sqrt{1+x^2}}

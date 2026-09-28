@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Use the Class Equation to prove that any finite $p$-group (a group of order $p^k$ for a prime $p$ and integer $k \ge 1$) has a non-trivial center.
 
 (b) Prove that any group of order $p^2$ (where $p$ is prime) is abelian.
@@ -25,7 +25,7 @@ review: draft
 (d) Write down exactly one representative from each isomorphism class of groups of order $5^2 \cdot 7^2$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove non-triviality of the center for $p$-groups via the class equation in (a), deduce abelianness of order $p^2$ in (b), establish direct product decomposition of order $5^2 \cdot 7^2$ via Sylow theory in (c), and enumerate isomorphism classes in (d).
 
 <1>1. Part (a): Finite $p$-groups have non-trivial centers.

@@ -49,7 +49,7 @@ Show that $f(x) = x - x^2/2$ maps $X$ into $X$ and is a shrinking map that is no
 (d) The result in (a) holds if $X$ is a complete metric space, such as $\mathbb{R}$; see the exercises of §43. The result in (b) does not: show that the map $f: \mathbb{R} \to \mathbb{R}$ given by $f(x) = [x + (x^2 + 1)^{1/2}]/2$ is a shrinking map that is not a contraction and has no fixed point.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the existence and uniqueness of fixed points for contractions and shrinking maps on compact metric spaces, and analyze explicit counterexamples on non-compact and non-contraction spaces.
 
 <1>1. Part (a): Contractions on compact metric spaces have a unique fixed point.

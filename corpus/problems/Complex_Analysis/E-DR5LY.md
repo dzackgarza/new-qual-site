@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Hadamard expansion of $\sin(\pi z)$.
 :::
 
 
-:::{.solution}
+::: {.solution}
 $\sin(\pi z)$ has order 1, and its zero set is $z_k = k$ for $k\in \ZZ$.
 So one can write
 \[

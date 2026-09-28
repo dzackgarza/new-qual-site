@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order 18 up to isomorphism.
 :::
 

@@ -24,19 +24,19 @@ audit:
   note: "Checked the coset stabilizer, both image-order divisibilities, and equality of the subgroup with the action kernel, including p=2."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group of order $n$ and let $p$ be the smallest prime dividing $n$.
 Show that any subgroup of $G$ of index $p$ is normal in $G$.
 :::
 
-::: solution
+::: {.solution}
 Let $H\leq G$ have index $p$.
 
 <1>1. Left multiplication on the $p$ left cosets of $H$ gives a
 homomorphism $\rho:G\to S_p$, and the stabilizer of the coset $H$
 is exactly $H$.
 
-::: proof
+::: {.proof}
 For $g\in G$, define $\rho(g)(aH)=gaH$. Equality of left cosets
 is preserved by left multiplication, so the map is well-defined.
 It is a permutation with inverse $\rho(g^{-1})$, and associativity
@@ -47,7 +47,7 @@ $g\in H$. In particular, $\ker\rho\subseteq H$.
 
 <1>2. The subgroup $H$ is the kernel of $\rho$, and is therefore normal.
 
-::: proof
+::: {.proof}
 Every permutation in $\rho(H)$ fixes the coset $H$, so it acts as
 a permutation of the other $p-1$ cosets. Thus $\rho(H)$ is a
 subgroup of $S_{p-1}$, and its order divides $(p-1)!$.

@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 \int_{[0, \infty]} {\log(x) \over (1+x^2)^2}\dx 
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Factor $(1+z^2)^2 = (z+i^2(z-i)^2$.
 Take a keyhole contour similar to the following:
 

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 - What does it mean for a family of sets to form a **basis** for a topology?
 :::
 

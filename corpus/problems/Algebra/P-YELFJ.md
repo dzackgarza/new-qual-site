@@ -32,7 +32,7 @@ Suppose that $I$ is an ideal in $R$ which is maximal among the set of annihilato
 Prove that $I$ is a **prime** ideal in $R$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 I=\operatorname{Ann}(\mu),

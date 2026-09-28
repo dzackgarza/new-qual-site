@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the Borsuk-Ulam theorem that if $n > m \geq 1$, then there is no map $f : S^n \to S^m$ which commutes with the antipodal map.
 :::
 

@@ -13,9 +13,9 @@ A locally free sheaf is a vector bundle written so that homological algebra appl
 
 [[T-MODVB]]
 
-Asked for the correspondence, give the sheaf of sections and the transition functions, and say which side each fact is easier on.
+The correspondence identifies locally free sheaves with vector bundles through sheaves of sections and transition functions.
 Kernels, cokernels, and cohomology are sheaf-side facts; fibres, ranks, and the geometry of a map are bundle-side facts.
-The dictionary is used in both directions constantly.
+The two descriptions emphasize different constructions and invariants.
 
 ## Rank one
 
@@ -25,3 +25,7 @@ The group structure is the whole reason rank $1$ is singled out.
 It connects to divisors — on a smooth variety $\Pic(X) \cong \Cl(X)$, the subject of [[../divisors/index|divisors]] — and to maps to projective space, since a line bundle with enough sections is a map to $\PP^n$ and the map is an embedding exactly when the bundle is very ample.
 
 $\Pic(\PP^n) = \ZZ$ is the computation everything is compared against, and it is recorded with the twists in [[algebraic-geometry/sheaves-of-modules/quasicoherence|quasicoherence and twisting]].
+
+## Vector bundles on the projective line
+
+[[T-BIRKGROTH]]

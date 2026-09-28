@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. The problem is to solve the diferential equation
 
 $$
@@ -84,7 +84,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Let the support of $f$ be contained in $[-R,R]$.
 
 For (a), since the defining integral is over a compact interval and its integrand is entire in $z$, differentiation under the integral sign shows that $\widehat f$ is entire. Because $f$ is $C^2$ with compact support, integration by parts twice gives, for $z\ne0$,

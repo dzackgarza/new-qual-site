@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give an $\varepsilon$-$\delta$ proof that $\lim_{x \to 2} \frac{1}{x^2 + 1} = \frac{1}{5}$.
 :::
 
-::: solution
+::: {.solution}
 We have
 \[
 \left|\frac1{x^2+1}-\frac15\right|

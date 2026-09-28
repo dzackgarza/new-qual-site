@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that for $n\ne6$,
 \[
 \operatorname{Aut}(S_n)=\operatorname{Inn}(S_n).
 \]
 :::
 
-::: solution
+::: {.solution}
 For $n=1,2$ the statement is immediate, so assume $n\ge3$.
 
 <1>1. Every automorphism sends transpositions to transpositions when $n\ne6$.

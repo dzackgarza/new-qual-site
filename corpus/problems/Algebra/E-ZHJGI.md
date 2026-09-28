@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 22. For $n>2$, let $\zeta_n$ be a primitive $n$th root of unity. Prove that
 \[
 [\QQ(\zeta_n+\zeta_n^{-1}):\QQ]=\frac{1}{2}\varphi(n),

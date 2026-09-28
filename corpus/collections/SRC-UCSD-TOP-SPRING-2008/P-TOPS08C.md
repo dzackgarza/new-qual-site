@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that there is no continuous map $f$ with the following properties:
 $$
 f : S^n \to S^m, \quad f(-x) = -f(x), \quad n > m \geq 1,

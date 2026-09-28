@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Find the eigenvalues and eigenvectors of the matrix $A = \begin{bmatrix} 1 & -2 \\ 3 & -4 \end{bmatrix}$.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial is
 \[
 \det(A-\lambda I)

@@ -9,11 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Re-transcribed from Chapter 4 review Question 2 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR) and checked against the source scans in assets/attachments/gre-math-ch4-review/, replacing the earlier chapter-4.pdf transcription.
 ---
 
 ::: {.problem}
-A population of bacteria grows at a rate proportional to the number present.
-The OCR extraction loses part of the numerical data in Question 2; use the preserved source scan as the authoritative statement.
+A population of bacteria grows at a rate proportional to the number present. After two hours, the population has tripled. After two more hours elapse, the population will have increased by a factor of $k$. What is the value of $k$?
 
-![Source scan for Chapter 4, page 1](../../../assets/attachments/gre-math-ch4-review/page-1.png)
+(A) $6$
+(B) $8$
+(C) $9$
+(D) $27$
+(E) $81$
 :::

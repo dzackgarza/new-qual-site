@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A, B \subseteq \mathbb{R}$ be Lebesgue measurable and suppose
 $$
 \{a+b:a\in A,\ b\in B\}\subseteq\mathbb R\setminus\mathbb Q.
@@ -32,7 +32,7 @@ Prove that either $m(A)=0$ or $m(B)=0$.
 :::
 
 
-::: solution
+::: {.solution}
 Suppose, toward a contradiction, that
 \[
 m(A)>0

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-2KEIE
 kind: proposition
-title: $L^1$ functions are finite almost everywhere.
+title: $L^1$ functions are finite almost everywhere
+slogan: 'Finite $L^1$ norm forces an integrable function to be finite almost everywhere.'
 classification:
   areas:
   - real-analysis
@@ -16,5 +17,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
+Let $m$ be Lebesgue measure on $\RR^n$ and let $f\colon\RR^n\to[-\infty,\infty]$ be [[D-DHFN4|measurable]] with $\int_{\RR^n}\abs{f}\,dm<\infty$.
+Then $m\qty{\theset{x\in\RR^n\suchthat \abs{f(x)} = \infty}} = 0$.
 :::

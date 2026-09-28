@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/Spring93.pdf",
+  "source_pdf_sha256": "1d562b860971679e82aae2de333ab7ceb2a9c86ce2b19dc407bf348896c40065",
+  "extracted_markdown": "assets/attachments/Spring93_extracted.md",
+  "extracted_markdown_sha256": "17176d119c587f83f93a68fc4b98cee20659f44bff22162765fa511ea060c276",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring93.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Spring93.md",
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1993, containing Problems 1-18 in source order.",
+  "card_reconciliation": "The existing complete collection SRC-BERKELEY-PRELIM-SPRING-1993 represents all eighteen source positions in order. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 9's strip-coordinate glyph is rendered as 'S z' in the deterministic extraction. The existing card preserves the coordinate as unrecovered rather than guessing Re z or Im z."
+  ]
+}

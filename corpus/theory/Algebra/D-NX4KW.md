@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-NX4KW
 kind: definition
-title: Max Spectrum
+title: Maximal spectrum
 classification:
   areas:
   - algebra
@@ -13,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **max spectrum** of $R$ is defined as 
-\[
-\mspec(R) = \theset{\mfm \normal R \suchthat \mfm \text{ is maximal}}
-.\]
+::: {.definition}
+Let $R$ be a commutative ring.
+The \dfn{max spectrum} of $R$ is the set of [[D-7XH2R|maximal ideals]] of $R$:
+$$
+\mspec(R) \coloneqq \theset{\mfm \subseteq R \suchthat \mfm \text{ is a maximal ideal}}.
+$$
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHAFF
 kind: theorem
 title: Higher cohomology vanishes on an affine scheme
+slogan: 'Quasicoherent cohomology on an affine scheme lives in degree $0$; higher cohomology is gluing data between affine pieces.'
 classification:
   areas:
   - algebraic-geometry
@@ -19,6 +20,7 @@ review: draft
 prompts:
 - Compute the cohomology of a quasicoherent sheaf on an affine scheme.
 - Which hypothesis in affine vanishing is load-bearing?
+- Why do Čech complexes of finite affine covers compute the cohomology of quasicoherent sheaves on a separated scheme?
 ---
 
 ::: {.theorem}
@@ -30,6 +32,14 @@ Then $H^0(X, \mcf) = \globsec{X;\mcf}$ and $H^i(X, \mcf) = 0$ for all $i > 0$.
 Put $M = \globsec{X;\mcf}$, so $\mcf \cong \tilde M$.
 Take an injective resolution $M \injects I^\bullet$ in $\amod$ and sheafify: each $\tilde{I^j}$ is flasque, hence acyclic, so $\tilde{I^\bullet}$ computes the cohomology.
 Applying $\globsec{X;\wait}$ returns the original exact complex $M \injects I^\bullet$, and its higher cohomology is zero.
+:::
+
+::: {.proposition title="Čech computation"}
+Let $\mcf$ be a quasicoherent sheaf on a scheme $X$.
+
+1. If $X$ is affine and $\mathfrak{U} = \{U_1, \ldots, U_r\}$ is a finite cover of $X$ by affine opens whose finite intersections are affine, the augmented Čech complex $0 \to \mcf(X) \to C^0(\mathfrak{U}, \mcf) \to C^1(\mathfrak{U}, \mcf) \to \cdots$ is exact; so $\check{H}^i(\mathfrak{U}, \mcf) = 0$ for $i > 0$.
+
+2. If $X$ is quasicompact and separated, any two finite affine covers $\mathfrak{U}$, $\mathfrak{V}$ give the same Čech cohomology: $\check{H}^i(\mathfrak{U}, \mcf) \cong \check{H}^i(\mathfrak{V}, \mcf)$; for $X$ Noetherian both equal $H^i(X, \mcf)$ [@Har10a, Theorem III.4.5].
 :::
 
 ::: {.remark title="Hypotheses"}

@@ -22,7 +22,7 @@ If $f_n$ is a sequence of continuous functions $f_n: \mathbb{R} \to \mathbb{R}$ 
 :::
 
 ::: {.solution}
-<1>1. For each $n$, $F_n=\{x: \forall m,k\ge n, |f_m(x)-f_k(x)|\le1/n\}$ is closed and $\bigcup_nF_n=\R$.
+<1>1. For each $n$, $F_n=\{x: \forall m,k\ge n, |f_m(x)-f_k(x)|\le1/n\}$ is closed and $\bigcup_nF_n=\RR$.
 ::: {.proof}
 Baire.
 :::

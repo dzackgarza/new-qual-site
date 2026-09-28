@@ -40,6 +40,6 @@ source:
     year: 2021
 ---
 
-::: remark
-UC Berkeley Online Graduate Preliminary Examination, Spring 2021. This vendored source includes solutions; the problem list follows the paper: Part A 1A–9A, then Part B 1B–9B.
+::: {.remark}
+The paper includes solutions. Part A consists of Problems 1A--9A and Part B of Problems 1B--9B.
 :::

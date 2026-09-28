@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring and let $M$ and $N$ be $R$-modules.
 Prove the following.
 

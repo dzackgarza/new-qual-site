@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $A \in M_n(F)$, where $F$ is any field.
 Let $V = F^n$ and let $\phi \colon V \to V$ be the linear transformation given by the matrix $A$.
 Show that the following are equivalent:

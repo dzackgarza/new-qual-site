@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is the Galois group of $x^2+9$ over $\QQ$?
 :::
 
-::: solution
+::: {.solution}
 The roots are
 \[
 \pm 3i,

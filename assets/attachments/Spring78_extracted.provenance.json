@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring78.pdf",
+  "source_pdf_sha256": "d7e3396d0da73ee03186c508ccd126c8edb7cc31cd1484ca0e1c9961415fe773",
+  "extracted_markdown": "assets/attachments/Spring78_extracted.md",
+  "extracted_markdown_sha256": "d5ad0c7cf618bc8ba46a4d836e791b64379eaade104f139a525a8e34bf7d612e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring78.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring78.md",
+  "old_unknown_provenance_sha256": "d5ad0c7cf618bc8ba46a4d836e791b64379eaade104f139a525a8e34bf7d612e",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1978, containing Problems 1 through 20 in source order; the retained PDF omits the institution name, while repository source lineage supplies the Berkeley attribution.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1978 collection represents all 20 source positions in order with 17 source-local cards plus exact canonical reuse of P-EMCA9 for Problem 3, P-BERK97S-12 for Problem 4, and P-PRELIM82S-01 for Problem 9. The collection is already banked in HEAD and its live worktree copy is shared residue, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

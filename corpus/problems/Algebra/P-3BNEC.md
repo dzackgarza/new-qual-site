@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K\subseteq E\subseteq F$. If $F/K$ is algebraic, normal, or separable, respectively, must $F/E$ have the same property? Answer this question in each of the three cases.
 :::
 

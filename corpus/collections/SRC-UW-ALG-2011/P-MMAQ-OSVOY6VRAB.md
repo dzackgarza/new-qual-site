@@ -16,12 +16,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Describe the Galois group and the intermediate fields of the cyclotomic extension $\mathbb Q(\zeta_{12})/\mathbb Q$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The extension $\mathbb Q(\zeta_{12})/\mathbb Q$ is Galois of degree $4$, with
 \[
 \operatorname{Gal}(\mathbb Q(\zeta_{12})/\mathbb Q)

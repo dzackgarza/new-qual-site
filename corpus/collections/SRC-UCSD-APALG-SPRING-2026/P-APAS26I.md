@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n \ge 2$.
 Let $S_n = \operatorname{Aut}\{1, \ldots, n\}$ be the symmetric group, and consider the unitary representation $(V, \varphi)$ of $S_n$ in which
 \[
@@ -24,7 +24,7 @@ Decompose $(V, \varphi)$ into irreducible unitary representations of $S_n$, with
 Write out the character table of $S_3$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 u=|1\rangle+\cdots+|n\rangle.

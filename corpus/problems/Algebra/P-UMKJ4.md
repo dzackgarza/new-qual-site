@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a PID and $A\in M_{m\times n}(R)$. Prove that there exist invertible matrices $P\in GL_m(R)$ and $Q\in GL_n(R)$ such that
 \[
 PAQ=\operatorname{diag}(d_1,\ldots,d_r,0,\ldots,0),
@@ -23,7 +23,7 @@ PAQ=\operatorname{diag}(d_1,\ldots,d_r,0,\ldots,0),
 Explain uniqueness up to multiplication of the $d_i$ by units.
 :::
 
-::: solution
+::: {.solution}
 We prove existence by induction on $m+n$.
 
 If $A=0$, there is nothing to prove. Otherwise use row and column swaps to put a nonzero entry in position $(1,1)$; call it $d$.

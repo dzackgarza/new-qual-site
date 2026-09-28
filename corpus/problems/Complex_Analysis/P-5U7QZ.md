@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $\HH_R\da\{w\in\CC:\Re w>0\}$.
 Suppose $f:\DD\to\HH_R$ is analytic and satisfies $f(0)=2$.
 Find a sharp upper bound for $\abs{f'(0)}$, and prove it is sharp by example.

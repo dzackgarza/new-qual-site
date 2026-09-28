@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1(\mathbb{R})$ and put
 $$
 g(\xi) := \int_{\mathbb{R}} e^{i\xi \cos x} f(x)\,dx, \quad \xi \in \mathbb{R}.
@@ -37,9 +37,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove continuity of $g$.
-::: proof
+::: {.proof}
 Fix $\xi\in\mathbb R$ and let $\xi_k\to\xi$. For every $x$,
 \[
 e^{i\xi_k\cos x}f(x)\longrightarrow e^{i\xi\cos x}f(x),
@@ -56,7 +56,7 @@ Hence $g$ is continuous.
 :::
 
 <1>2. Differentiate under the integral sign to all orders.
-::: proof
+::: {.proof}
 For each integer $n\ge0$, define
 \[
 G_n(\xi,x):=(i\cos x)^n e^{i\xi\cos x}f(x).
@@ -81,7 +81,7 @@ g\in C^\infty(\mathbb R).
 :::
 
 <1>3. Prove that $g^{(n)}\to0$ uniformly in $\xi$.
-::: proof
+::: {.proof}
 For every $\xi\in\mathbb R$,
 \[
 |g^{(n)}(\xi)|

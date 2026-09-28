@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 (a) Define the span of vectors $v_1, \dots, v_k$ in $\mathbb{R}^n$.
 
 (b) Prove that if $w$ lies in the span of $v_1, \dots, v_k$, then the span of $v_1, \dots, v_k, w$ is equal to the span of $v_1, \dots, v_k$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The span of $v_1,\dots,v_k$ is
 \[
 \operatorname{span}(v_1,\dots,v_k)
@@ -67,5 +67,4 @@ which belongs to $\operatorname{span}(v_1,\dots,v_k)$.
 \]
 ::: {.proof}
 This follows from the two inclusions in <1>2 and <1>3.
-:::
 :::

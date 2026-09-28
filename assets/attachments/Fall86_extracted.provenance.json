@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Fall86.pdf",
+  "source_pdf_sha256": "35de15ced6ffebefe6b2fc4fa1f3113da7bd9a7f7f8fad186a2a2aaed6e31052",
+  "extracted_markdown": "assets/attachments/Fall86_extracted.md",
+  "extracted_markdown_sha256": "4169791ef0d5981d9e3a14e0b373760a85cf65e9df6fd75cdb04fc868f757f27",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 4,
+  "command": "just ocr-pdf assets/attachments/Fall86.pdf assets/attachments/Fall86_extracted.md",
+  "generated_at": "2026-09-16"
+}

@@ -20,13 +20,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that if a function $f$ has two Laurent series expansions in an annulus $A = \{z \in \mathbb{C} \mid r < |z-a| < R\}$:
 $$f(z) = \sum_{n=-\infty}^\infty c_n(z-a)^n \quad\text{and}\quad f(z) = \sum_{n=-\infty}^\infty c_n'(z-a)^n$$
 then $c_n = c_n'$ for all $n \in \mathbb{Z}$.
 :::
 
-::: solution
+::: {.solution}
 Fix $\rho$ with
 \[
 r<\rho<R,

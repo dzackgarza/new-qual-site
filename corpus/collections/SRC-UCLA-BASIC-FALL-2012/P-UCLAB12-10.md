@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-10
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 10
+title: Jordan form of $A$ with $A^4+2A^3-2A-I=0$
 classification:
   areas:
   - prelim

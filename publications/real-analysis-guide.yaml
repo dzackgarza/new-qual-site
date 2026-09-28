@@ -6,13 +6,15 @@ lede: 'Real analysis: metric spaces, differentiation, integration, measure theor
   analysis, and Fourier analysis.'
 sections:
   - slug: sequences-and-series-of-numbers
-    title: Sequences and Series of Numbers
+    title: Sequences and series of numbers
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'The limit superior and inferior always exist in the extended reals, so an argument
-      can record asymptotic upper and lower bounds before ordinary convergence is known. For
-      series, convergence forces the terms to zero and the tails to vanish, the comparison,
-      root, ratio, and condensation tests all decide convergence by bounding one tail against
-      another, and the $p$-test fixes the scale against which those comparisons are made.'
+    lede: >-
+      For a real sequence $(a_n)$, $\limsup_na_n$ and $\liminf_na_n$ exist in
+      $[-\infty,\infty]$, and $(a_n)$ converges if and only if they are equal and finite. If
+      $\sum_na_n$ converges, then $a_n\to0$ and the tails $\sum_{n>N}a_n$ tend to $0$. The
+      comparison, root, and ratio tests, and for nonincreasing nonnegative terms the Cauchy
+      condensation test, decide convergence by comparison with a series of known behaviour,
+      and $\sum_nn^{-p}$ converges if and only if $p>1$.
     topics:
       - Sequences of Numbers
       - Series of Numbers
@@ -28,15 +30,18 @@ sections:
       - ref: PR-P6NHI
       - ref: PR-4EVYE
       - ref: PR-6OHTJ
-      - ref: PR-OPSAC
+      - ref: FF-Z3E3C
   - slug: metric-spaces
-    title: Metric Spaces, Compactness and Completeness
+    title: Metric spaces, compactness and completeness
     parent: sequences-and-series-of-numbers
-    lede: 'For metric spaces, compactness is equivalent to sequential compactness and to completeness
-      together with total boundedness. The Heine–Borel theorem identifies compact subsets
-      of $\mathbb R^n$ as the closed bounded subsets. Closed bounded subsets of $\mathbb Q$
-      or of $C([0,1])$ with the uniform norm need not be compact. Baire''s theorem states
-      that a countable intersection of open dense subsets of a complete metric space is dense.'
+    lede: >-
+      For a metric space $X$, compactness (every open cover has a finite subcover), sequential
+      compactness, and completeness together with total boundedness are equivalent. The
+      Heine--Borel theorem: a subset of $\RR^n$ is compact if and only if it is closed and
+      bounded. In $\QQ$ the set $[0,2]\cap\QQ$ is closed and bounded and not compact, and in
+      $C([0,1])$ with the supremum norm the closed unit ball is closed and bounded and not
+      compact. The Baire category theorem: in a complete metric space, every countable
+      intersection of dense open sets is dense.
     topics:
       - Metric Spaces
       - Compactness
@@ -58,11 +63,14 @@ sections:
   - slug: continuity
     title: Continuity
     parent: metric-spaces
-    lede: 'For maps between metric spaces, continuity can be expressed through sequences,
-      inverse images of open sets, or epsilon-delta estimates. A continuous real-valued function
-      on a compact space attains its extrema; a continuous map from a compact metric space
-      to a metric space is uniformly continuous. On noncompact domains, continuity need not
-      imply uniform continuity.'
+    lede: >-
+      For metric spaces $X$, $Y$ and $f\colon X\to Y$, the following are equivalent: for every
+      $x\in X$ and $\varepsilon>0$ there exists $\delta>0$ with $d(f(x),f(y))<\varepsilon$
+      whenever $d(x,y)<\delta$; $f(x_n)\to f(x)$ whenever $x_n\to x$; the preimage of every
+      open set is open; the preimage of every closed set is closed. If $X$ is compact and $f$
+      is continuous, then $f$ is uniformly continuous, $f(X)$ is compact, and for $Y=\RR$, $f$
+      attains its maximum and minimum. The functions $x\mapsto x^2$ on $\RR$ and $x\mapsto1/x$
+      on $(0,1)$ are continuous and not uniformly continuous.
     topics:
       - Continuity
       - Uniform Continuity
@@ -78,14 +86,17 @@ sections:
   - slug: differentiation
     title: Differentiation
     parent: continuity
-    lede: At an interior local extremum, a differentiable real-valued function has
-      derivative zero. The Mean Value Theorem relates a difference quotient to a
-      derivative at an intermediate point. Taylor's theorem expresses a function as a
-      polynomial plus a remainder. Functions of bounded variation have derivatives
-      almost everywhere, but recovering the function by integrating its derivative
-      requires absolute continuity. The related integration results appear in
-      [Riemann-Stieltjes Integration](riemann-stieltjes-integration.html) and [Sequences
-      and Series of Functions](sequences-and-series-of-functions.html).
+    lede: >-
+      Fermat's theorem: if $f\colon(a,b)\to\RR$ has a local extremum at $c$ and is
+      differentiable at $c$, then $f'(c)=0$. The mean value theorem: if $f$ is continuous on
+      $[a,b]$ and differentiable on $(a,b)$, then $f(b)-f(a)=f'(c)(b-a)$ for some $c\in(a,b)$.
+      Taylor's theorem: if $f^{(n)}$ is continuous on $[a,b]$ and $f^{(n+1)}$ exists on
+      $(a,b)$, then
+      $f(b)=\sum_{k=0}^{n}\frac{f^{(k)}(a)}{k!}(b-a)^k+\frac{f^{(n+1)}(c)}{(n+1)!}(b-a)^{n+1}$
+      for some $c\in(a,b)$. A function of bounded variation on $[a,b]$ is the difference of
+      two increasing functions, and is therefore differentiable almost everywhere; functions
+      of bounded variation are the integrators of [Riemann--Stieltjes
+      integration](riemann-stieltjes-integration.html).
     topics:
       - Differentiation
       - Mean Value Theorem
@@ -99,14 +110,22 @@ sections:
       - ref: T-2R7PC
       - ref: PR-LTRLV
   - slug: riemann-stieltjes-integration
-    title: Riemann-Stieltjes Integration
+    title: Riemann--Stieltjes integration
     parent: differentiation
-    lede: Riemann–Stieltjes upper and lower sums depend on both the integrand and the
-      integrator. Integration by parts and, for a continuously differentiable
-      integrator, reduction to a Riemann integral give methods of evaluation. The
-      fundamental theorem of calculus relates integration and differentiation.
-      Lebesgue's criterion characterizes Riemann integrability of a bounded function on
-      a compact interval by the measure of its discontinuity set.
+    lede: >-
+      For $\alpha$ increasing on $[a,b]$, a bounded $f$ is Riemann--Stieltjes integrable with
+      respect to $\alpha$ if and only if for every $\varepsilon>0$ there is a partition $P$ of
+      $[a,b]$ with $U(P,f,\alpha)-L(P,f,\alpha)<\varepsilon$. If $f$ is integrable with
+      respect to $\alpha$, and $\alpha$ is differentiable with $\alpha'$ Riemann integrable,
+      then $\int_a^bf\,d\alpha=\int_a^bf(x)\alpha'(x)\,dx$. Integration by parts: if $f$ is
+      integrable with respect to $\alpha$, then $\alpha$ is integrable with respect to $f$ and
+      $\int_a^bf\,d\alpha=f(b)\alpha(b)-f(a)\alpha(a)-\int_a^b\alpha\,df$. The fundamental
+      theorem of calculus: if $f$ is Riemann integrable on $[a,b]$ and $F$ is differentiable
+      on $[a,b]$ with $F'=f$, then $\int_a^bf=F(b)-F(a)$; and if $f$ is continuous, then
+      $x\mapsto\int_a^xf$ is differentiable with derivative $f$. For continuous $f$,
+      $\int_a^bf=f(c)(b-a)$ for some $c\in[a,b]$. Lebesgue's criterion: a bounded function on
+      $[a,b]$ is Riemann integrable if and only if its set of discontinuities has Lebesgue
+      measure zero.
     topics:
       - Riemann Integrability
     items:
@@ -117,15 +136,23 @@ sections:
       - ref: T-RA-WORKSHOP-D6-5-5
       - ref: PR-TDH2A
   - slug: sequences-and-series-of-functions
-    title: Sequences and Series of Functions
+    title: Sequences and series of functions
     parent: riemann-stieltjes-integration
-    lede: 'Uniform limits of continuous functions are continuous. On a compact interval, uniform
-      convergence permits passage of a limit through a Riemann integral. Passing a limit through
-      differentiation requires additional hypotheses on derivatives. The Weierstrass M-test
-      gives a sufficient condition for uniform convergence of a series. Arzelà–Ascoli characterizes
-      compact families of continuous functions, and Stone–Weierstrass gives conditions for
-      a subalgebra to be uniformly dense. Examples distinguish pointwise, uniform, almost-everywhere,
-      and norm convergence under their respective hypotheses.'
+    lede: >-
+      A sequence $f_n\colon E\to\RR$ converges uniformly to $f$ if $\sup_{x\in
+      E}\abs{f_n(x)-f(x)}\to0$. A uniform limit of continuous functions is continuous, and if
+      Riemann integrable $f_n$ converge uniformly to $f$ on $[a,b]$, then $f$ is Riemann
+      integrable and $\int_a^bf_n\to\int_a^bf$. If the $f_n$ are differentiable on $[a,b]$,
+      $(f_n(x_0))$ converges for some $x_0\in[a,b]$, and $(f_n')$ converges uniformly, then
+      $(f_n)$ converges uniformly to a differentiable $f$ with $f'=\lim_nf_n'$. The
+      Weierstrass M-test: if $\abs{f_n}\le M_n$ on $E$ and $\sum_nM_n<\infty$, then
+      $\sum_nf_n$ converges uniformly on $E$. The Arzelà--Ascoli theorem: for a compact metric
+      space $K$, a subset of $C(K)$ has compact closure if and only if it is bounded and
+      equicontinuous. The Stone--Weierstrass theorem: a subalgebra of $C(K,\RR)$ that contains
+      the constants and separates points is dense for the supremum norm. On $[0,1]$, $x^n$
+      converges pointwise and not uniformly; $n\chi_{(0,1/n)}$ converges to $0$ at every point
+      and not in $L^1$; and the typewriter sequence of indicator functions of dyadic intervals
+      converges to $0$ in $L^1$ and at no point.
     topics:
       - Uniform Convergence
       - Convergence of Functions
@@ -143,26 +170,35 @@ sections:
       - ref: T-RA-WORKSHOP-D7-6-1
       - ref: T-ERNLN
       - ref: T-RA-WORKSHOP-D7-6-2
-      - ref: PR-O2XFF
+      - ref: FF-IAUQG
       - ref: T-RA-WORKSHOP-D7-6-3
       - ref: T-RA-WORKSHOP-D7-6-4
-      - ref: T-DS4VW
+      - ref: T-TR526
       - ref: D-2CCDB
       - ref: T-RA-WORKSHOP-D7-6-5
-      - ref: FT-JQSOK
+      - ref: FF-XZGIY
       - ref: T-RA-WORKSHOP-D7-6-7
       - ref: T-3QNBQ
   - slug: measure-and-measurable-functions
-    title: Measure and Measurable Functions
+    title: Measure and measurable functions
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'The Carathéodory condition defines a sigma-algebra on which an outer measure restricts
-      to a measure. For Lebesgue measure, approximation by open and closed sets gives criteria
-      for measurability. Measurable real-valued functions can be characterized by measurable
-      sublevel sets, and pointwise limits of measurable functions are measurable. Egorov''s
-      theorem gives almost-uniform convergence on finite-measure spaces; Lusin''s theorem
-      gives continuous restrictions outside sets of small measure under regularity hypotheses.
-      The first Borel–Cantelli lemma turns a summable sequence of event measures into an almost-everywhere
-      finiteness statement.'
+    lede: >-
+      Lebesgue outer measure $m^*$ is defined on every subset of $\RR$ and is countably
+      subadditive. A set $E$ is measurable if $m^*(A)=m^*(A\cap E)+m^*(A\setminus E)$ for
+      every $A\subseteq\RR$ (Carathéodory's condition); the measurable sets form a
+      $\sigma$-algebra on which $m^*$ is countably additive. A set $E$ is measurable if and
+      only if for every $\varepsilon>0$ there is an open $U\supseteq E$ with $m^*(U\setminus
+      E)<\varepsilon$, if and only if for every $\varepsilon>0$ there is a closed $F\subseteq
+      E$ with $m^*(E\setminus F)<\varepsilon$. A function $f\colon E\to[-\infty,\infty]$ is
+      measurable if $\{x:f(x)>a\}$ is measurable for every $a\in\RR$; suprema, infima, and
+      pointwise limits of sequences of measurable functions are measurable. Egorov's theorem:
+      if $m(E)<\infty$ and measurable $f_n$ converge almost everywhere on $E$ to a
+      finite-valued $f$, then for every $\varepsilon>0$ the convergence is uniform off a set
+      of measure less than $\varepsilon$. Lusin's theorem: if $m(E)<\infty$ and $f$ is
+      measurable and finite almost everywhere on $E$, then for every $\varepsilon>0$ there is
+      a closed $F\subseteq E$ with $m(E\setminus F)<\varepsilon$ and $f|_F$ continuous. The
+      Borel--Cantelli lemma: if $\sum_nm(E_n)<\infty$, then almost every $x$ lies in only
+      finitely many $E_n$.
     topics:
       - Measure Theory
       - Borel-Cantelli
@@ -179,17 +215,24 @@ sections:
       - ref: D-DHFN4
       - ref: D-553MO
       - ref: T-OTR5M
-      - ref: T-XZE3E
+      - ref: FT-OGS76
       - ref: T-CGFCU
   - slug: the-lebesgue-integral
-    title: The Lebesgue Integral
+    title: The Lebesgue integral
     parent: measure-and-measurable-functions
-    lede: "The integral of a nonnegative measurable function is the supremum of the integrals
-      of simple functions below it. Monotone convergence, Fatou's lemma, and dominated convergence
-      give conditions for passing limits through integrals or comparing their values. Tonelli's
-      theorem applies to nonnegative functions; Fubini's theorem applies to integrable functions,
-      with the hypotheses on the measure spaces stated in each theorem. Chebyshev's inequality
-      bounds level-set measures in terms of integrals."
+    lede: >-
+      For measurable $f\ge0$, $\int f=\sup\{\int\varphi:\varphi\text{ simple},\ 0\le\varphi\le
+      f\}$. The monotone convergence theorem: if $0\le f_n\uparrow f$, then $\int f_n\to\int
+      f$. Fatou's lemma: for measurable $f_n\ge0$, $\int\liminf_nf_n\le\liminf_n\int f_n$. The
+      dominated convergence theorem: if $f_n\to f$ almost everywhere and $\abs{f_n}\le g$ with
+      $g$ integrable, then $\int\abs{f_n-f}\to0$. The sequence $n\chi_{(0,1/n)}$ converges to
+      $0$ at every point while every integral is $1$, and it has no integrable dominating
+      function. For $\sigma$-finite measure spaces, Tonelli's theorem equates the iterated
+      integrals of a nonnegative measurable function on the product, and Fubini's theorem does
+      the same for a function integrable on the product. Chebyshev's inequality:
+      $m(\{\abs{f}\ge\lambda\})\le\lambda^{-1}\int\abs{f}$ for $\lambda>0$. For integrable $f$
+      and every $\varepsilon>0$ there is $\delta>0$ such that $\int_E\abs{f}<\varepsilon$
+      whenever $m(E)<\delta$.
     topics:
       - Integrals
       - Convergence of Integrals
@@ -209,15 +252,22 @@ sections:
       - ref: T-4GPEF
       - ref: T-X7XZX
   - slug: lp-spaces
-    title: Lp Spaces and Convolution
+    title: $L^p$ spaces and convolution
     parent: the-lebesgue-integral
-    lede: 'For $1\leq p\leq\infty$, Minkowski''s inequality gives the triangle inequality
-      and the Riesz–Fischer theorem gives completeness of $L^p$. Hölder''s inequality controls
-      products. On a finite-measure space, $L^q$ embeds in $L^p$ for $p\leq q$, and for bounded
-      $f$ on a nonzero finite-measure space, $\|f\|_p$ tends to $\|f\|_\infty$ as $p\to\infty$.
-      For Lebesgue measure on Euclidean space, Young''s inequality controls convolution and
-      translations are continuous in $L^p$ for $p<\infty$. Approximate identities converge
-      in these spaces.'
+    lede: >-
+      For $1\le p\le\infty$ and $1/p+1/q=1$, Hölder's inequality
+      $\norm{fg}_1\le\norm{f}_p\norm{g}_q$ and Minkowski's inequality
+      $\norm{f+g}_p\le\norm{f}_p+\norm{g}_p$ make $L^p$ a normed space, and by the
+      Riesz--Fischer theorem it is complete. On a finite measure space $L^q\subseteq L^p$ for
+      $p\le q$; on $\RR$ there is no inclusion between $L^p$ and $L^q$ for $p\ne q$, as
+      $x^{-a}\chi_{(0,1)}$ and $x^{-a}\chi_{(1,\infty)}$ show for suitable $a>0$. The norm
+      $\norm{f}_\infty$ is the essential supremum of $\abs{f}$, and if $f\in L^r$ for some
+      $r<\infty$, then $\norm{f}_p\to\norm{f}_\infty$ as $p\to\infty$. Young's inequality:
+      $\norm{f*g}_r\le\norm{f}_p\norm{g}_q$ for $1\le p,q,r\le\infty$ with $1+1/r=1/p+1/q$.
+      For an approximate identity $(\varphi_\varepsilon)$ in $L^1(\RR^n)$ and $f\in
+      L^p(\RR^n)$ with $1\le p<\infty$, $\varphi_\varepsilon*f\to f$ in $L^p$, while no $g\in
+      L^1(\RR^n)$ satisfies $g*f=f$ for all $f\in L^1(\RR^n)$. For $1\le p<\infty$ and $f\in
+      L^p(\RR^n)$, $\norm{f(\cdot+h)-f}_p\to0$ as $h\to0$.
     topics:
       - Lp Spaces
       - L¹
@@ -240,15 +290,22 @@ sections:
       - ref: D-ARQFC
       - ref: T-HHFGB
   - slug: hilbert-spaces-and-duality
-    title: Hilbert Spaces and Duality
+    title: Hilbert spaces and duality
     parent: lp-spaces
-    lede: 'The $L^2$ inner product gives orthogonal projections, Bessel''s inequality, and
-      expansion in an orthonormal basis. Riesz representation identifies continuous linear
-      functionals on a Hilbert space. On a sigma-finite measure space, the dual of $L^p$ for
-      $1\leq p<\infty$ is represented by $L^q$, where $1/p+1/q=1$; the dual of $L^\infty$
-      need not be represented by $L^1$. Hahn–Banach, uniform boundedness, the open mapping
-      theorem, and the closed graph theorem apply to Banach spaces. In an infinite-dimensional
-      Hilbert space the closed unit ball is weakly compact but not norm-compact.'
+    lede: >-
+      $L^2$ is a Hilbert space with inner product $\inner{f}{g}=\int f\bar g$. In a Hilbert
+      space $H$, every nonempty closed convex set has a unique element of least norm, so
+      $H=M\oplus M^\perp$ for every closed subspace $M$; every orthonormal family $(e_i)$
+      satisfies Bessel's inequality $\sum_i\abs{\inner{x}{e_i}}^2\le\norm{x}^2$; and a
+      complete orthonormal family $(e_i)_{i\in I}$ gives an isometric isomorphism
+      $H\cong\ell^2(I)$. The Riesz representation theorem: every bounded linear functional on
+      $H$ is $x\mapsto\inner{x}{y}$ for a unique $y\in H$. For $1\le p<\infty$ on a
+      $\sigma$-finite measure space, the dual of $L^p$ is $L^q$ with $1/p+1/q=1$; the dual of
+      $L^\infty([0,1])$ strictly contains $L^1([0,1])$. The Hahn--Banach, uniform boundedness,
+      open mapping, and closed graph theorems apply to Banach spaces such as $L^p$ and
+      $\ell^p$. The closed unit ball of an infinite-dimensional Hilbert space is not
+      norm-compact, and every bounded sequence in a Hilbert space has a weakly convergent
+      subsequence.
     topics:
       - Hilbert Spaces
       - Inner Product Spaces
@@ -276,15 +333,18 @@ sections:
       - ref: T-KQTPR
       - ref: T-TTLXS
   - slug: fourier-analysis
-    title: Fourier Analysis
+    title: Fourier analysis
     parent: hilbert-spaces-and-duality
-    lede: 'The Fourier transform combines [Lebesgue integration](the-lebesgue-integral.html),
-      [convolution](lp-spaces.html), and [Hilbert-space methods](hilbert-spaces-and-duality.html).
-      It is bounded from $L^1$ to bounded continuous functions, and Riemann–Lebesgue states
-      that these transforms vanish at infinity. With the corresponding normalization, Plancherel
-      extends the transform to an isometry on $L^2$. Fourier inversion requires its stated
-      integrability hypotheses. Examples include Gaussians and functions whose transforms
-      are not integrable.'
+    lede: >-
+      For $f\in L^1(\RR)$, $\hat f(\xi)=\int_\RR f(x)e^{-2\pi ix\xi}\,dx$ is continuous with
+      $\norm{\hat f}_\infty\le\norm{f}_1$, and $\widehat{f*g}=\hat f\,\hat g$ for $f,g\in
+      L^1(\RR)$. The Riemann--Lebesgue lemma: $\hat f(\xi)\to0$ as $\abs{\xi}\to\infty$; since
+      the transform of a convolution identity would be the constant $1$, $L^1(\RR)$ has no
+      convolution identity. Plancherel's theorem: the Fourier transform on $L^1\cap L^2$
+      extends to a unitary operator on $L^2(\RR)$. The inversion theorem: if $f\in L^1$ and
+      $\hat f\in L^1$, then $f(x)=\int_\RR\hat f(\xi)e^{2\pi ix\xi}\,d\xi$ for almost every
+      $x$. The Gaussian $e^{-\pi x^2}$ is its own Fourier transform, and the transform of
+      $\chi_{[-1,1]}$ is $\frac{\sin 2\pi\xi}{\pi\xi}$, which is not in $L^1$.
     topics:
       - Fourier Analysis
     items:
@@ -293,13 +353,16 @@ sections:
       - ref: PR-DPRY7
       - ref: PR-IGMH4
       - ref: T-DTXIA
-      - ref: PR-CCDRN
+      - ref: PR-JCZKL
   - slug: problems-from-the-joint-exams
-    title: Problems from the Joint Analysis Exams
+    title: Problems from the joint analysis exams
     parent: GUIDE-REAL-ANALYSIS
-    lede: 'These problems come from combined real and complex analysis prelims. The [Complex
-      Analysis guide](../GUIDE-COMPLEX-ANALYSIS.html) contains the corresponding theory of
-      holomorphic functions, conformal maps, and contour integration.'
+    lede: >-
+      Problems from combined analysis prelims whose paper covers both real and complex
+      analysis, and whose mathematics is complex analysis: entire and holomorphic functions,
+      conformal maps, normal families, residues and contour integrals, Rouché's theorem,
+      Hurwitz's theorem, and the Schwarz lemma. The [complex analysis
+      guide](../GUIDE-COMPLEX-ANALYSIS.html) covers the corresponding theory.
     topics:
       - Holomorphic Functions
       - Entire Functions

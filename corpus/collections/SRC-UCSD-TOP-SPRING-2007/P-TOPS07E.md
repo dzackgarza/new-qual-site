@@ -24,11 +24,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 On any closed orientable surface $\Sigma_g$ of genus $g \geq 1$, it is possible to find a pair of simple closed curves $\alpha, \beta \subset \Sigma_g$ (submanifolds homeomorphic to $S^1$) meeting transversely at exactly one point ($I(\alpha, \beta) = \pm 1$). Use this fact together with intersection theory to show that any smooth (or continuous) map $f: S^2 \to \Sigma_g$ has **degree zero**: $$\deg(f) = 0.$$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose oriented simple closed curves $\alpha,\beta\subset\Sigma_g$ meeting transversely in one point. By hypothesis their algebraic intersection number is
 $$
 I(\alpha,\beta)=\pm1.

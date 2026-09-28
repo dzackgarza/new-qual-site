@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 -   For real $s>0$, define
   \[
   \Gamma(s)=\int_0^\infty e^{-t}t^{s-1}\,dt.
@@ -35,7 +35,7 @@ review: draft
 > Hint: You may need $\displaystyle{\Gamma(1-s)=t \int_0^{\infty}e^{-vt}(vt)^{-s} dv}$ for $t>0$.
 :::
 
-::: solution
+::: {.solution}
 Fix a compact set $K\subset\{s:\Re s>0\}$ and put
 \[
 \sigma_0=\min_{s\in K}\Re s>0,

@@ -23,7 +23,7 @@ audit:
   note: "Solved the recurrence using its two characteristic roots and took the ratio limit from the exponentially smaller second root."
 ---
 
-::: problem
+::: {.problem}
 Let $f_1=1$, $f_2=2$, and $f_{n+1}=f_n+f_{n-1}$. Show that
 \[
 \lim_{n\to\infty}\frac{f_{n+1}}{f_n}
@@ -31,7 +31,7 @@ Let $f_1=1$, $f_2=2$, and $f_{n+1}=f_n+f_{n-1}$. Show that
 exists and evaluate it.
 :::
 
-::: solution
+::: {.solution}
 The characteristic equation of
 $$
 f_{n+1}=f_n+f_{n-1}
@@ -48,7 +48,7 @@ $$
 $$
 
 <1>1. Write an explicit formula for $f_n$.
-::: proof
+::: {.proof}
 The sequence
 $$
 f_n=\frac{\phi^{n+1}-\psi^{n+1}}{\sqrt5}
@@ -67,7 +67,7 @@ this is the given sequence.
 :::
 
 <1>2. Compute the ratio limit.
-::: proof
+::: {.proof}
 Since
 $$
 |\psi|<1<\phi,

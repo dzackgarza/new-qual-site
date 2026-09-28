@@ -26,7 +26,7 @@ audit:
   note: "Checked the splitting-field degree, the complete subgroup enumeration, distinctness of the three cubic fields, and the normality decisions."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field of $x^3 - 7$ over $\mathbb{Q}$.
 
 a. Find the Galois group of $K$ over $\mathbb{Q}$.
@@ -36,7 +36,7 @@ b. Find all of the subfields of $K$.
 c. Which of the subfields you found above are Galois over $\mathbb{Q}$?
 :::
 
-::: solution
+::: {.solution}
 Let $\alpha=\sqrt[3]{7}$ be the real cube root and let
 $\zeta=(-1+i\sqrt3)/2$, a primitive cube root of unity. The answers are
 $\operatorname{Gal}(K/\mathbb Q)\cong S_3$ and the following six fields:
@@ -52,7 +52,7 @@ $\operatorname{Gal}(K/\mathbb Q)\cong S_3$ and the following six fields:
 
 <1>1. The splitting field has degree $6$, with Galois group $S_3$.
 
-::: proof
+::: {.proof}
 The three roots are $\alpha,\zeta\alpha,\zeta^2\alpha$. Their
 generated field contains $\zeta=(\zeta\alpha)/\alpha$, and
 $\mathbb Q(\alpha,\zeta)$ contains all of them. Thus this is $K$.
@@ -74,7 +74,7 @@ embedding is an isomorphism.
 
 <1>2. The table lists every subfield, without repetition.
 
-::: proof
+::: {.proof}
 Every subfield of the characteristic-zero field $K$ contains its
 prime field $\mathbb Q$. The Galois correspondence therefore gives
 a bijection between these subfields and the subgroups of $S_3$
@@ -102,7 +102,7 @@ of degree $6$. The subgroup count proves exhaustiveness.
 <1>3. Exactly $\mathbb Q$, $\mathbb Q(\zeta)$, and $K$ are Galois
 over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 The identity extension is Galois. Both roots $\zeta,\zeta^2$ of
 $x^2+x+1$ lie in $\mathbb Q(\zeta)$, so that field is a splitting
 field of a separable polynomial and is Galois. The same property

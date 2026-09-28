@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{D}$ denote the open unit disc, and let $\mathbb{D}' = \{z \in \mathbb{C} : |z + 2/5| < 2/5\}$ denote the open disc of center $-2/5$ and radius $2/5$.
 Let $\Omega = \mathbb{D} \setminus \overline{\mathbb{D}'}$.
 
@@ -21,7 +21,7 @@ Find, with justification, an explicit continuous function $h: \overline{\Omega} 
 Hint: You may wish to use a conformal map to change the domain $\Omega$.
 :::
 
-::: solution
+::: {.solution}
 The two boundary circles belong to the same coaxial family. Their limiting
 points are $-1/2$ and $-2$, so consider the Möbius map
 \[

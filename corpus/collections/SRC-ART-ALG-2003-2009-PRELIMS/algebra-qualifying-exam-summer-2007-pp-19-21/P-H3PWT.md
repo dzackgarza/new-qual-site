@@ -26,7 +26,7 @@ audit:
   note: "Checked the finite-dimensional span is a field without separability assumptions, both degree divisibilities, and the distinct cubic fields giving intersection Q and compositum degree six."
 ---
 
-::: problem
+::: {.problem}
 a. Let $F$ be a field, and let $K, L$ be finite dimensional extensions of $F$ inside a common overfield.
 Suppose $[K : F]$ and $[L : F]$ are relatively prime.
 Prove that $[KL : F] = [K : F][L : F]$.
@@ -35,13 +35,13 @@ Here $KL$ is the compositum of $K$ and $L$.
 b. Give an example of fields $F, K, L$ such that $K \cap L = F$ and $[KL : F] < [K : F][L : F]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For any two finite extensions in a common overfield,
 $$
 [KL:F]\leq[K:F][L:F].
 $$
 
-::: proof
+::: {.proof}
 Put $m=[K:F]$ and $n=[L:F]$, and choose an $F$-basis
 $\ell_1,\ldots,\ell_n$ of $L$ with $\ell_1=1$.
 Inside the common overfield, let
@@ -64,7 +64,7 @@ $[KL:F]=[KL:K]m\leq mn$.
 
 <1>2. Coprimeness forces equality, proving part (a).
 
-::: proof
+::: {.proof}
 Write $d=[KL:F]$. The tower law applied through $K$ and through $L$
 shows that $m\mid d$ and $n\mid d$. If $\gcd(m,n)=1$, then
 $mn\mid d$. Since $d>0$, we have $d\geq mn$; the opposite
@@ -74,7 +74,7 @@ inequality is step <1>1. Thus $[KL:F]=mn$.
 <1>3. For part (b), take two different cubic subfields of the
 splitting field of $x^3-2$.
 
-::: proof
+::: {.proof}
 Let $\alpha=\sqrt[3]{2}$ be real and let $\zeta$ be a primitive
 cube root of unity. Inside $\mathbb C$, set
 $$

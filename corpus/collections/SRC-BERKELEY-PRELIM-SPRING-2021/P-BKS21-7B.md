@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Find the eigenvalues of the $n\times n$ matrix $(a_{ij})$ with
 \[
 a_{ij}=\begin{cases}

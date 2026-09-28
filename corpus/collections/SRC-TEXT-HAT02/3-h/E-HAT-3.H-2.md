@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Compute the homology groups with local coefficients $H_n(M; M_{\mathbb{Z}})$ for a closed nonorientable surface $M$.
+:::
 
 ::: {.solution}
 <1>1. Setup and Poincaré Duality with local coefficients:

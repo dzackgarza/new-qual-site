@@ -1,0 +1,15 @@
+{
+  "source_pdf": "assets/attachments/day_3_sep_counterex_defn.pdf",
+  "source_pdf_sha256": "71fe7be78e6c6026b6dda69394ec75eab2308417ec7bc1b61293d665781145f2",
+  "extracted_markdown": "assets/attachments/day_3_sep_counterex_defn_extracted.md",
+  "extracted_markdown_sha256": "c3b802bc47dfa31a0bb15041da510dba45a9079f86e54349fa6317ad48b54a0e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/day_3_sep_counterex_defn.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/day_3_sep_counterex_defn.md",
+  "card_comparison": "The fourteen posed packet items were reconciled against this baseline. The deterministic extraction confirms the June 2004 A3 containment targets U and V and the packet-only June 2009 A4(a) excerpt.",
+  "known_extractor_defects": [
+    "The June 2008 A1 product-interior formula on extraction line 25 is mangled; this Flash output is not used to certify the exact formula in canonical card P-T08A1."
+  ]
+}

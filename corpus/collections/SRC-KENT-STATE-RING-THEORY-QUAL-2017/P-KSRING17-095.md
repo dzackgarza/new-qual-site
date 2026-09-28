@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-095
 kind: problem
-title: Kent State ring-theory qualifying problem 95
+title: Euclidean domains with ultrametric norm are fields or polynomial rings
 classification:
   areas: [algebra]
   topics: []

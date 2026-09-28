@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 If True, give a brief proof.
 If False, give a counterexample.
@@ -42,9 +42,9 @@ Let $\{x_j^*\}$ be a sequence in $X^*$ such that $\lim_{j \to \infty} x_j^*(x)$ 
 Then there is $x^* \in X^*$ such that $x^*(x) = \lim_{j \to \infty} x_j^*(x)$ for every $x \in X$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 The Cantor--Lebesgue function $F:[0,1]\to[0,1]$ is continuous and nonconstant, while
 \[
 F'(x)=0
@@ -53,7 +53,7 @@ for almost every $x\in[0,1]$. Hence continuity together with existence of the de
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 Suppose $\mu(E_{j_0})=0$. Since the sets are decreasing,
 \[
 E_j\subseteq E_{j_0}
@@ -70,7 +70,7 @@ so $\mu(E_j)=0$ for every $j\ge j_0$. Hence
 :::
 
 <1>3. Part (c) is true.
-::: proof
+::: {.proof}
 Because
 \[
 0\le f_j\le f_1
@@ -82,7 +82,7 @@ almost everywhere and $f_1\in L^1(X,\mu)$, while $f_j\to f$ almost everywhere, t
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 The total variation measure $|\nu|$ dominates $\nu$, so
 \[
 \nu\ll|\nu|.
@@ -108,7 +108,7 @@ By the defining integration identity for the Radon--Nikodym derivative, every $g
 :::
 
 <1>5. Part (e) is true.
-::: proof
+::: {.proof}
 For each fixed $x\in X$, the scalar sequence $(x_j^*(x))$ converges and is therefore bounded. Thus
 \[
 \sup_j|x_j^*(x)|<\infty

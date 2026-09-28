@@ -34,7 +34,7 @@ Prove every ideal $I$ in $R$ is principal, i.e. is a cyclic module.
 :::
 
 
-::: solution
+::: {.solution}
 Let
 $$
 \delta:R\setminus\{0\}\longrightarrow\mathbb Z
@@ -42,7 +42,7 @@ $$
 be a Euclidean size function.
 
 <1>1. If $I\ne0$, choose a nonzero element $x\in I$ of minimal Euclidean size.
-::: proof
+::: {.proof}
 The set
 $$
 \{\delta(y):0\ne y\in I\}
@@ -52,7 +52,7 @@ Choose $0\ne x\in I$ attaining that minimum.
 :::
 
 <1>2. The element $x$ divides every element of $I$.
-::: proof
+::: {.proof}
 Let $y\in I$. If $y=0$, the assertion is trivial. If $y\ne0$, Euclidean
 division by $x$ gives
 $$
@@ -74,7 +74,7 @@ Thus every $y\in I$ lies in $(x)$.
 :::
 
 <1>3. Every ideal of $R$ is principal.
-::: proof
+::: {.proof}
 Because $x\in I$, one has
 $$
 (x)\subseteq I.
@@ -91,7 +91,7 @@ Thus every ideal is principal.
 :::
 
 <1>4. A nonzero ideal is isomorphic to $R$ as an $R$-module.
-::: proof
+::: {.proof}
 If $I=(x)$ with $x\ne0$, define
 $$
 \mu_x:R\longrightarrow I,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$, $Y$ and $Z$ be spaces, and let $f : X \to Y$, $g : X \to Z$ be continuous maps.
 Define the double mapping cylinder $D$ to be the quotient of the disjoint union of $X \times [0, 1]$, $Y$ and $Z$ via the equivalence relation $(x, 0) \sim f(x)$, $(x, 1) \sim g(x)$.
 Show there is an exact sequence

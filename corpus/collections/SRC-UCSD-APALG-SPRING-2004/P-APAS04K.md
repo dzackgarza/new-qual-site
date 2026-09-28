@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the equations
 \begin{align}
 x^2+2y^2&=2\\

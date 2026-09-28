@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 [A_4,A_4]\cong C_2\times C_2.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 V_4=\{1,(12)(34),(13)(24),(14)(23)\}\trianglelefteq A_4.

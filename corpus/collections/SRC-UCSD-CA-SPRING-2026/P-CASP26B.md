@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic such that (i) $f(0) = 0$, (ii) $|f(z)| < 2000$ for all $z \in \mathbb{D}$, (iii) $f(z) = f(-z)$ for all $z \in \mathbb{D}$.
 
 Show that $|f(z)| \leq 2000|z|^2$ for all $z \in \mathbb{D}$, and determine when equality holds.

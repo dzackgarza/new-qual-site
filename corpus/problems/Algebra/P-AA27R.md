@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Why is $\Phi_p(x) = \frac{x^p - 1}{x - 1} = x^{p-1} + x^{p-2} + \cdots + x + 1$ irreducible over $\mathbb{Q}$ for $p$ prime?
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 g(y)=\Phi_p(y+1)=\frac{(y+1)^p-1}{y}

@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Consider the following matrix as a linear transformation from $V\definedas \CC^5$ to itself:
 \[
 A=\left(\begin{array}{ccccc}
@@ -41,7 +41,7 @@ c.
 Find the Jordan canonical form of $A$.
 :::
 
-::: solution
+::: {.solution}
 Let $T$ denote the operator represented by $A$. A direct determinant computation gives
 \[
 \chi_T(x)=(x-1)^4(x-2).

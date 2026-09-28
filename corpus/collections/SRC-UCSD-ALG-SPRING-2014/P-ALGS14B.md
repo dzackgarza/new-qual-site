@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group.
 Suppose for any $p$-subgroup $Q$ of $G$, there is a unique Sylow $p$-subgroup $P$ which contains $Q$.
 Moreover, assume $G$ has a normal subgroup $N$ such that $p \mid |N|$.

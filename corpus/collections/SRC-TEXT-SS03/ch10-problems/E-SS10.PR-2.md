@@ -21,7 +21,7 @@ audit:
     Repaired transcription defects in the fundamental-domain condition, congruence notation, and the quotient by {±I}.
 ---
 
-::: exercise
+::: {.exercise}
 2. Let $\operatorname { S L _ { 2 } } ( \mathbb { Z } )$ denote the set of $2 \times 2$ matrices with integer entries and determinant 1, that is,
 
 $$
@@ -55,7 +55,7 @@ Let g be the subgroup of $\operatorname { S L _ { 2 } } ( \mathbb { Z } )$ gener
 Strictly speaking, the matrices associated to $S$ and $T _ { 1 }$ generate the projective special linear group $\mathrm { P S L _ { 2 } ( Z ) }$ , which equals $\operatorname{SL}_2(\mathbb Z)$ modulo $\{\pm I\}$. [Hint: Observe that 2i is in the interior of $\mathcal { F } _ { 1 }$ . Now map $g ( 2 i )$ back into $\mathcal { F } _ { 1 }$ by using part (a). Use part (b) to conclude.]
 :::
 
-::: solution
+::: {.solution}
 Let \(\Gamma=\langle S,T_1\rangle\), where
 \[
 S(\tau)=-\frac1\tau,

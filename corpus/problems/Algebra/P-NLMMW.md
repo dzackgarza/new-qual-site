@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If $|G| = pq$ (distinct primes), is $G$ necessarily nilpotent?
 :::
 
-::: solution
+::: {.solution}
 No. For example, $S_3$ has order $6=2\cdot3$ but is not nilpotent: its center is trivial, so its upper central series cannot reach $S_3$.
 
 More generally, for a finite group, nilpotence is equivalent to normality of every Sylow subgroup. If $|G|=pq$ with primes $p<q$, the Sylow $q$-subgroup is always normal. A nonabelian group of order $pq$ exists exactly when $p\mid(q-1)$; it is a semidirect product

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Use a direct Laurent expansion to show
 \[
 \Res_{z=0} {1\over z-\sin(z)} = {3! \over 5\cdot 4}
@@ -25,7 +25,7 @@ Use a direct Laurent expansion to show
 
 :::
 
-:::{.solution}
+::: {.solution}
 Expand:
 \[
 {1\over z - \sin(z)}

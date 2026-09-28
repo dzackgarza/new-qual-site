@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite abelian group. Suppose that for every positive integer $n$, at most $n$ elements of $G$ satisfy $x^n=e$ (equivalently, have order dividing $n$). Prove that $G$ is cyclic.
 :::
 
-::: solution
+::: {.solution}
 Let $m$ be the exponent of $G$, the least positive integer such that
 \[
 x^m=e\qquad\text{for every }x\in G.

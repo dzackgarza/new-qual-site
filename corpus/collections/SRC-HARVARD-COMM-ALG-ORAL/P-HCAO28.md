@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define a term order, the initial ideal of an ideal, and a Gröbner basis.
 :::
 
-::: solution
+::: {.solution}
 Let $S=k[x_1,\ldots,x_n]$.
 
 <1>1. A term order is a total order $\prec$ on the monomials of $S$ such that
@@ -38,7 +38,7 @@ $1\preceq m$ for every monomial $m$ and
 m\prec n\implies mp\prec np
 \]
 for every monomial $p$.
-::: proof
+::: {.proof}
 These conditions make $\prec$ a multiplicative well-order: there is no infinite
 strictly descending sequence of monomials. This is the structure needed for
 multivariate division to terminate.
@@ -46,7 +46,7 @@ multivariate division to terminate.
 
 <1>2. For $0\ne f\in S$, its initial monomial $\operatorname{in}_\prec(f)$ is
 the largest monomial occurring in $f$ with respect to $\prec$.
-::: proof
+::: {.proof}
 The support of $f$ is finite, so it has a largest element under the total order.
 If one includes the coefficient, the corresponding object is usually called
 the leading term; the generated monomial ideal is unchanged by nonzero scalar
@@ -58,7 +58,7 @@ coefficients.
 \operatorname{in}_\prec(I)
 =\langle \operatorname{in}_\prec(f):0\ne f\in I\rangle.
 \]
-::: proof
+::: {.proof}
 This is a monomial ideal by construction.
 :::
 
@@ -69,7 +69,7 @@ of $I$ with respect to $\prec$ if
 =\langle \operatorname{in}_\prec(g_1),\ldots,
 \operatorname{in}_\prec(g_r)\rangle.
 \]
-::: proof
+::: {.proof}
 This is the defining property. Equivalently, every nonzero $f\in I$ has initial
 monomial divisible by the initial monomial of some $g_i$.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-08
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 8"
+title: Continuous surjections and bijections between $(0,1)$ and $[0,1]$
 classification:
   areas:
   - prelim

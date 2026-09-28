@@ -8,6 +8,7 @@ classification:
   - real-analysis
   topics:
   - Convergence Theorems
+  - Lebesgue Integration
 relations: []
 review: draft
 audit:
@@ -21,6 +22,10 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "The same dyadic-average statement appears in September 2009 problem 3 and in problem 1 of both undated packets (pp. 4-5 and 6-7); merged the duplicate card P-JHUU45RA1, whose Lebesgue-point estimate replaces the less explicit solution."
 ---
 
 ::: {.problem}
@@ -36,24 +41,25 @@ Prove that $E_nf(x)\to f(x)$ for almost every $x\in[0,1]$.
 :::
 
 ::: {.solution}
-The dyadic endpoints form a countable set, hence a null set. Fix $x\in(0,1)$ that is not a dyadic endpoint. For each $n$ there is then a unique dyadic interval $I_n(x)$ of length $2^{-n}$ containing $x$, and
+Except at dyadic endpoints, for each $n$ there is a unique interval $I_n(x)$ of length $2^{-n}$ containing $x$, and
 \[
 E_nf(x)=\frac1{|I_n(x)|}\int_{I_n(x)}f(t)\,dt.
 \]
-Moreover,
+The intervals $I_n(x)$ shrink to $x$ and satisfy
 \[
-x\in I_n(x),
-\qquad
-|I_n(x)|=2^{-n}\longrightarrow0.
+I_n(x)\subset[x-2^{-n},x+2^{-n}].
 \]
-
-By the Lebesgue differentiation theorem, for almost every $x\in[0,1]$,
+If $x$ is a Lebesgue point of $f$, then
 \[
-\frac1{|I|}\int_I f(t)\,dt\longrightarrow f(x)
+\begin{aligned}
+|E_nf(x)-f(x)|
+&\le \frac1{|I_n(x)|}\int_{I_n(x)}|f(t)-f(x)|\,dt\\
+&\le 2\cdot\frac1{2^{1-n}}\int_{x-2^{-n}}^{x+2^{-n}}|f(t)-f(x)|\,dt.
+\end{aligned}
 \]
-whenever intervals $I$ contain $x$ and their lengths tend to $0$. Applying this to the dyadic intervals $I_n(x)$ gives
+The last expression tends to $0$ by the Lebesgue differentiation theorem. Since almost every point of $[0,1]$ is a Lebesgue point of $f$, and the dyadic endpoints form a countable set, we obtain
 \[
 E_nf(x)\longrightarrow f(x)
 \]
-for almost every non-dyadic $x$. Since the dyadic endpoints themselves form a null set, the conclusion holds almost everywhere on $[0,1]$.
+for almost every $x\in[0,1]$.
 :::

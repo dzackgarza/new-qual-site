@@ -23,7 +23,7 @@ Let $p: X \to Y$ be a quotient map.
 Show that if each set $p^{-1}(\ts{y})$ is connected, and if $Y$ is connected, then $X$ is connected.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if $p: X \to Y$ is a quotient map with connected fibers $p^{-1}(\{y\})$ over a connected base $Y$, then the total space $X$ is connected.
 
 <1>1. Setting and hypothesis:

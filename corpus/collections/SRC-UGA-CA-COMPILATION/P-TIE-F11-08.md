@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F11-08
 kind: problem
-title: Questions from Tie — Fall 2011, question 8
+title: Fundamental theorem of algebra via Rouché's theorem
 classification:
   areas:
   - complex-analysis

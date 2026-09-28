@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $\operatorname{Ext}(\mathbb{Z}_{p^\infty}, \mathbb{Z}_p) \approx \mathbb{Z}_p$.
+:::
 
 ::: {.solution}
 Choose generators $x_n$ of $\mathbb Z_{p^\infty}$ with $x_n$ of order $p^n$ and

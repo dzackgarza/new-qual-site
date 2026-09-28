@@ -26,7 +26,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f: \RR \to \CC$ be continuous with period 1. Prove that
 \[
 \lim _{N \rightarrow \infty} \frac{1}{N} \sum_{n=1}^{N} f(n \alpha)=\int_{0}^{1} f(t) d t \quad \forall \alpha \in \RR\setminus\QQ.
@@ -35,9 +35,9 @@ Let $f: \RR \to \CC$ be continuous with period 1. Prove that
 > Hint: show this first for the functions $f(t) = e^{2\pi i k t}$ for $k\in \ZZ$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the limit for the exponential basis functions.
-::: proof
+::: {.proof}
 For $k\in\mathbb Z$, let
 \[
 e_k(t)=e^{2\pi i kt}.
@@ -68,7 +68,7 @@ Thus the desired limit holds for every exponential $e_k$, and therefore for ever
 :::
 
 <1>2. Pass from trigonometric polynomials to continuous periodic functions.
-::: proof
+::: {.proof}
 Trigonometric polynomials are uniformly dense in the continuous $1$-periodic functions. Fix $\varepsilon>0$ and choose a trigonometric polynomial $P$ with
 \[
 \|f-P\|_\infty<\varepsilon.

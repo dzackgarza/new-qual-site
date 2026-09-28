@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2019
 ---
-
-::: remark
-Exam #5 is the complete Schwarz–Pick statement [[P-ZAVLU]]. Spring 2021 #5 includes the equality case.
-:::

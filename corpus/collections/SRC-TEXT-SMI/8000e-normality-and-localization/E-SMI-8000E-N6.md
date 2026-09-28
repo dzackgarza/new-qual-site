@@ -31,14 +31,14 @@ Conclude that there is only this one maximal ideal in $R_P$.
 :::
 
 
-::: solution
+::: {.solution}
 Recall
 $$
 R_P=\left\{\frac as:a\in R,\ s\notin P\right\}.
 $$
 
 <1>1. The extended ideal $PR_P$ consists exactly of fractions whose numerator lies in $P$.
-::: proof
+::: {.proof}
 Certainly, if $a\in P$ and $s\notin P$, then
 $$
 \frac as=\frac a1\cdot\frac1s\in PR_P.
@@ -60,7 +60,7 @@ $$
 :::
 
 <1>2. Every element outside $PR_P$ is a unit.
-::: proof
+::: {.proof}
 Let
 $$
 \frac as\in R_P\setminus PR_P.
@@ -78,7 +78,7 @@ element outside $PR_P$ is a unit.
 :::
 
 <1>3. The ideal $PR_P$ is proper and maximal.
-::: proof
+::: {.proof}
 The element $1=1/1$ is not in $PR_P$ because $1\notin P$, so $PR_P$ is
 proper.
 
@@ -94,7 +94,7 @@ Therefore $PR_P$ is maximal.
 :::
 
 <1>4. It is the unique maximal ideal of $R_P$.
-::: proof
+::: {.proof}
 Let $\mathfrak m$ be any proper ideal of $R_P$. A proper ideal cannot contain
 a unit. By step <1>2, every element outside $PR_P$ is a unit. Hence
 $$

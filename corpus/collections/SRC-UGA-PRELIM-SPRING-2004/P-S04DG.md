@@ -16,11 +16,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Diagonalize the matrix $A = \begin{bmatrix} 1 & 2 \\ 4 & -1 \end{bmatrix}$ and use the diagonal form of $A$ to compute $A^2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The characteristic polynomial of $A$ is
 \[
 \chi_A(\lambda)=\det(\lambda I-A)=\lambda^2-9.
@@ -63,5 +63,4 @@ The columns of $P$ are the two eigenvectors from <1>2. Since they correspond to 
 A^2=PD^2P^{-1}=P(9I_2)P^{-1}=9I_2
 =\begin{bmatrix}9&0\\0&9\end{bmatrix}.
 \]
-:::
 :::

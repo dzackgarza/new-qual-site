@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find an identity for $\cos(4\theta)$ in terms of $\sin(\theta)$ and $\cos(\theta)$.
 :::
 
-:::{.solution}
+::: {.solution}
 Write $x=\cos(\theta), y= \sin(\theta)$, so $e^{i\theta} = x+iy$.
 Then
 \[

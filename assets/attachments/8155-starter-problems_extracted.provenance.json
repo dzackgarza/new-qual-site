@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/8155-starter-problems.pdf",
+  "source_pdf_sha256": "3e84f91305aacf5517ec69ec065e0748d917dee2fa6d4d8ededd2adfd67c09e7",
+  "extracted_markdown": "assets/attachments/8155-starter-problems_extracted.md",
+  "extracted_markdown_sha256": "8a588faa26f2a52d61f5ae7697989f3983525430b44ae0827851cdeb5954c798",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/8155-starter-problems.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/8155-starter-problems.md",
+  "card_comparison": "The deterministic extraction contains seven numbered Math 8155 starter problems. SRC-UGA-MATH8155-STARTER-PROBLEMS lists seven cards in the same source order, and each live card preserves the mathematical obligation of its corresponding extracted problem. The collection itself already existed before this extraction audit; no collection file is modified here because four of its paths carry concurrent formatting-only worktree edits.",
+  "known_source_or_extractor_defects": [
+    "Problem 1 contains a duplicated equals sign in the parenthetical de Moivre identity. P-UGA8155-SP-01 records the single intended equality.",
+    "Problem 6 contains an extra plus sign before '= -1' in the cosine sum and drops the word 'sin' from the final displayed summand of the sine sum. P-UGA8155-SP-06 restores the repeated trigonometric pattern stated by the problem."
+  ]
+}

@@ -18,7 +18,7 @@ review: draft
 Prove that for $a> 0$, $z\tan z - a$ has only real roots.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 z=x+iy

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a (perhaps knotted) subspace of $S^5$ which is homeomorphic to the $3$-sphere.
 Let $N$ be a closed regular neighbourhood of $K$, so that $N$ is homotopy equivalent to $K$.
 Let $X$ be $S^5$ minus the interior of $N$, so that $X$ is a compact $5$-manifold with boundary.

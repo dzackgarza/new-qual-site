@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a (positive) Borel measure on $[0, 1]$ and denote by $m$ the Lebesgue measure.
 Assume
 $$
@@ -42,9 +42,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Represent the derivative functional on $L^2$.
-::: proof
+::: {.proof}
 Define
 \[
 L(f):=\int_{[0,1]}f'\,d\mu,
@@ -66,7 +66,7 @@ for every $f\in C^1([0,1])$.
 :::
 
 <1>2. Identify the measure on the open interval.
-::: proof
+::: {.proof}
 Restrict the preceding identity to $f\in C_c^1((0,1))$. In the sense of distributions on $(0,1)$,
 \[
 D\mu=-v.
@@ -91,7 +91,7 @@ there.
 :::
 
 <1>3. Rule out endpoint atoms.
-::: proof
+::: {.proof}
 Choose $\psi\in C_c^1([0,1))$ with $0\le\psi\le1$ and $\psi(0)=1$. For $\varepsilon>0$, define
 \[
 f_\varepsilon(x):=\int_0^x \psi(t/\varepsilon)\,dt.
@@ -118,7 +118,7 @@ Consequently
 :::
 
 <1>4. Prove the Hölder estimate for the Radon--Nikodym density.
-::: proof
+::: {.proof}
 The density $u=c-V$ has an absolutely continuous representative satisfying
 \[
 u'(x)=-v(x)

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-TU4G5
 kind: proposition
-title: Known Euler characteristics
+title: Closed odd-dimensional manifolds have Euler characteristic zero
+slogan: 'Every closed odd-dimensional manifold has Euler characteristic zero.'
 classification:
   areas:
   - topology
@@ -14,5 +15,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $M^n$ is closed and $n$ is odd, then $\chi(M^n) = 0$.
+Let $M$ be a closed manifold of odd dimension.
+Then $\chi(M) = 0$ [@Hat02].
 :::

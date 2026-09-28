@@ -24,7 +24,9 @@ audit:
   note: Verified the determinant or transfer-sequence argument, including the mod-2 endpoint maps.
 ---
 
+::: {.problem}
 Use the transfer sequence for the covering $S^\infty \to \mathbb{RP}^\infty$ to compute $H_n(\mathbb{RP}^\infty; \mathbb{Z}_2)$.
+:::
 
 ::: {.solution}
 Let

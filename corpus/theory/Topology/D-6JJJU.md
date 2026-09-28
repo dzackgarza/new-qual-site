@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-6JJJU
 kind: definition
-title: Locally Finite
+title: Locally finite collection of subsets
 classification:
   areas:
   - topology
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A collection of subsets $\mcs$ of $X$ is *locally finite* iff each point of $M$ has a neighborhood that intersects at most finitely many elements of $\mcs$.
+Let $X$ be a topological space.
+A collection $\mcs$ of subsets of $X$ is \dfn{locally finite} if every $x\in X$ has a [[D-JMRPA|neighborhood]] $U$ such that $U\intersect S\neq\emptyset$ for only finitely many $S\in\mcs$.
 :::

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $b \in \mathbb{D}$ and set $f(z) = z^7 - 2z^5 + b$.
 
 (a) How many roots (counting multiplicity) does $f$ have in $\mathbb{D}$?
@@ -21,7 +21,7 @@ How many simple roots does $f$ have in $\mathbb{D}$?
 (b) How many simple roots does $f$ have in $\{1 \leq |z| < 2\}$?
 :::
 
-::: solution
+::: {.solution}
 On $|z|=1$,
 \[
 |z^7+b|\le 1+|b|<2=|-2z^5|.

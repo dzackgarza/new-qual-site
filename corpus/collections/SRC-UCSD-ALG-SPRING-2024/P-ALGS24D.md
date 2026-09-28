@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring and $I, J \trianglelefteq A$.
 Suppose $A/I$ is a flat $A$-module.
 

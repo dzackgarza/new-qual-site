@@ -25,7 +25,7 @@ audit:
   note: Corrected the legacy proof of (2) implies (1), which had reversed the set difference in the continuity-from-above step.
 ---
 
-::: problem
+::: {.problem}
 Let $\mu$ be a finite Borel measure on $\RR^n$ and $E$ be a Borel subset of $\RR^n$.
 Prove that the following two statements are equivalent:
 
@@ -39,9 +39,9 @@ $$
 H \subseteq E \subseteq V \quad \text{and}\quad \mu(V\setminus H) = 0.
 $$
 :::
-::: solution
+::: {.solution}
 <1>1. Prove (1) implies (2).
-::: proof
+::: {.proof}
 For each $k\ge1$, apply (1) with $\varepsilon=2^{-k}$ to obtain a closed set $F_k$ and an open set $G_k$ such that
 \[
 F_k\subseteq E\subseteq G_k,
@@ -73,7 +73,7 @@ Letting $k\to\infty$ gives
 :::
 
 <1>2. Prove (2) implies (1).
-::: proof
+::: {.proof}
 Write
 \[
 V=\bigcap_{k=1}^\infty V_k,

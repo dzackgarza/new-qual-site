@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-U5QSY
 kind: theorem
 title: The Jacobian, Abel's theorem, and the Abel--Jacobi map
+slogan: 'The Jacobian geometrizes degree-zero divisors: Abel kills exactly the principal ones, and Jacobi inversion reaches every divisor class.'
 classification:
   areas:
   - algebraic-geometry
@@ -28,7 +29,7 @@ For $X$ a smooth projective curve of genus $g$ over $\CC$,
 \Jac(X) = H^0(X,\Omega^1)\dual / H_1(X,\ZZ) ,
 \]
 a complex torus of dimension $g$, and an abelian variety.
-The **Abel--Jacobi map** sends a degree-zero divisor $\sum (p_i - q_i)$ to $\sum \int_{q_i}^{p_i}$, a linear functional on $H^0(\Omega^1)$ taken modulo periods.
+The \dfn{Abel--Jacobi map} sends a degree-zero divisor $\sum (p_i - q_i)$ to $\sum \int_{q_i}^{p_i}$, a linear functional on $H^0(\Omega^1)$ taken modulo periods.
 :::
 
 ::: {.theorem title="Abel"}
@@ -44,6 +45,6 @@ The Abel--Jacobi map is surjective, so $\Jac(X)$ is exactly the group of degree-
 The significance is the sentence the two theorems combine to: the Jacobian is a projective variety whose points are the degree-zero line bundles on $X$, so a discrete-looking classification problem becomes a geometric object of dimension $g$.
 
 Fixing a base point $p_0$ gives $X \to \Jac(X)$, $p \mapsto [p - p_0]$, which is an embedding for $g \geq 1$.
-In genus $1$ it is an isomorphism: an elliptic curve is its own Jacobian, and the group law on $E$ is the statement that $[p] + [q] = [r] + [0]$ exactly when $p + q = r$ under that law.
+In genus $1$ it is an isomorphism: an elliptic curve is its own Jacobian, and the group law on $E$ is the statement that $[p]+[q]=[r]+[0]$ exactly when $p+q=r$.
 Everything special about elliptic curves is this coincidence of $X$ with $\Jac X$.
 :::

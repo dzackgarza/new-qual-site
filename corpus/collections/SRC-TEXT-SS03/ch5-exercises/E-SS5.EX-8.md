@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 8. Prove that for every z the product below converges, and
 
 $$
@@ -25,7 +25,7 @@ $$
 [Hint: Use the fact that sin $2 z = 2 \sin z \cos z . ]$
 :::
 
-::: solution
+::: {.solution}
 Iterating the double-angle identity
 \[
 \sin(2w)=2\sin w\cos w

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 7. The Beta function is defined for $\mathrm { R e } ( \alpha ) > 0$ and $\operatorname { R e } ( \beta ) > 0$ by
 
 $$
@@ -35,7 +35,7 @@ $$
 and make the change of variables $s = u r , t = u ( 1 - r ) . ]$
 :::
 
-::: solution
+::: {.solution}
 For $\Re\alpha,\Re\beta>0$,
 \[
 \Gamma(\alpha)\Gamma(\beta)

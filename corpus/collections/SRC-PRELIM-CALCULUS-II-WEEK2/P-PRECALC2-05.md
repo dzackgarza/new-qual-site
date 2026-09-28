@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-05
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 5'
+title: Antiderivative of $\frac{x+2}{x^3-x^2+2x-2}$
 classification:
   areas:
   - prelim

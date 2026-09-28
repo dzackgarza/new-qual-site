@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 7. Generators of the subgroups:
 
 8. $\left< ab^{-1}, aba^{-2}, a^3b^{-1}a^{-2}, a^3\right>$

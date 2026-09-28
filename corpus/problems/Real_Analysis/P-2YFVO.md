@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
 
 - Show that if $f\in L^1$ and $g$ is bounded, then  $f\ast g$ is bounded and uniformly continuous.

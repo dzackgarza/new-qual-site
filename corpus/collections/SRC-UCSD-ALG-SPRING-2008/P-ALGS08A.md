@@ -24,7 +24,7 @@ audit:
   note: Checked the conjugate count against the normalizer index and the strict union bound for a proper subgroup.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and $H$ a proper subgroup.
 Show that $G$ is not the set-theoretic union of the conjugates of $H$.
 :::

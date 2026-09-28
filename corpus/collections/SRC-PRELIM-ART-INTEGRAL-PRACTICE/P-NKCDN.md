@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int e^x\cos x\,dx
@@ -31,7 +31,7 @@ Evaluate
 \]
 :::
 
-::: solution
+::: {.solution}
 Integrating the first integral by parts twice yields
 \[
 \boxed{\int e^x\cos x\,dx=\frac12e^x(\cos x+\sin x)+C.}

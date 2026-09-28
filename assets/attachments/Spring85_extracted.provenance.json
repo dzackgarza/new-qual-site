@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring85.pdf",
+  "source_pdf_sha256": "fc17428f8b8dcb9bef214b9a90277b25b9b1e4b819bbf4e221962a62ab5f6932",
+  "extracted_markdown": "assets/attachments/Spring85_extracted.md",
+  "extracted_markdown_sha256": "ae89b3f06b3ac1f40a0afaafb11255bf22a3ab7acc78bcab9b9c03c21778dad9",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring85.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring85.md",
+  "old_unknown_provenance_sha256": "ae89b3f06b3ac1f40a0afaafb11255bf22a3ab7acc78bcab9b9c03c21778dad9",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1985, containing Problems 1 through 20 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1985 collection represents all 20 source positions in order with 20 source-local cards. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

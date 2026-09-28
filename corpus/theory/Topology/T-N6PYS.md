@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-N6PYS
 kind: theorem
-title: Maps from compact to Hausdorff spaces, Lee A.52
+title: Maps from compact spaces to Hausdorff spaces
+slogan: 'Continuous maps from compact to Hausdorff spaces are closed; surjections are quotient maps, injections embeddings, and bijections homeomorphisms.'
 classification:
   areas:
   - topology
@@ -16,13 +17,14 @@ review: draft
 ---
 
 ::: {.theorem}
-If $f:X\to Y$ is continuous where $X$ is compact and $Y$ is Hausdorff, then
+Let $f\colon X\to Y$ be continuous, with $X$ compact and $Y$ [[D-ZFRV4|Hausdorff]].
+Then
 
-- $f$ is a closed map.
+- $f$ is a closed map [@Mun00];
 
-- If $f$ is surjective, $f$ is a quotient map.
+- if $f$ is surjective, $f$ is a quotient map [@Lee12];
 
-- If $f$ is injective, $f$ is a topological embedding.
+- if $f$ is injective, $f$ is a [[D-9KQZT|topological embedding]] [@Lee12];
 
-- If $f$ is bijective, it is a homeomorphism.
+- if $f$ is bijective, $f$ is a homeomorphism [@Mun00].
 :::

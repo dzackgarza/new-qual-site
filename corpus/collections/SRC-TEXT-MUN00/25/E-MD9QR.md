@@ -23,7 +23,7 @@ Show that the ordered square is locally connected but not locally path connected
 What are the path components of this space?
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Let $\mathrm{Ord}^2$ be the unit square with the order topology from the lexicographic order.
 

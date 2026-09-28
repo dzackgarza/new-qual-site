@@ -24,7 +24,7 @@ audit:
   note: "Verified the triangular-ring example by finite right-module length and an explicit infinite descending chain of left ideals; proved the semiprime variant impossible using the Artinian radical theorem and Wedderburn-Artin."
 ---
 
-::: problem
+::: {.problem}
 Give an example of a ring with the right minimum condition, but not the left.
 Can you find such an example with no nonzero nilpotent ideals?
 Why?

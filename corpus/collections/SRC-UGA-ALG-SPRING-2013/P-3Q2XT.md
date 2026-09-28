@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Define a **Euclidean domain**.
 
 (b) Define a **unique factorization domain (UFD)**.
@@ -24,7 +24,7 @@ review: draft
 (d) Is every UFD a Euclidean domain? Give either a proof or a counterexample with justification.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Define Euclidean domains and UFDs, prove that every Euclidean domain is a UFD in (c), and provide a counterexample showing the converse is false in (d).
 
 <1>1. Part (a): Definition of a Euclidean domain.

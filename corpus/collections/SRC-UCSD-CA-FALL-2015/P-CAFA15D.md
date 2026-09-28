@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate $\int_0^{\infty} \frac{\cos x}{x^6 + 1}\,dx$.
 :::
 
-::: solution
+::: {.solution}
 Integrate
 \[
 F(z)=\frac{e^{iz}}{z^6+1}

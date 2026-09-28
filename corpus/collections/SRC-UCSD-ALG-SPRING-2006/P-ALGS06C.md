@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime number.
 
 (a) Show that the order of $1 + p$ in $(\mathbb{Z}/p^2\mathbb{Z})^\times$ is equal to $p$.

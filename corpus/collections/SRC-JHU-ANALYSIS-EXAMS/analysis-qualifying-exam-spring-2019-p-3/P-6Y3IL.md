@@ -23,6 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Question 1.1. Suppose that $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { d } ) , j = 1 , 2 , . . . ,$ and $f \in L ^ { 2 } (  { \mathbb { R } } ^ { d } )$ satisfy
 
 $$
@@ -42,10 +43,11 @@ Determine whether condition (A), together with weak convergence, implies
 \|f_j-f\|_2\to0.
 \]
 If not, give a counterexample.
+:::
 
-::: solution
+::: {.solution}
 <1>1. Construct a sequence satisfying the weighted pointwise bound.
-::: proof
+::: {.proof}
 Let
 \[
 Q=[0,1]^d,
@@ -65,7 +67,7 @@ M=(1+\sqrt d)^d.
 :::
 
 <1>2. Prove weak convergence to zero.
-::: proof
+::: {.proof}
 Fix $g\in L^2(\mathbb R^d)$. Since $Q$ has finite measure,
 \[
 g\mathbf1_Q\in L^1(Q)
@@ -87,7 +89,7 @@ f_j\rightharpoonup0
 :::
 
 <1>3. Show that strong convergence fails.
-::: proof
+::: {.proof}
 For every positive integer $j$,
 \[
 \begin{aligned}

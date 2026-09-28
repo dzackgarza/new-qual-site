@@ -18,7 +18,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Compute the fundamental group of the space obtained from two tori $S^1 \times S^1$ by identifying a circle $S^1 \times \{x_0\}$ in one torus with the corresponding circle $S^1 \times \{x_0\}$ in the other torus.
+:::
 
 ::: {.solution}
 <1>1. Decomposition of $X = T_1 \sqcup_C T_2$: <2>1. Let $T_1 = S^1 \times S^1$ and $T_2 = S^1 \times S^1$ be two tori, and let $C \cong S^1$ be the identified circle $S^1 \times \{x_0\}$.

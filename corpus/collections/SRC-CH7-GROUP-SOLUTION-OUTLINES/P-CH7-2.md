@@ -2,16 +2,21 @@
 schema: qual/card@1
 id: P-CH7-2
 kind: problem
-title: Chapter 7 group-theory exercise 2
+title: Index of the Klein four-subgroup in $S_4$
 classification:
   areas: [algebra]
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Stated the subgroup H of Exercise 1 in the statement, per page 1 of Ch7Sltns.pdf.
 ---
 
 ::: {.problem}
-Let H be as in Exercise 1. How many left cosets of H in $S _ { 4 }$ are there? (Determine this without listing them.)
+Let $H = \{(1), (12)(34), (13)(24), (14)(23)\}$ be as in Exercise 1. How many left cosets of $H$ in $S_4$ are there? (Determine this without listing them.)
 :::
 
 ::: {.solution}

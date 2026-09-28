@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-EFW6B
 kind: proposition
 title: Regular functions on a projective variety are constant
+slogan: 'A connected projective variety over an algebraically closed field has no nonconstant global regular functions.'
 classification:
   areas:
   - algebraic-geometry

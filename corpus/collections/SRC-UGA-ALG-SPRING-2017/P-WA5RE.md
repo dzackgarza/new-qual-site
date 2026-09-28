@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field and let $f(x) \in F[x]$.
 
 a. Define what a splitting field of $f(x)$ over $F$ is.
@@ -32,7 +32,7 @@ Fully justify your answer.
 c. Show that the extension $E/F$ in (b) is a Galois extension.
 :::
 
-::: solution
+::: {.solution}
 A splitting field of $f\in F[x]$ is an extension $L/F$ in which $f$ factors completely into linear factors and which is generated over $F$ by the roots of $f$.
 
 Now let $|F|=q$ and $[E:F]=n$. Then $E$ has $q^n$ elements. Every $a\in E$ satisfies $a^{q^n}=a$, so every element of $E$ is a root of

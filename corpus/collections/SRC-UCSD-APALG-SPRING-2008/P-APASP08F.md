@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Use the SF package to compute the two scalar products:
 
 **(a)**
@@ -36,7 +36,7 @@ $$
 2. Could you have predicted the answer for (b) given the answer for (a)?
 :::
 
-::: solution
+::: {.solution}
 For complex characters of a finite group, the scalar product
 \[
 \langle \alpha,\beta\rangle

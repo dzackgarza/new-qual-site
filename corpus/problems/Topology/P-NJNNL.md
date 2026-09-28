@@ -22,16 +22,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Let $X$ and $Y$ be topological spaces, and let $f: X \to Y$ be a continuous map.
 Prove that if $X$ is **compact**, then its image $f(X) \subseteq Y$ is compact.
 (2) Let $(X, d)$ be a metric space.
 Prove that if $X$ is **compact**, then $(X, d)$ is **complete** (every Cauchy sequence in $X$ converges to a limit in $X$).
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $X$ is compact and $f:X\to Y$ is continuous, then $f(X)$ is compact.
-::: proof
+::: {.proof}
 Let $\{V_\alpha\}$ be an open cover of $f(X)$. Then $\{f^{-1}(V_\alpha)\}$ is an open cover of $X$. Compactness gives finitely many indices $\alpha_1,\dots,\alpha_r$ with
 $$
 X=\bigcup_{j=1}^r f^{-1}(V_{\alpha_j}).
@@ -44,7 +44,7 @@ so the original cover has a finite subcover.
 :::
 
 <1>2. Every compact metric space is complete.
-::: proof
+::: {.proof}
 Let $(x_n)$ be Cauchy in compact metric $X$. Compact metric spaces are sequentially compact, so some subsequence $x_{n_k}$ converges to a point $x\in X$.
 
 Given $\varepsilon>0$, choose $N$ so that

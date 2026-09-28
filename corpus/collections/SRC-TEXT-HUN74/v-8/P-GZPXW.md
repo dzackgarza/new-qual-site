@@ -29,7 +29,7 @@ audit:
 If $n>2$ and $\zeta$ is a primitive $n$th root of unity over $\mathbb{Q}$, then $[\mathbb{Q}(\zeta + \zeta^{-1}): \mathbb{Q}]=\phi(n)/2.$
 :::
 
-::: solution
+::: {.solution}
 Put
 \[
 L=\QQ(\zeta),
@@ -41,7 +41,7 @@ L^+=\QQ(\zeta+\zeta^{-1}).
 \[
 [L:\QQ]=\phi(n).
 \]
-::: proof
+::: {.proof}
 The minimal polynomial of a primitive $n$th root of unity over $\QQ$ is the
 $n$th cyclotomic polynomial $\Phi_n(x)$, whose degree is $\phi(n)$. Hence
 \[
@@ -50,7 +50,7 @@ $n$th cyclotomic polynomial $\Phi_n(x)$, whose degree is $\phi(n)$. Hence
 :::
 
 <1>2. The element $\zeta$ is algebraic of degree at most $2$ over $L^+$.
-::: proof
+::: {.proof}
 Let
 \[
 t=\zeta+\zeta^{-1}\in L^+.
@@ -66,7 +66,7 @@ so
 :::
 
 <1>3. The field $L^+$ is contained in $\RR$, whereas $\zeta\notin\RR$.
-::: proof
+::: {.proof}
 Since
 \[
 \zeta+\zeta^{-1}=2\cos(2\pi/n),
@@ -82,7 +82,7 @@ Thus $\zeta\notin L^+$.
 \[
 [L:L^+]=2.
 \]
-::: proof
+::: {.proof}
 By <1>2 the degree is at most $2$. By <1>3 the inclusion $L^+\subsetneq L$ is
 proper, so the degree is not $1$.
 :::
@@ -91,7 +91,7 @@ proper, so the degree is not $1$.
 \[
 [\QQ(\zeta+\zeta^{-1}):\QQ]=\frac{\phi(n)}2.
 \]
-::: proof
+::: {.proof}
 The tower law and <1>1, <1>4 give
 \[
 \phi(n)=[L:\QQ]=[L:L^+][L^+:\QQ]=2[L^+:\QQ].

@@ -34,14 +34,14 @@ Show that $S$ is a set of canonical forms under equivalence for the set of all $
 :::
 
 
-::: solution
+::: {.solution}
 Two \(n\times m\) matrices over \(R\) are equivalent when one is obtained from
 the other by multiplication on the left and right by invertible matrices.
 We prove that every equivalence class contains exactly one matrix in \(S\).
 
 <1>1. Every \(n\times m\) matrix over \(R\) is equivalent to an element of
 \(S\).
-::: proof
+::: {.proof}
 By the Smith normal form theorem over a PID, every matrix \(A\) is equivalent
 to a diagonal matrix
 \[
@@ -65,7 +65,7 @@ equivalence class meets \(S\).
 <1>2. For \(1\le j\le\min(m,n)\), let \(\Delta_j(A)\) be the ideal generated
 by all \(j\times j\) minors of \(A\). Then \(\Delta_j(A)\) is invariant under
 matrix equivalence.
-::: proof
+::: {.proof}
 It is enough to check left or right multiplication by an invertible elementary
 matrix. Each \(j\times j\) minor after an elementary row operation is an
 \(R\)-linear combination of the original \(j\times j\) minors, so
@@ -87,7 +87,7 @@ with \(d_1\mid\cdots\mid d_r\), then for \(1\le j\le r\),
 \Delta_j(D)=(d_1d_2\cdots d_j),
 \]
 and for \(j>r\), \(\Delta_j(D)=0\).
-::: proof
+::: {.proof}
 Every nonzero \(j\times j\) minor of \(D\) is a product
 \(d_{i_1}\cdots d_{i_j}\) with
 \(1\le i_1<\cdots<i_j\le r\). Divisibility of the diagonal entries implies
@@ -100,7 +100,7 @@ minor vanishes.
 :::
 
 <1>4. Two matrices in \(S\) that are equivalent are equal.
-::: proof
+::: {.proof}
 Let their nonzero diagonal entries be
 \[
 d_1,\ldots,d_r
@@ -124,7 +124,7 @@ Hence the matrices are equal.
 :::
 
 <1>5. Therefore \(S\) is a set of canonical forms for matrix equivalence.
-::: proof
+::: {.proof}
 By <1>1 every equivalence class contains an element of \(S\), and by <1>4 it
 contains at most one.
 :::

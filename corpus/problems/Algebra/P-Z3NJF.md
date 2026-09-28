@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Identify both the orientation-preserving rotational symmetry group and the full Euclidean symmetry group of a regular tetrahedron, cube, and icosahedron.
 :::
 
-::: solution
+::: {.solution}
 For a regular tetrahedron, the rotational symmetry group acts faithfully on the four vertices. The orientation-preserving permutations are exactly the even permutations, so
 \[
 \operatorname{Rot}(\text{tetrahedron})\cong A_4.

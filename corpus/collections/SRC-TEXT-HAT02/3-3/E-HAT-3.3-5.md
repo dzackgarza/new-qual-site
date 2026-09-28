@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $M \times N$ is orientable iff $M$ and $N$ are both orientable.
+:::
 
 ::: {.solution}
 Suppose first that $M^m$ and $N^n$ are oriented. Around $(x,y)\in M\times N$, choose oriented coordinate balls $U\ni x$ and $V\ni y$. Give $U\times V$ the product orientation. If one changes either oriented chart by an orientation-preserving transition map, the product transition map has positive determinant. Hence these product orientations are compatible and $M\times N$ is orientable.

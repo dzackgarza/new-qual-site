@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic on the punctured unit disk and suppose
 \[
 |f(z)|\leq \frac1{\sqrt{|z|}}.
@@ -20,7 +20,7 @@ Let $f$ be holomorphic on the punctured unit disk and suppose
 Show that the singularity at the origin is removable.
 :::
 
-::: solution
+::: {.solution}
 Write the Laurent expansion
 \[
 f(z)=\sum_{n=-\infty}^{\infty}a_nz^n

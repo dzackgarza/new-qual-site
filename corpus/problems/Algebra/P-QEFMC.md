@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the Galois group of $x^n-1$ over $\QQ$ as a function of $n$.
 :::
 

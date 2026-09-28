@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{dx}{\sqrt{x^2+25}}
@@ -29,7 +29,7 @@ Evaluate
 \]
 :::
 
-::: solution
+::: {.solution}
 For the first integral, the standard hyperbolic/trigonometric substitution gives
 \[
 \boxed{\int\frac{dx}{\sqrt{x^2+25}}

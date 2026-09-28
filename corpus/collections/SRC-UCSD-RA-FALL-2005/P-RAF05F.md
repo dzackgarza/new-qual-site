@@ -26,7 +26,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and $0 \leq f_1 \leq f_2 \leq \cdots \leq f$ be nonnegative measurable functions on $X$ with $\lim f_j(x) = f(x)$ for almost every $x \in X$.
 
 (a) Prove that $\mu(f_j^{-1}((r, \infty])) \to \mu(f^{-1}((r, \infty)))$ as $j \to \infty$ for every $r \geq 0$, $r \in \mathbb{R}$.
@@ -34,9 +34,9 @@ Let $(X, \mathcal{M}, \mu)$ be a finite measure space, and $0 \leq f_1 \leq f_2 
 (b) Prove that $\int_X f \, d\mu = \int_0^\infty \mu(f^{-1}((r, \infty))) \, dr$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove convergence of the distribution functions.
-::: proof
+::: {.proof}
 Fix $r\ge0$ and set
 \[
 E_j:=\{x\in X:f_j(x)>r\},
@@ -71,7 +71,7 @@ that is,
 :::
 
 <1>2. Write $f$ as an integral of its superlevel indicators.
-::: proof
+::: {.proof}
 For every $x\in X$,
 \[
 f(x)=\int_0^\infty \mathbf1_{\{r<f(x)\}}\,dr.
@@ -80,7 +80,7 @@ Indeed, if $f(x)=a<\infty$, the integrand is the indicator of $(0,a)$; if $f(x)=
 :::
 
 <1>3. Apply Tonelli's theorem.
-::: proof
+::: {.proof}
 The function
 \[
 (x,r)\longmapsto \mathbf1_{\{r<f(x)\}}

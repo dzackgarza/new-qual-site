@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find the number of zeros in $\abs{z} < 2$ of
 \[
 h(z) \da z^5 + 3z + 1
@@ -22,7 +22,7 @@ h(z) \da z^5 + 3z + 1
 
 :::
 
-:::{.solution}
+::: {.solution}
 Strategy: bound the difference.
 
 - Big: $F(z) \da z^5$ so $\abs{F(z)} = 2^5 = 32$ on $\abs{z} = 2$

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Show that a countable union of null sets is null.
 :::
 

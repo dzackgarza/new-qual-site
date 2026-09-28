@@ -33,7 +33,7 @@ Describe the structure of the quotient ring $\mathbb{Z}[x]/I$ in as much detail 
 Do the same for the quotient ring $\mathbb{Z}[x]/J$ where $J = (2, x^3 + 3x^2 - x + 4)$.
 :::
 
-::: solution
+::: {.solution}
 The two rings are respectively $\mathbb F_4$ and
 $\mathbb F_2\times\mathbb F_4$.
 
@@ -44,7 +44,7 @@ $$
 \qquad q=x^2+x+1.
 $$
 
-::: proof
+::: {.proof}
 Coefficient reduction $\mathbb Z[x]\to\mathbb F_2[x]$ is
 surjective and has kernel $(2)$. For any $f\in\mathbb Z[x]$,
 the inverse image of $(\overline f)$ is $(2,f)$: if
@@ -63,7 +63,7 @@ E=\mathbb F_2[\alpha],\qquad
 \qquad E=\{0,1,\alpha,1+\alpha\}.
 $$
 
-::: proof
+::: {.proof}
 The polynomial $q$ has neither $0$ nor $1$ as a root. A
 reducible quadratic over a field has a linear factor and hence
 a root, so $q$ is irreducible. Polynomial division gives
@@ -86,7 +86,7 @@ $e(e-1)=0$ in a field; it has no nonzero zero divisors or nilpotents.
 <1>3. The second ring $B=\mathbb F_2[x]/(xq)$ is explicitly
 isomorphic to $\mathbb F_2\times E$.
 
-::: proof
+::: {.proof}
 Define
 $$
 \Theta:B\longrightarrow\mathbb F_2\times E,
@@ -116,7 +116,7 @@ Consequently $B\cong\mathbb F_2\times E$ as rings.
 
 <1>4. The product description determines the remaining ring structure.
 
-::: proof
+::: {.proof}
 The ring $B$ has eight elements, characteristic $2$, and
 additive group $C_2^3$. Equivalently, polynomial division
 gives the basis $1,[x],[x^2]$ over $\mathbb F_2$.

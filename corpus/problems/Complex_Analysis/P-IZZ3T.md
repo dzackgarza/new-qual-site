@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f, g: [0, 1] \to \RR$ where $f$ is Riemann integrable and for $x, y\in [0, 1]$,
 \[
 \abs{g(x) - g(y)} \leq \abs{f(x) - f(y)}
@@ -22,7 +22,7 @@ Suppose $f, g: [0, 1] \to \RR$ where $f$ is Riemann integrable and for $x, y\in 
 Prove that $g$ is Riemann integrable.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is Riemann integrable on $[0,1]$, it is bounded. Fix $x_0\in[0,1]$.
 Then
 \[

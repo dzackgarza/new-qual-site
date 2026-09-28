@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f: \DD \to \CC$ is holomorphic and let $d \definedas \sup_{z, w\in \DD}\abs{f(z) - f(w)}$ be the diameter of the image of $f$.
 Show that $2 \abs{f'(0)} \leq d$, and that equality holds iff $f$ is linear, so $f(z) = a_1 z + a_2$.
 
@@ -25,7 +25,7 @@ Show that $2 \abs{f'(0)} \leq d$, and that equality holds iff $f$ is linear, so 
 whenever $0<r<1$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 d=\operatorname{diam}f(\mathbb D).

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BXAUS
 kind: definition
-title: Sigma finiteness
+title: $\sigma$-finite measure spaces
 classification:
   areas:
   - real-analysis
@@ -13,5 +13,5 @@ review: draft
 ---
 
 ::: {.definition}
-A measure space $(X, \mcm, \mu)$ is **$\sigma\dash$finite** if $X$ can be written as a union of countably many measurable sets with finite measure.
+A [[D-QYLPH|measure]] space $(X, \mcm, \mu)$ is \dfn{$\sigma$-finite} if there exist sets $E_1,E_2,\ldots\in\mcm$ with $X=\bigcup_{k=1}^\infty E_k$ and $\mu(E_k)<\infty$ for every $k$.
 :::

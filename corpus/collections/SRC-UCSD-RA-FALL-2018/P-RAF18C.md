@@ -23,14 +23,14 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1(\mathbb{R}, m)$.
 Prove that $\lim_{n \to \infty} f(n^2 x) = 0$ for almost every $x \in \mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Estimate the exceptional sets at a fixed threshold.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$ and define
 \[
 E_n(\varepsilon):=\{x\in\mathbb R:|f(n^2x)|>\varepsilon\}.
@@ -56,7 +56,7 @@ m\bigl(\{|f|>\varepsilon\}\bigr)
 :::
 
 <1>2. Apply Borel--Cantelli at a countable family of thresholds.
-::: proof
+::: {.proof}
 By the Borel--Cantelli lemma, for each positive integer $j$, almost every $x$ belongs to only finitely many sets
 \[
 E_n(1/j).

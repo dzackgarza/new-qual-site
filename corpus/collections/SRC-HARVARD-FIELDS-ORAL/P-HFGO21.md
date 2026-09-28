@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Explain the relation between finite normal extensions and splitting fields.
 :::
 
-::: solution
+::: {.solution}
 Let $E/F$ be a finite extension.
 
 <1>1. If $E$ is the splitting field over $F$ of a polynomial in $F[x]$, then
 $E/F$ is normal.
-::: proof
+::: {.proof}
 Let $E$ be the splitting field of $f(x)\in F[x]$. Any $F$-embedding
 \[
 \sigma:E\hookrightarrow\overline F
@@ -47,7 +47,7 @@ for normality.
 
 <1>2. Conversely, every finite normal extension $E/F$ is the splitting field of
 some polynomial in $F[x]$.
-::: proof
+::: {.proof}
 Choose finitely many generators
 \[
 E=F(\alpha_1,\ldots,\alpha_r).

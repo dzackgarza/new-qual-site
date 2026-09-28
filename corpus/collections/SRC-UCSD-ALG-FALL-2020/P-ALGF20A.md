@@ -25,7 +25,7 @@ audit:
   note: Verified that conjugation factors through G/N and has trivial image, and that A4 with its normal Klein four subgroup satisfies the counterexample hypotheses.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $G$ is a finite group that has a normal subgroup $N$ with the following properties: the order of $N$ is $n$, $G/N$ is a cyclic group of order $m$, and $\gcd(m, \varphi(n)) = 1$ where $\varphi(n) := |\{ k \mid 1 \leq k \leq n,\; (k,n) = 1 \}|$.
 
 (1) Prove that if $N$ is cyclic, then $G$ is abelian.

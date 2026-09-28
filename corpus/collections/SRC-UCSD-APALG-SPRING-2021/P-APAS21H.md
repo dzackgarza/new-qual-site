@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the character table of the alternating subgroup $A_4$ of the symmetric group $S_4$.
 The group algebra of $A_4$ is isomorphic to a direct sum
 \[
@@ -23,7 +23,7 @@ of matrix algebras over $\mathbb{C}$.
 Determine $r$ and the numbers $n_1, \dots, n_r > 0$.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes of $A_4$ are
 \[
 C_1=\{1\},\qquad

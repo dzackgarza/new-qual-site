@@ -21,7 +21,7 @@ audit:
 Show that p-groups $\implies$ nilpotent
 :::
 
-::: solution
+::: {.solution}
 **Goal:** the upper central series of a finite $p$-group cannot stop below $G$, because the obstruction to continuing is a $p$-group with trivial center.
 
 <1>1. A nontrivial finite $p$-group has nontrivial center.

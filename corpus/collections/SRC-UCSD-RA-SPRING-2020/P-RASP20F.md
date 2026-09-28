@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\{c_n\} \in \mathbb{R}$ ($n = 0, 1, 2, \ldots$). Prove that the following two conditions (1) and (2) are equivalent:
 
 (1) There exists a signed Radon measure $\mu$ on $[0,1]$ such that
@@ -38,9 +38,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove that (1) implies (2).
-::: proof
+::: {.proof}
 Assume there is a signed Radon measure \(\mu\) on \([0,1]\) with
 \[
 \int_0^1 t^n\,d\mu(t)=c_n.
@@ -67,7 +67,7 @@ M=|\mu|([0,1]).
 :::
 
 <1>2. Define a bounded linear functional on polynomials from (2).
-::: proof
+::: {.proof}
 Assume (2). For a polynomial
 \[
 p(t)=\sum_{n=0}^N a_nt^n,
@@ -84,7 +84,7 @@ Hence \(L\) is bounded on the polynomial subspace of \(C([0,1])\).
 :::
 
 <1>3. Extend the functional and represent it by a signed Radon measure.
-::: proof
+::: {.proof}
 By the Weierstrass approximation theorem, polynomials are uniformly dense in \(C([0,1])\). Since \(L\) is bounded in the uniform norm, it extends uniquely by continuity to a bounded linear functional
 \[
 \widetilde L:C([0,1])\to\mathbb R.

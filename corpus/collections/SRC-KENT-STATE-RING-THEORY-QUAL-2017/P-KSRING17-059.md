@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-059
 kind: problem
-title: Kent State ring-theory qualifying problem 59
+title: Nonzero prime ideals of a principal ideal domain are maximal
 classification:
   areas: [algebra]
   topics: []

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-16
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 16'
+title: Derivative of the inverse of $\int_0^x\cos^2(t^2)\,dt$
 classification:
   areas:
   - prelim

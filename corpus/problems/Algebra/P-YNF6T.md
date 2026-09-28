@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose $|G| = pq$ with $p, q \geq 2$ prime, and let $H \le G$ be a proper subgroup.
 Prove that $H$ must be cyclic.
 :::
 
-::: solution
+::: {.solution}
 By Lagrange's theorem,
 \[
 |H|\mid pq.

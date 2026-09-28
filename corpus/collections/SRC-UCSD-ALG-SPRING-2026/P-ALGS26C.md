@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find the number of conjugacy classes of $\operatorname{GL}_3(\mathbb{F}_q)$, where $q$ is a power of a prime number.
 :::
 

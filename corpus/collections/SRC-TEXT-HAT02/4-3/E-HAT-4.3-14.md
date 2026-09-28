@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 For a space $B$, let $\mathcal{M}(B)$ denote the set of equivalence classes of maps $f: A \to B$ where $f_1: A_1 \to B$ is equivalent to $f_2: A_2 \to B$ if there exists a homotopy equivalence $g: A_1 \to A_2$ such that $f_1 \simeq f_2 g$.
 Show the natural map $\mathcal{F}(B) \to \mathcal{M}(B)$ is a bijection.
+:::
 
 ::: {.solution}
 Send a fibration \(p:E\to B\) to its class as a map in \(\mathcal M(B)\). A fiber homotopy equivalence is in particular a homotopy equivalence of total spaces commuting with the projections up to homotopy, so this gives a well-defined map

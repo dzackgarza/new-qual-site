@@ -38,7 +38,7 @@ $$
 is not empty.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the intersection $Y = \bigcap_{A \in \mathcal{A}} A$ of a nested (simply ordered by inclusion) family $\mathcal{A}$ of closed connected subsets in a compact Hausdorff space $X$ is non-empty and connected.
 
 <1>1. $Y$ is non-empty and compact:

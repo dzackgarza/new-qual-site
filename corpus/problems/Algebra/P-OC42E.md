@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and prove the injective and surjective forms of the four lemma for commutative diagrams of modules with exact rows.
 :::
 

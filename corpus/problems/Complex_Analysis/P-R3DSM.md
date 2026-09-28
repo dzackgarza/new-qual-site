@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove the following inequality, and explain when equality holds:
 \[
 \abs{z-w} \geq \abs{ \abs{z} - \abs{w} }
@@ -20,7 +20,7 @@ Prove the following inequality, and explain when equality holds:
 
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 \abs{z-w}^2 
 &= (z-w)(\bar z - \bar w) \\

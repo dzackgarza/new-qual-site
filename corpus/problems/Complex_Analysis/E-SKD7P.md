@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that any power series converges uniformly within its radius of convergence.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $S_N(z) \da \sum_{0\leq k\leq N} c_k (z-z_0)^k$ and $S \da \lim_{N\to\infty} S_N$.
 Suppose $R\da \qty{\limsup_k \abs{c_k}^{1\over k} }\inv$ is the radius of convergence and let $r\leq R$, we'll show $S_N\to S$ uniformly on any disc $\abs{z-z_0}< r$.
 

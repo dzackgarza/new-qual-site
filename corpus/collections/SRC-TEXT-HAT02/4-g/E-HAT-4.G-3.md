@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 What is the nerve of the cover of a simplicial complex by the open stars of its vertices?
+:::
 
 ::: {.solution}
 Let \(K\) be a simplicial complex and, for each vertex \(v\), let \(\operatorname{st}^{\circ}(v)\) be its open star. The nerve of this cover has one vertex for each vertex of \(K\).

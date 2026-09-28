@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such that $$|f(z)| \geq A |z|^N\ \text{for}\ |z| \geq R.$$ Show that (i) $f$ is a polynomial and (ii) the degree of $f$ is at least $N$.
 :::
 

@@ -1,0 +1,21 @@
+{
+  "source_pdf": "assets/attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf",
+  "source_pdf_sha256": "8813652f6cf7473c4052a926a894567ad2f6e28b5f4954c70eb2ac3451a36bd0",
+  "source_pages": 15,
+  "extracted_markdown": "assets/attachments/Won_-_Complex_Analysis_Qual_Sheet_extracted.md",
+  "extracted_markdown_sha256": "88547c6ca78ebc3c1d20b5c3cc9c78c03b4d89f938799513125d437284e17c35",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Won_-_Complex_Analysis_Qual_Sheet.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md",
+  "old_unknown_provenance_sha256": "88547c6ca78ebc3c1d20b5c3cc9c78c03b4d89f938799513125d437284e17c35",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "Robert Won, Complex Analysis Qual Sheet: an expository qualifying-exam review/reference sheet organized as Useful facts, Tricks, several theorem catalogs, Special Functions, analytic continuation/Riemann-surface material, and harmonic/subharmonic-function theory.",
+  "source_role": "reference/review sheet",
+  "numbering_reconciliation": "The inventory's 99-problem heuristic counted numbered facts, tricks, theorem statements, corollaries, and reference items. The fresh source contains no authored Problem or Exercise headings, so those numbered entries are not manufactured into problem cards.",
+  "resource_reconciliation": "wiki/complex-analysis/resources/books-notes.md already links both the upstream Robert Won review and this retained local PDF. No resource edit is required in this intake.",
+  "raw_control_bytes": 1,
+  "known_source_or_extractor_defects": ["The raw Flash baseline contains one C0 control byte (0x0f), retained verbatim and recorded rather than silently normalized."]
+}

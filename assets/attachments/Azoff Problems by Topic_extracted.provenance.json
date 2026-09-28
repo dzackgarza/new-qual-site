@@ -1,0 +1,12 @@
+{
+  "source_pdf": "assets/attachments/Azoff Problems by Topic.pdf",
+  "source_pdf_sha256": "bb30bdbb3a196f2d2d4f20322a8bb6fa81f5c98417d3b51aba23e3931c9dc020",
+  "extracted_markdown": "assets/attachments/Azoff Problems by Topic_extracted.md",
+  "extracted_markdown_sha256": "34cfbf040eb0472d407d27e7e0d26a0a796d070055552ebde0cb26ed50ab6ea8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/Azoff Problems by Topic.pdf' --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "byte-identical to assets/attachments/extracted/Azoff Problems by Topic.md",
+  "reconciliation": "The packet contains 89 source positions across nine topic blocks. 15 exact existing canonical owners are reused and 74 Azoff-owned problem cards represent the remaining source obligations. Concrete Flash defects corrected in cards are documented on the affected audit entries."
+}

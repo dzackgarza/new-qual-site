@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $L:\RR^5\to\RR^5$ be linear. Show that if $0$ is an eigenvalue of $L$, then $L$ is neither injective nor surjective.
 :::
 

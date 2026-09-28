@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\{f_n\}_{n \geq 1}$ be a sequence of functions in $L^2([0,1], m)$ such that $\|f_n\|_2 \leq 1$ for all $n \geq 1$.
 Assume that $\lim_{n \to \infty} f_n(x) = 0$ for almost every $x \in [0,1]$.
 
@@ -33,9 +33,9 @@ Assume that $\lim_{n \to \infty} f_n(x) = 0$ for almost every $x \in [0,1]$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Prove \(L^1\)-convergence.
-::: proof
+::: {.proof}
 Fix \(\varepsilon>0\). By Egorov's theorem, since \([0,1]\) has finite measure and \(f_n\to0\) almost everywhere, there exists a measurable set \(E\subset[0,1]\) with
 \[
 m(E)<\frac{\varepsilon^2}{4}
@@ -61,7 +61,7 @@ where the second term uses Cauchy--Schwarz and \(\|f_n\|_2\le1\). Thus
 :::
 
 <1>2. Give a counterexample for \(L^2\)-convergence.
-::: proof
+::: {.proof}
 Define
 \[
 f_n(x)=\sqrt n\,\mathbf1_{(0,1/n)}(x).

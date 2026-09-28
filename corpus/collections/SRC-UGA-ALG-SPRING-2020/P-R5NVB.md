@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 A=\left[\begin{array}{ccc}
@@ -40,7 +40,7 @@ Write down the minimal polynomial of $A$.
 > You should not need to compute $P\inv$.
 :::
 
-::: solution
+::: {.solution}
 The characteristic polynomial is
 \[
 \chi_A(x)=(x-2)^3.

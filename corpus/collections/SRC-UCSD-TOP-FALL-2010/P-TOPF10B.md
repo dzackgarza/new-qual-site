@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many distinct double covers does the Klein bottle have?
 Can you identify any of them?
 :::

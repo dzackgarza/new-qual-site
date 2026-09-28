@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{F}$ be the family of holomorphic functions $f : \mathbb{D} \to \mathbb{C}$ defined over the open unit disc with $f(0) = 1$ and $\operatorname{Re} f > 0$.
 Show that $\mathcal{F}$ is a normal family.
 :::
 
-::: solution
+::: {.solution}
 For $f\in\mathcal F$, define
 \[
 \phi_f(z)=\frac{f(z)-1}{f(z)+1}.

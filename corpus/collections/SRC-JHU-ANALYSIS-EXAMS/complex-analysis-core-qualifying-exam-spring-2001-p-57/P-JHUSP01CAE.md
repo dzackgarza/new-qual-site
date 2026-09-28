@@ -25,18 +25,18 @@ audit:
   note: "Normalized to a proper disk map, proved every disk value has the same multiplicity count as zero, and ruled out degree one because it would biholomorphically identify the annulus with the simply connected disk."
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic on $A=\{1<|z|<2\}$ and continuous on its closure.
 Assume that $f$ is nonconstant and $|f|=5$ on both boundary circles.
 Show that $f$ has at least two zeros in $A$, counted with multiplicity.
 :::
 
 
-::: solution
+::: {.solution}
 Set $F=f/5$.
 
 <1>1. The normalized map sends the annulus properly into the unit disk.
-::: proof
+::: {.proof}
 The function $F$ is holomorphic on $A$, continuous on $\overline A$, and has
 $|F|=1$ on both boundary circles. By the maximum modulus principle,
 $|F|\le1$ on $A$. Since $F$ is nonconstant, it cannot attain modulus one at an
@@ -54,7 +54,7 @@ In particular its zeros form a finite set; let $N$ be their total multiplicity.
 :::
 
 <1>2. Every value $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
-::: proof
+::: {.proof}
 Fix $w\in\Delta$. Choose $\rho$ with $|w|<\rho<1$. By the boundary continuity
 from step <1>1, choose radii $1<r_1<r_2<2$ so that every zero of $F$ lies in
 $r_1<|z|<r_2$ and
@@ -77,7 +77,7 @@ $w\in\Delta$ has exactly $N$ preimages counted with multiplicity.
 :::
 
 <1>3. The degree $N$ cannot be zero or one.
-::: proof
+::: {.proof}
 Choose any $z_0\in A$ and put $w_0=F(z_0)\in\Delta$. Step <1>2 shows that
 $w_0$ has exactly $N$ preimages counted with multiplicity, and it has at least
 the preimage $z_0$. Thus $N\ge1$.

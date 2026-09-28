@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume that $\mathbb{RP}^n$ can be covered by $k$ contractible closed subsets.
 Prove that $k > n$.
 

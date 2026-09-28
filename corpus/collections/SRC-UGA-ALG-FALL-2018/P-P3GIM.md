@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional vector space over a field $F$, and let $\phi: V \to V$ be a linear transformation.
 
 Prove that there exists a direct sum decomposition
@@ -24,7 +24,7 @@ $$
 where $U$ and $W$ are $\phi$-invariant subspaces of $V$, $\phi|_U$ is nilpotent, and $\phi|_W$ is invertible (nonsingular).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Fitting's Lemma for linear operators on finite-dimensional vector spaces using the stabilization of kernels and images of powers of $\phi$.
 
 <1>1. Stabilization of kernel and image chains:

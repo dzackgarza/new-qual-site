@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 5. **Main Idea**: Deformation retract $M$ onto its center circle; two spaces that deformation retract onto a common space are themselves homotopy equivalent.
 
 Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$ This is because $I$ is contractible, so $I \homotopic \theset{*}$.

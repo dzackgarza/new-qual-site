@@ -25,7 +25,7 @@ audit:
   note: "Checked the enclosed zeros, nonvanishing on the contour, local logarithmic-derivative residues and the two explicit values of the holomorphic weight."
 ---
 
-::: problem
+::: {.problem}
 Let $D=\{z\in\mathbb C:|z|<1\}$, and let $f:D\to\mathbb C$
 be holomorphic with simple zeros at $1/3$, $2/3$ and $i/4$
 and no other zeros. Evaluate
@@ -35,7 +35,7 @@ $$
 with counterclockwise orientation.
 :::
 
-::: solution
+::: {.solution}
 The integral is
 $$
 \boxed{-2\pi i\left(\frac89e^{1/3}+\frac{17}{16}e^{i/4}\right).}
@@ -43,7 +43,7 @@ $$
 
 <1>1. Each simple zero contributes the value of the holomorphic weight as a residue.
 
-::: proof
+::: {.proof}
 Set $W(z)=(z^2-1)e^z$. At a simple zero $a$ of $f$,
 the Taylor expansion gives $f(z)=(z-a)h(z)$ with $h$
 holomorphic and $h(a)\ne0$. In a sufficiently small disk,
@@ -61,7 +61,7 @@ on the unit disk.
 
 <1>2. The two enclosed zeros give the stated sum.
 
-::: proof
+::: {.proof}
 The zeros $1/3$ and $i/4$ lie inside $|z|=1/2$, while
 $2/3$ lies outside. None lies on the contour. The closed
 radius-one-half disk has a neighborhood contained in $D$,

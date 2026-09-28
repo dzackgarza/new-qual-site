@@ -46,11 +46,11 @@ c. Let $M$ be a maximal ideal of a commutative ring $R$ with 1 and $n$ be a posi
 Show that $R/M^n$ is a local ring.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $A$ is a local ring with unique maximal ideal $M$, then
 $A^\times=A\setminus M$.
 
-::: proof
+::: {.proof}
 A unit cannot lie in a proper ideal: if $u\in I$ and $u$ is a
 unit, then $1=u^{-1}u\in I$. Thus no element of $M$ is a unit.
 
@@ -69,7 +69,7 @@ $$
 \mathfrak m=\{x\in F:|x|<1\}.
 $$
 
-::: proof
+::: {.proof}
 The axioms imply $|0|=0$ and $|1|>0$. Multiplicativity gives
 $|1|=|1|^2$, hence $|1|=1$. Also $|-1|^2=|1|=1$ and
 $|-1|\geq0$, so $|-1|=1$ and $|-x|=|x|$.
@@ -97,7 +97,7 @@ $\mathfrak m=(0)$.
 
 <1>3. In part (c), the unique maximal ideal of $R/M^n$ is $M/M^n$.
 
-::: proof
+::: {.proof}
 Since $n\geq1$, one has $M^n\subseteq M\ne R$.
 Moreover,
 $$

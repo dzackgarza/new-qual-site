@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-10
-  note: Checked against Part I, item 4 of the Real Analysis section of the Wesleyan University Analysis Qualifier, Summer 2007, in analysis_2003-2007.pdf.
+  date: 2026-09-14
+  note: Checked against Part I, item 4 in the deterministic MinerU Flash extraction assets/attachments/analysis_2003-2007_extracted.md.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-10
@@ -21,11 +21,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give a precise statement of Egorov's theorem.
 :::
 
-::: solution
+::: {.solution}
 Let $(X,\mathcal A,\mu)$ be a finite measure space, and let $f_n,f:X\to\mathbb C$ be measurable functions such that
 \[
 f_n(x)\longrightarrow f(x)

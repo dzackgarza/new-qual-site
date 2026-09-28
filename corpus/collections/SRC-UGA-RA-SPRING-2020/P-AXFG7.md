@@ -24,7 +24,7 @@ audit:
 
 Let $m_*$ denote the Lebesgue outer measure on \( \RR \).
 
-::: problem
+::: {.problem}
 Let $m_*$ denote the Lebesgue outer measure on $\mathbb{R}$.
 
 (a) Prove that for every $E \subseteq \mathbb{R}$, there exists a Borel set $B \subseteq \mathbb{R}$ containing $E$ ($E \subseteq B$) such that
@@ -40,7 +40,7 @@ then there exists a Borel set $B \subseteq \mathbb{R}$ such that $E = B \setminu
 Be sure to address the case when $m_*(E) = \infty$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct a Borel $G_\delta$ hull $B \supseteq E$ with $m(B) = m_*(E)$ in (a), and apply Carathéodory's criterion with test set $A = B$ in (b) to show $E$ differs from $B$ by a null set.
 
 <1>1. Part (a): Case $m_*(E) < \infty$.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-15
 kind: problem
-title: Questions from Tie — Fall 2015, question 15
+title: Schwarz lemma for functions with positive real part
 classification:
   areas:
   - complex-analysis

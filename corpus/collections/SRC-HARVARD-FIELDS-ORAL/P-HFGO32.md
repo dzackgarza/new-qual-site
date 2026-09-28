@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $t$ be transcendental over $k$, and set
 $$
 x=\frac{t^3+2}{t^2+3}.
@@ -30,11 +30,11 @@ Is $x$ algebraic over $k$?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 No. The element $x$ is transcendental over $k$.
 
 <1>1. The element $t$ is algebraic over $k(x)$.
-::: proof
+::: {.proof}
 From
 \[
 x=\frac{t^3+2}{t^2+3}
@@ -51,7 +51,7 @@ so $t$ is algebraic over $k(x)$.
 :::
 
 <1>2. The element $x$ cannot be algebraic over $k$.
-::: proof
+::: {.proof}
 Suppose that $x$ were algebraic over $k$. Then the extension $k(x)/k$ would
 be algebraic. By <1>1, $t$ is algebraic over $k(x)$. Algebraicity is transitive,
 so $t$ would be algebraic over $k$, contradicting the hypothesis that $t$ is
@@ -59,7 +59,7 @@ transcendental over $k$.
 :::
 
 <1>3. Therefore $x$ is transcendental over $k$.
-::: proof
+::: {.proof}
 This is the negation of the impossible assumption in <1>2.
 :::
 :::

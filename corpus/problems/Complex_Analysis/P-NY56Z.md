@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $a>0$ and calculate
 \[
 \int_0^\infty {\cos(x) \over (x^2 + a^2)^2}\, dx
 .\]
 :::
 
-::: solution
+::: {.solution}
 Start from the standard residue evaluation
 \[
 I(a):=\int_0^\infty\frac{\cos x}{x^2+a^2}\,dx

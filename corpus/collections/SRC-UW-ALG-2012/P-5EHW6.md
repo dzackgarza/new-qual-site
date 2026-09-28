@@ -17,14 +17,14 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order 2012 up to isomorphism.
 
 > Hint: 503 is prime.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let \(G\) be a group of order
 \[
 |G|=2012=4\cdot 503.

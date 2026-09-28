@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 (a) Show that $a_1,\ldots,a_n\in\mathbb{R}^m$ are linearly independent over $\mathbb{C}$ iff they are linearly independent over $\mathbb{R}$.
 
 (b) Show that if $A\in M_n(\mathbb{R})$, then an eigenvalue $\lambda$ of $A$ is real iff it has a real corresponding eigenvector.

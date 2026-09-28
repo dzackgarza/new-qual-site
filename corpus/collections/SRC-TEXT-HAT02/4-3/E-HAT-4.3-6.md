@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Use Exercise 4 to construct a multiplication map $\mu: K(G, n) \times K(G, n) \to K(G, n)$ for any abelian group $G$, making a CW complex $K(G, n)$ into an H-space whose multiplication is commutative and associative up to homotopy and has a homotopy inverse.
 Show also that the H-space multiplication $\mu$ is unique up to homotopy.
+:::
 
 ::: {.solution}
 By Exercise 4, homotopy classes of maps

@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a commutative ring.
 Prove that any projective $A$-module is flat.
 (Hint: first prove it for free modules).

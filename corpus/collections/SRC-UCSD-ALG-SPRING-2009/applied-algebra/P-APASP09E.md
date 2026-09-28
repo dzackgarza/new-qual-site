@@ -24,7 +24,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $e_r$ be the $r$-th elementary symmetric function in the variables $x_1, x_2, \ldots, x_n$.
 
 (a) Show that the determinant of $\left(\frac{\partial e_i}{\partial x_j}\right)_{1 \leq i, j \leq n}$ is a homogeneous polynomial and calculate its degree.

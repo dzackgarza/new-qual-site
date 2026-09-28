@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{CP}^2$ be the complex projective plane.
 
 (a) Compute $\pi_1(\mathbb{CP}^2)$.

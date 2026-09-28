@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 19. Prove the maximum principle for harmonic functions, that is:
 
 (a) If u is a non-constant real-valued harmonic function in a region $\Omega ,$ , then u cannot attain a maximum (or a minimum) in Ω.
@@ -29,7 +29,7 @@ $$
 [Hint: To prove the first part, assume that u attains a local maximum at $z _ { \mathrm { 0 } }$ . Let f be holomorphic near $z _ { 0 }$ with $u = { \mathrm { R e } } ( f )$ , and show that $f$ is not open. The second part follows directly from the first.]
 :::
 
-::: solution
+::: {.solution}
 (a) Let $u$ be harmonic and suppose it has a local maximum at $z_0$. On a small disc $D$ about $z_0$, choose a harmonic conjugate $v$, so that
 \[
 F=u+iv

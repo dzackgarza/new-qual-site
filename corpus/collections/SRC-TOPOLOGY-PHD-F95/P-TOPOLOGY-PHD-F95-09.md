@@ -41,7 +41,7 @@ Describe the universal cover of $S^1\vee\mathbb{R}P^2$.
 (d) Describe the fundamental group of $S^1\vee\mathbb{R}P^2$.
 :::
 
-::: remark
+::: {.remark}
 In part (c), the source says that the displayed one-point union $S^1\vee\mathbb{R}P^2$ is obtained from the disjoint union of $S^2$ and $\mathbb{R}P^2$.
 The same sentence calls the first summand a circle, and both the beginning and end of the part display $S^1\vee\mathbb{R}P^2$.
 Thus the occurrence of $S^2$ is a source typo; the solution uses the intended space $S^1\vee\mathbb{R}P^2$.

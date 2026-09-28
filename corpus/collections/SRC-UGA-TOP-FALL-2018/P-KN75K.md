@@ -25,7 +25,7 @@ audit:
   note: Verified the explicit degree calculations and the normalized straight-line homotopy showing every fixed-point-free self-map of S^2 has degree -1.
 ---
 
-::: problem
+::: {.problem}
 For each $n\in\ZZ$, give an example of a map
 \[
 f_n:S^2\longrightarrow S^2

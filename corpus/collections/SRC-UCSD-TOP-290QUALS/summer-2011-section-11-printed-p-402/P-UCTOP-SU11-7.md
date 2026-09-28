@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that a closed orientable surface $\Sigma$ of genus $g \geq 1$ has $\pi_{\geq 2}(\Sigma_g) = 0$, and deduce that the fundamental group of $\Sigma_g$ is not a free group.
+:::
 
 ::: {.solution}
 <1>1. For $g=1$, the universal cover of $\Sigma_g=T^2$ is $\mathbb R^2$; for $g\ge2$, the universal cover is the open disk (equivalently the hyperbolic plane).

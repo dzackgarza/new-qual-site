@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that a Möbius transformation maps a straight line or circle onto a straight line or circle.
 :::
 
-::: solution
+::: {.solution}
 A generalized circle in $\widehat{\mathbb C}$ means either an ordinary circle or a straight line together with $\infty$. Such a set has an equation
 \[
 A|z|^2+Bz+\overline B\,\overline z+C=0,

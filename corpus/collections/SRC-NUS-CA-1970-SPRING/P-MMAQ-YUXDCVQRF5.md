@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Evaluate the following by the method of residues: $\int_0^{\pi /2} \frac{1}{3+\sin^2x}dx$
 :::
 

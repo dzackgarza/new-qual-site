@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 This question concerns the polynomial ring $R=\mathbb Z[x,y]$ and the ideal $I=(5,x^2+2)$ in $R$.
 
 - Prove that $I$ is a prime ideal of $R$ and that $R/I$ is a PID.
@@ -30,7 +30,7 @@ This question concerns the polynomial ring $R=\mathbb Z[x,y]$ and the ideal $I=(
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. There is an isomorphism
 \[
 R/I\cong \mathbb F_5[x,y]/(x^2+2).
@@ -105,5 +105,4 @@ By the correspondence theorem, maximal ideals of \(R\) containing \(I\) are in b
 R/I\cong\mathbb F_{25}[y].
 \]
 Since this is a PID, each monic irreducible \(q(y)\in\mathbb F_{25}[y]\) generates a maximal ideal \((q)\), and distinct monic irreducibles give distinct maximal ideals. By <1>5 there are infinitely many of them. Their inverse images under the quotient map \(R\to R/I\) are therefore infinitely many distinct maximal ideals of \(R\) containing \(I\).
-:::
 :::

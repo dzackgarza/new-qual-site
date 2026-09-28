@@ -27,7 +27,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Let $K$ be the set of numbers in $[0,1]$ whose decimal expansions do not use the digit $4$.
 
 Use the convention that when a decimal number ends with $4$ but all other digits are different from $4$, replace that terminating expansion by the equivalent expansion ending in $3999\ldots$; for example,
@@ -38,9 +38,9 @@ Use the convention that when a decimal number ends with $4$ but all other digits
 Show that $K$ is compact, nowhere dense, has no isolated points, and determine $m(K)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Construct finite-stage closed sets.
-::: proof
+::: {.proof}
 For $n\ge1$, let $K_n$ be the set of numbers in $[0,1]$ whose first $n$ digits, using the stated convention at terminating endpoints, avoid the digit $4$.
 
 Equivalently, at stage $n$ one deletes, for every admissible word $d_1\cdots d_{n-1}$ with each $d_j\ne4$, the open interval of numbers whose first $n-1$ digits are $d_1,\ldots,d_{n-1}$ and whose $n$th digit is $4$. Thus $K_n$ is a union of $9^n$ closed decimal cylinders, each of length $10^{-n}$. In particular, $K_n$ is compact and
@@ -55,7 +55,7 @@ Therefore $K$ is closed in the compact interval $[0,1]$, hence compact.
 :::
 
 <1>2. Compute the Lebesgue measure.
-::: proof
+::: {.proof}
 Since the $9^n$ stage-$n$ cylinders have disjoint interiors and length $10^{-n}$,
 \[
 m(K_n)=9^n10^{-n}=\left(\frac9{10}\right)^n.
@@ -74,7 +74,7 @@ Hence
 :::
 
 <1>3. Prove that $K$ is nowhere dense.
-::: proof
+::: {.proof}
 By Step 1, $K$ is closed. By Step 2, it has measure zero. A nonempty open interval has positive Lebesgue measure, so $K$ cannot contain any nonempty open interval. Thus
 \[
 \operatorname{int}(K)=\varnothing.
@@ -87,7 +87,7 @@ which is exactly that $K$ is nowhere dense.
 :::
 
 <1>4. Prove that $K$ has no isolated points.
-::: proof
+::: {.proof}
 Fix $x\in K$ and $\varepsilon>0$. Choose $n$ so large that
 \[
 10^{-n}<\varepsilon.

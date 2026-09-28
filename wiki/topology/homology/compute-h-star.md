@@ -11,48 +11,70 @@ topics:
 
 # Compute $H_*$
 
-Three methods, and again the presentation of the space decides.
+Three methods compute singular homology: cellular homology, the Mayer--Vietoris sequence, and the long exact sequence of a pair.
 
-## 1. Does it have a CW structure?
+## Cellular homology
 
-**Cellular homology.**
-The chain groups are free on the cells, $C_n = \ZZ^{\#\text{n-cells}}$, and the boundary maps are computed by degree: the coefficient of a $(n-1)$-cell in $\partial$ of an $n\dash$cell is the degree of the composite attaching map onto that cell's quotient sphere.
+::: {.fact title="Cellular homology"}
+For a [[D-ZOU5G|CW complex]] $X$, $H_*(X)$ is the homology of the [[D-A3PUW|cellular chain complex]], whose group $C_n$ is free abelian on the $n$-cells.
+The coefficient of an $(n-1)$-cell $e^{n-1}_\beta$ in $\del e^n_\alpha$ is the [[D-XC53X|degree]] of the composite of the attaching map $S^{n-1}\to X^{(n-1)}$ with the quotient $X^{(n-1)}\to X^{(n-1)}/\qty{X^{(n-1)}\sm e^{n-1}_\beta}\cong S^{n-1}$.
 
-This is the method for anything built from a polygon or given by a cell structure, and it is usually the fastest, since the chain complex is finite and small.
-Two shortcuts that follow immediately:
+:::
 
-- no cells in adjacent dimensions means every boundary map is zero, so $H_n$ is free on the $n\dash$cells -- this is why $\CP^n$ has homology $\ZZ$ in every even degree;
-- $H_n = 0$ above the top cell dimension, and $H_0 = \ZZ$ for a connected space.
+::: {.example}
+\envlist
 
-## 2. Does it split into two pieces?
+- If $X$ has no cells in any two adjacent dimensions, then every cellular boundary map is zero, so $H_n(X)$ is free on the $n$-cells; for $\CP^n$ this gives $\ZZ$ in each even degree $0,2,\ldots,2n$.
+- If $X$ has no cells above dimension $d$, then $H_n(X) = 0$ for $n>d$.
 
-**Mayer--Vietoris.**
-For $X = A\union B$ with interiors covering,
-\[
-\cdots \to H_n(A\intersect B) \to H_n(A)\oplus H_n(B)\to H_n(X)\to H_{n-1}(A\intersect B)\to\cdots
-.\]
+:::
 
-The same decompositions that work for van Kampen work here, and this is the method when the space is a union rather than a cell complex: a sphere as two discs, a connected sum along a separating sphere, a torus as two cylinders.
+## The Mayer--Vietoris sequence
 
-## 3. Is it a pair, or a quotient?
+::: {.theorem title="Mayer--Vietoris"}
+For subspaces $A,B\subseteq X$ whose interiors cover $X$, there is a long exact sequence
+$$
+\cdots \to H_n(A\intersect B) \to H_n(A)\oplus H_n(B)\to H_n(X)\to H_{n-1}(A\intersect B)\to\cdots.
+$$
 
-**The long exact sequence of a pair**, together with $H_n(X, A)\cong \tilde H_n(X/A)$ for good pairs.
-This is the method for a quotient: compute the pair instead, and read the quotient's reduced homology off the relative groups.
+:::
 
-## Choosing between them
+::: {.example title="Standard decompositions"}
+$S^n$ as the union of two open hemispherical caps meeting in a band $\homotopic S^{n-1}$; a connected sum $M\# N$ of $n$-manifolds as the union of $M$ and $N$ each minus an open ball, meeting in $S^{n-1}$; the torus as the union of two cylinders meeting in two disjoint circles.
 
-| The space is given as | Use |
+:::
+
+## Pairs and quotients
+
+::: {.theorem}
+For a pair $(X,A)$ there is a long exact sequence
+$$
+\cdots\to H_n(A)\to H_n(X)\to H_n(X,A)\to H_{n-1}(A)\to\cdots,
+$$
+and if $(X,A)$ is a good pair, the quotient map induces $H_n(X, A)\cong \tilde H_n(X/A)$ for all $n$.
+
+:::
+
+The reduced homology of a quotient $X/A$ of a good pair is therefore computed from the long exact sequence of $(X,A)$.
+
+## Choosing a method
+
+| The space is given as | Method |
 | --- | --- |
-| a cell complex, or a polygon with identifications | cellular |
-| a union of two understood pieces | Mayer--Vietoris |
-| a quotient $X/A$, or a pair | the long exact sequence |
-| a product | Künneth |
-| a covering space | transfer, or compute the base directly |
+| a cell complex, or a polygon with identifications | cellular homology |
+| a union of two subspaces with known homology | Mayer--Vietoris |
+| a quotient $X/A$ of a good pair, or a pair | the long exact sequence of the pair |
+| a product | the Künneth theorem |
 
-## Checks that catch errors
+## Consistency checks
 
-- $H_0 = \ZZ^{\#\text{components}}$, always.
-- $H_1$ is the abelianization of $\pi_1$, so it can be checked against [[topology/fundamental-group/compute-pi-1|a fundamental group computation]].
-- Euler characteristic: $\sum (-1)^n \rank H_n = \sum (-1)^n \#\ts{n\text{-cells}}$, computable two ways, and disagreement means an arithmetic slip.
-- For a closed orientable $n\dash$manifold, $H_n = \ZZ$; for a closed non-orientable one, $H_n = 0$ and there is $\ZZ/2$ torsion in $H_{n-1}$.
-  That last pair distinguishes the torus from the Klein bottle immediately.
+::: {.fact}
+\envlist
+
+- If $X$ has finitely many path components, $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$.
+- For path-connected $X$, $H_1(X)$ is the abelianization of $\pi_1(X)$, which can be compared with [[topology/fundamental-group/compute-pi-1|a fundamental group computation]].
+- For a finite CW complex $X$ with $c_n$ cells of dimension $n$, $\chi(X)=\sum_n (-1)^n \operatorname{rank} H_n(X) = \sum_n (-1)^n c_n$.
+- For a connected closed $n$-manifold $M$: if $M$ is orientable, $H_n(M) \cong \ZZ$ and $H_{n-1}(M)$ is free; if $M$ is non-orientable, $H_n(M) = 0$ and the torsion subgroup of $H_{n-1}(M)$ is $\ZZ/2$.
+  The torus and the Klein bottle have $H_1\cong\ZZ^2$ and $H_1\cong\ZZ\oplus\ZZ/2$.
+
+:::

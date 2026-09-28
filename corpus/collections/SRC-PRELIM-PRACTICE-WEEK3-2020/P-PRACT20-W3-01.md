@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-01
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 1"
+title: Closed form for the derivative of $\sum_{n\ge1}(-1)^nx^{3n}$
 classification:
   areas:
   - real-analysis

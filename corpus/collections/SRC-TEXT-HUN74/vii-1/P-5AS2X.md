@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring with identity $1_R \ne 0$, and let $M_n(R)$ be the ring of $n \times n$ matrices over $R$ ($n \ge 1$).
 
 (a) Show that the center of the ring $M_n(R)$ consists precisely of scalar matrices of the form $r I_n$ where $r \in Z(R)$ is in the center of $R$.
@@ -22,7 +22,7 @@ Let $R$ be a ring with identity $1_R \ne 0$, and let $M_n(R)$ be the ring of $n 
 (b) Show that $Z(M_n(R)) \cong Z(R)$ as rings.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the center $Z(M_n(R)) = \{r I_n : r \in Z(R)\}$ in (a), and establish the ring isomorphism $Z(M_n(R)) \cong Z(R)$ in (b).
 
 <1>1. Matrix units and their algebraic relations:

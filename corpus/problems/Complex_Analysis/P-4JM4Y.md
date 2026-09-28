@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f$ is holomorphic on $\DD$ and continuous on $\bar\DD$ with $f(\bar \DD) \subseteq \DD$, then $f$ has a unique fixed point in $\DD$.
 
 > Note: this is subtle because $\DD$ is not compact!
 
 :::
 
-:::{.solution}
+::: {.solution}
 Continuous images of compact sets are compact, so $f(\bar\DD)$ is a compact subset of $\DD$ and thus contained in some $\DD_r(0)$ with $0<r<1$.
 On this disc,
 \[

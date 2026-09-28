@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Laurent expansion for
 \[
 f(z) = {1\over 1 + e^z}
@@ -23,7 +23,7 @@ about $z_0 = 0$ and $z_1 = i\pi$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 At $z=0$, we can use a geometric series approach since $\abs{e^z} = e^{\Re(z)} \leq 1$ near $0$.
 However, we still have to get rid of the leading 1 in the expansion of $e^z$ in order to get a constant coefficient.
 \[

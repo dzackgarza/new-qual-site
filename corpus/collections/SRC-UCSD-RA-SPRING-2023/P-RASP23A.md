@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 TRUE or FALSE: If true, prove it.
 If false, disprove it.
 
@@ -35,9 +35,9 @@ If false, disprove it.
 Then $m(E) = 0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 Let
 \[
 X=c_{00}
@@ -68,7 +68,7 @@ Thus $e_1$ lies in the closure of $\ker F$ but not in $\ker F$, so $F^{-1}(0)$ n
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 Weak convergence gives
 \[
 \langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
@@ -85,7 +85,7 @@ Therefore $x_n\to x$ strongly.
 :::
 
 <1>3. Part (c) is true.
-::: proof
+::: {.proof}
 Suppose $m(E)>0$. By the Lebesgue density theorem, almost every $x\in E$ is a density point of $E$. Choose such an $x$. Then
 \[
 \frac{m(E\cap(x-r,x+r))}{2r}\longrightarrow1

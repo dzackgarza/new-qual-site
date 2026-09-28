@@ -2,7 +2,10 @@
 schema: qual/card@1
 id: T-3QNBQ
 kind: theorem
-title: Weierstrass Approximation
+title: Weierstrass approximation theorem
+slogan: 'Polynomials are uniformly dense in the continuous functions on a compact interval.'
+prompts:
+- State the Weierstrass approximation theorem.
 classification:
   areas:
   - real-analysis
@@ -15,7 +18,11 @@ review: draft
 ---
 
 ::: {.theorem}
-If $[a, b] \subset \RR$ is a closed interval and $f$ is continuous, then for every $\eps> 0$ there exists a polynomial $p_\eps$ such that $\norm{f- p_\eps}_{L^\infty([a, b])} \converges{\eps \to 0}\to 0$.
-
-Equivalently, polynomials are dense in the Banach space $C([0, 1], \norm{\wait}_\infty)$.
+Let $a<b$ and let $f\colon[a,b]\to\CC$ be continuous.
+For every $\varepsilon>0$ there exists a polynomial $p$ such that
+$$
+\sup_{x\in[a,b]}\abs{f(x)-p(x)}<\varepsilon .
+$$
+If $f$ is real-valued, $p$ may be taken with real coefficients.
+Equivalently, the polynomials are [[D-KJBAK|dense]] in the [[D-BG455|Banach space]] $C([a,b])$ with the norm $\norm{g}_\infty\coloneqq\sup_{x\in[a,b]}\abs{g(x)}$.
 :::

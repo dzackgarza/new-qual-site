@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Suppose $f, g: A \to A$ are functions with $f \circ g$ injective.
 
 a) Prove that $g$ must be injective.

@@ -2,9 +2,9 @@
 order: 290
 ---
 
-# Extra Problems: Algebraic Topology
+# Extra problems: algebraic topology
 
-## Homotopy 101
+## Homotopy
 
 [[P-KIIUK]]
 

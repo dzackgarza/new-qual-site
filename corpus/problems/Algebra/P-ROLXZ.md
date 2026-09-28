@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H\le G$ and let representations be modules over a commutative coefficient ring $R$.
 
 1. What can be said about the kernel of an irreducible representation of $G$?
@@ -22,7 +22,7 @@ Let $H\le G$ and let representations be modules over a commutative coefficient r
 3. Is induction $\operatorname{Ind}_H^G$ left exact, right exact, or exact?
 :::
 
-::: solution
+::: {.solution}
 Let $\rho:G\to\operatorname{Aut}_R(V)$ be a representation.
 
 <1>1. Its kernel

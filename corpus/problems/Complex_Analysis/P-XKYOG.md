@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 equations take the form
 
 $$\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}
@@ -29,7 +29,7 @@ $r>0, \; - \pi < \theta < \pi$. Also show that $\log z$ defined
 above is not continuous in $r>0$.
 :::
 
-::: solution
+::: {.solution}
 The beginning of the card is truncated. The missing part asks for the polar
 Cauchy--Riemann equations. If $x=r\cos\theta$, $y=r\sin\theta$, then the chain
 rule together with $u_x=v_y$ and $u_y=-v_x$ gives

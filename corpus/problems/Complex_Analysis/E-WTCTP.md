@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $z_0$ is a zero of $f'$ of order $n-1$, then $f$ is $n$-to-one in a neighborhood of $z_0$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Wlog, assume $z_0 = 0$.
 We want to show that there exists discs $U = \DD_r(0)$ and $W = \DD_R(0)$ such that the fiber of $f:U\to W$ has exactly $n$ distinct points.
 Since $0$ is a zero of order $n$, expand $f$ as $\sum_{k\geq n} c_k z^k = z^n\sum_{k\geq 0} c_{k+n}z^k$.
@@ -29,11 +29,11 @@ By dividing coefficients through, we may assume $c_n = 1$, so
 f(z) = z^n + \qty{ c_{n+1} z^{n+1} + c_{n+2}z^{n+2} + \cdots} = z^n + z^{n+1} \sum_{k\geq 0} c_{k+n+1}z^k \da z^n + g(z)
 .\]
 
-:::{.claim}
+::: {.claim}
 By Rouché, $f(z)$ and $z^n$ have the same number of zeros in a small disc $\DD_\rho(0)$.
 :::
 
-:::{.proof title="of claim"}
+::: {.proof title="of claim"}
 Write $m(z) = \sum_{k\geq 0}c_{k+n}z^k$ and $M(z) = z^n$; then if $\abs{m(z)} < \abs{M(z)}$ for any circle $\abs{z} = \rho$ with $\rho< 1$ then $M$ and $m+M = f$ will have the same number of zeros ($n$ with multiplicity).
 
 Bounding $m$, the tail of the Laurent series of $f$: by Cauchy's integral formula, on a disc of radius $R$,

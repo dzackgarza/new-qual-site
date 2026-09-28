@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-06
 kind: problem
-title: Nori Galois theory problem 5.6
+title: Kernel of $F^\times/(F^\times)^p\to E^\times/(E^\times)^p$ for a Kummer extension
 classification:
   areas: [algebra]
   topics: []

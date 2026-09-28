@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-03
 kind: problem
-title: Questions from Tie — Spring 2015, question 3
+title: Analytic functions with equal modulus differ by a unimodular constant
 classification:
   areas:
   - complex-analysis

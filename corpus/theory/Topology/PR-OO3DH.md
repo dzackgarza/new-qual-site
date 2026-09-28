@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-OO3DH
 kind: proposition
-title: $\pi_1$ of a product, Hatcher 1.12
+title: $\pi_1$ of a product
+slogan: 'Fundamental groups turn products of path-connected spaces into direct products.'
 classification:
   areas:
   - topology
@@ -13,13 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If $X, Y$ are path-connected, then 
-\[
-\pi_1 (X \cross Y) = \pi_1(X) \cross \pi_1(Y)
-.\]
-
-:::{.remark}
-Hatcher, *Algebraic Topology*, Proposition 1.12.
-:::
+::: {.proposition}
+Let $X$ and $Y$ be path-connected spaces.
+Then the projections induce an isomorphism
+$$
+\pi_1 (X \cross Y) \xrightarrow{\ \sim\ } \pi_1(X) \cross \pi_1(Y)
+$$
+[@Hat02].
 :::

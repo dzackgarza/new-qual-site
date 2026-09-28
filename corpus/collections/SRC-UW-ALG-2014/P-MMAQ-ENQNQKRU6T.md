@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring with the property that $a^2=a$ for all $a\in R$.
 
 - Compute the Jacobson radical of $R$.
@@ -32,7 +32,7 @@ Let $R$ be a ring with the property that $a^2=a$ for all $a\in R$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The Jacobson radical of \(R\) is zero.
 ::: {.proof}
 Let \(x\in J(R)\). Since every element is idempotent,

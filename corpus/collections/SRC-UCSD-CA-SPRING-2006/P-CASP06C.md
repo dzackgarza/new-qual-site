@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 $f$ is an entire function.
 Assume that $f(z + 1) = f(z)$ and $|f(z)| \leq e^{C|z|}$ for some $C < 2\pi$.
 Show that $f$ is a constant.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is $1$-periodic, for each integer $n$ the quantity
 \[
 a_n(y)=\int_0^1 f(x+iy)e^{-2\pi i n(x+iy)}\,dx

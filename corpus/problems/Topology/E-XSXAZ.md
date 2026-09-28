@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Construct 6 distinct topologies on the set $\mathbb{R}^d$ ($d \ge 1$), and order them by coarseness/fineness where applicable.
 :::
 
-::: solution
+::: {.solution}
 Let $S=\mathbb R^d$.
 
 <1>1. The following are six distinct topologies on $S$:

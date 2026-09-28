@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Show that a group of order 121 is Abelian.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=121=11^2$. Since $G$ is a nontrivial finite $11$-group, its center is nontrivial. Therefore
 \[
 |Z(G)|\in\{11,121\}.

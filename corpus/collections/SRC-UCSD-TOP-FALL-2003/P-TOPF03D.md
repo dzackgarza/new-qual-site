@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $N$ be a submanifold of $S^3$ which is homeomorphic to a thickened torus $T^2 \times I$.
 Let $X$ be its exterior, that is the closure of $S^3 \setminus N$.
 Use Mayer-Vietoris to compute the homology $H_*(X; \mathbb{Z})$.

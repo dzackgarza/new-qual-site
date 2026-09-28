@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show there is a map $\mathbb{RP}^\infty \to \mathbb{CP}^\infty = K(\mathbb{Z}, 2)$ which induces the trivial map on $\tilde{H}_*(-; \mathbb{Z})$ but a nontrivial map on $\tilde{H}^*(-; \mathbb{Z})$.
 How is this consistent with the universal coefficient theorem?
+:::
 
 ::: {.solution}
 Let

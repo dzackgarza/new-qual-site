@@ -15,11 +15,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 4. Prove that for all $\xi \in \mathbb { C }$ we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ { \infty } e ^ { - \pi x ^ { 2 } } e ^ { 2 \pi i x \xi } d x .$
 :::
 
-::: solution
+::: {.solution}
 Define, for $\xi\in\mathbb C$,
 \[
 F(\xi)=\int_{-\infty}^{\infty}e^{-\pi x^2}e^{2\pi i x\xi}\,dx.

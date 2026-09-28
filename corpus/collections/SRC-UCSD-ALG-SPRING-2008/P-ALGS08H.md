@@ -24,7 +24,7 @@ audit:
   note: Verified that a nonzero central element generates a nonzero two-sided ideal, hence all of R; its inverse in R is central, so every nonzero element of the center is invertible in the center.
 ---
 
-::: problem
+::: {.problem}
 Show that the center of a simple ring with identity element is a field.
 :::
 

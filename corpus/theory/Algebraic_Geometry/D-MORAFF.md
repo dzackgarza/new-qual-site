@@ -20,12 +20,12 @@ prompts:
 ---
 
 ::: {.definition title="Affine"}
-$f : X \to Y$ is **affine** if $f^{-1}(V)$ is affine for every affine open $V \subseteq Y$.
+$f : X \to Y$ is \dfn{affine} if $f^{-1}(V)$ is affine for every affine open $V \subseteq Y$.
 Equivalently, it is enough that this holds for the opens of one affine cover of $Y$.
 :::
 
 ::: {.remark}
-The affine-communication argument shows that the condition can be checked on a single affine cover.
+The condition may be checked on one affine cover by the affine-communication argument.
 Every affine morphism is separated and quasicompact.
 
 Closed immersions are affine, any morphism of affine schemes is affine, and finite morphisms are affine.

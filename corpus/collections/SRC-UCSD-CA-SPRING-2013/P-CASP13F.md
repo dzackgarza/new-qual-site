@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $U \subset \mathbb{C}$ be the "rounded square" given by the intersection of the four open disks $$U = \mathbb{D}(1, 2) \cap \mathbb{D}(-1, 2) \cap \mathbb{D}(i, 2) \cap \mathbb{D}(-i, 2).$$ Let $S \subset \partial U$ be the curve $S = \{-i + 2e^{it} : t \in (\pi/4, \pi/2)\}$.
 Suppose that $f \in \operatorname{Hol}(U)$, and that for any sequence $z_n \in U$ such that $\lim_{n \to \infty} z_n \in S$, it follows that $\lim_{n \to \infty} f(z_n) = 0$.
 Prove that $f \equiv 0$.
 :::
 
-::: solution
+::: {.solution}
 Fix a smaller open subarc $S_0\Subset S$. By hypothesis, $f(z)\to0$ as
 $z\to\zeta$ from within $U$, uniformly in the sequential sense, for each
 $\zeta\in S_0$. Define

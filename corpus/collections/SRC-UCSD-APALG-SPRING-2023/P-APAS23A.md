@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) State, but do not prove, the Schur decomposition theorem.
@@ -34,7 +34,7 @@ with $M \in M_{n-1}$.
 :::
 
 
-::: solution
+::: {.solution}
 (a) **Schur decomposition.** For every $A\in M_n$ there is a unitary matrix $Q$ and an upper-triangular matrix $T$ such that
 \[
 Q^HAQ=T.

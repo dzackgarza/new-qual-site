@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G = \mathbb{Z}$ be the group of integers under addition.
 The group homomorphism $\rho \colon G \to \mathrm{GL}_2(\mathbb{C})$ given by
 \[
@@ -23,7 +23,7 @@ gives $\mathbb{C}^2$ the structure of a $G$-module.
 Does $\mathbb{C}^2$ admit a $G$-invariant inner product?
 :::
 
-::: solution
+::: {.solution}
 No.
 
 If such a $G$-invariant inner product existed, then the operator representing the generator $1\in\mathbb Z$,

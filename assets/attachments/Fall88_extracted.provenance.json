@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Fall88.pdf",
+  "source_pdf_sha256": "83e6b87ed010f6c5c70852546f7eef5712935a5c018b53cdbfb0917a7d41c976",
+  "extracted_markdown": "assets/attachments/Fall88_extracted.md",
+  "extracted_markdown_sha256": "706f6dbdd99a70cb25bce82e287c98b4f9f6db6c4917329569d2d775d24123f8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall88.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall88.md",
+  "card_comparison": "All eighteen top-level source problems are represented by source-local cards P-BKF88-1 through P-BKF88-18.",
+  "known_extractor_defects": [
+    "Problem 8 renders Im z as a malformed blackboard-S glyph; the card restores the strip as -pi/2 < Im z < pi/2 from the deterministic complex-analytic context.",
+    "Problem 10 appends a stray subscript-like glyph to p in 'order 2p'; the card restores the explicitly quantified prime p.",
+    "Problem 6 and several prose lines contain spacing/OCR word-fragment noise that does not alter their mathematical content."
+  ]
+}

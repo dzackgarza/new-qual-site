@@ -34,7 +34,7 @@ audit:
     degree-three cases are included rather than silently assuming connectedness.
 ---
 
-::: problem
+::: {.problem}
 a. Suppose $Y$ is an $n$-fold covering space of the (one-holed) torus $S^1\times S^1$.
 Up to homeomorphism, what is $Y$?
 Justify your answer.

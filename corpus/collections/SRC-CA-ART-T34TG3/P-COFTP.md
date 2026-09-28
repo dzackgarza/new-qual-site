@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Show that if $a>0$, then
 \[
 \int_{0}^{\infty} \frac{\log x}{x^{2}+a^{2}} d x=\frac{\pi}{2 a} \log a

@@ -24,7 +24,7 @@ audit:
   note: Replaced the old list-format solution with the degree argument over C and the single-block argument from t^p - 1 = (t - 1)^p over F_p.
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a prime number and the minimal polynomial of $a \in M_p(F)$ is $t^p - 1$.
 
 (a) Find the Jordan form of $a$ if $F = \mathbb{C}$.

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 **Lemma**:
 The rank-nullity theorem holds over division rings.
 

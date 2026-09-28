@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a finite abelian group, with product written multiplicatively.
 Let $\mathbb{Z}_2 = \{e, a\}$, also written multiplicatively, so that $a^2 = e$.
 The corresponding generalized dihedral group is the semidirect product $G = H \rtimes_\phi \mathbb{Z}_2$, where $\phi(a)$ is the automorphism of $H$ given by inverting elements, i.e.\ $[\phi(a)](h) = h^{-1}$.

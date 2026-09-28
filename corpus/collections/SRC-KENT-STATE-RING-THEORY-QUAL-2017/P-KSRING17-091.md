@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-091
 kind: problem
-title: Kent State ring-theory qualifying problem 91
+title: Finitely many ideals contain a nonzero ideal in a principal ideal domain
 classification:
   areas: [algebra]
   topics: []

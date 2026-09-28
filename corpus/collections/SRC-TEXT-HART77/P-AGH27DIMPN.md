@@ -14,35 +14,83 @@ relations:
 - kind: uses
   target: P-AGH26HOMDIM
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-17
+  note: 'Compared both parts and the dimension hint with the retained Hartshorne I.2.7 transcription. Replaced the proof that treated a general projective closure as affine with an argument on the standard affine charts, keeping closure and dimension comparisons on their correct spaces.'
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-17
 ---
 
-::: problem
-1. Show that $\dim \PP^n = n$.
+::: {.problem}
+Let $k$ be algebraically closed and let $n\ge0$.
 
-2. If $Y \subseteq \PP^n$ is a quasi-projective variety, show that $\dim Y = \dim \bar{Y}$.
+(a) Show that $\dim \PP_k^n = n$.
+
+(b) If $Y \subseteq \PP_k^n$ is a quasi-projective variety, show that $\dim Y = \dim \bar{Y}$.
 :::
 
-::: solution
-**Part 1.** By the previous exercise, $\dim S(\PP^n) = \dim \PP^n + 1$, and
-\[
-\dim S(\PP^n) = \trdeg_k k[x_0,\ldots,x_n] = n+1 ,
-\]
-so $\dim \PP^n = n$.
+::: {.hint}
+For (b), use Exercise I.2.6 to reduce to Proposition I.1.10.
+:::
 
-Alternatively, take the standard open cover $\ts{U_i} \covers \PP^n$.
-Each chart satisfies $\dim U_i = \dim U_0 = \dim \AA^n = n$, using the identification $\tv{x_0 : \cdots : x_n} \mapsto \qty{x_1/x_0, \ldots, x_n/x_0}$, and $\dim \PP^n = \sup_i \dim U_i = n$.
+::: {.solution}
+Use [[D-5LJUX|dimension]] defined by lengths of strict chains of nonempty irreducible closed subsets.
+Let $U_i=D_+(x_i)\subseteq\PP_k^n$ be the standard affine opens.
 
-**Part 2.** Pass to the affine cone.
-Since $\dim C(Y) = \dim Y + 1$, it suffices to prove $\dim C(Y) = \dim \overline{C(Y)}$, and $C(Y)$ is quasi-affine, so this is the affine statement.
+<1>1. If $(V_i)$ is an open cover of a topological space $T$, then $\dim T=\sup_i\dim V_i$.
 
-That affine statement goes as follows.
-Pick a chain $Z_0 < Z_1 < \cdots < Z_n$ of irreducible closed subsets witnessing $\dim Y = n$, and take closures to get a chain $\bar{Z}_0 < \cdots < \bar{Z}_n$ in $\bar{Y}$, which gives $\dim Y \leq \dim \bar{Y}$.
-Now $Z_0 = \bar{Z}_0 = P$ is a point, corresponding to a maximal ideal $\mfm \in \mspec A(\bar{Y})$, and the $\bar{Z}_i$ correspond to primes $\mfp_i \in \spec A(\bar{Y})$ with $\mfp_i \subset \mfm$.
-The chain has length $n$, so $\height \mfm = n$.
-Apply the height-quotient formula:
-\[
-\height \mfm + \dim A(\bar{Y})/\mfm = \dim A(\bar{Y})
-\implies n + \dim k = \dim A(\bar{Y})
-\implies \dim A(\bar{Y}) = n .
-\]
+::: {.proof}
+A strict chain of irreducible closed subsets of $V_i$ gives such a chain in $T$ by taking closures.
+The closures remain distinct, since their intersections with $V_i$ recover the original subsets.
+This proves $\dim V_i\le\dim T$.
+
+Conversely, take a chain $Z_0\subsetneq\cdots\subsetneq Z_d$ of nonempty irreducible closed subsets of $T$.
+Choose a member $V_i$ of the cover meeting $Z_0$.
+It then meets every $Z_j$.
+Each intersection $Z_j\cap V_i$ is nonempty, irreducible and closed in $V_i$.
+It is dense in $Z_j$, because it is a nonempty open subset of an irreducible space.
+Thus these intersections are distinct: equality of two would give equality of their closures in $T$.
+They form a chain of the same length in $V_i$.
+Taking the supremum over chains proves the reverse inequality.
+:::
+
+<1>2. One has $\boxed{\dim\PP_k^n=n}$.
+
+::: {.proof}
+The ratios $x_j/x_i$, with $j\ne i$, identify $U_i$ with $\AA_k^n$.
+The dimension of affine space is $n$, since its coordinate ring is a polynomial ring in $n$ algebraically independent variables [@Har10a, Proposition I.1.9].
+The $U_i$ cover $\PP^n$, so step <1>1 gives the claimed dimension, including $n=0$.
+:::
+
+<1>3. For a quasi-projective variety $Y$, one has $\boxed{\dim Y=\dim\overline Y}$.
+
+::: {.proof}
+Put $W=\overline Y\subseteq\PP^n$.
+By the definition of a quasi-projective variety, $Y$ is a nonempty open subset of its irreducible projective closure $W$.
+For every $i$ with $W_i=W\cap U_i\ne\varnothing$, the set $W_i$ is an affine variety in $U_i\cong\AA^n$.
+The intersection $Y_i=Y\cap U_i$ is nonempty and dense in $W_i$, since two nonempty open subsets of the irreducible space $W$ meet.
+It is a quasi-affine variety whose closure in $\AA^n$ is precisely $W_i$.
+The dimension result for quasi-affine varieties therefore gives
+$$
+\dim Y_i=\dim W_i
+$$
+[@Har10a, Proposition I.1.10].
+This applies the affine closure theorem only to an affine ambient space.
+
+The $Y_i$ and $W_i$ are open covers of $Y$ and $W$, respectively.
+Step <1>1 consequently yields
+$$
+\dim Y=\sup_i\dim Y_i=\sup_i\dim W_i=\dim W.
+$$
+Equivalently, every nonempty $W_i$ has the function field $k(W)$ and dimension $\operatorname{trdeg}_k k(W)$ by the affine dimension theorem; the same is then true of its dense open $Y_i$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>2 proves (a), and step <1>3 proves (b).
+:::
 :::

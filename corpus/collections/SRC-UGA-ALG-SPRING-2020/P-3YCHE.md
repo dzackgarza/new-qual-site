@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) = x^4-2 \in \QQ[x]$.
 
 a. Define what it means for a finite extension field $E$ of a field $F$ to be a Galois extension.
@@ -29,7 +29,7 @@ c. Exhibit a subfield $K$ in $(b)$ such that $\QQ \leq K \leq E$ with $K$ not a 
 Explain.
 :::
 
-::: solution
+::: {.solution}
 A finite extension $E/F$ is Galois if it is both normal and separable over $F$; equivalently, if $E$ is the splitting field over $F$ of a separable polynomial.
 
 Let $\alpha=2^{1/4}$. The roots of $x^4-2$ are

@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Consider the space $X$ obtained from the cylinder $S^1 \times I$ by identifying antipodal points of the circle $S^1 \times \{0\}$, and similarly identifying antipodal points of $S^1 \times \{1\}$.
 Calculate the fundamental group of $X$.
+:::
 
 ::: {.solution}
 <1>1. Split the cylinder at its middle circle $C=S^1\times\{1/2\}$. Each half of the quotient is the mapping cylinder of the degree-$2$ map $S^1\to S^1$, $z\mapsto z^2$.

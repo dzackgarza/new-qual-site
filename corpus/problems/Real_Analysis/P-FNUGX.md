@@ -20,7 +20,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - Show that a uniform limit of bounded functions is bounded.
 
 - Show that a uniform limit of continuous function is continuous.

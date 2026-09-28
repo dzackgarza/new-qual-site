@@ -25,7 +25,7 @@ audit:
   note: Verified the inclusion B->T is nullhomotopic through the embedded disk and used the full relative long exact sequence in degrees 2, 1, and 0.
 ---
 
-::: problem
+::: {.problem}
 Let $D$ be a closed disk embedded in the torus
 \[
 T=S^1\times S^1,

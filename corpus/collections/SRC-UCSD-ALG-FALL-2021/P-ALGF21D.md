@@ -24,7 +24,7 @@ audit:
   note: Verified the characteristic-p argument by comparing [K:F^p] through F and through K^p, using K=K^p and [K^p:F^p]=[K:F].
 ---
 
-::: problem
+::: {.problem}
 Let $F \subseteq K$ be an extension of fields with $[K : F] < \infty$.
 Show that if $K$ is a perfect field, then so is $F$.
 :::

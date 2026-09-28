@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Describe the Galois theory of cyclotomic extensions $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ (irreducibility of cyclotomic polynomials, Galois group isomorphism, and subfield structure).
 :::
 
-::: solution
+::: {.solution}
 Let $\zeta_n$ be a primitive $n$th root of unity. The cyclotomic polynomial is
 \[
 \Phi_n(x)=\prod_{(a,n)=1}(x-\zeta_n^a).

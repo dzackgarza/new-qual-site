@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Prove that a continuous function from $\mathbb R$ to $\mathbb R$ which maps open sets to open sets must be monotone.
 :::
 

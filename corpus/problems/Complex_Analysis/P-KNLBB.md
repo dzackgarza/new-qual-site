@@ -15,11 +15,11 @@ review: draft
 
 > Tie, Fall 2009
 
-:::{.problem}
+::: {.problem}
 Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where $R>0$ is fixed, but it is not uniformly continuous on $\mathbb C$.
 :::
 
-:::{.solution}
+::: {.solution}
 A direct computation: fix $\eps>0$ and suppose $\abs{z-w} < R$. 
 Then
 \[

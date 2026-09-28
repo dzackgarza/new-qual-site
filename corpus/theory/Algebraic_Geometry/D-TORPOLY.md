@@ -38,18 +38,31 @@ For a face $F \leq P$ set
 \[
 \sigma_F = \Cone\big( u_F' \st F \leq F',\ F' \text{ a facet} \big) \subseteq N_\RR .
 \]
-These cones form the **normal fan** $\Sigma_P$, and $X_P \da X_{\Sigma_P}$.
+These cones form the \dfn{normal fan} $\Sigma_P$, and $X_P \da X_{\Sigma_P}$.
 Vertices of $P$ give the maximal cones, facets of $P$ give the rays, and the whole poset is reversed.
+The vertex $m_i$ corresponds to the maximal cone $\sigma_i = \Cone(P \cap M - m_i)\dual$.
+:::
+
+::: {.definition title="Combinatorial equivalence"}
+Polytopes $P_1$ and $P_2$ are \dfn{combinatorially equivalent} if there is a bijection between their faces that preserves inclusions, intersections and dimensions of faces.
+:::
+
+::: {.example title="A hexagon"}
+For the hexagon $P$ with vertices $v_1, \ldots, v_6$, the cone of directions out of each vertex $v_i$ is dual to the maximal cone $\sigma_i$ of the normal fan $\Sigma_P$, which has six maximal cones.
+
+![A lattice hexagon $P$ with the edge directions at each vertex, and its normal fan $\Sigma_P$.](../../../assets/algebraic-geometry/toric/hexagon-and-normal-fan.png){width=550px}
 :::
 
 ::: {.remark title="Three descriptions, one variety"}
-The same $X_P$ arises three ways.
+The same toric variety $X_P$ has three equivalent descriptions.
 
 1. The normal fan, as above.
 
 2. Cones over the proper faces of the polar dual $P^\circ$ — the normal fan of $P$ is the fan of cones over faces of $P^\circ$.
 
-3. A direct gluing: $X_P = \Union_{m \in P \intersect M} \Spec k[\sigma_{\hat m}\dual \intersect M]$ with $\sigma_{\hat m} = \Cone(P \intersect M - m)$, the cone of directions out of the vertex $m$. This exhibits $X_P$ as a union of affine toric pieces, one for each lattice point of $P$.
+3. A direct gluing: $X_P = \Union_{m \in P \intersect M} \Spec k[\sigma_{\hat m}\dual \intersect M]$ with $\sigma_{\hat m} = \Cone(P \intersect M - m)$, the cone of directions out of the vertex $m$.
+
+The direct gluing description realizes explicitly what the normal-fan and polar-dual descriptions encode combinatorially.
 :::
 
 ::: {.remark}

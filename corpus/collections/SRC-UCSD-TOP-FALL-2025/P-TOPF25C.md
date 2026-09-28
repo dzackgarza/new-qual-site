@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a space whose homology is given by
 \[
 H_k(X; \mathbb{Z}) =

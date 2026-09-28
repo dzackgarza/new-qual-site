@@ -18,7 +18,7 @@ audit:
   date: 2026-08-19
 ---
 
-::: problem
+::: {.problem}
 Let $a>0$ and evaluate $$\displaystyle{ \int_{0}^{\infty}\frac{x\sin x}{x^2+a^2} \,
 dx }.$$
 :::

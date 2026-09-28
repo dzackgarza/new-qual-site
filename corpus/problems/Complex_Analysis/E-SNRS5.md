@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_\RR {1 \over (1+x^2)^2} \dx
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Factor $(1+z^2)^2 = ((z-i)(z+i))^2$, so $f$ has poles at $\pm i$ of order 2.

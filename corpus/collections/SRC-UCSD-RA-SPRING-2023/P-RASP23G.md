@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\Gamma(z)$ be the gamma function defined by $\Gamma(z) = \int_0^\infty e^{-t} t^{z-1}\,dt$ for $z$ with $\operatorname{Re}(z) > 0$.
 For $\phi\in C_c^\infty(\mathbb R^n)$, prove that for any $0 < \alpha < n$,
 $$
@@ -34,7 +34,7 @@ Hint: Use the Fourier transform of the Gaussian, the identity $\int \hat{f} g = 
 :::
 
 
-::: solution
+::: {.solution}
 Use the Fourier-transform convention from the exam,
 \[
 \widehat h(\xi)=\int_{\mathbb R^n}e^{-2\pi i\langle\xi,y\rangle}h(y)\,dy.

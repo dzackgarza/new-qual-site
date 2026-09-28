@@ -24,7 +24,7 @@ audit:
 Use the Meyer-Vietoris sequence to calculate the homology of $X\vee Y$.
 :::
 
-::: remark
+::: {.remark}
 The source page spells the sequence name “Meyer-Vietoris”; that spelling is preserved in the statement.
 :::
 

@@ -22,15 +22,15 @@ audit:
   note: "Checked that every nonzero principal ideal is nonzero, hence all of R, yielding a multiplicative inverse for each nonzero element."
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a nonzero commutative ring with identity.
 Suppose its only ideals are $(0)$ and $R$.
 Prove that $R$ is a field.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every nonzero element generates the unit ideal.
-::: proof
+::: {.proof}
 Let $a\in R$ with $a\ne0$. The principal ideal $(a)$ contains $a$, so $(a)\ne(0)$. By hypothesis, the only ideals are $(0)$ and $R$. Therefore
 $$
 (a)=R.
@@ -39,7 +39,7 @@ In particular $1\in(a)$.
 :::
 
 <1>2. Every nonzero element is invertible.
-::: proof
+::: {.proof}
 Since $1\in(a)$, there exists $b\in R$ such that
 $$
 ba=1.

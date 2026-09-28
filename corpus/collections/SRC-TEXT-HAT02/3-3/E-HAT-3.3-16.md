@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $(\alpha \frown \varphi) \frown \psi = \alpha \frown (\varphi \smile \psi)$ for all $\alpha \in C_k(X; R)$, $\varphi \in C^\ell(X; R)$, and $\psi \in C^m(X; R)$.
 Deduce that cap product makes $H_*(X; R)$ a right $H^*(X; R)$ module.
+:::
 
 ::: {.solution}
 It is enough to check the identity on a singular $k$-simplex

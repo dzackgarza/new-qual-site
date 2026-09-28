@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be a holomorphic map of the open unit disc $\DD$ to itself.
 Show that for any $z, w\in \DD$,
 \[
@@ -23,7 +23,7 @@ Show that for any $z, w\in \DD$,
 Show that this inequality is strict for $z\neq w$ except when $f$ is a linear fractional transformation from $\DD$ to itself.
 :::
 
-:::{.concept}
+::: {.concept}
 
 The Schwarz conjugation trick:
 
@@ -40,7 +40,7 @@ This forces the choice for the LHS
 
 :::
 
-:::{.solution}
+::: {.solution}
 This is the **Schwarz–Pick lemma**.
 
 - Fix $z_1$ and let $w_1 = f(z_1)$.

@@ -18,9 +18,11 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Suppose we build $S^2$ from a finite collection of polygons by identifying edges in pairs.
 Show that in the resulting CW structure on $S^2$ the 1 skeleton cannot be either of the two graphs shown, with five and six vertices.
 [This is one step in a proof that neither of these graphs embeds in $\mathbb{R}^2$.]
+:::
 
 ::: {.solution}
 <1>1. Let $V$, $E$, $F$ be the numbers of vertices, edges, and faces (polygons) in the CW structure on $S^2$.

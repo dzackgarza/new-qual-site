@@ -21,18 +21,18 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define lower central series, upper central series, nilpotent and solvable groups.
 :::
 
-::: solution
+::: {.solution}
 For a group $G$, the **lower central series** is
 \[
 \gamma_1(G)=G,\qquad \gamma_{i+1}(G)=[\gamma_i(G),G].
 \]
 The **upper central series** is
 \[
-Z_0(G)=1,\qquad Z_{i+1}(G)/Z_i(G)=Zigl(G/Z_i(G)igr).
+Z_0(G)=1,\qquad Z_{i+1}(G)/Z_i(G)=Z\bigl(G/Z_i(G)\bigr).
 \]
 
 The group $G$ is **nilpotent** if $\gamma_{c+1}(G)=1$ for some $c\ge0$; equivalently, $Z_c(G)=G$ for some $c$. The least such $c$ is the nilpotency class.

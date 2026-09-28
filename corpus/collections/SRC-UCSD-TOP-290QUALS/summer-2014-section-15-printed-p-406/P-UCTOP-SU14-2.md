@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $K \subseteq V$ be a knotted solid torus $S^1 \times B^2$ inside a larger solid torus $V = S^1 \times B^2$, and let $X = V - \overset{\circ}{K}$ be the complement, obtained by removing the interior of $K$.
 Compute $H_*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. Embed the ambient solid torus $V$ in $S^3$ as the complement of the interior of a tubular neighborhood $N(U)$ of an unknot $U$.

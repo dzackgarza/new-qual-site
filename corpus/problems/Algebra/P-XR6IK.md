@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For each prime $p$, give an explicit polynomial of degree $p$ that is irreducible over the finite field $\mathbb{F}_p$, constructed in a uniform way across all primes $p$.
 Prove that your polynomial is irreducible over $\mathbb{F}_p$.
 :::
 
-::: solution
+::: {.solution}
 For every prime $p$, take
 \[
 f(x)=x^p-x-1\in\mathbb F_p[x].

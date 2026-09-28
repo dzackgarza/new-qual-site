@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that there is no closed 3-manifold which is homotopy-equivalent to the suspension $\Sigma\mathbb{RP}^2$.
 :::
 

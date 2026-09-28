@@ -16,8 +16,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Let $F_n$ be the free group of rank $n$, and let $H$ be a subgroup of $F_n$ with index $d$.
 Show that $H$ is free, and find its rank.
+:::
 
 ::: {.solution}
 <1>1. Topological realization of $F_n$ and the covering space for $H$:

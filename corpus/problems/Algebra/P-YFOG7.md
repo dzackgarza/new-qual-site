@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 L=\QQ(\sqrt[3]2,\sqrt3,\zeta_3),
@@ -22,7 +22,7 @@ L=\QQ(\sqrt[3]2,\sqrt3,\zeta_3),
 where $\zeta_3$ is a primitive cube root of unity. Compute $\operatorname{Gal}(L/\QQ)$ and describe the intermediate fields, at least up to conjugacy.
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 a=\sqrt[3]2,

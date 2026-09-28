@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f_n$ be holomorphic on a domain $\Omega$, and suppose $f_n\to F$ uniformly on compact subsets of $\Omega$.
 What can be said about the derivatives $f_n'$?
 :::
 
-::: solution
+::: {.solution}
 The limit $F$ is holomorphic on $\Omega$, and
 \[
 f_n'\longrightarrow F'

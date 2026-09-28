@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-26
 kind: problem
-title: Questions from Tie — Spring 2015, question 26
+title: Maximum modulus principle inside a closed contour
 classification:
   areas:
   - complex-analysis
@@ -17,5 +17,6 @@ audit:
 ---
 
 ::: {.problem}
-Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise. Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
+Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise.
+Let $f : \Omega \longrightarrow \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
 :::

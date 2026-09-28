@@ -29,7 +29,7 @@ audit:
 Show that similarity is an equivalence relation on $M_n(R)$, and \*equivalence\* is an equivalence relation on $M_{m\times n}(R)$.
 :::
 
-::: solution
+::: {.solution}
 Recall that $A,B\in M_n(R)$ are similar if
 \[
 B=P^{-1}AP
@@ -43,7 +43,7 @@ for some $P\in\operatorname{GL}_m(R)$ and
 $Q\in\operatorname{GL}_n(R)$.
 
 <1>1. Similarity is reflexive.
-::: proof
+::: {.proof}
 For every $A\in M_n(R)$,
 \[
 A=I_n^{-1}AI_n,
@@ -52,7 +52,7 @@ so $A$ is similar to itself.
 :::
 
 <1>2. Similarity is symmetric.
-::: proof
+::: {.proof}
 If $B=P^{-1}AP$, then multiplying by $P$ on the left and $P^{-1}$ on the right
 gives
 \[
@@ -62,7 +62,7 @@ Since $P^{-1}$ is invertible, $A$ is similar to $B$.
 :::
 
 <1>3. Similarity is transitive.
-::: proof
+::: {.proof}
 If
 \[
 B=P^{-1}AP
@@ -77,7 +77,7 @@ Thus $C$ is similar to $A$.
 :::
 
 <1>4. Matrix equivalence is reflexive.
-::: proof
+::: {.proof}
 For every $A\in M_{m\times n}(R)$,
 \[
 A=I_mAI_n.
@@ -85,7 +85,7 @@ A=I_mAI_n.
 :::
 
 <1>5. Matrix equivalence is symmetric.
-::: proof
+::: {.proof}
 If $B=PAQ$ with $P,Q$ invertible, then
 \[
 A=P^{-1}BQ^{-1}.
@@ -94,7 +94,7 @@ Hence $A$ is equivalent to $B$.
 :::
 
 <1>6. Matrix equivalence is transitive.
-::: proof
+::: {.proof}
 If
 \[
 B=PAQ
@@ -111,7 +111,7 @@ $C$ is equivalent to $A$.
 
 <1>7. Therefore similarity and matrix equivalence are equivalence relations on
 their respective matrix sets.
-::: proof
+::: {.proof}
 Each relation is reflexive, symmetric, and transitive by the preceding steps.
 :::
 :::

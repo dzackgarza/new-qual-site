@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X = S^2 \times S^3$ and let $Y = S^2 \vee S^3 \vee S^5$.
 Explain why the spaces have isomorphic integral cohomology groups in each degree.
 Is $X$ homotopy-equivalent to $Y$?

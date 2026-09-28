@@ -17,11 +17,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Use the Lefschetz fixed point theorem to show that a map $f: S^n \to S^n$ has a fixed point unless its degree is equal to the degree of the antipodal map $x \mapsto -x$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove via the Lefschetz Fixed Point Theorem that any continuous map $f: S^n \to S^n$ has a fixed point whenever $\deg(f) \neq \deg(a)$, where $a(x) = -x$ is the antipodal map.
 
 <1>1. Degree and Lefschetz number of the antipodal map:

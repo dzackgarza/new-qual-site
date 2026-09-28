@@ -15,19 +15,19 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (i) Construct an entire function with simple zeros at $\left\{\sqrt{n} + \frac{1}{\sqrt{n}} : n = 1, 2, \ldots\right\}$ and no other zeroes.
 
 (ii) Construct a meromorphic function with simple poles at $z = n\sqrt{n}$ and residues equal to $\sqrt{n}$ for $n = 1, 2, \ldots$.
 :::
 
-::: remark
+::: {.remark}
 The local transcription previously altered both the pole locations and the
 residues in part (ii). The official Spring 2017 UCSD exam has poles at
 $n\sqrt n$ with residues $\sqrt n$.
 :::
 
-::: solution
+::: {.solution}
 For (i), set
 \[
 a_n=\sqrt n+\frac1{\sqrt n}.

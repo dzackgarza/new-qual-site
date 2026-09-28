@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A,B\in M_n(\RR)$. If $A$ and $B$ are similar in $M_n(\CC)$, must they already be similar in $M_n(\RR)$?
 :::
 
-::: solution
+::: {.solution}
 Yes.
 
 Suppose there is some

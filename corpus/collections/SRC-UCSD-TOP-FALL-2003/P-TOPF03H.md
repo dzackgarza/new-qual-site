@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Describe the universal cover of $X = \mathbb{RP}^3 \vee S^2$, and use it to compute the abelian group $\pi_2(X)$.
 :::
 

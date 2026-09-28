@@ -14,6 +14,10 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 When is the coordinate ring $k[X]$ a domain?
+:::
+
+::: {.solution}
+$k[X]$ is an integral domain if and only if $I(X)$ is prime, if and only if $X$ is irreducible ([[PR-7OT2Z]]).
 :::

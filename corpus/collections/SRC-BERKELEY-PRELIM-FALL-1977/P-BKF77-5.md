@@ -23,7 +23,7 @@ audit:
   note: "Proved the unit-group property and the gcd criterion, corrected the missing distinct-primes hypothesis in part (c), and counted units by inclusion-exclusion."
 ---
 
-::: problem
+::: {.problem}
 (a) Show that the set of all units in a ring with unity forms a group under multiplication.
 
 (b) In $\mathbb Z_n$, show that $k$ is a unit if and only if $k$ and $n$ are relatively prime.
@@ -31,15 +31,15 @@ audit:
 (c) If $n=pq$ with $p,q$ distinct primes, prove that the number of units in $\mathbb Z_n$ is $(p-1)(q-1)$.
 :::
 
-::: remark
+::: {.remark}
 The printed source says only that $p$ and $q$ are primes. Distinctness is
 necessary: if $p=q=2$, then $n=4$ and $\mathbb Z_4$ has the two units
 $[1]$ and $[3]$, whereas $(p-1)(q-1)=1$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The units of a ring with unity form a group under multiplication.
-::: proof
+::: {.proof}
 Let $R$ be a ring with identity $1$, and let
 $$
 R^\times=\{u\in R:\text{$u$ has a two-sided multiplicative inverse}\}.
@@ -66,7 +66,7 @@ inverse $u$. Hence $R^\times$ satisfies all the group axioms.
 :::
 
 <1>2. Characterize the units of $\mathbb Z_n$.
-::: proof
+::: {.proof}
 The residue class $[k]\in\mathbb Z_n$ is a unit exactly when there exists
 $[\ell]\in\mathbb Z_n$ such that
 $$
@@ -91,7 +91,7 @@ $$
 :::
 
 <1>3. Count the units when $n=pq$ with $p\ne q$ prime.
-::: proof
+::: {.proof}
 By step <1>2, a residue class modulo $pq$ fails to be a unit exactly when
 its representative is divisible by $p$ or by $q$.
 

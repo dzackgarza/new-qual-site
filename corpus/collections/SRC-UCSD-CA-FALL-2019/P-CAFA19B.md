@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be analytic on $\mathbb{D}$ with $|f(z)| \leq 1/2$ on $\mathbb{D}$ and $f(0) = r \in \mathbb{R}$, where $0 < r < 1/2$.
 
 (a) Prove that $f(z)$ has no zeros in the disk $\{|z| < 2r\}$.
@@ -21,7 +21,7 @@ Let $f$ be analytic on $\mathbb{D}$ with $|f(z)| \leq 1/2$ on $\mathbb{D}$ and $
 If so, find all such functions $f(z)$.
 :::
 
-::: solution
+::: {.solution}
 Set $g=2f$. Then $g:\mathbb D\to\mathbb D$ is holomorphic and $g(0)=2r$.
 
 If $g(a)=0$, Schwarz--Pick gives

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: P-PRACT20-W4-15
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 15"
+title: Evaluating a linear functional on $\mathbb R^2$ from two values
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Linear Transformations
 relations: []
 review: draft
 ---

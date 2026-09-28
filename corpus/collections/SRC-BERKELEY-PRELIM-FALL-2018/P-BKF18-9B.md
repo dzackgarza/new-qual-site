@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Find the smallest $n$ for which the symmetric group $S_n$ contains a cyclic subgroup of order $111$.
 :::
 

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULCM
 kind: proposition
 title: Toric varieties are rational and Cohen-Macaulay, and affine ones have no nontrivial vector bundles
+slogan: 'Every toric variety is rational and Cohen--Macaulay; every vector bundle on an affine toric variety is trivial.'
 classification:
   areas:
   - algebraic-geometry
@@ -29,8 +30,8 @@ Let $X_\Sigma$ be a toric variety of dimension $n$.
 3. Every vector bundle on an affine toric variety $U_\sigma$ is trivial, equivalently every finitely generated projective $k[S_\sigma]$-module is free.
 :::
 
-::: {.remark title="What each one is worth"}
-Rationality is the one-line answer to "is this variety rational", and it is also the reason toric varieties supply no counterexamples about rationality: they are all rational, so a unirational-but-not-rational example must be found elsewhere.
+::: {.remark title="Consequences"}
+Rationality implies that toric varieties cannot furnish unirational-but-nonrational examples: every toric variety is already rational.
 
 Cohen-Macaulayness is the input that makes Serre duality and the vanishing theorems available without extra hypotheses, and it is why $\omega_{X_\Sigma} = \OO(-\sum_\rho D_\rho)$ behaves as a dualising sheaf even at singular points.
 Note the contrast with Gorenstein, which is a genuine condition: $X_\Sigma$ is Gorenstein exactly when $K_X$ is Cartier, which for $X_P$ means $P$ reflexive.

@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Extend the Hurewicz theorem by showing that if $X$ is an $(n-1)$-connected CW complex, then the Hurewicz homomorphism $h: \pi_{n+1}(X) \to H_{n+1}(X)$ is surjective when $n > 1$, and when $n = 1$ show there is an isomorphism $H_2(X) / h\bigl(\pi_2(X)\bigr) \approx H_2\bigl(K(\pi_1(X), 1)\bigr)$.
+:::
 
 ::: {.solution}
 Let \(X\) be \((n-1)\)-connected. Attach cells of dimensions at least \(n+2\) to \(X\) to kill \(\pi_{n+1},\pi_{n+2},\dots\), obtaining a \(K(\pi_nX,n)\), say \(K\). The inclusion

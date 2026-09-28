@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-4XKGD
 kind: theorem
-title: Frattini's Argument
+title: Frattini's argument
+slogan: 'A normal subgroup together with the normalizer of one of its Sylow subgroups generates the whole group.'
 classification:
   areas:
   - algebra
@@ -17,5 +18,13 @@ review: draft
 ---
 
 ::: {.theorem}
-If $H\normal G$ and $P \in \mathrm{Syl}_p(H)$, then $H N_G(P) = G$ and $[G: H]$ divides $\abs{N_G(P)}$.
+Let $G$ be a finite group, $H\normal G$ a normal subgroup, $p$ a prime, and $P \in \Syl_p(H)$ a [[D-7TQ2M|Sylow $p$-subgroup]] of $H$.
+Then $G=H\,N_G(P)$, and $[G: H]$ divides $\abs{N_G(P)}$.
+:::
+
+::: {.proof}
+Let $g\in G$.
+Since $H\normal G$, $gPg^{-1}\leq H$ is a Sylow $p$-subgroup of $H$, so by [[T-EF2MZ|Sylow's second theorem]] in $H$ there is $h\in H$ with $hgPg^{-1}h^{-1}=P$.
+Then $hg\in N_G(P)$, so $g\in h^{-1}N_G(P)\subseteq H\,N_G(P)$.
+Hence $G=H\,N_G(P)$, and by the second isomorphism theorem $G/H\cong N_G(P)/(N_G(P)\cap H)$, so $[G:H]$ divides $\abs{N_G(P)}$.
 :::

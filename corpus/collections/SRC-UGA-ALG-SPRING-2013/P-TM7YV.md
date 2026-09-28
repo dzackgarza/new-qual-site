@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) = g(x) h(x) \in \mathbb{Q}[x]$ and let $E, B, C / \mathbb{Q}$ be the splitting fields over $\mathbb{Q}$ of $f, g, h$ respectively (viewed inside a fixed algebraic closure $\overline{\mathbb{Q}}$).
 
 (a) Prove that $\operatorname{Gal}(E/B)$ and $\operatorname{Gal}(E/C)$ are normal subgroups of $\operatorname{Gal}(E/\mathbb{Q})$.
@@ -29,7 +29,7 @@ Let $f(x) = g(x) h(x) \in \mathbb{Q}[x]$ and let $E, B, C / \mathbb{Q}$ be the s
 (e) Use (d) to describe $\operatorname{Gal}(\mathbb{Q}[\alpha]/\mathbb{Q})$ where $\alpha = \sqrt{2} + \sqrt{3}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the Galois group splitting for composita of linearly disjoint Galois extensions and compute the Galois group of $\mathbb{Q}(\sqrt{2} + \sqrt{3})$.
 
 <1>1. Setting and Fixed Field Properties:

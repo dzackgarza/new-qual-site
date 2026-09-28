@@ -25,7 +25,7 @@ audit:
   note: Verified the antipodal self-map is continuous and has no fixed point on S^2.
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove:
 
 Every continuous map from $S^2$ to $S^2$ has a fixed point.

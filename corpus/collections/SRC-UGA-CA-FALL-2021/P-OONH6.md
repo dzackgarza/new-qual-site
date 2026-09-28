@@ -14,16 +14,16 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper half plane.
 :::
 
-:::{.warnings}
+::: {.warnings}
 DZG: I'm 90% sure this is meant to be $\abs{z-1}, \abs{z+1} < \sqrt{2}$ or $\abs{z-1}^2,\abs{z+1}^2 < 2$.
 Otherwise computing the argument of the resulting lines is tricky...
 :::
 
-:::{.solution}
+::: {.solution}
 The region:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-29_22-11-00.png)

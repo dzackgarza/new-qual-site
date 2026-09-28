@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I \da \int_\RR {e^{x\over 2}\over 1+e^x}\dx
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Replication: find $b$ such that $f(z) = f(z+ib)$ and use a rectangle.
 \[
 f(z+ib) 

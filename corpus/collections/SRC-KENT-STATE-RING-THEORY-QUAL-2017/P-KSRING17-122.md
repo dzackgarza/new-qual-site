@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-122
 kind: problem
-title: Kent State ring-theory qualifying problem 122
+title: A ring whose non-units are closed under addition is local
 classification:
   areas: [algebra]
   topics: []

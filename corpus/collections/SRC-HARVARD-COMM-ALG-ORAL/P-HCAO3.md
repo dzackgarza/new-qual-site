@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Give an example of a commutative ring with identity that has a prime ideal which is not maximal.
 :::
 

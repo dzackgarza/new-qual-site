@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For each part, determine if it is always true or sometimes false.
 If true give a brief proof.
 If false give a counterexample.
@@ -31,7 +31,7 @@ Then for any $c \in \mathbb{C}$ and any $\epsilon > 0$ there exists $z \in \math
 (e) If $u(z)$ is a (real-valued) harmonic function defined in all of $\mathbb{C}$ and satisfying $u(z) \geq -1$ for all $z \in \mathbb{C}$, then $u$ is constant.
 :::
 
-::: solution
+::: {.solution}
 (a) **True.** Cauchy's estimate on the circle $|z|=1/2$ gives
 \[
 |f''(0)|\le \frac{2!\,3}{(1/2)^2}=24.

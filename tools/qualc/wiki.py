@@ -12,6 +12,7 @@ from __future__ import annotations
 import posixpath
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
@@ -21,9 +22,10 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import MARKDOWN, drop_path_captions, from_ast, unread_math
-from .pandoc_batch import Citations, PandocFailure, PandocServer
+from .model import MARKDOWN, drop_path_captions, from_ast, load_front_matter, unread_math
+from .pandoc_batch import PARALLEL_WORKERS, Citations, PandocFailure, PandocResult, PandocServer
 from .static_site import AssetCatalog, _asset_source
+from .tex import mark_definienda
 
 WIKI_BATCH_SIZE = 8
 
@@ -157,7 +159,7 @@ def _split_front_matter(text: str, path: Path) -> tuple[dict[str, object], str]:
     parts = text.split("---\n", 2)
     if len(parts) != 3:
         raise ValueError(f"{path}: unterminated YAML front matter")
-    metadata = yaml.safe_load(parts[1])
+    metadata = load_front_matter(parts[1])
     if metadata is None:
         metadata = {}
     if not isinstance(metadata, dict):
@@ -171,7 +173,7 @@ def _title(document: pf.Doc, metadata: dict[str, object], path: Path) -> str:
         return value.strip()
     for block in document.content:
         if isinstance(block, pf.Header) and block.level == 1:
-            return pf.stringify(block).strip()
+            return str(pf.stringify(block)).strip()
     return path.stem.replace("_", " ")
 
 
@@ -260,6 +262,14 @@ def _without_first_title(document: pf.Doc) -> list[pf.Block]:
     return blocks
 
 
+def _read_wiki_batch(
+    bodies: list[str],
+    citations: Citations,
+) -> list[PandocResult]:
+    with PandocServer() as pandoc:
+        return pandoc.read_markdown(bodies, MARKDOWN, citations)
+
+
 def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple[list[WikiPage], list[Diagnostic]]:
     """Parse all source pages through the same Pandoc dialect as cards.
 
@@ -273,15 +283,26 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
     for path in paths:
         try:
             metadata, body = _split_front_matter(path.read_text(), path)
-            prepared.append((path, path.relative_to(root), metadata, body))
+            prepared.append((path, path.relative_to(root), metadata, mark_definienda(body)))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
             errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
 
     parsed: list[WikiPage] = []
     restored: list[str] = []
-    for offset in range(0, len(prepared), WIKI_BATCH_SIZE):
-        batch = prepared[offset : offset + WIKI_BATCH_SIZE]
-        results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations)
+    batches = [prepared[offset : offset + WIKI_BATCH_SIZE] for offset in range(0, len(prepared), WIKI_BATCH_SIZE)]
+    if len(batches) > 1:
+        workers = min(PARALLEL_WORKERS, len(batches))
+        with ThreadPoolExecutor(max_workers=workers) as executor:
+            result_batches = list(
+                executor.map(
+                    _read_wiki_batch,
+                    [[body for _, _, _, body in batch] for batch in batches],
+                    [citations] * len(batches),
+                )
+            )
+    else:
+        result_batches = [pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations) for batch in batches]
+    for batch, results in zip(batches, result_batches, strict=True):
         for (path, source_rel, metadata, body), result in zip(batch, results, strict=True):
             if isinstance(result, PandocFailure):
                 errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))
@@ -595,7 +616,7 @@ def _carries_math(inlines: list[pf.Inline]) -> bool:
         if isinstance(inline, pf.Str) and "$" in inline.text:
             return True
         content = getattr(inline, "content", None)
-        if content is not None and _carries_math(cast(list[pf.Inline], list(content))):
+        if content is not None and _carries_math(list(content)):
             return True
     return False
 

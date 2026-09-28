@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHFIN
 kind: theorem
 title: Finiteness of cohomology for coherent sheaves on a projective scheme
+slogan: 'Properness plus coherence makes cohomology finite: coherent cohomology on a projective scheme is finitely generated, hence finite-dimensional over a field.'
 classification:
   areas:
   - algebraic-geometry
@@ -19,6 +20,7 @@ review: draft
 prompts:
 - Why is $H^i(X, \mcf)$ finite dimensional?
 - Which hypothesis in Serre finiteness fails first?
+- If $X \subseteq \PP^n_k$ is a closed subscheme and $\mcf$ is a coherent $\OO_X$-module, why is $\Gamma(X, \mcf)$ finite dimensional over $k$?
 ---
 
 ::: {.theorem}

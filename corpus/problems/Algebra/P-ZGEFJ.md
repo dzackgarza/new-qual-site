@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring, let $I\le R$ be a left ideal, let $A$ be a left $R$-module, and let $S\subseteq A$ be nonempty. Define
 \[
 IS=\left\{\sum_{i=1}^n r_i a_i:n\ge1,\ r_i\in I,\ a_i\in S\right\}.
@@ -21,7 +21,7 @@ IS=\left\{\sum_{i=1}^n r_i a_i:n\ge1,\ r_i\in I,\ a_i\in S\right\}.
 Show that $IS$ is a submodule of $A$.
 :::
 
-::: solution
+::: {.solution}
 Since $S$ is nonempty, choose $a\in S$. Then
 \[
 0=0\cdot a\in IS,

@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 When and how can we solve the matrix equation $\exp(A) = B$?
 Do it over the complex numbers and over the real numbers.
 Give a counterexample with real entries.
 :::
 
-::: solution
+::: {.solution}
 Over $\mathbb C$, the equation $e^A=B$ has a solution exactly when $B$ is invertible. Necessity follows from
 \[
 \det(e^A)=e^{\operatorname{tr}A}\neq0.

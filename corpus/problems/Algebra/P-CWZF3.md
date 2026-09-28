@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a PID and let $(p)$ be a prime ideal of $R$. Prove that $R/(p)$ is a field.
 :::
 

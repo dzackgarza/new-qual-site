@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-OSSYR
 kind: definition
-title: 'Definition: prime ideal.'
+title: Prime ideal
 prompts:
 - When is an ideal $\mathfrak{p} \normal R$ prime?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-An ideal $\mathfrak{p}\normal R$ is prime iff it is proper and $ab\in \mathfrak{p} \implies a\in \mathfrak{p}$ or $b\in \mathfrak{p}$.
+Let $R$ be a commutative [[D-GURUB|ring]].
+An [[D-GOFWL|ideal]] $\mfp\subseteq R$ is \dfn{prime} if $\mfp\neq R$ and, for all $a,b\in R$, $ab\in \mfp$ implies $a\in \mfp$ or $b\in \mfp$.
 :::

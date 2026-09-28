@@ -19,7 +19,7 @@ from typing import get_args, get_type_hints
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from qualc.diagnostics import DiagnosticCode
-from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ProblemCard
+from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ProblemCard, TheoremCard
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -419,7 +419,8 @@ def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
 
 
 # The audit block: who wrote the solution, who checked the statement against the
-# original source, who reviewed the solution, and when each of those happened.
+# original source, whether that check required correcting the authored statement,
+# who reviewed the solution, and when each of those happened.
 AUDIT_BLOCK = """review: draft
 audit:
 - event: solution-written
@@ -429,6 +430,10 @@ audit:
   by: dzackgarza
   date: 2026-08-20
   note: checked against the UGA prelim paper
+- event: source-corrected
+  by: dzackgarza
+  date: 2026-08-20
+  note: corrected a mistranscribed hypothesis
 - event: solution-reviewed
   by: dzackgarza
   date: 2026-08-24
@@ -457,13 +462,14 @@ def test_audit_rounds_parse_in_authored_order(tmp_path: Path, fixture: str) -> N
     assert card.audit == [
         AuditEvent(event="solution-written", by="dzackgarza", date=date(2026, 8, 16)),
         AuditEvent(event="source-checked", by="dzackgarza", date=date(2026, 8, 20), note="checked against the UGA prelim paper"),
+        AuditEvent(event="source-corrected", by="dzackgarza", date=date(2026, 8, 20), note="corrected a mistranscribed hypothesis"),
         AuditEvent(event="solution-reviewed", by="dzackgarza", date=date(2026, 8, 24)),
         AuditEvent(event="solution-reviewed", by="neil", date=date(2026, 8, 27)),
     ]
 
 
 def test_unknown_audit_event_is_rejected(tmp_path: Path) -> None:
-    """The three events are a closed vocabulary. A fourth spelling is a typo,
+    """The four events are a closed vocabulary. An unknown spelling is a typo,
     and a typo that validates is metadata nobody can query."""
     from qualc.model import parse_card
 
@@ -531,6 +537,26 @@ def test_card_without_prompts_is_never_asked() -> None:
     from qualc.model import parse_card
 
     assert parse_card(FIXTURES / "DEF-PGROUP.md").card.prompts == []
+
+
+def test_result_slogan_is_authored_and_nonempty(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    theorem = parse_card(FIXTURES / "THM-SYLOW.md").card
+    assert isinstance(theorem, TheoremCard)
+    assert theorem.slogan == "Sylow subgroups are as large as the $p$-part allows."
+
+    empty = tmp_path / "THM-SYLOW.md"
+    empty.write_text(
+        (FIXTURES / "THM-SYLOW.md")
+        .read_text()
+        .replace(
+            "slogan: Sylow subgroups are as large as the $p$-part allows.\n",
+            "slogan: '   '\n",
+        )
+    )
+    with pytest.raises(ValueError):
+        parse_card(empty)
 
 
 APPEARANCE = "    term: spring\n  problems:\n  - id: P-INDEXP\n    comment: {comment}\n  - E-CENTER\n"

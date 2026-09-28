@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a finitely generated module over a PID $R$.
 
 a. $M_t$ be the set of torsion elements of $M$, and show that $M_t$ is a submodule of $M$.

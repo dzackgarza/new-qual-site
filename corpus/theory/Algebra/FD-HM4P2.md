@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-HM4P2
 kind: definition
-title: 'Definition: Primitive Root of Unity.'
+title: Primitive root of unity
 prompts:
 - When is $\zeta$ a primitive $n$th root of unity?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-$\zeta$ is a **primitive $n$th root of unity** iff $\zeta^n = 1$ and $n$ is the smallest such integer for which this holds.
+Let $F$ be a [[D-UI6CU|field]] and $n\geq 1$ an integer.
+An element $\zeta\in F$ is a \dfn{primitive $n$th root of unity} if $\zeta^n = 1$ and $\zeta^m\neq 1$ for $1\leq m<n$, that is, $\zeta$ has [[D-ZTPHF|order]] $n$ in $F^\times$.
 :::

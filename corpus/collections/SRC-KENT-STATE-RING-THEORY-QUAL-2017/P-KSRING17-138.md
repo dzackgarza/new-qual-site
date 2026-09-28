@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-138
 kind: problem
-title: Kent State ring-theory qualifying problem 138
+title: Hilbert basis theorem for commutative Noetherian rings
 classification:
   areas: [algebra]
   topics: []

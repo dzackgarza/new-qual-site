@@ -24,7 +24,7 @@ audit:
   note: "Enumerated every subgroup of all five candidate groups, kept the two isomorphic order-six descriptions, and verified realizability over Q for both surviving isomorphism types."
 ---
 
-::: problem
+::: {.problem}
 Let $E$ be a splitting field of $g(x) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
 Suppose its intermediate-field lattice consists of $\mathbb Q$, $E$, and exactly four distinct proper intermediate fields $F_1,F_2,F_3,F_4$. Each satisfies $\mathbb Q\subsetneq F_j\subsetneq E$, and no $F_j$ contains another $F_k$ for $j\ne k$. No degrees are specified.
 Which of the following groups could be $\text{Gal}(E/\mathbb{Q})$?
@@ -41,7 +41,7 @@ Justify your answers.
 (e) $\mathbb{Z}_3 \times \mathbb{Z}_3$
 :::
 
-::: solution
+::: {.solution}
 The possible answers are **(c), (d), and (e)**. Parts (c) and (d)
 describe the same isomorphism type. The unlabeled lattice does not
 distinguish that type from $C_3\times C_3$.
@@ -49,7 +49,7 @@ distinguish that type from $C_3\times C_3$.
 <1>1. The required subgroup lattice has exactly four nontrivial
 proper subgroups, all mutually incomparable.
 
-::: proof
+::: {.proof}
 A splitting field over $\mathbb Q$ is a finite Galois extension,
 since characteristic zero gives separability. The Galois
 correspondence is an inclusion-reversing bijection between its
@@ -62,7 +62,7 @@ specified intermediate-field lattice.
 
 <1>2. Neither (a) nor (b) has the required subgroup lattice.
 
-::: proof
+::: {.proof}
 In $C_2\times C_2$, each of the three nonidentity elements
 generates a different subgroup of order $2$. By Lagrange's theorem
 these are all the nontrivial proper subgroups. There are three,
@@ -76,7 +76,7 @@ subgroups, of orders $2$ and $3$. This rules out (b).
 <1>3. Both (c) and (d) have the required subgroup lattice and
 are realized over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 The symmetry group of an equilateral triangle acts faithfully
 on its three vertices. It has six elements, so this action
 identifies the dihedral group of order $6$ with $S_3$.
@@ -102,7 +102,7 @@ the required field lattice. This realizes both descriptions.
 <1>4. The group in (e) also has the required subgroup lattice
 and is realized over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 View $C_3\times C_3$ as the additive group of $\mathbb F_3^2$.
 Each nonzero vector spans a subgroup of order $3$ containing
 exactly two nonzero vectors. The eight nonzero vectors are thus

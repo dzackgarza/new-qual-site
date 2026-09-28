@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that there is an analytic function $f$ in $\mathbb{C} \setminus [-1, 1]$ such that $(f(z))^2 = z^2 - 1$.
 Does it extend analytically to $\mathbb{C}_\infty \setminus [-1, 1]$?
 How many such functions are there?
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 G=\mathbb C\setminus[-1,1],

@@ -24,7 +24,7 @@ Choose a point $p$ of $S^2$ not lying in the image of $f$.
 Since $S^2 - \ts{p}$ is homeomorphic with $\mathbb{R}^2$, and $\mathbb{R}^2$ is simply connected, the loop $f$ is path homotopic to the constant loop.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Identify and critique the fundamental flaw in the proposed proof that $S^2$ is simply connected, and explain how the gap is rigorously resolved.
 
 <1>1. Identification of the logical fallacy:

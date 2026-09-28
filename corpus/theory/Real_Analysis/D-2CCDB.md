@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-2CCDB
 kind: definition
-title: Equicontinuity
+title: Equicontinuity at a point
 classification:
   areas:
   - real-analysis
@@ -13,11 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-If $\mathcal F \subset C(X)$ is a family of continuous functions on $X$, then $\mathcal F$ *equicontinuous* at $x$ iff
-
-\[
-\forall \varepsilon > 0 ~~\exists U \ni x \text{ such that } y\in U \implies \abs{f(y) - f(x)} < \varepsilon \quad \forall f\in \mathcal{F}
-.\]
-
+::: {.definition}
+Let $X$ be a topological space, let $x\in X$, and let $\mathcal F\subseteq C(X)$ be a family of [[D-AEAAD|continuous]] functions $X\to\CC$.
+The family $\mathcal F$ is \dfn{equicontinuous at $x$} if
+$$
+\forall \varepsilon > 0 \quad \exists \text{ an open set } U \ni x \quad \forall y\in U \quad \forall f\in \mathcal{F}: \quad \abs{f(y) - f(x)} < \varepsilon.
+$$
 :::

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 a. Prove that if $f, g\in L^+(\RR)$ then 
 \[
 \int(f +g) = \int f + \int g

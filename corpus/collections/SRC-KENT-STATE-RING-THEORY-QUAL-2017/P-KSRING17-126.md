@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-126
 kind: problem
-title: Kent State ring-theory qualifying problem 126
+title: The residue field of $R_P$ is the fraction field of $R/P$
 classification:
   areas: [algebra]
   topics: []

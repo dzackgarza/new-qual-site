@@ -16,11 +16,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Construct nonnormal covering spaces of the Klein bottle by a Klein bottle and by a torus.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct explicit non-normal covering spaces of the Klein bottle $K$ whose total spaces are a Klein bottle and a torus, by finding corresponding non-normal subgroups of $\pi_1(K)$.
 
 <1>1. Presentation and algebraic structure of $\pi_1(K)$:

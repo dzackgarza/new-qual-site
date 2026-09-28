@@ -12,13 +12,15 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Compute $\ext(\ZZ \oplus \ZZ/2 \oplus  \ZZ/3, \ZZ \oplus  \ZZ/4 \oplus  \ZZ/5)$.
+:::
 
-:::{.solution}
+::: {.solution}
 
 
 \envlist
-:::{.concept}
+::: {.concept}
 \envlist
 Facts Used:[^fix_facts_on_ext_oskar]
 

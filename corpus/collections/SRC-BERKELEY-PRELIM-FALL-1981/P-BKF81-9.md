@@ -23,7 +23,7 @@ audit:
   note: "Computed the trace from diagonal coefficients of X↦AXB and factored the determinant through left and right multiplication on the two columns and rows."
 ---
 
-::: problem
+::: {.problem}
 Let $M_{2\times2}(\mathbb R)$ be the space of real $2\times2$ matrices and
 \[
 A=\begin{pmatrix}1&2\\-1&3\end{pmatrix},\qquad
@@ -32,7 +32,7 @@ B=\begin{pmatrix}2&1\\0&4\end{pmatrix}.
 Define $L(X)=AXB$. Compute the trace and determinant of $L$.
 :::
 
-::: solution
+::: {.solution}
 Write
 $$
 L=L_A\circ R_B,
@@ -45,7 +45,7 @@ R_B(X)=XB.
 $$
 
 <1>1. Compute the trace of $L$.
-::: proof
+::: {.proof}
 Let $E_{ij}$ be the standard basis of $M_{2\times2}(\mathbb R)$. For a
 general matrix $X=(x_{ij})$,
 $$
@@ -74,7 +74,7 @@ $$
 :::
 
 <1>2. Compute the determinant of left multiplication by $A$.
-::: proof
+::: {.proof}
 Left multiplication acts independently on the two columns of $X$, applying
 $A$ to each column. Hence, in a basis grouped by columns, the matrix of
 $L_A$ is block diagonal with two copies of $A$. Thus
@@ -92,7 +92,7 @@ $$
 :::
 
 <1>3. Compute the determinant of right multiplication by $B$ and conclude.
-::: proof
+::: {.proof}
 Right multiplication acts independently on the two rows of $X$. On each row
 it has determinant $\det B$, so
 $$

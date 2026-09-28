@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that $x^{p^d} - x \divides x^{p^n} - x \iff d \divides n$
 :::
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-018
 kind: problem
-title: Kent State ring-theory qualifying problem 18
+title: Surjectivity of $R\to R/A\times R/B$ and comaximal ideals
 classification:
   areas: [algebra]
   topics: []

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be the group of order $21$ defined by the relations
 \[
 a^7=b^3=1\quad\text{and}\quad b^{-1}ab=a^2.

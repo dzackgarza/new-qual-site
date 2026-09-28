@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Prove that if $f$ is holomorphic on a connected open set $\Omega$ and $f^2(z) = \bar{f(z)}$ then $f$ is constant.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $F(z) \da f^3(z)$ so that
 \[
 F(z) = f^2(z) f(z) = \bar{f(z)}f(z) = \abs{f(z)}^2

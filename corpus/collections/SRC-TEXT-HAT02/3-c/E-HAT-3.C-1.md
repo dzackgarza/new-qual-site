@@ -23,9 +23,11 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Suppose that $X$ is a CW complex with basepoint $e \in X$ a 0-cell.
 Show that $X$ is an H-space if there is a map $\mu: X \times X \to X$ such that the maps $X \to X$, $x \mapsto \mu(x, e)$ and $x \mapsto \mu(e, x)$, are homotopic to the identity.
 [Sometimes this is taken as the definition of an H-space, rather than the more restrictive condition in the definition we have given.] With the same hypotheses, show also that $\mu$ can be homotoped so that $e$ is a strict two-sided identity.
+:::
 
 ::: {.solution}
 Because $e$ is a $0$-cell of the CW complex $X$, the inclusion $\{e\}\hookrightarrow X$ is a closed cofibration; equivalently, $(X,e)$ is well-pointed. For well-pointed H-spaces there is a standard unit-strictification theorem: a multiplication having a two-sided homotopy unit in the unbased sense can be homotoped first so that the unit homotopies preserve the basepoint, and if $X\vee X\hookrightarrow X\times X$ is a cofibration, the multiplication can then be homotoped to have a strict two-sided unit. See tom Dieck--Kamps--Puppe, *Homotopy Theory*, Theorem 3.37 and Proposition 3.38.

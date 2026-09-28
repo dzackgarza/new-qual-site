@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose that $f$ is entire and has polynomial growth in the following sense:
 \[
 \abs{f(z)\over z^n} \leq M \text{ for }\abs{z} \geq R
@@ -25,7 +25,7 @@ Show that $f$ is a polynomial of degree at most $n$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Since $f$ is entire, it equals its Laurent expansion about $z_0 = 0$, so
 \[
 f(z) = \sum_{k\geq 0} c_k z^k, && c_k = {f^{(k)}(0)\over k! } = {1\over 2\pi i}\int_{\abs{\xi} = R} {f(\xi) \over \xi^{k+1}}\dxi

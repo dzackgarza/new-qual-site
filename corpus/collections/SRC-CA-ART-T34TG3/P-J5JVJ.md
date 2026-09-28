@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 \int_{0}^{1} \log (\sin \pi x) d x=-\log 2

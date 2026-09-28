@@ -24,7 +24,7 @@ audit:
   note: Reduced divisibility by x^(q^n)-x to the finite-field subfield criterion F_(q^d) subset F_(q^n) iff d divides n.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $K$ is a finite field with $|K| = q$.
 Show that if $f \in K[x]$ is irreducible, then $f$ divides $x^{q^n} - x$ in $K[x]$ if and only if $\deg f$ divides $n$.
 :::

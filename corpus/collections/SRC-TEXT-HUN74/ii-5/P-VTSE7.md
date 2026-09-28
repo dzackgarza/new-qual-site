@@ -29,7 +29,7 @@ audit:
 Show that if every Sylow $p$-subgroup of a finite group $G$ is normal for every prime $p$, then $G$ is the direct product of its Sylow subgroups.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 |G|=p_1^{a_1}\cdots p_r^{a_r},
@@ -37,7 +37,7 @@ Let
 and let $P_i$ be the Sylow $p_i$-subgroup. By hypothesis each $P_i$ is normal.
 
 <1>1. If $i\ne j$, then $P_i\cap P_j=\{e\}$.
-::: proof
+::: {.proof}
 The order of $P_i\cap P_j$ divides both $|P_i|=p_i^{a_i}$ and
 $|P_j|=p_j^{a_j}$. Since $p_i\ne p_j$, these orders are coprime, so
 $|P_i\cap P_j|=1$.
@@ -45,7 +45,7 @@ $|P_i\cap P_j|=1$.
 
 <1>2. If $i\ne j$, then every element of $P_i$ commutes with every element of
 $P_j$.
-::: proof
+::: {.proof}
 Let $x\in P_i$ and $y\in P_j$. Because $P_i\trianglelefteq G$,
 \[
 [x,y]=xyx^{-1}y^{-1}\in P_i.
@@ -64,14 +64,14 @@ by <1>1, so $xy=yx$.
 (x_1,\ldots,x_r)\longmapsto x_1\cdots x_r
 \]
 is a homomorphism.
-::: proof
+::: {.proof}
 By <1>2, elements belonging to distinct factors commute. Therefore componentwise
 multiplication in the direct product is carried by $\mu$ to multiplication in
 $G$.
 :::
 
 <1>4. The homomorphism $\mu$ is injective.
-::: proof
+::: {.proof}
 Suppose $x_1\cdots x_r=e$ with $x_i\in P_i$. Fix $i$. Then
 \[
 x_i=\left(\prod_{j\ne i}x_j\right)^{-1}.
@@ -83,7 +83,7 @@ Since this holds for every $i$, the kernel is trivial.
 :::
 
 <1>5. The homomorphism $\mu$ is surjective.
-::: proof
+::: {.proof}
 Its domain has order
 \[
 \prod_{i=1}^r|P_i|
@@ -98,7 +98,7 @@ surjective.
 \[
 G\cong P_1\times\cdots\times P_r.
 \]
-::: proof
+::: {.proof}
 By <1>3--<1>5, $\mu$ is an isomorphism.
 :::
 :::

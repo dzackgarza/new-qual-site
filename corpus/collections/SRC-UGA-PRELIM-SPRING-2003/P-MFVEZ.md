@@ -22,19 +22,18 @@ Consider the line integral $\int_C 2x\,dx + x^2y\,dy$, where $C$ is the boundary
 Evaluate the line integral (a) directly and (b) by using Green's theorem.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The value depends on the orientation of $C$. For the positive (counterclockwise) orientation,
 \[
 \int_C 2x\,dx+x^2y\,dy=\frac12.
 \]
 For the clockwise orientation the value is $-\frac12$.
-:::
+The source does not specify an orientation; the steps below compute the positively oriented integral, which is the orientation Green's theorem uses.
 
 <1>2. Compute the positively oriented integral directly by traversing the four sides
 \[
 (0,0)\to(1,0)\to(1,1)\to(0,1)\to(0,0).
 \]
-:::
 
 <1>3. The bottom side contributes $1$.
 ::: {.proof}
@@ -65,7 +64,6 @@ Along the left side, $x=0$, so both terms vanish.
 \[
 1+\frac12-1+0=\frac12.
 \]
-:::
 
 <1>7. Green's theorem gives the same value.
 ::: {.proof}
@@ -79,5 +77,4 @@ Set $P(x,y)=2x$ and $Q(x,y)=x^2y$. For the unit square $D=[0,1]^2$ with positive
 :::
 
 <1>8. Reversing the orientation changes the sign of every line integral, giving $-\frac12$ for clockwise orientation.
-:::
 :::

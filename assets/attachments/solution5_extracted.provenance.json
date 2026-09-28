@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/solution5.pdf",
+  "source_pdf_sha256": "a1ffcd61c1b3f51be428ad0da30c4c66ada71cdf3dbeebc34f9bd7052e3a3232",
+  "extracted_markdown": "assets/attachments/solution5_extracted.md",
+  "extracted_markdown_sha256": "6d30f55a8c6cdeaa7252fc426c1ed85ce25567255834fa611fb42e60059ea43c",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution5.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/solution5.md",
+  "source_identification": "Harvard Math 21b Spring 2018 Practice Final 5 with worked solutions and fourteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Flash loses the visible headings for source Problems 2, 3, 7, and 13; the surrounding source order and content preserve their positions.",
+    "Problem 3's phase-portrait table is incomplete in the deterministic extraction; the existing card keeps the unrecoverable display content explicit rather than reconstructing it."
+  ]
+}

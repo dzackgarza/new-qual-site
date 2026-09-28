@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ is continuous and nonvanishing on $\bar \DD$, and holomorphic in $\DD$.
 Prove that if $\abs{z} = 1 \implies \abs{f(z)} = 1$, then $f$ is constant.
 

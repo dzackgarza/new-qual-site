@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the maximal real subfield in a cyclotomic extension $\mathbb{Q}(\zeta_n)/\mathbb{Q}$?
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 K=\mathbb Q(\zeta_n).

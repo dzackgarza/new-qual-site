@@ -28,6 +28,7 @@ audit:
   note: "Compared both complete copies of Fall 2010 problem 5. The corrected quadratic-root proof contains the mathematics of P-JHUMAY11ANM; removed that duplicate and its unsupported May 2011 membership after checking the actual May 2011 and Fall 2010 pages."
 ---
 
+::: {.problem}
 Let $\gamma$ be the closed curve in the complex plane that is given in polar coordinates by $r = 2 + 3\cos\theta$, $0 \leq \theta \leq 4\pi$, oriented in the direction of increasing $\theta$.
 Let
 
@@ -36,11 +37,12 @@ $$f(z) = \frac{e^z}{2z - 1} + \frac{\sin(2z)}{(z - 2)^2} + \frac{\cos(5z)}{(z + 
 Calculate $\int_\gamma f(z) \, dz$.
 
 [Recall that in polar coordinates, $(-r, \theta)$ and $(r, \theta + \pi)$ give the same point in the plane.]
+:::
 
-::: solution
+::: {.solution}
 <1>1. The winding numbers are determined by three quadratic polynomials.
 
-::: proof
+::: {.proof}
 Put $P(w)=3w^2/2+2w+3/2$. For $w=e^{i\theta}$,
 $$
 P(w)=(2+3\cos\theta)e^{i\theta}=\gamma(\theta).
@@ -77,7 +79,7 @@ $$
 
 <1>2. The indexed residue formula evaluates the integral.
 
-::: proof
+::: {.proof}
 The only possible poles of $f$ are $1/2$, $2$, and $-5i$.
 At the first two, the residues are
 $$

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For any topological space $X$ whose total homology is a finitely-generated abelian group, let $\chi(X)$ denote the usual Euler characteristic
 \[
 \chi(X) = \sum_i (-1)^i \dim_{\mathbb{Q}} H_i(X; \mathbb{Q})

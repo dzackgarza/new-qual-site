@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 7. Provide all the details in the proof of the formula for the solution of the Dirichlet problem in a strip discussed in Section 1.3. Recall that it sufices to compute the solution at the points $z = i y$ with $0 < y < 1$
 
 (a) Show that if $r e ^ { i \theta } = G ( i y )$ , then

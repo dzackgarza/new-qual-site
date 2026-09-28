@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $L$ be a linear operator on a nonzero vector space $V$ over a field $K$, and let $P\in K[x]$ be nonzero with $P(L)=0$.
 
 (a) Show every eigenvalue of $L$ is a root of $P$.

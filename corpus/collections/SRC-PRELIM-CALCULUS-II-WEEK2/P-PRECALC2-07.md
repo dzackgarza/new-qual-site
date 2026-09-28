@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-07
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 7'
+title: Volumes of revolution of the region between $y=x$ and $y=x^2$
 classification:
   areas:
   - prelim

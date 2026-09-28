@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/squal1.pdf",
+  "source_pdf_sha256": "4fbc6ec0b04897cd5feaec8da6f551c0033a247ddc7609dcf4e807aa13ce2f5a",
+  "extracted_markdown": "assets/attachments/squal1_extracted.md",
+  "extracted_markdown_sha256": "68bd1fcb5d67bdea214d3f6cbe345964a0d45cbe8df2b848ad8da1f14826d385",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/squal1.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/squal1.md",
+  "source_identification": "Undated topology qualifying exam with four Section A problems and four Section B problems. The retained PDF does not identify an institution or date.",
+  "card_reconciliation": "The existing complete collection SRC-TOP-SQUAL1 represents all eight source positions in order. No collection path is modified in this intake because the live shared tree owns those paths separately."
+}

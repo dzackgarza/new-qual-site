@@ -26,7 +26,7 @@ audit:
   note: Verified the Mayer-Vietoris map using that the boundary circle of a Mobius band represents twice its core generator.
 ---
 
-::: problem
+::: {.problem}
 Use the circle along which the connected sum is performed and the Mayer-Vietoris long exact sequence to compute the homology of $\RP^2 \# \RP^2$.
 :::
 

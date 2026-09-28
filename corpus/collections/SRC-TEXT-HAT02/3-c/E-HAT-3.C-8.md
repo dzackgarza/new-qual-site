@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the tensor product of two Hopf algebras is a Hopf algebra.
+:::
 
 ::: {.solution}
 Let $A$ and $B$ be graded Hopf algebras over the same commutative coefficient ring. Give $A\otimes B$ the usual graded tensor-product algebra structure

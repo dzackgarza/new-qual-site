@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that every metric space is Hausdorff in its metric topology.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $x\ne y$ in a metric space $(X,d)$, and set
 $$
 r=\frac{d(x,y)}{2}>0.
@@ -34,7 +34,7 @@ $$
 <1>2. The metric balls $B(x,r)$ and $B(y,r)$ are open neighborhoods of $x$ and $y$.
 
 <1>3. They are disjoint.
-::: proof
+::: {.proof}
 If $z\in B(x,r)\cap B(y,r)$, then the triangle inequality gives
 $$
 d(x,y)\le d(x,z)+d(z,y)<r+r=d(x,y),

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-104
 kind: problem
-title: Kent State ring-theory qualifying problem 104
+title: If nonzero primes of $D[x]$ are maximal then $D$ is a field
 classification:
   areas: [algebra]
   topics: []

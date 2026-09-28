@@ -9,12 +9,12 @@ topics:
 
 # Differentials
 
-Asked as a definition, examined as a tool.
+Differentials encode both infinitesimal structure and smoothness.
 
 [[D-4GCH6]]
 
-Quasicoherence is the immediate follow-up and the answer is short: the construction is a module on each affine and commutes with localization, so the pieces glue.
-The better answer adds why one would want it — that $\Omega_{X/k}$ is locally free of rank $\dim X$ exactly when $X$ is smooth, so the sheaf detects the property that the Jacobian criterion computes.
+Quasicoherence follows because the affine construction commutes with localization.
+For a finite-type scheme over a field, local freeness of $\Omega_{X/k}$ of the expected rank detects smoothness and matches the Jacobian criterion.
 
 ## The two sequences
 
@@ -27,7 +27,7 @@ The conormal sequence, for a closed immersion $Z \subseteq X$ with ideal $\mci$:
 \mci/\mci^2 \to \Omega_{X/S}\ro{}{Z} \to \Omega_{Z/S} \to 0 .
 \]
 
-Neither is exact on the left in general, and that is where the content is.
+Neither sequence is left exact in general; injectivity of the leftmost map requires additional hypotheses.
 The first becomes short exact on the left for a smooth morphism, and its failure for a nonconstant map of curves is what Riemann--Hurwitz measures: the cokernel of $f^*\Omega_Y \to \Omega_X$ is the ramification divisor.
 The second becomes short exact on the left when $Z$ is smooth, and taking determinants then gives adjunction,
 \[
@@ -48,4 +48,8 @@ The canonical sheaf of $\PP^n$ is not computed by hand; it is read off a determi
 
 [[T-MODEULER]]
 
-Asked for $\Omega_{\PP^n}$, write the Euler sequence, take top exterior powers, and the answer is $\OO(-n-1)$ in one line.
+The Euler sequence and its top exterior power give $\omega_{\PP^n}\cong\OO(-n-1)$.
+
+## The de Rham complex
+
+[[FE-DERHAMNONLIN]]

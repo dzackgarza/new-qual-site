@@ -11,6 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
+- assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf
 - assets/attachments/UCSD_290_F14_sheet3.pdf
 - assets/attachments/UCSD_290_F14_sheet7.pdf
 - assets/attachments/UCSD_290_F14_sheet8.pdf
@@ -116,5 +117,4 @@ source:
     kind: unknown
   area: topology
 ---
-
 

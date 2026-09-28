@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-KM2DV
 kind: definition
-title: Normal Series
+title: Normal series
 classification:
   areas:
   - algebra
@@ -14,5 +14,10 @@ review: draft
 ---
 
 ::: {.definition}
-A **normal series** of a group $G$ is a sequence $G \to G^1 \to G^2 \to \cdots$ such that $G^{i+1} \normal G_i$ for every $i$.
+Let $G$ be a group.
+A \dfn{normal series} of $G$ is a chain of [[D-IQ4OX|subgroups]]
+$$
+G = G^0 \supseteq G^1 \supseteq G^2 \supseteq \cdots
+$$
+such that $G^{i+1}$ is a [[D-EKE4Q|normal subgroup]] of $G^i$ for every $i$.
 :::

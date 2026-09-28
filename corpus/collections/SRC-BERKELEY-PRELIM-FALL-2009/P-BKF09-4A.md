@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-4A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 4A
+title: $p$-subgroups of $\operatorname{GL}_n(\mathbb F_p)$ are conjugate into the unitriangular group
 classification:
   areas:
   - prelim

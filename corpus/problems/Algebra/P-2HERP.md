@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What can you say about the eigenvalues of a real skew-symmetric matrix?
 :::
 

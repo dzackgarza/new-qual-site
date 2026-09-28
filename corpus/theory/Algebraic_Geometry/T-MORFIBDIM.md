@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MORFIBDIM
 kind: theorem
 title: Fibre dimension and upper semicontinuity
+slogan: 'Fibre dimensions can jump only up on special loci: the general fibre has dimension $\dim X-\dim Y$, and larger-fibre loci are closed.'
 classification:
   areas:
   - algebraic-geometry
@@ -17,16 +18,23 @@ review: draft
 prompts:
 - State the fibre dimension theorem.
 - In what sense is fibre dimension semicontinuous, and in which direction?
+- What is Noether normalization?
 ---
 
 ::: {.theorem title="Noether normalization (affine)"}
-Let $X \subseteq \AA^{n}$ be an affine variety of dimension $d$.
+Let $k$ be an infinite field and $X \subseteq \AA^{n}_k$ an affine variety of dimension $d$.
 Then there exists a finite morphism $X \to \AA^{d}$ which is the restriction to $X$ of a linear map $\AA^{n} \to \AA^{d}$.
 :::
 
 ::: {.theorem title="Noether normalization (projective)"}
-Let $X \subseteq \PP^{n}$ be a projective variety of dimension $d$.
+Let $k$ be an infinite field and $X \subseteq \PP^{n}_k$ a projective variety of dimension $d$.
 Then there exists a finite morphism $X \to \PP^{d}$ which is the restriction to $X$ of a linear projection $\PP^{n} \dashrightarrow \PP^{d}$ with centre a linear subspace $\PP^{k} \subseteq \PP^{n}$ disjoint from $X$, where $k + d = n - 1$.
+:::
+
+::: {.remark}
+The linear forms are chosen from a nonempty Zariski open subset of a space of linear maps, which has $k$-points because $k$ is infinite.
+Over a finite field a linear map need not exist: over $\FF_2$, no linear map $\AA^2 \to \AA^1$ restricts to a finite morphism on the irreducible cubic $V(xy(x+y) + 1)$.
+Noether normalization still holds over every field if nonlinear maps such as $(x_1 - x_n^{e_1}, \ldots, x_{n-1} - x_n^{e_{n-1}})$ are allowed.
 :::
 
 ::: {.theorem title="Fibre dimension"}
@@ -40,13 +48,13 @@ If $f$ is flat then $\dim_x X_{f(x)} = \dim_x X - \dim_{f(x)} Y$ at every point,
 :::
 
 ::: {.remark}
-The direction of the inequality is the part that gets asked, and the mnemonic is that fibres can only jump **up** over special points, never down.
+Upper semicontinuity means fibre dimension can jump **up** on special loci, never down.
 The blowup is the model: fibre dimension $0$ generically, $1$ over the origin, and the jump locus $\ts{0}$ is closed.
 It cannot go the other way, because a component of a fibre is cut out by $\dim Y$ equations locally and Krull's height theorem bounds the drop.
 
 The two halves are used differently.
-The lower bound is the tool for proving something is nonempty, as in "a morphism from a projective variety of dimension $> e$ to a variety of dimension $e$ has positive-dimensional fibres", which is the engine behind rigidity statements.
-The generic equality is the tool for computing dimensions by counting: fibre a parameter space over something known, and $\dim = \dim(\text{base}) + \dim(\text{general fibre})$.
+The lower bound proves positive-dimensional fibres in dimension-comparison arguments.
+The generic equality gives the dimension formula $\dim X = \dim Y + \dim(\text{general fibre})$.
 
-Flatness is exactly the hypothesis that removes the jumping, which is the cleanest statement of what flatness is for.
+Flatness removes this jumping by forcing the expected local fibre dimension everywhere.
 :::

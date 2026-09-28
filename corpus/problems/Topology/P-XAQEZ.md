@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the integer homology groups $H_*(\mathbb{RP}^2; \mathbb{Z})$ using the **Mayer–Vietoris sequence** by decomposing $\mathbb{RP}^2$ as the union of a Möbius strip $M$ and a 2-disk $D^2$ along their boundary circle $\partial M = S^1$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 \mathbb{RP}^2=M\cup_{S^1}D^2,

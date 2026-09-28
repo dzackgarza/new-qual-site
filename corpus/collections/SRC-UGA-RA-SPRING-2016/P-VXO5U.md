@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For $n\in \NN$, define
 \[
 e_{n} = \left (1+ {1\over n} \right)^{n} 
@@ -48,7 +48,7 @@ Use this to show the following:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. $e_n < E_n$.
     ::: proof
     $E_n = (1+1/n)^{n+1} = e_n (1+1/n) > e_n$ since $1+1/n > 1$.

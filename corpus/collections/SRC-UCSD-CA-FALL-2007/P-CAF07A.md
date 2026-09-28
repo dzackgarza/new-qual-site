@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 If True, give a brief proof.
 If False, give a counterexample.
@@ -35,7 +35,7 @@ Then $\int_{\gamma_+} e^{1/z^2}\,dz = \int_{\gamma_-} e^{1/z^2}\,dz$.
 (e) The function $u(z) := \ln|z^2 + 1|$ is harmonic in $\mathbb{C} \setminus \{-i, i\}$.
 :::
 
-::: solution
+::: {.solution}
 **(a) False.** In $\mathbb R$, let
 \[
 x_n=\begin{cases}0,&n\text{ even},\\1,&n\text{ odd}.

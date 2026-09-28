@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For each of the following, determine if the statement is true (always) or false (not always true).
 If true, give a brief proof, citing appropriate theorem(s); if false, give a counterexample or prove it is false in some other rigorous way.
 
@@ -46,9 +46,9 @@ Let $[-\pi, \pi]$ have its natural topology, and give $Y$ the weakest topology s
 Then $Y$ is compact.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 In the Banach space $\ell^2$, let $e_n$ be the standard basis vectors. Then
 \[
 \|e_n\|_2=1
@@ -61,7 +61,7 @@ Hence no subsequence is Cauchy, and therefore no subsequence converges in norm.
 :::
 
 <1>2. Part (b) is false.
-::: proof
+::: {.proof}
 Suppose $f_n\to0$ in $L^1([0,1])$. Choose a subsequence $(f_{n_k})$ such that
 \[
 \|f_{n_k}\|_1<2^{-2k}.
@@ -86,7 +86,7 @@ for all sufficiently large $k$, so $f_{n_k}(x)\to0$. Therefore every $L^1$-null 
 :::
 
 <1>3. Part (c) is false.
-::: proof
+::: {.proof}
 Let
 \[
 h=\mathbf1_{[0,1/2]}.
@@ -115,7 +115,7 @@ a contradiction. Thus $C([0,1])$ is not dense in $L^\infty([0,1])$.
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 The functions
 \[
 e_n(x)=e^{2\pi i n x}
@@ -132,7 +132,7 @@ Therefore $e_n\rightharpoonup0$ weakly in $L^2([0,1])$.
 :::
 
 <1>5. Part (e) is true.
-::: proof
+::: {.proof}
 By Hölder's inequality applied to $(a_j)_{j=1}^n$ and $(1)_{j=1}^n$ with exponents $q$ and $p$,
 \[
 \sum_{j=1}^n a_j
@@ -150,7 +150,7 @@ Since the second factor is $n^{1/p}$,
 :::
 
 <1>6. Part (f) is true.
-::: proof
+::: {.proof}
 The specified topology is exactly the product topology on
 \[
 Y=[-\pi,\pi]^{\mathbb R},

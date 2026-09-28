@@ -23,13 +23,15 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\mathbb{R}^d$, then for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$\int_E |f| < \epsilon \quad \text{whenever} \quad m(E) < \delta.$$
+:::
 
-::: solution
+::: {.solution}
 <1>1. Truncate the integrable function.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$. Since $f\in L^1(\mathbb R^d)$,
 \[
 \int_{\{|f|>M\}}|f|\,dx\longrightarrow0
@@ -42,7 +44,7 @@ Choose $M>0$ so large that
 :::
 
 <1>2. Control the integral on a small measurable set.
-::: proof
+::: {.proof}
 Let
 \[
 \delta:=\frac{\varepsilon}{2M}.

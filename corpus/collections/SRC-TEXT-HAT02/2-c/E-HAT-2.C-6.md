@@ -25,7 +25,9 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphere letting $f$ be a homeomorphism that restricts to the antipodal map on this sphere.
+:::
 
 ::: {.solution}
 Let the desired genus be $2m$. Realize the surface $M_{2m}$ as a central sphere with $m$ symmetric pairs of handles attached in antipodal pairs.

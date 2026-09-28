@@ -23,6 +23,7 @@ audit:
   note: Replaced the incomplete Radon-Nikodym detour by the direct simple-function approximation and level-set proofs.
 ---
 
+::: {.problem}
 a. 
 Let $\mu$ be a measure on a measurable space $(X, \mathcal M)$ and $f$ a positive measurable function.
   
@@ -42,8 +43,9 @@ Let $E \subset \RR$ be a measurable set such that
 \int_{E} x^{2} ~d m=0.
 \]
 Show that $m(E) = 0$.
+:::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Absolute continuity of measures: $\lambda \ll \mu \iff E\in\mathcal{M}, \mu(E) = 0 \implies \lambda(E) = 0$.
 - Radon-Nikodym: if $\lambda \ll \mu$, then there exists a measurable function $\dd{\lambda}{\mu} \definedas f$ where $\lambda(E) = \int_E f \,d\mu$.
@@ -53,9 +55,9 @@ A_c \definedas \theset{ x\in X \suchthat \abs{f(x)} \geq c  } \implies \mu(A_c) 
 .\]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the integration formula for indicator functions and simple functions.
-::: proof
+::: {.proof}
 For every measurable $E\subseteq X$, the definition of $\lambda$ gives
 \[
 \int_X \mathbf1_E\,d\lambda
@@ -77,7 +79,7 @@ then linearity of the integral yields
 :::
 
 <1>2. Pass to an arbitrary positive measurable $g$.
-::: proof
+::: {.proof}
 Choose nonnegative simple functions $s_n$ with
 \[
 s_n\uparrow g.
@@ -102,7 +104,7 @@ Thus
 :::
 
 <1>3. Prove part (b) by level sets away from the unique zero of $x^2$.
-::: proof
+::: {.proof}
 For $n\ge1$, set
 \[
 E_n:=E\cap\{|x|\ge1/n\}.

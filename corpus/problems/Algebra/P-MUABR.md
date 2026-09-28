@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F \subseteq K \subseteq L$ be a tower of field extensions. Prove that if $K/F$ is algebraic and $L/K$ is algebraic, then $L/F$ is algebraic.
 :::
 
-::: solution
+::: {.solution}
 Let $\alpha\in L$. Since $L/K$ is algebraic, $\alpha$ satisfies a nonzero polynomial
 \[
 p(x)=c_0+c_1x+\cdots+c_nx^n\in K[x].

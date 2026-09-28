@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 20. This exercise shows how the mean square convergence dominates the uniform convergence of analytic functions.
     If U is an open subset of C we use the notation
 
@@ -42,7 +42,7 @@ $$
 [Hint: Use the mean-value property.]
 :::
 
-::: solution
+::: {.solution}
 (a) Fix $0<s<r$ and put
 \[
 \rho=\frac{r-s}{2}>0.

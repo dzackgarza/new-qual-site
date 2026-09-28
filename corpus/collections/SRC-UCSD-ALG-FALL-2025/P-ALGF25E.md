@@ -28,7 +28,7 @@ audit:
   note: Re-derived the annihilator argument in both parts and checked that maximal annihilators are prime under the Noetherian hypothesis.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a unital commutative ring, $\operatorname{Spec}(A)$ denote the set of its prime ideals, and let $M$ be an $A$-module.
 
 (a) Suppose $N_1$ and $N_2$ are two submodules of $M$ such that
@@ -46,7 +46,7 @@ Prove that there exist a submodule $N$ of $M$ and $P \in \operatorname{Spec}(A)$
 Consider $\Sigma := \{\operatorname{ann}(x) \mid x \in M \setminus \{0\}\}$.)
 :::
 
-::: remark
+::: {.remark}
 The hypothesis $M\neq0$ in part (b) is necessary.
 If $M=0$, its only submodule is $0$, whereas $A/P\neq0$ for every prime ideal $P$ because prime ideals are proper.
 :::

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Assume that $X, Y, Z$ are Banach spaces.
 Assume $\Phi : X \times Y \to Z$ is bilinear, namely for every $x \in X$, $\Phi(x, \cdot) : Y \to Z$ is linear and for every $y \in Y$, $\Phi(\cdot, y) : X \to Z$ is linear.
 Show that if for every $z^* \in Z^*$, $z^*(\Phi(x, \cdot)) \in Y^*$ and $z^*(\Phi(\cdot, y)) \in X^*$, then:
@@ -39,9 +39,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Each partial map has closed graph.
-::: proof
+::: {.proof}
 Fix $x\in X$ and consider
 \[
 \Phi_x:Y\to Z,
@@ -88,7 +88,7 @@ is bounded.
 :::
 
 <1>2. Apply Uniform Boundedness to obtain a joint estimate.
-::: proof
+::: {.proof}
 Consider the family
 \[
 \mathcal F:=\{\Phi_x:\|x\|_X\le1\}\subset\mathcal B(Y,Z).

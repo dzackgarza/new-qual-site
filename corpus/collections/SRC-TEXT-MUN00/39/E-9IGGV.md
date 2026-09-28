@@ -22,7 +22,7 @@ audit:
 Give an example of a collection of sets $\mathcal{A}$ that is not locally finite, such that the collection $\mathcal{B} = \ts{\overline{A} \mid A \in \mathcal{A}}$ is locally finite.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Provide an explicit example of a collection of subsets $\mathcal{A}$ of a topological space $X$ that is not locally finite, but whose collection of closures $\mathcal{B} = \{\overline{A} \mid A \in \mathcal{A}\}$ is locally finite.
 
 <1>1. Definition of local finiteness:

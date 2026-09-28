@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A \in M_{m,n}(\mathbb{C}) = \mathbb{C}^{m \times n}$.
 Prove
 \[

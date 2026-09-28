@@ -27,7 +27,7 @@ Assume that in a neighborhood of $P$, the level curve equation $f(x, y) = f(P)$ 
 Show that the **tangent vector** to the graph of $y = h(x)$ at $P$ is **perpendicular (orthogonal)** to the **gradient vector** $\nabla f(P)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** State the multivariable chain rule and prove that level curve tangent lines are orthogonal to the gradient vector $\nabla f(P)$.
 
 <1>1. Part (a): Multivariable Chain Rule:

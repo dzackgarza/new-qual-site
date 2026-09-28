@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that after a suitable change of basis, a skew-symmetric nonsingular bilinear form over $\mathbb{Z}$ can be represented by a matrix consisting of $2 \times 2$ blocks $\bigl(\begin{smallmatrix} 0 & -1 \\ 1 & 0 \end{smallmatrix}\bigr)$ along the diagonal and zeros elsewhere.
+:::
 
 ::: {.solution}
 Let $L$ be a free abelian group of finite rank with a skew-symmetric nonsingular bilinear form

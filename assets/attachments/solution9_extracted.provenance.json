@@ -1,0 +1,19 @@
+{
+  "source_pdf": "assets/attachments/solution9.pdf",
+  "source_pdf_sha256": "55afc1f50b6bae090d0527d73d48ac44f755c212d19594e4e12f51b666a131a2",
+  "extracted_markdown": "assets/attachments/solution9_extracted.md",
+  "extracted_markdown_sha256": "08db70d61d72a212a7dcff79b3d94aeb51a7e39b659e5730806a13cc8914a3d5",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution9.pdf --language en",
+  "generated_at": "2026-09-14",
+  "superseded_unknown_provenance_extraction": "assets/attachments/extracted/solution9.md",
+  "superseded_extraction_sha256": "fb932869307528015eb210f9647ba7910359d97ddd3f5f6efe577a2e53e9b5be",
+  "fresh_vs_superseded_delta": "The fresh baseline has the same 699-line source structure. Its only differences are a brace-balance correction in one worked-solution display and removal of a TeX spacing marker; no problem statement changes.",
+  "source_identification": "Harvard Math 21b Spring 2018 Practice Final 9 with worked solutions and fourteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-9 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the fresh deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 2's source graph and phase-portrait choices are not recoverable from the Flash output; the existing card leaves them explicit rather than reconstructing them.",
+    "Problem 9's displayed 36-by-36 matrix is not recoverable from the Flash output; the existing card preserves that source gap rather than inventing entries."
+  ]
+}

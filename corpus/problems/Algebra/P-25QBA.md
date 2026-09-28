@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $M \subseteq L^1(\mathbb{R})$ be a closed, translation-invariant subspace. (1) Prove
 that $M$ is a closed ideal in the convolution Banach algebra $(L^1(\mathbb{R}), *)$. (2)
 Explain the connection with Wiener's Tauberian Theorem and the Fourier transform. (3)

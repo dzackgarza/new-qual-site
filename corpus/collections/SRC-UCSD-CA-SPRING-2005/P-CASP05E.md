@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n$ be a positive integer and $\lambda > 1$ a real number.
 Consider the equation $$(**)\quad z^n - e^{z - \lambda} = 0.$$
 
@@ -21,7 +21,7 @@ Consider the equation $$(**)\quad z^n - e^{z - \lambda} = 0.$$
 (b) Show that there are exactly $n$ distinct simple roots of (**) with $|z| < 1$.
 :::
 
-::: solution
+::: {.solution}
 Put
 \[
 F(z)=z^n-e^{z-\lambda}.

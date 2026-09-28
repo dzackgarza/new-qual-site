@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I \da \int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Factor the denominator as $(z-1)(z+1)$, then there are two poles of order 1 on $\RR$.
 Define a contour
 

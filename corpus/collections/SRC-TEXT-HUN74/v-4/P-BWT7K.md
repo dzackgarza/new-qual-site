@@ -29,7 +29,7 @@ audit:
 Determine all subgroups of the Galois group and all intermediate fields of the splitting (over $\mathbb{Q}$) of the polynomial $(x^{3}-2)(x^{2}-3)\in \mathbb{Q}[x]$.
 :::
 
-::: solution
+::: {.solution}
 Put
 \[
 a=\sqrt[3]{2},\qquad \zeta=e^{2\pi i/3},\qquad b=\sqrt3.
@@ -43,7 +43,7 @@ L=\QQ(a,\zeta,b).
 \[
 \operatorname{Gal}(L/\QQ)\cong S_3\times C_2.
 \]
-::: proof
+::: {.proof}
 Let
 \[
 M=\QQ(a,\zeta),
@@ -121,7 +121,7 @@ i=\frac{\sqrt{-3}}{\sqrt3}\in L.
 12&G&\QQ.
 \end{array}
 \]
-::: proof
+::: {.proof}
 We first verify that no subgroups are missing.
 
 The involutions of $G$ are
@@ -192,7 +192,7 @@ each displayed inclusion is the full fixed field.
 :::
 
 <1>3. The table in <1>2 gives all intermediate fields of $L/\QQ$.
-::: proof
+::: {.proof}
 The extension $L/\QQ$ is finite Galois by <1>1. The fundamental theorem of
 Galois theory gives a bijection between its subgroups and its intermediate
 fields via $H\mapsto L^H$. Since <1>2 lists every subgroup and identifies its

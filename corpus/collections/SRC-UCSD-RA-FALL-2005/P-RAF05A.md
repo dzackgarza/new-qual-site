@@ -26,7 +26,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove the following.
 Each follows in a straightforward way by applying theorems.
 Be sure to name each theorem when you use it.
@@ -42,9 +42,9 @@ Suppose that $C([0, 1], \mathbb{R}) = \bigcup_j F_j$ where each $F_j$ is closed.
 Then there exists $\varepsilon > 0$, $j_0 \in \mathbb{N}$, and $f_0 \in F_{j_0}$ such that $\sup_{x \in [0,1]} |f(x) - f_0(x)| < \varepsilon \implies f \in F_{j_0}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a) by monotone convergence.
-::: proof
+::: {.proof}
 Since
 \[
 f_1\ge f_2\ge\cdots\ge0,
@@ -82,7 +82,7 @@ Thus
 :::
 
 <1>2. Prove part (b) by Stone--Weierstrass.
-::: proof
+::: {.proof}
 Let
 \[
 K=[a,b]\times[c,d]
@@ -112,7 +112,7 @@ This is the required approximation.
 :::
 
 <1>3. Prove part (c) by Baire category.
-::: proof
+::: {.proof}
 The normed space $C([0,1],\mathbb R)$ with the uniform norm is Banach. By hypothesis,
 \[
 C([0,1],\mathbb R)=\bigcup_{j=1}^\infty F_j

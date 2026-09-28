@@ -25,6 +25,7 @@ audit:
   note: Verified the square directly from the conjugation formula for basepoint change.
 ---
 
+::: {.problem}
 Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h = \beta_{fh} f_*$ in the diagram:
 
 $$\begin{array}{rcl}
@@ -32,6 +33,7 @@ $$\begin{array}{rcl}
 \downarrow f_* & & \downarrow f_* \\
 \pi_1(Y, f(x_1)) & \xrightarrow{\beta_{fh}} & \pi_1(Y, f(x_0))
 \end{array}$$
+:::
 
 ::: {.solution}
 <1>1. Let $[\gamma]\in\pi_1(X,x_1)$.

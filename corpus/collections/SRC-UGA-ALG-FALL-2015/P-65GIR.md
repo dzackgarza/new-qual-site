@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a principal ideal domain (PID), and let $(a_1) \subseteq (a_2) \subseteq (a_3) \subseteq \cdots$ be an ascending chain of ideals in $R$.
 
 Prove that there exists $n \in \mathbb{N}$ such that $(a_j) = (a_n)$ for all $j \ge n$ (that is, $R$ satisfies the ascending chain condition on ideals).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every PID is Noetherian by considering the union ideal $I = \bigcup_{k=1}^\infty (a_k)$ and applying the principal ideal property.
 
 <1>1. The union $I = \bigcup_{k=1}^\infty (a_k)$ is an ideal of $R$:

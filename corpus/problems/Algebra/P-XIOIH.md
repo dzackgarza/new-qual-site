@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove
 \[
 \GF(p^d)\subseteq\GF(p^n)
@@ -22,7 +22,7 @@ d\mid n.
 \]
 :::
 
-::: solution
+::: {.solution}
 Suppose first that
 \[
 \FF_{p^d}\subseteq\FF_{p^n}.

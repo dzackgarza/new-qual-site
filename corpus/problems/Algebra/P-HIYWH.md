@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that if $K/F$ is the splitting field of a separable polynomial then it is Galois.
 :::
 

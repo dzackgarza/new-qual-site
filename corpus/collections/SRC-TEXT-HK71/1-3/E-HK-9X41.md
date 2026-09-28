@@ -33,7 +33,7 @@ $$
 find all solutions of AX = 2X and all solutions of AX = 3X. (The symbol cX denotes the matrix each entry of which is c times the corresponding entry of X.)
 :::
 
-::: solution
+::: {.solution}
 The equation $AX=cX$ is equivalent to
 \[
 (A-cI)X=0.
@@ -44,7 +44,7 @@ The equation $AX=cX$ is equivalent to
 X=t\begin{bmatrix}1\\1\\1\end{bmatrix},
 \qquad t\in F.
 \]
-::: proof
+::: {.proof}
 For $c=2$,
 \[
 A-2I=
@@ -69,7 +69,7 @@ space.
 X=t\begin{bmatrix}0\\0\\1\end{bmatrix},
 \qquad t\in F.
 \]
-::: proof
+::: {.proof}
 For $c=3$,
 \[
 A-3I=

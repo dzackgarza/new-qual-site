@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute $\operatorname{Ext}(\mathbb{Z} \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_3, \mathbb{Z} \oplus \mathbb{Z}_4 \oplus \mathbb{Z}_6)$.
 (Here, $\operatorname{Ext}$ denotes $\operatorname{Ext}^1_{\mathbb{Z}}$.)
 :::

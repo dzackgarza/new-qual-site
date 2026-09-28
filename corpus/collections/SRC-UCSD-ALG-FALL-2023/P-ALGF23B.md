@@ -24,7 +24,7 @@ audit:
   note: Replaced the retained induction with a direct Frattini-argument proof that the prime quotient in part (b) must have prime p, yielding the normal subgroup of order m.
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group, $p$ is prime, $m$ is an integer, $\gcd(p, m) = 1$, and $|G| = pm$.
 Suppose $P$ is a Sylow $p$-subgroup and $N_G(P) = P$.
 

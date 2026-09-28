@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-125
 kind: problem
-title: Kent State ring-theory qualifying problem 125
+title: Extension of prime ideals to a localization of a domain
 classification:
   areas: [algebra]
   topics: []

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $1 \leq p, p' \leq \infty$ be fixed dual indices.
 Suppose $K(x, y) \geq 0$ is a Lebesgue measurable function on $\mathbb{R}^n \times \mathbb{R}^n$ such that there exists a constant $0 \leq K_0 < \infty$ with
 $$
@@ -35,9 +35,9 @@ for all measurable $f, g \geq 0$ on $\mathbb{R}^n$.
 Show that if $f \in L^p(\mathbb{R}^n)$, then the function $Kf(x) := \int_{\mathbb{R}^n} K(x, y) f(y) \, dy$ is well defined for (Lebesgue) a.e. $x \in \mathbb{R}^n$, and one has $\|Kf\|_{L^p(dx)} \leq K_0 \|f\|_{L^p(dx)}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Apply the hypothesis to the nonnegative function $|f|$.
-::: proof
+::: {.proof}
 Define the extended-valued measurable function
 \[
 h(x):=\int_{\mathbb R^n}K(x,y)|f(y)|\,dy.
@@ -51,7 +51,7 @@ By Tonelli, $h$ is measurable and takes values in $[0,\infty]$. For every nonneg
 :::
 
 <1>2. Deduce that $h\in L^p$ and estimate its norm.
-::: proof
+::: {.proof}
 For a nonnegative measurable function $h$, the dual norm formula gives
 \[
 \|h\|_p
@@ -72,7 +72,7 @@ For completeness, the endpoint cases are contained in the same argument: if $p=1
 :::
 
 <1>3. Define $Kf$ almost everywhere and conclude the operator bound.
-::: proof
+::: {.proof}
 At every $x$ for which $h(x)<\infty$,
 \[
 \int_{\mathbb R^n}K(x,y)|f(y)|\,dy<\infty.

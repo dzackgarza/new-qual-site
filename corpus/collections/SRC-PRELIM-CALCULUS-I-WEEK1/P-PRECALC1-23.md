@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-23
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 23'
+title: Real roots of $2x^5+8x-7$
 classification:
   areas:
   - prelim

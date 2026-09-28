@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Describe the Galois theory of $f(x) = x^{2n} - 2$ over $\mathbb{Q}$: irreducibility, splitting field, and Galois group structure.
 :::
 
-::: solution
+::: {.solution}
 Put $m=2n$ and $\alpha=2^{1/m}$. By Eisenstein at $2$,
 \[
 x^m-2

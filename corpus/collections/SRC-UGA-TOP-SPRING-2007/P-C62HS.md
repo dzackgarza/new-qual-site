@@ -30,7 +30,7 @@ audit:
     point, and the contraction inequality also gives uniqueness.
 ---
 
-::: problem
+::: {.problem}
 Prove that if $(X,d)$ is a compact metric space, $f:X\to X$ is a continuous map, and $C$ is a constant with $0<C<1$ such that
 \[
 d(f(x),f(y))\leq C d(x,y)

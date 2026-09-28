@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic on the upper half-plane $H = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$.
 Assume that
 
@@ -28,7 +28,7 @@ Assume that
 Prove that there are constants $a_k \in \mathbb{R}$ such that $f(z) = \sum_{k=-N}^{N} a_k z^k$.
 :::
 
-::: solution
+::: {.solution}
 By Schwarz reflection across the real axis, the boundary reality hypothesis
 extends $f$ to a holomorphic function $F$ on $\mathbb C\setminus\{0\}$ by
 \[

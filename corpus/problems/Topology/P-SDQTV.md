@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 a. Give the definitions of **covering space** and **deck transformation** (or covering transformation).
 
 b. Describe the universal cover of the Klein bottle and its group of deck transformations.
@@ -32,7 +32,7 @@ c. Explicitly give a collection of deck transformations on $\{(x, y) \mid -1 \le
 d. Find the universal cover of $\mathbb{RP}^2 \times S^1$ and explicitly describe its group of deck transformations.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A covering map is a surjective continuous map $p:\widetilde X\to X$ such that every $x\in X$ has an open neighborhood $U$ for which
 \[
 p^{-1}(U)=\bigsqcup_{\alpha}U_\alpha

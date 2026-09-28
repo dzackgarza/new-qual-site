@@ -60,5 +60,5 @@ so the singularity is determinantal, as every two-dimensional toric singularity 
 
 ::: {.remark}
 The index $\abs{\det \begin{bmatrix} 2 & 1 \\ 1 & 4 \end{bmatrix}} = 7$ is the whole story: $v_1, v_2$ generate a sublattice of index $7$ in $N$, so $X_\sigma$ is the cyclic quotient singularity $\AA^2 / \mu_7$ and $\Cl(X_\sigma) = \ZZ/7$.
-An examiner asking for "a computation" wants the two steps above and nothing else: rotate to get $\sigma\dual$, list the lattice points, read the relations.
+The computation has two steps: rotate to obtain $\sigma\dual$, then list its lattice points and read the additive relations among them.
 :::

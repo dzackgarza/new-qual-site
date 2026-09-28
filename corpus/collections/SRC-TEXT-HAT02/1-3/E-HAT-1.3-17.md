@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Given a group $G$ and a normal subgroup $N$, show that there exists a normal covering space $\tilde{X} \to X$ with $\pi_1(X) \approx G$, $\pi_1(\tilde{X}) \approx N$, and deck transformation group $G(\tilde{X}) \approx G/N$.
+:::
 
 ::: {.solution}
 <1>1. Choose a CW complex $X$ with $\pi_1(X) \cong G$ (e.g., the presentation complex of $G$; a $K(G,1)$).

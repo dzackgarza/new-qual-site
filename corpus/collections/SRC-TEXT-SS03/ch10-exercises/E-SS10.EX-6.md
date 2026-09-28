@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 6. Show as a consequence of Exercise 5 that
 $$
 e^{c_1 n^{1/2}} \leq p(n) \leq e^{c_2 n^{1/2}}
@@ -29,7 +29,7 @@ $$
 and it suffices to take $y = A m^{-1/2}$ where $A$ is a large constant, and use the fact that the sequence $p(n)$ is increasing.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the asymptotic exponential bounds $e^{c_1 \sqrt{n}} \le p(n) \le e^{c_2 \sqrt{n}}$ for the partition function $p(n)$.
 
 <1>1. Upper bound $p(n) \le e^{c_2 \sqrt{n}}$:

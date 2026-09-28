@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $M^3$ be a homology sphere — a closed $3$-manifold having the same homology groups as $S^3$ — and let $X = \Sigma M$ be its suspension.
 What are the fundamental group and homology groups of $X$?
 Show that $X$ is homotopy equivalent to $S^4$.

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that any compact connected surface with nonempty boundary is homotopy equivalent to a wedge of circles
 
 > Hint: you may assume that any compact connected surface without boundary is given by identifying edges of a polygon in pairs.

@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f: \mathbb{C} \rightarrow \mathbb{C}$ be an injective analytic (also called univalent) function. Show that there exist complex numbers $a \neq 0$ and $b$ such that $f(z)=a z+b$.
 
 > Hint: Apply the Casorati-Weierstrass theorem to $f(1/z)$.
 :::
 
-:::{.solution}
+::: {.solution}
 Note that $f$ is non-constant, since a constant function is extremely non-injective.
 Consider the singularity at $\infty$:
 
@@ -34,7 +34,7 @@ So we can conclude $\infty$ is a pole of some order $N$, so $f\qty{1\over z} = \
 However, a polynomial of degree $N$ is generically $N$-to-one locally, so injectivity forces $N=1$ and $f(z) = c_0 + c_1 z$, where $c_1\neq 0$ since $f$ is nonconstant.
 :::
 
-:::{.solution title="older"}
+::: {.solution title="older"}
 Write $g(z) \da f(1/z)$, which has a singularity at $z=0$.
 The claim is that this is a pole.
 

@@ -46,9 +46,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. List the Jordan forms in part (i) and their minimal polynomials.
-::: proof
+::: {.proof}
 The characteristic polynomial
 $$
 (X-4)^3
@@ -69,7 +69,7 @@ block.
 :::
 
 <1>2. Every root of the characteristic polynomial is a root of the minimal polynomial.
-::: proof
+::: {.proof}
 Let $c$ be a root of the characteristic polynomial. Then
 $$
 \det(T-cI)=0,
@@ -91,7 +91,7 @@ polynomial.
 :::
 
 <1>3. The primary subspace $M_c$ has dimension equal to the algebraic multiplicity $m_c$.
-::: proof
+::: {.proof}
 By the primary decomposition theorem,
 $$
 M=\bigoplus_c M_c,
@@ -127,7 +127,7 @@ for every characteristic root $c$.
 :::
 
 <1>4. Compute the characteristic polynomial of $A$.
-::: proof
+::: {.proof}
 $$
 XI-A=
 \begin{pmatrix}
@@ -142,7 +142,7 @@ $$
 :::
 
 <1>5. Compute the characteristic polynomial of $B$.
-::: proof
+::: {.proof}
 Expanding along the first column of
 $$
 XI-B=
@@ -167,7 +167,7 @@ $$
 :::
 
 <1>6. Compute the characteristic polynomial of $C$.
-::: proof
+::: {.proof}
 One has
 $$
 XI-C=
@@ -194,7 +194,7 @@ $$
 :::
 
 <1>7. Compute the characteristic polynomial of $D$.
-::: proof
+::: {.proof}
 The last column of $XI-D$ is $(0,0,0,X-2)^t$. Expanding along it gives
 $$
 \det(XI-D)

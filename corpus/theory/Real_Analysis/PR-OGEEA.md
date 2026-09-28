@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-OGEEA
 kind: proposition
 title: Singletons in $\RR$ are closed, so $\QQ$ is $F_\sigma$
+slogan: '$\QQ$ is $F_\sigma$ because it is a countable union of closed singletons.'
 classification:
   areas:
   - real-analysis
@@ -14,5 +15,5 @@ review: draft
 ---
 
 ::: {.proposition}
-Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
+Every singleton $\theset{x}\subseteq\RR$ is closed, and $\QQ=\bigcup_{q\in\QQ}\theset{q}$ is a countable union of closed sets, hence an [[D-RPOGQ|$F_\sigma$ set]] in $\RR$.
 :::

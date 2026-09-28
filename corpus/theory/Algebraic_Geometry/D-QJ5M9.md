@@ -18,11 +18,13 @@ prompts:
 - What is a normal domain?
 - How is normality related to regularity?
 - Why is normalization a resolution of singularities for curves?
+- What is a normal scheme?
+- What is the normalization of an integral scheme, and what universal property does it have?
 ---
 
 ::: {.definition title="Normal"}
-An integral domain is **normal** if it is integrally closed in its fraction field.
-A variety is **normal** if every local ring $\OO_{X,p}$ is a normal domain.
+An integral domain is \dfn{normal} if it is integrally closed in its fraction field.
+A scheme $X$ is \dfn{normal} if every local ring $\OO_{X,p}$, for $p \in X$, is a normal domain.
 :::
 
 ::: {.proposition}
@@ -30,10 +32,15 @@ A regular local ring is normal, and the converse fails in dimension $\geq 2$.
 In dimension $1$ the two agree: a Noetherian local domain of dimension $1$ is normal exactly when it is a discrete valuation ring, that is, regular.
 :::
 
-::: {.theorem title="Normalization"}
-Let $X \subseteq \PP^{n}$ be an integral projective variety.
-There is a normal projective variety $X_{\mathrm{norm}}$ with a finite birational morphism $\nu \colon X_{\mathrm{norm}} \to X$, unique up to unique isomorphism over $X$. Every dominant morphism $f:Y\to X$ from a normal integral variety factors uniquely through $\nu$.
-For an affine integral variety $X=\Spec A$, its normalization is $\Spec\overline A$, where $\overline A$ is the integral closure of $A$ in $\Frac(A)$.
+::: {.definition title="Normalization"}
+Let $X$ be an integral scheme.
+A \dfn{normalization} of $X$ is a normal integral scheme $\widetilde{X}$ with a dominant morphism $\nu \colon \widetilde{X} \to X$ such that every dominant morphism $f \colon Y \to X$ from a normal integral scheme $Y$ factors uniquely as $f = \nu \circ \tilde{f}$ for a morphism $\tilde{f} \colon Y \to \widetilde{X}$.
+:::
+
+::: {.theorem title="Existence of the normalization"}
+Every integral scheme $X$ has a normalization, unique up to unique isomorphism.
+If $X = \Spec A$ is affine, $\widetilde{X} = \Spec \widetilde{A}$ for the integral closure $\widetilde{A}$ of $A$ in its fraction field, and in general $\widetilde{X}$ is obtained by gluing these over an affine cover.
+If $X$ is a variety over a field $k$, then $\nu$ is finite and birational, and $\widetilde{X}$ is projective when $X$ is projective [@Har10a, Exercise II.3.8].
 :::
 
 ::: {.remark}

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that (working with cellular chain complexes)
 \[
 H_c^*(X \times \mathbb{R}) \cong H_c^{*-1}(X)

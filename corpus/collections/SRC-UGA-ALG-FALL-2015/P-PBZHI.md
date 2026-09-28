@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a.
 Let $G$ be a finite group.
 Show that there exists a field extension $K/F$ with $\gal(K/F) = G$.
@@ -31,7 +31,7 @@ With $K/F$ as in (b), does an intermediate field $L$ necessarily exist satisfyin
 Give a proof or counterexample.
 :::
 
-::: solution
+::: {.solution}
 (a) Let $|G|=n$. By Cayley's theorem, $G$ embeds as a subgroup of $S_n$.
 By the allowed assumption, choose a finite Galois extension $K/F$ with
 \[

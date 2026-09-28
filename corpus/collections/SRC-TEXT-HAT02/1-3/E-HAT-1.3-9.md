@@ -16,11 +16,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 Show that if a path-connected, locally path-connected space $X$ has $\pi_1(X)$ finite, then every map $f: X \to S^1$ is nullhomotopic.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every continuous map $f: X \to S^1$ from a path-connected, locally path-connected space with finite $\pi_1(X)$ is nullhomotopic, by lifting $f$ to the universal cover $\mathbb{R}$.
 
 <1>1. Triviality of the induced homomorphism on fundamental groups:

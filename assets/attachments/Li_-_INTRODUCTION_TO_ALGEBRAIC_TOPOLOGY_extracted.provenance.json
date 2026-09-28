@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf",
+  "source_pdf_sha256": "9a153d4a9c4c2a416a3643edee089788dd675b05f05be741337439321346cd53",
+  "extracted_markdown": "assets/attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY_extracted.md",
+  "extracted_markdown_sha256": "23585a5b86a7986c051d4b5bb6971736e35f39936e0cf91b5b27ca6020dd3c69",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf --language en --pages START-END",
+  "split_ranges": ["1-20", "21-40", "41-60", "61-80"],
+  "assembly": "Successful range outputs concatenated verbatim in ascending page order.",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "assets/attachments/extracted/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.md differs: fresh Flash baseline is 4036 lines / 200209 bytes versus 3362 lines / 121111 bytes, so the unknown-provenance extraction is not reused or certified.",
+  "disposition": "reference/course notes",
+  "source_description": "Si Li's Introduction to Algebraic Topology, course notes for Algebraic Topology at Tsinghua University in Spring 2018. The text is organized into 28 expository sections from category and functor through the Eilenberg-Steenrod axioms.",
+  "posed_item_review": "The fresh deterministic extraction contains no Exercise, Exercises, Problem, Problems, or Homework headings. The only two occurrences of the word problem are ordinary expository prose, not posed items.",
+  "terminal_range_note": "After the successful 61-80 range reached the end of Section 28 (Example 28.9, Bordism), an 81-100 request returned MinerU [-30003] and produced no retained Markdown output."
+}

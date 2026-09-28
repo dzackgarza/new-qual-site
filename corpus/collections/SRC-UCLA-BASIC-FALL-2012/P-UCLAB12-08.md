@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-08
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 8
+title: Isotropic subspaces of a nondegenerate Hermitian form have dimension at most $n/2$
 classification:
   areas:
   - prelim

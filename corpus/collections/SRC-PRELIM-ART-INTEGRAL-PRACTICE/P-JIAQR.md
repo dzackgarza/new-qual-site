@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{x}{1+x^4}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $u=x^2$, so $du=2x\,dx$. Then
 \[
 \boxed{\int\frac{x}{1+x^4}\,dx=\frac12\arctan(x^2)+C.}

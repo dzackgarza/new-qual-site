@@ -16,11 +16,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Compute $\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the torsion group $\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 \oplus \mathbb{Z}_8)$.
 
 <1>1. Tor of cyclic abelian groups via projective resolutions: *Proof:* <2>1. For any abelian group $A$, since $\mathbb{Z}$ is a free (hence projective) $\mathbb{Z}$-module, $\operatorname{Tor}_1^\mathbb{Z}(\mathbb{Z}, A) = 0$.

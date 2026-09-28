@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field of characteristic zero and $A, B \in M_n(k)$ be two square $n\times n$ matrices over $k$ such that $AB - BA = A$.
 Prove that $\det A = 0$.
 
 Moreover, when the characteristic of $k$ is 2, find a counterexample to this statement.
 :::
 
-::: solution
+::: {.solution}
 Assume first that $\operatorname{char}k=0$. Suppose for contradiction that
 $A$ is invertible. From
 \[

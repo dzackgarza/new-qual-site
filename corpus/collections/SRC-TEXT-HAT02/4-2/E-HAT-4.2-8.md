@@ -16,9 +16,11 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show the suspension of an acyclic CW complex is contractible.
+:::
 
-::: solution
+::: {.solution}
 **Goal:** Show the suspension $\Sigma X$ is contractible when $X$ is acyclic.
 
 <1>1. Use reduced homology of suspension.

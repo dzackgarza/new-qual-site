@@ -1,0 +1,12 @@
+{
+  "source_pdf": "assets/attachments/analysis_2014-2016.pdf",
+  "source_pdf_sha256": "7e6a56e4b9b434d52e7687b442efe0a2e98482b9a148ff21a423c24122e4100f",
+  "extracted_markdown": "assets/attachments/analysis_2014-2016_extracted.md",
+  "extracted_markdown_sha256": "af769399d52da186f4ac38fbea1e6c0319697c4a3ecc70371ae29d7cff105911",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/analysis_2014-2016.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "byte-identical",
+  "reconciliation": "The retained eight-page packet has 33 represented source positions across five sittings: 2016 Complex (8), July 2016 Real (8), July 2015 Real (5 retained statements), July 2015 Complex (4 retained statements), and July 2014 Real (8). The 2015 instructions advertise 7 real and 8 complex problems, but only Problems 1-5 and 1-4 respectively are present in the retained deterministic source; absent statements are not invented."
+}

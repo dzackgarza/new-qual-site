@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: {.problem}
-Let $X=\mathbb R$ with the Euclidean topology and let $Y=\mathbb R$ with the included-point topology whose included point is $0$. Define
+Let $X=\mathbb R$ with the Euclidean topology and let $Y=\mathbb R$ with the included-point topology whose included point is $0$.
+Define
 \[
 f:X\to Y,\qquad f(t)=t-1.
 \]

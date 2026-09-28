@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Mobius transformation sending 
 
 - $1\to 3$
@@ -22,7 +22,7 @@ Find a Mobius transformation sending
 
 :::
 
-:::{.solution}
+::: {.solution}
 Use cross ratios: set $T(z) \da (z;,1,i,2)$ and $S(w) = (w;,3,0,-1)$ and solve $T(z) = S(w) \implies w = (S\inv T)(z)$:
 \[
 {z-i \over z-2}{1-2\over 1-i} 

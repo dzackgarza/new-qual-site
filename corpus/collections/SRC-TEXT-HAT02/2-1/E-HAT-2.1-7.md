@@ -18,7 +18,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Find a way of identifying pairs of faces of $\Delta^3$ to produce a $\Delta$-complex structure on $S^3$ having a single 3 simplex, and compute the simplicial homology groups of this $\Delta$-complex.
+:::
 
 ::: {.solution}
 **Goal.** Give $S^3$ a $\Delta$-complex structure with a single $3$-simplex and compute its simplicial homology.

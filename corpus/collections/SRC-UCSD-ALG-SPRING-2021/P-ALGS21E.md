@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For $i \geq 0$, calculate $\operatorname{Ext}^i_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, \mathbb{Z})$ and $\operatorname{Ext}^i_\mathbb{Z}(\mathbb{Z}/2\mathbb{Z}, \mathbb{Q})$.
 :::
 

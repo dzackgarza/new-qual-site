@@ -16,5 +16,9 @@ review: draft
 ---
 
 ::: {.definition}
-$e^x = \lim_{n \to \infty} \qty{1 + {x\over n}}^n$
+The \dfn{exponential function} $\RR\to\RR$, $x\mapsto e^x$, is given by
+$$
+e^x \coloneqq \lim_{n \to \infty} \qty{1 + \frac{x}{n}}^n,
+$$
+the limit existing for every $x\in\RR$.
 :::

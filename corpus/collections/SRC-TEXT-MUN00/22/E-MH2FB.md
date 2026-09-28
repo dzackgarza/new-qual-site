@@ -22,7 +22,7 @@ Let $H$ denote a group that is also a topological space satisfying the $T_1$ axi
 Show that $H$ is a topological group if and only if the map of $H \times H$ into $H$ sending $x \times y$ into $x \cdot y^{-1}$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a $T_1$ group $H$ is a topological group if and only if the division map $\phi: H \times H \to H$ given by $\phi(x, y) = x \cdot y^{-1}$ is continuous.
 
 <1>1. Definition of a topological group:

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I\da \int_0^\infty {\log(x) \over 1+x^a}\dx 
 &= - \qty{\pi \over a}^2\cos\qty{\pi\over a}\csc^2\qty{\pi \over a} \\
@@ -24,7 +24,7 @@ I\da \int_0^\infty {\log(x) \over 1+x^a}\dx
 
 :::
 
-:::{.solution}
+::: {.solution}
 For the usual reasons, integrals along semicircles of radius $R$ and $\eps$ go to zero, so noting the poles at $\omega_a \da e^{i\pi\over a}$, take an indented sector:^[Sector monodromy.]
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-22_05-25-35.png)
@@ -41,13 +41,13 @@ Then $\int_{\gamma_1}f(z)\dz \to I$ for $f(z) \da {\log(z) \over 1+z^a}$, so com
 &\da -\zeta_a I - {2\pi i\over a}\zeta_a I'
 .\]
 
-:::{.claim}
+::: {.claim}
 \[
 I' = {\pi\over a}\csc\qty{\pi\over a}
 .\]
 :::
 
-:::{.proof}
+::: {.proof}
 Computing the auxiliary integral $I'$:
 the integrand has the same pole at $\omega_a$, so apply the same technique.
 Write $g(z) \da {1\over z^a+1}$.

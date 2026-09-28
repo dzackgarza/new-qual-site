@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $c \in \mathbb{C}$ with $|c| < \frac{1}{3}$. Show that on the open half-plane
 $$
 \Omega = \{z \in \mathbb{C} \mid \operatorname{Re}(z) < 1\},
@@ -22,7 +22,7 @@ $$
 the function $f(z) = c e^z$ has exactly one fixed point.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $f(z) = c e^z$ has a unique fixed point in $\Omega = \{\operatorname{Re} z < 1\}$ by applying Rouché's Theorem on bounded truncated domains $\Omega_R$.
 
 <1>1. Reformulation as a root-finding problem:

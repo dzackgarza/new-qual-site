@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute $\operatorname{Ext}^1(\mathbb{Z}/n, \mathbb{Q}/\mathbb{Z})$.
 :::
 

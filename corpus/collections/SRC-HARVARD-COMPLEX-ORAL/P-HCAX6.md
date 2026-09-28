@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine and prove the area formulas for spherical and hyperbolic triangles in terms of their angles.
 :::
 
-::: solution
+::: {.solution}
 Let a geodesic triangle have interior angles $\alpha,\beta,\gamma$.
 
 For the unit sphere, whose Gaussian curvature is $K=1$,

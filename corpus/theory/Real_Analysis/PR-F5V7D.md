@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-F5V7D
 kind: proposition
-title: No functions discontinuous on the irrationals
+title: No function $\RR\to\RR$ is discontinuous exactly on the irrationals
+slogan: 'A real function cannot have exactly the irrationals as its discontinuity set.'
 classification:
   areas:
   - real-analysis
@@ -14,5 +15,5 @@ review: draft
 ---
 
 ::: {.proposition}
-There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
+There is no function $f\colon\RR\to\RR$ whose set of points of discontinuity is $\RR\setminus\QQ$.
 :::

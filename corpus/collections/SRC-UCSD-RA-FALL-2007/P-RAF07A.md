@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 True or false.
 For each part, determine if it is always true or sometimes false.
 If true give a brief proof.
@@ -45,9 +45,9 @@ $$
 then there exists a subsequence $\{f_{n_j}\}$ that converges uniformly on $[0,1]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 For each integer $n\ge1$, let $\phi_n$ be the triangular function supported on
 \[
 [n-2^{-n-2},\,n+2^{-n-2}]
@@ -70,7 +70,7 @@ for every $n$, so $f(x)$ does not tend to $0$ as $x\to\infty$.
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 For $y>x$,
 \[
 |f(y)-f(x)|
@@ -93,7 +93,7 @@ Since $f\in L^1$, necessarily
 :::
 
 <1>3. Part (c) is false.
-::: proof
+::: {.proof}
 Enumerate the dyadic intervals level by level. For each $k\ge1$ and $0\le j<2^k$, let
 \[
 I_{k,j}=[j2^{-k},(j+1)2^{-k})
@@ -112,7 +112,7 @@ However, every $x\in[0,1]$ belongs to exactly one dyadic interval at each level.
 :::
 
 <1>4. Part (d) is true.
-::: proof
+::: {.proof}
 We show that the graph of $T$ is closed. Suppose
 \[
 x_n\to x\quad\text{in }X,
@@ -137,7 +137,7 @@ Since $X$ and $Y$ are Banach spaces, the Closed Graph Theorem implies that $T$ i
 :::
 
 <1>5. Part (e) is true.
-::: proof
+::: {.proof}
 Taking $y=0$ gives
 \[
 |f_n(x)|=|f_n(x)-f_n(0)|\le |x|^\alpha\le1,

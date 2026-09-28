@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{C} \to \mathbb{C}$ be a non-constant entire function.
 Show that there exist complex numbers $z \neq 0$ for which $f(z)$ is positive real.
 

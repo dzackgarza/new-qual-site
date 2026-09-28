@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given a topological space $X$, let $I$ denote the directed set of compact subsets of $X$ under inclusion.
 Show that the following canonical map is an isomorphism:
 $$

@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_{1}^{\infty} \frac{d x}{x \sqrt{x^{2}-1}} = {\pi \over 2}
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) \da (z^2-1)^{-{1\over 2}}/z$.
 In order for $(z^2-1)^{-{1\over 2}}$ to be well-defined, one needs to introduce a branch cut. 
 Note that $f$ has a simple pole at $z=0$ and is holomorphic away from $z=0$ **if** $z^2-1$ is not on the positive real axis, where we've chosen the branch cut $\theta = 0$ for $\Log(z)$ and define $z^{1\over 2} = e^{{1\over 2}\Log(z)}$.

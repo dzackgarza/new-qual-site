@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 With the notation of the preceding problem, show that $\operatorname{Aut}(\bigvee_n S^k) \approx \operatorname{GL}_n(\mathbb{Z})$ for $k > 1$, where $\bigvee_n S^k$ denotes the wedge sum of $n$ copies of $S^k$ and $\operatorname{GL}_n(\mathbb{Z})$ is the group of $n \times n$ matrices with entries in $\mathbb{Z}$ having an inverse matrix of the same form.
+:::
 
 ::: {.solution}
 <1>1. Compute $\pi_k(X)$ for $X = \bigvee_{j=1}^n S^k$ ($k > 1$): <2>1. Since $k > 1$, the space $X$ is $(k-1)$-connected: $\pi_1(X) = \cdots = \pi_{k-1}(X) = 0$.

@@ -22,7 +22,7 @@ prompts:
 - Fix an elliptic curve over $\QQ$ and reduce it mod $p$ --- for how many $p$ is the reduction supersingular?
 - Work out the supersingular primes of $y^2 = x^3 - x$ by hand.
 - How does complex multiplication change the answer?
-- Given a curve over $\QQ$, what cheap test rules out complex multiplication?
+- Given a curve over $\QQ$, what test rules out complex multiplication?
 ---
 
 ::: {.example title="The setup"}
@@ -43,7 +43,7 @@ The answer depends entirely on whether $X_{/\CC}$ has complex multiplication:
 :::
 
 ::: {.remark title="What is proved and what is not"}
-State the three claims separately, because they have different status and an examiner may push on exactly that.
+The three claims have different logical status and should remain separate.
 Deuring's criterion is a clean equivalence and gives the density $\tfrac12$ immediately from Chebotarev, or from Dirichlet in the cases where the splitting condition is a congruence.
 Density zero in the non-CM case follows from the distribution of Frobenius traces.
 Infinitude in the non-CM case is much harder and was open for a long time; it is a theorem only for elliptic curves over $\QQ$.
@@ -73,18 +73,17 @@ Here $\lambda = 3$ and
 \[
 j = 2^8 \cdot \frac{(9-3+1)^3}{9 \cdot 4} = \frac{2^6 \cdot 7^3}{3^2} \notin \ZZ .
 \]
-Computing $h_p(3) \bmod p$ for the primes of good reduction, the only supersingular prime below $120$ is $p = 23$ --- sparse enough to guess density zero, and that guess is right, because a non-integral $j$ rules out complex multiplication by any order at all, let alone one of class number one.
+Computing $h_p(3) \bmod p$ for the primes of good reduction, the only supersingular prime below $120$ is $p = 23$.
+The density-zero statement follows from the non-CM theorem above, and $j\notin\overline{\ZZ}$ rules out complex multiplication entirely.
 :::
 
 ::: {.remark}
-The mechanism behind the density $\tfrac{1}{2}$ is worth naming, because it explains why the two cases look so different.
+The density $\tfrac12$ in the CM case comes from the splitting behavior of primes in the CM field.
 For a CM curve the reduction inherits the CM order, and the splitting behaviour of $p$ in $K$ decides whether the reduced endomorphism ring stays commutative.
 When $p$ splits, Frobenius generates the old imaginary quadratic order and the curve is ordinary; when $p$ is inert or ramified it cannot, the endomorphism ring jumps to a quaternion order, and the curve is supersingular.
 So a single congruence condition governs every $p$ at once.
 
 Without CM there is no such rigid structure and the supersingular primes are governed instead by how often the Frobenius trace $a_p$ vanishes, a much thinner condition; density zero, infinitude, and the $\sqrt x / \log x$ heuristic all belong to that side.
 
-The practical use for exams runs in the other direction.
-$j \notin \ZZ$ is a one-line proof that a curve has no CM by a class-number-one order, and $j$ not an algebraic integer rules out CM entirely.
-This is the cheapest available route, and the reason to state the class field theory theorem at all when the question looks purely characteristic-$p$.
+Conversely, integrality of the $j$-invariant gives an obstruction to CM: a non-integral rational $j$ rules out CM, and more generally a $j$-invariant that is not an algebraic integer cannot be a CM $j$-invariant.
 :::

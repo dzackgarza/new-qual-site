@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f \in L^2(\mathbb{R}, m)$ is a function such that $f(x) = 0$ if $|x| \geq 1$.
 
 1. Show $\hat{f} \in C^\infty(\mathbb{R}, \mathbb{C})$ and
@@ -38,9 +38,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Differentiate the Fourier transform under the integral sign.
-::: proof
+::: {.proof}
 With the source normalization,
 \[
 \widehat f(k)=\frac1{\sqrt{2\pi}}\int_{\mathbb R}f(x)e^{-ikx}\,dx.
@@ -59,7 +59,7 @@ Hence \(\widehat f\in C^\infty(\mathbb R)\).
 :::
 
 <1>2. Prove the stated uniform derivative bound.
-::: proof
+::: {.proof}
 By Cauchy--Schwarz,
 \[
 \begin{aligned}
@@ -81,7 +81,7 @@ The bound is independent of \(k\), so
 :::
 
 <1>3. Apply Arzelà--Ascoli to the sequence \((\widehat f_n)\).
-::: proof
+::: {.proof}
 Assume \(\|f_n\|_2\le1\). Step 2 with \(\ell=0\) gives
 \[
 \sup_n\sup_{k\in\mathbb R}|\widehat f_n(k)|

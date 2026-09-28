@@ -26,16 +26,16 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be prime, $G$ be a group of order $p^n > 1$, and $X$ be a finite $G$-set whose size is not divisible by $p$.
 Prove that $G$ has a fixed point in $X$: i.e., an $x \in X$ such that $gx = x$ for all $g \in G$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every orbit has cardinality a power of $p$, and a singleton orbit
 is exactly a point fixed by all of $G$.
 
-::: proof
+::: {.proof}
 For $x\in X$, let $G_x=\{g\in G:gx=x\}$ be its stabilizer.
 The map $G/G_x\to Gx$ sending $gG_x$ to $gx$ is a bijection:
 two representatives give the same point exactly when they lie in the
@@ -49,7 +49,7 @@ $gx=x$ for every $g\in G$. Every other orbit has size divisible by $p$.
 
 <1>2. The global fixed-point set $X^G$ is nonempty.
 
-::: proof
+::: {.proof}
 The orbits partition the finite set $X$. The singleton orbits contribute
 exactly $|X^G|$, and all other contributions are divisible by $p$.
 Therefore

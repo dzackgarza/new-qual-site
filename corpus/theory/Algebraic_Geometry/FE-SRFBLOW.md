@@ -55,7 +55,7 @@ In particular every projective variety admits a desingularization by a sequence 
 :::
 
 ::: {.definition title="Strict transform"}
-For $C \subseteq X$ passing through $p$ with multiplicity $m$, the **strict transform** $\tilde{C}$ is the closure of $\pi^{-1}(C \setminus p)$, and
+For $C \subseteq X$ passing through $p$ with multiplicity $m$, the \dfn{strict transform} $\tilde{C}$ is the closure of $\pi^{-1}(C \setminus p)$, and
 \[
 \pi^* C = \tilde{C} + mE , \qquad \tilde{C}^2 = C^2 - m^2 , \qquad p_a(\tilde{C}) = p_a(C) - \binom{m}{2} .
 \]

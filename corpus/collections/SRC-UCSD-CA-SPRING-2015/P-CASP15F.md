@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be an elliptic function with periods $\omega_1, \omega_2$.
 Assume that $f(z)$ has no zeros or poles on $\partial P$, where
 $$
@@ -24,7 +24,7 @@ and let $a_1, a_2, \ldots, a_m$ denote the zeros and $b_1, b_2, \ldots, b_n$ the
 State and prove a theorem regarding $\sum_{j=1}^m a_j - \sum_{k=1}^n b_k$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2.

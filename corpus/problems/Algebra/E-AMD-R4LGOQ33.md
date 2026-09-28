@@ -21,7 +21,7 @@ audit:
 Show that every $p\dash$group is solvable.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** induct on the order, splitting $G$ by its center: the center is abelian, the quotient is a smaller $p$-group, and solvability passes through such an extension.
 
 <1>1. Argue by induction on $\abs G = p^n$.

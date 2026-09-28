@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose that $f(x) \in (\ZZ/n\ZZ)[x]$ is a zero divisor.
 Show that there is a nonzero $a\in \ZZ/n\ZZ$ with $af(x) = 0$.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Write $f(x) = \sum_{k=0}^n a_k x^k$, and supposing it's a zero divisor choose $g(x) = \sum_{k=0}^m b_k x^k$ of minimal degree so that $g\neq 0, b_m\neq 0$, and $f(x)g(x) = 0$.

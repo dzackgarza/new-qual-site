@@ -31,7 +31,7 @@ Conclude that $G$ is a homogeneous space.
 (This means that for every pair $x, y$ of points of $G$, there exists a homeomorphism of $G$ onto itself that carries $x$ to $y$.)
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that left and right translations by any element in a topological group $G$ are homeomorphisms, and deduce that $G$ is homogeneous.
 
 <1>1. Continuity of translation maps $f_\alpha$ and $g_\alpha$:

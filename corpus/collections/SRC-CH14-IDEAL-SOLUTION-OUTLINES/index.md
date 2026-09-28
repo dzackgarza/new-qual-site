@@ -17,21 +17,36 @@ source:
   sections:
   - name: Chapter 14 exercises
     problems:
-    - P-CH14-4
-    - P-CH14-6
-    - P-CH14-8
-    - P-CH14-11
-    - P-CH14-14
-    - P-CH14-20
-    - P-CH14-28
-    - P-CH14-32
-    - P-CH14-33
-    - P-CH14-36
-    - P-CH14-38
-    - P-CH14-39
-    - P-CH14-46
-    - P-CH14-47
-    - P-CH14-49
+    - id: P-CH14-4
+      comment: Exercise 4
+    - id: P-CH14-6
+      comment: Exercise 6
+    - id: P-CH14-8
+      comment: Exercise 8
+    - id: P-CH14-11
+      comment: Exercise 11
+    - id: P-CH14-14
+      comment: Exercise 14
+    - id: P-CH14-20
+      comment: Exercise 20
+    - id: P-CH14-28
+      comment: Exercise 28
+    - id: P-CH14-32
+      comment: Exercise 32
+    - id: P-CH14-33
+      comment: Exercise 33
+    - id: P-CH14-36
+      comment: Exercise 36
+    - id: P-CH14-38
+      comment: Exercise 38
+    - id: P-CH14-39
+      comment: Exercise 39
+    - id: P-CH14-46
+      comment: Exercise 46
+    - id: P-CH14-47
+      comment: Exercise 47
+    - id: P-CH14-49
+      comment: Exercise 49
   date:
     kind: unknown
 ---

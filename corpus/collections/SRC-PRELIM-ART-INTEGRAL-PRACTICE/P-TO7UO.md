@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int \frac{1+e^x}{1-e^x}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Put $u=e^x$, so $dx=du/u$. Then
 \[
 \frac{1+u}{u(1-u)}=\frac1u+\frac2{1-u}.

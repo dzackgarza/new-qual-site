@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 3. $\displaystyle \int \frac {x+1}{\sqrt {4-x^2}} ~dx = \color {blue} {-\sqrt {4-x^2}+\sin ^{-1} (\frac {x}{2})}$
 
 - **Solution:** $\frac {x+1}{\sqrt {4-x^2}} ~dx = - \frac {1}{2} \frac {-2x}{\sqrt {4-x^2}} ~dx + \frac {1}{\sqrt {4-x^2}} ~dx​$

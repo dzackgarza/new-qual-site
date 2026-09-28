@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-I2X3M
 kind: theorem
-title: Cellular Approximation
+title: Cellular approximation theorem
+slogan: 'Every map of CW complexes is homotopic to a cellular map, relative to any already-cellular subcomplex.'
 classification:
   areas:
   - topology
@@ -14,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-Any continuous map between CW complexes is homotopy equivalent to a cellular map.
+Every map $f\colon X\to Y$ of CW complexes is homotopic to a cellular map.
+If $f$ is already cellular on a subcomplex $A\subseteq X$, the homotopy may be taken to be stationary on $A$ [@Hat02].
 :::

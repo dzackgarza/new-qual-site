@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute the following integrals:
 \[
 \int_{\abs{z-1} = 1} {1\over z^2-1} \dz \\
@@ -25,7 +25,7 @@ Compute the 2nd integral by finding a primitive.
 
 :::
 
-:::{.solution}
+::: {.solution}
 For the first integral:
 \[
 \int_\gamma{1\over z^2-1}\dz 

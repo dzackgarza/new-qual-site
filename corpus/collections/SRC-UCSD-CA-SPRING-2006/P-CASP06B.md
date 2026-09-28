@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $u$ is a $C^2$ subharmonic function on the whole complex plane.
 
 (a) Prove that for any positive $R_1$ and $R_2$ with $R_2 > R_1$, $$\int_0^{2\pi} \left(u(R_2 e^{i\theta}) - u(R_1 e^{i\theta})\right)d\theta \geq \int_{R_1 \leq |z| \leq R_2} \log\left(\frac{R_2}{|z|}\right) \Delta u \, dx\,dy.$$
@@ -20,7 +20,7 @@ Suppose that $u$ is a $C^2$ subharmonic function on the whole complex plane.
 (b) Show that if $u$ satisfies $\lim_{z \to \infty} \frac{u(z)}{\log|z|} = 0$, then $u$ must be a constant.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 M(r)=\int_0^{2\pi}u(re^{i\theta})\,d\theta.

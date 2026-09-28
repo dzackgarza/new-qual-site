@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $h$ be a bounded harmonic function on the unit disc $\mathbb{D} = \{z : |z| < 1\}$.
 Assume that
 $$
@@ -24,7 +24,7 @@ for all $a \in \partial \mathbb{D} \setminus \{1\}$.
 Show that $h \leq 0$ in $\mathbb{D}$.
 :::
 
-::: solution
+::: {.solution}
 Let $|h|\le M$. Fix $z\in\mathbb D$ and $\varepsilon>0$. Choose a small open
 arc $I\subset\partial\mathbb D$ centered at $1$. By compactness of
 $\partial\mathbb D\setminus I$ and the boundary limsup hypothesis, there is

@@ -40,11 +40,11 @@ $$
 lies in $\ZZ[X]$ and is irreducible over $\QQ$.
 :::
 
-::: solution
+::: {.solution}
 We prove option (i).
 
 <1>1. Fix an intermediate field and its pointwise stabilizer.
-::: proof
+::: {.proof}
 Let
 $$
 k\subseteq L\subseteq E
@@ -66,7 +66,7 @@ $$
 :::
 
 <1>2. The extension $E/L$ is finite Galois, so $|H|=[E:L]$.
-::: proof
+::: {.proof}
 The extension $E/L$ is finite because $E/k$ is finite. It is separable because
 separability is preserved when the base field is enlarged inside $E$.
 
@@ -86,7 +86,7 @@ $$
 :::
 
 <1>3. Compare the degree over the fixed field with the size of $H$.
-::: proof
+::: {.proof}
 Because $L\subseteq F$, the tower law gives
 $$
 [E:F]\le [E:L].
@@ -125,7 +125,7 @@ $$
 :::
 
 <1>4. Conclude surjectivity of the fixed-field map.
-::: proof
+::: {.proof}
 For the arbitrary intermediate field $L$, the subgroup
 $$
 H=\operatorname{Gal}(E/L)

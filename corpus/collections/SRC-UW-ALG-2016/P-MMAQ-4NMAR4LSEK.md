@@ -18,13 +18,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $a\in\mathbb N$, $a>0$.
 Compute the Galois group of the splitting field of the polynomial $x^5-5a^4x+a$ over $\mathbb Q$.
 :::
 
 
-::: solution
+::: {.solution}
 Let
 \[
 f(x)=x^5-5a^4x+a,

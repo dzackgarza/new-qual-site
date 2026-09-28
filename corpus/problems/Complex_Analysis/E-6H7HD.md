@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that there is no continuous square root function defined on all of $\CC$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Suppose $f(z)^2 = z$. 
 Then $f$ is a section to the covering map
 \[

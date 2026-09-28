@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-078
 kind: problem
-title: Kent State ring-theory qualifying problem 78
+title: Ideals with principal product in a domain are finitely generated
 classification:
   areas: [algebra]
   topics: []

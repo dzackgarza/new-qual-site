@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega \neq \mathbb{C}$ be a simply connected region with $a \in \Omega$ and $f$ a one-to-one analytic function from $\Omega$ onto $\mathbb{D}$.
 Assume $f(a) = 0$ and $f'(a) > 0$.
 Prove that
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 r=\inf_{z\in\partial\Omega}|z-a|,

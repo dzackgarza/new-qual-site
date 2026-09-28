@@ -19,14 +19,14 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a connected CW complex such that $\pi_1(X)$ is a nontrivial finite group and $\pi_k(X) = 0$ for any $k \geq 2$.
 Show that $X$ can not be a finite CW complex.
 (Namely, $X$ must have infinitely many cells.)
 Hint: Compute the Euler characteristic of the universal covering space.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a connected CW complex $X$ with finite non-trivial $\pi_1(X)$ and $\pi_k(X) = 0$ for all $k \ge 2$ (an Eilenberg–MacLane space $K(G, 1)$ for a finite group $G \neq 1$) cannot be a finite CW complex.
 
 <1>1. Properties of the universal covering space $\widetilde{X}$:

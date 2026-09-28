@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Use residues to compute
 \[
 \int_0^{\infty}\frac{dx}{x^4+1}.

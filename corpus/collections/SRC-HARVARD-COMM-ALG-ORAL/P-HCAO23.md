@@ -25,12 +25,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a one-dimensional Noetherian domain, and let $\widetilde R$ be its integral closure.
 Prove that $\widetilde R$ is Noetherian.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 K=\operatorname{Frac}(R),
@@ -41,7 +41,7 @@ We prove the special case of the Krull--Akizuki argument needed here.
 
 <1>1. Let $M\subseteq K$ be any $R$-submodule and let $0\ne x\in R$.
 Then $M/xM$ has finite length as an $R$-module.
-::: proof
+::: {.proof}
 First suppose that $(R,\mathfrak m)$ is local. Put
 \[
 \ell=\operatorname{length}_R(R/xR).
@@ -122,7 +122,7 @@ over $R$.
 :::
 
 <1>2. Every nonzero ideal $I\subseteq A$ contains a nonzero element of $R$.
-::: proof
+::: {.proof}
 Choose $0\ne y\in I$. Since $y\in K$, write
 \[
 y=\frac ab
@@ -138,7 +138,7 @@ because $b\in R\subseteq A$. Thus
 :::
 
 <1>3. Every ideal of $A$ is finitely generated.
-::: proof
+::: {.proof}
 The zero ideal is finitely generated, so let $0\ne I\subseteq A$. By <1>2,
 choose $0\ne x\in I\cap R$. Apply <1>1 to the $R$-submodule
 \[
@@ -170,7 +170,7 @@ as an ideal of $A$.
 :::
 
 <1>4. Hence $\widetilde R=A$ is Noetherian.
-::: proof
+::: {.proof}
 A ring is Noetherian if and only if every ideal is finitely generated. This is
 exactly <1>3.
 :::

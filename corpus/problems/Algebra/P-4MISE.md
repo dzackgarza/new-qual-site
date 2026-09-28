@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Determine the number of groups of order $15$ up to isomorphism, and prove your result.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=15=3\cdot5$. By Sylow,
 \[
 n_5\mid3,\qquad n_5\equiv1\pmod5,

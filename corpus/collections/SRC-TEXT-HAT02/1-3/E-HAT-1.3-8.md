@@ -24,8 +24,10 @@ audit:
   note: Lifted homotopy inverse maps to the simply connected covers and lifted the base homotopies to prove the two composites are homotopic to the identities.
 ---
 
+::: {.problem}
 Let $\tilde{X}$ and $\tilde{Y}$ be simply-connected covering spaces of the path-connected, locally path-connected spaces $X$ and $Y$.
 Show that if $X \simeq Y$ then $\tilde{X} \simeq \tilde{Y}$.
+:::
 
 ::: {.solution}
 Let

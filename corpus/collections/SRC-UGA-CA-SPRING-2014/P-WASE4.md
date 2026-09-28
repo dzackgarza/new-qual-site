@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Use Rouche's theorem to prove the Fundamental Theorem of Algebra.
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) = \sum_{k\leq n} c_k z^k$.
 Big: $M(z) = c_nz^n$.
 Small: $m(z) = f(z) - M(z) = \sum_{k\leq n-1} c_k z^k$.
@@ -39,7 +39,7 @@ Then on $\abs{z} = R$,
 since $c_n z^n$ has $z=0$ as a root with multiplicity $n$.
 :::
 
-:::{.solution title="Explicit bound"}
+::: {.solution title="Explicit bound"}
 An estimate: write $f(z) = \sum_{k\leq n} c_k z^k$ with $c_n = 1$, then for $R> 1$, on $\abs{z} = R$ we have
 \[
 \abs{f(z) - z^n} 

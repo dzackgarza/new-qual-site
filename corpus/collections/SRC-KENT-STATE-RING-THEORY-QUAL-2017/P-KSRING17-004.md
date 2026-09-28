@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-004
 kind: problem
-title: Kent State ring-theory qualifying problem 4
+title: The unit group $U_{18}$ and whether it is cyclic
 classification:
   areas: [algebra]
   topics: []

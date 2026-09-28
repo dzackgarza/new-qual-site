@@ -25,7 +25,7 @@ audit:
   note: Verified flatness directly from the direct-summand characterization of projectives and injectivity after tensoring with a free module.
 ---
 
-::: problem
+::: {.problem}
 Prove that if $M$ is a projective $A$-module, then it is flat.
 :::
 

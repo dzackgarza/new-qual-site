@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find a space $X$ that has the same integral homology and fundamental group as the torus $S^1 \times S^1$, but is not homotopy equivalent to the torus.
 Prove that $X$ is not homotopy equivalent to the torus.
 :::

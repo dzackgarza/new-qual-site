@@ -25,7 +25,7 @@ from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
-from urllib.parse import urlencode, urlsplit
+from urllib.parse import quote, urlencode, urlsplit
 
 import panflute as pf
 import yaml
@@ -33,10 +33,15 @@ import yaml
 from .index import load_areas
 from .model import DIV_CLASS_TO_KIND, MARKDOWN, TERMS_IN_YEAR_ORDER, from_ast, to_json
 from .pandoc_batch import (
+    PARALLEL_WORKERS,
     PandocBatchError,
     PandocFailure,
     PandocResult,
     PandocServer,
+    pandoc_executable,
+    read_markdown_parallel,
+    write_html_parallel,
+    write_markdown_parallel,
 )
 from .publication import (
     PublicationManifest,
@@ -44,6 +49,8 @@ from .publication import (
     load_publications,
 )
 from .static_site import (
+    PUBLISHED_SITE_URL,
+    REPOSITORY_URL,
     AssetCatalog,
     AuthoredPage,
     Crumb,
@@ -68,6 +75,7 @@ from .static_site import (
     build_asset_catalog,
     write_page,
 )
+from .tex import mark_definienda
 from .wiki import (
     SITE_PAGES,
     WIKI_BATCH_SIZE,
@@ -281,7 +289,7 @@ def _compile_tikzcd_block(tex_source: str) -> str:
     """
     result = subprocess.run(
         [
-            "pandoc",
+            str(pandoc_executable()),
             "--from",
             "markdown",
             "--to",
@@ -396,7 +404,7 @@ def _sidenote(
     ]
 
 
-_LAMPORT_MARKER = re.compile(r"^<(\d)>((?:\d+\.)*\d+)\.\s*$")
+_LAMPORT_MARKER = re.compile(r"^<(\d)>(\d+)\.\s*$")
 _LAMPORT_DIVS = {"solution", "proof", "hint", "strategy", "blockquote"}
 
 
@@ -407,18 +415,33 @@ def _marker_level(text: str) -> tuple[int, str] | None:
     return (int(match.group(1)), match.group(2))
 
 
+def _lamport_label(level: int, number: str, state: dict[int, str]) -> str:
+    """Resolve one authored local Lamport number against the current outline.
+
+    Authors write local numbers at each level: `<1>2.` followed by `<2>1.` is
+    rendered as `2.` and `2.1.`.  The state must survive intervening proof divs;
+    otherwise every paragraph starts a new outline and all top-level steps become
+    `1.`.  A missing parent is malformed structure, but rendering the authored
+    local number is safer than inventing a parent.
+    """
+    state[level] = number
+    for deeper in [key for key in state if key > level]:
+        del state[deeper]
+    parts = [state.get(depth) for depth in range(1, level + 1)]
+    if any(part is None for part in parts):
+        return number
+    return ".".join(cast(list[str], parts))
+
+
 def _lamport_group(
     segments: list[tuple[int, str, list[pf.Inline]]],
-    prefix: tuple[int, ...] = (),
+    state: dict[int, str],
 ) -> pf.Div:
     children: list[pf.Block] = []
     i = 0
-    index = 0
     while i < len(segments):
         level, num, content = segments[i]
-        index += 1
-        path = prefix + (index,)
-        label = ".".join(str(part) for part in path)
+        label = _lamport_label(level, num, state)
         body: list[pf.Block] = [pf.Para(pf.Span(pf.Str(f"{label}."), classes=["pf-number"]), *content)]
         i += 1
         deeper: list[tuple[int, str, list[pf.Inline]]] = []
@@ -426,12 +449,12 @@ def _lamport_group(
             deeper.append(segments[i])
             i += 1
         if deeper:
-            body.append(_lamport_group(deeper, path))
+            body.append(_lamport_group(deeper, state))
         children.append(pf.Div(*body, classes=["pf-step", f"pf-level-{level}"]))
     return pf.Div(*children, classes=["pf-group"])
 
 
-def _lamport_paragraph(paragraph: pf.Para | pf.Plain) -> pf.Block:
+def _lamport_paragraph(paragraph: pf.Para | pf.Plain, state: dict[int, str]) -> pf.Block:
     """Split a marker-carrying paragraph into a structured pf-group.
 
     Authors write `<1>1. claim. <2>1. because …` inside one wrapped paragraph;
@@ -461,10 +484,12 @@ def _lamport_paragraph(paragraph: pf.Para | pf.Plain) -> pf.Block:
     kept = [segment for segment in segments if segment[0] >= 0]
     if not kept:
         return paragraph
-    return _lamport_group(kept)
+    if len(kept) == 1 and not kept[0][2]:
+        return cast(pf.Block, paragraph.walk(_lamport_refs))
+    return _lamport_group(kept, state)
 
 
-def _lamport_blocks(blocks: list[pf.Block]) -> list[pf.Block]:
+def _lamport_blocks(blocks: list[pf.Block], state: dict[int, str]) -> list[pf.Block]:
     out: list[pf.Block] = []
     for block in blocks:
         if isinstance(block, pf.Para | pf.Plain):
@@ -473,18 +498,18 @@ def _lamport_blocks(blocks: list[pf.Block]) -> list[pf.Block]:
                 if isinstance(inline, pf.Str) and _marker_level(inline.text or "") is not None:
                     seen = True
                     break
-            out.append(_lamport_paragraph(block) if seen else block)
+            out.append(_lamport_paragraph(block, state) if seen else block)
         elif isinstance(block, pf.Div):
-            block.content = _lamport_blocks(list(block.content))
+            block.content = _lamport_blocks(list(block.content), state)
             out.append(block)
         elif isinstance(block, pf.BulletList | pf.OrderedList):
             for item in block.content:
-                item.content = _lamport_blocks(list(item.content))
+                item.content = _lamport_blocks(list(item.content), state)
             out.append(block)
         else:
             block_type = type(block).__name__.lower()
             if block_type in _LAMPORT_DIVS and hasattr(block, "content"):
-                block.content = _lamport_blocks(list(block.content))
+                block.content = _lamport_blocks(list(block.content), state)
             out.append(block)
     return out
 
@@ -516,7 +541,7 @@ def _lamport(element: pf.Element, document: pf.Doc) -> pf.Element | None:
         return None
     if not _LAMPORT_DIVS.intersection(element.classes):
         return None
-    element.content = _lamport_blocks(list(element.content))
+    element.content = _lamport_blocks(list(element.content), {})
     element.walk(_lamport_refs, element)
     return element
 
@@ -532,17 +557,14 @@ def _lamport_rewrite_ref(inline: object) -> object:
 
 def _lamport_json_group(
     segments: list[tuple[int, str, list[object]]],
-    prefix: tuple[int, ...] = (),
+    state: dict[int, str],
 ) -> dict:
     """A nested `pf-group` of `pf-step`s, as raw pandoc JSON."""
     children: list[dict] = []
     i = 0
-    index = 0
     while i < len(segments):
-        level, _num, content = segments[i]
-        index += 1
-        path = prefix + (index,)
-        label = ".".join(str(part) for part in path)
+        level, num, content = segments[i]
+        label = _lamport_label(level, num, state)
         number: list[object] = [
             {
                 "t": "Span",
@@ -556,12 +578,12 @@ def _lamport_json_group(
             deeper.append(segments[i])
             i += 1
         if deeper:
-            body.append(_lamport_json_group(deeper, path))
+            body.append(_lamport_json_group(deeper, state))
         children.append({"t": "Div", "c": [["", ["pf-step", f"pf-level-{level}"], []], body]})
     return {"t": "Div", "c": [["", ["pf-group"], []], children]}
 
 
-def _lamport_json_paragraph(inlines: list[object]) -> dict | None:
+def _lamport_json_paragraph(inlines: list[object], state: dict[int, str]) -> dict | None:
     """Split a flat marker-carrying inline list into one nested group, or None.
 
     `<1>1. claim. <2>1. because …` reads as one flat paragraph; pandoc does
@@ -588,10 +610,12 @@ def _lamport_json_paragraph(inlines: list[object]) -> dict | None:
     kept = [segment for segment in segments if segment[0] >= 0]
     if not kept:
         return None
-    return _lamport_json_group(kept)
+    if len(kept) == 1 and not kept[0][2]:
+        return None
+    return _lamport_json_group(kept, state)
 
 
-def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
+def _lamport_json_blocks(blocks: list[dict], state: dict[int, str] | None = None) -> list[dict]:
     """`_lamport_blocks` on raw pandoc JSON plus the ref rewrite.
 
     The card-page path keeps bodies as raw JSON (see `_rename_json`) rather
@@ -602,13 +626,16 @@ def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
     `<1>1.4` refs.
     """
     out: list[dict] = []
+    current = state
     for block in blocks:
         t = block.get("t")
         if t in ("Para", "Plain"):
             inlines = block.get("c", [])
             if any(isinstance(x, dict) and x.get("t") == "Str" and _marker_level(x.get("c", "")) is not None for x in inlines):
-                grouped = _lamport_json_paragraph(inlines)
+                local_state = current if current is not None else {}
+                grouped = _lamport_json_paragraph(inlines, local_state)
                 if grouped is not None:
+                    current = local_state
                     out.append(grouped)
                     continue
             block["c"] = [_lamport_rewrite_ref(x) for x in inlines]
@@ -616,20 +643,23 @@ def _lamport_json_blocks(blocks: list[dict]) -> list[dict]:
         elif t == "Div":
             classes = block.get("c", [["", [], []]])[0][1]
             if _LAMPORT_DIVS.intersection(classes):
-                block["c"][1] = _lamport_json_blocks(block["c"][1])
+                local_state = current if current is not None else {}
+                block["c"][1] = _lamport_json_blocks(block["c"][1], local_state)
+                if current is not None:
+                    current = local_state
             out.append(block)
         elif t in ("BulletList", "OrderedList"):
             for item in block.get("c", []):
                 if isinstance(item, dict) and item.get("t") == "ListItem":
-                    item["c"] = _lamport_json_blocks(item["c"])
+                    item["c"] = _lamport_json_blocks(item["c"], current)
             out.append(block)
         elif t == "BlockQuote":
             quoted: list[object] = []
             for q in block.get("c", []):
                 if isinstance(q, list):
-                    quoted.append(_lamport_json_blocks(q))
+                    quoted.append(_lamport_json_blocks(q, current))
                 elif isinstance(q, dict):
-                    quoted.append(_lamport_json_blocks([q])[0])
+                    quoted.append(_lamport_json_blocks([q], current)[0])
                 else:
                     quoted.append(q)
             block["c"] = quoted
@@ -914,7 +944,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
                     [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
                     [["data-label", f"{kind.title()} {counts[kind]}"]],
                 ],
-                [_transclusion_head(card), *body, *_prompts_json(card)],
+                [_transclusion_head(card), *_slogan_json(card), *body, *_prompts_json(card)],
             ],
         }
     ]
@@ -999,6 +1029,7 @@ class CardPageData:
     facets: dict[str, list[sqlite3.Row]]
     dependencies: dict[str, list[sqlite3.Row]]
     backlinks: dict[str, list[sqlite3.Row]]
+    solved: frozenset[str]
 
 
 def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
@@ -1062,11 +1093,19 @@ def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
             backlinks[card_id] = []
         backlinks[card_id].append(row)
 
+    solved = frozenset(
+        row["card_id"]
+        for row in _rows(
+            con,
+            "select distinct card_id from sections where section_kind='solution'",
+        )
+    )
     return CardPageData(
         terms=terms,
         facets=facets,
         dependencies=dependencies,
         backlinks=backlinks,
+        solved=solved,
     )
 
 
@@ -1103,6 +1142,55 @@ def _appearance_items(appearances: list[Appearance]) -> str:
     if not appearances:
         return ""
     return "<ul>" + "".join(f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>' for appearance in appearances) + "</ul>"
+
+
+def _solution_submission_json(
+    card: sqlite3.Row,
+    appearances: list[Appearance],
+) -> list[dict]:
+    """A prefilled GitHub issue link for one problem without a solution."""
+    source_appearance = "\n".join(appearance.title for appearance in appearances)
+    if not source_appearance:
+        source_appearance = "None"
+    card_id = str(card["id"])
+    card_url = f"{PUBLISHED_SITE_URL}/tag/{quote(card_id, safe='')}.html"
+    query = urlencode(
+        {
+            "template": "solution.yml",
+            "title": f"[solution] {card_id} — {card['title']}",
+            "card-id": card_id,
+            "card-title": str(card["title"]),
+            "source-appearance": source_appearance,
+            "card-url": card_url,
+        }
+    )
+    href = html.escape(f"{REPOSITORY_URL}/issues/new?{query}", quote=True)
+    block = f'<section class="solution-contribution"><h2>Solution submission</h2><p><a href="{href}">Submit a solution on GitHub</a></p></section>'
+    return [{"t": "RawBlock", "c": ["html", block]}]
+
+
+RESULT_KINDS = frozenset({"theorem", "proposition", "lemma", "corollary", "fact"})
+
+
+def _slogan_json(card: sqlite3.Row) -> list[dict]:
+    if card["kind"] not in RESULT_KINDS:
+        return []
+    card_id = str(card["id"])
+    card_url = f"{PUBLISHED_SITE_URL}/tag/{quote(card_id, safe='')}.html"
+    query = urlencode(
+        {
+            "template": "slogan.yml",
+            "title": f"[slogan] {card_id} — {card['title']}",
+            "card-id": card_id,
+            "card-title": str(card["title"]),
+            "card-url": card_url,
+        }
+    )
+    href = html.escape(f"{REPOSITORY_URL}/issues/new?{query}", quote=True)
+    slogan = str(card["slogan"] or "")
+    badge = f'<span class="result-slogan-badge">{html.escape(slogan)}</span>' if slogan else ""
+    block = f'<div class="result-slogan">{badge}<a class="result-slogan-suggest" href="{href}">Suggest a slogan</a></div>'
+    return [{"t": "RawBlock", "c": ["html", block]}]
 
 
 def _relation_group(key: str, heading: str, items: str) -> str:
@@ -1241,6 +1329,16 @@ def _statement_first(blocks: list[dict]) -> list[dict]:
     return [{"t": "Div", "c": [["", ["card-statement"], []], statement]}, *answers]
 
 
+def _prepare_json_body(job: tuple[bool, list[dict]]) -> list[dict]:
+    is_problem, source = job
+    body = _dup(source)
+    if is_problem:
+        body = _statement_first(body)
+    body = _lamport_json_blocks(body)
+    _rename_json(body)
+    return body
+
+
 def _card_meta(
     card: sqlite3.Row,
     areas: list[str],
@@ -1277,15 +1375,19 @@ def _asked_meta(data: CardPageData, card: sqlite3.Row) -> dict[str, object]:
 def asked_json(
     data: CardPageData,
     card: sqlite3.Row,
-    jcache: dict,
+    body: list[dict],
     source_collections: dict[str, list[Appearance]],
     guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    body = _statement_first(_dup(jcache[card["id"]]))
-    body = _lamport_json_blocks(body)
-    _rename_json(body)
     body.extend(_prompts_json(card))
+    if card["id"] not in data.solved:
+        body.extend(
+            _solution_submission_json(
+                card,
+                source_collections.get(card["id"], []),
+            )
+        )
     body.extend(
         _relation_groups_json(
             data,
@@ -1301,14 +1403,12 @@ def asked_json(
 def plain_json(
     data: CardPageData,
     card: sqlite3.Row,
-    jcache: dict,
+    body: list[dict],
     source_collections: dict[str, list[Appearance]],
     guide_appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    body = _dup(jcache[card["id"]])
-    body = _lamport_json_blocks(body)
-    _rename_json(body)
+    body[:0] = _slogan_json(card)
     body.extend(_prompts_json(card))
     body.extend(
         _relation_groups_json(
@@ -1390,12 +1490,12 @@ def write_json_pages(
         )
         for _, _, blocks, _ in items
     ]
-    bodies = _successful_outputs(
-        pandoc.write_markdown(documents, MARKDOWN),
-        "tag-page write",
-    )
+    markdown_results = write_markdown_parallel(documents, MARKDOWN) if len(documents) >= 1_000 else pandoc.write_markdown(documents, MARKDOWN)
+    bodies = _successful_outputs(markdown_results, "tag-page write")
+    html_documents = _html_asts(documents)
+    html_results = write_html_parallel(html_documents) if len(html_documents) >= 1_000 else pandoc.write_html(html_documents)
     html_bodies = _successful_html_outputs(
-        pandoc.write_html(_html_asts(documents)),
+        html_results,
         "tag-page HTML write",
     )
     for (path, meta, _, role), body, html_body in zip(
@@ -1436,11 +1536,10 @@ def build_inline_cache(
     markdown_values: list[str],
 ) -> dict[str, list[pf.Inline]]:
     sources = list(dict.fromkeys(markdown_values))
+    marked = [INLINE_SENTINEL + mark_definienda(source) for source in sources]
+    results = read_markdown_parallel(marked, MARKDOWN) if len(marked) >= 1_000 else pandoc.read_markdown(marked, MARKDOWN)
     outputs = _successful_outputs(
-        pandoc.read_markdown(
-            [INLINE_SENTINEL + source for source in sources],
-            MARKDOWN,
-        ),
+        results,
         "inline read",
     )
     cache: dict[str, list[pf.Inline]] = {}
@@ -1508,7 +1607,7 @@ def _html_ast(ast: str) -> str:
 def _html_asts(documents: list[str]) -> list[str]:
     if len(documents) < 1_000:
         return [_html_ast(document) for document in documents]
-    with ProcessPoolExecutor(max_workers=4) as executor:
+    with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
         return list(executor.map(_html_ast, documents, chunksize=64))
 
 
@@ -1646,8 +1745,6 @@ def collection_page(
         """,
         (src["id"],),
     )
-    completion_rows = _rows(con, "select completion from sources where id=?", (src["id"],))
-    completion = completion_rows[0]["completion"] if completion_rows else "complete"
     provenance = [
         row["href"]
         for row in _rows(
@@ -1666,7 +1763,6 @@ def collection_page(
         src["id"],
         listed,
         inline_cache,
-        completion,
     )
 
 
@@ -1724,7 +1820,6 @@ def _collection_listing(
     collection_id: str,
     listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
-    completion: str = "complete",
 ) -> list[pf.Block]:
     """Render the collection's authored source-order contents.
 
@@ -1746,8 +1841,6 @@ def _collection_listing(
         return pf.ListItem(pf.Plain(*inlines))
 
     blocks: list[pf.Block] = []
-    if completion == "incomplete":
-        blocks.append(pf.Para(pf.Str("Partial contents of the source document.")))
     problem_count = sum(row["kind"] == "problem" for row in listed)
     blocks.append(
         pf.Para(
@@ -2040,15 +2133,15 @@ def index_page(
         f"{scale['solved']:,} carry a written solution.\n\n"
     )
     links = (
-        "## Browse\n\n"
+        "## Contents\n\n"
         "[Problems](problems.html)\n"
-        ": Every problem, with live topic/source filters plus random sampling and print/PDF.\n\n"
+        ": Every problem, filtered by topic and source, with random samples and print/PDF output.\n\n"
         "[Exams](exams.html)\n"
-        ": Exam papers and their problems in source order.\n\n"
+        ": Each exam sitting, problem by problem.\n\n"
         "[Guides](guides.html)\n"
-        ": Mathematical statements and problems grouped by subject.\n\n"
+        ": Ordered subject guides linking these problems by subject.\n\n"
         "[Wiki](wiki/index.html)\n"
-        ": Exposition and references organized by topic.\n"
+        ": Notes filed by subject and topic.\n"
     )
     output = _successful_outputs(
         pandoc.read_markdown(
@@ -2107,11 +2200,11 @@ def problem_browser_page(
     """The one problem browser, rendered by DataTables + SearchPanes."""
     del con, area_names
     return {"title": "Problems"}, [
-        pf.Para(pf.Str("Every problem in the corpus. Filter with the facet panes, search or paginate the table, or draw a printable random sample from the filtered rows.")),
+        pf.Para(pf.Str("Qualifying-exam problems organized by source, subject, topic, and solution status.")),
         _practice_controls(),
         _data_table(
             "problem-table",
-            ("Problem", "Source", "Topics", "Area", "Source type", "Institution", "Year", "Collection", "Section", "Order"),
+            ("Problem", "Source", "Topics", "Area", "Source type", "Institution", "Year", "Collection", "Section", "Solution", "Order"),
         ),
     ]
 
@@ -2164,6 +2257,7 @@ def collection_problem_index(
                     "collection_title": row["collection_title"],
                     "collection_section": row["section_name"] or "",
                     "collection_locator": locator,
+                    "solution_status": "Solved" if row["problem_id"] in data.solved else "Unsolved",
                 },
                 "filters": filters,
             }
@@ -2203,6 +2297,7 @@ def problem_table_data(
                 "years": years,
                 "collections": collections,
                 "section": "",
+                "solutionStatus": "Solved" if card["id"] in data.solved else "Unsolved",
                 "order": _listing_sort(data, card),
             }
         )
@@ -2266,14 +2361,12 @@ SOURCE_KIND_HEADINGS = {
 }
 
 
-GUIDES_LEDE = (
-    "One ordered path per subject, built from the corpus. "
-    "A guide is read front to back: each section assumes only the sections above it, and the study path in the margin is that order. "
-    "The [wiki](wiki/index.html) covers the same subjects as written notes, filed to be looked up rather than read through."
+GUIDES_LEDE = "Ordered subject guides linking qualifying-exam problems by subject. The [wiki](wiki/index.html) covers the same subjects as notes filed by topic."
+
+
+ACROSS_SUBJECTS_LEDE = (
+    "Guides that order problems from several subjects. Their problems also appear in the subject guides, and the wiki files each of their pages under its subject."
 )
-
-
-ACROSS_SUBJECTS_LEDE = "Workshop and preliminary-exam problems spanning several subjects."
 
 
 def _guide_sections(
@@ -2336,7 +2429,7 @@ def source_index_page(
 
     del area_names
     blocks: list[pf.Block] = [
-        pf.Para(pf.Str(f"Every collection the corpus draws problems from: {len(collections)} in all.")),
+        pf.Para(pf.Str(f"Sources for qualifying-exam problems: {len(collections)} collections in all.")),
         _data_table("source-table", ("Source", "Type", "Area", "Institution", "Year", "Worked", "Order")),
     ]
     return {"title": "Sources"}, blocks
@@ -2525,7 +2618,6 @@ def project(
     inline_values.extend(
         [
             "problems.",
-            ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus.",
             f"Every collection the corpus draws problems from: {len(_rows(con, 'select id from sources'))} in all.",
             GUIDES_LEDE,
@@ -2550,11 +2642,22 @@ def project(
     (site_root / "problems.json").write_text(json.dumps(problem_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
     (site_root / "sources.json").write_text(json.dumps(source_table_data(con, card_page_data, area_names), ensure_ascii=False, separators=(",", ":")) + "\n")
     tag_pages: list[tuple[Path, dict, list, SearchDocument]] = []
-    for card in _rows(con, "select * from cards where kind='problem'"):
+    problem_cards = _rows(con, "select * from cards where kind='problem'")
+    plain_cards = _rows(con, "select * from cards where kind not in ('problem','collection')")
+    body_jobs = [(True, jcache[card["id"]]) for card in problem_cards]
+    body_jobs.extend((False, jcache[card["id"]]) for card in plain_cards)
+    if len(body_jobs) >= 1_000:
+        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+            prepared_bodies = list(executor.map(_prepare_json_body, body_jobs, chunksize=64))
+    else:
+        prepared_bodies = [_prepare_json_body(job) for job in body_jobs]
+    problem_bodies = prepared_bodies[: len(problem_cards)]
+    plain_bodies = prepared_bodies[len(problem_cards) :]
+    for card, body in zip(problem_cards, problem_bodies, strict=True):
         meta, body = asked_json(
             card_page_data,
             card,
-            jcache,
+            body,
             source_collections,
             guide_appearances,
             mentions,
@@ -2564,11 +2667,11 @@ def project(
             sort=(("listing", _listing_sort(card_page_data, card)),),
         )
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body, document))
-    for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
+    for card, body in zip(plain_cards, plain_bodies, strict=True):
         meta, body = plain_json(
             card_page_data,
             card,
-            jcache,
+            body,
             source_collections,
             guide_appearances,
             mentions,
@@ -2639,11 +2742,11 @@ def project(
 title: Practice problems
 ---
 
-[Problem browser](problems.html): filters, random samples, and printable problem sets.
+Random practice sets are drawn in the [problem browser](problems.html).
 """
     (out / "generate.qmd").write_text(generate_qmd)
     generate_html = (
-        '<p><a href="problems.html">Problem browser</a>: filters, random samples, and printable problem sets.</p>'
+        '<p>Random practice sets are drawn in the <a href="problems.html">problem browser</a>.</p>'
         '<script>(function(){const target=new URL("problems.html",document.baseURI);'
         "const source=new URLSearchParams(location.search);for(const [key,value] of source)target.searchParams.append(key,value);"
         'if(!target.searchParams.has("sample"))target.searchParams.set("sample","8");location.replace(target.href);})();</script>'

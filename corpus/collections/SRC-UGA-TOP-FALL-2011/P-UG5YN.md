@@ -19,11 +19,11 @@ audit:
   note: Completed the missing implication f_*=0 => f null-homotopic using the universal cover R -> S^1.
 ---
 
-::: problem
+::: {.problem}
 Prove that, for $n \geq 2$, every continuous map $f: \RP^n \to S^1$ is null-homotopic.
 :::
 
-:::{.solution}
+::: {.solution}
 <1>1. The induced homomorphism
 \[
 f_*:\pi_1(\RP^n)\to\pi_1(S^1)

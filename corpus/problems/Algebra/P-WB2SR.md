@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be an $n$-dimensional vector space with basis $\mathcal B=\{b_1,\ldots,b_n\}$. Construct a basis of $V^{\oplus m}$ and compute its dimension.
 :::
 
-::: solution
+::: {.solution}
 For $1\le i\le m$ and $1\le k\le n$, let
 \[
 e_{i,k}=(0,\ldots,0,b_k,0,\ldots,0)\in V^{\oplus m},

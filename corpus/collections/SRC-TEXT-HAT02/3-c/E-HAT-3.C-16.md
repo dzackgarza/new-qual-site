@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Classify algebraically the Hopf algebras $A$ over $\mathbb{Z}$ such that $A^n$ is free for each $n$ and $A \otimes \mathbb{Q} \approx \mathbb{Q}[\alpha]$.
 In particular, determine which Hopf algebras $A \otimes \mathbb{Z}_p$ arise from such $A$'s.
+:::
 
 ::: {.solution}
 We classify these Hopf algebras as integral Hopf lattices in a rational polynomial Hopf algebra.

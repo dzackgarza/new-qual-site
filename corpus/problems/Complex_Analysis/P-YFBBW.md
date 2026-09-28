@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f:\RR\to\RR$ is continuous and $\lim_{x\to \pm \infty} f(x) = 0$.
 Prove that $f$ is uniformly continuous.
 :::
 
-:::{.solution}
+::: {.solution}
 Fix $\eps>0$, we need to find a $\delta = \delta(\eps)$ such that
 \[
 \abs{x-y}<\delta \implies \abs{f(x) - f(y)} < \eps && \forall x, y\in \RR

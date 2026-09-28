@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
+A group $G$ is \dfn{nilpotent} if its [[D-XEDSI|upper central series]] $Z_0\leq Z_1\leq\cdots$ satisfies $Z_n = G$ for some $n\geq 0$.
 :::

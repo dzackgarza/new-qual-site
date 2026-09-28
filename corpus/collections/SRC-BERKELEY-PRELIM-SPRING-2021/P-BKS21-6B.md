@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 For each statement, give a proof or counterexample.
 
 (a) Every real matrix is diagonalizable over $\mathbb R$.

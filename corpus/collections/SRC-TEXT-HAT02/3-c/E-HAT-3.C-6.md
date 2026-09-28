@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $S^n$ is an H-space if and only if the attaching map of the $2n$-cell of $J_2(S^n)$ is homotopically trivial.
+:::
 
 ::: {.solution}
 Let

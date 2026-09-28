@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W5-07
 kind: problem
-title: "Week 5: Abstract Algebra & Complex Analysis, problem 7"
+title: A group is not a union of two proper subgroups but can be a union of three
 classification:
   areas:
   - algebra

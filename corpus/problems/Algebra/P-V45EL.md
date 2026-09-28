@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite $p$-group and let $V$ be a nonzero finite-dimensional vector space over a finite field $k$ of characteristic $p$. What can be said about a representation
 \[
 G\to GL(V)?
 \]
 :::
 
-::: solution
+::: {.solution}
 Every such representation has a nonzero fixed vector:
 \[
 V^G\ne0.

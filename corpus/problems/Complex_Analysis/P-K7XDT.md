@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Find a conformal map from $\Omega = \{z\in \mathbb{C} \mid |z-i| > 1,\, \operatorname{Re}(z) > 0\}$ to $\mathbb{H} = \{w \in \mathbb{C} \mid \operatorname{Im}(w) > 0\}$.
 :::
 
-::: solution
+::: {.solution}
 Define
 $$
 T(z)=\frac{z}{z-2i}.

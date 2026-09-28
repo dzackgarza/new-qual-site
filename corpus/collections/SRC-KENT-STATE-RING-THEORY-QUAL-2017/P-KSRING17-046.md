@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-046
 kind: problem
-title: Kent State ring-theory qualifying problem 46
+title: When $(x)$ is prime or maximal in $R[x]$
 classification:
   areas: [algebra]
   topics: []

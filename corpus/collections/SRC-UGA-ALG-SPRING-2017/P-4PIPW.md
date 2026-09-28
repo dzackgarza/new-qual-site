@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 a. How many isomorphism classes of abelian groups of order 56 are there?
 Give a representative for one of each class.
 
@@ -28,7 +28,7 @@ c. Give two non-isomorphic groups of order 56 where the Sylow-7 subgroup is norm
 Justify that these two groups are not isomorphic.
 :::
 
-::: solution
+::: {.solution}
 Since $56=2^3\cdot7$, an abelian group of order $56$ is the product of $C_7$ with an abelian group of order $8$. The latter are $C_8$, $C_4\times C_2$, and $C_2^3$. Thus there are three classes:
 \[
 C_{56},\qquad C_{28}\times C_2,\qquad C_{14}\times C_2\times C_2.

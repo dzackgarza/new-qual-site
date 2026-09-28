@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be the splitting field of $f \in K[x]$ over $K$.
 Prove that if $g \in K[x]$ is irreducible and has a root in $F$, then $g$ splits into linear factors over $F$.
 :::
 
-::: solution
+::: {.solution}
 A splitting field is a normal algebraic extension. Thus $F/K$ is normal.
 
 Let $g\in K[x]$ be irreducible and suppose $g$ has a root $\alpha\in F$. By the defining irreducible-polynomial criterion for normality, every irreducible polynomial over $K$ having one root in $F$ splits completely over $F$.

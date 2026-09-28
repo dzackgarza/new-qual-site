@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find a Laurent expansion for $f(z) \da {1\over (z-3)(z-1)}$ on the 3 annular regions centered at $0$ where $f$ is holomorphic.
 
 ![](../../assets/Complex_Analysis/010_Basics/figures/2021-12-19_22-39-19.png)
 
 :::
 
-:::{.solution}
+::: {.solution}
 The three regions are 
 
 - $0 \leq \abs{z} < 1$

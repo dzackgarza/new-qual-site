@@ -27,7 +27,7 @@ Consider the five topologies on $\mathbb{R}$ given in Exercise 7 of §13.
 the $T_1$ axiom?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the closure of $K = \{1/n \mid n \in \mathbb{Z}_+\}$ and analyze the $T_1$ and Hausdorff axioms for the five topologies on $\mathbb{R}$:
 1. $\mathcal{T}_1$: Standard Euclidean topology (basis $(a, b)$).
 2. $\mathcal{T}_2$: $K$-topology $\mathbb{R}_K$ (basis $(a, b)$ and $(a, b) \setminus K$).

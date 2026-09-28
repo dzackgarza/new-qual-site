@@ -25,7 +25,7 @@ How many field homomorphisms are there from $\mathbb Q (\alpha)$ to:
 
 3. $\overline{\mathbb Q}$, the algebraic closure of $\mathbb Q$?
 :::
-::: problem
+::: {.problem}
 Let $\alpha\in\CC$ satisfy $\alpha^{17}=2$. How many field homomorphisms are there from $\QQ(\alpha)$ to
 
 1. $\CC$,
@@ -33,7 +33,7 @@ Let $\alpha\in\CC$ satisfy $\alpha^{17}=2$. How many field homomorphisms are the
 3. $\overline{\QQ}$?
 :::
 
-::: solution
+::: {.solution}
 The polynomial
 \[
 f(x)=x^{17}-2

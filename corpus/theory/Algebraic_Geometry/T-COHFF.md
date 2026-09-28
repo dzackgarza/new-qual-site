@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHFF
 kind: theorem
 title: The theorem on formal functions
+slogan: 'For a proper morphism, all infinitesimal thickenings of a fibre recover the completed stalk of its higher direct image.'
 classification:
   areas:
   - algebraic-geometry
@@ -29,7 +30,7 @@ Then the completion of the stalk satisfies
 :::
 
 ::: {.remark}
-The content is that the cohomology of the fibre, thickened to all orders, computes the completed stalk: infinitesimal data along $f\inv(y)$ determines the germ of the direct image.
+The theorem identifies the completed stalk $\hat{(R^if_*\mcf)_y}$ with the inverse limit of the cohomology groups $H^i(X_n,\mcf/\mfm_y^n\mcf)$ over all infinitesimal thickenings $X_n$ of the fibre.
 Properness is load-bearing and is what makes the inverse limit converge to something algebraic; the statement is false for open immersions.
 
 Two corollaries are the reason it is on a syllabus.

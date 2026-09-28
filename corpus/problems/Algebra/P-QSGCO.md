@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $H\trianglelefteq G$ with $G$ finite. Lift every representation of $G/H$ along the quotient map $G\to G/H$.
 
 1. Show that the intersection of the kernels of all lifted representations is exactly $H$.

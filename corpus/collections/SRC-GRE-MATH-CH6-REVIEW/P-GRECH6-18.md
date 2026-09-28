@@ -9,10 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Re-transcribed from Chapter 6 review Question 18 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription."
 ---
 
 ::: {.problem}
-Which ring does not have the same number of units as the other four?
+Which one of the following rings does NOT have the same number of units as the other four?
 
-(A) $\mathbb Z\oplus\mathbb Z$  (B) $\mathbb Z\oplus\mathbb Z_3$  (C) $\mathbb Z\oplus\mathbb Z_5$  (D) $\mathbb Z\oplus\mathbb Z_6$  (E) $\mathbb Z_3\oplus\mathbb Z_3$
+(A) $\ZZ \oplus \ZZ$
+(B) $\ZZ \oplus \ZZ_3$
+(C) $\ZZ \oplus \ZZ_5$
+(D) $\ZZ \oplus \ZZ_6$
+(E) $\ZZ_3 \oplus \ZZ_3$
 :::

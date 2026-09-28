@@ -26,7 +26,9 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 What is the minimum number of edges in simplicial complex structures $K$ and $L$ on $S^1$ such that there is a simplicial map $K \to L$ of degree $n$?
+:::
 
 ::: {.solution}
 Let $e(K)$ and $e(L)$ denote the numbers of edges of the two simplicial circles.

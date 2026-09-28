@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-25FLW
 kind: proposition
 title: Algebraic extensions of perfect fields are separable
+slogan: 'In characteristic zero or over a finite field, every algebraic extension is separable.'
 classification:
   areas:
   - algebra
@@ -15,5 +16,11 @@ review: draft
 ---
 
 ::: {.proposition}
-If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separable.
+Let $k$ be a field with $\ch k=0$ or $k$ finite.
+Then every algebraic extension $L/k$ is [[D-JGYLA|separable]].
+:::
+
+::: {.proof}
+Such a field is [[FD-YYLYR|perfect]].
+For $\alpha\in L$, the minimal polynomial of $\alpha$ over $k$ is irreducible in $k[x]$, hence separable, so $\alpha$ is separable over $k$.
 :::

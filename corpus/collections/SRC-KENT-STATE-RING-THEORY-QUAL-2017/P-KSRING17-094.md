@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-094
 kind: problem
-title: Kent State ring-theory qualifying problem 94
+title: Irreducible elements of a principal ideal domain are prime
 classification:
   areas: [algebra]
   topics: []

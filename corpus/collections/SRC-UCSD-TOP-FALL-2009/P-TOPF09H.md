@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F_n$ denote the free group on $n$ generators.
 Use covering space theory to prove that $F_2$ contains subgroups isomorphic to $F_n$ for every $n \geq 1$.
 :::

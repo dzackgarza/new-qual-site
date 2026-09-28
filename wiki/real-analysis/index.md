@@ -5,9 +5,9 @@ order: 20
 
 # Real Analysis
 
-## Questions and methods
+## Recurring questions
 
-| Question | Related material |
+| Question | Page |
 | --- | --- |
 | Compute the limit of these integrals | [[real-analysis/integration/which-convergence-theorem\|Which convergence theorem?]] |
 | Swap these two integrals | [[real-analysis/fubini-tonelli/which-one-applies\|Which one applies?]] |
@@ -24,7 +24,7 @@ order: 20
 
 3. [[real-analysis/integration/index|Integration]] -- the convergence theorems and $L^1$.
 
-4. [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]] -- product measures and iterated integrals.
+4. [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]] -- product measures and interchanging iterated integrals.
 
 5. [[real-analysis/lp-spaces/index|$L^p$ spaces]] -- the inequalities, duality, density.
 
@@ -32,15 +32,15 @@ order: 20
 
 7. [[real-analysis/functional-analysis/index|Functional analysis]] -- Banach and Hilbert spaces, operators, and duality.
 
-Across the chapters:
+Three pages collect material from several chapters:
 
-- [[real-analysis/review|Review sheet]] -- collected statements.
+- [[real-analysis/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
 
-- [[real-analysis/counterexamples|Counterexamples]] -- filed by the statement each refutes.
+- [[real-analysis/counterexamples|Counterexamples]] -- grouped by the statement each refutes.
 
-- [[real-analysis/inequalities|Inequalities]] -- filed by what each bounds.
+- [[real-analysis/inequalities|Inequalities]] -- grouped by the quantity each bounds.
 
-Also here: [[real-analysis/appendices/index|appendices]], [[real-analysis/resources/index|resources]], and [[real-analysis/workshops/index|workshops]].
+Further pages: [[real-analysis/appendices/index|appendices]], [[real-analysis/resources/index|resources]], and [[real-analysis/workshops/index|workshops]].
 
 ## Acknowledgements
 
@@ -48,9 +48,9 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 ## Topics and references
 
-### Undergraduate Analysis
+### Undergraduate analysis
 
-> - **References**
+> - References:
 >   
 >   - Rudin: Chapters 2, 3, 4, 5, 7
 >
@@ -70,11 +70,11 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 - Taylor's theorem
 
-- Weierstrass Approximation Theorem
+- Weierstrass approximation theorem
 
-### Measure and Integration
+### Measure and integration
 
-> - **References**:
+> - References:
 >   
 >   - [@Fol13, chaps. 1-2]
 >
@@ -88,11 +88,11 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 - Convergence theorems:
 
-  - Fatou’s Lemma
+  - Fatou's lemma
 
-  - The Monotone Convergence Theorem
+  - The monotone convergence theorem
 
-  - The Dominated Convergence Theorem
+  - The dominated convergence theorem
 
 - Egorov's theorem
 
@@ -108,29 +108,29 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 - Fubini and Tonelli theorems
 
-### Function Spaces
+### Function spaces
 
-> - **References**:
+> - References:
 >   
 >   - [@Fol13, secs. 5.2, 5.5, 6.2]
 >
 >   - [@SS05, chap. 4]
 
-- The Banach spaces $L^1$ and $L^\infty$:
+- The Banach spaces $L^1$ and $L^\infty$
 
-- Completeness
+  - Completeness
 
 - Convolutions
 
   - Approximations to the identity
 
-- Linear functionals and
+- Linear functionals
 
   - $L^\infty$ as the dual of $L^1$
 
-### Hilbert space and $L^2$ spaces
+### Hilbert spaces and $L^2$
 
-> - **References**:
+> - References:
 >   
 >   - [@Fol13, secs. 5.2, 5.5, 6.2]
 >

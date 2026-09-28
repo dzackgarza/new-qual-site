@@ -17,7 +17,7 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $\phi(n) = 2$.
 :::
 

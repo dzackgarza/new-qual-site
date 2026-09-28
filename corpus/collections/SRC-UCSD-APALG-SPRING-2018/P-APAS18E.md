@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A_4$ be the index two subgroup of $S_4$ consisting of even permutations.
 Find the character table of $A_4$.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes of \(A_4\) are
 \[
 C_1=\{e\},\qquad

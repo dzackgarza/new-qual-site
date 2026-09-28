@@ -24,7 +24,7 @@ audit:
   note: Repaired the cyclic-by-cyclic gap using the conjugation action on C15 and corrected the nonnilpotence argument to use the nonnormal Sylow 3-subgroup.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$.
 
 (a) Suppose that $G$ does not have a normal Sylow 7-subgroup.

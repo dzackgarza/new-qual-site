@@ -24,7 +24,7 @@ audit:
   note: Classified finitely generated modules using the unique irreducible class of a local PID and constructed an explicit nonzero map between cyclic torsion summands.
 ---
 
-::: problem
+::: {.problem}
 A commutative ring $R$ with identity is local if it has exactly one maximal ideal.
 Let $R$ be a local ring which is a PID, but is not a field.
 

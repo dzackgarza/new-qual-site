@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Assume that $\abs b < 1$ and show that the following polynomial has exactly two roots (counting multiplicity) in $\abs{z} < 1$:
 \[
 f(z) \definedas z^3 + 3z^2 + bz + b^2
@@ -22,7 +22,7 @@ f(z) \definedas z^3 + 3z^2 + bz + b^2
 
 :::
 
-:::{.solution}
+::: {.solution}
 Big: $M(z) = 3z^2$.
 Small: $m(z) = z^3+bz + b^2$.
 Then on $\abs{z} = 1$:

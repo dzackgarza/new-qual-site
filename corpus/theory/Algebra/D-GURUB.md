@@ -13,13 +13,13 @@ review: draft
 ---
 
 ::: {.definition}
-A **ring** is a triple $(R, +, \cdot) \in \Ring$ such that
+A \dfn{ring} is a triple $(R, +, \cdot)$ consisting of a set $R$ and binary operations $+$ and $\cdot$ on $R$ such that
 
-- $(R, +)\in \Ab\Grp$,
+- $(R, +)$ is an abelian group, with identity $0$;
 
-- $(R, \cdot) \in \Monoid$
+- $(R, \cdot)$ is a monoid, with identity $1$;
 
-- Distributivity: $a(b+c) = ab + ac$ and $(b+c)a = ba + ca$.
+- for all $a, b, c\in R$, $a(b+c) = ab + ac$ and $(b+c)a = ba + ca$.
 
-A ring is **commutative**, i.e. an object of $\CRing$, iff additionally $ab = ba$ for all $a, b\in R$.
+A ring is \dfn{commutative} if additionally $ab = ba$ for all $a, b\in R$.
 :::

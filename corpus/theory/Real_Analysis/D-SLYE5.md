@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-SLYE5
 kind: definition
-title: Completeness of a Hilbert space
+title: Complete families in a Hilbert space
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A collection of vectors $\theset{u_{n}}\subset H$ is **complete** iff $\inner{x}{u_{n}} = 0$ for all $n \iff x = 0$ in $H$.
+Let $H$ be a [[D-7QQUO|Hilbert space]].
+A family $(u_{n})_{n\geq 1}$ of vectors in $H$ is \dfn{complete} if the only $x\in H$ with $\inner{x}{u_{n}} = 0$ for all $n$ is $x = 0$.
 :::

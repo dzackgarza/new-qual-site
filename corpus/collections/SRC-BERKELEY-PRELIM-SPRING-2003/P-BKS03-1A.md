@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field and $A\in M_n(k)$.
 Prove that the following are equivalent:
 

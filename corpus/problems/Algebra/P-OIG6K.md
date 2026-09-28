@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f\in F[x]$ be an irreducible separable cubic. If its Galois group is not contained in $A_3$, prove that its Galois group is $S_3$.
 :::
 

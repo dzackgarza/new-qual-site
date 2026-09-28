@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $f(x) \in \mathbb{F}_p[x]$ is an irreducible factor of $x^{p^n} - x$ where $p$ is a prime number.
 Prove that $\deg f$ divides $n$.
 :::

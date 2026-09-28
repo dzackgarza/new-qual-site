@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Construct an explicit polynomial over $\mathbb{Q}$ whose Galois group is the cyclic group of order 3:
 $$\operatorname{Gal}(f/\mathbb{Q}) \cong \mathbb{Z}/3\mathbb{Z}.$$
 Prove that your polynomial satisfies this condition.
 :::
 
-::: solution
+::: {.solution}
 Take
 \[
 f(x)=x^3-3x+1.

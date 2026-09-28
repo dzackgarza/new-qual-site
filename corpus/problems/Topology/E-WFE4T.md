@@ -14,7 +14,9 @@ relations:
 review: draft
 ---
 
+::: {.problem}
 - Every sequence in $X$ has a convergent subsequence in $X$.
+:::
 
 ::: {.remark}
 For second-countable Hausdorff spaces and metric spaces, this condition is equivalent to compactness; see [E-YAEMZ](E-YAEMZ.md).

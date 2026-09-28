@@ -8,12 +8,15 @@ import subprocess
 import sys
 from pathlib import Path
 
+import panflute as pf
+
 from . import emit, index
 from .diagnostics import Diagnostic, DiagnosticCode
-from .model import ParsedCard, discover, parse_cards_with
+from .model import ParsedCard, discover, parse_cards_with, to_json
 from .pandoc_batch import PandocServer
 from .publication import ReferenceItem, load_publications
 from .static_site import build_asset_catalog
+from .tex import unrenderable_tex
 from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_sources, validate_wiki_tree
 
 
@@ -21,29 +24,32 @@ def load(
     root: Path,
     pandoc: PandocServer,
 ) -> tuple[list[ParsedCard], list[WikiPage], list[Diagnostic]]:
+    # Every stage runs whatever the stages before it found. Stopping at the first
+    # failing stage hid every independent error behind whichever sorted first, so a
+    # run with k errors cost k full passes (issue #89).
     parsed, errors = parse_cards_with(
         pandoc,
         discover(root / "corpus"),
     )
-    if not errors:
-        errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"))
-    wiki_pages: list[WikiPage] = []
-    if not errors:
-        wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
-        errors.extend(wiki_errors)
-        card_routes = {}
-        card_titles = {}
-        for item in parsed:
-            card_titles[item.card.id] = item.card.title
-            card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
-        if wiki_pages:
-            assets = build_asset_catalog(root / "assets")
-            errors.extend(validate_wiki_tree(wiki_pages))
-            errors.extend(validate_wiki_sources(root / "wiki"))
-            errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
-            link_citations(wiki_pages, card_routes)
-    if not errors:
-        errors.extend(_publication_references(root, {item.card.id for item in parsed}))
+    errors.extend(index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki")))
+    wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
+    errors.extend(wiki_errors)
+    card_routes = {}
+    card_titles = {}
+    for item in parsed:
+        card_titles[item.card.id] = item.card.title
+        card_routes[item.card.id] = Path(index.card_route(item.card)) / f"{item.card.id}.html"
+    if wiki_pages:
+        assets = build_asset_catalog(root / "assets")
+        errors.extend(validate_wiki_tree(wiki_pages))
+        errors.extend(validate_wiki_sources(root / "wiki"))
+        errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
+        link_citations(wiki_pages, card_routes)
+    errors.extend(_publication_references(root, {item.card.id for item in parsed}))
+    preamble = json.loads((root / "vocabularies" / "macros.json").read_text())
+    documents = [(item.source_path, item.ast) for item in parsed]
+    documents.extend((str(page.source_path), to_json(pf.Doc(*page.blocks))) for page in wiki_pages)
+    errors.extend(unrenderable_tex(pandoc, documents, preamble))
     return parsed, wiki_pages, errors
 
 

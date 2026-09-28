@@ -16,7 +16,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $M$ be a closed, connected, oriented 4-manifold such that $H_2(M; \ZZ)$ has rank 1. Show that there is not a free $\ZZ_2$ action on $M$.
+:::
 
 ::: {.solution}
 Useful facts:

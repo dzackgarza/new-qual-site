@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-124
 kind: problem
-title: Kent State ring-theory qualifying problem 124
+title: Localization at a maximal ideal has the same residue field
 classification:
   areas: [algebra]
   topics: []

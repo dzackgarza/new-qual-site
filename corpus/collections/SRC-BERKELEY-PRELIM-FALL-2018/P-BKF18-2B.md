@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a nonconstant real polynomial such that for some real $a$, $p(a)\ne0$ and $p'(a)=p''(a)=0$.
 Prove that $p$ has at least one nonreal zero.
 :::

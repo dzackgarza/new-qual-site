@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that a nonsingular symmetric or skew-symmetric bilinear pairing over a field $F$, of the form $F^n \times F^n \to F$, cannot be identically zero when restricted to all pairs of vectors $\nu, w$ in a $k$-dimensional subspace $V \subset F^n$ if $k > n/2$.
+:::
 
 ::: {.solution}
 <1>1. Let $B:F^n\times F^n\to F$ be nonsingular, with matrix $A$ ($B(x,y)=x^tAy$).

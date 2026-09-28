@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{H} = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane.
 Let $u : \mathbb{H} \to \mathbb{R}$ be a continuous bounded function which is harmonic in $\mathbb{H}$ and $u = 0$ on $\partial\mathbb{H}$.
 Show that $u$ is constant.
 :::
 
-::: solution
+::: {.solution}
 Reflect $u$ oddly across the real axis:
 \[
 U(z)=

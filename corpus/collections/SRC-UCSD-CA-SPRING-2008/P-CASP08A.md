@@ -19,11 +19,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and prove **Schwarz's Lemma** for holomorphic functions on the unit disk.
 :::
 
-::: solution
+::: {.solution}
 Let $f:\mathbb D\to\mathbb D$ be holomorphic with $f(0)=0$. Schwarz's lemma states
 $$
 |f(z)|\le |z|,\qquad |f'(0)|\le1.

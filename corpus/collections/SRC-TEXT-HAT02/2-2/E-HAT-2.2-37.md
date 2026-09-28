@@ -18,7 +18,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Give an elementary derivation for the Mayer–Vietoris sequence in simplicial homology for a $\Delta$-complex $X$ decomposed as the union of subcomplexes $A$ and $B$.
+:::
 
 ::: {.solution}
 <1>1. Let $C_n(X)$, $C_n(A)$, $C_n(B)$, $C_n(A \cap B)$ be the simplicial chain groups.

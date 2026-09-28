@@ -24,7 +24,7 @@ audit:
   note: "Checked AP=PC for the 2-by-2 matrix, exhausted the invariant-factor chains in part (b), and checked the coefficients and distinct minimal polynomials of both displayed forms."
 ---
 
-::: problem
+::: {.problem}
 (a) Find the rational canonical form of
 $$
 \begin{pmatrix}2&3\\7&1\end{pmatrix}.
@@ -33,7 +33,7 @@ $$
 (b) Find all possible rational canonical forms for 4-by-4 matrices over the complex numbers whose characteristic polynomial is $(x^2+1)(x+1)^2$.
 :::
 
-::: solution
+::: {.solution}
 For a monic polynomial $f=x^d+c_{d-1}x^{d-1}+\cdots+c_0$,
 write $C(f)$ for its companion matrix with ones on the subdiagonal
 and last column $(-c_0,\ldots,-c_{d-1})^{\mathsf T}$.
@@ -43,7 +43,7 @@ $$
 C(x^2-3x-19)=\begin{pmatrix}0&19\\1&3\end{pmatrix}.
 $$
 
-::: proof
+::: {.proof}
 Let $A$ be the given matrix. Its characteristic polynomial is
 $$
 \det(xI-A)=(x-2)(x-1)-21=x^2-3x-19.
@@ -68,7 +68,7 @@ $$
 \bigl(x+1,\ (x^2+1)(x+1)\bigr).
 $$
 
-::: proof
+::: {.proof}
 Over $\mathbb C$, the characteristic polynomial is
 $(x-i)(x+i)(x+1)^2$. Let $f_1\mid\cdots\mid f_r$ be the
 nonconstant monic invariant factors. Their product is the
@@ -101,7 +101,7 @@ $$
 \end{pmatrix}.
 $$
 
-::: proof
+::: {.proof}
 The products expand to
 $$
 (x^2+1)(x+1)^2=x^4+2x^3+2x^2+2x+1,

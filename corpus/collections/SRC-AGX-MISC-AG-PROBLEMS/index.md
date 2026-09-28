@@ -18,8 +18,22 @@ source:
     - id: P-AGXMISCPRODRATIONAL
     - id: P-AGXMISCGENUSONERAM
     - id: P-AGXMISCGENUSZEROCONIC
+    - id: P-AGXMISCOCONNECTED
+    - id: P-AGXMISCTSENPONEBUNDLE
+  - name: Sheaves of Modules
+    problems:
+    - id: P-AGXMISCINJINVERTIBLE
+  - name: Irreducibility
+    problems:
+    - id: P-AGXMISCIRROPENCONN
+    - id: P-AGXMISCCUSPIRR
+    - id: P-AGXMISCIRRINTERSECT
+    - id: P-AGXMISCIRRCOMPONENTS
+  - name: Calculations
+    problems:
+    - id: P-AGXMISCCALCULATIONS
   date:
     kind: unknown
 ---
 
-Problems on curves and rationality, with solutions using birational maps, Riemann--Hurwitz, and Riemann--Roch.
+Oral-exam questions on curves and rationality, sheaves of modules, irreducibility, and standard calculations.

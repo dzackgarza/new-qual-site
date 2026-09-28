@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $E$ be an extension field of $F$ and $\alpha\in E$ be algebraic of odd degree over $F$.
 
 a. Show that $F(\alpha) = F(\alpha^2)$.
@@ -26,7 +26,7 @@ a. Show that $F(\alpha) = F(\alpha^2)$.
 b. Prove that $\alpha^{2020}$ is algebraic of odd degree over $F$.
 :::
 
-::: solution
+::: {.solution}
 Because $\alpha$ satisfies
 \[
 x^2-\alpha^2\in F(\alpha^2)[x],

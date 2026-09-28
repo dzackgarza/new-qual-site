@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G \subset \mathbb{C}$ be a connected open set with $0 \in G$, and $f \in H(G)$, with $f(0) = 0$, $f'(0) = 1$ and $f(G) \subset G$.
 
 (a) Show that if $G \neq \mathbb{C}$ and $G$ is simply connected (not necessarily bounded) then $f(z) \equiv z$.
@@ -24,7 +24,7 @@ Hint for (b): Prove by contradiction.
 Consider the $n$th iterate $f_n := f \circ f \circ \cdots \circ f$ ($n$ times), and compute the first non-vanishing coefficient of the Taylor series of $f_n(z) - z$ at 0 in terms of that of $f(z) - z$.
 :::
 
-::: solution
+::: {.solution}
 For (a), assume first that $G\ne\mathbb C$ is simply connected. By the Riemann
 mapping theorem there is a conformal map $\phi:G\to\mathbb D$; composing with a
 disk automorphism, arrange $\phi(0)=0$. Then

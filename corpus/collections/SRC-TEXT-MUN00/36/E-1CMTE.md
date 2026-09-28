@@ -27,7 +27,7 @@ After studying Chapters 6 and 7, repeat Exercises 1–6 of the Supplementary Exe
 You should be able to answer all but one of the 340 questions involved in Exercises 1–6, and all but one of the 40 questions involved in Exercise 7. These two are unsolved; see the remark in Exercise 5 of §32.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Systematically establish the core topological behaviors (separation axioms, subspace inheritance, product preservation, and image properties) for (18) Paracompactness and (19) Topological Completeness (complete metrizability).
 
 <1>1. Property (18): Paracompactness.

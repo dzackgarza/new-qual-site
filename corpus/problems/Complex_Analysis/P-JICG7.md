@@ -20,7 +20,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ is entire and suppose that for some integer $n\geq 1$,
 \[
 \lim_{z\to \infty} {f(z) \over z^n} = 0

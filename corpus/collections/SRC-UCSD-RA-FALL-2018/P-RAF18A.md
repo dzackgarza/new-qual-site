@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\{f_n\}_n \subset L^1(\mathbb{R}, m)$ be a sequence of functions such that $f_n \to 0$, $m$-almost everywhere.
 Assume that there exists $M < \infty$ such that
 $$
@@ -32,9 +32,9 @@ $$
 Prove that $\lim_{n \to \infty} \|f_n\|_1 = 0$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Build a single integrable dominating function.
-::: proof
+::: {.proof}
 Define
 \[
 g_n:=\max(|f_1|,\ldots,|f_n|).
@@ -62,7 +62,7 @@ Thus $g\in L^1(\mathbb R)$.
 :::
 
 <1>2. Apply dominated convergence.
-::: proof
+::: {.proof}
 For every $n$,
 \[
 |f_n|\le g,

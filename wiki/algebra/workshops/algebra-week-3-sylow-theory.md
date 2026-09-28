@@ -1,19 +1,19 @@
 ---
 order: 39
-title: Algebra Qual Prep Week 3
+title: "Algebra qual prep week 3: Sylow theory"
 ---
 
-# Algebra Qual Prep Week 3
+# Algebra qual prep week 3: Sylow theory
 
 ## Topics
 
-- The 3 Sylow theorems
+- The three Sylow theorems
 
-- Showing groups are abelian
+- Criteria for a group to be abelian
 
 - Classification:
 
-  - FTFGAG
+  - The structure theorem for finitely generated abelian groups
 
   - Recognizing direct and semidirect products
 
@@ -29,8 +29,10 @@ title: Algebra Qual Prep Week 3
 
     - $p^2 q$
 
-- Sketch a proof for each of the Sylow theorems.
+## Exercises
 
-## Unsorted Questions
+- Sketch a proof of each of the Sylow theorems.
+
+## Problems
 
 [[P-ZHTDW]] [[P-ZBTCU]] [[P-PKJVI]] [[P-USPU6]] [[P-K2U6D]] [[P-4ZDQQ]]

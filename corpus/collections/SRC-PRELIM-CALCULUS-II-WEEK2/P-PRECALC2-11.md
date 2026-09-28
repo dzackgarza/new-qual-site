@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-11
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 11'
+title: Limit of $(x_1^n+\cdots+x_k^n)^{1/n}$
 classification:
   areas:
   - prelim
@@ -12,6 +12,12 @@ review: draft
 ---
 
 ::: {.problem}
-Evalutate lim $( 3 ^ { n } + 5 ^ { n } ) ^ { 1 / n }$ . More generally, if $x _ { 1 } , \ldots , x _ { k } > 0$ , evaluate the n→∞\
-limit $\operatorname* { l i m } _ { n \to \infty } ( x _ { 1 } ^ { n } + \ldots + x _ { k } ^ { n } ) ^ { 1 / n }$
+Evaluate
+\[
+\lim_{n\to\infty}(3^n+5^n)^{1/n}.
+\]
+More generally, if $x_1,\ldots,x_k>0$, evaluate
+\[
+\lim_{n\to\infty}(x_1^n+\cdots+x_k^n)^{1/n}.
+\]
 :::

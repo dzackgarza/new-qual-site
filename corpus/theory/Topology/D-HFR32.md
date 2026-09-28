@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-HFR32
 kind: definition
-title: Homotopy Equivalence
+title: Homotopy equivalence
 classification:
   areas:
   - topology
@@ -13,13 +13,12 @@ review: draft
 ---
 
 ::: {.definition}
-Let $f: X \to Y$ be a continuous map, then $f$ is said to be a *homotopy equivalence* if there exists a continuous map $g: X \to Y$ such that
+Let $X$ and $Y$ be topological spaces.
+A continuous map $f\colon X\to Y$ is a \dfn{homotopy equivalence} if there is a continuous map $g\colon Y\to X$ with $f\circ g\simeq\id_Y$ and $g\circ f\simeq\id_X$, where $\simeq$ denotes [[D-Z7I7F|homotopy]].
+Such a map $g$ is a \dfn{homotopy inverse} of $f$.
+The spaces $X$ and $Y$ are \dfn{homotopy equivalent}, or have the same \dfn{homotopy type}, written $X\simeq Y$, if there is a homotopy equivalence $X\to Y$.
+:::
 
-$f\circ g \homotopic \id_Y$ and $g\circ f \homotopic \id_X$.
-
-Such a map $g$ is called a homotopy inverse of $f$, the pair of maps is a homotopy equivalence.
-
-If such an $f$ exists, we write $X \homotopic Y$ and say $X$ and $Y$ have the same homotopy type, or that they are homotopy equivalent.
-
-> Note that homotopy equivalence is strictly weaker than homeomorphic equivalence, i.e., $X\cong Y$ implies $X \homotopic Y$ but not necessarily the converse.
+::: {.example}
+Every [[D-9KQZT|homeomorphism]] is a homotopy equivalence, and the converse fails: for $n\geq 1$ the inclusion $\ts{0}\hookrightarrow\RR^n$ is a homotopy equivalence, with homotopy inverse the constant map $\RR^n\to\ts{0}$ and homotopy $H(x, t) = tx$ from the constant map to $\id_{\RR^n}$, but $\ts{0}$ and $\RR^n$ are not homeomorphic.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-099
 kind: problem
-title: Kent State ring-theory qualifying problem 99
+title: $\mathbb Z[\sqrt{-2}]$ is a Euclidean domain
 classification:
   areas: [algebra]
   topics: []

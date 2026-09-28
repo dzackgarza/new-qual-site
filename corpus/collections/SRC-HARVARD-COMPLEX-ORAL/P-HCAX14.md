@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find all poles and residues of $1/\sin z$.
 :::
 
-::: solution
+::: {.solution}
 The zeros of $\sin z$ are exactly the points $z=n\pi$, $n\in\mathbb Z$. Since
 \[
 (\sin z)'\big|_{z=n\pi}=\cos(n\pi)=(-1)^n\ne0,

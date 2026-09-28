@@ -25,7 +25,7 @@ audit:
   note: "Checked nonemptiness, the uniform derivative bound, derivative-phase normalization, the open-disk limit on the component of P, and locally uniform convergence on all other components."
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be open and $P\in U$. Let
 $\mathcal F$ be the family of **all** holomorphic maps
 $f:U\to D=\{z:|z|<1\}$ such that $f(P)=0$.
@@ -37,7 +37,7 @@ uniformly on compact subsets of $U$ to a holomorphic
 $f_0:U\to D$ with $f_0'(P)=S$.
 :::
 
-::: remark
+::: {.remark}
 Part (b) fails for an arbitrary subfamily. For $U=D$,
 $P=0$ and $\mathcal F=\{z\mapsto iz\}$, the supremum is
 one but every sequence has derivative $i$, not one.
@@ -52,10 +52,10 @@ open target disk. The full family in the statement
 allows both needed normalizations.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The derivative supremum is a finite nonnegative real number.
 
-::: proof
+::: {.proof}
 The zero function belongs to $\mathcal F$. Choose $r>0$
 with $\overline{D(P,r)}\subset U$. Cauchy's derivative
 formula and $|f|\leq1$ on that circle give
@@ -68,7 +68,7 @@ also applies to every nonempty subfamily, proving (a).
 
 <1>2. A maximizing sequence can have real nonnegative derivatives and vanish off the component of $P$.
 
-::: proof
+::: {.proof}
 Let $V$ be the connected component of $U$ containing $P$.
 It is open, and $U\setminus V$ is open as a union of
 the other components. For each $n\geq1$, choose
@@ -87,7 +87,7 @@ This construction also covers $S=0$.
 
 <1>3. A subsequence has the required limit on all of $U$.
 
-::: proof
+::: {.proof}
 The restrictions $h_n|_V$ are uniformly bounded by one.
 Montel's theorem gives a subsequence $h_{n_j}$ converging
 uniformly on compact subsets of $V$ to a holomorphic $h$

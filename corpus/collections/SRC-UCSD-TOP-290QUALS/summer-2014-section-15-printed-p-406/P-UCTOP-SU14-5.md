@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that there is no compact 4-manifold, with or without boundary, which is homotopy-equivalent to $S^2 \vee S^4$.
+:::
 
 ::: {.solution}
 <1>1. Suppose a compact connected $4$-manifold $M$ were homotopy-equivalent to $S^2\vee S^4$.

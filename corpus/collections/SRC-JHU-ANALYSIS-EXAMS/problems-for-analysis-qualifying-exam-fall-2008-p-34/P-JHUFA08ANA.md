@@ -17,6 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 1) (15 points) Consider the mapping $F : [ 0 , 1 ]  [ 0 , 1 ]$ given by $F ( s ) = s ^ { 2 }$
 
 Let $F ^ { - j } ( A )$ be the inverse image of j iterates of F applied to a measurable subset $A \subset [ 0 , 1 ]$ . That is, if $F = F ^ { 1 }$ and $F ^ { j } , j = 2 , 3 , . .$ . is defined inductively as $F ^ { j } = F ^ { j - 1 } \circ F$ ， then $F ^ { - j } ( A ) = \{ x : F ^ { j } x = y$ , some $y \in A \}$
@@ -30,8 +31,9 @@ $$
 \lim _ { N \to \infty } \int _ { [ 0 , 1 ] } f ( s ) d \mu _ { N } ( s )
 $$
 tend to a limit? If so, what is the limit?
+:::
 
-::: solution
+::: {.solution}
 For each $j \ge 0$, let
 $$
 \nu_j(A):=|F^{-j}(A)| = |\{s\in[0,1]:F^j(s)\in A\}|.

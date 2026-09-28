@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ZTPHF
 kind: definition
-title: Order
+title: Order of a group element
 classification:
   areas:
   - algebra
@@ -14,5 +14,7 @@ review: draft
 ---
 
 ::: {.definition}
-The **order** of an element $g\in G$, denoted $n \da o(g)$, is the smallest $n\in \ZZ^{\geq 0}$ such that $g^n = e$.
+Let $G$ be a group with identity $e$ and $g\in G$.
+If $g^n=e$ for some integer $n\geq 1$, the \dfn{order} of $g$, written $o(g)$, is the smallest such $n$.
+If no such $n$ exists, $g$ has \dfn{infinite order}.
 :::

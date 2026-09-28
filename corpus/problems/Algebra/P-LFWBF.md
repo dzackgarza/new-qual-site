@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For an $R$-module $X$, write
 \[
 X^\vee=\Hom_R(X,R).

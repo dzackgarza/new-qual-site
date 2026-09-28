@@ -27,11 +27,11 @@ audit:
 Classify the following assertion as true, sometimes true, or false: in an integral domain, for distinct positive integers $m$ and $n$, if $a^m=b^m$ and $a^n=b^n$, then $a=b$.
 :::
 
-::: solution
+::: {.solution}
 The assertion is **sometimes true**.
 
 <1>1. If $\gcd(m,n)=1$, the two power equalities force $a=b$.
-::: proof
+::: {.proof}
 If one of $a,b$ is zero, then the equality of any positive power forces the
 other to be zero as well, because an integral domain has no nonzero
 nilpotents. Hence assume $a,b\ne0$.
@@ -58,7 +58,7 @@ Thus $a=b$.
 :::
 
 <1>2. For distinct exponents that are not coprime, the assertion can fail.
-::: proof
+::: {.proof}
 Take the integral domain $\mathbb Z$, let
 $$
 m=2,
@@ -79,7 +79,7 @@ but $a\ne b$.
 :::
 
 <1>3. Conclude the classification.
-::: proof
+::: {.proof}
 Step <1>1 gives a broad class of cases in which the implication is true,
 while step <1>2 gives a valid counterexample to the unrestricted statement.
 Hence

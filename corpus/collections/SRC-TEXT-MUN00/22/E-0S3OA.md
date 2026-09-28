@@ -22,7 +22,7 @@ Let $H$ be a subspace of the topological group $G$.
 Show that if $H$ is also a subgroup of $G$, then both $H$ and $\overline{H}$ are topological groups.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that any subgroup $H$ of a topological group $G$ is a topological group under the subspace topology, and that its topological closure $\overline{H}$ is also a subgroup and a topological group.
 
 <1>1. $H$ is a topological group:

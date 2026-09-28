@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $F$ is a field of characteristic zero and $f$ is an irreducible polynomial of degree $n$ in $F[x]$.
 Let $E$ be a splitting field of $f$ over $F$.
 Let $\{\alpha_1, \ldots, \alpha_n\}$ be the set of zeros of $f$ in $E$.

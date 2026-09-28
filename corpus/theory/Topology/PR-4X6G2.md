@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-4X6G2
 kind: proposition
-title: Poincaré Duality for manifolds
+title: Poincaré duality for closed manifolds
+slogan: 'On a closed orientable manifold, cap product with the fundamental class exchanges degree $k$ cohomology with degree $n-k$ homology.'
 classification:
   areas:
   - topology
@@ -14,15 +15,16 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-For $M^n$ a closed orientable manifold without boundary and $\FF$ a field,
-\[
-H_k(M^n; \FF) \cong H^{n-k}(M^n; \FF)
-.\]
-
-:::{.remark}
-Hatcher, *Algebraic Topology*, Theorem 3.30.
-Closedness and orientability are hypotheses of the duality, not consequences of it.
+::: {.proposition}
+Let $M$ be a closed orientable $n$-manifold and $R$ a commutative ring; for example $R = \ZZ$ or $R$ a field.
+Then cap product with the fundamental class gives isomorphisms
+$$
+H^{k}(M; R) \xrightarrow{\ \sim\ } H_{n-k}(M; R)
+$$
+for all $k$ [@Hat02].
 :::
 
+::: {.remark}
+Closedness and orientability are hypotheses of the duality.
+For a field $F$ of characteristic $2$, every closed manifold is $F$-orientable, so the duality holds for all closed manifolds with $\ZZ/2$ coefficients.
 :::

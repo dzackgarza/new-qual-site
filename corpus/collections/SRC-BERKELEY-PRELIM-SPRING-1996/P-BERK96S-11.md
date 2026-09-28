@@ -1,0 +1,88 @@
+---
+schema: qual/card@1
+id: P-BERK96S-11
+kind: problem
+title: If a function and its derivative both converge at infinity, must the derivative limit vanish?
+classification:
+  areas:
+  - prelim
+  topics: []
+relations: []
+review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: The retained PDF page confirms the limits phi(x)->a and phi'(x)->b as x->infinity; the extraction dropped the arrows.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-23
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-23
+  note: >-
+    Verified the mean-value-theorem identity and that the intermediate points
+    tend to infinity, so the two limits force b=0.
+---
+
+::: {.problem}
+Let $\varphi\in C^1(\mathbb R)$ and suppose
+\[
+\varphi(x)\to a,
+\qquad
+\varphi'(x)\to b
+\qquad(x\to\infty).
+\]
+Prove or give a counterexample: must $b=0$?
+:::
+
+::: {.solution}
+<1>1. For every $x\in\RR$, there is a point
+$$
+\xi_x\in(x,x+1)
+$$
+such that
+$$
+\varphi(x+1)-\varphi(x)=\varphi'(\xi_x).
+$$
+
+::: {.proof}
+Apply the mean value theorem to $\varphi$ on the interval $[x,x+1]$.
+:::
+
+<1>2. One has
+$$
+b=0.
+$$
+
+::: {.proof}
+As $x\to\infty$,
+$$
+\varphi(x+1)-\varphi(x)\longrightarrow a-a=0.
+$$
+Also $\xi_x>x$, so
+$$
+\xi_x\longrightarrow\infty.
+$$
+The hypothesis $\varphi'(y)\to b$ as $y\to\infty$ therefore gives
+$$
+\varphi'(\xi_x)\longrightarrow b.
+$$
+Taking limits in the identity from step <1>1 yields $0=b$.
+:::
+
+<1>3. Thus the answer is
+$$
+\boxed{\text{yes: }b=0}.
+$$
+
+::: {.proof}
+This is exactly step <1>2.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 answers the question.
+:::
+:::

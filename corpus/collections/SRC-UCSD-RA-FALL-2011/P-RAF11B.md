@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Let $X$ be an infinite dimensional Banach space.
 Prove that $X$ endowed with the weak topology is not a complete metric space.
 
@@ -36,9 +36,9 @@ Show that $X$ must be finite dimensional.
 Hint: Consider the function $d(x,y) = \sum_n 2^{-n} \frac{|L_n(x-y)|}{1 + |L_n(x-y)|}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Norm-bounded sets have empty weak interior in infinite dimension.
-::: proof
+::: {.proof}
 Let $B\subset X$ be norm bounded. Suppose a weakly open neighborhood of some $x_0\in B$ were contained in $B$. Then there would exist $f_1,\dots,f_N\in X^*$ and $\varepsilon>0$ such that
 \[
 U:=\{x\in X:|f_j(x-x_0)|<\varepsilon\text{ for }1\le j\le N\}
@@ -60,7 +60,7 @@ as $|t|\to\infty$. This contradicts norm boundedness of $B$. Hence every norm-bo
 :::
 
 <1>2. Prove part (a) by Baire category.
-::: proof
+::: {.proof}
 For each integer $n\ge1$, the closed norm ball
 \[
 B_n:=\{x\in X:\|x\|\le n\}
@@ -79,7 +79,7 @@ If the weak topology were induced by a complete metric, the Baire Category Theor
 :::
 
 <1>3. The function in the hint is a metric whose convergent sequences are exactly the weakly convergent sequences.
-::: proof
+::: {.proof}
 Define
 \[
 d(x,y)=\sum_{n=1}^\infty2^{-n}
@@ -124,7 +124,7 @@ for every $n$: one direction follows termwise, and the other by dominated conver
 :::
 
 <1>4. Show that $d$ metrizes the weak topology.
-::: proof
+::: {.proof}
 Each function
 \[
 x\longmapsto d(x,x_0)
@@ -141,7 +141,7 @@ Then $x_j\to x$ in $d$, hence by Step 3 $x_j\rightharpoonup x$. Since $U$ is wea
 :::
 
 <1>5. A normed space with metrizable weak topology is finite dimensional.
-::: proof
+::: {.proof}
 Since the weak topology is metrizable, it has a countable neighborhood base $(U_m)$ at $0$. For each $m$, choose a basic weak neighborhood
 \[
 V_m

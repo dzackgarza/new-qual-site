@@ -25,7 +25,7 @@ audit:
   note: Verified the four-cap CW structure and the cellular boundary map of rank one, giving H_2 = Z^3, H_1 = 0, and H_0 = Z.
 ---
 
-::: problem
+::: {.problem}
 Let $X = S_1 \cup S_2 \subset \RR^3$ be the union of two spheres of radius 2, one about $(1, 0, 0)$ and the other about $(-1, 0, 0)$, i.e.
 \[
 \begin{aligned}

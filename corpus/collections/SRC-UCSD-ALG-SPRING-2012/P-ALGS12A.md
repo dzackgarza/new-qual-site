@@ -25,7 +25,7 @@ audit:
   note: Enumerated all homomorphisms from the two groups of order four into Aut(C_503), and used the action kernel for the center argument.
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $2012$, which has prime factorization $2^2 \cdot 503$.
 
 (a) Classify all such groups $G$ in terms of semidirect products of known groups.

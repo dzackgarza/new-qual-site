@@ -9,14 +9,13 @@ topics:
 
 # Classes of morphism
 
-The definitions on this page are short, and the useful content is the ordering between them and the example separating each adjacent pair.
-State the chain and the counterexamples together.
+The classes are related by a chain of implications, and the counterexamples to the converses show which distinctions are strict.
 
 ## Immersions
 
 [[D-MORIMM]]
 
-Immersions are where the scheme structure first does work that the topology cannot: a homeomorphism onto a closed subset need not be a closed immersion, because the scheme structure on the subset carries nilpotents that the topology cannot see.
+Immersions distinguish topological embedding data from the induced scheme structure: a homeomorphism onto a closed subset need not be a closed immersion.
 
 ## Affine, finite, and finite type
 
@@ -26,7 +25,7 @@ Immersions are where the scheme structure first does work that the topology cann
 
 [[D-MORFIN]]
 
-Finite against finite type is a one-line distinction that is asked directly: finitely generated as a module against as an algebra, with $\AA^1_k \to \Spec k$ separating them.
+Finite means finitely generated as a module, while finite type means finitely generated as an algebra; $\AA^1_k \to \Spec k$ separates the two notions.
 
 [[D-MORQF]]
 
@@ -38,12 +37,12 @@ Finite against finite type is a one-line distinction that is asked directly: fin
 
 [[D-MORPROJ]]
 
-The chain to carry is
+The implication chain is
 \[
 \text{closed immersion} \implies \text{finite} \implies \text{projective} \implies \text{proper} \implies \text{universally closed} ,
 \]
 together with the fact that finite type sits underneath all of it and is implied by each.
-Every arrow has a standard counterexample to its converse, and the two worth having on hand are $\PP^1_k \to \Spec k$, projective and not finite, and the hyperbola projection, quasi-finite and not proper.
+Standard converse counterexamples include $\PP^1_k \to \Spec k$, which is projective but not finite, and the hyperbola projection, which is quasi-finite but not proper.
 
 ## Base change
 
@@ -52,3 +51,11 @@ Every arrow has a standard counterexample to its converse, and the two worth hav
 [[PR-MORBC]]
 
 Stability under base change is what turns a property of a morphism into a property of its fibres, and it is why properness is defined with the word *universally* in it rather than by closedness alone.
+
+## Locality of properties of morphisms
+
+[[D-MORLOCAL]]
+
+## Cancellation
+
+[[PR-MORCANCEL]]

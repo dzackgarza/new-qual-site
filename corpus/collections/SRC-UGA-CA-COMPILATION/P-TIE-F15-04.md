@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-04
 kind: problem
-title: Questions from Tie — Fall 2015, question 4
+title: Limit of integrals over vertical segments when $f(x+iy)\to A$ uniformly
 classification:
   areas:
   - complex-analysis

@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/Spring96.pdf",
+  "source_pdf_sha256": "911e19ee5d0c7a670a024d1772d5a14fcad9dca1f3e987c3800a0d8e759c53ed",
+  "extracted_markdown": "assets/attachments/Spring96_extracted.md",
+  "extracted_markdown_sha256": "3d1db510570437f10f800d280d1e5a0eb1e5a70d0f3b0eda266dc40fbe9bd471",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring96.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring96.md",
+  "old_unknown_provenance_sha256": "3d1db510570437f10f800d280d1e5a0eb1e5a70d0f3b0eda266dc40fbe9bd471",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1996, containing Problems 1 through 18 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output reproduces the retained extraction exactly. Problem 11 still drops the arrows in the two limits; the existing source-checked card records the previously recovered arrows. Problem 15 is fully represented by the deterministic extraction. No alternate OCR, parser, PDF-render, or model-vision fallback was used in this intake.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1996 collection represents all 18 source positions in order with 18 source-local cards. The collection and the extraction-sensitive cards P-BERK96S-11 and P-BERK96S-15 are byte-identical to HEAD, so no collection or card path is modified by this intake.",
+  "raw_control_bytes": 0
+}

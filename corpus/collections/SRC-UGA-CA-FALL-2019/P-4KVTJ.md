@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\gamma$ be a positively oriented (counterclockwise) piecewise smooth simple closed curve in $\mathbb{C}$ with interior $\Omega_1$ and exterior $\Omega_2$.
 Assume $f$ is holomorphic on an open set containing $\gamma \cup \Omega_2$, with $\lim_{z \to \infty} f(z) = A$.
 
@@ -25,7 +25,7 @@ F(z) = \frac{1}{2\pi i} \int_{\gamma} \frac{f(\xi)}{\xi - z} \, d\xi = \begin{ca
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute $F(z)$ for $z \in \Omega_1$ and $z \in \Omega_2$ by applying Cauchy's theorem on the annular domain between $\gamma$ and a large circle $C_R = \{|\xi| = R\}$, and taking the limit as $R \to \infty$.
 
 <1>1. Asymptotic limit of the integral along a large circle $C_R$:

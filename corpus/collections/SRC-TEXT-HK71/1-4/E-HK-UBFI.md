@@ -34,7 +34,7 @@ Does this system have a solution?
 If so, describe explicitly all solutions.
 :::
 
-::: solution
+::: {.solution}
 The system is consistent and has the one-parameter family of solutions
 \[
 (x_1,x_2,x_3)
@@ -60,13 +60,13 @@ The system is consistent and has the one-parameter family of solutions
 \end{array}
 \right].
 \]
-::: proof
+::: {.proof}
 This is ordinary Gaussian elimination; in particular no row of the form
 $[0\ 0\ 0\mid c]$ with $c\ne0$ occurs, so the system is consistent.
 :::
 
 <1>2. The displayed family is exactly the solution set.
-::: proof
+::: {.proof}
 The reduced equations are
 \[
 x_1+x_3=\frac12,

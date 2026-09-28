@@ -23,14 +23,16 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Assume $f : [0,1] \to \mathbb{R}$ is uniformly continuous, increasing and convex.
 Prove $f$ is differentiable almost everywhere and
 
 $$f(1) - f(0) = \int_0^1 f'(x) \, dx.$$
+:::
 
-::: solution
+::: {.solution}
 <1>1. Prove differentiability almost everywhere.
-::: proof
+::: {.proof}
 Since $f$ is increasing on $[0,1]$, Lebesgue's theorem on monotone functions implies that $f$ is differentiable almost everywhere on $(0,1)$. Moreover,
 \[
 f'(x)\ge0
@@ -39,7 +41,7 @@ at every point where the derivative exists.
 :::
 
 <1>2. Use convexity to obtain absolute continuity on interior compact intervals.
-::: proof
+::: {.proof}
 Fix
 \[
 0<a<b<1.
@@ -65,7 +67,7 @@ f(b)-f(a)=\int_a^b f'(x)\,dx.
 :::
 
 <1>3. Let the interior interval expand to $[0,1]$.
-::: proof
+::: {.proof}
 Take
 \[
 a_n=1/n,

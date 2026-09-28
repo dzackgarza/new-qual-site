@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Determine if each statement is true or false.
 If false, provide a counterexample.
 If true, give a brief proof.
@@ -30,7 +30,7 @@ If true, give a brief proof.
 6. There is no complex structure on $\mathbb{R}^2$ such that the function $f: \mathbb{R}^2 \to \mathbb{C}$ defined by $f(x, y) = x - iy$ is analytic.
 :::
 
-::: solution
+::: {.solution}
 1. **True.** Put $h=f'-f$. Then $h$ is entire and vanishes at every $1/n$.
 Since these zeros accumulate at $0$, the identity theorem gives $h\equiv0$.
 Thus $f'=f$, so $(e^{-z}f(z))'=0$ and $f(z)=Ce^z$. From $f(0)=1$,

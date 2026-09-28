@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime and let $H$ be a subgroup of the symmetric group $S_p$ such that $|H| = p$.
 
 (a) Show that the centralizer of $H$ in $S_p$ is $H$; that is, $C_{S_p}(H) = H$.

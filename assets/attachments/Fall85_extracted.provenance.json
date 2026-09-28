@@ -1,0 +1,20 @@
+{
+  "source_pdf": "assets/attachments/Fall85.pdf",
+  "source_pdf_sha256": "e2f1e0517bd31346e13591b032c385e746829de5c26590ed71045961088318ac",
+  "extracted_markdown": "assets/attachments/Fall85_extracted.md",
+  "extracted_markdown_sha256": "b44bc3a484c70e0f606eecac08a8c8612b052fce67cc8735d5713b1b5821b6d8",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Fall85.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Fall85.md",
+  "card_comparison": "The twenty top-level source problems were reconciled from this deterministic baseline. Problem 4 exactly repeats canonical card P-BKF78-18; the other nineteen source positions have source-local cards.",
+  "known_extractor_defects": [
+    "Problem 3 appends stray OCR glyphs after the field name; both parts ask for monic irreducible polynomials over the field Z_5, represented as F_5 on the card.",
+    "Problem 7 drops the leading 0 in the domain '0 < t < infinity' and garbles 'as t tends to plus infinity'; the card restores both from the deterministic sentence structure.",
+    "Problem 9 drops the third coordinate z from the displayed column vector even though the same sentence places v in R^3 and states v^t=(x,y,z); the card restores v=(x,y,z)^t.",
+    "Problem 13 appends a stray glyph after |f'(1)|; the card records the stated extremal-derivative question without that artifact.",
+    "Problem 16 inserts a stray square-root glyph before f(x); the card omits that non-semantic artifact.",
+    "Problem 19 garbles lambda_1 as alpha_1; the displayed second bilinear-form condition uses lambda_i, forcing the list lambda_1,...,lambda_n."
+  ]
+}

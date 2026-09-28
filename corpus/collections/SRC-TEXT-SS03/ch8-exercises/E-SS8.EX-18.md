@@ -19,11 +19,11 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 18. Suppose that $\Omega$ is a simply connected domain that is bounded by a piecewisesmooth closed curve $\gamma$ (in the terminology of Chapter 1). Then any conformal map $F$ of D to Ω extends to a continuous bijection of $\overline{\mathbb D}$ to $\overline{\Omega}$. The proof is simply a generalization of the argument used in Theorem 4.2.
 :::
 
-::: solution
+::: {.solution}
 The proof of Theorem 4.2 for polygonal regions uses only two geometric facts about the target boundary: the region is bounded, and for every boundary point $w_0$ there is $r_0>0$ such that for $0<r<r_0$ the intersection
 \[
 \Omega\cap \{w:|w-w_0|=r\}

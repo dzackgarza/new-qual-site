@@ -29,7 +29,7 @@ Assuming the dimension of a $\QQ$-vector space is well defined, use [[E-SMI-8000
 :::
 
 
-::: solution
+::: {.solution}
 Suppose
 $$
 \phi:\mathbb Z^s\xrightarrow{\sim}\mathbb Z^t
@@ -37,7 +37,7 @@ $$
 is an isomorphism of abelian groups.
 
 <1>1. Precomposition with $\phi$ gives an isomorphism of $\mathbb Q$-vector spaces on Hom groups.
-::: proof
+::: {.proof}
 Define
 $$
 \phi^*:\operatorname{Hom}(\mathbb Z^t,\mathbb Q)
@@ -61,7 +61,7 @@ as $\mathbb Q$-vector spaces.
 :::
 
 <1>2. Exercise 4 identifies these Hom spaces with $\mathbb Q^t$ and $\mathbb Q^s$.
-::: proof
+::: {.proof}
 By [[E-SMI-8000E-GA4]],
 $$
 \operatorname{Hom}(\mathbb Z^r,\mathbb Q)\cong\mathbb Q^r
@@ -74,7 +74,7 @@ as vector spaces over $\mathbb Q$.
 :::
 
 <1>3. Compare dimensions.
-::: proof
+::: {.proof}
 Dimension is invariant under vector-space isomorphism, so
 $$
 t=\dim_{\mathbb Q}\mathbb Q^t

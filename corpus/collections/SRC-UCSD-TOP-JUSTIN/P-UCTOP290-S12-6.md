@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $X$ is a space with a cover by contractible open sets $U_1, \ldots, U_n$.
 Show that the cup product of any $n$ elements of $H^{>0}(X)$ is zero, and hence that projective $n$-spaces cannot be covered by fewer than $n + 1$ contractible open sets.
 :::

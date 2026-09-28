@@ -22,7 +22,8 @@ source:
     - P-ALGPAN11-03
     - P-ALGPAN11-04
     - P-ALGPAN11-05
-    - P-ALGPAN11-06
+    - id: P-ALGPAN11-06
+      comment: Test 3, problem 6
   - name: From test 2
     problems:
     - P-ALGPAN11-07
@@ -35,11 +36,12 @@ source:
     problems:
     - P-ALGPAN11-13
     - P-ALGPAN11-14
+    - id: P-ALGPAN11-19
+      comment: Test 1, problem 33
     - P-ALGPAN11-15
     - P-ALGPAN11-16
     - P-ALGPAN11-17
     - P-ALGPAN11-18
-    - P-ALGPAN11-19
   date:
     kind: year
     year: 2011

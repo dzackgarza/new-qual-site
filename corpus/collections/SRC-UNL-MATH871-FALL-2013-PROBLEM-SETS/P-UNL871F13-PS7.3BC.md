@@ -14,5 +14,6 @@ review: draft
 For each of the following topologies on the underlying set $\mathbb R$, determine whether the resulting space is connected or path-connected, and determine its connected components and path components.
 
 1. The excluded-point topology (with excluded point $0$).
+
 2. The included-point topology (with included point $0$).
 :::

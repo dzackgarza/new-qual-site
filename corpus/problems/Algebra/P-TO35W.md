@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give an example of an Artinian ring.
 :::
 
-::: solution
+::: {.solution}
 For any integer $n\ge2$, the ring
 \[
 \ZZ/n\ZZ

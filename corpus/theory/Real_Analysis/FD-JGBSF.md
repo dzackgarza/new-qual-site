@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-JGBSF
 kind: definition
-title: First and Second Category
+title: First and second category
 prompts:
 - What does it mean for a subset to be of first category, and of second category?
 classification:
@@ -16,7 +16,9 @@ review: draft
 ---
 
 ::: {.definition}
-- A subset is *first category* iff it is countable union of nowhere dense sets.
+Let $X$ be a topological space and let $A\subseteq X$.
 
-- A subset is *second category* otherwise.
+- $A$ is \dfn{of first category} in $X$ if it is a countable union of [[D-2MJRE|nowhere dense]] subsets of $X$.
+
+- $A$ is \dfn{of second category} in $X$ if it is not of first category in $X$.
 :::

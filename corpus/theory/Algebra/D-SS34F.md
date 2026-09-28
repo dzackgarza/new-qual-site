@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-SS34F
 kind: definition
-title: Invariant Factor Decomposition
+title: Invariant factor decomposition
 classification:
   areas:
   - algebra
@@ -14,12 +14,17 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-If $G$ is a finitely generated abelian group, then there is a decomposition
+::: {.definition}
+Let $G$ be a finitely generated abelian group, and for $n\geq 1$ let $C_n$ denote the cyclic group of order $n$.
+An \dfn{invariant factor decomposition} of $G$ is an isomorphism
 $$
 G \cong \ZZ^r \times \prod_{k=1}^m C_{n_k}
-\quad \text{ where } n_1 \divides \cdots \divides n_m
-,$$
-into a free group and a finite number of cyclic groups,
-where $r\in \ZZ^{\geq 0}$ is unique and the $n_i$ are uniquely determined.
+$$
+with $r,m\geq 0$ and integers $n_1,\ldots,n_m\geq 2$ such that $n_1 \divides n_2\divides \cdots \divides n_m$.
+The integers $n_1,\ldots,n_m$ are the \dfn{invariant factors} of $G$.
+:::
+
+::: {.theorem}
+Every finitely generated abelian group $G$ has an invariant factor decomposition, the direct product of the free abelian group $\ZZ^r$ and finitely many finite cyclic groups.
+The integers $r$ and $m$ and the invariant factors $n_1,\ldots,n_m$ are uniquely determined by $G$.
 :::

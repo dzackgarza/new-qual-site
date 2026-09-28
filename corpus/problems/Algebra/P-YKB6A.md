@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $F\subset E\subset K$, with $K/F$ Galois, and both $E/F$ and $K/E$ have abelian Galois groups. Must $\operatorname{Gal}(K/F)$ be abelian? Give counterexamples for number fields and function fields.
 :::
 
-::: solution
+::: {.solution}
 No.
 
 <1>1. Number-field counterexample.

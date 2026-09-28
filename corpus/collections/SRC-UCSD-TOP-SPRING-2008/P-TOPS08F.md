@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Calculate the integral homology of any compact, oriented, boundaryless manifold $N^n$, which admits a continuous map $f : S^n \to N^n$ with $f_*([S^n]) = [N]$.
 :::
 

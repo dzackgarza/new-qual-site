@@ -15,7 +15,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Prove that there is no sequence of polynomials that uniformly converge to $f(z) = {1\over z}$ on $S^1$.
+:::
 
 ::: {.concept}
 \envlist

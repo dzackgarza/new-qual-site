@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that $[X, Y]$ is finite if $X$ is a finite connected CW complex and $\pi_i(Y)$ is finite for $i \leq \dim X$.
+:::
 
 ::: {.solution}
 Let \(d=\dim X\). Replace \(Y\) by its \(d\)-th Postnikov stage \(Y^d\). The map

@@ -18,11 +18,11 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a closed, compact, simply-connected $3$-manifold $M^3$ is homotopy equivalent to $S^3$.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Every closed, compact, simply-connected $3$-manifold is homotopy equivalent to $S^3$.
 

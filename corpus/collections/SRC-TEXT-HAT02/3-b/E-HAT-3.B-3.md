@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the splitting in the topological Künneth formula cannot be natural by considering the map $f \times \mathbb{1}: M(\mathbb{Z}_m, n) \times M(\mathbb{Z}_m, n) \to S^{n+1} \times M(\mathbb{Z}_m, n)$ where $f$ collapses the $n$-skeleton of $M(\mathbb{Z}_m, n) = S^n \cup e^{n+1}$ to a point.
+:::
 
 ::: {.solution}
 Let

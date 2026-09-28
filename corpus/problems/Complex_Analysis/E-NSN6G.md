@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Prove that if $f_n\to f$ locally uniformly with $f_n$ holomorphic, then $f_n'\to f'$ locally uniformly and $f'$ is holomorphic.
 
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Simplifying step: for some reason, it suffices to assume $f_n\to f$ uniformly on all of $\Omega$?

@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{M}$ be an infinite $\sigma$-algebra of subsets of a set $X$.
 For $A \subset X$, $A \neq \emptyset, X$, consider the collection $\mathcal{M}_A := \{B \cap A : B \in \mathcal{M}\}$.
 
@@ -37,9 +37,9 @@ For $A \subset X$, $A \neq \emptyset, X$, consider the collection $\mathcal{M}_A
 (4) Prove that $\mathcal{M}$ is uncountable.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The trace on $A$ is a $\sigma$-algebra.
-::: proof
+::: {.proof}
 We have $A=X\cap A\in\mathcal M_A$. If $C=B\cap A\in\mathcal M_A$, then its complement relative to $A$ is
 \[
 A\setminus C=A\cap B^c\in\mathcal M_A.
@@ -54,7 +54,7 @@ Thus $\mathcal M_A$ is a $\sigma$-algebra on $A$.
 :::
 
 <1>2. At least one trace $\sigma$-algebra is infinite.
-::: proof
+::: {.proof}
 Consider
 \[
 \Phi:\mathcal M\to\mathcal M_A\times\mathcal M_{A^c},
@@ -69,7 +69,7 @@ If both $\mathcal M_A$ and $\mathcal M_{A^c}$ were finite, their product would b
 :::
 
 <1>3. Construct infinitely many pairwise disjoint measurable sets.
-::: proof
+::: {.proof}
 Set $R_0=X$. Since $\mathcal M_{R_0}=\mathcal M$ is infinite, choose a measurable subset
 \[
 \varnothing\ne A_1\subsetneq R_0.
@@ -95,7 +95,7 @@ Since $R_{n-1}$ is contained in all earlier retained sets, the sets $D_1,D_2,\do
 :::
 
 <1>4. Use arbitrary subunions to prove uncountability.
-::: proof
+::: {.proof}
 For every subset $I\subseteq\mathbb N$, define
 \[
 E_I:=\bigcup_{n\in I}D_n.

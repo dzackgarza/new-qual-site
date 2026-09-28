@@ -41,13 +41,13 @@ d. $x^{11}-x$ over $\mathbf{F}_{11}$.
 e. $x^{13}-x-1$ over $\mathbf{F}_{13}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Over $\mathbf C$, with $\zeta=e^{2\pi i/5}$, the factorization is
 $$
 x^5-1=\prod_{j=0}^{4}(x-\zeta^j).
 $$
 
-::: proof
+::: {.proof}
 The five numbers $\zeta^j$ are distinct and each has fifth power $1$.
 Thus the product of their linear factors divides $x^5-1$; both polynomials
 are monic of degree $5$, so they are equal. A polynomial of degree $1$
@@ -60,7 +60,7 @@ $$
 x^6-1=(x-1)(x+1)(x^2+x+1)(x^2-x+1).
 $$
 
-::: proof
+::: {.proof}
 Factor $x^6-1=(x^3-1)(x^3+1)$ and use the sum and difference of cubes.
 The linear factors are irreducible. The two quadratic factors have
 discriminant $-3$, so neither has a rational root. A reducible quadratic
@@ -71,7 +71,7 @@ irreducibility.
 <1>3. The polynomial $x^7+3x^5-6x^3+9x-15$ is itself irreducible over
 $\mathbf Q$, so there are no further factors.
 
-::: proof
+::: {.proof}
 Its leading coefficient is $1$, all other coefficients are divisible by
 $3$, and its constant coefficient is not divisible by $9$. Here is the
 Eisenstein argument in this case. By Gauss's lemma, a proper factorization
@@ -86,7 +86,7 @@ $$
 x^{11}-x=\prod_{a\in\mathbf F_{11}}(x-a).
 $$
 
-::: proof
+::: {.proof}
 Every nonzero $a$ belongs to the multiplicative group of order $10$, so
 $a^{10}=1$ and $a^{11}=a$. The identity also holds at $a=0$. Thus the
 eleven distinct field elements give eleven distinct linear factors of
@@ -96,7 +96,7 @@ each factor is irreducible.
 
 <1>5. The polynomial $x^{13}-x-1$ is irreducible over $\mathbf F_{13}$.
 
-::: proof
+::: {.proof}
 Choose a root $\alpha$ in an algebraic closure, and let
 $d=[\mathbf F_{13}(\alpha):\mathbf F_{13}]$. Its minimal polynomial divides
 the given polynomial, so $1\leq d\leq13$. The root equation gives

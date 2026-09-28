@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate the five antiderivatives
 \[
 \int\frac{\sqrt{1+\ln x}}{x\ln x}\,dx,
@@ -40,7 +40,7 @@ Evaluate the five antiderivatives
 on intervals where the displayed expressions are real and defined.
 :::
 
-::: solution
+::: {.solution}
 For the first, put $u=\sqrt{1+\ln x}$. Then $\ln x=u^2-1$ and $dx/x=2u\,du$, so
 \[
 \frac{\sqrt{1+\ln x}}{x\ln x}\,dx

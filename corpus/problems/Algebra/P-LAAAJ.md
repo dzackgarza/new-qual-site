@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If $R$ is a UFD, is $R[x]$ again a UFD?
 :::
 

@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that for $H\leq G$, $C_H(x) = H \intersect C_G(x)$.
 :::
 
-::: solution
+::: {.solution}
 By definition,
 \[
 C_H(x)=\{h\in H:hx=xh\}

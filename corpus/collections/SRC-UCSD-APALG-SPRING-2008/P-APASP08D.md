@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Give the expansion of the Garnir polynomial $G_T(x)$ corresponding to the tableau
 $$
 T = \begin{array}{ccc}
@@ -30,7 +30,7 @@ $$
 in terms of the Garnir polynomials of the standard tableaux of the same shape.
 :::
 
-::: solution
+::: {.solution}
 For a tableau $T$, the Garnir (Specht) polynomial is alternating in the entries of each column. In particular, interchanging two entries in one column changes the sign of the polynomial.
 
 Starting from

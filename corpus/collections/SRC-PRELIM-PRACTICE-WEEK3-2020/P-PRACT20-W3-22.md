@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-22
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 22"
+title: Integrating $e^{y^2}$ over a triangle by reversing the order of integration
 classification:
   areas:
   - real-analysis

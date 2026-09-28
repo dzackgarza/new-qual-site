@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be an integral domain.
 Prove that $R$ is a PID if and only if every submodule of a finitely generated free $R$-module is again free.
 :::

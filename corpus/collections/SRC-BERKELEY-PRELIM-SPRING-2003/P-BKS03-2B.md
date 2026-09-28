@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose entire functions $f,g$ satisfy constant-coefficient linear differential equations of orders $n$ and $m$, respectively.
 Show that $F=fg$ satisfies a nontrivial constant-coefficient linear differential equation of order at most $mn$.
 :::

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose that on $\mathbb{R}^n$, $|\phi(x)| \leq C(1 + |x|)^{-n-\epsilon}$ for some positive $C$ and $\epsilon > 0$.
 Also assume that $\phi(x)$ is measurable.
 If $f \in L^p(\mathbb{R}^n)$ with $1 \leq p \leq \infty$, define
@@ -38,9 +38,9 @@ H(f)(x) := \sup_{r > 0} \frac{1}{m(B(x,r))} \int_{B(x,r)} |f(y)|\,dy.
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Decompose the convolution into dyadic annuli.
-::: proof
+::: {.proof}
 Fix $x\in\mathbb R^n$ and $t>0$. From the assumed decay,
 \[
 |\phi_t(y)|
@@ -60,7 +60,7 @@ A_k:=\{2^{k-1}t\le |y|<2^kt\},\quad k\ge1.
 :::
 
 <1>2. Estimate the inner ball.
-::: proof
+::: {.proof}
 On $A_0$,
 \[
 |\phi_t(y)|\le Ct^{-n}.
@@ -77,7 +77,7 @@ Hence, writing $v_n=m(B(0,1))$,
 :::
 
 <1>3. Estimate each outer annulus.
-::: proof
+::: {.proof}
 If $y\in A_k$ with $k\ge1$, then
 \[
 1+\frac{|y|}{t}\ge 2^{k-1},
@@ -101,7 +101,7 @@ v_n(2^kt)^n H(f)(x)\\
 :::
 
 <1>4. Sum the geometric series and take the supremum in $t$.
-::: proof
+::: {.proof}
 Combining the preceding estimates gives
 \[
 |f*\phi_t(x)|

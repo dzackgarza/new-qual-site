@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let's look at $\SL_2(\FF_3)$.
 How many elements are in that group?
 What is its centre?

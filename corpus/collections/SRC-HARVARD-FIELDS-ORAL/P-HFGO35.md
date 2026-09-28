@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Construct a field of order $27$ from $\mathbb F_3$ and an irreducible polynomial.
 What degree must the polynomial have?
 :::
 
-::: solution
+::: {.solution}
 The polynomial must have degree $3$.
 
 <1>1. If $f(T)\in\mathbb F_3[T]$ is irreducible of degree $d$, then
@@ -34,14 +34,14 @@ The polynomial must have degree $3$.
 \mathbb F_3[T]/(f)
 \]
 has $3^d$ elements.
-::: proof
+::: {.proof}
 Every residue class has a unique representative of degree less than $d$, so it
 is determined by $d$ coefficients in $\mathbb F_3$. Hence there are $3^d$
 classes. Irreducibility of $f$ makes the quotient a field.
 :::
 
 <1>2. To obtain $27=3^3$ elements, one must take $d=3$.
-::: proof
+::: {.proof}
 By <1>1 the field has $3^d$ elements, and $3^d=27$ if and only if $d=3$.
 :::
 
@@ -50,7 +50,7 @@ By <1>1 the field has $3^d$ elements, and $3^d=27$ if and only if $d=3$.
 f(T)=T^3-T-1
 \]
 is irreducible over $\mathbb F_3$.
-::: proof
+::: {.proof}
 It has no root in $\mathbb F_3$:
 \[
 f(0)=2,
@@ -68,7 +68,7 @@ root. Therefore $f$ is irreducible.
 \mathbb F_3[T]/(T^3-T-1)
 \]
 is a field of order $27$.
-::: proof
+::: {.proof}
 This follows from <1>1--<1>3.
 :::
 :::

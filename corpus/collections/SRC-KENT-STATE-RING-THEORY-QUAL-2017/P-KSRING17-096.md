@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-096
 kind: problem
-title: Kent State ring-theory qualifying problem 96
+title: Automorphisms of a domain extend uniquely to its fraction field
 classification:
   areas: [algebra]
   topics: []

@@ -27,7 +27,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if each of the following statements is true or false.
 If true, give a brief proof.
 If false, give a counterexample or prove your assertion.
@@ -48,9 +48,9 @@ Let $f, g \in \mathcal{S}$.
 If $f * g = 0$ in $\mathbb{R}^n$ then either $f = 0$ identically in $\mathbb{R}^n$ or $g = 0$ identically in $\mathbb{R}^n$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Statement (1) is false.
-::: proof
+::: {.proof}
 Take $X=\ell^2$ and let
 \[
 A:=\{e_n:n\ge1\},
@@ -70,7 +70,7 @@ so $e_n\rightharpoonup0$ weakly. But $0\notin A$. Hence a norm-closed subset of 
 :::
 
 <1>2. Statement (2) is true.
-::: proof
+::: {.proof}
 Because $X$ is Hausdorff, every compact subset $K_j$ is closed. The nested family $(K_j)$ has the finite-intersection property: for every $N$,
 \[
 \bigcap_{j=1}^N K_j=K_N\ne\varnothing.
@@ -82,7 +82,7 @@ Since $X$ is compact, every family of closed subsets with the finite-intersectio
 :::
 
 <1>3. Statement (3) is false.
-::: proof
+::: {.proof}
 Take $X=\mathbb R$ and
 \[
 \mu_n=\delta_{1/n},
@@ -108,7 +108,7 @@ Thus vague convergence does not imply convergence on every Borel set.
 :::
 
 <1>4. Statement (4) is false.
-::: proof
+::: {.proof}
 Choose nonzero functions
 \[
 \phi,\psi\in C_c^\infty(\mathbb R^n)

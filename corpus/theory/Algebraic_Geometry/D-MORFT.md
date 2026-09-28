@@ -21,17 +21,17 @@ prompts:
 ---
 
 ::: {.definition title="Finite type"}
-$f : X \to Y$ is **locally of finite type** if $Y$ has an affine cover by $\Spec B_i$ such that $f^{-1}(\Spec B_i)$ has an affine cover by $\Spec A_{ij}$ with each $A_{ij}$ a finitely generated $B_i$-algebra.
+$f : X \to Y$ is \dfn{locally of finite type} if $Y$ has an affine cover by $\Spec B_i$ such that $f^{-1}(\Spec B_i)$ has an affine cover by $\Spec A_{ij}$ with each $A_{ij}$ a finitely generated $B_i$-algebra.
 It is **of finite type** if in addition each $f^{-1}(\Spec B_i)$ is covered by finitely many of the $\Spec A_{ij}$, that is, locally of finite type and quasicompact.
 :::
 
 ::: {.definition title="Finite presentation"}
-$f$ is **locally of finite presentation** if each $B_i \to A_{ij}$ is of finite presentation: $B_i[x_1, \dots, x_n] \surjects A_{ij}$ with finitely generated kernel.
+$f$ is \dfn{locally of finite presentation} if each $B_i \to A_{ij}$ is of finite presentation: $B_i[x_1, \dots, x_n] \surjects A_{ij}$ with finitely generated kernel.
 It is **of finite presentation** if it is also quasicompact and quasi-separated.
 :::
 
 ::: {.remark}
 Finite type is a hypothesis in the definition of properness and in the valuative criterion for properness.
 Finite presentation is finite type plus a condition on relations, and over a Noetherian base the two coincide, because every ideal of $B[x_1, \dots, x_n]$ is finitely generated.
-Over a non-Noetherian base, finite type need not imply finite presentation. Smooth morphisms are required to be locally of finite presentation.
+Thus finite presentation differs from finite type only over non-Noetherian bases, and it is the finiteness condition used in the definition of smooth morphisms and in limit arguments.
 :::

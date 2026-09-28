@@ -22,13 +22,13 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 (1) Define **solvability by radicals** for a polynomial $f(x) \in F[x]$ and state the Abel–Ruffini / Galois criterion.
 (2) Prove that the alternating group $A_5$ is a **simple group**.
 (3) Explain why the symmetric group $S_5$ is **not solvable**, and why there is no general radical formula for quintic polynomials.
 :::
 
-::: solution
+::: {.solution}
 A polynomial $f\in F[x]$ is **solvable by radicals** if its splitting field is contained in a tower
 \[
 F=K_0\subset K_1\subset\cdots\subset K_r

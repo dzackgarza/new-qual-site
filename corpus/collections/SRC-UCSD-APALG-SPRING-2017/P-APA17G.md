@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Consider the following five polynomials $f_1, \dots, f_5$ in the polynomial ring $\mathbb{Q}[x_1, x_2, x_3, x_4]$ (which are written with respect to the lexicographic term order $<$):
 \[
 f_1 = x_1^2,\quad

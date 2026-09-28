@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Compute the Pontryagin product structure in $H_*(L; \mathbb{Z}_p)$ where $L$ is an infinite-dimensional lens space $S^\infty / \mathbb{Z}_p$, for $p$ an odd prime, using the coproduct in $H^*(L; \mathbb{Z}_p)$.
+:::
 
 ::: {.solution}
 For the infinite lens space

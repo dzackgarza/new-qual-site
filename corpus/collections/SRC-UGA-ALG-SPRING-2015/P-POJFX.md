@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $F$ be a field and $n$ a positive integer, and consider
 \[
 A=\left[\begin{array}{ccc}
@@ -30,7 +30,7 @@ Show that $A$ has a Jordan normal form over $F$ and find it.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note that if $\vector x = \tv{x_1,\cdots, x_n}$ then $A\vector x = \tv{\sum x_i, \sum x_i, \cdots, \sum x_i}$, so $A$ acts by summing the entries in $\vector x$ and setting every coordinate to that sum.
 From this description we read off the eigenvalues and eigenvectors directly:
 

@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that for a locally compact $\Delta$-complex $X$ the simplicial and singular cohomology groups $H_c^i(X; G)$ are isomorphic.
+:::
 
 ::: {.solution}
 Let $X$ be a locally compact $\Delta$-complex. A compactly supported simplicial cochain is nonzero on only finitely many simplices, since local compactness implies that each compact set meets only finitely many simplices. Hence

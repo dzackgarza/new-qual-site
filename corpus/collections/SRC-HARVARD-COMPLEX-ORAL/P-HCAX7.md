@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define a complex torus and determine its group of holomorphic automorphisms.
 :::
 
-::: solution
+::: {.solution}
 A complex torus is a quotient
 \[
 T=\mathbb C/\Lambda,

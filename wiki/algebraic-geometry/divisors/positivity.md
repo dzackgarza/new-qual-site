@@ -9,15 +9,14 @@ topics:
 
 # Positivity
 
-Ampleness is the property that makes a variety projective and makes cohomology vanish; deciding a case is the typical question on this page.
+Ampleness links projective embeddings, eventual global generation, and vanishing of higher cohomology.
 
 [[D-DIVAMPLE]]
 
 [[T-DIVSERRE]]
 
-The two definitions of ample are worth keeping separate when answering.
-The geometric one says some power embeds; the cohomological one says twisting enough by it kills higher cohomology of any coherent sheaf.
-They agree on a proper scheme, and the second is the one every proof actually uses.
+The geometric criterion says that a positive tensor power gives an embedding; the cohomological criterion says that sufficiently high twists kill higher cohomology of any coherent sheaf.
+They agree on a proper scheme.
 
 [[PR-DIVAMPCURVE]]
 
@@ -27,3 +26,11 @@ They agree on a proper scheme, and the second is the one every proof actually us
 
 Ampleness and nefness do not see linear equivalence at all, only intersection numbers, so they live on the Néron--Severi group.
 That is the reason to introduce numerical equivalence: it replaces $\Pic(X)$, which can be a positive-dimensional variety, by a finitely generated lattice carrying an intersection form, and positivity becomes a question about cones in that lattice.
+
+## Polarizations
+
+[[D-DIVPOLAR]]
+
+## Hyperplane sections
+
+[[FE-DIVHYPSYS]]

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 How would you work out the orders of the irreducible representations of the dihedral group $D_n$?
 
 Why is the sum of squares of dimensions equal to the order of the group?

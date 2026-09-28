@@ -24,7 +24,7 @@ b. Use a parametrization of the path $\gamma$ to express the line integral expli
 [You do not have to evaluate these real integrals.]
 :::
 
-::: solution
+::: {.solution}
 Cauchy's integral formula states that if $f$ is holomorphic on and inside a positively oriented simple closed contour $\gamma$, and $a$ lies inside $\gamma$, then
 \[
 \oint_\gamma \frac{f(z)}{z-a}\,dz=2\pi i\,f(a).

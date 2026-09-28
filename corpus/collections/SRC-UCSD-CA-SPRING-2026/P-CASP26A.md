@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be an entire function (i.e., analytic in the entire complex plane $\mathbb{C}$). Show that the series
 $$
 g(z) := \sum_{n=0}^\infty \frac{1}{n!} f^{(n)}(z)

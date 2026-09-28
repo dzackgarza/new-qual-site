@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 180 degree rotations.
 Compute the homology $H_*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. Under the three half-turn face pairings, the eight cube vertices fall into four equivalence classes, the twelve edges into six classes, and the six faces into three classes. Thus the quotient has cellular chain groups

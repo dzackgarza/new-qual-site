@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $P(T)$ be the Young idempotent corresponding to the row group of the tableau
 $$
 T = \begin{array}{ccc}
@@ -32,7 +32,7 @@ Give the expansion of $\chi$ in terms of the character basis $\{\chi^\lambda\}_{
 Hint: Use the Frobenius map.
 :::
 
-::: solution
+::: {.solution}
 The row lengths of $T$ are $(3,3,1)$, so its row group is
 \[
 R_T\cong S_3\times S_3\times S_1.

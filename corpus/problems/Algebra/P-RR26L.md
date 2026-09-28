@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Suppose $A^* = A$.
 It is then a fact that $A$ is self-adjoint, and so for every $\vector{v}\in V$ we have 
 $$

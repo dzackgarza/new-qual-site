@@ -38,7 +38,7 @@ Hence for some \(k\in\mathbb Z\),
 \[
 \beta^{m-n}=\alpha^k.
 \]
-In the free group \(F(\alpha,\beta)\), a nonzero power of \(eta\) is a reduced word involving only the letter \(eta^{\pm1}\), while a nonzero power of \(\alpha\) involves only \(\alpha^{\pm1}\). By uniqueness of reduced words, equality is possible only when
+In the free group \(F(\alpha,\beta)\), a nonzero power of \(\beta\) is a reduced word involving only the letter \(\beta^{\pm1}\), while a nonzero power of \(\alpha\) involves only \(\alpha^{\pm1}\). By uniqueness of reduced words, equality is possible only when
 \[
 m-n=0\quad\text{and}\quad k=0.
 \]

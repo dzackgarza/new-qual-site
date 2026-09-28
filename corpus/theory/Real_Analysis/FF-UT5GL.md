@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-UT5GL
 kind: fact
-title: The Riesz representation theorem for Hilbert spaces
+title: Riesz representation theorem for Hilbert spaces
+slogan: 'Every continuous linear functional on a Hilbert space is inner product with a unique vector of the same norm.'
 prompts:
 - What is the Riesz Representation theorem?
 classification:
@@ -17,5 +18,6 @@ review: draft
 ---
 
 ::: {.fact}
-For $H$ a Hilbert space and $\varphi \in H {}^{ \vee }$, there exists an $f\in H$ such that $x\in H \implies \varphi(x) = {\left\langle {f},~{x} \right\rangle}$ with ${\left\lVert {f} \right\rVert}_H = {\left\lVert {\varphi} \right\rVert}_{H {}^{ \vee }}$.
+Let $H$ be a [[D-7QQUO|Hilbert space]] over $\CC$ with inner product $\inner{\cdot}{\cdot}$ linear in the first argument, and let $\varphi \in H\dual$ be an element of its [[D-PQIQO|dual]].
+Then there exists a unique $f\in H$ such that $\varphi(x) = \inner{x}{f}$ for all $x\in H$, and $\norm{f}_H = \norm{\varphi}_{H\dual}$, the [[D-T4LOC|dual norm]] of $\varphi$.
 :::

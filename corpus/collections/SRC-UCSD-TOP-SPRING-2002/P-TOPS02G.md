@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If all $n$-fold cup products vanish on $H^*(Y)$ and $f : X \to Y$ is a continuous map, prove all $n+1$ fold cup products vanish in $H^*(C_f)$ where $C_f$ is the mapping cone of $f$.
 :::
 

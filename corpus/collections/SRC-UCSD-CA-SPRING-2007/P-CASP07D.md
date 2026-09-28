@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n$ and $m$ be positive integers.
 Fix $w$ with $|w| \leq 1$ and consider the equation $$z^n + \frac{1}{z^m} = w.$$ How many roots (counting multiplicities) are there in $B(0, 2)$?
 :::
 
-::: solution
+::: {.solution}
 Multiplying the equation by $z^m$ gives
 \[
 P(z)=z^{n+m}-wz^m+1=0.

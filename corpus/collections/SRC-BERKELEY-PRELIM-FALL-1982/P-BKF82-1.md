@@ -23,7 +23,7 @@ audit:
   note: "Used the strictly monotone antiderivative of 1/f to construct and uniquely characterize local solutions, then identified global existence with divergence of the reciprocal-speed integrals at both infinities."
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be continuous and nowhere zero, and consider $y'=f(y)$.
 
 (a) For each $c\in\mathbb R$, show there is a unique $C^1$ solution near $0$ with $y(0)=c$.
@@ -31,12 +31,12 @@ Let $f:\mathbb R\to\mathbb R$ be continuous and nowhere zero, and consider $y'=f
 (b) Determine the conditions on $f$ under which the solution exists for all $x\in\mathbb R$ for every initial value $c$.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is continuous and nowhere zero on the connected set $\mathbb R$,
 it has constant sign.
 
 <1>1. Construct a local solution through an arbitrary initial value $c$.
-::: proof
+::: {.proof}
 Fix $c\in\mathbb R$ and define
 $$
 H_c(y)=\int_c^y\frac{ds}{f(s)}.
@@ -69,7 +69,7 @@ So a local $C^1$ solution exists.
 :::
 
 <1>2. The local solution is unique even though no Lipschitz hypothesis was assumed.
-::: proof
+::: {.proof}
 Let $z(x)$ be any $C^1$ solution with $z(0)=c$. Then
 $$
 \frac d{dx}H_c(z(x))
@@ -89,7 +89,7 @@ Hence the local solution through $c$ is unique.
 :::
 
 <1>3. Describe the maximal interval of existence.
-::: proof
+::: {.proof}
 The same formula shows that the maximal solution is the inverse of $H_c$ on
 the full interval
 $$
@@ -109,7 +109,7 @@ $$
 :::
 
 <1>4. Express the global-existence condition directly in terms of $f$.
-::: proof
+::: {.proof}
 Since $f$ has constant sign, the condition in step <1>3 is equivalent to
 requiring infinite reciprocal travel time in both directions:
 $$

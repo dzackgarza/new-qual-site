@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find $\Re\qty{z+2\over z-1}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 \[
 {z+2\over z-1}\cdot{\bar{z-1} \over \bar{z-1}}
 &= {(z+2)\bar{z-1} \over \abs{z-1}^2} \\

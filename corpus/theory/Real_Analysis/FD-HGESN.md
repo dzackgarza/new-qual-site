@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: {.definition}
-$X$ is $G_\delta$ iff $X$ is a countable intersection of open sets.
+Let $X$ be a topological space.
+A subset $A\subseteq X$ is a \dfn{$G_\delta$ set} if $A$ is a countable intersection of open subsets of $X$.
 :::

@@ -33,7 +33,7 @@ audit:
     Exercise 20.
 ---
 
-::: problem
+::: {.problem}
 Let $M$ and $N$ be finite CW complexes.
 
 a. Describe a cellular structure of $M \times N$ in terms of the cellular structures of $M$ and $N$.

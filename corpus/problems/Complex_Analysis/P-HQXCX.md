@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Characterize positive integers $n$ such that $(1+i)^{n}=(1-i)^{n}$
 :::
 
-::: solution
+::: {.solution}
 Since $1-i\ne0$, the desired equality is equivalent to
 \[
 \left(\frac{1+i}{1-i}\right)^n=1.

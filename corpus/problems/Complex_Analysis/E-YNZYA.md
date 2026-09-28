@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Use the rational function formula to compute the residues at $z=\pm i$ of
 \[
 f(z) \da {1\over z^2 + 1}
@@ -21,7 +21,7 @@ f(z) \da {1\over z^2 + 1}
 
 :::
 
-:::{.solution}
+::: {.solution}
 Applying the rational function formula:
 \[
 \Res_{z=z_0}{1\over 1+z^2} &= {1\over 2z}\evalfrom_{z= z_0} \implies\\

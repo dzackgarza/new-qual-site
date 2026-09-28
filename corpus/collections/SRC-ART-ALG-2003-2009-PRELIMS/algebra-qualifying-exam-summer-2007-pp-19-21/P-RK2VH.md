@@ -27,7 +27,7 @@ audit:
   note: "Checked the complete Sylow-count possibilities, disjoint element count, normal inverse image, and conjugation argument for both Sylow subgroups."
 ---
 
-::: problem
+::: {.problem}
 a. State the Sylow theorems.
 
 b. Show that in a group of order 105, either the 5-Sylow or the 7-Sylow subgroup is normal.
@@ -37,7 +37,7 @@ c. Show that a group of order 105 has a normal subgroup of order 35.
 d. Show that in a group of order 105, both the 5-Sylow and the 7-Sylow subgroups are normal.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The Sylow theorems have the following form.
 
 For a finite group $H$ of order $p^a m$, with $p$ prime and $p\nmid m$,
@@ -53,7 +53,7 @@ For the remaining parts, let $|G|=105=3\cdot5\cdot7$.
 
 <1>2. At least one of the Sylow $5$- and $7$-subgroups is normal.
 
-::: proof
+::: {.proof}
 The divisibility and congruence conditions in step <1>1 give
 $$
 n_5\in\{1,21\},\qquad n_7\in\{1,15\}.
@@ -76,7 +76,7 @@ This is impossible. Hence $n_5=1$ or $n_7=1$.
 
 <1>3. There is a normal subgroup $N\lhd G$ of order $35$.
 
-::: proof
+::: {.proof}
 Choose a normal Sylow subgroup $P$ supplied by step <1>2, and write
 $|P|=p$ and $\{p,q\}=\{5,7\}$. Then $|G/P|=3q$. The number of
 Sylow $q$-subgroups of $G/P$ divides $3$ and is $1$ modulo $q$.
@@ -93,7 +93,7 @@ its fibers are the cosets of $P$. Hence $|N|=pq=35$.
 
 <1>4. Both Sylow subgroups are normal in $G$.
 
-::: proof
+::: {.proof}
 Inside $N$, the number of Sylow $5$-subgroups divides $7$ and is
 $1$ modulo $5$, so it is $1$. The number of Sylow $7$-subgroups
 divides $5$ and is $1$ modulo $7$, so it too is $1$.

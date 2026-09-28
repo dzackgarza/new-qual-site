@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $A, B$ be two $n\times n$ matrices with the property that $AB = BA$.
 Suppose that $A$ and $B$ are diagonalizable.
 Prove that $A$ and $B$ are *simultaneously* diagonalizable.

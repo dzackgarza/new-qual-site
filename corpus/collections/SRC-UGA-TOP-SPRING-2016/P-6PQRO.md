@@ -28,7 +28,7 @@ audit:
   note: Verified the two-pole open cover, the explicit contractions, the van Kampen argument, and the exact Mayer–Vietoris segment giving the degree shift for every n>=1.
 ---
 
-::: problem
+::: {.problem}
 Recall that the **suspension** of a topological space, denoted $SX$, is the quotient space formed from $X \times [-1, 1]$ by identifying $(x, 1)$ with $(y, 1)$ for all $x, y \in X$, and also identifying $(x, -1)$ with $(y, -1)$ for all $x, y \in X$.
 
 a. Show that $SX$ is the union of two contractible subspaces.

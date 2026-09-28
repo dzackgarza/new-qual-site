@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $v_1$, $v_2$, $v_3$ form a basis for a vector space $V$.
 Prove that $v_1+v_2$, $v_2-v_3$, $v_2+2v_3$ form a basis for $V$.
 :::
 
-::: solution
+::: {.solution}
 Write $w_1 = v_1+v_2$, $w_2 = v_2-v_3$, $w_3 = v_2+2v_3$.
 In the ordered basis $(v_1,v_2,v_3)$ these have coordinate matrix
 \[

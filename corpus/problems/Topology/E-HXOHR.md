@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X$ be a compact space and let $A$ be a closed subspace.
 Show that $A$ is compact.
+:::
 
 ::: {.solution}
 ::: {.concept}

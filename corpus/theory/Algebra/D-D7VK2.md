@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-D7VK2
 kind: definition
-title: Principal Ideal
+title: Principal ideal
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-An ideal $I \normal R$ if **principal** if there exists an $a\in R$ such that $I = \gens{a}$, i.e. $I = Ra$.
+Let $R$ be a commutative ring.
+An [[D-GOFWL|ideal]] $I \normal R$ is \dfn{principal} if there exists $a\in R$ such that $I = \gens{a} = Ra$.
 :::

@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the topological space obtained by taking a regular hexagon and identifying opposite edges in a parallel fashion as shown.
 
 (a) Calculate the integral cohomology ring of $X$.

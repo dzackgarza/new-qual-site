@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-09
 kind: problem
-title: Nori Galois theory problem 3.9
+title: Quartics of the form $Q^2-cP^2$ and quadratic subfields
 classification:
   areas: [algebra]
   topics: []

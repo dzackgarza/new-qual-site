@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 10. Find the Hadamard products for:
 
 (a) $e ^ { z } - 1$
@@ -25,7 +25,7 @@ audit:
 [Hint: The answers are $\scriptstyle e ^ { z / 2 } z \prod _ { n = 1 } ^ { \infty } ( 1 + z ^ { 2 } / 4 n ^ { 2 } \pi ^ { 2 } )$ and $\scriptstyle \prod _ { n = 0 } ^ { \infty } ( 1 - 4 z ^ { 2 } / ( 2 n + 1 ) ^ { 2 } )$ , respectively.]
 :::
 
-::: solution
+::: {.solution}
 We use the canonical product
 \[
 \frac{\sin \pi w}{\pi w}

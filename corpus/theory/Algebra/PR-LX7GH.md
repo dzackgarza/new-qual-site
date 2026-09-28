@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-LX7GH
 kind: proposition
 title: Prime and irreducible agree in a UFD
+slogan: 'Prime always implies irreducible; in a UFD, irreducible also implies prime.'
 classification:
   areas:
   - algebra
@@ -14,7 +15,13 @@ review: draft
 ---
 
 ::: {.proposition}
-In $R$ a UFD, a nonzero nonunit $r\in R$ is prime $\iff r$ is irreducible.
+Let $R$ be an [[D-QJ3QL|integral domain]].
 
-In an arbitrary integral domain only one direction holds: prime $\implies$ irreducible.
+- Every [[D-AWSKI|prime]] element of $R$ is [[D-TO3IY|irreducible]].
+
+- If $R$ is a [[D-INULL|unique factorization domain]], a nonzero nonunit $r \in R$ is prime if and only if $r$ is irreducible.
+:::
+
+::: {.example}
+In the integral domain $\ZZ[\sqrt{-5}]$, the element $2$ is irreducible but not prime: $2$ divides $6 = (1+\sqrt{-5})(1-\sqrt{-5})$ but divides neither factor.
 :::

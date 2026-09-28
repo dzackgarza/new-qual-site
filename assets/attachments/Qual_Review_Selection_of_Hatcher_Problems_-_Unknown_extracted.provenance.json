@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf",
+  "source_pdf_sha256": "0b809a7eba2cb1842320fa91bf545b6c6b1341a854b603299f538900fb805d52",
+  "extracted_markdown": "assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown_extracted.md",
+  "extracted_markdown_sha256": "daec0c541ed3590ebf9ef640144237e4168b598a96f1ae9b0422cd480e8cfb80",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 4,
+  "command": "just ocr-pdf assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown_extracted.md",
+  "generated_at": "2026-09-16"
+}

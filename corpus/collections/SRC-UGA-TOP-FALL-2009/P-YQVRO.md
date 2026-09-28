@@ -26,7 +26,7 @@ audit:
   note: Classified self-map homotopy classes by the degree on the core circle, computed the Lefschetz number as 1-k, and exhibited a fixed-point-free rotation in the unique exceptional class k=1.
 ---
 
-::: problem
+::: {.problem}
 Find all homotopy classes of maps from $S^1 \times \DD^2$ to itself such that every element of the homotopy class has a fixed point.
 :::
 

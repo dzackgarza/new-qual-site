@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Recall that a measure $\mu$ is semifinite if for all $E \in \mathcal{M}$ with $\mu(E) > 0$ there exists $A \in \mathcal{M}$, $A \subset E$ such that $0 < \mu(A) < \infty$.
 If $\mu$ is semifinite, prove that for all $E \in \mathcal{M}$,
 $$
@@ -31,9 +31,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. The case $\mu(E)<\infty$ is immediate.
-::: proof
+::: {.proof}
 Let
 \[
 S:=\sup\{\mu(A):A\subseteq E,\ A\in\mathcal M,\ \mu(A)<\infty\}.
@@ -45,7 +45,7 @@ S=\mu(E).
 :::
 
 <1>2. The case $\mu(E)=\infty$.
-::: proof
+::: {.proof}
 Suppose for contradiction that $S<\infty$. Choose measurable $A_n\subseteq E$ with
 \[
 \mu(A_n)<\infty,

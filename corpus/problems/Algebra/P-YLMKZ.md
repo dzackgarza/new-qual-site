@@ -22,11 +22,11 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 Can a polynomial over a division ring (skew-field) have more roots than its degree?
 :::
 
-::: solution
+::: {.solution}
 Yes. Over a noncommutative division ring, a polynomial can have more roots than its degree.
 
 Take the Hamilton quaternions $\mathbb H$ and the polynomial

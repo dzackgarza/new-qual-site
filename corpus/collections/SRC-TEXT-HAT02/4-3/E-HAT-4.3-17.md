@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $\Omega X$ is an H-space with multiplication the composition of loops.
+:::
 
 ::: {.solution}
 The based loop space \(\Omega X\) has multiplication by concatenation:

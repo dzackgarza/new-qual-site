@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Describe the ring $\operatorname{End}_{\mathbb Z}(\mathbb Z)$.
 :::
 
-::: solution
+::: {.solution}
 There is a ring isomorphism
 \[
 \operatorname{End}_{\mathbb Z}(\mathbb Z)\cong\mathbb Z.
@@ -37,7 +37,7 @@ There is a ring isomorphism
 
 <1>1. Every $\mathbb Z$-module endomorphism of $\mathbb Z$ is multiplication
 by a unique integer.
-::: proof
+::: {.proof}
 Let $f:\mathbb Z\to\mathbb Z$ be $\mathbb Z$-linear and set $n=f(1)$. For every
 $m\in\mathbb Z$,
 \[
@@ -55,7 +55,7 @@ endomorphism.
 f\mapsto f(1),
 \]
 is a ring isomorphism.
-::: proof
+::: {.proof}
 By <1>1 it is bijective. If $f(1)=m$ and $g(1)=n$, then
 \[
 (f+g)(1)=m+n,

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Geometrically describe the following subsets of $\CC$:
 
 a. $\abs{z-1} = 1$
@@ -25,7 +25,7 @@ f. $\Re(z) > a$ with $a\in \RR$.
 g. $\abs{z-1} < 2\abs{z-2}$
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 a. A circle of radius 1 about $z=1$.

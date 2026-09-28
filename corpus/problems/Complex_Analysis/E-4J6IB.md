@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f$ is holomorphic with $z_0 = 0$ an isolated singularity, and suppose there is some neighborhood of $0$ on which
 \[
 \abs{f(z)} \leq \abs{z}^{-{ 1\over 2}}
@@ -24,7 +24,7 @@ Show that $z_0$ is removable.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Using the inequality,
 \[
 \abs{(z-0)f(z)} \leq \abs{z}^{1\over 2}\convergesto{\abs{z}\to 0}0

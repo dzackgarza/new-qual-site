@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $G$ be a finite group and $p$ a prime number such that there is a normal subgroup $H\normal G$ with $\abs{H} = p^i > 1$.
 
 a.
@@ -22,8 +23,9 @@ Show that $H$ is a subgroup of any Sylow $p\dash$subgroup of $G$.
 
 b.
 Show that $G$ contains a nonzero abelian normal subgroup of order divisible by $p$.
+:::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $p$ groups have nontrivial centers.
@@ -33,16 +35,16 @@ Show that $G$ contains a nonzero abelian normal subgroup of order divisible by $
 - Transitivity of characteristic: $A \ch B$ and $B\normal C$ implies $A \normal C$.
 :::
 
-:::{.strategy}
+::: {.strategy}
 Just use maximality for (a).
 For (b), centers are always abelian, so $Z(H)$ is good to consider, just need to ensure it's normal in $G$.
 Use transitivity of characteristic.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
-:::{.proof title="of a"}
+::: {.proof title="of a"}
 \envlist
 
 - By definition, $S\in \Syl_p(G) \iff S$ is a *maximal* $p\dash$subgroup: $S<G$ is a $p\dash$group, so $\size S = p^k$ for some $k$, $S$ is a proper subgroup, and $S$ is maximal in the sense that there are no proper $p\dash$subgroups $S'$ with $S \subseteq S' \subseteq G$.
@@ -58,7 +60,7 @@ Use transitivity of characteristic.
 
 :::
 
-:::{.proof title="of b"}
+::: {.proof title="of b"}
 \envlist
 
 - Claim: $Z(H) \leq H$ works.

@@ -26,7 +26,7 @@ audit:
 Show that if each $f_n$ is holomorphic on an open set $\Omega \subseteq \mathbb{C}$ and $F \coloneqq \sum_{n=1}^\infty f_n$ converges uniformly on every compact subset of $\Omega$, then $F$ is holomorphic on $\Omega$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 S_N=\sum_{n=1}^N f_n.

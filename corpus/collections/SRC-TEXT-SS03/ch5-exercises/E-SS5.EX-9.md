@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 9. Prove that if $| z | < 1$ , then
 
 $$
@@ -23,7 +23,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For every $N\ge0$, repeated use of
 \[
 1-w^2=(1-w)(1+w)

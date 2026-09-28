@@ -24,7 +24,7 @@ topics:
 
 [[PR-3TYBE]]
 
-## The theorem
+## The fundamental theorem
 
 [[T-NLPZY]]
 
@@ -34,64 +34,64 @@ topics:
 
 [[PR-FM5FN]]
 
-::: {.remark title="What corresponds to what"}
-The correspondence reverses inclusion and relates degrees to subgroup indices:
-\[
-[L:K] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = \size G
-\]
-for a finite Galois extension $L/F$ and intermediate field $K$, with $G=\Gal(L/F)$ and $H=\Gal(L/K)$.
-An intermediate field is normal over the base exactly when its subgroup is normal in $G$, and then the quotient $G/H$ is its Galois group.
-Thus normality of an intermediate extension corresponds to normality of its subgroup.
+::: {.remark title="Degrees, indices, and normal subgroups"}
+Let $L/F$ be a finite Galois extension with $G=\Gal(L/F)$.
+The correspondence $K\mapsto\Gal(L/K)$ from intermediate fields to subgroups is inclusion-reversing, and if $K$ corresponds to $H$, then
+$$
+[L:K] = \size H, \qquad [K:F] = [G:H], \qquad [L:F] = \size G.
+$$
+The extension $K/F$ is Galois if and only if $H$ is normal in $G$, and then $\Gal(K/F)\cong G/H$.
 :::
 
-## Showing an extension is Galois
+## Criteria for Galois extensions
 
-::: {.fact title="The checklist"}
-**Irreducibility of $f$:**
+::: {.fact title="Criteria"}
+**Irreducibility of $f\in\QQ[x]$.**
 
-- Eisenstein, including after shifting or inverting.
+- Eisenstein's criterion, applied to $f(x)$, to $f(x+a)$ for some $a\in\ZZ$, or to the reversed polynomial $x^nf(1/x)$.
 
-- A primitive polynomial in $\ZZ[x]$ whose reduction modulo a prime $p$ has the same degree and is irreducible is irreducible over $\QQ$ and $\ZZ$.
+- If $f\in\ZZ[x]$ has leading coefficient not divisible by a prime $p$ and $f\bmod p$ is irreducible over $\FF_p$, then $f$ is irreducible over $\QQ$.
 
-- A quadratic with no root in the field is irreducible.
+- A polynomial of degree $2$ or $3$ over a field is irreducible if and only if it has no root in the field.
 
-**Separability of $f$:**
+**Separability of $f$.**
 
-- Factor and exhibit distinct roots in $\bar k$.
+- $f$ is separable if and only if $\gcd(f,f')=1$.
 
-- Over a perfect field, irreducible implies separable.
+- Over a perfect field, every irreducible polynomial is separable.
 
-- For irreducible $f$: separable exactly when $f' \not\equiv 0$.
+- An irreducible $f$ is separable if and only if $f' \neq 0$.
 
-**Separability of the extension:**
+**Separability of an extension.**
 
-- A splitting field of a separable polynomial is separable and normal, hence Galois.
+- The splitting field of a separable polynomial is separable and normal, hence Galois.
 
-- Algebraic extensions of perfect fields are separable, so in characteristic zero only normality needs checking.
+- Every algebraic extension of a perfect field is separable; in characteristic $0$ a finite extension is Galois if and only if it is normal.
 
-- Other criteria: $[L:k]_s = [L:k]$, or the permanence properties of separability as a distinguished class.
+- A finite extension $L/k$ is separable if and only if its separable degree $[L:k]_s$ equals $[L:k]$, and separable extensions form a distinguished class.
 
-**Normality:**
+**Normality.**
 
-- Show $L/k$ is finite and the splitting field of some polynomial.
+- A finite extension $L/k$ is normal if and only if $L$ is the splitting field over $k$ of some polynomial.
 
-**Galois:**
+**Galois.**
 
-- Normal and separable, equivalently the splitting field of a separable polynomial.
+- A finite extension is Galois if and only if it is normal and separable, if and only if it is the splitting field of a separable polynomial.
 
-- Automatic for a finite extension of finite fields, being the splitting field of $x^{p^n}-x$.
+- Every finite extension of finite fields is Galois: $\FF_{p^n}$ is the splitting field of the separable polynomial $x^{p^n}-x$ over every subfield.
 :::
 
-## Irreducibility in practice
+## Irreducibility
 
 [[PR-PB6UE]]
 
 ::: {.remark}
-Over a finite field, irreducibility can be checked by division by the monic irreducible polynomials of degree at most half the degree of $f$.
+Over a finite field $\FF_p$, a polynomial of degree $d$ is irreducible if and only if it has no monic irreducible factor of degree at most $d/2$, which can be checked by dividing by each monic irreducible polynomial of degree at most $d/2$.
 :::
 
-::: {.example title="Irreducibility mod $p$"}
-$f(x) \da x^4 + x + 1$ is irreducible over $\ZZ[x]$: mod $2$, neither $0$ nor $1$ is a root so there is no linear factor, and dividing by each $a_1x^2+a_2x+a_3$ with $a_i \in \ts{0,1}$ leaves a remainder, so there is no quadratic factor.
+::: {.example title="Irreducibility modulo $2$"}
+$f(x) \da x^4 + x + 1$ is irreducible over $\QQ$.
+Modulo $2$, $f(0)=f(1)=1$, so $f$ has no linear factor, and the only monic irreducible quadratic over $\FF_2$ is $x^2+x+1$, which leaves remainder $1$ on dividing $f$; hence $f$ is irreducible over $\FF_2$.
 :::
 
 [[T-CF6S3]]
@@ -99,7 +99,8 @@ $f(x) \da x^4 + x + 1$ is irreducible over $\ZZ[x]$: mod $2$, neither $0$ nor $1
 [[FT-2P5VV]]
 
 ::: {.remark title="Shifting"}
-If $a\in\QQ$ and $f(x+a)$ is irreducible over $\QQ$ by Eisenstein's criterion, then $f$ is irreducible: substitution $x\mapsto x+a$ is an automorphism of $\QQ[x]$, with inverse $x\mapsto x-a$.
+For $a\in\ZZ$, $g(x)\mapsto g(x+a)$ is a ring automorphism of $\QQ[x]$, so if $f(x+a)$ satisfies Eisenstein's criterion at $p$, then $f$ is irreducible.
+For monic $f$ of degree $n\geq2$, in that case $f(x+a)\equiv x^n \pmod p$, so $f \bmod p$ has a repeated root, and $p$ divides $\Delta_f = \Delta_{f(x+a)}$; the primes to test are among the prime divisors of the discriminant.
 :::
 
 [[T-AILFB]]

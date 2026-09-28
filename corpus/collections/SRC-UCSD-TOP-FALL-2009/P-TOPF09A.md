@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that the fundamental group, based at the identity, of a topological group $G$ is abelian.
 :::
 

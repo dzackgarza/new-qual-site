@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-JQNJQ
 kind: definition
-title: Elementary Divisor Decomposition
+title: Elementary divisor decomposition
 classification:
   areas:
   - algebra
@@ -14,11 +14,17 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-If $G$ is a finitely generated abelian group, then there is a unique list of **not necessarily distinct** prime powers $p_k^{e_k}$ such that
-\[
-G \cong \ZZ^r \cross \prod_{k=1}^m C_{p_k^{e_k}} 
-,\]
-where $r\in \ZZ^{\geq 0}$ is uniquely determined and the list of prime powers is unique up to reordering.
+::: {.definition}
+Let $G$ be a finitely generated abelian group, and for $n\geq 1$ let $C_n$ denote the cyclic group of order $n$.
+An \dfn{elementary divisor decomposition} of $G$ is an isomorphism
+$$
+G \cong \ZZ^r \times \prod_{k=1}^m C_{p_k^{e_k}}
+$$
+with $r,m\geq 0$, primes $p_1,\ldots,p_m$ that need not be distinct, and exponents $e_1,\ldots,e_m\geq 1$.
+The prime powers $p_1^{e_1},\ldots,p_m^{e_m}$ are the \dfn{elementary divisors} of $G$.
+:::
 
+::: {.theorem}
+Every finitely generated abelian group $G$ has an elementary divisor decomposition.
+The integer $r$ and the list $p_1^{e_1},\ldots,p_m^{e_m}$, up to reordering, are uniquely determined by $G$.
 :::

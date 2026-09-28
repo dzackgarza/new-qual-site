@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $x,y \in \mathbb{C}$ and consider the matrix
 
 $$M =

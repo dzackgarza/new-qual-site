@@ -22,7 +22,7 @@ Assume that $f(z)$ is bijective from ${\mathbb C} \backslash \{ z_0 \}$ onto its
 Show that there exist $a, b, c, d \in \mathbb C$ with $ad-bc \neq 0$, $c \neq 0$ such that $\displaystyle f(z) = \frac{az + b}{cz + d}$.
 :::
 
-::: solution
+::: {.solution}
 Since $f$ is bounded for large $|z|$, the singularity of $f$ at $\infty$ is
 removable. Hence
 \[

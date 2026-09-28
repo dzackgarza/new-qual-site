@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Compute $\pi_1(S^1 \cross S^1)$
 :::
 

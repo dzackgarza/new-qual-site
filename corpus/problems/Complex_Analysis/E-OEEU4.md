@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f$ be entire and suppose that for $\abs{z} \geq M$,
 \[
 \abs{f} \leq A + B\abs{z}^k
@@ -25,7 +25,7 @@ Show that $f$ is a polynomial of degree at most $k$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Apply a Cauchy estimate over a contour of radius $R> M$ to obtain
 \[
 \abs{f^{(n)}(0)} \leq n!{A+B R^k \over R^n} \asymptotic 1/R^{n-k}

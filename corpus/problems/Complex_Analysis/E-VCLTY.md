@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find the Laurent expansion about $z=0$ and $z=1$ respectively of the following function:
 \[
 f(z) \da {z+1 \over z(z-1)}
@@ -22,8 +22,8 @@ f(z) \da {z+1 \over z(z-1)}
 
 :::
 
-:::{.solution}
-The Laurent expansion about $z_0$ uses integer powers of $(z-z_0)$.
+::: {.solution}
+Note: once you see that everything is in terms of powers of $(z-z_0)$, you're essentially done.
 For $z=0$:
 \[
 {z+1 \over z(z-1)}

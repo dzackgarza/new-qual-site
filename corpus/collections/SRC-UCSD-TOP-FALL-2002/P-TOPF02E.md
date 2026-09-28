@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that any continuous map $f : \mathbb{RP}^{2n} \to \mathbb{RP}^{2n}$ has a fixed point, if $n \geq 1$.
 :::
 

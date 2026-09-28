@@ -8,18 +8,14 @@ topics:
 
 # Residues and contours
 
-Residue calculus, and the contour integrals the complex qual actually asks.
+The residue theorem, methods for computing residues, estimates for integrals over arcs, and their application to real integrals.
 
-The chapter opens with the choice a contour problem really turns on:
+- [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]], contours for real integrals, by the form of the integrand.
 
-- [[complex-analysis/residues-and-contours/which-contour-do-i-close|Which contour do I close?]], keyed on the form of the integrand.
+- [[complex-analysis/residues-and-contours/the-residue-theorem|The residue theorem]], and the integral of $z^k$ over a circle.
 
-Then the theory it draws on:
+- [[complex-analysis/residues-and-contours/computing-residues|Computing residues]], residues at simple poles, higher-order poles, essential singularities, and $\infty$.
 
-- [[complex-analysis/residues-and-contours/the-residue-theorem|The residue theorem]], and the single circle integral it descends from.
+- [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]], the ML estimate, Jordan's lemma, and arcs about a simple pole.
 
-- [[complex-analysis/residues-and-contours/computing-residues|Computing residues]], the three ways to find $c_{-1}$.
-
-- [[complex-analysis/residues-and-contours/arc-estimates|Arc estimates]], the bounds that make closing the contour legal.
-
-- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Real integrals by residues]], the worked cases and the drill.
+- [[complex-analysis/residues-and-contours/real-integrals-by-residues|Real integrals by residues]], worked evaluations.

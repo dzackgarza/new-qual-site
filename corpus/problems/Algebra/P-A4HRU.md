@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $R$-module (or abelian group), and let $p \in R$ be a ring element (e.g. a prime integer $p \in \mathbb{Z}$).
 Define the multiplication-by-$p$ map:
 $$\phi_p: A \longrightarrow A, \qquad x \longmapsto p x.$$
@@ -30,7 +30,7 @@ $$\phi_p: A \longrightarrow A, \qquad x \longmapsto p x.$$
 (3) Compute $p A$, $A/pA$, and $A[p]$ for $A = \mathbb{Z}$, $A = \mathbb{Z}/n\mathbb{Z}$, and $A = \mathbb{Q}/\mathbb{Z}$.
 :::
 
-::: solution
+::: {.solution}
 Assume \(p\in Z(R)\). Then for \(r\in R\) and \(x\in A\),
 \[
 \phi_p(rx)=p(rx)=(pr)x=(rp)x=r(px)=r\phi_p(x),

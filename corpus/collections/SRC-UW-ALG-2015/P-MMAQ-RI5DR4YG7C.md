@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Find the minimal polynomial of $\sqrt2+\sqrt3$ over $\mathbb Q$.
 Justify your answer.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 \alpha=\sqrt2+\sqrt3.

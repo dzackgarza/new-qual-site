@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Show that
 
   - $f_n: [a, b]\to \RR$ are continuously differentiable with derivatives $f_n'$

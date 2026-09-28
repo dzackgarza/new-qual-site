@@ -39,7 +39,7 @@ read-card card:
 diff-card card:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring diff {{quote(card)}}
 
-# Commit one reviewed prose card without hooks; preserve other staged work
+# Commit one reviewed card without hooks (content is gated at push); preserve other staged work
 commit-card card message:
     @uv run --project {{quote(justfile_directory())}} python -m qualc.authoring commit {{quote(card)}} {{quote(message)}}
 
@@ -62,9 +62,9 @@ site: build
 crawl: build
     uv run python tools/crawl.py
 
-# Serve the compiled site the way GitHub Pages serves it, 404.html included
-preview port="8000": build
-    uv run python tools/preview.py {{ port }}
+# Build the current working tree and publish it to the one canonical local preview URL
+preview: build
+    @uv run python tools/preview.py
 
 # Prove the architectural invariants hold
 test:
@@ -94,23 +94,47 @@ sample-unsolved collection n="5" section="":
 macros:
     uv run python tools/sync_macros.py
 
+# Refresh the command set the site's MathJax build defines (checked against authored mathematics)
+mathjax-commands:
+    bun tools/mathjax_commands.mjs
+
 # Rewrite the unsolved-cards queue from the corpus
 unsolved:
     uv run python tools/unsolved_queue.py
 
-# Rewrite the queue when the commit touches the corpus, and stage the result so
-# the refresh lands in that commit rather than trailing it. The corpus is the
-# only input that can change the queue, and parsing it costs ~25s, so a commit
-# that touches nothing else is not made to pay for it.
-_unsolved-if-staged:
+# Extract a PDF to Markdown with Mistral OCR, writing <markdown>.provenance.json beside it
+ocr-pdf pdf markdown:
+    bash -c 'source "$HOME/.envrc" && exec uv run --script tools/mistral_ocr.py "$1" "$2"' _ {{quote(pdf)}} {{quote(markdown)}}
+
+# Report problem cards whose statements still contain Unicode mathematics outside LaTeX
+extraction-detector:
+    uv run python tools/extraction_detector.py
+
+# Refuse a push whose cards introduce or increase raw extraction mathematics
+[private]
+_extraction-detector-push:
+    uv run python tools/extraction_detector.py --range-gate "$(git merge-base HEAD @{upstream})"
+
+# Update Queue C over the commits being pushed. Content commits run no gate, so the queue is
+# regenerated here from the upstream queue and the pushed card diff; `just unsolved` remains
+# the independent full rebuild. A queue that moved is committed and this push is refused, so
+# the next push carries the regenerated queue with the cards that changed it.
+[private]
+_unsolved-push:
     #!/usr/bin/env bash
     set -euo pipefail
-    if git diff --cached --quiet -- corpus; then
-        echo "queues/C-unsolved-cards.md: no staged corpus change"
-    else
-        uv run python tools/unsolved_queue.py
-        git add queues/C-unsolved-cards.md
+    base=$(git merge-base HEAD @{upstream})
+    if git diff --quiet "$base" HEAD -- corpus; then
+        echo "queues/C-unsolved-cards.md: no pushed corpus change"
+        exit 0
     fi
+    uv run python tools/unsolved_queue.py --incremental-range "$base"
+    if git diff --quiet HEAD -- queues/C-unsolved-cards.md; then
+        exit 0
+    fi
+    git commit --only --no-verify -m "queue: regenerate unsolved cards for pushed corpus changes" -- queues/C-unsolved-cards.md
+    echo "Queue C was regenerated and committed; push again to include it." >&2
+    exit 1
 
 # Fail if any worktree exists (QUAL-09: one checkout, one branch)
 #
@@ -131,12 +155,44 @@ _no-worktrees:
         exit 1
     fi
 
+# Reject a commit whose only content is a queue tick
+#
+# AGENTS.md, "A disposition is not a unit of work": a queue disposition rides in the commit
+# carrying the cards it describes. A one-line tick committed alone spends a full gate run to
+# move a marker and reports progress the corpus did not make. Real queue filings are large and
+# pass; this only catches the bare tick.
+[private]
+_no-bare-disposition:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    staged=$(git diff --cached --name-only)
+    [ -z "$staged" ] && exit 0
+    # A collection index marked `completion: complete` with no card touched is the same
+    # species as a queue tick — a marker moved, nothing authored. Treat queue files and
+    # bare index.md the same way; an index change riding with card work is fine and passes.
+    outside=$(printf '%s\n' "$staged" | grep -vE '^queues/|(^|/)index\.md$' || true)
+    [ -n "$outside" ] && exit 0
+    # Size is the wrong test: a six-line reconciliation note committed alone is still a
+    # disposition committed alone. What distinguishes a real queue filing is who writes it —
+    # the steward files work into queues with the maintainer noreply address, while a worker
+    # commits under the account address and should never be committing queue state by itself.
+    author=$(git config user.email)
+    case "$author" in
+        *users.noreply.github.com) exit 0 ;;
+    esac
+    echo "Refusing a commit that changes only queue files and collection indexes." >&2
+    echo "" >&2
+    echo "AGENTS.md, 'A disposition is not a unit of work': a disposition, a reconciliation note" >&2
+    echo "or queue tick rides in the commit carrying the cards it describes. Stage the card work" >&2
+    echo "alongside it, or leave the queue edit uncommitted until the cards it describes land." >&2
+    exit 1
+
 # Run immediate commit-tier quality checks
-test-commit: _no-worktrees _unsolved-if-staged
+test-commit: _no-worktrees _no-bare-disposition
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
 # Run the full project suite before pushing (refreshes BACKLOG.md first)
-test-push: backlog crawl
+test-push: _extraction-detector-push _unsolved-push backlog crawl
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate

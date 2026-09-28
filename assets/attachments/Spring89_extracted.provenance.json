@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/Spring89.pdf",
+  "source_pdf_sha256": "4156e1e9fefc6f54ff63735916b0240c41a8eefe713420e06f93ef560d0cb141",
+  "extracted_markdown": "assets/attachments/Spring89_extracted.md",
+  "extracted_markdown_sha256": "10a34ceb96c55a30991e6ba3f3c06f5022498a9b3db9f733f123d383efe4adb2",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring89.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring89.md",
+  "old_unknown_provenance_sha256": "10a34ceb96c55a30991e6ba3f3c06f5022498a9b3db9f733f123d383efe4adb2",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1989, containing Problems 1 through 18 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output reproduces the retained extraction exactly, including Problem 17's garbled ideal symbol in the conclusion. No alternate OCR, parser, or model-vision fallback was used in this intake.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1989 collection represents all 18 source positions in order with 18 source-local cards. P-BERK89S-17 retains durable source-checked evidence that part 1 concludes I=R. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

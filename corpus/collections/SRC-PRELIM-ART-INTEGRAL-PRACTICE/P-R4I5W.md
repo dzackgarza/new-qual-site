@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int \sqrt{1+\cos(2ax)}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Using $1+\cos(2u)=2\cos^2u$,
 \[
 \sqrt{1+\cos(2ax)}=\sqrt2\,|\cos(ax)|.

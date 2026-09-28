@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{F} \subseteq H(\mathbb{D})$.
 Prove that $\mathcal{F}$ is normal if and only if there exists a sequence of nonnegative constants $\{M_n\}$ such that $\lim_{n \to \infty} M_n^{1/n} \leq 1$ and $\sup_{f \in \mathcal{F}} \left|\frac{f^{(n)}(0)}{n!}\right| \leq M_n$ for each $n \geq 0$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 f(z)=\sum_{n=0}^\infty a_n(f)z^n,

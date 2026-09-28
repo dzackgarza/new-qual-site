@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $\sin(z) = z$ has infinitely many solutions in $\CC$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Let $f(z) = \sin(z)-z$ and apply Big Picard: $f$ takes on every value in $\CC$, except possibly for some single $z_0$, infinitely many times.
 So there is at most one $z_0$ such that there are *finitely* many solutions to $\sin(z) - z = z_0$.
 If $z_0\neq 0$, we're done, so suppose such an exception $z_0$ does exist whose fiber has finitely many points.

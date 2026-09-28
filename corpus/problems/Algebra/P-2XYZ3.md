@@ -18,12 +18,12 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Prove that any finite division ring is a field (that is, prove commutativity).
 Give an example of a (necessarily infinite) division ring which is NOT a field.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Wedderburn's Little Theorem (that every finite division ring is a field) and provide an example of an infinite non-commutative division ring.
 
 <1>1. Setup of the finite division ring and its center:

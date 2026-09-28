@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $G : \mathbb{R} \to \mathbb{R}$ be a bounded Borel measurable function.
 Define $f_0(t) = 1$ and $f_n : [-1, 1] \to \mathbb{R}$ inductively by
 $$
@@ -39,9 +39,9 @@ Show:
 (b) The sequence $\{f_n\}_{n=1}^\infty$ has a uniformly convergent subsequence.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that the recursion is well defined and produces continuous functions.
-::: proof
+::: {.proof}
 Let
 \[
 M:=\sup_{x\in\mathbb R}|G(x)|<\infty.
@@ -56,7 +56,7 @@ is well defined for every $t\in[-1,1]$. In fact it is absolutely continuous, hen
 :::
 
 <1>2. Establish uniform boundedness and equicontinuity.
-::: proof
+::: {.proof}
 For $n\ge0$ and $t\in[-1,1]$,
 \[
 |f_{n+1}(t)|
@@ -75,7 +75,7 @@ Thus $(f_n)_{n\ge1}$ is uniformly bounded and equi-Lipschitz, hence equicontinuo
 :::
 
 <1>3. Apply Arzelà--Ascoli.
-::: proof
+::: {.proof}
 The domain $[-1,1]$ is compact. By Step 2, the family $\{f_n:n\ge1\}$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore implies that every sequence in this family has a uniformly convergent subsequence. In particular,
 \[
 \boxed{\{f_n\}_{n=1}^\infty\text{ has a uniformly convergent subsequence}.}

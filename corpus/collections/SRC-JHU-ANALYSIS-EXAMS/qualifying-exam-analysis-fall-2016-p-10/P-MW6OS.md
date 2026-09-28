@@ -24,6 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 3. Let H be an infinite dimensional Hilbert space.
    Determine if the following statements are true or false.
    If true, provide a proof.
@@ -32,10 +33,11 @@ audit:
 (a) A sequence $\left\{ f _ { n } \right\}$ in H with $\left| \left| f _ { n } \right| \right| = 1$ for all n has a subsequence that converges in H.
 
 (b) A sequence $\left\{ f _ { n } \right\}$ in H with $| | f _ { n } | | = 1$ for all n has a subsequence that converges weakly in H.
+:::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 Because $H$ is infinite dimensional, it contains an infinite orthonormal sequence
 \[
 e_1,e_2,\dots.
@@ -52,7 +54,7 @@ Therefore part (a) is false.
 :::
 
 <1>2. Reduce part (b) to a separable Hilbert space.
-::: proof
+::: {.proof}
 Let $(f_n)$ be any sequence with $\|f_n\|=1$ for all $n$, and set
 \[
 H_0:=\overline{\operatorname{span}}\{f_n:n\ge1\}.
@@ -75,7 +77,7 @@ exists.
 :::
 
 <1>3. Show that the limiting coordinates define a vector of $H_0$.
-::: proof
+::: {.proof}
 For every $N$, Bessel's inequality gives
 \[
 \sum_{j=1}^N|\langle f_{n_k},e_j\rangle|^2
@@ -97,7 +99,7 @@ converges in $H_0$.
 :::
 
 <1>4. Prove weak convergence of the selected subsequence.
-::: proof
+::: {.proof}
 First let
 \[
 g=\sum_{j=1}^N c_j e_j

@@ -36,14 +36,14 @@ b. What finite groups $G$ can occur as collections of automorphisms of some fini
 Explain.
 :::
 
-::: solution
+::: {.solution}
 In part (a), every finite group occurs. In part (b), exactly
 the finite cyclic groups occur, including the trivial group.
 
 <1>1. Every finite group embeds in the automorphism group of
 a field.
 
-::: proof
+::: {.proof}
 Given a finite group $G$, take algebraically independent
 indeterminates $X_h$ indexed by $h\in G$, and put
 $F=\mathbb Q(X_h:h\in G)$. For $g\in G$, the permutation
@@ -67,7 +67,7 @@ This proves injectivity and realizes $G$ as a subgroup.
 
 <1>2. The full automorphism group of any finite field is cyclic.
 
-::: proof
+::: {.proof}
 Let $F$ be finite. Its characteristic is a prime $p$: the
 additive order of $1$ is finite and exceeds one, and a
 composite order would give zero divisors by factoring it.
@@ -103,7 +103,7 @@ $\langle\varphi\rangle\cong C_n$.
 
 <1>3. Exactly the finite cyclic groups are realized in part (b).
 
-::: proof
+::: {.proof}
 Every subgroup of a cyclic group is cyclic [@DF04], so
 step <1>2 proves necessity. To prove existence for every
 order $n\geq1$, fix a prime $p$ and work in an algebraic

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 2. Prove that
 
 $$
@@ -26,7 +26,7 @@ whenever a and b are positive.
 Using the product formula for sin πs, give another proof that $\Gamma ( s ) \Gamma ( 1 - s ) = \pi /$ sin πs.
 :::
 
-::: solution
+::: {.solution}
 For $N\ge1$, set
 \[
 P_N=\prod_{n=1}^N\frac{n(n+a+b)}{(n+a)(n+b)}.

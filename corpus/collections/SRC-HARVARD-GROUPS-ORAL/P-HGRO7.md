@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that every $p$-subgroup of a finite group is contained in a Sylow $p$-subgroup.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be finite, let $P\le G$ be a $p$-subgroup, and let $S$ be any Sylow
 $p$-subgroup of $G$.
 
 <1>1. Let $P$ act by left multiplication on the coset space $G/S$.
-::: proof
+::: {.proof}
 For $x\in P$ and $gS\in G/S$, define
 \[
 x\cdot gS=(xg)S.
@@ -39,7 +39,7 @@ This is a well-defined group action.
 :::
 
 <1>2. This action has a fixed point.
-::: proof
+::: {.proof}
 Write $|G|=p^a m$ with $p\nmid m$. Since $S$ is Sylow,
 $|S|=p^a$, so
 \[
@@ -54,7 +54,7 @@ of $P$.
 :::
 
 <1>3. Therefore $P$ is contained in a Sylow $p$-subgroup.
-::: proof
+::: {.proof}
 If $gS$ is fixed by $P$, then for every $x\in P$,
 \[
 xgS=gS,

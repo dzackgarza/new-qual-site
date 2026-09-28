@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Given $n\geq 1$ and $\|\cdot\|$ a matrix norm of $M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ that is consistent (meaning $\|AB\|\leq\|A\|\|B\|$), let $A\in M_n(\mathbb{C})$.
 
 (a) Find a vector norm $\|\cdot\|_0$ of $\mathbb{C}^n$ that is compatible with $\|\cdot\|$ (meaning $\|Ax\|_0\leq\|A\|\|x\|_0$).

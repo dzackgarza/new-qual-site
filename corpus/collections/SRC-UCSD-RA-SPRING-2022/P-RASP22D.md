@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a Hilbert space and let $U \in L(H, H)$ be unitary, meaning $U$ is invertible and $\langle Ux, y \rangle = \langle x, U^{-1}y \rangle$ for all $x, y \in H$.
 
 1. Let $\operatorname{Ran}(I - U)$ denote the image of $I - U$.
@@ -34,9 +34,9 @@ Let $H$ be a Hilbert space and let $U \in L(H, H)$ be unitary, meaning $U$ is in
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Identify the orthogonal complement of the range.
-::: proof
+::: {.proof}
 Let
 \[
 M:=\ker(I-U)=\{x:Ux=x\}.
@@ -67,7 +67,7 @@ Taking orthogonal complements once more gives
 :::
 
 <1>2. Compute the averages on the fixed-point space and on the range of $I-U$.
-::: proof
+::: {.proof}
 If $x\in M$, then $U^jx=x$ for every $j$, so
 \[
 S_nx=x=Px.
@@ -92,7 +92,7 @@ Thus $S_nx\to0=Px$ for every $x\in\operatorname{Ran}(I-U)$.
 :::
 
 <1>3. Extend the convergence to all of $M^\perp$.
-::: proof
+::: {.proof}
 Each $S_n$ is a contraction:
 \[
 \|S_n\|

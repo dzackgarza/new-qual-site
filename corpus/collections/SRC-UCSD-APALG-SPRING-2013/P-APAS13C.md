@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Define the $p$-norm $\|A\|_p$ and Frobenius norm $\|A\|_F$ of a matrix $A\in M_{m,n}$.
 
 (b) Suppose that $D\in M_n$ with $D=\operatorname{diag}(d_1,d_2,\ldots,d_n)$.
@@ -28,7 +28,7 @@ B=bb^H.
 Simply writing down the answer will not be sufficient.)
 :::
 
-::: solution
+::: {.solution}
 For a vector \(x=(x_1,\ldots,x_n)^T\in\mathbb C^n\), write
 \[
 \|x\|_p=\left(\sum_i |x_i|^p\right)^{1/p}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-BZ3KD
 kind: definition
-title: The sign homomorphism
+title: Sign homomorphism
 classification:
   areas:
   - algebra
@@ -13,12 +13,16 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-Writing a cycle as a product of transpositions,
-the map defined by
-\[
-\sgn: S_n &\to (\ZZ/2, +) \\
-\prod_{i\leq 2k} (a_i b_i) &\mapsto 0 \\
-\prod_{i\leq 2k+1} (a_i b_i) &\mapsto 1
-.\]
+::: {.definition}
+Let $n\geq 1$.
+The \dfn{sign homomorphism} is the map
+$$
+\sgn\colon S_n \to (\ZZ/2, +), \qquad \sigma \mapsto k \bmod 2,
+$$
+where $\sigma = \tau_1 \cdots \tau_k$ is any expression of $\sigma$ as a product of $k\geq 0$ transpositions.
+:::
+
+::: {.proposition}
+Let $n \geq 1$.
+For $\sigma\in S_n$, all expressions of $\sigma$ as a product of transpositions have the same number of factors modulo $2$, so $\sgn$ is well defined, and $\sgn$ is a group homomorphism.
 :::

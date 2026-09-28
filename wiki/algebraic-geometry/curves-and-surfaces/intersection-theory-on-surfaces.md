@@ -21,7 +21,7 @@ The number is the degree of the normal bundle, and it is allowed to be negative 
 
 Adjunction is the formula the surfaces material is built on, since it converts genus into intersection.
 Running it on $\PP^2$ with $K = -3H$ gives the degree-genus formula $g = \tfrac{1}{2}(d-1)(d-2)$, and running it on $\PP^1 \times \PP^1$ with $K = (-2,-2)$ gives $g = (a-1)(b-1)$.
-Being able to produce either in one line is the point.
+These two computations are direct applications of adjunction.
 
 [[T-SRFRR]]
 
@@ -42,3 +42,11 @@ That signature is what makes $\NS(X)$ a hyperbolic lattice and what supplies the
 [[T-SRFNAKAI]]
 
 Ampleness on a surface is purely numerical, so it depends only on the class in $\NS(X)$, and both conditions are needed — $\pi^*H$ on a blowup has positive square but meets the exceptional curve in zero.
+
+## Chow rings in any dimension
+
+[[D-CHOWRING]]
+
+## The Todd genus
+
+[[D-VARTODD]]

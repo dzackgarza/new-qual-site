@@ -24,14 +24,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Pick four of the following results from the course and state them clearly ($5$ points each).
 Then pick two of those four results and sketch their proofs ($10$ points each).
 
 Cauchy's Theorem; Cauchy's integral formula; Morera's Theorem; Liouville's Theorem; Casorati-Weierstrass; Open mapping theorem; Maximum principle; Residue Theorem; Argument Principle; Weierstrass' Theorem; Hurwitz's Theorem; Reflection Principle; Riemann Mapping Theorem.
 :::
 
-::: solution
+::: {.solution}
 One possible choice is the following.
 
 **Cauchy's theorem.** If $G$ is a simply connected domain and $f\in H(G)$,

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f: \CC\to \CC$ is entire and
 \[
 \abs{f(z)} \leq \abs{z}^{1\over 2} \quad\text{ when } \abs{z} > 10
@@ -23,7 +23,7 @@ Suppose $f: \CC\to \CC$ is entire and
 Prove that $f$ is constant.
 :::
 
-:::{.solution}
+::: {.solution}
 Let $R> 10$, then by Cauchy:
 \[
 2\pi \abs{f'(z)} 

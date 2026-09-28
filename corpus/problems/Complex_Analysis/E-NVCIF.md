@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that there is an entire function $h$ such that
 \[
 {\pi^2\over \sin^2(\pi z)} = \sum_{k\in \ZZ} {1\over (z-k)^2} + h(z)
@@ -23,14 +23,14 @@ Show that there is an entire function $h$ such that
 
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - The principal part of $f$ at $z=z_0$ is gotten by expanding $f(z) = \sum_{k\in \ZZ} c_k z^k$ and taking $\sum_{k\leq 1} c_k z^k$.
 - Common trick: to control a singularity, subtract off a function with the same principal part at that point.
 :::
 
-:::{.solution}
+::: {.solution}
 Write 
 
 - $f(z) = {\pi^2 \over \sin^2(\pi z)}$

@@ -26,16 +26,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $H$ be a Hilbert space, let $T : H \to H$ be a bounded linear operator, and let $T^* : H \to H$ denote the adjoint of $T$.
 Recall that a linear map $S : H \to H$ is bounded below if there is a constant $c > 0$ such that $\|Sx\| \geq c\|x\|$ for all $x \in H$.
 
 Prove that $T$ is invertible (with bounded inverse) if and only if both $T$ and $T^*$ are bounded below.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Invertibility implies both operators are bounded below.
-::: proof
+::: {.proof}
 Suppose $T$ is invertible with bounded inverse. Then for every $x\in H$,
 \[
 \|x\|=\|T^{-1}Tx\|\le \|T^{-1}\|\,\|Tx\|,
@@ -54,7 +54,7 @@ Applying the same argument to $T^*$ shows that $T^*$ is bounded below.
 :::
 
 <1>2. A bounded-below operator is injective and has closed range.
-::: proof
+::: {.proof}
 Assume now that
 \[
 \|Tx\|\ge c\|x\|
@@ -73,7 +73,7 @@ Hence the limit belongs to $\operatorname{ran}T$, so $\operatorname{ran}T$ is cl
 :::
 
 <1>3. The lower bound for $T^*$ forces the range of $T$ to be dense.
-::: proof
+::: {.proof}
 If $T^*$ is bounded below, then $T^*$ is injective, hence
 \[
 \ker T^*=\{0\}.
@@ -98,7 +98,7 @@ Thus $T$ is surjective as well as injective.
 :::
 
 <1>4. The inverse is bounded.
-::: proof
+::: {.proof}
 Since $T$ is bijective, define $T^{-1}:H\to H$. If $y=Tx$, then
 \[
 \|T^{-1}y\|=\|x\|\le c^{-1}\|Tx\|=c^{-1}\|y\|.

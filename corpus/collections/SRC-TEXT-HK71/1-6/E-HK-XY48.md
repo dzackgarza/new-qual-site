@@ -34,7 +34,7 @@ is invertible, and find $A^{-1}$ if it exists.
 :::
 
 
-::: solution
+::: {.solution}
 All diagonal entries are nonzero, so $A$ is invertible. Direct multiplication verifies that
 \[
 A^{-1}=

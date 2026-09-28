@@ -9,13 +9,13 @@ topics:
 
 # Separated and proper
 
-Separatedness is the most examined property in this chapter, and almost never for its definition.
+Separatedness is encoded by the diagonal morphism and by uniqueness in the valuative criterion.
 
 [[D-T2J3Q]]
 
 [[PR-QX0VL]]
 
-That proposition is the good property to name when asked for one, and it is worth stating with both hypotheses visible, because the follow-up drops each in turn.
+Both hypotheses in the proposition are essential to the stated conclusion.
 
 [[FE-H8DY5]]
 

@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $e_n$ denote the $n$-th elementary symmetric polynomial.
 
 (a) Write $e_4(x_1,x_2,\ldots,x_{10},x_1,x_2,\ldots,x_{10})$ as a linear combination of Schur polynomials in $x_1,\ldots,x_{10}$.

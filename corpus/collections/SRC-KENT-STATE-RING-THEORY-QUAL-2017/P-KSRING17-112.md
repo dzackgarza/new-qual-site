@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-112
 kind: problem
-title: Kent State ring-theory qualifying problem 112
+title: $R[x]$ is a PID only if $R$ is a field
 classification:
   areas: [algebra]
   topics: []

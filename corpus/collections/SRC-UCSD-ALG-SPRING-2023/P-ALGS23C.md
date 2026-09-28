@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a unital commutative ring, $M$ and $N$ are $A$-modules, and $f: M \to N$ is an $A$-module homomorphism.
 For every maximal ideal $\mathfrak{m}$ of $A$, let $M_\mathfrak{m}$ and $N_\mathfrak{m}$ be the localizations of $M$ and $N$ at $\mathfrak{m}$, respectively.
 Recall that $$f_\mathfrak{m}: M_\mathfrak{m} \to N_\mathfrak{m}, \quad f_\mathfrak{m}\!\left(\frac{x}{s}\right) := \frac{f(x)}{s}$$ is an $A_\mathfrak{m}$-module homomorphism.

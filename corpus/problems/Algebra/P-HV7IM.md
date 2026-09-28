@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Do you know what the quaternion group is?
 How many elements are there of each order?
 Suppose I have a field extension of the rationals with Galois group the quaternion group.

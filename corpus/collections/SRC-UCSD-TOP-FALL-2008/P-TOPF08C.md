@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Can there exist a map $f$ of degree $\pm 1$ of the form:
 $$
 f : \mathbb{CP}^n \to S^{n+1} \times S^{n-1}, \quad n > 1.

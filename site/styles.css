@@ -68,6 +68,14 @@ a:hover {
   color: var(--accent-dark);
 }
 
+/* A term at its defining occurrence (`\dfn{term}`, DEF-26): one style for every
+   definiendum, whatever emphasis the source it came from used. */
+dfn.qual-dfn {
+  font-style: italic;
+  font-weight: normal;
+  color: var(--ink);
+}
+
 /* One ring for every link, button, field and disclosure on the site. */
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -1034,6 +1042,27 @@ div.qual-section > .qual-section-qualifier {
   font-weight: 700;
 }
 
+.result-slogan {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  margin-block: 0.6rem 1rem;
+  font-size: var(--label);
+}
+
+.result-slogan-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
+.result-slogan-suggest {
+  color: var(--muted);
+}
+
 /* A revealed answer is a section of the card, not a panel bolted to it: the
    rule at its left is the one the environments above it use, and the accent is
    there because the summary is the only part of it you click. The grey filled
@@ -1079,6 +1108,21 @@ details.reveal[open] > summary {
 .pf-step .pf-group .pf-step .pf-group .pf-step {
   padding-left: 1.8rem;
   text-indent: -1.8rem;
+}
+
+/* A proof div can separate sibling Lamport markers in the Pandoc block tree.
+   Such a marker still carries its authored level even when it cannot remain
+   physically nested under the preceding pf-step, so preserve the visual depth
+   from the level class itself. Nested groups already receive their indentation
+   from the parent step and therefore reset this extra margin. */
+.pf-group > .pf-step.pf-level-2 {
+  margin-left: 1.4rem;
+}
+.pf-group > .pf-step.pf-level-3 {
+  margin-left: 2.8rem;
+}
+.pf-step > .pf-group > .pf-step {
+  margin-left: 0;
 }
 .pf-number {
   font-variant-numeric: tabular-nums;

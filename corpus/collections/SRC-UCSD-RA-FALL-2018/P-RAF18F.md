@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Consider the Banach space $L^\infty([0,1], m)$ and its vector subspace
 $$
 V = \{f \in L^\infty([0,1], m) : \text{the limit } \lim_{n \to \infty} n \int_{[0,1/n]} f\,dm \text{ exists}\}.
@@ -35,9 +35,9 @@ $$
    Prove that there does not exist $g \in L^1([0,1], m)$ such that $\varphi(f) = \int fg\,dm$ for every $f \in L^\infty([0,1], m)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Define the functional on $V$ and extend it.
-::: proof
+::: {.proof}
 For $f\in V$, set
 \[
 L(f):=\lim_{n\to\infty}n\int_0^{1/n}f(x)\,dx.
@@ -66,7 +66,7 @@ for every $f\in V$.
 :::
 
 <1>2. Test the extension on shrinking interval indicators.
-::: proof
+::: {.proof}
 For $k\ge1$, let
 \[
 f_k=\mathbf1_{[0,1/k]}.
@@ -84,7 +84,7 @@ Therefore $f_k\in V$ and
 :::
 
 <1>3. Rule out representation by an $L^1$ density.
-::: proof
+::: {.proof}
 Suppose there were $g\in L^1([0,1])$ such that
 \[
 \varphi(f)=\int_0^1 f(x)g(x)\,dx

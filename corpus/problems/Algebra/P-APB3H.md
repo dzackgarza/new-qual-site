@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $K = \mathbb{F}_{p^n}$ be the finite field extension of degree $n$ over $F = \mathbb{F}_p$.
 (1) What is the Frobenius endomorphism $\operatorname{Frob}_p: K \to K$, and how does it generate the Galois group $\operatorname{Gal}(K/F)$?
 (2) Viewed as an $\mathbb{F}_p$-linear transformation $T: K \to K$ on the $n$-dimensional vector space $K \cong \mathbb{F}_p^n$, what are its minimal and characteristic polynomials?
 :::
 
-::: solution
+::: {.solution}
 The Frobenius map is
 \[
 F(x)=x^p.

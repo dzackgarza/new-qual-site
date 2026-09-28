@@ -24,7 +24,7 @@ audit:
   note: "Checked all divisors in the Sylow 7-count and proved the normalizer index and both centralizer containments."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order 84 with 28 Sylow 3-subgroups.
 
 (a) Find the number of Sylow 7-subgroups of $G$.
@@ -34,10 +34,10 @@ Let $N_G(Q)$ be the normalizer of $Q$ in $G$, and $Z_G(Q)$ be the centralizer of
 Show that $N_G(Q) = Z_G(Q) = Q$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. There is exactly one Sylow $7$-subgroup.
 
-::: proof
+::: {.proof}
 Since $84=2^2\cdot3\cdot7$, Sylow's theorems give
 $$
 n_7\mid12,\qquad n_7\equiv1\pmod7
@@ -49,7 +49,7 @@ to $1$ modulo $7$. Thus $n_7=1$.
 
 <1>2. The normalizer of $Q$ has order $3$, and equals $Q$.
 
-::: proof
+::: {.proof}
 Conjugation acts transitively on the Sylow $3$-subgroups, by
 Sylow conjugacy [@DF04]. The stabilizer of $Q$ is
 $$
@@ -69,7 +69,7 @@ is therefore equality.
 
 <1>3. The centralizer is also $Q$.
 
-::: proof
+::: {.proof}
 Here $Z_G(Q)$ denotes the set of elements commuting with every
 element of $Q$, not merely with one chosen element. The group
 $Q$ has prime order $3$ and is cyclic, hence abelian. Thus

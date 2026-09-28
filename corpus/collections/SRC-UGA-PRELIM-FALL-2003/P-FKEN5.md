@@ -21,7 +21,7 @@ audit:
 Prove by induction that the sum of the cubes of 3 consecutive positive integers is divisible by 9.
 :::
 
-::: solution
+::: {.solution}
 For $n\ge1$, let
 \[
 S_n=n^3+(n+1)^3+(n+2)^3.

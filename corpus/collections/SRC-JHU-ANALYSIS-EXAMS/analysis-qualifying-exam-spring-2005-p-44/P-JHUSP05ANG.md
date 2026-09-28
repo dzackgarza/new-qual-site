@@ -24,6 +24,7 @@ audit:
   note: "Proved both constituent maps are bijective, checked their image inequalities and denominators, and verified the normalization exactly."
 ---
 
+::: {.problem}
 Find a bijective holomorphic map $f$ from the quadrant
 
 $$
@@ -31,15 +32,16 @@ Q = \{ x + iy \in \mathbb{C} : x > 0, \ y > 0 \}
 $$
 
 onto the unit disk $D = \{ z \in \mathbb{C} : |z| < 1 \}$ with $f(1+i) = 0$.
+:::
 
-::: solution
+::: {.solution}
 One such map is
 $$
 \boxed{f(z)=\frac{z^2-2i}{z^2+2i}.}
 $$
 
 <1>1. Squaring maps $Q$ biholomorphically onto the upper half-plane $H$.
-::: proof
+::: {.proof}
 Every $z\in Q$ has a unique polar expression $re^{i\theta}$
 with $r>0$ and $0<\theta<\pi/2$. Its square has argument
 $2\theta\in(0,\pi)$, so lies in $H=\{v:\operatorname{Im}v>0\}$.
@@ -53,7 +55,7 @@ by the local inverse function theorem [@SS03].
 :::
 
 <1>2. A fractional transformation supplies the target disk and prescribed zero.
-::: proof
+::: {.proof}
 Set
 $$
 T(v)=\frac{v-2i}{v+2i},\qquad

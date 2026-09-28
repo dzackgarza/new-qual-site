@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 5. If $F$ is over $E$, and $E$ is $\quad$ over $K$ is $F$ necessarily over $K$ ? Answer this question for each of the words "algebraic," "normal," and "separable" in the blanks.
 :::
 

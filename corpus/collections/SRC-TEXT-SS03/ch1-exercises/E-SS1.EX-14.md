@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Suppose $\{a_n\}_{n=1}^N$ and $\{b_n\}_{n=1}^N$ are two finite sequences of complex numbers. Let
 \[
 B_k=\sum_{n=1}^k b_n,

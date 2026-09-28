@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-074
 kind: problem
-title: Kent State ring-theory qualifying problem 74
+title: The quotient by an ideal maximal among non-principal ideals is a principal ideal ring
 classification:
   areas: [algebra]
   topics: []

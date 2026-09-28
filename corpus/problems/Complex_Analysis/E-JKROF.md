@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta}=\frac{2 \pi}{\sqrt{a^{2}-b^{2}}}
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 The usual substitution: $z=e^{i\theta}, \dtheta = (iz)\inv \dz$.
 \[
 \int_{[0, 2\pi]} (a +b\cos(\theta))\inv \dtheta 

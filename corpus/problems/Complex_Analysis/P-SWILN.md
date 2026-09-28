@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\gamma$ be a smooth curve joining two distinct points $a, b\in \CC$.
 
 Prove that the function
@@ -24,7 +24,7 @@ f(z) \definedas \int_\gamma {g(w) \over w-z} \,dw
 is analytic in $\CC\setminus\gamma$.
 :::
 
-:::{.solution}
+::: {.solution}
 Toward applying Morera, let $T \subseteq \CC\sm \gamma$ be a triangle, so that $z\in T$ and $w\in \gamma$ implies $z-w\neq 0$.
 Then
 \[

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega \subset \mathbb{R}^n$ be a Lebesgue measurable set, $f : \Omega \to \mathbb{R}$ measurable and define
 $$
 X := \{u \in L^\infty(\Omega) : u \geq f \text{ a.e. in } \Omega\}, \quad Y := \left\{u \in L^\infty(\Omega) : \int_\Omega u\varphi \, dx \geq \int_\Omega f\varphi \, dx \; \forall \varphi \in W\right\},
@@ -39,9 +39,9 @@ where $W := \{\varphi \in L^1(\Omega) : \varphi f \in L^1(\Omega), \varphi \geq 
 (3) Prove that $X$ is sequentially closed in the weak*-topology in $L^\infty(\Omega)$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove $X\subseteq Y$ for arbitrary measurable $f$.
-::: proof
+::: {.proof}
 Let $u\in X$ and let $\varphi\in W$. Then
 \[
 u-f\ge0
@@ -62,7 +62,7 @@ X\subseteq Y.
 :::
 
 <1>2. If $f\in L^\infty$, prove $Y\subseteq X$.
-::: proof
+::: {.proof}
 Assume $f\in L^\infty$ and let $u\in Y$. Suppose $u\notin X$. Then
 \[
 A:=\{x:u(x)<f(x)\}
@@ -97,7 +97,7 @@ when $f\in L^\infty$.
 :::
 
 <1>3. Prove $Y\subseteq X$ for arbitrary measurable $f$.
-::: proof
+::: {.proof}
 Let $u\in Y$ and suppose again that
 \[
 A:=\{u<f\}
@@ -134,7 +134,7 @@ for arbitrary measurable $f$.
 :::
 
 <1>4. Prove weak* sequential closedness.
-::: proof
+::: {.proof}
 Let $(u_j)\subset X$ and suppose
 \[
 u_j\overset{*}{\rightharpoonup}u

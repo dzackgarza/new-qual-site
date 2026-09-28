@@ -2,16 +2,25 @@ schema: qual/publication@2
 id: GUIDE-COMPLEX-ANALYSIS
 kind: study-guide
 title: Complex Analysis
-lede: 'Complex analysis: holomorphic and harmonic functions, Cauchy theory, residues, conformal
-  maps, and normal families.'
+lede: >-
+  The qualifying exam syllabus in complex analysis: complex arithmetic and the elementary
+  functions, power series, holomorphy and the Cauchy--Riemann equations, harmonic
+  functions, Cauchy's theorem and integral formula, zeros and isolated singularities, the
+  argument principle, residues and contour integration, conformal maps of the disc, normal
+  families and the Riemann mapping theorem, and infinite products and special functions.
+  The last section groups qualifying-exam problems by type.
 sections:
   - slug: complex-arithmetic-and-elementary-functions
-    title: Complex Arithmetic and the Elementary Functions
+    title: Complex arithmetic and the elementary functions
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: 'Complex exponentials define trigonometric and hyperbolic functions. A continuous
-      logarithm does not exist on the punctured plane; choosing a branch on a slit plane defines
-      complex powers there. The boundary values of that branch determine the jump across the
-      slit in a keyhole-contour integral.'
+    lede: >-
+      For $z\in\CC$, $\cos z=\frac{e^{iz}+e^{-iz}}{2}$ and $\sin z=\frac{e^{iz}-e^{-iz}}{2i}$,
+      and $\cosh z=\cos(iz)$ and $\sinh z=-i\sin(iz)$. No continuous branch of $\log z$ exists
+      on $\CC\setminus\{0\}$. On the slit plane $\CC\setminus(-\infty,0]$ the principal branch
+      $\Log z=\ln\abs{z}+i\Arg z$, with $\Arg z\in(-\pi,\pi)$, is holomorphic, and its limits
+      from the two sides of the negative real axis differ by $2\pi i$. For $a\in\CC$ the power
+      $z^a=e^{a\log z}$ depends on the branch of $\log z$: changing the branch multiplies
+      $z^a$ by $e^{2\pi ika}$ for some $k\in\ZZ$.
     topics:
       - Geometry
       - Trigonometry
@@ -33,13 +42,19 @@ sections:
       - ref: PR-MWUJS
       - ref: T-E76LX
   - slug: series-and-convergence
-    title: Series and Convergence
+    title: Series and convergence
     parent: complex-arithmetic-and-elementary-functions
-    lede: "The root test gives the radius of convergence of a power series. Convergence is
-      uniform on compact subsets of its disc of convergence, permitting termwise integration
-      and differentiation. Boundary convergence requires separate analysis: summation by parts
-      and Dirichlet's test apply to particular boundary series, and Abel's theorem relates
-      a convergent boundary series to its radial limit."
+    lede: >-
+      A power series $\sum_na_nz^n$ has radius of convergence $R$ given by
+      $1/R=\limsup_n\abs{a_n}^{1/n}$ (Cauchy--Hadamard); it converges absolutely for
+      $\abs{z}<R$, uniformly on compact subsets of $\{\abs{z}<R\}$, and diverges for
+      $\abs{z}>R$. On the circle $\abs{z}=R$ the behaviour depends on the coefficients. If
+      $\sum_n\abs{a_n}R^n<\infty$, the series converges absolutely at every point of the
+      circle. By Dirichlet's test, if $R=1$ and $a_n$ decreases to $0$, the series converges
+      at every point of $\abs{z}=1$ except possibly $z=1$. The series $\sum z^n$, $\sum
+      z^n/n$, and $\sum z^n/n^2$ converge at no point, at every point except $z=1$, and at
+      every point of $\abs{z}=1$, respectively. Abel's theorem: if $\sum_na_n$ converges, then
+      $\lim_{r\to1^-}\sum_na_nr^n=\sum_na_n$.
     topics:
       - Convergence Tests
       - Series of Numbers
@@ -60,13 +75,20 @@ sections:
       - ref: FE-LAN3V
       - ref: FE-EUOB2
   - slug: holomorphy-and-analyticity
-    title: Holomorphy and Analyticity
+    title: Holomorphy and analyticity
     parent: series-and-convergence
-    lede: 'Complex differentiability implies the Cauchy–Riemann equations. Conversely, continuously
-      differentiable real and imaginary parts satisfying those equations define a holomorphic
-      function. A convergent power series is holomorphic in its disc of convergence. [Cauchy
-      Theory](cauchy-theory.html) proves that holomorphic functions have local power-series
-      expansions; their real and imaginary parts are harmonic.'
+    lede: >-
+      A function $f=u+iv$ on an open set $\Omega\subseteq\CC$ is holomorphic if
+      $f'(z)=\lim_{h\to0}\frac{f(z+h)-f(z)}{h}$ exists at every $z\in\Omega$. Taking the limit
+      along real and along imaginary $h$ gives the Cauchy--Riemann equations $u_x=v_y$,
+      $u_y=-v_x$, equivalently $\partial f/\partial\bar z=0$; conversely, if $u$ and $v$ are
+      continuously differentiable and satisfy these equations, then $f$ is holomorphic. A
+      function is analytic on $\Omega$ if it is given by a convergent power series on a
+      neighbourhood of each point. A power series is holomorphic on its disc of convergence,
+      with derivative the termwise derivative, so analytic functions are holomorphic; the
+      converse follows from the Cauchy integral formula ([Cauchy theory](cauchy-theory.html)).
+      If $u$ and $v$ are twice continuously differentiable, the Cauchy--Riemann equations give
+      $\Delta u=\Delta v=0$.
     topics:
       - Cauchy-Riemann
       - Holomorphic Functions
@@ -81,12 +103,21 @@ sections:
       - ref: D-V6UQJ
       - ref: PR-QNDSD
   - slug: harmonic-functions
-    title: Harmonic Functions
+    title: Harmonic functions
     parent: holomorphy-and-analyticity
-    lede: 'The real and imaginary parts of a holomorphic function are harmonic. On a disc,
-      every harmonic function has a harmonic conjugate and is the real part of a holomorphic
-      function. The mean-value property implies the maximum principle. The Dirichlet problem
-      asks for a harmonic function with specified boundary values.'
+    lede: >-
+      A twice continuously differentiable $u\colon\Omega\to\RR$ is harmonic if $\Delta
+      u=u_{xx}+u_{yy}=0$. The real part of a holomorphic function is harmonic. On a simply
+      connected domain every harmonic $u$ is the real part of a holomorphic function, unique
+      up to an imaginary constant: the form $-u_y\,dx+u_x\,dy$ is closed, so
+      $v(z)=\int_{z_0}^{z}(-u_y\,dx+u_x\,dy)$ is independent of the path and $u+iv$ is
+      holomorphic. Harmonic functions satisfy the mean value property
+      $u(a)=\frac{1}{2\pi}\int_0^{2\pi}u(a+re^{i\theta})\,d\theta$ for every closed disc
+      $\abs{z-a}\le r$ in $\Omega$, and hence the maximum and minimum principles. For
+      $\varphi$ continuous on the unit circle, the Poisson integral
+      $u(re^{i\theta})=\frac{1}{2\pi}\int_0^{2\pi}\frac{1-r^2}{1-2r\cos(\theta-t)+r^2}\,\varphi(e^{it})\,dt$
+      solves the Dirichlet problem on the unit disc: $u$ is harmonic on $\DD$ and extends
+      continuously to the closed disc with boundary values $\varphi$.
     topics:
       - Harmonic Functions
       - PDEs
@@ -99,14 +130,25 @@ sections:
       - ref: C-KOFDQ
       - ref: D-XR64P
   - slug: cauchy-theory
-    title: Cauchy Theory
+    title: Cauchy theory
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: "Cauchy's theorem gives vanishing integrals around closed paths in a simply connected
-      domain. The Cauchy integral formula expresses values and derivatives inside a circle
-      in terms of boundary values. Expanding its kernel gives local power-series expansions,
-      and its derivative estimates imply Liouville's theorem. The mean-value property, maximum
-      modulus principle, and identity theorem follow from these local properties. Morera's
-      theorem gives a criterion for holomorphy from vanishing triangle integrals."
+    lede: >-
+      Cauchy's theorem: if $f$ is holomorphic on a simply connected domain $\Omega$, then
+      $\oint_\gamma f\,dz=0$ for every closed piecewise smooth curve $\gamma$ in $\Omega$.
+      Cauchy's integral formula: if $f$ is holomorphic on an open set containing the closed
+      disc $\abs{w-a}\le r$, then $f^{(n)}(z)=\frac{n!}{2\pi
+      i}\oint_{\abs{w-a}=r}\frac{f(w)}{(w-z)^{n+1}}\,dw$ for $\abs{z-a}<r$ and $n\ge0$.
+      Expanding $\frac{1}{w-z}$ as a geometric series in $\frac{z-a}{w-a}$ shows that $f$
+      equals its Taylor series on $\abs{z-a}<r$, so holomorphic functions are analytic. If
+      $\abs{f}\le M$ on $\abs{w-a}=r$, Cauchy's estimate gives $\abs{f^{(n)}(a)}\le
+      n!\,M/r^n$, and Liouville's theorem follows: a bounded entire function is constant. The
+      case $n=0$ gives the mean value property
+      $f(a)=\frac{1}{2\pi}\int_0^{2\pi}f(a+re^{i\theta})\,d\theta$, from which the maximum
+      modulus principle follows: if $\abs{f}$ attains a maximum at a point of a domain, then
+      $f$ is constant. Identity theorem: two holomorphic functions on a domain that agree on a
+      set with a limit point in the domain are equal. Morera's theorem: a continuous function
+      on $\Omega$ whose integral over the boundary of every closed triangle in $\Omega$
+      vanishes is holomorphic.
     topics:
       - Liouville's Theorem
       - Entire Functions
@@ -128,16 +170,20 @@ sections:
       - ref: T-SVF2W
       - ref: T-LHSMY
   - slug: zeros-and-singularities
-    title: Zeros and Singularities
+    title: Zeros and singularities
     parent: cauchy-theory
-    lede: "A holomorphic function that is not identically zero on a connected domain has isolated
-      zeros, each factoring locally as a power times a nonvanishing holomorphic function.
-      Laurent series classify isolated singularities: an empty principal part gives a removable
-      singularity, a nonzero finite principal part gives a pole, and an infinite principal
-      part gives an essential singularity. The residue is the coefficient of $(z-a)^{-1}$.
-      Riemann's removable-singularity theorem applies when the function is bounded near the
-      isolated singularity; Casorati–Weierstrass describes dense images near an essential
-      singularity."
+    lede: >-
+      If $f$ is holomorphic on a domain and not identically zero, each zero $a$ of $f$ has a
+      finite order $m\ge1$, and $f(z)=(z-a)^mg(z)$ with $g$ holomorphic and $g(a)\ne0$; hence
+      the zeros of $f$ are isolated. At an isolated singularity $a$, $f$ has a Laurent
+      expansion $f(z)=\sum_{n\in\ZZ}c_n(z-a)^n$ on a punctured disc around $a$. The
+      singularity is removable if $c_n=0$ for all $n<0$, a pole if $c_n\ne0$ for at least one
+      and only finitely many $n<0$, and essential if $c_n\ne0$ for infinitely many $n<0$. The
+      residue of $f$ at $a$ is $\Res_af=c_{-1}$. Riemann's theorem: the singularity is
+      removable if and only if $f$ is bounded on a punctured neighbourhood of $a$. The
+      Casorati--Weierstrass theorem: if $a$ is an essential singularity, the image of every
+      punctured disc around $a$ is dense in $\CC$. A function is meromorphic on $\Omega$ if it
+      is holomorphic on $\Omega$ except at isolated poles.
     topics:
       - Meromorphic Functions
       - Singularities
@@ -159,13 +205,22 @@ sections:
       - ref: T-EO65T
       - ref: D-7DFVJ
   - slug: argument-principle
-    title: The Argument Principle
+    title: The argument principle
     parent: zeros-and-singularities
-    lede: "The logarithmic derivative of a meromorphic function has residue equal to the order
-      of a zero or the negative order of a pole. Its contour integral counts zeros minus poles,
-      with winding-number weights. Rouché's theorem preserves the zero count under a sufficiently
-      small boundary perturbation. Applying this count to nearby values gives the open mapping
-      theorem and hence the maximum modulus principle."
+    lede: >-
+      Let $\gamma$ be a positively oriented simple closed piecewise smooth curve, and let $f$
+      be meromorphic on an open set containing $\gamma$ and its interior, with no zeros or
+      poles on $\gamma$. At a zero of order $m$ the logarithmic derivative $f'/f$ has a simple
+      pole with residue $m$, and at a pole of order $m$ a simple pole with residue $-m$, so
+      the argument principle gives $\frac{1}{2\pi i}\oint_\gamma\frac{f'}{f}\,dz=Z-P$, the
+      numbers of zeros and poles inside $\gamma$ counted with multiplicity. The same integral
+      is the winding number of the curve $f\circ\gamma$ about $0$. Rouché's theorem: if $f$
+      and $g$ are holomorphic on an open set containing $\gamma$ and its interior and
+      $\abs{g}<\abs{f}$ on $\gamma$, then $f$ and $f+g$ have the same number of zeros inside
+      $\gamma$. Applying the argument principle to $f-w$ for $w$ near $f(z_0)$ proves the open
+      mapping theorem: a nonconstant holomorphic function on a domain is an open map. The
+      maximum modulus principle follows again, and applying it to $1/f$ gives the minimum
+      modulus principle for nonvanishing $f$.
     topics:
       - Rouché
       - Argument Principle
@@ -175,27 +230,39 @@ sections:
       - Polynomials
     items:
       - ref: D-IA5FS
-      - ref: D-QEVVE
+      - ref: D-PJ7JM
       - ref: T-VCX3Y
       - ref: T-EBAOE
       - ref: T-5JNUU
       - ref: C-FRF33
       - ref: T-YLI6Y
   - slug: residues
-    title: Residues and Contour Integration
+    title: Residues and contour integration
     parent: argument-principle
-    lede: "The residue theorem expresses a contour integral as a sum of residues weighted
-      by winding numbers. For a pole of finite order, a derivative formula computes the residue;
-      a simple zero of a denominator gives a quotient formula. The ML estimate and Jordan's
-      lemma provide bounds for added contour segments in real-integral calculations. Small
-      indented arcs around simple poles require their own limiting contributions. The residue
-      at infinity relates the finite poles of a meromorphic function on the sphere."
+    lede: >-
+      Residue theorem: if $f$ is holomorphic on an open set $\Omega$ except at isolated
+      singularities $a_1,\ldots,a_k$, and $\gamma$ is a closed curve in
+      $\Omega\setminus\{a_1,\ldots,a_k\}$ that is homologous to zero in $\Omega$, then
+      $\oint_\gamma f\,dz=2\pi i\sum_jn(\gamma,a_j)\Res_{a_j}f$. At a pole of order $n$,
+      $\Res_af=\frac{1}{(n-1)!}\lim_{z\to a}\frac{d^{n-1}}{dz^{n-1}}\big((z-a)^nf(z)\big)$; if
+      $g(a)\ne0$ and $h$ has a simple zero at $a$, then $\Res_a(g/h)=g(a)/h'(a)$. A real
+      integral is evaluated by closing the contour with an arc whose integral tends to $0$.
+      The ML inequality $\abs{\int_\gamma
+      f\,dz}\le\sup_\gamma\abs{f}\cdot\operatorname{length}(\gamma)$ applies when $\abs{f(z)}$
+      decays faster than $1/\abs{z}$. Jordan's lemma: for $a>0$ and the upper semicircle $C_R$
+      of radius $R$ centred at $0$,
+      $\abs{\int_{C_R}e^{iaz}g(z)\,dz}\le\frac{\pi}{a}\max_{C_R}\abs{g}$, which tends to $0$
+      when $\max_{C_R}\abs{g}\to0$. If $a$ is a simple pole of $f$, the integral of $f$ over a
+      positively oriented circular arc of angle $\theta$ centred at $a$ tends to
+      $i\theta\Res_af$ as the radius tends to $0$. The residue at infinity is $\Res_\infty
+      f=-\Res_0\big(z^{-2}f(1/z)\big)$, and if $f$ has finitely many singularities in $\CC$,
+      the sum of all its residues, including the residue at infinity, is $0$.
     topics:
       - Residues
       - Contour Integration
       - Integrals
     items:
-      - ref: T-VE5MW
+      - ref: T-HRPNO
       - ref: T-ESKLY
       - ref: C-ZTEH7
       - ref: PR-ZCMJQ
@@ -203,14 +270,21 @@ sections:
       - ref: T-SSNLT
       - ref: T-WFXQP
   - slug: conformal-maps-and-the-disc
-    title: Conformal Maps and the Disc
+    title: Conformal maps and the disc
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: 'A holomorphic map is locally injective where its derivative is nonzero. An injective
-      holomorphic map has holomorphic inverse on its image. Möbius transformations act on
-      the Riemann sphere, and the Cayley transform identifies a half-plane with the unit disc.
-      Schwarz''s lemma bounds disc self-maps fixing the origin; its equality case determines
-      rotations. Composing with disc automorphisms that move a point to the origin gives the
-      general automorphism formula and Schwarz–Pick inequalities.'
+    lede: >-
+      A holomorphic function $f$ is locally injective near $z_0$ if and only if $f'(z_0)\ne0$,
+      and then it is conformal at $z_0$; an injective holomorphic function on a domain has
+      holomorphic inverse on its image. The Möbius transformations $z\mapsto\frac{az+b}{cz+d}$
+      with $ad-bc\ne0$ act simply transitively on ordered triples of distinct points of
+      $\CC\cup\{\infty\}$ and map circles and lines to circles and lines, and the Cayley
+      transform $z\mapsto\frac{z-i}{z+i}$ maps the upper half-plane onto $\DD$. Schwarz lemma:
+      if $f\colon\DD\to\DD$ is holomorphic with $f(0)=0$, then $\abs{f(z)}\le\abs{z}$ for all
+      $z\in\DD$ and $\abs{f'(0)}\le1$, and if $\abs{f(z)}=\abs{z}$ for some $z\ne0$ or
+      $\abs{f'(0)}=1$, then $f(z)=e^{i\theta}z$ for some $\theta\in\RR$. For $a\in\DD$,
+      $\varphi_a(z)=\frac{a-z}{1-\bar az}$ is an automorphism of $\DD$ with
+      $\varphi_a\circ\varphi_a=\id$ that exchanges $a$ and $0$, and
+      $\Aut(\DD)=\{e^{i\theta}\varphi_a:\theta\in\RR,\ a\in\DD\}$.
     topics:
       - Conformal Maps
       - Fractional Linear Transformations
@@ -229,13 +303,28 @@ sections:
       - ref: T-DAETF
       - ref: T-W26VL
   - slug: normal-families-and-omitted-values
-    title: Normal Families and Omitted Values
+    title: Normal families and omitted values
     parent: conformal-maps-and-the-disc
-    lede: "Locally uniform limits of holomorphic functions are holomorphic, and their derivatives
-      converge locally uniformly. Cauchy estimates give local equicontinuity for locally bounded
-      families; Montel's theorem makes such families normal. Normal-family arguments enter
-      the proof of the Riemann mapping theorem for proper simply connected plane domains.
-      Omitted-value versions of Montel's theorem also lead to Picard's theorems."
+    lede: >-
+      A family $\mathcal F$ of holomorphic functions on $\Omega$ is normal if every sequence
+      in $\mathcal F$ has a subsequence converging uniformly on compact subsets of $\Omega$.
+      If holomorphic $f_n$ converge to $f$ uniformly on compact subsets of $\Omega$, then $f$
+      is holomorphic by Morera's theorem, and $f_n'\to f'$ uniformly on compact subsets by
+      Cauchy's integral formula. The Arzelà--Ascoli theorem: a family of continuous functions
+      on $\Omega$ that is uniformly bounded and equicontinuous on each compact subset has the
+      property that every sequence in it has a subsequence converging uniformly on compact
+      subsets. Montel's theorem: a family of holomorphic functions that is uniformly bounded
+      on each compact subset of $\Omega$ is normal, because Cauchy's estimate makes it
+      equicontinuous on compact subsets. Riemann mapping theorem: every simply connected
+      domain $\Omega\subsetneq\CC$ is biholomorphic to $\DD$; the map is obtained by
+      maximizing $\abs{f'(z_0)}$ over the injective holomorphic $f\colon\Omega\to\DD$ with
+      $f(z_0)=0$, a maximum that Montel's theorem and Hurwitz's theorem show is attained.
+      Montel's theorem for omitted values: a family of holomorphic functions on $\Omega$ that
+      all omit the same two complex values is normal in the sense that every sequence has a
+      subsequence converging uniformly on compact subsets either to a holomorphic function or
+      to $\infty$. It implies Picard's great theorem: in every punctured neighbourhood of an
+      essential singularity, a function takes every complex value, with at most one exception,
+      infinitely often.
     topics:
       - Normal Families
       - Montel
@@ -259,14 +348,24 @@ sections:
       - ref: T-HWBWI
       - ref: T-DDOWW
   - slug: special-functions-and-factorization
-    title: Special Functions and Factorization
+    title: Special functions and factorization
     parent: normal-families-and-omitted-values
-    lede: 'Weierstrass factorization constructs entire functions with prescribed discrete
-      zero sets and multiplicities. Two entire functions with the same zeros and multiplicities
-      differ by a nonvanishing entire factor, which has an entire logarithm. Hadamard factorization
-      restricts this factor for functions of finite order. The sine product connects infinite
-      products with residue calculations. Gamma and zeta functions provide examples of meromorphic
-      continuation.'
+    lede: >-
+      A nonvanishing holomorphic function on a simply connected domain is $e^g$ for a
+      holomorphic $g$. Weierstrass factorization theorem: with $E_0(u)=1-u$ and
+      $E_p(u)=(1-u)e^{u+u^2/2+\cdots+u^p/p}$, every entire function $f$ with a zero of order
+      $m$ at $0$ and nonzero zeros $a_1,a_2,\ldots$, listed with multiplicity, is
+      $f(z)=z^me^{g(z)}\prod_nE_n(z/a_n)$ for an entire function $g$, the product converging
+      uniformly on compact sets. Hadamard's theorem: if $f$ has finite order $\rho$, the
+      factors can be taken to be $E_p(z/a_n)$ with $p=\lfloor\rho\rfloor$ and $g$ a polynomial
+      of degree at most $\rho$. Examples: $\sin\pi z=\pi z\prod_{n\ge1}(1-z^2/n^2)$, whose
+      logarithmic derivative is $\pi\cot\pi z=\frac1z+\sum_{n\ge1}\frac{2z}{z^2-n^2}$, a
+      partial fraction expansion also obtained from [residues and contour
+      integration](residues.html); $\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}\,dt$, defined for
+      $\operatorname{Re}z>0$, which extends to a meromorphic function on $\CC$ with simple
+      poles at $0,-1,-2,\ldots$; and $\zeta(s)=\sum_{n\ge1}n^{-s}$, defined for
+      $\operatorname{Re}s>1$, which extends to a meromorphic function on $\CC$ with a single
+      simple pole, at $s=1$.
     topics:
       - Gamma Function
       - Riemann Zeta
@@ -285,11 +384,13 @@ sections:
       - ref: T-ZAEWG
       - ref: C-BKYF7
   - slug: problems-from-the-qualifying-exams
-    title: Problems from the Qualifying Exams
+    title: Problems from the qualifying exams
     parent: GUIDE-COMPLEX-ANALYSIS
-    lede: 'Problems are grouped by growth conditions, series expansions, limits of holomorphic
-      functions, and counterexamples. The [subject sections](../GUIDE-COMPLEX-ANALYSIS.html)
-      provide the associated statements and proofs.'
+    lede: >-
+      Qualifying-exam problems from every part of the syllabus, grouped by type: growth bounds
+      that force an entire function to be a polynomial, series and product expansions, limits
+      of sequences of holomorphic functions, and counterexamples. A problem carrying several
+      of these topics appears in each corresponding panel.
     topics:
       - Entire Functions
       - Liouville's Theorem

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be an open connected and bounded subset of $\mathbb{C}$, and $f: G \to \mathbb{C}$ an analytic function with $f(G) \subset G$.
 Let $f^n$ denote the $n$th iterate of $f$.
 Suppose that $a \in G$ is a fixed point of $f$ (i.e.\ $f(a) = a$) and $|f'(a)| < 1$.
@@ -23,7 +23,7 @@ Define the basin of attraction of $z = a$ to be the set $$\Omega := \{z \in G : 
 (b) Show, using part (a), that in fact $\Omega = G$.
 :::
 
-::: solution
+::: {.solution}
 (a) Choose $q$ with $|f'(a)|<q<1$. By continuity of
 \[
 \frac{f(z)-f(a)}{z-a}

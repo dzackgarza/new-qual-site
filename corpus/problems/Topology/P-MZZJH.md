@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that if $p: M_g \to M_h$ is an $n$-sheeted covering space between connected, closed, orientable surfaces of genus $g$ and $h$, then:
 $$g = n(h - 1) + 1.$$
 :::
 
-::: solution
+::: {.solution}
 <1>1. For a closed orientable surface of genus $r$,
 $$
 \chi(M_r)=2-2r.
@@ -36,7 +36,7 @@ $$
 $$
 \chi(M_g)=n\,\chi(M_h).
 $$
-::: proof
+::: {.proof}
 Give $M_h$ a finite CW structure. Each open cell is evenly covered, and an $n$-sheeted covering has exactly $n$ lifts of each cell. Thus every cell count is multiplied by $n$, hence so is the alternating sum defining Euler characteristic.
 :::
 

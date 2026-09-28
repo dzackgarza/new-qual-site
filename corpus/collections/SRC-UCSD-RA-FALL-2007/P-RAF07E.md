@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 For $a \in \mathbb{R}$, let $f_a$ be the function on $\mathbb{R}$ defined by $f_a(x) := e^{iax}$.
 
 (a) Show that $f_a$ is a tempered distribution on $\mathbb{R}$.
@@ -32,9 +32,9 @@ For $a \in \mathbb{R}$, let $f_a$ be the function on $\mathbb{R}$ defined by $f_
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Show that $f_a$ defines a tempered distribution.
-::: proof
+::: {.proof}
 For $\varphi\in\mathcal S(\mathbb R)$ define
 \[
 \langle T_a,\varphi\rangle
@@ -56,7 +56,7 @@ Thus $T_a$ is a continuous linear functional on the Schwartz space. Therefore $f
 :::
 
 <1>2. Compute its Fourier transform.
-::: proof
+::: {.proof}
 Use Folland's convention, as authorized by the exam instructions:
 \[
 \widehat\varphi(\xi)

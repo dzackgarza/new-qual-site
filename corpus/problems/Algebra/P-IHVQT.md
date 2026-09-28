@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 What is a tensor product?
 What is the universal property?
 What do the tensors look like in the case of vector spaces?

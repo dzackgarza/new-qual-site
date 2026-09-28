@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 In a commutative ring with 1, prove that every ideal is contained in a maximal (proper) ideal.
 :::
 

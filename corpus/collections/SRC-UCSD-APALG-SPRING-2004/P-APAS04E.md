@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 If $\lambda=(\lambda_1\ge\lambda_2\ge\dots\ge\lambda_k)$ is a partition of $n$, let $A^\lambda$ denote the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$.
 
 (a) Let $T$ be the trivial representation.

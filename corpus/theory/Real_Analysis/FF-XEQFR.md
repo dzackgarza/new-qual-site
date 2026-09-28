@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-XEQFR
 kind: fact
-title: $e^{2\pi i \over 3} = \cdots$ in rectangular coordinates
+title: $e^{2\pi i/3}$ in rectangular coordinates
+slogan: 'The cube root $e^{2\pi i/3}$ is $-\frac12+i\frac{\sqrt3}{2}$.'
 prompts:
 - What is $e^{2\pi i / 3}$ in rectangular coordinates?
 classification:
@@ -18,6 +19,6 @@ review: draft
 
 ::: {.fact}
 $$
-e^{2\pi i \over 3} = {1\over 2}\qty{-1 + i\sqrt 3}
-.$$
+e^{2\pi i/3} = \cos\frac{2\pi}{3} + i\sin\frac{2\pi}{3} = \frac{1}{2}\qty{-1 + i\sqrt 3}.
+$$
 :::

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 If the series $\sum_{n=0}^\infty a_n$ converges conditionally, show that the radius of convergence of the power series $\sum_{n=0}^\infty a_nx^n$ is 1.
 :::
 

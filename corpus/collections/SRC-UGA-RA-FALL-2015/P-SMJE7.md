@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Compute the following limit:
 \[
 \lim _{n \rightarrow \infty} \int_{1}^{n} \frac{n e^{-x}}{1+n x^{2}} \, \sin \left(\frac x n\right) \, dx
@@ -32,7 +32,7 @@ Compute the following limit:
 
 :::
 
-::: solution
+::: {.solution}
 \[
 I = \lim_{n\to\infty} \int_1^\infty {e^{-x} \over {1\over n} + x^2 }\sin(x/n)\chi_{[1, n]} \,dx
 = \int_1^\infty{e^{-x}\over x^2}\lim_{n\to\infty }\sin\qty{x\over n } \chi_{[1, n]}\,dx

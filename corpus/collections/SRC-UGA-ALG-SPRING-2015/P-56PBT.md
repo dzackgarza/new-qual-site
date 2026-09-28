@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\FF$ be a finite field.
 
 a. Give (with proof) the decomposition of the additive group $(\FF, +)$ into a direct sum of cyclic groups.

@@ -27,7 +27,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Let $f:\mathbb R^n\to[0,\infty]$ and define
 \[
 \mathcal A:=\{(x,t)\in\mathbb R^n\times\mathbb R:0\le t\le f(x)\}.
@@ -43,9 +43,9 @@ m_{n+1}(\mathcal A)
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $f$ is measurable, then $\mathcal A$ is measurable.
-::: proof
+::: {.proof}
 Define
 \[
 H(x,t):=f(x)-t.
@@ -59,7 +59,7 @@ is Lebesgue measurable.
 :::
 
 <1>2. If $\mathcal A$ is measurable, then $f$ is measurable.
-::: proof
+::: {.proof}
 For every fixed $x\in\mathbb R^n$, the vertical section is
 \[
 \mathcal A_x
@@ -79,7 +79,7 @@ is measurable. Thus $f$ is measurable.
 :::
 
 <1>3. Compute the measure of the subgraph.
-::: proof
+::: {.proof}
 Assume $f$ is measurable. By Step 1, $\mathcal A$ is measurable, so Tonelli gives
 \[
 \begin{aligned}
@@ -92,7 +92,7 @@ m_{n+1}(\mathcal A)
 :::
 
 <1>4. Derive the layer-cake formula.
-::: proof
+::: {.proof}
 For $t\ge0$, the horizontal section is
 \[
 \mathcal A^t

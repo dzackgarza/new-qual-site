@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S_4$ denote the symmetric group on $4$ elements and $A_4$ denote the alternating group, i.e. $A_4=\{\sigma\in S_4:\operatorname{sign}(\sigma)=1\}$.
 
 (a) Find the conjugacy classes of $A_4$.
@@ -28,7 +28,7 @@ Show that $D$ is a normal subgroup of $A_4$ and that $A_4/D$ is isomorphic to $\
 (e) Use (d) to complete the character table of $A_4$.
 :::
 
-::: solution
+::: {.solution}
 The even permutations in $S_4$ are the identity, the three double transpositions, and the eight $3$-cycles.
 
 For (a), the conjugacy classes in $A_4$ are

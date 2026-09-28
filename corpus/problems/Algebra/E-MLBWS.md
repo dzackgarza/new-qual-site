@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Give an example of a finite extension of fields that has infinitely many intermediate fields.
 :::
 

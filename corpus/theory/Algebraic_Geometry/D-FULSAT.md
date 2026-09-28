@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="Saturated"}
-An affine semigroup $S \subseteq M$ is **saturated** if
+An affine semigroup $S \subseteq M$ is \dfn{saturated} if
 \[
 k \in \ZZ_{>0}, \quad m \in M, \quad km \in S \implies m \in S .
 \]

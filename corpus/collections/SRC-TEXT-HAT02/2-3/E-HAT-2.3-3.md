@@ -25,9 +25,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that if $\tilde{h}$ is a reduced homology theory, then $\tilde{h}_n(\text{point}) = 0$ for all $n$.
 Deduce that there are suspension isomorphisms $\tilde{h}_n(X) \approx \tilde{h}_{n+1}(SX)$ for all $n$.
-
+:::
 
 ::: {.solution}
 <1>1. One has $\widetilde h_n(*)=0$ for every $n$.
@@ -60,5 +61,4 @@ Combining with <1>3 yields
 \[
 \boxed{\widetilde h_n(X)\cong\widetilde h_{n+1}(SX)}.
 \]
-:::
 :::

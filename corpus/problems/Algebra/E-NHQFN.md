@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 20. Prove that for any positive integer $n$ there is an irreducible polynomial of degree $n$ over $\boldsymbol{F}_{p}$
 :::
 

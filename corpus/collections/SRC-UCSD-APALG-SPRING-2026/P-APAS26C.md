@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V, \varphi)$ and $(W, \psi)$ be finite-dimensional unitary representations of a group $G$.
 Let $A \in \operatorname{Hom}_G(V, W)$ be a $G$-equivariant linear map with operator norm $\sigma_1 > 0$.
 Prove that
@@ -23,7 +23,7 @@ V_1 = \{v \in V : \|Av\| = \sigma_1 \|v\|\}
 is a subrepresentation of $(V, \varphi)$.
 :::
 
-::: solution
+::: {.solution}
 Because $A$ is $G$-equivariant,
 \[
 A\varphi(g)=\psi(g)A

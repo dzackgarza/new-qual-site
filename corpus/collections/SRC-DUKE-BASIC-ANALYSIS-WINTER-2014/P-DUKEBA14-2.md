@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f:[0,1]\to[0,\infty)$ be continuous and suppose
 \[
 \int_0^1 f(t)\,dt=0.
@@ -29,9 +29,9 @@ Let $f:[0,1]\to[0,\infty)$ be continuous and suppose
 Prove that $f(x)=0$ for every $x\in[0,1]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Assume that $f$ is positive somewhere.
-::: proof
+::: {.proof}
 Suppose $f(x_0)>0$ for some $x_0\in[0,1]$. Set
 \[
 \varepsilon:=\frac{f(x_0)}2>0.
@@ -48,7 +48,7 @@ f(x)>\varepsilon.
 :::
 
 <1>2. Integrate on that neighborhood.
-::: proof
+::: {.proof}
 The interval
 \[
 I=(x_0-\delta,x_0+\delta)\cap[0,1]

@@ -21,7 +21,7 @@ audit:
 Give 4--6 different topologies on $\mathbb R$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Define six distinct topologies on $\mathbb{R}$ and prove that they are pairwise distinct.
 
 <1>1. Definition of six topologies on $\mathbb{R}$: *Proof:* <2>1. Trivial (indiscrete) topology: $\mathcal{T}_1 = \{\emptyset, \mathbb{R}\}$.

@@ -23,7 +23,7 @@ audit:
 (b) Show that if $f: X \to Y$ is continuous and $X$ is paracompact, the subspace $f(X)$ of $Y$ need not be paracompact.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that all discrete spaces are paracompact and show that continuous images of paracompact spaces need not be paracompact.
 
 <1>1. Part (a): Discrete spaces are paracompact.

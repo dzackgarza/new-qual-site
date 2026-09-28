@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-ATMHV
 kind: fact
-title: $\sin(\pi/6) = \cdots$
+title: Value of $\sin(\pi/6)$
+slogan: '$\sin(\pi/6)=1/2$.'
 prompts:
 - What is $\sin(\pi/6)$?
 classification:
@@ -17,6 +18,6 @@ review: draft
 
 ::: {.fact}
 $$
-\sin(\pi/6) = {1\over 2}
-.$$
+\sin(\pi/6) = \frac{1}{2}.
+$$
 :::

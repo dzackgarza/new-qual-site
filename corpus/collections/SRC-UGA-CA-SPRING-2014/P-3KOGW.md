@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 \envlist
 
 - Assume $f(z)=\sum_{n=0}^{\infty} c_{n} z^{n}$ converges in $|z|<R$. Show that for $r<R$,
@@ -27,7 +27,7 @@ $$
 
 :::
 
-:::{.solution}
+::: {.solution}
 Computing the LHS:
 \[
 \int_{[0, 2\pi]} \abs{f(re^{i\theta})}^2 \dtheta

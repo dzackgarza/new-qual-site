@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \da \ts{x\in H \st Ux = x}$, let $P$ be the orthogonal projection onto $M$, and define
 \[
 S_N \da {1\over N} \sum_{n=0}^{N-1} U^n

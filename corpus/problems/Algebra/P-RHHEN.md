@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) State the **Weak** and **Strong** forms of **Hilbert's Nullstellensatz** over an algebraically closed field $k$.
 (2) State the geometric bijection between radical ideals in $k[x_1, \dots, x_n]$ and algebraic sets in $\mathbb{A}^n(k)$.
 (3) Sketch the proof of the Nullstellensatz (Zariski's Lemma / Noether Normalization, and the Rabinowitsch trick).
 :::
 
-::: solution
+::: {.solution}
 Let $k$ be algebraically closed and $R=k[x_1,\dots,x_n]$.
 
 **Weak Nullstellensatz.** Every maximal ideal of $R$ has the form

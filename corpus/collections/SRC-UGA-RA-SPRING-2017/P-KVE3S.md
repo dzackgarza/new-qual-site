@@ -26,14 +26,14 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Show that the space $C^1([a,b])$ is a Banach space when equipped with the norm
 \[
 \|f\|:=\sup_{x\in[a,b]}|f(x)|+\sup_{x\in[a,b]}|f'(x)|.
 \]
 :::
 
-::: solution
+::: {.solution}
 Let $(f_n)$ be Cauchy in this norm. Then both $(f_n)$ and $(f_n')$ are Cauchy in the uniform norm on $[a,b]$. Since $C([a,b])$ is complete, there exist continuous functions $f,g$ such that
 \[
 f_n\to f,

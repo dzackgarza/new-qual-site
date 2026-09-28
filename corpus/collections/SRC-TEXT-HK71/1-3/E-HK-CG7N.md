@@ -33,7 +33,7 @@ $$
 find all solutions of AX = 0 by row-reducing A.
 :::
 
-::: solution
+::: {.solution}
 Row-reduce $A$:
 \[
 \begin{bmatrix}
@@ -56,7 +56,7 @@ Row-reduce $A$:
 \]
 
 <1>1. The matrix has a pivot in every column.
-::: proof
+::: {.proof}
 The displayed echelon form has three nonzero pivots; equivalently its reduced
 row-echelon form is $I_3$.
 :::
@@ -65,7 +65,7 @@ row-echelon form is $I_3$.
 \[
 X=\begin{bmatrix}0\\0\\0\end{bmatrix}.
 \]
-::: proof
+::: {.proof}
 Row operations preserve the solution set of a homogeneous system. Since the
 reduced system is $I_3X=0$, all three coordinates vanish.
 :::

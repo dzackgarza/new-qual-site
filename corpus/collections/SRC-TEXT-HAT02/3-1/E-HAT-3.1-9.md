@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-9
 kind: problem
-title: Hatcher Section 3.1 Exercise 9
+title: Degree $d$ maps act on $H^n(S^n;G)$ by multiplication by $d$
 classification:
   areas:
   - topology
@@ -16,9 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
-# E-HAT-3.1-9
-
+::: {.problem}
 Show that if $f: S^n \to S^n$ has degree $d$ then $f^*: H^n(S^n; G) \to H^n(S^n; G)$ is multiplication by $d$.
+:::
 
 ::: {.solution}
 <1>1. $H^n(S^n; G) \cong G$ and $H_n(S^n) \cong \ZZ$, with the natural pairing $H^n(S^n; G) \times H_n(S^n) \to G$ given by evaluation.

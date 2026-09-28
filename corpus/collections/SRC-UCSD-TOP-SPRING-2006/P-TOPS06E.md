@@ -19,7 +19,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $X(n, k) = \mathbb{RP}^n / \mathbb{RP}^k$ denote the quotient space of $\mathbb{RP}^n$ obtained by identifying $\mathbb{RP}^k$ to a point for $0 < k < n$.
 Calculate the mod $2$ cohomology ring of $X(2k+2, k)$.
 :::
@@ -81,7 +81,6 @@ The presentation has basis $1,a,y_{k+2},\dots,y_{2k+1},a^2$, exactly one basis c
 :::
  {.proof}
 standard computation of the mod $2$ cohomology ring of real projective space.
-:::
 
 <1>2. The quotient map $q: \RP^n \to X(n,k)$ induces an injective map $q^*: H^*(X(n,k);\ZZ/2) \to H^*(\RP^n;\ZZ/2)$ whose image is the ideal $(x^{k+1})$.
 ::: {.proof}
@@ -118,5 +117,4 @@ $a = x^{k+1}$ (with $a^2 = x^{2k+2} \neq 0$ and $a^3 = 0$), and $y_i = x^i$ for 
 <1>8. Q.E.D.
 ::: {.proof}
 <1>7.
-:::
 :::

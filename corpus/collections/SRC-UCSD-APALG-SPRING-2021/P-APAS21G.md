@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $\lambda, \mu \vdash n$ be partitions and let $S^\lambda$, $S^\mu$ be the corresponding irreducible $S_n$-modules.
 Endow the tensor product $S^\lambda \otimes S^\mu$ with the structure of an $S_n$-module by the rule
 \[

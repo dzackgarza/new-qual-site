@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-YWRVG
 kind: definition
-title: Essential supremum and infimum, essentially bounded
+title: Essential supremum and infimum, essentially bounded functions
 classification:
   areas:
   - real-analysis
@@ -14,12 +14,24 @@ review: draft
 ---
 
 ::: {.definition}
-An **essential lower bound** $b$ on a function $f$ is any real number such that $S_{b} \da \ts{x\st f(x) < b } = f\inv(-\infty, b)$ has measure zero.
-The **essential infimum** is the supremum of all essential lower bounds, i.e. $\ess\inf f \da \sup_{b} \ts{b\st \mu S_b = 0}$.
-This is the greatest lower bound almost everywhere.
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure]] space and let $f\colon X\to\RR$ be [[D-DHFN4|measurable]].
 
-Similarly an **essential upper bound** $c$ is any number such that $S^c \da f\inv(c, \infty)$ has measure zero, and the **essential supremum** is $\ess\sup f \da \inf_{c} \ts{c\st \mu S^c = 0}$, which is the least upper bound almost everywhere.
+- An \dfn{essential lower bound} of $f$ is a real number $b$ such that $S_{b} \coloneqq \theset{x\in X\suchthat f(x) < b } = f\inv((-\infty, b))$ has measure zero.
+  The \dfn{essential infimum} of $f$ is the supremum of its essential lower bounds:
+  $$
+  \ess\inf f \coloneqq \sup \theset{b\in\RR\suchthat \mu (S_b) = 0}.
+  $$
 
-A function is **essentially bounded** if $\norm{f}_\infty \da \ess\sup f < \infty$.
-These are functions which are bounded almost everywhere.
+- An \dfn{essential upper bound} of $f$ is a real number $c$ such that $T_c \coloneqq \theset{x\in X\suchthat f(x) > c} = f\inv((c, \infty))$ has measure zero.
+  The \dfn{essential supremum} of $f$ is the infimum of its essential upper bounds:
+  $$
+  \ess\sup f \coloneqq \inf \theset{c\in\RR\suchthat \mu (T_c) = 0}.
+  $$
+
+- A measurable function $g\colon X\to\CC$ is \dfn{essentially bounded} if $\norm{g}_\infty \coloneqq \ess\sup \abs{g} < \infty$.
+:::
+
+::: {.remark}
+The essential infimum is the largest $b$ with $f\geq b$ almost everywhere, and the essential supremum is the smallest $c$ with $f\leq c$ almost everywhere, when these are finite.
+An essentially bounded function is bounded outside a set of measure zero.
 :::

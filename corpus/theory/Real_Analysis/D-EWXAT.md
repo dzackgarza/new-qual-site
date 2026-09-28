@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-\[
-\phi_{t}(x) = t^{-n} \phi\left(t^{-1} x\right)
-.\]
+::: {.definition}
+Let $\phi\colon\RR^n\to\CC$ be a function and let $t>0$.
+The \dfn{dilation} of $\phi$ by $t$ is the function $\phi_t\colon\RR^n\to\CC$ given by
+$$
+\phi_{t}(x) \coloneqq t^{-n} \phi\qty{t^{-1} x}.
+$$
 :::

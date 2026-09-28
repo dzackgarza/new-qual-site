@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-BXAA5
 kind: proposition
-title: General construction for wedge products
+title: Universal covers of wedge sums
+slogan: 'The universal cover of a wedge is a tree of copies of the summands'' universal covers.'
 classification:
   areas:
   - topology
@@ -14,11 +15,7 @@ review: draft
 ---
 
 ::: {.proposition}
-For a wedge product $X = \bigvee_i^n \tilde X_i$, the covering space $\tilde X$ is constructed as a infinite tree with $n\dash$colored vertices:
-
-- Each vertex corresponds to one of the universal covers $\tilde X_i$,
-
-- The color corresponds to which summand $\tilde X_i$ appears,
-
-- T The neighborhood of each colored vertex has edges corresponding (not bijectively) to generators of $\pi_1(X_i)$.
+Let $X = X_1\vee\cdots\vee X_n$, where each $X_i$ is path-connected, locally path-connected and semilocally simply connected, and each basepoint is a deformation retract of an open neighborhood.
+The universal cover $\tilde X$ is a union of copies of the universal covers $\tilde X_i$, glued at lifts of the basepoint, such that the graph with one vertex for each copy, one vertex for each lift of the basepoint, and an edge whenever a copy contains a lift, is a tree.
+For example, the universal cover of $\RP^2\vee\RP^2$ is an infinite chain of $2$-spheres, each tangent to its two neighbors [@Hat02].
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f_k: \Omega\to \CC$ is a sequence of differentiable functions converging locally uniformly to $f:\Omega\to \CC$.
 Show that
 
@@ -27,7 +27,7 @@ Thus if $f(z) = \sum{k\geq 0} c_k (z-z_0)^k$ is a power series, since $S_N\to f$
 
 :::
 
-:::{.solution}
+::: {.solution}
 That $f$ is continuous is a local question: fixing a point $z_0$, take a closed disc $\DD+z_0$ about $z_0$.
 By local uniform convergence $f_k\to f$ uniformly on $\DD+z_0$, and differentiable $\implies$ continuous.
 So each $f_k$ is continuous, making $f$ continuous on $\DD+z_0$ by the uniform limit theorem.

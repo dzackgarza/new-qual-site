@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Find the character table of the dihedral group $D_4$ of symmetries of a square.
 The group algebra of $D_4$ is isomorphic to a direct sum
 \[

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-07
 kind: problem
-title: Questions from Tie — Fall 2015, question 7
+title: The Gaussian $e^{-\pi x^2}$ is its own Fourier transform for complex frequencies
 classification:
   areas:
   - complex-analysis

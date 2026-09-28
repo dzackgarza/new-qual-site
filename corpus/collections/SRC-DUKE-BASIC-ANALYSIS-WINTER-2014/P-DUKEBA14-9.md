@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb R^p$ be open and let $f:U\to\mathbb R^n$ be $C^1$. Suppose that for some $x_0\in U$, the derivative $Df_{x_0}$ has rank $p$. Prove that, after suitable local changes of coordinates near $x_0$ and $f(x_0)$, the map $f$ is the standard linear inclusion
 \[
 u\longmapsto (u,0)\in\mathbb R^p\times\mathbb R^{n-p}.
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Choose $p$ target coordinates with an invertible Jacobian minor.
-::: proof
+::: {.proof}
 Since $Df_{x_0}$ has rank $p$, some $p\times p$ minor is invertible. After permuting the coordinates of $\mathbb R^n$, assume it is the minor formed by the first $p$ components. Write
 \[
 F=(f_1,\ldots,f_p):U\to\mathbb R^p.
@@ -39,7 +39,7 @@ Then $DF_{x_0}$ is invertible.
 :::
 
 <1>2. Use $F$ as a coordinate system on the domain.
-::: proof
+::: {.proof}
 By the inverse function theorem, there are neighborhoods $V$ of $x_0$ and $W$ of $F(x_0)$ such that
 \[
 F:V\to W
@@ -57,7 +57,7 @@ where
 :::
 
 <1>3. Straighten the graph in the target.
-::: proof
+::: {.proof}
 Near $(F(x_0),\phi(F(x_0)))=f(x_0)$ define
 \[
 \Psi(u,v)=(u,v-\phi(u)),
@@ -80,7 +80,7 @@ Thus $\Psi$ is a local $C^1$ change of target coordinates.
 :::
 
 <1>4. Compute the map in the new coordinates.
-::: proof
+::: {.proof}
 For $u\in W$,
 \[
 \Psi(f(H(u)))

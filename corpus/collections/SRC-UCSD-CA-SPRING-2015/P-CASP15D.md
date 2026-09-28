@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 $$
 \int_0^\infty \frac{\log x}{x^2 - 1} \, dx.
 $$
 :::
 
-::: solution
+::: {.solution}
 The apparent singularity at $x=1$ is removable, since
 \[
 \frac{\log x}{x^2-1}\longrightarrow\frac12.

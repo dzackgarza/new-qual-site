@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that there is no simple group of order $40$.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ have order
 \[
 |G|=40=2^3\cdot5.

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 - $\star$: Show that for $E\subseteq \RR^n$, TFAE: 
   1. $E$ is measurable
   2. $E = H\union Z$ here $H$ is $F_\sigma$ and $Z$ is null

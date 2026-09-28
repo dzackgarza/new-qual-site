@@ -26,7 +26,7 @@ A finite morphism is closed, so $f$ is not finite, and one sees it on rings: $k[
 :::
 
 ::: {.remark}
-This is the same example that shows $\AA^1$ is not universally closed, viewed from the other side: the hyperbola is a closed subscheme of $\fiberprod{\AA^1}{k}{\AA^1}$ whose image under the projection is not closed.
+The same hyperbola also witnesses failure of universal closedness for $\AA^1$: it is closed in $\AA^1\times\AA^1$ while its projection is not closed.
 
 The example has two consequences. Zariski's main theorem repairs it: a separated quasi-finite morphism is an open immersion followed by a finite one, and here the finite morphism is the identity of $\AA^1$ and the open immersion is $\GG_m \injects \AA^1$.
 Over a locally Noetherian base, finite is exactly proper plus quasi-finite, and the failure above is the failure of properness.

@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $p(x)\in\mathbb Q[x]$ have Galois group $\mathbb Z/4\mathbb Z\times\mathbb Z/4\mathbb Z$.
 What can be said about the solvability of $p(x)$ by radicals?
 :::
 
-::: solution
+::: {.solution}
 The polynomial is solvable by radicals.
 
 <1>1. Its Galois group is solvable.
-::: proof
+::: {.proof}
 By hypothesis,
 \[
 G\cong \mathbb Z/4\mathbb Z\times\mathbb Z/4\mathbb Z.
@@ -41,7 +41,7 @@ is trivial, so its derived series terminates after one step.
 
 <1>2. A polynomial over $\mathbb Q$ is solvable by radicals if and only if its
 Galois group is solvable.
-::: proof
+::: {.proof}
 This is the Galois criterion for solvability by radicals in characteristic
 zero. Applying it to <1>1 gives the conclusion.
 :::

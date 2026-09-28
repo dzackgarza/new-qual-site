@@ -10,14 +10,106 @@ hand-edited. Issue #2 is what empties it.
 
 from __future__ import annotations
 
+import argparse
+import re
+import subprocess
+from collections.abc import ItemsView
 from pathlib import Path
 
-from qualc.cli import load
-from qualc.model import ParsedCard
+import yaml
+from pydantic import TypeAdapter
+from qualc import index
+from qualc.model import Card, ParsedCard, discover, parse_cards_with, split_front_matter
 from qualc.pandoc_batch import PandocServer
 
 REPO = Path(__file__).resolve().parent.parent
-OUT = REPO / "queues" / "C-unsolved-cards.md"
+
+QUEUE_LINE = re.compile(r'^- \[ \] (?P<id>\S+) — "(?P<title>.*)"$')
+SOLUTION_OPEN = re.compile(r"^:{3,}\s*(?:solution|\{[^}\n]*\.solution(?:\s+[^}]*)?\})\s*$", re.M)
+CARD_ADAPTER: TypeAdapter[Card] = TypeAdapter(Card)
+
+
+def queue_entries(text: str) -> dict[str, str]:
+    """Parse the generated queue into ``{card id: title}``."""
+    out: dict[str, str] = {}
+    for line in text.splitlines():
+        match = QUEUE_LINE.match(line)
+        if match:
+            out[match.group("id")] = match.group("title")
+    return out
+
+
+def queue_entry_from_text(text: str, path: Path) -> tuple[str, str] | None:
+    """Return one unsolved queue entry from a card's text, without starting Pandoc."""
+    meta, body = split_front_matter(text, path)
+    card = CARD_ADAPTER.validate_python(meta)
+    if card.kind != "problem" or SOLUTION_OPEN.search(body):
+        return None
+    return card.id, card.title
+
+
+def _git(root: Path, *args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(["git", *args], cwd=root, text=True, capture_output=True, check=check)
+
+
+def _git_text(root: Path, spec: str) -> str | None:
+    result = _git(root, "show", spec, check=False)
+    return result.stdout if result.returncode == 0 else None
+
+
+def changed_cards(root: Path, base: str) -> list[tuple[Path | None, Path | None]]:
+    """Return ``(old_path, new_path)`` pairs for card changes between ``base`` and HEAD."""
+    result = _git(root, "diff", "--name-status", "--find-renames", base, "HEAD", "--", "corpus")
+    changes: list[tuple[Path | None, Path | None]] = []
+    for line in result.stdout.splitlines():
+        parts = line.split("\t")
+        status = parts[0][0]
+        old_path: Path | None
+        new_path: Path | None
+        if status == "R":
+            old_path, new_path = Path(parts[1]), Path(parts[2])
+        elif status == "D":
+            old_path, new_path = Path(parts[1]), None
+        else:
+            old_path, new_path = (Path(parts[1]) if status != "A" else None), Path(parts[1])
+        if (old_path and old_path.suffix == ".md") or (new_path and new_path.suffix == ".md"):
+            changes.append((old_path, new_path))
+    return changes
+
+
+def incremental_from_range(root: Path, base: str) -> str:
+    """Update Queue C over the commits since ``base``, starting from ``base``'s generated queue."""
+    baseline = _git_text(root, f"{base}:queues/C-unsolved-cards.md")
+    if baseline is None:
+        raise SystemExit(f"{base} has no queues/C-unsolved-cards.md; run a full rebuild")
+    entries = queue_entries(baseline)
+    for old_path, new_path in changed_cards(root, base):
+        if old_path is not None:
+            old_text = _git_text(root, f"{base}:{old_path.as_posix()}")
+            if old_text is not None:
+                old_id = _card_id(old_text)
+                if old_id is not None:
+                    entries.pop(old_id, None)
+        if new_path is not None:
+            new_text = _git_text(root, f"HEAD:{new_path.as_posix()}")
+            if new_text is None:
+                raise SystemExit(f"cannot read pushed card: {new_path}")
+            new_entry = queue_entry_from_text(new_text, new_path)
+            if new_entry is not None:
+                entries[new_entry[0]] = new_entry[1]
+    return render_entries(entries.items())
+
+
+def _card_id(text: str) -> str | None:
+    """The id of a card as it stood at the base, read only to retire its queue line.
+
+    The base was accepted under earlier rules, so it is read with the plain safe loader:
+    a base card that repeats a key must still leave the queue when it changes.
+    """
+    if not text.startswith("---\n"):
+        return None
+    meta = yaml.safe_load(text.split("---\n", 2)[1])
+    return str(meta["id"]) if isinstance(meta, dict) and "id" in meta else None
 
 
 def unsolved(parsed: list[ParsedCard]) -> list[ParsedCard]:
@@ -29,39 +121,64 @@ def unsolved(parsed: list[ParsedCard]) -> list[ParsedCard]:
     return [item for item in parsed if item.card.kind == "problem" and not any(kind == "solution" for kind, _text in item.sections)]
 
 
-def render(cards: list[ParsedCard]) -> str:
-    ordered = sorted((c.card.id, c.card.title) for c in cards)
+def render_entries(entries: list[tuple[str, str]] | ItemsView[str, str]) -> str:
+    ordered = sorted(entries)
     lines = [
         "# Document queue C: Unsolved problem cards",
         "",
-        f"{len(cards)} problem cards have no solution section. These are",
+        f"{len(ordered)} problem cards have no solution section. These are",
         "the cards issue #2 targets: write a Lamport-style structured proof for each.",
         "",
-        "Regenerated by `just unsolved`, and by the commit gate whenever a commit touches",
+        "Regenerated by `just unsolved`, and by the push gate whenever pushed commits touch",
         "the corpus. A card leaves this list by gaining a solution, so the boxes are a",
         "measurement and not a ledger -- ticking one by hand does not survive the next",
-        "commit, and writing the solution removes the line.",
+        "regeneration, and writing the solution removes the line.",
         "",
         "## Count",
         "",
     ]
-    lines += [f"- Problems: {len(cards)}", "", f"## Problems ({len(cards)})", ""]
+    lines += [f"- Problems: {len(ordered)}", "", f"## Problems ({len(ordered)})", ""]
     lines += [f'- [ ] {card_id} — "{title}"' for card_id, title in ordered]
     lines.append("")
     return "\n".join(lines)
 
 
-def main() -> None:
+def render(cards: list[ParsedCard]) -> str:
+    return render_entries([(c.card.id, c.card.title) for c in cards])
+
+
+def load_cards(root: Path) -> list[ParsedCard]:
+    """Parse and validate exactly the inputs that determine Queue C.
+
+    Wiki prose, assets, publications, and rendered-site links do not affect whether a
+    problem card has a solution section.  Keeping them out of this measurement also
+    lets the commit hook evaluate a temporary-index snapshot without materializing the
+    full repository.
+    """
     with PandocServer() as pandoc:
-        parsed, _wiki_pages, errors = load(REPO, pandoc)
+        parsed, errors = parse_cards_with(pandoc, discover(root / "corpus"))
+    if not errors:
+        errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies", root / "wiki"))
     if errors:
         raise SystemExit(f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}")
-    rendered = render(unsolved(parsed))
-    if OUT.exists() and OUT.read_text() == rendered:
-        print(f"{OUT.relative_to(REPO)}: up to date")
+    return parsed
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--root", type=Path, default=REPO)
+    parser.add_argument("--incremental-range", metavar="BASE", help="update from the queue at BASE over card changes since BASE")
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+    out = root / "queues" / "C-unsolved-cards.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+
+    rendered = incremental_from_range(root, args.incremental_range) if args.incremental_range else render(unsolved(load_cards(root)))
+    if out.exists() and out.read_text() == rendered:
+        print(f"{out.relative_to(root)}: up to date")
         return
-    OUT.write_text(rendered)
-    print(f"{OUT.relative_to(REPO)}: rewritten")
+    out.write_text(rendered)
+    print(f"{out.relative_to(root)}: rewritten")
 
 
 if __name__ == "__main__":

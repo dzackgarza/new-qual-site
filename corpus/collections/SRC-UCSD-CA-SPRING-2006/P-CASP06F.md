@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic on the closed disc of radius $R$ and assume that $f(0) \neq 0$.
 Let the zeros of $f$ in the open disc be ordered by increasing absolute value, $z_1, z_2, \ldots, z_N$, each zero being repeated according to its multiplicity.
 Prove that $$|f(0)| \leq \frac{\sup_{|z|=R} |f(z)|}{R^N} |z_1 z_2 \cdots z_N|.$$
 :::
 
-::: solution
+::: {.solution}
 For a zero $a$ with $|a|<R$, define the radius-$R$ Blaschke factor
 \[
 B_a(z)=\frac{R(z-a)}{R^2-\overline a z}.

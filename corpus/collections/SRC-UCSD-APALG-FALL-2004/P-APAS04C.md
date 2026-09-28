@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $\hat{x}$ be a least squares solution to $Ax=b$, where $A\in M_{m,n}$ and $m\ge n$.
 Let $A^\dagger$ be the pseudo-inverse of $A$.
 Use the Singular Value Decomposition to show that $\tilde{x}=A^\dagger b$ is the min $2$-norm least squares solution to $Ax=b$, i.e., show

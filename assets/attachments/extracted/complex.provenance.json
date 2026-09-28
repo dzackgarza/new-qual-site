@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/complex.pdf",
+  "source_pdf_sha256": "b15b28efcdf7e9629f1f59ba28a0f3785f6455636d05b823d6df6e2abf680931",
+  "extracted_markdown": "assets/attachments/extracted/complex.md",
+  "extracted_markdown_sha256": "c7d0c8ca1ad629369d33a29e88b2ffecd211f885aec87a2c4fd5993de2492a3f",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 39,
+  "command": "just ocr-pdf assets/attachments/complex.pdf assets/attachments/extracted/complex.md",
+  "generated_at": "2026-09-16"
+}

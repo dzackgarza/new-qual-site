@@ -27,7 +27,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Suppose that
 
 - $f_n,f\in L^1$,
@@ -37,7 +37,7 @@ Suppose that
 Show that $\int f_n\to\int f$.
 :::
 
-::: solution
+::: {.solution}
 Define
 \[
 g_n:=|f_n|+|f|-|f_n-f|.

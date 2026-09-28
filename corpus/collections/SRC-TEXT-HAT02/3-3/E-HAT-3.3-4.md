@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Given a covering space action of a group $G$ on an orientable manifold $M$ by orientation-preserving homeomorphisms, show that $M/G$ is also orientable.
+:::
 
 ::: {.solution}
 Let $q:M\to M/G$ be the quotient map. Since the action is a covering-space action, $q$ is a covering map and $M/G$ is a manifold.

@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be the subring of $M_2(\mathbb Q)$ consisting of matrices commuting with
 \[
 \begin{pmatrix}1&1\\0&1\end{pmatrix}.

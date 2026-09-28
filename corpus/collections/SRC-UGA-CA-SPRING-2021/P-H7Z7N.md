@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R$ be the intersection of the right half-plane and the outside of the circle $\abs{z - {1\over 2}} = {1\over 2}$ with the line segment $[1, 2]$ removed, i.e. 
 \[
 R = \ts{z\in \CC\st \Re(z) > 0,\,\, \abs{z-{1\over 2}} > {1\over 2} } \sm \ts{z \da x+iy \st 1\leq x\leq 2,\,\, y=0}
@@ -22,7 +22,7 @@ R = \ts{z\in \CC\st \Re(z) > 0,\,\, \abs{z-{1\over 2}} > {1\over 2} } \sm \ts{z 
 Find a conformal map from $R$ to $\HH$ the upper half-plane.
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Blow up the point of tangency: inverting through a circle sends inner circles to lines, fixes the real line, and preserves regions between curves. 
@@ -34,7 +34,7 @@ E.g. the image of $\abs{z-i/2} =2$ is $\ts{ \Im(z) = 2}$
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note: this seems unusually difficult for a UGA question!
 This is a bigon with one vertex $z_2 = 0$, so send it to infinity and keep track of the slit.
 

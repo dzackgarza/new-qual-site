@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Q_8$ denote the quaternion group $Q_8 = \{\pm 1, \pm i, \pm j, \pm k\}$ with the usual multiplication
 \[
 (-1)^2 = 1,\quad
@@ -30,7 +30,7 @@ jk = i = -kj.
 Calculate the character table of $Q_8$.
 :::
 
-::: solution
+::: {.solution}
 The conjugacy classes are
 \[
 \{1\},\qquad \{-1\},\qquad \{\pm i\},\qquad \{\pm j\},\qquad \{\pm k\}.

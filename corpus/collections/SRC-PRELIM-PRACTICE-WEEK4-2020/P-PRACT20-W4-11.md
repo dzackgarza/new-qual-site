@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: P-PRACT20-W4-11
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 11"
+title: Possible dimensions of the intersection of two subspaces
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Subspaces
+  - Dimension
 relations: []
 review: draft
 ---

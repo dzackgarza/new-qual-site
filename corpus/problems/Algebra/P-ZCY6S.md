@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and work with finite-dimensional complex representations. State the character orthogonality relations and explain how characters detect irreducible constituents.
 :::
 
-::: solution
+::: {.solution}
 For class functions $\chi,\psi:G\to\CC$, define
 \[
 \langle\chi,\psi\rangle

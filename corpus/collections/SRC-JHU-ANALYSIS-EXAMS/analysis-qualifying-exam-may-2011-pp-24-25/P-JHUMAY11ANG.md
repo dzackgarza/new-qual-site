@@ -38,42 +38,60 @@ Let $f\in L^\infty([0,1])$.
 :::
 
 ::: {.solution}
-Let $M=\|f\|_\infty$. Since $[0,1]$ has measure $1$,
-\[
-\|f\|_p^p=\int_0^1|f|^p\le M^p,
-\]
-so
-\[
-\|f\|_p\le M.
-\]
-This proves part (a) and gives
-\[
-\limsup_{p\to\infty}\|f\|_p\le M.
-\]
+<1>1. For every $1<p<\infty$,
+$$
+\norm{f}_p\le\norm{f}_\infty.
+$$
+::: {.proof}
+Let $M=\norm{f}_\infty$. Since $[0,1]$ has measure $1$,
+$$
+\norm{f}_p^p=\int_0^1\abs{f}^p\le M^p,
+$$
+and taking $p$th roots gives the claim. In particular,
+$$
+\limsup_{p\to\infty}\norm{f}_p\le M.
+$$
+:::
 
-Fix $\varepsilon>0$. By the definition of essential supremum,
-\[
-A_\varepsilon=\{x:|f(x)|>M-\varepsilon\}
-\]
-has positive measure whenever $M>0$. Therefore
-\[
-\|f\|_p^p\ge (M-\varepsilon)^p m(A_\varepsilon),
-\]
+<1>2. If $M>0$, then
+$$
+\liminf_{p\to\infty}\norm{f}_p\ge M.
+$$
+::: {.proof}
+Fix $0<\varepsilon<M$. By the definition of essential supremum,
+$$
+A_\varepsilon=\{x:\abs{f(x)}>M-\varepsilon\}
+$$
+has positive measure. Therefore
+$$
+\norm{f}_p^p\ge (M-\varepsilon)^p m(A_\varepsilon),
+$$
 so
-\[
-\|f\|_p\ge (M-\varepsilon)m(A_\varepsilon)^{1/p}.
-\]
+$$
+\norm{f}_p\ge (M-\varepsilon)m(A_\varepsilon)^{1/p}.
+$$
 Letting $p\to\infty$ gives
-\[
-\liminf_{p\to\infty}\|f\|_p\ge M-\varepsilon.
-\]
+$$
+\liminf_{p\to\infty}\norm{f}_p\ge M-\varepsilon.
+$$
 Since $\varepsilon>0$ is arbitrary,
-\[
-\liminf_{p\to\infty}\|f\|_p\ge M.
-\]
-Combining the liminf and limsup bounds yields
-\[
-\boxed{\lim_{p\to\infty}\|f\|_p=\|f\|_\infty}.
-\]
-The case $M=0$ is immediate.
+$$
+\liminf_{p\to\infty}\norm{f}_p\ge M.
+$$
+:::
+
+<1>3. Therefore
+$$
+\boxed{
+\lim_{p\to\infty}\norm{f}_p=\norm{f}_\infty.
+}
+$$
+::: {.proof}
+If $M=0$, then $f=0$ almost everywhere and the result is immediate. If $M>0$, combine the limsup bound from step <1>1 with the liminf bound from step <1>2.
+:::
+
+<1>4. Q.E.D.
+::: {.proof}
+Step <1>1 proves part (a), and step <1>3 proves part (b).
+:::
 :::

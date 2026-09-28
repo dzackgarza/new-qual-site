@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a compact Lie group and let $\rho:G\to GL(V)$ be a finite-dimensional continuous complex representation. Show that $\rho$ is equivalent to a unitary representation.
 :::
 
-::: solution
+::: {.solution}
 Choose any Hermitian inner product $\langle-,-\rangle_0$ on $V$. Let $\mu$ be normalized Haar probability measure on the compact group $G$. Define
 \[
 \langle v,w\rangle_G

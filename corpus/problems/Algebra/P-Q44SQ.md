@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that every subgroup of order $5$ in $S_5$ acts transitively on $\{1,2,3,4,5\}$.
 :::
 

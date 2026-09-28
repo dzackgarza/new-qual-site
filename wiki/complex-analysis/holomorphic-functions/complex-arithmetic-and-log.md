@@ -14,48 +14,44 @@ topics:
 
 [[D-YKB3V]]
 
-:::{.fact title="Complex roots of a number"}
-The $n$th roots of $z \da r e^{i\theta}$ are
-\[
+::: {.fact title="Complex roots of a number"}
+The $n$th roots of $z \coloneqq r e^{i\theta}\neq 0$ are
+$$
 z = re^{i\theta} = re^{i\qty{\theta + 2k\pi}} \implies z^{1/n} =
-\qty{ re^{i\qty{\theta + 2k\pi}} }^{1\over n} = r^{1\over n} e^{i\qty{\theta + 2k\pi \over n}}
-\leadsto
-\ts{ \omega_k \da r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }
-.\]
-One root is $r^{1/n}\in\RR$, and the rest are spaced by angles of $2\pi/n$.
-The mnemonic is the first equality: write the angle as $\theta + 2k\pi$ *before* taking the root, and the $n$ roots appear on their own.
+\qty{ re^{i\qty{\theta + 2k\pi}} }^{1\over n} = r^{1\over n} e^{i\qty{\theta + 2k\pi \over n}},
+\qquad
+\ts{ \omega_k \coloneqq r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }.
+$$
+The roots have modulus $r^{1/n}$ and are spaced by angles of $2\pi/n$.
+Writing the argument as $\theta + 2k\pi$ before taking the root produces all $n$ of them.
 
 :::
 
-:::{.fact}
-Since $\CC$ is a field, $\CC[x]$ is a UFD, and every polynomial factors into linear terms.
+::: {.fact}
+Since $\CC$ is algebraically closed, every polynomial in $\CC[x]$ factors into linear factors.
 
 :::
 
 ## The logarithm
 
-:::{.fact title="Complex log"}
-For $z = re^{i\theta}\neq 0$, the angle $\theta$ has the form $\Theta + 2k\pi$ with $\Theta = \Arg z$.
-Define
-\[
-\log(z) = \ln\qty{\abs{z}} + i\Arg(z), \qquad z^c \da e^{c\log(z)}
-,\]
-so that $\log(re^{i\theta}) = \ln\abs r + i\theta$.
+::: {.fact title="Complex log"}
+For $z = re^{i\theta}\neq 0$, the angle $\theta$ has the form $\Theta + 2k\pi$ with $\Theta = \Arg z\in(-\pi,\pi]$.
+The principal logarithm and principal powers are
+$$
+\log(z) = \ln\abs{z} + i\Arg(z), \qquad z^c \coloneqq e^{c\log(z)},
+$$
+and $\ln r + i\theta$ is a value of $\log(re^{i\theta})$ for every choice of $\theta$.
 
 :::
 
-:::{.fact}
-A common move: $f^{1/n} = e^{{1\over n}\log f}$, taking a principal branch of $\log$ on $\CC\sm(-\infty, 0]$.
+::: {.fact}
+For $f$ holomorphic with values in $\CC\sm(-\infty, 0]$, $f^{1/n} \coloneqq e^{{1\over n}\log f}$ with the principal branch of $\log$ is a holomorphic $n$th root of $f$.
 
 :::
 
-The multivalued formula becomes a holomorphic function only after the domain permits a
-consistent choice of argument.  On the principal slit plane, fixing
-\(-\pi<\arg z<\pi\) gives the standard branch; more generally, a simply connected
-domain avoiding \(0\) admits a holomorphic logarithm.  Once a branch of \(\log\) has
-been fixed, fractional powers are not a new construction: define
-\(z^\alpha=e^{\alpha\log z}\), and remember that changing the logarithm branch can
-change the resulting power.
+The multivalued formula defines a holomorphic function only on a domain that admits a continuous choice of argument.
+On the slit plane $\CC\sm(-\infty,0]$, the choice $-\pi<\arg z<\pi$ gives the principal branch, and every simply connected domain not containing $0$ admits a holomorphic logarithm.
+Once a branch of $\log$ is fixed, $z^\alpha\coloneqq e^{\alpha\log z}$, and a different branch of $\log$ multiplies $z^\alpha$ by $e^{2\pi i k\alpha}$ for some $k\in\ZZ$.
 
 [[PR-MWUJS]]
 
@@ -65,42 +61,41 @@ change the resulting power.
 
 [[D-T6INB]]
 
-For a nonvanishing holomorphic function \(f\), the same issue is detected by the
-logarithmic derivative.  A holomorphic logarithm \(g\) would satisfy
-\(g'=f'/f\); hence the periods of \(f'/f\) around closed curves must vanish.  Conversely,
-when those periods vanish one can integrate \(f'/f\) to construct \(g\).  On a simply
-connected domain this period obstruction disappears, giving the standard existence
-criterion used to define holomorphic roots of nonvanishing functions.
+For a nonvanishing holomorphic function $f$ on a domain $\Omega$, a holomorphic logarithm $g$ of $f$ satisfies $g'=f'/f$, so $\int_\gamma f'/f = 0$ for every closed curve $\gamma$ in $\Omega$.
+Conversely, if $\int_\gamma f'/f=0$ for every closed curve $\gamma$ in $\Omega$, then $f'/f$ has a primitive $g$, and adjusting $g$ by a constant gives $e^g = f$.
+On a simply connected domain these integrals vanish by Cauchy's theorem, which gives the existence theorem for logarithms and roots of nonvanishing functions:
 
 [[T-NRSFZ]]
 
 ## Branch cuts and branch points
 
-:::{.warnings}
-It is tempting to define
-\[
-z^{1\over n} \da (re^{i\theta})^{1\over n} = r^{1\over n} e^{i\theta \over n}
-,\]
-but this needs a branch cut to be continuous.
+::: {.warnings}
+The formula
+$$
+z^{1\over n} \coloneqq (re^{i\theta})^{1\over n} = r^{1\over n} e^{i\theta \over n}
+$$
+depends on the choice of $\theta$, and a choice continuous in $z$ exists only after removing a branch cut.
 
 :::
 
-:::{.remark title="Where continuity fails"}
-Take $z \da x + i0$ with $x \in \RR^{\leq 0}$, and approach from either side with $z_\pm \da x \pm i\eps$:
+::: {.remark title="Where continuity fails"}
+Take $z \coloneqq x + i0$ with $x <0$, and approach it from either side along $z_\pm \coloneqq x \pm i\varepsilon$ as $\varepsilon\to 0^+$.
+For the principal branch:
 
-- $\log(z_+) = \log\abs x + i\pi$,
-- $\log(z_-) = \log\abs x - i\pi$.
+- $\log(z_+) \to \ln\abs x + i\pi$,
+- $\log(z_-) \to \ln\abs x - i\pi$.
 
-So no choice of value at $z$ makes $\log$ continuous across the cut.
-The obstruction is the **branch point** at $z=0$, and it is not removable by a better definition: it is the statement that $\log$ has no single-valued continuous branch on any punctured neighborhood of the origin.
+So no value at $z$ makes $\log$ continuous across the negative real axis.
+The point $z=0$ is a \dfn{branch point}: $\log$ has no continuous branch on any punctured neighborhood of the origin, whatever cut is chosen.
 
 :::
 
 [[T-E76LX]]
 
-## Factoring, and the quadratic formula over $\CC$
+## The quadratic formula over $\CC$
 
-The discriminant does not change form, but its sign no longer decides anything: $\Delta \da b^2-4ac$ has two square roots in $\CC$ either way, so a quadratic always has two roots counted with multiplicity.
+For $a\neq 0$, the roots of $az^2+bz+c$ are $\frac{-b\pm w}{2a}$, where $w$ is either square root of $\Delta \coloneqq b^2-4ac\in\CC$.
+The sign of $\Delta$ plays no role: a quadratic over $\CC$ has two roots counted with multiplicity.
 
 ## Exercises
 

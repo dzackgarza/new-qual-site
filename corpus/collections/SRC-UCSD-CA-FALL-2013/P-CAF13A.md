@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Choose 4 of the following theorems, and write out their statements carefully and completely.
 From among these, choose 2, and sketch their proofs.
 
@@ -37,7 +37,7 @@ From among these, choose 2, and sketch their proofs.
 - The Schwarz Reflection Principle
 :::
 
-::: solution
+::: {.solution}
 Here are four choices.
 
 **Open Mapping Theorem.** If $G\subset\mathbb C$ is a domain and

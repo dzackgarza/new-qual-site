@@ -21,19 +21,19 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Can passage from an infinite field to its algebraic closure increase its cardinality?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 No. If $F$ is infinite and $\overline F$ is an algebraic closure, then
 \[
 |\overline F|=|F|.
 \]
 
 <1>1. The polynomial ring $F[x]$ has cardinality $|F|$.
-::: proof
+::: {.proof}
 For each fixed degree $n$, the set of polynomials of degree at most $n$ is in
 bijection with a subset of $F^{n+1}$, which has cardinality $|F|$ because $F$
 is infinite. Since
@@ -45,7 +45,7 @@ $|F|$.
 :::
 
 <1>2. There are at most $|F|$ elements algebraic over $F$ in any extension.
-::: proof
+::: {.proof}
 Every algebraic element is a root of some nonzero polynomial in $F[x]$.
 Each polynomial has finitely many roots in a field extension, and by <1>1 there
 are only $|F|$ polynomials. Hence the union of all root sets has cardinality at
@@ -56,7 +56,7 @@ most
 :::
 
 <1>3. Therefore $|\overline F|=|F|$.
-::: proof
+::: {.proof}
 By <1>2,
 \[
 |\overline F|\le|F|.

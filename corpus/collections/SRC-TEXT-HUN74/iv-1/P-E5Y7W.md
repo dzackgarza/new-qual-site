@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Show that if $A$ and $B$ are $R$-modules over a ring $R$, then the set $\operatorname{Hom}_R(A, B)$ of all $R$-module homomorphisms $A \to B$ is an abelian group under pointwise addition, $$(f + g)(a) = f(a) + g(a) \quad \text{for all } a \in A,$$ with the zero map as identity element.
 
 (b) Show that the set $\operatorname{End}_R(A) = \operatorname{Hom}_R(A, A)$ is a ring with identity under function composition $(f \circ g)(a) = f(g(a))$.
@@ -22,7 +22,7 @@ review: draft
 (c) Show that $A$ is a left $\operatorname{End}_R(A)$-module under the action defined by $$f \cdot a = f(a) \quad \text{for all } f \in \operatorname{End}_R(A), \, a \in A.$$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Verify the abelian group axioms for $\operatorname{Hom}_R(A, B)$ in (a), the ring axioms for $\operatorname{End}_R(A)$ in (b), and the left module axioms for $A$ over its endomorphism ring in (c).
 
 <1>1. Part (a): $\operatorname{Hom}_R(A, B)$ is an abelian group under pointwise addition.

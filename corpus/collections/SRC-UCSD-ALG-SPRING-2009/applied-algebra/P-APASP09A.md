@@ -24,7 +24,7 @@ audit:
   note: Proved Schur decomposition by induction on dimension and derived the spectral theorem for normal matrices by showing a normal upper-triangular matrix is diagonal.
 ---
 
-::: problem
+::: {.problem}
 (a) State and prove the Schur Decomposition Theorem.
 
 (b) Use Schur to prove that a square matrix $A$ has an orthonormal basis of eigenvectors if and only if $A^H A = AA^H$.

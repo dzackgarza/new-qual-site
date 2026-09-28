@@ -22,7 +22,7 @@ audit:
   note: Reviewed Bessel's inequality and the orthogonal-series construction for arbitrary ell2 coefficients; completeness and the norm identity are used correctly.
 ---
 
-::: problem
+::: {.problem}
 Let $\{u_n\}_{n=1}^\infty$ be an orthonormal sequence in a Hilbert space $\mathcal{H}$.
 
 (a) Prove that for every $x \in \mathcal{H}$, Bessel's inequality holds:
@@ -40,7 +40,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Bessel's inequality in (a) by expanding the norm of orthogonal projections, and prove the Riesz–Fischer theorem in (b) by establishing convergence of orthogonal series in complete inner product spaces.
 
 <1>1. Part (a): Bessel's inequality $\sum_{n=1}^\infty |\langle x, u_n \rangle|^2 \le \|x\|^2$.

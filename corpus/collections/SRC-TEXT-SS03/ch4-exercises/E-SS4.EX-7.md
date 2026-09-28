@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 7. The Poisson summation formula applied to specific examples often provides interesting identities.
 
 (a) Let $\tau$ be fixed with $\operatorname { I m } ( \tau ) > 0$ . Apply the Poisson summation formula to
@@ -45,7 +45,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 f(x)=(\tau+x)^{-k},\qquad \Im\tau>0,\quad k\ge2.

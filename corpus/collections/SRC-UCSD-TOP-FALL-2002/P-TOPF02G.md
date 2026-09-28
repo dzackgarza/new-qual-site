@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Describe submanifold representatives of the generators of the homology groups of $\mathbb{CP}^n$, and explain how to use these to determine the cohomology ring structure.
 :::
 

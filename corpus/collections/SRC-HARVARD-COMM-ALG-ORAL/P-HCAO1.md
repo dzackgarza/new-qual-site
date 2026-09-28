@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a commutative ring, let $M$ be a finitely generated $A$-module, and let $x_1, \ldots, x_n \in M$.
 
 Suppose that the images of $x_1, \ldots, x_n$ generate $M/\mathfrak mM$ for every maximal ideal $\mathfrak m$ of $A$.

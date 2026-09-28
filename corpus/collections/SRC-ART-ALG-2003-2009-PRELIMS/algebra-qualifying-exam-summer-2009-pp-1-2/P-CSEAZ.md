@@ -27,7 +27,7 @@ audit:
   note: "Reviewed the group extensions and action orbits, the 16 module classes, and the six invariant-factor chains; independently constructed all 39 table groups in GAP and checked that the eight named groups are exactly the remaining order-120 classes."
 ---
 
-:::{.problem}
+::: {.problem}
 a. List all isomorphism classes of groups of size 120.
 
 b. Find all isomorphism classes of $\mathbf{Q}[x]$ modules $V$ such that $\dim_{\mathbf{Q}} V=6$ and $V$ is annihilated by $(x-3)^2(x+5)$.
@@ -35,7 +35,7 @@ b. Find all isomorphism classes of $\mathbf{Q}[x]$ modules $V$ such that $\dim_{
 c. Find all possible rational canonical forms for a 6 by 6 matrix over $\mathbf{Q}$ that has minimal polynomial $(x-3)^2(x+5)$.
 :::
 
-::: solution
+::: {.solution}
 Part (a) has no commutativity hypothesis. Its answer consists of the $39$
 groups in the table in step <1>5, the five groups in step <1>6, and the three
 groups in step <1>7. The action parameters in the table specify the
@@ -44,7 +44,7 @@ semidirect products, not just their abstract factors.
 <1>1. An extension with finite abelian kernel $N$ and quotient $Q$ splits
 when $\gcd(|N|,|Q|)=1$.
 
-::: proof
+::: {.proof}
 Write $N$ additively and choose representatives $s(q)$ with $s(1)=1$.
 Conjugation defines an action of $Q$ on $N$, independent of the representatives
 because $N$ is abelian. Put
@@ -67,7 +67,7 @@ extension is $N\rtimes Q$.
 $\mathrm{SL}_2(\mathbf F_3)$. A central extension of $A_5$ by $C_2$ is
 either $C_2\times A_5$ or $\mathrm{SL}_2(\mathbf F_5)$.
 
-::: proof
+::: {.proof}
 <2>1. We use the presentations
 $$
 T_m=\langle a,b\mid a^2=b^3=(ab)^m=1\rangle,
@@ -144,7 +144,7 @@ H\cong S_4,\qquad C_2\times A_4,\qquad
 \mathrm{SL}_2(\mathbf F_3).
 $$
 
-::: proof
+::: {.proof}
 If the Sylow $3$-subgroup is normal, step <1>1 gives
 $H\cong C_3\rtimes P$ for a group $P$ of order $8$, so $H$ is solvable.
 Otherwise there are four Sylow $3$-subgroups. Conjugation on them defines
@@ -160,7 +160,7 @@ extension of a solvable group is solvable, proving the assertion in all cases.
 <1>4. A group $G$ of order $120$ is solvable if and only if its Sylow
 $5$-subgroup is normal. In that case $G\cong C_5\rtimes H$ with $|H|=24$.
 
-::: proof
+::: {.proof}
 We first prove by induction that every solvable group of order dividing
 $120$ and divisible by $5$ has a normal Sylow $5$-subgroup. A minimal
 nontrivial normal subgroup $N$ of a finite solvable group is elementary
@@ -189,7 +189,7 @@ $G$ is solvable as well.
 <1>5. Exactly $39$ isomorphism classes have a normal cyclic subgroup of
 order $15$. They are the following explicitly specified semidirect products.
 
-::: proof
+::: {.proof}
 <2>1. Put $N=C_3\times C_5=\langle c\rangle\times\langle d\rangle$.
 Identify its automorphism group with the additive group
 $\mathcal A=C_2\oplus C_4$ by letting $(i,j)$ act as
@@ -280,7 +280,7 @@ $$
 In the third group, even permutations act trivially on $C_5$ and odd
 permutations act by inversion. Here $D_{10}$ has order $10$.
 
-::: proof
+::: {.proof}
 Write $G=C_5\rtimes H$ using step <1>4. If $H$ has a normal Sylow
 $3$-subgroup, its inverse image in $G$ has order $15$ and is cyclic:
 the action of $C_3$ on $C_5$ is trivial because $3\nmid4$.
@@ -315,7 +315,7 @@ $$
 Thus part (a) has $39+5+3=47$ isomorphism classes. Its abelian members
 are $C_{120}$, $C_{60}\times C_2$, and $C_{30}\times C_2^2$.
 
-::: proof
+::: {.proof}
 <2>1. The only nonabelian simple group whose order divides $120$ is $A_5$.
 Here are the order exclusions. Prime-power orders have nontrivial center.
 Orders $6,10,15,20,40$ have a normal Sylow $3$- or $5$-subgroup.
@@ -394,7 +394,7 @@ V_{a,b,c}=(R/(p^2))^a\oplus(R/(p))^b\oplus(R/(q))^c,
 $$
 There are $7+5+3+1=16$ classes, corresponding to $a=0,1,2,3$.
 
-::: proof
+::: {.proof}
 Let $T$ be multiplication by $x$. Since $p^2$ and $q$ are relatively
 prime and $p(T)^2q(T)=0$, a Bezout identity decomposes
 $$
@@ -434,7 +434,7 @@ following ordered companion blocks.
 | $(2,0,2)$ | $p^2q,\ p^2q$ |
 | $(2,1,1)$ | $p,\ p^2,\ p^2q$ |
 
-::: proof
+::: {.proof}
 In step <1>8 the minimal polynomial is exactly $p^2q$ precisely when
 $a\geq1$ and $c\geq1$. The nonnegative solutions of $2a+b+c=6$ with
 these inequalities are exactly the six triples displayed. For each,

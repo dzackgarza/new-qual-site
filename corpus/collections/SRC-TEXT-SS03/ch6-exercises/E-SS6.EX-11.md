@@ -19,7 +19,7 @@ audit:
   note: Repaired a transcription defect in the exercise statement before solving.
 ---
 
-::: exercise
+::: {.exercise}
 11. Let $f ( z ) = e ^ { a z } e ^ { - e ^ { z } }$ where $a > 0$ . Observe that in the strip $\{ x + i y : ~ | y | < \pi / 2 \}$ the function $f ( x + i y )$ is exponentially decreasing as $| x |$ tends to infinity.
     Prove that
 
@@ -28,7 +28,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 With the Fourier-transform convention used in this text,
 \[
 \widehat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx.

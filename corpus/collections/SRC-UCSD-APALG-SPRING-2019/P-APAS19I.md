@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a finite-dimensional algebra over $\mathbb{C}$ with center $Z(A)$, and let $(V,\rho)$ be an irreducible representation of $A$.
 Show that $\rho(z)=\chi(z)I_V$ for each $z\in Z(A)$, where $\chi(z)$ is a scalar.
 Show that the map $\chi\colon Z(A)\to\mathbb{C}$ defined by $z\mapsto\chi(z)$ is an algebra homomorphism.
 :::
 
-::: solution
+::: {.solution}
 For \(z\in Z(A)\), the linear map \(
 ho(z)\in\operatorname{End}_{\mathbb C}(V)\) commutes with \(
 ho(a)\) for every \(a\in A\), because

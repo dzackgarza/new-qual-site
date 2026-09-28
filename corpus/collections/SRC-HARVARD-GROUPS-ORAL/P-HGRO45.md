@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Which groups admit sharply $k$-transitive actions for large values of $k$?
 :::
 
-::: solution
+::: {.solution}
 For finite permutation groups, the sharply $k$-transitive groups with $k\ge4$
 are the expected symmetric and alternating actions together with two Mathieu
 exceptions.
@@ -44,7 +44,7 @@ M_{12} & 5\quad(n=12).
 \]
 
 <1>1. The symmetric and alternating examples are sharp in the stated degrees.
-::: proof
+::: {.proof}
 An element of $S_n$ is uniquely determined by the images of $n-1$ distinct
 points, since the last image is forced. Hence the natural action of $S_n$ is
 sharply $(n-1)$-transitive, and therefore also sharply $n$-transitive.
@@ -56,7 +56,7 @@ sharply $(n-2)$-transitive.
 :::
 
 <1>2. The exceptional Mathieu actions are sharply $4$- and $5$-transitive.
-::: proof
+::: {.proof}
 The natural action of $M_{11}$ has degree $11$ and
 \[
 |M_{11}|=11\cdot10\cdot9\cdot8,
@@ -73,7 +73,7 @@ therefore sharp.
 :::
 
 <1>3. There are no further finite examples for $k\ge4$.
-::: proof
+::: {.proof}
 This is the classical Jordan classification of sharply multiply transitive
 finite permutation groups: outside the symmetric and alternating families, the
 only possibilities are $M_{11}$ in degree $11$ with $k=4$ and $M_{12}$ in

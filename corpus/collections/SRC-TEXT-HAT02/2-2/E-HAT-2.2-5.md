@@ -25,8 +25,10 @@ audit:
   note: Complete proof reviewed using degree theory and orthogonal-group homotopies.
 ---
 
+::: {.problem}
 Show that any two reflections of $S^n$ across different $n$ dimensional hyperplanes are homotopic, in fact homotopic through reflections.
 [The linear algebra formula for a reflection in terms of inner products may be helpful.]
+:::
 
 ::: {.solution}
 A reflection of $S^n\subset\mathbb R^{n+1}$ across the hyperplane perpendicular to a unit vector $u$ is

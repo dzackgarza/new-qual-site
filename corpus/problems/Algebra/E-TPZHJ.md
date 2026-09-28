@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 1. For a division ring $D$, let $V_{i}$ be a finite dimensional vector space over $D$ for $i \in\{1, \ldots, k\}$.
    Suppose the sequence
 \[

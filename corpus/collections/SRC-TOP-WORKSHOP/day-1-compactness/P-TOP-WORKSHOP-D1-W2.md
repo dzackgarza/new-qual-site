@@ -31,7 +31,7 @@ audit:
 If $X$ is compact, and $A\subseteq Y$ is closed, then $A$ is compact.
 :::
 
-::: remark
+::: {.remark}
 The rendered source literally uses $A\subseteq Y$ while introducing compact $X$; that apparent inconsistency is retained for review rather than repaired by inference.
 :::
 

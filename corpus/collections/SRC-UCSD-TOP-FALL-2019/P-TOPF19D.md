@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 When $n$ is even, show that any continuous map $f : \mathbb{CP}^n \to \mathbb{CP}^n$ has a fixed point.
 :::
 

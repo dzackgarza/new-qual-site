@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-117
 kind: problem
-title: Kent State ring-theory qualifying problem 117
+title: The Jacobson radical of a corner ring $eRe$
 classification:
   areas: [algebra]
   topics: []

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f$ and $g$ be two real $L^2(\mathbb{R}, m)$-functions.
 Show
 $$
@@ -35,9 +35,9 @@ $$
 Hint: First prove the result holds if $g \in L^2(\mathbb{R}, m)$ is further assumed to have compact support.
 :::
 
-::: solution
+::: {.solution}
 <1>1. First assume that $g$ has compact support.
-::: proof
+::: {.proof}
 Choose $M>0$ so that $g=0$ almost everywhere outside $[-M,M]$. Then
 \[
 \int_{\mathbb R}f(x)g(x-n)\,dx
@@ -58,7 +58,7 @@ Hence the desired limit is $0$ whenever $g$ has compact support.
 :::
 
 <1>2. Approximate an arbitrary $g\in L^2$ by compactly supported functions.
-::: proof
+::: {.proof}
 Let
 \[
 g_R=g\,\mathbf1_{[-R,R]}.

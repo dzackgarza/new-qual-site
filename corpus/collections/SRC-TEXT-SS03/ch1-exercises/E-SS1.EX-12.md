@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Consider the function
 \[
 f(x+iy)=\sqrt{|x||y|},

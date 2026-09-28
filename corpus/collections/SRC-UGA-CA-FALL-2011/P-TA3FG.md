@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of convergence exactly 1.
 
 (a) Give an example of such a series that converges at every point of the unit circle $S^1 = \{|z| = 1\}$.
@@ -25,7 +25,7 @@ Suppose $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of conv
 (c) Prove that $f$ cannot be analytically continued to be analytic at *every* point of $S^1$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Provide examples illustrating boundary convergence/divergence vs analyticity, and prove that every power series with radius of convergence 1 has at least one singularity on its circle of convergence.
 
 <1>1. Part (a): Example converging everywhere on $S^1$.

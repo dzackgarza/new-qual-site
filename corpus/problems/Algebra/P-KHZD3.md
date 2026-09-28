@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is a ring of formal power series $R[[x]]$ a unique factorization domain (UFD)?
 :::
 
-::: solution
+::: {.solution}
 Not in complete generality.
 
 If $R=k$ is a field, then

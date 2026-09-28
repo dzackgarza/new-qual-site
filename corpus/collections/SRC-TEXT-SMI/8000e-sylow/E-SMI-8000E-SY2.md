@@ -30,14 +30,14 @@ Prove every group $G$ of order $45$ is abelian.
 [Prove both Sylow subgroups $H,K$ of $G$ are normal. Then prove that $G$ is a direct product $H \times K$. Deduce that every group of order $45$ is abelian, and write down all of them, up to isomorphism.]
 :::
 
-::: solution
+::: {.solution}
 Write
 $$
 |G|=45=3^2\cdot5.
 $$
 
 <1>1. The Sylow $5$-subgroup is unique and normal.
-::: proof
+::: {.proof}
 Let $n_5$ be the number of Sylow $5$-subgroups. Sylow's theorem gives
 $$
 n_5\mid9,
@@ -56,7 +56,7 @@ $$
 :::
 
 <1>2. The Sylow $3$-subgroup is unique and normal.
-::: proof
+::: {.proof}
 Let $n_3$ be the number of Sylow $3$-subgroups. Again Sylow's theorem gives
 $$
 n_3\mid5,
@@ -75,7 +75,7 @@ $$
 :::
 
 <1>3. The group is the internal direct product of its two Sylow subgroups.
-::: proof
+::: {.proof}
 Because $|H|=9$ and $|K|=5$ are coprime,
 $$
 H\cap K=1.
@@ -107,7 +107,7 @@ $$
 :::
 
 <1>4. Classify all possibilities.
-::: proof
+::: {.proof}
 Every group of order $p^2$ is abelian. Hence a group of order $9$ is
 isomorphic to exactly one of
 $$

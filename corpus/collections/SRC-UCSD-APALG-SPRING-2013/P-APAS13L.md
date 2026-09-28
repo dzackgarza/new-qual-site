@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be an algebraically closed field.
 
 Two ideals $I$ and $J$ of $k[x_1,\ldots,x_n]$ are said to be comaximal if and only if $I+J=k[x_1,\ldots,x_n]$.
@@ -31,7 +31,7 @@ I\cap J=(tI+(1-t)J)\cap k[x_1,\ldots,x_n].
 (d) Show that if $I=\langle f\rangle$ and $J=\langle g\rangle$, then $I\cap J=\langle h\rangle$ where $h$ is a least common multiple of $f$ and $g$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 R=k[x_1,\ldots,x_n].

@@ -549,8 +549,6 @@ source:
   - id: P-ZZXH3
 ---
 
-::: remark
-Not a document.
-These are the 532 complex analysis problems and exercises in the corpus that no source claims, collected so that they are reachable from the source listing rather than only from the browser.
-A problem leaves this collection when the paper it was set on is identified.
+::: {.remark}
+Complex analysis problems whose source is not identified. This collection is not a source document.
 :::

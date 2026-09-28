@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring with identity $1 \ne 0$, and let $M_n(R)$ be the ring of $n \times n$ matrices over $R$ ($n \ge 1$).
 Prove that the center of the matrix ring $M_n(R)$ consists precisely of scalar matrices $r I_n$ where $r \in Z(R)$, and hence:
 $$Z(M_n(R)) \cong Z(R) \quad \text{via the ring isomorphism } r \mapsto r I_n.$$
 :::
 
-::: solution
+::: {.solution}
 For $n=1$, this is immediate because $M_1(R)=R$.
 Assume $n\ge2$ and let
 \[

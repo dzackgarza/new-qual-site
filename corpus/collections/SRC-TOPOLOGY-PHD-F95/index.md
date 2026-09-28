@@ -36,6 +36,6 @@ source:
   area: topology
 ---
 
-::: remark
-F95phdtop.pdf; K. Lesh and G. Thompson, 23 September 1995. Section I.2 is the same connected-fiber quotient problem as `P-T08A2`; Section I.5 is `P-TOPOLOGY-PHD-F95-05`. Both shared cards live under other collection directories, but they remain appearances in this source and therefore belong in this source-order list.
+::: {.remark}
+Topology Ph.D. qualifying exam by K. Lesh and G. Thompson, 23 September 1995. Section I.2 is the same connected-fibre quotient problem as June 2008 Question A2.
 :::

@@ -14,16 +14,18 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **centralizer of an element** is defined as 
-\[
-Z(h) \da C_G(h) \da \ts{ g\in G \st ghg\inv = h } 
-,\]
-the elements of $G$ the stabilize $h$ under conjugation.
+::: {.definition}
+Let $G$ be a group and $h\in G$.
+The \dfn{centralizer} of $h$ is
+$$
+Z(h) \coloneqq C_G(h) \coloneqq \theset{ g\in G \st ghg^{-1} = h }.
+$$
+For a subset $H\subseteq G$, the \dfn{centralizer} of $H$ is
+$$
+Z(H) \coloneqq C_G(H) \coloneqq \theset{g\in G \suchthat ghg^{-1} = h \text{ for all } h\in H} = \Intersect_{h\in H} C_G(h).
+$$
+:::
 
-The **centralizer of a subset** $H$ is defined as
-\[
-Z(H) \da C_G(H) \da \Intersect_{h\in H} C_G(h) \da \theset{g\in G \suchthat ghg\inv = h ~\forall h\in H}
-,\]
-the elements of $G$ that simultaneously stabilize all of $H$ pointwise under conjugation.
+::: {.remark}
+For the action of $G$ on itself by conjugation, $C_G(h)$ is the stabilizer of $h$, and $C_G(H)$ is the subgroup of elements that fix every element of $H$.
 :::

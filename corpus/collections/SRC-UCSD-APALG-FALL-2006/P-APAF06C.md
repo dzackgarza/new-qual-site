@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group and let $Z(G)$ denote its center.
 
 (a) Show that if $G/Z(G)$ is cyclic then $G = Z(G)$.

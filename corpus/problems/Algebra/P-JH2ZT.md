@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that the minimal polynomial of a square matrix divides its characteristic polynomial.
 :::
 

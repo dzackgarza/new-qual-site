@@ -32,7 +32,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Put
 $$
 \sigma=(a_1\,a_2\,\ldots\,a_r),
@@ -42,7 +42,7 @@ $$
 By hypothesis the supports of $\sigma$ and $\tau$ are disjoint.
 
 <1>1. The two products agree on the support of $\sigma$.
-::: proof
+::: {.proof}
 If $x=a_i$ for some $i$, then $x$ does not lie in the support of $\tau$, so
 $$
 \tau(x)=x.
@@ -60,7 +60,7 @@ Thus the products agree on every $a_i$.
 :::
 
 <1>2. The two products agree on the support of $\tau$.
-::: proof
+::: {.proof}
 If $x=b_j$, then $\sigma(x)=x$, and $\tau(x)$ is another point in the
 support of $\tau$, hence still outside the support of $\sigma$. Consequently
 $$
@@ -73,7 +73,7 @@ $$
 :::
 
 <1>3. The two products agree outside both supports.
-::: proof
+::: {.proof}
 If $x$ lies in neither support, then both cycles fix it. Hence
 $$
 (\sigma\tau)(x)=x=(\tau\sigma)(x).
@@ -81,7 +81,7 @@ $$
 :::
 
 <1>4. Conclude that the cycles commute.
-::: proof
+::: {.proof}
 Every point belongs to one of the three cases above, so the permutations
 $\sigma\tau$ and $\tau\sigma$ agree everywhere. Thus
 $$

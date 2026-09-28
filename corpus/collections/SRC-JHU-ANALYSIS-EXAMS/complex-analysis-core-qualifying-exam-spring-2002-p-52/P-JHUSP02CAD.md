@@ -28,7 +28,7 @@ audit:
   note: "Independently checked the two printed omissions on PDF page 52, restored the local disk definition and justified the infinite-series orthogonality limit in the retained equality-case proof."
 ---
 
-::: problem
+::: {.problem}
 Let $\Delta=\{z\in\mathbb C:|z|<1\}$, and let $f:\Delta\to\Delta$ be holomorphic and satisfy $f(0)=0$. Prove that
 $$
 |f(z)+f(-z)|\le 2|z|^2
@@ -42,7 +42,7 @@ $$
 for some real $\theta$.
 :::
 
-::: remark
+::: {.remark}
 As printed, the source omits $f(0)=0$, so the inequality is false at $z=0$;
 $f\equiv1/2$ is a counterexample. It also says only "equality holds for some
 $z$". After the necessary normalization, equality at $z=0$ is automatic, so
@@ -50,9 +50,9 @@ the equality statement must require a nonzero point; $f(z)=z$ otherwise gives
 a counterexample to the claimed conclusion.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The even part factors holomorphically through $z^2$ as a disk map fixing zero.
-::: proof
+::: {.proof}
 Set
 $$
 E(z)=\frac{f(z)+f(-z)}2.
@@ -81,7 +81,7 @@ Thus $G:\Delta\to\Delta$ is a holomorphic self-map fixing zero.
 :::
 
 <1>2. Schwarz's lemma gives the required inequality.
-::: proof
+::: {.proof}
 Schwarz's lemma [@SS03] applied to $G$ gives
 $$
 |G(w)|\le|w|\qquad(w\in\Delta).
@@ -94,7 +94,7 @@ Multiplying by two gives the asserted bound.
 :::
 
 <1>3. Equality at a nonzero point fixes the entire even part.
-::: proof
+::: {.proof}
 Suppose equality holds at $z_0\ne0$. Then
 $$
 |G(z_0^2)|=|z_0^2|,
@@ -119,7 +119,7 @@ In particular $|a_2|=1$.
 :::
 
 <1>4. A disk map with a Taylor coefficient of modulus one at degree two has no other coefficients.
-::: proof
+::: {.proof}
 For $0<r<1$, the Taylor partial sums converge uniformly
 to $f$ on $|z|=r$ [@SS03]. Their squared moduli also
 converge uniformly there. Integrating the finite sums,

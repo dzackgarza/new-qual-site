@@ -34,9 +34,9 @@ If $p$, $q$ are distinct primes, prove:
 [A group $G$ is called "solvable" if there exists a sequence of subgroups $G = H_1, \ldots, H_n = \ts{e}$ such that each $H_{i+1}$ is a normal subgroup of $H_i$, and each quotient $H_i / H_{i+1}$ is abelian.]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every group of order $pq$ is solvable.
-::: proof
+::: {.proof}
 Let $p$ and $q$ be distinct primes, and relabel them if necessary so that
 $$
 p<q.
@@ -61,7 +61,7 @@ is an abelian normal tower, and $G$ is solvable.
 :::
 
 <1>2. If $|G|=p^2q$ and $q<p$, then $G$ is solvable.
-::: proof
+::: {.proof}
 Let $P$ be a Sylow $p$-subgroup. Its number $n_p$ satisfies
 $$
 n_p\mid q,
@@ -82,7 +82,7 @@ is an abelian normal tower.
 :::
 
 <1>3. If $|G|=p^2q$ and $p<q$, then either the Sylow $q$-subgroup is normal or $(p,q)=(2,3)$.
-::: proof
+::: {.proof}
 Let $n_q$ denote the number of Sylow $q$-subgroups. Then
 $$
 n_q\mid p^2,
@@ -117,7 +117,7 @@ and the same tower argument as in step <1>1 proves solvability.
 :::
 
 <1>4. Every group of order $12$ is solvable.
-::: proof
+::: {.proof}
 Let $|G|=12$. If the Sylow $3$-subgroup is normal, then it is cyclic of order
 $3$, and the quotient has order $4$, hence is abelian; so $G$ is solvable.
 

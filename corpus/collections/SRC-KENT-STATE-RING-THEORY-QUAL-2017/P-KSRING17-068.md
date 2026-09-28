@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-068
 kind: problem
-title: Kent State ring-theory qualifying problem 68
+title: A ring with exactly one prime ideal is its own localization
 classification:
   areas: [algebra]
   topics: []

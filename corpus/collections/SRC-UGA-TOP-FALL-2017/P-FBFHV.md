@@ -30,7 +30,7 @@ audit:
   note: Replaced the invalid sphere-neighborhood decomposition with the quotient CW structure and verified both the van Kampen presentation and cellular homology.
 ---
 
-::: problem
+::: {.problem}
 Compute, by any means available, the fundamental group and all the homology groups of the space obtained by gluing one copy $A$ of $S^2$ to another copy $B$ of $S^2$ via a two-sheeted covering space map from the equator of $A$ onto the equator of $B$.
 :::
 

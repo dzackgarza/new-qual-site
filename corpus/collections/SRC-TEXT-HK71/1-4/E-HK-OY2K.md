@@ -31,7 +31,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 All solutions are
 \[
 (x_1,x_2,x_3,x_4,x_5)
@@ -50,13 +50,13 @@ All solutions are
 \end{array}
 \right].
 \]
-::: proof
+::: {.proof}
 Applying Gaussian elimination to the coefficient matrix together with the
 right-hand side gives the displayed reduced row-echelon augmented matrix.
 :::
 
 <1>2. The displayed family is exactly the solution set.
-::: proof
+::: {.proof}
 The reduced system is
 \[
 x_1-2x_3+x_4=1,

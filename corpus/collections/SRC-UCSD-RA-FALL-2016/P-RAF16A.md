@@ -24,14 +24,14 @@ audit:
   note: Existing partition-generated sigma-algebra proof reviewed as correct; normalized the legacy solution block.
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M})$ be a measurable space.
 Suppose $A_1, A_2, \ldots$ are a sequence of members of $\mathcal{M}$ such that $A_i \neq \varnothing$ for any $i$, $A_i \cap A_j = \emptyset$ for any $i$ and $j$ with $i \neq j$, and $X = \bigcup_{i=1}^{\infty} A_i$.
 Let $\mathcal{A}$ be the smallest $\sigma$-algebra of subsets of $X$ that contains all $A_1, A_2, \ldots$.
 Prove that $\mathcal{A}$ consists exactly of $\varnothing$, $X$, and all finite or countably infinite unions of $A_j$ ($j \geq 1$).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Definition of the candidate family $\mathcal{F}$:
 <2>1. Let $\mathcal{F}$ denote the collection of all arbitrary unions of members of the partition:
 \[

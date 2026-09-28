@@ -25,7 +25,9 @@ audit:
   note: Complete cellular/Euler-characteristic computation checked.
 ---
 
+::: {.problem}
 For $X$ a finite CW complex and $p: \tilde{X} \to X$ an $n$ sheeted covering space, show that $\chi(\tilde{X}) = n\chi(X)$.
+:::
 
 ::: {.solution}
 Give $X$ a finite CW structure. Pull this structure back along the $n$-sheeted covering

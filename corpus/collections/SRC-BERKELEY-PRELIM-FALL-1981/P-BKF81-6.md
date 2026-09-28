@@ -23,7 +23,7 @@ audit:
   note: "Partitioned [0,1] into n cells, used periodicity after rescaling each cell, and proved the resulting shifted Riemann sums converge uniformly in the shift."
 ---
 
-::: problem
+::: {.problem}
 Let $f,g$ be continuous $1$-periodic functions on $\mathbb R$. Prove that
 \[
 \lim_{n\to\infty}\int_0^1 f(x)g(nx)\,dx
@@ -31,7 +31,7 @@ Let $f,g$ be continuous $1$-periodic functions on $\mathbb R$. Prove that
 \]
 :::
 
-::: solution
+::: {.solution}
 Partition $[0,1]$ into the intervals
 $$
 \left[\frac jn,\frac{j+1}{n}\right],
@@ -39,7 +39,7 @@ $$
 $$
 
 <1>1. Rewrite the integral using periodicity of $g$.
-::: proof
+::: {.proof}
 On the $j$th interval set
 $$
 x=\frac{j+t}{n},
@@ -66,7 +66,7 @@ $$
 :::
 
 <1>2. The shifted Riemann sums $A_n(t)$ converge uniformly in $t$ to $\int_0^1f$.
-::: proof
+::: {.proof}
 Because $f$ is continuous and $1$-periodic, it is uniformly continuous on
 $\mathbb R$. Let
 $$
@@ -101,7 +101,7 @@ uniformly for $t\in[0,1]$.
 :::
 
 <1>3. Pass to the limit in the integral.
-::: proof
+::: {.proof}
 Since $g$ is continuous on $[0,1]$, it is bounded. Uniform convergence from
 step <1>2 gives
 $$

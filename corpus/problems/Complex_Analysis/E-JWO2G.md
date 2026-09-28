@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $\abs{e^z} = e^{\Re(z)}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $z=x+iy$, so $\Re(z) = x$.
 Then
 \[

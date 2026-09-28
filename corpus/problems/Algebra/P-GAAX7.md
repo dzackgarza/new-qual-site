@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a nonabelian group of order $p^3$, where $p$ is prime. Prove that
 \[
 G'=Z(G).

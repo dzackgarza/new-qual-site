@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A_1 = \mathbb{D} \setminus \left\{0, \frac{1}{2}\right\}$ and $A_2 = \mathbb{D} \setminus \left\{0, -\frac{1}{2}\right\}$.
 Find all bijective analytic maps from $A_1$ to $A_2$.
 :::
 
-::: solution
+::: {.solution}
 Let $F:A_1\to A_2$ be biholomorphic. Since $F$ is bounded, its singularities
 at $0$ and $1/2$ are removable, so it extends holomorphically to a map
 \[

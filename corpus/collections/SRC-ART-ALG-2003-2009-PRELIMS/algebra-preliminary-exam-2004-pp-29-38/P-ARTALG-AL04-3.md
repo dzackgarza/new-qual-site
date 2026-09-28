@@ -24,11 +24,11 @@ audit:
   note: "Checked the three exhaustive Sylow cases, all semidirect actions, the residual fiber-product reduction, and the exact matrix-action orbit enumeration without a small-group catalogue."
 ---
 
-::: problem
+::: {.problem}
 List all isomorphism classes of groups of size $72$.
 :::
 
-::: solution
+::: {.solution}
 There are exactly $50$ classes. The list consists of the $42$ semidirect
 products in step <1>1, the four groups in step <1>3, and the four groups
 in step <1>4. In particular, restricting to abelian groups would not
@@ -67,7 +67,7 @@ of $H$ and specifies one group, not an unspecified semidirect product.
 There are $2+3+2+3+2=12$ groups in the second column and
 $5+8+4+8+5=30$ in the third.
 
-::: proof
+::: {.proof}
 A group of order $9$ is abelian: its center is nontrivial by the
 class equation; if its center had order $3$, its quotient by the
 center would be cyclic, which forces the whole group to be abelian.
@@ -115,7 +115,7 @@ isomorphism criterion, this proves all assertions about the $42$ groups.
 
 <1>2. The matrix-action column is exhaustive and has no repeated orbit.
 
-::: proof
+::: {.proof}
 Represent a matrix by its four row-major entries. There are exactly
 the invertible matrices in the finite set $\{0,1,2\}^4$ to check.
 A tuple determines a homomorphism from a presented group exactly
@@ -288,7 +288,7 @@ $$
 where a generator of $C_9$ acts by the indicated $\tau$, or the
 first $C_3$ factor acts by $\tau$ and the second acts trivially.
 
-::: proof
+::: {.proof}
 Let $T$ be a normal Sylow $2$-subgroup and $P$ a Sylow $3$-subgroup.
 Then $G=T\rtimes P$, with $P=C_9$ or $C_3^2$. For the five possible
 types of $T$, the respective automorphism-group orders are
@@ -342,7 +342,7 @@ $$
 with coordinatewise multiplication. Both maps are onto, so this
 group has order $18\cdot24/6=72$.
 
-::: proof
+::: {.proof}
 <2>1. Suppose neither Sylow subgroup of $G$ is normal. There are
 four Sylow $3$-subgroups, since their number divides $8$ and is
 $1$ modulo $3$. Let $K$ be the kernel of conjugation on these
@@ -467,7 +467,7 @@ on the kernel. This distinguishes the last two groups.
 
 <1>5. The list has exactly $50$ isomorphism classes and omits none.
 
-::: proof
+::: {.proof}
 Every group has either a normal Sylow $3$-subgroup, a normal Sylow
 $2$-subgroup but not a normal Sylow $3$-subgroup, or neither.
 Steps <1>1, <1>3, and <1>4 classify these disjoint cases, with

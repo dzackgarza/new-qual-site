@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 9. Show that
 
 $$
@@ -27,7 +27,7 @@ $$
 Figure 9. Contour in Exercise 9
 :::
 
-::: solution
+::: {.solution}
 The endpoint singularities are integrable because
 \[
 \log(\sin t)\sim\log t\quad(t\downarrow0),

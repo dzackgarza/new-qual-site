@@ -29,7 +29,7 @@ audit:
 Determine (up to isomorphism) all abelian groups of order 64; do the same for order 96.
 :::
 
-::: solution
+::: {.solution}
 Use the classification of finite abelian groups by their primary cyclic
 decomposition.
 
@@ -49,7 +49,7 @@ decomposition.
 &\ZZ_2^{\oplus6}.
 \end{aligned}
 \]
-::: proof
+::: {.proof}
 An abelian group of order $2^6$ is uniquely determined by a partition of $6$:
 \[
 6,\ 5+1,\ 4+2,\ 4+1+1,\ 3+3,\ 3+2+1,\ 3+1+1+1,
@@ -74,7 +74,7 @@ the classification theorem.
 &\ZZ_2^{\oplus5}\oplus\ZZ_3.
 \end{aligned}
 \]
-::: proof
+::: {.proof}
 The Sylow $3$-subgroup has order $3$, hence is necessarily $\ZZ_3$. The Sylow
 $2$-subgroup has order $2^5$, and the partitions
 \[

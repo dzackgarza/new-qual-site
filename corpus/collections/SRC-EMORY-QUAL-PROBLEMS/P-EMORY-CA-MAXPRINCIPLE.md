@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EMORY-CA-MAXPRINCIPLE
 kind: problem
-title: Derive the maximum principle from Cauchy's integral formula
+title: The maximum modulus principle from the Cauchy integral formula
 classification:
   areas:
   - complex-analysis
@@ -11,13 +11,18 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Compared with Complex Analysis (3) of Arango-Piñeros, Some quals problems; restored the source's phrase the Cauchy integral formula; merged the duplicate P-EMCA3, whose solution repeats this mean-value argument."
 ---
 
-::: problem
-Use Cauchy's integral formula to prove the maximum principle for analytic functions.
+::: {.problem}
+Use the Cauchy integral formula to prove the maximum principle for analytic functions.
 :::
 
-::: solution
+::: {.solution}
 We prove the strong local form of the maximum modulus principle. Let $G$ be a
 region, let $f\in H(G)$, and suppose that $|f|$ has a local maximum at
 $z_0\in G$. We show that $f$ is constant.

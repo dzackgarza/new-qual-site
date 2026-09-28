@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that if $G \curvearrowright X$ is a group action, then the stabilizer $G_x = \operatorname{Stab}_G(x)$ of any point $x \in X$ is a subgroup of $G$.
 :::
 
-::: solution
+::: {.solution}
 By definition,
 \[
 G_x=\{g\in G:g\cdot x=x\}.

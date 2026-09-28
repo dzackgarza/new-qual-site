@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a topological space (in particular, compact Hausdorff).
 Let $\{K_j\}_{j=1}^\infty$ be a sequence of decreasing, non-empty compact subsets of $X$:
 $$K_1 \supseteq K_2 \supseteq K_3 \supseteq \cdots \quad \text{with } K_j \ne \emptyset \text{ for all } j \ge 1.$$
@@ -25,7 +25,7 @@ Prove that their intersection is non-empty:
 $$\bigcap_{j=1}^\infty K_j \neq \emptyset \quad \text{(Cantor's Intersection Theorem)}.$$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the intersection of a nested sequence of non-empty compact subsets is non-empty using the Finite Intersection Property (FIP) of compact spaces.
 
 <1>1. Working Inside the Compact Subspace $K_1$:

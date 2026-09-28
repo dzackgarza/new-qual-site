@@ -22,7 +22,7 @@ audit:
 Show that if $H \leq N_G(K)$ then $HK \leq G$, and give a counterexample showing that this condition is necessary.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Show that $H \le N_G(K)$ forces the product set $HK = \{hk : h \in H, k \in K\}$ to be a subgroup of $G$, and exhibit $H, K \le S_3$ with $H \not\le N_G(K)$ and $HK$ not a subgroup.
 
 <1>1. Setup and the normalizing hypothesis: *Proof:* <2>1. Let $H, K \le G$ and assume $H \le N_G(K) = \{g \in G : gKg^{-1} = K\}$.

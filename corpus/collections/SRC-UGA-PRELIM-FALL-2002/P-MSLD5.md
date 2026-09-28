@@ -23,7 +23,7 @@ b. The following statement is not valid: "For any positive integer $m$, if $T$ i
 Explain and correct the flaw.
 :::
 
-::: solution
+::: {.solution}
 For part (a), the statement is
 \[
 \exists m\in\mathbb Z_{>0}\;\forall x\in S_m,

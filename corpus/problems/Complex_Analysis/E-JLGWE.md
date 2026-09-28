@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f$ be an entire function. Assume that for some $k \in \mathbb{N}$, and sufficiently large $|z|$, we have that $|f(z)| \leq A+B|z|^{k}$. Prove that $f$ is a polynomal of degree at most $k$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 By induction on $k$, suppose that if $f$ is degree $k-1$ with $\abs{f} \leq A + B\abs{z}^{k-1}$ outside of a large enough disc.
 Let $f$ be degree $k$, and consider
 \[

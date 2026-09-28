@@ -26,7 +26,7 @@ audit:
   note: Verified the relative cup-product obstruction after replacing each embedded closed disk by a contractible open collar neighborhood; the argument makes no assumption on the intersection of the two disks.
 ---
 
-::: problem
+::: {.problem}
 Show that $S^1 \times S^1$ is not the union of two disks (where there is no assumption that the disks intersect along their boundaries).
 :::
 

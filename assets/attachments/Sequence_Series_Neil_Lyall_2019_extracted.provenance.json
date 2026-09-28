@@ -1,0 +1,16 @@
+{
+  "source_pdf": "assets/attachments/Sequence_Series_(Neil_Lyall_2019).pdf",
+  "source_pdf_sha256": "c6f71dcb8ef0d668cc095b0eaef634bdb2fafc4de4fd03b6962114751b5584e9",
+  "extracted_markdown": "assets/attachments/Sequence_Series_Neil_Lyall_2019_extracted.md",
+  "extracted_markdown_sha256": "419ef0ac202d9d1e79d822c7cd9571a3c8b8e81e26f5cbe37fa08e51cac8d3f9",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/Sequence_Series_(Neil_Lyall_2019).pdf' --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/Sequence_Series_(Neil_Lyall_2019).md",
+  "source_identification": "Nine Math 4100/6100 real-analysis assignments from Fall 2020, due September 1 through November 12, with 67 top-level regular/bonus/challenge positions in the retained packet.",
+  "card_reconciliation": "Assignments 1-6 already represented 47 source positions. This intake adds Assignments 7-8 completely and all seven Assignment 9 positions, for all 67 positions represented. Assignment 8 Problem 1 reuses P-RA-WORKSHOP-D5-W2 and Assignment 8 Bonus Problem 1 reuses P-AZOFF-A05; the other newly represented positions are source-local cards.",
+  "extraction_corrections": [
+    "Assignment 9 Problem 1: MinerU emits the piecewise definition of g_n as a stacked '1 / n x' with one condition. The display was read from page 13 of the source PDF on 2026-09-16: g_n(x) = 1 if x >= 1/n, nx if 0 <= x < 1/n. Card P-M4100-20-A9-01 records the correction."
+  ]
+}

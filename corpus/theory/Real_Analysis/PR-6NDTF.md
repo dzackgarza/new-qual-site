@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-6NDTF
 kind: proposition
-title: Measurable Slices
+title: Measurable slices
+slogan: 'Measurable subsets of a product have measurable almost-everywhere slices, whose measures integrate to the total measure.'
 classification:
   areas:
   - real-analysis
@@ -13,22 +14,20 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-Let $E$ be a Lebesgue measurable subset of $\RR^n$, where $n=n_1+n_2$. Then
+::: {.proposition}
+Let $n=n_1+n_2$, let $m$ denote Lebesgue measure on each $\RR^k$, and let $E\subseteq\RR^{n}=\RR^{n_1}\times\RR^{n_2}$ be [[D-MDJII|Lebesgue measurable]].
+For $x\in\RR^{n_1}$, let $E_x \coloneqq \theset{y \in \RR^{n_2} \suchthat (x,y) \in E}$.
+Then:
 
-- For almost every $x\in \RR^{n_1}$, the slice $E_x \definedas \theset{y \in \RR^{n_2} \mid  (x,y) \in E}$ is measurable in $\RR^{n_2}$.
+- For almost every $x\in \RR^{n_1}$, the slice $E_x$ is measurable in $\RR^{n_2}$.
 
-- For almost every $x$, define the slice integral by
-
-\[
-F: \RR^{n_1} &\to [0,+\infty] \\
-x &\mapsto m(E_x) = \int_{\RR^{n_2}} \chi_{E_x} ~dy
-\]
-
-The value $+\infty$ is allowed. Setting $F=0$ on the exceptional null set gives a measurable function on all of $\RR^{n_1}$, and 
-\[
-m(E) = \int_{\RR^{n_1}} F(x) ~dx 
-= \int_{\RR^{n_1}} \int_{\RR^{n_2}} \chi_{E_x} ~dy ~dx
-.\]
-
+- The function
+$$
+F\colon \RR^{n_1} \to [0,\infty], \qquad x \mapsto m(E_x) = \int_{\RR^{n_2}} \chi_{E_x}(y) \,dy,
+$$
+defined for almost every $x$, is measurable, and
+$$
+m(E) = \int_{\RR^{n_1}} m(E_x) \,dx
+= \int_{\RR^{n_1}} \int_{\RR^{n_2}} \chi_{E_x}(y) \,dy \,dx .
+$$
 :::

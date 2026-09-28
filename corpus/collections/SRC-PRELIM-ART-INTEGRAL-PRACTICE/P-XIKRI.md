@@ -20,14 +20,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate
 \[
 \int\frac{4x^3+2x}{x^4+1}\,dx.
 \]
 :::
 
-::: solution
+::: {.solution}
 Split the integral:
 \[
 \int\frac{4x^3}{x^4+1}\,dx+\int\frac{2x}{x^4+1}\,dx.

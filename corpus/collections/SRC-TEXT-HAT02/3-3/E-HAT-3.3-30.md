@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that the boundary of an $R$-orientable manifold is also $R$-orientable.
+:::
 
 ::: {.solution}
 Let $M^n$ be $R$-orientable. A collar identifies a neighborhood of the boundary with

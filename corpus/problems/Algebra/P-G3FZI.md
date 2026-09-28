@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the Galois group of $x^3 - 2$ over the rationals.
 :::
 

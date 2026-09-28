@@ -16,7 +16,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Compute the integral homology $H_*(\mathbb{RP}^2 \times \mathbb{RP}^3; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. Homology groups of the factors:

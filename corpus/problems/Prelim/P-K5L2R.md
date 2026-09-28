@@ -33,7 +33,7 @@ d. Which of these subfields are Galois over $\mathbb{Q}$?
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Let
 \[
 \alpha=\sqrt[3]{5},\qquad \zeta=e^{2\pi i/3}.
@@ -128,5 +128,4 @@ Under the Galois correspondence, an intermediate field is Galois over $\mathbb Q
 \{e\},\quad A_3,\quad S_3.
 \]
 They correspond respectively to $K$, $\mathbb Q(\zeta)$, and $\mathbb Q$. The three order-$2$ subgroups are not normal, so the three cubic subfields are not Galois over $\mathbb Q$.
-:::
 :::

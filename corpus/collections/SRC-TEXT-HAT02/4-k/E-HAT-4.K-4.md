@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $SP_2(S^1)$ is a Möbius band, and that this is consistent with the description of $SP_2(S^n)$ as a mapping cone given in Example 4K.5.
+:::
 
 ::: {.solution}
 Represent an unordered pair of points of \(S^1\subset\mathbb C\) by the chord joining them. Thus
@@ -38,7 +40,7 @@ A nondegenerate chord is determined by two parameters: the unoriented line throu
 \]
 Hence the chord space is
 \[
-(S^1\times[-1,1])/igl((\theta,s)\sim(\theta+\pi,-s)\bigr),
+(S^1\times[-1,1])/\bigl((\theta,s)\sim(\theta+\pi,-s)\bigr),
 \]
 which is the standard interval-bundle model of the Möbius band. The boundary \(|s|=1\) consists exactly of the degenerate chords \(\{z,z\}\), so the diagonal copy of \(S^1\) is the boundary circle of the Möbius band. Therefore
 \[

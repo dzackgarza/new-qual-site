@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Show that
 \[
 \sum_{n=1}^{\infty}\sin\frac{x}{n^2}

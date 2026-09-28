@@ -23,7 +23,7 @@ The action of $G$ on $X$ is said to be fixed-point free if no element of $G$ oth
 Show that if $X$ is Hausdorff, and if $G$ is a finite group of homeomorphisms of $X$ whose action is fixed-point free, then the action of $G$ is properly discontinuous.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that every fixed-point free (free) action of a finite group $G$ of homeomorphisms on a Hausdorff space $X$ is properly discontinuous.
 
 <1>1. Definition of proper discontinuity:

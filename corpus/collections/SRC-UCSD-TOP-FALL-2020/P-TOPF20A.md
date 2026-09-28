@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that there does not exist a continuous map $f : S^1 \times S^1 \to S^1$ that satisfies both of the following conditions:
 
 - $f(x, x) = x$ for any $x \in S^1$;

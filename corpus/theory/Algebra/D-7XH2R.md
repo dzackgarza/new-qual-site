@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-7XH2R
 kind: definition
-title: Maximal Ideal
+title: Maximal ideal
 classification:
   areas:
   - algebra
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-An ideal $\mfm$ is **maximal** iff whenever $I\normal R$ with $\mfm \subsetneq I$ a proper containment then $I = R$.
+Let $R$ be a ring.
+A proper [[D-GOFWL|ideal]] $\mfm \normal R$ is \dfn{maximal} if for every ideal $I \normal R$ with $\mfm \subsetneq I$, we have $I = R$.
 :::

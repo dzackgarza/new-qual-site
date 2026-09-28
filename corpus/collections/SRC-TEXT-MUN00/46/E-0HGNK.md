@@ -29,7 +29,7 @@ is continuous, then $\mathcal{T}$ contains the compact-open topology.
 [Hint: The induced map $E: \mathcal{C}'(X, Y) \to \mathcal{C}(X, Y)$ is continuous.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that if the evaluation map $e: X \times \mathcal{C}'(X, Y) \to Y$ is continuous, then the topology $\mathcal{T}$ on $\mathcal{C}'(X, Y)$ contains the compact-open topology $\mathcal{T}_{\text{co}}$.
 
 <1>1. Subbasis for the compact-open topology:

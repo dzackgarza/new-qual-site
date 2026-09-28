@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and $\mathbb{Z}[G]$ its integral group ring.
 Let $\mathcal{Z} = Z(\mathbb{Z}[G])$ be the center of $\mathbb{Z}[G]$.
 For each conjugacy class $C \subseteq G$, let $P_C = \sum_{g \in C} g$ be the class sum.
@@ -30,7 +30,7 @@ where $\chi_\pi(C)$ is the value of the character $\chi_\pi$ on any element of $
 (4) Conclude that $\frac{|C| \chi_\pi(C)}{\dim V}$ is an **algebraic integer**.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that class sums form a $\mathbb{Z}$-basis of $Z(\mathbb{Z}[G])$, that finite free $\mathbb{Z}$-algebras are integral, that $\pi(P_C)$ acts by scalar $\omega_\pi(C)$ via Schur's Lemma, and that $\omega_\pi(C)$ is an algebraic integer.
 
 <1>1. Part 1: Class Sums Form a $\mathbb{Z}$-Basis for $\mathcal{Z} = Z(\mathbb{Z}[G])$:

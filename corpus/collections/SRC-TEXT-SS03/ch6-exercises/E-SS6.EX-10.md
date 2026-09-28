@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 10. An integral of the form
 
 $$
@@ -49,7 +49,7 @@ This generalizes the calculation in Exercise 2 of Chapter 2.
 Figure 1. The contour in Exercise 10
 :::
 
-::: solution
+::: {.solution}
 Let $z$ satisfy $0<\Re z<1$. On the principal branch, rotate the ray in the gamma integral through angle $-\pi/2$. The integrals over the connecting circular arcs vanish at $0$ and at infinity because $0<\Re z<1$. Thus
 \[
 \Gamma(z)=\int_0^\infty e^{-t}t^{z-1}\,dt

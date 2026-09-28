@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be an odd prime.
 Recall the lens space $L(p, q)$ is a $3$-dimensional compact manifold with
 $$

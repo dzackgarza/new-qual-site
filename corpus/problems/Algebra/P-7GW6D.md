@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What's a Galois group that's not $S_n$ or $A_n$?
 :::
 
-::: solution
+::: {.solution}
 A concrete example is the splitting field of \(x^4-2\) over \(\mathbb Q\). If \(\alpha=\sqrt[4]{2}\), its splitting field is \(K=\mathbb Q(\alpha,i)\), of degree \(8\). The automorphisms
 \[
 r(\alpha)=i\alpha,\quad r(i)=i,

@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a holomorphic function on a region $G$ such that $|f|^2 + |f|$ is harmonic on $G$.
 Prove $f$ is constant.
 :::
 
-::: solution
+::: {.solution}
 On the open set where $f\ne0$, the function $|f|$ is smooth and the standard
 Laplacian identities for a holomorphic function give
 \[

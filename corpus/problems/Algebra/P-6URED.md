@@ -25,7 +25,7 @@ audit:
 Prove that the symmetric group $S_4$ is a **non-abelian** and **solvable** group.
 :::
 
-::: solution
+::: {.solution}
 The group $S_4$ is nonabelian because, for example,
 \[
 (12)(23)=(123)\ne(132)=(23)(12).

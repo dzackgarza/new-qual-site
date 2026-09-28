@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X\subset \AA^n$ be an arbitrary subset and show that
 \[
 V(I(X)) = \bar{X}
 .\]
 :::
 
-::: solution
+::: {.solution}
 $\bar{X} \subseteq V(I(X))$:
 We have $X\subseteq V(I(X))$, and $V(J)$ is closed in the Zariski topology for any ideal $J \normal k[x_1, \cdots, x_{n}]$ by definition, so $V(I(X))$ is closed.
 Thus

@@ -2,16 +2,217 @@
 schema: qual/card@1
 id: P-BKS12-5B
 kind: problem
-title: Berkeley Spring 2012 prelim problem 5B
+title: Increasing functions have a point of continuity
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the lost arrow in f against s12solutions.pdf page 5 problem 5B, keeping the source calligraphic R.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: Independently checked the one-sided monotone limits, construction of disjoint jump intervals, and injection of the discontinuity set into the rationals.
 ---
 
 ::: {.problem}
-Let $f : \mathcal { R }  \mathcal { R }$ be an increasing function from the reals to the reals.
-Show that there is an x such that f is continuous at x.
+Let $f : \mathcal{R} \to \mathcal{R}$ be an increasing function from the reals to the reals. Show that there is an $x$ such that $f$ is continuous at $x$.
+:::
+
+::: {.solution}
+Let
+$$
+D\coloneqq\{x\in\RR:f\text{ is discontinuous at }x\}.
+$$
+
+<1>1. For every $x\in\RR$, the finite numbers
+$$
+L_x
+\coloneqq
+\sup_{t<x}f(t)
+$$
+and
+$$
+R_x
+\coloneqq
+\inf_{t>x}f(t)
+$$
+satisfy
+$$
+L_x\leq f(x)\leq R_x.
+$$
+
+::: {.proof}
+Because $f$ is increasing,
+$$
+f(t)\leq f(x)
+$$
+for $t<x$, so the nonempty set whose supremum defines $L_x$ is bounded
+above. Thus $L_x$ is a finite real number.
+
+Similarly,
+$$
+f(t)\geq f(x)
+$$
+for $t>x$, so the nonempty set whose infimum defines $R_x$ is bounded
+below. Thus $R_x$ is finite. The displayed inequalities follow directly
+from monotonicity.
+:::
+
+<1>2. One has
+$$
+\lim_{t\to x^-}f(t)=L_x
+$$
+and
+$$
+\lim_{t\to x^+}f(t)=R_x.
+$$
+
+::: {.proof}
+Let $\varepsilon>0$. By the definition of supremum, there is some
+$s<x$ with
+$$
+L_x-\varepsilon<f(s)\leq L_x.
+$$
+For every $t$ with $s<t<x$, monotonicity gives
+$$
+L_x-\varepsilon
+<
+f(s)
+\leq
+f(t)
+\leq
+L_x.
+$$
+Hence the left-hand limit is $L_x$.
+
+The proof on the right is analogous: by the definition of infimum, choose
+$u>x$ with
+$$
+R_x\leq f(u)<R_x+\varepsilon.
+$$
+Then for $x<t<u$,
+$$
+R_x
+\leq
+f(t)
+\leq
+f(u)
+<
+R_x+\varepsilon.
+$$
+:::
+
+<1>3. The function $f$ is continuous at $x$ exactly when
+$$
+L_x=f(x)=R_x.
+$$
+
+::: {.proof}
+If $f$ is continuous at $x$, both one-sided limits equal $f(x)$, so the
+claim follows from step <1>2.
+
+Conversely, if the three quantities are equal, step <1>2 shows that both
+one-sided limits equal $f(x)$, hence the two-sided limit exists and equals
+$f(x)$.
+:::
+
+<1>4. For every $x\in D$, there is a nonempty open interval $J_x$ such
+that every point of $J_x$ lies strictly between the limiting values of
+$f$ at $x$.
+
+::: {.proof}
+By step <1>3, if $x\in D$, then either
+$$
+L_x<f(x)
+$$
+or
+$$
+f(x)<R_x.
+$$
+In the first case set
+$$
+J_x=(L_x,f(x)),
+$$
+and in the second case set
+$$
+J_x=(f(x),R_x).
+$$
+If both inequalities hold, choose either interval. In every case $J_x$ is
+a nonempty open interval.
+:::
+
+<1>5. If
+$$
+x<y
+$$
+are in $D$, then
+$$
+J_x\cap J_y=\varnothing.
+$$
+
+::: {.proof}
+Choose any $t$ with
+$$
+x<t<y.
+$$
+Monotonicity gives
+$$
+R_x
+\leq
+f(t)
+\leq
+L_y.
+$$
+Every point of $J_x$ is strictly less than $R_x$, while every point of
+$J_y$ is strictly greater than $L_y$. Therefore every point of $J_x$ is
+strictly less than every point of $J_y$.
+:::
+
+<1>6. The set $D$ is countable.
+
+::: {.proof}
+Every nonempty open interval contains a rational number. For each
+$x\in D$, choose
+$$
+q_x\in J_x\cap\QQ.
+$$
+Step <1>5 shows that the intervals $J_x$ are pairwise disjoint, so
+distinct points of $D$ receive distinct rationals. Thus
+$$
+x\longmapsto q_x
+$$
+is an injection from $D$ into the countable set $\QQ$.
+:::
+
+<1>7. There exists
+$$
+\boxed{x\in\RR}
+$$
+at which $f$ is continuous.
+
+::: {.proof}
+The real line is uncountable, while the discontinuity set $D$ is countable
+by step <1>6. Hence
+$$
+\RR\setminus D
+\neq
+\varnothing.
+$$
+Every point in this complement is a continuity point.
+:::
+
+<1>8. Q.E.D.
+
+::: {.proof}
+Step <1>7 is the required existence statement.
+:::
 :::

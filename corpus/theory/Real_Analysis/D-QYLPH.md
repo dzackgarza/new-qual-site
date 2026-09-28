@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-QYLPH
 kind: definition
-title: Measures on measurable spaces
+title: Measure on a measurable space
 classification:
   areas:
   - real-analysis
@@ -12,14 +12,19 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-If $(X, \mcm)$ is a measurable space, then a **measure** is a function $\mu: \mcm \to [0,\infty]$ such that 
+::: {.definition}
+Let $(X, \mcm)$ be a measurable space.
+A \dfn{measure} on $(X,\mcm)$ is a function $\mu\colon \mcm \to [0,\infty]$ such that
 
-1. $\mu(\emptyset) = 0$.
-2. Countable additivity: if $\ts{E_k}_{k\geq 1}$ is a countable union of disjoint sets in $X$, then 
-\[
-\mu\qty{\disjoint_{k\geq 1} E_k} = \sum_{k\geq 1} \mu(E_k)
-.\]
+1. $\mu(\emptyset) = 0$, and
 
-If (2) only holds for finitely indexed sums, we say $\mu$ is **$\sigma\dash$additive**.
+2. $\mu$ is \dfn{countably additive}: if $(E_k)_{k\geq 1}$ is a sequence of pairwise disjoint sets in $\mcm$, then
+$$
+\mu\qty{\bigcup_{k\geq 1} E_k} = \sum_{k\geq 1} \mu(E_k).
+$$
+:::
+
+::: {.remark}
+Countable additivity is also called $\sigma$-additivity.
+A function $\mu\colon\mcm\to[0,\infty]$ with $\mu(\emptyset)=0$ for which the identity in (2) is required only for finite families of pairwise disjoint sets is called \dfn{finitely additive}.
 :::

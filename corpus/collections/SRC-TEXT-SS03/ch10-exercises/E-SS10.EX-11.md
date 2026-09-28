@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 11. Recall from Problem 2 in Chapter 2, that
 
 $$

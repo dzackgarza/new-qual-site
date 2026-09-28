@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $g : \mathbb{R}^d \to \mathbb{R}^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $|g(x)| \leq M$ for $m$-a.e. $x \in \mathbb{R}^d$.
 For $f \in L^1(m) := L^1(\mathbb{R}^d, m)$, let
 $$
@@ -42,9 +42,9 @@ $$
 4. Show, for $f \in L^1(m)$, that $f * g$ may be written as a uniformly convergent limit of continuous functions and hence $(f * g)(x)$ is continuous in $x$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove existence and the uniform bound.
-::: proof
+::: {.proof}
 For every $x\in\mathbb R^d$,
 \[
 \int_{\mathbb R^d}|f(x-y)g(y)|\,dy
@@ -58,7 +58,7 @@ Thus $(f*g)(x)$ is well defined for every $x$, and
 :::
 
 <1>2. Rewrite the convolution by a change of variables.
-::: proof
+::: {.proof}
 In
 \[
 (f*g)(x)=\int f(x-y)g(y)\,dy,
@@ -72,7 +72,7 @@ Renaming $z$ as $y$ gives the desired formula.
 :::
 
 <1>3. Prove continuity for $f_n\in C_c(\mathbb R^d)$.
-::: proof
+::: {.proof}
 For $h\in\mathbb R^d$,
 \[
 \begin{aligned}
@@ -90,7 +90,7 @@ The bound is independent of $x$, so $f_n*g$ is in fact uniformly continuous.
 :::
 
 <1>4. Approximate a general $f\in L^1$ by compactly supported continuous functions.
-::: proof
+::: {.proof}
 Choose $f_n\in C_c(\mathbb R^d)$ such that
 \[
 \|f_n-f\|_1\longrightarrow0.

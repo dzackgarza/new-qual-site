@@ -23,7 +23,7 @@ Consider the seventeen properties listed in Exercise 1 of the Supplementary Exer
 Which of these properties does a compact Hausdorff space have?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Evaluate which of the 17 fundamental topological properties are necessarily possessed by every compact Hausdorff space, and provide proofs or counterexamples for each.
 
 <1>1. The seventeen standard properties and their validity for compact Hausdorff spaces:

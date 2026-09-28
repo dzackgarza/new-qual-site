@@ -25,7 +25,7 @@ audit:
   note: Verified the Mayer-Vietoris computation using the contractible union of the xy-plane and z-axis and its three-component intersection with S^2.
 ---
 
-::: problem
+::: {.problem}
 Compute the homology of the subset $X\subset\RR^3$ formed as the union of the unit sphere, the $z$-axis, and the $xy$-plane.
 :::
 

@@ -29,7 +29,7 @@ Show that TFAE:
 - If $B\in \Field$ is nonzero then every ring morphism $A\to B$ is injective.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that for a non-trivial commutative ring $A$ with unity $1 \neq 0$, the following statements are equivalent:
 (1) $A$ is a field.
 (2) $A$ is a simple ring (the only ideals of $A$ are $(0)$ and $A$).

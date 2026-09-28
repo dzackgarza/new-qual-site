@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that no group of order 36 is simple.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=36$. Sylow gives
 \[
 n_3\mid4,\qquad n_3\equiv1\pmod3,

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 10. Let $F : \mathbb { H }  \mathbb { C }$ be a holomorphic function that satisfies
 
 $$
@@ -31,7 +31,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \phi(z)=\frac{z-i}{z+i}.

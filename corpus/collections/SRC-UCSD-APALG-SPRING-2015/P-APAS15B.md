@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (1) Write down the character table of the product of symmetric groups $S_3 \times S_2$.
 
 (2) Let $S^{(2,2,1)}$ be the irreducible representation of $S_5$ indexed by the partition $(2,2,1) \vdash 5$.
 Determine the decomposition of the restriction $S^{(2,2,1)} \downarrow_{S_3 \times S_2}$ into irreducible $S_3 \times S_2$-representations.
 :::
 
-::: solution
+::: {.solution}
 The irreducible characters of a direct product are exactly the external products of irreducible characters of the two factors.
 
 For \(S_3\), write

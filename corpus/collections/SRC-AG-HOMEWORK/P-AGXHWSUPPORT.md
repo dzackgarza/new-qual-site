@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mcf\in \Sh(X)$ and $s\in \mcf(U)$ be a section, and define
 \[
 \supp s &\da \ts{p\in U \st s_p \neq 0} \subseteq U \\
@@ -24,7 +24,7 @@ where $s_p$ denotes the germ of $s$ in the stalk $\mcf_p$.
 Show that $\supp s$ is closed in $U$ but $\supp \mcf$ need not be closed in $X$.
 :::
 
-::: solution
+::: {.solution}
 **$\supp(s)$ is closed**:
 
 - Write
@@ -37,7 +37,15 @@ Show that $\supp s$ is closed in $U$ but $\supp \mcf$ need not be closed in $X$.
 
 **$\supp(\mcf)$ is not closed**:
 
-- Take the skyscraper sheaf: take the constant sheaf on a point $q\in X$, then push it forward along the inclusion $q\injects X$.
+- Take the skyscraper sheaf: take the constant sheaf on a point $q\in X$, then push it forward along the inclusion $q\injects X$:
+
+\begin{tikzcd}
+	{\ul{A}} & {q_* \ul{A}} \\
+	q & X
+	\arrow["{q_*}", from=1-1, to=1-2]
+	\arrow["q", hook, from=2-1, to=2-2]
+\end{tikzcd}
+
 
 - Then check
 \[

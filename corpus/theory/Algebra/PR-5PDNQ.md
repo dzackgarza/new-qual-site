@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-5PDNQ
 kind: proposition
-title: $V^*\otimes W^*\cong(V\otimes W)^*$ in finite dimensions
+title: $V^*\otimes W^*\cong(V\otimes W)^*$ when one factor is finite-dimensional
+slogan: 'With one finite-dimensional factor, dualizing a tensor product equals tensoring the duals.'
 classification:
   areas:
   - algebra
@@ -14,11 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-If either of $\dim_k V, \dim_k W$ is finite, then
-\[
-V\dual \tensor_k W\dual &\mapsvia{\sim} (V\tensor W)\dual \\
-v\tensor w &\mapsto (x \tensor y \mapsto v(x) w(y))
-.\]
-
+::: {.proposition}
+Let $k$ be a field and let $V, W$ be $k$-vector spaces, at least one of which is finite-dimensional.
+The $k$-linear map
+$$
+\begin{aligned}
+V\dual \tensor_k W\dual &\to (V \tensor_k W)\dual \\
+v \tensor w &\mapsto \big(x \tensor y \mapsto v(x)\, w(y)\big)
+\end{aligned}
+$$
+is an isomorphism.
 :::

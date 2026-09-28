@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-085
 kind: problem
-title: Kent State ring-theory qualifying problem 85
+title: '$\mathbb Z[\sqrt{13}]$ is not a UFD: irreducibility of $x^2+3x-1$'
 classification:
   areas: [algebra]
   topics: []

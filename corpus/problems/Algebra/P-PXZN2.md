@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Which finite groups occur as Galois groups of some field extension?
 :::
 

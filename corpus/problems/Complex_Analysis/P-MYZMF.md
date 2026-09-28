@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f$ be analytic in a domain $D$ and fix $z_0 \in D$ with $w_0 \definedas f(z_0)$.
 Suppose $z_0$ is a zero of $f(z) - w_0$ with finite multiplicity $m$.
 Show that there exists $\delta >0$ and $\eps > 0$ such that for each $w$ such that $0 < \abs{w-w_0} < \eps$, the equation $f(z) - w = 0$ has exactly $m$ *distinct* solutions inside the disc $\abs{z-z_0} < \delta$.
 :::
 
-:::{.solution}
+::: {.solution}
 Write $g(z) \da f(z) - w_0$, then $g$ is holomorphic on $D$ and thus $w_0$ is an isolated zero.
 Choose $\delta$ small enough so that $g$ is nonvanishing on $\DD_\delta(z_0)\smts{z_0}$.
 Let 

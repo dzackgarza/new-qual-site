@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a connected space.
 Show that the suspension of $X$, $\Sigma X$, is simply connected.
 Can we drop the connectedness assumption?

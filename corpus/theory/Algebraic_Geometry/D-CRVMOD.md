@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition title="Coarse moduli space"}
-A variety $M_g$ is a **coarse moduli space** for curves of genus $g$ when:
+A variety $M_g$ is a \dfn{coarse moduli space} for curves of genus $g$ when:
 
 1. the closed points of $M_g$ are in bijection with isomorphism classes of smooth projective curves of genus $g$, and
 
@@ -30,7 +30,7 @@ A variety $M_g$ is a **coarse moduli space** for curves of genus $g$ when:
 :::
 
 ::: {.definition title="Fine moduli space"}
-$M_g$ is a **fine moduli space** when it represents the functor sending $T$ to the set of flat families over $T$ up to isomorphism: the assignment of (2) is a bijection
+$M_g$ is a \dfn{fine moduli space} when it represents the functor sending $T$ to the set of flat families over $T$ up to isomorphism: the assignment of (2) is a bijection
 \[
 \operatorname{Hom}(T, M_g) \longleftrightarrow \ts{\text{families over } T}/{\cong}
 \]

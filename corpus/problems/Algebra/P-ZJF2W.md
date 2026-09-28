@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If we think of the Galois group of a polynomial as contained in $S_n$, when is it contained in $A_n$?
 :::
 

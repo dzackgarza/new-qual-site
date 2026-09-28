@@ -24,7 +24,7 @@ audit:
   note: Ported the repaired Fall 2006 proof of the identical problem; the left-eigenvector argument uses Ran(A-lambda I)=ker(y^*) by dimension and algebraic multiplicity one to prove y^*x is nonzero.
 ---
 
-::: problem
+::: {.problem}
 Assume that $(\lambda, x)$ is an eigenpair of $A \in \mathbb{C}^{n \times n}$ such that $\operatorname{am}(\lambda) = \operatorname{gm}(\lambda) = 1$.
 Prove that there exists a nonsingular matrix $(x \quad X)$ with inverse $(y \quad Y)^*$ such that
 \[

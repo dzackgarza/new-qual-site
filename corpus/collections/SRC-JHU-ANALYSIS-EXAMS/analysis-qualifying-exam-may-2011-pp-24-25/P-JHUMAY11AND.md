@@ -25,6 +25,7 @@ audit:
   note: "Checked the global harmonic conjugate, polynomial growth of its exponential, the Cauchy coefficient limits and the zero-free polynomial step; no lower bound on u is assumed."
 ---
 
+::: {.problem}
 4. Suppose that $u : \mathbb { C } \to \mathbb { R }$ is a harmonic function such that
 
 $$
@@ -32,11 +33,12 @@ u ( z ) \leq 1 0 \log ( | z | + 2 ) ,
 $$
 
 for all $z \in \mathbb { C }$ . Prove that u is constant.
+:::
 
-::: solution
+::: {.solution}
 <1>1. The harmonic function is the real part of an entire function.
 
-::: proof
+::: {.proof}
 The plane is simply connected, so $u$ has a globally
 defined harmonic conjugate $v$; consequently $H=u+iv$
 is entire [@SS03]. One explicit construction, writing
@@ -55,7 +57,7 @@ $\operatorname{Re}H=u$.
 
 <1>2. The exponential of $H$ is a polynomial.
 
-::: proof
+::: {.proof}
 The entire function $F=e^H$ satisfies
 $$
 |F(z)|=e^{u(z)}\leq e^{10\log(|z|+2)}=(|z|+2)^{10}.
@@ -72,7 +74,7 @@ such $k$, so $F$ is a polynomial of degree at most ten.
 
 <1>3. This polynomial is constant, and so is $u$.
 
-::: proof
+::: {.proof}
 An exponential has no zero. By the fundamental theorem
 of algebra, a nonconstant complex polynomial has a zero
 [@SS03]. The polynomial $F=e^H$ from step <1>2 must

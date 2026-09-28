@@ -29,7 +29,7 @@ If $R$ is a noetherian ring and $I$ any ideal, then $R/I$ is noetherian too.
 :::
 
 
-::: solution
+::: {.solution}
 Let $\pi:R\to R/I$ be the quotient map and let $J/I$ be an arbitrary ideal
 of $R/I$, where $J=\pi^{-1}(J/I)$ is the corresponding ideal of $R$ containing
 $I$.

@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $A, B\subseteq \RR^n$ are connected and not disjoint.
 Prove that $A\union B$ is also connected.
 :::
 
-::: solution
+::: {.solution}
 Suppose, for contradiction, that $A\cup B$ is disconnected. Then there are
 disjoint nonempty sets $U,V$, open in the subspace topology of $A\cup B$, such
 that

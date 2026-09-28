@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $0 = x_0^{(k)} < x_1^{(k)} < \cdots < x_k^{(k)} = 1$ ($k = 1, 2, \ldots$) and $0 \neq A_j^{(k)} \in \mathbb{R}$ ($j = 0, \ldots, k$, $k = 1, 2, \ldots$). Define for any $f \in C([0, 1])$
 $$
 I[f] = \int_0^1 f(x) \, dx \quad \text{and} \quad I_k[f] = \sum_{j=0}^{k} A_j^{(k)} f(x_j^{(k)}) \quad (k = 1, 2, \ldots).
@@ -42,9 +42,9 @@ Prove $\sup_{k \geq 1} \sum_{j=0}^{k} |A_j^{(k)}| < \infty$.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Extend convergence from polynomials to all continuous functions.
-::: proof
+::: {.proof}
 Put
 \[
 M:=\sup_{k\ge1}\sum_{j=0}^k |A_j^{(k)}|<\infty.
@@ -78,7 +78,7 @@ I_k[f]\longrightarrow I[f].
 :::
 
 <1>2. Compute the norm of \(I_k\).
-::: proof
+::: {.proof}
 For \(\|f\|_\infty\le1\),
 \[
 |I_k[f]|
@@ -109,7 +109,7 @@ Hence
 :::
 
 <1>3. Deduce uniform boundedness of the coefficient sums from pointwise convergence.
-::: proof
+::: {.proof}
 Assume \(I_k[f]\to I[f]\) for every \(f\in C([0,1])\). For each fixed \(f\), the scalar sequence \((I_k[f])_k\) converges and is therefore bounded:
 \[
 \sup_k |I_k[f]|<\infty.

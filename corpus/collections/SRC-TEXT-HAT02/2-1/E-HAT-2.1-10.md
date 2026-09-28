@@ -26,10 +26,12 @@ audit:
   note: Proved the quotient is a surface using links of vertices and gave an explicit branching construction orienting all quotient edges so each triangle inherits a vertex ordering.
 ---
 
+::: {.problem}
 (a) Show the quotient space of a finite collection of disjoint 2 simplices obtained by identifying pairs of edges is always a surface, locally homeomorphic to $\mathbb{R}^2$.
 
 (b) Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface.
 [This is more difficult.]
+:::
 
 ::: {.solution}
 Let $q$ be the quotient map from the disjoint union of the finitely many triangles to the quotient $X$.

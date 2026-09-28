@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/solution.pdf",
+  "source_pdf_sha256": "dc079535c0622f9fdb507a531d3e3b4d5b815b460917e4f7bff774a118a2b6d1",
+  "extracted_markdown": "assets/attachments/solution_extracted.md",
+  "extracted_markdown_sha256": "b0436969dec26b4ba697db718e6e726588b6f92ba306523620a5093f510544a0",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/solution.md",
+  "source_identification": "Harvard Math 21b Spring 2018 Final Exam with worked solutions and thirteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-FINAL lists thirteen cards in source order and preserves the recoverable mathematical obligations in the deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "One true-or-false item in Problem 1 is not recoverable from the Flash output; the existing card records that source gap explicitly.",
+    "Problems 2, 7, and 11 contain figure-dependent choices that Flash emits only as image placeholders; the existing cards leave those choices unrecovered rather than reconstructing them."
+  ]
+}

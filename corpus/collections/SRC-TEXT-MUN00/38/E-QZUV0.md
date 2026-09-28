@@ -60,4 +60,3 @@ the universal property of $\beta(X)$ (every continuous map from $X$ to a compact
 <1>6.
 :::
 :::
-:::

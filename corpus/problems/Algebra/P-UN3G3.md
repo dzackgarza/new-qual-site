@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A \in M_n(\mathbb{C})$ (or an algebraically closed field).
 How do you determine the **number** and **sizes** of the blocks in the Jordan Canonical Form of $A$?
 :::
 
-::: solution
+::: {.solution}
 Fix an eigenvalue $\lambda$ and set
 \[
 d_k=\dim\ker(A-\lambda I)^k,

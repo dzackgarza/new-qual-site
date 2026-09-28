@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 > Note: (a) is a repeat.
 
 - Let $\Lambda\in L^2(X)\dual$.

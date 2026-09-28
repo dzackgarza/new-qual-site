@@ -17,10 +17,13 @@ prompts:
 - When is a ring map integral, and what is an integral extension?
 - How does integral compare with finite as a condition on $B \to A$?
 - Show that $k[t] \injects k[t, t\inv]$ is not integral.
+- 'For a subring $R \subseteq F$ and $a \in F$, show that the following are equivalent: $a$ is integral over $R$; $R[a]$ is a finitely generated $R$-module; there is a ring $R[a] \subseteq L \subseteq F$ that is a finitely generated $R$-module.'
+- If $F$ is a field integral over a subring $R$, show that $R$ is a field.
+- Show that $k[x][f^{-1}]$ is not a field for any $f \in k[x]$.
 ---
 
 ::: {.definition title="integral ring morphism"}
-A ring morphism $\phi: B \to A$ is **integral** if every element of $A$ is a root of a monic polynomial with coefficients in $\phi(B)$.
+A ring morphism $\phi: B \to A$ is \dfn{integral} if every element of $A$ is a root of a monic polynomial with coefficients in $\phi(B)$.
 When $\phi$ is an inclusion $B \subseteq A$, we call $A$ an **integral extension** of $B$.
 :::
 

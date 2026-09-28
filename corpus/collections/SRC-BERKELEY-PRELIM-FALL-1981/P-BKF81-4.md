@@ -23,7 +23,7 @@ audit:
   note: "Verified both directions of the Cayley transform using transpose identities, proved I±S invertible for skew-symmetric S, and checked the formulas are mutual inverses."
 ---
 
-::: problem
+::: {.problem}
 Prove the following for real $n\times n$ matrices.
 
 (a) If $A$ is orthogonal and has no eigenvalue $-1$, then $I+A$ is nonsingular and $S=(I-A)(I+A)^{-1}$ is skew-symmetric.
@@ -33,9 +33,9 @@ Prove the following for real $n\times n$ matrices.
 (c) The correspondence between $A$ and $S$ is one-to-one.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove part (a).
-::: proof
+::: {.proof}
 Assume $A$ is orthogonal and has no eigenvalue $-1$. Then
 $$
 \ker(I+A)=\{0\},
@@ -76,7 +76,7 @@ Thus $S$ is skew-symmetric.
 :::
 
 <1>2. For skew-symmetric $S$, both $I+S$ and $I-S$ are nonsingular.
-::: proof
+::: {.proof}
 Suppose
 $$
 (I+S)x=0.
@@ -100,7 +100,7 @@ shows that $I-S$ is nonsingular.
 :::
 
 <1>3. Prove that $A=(I-S)(I+S)^{-1}$ is orthogonal and has no eigenvalue $-1$.
-::: proof
+::: {.proof}
 Let $S^t=-S$ and define
 $$
 A=(I-S)(I+S)^{-1}.
@@ -129,7 +129,7 @@ which is nonsingular. Therefore $-1$ is not an eigenvalue of $A$.
 :::
 
 <1>4. The two formulas are mutual inverses.
-::: proof
+::: {.proof}
 Starting from
 $$
 S=(I-A)(I+A)^{-1},

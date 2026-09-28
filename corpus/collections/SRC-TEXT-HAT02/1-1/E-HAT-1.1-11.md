@@ -17,11 +17,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $i: X_0 \hookrightarrow X$ induces an isomorphism $i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the inclusion $i: X_0 \hookrightarrow X$ induces an isomorphism $i_*: \pi_1(X_0, x_0) \to \pi_1(X, x_0)$ on fundamental groups.
 
 <1>1. Key Lemma: Any continuous map from a path-connected space into $X$ sending a basepoint to $x_0$ has image contained in $X_0$.

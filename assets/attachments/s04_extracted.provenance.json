@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/s04.pdf",
+  "source_pdf_sha256": "6023ba2062db420171ee4bccc9205e18dcb12277caf397f363bd65dd7b4e295b",
+  "extracted_markdown": "assets/attachments/s04_extracted.md",
+  "extracted_markdown_sha256": "d1a881a5e568b365eacab432cfa5bb39fd046eb2242fc05f5a64ee2244e3efc1",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/s04.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/s04.md",
+  "source_identification": "UC Berkeley Preliminary Examination, Spring 2004, with Part A problems 1A-9A and Part B problems 1B-9B.",
+  "card_reconciliation": "All 18 positions are already represented in paper order by complete collection SRC-BERKELEY-PRELIM-SPRING-2004; all 18 cards carry source-checked audit events against the retained exam and companion solution packet."
+}

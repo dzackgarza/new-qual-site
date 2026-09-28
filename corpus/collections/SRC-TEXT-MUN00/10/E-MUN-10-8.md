@@ -23,7 +23,7 @@ Define an order relation on $A_{1} \cup A_{2}$ by letting $a < b$ either if $a, 
 (b) Generalize (a) to an arbitrary family of pairwise disjoint well-ordered sets $\{A_\alpha\}_{\alpha \in J}$, indexed by a well-ordered set $J$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the ordinal sum (lexicographic / concatenation order) of well-ordered sets indexed by a well-ordered set produces a well-ordering.
 
 <1>1. Proof of Part (b) (Arbitrary Disjoint Family Indexed by a Well-Ordered Set):

@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mu)$ be a measure space and $f, f_n : X \to \mathbb{R}$ measurable functions such that $f_1 \leq f_2 \leq \cdots \leq f_n \leq \cdots$ a.e. and $\lim_{n \to \infty} f_n = f$ a.e.
 
 (a) For every $a \in \mathbb{R}$, show that $\lim_{n \to \infty} \mu(\{x : f_n(x) > a\})$ exists and
@@ -36,7 +36,7 @@ $$
 for some $a \in \mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the continuity of measures for level sets under monotone a.e. convergence and provide a strict inequality counterexample.
 
 <1>1. Null set reduction:

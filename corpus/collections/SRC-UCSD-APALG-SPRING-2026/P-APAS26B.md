@@ -16,13 +16,13 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $m \times n$ matrix whose columns are one-hot binary vectors: each column contains exactly one entry equal to $1$ and all other entries are equal to $0$.
 Let $r_i$ denote the sum of the entries in row $i$ of $A$ (the number of columns with a 1 in row $i$).
 Determine the **nonzero singular values** of $A$, and give explicit **orthonormal bases** for each of the corresponding left and right singular spaces.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the singular value decomposition of a one-hot column matrix $A$, finding $\sigma_i = \sqrt{r_i}$ and explicit left and right singular vectors.
 
 <1>1. Computation of $A A^H$ and $A^H A$:

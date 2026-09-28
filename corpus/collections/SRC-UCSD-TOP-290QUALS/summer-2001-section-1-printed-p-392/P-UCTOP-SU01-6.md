@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Show that any homotopy equivalence from $\mathbb{CP}^{2n}$ to itself is orientation-preserving, i.e. has degree +1. Is this true for $\mathbb{CP}^{2n+1}$?
+:::
 
 ::: {.solution}
 <1>1. Let $x\in H^2(\mathbb{CP}^m;\mathbb Z)$ be the standard generator, so

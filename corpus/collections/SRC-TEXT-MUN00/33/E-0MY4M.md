@@ -27,7 +27,7 @@ There exists a continuous function $f: X \to [0, 1]$ such that $f(x) = 0$ for $x
 A function satisfying the requirements of this theorem is said to vanish precisely on $A$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that in a normal space $X$, a subset $A \subseteq X$ is the zero set of a continuous function $f: X \to [0, 1]$ if and only if $A$ is a closed $G_\delta$ set.
 
 <1>1. Direct implication ($\implies$): Zero sets of continuous functions are closed $G_\delta$ sets.

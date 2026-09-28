@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 a.
 Let $z, w$ be complex numbers, such that $\bar{z} w \neq 1$.
 Prove that
@@ -39,7 +39,7 @@ mapping $$F: z \mapsto \frac{w - z}{1 - \bar{w} z}$$ satisfies the following con
 
 :::
 
-::: solution
+::: {.solution}
 The key identity is
 \[
 |1-\overline wz|^2-|w-z|^2

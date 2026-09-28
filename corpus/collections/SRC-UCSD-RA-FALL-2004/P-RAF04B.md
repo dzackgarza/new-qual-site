@@ -24,7 +24,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $g \in L^1(\mathbb{R}, m)$ be chosen so that $\int_\mathbb{R} g(x) \, dx = 3$.
 Find, with justification, the following limit:
 $$
@@ -32,9 +32,9 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Rewrite the oscillatory factor.
-::: proof
+::: {.proof}
 The identity
 \[
 \sin^2(nx)=\frac{1-\cos(2nx)}2
@@ -49,7 +49,7 @@ The first integral is $3$, so it remains to control the oscillatory term.
 :::
 
 <1>2. Apply the Riemann--Lebesgue lemma.
-::: proof
+::: {.proof}
 Because $g\in L^1(\mathbb R)$, the Riemann--Lebesgue lemma implies
 \[
 \int_{\mathbb R}g(x)e^{2inx}\,dx\longrightarrow0.

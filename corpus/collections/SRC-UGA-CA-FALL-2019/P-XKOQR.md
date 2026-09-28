@@ -15,18 +15,18 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 A holomorphic mapping $f: U \rightarrow V$ is a local bijection on $U$ if for every $z \in U$ there exists an open disc $D \subset U$ centered at $z$ so that $f: D \rightarrow f(D)$ is a bijection. Prove that a holomorphic map $f: U \rightarrow V$ is a local bijection if and only if $f^{\prime}(z) \neq 0$ for all $z \in U$.
 :::
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Inverse function theorem: if $F\in C^1(\RR^n\to \RR^n)$ and $D_f$ is invertible at $p$, the $F$ is invertible in a neighborhood of $p$, and $F\inv$ is $C^1$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 $\impliedby$:
 Let $z\in U$ be fixed.
 Since $f$ is holomorphic at $z$ and $f'(z)\neq 0$, consider $f(x, y)$ and its Jacobian as a real-valued function:

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 What is $\pi_n(S^3 \times S^4 \times S^5)$ for $n \leq 3$?
 :::
 

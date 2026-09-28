@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-W2TS2
 kind: fact
-title: $\cos(\pi/4) = \cdots$
+title: Value of $\cos(\pi/4)$
+slogan: '$\cos(\pi/4)=\sqrt2/2$.'
 prompts:
 - What is $\cos(\pi/4)$?
 classification:
@@ -17,6 +18,6 @@ review: draft
 
 ::: {.fact}
 $$
-\cos(\pi/4) = {\sqrt 2 \over 2}
-.$$
+\cos(\pi/4) = \frac{\sqrt 2}{2}.
+$$
 :::

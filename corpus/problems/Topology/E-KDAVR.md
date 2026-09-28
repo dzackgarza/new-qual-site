@@ -16,7 +16,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $X$ is compact and $A\subseteq X$ is closed then $A$ is compact.
 :::
 

@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Given $A\in M_{m,n}$ with $m\ge n$, prove that there exists a unique $U\in M_{m,n}$ with orthonormal columns, and a unique Hermitian positive semidefinite $H\in M_n$ such that $A=UH$.
 :::
 
-::: solution
+::: {.solution}
 The uniqueness assertion for $U$ is false as printed when $A$ is rank-deficient. For example, if $A=0$, then necessarily $H=0$, but every $m\times n$ matrix with orthonormal columns satisfies $A=UH$. Thus $U$ is not unique as soon as there is more than one such isometry.
 
 The correct polar-factorization statement is the following: for every $A\in M_{m,n}$ with $m\ge n$, there is a unique Hermitian positive semidefinite matrix

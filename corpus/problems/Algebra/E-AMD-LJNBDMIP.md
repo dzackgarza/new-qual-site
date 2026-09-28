@@ -20,7 +20,7 @@ audit:
 Show that a permutation is odd iff it has an odd number of even cycles.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** For $\sigma \in S_n$ written as a product of disjoint cycles, show $\operatorname{sgn}(\sigma) = -1$ if and only if the number of cycles of even length occurring in that decomposition is odd.
 
 <1>1. Sign of a single cycle: *Proof:* <2>1. A cycle of length $\ell \ge 2$ factors into $\ell - 1$ transpositions: $$(a_1\, a_2\, \dots\, a_\ell) = (a_1\, a_\ell)(a_1\, a_{\ell-1}) \cdots (a_1\, a_2).$$ <2>2. Since $\operatorname{sgn}$ is a homomorphism sending every transposition to $-1$, $$\operatorname{sgn}\bigl((a_1\, \dots\, a_\ell)\bigr) = (-1)^{\ell - 1}.$$ <2>3. Hence a cycle is an odd permutation exactly when $\ell$ is even, and this also holds for $\ell = 1$, where the cycle is the identity and $(-1)^{0} = 1$.

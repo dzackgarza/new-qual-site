@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVMORDELL
 kind: theorem
 title: Mordell's theorem, and $E(\QQ)$ as a finitely generated abelian group
+slogan: 'For an elliptic curve over $\QQ$, the rational points form $\ZZ^r$ plus a finite torsion subgroup.'
 classification:
   areas:
   - algebraic-geometry
@@ -25,7 +26,7 @@ prompts:
 
 ::: {.definition title="Defined over a subfield"}
 Let $k = \bar k$, let $(E, p_0)$ be elliptic, and embed $E \embeds \PP^2_{/k}$ by $\abs{3p_0}$, so $E = V(f)$ for a cubic $f$.
-Say $(E, p_0)$ is **defined over** a subfield $k_0 \subseteq k$ when $f$ can be taken with coefficients in $k_0$ and $p_0 \in E(k_0)$.
+Say $(E, p_0)$ is \dfn{defined over} a subfield $k_0 \subseteq k$ when $f$ can be taken with coefficients in $k_0$ and $p_0 \in E(k_0)$.
 Then $E(k_0) \leq E(k)$ is a subgroup.
 :::
 
@@ -62,22 +63,22 @@ The denominators appear as $d^2$ and $d^3$ in the two coordinates, which is exac
 :::
 
 ::: {.remark}
-Two things make this statement land, and both are about which structure survives restriction to $\QQ$.
+Two points require explanation: why $E(\QQ)$ is closed under the group law, and why that subgroup is finitely generated.
 
 The subgroup claim is not automatic and is the reason the definition insists that $p_0$ be rational.
 Addition is defined by "three collinear points sum to zero", and a line through two rational points of a rational cubic meets it in a third point whose coordinates are rational, because substituting the line into the cubic gives a cubic in one variable with rational coefficients and two rational roots, so the third root is rational too.
 Inversion is reflection, also rational.
-If $p_0$ were irrational the identity would leave the set and nothing would be a subgroup; this is why the base point is part of the data and not an afterthought.
+If $p_0\notin E(\QQ)$, then the identity is not rational, so $E(\QQ)$ is not a subgroup of $E(\bar\QQ)$ with respect to that chosen group law.
 
 That subgroup is where the geometry turns into arithmetic.
 Writing a rational point in lowest terms and clearing denominators converts $E(\QQ)$ into the integral solutions of a homogeneous cubic in three variables, so the chord-and-tangent construction becomes an operation that manufactures new integer solutions from old ones --- the classical secant method, predating any of this language.
 Reading it the other way, a Diophantine question about a cubic acquires a group acting on its own solution set, and Mordell's theorem says that group is small enough to describe: finitely many generators account for every solution there is.
 This exchange is the entire reason elliptic curves sit in number theory rather than only in geometry.
 
-Finite generation is the part with content, and the shape of the proof is worth knowing even when the proof is not.
+Finite generation is proved by combining descent with a height argument.
 It is a descent: the weak Mordell theorem gives $E(\QQ)/2E(\QQ)$ finite, and a height function measuring the arithmetic size of a point turns that finiteness into generation by a bounded set.
 Neither half is formal, and neither is visible from the geometry over $\bar\QQ$, where $E$ is divisible and nothing is finitely generated.
 
 What the theorem does not give is the rank.
-Torsion is completely understood --- by Mazur's theorem, $E(\QQ)_{\mathrm{tors}}$ is one of fifteen groups --- while $r$ has no known algorithm and no proven bound, which is the honest answer when an examiner pushes past the statement.
+Torsion is completely understood --- by Mazur's theorem, $E(\QQ)_{\mathrm{tors}}$ is one of fifteen groups --- while no algorithm is known to compute the rank $r$ in general, and no proven uniform bound for it is known.
 :::

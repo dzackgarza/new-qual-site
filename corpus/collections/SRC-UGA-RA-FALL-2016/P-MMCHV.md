@@ -22,6 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Define
 \[
 f(x) = \sum_{n=1}^{\infty} \frac{1}{n^{x}}.
@@ -35,8 +36,9 @@ f'(x)  =\sum_{n=1}^{\infty}\left(\frac{1}{n^{x}}\right)^{\prime}.
 \[
 \left(\frac{1}{n^{x}}\right)' = -\frac{1}{n^{x}} \ln n
 \]
+:::
 
-::: solution
+::: {.solution}
 
 Let
 \[

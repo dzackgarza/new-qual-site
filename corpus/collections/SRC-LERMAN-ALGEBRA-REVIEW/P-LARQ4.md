@@ -22,16 +22,16 @@ audit:
   note: "Checked preservation of addition, multiplication, zero, negatives, and identity under the unital convention."
 ---
 
-::: problem
+::: {.problem}
 Let $\phi:G\to H$ and $\psi:H\to K$ be ring homomorphisms.
 Prove that $\psi\circ\phi:G\to K$ is a ring homomorphism.
 :::
 
-::: solution
+::: {.solution}
 Let $x,y\in G$.
 
 <1>1. The composite preserves addition and multiplication.
-::: proof
+::: {.proof}
 Using first that $\phi$ and then that $\psi$ is a ring homomorphism,
 $$
 (\psi\circ\phi)(x+y)
@@ -50,7 +50,7 @@ Thus the composite preserves the two ring operations.
 :::
 
 <1>2. The remaining ring-homomorphism axioms are also preserved.
-::: proof
+::: {.proof}
 Additive preservation gives
 $$
 (\psi\circ\phi)(0_G)=\psi(0_H)=0_K

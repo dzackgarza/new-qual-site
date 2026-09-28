@@ -24,7 +24,9 @@ audit:
   note: Verified the Alexander-duality and Mayer--Vietoris calculations and all degree shifts.
 ---
 
+::: {.problem}
 Compute $H_i(S^n - X)$ when $X$ is a subspace of $S^n$ homeomorphic to $S^k \vee S^\ell$ or to $S^k \amalg S^\ell$.
+:::
 
 ::: {.solution}
 We use Alexander duality in the form

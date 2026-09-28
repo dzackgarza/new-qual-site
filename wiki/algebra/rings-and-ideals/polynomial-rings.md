@@ -9,9 +9,9 @@ topics:
 
 # Polynomial rings
 
-## Basics
+## Rings, ideals, and characteristic
 
-The construction \(R[x]\) embeds \(R\) as the constant polynomials. Ideals and ring morphisms describe quotients, reduction of coefficients, and polynomial evaluation.
+For a commutative ring $R$, the polynomial ring $R[x]$ contains $R$ as the constant polynomials, and for each $a\in R$ evaluation $f\mapsto f(a)$ is a [[D-GXMDW|ring morphism]] $R[x]\to R$ with kernel $\gens{x-a}$.
 
 [[D-GURUB]]
 
@@ -19,13 +19,14 @@ The construction \(R[x]\) embeds \(R\) as the constant polynomials. Ideals and r
 
 [[D-GOFWL]]
 
-[[D-O26OY]]
+[[D-JNCUB]]
 
 [[FD-LXZIW]]
 
-::: {.remark title="What survives passing to $R[x]$"}
-$R$ a UFD gives $R[x]$ a UFD, and $R$ Noetherian gives $R[x]$ Noetherian by the Hilbert basis theorem.
-$R$ a PID need not give $R[x]$ a PID: $\gens{2,x}\normal\ZZ[x]$ is not principal.
+::: {.remark title="Properties inherited by $R[x]$"}
+If $R$ is a [[D-INULL|UFD]], then $R[x]$ is a UFD, and if $R$ is [[D-TZXBO|Noetherian]], then $R[x]$ is Noetherian by the Hilbert basis theorem.
+If $R$ is a [[D-HTIL5|PID]], then $R[x]$ need not be a PID: the ideal $\gens{2,x}\normal\ZZ[x]$ is not principal.
+In fact $R[x]$ is a PID if and only if $R$ is a field.
 :::
 
-The irreducibility criteria and the field theory built on $k[x]$ are [[algebra/fields/polynomials|Polynomials over a field]].
+Irreducibility criteria and the field theory of $k[x]$ for a field $k$ are on [[algebra/fields/polynomials|Polynomials over a field]].

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
 Let $1 \leq p < \infty$, let $f, f_n \in L^p(X, \mu)$ for $n \in \mathbb{N}$, and assume that $f_n \to f$ pointwise $\mu$-almost-everywhere.
 Prove that $\|f_n - f\|_p \to 0$ if and only if $\|f_n\|_p \to \|f\|_p$.
@@ -33,9 +33,9 @@ Prove that $\|f_n - f\|_p \to 0$ if and only if $\|f_n\|_p \to \|f\|_p$.
 (Note: You are not allowed to use the generalized Dominated Convergence Theorem unless you prove it.)
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the easy implication.
-::: proof
+::: {.proof}
 If
 \[
 \|f_n-f\|_p\to0,
@@ -52,7 +52,7 @@ Hence
 :::
 
 <1>2. Show that the $p$th powers converge in $L^1$.
-::: proof
+::: {.proof}
 Assume now that
 \[
 \|f_n\|_p\to\|f\|_p.
@@ -89,7 +89,7 @@ we obtain
 :::
 
 <1>3. Deduce uniform integrability of the difference powers.
-::: proof
+::: {.proof}
 Convergence $g_n\to g$ in $L^1$ implies that the family $\{g_n:n\ge1\}$ is uniformly integrable. Indeed, given $\varepsilon>0$, first choose $N$ so that
 \[
 \|g_n-g\|_1<\varepsilon/4
@@ -122,7 +122,7 @@ shows that $(h_n)$ is uniformly integrable as well.
 :::
 
 <1>4. Combine Egorov with uniform integrability.
-::: proof
+::: {.proof}
 We have $h_n\to0$ almost everywhere. Fix $\varepsilon>0$. By uniform integrability, choose $\delta>0$ such that
 \[
 \mu(E)<\delta

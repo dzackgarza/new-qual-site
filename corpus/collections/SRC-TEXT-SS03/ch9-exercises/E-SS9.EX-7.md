@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 7. Setting $\tau = 1 / 2$ in the expression
 
 $$
@@ -37,7 +37,7 @@ $$
 These results were already obtained using Fourier series in the exercises at the end of Chapters 2 and 3 in Book I.
 :::
 
-::: solution
+::: {.solution}
 At \(\tau=1/2\),
 \[
 \sum_{m\in\mathbb Z}\frac1{(m+1/2)^2}=\pi^2.

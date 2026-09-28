@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $AC([0,1])$ denote the absolutely continuous functions on $[0,1]$ with values in $\mathbb{R}$ and for $1 \leq p < \infty$, let
 $$
 \mathcal{C}_p := \{f \in AC([0,1]) : f(0) = 0 \text{ and } \int_{[0,1]} |f'(x)|^p\,dx \leq 1\}
@@ -39,9 +39,9 @@ $$
    You must justify your conclusion here.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Establish uniform boundedness and equicontinuity for $p>1$.
-::: proof
+::: {.proof}
 Fix $p>1$ and let $q=p/(p-1)$. If $f\in\mathcal C_p$, then for $0\le x<y\le1$, absolute continuity gives
 \[
 f(y)-f(x)=\int_x^y f'(t)\,dt.
@@ -66,7 +66,7 @@ so $\mathcal C_p$ is uniformly bounded.
 :::
 
 <1>2. Apply Arzelà--Ascoli for $p>1$.
-::: proof
+::: {.proof}
 The domain $[0,1]$ is compact. By Step 1, $\mathcal C_p$ is uniformly bounded and equicontinuous. Therefore the Arzelà--Ascoli theorem implies that its closure in $C([0,1])$ is compact. Hence
 \[
 \boxed{\mathcal C_p\text{ is precompact for every }p>1.}
@@ -74,7 +74,7 @@ The domain $[0,1]$ is compact. By Step 1, $\mathcal C_p$ is uniformly bounded an
 :::
 
 <1>3. Show that $\mathcal C_1$ is not precompact.
-::: proof
+::: {.proof}
 For $n\ge1$, define
 \[
 f_n(x):=\min(nx,1),

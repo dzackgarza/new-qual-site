@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Assuming the first two axioms for a homology theory on the CW category, show that the direct limit axiom implies the wedge sum axiom.
 Show that the converse also holds for countable CW complexes.
+:::
 
 ::: {.solution}
 Let \(\widetilde h_*\) satisfy the homotopy and exactness axioms. Recall first that these two axioms already imply the wedge axiom for finite wedge sums.

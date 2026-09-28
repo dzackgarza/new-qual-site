@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Factor $6$ in two different ways in $R=\ZZ[\sqrt{-5}]$.
 Explain the discrepancy using ideal factorization, and factor the principal ideal $(6)$ into prime ideals.
 :::

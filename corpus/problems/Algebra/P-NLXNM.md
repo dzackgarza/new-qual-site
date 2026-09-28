@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite group and $p$ a prime number. Let
 $X_p$ be the set of Sylow-$p$ subgroups of $G$ and $n_p$ be the
 cardinality of $X_p$. Let $\mathrm{Sym}(X)$ be the permutation group on
@@ -30,7 +30,7 @@ the set $X_p$.
     group of order $ap^k$ is simple.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 1.  Define the required group action by $$\begin{aligned}

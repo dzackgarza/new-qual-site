@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-01
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 1'
+title: Tangent line to $y=x+e^x$ at $x=0$
 classification:
   areas:
   - prelim

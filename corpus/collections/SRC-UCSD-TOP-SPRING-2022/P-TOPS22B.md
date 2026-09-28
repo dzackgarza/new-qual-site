@@ -24,14 +24,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Determine whether $X = S^2 \vee S^3 \vee S^5$ is homotopy equivalent to:
 
 (a) a **closed manifold** (compact, without boundary),
 (b) a **manifold** (with or without boundary).
 :::
 
-::: solution
+::: {.solution}
 <1>1. With coefficients in $\mathbb F_2$, the only nonzero reduced cohomology groups of
 $X=S^2\vee S^3\vee S^5$ occur in degrees $2,3,5$, and every cup product of two positive-degree classes is zero.
 

@@ -33,7 +33,7 @@ where $M$ is the least normal subgroup of $\pi_1(U, x_0)$ containing $i_1(\ker i
 [Hint: Let $H = \pi_1(U, x_0)/M$. Let $\phi_1: \pi_1(U, x_0) \to H$ be the projection. Use the fact that $\pi_1(U \cap V, x_0)/\ker i_2$ is isomorphic to $\pi_1(V, x_0)$ to define a homomorphism $\phi_2: \pi_1(V, x_0) \to H$. Use Theorem 70.1 to define a left inverse for $h$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that when the inclusion homomorphism $i_2: \pi_1(U \cap V, x_0) \to \pi_1(V, x_0)$ is surjective, $\pi_1(X, x_0) \cong \pi_1(U, x_0)/M$, where $M$ is the normal closure of $i_1(\ker i_2)$.
 
 <1>1. Part (a): Surjectivity of $j_1$ and existence of the epimorphism $h$.

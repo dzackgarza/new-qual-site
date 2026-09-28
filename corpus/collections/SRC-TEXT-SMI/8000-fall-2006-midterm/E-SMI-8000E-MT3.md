@@ -31,9 +31,9 @@ audit:
 (b) Give an explicit example of one abelian group in each isomorphism class of abelian groups of order 360.
 :::
 
-::: solution
+::: {.solution}
 <1>1. State the classification theorem for finitely generated modules over a Euclidean domain.
-::: proof
+::: {.proof}
 Let $R$ be a Euclidean domain and let $M$ be a finitely generated
 $R$-module. Then there are uniquely determined data, up to multiplication of
 the $d_i$ by units,
@@ -60,7 +60,7 @@ $R/(p^a)$; this is the elementary-divisor form.
 :::
 
 <1>2. Sketch the existence proof via Smith normal form.
-::: proof
+::: {.proof}
 Choose generators $m_1,\ldots,m_n$ of $M$. They give a surjection
 $$
 \pi:R^n\twoheadrightarrow M.
@@ -102,7 +102,7 @@ $d_1\cdots d_k$ for every $k$.
 :::
 
 <1>3. Reduce the classification of abelian groups of order $360$ to their primary components.
-::: proof
+::: {.proof}
 Factor
 $$
 360=2^3\cdot3^2\cdot5.
@@ -136,7 +136,7 @@ isomorphism classes in total.
 :::
 
 <1>4. Give one explicit representative of each isomorphism class.
-::: proof
+::: {.proof}
 Combining each possible $2$-primary factor with each possible $3$-primary
 factor and with $C_5$ gives exactly the six groups
 $$

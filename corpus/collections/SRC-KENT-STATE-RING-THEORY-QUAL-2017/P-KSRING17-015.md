@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-015
 kind: problem
-title: Kent State ring-theory qualifying problem 15
+title: Characterization of the Jacobson radical by units $1-xy$
 classification:
   areas: [algebra]
   topics: []

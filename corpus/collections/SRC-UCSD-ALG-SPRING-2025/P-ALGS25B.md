@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $N$ is a normal subgroup of $G$ and $P$ is a Sylow $p$-subgroup of $N$.
 
 (a) Prove that there exists $Q \in \operatorname{Syl}_p(G)$ such that $P = Q \cap N$.

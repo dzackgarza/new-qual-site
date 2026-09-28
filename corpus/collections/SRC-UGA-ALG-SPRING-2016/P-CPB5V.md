@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $R$ be a simple rng (a nonzero ring which is not assume to have a 1, whose only two-sided ideals are $(0)$ and $R$) satisfying the following two conditions:
 
 i. $R$ has no zero divisors, and
@@ -32,23 +32,23 @@ Suppose $x,y\in R$ such that $x\neq 0$ and $2(xy) = x$, then $yz = zy$ for all $
 
 :::
 
-:::{.warnings}
+::: {.warnings}
 A general opinion is that this is not a great qual problem! 
 Possibly worth skipping.
 :::
 
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $R$ has no left zero divisors iff $R$ has the left cancellation property: $xa=xb \implies a=b$.
 - $R$ has no right zero divisors iff $R$ has the right cancellation property: $ax=bx \implies a=b$.
 :::
 
-:::{.solution}
+::: {.solution}
 Note: solutions borrowed from folks on Math twitter!
 
-:::{.proof title="part 1"}
+::: {.proof title="part 1"}
 \envlist
 
 - Existence: the claim is that $2R \da \ts{2y \st y\in R}$ is a nontrivial two-sided ideal of $R$, forcing $2R = R$ by simpleness.
@@ -68,7 +68,7 @@ Note: solutions borrowed from folks on Math twitter!
   .\]
 :::
 
-:::{.proof title="part 2"}
+::: {.proof title="part 2"}
 \envlist
 
 - First we'll show $z=2(yz)$:
@@ -98,7 +98,7 @@ yz + yz &= z \\
 so $zy=yz$.
 :::
 
-:::{.proof title="of 2, if $R$ is unital"}
+::: {.proof title="of 2, if $R$ is unital"}
 \envlist
 
 - If $1\in R$, 

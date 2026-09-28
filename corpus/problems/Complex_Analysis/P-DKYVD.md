@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Without using Cauchy's integral formula, show that if $\abs{a} < r < \abs{b}$, then
 \[
 \int_{\gamma} \frac{d z}{(z-a)(z-b)}
@@ -26,7 +26,7 @@ where $\gamma$ denotes the circle centered at the origin of radius $r$ with posi
 > Hint: take a Laurent expansion.
 :::
 
-::: solution
+::: {.solution}
 Since $|a|<r<|b|$, on $|z|=r$ we may expand
 \[
 {1\over z-a}

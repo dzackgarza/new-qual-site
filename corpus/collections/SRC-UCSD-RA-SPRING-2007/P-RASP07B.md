@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove that if $f_n, g_n, f, g \in L^1(X, \mu)$ with $f_n \to f$ a.e., $g_n \to g$ a.e., $|f_n| \leq g_n$ and $\int g_n \to \int g$, then $\int f_n \to \int f$.
 
 Hint: The proof is similar to that of the Dominated Convergence Theorem.
 Be sure to justify all your steps.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Pass the domination to the limit.
-::: proof
+::: {.proof}
 Outside a null set,
 \[
 f_n(x)\to f(x),
@@ -49,7 +49,7 @@ almost everywhere. In particular, $g_n\ge0$ and $g\ge0$ almost everywhere.
 :::
 
 <1>2. Apply Fatou to a nonnegative remainder.
-::: proof
+::: {.proof}
 Define
 \[
 h_n:=g_n+g-|f_n-f|.
@@ -92,7 +92,7 @@ Therefore
 :::
 
 <1>3. Conclude convergence of the integrals.
-::: proof
+::: {.proof}
 Finally,
 \[
 \left|\int_Xf_n\,d\mu-\int_Xf\,d\mu\right|

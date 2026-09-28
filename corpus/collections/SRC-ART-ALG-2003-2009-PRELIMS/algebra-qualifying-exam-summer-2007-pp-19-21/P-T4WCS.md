@@ -25,7 +25,7 @@ audit:
   note: "Verified the support intersections, transitivity, conjugate-cycle support, and order arguments without assuming simplicity of A5."
 ---
 
-::: problem
+::: {.problem}
 Let $x, y$ be $3$-cycles in $S_5$, $x$ not equal to $y$ or $y^{-1}$.
 
 a. If there is some element of $\{1,2,3,4,5\}$ fixed by both $x$ and $y$, show that $\langle x, y \rangle$ is isomorphic to $A_4$.
@@ -33,7 +33,7 @@ a. If there is some element of $\{1,2,3,4,5\}$ fixed by both $x$ and $y$, show t
 b. If there is no such element fixed by both, show that $\langle x, y \rangle = A_5$.
 :::
 
-::: solution
+::: {.solution}
 Write $S=\operatorname{supp}(x)$, $T=\operatorname{supp}(y)$, and
 $H=\langle x,y\rangle$. Here the support of a permutation is the set
 of points it moves.
@@ -41,7 +41,7 @@ of points it moves.
 <1>1. The supports are distinct, intersect nontrivially, and $H$ acts
 transitively on $S\cup T$.
 
-::: proof
+::: {.proof}
 There are exactly two $3$-cycles on a given set of three points,
 and they are inverses. Thus the hypothesis on $x,y$ implies $S\ne T$.
 Since each support has three points in a five-point set, their
@@ -56,7 +56,7 @@ $S\cup T$, proving transitivity there.
 
 <1>2. If there is a common fixed point, then $H\cong A_4$.
 
-::: proof
+::: {.proof}
 A common fixed point lies outside $S\cup T$, so this union has size
 four. Put $U=S\cup T$. A $3$-cycle is even, since
 $(a\ b\ c)=(a\ c)(a\ b)$ is a product of two transpositions.
@@ -72,7 +72,7 @@ The inclusion in $A(U)$ now forces $|H|=12$ and $H=A(U)\cong A_4$.
 
 <1>3. If there is no common fixed point, then $H=A_5$.
 
-::: proof
+::: {.proof}
 Now $S\cup T$ is the entire five-point set, so $S\cap T=\{c\}$
 for one point $c$. Let $z=yxy^{-1}\in H$. Conjugating a cycle
 applies the conjugating permutation to its entries, so

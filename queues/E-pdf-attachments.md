@@ -2,8 +2,7 @@
 
 This queue inventories 354 vendored PDF sources that lacked collection cards when the queue was created.
 Checked entries have since been dispositioned; unchecked entries still require intake.
-All 354 were extracted to full markdown and read for the inventory.
-Classification below is by document content, and each entry links to the extraction with line count, problem count, institution, subject, and date where identifiable.
+All 354 were extracted to Markdown and read for the inventory; an extraction whose MinerU Flash provenance is not established must be regenerated before it supports intake (`pdf-source-intake` in `TODO.md`, and the PDF extraction rule in `AGENTS.md`). Classification below is by document content, and each entry links to the extraction with line count, problem count, institution, subject, and date where identifiable.
 
 Per AGENTS.md, the PDF is the provenance.
 For an unchecked problem-bearing source, the remaining work is to create or reconcile the collection and extract/reuse its problem cards.
@@ -14,19 +13,26 @@ External links that are not vendored remain on the resource pages until a delibe
 
 ## Qualifying exams (76)
 
-- [ ] [8155-starter-problems.pdf](assets/attachments/extracted/8155-starter-problems.md) (59L, 7 problems) — applied-algebra
+- [x] [8155-starter-problems.pdf](assets/attachments/8155-starter-problems_extracted.md) (59L, 7 problems) — UGA — complex-analysis — starter problems — disposition 2026-09-14: reconciled to the existing complete `SRC-UGA-MATH8155-STARTER-PROBLEMS` collection from the deterministic MinerU Flash baseline banked in `31174b4d5`. All seven numbered source problems are represented in source order by `P-UGA8155-SP-01` through `P-UGA8155-SP-07`; the source/extractor defects in Problems 1 and 6 are recorded in the checked-in extraction provenance and on the affected source-checked cards.
+  The inventory's `applied-algebra` label was stale heuristic metadata.
 
-- [ ] [8210 Lecture Notes (Usher) Smooth Manifolds.pdf](assets/attachments/extracted/8210 Lecture Notes (Usher) Smooth Manifolds.md) (2574L, 5 problems) — UNL — alg-geom — FALL 2011
+- [x] [8210 Lecture Notes (Usher) Smooth Manifolds.pdf](assets/attachments/8210 Lecture Notes (Usher) Smooth Manifolds_extracted.md) (1436L, 13 exercises) — UGA — differential topology — Fall 2011 — disposition 2026-09-14: reference-only intake from the deterministic MinerU Flash baseline banked in `5f415c2bf`. Mike Usher's MATH 8210 lecture notes are expository course notes on smooth manifolds, partitions of unity, tangent/cotangent bundles, differential forms, exterior differentiation, and de Rham cohomology, with thirteen exercises interspersed through the exposition rather than a standalone exam/problem set.
+  The distinct larger Fall 2011 Usher differential-geometry notes are already routed through the topology resources; no duplicate exercise collection is manufactured here.
+  The inventory's `5 problems`, `UNL`, and `alg-geom` metadata came from the superseded extraction heuristic.
 
-- [ ] [871-872January_2004_871-953.pdf](assets/attachments/extracted/871-872January_2004_871-953.md) (33L, 10 problems) — alg-geom
+- [x] [871-872January_2004_871-953.pdf](assets/attachments/871-872January_2004_871-953_extracted.md) (33L, 10 problems) — UNL — topology / algebraic geometry — January 20, 2004 — disposition 2026-09-14: ingested as `SRC-UNL-QUAL-970-953-JANUARY-2004` in `c9413befc` and grounded in deterministic MinerU Flash in `1d12a9156`. All ten source positions are represented in exam order by seven source-owned cards plus canonical reuse of `P-TOP-WORKSHOP-D3-04`, `P-TOP-WORKSHOP-D4-03`, and `P-TOP-WORKSHOP-D3-05`. The explicitly identified Flash defects in Part I Problem 5 and Part II Problems 3 and 4 are recorded in the checked-in provenance and repaired on the source-checked cards from deterministic context.
+  The inventory's single `alg-geom` label was stale heuristic metadata.
 
-- [ ] [871-872January_2008_850-871.pdf](assets/attachments/extracted/871-872January_2008_850-871.md) (73L, 0 problems) — applied-algebra
+- [x] [871-872January_2008_850-871.pdf](assets/attachments/871-872January_2008_850-871_extracted.md) (73L, 9 questions) — UNL — applied algebra / topology — January 2008 — disposition 2026-09-14: ingested as `SRC-UNL-QUAL-850-871-JANUARY-2008` in `b2f9689db` and grounded in deterministic MinerU Flash in `4ea970285`. All nine source questions are represented in exam order by six source-owned cards plus canonical reuse of the verbatim topology problems `P-TOP-WORKSHOP-D2-02`, `P-TOP-WORKSHOP-D4-03B`, and `P-TOP-WORKSHOP-D3-01`. The inventory's `0 problems` count was a superseded extraction heuristic.
 
-- [ ] [analysis_2003-2007.pdf](assets/attachments/extracted/analysis_2003-2007.md) (611L, 76 problems) — Wesleyan — applied-algebra — SUMMER 2007 **OCR: MinerU hallucination notes**
+- [x] [analysis_2003-2007.pdf](assets/attachments/extracted/analysis_2003-2007.md) (611L, 76 problems) — Wesleyan — analysis compilation — 2003–2007 — disposition 2026-09-14: reconciled from a fresh deterministic MinerU Flash extraction in commit `b0e08aa6d`. The retained packet contains 95 unique source positions: 45 real-analysis positions (2003–2007, with the 2006 sitting duplicated verbatim in the packet) and 50 complex-analysis positions (2004–2007). Canonical Wesleyan sitting collections represent every position; exact repeats reuse existing owners, and unresolved extraction glyphs are recorded explicitly rather than guessed.
+  The inventory's `76 problems`, `applied-algebra`, and single-date labels were stale heuristic metadata.
 
-- [ ] [analysis_2008-2013.pdf](assets/attachments/extracted/analysis_2008-2013.md) (727L, 111 problems) — Wesleyan — applied-algebra — Summer 2011
+- [x] [analysis_2008-2013.pdf](assets/attachments/extracted/analysis_2008-2013.md) (727L, 111 problems) — Wesleyan — analysis compilation — 2008–2013 — disposition 2026-09-14: reconciled from deterministic MinerU Flash in commit `f51240c6f`. The packet contains 122 numbered source positions across fourteen real/complex-analysis sittings: 2008, 2009, 2010, 2011, 2012, June 2013, and supplemental/August 2013. Canonical Wesleyan sitting collections represent all 122 positions; exact repeated statements reuse canonical cards and unresolved Flash defects remain explicit.
+  The inventory's `111 problems`, `applied-algebra`, and single-sitting label were stale heuristic metadata.
 
-- [ ] [analysis_2014-2016.pdf](assets/attachments/extracted/analysis_2014-2016.md) (245L, 12 problems) — topology — July 2016
+- [x] [analysis_2014-2016.pdf](assets/attachments/extracted/analysis_2014-2016.md) (245L, 12 problems) — Wesleyan — analysis compilation — 2014–2016 — disposition 2026-09-14: reconciled from deterministic MinerU Flash in commit `5e7c0bfb4`. The retained eight-page packet has 33 represented source positions across five sittings: 2016 Complex (8), July 2016 Real (8), July 2015 Real (5 retained statements), July 2015 Complex (4 retained statements), and July 2014 Real (8). The 2015 instructions advertise 7 real and 8 complex problems, but the retained source contains only 5 and 4 statements respectively; absent problems were not invented.
+  The inventory's `12 problems` and `topology` labels were stale heuristic metadata.
 
 - [x] [analysis_jan2014.pdf](assets/attachments/extracted/analysis_jan2014.md) (39L, 12 problems) — Duke — real-analysis — Winter 2014 — disposition 2026-09-09: ingested as `SRC-DUKE-BASIC-ANALYSIS-WINTER-2014`; all twelve problems are represented in source order by solved, source-checked cards `P-DUKEBA14-1` through `P-DUKEBA14-12`.
 
@@ -37,73 +43,153 @@ External links that are not vendored remain on the resource pages until a delibe
   The card's reading is the only one that states a problem, so it stands.
   The extraction is not reliable at single glyphs here: the same run dropped `$\sigma$` to a bare space in problem 6(c).
 
-- [ ] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — January 2003
+- [x] [Azoff Problems by Topic.pdf](assets/attachments/extracted/Azoff Problems by Topic.md) (363L, 88 problems) — UGA — complex-analysis — disposition 2026-09-14: ingested as `SRC-AZOFF-PROBLEMS-BY-TOPIC` in commit `8f9f8a19d` from a fresh deterministic MinerU Flash extraction.
+  The packet contains 89 source positions across nine topic blocks; 74 source-owned cards represent genuine gaps and 15 exact existing canonical statements are reused.
+  Concrete extraction defects are documented on affected cards.
+  The inventory count of 88 was stale.
 
-- [ ] [Basic_Linear_Algebra_Review.pdf](assets/attachments/extracted/Basic_Linear_Algebra_Review.md) (559L, 47 problems) — prelim
+- [x] [Basic_Linear_Algebra_Review.pdf](assets/attachments/extracted/Basic_Linear_Algebra_Review.md) (559L, 47 problems) — linear algebra review sheet — disposition 2026-09-14: ingested as `SRC-BASIC-LINEAR-ALGEBRA-REVIEW` in commit `4db24ca57`. The source is predominantly expository Math 150-01 review notes; its final Review Problems section contains exactly seven numbered source problems, all represented by `P-BLAR-01` through `P-BLAR-07`. Definitions and worked examples remain reference material rather than artificial problem cards.
+  The inventory count of 47 was a false positive from expository numbering/list structure.
 
-- [ ] [Big_List_of_Math_Problems.pdf](assets/attachments/extracted/Big_List_of_Math_Problems.md) (1966L, 249 problems) — alg-geom
+- [x] [Big_List_of_Math_Problems.pdf](assets/attachments/extracted/Big_List_of_Math_Problems.md) (1966L, 249 problems) — *Mathematical Trivium* problem compilation — disposition 2026-09-14: ingested as `SRC-MATHEMATICAL-TRIVIUM` in commit `18241b134` from a 32-page deterministic MinerU Flash baseline.
+  The source has 243 numbered positions across Linear Algebra (48), Real Analysis (62), Complex Analysis (34), Variational Principle (15), Differential Equations (51), and Probability (33). 242 source-owned cards plus exact reuse of `P-BKS04-7A` represent all positions; figure/extraction gaps are explicit.
+  The inventory's `249 problems` and `alg-geom` labels were stale heuristics.
 
-- [ ] [cambride_analysis_ii.pdf](assets/attachments/extracted/cambride_analysis_ii.md) (4136L, 13 problems) — UNL — applied-algebra
+- [x] [cambride_analysis_ii.pdf](assets/attachments/extracted/cambride_analysis_ii.md) (4136L, 13 problems) — Cambridge — real-analysis — Michaelmas 2015 — disposition 2026-09-14: reference-only intake.
+  A fresh 79-page deterministic MinerU Flash extraction identifies Dexter Chua's *Part IB — Analysis II*, based on lectures by N. Wickramasekera.
+  The source is expository course notes (definitions, theorems, examples, and proofs) with occasional references to separate example sheets, not an authored problem collection; no cards are manufactured.
+  The retained PDF is enriched on `wiki/real-analysis/resources/books-notes.md`. The inventory's `13 problems`, `UNL`, and `applied-algebra` labels were stale heuristics.
 
-- [ ] [Ch9Sltns.pdf](assets/attachments/extracted/Ch9Sltns.md) (161L, 0 problems) — applied-algebra
+- [x] [Ch9Sltns.pdf](assets/attachments/extracted/Ch9Sltns.md) (161L, 0 problems) — algebra — factor groups — disposition 2026-09-14: problem-bearing solution packet ingested as `SRC-CH9-FACTOR-GROUP-SOLUTIONS`. A fresh six-page deterministic MinerU Flash baseline contains 28 sparse-numbered problem prompts: 25 Chapter 9 problems and three Team Problem Solutions.
+  The prompts are represented as canonical cards; the worked answers remain in the retained PDF rather than being duplicated.
+  The existing group-theory resource now points to the collection.
+  The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
-- [ ] [chapter-2.pdf](assets/attachments/extracted/chapter-2.md) (275L, 18 problems) — calculus **OCR: image placeholders**
+- [x] [chapter-2.pdf](assets/attachments/extracted/chapter-2.md) (275L, 18 problems) — calculus — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19` as `SRC-GRE-MATH-CH2-REVIEW`: all Chapter 2 (Calculus I) review questions of *Cracking the GRE Mathematics Subject Test* in source order, `P-GRECH2-01` through `P-GRECH2-50`; the scan ends at Question 48, and Questions 49–50 were carded from the book extraction on 2026-09-16. Garbled formulas in Questions 1, 24, 36, 41 and 47 were settled against the book extraction and its Chapter 8 solutions, as each audit note records; Question 32's figure was not recovered.
+  The inventory's count of 18 was stale.
+  No fallback extraction used.**
 
-- [ ] [Chapter-7.pdf](assets/attachments/extracted/Chapter-7.md) (259L, 21 problems) — UNL — complex-analysis **OCR: image placeholders**
+- [x] [Chapter-7.pdf](assets/attachments/extracted/Chapter-7.md) (259L, 21 problems) — UNL — complex-analysis — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19` as `SRC-GRE-MATH-CH7-REVIEW`: all 50 Chapter 7 (additional topics) review questions of *Cracking the GRE Mathematics Subject Test* in source order, `P-GRECH7-01` through `P-GRECH7-50`. Readings of Questions 20, 26 and 49–50 were settled against the book extraction and its Chapter 8 solutions; the figures for Questions 4, 13, 22, 27, 33 and 39, choice (D) of Question 30, and the choices of Question 46 were not recovered, as each card records.
+  The inventory's UNL/complex-analysis labels and count of 21 were stale.
+  No fallback extraction used.**
 
-- [ ] [Complex_Analysis_Exam_Prep_Solutions.pdf](assets/attachments/extracted/Complex_Analysis_Exam_Prep_Solutions.md) (237L, 14 problems) — complex-analysis
+- [x] [Complex_Analysis_Exam_Prep_Solutions.pdf](assets/attachments/Complex_Analysis_Exam_Prep_Solutions_extracted.md) (237L, 16 problems) — complex-analysis — disposition 2026-09-14: ingested as `SRC-COMPLEX-ANALYSIS-EXAM-PREP` in `511b36954` and grounded in deterministic MinerU Flash in `4ea970285`. All sixteen numbered practice problems are represented in source order by `P-CAEXAMPREP-01` through `P-CAEXAMPREP-16`; the two identified extraction omissions in Problems 7 and 9 are recorded in the checked-in provenance and restored on the source-checked cards.
+  The inventory's `14 problems` count was stale.
 
-- [ ] [complex.pdf](assets/attachments/extracted/complex.md) (2307L, 0 problems) — UNL — applied-algebra — Spring 19
+- [x] [complex.pdf](assets/attachments/extracted/complex.md) (2307L, 0 problems) — complex-analysis — disposition 2026-09-16: reference-only intake from the Mistral OCR extraction committed in `a86d55f19` (39 pages).
+  The PDF is Douglas N. Arnold's lecture notes for a half-semester beginning-graduate complex-analysis course at Penn State, Spring 1997: complex numbers, analytic functions and Möbius transformations, complex integration, singularities and residues, the theorems of Weierstrass, Hurwitz and Montel, Schwarz's lemma, the Riemann mapping theorem, and harmonic functions through the Perron method and Schwarz reflection.
+  It poses no problems; the text only defers two verifications to homework, so no cards are made.
+  The resource entry in `wiki/complex-analysis/resources/books-notes.md` now names the notes by author, content and course.
+  The inventory's UNL, applied-algebra and Spring 19 labels were stale.
 
-- [ ] [Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf](assets/attachments/extracted/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.md) (174L, 0 problems) — algebra **OCR: image placeholders**
+- [x] [Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf](assets/attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE_extracted.md) (174L, reference-only) — algebra — disposition 2026-09-14: deterministic MinerU Flash extraction is byte-identical to the retained extraction.
+  Keith Conrad's note consists of five worked examples of the Galois correspondence and fixed-field/subgroup calculations, with only an inline exercise-style check rather than a standalone problem set.
+  It is already routed through `wiki/algebra/resources/fields.md`; no duplicate problem collection is manufactured.
 
-- [ ] [Cracking_the_GRE_Mathematics_Subject.pdf](assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md) (14062L, 722 problems) — UCSD — alg-geom
+- [x] [Cracking_the_GRE_Mathematics_Subject.pdf](assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md) (14062L, 722 problems) — UCSD — alg-geom — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (468 pages).
+  The book poses 275 questions: the seven chapter review sets (25, 50, 30, 15, 20, 20 and 50 questions) and the 65-question practice test of Chapter 9.
+  The review sets are `SRC-GRE-MATH-CH1-REVIEW` through `SRC-GRE-MATH-CH7-REVIEW`, each reconciled question by question against this extraction, and the practice test is `SRC-GRE-MATH-PRACTICE-TEST` (`P-GREPT-01` through `P-GREPT-65`, source order).
+  The 173 numbered worked examples are solved in the running exposition and are not carded; Chapters 8 and 10 are the book's answer explanations and were used only to settle garbled readings, as the card audit notes record.
+  The inventory's `722 problems`, UCSD and alg-geom labels were stale heuristics.
 
-- [ ] [day_3_sep_counterex_defn.pdf](assets/attachments/extracted/day_3_sep_counterex_defn.md) (85L, 11 problems) — topology — June 2004
+- [x] [day_3_sep_counterex_defn.pdf](assets/attachments/day_3_sep_counterex_defn_extracted.md) (85L, 14 posed items) — topology workshop packet — disposition 2026-09-14: grounded in deterministic MinerU Flash in `4ea970285` and represented in source order by the fourteen IDs in `SRC-TOP-WORKSHOP` section “Revised packet — Separation axioms, counterexamples, and definitions.”
+  The packet mixes warm-ups and qualifying-exam excerpts from 2002–2014 rather than being a June 2004 exam; the inventory's `11 problems` and single-date label were stale.
+  The checked-in provenance records the one unresolved Flash formula defect (June 2008 A1), which is not used to certify canonical card `P-T08A1`.
 
-- [ ] [DG Sample Problems 1.pdf](assets/attachments/extracted/DG Sample Problems 1.md) (267L, 0 problems) — alg-geom
+- [x] [DG Sample Problems 1.pdf](assets/attachments/DG Sample Problems 1_extracted.md) (267L, 20 problems) — differential geometry — disposition 2026-09-14: ingested as `SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE` from a deterministic MinerU Flash extraction.
+  The source is titled *MTH 674 Differential Geometry of manifolds Midterm Sample Problems* and contains Problems I–XX; all twenty are represented in source order by `P-MTH674-01` through `P-MTH674-20`. Explicit local Flash defects and their deterministic-context repairs are recorded in the extraction provenance.
+  The inventory's `0 problems` count was a false negative.
 
-- [ ] [DG Sample Problems.pdf](assets/attachments/extracted/DG Sample Problems.md) (267L, 0 problems) — alg-geom
+- [x] [DG Sample Problems.pdf](assets/attachments/extracted/DG Sample Problems.md) (267L, duplicate) — differential geometry — disposition 2026-09-14: exact byte duplicate of `DG Sample Problems 1.pdf` (SHA-256 `c76da1618392449b3d284ee8954f688d118ff2db0a192ffda6576bc8ac50512c`). Its contents are represented once by `SRC-MTH674-DIFFGEOM-MIDTERM-SAMPLE`; no duplicate extraction or cards are manufactured.
 
-- [ ] [f04.pdf](assets/attachments/extracted/f04.md) (77L, 0 problems) — applied-algebra
+- [x] [f04.pdf](assets/attachments/f04_extracted.md) (77L, 18 problems) — Berkeley — prelim — Fall 2004 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  The source contains Part A Problems 1A–9A followed by Part B Problems 1B–9B, all already represented in paper order by the complete `SRC-BERKELEY-PRELIM-FALL-2004` collection.
+  The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
-- [ ] [f05.pdf](assets/attachments/extracted/f05.md) (61L, 0 problems) — applied-algebra — FALL 2005
+- [x] [f05.pdf](assets/attachments/f05_extracted.md) (61L, 18 problems) — Berkeley — prelim — Fall 2005 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  The exam contains Part A Problems 1A–9A and Part B Problems 1B–9B; all eighteen agree with and are represented in paper order by `SRC-BERKELEY-PRELIM-FALL-2005`, whose provenance now includes the exam PDF in addition to its solution packet.
+  The inventory's `0 problems` and `applied-algebra` labels were stale heuristics.
 
-- [ ] [f06.pdf](assets/attachments/extracted/f06.md) (73L, 0 problems) — complex-analysis
+- [x] [f06.pdf](assets/attachments/f06_extracted.md) (73L, 18 problems) — Berkeley — prelim — Fall 2006 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  `SRC-BERKELEY-PRELIM-FALL-2006` represents all eighteen exam positions in source order (Part A 1A–9A, then Part B 1B–9B), and now records the exam PDF itself as primary provenance alongside the solution packet.
+  Problem 3A's explicit source correction and the two identified Flash defects are recorded rather than silently inferred.
+  The inventory's `0 problems` and `complex-analysis` labels were stale heuristics.
 
-- [ ] [f07.pdf](assets/attachments/extracted/f07.md) (48L, 0 problems) — complex-analysis — FALL 2007
+- [x] [f07.pdf](assets/attachments/f07_extracted.md) (48L, 18 problems) — Berkeley — prelim — Fall 2007 — disposition 2026-09-14: grounded in a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  `SRC-BERKELEY-PRELIM-FALL-2007` represents all eighteen exam positions in source order (Part A 1A–9A, then Part B 1B–9B), and now records the exam PDF itself as primary provenance alongside the solution packet.
+  The two identified Flash defects are recorded explicitly.
+  The inventory's `0 problems` and `complex-analysis` labels were stale heuristics.
 
-- [ ] [Fall_2019_Assignments.pdf](assets/attachments/extracted/Fall_2019_Assignments.md) (919L, 70 problems) — UNL — applied-algebra — August 2019
+- [x] [Fall_2019_Assignments.pdf](assets/attachments/extracted/Fall_2019_Assignments.md) (919L, 70 problems) — UGA — real-analysis — Fall 2019 — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (16 pages).
+  The PDF compiles Neil Lyall's UGA Math 8100 Assignments 1–8 with their extra challenge problems and a final set of extra practice problems: 70 positions (7+3, 6+3, 6+3, 7+3, 6+2, 6+1, 6+2 and 6+3).
+  They match, position for position and in source order, the canonical cards of `SRC-MATH8100-ASSIGNMENT-1` through `SRC-MATH8100-ASSIGNMENT-8`, which the compilation collection `SRC-MATH8100-FALL-2019-ASSIGNMENTS` already routes; no new cards are needed.
+  The inventory's UNL and applied-algebra labels were stale.
 
-- [ ] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — applied-algebra — October 23
+- [x] [Fall_2019_Assignment_Solutions.pdf](assets/attachments/extracted/Fall_2019_Assignment_Solutions.md) (2591L, 15 problems) — UGA — real-analysis — Fall 2019 — disposition 2026-09-16: reference-only intake from the Mistral OCR extraction committed in `a86d55f19` (91 pages).
+  The PDF is D. Zack Garza's written solutions to UGA Math 8100 Assignments 1–8 (handwritten for the first three, typeset from Assignment 4 on); it states no problems of its own, and the problems it solves are the cards of `SRC-MATH8100-ASSIGNMENT-1` through `SRC-MATH8100-ASSIGNMENT-8`.
+  It is listed under other solutions in `wiki/real-analysis/resources/solutions.md`.
+  The inventory's count of 15 and applied-algebra label were stale.
 
 - [x] [Fall_2019_SOLUTIONS.pdf](assets/attachments/extracted/Fall_2019_SOLUTIONS.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: UGA Fall 2019 Real Analysis; all five problems are already represented in `SRC-UGA-RA-FALL-2019`. This file is byte-identical to `Neil_Fall_2019_Solutions.pdf` (SHA-256 `a3d7d30454ada0b3a1071f234bd5b6a27b22e16cf615769b876fa8894eb2ebbc`), so no duplicate collection or provenance entry is needed.
 
-- [ ] [Fall78.pdf](assets/attachments/extracted/Fall78.md) (103L, 9 problems) — applied-algebra — Fall 19
+- [x] [Fall78.pdf](assets/attachments/Fall78_extracted.md) (103L, 20 problems) — Berkeley — prelim — Fall 1978 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1978` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All twenty source positions are represented in order by nineteen new source-local cards plus exact canonical reuse of `P-RA-WORKSHOP-D2-METRIC-11` for Problem 1. The three identified Flash defects in Problems 7, 9, and 15 are explicit in provenance and source-check notes.
+  The inventory's `9 problems`, `applied-algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall84.pdf](assets/attachments/extracted/Fall84.md) (171L, 14 problems) — applied-algebra — Fall 19
+- [x] [Fall84.pdf](assets/attachments/Fall84_extracted.md) (171L, 20 problems) — Berkeley — prelim — Fall 1984 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1984` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All twenty source positions are represented in source order by source-local cards `P-BKF84-1` through `P-BKF84-20`; partial-overlap prior cards were not reused because they impose different hypotheses or additional obligations.
+  The identified local Flash defects are recorded in provenance and on affected cards.
+  The inventory's `14 problems`, `applied-algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall85.pdf](assets/attachments/extracted/Fall85.md) (127L, 8 problems) — algebra — Fall 19
+- [x] [Fall85.pdf](assets/attachments/Fall85_extracted.md) (127L, 20 problems) — Berkeley — prelim — Fall 1985 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1985` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All twenty source positions are represented in order by nineteen new source-local cards plus exact canonical reuse of `P-BKF78-18` for Problem 4. The identified local Flash defects are recorded in provenance and on affected source-checked cards.
+  The inventory's `8 problems`, `algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall86.pdf](assets/attachments/extracted/Fall86.md) (125L, 2 problems) — algebra — Fall 19
+- [x] [Fall86.pdf](assets/attachments/Fall86_extracted.md) (125L, 20 problems) — Berkeley — prelim — Fall 1986 — disposition 2026-09-16: carded from the Mistral OCR extraction committed in `a86d55f19`, which recovers Problem 5's matrix $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$ that MinerU Flash garbled.
+  `SRC-BERKELEY-PRELIM-FALL-1986` lists all twenty problems in source order; Problems 4 and 15 reuse `P-BKF13-4A` and `P-AA27R`, and the other eighteen are `P-BKF86-*`. No alternate parser/OCR/model-vision fallback used.
 
-- [ ] [Fall88.pdf](assets/attachments/extracted/Fall88.md) (107L, 5 problems) — algebra — Fall 19
+- [x] [Fall88.pdf](assets/attachments/Fall88_extracted.md) (107L, 18 problems) — Berkeley — prelim — Fall 1988 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1988` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All eighteen source positions are represented in source order by `P-BKF88-1` through `P-BKF88-18`; nearby prior cards had different hypotheses or extra obligations and were not reused.
+  The identified local Flash defects are recorded in provenance and on affected cards.
+  The inventory's `5 problems`, `algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall90.pdf](assets/attachments/extracted/Fall90.md) (101L, 0 problems) — algebra — Fall 19
+- [x] [Fall90.pdf](assets/attachments/Fall90_extracted.md) (101L, 18 problems) — Berkeley — prelim — Fall 1990 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1990` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All eighteen source positions are represented in source order by `P-BKF90-1` through `P-BKF90-18`; nearby prior cards imposed different hypotheses or different tasks and were not reused.
+  The identified local Flash defects are recorded in provenance and on the affected source-checked card.
+  The inventory's `0 problems`, `algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall95.pdf](assets/attachments/extracted/Fall95.md) (84L, 2 problems) — applied-algebra — Fall 19
+- [x] [Fall95.pdf](assets/attachments/Fall95_extracted.md) (84L, 18 problems) — Berkeley — prelim — Fall 1995 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1995` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All eighteen source positions are represented in source order by seventeen new source-local cards plus exact canonical reuse of `P-BERK87S-19` for Problem 10. The identified local Flash defects are recorded in provenance and on affected source-checked cards.
+  The inventory's `2 problems`, `applied-algebra`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Fall97.pdf](assets/attachments/extracted/Fall97.md) (60L, 2 problems) — complex-analysis — Fall 19
+- [x] [Fall97.pdf](assets/attachments/Fall97_extracted.md) (60L, 18 problems) — Berkeley — prelim — Fall 1997 — disposition 2026-09-14: ingested as `SRC-BERKELEY-PRELIM-FALL-1997` from a deterministic MinerU Flash extraction that is byte-identical to the retained extraction.
+  All eighteen source positions are represented in source order by source-local cards `P-BKF97-1` through `P-BKF97-18`; nearby prior cards imposed different hypotheses or additional tasks and were not reused.
+  Problem 12's dropped map arrows and minor typographic Flash noise are recorded in provenance.
+  The inventory's `2 problems`, `complex-analysis`, and truncated `Fall 19` labels were stale heuristics.
 
-- [ ] [Hartshorne_Solutions.pdf](assets/attachments/extracted/Hartshorne_Solutions.md) (1803L, 9 problems) — alg-geom
+- [x] [Hartshorne_Solutions.pdf](assets/attachments/Hartshorne_Solutions_extracted.md) (794L, 0 exam problems) — algebraic-geometry — reference-only — disposition 2026-09-14: deterministic MinerU Flash extraction assembled from pages 1-20 and 21-29 identifies a Hartshorne exercise-solution compendium for Chapters II-IV. The PDF is byte-identical (SHA-256 `d69a33b3dcdec0655edbb89a0a3851100de435aabbd75034032bd261120e917f`) to the already archived and linked `assets/algebraic-geometry/resources/Bryden R Cais.pdf`, so no duplicate cards or resource entry are created.
+  The inventory's `9 problems` count treated solution headings as standalone queue problems.
 
-- [ ] [ist_ca_2015.pdf](assets/attachments/extracted/ist_ca_2015.md) (395L, 0 problems) — UNL — topology
+- [x] [ist_ca_2015.pdf](assets/attachments/ist_ca_2015_extracted.md) (395L, 25 problems) — Sameer Chavan — complex-analysis — 2015 — disposition 2026-09-14: deterministic MinerU Flash extraction is byte-identical to the retained extraction and identifies *Problems in Complex Analysis*, a nine-section problem compilation rather than UNL topology material.
+  All twenty-five explicit `Problem x.y` positions are represented in source order by `SRC-CHAVAN-COMPLEX-PROBLEMS-2015`: twenty-four source-local cards plus exact reuse of `E-TJ3WM` for Problem 8.7. Theorem, corollary, proof, and remark prose between those headings is retained as source context rather than manufactured into cards.
+  Concrete extraction defects are recorded in provenance.
+  The existing complex-analysis resource link remains the public reference route.
 
-- [ ] [Lie Groups and Sympl.pdf](assets/attachments/extracted/Lie Groups and Sympl.md) (8861L, 117 problems) — UNL — alg-geom — July 19
+- [x] [Lie Groups and Sympl.pdf](assets/attachments/Lie_Groups_and_Sympl_extracted.md) (5525L, reference/course notes) — Robert L. Bryant — Lie groups / symplectic geometry — 1991 lectures; revised 2018 — disposition 2026-09-14: deterministic MinerU Flash extraction assembled verbatim from successful 20-page ranges through pages 161–180 identifies Bryant's nine-lecture *An Introduction to Lie Groups and Symplectic Geometry* from the 1991 Regional Geometry Institute in Park City.
+  The notes are an expository course text; Exercise Sets 2–9 are integrated into the lecture sequence rather than a standalone problem bank.
+  The inventory's `117 problems`, `UNL`, `alg-geom`, and truncated `July 19` labels were stale heuristic metadata.
+  Added a substantive annotated entry to `wiki/topology/resources/books-notes.md` covering symmetry and differential equations, Lie groups and actions, conservation laws, symplectic manifolds, reduction, and the Gromov school; no exercise cards were manufactured.
+  The raw Flash baseline's single NUL-byte defect is recorded in provenance rather than silently normalized.
 
-- [ ] [Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf](assets/attachments/extracted/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.md) (3363L, 58 problems) — alg-geom — Spring 2018
+- [x] [Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf](assets/attachments/Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY_extracted.md) (4036L, reference/course notes) — Si Li — algebraic topology — Tsinghua University, Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash extraction identifies *Introduction to Algebraic Topology*, a 28-section expository course text running from categories and the fundamental groupoid through coverings, homotopy groups, CW complexes, homology/cohomology, duality, spectral sequences, obstruction theory, Hurewicz, and the Eilenberg–Steenrod axioms.
+  The fresh extraction contains no exercise/problem/homework headings; its only two uses of the word “problem” are ordinary expository prose.
+  The inventory's `58 problems` and `alg-geom` labels were stale extraction heuristics.
+  Enriched the existing topology resource entry with the source's actual course provenance and mathematical scope; no problem cards were manufactured.
 
-- [ ] [more_calculus_from_test2.pdf](assets/attachments/extracted/more_calculus_from_test2.md) (172L, 20 problems) — algebra
+- [x] [more_calculus_from_test2.pdf](assets/attachments/more_calculus_from_test2_extracted.md) (162L, GRE Mathematics Test Form GR8767 calculus selection) — calculus / GRE mathematics — disposition 2026-09-16: Mistral OCR extraction committed in `a86d55f19` (21 pages); a fresh MinerU Flash `--ocr` run returns the same twenty-six questions.
+  The PDF crops pages of the scanned Form GR8767 booklet to twenty-six calculus questions, followed by the form's answer key; all twenty-six are `SRC-GRE-GR8767-CALCULUS-SELECTION` in form order, `P-GR8767-NN` numbered as on the form.
+  The figures of Questions 6, 7, 41 and 59, which the extraction emits only as placeholders, are embedded from rendered source pages in `assets/attachments/gr8767-calculus-figures/`, and Question 12's choice (B) was read from the page; the provenance file records both corrections.
+  No existing card duplicates these questions. The inventory's `20 problems` and `algebra` labels were stale.
 
 - [x] [Neil_Fall_2019_Solutions.pdf](assets/attachments/extracted/Neil_Fall_2019_Solutions.md) (83L, 5 problems) — real-analysis — August 2019 — disposition 2026-09-09: exact byte duplicate of `Fall_2019_SOLUTIONS.pdf`; the shared UGA Fall 2019 exam is already complete as `SRC-UGA-RA-FALL-2019`.
 
@@ -112,263 +198,470 @@ External links that are not vendored remain on the resource pages until a delibe
 - [x] [Probability_Review.pdf](assets/attachments/extracted/Probability_Review.md) (582L, 0 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: Stanford CS229 probability review notes by Arian Maleki and Tom Do; expository reference material, not an exam or problem collection.
   No collection/card ingest required.
 
-- [ ] [qual18wintersol.pdf](assets/attachments/extracted/qual18wintersol.md) (61L, 10 problems) — algebra — Winter 2018
+- [x] [qual18wintersol.pdf](assets/attachments/qual18wintersol_extracted.md) (61L, 10 problems) — algebra — Winter 2018 — disposition 2026-09-14: already ingested in `3a7a8b373` as complete collection `SRC-ALG-QUAL-WINTER-2018`, grounded in deterministic MinerU Flash v0.5.9. All ten source positions are represented in source order by five Part I true/false cards and five Part II longer-problem cards; the worked answers remain source provenance rather than imported solutions.
+  The one identified symmetric-square extraction defect in Part II Problem 5 is recorded in provenance and on the source-checked card.
 
-- [ ] [QualProblemsHomotopy.pdf](assets/attachments/extracted/QualProblemsHomotopy.md) (33L, 0 problems) — alg-geom
+- [x] [QualProblemsHomotopy.pdf](assets/attachments/QualProblemsHomotopy_extracted.md) (32L, 11 posed items) — topology — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained extraction and identifies *Topology Qual Workshop Day 6: Homotopy & Retractions*. Reconciled all 11 source positions in source order into `SRC-TOP-WORKSHOP`: five exact canonical reuses (`P-TOP-WORKSHOP-HR-W1`, `P-TOP-WORKSHOP-HR-W2`, `P-TOPSU15C`, `P-5AXU3`, `P-TOP-WORKSHOP-HR-05`) plus six source-local cards under `legacy-qual-problems-homotopy/`. MinerU's dropped-arrow and malformed-presentation defects are recorded in provenance; no fallback extraction path was used.
+  The inventory's `0 problems` and `alg-geom` labels were stale heuristics.
 
-- [ ] [Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf](assets/attachments/extracted/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.md) (179L, 16 problems) — alg-geom **OCR: image placeholders**
+- [x] [Qual_Review_Selection_of_Hatcher_Problems_-_Unknown.pdf](assets/attachments/Qual_Review_Selection_of_Hatcher_Problems_-_Unknown_extracted.md) (178L, 107 Hatcher references + 16 practice problems) — topology — disposition 2026-09-16: Mistral OCR extraction (`a86d55f19`).
+  Collection `SRC-QUAL-REVIEW-HATCHER`: 106 current Hatcher exercise selections reuse canonical `SRC-TEXT-HAT02` cards; the sheet's §2.2 Exercise 34 reference has no card because Hatcher's errata withdrew that exercise; §2.2 Exercise 43(a) is represented by whole-exercise card `E-HAT-2.2-43` with the part-(a)-only selection documented.
+  All sixteen practice problems are source-local cards `P-QUAL-REVIEW-HATCHER-01` through `-16`.
+  Practice problem 4 prints `S^4` with four coordinates, and the card records that inconsistency.
+  Problems 6–7 depend on a picture that the extraction emits only as an image placeholder; the picture was read from page 3 of the PDF and is described on both cards.
+  The inventory's `alg-geom` label was stale.
 
-- [ ] [s04.pdf](assets/attachments/extracted/s04.md) (89L, 3 problems) — applied-algebra
+- [x] [s04.pdf](assets/attachments/s04_extracted.md) (88L, 18 problems) — UC Berkeley preliminary examination — Spring 2004 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown and contains Part A 1A–9A plus Part B 1B–9B. All 18 positions are already represented in paper order by complete collection `SRC-BERKELEY-PRELIM-SPRING-2004`, and every card carries a source-checked audit event against the retained exam/solution sources.
+  The inventory's `3 problems` and `applied-algebra` labels were stale heuristics.
 
-- [ ] [s05.pdf](assets/attachments/extracted/s05.md) (57L, 0 problems) — complex-analysis
+- [x] [s05.pdf](assets/attachments/s05_extracted.md) (56L, 18 problems) — UC Berkeley preliminary examination — Spring 2005 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown and contains Part A 1A–9A plus Part B 1B–9B. The existing `SRC-BERKELEY-PRELIM-SPRING-2005` cards were re-grounded in the fresh exam baseline and independently checked against the companion solution packet; stale extraction corruptions in statements such as 6A and 7B were remediated, all 18 cards now carry source-checked audit events, and the exam itself is recorded in collection provenance.
+  The inventory's `0 problems` and `complex-analysis` labels were stale heuristics.
 
-- [ ] [Sequence_Series_(Neil_Lyall_2019).pdf](assets/attachments/extracted/Sequence_Series_(Neil_Lyall_2019).md) (650L, 67 problems) — UNL — applied-algebra — September 2020
+- [x] [Sequence_Series_(Neil_Lyall_2019).pdf](assets/attachments/Sequence_Series_Neil_Lyall_2019_extracted.md) (649L, 67 source positions) — Math 4100/6100 real analysis — Fall 2020 — disposition 2026-09-16: deterministic MinerU Flash v0.5.9 extraction, byte-identical to the retained Markdown.
+  All 67 source positions are represented in `SRC-MATH4100-6100-2020-A1` through `SRC-MATH4100-6100-2020-A9`.
+  Assignment 8 Problem 1 reuses `P-RA-WORKSHOP-D5-W2` and Assignment 8 Bonus Problem 1 reuses `P-AZOFF-A05`; the other positions are source-local cards.
+  MinerU corrupts the piecewise definition of `g_n` in Assignment 9 Problem 1; that display was read from page 13 of the PDF and `P-M4100-20-A9-01` and the provenance file record the correction.
+  The inventory's `UNL` and `applied-algebra` labels were stale.
 
-- [ ] [solution1.pdf](assets/attachments/extracted/solution1.md) (791L, 1 problems) — applied-algebra — Spring 2018
+- [x] [solution1.pdf](assets/attachments/solution1_extracted.md) (723L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 baseline assembled in source order from twenty single-page Flash extractions after the 11.6 MB whole-file request was rejected by Flash with `[-30001]` for exceeding its 10 MB upload limit.
+  All twenty page requests exited 0 and produced nonempty Markdown.
+  The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-1` collection already represents all fourteen score-table positions in source order.
+  Problems 2(b), 3(b), and 11(d) remain explicitly image-dependent where Flash emits placeholders; Problem 14's giant matrix is identified as $2I_{124}$ by the packet's own worked solution.
+  No shared collection path was modified during this reconciliation.
+  The inventory's `1 problems` count was stale.
 
-- [ ] [solution3.pdf](assets/attachments/extracted/solution3.md) (631L, 0 problems) — applied-algebra **OCR: image placeholders**
+- [x] [solution3.pdf](assets/attachments/solution3_extracted.md) (630L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 4524256cf176190b47fd1a54c6e7d8f30303a0f8a7d41a33059fc40cb91fd15e`). The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-3` collection represents all fourteen source positions in order.
+  The checked-in provenance records the missing source headings and the image/table-dependent gaps in Problems 2, 3, 9, and 11; Problem 14's all-9s matrix is source-backed by the packet's own worked solution.
+  No shared collection path was modified.
+  The inventory's `0 problems` and OCR-derived label were stale.
 
-- [ ] [solution4.pdf](assets/attachments/extracted/solution4.md) (693L, 0 problems) — applied-algebra **OCR: image placeholders**
+- [x] [solution4.pdf](assets/attachments/solution4_extracted.md) (692L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 ccf81e3f4547dc47290e6f221dc1058dfba5a8fde12b371995291bf30c41476b`). The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4` collection represents all fourteen source positions in order.
+  The checked-in provenance records the unrecovered twentieth true/false statement in Problem 1, the damaged tables/portraits in Problem 3, the conflicting eight-queens display in Problem 9(c), and the structural recovery of Problem 14 from the packet's own worked solution.
+  No shared collection path was modified.
+  The inventory's `0 problems` and OCR-derived label were stale.
 
-- [ ] [solution5.pdf](assets/attachments/extracted/solution5.md) (695L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [x] [solution5.pdf](assets/attachments/solution5_extracted.md) (694L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 6d30f55a8c6cdeaa7252fc426c1ed85ce25567255834fa611fb42e60059ea43c`). The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-5` collection represents all fourteen source positions in order.
+  The checked-in provenance records the lost source headings for Problems 2, 3, 7, and 13 and the incomplete Problem 3 phase-portrait table; no missing display content is invented.
+  No shared collection path was modified.
+  The inventory's `0 problems`, `UNL`, and OCR-derived labels were stale.
 
-- [ ] [solution7.pdf](assets/attachments/extracted/solution7.md) (616L, 0 problems) — applied-algebra **OCR: image placeholders**
+- [x] [solution7.pdf](assets/attachments/solution7_extracted.md) (615L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 87a49a786650e73e4827f4a2940e95225a3a0abc90383914a1fef50716932984`). The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-7` collection represents all fourteen source positions in order.
+  The checked-in provenance confirms Problem 1 item 11's rank/eigenvalue conflict as an internal source inconsistency and records the unrecovered image/table material in Problems 2 and 3. No shared collection path was modified.
+  The inventory's `0 problems` and OCR-derived label were stale.
 
-- [ ] [solution8.pdf](assets/attachments/extracted/solution8.md) (518L, 0 problems) — diff-geom **OCR: image placeholders**
+- [x] [solution8.pdf](assets/attachments/solution8_extracted.md) (517L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction supersedes the unknown-provenance retained Markdown.
+  It preserves the same 517-line source structure while improving two local extractor outputs; neither changes a problem-card obligation.
+  The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-8` collection represents all fourteen source positions in order.
+  The checked-in provenance records the unrecovered Problem 2 display material and lost source headings explicitly.
+  No shared collection path was modified.
+  The inventory's `0 problems`, `diff-geom`, and OCR-derived labels were stale.
 
-- [ ] [solution9.pdf](assets/attachments/extracted/solution9.md) (700L, 0 problems) — applied-algebra **OCR: image placeholders**
+- [x] [solution9.pdf](assets/attachments/solution9_extracted.md) (699L, 14 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction supersedes the unknown-provenance retained Markdown.
+  The 699-line source structure is unchanged; the fresh run only corrects one worked-solution brace and one TeX spacing marker, with no problem-statement change.
+  The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-9` collection represents all fourteen source positions in order.
+  The checked-in provenance records the unrecovered Problem 2 graph/phase-portrait choices and Problem 9's displayed $36\times36$ matrix explicitly.
+  No shared collection path was modified.
+  The inventory's `0 problems` and OCR-derived label were stale.
 
-- [ ] [solution.pdf](assets/attachments/extracted/solution.md) (723L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [x] [solution.pdf](assets/attachments/solution_extracted.md) (722L, 13 top-level problems) — Harvard Math 21b — applied algebra — Spring 2018 final exam — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 b0436969dec26b4ba697db718e6e726588b6f92ba306523620a5093f510544a0`). The existing complete `SRC-HARVARD-MATH21B-SPRING-2018-FINAL` collection represents all thirteen source positions in order.
+  The checked-in provenance records the unrecovered true/false item in Problem 1 and figure-dependent choices in Problems 2, 7, and 11 explicitly.
+  No shared collection path was modified.
+  The inventory's `0 problems`, `UNL`, and OCR-derived labels were stale.
 
 - [x] [Spring 2019 with Solutions.pdf](assets/attachments/extracted/Spring 2019 with Solutions.md) (325L, 5 problems) — UGA — real-analysis — Spring 2019 — disposition 2026-09-09: exact byte duplicate of `Neil_Spring_2019_Solutions.pdf`; its five exam problems are already represented in `SRC-UGA-RA-SPRING-2019`, and the solution packet is not collection provenance.
 
-- [ ] [Spring79.pdf](assets/attachments/extracted/Spring79.md) (136L, 8 problems) — algebra — Spring 19
+- [x] [Spring79.pdf](assets/attachments/Spring79_extracted.md) (135L, 20 problems) — UC Berkeley — prelim — Spring 1979 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 be2d9688ee4fbbcb0822ea9e997dfa02ea9a37a825d20bba06b04435c8022709`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1979` collection represents all twenty source positions in order, with exact reuse of `P-BERK97S-08` for Problem 11. The checked-in provenance records Problem 8's unrecovered matrix-size glyph and Problem 13's corrupted initial-condition right-hand side explicitly; no missing source data is inferred.
+  No shared collection path was modified.
+  The inventory's `8 problems`, `algebra`, and truncated `Spring 19` metadata were stale.
 
-- [ ] [Spring93.pdf](assets/attachments/extracted/Spring93.md) (79L, 2 problems) — applied-algebra — Spring 19
+- [x] [Spring93.pdf](assets/attachments/Spring93_extracted.md) (78L, 18 problems) — UC Berkeley — prelim — Spring 1993 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 17176d119c587f83f93a68fc4b98cee20659f44bff22162765fa511ea060c276`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1993` collection represents all eighteen source positions in order.
+  Problem 9's strip-coordinate glyph remains corrupted as `S z` in the fresh deterministic output; the existing card preserves that coordinate as unrecovered rather than guessing it.
+  No shared collection path was modified.
+  The inventory's `2 problems`, `applied-algebra`, and truncated `Spring 19` metadata were stale.
 
-- [ ] [Spring99.pdf](assets/attachments/extracted/Spring99.md) (66L, 12 problems) — complex-analysis — Spring 19
+- [x] [Spring99.pdf](assets/attachments/Spring99_extracted.md) (65L, 18 problems) — UC Berkeley — prelim — Spring 1999 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 a1e07dc776af559f3b8fd29931347efdf79d7b693d6052cde9c77420b4bd733f`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1999` collection represents all eighteen source positions in order.
+  Problem 8's displayed matrix still loses its third row in the fresh deterministic output; the existing card preserves that row as unrecovered rather than reconstructing it.
+  No shared collection path was modified.
+  The inventory's `12 problems`, `complex-analysis`, and truncated `Spring 19` metadata were stale.
 
-- [ ] [squal1.pdf](assets/attachments/extracted/squal1.md) (25L, 8 problems) — topology
+- [x] [squal1.pdf](assets/attachments/squal1_extracted.md) (24L, 8 problems) — topology — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 68bd1fcb5d67bdea214d3f6cbe345964a0d45cbe8df2b848ad8da1f14826d385`). The existing complete `SRC-TOP-SQUAL1` collection represents all eight source positions in order across Sections A and B. The retained PDF identifies neither an institution nor a date, so the collection deliberately remains neutral on both; no metadata is inferred and no shared collection path was modified.
 
-- [ ] [squal2.pdf](assets/attachments/extracted/squal2.md) (22L, 8 problems) — topology
+- [x] [squal2.pdf](assets/attachments/squal2_extracted.md) (21L, 8 problems) — topology — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 08b6c50a29fb554bc3a95430515db20d3b54619d0f0071225cff0c2e025515e3`). The existing complete `SRC-TOP-SQUAL2` collection represents all eight source positions in order, with exact canonical reuse of `P-T07A2` and `P-OMOPR` for two repeated statements.
+  The retained PDF identifies neither an institution nor a date, so the collection deliberately remains neutral on both; no metadata is inferred and no shared collection path was modified.
 
-- [ ] [Summer83.pdf](assets/attachments/extracted/Summer83.md) (103L, 2 problems) — applied-algebra — Summer 19
+- [x] [Summer83.pdf](assets/attachments/Summer83_extracted.md) (102L, 20 problems) — UC Berkeley — prelim — Summer 1983 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 46028ecc5c70f4792d08988d98a21532691ad88aef6cbf30fd590cbd74886bf2`). The existing complete `SRC-BERKELEY-PRELIM-SUMMER-1983` collection represents all twenty source positions in order, with exact canonical reuse of `P-BKS84-1`, `P-BKF18-3B`, and `P-BKF96-14` for three repeated statements.
+  No shared collection path was modified.
+  The inventory's `2 problems`, `applied-algebra`, and truncated `Summer 19` metadata were stale.
 
-- [ ] [Summer85.pdf](assets/attachments/extracted/Summer85.md) (117L, 7 problems) — applied-algebra — Summer 19
+- [x] [Summer85.pdf](assets/attachments/Summer85_extracted.md) (116L, 20 problems) — UC Berkeley — prelim — Summer 1985 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 2a8acf3ad52385af21be0b8e4e88c83e59d0cad30802c53e1581fc3502438458`). The existing complete `SRC-BERKELEY-PRELIM-SUMMER-1985` collection represents all twenty source positions in order, with exact canonical reuse of `P-BKF89-13` and `P-BKF83-2` for two repeated statements.
+  No shared collection path was modified.
+  The inventory's `7 problems`, `applied-algebra`, and truncated `Summer 19` metadata were stale.
 
-- [ ] [Symplectic Geometry.pdf](assets/attachments/extracted/Symplectic Geometry.md) (1992L, 2 problems) — UNL — alg-geom
+- [x] [Symplectic Geometry.pdf](assets/attachments/Symplectic Geometry_extracted.md) (1614L, reference/course notes) — J.J. Duistermaat — symplectic geometry — Utrecht Spring School, June 7–14, 2004 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction was assembled in source order from successful page ranges 1–20, 21–40, and 41–42 after the whole-file request hit Flash's documented 20-page limit.
+  The source is a four-chapter expository spring-school text on symplectic linear algebra, symplectic manifolds and reduction, Hamiltonian systems and Poisson geometry, and Hamilton–Jacobi theory.
+  Each chapter ends with exercises integrated into the lecture text rather than a standalone problem sheet, so no exercise collection is manufactured.
+  The existing topology resource entry already routes and accurately annotates this source and was left untouched because it carries concurrent shared edits.
+  The raw Flash control-byte artifacts are recorded in provenance.
+  The inventory's `2 problems`, `UNL`, and `alg-geom` metadata were stale.
 
-- [ ] [Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf](assets/attachments/extracted/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.md) (4968L, 14 problems) — algebra
+- [x] [Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf](assets/attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES_extracted.md) (4405L, reference/course text) — Jenia Tevelev — graduate algebra — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction was assembled in source order from successful page ranges 1–20, 21–40, 41–60, 61–80, and 81–99 after the whole-file request hit Flash's documented 20-page limit.
+  The 99-page text is graduate-algebra exposition spanning field extensions and Galois theory, radicals and cyclotomic fields, quadratic reciprocity, transcendence, affine algebraic geometry, localization, and finite-group representations.
+  Exercise sections and sample midterms are embedded within the course text rather than forming a standalone problem source, so no problem collection is manufactured.
+  The existing algebra resource entry already routes and accurately annotates this source and was left untouched because it carries concurrent shared edits.
+  Raw Flash control-byte artifacts are recorded in provenance.
+  The inventory's `14 problems` count was stale heuristic metadata.
 
-- [ ] [topology_2005-2003.pdf](assets/attachments/extracted/topology_2005-2003.md) (342L, 22 problems) — Wesleyan — alg-geom — August 30 **OCR: image placeholders**
+- [x] [topology_2005-2003.pdf](assets/attachments/topology_2005-2003_extracted.md) (341L, 60 top-level appearances) — Wesleyan — topology — qualifying-exam compilation — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown (`SHA-256 16d84f9cee835d405e9a7b45d50ad581d1a8e80877cb931a5480ca8b267a4fe1`). Existing Wesleyan collections represent the 30 primary positions from August 2005, August 2004, and June 2003 plus the packet's appended duplicate copies of 2013 Part II, the full 2006 exam, and June 2003 again, for 60 top-level appearances total.
+  Exact repeats reuse canonical cards/collections, and the known formula/diagram-dependent gaps remain explicit on affected cards rather than reconstructed.
+  No shared collection path was modified.
+  The inventory's `22 problems`, `alg-geom`, and single-date metadata were stale.
 
-- [ ] [topology_2006-2014.pdf](assets/attachments/extracted/topology_2006-2014.md) (700L, 54 problems) — Wesleyan — alg-geom — June 11
+- [x] [topology_2006-2014.pdf](assets/attachments/topology_2006-2014_extracted.md) (690L, 82 top-level positions) — Wesleyan — topology — qualifying-exam compilation — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 baseline assembled in source order from successful page ranges 1–20 and 21–22 after the whole-file request hit Flash's documented 20-page limit.
+  The compilation contains nine sittings from June 2006 through June 2014, with all 82 top-level source positions already represented by the existing complete Wesleyan topology collections.
+  The fresh run is not byte-identical to the old unknown-provenance extraction; local glyph/layout regressions and the known diagram-dependent gaps are recorded in provenance and remain explicit on affected cards rather than reconstructed.
+  No shared collection path was modified.
+  The inventory's `54 problems`, `alg-geom`, and single-date metadata were stale.
 
-- [ ] [Topology_Prelim_Answers_-_Unknown.pdf](assets/attachments/extracted/Topology_Prelim_Answers_-_Unknown.md) (3064L, 0 problems) — diff-geom
+- [x] [Topology_Prelim_Answers_-_Unknown.pdf](assets/attachments/Topology_Prelim_Answers_-_Unknown_extracted.md) (600L, 75 numbered positions) — Malone–Housley — topology — worked answer compilation — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 baseline assembled from successful page ranges 1–20 and 21–36 after the whole-file request hit Flash's documented 20-page limit.
+  The existing complete `SRC-MALONE-HOUSLEY-TOPOLOGY-PRELIM-ANSWERS-2007` collection represents all 75 numbered source positions with 72 canonical cards and three exact repeated appearances.
+  The fresh run preserves the same unrecovered January 2006 Problem 9 and January 2005 Problems 3, 8, 9, and 10 gaps; no missing mathematics is invented.
+  Raw Flash control-byte artifacts are recorded in provenance, and no shared collection path was modified.
+  The inventory's `0 problems` and `diff-geom` labels were stale.
 
-- [ ] [UCSD_Topology_Qual_Problems_2020-05-29.pdf](assets/attachments/extracted/UCSD_Topology_Qual_Problems_2020-05-29.md) (320L, 120 problems) — applied-algebra **OCR: image placeholders**
+- [x] [UCSD_Topology_Qual_Problems_2020-05-29.pdf](assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29_extracted.md) (319L, 92 canonical positions) — UCSD — topology — compilation — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction succeeded and is byte-identical to the old unknown-provenance raw Markdown (`SHA-256 5b8b7043b728968970d273ed28ff585f2f580e06beb94307051b58c69cffabe0`). The existing complete `SRC-UCSD-TOP-JUSTIN` collection represents all 92 canonical positions.
+  The four Van Kampen image-only entries are source-completed from Roberts’ official `UCSD_290_F14_sheet3.pdf`, already owned by the collection; no missing diagram text is invented and no duplicate cards are created.
+  The previously tracked normalized extraction is superseded by the exact raw Flash baseline, with both hashes recorded in provenance.
+  The inventory's `120 problems` and `applied-algebra` labels were stale.
 
-- [ ] [Usher DG Notes.pdf](assets/attachments/extracted/Usher DG Notes.md) (3986L, 9 problems) — UNL — alg-geom — FALL 2011
+- [x] [Usher DG Notes.pdf](assets/attachments/Usher DG Notes_extracted.md) (2169L, reference/course notes) — Mike Usher — MATH 8210 differential geometry — Fall 2011 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 baseline assembled in source order from successful page ranges 1–20, 21–40, and 41–54 after the whole-file request hit Flash's documented 20-page limit.
+  The 54-page two-part lecture text contains thirteen numbered exercises integrated into exposition on smooth manifolds, tangent/vector-field formalisms, partitions of unity, bundles, differential forms/de Rham theory, submanifolds, tubular neighborhoods, flows, Lie derivatives, and related differential geometry.
+  The existing topology resource entry already routes this exact PDF; no standalone exercise collection is manufactured.
+  Raw Flash control-byte artifacts are recorded in provenance, and the distinct smaller `8210 Lecture Notes (Usher) Smooth Manifolds.pdf` is not collapsed with this source.
+  The inventory's `9 problems`, `UNL`, and `alg-geom` labels were stale.
 
-- [ ] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/extracted/Won_-_Complex_Analysis_Qual_Sheet.md) (683L, 99 problems) — complex-analysis
+- [x] [Won_-_Complex_Analysis_Qual_Sheet.pdf](assets/attachments/Won_-_Complex_Analysis_Qual_Sheet_extracted.md) (682L, reference/review sheet) — Robert Won — complex-analysis — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 88547c6ca78ebc3c1d20b5c3cc9c78c03b4d89f938799513125d437284e17c35`). The source is an expository qualifying-exam review organized as useful facts, tricks, theorem catalogs, special functions, analytic continuation/Riemann-surface material, and harmonic/subharmonic-function theory.
+  The inventory's `99 problems` are numbered reference statements rather than authored Problem/Exercise positions, so no problem cards are manufactured.
+  Existing complex-analysis resources already route both the upstream review and the retained local PDF. The raw Flash control-byte artifact is recorded in provenance.
 
 ## Preliminary exams (47)
 
-- [ ] [871-872June_2007_852-871.pdf](assets/attachments/extracted/871-872June_2007_852-871.md) (35L, 0 problems) — algebra
+- [x] [871-872June_2007_852-871.pdf](assets/attachments/871-872June_2007_852-871_extracted.md) (34L, 9 problems) — UNL — qualifying exam — graph theory/combinatorics + topology — June 2007 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 5103b263c32684fdd96e4af89150616d1840bc484f7e36fbf51f209e07a949b8`). The existing complete `SRC-UNL-QUAL-852-871-JUNE-2007` collection represents all nine source positions: five Section-A source-local cards plus exact canonical reuse of `P-T07A1` through `P-T07A4` for Section B. The paper asks for three problems from each section; no source data is inferred and no collection path is modified.
+  The inventory's `0 problems` and single `algebra` label were stale.
 
-- [ ] [calculating_galois_from_polynomial.pdf](assets/attachments/extracted/calculating_galois_from_polynomial.md) (255L, 22 problems) — applied-algebra
+- [x] [calculating_galois_from_polynomial.pdf](assets/attachments/calculating_galois_from_polynomial_extracted.md) (254L, reference/computational notes) — Galois theory — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction succeeds and supersedes the old unknown-provenance Markdown.
+  The source develops quadratic/cubic Galois groups, discriminants, prime-degree splitting fields, cyclotomic extensions, and finite-field Frobenius methods through theorem-driven exposition and worked examples.
+  The inventory's `22 problems` are worked examples/numbered expository items rather than a standalone posed problem bank, so no problem collection is manufactured.
+  The existing field/Galois resource already routes this exact PDF. Raw Flash control-byte artifacts are recorded in provenance, and the inventory's `applied-algebra` label is replaced by the actual Galois-theory scope.
 
-- [ ] [Fall00.pdf](assets/attachments/extracted/Fall00.md) (56L, 0 problems) — complex-analysis — Fall 2000
+- [x] [Fall00.pdf](assets/attachments/Fall00_extracted.md) (55L, 18 problems) — UC Berkeley — prelim — Fall 2000 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 44213eefbe685a941305832e7f32adc3c720df807bb35974d9011e20ff029e1c`). The existing complete `SRC-BERKELEY-PRELIM-FALL-2000` collection represents all eighteen source positions in order.
+  Problem 11's raw layout places the infinity marker for its union on the preceding line; the existing source-checked card already records the source-forced infinite-union reading.
+  No shared collection path was modified.
+  The inventory's `0 problems` and single `complex-analysis` label were stale.
 
-- [ ] [Fall79.pdf](assets/attachments/extracted/Fall79.md) (117L, 12 problems) — Berkeley — algebra — Fall 19
+- [x] [Fall79.pdf](assets/attachments/Fall79_extracted.md) (116L, 20 problems) — UC Berkeley — prelim — Fall 1979 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 b6e9c1821fa217c89b2a5f16a084a135a0fe28168dcba3c0e22bd2eb630da146`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1979` collection represents all twenty source positions in order with thirteen source-local cards and exact canonical reuse for Problems 1, 3, 13, 14, 15, 16, and 19. No source data is inferred and no shared collection path was modified.
+  The inventory's `12 problems`, single `algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall80.pdf](assets/attachments/extracted/Fall80.md) (145L, 11 problems) — applied-algebra — Fall 19
+- [x] [Fall80.pdf](assets/attachments/Fall80_extracted.md) (144L, 20 problems) — UC Berkeley — prelim — Fall 1980 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 0598ddc10111cbcadb4f206aa7e1d3f3e7b2c0c99358ed918c419c4cbaa5ab89`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1980` collection represents all twenty source positions in order, with exact canonical reuse for Problems 2 and 19. Problem 9's fresh output reproduces the same malformed matrix display and norm/metric typography ambiguity; the existing source-checked card leaves that detail unrecovered rather than guessing a repair.
+  No shared collection path was modified.
+  The inventory's `11 problems`, `applied-algebra`, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall83.pdf](assets/attachments/extracted/Fall83.md) (153L, 6 problems) — algebra — Fall 19
+- [x] [Fall83.pdf](assets/attachments/Fall83_extracted.md) (152L, 20 problems) — UC Berkeley — prelim — Fall 1983 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 aeaaadf133bc162f2344c11f23f90317d99a8e3bcb9533e3647d4039d50ddebd`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1983` collection represents all twenty source positions in order with sixteen source-local cards and exact canonical reuse for Problems 5, 14, 17, and 19. No shared collection path was modified.
+  The inventory's `6 problems`, single `algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall87.pdf](assets/attachments/extracted/Fall87.md) (105L, 2 problems) — algebra — Fall 19
+- [x] [Fall87.pdf](assets/attachments/Fall87_extracted.md) (104L, 20 problems) — UC Berkeley — prelim — Fall 1987 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 4a1e97076e80e074900cbe772a73de2b1ef9865db4dd600e97d48e4fca159506`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1987` collection represents all twenty source positions in order with eighteen source-local cards and exact canonical reuse for Problems 13 and 19. No shared collection path was modified.
+  The inventory's `2 problems`, single `algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall89.pdf](assets/attachments/extracted/Fall89.md) (78L, 0 problems) — applied-algebra — Fall 19
+- [x] [Fall89.pdf](assets/attachments/Fall89_extracted.md) (77L, 18 problems) — UC Berkeley — prelim — Fall 1989 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 867c9628f1357dac237e53e1d5aa0104e49bf46583ed2a3ef3f4fda99b607b18`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1989` collection represents all eighteen numbered source positions in order with eighteen source-local cards.
+  No shared collection path was modified.
+  The inventory's `0 problems`, `applied-algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall91.pdf](assets/attachments/extracted/Fall91.md) (107L, 7 problems) — algebra — Fall 19
+- [x] [Fall91.pdf](assets/attachments/Fall91_extracted.md) (106L, 18 problems) — UC Berkeley — prelim — Fall 1991 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 0287e53d4fcce1f1bc12f0e4c054ea062a3022cb10c573e7c1d3d3744c6a739b`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1991` collection represents all eighteen numbered source positions in order with eighteen source-local cards.
+  No shared collection path was modified.
+  The inventory's `7 problems`, single `algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall92.pdf](assets/attachments/extracted/Fall92.md) (111L, 5 problems) — algebra — Fall 19
+- [x] [Fall92.pdf](assets/attachments/Fall92_extracted.md) (110L, 18 problems) — UC Berkeley — prelim — Fall 1992 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 62f6a721a423946bd474c952db4f0aa5f185809e34e5b6d14327674699f74b11`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1992` collection represents all eighteen source positions in order with seventeen source-local cards and exact canonical reuse of `P-BKS80-16` for Problem 16. Problem 6 reproduces the same unresolved metric-comparison extraction gap, which the existing card preserves rather than guessing.
+  No shared collection path was modified.
+  The inventory's `5 problems`, single `algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall93.pdf](assets/attachments/extracted/Fall93.md) (91L, 4 problems) — algebra — Fall 19
+- [x] [Fall93.pdf](assets/attachments/Fall93_extracted.md) (90L, 18 problems) — UC Berkeley — prelim — Fall 1993 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 b63b209f77f7d24d9c5fff297d401e2bc68ab2aafe22d04e597838c6d30284d9`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1993` collection represents all eighteen numbered source positions in order with eighteen source-local cards.
+  Problem 12 reproduces the same omitted-contour dependency, which remains explicitly unrecovered rather than guessed.
+  No shared collection path was modified.
+  The inventory's `4 problems`, single `algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall96.pdf](assets/attachments/extracted/Fall96.md) (123L, 4 problems) — complex-analysis — Fall 19
+- [x] [Fall96.pdf](assets/attachments/Fall96_extracted.md) (122L, 18 problems) — UC Berkeley — prelim — Fall 1996 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 25d9901f7f0a08560f023b7967014d2f2b0e5aa5a1d946f036becbbb9ca1b1f1`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1996` collection represents all eighteen source positions in order with sixteen source-local cards plus exact canonical reuse of `P-BKS84-7` for Problem 12 and `P-BERK80S-11` for Problem 18. Problems 8 and 15 reproduce the same explicit extraction gaps and remain unrecovered rather than guessed.
+  No shared collection path was modified.
+  The inventory's `4 problems`, `complex-analysis` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall98.pdf](assets/attachments/extracted/Fall98.md) (69L, 6 problems) — applied-algebra — Fall 19
+- [x] [Fall98.pdf](assets/attachments/Fall98_extracted.md) (68L, 18 problems) — UC Berkeley — prelim — Fall 1998 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 b14c7716de0d6d9ff9e6bd30bb20b4d8ed8658566897274520c50ab4aaf4c183`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1998` collection represents all eighteen numbered source positions in order with seventeen source-local cards plus exact canonical reuse of `P-BJDIE` for Problem 17. No shared collection path was modified.
+  The inventory's `6 problems`, `applied-algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [Fall99.pdf](assets/attachments/extracted/Fall99.md) (64L, 0 problems) — applied-algebra — Fall 19
+- [x] [Fall99.pdf](assets/attachments/Fall99_extracted.md) (63L, 18 problems) — UC Berkeley — prelim — Fall 1999 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 de8ca8871f69b4ed086ce00655fa38e88083d29dc0b6b32c18f51bd245164270`). The existing complete `SRC-BERKELEY-PRELIM-FALL-1999` collection represents all eighteen numbered source positions in order with sixteen source-local cards plus exact canonical reuse of `P-BKF07-7B` for Problem 10 and `E-AMD-HO6G56UF` for Problem 11. No shared collection path was modified.
+  The inventory's `0 problems`, `applied-algebra` label, and truncated `Fall 19` metadata were stale.
 
-- [ ] [grad_prelim_Fall08.pdf](assets/attachments/extracted/grad_prelim_Fall08.md) (47L, 8 problems) — complex-analysis — August 12
+- [x] [grad_prelim_Fall08.pdf](assets/attachments/grad_prelim_Fall08_extracted.md) (46L, 8 problems) — UGA — prelim — Fall 2008 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 69a62c3a1be3408ecef9b940073f6e1e9de77fa3cd28d7df821d44a05cfeff09`). The existing complete `SRC-UGA-PRELIM-FALL-2008` collection represents all eight source positions in order with seven source-local cards plus exact canonical reuse of `P-UGAP13F-06` for Problem 3. Problem 4 reproduces the same malformed-matrix extraction gap and remains explicitly unrecovered rather than guessed.
+  No shared collection path was modified.
+  The inventory's `complex-analysis` label and date-only metadata were stale.
 
-- [ ] [grad_prelim_Fall09.pdf](assets/attachments/extracted/grad_prelim_Fall09.md) (53L, 0 problems) — no metadata
+- [x] [grad_prelim_Fall09.pdf](assets/attachments/grad_prelim_Fall09_extracted.md) (52L, 8 top-level problems) — UGA — prelim — Fall 2009 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 91176d0260b5ec7a2c675459fca55c3e078ac2cf61e9d076e41b619c1a064617`). The existing complete `SRC-UGA-PRELIM-FALL-2009` collection represents all eight top-level numbered source positions in order with eight source-local cards.
+  No shared collection path was modified.
+  The inventory's `0 problems` and `no metadata` labels were stale.
 
-- [ ] [grad_prelim_Fall11.pdf](assets/attachments/extracted/grad_prelim_Fall11.md) (29L, 9 problems) — Fall 2011
+- [x] [grad_prelim_Fall11.pdf](assets/attachments/grad_prelim_Fall11_extracted.md) (28L, 9 problems) — UGA — prelim — Fall 2011 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 33a1ec46185bace9d5624b8594b99da5b08e3f2a081da3124a982f426eedad32`). The existing complete `SRC-UGA-PRELIM-FALL-2011` collection represents all nine numbered source positions in order with nine source-local cards.
+  No shared collection path was modified.
+  The inventory's source metadata was incomplete.
 
-- [ ] [grad_prelim_Fall13.pdf](assets/attachments/extracted/grad_prelim_Fall13.md) (41L, 9 problems) — complex-analysis — Fall 2013
+- [x] [grad_prelim_Fall13.pdf](assets/attachments/grad_prelim_Fall13_extracted.md) (40L, 9 problems) — UGA — prelim — Fall 2013 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 c7ea04cf6270d58cca6afa8d39cb3d7b106fc1b4d96453b44ffea30b7e7e0201`). The existing complete `SRC-UGA-PRELIM-FALL-2013` collection represents all nine numbered source positions in order with nine source-local cards.
+  No shared collection path was modified.
+  The inventory's `complex-analysis` label was stale heuristic metadata for a mixed preliminary exam.
 
-- [ ] [grad_prelim_Spring08.pdf](assets/attachments/extracted/grad_prelim_Spring08.md) (37L, 8 problems) — algebra — SprinG 2008
+- [x] [grad_prelim_Spring08.pdf](assets/attachments/grad_prelim_Spring08_extracted.md) (36L, 8 problems) — UGA — prelim — Spring 2008 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 1fd16f4c663e4af0b8b20605b07d3f87152b3fa67f797dc05aa147af66f8794b`). The existing complete `SRC-UGA-PRELIM-SPRING-2008` collection represents all eight numbered source positions in order with eight source-local cards.
+  The source-checked cards already record the uniquely forced repairs for symbols dropped by extraction in Problems 1, 4, and 6; the deterministic baseline is not normalized.
+  No shared collection path was modified.
+  The inventory's `algebra` label and malformed `SprinG` metadata were stale.
 
-- [ ] [grad_prelim_Spring09.pdf](assets/attachments/extracted/grad_prelim_Spring09.md) (42L, 8 problems) — algebra — SprinG 2009
+- [x] [grad_prelim_Spring09.pdf](assets/attachments/grad_prelim_Spring09_extracted.md) (41L, 8 problems) — UGA — prelim — Spring 2009 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 9eabf2ee38ca6f00412fe4963c2aa58620e1cd2ead367d77673494cfae2883ff`). The existing complete `SRC-UGA-PRELIM-SPRING-2009` collection represents all eight numbered source positions in order with eight source-local cards.
+  No shared collection path was modified.
+  The inventory's `algebra` label and malformed `SprinG` metadata were stale.
 
-- [ ] [sample_exam.pdf](assets/attachments/extracted/sample_exam.md) (21L, 9 problems) — calculus
+- [x] [sample_exam.pdf](assets/attachments/sample_exam_extracted.md) (20L, 9 problems) — UGA — prelim — sample exam — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 60c390ba7ba7b5fb9415dee69dd05e7547d3232e3c2785658fa8dbeeb701d9fb`). The existing complete `SRC-PRELIM-ART-A2355I` collection represents all nine source positions in order with seven source-local cards plus exact canonical reuse of `P-VAWOC` for Problem 4 and `P-HUKW5` for Problem 6. No shared collection path was modified.
+  The inventory's calculus-only label was stale heuristic metadata for a mixed preliminary exam.
 
-- [ ] [Spring00.pdf](assets/attachments/extracted/Spring00.md) (96L, 4 problems) — algebra — Spring 2000
+- [x] [Spring00.pdf](assets/attachments/Spring00_extracted.md) (95L, 18 problems) — Berkeley — prelim — Spring 2000 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 896e64fa872d99ea1e57f40b43e81c71de85be558556c5c02c01c5ef369654e5`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-2000` collection represents all eighteen numbered source positions in order with seventeen source-local cards plus exact canonical reuse of `P-BERK89S-16` for Problem 4. The retained PDF omits the institution name; repository source lineage supplies the Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `4 problems` and `algebra` label were stale.
 
-- [ ] [Spring01.pdf](assets/attachments/extracted/Spring01.md) (65L, 5 problems) — algebra — Spring 2001
+- [x] [Spring01.pdf](assets/attachments/Spring01_extracted.md) (64L, 18 problems) — Berkeley — prelim — Spring 2001 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 240331fe7857ceb7f2850fcae8430d763726fb658091d86b36e7baeed2821189`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-2001` collection represents all eighteen numbered source positions in order with eighteen source-local cards.
+  The retained PDF omits the institution name; repository source lineage supplies the Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `5 problems` and `algebra` label were stale.
 
-- [ ] [Spring77.pdf](assets/attachments/extracted/Spring77.md) (157L, 17 problems) — applied-algebra — Spring 19
+- [x] [Spring77.pdf](assets/attachments/Spring77_extracted.md) (156L, 20 problems) — Berkeley — prelim — Spring 1977 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 9a1ee1ad67c7d4d07e25ae2df0e5e20f52cd13375e52bd714b1e3db0d320f22d`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1977` collection represents all twenty numbered source positions in order with twenty source-local cards.
+  Problem 3 remains mathematically complete without its missing illustration because the regular-polygon construction and chord lengths are specified textually.
+  The retained PDF omits the institution name; repository source lineage supplies Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `17 problems`, `applied-algebra` label, and truncated `Spring 19` metadata were stale.
 
-- [ ] [Spring78.pdf](assets/attachments/extracted/Spring78.md) (135L, 14 problems) — complex-analysis — Spring 19
+- [x] [Spring78.pdf](assets/attachments/Spring78_extracted.md) (134L, 20 problems) — Berkeley — prelim — Spring 1978 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 d5ad0c7cf618bc8ba46a4d836e791b64379eaade104f139a525a8e34bf7d612e`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1978` collection represents all twenty numbered source positions in order with seventeen source-local cards plus exact canonical reuse of `P-EMCA9` for Problem 3, `P-BERK97S-12` for Problem 4, and `P-PRELIM82S-01` for Problem 9. The retained PDF omits the institution name; repository source lineage supplies Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `14 problems`, `complex-analysis` label, and truncated `Spring 19` metadata were stale.
 
-- [ ] [Spring80.pdf](assets/attachments/extracted/Spring80.md) (153L, 13 problems) — prelim — Spring 1980 — reclassified 2026-09-09: mixed general preliminary exam (analysis, complex analysis, algebra, linear algebra, ODEs, geometry), not a Real Analysis-only source.
+- [x] [Spring80.pdf](assets/attachments/Spring80_extracted.md) (152L, 20 problems) — Berkeley — prelim — Spring 1980 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 e7273342588157a11da0f8ada9a54da82b3b41239086e3dbb6353d7d02e12ff3`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1980` collection represents all twenty numbered source positions in order with twenty source-local cards.
+  Problem 9 reproduces the same unrecovered displayed-matrix entry gap and remains explicit rather than guessed.
+  The retained PDF omits the institution name; repository source lineage supplies Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `13 problems` count was stale.
 
-- [ ] [Spring81.pdf](assets/attachments/extracted/Spring81.md) (167L, 17 problems) — topology — Spring 19
+- [x] [Spring81.pdf](assets/attachments/Spring81_extracted.md) (166L, 20 problems) — Berkeley — prelim — Spring 1981 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 e8488ca78463c60e11a63c9a90fb7024d73d70b65b586baa3725383b5f6114fe`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1981` collection represents all twenty numbered source positions in order with twenty source-local cards.
+  Problem 11 reproduces the omitted-contour dependency and remains explicit rather than guessed; Problem 9 retains its source-forced eigenvalue-sum interpretation.
+  The retained PDF omits the institution name; repository source lineage supplies Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `17 problems`, `topology` label, and truncated `Spring 19` metadata were stale.
 
-- [ ] [Spring82.pdf](assets/attachments/extracted/Spring82.md) (95L, 0 problems) — algebra — Spring 19
+- [x] [Spring82.pdf](assets/attachments/Spring82_extracted.md) (94L, 20 problems) — Berkeley — prelim — Spring 1982 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 43762d70a93092bb6e7d1a2997d583fd2840dac9dab1052a49983ccb9f28d04c`) and therefore reproduces its known material corruption in Problems 2–9. No alternate OCR, parser, or model-vision fallback was used.
+  The existing complete `SRC-BERKELEY-PRELIM-SPRING-1982` collection represents all twenty numbered source positions in order with durable source-audit evidence for Problems 2–9 and 15. The retained PDF omits the institution name; repository source lineage supplies Berkeley attribution.
+  No shared collection path was modified.
+  The inventory's `0 problems`, `algebra` label, and truncated `Spring 19` metadata were stale.
 
-- [ ] [Spring83.pdf](assets/attachments/extracted/Spring83.md) (135L, 3 problems) — complex-analysis — Spring 19
+- [x] [Spring83.pdf](assets/attachments/Spring83_extracted.md) (134L, 20 problems) — Berkeley — prelim — Spring 1983 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 19eaacaf9eb7ec513b21d44ee9e45c12d9bf1cd53874d586345f1c4c8b322940`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1983` collection represents all twenty numbered source positions in order with twenty source-local cards.
+  Problem 4 retains the source's missing-diagram limitation and Problem 18 retains durable source-checked recovery of the garbled `3\times3` matrix size; no alternate OCR/parser/model-vision fallback was used.
+  The inventory's `3 problems`, `complex-analysis`, and truncated date metadata were stale.
 
-- [ ] [Spring84.pdf](assets/attachments/extracted/Spring84.md) (102L, 4 problems) — algebra — Spring 19
+- [x] [Spring84.pdf](assets/attachments/Spring84_extracted.md) (101L, 20 problems) — Berkeley — prelim — Spring 1984 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 7d4fe62e4742b62363aebb2062cf73153796ddca5e6742396dcd356714c02ea3`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1984` collection represents all twenty source positions in order with eighteen source-local cards plus exact canonical reuse of `P-BERK87S-09` for Problem 9 and `P-BKF81-18` for Problem 11. The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `4 problems`, `algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring85.pdf](assets/attachments/extracted/Spring85.md) (113L, 3 problems) — applied-algebra — Spring 19
+- [x] [Spring85.pdf](assets/attachments/Spring85_extracted.md) (112L, 20 problems) — Berkeley — prelim — Spring 1985 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ae89b3f06b3ac1f40a0afaafb11255bf22a3ab7acc78bcab9b9c03c21778dad9`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1985` collection represents all twenty source positions in order with twenty source-local cards.
+  The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `3 problems`, `applied-algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring86.pdf](assets/attachments/extracted/Spring86.md) (119L, 7 problems) — algebra — Spring 19
+- [x] [Spring86.pdf](assets/attachments/Spring86_extracted.md) (118L, 20 problems) — Berkeley — prelim — Spring 1986 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 664c4e6338ce68f21b7ca89d0a14cf5b71bee70dd9655df6750bb7c134131572`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1986` collection represents all twenty source positions in order with seventeen source-local cards plus exact canonical reuse of `P-UCLAB06S-10` for Problem 13, `P-BERK96S-02` for Problem 14, and `E-AMD-UXMX7R25` for Problem 19. The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `7 problems`, `algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring87.pdf](assets/attachments/extracted/Spring87.md) (105L, 5 problems) — algebra — Spring 19
+- [x] [Spring87.pdf](assets/attachments/Spring87_extracted.md) (104L, 20 problems) — Berkeley — prelim — Spring 1987 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 d64853e535c9ad25740ec40a18969ae3e2f409550e0f37759a5020bae590504b`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1987` collection represents all twenty source positions in order with eighteen source-local cards plus exact canonical reuse of `P-8CA31` for Problem 15 and `E-AMD-HO6G56UF` for Problem 18. The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `5 problems`, `algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring89.pdf](assets/attachments/extracted/Spring89.md) (108L, 6 problems) — algebra — Spring 19
+- [x] [Spring89.pdf](assets/attachments/Spring89_extracted.md) (107L, 18 problems) — Berkeley — prelim — Spring 1989 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 10a34ceb96c55a30991e6ba3f3c06f5022498a9b3db9f733f123d383efe4adb2`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1989` collection represents all eighteen source positions in order with eighteen source-local cards.
+  Problem 17 retains durable source-checked recovery of the garbled conclusion `I=R`; no alternate OCR/parser/model-vision fallback was used.
+  The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `6 problems`, `algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring90.pdf](assets/attachments/extracted/Spring90.md) (101L, 0 problems) — complex-analysis — Spring 19
+- [x] [Spring90.pdf](assets/attachments/Spring90_extracted.md) (100L, 18 problems) — Berkeley — prelim — Spring 1990 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 19e6e70d0619d195f353db6c24047fbc8a6f3cf83f0100a6f4f0b50733178cd3`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1990` collection represents all eighteen source positions in order with eighteen source-local cards.
+  The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `0 problems`, `complex-analysis`, and truncated date metadata were stale.
 
-- [ ] [Spring91.pdf](assets/attachments/extracted/Spring91.md) (128L, 4 problems) — applied-algebra — Spring 19
+- [x] [Spring91.pdf](assets/attachments/Spring91_extracted.md) (127L, 18 problems) — Berkeley — prelim — Spring 1991 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 d2a0d65568110c90fe51c7735c3535b6ac0d37b1e010a6c98613f44a48a28475`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1991` collection represents all eighteen source positions in order with seventeen source-local cards plus exact canonical reuse of `P-BERK79S-07` for Problem 2. The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `4 problems`, `applied-algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring92.pdf](assets/attachments/extracted/Spring92.md) (73L, 2 problems) — algebra — Spring 19
+- [x] [Spring92.pdf](assets/attachments/Spring92_extracted.md) (72L, 18 problems) — Berkeley — prelim — Spring 1992 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 149386d2866b2d83345cedc082f1b7e5d64fb5019a18ae7e6638d1ccbd73a85d`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1992` collection represents all eighteen source positions in order with seventeen source-local cards plus exact canonical reuse of `P-BERK77S-14` for Problem 1. The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `2 problems`, `algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring95.pdf](assets/attachments/extracted/Spring95.md) (87L, 4 problems) — applied-algebra — Spring 19
+- [x] [Spring95.pdf](assets/attachments/Spring95_extracted.md) (86L, 18 problems) — Berkeley — prelim — Spring 1995 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 176be30fa215e8db31b8e4abc22f931e9ba36fd5db875aa5eaff9a3c35332701`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1995` collection represents all eighteen source positions in order with sixteen source-local cards plus exact canonical reuse of `P-PRELIM82S-03` for Problem 16 and `P-3A7RU` for Problem 18. Problems 2 and 14 retain durable source-checked recovery of extraction-sensitive data; no alternate OCR/parser/model-vision fallback was used.
+  The PDF itself omits the institution name; repository source lineage supplies the Berkeley attribution.
+  The inventory's `4 problems`, `applied-algebra`, and truncated date metadata were stale.
 
-- [ ] [Spring96.pdf](assets/attachments/extracted/Spring96.md) (101L, 0 problems) — algebra — Spring 19
+- [x] [Spring96.pdf](assets/attachments/Spring96_extracted.md) (100L, 18 problems) — Berkeley — prelim — Spring 1996 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 3d1db510570437f10f800d280d1e5a0eb1e5a70d0f3b0eda266dc40fbe9bd471`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1996` collection represents all eighteen source positions in order with eighteen source-local cards.
+  Problem 11 retains its explicit dropped-arrow extraction defect; the existing source-checked card records the recovered limits, while Problem 15 is fully represented by the deterministic extraction.
+  No alternate OCR/parser/PDF-render/model-vision fallback was used.
 
-- [ ] [Spring97.pdf](assets/attachments/extracted/Spring97.md) (79L, 4 problems) — topology — Spring 19
+- [x] [Spring97.pdf](assets/attachments/Spring97_extracted.md) (78L, 18 problems) — Berkeley — prelim — Spring 1997 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ebfca8ff2cd3cecbe4acbe6d61a6c46f703ec4735a04e0ddf11b71f358b43261`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1997` collection represents all eighteen numbered source positions in order with eighteen source-local cards; all collection paths are byte-identical to `HEAD`. The inventory's `4 problems` and `topology` labels were stale heuristic metadata.
 
-- [ ] [Spring98.pdf](assets/attachments/extracted/Spring98.md) (77L, 0 problems) — algebra — Spring 19
+- [x] [Spring98.pdf](assets/attachments/Spring98_extracted.md) (76L, 18 problems) — Berkeley — prelim — Spring 1998 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ae39258c3760800959bd3d67fc4ea3d63a7dad72190ab94a54b62deb9531c5d8`). The existing complete `SRC-BERKELEY-PRELIM-SPRING-1998` collection represents all eighteen numbered source positions in order with eighteen source-local cards; all collection paths are byte-identical to `HEAD`. Problem 9 retains the deterministic extraction malformed infinity glyph while its existing source-checked card records the localized recovery.
+  Inventory metadata claiming `0 problems` and `algebra` was stale.
 
-- [ ] [Summer77.pdf](assets/attachments/extracted/Summer77.md) (111L, 8 problems) — complex-analysis — Summer 19
+- [x] [Summer77.pdf](assets/attachments/Summer77_extracted.md) (110L, 20 problems) — Berkeley — prelim — Summer 1977 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 705cc6667a1438ed6a4ebaed2295222d2424dd402c918f31bf1f9704f6bf81a4`). The existing complete `SRC-BERKELEY-PRELIM-SUMMER-1977` collection represents all twenty numbered source positions in order with twenty source-local cards; all collection paths are byte-identical to `HEAD`. Problems 8, 9, and 20 retain localized deterministic extraction defects already recorded on their existing source-checked cards.
+  Inventory metadata claiming `8 problems` and `complex-analysis` was stale.
 
-- [ ] [Summer78.pdf](assets/attachments/extracted/Summer78.md) (173L, 26 problems) — algebra — Summer 19
+- [x] [Summer78.pdf](assets/attachments/Summer78_extracted.md) (172L, 20 problems) — Berkeley — prelim — Summer 1978 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 bc0e69978635c19b73d98d45f2c6524dfa41bc8d972ff89256e2fc05969b5e36`). The existing complete `SRC-BERKELEY-PRELIM-SUMMER-1978` collection represents all twenty numbered source positions in order with twenty source-local cards; all collection paths are byte-identical to `HEAD`. The deterministic baseline confirms the source defects already recorded for Problems 9 and 11. Inventory metadata claiming `26 problems` and `algebra` was stale.
 
-- [ ] [Summer79.pdf](assets/attachments/extracted/Summer79.md) (137L, 8 problems) — algebra — Summer 19
+- [x] [Summer79.pdf](assets/attachments/extracted/Summer79.md) (137L, 8 problems) — Berkeley — prelim — Summer 1979 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1979`, with Problems 1–20 represented in source order.
+  The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution.
+  The inventory's `8 problems` and `algebra` labels were stale heuristic metadata.
 
-- [ ] [Summer81.pdf](assets/attachments/extracted/Summer81.md) (131L, 14 problems) — topology — Summer 19
+- [x] [Summer81.pdf](assets/attachments/extracted/Summer81.md) (131L, 14 problems) — Berkeley — prelim — Summer 1981 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1981`. Nineteen source-local cards represent Problems 1–14 and 16–20; Problem 15 is the exact statement later repeated as Summer 1982 Problem 19 and reuses canonical card `P-PRELIM82S-19`. The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution.
+  The inventory's `14 problems` and `topology` labels were stale heuristic metadata.
 
-- [ ] [Summer82.pdf](assets/attachments/extracted/Summer82.md) (145L, 9 problems) — complex-analysis — Summer 19
+- [x] [Summer82.pdf](assets/attachments/extracted/Summer82.md) (145L, 9 problems) — Berkeley — prelim — Summer 1982 — disposition 2026-09-13: identified from the retained PDF as a 20-problem preliminary examination and ingested as `SRC-BERKELEY-PRELIM-SUMMER-1982`, with Problems 1–20 represented in source order.
+  The PDF itself omits the institution name; the existing Berkeley prelim resource page supplies the Berkeley attribution.
+  The inventory's `9 problems` and `complex-analysis` labels were stale heuristic metadata.
 
-- [ ] [syllabus.pdf](assets/attachments/extracted/syllabus.md) (29L, 0 problems) — applied-algebra
+- [x] [syllabus.pdf](assets/attachments/syllabus_extracted.md) (28L, reference-only) — Berkeley — prelim — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 8c4f65082295fa97212f16207261b2d84e24742c7f171ad56dd90518be0ca15c`). The document is preliminary-exam information and syllabus material covering format, purpose, five subject areas, suggested texts, grading, and review policy; it contains no posed problem set.
+  The existing Berkeley prelim resource entry is substantively annotated from this baseline rather than manufacturing cards.
 
 ## UCLA basic exams (41)
 
-- [ ] [Auroux_-_Math_131_Introduction_to_Topology.pdf](assets/attachments/extracted/Auroux_-_Math_131_Introduction_to_Topology.md) (3661L, 48 problems) — UNL — alg-geom
+- [x] [Auroux_-_Math_131_Introduction_to_Topology.pdf](assets/attachments/extracted/Auroux_-_Math_131_Introduction_to_Topology.md) (3661L, 48 problems) — Harvard — topology — Fall 2019 — disposition 2026-09-16: reference-only intake from the Mistral OCR extraction committed in `a86d55f19` (113 pages).
+  The PDF is Beckham Myers' lecture-by-lecture notes of Denis Auroux's Harvard Math 131 (Fall 2019), point-set topology through the fundamental group and covering spaces; it poses no problem set, and its three mentions of exercises defer steps of proofs in the running text.
+  The resource entry in `wiki/topology/resources/books-notes.md` now names the note-taker, course and contents.
+  The inventory's `48 problems` was a stale heuristic.
 
-- [ ] [basic-01F.pdf](assets/attachments/extracted/basic-01F.md) (51L, 10 problems) — UCLA — applied-algebra **OCR: image placeholders**
+- [x] [basic-01F.pdf](assets/attachments/basic-01F_extracted.md) (50L, 10 problems) — UCLA — prelim — Fall 2001 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 2512bd5ae25e0c0e71d7a7396783a31a3f1efecb148c58d9999e00d52bd47cc7`). The existing complete `SRC-UCLA-BASIC-FALL-2001` collection represents all ten numbered source positions in order with nine source-local cards plus canonical reuse of `P-UCLAB04S-10` for Problem 9. The extraction retains three image placeholders, but all ten posed statements are present in text; no fallback extraction was used.
 
-- [ ] [basic-02F.pdf](assets/attachments/extracted/basic-02F.md) (65L, 10 problems) — applied-algebra **OCR: image placeholders**
+- [x] [basic-02F.pdf](assets/attachments/basic-02F_extracted.md) (64L, 10 problems) — UCLA — prelim — Fall 2002 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 5413250ff92354debe8a635241b206c2a5de972cae3190c72ead8a30e6ffa720`). The existing complete `SRC-UCLA-BASIC-FALL-2002` collection represents all ten numbered source positions in order with ten source-local cards; all collection paths are byte-identical to `HEAD`. The extraction retains image placeholders, but all ten posed statements are present in text; no fallback extraction was used.
 
-- [ ] [basic-02S.pdf](assets/attachments/extracted/basic-02S.md) (51L, 11 problems) — applied-algebra **OCR: image placeholders**
+- [x] [basic-02S.pdf](assets/attachments/basic-02S_extracted.md) (50L, 11 problems) — UCLA — prelim — Spring 2002 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 adc481ba9282e4ad6f7010a1a27eb74e1923cac7c46f56e296fefdcb4c842eb7`). The existing complete `SRC-UCLA-BASIC-SPRING-2002` collection represents all eleven numbered source positions in order with nine source-local cards plus canonical reuse for Problems 5 and 7. Problem 6 retains an explicit deterministic extraction gap; its existing source-checked card records the recovered concluding clause.
+  No fallback extraction was used.
 
-- [ ] [basic-02W.pdf](assets/attachments/extracted/basic-02W.md) (91L, 11 problems) — UCLA — applied-algebra **OCR: image placeholders**
+- [x] [basic-02W.pdf](assets/attachments/basic-02W_extracted.md) (90L, 11 problems) — UCLA — prelim — Winter 2002 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 4fb3e21855fc63e10d0a321d3ceffd9f9ae45c8c1fbf86f0ed2b3db8930c577d`). The existing complete `SRC-UCLA-BASIC-WINTER-2002` collection represents all eleven numbered source positions in order with ten source-local cards plus canonical reuse of `P-UCLAB05F-02` for Problem 6; all collection paths are byte-identical to `HEAD`. Problem 1 retains an explicit deterministic extraction gap in part (b), while Problems 2, 8, and 11 retain source-authored quirks already recorded on their source-checked cards.
+  No fallback extraction was used.
 
-- [ ] [basic-03F.pdf](assets/attachments/extracted/basic-03F.md) (103L, 0 problems) — UCLA — calculus — FALL 2003 **OCR: image placeholders**
+- [x] [basic-03F.pdf](assets/attachments/basic-03F_extracted.md) (102L, 10 problems) — UCLA — prelim — Fall 2003 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 d93eb2bf746b5cad52c838d33650dd03f06ac56c18787eee09691c8cc3566ca5`). The existing complete `SRC-UCLA-BASIC-FALL-2003` collection represents all ten source positions in order with nine source-local cards plus canonical reuse of `P-UCLAB04F-05` for Problem 7. Fall 2003 Problem 7 has distinct proof instructions from its Fall 2004 appearance; that appearance-specific difference is now recorded in the collection.
+  The deterministic extraction retains minor numbering/typography defects but no missing posed problem; no fallback extraction was used.
 
-- [ ] [basic-03S.pdf](assets/attachments/extracted/basic-03S.md) (55L, 10 problems) — UCLA — applied-algebra — May 2003
+- [x] [basic-03S.pdf](assets/attachments/basic-03S_extracted.md) (54L, 10 problems) — UCLA — prelim — May 2003 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ab0bb8cc7d5bfb6ecfeca0421f171d087ea92f845bc79a7bc2b9aa4a1df3772f`). The existing complete `SRC-UCLA-BASIC-SPRING-2003` collection represents all ten source positions in order with nine source-local cards plus canonical reuse of `P-UCLAB05F-02` for Problem 6. The deterministic baseline reproduces source-authored defects in Problems 4, 5, 7, and 10 already recorded on the source-checked cards; no fallback extraction was used.
 
-- [ ] [basic-04F.pdf](assets/attachments/extracted/basic-04F.md) (55L, 4 problems) — UCLA — Fall 2004
+- [x] [basic-04F.pdf](assets/attachments/basic-04F_extracted.md) (54L, 10 problems) — UCLA — prelim — Fall 2004 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 c022a7568576bd814e491c3bc8507034908658ab516f0195bf0cde0a79f213a8`). The existing complete `SRC-UCLA-BASIC-FALL-2004` collection represents all ten source positions in order with nine source-local cards plus canonical reuse of `P-UCLAB05S-AN5` for Problem 1. The deterministic extraction loses several top-level problem numbers and reproduces the Problem 10 source defect already recorded on its source-checked card; no fallback extraction was used.
 
-- [ ] [basic-04S.pdf](assets/attachments/extracted/basic-04S.md) (83L, 10 problems) — UCLA — applied-algebra
+- [x] [basic-04S.pdf](assets/attachments/basic-04S_extracted.md) (82L, 10 problems) — UCLA — prelim — Spring 2004 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ff52cf9698ad18317a47b48e8a34391790d694fcc06045b5212de77d9ef9b2c8`). The existing complete `SRC-UCLA-BASIC-SPRING-2004` collection represents all ten source positions in order with eight source-local cards plus canonical reuse of `P-UCLAB06S-01` for Problem 3 and `E-HK-35-11` for Problem 7. The deterministic extraction retains localized notation/subpart-label defects already recovered on source-checked cards; no fallback extraction was used.
 
-- [ ] [basic-05F.pdf](assets/attachments/extracted/basic-05F.md) (73L, 10 problems) — UCLA
+- [x] [basic-05F.pdf](assets/attachments/basic-05F_extracted.md) (72L, 10 problems) — UCLA — prelim — Fall 2005 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 ec48b6d2185961e100d899f5535a72165989107a1654352becf176e64a306451`). The existing complete `SRC-UCLA-BASIC-FALL-2005` collection represents all ten source positions in order with ten source-local cards.
+  The deterministic baseline retains localized extraction defects in Problems 2, 8, and 9 already recovered on source-checked cards; no fallback extraction was used.
 
-- [ ] [basic-05S.pdf](assets/attachments/extracted/basic-05S.md) (131L, 12 problems) — topology
+- [x] [basic-05S.pdf](assets/attachments/basic-05S_extracted.md) (130L, 12 problems) — UCLA — prelim — Spring 2005 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction is byte-identical to the retained Markdown (`SHA-256 4f0731533b4a6bb44b5a06d76e113f0574cb4e1352ce1b8001e555dd9f1a0376`). The existing complete `SRC-UCLA-BASIC-SPRING-2005` collection represents all twelve source positions in order with twelve source-local cards: four Linear Algebra and eight Analysis problems.
+  The deterministic baseline retains localized source/extraction defects already recorded on source-checked cards; no fallback extraction was used.
 
-- [ ] [basic-06W.pdf](assets/attachments/extracted/basic-06W.md) (55L, 0 problems) — UCLA — applied-algebra — WINTER 2006
+- [x] [basic-06W.pdf](assets/attachments/basic-06W_extracted.md) (54L, 10 problems) — UCLA — prelim — Winter 2006 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 817659784f56aca07fa5f6dd4fae04a082e00bba44ea4fad891491bd12ea9919`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 18b3ba26c18f5aa08f6fe479252c5317acaecb5b8a1be2ed0caca051e2f01079`) and is locally noisier in Problems 2, 3, 4, and 6. The existing complete `SRC-UCLA-BASIC-WINTER-2006` collection represents all ten source positions with source-checked cards that recover those local transcription defects and record the source-level false assertions in Problems 3 and 9. No fallback extraction was used.
 
-- [ ] [basic-07F.pdf](assets/attachments/extracted/basic-07F.md) (113L, 12 problems) — no metadata
+- [x] [basic-07F.pdf](assets/attachments/extracted/basic-07F.md) (113L, 12 problems) — no metadata — disposition 2026-09-13: identified from the retained PDF/resource route as the UCLA Basic Examination, Fall 2007, and ingested as `SRC-UCLA-BASIC-FALL-2007`; all twelve numbered problems are represented in source order by `P-UCLAB07F-01` through `P-UCLAB07F-12`. Problem 9(b) is false as printed on all of $\mathbb R$; the source-faithful card records the counterexample and corrected compact-interval conclusion.
 
-- [ ] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — prelim — Spring 2007 — reclassified 2026-09-09: UCLA Basic Exam mixing linear algebra, analysis, ODEs, and related prelim subjects.
+- [x] [basic-07S.pdf](assets/attachments/extracted/basic-07S.md) (123L, 12 problems) — UCLA — prelim — Spring 2007 — disposition 2026-09-13: ingested as `SRC-UCLA-BASIC-SPRING-2007` with twelve source-order problem cards `P-UCLAB07S-01` through `P-UCLAB07S-12`; the retained PDF is collection provenance.
 
-- [ ] [basic-08F.pdf](assets/attachments/extracted/basic-08F.md) (83L, 0 problems) — UCLA — Fall 08
+- [x] [basic-08F.pdf](assets/attachments/extracted/basic-08F.md) (83L, 0 problems) — UCLA — Fall 08 — disposition 2026-09-13: identified from the retained PDF and checked extraction as the UCLA Basic Examination, Fall 2008; ingested as `SRC-UCLA-BASIC-FALL-2008` with twelve source-order problem cards `P-UCLAB08F-01` through `P-UCLAB08F-12`. The inventory `0 problems` count was a false negative.
 
-- [ ] [basic-08S.pdf](assets/attachments/extracted/basic-08S.md) (109L, 11 problems) — no metadata
+- [x] [basic-08S.pdf](assets/attachments/extracted/basic-08S.md) (109L, 11 problems) — no metadata — disposition 2026-09-13: identified from the retained resource link and checked extraction as the UCLA Basic Examination, Spring 2008; ingested as `SRC-UCLA-BASIC-SPRING-2008` with twelve source-order problem cards `P-UCLAB08S-01` through `P-UCLAB08S-12`. The inventory count of 11 was stale.
 
-- [ ] [basic-09F.pdf](assets/attachments/extracted/basic-09F.md) (87L, 12 problems) — UCLA — applied-algebra — Fall 2009
+- [x] [basic-09F.pdf](assets/attachments/extracted/basic-09F.md) (87L, 12 problems) — UCLA — applied-algebra — Fall 2009 — disposition 2026-09-13: identified from the retained extraction as the UCLA Basic Exam, Fall 2009; ingested as `SRC-UCLA-BASIC-FALL-2009` with twelve source-order problem cards `P-UCLAB09F-01` through `P-UCLAB09F-12`. The source is a mixed Basic Examination, so the canonical collection is classified `prelim`.
 
-- [ ] [basic-09S.pdf](assets/attachments/extracted/basic-09S.md) (122L, 0 problems) — UCLA — algebra — Spring 2009
+- [x] [basic-09S.pdf](assets/attachments/extracted/basic-09S.md) (122L, 0 problems) — UCLA — algebra — Spring 2009 — disposition 2026-09-13: UCLA Basic Examination Spring 2009 ingested as `SRC-UCLA-BASIC-SPRING-2009`; all 12 numbered exam problems are represented in source order by `P-UCLAB09S-01` through `P-UCLAB09S-12`. The inventory count of 0 was a false negative, and the mixed Basic Examination is classified as `prelim` rather than algebra alone.
 
-- [ ] [basic-10F.pdf](assets/attachments/extracted/basic-10F.md) (105L, 12 problems) — UCLA — calculus — Fall 2010
+- [x] [basic-10F.pdf](assets/attachments/extracted/basic-10F.md) (105L, 12 problems) — UCLA — calculus — Fall 2010 — disposition 2026-09-13: UCLA Basic Examination Fall 2010 ingested as `SRC-UCLA-BASIC-FALL-2010`; all 12 numbered exam problems are represented in source order by `P-UCLAB10F-01` through `P-UCLAB10F-12`. Problem 4 was source-checked against the official UCLA PDF to repair the extraction’s `[0,1]` OCR corruption, and the mixed exam is classified as `prelim` rather than calculus alone.
 
-- [ ] [basic-10S.pdf](assets/attachments/extracted/basic-10S.md) (65L, 0 problems) — UCLA — applied-algebra — SPRING 2010
+- [x] [basic-10S.pdf](assets/attachments/extracted/basic-10S.md) (65L, 0 problems) — UCLA — applied-algebra — SPRING 2010 — disposition 2026-09-13: identified from the PDF as the UCLA Basic Examination, Spring 2010, and ingested as `SRC-UCLA-BASIC-SPRING-2010`; all 12 numbered problems are represented in source order by `P-UCLAB10S-01` through `P-UCLAB10S-12`. The inventory count of 0 was a false negative.
 
-- [ ] [basic-11F.pdf](assets/attachments/extracted/basic-11F.md) (93L, 2 problems) — UCLA — Fall 2011
+- [x] [basic-11F.pdf](assets/attachments/extracted/basic-11F.md) (93L, 2 problems) — UCLA — Fall 2011 — disposition 2026-09-13: identified from the PDF as the UCLA Basic Examination, Fall 2011, and ingested as `SRC-UCLA-BASIC-FALL-2011`; all 12 numbered problems are represented in source order by `P-UCLAB11F-01` through `P-UCLAB11F-12`. The inventory count of 2 was a stale extraction heuristic.
 
-- [ ] [basic-11S.pdf](assets/attachments/extracted/basic-11S.md) (99L, 20 problems) — UCLA — algebra — Spring 2011
+- [x] [basic-11S.pdf](assets/attachments/extracted/basic-11S.md) (99L, 20 problems) — UCLA — algebra — Spring 2011 — disposition 2026-09-13: UCLA Basic Examination Spring 2011 ingested as `SRC-UCLA-BASIC-SPRING-2011`; all twelve numbered exam problems are represented in source order by `P-UCLAB11S-01` through `P-UCLAB11S-12`. The inventory’s `20 problems` count split subparts/list items rather than the exam’s numbered problem units, and the source is classified as the mixed `prelim` Basic Examination rather than algebra alone.
 
-- [ ] [basic-12S.pdf](assets/attachments/extracted/basic-12S.md) (75L, 0 problems) — UCLA — WINTER 2012
+- [x] [basic-12S.pdf](assets/attachments/basic-12S_extracted.md) (74L, 12 problems) — UCLA — prelim — Winter 2012 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 9d604695d77a4ee322c0faa173ae6cdc0a142573d2ec422d212db85cf8a77e6b`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 037827096274366beeca9747cb03fb998a6c01418aea14b83a3bb4066c75dcb8`) and is locally noisier.
+  The current complete `SRC-UCLA-BASIC-WINTER-2012` collection represents all twelve source positions with source-checked cards that recover the local transcription defects, including Problem 11’s matrix.
+  Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-13F.pdf](assets/attachments/extracted/basic-13F.md) (75L, 12 problems) — UCLA — applied-algebra — Fall 2013
+- [x] [basic-13F.pdf](assets/attachments/extracted/basic-13F.md) (75L, 12 problems) — UCLA — applied-algebra — Fall 2013 — disposition 2026-09-13: identified from the retained PDF as the UCLA Basic Examination, Fall 2013; already canonical as `SRC-UCLA-BASIC-FALL-2013`, whose provenance is this PDF and whose twelve source-order cards `P-UCLAB13F-01` through `P-UCLAB13F-12` match Problems 1–12.
 
-- [ ] [basic-13S.pdf](assets/attachments/extracted/basic-13S.md) (101L, 12 problems) — UCLA — alg-geom — Spring 2013
+- [x] [basic-13S.pdf](assets/attachments/extracted/basic-13S.md) (101L, 12 problems) — UCLA — alg-geom — Spring 2013 — disposition 2026-09-13: identified from the retained PDF as the UCLA Basic Examination, Spring 2013; already canonical as `SRC-UCLA-BASIC-SPRING-2013`, whose provenance is this PDF and whose twelve source-order cards `P-UCLAB13S-01` through `P-UCLAB13S-12` match Problems 1–12.
 
-- [ ] [basic-14F.pdf](assets/attachments/extracted/basic-14F.md) (61L, 0 problems) — UCLA — FALL 2014
+- [x] [basic-14F.pdf](assets/attachments/extracted/basic-14F.md) (61L, 0 problems) — UCLA — FALL 2014 — disposition 2026-09-13: identified from the retained PDF as the UCLA Basic Examination, Fall 2014; already canonical as `SRC-UCLA-BASIC-FALL-2014`, whose provenance is this PDF and whose twelve source-order cards `P-UCLAB14F-01` through `P-UCLAB14F-12` match Problems 1–12. The inventory `0 problems` count was a false negative.
 
-- [ ] [basic-14S.pdf](assets/attachments/extracted/basic-14S.md) (107L, 12 problems) — UCLA — applied-algebra — Spring 2014
+- [x] [basic-14S.pdf](assets/attachments/basic-14S_extracted.md) (106L, 12 problems) — UCLA — prelim — Spring 2014 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 f380f0de11851fbcd1bc875c8a22ef13450735454abef0220363efdc63efdb5e`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 82e42a2774365a4be32f4b5645182bc99cd032d55153c419dfd01ba1d8b5f1f3`) and is locally noisier.
+  The current `SRC-UCLA-BASIC-SPRING-2014` collection represents all twelve source positions with source-checked cards; Problem 1’s false printed invariant-subspace assertion is now explicitly recorded in its audit metadata.
+  Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-15F.pdf](assets/attachments/extracted/basic-15F.md) (107L, 0 problems) — UCLA — calculus — FALL 2015
+- [x] [basic-15F.pdf](assets/attachments/basic-15F_extracted.md) (106L, 12 problems) — UCLA — prelim — Fall 2015 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 d485a0d84a4b1da783bc44e7f748923a7485834e458bedcc4e84247ea90753fa`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 3fb542b2f86be1936de055c12e01974011ee12a8764fba116286a0df0bb49275`) and is substantially noisier in several formulas.
+  The current complete `SRC-UCLA-BASIC-FALL-2015` collection represents all twelve source positions with source-checked cards that recover those local transcription defects.
+  Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-15S.pdf](assets/attachments/extracted/basic-15S.md) (97L, 0 problems) — UCLA — algebra — SPRING 2015
+- [x] [basic-15S.pdf](assets/attachments/basic-15S_extracted.md) (96L, 12 problems) — UCLA — prelim — Spring 2015 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 55eb4c3434bf0689df473189262f1ea5121ec740c3437658bfae4de47c965092`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 c953bd07373e82d8fba40f470a775f590519128bbc496600ee60af90a187db8c`) and is locally noisier.
+  The current complete `SRC-UCLA-BASIC-SPRING-2015` collection represents all twelve source positions with source-checked cards.
+  Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-16S.pdf](assets/attachments/extracted/basic-16S.md) (105L, 0 problems) — UCLA — algebra — SPRING 2016
+- [x] [basic-16S.pdf](assets/attachments/basic-16S_extracted.md) (104L, 12 problems) — UCLA — prelim — Spring 2016 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 7ab5faefa3f3f57fda39c7061d465de004ca0065ae3f4f4543a4ae674b3289d4`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 0b4cf1de06f74a4846332f1096120c0d7802bf7ce86d2fd6b8b11eacc3c9ace2`) and is locally noisier.
+  The current complete `SRC-UCLA-BASIC-SPRING-2016` collection represents all twelve source positions with source-checked cards.
+  Problem 3 is false as printed (already for `f≡1`), and Problem 11’s unnormalized `log det M_n` is not generally a finite real limit; both source statements are preserved rather than silently corrected.
+  Concurrent collection formatting edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-17F.pdf](assets/attachments/extracted/basic-17F.md) (93L, 0 problems) — UCLA — applied-algebra — FALL 2017
+- [x] [basic-17F.pdf](assets/attachments/basic-17F_extracted.md) (92L, 12 problems) — UCLA — prelim — Fall 2017 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 03a314781d1cad9a7b9dd2f368be158d2fb733eb8795e9df7b8e222bff6b550f`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 b2dec65c9397175307538b44b7959a1b14946f0c00bca3a5f006cb3ac97490d8`) and is locally noisier, dropping several map arrows and garbling the final Arzelà–Ascoli equivalence.
+  The complete `SRC-UCLA-BASIC-FALL-2017` collection represents all twelve source positions with source-checked cards and is banked with this intake; no fallback extraction was used.
 
-- [ ] [basic-17S.pdf](assets/attachments/extracted/basic-17S.md) (97L, 0 problems) — UCLA — algebra — SPRING 2017
+- [x] [basic-17S.pdf](assets/attachments/basic-17S_extracted.md) (96L, 12 problems) — UCLA — prelim — Spring 2017 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 62a538a96d058cdfc7b59ff2a4732bfc902579b00ea4061f5af639407a6b897c`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 50a5846a6ef410ae4377afcc78bebc4282a48f5357674f58ef340b4a01ad94a6`) and is locally noisier, dropping map arrows and introducing several notation/rendering regressions already covered by the correction ledger.
+  The complete `SRC-UCLA-BASIC-SPRING-2017` collection represents all twelve source positions with source-checked cards and is banked with this intake; no fallback extraction was used.
 
-- [ ] [basic-18F.pdf](assets/attachments/extracted/basic-18F.md) (109L, 0 problems) — UCLA — FALL 2018
+- [x] [basic-18F.pdf](assets/attachments/basic-18F_extracted.md) (108L, 12 problems) — UCLA — prelim — Fall 2018 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 d15317670997235ee0e6795b7f3873416d23761ceb0e440155961c6ccf6c564a`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 2ddaf5e969026814bb39364f0a26732da69bfa3ef72ede2379f2fa39f443de7f`) and is locally noisier, including dropped map arrows and corrupted displayed notation already covered by the correction ledger.
+  The committed complete `SRC-UCLA-BASIC-FALL-2018` collection represents all twelve source positions with source-checked cards.
+  Concurrent formatting-only collection edits are left untouched; no fallback extraction was used.
 
-- [ ] [basic-18S.pdf](assets/attachments/extracted/basic-18S.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — reclassified 2026-09-09: UCLA Basic Exam, a mixed prelim source rather than a Real Analysis collection.
+- [x] [basic-18S.pdf](assets/attachments/basic-18S_extracted.md) (78L, 12 problems) — UCLA — prelim — Spring 2018 — disposition 2026-09-15: fresh deterministic MinerU Flash v0.5.9 whole-file extraction (`SHA-256 82dba85ac8ff7f30f4135ccb03280fe53c76638201546ef833a461635822ee75`) is not byte-identical to the retained unknown-provenance Markdown (`SHA-256 8eed7e8200294f1c0af4bec3c096e2374eb5fbf8f31ac47941142bd0fb7afc47`) and is locally noisier, including corruption of the rank equation, matrix digits, and the `sqrt(n)x_n` limit already covered by the correction ledger.
+  The committed complete `SRC-UCLA-BASIC-SPRING-2018` collection represents all twelve source positions with source-checked cards.
+  Concurrent formatting-only collection edits are left untouched; no fallback extraction was used.
 
-- [ ] [DiffGeomNotes.pdf](assets/attachments/extracted/DiffGeomNotes.md) (6584L, 52 problems) — UNL — alg-geom
+- [x] [DiffGeomNotes.pdf](assets/attachments/extracted/DiffGeomNotes.md) (6584L, 52 problems) — UNL — alg-geom — disposition 2026-09-13: the retained 2017 *Introduction to Differential Geometry: Lecture Notes for MAT367* are already canonical as `SRC-MAT367-DIFFGEOM-2017`, marked complete with 35 source-checked exercise/subpart cards `E-MAT367-01` through `E-MAT367-35` in source chapter order.
+  The queue’s `52 problems` and `UNL` labels came from the old inventory heuristic; the PDF itself supplies neither that semantic count nor an institution.
+  Intake is reconciled to the canonical collection, and the first exercise now carries a checked solution.
 
-- [ ] [From Stein to Weinstein and Back.pdf](assets/attachments/extracted/From Stein to Weinstein and Back.md) (19152L, 24 problems) — UNL — alg-geom — Spring 19
+- [x] [From Stein to Weinstein and Back.pdf](assets/attachments/extracted/From Stein to Weinstein and Back.md) (19152L, 24 problems) — UNL — alg-geom — Spring 19 — disposition 2026-09-13: reference-only intake.
+  This is Cieliebak–Eliashberg’s 2012 AMS monograph on Stein/Weinstein geometry, not an exam or problem collection; its incidental exercises are not manufactured into corpus cards.
+  Added canonical bibliography entry `CE12` and linked the vendored PDF from the topology references page.
 
-- [ ] [McMullen_-_Advanced_Complex_Analysis.pdf](assets/attachments/extracted/McMullen_-_Advanced_Complex_Analysis.md) (5772L, 260 problems) — UNL — alg-geom
+- [x] [McMullen_-_Advanced_Complex_Analysis.pdf](assets/attachments/extracted/McMullen_-_Advanced_Complex_Analysis.md) (5772L, 260 problems) — Harvard — complex-analysis — 2017 — disposition 2026-09-13: C. McMullen's *Advanced Complex Analysis*, Harvard Math 213a course notes dated December 4, 2017, are complete as `SRC-HARVARD-MATH213A-2017`. The source has 156 authored exercise appearances across its opening six review exercises, three embedded exercises, and Sections 1.8, 2.5, 3.4, 4.4, and 5.5; all are represented in source order, with exact repeated problems reused rather than duplicated.
+  The inventory's `260 problems`, `UNL`, and `alg-geom` labels were stale heuristic metadata.
 
-- [ ] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019
+- [x] [Mike Symplectic Topology Notes.pdf](assets/attachments/extracted/Mike Symplectic Topology Notes.md) (5751L, 18 problems) — UGA — alg-geom — SPRING 2019 — disposition 2026-09-13: Mike Usher’s UGA Math 8230 Symplectic Topology notes, Spring 2019, ingested as `SRC-UGA-MATH8230-SPRING-2019`. The collection retains the PDF as provenance and contains all 17 actual numbered exercise headings in source order; the inventory count of 18 included a later prose cross-reference to Exercise 4.5.
 
 - [x] [Real_Analysis_Course_Notes.pdf](assets/attachments/extracted/Real_Analysis_Course_Notes.md) (3741L, 17 problems) — UNL — diff-geom — disposition 2026-09-10: expository Real Analysis course notes rather than an exam sitting; already linked from `wiki/real-analysis/resources/books-notes.md`, so no duplicate collection or problem-card intake is warranted.
 
 - [x] [UCLA_Basic_Exam_Prelim.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Prelim.md) (79L, 0 problems) — UCLA — prelim — Spring 2018 — disposition 2026-09-09: exact byte duplicate of `basic-18S.pdf` (SHA-256 `3ae97a051d30af40f6c497c68a1ebfad8ed56872cd471f4aa68c3b1ac8e19769`); ingest only the canonical `basic-18S.pdf` source.
 
-- [ ] [UCLA_Basic_Exam_Topics.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Topics.md) (59L, 18 problems) — UCLA — prelim
+- [x] [UCLA_Basic_Exam_Topics.pdf](assets/attachments/extracted/UCLA_Basic_Exam_Topics.md) (59L, 18 problems) — UCLA — prelim — disposition 2026-09-13: UCLA Basic Examination syllabus/reference sheet, not a problem source.
+  The numbered items are syllabus topics and bibliography entries, which caused the inventory’s `18 problems` false positive.
+  The PDF is already retained on `wiki/prelim/resources/topics.md`; intake stops at that syllabus resource rather than manufacturing problem cards.
 
 ## Exams with solutions (39)
 
-- [ ] [Algebra_Solutions 1.pdf](assets/attachments/extracted/Algebra_Solutions 1.md) (9243L, 16 problems) — UNL — alg-geom
+- [x] [Algebra_Solutions 1.pdf](assets/attachments/extracted/Algebra_Solutions 1.md) (9243L, 16 problems) — UNL — alg-geom — disposition 2026-09-13: byte-identical duplicate (SHA-256 `d1a960baa4663511cb1125cdfb66618bb88c5a94cf4ee946dfdbcfef18b4612f`) of `Algebra_Solutions.pdf`. This is James Wilson’s 2003 *Kleshchev Algebra Student Solution Manual*, a graduate-algebra reference/solution compendium rather than an exam source; the canonical copy is already described in `wiki/archives/solution-compendia.md`. No duplicate collection or problem cards are created.
 
-- [ ] [Algebra_Solutions.pdf](assets/attachments/extracted/Algebra_Solutions.md) (9243L, 16 problems) — UNL — alg-geom
+- [x] [Algebra_Solutions.pdf](assets/attachments/extracted/Algebra_Solutions.md) (9243L, 16 problems) — UNL — alg-geom — disposition 2026-09-13: James Wilson’s 2003 *Kleshchev Algebra Student Solution Manual*, Chapters 1–5. It is a reference/solution compendium for graduate algebra qualifying-exam preparation, not an exam source; it is already retained and described in `wiki/archives/solution-compendia.md`. `Algebra_Solutions 1.pdf` is a byte-identical duplicate, so intake stops at the existing archive enrichment rather than manufacturing a collection from textbook-style exercises.
 
 - [x] [Chernov_-_Selected_Problems_in_Real_Analysis.pdf](assets/attachments/extracted/Chernov_-_Selected_Problems_in_Real_Analysis.md) (3451L, 13 problems) — applied-algebra — May 2011 — disposition 2026-09-10: Chernov's solved Real Analysis problem collection, not a single exam sitting; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource rather than manufacturing an exam collection.
 
-- [ ] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011
+- [x] [complex_prelim.pdf](assets/attachments/extracted/complex_prelim.md) (1159L, 14 problems) — applied-algebra — Fall 2011 — disposition 2026-09-13: Cihan Bahran’s 2013 University of Minnesota complex-analysis prelim solution compilation is already canonical as `SRC-UMN-COMPLEX-PRELIM-BAHRAN-2013`. The collection retains this PDF as provenance and represents all 33 source-selected problems in its seven technique sections; the inventory count of 14 was only an extraction heuristic.
+  The collection also records the packet’s repeated Fall 2009 Problem 5 and combined exam labels without manufacturing duplicate cards.
 
-- [ ] [Complex_Qual_Notes.pdf](assets/attachments/extracted/Complex_Qual_Notes.md) (741L, 0 problems) — complex-analysis
+- [x] [Complex_Qual_Notes.pdf](assets/attachments/extracted/Complex_Qual_Notes.md) (741L, 0 problems) — complex-analysis — disposition 2026-09-13: Josh Swanson’s *2013 Complex Prelim Notes* are reference/review notes, not a problem collection.
+  The source consists of theorem statements, proof ideas, definitions, examples, and conformal-mapping review; no exercise/problem section is present.
+  It is already retained and described on `wiki/complex-analysis/resources/books-notes.md`, so intake stops at that resource enrichment rather than manufacturing problem cards.
 
-- [ ] [f05solution.pdf](assets/attachments/extracted/f05solution.md) (320L, 0 problems) — applied-algebra — FALL 2005
+- [x] [f05solution.pdf](assets/attachments/extracted/f05solution.md) (320L, 0 problems) — applied-algebra — FALL 2005 — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Fall 2005, solution packet; already canonical as `SRC-BERKELEY-PRELIM-FALL-2005`, whose provenance is this PDF and whose 18 cards represent Problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
-- [ ] [f07solution.pdf](assets/attachments/extracted/f07solution.md) (231L, 0 problems) — complex-analysis — FALL 2007
+- [x] [f07solution.pdf](assets/attachments/extracted/f07solution.md) (231L, 0 problems) — complex-analysis — FALL 2007 — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Fall 2007, solution packet; already canonical as `SRC-BERKELEY-PRELIM-FALL-2007`, whose provenance is this PDF and whose 18 cards represent Problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
-- [ ] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra
+- [x] [Fall_2014_Solutions.pdf](assets/attachments/extracted/Fall_2014_Solutions.md) (319L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: solution packet for the UC Berkeley Graduate Preliminary Examination, Fall 2014; already canonical as `SRC-BERKELEY-PRELIM-FALL-2014`, which retains both exam and solution PDFs as provenance and contains all 18 source-order problems 1A–9A and 1B–9B.
 
 - [x] [fall-2018-prelim.pdf](assets/attachments/extracted/fall-2018-prelim.md) (315L, 18 problems) — Berkeley — prelim — disposition 2026-09-11: ingested as `SRC-BERKELEY-PRELIM-FALL-2018`; the Fall 2018 two-part Graduate Preliminary Examination contains 18 problems across calculus, real analysis, complex analysis, linear algebra, and abstract algebra, represented in paper order by `P-BKF18-1A` through `P-BKF18-9B`.
 
@@ -382,7 +675,7 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.pdf](assets/attachments/extracted/Ma_-_A_NOTE_FOR_REAL_ANALYSIS_QUALIFYING_EXAM_IN_TAMU.md) (2116L, 19 problems) — TAMU — applied-algebra — January 2017 — disposition 2026-09-10: Xin Ma's derivative solution notes for TAMU Real Analysis qualifying exams, not an original exam source; already linked from `wiki/real-analysis/resources/solutions.md`, so no duplicate collection is warranted.
 
-- [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1788L, 0 problems) — UCSD — applied-algebra — December 2017 — disposition 2026-09-10: Jacob S. Townson's derivative solutions to University of Louisville analysis quals, not an original exam paper; already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
+- [x] [my-solutions-to-old-analysis-quals.pdf](assets/attachments/extracted/my-solutions-to-old-analysis-quals.md) (1758L, derivative solutions/reference) — University of Louisville — real-analysis — August–December 2017 — disposition 2026-09-16: re-extracted deterministically with MinerU Flash v0.5.9 in page ranges 1–20 and 21–27 after the whole-file request hit the 20-page Flash limit. The fresh baseline was read in full and confirms Jacob S. Townson's derivative solutions to University of Louisville analysis quals plus review notes, not an original exam paper; it is already linked from `wiki/real-analysis/resources/solutions.md`, so retain it as a solutions resource.
 
 - [x] [prelimsolutions_0.pdf](assets/attachments/extracted/prelimsolutions_0.md) (280L, 18 problems) — Berkeley — prelim — Spring 2021 — disposition 2026-09-11: official two-part online Graduate Preliminary Examination with solutions; ingested as `SRC-BERKELEY-PRELIM-SPRING-2021`, with all 18 problem statements represented in source order by `P-BKS21-1A` through `P-BKS21-9B`.
 
@@ -398,179 +691,206 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [s07solution.pdf](assets/attachments/extracted/s07solution.md) (309L, 18 problems) — Berkeley — prelim solutions — Spring 2007 — disposition 2026-09-11: derivative solution edition of the separately vendored original exam `s07.pdf`; already linked from `wiki/prelim/problems/berkeley-prelims.md`, so retain it as a solutions resource and perform card intake from the original exam entry instead.
 
-- [ ] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders**
+- [x] [s08solution.pdf](assets/attachments/extracted/s08solution.md) (275L, 0 problems) — applied-algebra — SPRING 2008 **OCR: image placeholders** — disposition 2026-09-13: identified as the UC Berkeley Graduate Preliminary Examination, Spring 2008, solution packet; already canonical as `SRC-BERKELEY-PRELIM-SPRING-2008`. The collection uses this PDF as provenance and contains all 18 source-order problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
-- [ ] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010
+- [x] [s10solutions.pdf](assets/attachments/extracted/s10solutions.md) (179L, 0 problems) — applied-algebra — spring 2010 — disposition 2026-09-13: identified from the retained packet as the UC Berkeley Graduate Preliminary Examination, Spring 2010, with solutions; already canonical as `SRC-BERKELEY-PRELIM-SPRING-2010`. The collection uses this PDF as provenance and contains all 18 source-order problems 1A–9A and 1B–9B. The inventory `0 problems` count was a false negative.
 
 - [x] [Sp13_Exam.pdf](assets/attachments/extracted/Sp13_Exam.md) (305L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: UC Berkeley Spring 2013 Graduate Preliminary Examination ingested as `SRC-BERKELEY-PRELIM-SPRING-2013`; all 18 problems `1A`–`9B` are represented in exam order as `P-BKS13-1A` through `P-BKS13-9B`. The prior count of eleven came from lost extraction headings.
 
-- [ ] [Sp14_Exam.pdf](assets/attachments/extracted/Sp14_Exam.md) (255L, 8 problems) — Berkeley — applied-algebra
+- [x] [Sp14_Exam.pdf](assets/attachments/extracted/Sp14_Exam.md) (255L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: identified from the PDF as the UC Berkeley Graduate Preliminary Examination, Spring 2014, and ingested as `SRC-BERKELEY-PRELIM-SPRING-2014`; all 18 source-order Problems 1A–9A and 1B–9B are represented by `P-BKS14-1A` through `P-BKS14-9B`. The inventory count of 8 was stale.
 
-- [ ] [Sp14_Solutions.pdf](assets/attachments/extracted/Sp14_Solutions.md) (337L, 8 problems) — Berkeley — applied-algebra
+- [x] [Sp14_Solutions.pdf](assets/attachments/extracted/Sp14_Solutions.md) (337L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: solution packet for the same complete `SRC-BERKELEY-PRELIM-SPRING-2014` collection; retained as provenance beside the exam PDF, with no duplicate cards created.
 
-- [ ] [Sp15_Exam.pdf](assets/attachments/extracted/Sp15_Exam.md) (329L, 8 problems) — Berkeley — complex-analysis
+- [x] [Sp15_Exam.pdf](assets/attachments/extracted/Sp15_Exam.md) (329L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-13: identified from the retained PDF as the UC Berkeley Graduate Preliminary Examination, Spring 2015, and ingested as `SRC-BERKELEY-PRELIM-SPRING-2015`. The source contains 18 problems, Part A 1A–9A followed by Part B 1B–9B; fifteen are source-local cards and Problems 4A, 4B, and 5B reuse canonical cards `P-BKF20-5A`, `P-3A7RU`, and `P-BKS09-3A`. The inventory count of 8 was incomplete.
 
-- [ ] [Sp15_Solutions.pdf](assets/attachments/extracted/Sp15_Solutions.md) (435L, 8 problems) — Berkeley — alg-geom
+- [x] [Sp15_Solutions.pdf](assets/attachments/extracted/Sp15_Solutions.md) (435L, 8 problems) — Berkeley — alg-geom — disposition 2026-09-13: companion solution packet for the complete `SRC-BERKELEY-PRELIM-SPRING-2015` collection.
+  It states and solves the same 18 Part A/B problems as the exam PDF and is retained as provenance beside that paper; no duplicate solution collection or problem cards are created.
 
-- [ ] [Spring_2019_prelim.pdf](assets/attachments/extracted/Spring_2019_prelim.md) (313L, 8 problems) — Berkeley — applied-algebra
+- [x] [Spring_2019_prelim.pdf](assets/attachments/extracted/Spring_2019_prelim.md) (313L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: reconciled to `SRC-BERKELEY-PRELIM-SPRING-2019`, which contains all 18 source-order Part A/B problems and records this exam PDF as provenance.
 
-- [ ] [Spring_2019_prelim_solutions.pdf](assets/attachments/extracted/Spring_2019_prelim_solutions.md) (385L, 8 problems) — Berkeley — applied-algebra
+- [x] [Spring_2019_prelim_solutions.pdf](assets/attachments/extracted/Spring_2019_prelim_solutions.md) (385L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-13: solution packet for the same complete `SRC-BERKELEY-PRELIM-SPRING-2019` collection; retained there as provenance beside the exam PDF, with no duplicate cards created.
 
-- [ ] [Spring88.pdf](assets/attachments/extracted/Spring88.md) (83L, 2 problems) — UNL — algebra — Spring 19
+- [x] [Spring88.pdf](assets/attachments/extracted/Spring88.md) (83L, 2 problems) — UNL — algebra — Spring 19 — disposition 2026-09-13: identified from the PDF as the UC Berkeley Spring 1988 Preliminary Exam and ingested as `SRC-BERKELEY-PRELIM-SPRING-1988`, with all twenty Problems 1–20 represented in source order by `P-BKS88-1` through `P-BKS88-20`. The inventory metadata/count were stale: the source is Berkeley prelim material and contains 20 numbered problems, not 2.
 
-- [ ] [Spring94.pdf](assets/attachments/extracted/Spring94.md) (89L, 7 problems) — algebra — Spring 19
+- [x] [Spring94.pdf](assets/attachments/extracted/Spring94.md) (89L, 7 problems) — algebra — Spring 19 — disposition 2026-09-13: already complete as `SRC-BERKELEY-PRELIM-SPRING-1994`; the collection records the vendored PDF as provenance and contains all 18 source-order problems, each source-checked against the Berkeley Spring 1994 exam.
+  The inventory count of 7 problems is a stale extraction heuristic; the source has Problems 1–18.
 
-- [ ] [Study_Guide_for_Algebra.pdf](assets/attachments/extracted/Study_Guide_for_Algebra.md) (919L, 11 problems) — UNL — algebra — January 2012
+- [x] [Study_Guide_for_Algebra.pdf](assets/attachments/extracted/Study_Guide_for_Algebra.md) (919L, 11 problems) — UNL — algebra — January 2012 — disposition 2026-09-13: identified from the PDF itself as the Amherst College Department of Mathematics and Statistics **Study Guide for Algebra**, September 2016. The inventory metadata and `11 problems` count were stale: the guide contains 31 numbered old-exam examples with worked proofs.
+  Ingested as `SRC-AMHERST-ALGEBRA-STUDY-GUIDE-2016`, with source-order cards `P-AMH-ALG-SG16-01` through `P-AMH-ALG-SG16-31` grouped by the guide's group/permutation/ring/polynomial sections.
 
-- [ ] [Summer80.pdf](assets/attachments/extracted/Summer80.md) (163L, 13 problems) — complex-analysis — Summer 19
+- [x] [Summer80.pdf](assets/attachments/extracted/Summer80.md) (163L, 13 problems) — complex-analysis — Summer 19 — disposition 2026-09-12: Berkeley Preliminary Exam, Summer 1980, ingested as `SRC-BERKELEY-PRELIM-SUMMER-1980` with twenty source-order cards `P-BERK80S-01` through `P-BERK80S-20`. The inventory count of 13 was incomplete; the PDF explicitly contains Problems 1–20. OCR-sensitive matrix equations in Problems 2 and 14 are preserved/checked against rendered PDF source pages.
 
-- [ ] [Summer84.pdf](assets/attachments/extracted/Summer84.md) (149L, 6 problems) — algebra — Summer 19
+- [x] [Summer84.pdf](assets/attachments/extracted/Summer84.md) (149L, 6 problems) — algebra — Summer 19 — disposition 2026-09-12: Berkeley Preliminary Exam, Summer 1984, ingested as `SRC-BERKELEY-PRELIM-SUMMER-1984` with twenty source-order cards `P-BERK84S-01` through `P-BERK84S-20`. The inventory count of 6 was a false negative: the PDF explicitly contains Problems 1–20; PDF text-layer checks repaired the OCR of Problem 13 (`2×2`, not `Q×Q`) and restored Problem 20 as the final real-line integral.
 
 - [x] [Texas_Solns.pdf](assets/attachments/extracted/Texas_Solns.md) (6265L, 15 problems) — TAMU — applied-algebra — August 29 — disposition 2026-09-11: canonical retained copy of Kari Eifler's *Solutions to Texas A&M's Real Analysis Qual Courses*. It is already linked from `wiki/real-analysis/resources/solutions.md`; this derivative solutions packet is not an original exam sitting, so intake stops at the existing resource representation rather than creating a duplicate qualifying-exam collection.
 
-- [ ] [TopologySept19solutions.pdf](assets/attachments/extracted/TopologySept19solutions.md) (255L, 0 problems) — diff-geom — FALL 2019 **OCR: image placeholders**
+- [x] [TopologySept19solutions.pdf](assets/attachments/extracted/TopologySept19solutions.md) (255L, 0 problems) — diff-geom — FALL 2019 **OCR: image placeholders** — disposition 2026-09-12: University of Oregon Fall 2019 Topology Qualifying Exam solution packet, ingested as `SRC-UO-TOP-FALL-2019` with ten source-order problem cards `P-UOT19-01` through `P-UOT19-10`; the inventory `0 problems` count was a false negative caused by the solution-packet extraction layout.
+  Diagram-dependent prompts retain rendered source pages.
 
-- [ ] [UCLA_Solutions.pdf](assets/attachments/extracted/UCLA_Solutions.md) (11367L, 13 problems) — UCLA — applied-algebra — January 25
+- [x] [UCLA_Solutions.pdf](assets/attachments/extracted/UCLA_Solutions.md) (11367L, 13 problems) — UCLA — applied-algebra — January 25 — disposition 2026-09-13: UCLA Analysis Qualifying Exam Solutions compendium (updated January 25, 2019), covering twenty sittings from Spring 2009 through Fall 2018. Existing corpus collections already represented Spring 2009 through Spring 2014. Intake completed the remaining nine sittings as `SRC-UCLA-RA-FALL-2014`, `SRC-UCLA-RA-SPRING-2015`, `SRC-UCLA-RA-FALL-2015`, `SRC-UCLA-RA-SPRING-2016`, `SRC-UCLA-RA-FALL-2016`, `SRC-UCLA-RA-SPRING-2017`, `SRC-UCLA-RA-FALL-2017`, `SRC-UCLA-RA-SPRING-2018`, and `SRC-UCLA-RA-FALL-2018`, with twelve source-order problem cards in each.
+  Official UCLA exam PDFs were used to source-check seven text-bearing sittings; Fall 2014 and Fall 2015 are image-only and were transcribed from the retained compendium.
+  The inventory count `13 problems` counted OCR headings rather than the compendium contents and was not a source count.
 
 ## Final exams (1)
 
-- [ ] [Spring2020Final.pdf](assets/attachments/extracted/Spring2020Final.md) (47L, 6 problems) — UNL — complex-analysis — Spring 2020
+- [x] [Spring2020Final.pdf](assets/attachments/extracted/Spring2020Final.md) (47L, 6 problems) — UNL — complex-analysis — Spring 2020 — disposition 2026-09-12: the queue institution label was incorrect; the source is UGA MATH 8150 Spring 2020 Final Exam (Jingzhi Tie), ingested as `SRC-UGA-MATH8150-SPRING-2020-FINAL`. Five source-local cards represent Problems 1–3 and 5–6; Problem 4 exactly reuses canonical `P-XKOQR` from UGA Fall 2019.
 
 ## Midterm exams (4)
 
-- [ ] [Group_Theory_(No_Solns).pdf](assets/attachments/extracted/Group_Theory_(No_Solns).md) (87L, 20 problems) — algebra
+- [x] [Group_Theory_(No_Solns).pdf](assets/attachments/extracted/Group_Theory_(No_Solns).md) (87L, 20 problems) — algebra — disposition 2026-09-12: ingested as complete `SRC-MA553-MIDTERM-I-SAMPLE-PROBLEMS`; all 20 source problems are represented in order, with Problem 13 reusing canonical `P-ALGFINAL11-01` and the remaining 19 represented by `P-MA553-MID1-*` cards.
 
-- [ ] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013
+- [x] [MATH871-Exam-Review-Sheets.pdf](assets/attachments/extracted/MATH871-Exam-Review-Sheets.md) (265L, 1 problems) — UNL — topology — Fall 2013 — disposition 2026-09-12: UNL Math 871 Fall 2013 exam-review sheets listing vocabulary, theorem statements, study tasks, and references to textbook/problem-set exercises rather than presenting a standalone authored problem collection.
+  Already retained at `wiki/topology/resources/books-notes.md`; reference-only intake stops there, with no duplicate cards manufactured.
 
 - [x] [Real_Analysis_Review_Midterm.pdf](assets/attachments/extracted/Real_Analysis_Review_Midterm.md) (163L, 0 problems) — diff-geom — disposition 2026-09-10: MAT 320 practice midterm/review sheet with solutions rather than a qualifying-exam sitting; already linked from `wiki/prelim/resources/references.md`, so no qual collection is appropriate.
 
-- [ ] [Spring2020Midterm.pdf](assets/attachments/extracted/Spring2020Midterm.md) (45L, 6 problems) — UGA — complex-analysis — Spring 2020
+- [x] [Spring2020Midterm.pdf](assets/attachments/extracted/Spring2020Midterm.md) (45L, 6 problems) — UGA — complex-analysis — Spring 2020 — disposition 2026-09-12: UGA MATH 8150 Spring 2020 Midterm ingested as `SRC-UGA-MATH8150-SPRING-2020-MIDTERM` with all six source-order problems.
+  Problems 1, 2, and 6 reuse canonical corpus cards; Problems 3–5 are source-local cards `P-UGA8150S20-MID-03` through `P-UGA8150S20-MID-05`. The resource-page label was corrected from Spring 2021 to Spring 2020.
 
 ## Practice exams (2)
 
-- [ ] [calculus_practice_test3.pdf](assets/attachments/extracted/calculus_practice_test3.md) (151L, 9 problems) — no metadata **OCR: image placeholders**
+- [x] [calculus_practice_test3.pdf](assets/attachments/extracted/calculus_practice_test3.md) (151L, 9 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: undergraduate calculus multiple-choice practice material, already retained at `wiki/prelim/resources/problems.md`. The prior Queue-E audit (`queues/E-batch-03.md`) explicitly classifies it as “not a collection candidate,” and `queues/E-corrections.md` records numerous scanner gaps/unreadable stems.
+  Reference-only intake therefore stops at the existing resource representation; no qualifying-exam collection or cards are manufactured.
 
-- [ ] [multivariable_calculus.pdf](assets/attachments/extracted/multivariable_calculus.md) (127L, 6 problems) — no metadata **OCR: image placeholders**
+- [x] [multivariable_calculus.pdf](assets/attachments/extracted/multivariable_calculus.md) (127L, 6 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: undergraduate multivariable-calculus multiple-choice practice material with an answer key, already retained as “Multivariable-calculus practice” on `wiki/prelim/resources/solutions.md`. This is reference/practice material rather than a qualifying-exam source, so intake stops at the existing resource representation; no qual cards manufactured.
 
 ## Exam or problem set (1)
 
-- [ ] [871-872January_2006_852-871.pdf](assets/attachments/extracted/871-872January_2006_852-871.md) (39L, 0 problems) — topology
+- [x] [871-872January_2006_852-871.pdf](assets/attachments/extracted/871-872January_2006_852-871.md) (39L, 0 problems) — topology — disposition 2026-09-12: UNL Mathematics Qualifying Exam 852/970, January 2006, ingested as `SRC-UNL-QUAL-852-970-JANUARY-2006`. The inventory zero was a false negative: the paper has ten questions.
+  Section A is represented by new cards `P-UNL852970-06A1` through `P-UNL852970-06A5`; Section B is verbatim the first five questions of `SRC-TOP-UNL-2006Q1` and reuses `P-T06Q1-1` through `P-T06Q1-5`.
 
 ## Workshop materials (6)
 
-- [ ] [day_1_compactness.pdf](assets/attachments/extracted/day_1_compactness.md) (31L, 9 problems) — topology — June 2011
+- [x] [day_1_compactness.pdf](assets/attachments/extracted/day_1_compactness.md) (31L, 9 problems) — topology — June 2011 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as `Revised packet — Compactness`. Its three warm-ups and nine numbered problems are represented in source order by the twelve listed workshop/canonical cards; the PDF is already collection provenance.
 
-- [ ] [day_2_connected_path_connnected.pdf](assets/attachments/extracted/day_2_connected_path_connnected.md) (31L, 10 problems) — topology — June 2004
+- [x] [day_2_connected_path_connnected.pdf](assets/attachments/extracted/day_2_connected_path_connnected.md) (31L, 10 problems) — topology — June 2004 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as `Revised packet — Connectedness and path connectedness`. Its two warm-ups and ten numbered problems are represented in source order by the twelve listed workshop/canonical cards; the PDF is already collection provenance.
 
-- [ ] [day_4_homotopy_retractions.pdf](assets/attachments/extracted/day_4_homotopy_retractions.md) (39L, 8 problems) — topology — June 2014
+- [x] [day_4_homotopy_retractions.pdf](assets/attachments/extracted/day_4_homotopy_retractions.md) (39L, 8 problems) — topology — June 2014 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Homotopy and retractions` section.
+  Its two warm-ups and eight numbered problems are represented in source order by the ten listed workshop/canonical cards; the vendored PDF is already collection provenance.
 
-- [ ] [day_5_fundamental_group.pdf](assets/attachments/extracted/day_5_fundamental_group.md) (33L, 9 problems) — topology — June 2005 **OCR: image placeholders**
+- [x] [day_5_fundamental_group.pdf](assets/attachments/extracted/day_5_fundamental_group.md) (33L, 9 problems) — topology — June 2005 **OCR: image placeholders** — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Fundamental group` section.
+  The three warm-ups, seven numbered problems, and two covering-space bonus problems are represented in source order by the twelve listed workshop/canonical cards; the vendored PDF is already collection provenance.
 
-- [ ] [day_6_covering_spaces.pdf](assets/attachments/extracted/day_6_covering_spaces.md) (31L, 11 problems) — topology — June 2005
+- [x] [day_6_covering_spaces.pdf](assets/attachments/extracted/day_6_covering_spaces.md) (31L, 11 problems) — topology — June 2005 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Covering spaces` section.
+  Its two warm-ups and eleven numbered problems are represented one-for-one in source order by the thirteen listed workshop/canonical cards, and the vendored PDF is already collection provenance; no duplicate cards needed.
 
-- [ ] [day_7_homology.pdf](assets/attachments/extracted/day_7_homology.md) (29L, 10 problems) — topology — June 2005
+- [x] [day_7_homology.pdf](assets/attachments/extracted/day_7_homology.md) (29L, 10 problems) — topology — June 2005 — disposition 2026-09-12: already reconciled in `SRC-TOP-WORKSHOP` as the `Revised packet — Homology` section.
+  Its two warm-ups and ten numbered problems are represented in source order by the twelve listed workshop/canonical cards, and the vendored PDF is already collection provenance; no duplicate cards needed.
 
 ## Problem sets (14)
 
-- [ ] [basic-06S.pdf](assets/attachments/extracted/basic-06S.md) (71L, 0 problems) — no metadata
+- [x] [basic-06S.pdf](assets/attachments/extracted/basic-06S.md) (71L, 0 problems) — no metadata — disposition 2026-09-12: UCLA Basic Examination Spring 2006, already ingested completely as `SRC-UCLA-BASIC-SPRING-2006`; all ten source problems are represented in order by `P-UCLAB06S-01` through `P-UCLAB06S-10`.
 
-- [ ] [basic-16F.pdf](assets/attachments/extracted/basic-16F.md) (100L, 0 problems) — no metadata
+- [x] [basic-16F.pdf](assets/attachments/extracted/basic-16F.md) (100L, 0 problems) — no metadata — disposition 2026-09-12: UCLA Basic Examination Fall 2016, already ingested completely as `SRC-UCLA-BASIC-FALL-2016`; all twelve source problems are represented in order by `P-UCLAB16F-01` through `P-UCLAB16F-12`.
 
-- [ ] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata
+- [x] [Chapter3-notes1.pdf](assets/attachments/extracted/Chapter3-notes1.md) (35L, 0 problems) — no metadata — disposition 2026-09-12: reference-only 2015 notes on convergent sequences, subsequences, and subsequential limits in metric spaces.
+  Repository intake notes classify this as reference notes rather than a collection candidate; the existing real-analysis resource link has been annotated and no problem cards manufactured.
 
-- [ ] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology
+- [x] [Collection_of_Analysis_Theorems.pdf](assets/attachments/extracted/Collection_of_Analysis_Theorems.md) (669L, 29 problems) — topology — disposition 2026-09-12: reference-only Joshua Ruiter *Theorems: Real Analysis* notes (March 2018). The inventory problem count is a false positive from numbered theorem statements; repository intake notes classify this as reference notes, not a collection candidate.
+  Added to `vocabularies/references.bib` as `Ruiter18AnalysisTheorems` and to the real-analysis books/notes resource page; no problem cards manufactured.
 
-- [ ] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis
+- [x] [F15_Solutions.pdf](assets/attachments/extracted/F15_Solutions.md) (191L, 0 problems) — complex-analysis — disposition 2026-09-12: already reconciled with `SRC-BERKELEY-PRELIM-FALL-2015`, whose provenance includes both `F15_Exam.pdf` and this solution packet.
+  The paired exam confirms the complete 18-problem sequence 1A–9A and 1B–9B, exactly matching the collection cards.
 
 - [x] [Folland Clipped Questions.pdf](assets/attachments/extracted/Folland Clipped Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: exact byte duplicate of `Folland_Clipped_Questions.pdf` (SHA-256 `e775d4915cbacc566da3d2731cc938692f9f57a45a2dc262cb8a5041ba95ec10`). The resource page already links the underscore-named copy, so no second collection or resource entry is warranted.
 
 - [x] [Folland_Clipped_Questions.pdf](assets/attachments/extracted/Folland_Clipped_Questions.md) (858L, 79 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland Clipped Questions.pdf`; already linked from `wiki/real-analysis/resources/problems.md`. This is a clipped textbook-exercise resource rather than an exam sitting, so intake stops at the existing resource link rather than manufacturing a qualifying-exam collection.
 
-- [ ] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra
+- [x] [Nori_Galois_Theory_Problems.pdf](assets/attachments/extracted/Nori_Galois_Theory_Problems.md) (225L, 0 problems) — algebra — disposition 2026-09-12: already ingested completely as `SRC-NORI-GALOIS-THEORY-PROBLEMS`. A direct recount finds 42 numbered source problems across Sections 2–7 and exactly the same 42 collection entries, with no missing or extra IDs.
 
-- [ ] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom
+- [x] [Problems_in_Algebraic_Topology_-_Unknown.pdf](assets/attachments/extracted/Problems_in_Algebraic_Topology_-_Unknown.md) (123L, 0 problems) — alg-geom — disposition 2026-09-12: identified as Laurentiu Maxim’s *Problems in Algebraic Topology* and already ingested completely as `SRC-MAXIM-PROBLEMS-ALGEBRAIC-TOPOLOGY`. The source contains 52 numbered problems across six sections, and `just list-cards` reports exactly 52 source-checked collection entries.
 
 - [x] [Giant_List_of_Problems.pdf](assets/attachments/extracted/Giant_List_of_Problems.md) (509L, 0 problems) — real-analysis — October 2012 — disposition 2026-09-09: canonical copy of the byte-identical pair with `PrincetonQuestions.pdf` (SHA-256 `9ef5c3fee6a62b2eb412ef4af6f0b40619821f25e0e0144702a2ba7b0f39d0c7`). This is a topic-organized Real Analysis question/reference bank rather than an exam sitting, and it is already linked from `wiki/real-analysis/resources/problems.md`; intake stops at that existing resource representation rather than manufacturing a qualifying-exam collection.
 
-- [ ] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014
+- [x] [Math_872_-*Section_1*-*Spring_2014*-_Problem_sets_page.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.md) (253L, 0 problems) — topology — Spring 2014 — disposition 2026-09-12: already ingested completely as `SRC-UNL-MATH872-SPRING-2014-PROBLEM-SETS`. A direct source-label recount finds 52 distinct assignments (`6.A.1` through `12.B.3`, including PP.1–PP.5), exactly matching the 52 source-order collection entries.
 
-- [x] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: mixed-source Measure Theory question bank, not a single qualifying-exam sitting. Its introduction states that problems are drawn from Stein--Shakarchi and Carothers as well as CUNY Graduate Center qualifying exams, with color coding distinguishing textbook-only questions from questions seen on quals; that visual provenance is not faithfully retained by the markdown extraction. The canonical PDF is already linked from `wiki/real-analysis/resources/problems.md`, so intake stops at the existing resource representation rather than creating cards with false or erased source attribution.
+- [x] [Measure_Theory_Qual_Problems.pdf](assets/attachments/extracted/Measure_Theory_Qual_Problems.md) (681L, 49 problems) — real-analysis **OCR: image placeholders** — disposition 2026-09-09: mixed-source Measure Theory question bank, not a single qualifying-exam sitting.
+  Its introduction states that problems are drawn from Stein--Shakarchi and Carothers as well as CUNY Graduate Center qualifying exams, with color coding distinguishing textbook-only questions from questions seen on quals; that visual provenance is not faithfully retained by the markdown extraction.
+  The canonical PDF is already linked from `wiki/real-analysis/resources/problems.md`, so intake stops at the existing resource representation rather than creating cards with false or erased source attribution.
 
 - [x] [PrincetonQuestions.pdf](assets/attachments/extracted/PrincetonQuestions.md) (509L, 0 problems) — real-analysis — October 2012 — exact byte duplicate of `Giant_List_of_Problems.pdf` (same SHA-256); do not create a second collection
 
-- [ ] [Ring_Theory_Qual_Problems.pdf](assets/attachments/extracted/Ring_Theory_Qual_Problems.md) (539L, 141 problems) — algebra — August 29
+- [x] [Ring_Theory_Qual_Problems.pdf](assets/attachments/extracted/Ring_Theory_Qual_Problems.md) (539L, 141 problems) — algebra — August 29 — disposition 2026-09-12: reconciled with `SRC-KENT-STATE-RING-THEORY-QUAL-2017`, which contains all 141 source-order ring-theory qualifying-exam problems.
 
 ## Homework assignments (53)
 
-- [ ] [603_11.pdf](assets/attachments/extracted/603_11.md) (217L, 0 problems) — UNL — applied-algebra
+- [x] [603_11.pdf](assets/attachments/extracted/603_11.md) (217L, 0 problems) — UNL — applied-algebra — disposition 2026-09-12: exact byte duplicate of `Algebra_HW_11_Solns.pdf` (SHA-256 `a1a7fe73b51ba280adb4cd185a7f0234dbbb3bf7da7e8675a9a68281b13ac6b9`); no duplicate collection needed.
 
-- [ ] [8150-hw1.pdf](assets/attachments/extracted/8150-hw1.md) (81L, 10 problems) — UGA — complex-analysis
+- [x] [8150-hw1.pdf](assets/attachments/extracted/8150-hw1.md) (81L, 10 problems) — UGA — complex-analysis — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8150-SPRING-2021-HW1`, containing all ten source-order complex-analysis homework problems.
 
-- [ ] [8150-hw2.pdf](assets/attachments/extracted/8150-hw2.md) (77L, 12 problems) — UGA — complex-analysis
+- [x] [8150-hw2.pdf](assets/attachments/extracted/8150-hw2.md) (77L, 12 problems) — UGA — complex-analysis — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8150-SPRING-2021-HW2`, containing all twelve source-order complex-analysis homework problems.
 
-- [ ] [8150-hw3.pdf](assets/attachments/extracted/8150-hw3.md) (83L, 11 problems) — UGA — complex-analysis
+- [x] [8150-hw3.pdf](assets/attachments/extracted/8150-hw3.md) (83L, 11 problems) — UGA — complex-analysis — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8150-SPRING-2021-HW3`, containing all eleven source-order complex-analysis homework problems.
 
-- [ ] [871-872June_2004_852-871.pdf](assets/attachments/extracted/871-872June_2004_852-871.md) (51L, 0 problems) — topology
+- [x] [871-872June_2004_852-871.pdf](assets/attachments/extracted/871-872June_2004_852-871.md) (51L, 0 problems) — topology — disposition 2026-09-12: reconciled with `SRC-UNL-QUAL-JUNE-2004-970-852`; direct intake contains ten source-order qualifying-exam problems, correcting the inventory zero.
 
-- [ ] [Adam Syllabus.pdf](assets/attachments/extracted/Adam Syllabus.md) (58L, 0 problems) — UGA — diff-geom — Fall 2018
+- [x] [Adam Syllabus.pdf](assets/attachments/extracted/Adam Syllabus.md) (58L, 0 problems) — UGA — diff-geom — Fall 2018 — disposition 2026-09-12: reference-only Adam Saltz UGA Math 8210 Topology of Manifolds Fall 2018 syllabus; it describes course objectives, texts, and homework policy but contains no authored exercises.
+  Added to `vocabularies/references.bib` as `Saltz18Math8210Syllabus`; no cards manufactured.
 
-- [ ] [AG Exam Problems.pdf](assets/attachments/extracted/AG Exam Problems.md) (67L, 6 problems) — UNL — alg-geom — August 2015
+- [x] [AG Exam Problems.pdf](assets/attachments/extracted/AG Exam Problems.md) (67L, 6 problems) — UNL — alg-geom — August 2015 — disposition 2026-09-12: reconciled with `SRC-AG-EXAM-PROBLEMS-2015`, containing all six source-order algebraic-geometry exam problems.
 
-- [ ] [Algebra_HW_11_Solns.pdf](assets/attachments/extracted/Algebra_HW_11_Solns.md) (217L, 0 problems) — UNL — applied-algebra
+- [x] [Algebra_HW_11_Solns.pdf](assets/attachments/extracted/Algebra_HW_11_Solns.md) (217L, 0 problems) — UNL — applied-algebra — disposition 2026-09-12: reconciled with `SRC-SHONKWILER-ALGEBRA-HW11`, containing all six source-order homework problems represented by this solution packet.
 
-- [ ] [Algebra_HW_4_Solns.pdf](assets/attachments/extracted/Algebra_HW_4_Solns.md) (351L, 0 problems) — algebra
+- [x] [Algebra_HW_4_Solns.pdf](assets/attachments/extracted/Algebra_HW_4_Solns.md) (351L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-SHONKWILER-ALGEBRA-HW4`, containing all seven source-order homework problems represented by this solution packet.
 
-- [ ] [Algebra_Notes.pdf](assets/attachments/extracted/Algebra_Notes.md) (972L, 74 problems) — algebra
+- [x] [Algebra_Notes.pdf](assets/attachments/extracted/Algebra_Notes.md) (972L, 74 problems) — algebra — disposition 2026-09-12: reference-only Kari Eifler algebra qualifying-exam definitions/theorems notes dated August 9, 2017. Added to `vocabularies/references.bib` as `Eifler17AlgebraQualNotes`; numbered definitions and propositions are not manufactured into problem cards.
 
-- [ ] [analysis_notes_eamonqg.pdf](assets/attachments/extracted/analysis_notes_eamonqg.md) (1041L, 0 problems) — applied-algebra
+- [x] [analysis_notes_eamonqg.pdf](assets/attachments/extracted/analysis_notes_eamonqg.md) (1041L, 0 problems) — applied-algebra — disposition 2026-09-12: reference-only Eamon Quinlan analysis review notes dated April 24, 2018. Added to `vocabularies/references.bib` as `Quinlan18AnalysisNotes`; no authored problem collection is present.
 
-- [ ] [Cambridge Examples Sheets.pdf](assets/attachments/extracted/Cambridge Examples Sheets.md) (321L, 33 problems) — applied-algebra
+- [x] [Cambridge Examples Sheets.pdf](assets/attachments/extracted/Cambridge Examples Sheets.md) (321L, 33 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CAMBRIDGE-COMPLEX-METHODS-LENT-2016`, which contains 39 source-order examples-sheet problems; the inventory count of 33 was incomplete.
 
-- [ ] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra
+- [x] [Ch6Sltns.pdf](assets/attachments/extracted/Ch6Sltns.md) (98L, 0 problems) — algebra — disposition 2026-09-12: reference-only Chapter 6 solution outlines for Gallian’s *Contemporary Abstract Algebra*, covering selected isomorphism and automorphism exercises.
+  Retained as worked-reference enrichment on the group-theory resource page and now indexed in `wiki/archives/solution-compendia.md`; no collection or duplicate problem cards manufactured.
 
-- [ ] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology
+- [x] [ComplexAnalysisNotes.pdf](assets/attachments/extracted/ComplexAnalysisNotes.md) (128L, 0 problems) — topology — disposition 2026-09-12: reference-only James Broomfield *Complex Analysis Theorems and Results* summary.
+  Added to `vocabularies/references.bib` as `Broomfield15ComplexAnalysisSummary`; theorem statements are not manufactured into cards.
 
-- [ ] [Complex_Analysis_Prelim_Review.pdf](assets/attachments/extracted/Complex_Analysis_Prelim_Review.md) (41L, 0 problems) — Princeton — complex-analysis
+- [x] [Complex_Analysis_Prelim_Review.pdf](assets/attachments/extracted/Complex_Analysis_Prelim_Review.md) (41L, 0 problems) — Princeton — complex-analysis — disposition 2026-09-12: reference-only Robert Varley *Study Guide for Complex Analysis Exam* topic/reference outline.
+  Added to `vocabularies/references.bib` as `Varley14ComplexPrelimReview`; no problem cards manufactured.
 
-- [ ] [Eur_ComplexAnalysis_Notes (1).pdf](assets/attachments/extracted/Eur_ComplexAnalysis_Notes (1).md) (783L, 0 problems) — UNL — diff-geom
+- [x] [Eur_ComplexAnalysis_Notes (1).pdf](assets/attachments/extracted/Eur_ComplexAnalysis_Notes (1).md) (783L, 0 problems) — UNL — diff-geom — disposition 2026-09-12: reference-only Christopher Eur complex-analysis review notes following Stein--Shakarchi and Ahlfors, with selected textbook exercise solutions.
+  Added to `vocabularies/references.bib` as `Eur15ComplexAnalysisNotes`; no duplicate textbook-exercise cards manufactured.
 
-- [ ] [f03solution.pdf](assets/attachments/extracted/f03solution.md) (407L, 0 problems) — complex-analysis
+- [x] [f03solution.pdf](assets/attachments/extracted/f03solution.md) (407L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2003`; the solution packet is retained as provenance for all 18 Part A/B problems.
 
-- [ ] [f06solution.pdf](assets/attachments/extracted/f06solution.md) (342L, 0 problems) — applied-algebra
+- [x] [f06solution.pdf](assets/attachments/extracted/f06solution.md) (342L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2006`; the solution packet is retained as provenance for all 18 Part A/B problems.
 
-- [ ] [f08solutions.pdf](assets/attachments/extracted/f08solutions.md) (191L, 0 problems) — complex-analysis
+- [x] [f08solutions.pdf](assets/attachments/extracted/f08solutions.md) (191L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2008`; all 18 Part A/B problems are represented and the solution packet is retained as provenance.
 
-- [ ] [f10solutions.pdf](assets/attachments/extracted/f10solutions.md) (282L, 0 problems) — UNL — complex-analysis
+- [x] [f10solutions.pdf](assets/attachments/extracted/f10solutions.md) (282L, 0 problems) — UNL — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2010`; all 18 Part A/B problems are represented and the solution packet is retained as provenance.
 
-- [ ] [f11solutions.pdf](assets/attachments/extracted/f11solutions.md) (206L, 2 problems) — complex-analysis
+- [x] [f11solutions.pdf](assets/attachments/extracted/f11solutions.md) (206L, 2 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2011`; all 18 Part A/B problems are represented and the solution packet is retained as provenance.
 
-- [ ] [F12_Solutions.pdf](assets/attachments/extracted/F12_Solutions.md) (244L, 0 problems) — applied-algebra
+- [x] [F12_Solutions.pdf](assets/attachments/extracted/F12_Solutions.md) (244L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2012`; all 18 Part A/B problems are represented and this companion solution packet is provenance.
 
-- [ ] [F13_Solutions.pdf](assets/attachments/extracted/F13_Solutions.md) (384L, 15 problems) — Berkeley — complex-analysis
+- [x] [F13_Solutions.pdf](assets/attachments/extracted/F13_Solutions.md) (384L, 15 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2013`; all 18 Part A/B problems are represented and this companion solution packet is provenance.
 
-- [ ] [F16_Solutions.pdf](assets/attachments/extracted/F16_Solutions.md) (509L, 8 problems) — Berkeley — applied-algebra
+- [x] [F16_Solutions.pdf](assets/attachments/extracted/F16_Solutions.md) (509L, 8 problems) — Berkeley — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2016`; all 18 Part A/B problems are represented and this companion solution packet is provenance.
 
 - [x] [Folland_Real_Analysis_Solns.pdf](assets/attachments/extracted/Folland_Real_Analysis_Solns.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: Jonathan Mostovoy's partial solutions to Folland, a reference/solutions resource rather than an exam; already linked from `wiki/real-analysis/resources/solutions.md`. This PDF is byte-identical to `Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`), so no duplicate collection is needed.
 
-- [ ] [Galois_Group_Practice 1.pdf](assets/attachments/extracted/Galois_Group_Practice 1.md) (147L, 10 problems) — algebra — Summer 2016
+- [x] [Galois_Group_Practice 1.pdf](assets/attachments/extracted/Galois_Group_Practice 1.md) (147L, 10 problems) — algebra — Summer 2016 — disposition 2026-09-12: exact byte duplicate of `Galois_Group_Practice.pdf` (SHA-256 `a4a5d76264a18227769ce63520fc05459f05a7a7f606b18e625596ccc942864f`); no duplicate collection needed.
 
-- [ ] [Galois_Group_Practice.pdf](assets/attachments/extracted/Galois_Group_Practice.md) (147L, 10 problems) — algebra — Summer 2016
+- [x] [Galois_Group_Practice.pdf](assets/attachments/extracted/Galois_Group_Practice.md) (147L, 10 problems) — algebra — Summer 2016 — disposition 2026-09-12: reconciled with `SRC-MATH113-SUMMER-2016-HW7`, containing all ten source-order Galois-theory problems.
 
-- [ ] [Gompf Contact Topology.pdf](assets/attachments/extracted/Gompf Contact Topology.md) (1994L, 34 problems) — Harvard — diff-geom — Fall 2017
+- [x] [Gompf Contact Topology.pdf](assets/attachments/extracted/Gompf Contact Topology.md) (1994L, 34 problems) — Harvard — diff-geom — Fall 2017 — disposition 2026-09-12: reconciled with complete `SRC-UT-M392C-CONTACT-TOPOLOGY-FALL-2017`. Direct source reading finds nine unique explicit `Exercise x.y` statements, exactly matching the nine collection cards; the inventory count of 34 came from numbered expository prose rather than authored exercises.
 
-- [ ] [Handle Attaching in Symplectic Top.pdf](assets/attachments/extracted/Handle Attaching in Symplectic Top.md) (2296L, 4 problems) — UNL — diff-geom
+- [x] [Handle Attaching in Symplectic Top.pdf](assets/attachments/extracted/Handle Attaching in Symplectic Top.md) (2296L, 4 problems) — UNL — diff-geom — disposition 2026-09-12: Alexander Fauck, *Handle Attaching in Symplectic Topology — A Second Glance* (August 2, 2016), is research/reference literature giving a corrected proof of invariance of symplectic homology under subcritical handle attachment, not an exercise source.
+  Added to `vocabularies/references.bib` as `Fauck16HandleAttaching`; no cards manufactured.
 
-- [ ] [hmwk3x.pdf](assets/attachments/extracted/hmwk3x.md) (117L, 0 problems) — applied-algebra
+- [x] [hmwk3x.pdf](assets/attachments/extracted/hmwk3x.md) (117L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-MATH655-HW3-2003`, which contains the five source-order homework problems represented by this packet.
 
-- [ ] [HW1.pdf](assets/attachments/extracted/HW1.md) (89L, 0 problems) — diff-geom
+- [x] [HW1.pdf](assets/attachments/extracted/HW1.md) (89L, 0 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW1`; direct source intake contains six exercises, all represented in source order.
 
-- [ ] [HW2.pdf](assets/attachments/extracted/HW2.md) (41L, 0 problems) — diff-geom
+- [x] [HW2.pdf](assets/attachments/extracted/HW2.md) (41L, 0 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW2`; direct source intake contains seven exercises, all represented in source order.
 
-- [ ] [HW3.pdf](assets/attachments/extracted/HW3.md) (49L, 5 problems) — diff-geom
+- [x] [HW3.pdf](assets/attachments/extracted/HW3.md) (49L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW3`; the collection contains all six source-order problems, correcting the inventory count of five.
 
-- [ ] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom
+- [x] [HW4.pdf](assets/attachments/extracted/HW4.md) (51L, 5 problems) — diff-geom — disposition 2026-09-12: reconciled with `SRC-UGA-MATH8210-FALL-2018-HW4`; all five source-order problems are represented.
+  The retained file is dated November 4, 2018 and internally repeats the heading “Homework 3”, a source quirk already recorded by the collection.
 
-- [x] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015 — disposition 2026-09-12: Emmanuel Giroux and John Pardon, *Existence of Lefschetz fibrations on Stein and Weinstein domains* (2015, revised 2016), is research/reference literature rather than an authored exercise source. Intake stops at reference enrichment; no problem cards are manufactured.
+- [x] [Lefschetz Fibrations.pdf](assets/attachments/extracted/Lefschetz Fibrations.md) (1597L, 0 problems) — UNL — alg-geom — July 2015 — disposition 2026-09-12: Emmanuel Giroux and John Pardon, *Existence of Lefschetz fibrations on Stein and Weinstein domains* (2015, revised 2016), is research/reference literature rather than an authored exercise source.
+  Intake stops at reference enrichment; no problem cards are manufactured.
 
 - [x] [math6338_hw8.pdf](assets/attachments/extracted/math6338_hw8.md) (299L, 7 problems) — real-analysis — disposition 2026-09-09: ingested as `SRC-MATH6338-HW8`; all seven Fourier-analysis homework problems are represented by source-checked, reviewed solution cards `P-M6338H8-1` through `P-M6338H8-7`.
 
@@ -578,11 +898,14 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.pdf](assets/attachments/extracted/Mostovoy_-_Partial_Solutions_to_Follands_Real_Analysis_Part.md) (3921L, 9 problems) — UNL — applied-algebra — January 20 — disposition 2026-09-10: exact byte duplicate of `Folland_Real_Analysis_Solns.pdf` (SHA-256 `bc7ed6db9fbdbbd5f9a73a67b3c40f4f92fcb7ed26878c9bb7657149b266dc61`); already linked as a Real Analysis solutions resource, so do not create a second representation.
 
-- [x] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013 — disposition 2026-09-12: S. Hermiller's UNL Math 871 Fall 2013 problem-set packet ingested as `SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS`. Direct source reading finds 69 assigned problem references across PS1–PS11, not zero; 23 source-local cards plus canonical Munkres/Hatcher cards give 70 card appearances because PS3.1 and PS7.3 split across reusable and local subproblems. The packet names `PS9.1` as due but contains no statement or locator, so no missing mathematics is invented.
+- [x] [problemsets.pdf](assets/attachments/extracted/problemsets.md) (160L, 0 problems) — topology — Fall 2013 — disposition 2026-09-12: S. Hermiller's UNL Math 871 Fall 2013 problem-set packet ingested as `SRC-UNL-MATH871-FALL-2013-PROBLEM-SETS`. Direct source reading finds 69 assigned problem references across PS1–PS11, not zero; 23 source-local cards plus canonical Munkres/Hatcher cards give 70 card appearances because PS3.1 and PS7.3 split across reusable and local subproblems.
+  The packet names `PS9.1` as due but contains no statement or locator, so no missing mathematics is invented.
 
-- [x] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009 — disposition 2026-09-12: D. Zack Garza's 2020 compilation of selected complex-analysis questions spanning multiple exam terms is maintainer-authored enrichment, not external collection provenance. It remains a resource at `wiki/complex-analysis/resources/problems.md`; no duplicate collection is manufactured, and it is removed from the Fall 2016 UGA exam provenance in favor of that collection's official DOCX.
+- [x] [Questions_from_Tie.pdf](assets/attachments/extracted/Questions_from_Tie.md) (749L, 126 problems) — complex-analysis — Fall 2009 — disposition 2026-09-12: D. Zack Garza's 2020 compilation of selected complex-analysis questions spanning multiple exam terms is maintainer-authored enrichment, not external collection provenance.
+  It remains a resource at `wiki/complex-analysis/resources/problems.md`; no duplicate collection is manufactured, and it is removed from the Fall 2016 UGA exam provenance in favor of that collection's official DOCX.
 
-- [ ] [s05solution.pdf](assets/attachments/extracted/s05solution.md) (249L, 0 problems) — complex-analysis
+- [x] [s05solution.pdf](assets/attachments/s05solution_extracted.md) (248L, 18 repeated problems + worked solutions) — UC Berkeley preliminary examination — Spring 2005 — disposition 2026-09-14: fresh deterministic MinerU Flash v0.5.9 extraction is byte-identical to the retained Markdown and repeats all 18 Part A/B statements before their worked solutions.
+  Its repeated statements were used as an independent source check for `SRC-BERKELEY-PRELIM-SPRING-2005`; the solution prose remains retained provenance because the deterministic extraction contains visible glyph corruption, so no guessed solution repairs were imported.
 
 - [x] [s09solutions.pdf](assets/attachments/extracted/s09solutions.md) (241L, 18 problems) — Berkeley — prelim — Spring 2009 — disposition 2026-09-12: full UC Berkeley Spring 2009 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2009` with all 18 source-order problems `P-BKS09-1A` through `P-BKS09-9B`. The old count of six came from merged extraction headings.
 
@@ -590,143 +913,164 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [s12solutions.pdf](assets/attachments/extracted/s12solutions.md) (227L, 18 problems) — Berkeley — prelim — Spring 2012 — disposition 2026-09-12: full UC Berkeley Spring 2012 preliminary-exam solution packet, ingested as `SRC-BERKELEY-PRELIM-SPRING-2012` with all 18 source-order problems `P-BKS12-1A` through `P-BKS12-9B`. The prior zero count came from OCR/extraction heading loss.
 
-- [x] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: canonical retained copy of René L. Schilling’s *Measures, Integrals & Martingales* (2nd ed.) solution manual; exact byte duplicate of `solutions-mims-2ed.pdf`. This is textbook solution/reference material already linked from `wiki/real-analysis/resources/solutions.md`, so intake stops at the existing reference representation rather than manufacturing qualifying-exam cards.
+- [x] [Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf](assets/attachments/extracted/Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: canonical retained copy of René L. Schilling’s *Measures, Integrals & Martingales* (2nd ed.)
+  solution manual; exact byte duplicate of `solutions-mims-2ed.pdf`. This is textbook solution/reference material already linked from `wiki/real-analysis/resources/solutions.md`, so intake stops at the existing reference representation rather than manufacturing qualifying-exam cards.
 
-- [x] [Series_Problems_.pdf](assets/attachments/extracted/Series_Problems_.md) (566L, 12 problems) — real-analysis — disposition 2026-09-12: source inspection identifies an unattributed “Solutions to Assignment-2” packet on sequences and series. Ingested as `SRC-SEQUENCES-SERIES-ASSIGNMENT-2` with the twelve top-level cards `P-SERIES-A2-01` through `P-SERIES-A2-12`; the prior count of 22 came from multipart subquestions. No institution or assignment date is printed in the source, so neither is invented.
+- [x] [Series_Problems_.pdf](assets/attachments/extracted/Series_Problems_.md) (566L, 12 problems) — real-analysis — disposition 2026-09-12: source inspection identifies an unattributed “Solutions to Assignment-2” packet on sequences and series.
+  Ingested as `SRC-SEQUENCES-SERIES-ASSIGNMENT-2` with the twelve top-level cards `P-SERIES-A2-01` through `P-SERIES-A2-12`; the prior count of 22 came from multipart subquestions.
+  No institution or assignment date is printed in the source, so neither is invented.
 
 - [x] [solhwg.pdf](assets/attachments/extracted/solhwg.md) (177L, 12 problems) — applied-algebra — disposition 2026-09-12: Math 114 Galois-theory homework solution packet dated April 4, 2006, ingested as `SRC-MATH114-GALOIS-HOMEWORK-2006`. Problem sets 8 and 9 contribute six source-order problems each, represented as `P-M114-8-01` through `P-M114-8-06` and `P-M114-9-01` through `P-M114-9-06`; source-supplied worked solutions remain external provenance rather than duplicate local solution sections.
 
-- [x] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: René L. Schilling, *Measures, Integrals & Martingales* (2nd ed.) solution manual, corrected July 2019; byte-identical to `Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf` (SHA-256 `703be127b8cc7dbdf0903d1addb98941f183393e61c60423b356119b06f65081`). It is already retained on the real-analysis solutions resource page, so no duplicate card collection is manufactured.
+- [x] [solutions-mims-2ed.pdf](assets/attachments/extracted/solutions-mims-2ed.md) (21267L, 53 problems) — UNL — applied-algebra — May 2017 — disposition 2026-09-12: René L. Schilling, *Measures, Integrals & Martingales* (2nd ed.)
+  solution manual, corrected July 2019; byte-identical to `Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf` (SHA-256 `703be127b8cc7dbdf0903d1addb98941f183393e61c60423b356119b06f65081`). It is already retained on the real-analysis solutions resource page, so no duplicate card collection is manufactured.
 
-- [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance. It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection. The prior count of three came from lost extraction headings.
+- [x] [Sp13_Solutions.pdf](assets/attachments/extracted/Sp13_Solutions.md) (273L, 18 problems) — Berkeley — prelim — Spring 2013 — disposition 2026-09-12: companion solution packet for `SRC-BERKELEY-PRELIM-SPRING-2013`, retained as collection provenance.
+  It contains worked solutions for the same 18 source problems; intake cards the statements once rather than creating a duplicate solution collection.
+  The prior count of three came from lost extraction headings.
 
-- [x] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2017` and added as primary exam provenance beside the solution packet. Direct text-layer comparison confirms the same 18 statements `1A`–`9B` in both PDFs; the inventory count of eight was incomplete and the document is the full multi-subject Berkeley prelim, not only complex analysis.
+- [x] [Sp17_Exam_0.pdf](assets/attachments/extracted/Sp17_Exam_0.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2017` and added as primary exam provenance beside the solution packet.
+  Direct text-layer comparison confirms the same 18 statements `1A`–`9B` in both PDFs; the inventory count of eight was incomplete and the document is the full multi-subject Berkeley prelim, not only complex analysis.
 
-- [x] [Sp17_Solutions.pdf](assets/attachments/extracted/Sp17_Solutions.md) (583L, 8 problems) — UNL — complex-analysis — disposition 2026-09-12: identified from the PDF itself as the University of California, Berkeley Spring 2017 preliminary examination solution packet, not a UNL complex-analysis source. Ingested as `SRC-BERKELEY-PRELIM-SPRING-2017` with all 18 problems `P-BKS17-1A` through `P-BKS17-9B` in exam order; the inventory count of eight was incomplete. This entry records the solution PDF as provenance; source-provided worked solutions were not copied into local `.solution` sections during intake.
+- [x] [Sp17_Solutions.pdf](assets/attachments/extracted/Sp17_Solutions.md) (583L, 8 problems) — UNL — complex-analysis — disposition 2026-09-12: identified from the PDF itself as the University of California, Berkeley Spring 2017 preliminary examination solution packet, not a UNL complex-analysis source.
+  Ingested as `SRC-BERKELEY-PRELIM-SPRING-2017` with all 18 problems `P-BKS17-1A` through `P-BKS17-9B` in exam order; the inventory count of eight was incomplete.
+  This entry records the solution PDF as provenance; source-provided worked solutions were not copied into local `.solution` sections during intake.
 
-- [x] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — Harvard — algebra — October 22, 1985 **OCR: image placeholders** — disposition 2026-09-12: J. Tate’s Harvard Algebra 250(a) Fall 1985 homework compilation ingested as `SRC-HARVARD-TATE-ALGEBRA-250A-1985`. Direct PDF inspection finds 36 authored problems across five dated sheets, the two-part `X^7-7X+3` challenge, and nine prime-ideal exercises; the Newton-formula/discriminant pages are expository reference material and were not manufactured into cards. The 36 source-order cards are grouped by those seven source sections as `P-TATE85-*`; the inventory count of zero was a false negative.
+- [x] [Tate_Galois_Theory_Problems.pdf](assets/attachments/extracted/Tate_Galois_Theory_Problems.md) (361L, 0 problems) — Harvard — algebra — October 22, 1985 **OCR: image placeholders** — disposition 2026-09-12: J. Tate’s Harvard Algebra 250(a) Fall 1985 homework compilation ingested as `SRC-HARVARD-TATE-ALGEBRA-250A-1985`. Direct PDF inspection finds 36 authored problems across five dated sheets, the two-part `X^7-7X+3` challenge, and nine prime-ideal exercises; the Newton-formula/discriminant pages are expository reference material and were not manufactured into cards.
+  The 36 source-order cards are grouped by those seven source sections as `P-TATE85-*`; the inventory count of zero was a false negative.
 
-- [x] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders** — disposition 2026-09-12: Christian Parkinson’s 2020 Week 5 Abstract Algebra & Complex Analysis GRE-prep packet, ingested as `SRC-PRELIM-PRACTICE-WEEK5-2020` with all 35 numbered prompts in source order as `P-PRACT20-W5-01` through `P-PRACT20-W5-35`. The inventory count of four was a false negative. The PDF remains provenance for its worked solutions; they were not copied into local `.solution` sections because the packet contains demonstrably incorrect supplied answers (for example Problem 4 calls $x\mapsto -x$ a homomorphism $U_4\to U_4$, and Problem 28 drops the minus sign in the contour integral).
+- [x] [Week5_solns.pdf](assets/attachments/extracted/Week5_solns.md) (570L, 4 problems) — complex-analysis **OCR: image placeholders** — disposition 2026-09-12: Christian Parkinson’s 2020 Week 5 Abstract Algebra & Complex Analysis GRE-prep packet, ingested as `SRC-PRELIM-PRACTICE-WEEK5-2020` with all 35 numbered prompts in source order as `P-PRACT20-W5-01` through `P-PRACT20-W5-35`. The inventory count of four was a false negative.
+  The PDF remains provenance for its worked solutions; they were not copied into local `.solution` sections because the packet contains demonstrably incorrect supplied answers (for example Problem 4 calls $x\mapsto -x$ a homomorphism $U_4\to U_4$, and Problem 28 drops the minus sign in the contour integral).
 
 ## Solution writeups (33)
 
-- [ ] [AG Solutions (1).pdf](assets/attachments/extracted/AG Solutions (1).md) (5121L, 0 problems) — no metadata **OCR: binary/encoding garbage, possible encoding issues**
+- [x] [AG Solutions (1).pdf](assets/attachments/extracted/AG Solutions (1).md) (5121L, 0 problems) — no metadata **OCR: binary/encoding garbage, possible encoding issues** — disposition 2026-09-12: reference-only archival algebraic-geometry solution notes.
+  The 24-page PDF has no identifying author/date metadata and its embedded text layer is control-character/encoding garbage, so no reliable problem extraction is possible without inventing content.
+  Retained on the solution-compendia resource page and added to `vocabularies/references.bib` as `AGSolutionsArchive`; no cards manufactured.
 
-- [ ] [Algebra_Final_Solns 1.pdf](assets/attachments/extracted/Algebra_Final_Solns 1.md) (116L, 14 problems) — algebra
+- [x] [Algebra_Final_Solns 1.pdf](assets/attachments/extracted/Algebra_Final_Solns 1.md) (116L, 14 problems) — algebra — disposition 2026-09-12: exact byte duplicate of `Algebra_Final_Solns.pdf` (SHA-256 `75d9773517a214758c59c3b4c5e274ff27f6e2b17b1415fc1a0f962e4fb60aa2`); no duplicate collection needed.
 
-- [ ] [Algebra_Final_Solns.pdf](assets/attachments/extracted/Algebra_Final_Solns.md) (116L, 14 problems) — algebra
+- [x] [Algebra_Final_Solns.pdf](assets/attachments/extracted/Algebra_Final_Solns.md) (116L, 14 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-MATH504-FINAL-AUTUMN-2003`, which retains this solution packet as provenance for the seven source-order final-exam problems.
 
-- [ ] [basic-12F.pdf](assets/attachments/extracted/basic-12F.md) (53L, 0 problems) — UCLA
+- [x] [basic-12F.pdf](assets/attachments/extracted/basic-12F.md) (53L, 0 problems) — UCLA — disposition 2026-09-12: already ingested as `SRC-UCLA-BASIC-FALL-2012`; all twelve source problems are represented in order by `P-UCLAB12-01` through `P-UCLAB12-12`, with the vendored PDF recorded as collection provenance.
 
-- [ ] [Ch10PtASltns.pdf](assets/attachments/extracted/Ch10PtASltns.md) (51L, 0 problems) — algebra
+- [x] [Ch10PtASltns.pdf](assets/attachments/extracted/Ch10PtASltns.md) (51L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH10A-HOMOMORPHISM-SOLUTION-OUTLINES`, containing the seven selected Chapter 10 Part A exercises represented by this solution-outline packet.
 
-- [ ] [Ch10Sltns.pdf](assets/attachments/extracted/Ch10Sltns.md) (105L, 4 problems) — alg-geom
+- [x] [Ch10Sltns.pdf](assets/attachments/extracted/Ch10Sltns.md) (105L, 4 problems) — alg-geom — disposition 2026-09-12: reconciled with `SRC-CH10-HOMOMORPHISM-SOLUTION-OUTLINES`, containing eighteen selected Chapter 10 exercises represented by this packet.
 
-- [ ] [Ch12Sltns.pdf](assets/attachments/extracted/Ch12Sltns.md) (69L, 3 problems) — algebra
+- [x] [Ch12Sltns.pdf](assets/attachments/extracted/Ch12Sltns.md) (69L, 3 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH12-RING-SOLUTION-OUTLINES`, containing seventeen selected Chapter 12 ring-theory exercises.
 
-- [ ] [Ch14Sltns.pdf](assets/attachments/extracted/Ch14Sltns.md) (99L, 0 problems) — applied-algebra
+- [x] [Ch14Sltns.pdf](assets/attachments/extracted/Ch14Sltns.md) (99L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CH14-IDEAL-SOLUTION-OUTLINES`, containing fifteen selected Chapter 14 ideal-theory exercises.
 
-- [ ] [Ch15Sltns.pdf](assets/attachments/extracted/Ch15Sltns.md) (73L, 0 problems) — algebra
+- [x] [Ch15Sltns.pdf](assets/attachments/extracted/Ch15Sltns.md) (73L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH15-RING-HOMOMORPHISM-SOLUTION-OUTLINES`, containing thirteen selected Chapter 15 exercises.
 
-- [ ] [Ch16Sltns.pdf](assets/attachments/extracted/Ch16Sltns.md) (61L, 0 problems) — applied-algebra
+- [x] [Ch16Sltns.pdf](assets/attachments/extracted/Ch16Sltns.md) (61L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-CH16-POLYNOMIAL-RING-SOLUTION-OUTLINES`, containing fourteen selected Chapter 16 exercises.
 
-- [ ] [Ch17Sltns.pdf](assets/attachments/extracted/Ch17Sltns.md) (61L, 0 problems) — algebra
+- [x] [Ch17Sltns.pdf](assets/attachments/extracted/Ch17Sltns.md) (61L, 0 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH17-POLYNOMIAL-SOLUTION-OUTLINES`, containing twelve selected Chapter 17 exercises.
 
-- [ ] [Ch8Sltns.pdf](assets/attachments/extracted/Ch8Sltns.md) (127L, 1 problems) — algebra
+- [x] [Ch8Sltns.pdf](assets/attachments/extracted/Ch8Sltns.md) (127L, 1 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-CH8-DIRECT-PRODUCT-SOLUTION-OUTLINES`, containing twenty-five selected Chapter 8 exercises.
 
-- [ ] [ExerciseSet8f06a.pdf](assets/attachments/extracted/ExerciseSet8f06a.md) (173L, 6 problems) — algebra
+- [x] [ExerciseSet8f06a.pdf](assets/attachments/extracted/ExerciseSet8f06a.md) (173L, 6 problems) — algebra — disposition 2026-09-12: reconciled with `SRC-MATH7200-EXERCISE-SET-8-FALL-2006`, which contains all six source-order exercises.
 
-- [ ] [f03.pdf](assets/attachments/extracted/f03.md) (103L, 0 problems) — complex-analysis
+- [x] [f03.pdf](assets/attachments/extracted/f03.md) (103L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2003`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [f09solutions.pdf](assets/attachments/extracted/f09solutions.md) (300L, 0 problems) — UNL — complex-analysis
+- [x] [f09solutions.pdf](assets/attachments/extracted/f09solutions.md) (300L, 0 problems) — UNL — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2009`, containing all 18 Part A/B prelim problems; the vendored solution packet is retained as provenance.
 
-- [ ] [F12_Exam.pdf](assets/attachments/extracted/F12_Exam.md) (238L, 8 problems) — Berkeley — complex-analysis
+- [x] [F12_Exam.pdf](assets/attachments/extracted/F12_Exam.md) (238L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2012`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [F13_Exam.pdf](assets/attachments/extracted/F13_Exam.md) (268L, 15 problems) — Berkeley — complex-analysis
+- [x] [F13_Exam.pdf](assets/attachments/extracted/F13_Exam.md) (268L, 15 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2013`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [F15_Exam.pdf](assets/attachments/extracted/F15_Exam.md) (317L, 8 problems) — Berkeley — complex-analysis
+- [x] [F15_Exam.pdf](assets/attachments/extracted/F15_Exam.md) (317L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2015`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [F16_Exam.pdf](assets/attachments/extracted/F16_Exam.md) (337L, 8 problems) — Berkeley — complex-analysis
+- [x] [F16_Exam.pdf](assets/attachments/extracted/F16_Exam.md) (337L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2016`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [Fall_2014_Exam.pdf](assets/attachments/extracted/Fall_2014_Exam.md) (321L, 8 problems) — Berkeley — complex-analysis
+- [x] [Fall_2014_Exam.pdf](assets/attachments/extracted/Fall_2014_Exam.md) (321L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2014`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [fall-2018-prelim_solutions.pdf](assets/attachments/extracted/fall-2018-prelim_solutions.md) (289L, 0 problems) — complex-analysis
+- [x] [fall-2018-prelim_solutions.pdf](assets/attachments/extracted/fall-2018-prelim_solutions.md) (289L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-FALL-2018`, containing all 18 Part A/B prelim problems; the vendored solution packet is retained as provenance.
 
-- [ ] [final2011-solns.pdf](assets/attachments/extracted/final2011-solns.md) (122L, 5 problems) — algebra
+- [x] [final2011-solns.pdf](assets/attachments/extracted/final2011-solns.md) (122L, 5 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-ALGEBRA-FINAL-2011-SOLUTIONS`, containing all five source-order problems.
 
-- [ ] [Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf](assets/attachments/extracted/Point_Set_Topology_Midterm_with_Solns_-_Unknown.md) (55L, 6 problems) — topology
+- [x] [Point_Set_Topology_Midterm_with_Solns_-_Unknown.pdf](assets/attachments/extracted/Point_Set_Topology_Midterm_with_Solns_-_Unknown.md) (55L, 6 problems) — topology — disposition 2026-09-12: reconciled with complete `SRC-POINT-SET-TOPOLOGY-MIDTERM`, containing all six source-order problems.
 
-- [ ] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis
+- [x] [s06.pdf](assets/attachments/extracted/s06.md) (81L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2006`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra.
+- [x] [s07.pdf](assets/attachments/extracted/s07.md) (101L, 0 problems) — prelim — reclassified 2026-09-09: mixed preliminary exam spanning analysis, algebra, complex analysis, ODEs, and linear algebra.
+  — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2007`, containing all 18 mixed-subject Part A/B prelim problems in source order.
 
-- [ ] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra
+- [x] [Sample_Comp_Fa03Alg.pdf](assets/attachments/extracted/Sample_Comp_Fa03Alg.md) (51L, 5 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-ALGEBRA-COMP-FALL-2003`, containing all five source-order sample comprehensive-exam problems.
 
-- [ ] [Sp16_Exam.pdf](assets/attachments/extracted/Sp16_Exam.md) (335L, 8 problems) — Berkeley — complex-analysis
+- [x] [Sp16_Exam.pdf](assets/attachments/extracted/Sp16_Exam.md) (335L, 8 problems) — Berkeley — complex-analysis — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2016`, containing all 18 Part A/B prelim problems in source order.
 
-- [ ] [Sp16_Solutions.pdf](assets/attachments/extracted/Sp16_Solutions.md) (415L, 0 problems) — applied-algebra
+- [x] [Sp16_Solutions.pdf](assets/attachments/extracted/Sp16_Solutions.md) (415L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-BERKELEY-PRELIM-SPRING-2016`; the solution packet is retained as provenance for the same 18 source-order problems.
 
-- [ ] [Week1_solns.pdf](assets/attachments/extracted/Week1_solns.md) (257L, 0 problems) — complex-analysis
+- [x] [Week1_solns.pdf](assets/attachments/extracted/Week1_solns.md) (257L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with `SRC-PRELIM-CALCULUS-I-WEEK1`; direct numbering in the source runs 1--28 and the collection contains exactly 28 source-order cards.
 
-- [ ] [Week2_solns.pdf](assets/attachments/extracted/Week2_solns.md) (440L, 0 problems) — applied-algebra
+- [x] [Week2_solns.pdf](assets/attachments/extracted/Week2_solns.md) (440L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with `SRC-PRELIM-CALCULUS-II-WEEK2`; direct numbering in the source runs 1--23 and the collection contains exactly 23 source-order cards.
 
-- [ ] [Week3_solns.pdf](assets/attachments/extracted/Week3_solns.md) (362L, 0 problems) — complex-analysis **OCR: image placeholders**
+- [x] [Week3_solns.pdf](assets/attachments/extracted/Week3_solns.md) (362L, 0 problems) — complex-analysis **OCR: image placeholders** — disposition 2026-09-12: reconciled with `SRC-PRELIM-PRACTICE-WEEK3-2020`; direct numbering in the source runs 1--28 and the collection contains exactly 28 source-order cards.
 
-- [ ] [Week4_solns.pdf](assets/attachments/extracted/Week4_solns.md) (474L, 0 problems) — UNL — applied-algebra **OCR: image placeholders**
+- [x] [Week4_solns.pdf](assets/attachments/extracted/Week4_solns.md) (474L, 0 problems) — UNL — applied-algebra **OCR: image placeholders** — disposition 2026-09-12: reconciled with `SRC-PRELIM-PRACTICE-WEEK4-2020`; direct numbering in the source runs 1--26 and the collection contains exactly 26 source-order cards.
 
-- [ ] [Week6_solns.pdf](assets/attachments/extracted/Week6_solns.md) (501L, 0 problems) — UNL — topology **OCR: image placeholders**
+- [x] [Week6_solns.pdf](assets/attachments/extracted/Week6_solns.md) (501L, 0 problems) — UNL — topology **OCR: image placeholders** — disposition 2026-09-12: reconciled with `SRC-PRELIM-PRACTICE-WEEK6-2020`; direct numbering in the source runs 1--27 and the collection contains exactly 27 source-order cards.
 
 ## Solution manuals (3)
 
-- [ ] [chapter-1.pdf](assets/attachments/extracted/chapter-1.md) (87L, 16 problems) — no metadata
+- [x] [chapter-1.pdf](assets/attachments/extracted/chapter-1.md) (87L, 16 problems) — no metadata — disposition 2026-09-12: reconciled with complete `SRC-GRE-MATH-CH1-REVIEW`, which represents all 25 numbered Chapter 1 review questions in source order.
 
-- [ ] [s03solution.pdf](assets/attachments/extracted/s03solution.md) (231L, 0 problems) — complex-analysis
+- [x] [s03solution.pdf](assets/attachments/extracted/s03solution.md) (231L, 0 problems) — complex-analysis — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2003`; the vendored solution packet is provenance for all 18 Part A/B problems in source order.
 
-- [ ] [s06solution.pdf](assets/attachments/extracted/s06solution.md) (409L, 0 problems) — applied-algebra
+- [x] [s06solution.pdf](assets/attachments/extracted/s06solution.md) (409L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-SPRING-2006`; the vendored solution packet is provenance for all 18 Part A/B problems in source order.
 
 ## Lecture notes (4)
 
-- [ ] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis
+- [x] [140A_Exam_Review.pdf](assets/attachments/extracted/140A_Exam_Review.md) (97L, 0 problems) — complex-analysis — disposition 2026-09-12: reference-only Todd Kemp Math 140A Exam 2 key-facts review (lim sup/inf, complex numbers, series, metric spaces), not a problem source.
+  Retained on the prelim reference page and added to `vocabularies/references.bib` as `Kemp16Math140AExam2Review`; no cards manufactured.
 
-- [ ] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
+- [x] [8.1.2 Further Examples (1).pdf](assets/attachments/extracted/8.1.2 Further Examples (1).md) (136L, 4 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only Jingzhi Tie UGA Math 8150 Spring 2020 lecture deck of worked conformal-mapping examples, not an exercise source despite the inventory count.
+  Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20ConformalExamples`; no cards manufactured.
 
-- [ ] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014
+- [x] [Math_872_-*Section_1*-*Spring_2014*-_(Active)_Table_of_Contents.pdf](assets/attachments/extracted/Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.md) (351L, 0 problems) — topology — Spring 2014 — disposition 2026-09-12: reference-only Spring 2014 UNL Math 872 Algebraic Topology course contents/theorem outline, not a problem source.
+  Retained on the topology resource page and added to `vocabularies/references.bib` as `Hermiller14Math872`; no cards manufactured.
 
-- [ ] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008
+- [x] [Perutz_-*2008*-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf](assets/attachments/extracted/Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.md) (3929L, 58 problems) — topology — Fall 2008 — disposition 2026-09-12: reconciled to complete `SRC-PERUTZ-ALGEBRAIC-TOPOLOGY-I-2008`. Direct source typography contains 89 explicit exercises, not the inventory count of 58. A duplicate partial Chapters 1–4 intake was collapsed into the canonical collection by retaining its richer source-checked transcriptions for those 17 exercises; the canonical collection now contains all 89 exercises in source order.
 
 ## Textbook/theorem notes (16)
 
-- [ ] [8.2.3 Normal family.pdf](assets/attachments/extracted/8.2.3 Normal family.md) (159L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
+- [x] [8.2.3 Normal family.pdf](assets/attachments/extracted/8.2.3 Normal family.md) (159L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on normal families, Montel’s theorem, Arzelà–Ascoli, and Hurwitz (Spring 2020), not an exercise source.
+  Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20Montel`; no problem cards manufactured.
 
-- [ ] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders**
+- [x] [8.3 Riemann Mapping Theorem (1).pdf](assets/attachments/extracted/8.3 Riemann Mapping Theorem (1).md) (233L, 0 problems) — UGA — complex-analysis — March 30 **OCR: image placeholders** — disposition 2026-09-12: reference-only UGA Math 8150 lecture notes by Jingzhi Tie on the Riemann mapping theorem (Spring 2020), not an exercise source.
+  Retained on the complex-analysis resource page and added to `vocabularies/references.bib` as `Tie20RMT`; no problem cards manufactured.
 
-- [ ] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology
+- [x] [871-872January_2006_850-871.pdf](assets/attachments/extracted/871-872January_2006_850-871.md) (53L, 0 problems) — topology — disposition 2026-09-12: already ingested as `SRC-UNL-QUAL-850-871-JANUARY-2006`; its five Section A questions are local cards `P-UNL850871-06A1` through `P-UNL850871-06A5`, and the five Section B topology questions reuse canonical cards from the separately retained January 2006 UNL topology paper.
+  All ten source questions are represented in source order.
 
-- [ ] [Ch11Sltns.pdf](assets/attachments/extracted/Ch11Sltns.md) (61L, 11 problems) — algebra
+- [x] [Ch11Sltns.pdf](assets/attachments/extracted/Ch11Sltns.md) (61L, 11 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-CH11-ABELIAN-GROUP-SOLUTION-OUTLINES`, containing ten selected finite-abelian-group exercises represented by this packet.
 
-- [ ] [Ch13Sltns.pdf](assets/attachments/extracted/Ch13Sltns.md) (73L, 0 problems) — applied-algebra
+- [x] [Ch13Sltns.pdf](assets/attachments/extracted/Ch13Sltns.md) (73L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with complete `SRC-CH13-RING-SOLUTION-OUTLINES`, containing the fourteen selected ring-theory exercises represented by this solution-outline packet.
 
-- [ ] [Ch20Sltns.pdf](assets/attachments/extracted/Ch20Sltns.md) (41L, 0 problems) — algebra
+- [x] [Ch20Sltns.pdf](assets/attachments/extracted/Ch20Sltns.md) (41L, 0 problems) — algebra — disposition 2026-09-12: reconciled with complete `SRC-CH20-FIELD-SOLUTION-OUTLINES`, containing the nine selected field-theory exercises represented by this solution-outline packet.
 
-- [ ] [Ch7Sltns.pdf](assets/attachments/extracted/Ch7Sltns.md) (133L, 0 problems) — algebra **OCR: image placeholders**
+- [x] [Ch7Sltns.pdf](assets/attachments/extracted/Ch7Sltns.md) (133L, 0 problems) — algebra **OCR: image placeholders** — disposition 2026-09-12: reconciled with complete `SRC-CH7-GROUP-SOLUTION-OUTLINES`, which preserves 21 selected source exercises/solution outlines in source order.
 
-- [ ] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra
+- [x] [f04solution.pdf](assets/attachments/extracted/f04solution.md) (327L, 0 problems) — applied-algebra — disposition 2026-09-12: reconciled with complete `SRC-BERKELEY-PRELIM-FALL-2004`; the vendored solution packet is provenance for the 18 source-order Part A/B cards `P-BKF04-1A` through `P-BKF04-9B`.
 
 - [x] [Folland_Solutions.pdf](assets/attachments/extracted/Folland_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: exact byte duplicate of `Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf` (SHA-256 `45cc7ffaf7ba4e7a3c41884817409e2728764bcce8a651979df4bb74cdccbc97`). The migration ledger already identifies the Le-named file as the retained native source, and the Real Analysis solutions resource page links this material; no duplicate collection is needed.
 
 - [x] [Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.pdf](assets/attachments/extracted/Le_-_MEASURE_and_INTEGRATION_Problems_with_Solutions.md) (9097L, 131 problems) — real-analysis — disposition 2026-09-09: canonical retained copy for the byte-identical pair with `Folland_Solutions.pdf`. This is Le's *Measure and Integration: Problems with Solutions*, a reference/problem-solutions resource rather than an exam paper; it remains a resource source and does not require a qualifying-exam collection.
 
-- [ ] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009
+- [x] [math185f09-hw7sol.pdf](assets/attachments/extracted/math185f09-hw7sol.md) (307L, 4 problems) — complex-analysis — FALL 2009 — disposition 2026-09-12: already ingested as `SRC-BERKELEY-MATH185-FALL-2009-PSET7`; all four numbered problems are represented in source order as `P-BK185F09-7-01` through `P-BK185F09-7-04` with the vendored solution packet retained as provenance.
 
-- [ ] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis
+- [x] [Neil_Spring_2018_Solutions.pdf](assets/attachments/extracted/Neil_Spring_2018_Solutions.md) (8L, 3 problems) — complex-analysis — disposition 2026-09-12: exact byte duplicate of `Spring2018_SOLUTIONS.pdf` (SHA-256 `0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9`); the five handwritten solutions match the five problems already represented in `SRC-UGA-RA-SPRING-2018`, so the packet is retained as enrichment rather than duplicate provenance or cards.
 
-- [x] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders** — disposition 2026-09-09: Kari Eifler's *Real Variables Named Theorems* is theorem/reference notes (definitions, theorem statements, and convergence-summary material), not an exam or problem collection. It is already linked from `wiki/real-analysis/resources/books-notes.md`; intake therefore stops at that reference resource.
+- [x] [Real_Named_Theorems.pdf](assets/attachments/extracted/Real_Named_Theorems.md) (287L, 13 problems) — real-analysis — July 10 **OCR: image placeholders** — disposition 2026-09-09: Kari Eifler's *Real Variables Named Theorems* is theorem/reference notes (definitions, theorem statements, and convergence-summary material), not an exam or problem collection.
+  It is already linked from `wiki/real-analysis/resources/books-notes.md`; intake therefore stops at that reference resource.
 
-- [ ] [s04solution.pdf](assets/attachments/extracted/s04solution.md) (333L, 3 problems) — applied-algebra
+- [x] [s04solution.pdf](assets/attachments/s04solution_extracted.md) (332L, 18 solutions) — UC Berkeley preliminary examination — Spring 2004 — disposition 2026-09-14: companion solution packet freshly re-extracted with deterministic MinerU Flash v0.5.9; the new baseline is byte-identical to the retained Markdown and contains solutions 1A–9A and 1B–9B. All 18 `SRC-BERKELEY-PRELIM-SPRING-2004` cards carry solution-reviewed audit events against this packet.
 
-- [ ] [solns7.pdf](assets/attachments/extracted/solns7.md) (203L, 5 problems) — algebra
+- [x] [solns7.pdf](assets/attachments/extracted/solns7.md) (203L, 5 problems) — algebra — disposition 2026-09-12: St Andrews MT5824 Topics in Groups Problem Sheet VII on nilpotent groups, ingested as `SRC-STANDREWS-MT5824-PSET7-2010`. The retained packet contains six numbered problems, not the inventory count of five; all six are represented in source order by `P-MT5824-7-01` through `P-MT5824-7-06`, with the packet solutions source-checked and reviewed.
 
-- [ ] [Spring2018_SOLUTIONS.pdf](assets/attachments/extracted/Spring2018_SOLUTIONS.md) (8L, 3 problems) — complex-analysis
+- [x] [Spring2018_SOLUTIONS.pdf](assets/attachments/extracted/Spring2018_SOLUTIONS.md) (8L, 3 problems) — complex-analysis — disposition 2026-09-12: handwritten solution packet for the five-problem UGA Spring 2018 Real Analysis exam already complete as `SRC-UGA-RA-SPRING-2018`; byte-identical to `Neil_Spring_2018_Solutions.pdf` (SHA-256 `0247c09295120c5594a5d27648f5381fdb744bf3e6f1dbe7a7b74dfd79a29ae9`). No duplicate collection or cards are created.
 
 ## Review sheets (14)
 
@@ -735,23 +1079,31 @@ External links that are not vendored remain on the resource pages until a delibe
 
 - [x] [chapter-3.pdf](assets/attachments/extracted/chapter-3.md) (178L, 13 problems) — algebra **OCR: image placeholders** — disposition 2026-09-11: `Cracking the GRE Mathematics Subject Test` Chapter 3 multivariable/vector-calculus review ingested as `SRC-GRE-MATH-CH3-REVIEW`. Direct inspection of the six-page scan and extraction finds 30 numbered review questions, not the inventory count of 13; all 30 are represented in source order as `P-GRECH3-01` through `P-GRECH3-30`. Scanned source pages are preserved on Questions 1–3, 10, and 30 where diagrams or answer choices are image-dependent/OCR-damaged.
 
-- [ ] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders**
+- [x] [chapter-4.pdf](assets/attachments/extracted/chapter-4.md) (212L, 5 problems) — calculus **OCR: image placeholders** — disposition 2026-09-12: already ingested as `SRC-GRE-MATH-CH4-REVIEW`, with all fifteen numbered Chapter 4 review questions represented in source order by `P-GRECH4-01` through `P-GRECH4-15`; 2026-09-16: re-transcribed from the Mistral OCR book extraction and the source scans, which recover Question 2 and every damaged choice, and the phantom `P-GRECH4-16` was removed because the source page ends at Question 15.
 
-- [ ] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders**
+- [x] [chapter-5.pdf](assets/attachments/extracted/chapter-5.md) (245L, 5 problems) — no metadata **OCR: image placeholders** — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH5-REVIEW`.
 
-- [ ] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra
+- [x] [chapter-6.pdf](assets/attachments/extracted/chapter-6.md) (65L, 9 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-GRE-MATH-CH6-REVIEW`. The retained Chapter 6 review source contains 20 numbered group/ring/number-theory questions, all represented in source order by `P-GRECH6-01` through `P-GRECH6-20`; the inventory count of nine was incomplete.
+  Earlier two-pass OCR repair is recorded in `queues/E-corrections.md`, including the surviving scan gaps in Questions 17, 18, and 20. No duplicate cards were created; the collection is now marked complete.
 
-- [ ] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra
+- [x] [linear_algebra_from_test2.pdf](assets/attachments/extracted/linear_algebra_from_test2.md) (17L, 3 problems) — applied-algebra — disposition 2026-09-12: reconciled with existing `SRC-LINEAR-ALGEBRA-TEST2-REVIEW`. The preserved extraction contains eight numbered multiple-choice linear-algebra questions (10, 48, 15, 38, 35, 32, 52, 53), all already represented in source order by the collection; the inventory count of three was incomplete.
+  The PDF has no usable text layer, so source checks are explicitly against the retained PDF extraction.
+  All eight cards are source-checked and the collection is marked complete.
 
-- [ ] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra
+- [x] [Master_10_27_2018.pdf](assets/attachments/extracted/Master_10_27_2018.md) (2786L, 4 problems) — UNL — applied-algebra — disposition 2026-09-12: reference-only broad mathematics/GRE compendium (41 pages, created October 27, 2018) covering formulas, definitions, theorem summaries, and worked examples across algebra, geometry, analysis, probability, topology, and related subjects.
+  The scanner's four “problems” are incidental examples rather than an authored exercise set, and no UNL affiliation is evidenced in the document.
+  It is now retained explicitly on `wiki/prelim/resources/references.md`; no problem cards are manufactured.
 
-- [ ] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom
+- [x] [Math_871_-_Table_of_Contents.pdf](assets/attachments/extracted/Math_871_-_Table_of_Contents.md) (407L, 0 problems) — diff-geom — disposition 2026-09-12: reference-only Math 871 course table of contents covering topology definitions, constructions, invariants, and theorem statements rather than an authored exercise source.
+  It is retained and now explicitly annotated on `wiki/topology/resources/books-notes.md`; intake stops at reference enrichment and no problem cards are manufactured.
 
-- [ ] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — algebra
+- [x] [Review1.pdf](assets/attachments/extracted/Review1.md) (77L, 11 problems) — algebra — disposition 2026-09-12: reconciled with existing `SRC-ALGEBRA-TEST-REVIEW-1`. All seven open-ended questions and four true/sometimes/false questions are already represented in source order by `P-ALGREV1-01` through `P-ALGREV1-11`; every card is source-checked, solved, and reviewed.
+  The collection is now marked complete; the surrounding review-topic bullets remain reference material rather than separate problem cards.
 
-- [ ] [Separation_defintions.pdf](assets/attachments/extracted/Separation_defintions.md) (29L, 0 problems) — topology
+- [x] [Separation_defintions.pdf](assets/attachments/extracted/Separation_defintions.md) (29L, 0 problems) — topology — disposition 2026-09-12: reconciled with existing `SRC-TOPOLOGY-SEPARATION-COUNTABILITY-REVIEW`. The PDF is a one-page definitions/review sheet whose only explicit proof tasks are the regularity and normality closure-neighborhood criteria; those are already represented in source order by `P-SEPDEF-01` and `P-SEPDEF-02`. Both cards are now source-checked and the collection is marked complete; the definitions/examples remain reference material rather than being manufactured into additional problem cards.
 
-- [x] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders** — disposition 2026-09-11: Harvard Math 21b Spring 2018 Practice Final 6 (May 8, 2018), ingested as `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6` with 14 source-order problem cards `P-HM21B18-PF6-01` through `P-HM21B18-PF6-14`. The inventory `0 problems` count was a false negative caused by the extraction layout; the PDF score table and headings explicitly contain Problems 1–14. Image-dependent prompts are preserved from source pages. The source-provided Problem 8 solution is not imported because it gives incorrect eigenvalues for its displayed matrix; the issue is recorded in `COMPLAINTS.md`.
+- [x] [solution6.pdf](assets/attachments/extracted/solution6.md) (795L, 0 problems) — applied-algebra **OCR: image placeholders** — disposition 2026-09-11: Harvard Math 21b Spring 2018 Practice Final 6 (May 8, 2018), ingested as `SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-6` with 14 source-order problem cards `P-HM21B18-PF6-01` through `P-HM21B18-PF6-14`. The inventory `0 problems` count was a false negative caused by the extraction layout; the PDF score table and headings explicitly contain Problems 1–14. Image-dependent prompts are preserved from source pages.
+  The source-provided Problem 8 solution is not imported because it gives incorrect eigenvalues for its displayed matrix; the issue is recorded in `COMPLAINTS.md`.
 
 - [x] [fields.pdf](assets/attachments/extracted/fields.md) (177L, 8 selected qual problems) — algebra — Fall 2007 — Disposition 2026-09-03: `SRC-UCSD-ALG-REVIEW-FIELDS`; review-sheet provenance retained and matching exam problems reuse canonical cards.
 

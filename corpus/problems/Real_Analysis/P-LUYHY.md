@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Suppose $1\leq p,q,r \leq \infty$ with
 \[
 {1\over p } + {1 \over q} = 1 + {1 \over r}

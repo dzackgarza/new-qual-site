@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-OR3BW
 kind: definition
-title: $p\dash$group
+title: '$p$-group'
 prompts:
 - What is a $p\dash$group?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-A group of order $p^n$ for some $n\geq 1$.
+Let $p$ be a prime.
+A \dfn{$p$-group} is a group of order $p^n$ for some integer $n\geq 1$.
 :::

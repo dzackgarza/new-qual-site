@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.warnings}
+::: {.warnings}
 The question as written on the original qual has several errors.
 What is below is the correct version of the inequality.
 :::
 
-:::{.problem}
+::: {.problem}
 1. Let $z_{1}$ and $z_{2}$ be two complex numbers.
 
 (a) Show that 
@@ -32,7 +32,7 @@ What is below is the correct version of the inequality.
 (c) Assume that $z_{1} \neq z_{2}$. Show that $\left|\frac{z_{1}-z_{2}}{1-\bar{z}_{1} z_{2}}\right|=1$ if only if $\left|z_{1}\right|=1$ or $\left|z_{2}\right|=1$.
 :::
 
-:::{.solution}
+::: {.solution}
 **Part 1**:
 For ease of notation, let $z=z_1$ and $w=z_2$
 We want to show

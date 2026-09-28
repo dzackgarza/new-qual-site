@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that every permutation in $S_n$ can be written as a product of pairwise disjoint cycles.
 :::
 

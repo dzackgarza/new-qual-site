@@ -9,12 +9,16 @@ MathJax error.
 
 The result is committed, so a build never reaches outside this repository.
 
-`PREAMBLE` is the file the author's own pipeline loads, and it is read the way
-LaTeX reads it, because every shortcut here has already cost the site a macro:
+`PREAMBLE` is the package the author's own LaTeX pipeline loads for macros:
+`dzg-macros.sty` from the pandoc-config repository, exposed at `~/.pandoc`. It
+`\input`s `tier1-mathjax-simple`, `tier2-mathjax-args`, `tier3-tex-complex`,
+`tier4-preamble`, `categories`, `spectral` and `tikz-macros` in that order, found
+through `TEXINPUTS` in `styles/macros/` (`SEARCH_PATH`). It is read the way LaTeX
+reads it, because every shortcut here has already cost the site a macro:
 
-  * `\input` is expanded in place, so `preamble_common.tex`, `latexmacs.tex`
-    and the rest are all seen, and in the order LaTeX sees them. Reading only
-    `latexmacs*.tex` missed `\qty` and `\one`.
+  * `\input` is expanded in place, from the search path, so every tier is seen
+    and in the order LaTeX sees them. Reading one macro file by name missed
+    `\qty` and `\one` when they lived in another.
   * a later definition replaces an earlier one, `\renewcommand` included.
     `latexmacs.tex` defines `\too` with one argument and then renews it with
     none; keeping the first put `\xrightarrow` under a `\too` that the corpus
@@ -43,7 +47,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-PREAMBLE = Path("/home/dzack/Dropbox/pandoc/custom/preamble.tex")
+PREAMBLE = Path.home() / ".pandoc" / "styles" / "dzg-macros.sty"
+SEARCH_PATH = (PREAMBLE.parent / "macros",)
 
 COMMENT_RE = re.compile(r"(?<!\\)%.*")
 INPUT_RE = re.compile(r"\\input\{([^}]+)\}")
@@ -102,16 +107,34 @@ NATIVE = frozenset({"varinjlim", "varprojlim"})
 USED_IN = ("corpus", "wiki")
 
 
-def preamble_text(path: Path, seen: frozenset[Path] = frozenset()) -> str:
-    """The preamble with its comments dropped and its `\\input` files spliced in."""
+def _find_input(including: Path, filename: str, search: tuple[Path, ...]) -> Path:
+    beside = including.parent / filename
+    if beside.is_file():
+        return beside
+    for directory in search:
+        found = sorted(directory.rglob(filename))
+        if len(found) > 1:
+            raise FileExistsError(f"{including}: \\input{{{filename}}} is ambiguous under {directory}: {', '.join(map(str, found))}")
+        if found:
+            return found[0]
+    raise FileNotFoundError(f"{including}: \\input{{{filename}}} is on no search path: {', '.join(map(str, (including.parent, *search)))}")
+
+
+def preamble_text(path: Path, search: tuple[Path, ...], seen: frozenset[Path] = frozenset()) -> str:
+    """The preamble with its comments dropped and its `\\input` files spliced in.
+
+    An `\\input` name is looked up beside the including file, then anywhere under
+    each `search` directory, as a `TEXINPUTS` entry ending in `//` does. A name
+    found nowhere, or twice under one directory, is an error, not a guess.
+    """
     text = "\n".join(COMMENT_RE.sub("", line) for line in path.read_text().splitlines())
     out, cut = [], 0
     for match in INPUT_RE.finditer(text):
         name = match.group(1)
-        child = path.parent / (name if name.endswith(".tex") else name + ".tex")
+        child = _find_input(path, name if name.endswith(".tex") else name + ".tex", search)
         out.append(text[cut : match.start()])
-        if child.is_file() and child not in seen:
-            out.append(preamble_text(child, seen | {path}))
+        if child not in seen:
+            out.append(preamble_text(child, search, seen | {path}))
         cut = match.end()
     out.append(text[cut:])
     return "".join(out)
@@ -145,7 +168,7 @@ def main() -> int:
     if not PREAMBLE.is_file():
         print(f"preamble not found: {PREAMBLE}", file=sys.stderr)
         return 1
-    defined = definitions(preamble_text(PREAMBLE))
+    defined = definitions(preamble_text(PREAMBLE, SEARCH_PATH))
 
     used: set[str] = set()
     for where in USED_IN:

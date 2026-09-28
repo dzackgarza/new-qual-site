@@ -13,6 +13,5 @@ review: draft
 ---
 
 ::: {.definition}
-A topological space $(X, \tau)$ is **compact** iff every open cover has a *finite* subcover.
-That is, if $\theset{U_{j}}_{j\in J} \subseteq \tau$ is a collection of open sets such that $X = \Union_{j\in J} U_{j}$, then there exists a *finite* subset $J' \subset J$ such that $X \subseteq \Union_{j\in J'} U_{j}$.
+A topological space $(X, \tau)$ is \dfn{compact} if every open [[D-AOJG3|cover]] of $X$ has a finite subcover: for every family $(U_j)_{j\in J}$ in $\tau$ with $X = \bigcup_{j\in J} U_j$, there is a finite subset $J'\subseteq J$ with $X = \bigcup_{j\in J'} U_j$.
 :::

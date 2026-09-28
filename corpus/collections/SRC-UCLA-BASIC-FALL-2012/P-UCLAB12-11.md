@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-11
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 11
+title: $LU$ factorization when the leading principal minors are nonzero
 classification:
   areas:
   - prelim

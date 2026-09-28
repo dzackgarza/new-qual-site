@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $U \subset \mathbb{C}$ be an open set.
 Let $f : U \setminus \{a\} \to \mathbb{C}$ be a holomorphic function with an isolated singularity at $a \in U$.
 
@@ -32,7 +32,7 @@ Show that:
 (iii) If $f$ has an essential singularity at $a$, then $g$ has an essential singularity at $a$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 P(w)=c_d w^d+\cdots+c_0,

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $E/F$ be a field extension with only finitely many intermediate fields. Prove that $E/F$ is simple.
 :::
 

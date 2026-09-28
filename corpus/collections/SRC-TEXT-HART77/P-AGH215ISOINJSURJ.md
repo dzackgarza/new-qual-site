@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that a morphism of sheaves is an isomorphism if and only if it is both injective and surjective.
 :::
 
-::: solution
+::: {.solution}
 Let $\phi: \mcf \to \mcg$ be a morphism of sheaves.
 Being injective and surjective says exactly that the sequence
 \[

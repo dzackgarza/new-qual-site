@@ -21,7 +21,7 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a PID.
 
 a. Classify irreducible $R\dash$modules up to isomorphism.

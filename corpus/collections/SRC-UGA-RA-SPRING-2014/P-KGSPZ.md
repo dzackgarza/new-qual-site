@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal M, \mu)$ be a finite measure space and suppose $f$ is a non-negative measurable function on $X$.
 Show that
 $$
@@ -37,9 +37,9 @@ $$
 and characterize the collection of functions of each type.
 :::
 
-::: solution
+::: {.solution}
 <1>1. If $\mu\{f>1\}>0$, the integrals diverge to infinity.
-::: proof
+::: {.proof}
 Let
 \[
 B:=\{x\in X:f(x)>1\}.
@@ -61,7 +61,7 @@ has positive measure. Then
 :::
 
 <1>2. If $f\le1$ almost everywhere, identify the finite limit.
-::: proof
+::: {.proof}
 Assume
 \[
 \mu\{f>1\}=0.
@@ -83,7 +83,7 @@ and the constant function $1$ is integrable because $\mu(X)<\infty$. By the Domi
 :::
 
 <1>3. State the exact dichotomy.
-::: proof
+::: {.proof}
 Combining the two cases,
 \[
 \boxed{

@@ -28,7 +28,7 @@ audit:
     kernel and cokernel, yielding H_0 = H_1 = H_2 = Z.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ and $B$ be circles bounding disjoint disks in the plane $z = 0$ in $\RR^3$.
 Let $X$ be the subset of the upper half-space of $\RR^3$ that is the union of the plane $z = 0$ and a (topological) cylinder that intersects the plane in $\partial C = A \cup B$.
 

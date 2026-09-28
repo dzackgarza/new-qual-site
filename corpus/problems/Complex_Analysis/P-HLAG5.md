@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)=z+1 / z$.
 Describe the images of both the circle $|z|=r$ of radius $r(r \neq 0)$ and the ray $\arg z=\theta_{0}$ under $f$ in terms of well known curves.
 :::
 
-::: solution
+::: {.solution}
 Write $z=re^{i\theta}$.
 
 For the circle $|z|=r$,

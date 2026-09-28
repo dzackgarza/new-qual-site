@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f \in \FF_p[x]^{\irr}$ is degree $d$,
 \[
 f \divides x^{p^n}-x \iff d\divides n
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 $\impliedby$:
 
 - If $d\divides n$, $x^d-1 \divides x^n-1$ by a previous exercise, and so $p^d-1 \divides p^n-1$.

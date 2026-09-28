@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a_n \in \Delta$ be a sequence such that $a_n \to 1$.
 Let $f_n : \Delta \to \Delta$ be a sequence of holomorphic functions such that $f_n(0) = a_n$.
 Show that $f_n \to 1$ uniformly on compact subsets of $\Delta$.
 :::
 
-::: solution
+::: {.solution}
 Fix $0<r<1$. By Schwarz--Pick,
 \[
 \left|\frac{f_n(z)-a_n}{1-\overline{a_n}f_n(z)}\right|\le |z|\le r

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-007
 kind: problem
-title: Kent State ring-theory qualifying problem 7
+title: Surjectivity of $U(\mathbb Z_n)\to U(\mathbb Z_m)$ and its failure for general ring surjections
 classification:
   areas: [algebra]
   topics: []

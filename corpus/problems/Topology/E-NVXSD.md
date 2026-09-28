@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $f:X\to Y$ is continuous and $X$ is compact then $f(X)$ is compact.
 
 #### Exercise

@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a PID and $M$ be an $R\dash$module.
 Let $p$ be a prime element of $R$.
 The module $M$ is called *$\generators{p}\dash$primary* if for every $m \in M$ there exists $k > 0$ such that $p^k m = 0$.

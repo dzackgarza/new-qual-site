@@ -29,11 +29,11 @@ audit:
 If $\mathrm{char} K = p \neq 0$ and $[F: K]$ is finite and not divisible by $p$, then $F$ is separable over $K$.
 :::
 
-::: solution
+::: {.solution}
 Suppose, toward a contradiction, that $F/K$ is not separable.
 
 <1>1. There exists $u\in F$ whose minimal polynomial over $K$ is inseparable.
-::: proof
+::: {.proof}
 By definition, an algebraic extension is separable if every element is separable.
 Since $F/K$ is finite, it is algebraic. Thus failure of separability provides
 such an element $u$.
@@ -41,7 +41,7 @@ such an element $u$.
 
 <1>2. If an irreducible polynomial $m(x)\in K[x]$ is inseparable in
 characteristic $p$, then $p$ divides $\deg m$.
-::: proof
+::: {.proof}
 An irreducible polynomial is inseparable exactly when its formal derivative is
 zero. Write
 \[
@@ -57,7 +57,7 @@ for some $g\in K[x]$. In particular $p\mid\deg m$.
 :::
 
 <1>3. The degree $[K(u):K]$ is divisible by $p$.
-::: proof
+::: {.proof}
 Let $m_u$ be the minimal polynomial of $u$ over $K$. By <1>1 it is inseparable,
 so <1>2 gives
 \[
@@ -66,7 +66,7 @@ p\mid\deg m_u=[K(u):K].
 :::
 
 <1>4. This contradicts the hypothesis that $p\nmid[F:K]$.
-::: proof
+::: {.proof}
 The tower law for
 \[
 K\subseteq K(u)\subseteq F
@@ -80,7 +80,7 @@ hypothesis.
 :::
 
 <1>5. Therefore $F/K$ is separable.
-::: proof
+::: {.proof}
 The assumption of inseparability led to the contradiction in <1>4.
 :::
 :::

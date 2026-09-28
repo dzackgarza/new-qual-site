@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{D} \to \mathbb{C}$ be a holomorphic function in the unit disk.
 Assume that $|f(z)|$ is constant on each circle $|z| = r$ for $0 < r < 1$; i.e., $|f(re^{i\theta})| = \varphi(r)$, for some non-negative function $\varphi$ on $0 < r < 1$.
 
@@ -25,7 +25,7 @@ Show that $f$ is constant.
 Show that $f(z) = cz^m$ for some constant $c$.
 :::
 
-::: solution
+::: {.solution}
 (i) Suppose $f(0)\ne0$. Then $f$ has no zero anywhere in $\mathbb D$: if
 $f(z_0)=0$ with $|z_0|=r>0$, the assumed radial constancy would give
 $|f|=0$ on the whole circle $|z|=r$, and the identity theorem would force

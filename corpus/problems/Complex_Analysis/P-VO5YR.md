@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Invert $\sin(z)$ using a geometric series, heeding the warning above.
 :::
 
-:::{.solution}
+::: {.solution}
 Just a computation:
 \[
 {1\over \sin(z)} 

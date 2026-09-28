@@ -25,16 +25,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity, and let $P$ be a prime ideal of $R$.
 If $R/P$ is finite, show that $P$ is maximal.
 :::
 
-::: solution
+::: {.solution}
 Because $P$ is prime, the quotient $R/P$ is an integral domain.
 
 <1>1. Every finite integral domain is a field.
-::: proof
+::: {.proof}
 Let $D$ be a finite integral domain and let $0\ne a\in D$. Multiplication by
 $a$ defines
 \[
@@ -48,12 +48,12 @@ Thus every nonzero element of $D$ is invertible.
 :::
 
 <1>2. The quotient $R/P$ is a field.
-::: proof
+::: {.proof}
 It is a finite integral domain, so <1>1 applies.
 :::
 
 <1>3. Therefore $P$ is maximal.
-::: proof
+::: {.proof}
 For a commutative ring with identity, an ideal $I$ is maximal if and only if
 $R/I$ is a field. Apply this criterion to $I=P$ and use <1>2.
 :::

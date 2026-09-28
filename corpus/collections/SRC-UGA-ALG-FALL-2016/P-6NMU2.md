@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Set $f(x) = x^3 - 5 \in \QQ[x]$.
 
 a. Find the splitting field $K$ of $f(x)$ over $\QQ$.

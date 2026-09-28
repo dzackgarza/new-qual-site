@@ -31,7 +31,7 @@ Show there is also a transposition, and deduce that the Galois group over $\QQ$ 
 [Fact from the sheet: if $f$ is a monic polynomial of degree $n$ over $\ZZ$ which is separable mod $p$, with irreducible factors mod $p$ of degrees $a, b, \ldots, c$, then the Galois group of $f$ over $\QQ$, as a subgroup of $S(n)$, contains a cycle with decomposition of type $a, b, \ldots, c$.]
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 f(X)=X^5-X-1\in\mathbf Z[X]
@@ -42,7 +42,7 @@ G=\operatorname{Gal}(f/\mathbf Q)\le S_5.
 $$
 
 <1>1. Modulo $2$, the polynomial factors as an irreducible quadratic times an irreducible cubic.
-::: proof
+::: {.proof}
 Reducing modulo $2$ gives
 $$
 \overline f(X)=X^5+X+1.
@@ -70,7 +70,7 @@ $$
 :::
 
 <1>2. The group $G$ contains a transposition.
-::: proof
+::: {.proof}
 Let
 $$
 \sigma=(ab)(cde)\in G
@@ -88,7 +88,7 @@ $$
 :::
 
 <1>3. Modulo $3$, the polynomial is irreducible.
-::: proof
+::: {.proof}
 Modulo $3$,
 $$
 \overline f(X)=X^5+2X+2.
@@ -123,7 +123,7 @@ $G$.
 :::
 
 <1>4. A subgroup of $S_5$ containing a $5$-cycle and a transposition is all of $S_5$.
-::: proof
+::: {.proof}
 After relabeling the five roots, write the $5$-cycle as
 $$
 \rho=(1\,2\,3\,4\,5)

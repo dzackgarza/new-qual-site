@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MODRES
 kind: theorem
 title: Coherent sheaves on projective space have finite resolutions by twists
+slogan: 'Every coherent sheaf on $\PP^n$ is built from finitely many twists $\OO(-d)$, in a resolution of length at most $n$.'
 classification:
   areas:
   - algebraic-geometry

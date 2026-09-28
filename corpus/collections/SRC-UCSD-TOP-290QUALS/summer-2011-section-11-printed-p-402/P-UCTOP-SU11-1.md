@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $M$ be a simply connected $n$-dimensional CW complex.
 Show that any map from $M$ to $\mathbb{RP}^{n+1}$ is homotopic to the constant map.
+:::
 
 ::: {.solution}
 <1>1. Any map $f:M\to\mathbb{RP}^{n+1}$ lifts to a map $\widetilde f:M\to S^{n+1}$.

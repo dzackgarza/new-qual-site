@@ -17,7 +17,9 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ is uncountable.
+:::
 
 ::: {.solution}
 <1>1. $\mathbb{R}^2 - \mathbb{Q}^2$ is the plane with the countable dense set $\mathbb{Q}^2$ removed.

@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose $f: \mathbb{R} \to \mathbb{R}$ is continuous and $\lim_{x \to \pm \infty} f(x) = 0$.
 Prove that $f$ is uniformly continuous on $\mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 Fix $\varepsilon>0$. Since
 \[
 f(x)\longrightarrow0

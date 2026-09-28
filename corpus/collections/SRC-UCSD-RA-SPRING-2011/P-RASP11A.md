@@ -27,7 +27,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Answer True or False.
 Support your claim with a short explanation or counterexample.
 
@@ -48,9 +48,9 @@ then $\mu \equiv 0$.
 Here $B_r(x)$ is the ball of radius $r$ at $x$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is true.
-::: proof
+::: {.proof}
 For each fixed $x\in X$, the sequence $(T_nx)$ converges in $Y$, hence is bounded. Therefore
 \[
 \sup_n\|T_nx\|_Y<\infty
@@ -70,7 +70,7 @@ Hence $T\in L(X,Y)$.
 :::
 
 <1>2. Part (b) is false.
-::: proof
+::: {.proof}
 Take $X=[0,1]$ with Lebesgue measure, $f\equiv0$, and for $n\ge2$ define
 \[
 f_n(x)
@@ -91,7 +91,7 @@ for every $n$. Hence $f_n$ does not converge to $f$ in $L^1$.
 :::
 
 <1>3. Part (c) is true.
-::: proof
+::: {.proof}
 By Tychonoff's theorem,
 \[
 K:=\prod_{\alpha\in A}X_\alpha
@@ -105,7 +105,7 @@ If $E\subset K$ is closed, then $E$ is compact as a closed subset of the compact
 :::
 
 <1>4. Part (d) is false.
-::: proof
+::: {.proof}
 Let $(r_n)$ be the Rademacher functions on $[0,1]$, for example
 \[
 r_n(x)=\operatorname{sgn}(\sin(2^n\pi x))
@@ -126,7 +126,7 @@ Since a sequence taking only the values $\pm1$ can converge only if it is eventu
 :::
 
 <1>5. Part (e) is true.
-::: proof
+::: {.proof}
 Because $\mu\ll m$, the Radon--Nikodym theorem gives a nonnegative
 \[
 h\in L^1(\mathbb R^n)

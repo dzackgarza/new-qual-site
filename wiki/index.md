@@ -5,11 +5,8 @@ order: 0
 
 # Wiki
 
-Notes, problem lists, and solutions for qualifying exams, filed by subject.
-This is the reference half of the site: open the subject you want and read the page you need.
-The [guides](guides.html) cover the same subjects as one ordered path each, to be read front to back.
-
-Start at the syllabus for your exam:
+Notes, definitions, theorems, and worked problems for graduate qualifying exams, filed by subject.
+Each subject page lists its chapters and syllabus; the [guides](guides.html) arrange the same subjects as one ordered sequence each.
 
 - [[prelim/index|Prelims]]
 
@@ -23,13 +20,14 @@ Start at the syllabus for your exam:
 
 - [[applied-algebra/index|Applied Algebra]]
 
-Within a subject the pages run core notes, then exercises, then past quals.
-Source dumps are in [[archives/index|Archives]].
+- [[algebraic-geometry/index|Algebraic geometry]]
 
-Past papers from other programs, for extra drill:
+Syllabus topic lists, solution collections, and the workshop index are in [[archives/index|Archives]].
 
-- [Berkeley prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
+## Exam archives at other departments
 
-- [Harvard prelims](http://www.math.harvard.edu/graduate/index.html#past)
+- [Berkeley preliminary exams](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
-- [UCLA prelims and quals](https://secure.math.ucla.edu/gradquals/hbquals.php)
+- [Harvard qualifying exams](http://www.math.harvard.edu/graduate/index.html#past)
+
+- [UCLA basic and qualifying exams](https://secure.math.ucla.edu/gradquals/hbquals.php)

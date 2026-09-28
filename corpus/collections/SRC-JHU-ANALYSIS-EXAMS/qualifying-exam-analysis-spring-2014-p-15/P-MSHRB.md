@@ -24,7 +24,9 @@ audit:
   note: "Justified holomorphic dependence of the Fourier integral by dominated differentiation on compact parameter sets, and verified the hypotheses for pointwise Fourier inversion."
 ---
 
+::: {.problem}
 Determine whether there is a nonzero smooth compactly supported function on $\mathbb{R}$ whose Fourier transform is also compactly supported?
+:::
 
 ::: {.solution}
 <1>1. Suppose $f$ is a nonzero smooth compactly supported function with $\widehat f$ also compactly supported.

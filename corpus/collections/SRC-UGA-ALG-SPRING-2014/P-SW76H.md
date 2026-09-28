@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $F\subset C$ be a field extension with $C$ algebraically closed.
 
 a. Prove that the intermediate field $C_{\text{alg}} \subset C$ consisting of elements algebraic over $F$ is algebraically closed.
@@ -27,7 +27,7 @@ a. Prove that the intermediate field $C_{\text{alg}} \subset C$ consisting of el
 b. Prove that if $F\to E$ is an algebraic extension, there exists a homomorphism $E\to C$ that is the identity on $F$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 C_{\mathrm{alg}}=\{z\in C:z\text{ is algebraic over }F\}.

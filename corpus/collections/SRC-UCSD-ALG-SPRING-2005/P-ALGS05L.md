@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 State and prove the Hilbert Basis Theorem.
 :::
 

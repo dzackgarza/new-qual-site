@@ -25,7 +25,7 @@ audit:
   note: Verified the equivalence using maximal ideals, the nilradical as the intersection of prime ideals, and the prime correspondence for A/n.
 ---
 
-::: problem
+::: {.problem}
 Consider a commutative ring $A$ with unity and let $\mathfrak{n}$ be its nilradical.
 Show that the following statements are equivalent:
 

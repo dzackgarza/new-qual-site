@@ -24,7 +24,7 @@ Prove that $\sim$ is an **equivalence relation** on $\{1, 2, \dots, n\}$.
 *(Note: If $j \sim k$ is defined solely by $(j\,k) \in H$, adding $j=k$ makes reflexivity explicit).*
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the transposition membership relation on indices defines an equivalence relation (reflexive, symmetric, transitive).
 
 <1>1. Reflexivity ($j \sim j$):

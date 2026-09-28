@@ -27,7 +27,7 @@ audit:
   note: "Checked the exhaustive quadratic-factor obstruction, both divisibilities into x^16-x, splitting over the given quotient field, and the degree-three subfield obstruction."
 ---
 
-::: problem
+::: {.problem}
 a. Prove that $K = (\mathbb{Z}/2\mathbb{Z})[y]/(y^4 + y^3 + y^2 + y + 1)$ is a field.
 
 b. Prove that $x^4 + x + 1$ and $x^2 + x + 1$ factor completely over the field $K$ above.
@@ -35,13 +35,13 @@ b. Prove that $x^4 + x + 1$ and $x^2 + x + 1$ factor completely over the field $
 c. Prove that $x^3 + x + 1$ is irreducible over the field $K$ above.
 :::
 
-::: solution
+::: {.solution}
 All polynomial computations below are in characteristic two.
 
 <1>1. The polynomial $h(y)=y^4+y^3+y^2+y+1$ is irreducible
 over $\mathbb F_2$, so $K$ is a field with $16$ elements.
 
-::: proof
+::: {.proof}
 Neither $0$ nor $1$ is a root of $h$, so $h$ has no linear
 factor. If it were reducible, its factorization into monic
 irreducibles would therefore consist of two quadratics.
@@ -65,7 +65,7 @@ x^{16}-x=\prod_{a\in K}(x-a)
 $$
 in $K[x]$.
 
-::: proof
+::: {.proof}
 The multiplicative group $K^\times$ has order $15$, so
 Lagrange's theorem gives $a^{15}=1$ for each nonzero $a$
 [@DF04]. Hence every $a\in K$, including zero, satisfies
@@ -78,7 +78,7 @@ leading coefficients.
 <1>3. Both polynomials in part (b) divide $x^{16}-x$, and
 therefore split completely over $K$.
 
-::: proof
+::: {.proof}
 In the quotient $\mathbb F_2[x]/(x^4+x+1)$, write $t$ for
 the class of $x$. The identity $t^4=t+1$ gives
 $$
@@ -103,7 +103,7 @@ field $K$, not merely over some extension of it.
 
 <1>4. The polynomial $g(x)=x^3+x+1$ is irreducible over $K$.
 
-::: proof
+::: {.proof}
 The values $g(0)=g(1)=1$ show that $g$ has no root in
 $\mathbb F_2$. A reducible cubic over a field has a linear
 factor, so $g$ is irreducible over $\mathbb F_2$.

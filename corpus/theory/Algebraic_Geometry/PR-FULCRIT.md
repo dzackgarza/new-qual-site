@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-FULCRIT
 kind: proposition
 title: Smooth, complete, projective, Fano, read off the fan
+slogan: 'For toric varieties, geometry becomes fan combinatorics: bases give smoothness, support gives completeness, polytopes give projectivity, and reflexive polytopes give Fano.'
 classification:
   areas:
   - algebraic-geometry

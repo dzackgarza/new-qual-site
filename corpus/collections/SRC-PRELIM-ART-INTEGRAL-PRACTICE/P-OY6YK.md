@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate, on intervals where the real-valued integrands are defined,
 \[
 \int\frac{x^2+2x+1}{x\sqrt{x^2-1}}\,dx
@@ -32,7 +32,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 For the first integral, split
 \[
 \frac{x^2+2x+1}{x\sqrt{x^2-1}}

@@ -16,13 +16,13 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Suppose $V$ and $W$ are vector spaces and $T: V \to W$ is a linear transformation.
 Suppose $v_1, \dots, v_k \in V$.
 Prove that if $T(v_1), \dots, T(v_k)$ form a linearly independent set in $W$, then $v_1, \dots, v_k$ form a linearly independent set in $V$.
 :::
 
-::: solution
+::: {.solution}
 Suppose
 \[
 a_1v_1+\cdots+a_kv_k=0.

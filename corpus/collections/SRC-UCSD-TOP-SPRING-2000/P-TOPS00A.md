@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a path connected topological space which is not compact.
 Show that $\bar{H}^0_{\mathrm{comp}}(X) = 0$.
 :::

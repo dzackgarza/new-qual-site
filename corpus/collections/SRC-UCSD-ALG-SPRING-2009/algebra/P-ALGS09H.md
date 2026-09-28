@@ -24,7 +24,7 @@ audit:
   note: Replaced the unsupported nonradicality assertion with the quotient-ring identification C[x,y]/I ≅ C[y]/(y^3(y-1)) and an explicit nilpotent class.
 ---
 
-::: problem
+::: {.problem}
 (a) Consider the ideal $I = (x^2 - y^3,\; x - y^2) \subseteq \mathbb{C}[x, y]$.
 Find $\operatorname{rad} I$, the radical of $I$, expressing it as an intersection of prime ideals (do not try to find a generating set for $\operatorname{rad} I$).
 

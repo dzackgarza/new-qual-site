@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-127
 kind: problem
-title: Kent State ring-theory qualifying problem 127
+title: A domain is the intersection of its localizations at maximal ideals
 classification:
   areas: [algebra]
   topics: []

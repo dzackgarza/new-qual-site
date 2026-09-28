@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that no group of order $p^2q^2$ is simple for primes $p<q$.
 :::
 

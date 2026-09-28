@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Determine the number of abelian groups of order $200$ up to isomorphism, and list all isomorphism classes in invariant factor and elementary divisor forms.
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 200=2^3 5^2,

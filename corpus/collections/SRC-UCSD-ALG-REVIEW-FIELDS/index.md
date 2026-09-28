@@ -43,5 +43,4 @@ source:
     - P-ALGS09E
 ---
 
-The review sheet reproduces selected field/Galois qualifying problems and then summarizes the standard theory.
-The collection reuses the canonical exam cards while preserving the review sheet's printed locators.
+The review sheet reproduces selected field and Galois theory qualifying-exam problems with their semester and problem labels, followed by a summary of the standard theory.

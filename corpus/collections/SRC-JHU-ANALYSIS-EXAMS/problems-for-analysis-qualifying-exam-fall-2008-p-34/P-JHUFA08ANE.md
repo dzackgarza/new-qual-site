@@ -16,6 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 5) (10 points) How many solutions does the equation
 
 $$
@@ -23,6 +24,7 @@ e ^ { z } = 3 z ^ { 7 }
 $$
 
 have in the unit disk $D = \{ x \in \mathbb { C } : | z | < 1 \} ?$ Justify your answer.
+:::
 
 ::: {.solution}
 <1>1. Rewrite as $e^z - 3z^7 = 0$; let $f(z) = -3z^7$ and $g(z) = e^z$.

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 13. Suppose $f$ is an analytic function defined everywhere in $\mathbb { C }$ and such that for each $z _ { 0 } \in \mathbb { C }$ at least one coeficient in the expansion
 
 $$
@@ -27,7 +27,7 @@ is equal to 0. Prove that f is a polynomial.
 [Hint: Use the fact that $c _ { n } n ! = f ^ { ( n ) } ( z _ { 0 } )$ and use a countability argument.]
 :::
 
-::: solution
+::: {.solution}
 For each $n\ge0$, let
 \[
 Z_n=\{z\in\mathbb C:f^{(n)}(z)=0\}.

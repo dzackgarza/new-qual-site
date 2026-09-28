@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)$ be a nonconstant meromorphic function.
 A complex number $\omega$ is called a period of $f$ if $f(z + \omega) = f(z)$ for all $z$.
 
@@ -25,7 +25,7 @@ A complex number $\omega$ is called a period of $f$ if $f(z + \omega) = f(z)$ fo
 The official Fall 2015 exam omits the word "nonconstant." Without it, part (ii) is false: every complex number is a period of a constant meromorphic function.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \Lambda=\{\omega\in\mathbb C:f(z+\omega)=f(z)\text{ for all }z\}.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVEMBP3
 kind: theorem
 title: Every curve embeds in $\PP^3$ and projects to a nodal plane curve
+slogan: 'Project until secants fill the room: every smooth projective curve embeds in $\PP^3$, and a general further projection gives only nodes.'
 classification:
   areas:
   - algebraic-geometry

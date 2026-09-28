@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a nonabelian simple group and $A=\operatorname{Aut}(G)$.
 Show that $A$ contains a normal subgroup isomorphic to $G$.
 :::

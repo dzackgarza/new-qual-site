@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\langle\,\cdot\,,\,\cdot\,\rangle$ be the scalar product on the ring of symmetric functions.
 
 (a) Evaluate $\langle e_1^n,e_1^n\rangle$.
@@ -20,7 +20,7 @@ Let $\langle\,\cdot\,,\,\cdot\,\rangle$ be the scalar product on the ring of sym
 (b) Evaluate $\langle h_3 p_6,s_{5,4}\rangle$.
 :::
 
-::: solution
+::: {.solution}
 We use the Hall inner product, for which the power-sum basis satisfies
 \[
 \langle p_\lambda,p_\mu\rangle=\delta_{\lambda\mu}z_\lambda.

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define the splitting field of a polynomial over a field.
 :::
 
-::: solution
+::: {.solution}
 Let $f(x)\in F[x]$. A **splitting field** of $f$ over $F$ is an extension
 $K/F$ such that
 

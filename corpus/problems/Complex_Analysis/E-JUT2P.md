@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Suppose $f$ is meromorphic. Show that if $z_0$ is a removable singularity of $f$, then it is also a removable singularity of $f'$.
 Conversely, if $z_0$ is removable for $f'$, then it is also removable for $f$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 It suffices to show that $f'$ is bounded in a neighborhood of $z_0$.
 Since $z_0$ is a removable singularity of $f$, there is a neighborhood $\DD_R(a)$ on which $\abs{f(z)} \leq M$ is bounded.
 Using the Cauchy estimates,

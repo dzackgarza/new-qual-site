@@ -136,7 +136,6 @@ which is the complete generating set.
 :::
  {.proof}
 definition of the homophony group.
-:::
 
 <1>2. "knight" and "night" are homophones, so $k = e$.
 ::: {.proof}
@@ -201,5 +200,4 @@ each letter-name is a homophone of the letter itself, and the extra letters in e
 <1>14. Q.E.D.
 ::: {.proof}
 <1>13.
-:::
 :::

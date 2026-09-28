@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Sigma_3$ be the closed orientable surface of genus $3$.
 Suppose $\mathbb{Z}_3$ acts on $\Sigma_3$; show that there must be at least two fixed points.
 :::

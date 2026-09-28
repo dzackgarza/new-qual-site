@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 a. Let $f(z) = u(x,y) + i v(x,y)$ be analytic in a domain $D \subset \mathbb{C}$.
 Let $z_0 = (x_0, y_0) \in D$ be a point in the intersection of the level curves $u(x,y) = c_1$ and $v(x,y) = c_2$.
 Suppose that $f'(z_0) \ne 0$.
@@ -32,7 +32,7 @@ b. Let $f(z) = z^2$ on $\mathbb{C}$.
 - What are the angles of intersection between the level curves $\operatorname{Re}(f) = 0$ and $\operatorname{Im}(f) = 0$? Is your answer in agreement with part (a)?
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 f=u+iv.

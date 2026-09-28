@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-02
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 2"
+title: The nested radical $\sqrt{x+\sqrt{x+\sqrt{x+\cdots}}}$
 classification:
   areas:
   - prelim

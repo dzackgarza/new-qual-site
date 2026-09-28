@@ -24,7 +24,7 @@ prompts:
 ::: {.definition}
 Let $Z \subseteq \abs{X}$ be closed.
 For $X = \Spec A$ take $\mfa \da \Intersect_{\mfp \in Z} \mfp$, a radical ideal, and give $Z$ the structure $\Spec(A/\mfa)$.
-These agree on overlaps, so they glue to a closed subscheme structure on $Z$ for any $X$: the **reduced induced structure** $Z^\red$.
+These agree on overlaps, so they glue to a closed subscheme structure on $Z$ for any $X$: the \dfn{reduced induced structure} $Z^\red$.
 :::
 
 ::: {.proposition}
@@ -32,9 +32,9 @@ $Z^\red$ is the unique reduced closed subscheme of $X$ with underlying space $Z$
 :::
 
 ::: {.remark}
-"Canonical" here means a universal property, and that is what should be volunteered: any morphism from a reduced scheme $T \to X$ whose image lies in $Z$ factors uniquely through $Z^\red$.
+"Canonical" here is expressed by the universal property: any morphism from a reduced scheme $T\to X$ whose image lies in $Z$ factors uniquely through $Z^\red$.
 Taking $Z = \abs{X}$ gives the reduction $X^\red \to X$, a homeomorphism which is not an isomorphism unless $X$ was already reduced.
 
 The ideal is radical by construction, which is where the classical Nullstellensatz dictionary sits: $\mci(V(\mfa)) = \sqrt{\mfa}$ says that passing to the reduced structure is taking the radical.
-The scheme language keeps the non-radical ideals, and the reduced induced structure is the functor that throws them away.
+Passing to the reduced induced structure replaces the defining ideal sheaf by its radical.
 :::

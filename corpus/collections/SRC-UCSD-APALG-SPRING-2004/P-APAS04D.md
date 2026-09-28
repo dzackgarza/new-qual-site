@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ and $H$ be a finite groups, $A:G\to GL(n,\mathbb{C})$ be a representation of $G$ and $B:H\to GL(m,\mathbb{C})$ be a representation of $H$.
 
 (a) Define the representation $A\times B:G\times H\to GL(n\cdot m,\mathbb{C})$.

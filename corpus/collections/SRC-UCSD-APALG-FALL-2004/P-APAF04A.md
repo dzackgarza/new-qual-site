@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 State and prove the Cayley-Hamilton Theorem.
 (You may use the Schur Decomposition Theorem.)
 :::

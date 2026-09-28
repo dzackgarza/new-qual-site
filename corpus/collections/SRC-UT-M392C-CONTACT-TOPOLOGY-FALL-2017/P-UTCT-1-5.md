@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UTCT-1-5
 kind: problem
-title: UT Austin M392C Contact Topology Exercise 1.5
+title: $C^k$ hyperplane fields are locally kernels of $C^k$ 1-forms
 classification:
   areas:
   - topology

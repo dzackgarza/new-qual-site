@@ -16,13 +16,13 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $U \subset \mathbb{C}$ be a connected open set and let $a \in U$.
 Let $f_n: U \to \mathbb{D}$ be a sequence of analytic functions such that $f_n(a) = 0$ for all $n \geq 1$.
 Prove that there exists an analytic function $f: U \to \mathbb{D}$ and a subsequence $\{f_{n_k}\}$ of $\{f_n\}$ which converges uniformly to $f$ on compact subsets of $U$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Extract a uniformly convergent compactly convergent subsequence in $\mathbb{D}$.
 
 <1>1. Bounded holomorphic family: *Proof:*\

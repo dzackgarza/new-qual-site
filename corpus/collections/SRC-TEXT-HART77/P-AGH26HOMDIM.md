@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be a projective variety with homogeneous coordinate ring $S(Y)$.
 Show that $\dim S(Y) = \dim Y + 1$.
 
@@ -25,7 +25,7 @@ Here $U_i \da \PP^n \sm H_i$, where $H_i = Z(x_i)$ is a coordinate hyperplane, a
 Conclude also that $\dim Y = \dim Y_i$ whenever $Y_i \da \phi_i(Y \intersect U_i)$ is nonempty.
 :::
 
-::: solution
+::: {.solution}
 Cover $Y$ by the affine charts $Y_i$.
 Then $\dim Y = \sup_i \dim Y_i$, and since there are only finitely many charts the supremum is attained; after relabelling, assume it is attained at $Y_0$.
 

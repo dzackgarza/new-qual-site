@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F15-12
 kind: problem
-title: Questions from Tie — Fall 2015, question 12
+title: Analytic functions real on a closed curve are constant
 classification:
   areas:
   - complex-analysis

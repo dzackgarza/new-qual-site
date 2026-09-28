@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Show that the splitting field of $f(x) = x^3-2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$ (where $\zeta_3 = e^{2\pi i/3}$).
 :::
 
-::: solution
+::: {.solution}
 Let $\alpha=\sqrt[3]{2}$ and let $\zeta_3$ be a primitive cube root of unity. The roots of
 \[
 x^3-2

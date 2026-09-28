@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that in a homotopy-associative H-space whose set of path-components is a group with respect to the multiplication induced by the H-space structure, all the path-components must be homotopy equivalent.
 [Homotopy-associative means associative up to homotopy.]
+:::
 
 ::: {.solution}
 Let $X_0$ be the path-component of the identity $e$, and let $X_a$ be any other path-component. Choose $x\in X_a$. Since the set of path-components is a group under multiplication, choose $y$ in the inverse component $X_{a^{-1}}$.

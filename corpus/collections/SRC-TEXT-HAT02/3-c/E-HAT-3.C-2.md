@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that a retract of an H-space is an H-space if it contains the identity element.
+:::
 
 ::: {.solution}
 Let $X$ be an H-space with identity $e$, and let $A\subset X$ be a retract containing $e$. Write

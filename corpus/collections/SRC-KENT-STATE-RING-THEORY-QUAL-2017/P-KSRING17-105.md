@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-105
 kind: problem
-title: Kent State ring-theory qualifying problem 105
+title: Coefficients of a nilpotent polynomial are nilpotent
 classification:
   areas: [algebra]
   topics: []

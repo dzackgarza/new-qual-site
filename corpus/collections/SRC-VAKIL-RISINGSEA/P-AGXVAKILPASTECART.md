@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Show that if the two squares in this diagram are cartesian, then the outer square is also cartesian:
 
 \begin{tikzcd}
@@ -24,7 +24,7 @@ Show that if the two squares in this diagram are cartesian, then the outer squar
 \end{tikzcd}
 :::
 
-::: solution
+::: {.solution}
 - We must show that given two maps $R\to V$ and $R\to Y$ such that $(V\to Z) \circ (R\to V) = (Y\to Z) \circ (R\to Y)$, there is a unique map $R\to U$ giving a commuting diagram:
 
 \begin{tikzcd}
@@ -64,4 +64,11 @@ Show that if the two squares in this diagram are cartesian, then the outer squar
 	& R\ar[ul, dotted, "\exists !"] \ar[r]\ar[d] & V\ar[d] \\
 	& W \ar[r] & X
 \end{tikzcd}
+:::
+
+::: {.remark}
+Erratum: the argument above produces a map $R \to U$ but never proves it unique, and it omits the compatibility the top square needs.
+
+- The top square applies to $R\to W$ and $R\to V$ only if their composites to $X$ agree; they do, because $R\to W$ was built so that its composite to $X$ is $(V\to X)\circ(R\to V)$. The composite $R\to U\to W\to Y$ is then the given $R\to Y$.
+- Uniqueness: if $u, u' : R\to U$ both commute with the maps to $V$ and $Y$, then their composites to $W$ have the same composites to $X$ and to $Y$, so they are equal by uniqueness in the bottom square. Then $u$ and $u'$ have the same composites to $V$ and $W$, so $u = u'$ by uniqueness in the top square.
 :::

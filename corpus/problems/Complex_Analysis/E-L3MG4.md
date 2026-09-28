@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I\da \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}
 .\]
 
 :::
 
-:::{.solution title="Dogbone and residue at $\infty$"}
+::: {.solution title="Dogbone and residue at $\infty$"}
 Take a branch cut $[-1, 1]$ and $\Gamma$ the standard dogbone contour:
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-28_01-50-50.png)

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Can you have a degree 7 irreducible polynomial over $\mathbb{F}_p$? How about a degree 14 irreducible polynomial?
 :::
 
-::: solution
+::: {.solution}
 Yes in both degrees; in fact, over every finite field $\mathbb F_p$ there are irreducible polynomials of every positive degree.
 
 For $n\ge1$, let $\mathbb F_{p^n}$ be the field with $p^n$ elements. Its multiplicative group is cyclic. If $\alpha$ generates $\mathbb F_{p^n}^{\times}$, then

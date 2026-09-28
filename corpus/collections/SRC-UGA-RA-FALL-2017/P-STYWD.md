@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let
 $$
 f(x) = \sum_{n=0}^{\infty} \frac{x^{n}}{n!}.
@@ -22,7 +22,7 @@ $$
 Determine all intervals $I \subseteq \mathbb{R}$ on which the series converges uniformly, and prove the characterization.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the power series $\sum_{n=0}^\infty \frac{x^n}{n!}$ converges uniformly on an interval $I \subseteq \mathbb{R}$ if and only if $I$ is bounded.
 
 <1>1. Uniform convergence on bounded intervals (Weierstrass $M$-test):

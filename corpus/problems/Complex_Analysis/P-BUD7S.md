@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $A, B \subseteq \RR^n$ are disjoint and compact.
 Prove that there exist $a\in A, b\in B$ such that
 \[  
@@ -22,7 +22,7 @@ Prove that there exist $a\in A, b\in B$ such that
 .\]
 :::
 
-:::{.solution}
+::: {.solution}
 Define a function
 \[
 d: A \cross B &\to \RR \\

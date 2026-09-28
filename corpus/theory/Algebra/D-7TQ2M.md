@@ -13,8 +13,11 @@ review: reviewed
 ---
 
 ::: {.definition}
-Let $G$ be a finite group and $p$ a prime, and write $\abs G = p^a m$ with $p \nmid m$.
-A subgroup $S \leq G$ is a **Sylow $p\dash$subgroup** if $\abs S = p^a$, i.e. its order realizes the full $p\dash$part of $\abs G$.
+Let $G$ be a finite group and $p$ a prime, and write $\abs G = p^a m$ with $a\geq 0$ and $p \nmid m$.
+A subgroup $S \leq G$ is a \dfn{Sylow $p\dash$subgroup} of $G$ if $\abs S = p^a$.
+:::
 
-Equivalently, $S$ is a $p\dash$subgroup of $G$ that is maximal among $p\dash$subgroups under inclusion.
+::: {.proposition}
+Let $G$ be a finite group and $p$ a prime.
+A subgroup $S\leq G$ is a Sylow $p\dash$subgroup if and only if $S$ is a [[D-FIB7S|$p\dash$group]] that is maximal under inclusion among the $p\dash$subgroups of $G$.
 :::

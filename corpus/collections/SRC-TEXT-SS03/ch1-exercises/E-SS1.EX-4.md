@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 4. Show that it is impossible to define a total ordering on C. In other words, one cannot find a relation between complex numbers so that:
 
 (i) For any two complex numbers z, w, one and only one of the following is true: $z \succ w , w \succ z \ \mathrm { o r } \ z = w .$
@@ -27,7 +27,7 @@ audit:
 [Hint: First check if $i \succ 0$ is possible.]
 :::
 
-::: solution
+::: {.solution}
 Assume such an ordering exists. For every nonzero $z\in\mathbb C$, trichotomy gives either $z\succ0$ or $-z\succ0$. In either case, compatibility with multiplication implies
 \[
 z^2\succ0.

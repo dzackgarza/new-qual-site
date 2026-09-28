@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that an $n$-connected, $n$-dimensional CW complex is contractible.
+:::
 
 ::: {.solution}
 Let \(X\) be an \(n\)-connected, \(n\)-dimensional CW complex. Thus

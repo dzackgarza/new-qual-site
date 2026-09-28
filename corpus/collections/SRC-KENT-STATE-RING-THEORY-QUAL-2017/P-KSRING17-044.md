@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-044
 kind: problem
-title: Kent State ring-theory qualifying problem 44
+title: Ideals $I$ with $1+I$ consisting of units lie in the Jacobson radical
 classification:
   areas: [algebra]
   topics: []

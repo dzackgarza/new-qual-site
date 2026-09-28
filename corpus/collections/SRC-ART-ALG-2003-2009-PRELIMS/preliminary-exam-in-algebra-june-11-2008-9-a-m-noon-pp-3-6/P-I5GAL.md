@@ -25,12 +25,12 @@ audit:
   note: "Checked faithfulness, fixed coefficients, finite separability, and both group-order inequalities; no realization over a prescribed base field is assumed."
 ---
 
-::: problem
+::: {.problem}
 Recall that every finite group $G$ is isomorphic to a subgroup of $S_n$ for some $n > 0$.
 Show that there are fields $E \supseteq F$ such that the Galois group of $E$ over $F$ is isomorphic to $G$.
 :::
 
-::: solution
+::: {.solution}
 Let $m=|G|$, let $\{x_g:g\in G\}$ be algebraically independent
 indeterminates over $\mathbb Q$, and set
 $$
@@ -45,7 +45,7 @@ $$
 <1>1. The map $h\mapsto\sigma_h$ embeds $G$ into the group of
 $F$-automorphisms of $E$.
 
-::: proof
+::: {.proof}
 Permuting algebraically independent variables gives an automorphism
 of the polynomial ring and hence of its fraction field $E$.
 The permutation associated with $h^{-1}$ is its inverse. On each
@@ -63,7 +63,7 @@ $\sigma_h$ fixes $F$.
 <1>2. The extension $E/F$ is finite and separable, and is a splitting
 field over $F$.
 
-::: proof
+::: {.proof}
 The polynomial
 $$
 p(T)=\prod_{g\in G}(T-x_g)
@@ -81,7 +81,7 @@ the splitting field of the separable polynomial $p$ over $F$.
 <1>3. The displayed $m$ automorphisms are all the automorphisms of
 $E/F$.
 
-::: proof
+::: {.proof}
 By the primitive element theorem for finite separable extensions
 [@DF04], there is $u\in E$ with $E=F(u)$. The polynomial
 $$

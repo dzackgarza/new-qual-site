@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-3UXK7
 kind: theorem
-title: Convolutions vanish at infinity
+title: Convolutions of bounded integrable functions vanish at infinity
+slogan: 'Bounded $L^1$ convolution decays to zero at infinity.'
 classification:
   areas:
   - real-analysis
@@ -14,9 +15,10 @@ relations: []
 review: draft
 ---
 
-:::{.theorem}
-\[
-f,g \in L^1 \text{ and  bounded}  \implies \lim_{|x| \rightarrow \infty} (f * g)(x) = 0
-.\]
-
+::: {.theorem}
+Let $f,g\in L^1(\RR^n)$ be essentially bounded.
+Then the [[D-TS42Y|convolution]] $f*g$ is defined at every $x\in\RR^n$ and
+$$
+\lim_{\abs{x}\to\infty}(f*g)(x)=0 .
+$$
 :::

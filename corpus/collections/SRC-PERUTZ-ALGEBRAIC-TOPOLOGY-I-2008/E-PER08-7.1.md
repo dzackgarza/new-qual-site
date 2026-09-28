@@ -2,16 +2,45 @@
 schema: qual/card@1
 id: E-PER08-7.1
 kind: problem
-title: Perutz Algebraic Topology I Exercise 7.1
+title: Homology splits over path components
 classification:
   areas: [topology]
   topics: []
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gpt-5.6-sol
+  date: 2026-09-13
+- event: solution-reviewed
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Completed from the retained Perutz Algebraic Topology I source and checked against the stated hypotheses.
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Retyped the mathematics against Exercise 7.1 of the Perutz 2008 notes.
 ---
 
 ::: {.problem}
-Show that, in general, Hn(X) = ⊕
-Y ∈π0(X) Hn(Y ), where π0(X) is the
-set of path-components of X. Thus H0(X) ∼= Zπ0(X).
+Show that, in general, $H_n(X)=\bigoplus_{Y\in\pi_0(X)}H_n(Y)$, where $\pi_0(X)$ is the set of path-components of $X$.
+Thus $H_0(X)\cong\mathbb{Z}^{\pi_0(X)}$.
+:::
+
+::: {.solution}
+Every singular simplex has path-connected image, hence its image lies in a unique path component of $X$.
+Therefore the singular chain complex decomposes degreewise, compatibly with the boundary maps, as
+\[
+S_*(X)=\bigoplus_{Y\in\pi_0(X)}S_*(Y).
+\]
+Kernels and images of a direct sum of chain complexes are the corresponding direct sums, so
+\[
+H_n(X)\cong\bigoplus_{Y\in\pi_0(X)}H_n(Y).
+\]
+For every path-connected component $Y$, $H_0(Y)\cong\mathbb Z$.
+Hence
+\[
+H_0(X)\cong\bigoplus_{Y\in\pi_0(X)}\mathbb Z,
+\]
+the free abelian group on the set $\pi_0(X)$, usually denoted $\mathbb Z[\pi_0(X)]$.
 :::

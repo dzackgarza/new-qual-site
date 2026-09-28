@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-VGA2L
 kind: proposition
 title: Curves of genus $0$
+slogan: 'A genus-zero curve with a rational point is $\PP^1$; without one, the anticanonical system presents it as a smooth conic.'
 classification:
   areas:
   - algebraic-geometry
@@ -38,5 +39,5 @@ Without a rational point the anticanonical divisor still has degree $2$ and $\el
 The conic $x^2 + y^2 + z^2 = 0$ over $\RR$ is the standard curve of genus zero that is not $\PP^1$.
 
 Over a finite field the second case cannot occur: a smooth conic over $\FF_q$ always has a rational point by the Chevalley--Warning theorem, so every genus-zero curve there is $\PP^1$.
-That is the answer to the follow-up, and it is a counting statement, not a geometric one.
+Thus over a finite field every smooth projective genus-zero curve has a rational point and is isomorphic to $\PP^1$.
 :::

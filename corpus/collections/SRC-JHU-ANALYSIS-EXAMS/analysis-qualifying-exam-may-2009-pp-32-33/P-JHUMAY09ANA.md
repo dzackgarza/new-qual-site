@@ -25,6 +25,7 @@ audit:
   note: "Excluded nonzero poles, extended zf across zero, checked vanishing of all positive Taylor coefficients and proved the exact allowed coefficient disk including its boundary."
 ---
 
+::: {.problem}
 1. Find all meromorphic functions f on C such that
 
 $$
@@ -32,8 +33,9 @@ $$
 $$
 
 Give explicit formulas for the functions and give a proof for your answer.
+:::
 
-::: solution
+::: {.solution}
 The functions are exactly
 $$
 \boxed{f(z)=\frac{a}{z},\qquad a\in\mathbb C,\quad |a|\leq\log2,}
@@ -42,7 +44,7 @@ viewed as meromorphic functions; $a=0$ gives the identically
 zero function.
 
 <1>1. The function $g(z)=zf(z)$ extends to an entire function.
-::: proof
+::: {.proof}
 At any nonzero point the given upper bound is locally
 finite. A pole there would make $|f|$ unbounded in every
 punctured neighborhood, contradicting the bound. Thus $f$
@@ -56,7 +58,7 @@ theorem gives an entire extension, still denoted $g$
 :::
 
 <1>2. The entire extension is constant.
-::: proof
+::: {.proof}
 Write $g(z)=\sum_{n\geq0}b_nz^n$. For every $R>0$,
 Cauchy's coefficient estimate gives
 $$
@@ -71,7 +73,7 @@ as a meromorphic function.
 :::
 
 <1>3. The coefficient restriction is necessary and sufficient.
-::: proof
+::: {.proof}
 The original inequality for $f=a/z$ is equivalent, after
 multiplication by $|z|>0$, to
 $$

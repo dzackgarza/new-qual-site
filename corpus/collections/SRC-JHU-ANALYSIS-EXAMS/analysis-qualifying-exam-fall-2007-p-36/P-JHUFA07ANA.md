@@ -24,6 +24,7 @@ audit:
   note: "Computed both Cauchy–Riemann equations, not just the one that holds identically, and distinguished differentiability on two lines from analyticity on an open set."
 ---
 
+::: {.problem}
 1) Is the function
 
 $$
@@ -31,13 +32,14 @@ f ( x , y ) = x ^ { 3 } + 3 x y ^ { 2 } - 3 x ^ { 2 } y - 1 0 + i ( y ^ { 3 } + 
 $$
 
 complex analytic? Prove that your answer is correct.
+:::
 
-::: solution
+::: {.solution}
 The function is not complex analytic on any nonempty open set.
 
 <1>1. The Cauchy–Riemann equations hold only on two real lines.
 
-::: proof
+::: {.proof}
 Write $f=u+iv$ with
 $u=x^3+3xy^2-3x^2y-10$ and
 $v=y^3+3x^2y-3xy^2+5$. Then
@@ -61,7 +63,7 @@ points of these lines [@SS03].
 
 <1>2. This pointwise differentiability cannot give analyticity on an open set.
 
-::: proof
+::: {.proof}
 A holomorphic function must satisfy both Cauchy–Riemann
 equations at every point of its open domain [@SS03].
 The union of two lines contains no nonempty open disk:

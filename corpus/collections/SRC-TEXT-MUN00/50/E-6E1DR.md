@@ -22,7 +22,7 @@ Corollary.
 A space $X$ can be imbedded as a closed subspace of $\mathbb{R}^N$ for some $N$ if and only if $X$ is locally compact and Hausdorff with a countable basis, and has finite topological dimension.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a topological space $X$ embeds as a closed subspace of some Euclidean space $\mathbb{R}^N$ if and only if $X$ is locally compact Hausdorff, second-countable, and of finite topological dimension $\dim X = m < \infty$.
 
 <1>1. Direct implication ($\implies$): Suppose $h: X \to \mathbb{R}^N$ is an embedding onto a closed subspace $h(X) \subseteq \mathbb{R}^N$.

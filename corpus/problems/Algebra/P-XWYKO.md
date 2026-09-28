@@ -14,8 +14,8 @@ relations: []
 review: draft
 ---
 
-::: problem
-Let $V$ be $6$-dimensional and let $T\in\End(V)$ satisfy
+::: {.problem}
+Let $V$ be $6$-dimensional and let $T\in\operatorname{End}(V)$ satisfy
 \[
 T^6=0,
 \qquad
@@ -24,7 +24,7 @@ T^5\ne0.
 Show that $T$ has a single Jordan block of size $6$.
 :::
 
-::: solution
+::: {.solution}
 Since $T^6=0$, the minimal polynomial is a power of $x$:
 \[
 m_T(x)=x^r

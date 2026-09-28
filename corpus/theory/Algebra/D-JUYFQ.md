@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-JUYFQ
 kind: definition
-title: Module Morphisms
+title: Module morphisms
 classification:
   areas:
   - algebra
@@ -14,5 +14,9 @@ review: draft
 ---
 
 ::: {.definition}
-A map $f: M\to N$ is a **morphism of modules** iff $f(rm + n) = rf(m) + f(n)$.
+Let $R$ be a ring and $M,N$ be [[D-NQZUY|$R$-modules]].
+A map $f\colon M\to N$ is a \dfn{morphism of modules}, or $R$-linear map, if
+$$
+f(rm + m') = rf(m) + f(m')\qquad\text{for all } r\in R \text{ and } m,m'\in M.
+$$
 :::

@@ -39,7 +39,7 @@ $$
 [Hint: Apply Lemma 21.4; recall from the exercises of §19 that if $x_n \to x$ and $y_n \to y$, then $x_n \times y_n \to x \times y$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the algebraic limit theorems for convergent sequences in $\mathbb{R}$ using product convergence and the continuity of arithmetic operations.
 
 <1>1. Product sequence convergence:

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-020
 kind: problem
-title: Kent State ring-theory qualifying problem 20
+title: Chinese remainder theorem for two comaximal ideals
 classification:
   areas: [algebra]
   topics: []

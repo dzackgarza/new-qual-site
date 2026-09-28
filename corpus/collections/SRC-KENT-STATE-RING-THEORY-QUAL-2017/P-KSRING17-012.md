@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-012
 kind: problem
-title: Kent State ring-theory qualifying problem 12
+title: Finite commutative rings without zero divisors are fields
 classification:
   areas: [algebra]
   topics: []

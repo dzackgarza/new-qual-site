@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove that if $1 < p < \infty$ and $f_n$ converges to $f$ weakly in $\ell^p(\mathbb{N})$, then $\sup_n \|f_n\|_p < \infty$ and $f_n \to f$ pointwise.
 
 (The converse is also true, but you are not asked to prove it here.)
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Weak convergence implies uniform boundedness of the norms.
-::: proof
+::: {.proof}
 Let $q=p/(p-1)$, so $(\ell^p)^*=\ell^q$. For each $n$, define
 \[
 T_n:\ell^q\to\mathbb C,
@@ -58,7 +58,7 @@ Hence
 :::
 
 <1>2. Weak convergence implies coordinatewise convergence.
-::: proof
+::: {.proof}
 Fix $k\in\mathbb N$. Let $e_k\in\ell^q$ be the sequence with $1$ in the $k$th coordinate and $0$ elsewhere. The corresponding continuous linear functional on $\ell^p$ is
 \[
 x\longmapsto \langle x,e_k\rangle=x(k).

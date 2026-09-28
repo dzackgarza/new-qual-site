@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $(X, \mathcal{M}, \mu)$ be a finite measure space.
 
 (a) (10 pts) Let $1 \leq p \leq \infty$.
@@ -37,9 +37,9 @@ Show that the assumptions of part (b) above hold iff both $L^p(d\mu)$ and $L^1(d
 Hint: Show that if $(X, \mathcal{M}, \mu)$ is any measure space where there exists $0 < c, C < \infty$ such that $c \leq \mu(E) \leq C$ for every set $E \in \mathcal{M}$ of nonzero measure, then $L^1(d\mu)$ is finite dimensional.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove that every closed $L^p$ ball is closed in $L^1$.
-::: proof
+::: {.proof}
 Let $f_n\to f$ in $L^1$ and suppose $\|f_n\|_p\le M$ for every $n$. Passing to a subsequence, still denoted $f_n$, we may assume
 \[
 f_n(x)\to f(x)
@@ -64,7 +64,7 @@ Thus the radius-$M$ $L^p$ ball is closed in $L^1$.
 :::
 
 <1>2. Prove part (b).
-::: proof
+::: {.proof}
 Assume first that
 \[
 \|f\|_p\le C\|f\|_1
@@ -87,7 +87,7 @@ is continuous because $\mu(X)<\infty$, and it is bijective. By the bounded inver
 :::
 
 <1>3. The norm inequality forces a uniform lower bound on nonzero set measures.
-::: proof
+::: {.proof}
 Assume $1<p<\infty$ and the inequality from Step 2. Apply it to $f=\mathbf1_E$ for a measurable set $E$ with $\mu(E)>0$:
 \[
 \mu(E)^{1/p}\le C\mu(E).
@@ -108,7 +108,7 @@ Of course also $\mu(E)\le\mu(X)<\infty$.
 :::
 
 <1>4. A finite measure space with that lower bound has finite-dimensional $L^1$.
-::: proof
+::: {.proof}
 There cannot be more than
 \[
 N:=\left\lfloor\frac{\mu(X)}c\right\rfloor
@@ -135,7 +135,7 @@ The same description shows $L^p=L^1$ as vector spaces and $L^p$ is finite dimens
 :::
 
 <1>5. Finish the equivalence in part (c).
-::: proof
+::: {.proof}
 Steps 3 and 4 show that the assumptions in part (b) imply that both $L^p$ and $L^1$ are finite dimensional.
 
 Conversely, suppose both are finite dimensional. Since bounded measurable simple functions lie in $L^p$ and are dense in $L^1$ on a finite measure space, $L^p$ is dense in $L^1$. A finite-dimensional subspace is closed, so density forces

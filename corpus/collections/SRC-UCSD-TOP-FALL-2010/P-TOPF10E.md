@@ -20,7 +20,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Show that there does not exist a map of degree $1$ from $S^2 \times S^2$ to $\mathbb{CP}^2$.
 :::
 

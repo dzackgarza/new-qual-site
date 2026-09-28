@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-F16-03
 kind: problem
-title: Questions from Tie — Fall 2016, question 3
+title: Complex line integrals and the ML estimate for $\int_{|z|=R}\frac{\log z}{z^2}\,dz$
 classification:
   areas:
   - complex-analysis
@@ -17,7 +17,8 @@ audit:
 ---
 
 ::: {.problem}
-(a) $f : D  \mathbb { C }$ be a continuous function, where $D \subset \mathbb { C }$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve. Give a precise definition of the complex line integral
+(a) $f : D  \mathbb { C }$ be a continuous function, where $D \subset \mathbb { C }$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve.
+Give a precise definition of the complex line integral
 
 $$
 \int _ { \alpha } f .

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S^1 \vee S^1$ be the one point union of circles.
 Prove $\pi_1(S^1 \vee S^1, x_0)$ is not abelian.
 :::

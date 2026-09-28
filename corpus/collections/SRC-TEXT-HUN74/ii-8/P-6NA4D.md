@@ -28,11 +28,11 @@ audit:
 Show that any group of order $p^2q$ (for primes $p,q$) is solvable.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=p^2q$ with $p,q$ prime.
 
 <1>1. If $p=q$, then $G$ is solvable.
-::: proof
+::: {.proof}
 In this case $|G|=p^3$, so $G$ is a finite $p$-group. Every finite $p$-group
 is nilpotent, hence solvable.
 :::
@@ -40,7 +40,7 @@ is nilpotent, hence solvable.
 Assume henceforth that $p\ne q$.
 
 <1>2. At least one Sylow subgroup of $G$ is normal.
-::: proof
+::: {.proof}
 Let $n_p$ and $n_q$ denote the numbers of Sylow $p$- and $q$-subgroups.
 Sylow's theorems give
 \[
@@ -77,7 +77,7 @@ and normal. Thus in all cases at least one Sylow subgroup is normal.
 :::
 
 <1>3. A normal Sylow subgroup $N$ of $G$ is solvable, and so is $G/N$.
-::: proof
+::: {.proof}
 The possible orders of $N$ are $p^2$ or $q$. A group of prime order is cyclic,
 and every group of order $p^2$ is abelian. Hence $N$ is abelian and therefore
 solvable.
@@ -87,7 +87,7 @@ $|N|=q$, then $|G/N|=p^2$. Thus $G/N$ is likewise abelian and solvable.
 :::
 
 <1>4. Therefore $G$ is solvable.
-::: proof
+::: {.proof}
 A group with a solvable normal subgroup and solvable quotient is solvable.
 Apply this extension criterion to the normal Sylow subgroup supplied by <1>2
 and use <1>3.

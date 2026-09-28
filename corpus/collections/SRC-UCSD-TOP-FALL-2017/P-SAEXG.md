@@ -18,8 +18,10 @@ audit:
   date: 2026-08-25
 ---
 
+::: {.problem}
 How many path-connected 2-fold covering spaces does $S^1 \vee \RP 2$ have?
 What are the total spaces?
+:::
 
 ::: {.solution}
 **Goal:** Determine the number of connected 2-fold covering spaces of $X = S^1 \vee \mathbb{RP}^2$ and identify the total space for each covering.

@@ -26,7 +26,7 @@ The blowup of $\AA^n$ at the origin is
 \]
 with $\pi$ the first projection.
 For $X$ a variety and $p \in X$, $\Bl_p X$ is the closure of $\pi\inv(X \sm \ts{p})$ inside $\Bl_p \AA^n$ for a local embedding.
-The **exceptional divisor** is $E \da \pi\inv(p) \cong \PP^{n-1}$, and the **proper transform** of a subvariety $C \subseteq X$ is the closure of $\pi\inv(C \sm \ts{p})$.
+The \dfn{exceptional divisor} is $E \da \pi\inv(p) \cong \PP^{n-1}$, and the **proper transform** of a subvariety $C \subseteq X$ is the closure of $\pi\inv(C \sm \ts{p})$.
 :::
 
 ::: {.proposition}
@@ -35,8 +35,8 @@ For a surface, $E$ is a curve isomorphic to $\PP^1$, and the points of $E$ are t
 :::
 
 ::: {.remark}
-The moduli description is the fundamental one: the blowup replaces $p$ by the set of directions through $p$, which is exactly what separates two branches of a curve that cross at $p$.
-The nodal cubic $y^2 = x^2(x+1)$ becomes smooth after one blowup because its two branches acquire different tangent directions; the cuspidal cubic $y^2 = x^3$ needs more than one.
+Geometrically, the blowup replaces $p$ by the set of directions through $p$, which separates branches of a curve with distinct tangent directions.
+The nodal cubic $y^2 = x^2(x+1)$ becomes smooth after one blowup because its two branches acquire different tangent directions, while the cuspidal cubic $y^2 = x^3$ requires further resolution.
 
-The scheme-theoretic definition is $\Bl_Z X = \Proj \bigoplus_{d \geq 0} \mci_Z^d$ and it is worth naming, because it is the one that makes sense for a non-reduced centre and shows that $E$ is a Cartier divisor by construction.
+The scheme-theoretic definition $\Bl_Z X = \Proj \bigoplus_{d \geq 0} \mci_Z^d$ also applies to non-reduced centers and makes the exceptional divisor Cartier by construction.
 :::

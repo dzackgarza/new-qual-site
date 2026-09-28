@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DIVLB
 kind: proposition
 title: Cartier divisors, invertible sheaves, and the Picard group
+slogan: 'Cartier divisors are line bundles with rational sections; on locally factorial schemes, Cartier, Weil, and Picard classes coincide.'
 classification:
   areas:
   - algebraic-geometry
@@ -20,19 +21,33 @@ prompts:
 - What is the correspondence between Cartier divisors and invertible sheaves?
 - Why is $\Pic(X) = H^1(X, \OO_X\units)$?
 - Which line bundles come from divisors?
+- Why does $\Pic(X) \cong H^1(X, \OO_X^\times)$ need the comparison of Čech and derived-functor $H^1$?
+- Describe the maps between Cartier divisors, Weil divisors and line bundles with rational sections.
 ---
 
 ::: {.proposition}
-$D \mapsto \OO_X(D)$ is an injection $\CaCl(X) \injects \Pic(X)$, and it is a bijection onto the invertible subsheaves of $\mck$.
-When $X$ is integral every invertible sheaf is such a subsheaf, so $\CaCl(X) \cong \Pic(X)$.
+$D \mapsto \OO_X(D)$ is an injection $\CaCl(X) \injects \Pic(X)$, and it is a bijection onto the invertible subsheaves of $\mck$ [@Har10a, Proposition II.6.13]. When $X$ is integral every invertible sheaf is such a subsheaf, so $\CaCl(X) \cong \Pic(X)$ [@Har10a, Proposition II.6.15].
 :::
 
 ::: {.proposition}
-$\Pic(X) \cong H^1(X, \OO_X\units)$, and the sequence
+$\Pic(X) \cong H^1(X, \OO_X\units)$ ([[P-AGH345PICH1]]), and the sequence
 \[
 0 \to \OO_X\units \to \mck\units \to \mck\units/\OO_X\units \to 0
 \]
 has cohomology sequence $\mck(X)\units \to \Div_{\mathrm{Ca}}(X) \to \Pic(X) \to H^1(X, \mck\units)$.
+:::
+
+::: {.proposition title="Divisors, line bundles with sections, and class groups"}
+Let $X$ be an integral separated Noetherian scheme with function field $K$, and write $\mathcal{P}(X)$ for the group of isomorphism classes of pairs $(\mathcal{L}, s)$ with $\mathcal{L}$ invertible and $s$ a nonzero rational section of $\mathcal{L}$, under tensor product.
+
+1. $\Div_{\mathrm{Ca}}(X) \to \mathcal{P}(X)$, $D = \{(U_i, f_i)\} \mapsto (\OO_X(D), 1)$, is an isomorphism, with inverse $(\mathcal{L}, s) \mapsto \{(U_i, \phi_i(s)^{-1})\}$ for local trivializations $\phi_i$.
+   For an effective $D$ with invertible ideal sheaf $\mci_D$, $\OO_X(D) = \mci_D^{\vee}$ and $1$ is the canonical section vanishing on $D$.
+
+2. If $X$ is regular in codimension one, $\Div_{\mathrm{Ca}}(X) \to \Div(X)$, $\{(U_i, f_i)\} \mapsto \sum_Y v_Y(f_i) Y$ with $U_i \cap Y \neq \emptyset$, is a homomorphism, and $(\mathcal{L}, s) \mapsto \div s$ is the composite with the inverse of part 1.
+
+3. Under these maps, $t \in K\units$ goes to the principal Cartier divisor $\{(X, t)\}$, the pair $(\OO_X, t)$, and the principal Weil divisor $\div t$, so they descend to $\CaCl(X) \to \Cl(X)$ and $\CaCl(X) \cong \Pic(X)$.
+
+4. If every local ring $\OO_{X,x}$ is a unique factorization domain, then $\CaCl(X) \cong \Cl(X) \cong \Pic(X)$, with inverse $D \mapsto (\OO_X(D), 1)$ [@Har10a, Proposition II.6.11].
 :::
 
 ::: {.remark}

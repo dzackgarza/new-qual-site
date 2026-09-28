@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-077
 kind: problem
-title: Kent State ring-theory qualifying problem 77
+title: Nonzero ideals of an integral extension of domains contract to nonzero ideals
 classification:
   areas: [algebra]
   topics: []
@@ -16,5 +16,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $R \subseteq S$ be commutative domains with the same identity, and assume that S is an integral extension of R. Let I be a nonzero ideal of S. Prove that I ∩ R is a nonzero ideal of R.
+Let $R\subseteq S$ be commutative domains with the same identity, and assume that $S$ is an integral extension of $R$.
+Let $I$ be a nonzero ideal of $S$.
+Prove that $I\cap R$ is a nonzero ideal of $R$.
 :::

@@ -17,8 +17,10 @@ audit:
   date: 2026-08-25
 ---
 
+::: {.problem}
 Let $(X,d)$ be a metric space, $K\subset X$ be compact, and $F\subset X$ be closed.
 If $K\cap F=\emptyset$, prove that there exists an $\epsilon>0$ so that $d(k,f)\geq \epsilon$ for all $k\in K$ and $f\in F$.
+:::
 
 ::: {.proof}
 *Proof.* We prove this by contrapositive.

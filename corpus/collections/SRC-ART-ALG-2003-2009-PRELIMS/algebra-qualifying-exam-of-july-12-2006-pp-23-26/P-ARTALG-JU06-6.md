@@ -24,14 +24,14 @@ audit:
   note: "Checked existence of both automorphisms, all three subgroup-intersection cases, and the degrees and invariance of every fixed-field generator."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field of $x^4 - 2$ over $\mathbb{Q}$.
 What is $[K:\mathbb{Q}]$?
 Describe the Galois group $G = \text{Gal}(K/\mathbb{Q})$: either find generators of the group and indicate relations among those generators which determine its multiplication table, or identify a familiar group to which $G$ is isomorphic.
 Find all the subgroups of $G$ and their orders, and indicate the corresponding subfields of $K$.
 :::
 
-::: solution
+::: {.solution}
 Put $a=\sqrt[4]{2}>0$. Then $K=\mathbb Q(a,i)$ has degree $8$
 over $\mathbb Q$, and its Galois group is the dihedral group of
 order $8$. Define its generators by
@@ -56,7 +56,7 @@ All subgroups and their fixed fields are as follows.
 
 <1>1. The degree and group presentation are as asserted.
 
-::: proof
+::: {.proof}
 The roots of $x^4-2$ are $a,ia,-a,-ia$. Their generated field
 contains $i=(ia)/a$, so it is $\mathbb Q(a,i)$.
 Eisenstein's criterion at $2$ gives $[\mathbb Q(a):\mathbb Q]=4$
@@ -92,7 +92,7 @@ group of order $8$ and determine its entire multiplication table.
 
 <1>2. The table exhausts the subgroups of $G$.
 
-::: proof
+::: {.proof}
 Let $R=\langle r\rangle$, a normal cyclic subgroup of order $4$
 and index $2$. For any $H\leq G$, restriction of the quotient map
 $G\to G/R$ shows that $[H:H\cap R]\leq2$.
@@ -117,7 +117,7 @@ The three cases give exactly the ten distinct subgroups in the table.
 
 <1>3. Each field in the table is the fixed field of the indicated subgroup.
 
-::: proof
+::: {.proof}
 The Galois correspondence gives $[K^H:\mathbb Q]=8/|H|$ [@DF04].
 It therefore suffices to show that each proposed field is fixed
 by $H$ and has this degree.

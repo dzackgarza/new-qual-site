@@ -34,7 +34,7 @@ audit:
     genus-g surface presentation preceding Corollary 1.27.
 ---
 
-::: problem
+::: {.problem}
 Let $S$ be the closed orientable surface of genus 2 and let $C$ be the commutator subgroup of $\pi_1 (S, \ast)$.
 Let $\tilde S$ be the cover corresponding to $C$.
 Is the covering map $\tilde S \to S$ regular?

@@ -26,7 +26,7 @@ audit:
   note: Verified the quotient homotopy type, the infinite-chain covering locally at both attachment points, and simple connectivity of the total space.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be the union of the unit sphere in $\RR^3$ and the interval $\theset {(t, 0, 0) : -1 \leq t \leq 1} \subset \RR^3$.
 
 Compute $\pi_1 (A)$ and give an explicit description of the universal cover of $A$.

@@ -28,7 +28,7 @@ c) Which of the statements in (a) and (b) are true?
 If either statement is false, give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 P:\ f\text{ has a local minimum at }a,

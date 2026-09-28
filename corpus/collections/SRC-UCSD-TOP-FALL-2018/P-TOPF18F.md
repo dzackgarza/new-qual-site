@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Calculate the homotopy group $\pi_3(\mathbb{RP}^4 \vee S^3)$.
 (Here $\vee$ denotes the one-point union of the two spaces.)
 :::

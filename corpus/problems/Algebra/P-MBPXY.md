@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Which is the connection between Hom and tensor product?
 What is this called in representation theory?
 :::
 
-::: solution
+::: {.solution}
 For a commutative ring $R$ and $R$-modules $M,N,P$, there is a natural Hom--tensor adjunction
 \[
 \operatorname{Hom}_R(M\otimes_R N,P)

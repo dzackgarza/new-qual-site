@@ -20,7 +20,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 
 a. Prove that if $f$ is an entire function that satisfies

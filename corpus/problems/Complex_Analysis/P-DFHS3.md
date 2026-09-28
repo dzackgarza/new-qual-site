@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Calculate
 \[
 \int_0^\infty {dx \over (1+x^2)(1+9x^2)}
 .\]
 :::
 
-::: solution
+::: {.solution}
 Use the rational function
 \[
 F(z)={1\over(1+z^2)(1+9z^2)}

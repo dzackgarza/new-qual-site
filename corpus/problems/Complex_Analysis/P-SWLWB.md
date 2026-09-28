@@ -18,7 +18,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the following integrals.
 
 (i) $\displaystyle \int_0^\infty \frac{1}{(1 + x^n)^2} \, dx$, $n \geq 1$
@@ -36,7 +36,7 @@ Compute the following integrals.
 (vii) $\displaystyle \int_{|z| = 1} \cot^2 z \, dz$.
 :::
 
-::: solution
+::: {.solution}
 We evaluate the seven integrals in order.
 
 For **(i)**, first assume $n>1$ and put $u=x^n$. Then

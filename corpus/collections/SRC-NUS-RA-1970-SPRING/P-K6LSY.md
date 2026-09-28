@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Prove or disprove each of the following statements.
 
 (f) If $E \subset \mathbb{R}$ and

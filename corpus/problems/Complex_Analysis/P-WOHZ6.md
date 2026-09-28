@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Consider the series of complex functions:
 $$
 \sum_{n=1}^\infty \frac{\sin(nz)}{2^n}.
@@ -32,7 +32,7 @@ $$
 (b) Prove that for every $r$ with $0<r<\ln 2$, the series converges **uniformly on the closed disk** $\{ z \in \mathbb{C} \mid |z| \le r \}$.
 :::
 
-::: solution
+::: {.solution}
 Write $z=x+iy$. Since
 \[
 \sin(nz)=\frac{e^{inz}-e^{-inz}}{2i},

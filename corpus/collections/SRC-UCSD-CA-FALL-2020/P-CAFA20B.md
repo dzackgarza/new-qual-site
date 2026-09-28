@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $a \in \mathbb{R}$ and $a > 2$.
 Consider the equation $$(1)\quad a + z - e^{2z} = 0.$$
 
@@ -22,7 +22,7 @@ Consider the equation $$(1)\quad a + z - e^{2z} = 0.$$
 Furthermore, prove that this solution must be a real number.
 :::
 
-::: solution
+::: {.solution}
 If $z_0$ is a solution with $\operatorname{Re}z_0<0$, then
 \[
 z_0+a=e^{2z_0},

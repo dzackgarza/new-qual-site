@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $F/K$ be a field extension, and let $a \in F$ be algebraic over $K$ of odd degree $[K(a) : K] = 2m + 1$.
 Prove that $a^2$ is algebraic over $K$, that $[K(a^2) : K]$ is odd, and that $K(a) = K(a^2)$.
 :::
 
-::: solution
+::: {.solution}
 Since $a$ is algebraic over $K$, so is $a^2$, and
 \[
 K\subseteq K(a^2)\subseteq K(a).

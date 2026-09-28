@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Let $k$ be a positive integer.
 Compute the fundamental group of the space $X_k$ resulting from attaching a $2$-cell $e^2$ to a circle $S^1$ (identified with the unit circle in $\mathbb{C}$) by the map $\varphi : \partial e^2 = S^1 \to S^1$ defined by $\varphi(z) = z^k$.
 

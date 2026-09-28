@@ -1,0 +1,29 @@
+---
+schema: qual/card@1
+id: P-UCLARA18S-10
+kind: problem
+title: Injective holomorphic self-maps of the thrice-punctured sphere
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-13
+  note: Transcribed from the official UCLA Analysis Qualifying Exam, Spring 2018, and reconciled with the retained UCLA Analysis Qualifying Exam Solutions compendium.
+---
+
+::: {.problem}
+Problem 10. Let $\mathbb C^*=\mathbb C\cup\{\infty\}$ be the Riemann sphere and let
+\[
+\Omega=\mathbb C^*\setminus\{0,1\}.
+\]
+Let $f:\Omega\to\Omega$ be a holomorphic function.
+
+(a) Prove that if $f$ is injective then $f(\Omega)=\Omega$.
+
+(b) Make a list of all such injective functions $f$.
+:::

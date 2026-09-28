@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What $3 \times 3$ matrices over $\mathbb{Q}$ (up to similarity) satisfy $f(A) = 0$, where $f(x) = (x^2 + 2)(x - 1)^3$?
 List all possible invariant factor lists and rational canonical forms.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 f(x)=(x^2+2)(x-1)^3.

@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Define a free group and state its universal property.
 :::
 
-::: solution
+::: {.solution}
 Let $X$ be a set. A **free group on $X$** is a group $F(X)$ together with a map
 \[
 i:X\to F(X)
@@ -41,13 +41,13 @@ such that
 \[
 \widetilde f\circ i=f.
 \]
-::: proof
+::: {.proof}
 This is the defining universal property of the free group on $X$.
 :::
 
 <1>2. Concretely, $F(X)$ may be realized as reduced words in the alphabet
 $X\sqcup X^{-1}$.
-::: proof
+::: {.proof}
 Multiplication is concatenation followed by cancellation of adjacent pairs
 $xx^{-1}$ and $x^{-1}x$. Given $f:X\to G$, define $\widetilde f$ on a reduced
 word by replacing each $x$ by $f(x)$ and each $x^{-1}$ by $f(x)^{-1}$ and

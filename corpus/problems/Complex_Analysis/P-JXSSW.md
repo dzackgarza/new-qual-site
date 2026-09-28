@@ -17,7 +17,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 For the following functions, find the Laurent series about $0$ and classify their singularities there:
 \[
 {\sin^2(z) \over z} \\
@@ -26,7 +26,7 @@ z \exp{1\over z^2} \\
 .\]
 :::
 
-::: solution
+::: {.solution}
 For the first function, use $\sin^2z=(1-\cos 2z)/2$:
 \[
 \frac{\sin^2z}{z}

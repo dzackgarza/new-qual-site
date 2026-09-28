@@ -21,7 +21,7 @@ audit:
 Give an example of a free abelian group $G$ of rank $n$ having a subgroup $H$ of rank $n$ for which $H \neq G$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Provide an explicit example of a free abelian group $G$ of rank $n \ge 1$ containing a proper subgroup $H \subsetneq G$ of full rank $n$, and prove these properties.
 
 <1>1. Definition of $G$ and $H$:

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$.
 
 (a) What is the degree $[\mathbb{Q}(\zeta) : \mathbb{Q}]$?
@@ -24,7 +24,7 @@ Let $\zeta = e^{2\pi i / 8}$ be a primitive $8$-th root of unity in $\mathbb{C}$
 (c) What is the degree $[\mathbb{Q}(\zeta, \sqrt[4]{2}) : \mathbb{Q}]$?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the cyclotomic extension degree in (a), classify its quadratic subfields via Galois correspondence in (b), and compute the field degree of $\mathbb{Q}(\zeta, \sqrt[4]{2})/\mathbb{Q}$ in (c).
 
 <1>1. Part (a): Degree $[\mathbb{Q}(\zeta) : \mathbb{Q}] = 4$.

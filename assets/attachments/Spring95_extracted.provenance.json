@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/Spring95.pdf",
+  "source_pdf_sha256": "1d831509a12dace64470f13a2b259d103838a059742cd835572543801e07b25e",
+  "extracted_markdown": "assets/attachments/Spring95_extracted.md",
+  "extracted_markdown_sha256": "176be30fa215e8db31b8e4abc22f931e9ba36fd5db875aa5eaff9a3c35332701",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring95.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring95.md",
+  "old_unknown_provenance_sha256": "176be30fa215e8db31b8e4abc22f931e9ba36fd5db875aa5eaff9a3c35332701",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1995, containing Problems 1 through 18 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output reproduces the retained extraction exactly, including the garbled matrix-size text in Problem 2 and dropped coefficient in Problem 14. No alternate OCR, parser, or model-vision fallback was used in this intake.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1995 collection represents all 18 source positions in order with 16 source-local cards plus exact canonical reuse of P-PRELIM82S-03 for Problem 16 and P-3A7RU for Problem 18. P-BERK95S-02 and P-BERK95S-14 retain durable source-checked evidence for their extraction-sensitive details. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

@@ -9,10 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Re-transcribed from Chapter 6 review Question 7 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR), compared with assets/attachments/extracted/chapter-6.md, replacing the earlier paraphrased transcription."
 ---
 
 ::: {.problem}
-Which group is cyclic?
+Which one of the following groups is cyclic?
 
-(A) $\mathbb Z_2\times\mathbb Z_4$  (B) $\mathbb Z_2\times\mathbb Z_6$  (C) $\mathbb Z_3\times\mathbb Z_4$  (D) $\mathbb Z_3\times\mathbb Z_6$  (E) $\mathbb Z_4\times\mathbb Z_6$
+(A) $\ZZ_2 \times \ZZ_4$
+(B) $\ZZ_2 \times \ZZ_6$
+(C) $\ZZ_3 \times \ZZ_4$
+(D) $\ZZ_3 \times \ZZ_6$
+(E) $\ZZ_4 \times \ZZ_6$
 :::

@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K \subset \mathbb{C}$ be a compact set.
 Assume that $\mathbb{C} \setminus K$ is connected and $0 \notin K$.
 Prove that for any analytic function $f$ in an open neighborhood of $K$ nowhere vanishing on $K$, and any $\epsilon > 0$, there exists a polynomial $P$, satisfying $$|f(z)P(z) - 1| \leq \epsilon, \quad \forall z \in K.$$
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is analytic near $K$ and nonzero on $K$, compactness gives an open
 neighborhood $U$ of $K$ on which $f$ has no zeros. Thus $1/f$ is holomorphic on
 $U$.

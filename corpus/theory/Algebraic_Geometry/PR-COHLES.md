@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-COHLES
 kind: proposition
 title: The long exact sequence, and the ideal sequence as a computational device
+slogan: 'Short exact sequences yield long exact cohomology sequences; connecting maps record the obstruction to lifting.'
 classification:
   areas:
   - algebraic-geometry
@@ -19,6 +20,7 @@ review: draft
 prompts:
 - What is the long exact sequence in sheaf cohomology?
 - How do you compute the cohomology of a hypersurface in $\PP^n$?
+- What is the long exact sequence in cohomology of a short exact sequence of complexes?
 ---
 
 ::: {.proposition}
@@ -29,12 +31,24 @@ A short exact sequence $0 \to \mcf' \to \mcf \to \mcf'' \to 0$ of sheaves of abe
 natural in morphisms of short exact sequences.
 :::
 
+::: {.lemma title="Long exact sequence of a short exact sequence of complexes"}
+Let $0 \to C'^\bullet \xrightarrow{u} C^\bullet \xrightarrow{v} C''^\bullet \to 0$ be a short exact sequence of complexes in an abelian category.
+Then there are connecting morphisms $\delta^i \colon h^i(C''^\bullet) \to h^{i+1}(C'^\bullet)$, natural in the sequence, making
+$$\cdots \to h^i(C'^\bullet) \to h^i(C^\bullet) \to h^i(C''^\bullet) \xrightarrow{\delta^i} h^{i+1}(C'^\bullet) \to \cdots$$
+exact.
+:::
+
+::: {.remark}
+For derived-functor cohomology, the proposition follows by applying the lemma to $0 \to \Gamma(X, I'^\bullet) \to \Gamma(X, I^\bullet) \to \Gamma(X, I''^\bullet) \to 0$ for compatible injective resolutions, which remains exact because $I'^\bullet$ is injective in each degree.
+For Čech cohomology of quasicoherent sheaves on a quasicompact separated scheme with a finite affine cover $\mathfrak{U}$, the sequence $0 \to C^\bullet(\mathfrak{U}, \mcf') \to C^\bullet(\mathfrak{U}, \mcf) \to C^\bullet(\mathfrak{U}, \mcf'') \to 0$ is exact because every finite intersection of the cover is affine and sections of quasicoherent sheaves over affines form exact sequences, and the lemma applies directly.
+:::
+
 ::: {.remark title="What the connecting map is"}
 $\delta$ sends a global section of $\mcf''$ to the obstruction to lifting it: lift locally on a cover, take the differences of the lifts on overlaps, and read the result as a class in $H^1(\mcf')$.
 So $H^1(\mcf') = 0$ is precisely the statement that every global section of the quotient lifts.
 :::
 
-::: {.remark title="How every computation actually goes"}
+::: {.remark title="Standard computations"}
 For $Y \subseteq \PP^n$ closed with ideal sheaf $\mci_Y$, twist the ideal sequence:
 \[
 0 \to \mci_Y(d) \to \OO_{\PP^n}(d) \to \OO_Y(d) \to 0 .

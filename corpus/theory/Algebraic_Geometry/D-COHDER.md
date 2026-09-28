@@ -26,7 +26,7 @@ Define $H^i(X, \mcf) \da R^i \globsec{X; \wait}(\mcf)$: choose an injective reso
 :::
 
 ::: {.remark title="Enough injectives"}
-The construction needs injective resolutions to exist.
+The construction requires enough injective objects.
 For each $x$, embed the stalk $\mcf_x \injects I_x$ into an injective $\OO_{X,x}\dash$module, let $j^x: \ts{x} \injects X$, and set $\mci \da \prod_{x \in X} j^x_* I_x$.
 Then $\Hom(\mcg, \mci) = \prod_x \Hom_{\OO_{X,x}}(\mcg_x, I_x)$, a composite of the exact stalk functors with exact $\Hom$ functors, so $\mci$ is injective, and $\mcf \injects \mci$.
 :::

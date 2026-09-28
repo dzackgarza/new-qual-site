@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-25
 kind: problem
-title: Questions from Tie — Spring 2015, question 25
+title: The Joukowski map $-\frac12(z+1/z)$ from the upper half-disk to the upper half-plane
 classification:
   areas:
   - complex-analysis

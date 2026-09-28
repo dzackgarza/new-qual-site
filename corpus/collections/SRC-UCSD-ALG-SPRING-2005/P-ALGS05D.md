@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite abelian group of order $n$.
 Suppose that $G$ has a unique subgroup of order $d$ for each positive divisor $d$ of $n$.
 Prove that $G$ is cyclic.

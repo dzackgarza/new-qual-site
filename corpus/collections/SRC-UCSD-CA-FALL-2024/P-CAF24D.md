@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function.
 Assume that
 
@@ -23,7 +23,7 @@ Assume that
 Prove that $f$ takes real values on the imaginary axis.
 :::
 
-::: solution
+::: {.solution}
 Because $f$ is entire and real-valued on $\mathbb R$, its Taylor series at
 $0$ has real coefficients:
 \[

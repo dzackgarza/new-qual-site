@@ -8,11 +8,11 @@ topics:
 
 # The standard families
 
-Cyclic groups connect group structure with divisibility; dihedral and quaternion groups provide nonabelian examples; symmetric and alternating groups supply permutation actions and simple groups; finite $p$-groups have nontrivial centres.
-
 ## Nonabelian models and $p$-groups
 
-Presentations describe the dihedral and quaternion families by generators and relations. For finite $p$-groups, the class equation gives a nontrivial centre, whose quotients support induction on group order.
+The [[D-4R2Z5|dihedral group]] $D_4$ and the [[D-KRKV7|quaternion group]] $Q_8$ are the nonabelian groups of order $8$.
+A finite [[D-FIB7S|$p$-group]] has nontrivial center, by the class equation, and has a normal subgroup of each order dividing its order.
+A [[D-7UIPO|transitive subgroup]] of $S_n$ acts transitively on $\ts{1,\ldots,n}$, so its order is divisible by $n$.
 
 [[D-4R2Z5]]
 
@@ -31,9 +31,8 @@ Presentations describe the dihedral and quaternion families by generators and re
 [[E-DAS3L]]
 
 ::: {.remark title="Cyclic groups"}
-A cyclic group has exactly one subgroup of each order dividing $\size G$, and every quotient and subgroup is cyclic.
-Questions about a cyclic group therefore reduce to arithmetic in $\ZZ/n$.
-The structure theorem reduces a finite abelian group further to a product of cyclic prime-power groups.
+A cyclic group of order $n$ is isomorphic to $\ZZ/n$, has exactly one subgroup of each order $d$ dividing $n$, and each of its subgroups and quotients is cyclic.
+By the structure theorem, every finite abelian group is a direct product of cyclic groups of prime-power order.
 :::
 
 ## Symmetric and alternating groups
@@ -54,7 +53,7 @@ The structure theorem reduces a finite abelian group further to a product of cyc
 
 [[PR-JY4PV]]
 
-::: {.remark title="Cycle type is the invariant"}
-Conjugacy classes in $S_n$ are exactly the cycle types, so the class equation for $S_n$ is a statement about partitions of $n$.
-An $S_n$ conjugacy class contained in $A_n$ can split into two $A_n$ conjugacy classes.
+::: {.remark title="Conjugacy classes in $S_n$ and $A_n$"}
+Two permutations in $S_n$ are conjugate if and only if they have the same cycle type, so the conjugacy classes of $S_n$ correspond to the partitions of $n$.
+For $\sigma\in A_n$, the $S_n$-conjugacy class of $\sigma$ is either one $A_n$-conjugacy class or the union of two of equal size; it splits into two if and only if the cycles of $\sigma$, including fixed points as cycles of length $1$, have distinct odd lengths.
 :::

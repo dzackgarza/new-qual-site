@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-MWDVL
 kind: theorem
 title: Riemann--Roch and Serre duality on a curve
+slogan: 'On a smooth projective curve, $\chi(\OO(D))=\deg D+1-g$, and Serre duality turns the correction term into sections of $K-D$.'
 classification:
   areas:
   - algebraic-geometry
@@ -27,7 +28,7 @@ For $D$ a divisor on a smooth projective curve $X$ of genus $g$ over $k = \bar{k
 \[
 \ell(D) - \ell(K - D) = \deg D + 1 - g ,
 \]
-where $\ell(D) = h^0(X, \OO(D))$ and $K$ is a canonical divisor.
+where $\ell(D) = h^0(X, \OO(D))$ and $K$ is a canonical divisor [@Har10a, Theorem IV.1.3].
 :::
 
 ::: {.theorem title="Serre duality"}
@@ -35,6 +36,17 @@ $H^1(X, \OO(D)) \cong H^0(X, \OO(K-D))\dual$, so $\ell(K-D) = h^1(D)$ and Rieman
 \[
 \chi(\OO(D)) = \deg D + 1 - g .
 \]
+:::
+
+::: {.example title="Hyperplane sections"}
+If $X \subseteq \PP^n$ is a curve of degree $d$ and $D = X \cap H$ is a hyperplane section, then $\mcl(D) \cong \OO_X(1)$, $\deg D = d$, and Riemann--Roch gives
+\[
+\chi(\mcl(D)) = d + 1 - p_a .
+\]
+:::
+
+::: {.remark}
+Over a field $k$ that is not algebraically closed, adding a closed point $P$ to $D$ raises $\chi(\OO(D))$ by $\deg P = [\kappa(P) : k]$, and the formula reads $\chi(\OO(D)) = \deg D + \chi(\OO_X)$ with $\deg D = \sum n_P \deg P$ ([[D-CRVDEGREES]]).
 :::
 
 ::: {.remark}

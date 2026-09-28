@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that every group of order $36$ has a nontrivial normal subgroup of order $3$ or $9$.
 :::
 
-::: solution
+::: {.solution}
 Let $n_3$ be the number of Sylow $3$-subgroups of $G$.
 Since $|G|=36=2^2\cdot3^2$, Sylow's theorem gives
 \[
@@ -36,12 +36,12 @@ n_3\mid4.
 Thus $n_3=1$ or $4$.
 
 <1>1. If $n_3=1$, then $G$ has a normal subgroup of order $9$.
-::: proof
+::: {.proof}
 The unique Sylow $3$-subgroup has order $9$ and is normal.
 :::
 
 <1>2. If $n_3=4$, then $G$ has a normal subgroup of order $3$ or $9$.
-::: proof
+::: {.proof}
 Let $G$ act by conjugation on its four Sylow $3$-subgroups. This gives a
 homomorphism
 \[
@@ -64,7 +64,7 @@ is respectively $9$ or $3$. The kernel is normal in $G$.
 
 <1>3. Hence every group of order $36$ has a nontrivial normal subgroup of order
 $3$ or $9$.
-::: proof
+::: {.proof}
 Combine <1>1 and <1>2.
 :::
 :::

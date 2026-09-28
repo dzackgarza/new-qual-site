@@ -25,7 +25,7 @@ audit:
   note: Used stabilization of kernels for the Noetherian case and the left-shift endomorphism of a countably generated polynomial ring for the counterexample.
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring.
 
 (a) Suppose that $R$ is noetherian.

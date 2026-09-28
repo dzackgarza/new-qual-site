@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring with the following commutative diagram of $R$-modules, where each row represents a short exact sequence of $R$-modules:
 
 \begin{tikzcd}
@@ -29,7 +29,7 @@ Let $R$ be a ring with the following commutative diagram of $R$-modules, where e
 Prove that if $\alpha$ and $\gamma$ are **isomorphisms**, then $\beta$ is an **isomorphism** (The Short Five Lemma).
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $\beta$ is both injective and surjective by standard diagram chasing using exactness at all nodes and commutativity of squares.
 
 <1>1. Setting and Hypotheses:

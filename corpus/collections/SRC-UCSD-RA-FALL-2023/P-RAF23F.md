@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (i) Prove that for $p \geq 1$, $f \in L^p$ if and only if $\sum_{-\infty}^{+\infty} \beta^{kp} \lambda_f(\beta^k) < \infty$ for all $\beta > 1$.
 Here $\lambda_f(\alpha) = \mu(\{x : |f|(x) > \alpha\})$.
 
@@ -32,9 +32,9 @@ Prove that for any $q_1 < q < q_2$, $\|Tf\|_q \leq C_q \|f\|_p$.
 Here $C_q$ depends on $q, q_1, q_2$ and $C_1, C_2$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the discrete characterization of $L^p$.
-::: proof
+::: {.proof}
 Fix $\beta>1$ and define
 \[
 A_k:=\{x:\beta^k<|f(x)|\le \beta^{k+1}\}.
@@ -70,7 +70,7 @@ Since the argument holds for every $\beta>1$, this proves part (i).
 :::
 
 <1>2. Normalize the input for part (ii).
-::: proof
+::: {.proof}
 If $f=0$, the conclusion is trivial. Otherwise set
 \[
 h:=\frac{f}{\|f\|_p}.
@@ -87,7 +87,7 @@ for all $h$ with $\|h\|_p=1$.
 :::
 
 <1>3. Sum the low-frequency distribution levels.
-::: proof
+::: {.proof}
 For integers $k\le0$, the assumed weak-type estimate gives
 \[
 \lambda_{Th}(2^k)
@@ -103,7 +103,7 @@ Since $q>q_1$, this geometric series converges.
 :::
 
 <1>4. Sum the high-frequency distribution levels.
-::: proof
+::: {.proof}
 For integers $k\ge0$,
 \[
 \lambda_{Th}(2^k)

@@ -1,0 +1,19 @@
+{
+  "source_pdf": "assets/attachments/Lie Groups and Sympl.pdf",
+  "source_pdf_sha256": "e38765c0ee72dff7c2b9c24a3f2055a856c6cc40bb39e84d7e57819f0e3bc960",
+  "extracted_markdown": "assets/attachments/Lie_Groups_and_Sympl_extracted.md",
+  "extracted_markdown_sha256": "6903098a49a1c7b2108ce8c5ebf58349733a821b7ec53b16bba18679de737b31",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/Lie Groups and Sympl.pdf' --language en --pages START-END",
+  "split_ranges": ["1-20", "21-40", "41-60", "61-80", "81-100", "101-120", "121-140", "141-160", "161-180"],
+  "assembly": "Successful range outputs concatenated verbatim in ascending page order.",
+  "generated_at": "2026-09-14",
+  "retained_extraction_comparison": "assets/attachments/extracted/Lie Groups and Sympl.md differs: fresh Flash baseline is 5525 lines / 544874 bytes versus 8860 lines / 396238 bytes, so the unknown-provenance extraction is not reused or certified.",
+  "disposition": "reference/course notes",
+  "source_description": "Robert L. Bryant's nine-lecture An Introduction to Lie Groups and Symplectic Geometry, delivered at the 1991 Regional Geometry Institute in Park City and last modified 23 July 2018. The lecture sequence covers symmetry and differential equations, Lie groups, group actions, symmetries and conservation laws, symplectic manifolds, classical reduction, recent applications of reduction, and the Gromov school of symplectic geometry.",
+  "exercise_structure": "Exercise Sets 2 through 9 are integrated into the expository lecture text; the introduction describes the exercise sets as an essential path through the course, with problems of varying difficulty and extensive hints.",
+  "known_extractor_defects": [
+    "The pages 1-20 Flash output contains one NUL byte at byte offset 27289; the raw deterministic baseline preserves it verbatim rather than silently normalizing it."
+  ]
+}

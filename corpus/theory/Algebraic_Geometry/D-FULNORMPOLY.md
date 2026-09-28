@@ -22,7 +22,7 @@ prompts:
 ---
 
 ::: {.definition title="Normal"}
-A lattice polytope $P \subseteq M_\RR$ is **normal** if
+A lattice polytope $P \subseteq M_\RR$ is \dfn{normal} if
 \[
 (kP \intersect M) + (\ell P \intersect M) = (k+\ell)P \intersect M \quad \text{for all } k, \ell \geq 1 ,
 \]
@@ -35,7 +35,7 @@ equivalently $k \cdot (P \intersect M) = (kP) \intersect M$ for all $k \geq 1$, 
 2. If $P$ is full-dimensional with $\dim P \geq 2$, then $kP$ is normal for every $k \geq \dim P - 1$.
 :::
 
-::: {.remark title="Why this settles the very ample question in practice"}
+::: {.remark title="Consequences for very ampleness"}
 The three positivity notions can come apart only through the saturation clause at a vertex, and dilating repairs it: whatever $P$ is, some multiple is normal, hence very ample.
 So a divisor that is ample but not very ample can only be a low multiple, and the second fact bounds how low.
 In dimension two, $k \geq 1$ suffices, which is the reason ample and very ample agree on complete toric surfaces.

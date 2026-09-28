@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Using a similar argument in singular (co)homology, calculate the cohomology ring of the closed orientable surface $\Sigma_g$ of genus $g$.
 :::
 

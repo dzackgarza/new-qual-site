@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-RHQZT
 kind: proposition
 title: Proper ideals contain no units
+slogan: 'An ideal is proper exactly when it contains no unit.'
 classification:
   areas:
   - algebra
@@ -14,5 +15,11 @@ review: draft
 ---
 
 ::: {.proposition}
-If $I\normal R$ is a proper ideal $\iff I$ contains no units.
+Let $R$ be a [[D-GURUB|ring]] and $I\subseteq R$ an [[D-GOFWL|ideal]].
+Then $I\neq R$ if and only if $I$ contains no [[D-QQIQZ|unit]] of $R$.
+:::
+
+::: {.proof}
+If $I=R$, then the unit $1$ lies in $I$.
+If $u\in I$ is a unit, then $1=u^{-1}u\in I$, so $r=r\cdot1\in I$ for every $r\in R$ and $I=R$.
 :::

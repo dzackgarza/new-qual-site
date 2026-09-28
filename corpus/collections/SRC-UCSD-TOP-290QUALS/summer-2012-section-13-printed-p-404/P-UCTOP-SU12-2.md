@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $X$ be the space obtained by gluing the two ends of $S^2 \times I$ via the antipodal map of $S^2$.
 Compute its homology $H_*(X; \mathbb{Z})$.
+:::
 
 ::: {.solution}
 <1>1. The space $X$ is the mapping torus of the antipodal map

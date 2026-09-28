@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 9. Show that in polar coordinates, the Cauchy-Riemann equations take the form
 
 $$
@@ -31,7 +31,7 @@ $$
 is holomorphic in the region $r > 0$ and $- \pi < \theta < \pi$
 :::
 
-::: solution
+::: {.solution}
 Let $z=x+iy=re^{i\theta}$, so
 \[
 x=r\cos\theta,

@@ -22,7 +22,7 @@ prompts:
 
 ::: {.definition title="tensor product"}
 Let $B \to A$ be a map of rings and $M$ a $B$-module.
-Any $A$-module is naturally a $B$-module; to endow $M$ with an $A$-module structure one forms $M \tensor_B A$, **extension of scalars**, and $\wait \tensor_B A$ is a covariant functor from $B$-modules to $A$-modules.
+Any $A$-module is naturally a $B$-module; to endow $M$ with an $A$-module structure one forms $M \tensor_B A$, \dfn{extension of scalars}, and $\wait \tensor_B A$ is a covariant functor from $B$-modules to $A$-modules.
 
 For $A$-modules $M$ and $N$, the tensor product $M \tensor_A N$ satisfies a universal property: for any $A$-bilinear map $M \times N \to T$ there is a unique map of $A$-modules $M \tensor_A N \to T$ through which it factors.
 

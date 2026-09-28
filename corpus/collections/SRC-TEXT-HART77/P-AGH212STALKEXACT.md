@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. For any morphism of sheaves $\varphi: \mcf \to \mcg$, show that for each point $P$ one has $(\ker \varphi)_P = \ker(\varphi_P)$ and $(\im \varphi)_P = \im(\varphi_P)$.
 
 b. Show that $\varphi$ is injective (respectively surjective) if and only if the induced map on stalks $\varphi_P$ is injective (respectively surjective) for all $P$.
@@ -26,7 +26,7 @@ c. Show that a sequence
 of sheaves and morphisms is exact if and only if for each $P \in X$ the corresponding sequence of stalks is exact as a sequence of abelian groups.
 :::
 
-::: solution
+::: {.solution}
 **Part a.** The clean argument is formal: taking the stalk at $P$ is a filtered colimit over the neighbourhoods of $P$, a kernel is a finite limit, and filtered colimits commute with finite limits.
 This gives $(\ker \phi)_P = \ker(\phi_P)$ at once.
 For the image, write $\im \phi \da \ker(\mcg \to \coker \phi)$, so the image is again a kernel, and the same commutation applies.

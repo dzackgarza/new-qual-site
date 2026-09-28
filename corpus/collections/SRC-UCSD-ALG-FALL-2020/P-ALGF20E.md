@@ -24,7 +24,7 @@ audit:
   note: Verified torsion-freeness by tensoring multiplication by a nonzero scalar, and the PID converse via the finitely generated module structure theorem.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $D$ is an integral domain and $M$ is a $D$-module.
 
 (1) Prove that if $M$ is flat, then it is torsion-free.

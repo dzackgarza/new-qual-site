@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Using the calculus of residues, compute $\int_0^{\infty} \frac{\log^2 x}{1 + x^2}\,dx$.
 
 You may wish to use the contour consisting of two half circles in the upper half plane, one of small radius and another of large radius, connected by two line segments along the real axis.
 :::
 
-::: solution
+::: {.solution}
 Use the branch $0<\arg z<\pi$ of $\Log z$ on the upper half-plane and integrate
 \[
 F(z)=\frac{(\Log z)^2}{1+z^2}

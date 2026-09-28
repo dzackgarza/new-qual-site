@@ -22,12 +22,12 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group, and let $N \trianglelefteq G$ be a normal $p$-subgroup of $G$ (for a prime $p$).
 Prove that $N$ is contained in **every** Sylow $p$-subgroup of $G$.
 :::
 
-::: solution
+::: {.solution}
 Let $P$ be any Sylow $p$-subgroup of $G$. Since $N\trianglelefteq G$, the product $NP$ is a subgroup of $G$. Moreover,
 \[
 |NP|=\frac{|N||P|}{|N\cap P|},

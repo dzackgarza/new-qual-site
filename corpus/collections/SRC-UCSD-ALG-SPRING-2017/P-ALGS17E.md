@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $J$ be an $n \times n$ Jordan block with eigenvalue $\lambda \in \mathbb{C}$.
 
 (a) Suppose that $\lambda \neq 0$.

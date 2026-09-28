@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Assume that $\mu(X) < \infty$.
 Let $\{f_n\}$ be a bounded sequence of complex functions.
 Assume that $f_n \to f$ uniformly as $n \to \infty$.
@@ -31,9 +31,9 @@ Prove that $\int_X f_n\,d\mu \to \int_X f\,d\mu$.
 Show by an example that the assumption $\mu(X) < \infty$ cannot be dropped.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove convergence when $\mu(X)<\infty$.
-::: proof
+::: {.proof}
 Uniform convergence gives
 \[
 \|f_n-f\|_\infty\longrightarrow0.
@@ -54,7 +54,7 @@ Thus
 :::
 
 <1>2. Show that finite total measure is necessary in general.
-::: proof
+::: {.proof}
 Take $X=[0,\infty)$ with Lebesgue measure and define
 \[
 f_n(x)=\frac1n\mathbf1_{[0,n]}(x).

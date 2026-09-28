@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 This question concerns an extension $K$ of $\mathbb Q$ such that $[K:\mathbb Q]=8$.
 Assume that $K/\mathbb Q$ is Galois and let $G=\Gal(K/\mathbb Q)$.
 Furthermore, assume that $G$ is non-abelian.
@@ -32,7 +32,7 @@ Furthermore, assume that $G$ is non-abelian.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Since \(G\) is a nonabelian group of order \(8\), we have
 \[
 G\cong D_8\quad\text{or}\quad G\cong Q_8.

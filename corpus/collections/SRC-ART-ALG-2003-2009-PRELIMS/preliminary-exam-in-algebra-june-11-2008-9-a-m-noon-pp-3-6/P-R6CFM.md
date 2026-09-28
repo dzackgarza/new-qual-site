@@ -26,12 +26,12 @@ audit:
   note: "Checked all degree partitions for the invariant-factor chain and the coefficients of every companion block."
 ---
 
-::: problem
+::: {.problem}
 There are finitely many $6 \times 6$ matrices over $\mathbb{Q}$, in rational canonical form, with minimal polynomial $(x + 2)^2(x - 1)$.
 Find them.
 :::
 
-::: solution
+::: {.solution}
 Put $p=x+2$, $q=x-1$, and $f=p^2q=x^3+3x^2-4$.
 For a monic polynomial $h$, write $C(h)$ for the matrix of multiplication
 by $x$ on $\mathbf Q[x]/(h)$ in the ordered basis
@@ -63,7 +63,7 @@ d_1\mid d_2\mid\cdots\mid d_s=f,
 \qquad \sum_{i=1}^s\deg d_i=6.
 $$
 
-::: proof
+::: {.proof}
 Apply the rational canonical form theorem to $\mathbf Q^6$ as a
 $\mathbf Q[x]$-module, with $x$ acting by the given matrix [@DF04].
 Its invariant factors determine the companion blocks, their degrees
@@ -74,7 +74,7 @@ total degree $3$ and divide $f$.
 
 <1>2. There are exactly six such chains.
 
-::: proof
+::: {.proof}
 The positive degrees before the final factor $f$ are nondecreasing and
 sum to $3$. Their only possibilities are $(3)$, $(1,2)$, and $(1,1,1)$.
 
@@ -94,7 +94,7 @@ $(q,q,q,f)$. This exhausts the possible chains.
 <1>3. Every displayed matrix has the required minimal polynomial, and
 no two are similar.
 
-::: proof
+::: {.proof}
 The minimal polynomial of $C(h)$ is $h$: a polynomial $g$ annihilates
 multiplication by $x$ on $\mathbf Q[x]/(h)$ exactly when $h\mid g$,
 as can be checked by applying it to $1$. A polynomial annihilates a

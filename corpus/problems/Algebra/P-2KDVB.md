@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $m,k\ge1$ and set
 \[
 R=\ZZ/(mk)\ZZ,

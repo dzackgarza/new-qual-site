@@ -22,7 +22,7 @@ One of the implications stated in Theorem 19.6 holds for the box topology.
 Which one?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Identify which implication of Theorem 19.6 (Maps into Products) holds when the product carries the box topology, and prove both the valid implication and the failure of the converse.
 
 <1>1. Statement of the two implications in Theorem 19.6:

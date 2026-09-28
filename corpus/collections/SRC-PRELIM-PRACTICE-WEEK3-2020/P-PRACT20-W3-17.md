@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-17
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 17"
+title: Point on the plane $2x+y+3z=3$ closest to the origin
 classification:
   areas:
   - real-analysis

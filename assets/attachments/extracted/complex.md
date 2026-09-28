@@ -1,2306 +1,1327 @@
-COMPLEX ANAL YSIS 1
-Douglas N. Arnold 2
+<!-- page 1 -->
+
+# COMPLEX ANALYSIS¹
+
+Douglas N. Arnold²
+
 References:
-John B. Conway, Functions of One Complex Variable , Springer-Verlag, 1978.
-Lars V. Ahlfors, Complex Analysis , McGraw-Hill, 1966.
-Raghavan Narasimhan, Complex Analysis in One Variable , Birkh¨ auser, 1985.
-CONTENTS
-I. The Complex Number System . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
-II. Elementary Properties and Examples of Analytic Fns. . . . . . . . . . . . . . . . 3
-Diﬀerentiability and analyticity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
-The Logarithm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
-Conformality . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
-Cauchy–Riemann Equations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-M¨ obius transformations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
-III. Complex Integration and Applications to Analytic Fns. . . . . . . . . . . . . 11
-Local results and consequences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
-Homotopy of paths and Cauchy’s Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
-Winding numbers and Cauchy’s Integral Formula . . . . . . . . . . . . . . . . . . . . . . . . . 15
-Zero counting; Open Mapping Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
-Morera’s Theorem and Goursat’s Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
-IV. Singularities of Analytic Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
-Laurent series . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
-Residue integrals . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
-V. Further results on analytic functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
-The theorems of Weierstrass, Hurwitz, and Montel . . . . . . . . . . . . . . . . . . . . . . . 26
-Schwarz’s Lemma . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
-The Riemann Mapping Theorem . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
-Complements on Conformal Mapping . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
-VI. Harmonic Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
-The Poisson kernel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
-Subharmonic functions and the solution of the Dirichlet Problem . . . . . . . . . 36
-The Schwarz Reﬂection Principle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
-1 These lecture notes were prepared for the instructor’s personal use in teaching a half-semester course
-on complex analysis at the beginning graduate level at Penn State, in Spring 1997. They are certainly not
-meant to replace a good text on the subject, such as those listed on this page.
-2 Department of Mathematics, Penn State University, University Park, PA 16802.
+
+John B. Conway, *Functions of One Complex Variable*, Springer-Verlag, 1978.
+Lars V. Ahlfors, *Complex Analysis*, McGraw-Hill, 1966.
+Raghavan Narasimhan, *Complex Analysis in One Variable*, Birkhäuser, 1985.
+
+# CONTENTS
+
+|  I. THE COMPLEX NUMBER SYSTEM | 2  |
+| --- | --- |
+|  II. ELEMENTARY PROPERTIES AND EXAMPLES OF ANALYTIC FNS. | 3  |
+|  Differentiability and analyticity | 4  |
+|  The Logarithm | 6  |
+|  Conformality | 6  |
+|  Cauchy–Riemann Equations | 7  |
+|  Möbius transformations | 9  |
+|  III. COMPLEX INTEGRATION AND APPLICATIONS TO ANALYTIC FNS. | 11  |
+|  Local results and consequences | 12  |
+|  Homotopy of paths and Cauchy’s Theorem | 14  |
+|  Winding numbers and Cauchy’s Integral Formula | 15  |
+|  Zero counting; Open Mapping Theorem | 17  |
+|  Morera’s Theorem and Goursat’s Theorem | 18  |
+|  IV. SINGULARITIES OF ANALYTIC FUNCTIONS | 19  |
+|  Laurent series | 20  |
+|  Residue integrals | 23  |
+|  V. FURTHER RESULTS ON ANALYTIC FUNCTIONS | 26  |
+|  The theorems of Weierstrass, Hurwitz, and Montel | 26  |
+|  Schwarz’s Lemma | 28  |
+|  The Riemann Mapping Theorem | 29  |
+|  Complements on Conformal Mapping | 31  |
+|  VI. HARMONIC FUNCTIONS | 32  |
+|  The Poisson kernel | 33  |
+|  Subharmonic functions and the solution of the Dirichlet Problem | 36  |
+|  The Schwarz Reflection Principle | 39  |
+
+¹These lecture notes were prepared for the instructor’s personal use in teaching a half-semester course on complex analysis at the beginning graduate level at Penn State, in Spring 1997. They are certainly not meant to replace a good text on the subject, such as those listed on this page.
+
+²Department of Mathematics, Penn State University, University Park, PA 16802.
 Web: http://www.math.psu.edu/dna/.
+
 1
 
+<!-- page 2 -->
+
 2
-I. The Complex Number System
-R is a ﬁeld. For n > 1, R n is a vectorspace over R , so is an additive group, but doesn’t
-have a multiplication on it. We can endow R 2 with a multiplication by
-(a, b )( c, d ) = ( ac − bd, bc + ad ).
-Under this deﬁnition R 2 becomes a ﬁeld, denoted C . Note that ( a/ (a 2 + b 2 ), − b/ (a 2 + b 2 ))
-is the multiplicative inverse of ( a, b ). (Remark: it is not possible to endow R n with a ﬁeld
-structure for n > 2.) We denote (0 , 1) by i and identify x ∈ R with ( x, 0), so R ⊂ C . Thus
-(a, b ) = a + bi , a, b ∈ R . Note that i2 = − 1. C is generated by adjoining i to R and closing
-under addition and multiplication. It is remarkable that the addition of i lets us not only
-solve the equation x 2 + 1 = 0, but every polynomial equation.
-For a and b real and z = a + bi we deﬁne Re z = a , Im z = b, ¯z = a − bi , and
-|z | = ( a 2 + b 2 ) 1 / 2 . Then
-Re z = ( z + ¯z )/ 2, Im z = ( z − ¯z )/ (2 i),
-|z |2 = z ¯z,
-1
-z
-=
-¯z
-|z |2 ,
-z ± w = ¯z ± ¯w, zw = ¯z ¯w,
-z/w = ¯z/ ¯w, |z + w | ≤ | z | + |w |.
-The map θ ↦→ (cos θ, sin θ ) deﬁnes a 2 π -periodic map of the real line onto the unit
-circle in R 2 . In complex notation this map is θ ↦→ cis θ := cos θ + i sin θ . Every nonzero
-complex number can be written as r cis θ where r > 0 is uniquely determined and θ ∈ R
-is uniquely determined modulo 2 π . The number 0 is equal to r cis θ where r = 0 and θ
-is arbitrary. The relation z = r cis θ determines the relations z ↦→ r which is simply the
-function r = |z | and z ↦→ θ . The latter is denoted θ = arg θ . Note that for z ⁄= 0, arg θ is
-determined modulo 2 π (while arg 0 is arbitrary). We can normalize arg by insisting that
-arg z ∈ (− π, π ]. Note that if z 1 = r cis θ 1 and z 2 = r cis θ 2 then z 1 z 2 = r 1 r 2 cis( θ 1 + θ 2 ).
-The latter formula just encapsulates the formula for the sine and cosine of a sum, and gives
-arg z 1 z 2 = arg z 1 + arg z 2 . In particular, ir cis θ = r cis( θ + π/ 2), so multiplication by i is
-just the operation of rotation by π/ 2 in the complex plane. Multiplication by an arbitrary
-complex number r cis θ is just rotation by arg θ followed by (or preceded by) dilation by a
-factor r . Further, z n = r n cis( nθ ). Every nonzero z ∈ C admits n distinct n th roots: the
-n th roots of r cis θ are
-n
-√
-r cis[( θ + 2 πk )/n ], k = 0 , 1, . . . , n .
-Lines and circles in the plane. Circles given by |z − a | = r where a ∈ C is the center
-and r > 0 is the radius. If 0 ⁄= b ∈ C then the line through the origin in the direction
-b is the set of all points of the form tb , t ∈ R , or all z with Im( z/b ) = 0. If t ∈ R
-and c > 0 then ( t + ci )b = tb + cib represents a point in the half plane to the left of
-b determined by the line tb , i.e., {z : Im( z/b ) > 0} is the equation of that half-plane.
-Similarly, { z : Im[( z − a )/b ] > 0} is the translation of that half-plane by a , i.e., the half-
-plane determined by the line through a parallel to b and in the direction to the left of
-b.
+
+# I. THE COMPLEX NUMBER SYSTEM
+
+$\mathbb{R}$ is a field. For $n > 1$, $\mathbb{R}^n$ is a vectorspace over $\mathbb{R}$, so is an additive group, but doesn't have a multiplication on it. We can endow $\mathbb{R}^2$ with a multiplication by
+
+$$(a, b)(c, d) = (ac - bd, bc + ad).$$
+
+Under this definition $\mathbb{R}^2$ becomes a field, denoted $\mathbb{C}$. Note that $(a/(a^2 + b^2), -b/(a^2 + b^2))$ is the multiplicative inverse of $(a, b)$. (Remark: it is not possible to endow $\mathbb{R}^n$ with a field structure for $n > 2$.) We denote $(0, 1)$ by $i$ and identify $x \in \mathbb{R}$ with $(x, 0)$, so $\mathbb{R} \subset \mathbb{C}$. Thus $(a, b) = a + bi$, $a, b \in \mathbb{R}$. Note that $i^2 = -1$. $\mathbb{C}$ is generated by adjoining $i$ to $\mathbb{R}$ and closing under addition and multiplication. It is remarkable that the addition of $i$ lets us not only solve the equation $x^2 + 1 = 0$, but every polynomial equation.
+
+For $a$ and $b$ real and $z = a + bi$ we define $\operatorname{Re} z = a$, $\operatorname{Im} z = b$, $\bar{z} = a - bi$, and $|z| = (a^2 + b^2)^{1/2}$. Then
+
+$$\operatorname{Re} z = (z + \bar{z})/2, \quad \operatorname{Im} z = (z - \bar{z})/(2i),$$
+
+$$|z|^2 = z\bar{z}, \quad \frac{1}{z} = \frac{\bar{z}}{|z|^2},$$
+
+$$\overline{z \pm w} = \bar{z} \pm \bar{w}, \quad \overline{zw} = \bar{z}\bar{w},$$
+
+$$\overline{z/w} = \bar{z}/\bar{w}, \quad |z + w| \leq |z| + |w|.$$
+
+The map $\theta \mapsto (\cos \theta, \sin \theta)$ defines a $2\pi$-periodic map of the real line onto the unit circle in $\mathbb{R}^2$. In complex notation this map is $\theta \mapsto \operatorname{cis} \theta := \cos \theta + i \sin \theta$. Every nonzero complex number can be written as $r \operatorname{cis} \theta$ where $r > 0$ is uniquely determined and $\theta \in \mathbb{R}$ is uniquely determined modulo $2\pi$. The number 0 is equal to $r \operatorname{cis} \theta$ where $r = 0$ and $\theta$ is arbitrary. The relation $z = r \operatorname{cis} \theta$ determines the relations $z \mapsto r$ which is simply the function $r = |z|$ and $z \mapsto \theta$. The latter is denoted $\theta = \arg \theta$. Note that for $z \neq 0$, $\arg \theta$ is determined modulo $2\pi$ (while $\arg 0$ is arbitrary). We can normalize $\arg$ by insisting that $\arg z \in (-\pi, \pi]$. Note that if $z_1 = r \operatorname{cis} \theta_1$ and $z_2 = r \operatorname{cis} \theta_2$ then $z_1 z_2 = r_1 r_2 \operatorname{cis}(\theta_1 + \theta_2)$. The latter formula just encapsulates the formula for the sine and cosine of a sum, and gives $\arg z_1 z_2 = \arg z_1 + \arg z_2$. In particular, $ir \operatorname{cis} \theta = r \operatorname{cis}(\theta + \pi/2)$, so multiplication by $i$ is just the operation of rotation by $\pi/2$ in the complex plane. Multiplication by an arbitrary complex number $r \operatorname{cis} \theta$ is just rotation by $\arg \theta$ followed by (or preceded by) dilation by a factor $r$. Further, $z^n = r^n \operatorname{cis}(n\theta)$. Every nonzero $z \in \mathbb{C}$ admits $n$ distinct $n$th roots: the $n$th roots of $r \operatorname{cis} \theta$ are $\sqrt[n]{r} \operatorname{cis}[(\theta + 2\pi k)/n]$, $k = 0, 1, \ldots, n$.
+
+Lines and circles in the plane. Circles given by $|z - a| = r$ where $a \in \mathbb{C}$ is the center and $r > 0$ is the radius. If $0 \neq b \in \mathbb{C}$ then the line through the origin in the direction $b$ is the set of all points of the form $tb$, $t \in \mathbb{R}$, or all $z$ with $\operatorname{Im}(z/b) = 0$. If $t \in \mathbb{R}$ and $c > 0$ then $(t + ci)b = tb + cib$ represents a point in the half plane to the left of $b$ determined by the line $tb$, i.e., $\{z : \operatorname{Im}(z/b) > 0\}$ is the equation of that half-plane. Similarly, $\{z : \operatorname{Im}[(z - a)/b] > 0\}$ is the translation of that half-plane by $a$, i.e., the half-plane determined by the line through $a$ parallel to $b$ and in the direction to the left of $b$.
+
+<!-- page 3 -->
 
 3
-Stereographic projection determines a one-to-one correspondence between the unit
-sphere in R 3 minus the north-pole, S , and the complex plane via the correspondence
-z ↔
-x 1 + ix 2
-1 − x 3
-,
-x 1 =
-2 Re z
-1 + |z |2 , x 2 =
-2 Im z
-1 + |z |2 , x 3 =
-|z |2 − 1
-|z | + 1
-.
-If we deﬁne C ∞ = C ∪ {∞} , then we have a one-to-one correspondence between S and
-C ∞ . This allows us to deﬁne a metric on C ∞ , which is given by
-d (z 1 , z 2 ) =
-2|z 1 − z 2 |√
-(1 + |z 1 |2 )(1 + |z 2 |2 )
-, d (z, ∞ ) =
-2√
-1 + |z |2
-.
-II. Elementary Properties and Examples of Analytic Functions
-For z ⁄= 1,
-∑ N
-n =0 z n = (1 − z N +1 )/(1 − z ). Therefore the geometric series
-∑ ∞
-n =0 z n
-converges (to 1 / (1 − z )) if |z | < 1. It clearly diverges, in fact its terms become unbounded,
-if |z | > 1.
-W eierstrass M-T est. Let M 0 , M 1 , . . . be positive numbers with
-∑
-M n < ∞ and suppose
-that f n : X → C are functions on some set X satisfying sup x ∈ X |f n (x )| ≤ M n . Then∑ ∞
-n =0 f n (x ) is absolutely and uniformly convergent.
-Theorem. Let a 0 , a 1 , · · · ∈ C be given and deﬁne the number R by
-1
-R
-= lim sup |a n |1 /n .
-Then (1) for any a ∈ C the power series
-∑ ∞
-n =0 a n (z − a ) n converges absolutely for all
-|z − a | < R and it converges absolutely and uniformly on the disk |z − a | ≤ r for all r < R .
-(2) The sequence a n (z − a ) n is unbounded for all |z − a | > R (and hence the series is
-certainly divergent).
-Thus we see that the set of points where a power series converges consists of a disk
-|z − a | < R and possibly a subset of its boundary. R is called the radius of convergence of
-its series. The case R = ∞ is allowed.
-Proof of theorem. For any r < R we show absolute uniform convergence on D r = {| z − a | ≤
-r } . Choose ˜ r ∈ (r, R ). Then, 1 / ˜r > lim sup |a n |1 /n , so |a n |1 /n < 1 / ˜r for all n suﬃciently
-large. For such n , |a n | < 1/ ˜r n and so
-sup
-z ∈ D r
-|a n (z − a ) n | < (r/ ˜r ) n .
-Since
-∑
-(r/ ˜r ) n < ∞ we get the absolute uniform convergence on D r .
-If |z − a | = r > R , take ˜ r ∈ (R, r ). Then there exist n arbitrarily large such that
-|a n |1 /n ≥ 1/ ˜r . Then, |a n (z − a ) n | ≥ (r/ ˜r ) n , which can be arbitrarily large. □
+
+Stereographic projection determines a one-to-one correspondence between the unit sphere in $\mathbb{R}^3$ minus the north-pole, $S$, and the complex plane via the correspondence
+
+$$z \leftrightarrow \frac{x_1 + ix_2}{1 - x_3},$$
+
+$$x_1 = \frac{2 \operatorname{Re} z}{1 + |z|^2}, \quad x_2 = \frac{2 \operatorname{Im} z}{1 + |z|^2}, \quad x_3 = \frac{|z|^2 - 1}{|z| + 1}.$$
+
+If we define $\mathbb{C}_{\infty} = \mathbb{C} \cup \{\infty\}$, then we have a one-to-one correspondence between $S$ and $\mathbb{C}_{\infty}$. This allows us to define a metric on $\mathbb{C}_{\infty}$, which is given by
+
+$$d(z_1, z_2) = \frac{2|z_1 - z_2|}{\sqrt{(1 + |z_1|^2)(1 + |z_2|^2)}}, \qquad d(z, \infty) = \frac{2}{\sqrt{1 + |z|^2}}.$$
+
+## II. ELEMENTARY PROPERTIES AND EXAMPLES OF ANALYTIC FUNCTIONS
+
+For $z \neq 1$, $\sum_{n=0}^{N} z^n = (1 - z^{N+1})/(1 - z)$. Therefore the geometric series $\sum_{n=0}^{\infty} z^n$ converges (to $1/(1 - z)$) if $|z| < 1$. It clearly diverges, in fact its terms become unbounded, if $|z| > 1$.
+
+**Weierstrass M-Test.** Let $M_0, M_1, \ldots$ be positive numbers with $\sum M_n < \infty$ and suppose that $f_n : X \to \mathbb{C}$ are functions on some set $X$ satisfying $\sup_{x \in X} |f_n(x)| \leq M_n$. Then $\sum_{n=0}^{\infty} f_n(x)$ is absolutely and uniformly convergent.
+
+**Theorem.** Let $a_0, a_1, \cdots \in \mathbb{C}$ be given and define the number $R$ by
+
+$$\frac{1}{R} = \limsup |a_n|^{1/n}.$$
+
+Then (1) for any $a \in \mathbb{C}$ the power series $\sum_{n=0}^{\infty} a_n (z - a)^n$ converges absolutely for all $|z - a| < R$ and it converges absolutely and uniformly on the disk $|z - a| \leq r$ for all $r < R$. (2) The sequence $a_n (z - a)^n$ is unbounded for all $|z - a| > R$ (and hence the series is certainly divergent).
+
+Thus we see that the set of points where a power series converges consists of a disk $|z - a| < R$ and possibly a subset of its boundary. $R$ is called the radius of convergence of its series. The case $R = \infty$ is allowed.
+
+*Proof of theorem.* For any $r < R$ we show absolute uniform convergence on $D_r = \{|z - a| \leq r\}$. Choose $\tilde{r} \in (r, R)$. Then, $1/\tilde{r} > \limsup |a_n|^{1/n}$, so $|a_n|^{1/n} < 1/\tilde{r}$ for all $n$ sufficiently large. For such $n$, $|a_n| < 1/\tilde{r}^n$ and so
+
+$$\sup_{z \in D_r} |a_n (z - a)^n| < (r/\tilde{r})^n.$$
+
+Since $\sum (r/\tilde{r})^n < \infty$ we get the absolute uniform convergence on $D_r$.
+
+If $|z - a| = r > R$, take $\tilde{r} \in (R, r)$. Then there exist $n$ arbitrarily large such that $|a_n|^{1/n} \geq 1/\tilde{r}$. Then, $|a_n (z - a)^n| \geq (r/\tilde{r})^n$, which can be arbitrarily large. $\square$
+
+<!-- page 4 -->
 
 4
-Theorem. If a 0 , a 1 , . . . ∈ C and lim |a n /a n +1 | exists as a ﬁnite number or inﬁnity, then
-this limit is the radius of convergence R of
-∑
-a n (z − a ) n .
-Proof. Without loss of generality we can suppose that a = 0. Suppose that |z | >
-lim |a n /a n +1 |. Then for all n suﬃciently large |a n | < |a n +1 z | and |a n z n | < |a n +1 z n +1 |.
-Thus the series
-∑
-a n z n has terms of increasing magnitude, and so cannot be convergent.
-Thus |z | ≥ R . This shows that lim |a n /a n +1 | ≥ R .
-Similarly, suppose that z < lim |a n /a n +1 |. Then for all n suﬃciently large |a n | > |a n +1 z |
-and |a n z n | > |a n +1 z n +1 |. Thus the series has terms of decreasing magnitude, and so, by
-the previous theorem, |z | ≤ R . This shows that lim |a n /a n +1 | ≤ R . □
-Remark. On the circle of convergence, many diﬀerent behaviors are possible.
-∑
-z n diverges
-for all |z | = 1.
-∑
-z n /n diverges for z = 1, else converges, but not absolutely (this follows
-from the fact that the partial sums of
-∑
-z n are bounded for z ⁄= 1 and 1 /n ↓ 0).
-∑
-z n /n 2
-converges absolutely on |z | ≤ 1. Sierpinski gave a (complicated) example of a function
-which diverges at every point of the unit circle except z = 1.
+
+**Theorem.** If $a_0, a_1, \ldots \in \mathbb{C}$ and $\lim |a_n / a_{n+1}|$ exists as a finite number or infinity, then this limit is the radius of convergence $R$ of $\sum a_n(z - a)^n$.
+
+*Proof.* Without loss of generality we can suppose that $a = 0$. Suppose that $|z| > \lim |a_n / a_{n+1}|$. Then for all $n$ sufficiently large $|a_n| < |a_{n+1}z|$ and $|a_n z^n| < |a_{n+1}z^{n+1}|$. Thus the series $\sum a_n z^n$ has terms of increasing magnitude, and so cannot be convergent. Thus $|z| \geq R$. This shows that $\lim |a_n / a_{n+1}| \geq R$.
+
+Similarly, suppose that $z < \lim |a_n / a_{n+1}|$. Then for all $n$ sufficiently large $|a_n| > |a_{n+1}z|$ and $|a_n z^n| > |a_{n+1}z^{n+1}|$. Thus the series has terms of decreasing magnitude, and so, by the previous theorem, $|z| \leq R$. This shows that $\lim |a_n / a_{n+1}| \leq R$. $\square$
+
+*Remark.* On the circle of convergence, many different behaviors are possible. $\sum z^n$ diverges for all $|z| = 1$. $\sum z^n / n$ diverges for $z = 1$, else converges, but not absolutely (this follows from the fact that the partial sums of $\sum z^n$ are bounded for $z \neq 1$ and $1/n \downarrow 0$). $\sum z^n / n^2$ converges absolutely on $|z| \leq 1$. Sierpinski gave a (complicated) example of a function which diverges at every point of the unit circle except $z = 1$.
+
 As an application, we see that the series
-∞∑
-n =0
-z n
-n !
-converges absolutely for all z ∈ C and that the convergence is uniform on all bounded sets.
-The sum is, by deﬁnition, exp z .
-Now suppose that
-∑ ∞
-n =0 a n (z − a ) n has radius of convergence R , and consider its formal
-derivative
-∑ ∞
-n =1 na n (z − a ) n − 1 =
-∑ ∞
-n =0 (n +1) a n +1 (z − a ) n . Now clearly
-∑
-n =0 a n +1 (z − a ) n
-has the same radius of convergence as
-∑ ∞
-n =0 a n (z − a ) n since
-(z − a )
-N∑
-n =0
-a n +1 (z − a ) n =
-N +1∑
-n =0
-a n (z − a ) − a 0 ,
-and so the partial sums on the left and right either both diverge for a given z or both
-converge. This shows (in a roundabout way) that lim sup |a n +1 |1 /n = lim sup |a n |1 /n =
-1/R . Now lim( n +1) 1 /n = 1 as is easily seen by taking logs. Moreover, it is easy to see that if
-lim sup b n = b and lim c n = c > 0, then lim sup b n c n = bc . Thus lim sup |(n + 1) a n +1 |1 /n =
-1/R . This shows that the formal derivative of a power series has the same radius of
-convergence as the original power series.
-Diﬀerentiability and analyticity. Deﬁnition of diﬀerentiability at a point (assumes
-function is deﬁned in a neighborhood of the point).
-Most of the consequences of diﬀerentiability are quite diﬀerent in the real and complex
-case, but the simplest algebraic rules are the same, with the same proofs. First of all,
-diﬀerentiability at a point implies continuity there. If f and g are both diﬀerentiable at a
-point a , then so are f ± g , f · g , and, if g (a ) ⁄= 0, f /g , and the usual sum, product, and
-quotient rules hold. If f is diﬀerentiable at a and g is diﬀerentiable at f (a ), then g ◦ f
-is diﬀerentiable at a and the chain rule holds. Suppose that f is continuous at a , g is
-continous at f (a ), and g (f (z )) = z for all z in a neighborhood of a . Then if g ′ (f (a )) exists
-and is non-zero, then f ′ (a ) exists and equals 1 /g ′ (f (a )).
+
+$$\sum_{n=0}^{\infty} \frac{z^n}{n!}$$
+
+converges absolutely for all $z \in \mathbb{C}$ and that the convergence is uniform on all bounded sets. The sum is, by definition, $\exp z$.
+
+Now suppose that $\sum_{n=0}^{\infty} a_n (z - a)^n$ has radius of convergence $R$, and consider its formal derivative $\sum_{n=1}^{\infty} n a_n (z - a)^{n-1} = \sum_{n=0}^{\infty} (n+1) a_{n+1} (z - a)^n$. Now clearly $\sum_{n=0}^{\infty} a_{n+1} (z - a)^n$ has the same radius of convergence as $\sum_{n=0}^{\infty} a_n (z - a)^n$ since
+
+$$(z - a) \sum_{n=0}^{N} a_{n+1} (z - a)^n = \sum_{n=0}^{N+1} a_n (z - a) - a_0,$$
+
+and so the partial sums on the left and right either both diverge for a given $z$ or both converge. This shows (in a roundabout way) that $\limsup |a_{n+1}|^{1/n} = \limsup |a_n|^{1/n} = 1/R$. Now $\lim (n+1)^{1/n} = 1$ as is easily seen by taking logs. Moreover, it is easy to see that if $\limsup b_n = b$ and $\lim c_n = c > 0$, then $\limsup b_n c_n = bc$. Thus $\limsup |(n+1)a_{n+1}|^{1/n} = 1/R$. This shows that the formal derivative of a power series has the same radius of convergence as the original power series.
+
+**Differentiability and analyticity.** Definition of differentiability at a point (assumes function is defined in a neighborhood of the point).
+
+Most of the consequences of differentiability are quite different in the real and complex case, but the simplest algebraic rules are the same, with the same proofs. First of all, differentiability at a point implies continuity there. If $f$ and $g$ are both differentiable at a point $a$, then so are $f \pm g$, $f \cdot g$, and, if $g(a) \neq 0$, $f/g$, and the usual sum, product, and quotient rules hold. If $f$ is differentiable at $a$ and $g$ is differentiable at $f(a)$, then $g \circ f$ is differentiable at $a$ and the chain rule holds. Suppose that $f$ is continuous at $a$, $g$ is continuous at $f(a)$, and $g(f(z)) = z$ for all $z$ in a neighborhood of $a$. Then if $g'(f(a))$ exists and is non-zero, then $f'(a)$ exists and equals $1/g'(f(a))$.
+
+<!-- page 5 -->
 
 5
-Deﬁnition. Let f be a complex-valued function deﬁned on an open set G in C . Then f
-is said to be analytic on G if f ′ exists and is continuous at every point of G .
-Remark. We shall prove later that if f is diﬀerentiable at every point of an open set in C
-it is automatically analytic; in fact, it is automatically inﬁnitely diﬀerentiable. This is of
-course vastly diﬀerent from the real case.
-If Q is an arbitrary non-empty subset of C we say f is analytic on Q if it is deﬁned and
-analytic on an open set containing Q .
-We now show that a power series is diﬀerentiable at every point in its disk of convergence
-and that its derivative is given by the formal derivative obtained by diﬀerentiating term-
-by-term. Since we know that that power series has the same radius of convergence, it
-follows that a power series is analytic and inﬁnitely diﬀerentiable in its convergence disk.
-For simplicity, and without loss of generality we consider a power series centered at zero:
-f (z ) =
-∑
-n a n z n . Suppose that the radius of convergence is R and that |z 0 | < R . We must
-show that for any ϵ > 0, the inequality
-⏐⏐⏐⏐
-f (z ) − f (z 0 )
-z − z 0
-− g (z 0 )
-⏐⏐⏐⏐ ≤ ϵ
-is satisﬁed for all z suﬃciently close to z 0 , where g (z ) =
-∑ ∞
-n =1 na n z n − 1 . Let s N (z ) =∑ N
-n =0 a n z n , R N (z ) =
-∑ ∞
-n = N +1 a n z n . Then
-⏐⏐⏐⏐
-f (z ) − f (z 0 )
-z − z 0
-− g (z 0 )
-⏐⏐⏐⏐ ≤
-⏐⏐⏐⏐
-s N (z ) − s N (z 0 )
-z − z 0
-− s ′
-N (z 0 )
-⏐⏐⏐⏐
-+ |s ′
-N (z 0 ) − g (z 0 )| +
-⏐⏐⏐⏐
-R N (z ) − R N (z 0 )
-z − z 0
-⏐⏐⏐⏐ =: T 1 + T 2 + T 3 .
-Now s ′
-N (z 0 ) is just a partial sum for g (z 0 ), so for N suﬃciently large (and all z ), T 2 ≤ ϵ/ 3.
-Also,
-R N (z ) − R n (z 0 )
-z − z 0
-=
-∞∑
-n = N +1
-a n
-z n − z n
-0
-z − z 0
-.
-Now |z 0 | < r < R for some r , and if we restrict to |z | < r , we have
-⏐⏐⏐⏐a n
-z n − z n
-0
-z − z 0
-⏐⏐⏐⏐ = |a n || z n − 1 + z n − 2 z 0 + · · · + z n − 1
-0 | ≤ a n nr n − 1 .
-Since
-∑
-a n nr n − 1 is convergent, we have for N suﬃciently large and all |z | < r then
-T 3 < ϵ/ 3. Now ﬁx a value of N which is suﬃciently large by both criteria. Then the
-diﬀerentiability of the polynomial s N shows that T 1 ≤ ϵ/ 3 for all z suﬃciently close to z 0 .
-We thus know that if f (z ) =
-∑
-a n z n , then, within the disk of convergence, f ′ (z ) =∑
-na n z n − 1 , and by induction, f ′′ (z ) =
-∑
-n (n − 1) a n z n − 2 , etc. Thus a 0 = f (0), a 1 = f ′ (0),
-a 2 = f ′′ (0) /2, a 3 = f ′′′ (0) /3!, etc. This shows that any convergent power series is the sum
-of its Taylor series in the disk of convergence:
-f (z ) =
-∑ f n (a )
-n !
-(z − a ) n .
-In particular, exp ′ = exp.
+
+**Definition.** Let $f$ be a complex-valued function defined on an open set $G$ in $\mathbb{C}$. Then $f$ is said to be analytic on $G$ if $f'$ exists and is continuous at every point of $G$.
+
+*Remark.* We shall prove later that if $f$ is differentiable at every point of an open set in $\mathbb{C}$ it is automatically analytic; in fact, it is automatically infinitely differentiable. This is of course vastly different from the real case.
+
+If $Q$ is an arbitrary non-empty subset of $\mathbb{C}$ we say $f$ is analytic on $Q$ if it is defined and analytic on an open set containing $Q$.
+
+We now show that a power series is differentiable at every point in its disk of convergence and that its derivative is given by the formal derivative obtained by differentiating term-by-term. Since we know that that power series has the same radius of convergence, it follows that a power series is analytic and infinitely differentiable in its convergence disk. For simplicity, and without loss of generality we consider a power series centered at zero: $f(z) = \sum_n a_n z^n$. Suppose that the radius of convergence is $R$ and that $|z_0| < R$. We must show that for any $\epsilon > 0$, the inequality
+
+$$\left| \frac{f(z) - f(z_0)}{z - z_0} - g(z_0) \right| \le \epsilon$$
+
+is satisfied for all $z$ sufficiently close to $z_0$, where $g(z) = \sum_{n=1}^\infty n a_n z^{n-1}$. Let $s_N(z) = \sum_{n=0}^N a_n z^n$, $R_N(z) = \sum_{n=N+1}^\infty a_n z^n$. Then
+
+$$\left| \frac{f(z) - f(z_0)}{z - z_0} - g(z_0) \right| \le \left| \frac{s_N(z) - s_N(z_0)}{z - z_0} - s'_N(z_0) \right| + |s'_N(z_0) - g(z_0)| + \left| \frac{R_N(z) - R_N(z_0)}{z - z_0} \right| =: T_1 + T_2 + T_3.$$
+
+Now $s'_N(z_0)$ is just a partial sum for $g(z_0)$, so for $N$ sufficiently large (and all $z$), $T_2 \le \epsilon/3$. Also,
+
+$$\frac{R_N(z) - R_n(z_0)}{z - z_0} = \sum_{n=N+1}^\infty a_n \frac{z^n - z_0^n}{z - z_0}.$$
+
+Now $|z_0| < r < R$ for some $r$, and if we restrict to $|z| < r$, we have
+
+$$\left| a_n \frac{z^n - z_0^n}{z - z_0} \right| = |a_n| |z^{n-1} + z^{n-2} z_0 + \dots + z_0^{n-1}| \le a_n n r^{n-1}.$$
+
+Since $\sum a_n n r^{n-1}$ is convergent, we have for $N$ sufficiently large and all $|z| < r$ then $T_3 < \epsilon/3$. Now fix a value of $N$ which is sufficiently large by both criteria. Then the differentiability of the polynomial $s_N$ shows that $T_1 \le \epsilon/3$ for all $z$ sufficiently close to $z_0$.
+
+We thus know that if $f(z) = \sum a_n z^n$, then, within the disk of convergence, $f'(z) = \sum n a_n z^{n-1}$, and by induction, $f''(z) = \sum n(n-1) a_n z^{n-2}$, etc. Thus $a_0 = f(0)$, $a_1 = f'(0)$, $a_2 = f''(0)/2$, $a_3 = f'''(0)/3!$, etc. This shows that any convergent power series is the sum of its Taylor series in the disk of convergence:
+
+$$f(z) = \sum \frac{f^n(a)}{n!} (z - a)^n.$$
+
+In particular, $\exp' = \exp$.
+
+<!-- page 6 -->
 
 6
-Lemma. A function with vanishing derivative on a region (connected open set) is constant.
-Indeed, it is constant on disks, since we can restrict to segments and use the real result.
-Then we can use connectedness to see that the set of points where it takes a given value
-is open and closed.
-Use this to show that exp( z ) exp( a − z ) ≡ exp a . Deﬁne cos z and sin z , get cos 2 + sin 2 ≡
-1, exp z = cos z + i sin z , cis θ = exp( iθ ), exp z = exp(Re z ) cis(Im z ).
-The Logarithm. If x ⁄= 0, the most general solution of exp z = w is z = log |w | + i arg w +
-2πin , n ∈ Z . There is no solution to exp z = 0.
-Deﬁnition. If G is an open set and f : G → C is a continuous function satisfying
-exp( f (z )) = z , then f is called a branch of the logarithm on G .
-Examples: C \ R − (principal branch), C \ R + , a spiral strip.
-By the formula for the derivative of an inverse, a branch of the logarithm is analytic
-with derivative 1 /z .
-A branch of the logarithm gives a branch of z b := exp( b log z ) (understood to be the
-principal branch if not otherwise noted). Note that e b = exp b.
-Note that diﬀerent branches of the logarithm assign values to log z that diﬀer by addition
-of 2 πin . Consequently diﬀerent branches of z b diﬀer by factors of exp(2 πinb ). If b is an
-integer, all values agree. If b is a rational number with denominator d there are d values.
-Conformality. Consider the angle between two line segments with a common vertex in
-the complex plane. We wish to consider how this angle is transformed under a complex
-map. The image will be two smooth curves meeting at a common point, so we have to
-deﬁne the angle between two such curves.
-Deﬁne a path in the complex plane as a continuous map γ : [ a, b ] → C . If γ ′ (t) ∈ C exists
-at some point and is not zero, then it is a vector tangent to the curve at γ (t), and hence
-its argument is the angle between the (tangent to the) curve and the horizontal. (Note:
-if γ ′ (t) = 0, the curve may not have a tangent; e.g., γ (t) = t 2 − it 3 .) Let γ : [ a, b ] → C
-and ˜γ : [˜a, ˜b] → C be two smooth curves, such that γ (a ) = ˜γ (˜a ) = z , and γ ′ (a ), ˜γ ′ (˜a ) ⁄= 0.
-Then arg ˜ γ ′ (˜a ) − arg γ ′ (a ) measures the angle between the curves. Now consider the images
-under f , e.g., of ρ (t) = f (γ (t)). Then ρ ′ (a ) = f ′ (z )γ ′ (a ), ˜ρ ′ (˜a ) = f ′ (z )˜γ ′ (˜a ). Therefore
-arg ˜ρ ′ (˜a ) − arg ρ ′ (a ) = arg ˜ γ ′ (˜a ) + arg f ′ (z ) − arg γ ′ (a ) − arg f ′ (z ), i.e., the angle is invariant
-in both magnitude and sign. This says that an analytic mapping is conformal, whenever
-its derivative is not zero. (Not true if the derivative is zero. E.g., z 2 doubles angles at the
-origin.)
-The conformality of an analytic map arises from the fact that in a neighborhood of a
-point z 0 such a map behaves to ﬁrst order like multiplication by f ′ (z 0 ). Since f ′ (z 0 ) =
-r exp iθ , near z 0 f simply behave like rotation by θ followed by dilation. By contrast, a
-smooth map from R 2 → R 2 can behave like an arbitrary linear operator in a neighborhood
-of a point.
+
+**Lemma.** *A function with vanishing derivative on a region (connected open set) is constant.*
+
+Indeed, it is constant on disks, since we can restrict to segments and use the real result. Then we can use connectedness to see that the set of points where it takes a given value is open and closed.
+
+Use this to show that $\exp(z) \exp(a - z) \equiv \exp a$. Define $\cos z$ and $\sin z$, get $\cos^2 + \sin^2 \equiv 1$, $\exp z = \cos z + i \sin z$, $\operatorname{cis} \theta = \exp(i\theta)$, $\exp z = \exp(\operatorname{Re} z) \operatorname{cis}(\operatorname{Im} z)$.
+
+**The Logarithm.** If $x \neq 0$, the most general solution of $\exp z = w$ is $z = \log |w| + i \arg w + 2\pi i n$, $n \in \mathbb{Z}$. There is no solution to $\exp z = 0$.
+
+**Definition.** If $G$ is an open set and $f : G \to \mathbb{C}$ is a continuous function satisfying $\exp(f(z)) = z$, then $f$ is called a branch of the logarithm on $G$.
+
+Examples: $\mathbb{C} \setminus \mathbb{R}_-$ (principal branch), $\mathbb{C} \setminus \mathbb{R}_+$, a spiral strip.
+
+By the formula for the derivative of an inverse, a branch of the logarithm is analytic with derivative $1/z$.
+
+A branch of the logarithm gives a branch of $z^b := \exp(b \log z)$ (understood to be the principal branch if not otherwise noted). Note that $e^b = \exp b$.
+
+Note that different branches of the logarithm assign values to $\log z$ that differ by addition of $2\pi i n$. Consequently different branches of $z^b$ differ by factors of $\exp(2\pi i n b)$. If $b$ is an integer, all values agree. If $b$ is a rational number with denominator $d$ there are $d$ values.
+
+**Conformality.** Consider the angle between two line segments with a common vertex in the complex plane. We wish to consider how this angle is transformed under a complex map. The image will be two smooth curves meeting at a common point, so we have to define the angle between two such curves.
+
+Define a path in the complex plane as a continuous map $\gamma : [a, b] \to \mathbb{C}$. If $\gamma'(t) \in \mathbb{C}$ exists at some point and is not zero, then it is a vector tangent to the curve at $\gamma(t)$, and hence its argument is the angle between the (tangent to the) curve and the horizontal. (Note: if $\gamma'(t) = 0$, the curve may not have a tangent; e.g., $\gamma(t) = t^2 - it^3$.) Let $\gamma : [a, b] \to \mathbb{C}$ and $\tilde{\gamma} : [\tilde{a}, \tilde{b}] \to \mathbb{C}$ be two smooth curves, such that $\gamma(a) = \tilde{\gamma}(\tilde{a}) = z$, and $\gamma'(a), \tilde{\gamma}'(\tilde{a}) \neq 0$. Then $\arg \tilde{\gamma}'(\tilde{a}) - \arg \gamma'(a)$ measures the angle between the curves. Now consider the images under $f$, e.g., of $\rho(t) = f(\gamma(t))$. Then $\rho'(a) = f'(z)\gamma'(a)$, $\tilde{\rho}'(\tilde{a}) = f'(z)\tilde{\gamma}'(\tilde{a})$. Therefore $\arg \tilde{\rho}'(\tilde{a}) - \arg \rho'(a) = \arg \tilde{\gamma}'(\tilde{a}) + \arg f'(z) - \arg \gamma'(a) - \arg f'(z)$, i.e., the angle is invariant in both magnitude and sign. This says that an analytic mapping is conformal, whenever its derivative is not zero. (Not true if the derivative is zero. E.g., $z^2$ doubles angles at the origin.)
+
+The conformality of an analytic map arises from the fact that in a neighborhood of a point $z_0$ such a map behaves to first order like multiplication by $f'(z_0)$. Since $f'(z_0) = r \exp i\theta$, near $z_0$ $f$ simply behave like rotation by $\theta$ followed by dilation. By contrast, a smooth map from $\mathbb{R}^2 \to \mathbb{R}^2$ can behave like an arbitrary linear operator in a neighborhood of a point.
+
 At this point, show the computer graphics square1.mps and square2.mps.
 
+<!-- page 7 -->
+
 7
-Cauchy–Riemann Equations. Let f : Ω → C with Ω ⊂ C open. Abuse notation
-slightly by writing f (x, y ) as an alternative for f (x + iy ). If f ′ (z ) exists for some z =
-x + iy ∈ Ω, then
-f ′ (z ) = lim
-h ∈ R
-h → 0
-f (z + h ) − f (z )
-h
-= lim
-h ∈ R
-h → 0
-f (x + h, y ) − f (x, y )
-h
-=
-∂f
-∂x
-,
+
+**Cauchy–Riemann Equations.** Let $f : \Omega \to \mathbb{C}$ with $\Omega \subset \mathbb{C}$ open. Abuse notation slightly by writing $f(x, y)$ as an alternative for $f(x + iy)$. If $f'(z)$ exists for some $z = x + iy \in \Omega$, then
+
+$$f'(z) = \lim_{\substack{h \in \mathbb{R} \\ h \to 0}} \frac{f(z + h) - f(z)}{h} = \lim_{\substack{h \in \mathbb{R} \\ h \to 0}} \frac{f(x + h, y) - f(x, y)}{h} = \frac{\partial f}{\partial x},$$
+
 and
-f ′ (z ) = lim
-h ∈ R
-h → 0
-f (z + ih ) − f (z )
-ih
-= lim
-h ∈ R
-h → 0
-− i
-f (x, y + h ) − f (x, y )
-h
-= − i
-∂f
-∂y
-.
-Thus complex-diﬀerentiability of f at z implies not only that the partial derivatives of f
-exist there, but also that they satisfy the Cauchy–Riemann equation
-∂f
-∂x
-= − i
-∂f
-∂y
-.
-If f = u + iv , then this equation is equivalent to the system
-∂u
-∂x
-=
-∂v
-∂y
-,
-∂v
-∂x
-= −
-∂u
-∂y
-.
+
+$$f'(z) = \lim_{\substack{h \in \mathbb{R} \\ h \to 0}} \frac{f(z + ih) - f(z)}{ih} = \lim_{\substack{h \in \mathbb{R} \\ h \to 0}} -i \frac{f(x, y + h) - f(x, y)}{h} = -i \frac{\partial f}{\partial y}.$$
+
+Thus complex-differentiability of $f$ at $z$ implies not only that the partial derivatives of $f$ exist there, but also that they satisfy the Cauchy–Riemann equation
+
+$$\frac{\partial f}{\partial x} = -i \frac{\partial f}{\partial y}.$$
+
+If $f = u + iv$, then this equation is equivalent to the system
+
+$$\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial v}{\partial x} = -\frac{\partial u}{\partial y}.$$
+
 Another convenient notation is to introduce
-∂f
-∂z
-:=
-1
-2
-(
-∂f
-∂x
-− i
-∂f
-∂y
-)
-,
-∂f
-∂ ¯z
-:=
-1
-2
-(
-∂f
-∂x
-+ i
-∂f
-∂y
-)
-.
-(These are motivated by the equations x = ( z + ¯z )/2, y = ( z − ¯z )/ (2 i), which, if z and ¯z
-were independent variables, would give ∂x/∂z = 1 /2, ∂y/∂z = − i/ 2, etc.)
+
+$$\frac{\partial f}{\partial z} := \frac{1}{2} \left( \frac{\partial f}{\partial x} - i \frac{\partial f}{\partial y} \right), \qquad \frac{\partial f}{\partial \bar{z}} := \frac{1}{2} \left( \frac{\partial f}{\partial x} + i \frac{\partial f}{\partial y} \right).$$
+
+(These are motivated by the equations $x = (z + \bar{z})/2$, $y = (z - \bar{z})/(2i)$, which, if $z$ and $\bar{z}$ were independent variables, would give $\partial x/\partial z = 1/2$, $\partial y/\partial z = -i/2$, etc.)
+
 In terms of these, the Cauchy–Riemann equations are exactly equivalent to
-∂f
-∂ ¯z
-= 0 ,
+
+$$\frac{\partial f}{\partial \bar{z}} = 0,$$
+
 which is also equivalent to
-∂f
-∂z
-=
-∂f
-∂x
-.
-Thus, if f is analytic on Ω, then the partial derivaties of f exist and are continuous on
-Ω, and the Cauchy-Riemann equations are satisﬁed there. The converse is true as well:
-Theorem. If the partial derivatives of f exist and are continuous on Ω , and the Cauchy-
-Riemann equations are satisﬁed there, then f is analytic on Ω .
+
+$$\frac{\partial f}{\partial z} = \frac{\partial f}{\partial x}.$$
+
+Thus, if $f$ is analytic on $\Omega$, then the partial derivatives of $f$ exist and are continuous on $\Omega$, and the Cauchy-Riemann equations are satisfied there. The converse is true as well:
+
+**Theorem.** *If the partial derivatives of $f$ exist and are continuous on $\Omega$, and the Cauchy-Riemann equations are satisfied there, then $f$ is analytic on $\Omega$.*
+
+<!-- page 8 -->
 
 8
-Proof. Let z = x + iy ∈ Ω. We must show that f ′ (z ) exists. Let r be small enough that
-the disk of radius r around z belongs to Ω and choose h = s + it with 0 < |s + it | < r .
-Then, by the mean value theorem,
-f (z + h ) − f (z )
-h
-=
-f (x + s, y + t) − f (x, y )
-s + it
-=
-f (x + s, y + t) − f (x, y + t)
-s
-s
-s + it
-+
-f (x, y + t) − f (x, y )
-t
-t
-s + it
-=
-∂f
-∂x
-(x + s ∗ , y + t)
-s
-s + it
-+
-∂f
-∂y
-(x, y + t ∗ )
-t
-s + it
-,
-where |s ∗ | < s and |t ∗ | < t . Note that
-∂f
-∂x
-(x + s ∗ , y + t) −
-∂f
-∂x
-(x, y ) → 0
-as h → 0, and similarly for the second partial derivative. Moreover |s/ (s + it )| stays
-bounded (by 1). Thus
-f (z + h ) − f (z )
-h
-=
-∂f
-∂x
-(x, y )
-s
-s + it
-+
-∂f
-∂y
-(x, y )
-t
-s + it
-+ R (h ),
-where lim h → 0 R (h ) = 0. Now if the Cauchy–Riemann equations hold, then the the ﬁrst
-two terms on the right hand side sum to ∂f /∂x (x, y ), which is independent of h , so the
-limit exists and is equal to ∂f /∂x (x, y ). □
-Remark. The theorem can be weakened to say that if f is continuous on Ω and the partial
-derivatives exist and satisfy the Cauchy–Riemann equations there (without assuming that
-the partial derivatives are continuous), then the complex derivative of f exists on Ω (which
-is equivalent to f being analytic on Ω. This is the Looman–Menchoﬀ Theorem. See
-Narasimhan, Complex Analysis in One Variable , for a proof. We do need at least continuity,
-since otherwise we could take f to be the characteristic function of the coordinate axes.
+
+Proof. Let $z = x + iy \in \Omega$. We must show that $f'(z)$ exists. Let $r$ be small enough that the disk of radius $r$ around $z$ belongs to $\Omega$ and choose $h = s + it$ with $0 < |s + it| < r$. Then, by the mean value theorem,
+
+$$\begin{array}{l} \frac{f(z+h)-f(z)}{h}=\frac{f(x+s,y+t)-f(x,y)}{s+it} \\ =\frac{f(x+s,y+t)-f(x,y+t)}{s}\frac{s}{s+it}+\frac{f(x,y+t)-f(x,y)}{t}\frac{t}{s+it} \\ =\frac{\partial f}{\partial x}(x+s^{*},y+t)\frac{s}{s+it}+\frac{\partial f}{\partial y}(x,y+t^{*})\frac{t}{s+it}, \end{array}$$
+
+where $|s^{*}| < s$ and $|t^{*}| < t$. Note that
+
+$$\frac{\partial f}{\partial x}(x+s^{*},y+t)-\frac{\partial f}{\partial x}(x,y)\to 0$$
+
+as $h \to 0$, and similarly for the second partial derivative. Moreover $|s/(s+it)|$ stays bounded (by 1). Thus
+
+$$\frac{f(z+h)-f(z)}{h}=\frac{\partial f}{\partial x}(x,y)\frac{s}{s+it}+\frac{\partial f}{\partial y}(x,y)\frac{t}{s+it}+R(h),$$
+
+where $\lim_{h\to 0}R(h)=0$. Now if the Cauchy-Riemann equations hold, then the first two terms on the right hand side sum to $\partial f/\partial x(x,y)$, which is independent of $h$, so the limit exists and is equal to $\partial f/\partial x(x,y)$. $\square$
+
+Remark. The theorem can be weakened to say that if $f$ is continuous on $\Omega$ and the partial derivatives exist and satisfy the Cauchy-Riemann equations there (without assuming that the partial derivatives are continuous), then the complex derivative of $f$ exists on $\Omega$ (which is equivalent to $f$ being analytic on $\Omega$. This is the Looman-Menchoff Theorem. See Narasimhan, Complex Analysis in One Variable, for a proof. We do need at least continuity, since otherwise we could take $f$ to be the characteristic function of the coordinate axes.
+
 Note that
-∂
-∂z
-∂
-∂ ¯z
-=
-∂
-∂ ¯z
-∂
-∂z
-=
-1
-4
-∆ .
-This shows that any analytic function is harmonic (equivalently, its real and imaginary
-parts are harmonic). It also shows that the conjugate of an analytic function, while not
-analytic, is harmonic.
-If u (x, y ) = Re f (x + iy ), then u is harmonic. Conversely, if u is harmonic on a region
-Ω, does there exist a harmonic conjugate , i.e., a function v on Ω such that f = u + iv is
-analytic? Clearly, if there exists v it is determined up to addition of a real constant (or
-f is determined up to addition of an imaginary constant). The book gives an elementary
-construction of the harmonic conjugate in a disk and in the whole plane. We sketch the
-idea of a more general proof. We require that the domain satisfy the condition that if γ
-is any piecewise simple smooth closed curve in Ω, then γ is the boundary of a subset G of
+
+$$\frac{\partial}{\partial z}\frac{\partial}{\partial\bar{z}}=\frac{\partial}{\partial\bar{z}}\frac{\partial}{\partial z}=\frac{1}{4}\Delta.$$
+
+This shows that any analytic function is harmonic (equivalently, its real and imaginary parts are harmonic). It also shows that the conjugate of an analytic function, while not analytic, is harmonic.
+
+If $u(x,y) = \operatorname{Re} f(x+iy)$, then $u$ is harmonic. Conversely, if $u$ is harmonic on a region $\Omega$, does there exist a harmonic conjugate, i.e., a function $v$ on $\Omega$ such that $f = u + iv$ is analytic? Clearly, if there exists $v$ it is determined up to addition of a real constant (or $f$ is determined up to addition of an imaginary constant). The book gives an elementary construction of the harmonic conjugate in a disk and in the whole plane. We sketch the idea of a more general proof. We require that the domain satisfy the condition that if $\gamma$ is any piecewise simple smooth closed curve in $\Omega$, then $\gamma$ is the boundary of a subset $G$ of
+
+<!-- page 9 -->
 
 9
-Ω. In other words, Ω has no holes (is simply-connected). Our proof follows directly from
-the following result, which holds on simply-connected domains: let f : Ω → R 2 be a C 1
-vectorﬁeld. Then there exists v : Ω → R such that f = ∇ v if and only if ∂f 1 /∂y = ∂f 2 /∂x .
-The “only if” part is obvious. To prove the “if” part, ﬁx a point ( x 0 , y 0 ) in Ω and for any
-(x, y ) ∈ Ω, let γ (x,y ) be a piecewise smooth path in Ω from ( x 0 , y 0 ) to ( x, y ), and let τ be
-the unit tangent to the path pointing from ( x 0 , y 0 ) towards ( x, y ). Deﬁne
-v (x, y ) =
-∫
-γ ( x,y )
-f · τ ds.
-It is essential that this quantity doesn’t depend on the choice of path, or, equivalently,
-that ∫
-γ
-f · τ ds = 0
-for all piecewise smooth simple closed paths γ . But
-∫
-γ
-f · τ ds =
-∫
-γ
-(f 2 , − f 1 ) · n ds =
-∫ ∫
-∇ · (f 2 , − f 1 ) dx dy = 0 ,
-by the divergence theorem. It is easy to check that ∇ v = f .
-For a non-simply connected region, there may exist no harmonic conugate. E.g., if
-u = log |z | on C \ { 0} , then u + i arg z is analytic on C \ { z ≤ 0}, but cannot be extended
-to an analytic function on C \ { 0 }.
-M¨ obius transformations.
-Deﬁnition. Let a , b, c, d be complex numbers with ad ⁄= bc . Then the mapping
-S (z ) =
-az + b
-cz + d
-, z ∈ C , z ⁄= − d/c,
-is a M¨ obius transformation.
-Remarks. 1) Note that if ad = bc the same expression would yield a constant. 2) The
-coeﬃcents aren’t unique, since we can multiply them all by any nonzero complex constant.
-To each MT we associate the nonsingular matrix
-(
-a b
-c d
-)
-of its coeﬃcients, which is
-determined up to a non-zero multiple. 3) The linear (but non-constant) polynomials are
-MTs, namely the ones for which c = 0. 4) If z ⁄= − d/c then S (z ) ∈ C and S ′ (z ) =
-(ad − bc )/(cz + d ) 2 ⁄= 0. 5) We can deﬁne S (− d/c ) = ∞ and S (∞ ) = a/c , so S can be
-viewed of as a map from C ∞ into itself (which is, as we will now see, 1-1 and onto).
-If S and T are MTs, then so is S ◦ T , its coeﬃcient matrix being the product of the
-coeﬃcient matrices of S and T . Any MTs admits an inverse, namely the transform with
-the inverse coeﬃcient matrix. With the understanding that S (∞ ) = a/c and S (− d/c ) = ∞
-(or, if c = 0, then S (∞ ) = ∞ , the MT maps C ∞ 1-1 onto itself. This is evident from the
+
+$\Omega$. In other words, $\Omega$ has no holes (is simply-connected). Our proof follows directly from the following result, which holds on simply-connected domains: let $f : \Omega \to \mathbb{R}^2$ be a $C^1$ vectorfield. Then there exists $v : \Omega \to \mathbb{R}$ such that $f = \nabla v$ if and only if $\partial f_1/\partial y = \partial f_2/\partial x$. The “only if” part is obvious. To prove the “if” part, fix a point $(x_0, y_0)$ in $\Omega$ and for any $(x, y) \in \Omega$, let $\gamma_{(x,y)}$ be a piecewise smooth path in $\Omega$ from $(x_0, y_0)$ to $(x, y)$, and let $\tau$ be the unit tangent to the path pointing from $(x_0, y_0)$ towards $(x, y)$. Define
+
+$$v(x, y) = \int_{\gamma_{(x,y)}} f \cdot \tau \, ds.$$
+
+It is essential that this quantity doesn’t depend on the choice of path, or, equivalently, that
+
+$$\int_{\gamma} f \cdot \tau \, ds = 0$$
+
+for all piecewise smooth simple closed paths $\gamma$. But
+
+$$\int_{\gamma} f \cdot \tau \, ds = \int_{\gamma} (f_2, -f_1) \cdot n \, ds = \iint \nabla \cdot (f_2, -f_1) \, dx \, dy = 0,$$
+
+by the divergence theorem. It is easy to check that $\nabla v = f$.
+
+For a non-simply connected region, there may exist no harmonic conjugate. E.g., if $u = \log |z|$ on $\mathbb{C} \setminus \{0\}$, then $u + i \arg z$ is analytic on $C \setminus \{z \leq 0\}$, but cannot be extended to an analytic function on $\mathbb{C} \setminus \{0\}$.
+
+# Möbius transformations.
+
+Definition. Let $a, b, c, d$ be complex numbers with $ad \neq bc$. Then the mapping
+
+$$S(z) = \frac{az + b}{cz + d}, \qquad z \in \mathbb{C}, \quad z \neq -d/c,$$
+
+is a Möbius transformation.
+
+Remarks. 1) Note that if $ad = bc$ the same expression would yield a constant. 2) The coefficients aren’t unique, since we can multiply them all by any nonzero complex constant. To each MT we associate the nonsingular matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix}$ of its coefficients, which is determined up to a non-zero multiple. 3) The linear (but non-constant) polynomials are MTs, namely the ones for which $c = 0$. 4) If $z \neq -d/c$ then $S(z) \in \mathbb{C}$ and $S'(z) = (ad - bc)/(cz + d)^2 \neq 0$. 5) We can define $S(-d/c) = \infty$ and $S(\infty) = a/c$, so $S$ can be viewed of as a map from $\mathbb{C}_{\infty}$ into itself (which is, as we will now see, 1-1 and onto).
+
+If $S$ and $T$ are MTs, then so is $S \circ T$, its coefficient matrix being the product of the coefficient matrices of $S$ and $T$. Any MTs admits an inverse, namely the transform with the inverse coefficient matrix. With the understanding that $S(\infty) = a/c$ and $S(-d/c) = \infty$ (or, if $c = 0$, then $S(\infty) = \infty$, the MT maps $\mathbb{C}_{\infty}$ 1-1 onto itself. This is evident from the
+
+<!-- page 10 -->
 
 10
-existence of its inverse S − 1 (z ) = ( dz − b)/ (− cz + a ). Moreover, the composition of M¨ obius
-transformations is again one, so they form a group under composition. If S is a non-linear
-MT we can write it as
-az + b
-z + d
-= a +
-b − ad
-z + d
-.
-This shows that any MT can be written as a composition of translations, rotations and
-dilations (multiplication by a complex number), and inversion (reciprocals).
-Since the geometric action of translation, dilation, and rotation are quite evident, let’s
-consider inversion. It takes the unit disk D to C ∞ \ ¯D . We now show that inversion maps
-lines and circles to other lines and circles.
-Consider the equation |z − p | = k |z − q | where k > 0, p, q ∈ C . This is
-(x − a ) 2 + ( y − b) 2 = k 2 [( x − c) 2 + ( y − d ) 2 ]
-which is clearly the equation of a circle if k ⁄= 1 and the equation of a line if k = 1. In either
-case we have a circle in the Riemann sphere, which we call C 1 . Substituting 1 /z for z and
-doing some simple manipulations gives the equation |z − 1/p | = ( k |q |/|p |)|z − 1/q |, which
-is another such circle, C 2 . Thus we have 1 /z ∈ C 1 ⇐ ⇒ z ∈ C 2 , showing that inversion
-maps circles in the sphere onto other circles in the sphere. Since the same property is
-evident for translation, dilation, and rotation, we conclude that this property holds for all
-MT.
-Some further analysis, which will be omitted, establishes two further properties. 1) A
-MT is orientiation preserving in the sense that, if we traverse a circle in the order of three
-distinct points on it, z 1 , z 2 , z 3 , the region to the left of the circle will map to the region
-to the left of the image circle, with respect to the image orientation. 2) A MT preserves
-the property of two points being symmetric with respect to a circle, i.e., lying on the same
-ray from the center, and such that the geometric mean of their distances from the center
-equals the radius.
-Let z 2 , z 3 , z 4 be distinct points in C . Then it is easy to see that there is a unique MT
-taking these points to 1, 0, and ∞ , respectively, namely
-Sz =
-z − z 3
-z − z 4
-z 2 − z 4
-z 2 − z 3
-.
-We can also handle, as a special case, the possibility that one of the z i is ∞ . We infer
-from this and the invertibility of the MTs that given two ordered triples of distinct points
-in C ∞ , there is a unique MT taking the ﬁrst onto the second.
-If we have any two disks or halfplanes, or one of each, we can map one to the other by
-a MT, and can arrange that the image of any three points on the boundary of one go to
-three points on the boundary of the other.
-The book makes heavy use of the the notation ( z 1 , z 2 , z 3 , z 4 ) (cross ratio) for the image
-of z 1 under the transformation taking z 2 , z 3 , z 4 to 1, 0, and ∞ , respectively, so
-(z 1 , z 2 , z 3 , z 4 ) =
-z 1 − z 3
-z 1 − z 4
-z 2 − z 4
-z 2 − z 3
-.
-From the deﬁnition, ( T z 1 , T z 2 , T z 3 , T z 4 ) = ( z 1 , z 2 , z 3 , z 4 ) for any MT T .
-Example: z ↦→ (1 − z )/(1 + z ) takes the right half plane onto the unit disk.
+
+existence of its inverse $S^{-1}(z) = (dz - b)/(-cz + a)$. Moreover, the composition of Möbius transformations is again one, so they form a group under composition. If $S$ is a non-linear MT we can write it as
+
+$$\frac{az + b}{z + d} = a + \frac{b - ad}{z + d}.$$
+
+This shows that any MT can be written as a composition of translations, rotations and dilations (multiplication by a complex number), and inversion (reciprocals).
+
+Since the geometric action of translation, dilation, and rotation are quite evident, let's consider inversion. It takes the unit disk $D$ to $\mathbb{C}_{\infty} \setminus \bar{D}$. We now show that inversion maps lines and circles to other lines and circles.
+
+Consider the equation $|z - p| = k|z - q|$ where $k > 0$, $p, q \in \mathbb{C}$. This is
+
+$$(x - a)^2 + (y - b)^2 = k^2[(x - c)^2 + (y - d)^2]$$
+
+which is clearly the equation of a circle if $k \neq 1$ and the equation of a line if $k = 1$. In either case we have a circle in the Riemann sphere, which we call $C_1$. Substituting $1/z$ for $z$ and doing some simple manipulations gives the equation $|z - 1/p| = (k|q|/|p|)|z - 1/q|$, which is another such circle, $C_2$. Thus we have $1/z \in C_1 \iff z \in C_2$, showing that inversion maps circles in the sphere onto other circles in the sphere. Since the same property is evident for translation, dilation, and rotation, we conclude that this property holds for all MT.
+
+Some further analysis, which will be omitted, establishes two further properties. 1) A MT is orientation preserving in the sense that, if we traverse a circle in the order of three distinct points on it, $z_1$, $z_2$, $z_3$, the region to the left of the circle will map to the region to the left of the image circle, with respect to the image orientation. 2) A MT preserves the property of two points being symmetric with respect to a circle, i.e., lying on the same ray from the center, and such that the geometric mean of their distances from the center equals the radius.
+
+Let $z_2$, $z_3$, $z_4$ be distinct points in $\mathbb{C}$. Then it is easy to see that there is a unique MT taking these points to 1, 0, and $\infty$, respectively, namely
+
+$$Sz = \frac{z - z_3}{z - z_4} \frac{z_2 - z_4}{z_2 - z_3}.$$
+
+We can also handle, as a special case, the possibility that one of the $z_i$ is $\infty$. We infer from this and the invertibility of the MTs that given two ordered triples of distinct points in $\mathbb{C}_{\infty}$, there is a unique MT taking the first onto the second.
+
+If we have any two disks or halfplanes, or one of each, we can map one to the other by a MT, and can arrange that the image of any three points on the boundary of one go to three points on the boundary of the other.
+
+The book makes heavy use of the notation $(z_1, z_2, z_3, z_4)$ (cross ratio) for the image of $z_1$ under the transformation taking $z_2$, $z_3$, $z_4$ to 1, 0, and $\infty$, respectively, so
+
+$$(z_1, z_2, z_3, z_4) = \frac{z_1 - z_3}{z_1 - z_4} \frac{z_2 - z_4}{z_2 - z_3}.$$
+
+From the definition, $(Tz_1, Tz_2, Tz_3, Tz_4) = (z_1, z_2, z_3, z_4)$ for any MT $T$.
+
+Example: $z \mapsto (1 - z)/(1 + z)$ takes the right half plane onto the unit disk.
+
+<!-- page 11 -->
 
 11
-III. Complex Integration and Applications to Analytic Functions
-If γ : [ a, b ] → C is piecewise smooth, and f is a continuous complex-valued function
-deﬁned on the image of γ , deﬁne
-∫
-γ
-f (z ) dz =
-∫ b
-a
-f (γ (t)) γ ′ (t) dt.
-This is simply the line integral of f along γ . It can be deﬁned analogously to the Riemann
-integral as the limit of sums of the form
-∑
-(f ◦ γ )( τ k )[ γ (t k ) − γ (t k − 1 )], so is the Riemann–
-Stieltjes integral of f ◦ γ with respect to γ . Using this deﬁnition it can be extended to
-rectiﬁable paths, i.e., ones for which γ is only of bounded variation.
-If φ is a piecewise smooth increasing function from [ c, d ] onto [ a, b ] and we let ρ = γ ◦ φ (so
-ρ is the same path as γ but with a diﬀerent parametrization), then
-∫
-ρ f (z ) dz =
-∫
-γ f (z ) dz .
-From the fundamental theorem of calculus we see that if F is any analytic function on
-a neighborhood of γ , then
-∫
-γ F ′ (z ) dz = F (β ) − F (α ) where α = f (a ), β = f (b). If γ is a
-closed path, this is zero.
-As a consequence, if γ = re iθ , then
-∫
-γ
-z n dz = 0 for all n ∈ Z , n ⁄= − 1.
-By direct calculation we have
-∫
-γ z − 1 dz = 2 πi .
-More generally, let |z 0 | < r and consider
-∫
-γ
-1
-z − z 0
-dz . Let z ±
-ϵ be the point on the circle
-|z − z 0 | = r with arg( z ±
-ϵ − z 0 ) = ± (π − ϵ). Clearly, as ϵ → 0, z ±
-ϵ → z 1 , the point on the
-circle with the same imaginary part as z 0 and negative real part. Now let γ ϵ be the curve
-running from z −
-ϵ to z +
-ϵ on the circle. In a neighborhood of γ ϵ the function Log( z − z 0 ) is
-a primitive of 1 /(z − z 0 ). So
-∫
-γ ϵ
-1
-z − z 0
-dz = Log( z +
-ϵ − z 0 ) − Log( z −
-ϵ − z 0 ) = log r + i(π − ϵ) − log r + i(π − ϵ).
-Taking the limit as ϵ ↓ 0 gives ∫
-γ
-1
-z − z 0
-dz = 2 πi.
-Local results and consequences.
-Theorem (Cauchy’s integral formula for a disk). Let f be analytic on a closed disk
-and let γ be a path around the boundary of the disk. Then
-f (z ) =
-1
-2πi
-∫
-γ
-f (w )
-w − z
-dw
+
+### III. COMPLEX INTEGRATION AND APPLICATIONS TO ANALYTIC FUNCTIONS
+
+If $\gamma : [a, b] \to \mathbb{C}$ is piecewise smooth, and $f$ is a continuous complex-valued function defined on the image of $\gamma$, define
+
+$$\int_{\gamma} f(z) \, dz = \int_{a}^{b} f(\gamma(t)) \gamma'(t) \, dt.$$
+
+This is simply the line integral of $f$ along $\gamma$. It can be defined analogously to the Riemann integral as the limit of sums of the form $\sum(f \circ \gamma)(\tau_k)[\gamma(t_k) - \gamma(t_{k-1})]$, so is the Riemann-Stieltjes integral of $f \circ \gamma$ with respect to $\gamma$. Using this definition it can be extended to rectifiable paths, i.e., ones for which $\gamma$ is only of bounded variation.
+
+If $\phi$ is a piecewise smooth increasing function from $[c, d]$ onto $[a, b]$ and we let $\rho = \gamma \circ \phi$ (so $\rho$ is the same path as $\gamma$ but with a different parametrization), then $\int_{\rho} f(z) \, dz = \int_{\gamma} f(z) \, dz$.
+
+From the fundamental theorem of calculus we see that if $F$ is any analytic function on a neighborhood of $\gamma$, then $\int_{\gamma} F'(z) \, dz = F(\beta) - F(\alpha)$ where $\alpha = f(a)$, $\beta = f(b)$. If $\gamma$ is a closed path, this is zero.
+
+As a consequence, if $\gamma = r e^{i\theta}$, then
+
+$$\int_{\gamma} z^n \, dz = 0 \qquad \text{for all } n \in \mathbb{Z}, \, n \neq -1.$$
+
+By direct calculation we have $\int_{\gamma} z^{-1} \, dz = 2\pi i$.
+
+More generally, let $|z_0| < r$ and consider $\int_{\gamma} \frac{1}{z - z_0} \, dz$. Let $z_\epsilon^\pm$ be the point on the circle $|z - z_0| = r$ with $\arg(z_\epsilon^\pm - z_0) = \pm(\pi - \epsilon)$. Clearly, as $\epsilon \to 0$, $z_\epsilon^\pm \to z_1$, the point on the circle with the same imaginary part as $z_0$ and negative real part. Now let $\gamma_\epsilon$ be the curve running from $z_\epsilon^-$ to $z_\epsilon^+$ on the circle. In a neighborhood of $\gamma_\epsilon$ the function $\text{Log}(z - z_0)$ is a primitive of $1/(z - z_0)$. So
+
+$$\int_{\gamma_\epsilon} \frac{1}{z - z_0} \, dz = \text{Log}(z_\epsilon^+ - z_0) - \text{Log}(z_\epsilon^- - z_0) = \log r + i(\pi - \epsilon) - \log r + i(\pi - \epsilon).$$
+
+Taking the limit as $\epsilon \downarrow 0$ gives
+
+$$\int_{\gamma} \frac{1}{z - z_0} \, dz = 2\pi i.$$
+
+### Local results and consequences.
+
+**Theorem (Cauchy's integral formula for a disk).** Let $f$ be analytic on a closed disk and let $\gamma$ be a path around the boundary of the disk. Then
+
+$$f(z) = \frac{1}{2\pi i} \int_{\gamma} \frac{f(w)}{w - z} \, dw$$
+
+<!-- page 12 -->
 
 12
-for all z in the open disk.
+
+for all $z$ in the open disk.
+
 Proof. Consider the function
-g (t) =
-∫
-γ
-f (z + t(w − z ))
-w − z
-dw.
+
+$$g(t) = \int_{\gamma} \frac{f(z + t(w - z))}{w - z} \, dw.$$
+
 Then
-g ′ (t) =
-∫
-γ
-f ′ (z + t(w − z )) dw,
-and, since F (w ) = f (z + t(w − z )) /t is a primitive for f ′ (z + t(w − z )), g ′ (t) ≡ 0. Therefore,
-∫
-γ
-f (w )
-w − z
-dw = g (1) = g (0) = f (z )
-∫
-γ
-1
-w − z
-dw = 2 πif (z ). □
+
+$$g'(t) = \int_{\gamma} f'(z + t(w - z)) \, dw,$$
+
+and, since $F(w) = f(z + t(w - z))/t$ is a primitive for $f'(z + t(w - z))$, $g'(t) \equiv 0$. Therefore,
+
+$$\int_{\gamma} \frac{f(w)}{w - z} \, dw = g(1) = g(0) = f(z) \int_{\gamma} \frac{1}{w - z} \, dw = 2\pi i f(z). \quad \square$$
+
 As an easy corollary, we have:
-Cauchy’s Theorem for a disk. Let f be analytic on a closed disk and let γ be a path
-around the boundary of the disk. Then
-∫
-γ
-f (w ) dw = 0 .
-Proof. Fix z in the open disk and apply Cauchy’s formula to the function w ↦→ f (w )( w −
-z ). □
-We can now show that an analytic (i.e., continuously complex diﬀerentiable) function
-has a power series expansion around each point in its domain. (And we already know the
-converse is true.)
-Theorem. Let f be analytic in B (a ; R ). Then f (z ) =
-∑
-a n (z − a ) n for |z − a | < R , for
-some a n ∈ C .
-Proof. Fix z and choose r < R with |z − a | < r . Let γ be the path around |w − a | = r .
-Then |(z − a )/(w − a )| < 1, so the Weierstrass M-test implies that the series
-∑ 1
-(w − a ) n +1 (z − a ) n =
-1
-w − z
-,
-converges absolutely and uniformly in w for |w − a | = r . Since f is bounded on the circle,
-the same sort of convergence holds for
-∑ f (w )
-(w − a ) n +1 (z − a ) n =
-f (w )
-w − z
-.
+
+**Cauchy's Theorem for a disk.** Let $f$ be analytic on a closed disk and let $\gamma$ be a path around the boundary of the disk. Then
+
+$$\int_{\gamma} f(w) \, dw = 0.$$
+
+Proof. Fix $z$ in the open disk and apply Cauchy's formula to the function $w \mapsto f(w)(w - z)$. $\square$
+
+We can now show that an analytic (i.e., continuously complex differentiable) function has a power series expansion around each point in its domain. (And we already know the converse is true.)
+
+**Theorem.** Let $f$ be analytic in $B(a; R)$. Then $f(z) = \sum a_n (z - a)^n$ for $|z - a| < R$, for some $a_n \in \mathbb{C}$.
+
+Proof. Fix $z$ and choose $r < R$ with $|z - a| < r$. Let $\gamma$ be the path around $|w - a| = r$. Then $|(z - a)/(w - a)| < 1$, so the Weierstrass M-test implies that the series
+
+$$\sum \frac{1}{(w - a)^{n+1}} (z - a)^n = \frac{1}{w - z},$$
+
+converges absolutely and uniformly in $w$ for $|w - a| = r$. Since $f$ is bounded on the circle, the same sort of convergence holds for
+
+$$\sum \frac{f(w)}{(w - a)^{n+1}} (z - a)^n = \frac{f(w)}{w - z}.$$
+
 Therefore we can interchange summation and integraton to get
-f (z ) =
-1
-2πi
-∫
-γ
-f (w )
-w − z
-dw =
-∑
-a n (z − a ) n ,
+
+$$f(z) = \frac{1}{2\pi i} \int_{\gamma} \frac{f(w)}{w - z} \, dw = \sum a_n (z - a)^n,$$
+
 where
-a n =
-∫
-γ
-f (w )
-(w − a ) n +1 dw. □
+
+$$a_n = \int_{\gamma} \frac{f(w)}{(w - a)^{n+1}} \, dw. \quad \square$$
+
+<!-- page 13 -->
 
 13
-Corollary (of proof ). Under the same hypotheses
-f (n ) (a ) =
-n !
-2 πi
-∫
-γ
-f (w )
-(w − a ) n +1 dw.
-Corollary (Cauchy’s estimate). If f is analytic in B (a ; R ), then
-|f (n ) (a )| ≤
-n ! max B (a ;R ) |f |
-R n .
-Proof. Evident if R is replaced by r < R . Then pass to limit. □
-Corollary (Maximum Modulus Principle). An analytic function on a region which
-achieves a maximum modulus in the region is constant.
-Proof. By the Cauchy estimate for n = 0, if the function achieves its maximum modulus
-at a point, it achieves it everywhere on a disk containing the point. Thus, the set of
-points were the maximum modulus is achieved is open. It is also clearly closed. Hence the
-function has constant modulus. It follows from the Cauchy–Riemann equations that the
-function itself is constant. □
-Corollary (Liouville’s Theorem). A bounded entire function is constant.
-Proof. Cauchy’s estimate for n = 1 implies f ′ ≡ 0. □
-Corollary (F undamental Theorem of Algebra). Every nonconstant polynomial has
-a root in C .
-Theorem. If f is analytic on a region then there does not exist a point a such that
-f (n ) (a ) = 0 for all n , unless f is identically zero on the region.
-Proof. The set of such a is closed, and using the Taylor expansion, is open. □
-Corollary. If f is analytic on a region Ω and not identically zero, then for each a ∈ Ω
-there exists a unique integer p ∈ N and a function g , analytic in a neighborhood of a and
-nonzero at a , such that
-f (z ) = ( z − a ) p g (z ).
-Proof. f (z ) =
-∑
-c n (z − a ) n with c n = f (n ) (a )/n !. Let p be the least integer with c p ⁄= 0
-(which exists by the preceeding theorem), and g (z ) =
-∑ ∞
-n = p c n (z − a ) n − p . □
-The number p is the multiplicity of a as a root of f .
-Corollary. If f is analytic on a region and not identically zero, then the roots of f are
-isolated.
-Corollary. An analytic function on a region is completely determined by its value on any
-set of points containing a limit point.
+
+Corollary (of proof). Under the same hypotheses
+
+$$f^{(n)}(a) = \frac{n!}{2\pi i} \int_{\gamma} \frac{f(w)}{(w - a)^{n+1}} \, dw.$$
+
+Corollary (Cauchy's estimate). If $f$ is analytic in $B(a; R)$, then
+
+$$|f^{(n)}(a)| \leq \frac{n! \max_{B(a;R)} |f|}{R^n}.$$
+
+Proof. Evident if $R$ is replaced by $r < R$. Then pass to limit. $\square$
+
+Corollary (Maximum Modulus Principle). An analytic function on a region which achieves a maximum modulus in the region is constant.
+
+Proof. By the Cauchy estimate for $n = 0$, if the function achieves its maximum modulus at a point, it achieves it everywhere on a disk containing the point. Thus, the set of points were the maximum modulus is achieved is open. It is also clearly closed. Hence the function has constant modulus. It follows from the Cauchy–Riemann equations that the function itself is constant. $\square$
+
+Corollary (Liouville's Theorem). A bounded entire function is constant.
+
+Proof. Cauchy's estimate for $n = 1$ implies $f' \equiv 0$. $\square$
+
+Corollary (Fundamental Theorem of Algebra). Every nonconstant polynomial has a root in $\mathbb{C}$.
+
+Theorem. If $f$ is analytic on a region then there does not exist a point $a$ such that $f^{(n)}(a) = 0$ for all $n$, unless $f$ is identically zero on the region.
+
+Proof. The set of such $a$ is closed, and using the Taylor expansion, is open. $\square$
+
+Corollary. If $f$ is analytic on a region $\Omega$ and not identically zero, then for each $a \in \Omega$ there exists a unique integer $p \in \mathbb{N}$ and a function $g$, analytic in a neighborhood of $a$ and nonzero at $a$, such that
+
+$$f(z) = (z - a)^p g(z).$$
+
+Proof. $f(z) = \sum c_n (z - a)^n$ with $c_n = f^{(n)}(a)/n!$. Let $p$ be the least integer with $c_p \neq 0$ (which exists by the preceding theorem), and $g(z) = \sum_{n=p}^{\infty} c_n (z - a)^{n-p}$. $\square$
+
+The number $p$ is the multiplicity of $a$ as a root of $f$.
+
+Corollary. If $f$ is analytic on a region and not identically zero, then the roots of $f$ are isolated.
+
+Corollary. An analytic function on a region is completely determined by its value on any set of points containing a limit point.
+
+<!-- page 14 -->
 
 14
-Homotopy of paths and Cauchy’s Theorem.
-Deﬁnition. Let γ 0 , γ 1 : [0 , 1] → G be two closed paths in a region G ⊂ C . We say that
-the paths are homotopic in G if there exists a continuous function Γ : [0 , 1] × [0 , 1] → G
-such that for each s Γ( · , s ) is a closed path with Γ( · , 0) = γ 0 and Γ( · , 1) = γ 1 .
-This is an equivalence relation, written γ 0 ∼ γ 1 in G .
-Theorem. Suppose that γ 0 and γ 1 are two homotopic piecewise smooth closed curves in
-G and that f is analytic on G . Then
-∫
-γ 0
-f (z ) dz =
-∫
-γ 1
-f (z ) dz.
-If we assume that the homotopy Γ is C 2 , the result is easy: let
-g (s) =
-∫ 1
-0
-f (Γ( t, s ))
-∂ Γ
-∂t
-(t, s ) dt.
+
+## Homotopy of paths and Cauchy's Theorem.
+
+Definition. Let $\gamma_0, \gamma_1 : [0, 1] \to G$ be two closed paths in a region $G \subset \mathbb{C}$. We say that the paths are homotopic in $G$ if there exists a continuous function $\Gamma : [0, 1] \times [0, 1] \to G$ such that for each $s$ $\Gamma(\cdot, s)$ is a closed path with $\Gamma(\cdot, 0) = \gamma_0$ and $\Gamma(\cdot, 1) = \gamma_1$.
+
+This is an equivalence relation, written $\gamma_0 \sim \gamma_1$ in $G$.
+
+Theorem. Suppose that $\gamma_0$ and $\gamma_1$ are two homotopic piecewise smooth closed curves in $G$ and that $f$ is analytic on $G$. Then
+
+$$\int_{\gamma_0} f(z) \, dz = \int_{\gamma_1} f(z) \, dz.$$
+
+If we assume that the homotopy $\Gamma$ is $C^2$, the result is easy: let
+
+$$g(s) = \int_0^1 f(\Gamma(t, s)) \frac{\partial \Gamma}{\partial t}(t, s) \, dt.$$
+
 Then
-g ′ (s) =
-∫ 1
-0
-∂
-∂s
-[f (Γ( t, s ))
-∂ Γ
-∂t
-(t, s )] dt =
-∫ 1
-0
-∂
-∂t
-[f (Γ( t, s ))
-∂ Γ
-∂s
-(t, s )] dt = 0 ,
+
+$$g'(s) = \int_0^1 \frac{\partial}{\partial s}[f(\Gamma(t, s)) \frac{\partial \Gamma}{\partial t}(t, s)] \, dt = \int_0^1 \frac{\partial}{\partial t}[f(\Gamma(t, s)) \frac{\partial \Gamma}{\partial s}(t, s)] \, dt = 0,$$
+
 since both integrands equal
-f ′ (Γ( s, t ))
-∂ Γ
-∂t
-∂ Γ
-∂s
-+ f (Γ( s, t ))
-∂ 2 Γ
-∂t∂s
-.
-The proof without assuming smoothness is based on Cauchy’s theorem for a disk and a
-polygonal approximation argument.
-Sketch of proof. Since Γ is continuous on the compact set [0 , 1] × [0 , 1], it is uniformly
-continuous. Moreover, there exists ϵ > 0 so that G contains a closed disk of radius ϵ about
-each point in the range of Γ. Therefore, we can ﬁnd an integer n , so that Γ maps each of
-the squares [ j/n, (j + 1) /n ] × [k/n, (k + 1) /n ] into the disk of radius ϵ about Γ( j/n, k/n ).
-Let ρ k be the closed polygonal path determined by the points Γ( j/n, k/n ), j = 0 , 1 , . . . , n .
-It is easy to conclude from Cauchy’s theorem for a disk that
-∫
-ρ k
-f (z ) dz =
-∫
-ρ k +1
-f (z ) dz,
+
+$$f'(\Gamma(s, t)) \frac{\partial \Gamma}{\partial t} \frac{\partial \Gamma}{\partial s} + f(\Gamma(s, t)) \frac{\partial^2 \Gamma}{\partial t \partial s}.$$
+
+The proof without assuming smoothness is based on Cauchy's theorem for a disk and a polygonal approximation argument.
+
+Sketch of proof. Since $\Gamma$ is continuous on the compact set $[0, 1] \times [0, 1]$, it is uniformly continuous. Moreover, there exists $\epsilon > 0$ so that $G$ contains a closed disk of radius $\epsilon$ about each point in the range of $\Gamma$. Therefore, we can find an integer $n$, so that $\Gamma$ maps each of the squares $[j/n, (j+1)/n] \times [k/n, (k+1)/n]$ into the disk of radius $\epsilon$ about $\Gamma(j/n, k/n)$. Let $\rho_k$ be the closed polygonal path determined by the points $\Gamma(j/n, k/n)$, $j = 0, 1, \ldots, n$. It is easy to conclude from Cauchy's theorem for a disk that
+
+$$\int_{\rho_k} f(z) \, dz = \int_{\rho_{k+1}} f(z) \, dz,$$
+
 and also that
-∫
-γ 0
-f (z ) dz =
-∫
-ρ 0
-f (z ) dz,
-∫
-γ 1
-f (z ) dz =
-∫
-ρ n
-f (z ) dz. □
+
+$$\int_{\gamma_0} f(z) \, dz = \int_{\rho_0} f(z) \, dz, \quad \int_{\gamma_1} f(z) \, dz = \int_{\rho_n} f(z) \, dz. \quad \square$$
+
+<!-- page 15 -->
 
 15
-Deﬁnition. A closed path in G is homotopic to 0 in G if it is homotopic to a constant
-path.
-Corollary. If γ is a piecewise smooth path which is homotopic to 0 in G , and f is analytic
-in G , then ∫
-γ
-f (z ) dz = 0 .
-Deﬁnition. A region G is simply-connected if every closed path in G is homotopic to 0.
-As an immediate consequence of the theorem above, we have Cauchy’s theorem (previ-
-ously proved only for G a disk).
-Cauchy’s Theorem. If G is is a simply-connected region in the complex plane then
-∫
-γ
-f (z ) dz = 0
-for every function f analytic in G and every piecewise smooth closed curve γ in G .
-Winding numbers and Cauchy’s Integral F ormula. Intuitive meaning of winding
-number: if a pole is planted in the plane at a point a and a closed curve is drawn in
-the plane not meeting a , if the curve were made of well-lubricated rubber and were to be
-contracted as small as possible, if it contracts to a point other than a its winding number
-is 0. If it contracts around the pole planted at a , its winding number is the number of
-times it circles the pole (signed by orientation).
-Deﬁnition. Let γ be a piecewise smooth closed curve in C and a ∈ C \ γ . Then the index
-of γ with respect to a , or the winding number of γ about a is deﬁned to be
-n (γ ; a ) =
-1
-2πi
-∫
-γ
-1
-z − a
-dz.
-Demonstrate how the winding number can be calculated by drawing a negatively di-
-rected ray from a and integrating over pieces of the curve between successive intersections
-of the curve with the ray.
-Proposition. The index n (γ ; a ) is an integer for all a ∈ C \ γ . It is constant on each
-connected component of C \ γ .
-Proof. Assuming γ is parametrized by [0 , 1], deﬁne
-g (t) =
-∫ t
-0
-γ ′ (s)
-γ (s) − a
-ds.
+
+**Definition.** A closed path in $G$ is *homotopic to 0* in $G$ if it is homotopic to a constant path.
+
+**Corollary.** *If $\gamma$ is a piecewise smooth path which is homotopic to 0 in $G$, and $f$ is analytic in $G$, then*
+
+$$\int_{\gamma} f(z) \, dz = 0.$$
+
+**Definition.** A region $G$ is simply-connected if every closed path in $G$ is homotopic to 0.
+
+As an immediate consequence of the theorem above, we have Cauchy's theorem (previously proved only for $G$ a disk).
+
+**Cauchy's Theorem.** *If $G$ is a simply-connected region in the complex plane then*
+
+$$\int_{\gamma} f(z) \, dz = 0$$
+
+*for every function $f$ analytic in $G$ and every piecewise smooth closed curve $\gamma$ in $G$.*
+
+**Winding numbers and Cauchy's Integral Formula.** Intuitive meaning of winding number: if a pole is planted in the plane at a point $a$ and a closed curve is drawn in the plane not meeting $a$, if the curve were made of well-lubricated rubber and were to be contracted as small as possible, if it contracts to a point other than $a$ its winding number is 0. If it contracts around the pole planted at $a$, its winding number is the number of times it circles the pole (signed by orientation).
+
+**Definition.** Let $\gamma$ be a piecewise smooth closed curve in $\mathbb{C}$ and $a \in \mathbb{C} \setminus \gamma$. Then the *index* of $\gamma$ with respect to $a$, or the *winding number* of $\gamma$ about $a$ is defined to be
+
+$$n(\gamma; a) = \frac{1}{2\pi i} \int_{\gamma} \frac{1}{z - a} dz.$$
+
+Demonstrate how the winding number can be calculated by drawing a negatively directed ray from $a$ and integrating over pieces of the curve between successive intersections of the curve with the ray.
+
+**Proposition.** *The index $n(\gamma; a)$ is an integer for all $a \in \mathbb{C} \setminus \gamma$. It is constant on each connected component of $\mathbb{C} \setminus \gamma$.*
+
+*Proof.* Assuming $\gamma$ is parametrized by $[0, 1]$, define
+
+$$g(t) = \int_{0}^{t} \frac{\gamma'(s)}{\gamma(s) - a} \, ds.$$
+
+<!-- page 16 -->
 
 16
+
 An easy direct calculation shows that
-d
-dt
-exp[ − g (t)][ γ (t) − a ] = 0 ,
-so, indeed, exp[ − g (t)][ γ (t) − a ] = γ (0) − a . Taking t = 1,
-exp[ − 2 πin (γ ; a )][ γ (1) − a ] = γ (0) − a,
-or, exp[ − 2πin (γ ; a )] = 1, which implies that n (γ ; a ) is indeed integral.
-The function is obviously continuous, and being integer, it is constant on connected
-components. Clearly also, it tends to 0 as a tends to ∞ , so it is identically 0 on the
-unbounded component. □
-The next result is an immediate corollary of the invariance of path integrals of analytic
-functions under homotopy.
-Proposition. If γ 0 and γ 1 are paths which are homotopic in C \ { a } for some point a ,
-then n (γ 0 ; a ) = n (γ 1 ; a ).
-Cauchy’s Integral F ormula. Let γ a piecewise smooth curve in a region G which is null
-homotopic there, and let f be an analytic function on G . Then
-n (γ ; a )f (a ) =
-1
-2πi
-∫
-γ
-f (z )
-z − a
-dw, a ∈ G \ γ.
-Proof. For a ∈ G \ γ ﬁxed, let
-g (z ) =
-
-
-
-f (z ) − f (a )
-z − a
-, z ∈ G \ { a },
-f ′ (a ), z = a.
-It is easy to show that g is continuous (even analytic!) on G (show the continuity as a
-homework exercise). Applying Cauchy’s theorem to g gives the desired result immediately.
-Remark. This presentation is quite a bit diﬀerent from the book’s. The book proves
-Cauchy’s formula under the assumption that γ is homologous to 0 , i.e., that n (γ ; a ) = 0
-for all a ∈ C \ G . It is easy to see that homotopic to 0 implies homologous to 0, but the
-reverse is not true, so the book’s result is a bit stronger. It is true that all piecewise smooth
-closed curves in region are homologous to zero iﬀ G is simply-connected (see Theorem 2.2
-of Chapter 8).
+
+$$\frac{d}{dt} \exp[-g(t)][\gamma(t) - a] = 0,$$
+
+so, indeed, $\exp[-g(t)][\gamma(t) - a] = \gamma(0) - a$. Taking $t = 1$,
+
+$$\exp[-2\pi i n(\gamma; a)][\gamma(1) - a] = \gamma(0) - a,$$
+
+or, $\exp[-2\pi i n(\gamma; a)] = 1$, which implies that $n(\gamma; a)$ is indeed integral.
+
+The function is obviously continuous, and being integer, it is constant on connected components. Clearly also, it tends to 0 as $a$ tends to $\infty$, so it is identically 0 on the unbounded component. $\square$
+
+The next result is an immediate corollary of the invariance of path integrals of analytic functions under homotopy.
+
+**Proposition.** If $\gamma_0$ and $\gamma_1$ are paths which are homotopic in $\mathbb{C} \setminus \{a\}$ for some point $a$, then $n(\gamma_0; a) = n(\gamma_1; a)$.
+
+**Cauchy's Integral Formula.** Let $\gamma$ a piecewise smooth curve in a region $G$ which is null homotopic there, and let $f$ be an analytic function on $G$. Then
+
+$$n(\gamma; a)f(a) = \frac{1}{2\pi i} \int_{\gamma} \frac{f(z)}{z - a} \, dw, \quad a \in G \setminus \gamma.$$
+
+Proof. For $a \in G \setminus \gamma$ fixed, let
+
+$$g(z) = \begin{cases} \frac{f(z) - f(a)}{z - a}, & z \in G \setminus \{a\}, \\ f'(a), & z = a. \end{cases}$$
+
+It is easy to show that $g$ is continuous (even analytic!) on $G$ (show the continuity as a homework exercise). Applying Cauchy's theorem to $g$ gives the desired result immediately.
+
+Remark. This presentation is quite a bit different from the book's. The book proves Cauchy's formula under the assumption that $\gamma$ is homologous to 0, i.e., that $n(\gamma; a) = 0$ for all $a \in \mathbb{C} \setminus G$. It is easy to see that homotopic to 0 implies homologous to 0, but the reverse is not true, so the book's result is a bit stronger. It is true that all piecewise smooth closed curves in region are homologous to zero iff $G$ is simply-connected (see Theorem 2.2 of Chapter 8).
+
 The book also goes on to consider chains, which are unions of curves and proves that
-f (a )
-k∑
-j =1
-n (γ j ; a ) =
-1
-2πi
-k∑
-j =1
-∫
-γ j
-f (w )
-w − z
-dz,
-if the chain γ 1 + · · · + γ n is homologous to zero, i.e.,
-∑ k
-j =1 n (γ j ; z ) = 0 for all z ∈ C \ G .
-This sort of result is useful, e.g., in the case of an annulus. However we can deal with this
-solution in other ways (by adding a line connecting the circles).
+
+$$f(a) \sum_{j=1}^{k} n(\gamma_j; a) = \frac{1}{2\pi i} \sum_{j=1}^{k} \int_{\gamma_j} \frac{f(w)}{w - z} \, dz,$$
+
+if the chain $\gamma_1 + \cdots + \gamma_n$ is homologous to zero, i.e., $\sum_{j=1}^{k} n(\gamma_j; z) = 0$ for all $z \in \mathbb{C} \setminus G$. This sort of result is useful, e.g., in the case of an annulus. However we can deal with this solution in other ways (by adding a line connecting the circles).
+
+<!-- page 17 -->
 
 17
+
 Zero counting; Open Mapping Theorem.
-Theorem. Let G be a region, γ a curve homotopic to 0 in G and f an analytic function
-on G with zeros a 1 , a 2 , . . . , a m repeated according to multiplicity. Then
-1
-2 πi
-∫
-γ
-f ′ (z )
-f (z )
-dz =
-m∑
-k =1
-n (γ ; a k ).
-Proof. We can write f (z ) = ( z − a 1 )( z − a 2 ) . . . (z − a m )g (z ) where g (z ) is analytic and
-nonzero on G . Then
-f ′ (z )
-f (z )
-=
-1
-z − a 1
-+
-1
-z − a 2
-+ · · ·
-1
-z − a m
-+
-g ′ (z )
-g (z )
-,
+
+Theorem. Let G be a region, γ a curve homotopic to 0 in G and f an analytic function on G with zeros a₁, a₂, ..., aₘ repeated according to multiplicity. Then
+
+$$\frac{1}{2\pi i} \int_{\gamma} \frac{f'(z)}{f(z)} \, dz = \sum_{k=1}^{m} n(\gamma; a_k).$$
+
+Proof. We can write f(z) = (z - a₁)(z - a₂) ... (z - aₘ)g(z) where g(z) is analytic and nonzero on G. Then
+
+$$\frac{f'(z)}{f(z)} = \frac{1}{z - a_1} + \frac{1}{z - a_2} + \cdots \frac{1}{z - a_m} + \frac{g'(z)}{g(z)},$$
+
 and the theorem follows. □
-If the a i are the solutions of the equation f (z ) = α , then
-1
-2πi
-∫
-γ
-f ′ (z )
-f (z ) − α
-dz =
-m∑
-k =1
-n (γ ; a k ).
+
+If the aᵢ are the solutions of the equation f(z) = α, then
+
+$$\frac{1}{2\pi i} \int_{\gamma} \frac{f'(z)}{f(z) - \alpha} \, dz = \sum_{k=1}^{m} n(\gamma; a_k).$$
+
 Note that we may as well write the integral as
-1
-2πi
-∫
-f ◦ γ
-1
-w − α
-dw.
-Theorem. If f is analytic at a and f (a ) = α with ﬁnite multiplicity m ≥ 1, then there
-exists ϵ, δ > 0 such that for all 0 < |ζ − α | < δ , the equation f (z ) = ζ has precisely m roots
-in |z − a | < ϵ and all are simple.
-Proof. That the number of roots is m comes from the continuity of the integral as long
-as ζ remains in the same connected component of C \ f ◦ γ as α , and the fact that it is
-integer valued. We can insure that the roots are simple by taking ϵ small enough to avoid
-a root of f ′ . □
+
+$$\frac{1}{2\pi i} \int_{f \circ \gamma} \frac{1}{w - \alpha} \, dw.$$
+
+Theorem. If f is analytic at a and f(a) = α with finite multiplicity m ≥ 1, then there exists ε, δ > 0 such that for all 0 < |ζ - α| < δ, the equation f(z) = ζ has precisely m roots in |z - a| < ε and all are simple.
+
+Proof. That the number of roots is m comes from the continuity of the integral as long as ζ remains in the same connected component of ℂ \ f ∘ γ as α, and the fact that it is integer valued. We can insure that the roots are simple by taking ε small enough to avoid a root of f'. □
+
 Open Mapping Theorem. A non-constant analytic function is open.
+
 Proof. This is an immediate corollary.
 
+<!-- page 18 -->
+
 18
-Morera’s Theorem and Goursat’s Theorem.
-Morera’s Theorem. If G is a region and f : G → C a continuous function such that∫
-T f dz = 0 for each triangular path T in G , then f is analytic.
-Proof. Since it is enough to show f is analytic on disks, we can assume G is a disk. Let a
-be the center of the disk, and deﬁne F (z ) =
-∫
-[a,z ] f . By hypothesis
-F (z ) − F (z 0 )
-z − z 0
-=
-1
-z − z 0
-∫
-[z,z 0 ]
-f (w ) dw =
-∫ 1
-0
-f (z 0 + t(z − z 0 )) dt.
-Continuity then implies that F ′ (z 0 ) = f (z 0 ), so f has a primitive, so is analytic.
-Before proceeding to Goursat’s Theorem, we consider another result that uses an argu-
-ment similar to Morera’s Theorem.
-Theorem. Let G be a region and f : G → C a continuous function. Then f admits a
-primitive on G if and only if
-∫
-γ f = 0 for all piecewise smooth closed curves γ in G .
-Proof. Only if is clear. For the if direction, ﬁx a ∈ G and deﬁne F (z ) =
-∫
-γ (a,z ) f where
-γ (a, z ) is any piecewise smooth path from a to z . Reasoning as in Morera’s theorem
-F ′ = f . □
-In particular, if G is a simply-connected region then every analytic function admits a
-primitive. If 0 /∈ G , then 1 /z admits a primitive. Adjusting the primitive by a constant
-we can assure that it agrees with a logarithm of z 0 at some point z 0 . It is then easy to
-check by diﬀerentiation that exp( F (z )) /z ≡ 1. Thus
-Proposition. If G is a simply connected domain, 0 ∈ G , then a branch of the logarithm
-may be deﬁned there.
-(As an interesting example, take G to be the complement of the spiral r = θ .)
-We can at long last show that a function which is complex diﬀerentiable in a region
-(but without assuming it is continuously diﬀerentiable) is analytic.
-Goursat’s Theorem. Let G be a region and f : G → C complex diﬀerentiable at each
-point of G . Then f is analytic.
-Proof. We will show that the integral of f vanishes over every triangular path. Let ∆ 0 be
-a closed triangle with boundary T 0 . Using repeated quadrisection we obtain triangles
-∆ 0 ⊂ ∆ 1 ⊂ . . .
-with boundaries T n such that
-|
-∫
-T 0
-f | ≤ 4 n |
-∫
-T n
-f |.
+
+# Morera's Theorem and Goursat's Theorem.
+
+Morera's Theorem. If $G$ is a region and $f: G \to \mathbb{C}$ a continuous function such that $\int_T f \, dz = 0$ for each triangular path $T$ in $G$, then $f$ is analytic.
+
+Proof. Since it is enough to show $f$ is analytic on disks, we can assume $G$ is a disk. Let $a$ be the center of the disk, and define $F(z) = \int_{[a,z]} f$. By hypothesis
+
+$$\frac{F(z) - F(z_0)}{z - z_0} = \frac{1}{z - z_0} \int_{[z, z_0]} f(w) \, dw = \int_0^1 f(z_0 + t(z - z_0)) \, dt.$$
+
+Continuity then implies that $F'(z_0) = f(z_0)$, so $f$ has a primitive, so is analytic.
+
+Before proceeding to Goursat's Theorem, we consider another result that uses an argument similar to Morera's Theorem.
+
+Theorem. Let $G$ be a region and $f: G \to \mathbb{C}$ a continuous function. Then $f$ admits a primitive on $G$ if and only if $\int_\gamma f = 0$ for all piecewise smooth closed curves $\gamma$ in $G$.
+
+Proof. Only if is clear. For the if direction, fix $a \in G$ and define $F(z) = \int_{\gamma(a,z)} f$ where $\gamma(a,z)$ is any piecewise smooth path from $a$ to $z$. Reasoning as in Morera's theorem $F' = f$. $\square$
+
+In particular, if $G$ is a simply-connected region then every analytic function admits a primitive. If $0 \notin G$, then $1/z$ admits a primitive. Adjusting the primitive by a constant we can assure that it agrees with a logarithm of $z_0$ at some point $z_0$. It is then easy to check by differentiation that $\exp(F(z))/z \equiv 1$. Thus
+
+Proposition. If $G$ is a simply connected domain, $0 \in G$, then a branch of the logarithm may be defined there.
+
+(As an interesting example, take $G$ to be the complement of the spiral $r = \theta$.)
+
+We can at long last show that a function which is complex differentiable in a region (but without assuming it is continuously differentiable) is analytic.
+
+Goursat's Theorem. Let $G$ be a region and $f: G \to \mathbb{C}$ complex differentiable at each point of $G$. Then $f$ is analytic.
+
+Proof. We will show that the integral of $f$ vanishes over every triangular path. Let $\Delta_0$ be a closed triangle with boundary $T_0$. Using repeated quadrisection we obtain triangles
+
+$$\Delta_0 \subset \Delta_1 \subset \dots$$
+
+with boundaries $T_n$ such that
+
+$$| \int_{T_0} f | \le 4^n | \int_{T_n} f |.$$
+
+<!-- page 19 -->
 
 19
-Let d = diam T 0 , p = perim T 0 . Then diam T n = d/ 2 n , perim T n = p/ 2 n . By compactness⋂
-∆ n ⁄= ∅ . Let z 0 be in the intersection (it’s unique).
-From the diﬀerentiability of f at z 0 we have: given ϵ > 0
-|f (z ) − f (z 0 ) − f ′ (z 0 )( z − z 0 )| ≤ ϵ|z − z 0 |
-for all z in some disk around z 0 , therefore for all z ∈ ∆ n , some n . Since
-∫
-T n
-f (z ) dz =∫
-T n
-z dz = 0,
-|
-∫
-T n
-f | = |
-∫
-T n
-[f (z ) − f (z 0 ) − f ′ (z 0 )( z − z 0 )] dz |
-≤ ϵ diam T n perim T n = ϵdp/ 4 n .
-Therefore |
-∫
-T 0
-f | ≤ ϵdp , and, since ϵ was arbitrary, it must vanish. □
-IV. Singularities of Analytic Functions
-Deﬁnition. If f is analytic in B (a ; R ) \ { a } , for some a ∈ C , R > 0, but not in B (a ; R ).
-We say f has an isolated singularity at a . If there exists g analytic on some disk centered
-at a which agrees with f except at a , we say f has a removable singularity.
-Theorem. Suppose f has an isolated singularity at a . It is removable if and only if
-lim z → a (z − a )f (z ) = 0 .
-Proof. “Only if” is clear. For “if” let g (z ) = ( z − a )f (z ), z ⁄= a , g (a ) = 0. Using Morera’s
-theorem (separating the cases a inside the triangle, on the boundary, or in the interior), it
-is easy to see that g is analytic. Therefore g (z ) = ( z − a )h (z ) for h analytic, and h is the
-desired extension of f . □
-Corollary. If lim z → a f (z ) ∈ C , or even f (z ) is bounded in a punctured neighborhood of a ,
-or even |f (z )| ≤ C |z − a |− (1 − ϵ) for some ϵ > 0 , some C , then f has a removable singularity.
-Now either lim z → a |f (z )| exists as a ﬁnite real number, equals + ∞ , or does not exist as
-a ﬁnite number or inﬁnity. The ﬁrst case is that of a removable singularity. The second is
-called a pole , the third, an essential singularity .
-Note that if f has a pole at a , then 1 /f (z ) has a removable singularity there and extends
-to a with value 0. Using this we see that f has a pole at a if and only if f (z ) = ( z − a ) − m g (z )
-for some integer m > 0 and g analytic in a neighborhood of a . Thus
-f (z ) =
-∞∑
-n = − m
-a n (z − a ) n
-in a punctured neighborhood of a .
-The function e 1 /z has an essential singularity since
-lim
-z ↓ 0
-e 1 /z = + ∞ , lim
-z ↑ 0
-e 1 /z = 0 .
+
+Let $d = \mathrm{diam} T_0$, $p = \mathrm{perim} T_0$. Then $\mathrm{diam} T_n = d/2^n$, $\mathrm{perim} T_n = p/2^n$. By compactness $\bigcap \Delta_n \neq \emptyset$. Let $z_0$ be in the intersection (it's unique).
+
+From the differentiability of $f$ at $z_0$ we have: given $\epsilon > 0$
+
+$$|f(z) - f(z_0) - f'(z_0)(z - z_0)| \leq \epsilon|z - z_0|$$
+
+for all $z$ in some disk around $z_0$, therefore for all $z \in \Delta_n$, some $n$. Since $\int_{T_n} f(z) \, dz = \int_{T_n} z \, dz = 0$,
+
+$$\begin{array}{l} |\int_{T_n} f| = |\int_{T_n} [f(z) - f(z_0) - f'(z_0)(z - z_0)] dz| \\ \quad \leq \epsilon \operatorname{diam} T_n \operatorname{perim} T_n = \epsilon dp / 4^n. \end{array}$$
+
+Therefore $|\int_{T_0} f| \leq \epsilon dp$, and, since $\epsilon$ was arbitrary, it must vanish. $\square$
+
+## IV. SINGULARITIES OF ANALYTIC FUNCTIONS
+
+**Definition.** If $f$ is analytic in $B(a; R) \setminus \{a\}$, for some $a \in \mathbb{C}$, $R > 0$, but not in $B(a; R)$. We say $f$ has an *isolated singularity* at $a$. If there exists $g$ analytic on some disk centered at $a$ which agrees with $f$ except at $a$, we say $f$ has a *removable* singularity.
+
+**Theorem.** *Suppose $f$ has an isolated singularity at $a$. It is removable if and only if $\lim_{z \to a} (z - a)f(z) = 0$.*
+
+*Proof.* "Only if" is clear. For "if" let $g(z) = (z - a)f(z)$, $z \neq a$, $g(a) = 0$. Using Morera's theorem (separating the cases $a$ inside the triangle, on the boundary, or in the interior), it is easy to see that $g$ is analytic. Therefore $g(z) = (z - a)h(z)$ for $h$ analytic, and $h$ is the desired extension of $f$. $\square$
+
+**Corollary.** *If $\lim_{z \to a} f(z) \in \mathbb{C}$, or even $f(z)$ is bounded in a punctured neighborhood of $a$, or even $|f(z)| \leq C|z - a|^{-(1-\epsilon)}$ for some $\epsilon > 0$, some $C$, then $f$ has a removable singularity.*
+
+Now either $\lim_{z \to a} |f(z)|$ exists as a finite real number, equals $+\infty$, or does not exist as a finite number or infinity. The first case is that of a removable singularity. The second is called a *pole*, the third, an *essential singularity*.
+
+Note that if $f$ has a pole at $a$, then $1/f(z)$ has a removable singularity there and extends to $a$ with value 0. Using this we see that $f$ has a pole at $a$ if and only if $f(z) = (z - a)^{-m}g(z)$ for some integer $m > 0$ and $g$ analytic in a neighborhood of $a$. Thus
+
+$$f(z) = \sum_{n=-m}^{\infty} a_n (z - a)^n$$
+
+in a punctured neighborhood of $a$.
+
+The function $e^{1/z}$ has an essential singularity since
+
+$$\lim_{z \downarrow 0} e^{1/z} = +\infty, \quad \lim_{z \uparrow 0} e^{1/z} = 0.$$
+
+<!-- page 20 -->
 
 20
-Theorem (Casorati-W eierstrass). If f has an essential singularity at a , then the image
-under f of any punctured disk around a is dense in C .
-Proof. WLOG, assume a = 0. If the conclusion is false, there is a punctured disk around
-0 in which f (z ) stays a ﬁxed positive distance ϵ away from some number c ∈ C . Consider
-the function g (z ) = [ f (z ) − c]/z . It tends to ∞ as z → 0, so it has a pole at 0. Therefore
-z m [f (z ) − c] → 0 as z → 0 for suﬃciently large m . Therefore, z m f (z ) → 0, which is not
-possible if f has an essential singularity.
-Laurent series.
-Deﬁnition. Suppose f is analytic on {z : |z | > R } for some R . Then we say that f has
-an isolated singularity at ∞ . It is removable if f (1 /z ) has a removable singularity at 0.
-We easily see that f has a removable singularity at ∞ ⇐ ⇒ ∃ lim z →∞ f (z ) ∈ C ⇐ ⇒
-f is bounded in a neighborhood of inﬁnity.
-Note that if f has a removable singularity at ∞ then we can expand f in a power series
-in 1 /z , convergent for |z | > R uniformly and absolutely for |z | ≥ ρ > R .
-We say that a series of the form
-∑ ∞
-n = −∞ a n (z − a ) n converges if both the series∑ ∞
-n =1 a − n (z − a ) − n and
-∑ ∞
-n =0 a n (z − a ) n converge (and their sum is the value of the
-doubly inﬁnite summation).
-Lemma. Let γ be a piecewise smooth curve and g a continuous complex-valued function
-on γ . Deﬁne
-f (z ) =
-∫
-γ
-g (w )
-z − w
-dw, z / ∈ γ.
-The f is analytic on C \ γ .
-Proof. Fix z /∈ γ . Then
-g (w )
-ζ − w −
-g (w )
-z − w
-ζ − z
-= −
-g (w )
-(ζ − w )( z − w )
-→ −
-g (w )
-(z − w ) 2
-as ζ → z with the convergence uniform in w ∈ γ . Thus f is diﬀerentiable at each z ∈
-C \ γ . □
-Let f be deﬁned and analytic in an annulus R 1 < |z | < R 2 . Deﬁne
-f 2 (z ) =
-1
-2 πi
-∫
-|w |= r
-f (w )
-w − z
-dw,
-where R 2 > r > |z | (it doesn’t matter which such r we take, by Cauchy’s theorem). Then
-f 2 is analytic in |z | < R 2 and so has a convergent power series there:
-f 2 (z ) =
-∞∑
-n =0
-a n z n .
+
+**Theorem (Casorati-Weierstrass).** If $f$ has an essential singularity at $a$, then the image under $f$ of any punctured disk around $a$ is dense in $\mathbb{C}$.
+
+*Proof.* WLOG, assume $a = 0$. If the conclusion is false, there is a punctured disk around 0 in which $f(z)$ stays a fixed positive distance $\epsilon$ away from some number $c \in \mathbb{C}$. Consider the function $g(z) = [f(z) - c]/z$. It tends to $\infty$ as $z \to 0$, so it has a pole at 0. Therefore $z^m[f(z) - c] \to 0$ as $z \to 0$ for sufficiently large $m$. Therefore, $z^m f(z) \to 0$, which is not possible if $f$ has an essential singularity.
+
+**Laurent series.**
+
+**Definition.** Suppose $f$ is analytic on $\{z : |z| > R\}$ for some $R$. Then we say that $f$ has an isolated singularity at $\infty$. It is removable if $f(1/z)$ has a removable singularity at 0.
+
+We easily see that $f$ has a removable singularity at $\infty \iff \exists \lim_{z \to \infty} f(z) \in \mathbb{C} \iff f$ is bounded in a neighborhood of infinity.
+
+Note that if $f$ has a removable singularity at $\infty$ then we can expand $f$ in a power series in $1/z$, convergent for $|z| > R$ uniformly and absolutely for $|z| \geq \rho > R$.
+
+We say that a series of the form $\sum_{n=-\infty}^{\infty} a_n (z - a)^n$ converges if both the series $\sum_{n=1}^{\infty} a_{-n} (z - a)^{-n}$ and $\sum_{n=0}^{\infty} a_n (z - a)^n$ converge (and their sum is the value of the doubly infinite summation).
+
+**Lemma.** Let $\gamma$ be a piecewise smooth curve and $g$ a continuous complex-valued function on $\gamma$. Define
+
+$$f(z) = \int_{\gamma} \frac{g(w)}{z - w} dw, \qquad z \notin \gamma.$$
+
+The $f$ is analytic on $\mathbb{C} \setminus \gamma$.
+
+*Proof.* Fix $z \notin \gamma$. Then
+
+$$\frac{\frac{g(w)}{\zeta - w} - \frac{g(w)}{z - w}}{\zeta - z} = -\frac{g(w)}{(\zeta - w)(z - w)} \to -\frac{g(w)}{(z - w)^2}$$
+
+as $\zeta \to z$ with the convergence uniform in $w \in \gamma$. Thus $f$ is differentiable at each $z \in \mathbb{C} \setminus \gamma$. $\square$
+
+Let $f$ be defined and analytic in an annulus $R_1 < |z| < R_2$. Define
+
+$$f_2(z) = \frac{1}{2\pi i} \int_{|w|=r} \frac{f(w)}{w - z} dw,$$
+
+where $R_2 > r > |z|$ (it doesn't matter which such $r$ we take, by Cauchy's theorem). Then $f_2$ is analytic in $|z| < R_2$ and so has a convergent power series there:
+
+$$f_2(z) = \sum_{n=0}^{\infty} a_n z^n.$$
+
+<!-- page 21 -->
 
 21
+
 Also, let
-f 1 (z ) = −
-1
-2 πi
-∫
-|w |= r
-f (w )
-w − z
-dw
-where now r is taken with R 1 < r < |z |. Then this is analytic in |z | > R 1 and tends to 0
-at ∞ . Thus
-f 1 (z ) =
-∞∑
-n =1
-a − n z − n .
-Now, it is easy to use Cauchy’s integral formula to see that f = f 1 + f 2 in the annulus.
-This shows that
-f (z ) =
-∞∑
-n = −∞
-a n z n ,
-with the convergence absolute and uniform on compact subsets of the annulus. Note that
-such an expansion is unique, since we can easily recover the a n :
-a m =
-1
-2πi
-∑
-n ∈ Z
-a n
-∫
-|z |= r
-z n
-z m +1 dz =
-1
-2πi
-∫
-|z |= r
-f (z )
-z m +1 dz
-where r is any number in ( R 1 , R 2 ) (result is independent of choice of r since two diﬀerent
-circles are homotopic in the annulus).
+
+$$f_1(z) = -\frac{1}{2\pi i} \int_{|w|=r} \frac{f(w)}{w-z} dw$$
+
+where now $r$ is taken with $R_1 < r < |z|$. Then this is analytic in $|z| > R_1$ and tends to 0 at $\infty$. Thus
+
+$$f_1(z) = \sum_{n=1}^{\infty} a_{-n} z^{-n}.$$
+
+Now, it is easy to use Cauchy's integral formula to see that $f = f_1 + f_2$ in the annulus. This shows that
+
+$$f(z) = \sum_{n=-\infty}^{\infty} a_n z^n,$$
+
+with the convergence absolute and uniform on compact subsets of the annulus. Note that such an expansion is unique, since we can easily recover the $a_n$:
+
+$$a_m = \frac{1}{2\pi i} \sum_{n \in \mathbb{Z}} a_n \int_{|z|=r} \frac{z^n}{z^{m+1}} dz = \frac{1}{2\pi i} \int_{|z|=r} \frac{f(z)}{z^{m+1}} dz$$
+
+where $r$ is any number in $(R_1, R_2)$ (result is independent of choice of $r$ since two different circles are homotopic in the annulus).
+
 Summarizing:
-Theorem (Laurent Expansion). If f is an analytic function on the annulus G =
-ann(0; R 1 , R 2 ) for some 0 ≤ R 1 < R 2 ≤ ∞ , then
-f (z ) =
-∞∑
-n = −∞
-a n z n
-for all z in the annulus. The convergence is uniform and absolute on compact subsets of
-the annulus and the coeﬃcients a n are uniquely determined by the formula above.
-If f has an isolated singularity at a , it has a Laurent expansion in a punctured disk at
-a :
-f (z ) =
-∞∑
-n = −∞
-a n (z − a ) n , 0 < |z − a | < R.
-We deﬁne
-ord a (f ) = inf {n ∈ Z : a n ⁄= 0 }.
-Thus f has a removable singularity ⇐ ⇒ ord a (f ) ≥ 0, and it extend to a as 0 ⇐ ⇒
-ord a (f ) > 0, in which case this is the order of the 0. ord a (f ) = + ∞ ⇐ ⇒ f is identically
-0 near a . ord a (f ) = −∞ ⇐ ⇒ f has an essential singularity at a . ord a (f ) < 0 but ﬁnite
-⇐ ⇒ f has a pole, in which case − ord a (f ) is the order of the pole.
+
+**Theorem (Laurent Expansion).** *If $f$ is an analytic function on the annulus $G = \operatorname{ann}(0; R_1, R_2)$ for some $0 \leq R_1 < R_2 \leq \infty$, then*
+
+$$f(z) = \sum_{n=-\infty}^{\infty} a_n z^n$$
+
+*for all $z$ in the annulus. The convergence is uniform and absolute on compact subsets of the annulus and the coefficients $a_n$ are uniquely determined by the formula above.*
+
+If $f$ has an isolated singularity at $a$, it has a Laurent expansion in a punctured disk at $a$:
+
+$$f(z) = \sum_{n=-\infty}^{\infty} a_n (z-a)^n, \quad 0 < |z-a| < R.$$
+
+We define
+
+$$\operatorname{ord}_a(f) = \inf\{n \in \mathbb{Z} : a_n \neq 0\}.$$
+
+Thus $f$ has a removable singularity $\iff \operatorname{ord}_a(f) \geq 0$, and it extend to $a$ as $0 \iff \operatorname{ord}_a(f) > 0$, in which case this is the order of the 0. $\operatorname{ord}_a(f) = +\infty \iff f$ is identically 0 near $a$. $\operatorname{ord}_a(f) = -\infty \iff f$ has an essential singularity at $a$. $\operatorname{ord}_a(f) < 0$ but finite $\iff f$ has a pole, in which case $-\operatorname{ord}_a(f)$ is the order of the pole.
+
+<!-- page 22 -->
 
 22
-We call a − 1 the residue of f at a , denoted Res( f ; a ). Note that, if f has an isolated
-singularity at a , then for r suﬃciently small,
-Res( f ; a ) =
-1
-2πi
-∫
-|z − a |= r
-f (z ) dz.
-Give pictoral proof that if G is simply-connected domain, f analytic on G except for iso-
-lated singularies, and γ is a simple closed curve that encloses singularities at a 1 , a 2 , . . . , a m
-(necessarily ﬁnite), then
-1
-2πi
-∫
-γ
-f (z ) dz =
-m∑
-j =1
-Res( f ; a j ).
-a simple closed curve in G .
+
+We call $a_{-1}$ the residue of $f$ at $a$, denoted $\operatorname{Res}(f; a)$. Note that, if $f$ has an isolated singularity at $a$, then for $r$ sufficiently small,
+
+$$\operatorname{Res}(f; a) = \frac{1}{2\pi i} \int_{|z-a|=r} f(z) \, dz.$$
+
+Give pictorial proof that if $G$ is simply-connected domain, $f$ analytic on $G$ except for isolated singularities, and $\gamma$ is a simple closed curve that encloses singularities at $a_1, a_2, \ldots, a_m$ (necessarily finite), then
+
+$$\frac{1}{2\pi i} \int_{\gamma} f(z) \, dz = \sum_{j=1}^{m} \operatorname{Res}(f; a_j).$$
+
+a simple closed curve in $G$.
+
 More precisely:
-Theorem (Residue Theorem). Let G be an open set, E a discrete subset of G , and
-γ a null-homotopic piecewise smooth closed curve in G which doesn ’t intersect E . Then
-{a ∈ E |n (γ ; a ) ⁄= 0 } is ﬁnite and
-1
-2 πi
-∫
-γ
-f (z ) dz =
-∑
-a ∈ E
-n (γ ; a ) Res( f ; a ).
-for all functions f which are analytic in G \ E .
-Proof. Let F : [0 , 1] × [0 , 1] → G be a homotopy from γ to a constant. The image K of F is
-compact, so has a ﬁnite intersection with E . If a ∈ E does not belong to this intersection,
-the homotopy takes place in the the complement of a , showing that the n (γ ; a ) = 0.
-Let a 1 , . . . , a m be the points in the intersection, and let g i be the singular part of f at
-a i . The f −
-∑
-g i is analytic on K (after removing the removable singularities at the a i ),
-so
-∫
-γ f −
-∑
-g i = 0. The result follows easily. □
-We will proceed to two easy but useful consequences of the residue theorem, the argu-
-ment principle and Rouch´ e’s theorem. First, however, we consider the application of the
-residue theorem to the computation of deﬁnite integrals.
-Residue integrals.
-First, how to practically compute residues. For essential singularities it can be very
-diﬃcult, but for poles it is usually easy. If f has a simple pole at a , then f (z ) = g (z )/(z − a )
-with g analytic at a and Res( f ; a ) = g (a ) (and thus Cauchy’s therem may be viewed as
-the special case of the residue theorem where f has a simple pole). If f has a double pole
-at a , then
-f (z ) = g (z )/(z − a ) 2 =
-g (a )
-(z − a ) 2 +
-g ′ (a )
-z − a
-+ · · · ,
+
+**Theorem (Residue Theorem).** Let $G$ be an open set, $E$ a discrete subset of $G$, and $\gamma$ a null-homotopic piecewise smooth closed curve in $G$ which doesn't intersect $E$. Then $\{a \in E | n(\gamma; a) \neq 0\}$ is finite and
+
+$$\frac{1}{2\pi i} \int_{\gamma} f(z) \, dz = \sum_{a \in E} n(\gamma; a) \operatorname{Res}(f; a).$$
+
+for all functions $f$ which are analytic in $G \setminus E$.
+
+Proof. Let $F : [0, 1] \times [0, 1] \to G$ be a homotopy from $\gamma$ to a constant. The image $K$ of $F$ is compact, so has a finite intersection with $E$. If $a \in E$ does not belong to this intersection, the homotopy takes place in the complement of $a$, showing that the $n(\gamma; a) = 0$.
+
+Let $a_1, \ldots, a_m$ be the points in the intersection, and let $g_i$ be the singular part of $f$ at $a_i$. The $f - \sum g_i$ is analytic on $K$ (after removing the removable singularities at the $a_i$), so $\int_{\gamma} f - \sum g_i = 0$. The result follows easily. $\square$
+
+We will proceed to two easy but useful consequences of the residue theorem, the argument principle and Rouché's theorem. First, however, we consider the application of the residue theorem to the computation of definite integrals.
+
+### Residue integrals.
+
+First, how to practically compute residues. For essential singularities it can be very difficult, but for poles it is usually easy. If $f$ has a simple pole at $a$, then $f(z) = g(z)/(z-a)$ with $g$ analytic at $a$ and $\operatorname{Res}(f; a) = g(a)$ (and thus Cauchy's theorem may be viewed as the special case of the residue theorem where $f$ has a simple pole). If $f$ has a double pole at $a$, then
+
+$$f(z) = g(z)/(z-a)^2 = \frac{g(a)}{(z-a)^2} + \frac{g'(a)}{z-a} + \cdots,$$
+
+<!-- page 23 -->
 
 23
-so Res( f ; a ) = g ′ (a ). Similarly, if f has a pole of order m with f (z ) = g (z )/(z − a ) m , we
-expand g as a Taylor series around a and can read oﬀ Res( f ; a ). (It is 1
-(m − 1)! g (m − 1) (a ),
-but it is easier to remember the procedure than the formula.)
-Example 1: evaluate
-∫ ∞
-−∞
-1
-(x 2 + a 2 )( x 2 + b 2 )
-dx, 0 < a < b.
-Use a semicircle centered at the origin in upper half plane and let radius tend to inﬁnity to
-get the answer of π/ [ab (a + b)]. Same technique works for all rational functions of degree
-≤ − 2.
-Example 2: evaluate
-∫ 2 π
-0
-sin 4 (x ) dx.
-Write as
-∫
-γ
-1
-iz
-(
-z +1 /z
-2 i
-) 4
-dz , with γ the unit circle, to get the answer 3 π/ 4. This approach
-applies to rational functions in sin and cos.
-Example 3: evaluate
-∫ ∞
-0
-1
-t 1 / 2 + t 3 / 2 dt.
-Use a branch of the z − 1 / 2 with the positive real axis as the branch cut, and integrate
-around this cut and over a large circle centered at the origin (avoid origin with a small
-circle). The answer is π . This approach applies to integrals of the form
-∫ ∞
-0 t α r (t)dt where
-α ∈ (0 , 1) and r (t) is a rational function of degree ≤ − 2 with at worst a simple pole at 0.
-Example 4: evaluate
-∫ ∞
-0
-sin x
-x
-dx
+
+so $\operatorname{Res}(f; a) = g'(a)$. Similarly, if $f$ has a pole of order $m$ with $f(z) = g(z)/(z - a)^m$, we expand $g$ as a Taylor series around $a$ and can read off $\operatorname{Res}(f; a)$. (It is $\frac{1}{(m-1)!}g^{(m-1)}(a)$, but it is easier to remember the procedure than the formula.)
+
+Example 1: evaluate $\int_{-\infty}^{\infty} \frac{1}{(x^2 + a^2)(x^2 + b^2)} dx, \qquad 0 < a < b.$
+
+Use a semicircle centered at the origin in upper half plane and let radius tend to infinity to get the answer of $\pi/[ab(a + b)]$. Same technique works for all rational functions of degree $\leq -2$.
+
+Example 2: evaluate $\int_{0}^{2\pi} \sin^4(x) \, dx.$
+
+Write as $\int_{\gamma} \frac{1}{iz} \left( \frac{z+1/z}{2i} \right)^4 dz$, with $\gamma$ the unit circle, to get the answer $3\pi/4$. This approach applies to rational functions in sin and cos.
+
+Example 3: evaluate $\int_{0}^{\infty} \frac{1}{t^{1/2} + t^{3/2}} dt.$
+
+Use a branch of the $z^{-1/2}$ with the positive real axis as the branch cut, and integrate around this cut and over a large circle centered at the origin (avoid origin with a small circle). The answer is $\pi$. This approach applies to integrals of the form $\int_{0}^{\infty} t^\alpha r(t) dt$ where $\alpha \in (0, 1)$ and $r(t)$ is a rational function of degree $\leq -2$ with at worst a simple pole at 0.
+
+Example 4: evaluate $\int_{0}^{\infty} \frac{\sin x}{x} \, dx$
+
 We will evaluate
-lim
-X → + ∞
-δ ↓ 0
-∫ − δ
-− X
-+
-∫ X
-δ
-e iz
-z
-dz.
-The imaginary part of the quantity inside the limit is 2
-∫ X
-δ (sin x )/x dx . Note: it is essential
-that when taking the limit we excise a symmetric interval about zero. (The ordinary
-integral doesn’t exist: e ix /x has a non-integrable singularity near the origin, even though
-its imaginary part, (sin x )/x doesn’t.) On the other hand, it is not necessary that we cut
-oﬀ the integrand at symmetric points − X and X (we could have used − X 1 and X 2 and
-let them go independently to zero).
-We use a somewhat fancy path: starting at − X we follow the x -axis to − δ , then a
-semicircle in the upper-half plane to δ , then along the x -axis to X , then along a vertical
-segment to X + iX , then back along a horizontal segment to − X + iX , and then down
-a vertical segment back to − X . The integrand e z /z has no poles inside this curve, so
-its contour integral is 0. It is easy to see that the integral is bounded by 1 /X on each
-of the vertical segments and by 2 e − X on the horizontal segment. On the other hand,
+
+$$\lim_{X \xrightarrow[\delta \downarrow 0]{+\infty}} \int_{-X}^{-\delta} + \int_{\delta}^{X} \frac{e^{iz}}{z} \, dz.$$
+
+The imaginary part of the quantity inside the limit is $2 \int_{\delta}^{X} (\sin x)/x \, dx$. Note: it is essential that when taking the limit we excise a symmetric interval about zero. (The ordinary integral doesn't exist: $e^{ix}/x$ has a non-integrable singularity near the origin, even though its imaginary part, $(\sin x)/x$ doesn't.) On the other hand, it is not necessary that we cut off the integrand at symmetric points $-X$ and $X$ (we could have used $-X_1$ and $X_2$ and let them go independently to zero).
+
+We use a somewhat fancy path: starting at $-X$ we follow the $x$-axis to $-\delta$, then a semicircle in the upper-half plane to $\delta$, then along the $x$-axis to $X$, then along a vertical segment to $X + iX$, then back along a horizontal segment to $-X + iX$, and then down a vertical segment back to $-X$. The integrand $e^z/z$ has no poles inside this curve, so its contour integral is 0. It is easy to see that the integral is bounded by $1/X$ on each of the vertical segments and by $2e^{-X}$ on the horizontal segment. On the other hand,
+
+<!-- page 24 -->
 
 24
-e iz /z = 1 /z + analytic and the integral of 1 /z over the semicircle (integrated clockwise) is
-easily seen to be − πi . We conclude that the limit above equals πi , whence
-∫ ∞
-0
-sin x
-x
-dx =
-π
-2
-.
-Example 5: evaluate
-∞∑
-n = −∞
-1
-(n − a ) 2 , a ∈ R \ Z .
-Use a rectangular path with opposite corners ± (n +1 /2+ ni ), n a positive integer and eval-
-uate
-∫
-γ (z − a ) − 2 cot πz dz , a /∈ Z . The poles of the integrand are at a and the integers and
-the residue is − π/ sin 2 (πa ) and 1 /[π (n − a ) 2 ]. Since sin x + iy = sin x cosh y + i cos x sinh y
-and cos x + iy = cos x cosh y − i sin x sinh y , we get
-| cot x + iy |2 =
-cos 2 x + sinh 2 y
-sin 2 x + sinh 2 y
-,
-so the | cot | equals 1 on the vertical segments and, if n is large, is bounded by 2 on the
-horizontal segments. It follows easily that the integral goes to 0 with n , so
-∞∑
-n = −∞
-1
-(n − a ) 2 =
-π 2
-sin 2 πa
-.
-To state the argument principle we deﬁne:
-Deﬁnition. A complex function on an open set G is called meromorphic if it is analytic
-on G except for a set of poles.
-Note that the pole set of a meromorphic function is discrete (but may be inﬁnite). A
-meromorphic function is continuous when viewed as taking values in C ∞ .
-Suppose f is meromorphic at a (i.e., on a neighborhood of a ). Then Res( f /f ′ ; a ) =
-ord a (f ). Indeed, f (z ) = ( z − a ) m g (z ) with m = ord a (f ) and g (a ) ⁄= 0, and f ′ /f =
-m/ (z − a ) + g ′ /g . The residue theorem then immediately gives
-Theorem (Argument Principle). Let G be an open set, f a meromorphic function
-on G , and γ a null-homotopic piecewise smooth closed curve in G which doesn ’t intersect
-either the zero set Z or the pole set P of f . Then
-1
-2 πi
-∫
-γ
-f ′
-f
-=
-∑
-a
-n (γ ; a ) ord a (f )
-where the sum is over Z ∪ P and contains only ﬁnitely many terms.
-Note that the left hand side is nothing other than n (f ◦ γ ; 0), which is behind the name
-(how much does the argument change as we traverse this curve). We saw this theorem
-previously in the case where f was analytic, in which case the integral counts the zeros of
-f . For meromorphic f we count the poles as negative zeros.
-Our ﬁnal application of the residue theorem is Rouch´ e’s theorem.
+
+$e^{iz}/z = 1/z +$ analytic and the integral of $1/z$ over the semicircle (integrated clockwise) is easily seen to be $-\pi i$. We conclude that the limit above equals $\pi i$, whence
+
+$$\int_{0}^{\infty} \frac{\sin x}{x} \, dx = \frac{\pi}{2}.$$
+
+Example 5: evaluate $$\sum_{n=-\infty}^{\infty} \frac{1}{(n-a)^2}, \quad a \in \mathbb{R} \setminus \mathbb{Z}.$$
+
+Use a rectangular path with opposite corners $\pm(n+1/2+ni)$, $n$ a positive integer and evaluate $\int_{\gamma}(z-a)^{-2} \cot \pi z \, dz$, $a \notin \mathbb{Z}$. The poles of the integrand are at $a$ and the integers and the residue is $-\pi/\sin^2(\pi a)$ and $1/[\pi(n-a)^2]$. Since $\sin x + iy = \sin x \cosh y + i \cos x \sinh y$ and $\cos x + iy = \cos x \cosh y - i \sin x \sinh y$, we get
+
+$$|\cot x + iy|^2 = \frac{\cos^2 x + \sinh^2 y}{\sin^2 x + \sinh^2 y},$$
+
+so the $|\cot|$ equals 1 on the vertical segments and, if $n$ is large, is bounded by 2 on the horizontal segments. It follows easily that the integral goes to 0 with $n$, so
+
+$$\sum_{n=-\infty}^{\infty} \frac{1}{(n-a)^2} = \frac{\pi^2}{\sin^2 \pi a}.$$
+
+To state the argument principle we define:
+
+**Definition.** A complex function on an open set $G$ is called *meromorphic* if it is analytic on $G$ except for a set of poles.
+
+Note that the pole set of a meromorphic function is discrete (but may be infinite). A meromorphic function is continuous when viewed as taking values in $\mathbb{C}_{\infty}$.
+
+Suppose $f$ is meromorphic at $a$ (i.e., on a neighborhood of $a$). Then $\operatorname{Res}(f/f'; a) = \operatorname{ord}_a(f)$. Indeed, $f(z) = (z-a)^m g(z)$ with $m = \operatorname{ord}_a(f)$ and $g(a) \neq 0$, and $f'/f = m/(z-a) + g'/g$. The residue theorem then immediately gives
+
+**Theorem (Argument Principle).** Let $G$ be an open set, $f$ a meromorphic function on $G$, and $\gamma$ a null-homotopic piecewise smooth closed curve in $G$ which doesn't intersect either the zero set $Z$ or the pole set $P$ of $f$. Then
+
+$$\frac{1}{2\pi i} \int_{\gamma} \frac{f'}{f} = \sum_{a} n(\gamma; a) \operatorname{ord}_a(f)$$
+
+where the sum is over $Z \cup P$ and contains only finitely many terms.
+
+Note that the left hand side is nothing other than $n(f \circ \gamma; 0)$, which is behind the name (how much does the argument change as we traverse this curve). We saw this theorem previously in the case where $f$ was analytic, in which case the integral counts the zeros of $f$. For meromorphic $f$ we count the poles as negative zeros.
+
+Our final application of the residue theorem is Rouché's theorem.
+
+<!-- page 25 -->
 
 25
-Theorem (Rouch´ e). Let G be an open set, f and g meromorphic functions on G , and γ a
-null-homotopic piecewise smooth closed curve in G which doesn ’t intersect Z f ∪ P f ∪ Z g ∪ P g .
-If
-|f (z ) + g (z )| < |f (z )| + |g (z )|, z ∈ γ,
-then ∑
-a ∈ Z f ∪ P f
-n (γ ; a ) ord a (f ) =
-∑
-a ∈ Z g ∪ P g
-n (γ ; a ) ord a (g ).
-Proof. The hypothesis means that on γ the quotient f (z )/g (z ) is not a non-negative real
-number. Let l be a branch of the logarithm on C \ [0 , ∞ ). Then l(f /g ) is a primitive of
-(f /g ) ′ / (f /g ) = f ′ /f − g ′ /g which is analytic in a neighborhood of γ . Hence,
-∫
-γ f ′ /f =∫
-γ g ′ /g and the theorem follows from the argument principle. □
-Corollary (Classical statement of Rouch´ e’s theorem). Suppose f and φ are analytic
-on a simply-connected region G and that γ is a simple closed piecewise smooth curve in G .
-If |φ | < |f | on γ , then f + φ has the same number of zeros as f in the region bounded by
-γ .
-Proof. |(f + φ ) + ( − f )| = |φ | < |f | ≤ | f + φ | + | − f |. □
-Example: If λ > 1, then the equation z exp( λ − z ) = 1 has exactly one solution in the
-unit disk (take f = z exp( λ − z ), φ = − 1).
-V. Further results on analytic functions
-The theorems of W eierstrass, Hurwitz, and Montel. Consider the space of contin-
-uous functions on a region in the complex plane, endowed with the topology of uniform
-convergence on compact subsets. (In fact this is a metric space topology: we can de-
-ﬁne a metric such that a sequence of continuous functions converge to another continuous
-function in this metric, if and only if the sequence converges uniformly on compact sub-
-sets.) Weierstrass’s theorems states that the space of analytic functions on the region is
-a closed subspace and diﬀerentiation acts continuously on it. Montel’s theorem identiﬁes
-the precompact subsets of the space of analytic functions.
-Theorem (W eierstrass). Let G ⊂ C be open, f n : G → C , n = 1 , 2, . . . , analytic,
-f : G → C . If f n → f uniformly on compact subsets of G , then f is analytic. Moreover
-f ′
-n converges to f ′ uniformly on compact subsets of G .
-Proof. If T is a triangular path,
-∫
-T
-f = lim
-n →∞
-∫
-T
-f n = 0 ,
-so f is analytic by Morera’s theorem.
+
+**Theorem (Rouché).** Let $G$ be an open set, $f$ and $g$ meromorphic functions on $G$, and $\gamma$ a null-homotopic piecewise smooth closed curve in $G$ which doesn't intersect $Z_f \cup P_f \cup Z_g \cup P_g$. If
+
+$$|f(z) + g(z)| < |f(z)| + |g(z)|, \quad z \in \gamma,$$
+
+then
+
+$$\sum_{a \in Z_f \cup P_f} n(\gamma; a) \operatorname{ord}_a(f) = \sum_{a \in Z_g \cup P_g} n(\gamma; a) \operatorname{ord}_a(g).$$
+
+Proof. The hypothesis means that on $\gamma$ the quotient $f(z)/g(z)$ is not a non-negative real number. Let $l$ be a branch of the logarithm on $\mathbb{C} \setminus [0, \infty)$. Then $l(f/g)$ is a primitive of $(f/g)'/(f/g) = f'/f - g'/g$ which is analytic in a neighborhood of $\gamma$. Hence, $\int_\gamma f'/f = \int_\gamma g'/g$ and the theorem follows from the argument principle. $\square$
+
+**Corollary (Classical statement of Rouché's theorem).** Suppose $f$ and $\phi$ are analytic on a simply-connected region $G$ and that $\gamma$ is a simple closed piecewise smooth curve in $G$. If $|\phi| < |f|$ on $\gamma$, then $f + \phi$ has the same number of zeros as $f$ in the region bounded by $\gamma$.
+
+$$\text{Proof. } |(f + \phi) + (-f)| = |\phi| < |f| \le |f + \phi| + |-f|. \quad \square$$
+
+Example: If $\lambda > 1$, then the equation $z \exp(\lambda - z) = 1$ has exactly one solution in the unit disk (take $f = z \exp(\lambda - z)$, $\phi = -1$).
+
+### V. FURTHER RESULTS ON ANALYTIC FUNCTIONS
+
+**The theorems of Weierstrass, Hurwitz, and Montel.** Consider the space of continuous functions on a region in the complex plane, endowed with the topology of uniform convergence on compact subsets. (In fact this is a metric space topology: we can define a metric such that a sequence of continuous functions converge to another continuous function in this metric, if and only if the sequence converges uniformly on compact subsets.) Weierstrass's theorems states that the space of analytic functions on the region is a closed subspace and differentiation acts continuously on it. Montel's theorem identifies the precompact subsets of the space of analytic functions.
+
+**Theorem (Weierstrass).** Let $G \subset \mathbb{C}$ be open, $f_n : G \to \mathbb{C}$, $n = 1, 2, \ldots$, analytic, $f : G \to \mathbb{C}$. If $f_n \to f$ uniformly on compact subsets of $G$, then $f$ is analytic. Moreover $f_n'$ converges to $f'$ uniformly on compact subsets of $G$.
+
+Proof. If $T$ is a triangular path,
+
+$$\int_T f = \lim_{n \to \infty} \int_T f_n = 0,$$
+
+so $f$ is analytic by Morera's theorem.
+
+<!-- page 26 -->
 
 26
-Let γ be the boundary of a disk around z contained in G .
-lim f ′
-n (z ) = lim
-1
-2πi
-∫
-γ
-f n (w )
-(w − z ) 2 dz =
-1
-2πi
-∫
-γ
-f (w )
-(w − z ) 2 dz = f ′ (z ). □
-Combining Weierstrass’s Theorem and the Argument Principle we get:
-Theorem (Hurwitz). Let G be a domain in C , f n , f analytic functions on G with
-f n → f uniformly on compact subsets. If each of the f n is nowhere-vanishing, then f is
-either nowhere-vanishing or identically zero.
-Proof. If f is not identically zero, but f (a ) = 0, we can choose r > 0 so that ¯B (a, r ) ⊂ G ,
-and a is the only zero of f on this disk. Letting γ be the boundary of the disk, the argument
-principle then tells us that
-∫
-γ f ′
-n /f n = 0, but
-∫
-γ f ′ /f = 2 πi ord a (f ) ⁄= 0. But, in view of
-Weierstrass’s Theorem the hypothesis tells us that f ′
-n /f n converges to f ′ /f uniformly on
-γ , so we have a contradiction. □
-Corollary. Let G be a domain in C , f n , f analytic functions on G with f n → f uniformly
-on compact subsets. If each of the f n is injective, then f is either injective or identically
-constant.
-Proof. If f is not identically constant, but there exists distinct a , b with f (a ) = f (b),
-then we can choose r > 0 so that B (a, r ) ∪ B (b, r ) ⊂ G , and B (a, r ) ∩ B (b, r ) = ∅ . Now
-f n (z ) − f (a ) converges to f (z ) − f (a ) uniformly on compact subsets of B (a, r ) and the
-latter function has a zero but is not identically zero there, so for all suﬃciently large n ,
-f n (z ) = f (a ) for some z ∈ B (a, r ), and, by the same argument, for some z ∈ B (b, r ). This
-contradicts the injectivity of the f n . □
-Theorem (Montel). Let G ⊂ C be open, F a family of analytic functions on G . Suppose
-that the functions f 1 , f 2 , . . . are uniformly bounded on each compact subset of G . Then
-there exists a subsequence which converges uniformly on compact subsets.
-Proof. Fix a ∈ G and let d (a ) = dist( a, ∂G )/2. First we show that we can ﬁnd a subse-
-quence that converges uniformly on B (a, d (a )/2). Now
-f m (z ) =
-∞∑
-n =0
-c n (f m )( z − a ) n , z ∈ ¯B (a, d (a )) .
-where c n (f ) = f (n ) (a )/n !. By the Cauchy estimates
-|c n (f m )| ≤ M/d (a ) n
-where M is the uniform bound for the f m on ¯B (a, d (a )).
-Since c 1 (f m ) is uniformly bounded in C , we can ﬁnd a subsequence f m 1 (j ) for which
-c 1 (f m 1 (j ) ) converges as j → ∞ . Then we can ﬁnd a further subsequence so that c 2 (f m 2 (j ) )
-converges, as well, etc. For the diagonal sequence g j = f m j (j ) c n (g j ) converges for all n .
+
+Let $\gamma$ be the boundary of a disk around $z$ contained in $G$.
+
+$$\lim f_n'(z) = \lim \frac{1}{2\pi i} \int_\gamma \frac{f_n(w)}{(w-z)^2} dz = \frac{1}{2\pi i} \int_\gamma \frac{f(w)}{(w-z)^2} dz = f'(z). \quad \square$$
+
+Combining Weierstrass's Theorem and the Argument Principle we get:
+
+**Theorem (Hurwitz).** Let $G$ be a domain in $\mathbb{C}$, $f_n$, $f$ analytic functions on $G$ with $f_n \to f$ uniformly on compact subsets. If each of the $f_n$ is nowhere-vanishing, then $f$ is either nowhere-vanishing or identically zero.
+
+Proof. If $f$ is not identically zero, but $f(a) = 0$, we can choose $r > 0$ so that $\bar{B}(a, r) \subset G$, and $a$ is the only zero of $f$ on this disk. Letting $\gamma$ be the boundary of the disk, the argument principle then tells us that $\int_\gamma f_n'/f_n = 0$, but $\int_\gamma f'/f = 2\pi i \operatorname{ord}_a(f) \neq 0$. But, in view of Weierstrass's Theorem the hypothesis tells us that $f_n'/f_n$ converges to $f'/f$ uniformly on $\gamma$, so we have a contradiction. $\square$
+
+**Corollary.** Let $G$ be a domain in $\mathbb{C}$, $f_n$, $f$ analytic functions on $G$ with $f_n \to f$ uniformly on compact subsets. If each of the $f_n$ is injective, then $f$ is either injective or identically constant.
+
+Proof. If $f$ is not identically constant, but there exists distinct $a$, $b$ with $f(a) = f(b)$, then we can choose $r > 0$ so that $B(a, r) \cup B(b, r) \subset G$, and $B(a, r) \cap B(b, r) = \emptyset$. Now $f_n(z) - f(a)$ converges to $f(z) - f(a)$ uniformly on compact subsets of $B(a, r)$ and the latter function has a zero but is not identically zero there, so for all sufficiently large $n$, $f_n(z) = f(a)$ for some $z \in B(a, r)$, and, by the same argument, for some $z \in B(b, r)$. This contradicts the injectivity of the $f_n$. $\square$
+
+**Theorem (Montel).** Let $G \subset \mathbb{C}$ be open, $\mathcal{F}$ a family of analytic functions on $G$. Suppose that the functions $f_1, f_2, \ldots$ are uniformly bounded on each compact subset of $G$. Then there exists a subsequence which converges uniformly on compact subsets.
+
+Proof. Fix $a \in G$ and let $d(a) = \operatorname{dist}(a, \partial G)/2$. First we show that we can find a subsequence that converges uniformly on $B(a, d(a)/2)$. Now
+
+$$f_m(z) = \sum_{n=0}^\infty c_n(f_m)(z-a)^n, \qquad z \in \bar{B}(a, d(a)).$$
+
+where $c_n(f) = f^{(n)}(a)/n!$. By the Cauchy estimates
+
+$$|c_n(f_m)| \leq M/d(a)^n$$
+
+where $M$ is the uniform bound for the $f_m$ on $\bar{B}(a, d(a))$.
+
+Since $c_1(f_m)$ is uniformly bounded in $\mathbb{C}$, we can find a subsequence $f_{m^1(j)}$ for which $c_1(f_{m^1(j)})$ converges as $j \to \infty$. Then we can find a further subsequence so that $c_2(f_{m^2(j)})$ converges, as well, etc. For the diagonal sequence $g_j = f_{m^j(j)} c_n(g_j)$ converges for all $n$.
+
+<!-- page 27 -->
 
 27
-Claim: g j converges uniformly on B (a, d (a )/2). To prove this, we must show that for
-any ϵ > 0
-|g j − g k | ≤ ϵ on B (a, d (a )/ 2).
-Now, for any N ∈ N , z ∈ B (a, d (a )/2),
-|g j (z ) − g k (z )| ≤
-N∑
-n =1
-|c n (g j ) − c n (g k )|| z − a |n +
-∞∑
-n = N +1
-2M
-d (a ) n |z − a |n
-≤
-N∑
-n =1
-|c n (g j ) − c n (g k )|[d (a )/2] n +
-2M
-2 N .
-Given ϵ > 0 we can choose N large enough that 2 M
-2 N and then choose j and k large enough
-that |c n (g j ) − c n (g k )| ≤ ϵ/ [2( N + 1) |[d (a )/2] n ] for 0 ≤ n ≤ N . This proves the claim.
-Fix a ∈ G and let d (a ) = dist( a, ∂G )/2. First we show that we can ﬁnd a subsequence
-that converges uniformly on B (a, d (a )/ 2). Now
-f m (z ) =
-∞∑
-n =0
-f
-(n )
-m (a )
-n !
-(z − a ) n , z ∈ ¯B (a, d (a )) .
+
+Claim: $g_j$ converges uniformly on $B(a, d(a)/2)$. To prove this, we must show that for any $\epsilon > 0$
+
+$$|g_j - g_k| \le \epsilon \quad \text{on } B(a, d(a)/2).$$
+
+Now, for any $N \in \mathbb{N}$, $z \in B(a, d(a)/2)$,
+
+$$\begin{aligned} |g_j(z) - g_k(z)| &\le \sum_{n=1}^N |c_n(g_j) - c_n(g_k)| |z - a|^n + \sum_{n=N+1}^\infty \frac{2M}{d(a)^n} |z - a|^n \\ &\le \sum_{n=1}^N |c_n(g_j) - c_n(g_k)| [d(a)/2]^n + \frac{2M}{2^N}. \end{aligned}$$
+
+Given $\epsilon > 0$ we can choose $N$ large enough that $\frac{2M}{2^N}$ and then choose $j$ and $k$ large enough that $|c_n(g_j) - c_n(g_k)| \le \epsilon / [2(N+1) |[d(a)/2]^n]$ for $0 \le n \le N$. This proves the claim.
+
+Fix $a \in G$ and let $d(a) = \text{dist}(a, \partial G)/2$. First we show that we can find a subsequence that converges uniformly on $B(a, d(a)/2)$. Now
+
+$$f_m(z) = \sum_{n=0}^\infty \frac{f_m^{(n)}(a)}{n!} (z - a)^n, \qquad z \in \bar{B}(a, d(a)).$$
+
 By the Cauchy estimates
-|f (n )
-m (a )| ≤ M n !/d (a ) n
-where M is the uniform bound for the f m on ¯B (a, d (a )). In particular, sup m |f
-(n )
-m (a )| < ∞
-for each n .
-Thus we can ﬁnd a subsequence f m 0 (j ) for which f m 0 (j ) (a ) converges as j → ∞ . Then
-we can ﬁnd a further subsequence so that f ′
-m 2 (j ) (a ) converges as well, etc. For the diagonal
-sequence g j = f m j (j ) g
-(n )
-j (a ) converges for all n .
-Claim: g j converges uniformly on B (a, d (a )/2). To prove this, we must show that for
-any ϵ > 0
-|g j − g k | ≤ ϵ on B (a, d (a )/ 2).
-Now, for any N ∈ N , z ∈ B (a, d (a )/2),
-|g j (z ) − g k (z )| ≤
-N∑
-n =0
-|g
-(n )
-j (a ) − g
-(n )
-k (a )|| z − a |n /n ! +
-∞∑
-n = N +1
-2M
-d (a ) n |z − a |n
-≤
-N∑
-n =1
-|g
-(n )
-j (a ) − g
-(n )
-k (a )|| z − a |n /n ! +
-2M
-2 N .
-Given ϵ > 0 we can choose N large enough that 2 M/ 2 N ≤ ϵ/ 2 and can then choose j and
-k large enough that |g
-(n )
-j (a ) − g
-(n )
-k (a )| ≤ n !ϵ/ {2( N + 1) |[d (a )/2] n } for 0 ≤ n ≤ N . This
-proves the claim and shows that we can ﬁnd a subsequence which converges uniformly on
-B (a, d (a )/ 2).
+
+$$|f_m^{(n)}(a)| \le M n! / d(a)^n$$
+
+where $M$ is the uniform bound for the $f_m$ on $\bar{B}(a, d(a))$. In particular, $\sup_m |f_m^{(n)}(a)| < \infty$ for each $n$.
+
+Thus we can find a subsequence $f_{m^0(j)}$ for which $f_{m^0(j)}(a)$ converges as $j \to \infty$. Then we can find a further subsequence so that $f_{m^2(j)}'(a)$ converges as well, etc. For the diagonal sequence $g_j = f_{m^j(j)} g_j^{(n)}(a)$ converges for all $n$.
+
+Claim: $g_j$ converges uniformly on $B(a, d(a)/2)$. To prove this, we must show that for any $\epsilon > 0$
+
+$$|g_j - g_k| \le \epsilon \quad \text{on } B(a, d(a)/2).$$
+
+Now, for any $N \in \mathbb{N}$, $z \in B(a, d(a)/2)$,
+
+$$\begin{aligned} |g_j(z) - g_k(z)| &\le \sum_{n=0}^N |g_j^{(n)}(a) - g_k^{(n)}(a)| |z - a|^n / n! + \sum_{n=N+1}^\infty \frac{2M}{d(a)^n} |z - a|^n \\ &\le \sum_{n=1}^N |g_j^{(n)}(a) - g_k^{(n)}(a)| |z - a|^n / n! + \frac{2M}{2^N}. \end{aligned}$$
+
+Given $\epsilon > 0$ we can choose $N$ large enough that $2M/2^N \le \epsilon/2$ and can then choose $j$ and $k$ large enough that $|g_j^{(n)}(a) - g_k^{(n)}(a)| \le n! \epsilon / \{2(N+1) |[d(a)/2]^n\}$ for $0 \le n \le N$. This proves the claim and shows that we can find a subsequence which converges uniformly on $B(a, d(a)/2)$.
+
+<!-- page 28 -->
 
 28
-Now we may choose a countable sequence of points a i ∈ G such that G =⋃ ∞
-i=1 B (a i , d (a i )/2) (e.g., all points in G with rational real and imaginary parts). Given the
-sequence of functions f m uniformly bounded on compact sets, we may ﬁnd a subsequence
-f n 1 (j ) which converges uniformly on B (a 1 , d (a 1 )/ 2). Then we may take a subsequence of
-that sequence which converges uniformly on B (a 2 , d (a 2 )/2), etc. The diagonal subsequence
-h j converges uniformly on each B (a i , d (a i )/2).
-We complete the proof by showing that h j converges uniformly on all compact subsets.
-Indeed this is immediate, because any compact subset of G is contained in a ﬁnite union
-of the B (a i , d (a i )/2). □
-Schwarz’s Lemma. Schwarz’s lemma is an easy, but very useful, consequence of the
-maximum modulus principle. The most diﬃcult part is to remember that the German
-analyst Herman Schwarz (actually Karl Herman Amandus Schwarz, 1843-1921), inventor
-of the “Schwarz inequality,” “Schwarz lemma,” and “Schwarz alternating method,” spells
-his name without a “t”, while the French analyst, Laurent Schwartz, 1915–, inventor of
-the theory of distributions, uses a “t”.
-Suppose that an analytic map f maps a disk of radius ϵ about a into the disk of
-radius δ about f (a ). We can use this to estimate the derivative f ′ (a ) and the stretching
-|f (b) − f (a )|/|b − a |. To keep the statement simple, we translate in the domain and range
-space so that a = f (a ) = 0 and dilate in the domain and range so that ϵ = δ = 1. We then
-get:
-Theorem (Schwarz’s Lemma). Suppose f maps the open unit disk into itself leaving
-the origin ﬁxed. Then |f (z )| ≤ | z | for all z in the disk, and if equality holds for any nonzero
-point, then f (z ) = cz for some c of modulus 1. Also |f ′ (0) | ≤ 1 and if equality holds, then
-f (z ) = cz for some c of modulus 1.
-Proof. The function g (z ) = f (z )/z has a removable singularity at the origin, and extends
-analytically to the disk with g (0) = f ′ (0). It satisﬁes |g (z )| ≤ 1/r on the circle of radius
-r < 1, so by the maximum modulus theorem it satisﬁes this condition on the disk of radius
-r . Letting r tend to one gives the result. Equality implies g is constant. □
-From a homework exercise ( §III .3, no. 10), we know that the most general M¨ obius
-transformations of the open unit disk D into itself is given by
-z ↦→ c
-z − a
-1 − ¯az
-with a in the disk and |c| = 1. We can use Schwarz’s lemma to show that this is most
-general one-to-one analytic map of the disk onto itself.
-First consider the special case f (0) = 0. Then Schwarz shows that |f ′ (0) | ≤ 1 with
-equality if and only if f (z ) = cz some |c| = 1. Applying Schwarz to f − 1 gives |1/f ′ (0) | =
-|(f − 1 ) ′ (0) | ≤ 1. Thus equality does indeed hold.
-Returning to the general case, say f (a ) = 0. Then we can apply the special case above
-to f ◦ φ − a to get f (φ − a (z )) = cz or f (z ) = cφ a (z ).
+
+Now we may choose a countable sequence of points $a_i \in G$ such that $G = \bigcup_{i=1}^{\infty} B(a_i, d(a_i)/2)$ (e.g., all points in $G$ with rational real and imaginary parts). Given the sequence of functions $f_m$ uniformly bounded on compact sets, we may find a subsequence $f_{n^1(j)}$ which converges uniformly on $B(a_1, d(a_1)/2)$. Then we may take a subsequence of that sequence which converges uniformly on $B(a_2, d(a_2)/2)$, etc. The diagonal subsequence $h_j$ converges uniformly on each $B(a_i, d(a_i)/2)$.
+
+We complete the proof by showing that $h_j$ converges uniformly on all compact subsets. Indeed this is immediate, because any compact subset of $G$ is contained in a finite union of the $B(a_i, d(a_i)/2)$. $\square$
+
+**Schwarz's Lemma.** Schwarz's lemma is an easy, but very useful, consequence of the maximum modulus principle. The most difficult part is to remember that the German analyst Herman Schwarz (actually Karl Herman Amandus Schwarz, 1843-1921), inventor of the "Schwarz inequality," "Schwarz lemma," and "Schwarz alternating method," spells his name without a "t", while the French analyst, Laurent Schwartz, 1915-, inventor of the theory of distributions, uses a "t".
+
+Suppose that an analytic map $f$ maps a disk of radius $\epsilon$ about $a$ into the disk of radius $\delta$ about $f(a)$. We can use this to estimate the derivative $f'(a)$ and the stretching $|f(b) - f(a)|/|b - a|$. To keep the statement simple, we translate in the domain and range space so that $a = f(a) = 0$ and dilate in the domain and range so that $\epsilon = \delta = 1$. We then get:
+
+**Theorem (Schwarz's Lemma).** *Suppose $f$ maps the open unit disk into itself leaving the origin fixed. Then $|f(z)| \le |z|$ for all $z$ in the disk, and if equality holds for any nonzero point, then $f(z) = cz$ for some $c$ of modulus 1. Also $|f'(0)| \le 1$ and if equality holds, then $f(z) = cz$ for some $c$ of modulus 1.*
+
+*Proof.* The function $g(z) = f(z)/z$ has a removable singularity at the origin, and extends analytically to the disk with $g(0) = f'(0)$. It satisfies $|g(z)| \le 1/r$ on the circle of radius $r < 1$, so by the maximum modulus theorem it satisfies this condition on the disk of radius $r$. Letting $r$ tend to one gives the result. Equality implies $g$ is constant. $\square$
+
+From a homework exercise (§III .3, no. 10), we know that the most general Möbius transformations of the open unit disk $D$ into itself is given by
+
+$$z \mapsto c \frac{z - a}{1 - \bar{a}z}$$
+
+with $a$ in the disk and $|c| = 1$. We can use Schwarz's lemma to show that this is most general one-to-one analytic map of the disk onto itself.
+
+First consider the special case $f(0) = 0$. Then Schwarz shows that $|f'(0)| \le 1$ with equality if and only if $f(z) = cz$ some $|c| = 1$. Applying Schwarz to $f^{-1}$ gives $|1/f'(0)| = |(f^{-1})'(0)| \le 1$. Thus equality does indeed hold.
+
+Returning to the general case, say $f(a) = 0$. Then we can apply the special case above to $f \circ \phi_{-a}$ to get $f(\phi_{-a}(z)) = cz$ or $f(z) = c\phi_a(z)$.
+
+<!-- page 29 -->
 
 29
-The Riemann Mapping Theorem. We begin by deriving some easy consequences of
-simple-connectivity. Recall that every analytic function on a simply-connected region
-admits a primitive. It follows that if f is a nowhere-vanishing function on a simply-
-connected domain, then there exists an analytic function F on that domain such that
-f = exp( F ). Indeed, let g be primitive of f ′ /f . It follows immediately that f exp( − F ) is
-constant, and so adjusting g by an additive constant, f = exp( F ). Another consequence
-is the square-root property : if f is a nowhere-vanishing analytic function on the domain,
-then there exists an analytic function g with [ g (z )] 2 = f (z ). Indeed, we can just take
-g = exp( F/ 2). For future use we remark that if there exists an analytic isomorphism of a
-region G 1 onto a region G 2 , then G 1 has the square-root property if and only if G 2 does.
+
+**The Riemann Mapping Theorem.** We begin by deriving some easy consequences of simple-connectivity. Recall that every analytic function on a simply-connected region admits a primitive. It follows that if $f$ is a nowhere-vanishing function on a simply-connected domain, then there exists an analytic function $F$ on that domain such that $f = \exp(F)$. Indeed, let $g$ be primitive of $f'/f$. It follows immediately that $f \exp(-F)$ is constant, and so adjusting $g$ by an additive constant, $f = \exp(F)$. Another consequence is the *square-root property*: if $f$ is a nowhere-vanishing analytic function on the domain, then there exists an analytic function $g$ with $[g(z)]^2 = f(z)$. Indeed, we can just take $g = \exp(F/2)$. For future use we remark that if there exists an analytic isomorphism of a region $G_1$ onto a region $G_2$, then $G_1$ has the square-root property if and only if $G_2$ does.
+
 We now turn to a lemma of Koebe.
-Lemma. Let D = B (0 , 1) and let G ⊊ D be a region containing the origin and having
-the square root property. Then there exists an injective analytic map r : G → D such that
-r (0) = 0 , |r (z )| > |z |, z ∈ G \ { 0}.
-Proof. Let a ∈ D \ G and let b be one of the square roots of − a . Deﬁne
-q (z ) = φ − a ([ φ − b (z )] 2 )
-(where φ α (z ) := ( z − α )/(1 − ¯αz )). Clearly q (0) = 0, and q is not just multiplication by a
-constant (in fact, it is not 1-1 on D ), so Schwarz’s lemma implies
-|q (z )| < |z |, 0 ⁄= z ∈ D.
-Next, note that φ a is an analytic map of G into D which never vanishes, so admits an
-analytic square root g (z ), which we may determine uniquely by insisting that g (0) = b.
-Deﬁning
-r = φ b ◦ g,
-we have r (0) = 0, and q (r (z )) ≡ z . Thus if 0 ⁄= z ∈ G , r (z ) ⁄= 0 and |z | = |q (r (z )) | <
-|r (z )|. □
-Two regions in the complex plane are called conformally equivalent if they are analyti-
-cally isomorphic, that is, if there exists a one-to-one analytic mapping of the ﬁrst domain
-onto the second (whose inverse is then automatically analytic).
-Riemann Mapping Theorem. Let G ⊊ C be simply-connected. Then G is conformally
-equivalent to the open unit disk.
-Proof. The only consequence of simple-connectivity that we shall use in the proof is that
-G has the square-root property.
-The structure of the proof is as follows: ﬁrst we use the hypotheses to exhibit an injective
-analytic map of h 0 of G onto a domain G 0 which satisﬁes the hypotheses of Koebe’s lemma.
-Then we use an extremal problem to deﬁne an injective analytic map f of G 0 onto a domain
+
+**Lemma.** *Let $D = B(0, 1)$ and let $G \subsetneq D$ be a region containing the origin and having the square root property. Then there exists an injective analytic map $r : G \to D$ such that $r(0) = 0$, $|r(z)| > |z|$, $z \in G \setminus \{0\}$.*
+
+*Proof.* Let $a \in D \setminus G$ and let $b$ be one of the square roots of $-a$. Define
+
+$$q(z) = \phi_{-a}([\phi_{-b}(z)]^2)$$
+
+(where $\phi_\alpha(z) := (z - \alpha)/(1 - \bar{\alpha}z)$). Clearly $q(0) = 0$, and $q$ is not just multiplication by a constant (in fact, it is not 1-1 on $D$), so Schwarz's lemma implies
+
+$$|q(z)| < |z|, \qquad 0 \neq z \in D.$$
+
+Next, note that $\phi_a$ is an analytic map of $G$ into $D$ which never vanishes, so admits an analytic square root $g(z)$, which we may determine uniquely by insisting that $g(0) = b$. Defining
+
+$$r = \phi_b \circ g,$$
+
+we have $r(0) = 0$, and $q(r(z)) \equiv z$. Thus if $0 \neq z \in G$, $r(z) \neq 0$ and $|z| = |q(r(z))| < |r(z)|$. $\square$
+
+Two regions in the complex plane are called conformally equivalent if they are analytically isomorphic, that is, if there exists a one-to-one analytic mapping of the first domain onto the second (whose inverse is then automatically analytic).
+
+**Riemann Mapping Theorem.** *Let $G \subsetneq \mathbb{C}$ be simply-connected. Then $G$ is conformally equivalent to the open unit disk.*
+
+*Proof.* The only consequence of simple-connectivity that we shall use in the proof is that $G$ has the square-root property.
+
+The structure of the proof is as follows: first we use the hypotheses to exhibit an injective analytic map of $h_0$ of $G$ onto a domain $G_0$ which satisfies the hypotheses of Koebe's lemma. Then we use an extremal problem to define an injective analytic map $f$ of $G_0$ onto a domain
+
+<!-- page 30 -->
 
 30
-G 1 contained in the disk. If G 1 ﬁlls the entire disk we are done; otherwise, G 1 satisﬁes the
-hypotheses of Koebe’s lemma and we use the lemma to contradict the extremality of f .
-Let a ∈ C \ G and let g be an analytic square root of z − a . It is easy to see that
-g is injective and that if w ∈ g (G ) then − w /∈ g (G ). Pick w 0 ∈ g (G ) and then r > 0
-such that B (w 0 , r ) ⊂ g (G ) (Open Mapping Theorem). Therefore B (− w 0 , r ) ∩ g (G ) = ∅ .
-Set h (z ) = [ g (z ) + w 0 ]− 1 so that h : G → ¯B (0 , 1 /r ) is analytic and injective. Then set
-h 0 (z ) = r [h (z ) − h (z 0 )] /3 where z 0 ∈ G . This map is an analytic isomorphism of G onto
-a connected open set G 0 ⊊ D containing 0.
-Let F be the set of all injective analytic functions f : G 0 → D with f (0) = 0. Fix
-0 ⁄= w 0 ∈ G 0 , and let α = sup f ∈F |f (w 0 )|. Note α ∈ (0 , 1]. We claim that the supremum
-is achieved. Indeed, let f n ∈ F , |f n (w 0 )| → α . Since the f n are uniformly bounded
-(by 1), Montel’s theorem assures us that there is a subsequence f n k which converges
-uniformly on compact subsets to some analytic function f on G 0 . Obviously f (0) = 0
-and |f (w 0 )| = α > 0, so f is not constant, and since the f n are injective, so is f . Clearly
-|f | ≤ 1 on G 0 , and by the maximum modulus principle, |f | < 1. Thus f ∈ F and achieves
-the supremum.
-We complete the theorem by showing that f is an isomorphism of G 0 onto D (so f ◦ h 0
-is the desired analytic isomorphism of G onto D ). We already know that f is analytic and
-injective, so we need only show that f maps onto D . If, to the contrary, G 1 := f (G 0 ) ⊊ D
-then (since G 1 inherits the square-root property from G 0 which inherits it from G ) Koebe’s
-lemma gives an injective analytic function r : G 1 → D with r (0) = 0, |r (z )| > |z | for z ⁄= 0.
-Then r ◦ f ∈ F , but |r (f (w 0 )) | > |f (w 0 )|, a contradiction. □
-We now note that the square-root property is equivalent to simple-connectivity. Indeed
-we have seen that simple-connectivity implies the square-root property. On the other hand,
-if G satisﬁes the square root property, then either G = C , which is simply-connected, or
-G is isomorphic to the disk (by the proof of the Riemann mapping theorem above), and
-so is simply-connected.
-If G ⊊ C is a simply-connected region and z 0 ∈ G is arbitrary we may take any analytic
-isomorphism of G onto the disk and follow it with a suitably chosen M¨ obius transformation
-(z ↦→ c(a − z )/(1 − ¯az ), |a | < 1, |c| = 1, to obtain an analytic isomorphism f of G onto D
-satisfying
-f (z 0 ) = 0 , f ′ (z 0 ) > 0 .
-If f 1 and f 2 were two such analytic isomorphisms, then g = f 2 ◦ f − 1
-1 is an analytic isomor-
-phism of the disk onto itself with g (0) = 0, g ′ (0) > 0, and it easily follows that g is the
-identity and f 1 = f 2 .
-Complements on Conformal Mapping. There are many interesting questions in con-
-formal mapping which we will not have time to investigate, but I will quickly state some
-key results.
-Extension to boundary. If the boundary of a simply-connected region is a simple closed
-curve, then it can be proved that a conformal map of the region onto the open disk extends
-to a topological homeomorphism of the closure of the region on to the closed disk.
+
+$G_1$ contained in the disk. If $G_1$ fills the entire disk we are done; otherwise, $G_1$ satisfies the hypotheses of Koebe's lemma and we use the lemma to contradict the extremality of $f$.
+
+Let $a \in \mathbb{C} \setminus G$ and let $g$ be an analytic square root of $z - a$. It is easy to see that $g$ is injective and that if $w \in g(G)$ then $-w \notin g(G)$. Pick $w_0 \in g(G)$ and then $r > 0$ such that $B(w_0, r) \subset g(G)$ (Open Mapping Theorem). Therefore $B(-w_0, r) \cap g(G) = \emptyset$. Set $h(z) = [g(z) + w_0]^{-1}$ so that $h : G \to \bar{B}(0, 1/r)$ is analytic and injective. Then set $h_0(z) = r[h(z) - h(z_0)]/3$ where $z_0 \in G$. This map is an analytic isomorphism of $G$ onto a connected open set $G_0 \subsetneq D$ containing 0.
+
+Let $\mathcal{F}$ be the set of all injective analytic functions $f : G_0 \to D$ with $f(0) = 0$. Fix $0 \neq w_0 \in G_0$, and let $\alpha = \sup_{f \in \mathcal{F}} |f(w_0)|$. Note $\alpha \in (0, 1]$. We claim that the supremum is achieved. Indeed, let $f_n \in \mathcal{F}$, $|f_n(w_0)| \to \alpha$. Since the $f_n$ are uniformly bounded (by 1), Montel's theorem assures us that there is a subsequence $f_{n_k}$ which converges uniformly on compact subsets to some analytic function $f$ on $G_0$. Obviously $f(0) = 0$ and $|f(w_0)| = \alpha > 0$, so $f$ is not constant, and since the $f_n$ are injective, so is $f$. Clearly $|f| \leq 1$ on $G_0$, and by the maximum modulus principle, $|f| < 1$. Thus $f \in \mathcal{F}$ and achieves the supremum.
+
+We complete the theorem by showing that $f$ is an isomorphism of $G_0$ onto $D$ (so $f \circ h_0$ is the desired analytic isomorphism of $G$ onto $D$). We already know that $f$ is analytic and injective, so we need only show that $f$ maps onto $D$. If, to the contrary, $G_1 := f(G_0) \subsetneq D$ then (since $G_1$ inherits the square-root property from $G_0$ which inherits it from $G$) Koebe's lemma gives an injective analytic function $r : G_1 \to D$ with $r(0) = 0$, $|r(z)| > |z|$ for $z \neq 0$. Then $r \circ f \in \mathcal{F}$, but $|r(f(w_0))| > |f(w_0)|$, a contradiction. $\square$
+
+We now note that the square-root property is equivalent to simple-connectivity. Indeed we have seen that simple-connectivity implies the square-root property. On the other hand, if $G$ satisfies the square root property, then either $G = \mathbb{C}$, which is simply-connected, or $G$ is isomorphic to the disk (by the proof of the Riemann mapping theorem above), and so is simply-connected.
+
+If $G \subsetneq \mathbb{C}$ is a simply-connected region and $z_0 \in G$ is arbitrary we may take any analytic isomorphism of $G$ onto the disk and follow it with a suitably chosen Möbius transformation $(z \mapsto c(a - z)/(1 - \bar{a}z)$, $|a| < 1$, $|c| = 1$, to obtain an analytic isomorphism $f$ of $G$ onto $D$ satisfying
+
+$$f(z_0) = 0, \quad f'(z_0) > 0.$$
+
+If $f_1$ and $f_2$ were two such analytic isomorphisms, then $g = f_2 \circ f_1^{-1}$ is an analytic isomorphism of the disk onto itself with $g(0) = 0$, $g'(0) > 0$, and it easily follows that $g$ is the identity and $f_1 = f_2$.
+
+**Complements on Conformal Mapping.** There are many interesting questions in conformal mapping which we will not have time to investigate, but I will quickly state some key results.
+
+*Extension to boundary.* If the boundary of a simply-connected region is a simple closed curve, then it can be proved that a conformal map of the region onto the open disk extends to a topological homeomorphism of the closure of the region on to the closed disk.
+
+<!-- page 31 -->
 
 31
-Constructive conformal mapping. Conformal is used to obtain explicit solutions to
-problems involving analytic and harmonic functions. For example, Joukowski used the
-conformal mapping f ◦ g where
-f (z ) = 2
-1 + z
-1 − z
-, g (z ) =
-(
-z − 1
-z + 1
-) 2
-,
-applied to a circle passing through − 1 and containing 1 in its interior. The resulting region,
-called a Joukowski airfoil, looks like a cross-section of a wing, and by adjusting the circle,
-one can adjust the exact shape of the airfoil. Using the explicit conformal map to the
-disk and explicit formulas for the solution of Laplace’s equation on (the exterior of) a disk
-(similar to those that will be derived in the next section, one can calculate things like the
-drag and lift of the airfoil, and so this was a useful approach to airfoil design.
-An important class of regions are the polygons. The Schwarz–Christoﬀel formula is an
-explicit formula for the conformal map of a given polygon onto the disk. The formula
-involves a few complex parameters which are determined by the vertices of the polygon.
-Given the vertices, one cannot usually compute the parameters analytically, but they are
-not diﬃcult to compute numerically (with a computer).
-Multiply connected regions . For lack of time we will not study conformal mapping of
-multiply connected regions, but we just state, without proof, the result for doubly con-
-nected regions (regions whose complement in the Riemann sphere consists of two connected
-components, i.e., roughly regions in the plane with one hole). It can be shown (with ba-
-sically the tools at our disposal) that any such region is conformally equivalent to the
-annulus 1 < |z | < R for some R > 1. The value of R is uniquely determined. In particular,
-two such annuli with diﬀerent values of R 1 are not conformally equivalent.
-VI. Harmonic Functions
-A real-valued C 2 function on an open subset of C is called harmonic if its Laplacian
-vanishes. We have seen previously that the real part of an analytic function is harmonic
-and that if the domain is simply-connected every real-valued harmonic function u admits a
-harmonic conjugate, i.e., a real-valued function v , for which u + iv is analytic. In particular,
-we see that every harmonic function is C ∞ .
-Suppose u is harmonic on G , a ∈ G . If r > 0 is such that ¯B (a, r ), then we can choose
-a disk D with ¯B (a, r ) ⊂ D ⊂ G , and since D is simply-connected u = Re f on D for some
-analytic function f on D . Cauchy’s integral formula then gives
-f (a ) =
-1
-2πi
-∫
-|z − a |= r
-f (z )
-z − a
-dz =
-1
-2π
-∫ 2 π
-0
-f (a + re iθ )dθ.
+
+Constructive conformal mapping. Conformal is used to obtain explicit solutions to problems involving analytic and harmonic functions. For example, Joukowski used the conformal mapping $f \circ g$ where
+
+$$f(z) = 2\frac{1+z}{1-z}, \qquad g(z) = \left(\frac{z-1}{z+1}\right)^2,$$
+
+applied to a circle passing through $-1$ and containing 1 in its interior. The resulting region, called a Joukowski airfoil, looks like a cross-section of a wing, and by adjusting the circle, one can adjust the exact shape of the airfoil. Using the explicit conformal map to the disk and explicit formulas for the solution of Laplace's equation on (the exterior of) a disk (similar to those that will be derived in the next section, one can calculate things like the drag and lift of the airfoil, and so this was a useful approach to airfoil design.
+
+An important class of regions are the polygons. The Schwarz–Christoffel formula is an explicit formula for the conformal map of a given polygon onto the disk. The formula involves a few complex parameters which are determined by the vertices of the polygon. Given the vertices, one cannot usually compute the parameters analytically, but they are not difficult to compute numerically (with a computer).
+
+Multiply connected regions. For lack of time we will not study conformal mapping of multiply connected regions, but we just state, without proof, the result for doubly connected regions (regions whose complement in the Riemann sphere consists of two connected components, i.e., roughly regions in the plane with one hole). It can be shown (with basically the tools at our disposal) that any such region is conformally equivalent to the annulus $1 < |z| < R$ for some $R > 1$. The value of $R$ is uniquely determined. In particular, two such annuli with different values of $R_1$ are not conformally equivalent.
+
+## VI. HARMONIC FUNCTIONS
+
+A real-valued $C^2$ function on an open subset of $\mathbb{C}$ is called harmonic if its Laplacian vanishes. We have seen previously that the real part of an analytic function is harmonic and that if the domain is simply-connected every real-valued harmonic function $u$ admits a harmonic conjugate, i.e., a real-valued function $v$, for which $u+iv$ is analytic. In particular, we see that every harmonic function is $C^\infty$.
+
+Suppose $u$ is harmonic on $G$, $a \in G$. If $r > 0$ is such that $\bar{B}(a, r)$, then we can choose a disk $D$ with $\bar{B}(a, r) \subset D \subset G$, and since $D$ is simply-connected $u = \operatorname{Re} f$ on $D$ for some analytic function $f$ on $D$. Cauchy's integral formula then gives
+
+$$f(a) = \frac{1}{2\pi i} \int_{|z-a|=r} \frac{f(z)}{z-a} dz = \frac{1}{2\pi} \int_0^{2\pi} f(a + re^{i\theta}) d\theta.$$
+
 Taking real parts we get:
-Mean V alue Theorem. If u : G → R is harmonic and ¯B (a, r ) ⊂ G , then
-(MVP) u (a ) =
-1
-2π
-∫ 2 π
-0
-u (a + re iθ )dθ.
+
+Mean Value Theorem. If $u : G \to \mathbb{R}$ is harmonic and $\bar{B}(a, r) \subset G$, then
+
+$$\text{(MVP)} \qquad u(a) = \frac{1}{2\pi} \int_0^{2\pi} u(a + re^{i\theta}) d\theta.$$
+
+<!-- page 32 -->
 
 32
-A harmonic function satisﬁes the Maximum Principle : it does not assume its maximum
-on a region unless it is constant there. Indeed the conclusion is true for any continuous
-function with the mean-value property (MVP), or even just satisfying the inequality u (a ) ≤
-(2 π ) − 1 ∫ 2 π
-0 u (a + re iθ )dθ (since this implies that the set of points were the maximum is
-achieved is open, and it is obviously closed). The reverse inequality similarly shows that a
-harmonic function satisﬁes the Minimum Principle.
-Given a bounded domain G and a function f : ∂G → R , the Dirichlet problem consists
-of ﬁnding a function u : ¯G → R such that u is harmonic on G , continuous on ¯G , and
-coincident with f on ∂G . An important consequence of the maximum and minimum
-principles is uniqueness for the Dirichlet problem. If u 1 and u 2 are both harmonic on
-G , continuous on ¯G , and agree on ∂G , then u 1 − u 2 is harmonic and vanishes on the
-boundary, but it takes its maximum and minimum on the boundary, so it is identically
-zero, i.e., u 1 = u 2 .
-When applying the maximum principle to functions which are not known to extend
-continuously to the boundary this easy-to-prove consequence is useful: If u satisﬁes
-the maximum principle on a bounded open set and there is a number K such that
-lim sup z → z 0
-u (z ) ≤ K , then u ≤ K on G . [Proof: Let M = sup z ∈ G u (z ) and take
-z n ∈ G with u (z n ) → M . Pass to a subsequence with z n → z 0 ∈ ¯G . If z 0 ∈ G , then
-u takes its maximum there, so is constant and obviously M ≤ K . Otherwise z 0 ∈ ∂G , so
-K ≥ lim sup z → z 0
-u (z ) ≥ lim n u (z n ) = M .]
-The Poisson kernel. For 0 ≤ r < 1, θ ∈ R let
-P r (θ ) = Re
-(
-1 + re iθ
-1 − re iθ
-)
-=
-1 − r 2
-1 − 2r cos θ + r 2 ,
-deﬁne the Poisson kernel. Note that
-P r (θ ) = Re(1 + 2
-∞∑
-n =1
-r n e inθ ) =
-∞∑
-n = −∞
-r |n | e inθ .
-Lemma. For 0 ≤ r < 1, P r (θ ) is a smooth, positive, even, 2π -periodic function of θ with
-mean value 1. Moreover if θ > 0, then
-lim
-r ↑ 1
-P r (θ ) = 0 , θ ∈ R \ 2 π Z ,
-and if δ > 0, then the convergence is uniform over θ ∈ R such that |θ − 2πn | ≥ δ for all
-n ∈ Z .
+
+A harmonic function satisfies the Maximum Principle: it does not assume its maximum on a region unless it is constant there. Indeed the conclusion is true for any continuous function with the mean-value property (MVP), or even just satisfying the inequality $u(a) \leq (2\pi)^{-1} \int_{0}^{2\pi} u(a + re^{i\theta}) d\theta$ (since this implies that the set of points were the maximum is achieved is open, and it is obviously closed). The reverse inequality similarly shows that a harmonic function satisfies the Minimum Principle.
+
+Given a bounded domain $G$ and a function $f : \partial G \to \mathbb{R}$, the Dirichlet problem consists of finding a function $u : \bar{G} \to \mathbb{R}$ such that $u$ is harmonic on $G$, continuous on $\bar{G}$, and coincident with $f$ on $\partial G$. An important consequence of the maximum and minimum principles is uniqueness for the Dirichlet problem. If $u_1$ and $u_2$ are both harmonic on $G$, continuous on $\bar{G}$, and agree on $\partial G$, then $u_1 - u_2$ is harmonic and vanishes on the boundary, but it takes its maximum and minimum on the boundary, so it is identically zero, i.e., $u_1 = u_2$.
+
+When applying the maximum principle to functions which are not known to extend continuously to the boundary this easy-to-prove consequence is useful: If $u$ satisfies the maximum principle on a bounded open set and there is a number $K$ such that $\limsup_{z \to z_0} u(z) \leq K$, then $u \leq K$ on $G$. [Proof: Let $M = \sup_{z \in G} u(z)$ and take $z_n \in G$ with $u(z_n) \to M$. Pass to a subsequence with $z_n \to z_0 \in \bar{G}$. If $z_0 \in G$, then $u$ takes its maximum there, so is constant and obviously $M \leq K$. Otherwise $z_0 \in \partial G$, so $K \geq \limsup_{z \to z_0} u(z) \geq \lim_n u(z_n) = M$.]
+
+**The Poisson kernel.** For $0 \leq r < 1$, $\theta \in \mathbb{R}$ let
+
+$$P_r(\theta) = \text{Re} \left( \frac{1 + r e^{i\theta}}{1 - r e^{i\theta}} \right) = \frac{1 - r^2}{1 - 2r \cos \theta + r^2},$$
+
+define the Poisson kernel. Note that
+
+$$P_r(\theta) = \text{Re}(1 + 2 \sum_{n=1}^{\infty} r^n e^{in\theta}) = \sum_{n=-\infty}^{\infty} r^{|n|} e^{in\theta}.$$
+
+**Lemma.** For $0 \leq r < 1$, $P_r(\theta)$ is a smooth, positive, even, $2\pi$-periodic function of $\theta$ with mean value 1. Moreover if $\theta > 0$, then
+
+$$\lim_{r \uparrow 1} P_r(\theta) = 0, \qquad \theta \in \mathbb{R} \setminus 2\pi\mathbb{Z},$$
+
+and if $\delta > 0$, then the convergence is uniform over $\theta \in \mathbb{R}$ such that $|\theta - 2\pi n| \geq \delta$ for all $n \in \mathbb{Z}$.
+
 Proof. Elementary (use the power series expansion for the integral and the formula
-P r (θ ) =
-1 − r 2
-(1 − r ) 2 + 2 r (1 − cos θ )
-for the limits). □
-Now let D be the open unit disk and ∂D its boundary. The next theorem shows how
-to solve the Dirichlet problem for D using the Poisson kernel:
+
+$$P_r(\theta) = \frac{1 - r^2}{(1 - r)^2 + 2r(1 - \cos \theta)}$$
+
+for the limits). $\square$
+
+Now let $D$ be the open unit disk and $\partial D$ its boundary. The next theorem shows how to solve the Dirichlet problem for $D$ using the Poisson kernel:
+
+<!-- page 33 -->
 
 33
-Theorem. Given f : ∂D → R continuous, deﬁne
-{
-u (z ) = f (z ), z ∈ ∂D,
-u (re iθ ) = 1
-2 π
-∫ 2 π
-0 P r (θ − t)f (e it ) dt, 0 ≤ r < 1 , θ ∈ R .
-The u is continuous on ¯D and harmonic on D .
+
+**Theorem.** Given $f : \partial D \to \mathbb{R}$ continuous, define
+
+$$\left\{ \begin{array}{l l} u (z) = f (z), & z \in \partial D, \\ u (r e ^ {i \theta}) = \frac {1}{2 \pi} \int_ {0} ^ {2 \pi} P _ {r} (\theta - t) f (e ^ {i t}) d t, & 0 \leq r < 1, \quad \theta \in \mathbb {R}. \end{array} \right.$$
+
+The $u$ is continuous on $\bar{D}$ and harmonic on $D$.
+
 Proof.
-u (re iθ ) = Re
-{
-1
-2π
-∫ 2 π
-0
-f (e it )
-[
-1 + re i(θ − t)
-1 − re i(θ − t)
-]
-dt
-}
-= Re
-{
-1
-2π
-∫ 2 π
-0
-f (e it )
-[
-e it + re iθ
-e it − re iθ
-]
-dt
-}
+
+$$\begin{array}{l} u (r e ^ {i \theta}) = \mathrm{Re} \left\{\frac {1}{2 \pi} \int_ {0} ^ {2 \pi} f (e ^ {i t}) \left[ \frac {1 + r e ^ {i (\theta - t)}}{1 - r e ^ {i (\theta - t)}} \right] d t \right\} \\ = \mathrm{Re} \left\{\frac {1}{2 \pi} \int_ {0} ^ {2 \pi} f (e ^ {i t}) \left[ \frac {e ^ {i t} + r e ^ {i \theta}}{e ^ {i t} - r e ^ {i \theta}} \right] d t \right\} \\ \end{array}$$
+
 or
-u (z ) = Re
-{
-1
-2 π
-∫ 2 π
-0
-f (e it )
-[
-e it + z
-e it − z
-]}
-, z ∈ D.
-The integral deﬁnes an analytic function of z (since the integrand is continuous in t and z
-and analytic in z ), so u , being the real part of an analytic function, is harmonic.
-It remains to show that lim
-z ∈ D
-z → e it 0
-u (z ) = f (e it 0 ) for t 0 ∈ R . Now
-u (re iθ ) − f (e it 0 ) =
-1
-2π
-∫ t 0 + π
-t 0 − π
-P r (θ − t)[ f (e it ) − f (e it 0 )] dt,
-so it suﬃces to show that the last integral can be made arbitrarily small by taking θ
-suﬃciently close to t 0 and r < 1 suﬃciently close to 1. Now given ϵ > 0 we can choose
-δ > 0 so that |f (e it ) − f (e it 0 )| ≤ ϵ if |t − t 0 | ≤ δ . Split the interval of integration as
-{t : |t − t 0 | ≤ π } = I 1 ∪ I 2 := { t : |t − t 0 | ≤ δ } ∪ { t : δ ≤ | t − t 0 | ≤ π }.
-On I 1 , the integrand is bounded by P r (θ − t)ϵ, so the integral is bounded by
-ϵ
-2π
-∫
-I 1
-P r (θ − t)dt ≤
-ϵ
-2π
-∫ 2 π
-0
-P r (θ − t)dt ≤ ϵ.
-Now suppose that θ is taken suﬃciently near t 0 , namely |θ − t 0 | ≤ δ/ 2. Then for t ∈ I 2 ,
-|θ − t| ≥ | t − t 0 | − | θ − t 0 | ≥ δ/ 2 , |θ − t| ≤ | t − t 0 | + |θ − t 0 | ≤ π + δ/ 2
-Thus P r (θ − t) → 0 uniformly for t ∈ I 2 as r ↑ 1. Since f is bounded, the entire integrand
-does so as well. Thus if |θ − t 0 | ≤ δ/ 2 we may take r suﬃciently close to 1 that the integral
-over I 2 is bounded by ϵ. □
+
+$$u (z) = \mathrm{Re} \left\{\frac {1}{2 \pi} \int_ {0} ^ {2 \pi} f (e ^ {i t}) \left[ \frac {e ^ {i t} + z}{e ^ {i t} - z} \right] \right\}, \quad z \in D.$$
+
+The integral defines an analytic function of $z$ (since the integrand is continuous in $t$ and $z$ and analytic in $z$), so $u$, being the real part of an analytic function, is harmonic.
+
+It remains to show that $\lim_{\substack{z\in D\\ z\to e^{it_0}}}u(z) = f(e^{it_0})$ for $t_0\in \mathbb{R}$. Now
+
+$$u (r e ^ {i \theta}) - f (e ^ {i t _ {0}}) = \frac {1}{2 \pi} \int_ {t _ {0} - \pi} ^ {t _ {0} + \pi} P _ {r} (\theta - t) [ f (e ^ {i t}) - f (e ^ {i t _ {0}}) ] d t,$$
+
+so it suffices to show that the last integral can be made arbitrarily small by taking $\theta$ sufficiently close to $t_0$ and $r < 1$ sufficiently close to 1. Now given $\epsilon > 0$ we can choose $\delta > 0$ so that $|f(e^{it}) - f(e^{it_0})| \leq \epsilon$ if $|t - t_0| \leq \delta$. Split the interval of integration as
+
+$$\{t: | t - t _ {0} | \leq \pi \} = I _ {1} \cup I _ {2} := \{t: | t - t _ {0} | \leq \delta \} \cup \{t: \delta \leq | t - t _ {0} | \leq \pi \}.$$
+
+On $I_1$, the integrand is bounded by $P_r(\theta - t)\epsilon$, so the integral is bounded by
+
+$$\frac {\epsilon}{2 \pi} \int_ {I _ {1}} P _ {r} (\theta - t) d t \leq \frac {\epsilon}{2 \pi} \int_ {0} ^ {2 \pi} P _ {r} (\theta - t) d t \leq \epsilon .$$
+
+Now suppose that $\theta$ is taken sufficiently near $t_0$, namely $|\theta - t_0| \leq \delta/2$. Then for $t \in I_2$,
+
+$$| \theta - t | \geq | t - t _ {0} | - | \theta - t _ {0} | \geq \delta / 2, \quad | \theta - t | \leq | t - t _ {0} | + | \theta - t _ {0} | \leq \pi + \delta / 2$$
+
+Thus $P_r(\theta - t) \to 0$ uniformly for $t \in I_2$ as $r \uparrow 1$. Since $f$ is bounded, the entire integrand does so as well. Thus if $|\theta - t_0| \leq \delta/2$ we may take $r$ sufficiently close to 1 that the integral over $I_2$ is bounded by $\epsilon$. $\square$
+
 It is now easy to deduce that the mean value property characterizes harmonic functions.
 
+<!-- page 34 -->
+
 34
-Theorem. If u : G → R is a continuous function satisfying the mean value property, then
-it is harmonic.
-Proof. It is enough to show that u is harmonic on each disk with closure in G . From the
-Poisson kernel construction we can construct a harmonic function with the same boundary
-values as u on this disk. The diﬀerence between this function and u satisﬁes the mean
-value property and is zero on the boundary of the disk, so it vanishes on the disk. □
-Corollary. If a sequence of harmonic functions converges uniformly on compact subsets,
-then the limit function is harmonic.
+
+**Theorem.** If $u : G \to \mathbb{R}$ is a continuous function satisfying the mean value property, then it is harmonic.
+
+*Proof.* It is enough to show that $u$ is harmonic on each disk with closure in $G$. From the Poisson kernel construction we can construct a harmonic function with the same boundary values as $u$ on this disk. The difference between this function and $u$ satisfies the mean value property and is zero on the boundary of the disk, so it vanishes on the disk. $\square$
+
+**Corollary.** If a sequence of harmonic functions converges uniformly on compact subsets, then the limit function is harmonic.
+
 From the expressions
-P r (θ ) =
-1 − r 2
-(1 + r ) 2 − 2r (1 + cos θ )
-=
-1 − r 2
-(1 − r ) 2 + 2 r (1 − cos θ )
+
+$$P_r(\theta) = \frac{1 - r^2}{(1 + r)^2 - 2r(1 + \cos \theta)} = \frac{1 - r^2}{(1 - r)^2 + 2r(1 - \cos \theta)}$$
+
 we have
-1 − r
-1 + r
-≤ P r (θ ) ≤
-1 + r
-1 − r
-.
-Now suppose u is harmonic on B (0 , R ) and non-negative, and re iθ is an arbitrary point
-of B (0 , R ). Choose ϵ > 0 small enough that r < R − ϵ, and set U (z ) = u (( R − ϵ)z ). U is
-harmonic on a neighborhood of ¯B (0 , 1), so
-u (re iθ ) = U ([ r/ (R − ϵ)] e iθ ) =
-1
-2π
-∫ 2 π
-0
-P r/ (R − ϵ) (θ − t)U (e it ) dt.
-Using the non-negativity of u , the mean value property, and the upper bound for P r , we
-get
-u (re iθ ) ≤
-1 + r/ (R − ϵ)
-1 − r/ (R − ϵ)
-u (0) .
-Letting ϵ ↓ 0 this gives
-u (re iθ ) ≤
-R + r
-R − r
-u (0) .
-We obtain a lower bound in a similar fashion. Of course we can translate the disk so it is
-centered at an arbitrary point a . Thus we have proven:
-Theorem (Harnack’s Inequalities). If u is non-negative and harmonic on B (a, R ),
-then
-R − r
-R + r
-u (a ) ≤ u (a + re iθ ) ≤
-R + r
-R − r
-u (a )
-for 0 ≤ r < R .
-For example, if u is harmonic and non-negative on the disk of radius R about a then
-u (z ) ∈ [u (a )/ 3, 3u (a )] on the disk of radius R/ 2 about a .
+
+$$\frac{1 - r}{1 + r} \le P_r(\theta) \le \frac{1 + r}{1 - r}.$$
+
+Now suppose $u$ is harmonic on $B(0, R)$ and non-negative, and $re^{i\theta}$ is an arbitrary point of $B(0, R)$. Choose $\epsilon > 0$ small enough that $r < R - \epsilon$, and set $U(z) = u((R - \epsilon)z)$. $U$ is harmonic on a neighborhood of $\bar{B}(0, 1)$, so
+
+$$u(re^{i\theta}) = U([r/(R - \epsilon)]e^{i\theta}) = \frac{1}{2\pi} \int_0^{2\pi} P_{r/(R - \epsilon)}(\theta - t)U(e^{it}) \, dt.$$
+
+Using the non-negativity of $u$, the mean value property, and the upper bound for $P_r$, we get
+
+$$u(re^{i\theta}) \le \frac{1 + r/(R - \epsilon)}{1 - r/(R - \epsilon)}u(0).$$
+
+Letting $\epsilon \downarrow 0$ this gives
+
+$$u(re^{i\theta}) \le \frac{R + r}{R - r}u(0).$$
+
+We obtain a lower bound in a similar fashion. Of course we can translate the disk so it is centered at an arbitrary point $a$. Thus we have proven:
+
+**Theorem (Harnack's Inequalities).** If $u$ is non-negative and harmonic on $B(a, R)$, then
+
+$$\frac{R - r}{R + r}u(a) \le u(a + re^{i\theta}) \le \frac{R + r}{R - r}u(a)$$
+
+for $0 \le r < R$.
+
+For example, if $u$ is harmonic and non-negative on the disk of radius $R$ about $a$ then $u(z) \in [u(a)/3, 3u(a)]$ on the disk of radius $R/2$ about $a$.
+
+<!-- page 35 -->
 
 35
-Theorem (Harnack). Let 0 ≤ u 1 ≤ u 2 ≤ . . . be a sequence of harmonic functions on a
-region G . Then either lim n u n (z ) = + ∞ uniformly on compact subsets of G or there is an
-harmonic function u with lim n u n (z ) = u (z ) uniformly on compact subsets of G .
-Proof. For any point a ∈ G let D be a disk centered at a contained in G . Then there
-exists a constant C > 1 with
-u n (z ) ≤ Cu n (a ), u n (a ) ≤ Cu n (z ), z ∈ D.
-Consequently, the numbers u n (a ) remain bounded as n → ∞ if and only if u n (z ) remains
-bounded for all z ∈ D . This shows that the set of points where u n stays bounded is both
-open and closed, so it is either the empty set or all of G . In the ﬁrst case, u n (z ) → + ∞
-for all z ∈ G , and the above estimate shows that the convergence is uniform on a covering
-set of discs, hence on all compact subsets.
-In the second case, lim n u n (a ) ∈ C for all a , and since
-u n (z ) − u m (z ) ≤ C [u n (a ) − u m (a )] , n ≥ m, z ∈ D,
-the sequence is uniformly Cauchy on D so converges uniformly on D . Again, uniform
-convergence on compact sets follows. □
-Subharmonic functions and the solution of the Dirichlet problem.
-Deﬁnition. Let u be a continuous real-valued function on a region G . If
-u (a ) ≤
-1
-2 π
-∫ 2 π
-0
-u (a + re iθ ) dθ
-whenever ¯B (a, r ) ⊂ G , we say that u is subharmonic .
-As mentioned earlier, a subharmonic function satisﬁes the maximum principle. Other
-simple properties are:
-• harmonic functions are subharmonic
-• the sum of two subharmonic functions is subharmonic
-• the pointwise maximum of two subharmonic functions is subharmonic
+
+**Theorem (Harnack).** Let $0 \leq u_1 \leq u_2 \leq \ldots$ be a sequence of harmonic functions on a region $G$. Then either $\lim_n u_n(z) = +\infty$ uniformly on compact subsets of $G$ or there is an harmonic function $u$ with $\lim_n u_n(z) = u(z)$ uniformly on compact subsets of $G$.
+
+*Proof.* For any point $a \in G$ let $D$ be a disk centered at $a$ contained in $G$. Then there exists a constant $C > 1$ with
+
+$$u_n(z) \leq C u_n(a), \quad u_n(a) \leq C u_n(z), \qquad z \in D.$$
+
+Consequently, the numbers $u_n(a)$ remain bounded as $n \to \infty$ if and only if $u_n(z)$ remains bounded for all $z \in D$. This shows that the set of points where $u_n$ stays bounded is both open and closed, so it is either the empty set or all of $G$. In the first case, $u_n(z) \to +\infty$ for all $z \in G$, and the above estimate shows that the convergence is uniform on a covering set of discs, hence on all compact subsets.
+
+In the second case, $\lim_n u_n(a) \in \mathbb{C}$ for all $a$, and since
+
+$$u_n(z) - u_m(z) \leq C[u_n(a) - u_m(a)], \quad n \geq m, z \in D,$$
+
+the sequence is uniformly Cauchy on $D$ so converges uniformly on $D$. Again, uniform convergence on compact sets follows. $\square$
+
+### Subharmonic functions and the solution of the Dirichlet problem.
+
+**Definition.** Let $u$ be a continuous real-valued function on a region $G$. If
+
+$$u(a) \leq \frac{1}{2\pi} \int_0^{2\pi} u(a + r e^{i\theta}) \, d\theta$$
+
+whenever $\bar{B}(a, r) \subset G$, we say that $u$ is *subharmonic*.
+
+As mentioned earlier, a subharmonic function satisfies the maximum principle. Other simple properties are:
+
+- harmonic functions are subharmonic
+- the sum of two subharmonic functions is subharmonic
+- the pointwise maximum of two subharmonic functions is subharmonic
+
 The next lemma states that subharmonicity is a local property:
-Lemma. Suppose that u is subharmonic in a neighborhood of each point of a region G .
-Then u is subharmonic on G .
-Proof. If ¯D = ¯B (a, r ) ⊂ G , let ˜ u be the continuous function on ¯D which agrees with u on
-∂D and is harmonic on D . From the Poisson kernel representation, we have
-˜u (a ) =
-1
-2π
-∫ 2 π
-0
-u (a + re iθ ) dθ.
-Now u − ˜u is subharmonic in a neighborhood of each point of D , and it follows by the
-usual connectedness argument that the points where it achieves its maximum on D is
-either empty or all of D . Hence its maximum on ¯D is achieved on the boundary, so is 0.
-This shows that u (a ) ≤ ˜u (a ) as desired. □
+
+**Lemma.** *Suppose that $u$ is subharmonic in a neighborhood of each point of a region $G$. Then $u$ is subharmonic on $G$.*
+
+*Proof.* If $\bar{D} = \bar{B}(a, r) \subset G$, let $\tilde{u}$ be the continuous function on $\bar{D}$ which agrees with $u$ on $\partial D$ and is harmonic on $D$. From the Poisson kernel representation, we have
+
+$$\tilde{u}(a) = \frac{1}{2\pi} \int_0^{2\pi} u(a + r e^{i\theta}) \, d\theta.$$
+
+Now $u - \tilde{u}$ is subharmonic in a neighborhood of each point of $D$, and it follows by the usual connectedness argument that the points where it achieves its maximum on $D$ is either empty or all of $D$. Hence its maximum on $\bar{D}$ is achieved on the boundary, so is 0. This shows that $u(a) \leq \tilde{u}(a)$ as desired. $\square$
+
 One more property we shall use:
 
+<!-- page 36 -->
+
 36
-Lemma. Suppose that u is subharmonic in a region G and ¯D = ¯B (a, r ) ⊂ G . Deﬁne ˜u
-on ¯D as the continous function on ¯D which agrees with u on ∂D and is harmonic on D ,
-and set ˜u = u on G \ ¯D . Then ˜u is subharmonic on G .
-Proof. Clearly it is continuous and subharmonic in D and G \ ¯D . So it suﬃces to show
-that for each point a of ∂D , ˜u is bounded by its mean on any circle around a . Now u − ˜u
-is subharmonic on D and 0 on ∂D , so u ≤ ˜u on D , and therefore on G . Thus
-˜u (a ) = u (a ) ≤
-1
-2π
-∫ 2 π
-0
-u (a + re iθ ) dθ ≤
-1
-2π
-∫ 2 π
-0
-˜u (a + re iθ ) dθ.
-□
+
+Lemma. Suppose that u is subharmonic in a region G and $\bar{D} = \bar{B}(a, r) \subset G$. Define $\tilde{u}$ on $\bar{D}$ as the continuous function on $\bar{D}$ which agrees with u on $\partial D$ and is harmonic on D, and set $\tilde{u} = u$ on $G \setminus \bar{D}$. Then $\tilde{u}$ is subharmonic on G.
+
+Proof. Clearly it is continuous and subharmonic in D and $G \setminus \bar{D}$. So it suffices to show that for each point a of $\partial D$, $\tilde{u}$ is bounded by its mean on any circle around a. Now $u - \tilde{u}$ is subharmonic on D and 0 on $\partial D$, so $u \leq \tilde{u}$ on D, and therefore on G. Thus
+
+$$\tilde{u}(a) = u(a) \leq \frac{1}{2\pi} \int_{0}^{2\pi} u(a + re^{i\theta}) \, d\theta \leq \frac{1}{2\pi} \int_{0}^{2\pi} \tilde{u}(a + re^{i\theta}) \, d\theta.$$
+
 Note that
-Let G be a bounded region. If u is a harmonic function on G continuous up to the
-boundary, and v is any subharmonic function that is less than u on the boundary, then
-the maximum principle implies that v ≤ u in G . Hence it is reasonable to try to solve
-the Dirichlet problem by seeking the largest subharmonic function that doesn’t exceed the
-given boundary values. This is the approach of O. Perron.
-Let f be a bounded (at this point not necessarily continuous) real-valued function on
-∂G . Deﬁne the Perron family P (f, G ) as the set of subharmonic functions v on G for which
-(⋆ ) lim sup
-z → a
-v (z ) ≤ f (a ) for all a ∈ ∂G.
-Note that P (f, G ) contains all constants not exceeding min f , so it is not empty.
+
+Let G be a bounded region. If u is a harmonic function on G continuous up to the boundary, and v is any subharmonic function that is less than u on the boundary, then the maximum principle implies that $v \leq u$ in G. Hence it is reasonable to try to solve the Dirichlet problem by seeking the largest subharmonic function that doesn't exceed the given boundary values. This is the approach of O. Perron.
+
+Let f be a bounded (at this point not necessarily continuous) real-valued function on $\partial G$. Define the Perron family $\mathcal{P}(f, G)$ as the set of subharmonic functions v on G for which
+
+$$(\star) \quad \limsup_{z \to a} v(z) \leq f(a) \quad \text{for all } a \in \partial G.$$
+
+Note that $\mathcal{P}(f, G)$ contains all constants not exceeding min f, so it is not empty.
+
 From the maximum principle we obtain:
-Lemma. If v ∈ P (f, G ) then v ≤ sup f on G .
-Now deﬁne the Perron function
-u (z ) =
-{ sup
-v ∈P (f,G )
-v (z ), z ∈ G,
-f (z ), z ∈ ∂G.
-We will show that (1) the Perron function is harmonic on G , and (2) under mild restrictions
-on G , it extends continuously to ¯G with value f on ∂G . Thus we will have exhibited a
-solution to the Dirichlet problem.
-Proof that the Perron function is harmonic. Let D be any disk with closure in G and
-let a be any point in the disk. Choose functions v n ∈ P (f, G ) with v n (a ) → u (a ). Let
-V n = max( v 1 , . . . , v n ), and then deﬁne ˜V n to be V n oﬀ D and to be harmonic on D and
-continuous on ¯D . We know that V n and ˜V n are subharmonic, and clearly the V n and thus
-the ˜V n are non-decreasing. All belong to P (f, G ) so are bounded by u , but v n ≤ V n ≤ ˜V n ,
-so ˜V n (a ) ↑ u (a ). By Harnack’s Theorem, ˜V n converges to an harmonic function V on D .
+
+Lemma. If $v \in \mathcal{P}(f, G)$ then $v \leq \sup f$ on G.
+
+Now define the Perron function
+
+$$u(z) = \begin{cases} \sup_{v \in \mathcal{P}(f, G)} v(z), & z \in G, \\ f(z), & z \in \partial G. \end{cases}$$
+
+We will show that (1) the Perron function is harmonic on G, and (2) under mild restrictions on G, it extends continuously to $\bar{G}$ with value f on $\partial G$. Thus we will have exhibited a solution to the Dirichlet problem.
+
+Proof that the Perron function is harmonic. Let D be any disk with closure in G and let a be any point in the disk. Choose functions $v_n \in \mathcal{P}(f, G)$ with $v_n(a) \to u(a)$. Let $V_n = \max(v_1, \ldots, v_n)$, and then define $\tilde{V}_n$ to be $V_n$ off D and to be harmonic on D and continuous on $\bar{D}$. We know that $V_n$ and $\tilde{V}_n$ are subharmonic, and clearly the $V_n$ and thus the $\tilde{V}_n$ are non-decreasing. All belong to $\mathcal{P}(f, G)$ so are bounded by u, but $v_n \leq V_n \leq \tilde{V}_n$, so $\tilde{V}_n(a) \uparrow u(a)$. By Harnack's Theorem, $\tilde{V}_n$ converges to an harmonic function V on D.
+
+<!-- page 37 -->
 
 37
-We know that V (a ) = u (a ). We will now show that if b is any other point of D then
-V (b) = u (b). This will show that u is harmonic in D as desired.
-Choose functions φ n ∈ P (f, G ) with φ n (b) → u (b), and set w n = max( φ n , v n ) ∈ P (f, G ).
-Construct W n and ˜W n from w n in analogy with V n and ˜V n . Then w n ≥ v n , W n ≥ V n ,
-˜W n ≥ ˜V n , and W n converges to a harmonic function W ≥ V with W (b) = u (b). Also
-W (a ) = u (a ) = V (a ), so V − W is a non-positive harmonic function on D which achieves
-its maximum at a . Therefore V ≡ W on D , so indeed V (b) = u (b). □
+
+We know that $V(a) = u(a)$. We will now show that if $b$ is any other point of $D$ then $V(b) = u(b)$. This will show that $u$ is harmonic in $D$ as desired.
+
+Choose functions $\phi_n \in \mathcal{P}(f, G)$ with $\phi_n(b) \to u(b)$, and set $w_n = \max(\phi_n, v_n) \in \mathcal{P}(f, G)$. Construct $W_n$ and $\tilde{W}_n$ from $w_n$ in analogy with $V_n$ and $\tilde{V}_n$. Then $w_n \geq v_n$, $W_n \geq V_n$, $\tilde{W}_n \geq \tilde{V}_n$, and $W_n$ converges to a harmonic function $W \geq V$ with $W(b) = u(b)$. Also $W(a) = u(a) = V(a)$, so $V - W$ is a non-positive harmonic function on $D$ which achieves its maximum at $a$. Therefore $V \equiv W$ on $D$, so indeed $V(b) = u(b)$. $\square$
+
 We now turn to the continuity of the Perron solution at the boundary.
-Deﬁnition. Let G be a bounded region and z 0 ∈ ∂G . A continuous function φ on ¯G
-which is harmonic on G is called a barrier function for G at z 0 if it is positive on ¯G \ { z 0 }
-and zero at z 0 .
-For example, suppose that there is a line through z 0 such that ¯G \ { z 0 } lies inside one
-of the open half-planes determined by the line. We may write the half-plane as Im[( z −
-z 0 )/b ] > 0 for some b ∈ C , and so Im[( z − z 0 )/b ] is a barrier function for G at z 0 .
-Next consider the function
-√
-1 − 1 /z where we use the principal branch of the square
-root, deﬁned on C \ (−∞ , 0]. This function is analytic on C \ [0 , 1] and extends continuously
-to 1 with value 0, and its real part is everywhere positive on C \ [0 , 1]. Thus if z 0 = 1
-belongs to ∂G , and is the only point of intersection of the interval [0 , 1] with ¯G , we
-can use Re
-√
-1 − 1 /z as a barrier function for G at z 0 . Similarly, if z 0 is any boundary
-point for which there exists a line segment which intersects ¯G only at z 0 , then there is a
-barrier function for G at z 0 . Thus barrier functions exist at all boundary points of smooth
-domains, polygonal domains, even on a disk minus a segment, and on many other domains.
-A standard example of a domain without a barrier at some boundary point is a punctured
-disk.
-Theorem. Let G be a bounded domain, f a bounded function on ∂G , and u the corre-
-sponding Perron function. If z 0 is a point in ∂G possessing a barrier function and f is
-continuous at z 0 , then lim z → z 0 u (z ) = f (z 0 ).
-Proof. First we show that for any ϵ > 0, there is a harmonic function w on G , continuous
-on ¯G , which satisﬁes w > f on ∂G and w (z 0 ) = f (z 0 ) + ϵ. Indeed, let D be a disk about
-z 0 such that |f (z ) − f (z 0 )| < ϵ for z ∈ ∂G ∩ D . Let M denote the maximum of |f | on ∂G
-and m denote to the minimum of the barrier function φ on G \ D , so m > 0. Set
-w (z ) =
-φ (z )
-m
-[M − f (z 0 )] + f (z 0 ) + ϵ =
-[
-φ (z )
-m
-− 1
-]
-[M − f (z 0 )] + M + ϵ.
-Then for z ∈ ∂G ∩ D ,
-w (z ) ≥ f (z 0 ) + ϵ > f (z ),
-while for z ∈ ∂G \ D ,
-w (z ) > M ≥ f (z ).
+
+**Definition.** Let $G$ be a bounded region and $z_0 \in \partial G$. A continuous function $\phi$ on $\bar{G}$ which is harmonic on $G$ is called a *barrier function* for $G$ at $z_0$ if it is positive on $\bar{G} \setminus \{z_0\}$ and zero at $z_0$.
+
+For example, suppose that there is a line through $z_0$ such that $\bar{G} \setminus \{z_0\}$ lies inside one of the open half-planes determined by the line. We may write the half-plane as $\text{Im}[(z - z_0)/b] > 0$ for some $b \in \mathbb{C}$, and so $\text{Im}[(z - z_0)/b]$ is a barrier function for $G$ at $z_0$.
+
+Next consider the function $\sqrt{1 - 1/z}$ where we use the principal branch of the square root, defined on $\mathbb{C} \setminus (-\infty, 0]$. This function is analytic on $\mathbb{C} \setminus [0, 1]$ and extends continuously to 1 with value 0, and its real part is everywhere positive on $\mathbb{C} \setminus [0, 1]$. Thus if $z_0 = 1$ belongs to $\partial G$, and is the only point of intersection of the interval $[0, 1]$ with $\bar{G}$, we can use $\text{Re} \sqrt{1 - 1/z}$ as a barrier function for $G$ at $z_0$. Similarly, if $z_0$ is any boundary point for which there exists a line segment which intersects $\bar{G}$ only at $z_0$, then there is a barrier function for $G$ at $z_0$. Thus barrier functions exist at all boundary points of smooth domains, polygonal domains, even on a disk minus a segment, and on many other domains. A standard example of a domain without a barrier at some boundary point is a punctured disk.
+
+**Theorem.** *Let $G$ be a bounded domain, $f$ a bounded function on $\partial G$, and $u$ the corresponding Perron function. If $z_0$ is a point in $\partial G$ possessing a barrier function and $f$ is continuous at $z_0$, then $\lim_{z \to z_0} u(z) = f(z_0)$.*
+
+*Proof.* First we show that for any $\epsilon > 0$, there is a harmonic function $w$ on $G$, continuous on $\bar{G}$, which satisfies $w > f$ on $\partial G$ and $w(z_0) = f(z_0) + \epsilon$. Indeed, let $D$ be a disk about $z_0$ such that $|f(z) - f(z_0)| < \epsilon$ for $z \in \partial G \cap D$. Let $M$ denote the maximum of $|f|$ on $\partial G$ and $m$ denote to the minimum of the barrier function $\phi$ on $G \setminus D$, so $m > 0$. Set
+
+$$w(z) = \frac{\phi(z)}{m}[M - f(z_0)] + f(z_0) + \epsilon = \left[\frac{\phi(z)}{m} - 1\right][M - f(z_0)] + M + \epsilon.$$
+
+Then for $z \in \partial G \cap D$,
+
+$$w(z) \geq f(z_0) + \epsilon > f(z),$$
+
+while for $z \in \partial G \setminus D$,
+
+$$w(z) > M \geq f(z).$$
+
+<!-- page 38 -->
 
 38
-So w > f on the boundary as claimed, and obviously w (z 0 ) = f (z 0 ) + ϵ.
-It follows that if v ∈ P (f, G ), then v ≤ w on G . Since this is true of all such v , we
-have u ≤ w on G , and so lim sup z → z 0
-u (z ) ≤ w (z 0 ) = f (z 0 ) + ϵ. Since ϵ was arbitrary,
-lim sup z → z 0
-u (z ) ≤ f (z 0 ).
+
+So $w > f$ on the boundary as claimed, and obviously $w(z_0) = f(z_0) + \epsilon$.
+
+It follows that if $v \in \mathcal{P}(f, G)$, then $v \leq w$ on $G$. Since this is true of all such $v$, we have $u \leq w$ on $G$, and so $\limsup_{z \to z_0} u(z) \leq w(z_0) = f(z_0) + \epsilon$. Since $\epsilon$ was arbitrary, $\limsup_{z \to z_0} u(z) \leq f(z_0)$.
+
 Next let
-v (z ) = f (z 0 ) − ϵ −
-φ (z )
-m
-[M + f (z 0 )] =
-[
-1 −
-φ (z )
-m
-]
-[M + f (z 0 )] − M − ϵ.
-Now we get v < f on ∂G and v (z 0 ) = f (z 0 ) − ϵ. Since v ∈ P (f, G ), u ≥ v on G , and so
-lim inf z → z 0 u (z ) ≥ f (z 0 ) − ϵ. Letting ϵ tend to zero we have lim inf z → z 0 u (z ) ≥ f (z 0 ). □
-Corollary. Let G be a bounded region in C which possesses a barrier at each point of its
-boundary, and let f be a continuous function on ∂G . Then the Perron function for f on
-G solves the Dirichlet problem.
-The Schwarz Reﬂection Principle. To state the reﬂection principles, we introduce
-the following terminology: a region G is symmetric with respect to the real axis if z ∈ G
-implies ¯ z ∈ G .
-Reﬂection Principle for Harmonic F unctions. Let G be a region which is symmetric
-with respect to the real axis and deﬁne G + , G − , and G 0 as the intersection of G with the
-upper half-plane, lower half-plane, and real axis, respectively. If u is a continuous real-
-valued function on G + ∪ G 0 , which is harmonic on G + and zero on G 0 , then u admits a
-unique extension to a harmonic function on all of G . The extension is given by u (z ) =
-− u (¯z ) for z ∈ G − .
-Proof. If such an extension exists it is certainly unique, so it suﬃces to show that the stated
-extension deﬁnes a harmonic function in G . It certainly deﬁnes a continuous extension
-which is harmonic in G + ∪ G − , so it suﬃces to show that it is harmonic in a neighborhood
-of z 0 ∈ G 0 . By translating and extending we can assume that z 0 = 0 and that G contains
-the closed unit disk, ¯D . Deﬁne U on ¯D as the solution of the Dirichlet problem with
-boundary data u |∂D (where u has been extended to G − by the formula above). From the
-Poisson kernel representation we have U = 0 on the real interval ( − 1 , 1). Thus U = u on
-the entire boundary of the upper half-disk, and the entire boundary of the lower half-disk.
-Since both U and u are harmonic in the half-disks, they coincide, and thus u , like U is
-harmonic in the whole disk. □
-Reﬂection Principle for Analytic F unctions. Let G , G + , G − , and G 0 be as above.
-If f is a continuous complex-valued function on G + ∪ G 0 , which is analytic on G + and
-real on G 0 , then f admits a unique extension to a harmonic function on all of G . The
-extension is given by f (z ) = f (¯z ) for z ∈ G − .
-Proof. We could base a proof on the previous result applied to Im f and harmonic conju-
-gates, but it is also easy to verify this directly using Morera’s theorem. □
+
+$$v(z) = f(z_0) - \epsilon - \frac{\phi(z)}{m}[M + f(z_0)] = \left[1 - \frac{\phi(z)}{m}\right][M + f(z_0)] - M - \epsilon.$$
+
+Now we get $v < f$ on $\partial G$ and $v(z_0) = f(z_0) - \epsilon$. Since $v \in \mathcal{P}(f, G)$, $u \geq v$ on $G$, and so $\liminf_{z \to z_0} u(z) \geq f(z_0) - \epsilon$. Letting $\epsilon$ tend to zero we have $\liminf_{z \to z_0} u(z) \geq f(z_0)$. $\square$
+
+**Corollary.** Let $G$ be a bounded region in $\mathbb{C}$ which possesses a barrier at each point of its boundary, and let $f$ be a continuous function on $\partial G$. Then the Perron function for $f$ on $G$ solves the Dirichlet problem.
+
+**The Schwarz Reflection Principle.** To state the reflection principles, we introduce the following terminology: a region $G$ is symmetric with respect to the real axis if $z \in G$ implies $\bar{z} \in G$.
+
+**Reflection Principle for Harmonic Functions.** Let $G$ be a region which is symmetric with respect to the real axis and define $G_+$, $G_-$, and $G_0$ as the intersection of $G$ with the upper half-plane, lower half-plane, and real axis, respectively. If $u$ is a continuous real-valued function on $G_+ \cup G_0$, which is harmonic on $G_+$ and zero on $G_0$, then $u$ admits a unique extension to a harmonic function on all of $G$. The extension is given by $u(z) = -u(\bar{z})$ for $z \in G_-$.
+
+Proof. If such an extension exists it is certainly unique, so it suffices to show that the stated extension defines a harmonic function in $G$. It certainly defines a continuous extension which is harmonic in $G_+ \cup G_-$, so it suffices to show that it is harmonic in a neighborhood of $z_0 \in G_0$. By translating and extending we can assume that $z_0 = 0$ and that $G$ contains the closed unit disk, $\bar{D}$. Define $U$ on $\bar{D}$ as the solution of the Dirichlet problem with boundary data $u|_{\partial D}$ (where $u$ has been extended to $G_-$ by the formula above). From the Poisson kernel representation we have $U = 0$ on the real interval $(-1, 1)$. Thus $U = u$ on the entire boundary of the upper half-disk, and the entire boundary of the lower half-disk. Since both $U$ and $u$ are harmonic in the half-disks, they coincide, and thus $u$, like $U$ is harmonic in the whole disk. $\square$
+
+**Reflection Principle for Analytic Functions.** Let $G$, $G_+$, $G_-$, and $G_0$ be as above. If $f$ is a continuous complex-valued function on $G_+ \cup G_0$, which is analytic on $G_+$ and real on $G_0$, then $f$ admits a unique extension to a harmonic function on all of $G$. The extension is given by $f(z) = \overline{f(\bar{z})}$ for $z \in G_-$.
+
+Proof. We could base a proof on the previous result applied to $\operatorname{Im} f$ and harmonic conjugates, but it is also easy to verify this directly using Morera's theorem. $\square$
+
+<!-- page 39 -->
 
 39
-Of course the line of symmetry could be any line, not just the real axis. Thus if G is
-symmetric with respect to any line, deﬁned and analytic on one side of the line, and real
-on the line, it can be extended to be analytic on the whole domain. The proof can be
-found by translating and rotating the domain to the standard case.
-We can also translate and rotate the image, so it is not necessary that f be real on the
-symmetry line, it is suﬃcient that it map it into some other line. An important application
-is to analytic continuation. For example, if f maps a rectangle into itself analytically and
-takes the edges into the edges, we can apply the reﬂection principle repeatedly to extend
-f to an entire function.
-The reﬂection principles can be applied for symmetries with respect to circles as well
-as for lines.
-Theorem. Let f be analytic on the unit disk, continuous on its closure, and real on the
-boundary. Then f admits a unique extension to the entire plane. The extension is given
-by f (z ) = f (1 / ¯z ) for |z | > 1.
-Proof. Let g (z ) = f ((1 + iz )/(1 − iz )), so g maps the upper half plane into C and is real
-on the real axis. Applying the reﬂection principle to g gives an extension of f with
-f
-(
-1 + iz
-1 − iz
-)
-= f
-(
-1 + i ¯z
-1 − i ¯z
-)
-for z in the lower half plane, or, equivalently,
-f (w ) = f (1 /w )
-for w in the exterior of the disk. □
-As an application of the reﬂection principle consider an analytic function on the unit
-disk which extends continuously to the closure taking the unit circle into itself. We may
-extend this function to C ∞ by f (z ) = 1 /f (1 / ¯z ) for |z | > 1. (We obtain this by applying
-the standard reﬂection principle to g = φ − 1 ◦ f ◦ φ where φ (z ) = (1 + iz )/ (1 − iz ).) The
-extended function is analytic everywhere except at the points symmetric to the zeros of
-f , where it has a pole. Inﬁnity is either a removable singularity or a pole according to
-whether f is 0 at 0 or not. Thus the extended function is meromorphic on C ∞ with a
-ﬁnite number of poles. It follows that f is rational.
 
+Of course the line of symmetry could be any line, not just the real axis. Thus if G is symmetric with respect to any line, defined and analytic on one side of the line, and real on the line, it can be extended to be analytic on the whole domain. The proof can be found by translating and rotating the domain to the standard case.
+
+We can also translate and rotate the image, so it is not necessary that f be real on the symmetry line, it is sufficient that it map it into some other line. An important application is to analytic continuation. For example, if f maps a rectangle into itself analytically and takes the edges into the edges, we can apply the reflection principle repeatedly to extend f to an entire function.
+
+The reflection principles can be applied for symmetries with respect to circles as well as for lines.
+
+**Theorem.** Let f be analytic on the unit disk, continuous on its closure, and real on the boundary. Then f admits a unique extension to the entire plane. The extension is given by f(z) = f(1/ẑ) for |z| > 1.
+
+Proof. Let g(z) = f((1 + iz)/(1 - iz)), so g maps the upper half plane into ℂ and is real on the real axis. Applying the reflection principle to g gives an extension of f with
+
+$$f \left( \frac{1 + iz}{1 - iz} \right) = \overline{f \left( \frac{1 + i\bar{z}}{1 - i\bar{z}} \right)}$$
+
+for z in the lower half plane, or, equivalently,
+
+$$f(w) = \overline{f(1/w)}$$
+
+for w in the exterior of the disk. □
+
+As an application of the reflection principle consider an analytic function on the unit disk which extends continuously to the closure taking the unit circle into itself. We may extend this function to ℂ∞ by f(z) = 1/f(1/ẑ) for |z| > 1. (We obtain this by applying the standard reflection principle to g = φ⁻¹ ∘ f ∘ φ where φ(z) = (1 + iz)/(1 - iz).) The extended function is analytic everywhere except at the points symmetric to the zeros of f, where it has a pole. Infinity is either a removable singularity or a pole according to whether f is 0 at 0 or not. Thus the extended function is meromorphic on ℂ∞ with a finite number of poles. It follows that f is rational.

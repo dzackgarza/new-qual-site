@@ -1,43 +1,43 @@
 ---
 order: 29
-title: "Algebra Qual Prep Week 2: Finite Group Theory"
+title: "Algebra qual prep week 2: finite group theory"
 ---
 
-# Algebra Qual Prep Week 2: Finite Group Theory
+# Algebra qual prep week 2: finite group theory
 
 ## Topics
 
 - Recognition of direct products and semidirect products
 
-- Amalgam size lemma: $\size HK = \size  H \size  K / \size (H\intersect K)$
+- Product formula: $\size{HK} = \size H \size K / \size{H\intersect K}$ for subgroups $H,K\le G$
 
 - Group actions
 
   - Orbit-stabilizer
 
-  - The class equation,
+  - The class equation
 
   - Burnside's formula
 
-  - Important actions
+  - Standard actions
 
     - Self-action by left translation (*the left-regular action*)
 
-      - The assignment $g\mapsto \psi_g\in \Sym(G)$ where $\psi_g(x) \da gx$ is sometimes referred to as the *Cayley representation* in qual questions, or sometimes a *permutation representation* since $\Sym(G) \cong S_n$ as sets where $n\da \size  G$
+      - The homomorphism $G\to\Sym(G)$, $g\mapsto \psi_g$ with $\psi_g(x) \da gx$, is the Cayley representation, a permutation representation of $G$; $\Sym(G) \cong S_n$ for $n\da \size G$
 
-      - See the [Strong Cayley Theorem](https://math.la.asu.edu/~kawski/classes/mat444/handouts/strongCayley.pdf)
+      - [Strong Cayley theorem](https://math.la.asu.edu/~kawski/classes/mat444/handouts/strongCayley.pdf)
 
     - Self-action by conjugation
 
-    - Action on subgroups by conjugation
+    - Action on the set of subgroups by conjugation
 
-    - Action on cosets of a fixed $G/H$ by left-translation
+    - Action on the left cosets $G/H$ of a fixed subgroup $H$ by left translation
 
 - Transitive subgroups
 
-  - How these are related to Galois groups
+  - The Galois group of an irreducible polynomial of degree $n$ as a transitive subgroup of $S_n$
 
-- FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
+- The structure theorem for finitely generated abelian groups
 
   - Invariant factors
 
@@ -59,7 +59,7 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
   - Central series
 
-  - The Jordan-Holder theorem
+  - The Jordan--Hölder theorem
 
     - Composition series
 
@@ -79,7 +79,7 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
 [[P-O2H7G]] [[P-P4KA6]] [[P-WC3HY]] [[P-5YUW6]] [[P-JZM4U]] [[P-3PD4W]] [[P-2TASE]] [[P-6XW74]] [[P-HYQCG]]
 
-### Group Actions
+### Group actions
 
 [[P-N2TM2]] [[P-YMVNK]]
 
@@ -93,7 +93,7 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
 [[P-HPSTB]] [[P-WBK5B]]
 
-### Series of Groups
+### Series of groups
 
 [[P-KPEPM]]
 
@@ -101,18 +101,18 @@ title: "Algebra Qual Prep Week 2: Finite Group Theory"
 
 [[P-RPSTO]]
 
-## Qual Problems
+## Qual problems
 
-![](_attachments/Untitled 14.png)
+[[P-P3RNI]]
 
-![](_attachments/Pasted image 20210526171835.png)
+[[P-TR6YB]]
 
-![](_attachments/Pasted image 20210526172046.png)
+[[P-FKAJJ]]
 
-![](_attachments/Pasted image 20210526172119.png)
+[[P-EI5VA]]
 
-![](_attachments/Pasted image 20210526172140.png)
+[[P-DXHST]]
 
-Needs some Sylow theory:
+The following problem uses the Sylow theorems.
 
-![](_attachments/Pasted image 20210526173749.png)
+[[P-VI6QM]]

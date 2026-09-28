@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (a) Give the definition of a **covering space** $\widetilde{X}$ (and **covering map** $p: \widetilde{X} \to X$) for a topological space $X$.
 
 (b) State the **homotopy lifting property** of covering spaces. Use it to show that a covering map $p: \widetilde{X} \to X$ induces an injective group homomorphism
@@ -26,7 +26,7 @@ on fundamental groups.
 (c) Let $p: \widetilde{X} \to X$ be a covering map with $\widetilde{X}$ and $X$ path-connected. Suppose that the induced homomorphism $p_*$ on fundamental groups is an isomorphism. Prove that $p$ is a homeomorphism.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Define covering spaces and the homotopy lifting property, prove that covering maps induce injections on $\pi_1$, and prove that a $\pi_1$-isomorphism between path-connected spaces makes the covering map a homeomorphism.
 
 <1>1. Part (a): Definition of covering space and covering map.

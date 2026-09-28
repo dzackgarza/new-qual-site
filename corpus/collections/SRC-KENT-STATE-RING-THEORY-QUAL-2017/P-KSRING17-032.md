@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-032
 kind: problem
-title: Kent State ring-theory qualifying problem 32
+title: The Vandermonde determinant
 classification:
   areas: [algebra]
   topics: []

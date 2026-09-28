@@ -24,6 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 2. Determine whether the following statements are true and false.
    If true, provide a proof.
    If false, prove a counter example.
@@ -31,10 +32,11 @@ audit:
 (a) If $f ( x )$ is a increasing, continuous function on the interval $[ 0 , 1 ]$ such that $f ( 0 ) = 0$ and $f ( 1 ) = 1$ , then there exists a set $E \subset [ 0 , 1 ]$ of positive measure such that $f ^ { \prime } ( x ) > 0$
 
 (b) If $f ( x )$ is a strictly increasing, absolutely continuous function on the interval [0, 1] with $f ( 0 ) = 0$ and $f ( 1 ) = 1$ , then the set $f ^ { - 1 } ( E ) \cap \{ x \in [ 0 , 1 ] : f ^ { \prime } ( x ) > 0 \}$ is measurable for any measurable set $E \subset [ 0 , 1 ]$
+:::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is false.
-::: proof
+::: {.proof}
 Take $f$ to be the Cantor--Lebesgue function. Then $f:[0,1]\to[0,1]$ is continuous and increasing, with
 \[
 f(0)=0,
@@ -53,7 +55,7 @@ So there need not exist a positive-measure set on which $f'>0$.
 :::
 
 <1>2. Reduce part (b) to the preimage of a null set.
-::: proof
+::: {.proof}
 Now assume $f$ is strictly increasing and absolutely continuous, with $f(0)=0$ and $f(1)=1$. Then $f$ is a homeomorphism of $[0,1]$ onto itself.
 
 Let
@@ -77,7 +79,7 @@ The first set is measurable because $f$ is continuous. It remains to control the
 :::
 
 <1>3. Show that the null part has null preimage on $D$.
-::: proof
+::: {.proof}
 Set
 \[
 A:=f^{-1}(N)\cap D.

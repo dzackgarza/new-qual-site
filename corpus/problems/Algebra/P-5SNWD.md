@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group, and let $H \le K \le G$ be subgroups.
 Prove that if $H$ is a characteristic subgroup of $K$ ($H \operatorname{char} K$) and $K$ is a characteristic subgroup of $G$ ($K \operatorname{char} G$), then $H$ is a characteristic subgroup of $G$ ($H \operatorname{char} G$).
 :::
 
-::: solution
+::: {.solution}
 Let $\varphi\in\operatorname{Aut}(G)$. Since $K\operatorname{char}G$,
 \[
 \varphi(K)=K.

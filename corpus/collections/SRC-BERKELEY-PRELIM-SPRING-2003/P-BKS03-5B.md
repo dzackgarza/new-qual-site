@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Let $C,D\subseteq\mathbb R^n$ be nonempty closed sets and assume $C$ is bounded.
 Prove there exist $x_0\in C$ and $y_0\in D$ such that
 \[

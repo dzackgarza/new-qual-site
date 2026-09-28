@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and explain the Artin–Wedderburn Structure Theorem for semisimple Artinian rings and finite-dimensional semisimple algebras.
 :::
 
-::: solution
+::: {.solution}
 The Artin--Wedderburn theorem says that a ring $R$ is semisimple Artinian if and only if
 \[
 R\cong \prod_{i=1}^r M_{n_i}(D_i),

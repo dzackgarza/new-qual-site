@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus $f$ is conformal.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Contrapositive: if $f'(z_0)=0$ at some point, then $f$ fails injectivity in a neighborhood of $z_0$.
 Without loss of generality, we can assume $f(0) = 0$ after changes of coordinates in the domain/codomain, since this won't affect injectivity or vanishing of derivatives.
 If $z_0$ is a zero of $f$ of some order $n$, we can write $f(z) = z^n g(z)$ with $g(0) \neq 0$ and $g$ nonvanishing in some neighborhood of zero.

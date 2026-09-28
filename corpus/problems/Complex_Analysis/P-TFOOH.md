@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of analytic functions on $\DD \definedas \theset{z\in \CC \suchthat \abs{z} < 1}$.
 
 Show that if $f_n\to g$ for some $g: \DD \to \CC$ uniformly on every compact $K\subset \DD$, then $g$ is analytic on $\DD$.
@@ -23,7 +23,7 @@ Show that if $f_n\to g$ for some $g: \DD \to \CC$ uniformly on every compact $K\
 
 :::
 
-:::{.solution}
+::: {.solution}
 By Morera's theorem, it suffices to show $\int_T f = 0$ for all triangles $T \subseteq \DD$.
 Noting that $T$ is closed and bounded and thus compact, $f_n\to g$ uniformly on $T$.
 Since the $f_n$ are holomorphic, $\int_T f_n = 0$ for all $n$, and thus

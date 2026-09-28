@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $\pi: G \to \operatorname{Sym}(G)$ be the Cayley (left regular) representation, where $\pi(x)(g) = x g$ for all $g \in G$.
 
 Prove that $\pi(x)$ is an odd permutation if and only if the order $\operatorname{ord}(\pi(x))$ is even and $|G| / \operatorname{ord}(\pi(x))$ is odd.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the sign of the left regular permutation $\pi(x)$ is $(-1)^{m(k-1)}$, where $k = \operatorname{ord}(\pi(x))$ and $m = |G|/k$, and characterize when it is odd.
 
 <1>1. Disjoint cycle decomposition of $\pi(x)$:

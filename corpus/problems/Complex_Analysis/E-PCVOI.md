@@ -17,7 +17,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Define
 \[
 f(z) &= {\pi^2 \over \sin^2 \qty{\pi z} } \\
@@ -32,7 +32,7 @@ d. Conclude that $f = g$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 **Part 1**:
 This is clear: $\sin^2(\pi z) = 0 \iff z = k$ for $k\in \ZZ$, and this is a pole of order 2 for $f$.
 Every $k\in \ZZ$ is visibly an order 2 pole of $g$.

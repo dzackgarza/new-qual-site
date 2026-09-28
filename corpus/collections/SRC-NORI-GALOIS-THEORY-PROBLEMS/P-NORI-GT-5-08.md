@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-5-08
 kind: problem
-title: Nori Galois theory problem 5.8
+title: Normal closure of a Kummer extension $K(a^{1/p})$ over $F$
 classification:
   areas: [algebra]
   topics: []

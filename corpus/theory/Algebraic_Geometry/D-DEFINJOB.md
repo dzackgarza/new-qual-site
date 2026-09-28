@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="injective object"}
-An object $I$ of an abelian category $\mca$ is **injective** if $\Hom(\wait, I)$ is an exact contravariant functor from $\mca$ to abelian groups.
+An object $I$ of an abelian category $\mca$ is \dfn{injective} if $\Hom(\wait, I)$ is an exact contravariant functor from $\mca$ to abelian groups.
 
 An **injective resolution** of $A$ is a complex $I^\bullet$ of injective objects with a map $A \to I^0$ such that
 \[

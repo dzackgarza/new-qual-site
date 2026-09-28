@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What are the possible images of the unit circle under a linear transformation of $\mathbb{R}^2$?
 :::
 
-::: solution
+::: {.solution}
 Let $T:\mathbb R^2\to\mathbb R^2$ have singular-value decomposition
 \[
 T=U\begin{pmatrix}\sigma_1&0\\0&\sigma_2\end{pmatrix}V^T,

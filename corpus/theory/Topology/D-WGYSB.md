@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-WGYSB
 kind: definition
-title: Uniform Continuity
+title: Uniformly continuous map
 classification:
   areas:
   - topology
@@ -14,9 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-For $f: (X, d_{x}) \to (Y, d_{Y})$ metric spaces, $f$ is **uniformly continuous** iff
-\[
-\forall \eps > 0, ~\exists \delta > 0 \text{ such that } \quad d_{X}(x_{1}, x_{2}) < \delta \implies d_{Y}(f(x_{1}), f(x_{2})) < \eps
-.\] 
+::: {.definition}
+Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces.
+A map $f\colon X\to Y$ is \dfn{uniformly continuous} if for every $\varepsilon > 0$ there exists $\delta > 0$ such that for all $x_1, x_2\in X$,
+$$
+d_X(x_1, x_2) < \delta \implies d_Y(f(x_1), f(x_2)) < \varepsilon.
+$$
 :::

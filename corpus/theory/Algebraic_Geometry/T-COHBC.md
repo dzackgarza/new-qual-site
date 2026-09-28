@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHBC
 kind: theorem
 title: Semicontinuity, constancy of $\chi$, and cohomology and base change
+slogan: 'In a flat projective family, $h^i$ only jumps up, $\chi$ does not jump, and constant fibre cohomology gives base change and local freeness.'
 classification:
   areas:
   - algebraic-geometry

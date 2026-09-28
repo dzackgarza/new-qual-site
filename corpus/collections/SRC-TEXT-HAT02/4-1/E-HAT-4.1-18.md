@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Give an example of a weak homotopy equivalence $X \to Y$ for which there does not exist a weak homotopy equivalence $Y \to X$.
+:::
 
 ::: {.solution}
 **Goal.** Exhibit a weak homotopy equivalence $X \to Y$ with no weak homotopy equivalence $Y \to X$.

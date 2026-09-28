@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be an $n\times n$ matrix with all entries equal to $0$ except for the $n-1$ entries just above the diagonal being equal to 2.
 
 a. What is the Jordan canonical form of $A$, viewed as a matrix in $M_n(\CC)$?
@@ -27,7 +27,7 @@ a. What is the Jordan canonical form of $A$, viewed as a matrix in $M_n(\CC)$?
 b. Find a nonzero matrix $P\in M_n(\CC)$ such that $P\inv A P$ is in Jordan canonical form.
 :::
 
-::: solution
+::: {.solution}
 Let $J_n(0)$ denote the nilpotent Jordan block with $1$'s on the superdiagonal. Then $A=2J_n(0)$. Since $A^{n-1}\ne0$ and $A^n=0$, its minimal polynomial is $x^n$; hence its Jordan form consists of one block, namely $J_n(0)$.
 
 For the standard basis $e_1,\ldots,e_n$, set

@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $\theset{g_n}$ is a uniformly convergent sequence of functions from $\RR$ to $\RR$ and $f:\RR\to \RR$ is uniformly continuous.
 Prove that the sequence $\theset{f\circ g_n}$ is uniformly convergent.
 :::
 
-:::{.solution}
+::: {.solution}
 Uniformly convergent means that $\norm{g_i - g_j}_{\infty} \to 0$, so $\sup_{x\in X}\abs{g_i(x)-g_j(x)} \convergesto{i, j\to\infty} 0$.
 We want to show that given $\eps$ we can find $N_0$ such that $i, j > N_0$ yields
 \[

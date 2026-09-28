@@ -24,16 +24,16 @@ audit:
 Let $P\in \operatorname{Syl}_p(G)$ where $H\trianglelefteq G$ and show that $P\cap H \in \operatorname{Syl}_p(H)$.
 :::
 
-::: solution
+::: {.solution}
 Let \(P\in\operatorname{Syl}_p(G)\) and \(H\trianglelefteq G\).
 
 <1>1. The subgroup \(P\cap H\) is a \(p\)-subgroup of \(H\).
-::: proof
+::: {.proof}
 It is a subgroup of the \(p\)-group \(P\), so its order is a power of \(p\).
 :::
 
 <1>2. Its index in \(H\) is prime to \(p\).
-::: proof
+::: {.proof}
 Since \(H\trianglelefteq G\), the product \(PH\) is a subgroup. The product formula gives
 \[
 |PH|=\frac{|P||H|}{|P\cap H|}.

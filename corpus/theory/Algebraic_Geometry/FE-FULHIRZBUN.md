@@ -30,6 +30,29 @@ sends $u_1 \mapsto 1$, $u_3 \mapsto -1$, and $u_2, u_4 \mapsto 0$, so each cone 
 The induced toric morphism $\pi : \FF_a \to \PP^1$ is the ruling, with invariant fibres $D_1$ and $D_3$ and disjoint invariant sections $D_2$ and $D_4$.
 :::
 
+::: {.example title="The four charts"}
+Let $\sigma_1 = \Cone(u_1, u_2)$, $\sigma_2 = \Cone(u_4, u_1)$, $\sigma_3 = \Cone(u_3, u_4)$ and $\sigma_4 = \Cone(u_2, u_3)$.
+Then
+\[
+U_{\sigma_1} = \Spec \CC[x, y], \quad
+U_{\sigma_2} = \Spec \CC[x, y^{-1}], \quad
+U_{\sigma_3} = \Spec \CC[x^{-1}, x^{-a}y^{-1}], \quad
+U_{\sigma_4} = \Spec \CC[x^{-1}, x^{a}y] ,
+\]
+which patch as follows:
+
+\begin{tikzcd}
+	{U_{\sigma_4}} & {(x^{-1}, x^a y)} & {(x, y)} & {U_{\sigma_1}} \\
+	{U_{\sigma_3}} & {(x^{-1}, x^{-a} y^{-1})} & {(x, y^{-1})} & {U_{\sigma_2}}
+	\arrow[leftrightarrow, from=1-2, to=1-3]
+	\arrow[leftrightarrow, from=1-2, to=2-2]
+	\arrow[leftrightarrow, from=1-3, to=2-3]
+	\arrow[leftrightarrow, from=2-2, to=2-3]
+\end{tikzcd}
+
+Setting $y = 0$ gives the patching $x \mapsto x^{-1}$ of a copy of $\PP^1$, and patching in the fibre direction, for example $U_{\sigma_1}$ with $U_{\sigma_2}$, gives a copy of $\CC \times \PP^1$; so $\FF_a$ is a $\PP^1$-bundle over $\PP^1$.
+:::
+
 ::: {.example title="The bundle"}
 \[
 \FF_a \cong \PP\big( \OO_{\PP^1} \oplus \OO_{\PP^1}(a) \big) .

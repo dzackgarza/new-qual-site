@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-22
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 22'
+title: Integral of $\frac{\log(1+t)}{1+t^2}$ over $[0,1]$
 classification:
   areas:
   - prelim

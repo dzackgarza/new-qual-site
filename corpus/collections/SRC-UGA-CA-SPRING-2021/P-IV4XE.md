@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $\xi\in \RR$, evaluate
 \[
 \int_\RR {e^{i\xi x} \over \cosh(x)} \dx
@@ -23,7 +23,7 @@ Let $\xi\in \RR$, evaluate
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note $\cosh(z) \da {1\over 2}(e^z + e^{-z})$, and
 \[
 \cosh(z) &= 0 \\

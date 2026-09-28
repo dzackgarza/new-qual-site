@@ -23,7 +23,7 @@ audit:
   note: "Used the surjective homomorphism g(a,b)↦log a with kernel N, then pulled back the subgroup Z<R to obtain a proper intermediate normal subgroup."
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 G=\left\{\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}:a,b\in\mathbb R,\ a>0\right\},\qquad
@@ -35,14 +35,14 @@ N=\left\{\begin{pmatrix}1&b\\0&1\end{pmatrix}:b\in\mathbb R\right\}.
 (b) Find a normal subgroup $N'$ with $N\subsetneq N'\subsetneq G$, or prove none exists.
 :::
 
-::: solution
+::: {.solution}
 For $a>0$ and $b\in\mathbb R$, write
 $$
 g(a,b)=\begin{pmatrix}a&b\\0&a^{-1}\end{pmatrix}.
 $$
 
 <1>1. Construct a quotient map onto the additive group $\mathbb R$.
-::: proof
+::: {.proof}
 Define
 $$
 \Phi:G\longrightarrow(\mathbb R,+),
@@ -64,7 +64,7 @@ $$
 :::
 
 <1>2. Identify the kernel and prove part (a).
-::: proof
+::: {.proof}
 We have
 $$
 \Phi(g(a,b))=0
@@ -83,7 +83,7 @@ $$
 :::
 
 <1>3. Pull back a proper nontrivial subgroup of the quotient.
-::: proof
+::: {.proof}
 Take the subgroup $\mathbb Z<\mathbb R$. Since $\mathbb R$ is abelian,
 $\mathbb Z$ is normal. Put
 $$

@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How many zeroes (counted with multiplicity) does the polynomial $$f(z) = z^7 - 2z^5 + 6z^3 - z + 1$$ have in the unit disk $\mathbb{D}$?
 :::
 
-::: solution
+::: {.solution}
 On $|z|=1$ write
 \[
 f(z)=6z^3+\bigl(z^7-2z^5-z+1\bigr).

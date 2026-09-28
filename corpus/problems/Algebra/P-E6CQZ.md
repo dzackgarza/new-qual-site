@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Consider $\SL_2(\RR)$ acting on $\RR^2$ by matrix multiplication.
 What is the stabiliser of a point?
 Does it depend which point?

@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 How can a linear ordinary differential equation with constant coefficients be solved using linear algebra?
 :::
 
-::: solution
+::: {.solution}
 Consider first a scalar equation of order $n$,
 \[
 y^{(n)}+a_{n-1}y^{(n-1)}+\cdots+a_1y'+a_0y=0.

@@ -27,7 +27,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if each of the following statements is true or false.
 If true, give a brief proof.
 If false, give a counterexample or prove your assertion.
@@ -51,9 +51,9 @@ If $f * g = 0$ in $\mathbb{R}^n$ then either $f = 0$ in $\mathbb{R}^n$ or $g = 0
 Then the second-order distributional derivative $f''$ is the zero distribution on $\mathcal{D}(\mathbb{R})$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Statement (1) is false.
-::: proof
+::: {.proof}
 Take $X=[0,1]$ with Lebesgue measure and set
 \[
 E_j=[0,1]
@@ -70,7 +70,7 @@ The missing hypothesis in the first Borel--Cantelli lemma is the summability of 
 :::
 
 <1>2. Statement (2) is true.
-::: proof
+::: {.proof}
 Continuity of $f$ at $z_0$ means that for every $\varepsilon>0$ there is $r_0>0$ such that
 \[
 |f(y)-f(z_0)|<\varepsilon
@@ -87,7 +87,7 @@ z_0\in L_f.
 :::
 
 <1>3. Statement (3) is true.
-::: proof
+::: {.proof}
 Weak convergence gives
 \[
 \langle z_k,z\rangle\to\|z\|^2.
@@ -104,7 +104,7 @@ Hence $z_k\to z$ in norm.
 :::
 
 <1>4. Statement (4) is false.
-::: proof
+::: {.proof}
 Choose nonzero functions
 \[
 \phi,\psi\in C_c^\infty(\mathbb R^n)
@@ -129,7 +129,7 @@ although neither factor is zero.
 :::
 
 <1>5. Statement (5) is false.
-::: proof
+::: {.proof}
 For $f(x)=|x|$, the first distributional derivative is
 \[
 Df=\operatorname{sgn}(x).

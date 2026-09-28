@@ -11,7 +11,7 @@ from __future__ import annotations
 
 import io
 import re
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from datetime import date
@@ -30,7 +30,8 @@ from pydantic import (
 )
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
+from .pandoc_batch import PARALLEL_WORKERS, PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
+from .tex import mark_definienda
 
 
 class Strict(BaseModel):
@@ -279,10 +280,15 @@ SourceSpec = Annotated[
 ]
 
 
-# Who did what to a problem, and when. Three events, because three separate
-# things get checked: the solution was written, the statement was checked
-# against the original source, and the solution was reviewed for correctness.
-AuditEventKind = Literal["solution-written", "source-checked", "solution-reviewed"]
+# Who did what to a problem, and when. Keep source comparison distinct from a
+# source-facing correction: checking can confirm an unchanged transcription,
+# while correcting records that the authored statement itself had to change.
+AuditEventKind = Literal[
+    "solution-written",
+    "source-checked",
+    "source-corrected",
+    "solution-reviewed",
+]
 
 
 class AuditEvent(Strict):
@@ -354,19 +360,33 @@ class DefinitionCard(CardBase):
     kind: Literal["definition"]
 
 
-class TheoremCard(CardBase):
+class ResultCardBase(CardBase):
+    slogan: str | None = None
+
+    @field_validator("slogan")
+    @classmethod
+    def _slogan_is_nonempty(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        value = value.strip()
+        if not value:
+            raise ValueError("slogan must not be empty")
+        return value
+
+
+class TheoremCard(ResultCardBase):
     kind: Literal["theorem"]
 
 
-class PropositionCard(CardBase):
+class PropositionCard(ResultCardBase):
     kind: Literal["proposition"]
 
 
-class CorollaryCard(CardBase):
+class CorollaryCard(ResultCardBase):
     kind: Literal["corollary"]
 
 
-class LemmaCard(CardBase):
+class LemmaCard(ResultCardBase):
     kind: Literal["lemma"]
 
 
@@ -390,7 +410,7 @@ class ConceptCard(CardBase):
     kind: Literal["concept"]
 
 
-class FactCard(CardBase):
+class FactCard(ResultCardBase):
     """A result stated without proof -- cited, folkloric, or assumed."""
 
     kind: Literal["fact"]
@@ -478,6 +498,113 @@ NON_SEMANTIC_CLASSES = {"foldopen"}
 # the prose repos is in one of them. Anything else is a typo or an environment
 # nobody has classified, and both must stop the build rather than become prose.
 KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES
+
+
+# A large mechanical proof-label conversion in the corpus inserted fenced-div
+# openers immediately after Lamport step lines, without the blank line Markdown
+# needs to start a block.  Pandoc consequently reads `::: {.proof}` as literal
+# paragraph text; the following bare `:::` then closes the surrounding solution,
+# which exposes the rest of that solution and destroys its proof structure.  A
+# second spelling of the same defect indents proof fences to four or eight
+# spaces to show Lamport depth, which makes them Markdown code blocks instead of
+# divs.
+#
+# Canonicalize those two spellings before the Markdown reader sees them.  This
+# is syntax only: the existing opener / closer order determines the same tree,
+# and no prose or mathematical content is moved or inferred.
+_FENCED_DIV_LINE = re.compile(r"^(?P<indent>[ \t]*)(?P<fence>:{3,})(?P<rest>.*)$")
+_LAMPORT_INDENTED_MARKER = re.compile(r"^[ \t]+<[123]>")
+
+
+@dataclass
+class _FencedDivNode:
+    start: int
+    indent: int
+    width: int
+    rest: str
+    end: int | None = None
+
+
+def _fenced_div_opening(line: str) -> tuple[int, int, str] | None:
+    """Return indentation and attributes for an authored fenced-div opener."""
+    match = _FENCED_DIV_LINE.match(line)
+    if match is None:
+        return None
+    rest = match.group("rest").strip()
+    if not rest:
+        return None
+
+    indent = len(match.group("indent").expandtabs(4))
+    return indent, len(match.group("fence")), rest
+
+
+def normalize_fenced_divs(markdown: str) -> str:
+    """Canonicalize the corpus's nested fenced-div spelling for Pandoc.
+
+    The source order is authoritative.  An opener pushes and a bare colon line
+    pops, so balancing can be checked without interpreting any mathematics.
+    Once paired, proof fences are separated from the preceding paragraph,
+    indented fence bodies are moved out of Markdown's code-block column, and
+    indented Lamport markers are likewise restored as ordinary proof steps.
+    Unbalanced source is rejected rather than guessed at.
+    """
+    lines = markdown.splitlines()
+    stack: list[_FencedDivNode] = []
+    starts: dict[int, _FencedDivNode] = {}
+    ends: dict[int, _FencedDivNode] = {}
+
+    for index, line in enumerate(lines):
+        opening = _fenced_div_opening(line)
+        if opening is not None:
+            indent, width, rest = opening
+            node = _FencedDivNode(index, indent, width, rest)
+            starts[index] = node
+            stack.append(node)
+            continue
+
+        match = _FENCED_DIV_LINE.match(line)
+        if match is not None and not match.group("rest").strip():
+            if not stack:
+                raise ValueError(f"unmatched fenced-div closer on line {index + 1}")
+            node = stack.pop()
+            node.end = index
+            ends[index] = node
+
+    if stack:
+        node = stack[-1]
+        raise ValueError(f"unclosed fenced div `{node.rest}` opened on line {node.start + 1}")
+
+    output: list[str] = []
+    active: list[_FencedDivNode] = []
+    for index, source_line in enumerate(lines):
+        if index in starts:
+            node = starts[index]
+            if output and output[-1]:
+                output.append("")
+            output.append(":" * node.width + " " + node.rest)
+            active.append(node)
+            continue
+
+        if index in ends:
+            node = ends[index]
+            output.append(":" * node.width)
+            if not active or active[-1] is not node:
+                raise ValueError(f"internal fenced-div pairing error on line {index + 1}")
+            active.pop()
+            continue
+
+        line = source_line
+        if active and active[-1].indent:
+            expanded = line.expandtabs(4)
+            indent = active[-1].indent
+            if expanded.startswith(" " * indent):
+                line = expanded[indent:]
+        if active and _LAMPORT_INDENTED_MARKER.match(line):
+            line = line.lstrip()
+        output.append(line)
+
+    suffix = "\n" if markdown.endswith("\n") else ""
+    return "\n".join(output) + suffix
 
 
 class ParsedCard(Strict):
@@ -731,8 +858,9 @@ def to_ast(markdown: str) -> str:
     the generated LaTeX holds a duplicate definition. I called it benign without
     reading it.
     """
+    normalized = mark_definienda(normalize_fenced_divs(markdown))
     with PandocServer() as pandoc:
-        result = pandoc.read_markdown([markdown], MARKDOWN)[0]
+        result = pandoc.read_markdown([normalized], MARKDOWN)[0]
     match result:
         case PandocFailure(error=error):
             raise PandocBatchError(error)
@@ -812,11 +940,38 @@ def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     return element
 
 
+class _UniqueKeyLoader(yaml.SafeLoader):
+    """A safe loader that refuses a mapping naming one key twice.
+
+    PyYAML keeps the last of two equal keys. Two writers appending to one card
+    left two `audit:` lists, one of them silently discarded, and the card
+    validated.
+    """
+
+
+def _construct_unique_map(loader: yaml.SafeLoader, node: yaml.MappingNode) -> Iterator[dict]:
+    seen: set[object] = set()
+    for key_node, _ in node.value:
+        key = loader.construct_object(key_node)
+        if key in seen:
+            raise yaml.constructor.ConstructorError(None, None, f"duplicate key {key!r}", key_node.start_mark)
+        seen.add(key)
+    yield from yaml.constructor.SafeConstructor.construct_yaml_map(loader, node)
+
+
+_UniqueKeyLoader.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, _construct_unique_map)
+
+
+def load_front_matter(text: str) -> object:
+    """Read authored YAML front matter, rejecting repeated keys."""
+    return yaml.load(text, Loader=_UniqueKeyLoader)
+
+
 def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     if not text.startswith("---\n"):
         raise ValueError(f"{path}: card must start with YAML front matter")
     _, fm, body = text.split("---\n", 2)
-    meta = yaml.safe_load(fm)
+    meta = load_front_matter(fm)
     if not isinstance(meta, dict):
         raise TypeError(f"{path}: front matter must be a mapping")
     return meta, body
@@ -841,6 +996,31 @@ class NormalizedAst:
 class AstDiagnostic:
     code: DiagnosticCode
     message: str
+
+
+@dataclass(frozen=True)
+class PreparedCardSource:
+    path: Path
+    metadata: dict
+    body: str
+
+
+@dataclass(frozen=True)
+class CardSourceDiagnostic:
+    path: Path
+    message: str
+
+
+def _prepare_card_source(path: Path) -> PreparedCardSource | CardSourceDiagnostic:
+    try:
+        meta, body = split_front_matter(path.read_text(), path)
+        return PreparedCardSource(
+            path=path,
+            metadata=meta,
+            body=mark_definienda(normalize_fenced_divs(body)),
+        )
+    except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
+        return CardSourceDiagnostic(path=path, message=str(exc))
 
 
 def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
@@ -901,13 +1081,20 @@ def parse_cards_with(
     adapter: TypeAdapter[Card] = TypeAdapter(Card)
     prepared: list[tuple[Path, Card, str]] = []
     errors: list[Diagnostic] = []
-    for path in paths:
+    if len(paths) >= 1_000:
+        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
+            source_results = list(executor.map(_prepare_card_source, paths, chunksize=64))
+    else:
+        source_results = [_prepare_card_source(path) for path in paths]
+    for source in source_results:
+        if isinstance(source, CardSourceDiagnostic):
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), source.message))
+            continue
         try:
-            meta, body = split_front_matter(path.read_text(), path)
-            card: Card = adapter.validate_python(meta)
-            prepared.append((path, card, body))
-        except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
-            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
+            card: Card = adapter.validate_python(source.metadata)
+            prepared.append((source.path, card, source.body))
+        except (TypeError, ValueError) as exc:
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(source.path), str(exc)))
 
     bodies = [normalize_fenced_div_boundaries(body) for _, _, body in prepared]
     results = read_markdown_parallel(bodies, MARKDOWN) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN)
@@ -927,7 +1114,7 @@ def parse_cards_with(
 
     sources = [source for _, _, source in processable]
     if len(sources) >= 1_000:
-        with ProcessPoolExecutor(max_workers=4) as executor:
+        with ProcessPoolExecutor(max_workers=PARALLEL_WORKERS) as executor:
             normalized = list(executor.map(_normalize_ast, sources, chunksize=64))
     else:
         normalized = [_normalize_ast(source) for source in sources]

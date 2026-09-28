@@ -23,12 +23,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If $f \in L^1([0,1])$ and $\int_0^1 x^{2n} f(x)\,dx = \frac{1}{2n+2}$ for all $n = 0, 1, 2, \ldots$, is $f(x) = x$ a.e.?
 :::
 
 
-::: solution
+::: {.solution}
 Yes. Set
 \[
 h(x):=f(x)-x.

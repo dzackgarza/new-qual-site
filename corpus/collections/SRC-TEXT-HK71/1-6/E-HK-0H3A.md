@@ -28,7 +28,7 @@ An $n \times n$ matrix A is called upper-triangular if $A_{ij} = 0$ for i > j, t
 :::
 
 
-::: solution
+::: {.solution}
 For an upper-triangular matrix,
 \[
 \det A=A_{11}A_{22}\cdots A_{nn}.

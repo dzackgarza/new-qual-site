@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be the space obtained by gluing the boundary of a disc to the curve in the torus shown.
 Compute the second homotopy group $\pi_2(X)$.
 :::
@@ -48,7 +48,7 @@ $$
 0&0
 \end{pmatrix},
 \qquad
-\partial_1=egin{pmatrix}0&t-1\end{pmatrix}.
+\partial_1=\begin{pmatrix}0&t-1\end{pmatrix}.
 $$
 ::: {.proof}
 Use the presentation complex for

@@ -23,7 +23,9 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that a linear projection of a 2-simplex onto one of its edges is a fibration but not a fiber bundle.
+:::
 
 ::: {.solution}
 Choose affine coordinates in which the simplex is

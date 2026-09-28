@@ -25,7 +25,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Suppose that $f:[0,1]\to\mathbb R$ is differentiable, $f(0)=0$, and there is $k>0$ such that
 \[
 |f'(x)|\le k|f(x)|
@@ -34,9 +34,9 @@ Suppose that $f:[0,1]\to\mathbb R$ is differentiable, $f(0)=0$, and there is $k>
 Prove that $f(x)=0$ for all $x\in[0,1]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Obtain an integral inequality.
-::: proof
+::: {.proof}
 Since $f$ is continuous on $[0,1]$, let
 \[
 M:=\max_{[0,1]}|f|<\infty.
@@ -51,7 +51,7 @@ The derivative bound gives $|f'|\le kM$, so $f$ is Lipschitz and hence absolutel
 :::
 
 <1>2. Iterate the inequality.
-::: proof
+::: {.proof}
 We claim that for every integer $n\ge1$,
 \[
 |f(x)|\le M\frac{(kx)^n}{n!}
@@ -71,7 +71,7 @@ Thus the claim follows by induction.
 :::
 
 <1>3. Let the iteration order tend to infinity.
-::: proof
+::: {.proof}
 For each fixed $x\in[0,1]$,
 \[
 0\le |f(x)|\le M\frac{(kx)^n}{n!}\longrightarrow0

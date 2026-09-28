@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $J \normal k[x_1, \cdots, x_n]$ be an ideal, and find a counterexample to $I(V(J)) =\sqrt{J}$ when $k$ is not algebraically closed.
 :::
 
-::: solution
+::: {.solution}
 Take $J = \gens{x^2+1} \normal \RR[x]$, noting that $J$ is nontrivial and proper but $\RR$ is not algebraically closed.
 Then $V(J) \subseteq \RR$ is empty, so $I(V(J)) = I(\emptyset)$.
 

@@ -16,8 +16,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that if $M$ is a manifold of dimension $2n$ for which there exists a fiber bundle $S^1 \to S^{2n+1} \to M$, then $M$ is simply-connected and $H^*(M; \mathbb{Z}) \approx H^*(\mathbb{CP}^n; \mathbb{Z})$ as rings.
 Conversely, if $M$ is simply-connected and $H^*(M; \mathbb{Z}) \approx H^*(\mathbb{CP}^n; \mathbb{Z})$ as rings, show there is a bundle $S^1 \to E \to M$ where $E \simeq S^{2n+1}$.
+:::
 
 ::: {.solution}
 **Goal.** Prove the two directions relating a circle bundle $S^1 \to S^{2n+1} \to M$ to the cohomology ring of $\CP^n$.

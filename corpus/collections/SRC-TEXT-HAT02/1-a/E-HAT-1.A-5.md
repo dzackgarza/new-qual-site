@@ -25,9 +25,10 @@ audit:
   note: Used the countable rose with right-shift and left-shift maps, giving a literal split epimorphism on the space and nonisomorphic induced free-group endomorphisms.
 ---
 
+::: {.problem}
 Construct a connected graph $X$ and maps $f, g: X \to X$ such that $fg = \mathbb{1}$ but $f$ and $g$ do not induce isomorphisms on $\pi_1$.
 [Note that $f_*g_* = \mathbb{1}$ implies that $f_*$ is surjective and $g_*$ is injective.]
-
+:::
 
 ::: {.solution}
 Let

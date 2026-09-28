@@ -28,7 +28,6 @@ source:
     year: 2007
 ---
 
-::: remark
-UGA prelim Fall 2007. The list follows the order on that paper.
-The paper is dated August 10, 2007 (7 problems).
+::: {.remark}
+The paper is dated August 10, 2007, and has seven problems.
 :::

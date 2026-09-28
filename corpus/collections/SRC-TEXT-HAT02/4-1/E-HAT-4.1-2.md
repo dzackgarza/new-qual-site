@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Show that if $\varphi: X \to Y$ is a homotopy equivalence, then the induced homomorphisms $\varphi_*: \pi_n(X, x_0) \to \pi_n(Y, \varphi(x_0))$ are isomorphisms for all $n$.
+:::
 
 ::: {.solution}
 Let \(\varphi:X\to Y\) be a homotopy equivalence, with homotopy inverse \(\psi:Y\to X\). Choose a path \(\eta\) from \(x_0\) to \(\psi\varphi(x_0)\) supplied by the homotopy \(\psi\varphi\simeq\operatorname{id}_X\). Naturality of homotopy groups under a homotopy gives

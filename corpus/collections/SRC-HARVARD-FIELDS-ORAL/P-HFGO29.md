@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 If $F(a)/F$ is a finite field extension, prove that $a$ is algebraic over $F$.
 :::
 

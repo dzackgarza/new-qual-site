@@ -32,7 +32,7 @@ Then $m$ and $n$ are uniquely determined by $G$.
 (c) Prove the theorem.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the orders $m$ and $n$ of the cyclic factors in the free product $G = (\mathbb{Z}/m\mathbb{Z}) * (\mathbb{Z}/n\mathbb{Z})$ are uniquely determined by the isomorphism class of $G$.
 
 <1>1. Part (a): Order of the abelianization $G/[G, G]$.

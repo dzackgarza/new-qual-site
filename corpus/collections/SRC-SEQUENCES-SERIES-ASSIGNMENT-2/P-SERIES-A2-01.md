@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-01
 kind: problem
-title: Sequences and series Assignment 2, problem 1
+title: Subadditivity of $\limsup$
 classification:
   areas:
   - real-analysis

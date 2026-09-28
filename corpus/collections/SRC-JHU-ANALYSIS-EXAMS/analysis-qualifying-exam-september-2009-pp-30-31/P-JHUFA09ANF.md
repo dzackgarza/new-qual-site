@@ -25,7 +25,7 @@ audit:
   note: "Located all zeros of sine, distinguished tan's removable quotient points from the genuine poles at plus or minus pi, and proved both inequalities for the Taylor radius."
 ---
 
-::: problem
+::: {.problem}
 For $0<|z|<\pi/2$, let
 
 $$
@@ -37,19 +37,21 @@ a) Prove that f has a removable singularity at 0.
 b) What is the radius of convergence of the power series for f centered at 0? Justify your answer.
 :::
 
-::: solution
-The extension has value $f(0)=1$, and its Taylor series
-at zero has radius exactly $\boxed{\pi}$.
+::: {.solution}
+The extension has value $f(0)=1$.
 
 <1>1. The quotient extends holomorphically throughout $|z|<\pi$.
 
-::: proof
+::: {.proof}
 Where the original quotient is defined,
 $$
 f(z)=\frac{z\cos z}{\sin z}.
 $$
 The function $s(z)=\sin z/z$ extends holomorphically to
-zero with value one by the sine power series [@SS03].
+zero with value one, since
+$$
+s(z)=1-\frac{z^2}{3!}+\frac{z^4}{5!}-\cdots.
+$$
 Moreover, the exponential formula for sine gives
 $\sin z=0$ exactly when $e^{2iz}=1$. Writing $z=x+iy$,
 the modulus of this equation forces $y=0$; its argument
@@ -61,14 +63,14 @@ F(z)=\frac{\cos z}{s(z)}
 $$
 is therefore holomorphic on this whole disk, agrees
 with $f$ near zero, and has $F(0)=1$. This proves (a).
-The Taylor theorem for holomorphic functions gives
-convergence of its Taylor series throughout $|z|<\pi$
-[@SS03], so the radius is at least $\pi$.
+By [[T-SRY2V|holomorphic implies analytic]], the Taylor
+series of $F$ at zero converges throughout every closed
+subdisc of $|z|<\pi$, so its radius is at least $\pi$.
 :::
 
-<1>2. The genuine pole at $\pi$ prevents a larger Taylor disk.
+<1>2. The Taylor radius at zero is $\boxed{\pi}$.
 
-::: proof
+::: {.proof}
 At $z=\pi$, the denominator $\sin z$ has a simple zero,
 since $\cos\pi=-1\ne0$, whereas $z\cos z=-\pi\ne0$.
 In particular,
@@ -87,5 +89,10 @@ this Taylor series: the expression $z\cos z/\sin z$
 is holomorphic and zero at those points. They are only
 missing points of the unsimplified quotient, not poles
 of the holomorphic germ's continuation.
+:::
+
+<1>3. Q.E.D.
+::: {.proof}
+Step <1>1 proves removability at zero, and step <1>2 proves that the Taylor radius is $\pi$.
 :::
 :::

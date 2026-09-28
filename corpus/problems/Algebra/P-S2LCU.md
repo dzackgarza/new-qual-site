@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $L/K$ be a finite separable field extension.
 Prove that $L/K$ is normal if and only if $L$ is the splitting field of some separable polynomial $p(x) \in K[x]$.
 :::
 
-::: solution
+::: {.solution}
 Suppose first that $L/K$ is normal. Since the extension is finite and separable, the primitive element theorem gives
 \[
 L=K(\alpha)

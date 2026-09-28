@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 10. $\displaystyle \int \sqrt {4-x} ~dx = \color{blue} {- \frac {2}{3}(4-x)^{\frac {3}{2}}}$
 
 - **Solution:** $u = 4 - x$, $du = - ~dx$

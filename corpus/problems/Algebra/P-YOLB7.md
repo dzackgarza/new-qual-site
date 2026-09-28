@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and prove the Cayley–Hamilton Theorem for an $n \times n$ matrix $A$ over a commutative ring $R$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 p(t)=\det(tI-A)=t^n+c_{n-1}t^{n-1}+\cdots+c_0.

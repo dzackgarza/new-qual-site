@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) Consider any Hermitian $A \in M_n$ with eigenvalues ordered so that $\lambda_n(A) \le \cdots \le \lambda_2(A) \le \lambda_1(A)$.
@@ -26,7 +26,7 @@ Prove that
 Prove that for all $1 \le p \le \infty$ the $p$-norm of $D$ is given by $\|D\|_p = \max_{1 \le i \le n} |d_i|$.
 :::
 
-::: solution
+::: {.solution}
 (a) Since $A$ is Hermitian, there is an orthonormal basis $u_1,\ldots,u_n$ of eigenvectors with
 \[
 Au_i=\lambda_i u_i.

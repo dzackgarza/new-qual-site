@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Construct a connected two dimensional CW complex $X$ with fundamental group with the presentation:
 $$
 \pi_1(X) = \langle a, b \mid a^2 = b^3 \rangle.

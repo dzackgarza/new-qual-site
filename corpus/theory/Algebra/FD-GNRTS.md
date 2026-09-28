@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-GNRTS
 kind: definition
-title: Noetherian Module
+title: Noetherian module
 prompts:
 - What does it mean for a module to be Noetherian?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-Any strictly increasing chain of submodules $M_1 \subsetneq M_2 \cdots$ is finite.
+Let $R$ be a [[D-GURUB|ring]].
+An $R$-module $M$ is \dfn{Noetherian} if there is no infinite strictly increasing sequence $M_1 \subsetneq M_2 \subsetneq \cdots$ of submodules of $M$.
 :::

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 How many monic irreducible polynomials over $\FF_p$ of prime degree $\ell$ are there?
 Justify your answer.
 :::
@@ -75,5 +75,4 @@ Conversely, every element of degree $\ell$ has a unique monic minimal polynomial
 \[
 \boxed{\frac{p^\ell-p}{\ell}}.
 \]
-:::
 :::

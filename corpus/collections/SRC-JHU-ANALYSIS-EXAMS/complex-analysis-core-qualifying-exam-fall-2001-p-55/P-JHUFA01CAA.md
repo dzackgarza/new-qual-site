@@ -24,13 +24,14 @@ audit:
   note: "Used meromorphicity at infinity to confine finite poles to a compact disk, subtracted their finite principal parts, and showed the remaining entire function is a polynomial or constant according to the behavior at infinity."
 ---
 
+::: {.problem}
 Problem 1. A meromorphic function on $\mathbb { C } \cup \{ \infty \}$ is a meromorphic function $f ( z )$ on C such that $g ( z ) = f ( 1 / z )$ is also meromorphic.
 Show that a meromorphic function on $\mathbb { C } \cup \{ \infty \}$ must be rational, i.e. one can express it as the quotient of two polynomials.
+:::
 
-
-::: solution
+::: {.solution}
 <1>1. There are only finitely many finite poles.
-::: proof
+::: {.proof}
 By hypothesis $g(w)=f(1/w)$ is meromorphic near $w=0$. Hence for some
 $R>0$, the function $f$ is holomorphic on $|z|>R$ except possibly for the
 behavior corresponding to $w=0$ itself. Thus every finite pole of $f$ lies in
@@ -43,7 +44,7 @@ $a_1,\dots,a_m$ for some finite $m$.
 :::
 
 <1>2. Subtracting all finite principal parts leaves an entire function with at most polynomial growth.
-::: proof
+::: {.proof}
 At each pole $a_j$, let
 $$
 P_j(z)=\sum_{k=1}^{N_j}\frac{c_{jk}}{(z-a_j)^k}
@@ -64,7 +65,7 @@ growth.
 :::
 
 <1>3. The entire remainder is a polynomial, so $f$ is rational.
-::: proof
+::: {.proof}
 Write
 $$
 h(z)=\sum_{n=0}^\infty b_nz^n.

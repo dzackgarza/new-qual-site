@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field with $729$ elements.
 Let $\mathbb{F}_3$ be the prime field of $K$ and set $G = \operatorname{Gal}(K/\mathbb{F}_3)$.
 Consider the action of $G$ on $K$ given by $\sigma \cdot u = \sigma(u)$.

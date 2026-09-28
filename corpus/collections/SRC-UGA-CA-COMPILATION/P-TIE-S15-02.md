@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-02
 kind: problem
-title: Questions from Tie — Spring 2015, question 2
+title: Locally uniform convergence of analytic functions via $L^1$ convergence on circles
 classification:
   areas:
   - complex-analysis

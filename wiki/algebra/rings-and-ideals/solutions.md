@@ -2,7 +2,7 @@
 order: 90
 ---
 
-# Solutions (Rings)
+# Solutions (rings)
 
 ## Fields
 
@@ -14,15 +14,15 @@ order: 90
 
 [Algebra homework 11 (Clay Shonkwiler)](attachments/603_11.pdf)
 
-- Week 6: Commutative algebra (3/8)
+## Commutative algebra
 
-  - [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), collected together in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
+- [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), also collected in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
 
-  - Extra problems for practice: 2015 Spring M5
+- [Hints and solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf) to those problems.
 
-  - [Hints/Solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
+- Additional problem: 2015 Spring M5.
 
-## Galois Theory
+## Galois theory
 
 [Algebra homework 11 solutions](attachments/Algebra_HW_11_Solns.pdf)
 

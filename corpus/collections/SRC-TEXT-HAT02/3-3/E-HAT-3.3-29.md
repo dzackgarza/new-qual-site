@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Use the preceding problem to show that if the closed orientable surface $M_g$ of genus $g$ retracts onto a graph $X \subset M_g$, then $H_1(X)$ has rank at most $g$.
 Deduce an alternative proof of Exercise 13 from this, and construct a retraction of $M_g$ onto a wedge sum of $k$ circles for each $k \leq g$.
+:::
 
 ::: {.solution}
 Suppose $r:M_g\to X$ is a retraction onto a graph $X\subset M_g$, with inclusion $i:X\hookrightarrow M_g$. Then

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: FF-QOQ2K
 kind: fact
-title: '$H_* K$: $[\mathbb{Z}, \mathbb{Z} \times \mathbb{Z}_2, 0, 0, 0, 0\rightarrow ]$'
+title: Homology of the Klein bottle
+slogan: 'The Klein bottle has $H_0=\ZZ$, $H_1=\ZZ\oplus\ZZ/2$, and no higher integral homology.'
 prompts:
 - What is the homology of the Klein bottle, degree by degree?
 classification:
@@ -16,5 +17,13 @@ review: draft
 ---
 
 ::: {.fact}
-$$[\mathbb{Z}, \mathbb{Z} \times \mathbb{Z}_2,             0,    0,      0,    0\rightarrow  ]$$
+The integral homology groups of the Klein bottle $K$ are
+$$
+H_k(K;\ZZ) \cong \begin{cases}
+\ZZ & k = 0,\\
+\ZZ\oplus\ZZ/2 & k = 1,\\
+0 & \text{otherwise}
+\end{cases}
+$$
+[@Hat02].
 :::

@@ -24,7 +24,7 @@ $$
 use elementary row operations to discover whether it is invertible, and to find the inverse in case it is.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Apply Gauss-Jordan elimination to augmented matrices $[M \mid I_3]$ to determine invertibility and compute matrix inverses.
 
 <1>1. Analysis of Matrix $A = \begin{bmatrix} 2 & 5 & -1 \\ 4 & -1 & 2 \\ 6 & 4 & 1 \end{bmatrix}$:

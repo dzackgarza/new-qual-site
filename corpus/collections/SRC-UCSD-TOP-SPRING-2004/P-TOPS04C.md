@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathbb{K} = \mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$.
 Show that for $n \geq 1$ the Hopf fibrations
 $$

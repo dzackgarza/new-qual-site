@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TATE85-PI-09
 kind: problem
-title: "Tate Algebra 250(a), Examples of prime ideals, problem 9"
+title: Maximal ideals of $C(E)$ for a compact Hausdorff space $E$
 classification:
   areas:
   - algebra

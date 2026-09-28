@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic and assume $f(z) \neq 0$ for $z \neq 0$.
 For $0 \leq r < 1$, let $M(r) = \max_{|z|=r} |f(z)|$.
 
@@ -28,7 +28,7 @@ For $0 \leq r < 1$, let $M(r) = \max_{|z|=r} |f(z)|$.
 (iv) Show that equality holds if and only if $f(z) = az^n$ for some $a \in \mathbb{C}$ and some integer $n \geq 0$.
 :::
 
-::: solution
+::: {.solution}
 (i) On $\mathbb D\setminus\{0\}$ the function $f$ has no zeros, so
 $\log|f|$ is harmonic there. Since $\log|z|$ is also harmonic on the punctured
 disk,

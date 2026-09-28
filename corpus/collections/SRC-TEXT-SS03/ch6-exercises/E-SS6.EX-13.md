@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 13. Prove that
 
 $$
@@ -26,7 +26,7 @@ whenever s is a positive number.
 Show that if the left-hand side is interpreted as $( \Gamma ^ { \prime } / \Gamma ) ^ { \prime }$ , then the above formula also holds for all complex numbers s with $s \neq 0 , - 1 , - 2 , . . .$
 :::
 
-::: solution
+::: {.solution}
 Start from the Weierstrass product
 \[
 \frac1{\Gamma(s)}=s e^{\gamma s}\prod_{n=1}^{\infty}\left(1+\frac{s}{n}\right)e^{-s/n}.

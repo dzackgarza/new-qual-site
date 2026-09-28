@@ -34,7 +34,7 @@ For which $X$ does there exist a scalar $c$ such that $AX = cX$ ?
 :::
 
 
-::: solution
+::: {.solution}
 Let $X=(x_1,x_2,x_3)^t$. If $X=0$, then $AX=cX$ for every scalar $c$.
 Assume $X\ne0$. The equation $AX=cX$ is
 \[

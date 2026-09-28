@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let
 $$
 f_n(x) = \frac{x}{1 + x^n}, \quad x \ge 0.
@@ -28,7 +28,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the pointwise limit function in (a), disprove uniform convergence via discontinuity, and evaluate the integral limit in (b) via the Dominated Convergence Theorem.
 
 <1>1. Part (a): Pointwise convergence of $(f_n)$.

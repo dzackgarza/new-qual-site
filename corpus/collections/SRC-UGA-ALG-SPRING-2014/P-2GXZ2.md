@@ -15,10 +15,12 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $R$ be a commutative ring and $a\in R$.
 Prove that $a$ is not nilpotent $\iff$ there exists a commutative ring $S$ and a ring homomorphism $\phi: R\to S$ such that $\phi(a)$ is a unit.
 
 > Note: by definition, $a$ is nilpotent $\iff$ there is a natural number $n$ such that $a^n = 0$.
+:::
 
 ::: {.solution}
 $\not A\implies \not B$:

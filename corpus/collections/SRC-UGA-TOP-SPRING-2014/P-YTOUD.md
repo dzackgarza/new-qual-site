@@ -26,7 +26,7 @@ audit:
   note: Verified the normalized straight-line homotopy from a fixed-point-free map to the antipodal map and the nonvanishing of its denominator.
 ---
 
-::: problem
+::: {.problem}
 Show that a map $S^n \to S^n$ has a fixed point unless its degree is equal to the degree of the antipodal map $a : x \to -x$.
 :::
 

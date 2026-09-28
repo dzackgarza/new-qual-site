@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group and let $\gamma: G \to \operatorname{Aut}(G)$ be the conjugation homomorphism defined by $\gamma(g) = c_g$, where $c_g(h) = g h g^{-1}$ for all $h \in G$.
 Show that the kernel of $\gamma$ is the center of $G$:
 $$\ker(\gamma) = Z(G).$$
 :::
 
-::: solution
+::: {.solution}
 For $g\in G$,
 \[
 g\in\ker\gamma

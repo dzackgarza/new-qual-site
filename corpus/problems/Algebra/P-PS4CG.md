@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $p^2q$, where $p$ and $q$ are primes. Show that $G$ has a normal Sylow subgroup.
 :::
 

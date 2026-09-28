@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $I$ and $J$ be ideals in $k[x_1,\ldots,x_n]$ where $k$ is a field.
 
 (i) Prove $I\cap J=(tI+(1-t)J)\cap k[x_1,\ldots,x_n]$.

@@ -24,7 +24,7 @@ audit:
   note: Proved atomicity by ACC on principal ideals, integral closure of UFDs by a coprime denominator argument, and non-UFD Noetherianity of Z[sqrt(-5)] using the multiplicative norm.
 ---
 
-::: problem
+::: {.problem}
 (a) Show that a commutative Noetherian domain $R$ has the following property: given any nonzero, nonunit $x \in R$ one has $x = z_1 z_2 \cdots z_m$ for some irreducible elements $z_i \in R$.
 
 (b) Prove that any UFD is integrally closed in its field of fractions.

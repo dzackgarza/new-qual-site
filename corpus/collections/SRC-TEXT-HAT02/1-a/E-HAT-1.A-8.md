@@ -18,8 +18,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Show that a finitely generated group has only a finite number of subgroups of a given finite index.
 [First do the case of free groups, using covering spaces of graphs. The general case then follows since every group is a quotient group of a free group.]
+:::
 
 ::: {.solution}
 <1>1. Let $F$ be a free group of rank $r$, realized as $\pi_1$ of a wedge of $r$ circles (a finite graph $\Gamma$).

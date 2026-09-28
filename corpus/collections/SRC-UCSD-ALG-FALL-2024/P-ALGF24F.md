@@ -25,7 +25,7 @@ audit:
   note: Verified that Frobenius supplies p distinct roots of the minimal polynomial, forcing its degree to be p; the argument includes p=2.
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a prime.
 Prove that $x^p - x + 1$ is irreducible in $\mathbb{F}_p[x]$.
 :::

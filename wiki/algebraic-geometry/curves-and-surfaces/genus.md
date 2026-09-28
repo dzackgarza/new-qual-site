@@ -9,19 +9,19 @@ topics:
 
 # Genus
 
-The questions that land on this page are which genus, computed how, and whether it changes under a map.
+Several notions of genus coexist, and the main task is to identify which one is being computed and how it behaves under singularities and normalization.
 
 [[D-G1AEH]]
 
-The three senses are asked separately and compared: arithmetic from the Hilbert polynomial, geometric from the normalization, topological from the smooth model over $\CC$.
+The three senses are arithmetic genus from the Hilbert polynomial, geometric genus from the normalization, and topological genus from the smooth model over $\CC$.
 They agree for a smooth curve and differ by a sum of local terms otherwise, which is the whole answer to what the geometric genus of a singular curve might be.
 
 Neither genus depends on the embedding; the degree does.
-Stating that contrast is the answer to the embedding follow-up, and the twisted cubic against a line in $\PP^3$ is the example that makes it concrete.
+The twisted cubic and a line in $\PP^3$ make the contrast concrete.
 
 ## Computing one
 
-Three routes give the genus of a plane curve:
+Three standard computations are:
 
 - **plane curve of degree $d$**: $p_a = \binom{d-1}{2}$, then subtract $\delta_p$ at each singularity;
 
@@ -31,9 +31,14 @@ Three routes give the genus of a plane curve:
 
 [[T-LKT0U]]
 
-The Riemann--Hurwitz proof is the cotangent sequence and nothing more, which is why the questions preceding it in the bank ask about the map on differentials and whether the sequence is short exact.
-Those questions are the proof, split into its steps.
+The Riemann--Hurwitz proof is built from the cotangent sequence, the map on differentials, and the resulting ramification divisor.
 
 ## The small genera
 
 [[PR-VGA2L]]
+
+## Twisted forms of the line
+
+[[D-VARSEVBRAUER]]
+
+[[P-AGXMISCTSENPONEBUNDLE]]

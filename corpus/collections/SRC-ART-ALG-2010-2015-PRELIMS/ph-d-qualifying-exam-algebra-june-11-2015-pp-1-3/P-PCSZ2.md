@@ -34,7 +34,7 @@ b. The identity function gives a bijection of sets $J \rtimes_\varphi L \to J \t
 Prove that this function is a group isomorphism if and only if $\varphi$ is the trivial homomorphism sending everything to the identity.
 :::
 
-::: solution
+::: {.solution}
 Write $\varphi_\ell=\varphi(\ell)\in\operatorname{Aut}(J)$ for
 $\ell\in L$.
 
@@ -44,7 +44,7 @@ $$
 \bigl(j\varphi_\ell(j'),\ell\ell'\bigr).
 $$
 
-::: proof
+::: {.proof}
 For three pairs, multiplying the first two and then the third gives
 $$
 \bigl(j\varphi_\ell(j')\varphi_{\ell\ell'}(j''),
@@ -76,7 +76,7 @@ Both second coordinates are $1_L$. This verifies all group axioms.
 from this semidirect product to the direct product if and only if
 $\varphi$ is trivial.
 
-::: proof
+::: {.proof}
 If every $\varphi_\ell$ is the identity on $J$, the multiplication
 in step <1>1 becomes $(j,\ell)*(j',\ell')=(jj',\ell\ell')$,
 the direct-product multiplication. The identity function is then

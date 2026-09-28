@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-080
 kind: problem
-title: Kent State ring-theory qualifying problem 80
+title: $\mathbb Z[\sqrt p]$ is not a UFD when $p=b^2+4$
 classification:
   areas: [algebra]
   topics: []

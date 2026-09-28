@@ -14,14 +14,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. Let $\varphi: \mcf \to \mcg$ be a morphism of presheaves such that $\varphi(U): \mcf(U) \to \mcg(U)$ is injective for each $U$.
 Show that the induced map $\varphi^{+}: \mcf^{+} \to \mcg^{+}$ of associated sheaves is injective.
 
 b. Use part (a) to show that if $\varphi: \mcf \to \mcg$ is a morphism of sheaves, then $\im \varphi$ can be naturally identified with a subsheaf of $\mcg$.
 :::
 
-::: solution
+::: {.solution}
 **Part a.** A stalk is a filtered colimit of the groups of sections, and a filtered colimit of injections of abelian groups is injective.
 So if $\phi(U)$ is injective for every $U$, then $\phi_P$ is injective for every $P$.
 Sheafification does not change stalks, so $(\phi^+)_P = \phi_P$ is injective for every $P$, and by the stalkwise criterion for injectivity of a morphism of sheaves, $\phi^+$ is injective.

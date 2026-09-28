@@ -26,7 +26,7 @@ audit:
   note: "Checked that the induction works over arbitrary fields, including inseparable polynomials and repeated roots, using only adjoining a root and the tower law."
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field and $g(x) \in F[x]$ have degree $n > 0$.
 
 a. Define "$E$ is a splitting field for $g(x)$ over $F$."
@@ -34,7 +34,7 @@ a. Define "$E$ is a splitting field for $g(x)$ over $F$."
 b. Prove, without using the Fundamental Theorem of Galois Theory, that if $E$ is a splitting field for $g(x)$ over $F$ then $[E : F] \le n!$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. A splitting field of $g$ over $F$ is an extension $E/F$ such that
 $$
 g(x)=a\prod_{i=1}^{n}(x-\alpha_i)
@@ -48,7 +48,7 @@ containing all the roots does not make an extension a splitting field.
 of degree at most $n!$ over that field; in particular the given $E$
 satisfies $[E:F]\leq n!$.
 
-::: proof
+::: {.proof}
 We prove the degree bound for every splitting field by induction on
 $n$, uniformly over all coefficient fields. Existence follows by
 successively adjoining roots, using a quotient by an irreducible factor

@@ -26,6 +26,7 @@ audit:
   note: Complete Mayer--Vietoris/algebraic proof checked.
 ---
 
+::: {.problem}
 (a) Show that a chain complex of free abelian groups $C_n$ splits as a direct sum of subcomplexes $0 \to L_{n+1} \to K_n \to 0$ with at most two nonzero terms.
 [Show the short exact sequence $0 \to \ker\partial \to C_n \to \operatorname{Im}\partial \to 0$ splits and take $K_n = \ker\partial$.]
 
@@ -39,6 +40,7 @@ audit:
 - a copy of $G/mG$ for each $\mathbb{Z}_m$ summand of $H_n(X)$
 
 - a copy of the kernel of $G \xrightarrow{m} G$ for each $\mathbb{Z}_m$ summand of $H_{n-1}(X)$
+:::
 
 ::: {.solution}
 Let

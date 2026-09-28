@@ -24,7 +24,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Consider the $\ZZ\dash$submodule $N$ of $\ZZ^3$ spanned by
 \[
 f_1 &= [-1, 0, 1], \\

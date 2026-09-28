@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition}
-A surface $X$ is **ruled** over a curve $C$ if it is birational to $C \times \PP^1$; it is **geometrically ruled** if there is a morphism $X \to C$ whose every fibre is $\PP^1$, equivalently $X = \PP(\mathcal{E})$ for a rank-two bundle $\mathcal{E}$ on $C$.
+A surface $X$ is \dfn{ruled} over a curve $C$ if it is birational to $C \times \PP^1$; it is **geometrically ruled** if there is a morphism $X \to C$ whose every fibre is $\PP^1$, equivalently $X = \PP(\mathcal{E})$ for a rank-two bundle $\mathcal{E}$ on $C$.
 $X$ is **rational** if it is birational to $\PP^2$.
 :::
 
@@ -38,7 +38,7 @@ A surface over $\CC$ is rational if and only if $q = 0$ and $P_2 = h^0(2K) = 0$.
 ::: {.remark}
 $\FF_1$ is not minimal precisely because its negative section is a $(-1)$-curve, which contracts back to $\PP^2$; that is the concrete reason the minimal model of a rational surface is not unique.
 
-The rationality criterion is worth stating carefully, because the naive guess — $p_g = q = 0$ — is false: the Enriques surfaces have $p_g = q = 0$ and are not rational, and $P_2 = 1$ detects them.
+The conditions $p_g=q=0$ do not imply rationality: Enriques surfaces satisfy them but have $P_2=1$, while Castelnuovo's criterion requires $q=P_2=0$.
 
 Ruled surfaces and rational surfaces are the $\kappa = -\infty$ part of the classification, and the invariant that identifies them is the vanishing of all plurigenera.
 :::

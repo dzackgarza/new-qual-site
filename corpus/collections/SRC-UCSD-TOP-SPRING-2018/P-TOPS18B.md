@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S^2$ be the standard unit sphere, and let $R_\theta : S^2 \to S^2$ be the operation of rotation through angle $\theta$ anticlockwise about the $z$-axis.
 Let $M$ be the closed $4$-manifold obtained by gluing together two copies $A_1, A_2$ of $B^2 \times S^2$ along their common boundary $S^1 \times S^2$; specifically, identify
 $$

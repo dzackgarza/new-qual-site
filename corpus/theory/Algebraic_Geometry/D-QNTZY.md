@@ -18,15 +18,42 @@ prompts:
 - What is a quasicoherent sheaf?
 - What does coherent add?
 - How do you check quasicoherence?
+- What is a coherent module over an arbitrary ring, and how is it related to finite presentation?
+- Give an $\OO_X$-module that is not quasicoherent.
 ---
 
 ::: {.definition title="Quasicoherent"}
 For an $A$-module $M$, let $\tilde{M}$ be the sheaf on $\Spec A$ with $\tilde{M}(D_f) = M_f$.
-An $\OO_X$-module $\mcf$ is **quasicoherent** if $X$ has an affine cover on which $\mcf$ is of the form $\tilde{M}$, and **coherent** if in addition each $M$ is finitely generated (over a Noetherian $X$).
+An $\OO_X$-module $\mcf$ is \dfn{quasicoherent} if $X$ has a cover by affine opens $U_i = \Spec A_i$ with $\mcf|_{U_i} \cong \tilde{M_i}$ for $A_i$-modules $M_i$.
+:::
+
+::: {.definition title="Coherent module"}
+Let $A$ be a ring.
+An $A$-module $M$ is \dfn{coherent} if it is finitely generated and for every $n \geq 0$ and every $A$-linear map $\varphi \colon A^n \to M$, not necessarily surjective, the kernel of $\varphi$ is finitely generated.
+:::
+
+::: {.definition title="Coherent sheaf"}
+An $\OO_X$-module $\mcf$ is \dfn{coherent} if $X$ has a cover by affine opens $U_i = \Spec A_i$ with $\mcf|_{U_i} \cong \tilde{M_i}$ for coherent $A_i$-modules $M_i$.
+:::
+
+::: {.proposition}
+For an $A$-module $M$: coherent $\implies$ finitely presented $\implies$ finitely generated.
+If $A$ is Noetherian, the three conditions coincide, so on a locally Noetherian scheme $X$ a quasicoherent $\mcf$ is coherent exactly when each $M_i$ in some affine cover is finitely generated.
 :::
 
 ::: {.proposition}
 On $\Spec A$, the functor $M \mapsto \tilde{M}$ is an exact equivalence from $A$-modules to quasicoherent sheaves, with inverse $\mcf \mapsto \mcf(X)$.
+:::
+
+::: {.example title="An $\OO_X$-module that is not quasicoherent"}
+Let $A = k[x]_{(x)}$, so $X = \Spec A$ has two points: the generic point $\eta$ and the closed point $(x)$, and the open sets are $\emptyset$, $U = \{\eta\} = D(x)$ and $X$, with $\OO_X(U) = k(x)$.
+Define $\mcf(X) = k(x)$, an $A$-module by multiplication in the field $k(x) \supseteq A$, and $\mcf(U) = \mcf(\emptyset) = 0$, with zero restriction maps.
+This is a sheaf of $\OO_X$-modules: the only open cover of $X$ contains $X$ itself, so the sheaf conditions hold, and the module structures are compatible with restriction because $\mcf(U) = 0$.
+It is not quasicoherent: if $\mcf \cong \tilde{M}$, then $M \cong \mcf(X) = k(x)$ and $\mcf(D(x)) \cong M_x = k(x) \neq 0$, while $\mcf(U) = 0$.
+
+The module structure matters.
+If instead $x$ acts by $0$ on $k(x)$, through the residue field $A/(x) = k$, then $M_x = 0$ and $\mcf = \tilde{M}$ is quasicoherent: it is the skyscraper sheaf at the closed point.
+The same holds for the skyscraper sheaf at the origin of $\AA^1_k = \Spec k[x]$ with value $k(x)$: with the multiplication action of $\OO(V) \subseteq k(x)$ on each open $V \ni 0$ it is an $\OO$-module that is not quasicoherent, and with the action through the residue field $k$ it is quasicoherent.
 :::
 
 ::: {.remark}
@@ -37,5 +64,5 @@ The practical test is local and needs no module in hand: $\mcf$ is quasicoherent
 \[
 \OO_X^{(I)} \to \OO_X^{(J)} \to \mcf \to 0 .
 \]
-On such an affine neighbourhood $\Spec A$, the cokernel of the corresponding map $A^{(I)}\to A^{(J)}$ gives a module whose associated sheaf is $\mcf$.
+This presentation criterion is often easier to verify for naturally occurring sheaves than constructing an explicit module on each affine chart.
 :::

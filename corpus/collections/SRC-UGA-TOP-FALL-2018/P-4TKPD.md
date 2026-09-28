@@ -26,7 +26,7 @@ audit:
   note: Verified the closed-equivalence-relation quotient lemma and the induction over finitely many cell attachments.
 ---
 
-::: problem
+::: {.problem}
 Prove that a finite CW complex must be Hausdorff.
 :::
 

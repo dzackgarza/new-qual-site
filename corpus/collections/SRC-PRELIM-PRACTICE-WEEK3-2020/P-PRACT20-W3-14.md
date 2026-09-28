@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-14
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 14"
+title: Plane through the origin, $(2,0,0)$ and $(0,0,1)$
 classification:
   areas:
   - real-analysis

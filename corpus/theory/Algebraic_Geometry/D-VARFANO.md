@@ -23,7 +23,7 @@ prompts:
 ::: {.definition title="The trichotomy by canonical class"}
 Let $X$ be a smooth complete variety with canonical divisor $K_X$.
 
-- $X$ is **Fano** if $-K_X$ is ample.
+- $X$ is \dfn{Fano} if $-K_X$ is ample.
 
 - $X$ is **Calabi--Yau** if $K_X \sim_\QQ 0$; the stricter convention demands $\omega_X \cong \OO_X$ together with $h^j(\OO_X) = 0$ for $1 \leq j \leq \dim X - 1$.
 
@@ -36,6 +36,6 @@ A **del Pezzo surface** is a Fano variety of dimension two.
 The sign of $K_X$ is the organising invariant of birational classification, and for curves the three cases are exactly $g = 0$, $g = 1$, $g \geq 2$.
 A Fano variety is automatically projective, since $-K_X$ is an ample divisor to embed by, so "complete" in the definition costs nothing.
 
-The two conventions for Calabi--Yau are not equivalent and differ in their vanishing conditions: abelian varieties have $K_X = 0$ but do not satisfy the vanishing, so they are Calabi--Yau in the first sense and not the second.
-The del Pezzo surfaces are $\PP^1 \times \PP^1$ and $\PP^2$ blown up at $r \leq 8$ general points, with $K^2 = 9 - r$; the cubic surface is the case $r = 6$, and the $27$ lines on it are what that classification is usually asked for.
+The two conventions for Calabi--Yau are not equivalent: abelian varieties have $K_X=0$ but do not satisfy the intermediate-cohomology vanishing, so they satisfy the first convention and not the second.
+The del Pezzo surfaces are $\PP^1\times\PP^1$ and $\PP^2$ blown up at $r\le8$ general points, with $K^2=9-r$; the cubic surface is the case $r=6$ and contains $27$ lines.
 :::

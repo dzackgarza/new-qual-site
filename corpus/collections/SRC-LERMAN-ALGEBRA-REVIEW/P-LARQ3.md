@@ -22,15 +22,15 @@ audit:
   note: "Checked nonzeroness, nonunit status and the factorization criterion directly from the definition of irreducibility."
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity.
 Suppose $p\in R$ is irreducible and $u\in R$ is a unit.
 Prove that $up$ is irreducible.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The element $up$ is nonzero and is not a unit.
-::: proof
+::: {.proof}
 Since $p$ is irreducible, $p\ne0$ and $p$ is not a unit. Multiplication by the unit $u$ is bijective, so $up\ne0$. If $up$ were a unit, then
 $$
 p=u^{-1}(up)
@@ -39,7 +39,7 @@ would be a product of units and hence a unit, a contradiction.
 :::
 
 <1>2. Every factorization of $up$ has a unit factor.
-::: proof
+::: {.proof}
 Suppose
 $$
 up=ab.

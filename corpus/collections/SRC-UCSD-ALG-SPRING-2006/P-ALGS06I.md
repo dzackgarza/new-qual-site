@@ -25,7 +25,7 @@ audit:
   note: The proof identifies the field as the maximal real subfield of the 4p-th cyclotomic field and uses cyclic Galois correspondence to exclude cube roots of p.
 ---
 
-::: problem
+::: {.problem}
 (a) Let $p$ be an odd prime.
 Show that $\sin\!\left(\frac{2\pi}{p}\right)$ is algebraic over $\mathbb{Q}$ and determine its degree over $\mathbb{Q}$.
 

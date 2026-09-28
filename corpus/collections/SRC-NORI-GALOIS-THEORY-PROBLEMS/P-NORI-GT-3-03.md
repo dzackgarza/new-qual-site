@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-03
 kind: problem
-title: Nori Galois theory problem 3.3
+title: Towers of quadratic extensions of $\mathbb F_p$ by iterated square roots
 classification:
   areas: [algebra]
   topics: []

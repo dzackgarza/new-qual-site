@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be the group of $2 \times 2$ invertible matrices with entries in the finite
 field $\mathbb{Z}_p$. Then $|G| = (p-1)^2 p(p+1)$. Assume that $p = 17$, so
 $|G| = 2^9 \cdot 3^2 \cdot 17$.

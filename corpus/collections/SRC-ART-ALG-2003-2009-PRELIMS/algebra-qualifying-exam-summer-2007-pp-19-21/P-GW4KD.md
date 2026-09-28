@@ -5,7 +5,7 @@ kind: problem
 title: $\operatorname{Aut}(C_n)\cong(\mathbb{Z}/n\mathbb{Z})^\times$
 classification:
   areas:
-  - prelim
+  - algebra
   topics:
   - Automorphisms
   - Cyclic Groups

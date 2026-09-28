@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to S^n$ be a continuous map that is not surjective.
 Prove that $f$ is nullhomotopic.
 :::

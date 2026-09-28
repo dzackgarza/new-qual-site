@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be an integral domain.
 
 1. Prove that every free $R$-module is torsion-free.

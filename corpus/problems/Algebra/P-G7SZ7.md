@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\pi: \mathbb{Z} \to \mathbb{Z}/2\mathbb{Z}$ be the canonical quotient homomorphism of $\mathbb{Z}$-modules.
 Show that the induced homomorphism on Hom groups:
 \[

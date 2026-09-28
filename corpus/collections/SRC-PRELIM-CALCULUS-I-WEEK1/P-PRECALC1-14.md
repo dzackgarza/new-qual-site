@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-14
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 14'
+title: Integral of the sign function over $[-1,1]$
 classification:
   areas:
   - prelim

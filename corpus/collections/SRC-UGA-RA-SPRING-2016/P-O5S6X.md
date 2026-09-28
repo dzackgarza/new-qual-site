@@ -27,7 +27,7 @@ audit:
   note: Corrected the translated tail set in the proof of vanishing at infinity.
 ---
 
-::: problem
+::: {.problem}
 Let $E \subset \RR$ be measurable with $m(E) < \infty$.
 Define
 \[
@@ -47,9 +47,9 @@ Show that
 \chi_{E \cap(E+x)}(y)=\chi_{E}(y) \chi_{E}(y-x)
 \]
 :::
-::: solution
+::: {.solution}
 <1>1. Express the overlap as a convolution and prove integrability.
-::: proof
+::: {.proof}
 Let $\widetilde\chi_E(u):=\chi_E(-u)$. The hint gives
 \[
 f(x)=\int_{\mathbb R}\chi_E(y)\chi_E(y-x)\,dy
@@ -68,7 +68,7 @@ Thus $f\in L^1(\mathbb R)$.
 :::
 
 <1>2. Prove uniform continuity.
-::: proof
+::: {.proof}
 For $h\in\mathbb R$,
 \[
 \begin{aligned}
@@ -82,7 +82,7 @@ Translations are continuous in $L^1$, so the right-hand side tends to $0$ as $h\
 :::
 
 <1>3. Prove that $f(x)\to0$ as $|x|\to\infty$.
-::: proof
+::: {.proof}
 Let $\varepsilon>0$. Choose $R>0$ such that
 \[
 m(E\setminus[-R,R])<\varepsilon.

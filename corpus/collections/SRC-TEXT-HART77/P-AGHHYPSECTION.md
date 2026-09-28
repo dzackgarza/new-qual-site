@@ -16,12 +16,12 @@ relations:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $Y$ be an affine variety of dimension $r$ in $\AA^n$, let $H$ be a hypersurface in $\AA^n$, and assume $Y \not\subseteq H$.
 Show that every irreducible component of $Y \intersect H$ has dimension $r - 1$.
 :::
 
-::: solution
+::: {.solution}
 Write $H = V(f)$.
 Irreducible components of $Y \intersect H$ correspond to the minimal primes $\mfp_i$ of $A(Y)$ containing $\gens{f}$, because $V(\mfp)$ is irreducible exactly when $\mfp$ is prime.
 

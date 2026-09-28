@@ -1,89 +1,52 @@
 ---
 order: 91
-title: The Gamma function, and conic sections
+title: The Gamma function and conic sections
 ---
 
-# The Gamma function, and conic sections
+# The Gamma function and conic sections
+
+## The Gamma function
 
 [[D-Q3MYK]]
 
-:::{.remark}
-Some interesting properties of $\Gamma$:
-$\Gamma(z+1) = z\Gamma(z)$ and has simple poles at $z=0,-1,-2,\cdots$ with residues $\Res_{z=-m} \Gamma(z) = (-1)^m/m!$.
-There is also a factorization
-\[
-\Gamma(z) = {1 \over ze^{\gamma z} \prod_{n=1}^\infty \qty{1 + {z\over n}}e^{-z\over n} }
-\]
-where $\gamma \da \lim_{N\to\infty } \sum_{n=1^N} {1\over n} - \log(N)$
-
-\[
-\Gamma(z) \Gamma(1-z) = {\pi \over \sin(\pi z)}
-,\]
-which yields a product factorization for $\sin(\pi z)$.
-
-$\mcl(t^{z-1}, s=1) = \Gamma(z)$ and $\mcl(t^n, s=1) = \Gamma(n+1)$.
-
-:::
+The poles, residues, product expansion, and reflection formula of $\Gamma$ are on [[complex-analysis/appendices/special-functions#The Gamma function|Special functions]].
 
 [[T-ZAEWG]]
 
 ## Conic sections
 
-:::{.fact title="Standard forms of conic sections"}
+::: {.fact title="Standard forms of conic sections"}
 \envlist
 
-- Circle: $x^2 + y^2 = r^2$
-- Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$
-- Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$
-  - Rectangular Hyperbola: $xy = \frac{c^2}{2}$.
-- Parabola: $-4ax + y^2 = 0$.
-
-Mnemonic:
-Write $f(x, y) = Ax^2 + Bxy + Cy^2 + \cdots$, then consider the discriminant $\Delta = B^2 - 4AC$:
-
-- $\Delta < 0 \iff$ ellipse
-  - $\Delta < 0$ and $A=C, B=0 \iff$ circle
-- $\Delta = 0 \iff$ parabola
-- $\Delta > 0 \iff$ hyperbola
+- Circle: $x^2 + y^2 = r^2$.
+- Ellipse: $\qty{\frac x a}^2  + \qty{\frac y b}^2 = 1$.
+- Hyperbola: $\qty{\frac x a}^2  - \qty{\frac y b}^2 = 1$; the rectangular hyperbola $xy = \frac{c^2}{2}$.
+- Parabola: $y^2 = 4ax$.
 
 :::
-:::{.fact title="Completing the square"}
-\[
-x^2 - bx = (x - s)^2 - s^2 \quad\text{where} s = \frac{b}{2} \\
-x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
-.\]
+
+::: {.fact title="Classification by the discriminant"}
+For a nondegenerate real conic $Ax^2 + Bxy + Cy^2 + Dx + Ey + F = 0$ with discriminant $\Delta \coloneqq B^2 - 4AC$:
+
+- $\Delta < 0$ if and only if the conic is an ellipse, and it is a circle if and only if moreover $A=C$ and $B=0$;
+- $\Delta = 0$ if and only if the conic is a parabola;
+- $\Delta > 0$ if and only if the conic is a hyperbola.
 
 :::
-:::{.fact}
-The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
+
+::: {.fact title="Completing the square"}
+With $s \coloneqq \frac{b}{2}$,
+$$
+\begin{aligned}
+x^2 - bx &= (x - s)^2 - s^2, \\
+x^2 + bx &= (x + s)^2 - s^2.
+\end{aligned}
+$$
 
 :::
-[[D-XR64P]]
 
-:::{.remark}
-More generally, this is a boundary value problem for a region where the *values* of the function on the boundary are given.
-Compare to prescribing conditions on the normal vector on the boundary, which would be a Neumann BVP.
-Why these show up: a harmonic function on a simply connected region has a harmonic conjugate, and solutions of BVPs are always analytic functions with harmonic real/imaginary parts.
-
-:::
-:::{.example title="Dirichlet problem on the strip"}
-See section 27, example 1 in Brown and Churchill.
-On the strip $(x, y)\in (0, \pi) \cross (0, \infty)$, set up the BVP for temperature on a thin plate with no sinks/sources:
-\[
-\laplacian T = 0 && T(0, y) = 0,\, T(\pi, y) = 0 \,\,\forall y \\ \\
-T(x, 0) = \sin(x) && T(x, y) \converges{y\to\infty}\too 0
-.\]
-
-Then the following function is harmonic on $\RR^2$ and satisfies that Dirichlet problem:
-\[
-T(x ,y) = e^{-y} \sin(x) = \Re(-ie^{iz}) = \Im(e^{iz})
-.\]
-
-:::
-:::{.remark}
-\[
-\hat{f}(\xi) \da \mcl(f, i\xi) \da \int_\RR f(x) e^{-i\xi x} \dx
-.\]
+::: {.fact}
+The interior angles of a convex $n$-gon sum to $(n-2)\pi$, so each interior angle of a regular $n$-gon is $\frac{n-2}{n}\pi$.
 
 :::
 

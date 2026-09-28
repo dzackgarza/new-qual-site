@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-19
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 19'
+title: First and second derivatives along a parametric curve
 classification:
   areas:
   - prelim

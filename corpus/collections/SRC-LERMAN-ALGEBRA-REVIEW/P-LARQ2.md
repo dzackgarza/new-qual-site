@@ -22,7 +22,7 @@ audit:
   note: "Applied Cauchy's theorem to the prime divisors 2 and 5, and checked the source's direct-product counterexample has no element of order 4."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group of order $20$.
 
 1. Must $G$ have an element of order $2$?
@@ -34,11 +34,11 @@ Let $G$ be a finite group of order $20$.
 Justify each answer.
 :::
 
-::: solution
+::: {.solution}
 The answers are: order $2$, yes; order $5$, yes; order $4$, no.
 
 <1>1. Every group of order $20$ has elements of orders $2$ and $5$.
-::: proof
+::: {.proof}
 Since
 $$
 |G|=20=2^2\cdot5,
@@ -47,7 +47,7 @@ both primes $2$ and $5$ divide $|G|$. Cauchy's theorem for finite groups therefo
 :::
 
 <1>2. An element of order $4$ need not exist.
-::: proof
+::: {.proof}
 Consider
 $$
 G=C_2\times C_2\times C_5.

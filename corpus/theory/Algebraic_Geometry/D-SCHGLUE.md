@@ -30,8 +30,9 @@ The result is $\PP^n\slice k$, and its global sections are $k$, so it is not aff
 :::
 
 ::: {.remark}
-The cocycle condition makes the identifications consistent on triple overlaps.
+Gluing constructs schemes from compatible open pieces and produces non-affine schemes from affine charts.
+The cocycle condition is exactly the compatibility required on triple overlaps.
 
-Gluing two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity gives the line with a doubled origin. Gluing by $t \mapsto t\inv$ gives $\PP^1$.
-The two origins remain distinct in both constructions; the doubled-origin line is nonseparated, whereas $\PP^1$ is separated.
+The same charts with different transition maps produce different schemes: gluing two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ by the identity gives the line with a doubled origin, while gluing by $t \mapsto t\inv$ gives $\PP^1$.
+The difference is that the second gluing identifies the two extra points and the first does not.
 :::

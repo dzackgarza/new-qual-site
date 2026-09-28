@@ -13,14 +13,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $V$ and $W$ be Hilbert spaces, each of dimension at least two.
 Prove that the operator norm on $\operatorname{Hom}(V, W)$ is not induced by any scalar product on $\operatorname{Hom}(V, W)$.
 
 Note: On this exam, a Hilbert space is a finite-dimensional complex vector space equipped with a scalar product.
 :::
 
-::: solution
+::: {.solution}
 Any norm induced by an inner product satisfies the parallelogram identity
 \[
 \|S+T\|^2+\|S-T\|^2=2\|S\|^2+2\|T\|^2.

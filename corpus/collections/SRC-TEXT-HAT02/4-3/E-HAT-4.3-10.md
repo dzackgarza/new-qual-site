@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Given a fibration $F \to E \to B$, use the homotopy lifting property to define an action of $\pi_1(E)$ on $\pi_n(F)$, a homomorphism $\pi_1(E) \to \operatorname{Aut}\bigl(\pi_n(F)\bigr)$, such that the composition $\pi_1(F) \to \pi_1(E) \to \operatorname{Aut}\bigl(\pi_n(F)\bigr)$ is the usual action of $\pi_1(F)$ on $\pi_n(F)$.
 Deduce that if $\pi_1(E) = 0$, then the action of $\pi_1(F)$ on $\pi_n(F)$ is trivial.
+:::
 
 ::: {.solution}
 Fix a basepoint \(e_0\in F=p^{-1}(b_0)\). Let

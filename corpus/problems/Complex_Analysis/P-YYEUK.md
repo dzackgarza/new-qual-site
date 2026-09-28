@@ -16,12 +16,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $f(z)$ be entire and assume that $\abs{f(z)} \leq M |z|^2$ outside of some disk for some constant $M$. 
 Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Prove a more general statement: if $\abs{f(z)} \leq M\abs{z}^n$, then $f$ is a polynomial of degree at most $n$.

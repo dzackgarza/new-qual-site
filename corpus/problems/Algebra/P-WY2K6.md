@@ -21,11 +21,11 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 State and prove **Lagrange's Theorem** for finite groups: if $G$ is a finite group and $H \le G$ is a subgroup, then $|H|$ divides $|G|$ and $|G| = [G : H] \cdot |H|$.
 :::
 
-::: solution
+::: {.solution}
 The left cosets of $H$ in $G$ partition $G$. Indeed, define
 \[
 x\sim y\iff x^{-1}y\in H.

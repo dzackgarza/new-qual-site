@@ -21,7 +21,7 @@ audit:
 Show that $X$ is Hausdorff if and only if the diagonal $\Delta = \ts{x \times x \mid x \in X}$ is closed in $X \times X$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that a topological space $X$ is Hausdorff if and only if the diagonal subspace $\Delta = \{(x, x) \mid x \in X\}$ is closed in the product space $X \times X$.
 
 <1>1. Direct implication ($\implies$): If $X$ is Hausdorff, then $\Delta$ is closed in $X \times X$.

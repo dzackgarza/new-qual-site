@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the space $X$ obtained by identifying the edges of the unit square in the following manner: edges labeled $a$ are identified with matching orientation, and edges labeled $b$ are identified with matching orientation.
 
 (a) Compute $H_*(X; \mathbb{Z})$ and $H^*(X; \mathbb{Z})$.

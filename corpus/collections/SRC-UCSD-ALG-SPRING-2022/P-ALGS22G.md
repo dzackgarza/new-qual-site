@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field and let $A$ be a finitely generated commutative $k$-algebra.
 
 (a) Suppose that $A$ is simple as an $A$-module. Prove that $A$ is a finite-dimensional

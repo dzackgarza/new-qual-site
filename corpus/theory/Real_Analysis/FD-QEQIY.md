@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-QEQIY
 kind: definition
-title: Meagre Set
+title: Meagre sets
 prompts:
 - What is a meagre set?
 classification:
@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: {.definition}
-A set is *meagre* iff it is a countable union of nowhere dense sets.
+Let $X$ be a topological space.
+A subset $A\subseteq X$ is \dfn{meagre} in $X$ if it is a countable union of [[D-2MJRE|nowhere dense]] subsets of $X$.
 :::

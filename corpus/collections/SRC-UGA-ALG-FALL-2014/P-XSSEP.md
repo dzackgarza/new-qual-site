@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f\in \QQ[x]$ be an irreducible polynomial and $L$ a finite Galois extension of $\QQ$.
 Let $f(x) = g_1(x)g_2(x)\cdots g_r(x)$ be a factorization of $f$ into irreducibles in $L[x]$.
 
@@ -24,7 +24,7 @@ a. Prove that each of the factors $g_i(x)$ has the same degree.
 b. Give an example showing that if $L$ is not Galois over $\QQ$, the conclusion of part (a) need not hold.
 :::
 
-::: solution
+::: {.solution}
 (a) Let $M$ be a splitting field of $f$ over $L$. Since $L/\QQ$ is finite
 Galois and $f\in\QQ[x]$, the extension $M/\QQ$ is finite Galois. Put
 \[

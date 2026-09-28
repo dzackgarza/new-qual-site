@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Determine if the statements below are True or False.
 
 (a) (5 points) If the derivative of a real-valued, absolutely continuous function $f$ on $\mathbb{R}$ vanishes almost everywhere, then $f$ must be a constant on $\mathbb{R}$.
@@ -38,9 +38,9 @@ Then $\lim_{n \to \infty} \|x_n\| = \|x\|$ implies that $\{x_n\}$ converges to $
 If $f_n \to f$ and $g_n \to g$ in measure, then $f_n g_n \to fg$ in measure.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Part (a) is true.
-::: proof
+::: {.proof}
 Fix $a<b$. Since $f$ is absolutely continuous, the fundamental theorem of calculus gives
 \[
 f(b)-f(a)=\int_a^b f'(x)\,dx.
@@ -53,7 +53,7 @@ Thus $f(a)=f(b)$ for all $a,b\in\mathbb R$, so $f$ is constant.
 :::
 
 <1>2. Part (b) is true.
-::: proof
+::: {.proof}
 For a Borel set $E\subseteq X$,
 \[
 \delta_x(E)=
@@ -66,7 +66,7 @@ The measure is finite, hence finite on every compact set. It is inner regular: i
 :::
 
 <1>3. Part (c) is true.
-::: proof
+::: {.proof}
 Weak convergence gives
 \[
 \langle x_n,x\rangle\longrightarrow\langle x,x\rangle=\|x\|^2.
@@ -83,7 +83,7 @@ using the assumed convergence $\|x_n\|\to\|x\|$. Hence $x_n\to x$ strongly in $H
 :::
 
 <1>4. Part (d) is false on the infinite-measure space $\mathbb R$.
-::: proof
+::: {.proof}
 Let
 \[
 f_n(x)=f(x)=x,

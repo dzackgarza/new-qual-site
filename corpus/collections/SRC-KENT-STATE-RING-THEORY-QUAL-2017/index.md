@@ -16,161 +16,302 @@ source:
   sections:
   - name: General Ring Theory
     problems:
-    - P-KSRING17-001
-    - P-KSRING17-002
-    - P-KSRING17-003
-    - P-KSRING17-004
-    - P-KSRING17-005
-    - P-KSRING17-006
-    - P-KSRING17-007
-    - P-KSRING17-008
-    - P-KSRING17-009
-    - P-KSRING17-010
-    - P-KSRING17-011
-    - P-KSRING17-012
-    - P-KSRING17-013
-    - P-KSRING17-014
-    - P-KSRING17-015
-    - P-KSRING17-016
-    - P-KSRING17-017
-    - P-KSRING17-018
-    - P-KSRING17-019
-    - P-KSRING17-020
-    - P-KSRING17-021
-    - P-KSRING17-022
-    - P-KSRING17-023
-    - P-KSRING17-024
-    - P-KSRING17-025
-    - P-KSRING17-026
-    - P-KSRING17-027
-    - P-KSRING17-028
-    - P-KSRING17-029
-    - P-KSRING17-030
-    - P-KSRING17-031
-    - P-KSRING17-032
-    - P-KSRING17-033
-    - P-KSRING17-034
-    - P-KSRING17-035
-    - P-KSRING17-036
-    - P-KSRING17-037
-    - P-KSRING17-038
+    - id: P-KSRING17-001
+      comment: Problem 1
+    - id: P-KSRING17-002
+      comment: Problem 2
+    - id: P-KSRING17-003
+      comment: Problem 3
+    - id: P-KSRING17-004
+      comment: Problem 4
+    - id: P-KSRING17-005
+      comment: Problem 5
+    - id: P-KSRING17-006
+      comment: Problem 6
+    - id: P-KSRING17-007
+      comment: Problem 7
+    - id: P-KSRING17-008
+      comment: Problem 8
+    - id: P-KSRING17-009
+      comment: Problem 9
+    - id: P-KSRING17-010
+      comment: Problem 10
+    - id: P-KSRING17-011
+      comment: Problem 11
+    - id: P-KSRING17-012
+      comment: Problem 12
+    - id: P-KSRING17-013
+      comment: Problem 13
+    - id: P-KSRING17-014
+      comment: Problem 14
+    - id: P-KSRING17-015
+      comment: Problem 15
+    - id: P-KSRING17-016
+      comment: Problem 16
+    - id: P-KSRING17-017
+      comment: Problem 17
+    - id: P-KSRING17-018
+      comment: Problem 18
+    - id: P-KSRING17-019
+      comment: Problem 19
+    - id: P-KSRING17-020
+      comment: Problem 20
+    - id: P-KSRING17-021
+      comment: Problem 21
+    - id: P-KSRING17-022
+      comment: Problem 22
+    - id: P-KSRING17-023
+      comment: Problem 23
+    - id: P-KSRING17-024
+      comment: Problem 24
+    - id: P-KSRING17-025
+      comment: Problem 25
+    - id: P-KSRING17-026
+      comment: Problem 26
+    - id: P-KSRING17-027
+      comment: Problem 27
+    - id: P-KSRING17-028
+      comment: Problem 28
+    - id: P-KSRING17-029
+      comment: Problem 29
+    - id: P-KSRING17-030
+      comment: Problem 30
+    - id: P-KSRING17-031
+      comment: Problem 31
+    - id: P-KSRING17-032
+      comment: Problem 32
+    - id: P-KSRING17-033
+      comment: Problem 33
+    - id: P-KSRING17-034
+      comment: Problem 34
+    - id: P-KSRING17-035
+      comment: Problem 35
+    - id: P-KSRING17-036
+      comment: Problem 36
+    - id: P-KSRING17-037
+      comment: Problem 37
+    - id: P-KSRING17-038
+      comment: Problem 38
   - name: Prime, Maximal, and Primary Ideals
     problems:
-    - P-KSRING17-039
-    - P-KSRING17-040
-    - P-KSRING17-041
-    - P-KSRING17-042
-    - P-KSRING17-043
-    - P-KSRING17-044
-    - P-KSRING17-045
-    - P-KSRING17-046
-    - P-KSRING17-047
-    - P-KSRING17-048
-    - P-KSRING17-049
-    - P-KSRING17-050
-    - P-KSRING17-051
-    - P-KSRING17-052
-    - P-KSRING17-053
-    - P-KSRING17-054
-    - P-KSRING17-055
-    - P-KSRING17-056
-    - P-KSRING17-057
-    - P-KSRING17-058
-    - P-KSRING17-059
-    - P-KSRING17-060
-    - P-KSRING17-061
-    - P-KSRING17-062
-    - P-KSRING17-063
+    - id: P-KSRING17-039
+      comment: Problem 39
+    - id: P-KSRING17-040
+      comment: Problem 40
+    - id: P-KSRING17-041
+      comment: Problem 41
+    - id: P-KSRING17-042
+      comment: Problem 42
+    - id: P-KSRING17-043
+      comment: Problem 43
+    - id: P-KSRING17-044
+      comment: Problem 44
+    - id: P-KSRING17-045
+      comment: Problem 45
+    - id: P-KSRING17-046
+      comment: Problem 46
+    - id: P-KSRING17-047
+      comment: Problem 47
+    - id: P-KSRING17-048
+      comment: Problem 48
+    - id: P-KSRING17-049
+      comment: Problem 49
+    - id: P-KSRING17-050
+      comment: Problem 50
+    - id: P-KSRING17-051
+      comment: Problem 51
+    - id: P-KSRING17-052
+      comment: Problem 52
+    - id: P-KSRING17-053
+      comment: Problem 53
+    - id: P-KSRING17-054
+      comment: Problem 54
+    - id: P-KSRING17-055
+      comment: Problem 55
+    - id: P-KSRING17-056
+      comment: Problem 56
+    - id: P-KSRING17-057
+      comment: Problem 57
+    - id: P-KSRING17-058
+      comment: Problem 58
+    - id: P-KSRING17-059
+      comment: Problem 59
+    - id: P-KSRING17-060
+      comment: Problem 60
+    - id: P-KSRING17-061
+      comment: Problem 61
+    - id: P-KSRING17-062
+      comment: Problem 62
+    - id: P-KSRING17-063
+      comment: Problem 63
   - name: Commutative Rings
     problems:
-    - P-KSRING17-064
-    - P-KSRING17-065
-    - P-KSRING17-066
-    - P-KSRING17-067
-    - P-KSRING17-068
-    - P-KSRING17-069
-    - P-KSRING17-070
-    - P-KSRING17-071
-    - P-KSRING17-072
-    - P-KSRING17-073
-    - P-KSRING17-074
-    - P-KSRING17-075
-    - P-KSRING17-076
-    - P-KSRING17-077
+    - id: P-KSRING17-064
+      comment: Problem 64
+    - id: P-KSRING17-065
+      comment: Problem 65
+    - id: P-KSRING17-066
+      comment: Problem 66
+    - id: P-KSRING17-067
+      comment: Problem 67
+    - id: P-KSRING17-068
+      comment: Problem 68
+    - id: P-KSRING17-069
+      comment: Problem 69
+    - id: P-KSRING17-070
+      comment: Problem 70
+    - id: P-KSRING17-071
+      comment: Problem 71
+    - id: P-KSRING17-072
+      comment: Problem 72
+    - id: P-KSRING17-073
+      comment: Problem 73
+    - id: P-KSRING17-074
+      comment: Problem 74
+    - id: P-KSRING17-075
+      comment: Problem 75
+    - id: P-KSRING17-076
+      comment: Problem 76
+    - id: P-KSRING17-077
+      comment: Problem 77
   - name: Domains
     problems:
-    - P-KSRING17-078
-    - P-KSRING17-079
-    - P-KSRING17-080
-    - P-KSRING17-081
-    - P-KSRING17-082
-    - P-KSRING17-083
-    - P-KSRING17-084
-    - P-KSRING17-085
-    - P-KSRING17-086
-    - P-KSRING17-087
-    - P-KSRING17-088
-    - P-KSRING17-089
-    - P-KSRING17-090
-    - P-KSRING17-091
-    - P-KSRING17-092
-    - P-KSRING17-093
-    - P-KSRING17-094
-    - P-KSRING17-095
-    - P-KSRING17-096
-    - P-KSRING17-097
-    - P-KSRING17-098
-    - P-KSRING17-099
-    - P-KSRING17-100
+    - id: P-KSRING17-078
+      comment: Problem 78
+    - id: P-KSRING17-079
+      comment: Problem 79
+    - id: P-KSRING17-080
+      comment: Problem 80
+    - id: P-KSRING17-081
+      comment: Problem 81
+    - id: P-KSRING17-082
+      comment: Problem 82
+    - id: P-KSRING17-083
+      comment: Problem 83
+    - id: P-KSRING17-084
+      comment: Problem 84
+    - id: P-KSRING17-085
+      comment: Problem 85
+    - id: P-KSRING17-086
+      comment: Problem 86
+    - id: P-KSRING17-087
+      comment: Problem 87
+    - id: P-KSRING17-088
+      comment: Problem 88
+    - id: P-KSRING17-089
+      comment: Problem 89
+    - id: P-KSRING17-090
+      comment: Problem 90
+    - id: P-KSRING17-091
+      comment: Problem 91
+    - id: P-KSRING17-092
+      comment: Problem 92
+    - id: P-KSRING17-093
+      comment: Problem 93
+    - id: P-KSRING17-094
+      comment: Problem 94
+    - id: P-KSRING17-095
+      comment: Problem 95
+    - id: P-KSRING17-096
+      comment: Problem 96
+    - id: P-KSRING17-097
+      comment: Problem 97
+    - id: P-KSRING17-098
+      comment: Problem 98
+    - id: P-KSRING17-099
+      comment: Problem 99
+    - id: P-KSRING17-100
+      comment: Problem 100
   - name: Polynomial Rings
     problems:
-    - P-KSRING17-101
-    - P-KSRING17-102
-    - P-KSRING17-103
-    - P-KSRING17-104
-    - P-KSRING17-105
-    - P-KSRING17-106
-    - P-KSRING17-107
-    - P-KSRING17-108
-    - P-KSRING17-109
-    - P-KSRING17-110
-    - P-KSRING17-111
-    - P-KSRING17-112
-    - P-KSRING17-113
+    - id: P-KSRING17-101
+      comment: Problem 101
+    - id: P-KSRING17-102
+      comment: Problem 102
+    - id: P-KSRING17-103
+      comment: Problem 103
+    - id: P-KSRING17-104
+      comment: Problem 104
+    - id: P-KSRING17-105
+      comment: Problem 105
+    - id: P-KSRING17-106
+      comment: Problem 106
+    - id: P-KSRING17-107
+      comment: Problem 107
+    - id: P-KSRING17-108
+      comment: Problem 108
+    - id: P-KSRING17-109
+      comment: Problem 109
+    - id: P-KSRING17-110
+      comment: Problem 110
+    - id: P-KSRING17-111
+      comment: Problem 111
+    - id: P-KSRING17-112
+      comment: Problem 112
+    - id: P-KSRING17-113
+      comment: Problem 113
   - name: Non-commutative Rings
     problems:
-    - P-KSRING17-114
-    - P-KSRING17-115
-    - P-KSRING17-116
-    - P-KSRING17-117
-    - P-KSRING17-118
-    - P-KSRING17-119
+    - id: P-KSRING17-114
+      comment: Problem 114
+    - id: P-KSRING17-115
+      comment: Problem 115
+    - id: P-KSRING17-116
+      comment: Problem 116
+    - id: P-KSRING17-117
+      comment: Problem 117
+    - id: P-KSRING17-118
+      comment: Problem 118
+    - id: P-KSRING17-119
+      comment: Problem 119
   - name: Local Rings, Localization, Rings of Fractions
     problems:
-    - P-KSRING17-120
-    - P-KSRING17-121
-    - P-KSRING17-122
-    - P-KSRING17-123
-    - P-KSRING17-124
-    - P-KSRING17-125
-    - P-KSRING17-126
-    - P-KSRING17-127
-    - P-KSRING17-128
-    - P-KSRING17-129
+    - id: P-KSRING17-120
+      comment: Problem 120
+    - id: P-KSRING17-121
+      comment: Problem 121
+    - id: P-KSRING17-122
+      comment: Problem 122
+    - id: P-KSRING17-123
+      comment: Problem 123
+    - id: P-KSRING17-124
+      comment: Problem 124
+    - id: P-KSRING17-125
+      comment: Problem 125
+    - id: P-KSRING17-126
+      comment: Problem 126
+    - id: P-KSRING17-127
+      comment: Problem 127
+    - id: P-KSRING17-128
+      comment: Problem 128
+    - id: P-KSRING17-129
+      comment: Problem 129
   - name: Chains and Chain Conditions
     problems:
-    - P-KSRING17-130
-    - P-KSRING17-131
-    - P-KSRING17-132
-    - P-KSRING17-133
-    - P-KSRING17-134
-    - P-KSRING17-135
-    - P-KSRING17-136
-    - P-KSRING17-137
-    - P-KSRING17-138
-    - P-KSRING17-139
-    - P-KSRING17-140
-    - P-KSRING17-141
+    - id: P-KSRING17-130
+      comment: Problem 130
+    - id: P-KSRING17-131
+      comment: Problem 131
+    - id: P-KSRING17-132
+      comment: Problem 132
+    - id: P-KSRING17-133
+      comment: Problem 133
+    - id: P-KSRING17-134
+      comment: Problem 134
+    - id: P-KSRING17-135
+      comment: Problem 135
+    - id: P-KSRING17-136
+      comment: Problem 136
+    - id: P-KSRING17-137
+      comment: Problem 137
+    - id: P-KSRING17-138
+      comment: Problem 138
+    - id: P-KSRING17-139
+      comment: Problem 139
+    - id: P-KSRING17-140
+      comment: Problem 140
+    - id: P-KSRING17-141
+      comment: Problem 141
   date:
     kind: year
     year: 2017

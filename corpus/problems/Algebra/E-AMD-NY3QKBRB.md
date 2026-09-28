@@ -22,7 +22,7 @@ audit:
 Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto ghg\inv)$ is $Z(G)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** show that $g$ acts trivially by conjugation exactly when $g$ commutes with every element of $G$.
 
 <1>1. Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = ghg\inv$.

@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Hartshorne_Solutions.pdf",
+  "source_pdf_sha256": "d69a33b3dcdec0655edbb89a0a3851100de435aabbd75034032bd261120e917f",
+  "extracted_markdown": "assets/attachments/Hartshorne_Solutions_extracted.md",
+  "extracted_markdown_sha256": "648f3076a71a12e3669a1816ad6233cf4ff202dcdc7a461818ead58bdb5bc63b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "commands": [
+    "mineru-open-api flash-extract assets/attachments/Hartshorne_Solutions.pdf --language en --pages 1-20",
+    "mineru-open-api flash-extract assets/attachments/Hartshorne_Solutions.pdf --language en --pages 21-29"
+  ],
+  "generated_at": "2026-09-14",
+  "range_assembly": "Concatenation of successful Flash ranges 1-20 and 21-29. A 21-40 request produced byte-identical output to 21-29, establishing clipping at the document end under MinerU's own range handling.",
+  "duplicate_of": "assets/algebraic-geometry/resources/Bryden R Cais.pdf",
+  "duplicate_sha256": "d69a33b3dcdec0655edbb89a0a3851100de435aabbd75034032bd261120e917f",
+  "disposition": "Reference-only duplicate of the already archived and linked Bryden R. Cais Hartshorne solution notes for Chapters II-IV; no duplicate cards or resource entry are created."
+}

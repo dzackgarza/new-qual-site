@@ -25,7 +25,7 @@ audit:
   note: Verified irreducibility and non-primality by the norm, non-freeness via non-principality and rank one, and projectivity by an explicit inverse fractional ideal and splitting.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A = \mathbb{Z}[\sqrt{-5}]$.
 
 (a) Prove that $3$ is irreducible in $A$, but it is not prime.

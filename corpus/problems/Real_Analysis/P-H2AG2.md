@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Show that the set \( \ts{ u_k(j) \da \delta_{kj} } \subseteq \ell^2(\ZZ) \) forms an orthonormal system.
 :::
 ::: {.solution}

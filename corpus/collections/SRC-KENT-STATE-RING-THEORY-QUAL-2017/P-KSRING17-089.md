@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-089
 kind: problem
-title: Kent State ring-theory qualifying problem 89
+title: Least common multiples in a principal ideal domain as intersections of ideals
 classification:
   areas: [algebra]
   topics: []

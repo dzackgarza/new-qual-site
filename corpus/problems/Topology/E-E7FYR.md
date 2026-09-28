@@ -14,9 +14,11 @@ relations:
 review: draft
 ---
 
+::: {.problem}
 - $X$ is compact
 
 - Every infinite subset $A\subseteq X$ has a limit point in $X$.
+:::
 
 ::: {.remark}
 The conditions are equivalent when $X$ is second countable and Hausdorff, or metrizable; see [E-YAEMZ](E-YAEMZ.md).

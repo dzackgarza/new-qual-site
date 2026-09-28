@@ -25,7 +25,7 @@ audit:
 Work out the Taylor series for $f(x) = \ln x$ around $x=1$ and use it to approximate $\ln(1.1)$ accurate to 2 decimal places.
 :::
 
-::: solution
+::: {.solution}
 The Taylor series about $x=1$ is
 $$
 \boxed{\ln x=\sum_{n=1}^{\infty}(-1)^{n+1}\frac{(x-1)^n}{n},\qquad |x-1|<1.}
@@ -37,7 +37,7 @@ $$
 to two decimal places.
 
 <1>1. Derive the series from the geometric series.
-::: proof
+::: {.proof}
 For $|t|<1$,
 $$
 \frac1{1+t}=\sum_{n=0}^{\infty}(-1)^n t^n.
@@ -56,7 +56,7 @@ convergence is one because the geometric series used above has radius one.
 :::
 
 <1>2. Evaluate at $x=1.1$ and control the error.
-::: proof
+::: {.proof}
 Putting $u=0.1$ gives the alternating series
 $$
 \ln(1.1)=0.1-\frac{0.1^2}{2}+\frac{0.1^3}{3}-\cdots.

@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G = \mathbb{D} \setminus \{0\}$ and let $f$ be the function on $\partial G$ such that $f(z) = 0$ for $|z| = 1$ and $f(0) = 1$.
 Show that the Perron function $u(z)$ of $f$, $$u(z) = \sup\{\phi(z) : \phi \text{ is subharmonic and } \forall a \in \partial G,\; \limsup_{\zeta \to a} \phi(\zeta) \leq f(a)\}$$ is identically zero.
 
 Hint: Consider the family of functions $u_\epsilon(z) = \frac{\log|z|}{\log\epsilon}$ in the annulus $\epsilon < |z| < 1$ for $\epsilon > 0$.
 :::
 
-::: solution
+::: {.solution}
 The zero function belongs to the Perron lower class: it is subharmonic on
 $G$, has boundary limsup $0$ on $|z|=1$, and at $0$ its boundary limsup is
 $0\le1$. Hence $u\ge0$.

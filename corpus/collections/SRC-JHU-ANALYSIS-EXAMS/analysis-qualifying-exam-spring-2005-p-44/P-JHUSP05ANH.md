@@ -25,14 +25,16 @@ audit:
   note: "Used the single-valued real logarithm along the positive boundary image and checked the argument principle without assuming a logarithm throughout the disk."
 ---
 
+::: {.problem}
 Let $U$ be an open set in $\mathbb{C}$ containing the closed unit disk $\overline{D}$.
 Suppose $f$ is a meromorphic function on $U$ such that $f(\partial D) \subset \mathbb{R}^{+}$.
 (In particular, $f$ has no zeros or poles on $\partial D$.)
 Show that $f$ has the same number of zeros as poles in $D$, counting multiplicities.
+:::
 
-::: solution
+::: {.solution}
 <1>1. The logarithmic derivative has integral zero around the unit circle.
-::: proof
+::: {.proof}
 Since $f$ has no pole on $\partial D$, it is holomorphic
 on a neighborhood of that circle. Put $c(t)=f(e^{it})$
 for $0\leq t\leq2\pi$. This is a continuously differentiable
@@ -51,7 +53,7 @@ logarithm at any interior zero or pole.
 :::
 
 <1>2. The argument principle equates the zero and pole counts.
-::: proof
+::: {.proof}
 The function is meromorphic on a neighborhood of the
 closed disk and has neither zeros nor poles on its
 boundary. It is not identically zero on the component

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Find a conformal map that maps the region 
 \[
 R = \ts{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
@@ -21,7 +21,7 @@ R = \ts{z \st \Re(z) > 0,\, \abs{z - {1\over 2} }> {1\over 2} }
 to the upper half plane.
 :::
 
-:::{.problem}
+::: {.problem}
 Find a conformal map from 
 \[
 \ts{ z\st  \abs{z -1 / 2} >1 / 2, \Re(z)>0 }
@@ -30,7 +30,7 @@ to $\mathbb{H}$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 The main step: blow up the tangency.
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2021-12-30_00-52-48.png)

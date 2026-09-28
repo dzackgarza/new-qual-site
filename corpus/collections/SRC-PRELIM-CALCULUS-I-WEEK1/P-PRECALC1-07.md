@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-07
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 7'
+title: Quadratic $3x^2+bx+c$ with a double root at $2$
 classification:
   areas:
   - prelim

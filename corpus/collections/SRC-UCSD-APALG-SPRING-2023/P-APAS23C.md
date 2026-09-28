@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex components, and $\mathbb{C}^n$ is the set of column vectors with $n$ complex components.
 
 (a) Given a vector norm $\|\cdot\|$, define the matrix norm subordinate to $\|\cdot\|$.

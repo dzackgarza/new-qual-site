@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Find an analytic isomorphism from the open region between $|z| = 1$ and $|z -\frac 1 2| =\frac 1 2$ to the upper half plane $\Im z > 0$.
 (You may leave your result as a composition of functions).
 :::

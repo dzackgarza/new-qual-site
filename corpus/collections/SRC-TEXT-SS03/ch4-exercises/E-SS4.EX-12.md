@@ -19,7 +19,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 12. The principle that a function and its Fourier transform cannot both be too small at infinity is illustrated by the following theorem of Hardy.
 
 If $f$ is a function on R that satisfies
@@ -51,7 +51,7 @@ The same result holds in the lower half-plane, so by Liouville’s theorem $e ^ 
 (c) If $f$ is odd, then ${ \hat { f } } ( 0 ) = 0$ , and apply the above argument to $\hat { f } ( z ) / z$ to deduce that $\boldsymbol { f } = \boldsymbol { \hat { f } } = 0$ . Finally, write an arbitrary $f$ as an appropriate sum of an even function and an odd function.
 :::
 
-::: solution
+::: {.solution}
 We use the Fourier-transform convention
 \[
 \widehat f(\zeta)=\int_{\mathbb R}f(x)e^{-2\pi i x\zeta}\,dx.

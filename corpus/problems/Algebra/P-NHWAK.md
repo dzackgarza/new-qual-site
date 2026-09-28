@@ -22,12 +22,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) What is the Jacobson radical $J(R)$ of a ring $R$? State its equivalent characterizations.
 (2) If $R$ is a finitely generated commutative algebra over a field $k$, what can you say about $J(R)$ (Jacobson rings and Hilbert's Nullstellensatz)?
 :::
 
-::: solution
+::: {.solution}
 For a commutative ring $R$ with $1$, the Jacobson radical is
 \[
 J(R)=\bigcap_{\mathfrak m\in\operatorname{MaxSpec}R}\mathfrak m.

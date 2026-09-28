@@ -26,7 +26,7 @@ audit:
   note: Verified the suspension CW model, the trivial attaching relation, and the cellular homology calculation.
 ---
 
-::: problem
+::: {.problem}
 Let $X$ denote the quotient space formed from the sphere $S^2$ by identifying two distinct points.
 
 Compute the fundamental group and the homology groups of $X$.

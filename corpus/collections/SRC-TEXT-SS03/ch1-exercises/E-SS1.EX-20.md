@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Let $m$ be a fixed positive integer. Expand $(1-z)^{-m}$ in powers of $z$. Also, if
 \[
 (1-z)^{-m}=\sum_{n=0}^{\infty}a_nz^n,

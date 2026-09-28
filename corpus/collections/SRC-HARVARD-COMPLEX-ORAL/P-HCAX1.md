@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be continuous on a disk and holomorphic away from its center.
 Prove that $f$ is holomorphic on the entire disk.
 :::
 
-::: solution
+::: {.solution}
 Let $a$ be the center of the disk. Since $f$ is continuous at $a$, it is bounded in some neighborhood of $a$.
 
 Define

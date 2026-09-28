@@ -19,7 +19,7 @@ audit:
   note: Repaired a transcription defect in the exercise statement before solving.
 ---
 
-::: exercise
+::: {.exercise}
 14. This exercise gives an asymptotic formula for log n!. A more refined asymptotic formula for $\Gamma ( s )$ as $s \to \infty$ (Stirling’s formula) is given in Appendix A.
 
 (a) Show that
@@ -37,7 +37,7 @@ $$
 (b) Show as a consequence that log $\Gamma ( n ) \sim n$ log n as $n \to \infty$ . In fact, prove that $\log \Gamma(n)=n\log n+O(n)$ as $n\to\infty$. [Hint: Use the fact that $\Gamma ( x )$ is monotonically increasing for all large x.]
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 I(x)=\int_x^{x+1}\log\Gamma(t)\,dt.

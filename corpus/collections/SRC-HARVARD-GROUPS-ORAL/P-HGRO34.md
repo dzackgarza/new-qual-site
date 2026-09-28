@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Write down a composition series for $S_4$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 V_4=\{e,(12)(34),(13)(24),(14)(23)\}
@@ -41,7 +41,7 @@ Then
 is a composition series.
 
 <1>1. Each term is normal in the next.
-::: proof
+::: {.proof}
 The subgroup $C_2$ is normal in the abelian group $V_4$. The Klein four group
 $V_4$ is normal in $A_4$ because it is the union of the identity and the three
 double transpositions, a conjugacy-stable set. Finally $A_4$ has index $2$ in
@@ -49,7 +49,7 @@ $S_4$, hence is normal.
 :::
 
 <1>2. Each factor is simple.
-::: proof
+::: {.proof}
 The factor orders are
 \[
 |C_2|=2,
@@ -64,7 +64,7 @@ Every group of prime order is simple.
 :::
 
 <1>3. Hence the displayed chain is a composition series for $S_4$.
-::: proof
+::: {.proof}
 By <1>1 it is a subnormal series, and by <1>2 all composition factors are
 simple.
 :::

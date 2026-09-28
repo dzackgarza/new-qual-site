@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $L/K$ be a finite Galois extension with
 \[
 \operatorname{Gal}(L/K)\cong C_{42}.

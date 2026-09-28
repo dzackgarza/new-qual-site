@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute
 \[
 \operatorname{Ext}^1_{\mathbb{Z}}(\mathbb{Q} \oplus \mathbb{Z} \oplus \mathbb{Z}_3 \oplus \mathbb{Z}_7,\ \mathbb{Z} \oplus \mathbb{Z}_6 \oplus \mathbb{Z}_{21}).

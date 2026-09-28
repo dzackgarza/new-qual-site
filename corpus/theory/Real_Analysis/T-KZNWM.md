@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-KZNWM
 kind: theorem
-title: Non-measurable sets exist
+title: Existence of a non-measurable subset of $\RR$
+slogan: 'Not every subset of the real line is Lebesgue measurable.'
 classification:
   areas:
   - real-analysis
@@ -14,5 +15,5 @@ review: draft
 ---
 
 ::: {.theorem}
-There is a non-measurable set $A\subseteq \RR$.
+There exists a set $A\subseteq \RR$ that is not [[D-MDJII|Lebesgue measurable]].
 :::

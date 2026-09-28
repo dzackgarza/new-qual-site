@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH8-7
 kind: problem
-title: Chapter 8 exercise 7
+title: Direct products are commutative up to isomorphism
 classification:
   areas:
   - algebra

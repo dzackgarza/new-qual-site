@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring and let $M$ be an $R$-module.
 An element $x \in M$ is a *torsion element* if there exists a non-zero $r \in R$ such that $rx = 0$ (or equivalently, $\operatorname{Ann}_R(x) \neq (0)$). Let $\operatorname{Tor}(M) = \{x \in M : \operatorname{Ann}_R(x) \neq (0)\}$ denote the set of torsion elements of $M$.
 

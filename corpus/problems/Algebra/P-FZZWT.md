@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Do you know what a group representation is?
 Do you know what the trace of a group representation is?
 :::

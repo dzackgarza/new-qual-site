@@ -9,15 +9,21 @@ topics:
 
 # Weil and Cartier
 
-The standard exchange in this topic has three moves: describe both kinds of divisor, say when they agree, then compute something.
+The topic has three parts: define Weil and Cartier divisors, identify when they agree, and compute the resulting class groups or Picard groups.
 
 [[D-5PQ5W]]
 
+[[PR-DIVZEROPOLE]]
+
 A Weil divisor is a subvariety of codimension one; a Cartier divisor is a local equation.
 Where the local rings are unique factorization domains a subvariety has a local equation and the two agree, and where they are not, it need not.
-On a smooth curve the question does not arise, which is why the standard questions ask for both notions *on curves* and then for the passage from $f \in K^*$ to a divisor: the valuation at each point is the only content.
+On a smooth curve every local ring is a discrete valuation ring, so codimension-one subvarieties and local equations are related by the valuation at each point.
 
 [[PR-Y5S7V]]
+
+[[D-CRVDEGREES]]
+
+[[T-MOVLEM]]
 
 ## Computing a Picard group
 
@@ -35,4 +41,8 @@ which computes $\Cl(\AA^n) = 0$ from $\Cl(\PP^n) = \ZZ$ and gives the class grou
 
 [[FE-DIVP1E]]
 
-Between them these settle most of what gets asked: a class group on a projective space or an open subset of one, and a $\Pic^0$ on a curve.
+Together these give model computations of class groups on projective spaces and open subsets, and of $\Pic^0$ on a curve.
+
+## Reduced divisors, multiplicities and pullback
+
+[[D-DIVREDMULT]]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIE-S15-06
 kind: problem
-title: Questions from Tie — Spring 2015, question 6
+title: Laurent series of $\frac1z+\frac{1}{z^2-1}$ in all annuli
 classification:
   areas:
   - complex-analysis

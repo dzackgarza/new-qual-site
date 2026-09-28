@@ -30,6 +30,6 @@ source:
     year: 2014
 ---
 
-::: remark
-Exam #8 lists [[P-23S3Z]] (Brouwer on $B^2$; same statement as Fall 2016 #8).
+::: {.remark}
+Problem 8, the Brouwer fixed point theorem on $B^2$, is the same problem as Fall 2016 Problem 8.
 :::

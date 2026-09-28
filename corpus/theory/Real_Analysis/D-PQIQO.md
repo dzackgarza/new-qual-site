@@ -13,10 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **dual** of a Hilbert space \( H \) is defined as 
-\[
-H\dual \da \theset{L: H\to \CC \suchthat L \text{ is continuous }}
-.\]
-
+::: {.definition}
+Let $H$ be a [[D-7QQUO|Hilbert space]] over $\CC$.
+The \dfn{dual} of $H$ is the set $H\dual$ of [[D-EPSKF|linear functionals]] $L\colon H\to \CC$ that are continuous with respect to the norm of $H$.
 :::

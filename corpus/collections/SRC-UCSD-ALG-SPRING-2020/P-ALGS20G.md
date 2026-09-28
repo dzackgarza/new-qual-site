@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a fixed prime.
 Suppose that $F$ is a field with the following property: given any field extension $F \subseteq K$ with $[K:F] < \infty$, then $[K:F]$ is divisible by $p$.
 

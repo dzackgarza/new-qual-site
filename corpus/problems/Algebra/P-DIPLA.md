@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $K/F$ be a finite Galois extension and let $E$ be an intermediate field ($F \subseteq E \subseteq K$).
 (1) Prove that $K/E$ is always Galois with $\operatorname{Gal}(K/E) \le \operatorname{Gal}(K/F)$.
 (2) Prove that $E/F$ is Galois if and only if $\operatorname{Gal}(K/E) \trianglelefteq \operatorname{Gal}(K/F)$.
 (3) Prove that when $E/F$ is Galois, $\operatorname{Gal}(E/F) \cong \operatorname{Gal}(K/F) / \operatorname{Gal}(K/E)$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 G=\operatorname{Gal}(K/F),\qquad H=\operatorname{Gal}(K/E).

@@ -14,12 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **center** of $G$ is defined as
-\[
-Z(G) = \ts{ g\in G \st [g, h] = e \, \forall h\in H}
-= \ts{ g\in G \st Z(g) = G } 
-,\]
-the subgroup of *central* elements:
-those $g\in G$ that commute with every element of $G$.
+::: {.definition}
+Let $G$ be a group.
+The \dfn{center} of $G$ is the subgroup
+$$
+Z(G) \coloneqq \theset{ g\in G \st gh = hg \text{ for all } h\in G}
+= \theset{ g\in G \st C_G(g) = G },
+$$
+where $C_G(g)$ is the [[D-PX64W|centralizer]] of $g$.
+Its elements are the \dfn{central} elements of $G$.
 :::

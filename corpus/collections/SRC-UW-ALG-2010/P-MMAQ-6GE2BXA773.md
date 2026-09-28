@@ -18,7 +18,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, and let $G=\text{GL}_2(\mathbb F_p)$.
 
 - Compute the order of $G$, $|G|$.
@@ -36,7 +36,7 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The order of $G=\operatorname{GL}_2(\mathbb F_p)$ is
 \[
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).

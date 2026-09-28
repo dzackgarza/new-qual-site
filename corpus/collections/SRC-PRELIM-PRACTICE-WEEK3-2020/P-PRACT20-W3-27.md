@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W3-27
 kind: problem
-title: "Week 3: Calculus II (Part 2) & Calculus III, problem 27"
+title: Line integral of $(xy,x^2y^3)$ around a triangle
 classification:
   areas:
   - real-analysis

@@ -18,12 +18,12 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $F = K[\alpha_1, \cdots, \alpha_n]$ where $\alpha_1^{n_1} \in K$ for some $n_1$ and for each $i$ we have $\alpha_i^{n_i} \in K[\alpha_1, \cdots \alpha_{i-1}]$ for some powers $n_i$.
 We want to show that $F = E[\beta_1, \cdots \beta_m]$ where each $\beta_i$ satisfies a similar condition.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 Let $F=K(\alpha_1,\dots,\alpha_n)$ be radical over $K$, and let
 $K\subseteq E\subseteq F$.

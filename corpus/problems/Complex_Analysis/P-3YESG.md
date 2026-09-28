@@ -19,7 +19,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 State the standard Schwarz reflection principle involving reflection across the real axis.
 
 Give a linear fractional transformation $T$ mapping $\DD$ to $\HH$.

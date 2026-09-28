@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-043
 kind: problem
-title: Kent State ring-theory qualifying problem 43
+title: The quotient by the intersection of two maximal ideals is a product of two fields
 classification:
   areas: [algebra]
   topics: []

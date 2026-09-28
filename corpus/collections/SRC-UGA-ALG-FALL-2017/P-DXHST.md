@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Suppose the group $G$ acts on the non-empty set $A$.
 Assume this action is **faithful** ($\ker(G \to \operatorname{Sym}(A)) = \{1\}$) and **transitive** (for all $a, b \in A$, there exists $g \in G$ such that $g \cdot a = b$).
 
@@ -31,7 +31,7 @@ $$
 (b) Suppose that $G$ is **abelian**. Prove that $|G| = |A|$, and deduce that every abelian transitive subgroup of the symmetric group $S_n$ has order exactly $n$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the kernel of a transitive action is the normal core $\bigcap_{g \in G} g G_a g^{-1} = \{1\}$, and show that transitive faithful abelian actions are regular ($G_a = \{1\}$ and $|G| = |A|$).
 
 <1>1. Part (a): Proof that the Normal Core $\bigcap_{\sigma \in G} \sigma G_a \sigma^{-1} = \{1\}$:

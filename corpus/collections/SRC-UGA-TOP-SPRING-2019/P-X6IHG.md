@@ -27,7 +27,7 @@ audit:
   note: Verified the Lefschetz-number calculation and the translation example, including continuity and degree of its one-point-compactification extension.
 ---
 
-::: problem
+::: {.problem}
 (i) Use the Lefschetz fixed point theorem to show that any degree-one map
 \[
 f:S^2\longrightarrow S^2

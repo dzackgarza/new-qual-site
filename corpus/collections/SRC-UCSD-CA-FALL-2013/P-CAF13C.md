@@ -19,13 +19,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic on a neighborhood of the closed unit disk $\overline{\mathbb{D}}$.
 Suppose $\sup_{z \in \partial\mathbb{D}} |f(z)| \leq 1$, and that $f$ has no fixed points on the boundary $\partial\mathbb{D}$ ($f(z) \ne z$ for all $|z| = 1$).
 Prove that $f$ has **exactly one fixed point** in the open unit disk $\mathbb{D}$.
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 h_t(z)=t f(z)-z,\qquad 0\le t\le1.

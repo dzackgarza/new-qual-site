@@ -9,10 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Re-transcribed from Chapter 5 review Question 6 in assets/attachments/extracted/Cracking_the_GRE_Mathematics_Subject.md (Mistral OCR) and checked against the source scans in assets/attachments/gre-math-ch5-review/, replacing the earlier chapter-5.pdf transcription.
 ---
 
 ::: {.problem}
-The vectors $(-1,1,1)$, $(1,1,1)$, and $(1,-1,k)$ form a basis for $\mathbb R^3$ for all real $k$ except which value?
+The vectors $\mathbf{v}_1 = (-1, 1, 1)$, $\mathbf{v}_2 = (1, 1, 1)$, and $\mathbf{v}_3 = (1, -1, k)$ form a basis for $\RR^3$ for all real values of $k$ EXCEPT $k =$
 
-(A) $-2$  (B) $-1$  (C) $0$  (D) $1$  (E) $2$
+(A) $-2$
+(B) $-1$
+(C) $0$
+(D) $1$
+(E) $2$
 :::

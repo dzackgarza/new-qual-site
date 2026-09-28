@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that $\RR$ is separable.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The subset $\mathbb Q\subset\mathbb R$ is countable.
-::: proof
+::: {.proof}
 The map
 $$
 \mathbb Z\times\mathbb Z_{>0}\longrightarrow\mathbb Q,
@@ -37,7 +37,7 @@ is surjective, and $\mathbb Z\times\mathbb Z_{>0}$ is countable.
 :::
 
 <1>2. The subset $\mathbb Q$ is dense in $\mathbb R$.
-::: proof
+::: {.proof}
 Let $(a,b)$ be a nonempty open interval. Choose $q\in\mathbb Z_{>0}$ with
 $q(b-a)>1$. Then there is an integer $p$ with
 $$

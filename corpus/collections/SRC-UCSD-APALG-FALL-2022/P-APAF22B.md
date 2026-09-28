@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional complex inner product space of dimension $n$, and $\phi \colon V \to V$ a linear map.
 Suppose that $B$ is an orthonormal basis for $V$ such that the matrix
 \[

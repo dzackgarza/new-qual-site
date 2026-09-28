@@ -29,7 +29,7 @@ audit:
 For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A \in M_n(\mathbb{Q})$ such that $A^8 = I$ but $A^4 \neq I$.
 :::
 
-::: solution
+::: {.solution}
 The numbers of similarity classes for $n=3,4,5$ are
 respectively $0,1,2$.
 
@@ -47,7 +47,7 @@ E_1=\mathbb Q[x]/(x-1),\quad E_2=\mathbb Q[x]/(x+1),
 E_8=\mathbb Q[x]/(x^4+1).
 $$
 
-::: proof
+::: {.proof}
 Factor
 $$
 x^8-1=(x-1)(x+1)(x^2+1)(x^4+1).
@@ -78,7 +78,7 @@ exactly uniqueness of the similarity class.
 
 <1>2. The condition $A^4\ne I$ is equivalent to $d\geq1$.
 
-::: proof
+::: {.proof}
 On $E_1,E_2,E_4$, the polynomial $x^4-1$ acts by zero,
 since their defining polynomials divide it. On $E_8$ one
 has $x^4=-1$, so $x^4-1$ acts as multiplication by $-2$.
@@ -89,7 +89,7 @@ at least one such summand occurs.
 
 <1>3. The dimensions $3,4,5$ yield exactly the stated counts.
 
-::: proof
+::: {.proof}
 For $n=3$, the inequalities $d\geq1$ and $4d\leq n$
 are incompatible, so there are no such matrices.
 For $n=4$, the only possibility is $(a,b,c,d)=(0,0,0,1)$.

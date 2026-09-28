@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 How many automorphisms does the abstract field $\CC$ have?
 How can an automorphism of a subfield, for example $\sqrt2\mapsto-\sqrt2$ on $\QQ(\sqrt2)$, be extended to an automorphism of $\CC$?
 :::

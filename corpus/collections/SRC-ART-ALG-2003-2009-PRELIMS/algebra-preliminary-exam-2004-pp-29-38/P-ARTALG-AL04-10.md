@@ -28,18 +28,18 @@ audit:
   note: "Checked irreducibility and failure of normality for the real cubic, both image-order divisibilities in S3, equality of the action kernel with the index-three subgroup, and the final Galois correspondence."
 ---
 
-::: problem
+::: {.problem}
 (a) Give an example of an extension of degree 3 over $\mathbb{Q}$ which is not Galois over $\mathbb{Q}$.
 
 (b) Suppose $K$ is a Galois extension of $\mathbb{Q}$ with $[K:\mathbb{Q}] = 105$, and that $L$ is a subfield of $K$ with $[L:\mathbb{Q}] = 3$.
 Show that $L$ is Galois over $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. For part (a), $\mathbb Q(\sqrt[3]{2})$ is a non-Galois
 extension of degree $3$.
 
-::: proof
+::: {.proof}
 Let $a=\sqrt[3]{2}>0$. Eisenstein's criterion at $2$ makes
 $x^3-2$ irreducible over $\mathbb Q$, so
 $[\mathbb Q(a):\mathbb Q]=3$ [@DF04]. The other two roots
@@ -53,7 +53,7 @@ there. The extension is not normal and hence not Galois.
 <1>2. For part (b), $H=\operatorname{Gal}(K/L)$ is a normal
 subgroup of $G=\operatorname{Gal}(K/\mathbb Q)$.
 
-::: proof
+::: {.proof}
 The finite Galois correspondence gives $|G|=105$ and
 $[G:H]=[L:\mathbb Q]=3$, hence $|H|=35$ [@DF04].
 Let $G$ act by left multiplication on the three left cosets
@@ -72,7 +72,7 @@ that a subgroup of index three is always normal.
 
 <1>3. The field $L$ in part (b) is Galois over $\mathbb Q$.
 
-::: proof
+::: {.proof}
 An intermediate field of a finite Galois extension is Galois
 over the base exactly when its corresponding subgroup is normal
 [@DF04]. Apply this criterion to the subgroup in step <1>2.

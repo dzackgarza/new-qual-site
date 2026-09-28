@@ -29,14 +29,14 @@ If $\ts{I_j}$ is any linearly ordered indexed set of proper ideals in a ring $R$
 :::
 
 
-::: solution
+::: {.solution}
 Let
 $$
 J=\bigcup_j I_j.
 $$
 
 <1>1. The union $J$ is an ideal of $R$.
-::: proof
+::: {.proof}
 First, $0\in I_j$ for every $j$, so $0\in J$.
 
 Let $x,y\in J$. Then $x\in I_j$ and $y\in I_k$ for some $j,k$. Because the
@@ -63,7 +63,7 @@ Hence $J$ is an ideal.
 :::
 
 <1>2. The ideal $J$ is proper.
-::: proof
+::: {.proof}
 If $J=R$, then in particular
 $$
 1\in J.

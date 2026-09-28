@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-EWXRO
 kind: proposition
-title: Closure of measurable functions under operations
+title: Closure of measurable functions under algebraic operations and limits
+slogan: 'Measurability is preserved by basic algebra, countable sup/inf, limsup/liminf, and pointwise limits.'
 classification:
   areas:
   - real-analysis
@@ -13,19 +14,11 @@ review: draft
 ---
 
 ::: {.proposition}
-$\mcm\dash$measurable functionals are closed under
+Let $(X,\mcm)$ be a measurable space [@Fol13].
 
-- Sums
+(a) If $f,g\colon X\to\RR$ are [[D-DHFN4|measurable]], then $f+g$, $fg$, $\max(f,g)$, and $\min(f,g)$ are measurable.
 
-- Products
+(b) If $f_n\colon X\to[-\infty,\infty]$ are measurable for $n\geq1$, then $\sup_n f_n$, $\inf_n f_n$, $\limsup_n f_n$, and $\liminf_n f_n$ are measurable; if $f(x)\coloneqq\lim_n f_n(x)$ exists for every $x\in X$, then $f$ is measurable.
 
-- Sups/infs
-
-- Limsups/Liminfs
-
-- Limits when they exist, and the limiting function is measurable.
-
-- $\max(f, g)$ and $\min(f, g)$.
-
-Characteristic functions on measurable sets are automatically measurable, since $E\in \mcm \implies E = \chi_E\inv(\ts{1})$.
+(c) For $E\subseteq X$, the characteristic function $\chi_E$ is measurable if and only if $E\in\mcm$.
 :::

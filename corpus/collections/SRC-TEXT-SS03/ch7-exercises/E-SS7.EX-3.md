@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3. In line with the previous exercise, we consider the Dirichlet series for $1 / \zeta$
 
 (a) Prove that for $\operatorname { R e } ( s ) > 1$
@@ -40,7 +40,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For $\Re s>1$, the Euler product converges absolutely:
 \[
 \zeta(s)=\prod_p(1-p^{-s})^{-1}.

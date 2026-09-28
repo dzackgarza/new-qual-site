@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: problem
+::: {.problem}
 Consider $L^2([0, 1])$ and define
 \[
 e_0(x) &= 1 \\

@@ -24,7 +24,7 @@ audit:
   note: Verified that the splitting field is Q(sqrt(2),sqrt(3)), giving Galois group C2 x C2 and exactly the three quadratic intermediate fields.
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field over $\mathbb{Q}$ of $f(x) = x^4 - 4x^2 + 1$.
 Find $\mathrm{Gal}(K/\mathbb{Q})$, and find all fields $E$ such that $\mathbb{Q} \subsetneq E \subsetneq K$.
 :::

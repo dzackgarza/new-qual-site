@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega \subseteq \mathbb{C}$ be an open domain, and let $T \subset \Omega$ be a closed triangle whose interior $T^\circ \subset \Omega$.
 1. Assuming $f \in C^1(\Omega)$ (meaning $f(z) = u(x, y) + i v(x, y)$ has continuous real partial derivatives), apply **Green's Theorem** and the Cauchy-Riemann equations to prove Cauchy's Theorem on triangles:
 $$\oint_{\partial T} f(z) \, dz = 0.$$
@@ -29,7 +29,7 @@ $$\oint_{\partial T} f(z) \, dz = 0.$$
 2. State **Goursat's Theorem** (which removes the assumption that $f'$ is continuous) and outline Goursat's proof via triangular subdivision.
 :::
 
-::: solution
+::: {.solution}
 Let $f=u+iv$ and $dz=dx+i\,dy$. Then
 \[
 \oint_{\partial T}f(z)\,dz

@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Recall that an inner automorphism of a group is an automorphism given by conjugation by an element of the group.
 An outer automorphism is an automorphism that is not inner.
 
@@ -31,7 +31,7 @@ An outer automorphism is an automorphism that is not inner.
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. The affine transformations of \(\mathbb F_5\),
 \[
 H=\{x\mapsto ax+b:a\in\mathbb F_5^\times,\ b\in\mathbb F_5\},
@@ -107,5 +107,4 @@ The stabilizer in \(S_6\) of the coset \(J\in S_6/J\) is exactly \(J\). Therefor
 The subgroup \(J\) is transitive on the six letters by <1>4, whereas \(\Phi(J)\) is a point stabilizer and hence intransitive by <1>6. Conjugating a subgroup inside \(S_6\) merely relabels the six letters, so conjugation preserves the multiset of orbit sizes; in particular it preserves transitivity. Therefore \(J\) and \(\Phi(J)\) are not conjugate in \(S_6\).
 
 If \(\Phi\) were inner, say \(\Phi(g)=sgs^{-1}\), then \(\Phi(J)=sJs^{-1}\) would be conjugate to \(J\), a contradiction. Hence \(\Phi\) is an outer automorphism of \(S_6\).
-:::
 :::

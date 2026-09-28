@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use $n$-th roots of unity (i.e. solutions of $z^{n}-1=0$ ) to show that
 
 $$
@@ -29,7 +29,7 @@ z_{1} z_{2} \cdots z_{n}=(-1)^{n} c_{n} \text { (not used) }
 $$
 :::
 
-::: solution
+::: {.solution}
 The final summand in the displayed sine identity is missing its $\sin$ in the
 source. With that typographical correction, both identities follow at once
 from the $n$-th roots of unity.

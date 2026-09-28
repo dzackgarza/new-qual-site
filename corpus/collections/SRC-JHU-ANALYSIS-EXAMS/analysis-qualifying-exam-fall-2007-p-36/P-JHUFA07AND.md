@@ -25,12 +25,12 @@ audit:
   note: "Checked divergence for n at most one, the branch on the annular sector for nonintegral n, its unique pole, both arc estimates and the phase cancellation giving the real value."
 ---
 
-::: problem
+::: {.problem}
 For real $n$, determine when $\int_0^\infty (1+x^n)^{-1}\,dx$
 converges, and use residue calculus to evaluate it when finite.
 :::
 
-::: solution
+::: {.solution}
 The integral diverges to $+\infty$ for $n\leq1$. For $n>1$,
 $$
 \boxed{\int_0^\infty\frac{dx}{1+x^n}
@@ -39,7 +39,7 @@ $$
 
 <1>1. The exact convergence range is $n>1$.
 
-::: proof
+::: {.proof}
 For $n>1$, the integrand is at most one on $(0,1)$
 and at most $x^{-n}$ on $[1,\infty)$, so both ends
 are integrable. If $n\leq0$, it is at least $1/2$ for
@@ -50,7 +50,7 @@ divergence in all the remaining real cases.
 
 <1>2. An annular sector contains exactly one simple pole.
 
-::: proof
+::: {.proof}
 Fix $n>1$ and set $\theta=2\pi/n<2\pi$. Choose a
 logarithm branch on an open sector slightly wider than
 $0\leq\arg z\leq\theta$, and define
@@ -80,7 +80,7 @@ $-2\pi i\zeta/n$ [@SS03].
 
 <1>3. The arcs vanish and the phase factors simplify.
 
-::: proof
+::: {.proof}
 The outer and inner arc integrals have moduli bounded by
 $$
 \frac{\theta R}{R^n-1}\longrightarrow0,

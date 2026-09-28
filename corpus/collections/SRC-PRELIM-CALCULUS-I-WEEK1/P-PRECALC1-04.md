@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-04
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 4'
+title: Minimum of $e^x-cx$
 classification:
   areas:
   - prelim

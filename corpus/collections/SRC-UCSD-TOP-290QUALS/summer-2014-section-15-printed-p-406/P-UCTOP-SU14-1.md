@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Compute the fundamental group and homology groups of the space obtained by removing the union of the three coordinate axes from $\mathbb{R}^3$.
+:::
 
 ::: {.solution}
 <1>1. Radial projection gives a deformation retraction

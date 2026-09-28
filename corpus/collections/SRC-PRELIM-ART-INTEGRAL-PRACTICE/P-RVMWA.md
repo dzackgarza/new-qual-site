@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Evaluate the antiderivatives
 \[
 \int\sin^2x\,dx,\quad \int\cos^2x\,dx,\quad
@@ -40,7 +40,7 @@ and
 \]
 :::
 
-::: solution
+::: {.solution}
 Using the power-reduction identities and elementary substitutions,
 \[
 \boxed{\int\sin^2x\,dx=\frac12(x-\sin x\cos x)+C,}

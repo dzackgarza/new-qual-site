@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-::: exercise
+::: {.exercise}
 - Show that any disjoint intervals is countable.
 :::
 

@@ -25,7 +25,7 @@ a. Prove that $A \Rightarrow B$.
 b. Give an example of open sentences $P(x)$ and $Q(x)$ to show that $B \Rightarrow A$ need not be true.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Assume $A$, and suppose $\forall x\,P(x)$.
 :::
 
@@ -49,10 +49,8 @@ P(x): x=0,
 \qquad
 Q(x): x=1.
 \]
-:::
 
 <1>5. For these predicates, $B$ is true but $A$ is false.
 ::: {.proof}
 The antecedent $\forall x\,P(x)$ of $B$ is false, so $B$ is true. But at $x=0$, the statement $P(0)$ is true and $Q(0)$ is false; therefore $P(0)\Rightarrow Q(0)$ is false, so $A$ is false.
-:::
 :::

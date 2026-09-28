@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/Algebra_Final_Solns 1.pdf",
+  "source_pdf_sha256": "75d9773517a214758c59c3b4c5e274ff27f6e2b17b1415fc1a0f962e4fb60aa2",
+  "source_pages": 4,
+  "extracted_markdown": "assets/attachments/extracted/Algebra_Final_Solns 1.md",
+  "extracted_markdown_sha256": "499fcf4f2c94821b5f2cb57e2d7c5133a0d0130ddec37886b0aa1a0adf36de63",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract 'assets/attachments/Algebra_Final_Solns 1.pdf' --language en",
+  "generated_at": "2026-09-16",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Algebra_Final_Solns 1.md",
+  "old_unknown_provenance_sha256": "3a3b6d8e303eae5604ac3d65df37434c1d9119d864ee348bd0e562a6838aa933",
+  "old_unknown_provenance_byte_identical": false,
+  "known_source_or_extractor_defects": [
+    "MinerU Flash drops the lower part of page 2, the statement of problem 5 and the first paragraph of its solution, with and without --ocr and with --pages 2; that passage was read from the page 2 image and inserted after problem 4. The earlier checked-in extraction carried an invented problem 5 (Galois orbits and products of linear factors) at that location."
+  ]
+}

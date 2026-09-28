@@ -25,7 +25,7 @@ audit:
   note: "Checked the counterexample to the unqualified statement, holomorphy of the limit, the positive minimum on the contour, and equality of finite zero counts with multiplicities."
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be open and contain the closure
 $\overline D$ of a unit disk. Suppose holomorphic functions
 $f_n:U\to\mathbb C$ converge uniformly on compact subsets
@@ -35,7 +35,7 @@ $f_n$ and $f$ have the same number of zeros in $D$, counted
 with multiplicity.
 :::
 
-::: remark
+::: {.remark}
 Boundary nonvanishing cannot be dropped. On the unit disk
 centered at zero, $f_n(z)=z-(1-1/n)$ for $n\geq2$ converges
 locally uniformly on the plane to $f(z)=z-1$. Each $f_n$
@@ -43,10 +43,10 @@ has one zero in the disk, while $f$ has none there; its
 zero is on the boundary.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The limit is holomorphic and has a positive boundary modulus minimum.
 
-::: proof
+::: {.proof}
 The local uniform limit theorem makes $f$ holomorphic
 on $U$ [@SS03]. Since $f$ is continuous and nonzero on
 the compact circle $\partial D$,
@@ -63,7 +63,7 @@ Each zero has finite multiplicity by its Taylor expansion.
 
 <1>2. Uniform convergence on the boundary gives the same zero count.
 
-::: proof
+::: {.proof}
 Choose $N$ so that for every $n\geq N$,
 $$
 \sup_{z\in\partial D}|f_n(z)-f(z)|<\delta.

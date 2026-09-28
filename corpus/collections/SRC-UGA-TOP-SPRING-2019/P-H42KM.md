@@ -26,7 +26,7 @@ audit:
   note: Replaced the incomplete argument and Z/mZ typo with the mapping-cone CW description and the van Kampen presentation <a | a^k>.
 ---
 
-::: problem
+::: {.problem}
 For topological spaces $X,Y$, the mapping cone $C(f)$ of a map
 \[
 f:X\longrightarrow Y

@@ -25,7 +25,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Recall that a function $f : (a, b) \to \mathbb{R}$ (with $-\infty \leq a < b \leq \infty$) is called convex if
 $$
 f((1-\lambda)x + \lambda y) \leq (1-\lambda)f(x) + \lambda f(y), \quad \forall \lambda \in (0, 1), x, y \in (a, b).
@@ -39,9 +39,9 @@ $$
 (b) Show that $f$ is convex if and only if $f$ is absolutely continuous on every compact subinterval $[c, d]$ of $(a, b)$ and $f'$ is increasing a.e.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Record the three-point secant-slope inequality for a convex function.
-::: proof
+::: {.proof}
 For $u<v<w$, convexity at
 \[
 v=(1-\lambda)u+\lambda w,
@@ -75,7 +75,7 @@ Thus for every $u<v<w$,
 :::
 
 <1>2. Prove the forward implication in part (a).
-::: proof
+::: {.proof}
 Write
 \[
 s(u,v):=\frac{f(v)-f(u)}{v-u}.
@@ -101,7 +101,7 @@ Hence in every case
 :::
 
 <1>3. Prove the converse implication in part (a).
-::: proof
+::: {.proof}
 Assume the stated secant-slope inequality. Let $x<z<y$. Apply it with
 \[
 x'=x,
@@ -128,7 +128,7 @@ This is exactly convexity.
 :::
 
 <1>4. A convex function is locally absolutely continuous and has an a.e.-increasing derivative.
-::: proof
+::: {.proof}
 Let $[c,d]\subset(a,b)$ be compact. Choose
 \[
 a<c_0<c<d<d_0<b.
@@ -151,7 +151,7 @@ Therefore $f'$ is increasing on the full-measure set where it exists, i.e. incre
 :::
 
 <1>5. Local absolute continuity plus an a.e.-increasing derivative implies convexity.
-::: proof
+::: {.proof}
 Assume $f$ is absolutely continuous on compact subintervals and that $f'$ is increasing a.e. Let $x<z<y$ in $(a,b)$. Absolute continuity gives
 \[
 f(z)-f(x)=\int_x^z f'(s)\,ds,

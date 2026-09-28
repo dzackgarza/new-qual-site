@@ -5,4 +5,4 @@ order: 11
 
 # Resources
 
-UCSD Math 202 exam papers are on [the Sources listing](exams.html).
+UCSD Math 202 exam papers are listed in the [Sources listing](exams.html).

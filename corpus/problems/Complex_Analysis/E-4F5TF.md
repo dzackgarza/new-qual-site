@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 \int_{\bd\DD} {e^z\over z^2}\dz
@@ -21,7 +21,7 @@ Compute
 
 :::
 
-:::{.solution}
+::: {.solution}
 By Cauchy's formula,
 \[
 \int {f(z) \over (z-0)^2}\dz = 2\pi i f^{(1)}(0) = 2\pi i

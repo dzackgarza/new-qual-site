@@ -24,7 +24,9 @@ audit:
 
 ---
 
+::: {.problem}
 Use cellular approximation to show that the $n$-skeleta of homotopy equivalent CW complexes without cells of dimension $n+1$ are also homotopy equivalent.
+:::
 
 ::: {.solution}
 Let \(X\) and \(Y\) be homotopy equivalent CW complexes, and suppose neither has cells of dimension \(n+1\). Choose homotopy inverse maps

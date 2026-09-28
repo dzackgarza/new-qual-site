@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Prove or give a counterexample: Let $G$ and $H$ be two subgroups of the matrix group $\mathrm{GL}_2(\mathbb{C})$ which satisfy $G\cong H$ (group isomorphism).
 Then the invariant rings $\mathbb{C}[x,y]^G$ and $\mathbb{C}[x,y]^H$ have the same Hilbert series.
 :::

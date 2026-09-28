@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Show that $\mathbb{CP}^2$ has no orientation reversing self-homeomorphism.
 :::
 

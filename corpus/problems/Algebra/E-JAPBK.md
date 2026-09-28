@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show $\nilrad{R} \normal R$ is an ideal and $A/\nilrad{R}$ is reduced.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - $R\nilrad{R} \subseteq R$:

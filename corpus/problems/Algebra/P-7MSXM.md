@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What's Cayley's theorem?
 Give an example of a group of order $n$ that embeds in $S_m$ for some $m$ smaller than $n$.
 

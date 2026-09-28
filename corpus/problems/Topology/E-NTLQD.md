@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Show that a finite product or union compact spaces is again compact.
 
 #### Exercise

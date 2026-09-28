@@ -3,6 +3,7 @@ schema: qual/card@1
 id: C-EBAGE
 kind: corollary
 title: Lipschitz implies uniformly continuous
+slogan: 'A global Lipschitz bound gives uniform continuity.'
 classification:
   areas:
   - topology
@@ -15,5 +16,6 @@ review: draft
 ---
 
 ::: {.corollary}
-Lipschitz continuity implies uniform continuity (take $\delta = \eps/C$)
+Let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces and let $f\colon X\to Y$ be Lipschitz: there exists $C > 0$ such that $d_Y(f(x_1), f(x_2)) \leq C\, d_X(x_1, x_2)$ for all $x_1, x_2 \in X$.
+Then $f$ is [[D-WGYSB|uniformly continuous]].
 :::

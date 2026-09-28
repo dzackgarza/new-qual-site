@@ -32,7 +32,7 @@ $$
 determine the quotient topology on $A$ induced by $p$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the quotient topology $\mathcal{T}_A$ on the 3-point set $A = \{a, b, c\}$ induced by the sign partition map $p: \mathbb{R} \to A$.
 
 <1>1. Definition of quotient topology:

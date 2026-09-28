@@ -31,7 +31,7 @@ Show that if $f$ is an isometry and $X$ is compact, then $f$ is bijective and he
 [Hint: If $a \notin f(X)$, choose $\epsilon$ so that the $\epsilon$-neighborhood of $a$ is disjoint from $f(X)$. Set $x_1 = a$, and $x_{n+1} = f(x_n)$ in general. Show that $d(x_n, x_m) \geq \epsilon$ for $n \neq m$.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that an isometry $f: X \to X$ on a compact metric space $(X, d)$ is surjective, and deduce that $f$ is a homeomorphism.
 
 <1>1. $f$ is injective and continuous:

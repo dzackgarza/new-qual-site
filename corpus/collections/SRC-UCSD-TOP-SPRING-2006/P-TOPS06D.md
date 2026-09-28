@@ -19,7 +19,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a CW complex with one $0$-cell, one $1$-cell, two $2$-cells and one $4$-cell.
 Assume that the attaching maps of the two $2$-cells to the $1$-cell have degree $2$ and $4$ respectively.
 

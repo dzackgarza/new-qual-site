@@ -18,7 +18,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Let $t > 0$ be given and fixed, and define $F(z)$ by
 $$
 F(z) = \prod_{n=1}^{\infty} (1 - e^{-2\pi n t} e^{2\pi i z}).
@@ -34,7 +34,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Write $q=e^{-2\pi t}\in(0,1)$. On every compact subset of $\mathbb C$, the series $\sum_{n\ge1}|q^n e^{2\pi iz}|$ converges uniformly, so
 \[
 F(z)=\prod_{n\ge1}(1-q^n e^{2\pi iz})

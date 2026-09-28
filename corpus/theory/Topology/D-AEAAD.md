@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-AEAAD
 kind: definition
-title: Continuous Map
+title: Continuous map
 classification:
   areas:
   - topology
@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: {.definition}
-A map $f:X\to Y$ between topological spaces is **continuous** if and only if whenever $U \subseteq Y$ is open, $f ^{-1} (U) \subseteq X$ is open.
+Let $X$ and $Y$ be topological spaces.
+A map $f\colon X\to Y$ is \dfn{continuous} if $f\inv(U)$ is open in $X$ for every open set $U \subseteq Y$.
 :::

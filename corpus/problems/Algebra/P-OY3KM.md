@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) State the definition of a **Noetherian ring** (give all three equivalent characterizations).
 (2) Give standard examples and non-examples of Noetherian rings.
 :::
 
-::: solution
+::: {.solution}
 For a ring $R$, the following are equivalent:
 
 1. every ascending chain of ideals stabilizes;

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-CRVCAST
 kind: theorem
 title: Castelnuovo's bound for space curves
+slogan: 'Castelnuovo is the balanced-quadric bound: maximal-genus nonplanar space curves lie on a quadric with bidegrees as equal as possible.'
 classification:
   areas:
   - algebraic-geometry
@@ -35,7 +36,8 @@ The bound is attained for every $d \geq 3$, and a curve attaining it lies on a q
 ::: {.remark}
 The bound and its equality case are one statement: the extremal curves are the balanced curves on a quadric.
 Type $(a,a)$ on a smooth quadric has $d = 2a$ and $g = (a-1)^2 = \tfrac{1}{4}d^2 - d + 1$, and type $(a,a+1)$ has $d = 2a+1$ and $g = a^2 - a$, which is the odd formula.
-The extremal curves are the balanced curves on a quadric, so Castelnuovo's bound is remembered by remembering the quadric and balancing the bidegree.
+Thus the equality cases are exactly the balanced bidegrees on a quadric.
 
+The contrast with plane curves explains the nonplanarity hypothesis.
 A plane curve of degree $d$ has $g = \binom{d-1}{2} \approx \tfrac{1}{2}d^2$, roughly twice Castelnuovo's bound: spreading a curve out into $\PP^3$ costs genus, and the hypothesis that $C$ is not planar is what makes the smaller bound apply.
 :::

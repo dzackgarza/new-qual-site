@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring84.pdf",
+  "source_pdf_sha256": "2c6dfa284fec9bf62fd03fbff930e5d04ec0d8bd968040d0302587e231ffd1dd",
+  "extracted_markdown": "assets/attachments/Spring84_extracted.md",
+  "extracted_markdown_sha256": "7d4fe62e4742b62363aebb2062cf73153796ddca5e6742396dcd356714c02ea3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring84.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring84.md",
+  "old_unknown_provenance_sha256": "7d4fe62e4742b62363aebb2062cf73153796ddca5e6742396dcd356714c02ea3",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1984, containing Problems 1 through 20 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1984 collection represents all 20 source positions in order with 18 source-local cards plus exact canonical reuse of P-BERK87S-09 for Problem 9 and P-BKF81-18 for Problem 11. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $D$ is a Noetherian integral domain and $F$ is its field of fractions.
 Suppose $\mathfrak{a}$ is an ideal of $D$.
 Recall that every $D$-module homomorphism $\phi: \mathfrak{a} \to D$ is of the form $\phi(x) = cx$ for some $c \in F$.

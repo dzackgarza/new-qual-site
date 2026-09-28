@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of entire functions where
 
 - $f_n \to g$ pointwise for some $g:\CC\to\CC$.
@@ -28,7 +28,7 @@ Show that
 - $f_n\to g$ uniformly on every compact subset of $\CC$.
 :::
 
-:::{.solution}
+::: {.solution}
 Note that $g$ is entire by Morera's theorem, since $0 = \int_T f_n \to \int_T g$ by uniform convergence and the $f_n$ are holomorphic.
 By Cauchy's theorem, up to a constant we have
 \[

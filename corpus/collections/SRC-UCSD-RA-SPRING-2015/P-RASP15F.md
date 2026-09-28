@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $g_k = \chi_{[-1,1]} * \chi_{[-k,k]}$.
 Here $f * g$ is the convolution of $f$ and $g$.
 
@@ -37,9 +37,9 @@ Here $C_0(\mathbb{R})$ is the space of continuous functions which vanish at infi
 Hint: Use the open mapping theorem.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Compute $\|g_k\|_\infty$.
-::: proof
+::: {.proof}
 For $x\in\mathbb R$,
 \[
 g_k(x)
@@ -56,7 +56,7 @@ Since $k\ge1$, this length is at most $2$, and at $x=0$ it equals $2$. Therefore
 :::
 
 <1>2. Compute the inverse Fourier transform.
-::: proof
+::: {.proof}
 Use the convention
 \[
 \widehat f(\xi)=\int_{\mathbb R}e^{-2\pi ix\xi}f(x)\,dx.
@@ -82,7 +82,7 @@ This function is in $L^1(\mathbb R)$: it is bounded near $0$ and is $O(x^{-2})$ 
 :::
 
 <1>3. Show that the $L^1$ norms of the inverse transforms are unbounded.
-::: proof
+::: {.proof}
 For $0\le x\le1/4$, concavity of $\sin$ on $[0,\pi/2]$ gives
 \[
 \sin(2\pi x)\ge4x.
@@ -118,7 +118,7 @@ Summing over $1\le j\le\lfloor k/4\rfloor-1$ shows
 :::
 
 <1>4. Use the open mapping theorem to rule out surjectivity.
-::: proof
+::: {.proof}
 The Fourier transform
 \[
 \mathcal F:L^1(\mathbb R)\to C_0(\mathbb R)

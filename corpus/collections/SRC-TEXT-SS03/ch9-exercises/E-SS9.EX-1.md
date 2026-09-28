@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 1. Suppose that a meromorphic function $f$ has two periods $\omega _ { 1 }$ and $\omega _ { 2 }$ , with $\omega _ { 2 } / \omega _ { 1 } \in \mathbb { R }$
 
 (a) Suppose $\omega _ { 2 } / \omega _ { 1 }$ is rational, say equal to $p / q ,$ , where $p$ and $q$ are relatively prime integers.
@@ -25,7 +25,7 @@ Prove that as a result the periodicity assumption is equivalent to the assumptio
 To prove this, use the fact that $\{ m - n \tau \}$ is dense in R whenever $\tau$ is irrational and m, n range over the integers.
 :::
 
-::: solution
+::: {.solution}
 Write $\tau=\omega_2/\omega_1\in\mathbb R$.
 
 For (a), suppose $\tau=p/q$ with $(p,q)=1$. If $f$ has period $\omega_0=\omega_1/q$, then both

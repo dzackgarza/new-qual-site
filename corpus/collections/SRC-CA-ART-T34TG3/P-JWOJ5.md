@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 a. 
 Show (without using 3.8.9 in the S&S) that
 \[
@@ -29,7 +29,7 @@ Show that this identity is equivalent to S&S 3.8.9:
 .\]
 :::
 
-::: solution
+::: {.solution}
 For $0<r<1$, the function
 \[
 z\longmapsto \log(1-rz)

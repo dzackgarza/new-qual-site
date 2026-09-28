@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 What is the regular representation of a finite group $G$?
 State its character, decomposition into irreducible representations, and connection to the group algebra $\mathbb{C}[G]$.
 :::
 
-::: solution
+::: {.solution}
 The left regular representation of a finite group $G$ is the action on its group algebra
 \[
 \mathbb C[G]

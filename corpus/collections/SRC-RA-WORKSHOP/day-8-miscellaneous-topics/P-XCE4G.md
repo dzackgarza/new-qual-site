@@ -19,7 +19,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Let $f_n \colon [0,1) \to \mathbb{R}$ be the function defined by $$f_n(x):= \sum_{k=1}^n \frac{x^k}{1+x^k}.$$
 
 Prove that $f_n$ converges to a function $f \colon [0,1) \to \mathbb{R}$.

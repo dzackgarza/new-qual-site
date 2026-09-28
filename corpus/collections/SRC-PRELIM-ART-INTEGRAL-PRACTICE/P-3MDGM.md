@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 3. $\displaystyle \int \frac {\sec^3(x) + e^{\sin(x)}}{\sec(x)} ~dx = \color {blue} {\tan(x) + e^{\sin(x)}}$
 
 - **Solution:** $\frac {\sec ^3 (x) + e^{\sin(x)}}{\sec(x)} = \sec ^2 (x) + \cos (x) \cdot e^{\sin(x)}$

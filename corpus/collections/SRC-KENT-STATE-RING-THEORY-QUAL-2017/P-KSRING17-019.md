@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-019
 kind: problem
-title: Kent State ring-theory qualifying problem 19
+title: Chinese remainder theorem for $\mathbb Z_{mn}\cong\mathbb Z_m\times\mathbb Z_n$
 classification:
   areas: [algebra]
   topics: []

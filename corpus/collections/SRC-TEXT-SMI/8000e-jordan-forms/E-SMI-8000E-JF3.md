@@ -41,9 +41,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Determine the Jordan form of $A$.
-::: proof
+::: {.proof}
 A direct determinant computation gives
 $$
 \operatorname{ch}_A(X)=(X-1)(X+1)^2.
@@ -70,7 +70,7 @@ In particular $A$ is diagonalizable.
 :::
 
 <1>2. Determine the Jordan form of $B$.
-::: proof
+::: {.proof}
 The characteristic polynomial is
 $$
 \operatorname{ch}_B(X)=(X-2)(X-1)^3.
@@ -106,7 +106,7 @@ $$
 :::
 
 <1>3. Determine the Jordan form of $C$.
-::: proof
+::: {.proof}
 A determinant computation gives
 $$
 \operatorname{ch}_C(X)=(X-2)^5.

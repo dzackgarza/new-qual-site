@@ -34,7 +34,7 @@ f(x) = a_1 + \prod_{i=0}^n (x - a_i) \in K[x]
 *where $a_1 \neq 0$.*
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 K=\{a_0,a_1,\ldots,a_n\}
@@ -45,13 +45,13 @@ f(x)=a_1+\prod_{i=0}^n(x-a_i)\in K[x].
 \]
 
 <1>1. The polynomial $f$ is nonconstant.
-::: proof
+::: {.proof}
 The product has degree $n+1$, so adding the constant $a_1$ does not change its
 leading term. Hence $\deg f=n+1>0$.
 :::
 
 <1>2. The polynomial $f$ has no root in $K$.
-::: proof
+::: {.proof}
 Every $a\in K$ equals $a_j$ for some $j$. Substituting $a_j$ gives
 \[
 f(a_j)=a_1+\prod_{i=0}^n(a_j-a_i)=a_1,
@@ -61,7 +61,7 @@ $f(a_j)\ne0$. Thus no element of $K$ is a root.
 :::
 
 <1>3. Therefore $K$ is not algebraically closed.
-::: proof
+::: {.proof}
 An algebraically closed field has a root for every nonconstant polynomial over
 it. By <1>1 and <1>2, $f\in K[x]$ is nonconstant and has no root in $K$.
 :::

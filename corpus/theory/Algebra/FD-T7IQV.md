@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-T7IQV
 kind: definition
-title: Solvable Group
+title: Solvable finite group
 prompts:
 - When is a group solvable, in terms of its composition factors?
 classification:
@@ -16,5 +16,5 @@ review: draft
 ---
 
 ::: {.definition}
-A group is **solvable** iff it has a composition series with *abelian* composition factors.
+A finite group $G$ is \dfn{solvable} if it has a [[FD-PLAEO|composition series]] whose composition factors are all abelian.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal A$ be the set of functions $f:\NN\to\CC$, with pointwise addition and Dirichlet convolution
 \[
 (f*g)(n)=\sum_{d\mid n}f(d)g(n/d).
@@ -22,7 +22,7 @@ Let $\mathcal A$ be the set of functions $f:\NN\to\CC$, with pointwise addition 
 Show that $\mathcal A$ is a commutative ring. What further structure can be described?
 :::
 
-::: solution
+::: {.solution}
 Pointwise addition makes $\mathcal A$ an abelian group. We verify the multiplicative axioms for Dirichlet convolution.
 
 Commutativity follows by replacing each divisor $d\mid n$ by its complementary divisor $n/d$:

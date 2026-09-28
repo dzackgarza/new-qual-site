@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-TQ4J3
 kind: theorem
-title: Maps into contractible spaces are always nullhomotopic
+title: Maps into contractible spaces are nullhomotopic
+slogan: 'Every map into a contractible space is nullhomotopic.'
 classification:
   areas:
   - topology
@@ -13,5 +14,6 @@ review: draft
 ---
 
 ::: {.theorem}
-If $X$ is contractible, every map $f: Y \into X$ is nullhomotopic.
+Let $X$ be a [[D-K43GA|contractible]] space and $Y$ any space.
+Then every continuous map $f\colon Y \to X$ is [[D-MGRZP|nullhomotopic]].
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 2. **Main Idea**: Exact same idea as 1, just a more complicated check.
 
 Take $H(x, t) = P(tf(x) + (1-t)g(x))$.

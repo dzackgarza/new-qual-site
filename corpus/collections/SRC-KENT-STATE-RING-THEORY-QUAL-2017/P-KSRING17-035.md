@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-035
 kind: problem
-title: Kent State ring-theory qualifying problem 35
+title: The field $\mathbb Q(\sqrt 2)$ is a principal ideal domain not containing $\sqrt 3$
 classification:
   areas: [algebra]
   topics: []

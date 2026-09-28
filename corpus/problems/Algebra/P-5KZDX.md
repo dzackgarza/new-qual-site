@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define a perfect field. Prove that every finite field is perfect.
 :::
 

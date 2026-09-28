@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Find all the cube roots of $-2 - 2i$.
 :::
 

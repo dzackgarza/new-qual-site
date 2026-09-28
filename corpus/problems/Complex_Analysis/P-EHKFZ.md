@@ -22,14 +22,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f(z) = \sum_{n=-\infty}^\infty c_n z^n$ be analytic and one-to-one (univalent) in the open annulus $r_0 < |z| < R_0$.
 For $r_0 < r < R < R_0$, let $D(r, R) = \{z \in \mathbb{C} \mid r < |z| < R\}$ be the concentric sub-annulus.
 Prove that the area $S$ of the image domain $f(D(r, R))$ is finite and given by the series formula:
 $$S = \pi \sum_{n=-\infty}^\infty n |c_n|^2 (R^{2n} - r^{2n}).$$
 :::
 
-::: solution
+::: {.solution}
 Since $f$ is univalent and holomorphic on $D(r,R)$, the real Jacobian is
 \[
 J_f(z)=|f'(z)|^2,

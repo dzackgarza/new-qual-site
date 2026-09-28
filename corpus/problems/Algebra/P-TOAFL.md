@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order $10$.
 :::
 
-::: solution
+::: {.solution}
 Let $|G|=10=2\cdot5$.
 
 Sylow's theorem gives

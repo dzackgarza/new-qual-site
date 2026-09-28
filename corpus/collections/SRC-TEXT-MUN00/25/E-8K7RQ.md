@@ -22,7 +22,7 @@ What are the components and path components of $\mathbb{R}_\ell$?
 What are the continuous maps $f: \mathbb{R} \to \mathbb{R}_\ell$?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the connected components and path components of the lower limit line $\mathbb{R}_\ell$, and classify all continuous maps $f: \mathbb{R} \to \mathbb{R}_\ell$ from the standard real line.
 
 <1>1. Components and path components of $\mathbb{R}_\ell$:

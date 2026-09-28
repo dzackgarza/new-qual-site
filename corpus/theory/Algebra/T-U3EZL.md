@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-U3EZL
 kind: theorem
-title: Characterization of Prime Subfields
+title: Prime subfields are $\QQ$ or $\FF_p$
+slogan: 'A field contains a canonical copy of $\QQ$ in characteristic zero and $\FF_p$ in characteristic $p$.'
 classification:
   areas:
   - algebra
@@ -14,5 +15,6 @@ review: draft
 ---
 
 ::: {.theorem}
-The prime subfield of any field is isomorphic to either $\QQ$ or $\FF_p$ for some $p$.
+Let $F$ be a field.
+Its [[D-EOCCU|prime subfield]] is isomorphic to $\QQ$ if $\ch F=0$, and to $\FF_p$ if $\ch F=p>0$, in which case $p$ is prime.
 :::

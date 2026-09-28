@@ -25,7 +25,7 @@ audit:
 Show that if $H \leq K \trianglelefteq G$ and $H$ is characteristic in $K$, then $H \trianglelefteq G$.
 :::
 
-::: solution
+::: {.solution}
 Let $g\in G$. Since $K\trianglelefteq G$, conjugation by $g$ restricts to an automorphism
 \[
 c_g:K\longrightarrow K,

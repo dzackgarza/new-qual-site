@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-DLPTR
 kind: proposition
 title: Every free $R$-module admits a basis
+slogan: 'Free modules come with bases.'
 classification:
   areas:
   - algebra
@@ -15,5 +16,6 @@ review: draft
 ---
 
 ::: {.proposition}
-Every free \(R\dash\)module admits a basis (spanning $R\dash$linearly independent set).
+Let $R$ be a ring.
+Every [[D-LIEMF|free]] $R$-module admits a basis, that is, an $R$-linearly independent spanning set.
 :::

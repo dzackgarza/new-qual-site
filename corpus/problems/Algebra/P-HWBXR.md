@@ -22,12 +22,12 @@ audit:
 
 ---
 
-::: problem
+::: {.problem}
 Let $k$ be a field and let $f(x) \in k[x]$ be a polynomial of degree $\deg(f) \in \{2, 3\}$.
 Prove that $f(x)$ is irreducible in $k[x]$ if and only if $f(x)$ has no roots in $k$.
 :::
 
-::: solution
+::: {.solution}
 If $f$ is irreducible and had a root $a\in k$, then the factor theorem would give
 \[
 f(x)=(x-a)g(x)

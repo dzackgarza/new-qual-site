@@ -58,7 +58,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the continuity of functions $f, g, h: \mathbb{R} \to \mathbb{R}^\omega$ and the convergence of sequences $(\mathbf{w}_n), (\mathbf{x}_n), (\mathbf{y}_n), (\mathbf{z}_n)$ in the product, uniform, and box topologies on $\mathbb{R}^\omega$.
 
 <1>1. Part (a): Continuity of functions.

@@ -22,7 +22,7 @@ audit:
   note: "Verified maximality using the quotient by 2Z x Z and exhibited explicit nonzero orthogonal idempotents as zero divisors."
 ---
 
-::: problem
+::: {.problem}
 1. Does $\mathbb Z\times\mathbb Z$ have a maximal ideal?
    If so, give one.
 
@@ -30,9 +30,9 @@ audit:
    If so, give two nonzero zero divisors whose product is zero.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The ring $\mathbb Z\times\mathbb Z$ has maximal ideals.
-::: proof
+::: {.proof}
 For example, let
 $$
 M=2\mathbb Z\times\mathbb Z.
@@ -51,7 +51,7 @@ which is a field. Therefore $M$ is maximal.
 :::
 
 <1>2. The ring has nonzero zero divisors.
-::: proof
+::: {.proof}
 The two elements
 $$
 (1,0),\qquad(0,1)

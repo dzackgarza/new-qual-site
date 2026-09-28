@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give a sequence of holomorphic injective functions which converges uniformly on compact sets to a non-injective function.
 Show that this example describes the only possible failure of injectivity in such a limit.
 :::
 
-::: solution
+::: {.solution}
 On any domain $\Omega\subseteq\mathbb C$, the functions
 \[
 f_n(z)=\frac{z}{n}

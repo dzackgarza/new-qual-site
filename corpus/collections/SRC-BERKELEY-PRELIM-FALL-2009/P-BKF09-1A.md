@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF09-1A
 kind: problem
-title: Berkeley Fall 2009 prelim problem 1A
+title: Generating function $\sum p(k)z^k$ of a polynomial sequence is rational
 classification:
   areas:
   - prelim

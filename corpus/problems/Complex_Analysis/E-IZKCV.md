@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 \int_\RR {1 \over x^4 + 1} = {\pi \sqrt{2} \over 2} = {\pi \over \sqrt 2}
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 The integrand $f\in \bigo\qty{1\over z^4} \subseteq \bigo\qty{1\over z^{1+\eps}}$, so a semicircular contour works.
 Factoring the denominator: find a principal root 
 \[

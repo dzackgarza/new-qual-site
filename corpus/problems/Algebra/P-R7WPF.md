@@ -20,7 +20,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Do you know an example of a local ring?
 Another one?
 What about completions?

@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 On any closed surface $\Sigma_g$ of genus $g \geq 1$, it is possible to find a pair of simple closed curves (submanifolds homeomorphic to $S^1$) meeting transversely once.
 Use this fact together with intersection theory to show that any map $S^2 \to \Sigma_g$ has degree zero.
+:::
 
 ::: {.solution}
 <1>1. Choose oriented simple closed curves $\alpha,\beta\subset\Sigma_g$ meeting transversely in exactly one point.
@@ -34,7 +36,6 @@ The cup-product pairing of the Poincaré dual classes evaluates on the fundament
 $$
 H^2(\Sigma_g;\mathbb Z)\cong\mathbb Z.
 $$
-:::
 ::: {.proof}
 Its evaluation on the fundamental class is $\pm1$ by <1>2.
 :::
@@ -48,7 +49,6 @@ The group $H^1(S^2;\mathbb Z)$ is zero.
 $$
 f^*(u\smile v)=0.
 $$
-:::
 ::: {.proof}
 Naturality of cup products gives
 $$
@@ -59,6 +59,5 @@ $$
 <1>6. The degree of $f$ is zero.
 ::: {.proof}
 By <1>3, $u\smile v$ is an orientation generator of $H^2(\Sigma_g)$. The induced map on top cohomology is multiplication by $\deg f$. Since <1>5 says it sends this generator to zero, one must have $\deg f=0$.
-:::
 :::
 

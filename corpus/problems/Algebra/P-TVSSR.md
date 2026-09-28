@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Compute the Galois group of the cubic polynomial $f(x) = x^3 + 6x + 3$ over $\mathbb{Q}$.
 :::
 
-::: solution
+::: {.solution}
 The polynomial
 \[
 f(x)=x^3+6x+3

@@ -57,7 +57,7 @@ Show that $h$ is an isometric imbedding.
 (e) Show that $(Y, D)$ is complete.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct the metric completion $(Y, D)$ of a metric space $(X, d)$ via equivalence classes of Cauchy sequences and prove its completeness and universality.
 
 <1>1. Part (a): Equivalence relation and well-defined metric $D$.

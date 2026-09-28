@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Assume that the eigenvalues of a Hermitian matrix $A\in M_n$ are arranged in the order
 \[
 \lambda_n(A)\le\cdots\le\lambda_2(A)\le\lambda_1(A).

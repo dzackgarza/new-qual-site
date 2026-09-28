@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 1. Prove that
 
 $$
@@ -27,7 +27,7 @@ whenever $s \neq 0 , - 1 , - 2 , . . .$
 [Hint: Use the product formula for $1 / \Gamma$ , and the definition of the Euler constant γ.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Gauss's limit formula for the Gamma function:
 $$
 \Gamma(s) = \lim_{n \to \infty} \frac{n^s n!}{s(s+1)(s+2)\cdots(s+n)} \qquad \text{for } s \in \mathbb{C} \setminus \{0, -1, -2, \dots\}.

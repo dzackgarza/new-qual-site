@@ -24,7 +24,7 @@ audit:
   note: "Verified that the cubic splitting field has no real quadratic subfield, proved the product Galois group by restriction and degree, and checked Sylow conjugation and every fixed-field degree."
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be the splitting field of $(x^3-2)(x^2-3)$ over $\mathbb{Q}$ and $G$ be the Galois group of $K/\mathbb{Q}$.
 
 (a) For each prime divisor $p$ of $|G|$, decide whether $G$ has a normal Sylow $p$-subgroup.
@@ -33,7 +33,7 @@ Let $K$ be the splitting field of $(x^3-2)(x^2-3)$ over $\mathbb{Q}$ and $G$ be 
 Determine the corresponding subfields.
 :::
 
-::: solution
+::: {.solution}
 Choose $a=\sqrt[3]{2}>0$, $b=\sqrt3>0$, and
 $\zeta=(-1+i\sqrt3)/2$, a primitive cube root of unity.
 Then $K=\mathbb Q(a,\zeta,b)$ and $G\cong S_3\times C_2$.
@@ -42,7 +42,7 @@ The Sylow $3$-subgroup is normal, but no Sylow $2$-subgroup is normal.
 <1>1. The field $E=\mathbb Q(a,\zeta)$ has degree $6$ and Galois
 group $S_3$, and its unique quadratic subfield is $\mathbb Q(\zeta)$.
 
-::: proof
+::: {.proof}
 The roots of $x^3-2$ are $a,\zeta a,\zeta^2a$, so their
 splitting field is $E$: the ratio $(\zeta a)/a$ recovers $\zeta$.
 Eisenstein's criterion at $2$ makes $x^3-2$ irreducible over
@@ -64,7 +64,7 @@ $\mathbb Q(\zeta)$.
 
 <1>2. The field $K$ has degree $12$ and $G\cong S_3\times C_2$.
 
-::: proof
+::: {.proof}
 The number $3$ is not a rational square: in a square of a nonzero
 rational number the exponent of the prime $3$ is even, whereas
 in $3$ it is one. Thus $\mathbb Q(b)$ is a real quadratic field.
@@ -104,7 +104,7 @@ $$
 They satisfy $r^3=s^2=t^2=1$, $srs=r^{-1}$, and $t$ commutes
 with $r,s$.
 
-::: proof
+::: {.proof}
 Since $[E:\mathbb Q(\zeta)]=3$, the minimal polynomial of $a$
 over $\mathbb Q(\zeta)$ is $x^3-2$. Sending $a$ to $\zeta a$
 therefore defines an automorphism of $E$ fixing $\zeta$: its
@@ -124,7 +124,7 @@ $0\leq i<3$ and $j,k\in\{0,1\}$.
 <1>4. For part (a), the Sylow $3$-subgroup is normal and the
 Sylow $2$-subgroups are not normal.
 
-::: proof
+::: {.proof}
 The group $\langle r\rangle$ has order $3$, the full power of
 $3$ dividing $12$. It is normal because conjugation by $s$
 inverts $r$ and conjugation by $t$ fixes $r$.
@@ -150,7 +150,7 @@ i&G_i&|G_i|&K^{G_i}\\\hline
 \end{array}
 $$
 
-::: proof
+::: {.proof}
 The commuting generators $r,t$ give
 $G_1\cong C_3\times C_2$, of order $6$. It has index $2$ in
 $G$, so is normal. Its subgroup $G_2$ is normal since $G_1$

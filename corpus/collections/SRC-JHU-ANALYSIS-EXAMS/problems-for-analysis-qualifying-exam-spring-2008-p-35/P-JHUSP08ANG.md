@@ -24,7 +24,7 @@ audit:
   note: "Used the argument principle as requested, proved constancy of its integer-valued homotopy count and excluded critical points at the resulting nonzero fibers to obtain distinct preimages."
 ---
 
-::: problem
+::: {.problem}
 Let $U\subset\mathbb C$ be open and $P\in U$. Let $f$ be
 holomorphic on $U$ and nonconstant on the component containing
 $P$, with $f(P)=f'(P)=0$. Use the argument principle to prove
@@ -32,17 +32,17 @@ that there is $\delta>0$ such that $f^{-1}(Q)$ contains at
 least two distinct points whenever $0<|Q|<\delta$.
 :::
 
-::: remark
+::: {.remark}
 The nonconstancy qualification is necessary: the function
 $f=0$ satisfies $f(P)=f'(P)=0$ but has no preimage of any
 nonzero value. Nonconstancy on an unrelated component of
 $U$ does not supply the local hypothesis at $P$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. In a sufficiently small disk, $P$ is the only zero and the only critical point.
 
-::: proof
+::: {.proof}
 The Taylor expansion and the identity theorem give
 $$
 f(z)=(z-P)^m h(z),\qquad m\geq2,\quad h(P)\ne0,
@@ -62,7 +62,7 @@ $\delta=\min_{|z-P|=r}|f(z)|>0$.
 
 <1>2. The argument-principle count stays equal to $m$ under a small constant perturbation.
 
-::: proof
+::: {.proof}
 Fix $0<|Q|<\delta$. For $0\leq t\leq1$ and $|z-P|=r$,
 $$
 |f(z)-tQ|\geq\delta-|Q|>0.
@@ -80,7 +80,7 @@ function on $[0,1]$ is constant, so $N(1)=N(0)=m$.
 
 <1>3. These $m$ preimages are distinct.
 
-::: proof
+::: {.proof}
 None of the zeros of $f-Q$ is $P$, since $Q\ne0=f(P)$.
 Step <1>1 shows that the derivative is nonzero at each of
 them. Each zero is therefore simple by its Taylor expansion.

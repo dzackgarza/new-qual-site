@@ -14,13 +14,13 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $P = S_p$ be a Sylow $p$-subgroup of a finite group $G$.
 Prove that the normalizer of $N_G(P)$ is self-normalizing:
 $$N_G\bigl(N_G(P)\bigr) = N_G(P).$$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that $N_G(N_G(P)) = N_G(P)$ for any Sylow $p$-subgroup $P$ of a finite group $G$ using the Frattini Argument / Sylow's Theorem.
 
 <1>1. Setting and Containments:

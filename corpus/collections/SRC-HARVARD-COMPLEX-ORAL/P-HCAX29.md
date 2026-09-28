@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that every holomorphic function has a convergent power-series expansion about each point of its domain.
 :::
 
-::: solution
+::: {.solution}
 Let $f$ be holomorphic on a domain $\Omega$, and fix $a\in\Omega$. Choose
 \[
 0<R<\operatorname{dist}(a,\partial\Omega)

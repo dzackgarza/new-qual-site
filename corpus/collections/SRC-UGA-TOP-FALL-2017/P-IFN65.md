@@ -27,7 +27,7 @@ audit:
   note: Replaced the non-well-defined map to F(a_1,b_1) with a valid homomorphism to a free group that detects the nontrivial commutator.
 ---
 
-::: problem
+::: {.problem}
 Let $M$ be a compact orientable surface of genus $2$ without boundary.
 Give an example of a pair of loops
 \[

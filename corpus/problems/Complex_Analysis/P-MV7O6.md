@@ -16,13 +16,13 @@ audit:
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega$ be a simply connected open set and let $\gamma$ be a simple closed contour in $\Omega$ and enclosing a bounded region $U$ anticlockwise.
 Let $f: \ \Omega \to {\mathbb C}$ be a holomorphic function and $|f(z)|\leq M$ for all $z\in \gamma$.
 Prove that $|f(z)|\leq M$ for all $z\in U$.
 :::
 
-::: solution
+::: {.solution}
 **Theorem.**  
 If $f:\Omega\to\mathbb C$ is holomorphic, $\gamma$ is a simple closed contour in $\Omega$, and
 $|f|\le M$ on $\gamma$, then $|f(z)|\le M$ for every $z\in U$.

@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $G$ be a finite group and $H<G$ a subgroup. Let
 $n_H$ be the number of subgroups of $G$ that are conjugate to $H$. Show
 that $n_H$ divides the order of $G$.
 :::
 
-:::{.solution}
+::: {.solution}
 .* Let $$C_H = \{ gHg^{-1} \mid g\in G \}$$ be the conjugacy class
 of $H$, so $|C_H| = n_H$.
 

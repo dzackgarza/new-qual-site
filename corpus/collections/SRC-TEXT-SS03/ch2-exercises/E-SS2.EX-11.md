@@ -18,7 +18,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Let $f$ be a holomorphic function on the disk $D_{R_0}(0) \subset \mathbb{C}$ of radius $R_0 > 0$.
 
 (a) Prove that whenever $0 < R < R_0$ and $|z| < R$,
@@ -32,7 +32,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 For part (b), let $z=re^{i\theta}$ and put $\gamma=\varphi-\theta$. Rotating by $e^{-i\theta}$ reduces the computation to real $r$. Then
 \[
 \frac{Re^{i\gamma}+r}{Re^{i\gamma}-r}

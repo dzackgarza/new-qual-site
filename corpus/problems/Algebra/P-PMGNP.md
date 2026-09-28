@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Explain $\Ext^1_{\ZZ}$ for abelian groups, where it appears, and compute
 \[
 \Ext^1_{\ZZ}(\ZZ/m\ZZ,\ZZ/n\ZZ)

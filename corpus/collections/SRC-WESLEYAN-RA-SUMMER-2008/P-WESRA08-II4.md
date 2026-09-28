@@ -11,8 +11,8 @@ review: draft
 audit:
 - event: source-checked
   by: gpt-5.6-sol
-  date: 2026-09-11
-  note: Checked visually against Problem 4 of the Wesleyan Real Analysis Preliminary Examination, July 8, 2008, in analysis_2008-2013.pdf. The source itself prints f in the displayed integrand although the statement concerns the sequence f_n; the card corrects this evident source typo to f_n.
+  date: 2026-09-14
+  note: Checked against the deterministic MinerU Flash extraction assets/attachments/analysis_2008-2013_extracted.md. Flash prints `f` rather than `f_n` in the displayed integrand; the card retains the sequence-indexed form required by the surrounding convergence statement.
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
@@ -21,15 +21,16 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
-Let $(X,\mathcal B,\mu)$ be a measure space with $\mu(X)<\infty$. Show that a sequence of measurable functions $(f_n)$ converges to $0$ in measure if and only if
+::: {.problem}
+Let $(X,\mathcal B,\mu)$ be a measure space with $\mu(X)<\infty$.
+Show that a sequence of measurable functions $(f_n)$ converges to $0$ in measure if and only if
 \[
 \lim_{n\to\infty}
 \int_X \frac{|f_n|}{1+|f_n|}\,d\mu=0.
 \]
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 \Phi(t):=\frac{t}{1+t},
@@ -37,14 +38,17 @@ Set
 \]
 
 <1>1. Convergence in measure implies convergence of the integrals.
-::: proof
-Assume $f_n\to0$ in measure. Fix $\varepsilon>0$. If $\mu(X)=0$, the conclusion is immediate, so assume $\mu(X)>0$.
+::: {.proof}
+Assume $f_n\to0$ in measure.
+Fix $\varepsilon>0$.
+If $\mu(X)=0$, the conclusion is immediate, so assume $\mu(X)>0$.
 
 Choose $\delta>0$ so that
 \[
 \delta\mu(X)<\frac\varepsilon2.
 \]
-Split $X$ into the sets where $|f_n|\le\delta$ and $|f_n|>\delta$. Since $0\le\Phi(t)\le t$ and $\Phi(t)\le1$,
+Split $X$ into the sets where $|f_n|\le\delta$ and $|f_n|>\delta$.
+Since $0\le\Phi(t)\le t$ and $\Phi(t)\le1$,
 \[
 \begin{aligned}
 \int_X\Phi(|f_n|)\,d\mu
@@ -62,12 +66,13 @@ Hence the integral is below $\varepsilon$ for all sufficiently large $n$, and th
 :::
 
 <1>2. Convergence of the integrals implies convergence in measure.
-::: proof
+::: {.proof}
 Assume
 \[
 \int_X\Phi(|f_n|)\,d\mu\longrightarrow0.
 \]
-Fix $\eta>0$. On the set $\{|f_n|>\eta\}$, monotonicity of $\Phi$ gives
+Fix $\eta>0$.
+On the set $\{|f_n|>\eta\}$, monotonicity of $\Phi$ gives
 \[
 \Phi(|f_n|)\ge \frac{\eta}{1+\eta}.
 \]

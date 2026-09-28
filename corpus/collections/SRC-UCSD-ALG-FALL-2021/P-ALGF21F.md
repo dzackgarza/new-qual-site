@@ -24,7 +24,7 @@ audit:
   note: Verified the canonical unital ring maps, construction of the mediating map by the balanced bilinear map (a,b) -> f(a)g(b), multiplicativity, and uniqueness on pure tensors.
 ---
 
-::: problem
+::: {.problem}
 Prove that in the category of commutative rings with unit, $A \otimes_{\mathbb{Z}} B$ is the coproduct of the rings $A$ and $B$.
 :::
 

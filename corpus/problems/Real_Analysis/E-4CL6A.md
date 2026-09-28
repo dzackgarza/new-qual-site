@@ -18,7 +18,7 @@ audit:
   date: 2026-08-16
 ---
 
-::: exercise
+::: {.exercise}
 - Show that if a subset of a metric space is complete and totally bounded, then it is compact.
 :::
 

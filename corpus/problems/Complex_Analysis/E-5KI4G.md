@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Determine where the following real-valued function is or is not uniformly convergent:
 \[
 f_n(x) \da {\sin(nx)\over 1+nx}
@@ -22,7 +22,7 @@ f_n(x) \da {\sin(nx)\over 1+nx}
 
 :::
 
-:::{.solution}
+::: {.solution}
 This converges uniformly on $[a, \infty)$ for $a$ any constant:
 \[
 \abs{\sin(nx) \over 1+nx} \leq {1\over 1 + na} < \eps = \eps(n, a)

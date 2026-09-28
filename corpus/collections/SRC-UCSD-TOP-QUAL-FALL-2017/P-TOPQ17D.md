@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a path-connected space whose homology groups in positive dimensions are $H_k(X; \mathbb{Z}) = \mathbb{Z}/k\mathbb{Z}$.
 Compute the integer homology $H_*(\mathbb{RP}^2 \times X; \mathbb{Z})$.
 :::

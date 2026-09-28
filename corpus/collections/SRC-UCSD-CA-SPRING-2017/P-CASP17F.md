@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Find the number of roots of the polynomial
 $$
 z^{87} + 36z^{57} + 71z^4 + z^3 - z + 1
@@ -22,7 +22,7 @@ $$
 in the region $1 \leq |z| \leq 2$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 p(z)=z^{87}+36z^{57}+71z^4+z^3-z+1.

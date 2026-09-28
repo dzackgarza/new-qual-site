@@ -25,7 +25,9 @@ audit:
   note: Wrote the homotopy of conjugated loops explicitly and checked the pasting points and fixed basepoint.
 ---
 
+::: {.problem}
 Show that the change-of-basepoint homomorphism $\beta_h$ depends only on the homotopy class of $h$.
+:::
 
 ::: {.solution}
 Let $h,k:I\to X$ be paths from $x_0$ to $x_1$ that are homotopic relative to their endpoints.

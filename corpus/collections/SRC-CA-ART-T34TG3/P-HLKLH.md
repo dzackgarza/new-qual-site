@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
 
 a. Show that if $\abs{f(z)} = 1$ whenever $\abs{z} = 1$, then the image of $f$ contains the unit disc.
@@ -27,7 +27,7 @@ a. Show that if $\abs{f(z)} = 1$ whenever $\abs{z} = 1$, then the image of $f$ c
 b. If $\abs{f(z)} \geq 1$ whenever $\abs{z} = 1$ and there exists a $z_0\in \DD$ such that $\abs{f(z_0)} < 1$, then the image of $f$ contains the unit disc.
 :::
 
-::: solution
+::: {.solution}
 For (a), first show that $f$ has a zero in $\mathbb D$. If it did not, then
 $1/f$ would be holomorphic in a neighborhood of $\overline{\mathbb D}$ and
 $|1/f|=1$ on $\partial\mathbb D$. The maximum-modulus principle applied to

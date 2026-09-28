@@ -26,7 +26,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Let $C([0,1])$ be the space of continuous real-valued functions on $[0,1]$.
 
 1. Prove that $C([0,1])$ is complete under the uniform norm
@@ -40,9 +40,9 @@ Let $C([0,1])$ be the space of continuous real-valued functions on $[0,1]$.
 \]
 :::
 
-::: solution
+::: {.solution}
 <1>1. Completeness in the uniform norm.
-::: proof
+::: {.proof}
 Let $(f_n)$ be Cauchy in $\|\cdot\|_\infty$. For each $x\in[0,1]$, the real sequence $(f_n(x))$ is Cauchy, so define
 \[
 f(x):=\lim_{n\to\infty}f_n(x).
@@ -64,7 +64,7 @@ Thus $f_n\to f$ uniformly. A uniform limit of continuous functions is continuous
 :::
 
 <1>2. Failure of completeness in the $L^1$ norm.
-::: proof
+::: {.proof}
 Let
 \[
 g=\mathbf1_{[1/2,1]}.

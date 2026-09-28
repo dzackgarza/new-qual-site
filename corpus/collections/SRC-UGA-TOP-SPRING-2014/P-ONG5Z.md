@@ -26,7 +26,7 @@ audit:
   note: Verified that the deformation homotopy supplies paths from arbitrary points of the ambient space into the retract, which concatenate through a path in the retract.
 ---
 
-::: problem
+::: {.problem}
 Suppose that $X \subset Y$ and $X$ is a deformation retract of $Y$.
 
 Show that if $X$ is a path connected space, then $Y$ is path connected.

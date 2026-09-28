@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: T-IIKSW
 kind: theorem
-title: Measurable sets can be approximated by open/closed/compact sets.
+title: Approximation of measurable sets by open, closed, and compact sets
+slogan: 'Measurable sets are arbitrarily close in measure to open supersets and closed subsets, and finite-measure ones to compact subsets.'
 classification:
   areas:
   - real-analysis
@@ -13,11 +14,16 @@ review: draft
 ---
 
 ::: {.theorem}
-Suppose $E\subseteq\RR^n$ is Lebesgue measurable; then for every $\eps>0$,
+Let $E\subseteq\RR^n$ be [[D-MDJII|Lebesgue measurable]] and let $\varepsilon>0$.
 
-1. There exists an open $O\supset E$ with $m(O\setminus E) < \eps$
+1. There exists an open set $O\supseteq E$ with $m(O\setminus E) < \varepsilon$.
 
-2. There exists a closed $F\subset E$ with $m(E\setminus F) < \eps$
+2. There exists a closed set $F\subseteq E$ with $m(E\setminus F) < \varepsilon$.
 
-3. If $m(E)<\infty$, there exists a compact $K\subset E$ with $m(E\setminus K) < \eps$.
+3. If $m(E)<\infty$, there exists a compact set $K\subseteq E$ with $m(E\setminus K) < \varepsilon$ [@Fol13].
+:::
+
+::: {.example}
+The finiteness hypothesis in (3) cannot be dropped.
+For $E=\RR^n$, every compact $K\subseteq\RR^n$ is bounded, hence has finite measure, so $m(\RR^n\setminus K)=\infty$.
 :::

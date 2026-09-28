@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRACT20-W6-06
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 6"
+title: Separating continuity, uniform continuity, Lipschitz continuity and differentiability on $(-1,1)$
 classification:
   areas:
   - prelim

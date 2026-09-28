@@ -17,33 +17,27 @@ topics:
 
 # Definitions
 
-## Point-Set Topology
+## Point-set topology
 
-::: {.remark title="on the term 'locally'"}
-The prefix "locally blah" almost always means that for every $x\in X$, there exists *some* neighborhood $N_x\ni x$ which has property "blah".
+::: {.remark title="The prefix \"locally\""}
+For a property $P$, \"locally $P$\" usually means that every $x\in X$ has some neighborhood with property $P$; some notions, such as local connectedness, instead require a neighborhood basis of sets with property $P$ at every point.
 :::
 
-[[D-YEWUV]]
+[[D-Y6JAS]]
 
 [[D-WKURJ]]
 
 [[D-3KS2F]] [[D-2GCTV]] [[D-KW52R]]
 
-::: {.remark}
-Is this actually a poset relation?
-Fails reflexivity.
-:::
-[[D-ZNVPP]]
+[[D-YO6NZ]]
 
 [[D-3KS2F]]
 
 [[D-MVBYO]]
 
-[[D-YO6NZ]]
-
 [[D-FAEYE]]
 
-[[D-KJC6W]] [[D-Q5272]] [[D-UHTGH]] [[D-EILKJ]]
+[[D-Q5272]] [[D-EILKJ]]
 
 [[D-UI7ZL]]
 
@@ -59,23 +53,13 @@ Fails reflexivity.
 
 [[D-KJBAK]] [[D-HS6DE]]
 
-[[D-X6LZD]]
-
-[[FD-SQ57O]]
-
-[[FD-AHIOS]] [[FD-IV5GM]]
+[[FD-AHIOS]]
 
 [[FD-EQPN4]]
 
 [[D-E2NWN]]
 
-[[FD-3TS3M]]
-
-[[D-6FMP3]] [[D-BUAYX]]
-
-[[D-ZFRV4]]
-
-[[FD-NHZPF]]
+[[D-ZFRV4]] [[D-BUAYX]]
 
 [[D-3ZBXG]]
 
@@ -83,19 +67,11 @@ Fails reflexivity.
 
 [[D-D7AFV]]
 
-[[D-Y6JAS]]
-
-[[FD-72JAN]]
-
 [[FD-PMA24]]
 
 [[D-GYBZ2]]
 
-[[D-RZ7I3]] [[D-6JJJU]]
-
-[[D-5EOQZ]]
-
-[[FD-7R4QC]]
+[[D-5EOQZ]] [[D-6JJJU]]
 
 [[FD-ONITX]]
 
@@ -109,17 +85,11 @@ Fails reflexivity.
 
 [[D-YEQC3]]
 
-[[FD-G56CW]]
-
 [[D-EMJTU]]
-
-[[FD-QCNG5]] [[FD-TUK7H]]
 
 [[D-CTGON]]
 
 [[D-HQSEQ]] [[D-TNBFZ]]
-
-[[D-W56JR]]
 
 [[D-ITBUT]]
 
@@ -127,17 +97,11 @@ Fails reflexivity.
 
 [[D-VZFJQ]]
 
-[[D-YN6RQ]]
-
 [[D-7ALR2]]
 
-[[D-JKH35]] [[D-WHVXL]] [[D-MQSFD]]
+[[D-JKH35]] [[D-GDXFZ]] [[D-MQSFD]]
 
 [[D-C5THN]]
-
-[[D-GDXFZ]]
-
-[[D-VW2Z3]]
 
 [[D-P6XCN]]
 
@@ -146,19 +110,13 @@ Fails reflexivity.
 [[D-NCLVD]]
 
 ::: {.remark}
-If $X$ retracts onto $A$ with $\iota:A\injects X$, then $i_*$ is injective.
-Any nonempty space retracts to a point via a constant map.
+If $r\colon X\to A$ is a retraction and $\iota\colon A\injects X$ the inclusion, then $r\circ\iota=\id_A$, so $\iota_*$ is injective on $\pi_1$ and on homology.
+For every point $x_0$ of a space $X$, the constant map $X\to\ts{x_0}$ is a retraction.
 :::
-
-[[D-6FSWY]]
-
-[[FD-6SR5I]]
 
 [[D-KWWVL]]
 
 [[D-3O6QH]]
-
-[[FD-OQO2U]]
 
 [[FD-DXTBN]]
 
@@ -175,26 +133,24 @@ Any nonempty space retracts to a point via a constant map.
 ::: {.example title="Counterexamples for separation axioms"}
 \envlist
 
-- Not $T_0$: the space \( \ts{ f:\RR\to \CC\st \int_\RR \abs{f}^2 < \infty } \), since two a.e. equal functions aren't *distinguishable* (they have precisely the same set of neighborhoods).
+- Not $T_0$: the space $\ts{ f\colon\RR\to \CC\st \int_\RR \abs{f}^2 < \infty }$ with the topology of the seminorm $\norm{f}_2$, since two functions that agree almost everywhere have the same neighborhoods.
 
-- $T_1$ but not $T_0$: $\spec R$ for $R\in \CRing$ with the Zariski topology.
-  There are points that aren't closed: $\spec R \sm \mspec R$.
+- $T_0$ but not $T_1$: $\spec R$ with the Zariski topology, for a commutative ring $R$ with a prime ideal that is not maximal.
+  The closure of a point $\mathfrak p$ is $V(\mathfrak p)$, so the points of $\spec R \sm \mspec R$ are not closed.
 :::
 [[D-2TZAI]]
 
-::: {.remark}
-A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is closed in $\RR$.
+::: {.example}
+An infinite intersection of open sets need not be open: in $\RR$, $\bigcap_{n\geq 1} (-1/n, 1/n) = \ts{0}$, which is closed and not open.
 :::
 
 [[D-OM7TD]]
 
-[[D-XRHTV]]
-
 [[D-BCNUH]]
 
-[[D-YL6FR]]
+[[D-WGYSB]]
 
-## Analysis and Metric Spaces
+## Analysis and metric spaces
 
 [[D-B7CYY]]
 
@@ -202,17 +158,15 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 
 [[D-2GCTV]]
 
-[[D-WGYSB]]
-
 [[D-SDMMS]]
 
 [[FF-VWKGM]]
 
-## Algebraic Topology
+## Algebraic topology
 
 [[D-5KDNB]]
 
-[[D-MVNSV]]
+[[D-I7D56]]
 
 [[D-MLMIR]]
 
@@ -230,16 +184,12 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 
 [[D-TD6AO]]
 
-::: {.example title="of colimits"}
+::: {.example title="Limits and colimits"}
 \envlist
 
-- Products
+- Coproducts, pushouts, and direct limits are colimits; for example, $\ZZ[1/p]$ is the direct limit of $\ZZ\xrightarrow{\times p}\ZZ\xrightarrow{\times p}\cdots$.
 
-- Pullbacks
-
-- Inverse / projective limits
-
-- The \( p\dash \)adic integers \( \ZZ_{p} \).
+- Products, pullbacks, and inverse limits are limits; for example, the $p$-adic integers $\ZZ_{p}$ are the inverse limit of $\cdots\to\ZZ/p^2\to\ZZ/p$.
 :::
 
 [[D-5MX7E]]
@@ -253,8 +203,8 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 [[D-B2JER]]
 
 ::: {.example title="Applications of the cup product"}
-On a manifold, the cup product is Poincaré dual to the intersection of submanifolds.
-Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
+On a closed oriented manifold, the cup product of the Poincaré duals of transversely intersecting closed oriented submanifolds is the Poincaré dual of their intersection.
+$T^2$ and $S^2 \vee S^1 \vee S^1$ have isomorphic cohomology groups, and they are not homotopy equivalent: the cup product of the two degree-$1$ generators is nonzero for $T^2$ and zero for the wedge.
 :::
 
 [[D-ZOU5G]]
@@ -265,16 +215,11 @@ Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
 
 [[D-UH3L5]]
 
-[[D-2O3N7]]
-
-::: {.remark}
-A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$.
-Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
-:::
-
 [[D-6UHU7]]
 
-[[FD-BDEI2]] [[FD-COPFN]]
+::: {.remark}
+If spaces $X$ and $Y$ both deformation retract onto a common subspace $A$, then $X \homotopic A \homotopic Y$.
+:::
 
 [[D-XC53X]]
 
@@ -282,10 +227,10 @@ Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$,
 
 [[D-QK5BM]]
 
-[[D-Z2V7T]]
+[[D-S7L6M]]
 
-::: {.example title="of an exact functor"}
-$\wait \tensor_{R} \wait$ is a right exact bifunctor.
+::: {.example title="A right exact functor"}
+For a commutative ring $R$ and an $R$-module $M$, $\wait \tensor_{R} M$ is right exact, and it is exact if and only if $M$ is flat.
 :::
 
 [[D-455S6]]
@@ -304,8 +249,6 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-Z7I7F]]
 
-[[D-SOVXO]]
-
 [[D-IZI3T]]
 
 [[D-HFR32]]
@@ -320,11 +263,9 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-6POU4]]
 
-[[D-Y73BB]]
-
 [[D-VP4LC]]
 
-[[D-GIUR3]]
+[[T-QNYSB]]
 
 [[D-3UY5O]]
 
@@ -350,7 +291,7 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-4QNEW]]
 
-[[D-YTISD]]
+[[D-MWD2L]]
 
 [[D-MGRZP]]
 
@@ -359,8 +300,6 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 [[D-K5MLW]]
 
 [[D-WX7JH]]
-
-[[D-YCPJX]]
 
 [[D-CNLBT]]
 
@@ -380,8 +319,6 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-EPQ54]]
 
-[[FD-SW76G]]
-
 [[D-SIUWU]]
 
 [[D-NJ2Y6]]
@@ -390,7 +327,7 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-GFM35]]
 
-[[D-ZWLD5]]
+[[D-M3Y6X]]
 
 [[D-R6LA3]]
 
@@ -424,7 +361,7 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-MENR4]]
 
-## Homological Algebra
+## Homological algebra
 
 [[D-4VGLT]]
 
@@ -433,8 +370,6 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 [[D-DUCA5]]
 
 [[D-3VEC5]]
-
-[[D-I7D56]] [[D-M3Y6X]]
 
 [[D-5KMYI]]
 
@@ -458,15 +393,13 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-TZSG2]]
 
-[[D-S7L6M]]
-
 [[D-STPAM]]
 
 [[D-BYIZA]]
 
 [[D-FS52P]]
 
-[[D-WBM7M]]
+[[D-LIEMF]]
 
 [[D-FHUV5]]
 

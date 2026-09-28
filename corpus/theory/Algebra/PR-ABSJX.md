@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-ABSJX
 kind: proposition
-title: Transitivity of algebraic extensions, forward implication
+title: An algebraic extension of an algebraic extension is algebraic
+slogan: 'Algebraicity is transitive in towers of field extensions.'
 classification:
   areas:
   - algebra
@@ -13,5 +14,6 @@ review: draft
 ---
 
 ::: {.proposition}
-If $L/K/k$ (not necessarily finite) with $L/K$ and $K/k$ both algebraic, then $L/k$ is algebraic.
+Let $k \subseteq K \subseteq L$ be fields, with the extensions not necessarily finite.
+If $L/K$ and $K/k$ are [[FD-NS5RF|algebraic]], then $L/k$ is algebraic.
 :::

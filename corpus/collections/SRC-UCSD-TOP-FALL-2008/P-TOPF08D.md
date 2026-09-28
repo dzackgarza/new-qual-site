@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Calculate $\pi_n(\mathbb{RP}^n \vee S^n)$ for $n > 1$.
 :::
 

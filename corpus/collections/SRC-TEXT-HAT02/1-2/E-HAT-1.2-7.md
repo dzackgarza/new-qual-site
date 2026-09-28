@@ -18,8 +18,10 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Let $X$ be the quotient space of $S^2$ obtained by identifying the north and south poles to a single point.
 Put a cell complex structure on $X$ and use this to compute $\pi_1(X)$.
+:::
 
 ::: {.solution}
 **Goal.** Compute $\pi_1(X)$ for $X = S^2$ with north and south poles identified.

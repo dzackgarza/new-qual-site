@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Which groups of order $4$ occur as Galois groups over $\QQ$?
 :::
 

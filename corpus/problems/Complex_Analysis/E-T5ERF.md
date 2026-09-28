@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be holomorphic in a neighborhood of the closed disk $\overline{D}_r(z_0)$.
 Show that for any $s < r$, there exists a constant $c > 0$ (depending on $r$ and $s$) such that:
 $$\|f\|_{(\infty, s)} \le c \|f\|_{(1, r)}$$
 where $\|f\|_{(\infty, s)} = \sup_{z \in D_s(z_0)} |f(z)|$ and $\|f\|_{(1, r)} = \iint_{D_r(z_0)} |f(z)| \, dx \, dy$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \delta=r-s>0.

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a connected space and $A,B\subseteq X$ closed subsets with $X=A\cup B$ and $A\cap B$ connected.
 Show that $A$ and $B$ are connected.
 

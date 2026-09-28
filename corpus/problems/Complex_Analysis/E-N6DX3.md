@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 - State the Cauchy-Riemann equations.
 
 - Define what it means for a function to be
@@ -78,7 +78,7 @@ review: draft
   about $z=0$ and $z=1$.
 :::
 
-::: solution
+::: {.solution}
 The Cartesian Cauchy--Riemann equations for $f=u+iv$ are
 \[
 u_x=v_y,\qquad u_y=-v_x.

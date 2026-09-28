@@ -25,9 +25,11 @@ audit:
   note: Read H_0 maps componentwise in the long exact sequence of the pair and applied the exact-sequence criterion from the preceding exercise.
 ---
 
+::: {.problem}
 (a) Show that $H_0(X, A) = 0$ iff $A$ meets each path-component of $X$.
 
 (b) Show that $H_1(X, A) = 0$ iff $H_1(A) \to H_1(X)$ is surjective and each path-component of $X$ contains at most one path-component of $A$.
+:::
 
 ::: {.solution}
 Use the long exact sequence of the pair $(X,A)$.

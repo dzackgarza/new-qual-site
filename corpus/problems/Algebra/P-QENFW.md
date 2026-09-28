@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What are symmetric polynomials? State their fundamental structure theorem.
 :::
 

@@ -13,13 +13,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G=\mathrm{GL}_2(\mathbb{R})$ be the group of invertible $2\times 2$ real matrices and let $X,Y\colon G\to\mathrm{GL}_d(\mathbb{C})$ be two complex matrix representations of $G$ with the same degree $d$.
 If $X$ and $Y$ have the same character, are $X$ and $Y$ necessarily isomorphic?
 Justify your answer.
 :::
 
-::: solution
+::: {.solution}
 No. For infinite groups, equality of characters need not imply that two finite-dimensional complex representations are isomorphic.
 
 Take \(d=2\). Since

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 9. Here are further results similar to the Phragm´en-Lindel¨of theorem.
 
 (a) Let $F$ be a holomorphic function in the right half-plane that extends continuously to the boundary, that is, the imaginary axis.
@@ -36,7 +36,7 @@ $$
 for some $c , C > 0$ and $0 < \alpha < \beta$ . Prove that $| F ( z ) | \le 1$ for all $z \in S$
 :::
 
-::: solution
+::: {.solution}
 For (a), work in the right half-plane with the branch of $z^\delta$ determined by
 \[
 -\frac\pi2<\arg z<\frac\pi2.

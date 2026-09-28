@@ -23,7 +23,7 @@ audit:
   note: Verified the irrational-slope separation and converted the retained sound argument to Lamport proof divs.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 X=\left\{(x,y)\in\RR^2:x>0,\ y\ge0,\ \text{and }\frac yx\in\QQ\right\}

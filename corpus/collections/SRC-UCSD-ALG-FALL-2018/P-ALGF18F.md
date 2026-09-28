@@ -25,7 +25,7 @@ audit:
   note: Verified the Frobenius recurrence, containment in the degree-p finite-field extension, and the resulting degree-p statement for every irreducible factor.
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is prime and $q = p^n$ for some positive integer $n$.
 Let $\mathbb{F}_q$ be a finite field of order $q$ and $\overline{\mathbb{F}}_q$ be an algebraic closure of $\mathbb{F}_q$.
 Suppose $\alpha \in \overline{\mathbb{F}}_q$ is a zero of $x^q - x + 1$.

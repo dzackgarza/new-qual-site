@@ -25,8 +25,10 @@ audit:
   note: Used projection to the first circle, viewed as the unit circle in the plane, to give an explicit counterexample.
 ---
 
+::: {.problem}
 Does the Borsuk–Ulam theorem hold for the torus?
 In other words, for every map $f: S^1 \times S^1 \longrightarrow \mathbb{R}^2$ must there exist $(x, y) \in S^1 \times S^1$ such that $f(x, y) = f(-x, -y)$?
+:::
 
 ::: {.solution}
 No.

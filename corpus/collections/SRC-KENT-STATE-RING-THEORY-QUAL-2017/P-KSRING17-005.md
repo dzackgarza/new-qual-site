@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-005
 kind: problem
-title: Kent State ring-theory qualifying problem 5
+title: The unit group $U_{24}$ and whether it is cyclic
 classification:
   areas: [algebra]
   topics: []

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\alpha \in (0, 1]$ and $\Omega_\alpha \subset \mathbb{C}$ denote the open region
 $$
 \Omega_\alpha := \left\{z = re^{i\theta} : \theta \in \left(-\frac{\alpha\pi}{2}, \frac{\alpha\pi}{2}\right), r > 0\right\}.
@@ -27,7 +27,7 @@ Prove nonexistence or give an explicit example if such exists.
 Prove nonexistence or give an explicit example if such exists.
 :::
 
-::: solution
+::: {.solution}
 (i) A Möbius transformation exists exactly when $\alpha=1$. In that case
 $\Omega_1$ is the right half-plane, and for example
 \[

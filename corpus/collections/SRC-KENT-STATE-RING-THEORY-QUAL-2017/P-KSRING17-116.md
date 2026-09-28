@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-116
 kind: problem
-title: Kent State ring-theory qualifying problem 116
+title: 'The commutator ideal: smallest ideal with commutative quotient'
 classification:
   areas: [algebra]
   topics: []

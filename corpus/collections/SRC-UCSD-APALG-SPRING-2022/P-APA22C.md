@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $V$ be a finite-dimensional inner product space and $\alpha, \beta \colon V \to V$ two positive definite, self-adjoint linear maps.
 Define
 \[

@@ -20,13 +20,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Show that for $X$ an arbitrary topological space, the one-point (Alexandroff) compactification $X^* = X \cup \{\infty\}$ is compact.
 
 (2) Prove that every path-connected topological space is connected.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $X^*=X\cup\{\infty\}$ carry the Alexandroff topology: the open sets not containing $\infty$ are the open subsets of $X$, while a neighborhood of $\infty$ has the form
 $$
 \{\infty\}\cup(X\setminus K)
@@ -34,7 +34,7 @@ $$
 with $K\subseteq X$ compact and closed.
 
 <1>2. The space $X^*$ is compact.
-::: proof
+::: {.proof}
 Let $\mathcal U$ be an open cover of $X^*$. Choose $U_\infty\in\mathcal U$ containing $\infty$. Then for some compact closed $K\subseteq X$,
 $$
 \{\infty\}\cup(X\setminus K)\subseteq U_\infty.
@@ -43,7 +43,7 @@ The remaining points lie in $K$. The sets $U\cap X$, for $U\in\mathcal U$, cover
 :::
 
 <1>3. Every path-connected space is connected.
-::: proof
+::: {.proof}
 Fix $x_0\in X$. For each $x\in X$, choose a path from $x_0$ to $x$. Each path image is connected, all such images contain $x_0$, and their union is $X$. A union of connected subsets with a common point is connected.
 :::
 :::

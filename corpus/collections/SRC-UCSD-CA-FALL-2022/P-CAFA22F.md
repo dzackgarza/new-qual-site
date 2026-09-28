@@ -12,11 +12,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 If $p \neq 0$ is a polynomial and $a \neq 0$ is a complex number, show that $p(z) - e^{az}$ has infinitely many zeros.
 :::
 
-::: solution
+::: {.solution}
 Consider the meromorphic function
 \[
 F(z)=\frac{e^{az}}{p(z)}.

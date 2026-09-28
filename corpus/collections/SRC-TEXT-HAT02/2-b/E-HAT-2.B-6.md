@@ -24,7 +24,9 @@ audit:
   note: Verified the local van Kampen injections and the free-group bonding maps for the horned constructions.
 ---
 
+::: {.problem}
 Modify the construction of the Alexander horned sphere to produce an embedding $S^2 \hookrightarrow \mathbb{R}^3$ for which neither component of $\mathbb{R}^3 - S^2$ is simply-connected.
+:::
 
 ::: {.solution}
 The standard Alexander construction can be localized in a small $3$-ball meeting an otherwise tame sphere in a disk. We use two disjoint such balls, one on each side of the sphere.

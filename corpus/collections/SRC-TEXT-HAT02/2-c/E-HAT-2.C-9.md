@@ -24,7 +24,9 @@ audit:
   note: Verified the simplicial, Lefschetz-trace, or surface argument against the preceding section results.
 ---
 
+::: {.problem}
 Show that there are only countably many homotopy types of finite CW complexes.
+:::
 
 ::: {.solution}
 Hatcher's Theorem 2C.5 says that every finite CW complex is homotopy equivalent to a finite simplicial complex. It therefore suffices to count finite simplicial complexes up to isomorphism.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-SZRXI
 kind: theorem
 title: Lagrange's theorem
+slogan: 'A finite group is partitioned into equal-sized cosets, so subgroup order times index equals group order.'
 classification:
   areas:
   - algebra
@@ -13,7 +14,7 @@ review: reviewed
 ---
 
 ::: {.theorem}
-If $H$ is a subgroup of a finite group $G$, then
+If $H$ is a [[D-IQ4OX|subgroup]] of a finite group $G$ with [[D-VJGH5|index]] $[G:H]$, then
 $$
 \abs G = [G:H]\abs H.
 $$

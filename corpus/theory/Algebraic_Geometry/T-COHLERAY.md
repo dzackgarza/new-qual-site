@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHLERAY
 kind: theorem
 title: The Leray spectral sequence
+slogan: 'Compute cohomology upstairs by taking higher direct images first; if they vanish above degree zero, cohomology descends to the base.'
 classification:
   areas:
   - algebraic-geometry

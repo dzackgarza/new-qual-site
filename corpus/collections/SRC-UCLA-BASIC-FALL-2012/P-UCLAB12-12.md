@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB12-12
 kind: problem
-title: UCLA Fall 2012 Basic Examination problem 12
+title: Row rank equals column rank
 classification:
   areas:
   - prelim

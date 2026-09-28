@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that $\mathbb R/\mathbb Z$ is isomorphic to the group of rotations about the origin in the complex plane.
 :::
 
-::: solution
+::: {.solution}
 Let $\operatorname{Rot}(\mathbb C)$ denote the group of rotations about the
 origin. Define
 \[
@@ -34,13 +34,13 @@ origin. Define
 by letting $\Phi(t+\mathbb Z)$ be rotation through angle $2\pi t$.
 
 <1>1. The map $\Phi$ is well-defined.
-::: proof
+::: {.proof}
 If $t-s\in\mathbb Z$, then $2\pi(t-s)$ is an integral multiple of $2\pi$, so
 rotation through angle $2\pi t$ equals rotation through angle $2\pi s$.
 :::
 
 <1>2. The map $\Phi$ is a homomorphism.
-::: proof
+::: {.proof}
 Composition of rotations adds angles. Hence
 \[
 \Phi((s+\mathbb Z)+(t+\mathbb Z))
@@ -50,7 +50,7 @@ Composition of rotations adds angles. Hence
 :::
 
 <1>3. The map $\Phi$ is bijective.
-::: proof
+::: {.proof}
 Every rotation about the origin has some angle $\theta$, hence equals
 $\Phi(\theta/(2\pi)+\mathbb Z)$, so $\Phi$ is surjective.
 
@@ -60,7 +60,7 @@ $t+\mathbb Z=\mathbb Z$. Thus the kernel is trivial, and $\Phi$ is injective.
 :::
 
 <1>4. Therefore $\mathbb R/\mathbb Z\cong\operatorname{Rot}(\mathbb C)$.
-::: proof
+::: {.proof}
 By <1>1--<1>3, $\Phi$ is a bijective homomorphism.
 :::
 :::

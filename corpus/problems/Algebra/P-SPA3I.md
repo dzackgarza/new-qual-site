@@ -13,11 +13,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give examples of simple groups. Are there infinitely many?
 :::
 
-::: solution
+::: {.solution}
 A group is **simple** if it is nontrivial and has no normal subgroups other than $1$ and itself.
 
 <1>1. Abelian examples:

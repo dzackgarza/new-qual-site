@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative integral domain.
 Show that the following are equivalent:
 
@@ -31,7 +31,7 @@ Show that the following are equivalent:
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. If $R$ is a field, then $R$ is semisimple.
 ::: {.proof}
 Viewed as a left module over itself, a field $R$ has only the submodules $0$ and $R$, because its left ideals are precisely its ideals. Thus ${}_RR$ is simple. A simple module is semisimple, so $R$ is a semisimple ring.

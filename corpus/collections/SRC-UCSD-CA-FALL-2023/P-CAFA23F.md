@@ -19,7 +19,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 For each $N \in \mathbb{N}$, let $P_N(z) = \sum_{n=0}^{N} \frac{z^n}{n!}$.
 
 (a) Show that the set $Z = \{z \in \mathbb{C} \mid P_N(z) = 0 \text{ for some } N \in \mathbb{N}\}$ is **discrete** (has no accumulation points in $\mathbb{C}$).
@@ -28,7 +28,7 @@ For each $N \in \mathbb{N}$, let $P_N(z) = \sum_{n=0}^{N} \frac{z^n}{n!}$.
 *(You may use the inequality $n! > e^{-n} n^n$.)*
 :::
 
-::: solution
+::: {.solution}
 Let
 $$
 R_N(z)=e^z-P_N(z)=\sum_{n=N+1}^\infty\frac{z^n}{n!}.

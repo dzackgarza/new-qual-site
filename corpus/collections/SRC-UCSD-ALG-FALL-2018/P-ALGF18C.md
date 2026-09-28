@@ -25,7 +25,7 @@ audit:
   note: Verified vanishing via an annihilator contained in a maximal ideal and flatness by localizing the kernel of each tensor-induced map.
 ---
 
-::: problem
+::: {.problem}
 Suppose $A$ is a commutative unital ring, and $M$ is an $A$-module.
 
 (a) Prove that, if $M_{\mathfrak{m}} = 0$ for any maximal ideal $\mathfrak{m}$ of $A$, then $M = 0$.

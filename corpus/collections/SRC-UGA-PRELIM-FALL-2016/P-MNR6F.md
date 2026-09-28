@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f:X\to Y$ be a map of sets.
 Give, with proof, necessary and sufficient conditions for
 \[
@@ -21,7 +21,7 @@ f^{-1}(f(S))=S
 for every subset $S\subseteq X$.
 :::
 
-::: solution
+::: {.solution}
 The condition is that $f$ is injective.
 
 For every map and every $S\subseteq X$, one has $S\subseteq f^{-1}(f(S))$.

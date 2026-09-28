@@ -15,13 +15,13 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 8. Find a harmonic function $u$ in the open first quadrant that extends continuously up to the boundary except at the points 0 and 1, and that takes on the following boundary values: $u(x, y) = 1$ on the half-lines $\{y = 0, x > 1\}$ and $\{x = 0, y > 0\}$, and $u(x, y) = 0$ on the segment $\{0 < x < 1, y = 0\}$.
 
 [Hint: Find conformal maps $F_1, F_2, \ldots, F_5$ indicated in Figure 11. Note that $\frac{1}{\pi}\arg(z)$ is harmonic on the upper half-plane, equals 0 on the positive real axis, and 1 on the negative real axis.]
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Construct a harmonic function $u(x, y)$ on the first quadrant $Q = \{z \in \mathbb{C} : \Re z > 0, \Im z > 0\}$ with the specified boundary values.
 
 <1>1. Conformal mapping of the quadrant to the upper half-plane:

@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field.
 
 (a) Is the polynomial ring $K[x,y]$ Noetherian?

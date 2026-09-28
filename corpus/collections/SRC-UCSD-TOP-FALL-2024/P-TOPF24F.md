@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use Mayer-Vietoris to show that the reduced homology of $S^n$ is $\mathbb{Z}$ in dimension $n$ and zero otherwise, for all $n \geq 0$.
 :::
 

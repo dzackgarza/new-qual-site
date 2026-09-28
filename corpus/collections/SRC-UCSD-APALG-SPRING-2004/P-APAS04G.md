@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be the group of order $8$ defined by the relations
 \[
 a^4=1\quad\text{and}\quad a^2=b^2\quad\text{and}\quad b^{-1}ab=a^3.

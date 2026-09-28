@@ -21,14 +21,14 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be a prime integer, and let $G$ be a group of order $|G| = p$.
 Prove that:
 (1) $G$ is cyclic ($G \cong \mathbb{Z}_p$).
 (2) $G$ is simple (has no non-trivial proper normal subgroups).
 :::
 
-::: solution
+::: {.solution}
 Choose $g\in G\setminus\{e\}$. By Lagrange,
 \[
 |\langle g\rangle|\mid |G|=p.

@@ -21,16 +21,16 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $p$ be prime, and let $G$ be a nonabelian group of order $p^3$.
 Determine the order of the center of $G$.
 :::
 
-::: solution
+::: {.solution}
 The center has order $p$.
 
 <1>1. The center $Z(G)$ is nontrivial.
-::: proof
+::: {.proof}
 Apply the class equation:
 \[
 |G|=|Z(G)|+\sum_i [G:C_G(x_i)],
@@ -42,7 +42,7 @@ $p\mid |Z(G)|$.
 :::
 
 <1>2. The center cannot have order $p^2$ or $p^3$.
-::: proof
+::: {.proof}
 If $|Z(G)|=p^3$, then $Z(G)=G$, contradicting that $G$ is nonabelian.
 
 If $|Z(G)|=p^2$, then $G/Z(G)$ has order $p$, hence is cyclic. But if
@@ -52,7 +52,7 @@ This again contradicts the hypothesis.
 :::
 
 <1>3. Therefore $|Z(G)|=p$.
-::: proof
+::: {.proof}
 By <1>1, the order of the center is one of $p,p^2,p^3$, and <1>2 excludes
 the latter two possibilities.
 :::

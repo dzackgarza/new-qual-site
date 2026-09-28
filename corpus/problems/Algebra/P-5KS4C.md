@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $K$ be a field of characteristic $0$, let $f\in K[x]$ be irreducible of degree $n\ge5$, and let $F$ be the splitting field of $f$ over $K$. Assume
 \[
 \Gal(F/K)\cong S_n.

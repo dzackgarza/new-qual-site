@@ -17,11 +17,11 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Define a *simple group*. Prove that a group of order 56 can not be simple.
 :::
 
-::: solution
+::: {.solution}
 A group $G$ is **simple** if $G\ne1$ and its only normal subgroups are $1$ and $G$.
 
 Let $|G|=56=2^3\cdot7$. The number $n_7$ of Sylow $7$-subgroups satisfies

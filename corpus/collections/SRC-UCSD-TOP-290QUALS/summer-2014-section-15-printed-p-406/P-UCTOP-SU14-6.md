@@ -12,7 +12,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Prove that $\mathbb{QP}^2 \vee S^3$ and $\mathbb{RP}^3$ are not homotopy-equivalent.
+:::
 
 ::: {.solution}
 <1>1. The space $\mathbb{QP}^2$ has one cell in dimensions $0,4,8$, so

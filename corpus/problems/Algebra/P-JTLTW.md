@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $p^3$, where $p$ is prime. Show that $Z(G)$ is nontrivial, and hence that $G$ has a nontrivial normal subgroup.
 :::
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f\in \Hol(\DD)$.
 Show that if $f$ has a fixed point $a$ then $\abs{f'(a)} \leq 1$, and that 
 \[
@@ -23,7 +23,7 @@ Show that if $f$ has a fixed point $a$ then $\abs{f'(a)} \leq 1$, and that
 
 :::
 
-:::{.solution}
+::: {.solution}
 Set $f(a) = a$ in Schwarz-Pick:
 \[
 \left|f^{\prime}(a)\right| \leq \frac{1-|f(a)|^{2}}{1-|a|^{2}} \implies 

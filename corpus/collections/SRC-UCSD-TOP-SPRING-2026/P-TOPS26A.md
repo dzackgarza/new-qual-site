@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the Euler characteristic of $\mathbb{RP}^n$.
 :::
 

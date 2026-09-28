@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Compute $H_*$ of the complement of a knotted solid torus in $S^3$.
+:::
 
 ::: {.solution}
 

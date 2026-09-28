@@ -24,18 +24,18 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a measurable function on $\mathbb{R}$. Show that the graph of $f$ has measure zero in $\mathbb{R}^{2}$.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 \Gamma:=\{(x,f(x)):x\in\mathbb R\}\subset\mathbb R^2.
 \]
 
 <1>1. The graph $\Gamma$ is Lebesgue measurable.
-::: proof
+::: {.proof}
 The map
 \[
 F:\mathbb R^2\to\mathbb R,
@@ -50,7 +50,7 @@ is Lebesgue measurable.
 :::
 
 <1>2. Every vertical section of $\Gamma$ has one-dimensional measure zero.
-::: proof
+::: {.proof}
 For fixed $x\in\mathbb R$,
 \[
 \Gamma_x:=\{y\in\mathbb R:(x,y)\in\Gamma\}=\{f(x)\}.
@@ -62,7 +62,7 @@ m_1(\Gamma_x)=0.
 :::
 
 <1>3. Apply Tonelli's theorem.
-::: proof
+::: {.proof}
 Since $\mathbf1_\Gamma\ge0$ is measurable, Tonelli's theorem gives
 \[
 \begin{aligned}

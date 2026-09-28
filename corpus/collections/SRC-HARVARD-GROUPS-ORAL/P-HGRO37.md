@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State the Jordan-Dickson theorem and outline its proof.
 :::
 
-::: solution
+::: {.solution}
 Let $q$ be a prime power and $n\ge2$.
 
 **Jordan--Dickson theorem.** The projective special linear group
@@ -44,7 +44,7 @@ $N=SL_n(q)$, apart from the two exceptional pairs $(n,q)=(2,2),(2,3)$.
 
 <1>1. Reduce a noncentral normal subgroup to a subgroup containing a nontrivial
 transvection.
-::: proof
+::: {.proof}
 Let $N\trianglelefteq SL_n(q)$ contain a noncentral element $A$. One studies
 commutators of $A$ with elementary transvections
 \[
@@ -62,7 +62,7 @@ argument fails and yield the two exceptions.
 
 <1>2. A normal subgroup containing one nontrivial transvection contains all
 elementary transvections.
-::: proof
+::: {.proof}
 Conjugating by permutation and diagonal matrices in $SL_n(q)$ moves a
 transvection between coordinate pairs and changes its parameter. Commutator
 relations among elementary matrices then give
@@ -78,7 +78,7 @@ of elementary transvections required to generate $SL_n(q)$.
 :::
 
 <1>3. The elementary transvections generate $SL_n(q)$.
-::: proof
+::: {.proof}
 Gaussian elimination expresses every determinant-one matrix as a product of
 elementary matrices. Hence a normal subgroup containing all elementary
 transvections is the whole group $SL_n(q)$.
@@ -86,7 +86,7 @@ transvections is the whole group $SL_n(q)$.
 
 <1>4. Therefore every proper normal subgroup of $SL_n(q)$ is central, outside
 the two exceptional cases.
-::: proof
+::: {.proof}
 If a normal subgroup is not central, <1>1 gives a nontrivial transvection,
 <1>2 gives all elementary transvections, and <1>3 gives the whole group.
 Quotienting by the center therefore leaves no nontrivial proper normal subgroup

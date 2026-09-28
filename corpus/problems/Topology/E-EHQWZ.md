@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 Prove that $X$ is connected iff the only clopen subsets are $\emptyset, X$.
 :::
 

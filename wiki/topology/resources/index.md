@@ -7,12 +7,12 @@ order: 11
 
 Books, problem lists, and solutions for the topology qual.
 
-- [[topology/resources/books-notes|Topology References]], the bibliography.
+- [[topology/resources/books-notes|Topology references]], books and lecture notes.
 
-- [[topology/resources/topics|Topics]], the topic checklist.
+- [[topology/resources/topics|Topics]], a workshop schedule and topic list.
 
 - [[topology/resources/problems|Problems (Topology)]], the problem index.
 
 - [[topology/resources/solutions|Solutions (Topology)]], the solution index.
 
-- Browse the [Sources listing](exams.html) by subject, institution, and year.
+- The [Sources listing](exams.html) lists exams by subject, institution, and year.

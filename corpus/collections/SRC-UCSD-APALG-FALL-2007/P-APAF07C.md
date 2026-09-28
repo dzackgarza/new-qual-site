@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 (a) Use Schur's Theorem to prove that every square matrix is arbitrarily close to a diagonalizable matrix.
 
 (b) Show that a square matrix matrix $A$ has an orthonormal basis of eigenvectors iff $A^HA=AA^H$ ($A^*A=AA^*$).

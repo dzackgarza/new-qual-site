@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Prove that if $H \operatorname{char} G$ (i.e. $H$ is a characteristic subgroup of $G$), then $H \trianglelefteq G$ ($H$ is a normal subgroup of $G$).
 (2) Give an example showing that normality does not imply characteristic (so "characteristic" is strictly stronger than "normal").
 :::
 
-::: solution
+::: {.solution}
 If $H\operatorname{char}G$, then $H$ is fixed by every automorphism of $G$. In particular it is fixed by every inner automorphism
 \[
 \iota_g(x)=gxg^{-1},\qquad g\in G.

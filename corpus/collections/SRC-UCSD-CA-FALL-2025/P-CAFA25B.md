@@ -18,7 +18,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $f : \{z : 0 < |z| < 1\} \to \mathbb{C}$ be holomorphic and assume that $|f(z)| \leq A|z|^{-3/2}$ for some constant $A$.
 Prove that there is a complex constant $\alpha$ such that $g(z) := f(z) - \alpha z^{-1}$ can be extended to a holomorphic function on $\{z : |z| < 1\}$.
 :::

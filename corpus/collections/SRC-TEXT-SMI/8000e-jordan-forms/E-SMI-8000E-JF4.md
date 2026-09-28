@@ -49,7 +49,7 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 In each part, the columns of $Q$ are chosen as Jordan chains. We verify the
 chain equations, which are equivalent to
 $$
@@ -58,7 +58,7 @@ $$
 and hence to $Q^{-1}AQ=J$ once $Q$ is invertible.
 
 <1>1. Matrix $A$.
-::: proof
+::: {.proof}
 Let $i^2=-1$ and take
 $$
 Q_A=
@@ -92,7 +92,7 @@ $$
 :::
 
 <1>2. Matrix $B$.
-::: proof
+::: {.proof}
 Set
 $$
 v_3=(1,0,0)^t,
@@ -131,7 +131,7 @@ $$
 :::
 
 <1>3. Matrix $C$.
-::: proof
+::: {.proof}
 Choose eigenvectors
 $$
 v_{-2}=(1,-1,-1)^t,
@@ -174,7 +174,7 @@ $$
 :::
 
 <1>4. Matrix $D$.
-::: proof
+::: {.proof}
 Let
 $$
 v=(-1,1,-1,1)^t,
@@ -226,7 +226,7 @@ $$
 :::
 
 <1>5. Matrix $E$.
-::: proof
+::: {.proof}
 At eigenvalue $3$, take
 $$
 v_3=(1,0,0,-1,0)^t,

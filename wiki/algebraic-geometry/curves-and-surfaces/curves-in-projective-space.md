@@ -14,8 +14,8 @@ The questions here are which divisors do that, where the curve lands, and what p
 
 [[PR-CRVDEGBD]]
 
-The three thresholds are one Riemann--Roch computation repeated.
-None of the sufficient conditions is necessary, and the canonical divisor on a plane quartic is the counterexample to keep.
+The three thresholds come from repeated applications of Riemann--Roch, and their sharpness differs.
+None of the sufficient conditions is necessary; the canonical divisor on a plane quartic gives a standard counterexample.
 
 [[T-CRVEMBP3]]
 
@@ -24,13 +24,13 @@ Projecting once more into the plane costs injectivity, and nodes appear as the s
 
 [[D-CRVPLSING]]
 
-A plane model that cannot come from a general projection has a singularity that is a codimension-one coincidence: the secant or tangent variety meets the chosen centre.
+For a general projection, the plane singularities are nodes; a worse singularity imposes an additional incidence condition on the projection center.
 
 ## Curves on a quadric
 
 [[FE-CRVQUAD]]
 
-This is the example family to reach for whenever a curve of prescribed genus is needed, since type $(g+1,2)$ produces one for every $g$.
+Curves of type $(g+1,2)$ on a quadric give examples in every genus $g$.
 It also identifies most of the named space curves: the twisted cubic is type $(1,2)$, the elliptic quartic is $(2,2)$, and the canonical genus-$4$ sextic is $(3,3)$.
 
 ## What is possible
@@ -38,8 +38,12 @@ It also identifies most of the named space curves: the twisted cubic is type $(1
 [[T-CRVCAST]]
 
 Castelnuovo's bound and its equality case are the same statement read twice, because the extremal curves are the balanced curves on a quadric.
-Comparing it with $\binom{d-1}{2}$ for plane curves shows that spreading a curve out into $\PP^3$ costs about half its genus.
+Comparing it with $\binom{d-1}{2}$ for plane curves shows how the maximal genus drops when a curve is embedded nondegenerately in $\PP^3$.
 
 [[FE-CRVDEGS]]
 
-The low-degree list is organised by whether $\OO_C(1)$ is special.
+The low-degree list is organized by whether $\OO_C(1)$ is special.
+
+## Dual curves
+
+[[D-CRVDUAL]]

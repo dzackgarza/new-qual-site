@@ -26,10 +26,12 @@ audit:
   note: 'Computed part (a) from the long exact sequence and part (b) from the source figure: collapsing A gives a wedge of two tori, while collapsing B gives a torus with two points identified.'
 ---
 
+::: {.problem}
 (a) Compute the homology groups $H_n(X, A)$ when $X$ is $S^2$ or $S^1 \times S^1$ and $A$ is a finite set of points in $X$.
 
 (b) Compute the groups $H_n(X, A)$ and $H_n(X, B)$ for $X$ a closed orientable surface of genus two with $A$ and $B$ the circles shown.
 [What are $X/A$ and $X/B$?]
+:::
 
 ::: {.solution}
 Let $A$ first denote a finite set of $m\ge1$ points in a connected space $X$ equal to $S^2$ or $T^2=S^1\times S^1$.

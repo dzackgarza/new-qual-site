@@ -20,7 +20,7 @@ audit:
 Show that disjoint cycles commute.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** each cycle moves only its own support and fixes the other's, so both composites act the same on every point.
 
 <1>1. Let $\sigma$ and $\tau$ be cycles with disjoint supports $A = \supp(\sigma)$ and $B = \supp(\tau)$, so $A \cap B = \emptyset$, and let $x$ be any point.

@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Use a version of the Schwarz lemma to prove Liouville's theorem.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Suppose $f$ is entire and bounded, we'll show $f$ is constant.
 If $f$ is bounded by $M$, then $f(\CC) \subseteq \DD_M(0)$.
 Without loss of generality, replace $f$ with $g(z) \da f(z) - f(0)$, so $g(0) = 0$ and is still bounded by $M' \da M + \abs{f(0)}$ by the triangle inequality.

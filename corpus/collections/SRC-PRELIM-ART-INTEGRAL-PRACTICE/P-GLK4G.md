@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Use $u=x^{1/a}$ to reduce
 \[
 \int e^{x^{1/a}}\,dx,
@@ -42,7 +42,7 @@ Also evaluate
 \]
 :::
 
-::: solution
+::: {.solution}
 With $u=x^{1/a}$, so $x=u^a$ and $dx=a u^{a-1}du$,
 \[
 \int e^{x^{1/a}}\,dx=a\int u^{a-1}e^u\,du.

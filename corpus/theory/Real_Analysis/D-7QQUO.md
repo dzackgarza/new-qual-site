@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-7QQUO
 kind: definition
-title: Hilbert Space
+title: Hilbert space
 classification:
   areas:
   - real-analysis
@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.definition}
-A **Hilbert space** is an inner product space which is a Banach space under the induced norm.
+A \dfn{Hilbert space} is an inner product space $(H,\inner{\cdot}{\cdot})$ over $\RR$ or $\CC$ that is a [[D-BG455|Banach space]] under the norm $\norm{x}\coloneqq\sqrt{\inner{x}{x}}$.
 :::

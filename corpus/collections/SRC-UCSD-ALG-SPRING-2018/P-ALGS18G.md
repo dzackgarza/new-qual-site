@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $f(x) \in \mathbb{Q}[x]$ is an irreducible polynomial of degree $p+1$ where $p$ is a prime.
 Let $E$ be a splitting field of $f$ over $\mathbb{Q}$.
 Suppose $[E:\mathbb{Q}] = p(p+1)$.

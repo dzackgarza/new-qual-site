@@ -3,6 +3,7 @@ schema: qual/card@1
 id: T-COHFLATCHI
 kind: theorem
 title: Flatness is constancy of the Hilbert polynomial
+slogan: 'For coherent sheaves on projective space over an integral Noetherian base, flatness is exactly constancy of the fibre Hilbert polynomial.'
 classification:
   areas:
   - algebraic-geometry
@@ -30,7 +31,7 @@ This is the theorem that makes "flat family" mean "family in which the numerical
 The invariants that do stay constant are exactly the ones read off the Hilbert polynomial: degree, dimension, arithmetic genus, $\chi(\OO)$.
 Everything else can degenerate.
 Irreducibility, reducedness, the geometric genus, and the Picard number are all lost in flat limits, and a flat family with smooth general fibre can have a singular or non-reduced special fibre.
-A conic degenerating to a double line keeps $\chi$ and loses reducedness; that is the standard example to have ready.
+A conic degenerating to a double line keeps $\chi$ and loses reducedness.
 
-The non-example to quote is a blowup, which is not flat because the fibre dimension jumps over the centre.
+A blowup is not flat because the fibre dimension jumps over the centre.
 :::

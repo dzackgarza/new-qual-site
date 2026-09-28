@@ -17,7 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove by contradiction that there does not exist a continuous map $f : \mathbb{R}^3 \setminus \{0\} \to \mathbb{R}^2$ with the property that $f(x) \neq f(-x)$ for all $x \in \mathbb{R}^3 \setminus \{0\}$.
 
 Hint: Define $g : \mathbb{R}^3 \setminus \{0\} \to S^1$ by

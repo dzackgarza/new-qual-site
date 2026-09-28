@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Suppose $h$ is entire, $h(0)=3+4i$, and $|h(z)|\le5$ whenever $|z|<1$.
 What is $h'(0)$?
 :::

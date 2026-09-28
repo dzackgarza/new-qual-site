@@ -22,7 +22,7 @@ audit:
   note: "Verified each example directly, including nonprincipality of (x,y) in a two-variable polynomial ring and the quotient criteria for prime and maximal ideals."
 ---
 
-::: problem
+::: {.problem}
 Give each of the following examples:
 
 1. A principal ideal that is not prime.
@@ -32,11 +32,11 @@ Give each of the following examples:
 3. A prime ideal that is not maximal.
 :::
 
-::: solution
+::: {.solution}
 Let $k$ be any field.
 
 <1>1. The ideal $(6)\subset\mathbb Z$ is principal but not prime.
-::: proof
+::: {.proof}
 It is principal by definition. Moreover
 $$
 2\cdot3=6\in(6),
@@ -45,7 +45,7 @@ while neither $2$ nor $3$ belongs to $(6)$. Hence $(6)$ fails the defining prope
 :::
 
 <1>2. The ideal $(x,y)\subset k[x,y]$ is prime but not principal.
-::: proof
+::: {.proof}
 Evaluation at $(0,0)$ gives a surjective homomorphism
 $$
 k[x,y]\to k
@@ -60,7 +60,7 @@ Suppose $(x,y)=(f)$ were principal. Since $x,y\in(f)$, the polynomial $f$ divide
 :::
 
 <1>3. The ideal $(x)\subset k[x,y]$ is prime but not maximal.
-::: proof
+::: {.proof}
 The evaluation homomorphism at $x=0$ identifies
 $$
 k[x,y]/(x)\cong k[y].

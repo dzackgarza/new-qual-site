@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 The cone $CX$ of a space $X$ is $X \times I$ with $X \times \{0\}$ crushed to a point.
 The mapping cone of a map $f \colon X \to Y$ is the space $C_f$ obtained by gluing $CX$ to $Y$ using the map $f \colon X \times \{1\} \to Y$.
 Show that there is a long exact sequence

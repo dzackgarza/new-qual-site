@@ -21,7 +21,7 @@ prompts:
 ---
 
 ::: {.definition title="flat"}
-An $A$-module $N$ is **flat** if the functor $\wait \tensor_A N$ is exact.
+An $A$-module $N$ is \dfn{flat} if the functor $\wait \tensor_A N$ is exact.
 A priori this functor is right exact, so the content of the definition is left exactness: for every injection $M' \injects M$, the induced map $M' \tensor_A N \to M \tensor_A N$ is again injective.
 An $A$-algebra $B$ is flat if it is flat as an $A$-module.
 :::

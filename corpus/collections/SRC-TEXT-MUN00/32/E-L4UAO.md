@@ -20,7 +20,7 @@ Show that if $\prod X_\alpha$ is Hausdorff, or regular, or normal, then so is $X
 :::
 
 ::: {.solution}
-Fix an index \(\alpha\), and choose basepoints \(a_\beta\in X_\beta\) for every \(eta\ne\alpha\). The map
+Fix an index \(\alpha\), and choose basepoints \(a_\beta\in X_\beta\) for every \(\beta\ne\alpha\). The map
 \[
 i:X_\alpha\to\prod_\beta X_\beta,
 \qquad

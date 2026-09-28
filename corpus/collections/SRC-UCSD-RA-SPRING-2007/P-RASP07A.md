@@ -23,16 +23,16 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Prove Chebyshev's Inequality: If $f \in L^p(X, \mu)$, with $0 < p < \infty$, then for any positive number $r$,
 $$
 \mu(\{x : |f(x)| > r\}) \leq \left[\frac{\|f\|_p}{r}\right]^p.
 $$
 :::
 
-::: solution
+::: {.solution}
 <1>1. Integrate the pointwise lower bound on the superlevel set.
-::: proof
+::: {.proof}
 Let
 \[
 E_r:=\{x\in X:|f(x)|>r\}.

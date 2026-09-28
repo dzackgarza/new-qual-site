@@ -15,16 +15,17 @@ review: reviewed
 ---
 
 ::: {.strategy}
-For each prime $p$ dividing $\abs G$:^[Sylow counting workflow.]
+Let $G$ be a finite group.
+For each prime $p$ dividing $\abs G$, write $\abs G=p^am$ with $p\notdivides m$ and let $n_p$ be the number of [[D-7TQ2M|Sylow $p$-subgroups]] of $G$.
 
-1. Write down every divisor of the prime-to-$p$ factor that is congruent to $1$ modulo $p$; these are the only possible values of $n_p$.
+1. List the divisors of $m$ that are congruent to $1$ modulo $p$; by the Sylow theorems these are the only possible values of $n_p$.
 
-2. A forced value $n_p=1$ gives a normal Sylow subgroup.
+2. If $n_p=1$ is forced, the Sylow $p$-subgroup is [[D-EKE4Q|normal]].
 
 3. If several values remain, count the nonidentity elements contributed by distinct Sylow subgroups.
-   Do not assume different Sylow subgroups intersect trivially unless their order or another argument proves it.
+   When $a=1$, distinct Sylow $p$-subgroups have order $p$, intersect trivially, and contribute $n_p(p-1)$ elements of order $p$; when $a\geq2$, bound the intersections of distinct Sylow $p$-subgroups separately before counting.
 
-4. Use normality to form products of subgroups and then test whether conjugation between the factors is trivial.
+4. Use normal Sylow subgroups to form products of subgroups, and determine whether the conjugation action of one factor on another is trivial.
 
-Keep the identity out of overlapping element counts and add it back exactly once.
+In overlapping element counts, count only nonidentity elements and add the identity once.
 :::

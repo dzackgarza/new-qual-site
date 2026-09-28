@@ -25,7 +25,7 @@ a. Give the $\delta$-$\varepsilon$ definition of $\lim_{x \to a} f(x) = \ell$.
 b. Determine the limit and use the definition to prove your answer: $$\lim_{x \to 2} \frac{2x+1}{x^2+1} = ?$$
 :::
 
-::: solution
+::: {.solution}
 The statement $\lim_{x\to a}f(x)=\ell$ means: for every $\varepsilon>0$ there exists $\delta>0$ such that
 \[
 0<|x-a|<\delta\implies |f(x)-\ell|<\varepsilon.

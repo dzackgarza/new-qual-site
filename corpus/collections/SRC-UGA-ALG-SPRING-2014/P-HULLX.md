@@ -18,12 +18,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $p, n$ be integers such that $p$ is prime and $p$ does not divide $n$.
 Find a real number $k = k (p, n)$ such that for every integer $m\geq k$, every group of order $p^m n$ is not simple.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ have order $p^m n$, with $p\nmid n$. We claim that one may take
 \[
 k(p,n)=\left\lfloor \log_p((n-1)!)\right\rfloor+1.

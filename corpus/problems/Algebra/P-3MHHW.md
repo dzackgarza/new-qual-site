@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that localizing a ring at a prime ideal produces a local ring.
 
 - Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a unit.
@@ -35,7 +35,7 @@ audit:
 - Show that every prime ideal is irreducible.
 :::
 
-::: solution
+::: {.solution}
 Let all rings here be commutative with identity.
 
 1. If $\mathfrak p\in\operatorname{Spec}R$, then in $R_{\mathfrak p}$ every fraction $a/s$ with $a\notin\mathfrak p$ is a unit, with inverse $s/a$. Thus the nonunits are exactly

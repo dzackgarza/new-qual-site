@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $V$ be a finite-dimensional complex representation of $G$ with character $\chi$.
 Consider the operator $\sigma$ on $V \otimes V$ which swaps factors.
 Let $S^2(V)$ be the subspace invariant under $\sigma$.

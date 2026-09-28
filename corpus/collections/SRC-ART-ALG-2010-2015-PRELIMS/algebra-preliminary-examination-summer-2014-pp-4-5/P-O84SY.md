@@ -27,7 +27,7 @@ audit:
   note: "Checked the complete Sylow counts and cyclic automorphism group, the order-3 centralizer obstruction, and the characteristic involution that rules out centralizer order 14."
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group of order 84 with 28 Sylow $3$-subgroups.
 For any subgroup $H$ of $G$, let $N_G(H)$ and $Z_G(H)$ be the normalizer and the centralizer of $H$ in $G$, respectively.
 
@@ -46,14 +46,14 @@ d. Show that $|Z_G(K)|$ is not divisible by $3$.
 e. Prove that $Z_G(K)$ must have order $28$.
 :::
 
-::: solution
+::: {.solution}
 Write $C=Z_G(K)$. We use $Z_G(H)$ for the elements of $G$
 commuting with every element of $H$.
 
 <1>1. The Sylow $7$-subgroup $K$ is normal and
 $\operatorname{Aut}(K)\cong C_6$.
 
-::: proof
+::: {.proof}
 Sylow's theorems give $n_7\mid12$ and $n_7\equiv1\pmod7$
 [@DF04]. Among $1,2,3,4,6,12$, only $1$ has that congruence,
 so $K$ is unique and therefore normal. It has order $7$ and
@@ -70,7 +70,7 @@ $3,2,6,4,5,1$, so this group is cyclic of order $6$.
 <1>2. The subgroup $C$ is normal and $G/C$ is cyclic of order
 dividing $6$.
 
-::: proof
+::: {.proof}
 Normality of $K$ makes conjugation a homomorphism
 $$
 \theta:G\longrightarrow\operatorname{Aut}(K),\qquad
@@ -85,7 +85,7 @@ cyclic group of order $6$ found in step <1>1 [@DF04].
 <1>3. For every Sylow $3$-subgroup $Q$,
 $N_G(Q)=Z_G(Q)=Q$.
 
-::: proof
+::: {.proof}
 Conjugation is transitive on the Sylow $3$-subgroups, and the
 stabilizer of $Q$ is $N_G(Q)$. Thus
 $[G:N_G(Q)]=n_3=28$, giving $|N_G(Q)|=84/28=3$.
@@ -97,7 +97,7 @@ $Q\subseteq Z_G(Q)\subseteq N_G(Q)=Q$.
 
 <1>4. The integer $|C|$ is not divisible by $3$.
 
-::: proof
+::: {.proof}
 Otherwise Cauchy's theorem would give $q\in C$ of order $3$
 [@DF04]. Its subgroup $Q=\langle q\rangle$ would be Sylow in
 $G$. Since $q$ commutes with every element of $K$, so does each
@@ -108,7 +108,7 @@ and $3$.
 
 <1>5. The centralizer $C$ has order $28$.
 
-::: proof
+::: {.proof}
 Put $d=[G:C]$. Step <1>2 gives $d\mid6$, and
 $84=d|C|$. Step <1>4 forces $3\mid d$, so $d=3$ or $6$.
 Consequently $|C|=28$ or $14$.

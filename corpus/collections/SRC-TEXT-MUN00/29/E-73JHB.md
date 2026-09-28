@@ -21,7 +21,7 @@ audit:
 Show that the one-point compactification of $\mathbb{Z}_+$ is homeomorphic with the subspace $\ts{0} \cup \ts{1/n \mid n \in \mathbb{Z}_+}$ of $\mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that the one-point compactification $\mathbb{Z}_+^* = \mathbb{Z}_+ \cup \{\infty\}$ of the discrete space $\mathbb{Z}_+$ is homeomorphic to the subspace $K = \{0\} \cup \{1/n \mid n \in \mathbb{Z}_+\} \subset \mathbb{R}$.
 
 <1>1. Structure of the one-point compactification $\mathbb{Z}_+^*$:

@@ -5,13 +5,14 @@ order: 7
 
 # Review sheet
 
+The theorem statements of the real analysis chapters, grouped by chapter.
+Each section links to the chapter containing the proofs.
+
 ## Measure
 
 [[T-7LQ7X]]
 
 [[T-KZNWM]]
-
-[[T-YMPTF]]
 
 [[T-OTR5M]]
 
@@ -19,7 +20,7 @@ Proved in [[real-analysis/measure/index|Measure]].
 
 ## Integration
 
-[[T-YSMII]]
+[[PR-6OHTJ]]
 
 [[T-5K3IO]]
 
@@ -53,10 +54,6 @@ Proved in [[real-analysis/fubini-tonelli/index|Fubini and Tonelli]].
 
 [[T-5BFVS]]
 
-[[T-5YROQ]]
-
-[[T-G543T]]
-
 [[T-S3C3S]]
 
 Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].
@@ -70,8 +67,6 @@ Proved in [[real-analysis/lp-spaces/index|$L^p$ spaces]].
 [[T-3UXK7]]
 
 [[T-4BDE3]]
-
-[[T-4CDKK]]
 
 Proved in [[real-analysis/fourier/index|Fourier]].
 
@@ -95,14 +90,13 @@ Proved in [[real-analysis/functional-analysis/index|Functional analysis]].
 
 [[T-OXNTU]]
 
-[[T-DS4VW]]
-
 [[T-TR526]]
 
 [[T-O4UD3]]
 
 Proved in [[real-analysis/undergraduate/index|Undergraduate analysis]].
 
-## What to check before using each one
+## Hypotheses and counterexamples
 
-The hypotheses are on the recognition pages, and the witnesses for dropping them are on [[real-analysis/counterexamples|Counterexamples]].
+[[real-analysis/integration/which-convergence-theorem|Which convergence theorem?]], [[real-analysis/fubini-tonelli/which-one-applies|Which one applies?]], and [[real-analysis/lp-spaces/which-inequality|Which inequality?]] compare the hypotheses of these theorems.
+[[real-analysis/counterexamples|Counterexamples]] gives, for each hypothesis, an example showing that the theorem fails without it.

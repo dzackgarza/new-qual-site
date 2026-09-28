@@ -33,7 +33,7 @@ Any UFD is normal (integrally closed).
 :::
 
 
-::: solution
+::: {.solution}
 Let $R$ be a UFD with fraction field $K$, and let
 $$
 x\in K
@@ -41,7 +41,7 @@ $$
 be integral over $R$. We show $x\in R$.
 
 <1>1. Write $x$ in lowest terms.
-::: proof
+::: {.proof}
 Because $R$ is a UFD, write
 $$
 x=\frac ab
@@ -51,7 +51,7 @@ factor. Equivalently, every common divisor of $a$ and $b$ is a unit.
 :::
 
 <1>2. Clear denominators in a monic integral equation.
-::: proof
+::: {.proof}
 Since $x$ is integral, there are
 $$
 r_0,\ldots,r_{n-1}\in R
@@ -76,7 +76,7 @@ $$
 :::
 
 <1>3. The denominator $b$ is a unit.
-::: proof
+::: {.proof}
 If $b$ were a nonunit, it would have an irreducible factor $p$. In a UFD,
 every irreducible is prime. Since
 $$
@@ -91,7 +91,7 @@ step <1>1. Therefore $b$ is a unit.
 :::
 
 <1>4. Conclude normality.
-::: proof
+::: {.proof}
 Since $b$ is a unit,
 $$
 x=a/b\in R.

@@ -24,19 +24,19 @@ audit:
   note: "Checked the maximal-ideal existence argument and proved separately that the nonunit ideal is proper, maximal, and the only maximal ideal."
 ---
 
-::: problem
+::: {.problem}
 A commutative ring $R$ is called a local ring if it has a unique maximal ideal.
 Prove that if $R$ is a local ring with maximal ideal $M$ then an element $a \in R$ is a unit if and only if $a \notin M$.
 Conversely, prove that if $R$ is a commutative ring in which the set of non-units forms an ideal, then $R$ is a local ring.
 :::
 
-::: solution
+::: {.solution}
 Rings are understood to have an identity, and maximal ideals are proper.
 
 <1>1. Every nonunit belongs to a maximal ideal, and no proper ideal
 contains a unit.
 
-::: proof
+::: {.proof}
 If an ideal contains a unit $u$, it contains $u^{-1}u=1$ and
 therefore the whole ring. If $a$ is a nonunit, its principal ideal
 $(a)$ is proper, since $1=ra$ would make $a$ invertible.
@@ -52,7 +52,7 @@ a maximal member, which is a maximal ideal of $R$ containing $a$.
 <1>2. If $R$ has a unique maximal ideal $M$, its units are exactly
 the elements outside $M$.
 
-::: proof
+::: {.proof}
 No unit lies in $M$ because $M$ is proper. Conversely every
 nonunit lies in some maximal ideal by step <1>1, and that ideal
 must be $M$. Thus $a$ is a unit if and only if $a\notin M$.
@@ -61,7 +61,7 @@ must be $M$. Thus $a$ is a unit if and only if $a\notin M$.
 <1>3. If the set $I$ of nonunits is an ideal, it is the unique
 maximal ideal of $R$.
 
-::: proof
+::: {.proof}
 The identity $1$ is a unit, so $1\notin I$ and $I$ is proper.
 Any ideal strictly containing $I$ contains an element outside
 $I$, hence a unit, and must equal $R$ by step <1>1. Thus $I$

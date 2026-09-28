@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n$ be a positive integer and let $G\subseteq\mathrm{GL}_n(\mathbb{C})$ be the subgroup
 \[
 G=\left\{\begin{pmatrix}
@@ -28,7 +28,7 @@ of diagonal matrices whose diagonal entries are $\pm 1$.
 Find the Hilbert series of the invariant ring $\mathbb{C}[x_1,x_2,\ldots,x_n]^G$.
 :::
 
-::: solution
+::: {.solution}
 A monomial
 \[
 x_1^{a_1}\cdots x_n^{a_n}

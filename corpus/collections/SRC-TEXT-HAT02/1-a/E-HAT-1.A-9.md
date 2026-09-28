@@ -26,10 +26,11 @@ audit:
   note: Used monodromy on the n-sheeted fiber to identify conjugates with point stabilizers, and the kernel/core to obtain a finite-index normal subgroup.
 ---
 
+::: {.problem}
 Using covering spaces, show that an index $n$ subgroup $H$ of a group $G$ has at most $n$ conjugate subgroups $gHg^{-1}$ in $G$.
 Apply this to show that there exists a normal subgroup $K \subset G$ of finite index with $K \subset H$.
 [For the latter statement, consider the intersection of all the conjugate subgroups $gHg^{-1}$. This is the maximal normal subgroup of $G$ contained in $H$.]
-
+:::
 
 ::: {.solution}
 Let $H\le G$ have index $n$.

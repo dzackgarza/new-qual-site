@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f(z)$ is defined and analytic in the punctured neighborhood of zero, $N = \{z \mid 0 < |z| < 1\}$, and that for all $z$ in $N$, $|f(z)| < 1$.
 Provide a proof of the standard result that $f(z)$ has a removable singularity at $z = 0$.
 :::
 
-::: solution
+::: {.solution}
 Define
 \[
 g(z)=z^2f(z)

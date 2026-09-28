@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $E/F$ be a separable, nonnormal extension of degree $4$.
 Let $K/F$ be its normal closure.
 Bound $[K:F]$.
 :::
 
-::: solution
+::: {.solution}
 One has
 \[
 [K:F]\le 24.
@@ -39,7 +39,7 @@ More precisely, because $E/F$ is not normal,
 
 <1>1. The Galois group $G=\operatorname{Gal}(K/F)$ embeds as a transitive
 subgroup of $S_4$.
-::: proof
+::: {.proof}
 Because $E/F$ is finite separable of degree $4$, the primitive element theorem
 gives $E=F(\alpha)$ for some $\alpha$ whose minimal polynomial over $F$ has four
 distinct roots. The normal closure $K$ is the splitting field of this polynomial.
@@ -54,7 +54,7 @@ irreducible over $F$.
 :::
 
 <1>2. Hence $[K:F]=|G|$ divides $24$ and is divisible by $4$.
-::: proof
+::: {.proof}
 Since $K/F$ is Galois,
 \[
 [K:F]=|G|.
@@ -64,7 +64,7 @@ orbit-stabilizer theorem that $4$ divides $|G|$.
 :::
 
 <1>3. The value $[K:F]=4$ is impossible because $E/F$ is nonnormal.
-::: proof
+::: {.proof}
 We have $E\subseteq K$ and $[E:F]=4$. If $[K:F]=4$, then $E=K$. But $K/F$ is
 normal by construction, contradicting the hypothesis that $E/F$ is nonnormal.
 :::
@@ -74,7 +74,7 @@ normal by construction, contradicting the hypothesis that $E/F$ is nonnormal.
 [K:F]\in\{8,12,24\},
 \]
 and in particular $[K:F]\le24$.
-::: proof
+::: {.proof}
 The positive divisors of $24$ that are multiples of $4$ are $4,8,12,24$;
 exclude $4$ by <1>3.
 :::

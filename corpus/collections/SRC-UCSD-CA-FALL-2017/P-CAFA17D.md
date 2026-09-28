@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Let $\mathfrak{h}^+ = \{z : \operatorname{Im} z > 0\}$ denote the upper-half plane.
 Let $\mathcal{F}$ be the family of holomorphic functions $f: \mathfrak{h}^+ \to \mathbb{C}$ such that $f(i) = 0$ and $|f(z)| < 1$ for all $z \in \mathfrak{h}^+$.
 Find the maximum value of $|f(2i)|$ for $f \in \mathcal{F}$.

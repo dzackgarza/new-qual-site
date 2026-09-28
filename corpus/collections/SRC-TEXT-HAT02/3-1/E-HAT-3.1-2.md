@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-2
 kind: problem
-title: Hatcher Section 3.1 Exercise 2
+title: Multiplication by $n$ induces multiplication by $n$ on $\operatorname{Ext}$
 classification:
   areas:
   - topology
@@ -24,9 +24,9 @@ audit:
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
 ---
 
-# E-HAT-3.1-2
-
+::: {.problem}
 Show that the maps $G \xrightarrow{n} G$ and $H \xrightarrow{n} H$ multiplying each element by the integer $n$ induce multiplication by $n$ in $\operatorname{Ext}(H, G)$.
+:::
 
 ::: {.solution}
 Choose a free resolution

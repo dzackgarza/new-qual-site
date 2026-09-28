@@ -26,6 +26,7 @@ audit:
   note: Verified by direct diagram algebra/exactness.
 ---
 
+::: {.problem}
 In each of the following commutative diagrams assume that all maps but one are isomorphisms. Show that the remaining map must be an isomorphism as well.
 
 $$\begin{array}{lll}
@@ -33,6 +34,7 @@ A \to B & A \to B & A \to B \\
 \downarrow & \downarrow & \downarrow \\
 C \to D & C \to D & C \to D
 \end{array}$$
+:::
 
 ::: {.solution}
 Hatcher's three diagrams are respectively a commutative triangle and two commutative squares. In each case the missing map is forced to be a composite of the other maps and their inverses.

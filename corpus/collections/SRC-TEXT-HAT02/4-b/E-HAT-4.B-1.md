@@ -16,7 +16,9 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 Show that the Hopf invariant of a composition $S^{2n-1} \xrightarrow{f} S^{2n-1} \xrightarrow{g} S^n$ is given by $H(gf) = (\deg f) H(g)$, and for a composition $S^{2n-1} \xrightarrow{f} S^n \xrightarrow{g} S^n$ the Hopf invariant satisfies $H(gf) = (\deg g)^2 H(f)$.
+:::
 
 ::: {.solution}
 <1>1. The Hopf invariant $H(g)$ is defined via the cohomology of the mapping cone $C_g$: $H(g)$ is the integer such that $\alpha \smile \alpha = H(g)\beta$ in $H^{2n}(C_g)$, where $\alpha \in H^n(C_g)$ and $\beta \in H^{2n}(C_g)$ are generators.

@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $P$ be the Poincaré homology sphere, a 3-manifold whose fundamental group has order 120 and whose universal cover is $S^3$.
 Compute $\pi_3$ of the one-point union $P \vee S^3$.
+:::
 
 ::: {.solution}
 <1>1. The universal cover of $P\vee S^3$ is obtained from the universal cover $S^3\to P$ by attaching one copy of $S^3$ at each lift of the wedge point.

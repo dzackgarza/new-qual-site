@@ -26,7 +26,7 @@ audit:
   note: Verified finiteness directly from compactness and local covering charts, and the cardinality formula from the transitive monodromy action and its stabilizer.
 ---
 
-::: problem
+::: {.problem}
 Let
 \[
 p:X\longrightarrow Y

@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 If $f$ is holomorphic on $\Omega$ and not identically zero, then $f\inv(0) \intersect \Omega$ is discrete.
 
 :::
 
-:::{.solution}
+::: {.solution}
 It suffices to show that if $f(a) = 0$ then $f$ is nonzero on some $\DD_\eps^*(a)$.
 Without loss of generality, suppose $a=0$ and expand $f(z) = \sum_{k\geq 0}c_k z^k = \sum_{k\geq m}c_k z^k$ where $m\geq 0$ is minimal such that $c_m\neq 0$.
 This exists since $f$ is not identically zero, by uniqueness of power series.

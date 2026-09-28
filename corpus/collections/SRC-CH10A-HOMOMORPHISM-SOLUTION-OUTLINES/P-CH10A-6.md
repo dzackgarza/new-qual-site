@@ -2,20 +2,26 @@
 schema: qual/card@1
 id: P-CH10A-6
 kind: problem
-title: Chapter 10A exercise 6
+title: Antidifferentiation as a homomorphism of the additive group of real polynomials
 classification:
   areas:
   - algebra
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced the garbled 'R f' with the integral sign and restored math delimiters, per page 1 of Ch10PtASltns.pdf.
 ---
 
 ::: {.problem}
-Let G be the group of all polynomials with real coefficients under addition.
-For each f in G let R f denote the antiderivative of f that passes through the point (0, 0). Show that the mapping $f \mapsto \textstyle \int f$ from G to G is a homomorphism.
+Let $G$ be the group of all polynomials with real coefficients under addition.
+For each $f$ in $G$ let $\int f$ denote the antiderivative of $f$ that passes through the point $(0, 0)$.
+Show that the mapping $f \mapsto \int f$ from $G$ to $G$ is a homomorphism.
 What is the kernel of this mapping?
-Is this mapping a homomorphism if $\textstyle \int f$ denotes the antiderivative of f that passes through (0, 1)?
+Is this mapping a homomorphism if $\int f$ denotes the antiderivative of $f$ that passes through $(0, 1)$?
 :::
 
 ::: {.solution}

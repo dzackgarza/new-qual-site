@@ -24,7 +24,7 @@ audit:
   note: Verified non-normality of Z[2sqrt(2)], Gauss-lemma UFD closure for Z[x,y], and failure of atomic factorization for x in Z+xQ[x].
 ---
 
-::: problem
+::: {.problem}
 Determine if each of the following rings is a unique factorization domain.
 For each case, you need give only a short justification or line of argument.
 

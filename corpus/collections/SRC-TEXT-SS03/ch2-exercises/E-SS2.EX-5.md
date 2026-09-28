@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 5. Suppose $f$ is continuously complex diferentiable on $\Omega ,$ and $T \subset \Omega$ is a triangle whose interior is also contained in Ω. Apply Green’s theorem to show that
 
 $$
@@ -33,7 +33,7 @@ $$
 For appropriate $F$ and G, one can then use the Cauchy-Riemann equations.]
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 f=u+iv,

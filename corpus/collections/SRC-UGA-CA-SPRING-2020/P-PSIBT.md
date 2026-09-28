@@ -23,7 +23,7 @@ Compute the following integral carefully justifying each step:
 \]
 :::
 
-::: solution
+::: {.solution}
 For $0<s<3$, set
 \[
 I(s)=\int_0^\infty\frac{x^{s-1}}{1+x^3}\,dx.

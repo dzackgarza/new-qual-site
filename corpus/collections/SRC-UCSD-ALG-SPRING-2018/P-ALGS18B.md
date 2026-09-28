@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group, $N \trianglelefteq G$ and $P$ is a Sylow $p$-subgroup of $N$.
 Prove that $N_G(P) \cdot N = G$.
 :::

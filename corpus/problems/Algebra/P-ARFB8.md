@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R=\mathbb C[x]$ and $M=\mathbb C^2$, with $R$-module structure defined by
 \[
 p(x)\cdot v=p(A)v,

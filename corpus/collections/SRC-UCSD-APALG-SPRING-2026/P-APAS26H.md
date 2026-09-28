@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a nontrivial finite group of odd order.
 Show that the convolution algebra $\mathcal{C}(G)$ contains a subalgebra $\mathcal{B}$ not isomorphic to $\mathcal{C}(H)$ for any subgroup $H \le G$.
 

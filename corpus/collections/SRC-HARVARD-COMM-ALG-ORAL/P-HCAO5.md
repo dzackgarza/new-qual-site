@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field, let $E/F$ be a field extension, and let $p(x) \in F[x]$.
 If $a \in E$ and $p(a)=0$, show that
 \[

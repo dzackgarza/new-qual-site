@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Assume the representation formula $$u(z) = \operatorname{Re}\left[\frac{1}{2\pi i}\int_{|\eta|=R} \frac{\eta - z}{\eta + z} u(\eta)\frac{d\eta}{\eta}\right]$$ for any harmonic function $u$ defined on $|z| < R$ and continuous up to $|z| \leq R$.
 
 (a) If $u(z)$ is a harmonic function defined on $\mathbb{C}$ such that $\lim_{z \to \infty} \frac{|u(z)|}{|z|} = 0$, show that $u$ must be a constant.

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-SCHFIB
 kind: proposition
 title: The scheme-theoretic fibre of a morphism
+slogan: 'The fibre over $y$ is base change to $\Spec\kappa(y)$, retaining multiplicities and residue-field extensions that the set-theoretic fibre forgets.'
 classification:
   areas:
   - algebraic-geometry
@@ -17,10 +18,11 @@ review: draft
 prompts:
 - What is the fibre of a morphism of schemes over a point?
 - Why is the scheme-theoretic fibre better than the set-theoretic preimage?
+- For $K = \QQ(\sqrt 3)$, describe the fibres of $\Spec \OO_K \to \Spec \ZZ$ over each prime, and which primes split, are inert or ramify.
 ---
 
 ::: {.definition}
-For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \da \OO_{Y,y}/\mfm_y$, the **fibre** is
+For $f: X \to Y$ and $y \in Y$ with residue field $\kappa(y) \da \OO_{Y,y}/\mfm_y$, the \dfn{fibre} is
 \[
 X_y \da \fiberprod{X}{Y}{\Spec \kappa(y)} .
 \]
@@ -34,9 +36,9 @@ For $\Spec \ZZ[i] \to \Spec \ZZ$ the fibre over $(p)$ is $\Spec \FF_p[x]/(x^2+1)
 :::
 
 ::: {.remark}
-The fibre product is constructed so that the fibre carries the scheme structure over $\kappa(y)$.
-The set-theoretic preimage loses both of these: it sees neither the multiplicity at a branch point nor the residue field extension at a point that splits only after base change.
+Fibres are a principal application of fibre products.
+The set-theoretic preimage loses the two things that make fibres behave: the multiplicity at a branch point, and the residue field extension at a point that splits only after base change.
 Both are visible in the examples, and in each the fibre has $k$-dimension $2$ for every base point — this is the constancy that a naive count of preimages fails to see.
 
-Flatness is the condition under which fibres vary continuously: a morphism is flat exactly when the fibres vary in the way these examples suggest.
+Flatness is the condition that controls this kind of fibrewise variation and preserves scheme-theoretic multiplicity under base change.
 :::

@@ -17,6 +17,7 @@ audit:
   date: 2026-08-29
 ---
 
+::: {.problem}
 7. Let
 
 $$
@@ -30,6 +31,7 @@ Show that the convolution $f * g$ bounded continuous function on R.
 
 (b) Instead let $h \in L ^ { 1 } ( \mathbb { R } )$ be fixed.
 Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \to L ^ { 1 } ( \mathbb { R } )$
+:::
 
 ::: {.solution}
 **Part (a).**

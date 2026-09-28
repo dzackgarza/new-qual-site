@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Suppose $\{a_n\}$ is a sequence of positive real numbers such that $\lim_{n\to\infty}a_n=0$ and $\sum a_n$ diverges.
 Prove that for all $x>0$ there exist integers $n(1)<n(2)<\ldots$ such that $\sum_{k=1}^\infty a_{n(k)}=x$.\
 

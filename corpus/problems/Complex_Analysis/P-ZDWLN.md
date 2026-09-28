@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f:\mathbb{R}^2\to \mathbb{R}^2$ (or $\mathbb{R}^2 \to \mathbb{R}$).
 
 a. Define in terms of linear transformations what it means for $f$ to be differentiable at a point $(a, b) \in \mathbb{R}^2$.
@@ -31,7 +31,7 @@ b. State a version of the inverse function theorem in this setting.
 c. Identify $\mathbb{R}^2$ with $\mathbb{C}$ and give a necessary and sufficient condition for a real-differentiable function at $(a, b)$ to be complex differentiable at the point $a+ib$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Let $p=(a,b)$. A map $f:U\subset\mathbb R^2\to\mathbb R^m$ is differentiable at $p$ if there is a linear map
 \[
 L:\mathbb R^2\to\mathbb R^m

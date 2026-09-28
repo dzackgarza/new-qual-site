@@ -18,11 +18,11 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Calculate the Galois group of $x^5 - 2$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the Galois group $\operatorname{Gal}(K/\mathbb{Q})$ of the polynomial $f(x) = x^5 - 2$ over $\mathbb{Q}$.
 
 <1>1. Irreducibility and root generation:

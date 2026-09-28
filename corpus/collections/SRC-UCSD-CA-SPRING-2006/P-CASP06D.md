@@ -12,13 +12,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Assume that $f$ and $g$ are entire functions of finite order $\lambda$.
 Assume that for a sequence $a_n$, $f(a_n) = g(a_n)$ and $\sum |a_n|^{-(\lambda + \epsilon)} = \infty$ for some $\epsilon > 0$.
 Show that $f = g$.
 :::
 
-::: solution
+::: {.solution}
 Set $h=f-g$. Then $h$ is entire of order at most $\lambda$. Suppose that
 $h\not\equiv0$. The points $a_n$ are zeros of $h$.
 

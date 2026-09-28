@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the standard covering projection $S^n \to \mathbb{RP}^n$ which maps antipodal points to the same point in $\mathbb{RP}^n$.
 Prove that the covering projection is not null-homotopic.
 :::

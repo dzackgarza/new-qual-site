@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-3-02
 kind: problem
-title: Nori Galois theory problem 3.2
+title: Cube roots of unity in $\mathbb F_p$ and the splitting field of $X^p-\omega X$
 classification:
   areas: [algebra]
   topics: []

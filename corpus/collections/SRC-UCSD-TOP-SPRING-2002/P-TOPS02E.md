@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p : S^n \to \mathbb{RP}^n$ be the covering space map.
 Prove $p$ is not null-homotopic.
 :::

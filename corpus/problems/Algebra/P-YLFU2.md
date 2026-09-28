@@ -15,11 +15,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 State and prove the structure theorem for finitely generated modules over a PID, in both invariant-factor and elementary-divisor form.
 :::
 
-::: solution
+::: {.solution}
 Let $R$ be a PID and let $M$ be a finitely generated $R$-module. Then
 \[
 M\cong R^r\oplus\bigoplus_{i=1}^s R/(d_i),

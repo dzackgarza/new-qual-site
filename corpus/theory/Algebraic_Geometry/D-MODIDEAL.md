@@ -23,7 +23,7 @@ prompts:
 ---
 
 ::: {.definition title="Ideal sheaf"}
-For a closed immersion $i: Z \injects X$, the **ideal sheaf** is
+For a closed immersion $i: Z \injects X$, the \dfn{ideal sheaf} is
 \[
 \mci_Z \da \ker\qty{\OO_X \mapsvia{i^\sharp} i_*\OO_Z} .
 \]

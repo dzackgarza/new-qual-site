@@ -25,11 +25,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an example of a term order which refines the partial order by total degree.
 :::
 
-::: solution
+::: {.solution}
 Graded lexicographic order is one example.
 
 For monomials $x^\alpha,x^\beta$ in $k[x_1,\ldots,x_n]$, declare
@@ -43,7 +43,7 @@ when either
 or $|\alpha|=|\beta|$ and $\alpha$ precedes $\beta$ lexicographically.
 
 <1>1. This is a term order.
-::: proof
+::: {.proof}
 Lexicographic order is a term order on exponent vectors. Comparing total degree
 first preserves totality and well-ordering. Moreover, adding the same exponent
 vector $\gamma$ preserves both the total-degree comparison and, when the
@@ -52,7 +52,7 @@ preserves the order.
 :::
 
 <1>2. It refines total degree.
-::: proof
+::: {.proof}
 If $|\alpha|<|\beta|$, the first clause forces
 $x^\alpha\prec x^\beta$, independently of the lexicographic tie-breaker.
 :::

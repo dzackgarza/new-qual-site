@@ -23,7 +23,7 @@ Give the definitions for the permutations and for the combinations of $k$ elemen
 Derive a formula for the number of one-to-one functions from a $k$-element set to an $n$-element set.
 :::
 
-::: solution
+::: {.solution}
 A permutation of $k$ elements chosen from an $n$-element set is an ordered list of $k$ distinct elements. Its number is
 \[
 P(n,k)=n(n-1)\cdots(n-k+1)=\frac{n!}{(n-k)!}.

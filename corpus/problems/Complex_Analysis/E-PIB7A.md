@@ -14,13 +14,13 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $f$ be meromorphic on $\DD$ with no poles on $\bd\DD$.
 Show that there exists a meromorphic $g$ with *no* poles in $\DD$ such that $\abs{f(z)} = \abs{g(z)}$ when $\abs{z} = 1$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $\ts{a_1,\cdots, a_n}$ for all of the poles of $f$, indexed with multiplicity, and define
 \[
 g(z) \da \prod_{1\leq k\leq n} \psi_{a_k}(z) f(z) 

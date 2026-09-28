@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-A4J4G
 kind: proposition
-title: Subtraction of Measures
+title: Subtraction of measures
+slogan: 'Removing a finite-measure subset subtracts its measure.'
 classification:
   areas:
   - real-analysis
@@ -13,5 +14,14 @@ review: draft
 ---
 
 ::: {.proposition}
-$$m(A) = m(B) + m(C) \qtext{and} m(C) < \infty \implies m(A) - m(C) = m(B).$$
+Let $(X,\mcm,m)$ be a [[D-QYLPH|measure]] space and let $A,C\in\mcm$ with $C\subseteq A$ and $m(C) < \infty$.
+Then
+$$
+m(A\setminus C) = m(A) - m(C)
+$$
+[@Fol13].
+:::
+
+::: {.remark}
+The hypothesis $m(C)<\infty$ cannot be dropped: for Lebesgue measure with $A = C = \RR$, the right-hand side $\infty-\infty$ is undefined.
 :::

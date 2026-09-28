@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-101
 kind: problem
-title: Kent State ring-theory qualifying problem 101
+title: Irreducibility of $x^4+5x^2+3x+2$ over $\mathbb Q$
 classification:
   areas: [algebra]
   topics: []

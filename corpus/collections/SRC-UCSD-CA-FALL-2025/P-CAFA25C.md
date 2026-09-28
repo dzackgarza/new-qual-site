@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $R_1, R_2$ are bounded simply connected regions in $\mathbb{C}$.
 Let $z_1 \in R_1$ and $z_2 \in R_2$.
 
@@ -27,7 +27,7 @@ Prove that $|g'(z_1)| \leq |f'(z_1)|$.
 (iii) When does equality occur in (ii)?
 :::
 
-::: solution
+::: {.solution}
 Choose Riemann maps
 \[
 \phi_j:R_j\to\mathbb D

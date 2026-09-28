@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Suppose $G$ is a finite group, and $\Phi(G)$ is its Frattini subgroup (the intersection of all maximal subgroups of $G$). Suppose $G/\Phi(G)$ is nilpotent.
 
 (a) Let $P$ be a Sylow $p$-subgroup of $G$.

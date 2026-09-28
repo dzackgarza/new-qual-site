@@ -14,9 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.definition}
-The **nilradical** of $R \in \CRing$ is
-\[
-\nilrad{R} \definedas \theset{x\in R \suchthat x \text{ is nilpotent}}
-.\]
+::: {.definition}
+Let $R$ be a commutative ring.
+The \dfn{nilradical} of $R$ is the set of [[D-GIGM2|nilpotent]] elements of $R$:
+$$
+\nilrad{R} \coloneqq \theset{x\in R \suchthat x \text{ is nilpotent}}.
+$$
 :::

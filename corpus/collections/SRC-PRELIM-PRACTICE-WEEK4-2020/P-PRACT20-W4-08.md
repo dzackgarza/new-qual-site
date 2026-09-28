@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-PRACT20-W4-08
 kind: problem
-title: "Week 4: Differential Equations & Linear Algebra, problem 8"
+title: The Cauchy--Euler equation $2x^2y''+3xy'-15y=0$ and the repeated-root case
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ordinary Differential Equations
 relations: []
 review: draft
 ---

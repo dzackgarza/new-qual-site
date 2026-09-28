@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-061
 kind: problem
-title: Kent State ring-theory qualifying problem 61
+title: Maximal ideals of $C[0,1]$ are evaluation ideals
 classification:
   areas: [algebra]
   topics: []

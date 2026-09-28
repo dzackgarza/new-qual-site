@@ -37,14 +37,14 @@ c. Show that $X^{2^2} - X + 1$ is irreducible in $\mathbb{F}_2[X]$.
 d. Show that if $f(X)$ is irreducible in $\mathbb{F}_p[X]$, then $n = 1$ or $n = 2 = p$.
 :::
 
-::: solution
+::: {.solution}
 We will prove that the two cases in part (d) are exactly the
 irreducible cases.
 
 <1>1. For each positive integer $m$, the roots in $K$ of
 $X^{p^m}-X$ form a field with $p^m$ elements.
 
-::: proof
+::: {.proof}
 The polynomial splits in the algebraically closed field $K$,
 and its derivative is $-1$, so its $p^m$ roots are distinct.
 In characteristic $p$, the binomial theorem and iteration give
@@ -59,7 +59,7 @@ a finite-dimensional vector space over $\mathbb F_p$.
 
 <1>2. The two assertions in part (a) hold.
 
-::: proof
+::: {.proof}
 Write $q=p^n$. Since $f(\alpha)=0$, we have
 $\alpha^q=\alpha-1$. For $a\in\mathbb F_q$, step <1>1 gives
 $a^q=a$. Therefore
@@ -80,7 +80,7 @@ Hence $\beta\in\mathbb F_q$, again by step <1>1.
 
 <1>3. Every root of $f$ lies in $\mathbb F_{p^{np}}$.
 
-::: proof
+::: {.proof}
 Starting with $\alpha^{p^n}=\alpha-1$, induction on $j\geq1$
 gives
 $$
@@ -95,7 +95,7 @@ At $j=p$ we obtain $\alpha^{p^{np}}=\alpha$, proving the claim.
 <1>4. The polynomial $X^p-X+1$ is irreducible over $\mathbb F_p$,
 proving part (b).
 
-::: proof
+::: {.proof}
 Let $\alpha$ be any root. With $n=1$, step <1>3 puts
 $\mathbb F_p(\alpha)$ inside $\mathbb F_{p^p}$.
 Its degree $d$ over $\mathbb F_p$ divides $p$ by the tower law,
@@ -108,7 +108,7 @@ $X^p-X+1$ and has the same degree, so it equals that polynomial.
 <1>5. The polynomial $X^4+X+1$ is irreducible over $\mathbb F_2$,
 proving part (c).
 
-::: proof
+::: {.proof}
 It takes value $1$ at both $0$ and $1$, so it has no linear factor.
 The only monic irreducible quadratic over $\mathbb F_2$ is
 $q(X)=X^2+X+1$: a monic quadratic $X^2+aX+b$ without a root
@@ -125,7 +125,7 @@ excluded, so the quartic is irreducible.
 
 <1>6. No other cases are irreducible, proving part (d).
 
-::: proof
+::: {.proof}
 If $f$ is irreducible and $\alpha$ is a root, then
 $[\mathbb F_p(\alpha):\mathbb F_p]=\deg f=p^n$.
 Step <1>3 and the tower law imply

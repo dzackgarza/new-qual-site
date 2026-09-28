@@ -16,14 +16,17 @@ review: draft
 ---
 
 ::: {.definition}
-For a sequence of functions $\{f_n\}$ where $f_n,f:E\to\mathbb R$ for all $n$:
+Let $E$ be a set, and let $f_n\colon E\to\RR$ for $n\geq 1$ and $f\colon E\to\RR$ be functions.
 
-1. $f_n\to f$ pointwise if $\lim_{n\to\infty}f_n(x)=f(x)$ for each $x\in E$.
+1. $f_n\to f$ \dfn{pointwise} on $E$ if $\lim_{n\to\infty}f_n(x)=f(x)$ for each $x\in E$.
 
-2. $f_n\to f$ uniformly if for every $\epsilon>0$ there exists $N\in\mathbb N$ such that $|f_n(x)-f(x)|<\epsilon$ for all $n\ge N$ and all $x\in E$.
-   That is, $f_n\to f$ uniformly provided $\|f_n-f\|_\infty\to0$.
+2. $f_n\to f$ \dfn{uniformly} on $E$ if for every $\varepsilon>0$ there exists $N\in\NN$ such that $\abs{f_n(x)-f(x)}<\varepsilon$ for all $n\geq N$ and all $x\in E$.
 
-3. $\sum_{n=1}^{\infty}f_n(x)\to f(x)$ provided the partial sums $\sum_{n=1}^{N}f_n(x)$ converge pointwise to $f$ as $N\to\infty$.
+3. $\sum_{n=1}^{\infty}f_n=f$ \dfn{pointwise} on $E$ if the partial sums $\sum_{n=1}^{N}f_n$ converge pointwise to $f$ as $N\to\infty$.
 
-4. $\sum_{n=1}^{\infty}f_n(x)\to f(x)$ uniformly provided the partial sums $\sum_{n=1}^{N}f_n(x)$ converge uniformly to $f$ as $N\to\infty$.
+4. $\sum_{n=1}^{\infty}f_n=f$ \dfn{uniformly} on $E$ if the partial sums $\sum_{n=1}^{N}f_n$ converge uniformly to $f$ as $N\to\infty$.
+:::
+
+::: {.remark}
+With the supremum norm $\norm{g}_\infty\coloneqq\sup_{x\in E}\abs{g(x)}$ for $g\colon E\to\RR$, condition (2) holds if and only if $\norm{f_n-f}_\infty\to 0$.
 :::

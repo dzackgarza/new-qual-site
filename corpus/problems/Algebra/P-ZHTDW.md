@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Identify $\Aut_\Grp(\bigoplus_{i=1}^n \ZZ/p)$ as a matrix group and determine its size.
 :::
 
@@ -30,7 +30,7 @@ Every group endomorphism of the elementary abelian $p$-group $V$ is automaticall
 \]
 Hence
 \[
-\End_{\Grp}(V)=\End_{\FF_p}(V)\cong M_n(\FF_p),
+\Endo_{\Grp}(V)=\Endo_{\FF_p}(V)\cong M_n(\FF_p),
 \]
 and the automorphisms are exactly the invertible linear maps:
 \[

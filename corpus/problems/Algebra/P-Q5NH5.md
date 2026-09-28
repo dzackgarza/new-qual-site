@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Define the group ring $R[G]$ and describe its basic structure and relation to representations.
 :::
 

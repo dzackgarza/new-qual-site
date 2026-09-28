@@ -15,7 +15,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 1. Using Euler’s formula
 
 $$
@@ -27,7 +27,7 @@ show that the complex zeros of sin πz are exactly at the integers, and that the
 Calculate the residue of 1/ sin πz at $z = n \in \mathbb { Z }$
 :::
 
-::: solution
+::: {.solution}
 By Euler's formula,
 \[
 \sin \pi z=0

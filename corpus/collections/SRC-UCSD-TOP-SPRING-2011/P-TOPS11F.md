@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $P$ be a $3$-manifold whose fundamental group has order $120$ and whose universal cover is $S^3$.
 Compute $\pi_3$ of the one-point union $P \vee S^3$.
 :::

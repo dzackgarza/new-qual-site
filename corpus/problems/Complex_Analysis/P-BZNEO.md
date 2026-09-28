@@ -15,13 +15,13 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $P, Q$ be polynomials with no common zeros.
 Assume $a$ is a root of $Q$.
 Find the principal part of $P/Q$ at $z=a$ in terms of $P$ and $Q$ if $a$ is (1) a simple root, and (2) a double root.
 :::
 
-::: solution
+::: {.solution}
 If $a$ is a simple zero of $Q$, write $Q(z)=(z-a)q(z)$ with
 $q(a)=Q'(a)\ne0$. Then
 \[

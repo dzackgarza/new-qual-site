@@ -23,10 +23,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Merged P-ULNGG, a statement reconstructed from a solutions-only document that restricts this problem to numerators 0<=p<=q; its solution proves only that special case and was not carried."
 ---
 
 
-::: problem
+::: {.problem}
 Define
 \[
 E:=\left\{x\in\mathbb R:\left|x-\frac pq\right|<q^{-3}
@@ -35,7 +39,7 @@ E:=\left\{x\in\mathbb R:\left|x-\frac pq\right|<q^{-3}
 Prove that $m(E)=0$.
 :::
 
-::: solution
+::: {.solution}
 Fix $N\in\mathbb N$ and work on the bounded interval $[-N,N]$. For each $q\ge1$, let
 \[
 E_{q,N}:=\left\{x\in[-N,N]:

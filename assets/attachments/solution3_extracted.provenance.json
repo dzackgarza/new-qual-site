@@ -1,0 +1,21 @@
+{
+  "source_pdf": "assets/attachments/solution3.pdf",
+  "source_pdf_sha256": "79adeb665ae2658605db1aa0f47701121548f9e791492c5e39494cd2fc594c5c",
+  "extracted_markdown": "assets/attachments/solution3_extracted.md",
+  "extracted_markdown_sha256": "4524256cf176190b47fd1a54c6e7d8f30303a0f8a7d41a33059fc40cb91fd15e",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution3.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/solution3.md",
+  "source_identification": "Harvard Math 21b Spring 2018 Practice Final 3 with worked solutions and fourteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-3 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Flash loses visible headings for source Problems 2, 4, 6, 9, and 12, but the surrounding score/order structure and content preserve their source positions.",
+    "Problem 2(b)'s candidate solution graphs are emitted as image placeholders; the existing card leaves them unrecovered.",
+    "Problem 3(b)'s source phase-portrait/matrix table is incomplete in the extraction; the existing card leaves the unrecoverable table explicit.",
+    "Problem 9(c)'s determinant matrix has inconsistent extracted row lengths; the existing card leaves that matrix unrecovered rather than guessing entries.",
+    "Problem 11(d)'s source phase portraits are emitted as image placeholders; the existing card leaves them unrecovered.",
+    "Problem 14's all-9s matrix is recoverable as a 10-by-10 matrix from the packet's own worked solution, which is the deterministic-context basis for the existing card statement."
+  ]
+}

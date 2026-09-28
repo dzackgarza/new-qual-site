@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 8. **Main Idea**: Show that both spaces are a deformation retract of the same space.
    (See Hatcher, Proposition 0.18, p. 25)
 

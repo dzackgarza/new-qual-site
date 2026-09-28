@@ -1,0 +1,13 @@
+{
+  "source_pdf": "assets/attachments/squal2.pdf",
+  "source_pdf_sha256": "8223c286b5a0ffdf6cc1ed6a280beff754bbdf143dff73eff98e15075958e3d0",
+  "extracted_markdown": "assets/attachments/squal2_extracted.md",
+  "extracted_markdown_sha256": "08b6c50a29fb554bc3a95430515db20d3b54619d0f0071225cff0c2e025515e3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/squal2.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/squal2.md",
+  "source_identification": "Undated topology qualifying exam with four point-set topology problems and four homotopy/homology problems. The retained PDF does not identify an institution or date.",
+  "card_reconciliation": "The existing complete collection SRC-TOP-SQUAL2 represents all eight source positions in order by six source-local cards plus exact canonical reuse of P-T07A2 for Section A Problem 4 and P-OMOPR for Section B Problem 6. No collection path is modified in this intake because the live shared tree owns those paths separately."
+}

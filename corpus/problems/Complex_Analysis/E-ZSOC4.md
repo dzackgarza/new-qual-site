@@ -14,12 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Let $\psi_a$ be a Blaschke factor and use the Schwarz lemma to prove that $\psi_a \circ \psi_a = \id_\DD$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 First, $\psi_a$ maps $\DD\to \DD$.
 Fix $z\in S^1$, then
 \[

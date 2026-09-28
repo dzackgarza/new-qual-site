@@ -15,7 +15,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 25. The next three calculations provide some insight into Cauchy’s theorem, which we treat in the next chapter.
 
 (a) Evaluate the integrals

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-02
 kind: problem
-title: Sequences and series Assignment 2, problem 2
+title: $\limsup$ and $\liminf$ as extreme subsequential limits
 classification:
   areas:
   - real-analysis

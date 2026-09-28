@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n \geq 0$ be an integer.
 Assume $f : \mathbb{C} \to \mathbb{C}$ is an entire function such that
 $$
@@ -23,7 +23,7 @@ $$
 Prove that $f$ is constant.
 :::
 
-::: solution
+::: {.solution}
 For every $R>0$, Cauchy's estimate at $0$ gives, for $k\ge1$,
 \[
 |f^{(k)}(0)|

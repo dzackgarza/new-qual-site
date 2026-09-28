@@ -7,7 +7,8 @@ topics:
 
 # Algebraic geometry
 
-The cards here cover schemes, sheaves, morphisms, cohomology, curves and surfaces, and toric varieties. A definition card states the definition and the reason for each clause; a theorem card states the theorem and the computation it supports; an example card is a stock of objects to reach for.
+The guide links definitions to the hypotheses, computations, examples, and counterexamples that make those definitions usable.
+A definition card records the notion, a theorem card records a reusable consequence, and example cards supply concrete models of the phenomena under discussion.
 
 ## The topics
 
@@ -29,11 +30,14 @@ The cards here cover schemes, sheaves, morphisms, cohomology, curves and surface
 
 - [[algebraic-geometry/toric/index|Toric varieties]], where fans make every question above computable.
 
-- [[algebraic-geometry/resources|Resources]], which text to reach for at which stage, and where the problems and worked solutions are.
+- [[algebraic-geometry/stacks-and-moduli/index|Stacks and moduli]], functors of points, the étale and fppf topologies, descent, Hilbert schemes, algebraic spaces and stacks.
 
-## Reading it in order
+- [[algebraic-geometry/resources|Resources]], references, problem sources, and worked-solution collections.
 
-Varieties come first and schemes second, in the order the subject was invented and in the order it can be understood: the scheme definitions answer questions that only make sense once the classical picture is in place.
-Cohomology and curves come last because they are where the machinery is spent.
+- [[algebraic-geometry/syllabus|Sample syllabi]], topic lists from qualifying and oral examination syllabi.
 
-The cards on [[algebraic-geometry/curves-and-surfaces/index|curves and surfaces]] are the ones most often reached for first, and the links there lead back to the definitions a question needs.
+## Dependency order
+
+Varieties come before schemes because the scheme definitions refine distinctions already visible in the classical picture.
+Cohomology and curves come later because they use the sheaf and scheme machinery developed in the preceding sections.
+Cross-links allow a later computation to be followed backward to any prerequisite definition or theorem it uses.

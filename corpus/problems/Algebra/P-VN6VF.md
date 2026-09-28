@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Give an example of a UFD that is not a Euclidean domain.
 :::
 
-::: solution
+::: {.solution}
 Let $k$ be a field. Then
 \[
 k[x,y]

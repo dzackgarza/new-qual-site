@@ -1,0 +1,18 @@
+{
+  "source_pdf": "assets/attachments/basic-15F.pdf",
+  "source_pdf_sha256": "a4d3bc966cdb53d582b6ea081edccdb3b32323d808f37f54c70133b3d25f6b3d",
+  "extracted_markdown": "assets/attachments/basic-15F_extracted.md",
+  "extracted_markdown_sha256": "d485a0d84a4b1da783bc44e7f748923a7485834e458bedcc4e84247ea90753fa",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/basic-15F.pdf --language en",
+  "generated_at": "2026-09-15",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/basic-15F.md",
+  "old_unknown_provenance_sha256": "3fb542b2f86be1936de055c12e01974011ee12a8764fba116286a0df0bb49275",
+  "old_unknown_provenance_byte_identical": false,
+  "source_identification": "UCLA Basic Exam, Fall 2015, containing twelve numbered problems.",
+  "deterministic_extraction_limit": "The fresh MinerU Flash output is not byte-identical to the retained unknown-provenance extraction and is substantially noisier in several formulas: indices in the Fekete-lemma limit in Problem 1, sequence and summation indices in Problem 3, transpose notation in Problem 9, and map/exponent typography in Problem 11. Existing source-checked cards record the coherent source statements. No fallback extraction or independent full-source transcription was used.",
+  "card_reconciliation": "The current shared SRC-UCLA-BASIC-FALL-2015 collection represents all twelve source positions in order with twelve source-local cards. Several collection paths have unrelated live formatting edits; this intake does not modify or stage any collection path.",
+  "raw_control_bytes": 0
+}

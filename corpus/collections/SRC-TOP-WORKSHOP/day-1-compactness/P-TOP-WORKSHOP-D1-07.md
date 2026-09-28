@@ -23,7 +23,7 @@ Suppose that $X$ is compact and $Y$ is Hausdorff.
 Prove that every one-to-one, onto, continuous map $f:X\to Y$ is a homeomorphism.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Show that continuity plus bijective compact-to-Hausdorff implies open and hence homeomorphic.
 
 <1>1. Continuity of inverse from closed sets: *Proof:*\

@@ -31,6 +31,6 @@ source:
     year: 2015
 ---
 
-::: remark
-Exam #8 is the same Euler-characteristic inclusion--exclusion problem as Spring 2012 #5, with an explicit finite-dimensional-homology proviso; it reuses [[P-HCQNH]].
+::: {.remark}
+Problem 8 is the inclusion--exclusion problem for Euler characteristics of Spring 2012 Problem 5, with the added hypothesis that the homology is finite-dimensional.
 :::

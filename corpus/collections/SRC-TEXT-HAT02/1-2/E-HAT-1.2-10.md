@@ -17,8 +17,10 @@ audit:
   date: 2026-08-30
 ---
 
+::: {.problem}
 Consider two arcs $\alpha$ and $\beta$ embedded in $D^2 \times I$ as shown in the figure.
 The loop $\gamma$ is nullhomotopic in $D^2 \times I$ (since $D^2 \times I$ is contractible), but show that there is no nullhomotopy of $\gamma$ in the complement of $\alpha \cup \beta$.
+:::
 
 ::: {.solution}
 <1>1. Fundamental group presentation of the complement $X = (D^2 \times I) \setminus (\alpha \cup \beta)$: <2>1. The space $D^2 \times I$ is homeomorphic to the closed 3-ball $B^3$.

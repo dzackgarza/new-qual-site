@@ -15,10 +15,12 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Prove the Fundamental Theorem of Algebra (using complex analysis).
+:::
 
-:::{.solution}
-:::{.concept}
+::: {.solution}
+::: {.concept}
 
 :::
 - Strategy: By contradiction with Liouville's Theorem

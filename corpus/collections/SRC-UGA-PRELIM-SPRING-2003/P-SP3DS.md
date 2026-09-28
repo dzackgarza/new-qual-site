@@ -16,12 +16,12 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Does there exist a divergent series $\sum_{i=0}^\infty a_i$ of positive real numbers $a_i$ such that $\sum_{i=0}^\infty \sqrt{a_i}$ converges?
 If so, give an example; if not, prove it.
 :::
 
-::: solution
+::: {.solution}
 <1>1. No such series exists.
 :::
 
@@ -49,5 +49,3 @@ for every $m\ge N$. The right-hand partial sums are bounded because $\sum \sqrt{
 :::
 
 <1>5. Therefore it is impossible for $\sum a_i$ to diverge while $\sum\sqrt{a_i}$ converges.
-:::
-:::

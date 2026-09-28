@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-12
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 12'
+title: Convergence of $\sum\frac{1}{n^\alpha(\log n)^\beta}$
 classification:
   areas:
   - prelim

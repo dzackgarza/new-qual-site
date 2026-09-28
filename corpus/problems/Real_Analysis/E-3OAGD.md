@@ -17,7 +17,7 @@ audit:
   date: 2026-08-16
 ---
 
-::: exercise
+::: {.exercise}
 - Show that if $E\subseteq \RR^n$ is measurable with $m(E) < \infty$, then
   $$m(E) = \sup \{ m(K) \mid K \subseteq E \text{ is compact}\}$$
   if and only if for all $\eps > 0$, there exists a compact set $K \subseteq E$ such that $m(K) \geq m(E) - \eps$.

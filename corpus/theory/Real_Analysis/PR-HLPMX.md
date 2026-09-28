@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-HLPMX
 kind: proposition
-title: Integrals distribute over disjoint sets
+title: Integrals of nonnegative functions are subadditive over covers and additive over disjoint unions
+slogan: 'Nonnegative integrals are subadditive over covers and exactly additive across disjoint pieces.'
 classification:
   areas:
   - real-analysis
@@ -14,5 +15,10 @@ review: draft
 ---
 
 ::: {.proposition}
-If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_B f$, with equality when $X = A\disjoint B$.
+Let $(Y,\mcm,\mu)$ be a [[D-QYLPH|measure space]], $f\in$ [[D-BF5L2|$L^+$]], and $X,A,B\in\mcm$.
+If $X\subseteq A\cup B$, then
+$$
+\int_X f\dmu \leq \int_A f\dmu + \int_B f\dmu,
+$$
+with equality when $X=A\cup B$ and $A\cap B=\emptyset$.
 :::

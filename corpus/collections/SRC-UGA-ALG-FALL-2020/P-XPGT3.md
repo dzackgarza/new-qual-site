@@ -19,7 +19,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a ring with $1$ and let $M$ be a left \(R\dash\)module.
 If $I$ is a left ideal of $R$, define 
 \[
@@ -33,7 +33,7 @@ b. Let $M, N$ be left \(R\dash\)modules, $I$ a nilpotent left ideal of $R$, and 
 Prove that if the induced morphism \( \bar{f}: M/IM \to N/IN \) is surjective, then $f$ is surjective.
 :::
 
-::: solution
+::: {.solution}
 For (a), $IM$ contains $0$ and is closed under addition by concatenating finite sums. If
 \[
 x=\sum_i a_i m_i\in IM

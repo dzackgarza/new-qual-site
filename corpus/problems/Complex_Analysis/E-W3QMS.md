@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: exercise
+::: {.exercise}
 - Do any example from [here](http://home.iitk.ac.in/~psraj/mth102/lecture_notes/comp8.pdf)
 
 - Prove that no sequence of polynomials converges uniformly to $1/z$ on
@@ -36,7 +36,7 @@ review: draft
   \]
 :::
 
-::: solution
+::: {.solution}
 The bullets “Do any example from here” and “Anything from the homeworks” are
 open-ended study prompts rather than propositions with unique answers. The
 remaining finite tasks are as follows.

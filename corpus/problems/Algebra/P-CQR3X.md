@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group.
 Prove that $G$ is solvable if and only if all of its composition factors are of prime order (i.e. cyclic groups $\mathbb{Z}_p$).
 :::
 
-::: solution
+::: {.solution}
 Suppose first that \(G\) is finite and solvable. Every subgroup and quotient of a solvable group is solvable, so every composition factor of \(G\) is both simple and solvable. If \(S\) is simple and solvable, then \([S,S]\trianglelefteq S\) and solvability forces \([S,S]\ne S\); hence \([S,S]=1\), so \(S\) is abelian. A finite simple abelian group is cyclic of prime order. Thus every composition factor of \(G\) is \(C_p\) for some prime \(p\).
 
 Conversely, if a composition series

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Explain with field theory why straightedge-and-compass constructions cannot in general trisect an angle, double a cube, or square a circle.
 :::
 

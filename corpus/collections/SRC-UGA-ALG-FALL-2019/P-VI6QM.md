@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorname{Syl}_3(G)$, $Q \in \operatorname{Syl}_5(G)$, and $R \in \operatorname{Syl}_7(G)$ be Sylow 3-, 5-, and 7-subgroups of $G$, respectively.
 
 (a) Prove that at least one of $Q$ and $R$ is normal in $G$.
@@ -27,7 +27,7 @@ Let $G$ be a group of order $105 = 3 \cdot 5 \cdot 7$, and let $P \in \operatorn
 (d) Prove that if $P$ is normal in $G$, then $G$ is cyclic.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove normality of Sylow subgroups, existence of a cyclic subgroup of order 35, and deduce that $G$ is cyclic when all Sylow subgroups are normal.
 
 <1>1. Part (a): At least one of $Q$ or $R$ is normal in $G$.

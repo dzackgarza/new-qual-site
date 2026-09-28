@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-IEHB2
 kind: fact
 title: Euler characteristic in terms of genus
+slogan: 'Closed orientable genus $g$ has $\chi=2-2g$; closed nonorientable genus $k$ has $\chi=2-k$.'
 prompts:
 - What is the Euler characteristic in terms of genus?
 classification:
@@ -16,7 +17,11 @@ review: draft
 ---
 
 ::: {.fact}
-$\chi(\Sigma_g) = 2-2g$ if $\Sigma_g$ is orientable, $\chi(M_g) = 2-g$ if $M_g$ is nonorientable.
-
-Puncturing reduces $\chi$ by 1.
+Let $g\geq 0$ and $k\geq 1$.
+The closed orientable surface $\Sigma_g$ of genus $g$ and the closed nonorientable surface $N_k$ of genus $k$ have [[D-QK5BM|Euler characteristics]]
+$$
+\chi(\Sigma_g) = 2-2g, \qquad \chi(N_k) = 2-k
+$$
+[@Hat02].
+Removing the interiors of $b$ disjoint closed discs from a closed surface lowers $\chi$ by $b$.
 :::

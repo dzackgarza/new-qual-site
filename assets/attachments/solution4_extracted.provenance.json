@@ -1,0 +1,19 @@
+{
+  "source_pdf": "assets/attachments/solution4.pdf",
+  "source_pdf_sha256": "6dcb1dd22f9b0690ec5278a2ab824f743caa1b58474474900470850af7f153e0",
+  "extracted_markdown": "assets/attachments/solution4_extracted.md",
+  "extracted_markdown_sha256": "ccf81e3f4547dc47290e6f221dc1058dfba5a8fde12b371995291bf30c41476b",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/solution4.pdf --language en",
+  "generated_at": "2026-09-14",
+  "retained_extraction_byte_identical": "assets/attachments/extracted/solution4.md",
+  "source_identification": "Harvard Math 21b Spring 2018 Practice Final 4 with worked solutions and fourteen top-level problems.",
+  "card_reconciliation": "The existing complete collection SRC-HARVARD-MATH21B-SPRING-2018-PRACTICE-4 lists fourteen cards in source order and preserves the recoverable mathematical obligations in the deterministic extraction. No collection path is modified in this intake because the live shared tree owns those paths separately.",
+  "known_source_or_extractor_defects": [
+    "Problem 1's twentieth true-or-false statement is not recoverable from the deterministic extraction; the existing card keeps that source gap explicit.",
+    "Problem 3's source tables and phase-portrait material are damaged in the extraction; the existing card does not invent the missing display content.",
+    "Problem 9(c)'s extracted eight-queens display conflicts with the source text and worked solution; the existing card records the conflict rather than silently choosing entries.",
+    "Problem 14's 40-by-40 entrywise display is unreadable in the extraction; the packet's own worked solution identifies the structural matrix form used by the existing card."
+  ]
+}

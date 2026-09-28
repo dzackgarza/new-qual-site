@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 TRUE or FALSE: Prove it if true and disprove it if false.
 
 (i) Let $f(t)$ be a monotone non-increasing function on $\mathbb{R}$.
@@ -29,7 +29,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the truth value of each statement with complete mathematical proofs.
 
 <1>1. Statement (i) is TRUE.

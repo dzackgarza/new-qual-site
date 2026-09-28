@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-133
 kind: problem
-title: Kent State ring-theory qualifying problem 133
+title: A Noetherian ring has finitely many minimal primes
 classification:
   areas: [algebra]
   topics: []

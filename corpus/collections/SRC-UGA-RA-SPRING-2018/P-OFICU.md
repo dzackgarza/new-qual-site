@@ -23,10 +23,14 @@ audit:
 - event: solution-reviewed
   by: gpt-5.6-sol
   date: 2026-09-08
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: "Merged P-VAZ7S, a statement reconstructed from a solutions-only document that assumes f essentially bounded on a finite measure space; its solution omits the case of infinite essential supremum and was not carried."
 ---
 
 
-::: problem
+::: {.problem}
 Let $f$ be a nonnegative measurable function on $[0,1]$. Show that
 \[
 \lim_{p\to\infty}
@@ -35,14 +39,14 @@ Let $f$ be a nonnegative measurable function on $[0,1]$. Show that
 \]
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 M:=\|f\|_\infty\in[0,\infty].
 \]
 
 <1>1. Suppose first that $M<\infty$.
-::: proof
+::: {.proof}
 Since $f\le M$ almost everywhere and $m([0,1])=1$,
 \[
 \|f\|_p^p=\int_0^1 f^p\le M^p,
@@ -85,7 +89,7 @@ Therefore
 :::
 
 <1>2. Suppose now that $M=\infty$.
-::: proof
+::: {.proof}
 Fix $A>0$. Since the essential supremum is infinite,
 \[
 E_A:=\{x:f(x)>A\}

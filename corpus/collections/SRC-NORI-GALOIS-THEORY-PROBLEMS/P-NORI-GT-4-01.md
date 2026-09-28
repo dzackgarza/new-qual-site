@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-01
 kind: problem
-title: Nori Galois theory problem 4.1
+title: Adjugate matrix and solving $Tw=\det(T)v$ over a commutative ring
 classification:
   areas: [algebra]
   topics: []

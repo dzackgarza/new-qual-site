@@ -20,7 +20,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 2. $\displaystyle \int e^{\sin ^2 (x)} \sin (2x) ~dx = \color{blue} {e^{\sin^2(x)}}​$
 
 - **Solution:** $u = \sin ^2 (x)​$, $du = 2 \sin (x) \cos (x) ~dx = \sin (2x) ~dx​$

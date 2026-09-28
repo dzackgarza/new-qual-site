@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Prove that $\CP^2\#\CP^2$ and $S^2\times S^2$ are not homotopy-equivalent.
 (Recall that the connect-sum ($\#$) of two closed oriented connected $n$-manifolds is defined by removing an open $n$-ball from each and gluing the resulting manifolds using a homeomorphism between their boundary $(n-1)$-spheres, in such a way that the orientations match to make a new closed oriented connected $n$-manifold.)
+:::
 
 ::: {.solution}
 <1>1. Both manifolds have $H^2(-;\mathbb Z)\cong\mathbb Z^2$, but their integral intersection forms are different.

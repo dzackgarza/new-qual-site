@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 (1) Let $f \in L^\infty(\mathbb{R})$ and $g \in L^1(\mathbb{R})$.
 Assume that $f$ is continuous at $x = 1$ with $f(1) = \pi$ and that $g \geq 0$ on $\mathbb{R}$ and $\|g\|_{L^1(\mathbb{R})} = 2$.
 Calculate
@@ -41,9 +41,9 @@ $$
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Compute the convolution-type limit.
-::: proof
+::: {.proof}
 For fixed \(x\in\mathbb R\), eventually \(|x|\le k\), and
 \[
 1+\frac{x^2}{k}\longrightarrow1.
@@ -69,7 +69,7 @@ Since \(g\ge0\) and \(\|g\|_1=2\),
 :::
 
 <1>2. Compute the Lebesgue--Stieltjes masses.
-::: proof
+::: {.proof}
 For a Lebesgue--Stieltjes measure associated to the increasing right-continuous function \(F\),
 \[
 \mu((a,b])=F(b)-F(a),
@@ -107,7 +107,7 @@ so
 :::
 
 <1>3. Compute the oscillatory integral over \(E\).
-::: proof
+::: {.proof}
 Using
 \[
 \cos^2\theta=\frac12+\frac12\cos(2\theta),

@@ -20,7 +20,7 @@ audit:
 If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine whether finiteness of $A \times B$ implies finiteness of $A$ and $B$.
 
 <1>1. The claim is FALSE in general if one of the sets is empty.

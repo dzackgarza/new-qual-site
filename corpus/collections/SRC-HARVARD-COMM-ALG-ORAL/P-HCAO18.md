@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\Omega \subseteq \mathbb C$ be a domain.
 Let $\mathcal O(\Omega)$ be the ring of holomorphic functions on $\Omega$, and let $\mathcal O_F(\Omega)$ be its subring of functions with finitely many zeros.
 
@@ -33,7 +33,7 @@ Is either ring a unique factorization domain?
 What are the prime elements in these rings?
 :::
 
-::: solution
+::: {.solution}
 Interpret $\mathcal O_F(\Omega)$ as the subring consisting of $0$ together with
 the nonzero holomorphic functions having only finitely many zeros.
 
@@ -46,13 +46,13 @@ z\longmapsto z-a,
 \]
 
 <1>1. The units in either ring are exactly the zero-free holomorphic functions.
-::: proof
+::: {.proof}
 If $u$ has no zeros, then $1/u$ is holomorphic on $\Omega$ and is also zero-free,
 so $u$ is a unit in both rings. Conversely, if $uv=1$, then $u$ cannot vanish.
 :::
 
 <1>2. For every $a\in\Omega$, the function $z-a$ is prime in both rings.
-::: proof
+::: {.proof}
 Suppose
 \[
 (z-a)\mid fg.
@@ -71,7 +71,7 @@ argument works in that subring.
 
 <1>3. Every irreducible element in either ring is associate to $z-a$ for some
 $a\in\Omega$.
-::: proof
+::: {.proof}
 Let $f$ be a nonzero nonunit. By <1>1 it has a zero $a\in\Omega$, so
 \[
 f=(z-a)h
@@ -85,7 +85,7 @@ $z-a$. By <1>2 these irreducibles are prime.
 
 <1>4. Every nonzero nonunit in $\mathcal O_F(\Omega)$ factors into prime
 elements.
-::: proof
+::: {.proof}
 Let the zeros of $f$ be
 \[
 a_1,\ldots,a_r
@@ -99,7 +99,7 @@ prime.
 :::
 
 <1>5. Factorization in $\mathcal O_F(\Omega)$ is unique up to order and units.
-::: proof
+::: {.proof}
 The multiplicity of a zero of a product is the sum of the multiplicities of
 that zero in the factors. Hence any factorization of $f$ into the primes from
 <1>2 must contain exactly $m_i$ factors associate to $z-a_i$ for each $i$.
@@ -107,13 +107,13 @@ The remaining factor is zero-free and therefore a unit by <1>1.
 :::
 
 <1>6. Therefore $\mathcal O_F(\Omega)$ is a UFD.
-::: proof
+::: {.proof}
 Existence is <1>4 and uniqueness is <1>5.
 :::
 
 <1>7. There exists a nonzero function in $\mathcal O(\Omega)$ with infinitely
 many zeros.
-::: proof
+::: {.proof}
 Choose an infinite discrete subset $A\subset\Omega$. The Weierstrass theorem
 for general plane domains gives a holomorphic function on $\Omega$ whose zero
 set is exactly $A$, with prescribed positive multiplicities. In particular,
@@ -121,7 +121,7 @@ there is a nonzero holomorphic function with infinitely many zeros.
 :::
 
 <1>8. The ring $\mathcal O(\Omega)$ is not a UFD.
-::: proof
+::: {.proof}
 Let $f$ be the function from <1>7. If $f$ were a finite product of irreducibles,
 then by <1>3 each irreducible factor would be associate to some $z-a$ and hence
 would contribute only one zero. A finite product of such factors has only

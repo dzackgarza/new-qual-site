@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-25GM2
 kind: proposition
 title: Compact if and only if sequentially compact for metric spaces
+slogan: 'For metric spaces, compactness is equivalent to every sequence having a convergent subsequence.'
 classification:
   areas:
   - real-analysis
@@ -14,5 +15,5 @@ review: draft
 ---
 
 ::: {.proposition}
-Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
+A metric space $(X,d)$ is [[D-EILKJ|compact]] if and only if it is [[FD-DXTBN|sequentially compact]]: every sequence in $X$ has a subsequence that converges in $X$.
 :::

@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-CRVDEGBD
 kind: proposition
 title: The degree thresholds $2g$ and $2g+1$
+slogan: 'On a genus-$g$ curve, positive degree is ample, degree $2g$ frees base points, and degree $2g+1$ is very ample.'
 classification:
   areas:
   - algebraic-geometry
@@ -41,6 +42,6 @@ For very ampleness one needs the drop by two at every pair, and $\deg D \geq 2g+
 Ampleness follows because $\deg nD > 0$ eventually exceeds $2g+1$.
 
 The thresholds are not sharp, and the standard counterexample is the canonical divisor on a smooth plane quartic: $g=3$, $\deg K = 4 < 2g+1 = 7$, and $K$ is very ample.
-The specialisations: on $\PP^1$ ample, very ample and $\deg \geq 1$ all coincide; on an elliptic curve $D$ is very ample exactly when $\deg D \geq 3$, which is the plane cubic model; on a genus-$2$ curve $\deg D = 5$ gives the quintic model in $\PP^3$.
+Standard specializations are: on $\PP^1$, ample, very ample, and $\deg D\ge1$ coincide; on an elliptic curve, $D$ is very ample exactly when $\deg D\ge3$, giving the plane cubic model; on a genus-$2$ curve, degree $5$ gives a quintic model in $\PP^3$.
 If $D$ is very ample and $\varphi$ is the resulting embedding, then $\deg \varphi(C) = \deg D$.
 :::

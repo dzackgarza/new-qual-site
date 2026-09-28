@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $H < G$ is a proper subgroup, then $\Union_{g\in G} gHg\inv \subset G$ is a proper subset.
 
 > Hint: consider the intersection and count.
@@ -22,7 +22,7 @@ Show that if $H < G$ is a proper subgroup, then $\Union_{g\in G} gHg\inv \subset
 
 :::
 
-:::{.solution}
+::: {.solution}
 Strategy: bound the cardinality.
 All conjugates of $H$ have the same cardinality, say $\# H = m$.
 Suppose there are $n$ distinct conjugates of $H$.

@@ -20,7 +20,7 @@ prompts:
 ---
 
 ::: {.definition title="perfect pairing"}
-A bilinear **pairing** is a map $M \tensor_A N \to L$.
+A bilinear \dfn{pairing} is a map $M \tensor_A N \to L$.
 By the tensor-hom adjunction this is the same data as a canonical map
 \[
 M \to \Hom_A(N, L) .
@@ -31,6 +31,7 @@ The pairing is **perfect** if this canonical map is an isomorphism.
 ::: {.remark}
 Perfection is a strictly stronger demand than non-degeneracy, which asks only that the canonical map be injective; over a field with finite-dimensional modules the two agree, and over a general ring they do not.
 
+Perfect pairings are the natural form of duality statements.
 Serre duality on a projective $n$-dimensional scheme asserts that the cup product
 \[
 H^i(X;\mcf) \tensor H^{n-i}(X; \mcf\dual \tensor \omega_X) \to H^n(X;\omega_X) \cong k

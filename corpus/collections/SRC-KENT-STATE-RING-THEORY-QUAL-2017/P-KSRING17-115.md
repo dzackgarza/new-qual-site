@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-115
 kind: problem
-title: Kent State ring-theory qualifying problem 115
+title: Rings of finite characteristic are products of $p$-rings
 classification:
   areas: [algebra]
   topics: []

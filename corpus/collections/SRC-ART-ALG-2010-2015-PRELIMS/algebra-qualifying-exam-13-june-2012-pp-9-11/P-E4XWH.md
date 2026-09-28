@@ -45,12 +45,12 @@ e. An infinite group all of whose elements have finite order.
 f. A prime $p$ and a finite group $G$ of order $p^{k+1}m$ where $p$ does not divide $m$, such that $G$ has non-isomorphic subgroups of order $p^k$.
 :::
 
-::: solution
+::: {.solution}
 Write $C_r=\mathbb Z/r\mathbb Z$.
 
 <1>1. In part (a), the quaternion group $Q_8$ is an example.
 
-::: proof
+::: {.proof}
 The quaternion group is
 $Q_8=\{1,-1,i,-i,j,-j,k,-k\}$, with
 $i^2=j^2=k^2=-1$, $ij=k$, and $ji=-k$ [@DF04].
@@ -67,7 +67,7 @@ both its complement. This covers all proper subgroup orders.
 
 <1>2. No example exists in part (b).
 
-::: proof
+::: {.proof}
 If $G$ is abelian and $H\leq G$, then $ghg^{-1}=h$ for
 every $g\in G$ and $h\in H$. Hence $gHg^{-1}=H$ for
 every $g$, so every subgroup is normal.
@@ -76,7 +76,7 @@ every $g$, so every subgroup is normal.
 <1>3. No example exists in part (c): every group of order
 $p^2$ is abelian.
 
-::: proof
+::: {.proof}
 For a noncentral element, the size of its conjugacy class
 is $[G:C_G(g)]$, a power of $p$ greater than $1$, so it
 is divisible by $p$. Splitting $G$ into conjugacy classes
@@ -95,7 +95,7 @@ Thus $G$ is abelian in this case as well.
 
 <1>4. No example exists in part (d).
 
-::: proof
+::: {.proof}
 We prove by induction on $|G|$ that every finite abelian
 group has a subgroup of each positive order dividing $|G|$.
 For $d=1$, the identity subgroup works; this includes the
@@ -114,7 +114,7 @@ of size $p$. Its order is $d$, as required.
 
 <1>5. In part (e), take $\bigoplus_{n\geq1}C_2$.
 
-::: proof
+::: {.proof}
 This is the group of sequences $(a_1,a_2,\ldots)$ with
 $a_n\in\mathbb Z/2\mathbb Z$ and only finitely many
 nonzero coordinates, under coordinatewise addition.
@@ -127,7 +127,7 @@ or $2$, and in particular finite order.
 <1>6. In part (f), take $p=2$, $k=2$, $m=1$, and
 $G=C_4\times C_2$.
 
-::: proof
+::: {.proof}
 This group has order $8=2^{2+1}\cdot1$, with $2\nmid1$.
 The subgroup $H_1=\langle(1,0)\rangle$ has order $4$
 and is cyclic. The subgroup

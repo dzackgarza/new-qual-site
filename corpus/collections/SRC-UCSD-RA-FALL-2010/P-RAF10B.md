@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^1(\mathbb{R})$.
 Prove that the function
 $$
@@ -32,9 +32,9 @@ $$
 is continuous and bounded on $\mathbb{R}$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove boundedness.
-::: proof
+::: {.proof}
 For every $y\in\mathbb R$,
 \[
 |g(y)|
@@ -49,7 +49,7 @@ Hence
 :::
 
 <1>2. Prove continuity.
-::: proof
+::: {.proof}
 Let $y_k\to y$. For each fixed $x\in\mathbb R$,
 \[
 \sin(y_k^2x)f(x)\longrightarrow \sin(y^2x)f(x).

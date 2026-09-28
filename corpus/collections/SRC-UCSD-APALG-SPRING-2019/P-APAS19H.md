@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $S_n$ be the symmetric group on $n$ letters.
 
 (a) Calculate the character table of the product group $S_3\times S_2$.
@@ -23,7 +23,7 @@ Let $S_n$ be the symmetric group on $n$ letters.
 Calculate the decomposition of the restricted module $S^\lambda\downarrow_{S_3\times S_2}^{S_5}$ into irreducibles.
 :::
 
-::: solution
+::: {.solution}
 The irreducible characters of a direct product are exactly the external tensor products of irreducible characters of the two factors. For \(S_3\), with conjugacy classes represented by \(1,(12),(123)\), the irreducible characters are
 \[
 \begin{array}{c|ccc}
@@ -33,7 +33,7 @@ The irreducible characters of a direct product are exactly the external tensor p
 \mathrm{std}&2&0&-1
 \end{array}.
 \]
-For \(S_2\), with classes \(1,	au\), the irreducible characters are
+For \(S_2\), with classes \(1,\tau\), the irreducible characters are
 \[
 \begin{array}{c|cc}
 &1&\tau\\ \hline

@@ -26,8 +26,10 @@ audit:
   note: Verified by direct diagram algebra/exactness.
 ---
 
+::: {.problem}
 Using the notation of the five-lemma, give an example where the maps $\alpha, \beta, \delta$, and $\varepsilon$ are zero but $\gamma$ is nonzero.
 This can be done with short exact sequences in which all the groups are either $\mathbb{Z}$ or $0$.
+:::
 
 ::: {.solution}
 Use the five-lemma notation

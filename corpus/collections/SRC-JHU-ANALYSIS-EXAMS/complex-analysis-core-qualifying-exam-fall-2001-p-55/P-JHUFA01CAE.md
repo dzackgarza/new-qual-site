@@ -32,6 +32,7 @@ audit:
   note: "Corrected the step heading and used the closed radius-|z| disk, including radius zero; checked the logarithm branch and exact radial power-series bound."
 ---
 
+::: {.problem}
 Let $D_r(0)=\{z\in\mathbb C:|z|<r\}$ and $\Delta=D_1(0)$.
 Use the following subordination result: if $F:\Delta\to\mathbb C$
 is injective and holomorphic, and $g:\Delta\to F(\Delta)$
@@ -45,9 +46,9 @@ $$
 $$
 
 for all $z \in D _ { 1 } ( 0 )$
+:::
 
-
-::: solution
+::: {.solution}
 Let
 $$
 S=\{w\in\mathbb C:|\operatorname{Re}w|<1\}.
@@ -58,7 +59,7 @@ $$
 F(\zeta)=\frac{2i}{\pi}\log\frac{1+\zeta}{1-\zeta}
 $$
 is a biholomorphism from the unit disk onto $S$ and satisfies $F(0)=0$.
-::: proof
+::: {.proof}
 The Möbius map
 $$
 M(\zeta)=\frac{1+\zeta}{1-\zeta}
@@ -78,7 +79,7 @@ The composition is the displayed $F$, and $F(0)=0$.
 :::
 
 <1>2. Pointwise subordination uses the closed disk of radius $|z|$.
-::: proof
+::: {.proof}
 The hypothesis $|\operatorname{Re}g(z)|<1$ says exactly that
 $g:\Delta\to S=F(\Delta)$, and $g(0)=F(0)$. Equivalently,
 $$
@@ -100,7 +101,7 @@ estimate at $r=|z|$ needs the closed disk instead.
 :::
 
 <1>3. The explicit strip map has the required radial bound.
-::: proof
+::: {.proof}
 For $|\zeta|<1$,
 $$
 \log\frac{1+\zeta}{1-\zeta}

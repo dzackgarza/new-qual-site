@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be a commutative ring with identity $1 \ne 0$.
 
 (a) Show that every proper ideal of $R$ is contained in at least one maximal ideal.
@@ -25,7 +25,7 @@ Let $R$ be a commutative ring with identity $1 \ne 0$.
 (c) Suppose that $R$ is a finite ring. Show that $J(R) = \operatorname{Nil}(R)$, the set of all nilpotent elements of $R$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove Krull's existence theorem for maximal ideals containing a given proper ideal in (a), characterize the Jacobson radical via units in (b), and prove $J(R) = \operatorname{Nil}(R)$ for finite commutative rings in (c).
 
 <1>1. Part (a): Every proper ideal is contained in a maximal ideal.

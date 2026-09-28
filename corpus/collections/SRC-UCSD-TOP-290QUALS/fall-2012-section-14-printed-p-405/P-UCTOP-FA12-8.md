@@ -12,8 +12,10 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 Let $L$ be a space which is $p$-fold covered by $S^3$, for some $p \geq 1$.
 Compute the second homotopy group of the one-point union $\pi_2(L \vee S^2)$.
+:::
 
 ::: {.solution}
 <1>1. Since $S^3$ is simply connected, the given $p$-fold covering $S^3\to L$ is the universal cover and

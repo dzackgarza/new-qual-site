@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 5. Let
 
 $$
@@ -38,7 +38,7 @@ $$
 Use also $m x ^ { m - 1 } ( 1 - x ) < 1 - x ^ { m } < m ( 1 - x ) . ]$
 :::
 
-::: solution
+::: {.solution}
 For \(0<x<1\), absolute convergence allows us to expand and rearrange:
 \[
 \begin{aligned}

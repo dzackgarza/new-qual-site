@@ -8,87 +8,95 @@ topics:
 
 # Show $G$ is not simple
 
-To show that a group $G$ is not simple is to exhibit a proper nontrivial normal subgroup. The arguments below use its order, Sylow subgroups, and permutation actions.
+Throughout, $G$ is a finite group of order $n$, $p$ is a prime, $n = p^k m$ with $p\notdivides m$, and $n_p$ is the number of Sylow $p$-subgroups of $G$.
 
 ## Constraints from the order
 
-The prime factorization of $n$ constrains the number $n_p$ of Sylow $p$-subgroups.
-By Sylow 3, for $n = p^k m$ with $p\nmid m$,
-\[
-n_p \equiv 1 \pmod p, \qquad n_p \divides m
-.\]
-If these conditions force $n_p = 1$, the unique Sylow $p\dash$subgroup is normal because conjugation permutes the Sylow $p\dash$subgroups.
+By Sylow's third theorem,
+$$
+n_p \equiv 1 \pmod p, \qquad n_p \divides m.
+$$
+If $n_p = 1$, the unique Sylow $p$-subgroup $P$ is normal: for $g\in G$, $gPg\inv$ is again a Sylow $p$-subgroup, so $gPg\inv = P$.
 
-For prime and prime-power orders:
+Groups of prime-power order:
 
-- $n$ prime: $G$ is cyclic and simple, so the answer is that it *is* simple.
-- $n = p^k$ with $k\geq 2$: the class equation forces $Z(G) \neq 1$. If $Z(G)$ is proper, it is the required normal subgroup. Otherwise $G$ is abelian, and a subgroup of order $p$ is proper and normal.
+- If $n$ is prime, $G$ is cyclic and simple.
 
-## 1. A Sylow count that leaves only $n_p = 1$
+- If $n = p^k$ with $k\geq 2$, then $Z(G) \neq 1$ by the class equation.
+  If $Z(G)\neq G$, then $Z(G)$ is a proper nontrivial normal subgroup; if $Z(G)=G$, then $G$ is abelian and every subgroup of order $p$ is proper, nontrivial, and normal.
 
+## A Sylow count with $n_p = 1$
+
+If the only divisor of $m$ congruent to $1$ modulo $p$ is $1$, then $n_p=1$ and the Sylow $p$-subgroup is normal.
+
+::: {.example}
 For $n = 20 = 2^2\cdot 5$: $n_5 \equiv 1 \pmod 5$ and $n_5 \divides 4$, so $n_5 = 1$.
-The Sylow $5$-subgroup is therefore proper, nontrivial, and normal.
+:::
 
-## 2. Counting elements
+## Counting elements
 
-When no $n_p$ is forced to $1$ individually, count what the Sylows would cost.
-Distinct Sylow $p\dash$subgroups of order $p$ meet trivially, so $n_p$ of them contribute $n_p(p-1)$ elements of order $p$.
-Sum over the primes; if the total exceeds $n$, some $n_p$ was too large.
+Distinct subgroups of prime order $p$ intersect trivially, so if the Sylow $p$-subgroups have order $p$, they contain $n_p(p-1)$ elements of order $p$.
+If the sum of these counts over several primes exceeds $n$, then some $n_p$ is smaller than assumed.
+Sylow subgroups of order $p^2$ can intersect in a subgroup of order $p$, and then this count does not apply; see [[algebra/group-actions/show-g-is-not-simple#Two Sylow subgroups meeting nontrivially|Two Sylow subgroups meeting nontrivially]].
 
-For $n = 30$: if $n_5 = 6$ and $n_3 = 10$ then the elements of order $5$ and $3$ already number $6\cdot 4 + 10 \cdot 2 = 44 > 30$.
-So at least one of them is $1$.
+::: {.example}
+For $n = 30$: if $n_5 = 6$ and $n_3 = 10$, then $G$ has $6\cdot 4 + 10 \cdot 2 = 44 > 30$ elements of order $5$ or $3$.
+Hence $n_5 = 1$ or $n_3 = 1$.
+:::
 
-The counting is exact only when the Sylows intersect trivially, which is automatic for $p$ but not for $p^2$; see argument 6.
+## A subgroup of small index
 
-## 3. The index of a subgroup is too small
+If $G$ is simple and $H < G$ has index $k > 1$, then the action of $G$ on the $k$ left cosets of $H$ has kernel a proper normal subgroup, hence trivial, so $G$ embeds in $S_k$ and
+$$
+\size G \divides k!.
+$$
+The subgroup $H$ can be a Sylow subgroup or the normalizer $N_G(P)$ of a Sylow subgroup $P$.
 
-If $G$ is simple and $H \leq G$ has index $k > 1$, then $G$ acts faithfully on the $k$ cosets, so $G$ embeds in $S_k$ and
-\[
-\size G \divides k!
-.\]
-Take a subgroup that Sylow guarantees, usually a Sylow $p\dash$subgroup or its normalizer, and check the divisibility.
-
-For $n = 24$: if $n_2 = 3$ then $[G : N_G(P_2)] = 3$, so $\size G = 24$ would have to divide $3! = 6$.
+::: {.example}
+For $n = 24$: if $n_2 = 3$, then $[G : N_G(P)] = 3$ for a Sylow $2$-subgroup $P$, and $24 \notdivides 3! = 6$, so $G$ is not simple.
+If $n_2 = 1$, the Sylow $2$-subgroup is normal.
+:::
 
 [[PR-5FGA7]]
 
-## 4. Smallest prime index
+## Index the smallest prime
 
-A subgroup of index equal to the *smallest* prime dividing $\size G$ is automatically normal.
-In particular a subgroup of index $2$ is normal.
+If $H \leq G$ has index $q$, the smallest prime dividing $\size G$, then $H$ is normal in $G$.
+In particular, a subgroup of index $2$ is normal.
 
 [[PR-PADL7]]
 
-## 5. The normalizer of a Sylow subgroup
+## The normalizer of a Sylow subgroup
 
-$n_p = [G : N_G(P)]$, so a Sylow count is a statement about an index, and arguments 3 and 4 apply to $N_G(P)$.
-If $n_p>1$ and $|G|$ does not divide $n_p!$, the coset action on $G/N_G(P)$ has a proper nontrivial kernel.
+For a Sylow $p$-subgroup $P$, orbit-stabilizer for the conjugation action on the Sylow $p$-subgroups gives $n_p = [G : N_G(P)]$.
+Hence a bound on $n_p$ is a bound on the index of the subgroup $N_G(P)$, to which [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]] and [[algebra/group-actions/show-g-is-not-simple#Index the smallest prime|Index the smallest prime]] apply.
 
-## 6. Two Sylow subgroups meeting nontrivially
+## Two Sylow subgroups meeting nontrivially
 
-Suppose distinct Sylow $p\dash$subgroups $P,Q$ have order $p^2$ and intersect in a subgroup $H$ of order $p$. Since $P$ and $Q$ are abelian, both lie in $N_G(H)$, which strictly contains each of them. If $N_G(H)=G$, then $H$ is normal. Otherwise its index gives a coset action to which argument 3 applies.
+Suppose the Sylow $p$-subgroups have order $p^2$ and two of them, $P \neq Q$, satisfy $\size{P\intersect Q} = p$.
+Groups of order $p^2$ are abelian, so $D \da P\intersect Q$ is normal in both $P$ and $Q$, and $N_G(D)$ contains the subgroup $\langle P, Q\rangle$, whose order is a multiple of $p^2$ greater than $p^2$.
+Hence $[G:N_G(D)]$ is a proper divisor of $m$, and either $N_G(D) = G$, so that $D$ is a proper nontrivial normal subgroup, or $[G:N_G(D)]$ is small enough for [[algebra/group-actions/show-g-is-not-simple#A subgroup of small index|A subgroup of small index]]. If instead any two distinct Sylow $p$-subgroups intersect trivially, [[algebra/group-actions/show-g-is-not-simple#Counting elements|Counting elements]] applies with $n_p(p^2-1)$ nonidentity elements.
 
-## 7. The action on the Sylow subgroups
+## The action on the Sylow subgroups
 
-$G$ acts by conjugation on its $n_p$ Sylow $p\dash$subgroups, giving $\rho: G \to S_{n_p}$.
-For $n_p>1$, the kernel is proper and normal, so if $G$ is simple then $\rho$ is injective and $\size G \divides n_p!$.
-Sylow 2 says the action is transitive, so the kernel is proper whenever $n_p > 1$.
+$G$ acts by conjugation on its $n_p$ Sylow $p$-subgroups, giving a homomorphism $\rho\colon G \to S_{n_p}$.
+By Sylow's second theorem the action is transitive, so $\ker\rho$ is a proper normal subgroup when $n_p > 1$.
+If $G$ is simple and $n_p>1$, then $\rho$ is injective and $\size G \divides n_p!$.
+This is the action of $G$ on the cosets of $N_G(P)$.
 
-This is argument 3 with $H = N_G(P)$: the Sylow subgroups correspond to cosets of the normalizer.
+## Arguments and conclusions
 
-## What each argument needs
-
-| Argument | Needs | Gives |
+| Argument | Input | Conclusion |
 | --- | --- | --- |
-| Sylow count | only the factorization of $n$ | $n_p = 1$, hence a normal Sylow |
-| element count | Sylows of prime order | some $n_p = 1$ |
-| index too small | a subgroup of known index $k$ | $\size G \divides k!$, a contradiction |
-| smallest prime index | a subgroup of index the least prime | that subgroup is normal |
-| normalizer | $n_p = [G:N_G(P)]$ | a large subgroup to feed the others |
-| intersecting Sylows | Sylow subgroups of order $p^2$ meeting in order $p$ | a normalizer containing both |
-| action on Sylows | $n_p > 1$ | $\size G \divides n_p!$ |
+| Sylow count | the factorization of $n$ | $n_p = 1$, so a Sylow $p$-subgroup is normal |
+| element count | Sylow subgroups of prime order | some $n_p = 1$ |
+| small index | a proper subgroup of index $k$ | $G$ simple implies $\size G \divides k!$ |
+| smallest prime index | a subgroup of index the least prime dividing $n$ | that subgroup is normal |
+| normalizer | $n_p = [G:N_G(P)]$ | a subgroup of index $n_p$ |
+| intersecting Sylow subgroups | $\size{P\intersect Q} = p$ for Sylow subgroups of order $p^2$ | a subgroup $N_G(P\intersect Q)$ of index a proper divisor of $m$ |
+| action on Sylow subgroups | $n_p > 1$ | $G$ simple implies $\size G \divides n_p!$ |
 
-## When the answer is that it is simple
+## Simple groups
 
-$A_n$ for $n\geq 5$, and groups of prime order.
-$A_5$ is the smallest nonabelian simple group, and any simple group of order $60$ is isomorphic to it.
+The groups of prime order and the alternating groups $A_n$ for $n\geq 5$ are simple.
+The group $A_5$ of order $60$ is the smallest nonabelian simple group, and every simple group of order $60$ is isomorphic to $A_5$.

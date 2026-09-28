@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC1-26
 kind: problem
-title: 'Preliminary calculus practice Week 1: Calculus I problem 26'
+title: Integral of $|x+1|$ over $[-3,3]$
 classification:
   areas:
   - prelim

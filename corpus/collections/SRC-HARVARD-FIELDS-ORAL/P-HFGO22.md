@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Is every algebraic field extension finite?
 Prove the claim or give a counterexample.
 :::
 
-::: solution
+::: {.solution}
 No. The extension
 \[
 \overline{\mathbb Q}/\mathbb Q
@@ -34,13 +34,13 @@ No. The extension
 is algebraic but infinite.
 
 <1>1. Every element of $\overline{\mathbb Q}$ is algebraic over $\mathbb Q$.
-::: proof
+::: {.proof}
 This is the defining property of the algebraic closure: it is an algebraic
 extension of the base field.
 :::
 
 <1>2. The degree $[\overline{\mathbb Q}:\mathbb Q]$ is infinite.
-::: proof
+::: {.proof}
 For every positive integer $n$, the polynomial
 \[
 x^n-2

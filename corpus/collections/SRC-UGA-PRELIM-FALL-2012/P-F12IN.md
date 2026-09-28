@@ -16,7 +16,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $f: X \to Y$ be a (not necessarily invertible) function, and $A \subseteq X$.
 
 (a) Prove that $A \subseteq f^{-1}(f(A))$.
@@ -26,7 +26,7 @@ Let $f: X \to Y$ be a (not necessarily invertible) function, and $A \subseteq X$
 (c) Give an example for which $A \neq f^{-1}(f(A))$.
 :::
 
-::: solution
+::: {.solution}
 (a) If $x\in A$, then $f(x)\in f(A)$, so by definition $x\in f^{-1}(f(A))$. Thus
 \[
 A\subseteq f^{-1}(f(A)).

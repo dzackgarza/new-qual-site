@@ -17,7 +17,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Let $G = \mathbb{Z}/3$ act on a two-dimensional vector space as a diagonal matrix with diagonal entries being $\theta, \theta^{-1}$, where $\theta = e^{2\pi i/3}$.
 
 (a) Find a system of generators for $k[x,y]^G$.
@@ -27,7 +27,7 @@ Let $G = \mathbb{Z}/3$ act on a two-dimensional vector space as a diagonal matri
 (c) Find at least one relation among the generators in (a). Give a precise description how you would find all possible relations (you need not carry out the calculations).
 :::
 
-::: solution
+::: {.solution}
 Let $g$ be a generator of $G=C_3$. On the vector space, $g$ acts with eigenvalues $\theta$ and $\theta^{-1}$. On the dual coordinate functions the eigenvalues are inverted, so after possibly interchanging the names of $x$ and $y$ we may write
 \[
 g\cdot x=\theta x,

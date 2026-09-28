@@ -22,7 +22,7 @@ audit:
   note: "Used polynomial division for spanning and a degree argument for linear independence, and checked the quotient carries the induced F-vector-space structure."
 ---
 
-::: problem
+::: {.problem}
 Let $F$ be a field, and let $p\in F[x]$ have degree $n\geq1$.
 Prove that $F[x]/(p)$ is an $n$-dimensional vector space over $F$.
 Show that
@@ -32,9 +32,9 @@ $$
 is a basis.
 :::
 
-::: solution
+::: {.solution}
 <1>1. The quotient is naturally an $F$-vector space.
-::: proof
+::: {.proof}
 The ideal $(p)$ is closed under multiplication by constants from $F$. Hence scalar multiplication
 $$
 a\cdot(f+(p))=af+(p)
@@ -43,7 +43,7 @@ is well-defined for $a\in F$ and $f\in F[x]$. Together with the quotient additio
 :::
 
 <1>2. The displayed classes span the quotient.
-::: proof
+::: {.proof}
 For any $f\in F[x]$, the division algorithm gives unique polynomials $q,r\in F[x]$ such that
 $$
 f=qp+r,
@@ -64,7 +64,7 @@ $$
 :::
 
 <1>3. The displayed classes are linearly independent.
-::: proof
+::: {.proof}
 Suppose
 $$
 a_0(1+(p))+a_1(x+(p))+\cdots+a_{n-1}(x^{n-1}+(p))=0+(p).

@@ -25,7 +25,7 @@ prompts:
 
 ::: {.definition title="derived functors"}
 Let $\mca$ be an abelian category with enough injectives and $F: \mca \to \mcb$ an additive covariant left exact functor.
-The **right derived functors** $R^iF: \mca \to \mcb$ are
+The \dfn{right derived functors} $R^iF: \mca \to \mcb$ are
 \[
 R^iF(A) = h^i(F(I^\bullet)) ,
 \]

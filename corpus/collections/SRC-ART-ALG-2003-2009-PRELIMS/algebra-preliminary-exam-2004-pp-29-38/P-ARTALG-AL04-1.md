@@ -24,16 +24,16 @@ audit:
   note: "Checked every Sylow-count possibility, the abelian factors at order 15, and nontriviality and properness of the order-36 action kernel."
 ---
 
-::: problem
+::: {.problem}
 (a) Prove that all groups of size 15 are solvable.
 
 (b) Prove there are no simple groups of size 36.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Every group of order $15$ is solvable.
 
-::: proof
+::: {.proof}
 Let $|G|=15=3\cdot5$. The number $n_5$ of Sylow $5$-subgroups
 divides $3$ and is $1$ modulo $5$, by Sylow's theorems [@DF04].
 Of the divisors $1,3$ of $3$, only $1$ satisfies that congruence.
@@ -55,7 +55,7 @@ derived-series definition.
 
 <1>2. Every group of order $36$ has a nontrivial proper normal subgroup.
 
-::: proof
+::: {.proof}
 Let $|G|=36=2^2\cdot3^2$. Sylow's theorems give
 $n_3\mid4$ and $n_3\equiv1\pmod3$, so $n_3=1$ or $4$.
 If $n_3=1$, the unique subgroup of order $9$ is normal and is

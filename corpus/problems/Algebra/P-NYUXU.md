@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $G$ act by conjugation on its set of subgroups. Show that the number of subgroups conjugate to $H\le G$ is
 \[
 [G:N_G(H)].

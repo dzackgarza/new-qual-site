@@ -20,12 +20,12 @@ prompts:
 ---
 
 ::: {.definition title="The homogeneous spectrum"}
-Let $S = \bigoplus_{d \geq 0} S_d$ be a graded ring and $S_+ \da \bigoplus_{d \geq 1} S_d$ the **irrelevant ideal**. Then $\Proj S$ is the set of homogeneous primes $\mfp$ with $\mfp \not\supseteq S_+$, topologised by the closed sets $V(\mfa) = \ts{\mfp \st \mfp \supseteq \mfa}$ for $\mfa$ homogeneous.
+Let $S = \bigoplus_{d \geq 0} S_d$ be a graded ring and $S_+ \da \bigoplus_{d \geq 1} S_d$ the \dfn{irrelevant ideal}. Then $\Proj S$ is the set of homogeneous primes $\mfp$ with $\mfp \not\supseteq S_+$, topologised by the closed sets $V(\mfa) = \ts{\mfp \st \mfp \supseteq \mfa}$ for $\mfa$ homogeneous.
 Its structure sheaf sends $U$ to the functions $s: U \to \coprod_{\mfp \in U} S_{(\mfp)}$ with $s(\mfp) \in S_{(\mfp)}$ and locally of the form $a/f$ with $a, f$ homogeneous of the *same* degree and $f \notin \mfp$, where $S_{(\mfp)}$ is the degree-zero part of the homogeneous localisation.
 :::
 
 ::: {.remark}
-Three restrictions shape the definition, each with a mathematical reason.
+Each clause removes an affine-cone artifact from the projective construction.
 
 *Homogeneous* primes only, because the closed sets should be cut out by homogeneous equations: a non-homogeneous polynomial does not have a well-defined vanishing locus on lines through the origin.
 

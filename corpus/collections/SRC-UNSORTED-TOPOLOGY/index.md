@@ -134,7 +134,6 @@ source:
   - id: P-KFPX5
   - id: P-KIIUK
   - id: P-LJTUV
-  - id: P-LKYOC
   - id: P-LZDYV
   - id: P-M62FC
   - id: P-MA7SC
@@ -175,8 +174,6 @@ source:
   - id: P-ZQBPZ
 ---
 
-::: remark
-Not a document.
-These are the 158 topology problems and exercises in the corpus that no source claims, collected so that they are reachable from the source listing rather than only from the browser.
-A problem leaves this collection when the paper it was set on is identified.
+::: {.remark}
+Topology problems whose source is not identified. This collection is not a source document.
 :::

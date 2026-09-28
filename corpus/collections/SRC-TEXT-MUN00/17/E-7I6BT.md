@@ -21,7 +21,7 @@ audit:
 Consider the lower limit topology on $\mathbb{R}$ and the topology given by the basis $\mathcal{C}$ of Exercise 8 of §13. Determine the closures of the intervals $A = (0, \sqrt{2})$ and $B = (\sqrt{2}, 3)$ in these two topologies.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the closures of $A = (0, \sqrt{2})$ and $B = (\sqrt{2}, 3)$ in the lower limit topology $\mathbb{R}_\ell$ (basis $\{[x, y) \mid x < y \in \mathbb{R}\}$) and the topology $\mathcal{T}_{\mathcal{C}}$ (basis $\mathcal{C} = \{[a, b) \mid a < b \in \mathbb{Q}\}$).
 
 <1>1. Preliminary topology containment:

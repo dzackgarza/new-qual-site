@@ -22,7 +22,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 If $M$ is free abelian, how can I put quotients of M in some standard form?
 What was crucial about the integers here (abelian groups being modules over $\ZZ$)? How does the procedure simplify if the ring is a Euclidean domain, not just a PID?
 :::

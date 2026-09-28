@@ -21,7 +21,7 @@ audit:
 Give examples to show that a simple closed curve in the torus may or may not separate the torus.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Provide explicit examples of simple closed curves (embedded circles $S^1 \hookrightarrow T^2$) in the torus $T^2 = S^1 \times S^1$ that (1) do not separate $T^2$ and (2) do separate $T^2$.
 
 <1>1. Example of a non-separating simple closed curve:

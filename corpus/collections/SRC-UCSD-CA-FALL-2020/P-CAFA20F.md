@@ -16,7 +16,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f: \mathbb{C} \to \mathbb{C}$ be given by $f(z) = z - \sin z$.
 
 (a) Show that $f$ is an odd entire function of order less than or equal to 1.

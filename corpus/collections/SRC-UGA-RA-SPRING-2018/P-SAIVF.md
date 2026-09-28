@@ -26,7 +26,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Let $f\in L^2([0,1])$ and suppose
 \[
 \int_0^1 f(x)x^n\,dx=0
@@ -35,7 +35,7 @@ Let $f\in L^2([0,1])$ and suppose
 Show that $f=0$ almost everywhere.
 :::
 
-::: solution
+::: {.solution}
 By linearity,
 \[
 \int_0^1 f(x)p(x)\,dx=0

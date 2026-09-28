@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove the following statements concerning the convergence of power series on the unit circle $S^1 = \{z \in \mathbb{C} : |z| = 1\}$:
 
 (a) $\sum_{n=1}^\infty n z^n$ does not converge at any point of $S^1$.
@@ -24,7 +24,7 @@ Prove the following statements concerning the convergence of power series on the
 (c) $\sum_{n=1}^\infty \frac{z^n}{n}$ converges at every point of $S^1$ except $z = 1$, where it diverges.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Determine the convergence behavior of $\sum n z^n$, $\sum \frac{z^n}{n^2}$, and $\sum \frac{z^n}{n}$ on the boundary circle $S^1$.
 
 <1>1. Part (a): Divergence of $\sum_{n=1}^\infty n z^n$ on $S^1$.

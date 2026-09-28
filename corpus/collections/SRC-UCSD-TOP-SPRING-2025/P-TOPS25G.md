@@ -16,7 +16,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: problem
+::: {.problem}
 Prove that there is no compact 4-manifold $M$ (with or without boundary) which is homotopy-equivalent to the suspension $\Sigma\mathbb{RP}^3$.
 :::
 
@@ -81,6 +81,5 @@ Poincaré duality (<1>4.1) would force $H_2 \cong H^2$, but $H_2 = \ZZ/2$ and $H
 <1>5. Q.E.D.
 ::: {.proof}
 <1>4.5 gives the contradiction, so no such $M$ exists.
-:::
 :::
 :::

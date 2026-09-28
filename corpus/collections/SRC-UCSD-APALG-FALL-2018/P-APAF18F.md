@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible $S_n$-module.
 Let $H=S_3\times S_3\times S_1$, so that $H$ is a subgroup of $S_7$.
 Let $V$ be the induced representation

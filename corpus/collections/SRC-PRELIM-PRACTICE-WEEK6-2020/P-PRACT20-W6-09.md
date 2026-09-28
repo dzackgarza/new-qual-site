@@ -2,23 +2,32 @@
 schema: qual/card@1
 id: P-PRACT20-W6-09
 kind: problem
-title: "Week 6: Miscellaneous Topics, problem 9"
+title: Compactness, boundedness of continuous functions and connectedness in $\mathbb R^n$
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Restored the empty set misread as alpha, checked against Week6_solns.pdf (Problem 9).
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Replaced OCR-garbled norm in the solution with the source's f(x) = ||x||, checked against Week6_solns.pdf page 5 (Problem 9).
 ---
 
 ::: {.problem}
-Let $\alpha \neq K \subseteq \mathbb { R } ^ { n }$ . Which of the following statements are true?
+Let $\emptyset \neq K \subseteq \RR^n$. Which of the following statements are true?
 
-(A) If K is compact, then every continuous real-valued function on K is bounded.
+(A) If $K$ is compact, then every continuous real-valued function on $K$ is bounded.
 
-(B) If every continuous real-valued function on K is bounded, then K is compact.
+(B) If every continuous real-valued function on $K$ is bounded, then $K$ is compact.
 
-(C) If K is compact, then K is connected.
+(C) If $K$ is compact, then $K$ is connected.
 :::
 
 ::: {.solution}
@@ -27,7 +36,7 @@ Let $\alpha \neq K \subseteq \mathbb { R } ^ { n }$ . Which of the following sta
 (B) is true.
 We prove this by contrapositive.
 If K is not compact, then it is either not closed or not bounded (by the Heine-Borel theorem).
-If K is not closed, then there is $x _ { 0 } \in \mathbb { R } ^ { n }$ such that $x _ { 0 } \notin K$ but $x _ { 0 }$ is a limit point of K. Then putting $\begin{array} { r } { f ( x ) = \frac { 1 } { \left\| x - x _ { 0 } \right\| } } \end{array}$ gives a function which is continuous and unbounded on K. If K is unbounded, then $f ( x ) = \| { \dot { x } } \|$ is continuous and unbounded on K. Contrapositively, if every continuous function on K is bounded, then K is compact.
+If K is not closed, then there is $x _ { 0 } \in \mathbb { R } ^ { n }$ such that $x _ { 0 } \notin K$ but $x _ { 0 }$ is a limit point of K. Then putting $\begin{array} { r } { f ( x ) = \frac { 1 } { \left\| x - x _ { 0 } \right\| } } \end{array}$ gives a function which is continuous and unbounded on K. If K is unbounded, then $f ( x ) = \| x \|$ is continuous and unbounded on K. Contrapositively, if every continuous function on K is bounded, then K is compact.
 
 (C) is false.
 The set $K = [ - 2 , - 1 ] ^ { n } \cup [ 1 , 2 ] ^ { n }$ is compact but not connected.

@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that $\operatorname{Tor}(A, \mathbb{Q}/\mathbb{Z})$ is isomorphic to the torsion subgroup of $A$.
 Deduce that $A$ is torsionfree if $\operatorname{Tor}(A, B) = 0$ for all $B$.
+:::
 
 ::: {.solution}
 Use the short exact sequence

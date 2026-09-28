@@ -20,11 +20,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: exercise
+::: {.exercise}
 Show that if $X$ is Hausdorff and $A\subseteq X$ is compact then $A$ is closed.
 :::
 
-::: solution
+::: {.solution}
 Let $x\in X\setminus A$.
 
 <1>1. For each $a\in A$, Hausdorffness gives disjoint open sets $U_a,V_a$ with

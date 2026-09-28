@@ -15,7 +15,7 @@ audit:
   date: 2026-08-29
 ---
 
-::: exercise
+::: {.exercise}
 12. Let u be a real-valued function defined on the unit disc D. Suppose that $u$ is twice continuously diferentiable and harmonic, that is,
 
 $$

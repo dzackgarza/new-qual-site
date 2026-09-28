@@ -18,7 +18,7 @@ review: draft
 Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
 :::
 
-::: solution
+::: {.solution}
 Since $f$ is holomorphic on $\mathbb D$, its Taylor series at $0$ has radius of
 convergence at least $1$:
 \[

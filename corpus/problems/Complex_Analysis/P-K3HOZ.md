@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 (1) Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence in $O$ such that $u(z_n) = 0$ and $\lim z_n \in O$.
 Prove or disprove that $u$ is identically zero.
 What if $O$ is a region?
@@ -32,7 +32,7 @@ What if $O$ is a region?
 > Hint: Verify the mean value property for your new function obtained by Schwarz reflection principle.
 :::
 
-:::{.solution}
+::: {.solution}
 **Part 1**:
 This is not true: take the holomorphic function $f(z) = z$, then $u(z) \da \Re(f(z)) = \Re(z)$ is harmonic on nonzero on $\RR$ but zero on $i\RR$.
 

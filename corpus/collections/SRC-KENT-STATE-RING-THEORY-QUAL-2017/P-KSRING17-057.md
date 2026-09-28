@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-057
 kind: problem
-title: Kent State ring-theory qualifying problem 57
+title: Prime ideals are maximal when every $x$ satisfies $x^n=x$
 classification:
   areas: [algebra]
   topics: []

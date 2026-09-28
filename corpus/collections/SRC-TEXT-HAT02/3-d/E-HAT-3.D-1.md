@@ -23,8 +23,10 @@ audit:
   date: 2026-09-09
 ---
 
+::: {.problem}
 Show that a topological group with a finite-dimensional CW structure is an orientable manifold.
 [Consider the homeomorphisms $x \mapsto gx$ or $x \mapsto xg$ for fixed $g$ and varying $x$ in the group.]
+:::
 
 ::: {.solution}
 Let $G$ be a topological group with a finite-dimensional CW structure, and let $d$ be the largest dimension of a cell of $G$.

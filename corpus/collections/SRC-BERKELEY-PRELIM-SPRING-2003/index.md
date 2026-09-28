@@ -9,6 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: complete
 provenance:
 - assets/attachments/s03.pdf
 - assets/attachments/s03solution.pdf
@@ -41,6 +42,6 @@ source:
     year: 2003
 ---
 
-::: remark
-UC Berkeley Preliminary Exam, Spring 2003. Problems are listed in paper order: Part A 1A–9A, then Part B 1B–9B.
+::: {.remark}
+Part A consists of Problems 1A--9A and Part B of Problems 1B--9B. A companion solution packet covers all eighteen problems.
 :::

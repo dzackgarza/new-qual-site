@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Prove the open mapping theorem for holomorphic functions: If $f$ is a non-constant holomorphic function on an open set $U$ in $\mathbb{C}$, then $f(U)$ is also an open set.
 :::
 
-:::{.solution}
+::: {.solution}
 Idea:
 
 ![](../../assets/Complex_Analysis/999_Quals/figures/2022-01-02_02-14-17.png)
@@ -51,7 +51,7 @@ The theorem then follows: $F(w): U' \to W_\eps$ is a continuous and $\ZZ\dash$va
 Then noting that $F(w_0) = 1$ since $z_0\in U'$ and $w_0\in W_\eps$, we have $F\equiv 1 > 0$ for all $w$.
 
 
-:::{.proof title="of claim"}
+::: {.proof title="of claim"}
 Choose
 \[
 \eps \da \min_{z\in \bd U'}\abs{f(z) - w_0}

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-2-04
 kind: problem
-title: Nori Galois theory problem 2.4
+title: Degree eight polynomial with root $\sqrt{x_1}+\sqrt{x_2}+\sqrt{x_3}$
 classification:
   areas: [algebra]
   topics: []

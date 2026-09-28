@@ -3,6 +3,7 @@ schema: qual/card@1
 id: FF-NOX4C
 kind: fact
 title: Almost disjoint sets
+slogan: 'Almost disjoint means the interiors do not meet.'
 prompts:
 - What are almost disjoint sets?
 classification:
@@ -15,5 +16,6 @@ review: draft
 ---
 
 ::: {.fact}
-$A^\circ \cap B^\circ = \emptyset$
+Let $X$ be a topological space.
+Subsets $A, B\subseteq X$ are [[FD-5T3HX|almost disjoint]] if and only if $A^\circ \cap B^\circ = \emptyset$.
 :::

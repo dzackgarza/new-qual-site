@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 13. Characterize the splitting field and all intermediate fields of the polynomial $\left(x^{2}-2\right)\left(x^{2}-3\right)\left(x^{2}-5\right)$ over $\QQ$.
     Using this characterization, find a primitive element of the splitting field.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 - Show that $\chi(\Sigma_g + \Sigma_h) = \chi(\Sigma_g)  + \chi(\Sigma_h) - 2$.
 :::
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Prove that no group of order $90$ is simple.
 :::
 

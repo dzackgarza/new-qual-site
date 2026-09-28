@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $R$ be an integral domain and $M$ an $R$-module. Define
 \[
 T(M)=\{m\in M:rm=0\text{ for some }0\ne r\in R\}.

@@ -41,6 +41,6 @@ source:
     year: 2018
 ---
 
-::: remark
-UC Berkeley Graduate Preliminary Examination, Fall 2018. The problem list follows the paper: Part A problems 1A–9A, then Part B problems 1B–9B.
+::: {.remark}
+Part A consists of Problems 1A--9A and Part B of Problems 1B--9B.
 :::

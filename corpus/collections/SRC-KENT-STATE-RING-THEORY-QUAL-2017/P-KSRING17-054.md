@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-054
 kind: problem
-title: Kent State ring-theory qualifying problem 54
+title: A prime ideal consisting of zero divisors
 classification:
   areas: [algebra]
   topics: []

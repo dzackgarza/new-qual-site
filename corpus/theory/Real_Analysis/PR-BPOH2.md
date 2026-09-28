@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-BPOH2
 kind: proposition
-title: Young's Product Inequality
+title: Young's product inequality
+slogan: 'Conjugate powers dominate a product.'
 classification:
   areas:
   - real-analysis
@@ -12,9 +13,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-\[
-AB \leq {A^p \over p} + {B^q \over q}
-.\]
-
+::: {.proposition}
+Let $1<p,q<\infty$ satisfy $\frac1p+\frac1q=1$, and let $A,B\geq0$.
+Then
+$$
+AB \leq \frac{A^p}{p} + \frac{B^q}{q} .
+$$
 :::

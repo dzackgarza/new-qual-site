@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-08
 kind: problem
-title: Sequences and series Assignment 2, problem 8
+title: Convergence of $\sum p^nn^p$, $\sum\frac{n!}{n^n}$, $\sum(n^{1/n}-1)^n$ and related series
 classification:
   areas:
   - real-analysis

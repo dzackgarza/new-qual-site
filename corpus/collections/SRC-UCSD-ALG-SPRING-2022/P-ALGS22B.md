@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (a) Prove that for $n \geq 5$, the alternating group $A_n$ has no subgroup $H$ such that $|A_n : H| = n/2$.
 Conclude that $A_n$ has no subgroup isomorphic to $S_{n-1}$.
 

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-HFYSO
 kind: proposition
-title: Zero in $L^1$ iff zero almost everywhere
+title: A nonnegative function has integral zero if and only if it vanishes almost everywhere
+slogan: 'A nonnegative function integrates to zero exactly when it vanishes almost everywhere.'
 classification:
   areas:
   - real-analysis
@@ -13,9 +14,10 @@ relations: []
 review: draft
 ---
 
-:::{.proposition}
-For $f\in L^+$,
-\[
-\int f = 0 \quad\iff\quad f \equiv 0 \text{ almost everywhere}
-.\]
+::: {.proposition}
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and $f\in$ [[D-BF5L2|$L^+$]].
+Then
+$$
+\int_X f\dmu = 0 \quad\iff\quad f = 0 \ \mu\text{-almost everywhere}.
+$$
 :::

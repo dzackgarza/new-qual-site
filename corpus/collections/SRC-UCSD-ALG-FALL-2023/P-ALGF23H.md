@@ -25,7 +25,7 @@ audit:
   note: Checked the faithful restriction action, the Frobenius order by root counting, and the case n=1.
 ---
 
-::: problem
+::: {.problem}
 Suppose $p$ is a prime and $p \nmid n$.
 Let $\overline{\mathbb{F}}_p$ be an algebraic closure of $\mathbb{F}_p$.
 Suppose $\zeta \in \overline{\mathbb{F}}_p^{\times}$ is an element of (multiplicative) order $n$.

@@ -15,14 +15,14 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 I \da \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}
 .\]
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) = \sqrt{z^2-1} = \sqrt{(z+1)(z-1)}$.
 First note $f$ is even, so
 \[

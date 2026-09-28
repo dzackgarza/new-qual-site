@@ -22,7 +22,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: exercise
+::: {.exercise}
 Describe geometrically the sets of points $z$ in the complex plane defined by the following relations:
 
 (a) $|z-z_1|=|z-z_2|$, where $z_1,z_2\in\mathbb C$.

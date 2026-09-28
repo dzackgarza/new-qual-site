@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Prove that a commutative ring with unit is a field if and only if its only ideals are {0} and the whole ring
 
 :::

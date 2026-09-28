@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: {.problem}
 a. Prove Holder's inequality:
   let $f\in L^p, g\in L^q$ with $p, q$ conjugate, and show that
 \[
@@ -39,9 +40,9 @@ c. Let $X = [0, 1] \subset \RR$.
     \end{dcases}
     ,\]
     and characterize the functions of each type
+:::
 
-
-:::{.solution}
+::: {.solution}
 \[
 \int f^p 
 &= \int_{x < 1} f^p + \int_{x=1}f^p + \int_{x > 1} f^p\\

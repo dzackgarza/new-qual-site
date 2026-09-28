@@ -18,7 +18,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Consider the metric space $(\mathbb{Q},d)$ where $\mathbb{Q}$ denotes the rational numbers and $d(x,y)=|x-y|$.
 Let $E=\{x\in\mathbb{Q}:x>0,\,2<x^2<3\}$.
 Is $E$ closed and bounded in $\mathbb{Q}$?

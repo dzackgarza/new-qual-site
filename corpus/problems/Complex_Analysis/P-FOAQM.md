@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $f, g: [0, 1] \to \RR$ where $f$ is Riemann integrable and for $x, y\in [0, 1]$,
 \[
 \abs{g(x) - g(y)} \leq \abs{f(x) - f(y)}
@@ -24,7 +24,7 @@ Prove that $g$ is Riemann integrable.
 :::
 
 
-:::{.solution}
+::: {.solution}
 Write $U(f), L(f)$ for the upper and lower sums of $f$, so for $\Pi$ the collection of all partitions of $[0, 1]$,
 \[
 U(f) \da \inf_{P\in \Pi} U(f, P) && U(f, P) \da \sum_{k=1}^n \sup_{x\in I_k}f(x) \cdot \mu(I_k) \\

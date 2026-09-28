@@ -3,6 +3,7 @@ schema: qual/card@1
 id: L-VDLNM
 kind: lemma
 title: The characteristic polynomial is the product of the invariant factors
+slogan: 'Multiply the invariant factors to recover the characteristic polynomial.'
 classification:
   areas:
   - algebra
@@ -14,9 +15,15 @@ relations: []
 review: draft
 ---
 
-:::{.lemma}
-The characteristic polynomial is the *product of the invariant factors*, i.e.
+::: {.lemma}
+Let $k$ be a field, let $A\in\Mat_n(k)$, and let $f_1\divides f_2\divides\cdots\divides f_n$ be the invariant factors of $A$: the monic diagonal entries of the Smith normal form of $xI-A$ over $k[x]$, some of which may equal $1$.
+Then
 $$
-\chi_A(x) = \prod_{j=1}^n f_j(x)
-.$$
+\det(xI-A)=\prod_{j=1}^nf_j(x).
+$$
+:::
+
+::: {.proof}
+The Smith normal form is $P(xI-A)Q$ with $P,Q$ invertible over $k[x]$, so $\det P$ and $\det Q$ are nonzero constants and $\det(xI-A)$ is a nonzero constant multiple of $\prod_jf_j$.
+Both polynomials are monic, so they are equal.
 :::

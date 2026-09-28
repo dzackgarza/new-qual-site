@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 What is a Kummer extension?
 :::
 
-::: solution
+::: {.solution}
 Let $K$ be a field, let $n\ge2$ be an integer with
 \[
 \operatorname{char}K\nmid n,

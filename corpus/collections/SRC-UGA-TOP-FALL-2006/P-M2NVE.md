@@ -25,7 +25,7 @@ audit:
   note: Verified the explicit homotopy from the identity to the antipodal map and the resulting degree contradiction.
 ---
 
-::: problem
+::: {.problem}
 Prove that there does not exist a continuous map $f:S^2\to S^2$ from the unit sphere in $\RR^3$ to itself such that $f(x)\perp x$ (as vectors in $\RR^3$) for all $x\in S^2$.
 :::
 
@@ -107,5 +107,4 @@ Thus <1>3 would force $1=-1$, a contradiction.
 <1>5. Therefore no such continuous map $f:S^2\to S^2$ exists.
 ::: {.proof}
 The assumption in <1>1 led to the contradiction in <1>4.
-:::
 :::

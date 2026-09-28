@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Show that, for measurable functions $f, g : [1, \infty) \to [0, \infty)$, the following inequality holds:
 $$
 \left|\int_{[1,\infty)^2} e^{-xy} f(x) g(y)\,dx\,dy\right| \leq \frac{1}{2e} \left(\int_1^\infty |f(x)|^2\,dx\right)^{1/2} \left(\int_1^\infty |g(x)|^2\,dx\right)^{1/2},
@@ -32,9 +32,9 @@ where $dx$ denotes the Lebesgue measure on $[1, \infty)$ and $dx\,dy$ denotes th
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Factor the kernel by a pointwise estimate.
-::: proof
+::: {.proof}
 For $x,y\ge1$,
 \[
 (x-1)(y-1)\ge0,
@@ -59,7 +59,7 @@ Since $f,g\ge0$,
 :::
 
 <1>2. Apply Cauchy--Schwarz in each variable.
-::: proof
+::: {.proof}
 Cauchy--Schwarz gives
 \[
 \int_1^\infty e^{-x}f(x)\,dx

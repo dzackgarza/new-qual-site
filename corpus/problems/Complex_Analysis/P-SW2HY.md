@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $n$ be a natural number.
 Show that
 
@@ -25,7 +25,7 @@ $$
 is equal to 2 if $n$ is a multiple of 3 , and it is equal to $-1$ otherwise.
 :::
 
-::: solution
+::: {.solution}
 The two numbers are
 \[
 \frac{-1+\sqrt3\,i}{2}=e^{2\pi i/3},

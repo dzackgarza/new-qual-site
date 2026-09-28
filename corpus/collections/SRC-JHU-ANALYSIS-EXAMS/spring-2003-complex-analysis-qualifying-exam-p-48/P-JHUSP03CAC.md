@@ -24,6 +24,7 @@ audit:
   note: "Converted the two integrals into first and second power sums with multiplicity, used Re(z)>1 in the region to force exactly two zeros, and solved their quadratic from the two moments."
 ---
 
+::: {.problem}
 Let $C$ be the closed curve defined by two pieces: the first piece is given by the set of all $z$ satisfying $|z - 1| = 3$ and $\operatorname{Re}(z - 1) \geq 0$.
 The second piece is the straight line segment from $1 + 3i$ to $1 - 3i$.
 Orient $C$ in the counterclockwise direction, and let $\Omega$ be the region enclosed by $C$.
@@ -33,16 +34,16 @@ Suppose also that:
 $$\frac{1}{2\pi i} \int_C \frac{zf'(z)}{f(z)} \, dz = 3 \qquad \text{and} \qquad \frac{1}{2\pi i} \int_C \frac{z^2 f'(z)}{f(z)} \, dz = \frac{5}{2}.$$
 
 Determine all the zeros of $f$ in $\Omega$ explicitly.
+:::
 
-
-::: solution
+::: {.solution}
 The zeros in $\Omega$, counted with multiplicity, are
 $$
 \boxed{\frac32+i\quad\text{and}\quad\frac32-i}.
 $$
 
 <1>1. The two contour integrals are the first two power sums of the zeros.
-::: proof
+::: {.proof}
 Let the zeros of $f$ in $\Omega$, repeated according to multiplicity, be
 $\zeta_1,\dots,\zeta_N$. There are finitely many because $f$ is holomorphic on
 a neighborhood of $\overline\Omega$, has no zero on $C$, and is not identically
@@ -63,7 +64,7 @@ $$
 :::
 
 <1>2. The geometry of $\Omega$ forces $N=2$.
-::: proof
+::: {.proof}
 The contour consists of the right semicircle centered at $1$ of radius $3$
 and the vertical segment from $1+3i$ to $1-3i$. Thus every point of the
 interior $\Omega$ satisfies
@@ -79,7 +80,7 @@ the second would give $\zeta_1^2=9$, contradicting $5/2$. Thus $N=2$.
 :::
 
 <1>3. The two power sums determine the two zeros uniquely.
-::: proof
+::: {.proof}
 Let the two zeros be $\zeta_1,\zeta_2$. Then
 $$
 \zeta_1+\zeta_2=3,

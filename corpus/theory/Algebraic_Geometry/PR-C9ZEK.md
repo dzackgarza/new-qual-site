@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-C9ZEK
 kind: proposition
 title: Exactness is checked on stalks, and global sections are only left exact
+slogan: 'Sheaf exactness is stalkwise; global sections preserve kernels but can lose surjectivity.'
 classification:
   areas:
   - algebraic-geometry
@@ -38,5 +39,5 @@ Surjectivity of $\mcg \to \mch$ means every germ lifts, which is a statement abo
 A global section of $\mch$ therefore lifts over each member of some cover, and the lifts need not agree on overlaps.
 The obstruction to correcting them is a Čech $1$-cocycle, and it is $H^1(X, \mcf)$ that measures whether it can be corrected.
 
-This is the whole motivation for sheaf cohomology, and the correct answer to "where exactly does that fail" is: at the overlaps, and the failure is measured by $H^1$ of the kernel.
+The failure occurs on overlaps: local lifts differ by a Čech $1$-cocycle in the kernel, and its class in $H^1(X,\mcf)$ is the obstruction to gluing them to a global lift.
 :::

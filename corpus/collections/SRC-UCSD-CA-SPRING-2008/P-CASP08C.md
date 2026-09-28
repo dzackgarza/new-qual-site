@@ -12,12 +12,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose that $f_j \to f$ in $H(\{\operatorname{Im} z > 0\})$, with each $f_j$ one-to-one.
 If $f$ is not constant, show that $f$ is one-to-one.
 :::
 
-::: solution
+::: {.solution}
 Fix distinct $a,b$ in the upper half-plane. For every $j$, injectivity gives
 \[
 f_j(z)-f_j(a)\ne0\qquad(z\ne a).

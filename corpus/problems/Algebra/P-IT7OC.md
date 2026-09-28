@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite group and let $H \le G$ be a subgroup.
 Prove that if $H$ meets every conjugacy class of $G$ (i.e. $\bigcup_{g \in G} g H g^{-1} = G$), then $H = G$ (Jordan's Theorem on permutation groups).
 :::
 
-::: solution
+::: {.solution}
 Suppose $H<G$ is proper and put $n=[G:H]\ge2$. Let $k$ be the number of distinct conjugates of $H$. Since
 \[
 k=[G:N_G(H)]\le [G:H]=n,

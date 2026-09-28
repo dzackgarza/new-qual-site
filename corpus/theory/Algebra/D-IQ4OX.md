@@ -14,11 +14,12 @@ review: draft
 ---
 
 ::: {.definition}
-A subset $H\subseteq G$ is a **subgroup** iff
+Let $G$ be a group with identity $e$.
+A subset $H\subseteq G$ is a \dfn{subgroup} of $G$ if
 
-1. Closure: $HH \subset H$
+1. $gh\in H$ for all $g,h\in H$;
 
-2. Identity: $e\in H$
+2. $e\in H$;
 
-3. Inverses: $g\in H \iff g\inv \in H$.
+3. $g^{-1} \in H$ for all $g\in H$.
 :::

@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $\phi:G_1\to G_2$ be a group homomorphism and let $H_2\le G_2$. Put
 \[
 H_1=\phi^{-1}(H_2).

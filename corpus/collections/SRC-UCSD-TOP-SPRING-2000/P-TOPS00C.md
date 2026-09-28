@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Compute the cohomology ring of $\mathbb{CP}^3 \times \mathbb{RP}^2$.
 :::
 

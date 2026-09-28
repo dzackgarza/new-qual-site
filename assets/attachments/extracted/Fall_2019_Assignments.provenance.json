@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Fall_2019_Assignments.pdf",
+  "source_pdf_sha256": "a001afd3049210e5c42de1946d5118718abc50bd3a9e32c91216e49d0435aec4",
+  "extracted_markdown": "assets/attachments/extracted/Fall_2019_Assignments.md",
+  "extracted_markdown_sha256": "97c77a80fee25c99b3e2693576c5e1e4bd785d05d5839870b666ceb945da957f",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 16,
+  "command": "just ocr-pdf assets/attachments/Fall_2019_Assignments.pdf assets/attachments/extracted/Fall_2019_Assignments.md",
+  "generated_at": "2026-09-16"
+}

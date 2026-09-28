@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NORI-GT-4-04
 kind: problem
-title: Nori Galois theory problem 4.4
+title: $E(X)/F(X)$ has the same degree as $E/F$
 classification:
   areas: [algebra]
   topics: []

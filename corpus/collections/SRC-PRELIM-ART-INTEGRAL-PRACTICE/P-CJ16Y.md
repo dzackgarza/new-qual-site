@@ -21,7 +21,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Compute the following indefinite integrals:
 
 1. \(\displaystyle \int \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)\,dx\).
@@ -29,9 +29,9 @@ Compute the following indefinite integrals:
 3. \(\displaystyle \int 4\cos x\cos(2x)\sin(3x)\,dx\).
 :::
 
-::: solution
+::: {.solution}
 <1>1. Use product-to-sum.
-::: proof
+::: {.proof}
 \[
 \cos\!\left(x+\frac\pi4\right)\cos\!\left(x-\frac\pi4\right)
 =\frac12\left(\cos(2x)+\cos\frac\pi2\right)
@@ -45,7 +45,7 @@ Hence
 :::
 
 <1>2. Use product-to-sum again.
-::: proof
+::: {.proof}
 \[
 \sin(4x)\cos(3x)=\frac12\bigl(\sin(7x)+\sin x\bigr).
 \]
@@ -57,7 +57,7 @@ Therefore
 :::
 
 <1>3. Reduce the triple product.
-::: proof
+::: {.proof}
 Since
 \[
 2\cos x\cos(2x)=\cos(3x)+\cos x,

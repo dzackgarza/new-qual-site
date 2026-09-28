@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRECALC2-09
 kind: problem
-title: 'Preliminary calculus practice Week 2: Calculus II, Part 1 problem 9'
+title: Integral of $\frac{\log t}{1+t^2}$ over $(0,\infty)$
 classification:
   areas:
   - prelim

@@ -16,6 +16,7 @@ relations:
 review: draft
 prompts:
 - Give a surjection of sheaves which is not surjective on global sections.
+- On $\PP^1$, find the cokernel of a map $\OO(-2) \to \OO$.
 ---
 
 ::: {.example}
@@ -29,8 +30,14 @@ On global sections it is the map $k \to k^2$ sending a constant $c$ to $(c,c)$, 
 The cokernel is one-dimensional, and indeed $H^1(\PP^1, \OO(-2)) \cong k$.
 :::
 
+::: {.example}
+A nonzero map $\OO_{\PP^1}(-2) \to \OO_{\PP^1}$ is multiplication by a nonzero section $s \in H^0(\OO(2))$, whose zero scheme $Z$ has degree $2$.
+Its cokernel is $\OO_Z$: either $\OO_p \oplus \OO_q$ when $s$ has two distinct zeros $p, q$, as above, or $\OO_{\PP^1,p}/\mfm_p^2$, of length $2$ at $p$, when $s$ vanishes to order $2$ at $p$.
+In both cases $H^0$ of the cokernel is $2$-dimensional.
+:::
+
 ::: {.remark}
-The example makes the failure numerical rather than atmospheric: the sequence fails to be right exact on sections by exactly the dimension that $H^1$ of the kernel predicts.
+The example makes the failure numerical: right exactness on global sections fails by exactly the dimension of $H^1$ of the kernel.
 
 The same shape recurs as the classical exponential sequence on a complex manifold, where the failure of $\OO \to \OO^*$ on sections is the existence of line bundles, and $H^1(X,\OO^*) = \Pic(X)$.
 :::

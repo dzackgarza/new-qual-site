@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f \in L^2(\mathbb{R}^n)$ be such that $f(x) = 0$ for a.e. $x \in \mathbb{R}^n \setminus A$, where $m(A) < \infty$.
 Show that, for any measurable $E \subset \mathbb{R}^n$,
 $$
@@ -31,7 +31,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 Since $f=0$ almost everywhere outside $A$ and $m(A)<\infty$, Cauchy--Schwarz gives
 \[
 \|f\|_1

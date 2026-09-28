@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 (1) Let $f \in C(\mathbb{R})$ with $f(0) = 1$.
 Calculate with justification the limit $\lim_{k \to \infty} \int_0^\pi f(\sin^k x)\,dx$.
 
@@ -37,9 +37,9 @@ Assume $g_k \to g$ weakly in $L^1(m)$.
 Prove that $\partial^\alpha g_k \to \partial^\alpha g$ in $\mathcal{D}'(\mathbb{R}^n)$ for any multi-index $\alpha$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Evaluate the limit in part (1).
-::: proof
+::: {.proof}
 For every $x\in[0,\pi]$ except $x=\pi/2$,
 \[
 0\le \sin x<1,
@@ -67,7 +67,7 @@ for every $k$ and every $x\in[0,\pi]$. By dominated convergence,
 :::
 
 <1>2. Prove preservation of convergence in measure under $F$.
-::: proof
+::: {.proof}
 Fix $\varepsilon>0$. Since $F$ is uniformly continuous, there exists $\delta>0$ such that
 \[
 |u-v|<\delta
@@ -94,7 +94,7 @@ Thus
 :::
 
 <1>3. Pass weak $L^1$ convergence to distributional derivatives.
-::: proof
+::: {.proof}
 Let $\varphi\in C_c^\infty(\mathbb R^n)$. By definition of distributional derivatives,
 \[
 \langle \partial^\alpha g_k,\varphi\rangle

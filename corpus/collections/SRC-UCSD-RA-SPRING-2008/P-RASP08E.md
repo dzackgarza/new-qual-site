@@ -23,7 +23,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Let $F : \mathbb{C} \to \mathbb{C}$ be a bounded Borel measurable function, and $y_0 \in \mathbb{C}$.
 Define a sequence of functions $f_n : [0,1] \to \mathbb{C}$ by the recursion $f_0(x) \equiv y_0$ and
 $$
@@ -33,9 +33,9 @@ Show that $f_n \in C([0,1])$, and there are $f \in C([0,1])$ and a subsequence $
 :::
 
 
-::: solution
+::: {.solution}
 <1>1. Show inductively that every $f_n$ is well defined and continuous.
-::: proof
+::: {.proof}
 Let
 \[
 M:=\sup_{z\in\mathbb C}|F(z)|<\infty.
@@ -53,7 +53,7 @@ is well defined for every $x\in[0,1]$. In fact $f_{n+1}$ is absolutely continuou
 :::
 
 <1>2. Establish uniform boundedness and equicontinuity.
-::: proof
+::: {.proof}
 For $n\ge0$ and $x\in[0,1]$,
 \[
 |f_{n+1}(x)|
@@ -74,7 +74,7 @@ Hence the family is equi-Lipschitz, and therefore equicontinuous.
 :::
 
 <1>3. Apply Arzelà--Ascoli.
-::: proof
+::: {.proof}
 The interval $[0,1]$ is compact. By Step 2, the sequence $(f_n)_{n\ge1}$ is uniformly bounded and equicontinuous. The Arzelà--Ascoli theorem therefore gives a subsequence $(f_{n_k})$ and a continuous function $f\in C([0,1])$ such that
 \[
 \|f_{n_k}-f\|_\infty\longrightarrow0.

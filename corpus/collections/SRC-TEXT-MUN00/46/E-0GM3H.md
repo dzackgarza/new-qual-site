@@ -36,7 +36,7 @@ We call it the fine topology.
 (d) Show that if $X$ is discrete, then $\mathcal{C}(X, Y) = Y^X$ and the fine and box topologies agree.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove the foundational properties of the fine topology on the function space $\mathcal{C}(X, Y)$ and compare it with the uniform and box topologies.
 
 <1>1. Part (a): The sets $\mathcal{B} = \{B(f, \delta) : f \in \mathcal{C}(X, Y), \delta \in \mathcal{C}(X, \mathbb{R}_+)\}$ form a basis.

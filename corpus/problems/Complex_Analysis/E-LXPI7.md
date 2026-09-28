@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Determine a function with
 
 - An essential singularity at $z=1$
@@ -26,7 +26,7 @@ Determine a function with
 
 :::
 
-:::{.solution}
+::: {.solution}
 Note that writing a single function for each singularity and taking a product *might* work, except that there may be unforeseen cancellation of zeros of one with poles of another, or some might become removable.
 A surefire way is to take a sum, e.g. 
 \[

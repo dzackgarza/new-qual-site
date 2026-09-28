@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERIES-A2-12
 kind: problem
-title: Sequences and series Assignment 2, problem 12
+title: Epsilon-delta continuity of $x^n$ and $x^{1/n}$
 classification:
   areas:
   - real-analysis

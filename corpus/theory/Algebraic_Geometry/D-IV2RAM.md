@@ -21,11 +21,13 @@ prompts:
 - What is the difference between tame and wild ramification?
 - What is the length of $(\Omega_{X/Y})_p$, and how does it depend on that difference?
 - Give a wildly ramified map and compute its ramification divisor.
+- What is the ramification divisor of a morphism of smooth projective curves?
+- What are the branch points and the branch locus?
 ---
 
 ::: {.definition title="Ramification index"}
 Let $f : X \to Y$ be a finite morphism of curves, $p \in X$, $q = f(p)$, and $t$ a uniformizer of the discrete valuation ring $\OO_{Y,q}$.
-The **ramification index** is
+The \dfn{ramification index} is
 \[
 e_p \definedas v_p(f^\sharp t) ,
 \]
@@ -33,9 +35,27 @@ the valuation at $p$ of the pulled-back uniformizer.
 $f$ is **ramified** at $p$ if $e_p > 1$ and **unramified** there if $e_p = 1$; the image $q$ of a ramification point is a **branch point**.
 :::
 
+::: {.definition title="Pullback of divisors"}
+For $f : X \to Y$ a finite morphism of nonsingular curves, $f^* : \operatorname{Div} Y \to \operatorname{Div} X$ is the homomorphism with
+\[
+f^* q = \sum_{p \in f^{-1}(q)} e_p \, p .
+\]
+It preserves linear equivalence and satisfies $f^* \mcl(D) \cong \mcl(f^* D)$, so it induces $f^* : \Pic Y \to \Pic X$, and $\deg f^* D = \deg f \cdot \deg D$.
+[@Har10a, §IV.2, Proposition II.6.9, Exercise II.6.8]
+:::
+
+::: {.definition title="Ramification divisor and branch locus"}
+For $f \colon X \to Y$ a finite separable morphism of smooth projective curves, the \dfn{ramification divisor} is
+\[
+R = \sum_{p \in X} \length (\Omega_{X/Y})_p \cdot p ,
+\]
+which is $\sum_p (e_p - 1)\, p$ when all ramification is tame.
+The \dfn{branch locus} is the finite set $f(\supp R)$ of branch points, and the \dfn{branch divisor} is the pushforward $f_* R = \sum_p \length(\Omega_{X/Y})_p \cdot f(p)$.
+:::
+
 ::: {.definition title="Tame and wild"}
 Let $\characteristic k = p_0$.
-The ramification at $p$ is **tame** if $p_0 \nmid e_p$, and **wild** if $p_0 \mid e_p$.
+The ramification at $p$ is \dfn{tame} if $p_0 \nmid e_p$, and **wild** if $p_0 \mid e_p$.
 In characteristic $0$ all ramification is tame.
 :::
 
@@ -70,8 +90,8 @@ Riemann--Hurwitz confirms it: $-2 = p_0 \cdot (-2) + \deg R$ forces $\deg R = 2p
 
 ::: {.remark title="Why this is the notion Riemann--Hurwitz needs"}
 [[T-LKT0U]] is stated with $\deg R = \sum_p \length (\Omega_{X/Y})_p$ and only becomes $\sum_p (e_p - 1)$ under tameness, and the word "tame" in that statement is defined here.
-Wild ramification makes $\deg R$ larger than $\sum_p(e_p-1)$, hence makes $g(X)$ larger than the value given by the tame formula.
-The example above is direct evidence, since a degree-$p_0$ self-map of $\PP^1$ with one branch point is impossible under the tame formula.
+The formula $\length(\Omega_{X/Y})_p=e_p-1$ is the tame special case; wild ramification makes the local length strictly larger, hence increases $\deg R$ and the genus contribution in Riemann--Hurwitz.
+The example above is the cleanest evidence, since a degree-$p_0$ self-map of $\PP^1$ with one branch point is impossible under the tame formula.
 
 The unramified condition $e_p = 1$ for all $p$ is the same one appearing in [[D-MORUNR]], and for curves it upgrades to étale for free, since a nonconstant morphism of smooth curves is automatically flat.
 :::

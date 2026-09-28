@@ -2,17 +2,22 @@
 schema: qual/card@1
 id: P-CH10A-1
 kind: problem
-title: Chapter 10A exercise 1
+title: The determinant is a homomorphism $GL(2,\mathbb R)\to\mathbb R^*$
 classification:
   areas:
   - algebra
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: claude-opus-5
+  date: 2026-09-16
+  note: Stated the Example 2 map (determinant on GL(2,R)) in the statement, taken from the source's own solution on page 1 of Ch10PtASltns.pdf.
 ---
 
 ::: {.problem}
-Prove that the mapping given in Example 2 is a homomorphism.
+Prove that the mapping given in Example 2, the map $\phi : GL(2, \mathbb{R}) \to \mathbb{R}^*$ defined by $A \mapsto \det(A)$, is a homomorphism.
 :::
 
 ::: {.solution}

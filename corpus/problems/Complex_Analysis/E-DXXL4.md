@@ -25,7 +25,7 @@ audit:
 Prove the Heine–Cantor Theorem: let $(X, d_X)$ and $(Y, d_Y)$ be metric spaces. If $X$ is compact and $f: X \to Y$ is continuous, then $f$ is uniformly continuous.
 :::
 
-::: solution
+::: {.solution}
 Fix $\varepsilon>0$. For each $p\in X$, continuity gives $r_p>0$ such that
 \[
 d_X(x,p)<r_p

@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 6. Show that
 
 $$
@@ -25,7 +25,7 @@ $$
 where $\gamma$ is Euler’s constant.
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 H_n=1+\frac12+\cdots+\frac1n.
@@ -46,7 +46,7 @@ H_m=\log m+\gamma+o(1),
 \]
 we obtain
 \[
-\log(2n)+\gamma-rac12(\log n+\gamma)-\frac12\log n+o(1)
+\log(2n)+\gamma-\frac12(\log n+\gamma)-\frac12\log n+o(1)
 =\log2+\frac\gamma2+o(1).
 \]
 Therefore

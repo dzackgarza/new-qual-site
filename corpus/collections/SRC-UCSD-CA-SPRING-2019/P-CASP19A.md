@@ -17,7 +17,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be an entire function.
 Assume $|f| \leq \log(|f| + 2)$ on $\mathbb{C}$.
 Prove $f$ is constant.

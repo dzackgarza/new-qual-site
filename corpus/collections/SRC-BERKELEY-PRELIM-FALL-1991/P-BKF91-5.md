@@ -1,0 +1,84 @@
+---
+schema: qual/card@1
+id: P-BKF91-5
+kind: problem
+title: Repeated Rolle's theorem from a high-order zero at the origin
+classification: {areas: [prelim], topics: []}
+relations: []
+review: draft
+audit:
+- event: source-checked
+  by: gpt-5.6-sol
+  date: 2026-09-13
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: >-
+    Iterated Rolle's theorem between the prescribed derivative zeros at zero
+    and successively produced interior zeros.
+---
+
+::: {.problem}
+Let $f:\mathbb R\to\mathbb R$ be infinitely differentiable. Suppose that, for some positive integer $n$,
+\[
+f(1)=f(0)=f'(0)=f''(0)=\cdots=f^{(n)}(0)=0.
+\]
+Prove that $f^{(n+1)}(x)=0$ for some $x\in(0,1)$.
+:::
+
+::: {.solution}
+<1>1. There exists $x_1\in(0,1)$ such that
+$$
+f'(x_1)=0.
+$$
+
+::: {.proof}
+The hypotheses give $f(0)=f(1)=0$. Rolle's theorem applied to $f$ on $[0,1]$ gives such a point $x_1$.
+:::
+
+<1>2. Suppose $1\le k\le n$ and there exists $x_k\in(0,1)$ such that
+$$
+f^{(k)}(x_k)=0.
+$$
+Then there exists $x_{k+1}\in(0,x_k)$ such that
+$$
+f^{(k+1)}(x_{k+1})=0.
+$$
+
+::: {.proof}
+By hypothesis,
+$$
+f^{(k)}(0)=0,
+$$
+and by assumption $f^{(k)}(x_k)=0$. Rolle's theorem applied to $f^{(k)}$ on $[0,x_k]$ gives a point $x_{k+1}\in(0,x_k)$ with
+$$
+(f^{(k)})'(x_{k+1})=f^{(k+1)}(x_{k+1})=0.
+$$
+:::
+
+<1>3. There exists $x_{n+1}\in(0,1)$ such that
+$$
+f^{(n+1)}(x_{n+1})=0.
+$$
+
+::: {.proof}
+Step <1>1 supplies $x_1$. Apply step <1>2 successively for
+$$
+k=1,2,\ldots,n.
+$$
+This produces
+$$
+0<x_{n+1}<x_n<\cdots<x_1<1
+$$
+and $f^{(n+1)}(x_{n+1})=0$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 gives the required point in $(0,1)$.
+:::
+:::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 The infinite hexagonal lattice forms a covering space of the theta graph, as shown.
 What is the group of deck translations (covering automorphisms) of the covering?
 :::

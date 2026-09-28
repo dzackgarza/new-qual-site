@@ -24,7 +24,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 Let $\rho: G \to \operatorname{GL}(V)$ be a representation of the finite group $G$.
 
 (a) Show that the map $\hat{\rho}: g \in G \mapsto \rho(g^{-1})^t$ defines a representation, where $t$ means the transpose of a matrix.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex components, and $x^H$ denotes the Hermitian transpose of a vector or matrix $x$.
 
 (a) State, but do not prove, the Schur decomposition theorem for a matrix $A \in M_n$.
@@ -31,7 +31,7 @@ A
 (c) Hence prove that the angle $\theta$ between $x$ and $y$ satisfies $\sec \theta = \|y\|_2$.
 :::
 
-::: solution
+::: {.solution}
 (a) The Schur decomposition theorem states that for every $A\in M_n$ there is a unitary matrix $Q$ such that $Q^HAQ=T$ is upper triangular. The diagonal entries of $T$ are the eigenvalues of $A$, counted with algebraic multiplicity.
 
 (b) Put $N=A-\lambda I$. Since $\lambda$ is a simple eigenvalue, $\dim\ker N=1$ and the generalized $\lambda$-eigenspace has dimension $1$. Hence

@@ -17,7 +17,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Assume $\beta >0$, $a_n>0$, $n=1,2,\ldots$, and the series $\sum a_n$ is divergent.
 Show that $\displaystyle \sum \frac{a_n}{\beta + a_n}$ is also divergent.
 :::

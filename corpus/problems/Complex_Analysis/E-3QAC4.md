@@ -13,12 +13,12 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that if $f$ and $\bar{f}$ are both holomorphic on a domain $\Omega$, then $f$ is constant on $\Omega$.
 
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - Strategy: show $f'=0$.

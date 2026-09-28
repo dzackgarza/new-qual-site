@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 
 (a) Show that if $\pi(x) \in \mathbb{F}_p[x]$ is irreducible of degree $d$, then $\pi(x)$ divides $x^{p^d} - x$ in $\mathbb{F}_p[x]$.
@@ -23,7 +23,7 @@ Let $F = \mathbb{F}_p$, where $p$ is a prime number.
 (b) Show that if $\pi(x) \in \mathbb{F}_p[x]$ is an irreducible polynomial that divides $x^{p^n} - x$, then $\deg \pi(x)$ divides $n$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Prove that an irreducible polynomial of degree $d$ over $\mathbb{F}_p$ divides $x^{p^d} - x$ in (a), and that any irreducible factor of $x^{p^n} - x$ has degree dividing $n$ in (b).
 
 <1>1. Part (a): $\pi(x) \mid (x^{p^d} - x)$ for irreducible $\pi(x)$ of degree $d$.

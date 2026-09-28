@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-LR35S
 kind: proposition
-title: Top homology for manifolds
+title: Top homology of closed manifolds
+slogan: 'A closed connected manifold has top integral homology $\ZZ$ exactly when it is orientable.'
 classification:
   areas:
   - topology
@@ -15,13 +16,14 @@ review: draft
 ---
 
 ::: {.proposition}
-If $M^n$ is a closed connected manifold, then $H_n = \ZZ$ and $\tor(H_{n-1}) = 0$.
-More generally,
-\[
-\begin{cases}
-\ZZ & M^n \text{ is orientable } 
-\\
-0 & \text{else}.
+Let $M$ be a closed connected $n$-manifold.
+Then
+$$
+H_n(M;\ZZ) \cong \begin{cases}
+\ZZ & M \text{ orientable},\\
+0 & \text{otherwise},
 \end{cases}
-\]
+\qquad H_i(M;\ZZ) = 0 \text{ for } i > n
+$$
+[@Hat02], and the torsion subgroup of $H_{n-1}(M;\ZZ)$ is trivial if $M$ is orientable and $\ZZ/2$ otherwise [@Hat02].
 :::

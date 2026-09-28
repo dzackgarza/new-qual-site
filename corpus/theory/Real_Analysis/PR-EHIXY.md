@@ -2,8 +2,8 @@
 schema: qual/card@1
 id: PR-EHIXY
 kind: proposition
-title: $\sum\|f_k\|_1<\infty$ implies $\sum f_k$ converges almost everywhere and in
-  $L^1$
+title: Absolutely summable series in $L^1$ converge almost everywhere and in $L^1$
+slogan: 'Summable $L^1$ norms give absolute almost-everywhere convergence, $L^1$ convergence, and termwise integration.'
 classification:
   areas:
   - real-analysis
@@ -15,5 +15,11 @@ review: draft
 ---
 
 ::: {.proposition}
-If $f_k \in L^1$ and $\sum \norm{f_k}_1 < \infty$ then $\sum f_k$ converges almost everywhere and in $L^1$.
+Let $(X,\mcm,\mu)$ be a [[D-QYLPH|measure space]] and let $f_k\in L^1(\mu)$ for $k\geq1$ satisfy $\sum_{k=1}^\infty \norm{f_k}_1 < \infty$.
+Then $\sum_{k=1}^\infty f_k(x)$ converges absolutely for $\mu$-almost every $x\in X$, its sum $F$ lies in $L^1(\mu)$, and
+$$
+\norm{F-\sum_{k=1}^N f_k}_1 \convergesto{N\to\infty} 0,
+\qquad
+\int_X F\dmu = \sum_{k=1}^\infty \int_X f_k\dmu .
+$$
 :::

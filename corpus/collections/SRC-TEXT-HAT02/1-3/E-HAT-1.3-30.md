@@ -24,8 +24,9 @@ audit:
   note: Described the Cayley graph as the 3-regular tree with bi-infinite a-lines and b-edges forming a perfect matching.
 ---
 
+::: {.problem}
 Draw the Cayley graph of the group $\mathbb{Z} * \mathbb{Z}_2 = \langle a, b \mid b^2 \rangle$.
-
+:::
 
 ::: {.solution}
 Let

@@ -21,13 +21,13 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be an analytic function on the open disk $B(0, 1 + \varepsilon)$ for some $\varepsilon > 0$.
 Assume that $|f(z)| < 1$ for all $|z| = 1$.
 Prove that there exists a **unique fixed point** $z_0 \in \mathbb{D}$ (i.e. $|z_0| < 1$ and $f(z_0) = z_0$).
 :::
 
-::: solution
+::: {.solution}
 Let
 \[
 g(z)=z-f(z).

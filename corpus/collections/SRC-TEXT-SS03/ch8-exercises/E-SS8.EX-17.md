@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 17. If $\psi _ { \alpha } ( z ) = ( \alpha - z ) / ( 1 - \overline { { \alpha } } z )$ for $| \alpha | < 1$ , prove that
 
 $$
@@ -27,7 +27,7 @@ where in the case $\alpha = 0$ the expression on the right is understood as the 
 [Hint: The first integral can be evaluated without a calculation. For the second, use polar coordinates, and for each fixed r use contour integration to evaluate the integral in θ.]
 :::
 
-::: solution
+::: {.solution}
 Let $r=|\alpha|$. Since
 \[
 \psi_\alpha'(z)

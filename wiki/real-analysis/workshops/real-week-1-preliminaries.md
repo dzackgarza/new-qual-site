@@ -1,9 +1,9 @@
 ---
 order: 19
-title: "Real Analysis Qual Prep Week 1: Preliminaries"
+title: "Real analysis qual prep week 1: preliminaries"
 ---
 
-# Real Analysis Qual Prep Week 1: Preliminaries
+# Real analysis qual prep week 1: preliminaries
 
 ## Topics
 
@@ -17,39 +17,39 @@ title: "Real Analysis Qual Prep Week 1: Preliminaries"
 
   - Uniform convergence
 
-  - The $M$-Test
+  - The Weierstrass $M$-test
 
-- Heine-Borel
+- The Heine--Borel theorem
 
 - Normed spaces
 
-- Series and sequences,
+- Series and sequences
 
   - Convergence
 
-  - Small tails,
+  - Small tails
 
-  - limsup and liminf,
+  - $\limsup$ and $\liminf$
 
   - Cauchy criteria for sums and integrals
 
 - Variation and bounded variation
 
-Things that don't explicitly appear in qual problems
+Background topics:
 
-- Baire category theorem,
+- The Baire category theorem
 
-- Nowhere density,
+- Nowhere dense sets
 
-- Basic inequalities (triangle, Cauchy-Schwarz)
+- The triangle and Cauchy--Schwarz inequalities
 
-- Concepts from Calculus
+- Calculus
 
   - Mean value theorem
 
   - Taylor expansion
 
-  - Taylor's remainder theorem
+  - Taylor's theorem with remainder
 
   - Intermediate value theorem
 
@@ -59,13 +59,13 @@ Things that don't explicitly appear in qual problems
 
   - Riemann integrability
 
-- Weierstrass approximation
+- The Weierstrass approximation theorem
 
-## Background / Warmup / Review
+## Review problems
 
 [[E-JY5OT]]
 
-### Metric Spaces / Topology
+### Metric spaces and topology
 
 [[P-65060]]
 
@@ -77,7 +77,7 @@ Things that don't explicitly appear in qual problems
 
 [[P-X1WOB]]
 
-### Continuity and Discontinuity
+### Continuity and discontinuity
 
 [[P-E33SA]]
 
@@ -85,6 +85,6 @@ Things that don't explicitly appear in qual problems
 
 [[E-GMYE2]]
 
-## Qual Questions
+## Qualifying exam problems
 
 [[P-4FH62]]

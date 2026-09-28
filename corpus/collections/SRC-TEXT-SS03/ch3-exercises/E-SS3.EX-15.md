@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 15. Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 
 (a) Prove that if f is an entire function that satisfies
@@ -34,7 +34,7 @@ Prove that there exists a point z on the unit circle such that the product of th
 (d) Show that if the real part of an entire function f is bounded, then f is constant.
 :::
 
-::: solution
+::: {.solution}
 (a) Write $f(z)=\sum_{n\ge0}a_nz^n$. Cauchy's estimate on $|z|=R$ gives
 \[
 |a_n|\le \frac{AR^k+B}{R^n}.

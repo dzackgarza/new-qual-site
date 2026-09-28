@@ -33,6 +33,4 @@ source:
     kind: unknown
 ---
 
-Exercises from Ravi Vakil's *The Rising Sea: Foundations of Algebraic Geometry*, from the opening chapter on categories and modules.
-They cover right exactness of the tensor product, extension of scalars, localization as a tensor product, and the basic formal properties of fiber products.
-Several of the recorded solutions stop short of a complete argument, and the gaps are kept where the author left them.
+Exercises from Ravi Vakil's *The Rising Sea: Foundations of Algebraic Geometry*, from the opening chapter on categories and modules: right exactness of the tensor product, extension of scalars, localization as a tensor product, and the basic formal properties of fibre products.

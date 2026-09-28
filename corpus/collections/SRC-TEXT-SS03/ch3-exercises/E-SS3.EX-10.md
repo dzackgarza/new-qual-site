@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 10. Show that if $a > 0$ , then
 
 $$
@@ -25,7 +25,7 @@ $$
 [Hint: Use the contour in Figure 10.]
 :::
 
-::: solution
+::: {.solution}
 Put $x=at$. Then
 \[
 I(a):=\int_0^\infty \frac{\log x}{x^2+a^2}\,dx

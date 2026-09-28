@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider a solid tetrahedron $ABCD$.
 The face $ABC$ is glued to $ABD$ by an affine map preserving the order of vertices (i.e. $A$ goes to $A$, $B$ goes to $B$, $C$ goes to $D$). Similarly, $BCD$ is glued to $ACD$.
 Compute the fundamental group of the resulting quotient space.

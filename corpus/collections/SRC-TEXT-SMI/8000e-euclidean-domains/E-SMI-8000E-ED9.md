@@ -31,11 +31,11 @@ Prove that if $a$ is a nonzero, nonunit element of a strongly Euclidean domain, 
 :::
 
 
-::: solution
+::: {.solution}
 Write $\delta(a)=\lvert a\rvert$ for the strongly Euclidean size.
 
 <1>1. Every nonzero nonunit factors into finitely many irreducibles.
-::: proof
+::: {.proof}
 We use induction on the positive integer $\delta(a)$. Since $a$ is a nonunit,
 the strong Euclidean hypothesis gives
 $$
@@ -61,7 +61,7 @@ gives one for $a$.
 :::
 
 <1>2. In any irreducible factorization of $a$, the sizes of successive partial products strictly increase.
-::: proof
+::: {.proof}
 Let
 $$
 a=p_1p_2\cdots p_r
@@ -85,7 +85,7 @@ $$
 :::
 
 <1>3. Bound the number of irreducible factors by $\lvert a\rvert$.
-::: proof
+::: {.proof}
 The numbers
 $$
 \delta(q_1),\ldots,\delta(q_r)

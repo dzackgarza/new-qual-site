@@ -1,0 +1,17 @@
+{
+  "source_pdf": "assets/attachments/Spring90.pdf",
+  "source_pdf_sha256": "a8546490c990b6e5b4edc90cd13a7e5aa0fd089d31a91ededbd3c5d6ccab391a",
+  "extracted_markdown": "assets/attachments/Spring90_extracted.md",
+  "extracted_markdown_sha256": "19e6e70d0619d195f353db6c24047fbc8a6f3cf83f0100a6f4f0b50733178cd3",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/Spring90.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/Spring90.md",
+  "old_unknown_provenance_sha256": "19e6e70d0619d195f353db6c24047fbc8a6f3cf83f0100a6f4f0b50733178cd3",
+  "old_unknown_provenance_byte_identical": true,
+  "source_identification": "UC Berkeley Preliminary Exam, Spring 1990, containing Problems 1 through 18 in source order; repository source lineage supplies the Berkeley attribution because the retained PDF omits the institution name.",
+  "card_reconciliation": "The existing complete SRC-BERKELEY-PRELIM-SPRING-1990 collection represents all 18 source positions in order with 18 source-local cards. The collection is already banked in HEAD, so no collection path is modified by this intake.",
+  "raw_control_bytes": 0
+}

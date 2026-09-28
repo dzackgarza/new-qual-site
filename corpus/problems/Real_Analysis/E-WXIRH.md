@@ -17,7 +17,7 @@ audit:
   date: 2026-08-17
 ---
 
-:::{.exercise}
+::: {.exercise}
 \[
 F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d y \\ 
 \implies

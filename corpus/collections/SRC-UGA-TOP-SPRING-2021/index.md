@@ -30,6 +30,3 @@ source:
     term: spring
     year: 2021
 ---
-
-::: remark
-:::

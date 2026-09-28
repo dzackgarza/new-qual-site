@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 State and prove the **Hilbert Basis Theorem**: if $R$ is a Noetherian ring, then the polynomial ring $R[x]$ is also Noetherian.
 :::
 
-::: solution
+::: {.solution}
 Let $R$ be Noetherian and let $I\subseteq R[x]$ be an ideal. For $d\ge0$, let $L_d\subseteq R$ be the ideal consisting of $0$ together with the leading coefficients of degree-$d$ elements of $I$. Then
 \[
 L_0\subseteq L_1\subseteq\cdots

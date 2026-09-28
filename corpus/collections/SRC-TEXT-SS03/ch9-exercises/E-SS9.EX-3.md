@@ -15,7 +15,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: exercise
+::: {.exercise}
 3. In contrast with the result in Lemma 1.5, prove that the series
 
 $$
@@ -30,7 +30,7 @@ $$
 $$
 :::
 
-::: solution
+::: {.solution}
 First consider the square lattice. For $p=(m,n)\in\mathbb Z^2\setminus\{0\}$, let $Q_p=p+[-1/2,1/2]^2$. For $|p|\ge2$ and $x\in Q_p$, the mean-value theorem applied to $r\mapsto r^{-2}$ gives
 \[
 \left|\frac1{|x|^2}-\frac1{|p|^2}\right|

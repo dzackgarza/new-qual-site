@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Use the Hurewicz theorem to calculate $\pi_2$ of the space $\mathbb{RP}^2 \vee S^2 \vee S^2$ (that is, the one-point union of a projective plane and two spheres).
 :::
 

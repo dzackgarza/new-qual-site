@@ -29,7 +29,7 @@ State the Sylow Theorems.
 Include information about the existence, order, and number $n_p$ of Sylow $p$-subgroups of a finite group, and mention additional divisibility and congruence properties of $n_p$.
 :::
 
-::: solution
+::: {.solution}
 Let $G$ be finite, let $p$ be prime, and write
 $|G|=p^a m$ with $a\geq0$ and $p\nmid m$.
 
@@ -48,7 +48,7 @@ n_p\equiv1\pmod p
 $$
 for any Sylow $p$-subgroup $P$.
 
-::: proof
+::: {.proof}
 Conjugation is transitive on the Sylow subgroups by step
 <1>1, and the stabilizer of $P$ is its normalizer
 $N_G(P)=\{g\in G:gPg^{-1}=P\}$. Orbit-stabilizer gives
@@ -72,7 +72,7 @@ counting orbits gives $n_p\equiv1\pmod p$.
 
 <1>3. A Sylow $p$-subgroup $P$ is normal exactly when $n_p=1$.
 
-::: proof
+::: {.proof}
 If $P$ is normal, its conjugacy orbit has one member;
 conjugacy in step <1>1 then implies that it is the only
 Sylow subgroup. Conversely, if it is unique, each conjugate

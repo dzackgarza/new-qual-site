@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-016
 kind: problem
-title: Kent State ring-theory qualifying problem 16
+title: Ideals of the matrix ring $M_n(R)$ are $M_n(I)$
 classification:
   areas: [algebra]
   topics: []

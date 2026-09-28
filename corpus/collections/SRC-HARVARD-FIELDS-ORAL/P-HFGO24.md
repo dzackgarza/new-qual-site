@@ -20,7 +20,7 @@ audit:
   date: 2026-09-10
 ---
 
-::: problem
+::: {.problem}
 Determine the Galois group of $x^8-1$ over $\mathbb Q$.
 :::
 

@@ -25,7 +25,7 @@ What space is indicated by each of the following labelling schemes for a collect
 (b) $abc$, $cba$, $def$, $dfe^{-1}$
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Identify the topological surfaces represented by each of the two triangular labeling schemes.
 
 <1>1. Part (a): Scheme $abc, dae, bef, cdf$.

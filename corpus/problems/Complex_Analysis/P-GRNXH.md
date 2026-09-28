@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Suppose $f$ is analytic on $\DD^\circ$.
 Determine with proof which of the following are possible:
 
@@ -27,7 +27,7 @@ c. $f\qty{1\over n^2} = {1\over n}$ for each integer $n>1$.
 d. $f\qty{1\over n} = {n-2 \over n-1}$ for each integer $n>1$.
 :::
 
-::: solution
+::: {.solution}
 The points $1/n$ and $1/n^2$ accumulate at $0\in\mathbb D$, so analyticity at
 $0$ strongly constrains all four cases.
 

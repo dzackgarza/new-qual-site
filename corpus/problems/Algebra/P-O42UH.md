@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Classify groups of order $21$ up to isomorphism.
 :::
 

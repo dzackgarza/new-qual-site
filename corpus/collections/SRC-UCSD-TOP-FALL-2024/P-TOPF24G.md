@@ -18,12 +18,12 @@ audit:
   date: 2026-08-30
 ---
 
-::: problem
+::: {.problem}
 What is the fundamental group of $X = \mathbb{RP}^3 \# \mathbb{RP}^3$?
 Give a description of the universal cover $\widetilde{X}$ of $X$ and use this to calculate $\pi_2(X)$.
 :::
 
-::: solution
+::: {.solution}
 **Goal:** Compute the fundamental group $\pi_1(X)$, describe the universal cover $\widetilde{X}$, and compute $\pi_2(X)$ for the connected sum $X = \mathbb{RP}^3 \# \mathbb{RP}^3$.
 
 <1>1. Computation of $\pi_1(X)$:

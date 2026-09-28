@@ -25,7 +25,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Give an ideal $I=\langle f_1,\ldots,f_t\rangle$ and a term order such that
 \[
 \operatorname{in}(I)\ne
@@ -33,7 +33,7 @@ Give an ideal $I=\langle f_1,\ldots,f_t\rangle$ and a term order such that
 \]
 :::
 
-::: solution
+::: {.solution}
 Work in $k[x,y]$ with lexicographic order $x\succ y$, and take
 \[
 I=\langle f_1,f_2\rangle,
@@ -47,7 +47,7 @@ f_2=x^2+x.
 \[
 \operatorname{in}(f_1)=\operatorname{in}(f_2)=x^2.
 \]
-::: proof
+::: {.proof}
 Under lexicographic order with $x\succ y$, the monomial $x^2$ is larger than
 both $x$ and $y$.
 :::
@@ -58,7 +58,7 @@ f_2-f_1=x-y,
 \qquad
 \operatorname{in}(x-y)=x.
 \]
-::: proof
+::: {.proof}
 Ideals are closed under subtraction, and $x\succ y$ in the chosen order.
 :::
 
@@ -67,7 +67,7 @@ Ideals are closed under subtraction, and $x\succ y$ in the chosen order.
 \operatorname{in}(I)\ne
 \langle \operatorname{in}(f_1),\operatorname{in}(f_2)\rangle.
 \]
-::: proof
+::: {.proof}
 By <1>2, $x\in\operatorname{in}(I)$. By <1>1,
 \[
 \langle \operatorname{in}(f_1),\operatorname{in}(f_2)\rangle=(x^2),

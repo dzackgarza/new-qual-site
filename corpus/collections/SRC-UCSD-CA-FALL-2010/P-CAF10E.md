@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $p(z)$ be a nonconstant polynomial and let $G$ be a connected component of the open set $\{z : |p(z)| < 1\}$.
 
 (a) Show that $p(z)$ must have at least one zero in $G$.
@@ -30,7 +30,7 @@ Show that:
 Moreover, if for some such $a$ we have equality in (ii), then $f(z) = cp(z)$ for some unimodular constant $c$.
 :::
 
-::: solution
+::: {.solution}
 Because $p$ is a nonconstant polynomial, $|p(z)|\to\infty$ as
 $|z|\to\infty$. Hence $\{|p|<1\}$, and therefore $G$, is bounded. Also
 \[

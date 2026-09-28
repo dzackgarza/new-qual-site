@@ -21,12 +21,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $G$ be a finite cyclic group, and let $r$ divide $|G|$.
 How many subgroups of order $r$ does $G$ have?
 :::
 
-::: solution
+::: {.solution}
 Exactly one.
 
 Write $G=\langle g\rangle$ with $|G|=n$, and suppose $r\mid n$.
@@ -36,7 +36,7 @@ Write $G=\langle g\rangle$ with $|G|=n$, and suppose $r\mid n$.
 H=\left\langle g^{n/r}\right\rangle
 \]
 has order $r$.
-::: proof
+::: {.proof}
 In a cyclic group of order $n$,
 \[
 |g^d|=\frac{n}{\gcd(n,d)}.
@@ -48,7 +48,7 @@ For $d=n/r$, this gives
 :::
 
 <1>2. Every subgroup of order $r$ equals $H$.
-::: proof
+::: {.proof}
 Every subgroup of a cyclic group is cyclic. Let $K\le G$ have order $r$.
 Then $K=\langle g^d\rangle$ for some divisor $d$ of $n$, and
 \[
@@ -62,7 +62,7 @@ K=\left\langle g^{n/r}\right\rangle=H.
 
 <1>3. Therefore a finite cyclic group has exactly one subgroup of each order
 dividing its order.
-::: proof
+::: {.proof}
 Existence is <1>1 and uniqueness is <1>2.
 :::
 :::

@@ -37,7 +37,7 @@ Can you prove that?
 :::
 
 
-::: solution
+::: {.solution}
 Write $H_n=(h_{ij})_{1\le i,j\le n}$ with
 \[
 h_{ij}=\frac1{i+j-1}.
@@ -61,7 +61,7 @@ one has
 \displaystyle\prod_{k\ne i}(y_i-y_k)
 }.
 \]
-::: proof
+::: {.proof}
 Fix $j$. Define
 \[
 R_j(z)=
@@ -112,7 +112,7 @@ Then
 \frac{(n+i-1)!(n+j-1)!}
 {(i+j-1)(i-1)!^2(j-1)!^2(n-i)!(n-j)!}.
 \]
-::: proof
+::: {.proof}
 In the formula of <1>1,
 \[
 \prod_{k=1}^n(x_j+y_k)=\frac{(n+j-1)!}{(j-1)!},
@@ -139,12 +139,12 @@ Since $(-1)^{2n-i-j}=(-1)^{i+j}$, substitution gives the displayed expression.
 \binom{n+j-1}{n-i}
 \binom{i+j-2}{i-1}^{\!2}.
 \]
-::: proof
+::: {.proof}
 Expanding the three binomial coefficients into factorials and cancelling gives exactly the expression in <1>2.
 :::
 
 <1>4. Hence $H_n$ is invertible and every entry of $H_n^{-1}$ is an integer.
-::: proof
+::: {.proof}
 The matrix in <1>3 is an inverse by <1>1--<1>3. Every factor in the formula of <1>3 is an integer, so every inverse entry is an integer.
 :::
 :::

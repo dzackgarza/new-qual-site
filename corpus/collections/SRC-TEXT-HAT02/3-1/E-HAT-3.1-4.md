@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-3.1-4
 kind: problem
-title: Hatcher Section 3.1 Exercise 4
+title: Homology defined by $\operatorname{Hom}(G,C_n(X))$
 classification:
   areas:
   - topology
@@ -24,10 +24,10 @@ audit:
   note: Verified the resolution and Hom-complex calculations directly from the definitions.
 ---
 
-# E-HAT-3.1-4
-
+::: {.problem}
 What happens if one defines homology groups $h_n(X; G)$ as the homology groups of the chain complex $\cdots \to \operatorname{Hom}(G, C_n(X)) \to \operatorname{Hom}(G, C_{n-1}(X)) \to \cdots$?
 More specifically, what are the groups $h_n(X; G)$ when $G = \mathbb{Z}$, $\mathbb{Z}_m$, and $\mathbb{Q}$?
+:::
 
 ::: {.solution}
 For a space $X$, each singular chain group $C_n(X)$ is a free abelian group. We compute

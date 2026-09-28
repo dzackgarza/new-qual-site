@@ -20,12 +20,12 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Assume $f(z)$ is analytic in a region $D$ and $\Gamma$ is a simple closed rectifiable curve in $D$ whose interior $\Omega$ is contained in $D$.
 Prove that if $f(z)$ is real-valued for all $z \in \Gamma$, then $f(z)$ is constant on $D$.
 :::
 
-::: solution
+::: {.solution}
 Write
 \[
 f=u+iv.

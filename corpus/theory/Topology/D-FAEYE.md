@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-FAEYE
 kind: definition
-title: Connected Components
+title: Connected components
 classification:
   areas:
   - topology
@@ -13,6 +13,15 @@ review: draft
 ---
 
 ::: {.definition}
-Set $x\sim y$ iff there exists a connected set $U\ni x, y$ and take equivalence classes.
-These classes are the **connected components** of $X$.
+Let $X$ be a topological space.
+For $x, y\in X$ write $x\sim y$ if there is a [[D-YO6NZ|connected]] subspace $C\subseteq X$ with $x, y\in C$.
+The equivalence classes of $\sim$ are the \dfn{connected components} of $X$.
+:::
+
+::: {.proposition}
+The relation $\sim$ is an equivalence relation on $X$.
+:::
+
+::: {.concept}
+See [@Mun00].
 :::

@@ -59,7 +59,7 @@ By part (a), \(\overline A\) and \(\overline{X-A}\) are disjoint. Also
 \[
 X=A\cup(X-A)
 \]
-is dense in \(eta X\), so
+is dense in \(\beta X\), so
 \[
 \beta X=\overline A\cup\overline{X-A}.
 \]
@@ -67,7 +67,7 @@ Thus
 \[
 \overline U=\overline A=\beta X-\overline{X-A},
 \]
-which is open. Hence \(eta X\) is extremally disconnected.
+which is open. Hence \(\beta X\) is extremally disconnected.
 
-(c) Let \(p\ne q\) in \(eta X\). Since \(eta X\) is compact Hausdorff, choose an open neighborhood \(U\) of \(p\) with \(q\notin\overline U\). By (b), \(\overline U\) is both open and closed. Thus \(p\) and \(q\) are separated by the clopen set \(\overline U\). Consequently every connected subset containing two distinct points is separated, so every connected component is a singleton. Hence \(eta X\) is totally disconnected.
+(c) Let \(p\ne q\) in \(\beta X\). Since \(\beta X\) is compact Hausdorff, choose an open neighborhood \(U\) of \(p\) with \(q\notin\overline U\). By (b), \(\overline U\) is both open and closed. Thus \(p\) and \(q\) are separated by the clopen set \(\overline U\). Consequently every connected subset containing two distinct points is separated, so every connected component is a singleton. Hence \(\beta X\) is totally disconnected.
 :::

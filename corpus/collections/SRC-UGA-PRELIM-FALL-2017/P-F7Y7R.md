@@ -17,7 +17,7 @@ audit:
   note: written with the restored problem statement, replacing an imported one
 ---
 
-::: problem
+::: {.problem}
 Negate the following statements without using the word “not.”
 
 1. For every real number $x$, there is a real number $y$ such that $|x-y|\geq2017$.
@@ -25,7 +25,7 @@ Negate the following statements without using the word “not.”
 2. The function $f:\mathbb R\to\mathbb R$ is continuous.
 :::
 
-::: solution
+::: {.solution}
 The first negation is:
 \[
 \text{There is an }x\in\mathbb R\text{ such that }|x-y|<2017

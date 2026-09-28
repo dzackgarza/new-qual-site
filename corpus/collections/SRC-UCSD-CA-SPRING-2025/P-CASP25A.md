@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f$ be a holomorphic function in a neighborhood of the closed unit disc $\overline{\mathbb{D}}$, and suppose that
 $$
 |f(0)| + |f'(0)| < \inf\{|f(z)| : |z| = 1\}.
@@ -24,7 +24,7 @@ Show that $f$ has at least two zeros (counting multiplicity) in $\mathbb{D}$.
 (Hint: Make use of the function $g(z) = f(0) + f'(0)z - f(z)$.)
 :::
 
-::: solution
+::: {.solution}
 Set
 \[
 g(z)=f(0)+f'(0)z-f(z).

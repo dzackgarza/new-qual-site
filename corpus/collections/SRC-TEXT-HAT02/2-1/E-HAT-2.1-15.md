@@ -25,8 +25,10 @@ audit:
   note: Applied exactness at B,C,D, then used consecutive five-term pieces of the long exact sequence of a pair.
 ---
 
+::: {.problem}
 For an exact sequence $A \to B \to C \to D \to E$ show that $C = 0$ iff the map $A \to B$ is surjective and $D \to E$ is injective.
 Hence for a pair of spaces $(X, A)$, the inclusion $A \hookrightarrow X$ induces isomorphisms on all homology groups iff $H_n(X, A) = 0$ for all $n$.
+:::
 
 ::: {.solution}
 Consider an exact sequence

@@ -9,9 +9,8 @@ topics:
 
 # Varieties
 
-The classical dictionary: radical ideals against closed subsets, and the correspondence that makes geometry into algebra.
-
-Questions here are concrete — is $\PP^1\times\PP^1$ projective, is the complement of a hypersurface in $\PP^2$ affine, do two plane curves meeting in infinitely many points share a factor — and they are asked because the answer has to come from a picture, not a citation.
+The classical dictionary identifies radical ideals with closed subsets and translates geometric questions into algebra.
+Concrete examples include deciding whether $\PP^1\times\PP^1$ is projective, whether the complement of a hypersurface in $\PP^2$ is affine, and whether two plane curves meeting in infinitely many points share a factor.
 
 Dimension, degree, and the Hilbert polynomial live here: what the leading term of $P_X(r)$ means, what its constant term means.
 

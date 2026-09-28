@@ -16,7 +16,7 @@ audit:
   date: 2026-09-11
 ---
 
-::: problem
+::: {.problem}
 Show that there are no natural numbers $x,y\ge1$ such that
 \[
 x^2+y^2=7xy.

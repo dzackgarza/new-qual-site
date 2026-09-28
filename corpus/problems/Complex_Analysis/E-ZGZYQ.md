@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Compute
 \[
 I_1 \da \operatorname{PV}\int_\RR {\sin(x) \over x}\dx = \pi \\
@@ -24,7 +24,7 @@ I_2 \da \operatorname{PV}\int_\RR {\cos(x) \over x}\dx = 0
 
 :::
 
-:::{.solution}
+::: {.solution}
 Take $\Gamma$ an upper-half-plane semicircular contour indented at the origin; considering $f(z) = e^{iz}$, by Jordan's lemma $\int_{C_R}f \to 0$ and the pieces along $\RR$ converge to $\PV \int f$.
 The singularity at $z_0 = 0$ contributes a fractional residue:
 \[

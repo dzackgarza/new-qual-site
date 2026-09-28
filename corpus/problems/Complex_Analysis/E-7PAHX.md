@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root of
 $Q$.
 Find the principal part of $P/Q$ at $z=a$ in terms of $P$ and $Q$ if $a$ is 
@@ -25,7 +25,7 @@ Find the principal part of $P/Q$ at $z=a$ in terms of $P$ and $Q$ if $a$ is
 
 :::
 
-:::{.solution}
+::: {.solution}
 Write 
 \[
 P(z) &= \prod_{k\leq n} (z-a_k) \\

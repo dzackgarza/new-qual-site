@@ -22,7 +22,7 @@ audit:
   date: 2026-09-08
 ---
 
-::: problem
+::: {.problem}
 Classify up to isomorphism all groups $G$ of order 56 with the property that all Sylow subgroups of $G$ are cyclic.
 Write down a presentation for each group you find.
 :::

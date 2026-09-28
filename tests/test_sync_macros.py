@@ -1,7 +1,8 @@
 r"""Reading the author's preamble the way LaTeX reads it.
 
-Every line of the fixture below is copied from
-`/home/dzack/Dropbox/pandoc/custom`, and each one stands for a macro the
+The fixture has the shape of pandoc-config's `styles/dzg-macros.sty`, which
+`\input`s its tiers from `styles/macros/` through `TEXINPUTS`. Each line stands
+for a macro the
 previous sync got wrong: `\too` was frozen at its first definition and took an
 argument the corpus never gives it, `\qty` and `\one` were invisible because
 they live in a file `latexmacs*.tex` does not glob, `\Aut` and the 62 other
@@ -15,6 +16,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
 from sync_macros import definitions, preamble_text
 
 LATEXMACS = r"""
@@ -40,15 +42,17 @@ PREAMBLE = r"""
 """
 
 
-def fixture(tmp_path: Path) -> Path:
-    (tmp_path / "latexmacs.tex").write_text(LATEXMACS)
-    (tmp_path / "preamble_common.tex").write_text(PREAMBLE_COMMON)
-    (tmp_path / "preamble.tex").write_text(PREAMBLE)
-    return tmp_path / "preamble.tex"
+def fixture(tmp_path: Path) -> tuple[Path, tuple[Path, ...]]:
+    macros = tmp_path / "macros"
+    macros.mkdir()
+    (macros / "latexmacs.tex").write_text(LATEXMACS)
+    (macros / "preamble_common.tex").write_text(PREAMBLE_COMMON)
+    (tmp_path / "dzg-macros.sty").write_text(PREAMBLE)
+    return tmp_path / "dzg-macros.sty", (macros,)
 
 
 def test_the_preamble_is_read_as_latex_reads_it(tmp_path: Path) -> None:
-    defined = definitions(preamble_text(fixture(tmp_path)))
+    defined = definitions(preamble_text(*fixture(tmp_path)))
 
     # `\renewcommand` is a definition and it comes last, so it is the one that
     # survives -- with no argument, which is how all 57 corpus sites write it.
@@ -68,3 +72,11 @@ def test_the_preamble_is_read_as_latex_reads_it(tmp_path: Path) -> None:
     # corpus uses two of them, so reading only `\newcommand` left them undefined
     # and MathJax printed `\falling{2n}{n}` as its own source.
     assert defined["falling"] == r" \qty{#1}_{ (#2) }"
+
+
+def test_an_input_on_no_search_path_is_an_error(tmp_path: Path) -> None:
+    entry = tmp_path / "dzg-macros.sty"
+    entry.write_text("\\input{tier1-mathjax-simple}\n")
+
+    with pytest.raises(FileNotFoundError):
+        preamble_text(entry, (tmp_path / "macros",))

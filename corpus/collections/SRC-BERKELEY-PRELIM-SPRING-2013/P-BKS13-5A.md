@@ -2,13 +2,25 @@
 schema: qual/card@1
 id: P-BKS13-5A
 kind: problem
-title: Berkeley Spring 2013 prelim problem 5A
+title: A trigonometric polynomial exceeds its constant term in modulus
 classification:
   areas:
   - prelim
   topics: []
 relations: []
 review: draft
+audit:
+- event: source-checked
+  by: chatgpt
+  date: 2026-09-25
+  note: Compared the authored statement with page 2 of the retained Spring 2013 solution PDF and independently reviewed the maximum-modulus argument.
+- event: solution-written
+  by: chatgpt
+  date: 2026-09-25
+- event: solution-reviewed
+  by: chatgpt
+  date: 2026-09-25
+  note: Independently checked the boundary identification with the polynomial g and the interior-maximum contradiction.
 ---
 
 ::: {.problem}
@@ -19,4 +31,106 @@ f ( \theta ) = a _ { 0 } + a _ { 1 } e ^ { i \theta } + a _ { 2 } e ^ { 2 i \the
 $$
 
 Prove that there exists $\theta \in \mathbf { R }$ such that $| f ( \theta ) | > | a _ { 0 } |$
+:::
+
+::: {.solution}
+Define the polynomial
+$$
+g(z)
+\coloneqq
+a_0+a_1z+\cdots+a_nz^n.
+$$
+
+<1>1. For every real $\theta$,
+$$
+f(\theta)=g(e^{i\theta}).
+$$
+
+::: {.proof}
+Substituting
+$$
+z=e^{i\theta}
+$$
+into the definition of $g$ gives
+$$
+g(e^{i\theta})
+=
+a_0+a_1e^{i\theta}+\cdots+a_ne^{ni\theta}
+=
+f(\theta).
+$$
+:::
+
+<1>2. Suppose, for contradiction, that
+$$
+\abs{f(\theta)}
+\leq
+\abs{a_0}
+$$
+for every $\theta\in\RR$. Then
+$$
+\abs{g(z)}
+\leq
+\abs{a_0}
+$$
+for every $z$ with $\abs{z}\leq1$.
+
+::: {.proof}
+By step <1>1, the assumed inequality says
+$$
+\abs{g(z)}
+\leq
+\abs{a_0}
+$$
+for every point $z$ of the unit circle. Since $g$ is holomorphic on a
+neighborhood of the closed unit disk, the maximum modulus theorem gives
+the same bound throughout the disk.
+:::
+
+<1>3. Under the assumption of step <1>2, the polynomial $g$ is constant.
+
+::: {.proof}
+At the interior point $z=0$,
+$$
+\abs{g(0)}
+=
+\abs{a_0}.
+$$
+Thus the upper bound from step <1>2 is attained at an interior point.
+The maximum modulus principle therefore implies that $g$ is constant on
+the unit disk, and hence everywhere as a polynomial.
+:::
+
+<1>4. The assumption in step <1>2 is impossible.
+
+::: {.proof}
+If $g$ were constant, every coefficient of positive degree would vanish.
+In particular,
+$$
+a_n=0,
+$$
+contradicting the hypothesis.
+:::
+
+<1>5. Therefore there exists
+$$
+\boxed{\theta\in\RR}
+$$
+such that
+$$
+\abs{f(\theta)}
+>
+\abs{a_0}.
+$$
+
+::: {.proof}
+Step <1>4 is the negation of the assumption that the displayed strict
+inequality fails for every real $\theta$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Step <1>5 is the required conclusion.
+:::
 :::

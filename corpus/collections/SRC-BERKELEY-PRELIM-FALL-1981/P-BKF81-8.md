@@ -23,7 +23,7 @@ audit:
   note: "Applied Rouché on the unit circle and then used the simultaneous equations f(z)=f'(z)=0 to rule out multiple zeros."
 ---
 
-::: problem
+::: {.problem}
 Let $f(z)=3z^{100}-e^z$.
 
 (a) How many zeros does $f$ have in the unit disk, counting multiplicities?
@@ -31,9 +31,9 @@ Let $f(z)=3z^{100}-e^z$.
 (b) Are the zeros distinct?
 :::
 
-::: solution
+::: {.solution}
 <1>1. Count the zeros in the unit disk.
-::: proof
+::: {.proof}
 On $|z|=1$,
 $$
 |3z^{100}|=3,
@@ -58,7 +58,7 @@ $$
 :::
 
 <1>2. Every zero of $f$ in the unit disk is simple.
-::: proof
+::: {.proof}
 Suppose $z$ were a multiple zero. Then
 $$
 f(z)=0

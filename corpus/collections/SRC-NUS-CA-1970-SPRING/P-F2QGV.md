@@ -16,7 +16,7 @@ audit:
   date: 2026-08-25
 ---
 
-::: problem
+::: {.problem}
 Find an analytic isomorphism from the open region between $x = 1$ and $x = 3$ to the upper half unit disk $\{|z| < 1,\Im z > 0\}$.
 (You may leave your result as a composition of functions)
 :::

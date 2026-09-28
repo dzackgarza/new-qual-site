@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Let $V$ be a 5-dimensional vector space over a field $F$.
 
 a. Let $T: V \to V$ be a linear transformation with characteristic polynomial $(x-1)^3(x-2)^2$ and minimal polynomial $(x-1)^2(x-2)$.

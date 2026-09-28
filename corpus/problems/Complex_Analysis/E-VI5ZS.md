@@ -18,7 +18,7 @@ audit:
   date: 2026-08-17
 ---
 
-:::{.exercise}
+::: {.exercise}
 Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. 
 \[
 { (fg)' \over fg} = {f'\over f} + {g' \over g}

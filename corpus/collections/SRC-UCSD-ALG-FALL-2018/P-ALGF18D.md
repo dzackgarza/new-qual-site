@@ -24,7 +24,7 @@ audit:
   note: Verified that projective modules are direct summands of free modules, tensor products distribute over those direct sums, and the resulting ambient tensor product is free.
 ---
 
-::: problem
+::: {.problem}
 Let $A$ be a unital commutative ring.
 Suppose $P$ and $Q$ are two projective $A$-modules.
 Prove that $P \otimes_A Q$ is a projective $A$-module.

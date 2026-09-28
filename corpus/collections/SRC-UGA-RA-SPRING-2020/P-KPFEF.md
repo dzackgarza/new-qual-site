@@ -24,6 +24,7 @@ audit:
   note: Replaced invalid tail estimates and monotonicity inequalities, and repaired the part (c) counterexample at the endpoint x=1.
 ---
 
+::: {.problem}
 a. Prove that if $f\in L^1(\RR)$ then
 \[
 \lim_{N\to \infty} \int _{\abs{x} \geq N} \abs{f(x)} \, dx = 0
@@ -33,8 +34,9 @@ and demonstrate that it is not necessarily the case that $f(x) \to 0$ as $\abs{x
 b. Prove that if $f\in L^1([1, \infty))$ and is decreasing, then $\lim_{x\to\infty}f(x) =0$ and in fact $\lim_{x\to \infty} xf(x) = 0$.
 
 c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf(x) = 0$, does this ensure that $f\in L^1([1, \infty))$?
+:::
 
-:::{.concept}
+::: {.concept}
 \envlist
 - Limits
 - Cauchy Criterion for Integrals: $\int_a^\infty f(x) \,dx$ converges iff for every $\eps>0$ there exists an $M_0$ such that $A,B\geq M_0$ implies $\abs{\int_A^B f} < \eps$, i.e. $\abs{\int_A^B f} \converges{A\to\infty}\to 0$.
@@ -42,9 +44,9 @@ c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf
 - Mean Value Theorem for Integrals: $\int_a^b f(t)\, dt = (b-a) f(c)$ for some $c\in [a, b]$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Prove the $L^1$ tails vanish, and give a counterexample to pointwise decay.
-::: proof
+::: {.proof}
 Since $|f|\in L^1(\mathbb R)$ and
 \[
 \mathbf1_{\{|x|\ge N\}}|f(x)|\longrightarrow0
@@ -70,7 +72,7 @@ so $f\in L^1(\mathbb R)$. But $f(k)=1$ for every positive integer $k$, hence $f(
 :::
 
 <1>2. If $f$ is decreasing and integrable on $[1,\infty)$, prove $f(x)\to0$ and $xf(x)\to0$.
-::: proof
+::: {.proof}
 Because $f$ is decreasing, the extended limit
 \[
 L:=\lim_{x\to\infty}f(x)
@@ -101,7 +103,7 @@ and the already established $f(x)\to0$ follows as well.
 :::
 
 <1>3. Show that $xf(x)\to0$ does not imply integrability.
-::: proof
+::: {.proof}
 Define
 \[
 f(x)=

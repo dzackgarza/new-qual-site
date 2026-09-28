@@ -14,11 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.exercise}
+::: {.exercise}
 Find $1/\cos(z)$ using this method.
 :::
 
-:::{.solution}
+::: {.solution}
 We have $\cos(z) = c_0 +c_2^2 + c_4 z^4 + \bigo(z^6)$ where
 
 - $c_0 = 1$

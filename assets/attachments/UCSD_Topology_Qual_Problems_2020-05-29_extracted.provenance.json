@@ -1,0 +1,23 @@
+{
+  "source_pdf": "assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf",
+  "source_pdf_sha256": "ae61374c890851aa5d2fb7871fc78aecde9a2c308164de9d20bff68c253bc01d",
+  "source_pages": 6,
+  "extracted_markdown": "assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29_extracted.md",
+  "extracted_markdown_sha256": "5b8b7043b728968970d273ed28ff585f2f580e06beb94307051b58c69cffabe0",
+  "extractor": "mineru-open-api",
+  "extractor_version": "v0.5.9",
+  "command": "mineru-open-api flash-extract assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf --language en",
+  "generated_at": "2026-09-14",
+  "result": "exit 0",
+  "old_unknown_provenance_extraction": "assets/attachments/extracted/UCSD_Topology_Qual_Problems_2020-05-29.md",
+  "old_unknown_provenance_sha256": "5b8b7043b728968970d273ed28ff585f2f580e06beb94307051b58c69cffabe0",
+  "old_unknown_provenance_byte_identical": true,
+  "superseded_normalized_extraction_sha256": "80db1aedfd98fe6b74c83a31d97111fd5112c7e2650335869ce2d6d9831b19d6",
+  "superseded_normalized_extraction_note": "The previously tracked *_extracted.md had manual Markdown line-break/list-number normalization. This fresh file restores the exact raw MinerU Flash baseline; the normalization did not change the mathematical obligations represented by the collection.",
+  "source_identification": "Topology Qual Problems, D. Zack Garza, May 29, 2020: a compiled UCSD topology qualifying-problem review document organized by homotopy, fundamental group, group actions, applications, Van Kampen, Mayer-Vietoris, cellular homology, degree, universal coefficients, homological algebra, and cohomology ring.",
+  "card_reconciliation": "The existing complete SRC-UCSD-TOP-JUSTIN collection represents 92 canonical problem positions. The fresh baseline is source-compatible with that authored collection. No duplicate cards are created.",
+  "known_source_or_extractor_defects": [
+    "Van Kampen section items 2, 5, 6, and 7 are emitted only as Images/image placeholders in this compiled PDF. The existing collection also owns Roberts' official assets/attachments/UCSD_290_F14_sheet3.pdf and uses that authored companion source to represent those four positions rather than inventing missing diagram text.",
+    "Several other diagrams in the compilation remain image placeholders in the raw Flash output; existing source-sensitive cards and owned companion sheets preserve the repository's prior source-based disposition rather than reconstructing displays from inference."
+  ]
+}

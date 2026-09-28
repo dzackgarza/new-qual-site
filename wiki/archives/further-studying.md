@@ -1,8 +1,8 @@
 ---
 order: 110
-title: Further Studying
+title: Cambridge Part III examination papers
 ---
 
-# Further Studying
+# Cambridge Part III examination papers
 
-- Cambridge Part III: [2021 tripos examination papers](https://www.maths.cam.ac.uk/postgrad/part-iii/current/tripos-examination-papers/2021)
+- [2021 Part III tripos examination papers](https://www.maths.cam.ac.uk/postgrad/part-iii/current/tripos-examination-papers/2021)

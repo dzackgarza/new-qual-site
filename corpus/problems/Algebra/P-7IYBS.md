@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $A\in M_n(F)$ satisfy $A^2=A$. Prove that $A$ is diagonalizable over $F$, and determine its possible diagonal form.
 :::
 

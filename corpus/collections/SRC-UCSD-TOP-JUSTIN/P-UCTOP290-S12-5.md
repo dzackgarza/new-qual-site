@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\Sigma X$ be the suspension of a space $X$, and let $U, V$ be the open sets obtained as the complements of the two suspension points.
 Show that $H^*(\Sigma X, U) \cong \widetilde{H}^*(\Sigma X)$.
 By considering the cup product

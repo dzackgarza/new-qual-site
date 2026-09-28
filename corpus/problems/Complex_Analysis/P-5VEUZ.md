@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem}
+::: {.problem}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of continuous functions $f_n: [0, 1]\to \RR$ such that 
 \[  
 f_n(x) \geq f_{n+1}(x) \geq 0 \quad \forall n\in \NN,\, \forall x\in [0, 1]
@@ -24,7 +24,7 @@ f_n(x) \geq f_{n+1}(x) \geq 0 \quad \forall n\in \NN,\, \forall x\in [0, 1]
 Prove that if $\theset{f_n}$ converges pointwise to $0$ on $[0, 1]$ then it converges to $0$ uniformly on $[0, 1]$.
 :::
 
-:::{.solution}
+::: {.solution}
 Let $\eps>0$, we want to show that there exists an $N_0$ such that $n\geq N_0$ implies $\norm{f_n}_\infty<\eps$.
 Fix $x$, by pointwise convergence pick $M_x = M_x(x, \eps)$ so that $n\geq M \implies \abs{f_n(x)} < \eps$.
 By continuity, this bound holds in some neighborhood $U_x \ni x$.

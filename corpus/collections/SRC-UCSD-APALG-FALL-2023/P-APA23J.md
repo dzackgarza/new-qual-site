@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Consider the monomial ideal $I = \langle x_2^2, \dots, x_n^2 \rangle$ in $\mathbb{C}[x_1, \dots, x_n]$.
 
 (a) Give a basis of the vector space $\mathbb{C}[x_1, \dots, x_n]/I$.

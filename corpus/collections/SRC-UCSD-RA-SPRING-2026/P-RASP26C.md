@@ -23,7 +23,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Let $X$ be a Banach space with open unit ball $B = \{x \in X : \|x\| < 1\}$.
 Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such that $X = \{\lambda u + y : \lambda \in \mathbb{C},\; y \in \mathcal{M}\}$.
 
@@ -32,7 +32,7 @@ Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such th
 (2) Prove that $B + \mathcal{M}$ is weakly open, regardless of whether or not $\mathcal{M}$ is closed.
 :::
 
-::: solution
+::: {.solution}
 Because
 \[
 X=\operatorname{span}\{u\}+\mathcal M
@@ -40,7 +40,7 @@ X=\operatorname{span}\{u\}+\mathcal M
 and $\mathcal M\ne X$, the quotient $X/\mathcal M$ is one-dimensional.
 
 <1>1. If $\mathcal M$ is not closed, then $B+\mathcal M=X$.
-::: proof
+::: {.proof}
 The closure $\overline{\mathcal M}$ is a vector subspace containing $\mathcal M$. Since $\mathcal M$ has algebraic codimension one, there is no vector subspace strictly between $\mathcal M$ and $X$. Because $\mathcal M$ is not closed,
 \[
 \mathcal M\subsetneq\overline{\mathcal M},
@@ -66,7 +66,7 @@ Hence
 :::
 
 <1>2. If $\mathcal M$ is closed, then $B+\mathcal M\ne X$.
-::: proof
+::: {.proof}
 Since $u\notin\mathcal M$ and $\mathcal M$ is closed,
 \[
 d:=\operatorname{dist}(u,\mathcal M)>0.
@@ -97,7 +97,7 @@ Combining Steps 1 and 2 proves
 :::
 
 <1>3. Prove weak openness when $\mathcal M$ is not closed.
-::: proof
+::: {.proof}
 In this case Step 1 gives
 \[
 B+\mathcal M=X,
@@ -106,7 +106,7 @@ which is weakly open.
 :::
 
 <1>4. Prove weak openness when $\mathcal M$ is closed.
-::: proof
+::: {.proof}
 Since $\mathcal M$ is a closed codimension-one subspace, there exists a nonzero bounded linear functional
 \[
 \varphi\in X^*

@@ -12,14 +12,14 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $\mathcal{A}$ be an algebra.
 Prove that $\mathcal{A}$ is commutative if and only if all its elements are normal.
 
 Note: On this exam, an algebra is a finite-dimensional complex vector space equipped with an associative, bilinear, unital multiplication and an antilinear, antimultiplicative, involutive conjugation.
 :::
 
-::: solution
+::: {.solution}
 If $\mathcal A$ is commutative, then for every $a\in\mathcal A$,
 \[
 aa^*=a^*a,

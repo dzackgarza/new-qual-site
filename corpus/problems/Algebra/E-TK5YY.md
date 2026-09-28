@@ -18,7 +18,7 @@ audit:
   date: 2026-08-30
 ---
 
-::: exercise
+::: {.exercise}
 - Prove the Cayley-Hamilton theorem.
 
 - Prove that the minimal polynomial divides the characteristic polynomial.

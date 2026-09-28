@@ -27,7 +27,7 @@ audit:
 ---
 
 
-::: problem
+::: {.problem}
 Let $\mathcal B$ be the Borel sigma-algebra on $\mathbb R$, and let $\mu$ be a finite Borel measure.
 
 1. If $F_1\supseteq F_2\supseteq\cdots$ are Borel sets, prove
@@ -42,9 +42,9 @@ m(E)<\delta\quad\Longrightarrow\quad \mu(E)<\varepsilon
 for every Borel set $E$.
 :::
 
-::: solution
+::: {.solution}
 <1>1. Continuity from above.
-::: proof
+::: {.proof}
 Set
 \[
 F:=\bigcap_{k=1}^\infty F_k,
@@ -74,7 +74,7 @@ The tail of the convergent series tends to $0$, hence
 :::
 
 <1>2. Absolute continuity in the epsilon--delta sense.
-::: proof
+::: {.proof}
 Assume the conclusion fails. Then there exist $\varepsilon_0>0$ and Borel sets $E_n$ such that
 \[
 m(E_n)<2^{-n}

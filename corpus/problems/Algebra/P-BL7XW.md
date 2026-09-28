@@ -21,11 +21,11 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 Classify all groups of order $p^3$ for $p$ prime up to isomorphism.
 :::
 
-::: solution
+::: {.solution}
 There are exactly five groups of order \(p^3\) up to isomorphism.
 
 The three abelian groups are

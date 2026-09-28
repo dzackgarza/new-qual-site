@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSRING17-026
 kind: problem
-title: Kent State ring-theory qualifying problem 26
+title: The matrices $\begin{pmatrix}a&b\\-b&a\end{pmatrix}$ form a ring isomorphic to $\mathbb C$
 classification:
   areas: [algebra]
   topics: []

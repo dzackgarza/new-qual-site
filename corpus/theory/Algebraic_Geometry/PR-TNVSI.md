@@ -3,6 +3,7 @@ schema: qual/card@1
 id: PR-TNVSI
 kind: proposition
 title: Irreducible decomposition in a Noetherian space
+slogan: 'Noetherian closed sets split into finitely many maximal irreducible pieces, uniquely; algebraically these are the minimal primes.'
 classification:
   areas:
   - algebraic-geometry
@@ -30,6 +31,6 @@ If no $X_i$ contains another, the $X_i$ are unique, and are the **irreducible co
 
 ::: {.remark}
 Under the correspondence the components of $V(J)$ are $V(\mfp_i)$ for the minimal primes $\mfp_i$ over $J$, so decomposing a variety is finding minimal primes.
-The worked case to have ready is a reducible hypersurface: $V(f)$ for $f = \prod f_i^{e_i}$ with the $f_i$ irreducible has components $V(f_i)$, and the multiplicities $e_i$ are invisible to the topology.
+A reducible hypersurface gives the basic computation: if $f=\prod f_i^{e_i}$ with the $f_i$ irreducible, then the components of $V(f)$ are the $V(f_i)$, while the multiplicities $e_i$ are invisible to the topology.
 That invisibility is exactly what the scheme structure later restores.
 :::

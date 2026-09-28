@@ -15,12 +15,12 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $f(x) \in \QQ[x]$ be a polynomial and $K$ be a splitting field of $f$ over $\QQ$.
 Assume that $[K:\QQ] = 1225$ and show that $f(x)$ is solvable by radicals.
 :::
 
-::: solution
+::: {.solution}
 Because $K$ is the splitting field over a field of characteristic $0$, the
 extension $K/\QQ$ is finite Galois. Put
 \[

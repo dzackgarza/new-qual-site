@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $A \in \mathbb{C}^{10 \times 10}$ be a matrix such that
 \[
 \operatorname{rank} A = 7,\quad
@@ -24,7 +24,7 @@ Let $A \in \mathbb{C}^{10 \times 10}$ be a matrix such that
 Determine all possibilities of Jordan's canonical form for $A$.
 :::
 
-::: solution
+::: {.solution}
 Since
 \[
 A^4=0,

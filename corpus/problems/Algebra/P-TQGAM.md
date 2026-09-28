@@ -21,7 +21,7 @@ audit:
   date: 2026-09-09
 ---
 
-::: problem
+::: {.problem}
 - Show that the stabilizer of an element need not be a normal subgroup?
 :::
 

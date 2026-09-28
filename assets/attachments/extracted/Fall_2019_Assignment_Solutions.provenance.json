@@ -1,0 +1,11 @@
+{
+  "source_pdf": "assets/attachments/Fall_2019_Assignment_Solutions.pdf",
+  "source_pdf_sha256": "bc76615c9e0b8e75829272e6c6553ef2e028e4a404b8c6a9c61f4d49309d8d65",
+  "extracted_markdown": "assets/attachments/extracted/Fall_2019_Assignment_Solutions.md",
+  "extracted_markdown_sha256": "54db9bbf8ea58441bf7492a38b3d28d6535e7cb3cdec6c6cce11921c233b89e7",
+  "extractor": "mistral-ocr",
+  "extractor_model": "mistral-ocr-latest",
+  "pages": 91,
+  "command": "just ocr-pdf assets/attachments/Fall_2019_Assignment_Solutions.pdf assets/attachments/extracted/Fall_2019_Assignment_Solutions.md",
+  "generated_at": "2026-09-16"
+}

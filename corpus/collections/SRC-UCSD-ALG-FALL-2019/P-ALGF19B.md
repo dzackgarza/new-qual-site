@@ -24,7 +24,7 @@ audit:
   note: Verified the conjugation-orbit argument, the Sylow-count dichotomy inside H, and normality of Q from the parity obstruction q+1 not dividing the odd order of P.
 ---
 
-::: problem
+::: {.problem}
 For any finite group $H$ and prime $\ell$, we denote the set of Sylow $\ell$-subgroups of $H$ by $\mathrm{Syl}_\ell(H)$.
 Suppose $p < q$ are odd primes, $G$ is a finite group, and $|\mathrm{Syl}_p(G)| = p + 1$ and $|\mathrm{Syl}_q(G)| = q + 1$.
 

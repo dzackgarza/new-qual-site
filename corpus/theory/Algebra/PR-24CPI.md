@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: PR-24CPI
 kind: proposition
-title: Jordan-Chevalley decomposition
+title: Jordan--Chevalley decomposition
+slogan: 'Over a perfect field, every linear map splits uniquely into commuting semisimple and nilpotent parts.'
 classification:
   areas:
   - algebra
@@ -15,7 +16,11 @@ review: draft
 ---
 
 ::: {.proposition}
-Any linear map $T:V\to V$ over a perfect field decomposes as $T = S + N$ with $S$ semisimple (diagonalisable over $\bar k$), $N$ nilpotent, and $[S, N] = 0$.
-If $T$ is invertible, then $T$ decomposes as $T = SU$ where $S$ is semisimple, $U$ is unipotent, and $[S, U] = 0$.
-Both decompositions are unique.
+Let $k$ be a [[FD-YYLYR|perfect field]], let $V$ be a finite-dimensional $k$-vector space, and let $T\colon V\to V$ be $k$-linear.
+Then there are unique $k$-linear maps $S,N\colon V\to V$ with
+$$
+T=S+N,\qquad SN=NS,
+$$
+where $S$ is [[D-B4VTH|semisimple]], that is, diagonalizable over an algebraic closure $\kbar$, and $N$ is [[D-GIGM2|nilpotent]].
+If $T$ is invertible, there are unique $k$-linear maps $S,U\colon V\to V$ with $T=SU$ and $SU=US$, where $S$ is semisimple and $U$ is [[D-23FX7|unipotent]].
 :::

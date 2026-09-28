@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: problem
+::: {.problem}
 Let $(V,\varphi)$ be a finite-dimensional irreducible complex representation of a finite group $G$, and let $\chi$ be its character.
 Show that for any $g_1,g_2\in G$ we have
 \[
@@ -27,7 +27,7 @@ Let \(d=\dim V\) and define
 T:=\frac1{|G|}\sum_{h\in G}\varphi(h)\varphi(g_2)\varphi(h)^{-1}.
 \]
 
-<1>1. The operator \(T\) commutes with \(arphi(k)\) for every \(k\in G\).
+<1>1. The operator \(T\) commutes with \(\varphi(k)\) for every \(k\in G\).
 ::: {.proof}
 For \(k\in G\),
 \[
