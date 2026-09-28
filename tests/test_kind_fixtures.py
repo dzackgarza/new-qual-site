@@ -50,6 +50,100 @@ def _fixture_for(kind: str) -> Path | None:
     return None
 
 
+def _copy(corpus: Path, source: str, target: str, *edits: tuple[str, str]) -> Path:
+    """A fixture card under a new id, with `edits` applied to its text."""
+    text = (corpus / f"{source}.md").read_text().replace(source, target)
+    for old, new in edits:
+        assert old in text, old
+        text = text.replace(old, new, 1)
+    card = corpus / f"{target}.md"
+    card.write_text(text)
+    return card
+
+
+def _edit(card: Path, old: str, new: str) -> None:
+    text = card.read_text()
+    assert old in text, old
+    card.write_text(text.replace(old, new, 1))
+
+
+@pytest.fixture(scope="module")
+def collections_site(tmp_path_factory: pytest.TempPathFactory) -> Path:
+    """One build serving every test here that lists problems on a collection.
+
+    Each test owns the collections and problems it asserts on, so the listings
+    do not see each other: SRC-NEILNOTES and SRC-NEIL-NESTED are the two
+    compilation shapes, SRC-UGA-LIST lists P-LISTED, SRC-UGA-FIX carries the
+    provenance, SRC-UGA-FIX and SRC-HW give P-INDEXP and E-CENTER their
+    appearance comments, and SRC-DUMMIT alone lists P-TEXT.
+    """
+    work = fixture_repo(tmp_path_factory.mktemp("collections"))
+    corpus = work / "corpus"
+    for target in ("P-INDEXP", "P-LISTED", "P-TEXT"):
+        _copy(corpus, "PRB-INDEXP", target)
+    _copy(corpus, "EXE-CENTER", "E-CENTER")
+
+    _copy(
+        corpus,
+        "SRC-NEILNOTES",
+        "SRC-NEIL-NESTED",
+        ("Fall 2019", "Fall 2018"),
+        ("    year: 2019\n    term: fall\n", "    year: 2018\n    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - SRC-UGA-FIX\n"),
+    )
+    _edit(corpus / "SRC-NEILNOTES.md", "    term: fall\n", "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - P-INDEXP\n")
+    _copy(
+        corpus,
+        "SRC-UGA-FIX",
+        "SRC-UGA-LIST",
+        ("Spring 2019", "Fall 2018"),
+        ("  area: algebra\n  date:\n", "  area: algebra\n  problems:\n  - id: P-LISTED\n    comment: Problem 3\n  date:\n"),
+        ("    year: 2019\n    term: spring\n", "    year: 2018\n    term: fall\n"),
+    )
+
+    local_pdf = work / "assets" / "attachments" / "fixture-paper.pdf"
+    local_pdf.parent.mkdir(parents=True, exist_ok=True)
+    local_pdf.write_bytes(b"%PDF-1.4\n%%EOF\n")
+    local_extraction = local_pdf.parent / "extracted" / "fixture-paper.md"
+    local_extraction.parent.mkdir()
+    local_extraction.write_text("A checked-in extraction of the fixture paper.\n")
+    _edit(
+        corpus / "SRC-UGA-FIX.md",
+        "review: draft\n",
+        "review: draft\n"
+        "provenance:\n"
+        "  - https://www.math.uga.edu/past-qualifying-exams-1\n"
+        "  - https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf\n"
+        "  - assets/attachments/fixture-paper.pdf\n",
+    )
+    for name, comment in (("SRC-UGA-FIX.md", "Problem 6"), ("SRC-HW.md", "Problem 5")):
+        _edit(corpus / name, "    term: spring\n", APPEARANCE.format(comment=comment))
+
+    _edit(
+        corpus / "SRC-DUMMIT.md",
+        "    year: 2004\n",
+        "    year: 2004\n  sections:\n  - name: '4.1'\n    problems:\n    - id: P-TEXT\n      comment: Exercise 4.1.7\n",
+    )
+    (work / "publications" / "algebra-guide.yaml").write_text(
+        """schema: qual/publication@2
+id: GUIDE-ALGEBRA
+kind: study-guide
+title: Algebra
+lede: A short algebra guide.
+sections:
+- slug: groups
+  title: Groups
+  parent: GUIDE-ALGEBRA
+  lede: The group-theory section.
+  items:
+  - ref: P-TEXT
+"""
+    )
+
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    return work
+
+
 # Parametrized over the *schema union*, not over the fixture directory. Driving
 # it from the directory meant a kind with no fixture was simply never tested,
 # and the gap was covered by a separate assertion that the fixture set was
@@ -180,26 +274,16 @@ def test_empty_provenance_href_is_rejected(tmp_path: Path) -> None:
         parse_card(path)
 
 
-def test_compilation_sections_are_the_collection_listing_and_central_problem_index(tmp_path: Path) -> None:
+def test_compilation_sections_are_the_collection_listing_and_central_problem_index(collections_site: Path) -> None:
     from qualc.model import parse_card
 
-    work = fixture_repo(tmp_path)
-    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
-    card = work / "corpus" / "SRC-NEILNOTES.md"
-    card.write_text(
-        card.read_text().replace(
-            "    term: fall\n",
-            "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - P-INDEXP\n",
-        )
-    )
-    parsed = parse_card(card).card
+    work = collections_site
+    parsed = parse_card(work / "corpus" / "SRC-NEILNOTES.md").card
     assert isinstance(parsed, CollectionCard)
     assert isinstance(parsed.source, CompilationSource)
     assert parsed.source.sections[0].name == "Day 1"
     assert parsed.source.listed_problem_ids() == ["P-INDEXP"]
 
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
     source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
     assert "Day 1" in source_qmd
     assert "P-INDEXP" in source_qmd
@@ -216,33 +300,24 @@ def test_compilation_sections_are_the_collection_listing_and_central_problem_ind
     assert rows == [("Day 1", "P-INDEXP")]
 
 
-def test_compilation_section_may_list_a_collection_without_putting_it_in_problem_results(tmp_path: Path) -> None:
+def test_compilation_section_may_list_a_collection_without_putting_it_in_problem_results(collections_site: Path) -> None:
     from qualc.model import parse_card
 
-    work = fixture_repo(tmp_path)
-    card = work / "corpus" / "SRC-NEILNOTES.md"
-    card.write_text(
-        card.read_text().replace(
-            "    term: fall\n",
-            "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - SRC-UGA-FIX\n",
-        )
-    )
-    parsed = parse_card(card).card
+    work = collections_site
+    parsed = parse_card(work / "corpus" / "SRC-NEIL-NESTED.md").card
     assert isinstance(parsed, CollectionCard)
     assert isinstance(parsed.source, CompilationSource)
     assert [e.id for e in parsed.source.sections[0].problems] == ["SRC-UGA-FIX"]
     assert parsed.source.listed_problem_ids() == []
 
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-    source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEILNOTES.qmd").read_text()
+    source_qmd = (work / "build" / "quarto" / "source" / "SRC-NEIL-NESTED.qmd").read_text()
     assert "Day 1" in source_qmd
     assert "SRC-UGA-FIX" in source_qmd
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
-    assert "SRC-NEILNOTES" not in index
+    assert "SRC-NEIL-NESTED" not in index
 
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES'").fetchall()
+    rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEIL-NESTED'").fetchall()
     assert rows == [("Day 1", "SRC-UGA-FIX")]
 
 
@@ -318,57 +393,23 @@ def test_every_card_reaches_a_page(built_fixture: Path) -> None:
     assert "0 problems." in textbook_qmd
 
 
-def test_collection_page_lists_problems_and_links_the_central_browser(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
-    exam = work / "corpus" / "SRC-UGA-FIX.md"
-    exam.write_text(
-        exam.read_text().replace(
-            "  area: algebra\n  date:\n",
-            "  area: algebra\n  problems:\n  - id: P-INDEXP\n    comment: Problem 3\n  date:\n",
-        )
-    )
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
-    assert "P-INDEXP" in exam_qmd
+def test_collection_page_lists_problems_and_links_the_central_browser(collections_site: Path) -> None:
+    work = collections_site
+    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-LIST.qmd").read_text()
+    assert "P-LISTED" in exam_qmd
     assert "Problem 3" in exam_qmd
-    assert "problems.html?collection=SRC-UGA-FIX" in exam_qmd
+    assert "problems.html?collection=SRC-UGA-LIST" in exam_qmd
 
     index = json.loads((work / "build" / "quarto" / "_site" / "collection-problems.json").read_text())
-    assert [item["id"] for item in index["SRC-UGA-FIX"]["items"]] == ["P-INDEXP"]
+    assert [item["id"] for item in index["SRC-UGA-LIST"]["items"]] == ["P-LISTED"]
 
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    assert [row[0] for row in con.execute("select problem_id from collection_problems where collection_id='SRC-UGA-FIX' order by ordinal")] == ["P-INDEXP"]
-    assert list(con.execute("select problem_id from collection_problems where collection_id='SRC-DUMMIT'")) == []
+    assert [row[0] for row in con.execute("select problem_id from collection_problems where collection_id='SRC-UGA-LIST' order by ordinal")] == ["P-LISTED"]
+    assert [row[0] for row in con.execute("select collection_id from collection_problems where problem_id='P-LISTED'")] == ["SRC-UGA-LIST"]
 
 
-def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-    local_pdf = work / "assets" / "attachments" / "fixture-paper.pdf"
-    local_pdf.parent.mkdir(parents=True, exist_ok=True)
-    local_pdf.write_bytes(b"%PDF-1.4\n%%EOF\n")
-    local_extraction = local_pdf.parent / "extracted" / "fixture-paper.md"
-    local_extraction.parent.mkdir()
-    local_extraction.write_text("A checked-in extraction of the fixture paper.\n")
-    exam = work / "corpus" / "SRC-UGA-FIX.md"
-    provenance = (
-        "review: draft\n"
-        "provenance:\n"
-        "  - https://www.math.uga.edu/past-qualifying-exams-1\n"
-        "  - https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf\n"
-        "  - assets/attachments/fixture-paper.pdf\n"
-    )
-    exam.write_text(
-        exam.read_text().replace(
-            "review: draft\n",
-            provenance,
-            1,
-        )
-    )
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+def test_collection_page_renders_provenance_links(collections_site: Path) -> None:
+    work = collections_site
     exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
     body = exam_qmd.split("---\n", 2)[2]
     assert "Provenance" not in body
@@ -384,9 +425,10 @@ def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
     assert 'href="../assets/attachments/fixture-paper.pdf" aria-label="PDF source"' in exam_html
     assert 'href="../assets/attachments/extracted/fixture-paper.md" aria-label="Markdown extraction"' in exam_html
     assert ">assets/attachments/fixture-paper.pdf<" not in exam_html
+    local_pdf = work / "assets" / "attachments" / "fixture-paper.pdf"
     published = work / "build" / "quarto" / "_site" / "assets" / "attachments"
     assert (published / "fixture-paper.pdf").samefile(local_pdf)
-    assert (published / "extracted" / "fixture-paper.md").samefile(local_extraction)
+    assert (published / "extracted" / "fixture-paper.md").samefile(local_pdf.parent / "extracted" / "fixture-paper.md")
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     assert [row[0] for row in con.execute("select href from collection_provenance where collection_id='SRC-UGA-FIX' order by ordinal")] == [
         "https://www.math.uga.edu/past-qualifying-exams-1",
@@ -563,7 +605,7 @@ def test_result_slogan_is_authored_and_nonempty(tmp_path: Path) -> None:
 APPEARANCE = "    term: spring\n  problems:\n  - id: P-INDEXP\n    comment: {comment}\n  - E-CENTER\n"
 
 
-def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
+def test_appearance_comment_belongs_to_the_collection(collections_site: Path) -> None:
     """A comment says where the problem sits in THIS source, so one problem
     listed by two collections carries a different comment on each. That is the
     thing a field on the problem card could not express: it would have to pick
@@ -573,17 +615,10 @@ def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
     comment -- most appearances have nothing to add beyond what the collection
     already says, and are not forced into a mapping to say it.
     """
-    work = fixture_repo(tmp_path)
-    corpus = work / "corpus"
-    (corpus / "P-INDEXP.md").write_text((corpus / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
-    (corpus / "E-CENTER.md").write_text((corpus / "EXE-CENTER.md").read_text().replace("EXE-CENTER", "E-CENTER"))
-    for name, comment in (("SRC-UGA-FIX.md", "Problem 6"), ("SRC-HW.md", "Problem 5")):
-        card = corpus / name
-        card.write_text(card.read_text().replace("    term: spring\n", APPEARANCE.format(comment=comment), 1))
-
-    assert run_qualc("build", work).returncode == 0
+    work = collections_site
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    assert con.execute("select collection_id, problem_id, comment from collection_problems order by collection_id, ordinal").fetchall() == [
+    rows = con.execute("select collection_id, problem_id, comment from collection_problems where collection_id in ('SRC-HW', 'SRC-UGA-FIX') order by collection_id, ordinal").fetchall()
+    assert rows == [
         ("SRC-HW", "P-INDEXP", "Problem 5"),
         ("SRC-HW", "E-CENTER", None),
         ("SRC-UGA-FIX", "P-INDEXP", "Problem 6"),
@@ -604,44 +639,14 @@ def test_appearance_comment_belongs_to_the_collection(tmp_path: Path) -> None:
     assert "<dt>Status</dt>" in uncommented
 
 
-def test_textbook_source_is_not_exam_metadata_and_stays_separate_from_guide_appearances(tmp_path: Path) -> None:
+def test_textbook_source_is_not_exam_metadata_and_stays_separate_from_guide_appearances(collections_site: Path) -> None:
     """A textbook date belongs to the source, not to the problem's exam facts.
 
     The same problem may also be deliberately placed in a study guide. Those
     two edges answer different questions and therefore render in separate
     relation groups: where the problem came from, and where the site uses it.
     """
-    work = fixture_repo(tmp_path)
-    corpus = work / "corpus"
-    (corpus / "P-INDEXP.md").write_text((corpus / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
-    textbook = work / "corpus" / "SRC-DUMMIT.md"
-    textbook.write_text(
-        textbook.read_text().replace(
-            "    year: 2004\n",
-            "    year: 2004\n  sections:\n  - name: '4.1'\n    problems:\n    - id: P-INDEXP\n      comment: Exercise 4.1.7\n",
-            1,
-        )
-    )
-    (work / "publications" / "algebra-guide.yaml").write_text(
-        """schema: qual/publication@2
-id: GUIDE-ALGEBRA
-kind: study-guide
-title: Algebra
-lede: A short algebra guide.
-sections:
-- slug: groups
-  title: Groups
-  parent: GUIDE-ALGEBRA
-  lede: The group-theory section.
-  items:
-  - ref: P-INDEXP
-"""
-    )
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-
-    page = (work / "build" / "quarto" / "_site" / "tag" / "P-INDEXP.html").read_text()
+    page = (collections_site / "build" / "quarto" / "_site" / "tag" / "P-TEXT.html").read_text()
     assert "<dt>Seen at</dt>" not in page
     assert "<dt>Years</dt>" not in page
     assert 'data-relation-group="source-collections"' in page
