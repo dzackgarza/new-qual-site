@@ -52,7 +52,7 @@ Thanks to Peter Woolfitt for supplying many solutions and checking many proofs i
 
 > - References:
 >   
->   - Rudin: Chapters 2, 3, 4, 5, 7
+>   - [@Rud76, chaps. 2--5, 7]
 >
 >   - [@Fol13, sec. 0.6]
 
