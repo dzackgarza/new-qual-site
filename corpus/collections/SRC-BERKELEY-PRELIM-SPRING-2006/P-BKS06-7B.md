@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-7B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 7B
+title: Sharp bound $\abs{f^{(m)}(0)}\le m!e^m/m^m$ for entire $f$ with $\abs{f(z)}\le e^{\abs{z}}$
 classification:
   areas: [prelim]
   topics: []
