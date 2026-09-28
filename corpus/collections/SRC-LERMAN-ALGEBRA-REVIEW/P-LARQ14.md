@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LARQ14
 kind: problem
-title: Evaluation identifies R[x]/(x-2) with R
+title: Evaluation at $2$ identifies $\mathbb R[x]/(x-2)$ with $\mathbb R$
 classification:
   areas: [algebra]
   topics: [Ring Theory]
