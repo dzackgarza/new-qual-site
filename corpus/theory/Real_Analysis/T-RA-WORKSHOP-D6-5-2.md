@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D6-5-2
 kind: theorem
 title: Riemann--Stieltjes integration by parts
-slogan: 'Riemann--Stieltjes integration by parts swaps integrand and integrator with the usual endpoint correction.'
+slogan: 'If $f\in\mathcal R(\alpha)$, then $\alpha\in\mathcal R(f)$ and $\int_a^b f\,d\alpha=f(b)\alpha(b)-f(a)\alpha(a)-\int_a^b\alpha\,df$.'
 classification:
   areas:
   - real-analysis
