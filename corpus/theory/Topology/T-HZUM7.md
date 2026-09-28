@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-HZUM7
 kind: theorem
 title: Freudenthal suspension theorem
-slogan: 'Suspension stabilizes homotopy groups below twice the connectivity range.'
+slogan: 'For an $(n-1)$-connected CW complex $X$, suspension $\pi_i(X)\to\pi_{i+1}(SX)$ is an isomorphism for $i<2n-1$ and surjective for $i=2n-1$.'
 classification:
   areas:
   - topology
@@ -20,7 +20,7 @@ $$
 \pi_i(S^n) \to \pi_{i+1}(S^{n+1})
 $$
 is an isomorphism for $i < 2n-1$ and a surjection for $i = 2n-1$.
-More generally, the suspension map $\pi_i(X)\to\pi_{i+1}(SX)$ has the same behaviour whenever $X$ is an $(n-1)$-connected CW complex [@Hat02].
+More generally, for an $(n-1)$-connected CW complex $X$, the suspension map $\pi_i(X)\to\pi_{i+1}(SX)$ is an isomorphism for $i < 2n-1$ and a surjection for $i = 2n-1$ [@Hat02].
 :::
 
 ::: {.remark}
