@@ -9,13 +9,11 @@ topics:
 
 # Stalks and exactness
 
-The sheaf category is abelian, and every diagram-chasing word in it is defined stalk by stalk.
-This is the payoff of the previous page and the entry to cohomology.
+Sheaves of abelian groups on $X$ form an abelian category, and a sequence of them is exact exactly when it is exact on every stalk.
 
 [[PR-C9ZEK]]
 
-Surjectivity of sheaves does not imply surjectivity on global sections.
-The example makes the obstruction explicit.
+A surjection of sheaves need not be surjective on global sections.
 
 [[FE-Y12XB]]
 
@@ -33,8 +31,7 @@ The section lifts globally exactly when that cocycle is a coboundary, so the obs
 \[
 0 \to \mcf(X) \to \mcg(X) \to \mch(X) \to H^1(X, \mcf) \to \cdots
 \]
-is the bookkeeping for it.
-Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream of this paragraph.
+records it; see [[algebraic-geometry/cohomology/index|cohomology]].
 
 ## Locally constant and constructible sheaves
 
@@ -46,5 +43,5 @@ Everything in [[algebraic-geometry/cohomology/index|cohomology]] is downstream o
 
 [[D-UDIVH]]
 
-The two notions of support are written similarly but behave differently: a fixed section can vanish on an open set while the whole stalk need not vanish there.
-Extension by zero is the construction that lives in the gap, and coherence on a Noetherian scheme is the hypothesis that closes it.
+The support of a sheaf need not be closed: for an open immersion $j\colon U\hookrightarrow X$, extension by zero gives $\supp(j_!\ZZ_U)=U$.
+For a coherent sheaf on a noetherian scheme, the support is closed.
