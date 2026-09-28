@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $f : \mathcal{R} \to \mathcal{R}$ be an increasing function from the reals to the reals. Show that there is an $x$ such that $f$ is continuous at $x$.
+Let $f : \RR \to \RR$ be an increasing function from the reals to the reals. Show that there is an $x$ such that $f$ is continuous at $x$.
 :::
 
 ::: {.solution}
@@ -125,9 +125,10 @@ one-sided limits equal $f(x)$, hence the two-sided limit exists and equals
 $f(x)$.
 :::
 
-<1>4. For every $x\in D$, there is a nonempty open interval $J_x$ such
-that every point of $J_x$ lies strictly between the limiting values of
-$f$ at $x$.
+<1>4. For every $x\in D$, there is a nonempty open interval
+$$
+J_x\subseteq(L_x,R_x).
+$$
 
 ::: {.proof}
 By step <1>3, if $x\in D$, then either
