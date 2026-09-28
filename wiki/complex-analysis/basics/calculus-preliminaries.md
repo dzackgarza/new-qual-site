@@ -85,11 +85,6 @@ The even and odd partial sums are monotone and bounded, so they converge, and $S
 
 [[T-4M73O]]
 
-::: {.remark}
-Green's theorem is stated for $M$ and $N$ with continuous first partial derivatives on an open set containing the region and its boundary.
-
-:::
-
 ### Stokes' theorem
 
 [[T-LO7QM]]
