@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-1SW9Q
 kind: problem
-title: The Prufer manifold
+title: The Prüfer manifold
 classification:
   areas:
   - topology
@@ -82,8 +82,6 @@ Compare Example 3 of §31.]
 :::
 
 ::: {.solution}
-**Goal:** Prove the foundational geometric and topological properties of the Prüfer manifold $X$, showing it is a locally 2-euclidean Hausdorff space that fails to be normal.
-
 <1>1. Part (a) & (b): Geometric description and basis verification.
     *Proof:*
     <2>1. Description: In the right half-plane $A$ ($z=0, x>0$), $A_c(I, \varepsilon)$ is an open wedge radiating from $(0, c, 0)$ bounded by rays of slopes $a, b$ and width $x < \varepsilon$. In the sheet $B_c$ ($z=c, x \le 0$), $B_c(I, \varepsilon)$ is an open rectangular strip $(-\varepsilon, 0] \times (a, b) \times \{c\}$.
