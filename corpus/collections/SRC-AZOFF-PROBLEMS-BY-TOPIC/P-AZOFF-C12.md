@@ -43,13 +43,13 @@ T(z)=\frac{az+b}{cz+d}.
 $$
 Consider the following conditions.
 
-a) T maps $\mathbb { R } \cup \{ \infty \}$ onto itself.
+a) $T$ maps $\RR \cup \{ \infty \}$ onto itself.
 
 b) It is possible to choose $a , b , c , d \in \mathbb { R }$
 
 c) ${ \overline { { T z } } } = T ( { \overline { { z } } } )$ for every $z \in \mathbb { C } \cup \infty$
 
-d) There exist $\alpha \in \mathbb { R }$ and $\beta \in \mathbb { C } \backslash \mathbb { R }$ satisfying T (α) = α and $T ( \overline { { \beta } } ) = \overline { { T \beta } }$
+d) There exist $\alpha \in \mathbb { R }$ and $\beta \in \mathbb { C } \backslash \mathbb { R }$ satisfying $T(\alpha) = \alpha$ and $T ( \overline { { \beta } } ) = \overline { { T \beta } }$
 
 Prove that (a), (b), and (c) are equivalent. Prove that (d) implies these
 conditions, and show that the converse need not hold.
@@ -362,7 +362,7 @@ from (d), and step <1>7 disproves the converse.
 <1>9. Q.E.D.
 
 ::: {.proof}
-Step <1>8 is the corrected conclusion requested by the repaired problem.
+Step <1>8 proves the equivalence of (a)--(c), the implication from (d), and the failure of the converse.
 :::
 :::
 
@@ -374,6 +374,6 @@ T(z)=-\frac1z
 $$
 has real coefficients and therefore satisfies (a)--(c), but its fixed-point
 equation is $z^2=-1$, so it has no real fixed point and cannot satisfy (d).
-The problem above keeps the four source conditions and corrects the requested
-implications.
+The corrected statement keeps the four source conditions and asks for
+(d) $\Rightarrow$ (a) $\Leftrightarrow$ (b) $\Leftrightarrow$ (c).
 :::
