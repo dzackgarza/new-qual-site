@@ -33,7 +33,7 @@ For $f\in L^1(\mu\times\nu)$, the sections $f(x,\wait)$ are in $L^1(\nu)$ for $\
 ## Other interchanges
 
 For nonnegative terms, sums and integrals commute by the monotone convergence theorem, or by Tonelli's theorem with counting measure.
-Differentiating under the integral sign requires a domination hypothesis on the derivative.
+For differentiation under the integral sign: if $f(\wait,t)\in L^1(\mu)$ for each $t\in(a,b)$, $\partial_t f(x,t)$ exists for all $x\in X$ and $t\in(a,b)$, and $\abs{\partial_t f(x,t)}\leq g(x)$ for some $g\in L^1(\mu)$, then $F(t)\coloneqq\int_X f(x,t)\,d\mu(x)$ is differentiable on $(a,b)$ with $F'(t)=\int_X\partial_t f(x,t)\,d\mu(x)$, by the mean value theorem and the dominated convergence theorem.
 
 [[PR-V4MOK]]
 
