@@ -74,7 +74,7 @@ Since $f=e^{-|x|}\in L^1(\mathbb R)$, the Riemann--Lebesgue lemma gives
 \widehat f(\xi)\longrightarrow0
 \qquad(|\xi|\to\infty).
 \]
-For completeness, this follows by approximating $f$ in $L^1$ by a function $g\in C_c^1(\mathbb R)$. For such $g$, integration by parts gives
+The lemma follows by approximating $f$ in $L^1$ by a function $g\in C_c^1(\mathbb R)$. For such $g$, integration by parts gives
 \[
 |\widehat g(\xi)|\le \frac{\|g'\|_1}{2\pi|\xi|}
 \qquad(\xi\ne0),
