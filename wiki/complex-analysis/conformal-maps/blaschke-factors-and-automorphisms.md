@@ -13,7 +13,7 @@ topics:
 
 # Blaschke factors and automorphisms
 
-Every biholomorphic self-map of $\DD$ has the form $e^{i\theta}\psi_a$ for some $a\in\DD$ and $\theta\in\RR$, where $\psi_a$ is the Blaschke factor below.
+Every biholomorphic self-map of $\DD$ has the form $e^{i\theta}\psi_a$ for some $a\in\DD$ and $\theta\in\RR$, where $\psi_a(z) \coloneqq (a-z)/(1-\bar a z)$ is the Blaschke factor.
 
 ## Blaschke factors
 
