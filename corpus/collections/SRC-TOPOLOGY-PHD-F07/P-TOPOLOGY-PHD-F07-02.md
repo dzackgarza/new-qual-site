@@ -32,10 +32,6 @@ Discuss.
 If you cannot answer in general do it for $X=\mathbb R$ with the usual topology.
 :::
 
-::: {.remark}
-The source page prints an extra colon immediately before the arrow in the map notation; the map is rendered here with the conventional $\to$ notation.
-:::
-
 ::: {.solution}
 <1>1. A metric on a set $X$ is a function
 \[
