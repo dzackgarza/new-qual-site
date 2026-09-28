@@ -9,28 +9,26 @@ topics:
 
 # Inseparable morphisms and Lüroth
 
-Every theorem on the previous page carries the word *separable*, and this page is what happens on the other side of it.
-The answer is unusually clean for curves: inseparability is Frobenius and nothing else, so the exceptional case is completely classified rather than merely excluded.
+Over an algebraically closed field $k$ of characteristic $p>0$, a finite morphism $X\to Y$ of smooth projective curves factors as a purely inseparable morphism $X\to X'$ followed by a separable morphism $X'\to Y$, and every purely inseparable morphism of curves is a composite of $k$-linear Frobenius morphisms.
 
 ## Frobenius as a morphism over $k$
 
 [[D-IV2FROBTWIST]]
 
-Raising to the $p$-th power is not a morphism of $k$-schemes unless Frobenius acts trivially on $k$; the Frobenius twist modifies the source structure morphism so that the relative Frobenius is $k$-linear.
-After it, Frobenius is a finite morphism of degree $p$ and the field extension it induces is $k(X) \subseteq k(X)^{1/p}$, which is where the degree comes from.
+The absolute Frobenius is a morphism of $k$-schemes only when $a^p=a$ for every $a\in k$; the Frobenius twist modifies the structure morphism of the source so that the relative Frobenius is $k$-linear.
+The $k$-linear Frobenius of a curve is finite of degree $p$ and induces $k(X)\subseteq k(X)^{1/p}$, an extension of degree $p$ because $k(X)$ has transcendence degree $1$ over the perfect field $k$.
 
 [[PR-IV2INSEP]]
 
-This is the classification: a purely inseparable morphism of curves is a composite of Frobenius maps, so it is an isomorphism of schemes that is not an isomorphism over $k$, and the genus does not move.
-Riemann--Hurwitz does not merely fail here, it has nothing to measure, since the map on differentials is zero and $\Omega_{X/Y}$ is a line bundle rather than a torsion sheaf.
+The source and target of a purely inseparable morphism of curves are isomorphic as schemes, not over $k$, so they have the same genus.
+For the $k$-linear Frobenius $F\colon X\to X'$, the map $F^*\Omega_{X'}\to\Omega_X$ is zero, so $\Omega_{X/X'}\cong\Omega_X$ is a line bundle, and the Riemann--Hurwitz formula $2g-2=p(2g-2)$ fails for $g\neq1$.
 
-## What the classification buys
+## Lüroth's theorem
 
 [[T-IV2LUROTH]]
 
-Lüroth is the payoff, and the proof is two facts placed end to end: a finite morphism of curves cannot decrease the genus, and a genus-$0$ curve over an algebraically closed field is $\PP^1$.
-The genus inequality needs both pages — Riemann--Hurwitz across the separable part, the proposition above across the inseparable part — which is why the characteristic-$p$ material is not an appendix to it.
+In the proof, a finite morphism $X\to Y$ of smooth projective curves satisfies $g(X)\ge g(Y)$: Riemann--Hurwitz gives the inequality across the separable part, and [[PR-IV2INSEP]] gives equality across the purely inseparable part.
+A genus-$0$ curve over an algebraically closed field is $\PP^1$.
 
 Restated as geometry, Lüroth says unirational implies rational in dimension $1$.
-Whether that survives in higher dimension is the Lüroth problem: yes for surfaces in characteristic $0$, no for surfaces in characteristic $p$, and no for threefolds over any field.
-The higher-dimensional counterexamples are distinguished by explicit birational invariants recorded on the linked card.
+In higher dimension this is the Lüroth problem: unirational implies rational for surfaces over an algebraically closed field of characteristic $0$, and fails for surfaces in characteristic $p$ (Zariski surfaces) and for threefolds over $\CC$ (cubic threefolds, by the intermediate Jacobian).
