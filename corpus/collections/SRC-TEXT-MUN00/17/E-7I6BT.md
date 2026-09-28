@@ -22,41 +22,47 @@ Consider the lower limit topology on $\mathbb{R}$ and the topology given by the 
 :::
 
 ::: {.solution}
-**Goal:** Determine the closures of $A = (0, \sqrt{2})$ and $B = (\sqrt{2}, 3)$ in the lower limit topology $\mathbb{R}_\ell$ (basis $\{[x, y) \mid x < y \in \mathbb{R}\}$) and the topology $\mathcal{T}_{\mathcal{C}}$ (basis $\mathcal{C} = \{[a, b) \mid a < b \in \mathbb{Q}\}$).
+Let $\mathcal T_{\mathcal C}$ be the topology with basis $\mathcal C=\{[a,b):a<b,\ a,b\in\mathbb Q\}$ of [[E-NKQY9]].
+Both $\mathbb R_\ell$ and $\mathcal T_{\mathcal C}$ are finer than the standard topology, so each closure lies in the standard closure: $\overline A\subseteq[0,\sqrt2]$ and $\overline B\subseteq[\sqrt2,3]$.
+A point $x$ lies in the closure of a set $S$ if and only if every basic open set containing $x$ meets $S$.
 
-<1>1. Preliminary topology containment:
-    Both $\mathbb{R}_\ell$ and $\mathcal{T}_{\mathcal{C}}$ are finer than the standard topology on $\mathbb{R}$.
-    Therefore, the closures in both topologies are contained within the standard Euclidean closures:
-    $$\overline{A} \subseteq [0, \sqrt{2}] \quad \text{and} \quad \overline{B} \subseteq [\sqrt{2}, 3].$$
+<1>1. In $\mathbb R_\ell$, $\overline A=\boxed{[0,\sqrt2)}$.
 
-<1>2. Closures in the lower limit topology $\mathbb{R}_\ell$:
-    $\overline{A} = [0, \sqrt{2})$ and $\overline{B} = [\sqrt{2}, 3)$.
-    *Proof:*
-    <2>1. **For $A = (0, \sqrt{2})$:**
-        - At $x = 0$: Every basic neighborhood $[0, \epsilon)$ intersects $(0, \sqrt{2})$ in $(0, \min(\epsilon, \sqrt{2})) \neq \varnothing$, so $0 \in \overline{A}$.
-        - At $x = \sqrt{2}$: The basic open set $[\sqrt{2}, 2)$ contains $\sqrt{2}$ and is disjoint from $(0, \sqrt{2})$, so $\sqrt{2} \notin \overline{A}$.
-        - Hence $\overline{A}_{\mathbb{R}_\ell} = [0, \sqrt{2})$.
-    <2>2. **For $B = (\sqrt{2}, 3)$:**
-        - At $x = \sqrt{2}$: Every basic neighborhood $[\sqrt{2}, \sqrt{2}+\epsilon)$ intersects $(\sqrt{2}, 3)$ in $(\sqrt{2}, \min(\sqrt{2}+\epsilon, 3)) \neq \varnothing$, so $\sqrt{2} \in \overline{B}$.
-        - At $x = 3$: The basic open set $[3, 4)$ contains $3$ and is disjoint from $(\sqrt{2}, 3)$, so $3 \notin \overline{B}$.
-        - Hence $\overline{B}_{\mathbb{R}_\ell} = [\sqrt{2}, 3)$.
+::: {.proof}
+Every basic set $[c,d)$ containing $0$ meets $A$ in $(0,\min(d,\sqrt2))\ne\varnothing$, so $0\in\overline A$; the points of $(0,\sqrt2)$ lie in $A$.
+The basic set $[\sqrt2,2)$ contains $\sqrt2$ and misses $A$, so $\sqrt2\notin\overline A$.
+:::
 
-<1>3. Closures in the rational-endpoint topology $\mathcal{T}_{\mathcal{C}}$:
-    $\overline{A} = [0, \sqrt{2}]$ and $\overline{B} = [\sqrt{2}, 3)$.
-    *Proof:*
-    <2>1. **Neighborhood behavior at rational vs irrational points:**
-        - For a rational $q \in \mathbb{Q}$, $[q, q')$ with $q' \in \mathbb{Q}$ is an open neighborhood.
-        - For an irrational $z \notin \mathbb{Q}$, any basic set $[a, b) \in \mathcal{C}$ containing $z$ must satisfy $a < z < b$ (since $a \in \mathbb{Q} \implies a \neq z$). Thus every basic neighborhood of $z$ contains an open interval $(a, b)$ around $z$.
-    <2>2. **For $A = (0, \sqrt{2})$:**
-        - At $x = 0 \in \mathbb{Q}$: For any rational $q > 0$, $[0, q) \cap (0, \sqrt{2}) \neq \varnothing$, so $0 \in \overline{A}$.
-        - At $x = \sqrt{2} \notin \mathbb{Q}$: Any $[a, b) \in \mathcal{C}$ containing $\sqrt{2}$ satisfies $a < \sqrt{2} < b$, so $[a, b) \cap (0, \sqrt{2}) \supseteq (\max(0, a), \sqrt{2}) \neq \varnothing$. Thus $\sqrt{2} \in \overline{A}$.
-        - Hence $\overline{A}_{\mathcal{T}_{\mathcal{C}}} = [0, \sqrt{2}]$.
-    <2>3. **For $B = (\sqrt{2}, 3)$:**
-        - At $x = \sqrt{2} \notin \mathbb{Q}$: Any $[a, b) \in \mathcal{C}$ containing $\sqrt{2}$ satisfies $a < \sqrt{2} < b$, so $[a, b) \cap (\sqrt{2}, 3) \supseteq (\sqrt{2}, \min(b, 3)) \neq \varnothing$. Thus $\sqrt{2} \in \overline{B}$.
-        - At $x = 3 \in \mathbb{Q}$: The basic set $[3, 4) \in \mathcal{C}$ contains $3$ and is disjoint from $(\sqrt{2}, 3)$, so $3 \notin \overline{B}$.
-        - Hence $\overline{B}_{\mathcal{T}_{\mathcal{C}}} = [\sqrt{2}, 3)$.
+<1>2. In $\mathbb R_\ell$, $\overline B=\boxed{[\sqrt2,3)}$.
 
-<1>4. Conclusion:
-    - In $\mathbb{R}_\ell$: $\overline{A} = [0, \sqrt{2})$ and $\overline{B} = [\sqrt{2}, 3)$.
-    - In $\mathcal{T}_{\mathcal{C}}$: $\overline{A} = [0, \sqrt{2}]$ and $\overline{B} = [\sqrt{2}, 3)$. Q.E.D.
+::: {.proof}
+Every basic set $[c,d)$ containing $\sqrt2$ has $c\le\sqrt2<d$ and meets $B$ in $(\sqrt2,\min(d,3))\ne\varnothing$, so $\sqrt2\in\overline B$.
+The basic set $[3,4)$ contains $3$ and misses $B$, so $3\notin\overline B$.
+:::
+
+<1>3. A basic set $[a,b)\in\mathcal C$ containing an irrational number $z$ satisfies $a<z<b$.
+
+::: {.proof}
+$a\le z<b$ and $a\ne z$ because $a$ is rational.
+:::
+
+<1>4. In $\mathcal T_{\mathcal C}$, $\overline A=\boxed{[0,\sqrt2]}$.
+
+::: {.proof}
+Every $[a,b)\in\mathcal C$ containing $0$ meets $A$ in $(0,\min(b,\sqrt2))\ne\varnothing$, so $0\in\overline A$.
+By step <1>3, every $[a,b)\in\mathcal C$ containing $\sqrt2$ has $a<\sqrt2$ and so meets $A$ in $(\max(0,a),\sqrt2)\ne\varnothing$; hence $\sqrt2\in\overline A$.
+:::
+
+<1>5. In $\mathcal T_{\mathcal C}$, $\overline B=\boxed{[\sqrt2,3)}$.
+
+::: {.proof}
+Every $[a,b)\in\mathcal C$ containing $\sqrt2$ has $\sqrt2<b$ and so meets $B$ in $(\sqrt2,\min(b,3))\ne\varnothing$; hence $\sqrt2\in\overline B$.
+The set $[3,4)\in\mathcal C$ contains $3$ and misses $B$, so $3\notin\overline B$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 give the closures in $\mathbb R_\ell$, and steps <1>4 and <1>5 give the closures in $\mathcal T_{\mathcal C}$.
+:::
 :::
