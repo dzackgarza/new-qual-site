@@ -39,7 +39,7 @@ Each series converges to $f$ on its annulus.
 
 ## Computing Laurent series
 
-By uniqueness of the Laurent expansion on a given annulus, any convergent expansion obtained from known series is the Laurent series, so the coefficient integrals are rarely evaluated directly.
+By uniqueness of the Laurent expansion on a given annulus, any convergent expansion obtained from known series is the Laurent series, and its coefficients equal the coefficient integrals.
 
 - **Geometric series.** Write the expression as ${1 \over 1 - u}$ with $\abs u < 1$ on the given annulus, and expand.
   On $\abs{z}<1$ one takes $u$ a multiple of $z$, and on $\abs z>1$ a multiple of $z\inv$.
