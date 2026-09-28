@@ -60,7 +60,7 @@ Finally, by the $G/Z(G)$ theorem, $|Z(G)| \ne p^2$: if $|Z(G)| = p^2$, then $|G/
 Hence, $|Z(G)| = p$.
 
 Then, since $|Z(G)| = p$, we have that $|G/Z(G)| = p^2$, and so $G/Z(G)$ is abelian.
-Thus, $[G, G] \in Z(G)$.
+Thus, $[G, G] \subseteq Z(G)$.
 Since $|Z(G)| = p$, then $|[G,G]| \in \{ 1, p\}$ again by Lagrange's theorem.
 If $|[G,G]| = p$ then $[G,G] = Z(G)$ and we are done.
 And, indeed, we must have $|[G,G]| = p$, because $G$ is nonabelian and so $|[G,G]| \ne 1$.
