@@ -162,7 +162,7 @@ $$
 <1>5. Q.E.D.
 
 ::: {.proof}
-Step <1>2 proves the hinted projective-space case, and steps <1>3--<1>4 prove
+Step <1>2 proves that $\PP^n_\CC$ is compact, and steps <1>3--<1>4 prove
 the assertion for every Zariski-closed subset.
 :::
 :::
