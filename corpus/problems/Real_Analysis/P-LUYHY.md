@@ -30,37 +30,29 @@ f \in L^p, g\in L^q \implies f \convolve g \in L^r \text{ and } \norm{f \convolv
 .\]
 :::
 ::: {.solution}
-<1>1. Setup: $1 \le p, q, r \le \infty$ with $\frac{1}{p} + \frac{1}{q} = 1 + \frac{1}{r}$; $f \in L^p$, $g \in L^q$ on $\RR^n$. Claim: $f \ast g \in L^r$ with $\|f \ast g\|_r \le \|f\|_p\|g\|_q$. This is Young's convolution inequality.
-    ::: {.proof}
-    standard theorem; we prove it via the two endpoint estimates and Riesz–Thorin interpolation.
-    :::
+Work on $\RR^n$, fix $f \in L^p$, let $p'$ be the conjugate exponent of $p$, and let $Tg = f \ast g$.
 
-<1>2. Endpoint 1: $q = 1$, $r = p$: $\|f \ast g\|_p \le \|f\|_p\|g\|_1$.
-    ::: {.proof}
-    Minkowski's inequality for integrals: $\|f\ast g\|_p = \left(\int\left|\int f(y)g(x-y)\,dy\right|^p dx\right)^{1/p} \le \int\left(\int|f(y)g(x-y)|^p\,dx\right)^{1/p}dy = \int |g(y)|\,dy\,\|f\|_p = \|g\|_1\|f\|_p$.
-    :::
+<1>1. $\|f \ast g\|_p \le \|f\|_p\|g\|_1$ for $g \in L^1$.
 
-<1>3. Endpoint 2: $r = \infty$, $p, q$ conjugate ($1/p + 1/q = 1$): $\|f \ast g\|_\infty \le \|f\|_p\|g\|_q$.
-    ::: {.proof}
-    Hölder: $|(f\ast g)(x)| \le \int |f(y)||g(x-y)|\,dy \le \|f\|_p\left(\int|g(x-y)|^q dy\right)^{1/q} = \|f\|_p\|g\|_q$ (translation invariance of $\|\cdot\|_q$); taking the sup over $x$ gives the bound.
-    :::
+::: {.proof}
+Write $f \ast g(x) = \int f(x-y)g(y)\,dy$. By Minkowski's inequality for integrals and translation invariance of the $L^p$ norm, $\|f\ast g\|_p \le \int \|f(\cdot - y)\|_p\,|g(y)|\,dy = \|f\|_p\|g\|_1$.
+:::
 
-<1>4. General case by interpolation.
-    <2>1. Fix $f \in L^p$. The map $T: g \mapsto f \ast g$ is bounded $L^1 \to L^p$ with norm $\le \|f\|_p$ (by <1>2) and $L^{p'} \to L^\infty$ with norm $\le \|f\|_p$ (by <1>3, where $p'$ is conjugate to $p$).
-        ::: {.proof}
-        <1>2 with $f$ fixed; <1>3 with $q = p'$.
-        :::
-    <2>2. The given exponents satisfy $\frac{1}{q} = \frac{1-\theta}{1} + \frac{\theta}{p'}$ and $\frac{1}{r} = \frac{1-\theta}{p} + \frac{\theta}{\infty}$ for $\theta = \frac{p(r-1)}{r}$... more precisely $\theta$ solving $\frac{1}{q} = 1 - \theta + \frac{\theta}{p'}$: then $\frac{1}{r} = \frac{1-\theta}{p}$.
-        ::: {.proof}
-        from $\frac{1}{p}+\frac{1}{q} = 1 + \frac{1}{r}$ and $\frac{1}{p'} = 1 - \frac{1}{p}$: $1 - \theta + \theta(1 - 1/p) = 1 - \theta/p = 1/q$, so $\theta = p(1 - 1/q) = p(\frac{1}{p} - \frac{1}{r}) = 1 - \frac{p}{r}$; then $\frac{1-\theta}{p} = \frac{p/r}{p} = \frac{1}{r}$. Consistent.
-        :::
-    <2>3. Riesz–Thorin: $T$ is bounded $L^q \to L^r$ with norm $\le \|f\|_p$.
-        ::: {.proof}
-        Riesz–Thorin interpolation between the two endpoint estimates (<2>1), using the exponents in <2>2.
-        :::
+<1>2. $\|f \ast g\|_\infty \le \|f\|_p\|g\|_{p'}$ for $g \in L^{p'}$.
 
-<1>5. Q.E.D.
-    ::: {.proof}
-    <1>4<2>3 gives $\|f\ast g\|_r \le \|f\|_p\|g\|_q$ for all $f \in L^p, g \in L^q$. (Endpoint cases $p, q \in \{1, \infty\}$ or $r = \infty$ are covered directly by <1>2 and <1>3. An elementary proof without interpolation exists via the three-function Hölder inequality.)
-    :::
+::: {.proof}
+By Hölder's inequality, $|(f\ast g)(x)| \le \int |f(x-y)||g(y)|\,dy \le \|f\|_p\|g\|_{p'}$ for every $x$.
+:::
+
+<1>3. With $\theta = 1 - p/r \in [0,1]$, $\frac1q = \frac{1-\theta}{1} + \frac{\theta}{p'}$ and $\frac1r = \frac{1-\theta}{p} + \frac{\theta}{\infty}$.
+
+::: {.proof}
+$\frac{1-\theta}{p} = \frac{p/r}{p} = \frac1r$. Also $1 - \theta + \theta\left(1 - \frac1p\right) = 1 - \frac\theta p = 1 - \frac1p + \frac1r = \frac1q$ by the hypothesis. Since $\frac1q \le 1$, $\frac1p \ge \frac1r$, so $p \le r$ and $\theta \in [0,1]$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>2, $T$ is bounded $L^1 \to L^p$ and $L^{p'} \to L^\infty$, both with norm at most $\|f\|_p$. By step <1>3 and the Riesz--Thorin interpolation theorem, $T$ is bounded $L^q \to L^r$ with norm at most $\|f\|_p^{1-\theta}\|f\|_p^{\theta} = \|f\|_p$.
+:::
 :::
