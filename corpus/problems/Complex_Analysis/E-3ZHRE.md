@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3ZHRE
 kind: problem
-title: Entire functions satisfying a bound
+title: Entire functions with $\abs{f(z)}\ge e^{\abs z}$
 classification:
   areas:
   - complex-analysis
