@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF22A
 kind: problem
-title: "True or false: sigma-finite mutual absolute continuity, local L^2, Fourier transform of translates"
+title: "Finite measures equivalent to a $\\sigma$-finite measure, locally $L^2$ functions in $L^1$, and the Fourier transform of a translated tempered distribution"
 classification:
   areas:
   - real-analysis
@@ -122,9 +122,12 @@ The same identity extends to tempered distributions by duality. Indeed, for ever
 &=\langle f,\tau_{-y}\widehat\varphi\rangle.
 \end{aligned}
 \]
-Using the Schwartz-function modulation/translation identity on the test function converts the last expression into
+For $\psi(x)\coloneqq e^{-2\pi i\langle x,y\rangle}\varphi(x)$, a Schwartz function, $\widehat\psi(\xi)=\widehat\varphi(\xi+y)=(\tau_{-y}\widehat\varphi)(\xi)$. Hence
 \[
-\left\langle
+\langle f,\tau_{-y}\widehat\varphi\rangle
+=\langle f,\widehat\psi\rangle
+=\langle\widehat f,\psi\rangle
+=\left\langle
 e^{-2\pi i\langle\cdot,y\rangle}\widehat f,
 \varphi
 \right\rangle.
