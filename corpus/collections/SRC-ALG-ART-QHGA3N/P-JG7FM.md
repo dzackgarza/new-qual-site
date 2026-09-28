@@ -48,7 +48,7 @@ This follows directly from the definition of \(\sigma_a\).
 \{\sigma_1,\sigma_{-1}\}.
 \]
 ::: {.proof}
-Certainly \(\sigma_1(\alpha)=\alpha\) and \(\sigma_{-1}(\alpha)=\alpha\). Conversely, suppose
+By step <1>1, \(\sigma_1(\alpha)=\alpha\) and \(\sigma_{-1}(\alpha)=\alpha\). Conversely, suppose
 \[
 \zeta_n^a+\zeta_n^{-a}=\zeta_n+\zeta_n^{-1}.
 \]
