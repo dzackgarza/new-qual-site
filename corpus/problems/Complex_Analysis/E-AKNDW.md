@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AKNDW
 kind: problem
-title: $1/(1+x^2)^2$
+title: $\int_\RR\frac{dx}{(1+x^2)^2}$
 classification:
   areas:
   - complex-analysis
