@@ -40,8 +40,8 @@ Prove that in a locally connected space the connected components of $X$ are open
 :::
 
 ::: {.solution}
-The source definition is malformed as printed.
-We use the standard intended definition: $X$ is locally connected if every point has a neighborhood base consisting of connected open sets.
+The source's phrase "the connected components of each point form a base of neighborhoods" does not specify a neighborhood base.
+We use the standard definition: $X$ is locally connected if every point has a neighborhood base consisting of connected open sets.
 
 <1>1. Let $C$ be a connected component of $X$ and let $x\in C$.
 There is a connected open neighborhood $U_x$ of $x$.
