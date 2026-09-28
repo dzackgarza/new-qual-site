@@ -26,7 +26,7 @@ Do you know a Principal Ideal Domain (PID) that is not a Euclidean Domain?
 :::
 
 ::: {.solution}
-A standard example is
+Such a ring is
 \[
 R=\mathbb Z\left[\frac{1+\sqrt{-19}}2\right],
 \]
