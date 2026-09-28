@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-7A
 kind: problem
-title: UC Berkeley Fall 2004 prelim 7A
+title: A disk self-map with $f(-\frac12)=0$ and $f(0)=\frac12$ has $f(\frac12)=\frac45$
 classification:
   areas: [prelim]
   topics: []
@@ -11,31 +11,31 @@ review: draft
 ---
 
 ::: {.problem}
-Let D be the open unit disk in C, and $f \colon D \to D$ a holomorphic function. Suppose that $f ( - \frac { 1 } { 2 } ) = 0$ and $\begin{array} { r } { f ( 0 ) = \frac { 1 } { 2 } } \end{array}$ . Prove that there is only one possible value for $f ( { \frac { 1 } { 2 } } )$ , and find it.
+Let $D$ be the open unit disk in $\mathbb{C}$, and $f\colon D\to D$ a holomorphic function. Suppose that $f(-\frac12)=0$ and $f(0)=\frac12$. Prove that there is only one possible value for $f(\frac12)$, and find it.
 :::
 
 ::: {.solution}
-We first solve for a linear fractional transformation g of D mapping
+The linear fractional transformation
 
 $$
-g ( - { \frac { 1 } { 2 } } ) = 0 , \qquad g ( 0 ) = { \frac { 1 } { 2 } }
+g(z)=\frac{z+\frac12}{1+\frac z2}=\frac{2z+1}{2+z}
 $$
 
-and find that the function
+is an automorphism of $D$ satisfying
 
 $$
-g ( z ) = { \frac { z + { \frac { 1 } { 2 } } } { 1 + { \frac { z } { 2 } } } } = { \frac { 2 z + 1 } { 2 + z } }
+g(-\tfrac12)=0,\qquad g(0)=\tfrac12.
 $$
 
-satisfies these conditions. Then the composition $h = f \circ g ^ { - 1 }$ satisfies
+Then the composition $h=f\circ g^{-1}$ satisfies
 
 $$
-h \colon D \to D , \qquad h ( 0 ) = 0 , \qquad h ( \frac 1 2 ) = \frac 1 2
+h\colon D\to D,\qquad h(0)=0,\qquad h(\tfrac12)=\tfrac12.
 $$
 
-By Schwarz’s lemma we must have $| h ( z ) | \leq | z |$ in $D .$ . But equality holds for $\begin{array} { r } { z = \frac { 1 } { 2 } } \end{array}$ 1 , so $h ( z )$ must equal z. Hence $f = g$ , and
+By Schwarz's lemma, $\abs{h(z)}\leq\abs z$ in $D$. Equality holds at $z=\frac12$, so $h(z)=\lambda z$ with $\abs\lambda=1$, and $h(\frac12)=\frac12$ gives $\lambda=1$. Hence $f=g$, and
 
 $$
-f ( { \frac { 1 } { 2 } } ) = { \frac { 4 } { 5 } } .
+f(\tfrac12)=\boxed{\tfrac45}.
 $$
 :::
