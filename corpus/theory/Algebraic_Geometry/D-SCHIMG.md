@@ -18,7 +18,7 @@ relations:
 review: draft
 prompts:
 - What is the scheme-theoretic image of a morphism?
-- Why is the set-theoretic image not usable?
+- Which topological properties can the set-theoretic image of a morphism fail to have?
 - What is the scheme-theoretic closure of a locally closed subscheme?
 ---
 
@@ -44,9 +44,9 @@ For $f: \Spec B \to \Spec A$ induced by $\varphi: A \to B$, the image is $\Spec(
 :::
 
 ::: {.remark}
-The set-theoretic image is not usable because it need not be closed, nor open, nor even locally closed: $\AA^2 \to \AA^2$, $(x,y) \mapsto (x, xy)$, has image the plane minus the $y$-axis plus the origin.
-Chevalley's theorem supplies the topological substitute: the image of a constructible set under a finite-type morphism of Noetherian schemes is constructible.
+The set-theoretic image of a morphism need not be closed, open, or locally closed: $\AA^2 \to \AA^2$, $(x,y) \mapsto (x, xy)$, has image the plane minus the $y$-axis, together with the origin.
+By Chevalley's theorem, the image of a constructible set under a finite-type morphism of Noetherian schemes is constructible.
 
-The scheme-theoretic image of $\Spec k[\eps]/\eps^2 \to \AA^1$ hitting the origin with a nonzero tangent direction is the double point, because the kernel of $k[t] \to k[\eps]/\eps^2$ is $(t^2)$.
-Taking closures of point sets would lose exactly that.
+The scheme-theoretic image of the morphism $\Spec k[\eps]/\eps^2 \to \AA^1$ given by $t\mapsto\eps$ is the double point $V(t^2)$, because the kernel of $k[t] \to k[\eps]/\eps^2$ is $(t^2)$.
+The closure of its set-theoretic image, with the reduced induced structure, is the reduced point $V(t)$.
 :::
