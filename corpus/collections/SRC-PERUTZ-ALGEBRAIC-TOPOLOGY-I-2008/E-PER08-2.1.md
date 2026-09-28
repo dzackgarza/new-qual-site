@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-2.1
 kind: problem
-title: Iwasawa decomposition and the topology of SL_2(R)
+title: Iwasawa decomposition and the topology of $\operatorname{SL}_2(\RR)$
 classification:
   areas: [topology]
   topics: []
