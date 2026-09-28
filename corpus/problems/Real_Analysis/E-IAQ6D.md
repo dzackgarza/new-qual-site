@@ -29,30 +29,31 @@ Show that $f(t)=0$ for all $t\in[0,1]$.
 
 
 ::: {.solution}
-<1>1. Extend the moment condition from monomials to all polynomials.
+<1>1. $\int_0^1 f(t)p(t)\,dt = 0$ for every polynomial $p$.
+
 ::: {.proof}
 If
-\[
+$$
 p(t)=\sum_{k=0}^N a_k t^k,
-\]
+$$
 then linearity of the integral and the hypotheses give
-\[
+$$
 \int_0^1 f(t)p(t)\,dt
 =
 \sum_{k=0}^N a_k\int_0^1 f(t)t^k\,dt
 =0.
-\]
-Thus $f$ is orthogonal, in the integral pairing, to every polynomial.
+$$
 :::
 
-<1>2. Approximate $f$ uniformly by polynomials.
+<1>2. $\int_0^1 f(t)^2\,dt = 0$.
+
 ::: {.proof}
 By the Weierstrass approximation theorem, there are polynomials $p_n$ such that
-\[
+$$
 \|p_n-f\|_\infty\longrightarrow0.
-\]
+$$
 Since $f$ is continuous on $[0,1]$, it is integrable, and therefore
-\[
+$$
 \begin{aligned}
 \left|\int_0^1 f(t)^2\,dt-\int_0^1 f(t)p_n(t)\,dt\right|
 &=
@@ -61,18 +62,13 @@ Since $f$ is continuous on $[0,1]$, it is integrable, and therefore
 \|f-p_n\|_\infty\int_0^1|f(t)|\,dt
 \longrightarrow0.
 \end{aligned}
-\]
-But Step 1 gives
-\[
-\int_0^1 f(t)p_n(t)\,dt=0
-\]
-for every $n$. Hence
-\[
-\int_0^1 f(t)^2\,dt=0.
-\]
-Since $f^2$ is continuous and nonnegative, this implies $f(t)^2=0$ for every $t\in[0,1]$. Therefore
-\[
-\boxed{f\equiv0.}
-\]
+$$
+By step <1>1, $\int_0^1 f(t)p_n(t)\,dt=0$ for every $n$, so $\int_0^1 f(t)^2\,dt=0$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Since $f^2$ is continuous and nonnegative, step <1>2 implies $f(t)^2=0$ for every $t\in[0,1]$, that is, $\boxed{f\equiv0}$.
 :::
 :::
