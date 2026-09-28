@@ -25,8 +25,6 @@ Show that if $f: A \to Y$ is uniformly continuous, then $f$ can be uniquely exte
 :::
 
 ::: {.solution}
-**Goal:** Prove that a uniformly continuous map $f: A \to Y$ into a complete metric space $Y$ extends uniquely to a uniformly continuous map $g: \overline{A} \to Y$.
-
 <1>1. Definition and well-definedness of the extension $g$:
     *Proof:*
     <2>1. Let $x \in \overline{A}$. There exists a sequence $(x_n)_{n=1}^\infty$ in $A$ such that $\lim_{n \to \infty} x_n = x$.
@@ -55,6 +53,6 @@ Show that if $f: A \to Y$ is uniformly continuous, then $f$ can be uniquely exte
     <2>1. $A$ is dense in $\overline{A}$, and the metric codomain $Y$ is Hausdorff.
     <2>2. Any two continuous functions on $\overline{A}$ that agree on the dense subset $A$ are identically equal on all of $\overline{A}$.
 
-<1>4. Conclusion:
-    $f$ extends uniquely to a uniformly continuous function $g: \overline{A} \to Y$. Q.E.D.
+<1>4. Q.E.D.
+    Steps <1>1, <1>2, and <1>3 give existence, uniform continuity, and uniqueness of the extension $g$.
 :::
