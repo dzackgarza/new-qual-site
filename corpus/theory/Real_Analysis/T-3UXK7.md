@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-3UXK7
 kind: theorem
 title: Convolutions of bounded integrable functions vanish at infinity
-slogan: 'Bounded $L^1$ convolution decays to zero at infinity.'
+slogan: 'If $f,g\in L^1\cap L^\infty$, then $(f*g)(x)\to0$ as $\abs{x}\to\infty$.'
 classification:
   areas:
   - real-analysis
