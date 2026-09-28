@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-9
 kind: problem
-title: "SS 10.9: The two-squares theorem via the representation count r2(n)"
+title: Sums of two squares from the formula for $r_2(n)$
 classification:
   areas:
   - complex-analysis
@@ -26,7 +26,7 @@ audit:
 :::
 
 ::: {.solution}
-Use the formula
+Recall the two-squares formula
 \[
 r_2(n)=4\bigl(d_1(n)-d_3(n)\bigr),
 \tag{1}
