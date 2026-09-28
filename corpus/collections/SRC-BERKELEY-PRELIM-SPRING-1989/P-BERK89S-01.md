@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK89S-01
 kind: problem
-title: Strengthen a convergent positive series by an unbounded weight while preserving convergence
+title: Unbounded weights preserving convergence of a positive series
 classification:
   areas: [prelim]
   topics: []
