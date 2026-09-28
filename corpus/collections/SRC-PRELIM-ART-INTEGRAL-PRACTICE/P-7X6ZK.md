@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7X6ZK
 kind: problem
-title: Evaluate $\int_{0}^{\pi} \sqrt{1 + \cos(2x)} \, dx$
+title: $\int_{0}^{\pi} \sqrt{1 + \cos(2x)} \, dx$
 classification:
   areas:
   - prelim
@@ -24,13 +24,11 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the definite integral $\int_{0}^{\pi} \sqrt{1 + \cos(2x)} \, dx$.
-
-<1>1. Trigonometric simplification: For all $x \in [0, \pi]$, $1 + \cos(2x) = 2\cos^2(x)$, hence $\sqrt{1 + \cos(2x)} = \sqrt{2}|\cos(x)|$.
+<1>1. For all $x \in [0, \pi]$, $1 + \cos(2x) = 2\cos^2(x)$, hence $\sqrt{1 + \cos(2x)} = \sqrt{2}|\cos(x)|$.
 ::: {.proof}
 By the cosine double-angle formula $\cos(2x) = 2\cos^2(x) - 1$.
-:::
 Taking the principal square root gives $\sqrt{2\cos^2(x)} = \sqrt{2}\sqrt{\cos^2(x)} = \sqrt{2}|\cos(x)|$.
+:::
 
 <1>2. Partitioning the integral over intervals of constant sign of $\cos(x)$: $$\int_0^\pi |\cos(x)| \, dx = \int_0^{\pi/2} \cos(x) \, dx + \int_{\pi/2}^\pi (-\cos(x)) \, dx.$$
 ::: {.proof}
