@@ -41,7 +41,7 @@ e. If $E$ and $F$ are finite fields and $|F|$ divides $|E|$ then $E$ has a subfi
 :::
 
 ::: {.solution}
-The answers are **false, false, true, true, false**.
+The answers are false, false, true, true, false.
 We use the quadratic-tower criterion for straightedge-and-compass
 constructibility [@DF04]. In particular, a constructible algebraic number
 lies in a finite tower of quadratic extensions of $\mathbf Q$, and its
@@ -113,8 +113,7 @@ For every root $\alpha$, irreducibility gives
 $[\mathbf Q(\alpha):\mathbf Q]=6$. If $\alpha$ lay in a quadratic tower
 of total degree $2^m$, the tower law would give $6\mid2^m$, which is
 impossible. Thus no additional hypothesis compatible with irreducibility
-and degree $6$ can make this assertion true. One must change one of
-those requirements, not merely add an unrelated restriction.
+and degree $6$ makes this assertion true.
 :::
 
 <1>3. Part (c) is true.
@@ -143,12 +142,13 @@ so
 $$
 \sigma(EK)=\sigma(E)\sigma(K)=EK.
 $$
-Thus $EK/F$ is normal and separable, hence Galois. This argument does
-not require the original Galois extensions to have finite degree.
+Thus $EK/F$ is normal and separable, hence Galois. The same argument
+applies when $E/F$ and $K/F$ have infinite degree.
 :::
 
-<1>5. Part (e) is false. The correct condition, for $|F|=p^a$ and
-$|E|=p^b$, is $a\mid b$, not merely $p^a\mid p^b$.
+<1>5. Part (e) is false. For $|F|=p^a$ and
+$|E|=p^b$, the field $E$ has a subfield isomorphic to $F$ if and only
+if $a\mid b$.
 
 ::: {.proof}
 <2>1. Take $F=\mathbf F_4$ and $E=\mathbf F_8$. For explicit models use
