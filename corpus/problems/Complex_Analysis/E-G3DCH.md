@@ -22,6 +22,6 @@ Find the orders of zeros of the following functions:
 ::: {.solution}
 \envlist
 
-- $z=0$ of order 3: if $z_0$ is order $n$ for $f$, then it's order $kn$ for $f^k$.
-  So check that $e^z-1$ has a root $z=0$ and $\dd{}{z}e^z-1\mid_{z=0} = e^z\mid_{z=0}\neq 0$, making it order 1.
+- The zeros are $z=2\pi i k$, $k\in\ZZ$, each of order 3: if $z_0$ is a zero of order $n$ for $f$, then it is a zero of order $kn$ for $f^k$.
+  The zeros of $e^z-1$ are exactly the points $2\pi ik$, and $\dd{}{z}(e^z-1)\mid_{z=2\pi ik} = e^{2\pi ik}=1\neq 0$, so each is a zero of order 1.
 :::
