@@ -56,8 +56,8 @@ Show that there is a unique morphism $X \xrightarrow{g} Y_{\red}$ such that $f$ 
 ::: {.solution}
 **Part (a).**
 
-$\implies$: if $\OO_{X, p}$ has nilpotents, pick $s$ with $s^n = 0 \in \OO_{X, p}$.
-This lifts to some $s^n = 0 \in \OO_X(U)$, so $s$ is nilpotent in $\OO_X(U)$, a contradiction.
+$\implies$: suppose $X$ is reduced and $\OO_{X, p}$ has a nonzero nilpotent germ $s_p$ with $s_p^n = 0$.
+Represent $s_p$ by $s\in\OO_X(U)$ for an open $U\ni p$; since $s^n$ has zero germ at $p$, shrinking $U$ gives $s^n = 0 \in \OO_X(U)$, while $s\neq 0$ because its germ is nonzero. So $s$ is a nonzero nilpotent in $\OO_X(U)$, a contradiction.
 
-$\impliedby$: if $s\in \OO_X(U)$ is nilpotent, then $\OO_X\mid^X_p(s^n) = 0$ in the stalk, making $s$ nilpotent in the stalk.
+$\impliedby$: suppose every $\OO_{X,p}$ is reduced, and let $s\in \OO_X(U)$ with $s^n=0$. For each $p\in U$ the germ $s_p$ satisfies $s_p^n = 0$ in $\OO_{X,p}$, so $s_p=0$. A section whose germs all vanish is zero by the sheaf axiom, so $s = 0$.
 :::
