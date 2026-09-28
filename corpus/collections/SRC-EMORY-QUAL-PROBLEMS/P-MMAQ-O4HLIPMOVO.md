@@ -36,16 +36,6 @@ $\#K=p^r$ and $\#L=p^s$ for the same prime $p$, with $r\mid s$.
 Here $r,s$ are positive integers.
 :::
 
-::: {.remark}
-The inequality $r\leq s$ does not suffice. For example,
-$\mathbb F_4$ cannot embed in $\mathbb F_8$, because the
-tower law would require $2$ to divide $3$. Cardinalities
-determine existence of an embedding, not literal inclusion
-of arbitrary presentations of the fields. If both fields
-are realized inside one algebraic closure of $\mathbb F_p$,
-the criterion also characterizes literal subfield containment.
-:::
-
 ::: {.solution}
 Every finite field has prime characteristic and cardinality
 a positive power of that prime [@DF04]. When an embedding
@@ -55,7 +45,7 @@ $K\hookrightarrow L$ is given, identify $K$ with its image.
 <2>1. If $K$ is a subfield of $L$, then $L$ is a finite-dimensional vector space over $K$.
 Let $d = [L : K] \ge 1$ denote the degree of the extension.
 ::: {.proof}
-subfields endow the larger field with a vector space structure.
+Multiplication $K\times L\to L$ restricted from $L$ makes $L$ a $K$-vector space, and $L$ is finite.
 :::
 <2>2. Since $K$ has characteristic $p$, $L$ must also have characteristic $p$.
 The cardinality of $L$ is related to the cardinality of $K$ by:
@@ -63,11 +53,11 @@ The cardinality of $L$ is related to the cardinality of $K$ by:
 \# L = (\# K)^d = (p^r)^d = p^{rd}.
 \]
 ::: {.proof}
-a $d$-dimensional vector space over a field with $q$ elements contains $q^d$ elements.
+A $d$-dimensional vector space over a field with $q$ elements contains $q^d$ elements.
 :::
 <2>3. Since $\# L = p^s$, we have $s = rd$, which implies $r \mid s$ (and therefore $r \le s$).
 ::: {.proof}
-equating prime powers $p^s = p^{rd}$.
+Unique factorization in $\mathbb Z$ turns $p^s = p^{rd}$ into $s=rd$.
 :::
 
 <1>2. Reverse direction ($\#K = p^r, \, \#L = p^s$ with $r \mid s \implies K \hookrightarrow L$):
@@ -76,7 +66,7 @@ equating prime powers $p^s = p^{rd}$.
 x^k - 1 = (x - 1)(x^{k-1} + \dots + 1) \quad \text{applied to } x = p^r, \, s = kr.
 \]
 ::: {.proof}
-polynomial divisibility of $x^k - 1$ by $x - 1$.
+Evaluate the displayed factorization of $x^k-1$ at the integer $x=p^r$.
 :::
 <2>2. The multiplicative group $L^\times$ is a cyclic group of order $p^s - 1$.
 Since $(p^r - 1) \mid (p^s - 1)$, $L^\times$ contains a unique cyclic subgroup $H$ of order $p^r - 1$.
@@ -180,4 +170,12 @@ $p^r$ roots and a degree-$p^r$ polynomial has no
 others. Thus in that setting $K=K'$, which proves
 the literal-containment assertion of the remark.
 :::
+:::
+
+::: {.remark}
+The inequality $r\leq s$ is not sufficient: $\mathbb F_4$
+does not embed in $\mathbb F_8$, because the tower law
+would require $2\mid 3$. If both fields lie in one
+algebraic closure of $\mathbb F_p$, the criterion
+$r\mid s$ also characterizes the containment $K\subseteq L$.
 :::
