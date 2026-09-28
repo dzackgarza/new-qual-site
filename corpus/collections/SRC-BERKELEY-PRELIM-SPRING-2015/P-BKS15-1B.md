@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 For all integers $n>2$, prove
-\[
+$$
 \frac{n^n}{e^{n-1}}<n!<\frac{(n+1)^{n+1}}{e^n}.
-\]
+$$
 :::
 
 ::: {.solution}
