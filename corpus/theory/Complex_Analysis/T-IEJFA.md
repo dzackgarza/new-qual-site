@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-IEJFA
 kind: theorem
 title: Weierstrass factorization
-slogan: 'On a simply connected domain, a meromorphic function is an exponential times a zero-factor divided by a pole-factor.'
+slogan: 'On a simply connected domain, a meromorphic function is $e^gh_1/h_2$ with $g$, $h_1$, $h_2$ holomorphic, where $h_1$ vanishes exactly at its zeros and $h_2$ exactly at its poles, with multiplicity.'
 classification:
   areas:
   - complex-analysis
