@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2DPQC
 kind: problem
-title: Uniform limit of holomorphic is holomorphic
+title: Uniform limits of holomorphic functions are holomorphic
 classification:
   areas:
   - complex-analysis
