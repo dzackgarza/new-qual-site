@@ -76,3 +76,7 @@ $$
 $$
 :::
 :::
+
+::: {.remark}
+The map $z\mapsto f(-z)$ named in part (c) is a conformal isomorphism $\DD\to\Omega$ fixing $0$ with derivative $-f'(0)<0$, so step <1>2 does not identify it with $f$, and it gives no relation among the $a_j$. The reflection $\overline{f(\overline z)}$ of step <1>3 does.
+:::
