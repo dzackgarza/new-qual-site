@@ -26,6 +26,7 @@ Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto gh\i
 <1>1. Write $\varphi: G \to \aut(G)$ for the map $\varphi(g) = c_g$, where $c_g(h) = gh\inverseof{g}$.
 
 <1>2. $g \in \ker \varphi$ if and only if $g \in Z(G)$.
+
 ::: {.proof}
 <2>1. $\ker \varphi = \ts{ g \in G \st c_g = \id_G }$, since the identity of $\aut(G)$ is the identity automorphism.
 <2>2. $c_g = \id_G$ says $gh\inverseof{g} = h$ for every $h \in G$.
@@ -34,6 +35,7 @@ Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto gh\i
 
 :::
 <1>3. Q.E.D.
+
 ::: {.proof}
 Step <1>2 is the equality $\ker \varphi = Z(G)$ of subsets, and both sides are subgroups of $G$.
 :::

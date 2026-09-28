@@ -28,6 +28,7 @@ Show that a morphism $f: X \to Y$ is locally of finite type if and only if for e
 
 ::: {.solution}
 <1>1. If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is locally of finite type.
+
 ::: {.proof}
 Choose any affine open cover
 \[
@@ -54,6 +55,7 @@ There is an affine open $V_i=\Spec B_i\subseteq Y$ containing $f(x)$ and an affi
 U=\Spec A\subseteq f^{-1}(V_i)
 \]
 containing $x$ such that $A$ is a finitely generated $B_i$-algebra.
+
 ::: {.proof}
 This is the defining affine-cover condition for a locally finite type morphism: choose one target affine from a witnessing cover which contains $f(x)$, and then one source affine from the corresponding cover of its inverse image which contains $x$.
 :::
@@ -66,6 +68,7 @@ with
 \[
 f(x)\in W\subseteq V\cap V_i.
 \]
+
 ::: {.proof}
 The intersection $V\cap V_i$ is an open neighborhood of $f(x)$ inside the affine scheme $V=\Spec B$.  Distinguished opens form a basis for the topology of an affine scheme, so some
 \[
@@ -82,6 +85,7 @@ of $x$ such that
 \[
 U'\subseteq f^{-1}(W).
 \]
+
 ::: {.proof}
 The set
 \[
@@ -99,6 +103,7 @@ Set $U'=D(a)$.
 U'=\Spec A_a
 \]
 has coordinate ring finitely generated as a $B$-algebra.
+
 ::: {.proof}
 Because $W=D(g)\subseteq V=\Spec B$,
 \[
@@ -133,6 +138,7 @@ so $A_a$ is a finitely generated $B$-algebra.
 :::
 
 <1>6. The inverse image $f^{-1}(V)$ is covered by affine opens whose coordinate rings are finitely generated $B$-algebras.
+
 ::: {.proof}
 The point $x\in f^{-1}(V)$ was arbitrary.  Steps <1>2--<1>5 construct, around every such $x$, an affine open
 \[
@@ -142,11 +148,13 @@ with $A_a$ finitely generated over $B$.  These neighborhoods therefore form the 
 :::
 
 <1>7. Hence the two conditions are equivalent.
+
 ::: {.proof}
 Step <1>1 proves one implication and steps <1>2--<1>6 prove the converse.
 :::
 
 <1>8. Q.E.D.
+
 ::: {.proof}
 Step <1>7 is the claimed equivalence.
 :::

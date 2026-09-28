@@ -47,6 +47,7 @@ L=K(X).
 Y=\Spec B
 \]
 with $B$ a domain, while all the hypotheses remain true.
+
 ::: {.proof}
 Every nonempty open subset of the integral scheme $Y$ is dense.
 If
@@ -73,6 +74,7 @@ B\hookrightarrow A_i,
 \qquad
 \operatorname{Frac}(A_i)=L.
 \]
+
 ::: {.proof}
 By Hartshorne II.3.3(b), finite type over the affine scheme $Y=\Spec B$ gives a finite affine cover with each $A_i$ finitely generated over $B$.
 
@@ -87,6 +89,7 @@ the generic point of $Y$.  Hence the ring map $B\to A_i$ has zero kernel, and II
 \[
 \boxed{L/K\text{ is finite}.}
 \]
+
 ::: {.proof}
 Fix one affine chart $U_i=\Spec A_i$ and let
 \[
@@ -128,6 +131,7 @@ Hence $[L:K]<\infty$.
 :::
 
 <1>4. After replacing $Y$ by a smaller dense distinguished open, we may assume that every $A_i$ is finite as a $B$-module.
+
 ::: {.proof}
 For each $i$, choose algebra generators
 \[
@@ -157,6 +161,7 @@ Replace $Y$ by the dense open $D(d)$ and $X$ by its inverse image, and replace e
 W=U_1\cap\cdots\cap U_r.
 \]
 Then $W$ is a nonempty open subset of $X$.
+
 ::: {.proof}
 Each $U_i$ is nonempty and $X$ is irreducible, so every $U_i$ contains the generic point $\xi$.  Hence their finite intersection also contains $\xi$.
 :::
@@ -170,6 +175,7 @@ for an ideal $J_i\subseteq A_i$.  Then
 J_i\cap B
 \]
 contains a nonzero element.
+
 ::: {.proof}
 The complement $U_i\setminus W$ is closed in the affine scheme $U_i$, so it is $V(J_i)$ for some ideal.  Since $W$ is nonempty, $V(J_i)\ne U_i$, and because $A_i$ is a domain this implies
 \[
@@ -206,6 +212,7 @@ Then
 \[
 f^{-1}(D(b))\subseteq W.
 \]
+
 ::: {.proof}
 The product $b$ is nonzero because $B$ is a domain.
 
@@ -229,6 +236,7 @@ Therefore $x\in W$.
 f^{-1}(D(b))\longrightarrow D(b)
 \]
 is finite.
+
 ::: {.proof}
 By <1>7, the entire inverse image lies in every $U_i$.  Fix $U_1=\Spec A_1$.  Inside this affine chart,
 \[
@@ -248,6 +256,7 @@ By <1>4, $A_1$ is a finite $B$-module, so localization gives $(A_1)_b$ finite ov
 U=D(b)\subseteq Y
 \]
 is dense and has the required property.
+
 ::: {.proof}
 Since $B$ is a domain and $b\ne0$, the distinguished open $D(b)$ contains the generic point of $Y$ and is therefore nonempty and dense.  Step <1>8 proves that
 \[
@@ -257,6 +266,7 @@ is finite.
 :::
 
 <1>10. Q.E.D.
+
 ::: {.proof}
 Step <1>9 is the required dense-open finiteness statement.
 :::

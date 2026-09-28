@@ -49,6 +49,7 @@ where $V$ runs over open neighborhoods of $f(U)$ in $Y$.
 f^{-1}f_*\mathcal F\longrightarrow\mathcal F.
 }
 \]
+
 ::: {.proof}
 Before sheafification, for an open $U\subseteq X$ one has
 \[
@@ -93,6 +94,7 @@ f^{-1}f_*\mathcal F
 \mathcal G\longrightarrow f_*f^{-1}\mathcal G.
 }
 \]
+
 ::: {.proof}
 Let $V\subseteq Y$ be open and take
 \[
@@ -120,6 +122,7 @@ These maps commute with restriction in $V$, hence define the desired sheaf morph
 :::
 
 <1>3. The maps $\varepsilon$ are natural in $\mathcal F$, and the maps $\eta$ are natural in $\mathcal G$.
+
 ::: {.proof}
 Let
 \[
@@ -160,6 +163,7 @@ f^{-1}\eta_{\mathcal G}
 \operatorname{id}_{f^{-1}\mathcal G}.
 }
 \]
+
 ::: {.proof}
 A section of $f^{-1}\mathcal G$ is locally represented by a section
 \[
@@ -194,6 +198,7 @@ f_*\varepsilon_{\mathcal F}
 \operatorname{id}_{f_*\mathcal F}.
 }
 \]
+
 ::: {.proof}
 Let $V\subseteq Y$ and
 \[
@@ -238,6 +243,7 @@ Thus
 \longrightarrow
 \operatorname{Hom}_Y(\mathcal G,f_*\mathcal F).
 \]
+
 ::: {.proof}
 Both arrows in the displayed composite are sheaf morphisms on $Y$, so their composite is one.  This defines $\Phi$.
 :::
@@ -263,6 +269,7 @@ Thus
 \longrightarrow
 \operatorname{Hom}_X(f^{-1}\mathcal G,\mathcal F).
 \]
+
 ::: {.proof}
 Again this is a composite of sheaf morphisms, now on $X$.
 :::
@@ -271,6 +278,7 @@ Again this is a composite of sheaf morphisms, now on $X$.
 \[
 \Psi(\Phi(\alpha))=\alpha.
 \]
+
 ::: {.proof}
 Expand the definitions:
 \[
@@ -309,6 +317,7 @@ The last two factors compose to the identity by <1>4, so the result is $\alpha$.
 \[
 \Phi(\Psi(\beta))=\beta.
 \]
+
 ::: {.proof}
 Expanding gives
 \[
@@ -355,11 +364,13 @@ Hence
 \[
 \boxed{f^{-1}\dashv f_*.}
 \]
+
 ::: {.proof}
 Steps <1>8 and <1>9 show that $\Phi$ and $\Psi$ are inverse bijections.  Their formulas are built functorially from $f^{-1}$, $f_*$, the unit, and the counit, so the bijection is natural in both $\mathcal F$ and $\mathcal G$.  This is exactly the definition that $f^{-1}$ is left adjoint to $f_*$.
 :::
 
 <1>11. Q.E.D.
+
 ::: {.proof}
 Steps <1>1--<1>5 construct the natural maps requested, and <1>6--<1>10 prove the adjunction.
 :::

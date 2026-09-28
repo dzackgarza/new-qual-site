@@ -42,6 +42,7 @@ glue to a morphism
 \[
 g:Y\longrightarrow X.
 \]
+
 ::: {.proof}
 For each $i$, the restriction
 \[
@@ -58,6 +59,7 @@ Morphisms of schemes glue uniquely on an open cover of the source, so the $g_i$ 
 :::
 
 <1>2. The morphism $g$ is inverse to $f$; therefore $f$ is an isomorphism.
+
 ::: {.proof}
 On every $U_i$,
 \[
@@ -71,6 +73,7 @@ Thus $g\circ f=\id_X$.
 :::
 
 <1>3. If $X$ is affine, then the condition in part (b) holds.
+
 ::: {.proof}
 Write $X=\Spec A$ and take $f_1=1\in A$.  Then $X_{f_1}=X$ is affine and $f_1$ generates the unit ideal.
 :::
@@ -80,6 +83,7 @@ Write $X=\Spec A$ and take $f_1=1\in A$.  Then $X_{f_1}=X$ is affine and $f_1$ g
 A=\Gamma(X,\mathcal O_X)
 \]
 contains elements $f_1,\ldots,f_r$ such that each $X_{f_i}$ is affine and the $f_i$ generate the unit ideal.  Then the $X_{f_i}$ cover $X$.
+
 ::: {.proof}
 Choose $a_i\in A$ with
 \[
@@ -93,6 +97,7 @@ which is impossible.  Hence the $X_{f_i}$ cover $X$.
 :::
 
 <1>5. The finite affine cover $\{X_{f_i}\}$ satisfies the hypothesis of Hartshorne II.2.16(c).
+
 ::: {.proof}
 For all $i,j$,
 \[
@@ -110,6 +115,7 @@ be the canonical morphism corresponding under Hartshorne II.2.4 to the identity 
 \eta^{-1}(D(f_i))=X_{f_i}
 \]
 for every $i$.
+
 ::: {.proof}
 For $x\in X$, the prime ideal corresponding to $\eta(x)$ is
 \[
@@ -130,6 +136,7 @@ x\in X_{f_i}.
 \eta_i:X_{f_i}\longrightarrow D(f_i)
 \]
 is an isomorphism.
+
 ::: {.proof}
 By <1>5, Hartshorne II.2.16(d) applies to $X$, so
 \[
@@ -153,6 +160,7 @@ Under these identifications, $\eta_i$ is induced by the localization map $A_{f_i
 :::
 
 <1>8. The distinguished opens $D(f_1),\ldots,D(f_r)$ cover $\Spec A$.
+
 ::: {.proof}
 Their complement is
 \[
@@ -165,6 +173,7 @@ V(1)=\varnothing.
 :::
 
 <1>9. The canonical morphism $\eta:X\to\Spec A$ is an isomorphism.  Consequently $X$ is affine.
+
 ::: {.proof}
 By <1>8, the $D(f_i)$ cover $\Spec A$.  By <1>6 and <1>7, for every $i$ the induced map
 \[
@@ -184,11 +193,13 @@ X\text{ is affine}
 \end{array}
 }
 \]
+
 ::: {.proof}
 The forward implication is <1>3 and the reverse implication is <1>4--<1>9.
 :::
 
 <1>11. Q.E.D.
+
 ::: {.proof}
 Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>10 prove part (b).
 :::

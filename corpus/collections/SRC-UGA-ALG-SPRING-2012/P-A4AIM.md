@@ -35,21 +35,25 @@ b. Exhibit with justification a subset $S$ of $M_{m, n}(k)$ which contains preci
 **Part (a).**
 
 <1>1. A group $G$ acts on a set $X$ if there is a map $G \times X \to X$, $(g, x) \mapsto g \cdot x$, such that $e \cdot x = x$ and $g \cdot (h \cdot x) = (gh) \cdot x$ for all $g, h \in G$, $x \in X$.
+
 ::: {.proof}
 definition of a group action.
 :::
 
 <1>2. The given formula defines a group action.
 <2>1. Identity: $(I_m, I_n) \cdot X = I_m X I_n^{-1} = X$.
+
 ::: {.proof}
 the identity matrices act trivially.
 :::
 <2>2. Compatibility: $(A_1, B_1) \cdot ((A_2, B_2) \cdot X) = (A_1, B_1) \cdot (A_2 X B_2^{-1}) = A_1 A_2 X B_2^{-1} B_1^{-1} = (A_1 A_2) X (B_1 B_2)^{-1} = (A_1 A_2, B_1 B_2) \cdot X$.
+
 ::: {.proof}
 direct computation, using $(B_1 B_2)^{-1} = B_2^{-1} B_1^{-1}$.
 :::
 
 <1>3. Hence this is a group action.
+
 ::: {.proof}
 <1>1 and <1>2.
 :::
@@ -57,6 +61,7 @@ direct computation, using $(B_1 B_2)^{-1} = B_2^{-1} B_1^{-1}$.
 **Part (b).**
 
 <1>1. Two matrices $X, Y \in M_{m,n}(k)$ are in the same orbit iff they have the same rank.
+
 ::: {.proof}
 $AXB^{-1}$ has the same rank as $X$ (since $A$ and $B^{-1}$ are invertible); conversely, two matrices of the same rank $r$ are related by $X = A Y B^{-1}$ for suitable invertible $A, B$ (row and column operations reduce any rank-$r$ matrix to the same canonical form).
 :::
@@ -64,11 +69,13 @@ $AXB^{-1}$ has the same rank as $X$ (since $A$ and $B^{-1}$ are invertible); con
 <1>2. Hence a set $S$ containing exactly one element of each orbit is
 $$S = \{ D_r : 0 \le r \le \min(m, n) \},$$
 where $D_r$ is the $m \times n$ matrix with $1$'s in the first $r$ diagonal positions and $0$'s elsewhere.
+
 ::: {.proof}
 $D_r$ has rank $r$, and by <1>1 the orbits are exactly the rank classes, so the $D_r$ (one per possible rank) form a complete set of orbit representatives.
 :::
 
 <1>3. Q.E.D.
+
 ::: {.proof}
 <1>3 (a) and <1>2 (b).
 :::

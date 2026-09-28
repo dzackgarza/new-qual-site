@@ -39,6 +39,7 @@ and characterize the collection of functions of each type.
 
 ::: {.solution}
 <1>1. If $\mu\{f>1\}>0$, the integrals diverge to infinity.
+
 ::: {.proof}
 Let
 \[
@@ -62,6 +63,7 @@ Then
 :::
 
 <1>2. If $f\le1$ almost everywhere, identify the finite limit.
+
 ::: {.proof}
 Assume
 \[
@@ -84,6 +86,7 @@ and the constant function $1$ is integrable because $\mu(X)<\infty$. By the Domi
 :::
 
 <1>3. State the exact dichotomy.
+
 ::: {.proof}
 Combining the two cases,
 \[

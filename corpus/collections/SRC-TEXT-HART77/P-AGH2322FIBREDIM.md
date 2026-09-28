@@ -76,6 +76,7 @@ Then
 \mathfrak q\cap B=\mathfrak p
 \]
 and $\mathfrak q$ is minimal over $\mathfrak pA$.
+
 ::: {.proof}
 The equality of contractions says exactly that $f(\zeta)=\eta'$.
 
@@ -88,6 +89,7 @@ Thus its generic prime $\mathfrak q$ is minimal over $\mathfrak pA$.
 \[
 \dim\bigl(A_{\mathfrak q}/\mathfrak pA_{\mathfrak q}\bigr)=0.
 \]
+
 ::: {.proof}
 Primes of this quotient correspond to primes
 \[
@@ -108,6 +110,7 @@ Hence the quotient has one prime ideal and dimension $0$.
 \[
 \boxed{\codim(Z,X)\le\codim(Y',Y).}
 \]
+
 ::: {.proof}
 Apply the local dimension inequality to
 \[
@@ -136,6 +139,7 @@ and
 Z=\overline W\subseteq X,
 \]
 then $Z$ is an irreducible component of $f^{-1}(Y')$, and its generic point maps to $y$, the generic point of $Y'$.
+
 ::: {.proof}
 Work on affine neighborhoods
 \[
@@ -170,6 +174,7 @@ Thus $V(\mathfrak q)$ is an irreducible component of the inverse image of $V(\ma
 \[
 \boxed{\dim W=\dim Z-\dim Y'.}
 \]
+
 ::: {.proof}
 Let $w$ be the generic point of $W$, equivalently of $Z$.
 Since $w$ maps to the generic point $y$ of $Y'$, there is an inclusion of function fields
@@ -198,6 +203,7 @@ Applying II.3.20(b) to $Z$ and $Y'$ gives the displayed equality.
 \[
 e=\dim X-\dim Y.
 \]
+
 ::: {.proof}
 Let $W,Z,Y'$ be as in <1>4.  Part (a) gives
 \[
@@ -229,6 +235,7 @@ X=\Spec A,
 Y=\Spec B,
 \]
 with $B\hookrightarrow A$ a finitely generated inclusion of domains.
+
 ::: {.proof}
 Choose an affine open neighborhood of the generic point of $Y$, and then an affine open neighborhood of the generic point of $X$ contained in its inverse image.  Both replacements are nonempty open subsets of integral finite-type schemes, so Hartshorne II.3.20(e) preserves their dimensions.  Their function fields are unchanged by II.3.6, so the relative dimension $e$ is unchanged as well.
 :::
@@ -249,6 +256,7 @@ defines a dominant generically finite morphism
 \[
 g:X\longrightarrow X_1:=\Spec B[t_1,\ldots,t_e]\cong\mathbb A^e_Y.
 \]
+
 ::: {.proof}
 By II.3.20(b),
 \[
@@ -281,6 +289,7 @@ such that
 U:=g^{-1}(W)\longrightarrow W
 \]
 is finite and surjective.
+
 ::: {.proof}
 Hartshorne II.3.7 applied to the generically finite morphism $g$ gives a dense open $W$ such that $U\to W$ is finite.
 
@@ -291,6 +300,7 @@ The restriction remains dominant because $U$ and $W$ contain the generic points.
 \[
 \boxed{\dim U_y=e.}
 \]
+
 ::: {.proof}
 The morphism $X_1\to Y$ is affine $e$-space.
 Its fibre at $y$ is
@@ -319,11 +329,13 @@ This proves part (c).
 \[
 \boxed{E_e=X.}
 \]
+
 ::: {.proof}
 Given $x\in X$, put $y=f(x)$ and choose an irreducible component of $X_y$ containing $x$.  By part (b), every such component has dimension at least $e$.  Hence $x\in E_e$.
 :::
 
 <1>12. If $h>e$, then $E_h$ is not dense in $X$.
+
 ::: {.proof}
 Let $U\subseteq X$ be the dense open subset from part (c). We claim
 \[
@@ -351,6 +363,7 @@ Since $U$ is nonempty open, $E_h$ cannot be dense.
 :::
 
 <1>13. We prove by induction on $\dim X$ that every $E_h$ is closed.
+
 ::: {.proof}
 If $\dim X=0$, every nonempty fibre component has dimension $0$, so each $E_h$ is either $X$ or $\varnothing$.
 
@@ -391,6 +404,7 @@ Thus the induction hypothesis applies to every $f_i$.
 \[
 E_h(f)=\bigcup_{i=1}^r E_h(f_i).
 \]
+
 ::: {.proof}
 Let $x\in E_h(f)$.
 Choose an irreducible component
@@ -419,6 +433,7 @@ Hence $x\in E_h(f)$.
 :::
 
 <1>15. Every set $E_h$ is closed.
+
 ::: {.proof}
 For $h\le e$ this was already observed in <1>13. For $h>e$, the induction hypothesis makes each
 \[
@@ -438,6 +453,7 @@ Then
 \[
 \boxed{D_h=f(E_h).}
 \]
+
 ::: {.proof}
 If $y\in D_h$, some irreducible component of $X_y$ has dimension at least $h$; any point on that component belongs to $E_h$ and maps to $y$.
 
@@ -445,6 +461,7 @@ Conversely, if $y=f(x)$ for some $x\in E_h$, the component witnessing $x\in E_h$
 :::
 
 <1>17. Every $D_h$ is constructible.
+
 ::: {.proof}
 By part (d), $E_h$ is closed in the noetherian finite-type scheme $X$.  Give it the reduced induced closed subscheme structure.  The restricted morphism
 \[
@@ -462,6 +479,7 @@ is constructible.
 \boxed{C_h=D_h\setminus D_{h+1}}
 \]
 and hence $C_h$ is constructible.
+
 ::: {.proof}
 A nonempty fibre has dimension exactly $h$ if and only if its dimension is at least $h$ but not at least $h+1$.
 For $h\ge0$, an empty fibre belongs to neither side.
@@ -477,6 +495,7 @@ which is constructible because $f(X)$ is constructible by Hartshorne II.3.19.  F
 :::
 
 <1>19. The generic fibre $X_\eta$, where $\eta$ is the generic point of $Y$, is integral and has dimension $e$.
+
 ::: {.proof}
 Work on affine neighborhoods
 \[
@@ -513,6 +532,7 @@ Additivity of transcendence degree and II.3.20(b) for $X$ and $Y$ give
 :::
 
 <1>20. The constructible subset $C_e\subseteq Y$ contains a dense open subset of $Y$.
+
 ::: {.proof}
 By <1>19, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.
 Step <1>18 shows that $C_e$ is constructible.
@@ -521,6 +541,7 @@ Hartshorne II.3.18(b) says that a constructible subset of an irreducible Zariski
 :::
 
 <1>21. Q.E.D.
+
 ::: {.proof}
 Steps <1>1--<1>3 prove part (a), <1>4--<1>6 prove part (b), <1>7--<1>10 prove part (c), <1>11--<1>15 prove part (d), and <1>16--<1>20 prove part (e).
 :::

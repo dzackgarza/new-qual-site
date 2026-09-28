@@ -62,6 +62,7 @@ is the canonical morphism
 \Spec K\longrightarrow X
 \]
 with image $\eta$.
+
 ::: {.proof}
 Suppose first that $x$ is a center.
 By definition,
@@ -101,6 +102,7 @@ Therefore $R$ dominates $\mathcal O_{X,x}$, so $x$ is a center.
 :::
 
 <1>2. If $X$ is separated over $k$, every valuation of $K/k$ has at most one center on $X$.
+
 ::: {.proof}
 Let $R$ be a valuation ring of $K/k$.
 Two centers would, by <1>1, give two morphisms
@@ -117,6 +119,7 @@ The valuative criterion for separatedness says that a separated morphism has at 
 :::
 
 <1>3. If $X$ is proper over $k$, every valuation of $K/k$ has a unique center on $X$.
+
 ::: {.proof}
 Let $R$ be a valuation ring of $K/k$.  Consider the diagram
 \[
@@ -139,6 +142,7 @@ For a finite-type morphism
 T\longrightarrow S
 \]
 with $S$ locally noetherian, separatedness and properness may be tested using only discrete valuation rings whose fraction field is the residue field of the generic point of an irreducible component of $T$, with the generic point mapping canonically to that component.
+
 ::: {.proof}
 This is the refined Noetherian valuative criterion; see the Stacks Project, Lemmas 32.15.2 and 32.15.3.
 
@@ -147,6 +151,7 @@ The comparison of valuations in different fields mentioned in Hartshorne's hint 
 
 <1>5. Conversely, suppose every valuation of $K/k$ has at most one center on $X$.
 Then $X$ is separated over $k$.
+
 ::: {.proof}
 Let
 \[
@@ -173,6 +178,7 @@ is separated.
 
 <1>6. Conversely, suppose every valuation of $K/k$ has a unique center on $X$.
 Then $X$ is proper over $k$.
+
 ::: {.proof}
 For every discrete valuation ring
 \[
@@ -206,6 +212,7 @@ X\text{ proper over }k
 \text{every valuation of }K/k\text{ has exactly one center on }X.
 }
 \]
+
 ::: {.proof}
 The forward implications are <1>2--<1>3, and the converses are <1>5--<1>6.
 :::
@@ -215,6 +222,7 @@ The forward implications are <1>2--<1>3, and the converses are <1>5--<1>6.
 a\in\Gamma(X,\mathcal O_X).
 \]
 If $a\notin k$, then $a$ is transcendental over $k$.
+
 ::: {.proof}
 Because $X$ is integral, restriction to the generic point gives an injection
 \[
@@ -232,6 +240,7 @@ of $K/k$ such that
 \[
 a^{-1}\in\mathfrak m_R.
 \]
+
 ::: {.proof}
 Since $a$ is transcendental over $k$, the subfield
 \[
@@ -263,6 +272,7 @@ a^{-1}\in\mathfrak m_{A_0}
 :::
 
 <1>10. The valuation ring from <1>9 cannot have a center on $X$.
+
 ::: {.proof}
 Suppose it had center $x$.
 Then
@@ -289,6 +299,7 @@ Since $a\in R$ is the inverse of $a^{-1}$, the element $a^{-1}$ is a unit of $R$
 \[
 \boxed{\Gamma(X,\mathcal O_X)=k.}
 \]
+
 ::: {.proof}
 If some $a\in\Gamma(X,\mathcal O_X)$ lay outside $k$, <1>9--<1>10 would produce a valuation of $K/k$ with no center on $X$.
 This contradicts properness and part (b), proved in <1>3.
@@ -301,6 +312,7 @@ is the structure map of the $k$-scheme $X$.  Hence equality holds.
 :::
 
 <1>12. Q.E.D.
+
 ::: {.proof}
 Steps <1>2, <1>3, <1>5--<1>7, and <1>11 prove parts (a), (b), (c), and (d), respectively.
 :::

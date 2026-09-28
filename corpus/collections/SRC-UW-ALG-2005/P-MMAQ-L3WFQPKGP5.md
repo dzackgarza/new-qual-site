@@ -28,6 +28,7 @@ If $G_0$ is of order $p^e$ for a prime $p$ and integer $e\geq 2$, prove that $G_
 \[
 \Omega(G)\cong G/Z(G).
 \]
+
 ::: {.proof}
 The homomorphism
 \[
@@ -47,6 +48,7 @@ The first isomorphism theorem gives
 \[
 |\Omega(H)|\le p^{m-2}.
 \]
+
 ::: {.proof}
 By <1>1, $\Omega(H)\cong H/Z(H)$.
 Since $H$ is a finite $p$-group, $Z(H)$ is nontrivial whenever $H$ is nontrivial, so $|H/Z(H)|\le p^{m-1}$.
@@ -58,6 +60,7 @@ It remains to exclude the case $|H/Z(H)|=p$. If $H/Z(H)$ were cyclic, say genera
 \[
 |G_i|\le p^{e-2i}.
 \]
+
 ::: {.proof}
 We use induction on $i$. For $i=0$, $|G_0|=p^e$. Suppose the claim holds for $i$. If $G_i=1$, then $G_{i+1}=\Omega(G_i)=1$. Otherwise $G_i$ is a finite $p$-group of order at most $p^{e-2i}$. Applying <1>2,
 \[
@@ -69,6 +72,7 @@ This proves the induction step.
 :::
 
 <1>4. The group $G_{e-1}$ is trivial.
+
 ::: {.proof}
 If $G_{e-1}$ were nontrivial, then <1>3 would give
 \[

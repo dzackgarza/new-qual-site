@@ -42,6 +42,7 @@ Show that there is a group isomorphism
 q=p|_{p^{-1}(A)}:p^{-1}(A)\longrightarrow A
 \]
 is a covering map, with $q(\tilde a)=a$.
+
 ::: {.proof}
 Let $a_0\in A$.
 Choose an open neighborhood $U\subseteq X$ of $a_0$ that is evenly covered by $p$, so
@@ -68,6 +69,7 @@ Thus $q$ is a covering map.
 q_*:\pi_1(p^{-1}(A),\tilde a)\longrightarrow\pi_1(A,a)
 \]
 is injective.
+
 ::: {.proof}
 Let $[\widetilde\alpha]\in\pi_1(p^{-1}(A),\tilde a)$ and suppose
 \[
@@ -89,6 +91,7 @@ Then
 \[
 \operatorname{im}(q_*)\subseteq\ker(i_*).
 \]
+
 ::: {.proof}
 The composite $i\circ q$ is the restriction of $p$ to $p^{-1}(A)$.
 If $[\widetilde\alpha]\in\pi_1(p^{-1}(A),\tilde a)$, then $\widetilde\alpha$ is also a loop in the simply connected universal cover $\widetilde X$.
@@ -105,6 +108,7 @@ Therefore every element of $\operatorname{im}(q_*)$ lies in $\ker(i_*)$.
 \[
 \ker(i_*)\subseteq\operatorname{im}(q_*).
 \]
+
 ::: {.proof}
 Let $[\alpha]\in\pi_1(A,a)$ satisfy
 \[
@@ -140,6 +144,7 @@ Hence $[\alpha]\in\operatorname{im}(q_*)$.
 \cong
 \ker\bigl(\pi_1(A,a)\xrightarrow{i_*}\pi_1(X,a)\bigr).
 \]
+
 ::: {.proof}
 By <1>2, $q_*$ is injective.
 By <1>3 and <1>4,

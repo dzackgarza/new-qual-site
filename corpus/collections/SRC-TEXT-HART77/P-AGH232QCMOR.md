@@ -30,6 +30,7 @@ Show that $f$ is quasi-compact if and only if for every open affine subset $V \s
 
 ::: {.solution}
 <1>1. If $f^{-1}(V)$ is quasi-compact for every affine open $V\subseteq Y$, then $f$ is quasi-compact.
+
 ::: {.proof}
 Choose any affine open cover
 \[
@@ -54,6 +55,7 @@ such that
 \[
 y\in W_y\subseteq V\cap V_i.
 \]
+
 ::: {.proof}
 Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in the affine scheme $V_i$.  Distinguished opens form a basis of an affine scheme, so there is some $g_y\in\Gamma(V_i,\mathcal O_Y)$ with the asserted property.
 :::
@@ -63,6 +65,7 @@ Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in 
 f^{-1}(W_y)
 \]
 is quasi-compact.
+
 ::: {.proof}
 Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.
 Since $f^{-1}(V_i)$ is quasi-compact, choose a finite affine open cover
@@ -86,6 +89,7 @@ is a finite union of quasi-compact open subsets and is quasi-compact.
 :::
 
 <1>4. Finitely many of the opens $W_y$ cover $V$.
+
 ::: {.proof}
 The sets $W_y$ form an open cover of $V$.  Since $V$ is affine, its underlying topological space is quasi-compact.  Hence there are points
 \[
@@ -98,6 +102,7 @@ V=W_{y_1}\cup\cdots\cup W_{y_m}.
 :::
 
 <1>5. The inverse image $f^{-1}(V)$ is quasi-compact.
+
 ::: {.proof}
 By <1>4,
 \[
@@ -109,11 +114,13 @@ Each term is quasi-compact by <1>3, so their finite union is quasi-compact.
 :::
 
 <1>6. Hence the two formulations of quasi-compactness are equivalent.
+
 ::: {.proof}
 Step <1>1 proves one implication and steps <1>2--<1>5 prove the converse.
 :::
 
 <1>7. Q.E.D.
+
 ::: {.proof}
 Step <1>6 is the required equivalence.
 :::

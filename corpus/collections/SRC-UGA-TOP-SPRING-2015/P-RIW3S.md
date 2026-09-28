@@ -42,6 +42,7 @@ is a free homotopy from $\gamma_0$ to $\gamma_1$, then the track of the basepoin
 \alpha(t)=H(1,t),
 \]
 is a loop at $x_0$.
+
 ::: {.proof}
 Because $H(-,0)=\gamma_0$ and $H(-,1)=\gamma_1$,
 \[
@@ -57,6 +58,7 @@ Thus $\alpha$ is indeed a loop based at $x_0$.
 [\gamma_0]=[\alpha][\gamma_1][\alpha]^{-1}
 \qquad\text{in }\pi_1(X,x_0).
 \]
+
 ::: {.proof}
 Let
 \[
@@ -98,12 +100,14 @@ Then $\gamma_0$ is homotopic relative to the basepoint to the loop
 \[
 \alpha*\gamma_1*\alpha^{-1}.
 \]
+
 ::: {.proof}
 The displayed equality is precisely equality of the two based-loop classes in $\pi_1(X,x_0)$.
 By the definition of the fundamental group, representatives of the same class are homotopic through loops that keep the basepoint fixed.
 :::
 
 <1>4. For any two loops $a,b$ based at the same point, the loops $a*b$ and $b*a$ are freely homotopic.
+
 ::: {.proof}
 Let
 \[
@@ -120,6 +124,7 @@ At $t=0$ it is $a*b$, while at $t=1$ the half-turn interchanges the two half-cir
 :::
 
 <1>5. The conjugate loop $\alpha*\gamma_1*\alpha^{-1}$ is freely homotopic to $\gamma_1$.
+
 ::: {.proof}
 Up to the standard based reparameterization associating concatenations,
 \[
@@ -148,6 +153,7 @@ Every based homotopy is in particular a free homotopy, proving the claim.
 :::
 
 <1>6. Therefore $\gamma_0$ and $\gamma_1$ are freely homotopic if and only if their classes in $\pi_1(X,x_0)$ are conjugate.
+
 ::: {.proof}
 The forward implication is <1>1--<1>2.
 For the converse, <1>3 gives a based homotopy from $\gamma_0$ to $\alpha*\gamma_1*\alpha^{-1}$, and <1>5 gives a free homotopy from that conjugate loop to $\gamma_1$.

@@ -48,6 +48,7 @@ d. Show that $\inverseof{g}(U) \to U$ is an isomorphism, completing the proof.
 
 ::: {.solution}
 <1>1. It is enough to prove the theorem when the underlying topological space of $X$ is irreducible.
+
 ::: {.proof}
 Because $X$ is proper over the noetherian scheme $S$, it is noetherian.
 Let
@@ -130,6 +131,7 @@ Thus the irreducible case implies the general case, including the nonreduced sch
 
 <1>2. We now assume $X$ irreducible.
 Every point $x\in X$ has an open neighborhood which is quasi-projective over $S$.
+
 ::: {.proof}
 Let $s\in S$ be the image of $x$.
 Choose an affine open neighborhood
@@ -189,6 +191,7 @@ is a closed immersion.  Hence $P_W$ is projective over $S$, and $W$ is quasi-pro
 X=U_1\cup\cdots\cup U_n
 \]
 such that every $U_i$ is quasi-projective over $S$.
+
 ::: {.proof}
 The neighborhoods from <1>2 cover $X$.  Since $X$ is proper over $S$, it is of finite type, hence quasi-compact because $S$ is noetherian and the structure morphism is proper.  Thus finitely many of the quasi-projective neighborhoods suffice.
 :::
@@ -203,6 +206,7 @@ The open subset
 U=\bigcap_{i=1}^nU_i
 \]
 is nonempty and dense in $X$.
+
 ::: {.proof}
 The first assertion is the definition of quasi-projectivity.
 
@@ -214,6 +218,7 @@ Since $X$ is irreducible, every nonempty open subset is dense, and any finite in
 P=P_1\times_S\cdots\times_SP_n.
 \]
 Then $P$ is projective over $S$.
+
 ::: {.proof}
 Projective morphisms are stable under finite products by Hartshorne II.4.8 together with II.4.9.  Hence the structure morphism
 \[
@@ -241,6 +246,7 @@ Let
 X'\hookrightarrow Q
 \]
 be the scheme-theoretic image of $f$.
+
 ::: {.proof}
 The universal property of the fibre product gives the displayed morphism from its coordinate maps.
 
@@ -255,6 +261,7 @@ h:X'\to P
 \]
 be the restrictions of the two projections from $Q=X\times_SP$.
 The morphism $h$ is proper.
+
 ::: {.proof}
 The projection
 \[
@@ -283,6 +290,7 @@ Then the opens $O_i$ cover $Q$, and hence
 X_i'=X'\cap O_i
 \]
 cover $X'$.
+
 ::: {.proof}
 The opens $U_i$ cover $X$, so their inverse images under the projection
 \[
@@ -307,6 +315,7 @@ Then
 G_i\to P
 \]
 is an open immersion.
+
 ::: {.proof}
 The morphism $G_i\to P$ is the base change of the open immersion
 \[
@@ -319,6 +328,7 @@ along $\pi_i:P\to P_i$.  Open immersions are stable under base change.
 \[
 G_i\hookrightarrow O_i=U_i\times_SP.
 \]
+
 ::: {.proof}
 The morphism is the graph of the composite
 \[
@@ -342,6 +352,7 @@ Thus it is a closed immersion.
 X_i'=X'\cap O_i
 \]
 is a closed subscheme of $G_i$.
+
 ::: {.proof}
 For $x\in U$, the $i$th projective coordinate of $f(x)$ is by definition $j_i(x)$.
 Hence
@@ -365,6 +376,7 @@ This factor is again a closed immersion.
 h|_{X_i'}:X_i'\longrightarrow P
 \]
 is an immersion for every $i$.
+
 ::: {.proof}
 By <1>11,
 \[
@@ -382,6 +394,7 @@ is an open immersion.  Their composition is therefore an immersion.
 h:X'\to P
 \]
 is an immersion.
+
 ::: {.proof}
 Being an immersion is local on the source.  The open subsets $X_i'$ cover $X'$ by <1>8, and the restriction of $h$ to each is an immersion by <1>12.  Hence $h$ is an immersion.
 :::
@@ -392,6 +405,7 @@ Hence
 \boxed{h:X'\hookrightarrow P}
 \]
 is a closed immersion.
+
 ::: {.proof}
 An immersion factors as an open immersion followed by a closed immersion onto a locally closed subscheme of the target.
 A proper morphism is closed, so the image of the proper immersion $h$ is closed in $P$.
@@ -401,6 +415,7 @@ Equivalently, a proper monomorphism is a closed immersion.
 :::
 
 <1>15. The scheme $X'$ is projective over $S$.
+
 ::: {.proof}
 By <1>5, $P$ is projective over $S$.  By <1>14, $X'$ is a closed subscheme of $P$.  A closed immersion followed by a projective morphism is projective.  Hence
 \[
@@ -418,6 +433,7 @@ the morphism
 f:U\to O
 \]
 is a closed immersion.
+
 ::: {.proof}
 The morphism $U\to P$ is the product of the maps
 \[
@@ -434,6 +450,7 @@ of $U\to P$ is a closed immersion.  This graph is precisely $f$.
 \[
 \boxed{X'\cap O=f(U).}
 \]
+
 ::: {.proof}
 The scheme-theoretic image commutes with restriction to an open subscheme for the quasi-compact morphism $f$.  Thus
 \[
@@ -450,6 +467,7 @@ But <1>16 shows that this map is already a closed immersion.  Its scheme-theoret
 \[
 g^{-1}(U)=X'\cap O=f(U).
 \]
+
 ::: {.proof}
 The inverse image under the projection
 \[
@@ -467,6 +485,7 @@ Apply <1>17.
 \boxed{g^{-1}(U)\xrightarrow{\sim}U}
 \]
 is an isomorphism.
+
 ::: {.proof}
 By <1>18, the source is the graph $f(U)$.  The first projection
 \[
@@ -480,6 +499,7 @@ Thus $g$ restricts to an isomorphism over $U$.
 :::
 
 <1>20. This proves Chow's lemma.
+
 ::: {.proof}
 In the irreducible case, <1>3--<1>4 produce the finite quasi-projective cover and dense open $U$ requested in part (b). Steps <1>5--<1>15 construct the projective scheme $X'$ and prove part (c). Steps <1>16--<1>19 prove part (d).
 
@@ -491,6 +511,7 @@ which is an isomorphism over a dense open subset of $X$.
 :::
 
 <1>21. Q.E.D.
+
 ::: {.proof}
 Step <1>20 is the stated theorem.
 :::

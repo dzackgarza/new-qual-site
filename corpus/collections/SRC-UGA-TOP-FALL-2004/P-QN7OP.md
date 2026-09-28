@@ -46,6 +46,7 @@ Give an example showing that the conclusion of (b) may be false if $X$ is not co
 
 ::: {.solution}
 <1>1. If $X$ is disconnected, there is a continuous nonconstant map $X\to\{0,1\}$.
+
 ::: {.proof}
 Choose a separation
 \[
@@ -65,6 +66,7 @@ It is nonconstant.
 :::
 
 <1>2. If there is a continuous nonconstant map $X\to\{0,1\}$, then $X$ is disconnected.
+
 ::: {.proof}
 Let
 \[
@@ -74,6 +76,7 @@ be continuous and nonconstant. Then $g^{-1}(0)$ and $g^{-1}(1)$ are disjoint non
 :::
 
 <1>3. Part (a) follows.
+
 ::: {.proof}
 The two implications are <1>1 and <1>2.
 :::
@@ -83,6 +86,7 @@ The two implications are <1>1 and <1>2.
 X=A\disjoint B
 \]
 is a separation, then $f(A)\cap f(B)\neq\emptyset$.
+
 ::: {.proof}
 The sets $A$ and $B$ are closed subsets of the compact space $X$, hence compact.
 Therefore $f(A)$ and $f(B)$ are compact, and since $Y$ is Hausdorff they are closed in $Y$.
@@ -95,6 +99,7 @@ If $f(A)$ and $f(B)$ were disjoint, each would be the complement of the other an
 :::
 
 <1>5. Under the hypotheses of part (b), $X$ is connected.
+
 ::: {.proof}
 Suppose toward a contradiction that $X=A\disjoint B$ is a separation. By <1>4 choose
 \[
@@ -112,6 +117,7 @@ and both intersections are open in the subspace $F$, because $A$ and $B$ are ope
 :::
 
 <1>6. Compactness of $X$ cannot be omitted in part (b).
+
 ::: {.proof}
 Let
 \[

@@ -44,21 +44,25 @@ Justify your answer.
 **(a).**
 
 <1>1. The roots of $x^4 - 2$ are $\pm\sqrt[4]{2}, \pm i\sqrt[4]{2}$.
+
 ::: {.proof}
 the four fourth roots of $2$.
 :::
 
 <1>2. Hence $K = \QQ(\sqrt[4]{2}, i)$, which contains both $\QQ(i)$ and $\QQ(\sqrt[4]{2})$.
+
 ::: {.proof}
 <1>1.
 :::
 
 <1>3. $[\QQ(\sqrt[4]{2}) : \QQ] = 4$ (since $x^4 - 2$ is irreducible, Eisenstein at $2$), and $[\QQ(i) : \QQ] = 2$.
+
 ::: {.proof}
 degrees of the subfields.
 :::
 
 <1>4. $[K : \QQ] = [\QQ(\sqrt[4]{2}, i) : \QQ(\sqrt[4]{2})] \cdot [\QQ(\sqrt[4]{2}) : \QQ] = 2 \cdot 4 = 8$ (since $i \notin \QQ(\sqrt[4]{2}) \subseteq \RR$).
+
 ::: {.proof}
 <1>3 and the tower law.
 :::
@@ -66,21 +70,25 @@ degrees of the subfields.
 **(b).**
 
 <1>1. $N = \gal(K/\QQ(i))$ and $H = \gal(K/\QQ(\sqrt[4]{2}))$.
+
 ::: {.proof}
 definitions.
 :::
 
 <1>2. $\QQ(i)/\QQ$ is Galois (it is the splitting field of $x^2 + 1$), so $N$ is normal in $G$.
+
 ::: {.proof}
 fundamental theorem (a subgroup is normal iff the corresponding field is Galois over the base).
 :::
 
 <1>3. The fixed field of $NH$ is $\QQ(i) \cap \QQ(\sqrt[4]{2}) = \QQ$.
+
 ::: {.proof}
 the fixed field of $NH$ is the intersection of the fixed fields of $N$ and $H$.
 :::
 
 <1>4. Hence $NH = G$ (the subgroup fixing $\QQ$ is all of $G$).
+
 ::: {.proof}
 <1>3 and the fundamental theorem.
 :::
@@ -88,21 +96,25 @@ the fixed field of $NH$ is the intersection of the fixed fields of $N$ and $H$.
 **(c).**
 
 <1>1. Let $\sigma$ be the automorphism sending $\sqrt[4]{2} \mapsto i\sqrt[4]{2}$ and fixing $i$; then $\sigma$ has order $4$.
+
 ::: {.proof}
 $\sigma$ cyclically permutes the four roots $\sqrt[4]{2}, i\sqrt[4]{2}, -\sqrt[4]{2}, -i\sqrt[4]{2}$.
 :::
 
 <1>2. Let $\tau$ be complex conjugation (sending $i \mapsto -i$ and fixing $\sqrt[4]{2}$); then $\tau$ has order $2$.
+
 ::: {.proof}
 complex conjugation.
 :::
 
 <1>3. $\tau \sigma \tau^{-1} = \sigma^{-1}$.
+
 ::: {.proof}
 $\tau\sigma\tau^{-1}$ sends $\sqrt[4]{2} \mapsto \tau(i\sqrt[4]{2}) = -i\sqrt[4]{2} = \sigma^{-1}(\sqrt[4]{2})$.
 :::
 
 <1>4. Hence $G = \langle \sigma, \tau \mid \sigma^4 = \tau^2 = 1, \tau\sigma\tau^{-1} = \sigma^{-1} \rangle \cong D_8$.
+
 ::: {.proof}
 <1>1–<1>3 (this is the presentation of the dihedral group of order $8$).
 :::
@@ -110,31 +122,37 @@ $\tau\sigma\tau^{-1}$ sends $\sqrt[4]{2} \mapsto \tau(i\sqrt[4]{2}) = -i\sqrt[4]
 **(d).**
 
 <1>1. Quartic subfields of $K$ correspond to subgroups of $G = D_8$ of index $4$ (i.e. of order $2$).
+
 ::: {.proof}
 fundamental theorem.
 :::
 
 <1>2. $D_8$ has $5$ subgroups of order $2$: $\langle \tau \rangle$, $\langle \sigma^2 \rangle$, and $\langle \sigma^k \tau \rangle$ for $k = 0, 1, 2, 3$ (the reflections), but $\langle \sigma^2 \rangle$ is the center.
+
 ::: {.proof}
 count the order-$2$ subgroups.
 :::
 
 <1>3. The subgroups of order $2$ are: $\langle \sigma^2 \rangle$ (the center) and the $4$ reflection subgroups $\langle \sigma^k \tau \rangle$ for $k = 0, 1, 2, 3$.
+
 ::: {.proof}
 <1>2.
 :::
 
 <1>4. Hence there are $5$ subgroups of order $2$, but $\langle \sigma^2 \rangle$ corresponds to a quartic field, and the $4$ reflections correspond to quartic fields; however, some may coincide. The distinct quartic subfields correspond to the distinct subgroups of order $2$, of which there are $5$.
+
 ::: {.proof}
 <1>3.
 :::
 
 <1>5. Hence there are $5$ distinct quartic subfields (one for each subgroup of order $2$).
+
 ::: {.proof}
 <1>4.
 :::
 
 <1>6. Q.E.D.
+
 ::: {.proof}
 <1>4 (a), <1>2, <1>4 (b), <1>4 (c), <1>5 (d).
 :::

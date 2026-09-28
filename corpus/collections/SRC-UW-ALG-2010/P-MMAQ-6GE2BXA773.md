@@ -40,6 +40,7 @@ Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$ elements, a
 \[
 |G|=(p^2-1)(p^2-p)=p(p-1)^2(p+1).
 \]
+
 ::: {.proof}
 The first column of an invertible $2\times2$ matrix may be any nonzero vector in $\mathbb F_p^2$, giving $p^2-1$ choices.
 Once it is chosen, the second column may be any vector not in its one-dimensional span, giving $p^2-p$ choices.
@@ -53,6 +54,7 @@ Once it is chosen, the second column may be any vector not in its one-dimensiona
 \begin{pmatrix}1&a\\0&1\end{pmatrix}
 \]
 is an isomorphism of groups.
+
 ::: {.proof}
 Matrix multiplication gives
 \[
@@ -65,6 +67,7 @@ so $\varphi$ is a homomorphism from the additive group of $\mathbb F_p$. It is v
 :::
 
 <1>3. The subgroup $U$ is a Sylow $p$-subgroup of $G$.
+
 ::: {.proof}
 By <1>2, $|U|=p$. From <1>1,
 \[
@@ -81,6 +84,7 @@ N_G(U)=
  a,d\in\mathbb F_p^\times,\ b\in\mathbb F_p
 \right\}.
 \]
+
 ::: {.proof}
 Every nonidentity element of $U$ has the form
 \[
@@ -108,6 +112,7 @@ Hence every invertible upper-triangular matrix normalizes $U$.
 :::
 
 <1>5. There are exactly $p+1$ subgroups of order $p$ in $G$.
+
 ::: {.proof}
 By <1>3, the subgroups of order $p$ are exactly the Sylow $p$-subgroups, and all Sylow $p$-subgroups are conjugate. Therefore their number is
 \[

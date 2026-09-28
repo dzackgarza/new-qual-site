@@ -37,6 +37,7 @@ b. Let $X = \Spec k[s,t]/(s - t^2)$, let $Y = \Spec k[s]$, and let $f: X \to Y$ 
 
 ::: {.solution}
 <1>1. It is enough to identify the topology of a fibre affine-locally on $X$ and $Y$.
+
 ::: {.proof}
 Choose an affine neighborhood
 \[
@@ -65,6 +66,7 @@ S^{-1}(A/\mathfrak p A),
 \qquad
 S=B\setminus\mathfrak p.
 \]
+
 ::: {.proof}
 Since
 \[
@@ -92,6 +94,7 @@ such that
 \[
 \mathfrak q\cap B=\mathfrak p.
 \]
+
 ::: {.proof}
 By <1>2, primes of the fibre ring correspond to primes $\mathfrak q\subseteq A$ which contain $\mathfrak pA$ and are disjoint from the image of $S$.
 
@@ -107,6 +110,7 @@ These are exactly the points of $U$ mapping to $y$.
 :::
 
 <1>4. The bijection in <1>3 is a homeomorphism from $|U_y|$ onto $U\cap f^{-1}(y)$ with the induced topology.
+
 ::: {.proof}
 Let $R=S^{-1}(A/\mathfrak pA)$ be the fibre ring.  Any closed subset of $\Spec R$ is $V_R(J)$ for an ideal $J\subseteq R$.
 Let $I\subseteq A$ be the inverse image in $A$ of the contraction of $J$ to $A/\mathfrak pA$.  Under the prime correspondence of <1>3,
@@ -125,6 +129,7 @@ Thus closed subsets on the fibre side are precisely intersections with closed su
 \boxed{|X_y|\xrightarrow{\sim}f^{-1}(y)}
 \]
 is a homeomorphism onto the set-theoretic fibre with its subspace topology.
+
 ::: {.proof}
 The affine homeomorphisms from <1>4 are compatible on overlaps because they all arise from the projection $X_y\to X$.  They glue to the claimed global homeomorphism.
 :::
@@ -135,6 +140,7 @@ k[s]\longrightarrow k[t],
 \qquad
 s\longmapsto t^2.
 \]
+
 ::: {.proof}
 The quotient relation $s-t^2=0$ eliminates $s$:
 \[
@@ -150,6 +156,7 @@ X_y
 \cong
 \Spec k[t]/(t^2-a).}
 \]
+
 ::: {.proof}
 Since $k$ is algebraically closed,
 \[
@@ -166,6 +173,7 @@ X_y
 :::
 
 <1>8. Assume $a\ne0$ and $\operatorname{char}k\ne2$.  Then $X_y$ consists of two reduced points, each with residue field $k$.
+
 ::: {.proof}
 Choose $r\in k$ with $r^2=a$.  Since $a\ne0$, we have $r\ne0$, and since $2\ne0$ in $k$,
 \[
@@ -187,6 +195,7 @@ Therefore the fibre is the disjoint union of two reduced $k$-points.
 :::
 
 <1>9. If $a=0$, then the fibre is a nonreduced one-point scheme.
+
 ::: {.proof}
 By <1>7,
 \[
@@ -196,6 +205,7 @@ The quotient has the unique prime ideal $(t)$, so the spectrum has one point.  T
 :::
 
 <1>10. If $a\ne0$ and $\operatorname{char}k=2$, then the fibre is likewise a nonreduced one-point scheme.
+
 ::: {.proof}
 Choose $r\in k$ with $r^2=a$.  In characteristic $2$,
 \[
@@ -218,6 +228,7 @@ X_\eta
 \cong
 \Spec\bigl(k(s)[t]/(t^2-s)\bigr).
 \]
+
 ::: {.proof}
 The generic point corresponds to the zero prime of $k[s]$, whose residue field is its fraction field $k(s)$.  Base change along
 \[
@@ -236,6 +247,7 @@ k(s)[t]/(t^2-s).
 t^2-s\in k(s)[t]
 \]
 is irreducible in every characteristic.
+
 ::: {.proof}
 A quadratic polynomial of the form $t^2-s$ is reducible over the field $k(s)$ exactly when $s$ is a square in $k(s)$.
 
@@ -255,6 +267,7 @@ X_\eta
 \qquad
 [\kappa(X_\eta):k(s)]=2.}
 \]
+
 ::: {.proof}
 By <1>12, the quotient
 \[
@@ -267,6 +280,7 @@ If $\operatorname{char}k\ne2$, the extension is separable.  If $\operatorname{ch
 :::
 
 <1>14. Q.E.D.
+
 ::: {.proof}
 Steps <1>1--<1>5 prove part (a).  Steps <1>6--<1>9 prove the source's intended characteristic-$\ne2$ closed-fibre statements, <1>10 records the characteristic-$2$ correction, and <1>11--<1>13 prove the generic-fibre statement.
 :::

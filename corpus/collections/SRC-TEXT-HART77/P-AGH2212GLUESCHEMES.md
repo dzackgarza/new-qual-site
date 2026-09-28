@@ -67,6 +67,7 @@ x\in U_{ij}
 y=\phi_{ij}(x).
 \]
 Then $\sim$ is an equivalence relation.
+
 ::: {.proof}
 Reflexivity follows from
 \[
@@ -141,6 +142,7 @@ be the quotient map, and put
 \psi_i=q|_{X_i}:|X_i|\longrightarrow|X|.
 \]
 Each $\psi_i$ is injective.
+
 ::: {.proof}
 If
 \[
@@ -162,6 +164,7 @@ Thus $\psi_i$ is injective.
 V_i:=\psi_i(X_i)
 \]
 is open in $|X|$.
+
 ::: {.proof}
 By definition of the quotient topology, it is enough to show that
 \[
@@ -193,6 +196,7 @@ Every $U_{ji}$ is open in $X_j$, so this is open in the disjoint-union topology.
 \psi_i:X_i\longrightarrow V_i
 \]
 is a homeomorphism.
+
 ::: {.proof}
 It is already a continuous bijection by <1>2 and the definition of the quotient topology.
 We show it is open.
@@ -242,6 +246,7 @@ Moreover,
 \quad\text{on }U_{ij}.
 }
 \]
+
 ::: {.proof}
 The images cover because every equivalence class has a representative in some component $X_i$.
 
@@ -274,6 +279,7 @@ The scheme isomorphisms $\phi_{ij}$ induce compatible sheaf isomorphisms
 \xrightarrow{\sim}
 \mathcal G_j|_{V_i\cap V_j}.
 \]
+
 ::: {.proof}
 Define
 \[
@@ -309,6 +315,7 @@ on $|X|$, together with isomorphisms
 \xrightarrow{\sim}
 \mathcal G_i.
 \]
+
 ::: {.proof}
 Apply the sheaf-gluing theorem of Hartshorne II.1.22 to the open cover
 \[
@@ -326,6 +333,7 @@ is a scheme, and each
 \psi_i:X_i\longrightarrow X
 \]
 is an isomorphism of schemes onto the open subscheme $V_i$.
+
 ::: {.proof}
 By construction,
 \[
@@ -348,11 +356,13 @@ The opens $V_i$ cover $X$.  Each $X_i$ has an affine open cover, and transportin
 &\psi_i=\psi_j\circ\phi_{ij}\text{ on }U_{ij}.
 \end{aligned}
 \]
+
 ::: {.proof}
 The first property is <1>8, and the remaining three are <1>5.
 :::
 
 <1>10. The glued scheme is unique up to a unique isomorphism compatible with the maps $\psi_i$.
+
 ::: {.proof}
 Suppose
 \[
@@ -416,6 +426,7 @@ X=\coprod_iX_i
 }
 \]
 is their disjoint union as a scheme.
+
 ::: {.proof}
 The equivalence relation of <1>1 becomes equality within each component and makes no cross-component identifications, so the underlying space is the topological disjoint union.
 
@@ -423,6 +434,7 @@ There are no nontrivial overlap isomorphisms of structure sheaves to impose.  Th
 :::
 
 <1>12. Q.E.D.
+
 ::: {.proof}
 Steps <1>1--<1>9 construct the required scheme and maps, <1>10 gives the expected uniqueness, and <1>11 identifies the disjoint-union special case.
 :::

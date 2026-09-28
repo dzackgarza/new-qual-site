@@ -40,6 +40,7 @@ where \(a\in(\mathbb Z/n\mathbb Z)^\times\) acts by \(\sigma_a(\zeta_n)=\zeta_n^
 \[
 \sigma_a(\alpha)=\zeta_n^a+\zeta_n^{-a}.
 \]
+
 ::: {.proof}
 This follows directly from the definition of \(\sigma_a\).
 :::
@@ -48,6 +49,7 @@ This follows directly from the definition of \(\sigma_a\).
 \[
 \{\sigma_1,\sigma_{-1}\}.
 \]
+
 ::: {.proof}
 By step <1>1, \(\sigma_1(\alpha)=\alpha\) and \(\sigma_{-1}(\alpha)=\alpha\). Conversely, suppose
 \[
@@ -72,6 +74,7 @@ which means \(a\equiv\pm1\pmod n\). Since \(n\ge3\), the residues \(1\) and \(-1
 \[
 \frac{\varphi(n)}2.
 \]
+
 ::: {.proof}
 The Galois group has order \(\varphi(n)\). By orbit-stabilizer and <1>2,
 \[
@@ -86,6 +89,7 @@ The Galois group has order \(\varphi(n)\). By orbit-stabilizer and <1>2,
 [\mathbb Q(\zeta_n+\zeta_n^{-1}):\mathbb Q]
 =\frac{\varphi(n)}2.
 \]
+
 ::: {.proof}
 Because \(K/\mathbb Q\) is Galois, the distinct \(\mathbb Q\)-conjugates of \(\alpha\) inside \(K\) are exactly its Galois orbit. The degree of the minimal polynomial of \(\alpha\) over \(\mathbb Q\) is therefore the orbit size from <1>3. Since
 \[

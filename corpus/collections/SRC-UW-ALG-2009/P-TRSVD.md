@@ -35,6 +35,7 @@ Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
 
 ::: {.solution}
 <1>1. There exists an extension field $K/F$ in which $p$ has a root.
+
 ::: {.proof}
 Let
 \[
@@ -55,6 +56,7 @@ then by construction $p(\theta)=0$.
 1,\theta,\theta^2,\ldots,\theta^{n-1}
 \]
 is an $F$-basis of $K$.
+
 ::: {.proof}
 Every class in $F[x]/(p)$ has a unique representative of degree $<n$ by Euclidean division by $p$. Hence the displayed powers span. If
 \[
@@ -74,6 +76,7 @@ Then
 \theta^{-1}
 =-\frac{a_1+a_2\theta+\cdots+a_n\theta^{n-1}}{a_0}.
 \]
+
 ::: {.proof}
 Since $p(\theta)=0$,
 \[
@@ -89,6 +92,7 @@ As the source problem is written, the hypothesis $p(0)\ne0$ is necessary: if $p(
 p(x)=x^3+9x+6
 \]
 is irreducible over $\mathbb Q$.
+
 ::: {.proof}
 A reducible cubic over a field has a root in that field. Since $p$ is monic with integer coefficients, any rational root must be an integer divisor of $6$. Direct substitution of
 \[
@@ -101,6 +105,7 @@ shows that none is a root. Hence $p$ has no rational root and is irreducible ove
 \[
 (1+\theta)^{-1}=\frac{\theta^2-\theta+10}{4}.
 \]
+
 ::: {.proof}
 Using $\theta^3=-9\theta-6$,
 \[

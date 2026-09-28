@@ -44,6 +44,7 @@ Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in $[0, 1) \inte
 
 ::: {.solution}
 <1>1. Every coset in $\mathbb Q/\mathbb Z$ has a representative in $[0,1)\cap\mathbb Q$.
+
 ::: {.proof}
 Let
 \[
@@ -74,6 +75,7 @@ Thus the coset has a representative in $[0,1)\cap\mathbb Q$.
 :::
 
 <1>2. That representative is unique.
+
 ::: {.proof}
 Suppose $r,s\in[0,1)\cap\mathbb Q$ represent the same coset.
 Then
@@ -91,6 +93,7 @@ r=s.
 :::
 
 <1>3. Every element of $\mathbb Q/\mathbb Z$ has finite order.
+
 ::: {.proof}
 Let
 \[
@@ -113,6 +116,7 @@ Thus $q+\mathbb Z$ has finite order dividing $n$.
 \frac1n+\mathbb Z
 \]
 has order exactly $n$.
+
 ::: {.proof}
 By <1>3 its order divides $n$.
 If a positive integer $k$ satisfies
@@ -132,6 +136,7 @@ Since $n$ is arbitrary, $\mathbb Q/\mathbb Z$ has elements of arbitrarily large 
 \[
 T(\mathbb R/\mathbb Z)=\mathbb Q/\mathbb Z.
 \]
+
 ::: {.proof}
 By <1>3, every element of $\mathbb Q/\mathbb Z$ has finite order, so
 \[
@@ -175,6 +180,7 @@ be the multiplicative group of all roots of unity.
 \Phi(q+\mathbb Z)=e^{2\pi i q},
 \]
 is a well-defined homomorphism.
+
 ::: {.proof}
 If
 \[
@@ -203,6 +209,7 @@ so its image lies in $\mu_\infty$.
 :::
 
 <1>7. The map $\Phi$ is injective.
+
 ::: {.proof}
 Its kernel consists of those $q+\mathbb Z$ for which
 \[
@@ -218,6 +225,7 @@ Hence $\Phi$ is injective.
 :::
 
 <1>8. The map $\Phi$ is surjective onto $\mu_\infty$.
+
 ::: {.proof}
 Let $\zeta\in\mu_\infty$.
 Choose $n\ge1$ such that
@@ -250,6 +258,7 @@ Thus every root of unity is in the image.
 \[
 \mathbb Q/\mathbb Z\cong T(\mathbb C^\times).
 \]
+
 ::: {.proof}
 By <1>6--<1>8, $\Phi$ is a bijective homomorphism from $\mathbb Q/\mathbb Z$ onto the roots-of-unity subgroup $\mu_\infty=T(\mathbb C^\times)$.
 Hence it is an isomorphism.
