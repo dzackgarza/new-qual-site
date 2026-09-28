@@ -141,8 +141,7 @@ $$
 By step <1>3 these are distinct summands. Consequently the coefficient of
 $x_i\otimes v_j$ in $g(x_i\otimes v_j)$ is zero for every basis vector from
 step <1>1. Every diagonal entry of the matrix of $g$ in that basis is
-therefore zero, and so its trace is zero. This argument does not use any
-assumption on the characteristic of $k$.
+therefore zero, and so its trace is zero.
 :::
 
 <1>5. Q.E.D.
