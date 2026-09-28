@@ -42,5 +42,5 @@ source:
 ---
 
 ::: {.remark}
-Part A consists of Problems 1A--9A and Part B of Problems 1B--9B. A companion solution packet covers all eighteen problems.
+Part A consists of Problems 1A--9A and Part B of Problems 1B--9B.
 :::
