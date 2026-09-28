@@ -801,11 +801,16 @@ def load_front_matter(text: str) -> object:
     return yaml.load(text, Loader=_UniqueKeyLoader)
 
 
+# Pandoc's YAML metadata block: both delimiters stand on lines of their own.
+FRONT_MATTER = re.compile(r"\A---\n(?P<front>.*?)^---\n(?P<body>.*)\Z", re.DOTALL | re.MULTILINE)
+
+
 def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
-    if not text.startswith("---\n"):
-        raise ValueError(f"{path}: card must start with YAML front matter")
-    _, fm, body = text.split("---\n", 2)
-    meta = load_front_matter(fm)
+    match = FRONT_MATTER.match(text)
+    if match is None:
+        raise ValueError(f"{path}: card must start with a YAML front matter block closed by a --- line")
+    meta = load_front_matter(match["front"])
+    body = match["body"]
     if not isinstance(meta, dict):
         raise TypeError(f"{path}: front matter must be a mapping")
     return meta, body

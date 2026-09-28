@@ -1,4 +1,4 @@
-"""A card whose front matter repeats a key is unreadable, not silently merged.
+"""A card whose front matter YAML or Pandoc would read differently is unreadable.
 
 YAML's safe loader keeps the last of two equal keys. Two writers appending to
 one card produced two `audit:` lists, and single-card validation reported the
@@ -33,5 +33,14 @@ Show that a group of prime order is cyclic.
 
 def test_a_repeated_front_matter_key_makes_the_card_unreadable(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path, {"P-TWOTITLES.md": REPEATED_TITLE})
+
+    assert DiagnosticCode.CARD_UNREADABLE in diagnostic_codes(work)
+
+
+GLUED_CLOSE = REPEATED_TITLE.replace("title: The first title\ntitle: The second title\n", "title: A prime-order group\n").replace("review: draft\n---\n", "review: draft---\n")
+
+
+def test_a_closing_delimiter_that_does_not_stand_alone_makes_the_card_unreadable(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path, {"P-TWOTITLES.md": GLUED_CLOSE})
 
     assert DiagnosticCode.CARD_UNREADABLE in diagnostic_codes(work)

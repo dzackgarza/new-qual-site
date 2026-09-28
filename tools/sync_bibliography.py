@@ -16,16 +16,18 @@ fallback: there is no second source for this file.
 
 from __future__ import annotations
 
-import re
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
+import panflute as pf
+from qualc.model import MARKDOWN, from_ast
+from qualc.pandoc_batch import PandocBatchError, PandocFailure, read_markdown_parallel
+
 ROOT = Path(__file__).resolve().parent.parent
 EXPORT = "http://127.0.0.1:23119/better-bibtex/export/item"
-CITE_RE = re.compile(r"\[@([A-Za-z][\w:.#$%&+?<>~/-]*)\]")
 # Fields that describe the library's copy rather than the work itself.
 DROPPED = ("abstract", "file", "keywords", "timestamp")
 HEADER = """\
@@ -35,10 +37,19 @@ HEADER = """\
 
 
 def cited_keys() -> list[str]:
+    """The keys of every `Cite` element Pandoc reads in wiki/ and corpus/, with the compiler's dialect."""
+    paths = [path for where in ("wiki", "corpus") for path in (ROOT / where).rglob("*.md")]
     keys: set[str] = set()
-    for where in ("wiki", "corpus"):
-        for path in (ROOT / where).rglob("*.md"):
-            keys |= set(CITE_RE.findall(path.read_text()))
+
+    def collect(elem: pf.Element, doc: pf.Doc) -> None:
+        if isinstance(elem, pf.Cite):
+            keys.update(citation.id for citation in elem.citations)
+
+    results = read_markdown_parallel([path.read_text() for path in paths], MARKDOWN)
+    for path, result in zip(paths, results, strict=True):
+        if isinstance(result, PandocFailure):
+            raise PandocBatchError(f"{path.relative_to(ROOT)}: {result.error}")
+        from_ast(result.output).walk(collect)
     return sorted(keys)
 
 
