@@ -26,7 +26,7 @@ review: draft
 The integrand $f\in \bigo\qty{1\over z^4} \subseteq \bigo\qty{1\over z^{1+\eps}}$, so a semicircular contour works.
 Factoring the denominator: find a principal root 
 \[
-\omega^4 = -1 = e^{i\pi} \implies \omega = e{i\pi\over 4}
+\omega^4 = -1 = e^{i\pi} \implies \omega = e^{i\pi\over 4}
 ,\]
 so 
 \[
@@ -42,7 +42,7 @@ Computing the residues:
 \Res_{z=z_k} f(z) 
 &= \lim_{z\to z_k} {z-z_k \over z^4 + 1} \\
 &\eqLH \lim_{z\to z_k} {1\over 4z^3} \\
-&= {4z^{-3} }\evalfrom_{z=z_k}
+&= {z^{-3}\over 4 }\evalfrom_{z=z_k}
 ,\]
 so
 \[
