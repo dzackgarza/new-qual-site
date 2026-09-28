@@ -40,6 +40,6 @@ For a full-dimensional lattice polytope $P$ of dimension $d\ge2$, the propositio
 For $d=2$ this holds for $k=1$: every lattice polygon is normal, so every ample divisor on a complete toric surface is very ample.
 For $d=3$, $kP$ is normal for every $k\ge2$, so a lattice polytope of dimension three that is not very ample can occur only at $k=1$.
 
-The toric variety $X_P$ is $\Proj$ of the semigroup ring $k[C(P)\intersect(M\times\ZZ)]$, graded by the last coordinate.
+The toric variety $X_P$ is $\Proj$ of the semigroup ring $\CC[C(P)\intersect(M\times\ZZ)]$, graded by the last coordinate.
 So $P$ is normal if and only if this ring is generated in degree $1$, that is, if and only if the embedding of $X_P$ by the characters in $P\intersect M$ is projectively normal.
 :::
