@@ -80,7 +80,7 @@ M_2
 \matt 0 1 {-1} 0
 $$
 are distinct and satisfy $M_1^2 = M_2^2 = -I$.
-Hence $A^n = B^n$ does not imply $A=B$ for real $2\times 2$ matrices, and $M_1$ and $M_2$ are real matrices representing $i$ and $-i$.
+Hence $A^n = B^n$ does not imply $A=B$ for real $2\times 2$ matrices, and $M_1$ and $M_2$ are the images of $i$ and $-i$ under the ring embedding $\CC\to\Mat(2\times 2;\RR)$, $a+bi\mapsto\matt a{-b}ba$.
 :::
 
 [[FF-VKYM3]]
