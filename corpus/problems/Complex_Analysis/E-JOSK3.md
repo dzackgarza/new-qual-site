@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JOSK3
 kind: problem
-title: Orders of poles
+title: Orders of the poles of $\frac{1}{z\sin z}$ and $\frac{e^{z^2}-1}{z^4}$ at $0$
 classification:
   areas:
   - complex-analysis
