@@ -16,6 +16,6 @@ audit:
 ---
 
 ::: {.problem}
-[NEW] How many ideals does the ring Z/90Z have?
+[NEW] How many ideals does the ring $\mathbb Z/90\mathbb Z$ have?
 Explain your answer.
 :::
