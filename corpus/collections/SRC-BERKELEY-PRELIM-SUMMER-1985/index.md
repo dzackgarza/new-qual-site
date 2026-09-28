@@ -28,10 +28,10 @@ source:
   - P-BERK85SU-10
   - P-BERK85SU-11
   - id: P-BKF89-13
-    comment: Summer 1985 Problem 12; repeated exactly as Berkeley Fall 1989 Problem 13
+    comment: Problem 12
   - P-BERK85SU-13
   - id: P-BKF83-2
-    comment: Summer 1985 Problem 14; repeated exactly as Berkeley Fall 1983 Problem 2
+    comment: Problem 14
   - P-BERK85SU-15
   - P-BERK85SU-16
   - P-BERK85SU-17
