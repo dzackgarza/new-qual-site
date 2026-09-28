@@ -20,27 +20,32 @@ Give an example of a tower of field extensions $F \subseteq E \subseteq K \subse
 :::
 
 ::: {.solution}
-By the Galois correspondence, we have $$L \leftrightarrow \{e\}, \quad K \leftrightarrow H_2, \quad E \leftrightarrow H_1, \quad F \leftrightarrow D_4$$ and
+Let $F=\QQ$ and $L=\QQ(\sqrt[4]{2},i)$, the splitting field of $x^4-2$ over $\QQ$. Then $\operatorname{Gal}(L/\QQ)\cong D_4=\langle \sigma,\tau \mid \sigma^4=\tau^2=e,\ \tau\sigma\tau^{-1}=\sigma^{-1}\rangle$, where
+$$
+\sigma(\sqrt[4]{2})=i\sqrt[4]{2},\quad \sigma(i)=i,
+\qquad
+\tau(\sqrt[4]{2})=\sqrt[4]{2},\quad \tau(i)=-i.
+$$
+Put
+$$
+H_1=\langle\sigma^2,\tau\rangle=\{e,\tau,\sigma^2,\tau\sigma^2\},
+\qquad
+H_2=\langle\tau\rangle=\{e,\tau\}\le H_1,
+$$
+and $E=L^{H_1}$, $K=L^{H_2}$. Since $\sigma^2(\sqrt[4]{2})=-\sqrt[4]{2}$, the element $\sqrt2=(\sqrt[4]{2})^2$ is fixed by $\sigma^2$ and $\tau$, and $\sqrt[4]{2}$ is fixed by $\tau$; comparing degrees gives
+$$
+E=\QQ(\sqrt2),
+\qquad
+K=\QQ(\sqrt[4]{2}).
+$$
+By the Galois correspondence, $E/F$ is normal if and only if $H_1\trianglelefteq D_4$, $K/E$ is normal if and only if $H_2\trianglelefteq H_1$, and $K/F$ is normal if and only if $H_2\trianglelefteq D_4$.
 
-- $E/F$ normal iff $H_1 \trianglelefteq D_4$
+- $[D_4:H_1]=2$, so $H_1\trianglelefteq D_4$ and $E/F$ is normal.
 
-- $K/E$ normal iff $H_2 \trianglelefteq H_2$
+- $[H_1:H_2]=2$, so $H_2\trianglelefteq H_1$ and $K/E$ is normal.
 
-- $K/F$ not normal iff $H_2 \not\trianglelefteq D_4$
+- $\sigma\tau\sigma^{-1}=\sigma^2\tau\notin H_2$, so $H_2\not\trianglelefteq D_4$ and $K/F$ is not normal: $x^4-2$ has the root $\sqrt[4]{2}$ in $K\subseteq\RR$ but not the root $i\sqrt[4]{2}$.
 
-So writing $D_4 = \langle \sigma,\tau \mid \sigma^4=\tau^2=e,\ \tau\sigma\tau^{-1}=\sigma^{-1}\rangle$, we can take $H_1 = \langle \sigma^2,\tau\rangle = \{e,\tau,\sigma^2,\tau\sigma^2\}$, then $[D_4:H_1]=2$ so $H_1 \trianglelefteq D_4$.
-We can then take $H_2 = \langle \tau\rangle = \{e,\tau\} \le H_1$.
-We have $H_2 \not\trianglelefteq D_4$, since e.g. if we write $\sigma=(1234), \tau=(24) \in S_n$, $\sigma\tau\sigma^{-1} = (13) \notin \langle \tau\rangle$.
-
-But $H_2 \trianglelefteq H_1$, since $H_1 \cong \{e,\tau,\sigma^2,\tau\sigma^2\} = \{(),(24),(13)(24),(13)\}$, while
-
-- $\tau\tau\tau^{-1} = \tau \in H_1$
-
-- $\sigma^2\tau\sigma^{-2} = (\sigma\tau\sigma^{-1})^2 = (13)(13) = e \in H_1$
-
-- $\tau\sigma^2\tau(\tau\sigma^2)^{-1} = (13)(24)(13) = (24) = \tau \in H_1$
-
-So $hH_2h^{-1} = H_2\ \forall h \in H_1$ and thus $H_2 \trianglelefteq H_1$.
-So taking $$H_1 = \langle \sigma^2,\tau\rangle, \qquad H_2 = \langle \tau\rangle$$ suffices.
+The tower $\QQ\subseteq\QQ(\sqrt2)\subseteq\QQ(\sqrt[4]{2})\subseteq\QQ(\sqrt[4]{2},i)$ therefore has the required properties.
 $\blacksquare$
 :::
