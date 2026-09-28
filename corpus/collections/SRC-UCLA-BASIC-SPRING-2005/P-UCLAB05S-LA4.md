@@ -20,8 +20,8 @@ audit:
 ---
 
 ::: {.problem}
-Let $\mathcal A=M_n(\mathbb C)$.
-The source calls a subset $\mathcal I\subseteq\mathcal A$ a two-sided ideal in $\mathcal A$ if
+Let $\mathcal A\equiv M_n(\mathbb C)$ denote the set of all $n\times n$ matrices with complex entries.
+We say that $\mathcal I\subseteq\mathcal A$ is a two-sided ideal in $\mathcal A$ if
 
 (i) for all $A,B\in\mathcal I$, one has $A+B\in\mathcal I$;
 
@@ -31,9 +31,10 @@ Show that the only two-sided ideals in $\mathcal A$ are $\{0\}$ and $\mathcal A$
 :::
 
 ::: {.solution}
-The empty set satisfies (i) and (ii) vacuously, so the statement holds for nonempty $\mathcal I$: the two-sided ideals are $\varnothing$, $\{0\}$, and $\mathcal A$.
+The empty set satisfies (i) and (ii) vacuously, so under this definition the two-sided ideals are $\varnothing$, $\{0\}$, and $\mathcal A$.
+We prove that every nonempty two-sided ideal is $\{0\}$ or $\mathcal A$.
 
-Assume $\mathcal I\ne\varnothing$.
+Let $\mathcal I\ne\varnothing$ be a two-sided ideal.
 If $\mathcal I$ contains only $0$, then $\mathcal I=\{0\}$.
 Otherwise choose $A=(a_{ij})\in\mathcal I$ with some $a_{ij}\ne0$.
 Let $E_{rs}$ denote the standard matrix units.
