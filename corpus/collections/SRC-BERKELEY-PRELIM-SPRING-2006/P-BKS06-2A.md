@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-2A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 2A
+title: Values of $c$ for which $f''-cf'+16f=0$, $f(0)=f(1)=1$ has no solution
 classification:
   areas: [prelim]
   topics: []
