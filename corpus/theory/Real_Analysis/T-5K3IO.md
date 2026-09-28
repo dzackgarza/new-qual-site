@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-5K3IO
 kind: theorem
 title: Monotone convergence theorem
-slogan: 'Increasing nonnegative functions may pass their limit through the integral.'
+slogan: 'For an almost everywhere increasing sequence in $L^+$, the integral of the limit is the limit of the integrals.'
 classification:
   areas:
   - real-analysis
