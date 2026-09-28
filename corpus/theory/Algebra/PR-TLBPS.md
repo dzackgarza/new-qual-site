@@ -39,5 +39,5 @@ Then $f'=\sum_i ia_ix^{i-1}=0$ if and only if $p\divides i$ whenever $a_i\neq0$,
 :::
 
 ::: {.example}
-Part (b) requires irreducibility: $f(x) = x^2(x-1)\in\QQ[x]$ has $f'=3x^2-2x\neq 0$ and the repeated root $0$.
+A reducible polynomial with nonzero derivative can be inseparable: $f(x) = x^2(x-1)\in\QQ[x]$ has $f'=3x^2-2x\neq 0$ and the repeated root $0$.
 :::
