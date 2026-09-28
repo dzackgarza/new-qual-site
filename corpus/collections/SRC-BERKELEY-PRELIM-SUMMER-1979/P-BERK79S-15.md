@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-15
 kind: problem
-title: Convergence outside the lemniscate of a geometric rational series
+title: Convergence of $\sum_n z/(1+z^2)^n$ outside the lemniscate $\abs{1+z^2}=1$
 classification:
   areas: [prelim]
   topics: []
