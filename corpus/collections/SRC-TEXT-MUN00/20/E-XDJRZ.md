@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XDJRZ
 kind: problem
-title: The l2 space is a vector space with the l2 metric
+title: $\ell^2$ is a vector space with the $\ell^2$ metric
 classification:
   areas:
   - topology
@@ -49,7 +49,7 @@ Let
 X=\left\{\mathbf x=(x_i):\sum_i x_i^2<\infty\right\}.
 \]
 
-(a) For each $n$, finite-dimensional Cauchy--Schwarz gives
+(a) For each $n$, the finite-dimensional Cauchy--Schwarz inequality of [[E-UDRRC]](b) gives
 \[
 \sum_{i=1}^n|x_iy_i|
 \le\left(\sum_{i=1}^n x_i^2\right)^{1/2}
