@@ -39,7 +39,7 @@ X\times A\xrightarrow qY\xrightarrow fX\times B.
 \]
 The induced $f$ is bijective and continuous by the defining property of the quotient topology.
 
-(b) Let $g=f^{-1}$. Under the exponential correspondence of Theorem 46.11, $g$ induces
+(b) Let $g=f^{-1}$. Give $C(X,Y)$ the compact-open topology. Theorem 46.11 states that, for $X$ locally compact Hausdorff and any space $Z$, a map $F:X\times Z\to Y$ is continuous if and only if the induced map $\hat F:Z\to C(X,Y)$, $\hat F(z)(x)=F(x,z)$, is continuous. The map $g$ induces
 \[
 G:B\to C(X,Y),\qquad G(b)(x)=g(x,b),
 \]
