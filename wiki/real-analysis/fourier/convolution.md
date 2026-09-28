@@ -11,11 +11,11 @@ topics:
 For measurable $f,g$ on $\RR^n$, the convolution is $f * g(x) \coloneqq \int f(x-y)g(y)\dy$ wherever the integral converges absolutely.
 
 ::: {.remark title="Properties of convolution from Fubini--Tonelli"}
-Each basic property of convolution is proved by applying [[real-analysis/fubini-tonelli/statements|Tonelli's or Fubini's theorem]] to the function $(x,y)\mapsto f(x-y)g(y)$ on $\RR^n\times\RR^n$:
+The integrability of $f*g$, associativity, and Young's inequality are proved by applying [[real-analysis/fubini-tonelli/statements|Tonelli's or Fubini's theorem]] to the function $(x,y)\mapsto f(x-y)g(y)$ on $\RR^n\times\RR^n$:
 
 - for $f,g\in L^1$, Tonelli's theorem applied to $\abs{f(x-y)g(y)}$ gives $\int\int\abs{f(x-y)g(y)}\dy\dx = \norm f_1\norm g_1$, so $f*g(x)$ is defined for almost every $x$ and $\norm{f*g}_1 \leq \norm f_1\norm g_1$;
 
-- commutativity and associativity follow from the change of variables $y \mapsto x-y$ and Fubini's theorem;
+- commutativity $f*g=g*f$ follows from the change of variables $y \mapsto x-y$, and associativity $(f*g)*h=f*(g*h)$ for $f,g,h\in L^1$ from that change of variables and Fubini's theorem;
 
 - Young's inequality $\norm{f*g}_r \leq \norm f_p\norm g_q$ with $\frac1r = \frac1p + \frac1q - 1$ follows from Hölder's inequality applied inside Tonelli's theorem.
 
