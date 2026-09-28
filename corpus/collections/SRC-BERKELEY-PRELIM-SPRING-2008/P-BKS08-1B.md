@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-1B
 kind: problem
-title: Represent a linear functional by an L2 polynomial pairing
+title: Representing $p\mapsto\int_0^1 \frac{p(x)}{x^2+1}\,dx$ by the $L^2$ pairing on polynomials of degree $\le n$
 classification:
   areas:
   - prelim
@@ -26,12 +26,12 @@ audit:
 ---
 
 ::: {.problem}
-For \(n\ge1\), let \(P_n\) be the real vector space of polynomials of degree at most \(n\). Show that there exists \(q\in P_n\) such that for every \(p\in P_n\),
-\[
+For $n\ge1$, let $P_n$ be the real vector space of polynomials of degree at most $n$. Show that there exists $q\in P_n$ such that for every $p\in P_n$,
+$$
 \int_0^1 p(x)q(x)\,dx
 =
 \int_0^1 \frac{p(x)}{x^2+1}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
