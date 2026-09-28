@@ -22,12 +22,12 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $f(\CC)$ omits $[5,\infty)$, so $\sqrt{5-f}$ entire omitting upper half-plane? Compose to bounded.
+<1>1. The entire function $5-f$ takes values in $\CC\setminus(-\infty,0]$.
 ::: {.proof}
 By hypothesis $f(z)\notin[5,\infty)$ for every $z$, so $5-f(z)\notin(-\infty,0]$. Thus the entire function $5-f$ takes values in $\mathbb C\setminus(-\infty,0]$.
 :::
 
-<1>2. $g=\sqrt{5-f}$ maps $\CC$ into right half-plane, then $\phi=(g-1)/(g+1)$ bounded by $1$.
+<1>2. The principal square root $g=\sqrt{5-f}$ is entire and satisfies $\operatorname{Re}g>0$.
 ::: {.proof}
 The plane minus the nonpositive real axis is simply connected and does not contain $0$. On this domain the principal branch of the square root is holomorphic. Since $5-f$ is entire and maps into that domain, the composition $g(z)=\sqrt{5-f(z)}$ is entire, and its square is $5-f$. Moreover $\operatorname{Re}g(z)>0$ for every $z$, because a square root of a point off $(-\infty,0]$ lies in the open right half-plane.
 :::
