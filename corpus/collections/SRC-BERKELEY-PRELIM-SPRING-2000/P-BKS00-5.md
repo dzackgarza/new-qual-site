@@ -97,7 +97,8 @@ $$
 $$
 
 ::: {.proof}
-Taking limits in the recurrence from step <1>3 gives
+Letting $n\to\infty$ in the defining recurrence, with $x_n\to L$ by
+step <1>3, gives
 $$
 L
 =
