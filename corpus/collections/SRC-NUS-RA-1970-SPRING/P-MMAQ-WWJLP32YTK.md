@@ -62,9 +62,9 @@ Since $G \setminus F \subseteq (G \setminus E) \cup (E \setminus F)$, subadditiv
 :::
 <2>2. ($\Leftarrow$) If for every $\varepsilon > 0$ such $F, G$ exist, then $E$ is measurable.
 ::: {.proof}
-$E = F \cup (E \setminus F)$ with $F$ closed (measurable).
+For each $n \geq 1$ choose closed $F_n$ and open $G_n$ with $F_n \subseteq E \subseteq G_n$ and $m(G_n \setminus F_n) < 1/n$, and put $F = \bigcup_n F_n$, a measurable subset of $E$.
+For every $n$, $E \setminus F \subseteq G_n \setminus F_n$, so $m^*(E \setminus F) < 1/n$. Hence $m^*(E \setminus F) = 0$; null sets are measurable, so $E = F \cup (E \setminus F)$ is measurable.
 :::
-Since $E \setminus F \subseteq G \setminus F$, we get $m^*(E \setminus F) \leq m(G \setminus F) < \varepsilon$ for every $\varepsilon > 0$, so $m^*(E \setminus F) = 0$; null sets are measurable, hence $E \setminus F$ is measurable and so is $E$.
 <2>3. Q.E.D.
 ::: {.proof}
 <2>1 and <2>2 give both implications.
