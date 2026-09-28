@@ -22,11 +22,11 @@ prompts:
 
 ::: {.definition}
 The \dfn{dimension} of $X$ is the supremum of $n$ over chains
-\[
+$$
 Z_0 \subsetneq Z_1 \subsetneq \cdots \subsetneq Z_n
-\]
+$$
 of irreducible closed subsets of $X$; the length counts links, not sets.
-The **codimension** of an irreducible closed $Z \subseteq X$ is the supremum of lengths of such chains starting at $Z_0 = Z$; for arbitrary closed $Y$ take the infimum over irreducible $Z \subseteq Y$.
+The \dfn{codimension} of an irreducible closed $Z \subseteq X$ is the supremum of lengths of such chains starting at $Z_0 = Z$; for arbitrary closed $Y$ take the infimum over irreducible $Z \subseteq Y$.
 :::
 
 ::: {.proposition}
@@ -36,8 +36,8 @@ More generally, if $Z \subseteq X$ is an irreducible closed subset with generic 
 :::
 
 ::: {.remark}
-Dimension is topological, so it cannot see nilpotents: $\dim X = \dim X^\red$, and $\Spec k[\eps]/\eps^2$ has dimension $0$ despite a two-dimensional ring of functions.
-Length, not dimension, detects the extra nilpotent structure in zero-dimensional schemes.
+Dimension depends only on the underlying topological space, so $\dim X = \dim X^\red$.
+For example, $\Spec k[\eps]/\eps^2$ has dimension $0$, and its ring of functions has length $2$, equal to its dimension as a $k$-vector space.
 
 For example, $\dim \Spec \ZZ = 1$ and $\dim \ZZ[x] = 2$. The equality $\dim A[x] = \dim A + 1$ holds for Noetherian $A$ but fails in general.
 For an integral scheme $X$ of finite type over a field, $\dim X = \trdeg_k k(X)$, and $\codim_X Z + \dim Z = \dim X$ for every irreducible closed subset $Z$.
