@@ -734,13 +734,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Object and need:** the cards below. Each line is a reader's report made
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
-  - Classification: in 40 textbook chapter folders with at least five cards,
-    every card has the same topic list (largest: SRC-TEXT-HAT02 4-2, 3-3,
-    1-3; SRC-TEXT-SS03 chapters 2, 4, 5, 6, 8, 9; SRC-TEXT-HK71 1-3 to 2-2;
-    SRC-TEXT-MUN00 chapters 1, 2, 4 to 7, 9, 10). SRC-TEXT-SS03 chapter 10
-    had chapter-level topics on a Fibonacci exercise and has been
-    reclassified. A shared list is correct when the section has one subject;
-    each card must be read.
   - Duplicates under `CARD-04`, read in full: E-BXDQY / E-EUGUZ,
     E-ENWYG / E-EOMTI, E-22P3T / E-2HIKG and E-AKNDW / E-CFHC4 state the same
     mathematics, each pair inside SRC-UNSORTED-COMPLEX-ANALYSIS. E-2DPQC
