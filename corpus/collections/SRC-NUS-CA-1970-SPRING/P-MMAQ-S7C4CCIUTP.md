@@ -23,19 +23,15 @@ Use Green theorem or otherwise to prove the Cauchy theorem.
 :::
 
 ::: {.solution}
-**Goal:** State and prove Cauchy's Theorem (under the classical assumption that $f'$ is continuous) using Green's Theorem.
+### Statement of Cauchy's theorem for $C^1$ functions
 
-* * *
-
-### Statement of Cauchy's Theorem
-
-**Theorem:** Let $\Omega \subset \mathbb{C}$ be a simply connected domain.
+Let $\Omega \subset \mathbb{C}$ be a simply connected domain.
 Let $f: \Omega \to \mathbb{C}$ be a holomorphic function whose derivative $f'$ is continuous ($f \in C^1(\Omega)$). Let $\gamma$ be a piecewise smooth, positively oriented simple closed curve whose interior $\text{Int}(\gamma)$ is contained in $\Omega$.
 Then: $$\oint_\gamma f(z) \, dz = 0.$$
 
 * * *
 
-### Proof via Green's Theorem
+### Proof via Green's theorem
 
 <1>1. **Decompose the complex contour integral into real line integrals.** <2>1. Write $f(z) = u(x, y) + i v(x, y)$ where $z = x + iy$, and $dz = dx + i dy$.
 *Proof:* Decomposition of complex functions and differentials into real and imaginary parts.
