@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let G be a finite Abelian group of order n. Suppose m is a square-free (not divisible by the square of a prime), positive integer dividing n. Show that G contains an element of order m. Give an example to show that this need not be true if m is not assumed to be square-free.
+Let $G$ be a finite Abelian group of order $n$. Suppose $m$ is a square-free (not divisible by the square of a prime), positive integer dividing $n$. Show that $G$ contains an element of order $m$. Give an example to show that this need not be true if $m$ is not assumed to be square-free.
 :::
 
 ::: {.solution}
