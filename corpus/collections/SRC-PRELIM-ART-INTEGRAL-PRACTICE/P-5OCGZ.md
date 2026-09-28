@@ -30,7 +30,7 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the indefinite integral $\int \frac{x+1}{\sqrt{4-x^2}} \, dx$ for $|x| < 2$.
+Take $|x| < 2$.
 
 <1>1. Split the integral into two parts: $$\int \frac{x+1}{\sqrt{4-x^2}} \, dx = \int \frac{x}{\sqrt{4-x^2}} \, dx + \int \frac{1}{\sqrt{4-x^2}} \, dx.$$
 ::: {.proof}
