@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-1
 kind: problem
-title: "SS 10.1: A theta-quotient identity for the Weierstrass function"
+title: A theta-quotient identity for $\wp_\tau$
 classification:
   areas:
   - complex-analysis
@@ -99,5 +99,5 @@ c_\tau
 =\frac14\left(\frac{\Theta''(z_0|\tau)}{\Theta'(z_0|\tau)}\right)^2
 -\frac13\frac{\Theta'''(z_0|\tau)}{\Theta'(z_0|\tau)} }.
 \]
-This is the theta-function analogue of the sigma-function identity from Exercise 5 of Chapter 9.
+This is the theta-function analogue of the sigma-function identity of [[E-SS9.EX-5]].
 :::
