@@ -23,24 +23,52 @@ Compute
 :::
 
 ::: {.solution}
-Factor $(1+z^2)^2 = (z+i^2(z-i)^2$.
-Take a keyhole contour similar to the following:
+Let $\log$ be the branch with $0<\arg z<2\pi$ on $\CC\setminus[0,\infty)$, and let
+\[
+f(z)={\log^2 z\over(1+z^2)^2},\qquad (1+z^2)^2 = (z+i)^2(z-i)^2
+.\]
+Integrate $f$ over a keyhole contour with outer radius $R$ and inner radius $\rho$, slit along $[0,\infty)$:
 
 ![image_2021-06-09-02-11-59](../../assets/figures/image_2021-06-09-02-11-59.png)
 
-Show that outer radius $R$ and inner radius $\rho$ circles contribute zero in the limit by the ML estimate?
-Compute the residues by just applying the formula and manually computing derivatives:
-\[
-\Res_{z= \pm i} f(z) 
-&= \lim_{z\to \pm i} \dd{}{z} {\log^2(z) \over (z\pm i)^2} \\
-&= \lim_{z\to \pm i} {2\log(z) (z\pm i)^2 - 2(z\pm i)^2 \log^2(z) \over \qty{(z\pm i )^2}^2} \\
-&= {
-2\log(\pm i)(\pm 2i)^2 - 2(\pm 2i)^2 \log^2(\pm i)
-\over {\qty{\pm 2i}}^4 } \\
-&=_? {\pi \over 4}\pm {i\pi^2 \over 16}
-.\]
+Write $A\coloneqq\int_0^\infty{dx\over(1+x^2)^2}={\pi\over4}$.
 
-> See p.4 of [Nica's complex analysis notes (Toronto)](http://www.math.toronto.edu/mnica/complex1.pdf).
+<1>1. The circles of radii $R$ and $\rho$ contribute $0$ in the limit.
+
+::: {.proof}
+By the ML estimate, the outer circle contributes $O\qty{R(\log R+2\pi)^2/R^4}\to0$ and the inner circle contributes $O\qty{\rho(\abs{\log\rho}+2\pi)^2}\to0$.
+:::
+
+<1>2. The two edges of the slit contribute $-4\pi i I+4\pi^2A$.
+
+::: {.proof}
+On the upper edge $\log z=\log x$, and on the lower edge, traversed from $\infty$ to $0$, $\log z=\log x+2\pi i$. So the edges contribute
+\[
+\int_0^\infty{\log^2x-(\log x+2\pi i)^2\over(1+x^2)^2}\,dx=-4\pi i I+4\pi^2A
+.\]
+:::
+
+<1>3. $\Res_{z=i}f=-{\pi\over4}+{i\pi^2\over16}$ and $\Res_{z=-i}f={3\pi\over4}-{9i\pi^2\over16}$.
+
+::: {.proof}
+With $h(z)=\log^2z$, $h'(z)=2\log z/z$, and on this branch $\log i=i\pi/2$, $\log(-i)=3\pi i/2$. At the double poles,
+\[
+\Res_{z=i}f=\dd{}{z}{h(z)\over(z+i)^2}\bigg|_{z=i}={h'(i)\over(2i)^2}-{2h(i)\over(2i)^3}={\pi\over-4}-{-\pi^2/2\over-8i}=-{\pi\over4}+{i\pi^2\over16}
+,\]
+\[
+\Res_{z=-i}f=\dd{}{z}{h(z)\over(z-i)^2}\bigg|_{z=-i}={h'(-i)\over(-2i)^2}-{2h(-i)\over(-2i)^3}={-3\pi\over-4}-{-9\pi^2/2\over8i}={3\pi\over4}-{9i\pi^2\over16}
+.\]
+:::
+
+<1>4. $I=\boxed{-\pi/4}$.
+
+::: {.proof}
+By steps <1>1 to <1>3 and the residue theorem,
+\[
+-4\pi iI+4\pi^2A=2\pi i\qty{{\pi\over2}-{i\pi^2\over2}}=\pi^3+i\pi^2
+.\]
+The real parts agree since $A=\pi/4$, and the imaginary parts give $-4\pi I=\pi^2$.
+:::
 
 :::
 
