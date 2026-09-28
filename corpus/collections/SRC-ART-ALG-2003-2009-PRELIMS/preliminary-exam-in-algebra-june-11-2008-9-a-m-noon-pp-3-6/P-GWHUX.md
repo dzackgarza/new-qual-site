@@ -20,9 +20,32 @@ b. Determine the number of nonisomorphic Abelian groups of order 2700.
 :::
 
 ::: {.solution}
-**a.** $G=\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$.
-If $\gcd(a,b)=1$, then $\mathbf{Z}_a\times\mathbf{Z}_b\cong\mathbf{Z}_{ab}$, therefore we may conclude that $$\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9\cong\mathbf{Z}_{15}\times\mathbf{Z}_{180}$$ However, two groups are isomorphic just in case they have the same rank and list of invariant factors, so we may conclude that the invariant factors of $G$ are 15 and 180. In addition, we know $$\mathbf{Z}_{180}\cong\mathbf{Z}_{3^2}\times\mathbf{Z}_{2^2}\times\mathbf{Z}_5,\qquad \mathbf{Z}_{15}\cong\mathbf{Z}_3\times\mathbf{Z}_5$$ Therefore the elementary divisors of $G$ are $3,5,3^2,2^2,5$.
+Let $G=\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$.
 
-**b.** Too long to write out.
-Just think about it.
+<1>1. The elementary divisors of $G$ are $2^2,3,3^2,5,5$, and its invariant factors are $15\mid180$.
+
+::: {.proof}
+If $\gcd(a,b)=1$, then $\mathbf{Z}_a\times\mathbf{Z}_b\cong\mathbf{Z}_{ab}$.
+Hence $\mathbf{Z}_{15}\cong\mathbf{Z}_3\times\mathbf{Z}_5$, $\mathbf{Z}_{20}\cong\mathbf{Z}_{2^2}\times\mathbf{Z}_5$, and
+$$
+G\cong\mathbf{Z}_{2^2}\times\mathbf{Z}_3\times\mathbf{Z}_{3^2}\times\mathbf{Z}_5\times\mathbf{Z}_5,
+$$
+which lists the elementary divisors.
+Grouping the largest prime powers gives $\mathbf{Z}_{2^2}\times\mathbf{Z}_{3^2}\times\mathbf{Z}_5\cong\mathbf{Z}_{180}$, and the rest gives $\mathbf{Z}_3\times\mathbf{Z}_5\cong\mathbf{Z}_{15}$.
+Thus $G\cong\mathbf{Z}_{15}\times\mathbf{Z}_{180}$ with $15\mid180$, and by uniqueness of invariant factors [@DF04] these are the invariant factors of $G$.
+:::
+
+<1>2. There are $\boxed{12}$ nonisomorphic abelian groups of order $2700$.
+
+::: {.proof}
+Since $2700=2^2\cdot3^3\cdot5^2$, an abelian group of order $2700$ is determined up to isomorphism by one partition of each exponent, the parts giving the orders of its cyclic primary factors [@DF04].
+The exponent $2$ has the $2$ partitions $(2),(1,1)$, and the exponent $3$ has the $3$ partitions $(3),(2,1),(1,1,1)$.
+The number of groups is therefore $2\cdot3\cdot2=12$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Step <1>1 answers part (a) and step <1>2 answers part (b).
+:::
 :::
