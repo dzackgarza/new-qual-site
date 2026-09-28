@@ -37,10 +37,10 @@ $$
 { \frac { 1 } { z - c _ { 1 } } } + \cdots + { \frac { 1 } { z - c _ { n } } } = 0 .
 $$
 
-Show that z lies in the convex hull of $c _ { 1 } , \ldots , c _ { n }$
+Show that $z$ lies in the convex hull of $c_1,\ldots,c_n$.
 
 (b) Let $p ( z )$ be a non-constant polynomial.
-Show that every zero of $p ^ { \prime } ( z )$ lies in the convex hull of the zeroes of $p ( z )$
+Show that every zero of $p'(z)$ lies in the convex hull of the zeroes of $p(z)$.
 :::
 
 ::: {.solution}
