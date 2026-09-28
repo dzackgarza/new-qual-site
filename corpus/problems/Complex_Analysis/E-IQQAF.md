@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-IQQAF
 kind: problem
-title: ML estimate for a semicircular contour
+title: $\int_\RR\frac{\cos x}{x^2+1}\,dx$ by a semicircular contour
 classification:
   areas:
   - complex-analysis
