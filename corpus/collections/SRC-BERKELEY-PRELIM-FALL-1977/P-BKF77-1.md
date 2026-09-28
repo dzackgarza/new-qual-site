@@ -44,7 +44,7 @@ $$
 $$
 Thus the eigenvalues are $1$ and $2$.
 
-<1>1. Find an eigenvector for $\lambda=1$.
+<1>1. $v_1=\binom{-5}{2}$ is an eigenvector of $A$ for $\lambda=1$.
 ::: {.proof}
 We have
 $$
@@ -64,7 +64,7 @@ Av_1=v_1.
 $$
 :::
 
-<1>2. Find an eigenvector for $\lambda=2$.
+<1>2. $v_2=\binom{-3}{1}$ is an eigenvector of $A$ for $\lambda=2$.
 ::: {.proof}
 We have
 $$
@@ -84,7 +84,7 @@ Av_2=2v_2.
 $$
 :::
 
-<1>3. Form the eigenvector matrix.
+<1>3. The matrix $B=\begin{pmatrix}-5&-3\\2&1\end{pmatrix}$ with columns $v_1,v_2$ satisfies $B^{-1}AB=\operatorname{diag}(1,2)$.
 ::: {.proof}
 Let
 $$
