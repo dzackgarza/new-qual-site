@@ -99,8 +99,12 @@ f^{(k)}(x)
 =
 P_k(1/x)e^{-1/x^2}.
 $$
-Indeed this is clear for $k=0$, and differentiating a term of this form
-produces another polynomial in $1/x$ times $e^{-1/x^2}$.
+For $k=0$ take $P_0=1$. Differentiating
+$P_k(1/x)e^{-1/x^2}$ gives
+$$
+\bigl(-x^{-2}P_k'(1/x)+2x^{-3}P_k(1/x)\bigr)e^{-1/x^2},
+$$
+so $P_{k+1}(t)=-t^2P_k'(t)+2t^3P_k(t)$.
 
 Step <1>1 implies that every such expression tends to $0$ as $x\to0$.
 Inductively, if $f^{(k)}(0)=0$, then
