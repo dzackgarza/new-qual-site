@@ -18,8 +18,8 @@ audit:
 
 ::: {.problem}
 Find the number of complex roots of
-\[
+$$
 e^z=3z^6
-\]
+$$
 with $|z|<1$ that have positive imaginary part.
 :::
