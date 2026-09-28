@@ -9,31 +9,30 @@ topics:
 
 # Embeddings and Jacobians
 
-Having fixed a genus, the next questions are what the curve can be embedded as and what its line bundles form.
-
 [[T-D8TUX]]
 
-The numerical criterion converts the embedding question into two applications of Riemann--Roch: a linear system embeds exactly when removing any two points drops the dimension by two, which is separation of points and tangent vectors written arithmetically.
-Degree at least $2g+1$ is the crude sufficient condition, and the canonical system is the interesting borderline case.
+In the criterion, $p\neq q$ is separation of points and $p=q$ is separation of tangent vectors at $p$.
+Every $D$ with $\deg D\ge2g+1$ is very ample; the canonical divisor, of degree $2g-2$, is very ample exactly when $g\ge3$ and $C$ is not hyperelliptic.
 
-Hyperelliptic curves are the exception in every statement here, and they are the exception for one reason: a degree-two map to $\PP^1$ is a pencil that cannot be made to separate the two points of a fibre.
+If $g\ge2$, $\pi\colon C\to\PP^1$ has degree two, and $p+q$ is a fibre, then $K\sim(g-1)(p+q)$ and $\ell(K-p-q)=g-1=\ell(K)-1$, so $\abs{K}$ does not separate $p$ and $q$, and the canonical map factors through $\pi$.
 
 ## The Jacobian
 
 [[T-U5QSY]]
 
-Abel's theorem and Jacobi inversion together identify $\Pic^0$ with a $g$-dimensional abelian variety, which is the sense in which the Jacobian is significant: the classification of degree-zero line bundles stops being a list and becomes a variety.
+By Abel's theorem and Jacobi inversion, the Abel--Jacobi map induces an isomorphism of groups $\Pic^0(X)\cong\Jac(X)=H^0(X,\Omega^1)^\vee/H_1(X,\ZZ)$, a $g$-dimensional complex torus that is an abelian variety.
 
-In genus one the Abel--Jacobi map is an isomorphism $E \to \Jac(E)$: an elliptic curve is its own Jacobian, and its group law is Abel's theorem written for three points.
+In genus one, $p\mapsto[p-p_0]$ is an isomorphism $E\to\Jac(E)$, and it carries the group law of $(E,p_0)$ to addition in $\Jac(E)$.
 
-That construction uses periods and integration, so it exists only over $\CC$.
+The period construction is analytic and applies to curves over $\CC$.
 
 [[T-CRVJACFUN]]
 
-The functorial construction survives in characteristic $p$ and in families.
-It uses $\Pic^0(X/T) = \Pic^0(X \times T)/p^*\Pic(T)$; the quotient removes line bundles pulled back from the base, which do not change any fibre, and is what makes the functor representable.
+The functorial construction applies over any field and in families.
+In $\Pic^0(X/T)=\Pic^0(X\times T)/p^*\Pic(T)$, the quotient identifies two families that differ by a line bundle pulled back from $T$; such families have isomorphic restrictions to every fibre $X_t$.
 
-Smooth of dimension $g$ comes from dual numbers — the tangent space at the origin is $H^1(X, \OO_X)$ — plus the observation that a group scheme is homogeneous, so smoothness at one point is smoothness everywhere.
-Properness is the valuative criterion, and it works because $X \times \operatorname{Spec} R$ is regular, so divisors extend.
+The tangent space at the origin, computed from $T=\Spec k[\varepsilon]/(\varepsilon^2)$, is $H^1(X,\OO_X)$, of dimension $g=\dim\Jac(X)$, so $\Jac(X)$ is smooth at the origin; translations act transitively on its points, so it is smooth everywhere.
+Properness follows from the valuative criterion: for a discrete valuation ring $R$, $X\times\Spec R$ is regular, so a line bundle on the generic fibre extends by taking the closure of a divisor.
 
-The map from $\Sym^n X$ is the computational handle: surjective once $n \geq g$ by Riemann--Roch, with fibres the complete linear systems, which recovers $\dim \Jac(X) = g$ a second time.
+The map $\Sym^nX\to\Pic^n(X)$, $D\mapsto\OO_X(D)$, has fibre $\abs{L}\cong\PP^{\ell(L)-1}$ over $L$.
+For $n\ge g$ it is surjective by Riemann--Roch, and for $n=g$ its general fibre is a point, so $\dim\Jac(X)=g$.
