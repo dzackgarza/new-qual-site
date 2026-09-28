@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: E-SS6.PR-1
 kind: problem
-title: "Estimates for the Riemann zeta function and its derivative near $\\Re(s)=1$"
+title: Estimates for $\zeta$ and $\zeta'$ near $\Re(s)=1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - Riemann Zeta
+  - Zeta Function
 relations: []
 review: draft
 audit:
@@ -30,30 +30,9 @@ for every integer $N \geq 2$, whenever $\operatorname{Re}(s) > 0$, where $\delta
 (c) Show that $|\zeta'(1+it)| = O((\log |t|)^2)$ as $|t| \to \infty$.
 
 (d) Show that if $t \neq 0$ and $t$ is fixed, then the partial sums of the series $\sum_{n=1}^\infty n^{-1-it}$ are bounded, but the series does not converge.
-
-2. Prove that for $\operatorname{Re}(s) > 0$,
-$$
-\zeta(s) = \frac{s}{s-1} - s \int_1^\infty \frac{\{x\}}{x^{s+1}}\,dx,
-$$
-where $\{x\} = x - \lfloor x \rfloor$ is the fractional part of $x$.
-
-3. If $Q(x) = \{x\} - 1/2$, then we can write the expression in the previous problem as
-$$
-\zeta(s) = \frac{s}{s-1} - \frac{1}{2} - s \int_1^\infty \frac{Q(x)}{x^{s+1}}\,dx.
-$$
-Let us construct $Q_k(x)$ recursively so that
-$$
-\int_0^1 Q_k(x)\,dx = 0, \quad \frac{dQ_{k+1}}{dx} = Q_k(x), \quad Q_0(x) = Q(x), \quad \text{and} \quad Q_k(x+1) = Q_k(x).
-$$
-Then prove that for $\operatorname{Re}(s) > -k$,
-$$
-\zeta(s) = \frac{s}{s-1} - \frac{1}{2} - \frac{s(s+1)\cdots(s+k)}{k!} \int_1^\infty \frac{Q_k(x)}{x^{s+k+1}}\,dx.
-$$
 :::
 
 ::: {.solution}
-**Goal:** Establish asymptotic bounds for $\zeta(s)$ and $\zeta'(s)$ near $\Re(s)=1$ and integral representations yielding its meromorphic continuation.
-
 <1>1. Part 1(a): Expansion for $\zeta(s)$ with truncation parameter $N$.
     ::: {.proof}
     <2>1. For $\Re(s) > 1$, the Dirichlet series converges absolutely:
@@ -105,29 +84,10 @@ $$
     <2>5. Hence the series $\sum_{n=1}^\infty n^{-1-it}$ diverges.
 
 :::
-<1>5. Part 2: First integral representation via fractional part.
-    ::: {.proof}
-    <2>1. For $\Re(s) > 1$ and $M \in \mathbb{N}$, apply Abel summation (integration by parts):
-    $$\sum_{n=1}^M n^{-s} = \int_{1^-}^M x^{-s}\,d\lfloor x \rfloor = \frac{\lfloor M \rfloor}{M^s} + s \int_1^M \frac{\lfloor x \rfloor}{x^{s+1}}\,dx = M^{1-s} + s \int_1^M \frac{x - \{x\}}{x^{s+1}}\,dx.$$
-    <2>2. Split the integral:
-    $$s \int_1^M \frac{x}{x^{s+1}}\,dx = s \int_1^M x^{-s}\,dx = s \left[ \frac{x^{1-s}}{1-s} \right]_1^M = \frac{s}{s-1} (1 - M^{1-s}).$$
-    <2>3. Thus
-    $$\sum_{n=1}^M n^{-s} = \frac{s}{s-1} + M^{1-s} \left(1 - \frac{s}{s-1}\right) - s \int_1^M \frac{\{x\}}{x^{s+1}}\,dx = \frac{s}{s-1} - \frac{M^{1-s}}{s-1} - s \int_1^M \frac{\{x\}}{x^{s+1}}\,dx.$$
-    <2>4. For $\Re(s) > 1$, as $M \to \infty$, $|M^{1-s}| = M^{1-\Re(s)} \to 0$.
-    <2>5. Because $0 \le \{x\} < 1$, the integral $\int_1^\infty \frac{\{x\}}{x^{s+1}}\,dx$ converges absolutely and uniformly on compact subsets of $\Re(s) > 0$.
-    <2>6. Taking $M \to \infty$ gives $\zeta(s) = \frac{s}{s-1} - s \int_1^\infty \frac{\{x\}}{x^{s+1}}\,dx$ for $\Re(s) > 1$, and by analytic continuation this holds for all $\Re(s) > 0$ with $s \neq 1$.
 
-:::
-<1>6. Part 3: Recursive periodic refinement.
-    ::: {.proof}
-    <2>1. Substitute $\{x\} = Q(x) + 1/2$ into Part 2:
-    $$\zeta(s) = \frac{s}{s-1} - s \int_1^\infty \frac{1/2}{x^{s+1}}\,dx - s \int_1^\infty \frac{Q(x)}{x^{s+1}}\,dx = \frac{s}{s-1} - \frac{1}{2} - s \int_1^\infty \frac{Q(x)}{x^{s+1}}\,dx.$$
-    <2>2. For $k \ge 1$, the function $Q_k(x)$ is periodic with period 1 and continuous on $\mathbb{R}$ with $Q_k(0) = Q_k(1) = 0$ (since $\int_0^1 Q_{k-1} = 0$).
-    <2>3. Integrating by parts repeatedly using $Q_j(x) = \frac{d}{dx} Q_{j+1}(x)$ and $\frac{d}{dx} x^{-(s+j+1)} = -(s+j+1) x^{-(s+j+2)}$:
-    $$\int_1^\infty \frac{Q_j(x)}{x^{s+j+1}}\,dx = \left[ \frac{Q_{j+1}(x)}{x^{s+j+1}} \right]_1^\infty + (s+j+1) \int_1^\infty \frac{Q_{j+1}(x)}{x^{s+j+2}}\,dx.$$
-    <2>4. The boundary terms vanish at $\infty$ (for $\Re(s) > -j$) and at $x=1$ because $Q_{j+1}(1) = 0$.
-    <2>5. By induction on $k$, for $\Re(s) > -k$:
-    $$\zeta(s) = \frac{s}{s-1} - \frac{1}{2} - s(s+1)\cdots(s+k) \int_1^\infty \frac{Q_k(x)}{x^{s+k+1}}\,dx.$$
-    This gives the analytic continuation of $\zeta(s)$ to $\Re(s) > -k$.
+<1>5. Q.E.D.
+
+::: {.proof}
+Steps <1>1 to <1>4 prove parts (a) to (d).
 :::
 :::

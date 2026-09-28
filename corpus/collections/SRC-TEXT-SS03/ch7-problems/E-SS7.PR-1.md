@@ -2,22 +2,19 @@
 schema: qual/card@1
 id: E-SS7.PR-1
 kind: problem
-title: "Dirichlet series with bounded coefficients converge in a half-plane"
+title: Mean square of a Dirichlet series with bounded coefficients, and uniqueness of coefficients
 classification:
   areas:
   - complex-analysis
   topics:
-  - Riemann Zeta
+  - Zeta Function
+  - Dirichlet Series
 relations: []
 review: draft
 audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
-- event: source-checked
-  by: gpt-5.6-sol
-  date: 2026-09-11
-  note: The extracted card appends distinct later starred source problems after indexed Problem 1; the solution addresses the indexed problem.
 ---
 
 ::: {.exercise}
@@ -38,31 +35,6 @@ Hint: For part (a) use the fact that
 
 $$
 \frac {1}{2 T} \int_ {- T} ^ {T} (n m) ^ {- \sigma} n ^ {- i t} m ^ {i t}   d t \to \left\{ \begin{array}{l l} n ^ {- 2 \sigma} & \text {if} n = m, \\ 0 & \text {if} n \neq m. \end{array} \right.
-$$
-
-2. $^\ast$ One of the “explicit formulas” in the theory of primes is as follows: if $\psi _ { 1 }$ is the integrated Tchebychev function considered in Section 2, then
-
-$$
-\psi_ {1} (x) = \frac {x ^ {2}}{2} - \sum_ {\rho} \frac {x ^ {\rho}}{\rho (\rho + 1)} - E (x)
-$$
-
-where the sum is taken over all zeros $\rho$ of the zeta function in the critical strip.
-The error term is given by $\begin{array} { r } { E ( x ) = \dot { c _ { 1 } } x + c _ { 0 } + \sum _ { k = 1 } ^ { \infty } x ^ { 1 - 2 k } / ( 2 k ( 2 k - 1 ) ) } \end{array}$ , where $c _ { 1 } = \zeta ^ { \prime } ( 0 ) / \zeta ( 0 )$ and $c _ { 0 } = \zeta ^ { \prime } ( - 1 ) / \zeta ( - 1 )$ . Note that $\textstyle \sum _ { \rho } 1 / | \rho | ^ { 1 + \epsilon } < \infty$ for every $\epsilon > 0$ , because $( 1 - s ) \zeta ( s )$ has order of growth 1. (See Exercise 8.) Also, obviously $E ( x ) = O ( x )$ as $x \to \infty$
-
-3. $^\ast$ Using the previous problem one can show that
-
-$$
-\pi (x) - \operatorname{Li} (x) = O (x ^ {\alpha + \epsilon}) \quad \mathrm{as} x \to \infty
-$$
-
-for every $\epsilon > 0$ , where $\alpha$ is fixed and $1 / 2 \le \alpha < 1$ if and only ${ \mathrm { i f ~ } } \zeta ( s )$ has no zeros in the strip $\alpha < \mathrm { R e } ( s ) < 1$ . The case $\alpha = 1 / 2$ corresponds to the Riemann hypothesis.
-
-4. $^\ast$ One can combine ideas from the prime number theorem with the proof of Dirichlet’s theorem about primes in arithmetic progression (given in Book I) to prove the following.
-   Let $q$ and $\ell$ be relatively prime integers.
-   We consider the primes belonging to the arithmetic progression $\{ q k + \ell \} _ { k = 1 } ^ { \infty }$ , and let $\pi _ { q , \ell } ( x )$ denote the number of such primes $\leq x$ . Then one has
-
-$$
-\pi_ {q, \ell} (x) \sim \frac {x}{\varphi (q) \log x} \quad \mathrm{as} x \to \infty ,
 $$
 :::
 
@@ -118,6 +90,4 @@ Applying part (a), for every $\sigma>1$,
 \]
 Every term on the right is nonnegative, so every $b_n=0$, hence every $a_n=0$.
 This proves uniqueness of Dirichlet series under the stated polynomial growth condition.
-
-The appended numbered items $2^*$--$4^*$ are separate subsequent source problems that were absorbed into this card by extraction; the indexed card `E-SS7.PR-1` is Problem 1 above.
 :::

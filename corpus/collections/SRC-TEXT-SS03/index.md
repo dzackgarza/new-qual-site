@@ -159,6 +159,9 @@ source:
   - name: Ch6 Problems
     problems:
     - E-SS6.PR-1
+    - E-SS6.PR-2
+    - E-SS6.PR-3
+    - E-SS6.PR-4
   - name: Ch7 Exercises
     problems:
     - E-SS7.EX-1
@@ -168,6 +171,9 @@ source:
   - name: Ch7 Problems
     problems:
     - E-SS7.PR-1
+    - E-SS7.PR-2
+    - E-SS7.PR-3
+    - E-SS7.PR-4
   - name: Ch8 Exercises
     problems:
     - E-SS8.EX-1
