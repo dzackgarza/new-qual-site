@@ -33,88 +33,84 @@ has a solution $x(t)$ defined for all $t\in\mathbb R$.
 
 ::: {.solution}
 Let
-\[
+$$
 F(x)=3x+85\cos x.
-\]
-Since $F$ is smooth on $\mathbb R$, the standard local existence and uniqueness theorem gives a unique maximal solution
-\[
-x:(\alpha,\beta)\longrightarrow\mathbb R,
-\qquad
-x(0)=77.
-\]
-We prove that neither endpoint can be finite.
+$$
 
-<1>1. The vector field has at most linear growth.
+<1>1. There is a unique maximal solution
+$$
+x:(\alpha,\beta)\longrightarrow\RR,
+\qquad
+x(0)=77,
+$$
+with $-\infty\le\alpha<0<\beta\le\infty$.
+
 ::: {.proof}
-For every $x\in\mathbb R$,
-\[
-|F(x)|
-=|3x+85\cos x|
-\le3|x|+85.
-\]
+The function $F$ is smooth on $\RR$, so the local existence and uniqueness
+theorem and continuation of solutions give the maximal solution.
 :::
 
-<1>2. The solution is bounded on every finite forward time interval contained in its maximal interval.
+<1>2. For every $x\in\RR$,
+$$
+\abs{F(x)}\le3\abs{x}+85.
+$$
+
+::: {.proof}
+One has $\abs{3x+85\cos x}\le3\abs{x}+85\abs{\cos x}\le3\abs{x}+85$.
+:::
+
+<1>3. If $\beta<\infty$, then
+$$
+\abs{x(t)}\le(77+85\beta)e^{3\beta}
+\qquad(0\le t<\beta).
+$$
+
 ::: {.proof}
 For $0\le t<\beta$,
-\[
-x(t)=77+\int_0^t F(x(s))\,ds.
-\]
-Using <1>1,
-\[
-|x(t)|
-\le77+85t+3\int_0^t|x(s)|\,ds.
-\]
-Fix $T<\beta$.
-For $0\le t\le T$,
-\[
-|x(t)|
-\le 77+85T+3\int_0^t|x(s)|\,ds.
-\]
+$$
+x(t)=77+\int_0^t F(x(s))\,ds,
+$$
+so step <1>2 gives
+$$
+\abs{x(t)}
+\le77+85\beta+3\int_0^t\abs{x(s)}\,ds.
+$$
 Gronwall's inequality gives
-\[
-|x(t)|\le(77+85T)e^{3t}
-\le(77+85T)e^{3T}.
-\]
-Thus $x$ is bounded on every finite interval $[0,T]\subset(\alpha,\beta)$.
+$$
+\abs{x(t)}\le(77+85\beta)e^{3t}
+\le(77+85\beta)e^{3\beta}.
+$$
 :::
 
-<1>3. The solution is bounded on every finite backward time interval contained in its maximal interval.
+<1>4. If $\alpha>-\infty$, then
+$$
+\abs{x(t)}\le(77+85\abs{\alpha})e^{3\abs{\alpha}}
+\qquad(\alpha<t\le0).
+$$
+
 ::: {.proof}
-Set
-\[
-y(s)=x(-s).
-\]
-Then, wherever it is defined,
-\[
+Set $y(s)=x(-s)$ for $-\beta<s<-\alpha$. Then
+$$
 y'(s)=-F(y(s)),
-\qquad y(0)=77.
-\]
-The vector field $-F$ satisfies the same growth estimate
-\[
-|-F(y)|\le3|y|+85.
-\]
-Applying the argument of <1>2 to $y$ shows that $x(t)$ is bounded on every finite interval $[-T,0]\subset(\alpha,\beta)$.
+\qquad y(0)=77,
+$$
+and $\abs{-F(y)}\le3\abs{y}+85$ by step <1>2. The argument of step <1>3
+applied to $y$ on $[0,\abs{\alpha})$ gives the bound.
 :::
 
-<1>4. The maximal interval is all of $\mathbb R$.
-::: {.proof}
-For a smooth vector field on all of $\mathbb R$, a maximal solution can fail to extend through a finite endpoint only by leaving every compact subset of the state space; in one dimension this means
-\[
-|x(t)|\longrightarrow\infty
-\]
-as the endpoint is approached.
+<1>5. $\alpha=-\infty$ and $\beta=\infty$.
 
-If $\beta<\infty$, <1>2 with any $T<\beta$ gives a bound that remains finite as $T\uparrow\beta$; for example
-\[
-|x(t)|\le(77+85\beta)e^{3\beta}
-\qquad(0\le t<\beta).
-\]
-Thus finite-time blowup at $\beta$ is impossible, so $\beta=\infty$.
-Likewise <1>3 rules out a finite left endpoint, so $\alpha=-\infty$.
-Therefore the solution is defined for every
-\[
-t\in\mathbb R.
-\]
+::: {.proof}
+For a smooth vector field on $\RR$, a maximal solution with a finite
+endpoint satisfies $\abs{x(t)}\to\infty$ as that endpoint is approached.
+Steps <1>3 and <1>4 show that $x$ stays bounded near any finite endpoint,
+so neither endpoint is finite.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+By steps <1>1 and <1>5, the maximal solution is defined for every
+$t\in\RR$.
 :::
 :::
