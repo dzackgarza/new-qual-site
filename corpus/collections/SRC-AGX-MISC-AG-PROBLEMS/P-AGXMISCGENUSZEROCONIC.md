@@ -20,11 +20,29 @@ Give an explanation for your answer.
 :::
 
 ::: {.solution}
-Sketch: yes.
-Apply the Riemann--Roch theorem, which guarantees the existence of a nonconstant meromorphic function with a simple pole at exactly one point.
-Argue that this meromorphic function identifies the curve with $\PP^1$, and using that fact, embed the curve as a conic in the plane in any convenient way.
-For example, if $t_0, t_1$ are projective coordinates on $\PP^1$, let $z_0=t_0^2$, $z_1=t_0 t_1$, $z_2=t_1^2$ be the map to $\PP^2$.
-The conic is then $z_0 z_2=z_1^2$.
+Let $C$ be a smooth projective curve of genus $0$ over $\CC$ and fix $p\in C$.
 
-Alternatively, one can consider the complete linear system attached to the anticanonical divisor.
+<1>1. There is a nonconstant meromorphic function $f$ on $C$ whose only pole is a simple pole at $p$.
+
+::: {.proof}
+By the Riemann--Roch theorem, $\ell([p]) - \ell(K_C-[p]) = 1 + 1 - 0 = 2$, so $\ell([p])\geq 2$. The space $L([p])$ therefore contains a function $f$ that is not constant; its only possible pole is a simple pole at $p$, and it has one because it is nonconstant.
+:::
+
+<1>2. $f\colon C\to\PP^1$ is an isomorphism.
+
+::: {.proof}
+The degree of $f$ equals the number of poles counted with multiplicity, which is $1$ by step <1>1. A morphism of degree $1$ between smooth projective curves is an isomorphism.
+:::
+
+<1>3. $\PP^1$ is isomorphic to the conic $z_0 z_2=z_1^2$ in $\PP^2$.
+
+::: {.proof}
+In projective coordinates $t_0, t_1$ on $\PP^1$, the map $[t_0:t_1]\mapsto[z_0:z_1:z_2]=[t_0^2:t_0 t_1:t_1^2]$ is an isomorphism onto the conic $z_0 z_2=z_1^2$. Equivalently, it is the map given by the complete linear system of the anticanonical divisor, which has degree $2$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Steps <1>2 and <1>3 give $C\cong\PP^1\cong V(z_0z_2-z_1^2)$, so the answer is $\boxed{\text{yes}}$.
+:::
 :::
