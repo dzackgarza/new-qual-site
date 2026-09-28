@@ -22,51 +22,30 @@ If $f$ is a nonnegative measurable function on $\mathbb{R}$ and $p > 0$, show th
 :::
 
 ::: {.solution}
-**Goal:** For $f \geq 0$ measurable on $\RR$ and $p > 0$, prove $\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{f > t\}} ~dt$, where $\abs{\cdot}$ is Lebesgue measure.
-Both sides are allowed to be $+\infty$.
+Both sides may equal $+\infty$. Write $\abs{\cdot}$ for Lebesgue measure and $\chi_{\{t < f(x)\}}$ for the indicator of $\{(x,t) \in \RR \times (0,\infty) : t < f(x)\}$.
 
-<1>1. Reduce to a product integral and apply Tonelli.
-<2>1. Write $f(x)^p = \int_0^{f(x)} p t^{p-1} ~dt$.
+<1>1. For every $x$, $f(x)^p = \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt$.
+
 ::: {.proof}
-For $a \geq 0$, $\int_0^a p t^{p-1} ~dt = \left[t^p\right]_0^a = a^p$, valid for every $p > 0$ (including $0 < p < 1$, where $t^{p-1}$ is integrable on $(0,a)$). <2>2. Hence $\int f(x)^p ~dx = \int_{\RR} \int_0^{f(x)} p t^{p-1} ~dt ~dx$.
+For $a \geq 0$, $\int_0^a p t^{p-1} ~dt = \left[t^p\right]_0^a = a^p$ for every $p > 0$; when $0 < p < 1$ the integrand $t^{p-1}$ is integrable on $(0,a)$. Take $a = f(x)$ and write $\int_0^{f(x)}$ as $\int_0^\infty$ against $\chi_{\{t < f(x)\}}$.
 :::
-::: {.proof}
-Substitute <2>1. <2>3. The double integral $\int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$ equals the iterated integral of <2>2.
-::: {.proof}
-$\int_0^{f(x)} p t^{p-1} ~dt = \int_0^\infty p t^{p-1} \chi_{(0, f(x))}(t) ~dt = \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}}(t) ~dt$.
-:::
-:::
-<2>4. The integrand $p t^{p-1} \chi_{\{t < f(x)\}}$ is nonnegative and jointly measurable in $(x, t)$.
+
+<1>2. The integrand $(x,t) \mapsto p t^{p-1} \chi_{\{t < f(x)\}}$ is nonnegative and measurable on $\RR \times (0,\infty)$.
+
 ::: {.proof}
 $f$ is measurable, so $\{(x,t) : t < f(x)\} = f^{-1}((t, \infty))$ is a measurable subset of $\RR^2$; $t^{p-1}$ is measurable on $(0,\infty)$.
 :::
-<2>5. Tonelli's theorem applies, so we may integrate in either order.
+
+<1>3. For each $t > 0$, $\int_\RR \chi_{\{t < f(x)\}} ~dx = \abs{\{x : f(x) > t\}}$.
+
 ::: {.proof}
-Tonelli's theorem: nonnegative measurable functions may be integrated in any order (possibly both $+\infty$). <2>6. Q.E.D.
-::: {.proof}
-We have reduced the claim to identifying $\int_\RR \chi_{\{t < f(x)\}} ~dx$, done in <1>2.
-:::
+For fixed $t$ the indicator is $1$ exactly on $\{x : f(x) > t\}$.
 :::
 
-<1>2. Identify the inner integral: $\int_\RR \chi_{\{t < f(x)\}} ~dx = \abs{\{x : f(x) > t\}}$ for each $t > 0$.
-<2>1. $\int_\RR \chi_{\{t < f(x)\}} ~dx = \abs{\{x : f(x) > t\}}$.
-::: {.proof}
-The indicator $\chi_{\{t < f(x)\}}$ is $1$ exactly on the set $\{x : f(x) > t\}$, whose measure is by definition $\abs{\{x : f(x) > t\}}$.
-:::
-<2>2. Q.E.D.
-::: {.proof}
-<2>1 identifies the inner integral as the measure of the superlevel set $\{f > t\}$, which is exactly what <1>2 claims.
-:::
+<1>4. Q.E.D.
 
-<1>3. Conclusion.
-<2>1. $\int f^p ~dx = \int_0^\infty p t^{p-1} \left(\int_\RR \chi_{\{t < f(x)\}} ~dx\right) ~dt$.
 ::: {.proof}
-By <1>1<2>5 (Tonelli, integrating over $x$ first), then <1>1<2>2, <1>1<2>3. <2>2. The inner integral equals $\abs{\{f > t\}}$, so $\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{x : f(x) > t\}} ~dt$.
-:::
-::: {.proof}
-By <1>2. <2>3. Q.E.D.
-::: {.proof}
-This is the claimed formula.
-:::
+By step <1>1, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step <1>2, Tonelli's theorem allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step <1>3 the inner $x$-integral is $\abs{\{f > t\}}$, so
+$$\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{x : f(x) > t\}} ~dt.$$
 :::
 :::
