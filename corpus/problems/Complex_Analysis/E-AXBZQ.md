@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-AXBZQ
 kind: problem
-title: $x\sin(x)/1+x^2$
+title: $\int_\RR\frac{x\sin x}{1+x^2}\,dx$ and $\int_\RR\frac{\cos x}{x+i}\,dx$ by Jordan's
+  lemma
 classification:
   areas:
   - complex-analysis
