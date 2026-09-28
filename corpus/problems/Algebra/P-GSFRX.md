@@ -33,8 +33,8 @@ Hence
 \[
 \begin{aligned}
 \chi_L(x)
-&=x(x-(1+i))(x-(1-i))(x-(1+2i))(x-(1-2i))\
-&=x\bigl((x-1)^2+1\bigr)\bigl((x-1)^2+4\bigr)\
+&=x(x-(1+i))(x-(1-i))(x-(1+2i))(x-(1-2i))\\
+&=x\bigl((x-1)^2+1\bigr)\bigl((x-1)^2+4\bigr)\\
 &=x(x^2-2x+2)(x^2-2x+5).
 \end{aligned}
 \]
