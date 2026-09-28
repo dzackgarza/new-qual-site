@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-P6NHI
 kind: proposition
 title: Comparison test for series with nonnegative terms
-slogan: 'For nonnegative terms, convergence passes downward and divergence passes upward under comparison.'
+slogan: 'If $0\le a_n\le b_n$, convergence of $\sum b_n$ implies convergence of $\sum a_n$, and divergence of $\sum a_n$ implies divergence of $\sum b_n$.'
 classification:
   areas:
   - real-analysis
