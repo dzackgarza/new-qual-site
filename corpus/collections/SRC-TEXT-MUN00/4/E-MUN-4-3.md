@@ -37,9 +37,9 @@ I=\bigcap_{A\in\mathcal A}A.
 \]
 Every \(A\in\mathcal A\) contains \(1\), so \(1\in I\). If \(x\in I\), then \(x\in A\) for every \(A\in\mathcal A\). Since each \(A\) is inductive, \(x+1\in A\) for every \(A\), hence \(x+1\in I\). Thus \(I\) is inductive.
 
-(b) By definition, \(\mathbb Z_+\) is the intersection of all inductive subsets of \(\mathbb R\). Part (a) therefore shows immediately that \(\mathbb Z_+\) is itself inductive. This is property (1).
+(b) By definition, \(\mathbb Z_+\) is the intersection of all inductive subsets of \(\mathbb R\). By part (a), \(\mathbb Z_+\) is itself inductive. This is property (1).
 
-For property (2), let \(A\subset\mathbb Z_+\) be an inductive set of positive integers. Since \(A\) is an inductive subset of \(\mathbb R\), and \(\mathbb Z_+\) is the intersection of *all* such subsets,
+For property (2), let \(A\subset\mathbb Z_+\) be an inductive set of positive integers. Since \(A\) is an inductive subset of \(\mathbb R\), and \(\mathbb Z_+\) is the intersection of all such subsets,
 \[
 \mathbb Z_+\subset A.
 \]
