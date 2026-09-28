@@ -8,7 +8,7 @@ order: 20
 
 - General texts
 
-  - [@DF04], chapters other than 15--17
+  - [@DF04], chapters 1--14 (groups, rings, modules and vector spaces, fields and Galois theory) and 18--19 (representation and character theory)
 
   - Groups, rings, and modules: [Cambridge Part IB lecture notes](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
 
