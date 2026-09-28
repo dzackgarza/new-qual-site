@@ -31,12 +31,10 @@ $f$ is \dfn{faithfully flat} if it is flat and surjective.
 
 ::: {.remark}
 Flatness is a condition on stalks and therefore checkable on affines, where it is the ordinary flatness of $B \to A$.
-The geometric meaning is that $f$ is a family without jumps, and the way to say that precisely is that $\wait \tensor_B A$ is exact, so no relation among the fibres is created or destroyed.
+Over a Dedekind domain, a module is flat if and only if it is torsion-free; hence every dominant morphism from an integral scheme to a regular integral curve is flat.
+Over a regular base of dimension two this fails: the blowup $\operatorname{Bl}_0\AA^2\to\AA^2$ is dominant with integral source, and it is not flat, since its fibre over $0$ has dimension $1$ while its other fibres are points, and the fibres of a flat morphism of varieties have dimension $\dim X-\dim Y$ [@Har10a, Corollary III.9.6].
 
-Over a discrete valuation ring, and more generally over a Dedekind domain, flat means torsion-free, which is the reason flatness is invisible for curves: any dominant morphism from an integral scheme to a smooth curve is flat.
-Over a regular local ring of higher dimension this fails, and the blowup is the standard witness.
-
-Faithful flatness is the descent hypothesis: a faithfully flat map reflects as well as preserves, so a module is zero exactly when its base change is, and this is what makes flat descent work.
+For $A\to B$ faithfully flat, an $A$-module $M$ is zero if and only if $M\tensor_AB=0$, and a complex of $A$-modules is exact if and only if it is exact after $\wait\tensor_AB$ ([[D-DEFFFLAT]]).
 :::
 
 ::: {.remark}
