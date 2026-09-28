@@ -34,5 +34,5 @@ If $I \ne \{ f ( 1 ) , \ldots , f ( k ) \}$ , then $A _ { I }$ has fewer than k 
 Suppose that $\{ f ( 1 ) , \ldots , f ( k ) \} \neq \{ g ( 1 ) , \ldots , g ( k ) \}$ . Then $A ^ { t } B$ has fewer than k nonzero entries.
 But also, by the previous paragraph, for every I, either det $A _ { I }$ or det $B _ { I }$ is 0. Thus the desired identity holds.
 
-Finally, suppose that $\{ f ( 1 ) , \ldots , f ( k ) \} \ = \ \{ g ( 1 ) , \ldots , g ( k ) \}$ Let $S$ be this common $k -$ element subset of $\{ 1 , \ldots , n \}$ Then $A ^ { t } B = ( A _ { S } ) ^ { t } ( B _ { S } )$ , so the left hand side of the identity equals det $( A _ { S } )$ det(BS). If $I \neq S$ , then det $\left( A _ { I } \right) \operatorname* { d e t } ( B _ { I } ) = 0$ , so the right hand side of the identity equals det $( A _ { S } )$ det(BS) too.
+Finally, suppose that $\{ f ( 1 ) , \ldots , f ( k ) \} \ = \ \{ g ( 1 ) , \ldots , g ( k ) \}$ Let $S$ be this common $k$-element subset of $\{ 1 , \ldots , n \}$. Then $A ^ { t } B = ( A _ { S } ) ^ { t } ( B _ { S } )$ , so the left hand side of the identity equals $\det ( A _ { S } ) \det ( B _ { S } )$. If $I \neq S$ , then $\det \left( A _ { I } \right) \det ( B _ { I } ) = 0$ , so the right hand side of the identity equals $\det ( A _ { S } ) \det ( B _ { S } )$ too.
 :::
