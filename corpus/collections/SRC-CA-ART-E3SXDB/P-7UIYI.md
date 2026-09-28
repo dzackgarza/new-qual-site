@@ -33,21 +33,21 @@ In particular, this shows that when applicable, the ratio test can be used to ca
 definition.
 :::
 
-<1>2. For any $\epsilon > 0$, there is $N$ such that $L - \epsilon < r_n < L + \epsilon$ for all $n \ge N$.
+<1>2. For any $\epsilon > 0$, put $\ell=\max\{L-\epsilon,0\}$. There is $N$ such that $\ell \le r_n < L + \epsilon$ for all $n \ge N$.
 ::: {.proof}
-convergence of $r_n$.
+convergence of $r_n$, and $r_n>0$.
 :::
 
 <1>3. Hence for $n > N$, $|a_n| = |a_N| \prod_{k=N}^{n-1} r_k$, so
-$$|a_N|(L - \epsilon)^{n-N} < |a_n| < |a_N|(L + \epsilon)^{n-N}.$$
+$$|a_N|\,\ell^{n-N} \le |a_n| < |a_N|(L + \epsilon)^{n-N}.$$
 ::: {.proof}
 telescope the product.
 :::
 
 <1>4. Taking $n$-th roots and letting $n \to \infty$ gives
-$$L - \epsilon \le \liminf |a_n|^{1/n} \le \limsup |a_n|^{1/n} \le L + \epsilon.$$
+$$L - \epsilon \le \ell \le \liminf |a_n|^{1/n} \le \limsup |a_n|^{1/n} \le L + \epsilon.$$
 ::: {.proof}
-$|a_N|^{1/n} \to 1$ and $(L \pm \epsilon)^{(n-N)/n} \to L \pm \epsilon$.
+$|a_N|^{1/n} \to 1$ and $c^{(n-N)/n} \to c$ for $c>0$; if $\ell=0$ the lower bound is $0\le\liminf|a_n|^{1/n}$.
 :::
 
 <1>5. Since $\epsilon > 0$ is arbitrary, $\lim |a_n|^{1/n} = L$.
