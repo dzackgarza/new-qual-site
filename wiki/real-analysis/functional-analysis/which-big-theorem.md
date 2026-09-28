@@ -18,7 +18,9 @@ The statements are on [[real-analysis/appendices/functional-analysis|Appendix: F
 | $X, Y$ Banach; $T\colon X\to Y$ linear with closed graph | closed graph | $T$ is bounded |
 | $M\subseteq X$ a subspace; $f$ a bounded linear functional on $M$ | Hahn--Banach | an extension $F\in X^*$ of $f$ with $\norm F = \norm f$ |
 
-The first three theorems are proved from the Baire category theorem and require completeness.
+The uniform boundedness principle applies the Baire category theorem to the complete space $X$.
+The open mapping theorem applies the Baire category theorem to $Y$ and uses the completeness of $X$ to sum an absolutely convergent series.
+The closed graph theorem follows from the bounded inverse theorem applied to the projection from the graph of $T$, a Banach space, onto $X$.
 The Hahn--Banach theorem is proved using Zorn's lemma and holds for every normed space $X$.
 
 ## Consequences
@@ -35,7 +37,7 @@ Each sequence $(T_nx)_n$ converges, hence is bounded, so the uniform boundedness
 :::
 
 ::: {.remark}
-To show that the graph of a linear map $T\colon X\to Y$ is closed, it suffices to show that $x_n\to x$ and $Tx_n\to y$ imply $y = Tx$; the convergence of $(Tx_n)$ is a hypothesis rather than something to prove.
+To show that the graph of a linear map $T\colon X\to Y$ is closed, it suffices to show that $x_n\to x$ and $Tx_n\to y$ imply $y = Tx$.
 
 :::
 
@@ -53,5 +55,5 @@ By the Hahn--Banach theorem there is $f\in X^*$ with $\norm f = 1$ and $f(x-y) =
 ## Hilbert spaces
 
 In a Hilbert space $H$, every closed subspace $M$ has an orthogonal projection $P\colon H\to M$ with $H = M\oplus M^\perp$, the Riesz representation theorem identifies $H^*$ with $H$, and for an orthonormal basis $\theset{e_n}$ Parseval's identity gives $\norm x^2 = \sum_n\abs{\inner x{e_n}}^2$.
-In particular, a bounded linear functional on a closed subspace $M$ extends to $H$ with the same norm by composing it with $P$, without the Hahn--Banach theorem.
+In particular, for a bounded linear functional $f$ on a closed subspace $M$, $f\circ P$ extends $f$ to $H$ with $\norm{f\circ P}=\norm f$.
 See [[real-analysis/functional-analysis/banach-and-hilbert|Banach and Hilbert spaces]].
