@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FJHDQ
 kind: problem
-title: The standard function juggling trick
+title: $\abs{f(z)}\le\abs{\frac{z-i}{z+i}}$ for holomorphic $f:\HH\to\DD$ with $f(i)=0$
 classification:
   areas:
   - complex-analysis
