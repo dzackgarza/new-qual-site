@@ -60,6 +60,6 @@ By <1>3, every element of \(N_G(N_G(P))\) normalizes \(P\), so
 \[
 N_G(N_G(P))\subseteq N_G(P).
 \]
-Combine this with <1>2.
+Step <1>2 gives the reverse inclusion.
 :::
 :::
