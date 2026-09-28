@@ -30,6 +30,6 @@ Construct and describe the mapping cylinder.
 <2>3. The subset $D^2\times\{0\}$ remains the original disk, embedded as a subspace of the cylinder.
 
 <1>2. Geometry.
-<2>1. $M_f$ is the cone on $D^2$ (also called the reduced cone $D^2\ast\{y\}$). <2>2. It is homeomorphic to a 3-ball: points of $D^2\times(0,1]$ sweep all rays to the top tip $y$.
+<2>1. $M_f$ is the (unreduced) cone on $D^2$, which is also the join $D^2\ast\{y\}$. <2>2. It is homeomorphic to a 3-ball: points of $D^2\times(0,1]$ sweep all rays to the top tip $y$.
 <2>3. So the mapping cylinder is a cone with base $D^2$ and a single cone apex.
 :::
