@@ -6,7 +6,9 @@ title: Logarithmic asymptotics of the partition generating function
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Partitions
+  - Generating Functions
 relations: []
 review: draft
 audit:

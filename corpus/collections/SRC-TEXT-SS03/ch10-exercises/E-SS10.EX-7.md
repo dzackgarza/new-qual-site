@@ -6,7 +6,9 @@ title: Triangular and septagonal number identities from the Jacobi triple produc
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Theta Functions
+  - Generating Functions
 relations: []
 review: draft
 audit:

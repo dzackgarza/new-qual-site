@@ -6,7 +6,9 @@ title: Sums of two squares from the formula for $r_2(n)$
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Number Theory
+  - Theta Functions
 relations: []
 review: draft
 audit:

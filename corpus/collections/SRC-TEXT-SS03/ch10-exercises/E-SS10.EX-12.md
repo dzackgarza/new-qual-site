@@ -6,7 +6,9 @@ title: A Lambert-series formula for $\theta^4$ equivalent to the four-squares th
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Theta Functions
+  - Number Theory
 relations: []
 review: draft
 audit:
@@ -20,7 +22,7 @@ audit:
 ---
 
 ::: {.exercise}
-12. Here we give another identity involving $\theta ^ { 4 }$ , which is equivalent to the foursquares theorem.
+12. Here we give another identity involving $\theta ^ { 4 }$ , which is equivalent to the four-squares theorem.
 
 (a) Show that for $| q | < 1$
 

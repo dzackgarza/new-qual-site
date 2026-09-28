@@ -6,7 +6,9 @@ title: A theta-quotient identity for $\wp_\tau$
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Theta Functions
+  - Elliptic Functions
 relations: []
 review: draft
 audit:
@@ -16,8 +18,7 @@ audit:
 - event: source-checked
   by: gpt-5.6-sol
   date: 2026-09-11
-  note: >-
-    Repaired the published erratum: "first two derivatives" should read "first three derivatives".
+  note: 'Repaired the published erratum: "first two derivatives" should read "first three derivatives".'
 ---
 
 ::: {.exercise}

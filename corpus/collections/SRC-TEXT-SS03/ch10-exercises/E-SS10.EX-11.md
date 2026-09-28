@@ -6,7 +6,9 @@ title: Lambert series for the divisor-power sums $\sigma_\ell(n)$
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Number Theory
+  - Power Series
 relations: []
 review: draft
 audit:

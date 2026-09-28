@@ -6,7 +6,9 @@ title: Bounds $e^{c_1\sqrt n}\le p(n)\le e^{c_2\sqrt n}$ for the partition funct
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Partitions
+  - Generating Functions
 relations: []
 review: draft
 audit:

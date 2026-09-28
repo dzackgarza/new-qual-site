@@ -754,6 +754,13 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
     P-JHUFA08ANF, P-JHUSP07ANA, P-JHUSP08ANE, P-8XT04, P-8XT06, P-8XT09,
     P-WVJBX, P-8XT17, P-8XT32, P-MSHRB, P-7QJS2, P-8XT20, P-PAQ4K,
     P-JHUFA02CAC, P-JHUFA02CAD, P-JHUU51RA5, P-JHU4547C5.
+  - Classification: in 40 textbook chapter folders with at least five cards,
+    every card has the same topic list (largest: SRC-TEXT-HAT02 4-2, 3-3,
+    1-3; SRC-TEXT-SS03 chapters 2, 4, 5, 6, 8, 9; SRC-TEXT-HK71 1-3 to 2-2;
+    SRC-TEXT-MUN00 chapters 1, 2, 4 to 7, 9, 10). SRC-TEXT-SS03 chapter 10
+    had chapter-level topics on a Fibonacci exercise and has been
+    reclassified. A shared list is correct when the section has one subject;
+    each card must be read.
   - Duplicate candidates under `CARD-04`: E-BXDQY / E-EUGUZ, E-ENWYG /
     E-EOMTI, E-22P3T / E-2HIKG, E-AKNDW / E-CFHC4, E-2DPQC / E-5AKU5.
 - **Impact and owner:** statement and structure lines are data defects of
