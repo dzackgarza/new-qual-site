@@ -20,7 +20,6 @@ Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontriv
 
 ::: {.solution}
 Let $|G|=p^2q$, and let $n_p,n_q$ be the numbers of Sylow $p$- and $q$-subgroups.
-A proper nontrivial normal subgroup is produced in each of three cases.
 
 <1>1. If $p=q$, then $G$ has a proper nontrivial normal subgroup.
 
