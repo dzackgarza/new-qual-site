@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.PR-2
 kind: problem
-title: "The modular group SL2(Z)"
+title: $S$ and $T_1$ generate the modular group
 classification:
   areas:
   - complex-analysis
