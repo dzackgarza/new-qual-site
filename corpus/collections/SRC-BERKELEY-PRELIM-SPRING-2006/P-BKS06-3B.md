@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-3B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 3B
+title: Evaluate $\int_{-\infty}^{\infty}\frac{e^{itx}}{e^x+e^{-x}}\,dx$ by a rectangular contour
 classification:
   areas: [prelim]
   topics: []
@@ -35,7 +35,7 @@ $$
 \int _ { R } ^ { - R } \frac { e ^ { i t ( x + \pi i ) } } { e ^ { ( x + \pi i ) } + e ^ { - ( x + \pi i ) } } d x = \int _ { R } ^ { - R } \frac { e ^ { - \pi t } e ^ { i t x } } { - e ^ { x } - e ^ { - x } } d x = e ^ { - \pi t } \int _ { - R } ^ { R } \frac { e ^ { i t x } } { e ^ { x } + e ^ { - x } } d x .
 $$
 
-Let I denote the integral we have to find.
+Let $I = \int_{-\infty}^{\infty} \frac{e^{itx}}{e^x+e^{-x}}\,dx$.
 Then
 
 $$
