@@ -97,7 +97,7 @@ Thus
 $$
 \alpha^{-1}=-\alpha^2-1.
 $$
-More importantly, dividing the equation
+Dividing the equation
 $\alpha^3+\alpha+1=0$ by $\alpha^3$ gives
 $$
 1+\alpha^{-2}+\alpha^{-3}=0.
