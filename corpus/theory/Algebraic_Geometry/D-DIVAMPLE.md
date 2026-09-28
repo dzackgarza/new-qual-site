@@ -43,7 +43,6 @@ For a finite morphism $f:Y\to X$ of noetherian schemes and an ample invertible s
 Indeed, for a coherent sheaf $\mathcal F$ on $Y$, the sheaf $f_*\mathcal F$ is coherent by [[P-AGH255PUSHCOH]].
 For large $n$, pull back the global generators of $f_*\mathcal F\otimes\mcl^{\otimes n}$ and use the surjection $f^*f_*\mathcal F\to\mathcal F$ to generate $\mathcal F\otimes(f^*\mcl)^{\otimes n}$.
 On $f^{-1}(\Spec A)=\Spec B$, with $\mathcal F$ represented by a finite $B$-module $M$, this surjection is $B\otimes_A M\to M$, $b\otimes m\mapsto bm$.
-Thus the argument does not require properness over a ground field or surjectivity of $f$.
 :::
 
 ::: {.example title="An arbitrary twist need not remain ample"}
