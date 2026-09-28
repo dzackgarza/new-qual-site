@@ -24,15 +24,18 @@ prompts:
 
 ::: {.definition title="Stalk"}
 For a presheaf $\mcf$ on $X$ and a point $p$,
-\[
+$$
 \mcf_p \da \colim_{U \ni p} \mcf(U) ,
-\]
+$$
 the colimit over open neighbourhoods of $p$ ordered by reverse inclusion.
 An element of $\mcf_p$ is a \dfn{germ} of a section at $p$: a pair $(U, s)$ with $s \in \mcf(U)$, where two pairs are identified when the sections agree on some smaller neighbourhood.
 :::
 
 ::: {.remark}
-The colimit is filtered, which is what makes the stalk behave: filtered colimits are exact, so passing to stalks is exact, and that is why every diagram-chasing notion for sheaves can be checked there.
+The open neighbourhoods of $p$ form a directed set under reverse inclusion, so the colimit is filtered.
+Filtered colimits of abelian groups are exact, so $\mcf\mapsto\mcf_p$ is an exact functor on sheaves of abelian groups.
+A sequence of sheaves of abelian groups on $X$ is exact if and only if it is exact on the stalk at every point of $X$; in particular, a morphism of sheaves is injective, surjective, or an isomorphism if and only if it is so on every stalk.
 
-A germ remembers a section only near $p$, so it is strictly less information than a section, and strictly more than a value: on the sheaf of smooth functions the germ at $0$ knows every derivative, while the value knows none.
+For the sheaf $C^\infty$ of smooth functions on $\RR$, the map $C^\infty(\RR)\to C^\infty_0$ is not injective: a nonzero smooth function supported in $[1,2]$ has germ $0$ at $0$.
+The germ of $f$ at $0$ determines every derivative $f^{(k)}(0)$, but the derivatives do not determine the germ: the function equal to $e^{-1/x^2}$ for $x>0$ and to $0$ for $x\le0$ has Taylor series $0$ at $0$ and a nonzero germ at $0$.
 :::
