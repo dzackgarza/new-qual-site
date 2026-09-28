@@ -61,5 +61,4 @@ Finally, integration by parts with $u=x$ and $dv=\sin(2x)dx$ gives
 \boxed{\int x\sin(2x)\,dx
 =-\frac12x\cos(2x)+\frac14\sin(2x)+C.}
 \]
-The stored positive sign in front of $x\cos(2x)$ was incorrect.
 :::
