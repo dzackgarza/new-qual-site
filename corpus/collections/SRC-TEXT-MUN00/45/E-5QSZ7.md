@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5QSZ7
 kind: problem
-title: Sources of equicontinuity
+title: Finite families, uniform limits, and families with bounded derivatives are equicontinuous
 classification:
   areas:
   - topology
@@ -29,8 +29,6 @@ Let $(Y, d)$ be a metric space; let $\mathcal{F}$ be a subset of $\mathcal{C}(X,
 :::
 
 ::: {.solution}
-**Goal:** Prove equicontinuity for (a) finite families of continuous functions, (b) uniformly convergent sequences of continuous functions, and (c) families of differentiable functions with locally uniformly bounded derivatives.
-
 <1>1. Part (a): Finite collections are equicontinuous.
     *Proof:*
     <2>1. Let $\mathcal{F} = \{f_1, \dots, f_k\}$ be finite, and let $x_0 \in X, \varepsilon > 0$.
