@@ -16,9 +16,9 @@ Set up an area integral (i.e. an integral in xy-space) which represents the volu
 :::
 
 ::: {.solution}
-These two graphs meet at the elipse $x ^ { 2 } + 2 y ^ { 2 } = 4$ . Thus the integral is given by
+These two graphs meet over the ellipse $x ^ { 2 } + 2 y ^ { 2 } = 4$ . Thus the integral is given by
 
 $$
-\int _ { - 2 } ^ { 2 } \int _ { - \sqrt { ( 4 - x ^ { 2 } ) / 2 } } ^ { \sqrt { ( 4 - x ^ { 2 } ) / 2 } } ( 8 - 2 x ^ { 2 } - 4 y ^ { 2 } ) d x d y
+\int _ { - 2 } ^ { 2 } \int _ { - \sqrt { ( 4 - x ^ { 2 } ) / 2 } } ^ { \sqrt { ( 4 - x ^ { 2 } ) / 2 } } ( 8 - 2 x ^ { 2 } - 4 y ^ { 2 } ) \, dy \, dx
 $$
 :::
