@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-16
 kind: problem
-title: Evaluate $\int_0^{2\pi}(a+\cos\theta)^{-1}\,d\theta$ by residues
+title: The integral $\int_0^{2\pi}(a+\cos\theta)^{-1}\,d\theta$ and its analytic continuation in $a$
 classification:
   areas:
   - prelim
