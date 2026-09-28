@@ -135,6 +135,11 @@ which holds for all $p$.
 .\]
 - Put $\ell\da g_X(s)$. By commutativity, $\mcf_3 \mid^X_p(\ell) = g_p(\mcf_2\mid^X_p(s)) = 0$.
   Since this is true at all stalks, $\ell = 0\in \mcf_3(X)$, so $s \in \ker g_X$.
+- $\ker g_X \subseteq \im f_X$. Let $s\in\mcf_2(X)$ with $g_X(s)=0$. For each $p\in X$, the germ $s_p$ lies in $\ker g_p = \im f_p$, so there are an open neighborhood $W_p$ of $p$ and $t_p\in\mcf_1(W_p)$ with $f_{W_p}(t_p) = s|_{W_p}$ (shrinking $W_p$ so that the germ equality holds on $W_p$).
+  On $W_p\cap W_q$, $f(t_p|_{W_p\cap W_q} - t_q|_{W_p\cap W_q}) = 0$, and $f_{W_p\cap W_q}$ is injective by exactness at $\mcf_1$ applied to the open set $W_p\cap W_q$. Hence the $t_p$ agree on overlaps and glue to $t\in\mcf_1(X)$.
+  Then $f_X(t)-s$ restricts to $0$ on every $W_p$, so $f_X(t)=s$ by the sheaf axiom for $\mcf_2$.
+
+The arguments above use only the sheaf axioms on the open sets involved, so they apply verbatim with $X$ replaced by an arbitrary open $U\subseteq X$; hence $\Gamma(U,-)$ is left exact.
 
 **Failure of right exactness.**
 
