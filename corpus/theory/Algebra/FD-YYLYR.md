@@ -4,7 +4,7 @@ id: FD-YYLYR
 kind: definition
 title: Perfect field
 prompts:
-- What is a perfect field, and which characteristics give one for free?
+- What is a perfect field, and when is a field of characteristic $0$ or $p>0$ perfect?
 classification:
   areas:
   - algebra
