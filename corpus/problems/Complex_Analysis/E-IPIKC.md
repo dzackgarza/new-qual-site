@@ -23,7 +23,7 @@ What happens if this bound holds on all of $\CC$?
 :::
 
 ::: {.solution}
-Assume $f$ is entire (as the title states) and $\abs{f(z)}\le M\abs z^n$ for $\abs z\ge R$.
+Let $f$ be entire with $\abs{f(z)}\le M\abs z^n$ for $\abs z\ge R$.
 Taylor expand at $z=0$ to get $f(z) = \sum_{j\geq 0}c_j z^j$ everywhere.
 Claim: $c_{n+k} = 0$ for all $k\geq 1$.
 By the formula for Taylor coefficients, it suffices to show $f^{(n+k)}(0) = 0$ for all $k\geq 1$.
