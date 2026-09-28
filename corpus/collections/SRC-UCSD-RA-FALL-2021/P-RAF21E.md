@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF21E
 kind: problem
-title: "Weak convergence plus norm convergence implies strong convergence in L^2"
+title: "Weak convergence plus norm convergence implies strong convergence in $L^2$"
 classification:
   areas:
   - real-analysis
@@ -31,7 +31,7 @@ Show that $f_n \to f$ in $L^2(\mathbb{R})$.
 :::
 
 ::: {.solution}
-<1>1. Expand the Hilbert-space norm of the difference.
+<1>1. $\|f_n-f\|_2^2=\|f_n\|_2^2+\|f\|_2^2-2\operatorname{Re}\langle f_n,f\rangle\to0$.
 ::: {.proof}
 Since $L^2(\mathbb R)$ is a Hilbert space,
 \[
