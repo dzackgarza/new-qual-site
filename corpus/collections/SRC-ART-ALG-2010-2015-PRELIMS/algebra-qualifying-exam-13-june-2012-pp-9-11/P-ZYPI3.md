@@ -29,83 +29,46 @@ Explain how this relates to part (a).
 :::
 
 ::: {.solution}
-<1>1. Part (a): State the Structure Theorem for finitely generated modules over a PID:
-<2>1. **Theorem (Invariant Factor Form):** Let $R$ be a principal ideal domain (PID) and let $M$ be a finitely generated $R$-module. Then there is an isomorphism:
-\[
-M \cong R^r \oplus R/(a_1) \oplus R/(a_2) \oplus \cdots \oplus R/(a_k),
-\]
-where $r \ge 0$ is an integer (the free rank of $M$), and $a_1, a_2, \dots, a_k \in R \setminus \{0\}$ are non-units satisfying the divisibility chain:
-\[
-a_1 \mid a_2 \mid \cdots \mid a_k.
-\]
-The rank $r$ and the ideals $(a_1), \dots, (a_k)$ are uniquely determined by $M$.
+<1>1. In part (a): let $R$ be a principal ideal domain and $M$ a finitely generated $R$-module. Then
+$$
+M\cong R^r\oplus R/(a_1)\oplus\cdots\oplus R/(a_k)
+$$
+for an integer $r\ge0$ and nonzero nonunits $a_1\mid a_2\mid\cdots\mid a_k$ of $R$, and $r$ and the ideals $(a_1),\ldots,(a_k)$ are uniquely determined by $M$ [@DF04].
+
+<1>2. In part (b), there are six abelian groups of order $72$:
+
+| Elementary divisors | Invariant factors |
+| --- | --- |
+| $\ZZ_8\oplus\ZZ_9$ | $\ZZ_{72}$ |
+| $\ZZ_8\oplus\ZZ_3\oplus\ZZ_3$ | $\ZZ_3\oplus\ZZ_{24}$ |
+| $\ZZ_4\oplus\ZZ_2\oplus\ZZ_9$ | $\ZZ_2\oplus\ZZ_{36}$ |
+| $\ZZ_4\oplus\ZZ_2\oplus\ZZ_3\oplus\ZZ_3$ | $\ZZ_6\oplus\ZZ_{12}$ |
+| $\ZZ_2^{\oplus3}\oplus\ZZ_9$ | $\ZZ_2\oplus\ZZ_2\oplus\ZZ_{18}$ |
+| $\ZZ_2^{\oplus3}\oplus\ZZ_3\oplus\ZZ_3$ | $\ZZ_2\oplus\ZZ_6\oplus\ZZ_6$ |
+
 ::: {.proof}
-standard theorem of module theory over PIDs (Dummit & Foote Theorem 12.1.5).
+An abelian group is a $\ZZ$-module, and $\ZZ$ is a principal ideal domain; a group of order $72$ is finitely generated with $r=0$, so step <1>1 applies with $R=\ZZ$.
+Since $72=2^3\cdot3^2$, the elementary-divisor form writes $G\cong G_2\oplus G_3$ with $\abs{G_2}=8$ and $\abs{G_3}=9$, and the isomorphism types of $G_2$ and $G_3$ correspond to the partitions $3$, $2+1$, $1+1+1$ of $3$ and $2$, $1+1$ of $2$.
+The $3\cdot2=6$ combinations are the rows of the table; the invariant factors in each row are obtained by combining the largest $2$-power with the largest $3$-power, and so on, by the Chinese remainder theorem.
 :::
 
-<1>2. Part (b): Determine all abelian groups of order $72$:
-<2>1. Any abelian group $G$ is a $\mathbb{Z}$-module. Since $\mathbb{Z}$ is a PID, a finite abelian group of order $72$ is a torsion $\mathbb{Z}$-module ($r = 0$).
+<1>3. In part (c), there are two conjugacy classes, with invariant factors $x(x-1)^2$, respectively $x-1\mid x(x-1)$, and rational canonical forms
+$$
+\begin{pmatrix}0&0&0\\1&0&-1\\0&1&2\end{pmatrix},
+\qquad
+\begin{pmatrix}1&0&0\\0&0&0\\0&1&1\end{pmatrix}.
+$$
+
 ::: {.proof}
-definition of abelian groups as $\mathbb{Z}$-modules.
-:::
-<2>2. Factor $72 = 2^3 \cdot 3^2$. By the primary decomposition (elementary divisor form), $G \cong G_2 \oplus G_3$, where $|G_2| = 2^3 = 8$ and $|G_3| = 3^2 = 9$.
-::: {.proof}
-Chinese Remainder Theorem / primary decomposition.
-:::
-<2>3. The isomorphism classes of $G_2$ of order $8$ correspond to partitions of $3$:
-- Partition $3$: $\mathbb{Z}_8$
-- Partition $2+1$: $\mathbb{Z}_4 \oplus \mathbb{Z}_2$
-- Partition $1+1+1$: $\mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_2$
-::: {.proof}
-abelian $p$-groups classified by integer partitions.
-:::
-<2>4. The isomorphism classes of $G_3$ of order $9$ correspond to partitions of $2$:
-- Partition $2$: $\mathbb{Z}_9$
-- Partition $1+1$: $\mathbb{Z}_3 \oplus \mathbb{Z}_3$
-::: {.proof}
-abelian $p$-groups classified by integer partitions.
-:::
-<2>5. Taking all $3 \times 2 = 6$ combinations yields the 6 isomorphism classes:
-1. $\mathbb{Z}_8 \oplus \mathbb{Z}_9 \cong \mathbb{Z}_{72}$ (invariant factor: $72$)
-2. $\mathbb{Z}_8 \oplus \mathbb{Z}_3 \oplus \mathbb{Z}_3 \cong \mathbb{Z}_3 \oplus \mathbb{Z}_{24}$ (invariant factors: $3 \mid 24$)
-3. $\mathbb{Z}_4 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_9 \cong \mathbb{Z}_2 \oplus \mathbb{Z}_{36}$ (invariant factors: $2 \mid 36$)
-4. $\mathbb{Z}_4 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_3 \oplus \mathbb{Z}_3 \cong \mathbb{Z}_6 \oplus \mathbb{Z}_{12}$ (invariant factors: $6 \mid 12$)
-5. $\mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_9 \cong \mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_{18}$ (invariant factors: $2 \mid 2 \mid 18$)
-6. $\mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_3 \oplus \mathbb{Z}_3 \cong \mathbb{Z}_2 \oplus \mathbb{Z}_6 \oplus \mathbb{Z}_6$ (invariant factors: $2 \mid 6 \mid 6$)
-::: {.proof}
-product of cyclic groups and invariant factor conversion.
+A matrix $A\in M_3(\QQ)$ makes $V=\QQ^3$ a finitely generated torsion module over the principal ideal domain $\QQ[x]$ with $x\cdot v=Av$, and two matrices are conjugate exactly when these modules are isomorphic.
+By step <1>1, $V\cong\QQ[x]/(f_1)\oplus\cdots\oplus\QQ[x]/(f_k)$ with monic $f_1\mid\cdots\mid f_k$ and $f_1\cdots f_k=\det(xI-A)=x(x-1)^2$.
+Since each $f_i$ divides $f_k$, a factor $x$ appearing in $f_1$ would appear twice in the product; so $x$ divides only $f_k$, and either $k=1$ with $f_1=x(x-1)^2$, or $k=2$ with $f_1=x-1$ and $f_2=x(x-1)$.
+The rational canonical forms are the block diagonal matrices of the companion matrices of the invariant factors.
 :::
 
-<1>3. Part (c): Determine all conjugacy classes of $3 \times 3$ matrices over $\mathbb{Q}$ with characteristic polynomial $x^3 - 2x^2 + x$:
-<2>1. A matrix $A \in M_3(\mathbb{Q})$ makes $V = \mathbb{Q}^3$ into a finitely generated torsion module over the PID $R = \mathbb{Q}[x]$ via $x \cdot v = Av$.
-Conjugacy classes of matrices correspond bijectively to isomorphism classes of $\mathbb{Q}[x]$-modules of $\mathbb{Q}$-dimension 3.
-::: {.proof}
-theory of rational canonical forms over PIDs.
-:::
-<2>2. By the Structure Theorem, $V \cong \mathbb{Q}[x]/(f_1) \oplus \cdots \oplus \mathbb{Q}[x]/(f_k)$ where $f_1 \mid \cdots \mid f_k$ are monic polynomials with $\prod_{i=1}^k f_i(x) = p_A(x) = x(x-1)^2$.
-::: {.proof}
-invariant factor theorem for $\mathbb{Q}[x]$-modules.
-:::
-<2>3. The possible invariant factor chains dividing $x(x-1)^2$ with product degree $3$ are:
-- **Case 1 ($k=1$):** Invariant factor $f_1(x) = x(x-1)^2 = x^3 - 2x^2 + x$.
-  Minimal polynomial $m_A(x) = x(x-1)^2$.
-  Rational canonical form: Companion matrix $C(x^3 - 2x^2 + x) = \begin{pmatrix} 0 & 0 & 0 \\ 1 & 0 & -1 \\ 0 & 1 & 2 \end{pmatrix}$ (or Jordan form $\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 1 \\ 0 & 0 & 1 \end{pmatrix}$).
-- **Case 2 ($k=2$):** Invariant factors $f_1(x) = x-1$ and $f_2(x) = x(x-1) = x^2 - x$.
-  Minimal polynomial $m_A(x) = x(x-1)$.
-  Rational canonical form: $\begin{pmatrix} 1 & 0 & 0 \\ 0 & 0 & 0 \\ 0 & 1 & 1 \end{pmatrix}$ (or Jordan form $\begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$).
-::: {.proof}
-divisibility $f_1 \mid f_2$ and degree sum $1 + 2 = 3$.
-:::
-<2>4. Thus there are exactly **2** conjugacy classes of such matrices over $\mathbb{Q}$.
-::: {.proof}
-<2>3.
-:::
+<1>4. Q.E.D.
 
-<1>4. Conclusion:
-(a) Theorem stated above.
-(b) Exactly 6 isomorphism classes of abelian groups of size 72.
-(c) Exactly 2 conjugacy classes of $3 \times 3$ matrices over $\mathbb{Q}$. Q.E.D.
 ::: {.proof}
-<1>1, <1>2, and <1>3.
+Step <1>1 states the theorem for part (a). Steps <1>2 and <1>3 answer parts (b) and (c) as the cases $R=\ZZ$ and $R=\QQ[x]$ of that theorem.
 :::
 :::
