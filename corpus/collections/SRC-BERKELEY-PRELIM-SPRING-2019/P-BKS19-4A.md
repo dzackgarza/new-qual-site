@@ -18,7 +18,7 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 I=\int_{-\infty}^{\infty}\frac{x\sin x}{(1+x^2)^2}\,dx.
-\]
+$$
 :::
