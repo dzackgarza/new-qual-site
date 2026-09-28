@@ -72,7 +72,7 @@ The quadratic extensions of $\QQ$ are the fields $\QQ(\sqrt d)$ for squarefree i
 
 ## Distinguished classes
 
-A class of field extensions is [[D-JMATC|distinguished]] if it is closed under towers in both directions and under base change to composita.
+A class of field extensions is [[D-JMATC|distinguished]] if, for every tower $K\subseteq L\subseteq M$, $M/K$ is in the class if and only if $M/L$ and $L/K$ are, and if $E/K$ is in the class and $F/K$ is any extension with $E,F$ in a common field, then $EF/F$ is in the class.
 Separable extensions form a distinguished class.
 Normal extensions satisfy: if $M/K$ is normal and $K\subseteq L\subseteq M$, then $M/L$ is normal; normality is not transitive, by the example on [[algebra/fields/splitting-and-normal|Splitting fields and normal extensions]].
 
