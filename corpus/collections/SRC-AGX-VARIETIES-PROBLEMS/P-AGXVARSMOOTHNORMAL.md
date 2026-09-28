@@ -97,11 +97,8 @@ V_n
 =
 \AA^2_\CC/\mu_n
 $$
-is the Veronese cyclic quotient surface from
-[[P-AGXVAREXQUOTSING|the cyclic quotient singularity calculation]].
-
-That card proves that $V_n$ is a normal affine surface and that the image of
-the origin is singular. Thus
+is a normal affine surface, and the image of the origin is a singular point
+of $V_n$ [[P-AGXVAREXQUOTSING]]. Thus
 $$
 V_n\text{ is normal but not smooth}.
 $$
@@ -117,9 +114,7 @@ Such a ring is a discrete valuation ring, hence regular, by [[D-QJ5M9]].
 Because $k$ is perfect, regularity is equivalent to smoothness by
 [[T-MORSMREG]].
 
-For affine curves this argument is carried out in
-[[P-AGXVARNORMALCURVE|normal affine curves are smooth]], and the projective
-case is [[P-AGXVARNORMALPROJCURVE|normal projective curves are smooth]].
+(See also [[P-AGXVARNORMALCURVE]] and [[P-AGXVARNORMALPROJCURVE]].)
 Thus
 $$
 \boxed{
