@@ -29,5 +29,5 @@ $$
 \alpha(c_g(h))=\alpha(ghg^{-1})=\alpha(g)\alpha(h)\alpha(g)^{-1}=c_{\alpha(g)}(\alpha(h)),
 $$
 
-so $\alpha\circ c_g=c_{\alpha(g)}\circ\alpha$ in $A$. Thus $\alpha\circ c_g\circ\alpha^{-1}=c_{\alpha(g)}$, so $B$ is normal in $G$.
+so $\alpha\circ c_g=c_{\alpha(g)}\circ\alpha$ in $A$. Thus $\alpha\circ c_g\circ\alpha^{-1}=c_{\alpha(g)}$, so $B$ is normal in $A$.
 :::
