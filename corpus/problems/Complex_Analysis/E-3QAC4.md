@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3QAC4
 kind: problem
-title: f and fbar holomorphic implies constant
+title: If $f$ and $\bar f$ are holomorphic on a domain, then $f$ is constant
 classification:
   areas:
   - complex-analysis
@@ -40,5 +40,5 @@ U_x = V_y && U_y = -V_x \\ \\
 
 - Since $f$ is analytic, it is holomorphic, so $f'$ exists and satisfies $f' = u_x + iv_x$.
   But by above, this is zero.
-- By the previous exercise, $f'=0 \implies f$ is constant.
+- Since $\Omega$ is connected and $f'=0$ on $\Omega$, $f$ is constant.
 :::
