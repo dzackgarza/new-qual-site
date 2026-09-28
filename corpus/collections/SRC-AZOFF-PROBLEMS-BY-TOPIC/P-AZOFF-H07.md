@@ -33,7 +33,7 @@ $$
 f ( z ) = { \frac { z - a _ { 1 } } { 1 - { \overline { { a } } } _ { 1 } z } } { \frac { z - a _ { 2 } } { 1 - { \overline { { a } } } _ { 2 } z } } \cdots { \frac { z - a _ { n } } { 1 - { \overline { { a } } } _ { n } z } } .
 $$
 
-Show that $f ( z ) = b$ has n solutions in $| z | < 1$
+Show that $f(z) = b$ has $n$ solutions in $\abs{z} < 1$.
 :::
 
 ::: {.solution}
