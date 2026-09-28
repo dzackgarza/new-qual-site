@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK89S-15
 kind: problem
-title: A twenty-by-twenty zero-diagonal sign matrix is nonsingular
+title: A $20\times20$ zero-diagonal $\pm1$ matrix is nonsingular
 classification:
   areas: [prelim]
   topics: []
