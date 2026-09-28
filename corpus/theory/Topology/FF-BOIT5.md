@@ -19,5 +19,5 @@ review: draft
 
 ::: {.fact}
 Let $\Sigma$ be a connected [[FD-QPIIL|closed surface]] with [[D-QK5BM|Euler characteristic]] $\chi(\Sigma) = -2$.
-Then $\Sigma$ is homeomorphic to the orientable surface $\Sigma_2$ of genus $2$ or to the nonorientable surface $N_4 = \#_{i=1}^4\RP^2$, and orientability decides which [@Mun00]; [@Hat02].
+If $\Sigma$ is orientable, then $\Sigma$ is homeomorphic to the orientable surface $\Sigma_2$ of genus $2$; otherwise $\Sigma$ is homeomorphic to the nonorientable surface $N_4 = \#_{i=1}^4\RP^2$ [@Mun00]; [@Hat02].
 :::
