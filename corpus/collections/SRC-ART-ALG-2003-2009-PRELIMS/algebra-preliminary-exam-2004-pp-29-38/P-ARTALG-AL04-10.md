@@ -66,8 +66,7 @@ It is therefore $1$ or $3$. Transitivity on three points
 excludes order $1$, so $|\rho(G)|=3$ and $|\ker\rho|=35$.
 Every element of the kernel fixes the coset $H$, so belongs to
 $H$. Since both subgroups have order $35$, $H=\ker\rho$.
-Kernels are normal, proving the claim without any assumption
-that a subgroup of index three is always normal.
+Kernels are normal, so $H\lhd G$.
 :::
 
 <1>3. The field $L$ in part (b) is Galois over $\mathbb Q$.
