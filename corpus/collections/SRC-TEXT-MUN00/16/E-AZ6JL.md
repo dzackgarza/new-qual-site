@@ -43,9 +43,9 @@ is product-open (since $(1/2,1]$ is open in the subspace $I$), but it is not dic
 \]
 is dictionary-order open, but is not product-open.
 
-The subspace topology $\mathcal S$ is finer than the product topology because, by the preceding exercise, the ambient dictionary topology on $\mathbb R^2$ is $\mathbb R_d\times\mathbb R$; restricting to $I^2$ gives the product of discrete $I$ in the first coordinate with the usual subspace topology in the second, which contains the ordinary product topology.
+The subspace topology $\mathcal S$ is finer than the product topology because, by [[E-QMZO5]], the ambient dictionary topology on $\mathbb R^2$ is $\mathbb R_d\times\mathbb R$; restricting to $I^2$ gives the product of discrete $I$ in the first coordinate with the usual subspace topology in the second, which contains the ordinary product topology.
 
-It is also finer than the dictionary order topology $\mathcal D$: the order topology induced on a subset by the restricted order is always contained in the topology inherited from the ambient order topology. Both inclusions are strict. Strictness over $\mathcal P$ follows from the open set $\{0\}\times(0,1)$. Strictness over $\mathcal D$ follows, for example, from
+It is also finer than the dictionary order topology $\mathcal D$: for $a\in I^2$, the open rays $\{y\in I^2:y<a\}$ and $\{y\in I^2:y>a\}$ of the ordered square are the intersections of $I^2$ with the corresponding open rays of $\mathbb R^2$, so every $\mathcal D$-open set is $\mathcal S$-open. Both inclusions are strict. Strictness over $\mathcal P$ follows from the open set $\{0\}\times(0,1)$. Strictness over $\mathcal D$ follows, for example, from
 \[
 \{1/2\}\times(1/2,1],
 \]
