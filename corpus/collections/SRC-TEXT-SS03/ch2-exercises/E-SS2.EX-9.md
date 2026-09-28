@@ -48,6 +48,10 @@ Suppose not, and let $n \ge 2$ be the least order with $a_n\ne0$, so that $\varp
 <1>3. Q.E.D.
 
 ::: {.proof}
-By step <1>2, $\varphi(z)=z$ near $0$, so $\varphi(z)=z$ on $\Omega$ by the identity theorem. Undoing the translation, $\varphi(z)=z$ is linear.
+By step <1>2, $\varphi(z)=z$ near $0$, so $\varphi(z)=z$ on the connected component of $\Omega$ containing $0$ by the identity theorem. Undoing the translation, $\varphi(z)=z$ there; in particular $\varphi$ is linear when $\Omega$ is connected.
 :::
+:::
+
+::: {.remark}
+Connectedness is needed. For $\Omega=\mathbb D\cup D_1(3)$, the map equal to $z$ on $\mathbb D$ and to the constant $3$ on $D_1(3)$ is holomorphic from $\Omega$ to $\Omega$, fixes $0$ with derivative $1$, and is not linear.
 :::
