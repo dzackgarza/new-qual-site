@@ -79,8 +79,7 @@ $$
 The only root is $1$, already in $\mathbb F_5$.
 The splitting field is therefore $\mathbb F_5$ itself, and its
 only automorphism fixing the base field pointwise is the identity.
-The repeated roots of this polynomial do not make the identity
-extension inseparable: every element of the splitting field has
-a linear minimal polynomial over the base field.
+The trivial extension $\mathbb F_5/\mathbb F_5$ is Galois, with
+Galois group $\{1\}$.
 :::
 :::
