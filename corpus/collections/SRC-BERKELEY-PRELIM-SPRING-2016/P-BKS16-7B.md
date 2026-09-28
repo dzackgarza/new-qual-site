@@ -15,10 +15,10 @@ review: draft
 Let $A$ be a real square matrix and let $\rho$ be the maximum of the absolute values of its eigenvalues (i.e. its spectral radius).
 
 (1) Show that if $A$ is symmetric then
-\[
-\lVert Ax\rVert\le \rho\lVert x\rVert
-\]
-for all $x\in\mathbb R^n$, where $\lVert\cdot\rVert$ denotes the Euclidean norm.
+$$
+\norm{Ax}\le \rho\norm{x}
+$$
+for all $x\in\RR^n$, where $\norm{\cdot}$ denotes the Euclidean norm.
 
 (2) Is this true when $A$ is not symmetric?
 Prove or give a counterexample.
