@@ -23,28 +23,27 @@ Show that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 :::
 
 ::: {.solution}
-<1>1. Suppose $G/Z(G)=\langle gZ(G)\rangle$ is cyclic.
+Suppose $G/Z(G)=\langle gZ(G)\rangle$ for some $g\in G$.
+
+<1>1. Every $x\in G$ can be written $x=g^iz$ with $i\in\ZZ$ and $z\in Z(G)$.
+
 ::: {.proof}
-hypothesis.
+The coset $xZ(G)$ lies in $\langle gZ(G)\rangle$, so $xZ(G)=g^iZ(G)$ for some $i\in\ZZ$, and then $z=g^{-i}x\in Z(G)$.
 :::
 
-<1>2. Any $x\in G$ can be written $x=g^i z$ for some $i\in\ZZ$, $z\in Z(G)$.
+<1>2. Any $x,y\in G$ commute.
+
 ::: {.proof}
-coset $xZ(G)=g^iZ(G)$.
+By step <1>1, write $x=g^iz_1$ and $y=g^jz_2$ with $z_1,z_2\in Z(G)$.
+Since $z_1,z_2$ are central and powers of $g$ commute with each other,
+$$
+xy=g^iz_1g^jz_2=g^{i+j}z_1z_2=g^jz_2g^iz_1=yx.
+$$
 :::
 
-<1>3. For $x=g^i z_1$, $y=g^j z_2$, $xy=g^i z_1 g^j z_2 = g^{i+j}z_1z_2 = g^j z_2 g^i z_1 = yx$.
-::: {.proof}
-$z_1,z_2$ central and powers of $g$ commute.
-:::
+<1>3. Q.E.D.
 
-<1>4. Hence $G$ is abelian.
 ::: {.proof}
-<1>3.
-:::
-
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.
+Step <1>2 shows that $G$ is abelian.
 :::
 :::
