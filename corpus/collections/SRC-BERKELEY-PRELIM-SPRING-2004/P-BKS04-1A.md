@@ -20,9 +20,9 @@ audit:
 ---
 
 ::: {.problem}
-Consider a sequence of functions $f _ { n } \colon [ a , b ] \to \mathbb { R }$ with the property that for each $x \in [ a , b ]$ there is an open interval $I _ { x }$ containing x such that $( f _ { n } ) _ { n \geq 1 }$ converges uniformly in $I _ { x } \cap [ a , b ]$ Show that $( f _ { n } ) _ { n \geq 1 }$ converges uniformly in $[ a , b ]$
+Consider a sequence of functions $f_n\colon[a,b]\to\RR$ with the property that for each $x\in[a,b]$ there is an open interval $I_x$ containing $x$ such that $(f_n)_{n\geq1}$ converges uniformly in $I_x\cap[a,b]$. Show that $(f_n)_{n\geq1}$ converges uniformly in $[a,b]$.
 :::
 
 ::: {.solution}
-For each $x \in [ a , b ]$ , the sequence $\left( f _ { n } \right)$ converges uniformly on $I _ { x }$ , and in particular converges pointwise at x. Let $f \colon [ a , b ]  \mathbb { R }$ be the pointwise limit of $\left( f _ { n } \right)$ . The compact set $[ a , b ]$ is covered by the collection of open intervals $I _ { x } ,$ , so there is a finite subcovering, say ${ \bar { [ } } a , b { \bar { ] } } \subset \bigcup _ { k = 1 } ^ { m } I _ { x _ { k } }$ . Given $\epsilon > 0$ , there exists $N _ { k }$ such that for $n \geq N _ { k }$ , the difference $\vert f _ { n } - f \vert$ is bounded by  on $I _ { x _ { k } }$ . Let $N : = \operatorname* { m a x } ( N _ { 1 } , \dots , N _ { m } )$ . Then for $n \geq N$ , the difference $\vert f _ { n } - f \vert$ is bounded by  on all of $[ a , b ]$ . Hence by definition, $\left( f _ { n } \right)$ converges to $f$ uniformly.
+For each $x\in[a,b]$, the sequence $(f_n)$ converges uniformly on $I_x$, and in particular converges pointwise at $x$. Let $f\colon[a,b]\to\RR$ be the pointwise limit of $(f_n)$. The compact set $[a,b]$ is covered by the collection of open intervals $I_x$, so there is a finite subcovering, say $[a,b]\subset\bigcup_{k=1}^mI_{x_k}$. Given $\varepsilon>0$, there exists $N_k$ such that for $n\geq N_k$, the difference $\abs{f_n-f}$ is bounded by $\varepsilon$ on $I_{x_k}$. Let $N\coloneqq\max(N_1,\ldots,N_m)$. Then for $n\geq N$, the difference $\abs{f_n-f}$ is bounded by $\varepsilon$ on all of $[a,b]$. Hence by definition, $(f_n)$ converges to $f$ uniformly.
 :::
