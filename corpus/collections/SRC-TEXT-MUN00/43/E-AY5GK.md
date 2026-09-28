@@ -38,8 +38,6 @@ Imbed $U$ in $X \times \mathbb{R}$ by setting $f(x) = x \times \phi(x)$.]
 :::
 
 ::: {.solution}
-**Goal:** Prove that topological completeness is preserved under closed subspaces, countable products, open subspaces, and $G_\delta$ subsets, and conclude that $\mathbb{R} \setminus \mathbb{Q}$ is topologically complete.
-
 <1>1. Part (a): Closed subspaces of topologically complete spaces are topologically complete.
     *Proof:*
     <2>1. Let $X$ be topologically complete, so there is a metric $d$ on $X$ compatible with its topology such that $(X, d)$ is a complete metric space.
