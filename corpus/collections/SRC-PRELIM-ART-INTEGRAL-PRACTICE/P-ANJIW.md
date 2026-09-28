@@ -30,13 +30,11 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the indefinite integrals: (a) $\int \frac{x e^x \ln x - e^x}{x (\ln x)^2} \, dx$ (b) $\int (\tan x + \cot x)^2 \, dx$
-
 <1>1. $\int \frac{x e^x \ln x - e^x}{x (\ln x)^2} \, dx = \frac{e^x}{\ln x} + C$.
 ::: {.proof}
-<2>1. Recognize the integrand as the derivative of the quotient $g(x) = \frac{e^x}{\ln x}$.
-:::
+<2>1. The integrand is the derivative of the quotient $g(x) = \frac{e^x}{\ln x}$.
 <2>2. By the quotient rule: $$\frac{d}{dx}\left(\frac{e^x}{\ln x}\right) = \frac{\left(\frac{d}{dx} e^x\right) \ln x - e^x \left(\frac{d}{dx} \ln x\right)}{(\ln x)^2} = \frac{e^x \ln x - e^x \cdot \frac{1}{x}}{(\ln x)^2} = \frac{x e^x \ln x - e^x}{x (\ln x)^2}.$$ <2>3. Since the integrand is the exact derivative of $\frac{e^x}{\ln x}$, the antiderivative is $\frac{e^x}{\ln x} + C$.
+:::
 
 <1>2. $\int (\tan x + \cot x)^2 \, dx = \tan(x) - \cot(x) + C$.
 ::: {.proof}
