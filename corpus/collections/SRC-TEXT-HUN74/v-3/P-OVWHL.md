@@ -71,11 +71,9 @@ of $f$ is separable, giving condition 3.
 <1>3. Condition 3 implies that $F/K$ is normal.
 ::: {.proof}
 Suppose $F$ is the splitting field over $K$ of a polynomial $f\in K[x]$ whose
-irreducible factors are separable. Every splitting-field extension is normal:
-if an irreducible polynomial over $K$ has one root in $F$ among the roots used
-to generate the splitting field, all of its conjugate roots also occur in the
-splitting field. Equivalently, a splitting field of a family of polynomials over
-$K$ is normal over $K$. Hence $F/K$ is normal.
+irreducible factors are separable. A splitting field over $K$ of a polynomial
+in $K[x]$ is normal over $K$: every irreducible polynomial in $K[x]$ with a root
+in $F$ splits over $F$. Hence $F/K$ is normal.
 :::
 
 <1>4. Condition 3 implies that $F/K$ is separable.
