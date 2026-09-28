@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3ZAVQ
 kind: problem
-title: $\int_\RR\frac{\sin x}{x}\,dx=\pi$ by an indented semicircle and Jordan's lemma
+title: $\int_\RR\frac{\sin x}{x}\,dx$ by an indented semicircle and Jordan's lemma
 classification:
   areas:
   - complex-analysis
@@ -29,16 +29,16 @@ Note that the ML bound is not sufficient to bound a semicircular contour:
 .\]
 Jordan's lemma on this contour yields
 \[
-\abs{\int_{C_R} {e^{iz} \over z} \dz } \leq \pi \sup_{z\in C_R}\abs{1\over Z} = {\pi \over R} \to 0
+\abs{\int_{C_R} {e^{iz} \over z} \dz } \leq \pi \sup_{z\in C_R}\abs{1\over z} = {\pi \over R} \to 0
 .\]
 
 To compute the full integral, use an indented semicircular contour:
 
 - $C_+ \da [\eps, R]$
-- $C_i \da [-R, \eps]$
+- $C_- \da [-R, -\eps]$
 - $C_\eps \da \eps e^{it}$ with $t\in [0, \pi]$
 - $C_R \da R e^{it}$ with $t\in [0, \pi]$
-- $\Gamma \da C_+ + C_R + C_- - C_\eps$, noting that $C_\eps$ is is taken with a reversed orientation.
+- $\Gamma \da C_+ + C_R + C_- - C_\eps$, where $C_\eps$ is taken with reversed orientation.
 
 ![](../../assets/Complex_Analysis/040_Residues/figures/2021-12-20_06-55-40.png)
 
@@ -61,7 +61,7 @@ where $\Im(\tilde I) = I$ is the original integral, so
 Since $\int_{C_R}f \to 0$, it just remains to compute $\int_{C_\eps}$.
 By the fractional residue formula,
 \[
-\lim_{\eps \to 0} {e^{iz} \over z}\dz = i\pi \Res_{z=0} {e^{iz} \over z} = i\pi
+\lim_{\eps \to 0} \int_{C_\eps}{e^{iz} \over z}\dz = i\pi \Res_{z=0} {e^{iz} \over z} = i\pi
 .\]
 Thus
 \[
