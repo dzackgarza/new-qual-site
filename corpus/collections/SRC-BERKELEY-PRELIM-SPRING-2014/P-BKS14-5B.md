@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-5B
 kind: problem
-title: Evaluate a cosine rational integral
+title: The integral $\int_0^\infty \cos x/(1+x^2)\,dx$
 classification:
   areas:
   - prelim
@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_0^\infty \frac{\cos x}{1+x^2}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
