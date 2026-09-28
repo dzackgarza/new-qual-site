@@ -55,7 +55,9 @@ divides all coefficients of $fg$, so $fg$ is primitive.
 <1>2. If $f\in R[x]$ is primitive, then $f$ is reducible in $R[x]$ if and only
 if it is reducible in $K[x]$.
 ::: {.proof}
-Only the reverse implication needs proof. Suppose
+A factorization of the primitive polynomial $f$ into two nonunits of $R[x]$
+has no constant nonunit factor, so both factors have positive degree and
+give a factorization in $K[x]$. For the reverse implication, suppose
 \[
 f=gh
 \]
@@ -111,7 +113,7 @@ for some $\lambda\in K^\times$. Both sides apart from the scalar are primitive
 by <1>1, so the scalar claim from <1>2 gives $\lambda\in R^\times$.
 
 Each $p_i$ is irreducible in $R[x]$: otherwise it would be reducible in $K[x]$
-by the easy direction of <1>2, contradicting irreducibility of $q_i$. The
+by the forward implication of <1>2, contradicting irreducibility of $q_i$. The
 irreducible factors of $c(f)$ remain irreducible as constant polynomials, since
 any factorization of a nonzero constant in $R[x]$ has constant factors. Hence
 $f$ factors into irreducibles in $R[x]$.
