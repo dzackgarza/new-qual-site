@@ -632,23 +632,26 @@ sections:
     title: Linear algebra
     parent: modules
     lede: >-
-      A vector space is a module over a field: every vector space has a basis, every short
-      exact sequence of vector spaces splits, and $\dim\ker T+\dim\im T=\dim V$ for a linear
-      map $T$ on a finite-dimensional space $V$. A bilinear form $b$ on $V$ with ordered basis
-      $e=(e_1,\ldots,e_n)$ has Gram matrix $G_e=(b(e_i,e_j))_{i,j}$; for $e'=eP$ with
-      $P\in\GL_n(F)$, $G_{e'}=P^tG_eP$, so $b$ is nondegenerate if and only if $\det G_e\ne0$,
-      a condition independent of $e$. In characteristic different from $2$, $q(v)=b(v,v)$ and
-      $b(v,w)=\frac12\big(q(v+w)-q(v)-q(w)\big)$ identify symmetric bilinear forms with
-      quadratic forms. A real symmetric matrix is orthogonally diagonalizable (the spectral
-      theorem), and by Sylvester's law of inertia a real symmetric bilinear form is determined
-      up to change of basis by its rank and signature. The groups $\GL_n(F)$,
-      $\operatorname{O}(q)$, and $\operatorname{Sp}(b)$ are the automorphism groups of $V$, of
-      a quadratic form $q$, and of an alternating form $b$; counting ordered bases one vector
-      at a time gives $\abs{\GL_n(\FF_q)}=\prod_{i=0}^{n-1}(q^n-q^i)$.
+      A vector space is a module over a field: every vector space has a basis, every short exact
+      sequence of vector spaces splits, and $\dim\ker T+\dim\im T=\dim V$ for a linear map $T$
+      on a finite-dimensional space $V$. A bilinear form $b$ on $V$ with ordered basis $e=(e_1,\ldots,e_n)$
+      has Gram matrix $G_e=(b(e_i,e_j))_{i,j}$; for $e'=eP$ with $P\in\GL_n(F)$, $G_{e'}=P^tG_eP$,
+      so $b$ is nondegenerate if and only if $\det G_e\ne0$, a condition independent of $e$. In
+      characteristic different from $2$, $q(v)=b(v,v)$ and $b(v,w)=\frac12\big(q(v+w)-q(v)-q(w)\big)$
+      identify symmetric bilinear forms with quadratic forms. A real symmetric matrix is orthogonally
+      diagonalizable (the spectral theorem), and by Sylvester's law of inertia a real symmetric
+      bilinear form is determined up to change of basis by its rank and signature. The groups
+      $\GL_n(F)$, $\operatorname{O}(q)$, and $\operatorname{Sp}(b)$ are the automorphism groups
+      of $V$, of a quadratic form $q$, and of an alternating form $b$; counting ordered bases
+      one vector at a time gives $\abs{\GL_n(\FF_q)}=\prod_{i=0}^{n-1}(q^n-q^i)$.
 
-      The section also lists problems on operators on infinite-dimensional spaces: Toeplitz
-      operators, the polar decomposition, and the spectral theorem for operators on a Hilbert
-      space.
+      On a Hilbert space, a bounded operator $T$ factors as $T=U\abs{T}$ with $\abs{T}=(T^*T)^{1/2}$
+      and $U$ a partial isometry (the polar decomposition), and a compact self-adjoint operator
+      has an orthonormal basis of eigenvectors with real eigenvalues that accumulate only at $0$
+      (the spectral theorem). For $\varphi\in L^\infty(S^1)$, the Toeplitz operator $T_\varphi$
+      on the Hardy space $H^2=\{f\in L^2(S^1):\hat f(n)=0\text{ for }n<0\}$ is $f\mapsto P(\varphi
+      f)$, with $P$ the orthogonal projection of $L^2(S^1)$ onto $H^2$; its matrix in the basis
+      $(z^n)_{n\ge0}$ is $(\hat\varphi(j-k))_{j,k\ge0}$.
     topics:
       - Linear Algebra
       - Vector Spaces
