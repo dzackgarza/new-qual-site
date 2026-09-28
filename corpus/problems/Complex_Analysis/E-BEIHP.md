@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BEIHP
 kind: problem
-title: $1/1+\sin^2$
+title: $\int_{-\pi}^{\pi}\frac{d\theta}{1+\sin^2\theta}$
 classification:
   areas:
   - complex-analysis
@@ -50,10 +50,10 @@ Write these roots as
 - $z_3 \da \sqrt{3+\sqrt 8}$
 - $z_4 \da -\sqrt{3 + \sqrt 8}$
 
-Some numerology to figure out the modulus of these roots:
+Their moduli:
 
-- $3 + \sqrt{8} = 3+2\sqrt{2} 3+2\cdot(1.4) \approx 5.8$, so $\abs{ \pm \sqrt{3+\sqrt 8}}>\sqrt{4}>2>1$.
-- $3-\sqrt{8} \approx 3-2.8 \approx 0.2$ so $\abs{ \pm \sqrt{3-\sqrt 8} } < 1$.
+- $3 + \sqrt{8} > 1$, so $\abs{ \pm \sqrt{3+\sqrt 8}}>1$.
+- $0<3-\sqrt{8} < 1$ since $2<\sqrt 8<3$, so $\abs{ \pm \sqrt{3-\sqrt 8} } < 1$.
 
 So it suffices to compute the residues at $z_1, z_2 = \pm \sqrt{3-\sqrt 8}$:
 At $z_1$:
