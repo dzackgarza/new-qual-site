@@ -705,6 +705,17 @@ def test_check_rejects_a_page_with_no_order(tmp_path: Path) -> None:
     assert diagnostic_codes(work) == [DiagnosticCode.PAGE_MISSING_ORDER]
 
 
+def test_check_rejects_a_wikilink_colon_only_where_it_starts_a_block(tmp_path: Path) -> None:
+    """`- [[page]]: words` is a link reference definition and renders an empty
+    item; `see [[page]]: words` inside a paragraph renders intact."""
+    work = fixture_repo(tmp_path)
+    details = work / "wiki" / "details.md"
+    details.write_text(wiki_md("# Fixture details\n\nSee [[index|the index]]: it survives.\n", order=1))
+    assert diagnostic_codes(work) == []
+    details.write_text(wiki_md("# Fixture details\n\n- [[index]]: this item renders empty.\n", order=1))
+    assert diagnostic_codes(work) == [DiagnosticCode.PAGE_SWALLOWED_LINE]
+
+
 def test_check_rejects_a_directory_with_no_index_page(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     (work / "wiki" / "no-index-here").mkdir()

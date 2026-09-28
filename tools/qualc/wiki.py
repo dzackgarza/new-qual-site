@@ -216,8 +216,10 @@ def _topics(metadata: dict[str, object], path: Path) -> tuple[str, ...] | Diagno
 # `[` followed by `[page]: some words` -- so the reader consumes the line and
 # the item renders empty. The words are not dropped by a filter here; they never
 # survive parsing, which is why nothing downstream notices. Four list items on
-# three pages were silently blank before this check existed.
-SWALLOWED_BY_REFERENCE_DEFINITION = re.compile(r"\[\[[^\]]*\]\]\s*:")
+# three pages were silently blank before this check existed. A definition only
+# starts a block, so the pattern is anchored after indentation, list markers and
+# block-quote markers; mid-paragraph `[[page]]: words` renders intact.
+SWALLOWED_BY_REFERENCE_DEFINITION = re.compile(r"^[ \t]*(?:(?:[-*+>]|\d+[.)])[ \t]+)*\[\[[^\]]*\]\]\s*:")
 
 
 def validate_wiki_sources(root: Path) -> list[Diagnostic]:
