@@ -81,8 +81,8 @@ $$
 $$
 is a one-dimensional Noetherian normal local domain by step <1>1.
 
-The one-dimensional normality criterion
-[[D-QJ5M9|says]] that such a ring is a discrete valuation ring. A DVR is
+By the one-dimensional normality criterion
+[[D-QJ5M9]], such a ring is a discrete valuation ring. A DVR is
 regular.
 :::
 
@@ -130,7 +130,7 @@ codimension one. Therefore every component has codimension at least two.
 
 ::: {.proof}
 Steps <1>1--<1>3 establish regularity and smoothness at every
-codimension-one point, and steps <1>4--<1>5 convert this into the source's
-codimension statement for the singular locus.
+codimension-one point, and steps <1>4--<1>5 convert this into the
+codimension bound for the singular locus.
 :::
 :::
