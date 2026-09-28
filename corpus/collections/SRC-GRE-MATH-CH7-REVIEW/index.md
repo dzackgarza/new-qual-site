@@ -73,5 +73,5 @@ source:
 ---
 
 ::: {.remark}
-The 50 review questions on additional topics in Chapter 7 of *Cracking the GRE Mathematics Subject Test*.
+The fifty review questions on additional topics in Chapter 7.
 :::
