@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2013
 ---
-
-::: {.remark}
-Problem 1 is the same problem as Fall 2015 Problem 1, and Problem 2 asks for the same example as Spring 2008 Problem 2.
-:::
