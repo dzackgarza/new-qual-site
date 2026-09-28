@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-5I2NN
 kind: problem
-title: Using the estimates
+title: $\abs{f'(a)}\le1$ at a fixed point and $\abs{f(0)}^2+\abs{f'(0)}^2\le1$ by
+  Schwarz--Pick
 classification:
   areas:
   - complex-analysis
