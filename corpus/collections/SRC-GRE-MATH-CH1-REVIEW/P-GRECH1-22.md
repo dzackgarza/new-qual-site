@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH1-22
 kind: problem
-title: Domain test for log(sin x)
+title: Domain of $\log(\sin x)$
 classification:
   areas:
   - algebra
