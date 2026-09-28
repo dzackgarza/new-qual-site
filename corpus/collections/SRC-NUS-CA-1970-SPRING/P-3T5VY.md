@@ -73,7 +73,7 @@ Furthermore, on $|z|=1$, $|f(z)| \geq |F_2(z)| - |G_2(z)| \geq 6 - 4 = 2 > 0$, s
 
 ### Step 3: Zeros in the annulus $1 \leq |z| \leq 2$
 
-<1>3. **$f(z)$ has exactly $5 - 2 = 3$ zeros in the annulus $1 \leq |z| \leq 2$.** <2>1. The closed disk $\overline{D}(0, 2) = \{|z| \leq 2\}$ is the disjoint union of the open disk $D(0, 1) = \{|z| < 1\}$, the closed annulus $A = \{1 \leq |z| \leq 2\}$, and the boundary circles $|z|=1, |z|=2$.
+<1>3. **$f(z)$ has exactly $5 - 2 = 3$ zeros in the annulus $1 \leq |z| \leq 2$.** <2>1. The closed disk $\overline{D}(0, 2) = \{|z| \leq 2\}$ is the disjoint union of the open disk $D(0, 1) = \{|z| < 1\}$ and the closed annulus $A = \{1 \leq |z| \leq 2\}$.
 *Proof:* Partition of the closed disk.
 <2>2. By <1>1.<2>7 and <1>2.<2>7, $f$ has no zeros on $|z|=1$ or on $|z|=2$.
 *Proof:* Direct consequence of the non-vanishing bounds $|f(z)| \geq 2 > 0$ on $|z|=1$ and $|f(z)| \geq 37 > 0$ on $|z|=2$.
