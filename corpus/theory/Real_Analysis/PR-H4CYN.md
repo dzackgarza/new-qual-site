@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-H4CYN
 kind: proposition
 title: A Taylor series converges to $f$ when $\abs{f^{(n)}}\leq M^n$
-slogan: 'Geometric growth of all derivatives forces the Taylor series at $c$ to equal the function nearby.'
+slogan: 'If $\abs{f^{(n)}}\le M^n$ on $(c-\varepsilon,c+\varepsilon)$ for all $n$, the Taylor series of $f$ at $c$ converges to $f$ on that interval.'
 classification:
   areas:
   - real-analysis
