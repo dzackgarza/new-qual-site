@@ -37,6 +37,10 @@ $$
 :::
 
 ::: {.solution}
-Using the cofactor expansion with respect to the last row, we find that $\Delta _ { n } =$ $a _ { n } \Delta _ { n - 1 } + \Delta _ { n - 2 }$.
-Dividing by$\Delta _ { n - 1 }$, we get:$$\Delta _ { n } / \Delta _ { n - 1 } = a _ { n } + \frac { 1 } { \Delta _ { n - 1 } / \Delta _ { n - 2 } } .$$The required result follows by induction on n since it obviously holds for$n = 1$
+Using the cofactor expansion with respect to the last row, we find that $\Delta_n=a_n\Delta_{n-1}+\Delta_{n-2}$.
+Dividing by $\Delta_{n-1}$, we get:
+$$
+\Delta_n/\Delta_{n-1}=a_n+\frac{1}{\Delta_{n-1}/\Delta_{n-2}}.
+$$
+The required result follows by induction on $n$, since for $n=1$ both sides equal $a_1+1/a_0=(a_0a_1+1)/a_0=\Delta_1/\Delta_0$.
 :::
