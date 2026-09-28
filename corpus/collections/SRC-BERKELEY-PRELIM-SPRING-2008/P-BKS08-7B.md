@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-7B
 kind: problem
-title: Evaluate a rational integral with denominator power five
+title: Evaluation of $\int_{-\infty}^{\infty}\frac{dx}{(1+x^2)^5}$
 classification:
   areas:
   - prelim
@@ -28,9 +28,9 @@ audit:
 
 ::: {.problem}
 Evaluate
-\[
+$$
 \int_{-\infty}^{\infty}\frac{dx}{(1+x^2)^5}.
-\]
+$$
 :::
 
 ::: {.solution}
