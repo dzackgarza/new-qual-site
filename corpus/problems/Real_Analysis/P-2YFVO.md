@@ -42,13 +42,13 @@ audit:
 <1>1. If $f, g$ are continuous and compactly supported, then $f \ast g$ is continuous and compactly supported.
 
 ::: {.proof}
-$|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)|$, which tends to $0$ because $f$ is uniformly continuous. $f\ast g$ vanishes off the compact set $\supp f + \supp g$, the image of $\supp f \times \supp g$ under addition. The steps are written out in [[E-Y4GZM]].
+$|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)|$, which tends to $0$ because $f$ is uniformly continuous. $f\ast g$ vanishes off the compact set $\supp f + \supp g$, the image of $\supp f \times \supp g$ under addition. See [[E-Y4GZM]].
 :::
 
 <1>2. If $f \in L^1$ and $|g| \leq M$, then $|f \ast g| \le M\|f\|_1$ and $f\ast g$ is uniformly continuous.
 
 ::: {.proof}
-$|f\ast g(x)| \le \int |f(x-y)||g(y)|\,dy \le M\|f\|_1$. Substituting $u = x - y$ gives $|f \ast g(x + h) - f \ast g(x)| \le M\int|f(u + h) - f(u)|\,du$, which does not depend on $x$ and tends to $0$ as $h \to 0$ by continuity of translation in $L^1$. The steps are written out in [[E-E4H2J]].
+$|f\ast g(x)| \le \int |f(x-y)||g(y)|\,dy \le M\|f\|_1$. Substituting $u = x - y$ gives $|f \ast g(x + h) - f \ast g(x)| \le M\int|f(u + h) - f(u)|\,du$, which does not depend on $x$ and tends to $0$ as $h \to 0$ by continuity of translation in $L^1$. See [[E-E4H2J]].
 :::
 
 <1>3. If $f, g$ are compactly supported, then $f \ast g$ is compactly supported.
@@ -62,7 +62,7 @@ The argument of step <1>1 uses no continuity: $f\ast g(x) = 0$ for $x \notin \su
 <2>1. The cases $f, g \in L^1$ both bounded, $f, g \in L^1$ with $g$ bounded, and $f, g$ smooth and compactly supported.
 
 ::: {.proof}
-These are proved in [[E-LYXHE]]: in the first case split $\int f(x-y)g(y)\,dy$ at $|y| = |x|/2$ and bound each piece by an $L^1$ tail; in the second, truncate $f$ at height $M$ and use the first case; in the third, $f\ast g$ has compact support by step <1>3.
+In the first case split $\int f(x-y)g(y)\,dy$ at $|y| = |x|/2$ and bound each piece by an $L^1$ tail; in the second, truncate $f$ at height $M$ and use the first case; in the third, $f\ast g$ has compact support by step <1>3. See [[E-LYXHE]].
 :::
 
 <2>2. If $f \in L^1$ and $g$ is smooth with compact support, then $f\ast g$ is smooth and vanishes at infinity.
@@ -84,7 +84,7 @@ Steps <2>1 and <2>2.
 <1>5. If $f \in L^1$ and $g$ is differentiable with $\dd{g}{x_i}$ bounded, then $\dd{}{x_i}(f \ast g) = f \ast \dd{g}{x_i}$.
 
 ::: {.proof}
-The difference quotient of $f\ast g$ in the direction $e_i$ is $\int f(x-y)\,\frac{g(y + h e_i) - g(y)}{h}\,dy$. By the mean value theorem the quotient of $g$ is bounded by $\sup|\dd{g}{x_i}|$, and it converges pointwise to $\dd{g}{x_i}$, so dominated convergence with dominating function $\sup|\dd{g}{x_i}|\,|f(x-\cdot)|$ applies. The steps are written out in [[E-GQEMZ]].
+The difference quotient of $f\ast g$ in the direction $e_i$ is $\int f(x-y)\,\frac{g(y + h e_i) - g(y)}{h}\,dy$. By the mean value theorem the quotient of $g$ is bounded by $\sup|\dd{g}{x_i}|$, and it converges pointwise to $\dd{g}{x_i}$, so dominated convergence with dominating function $\sup|\dd{g}{x_i}|\,|f(x-\cdot)|$ applies. See [[E-GQEMZ]].
 :::
 
 <1>6. Q.E.D.
