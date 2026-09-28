@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-12
 kind: problem
-title: Subrings of $\RR$ among $\QQ(\sqrt2)$, $\ZZ[1/3]$, and $\{a+b\sqrt5: a^2+b^2\le1\}$
+title: 'Subrings of $\RR$ among $\QQ(\sqrt2)$, $\ZZ[1/3]$, and $\{a+b\sqrt5: a^2+b^2\le1\}$'
 classification:
   areas:
   - algebra
