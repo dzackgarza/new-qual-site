@@ -37,70 +37,46 @@ Justify your answer.
 :::
 
 ::: {.solution}
-**Part (a).**
+Throughout, $\overline{X-A}=X-\operatorname{Int}A$, since $\operatorname{Int}A$ is the largest open set contained in $A$ and $\overline{X-A}$ is the smallest closed set containing $X-A$.
 
-<1>1. $\operatorname{Int} A \cap \operatorname{Bd} A = \varnothing$.
+<1>1. (a) $\operatorname{Int}A\cap\operatorname{Bd}A=\varnothing$ and $\overline A=\operatorname{Int}A\cup\operatorname{Bd}A$.
+
 ::: {.proof}
-$\operatorname{Int} A \subseteq A$ and $\operatorname{Bd} A \subseteq \overline{X - A} = X - \operatorname{Int} A$, so they are disjoint.
+$\operatorname{Bd}A\subseteq\overline{X-A}=X-\operatorname{Int}A$, so $\operatorname{Bd}A$ misses $\operatorname{Int}A$.
+Since $\operatorname{Int}A\subseteq\overline A$,
+$$
+\overline A=\operatorname{Int}A\cup\bigl(\overline A\cap(X-\operatorname{Int}A)\bigr)=\operatorname{Int}A\cup\bigl(\overline A\cap\overline{X-A}\bigr)=\operatorname{Int}A\cup\operatorname{Bd}A.
+$$
 :::
 
-<1>2. $\overline A = \operatorname{Int} A \cup \operatorname{Bd} A$.
+<1>2. (b) $\operatorname{Bd}A=\varnothing$ if and only if $A$ is both open and closed.
+
 ::: {.proof}
-$\overline A = \operatorname{Int} A \cup (\overline A \setminus \operatorname{Int} A)$, and $\overline A \setminus \operatorname{Int} A = \overline A \cap (X - \operatorname{Int} A) = \overline A \cap \overline{X - A} = \operatorname{Bd} A$.
+If $\operatorname{Bd}A=\varnothing$, step <1>1 gives $\overline A=\operatorname{Int}A$, so $A\subseteq\overline A=\operatorname{Int}A\subseteq A$.
+Hence $A=\operatorname{Int}A$ is open and $A=\overline A$ is closed.
+Conversely, if $A$ is open and closed, then $\overline A=A$ and $\overline{X-A}=X-A$, so $\operatorname{Bd}A=A\cap(X-A)=\varnothing$.
 :::
 
-**Part (b).**
+<1>3. (c) $U$ is open if and only if $\operatorname{Bd}U=\overline U-U$.
 
-<1>1. ($\Rightarrow$) If $\operatorname{Bd} A = \varnothing$, then $A$ is both open and closed.
-<2>1. $\overline A = \operatorname{Int} A$ (by part (a), since $\operatorname{Bd} A = \varnothing$).
 ::: {.proof}
-part (a).
-:::
-<2>2. Hence $A \subseteq \overline A = \operatorname{Int} A \subseteq A$, so $A = \operatorname{Int} A$, i.e. $A$ is open.
-::: {.proof}
-<2>1.
-:::
-<2>3. Also $\overline A = \operatorname{Int} A \subseteq A$, so $A$ is closed.
-::: {.proof}
-<2>1.
+Since $\overline{X-U}\supseteq X-U$ and $\overline U\cap(X-U)=\overline U-U$,
+$$
+\operatorname{Bd}U=(\overline U-U)\cup\bigl(\overline U\cap(\overline{X-U}-(X-U))\bigr).
+$$
+The set $\overline{X-U}-(X-U)$ is contained in $U\subseteq\overline U$, so the second term equals $\overline{X-U}-(X-U)$, which is disjoint from $\overline U-U$.
+Hence $\operatorname{Bd}U=\overline U-U$ if and only if $\overline{X-U}=X-U$, that is, if and only if $X-U$ is closed, that is, if and only if $U$ is open.
 :::
 
-<1>2. ($\Leftarrow$) If $A$ is both open and closed, then $\operatorname{Bd} A = \varnothing$.
+<1>4. (d) An open set $U$ need not equal $\operatorname{Int}(\overline U)$.
+
 ::: {.proof}
-if $A$ is open and closed, then $\overline A = A$ and $\overline{X - A} = X - A$, so $\operatorname{Bd} A = A \cap (X - A) = \varnothing$.
+In $\RR$, the open set $U=\RR-\{0\}$ has $\overline U=\RR$, so $\operatorname{Int}(\overline U)=\RR\ne U$.
 :::
 
-**Part (c).**
+<1>5. Q.E.D.
 
-<1>1. ($\Rightarrow$) If $U$ is open, then $\operatorname{Bd} U = \overline U - U$.
 ::: {.proof}
-$\operatorname{Bd} U = \overline U \cap \overline{X - U} = \overline U \cap (X - U)$ (since $U$ is open, $X - U$ is closed, so $\overline{X - U} = X - U$), which equals $\overline U - U$.
-:::
-
-<1>2. ($\Leftarrow$) If $\operatorname{Bd} U = \overline U - U$, then $U$ is open.
-::: {.proof}
-$\operatorname{Bd} U = \overline U \cap \overline{X - U} = \overline U - U$ means $\overline U \cap \overline{X - U} = \overline U \cap (X - U)$, which holds iff $\overline{X - U} = X - U$, i.e. $X - U$ is closed, i.e. $U$ is open.
-:::
-
-**Part (d).**
-
-<1>1. No, $U = \operatorname{Int}(\overline U)$ is not always true for open $U$.
-::: {.proof}
-exhibit a counterexample.
-:::
-
-<1>2. Counterexample: $U = \RR \setminus \{0\}$ in $\RR$ (open).
-::: {.proof}
-$U$ is open.
-:::
-
-<1>3. $\overline U = \RR$, so $\operatorname{Int}(\overline U) = \RR \neq U$.
-::: {.proof}
-$\overline{\RR \setminus \{0\}} = \RR$, and $\operatorname{Int}(\RR) = \RR \neq \RR \setminus \{0\}$.
-:::
-
-<1>4. Q.E.D.
-::: {.proof}
-<1>2 (a), <1>1–<1>2 (b), <1>1–<1>2 (c), and <1>3 (d).
+Steps <1>1, <1>2, <1>3, and <1>4 answer (a), (b), (c), and (d).
 :::
 :::
