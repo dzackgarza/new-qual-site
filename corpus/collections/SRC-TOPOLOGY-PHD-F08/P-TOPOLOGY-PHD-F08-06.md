@@ -45,35 +45,12 @@ Justify your answers.
 :::
 
 ::: {.solution}
-A surjection $q:X\to Y$ is an identification (quotient) map if
+<1>1. A surjection $q:X\to Y$ is an identification (quotient) map if, for every $U\subseteq Y$,
 \[
-U\subseteq Y\text{ is open}
+U\text{ is open in }Y
 \quad\Longleftrightarrow\quad
 q^{-1}(U)\text{ is open in }X.
 \]
-Equivalently, by complements,
-\[
-F\subseteq Y\text{ is closed}
-\quad\Longleftrightarrow\quad
-q^{-1}(F)\text{ is closed in }X.
-\]
-
-Now let $\pi:X\to Y$ be surjective, continuous, and closed. If $F\subseteq Y$ is closed, then $\pi^{-1}(F)$ is closed by continuity. Conversely, if $\pi^{-1}(F)$ is closed, then
-\[
-F=\pi(\pi^{-1}(F))
-\]
-by surjectivity, and the right-hand side is closed because $\pi$ is a closed map. Hence $\pi$ satisfies the quotient criterion.
-
-The same argument works with open sets. If $\pi$ is surjective, continuous, and open, then for any $U\subseteq Y$,
-\[
-U\text{ open}\implies \pi^{-1}(U)\text{ open}
-\]
-by continuity, while
-\[
-\pi^{-1}(U)\text{ open}\implies
-U=\pi(\pi^{-1}(U))\text{ open}
-\]
-by surjectivity and openness. Thus every surjective continuous open map is also an identification map.
 ::: {.proof}
 This is the definition.
 Equivalently, by taking complements, a surjective map $q$ is an identification map exactly when
@@ -116,7 +93,7 @@ F\text{ closed in }Y
 so $\pi$ is an identification map.
 :::
 
-<1>3. Replacing “closed” by “open” gives the same conclusion: every surjective, continuous, open map is an identification map.
+<1>3. Every surjective, continuous, open map is an identification map.
 ::: {.proof}
 Let $U\subseteq Y$.
 If $U$ is open in $Y$, continuity gives
