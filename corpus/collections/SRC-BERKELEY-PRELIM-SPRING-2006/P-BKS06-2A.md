@@ -50,7 +50,7 @@ $$
 \begin{array} { r } { a + b = 1 } \\ { a e ^ { \alpha } + b e ^ { \beta } = 1 . } \end{array}\tag{1}
 $$
 
-This system is guaranteed to have a solution if $e ^ { \alpha } \neq e ^ { \beta }$ . So assume $e ^ { \alpha } = e ^ { \beta }$ . Then $\alpha - \beta =$ 2πik for some $k \in \mathbb { Z }$ . By interchanging $\alpha , \beta ,$ , we may assume $k > 0$ . On the other hand, by the quadratic formula,
+This system is guaranteed to have a solution if $e ^ { \alpha } \neq e ^ { \beta }$ . So assume $e ^ { \alpha } = e ^ { \beta }$ . Then $\alpha - \beta = 2 \pi i k$ for some $k \in \mathbb { Z }$ . By interchanging $\alpha , \beta ,$ , we may assume $k > 0$ . On the other hand, by the quadratic formula,
 
 $$
 ( \alpha - \beta ) ^ { 2 } = c ^ { 2 } - 6 4 .
@@ -58,5 +58,5 @@ $$
 
 Thus $4 \pi ^ { 2 } k ^ { 2 } = 6 4 - c ^ { 2 } \leq 6 4$ . The only possibility is $k = 1$ , which leads to $c = \pm { \sqrt { 6 4 - 4 \pi ^ { 2 } } }$ In this case $e ^ { \alpha } = e ^ { \beta }$ , but the common value is not 1, since $e ^ { \alpha } e ^ { \beta } = e ^ { \alpha + \beta } = e ^ { c } \neq e ^ { 0 } = 1$ . So the system (1) has no solution.
 
-Thus the set of values c for which the differential equation with boundary conditions has√ no solution is $\{ \pm { \sqrt { 6 4 - 4 \pi ^ { 2 } } } \}$
+Thus the set of values c for which the differential equation with boundary conditions has no solution is $\{ \pm { \sqrt { 6 4 - 4 \pi ^ { 2 } } } \}$
 :::
