@@ -3,7 +3,6 @@ schema: qual/card@1
 id: E-SS10.EX-10
 kind: problem
 title: Irregular growth of $r_2(n)$ and $r_4(n)$
-"
 classification:
   areas:
   - complex-analysis
