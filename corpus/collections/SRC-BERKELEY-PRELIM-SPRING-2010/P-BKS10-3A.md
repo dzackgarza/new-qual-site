@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-3A
 kind: problem
-title: Entire functions dominated by the square of the radius
+title: Entire functions with $\abs{f(z)}\le\abs{z}^2$
 classification:
   areas:
   - prelim
@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-Suppose \(f\) is entire and satisfies
-\[
+Suppose $f$ is entire and satisfies
+$$
 |f(z)|\le |z|^2
-\]
-for every \(z\in\mathbb C\). Find all possibilities for \(f\), and justify your answer.
+$$
+for every $z\in\mathbb C$. Find all possibilities for \(f\), and justify your answer.
 :::
 
 ::: {.solution}
