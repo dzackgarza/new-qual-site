@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS84-1
 kind: problem
-title: Evaluate $\int_0^\infty \log x/(a^2+x^2)\,dx$
+title: The integral $\int_0^\infty \log x/(a^2+x^2)\,dx$
 classification:
   areas: [prelim]
   topics: []
