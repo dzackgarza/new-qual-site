@@ -26,11 +26,11 @@ audit:
 :::
 
 ::: {.solution}
-The literal statement has the trivial exceptions $\{1\}$ and $S_n$; the intended claim is that $A_n$ is the unique proper nontrivial normal subgroup of $S_n$ for $n\ge 5$.
+For $n\ge 5$, the normal subgroups of $S_n$ are $1$, $A_n$ and $S_n$, so $A_n$ is its unique proper nontrivial normal subgroup.
 
 <1>1. For $n\ge 5$, $A_n$ is simple.
 ::: {.proof}
-We use the standard simplicity theorem for alternating groups: $A_n$ is simple for every $n\ge 5$.
+This is [[E-AMD-6TLQZZWT]].
 :::
 
 <1>2. Let $N\trianglelefteq S_n$.
