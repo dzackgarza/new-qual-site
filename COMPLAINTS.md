@@ -734,13 +734,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Object and need:** the cards below. Each line is a reader's report made
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
-  - `STYLE-08` layout (fragment proofs, *Goal*, *Proof:*): P-JHUFA07ANE,
-    P-4KTFN, P-PGDJ2, P-YBT6I, P-JHUMAY06ANH, P-JHUMAY06ANI, P-JHUMAY06ANK,
-    P-JHUMAY11ANF, P-JHUFA05ANC, P-JHUFA06ANB, P-JHUSP05AND, P-JHUSP05ANE,
-    P-XYYHG, P-JHUFA01CAD, P-JHUFA02CAH, P-JHUSP01CAC, P-JHUFA08ANE,
-    P-JHUFA08ANF, P-JHUSP07ANA, P-JHUSP08ANE, P-8XT04, P-8XT06, P-8XT09,
-    P-WVJBX, P-8XT17, P-8XT32, P-MSHRB, P-7QJS2, P-8XT20, P-PAQ4K,
-    P-JHUFA02CAC, P-JHUFA02CAD, P-JHUU51RA5, P-JHU4547C5.
   - Classification: in 40 textbook chapter folders with at least five cards,
     every card has the same topic list (largest: SRC-TEXT-HAT02 4-2, 3-3,
     1-3; SRC-TEXT-SS03 chapters 2, 4, 5, 6, 8, 9; SRC-TEXT-HK71 1-3 to 2-2;

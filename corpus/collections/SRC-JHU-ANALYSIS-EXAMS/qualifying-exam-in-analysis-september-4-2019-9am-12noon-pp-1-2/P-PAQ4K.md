@@ -34,63 +34,24 @@ Provide a proof if it is true or provide a counterexample if it is false.
 :::
 
 ::: {.solution}
-<1>1. Part (a): **Yes**, it is always true that $\int_0^1 f(x)\,dx \le 1$: <2>1. Each $f_n$ is positive and continuous on $[0, 1]$, hence non-negative and Lebesgue measurable.
+<1>1. (a) Yes: $\int_0^1f\le1$.
+
 ::: {.proof}
-continuous functions on compact intervals are Borel measurable.
-:::
-<2>2. The pointwise limit $f(x) = \lim_{n \to \infty} f_n(x)$ is non-negative and measurable on $[0, 1]$, with $f(x) = \liminf_{n \to \infty} f_n(x)$.
-::: {.proof}
-pointwise limits of measurable functions are measurable.
-:::
-<2>3. By Fatou’s Lemma:
-\[
-\int_0^1 f(x)\,dx = \int_0^1 \liminf_{n \to \infty} f_n(x)\,dx \le \liminf_{n \to \infty} \int_0^1 f_n(x)\,dx.
-\]
-::: {.proof}
-Fatou's Lemma for non-negative measurable functions.
-:::
-<2>4. Since $\int_0^1 f_n(x)\,dx = 1$ for all $n$, the right-hand side is $\liminf_{n \to \infty} 1 = 1$.
-::: {.proof}
-limit of a constant sequence.
-:::
-<2>5. Therefore $\int_0^1 f(x)\,dx \le 1$.
-::: {.proof}
-<2>3 and <2>4.
+The $f_n$ are nonnegative and measurable, and $f=\liminf_nf_n$ pointwise, so Fatou's lemma gives $\int_0^1f\le\liminf_n\int_0^1f_n=1$.
 :::
 
-<1>2. Part (b): **No**, it is not always true that $\int_0^1 f(x)\,dx \ge 1$: <2>1. We construct a counterexample of strictly positive continuous functions $g_n$ on $[0, 1]$ whose integral is $1$ but whose pointwise limit is $0$.
-::: {.proof}
-counterexample strategy (mass escaping to zero width).
-:::
-<2>2. For each $n \ge 2$, define the continuous tent function $T_n: [0, 1] \to [0, \infty)$ by:
-\[
-T_n(x) = \begin{cases} 4n^2 x & 0 \le x \le \frac{1}{2n} \\ 4n - 4n^2 x & \frac{1}{2n} < x \le \frac{1}{n} \\ 0 & \frac{1}{n} < x \le 1. \end{cases}
-\]
-The area under $T_n$ is the area of a triangle with base $1/n$ and height $2n$: $\int_0^1 T_n(x)\,dx = \frac{1}{2} \cdot \frac{1}{n} \cdot 2n = 1$.
-::: {.proof}
-piecewise linear integration.
-:::
-<2>3. To ensure strict positivity, define $g_n(x) = \left(1 - \frac{1}{n}\right) T_n(x) + \frac{1}{n}$ for all $x \in [0, 1]$.
-::: {.proof}
-$g_n(x) \ge 1/n > 0$ for all $x \in [0, 1]$.
-:::
-<2>4. Each $g_n$ is continuous and strictly positive on $[0, 1]$, and its integral is:
-\[
-\int_0^1 g_n(x)\,dx = \left(1 - \frac{1}{n}\right) \int_0^1 T_n(x)\,dx + \int_0^1 \frac{1}{n}\,dx = \left(1 - \frac{1}{n}\right)(1) + \frac{1}{n} = 1.
-\]
-::: {.proof}
-linearity of integration.
-:::
-<2>5. Determine the pointwise limit $f(x) = \lim_{n \to \infty} g_n(x)$ for every $x \in [0, 1]$:
+<1>2. (b) No: $g_n\da\bigl(1-\frac1n\bigr)T_n+\frac1n$, with $T_n$ the tent of height $2n$ on $[0,\frac1n]$, is a counterexample.
 
-- For $x = 0$: $T_n(0) = 0$, so $g_n(0) = 1/n \to 0$.
+::: {.proof}
+Let $T_n(x)=4n^2x$ on $[0,\frac1{2n}]$, $T_n(x)=4n-4n^2x$ on $[\frac1{2n},\frac1n]$, and $T_n=0$ on $[\frac1n,1]$; it is continuous with $\int_0^1T_n=\frac12\cdot\frac1n\cdot2n=1$. So $g_n$ is continuous, $g_n\ge\frac1n>0$, and $\int_0^1g_n=\bigl(1-\frac1n\bigr)+\frac1n=1$. For $x\in(0,1]$, $T_n(x)=0$ once $n>1/x$, and $T_n(0)=0$, so $g_n(x)=\frac1n\to0$ for every $x$. The limit is $f=0$, with $\int_0^1f=0<1$.
+:::
 
-- For any $x \in (0, 1]$: choose $N > 1/x$.
-  For all $n \ge N$, $1/n \le 1/N < x$, so $T_n(x) = 0$.
-  Thus $g_n(x) = 1/n \to 0$ as $n \to \infty$.
-  ::: {.proof}
-  evaluation of $T_n(x)$ for large $n$.
-  :::
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 answer parts (a) and (b).
+:::
+:::
   <2>6. Thus $f(x) = 0$ for all $x \in [0, 1]$, which gives:
 \[
 \int_0^1 f(x)\,dx = \int_0^1 0\,dx = 0 < 1.

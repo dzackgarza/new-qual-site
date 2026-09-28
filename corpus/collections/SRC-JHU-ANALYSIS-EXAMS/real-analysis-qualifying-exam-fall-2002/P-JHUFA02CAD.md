@@ -34,52 +34,24 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Existence.
-<2>1. Let $d = \inf_{z \in K} \|x - z\|$.
+Let $d=\inf_{z\in K}\norm{x-z}$. For $u,v\in K$ the parallelogram law and $\frac{u+v}2\in K$ give
+$$\norm{u-v}^2=2\norm{u-x}^2+2\norm{v-x}^2-4\norm{\tfrac{u+v}2-x}^2\le2\norm{u-x}^2+2\norm{v-x}^2-4d^2.\tag{$*$}$$
+
+<1>1. Some $y\in K$ has $\norm{x-y}=d$.
+
 ::: {.proof}
-define the distance.
-:::
-<2>2. Choose a sequence $z_n \in K$ with $\|x - z_n\| \to d$.
-::: {.proof}
-definition of infimum.
-:::
-<2>3. By the parallelogram law, $\|z_n - z_m\|^2 = 2\|z_n - x\|^2 + 2\|z_m - x\|^2 - 4\|\frac{z_n + z_m}{2} - x\|^2$.
-::: {.proof}
-parallelogram identity.
-:::
-<2>4. Since $K$ is convex, $\frac{z_n + z_m}{2} \in K$, so $\|\frac{z_n+z_m}{2} - x\| \ge d$.
-::: {.proof}
-convexity and definition of $d$.
-:::
-<2>5. Hence $\|z_n - z_m\|^2 \le 2\|z_n - x\|^2 + 2\|z_m - x\|^2 - 4d^2 \to 2d^2 + 2d^2 - 4d^2 = 0$.
-::: {.proof}
-take limits.
-:::
-<2>6. Hence $(z_n)$ is Cauchy, so it converges to some $y \in H$.
-::: {.proof}
-$H$ is complete.
-:::
-<2>7. $y \in K$ (since $K$ is closed) and $\|x - y\| = d$.
-::: {.proof}
-closedness and continuity of the norm.
+Choose $z_n\in K$ with $\norm{x-z_n}\to d$. By $(*)$, $\norm{z_n-z_m}^2\to2d^2+2d^2-4d^2=0$, so $(z_n)$ is Cauchy and converges to some $y\in H$, since $H$ is complete. Then $y\in K$ because $K$ is closed, and $\norm{x-y}=d$ by continuity of the norm.
 :::
 
-<1>2. Uniqueness.
-<2>1. Suppose $y_1, y_2 \in K$ both satisfy $\|x - y_1\| = \|x - y_2\| = d$.
+<1>2. Two such points are equal.
+
 ::: {.proof}
-assume two closest points.
-:::
-<2>2. By the parallelogram law, $\|y_1 - y_2\|^2 = 2\|y_1 - x\|^2 + 2\|y_2 - x\|^2 - 4\|\frac{y_1+y_2}{2} - x\|^2 \le 2d^2 + 2d^2 - 4d^2 = 0$.
-::: {.proof}
-$\frac{y_1+y_2}{2} \in K$ (convexity), so $\|\frac{y_1+y_2}{2} - x\| \ge d$.
-:::
-<2>3. Hence $y_1 = y_2$.
-::: {.proof}
-$\|y_1 - y_2\| = 0$.
+If $\norm{x-y_1}=\norm{x-y_2}=d$ with $y_1,y_2\in K$, then $(*)$ gives $\norm{y_1-y_2}^2\le0$.
 :::
 
 <1>3. Q.E.D.
+
 ::: {.proof}
-<1>1 gives existence; <1>2 gives uniqueness.
+Steps <1>1 and <1>2 give existence and uniqueness.
 :::
 :::

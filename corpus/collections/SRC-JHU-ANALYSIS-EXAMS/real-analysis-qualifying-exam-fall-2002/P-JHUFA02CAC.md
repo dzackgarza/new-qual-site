@@ -30,46 +30,23 @@ Show that any sequence in $\mathcal{F}$ has a subsequence that converges uniform
 :::
 
 ::: {.solution}
-The functions in $\mathcal{F}$ are taken absolutely continuous, so that $f(x)=\int_0^x f'(t)\,dt$ for $f\in\mathcal F$.
+The functions in $\mathcal F$ are taken absolutely continuous, so that $f(x)=\int_0^xf'(t)\,dt$ for $f\in\mathcal F$.
 
-<1>1. Definition of equicontinuity:
+<1>1. (i) A family $\mathcal F\subseteq C([0,1])$ is equicontinuous if for every $\eps>0$ there is $\delta>0$ with $\abs{f(x)-f(y)}<\eps$ whenever $\abs{x-y}<\delta$ and $f\in\mathcal F$. The Arzelà--Ascoli theorem: for a compact metric space $K$, a family in $C(K)$ that is pointwise bounded and equicontinuous has the property that every sequence in it has a uniformly convergent subsequence.
+
 ::: {.proof}
-<2>1. A family of functions $\mathcal{F} \subset C([0,1])$ is equicontinuous at a point $x_0 \in [0,1]$ if for every $\varepsilon > 0$, there exists $\delta > 0$ such that for all $x \in [0,1]$ and all $f \in \mathcal{F}$:
-$$|x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon.$$
-<2>2. The family $\mathcal{F}$ is equicontinuous on $[0,1]$ if it is equicontinuous at every point $x_0 \in [0,1]$.
-<2>3. Because $[0,1]$ is compact, equicontinuity on $[0,1]$ is equivalent to uniform equicontinuity: for every $\varepsilon > 0$, there exists $\delta > 0$ such that $|x - y| < \delta \implies |f(x) - f(y)| < \varepsilon$ for all $x, y \in [0,1]$ and all $f \in \mathcal{F}$.
+These are the requested definition and statement; on the compact interval $[0,1]$ equicontinuity at every point is equivalent to the uniform version stated.
 :::
 
-<1>2. Statement of the Arzelà–Ascoli Theorem:
-::: {.proof}
-<2>1. Let $K$ be a compact metric space and let $C(K)$ denote the Banach space of continuous real-valued functions on $K$ endowed with the supremum norm $\|f\|_\infty = \sup_{x \in K} |f(x)|$.
-<2>2. A subset $\mathcal{F} \subseteq C(K)$ is relatively compact (meaning its closure $\overline{\mathcal{F}}$ is compact in $(C(K), \|\cdot\|_\infty)$, so every sequence in $\mathcal{F}$ has a uniformly convergent subsequence) if and only if:
+<1>2. $\abs{f(x)-f(y)}\le\sqrt{\abs{x-y}}$ for $f\in\mathcal F$ and $x,y\in[0,1]$.
 
-1. $\mathcal{F}$ is pointwise bounded: for each $x \in K$, $\sup_{f \in \mathcal{F}} |f(x)| < \infty$.
-2. $\mathcal{F}$ is equicontinuous on $K$.
+::: {.proof}
+For $y\le x$, the Cauchy--Schwarz inequality gives $\abs{\int_y^xf'}\le(x-y)^{1/2}\bigl(\int_0^1f'^2\bigr)^{1/2}\le\sqrt{x-y}$.
 :::
 
-<1>3. Pointwise and uniform boundedness of $\mathcal{F}$:
-::: {.proof}
-<2>1. Let $f \in \mathcal{F}$. By the Fundamental Theorem of Calculus for absolutely continuous functions and the Cauchy–Schwarz inequality, for any $x \in [0,1]$:
-$$|f(x) - f(0)| = \left| \int_0^x f'(t)\,dt \right| \le \int_0^x 1 \cdot |f'(t)|\,dt \le \left( \int_0^x 1^2\,dt \right)^{1/2} \left( \int_0^x |f'(t)|^2\,dt \right)^{1/2}.$$
-<2>2. Since $f(0) = 0$ and $\int_0^1 |f'(t)|^2\,dt \le 1$:
-$$|f(x)| \le \sqrt{x} \left( \int_0^1 |f'(t)|^2\,dt \right)^{1/2} \le \sqrt{x} \le 1.$$
-<2>3. Hence $\sup_{f \in \mathcal{F}} \|f\|_\infty \le 1$, so $\mathcal{F}$ is uniformly bounded on $[0,1]$.
-:::
+<1>3. Q.E.D.
 
-<1>4. Equicontinuity of $\mathcal{F}$:
 ::: {.proof}
-<2>1. Let $f \in \mathcal{F}$ and let $x, y \in [0,1]$ with $y \le x$. By Cauchy–Schwarz:
-$$|f(x) - f(y)| = \left| \int_y^x f'(t)\,dt \right| \le \left( \int_y^x 1\,dt \right)^{1/2} \left( \int_y^x |f'(t)|^2\,dt \right)^{1/2} \le \sqrt{x - y} \cdot \|f'\|_{L^2} \le \sqrt{|x - y|}.$$
-<2>2. Thus every $f \in \mathcal{F}$ is Hölder continuous with exponent $1/2$ and constant 1.
-<2>3. Given any $\varepsilon > 0$, choose $\delta = \varepsilon^2 > 0$. Whenever $|x - y| < \delta$,
-$$|f(x) - f(y)| \le \sqrt{|x - y|} < \sqrt{\delta} = \varepsilon$$
-for all $f \in \mathcal{F}$, proving that $\mathcal{F}$ is equicontinuous on $[0,1]$.
-:::
-
-<1>5. Conclusion:
-::: {.proof}
-By <1>3 and <1>4, the family $\mathcal{F}$ is bounded and equicontinuous in $C([0,1])$. By the Arzelà–Ascoli Theorem (<1>2), every sequence $(f_n)_{n=1}^\infty \subset \mathcal{F}$ contains a subsequence that converges uniformly on $[0,1]$.
+By step <1>2 with $y=0$, $\abs f\le1$ on $[0,1]$ for all $f\in\mathcal F$, and with $\delta=\eps^2$ the family is equicontinuous. By the Arzelà--Ascoli theorem of step <1>1, every sequence in $\mathcal F$ has a uniformly convergent subsequence.
 :::
 :::
