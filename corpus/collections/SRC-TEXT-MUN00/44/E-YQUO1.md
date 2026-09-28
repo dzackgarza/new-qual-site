@@ -39,9 +39,9 @@ A Hausdorff space that is the continuous image of the closed unit interval is of
 
 The map \(f\) is closed: a closed subset of \(I\) is compact, and its image is compact, hence closed in the Hausdorff space \(X\). Its fibers are closed subsets of \(I\), hence compact. Thus \(f\) is a perfect quotient map.
 
-The interval \(I\) is locally connected, and quotient maps preserve local connectedness as proved in §25. Hence \(X\) is locally connected, and therefore weakly locally connected.
+The interval \(I\) is locally connected, and a quotient space of a locally connected space is locally connected. Hence \(X\) is locally connected, and therefore weakly locally connected.
 
-Finally, \(I\) is second countable, and perfect maps preserve second countability by §31. Thus \(X\) is second countable. A compact Hausdorff space is regular, so the Urysohn metrization theorem implies that \(X\) is metrizable.
+Finally, \(I\) is second countable, and perfect maps preserve second countability by [[E-Y4MFU]](d). Thus \(X\) is second countable. A compact Hausdorff space is regular, so the Urysohn metrization theorem implies that \(X\) is metrizable.
 
 Therefore every Hausdorff continuous image of \(I\) is compact, connected, weakly locally connected, and metrizable.
 
