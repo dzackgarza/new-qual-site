@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-16
 kind: problem
-title: A deformation-retract exercise in the complement of a circle
+title: Deformation retracts and the fundamental group of $\mathbb R^3$ minus a circle
 classification:
   areas:
   - topology
