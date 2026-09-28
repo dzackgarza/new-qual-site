@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6H7HD
 kind: problem
-title: Using algebraic topology
+title: No continuous square root on $\CC$
 classification:
   areas:
   - complex-analysis
