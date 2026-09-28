@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-TWF4F
 kind: proposition
 title: An almost everywhere limit of functions bounded in $L^p$ is bounded in $L^p$
-slogan: 'An almost-everywhere limit cannot exceed a uniform $L^p$ norm bound.'
+slogan: 'If $\norm{f_k}_p\le M$ for all $k$ and $f_k\to f$ almost everywhere, then $\norm{f}_p\le M$.'
 classification:
   areas:
   - real-analysis
