@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-1B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 1B
+title: Decreasing intersection of compact connected sets in $\RR^n$ is connected
 classification:
   areas: [prelim]
   topics: []
