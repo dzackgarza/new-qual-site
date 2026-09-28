@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB18S-03
 kind: problem
-title: A matrix equation involving the exponential
+title: Complex matrices with $e^A=I+A+A^2$
 classification:
   areas:
   - prelim
