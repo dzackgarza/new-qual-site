@@ -22,26 +22,33 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The function $x \mapsto \dist(x, F)$ is continuous (indeed $1$-Lipschitz).
+Work in a metric space $(X,d)$ with $K$ and $F$ nonempty; if either is empty, $\dist(K,F) = \infty$.
+
+<1>1. The function $x \mapsto \dist(x, F)$ is $1$-Lipschitz, hence continuous.
+
 ::: {.proof}
-$|\dist(x, F) - \dist(y, F)| \le |x - y|$ by the triangle inequality, since any point of $F$ within $\dist(x,F)$ of $x$ is within $\dist(x,F) + |x-y|$ of $y$ and vice versa.
+For $z \in F$, $\dist(x,F) \leq d(x,z) \leq d(x,y) + d(y,z)$. Taking the infimum over $z$ gives $\dist(x,F) \leq d(x,y) + \dist(y,F)$, and the same holds with $x$ and $y$ exchanged.
 :::
 
-<1>2. $\dist(\cdot, F)$ attains its minimum on $K$: there is $k_0 \in K$ with $\dist(k_0, F) = \dist(K, F)$.
+<1>2. There is $k_0 \in K$ with $\dist(k_0, F) = \dist(K, F)$.
+
 ::: {.proof}
-a continuous function on a compact set attains its extrema — take a minimizing sequence $(k_m) \subseteq K$ with $\dist(k_m, F) \to \dist(K, F)$; by compactness a subsequence converges to $k_0 \in K$, and continuity of $\dist(\cdot, F)$ gives $\dist(k_0, F) = \dist(K, F)$.
+$\dist(K,F) = \inf_{k \in K}\dist(k,F)$, and a continuous function on a nonempty compact set attains its infimum; step <1>1 gives continuity.
 :::
 
-<1>3. $\dist(K, F) > 0$.
+<1>3. $\dist(k_0, F) > 0$.
+
 ::: {.proof}
-if $\dist(k_0, F) = 0$, then $k_0$ is a limit point of $F$; since $F$ is closed, $k_0 \in F$, contradicting $K \cap F = \emptyset$.
+If $\dist(k_0, F) = 0$, then $k_0$ is a limit of points of $F$; since $F$ is closed, $k_0 \in F$, contradicting $K \cap F = \emptyset$.
 :::
 
 <1>4. Q.E.D.
+
 ::: {.proof}
-<1>2 and <1>3.
+Steps <1>2 and <1>3.
+:::
 :::
 
-<1>5. Remark: the hypothesis that $K$ is compact cannot be weakened to closed.
-In $\RR$, take $K = \NN$ and $F = \{n + 2^{-n} : n \in \NN\}$: both are closed and disjoint, yet $\dist(K, F) = \inf_n 2^{-n} = 0$.
+::: {.remark}
+Compactness of $K$ cannot be weakened to closedness. In $\RR$, $K = \NN$ and $F = \theset{n + 2^{-n} : n \in \NN}$ are closed and disjoint, and $\dist(K, F) = \inf_n 2^{-n} = 0$.
 :::
