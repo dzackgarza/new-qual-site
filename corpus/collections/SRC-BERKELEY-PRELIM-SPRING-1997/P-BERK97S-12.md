@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK97S-12
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}\sin^2x/x^2\,dx$
+title: Integral of $\sin^2x/x^2$ over $\RR$
 classification:
   areas:
   - prelim
