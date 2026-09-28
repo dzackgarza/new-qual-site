@@ -46,7 +46,7 @@ $$
 
 ::: {.remark title="Growth bounds for entire functions"}
 Let $f$ be entire with $\abs{f(z)} \leq A \abs z^n$ for all $\abs z\geq R_0$.
-For fixed $z_0$ and large $R$, $\abs f\leq A(R+\abs{z_0})^n$ on the circle $\abs{z-z_0}=R$, so the estimate gives $\abs{f^{(n+1)}(z_0)} \leq (n+1)!\,A (R+\abs{z_0})^n/R^{n+1}\to 0$ as $R\to\infty$.
+For fixed $z_0$ and large $R$, $\abs f\leq A(R+\abs{z_0})^n$ on the circle $\abs{z-z_0}=R$, so Cauchy's inequality gives $\abs{f^{(n+1)}(z_0)} \leq (n+1)!\,A (R+\abs{z_0})^n/R^{n+1}\to 0$ as $R\to\infty$.
 Hence $f^{(n+1)}\equiv 0$ and $f$ is a polynomial of degree at most $n$.
 The case $n=0$ is Liouville's theorem.
 
@@ -60,7 +60,7 @@ The case $n=0$ is Liouville's theorem.
 \envlist
 
 - Since $f$ is bounded, $\abs{f(z)} \leq M$ uniformly on $\CC$.
-- Apply the estimate for the first derivative:
+- Apply Cauchy's inequality with $n=1$ on the circle $C_R$ of radius $R$ about $z$:
 $$
 \abs{f'(z)} \leq { 1! \norm{f}_{C_R} \over R } \leq {M \over R}\converges{R\to\infty}\too 0
 ,$$
