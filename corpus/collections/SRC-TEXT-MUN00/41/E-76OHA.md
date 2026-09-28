@@ -24,16 +24,14 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Prove that all discrete spaces are paracompact and show that continuous images of paracompact spaces need not be paracompact.
-
 <1>1. Part (a): Discrete spaces are paracompact.
     *Proof:*
     <2>1. In the discrete topology on $X$, every singleton $\{x\}$ is open and closed, so $X$ is Hausdorff.
     <2>2. Let $\mathcal{U} = \{U_\alpha\}_{\alpha \in J}$ be an arbitrary open cover of $X$.
     <2>3. Consider the singleton collection $\mathcal{V} = \{\{x\} \mid x \in X\}$.
-    <2>4. **Openness and Covering:** In the discrete topology, each $\{x\}$ is open, and $\bigcup_{x \in X} \{x\} = X$, so $\mathcal{V}$ is an open cover of $X$.
-    <2>5. **Refinement:** For each $x \in X$, since $\mathcal{U}$ covers $X$, there exists an index $\alpha \in J$ such that $x \in U_\alpha$. Thus $\{x\} \subseteq U_\alpha$, so $\mathcal{V}$ refines $\mathcal{U}$.
-    <2>6. **Local Finiteness:** For any point $p \in X$, the open neighborhood $W = \{p\}$ intersects only one member of $\mathcal{V}$ (namely $\{p\}$ itself).
+    <2>4. In the discrete topology, each $\{x\}$ is open, and $\bigcup_{x \in X} \{x\} = X$, so $\mathcal{V}$ is an open cover of $X$.
+    <2>5. For each $x \in X$, since $\mathcal{U}$ covers $X$, there exists an index $\alpha \in J$ such that $x \in U_\alpha$. Thus $\{x\} \subseteq U_\alpha$, so $\mathcal{V}$ refines $\mathcal{U}$.
+    <2>6. For any point $p \in X$, the open neighborhood $W = \{p\}$ intersects only one member of $\mathcal{V}$ (namely $\{p\}$ itself).
     <2>7. Thus $\mathcal{V}$ is a locally finite open refinement of $\mathcal{U}$, proving $X$ is paracompact.
 
 <1>2. Part (b): Continuous images of paracompact spaces need not be paracompact.
