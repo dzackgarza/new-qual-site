@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WUWUT
 kind: problem
-title: Hungerford 2.1.10
+title: $(\QQ,+)$ is torsion-free but neither finitely generated nor free
 classification:
   areas:
   - algebra
@@ -27,42 +27,52 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Prove that $(\mathbb{Q}, +)$ is not finitely generated in (a), not free in (b), and serves as an infinitely generated counterexample to the freeness of torsion-free abelian groups in (c).
+<1>1. (a) $(\QQ,+)$ is not finitely generated.
 
-<1>1. Part (a): $\mathbb{Q}$ is not finitely generated as an abelian group.
-    *Proof:*
-    <2>1. Suppose for contradiction that $(\mathbb{Q}, +)$ is finitely generated:
-    $$\mathbb{Q} = \left\langle \frac{a_1}{b_1}, \frac{a_2}{b_2}, \dots, \frac{a_k}{b_k} \right\rangle,$$
-    where $a_i \in \mathbb{Z}$ and $b_i \in \mathbb{Z}^+$ for each $i \in \{1, \dots, k\}$.
-    <2>2. Let $B = \prod_{i=1}^k b_i \in \mathbb{Z}^+$ be the product of all denominators.
-    <2>3. Every element $x \in \langle \frac{a_1}{b_1}, \dots, \frac{a_k}{b_k} \rangle$ can be written as an integer linear combination:
-    $$x = \sum_{i=1}^k c_i \frac{a_i}{b_i} = \frac{1}{B} \sum_{i=1}^k c_i a_i \left(\prod_{j \ne i} b_j\right) \in \frac{1}{B}\mathbb{Z}.$$
-    <2>4. Thus the assumption implies $\mathbb{Q} \subseteq \frac{1}{B}\mathbb{Z}$.
-    <2>5. Choose a prime number $p > B$.
-    <2>6. The rational number $\frac{1}{p} \in \mathbb{Q}$.
-    <2>7. If $\frac{1}{p} \in \frac{1}{B}\mathbb{Z}$, there exists an integer $m \in \mathbb{Z}$ such that $\frac{1}{p} = \frac{m}{B}$, which implies $B = m p$.
-    <2>8. This means $p \mid B$, which contradicts $p > B \ge 1$.
-    <2>9. Thus $\frac{1}{p} \notin \frac{1}{B}\mathbb{Z}$, so $\mathbb{Q}$ cannot be finitely generated.
+<2>1. For $a_1,\ldots,a_k\in\ZZ$ and $b_1,\ldots,b_k\in\ZZ_{>0}$, put $B=\prod_{i=1}^k b_i$. Then $\left\langle \frac{a_1}{b_1},\ldots,\frac{a_k}{b_k}\right\rangle\subseteq\frac1B\ZZ$.
 
-<1>2. Part (b): $\mathbb{Q}$ is not a free abelian group.
-    *Proof:*
-    <2>1. Suppose for contradiction that $(\mathbb{Q}, +)$ is a free abelian group with basis $\mathcal{B} \subset \mathbb{Q}$.
-    <2>2. If $|\mathcal{B}| = 1$, then $\mathbb{Q} \cong \mathbb{Z}$, so $\mathbb{Q}$ is cyclic, which contradicts <1>1.
-    <2>3. If $|\mathcal{B}| \ge 2$, choose two distinct basis elements $x, y \in \mathcal{B}$.
-    <2>4. Write $x = \frac{a}{b}$ and $y = \frac{c}{d}$ with non-zero integers $a, b, c, d \in \mathbb{Z} \setminus \{0\}$.
-    <2>5. Consider the non-trivial $\mathbb{Z}$-linear combination:
-    $$(b c) x - (a d) y = (b c) \left(\frac{a}{b}\right) - (a d) \left(\frac{c}{d}\right) = a c - a c = 0.$$
-    <2>6. Since $a, b, c, d \ne 0$, the integer coefficients $b c \ne 0$ and $-a d \ne 0$ are non-zero.
-    <2>7. This non-trivial relation contradicts the linear independence of the basis $\mathcal{B}$ over $\mathbb{Z}$.
-    <2>8. Thus $(\mathbb{Q}, +)$ is not a free abelian group.
+::: {.proof}
+Every element of the subgroup is an integer combination
+$$x = \sum_{i=1}^k c_i \frac{a_i}{b_i} = \frac{1}{B} \sum_{i=1}^k c_i a_i \left(\prod_{j \ne i} b_j\right) \in \frac{1}{B}\ZZ.$$
+:::
 
-<1>3. Part (c): Indispensability of the finite generation hypothesis.
-    *Proof:*
-    <2>1. The group $(\mathbb{Q}, +)$ is torsion-free: for any $n \in \mathbb{Z} \setminus \{0\}$ and $\frac{a}{b} \in \mathbb{Q}$, $n \cdot \frac{a}{b} = \frac{n a}{b} = 0 \implies n a = 0 \implies a = 0 \implies \frac{a}{b} = 0$.
-    <2>2. By Part (b), $(\mathbb{Q}, +)$ is not free.
-    <2>3. Therefore, "every torsion-free abelian group is free" is false in general, and the hypothesis of finite generation is essential.
+<2>2. For every $B\in\ZZ_{>0}$, $\frac1B\ZZ\ne\QQ$.
 
-<1>4. Conclusion:
-    *Proof:*
-    $(\mathbb{Q}, +)$ is neither finitely generated nor free, despite being torsion-free.
+::: {.proof}
+Let $p$ be a prime with $p>B$. If $\frac1p=\frac mB$ with $m\in\ZZ$, then $B=mp$, so $p\mid B$, which contradicts $0<B<p$. Hence $\frac1p\notin\frac1B\ZZ$.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Every finite subset of $\QQ$ can be written as $\left\{\frac{a_1}{b_1},\ldots,\frac{a_k}{b_k}\right\}$ with $b_i>0$. By steps <2>1 and <2>2 the subgroup it generates is a proper subgroup of $\QQ$.
+:::
+
+<1>2. (b) $(\QQ,+)$ is not a free abelian group.
+
+<2>1. $(\QQ,+)$ has no basis with exactly one element.
+
+::: {.proof}
+A free abelian group with a one-element basis is cyclic, hence finitely generated, which contradicts step <1>1.
+:::
+
+<2>2. No two distinct elements of $\QQ$ are $\ZZ$-linearly independent.
+
+::: {.proof}
+Let $x=\frac ab$ and $y=\frac cd$ be distinct elements of a candidate basis, with $a,b,c,d\in\ZZ\setminus\{0\}$; basis elements are nonzero. Then
+$$(b c) x - (a d) y = (b c) \left(\frac{a}{b}\right) - (a d) \left(\frac{c}{d}\right) = a c - a c = 0,$$
+and the coefficients $bc$ and $-ad$ are nonzero.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+By step <2>1 a basis of $(\QQ,+)$ cannot have exactly one element, and by step <2>2 it cannot have two or more elements.
+:::
+
+<1>3. (c) $(\QQ,+)$ is a torsion-free abelian group that is not free.
+
+::: {.proof}
+For $n \in \ZZ \setminus \{0\}$ and $\frac{a}{b} \in \QQ$, $n \cdot \frac{a}{b} = \frac{n a}{b} = 0$ implies $n a = 0$, hence $a = 0$ and $\frac{a}{b} = 0$. So $(\QQ,+)$ is torsion-free. By step <1>2 it is not free, and by step <1>1 it is not finitely generated. Hence the statement "every torsion-free abelian group is free" is false.
+:::
 :::
