@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HFGO26
 kind: problem
-title: Define a prime field
+title: Prime field of a field
 classification:
   areas: [algebra]
   topics: [Field Theory]
