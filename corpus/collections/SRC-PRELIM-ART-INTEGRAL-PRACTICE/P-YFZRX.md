@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YFZRX
 kind: problem
-title: Evaluate $\int x\sec^{-1}(x)\,dx$
+title: $\int x\sec^{-1}(x)\,dx$ and $\int x\csc^{-1}(x)\,dx$
 classification:
   areas:
   - prelim
