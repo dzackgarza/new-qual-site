@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-[Fall 2010, Problem $\# 5 ]$ Let $H : = \{ z \in \mathbb { C } : \operatorname { R e } ( z ) > 0 \}$ . Suppose f is an analytic function which maps the open unit disk D into H and satisfies $f ( 0 ) = 2$ . Find a sharp upper bound for $\left| f ^ { \prime } ( 0 ) \right|$, justifying your bound by a proof and its sharpness by an example.
+[Fall 2010, Problem $\# 5 ]$ Let $H : = \{ z \in \mathbb { C } : \operatorname { R e } ( z ) > 0 \}$ . Suppose $f$ is an analytic function which maps the open unit disk $D$ into $H$ and satisfies $f ( 0 ) = 2$ . Find a sharp upper bound for $\left| f ^ { \prime } ( 0 ) \right|$, justifying your bound by a proof and its sharpness by an example.
 :::
 
 ::: {.solution}
