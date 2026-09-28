@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-1A
 kind: problem
-title: Sum a reciprocal cubic telescoping series
+title: Telescoping sum of $\sum_{n\ge1} 1/(n(n+1)(n+2))$
 classification:
   areas:
   - prelim
