@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-ALG-QUAL-WINTER-2018
 kind: collection
-title: Algebra Qualifying Exam, Winter 2018
+title: Algebra qualifying exam, Winter 2018
 classification:
   areas: [algebra]
   topics: []
@@ -33,7 +33,3 @@ source:
     - P-ALGQUAL18W-II4
     - P-ALGQUAL18W-II5
 ---
-
-::: {.remark}
-A qualifying exam in algebra, Winter 2018, with a worked answer after each problem. The document names no institution.
-:::
