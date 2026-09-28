@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF05-3B
 kind: problem
-title: Which characteristic and minimal polynomial pairs occur
+title: Realizable pairs of characteristic and minimal polynomials
 classification:
   areas:
   - prelim
