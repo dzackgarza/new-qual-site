@@ -34,7 +34,7 @@ $$
 :::
 
 ::: {.solution}
-First, $A\times B\subseteq\overline A\times\overline B$, and the latter set is closed by the preceding product result. Hence
+First, $A\times B\subseteq\overline A\times\overline B$, and the latter set is closed by [[E-PBT3I]]. Hence
 \[
 \overline{A\times B}\subseteq\overline A\times\overline B.
 \]
