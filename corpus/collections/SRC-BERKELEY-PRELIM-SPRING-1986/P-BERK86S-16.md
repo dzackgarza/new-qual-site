@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-16
 kind: problem
-title: Compare $\mathbb F_p[x]/(x^2-2)$ and $\mathbb F_p[x]/(x^2-3)$ for $p=2,5,11$
+title: $\mathbb F_p[x]/(x^2-2)$ versus $\mathbb F_p[x]/(x^2-3)$ for $p=2,5,11$
 classification:
   areas: [prelim]
   topics: []
