@@ -15,5 +15,6 @@ review: draft
 
 ::: {.theorem}
 Let $X$ be a topological space and $C\subseteq\RR^n$ a convex subset.
-Any two continuous maps $f, g\colon X\to C$ are homotopic, via the linear homotopy $F(x,t) = (1-t)f(x) + t\,g(x)$, which lies in $C$ by convexity; for paths this is [@Hat02].
+Any two continuous maps $f, g\colon X\to C$ are homotopic, via the linear homotopy $F(x,t) = (1-t)f(x) + t\,g(x)$, which lies in $C$ by convexity.
+For $X = [0,1]$ and paths with common endpoints, the linear homotopy is a homotopy rel endpoints [@Hat02].
 :::
