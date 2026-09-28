@@ -56,7 +56,7 @@ First, check that $u$ is actually harmonic:
 \laplacian u = \dd{}{x}(3x^2-3y^2-1) + \dd{}{y}(-6xy - 1) = 6x + (-6x) = 0
 .\]
 
-Standard procedure: integrate $v_y=u_x$ with respect to $x$,
+Integrate $v_y=u_x$ with respect to $y$,
 \[
 v_y = u_x = 3x^2 - 3y^2 - 1 \implies 
 v = \int u_x \dy = 3x^2y - y^3 - y + f_1(x)
