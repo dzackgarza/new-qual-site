@@ -67,10 +67,7 @@ are $F$; the same equality covers that case.
 <1>3. The Galois groups coincide.
 
 ::: {.proof}
-Writing the common splitting field as $L$, both groups are
-literally $\operatorname{Aut}_F(L)$, with the same composition
-law. No separability assumption was used. A repeated root
-$\alpha$ may still belong to $R_h$, but the root-set union and
-the field equality in step <1>2 remain valid.
+Writing the common splitting field as $L$, both groups equal
+$\operatorname{Aut}_F(L)$, with the same composition law.
 :::
 :::
