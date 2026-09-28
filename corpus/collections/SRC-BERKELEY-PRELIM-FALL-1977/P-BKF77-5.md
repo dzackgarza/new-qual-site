@@ -31,12 +31,6 @@ audit:
 (c) If $n=pq$ with $p,q$ distinct primes, prove that the number of units in $\mathbb Z_n$ is $(p-1)(q-1)$.
 :::
 
-::: {.remark}
-The printed source says only that $p$ and $q$ are primes. Distinctness is
-necessary: if $p=q=2$, then $n=4$ and $\mathbb Z_4$ has the two units
-$[1]$ and $[3]$, whereas $(p-1)(q-1)=1$.
-:::
-
 ::: {.solution}
 <1>1. The units of a ring with unity form a group under multiplication.
 ::: {.proof}
@@ -65,7 +59,7 @@ Finally, if $u$ is a unit, then its inverse $u^{-1}$ is again a unit, with
 inverse $u$. Hence $R^\times$ satisfies all the group axioms.
 :::
 
-<1>2. Characterize the units of $\mathbb Z_n$.
+<1>2. A class $[k]\in\mathbb Z_n$ is a unit if and only if $\gcd(k,n)=1$.
 ::: {.proof}
 The residue class $[k]\in\mathbb Z_n$ is a unit exactly when there exists
 $[\ell]\in\mathbb Z_n$ such that
@@ -90,7 +84,7 @@ $$
 $$
 :::
 
-<1>3. Count the units when $n=pq$ with $p\ne q$ prime.
+<1>3. If $n=pq$ with $p\ne q$ prime, then $\mathbb Z_n$ has $(p-1)(q-1)$ units.
 ::: {.proof}
 By step <1>2, a residue class modulo $pq$ fails to be a unit exactly when
 its representative is divisible by $p$ or by $q$.
@@ -112,4 +106,10 @@ $$
 \boxed{|\mathbb Z_{pq}^\times|=(p-1)(q-1).}
 $$
 :::
+:::
+
+::: {.remark}
+The printed source says only that $p$ and $q$ are primes. Distinctness is
+necessary: if $p=q=2$, then $n=4$ and $\mathbb Z_4$ has the two units
+$[1]$ and $[3]$, whereas $(p-1)(q-1)=1$.
 :::
