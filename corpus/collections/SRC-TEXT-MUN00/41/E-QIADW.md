@@ -49,5 +49,5 @@ Thus
 \[
 G=\bigcup_{n\ge1}K^n
 \]
-is \(\sigma\)-compact. Hausdorff topological groups are regular, so Exercise `E-KVFCT` applies: every regular \(\sigma\)-compact space is paracompact. Hence \(G\) is paracompact.
+is \(\sigma\)-compact. Hausdorff topological groups are regular, and every regular \(\sigma\)-compact space is paracompact by [[E-KVFCT]]. Hence \(G\) is paracompact.
 :::
