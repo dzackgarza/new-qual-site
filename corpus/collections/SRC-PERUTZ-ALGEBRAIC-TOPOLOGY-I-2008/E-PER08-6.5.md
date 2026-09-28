@@ -27,12 +27,8 @@ Let $p\colon Y\to X$ be a covering (with $Y$ path connected and $X$ locally path
 Show that $\operatorname{Aut}(\widetilde X/X)\cong(N_GH)/H$, where $N_GH=\{g\in G:gHg^{-1}=H\}$.
 :::
 
-::: {.remark}
-The group $\operatorname{Aut}(\widetilde X/X)$ is printed as in the source; since the covering in the statement is $p\colon Y\to X$, the group meant is $\operatorname{Aut}(Y/X)$.
-:::
-
 ::: {.solution}
-The intended statement is
+We prove
 \[
 \operatorname{Aut}(Y/X)\cong N_G(H)/H,
 \qquad
@@ -60,4 +56,8 @@ Applying the same construction to $g^{-1}$ gives its inverse, so this map is a d
 Composition sends the image of $y$ according to multiplication of cosets, and the kernel consists exactly of $g\in H$.
 Hence the deck group is canonically $N_G(H)/H$ after the chosen basepoint identification.
 :::
+:::
+
+::: {.remark}
+The group $\operatorname{Aut}(\widetilde X/X)$ is printed as in the source; since the covering in the statement is $p\colon Y\to X$, the group meant is $\operatorname{Aut}(Y/X)$.
 :::
