@@ -58,14 +58,14 @@ isomorphism, so we may assume
 \[
 0\ne N\subseteq R.
 \]
-Choose $0\ne d\in N$. If $d$ is not a unit, then in a one-dimensional local
+If $x$ is a unit, then $xN=N$ and $\ell=0$, so the claim holds; assume
+$x\in\mathfrak m$. Choose $0\ne d\in N$. If $d$ is a unit, then $N=R$ and
+$c=0$ works below. If $d$ is not a unit, then in a one-dimensional local
 domain the only prime containing $(d)$ is $\mathfrak m$, hence
 \[
-\sqrt{(d)}=\mathfrak m.
+\sqrt{(d)}=\mathfrak m,
 \]
-Since $x\in\mathfrak m$ whenever $x$ is a nonunit, some power $x^c$ lies in
-$(d)\subseteq N$; if $x$ or $d$ is a unit, the same containment holds with an
-obvious choice of $c$. Thus for some $c\ge0$,
+and some power $x^c$ lies in $(d)\subseteq N$. Thus for some $c\ge0$,
 \[
 x^cR\subseteq N\subseteq R.
 \]
