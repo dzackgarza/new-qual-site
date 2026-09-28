@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3EZG5
 kind: problem
-title: Jacobson radical is bigger than the nilradical
+title: The nilradical is contained in the Jacobson radical
 classification:
   areas:
   - algebra
@@ -22,5 +22,6 @@ The nilradical is contained in the Jacobson radical, i.e.
 :::
 
 ::: {.solution}
-Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it is necessarily in every maximal ideal as well.
+For a commutative ring $R$, $\nilrad{R}$ is the intersection of all prime ideals ([[E-2ZO7O]]) and $J(R)$ is the intersection of all maximal ideals.
+Every maximal ideal is prime, so an element in every prime ideal is in every maximal ideal.
 :::
