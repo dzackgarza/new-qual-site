@@ -37,7 +37,7 @@ Because $A$ has real coefficients, nonzero eigenvalues occur in conjugate pairs
 \[
 i\mu,-i\mu\qquad(\mu\in\RR).
 \]
-In particular the only possible **real** eigenvalue is $0$. Therefore an odd-dimensional real skew-symmetric matrix is singular: its nonzero eigenvalues pair off, leaving $0$ as an eigenvalue.
+In particular the only possible real eigenvalue is $0$. Therefore an odd-dimensional real skew-symmetric matrix is singular: its nonzero eigenvalues pair off, leaving $0$ as an eigenvalue.
 
 Equivalently, $iA$ is Hermitian, so the spectral theorem gives a unitary diagonalization of $A$ over $\CC$ with purely imaginary diagonal entries.
 :::
