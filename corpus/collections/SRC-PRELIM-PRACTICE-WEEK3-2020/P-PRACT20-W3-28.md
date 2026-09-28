@@ -16,12 +16,9 @@ What is the flux of $\mathbf { F } ( x , y , z ) = ( x , y , z )$ through the su
 :::
 
 ::: {.solution}
-The flux through the surface is given by the surface integral of F · n where n is the normal to the surface.
-We can evaluate this easily using Gauss’ divergence theorem:
+Let $V$ be the solid upper half-ball, whose boundary is the hemisphere $S$ together with the unit disk $B$ in the $xy$-plane. On $B$ the outward normal is $\mathbf{n} = (0,0,-1)$, so $\mathbf{F} \cdot \mathbf{n} = -z = 0$ and the flux through $B$ is zero. By the divergence theorem,
 
 $$
-\iint _ { S } \mathbf { F } \cdot \mathbf { n } d S = \iiint _ { V } \nabla \cdot \mathbf { F } d V = 3 \mathrm { V o l } ( V ) = 2 \pi .
+\iint _ { S } \mathbf { F } \cdot \mathbf { n } \, dS = \iiint _ { V } \nabla \cdot \mathbf { F } \, dV = 3 \operatorname{Vol} ( V ) = 2 \pi .
 $$
-
-[Note: ordinarily we would also need to account for the flux through the bottom of the surface, but the flux of F through the bottom is zero here since $\mathbf { F } \cdot \mathbf { n } = - z = 0$ on the xy-plane.]
 :::
