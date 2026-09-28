@@ -31,7 +31,7 @@ Prove that there exists a constant $\gamma \geq 0$ such that $\sum_{k=1}^\infty 
 :::
 
 ::: {.solution}
-<1>1. Package the partial sums as bounded operators.
+<1>1. For each $N\ge1$, the map $T_N\colon X^*\to(\mathbb R^N,\|\cdot\|_1)$, $T_N(f)=(f(x_1),\ldots,f(x_N))$, is a bounded linear operator.
 ::: {.proof}
 For $N\ge1$, define
 \[
@@ -48,7 +48,7 @@ where $\mathbb R^N$ is equipped with the $\ell^1$ norm. Then
 so each $T_N$ is a bounded linear operator.
 :::
 
-<1>2. Apply the Uniform Boundedness Principle.
+<1>2. $\gamma\coloneqq\sup_N\|T_N\|$ is finite, and $\sum_{k=1}^\infty|f(x_k)|\le\gamma\|f\|$ for every $f\in X^*$.
 ::: {.proof}
 For every fixed $f\in X^*$, the hypothesis gives
 \[
