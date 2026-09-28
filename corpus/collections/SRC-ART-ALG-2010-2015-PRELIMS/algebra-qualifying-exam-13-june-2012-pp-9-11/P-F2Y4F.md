@@ -97,8 +97,7 @@ This proves the other divisibility. Both remain valid in
 $K[x]$. By step <1>2, every irreducible factor of a divisor
 of $x^{16}-x$ in $K[x]$ is linear: unique factorization in
 the Euclidean domain $K[x]$ applies [@DF04]. Thus each
-polynomial in part (b) factors completely over the specified
-field $K$, not merely over some extension of it.
+polynomial in part (b) factors completely over $K$.
 :::
 
 <1>4. The polynomial $g(x)=x^3+x+1$ is irreducible over $K$.
