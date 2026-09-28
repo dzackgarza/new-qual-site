@@ -45,7 +45,7 @@ The space is not Hausdorff. Suppose $q$ and $p(0)$ had disjoint open neighborhoo
 \]
 Choose $n$ with $1/n<\varepsilon$. Since $1/n\in p^{-1}(U)$ and basic neighborhoods of a point of $K$ cannot be of the form $(a,b)-K$, openness of $p^{-1}(U)$ gives an ordinary interval about $1/n$ contained in it. Such an interval contains points of $(-\varepsilon,\varepsilon)-K$, contradicting disjointness. Thus $Y$ is not Hausdorff.
 
-(b) In any space, Hausdorffness is equivalent to closedness of the diagonal. Hence
+(b) A space is Hausdorff if and only if its diagonal is closed ([[E-6A0RO]]). Hence
 \[
 \Delta_Y=\{(y,y):y\in Y\}
 \]
