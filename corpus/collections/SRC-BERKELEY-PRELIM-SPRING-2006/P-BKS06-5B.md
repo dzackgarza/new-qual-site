@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-5B
 kind: problem
-title: UC Berkeley Spring 2006 prelim 5B
+title: No continuous bijection from $(0,1)$ onto $[0,1]$
 classification:
   areas: [prelim]
   topics: []
