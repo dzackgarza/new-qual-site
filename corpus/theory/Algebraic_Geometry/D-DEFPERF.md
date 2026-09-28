@@ -26,10 +26,10 @@ $$
 M \to \Hom_A(N, L) .
 $$
 The pairing is \dfn{perfect} if this canonical map is an isomorphism.
+It is \dfn{nondegenerate} if the canonical maps $M\to\Hom_A(N,L)$ and $N\to\Hom_A(M,L)$ are injective.
 :::
 
 ::: {.remark}
-The pairing is \dfn{nondegenerate} if the canonical maps $M\to\Hom_A(N,L)$ and $N\to\Hom_A(M,L)$ are injective.
 Over a field, with $M$ and $N$ finite-dimensional and $L$ the field, nondegenerate and perfect agree.
 Over $\ZZ$, the pairing $\ZZ\tensor_\ZZ\ZZ\to\ZZ$, $a\tensor b\mapsto 2ab$, is nondegenerate and not perfect: the canonical map $\ZZ\to\Hom_\ZZ(\ZZ,\ZZ)\cong\ZZ$ is multiplication by $2$.
 
