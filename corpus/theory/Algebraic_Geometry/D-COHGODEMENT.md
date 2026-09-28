@@ -21,9 +21,9 @@ prompts:
 ::: {.definition title="Godement resolution"}
 Let $\mcf$ be a sheaf of abelian groups on a topological space $X$.
 Put
-\[
+$$
 \mathcal{G}^0(\mcf)(U) = \prod_{x \in U} \mcf_x ,
-\]
+$$
 the sheaf of all, not necessarily continuous, sections of the espace étalé, with the injection $\mcf \to \mathcal{G}^0(\mcf)$ sending $s$ to its germs.
 Inductively, with $\mathcal{Z}^0 = \mcf$ and $\mathcal{Z}^{n+1} = \operatorname{coker}\big(\mathcal{Z}^{n} \to \mathcal{G}^0(\mathcal{Z}^{n})\big)$, set $\mathcal{G}^n(\mcf) = \mathcal{G}^0(\mathcal{Z}^n)$ with differential $\mathcal{G}^n(\mcf) \to \mathcal{Z}^{n+1} \to \mathcal{G}^{n+1}(\mcf)$.
 The complex $0 \to \mcf \to \mathcal{G}^0(\mcf) \to \mathcal{G}^1(\mcf) \to \cdots$ is the \dfn{Godement resolution}.
@@ -38,5 +38,6 @@ The complex $0 \to \mcf \to \mathcal{G}^0(\mcf) \to \mathcal{G}^1(\mcf) \to \cdo
 :::
 
 ::: {.remark}
-Functoriality is what makes the Godement resolution useful beyond computing cohomology: it gives canonical complexes, compatible with morphisms and pushforwards, that represent $R\Gamma$ and $Rf_*$ without choosing injective resolutions.
+For a continuous map $f\colon X\to Y$, pushforwards of flasque sheaves are flasque and flasque sheaves are $f_*$-acyclic, so $R^if_*\mcf\cong\mathcal H^i\big(f_*\mathcal G^\bullet(\mcf)\big)$.
+The complexes $\Gamma(X,\mathcal G^\bullet(\mcf))$ and $f_*\mathcal G^\bullet(\mcf)$ are functorial in $\mcf$ and involve no choice of injective resolution.
 :::
