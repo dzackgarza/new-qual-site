@@ -26,20 +26,20 @@ Define lower central series, upper central series, nilpotent and solvable groups
 :::
 
 ::: {.solution}
-For a group $G$, the **lower central series** is
+For a group $G$, the \dfn{lower central series} is
 \[
 \gamma_1(G)=G,\qquad \gamma_{i+1}(G)=[\gamma_i(G),G].
 \]
-The **upper central series** is
+The \dfn{upper central series} is
 \[
 Z_0(G)=1,\qquad Z_{i+1}(G)/Z_i(G)=Z\bigl(G/Z_i(G)\bigr).
 \]
 
-The group $G$ is **nilpotent** if $\gamma_{c+1}(G)=1$ for some $c\ge0$; equivalently, $Z_c(G)=G$ for some $c$. The least such $c$ is the nilpotency class.
+The group $G$ is \dfn{nilpotent} if $\gamma_{c+1}(G)=1$ for some $c\ge0$; equivalently, $Z_c(G)=G$ for some $c$. The least such $c$ is the nilpotency class.
 
-The **derived series** is
+The \dfn{derived series} is
 \[
 G^{(0)}=G,\qquad G^{(i+1)}=[G^{(i)},G^{(i)}].
 \]
-The group $G$ is **solvable** if $G^{(r)}=1$ for some $r$.
+The group $G$ is \dfn{solvable} if $G^{(r)}=1$ for some $r$.
 :::
