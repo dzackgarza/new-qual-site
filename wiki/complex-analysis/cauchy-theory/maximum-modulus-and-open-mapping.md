@@ -73,7 +73,7 @@ On a connected $\Omega$, the identity principle extends this to $\Omega$.
 :::
 
 ::: {.remark title="Harmonic functions"}
-The first half of the mean value proof uses only continuity and the mean value property, which a real harmonic function $u$ also has; with $u$ in place of $\abs f$ it shows that $u$ is constant near a local maximum.
+A real harmonic function $u$ is continuous and has the mean value property, so the integral argument with $u(z_0) - u(z_0+re^{it})$ in place of $\abs{f(z_0)} - \abs{f(z_0+re^{it})}$ shows that $u$ is constant near a local maximum.
 
 :::
 
@@ -96,7 +96,7 @@ Since $D$ is connected one of them is empty, so either $u<M$ throughout or $u\eq
 
 ::: {.proof title="from Gamelin"}
 Replace $h(z)$ by $\lambda h(z)$ for a unimodular constant $\lambda$ so that $h(z_0) = M$, and set $u = \Re h$.
-Then $u$ is harmonic on $D$ and attains its maximum at $z_0$, so $u \equiv M$ by the real version.
+Then $u$ is harmonic on $D$ and attains its maximum at $z_0$, so $u \equiv M$ by the [[PR-6WOTK|strict maximum principle for real harmonic functions]].
 Since $\abs h \leq M$ and $\Re h = M$, we get $\Im h = 0$, so $h$ is constant.
 
 :::
