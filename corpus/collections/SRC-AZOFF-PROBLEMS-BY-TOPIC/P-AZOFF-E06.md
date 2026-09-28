@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Find all entire functions f which satisfy $| f ( z ) | \geq | z |$ for all $z \in \mathbb { C }$ . Be sure to prove your list is complete.
+Find all entire functions $f$ which satisfy $\abs{f(z)} \geq \abs{z}$ for all $z \in \CC$. Be sure to prove your list is complete.
 :::
 
 ::: {.solution}
