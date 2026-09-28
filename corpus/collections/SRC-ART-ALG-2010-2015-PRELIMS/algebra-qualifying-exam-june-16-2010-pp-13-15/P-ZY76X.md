@@ -112,9 +112,8 @@ exactly the eight subgroups stated above, without repetitions.
 The subgroup orders in step <1>2 and the degree formula
 in step <1>1 give exactly the stated fields and degrees.
 Different subgroups have different fixed fields, so none
-of these entries is duplicated. The excluded subgroup
-$G$ corresponds to $F$ and the excluded subgroup $\{1\}$
-to $K$, exactly the two endpoints forbidden in the question.
+of these entries is duplicated. The subgroup $G$
+corresponds to $F$ and the subgroup $\{1\}$ to $K$.
 
 All three subgroups of order four have index two and
 are normal: both the left and right cosets of any element
