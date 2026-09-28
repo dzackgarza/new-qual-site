@@ -10,7 +10,7 @@ topics:
 
 Let $(X,\mathcal M,\mu)$ be a measure space.
 The integral is defined first for simple functions, then for nonnegative measurable functions as a supremum over simple functions below them, and then for measurable $f$ with $\int\abs f<\infty$ as $\int f^+-\int f^-$.
-Properties of the integral are proved in the same order, first for simple functions, then for nonnegative functions, then for integrable functions.
+Linearity and monotonicity of the integral are proved in the same order: first for simple functions, then for nonnegative measurable functions, where additivity uses the monotone convergence theorem, then for integrable functions.
 
 ## Measurable and simple functions
 
