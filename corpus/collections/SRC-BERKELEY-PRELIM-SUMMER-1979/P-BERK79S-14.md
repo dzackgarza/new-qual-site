@@ -56,17 +56,17 @@ A
 &\cong
 \prod_{p}
 \prod_{k\geq1}
-\left(C_{p^k}\right)^{a_{p,k}},\\
+\left(\ZZ/p^k\ZZ\right)^{a_{p,k}},\\
 B
 &\cong
 \prod_{p}
 \prod_{k\geq1}
-\left(C_{p^k}\right)^{b_{p,k}},\\
+\left(\ZZ/p^k\ZZ\right)^{b_{p,k}},\\
 C
 &\cong
 \prod_{p}
 \prod_{k\geq1}
-\left(C_{p^k}\right)^{c_{p,k}}.
+\left(\ZZ/p^k\ZZ\right)^{c_{p,k}}.
 \end{aligned}
 $$
 
@@ -74,7 +74,7 @@ $$
 The elementary-divisor form of the fundamental theorem states that every
 finite abelian group is a finite direct product of cyclic groups of
 prime-power order, and that the multiplicity of each cyclic factor
-$C_{p^k}$ is uniquely determined by the isomorphism type of the group.
+$\ZZ/p^k\ZZ$ is uniquely determined by the isomorphism type of the group.
 Apply this theorem separately to $A$, $B$, and $C$.
 :::
 
@@ -82,7 +82,7 @@ Apply this theorem separately to $A$, $B$, and $C$.
 $$
 a_{p,k}+b_{p,k}
 $$
-copies of $C_{p^k}$ for every prime $p$ and every $k\geq1$.
+copies of $\ZZ/p^k\ZZ$ for every prime $p$ and every $k\geq1$.
 
 ::: {.proof}
 Using the decompositions from step <1>1,
@@ -92,16 +92,16 @@ A\times B
 &\cong
 \left(
 \prod_p\prod_{k\geq1}
-(C_{p^k})^{a_{p,k}}
+(\ZZ/p^k\ZZ)^{a_{p,k}}
 \right)
 \times
 \left(
 \prod_p\prod_{k\geq1}
-(C_{p^k})^{b_{p,k}}
+(\ZZ/p^k\ZZ)^{b_{p,k}}
 \right)\\
 &\cong
 \prod_p\prod_{k\geq1}
-(C_{p^k})^{a_{p,k}+b_{p,k}}.
+(\ZZ/p^k\ZZ)^{a_{p,k}+b_{p,k}}.
 \end{aligned}
 $$
 Thus direct product adds the multiplicities of identical elementary
@@ -112,7 +112,7 @@ divisors.
 $$
 a_{p,k}+c_{p,k}
 $$
-copies of $C_{p^k}$ for every prime $p$ and every $k\geq1$.
+copies of $\ZZ/p^k\ZZ$ for every prime $p$ and every $k\geq1$.
 
 ::: {.proof}
 The same calculation as in step <1>2, with $C$ in place of $B$, gives
@@ -120,7 +120,7 @@ $$
 A\times C
 \cong
 \prod_p\prod_{k\geq1}
-(C_{p^k})^{a_{p,k}+c_{p,k}}.
+(\ZZ/p^k\ZZ)^{a_{p,k}+c_{p,k}}.
 $$
 :::
 
