@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YSJOS
 kind: problem
-title: Verifying the building blocks of the nowhere-differentiable function
+title: Secant-quotient bounds for the building blocks of a nowhere-differentiable function
 classification:
   areas:
   - topology
@@ -18,7 +18,7 @@ Check the stated properties of the functions $f$, $g$, and $k$ of Example 1 of Â
 :::
 
 ::: {.solution}
-Write \(I=[0,1]\).  For \(0<h\le 1/2\), Munkres defines \(\Delta f(x,h)\) to be the larger, in absolute value, of the two secant quotients of step \(h\) that are defined at \(x\).
+Write \(I=[0,1]\).  For \(0<h\le 1/2\), let \(\Delta f(x,h)\) be the larger, in absolute value, of the two secant quotients of step \(h\) that are defined at \(x\).
 
 For
 \[
