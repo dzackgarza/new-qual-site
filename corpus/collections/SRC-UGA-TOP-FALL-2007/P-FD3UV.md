@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FD3UV
 kind: problem
-title: Every continuous map $\mathbb{RP}^2\to S^1\times S^1$ is null-homotopic
+title: Every continuous map $\RP^2\to S^1\times S^1$ is null-homotopic
 classification:
   areas:
   - topology
