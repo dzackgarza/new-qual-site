@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-WRMBM
 kind: theorem
 title: 'Sylow''s first theorem: existence of prime-power subgroups'
-slogan: 'Every available $p$-power occurs as a subgroup order, and every $p$-subgroup sits inside a Sylow subgroup.'
+slogan: 'Every power of $p$ dividing $\abs G$ is the order of a subgroup, and every $p$-subgroup lies in a Sylow $p$-subgroup.'
 classification:
   areas:
   - algebra
