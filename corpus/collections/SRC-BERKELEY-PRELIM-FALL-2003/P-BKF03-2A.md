@@ -105,5 +105,5 @@ which is nontrivial.
 Thus $G_5\not\cong G_6$.
 :::
 
-The preceding invariants distinguish all eight groups, so they are pairwise nonisomorphic.
+Steps <1>1--<1>5 distinguish all eight groups, so they are pairwise nonisomorphic.
 :::
