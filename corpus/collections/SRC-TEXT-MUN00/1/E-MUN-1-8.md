@@ -53,5 +53,5 @@ Therefore:
 3&8
 \end{array}
 \]
-The name *power set* reflects precisely this formula: its cardinality is the power \(2^{|A|}\) when \(A\) is finite.
+The name *power set* refers to this formula: its cardinality is the power \(2^{|A|}\) when \(A\) is finite.
 :::
