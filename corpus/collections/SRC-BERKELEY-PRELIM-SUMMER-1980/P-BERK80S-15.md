@@ -37,66 +37,59 @@ Prove that $\dim E_1=\dim E_2$.
 :::
 
 ::: {.solution}
-Let $n=\dim E$ and choose a basis $e_1,\ldots,e_n$ of $E$.
-Let
-\[
+Let $n=\dim E$ and choose a basis $e_1,\ldots,e_n$ of $E$. Let
+$$
 M=(B(e_i,e_j))_{i,j}
-\]
-be the matrix of the bilinear form in this basis.
+$$
+be the matrix of the bilinear form in this basis, and for $x\in E$ let
+$[x]$ be its coordinate column vector.
 
-<1>1. $E_1$ is the kernel of the linear map represented by $M^T$.
+<1>1. $\dim E_1=\nullity(M^T)$.
+
 ::: {.proof}
-Write $x=\sum_i x_i e_i$ and let $[x]$ be its coordinate column vector.
-For each basis vector $e_j$,
-\[
+Write $x=\sum_i x_i e_i$. For each basis vector $e_j$,
+$$
 B(x,e_j)=\sum_i x_i B(e_i,e_j).
-\]
-Thus the column whose $j$th entry is $B(x,e_j)$ is $M^T[x]$.
-Therefore
-\[
+$$
+Thus the column whose $j$th entry is $B(x,e_j)$ is $M^T[x]$. By linearity
+of $B$ in the second variable,
+$$
 x\in E_1
 \iff B(x,e_j)=0\text{ for every }j
 \iff M^T[x]=0.
-\]
-Hence
-\[
-\dim E_1=\nullity(M^T).
-\]
+$$
 :::
 
-<1>2. $E_2$ is the kernel of the linear map represented by $M$.
+<1>2. $\dim E_2=\nullity(M)$.
+
 ::: {.proof}
 For $y=\sum_j y_j e_j$, the column whose $i$th entry is $B(e_i,y)$ is
-\[
-M[y].
-\]
-Hence
-\[
+$M[y]$. By linearity of $B$ in the first variable,
+$$
 y\in E_2
 \iff B(e_i,y)=0\text{ for every }i
-\iff M[y]=0,
-\]
-so
-\[
-\dim E_2=\nullity(M).
-\]
+\iff M[y]=0.
+$$
 :::
 
-<1>3. The two dimensions are equal.
+<1>3. One has
+$$
+\boxed{\dim E_1=\dim E_2}.
+$$
+
 ::: {.proof}
-A matrix and its transpose have the same rank:
-\[
-\operatorname{rank}(M)=\operatorname{rank}(M^T).
-\]
-By rank-nullity,
-\[
+A matrix and its transpose have the same rank, so rank-nullity gives
+$$
 \nullity(M)=n-\operatorname{rank}(M)
 =n-\operatorname{rank}(M^T)
 =\nullity(M^T).
-\]
-Using <1>1 and <1>2 gives
-\[
-\boxed{\dim E_1=\dim E_2}.
-\]
+$$
+Steps <1>1 and <1>2 give the claim.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+Step <1>3 is the required equality.
 :::
 :::
