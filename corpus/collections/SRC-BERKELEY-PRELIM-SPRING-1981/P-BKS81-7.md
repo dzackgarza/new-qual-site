@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS81-7
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}x\sin x/(1+x^2)^2\,dx$
+title: The integral $\int_{-\infty}^{\infty}x\sin x/(1+x^2)^2\,dx$
 classification:
   areas: [prelim]
   topics: []
