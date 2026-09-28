@@ -18,7 +18,7 @@ The polynomial $\begin{array} { r } { p ( x ) = 1 + \frac { 1 } { 2 } ( x - 1 ) 
 :::
 
 ::: {.solution}
-By Problem 4, we have
+By the binomial series ([[P-PRACT20-W3-04]]) with $\alpha = \frac12$,
 
 $$
 \sqrt { 1 + \varepsilon } \approx 1 + \left( \frac { 1 } { 2 } \right) \frac { \varepsilon } { 1 ! } + \left( \frac { 1 } { 2 } \right) \left( - \frac { 1 } { 2 } \right) \frac { \varepsilon ^ { 2 } } { 2 ! } + \left( \frac { 1 } { 2 } \right) \left( - \frac { 1 } { 2 } \right) \left( - \frac { 3 } { 2 } \right) \frac { \varepsilon ^ { 3 } } { 3 ! } = 1 + \frac { \varepsilon } { 2 } - \frac { \varepsilon ^ { 2 } } { 8 } + \frac { \varepsilon ^ { 3 } } { 1 6 }
@@ -30,6 +30,6 @@ $$
 \sqrt { 1 + \varepsilon } - p ( 1 + \varepsilon ) \approx \frac { \varepsilon ^ { 3 } } { 1 6 } .
 $$
 
-Plugging in $\varepsilon = 0 . 0 1$ shows that (A) is the correct answer.
-[Quicker answer: you should note that $p$ is a second order approximation, so the error should be on the order of $\varepsilon ^ { 3 }$ where $\varepsilon = 1 0 ^ { - 2 }$ ; thus answers (B), (C), (D) can be eliminated very easily and all that remains to find the sign of the third derivative of $f ( x ) = { \sqrt { x } }$ at $x = 1 . ]$
+With $\varepsilon = 0.01$ the error is approximately $\frac{1}{16}\times 10^{-6}$, which is (A).
+Alternatively, $p$ is the second-order Taylor polynomial, so the error has order $\varepsilon^3 = 10^{-6}$, which excludes (B), (C), (D); the sign of the error is the sign of the third derivative of $f(x) = \sqrt{x}$ at $x = 1$, which is positive.
 :::
