@@ -67,7 +67,7 @@ and the coefficients $bc$ and $-ad$ are nonzero.
 <2>3. Q.E.D.
 
 ::: {.proof}
-By step <2>1 a basis of $(\QQ,+)$ cannot have exactly one element, and by step <2>2 it cannot have two or more elements.
+A basis of $(\QQ,+)$ is nonempty, since the empty set generates $0\ne\QQ$. By step <2>1 it cannot have exactly one element, and by step <2>2 it cannot have two or more elements.
 :::
 
 <1>3. (c) $(\QQ,+)$ is a torsion-free abelian group that is not free.
