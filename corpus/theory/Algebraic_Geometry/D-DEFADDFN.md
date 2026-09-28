@@ -20,14 +20,15 @@ prompts:
 
 ::: {.definition title="additive functor"}
 A covariant functor $F: \mca \to \mcb$ between abelian categories is \dfn{additive} if the induced map
-\[
+$$
 \Hom_{\mca}(A, A') \to \Hom_{\mcb}(F(A), F(A'))
-\]
+$$
 is a homomorphism of abelian groups, that is, $F(f+g) = F(f) + F(g)$ for all $f, g \in \Hom(A,A')$.
 :::
 
 ::: {.remark}
-Additivity is the minimum hypothesis under which $F$ carries a complex to a complex: it is what gives $F(\delta^{i+1}) \circ F(\delta^i) = F(\delta^{i+1}\circ \delta^i) = F(0) = 0$.
-Without it there is nothing to take cohomology of, so every statement about derived functors, $\delta$-functors, and the FHHF theorem silently assumes it.
-An additive functor also automatically preserves finite biproducts.
+An additive functor sends zero morphisms to zero morphisms, so it carries a complex to a complex: $F(\delta^{i+1}) \circ F(\delta^i) = F(\delta^{i+1}\circ \delta^i) = F(0) = 0$.
+If $f-g=\delta h+h\delta$ is a homotopy of morphisms of complexes, then additivity gives $F(f)-F(g)=F(\delta)F(h)+F(h)F(\delta)$, so $F$ carries homotopic morphisms to homotopic morphisms.
+Since any two injective resolutions of an object are homotopy equivalent, $R^iF$ is well defined up to canonical isomorphism for additive $F$.
+An additive functor also preserves finite biproducts.
 :::
