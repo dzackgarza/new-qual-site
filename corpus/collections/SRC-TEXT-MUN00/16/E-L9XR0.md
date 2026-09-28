@@ -30,13 +30,17 @@ In each case it is a familiar topology.
 :::
 
 ::: {.solution}
-Parametrize a nonvertical line $L$ by its first coordinate $x$.
+Parametrize a nonvertical line $L=\{(x,mx+k):x\in\mathbb R\}$ by its first coordinate $x$, and a vertical line by its second coordinate.
 
 For $\mathbb R_\ell\times\mathbb R$, a basic rectangle is
 \[
 [a,b)\times(c,d).
 \]
-If $L$ is vertical, intersection with such rectangles gives ordinary open intervals in the second coordinate, so the induced topology is the standard topology on $\mathbb R$. If $L$ is nonvertical (including horizontal lines), the first-coordinate condition supplies a left-closed interval $[x_0,x_0+\varepsilon)$, while the second-coordinate condition only shortens it by an ordinary open condition. These intersections generate exactly the lower-limit topology. Hence
+If $L$ is vertical, intersection with such rectangles gives ordinary open intervals in the second coordinate, so the induced topology is the standard topology on $\mathbb R$. If $L$ is nonvertical (including horizontal lines), the trace of $[a,b)\times(c,d)$ on $L$ is
+\[
+\{x\in[a,b):mx+k\in(c,d)\},
+\]
+the intersection of $[a,b)$ with a standard open set, hence open in $\mathbb R_\ell$. Conversely, $[x_0,x_0+\varepsilon)$ is the trace of $[x_0,x_0+\varepsilon)\times(c,d)$ for any open interval $(c,d)$ containing $\{mx+k:x_0\le x\le x_0+\varepsilon\}$. So the induced topology is the lower-limit topology. Hence
 \[
 L\cong
 \begin{cases}
@@ -49,7 +53,11 @@ For $\mathbb R_\ell\times\mathbb R_\ell$, basic rectangles are
 \[
 [a,b)\times[c,d).
 \]
-A vertical or horizontal line inherits $\mathbb R_\ell$. A line of positive slope also inherits $\mathbb R_\ell$: near a point, the two left-endpoint conditions point in the same parameter direction and give half-open intervals $[x_0,x_0+\varepsilon)$. A line of negative slope is discrete. Indeed, at $(x_0,y_0)$ on such a line, for sufficiently small $\varepsilon,\delta>0$ the rectangle
+A vertical or horizontal line inherits $\mathbb R_\ell$. A line of positive slope $m$ also inherits $\mathbb R_\ell$: the trace of $[a,b)\times[c,d)$ is
+\[
+[a,b)\cap\Bigl[\tfrac{c-k}{m},\tfrac{d-k}{m}\Bigr),
+\]
+a half-open interval, and $[x_0,x_0+\varepsilon)$ is the trace of $[x_0,x_0+\varepsilon)\times[mx_0+k,\,mx_0+k+m\varepsilon)$. A line of negative slope is discrete. Indeed, at $(x_0,y_0)$ on such a line, for sufficiently small $\varepsilon,\delta>0$ the rectangle
 \[
 [x_0,x_0+\varepsilon)\times[y_0,y_0+\delta)
 \]
