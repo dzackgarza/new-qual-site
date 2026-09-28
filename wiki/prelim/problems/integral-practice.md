@@ -124,7 +124,7 @@ since $\frac {\sin ^2 (2x)}{1 + \cos (2x)} = \frac {1 - \cos ^2 (2x)}{1 + \cos (
 ### Odd functions
 
 ::: {.example}
-The integrands below are odd, so
+The functions $e^{-x^2}\sin x$ and $\sin^5(x^3) + \sin^3(x^5) + x$ are odd, so
 $$
 \int_{-\pi}^{\pi} e^{-x^2}\sin x \dx = 0, \qquad \int_{-1729}^{1729} \left(\sin^5(x^3) + \sin^3(x^5) + x\right)\dx = 0.
 $$
