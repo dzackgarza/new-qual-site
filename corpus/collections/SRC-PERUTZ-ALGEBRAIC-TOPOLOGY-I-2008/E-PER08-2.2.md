@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PER08-2.2
 kind: problem
-title: Polar decomposition and the topology of SL_2(C)
+title: Polar decomposition and the topology of $\operatorname{SL}_2(\CC)$
 classification:
   areas: [topology]
   topics: []
