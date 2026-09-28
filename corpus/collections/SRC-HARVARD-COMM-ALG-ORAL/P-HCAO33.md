@@ -33,14 +33,14 @@ Define an integral ring extension and state its principal properties.
 ::: {.solution}
 Let \(A\subseteq B\) be rings.
 
-<1>1. An element \(b\in B\) is **integral over \(A\)** if it satisfies a monic
+<1>1. An element \(b\in B\) is \dfn{integral over \(A\)} if it satisfies a monic
 polynomial
 \[
 b^n+a_{n-1}b^{n-1}+\cdots+a_0=0,
 \qquad a_i\in A.
 \]
-The extension \(B/A\) is integral if every element of \(B\) is integral over
-\(A\).
+The extension \(B/A\) is \dfn{integral} if every element of \(B\) is integral
+over \(A\).
 ::: {.proof}
 This is the definition.
 :::
