@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-18
 kind: problem
-title: Linear independence forced by a cyclic action relation
+title: Linear independence of $x,Tx,T^2x$ when $T^3x=Tx+x$ over $\QQ$
 classification:
   areas: [prelim]
   topics: []
