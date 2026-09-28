@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-QHIHJ
 kind: theorem
 title: Liouville's theorem
-slogan: 'A bounded entire function has nowhere to grow, so it is constant.'
+slogan: 'If $\abs{f}\le M$ on $\CC$, the Cauchy estimate on $\abs{z-z_0}=R$ gives $\abs{f''(z_0)}\le M/R\to0$, so $f$ is constant.'
 classification:
   areas:
   - complex-analysis
