@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-9A
 kind: problem
-title: UC Berkeley Spring 2004 prelim 9A
+title: $(f(x)-f(y)).(x-y)\le L|x-y|^2$ for all $x,y$ iff $Df(x)v.v\le L|v|^2$ for all $x,v$
 classification:
   areas: [prelim]
   topics: []
@@ -20,42 +20,50 @@ audit:
 ---
 
 ::: {.problem}
-Let $f \colon  { \mathbb { R } } ^ { n } \to  { \mathbb { R } } ^ { n }$ be a differentiable function, and let L be a nonnegative real number.
+Let $f\colon\RR^n\to\RR^n$ be a differentiable function, and let $L$ be a nonnegative real number.
 Prove that the following are equivalent:
 
-(i) For every $x , y \in \mathbb { R } ^ { n }$
+(i) For every $x,y\in\RR^n$,
 
 $$
-( f ( x ) - f ( y ) ) . ( x - y ) \leq L | x - y | ^ { 2 }
+(f(x)-f(y)).(x-y)\leq L\abs{x-y}^2
 $$
 
-(ii) For every $x , v \in \mathbb { R } ^ { n }$
+(ii) For every $x,v\in\RR^n$,
 
 $$
-D f ( x ) v . v \leq L | v | ^ { 2 } ,
+Df(x)v.v\leq L\abs{v}^2,
 $$
 
-where $D f ( x )$ is the derivative of f at x, and . denotes the standard inner product of vectors in $\mathbb { R } ^ { n }$
+where $Df(x)$ is the derivative of $f$ at $x$, and $.$ denotes the standard inner product of vectors in $\RR^n$.
 :::
 
 ::: {.solution}
-(i) =⇒ (ii): Let $x = y + t v$ . Then (i) says
+(i) $\Longrightarrow$ (ii): Let $x=y+tv$. Then (i) says
 
 $$
-t ( f ( y + t v ) - f ( y ) ) . v \leq L t ^ { 2 } | v | ^ { 2 } .
+t(f(y+tv)-f(y)).v\leq Lt^2\abs{v}^2.
 $$
 
-Divide by $t ^ { 2 }$ and take the limit as $t \longrightarrow 0$ to deduce $D f ( y ) v . v \leq L | v | ^ { 2 }$
+Divide by $t^2$ and take the limit as $t\to0$ to deduce $Df(y)v.v\leq L\abs{v}^2$.
 
-(ii) =⇒ (i): Let $\phi ( t ) = f ( y + t ( x - y ) )$ for $t \in \mathbb { R }$ . Then
+(ii) $\Longrightarrow$ (i): Let $\phi(t)=f(y+t(x-y))$ for $t\in\RR$. Then
 
 $$
-{ \begin{array} { r l } { f ( x ) - f ( y ) = \phi ( 1 ) - \phi ( 0 ) \qquad } & { } \\ { \qquad = \displaystyle \int _ { 0 } ^ { 1 } \phi ^ { \prime } ( t ) d t } \\ { \qquad = \displaystyle \int _ { 0 } ^ { 1 } D f ( y + t ( x - y ) ) ( x - y ) d t \qquad } & { { \mathrm { ( b y ~ t h e ~ C h a i n ~ R u l e ) } } . } \end{array} }
+\begin{aligned}
+f(x)-f(y)&=\phi(1)-\phi(0)\\
+&=\int_0^1\phi'(t)\,dt\\
+&=\int_0^1Df(y+t(x-y))(x-y)\,dt&&\text{(by the chain rule)},
+\end{aligned}
 $$
 
 so
 
 $$
-\begin{array} { l l l } { ( f ( x ) - f ( y ) ) . ( x - y ) = \displaystyle \int _ { 0 } ^ { 1 } D f ( y + t ( x - y ) ) ( x - y ) . ( x - y ) d t } \\ { \displaystyle \qquad \leq \displaystyle \int _ { 0 } ^ { 1 } L | x - y | ^ { 2 } d t } \\ { \displaystyle \qquad = L | x - y | ^ { 2 } . } \end{array}\tag{by (ii)}
+\begin{aligned}
+(f(x)-f(y)).(x-y)&=\int_0^1Df(y+t(x-y))(x-y).(x-y)\,dt\\
+&\leq\int_0^1L\abs{x-y}^2\,dt&&\text{(by (ii))}\\
+&=L\abs{x-y}^2.
+\end{aligned}
 $$
 :::
