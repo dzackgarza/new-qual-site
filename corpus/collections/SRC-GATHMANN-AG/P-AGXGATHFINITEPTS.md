@@ -85,7 +85,7 @@ If some other point were in $V(f_i)$, then one of its coordinates would be anoth
 :::
 
 ::: {.remark}
-Erratum: the source argument has three gaps, retained above as written.
+Erratum: the solution has three gaps.
 
 - The reduction to distinct first coordinates is asserted without the coordinate change it needs. Since $X$ is finite and $k$ is infinite, a linear change of coordinates on $\AA^n$ makes the $x_1$-coordinates of the $\mathbf{p}_j$ pairwise distinct, and a linear change of coordinates carries zero loci of $n$ polynomials to zero loci of $n$ polynomials.
 - The interpolating polynomial through $d$ points with distinct $x_i$ has degree at most $d-1$, not $d$; the product in the Lagrange formula runs over $1\leq m\leq d$, and the sentence beginning "Equivalently" does not define a polynomial.
