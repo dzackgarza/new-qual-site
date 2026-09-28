@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF82-9
 kind: problem
-title: An integral inequality for a nonnegative function
+title: $f(t)^2\le1+2\int_0^tf$ implies $f(t)\le1+t$
 classification:
   areas:
   - prelim
