@@ -89,7 +89,7 @@ eigenvector is a nonzero scalar multiple of
 $$
 (1,\lambda,\lambda^2,\ldots).
 $$
-Conversely, this geometric sequence plainly satisfies
+Conversely, this geometric sequence satisfies $a_{n+1}=\lambda a_n$, so
 $$
 T(a)=\lambda a.
 $$
