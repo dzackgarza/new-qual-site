@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH4-01
 kind: problem
-title: Initial-value problem for dy/dx=x^2/(x^2+1)
+title: Initial-value problem for $dy/dx=x^2/(x^2+1)$
 classification:
   areas:
   - real-analysis
