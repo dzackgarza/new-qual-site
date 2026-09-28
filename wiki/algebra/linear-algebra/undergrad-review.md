@@ -42,7 +42,7 @@ Since $\tr(AB) = \tr(BA)$, similar matrices have equal traces: $\tr(PJP\inv) = \
 :::
 
 ::: {.fact title="Block multiplication"}
-For block matrices whose block sizes make each product below defined,
+For block matrices whose block sizes make the products $AE$, $BG$, $AF$, $BH$, $CE$, $DG$, $CF$, $DH$ defined,
 $$
 \begin{bmatrix}
 A & B \\
