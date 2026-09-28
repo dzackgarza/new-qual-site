@@ -21,9 +21,9 @@ topics:
 - the Möbius band $\bbm$;
 - the closed orientable surface of genus $g$, $\Sigma_g \coloneqq \#_{i=1}^g \TT^2$.
 
-The first four are quotients of a square by the edge identifications in the following pasting diagrams:
+The Möbius band, the annulus $S^1\cross I$, $\TT^2$, $\KK$, and $\RP^2$ are quotients of a square by the edge identifications in these pasting diagrams:
 
-![Pasting diagrams for $\SS^2$, $\TT^2$, $\RP^2$, and $\KK$](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
+![Pasting diagrams for the Möbius band, the annulus, $\TT^2$, $\KK$, and $\RP^2$](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
 
 :::
 
