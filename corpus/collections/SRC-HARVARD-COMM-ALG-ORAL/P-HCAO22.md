@@ -72,13 +72,11 @@ of a strict chain of primes in an integral extension remains strict. Hence
 A Noetherian, integrally closed domain of dimension $1$ is a Dedekind domain.
 Apply <1>1--<1>3.
 :::
-
-<1>5. The conclusion does not assert that $\widetilde R$ is finite as an
-$R$-module.
-::: {.proof}
-Krull--Akizuki proves Noetherianity of the intermediate ring; module-finiteness
-of normalization requires additional hypotheses and can fail for
-one-dimensional Noetherian domains. Thus Noetherianity and module-finiteness
-must not be conflated here.
 :::
+
+::: {.remark}
+The ring $\widetilde R$ need not be a finite $R$-module: there are
+one-dimensional Noetherian local domains whose integral closure is not
+module-finite over them. If $R$ is a finitely generated algebra over a field,
+then $\widetilde R$ is a finite $R$-module.
 :::
