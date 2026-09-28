@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-FZERI
 kind: theorem
 title: Rouché's theorem
-slogan: 'If two holomorphic boundary values remain sufficiently close, they enclose the same number of zeros.'
+slogan: 'If $\abs{f-g}<\abs{f}+\abs{g}$ on the boundary circle, then $f$ and $g$ have the same number of zeros in the disc.'
 prompts:
 - What does Rouche's theorem conclude about the zero counts of $f$ and $g$?
 classification:
