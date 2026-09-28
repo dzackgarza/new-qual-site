@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-TOK44
 kind: proposition
 title: Root test for power series
-slogan: 'Coefficient root growth sets the convergence disk: inside converges, outside diverges.'
+slogan: 'With $1/R=\limsup\abs{a_n}^{1/n}$, the series $\sum a_n(z-z_0)^n$ converges absolutely for $\abs{z-z_0}<R$ and diverges for $\abs{z-z_0}>R$.'
 classification:
   areas:
   - complex-analysis
