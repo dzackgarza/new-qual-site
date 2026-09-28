@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS5-P6
 kind: problem
-title: Apply Seifert--van Kampen to a wedge sum and identify a presentation complex as a wedge of familiar spaces
+title: Fundamental group of a wedge sum, and the presentation complex of $\langle a,b,c\mid a^2\rangle$
 classification:
   areas:
   - topology
