@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-05
 kind: problem
-title: Two-sided ideals of the upper-triangular two-by-two real matrix ring
+title: Two-sided ideals of the ring of upper-triangular real $2\times2$ matrices
 classification:
   areas:
   - prelim
