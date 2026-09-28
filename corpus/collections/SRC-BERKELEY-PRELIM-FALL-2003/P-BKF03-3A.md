@@ -47,8 +47,8 @@ Since $A^nv\to0$ and $v\ne0$, one must have $\lambda^n\to0$.
 This is equivalent to $|\lambda|<1$.
 :::
 
-<1>2. Suppose every eigenvalue of $A$ has modulus less than $1$.
-Reduce $A$ to Jordan normal form.
+<1>2. Let $A=SJS^{-1}$ with $J$ a Jordan normal form of $A$.
+If $\sum_{n=0}^\infty J^n$ converges, then $\sum_{n=0}^\infty A^n$ converges.
 ::: {.proof}
 There is an invertible matrix $S$ such that
 \[
