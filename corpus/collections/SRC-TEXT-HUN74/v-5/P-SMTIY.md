@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SMTIY
 kind: problem
-title: Hungerford 5.5.3
+title: Unique $p$th roots in a field of order $p^n$
 classification:
   areas:
   - algebra
@@ -23,43 +23,21 @@ Show that if $|K| = p^n$, then every element of $K$ has a unique $p$th root in $
 :::
 
 ::: {.solution}
-<1>1. $K$ is a finite field of characteristic $p$ (since $|K| = p^n$).
+<1>1. The Frobenius map $\varphi\colon K \to K$, $\varphi(x) = x^p$, is an injective ring homomorphism.
+
 ::: {.proof}
-a finite field of order $p^n$ has characteristic $p$.
+The field $K$ has order $p^n$, so its prime field is $\FF_p$ and $\operatorname{char}K=p$. Hence $p$ divides $\binom pk$ for $0<k<p$, so $(x + y)^p = x^p + y^p$; also $(xy)^p = x^p y^p$ and $1^p=1$. The kernel of a ring homomorphism out of a field is an ideal not containing $1$, hence $0$.
 :::
 
-<1>2. The Frobenius map $\varphi : K \to K$, $\varphi(x) = x^p$, is a field homomorphism.
+<1>2. $\varphi$ is bijective.
+
 ::: {.proof}
-$(x + y)^p = x^p + y^p$ in characteristic $p$ (freshman's dream), and $(xy)^p = x^p y^p$.
+By step <1>1, $\varphi$ is an injective map from the finite set $K$ to itself, hence surjective.
 :::
 
-<1>3. $\varphi$ is injective (it is a field homomorphism, so its kernel is an ideal, hence $0$).
-::: {.proof}
-<1>2 (a nonzero field homomorphism is injective).
-:::
+<1>3. Q.E.D.
 
-<1>4. Since $K$ is finite, $\varphi$ is surjective (an injective map from a finite set to itself is bijective).
 ::: {.proof}
-<1>3 and finiteness.
-:::
-
-<1>5. Hence every element $a \in K$ has a $p$th root: there is $x \in K$ with $x^p = a$.
-::: {.proof}
-<1>4 (surjectivity of $\varphi$).
-:::
-
-<1>6. The root is unique: if $x^p = y^p$, then $(x - y)^p = x^p - y^p = 0$, so $x - y = 0$ (since $K$ is a field, hence an integral domain), i.e. $x = y$.
-::: {.proof}
-<1>2 and the domain property.
-:::
-
-<1>7. Hence every element of $K$ has a unique $p$th root.
-::: {.proof}
-<1>5 and <1>6.
-:::
-
-<1>8. Q.E.D.
-::: {.proof}
-<1>7.
+By step <1>2, for every $a\in K$ there is exactly one $x\in K$ with $x^p=\varphi(x)=a$.
 :::
 :::
