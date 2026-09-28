@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRELIM82S-11
 kind: problem
-title: Determine $s(y)$ and $t(y)$ from analyticity of $e^x(s(y)+it(y))$
+title: Entire functions of the form $e^x(s(y)+it(y))$
 classification:
   areas:
   - prelim
