@@ -122,6 +122,6 @@ satisfies the printed hypothesis because
 $$
 1<\sqrt{10}<\abs{z}^{1/2}
 $$
-whenever $\abs{z}>10$. The printed growth bound forces constancy, as proved
-above, but it does not force the constant to be zero.
+whenever $\abs{z}>10$. The printed growth bound forces constancy by
+step <1>3 of the solution, but it does not force the constant to be zero.
 :::
