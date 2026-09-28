@@ -10,18 +10,9 @@ topics:
 
 # Special divisors and the canonical map
 
-Riemann--Roch is an equation with an unknown in it.
-The unknown is $\ell(K-D)$, and everything interesting about a curve is hidden there.
-
 [[D-CRVSPEC]]
 
-Once $\deg D > 2g-2$ the unknown vanishes and $\ell(D)$ is a formula.
-Below that threshold Riemann--Roch gives only an inequality, and the divisors that make the inequality strict are the ones that carry geometry.
-
 [[T-CRVCLIFF]]
-
-Clifford supplies the missing upper bound, and its equality cases name the only curves with unusually large special systems.
-The extremal case is hyperelliptic.
 
 ## Counting maps to $\PP^1$
 
@@ -31,19 +22,20 @@ In $g^r_d$ notation, a $g^1_2$ is a degree-two map to $\PP^1$, a $g^1_3$ makes t
 
 [[D-CRVHYP]]
 
-The hyperelliptic case is the exception in the statement of almost every theorem here, and it is always the same picture underneath: the canonical map is two-to-one onto a rational normal curve rather than an embedding.
+For a hyperelliptic curve $C$ of genus $g\ge2$ with double cover $\pi\colon C\to\PP^1$, the canonical map is $\pi$ followed by the degree-$(g-1)$ Veronese embedding $\PP^1\to\PP^{g-1}$: it has degree two onto a rational normal curve.
 
 ## Low-genus canonical models
 
 [[FE-CRVLOWG]]
 
-Genus $3$ is the plane quartic, genus $4$ is the intersection of a quadric and a cubic in $\PP^3$, and genus $2$ has no canonical embedding at all because every such curve is hyperelliptic.
+A non-hyperelliptic curve of genus $3$ is canonically a smooth plane quartic, and one of genus $4$ is canonically the intersection of a quadric and a cubic in $\PP^3$.
+Every curve of genus $2$ is hyperelliptic, so none has a canonical embedding.
 
-## What the canonical class rules out
+## Complete intersections are not hyperelliptic
 
 [[PR-CRVHYPCI]]
 
-Genus $4$ is the case to hold next to this one: the canonical curve there *is* a complete intersection, and the formula $\omega_C \cong \OO_C(\sum d_i - n - 1)$ is what makes both statements the same computation.
+The canonical curve of genus $4$ is the complete intersection of a quadric and a cubic in $\PP^3$, with $\omega_C\cong\OO_C(2+3-3-1)=\OO_C(1)$.
 
 ## Brill--Noether theory
 
