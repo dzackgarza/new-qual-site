@@ -48,10 +48,15 @@ So $\chi(g) = c_1+\cdots+c_n$, and by the triangle inequality $|c_1+\cdots+c_n| 
 
 Now $\chi(g)=\chi(1) \iff c_1+\cdots+c_n = n \iff c_1=\cdots=c_n=1 \iff \rho(g)=I \iff g\in\ker\rho$.
 
-**(b)** Note $\alpha,\beta$ are real: by definition of the inner product, $(\chi_2\chi_2^*,\chi_1) = (\chi_2,\chi_2) = 1$.
-So $\chi_2\chi_2^* - \chi_1$ is a character of degree 3 with no trivial constituents, so could only be $\chi_4$ or $\chi_5$ (using $\delta\ne1$, else what's $\chi_2\chi_9$?). Also real-valued, so $\alpha,\beta$ are real as values of $\chi_4/\chi_5$.
+**(b)** Column orthogonality of $C_1$ and $C_2$ gives
+$$1-4-4+9+9-16+16+25-\delta^2=0,$$
+so $\delta^2=36$ and $\delta=6$.
 
-Dot columns together using this to see: $$0 = C_1\cdot C_2 \Rightarrow \delta^2 = 36 \Rightarrow \delta=6,\ \gamma=0$$ $$0 = C_4\cdot C_7 \Rightarrow 2\gamma = 0$$ $$0 = C_4\cdot C_5 \Rightarrow \alpha+\beta=1$$ $$0 = C_8\cdot C_9 \Rightarrow \alpha\beta=-1$$ so $\alpha,\beta$ are roots of $x^2-x-1$, giving $\alpha,\beta = \dfrac{1\pm\sqrt5}{2}$.
+The character $\psi=\chi_2\overline{\chi_2}-\chi_1$ is real-valued, has degree $3$, and satisfies $(\psi,\chi_1)=(\chi_2,\chi_2)-1=0$. With $\delta=6$, the only irreducible characters of degree at most $3$ other than $\chi_1$ are $\chi_2,\chi_3$ (degree $2$) and $\chi_4,\chi_5$ (degree $3$), and $\chi_1$ is the only one of degree $1$. Hence $\psi\in\{\chi_4,\chi_5\}$. Each of $\chi_4,\chi_5$ takes both values $\alpha$ and $\beta$, so $\alpha,\beta\in\RR$.
+
+Column orthogonality now gives
+$$0 = C_4\cdot C_7 = 4\gamma,\qquad 0 = C_4\cdot C_5 = 1-(\alpha+\beta),\qquad 0 = C_8\cdot C_9 = 4+4\alpha\beta,$$
+where the first uses nothing about $\alpha,\beta$ and the last two use $\gamma=0$. So $\gamma=0$, and $\alpha,\beta$ are the roots of $x^2-x-1$, giving $\alpha,\beta = \dfrac{1\pm\sqrt5}{2}$.
 
 **(c)** $Z(G) =$ union of classes of size $1$.
 So $Z(G) = C_1 \cup C_2$, size $2$, while $|G|=120$.
@@ -71,7 +76,6 @@ Classes in $G/Z(G)$ are either images of $1$ or $2$ classes in $G$:
 
 The group $H$ is simple of order $60$, hence $H\cong A_5$.
 
-The character table shows $H$ has no nontrivial proper normal subgroup, since a normal subgroup would be a union of conjugacy classes whose size divides $60$ and whose character-theoretic kernel is nontrivial; checking the class sizes $\{1, 1, 20, 12, 12\}$ (after merging under $Z(G)$) shows no such union forms a subgroup.
-Hence $H$ is simple of order $60$.
-The only simple group of order $60$ is $A_5$ (a standard classification: a simple group of order $60$ has $n_2 \in \{5, 15\}$ and $n_5 = 6$, forcing it to act faithfully on $5$ Sylow $2$-subgroups or $6$ Sylow $5$-subgroups, embedding it in $S_5$; the only simple subgroup of $S_5$ of order $60$ is $A_5$).
+The conjugacy classes of $H$ have sizes $1, 20, 15, 12, 12$ (each merged pair, and $C_4$, has half the total size in $G$). A normal subgroup of $H$ is a union of conjugacy classes containing the identity class, and its order divides $60$. No sum of $1$ with a nonempty proper subcollection of $\{20,15,12,12\}$ divides $60$, so $H$ has no nontrivial proper normal subgroup.
+Hence $H$ is simple of order $60$, and every simple group of order $60$ is isomorphic to $A_5$.
 :::
