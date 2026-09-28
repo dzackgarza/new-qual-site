@@ -25,7 +25,8 @@ onto $\pi_1(X, x_0)$ from the [[D-WSFYS|free product with amalgamation]], which 
 :::
 
 ::: {.proposition}
-In the situation of the theorem, suppose
+Let $X = U_1\union U_2$, where $U_1$, $U_2$ and $U_1\intersect U_2$ are open, path-connected and nonempty, let $x_0\in U_1\intersect U_2$, and let $\iota_k\colon \pi_1(U_1\intersect U_2, x_0)\to\pi_1(U_k, x_0)$, $k = 1, 2$, be induced by the inclusions.
+Suppose
 $$
 \pi_{1}(U_1, x_0) = \left\langle u_{1}, \ldots, u_{k} \suchthat \alpha_{1}, \ldots, \alpha_{l}\right\rangle, \qquad
 \pi_{1}(U_2, x_0) = \left\langle v_{1}, \ldots, v_{m} \suchthat \beta_{1}, \ldots, \beta_{n}\right\rangle,
