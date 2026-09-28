@@ -60,7 +60,7 @@ For $P\in\Syl_p(G)$,
 $$
 n_p \equiv 1 \pmod p, \qquad n_p \divides m, \qquad n_p = [G : N_G(P)].
 $$
-The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$, and it expresses $n_p$ as the index of a subgroup.
+The equality $n_p = [G : N_G(P)]$ is orbit-stabilizer for the transitive conjugation action of $G$ on $\Syl_p(G)$.
 The congruence follows from the conjugation action of $P$ on $\Syl_p(G)$: its only fixed point is $P$, and every other orbit has size divisible by $p$.
 :::
 
