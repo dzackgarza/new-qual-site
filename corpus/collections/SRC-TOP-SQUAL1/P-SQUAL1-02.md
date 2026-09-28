@@ -15,9 +15,5 @@ audit:
 ::: {.problem}
 Let $A,B$ be disjoint compact subsets of a Hausdorff space $X$.
 Show that there are disjoint open sets $U,V\subseteq X$ such that
-\[
-A\subseteq U,
-\qquad
-B\subseteq V.
-\]
+$$A\subseteq U,\qquad B\subseteq V.$$
 :::
