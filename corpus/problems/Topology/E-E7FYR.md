@@ -21,9 +21,9 @@ review: draft
 :::
 
 ::: {.remark}
-The conditions are equivalent when $X$ is second countable and Hausdorff, or metrizable; see [E-YAEMZ](E-YAEMZ.md).
+The conditions are equivalent when $X$ is second countable and Hausdorff, or metrizable; see [[E-YAEMZ]].
 :::
 
 ::: {.solution}
-The proof is given in [E-YAEMZ](E-YAEMZ.md), together with the equivalence to sequential compactness.
+The proof is given in [[E-YAEMZ]], together with the equivalence to sequential compactness.
 :::

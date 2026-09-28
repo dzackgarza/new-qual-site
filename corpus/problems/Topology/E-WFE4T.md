@@ -19,9 +19,9 @@ review: draft
 :::
 
 ::: {.remark}
-For second-countable Hausdorff spaces and metric spaces, this condition is equivalent to compactness; see [E-YAEMZ](E-YAEMZ.md).
+For second-countable Hausdorff spaces and metric spaces, this condition is equivalent to compactness; see [[E-YAEMZ]].
 :::
 
 ::: {.solution}
-The equivalence with compactness and limit-point compactness is proved in [E-YAEMZ](E-YAEMZ.md).
+The equivalence with compactness and limit-point compactness is proved in [[E-YAEMZ]].
 :::

@@ -49,5 +49,5 @@ And so we find $H_*(\RP^2) = \ZZ \delta_0 + \ZZ_2\delta_1$
 :::
 
 ::: {.solution}
-For a cellular computation of $H_*(\mathbb{RP}^2)$, see [P-557LL](P-557LL.md).
+For a cellular computation of $H_*(\mathbb{RP}^2)$, see [[P-557LL]].
 :::
