@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF92-3
 kind: problem
-title: Count disk and real roots of $2z^5+4z^2+1$
+title: Roots of $2z^5+4z^2+1$ in the unit disk and on the real axis
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
