@@ -56,7 +56,6 @@ H_{k-1}(U\cap V)
 whenever $X=U\cup V$ is an open cover.
 ::: {.proof}
 Here $i:U\cap V\hookrightarrow U$ and $j:U\cap V\hookrightarrow V$ are the inclusions.
-This is the homological Mayer--Vietoris theorem requested in part (a).
 :::
 
 <1>2. For the space in part (b), Mayer--Vietoris may be computed using
