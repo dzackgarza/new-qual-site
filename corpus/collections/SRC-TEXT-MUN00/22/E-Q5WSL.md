@@ -33,47 +33,36 @@ Show that the following are topological groups:
 :::
 
 ::: {.solution}
-<1>1. A topological group is a group $G$ with a topology such that the multiplication $G \times G \to G$ and inversion $G \to G$ are continuous.
+Each of the five spaces is a subspace of some $\RR^k$, hence $T_1$, and each is a group under the stated operation; it remains to show that multiplication and inversion are continuous.
+
+<1>1. (a) $(\ZZ,+)$ is a topological group.
+
 ::: {.proof}
-definition.
+The subspace topology on $\ZZ\subseteq\RR$ is discrete, so $\ZZ\times\ZZ$ is discrete and every map out of $\ZZ$ or $\ZZ\times\ZZ$ is continuous.
 :::
 
-<1>2. (a) $(\ZZ, +)$ is a topological group.
+<1>2. (b), (c) $(\RR,+)$ and $(\RR_+,\cdot)$ are topological groups.
+
 ::: {.proof}
-$\ZZ$ has the discrete topology, so addition and negation are automatically continuous.
+Addition, negation, multiplication, and $x\mapsto1/x$ on $(0,\infty)$ are continuous by [[E-YTG4V]].
 :::
 
-<1>3. (b) $(\RR, +)$ is a topological group.
+<1>3. (d) $(S^1,\cdot)$ is a topological group.
+
 ::: {.proof}
-addition $(x,y) \mapsto x+y$ and negation $x \mapsto -x$ are continuous functions on $\RR$.
+Complex multiplication $(z,w)\mapsto zw$ and conjugation $z\mapsto\bar z$ are continuous on $\CC=\RR^2$, being polynomial in the real coordinates, and on $S^1$ the inverse is $z^{-1}=\bar z$; restrictions to $S^1$ are continuous.
 :::
 
-<1>4. (c) $(\RR_+, \cdot)$ is a topological group.
+<1>4. (e) $\mathrm{GL}(n)$ is a topological group.
+
 ::: {.proof}
-multiplication $(x,y) \mapsto xy$ and inversion $x \mapsto 1/x$ are continuous on $\RR_+ = (0, \infty)$.
+Each entry of $AB$ is a polynomial in the entries of $A$ and $B$, so multiplication is continuous.
+By Cramer's rule each entry of $A^{-1}$ is a polynomial in the entries of $A$ divided by $\det A\ne0$, so inversion is continuous on $\mathrm{GL}(n)$.
 :::
 
-<1>5. (d) $(S^1, \cdot)$ is a topological group.
-::: {.proof}
-$S^1 = \{z : |z| = 1\}$ is a subgroup of $\CC^\times$; multiplication $(z,w) \mapsto zw$ and inversion $z \mapsto 1/z = \bar z$ are continuous (restrictions of continuous maps on $\CC$).
-:::
+<1>5. Q.E.D.
 
-<1>6. (e) $\mathrm{GL}(n)$ is a topological group.
-<2>1. Matrix multiplication $(A, B) \mapsto AB$ is continuous.
 ::: {.proof}
-each entry of $AB$ is a polynomial in the entries of $A$ and $B$, hence continuous.
-:::
-<2>2. Inversion $A \mapsto A^{-1}$ is continuous.
-::: {.proof}
-by Cramer's rule, the entries of $A^{-1}$ are rational functions of the entries of $A$ with denominator $\det A \neq 0$, hence continuous on $\mathrm{GL}(n)$.
-:::
-<2>3. Hence $\mathrm{GL}(n)$ is a topological group.
-::: {.proof}
-<2>1 and <2>2.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>2–<1>6.
+Steps <1>1 through <1>4 treat (a) through (e).
 :::
 :::
