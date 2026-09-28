@@ -26,21 +26,20 @@ prompts:
 ::: {.definition title="Tor"}
 For an $A$-module $M$, the functors $\Tor^A_i(M,\wait)$, $i \geq 0$, are the left derived functors of the right exact functor $M \tensor_A \wait$.
 A short exact sequence $0 \to N' \to N \to N'' \to 0$ induces a long exact sequence
-\[
+$$
 \cdots \to \Tor^A_{i+1}(M, N'') \to \Tor^A_i(M,N') \to \Tor^A_i(M,N) \to \Tor^A_i(M,N'') \to \Tor^A_{i-1}(M,N') \to \cdots
-\]
+$$
 terminating in
-\[
+$$
 \Tor^A_1(M,N'') \to M\tensor_A N' \to M \tensor_A N \to M \tensor_A N'' \to 0 ,
-\]
+$$
 so that $\Tor^A_0(M,N) \cong M \tensor_A N$.
 :::
 
 ::: {.remark}
 $\Tor_1^A(M,N)$ vanishing for all $N$ is equivalent to $\Tor_i^A(M,N)$ vanishing for all $i>0$ and all $N$, and both are equivalent to $M$ being flat.
-This is the usable criterion: flatness needs checking in one degree only, and over a Noetherian ring only against the cyclic modules $A/I$.
+Moreover, $M$ is flat if and only if $\Tor_1^A(M,A/I)=0$ for every finitely generated ideal $I\subseteq A$.
 
-$\Tor$ is computed by free or projective resolutions, never injective ones.
-Over $\ZZ$, resolving $\ZZ/m$ by $0\to\ZZ\mapsvia{m}\ZZ\to\ZZ/m\to 0$ and tensoring with $\ZZ/n$ gives $\Tor^\ZZ_1(\ZZ/m,\ZZ/n) = \ZZ/{\gcd(m,n)}$: exactly the torsion the tensor product loses, which is where the name comes from.
-$\Tor$ is symmetric in its two arguments, the same balancing phenomenon as for $\Ext$.
+$\Tor$ is computed from a projective resolution of either argument, and $\Tor_i^A(M,N)\cong\Tor_i^A(N,M)$.
+Over $\ZZ$, resolving $\ZZ/m$ by $0\to\ZZ\mapsvia{m}\ZZ\to\ZZ/m\to 0$ and tensoring with an abelian group $B$ gives $\Tor^\ZZ_1(\ZZ/m,B)\cong\ts{b\in B\st mb=0}$, the $m$-torsion of $B$; in particular $\Tor^\ZZ_1(\ZZ/m,\ZZ/n) \cong \ZZ/{\gcd(m,n)}$.
 :::
