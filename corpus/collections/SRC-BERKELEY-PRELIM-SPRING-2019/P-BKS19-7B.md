@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS19-7B
 kind: problem
-title: Conjugacy in $\operatorname{GL}_2^+(\mathbb R)$ versus $\operatorname{GL}_2(\mathbb R)$
+title: Conjugacy in $\GL_2^+(\RR)$ versus $\GL_2(\RR)$
 classification:
   areas:
   - prelim
@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Is it true that elements of the group $GL_2^+(\mathbb R)$ of real $2\times2$ matrices with positive determinant are conjugate in $GL_2^+(\mathbb R)$ if and only if the matrices are similar (conjugate in $GL_2(\mathbb R)$)? Either prove this or give a counterexample.
+Is it true that elements of the group $\GL_2^+(\RR)$ of real $2\times2$ matrices with positive determinant are conjugate in $\GL_2^+(\RR)$ if and only if the matrices are similar (conjugate in $\GL_2(\RR)$)? Either prove this or give a counterexample.
 :::
