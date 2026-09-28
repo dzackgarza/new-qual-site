@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-KTKT6
 kind: proposition
 title: Approximation of measurable functions by simple functions
-slogan: 'Measurable functions admit pointwise simple approximants, uniformly on every region where the function is bounded.'
+slogan: 'A measurable function is the pointwise limit of simple functions with increasing moduli, and the convergence is uniform on every set where the function is bounded.'
 classification:
   areas:
   - real-analysis
