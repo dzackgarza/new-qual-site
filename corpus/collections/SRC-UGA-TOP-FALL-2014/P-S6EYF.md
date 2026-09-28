@@ -205,7 +205,6 @@ Hence
 \[
 \widetilde H_1(X)=0.
 \]
-This is precisely the step that the previous solution misread.
 :::
 
 <1>6. Finally,
