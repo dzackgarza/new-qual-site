@@ -13,17 +13,18 @@ Fano, Calabi--Yau, and general type are distinguished by the positivity behavior
 
 [[D-VARFANO]]
 
-## The computation that produces every example
+## Hypersurfaces
 
 [[FE-VARADJ]]
 
-Adjunction is the whole toolkit here: it computes $K$ of a hypersurface from $K$ of the ambient space, and since $K_{\PP^n} = -(n+1)H$ is known, every hypersurface in $\PP^n$ is classified by comparing its degree to $n+1$.
-For surfaces in $\PP^3$, the quadric, cubic, and quartic correspond to degrees $2,3,4$ against the threshold $n+1=4$.
+For a smooth hypersurface $X\subset\PP^n$ of degree $d$, $n\ge2$, adjunction and $K_{\PP^n}=-(n+1)H$ give $K_X=(d-n-1)H|_X$.
+So $X$ is Fano for $d<n+1$, has $K_X\sim0$ for $d=n+1$, and has ample $K_X$ for $d>n+1$.
+In $\PP^3$, smooth quadric and cubic surfaces are del Pezzo surfaces, and smooth quartic surfaces are K3 surfaces.
 
 ## Where completeness enters
 
-Fano is defined for complete varieties, and the word is not decorative.
+Fano varieties are complete by definition.
 
 [[D-VARCOMP]]
 
-Ampleness of $-K_X$ then upgrades completeness to projectivity for free, which is why no Fano variety is one of the complete non-projective examples.
+A complete variety with an ample line bundle is projective, so every Fano variety is projective.
