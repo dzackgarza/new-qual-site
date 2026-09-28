@@ -86,13 +86,14 @@ Then $U_1,\ldots,U_k$ cover $f(X)$.
 
 ::: {.remark}
 A [[D-ZFRV4|Hausdorff space]] is one in which distinct points have disjoint open neighborhoods, and a [[D-YEQC3|normal]] space is one in which disjoint closed sets have disjoint open neighborhoods.
-Urysohn's lemma states that in a normal space, disjoint closed sets are separated by a continuous function to $[0,1]$.
 
 :::
 
 [[FT-52GNK]]
 
 ## Maps and homeomorphisms
+
+[[FT-M5BHD]]
 
 ::: {.proof}
 It suffices to show that $f$ is a closed map, since then $f\inv$ is continuous.
@@ -104,8 +105,6 @@ If $A\subseteq X$ is closed, then $A$ is compact because $X$ is compact, so $f(A
 For every $x_0 \in X$, the constant map $r\colon X \to \ts{x_0}$ is a [[D-NCLVD|retraction]] onto $\ts{x_0}$.
 
 :::
-
-[[FT-M5BHD]]
 
 [[T-JSXGR]]
 
