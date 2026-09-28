@@ -24,33 +24,25 @@ The quotient $\mathbb{R}/\mathbb{Z}$ is a familiar topological group; what is it
 :::
 
 ::: {.solution}
-<1>1. Define $\varphi : \mathbb{R} \to S^1$ by $\varphi(t) = e^{2\pi i t}$.
+Let $\varphi\colon\mathbb R\to S^1$, $\varphi(t)=e^{2\pi it}$.
+
+<1>1. $\varphi$ is a continuous surjective homomorphism from $(\mathbb R,+)$ to $(S^1,\cdot)$ with kernel $\mathbb Z$.
+
 ::: {.proof}
-definition.
+$\varphi(s+t)=\varphi(s)\varphi(t)$, every point of $S^1$ is $e^{2\pi it}$ for some $t$, and $e^{2\pi it}=1$ if and only if $t\in\mathbb Z$.
 :::
 
-<1>2. $\varphi$ is a continuous surjective group homomorphism from $(\mathbb{R}, +)$ to $(S^1, \cdot)$.
+<1>2. $\varphi$ is an open map.
+
 ::: {.proof}
-$\varphi(s + t) = e^{2\pi i(s+t)} = e^{2\pi i s} e^{2\pi i t} = \varphi(s)\varphi(t)$, and it is surjective (every point of $S^1$ is $e^{2\pi i t}$ for some $t$).
+For each $a\in\mathbb R$, $\varphi$ maps $(a,a+1)$ homeomorphically onto the open arc $S^1-\{\varphi(a)\}$, so it maps open subsets of $(a,a+1)$ to open subsets of $S^1$; every open subset of $\mathbb R$ is a union of such sets.
 :::
 
-<1>3. $\ker \varphi = \mathbb{Z}$.
-::: {.proof}
-$e^{2\pi i t} = 1$ iff $t \in \mathbb{Z}$.
-:::
+<1>3. Q.E.D.
 
-<1>4. Hence by the first isomorphism theorem, $\mathbb{R}/\mathbb{Z} \cong S^1$.
 ::: {.proof}
-<1>2 and <1>3.
-:::
-
-<1>5. This is an isomorphism of topological groups (the quotient topology on $\mathbb{R}/\mathbb{Z}$ agrees with the subspace topology on $S^1$).
-::: {.proof}
-$\varphi$ is a quotient map (it is open and continuous), so the induced bijection $\mathbb{R}/\mathbb{Z} \to S^1$ is a homeomorphism.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>4 and <1>5.
+By step <1>1 and the first isomorphism theorem, $\varphi$ induces a group isomorphism $\mathbb R/\mathbb Z\to S^1$.
+By steps <1>1 and <1>2, $\varphi$ is a quotient map, so this bijection is a homeomorphism.
+Hence $\mathbb R/\mathbb Z\cong\boxed{S^1}$ as topological groups.
 :::
 :::
