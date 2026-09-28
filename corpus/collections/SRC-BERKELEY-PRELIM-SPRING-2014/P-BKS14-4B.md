@@ -24,14 +24,14 @@ audit:
 ---
 
 ::: {.problem}
-Let \(f\) be an injective holomorphic function on the open unit disk \(U\subset\mathbb C\). Show that the area of \(f(U)\) is
-\[
+Let $f$ be an injective holomorphic function on the open unit disk $U\subset\CC$. Show that the area of $f(U)$ is
+$$
 \int_U |f'(z)|^2\,dx\,dy.
-\]
-Compute the area of the image of \(U\) under
-\[
+$$
+Compute the area of the image of $U$ under
+$$
 f(z)=z+\frac{z^2}{2}.
-\]
+$$
 :::
 
 ::: {.solution}
