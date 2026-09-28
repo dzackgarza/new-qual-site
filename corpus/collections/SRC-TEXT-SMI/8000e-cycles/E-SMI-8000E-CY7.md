@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-CY7
 kind: problem
-title: The 2-cycle relation on a subgroup of the symmetric group
+title: Transpositions in a subgroup of $S_n$ define an equivalence relation
 classification:
   areas:
   - algebra
@@ -25,46 +25,35 @@ Prove that $\sim$ is an **equivalence relation** on $\{1, 2, \dots, n\}$.
 :::
 
 ::: {.solution}
-**Goal:** Prove that the transposition membership relation on indices defines an equivalence relation (reflexive, symmetric, transitive).
+<1>1. $\sim$ is reflexive.
 
-<1>1. Reflexivity ($j \sim j$):
-    *Proof:*
-    <2>1. For every $j \in \{1, 2, \dots, n\}$, the first clause of the definition applies: $j = j$, so $j \sim j$.
+::: {.proof}
+For every $j$, the clause $j = j$ of the definition gives $j \sim j$.
+:::
 
-<1>2. Symmetry ($j \sim k \implies k \sim j$):
-    *Proof:*
-    <2>1. Let $j, k \in \{1, 2, \dots, n\}$ with $j \sim k$.
-    <2>2. If $j = k$, then $k = j$, so $k \sim j$.
-    <2>3. If $j \ne k$, then by definition the 2-cycle (transposition) $(j\,k) \in H$.
-    <2>4. Since every 2-cycle is symmetric as a permutation:
-        $$(k\,j) = (j\,k).$$
-    <2>5. Since $(j\,k) \in H$, we have $(k\,j) \in H$.
-    <2>6. Therefore, $k \sim j$.
+<1>2. $\sim$ is symmetric.
 
-<1>3. Transitivity ($j \sim k \text{ and } k \sim \ell \implies j \sim \ell$):
-    *Proof:*
-    <2>1. Let $j, k, \ell \in \{1, 2, \dots, n\}$ with $j \sim k$ and $k \sim \ell$.
-    <2>2. If any two of $j, k, \ell$ are equal:
-        - If $j = k$, then $j \sim \ell$ follows directly from $k \sim \ell$.
-        - If $k = \ell$, then $j \sim \ell$ follows directly from $j \sim k$.
-        - If $j = \ell$, then $j \sim \ell$ holds by reflexivity.
-    <2>3. Now assume $j, k, \ell$ are **three distinct indices**.
-    <2>4. Since $j \sim k$ and $k \sim \ell$ with distinct indices, both transpositions belong to $H$:
-        $$(j\,k) \in H \quad \text{and} \quad (k\,\ell) \in H.$$
-    <2>5. Since $H$ is a subgroup, $H$ is closed under group multiplication.
-    <2>6. Consider the product $(j\,k)(k\,\ell)(j\,k) \in H$:
-        - Under $(j\,k)$: $j \mapsto k$, $k \mapsto j$, $\ell \mapsto \ell$.
-        - Then under $(k\,\ell)$: $k \mapsto \ell$, $j \mapsto j$, $\ell \mapsto k$.
-        - Then under $(j\,k)$: $\ell \mapsto \ell$, $j \mapsto k$, $k \mapsto j$.
-        - Tracking each element through the composition $\sigma = (j\,k)(k\,\ell)(j\,k)$:
-          - $\sigma(j) = (j\,k)(k\,\ell)(k) = (j\,k)(\ell) = \ell$.
-          - $\sigma(\ell) = (j\,k)(k\,\ell)(\ell) = (j\,k)(k) = j$.
-          - $\sigma(k) = (j\,k)(k\,\ell)(j) = (j\,k)(j) = k$.
-          - For any other index $m \notin \{j, k, \ell\}$, $\sigma(m) = m$.
-    <2>7. Thus the conjugation product is precisely the transposition $(j\,\ell)$:
-        $$(j\,\ell) = (j\,k)(k\,\ell)(j\,k) \in H.$$
-    <2>8. Since $(j\,\ell) \in H$, we have $j \sim \ell$.
+::: {.proof}
+Let $j \sim k$. If $j = k$, then $k \sim j$ by step <1>1. If $j \ne k$, then $(j\,k) \in H$, and $(k\,j) = (j\,k)$ as permutations, so $k \sim j$.
+:::
 
-<1>4. Conclusion:
-    $\sim$ is reflexive, symmetric, and transitive, hence an equivalence relation on $\{1, 2, \dots, n\}$. Q.E.D.
+<1>3. $\sim$ is transitive.
+
+::: {.proof}
+Let $j \sim k$ and $k \sim \ell$. If $j = k$ or $k = \ell$, then $j \sim \ell$ is one of the hypotheses, and if $j = \ell$, then $j \sim \ell$ by step <1>1. Otherwise $j, k, \ell$ are distinct and $(j\,k), (k\,\ell) \in H$. Put $\sigma = (j\,k)(k\,\ell)(j\,k)$, which lies in $H$ because $H$ is a subgroup. Composing from the right,
+$$
+\sigma(j) = (j\,k)(k\,\ell)(k) = \ell,
+\qquad
+\sigma(\ell) = (j\,k)(k\,\ell)(\ell) = j,
+\qquad
+\sigma(k) = (j\,k)(k\,\ell)(j) = k,
+$$
+and $\sigma$ fixes every index outside $\{j, k, \ell\}$. Hence $\sigma = (j\,\ell) \in H$, and $j \sim \ell$.
+:::
+
+<1>4. Q.E.D.
+
+::: {.proof}
+By steps <1>1--<1>3, $\sim$ is an equivalence relation on $\{1, 2, \dots, n\}$.
+:::
 :::
