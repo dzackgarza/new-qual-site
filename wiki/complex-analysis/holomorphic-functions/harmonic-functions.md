@@ -76,7 +76,7 @@ Multiplying $u(z_0) = F(s)$ by $s$ and integrating over $0\leq s\leq r$ gives $\
 
 ::: {.remark title="Converse"}
 A continuous $u$ satisfying the mean value property on every disc in its domain is harmonic, so the mean value property characterizes harmonic functions among continuous functions.
-The proof of the maximum principle on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]] uses only the mean value property, so it applies to harmonic functions as well.
+The mean value property gives the [[PR-6WOTK|strict maximum principle]]: a real harmonic function on a connected open set that attains its maximum is constant, by the argument on [[complex-analysis/cauchy-theory/maximum-modulus-and-open-mapping|Maximum modulus and open mapping]].
 
 :::
 
