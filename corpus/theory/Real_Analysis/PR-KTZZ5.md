@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-KTZZ5
 kind: proposition
 title: Inner products are jointly continuous
-slogan: 'Converging both vectors forces their inner products to converge.'
+slogan: 'If $x_k\to x$ and $y_k\to y$, then $\inner{x_k}{y_k}\to\inner{x}{y}$.'
 classification:
   areas:
   - real-analysis
