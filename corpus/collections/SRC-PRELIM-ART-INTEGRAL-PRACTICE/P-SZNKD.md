@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SZNKD
 kind: problem
-title: Evaluate $\int\frac{x^2}{1+x^6}\,dx$
+title: $\int\frac{x^2}{1+x^6}\,dx$
 classification:
   areas:
   - prelim
