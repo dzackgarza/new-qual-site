@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-ALGEBRA-REVIEW-PANTANO-2011
 kind: collection
-title: Algebra Review — Alessandra Pantano (2011)
+title: Algebra review, Alessandra Pantano (2011)
 classification:
   areas:
   - algebra
