@@ -72,5 +72,5 @@ and
 \[
 \boxed{x^2+\ln(x^4+1)+\arctan(x^2)+C.}
 \]
-Each follows directly from the partial-fraction decompositions already encoded in the card; differentiating the displayed primitives recovers the corresponding rational integrand.
+Each follows from the partial-fraction decomposition of its integrand; differentiating each displayed primitive recovers the corresponding rational integrand.
 :::
