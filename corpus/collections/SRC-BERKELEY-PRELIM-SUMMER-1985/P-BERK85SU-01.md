@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85SU-01
 kind: problem
-title: Real $2\times2$ square roots of $-I$ and a nearby obstruction
+title: Real $2\times2$ square roots of $-I$ and of $\operatorname{diag}(-1,-1-\varepsilon)$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
