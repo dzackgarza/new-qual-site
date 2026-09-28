@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB17S-09
 kind: problem
-title: Separability of a metric space from separability of C(X)
+title: Separability of a metric space from separability of $C(X)$
 classification:
   areas:
   - prelim
