@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-1
 kind: problem
-title: "SS 2.1: The Fresnel integrals"
+title: The Fresnel integrals $\int_0^\infty\sin(x^2)\,dx=\int_0^\infty\cos(x^2)\,dx=\frac{\sqrt{2\pi}}4$
 classification:
   areas:
   - complex-analysis
@@ -92,7 +92,6 @@ Thus
 \int_0^\infty \sin(x^2)\,dx
 =
 \int_0^\infty \cos(x^2)\,dx
-=\frac{\sqrt{2\pi}}{4}}
+=\frac{\sqrt{2\pi}}{4}}.
 \]
-as required.
 :::
