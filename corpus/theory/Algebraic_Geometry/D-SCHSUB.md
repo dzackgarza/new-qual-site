@@ -25,8 +25,8 @@ prompts:
 ::: {.definition}
 An \dfn{open subscheme} of $X$ is an open $U \subseteq \abs{X}$ with $\OO_U \da \ro{\OO_X}{U}$; every open subset of a scheme is a scheme in exactly one way.
 
-A **closed immersion** $i: Z \to X$ is a morphism which is a homeomorphism onto a closed subset and for which $i^\sharp: \OO_X \to i_* \OO_Z$ is surjective.
-A **closed subscheme** is an equivalence class of closed immersions into $X$.
+A \dfn{closed immersion} $i: Z \to X$ is a morphism which is a homeomorphism onto a closed subset and for which $i^\sharp: \OO_X \to i_* \OO_Z$ is surjective.
+A \dfn{closed subscheme} is an equivalence class of closed immersions into $X$.
 :::
 
 ::: {.proposition}
@@ -36,22 +36,22 @@ In general, closed subschemes of $X$ correspond to quasicoherent ideal sheaves $
 
 ::: {.proposition title="Closed subscheme sequences"}
 For a closed immersion $i: Z \to X$ with ideal sheaf $\mci$ there is an exact sequence of $\OO_X$-modules
-\[
+$$
 0 \to \mci \to \OO_X \to i_* \OO_Z \to 0 ,
-\]
+$$
 and tensoring with a locally free $\OO_X$-module $\mce$ keeps it exact: $0 \to \mci \tensor \mce \to \mce \to i_*(i^* \mce) \to 0$.
 If $Z = D$ is an effective Cartier divisor, then $\mci = \OO_X(-D) = \OO_X(D)^\vee$, giving
-\[
+$$
 0 \to \OO_X(-D) \to \OO_X \to \OO_D \to 0 , \qquad 0 \to \mcl(-D) \to \mcl \to \ro{\mcl}{D} \to 0
-\]
+$$
 for every invertible sheaf $\mcl$.
 [@Har10a, Proposition II.6.18]
 :::
 
 ::: {.remark}
-An open subset carries a unique induced scheme structure, while a closed subset can carry many closed-subscheme structures. $V(x)$ and $V(x^2)$ in $\AA^1$ have the same support but different ideal sheaves, which is why a closed subscheme is specified by its ideal sheaf rather than by the underlying subset alone.
+An open subset carries a unique induced scheme structure, while a closed subset can carry many closed-subscheme structures: $V(x)$ and $V(x^2)$ in $\AA^1$ have the same support and different ideal sheaves.
 
-Surjectivity is imposed on sheaves rather than global sections because it is stalk-local; $\OO_X(X) \to \OO_Z(Z)$ can fail to be surjective for a closed immersion when $X$ is not affine.
+For a closed immersion $i$, the map on global sections $\OO_X(X) \to \OO_Z(Z)$ need not be surjective: for $Z=\ts{0,\infty}\subseteq\PP^1_k$ with its reduced structure, it is the diagonal $k\to k\times k$.
 
-Neither notion is closed under the other's operation: a closed subscheme of an open subscheme is a **locally closed subscheme**, which is what "immersion" without a qualifier means.
+A closed subscheme of an open subscheme is a \dfn{locally closed subscheme}; an immersion is a morphism that is an isomorphism onto a locally closed subscheme ([[D-MORIMM]]).
 :::
