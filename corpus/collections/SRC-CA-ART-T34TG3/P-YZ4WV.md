@@ -25,8 +25,9 @@ Show that $z=0$ is an essential singularity for $f(z)$.
 :::
 
 ::: {.solution}
-Note that $z=0$ can not be a removable singularity, since then $f$ would extend to a holomorphic function over $z=0$, and by continuity $0 = \lim f(z_n) = f(\lim z_n) = f(0)$.
-By the identity principle, this would force $f\equiv 0$, contradicting that $f$ is nonconstant.
+The point $z=0$ is not a removable singularity: otherwise $f$ would extend to a holomorphic function on $\abs z<\infty$ with $f(0) = \lim f(z_n) = 0$, so the zeros $z_n$ would accumulate at the point $0$ of the domain, and the identity theorem would force $f\equiv 0$, contradicting that $f$ is nonconstant.
 
-It can not be a pole, because then $f(z_n)\to \infty$, but $\abs{f(z_n)} = 0 < \eps$ for any $\eps$ infinitely many times.
+The point $z=0$ is not a pole: otherwise $\abs{f(z)}\to \infty$ as $z\to0$, whereas $f(z_n) = 0$ with $z_n\to0$.
+
+Hence $z=0$ is an essential singularity.
 :::
