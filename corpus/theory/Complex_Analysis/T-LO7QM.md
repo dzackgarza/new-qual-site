@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-LO7QM
 kind: theorem
 title: Stokes' theorem
-slogan: 'Boundary integrals are interior derivatives: $\int_{\partial M}\omega=\int_M d\omega$.'
+slogan: 'For a smooth $(n-1)$-form $\omega$ on a compact oriented $n$-manifold $M$ with boundary, $\int_{\partial M}\omega=\int_M d\omega$.'
 classification:
   areas:
   - complex-analysis
