@@ -21,5 +21,5 @@ Every irreducible polynomial $f \in k[x]$ has distinct roots in a splitting fiel
 :::
 
 ::: {.example}
-Over an imperfect field this fails: for $k = \FF_p(t)$, the polynomial $x^p - t$ is irreducible, and in a splitting field it factors as $(x - t^{1/p})^p$.
+Over an imperfect field, an irreducible polynomial can have a repeated root: for $k = \FF_p(t)$, the polynomial $x^p - t$ is irreducible, and in a splitting field it factors as $(x - t^{1/p})^p$.
 :::
