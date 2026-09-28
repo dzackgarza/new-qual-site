@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF82-7
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}\cos(\pi x)/(4x^2-1)\,dx$
+title: The integral $\int_{-\infty}^{\infty}\cos(\pi x)/(4x^2-1)\,dx$
 classification:
   areas:
   - prelim
