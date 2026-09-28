@@ -18,8 +18,8 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 \sum_{n=1}^{\infty}\sin\frac{x}{n^2}
-\]
-converges uniformly on every bounded interval in $\mathbb R$.
+$$
+converges uniformly on every bounded interval in $\RR$.
 :::
