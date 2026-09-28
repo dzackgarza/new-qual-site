@@ -54,7 +54,7 @@ $$(x - h)^2 = x^2 - 2xh + h^2 \ge x^2 - h(2x).$$
 Suppose $x^2 < a$. Put $h = \min\left(\frac{a - x^2}{2x + 1}, \frac12\right) > 0$ and $h' = h/2$. Then $0 < h' < h < 1$, and step <1>1 gives
 $$(x + h')^2 \le x^2 + h'(2x + 1) < x^2 + h(2x + 1) \le x^2 + (a - x^2) = a.$$
 
-Suppose $x^2 > a$. Put $h = \min\left(\frac{x^2 - a}{2x}, \frac{x}{2}\right) > 0$ and $h' = h/2$. Then $0 < h' < x$, and step <1>1 gives
+Suppose $x^2 > a$. Put $h = \min\left(\frac{x^2 - a}{2x}, \frac{x}{2}, \frac12\right) > 0$ and $h' = h/2$. Then $0 < h' < x$ and $h' < 1$, and step <1>1 gives
 $$(x - h')^2 \ge x^2 - h'(2x) > x^2 - h(2x) \ge x^2 - (x^2 - a) = a.$$
 :::
 
