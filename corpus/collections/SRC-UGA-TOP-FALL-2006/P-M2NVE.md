@@ -40,7 +40,6 @@ f(x)\perp x
 \qquad
 (x\in S^2).
 \]
-:::
 
 <1>2. Define
 \[
@@ -107,4 +106,5 @@ Thus <1>3 would force $1=-1$, a contradiction.
 <1>5. Therefore no such continuous map $f:S^2\to S^2$ exists.
 ::: {.proof}
 The assumption in <1>1 led to the contradiction in <1>4.
+:::
 :::
