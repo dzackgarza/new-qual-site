@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AAA6O
 kind: problem
-title: Rational roots of polynomials in $\QQ[x]$ are integers
+title: Rational roots of monic polynomials in $\ZZ[x]$ are integers
 classification:
   areas:
   - algebra
