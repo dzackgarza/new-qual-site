@@ -36,7 +36,7 @@ Let $E_0\subseteq E$ and $F_0\subseteq F$ be finite Galois subextensions of $k$.
 \[
 E_0\cap F_0\subseteq E\cap F=k,
 \]
-so $E_0\cap F_0=k$. For finite Galois extensions, the standard compositum degree formula gives
+so $E_0\cap F_0=k$. Since $E_0/k$ is finite Galois, restriction gives $\Gal(E_0F_0/F_0)\cong\Gal(E_0/E_0\cap F_0)=\Gal(E_0/k)$, so $[E_0F_0:F_0]=[E_0:k]$ and
 \[
 [E_0F_0:k]=[E_0:k][F_0:k].
 \]
