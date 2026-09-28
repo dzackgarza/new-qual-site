@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF88-8
 kind: problem
-title: Compare zero counts of two entire functions in a horizontal strip
+title: Zeros of $e^z+z$ and $ze^z+1$ in the strip $\abs{\operatorname{Im}z}<\pi/2$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
