@@ -14,8 +14,6 @@ audit:
 
 ::: {.problem}
 A topological space $X$ is called **completely Hausdorff** if for every pair of distinct points $a,b\in X$ there are open sets $U,V\subseteq X$ such that
-\[
-a\in U,\qquad b\in V,\qquad \overline U\cap\overline V=\varnothing.
-\]
+$$a\in U,\qquad b\in V,\qquad \overline U\cap\overline V=\varnothing.$$
 Show that the product of two completely Hausdorff spaces is completely Hausdorff.
 :::
