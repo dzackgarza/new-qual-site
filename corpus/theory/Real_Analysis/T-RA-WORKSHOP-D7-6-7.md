@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-RA-WORKSHOP-D7-6-7
 kind: theorem
 title: Weierstrass approximation and Stone--Weierstrass theorems
-slogan: 'Polynomials approximate continuous functions on intervals; separating self-adjoint subalgebras approximate all of $C(K)$.'
+slogan: 'Polynomials are uniformly dense in $C([a,b])$; a self-adjoint subalgebra of $C(K)$ that separates points and vanishes at no point is uniformly dense in $C(K)$.'
 classification:
   areas:
   - real-analysis
