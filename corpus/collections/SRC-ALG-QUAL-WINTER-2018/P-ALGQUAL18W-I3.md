@@ -29,7 +29,7 @@ Justify your answer with a proof or counterexample: the abelian group $\mathbb Q
 :::
 
 ::: {.solution}
-The statement is **false**. Regard
+The statement is false. Regard
 $$
 M=\QQ/\ZZ
 $$
