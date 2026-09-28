@@ -28,9 +28,9 @@ Its stalks are $(j_! \mathcal{F})_x = \mathcal{F}_x$ for $x \in U$ and $0$ for $
 
 ::: {.definition title="Six operations"}
 For a continuous map $f \colon X \to Y$ of locally compact Hausdorff spaces, the \dfn{six operations} on bounded-below derived categories of sheaves of abelian groups are
-\[
+$$
 f^{-1} \dashv Rf_*, \qquad Rf_! \dashv f^!, \qquad \otimes^L \dashv R\mathcal{H}om .
-\]
+$$
 Here $f_!$ is direct image with proper supports: $(f_! \mathcal{F})(V)$ consists of the sections $s \in \mathcal{F}(f^{-1}V)$ whose support is proper over $V$.
 The \dfn{exceptional inverse image} $f^!$ is the right adjoint of $Rf_!$; it exists on derived categories when $f_!$ has finite cohomological dimension, and is not the derived functor of a functor on sheaves.
 :::
@@ -47,5 +47,6 @@ The \dfn{exceptional inverse image} $f^!$ is the right adjoint of $Rf_!$; it exi
 :::
 
 ::: {.remark}
-The same formalism holds for constructible sheaves on complex algebraic varieties and for $\ell$-adic sheaves on schemes of finite type over a field, where it is the framework for Poincaré duality and the Lefschetz trace formula.
+The same formalism holds for constructible sheaves on complex algebraic varieties and for $\ell$-adic sheaves on schemes of finite type over a field.
+For a topological manifold $X$ of dimension $n$ with orientation sheaf $\mathrm{or}_X$, Verdier duality for $a\colon X\to\mathrm{pt}$ gives Poincaré duality $H^i_c(X,\QQ)^\vee\cong H^{n-i}(X,\mathrm{or}_X\otimes\QQ)$.
 :::
