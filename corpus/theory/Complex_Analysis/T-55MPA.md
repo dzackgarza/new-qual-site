@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-55MPA
 kind: theorem
 title: Riemann mapping theorem
-slogan: 'Every proper simply connected plane domain is the unit disc, uniquely after fixing one point and one positive derivative.'
+slogan: 'Every nonempty proper simply connected open subset of $\CC$ is biholomorphic to the unit disc, by a unique map sending a given point to $0$ with positive derivative there.'
 classification:
   areas:
   - complex-analysis
