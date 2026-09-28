@@ -22,33 +22,23 @@ In defining the map $\overline{F}$ in the proof of Lemma 54.2, why were we so ca
 :::
 
 ::: {.solution}
-<1>1. Lemma 54.2 is the homotopy lifting property: a homotopy $F: I \times I \to X$ with a lift of $F(-, 0)$ lifts to a homotopy $\overline F: I \times I \to \tilde X$.
+Lemma 54.2 states: for a covering map $p: E \to B$ with $p(e_0) = b_0$ and a continuous $F: I \times I \to B$ with $F(0, 0) = b_0$, there is a unique lifting $\overline{F}: I \times I \to E$ with $\overline{F}(0, 0) = e_0$. The proof subdivides $I \times I$ into rectangles $R$, each mapped by $F$ into an evenly covered open set $U$, and extends $\overline{F}$ one rectangle at a time.
+
+<1>1. When $\overline{F}$ is already defined on a connected subset $C$ of $R$, it extends uniquely and continuously to $R$.
+
 ::: {.proof}
-statement of the lemma.
+$p^{-1}(U)$ is a disjoint union of open slices $V_\alpha$. The connected set $\overline{F}(C)$ lies in $p^{-1}(U)$, so it lies in a single slice $V_0$. Define $\overline{F} = (p|_{V_0})^{-1} \circ F$ on $R$. This is continuous and agrees with the given values on $C$, since $p \circ \overline{F} = F$ there and $p|_{V_0}$ is injective.
 :::
 
-<1>2. The proof subdivides $I \times I$ into small rectangles and lifts $F$ rectangle by rectangle.
+<1>2. Taking the rectangles row by row, from left to right within a row, the part of each rectangle on which $\overline{F}$ is already defined is the union of its left and bottom edges, which is connected.
+
 ::: {.proof}
-the standard proof.
+At the step for a rectangle $R$, the rectangles already treated are those in lower rows and those to the left in the same row, together with the left and bottom edges of $I \times I$, where $\overline{F}$ was first defined by path lifting. Their union meets $R$ exactly in the left and bottom edges of $R$.
 :::
 
-<1>3. The order matters because each rectangle's lift must agree with the lifts already defined on the adjacent rectangles (on their shared edges).
-::: {.proof}
-the lift on a rectangle is determined by the lift on one of its edges (by the unique lifting property), and to be well-defined and continuous, the lift on each new rectangle must match the previously defined lifts on the shared boundary.
-:::
+<1>3. Q.E.D.
 
-<1>4. Hence the rectangles must be processed in an order such that, when a rectangle is lifted, at least one of its edges (specifically, the edge shared with already-lifted rectangles) already has a lift.
 ::: {.proof}
-this ensures the lift is well-defined and continuous across the whole square.
-:::
-
-<1>5. The natural order is to proceed row by row (or column by column), lifting each rectangle using the lift already established on its left and bottom edges.
-::: {.proof}
-this is the order used in the proof.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>3–<1>5.
+With another order, the part of a rectangle on which $\overline{F}$ is already defined can be disconnected, for example its left and right edges. The values of $\overline{F}$ on the two pieces could then lie in different slices over $U$, and no continuous lift over $R$ would agree with both. The order of step <1>2 makes that set connected at every step, so step <1>1 applies to every rectangle and the pieces fit together into a continuous $\overline{F}$.
 :::
 :::
