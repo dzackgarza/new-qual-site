@@ -15,10 +15,6 @@ audit:
 ::: {.problem}
 Let $\{A_\alpha\}$ be a collection of subsets of a topological space $X$.
 Determine whether
-\[
-\overline{\bigcup_\alpha A_\alpha}
-=
-\bigcup_\alpha\overline{A_\alpha}
-\]
+$$\overline{\bigcup_\alpha A_\alpha}=\bigcup_\alpha\overline{A_\alpha}$$
 must hold. If equality can fail, determine which inclusion, if either, always holds.
 :::
