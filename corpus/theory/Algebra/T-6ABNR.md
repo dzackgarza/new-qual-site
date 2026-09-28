@@ -28,6 +28,6 @@ Choosing a basis of each eigenspace $\ker(M-\lambda_i I)$ gives a basis of $F^n$
 :::
 
 ::: {.example}
-A minimal polynomial that splits with a repeated factor does not suffice.
+A matrix whose minimal polynomial splits over $F$ need not be diagonalizable over $F$.
 Over any field $F$, $M=\begin{bmatrix} 1 & 1 \\ 0 & 1\end{bmatrix}$ has $m_M = (x-1)^2$, which splits over $F$, but $\ker(M-I)$ is one-dimensional, so $M$ is not diagonalizable.
 :::
