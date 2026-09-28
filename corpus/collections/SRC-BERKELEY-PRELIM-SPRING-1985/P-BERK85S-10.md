@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85S-10
 kind: problem
-title: Minimal polynomial of a three-by-three companion matrix
+title: Minimal polynomial of a $3\times3$ companion matrix
 classification:
   areas: [prelim]
   topics: []
