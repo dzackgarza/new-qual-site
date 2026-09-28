@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-IZKCV
 kind: problem
-title: $1/x^4+1$, balancing exponentials
+title: $\int_\RR\frac{dx}{x^4+1}$ by a semicircle
 classification:
   areas:
   - complex-analysis
