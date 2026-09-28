@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK87S-12
 kind: problem
-title: Approximate $\int_0^{1/2}\sin x/x\,dx$ within $0.005$
+title: Approximation of $\int_0^{1/2}\sin x/x\,dx$ within $0.005$
 classification:
   areas: [prelim]
   topics: []
