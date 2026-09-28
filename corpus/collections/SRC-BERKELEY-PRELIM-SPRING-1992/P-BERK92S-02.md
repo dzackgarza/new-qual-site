@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-02
 kind: problem
-title: Square roots of an upper-triangular three-by-three matrix
+title: Square roots of an upper-triangular $3\times3$ matrix
 classification:
   areas:
   - prelim
