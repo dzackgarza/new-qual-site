@@ -33,41 +33,47 @@ b. Show that if $f\in L^1(\RR^n) \intersect L^\infty(\RR^n)$ and $g\in L^1(\RR^n
 :::
 
 ::: {.solution}
-<1>1. $F(x,y) = f(x)$ and $h(x,y) = f(x - y)g(y)$ are measurable on $\RR^n \cross \RR^n$.
-    <2>1. $F$ is measurable.
-        ::: {.proof}
-        $F = f \circ \pi_1$ where $\pi_1(x,y) = x$ is continuous; composition of a measurable function with a continuous map is measurable.
-        :::
-    <2>2. $h$ is measurable.
-        ::: {.proof}
-        $(x,y) \mapsto (x - y, y)$ is continuous (hence Borel), and $(u,y) \mapsto f(u)g(y)$ is measurable (product of measurable functions of the coordinate projections, by <2>1 applied to $f$ and $g$); $h$ is their composition.
-        :::
+Measurability means Lebesgue measurability; $m$ denotes Lebesgue measure.
 
-<1>2. If $f \in L^1 \intersect L^\infty$ and $g \in L^1$, then $f \ast g$ is well defined and lies in $L^1 \intersect L^\infty$.
-    <2>1. $f \ast g \in L^1$ with $\|f \ast g\|_1 \le \|g\|_1\|f\|_1$.
-        ::: {.proof}
-        Tonelli: $\int|f\ast g(x)|\,dx \le \iint |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1$.
-        :::
-    <2>2. $f \ast g$ is bounded with $\|f \ast g\|_\infty \le \|g\|_1\|f\|_\infty$.
-        ::: {.proof}
-        $|f\ast g(x)| \le \int |f(x-y)||g(y)|\,dy \le \|f\|_\infty\|g\|_1$ for every $x$.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>1 and <2>2 show the convolution is finite a.e. and lies in both spaces.
-        :::
+<1>1. $F(x,y) = f(x)$ and $G(x,y) = g(y)$ are measurable on $\RR^n \times \RR^n$.
 
-<1>3. $\|f \ast g\|_2 \le \|g\|_1\|f\|_2$.
-    <2>1. Cauchy–Schwarz: $|f \ast g(x)|^2 \le \|g\|_1 (|f|^2 \ast |g|)(x)$.
-        ::: {.proof}
-        write $f(x-y)g(y) = f(x-y)\sqrt{|g(y)|} \cdot \sqrt{|g(y)|}\,\mathrm{sgn}(g(y))$ and apply Cauchy–Schwarz in the $y$-integral: $|f\ast g(x)|^2 \le \left(\int|f(x-y)|^2|g(y)|\,dy\right)\left(\int|g(y)|\,dy\right) = \|g\|_1(|f|^2 \ast |g|)(x)$.
-        :::
-    <2>2. Integrate: $\|f \ast g\|_2^2 \le \|g\|_1 \|\,|f|^2 \ast |g|\,\|_1 \le \|g\|_1 \cdot \|\,|f|^2\|_1\|g\|_1 = \|g\|_1^2\|f\|_2^2$.
-        ::: {.proof}
-        <2>1 integrated; then the $L^1$ convolution bound (<1>2<2>1) applied to $|f|^2 \in L^1$ and $|g| \in L^1$; and $\|\,|f|^2\|_1 = \|f\|_2^2$.
-        :::
-    <2>3. Q.E.D.
-        ::: {.proof}
-        <2>2 gives $\|f\ast g\|_2 \le \|g\|_1\|f\|_2$.
-        :::
+::: {.proof}
+For open $W \subseteq \CC$, $F^{-1}(W) = f^{-1}(W) \times \RR^n$. Write $f^{-1}(W) = V \setminus Z$ with $V$ a $G_\delta$ set and $Z$ null. Then $V \times \RR^n$ is a $G_\delta$ set and $Z \times \RR^n$ is null, so $F^{-1}(W)$ is measurable. The same argument applies to $G$. See [[E-JJ746]].
+:::
+
+<1>2. $h(x,y) = f(x - y)g(y)$ is measurable.
+
+::: {.proof}
+Let $T(x,y) = (x - y, y)$, an invertible linear map of $\RR^{2n}$ with determinant $1$. Then $h = (F \circ T)\cdot G$. For open $W$, $(F\circ T)^{-1}(W) = T^{-1}(F^{-1}(W))$. $T^{-1}$ is a homeomorphism, so it maps $G_\delta$ sets to $G_\delta$ sets, and $m(T^{-1}(A)) = m(A)$ for measurable $A$, so it maps null sets to null sets. Writing $F^{-1}(W)$ as a $G_\delta$ set minus a null set, as in step <1>1, shows $(F\circ T)^{-1}(W)$ is measurable. A product of measurable functions is measurable.
+:::
+
+<1>3. For $f \in L^1 \cap L^\infty$ and $g \in L^1$, $f\ast g(x) = \int f(x-y)g(y)\,dy$ is defined for every $x$, and $\|f \ast g\|_\infty \le \|g\|_1\|f\|_\infty$.
+
+::: {.proof}
+$\int|f(x-y)||g(y)|\,dy \le \|f\|_\infty\|g\|_1 < \infty$ for every $x$.
+:::
+
+<1>4. $\|f \ast g\|_1 \le \|g\|_1\|f\|_1$.
+
+::: {.proof}
+By step <1>2 and Tonelli's theorem, $\int|f\ast g(x)|\,dx \le \iint |f(x-y)||g(y)|\,dy\,dx = \int|g(y)|\int|f(x-y)|\,dx\,dy = \|f\|_1\|g\|_1$, using translation invariance of the inner integral.
+:::
+
+<1>5. $|f \ast g(x)|^2 \le \|g\|_1\,(|f|^2 \ast |g|)(x)$.
+
+::: {.proof}
+Write $|f(x-y)g(y)| = |f(x-y)|\,|g(y)|^{1/2}\cdot|g(y)|^{1/2}$. The Cauchy--Schwarz inequality in $y$ gives $|f\ast g(x)|^2 \le \left(\int|f(x-y)|^2|g(y)|\,dy\right)\left(\int|g(y)|\,dy\right)$.
+:::
+
+<1>6. $\|f \ast g\|_2 \le \|g\|_1\|f\|_2$.
+
+::: {.proof}
+$|f|^2 \le \|f\|_\infty|f|$, so $|f|^2 \in L^1$ with $\||f|^2\|_1 = \|f\|_2^2$. Integrating step <1>5 and applying step <1>4 to $|f|^2$ and $|g|$ gives $\|f \ast g\|_2^2 \le \|g\|_1\,\||f|^2 \ast |g|\|_1 \le \|g\|_1^2\|f\|_2^2$.
+:::
+
+<1>7. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 are part (a). Steps <1>3, <1>4 and <1>6 give $f\ast g \in L^1 \cap L^\infty$ and the three inequalities of part (b).
+:::
 :::
