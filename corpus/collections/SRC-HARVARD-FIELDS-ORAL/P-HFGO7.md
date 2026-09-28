@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HFGO7
 kind: problem
-title: Define an algebraic closure
+title: Algebraic closure of a field
 classification:
   areas: [algebra]
   topics: [Field Theory]
@@ -26,7 +26,7 @@ Define an algebraic closure of a field.
 :::
 
 ::: {.solution}
-An **algebraic closure** of a field $F$ is an extension field $\overline F/F$
+An \dfn{algebraic closure} of a field $F$ is an extension field $\overline F/F$
 such that
 
 1. $\overline F$ is algebraic over $F$, and
