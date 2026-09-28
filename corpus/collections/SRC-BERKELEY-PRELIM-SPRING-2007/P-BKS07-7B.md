@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-7B
 kind: problem
-title: UC Berkeley Spring 2007 prelim 7B
+title: A twisted product on $G\times G$ is a group, with no index-$2$ subgroup when $G=A_n$, $n\ge5$
 classification:
   areas: [prelim]
   topics: []
