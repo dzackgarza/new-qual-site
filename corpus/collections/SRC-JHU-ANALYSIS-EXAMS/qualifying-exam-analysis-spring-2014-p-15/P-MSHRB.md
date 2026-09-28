@@ -29,62 +29,23 @@ Determine whether there is a nonzero smooth compactly supported function on $\ma
 :::
 
 ::: {.solution}
-<1>1. Suppose $f$ is a nonzero smooth compactly supported function with $\widehat f$ also compactly supported.
+No. Let $f$ be smooth with $\operatorname{supp}f\subseteq[-S,S]$ and put $F(\zeta)\da\int_{-S}^Sf(x)e^{-2\pi ix\zeta}\,dx$ for $\zeta\in\CC$, so that $F=\widehat f$ on $\RR$.
+
+<1>1. $F$ is entire.
+
 ::: {.proof}
-assume such a function exists.
+On $[-S,S]\times K$, for $K\subset\CC$ compact, the integrand and its $\zeta$-derivative are bounded by $\abs{f(x)}$ times $e^{2\pi S\sup_K\abs{\Im\zeta}}$ and $2\pi Se^{2\pi S\sup_K\abs{\Im\zeta}}$. Dominated convergence permits differentiation under the integral [@Fol13].
 :::
 
-<1>2. Since $f$ is compactly supported, $\widehat f$ extends to an entire function (the Fourier transform of a compactly supported function is entire).
+<1>2. If $\widehat f$ has compact support, then $F\equiv0$.
+
 ::: {.proof}
-Choose $S>0$ with $\operatorname{supp}f\subset[-S,S]$ and define
-$$
-F(\zeta)=\int_{-S}^S f(x)e^{-2\pi i x\zeta}\,dx,
-\qquad\zeta\in\mathbb C.
-$$
-For $\zeta$ in a compact subset $K$ of the plane, the
-integrand and its $\zeta$ derivative are bounded in
-modulus by constant multiples of $|f(x)|$: one may use
-$e^{2\pi S\sup_K|\operatorname{Im}\zeta|}$ and
-$2\pi S e^{2\pi S\sup_K|\operatorname{Im}\zeta|}$.
-The same bounds on a slightly larger compact set dominate
-the difference quotients. Since $f\in L^1$, dominated
-convergence therefore permits complex differentiation under
-the integral and gives
-$F'(\zeta)=\int_{-S}^S(-2\pi i x)f(x)e^{-2\pi i x\zeta}\,dx$
-[@Fol13]. Hence $F$ is entire and agrees with
-$\widehat f$ on the real axis.
+$F$ vanishes on a real interval outside the support of $\widehat f$, which has accumulation points, so $F\equiv0$ by the identity theorem and step <1>1 [@SS03].
 :::
 
-<1>3. Since $\widehat f$ is compactly supported (on $\mathbb{R}$) and entire, and it vanishes on an interval (outside its support), it vanishes identically.
-::: {.proof}
-The entire function $F$ vanishes on a real interval
-outside the compact support of $\widehat f$. Such an
-interval has an accumulation point in its domain, so
-the identity theorem gives $F\equiv0$ [@SS03].
-:::
+<1>3. Q.E.D.
 
-<1>4. Hence $\widehat f \equiv 0$, so $f \equiv 0$ (by Fourier inversion).
 ::: {.proof}
-Since $f\in C_c^\infty(\mathbb R)$, it is a Schwartz
-function: every polynomial times every derivative of $f$
-is bounded, as all derivatives have compact support.
-Fourier inversion for Schwartz functions applies pointwise
-and gives $f(x)=\int_{\mathbb R}\widehat f(\xi)e^{2\pi i x\xi}\,d\xi=0$
-[@SS03a].
-:::
-
-<1>5. This contradicts $f$ being nonzero.
-::: {.proof}
-<1>4.
-:::
-
-<1>6. Hence no such nonzero function exists.
-::: {.proof}
-<1>5.
-:::
-
-<1>7. Q.E.D.
-::: {.proof}
-<1>6.
+By step <1>2, $\widehat f\equiv0$. A smooth compactly supported function is a Schwartz function, so Fourier inversion gives $f(x)=\int\widehat f(\xi)e^{2\pi ix\xi}\,d\xi=0$ for every $x$ [@SS03a].
 :::
 :::

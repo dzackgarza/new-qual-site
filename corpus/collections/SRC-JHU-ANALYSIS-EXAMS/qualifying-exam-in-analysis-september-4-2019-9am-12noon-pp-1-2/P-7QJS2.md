@@ -45,98 +45,27 @@ $f = \alpha z ^ { n }$ for $\alpha \in \mathbb { C } , | \alpha | = 1$ and an in
 :::
 
 ::: {.solution}
-**(a).**
+<1>1. (a) $f$ has a removable singularity at $0$.
 
-<1>1. On $|z| \le 1/2$, $|f(z)| \le (\log \frac{1}{|z|})^{100}$.
 ::: {.proof}
-hypothesis.
+With $t=\log(1/\abs z)$, the hypothesis gives $\abs{zf(z)}\le e^{-t}t^{100}\le101!/t$ for $\abs z\le1/2$, using $e^t\ge t^{101}/101!$, so $zf(z)\to0$ as $z\to0$. By the removable singularity theorem $h(z)=zf(z)$ extends holomorphically with $h(0)=0$, so $h(z)=zH(z)$ with $H$ holomorphic near $0$, and $H$ extends $f$ [@SS03].
 :::
 
-<1>2. $\lim_{z \to 0} |z| \cdot |f(z)| \le \lim_{z \to 0} |z| (\log \frac{1}{|z|})^{100} = 0$.
+<1>2. (b) If $f$, extended by step <1>1, has no zero in $\abs z<1$, then $f$ is constant.
+
 ::: {.proof}
-Put $t=\log(1/|z|)$. The upper bound becomes
-$e^{-t}t^{100}$, which tends to zero since
-$e^t\geq t^{101}/101!$ for $t>0$.
+Both $f$ and $1/f$ are holomorphic on $\abs z\le1$ with modulus $1$ on $\abs z=1$, so the maximum modulus principle gives $\abs f\le1$ and $\abs{1/f}\le1$ there. So $\abs f\equiv1$ on $\abs z<1$, where $f$ attains its maximum modulus at an interior point; hence $f$ is constant on $\abs z<1$, and on the connected disk $\abs z<2$ by the identity theorem.
 :::
 
-<1>3. Hence $|z f(z)| \to 0$ as $z \to 0$, so $f$ has a removable singularity at $0$ (by Riemann's removable singularity theorem, since $f$ is bounded by $o(1/|z|)$).
+<1>3. (c) False: $f(z)=z^{100}\frac{z-1/3}{1-z/3}$ satisfies both hypotheses and is not of the form $\alpha z^n$.
+
 ::: {.proof}
-The function $h(z)=zf(z)$ tends to zero, so it is bounded
-near zero and extends holomorphically with $h(0)=0$ by
-the removable-singularity theorem [@SS03]. Its Taylor
-series has zero constant term, so $h(z)=zH(z)$ for a
-holomorphic $H$ near zero. For $z\ne0$ one has $H=f$.
-This extends $f$ holomorphically across zero.
-:::
-
-**(b).**
-
-<1>1. By (a), $f$ extends to a holomorphic function on $|z| < 2$, still denoted $f$.
-::: {.proof}
-(a).
-:::
-
-<1>2. $|f(z)| = 1$ on $|z| = 1$, and $f$ is holomorphic on $|z| \le 1$.
-::: {.proof}
-hypothesis and <1>1.
-:::
-
-<1>3. If $f(z) \neq 0$ in $|z| < 1$, then $1/f$ is holomorphic on $|z| < 1$ and $|1/f(z)| = 1$ on $|z| = 1$.
-::: {.proof}
-<1>2 and the nonvanishing hypothesis.
-:::
-
-<1>4. By the maximum modulus principle, $|f(z)| \le 1$ and $|1/f(z)| \le 1$ on $|z| < 1$, so $|f(z)| = 1$ on $|z| < 1$.
-::: {.proof}
-<1>2 and <1>3 (both $f$ and $1/f$ attain their maximum modulus on the boundary, where it is $1$).
-:::
-
-<1>5. Hence $f$ has constant modulus $1$ on the connected domain $|z| < 1$, so $f$ is constant.
-::: {.proof}
-The maximum modulus principle makes $f$ constant on the
-unit disk, and the identity theorem extends that constant
-to the connected disk $|z|<2$ [@SS03]. The nonvanishing
-hypothesis in part (b) includes the extended value at zero.
-:::
-
-**(c).**
-
-<1>1. The statement is false: take
-$$
-f(z)=z^{100}\frac{z-1/3}{1-z/3}.
-$$
-::: {.proof}
-Its only possible finite pole is at $z=3$, so it is
-holomorphic on the full disk $|z|<2$. For $a=1/3$,
-direct expansion gives
-$$
-|1-az|^2-|z-a|^2=(1-a^2)(1-|z|^2).
-$$
-Thus the rational factor has modulus at most one for
-$|z|\leq1$, and exactly one for $|z|=1$.
-Consequently the example has the required unit boundary modulus.
-:::
-
-<1>2. The example satisfies the logarithmic bound with coefficient one.
-::: {.proof}
-For $0<r=|z|\leq1/2$, the preceding factor estimate gives
-$|f(z)|\leq r^{100}$. Also
-$\log(1/r)\geq\log2>1/2\geq r$, where
-$\log2=\int_1^2dt/t>1/2$. Raising to the hundredth
-power gives $|f(z)|\leq(\log(1/|z|))^{100}$.
-:::
-
-<1>3. The example is not a monomial of the asserted form.
-::: {.proof}
-It vanishes at $z=1/3$, whereas $\alpha z^n$ with
-$|\alpha|=1$ has no nonzero zero. Thus it is a
-counterexample satisfying all the original hypotheses.
-The extra nonvanishing assumption in part (b) is not
-an assumption in part (c).
+$f$ is holomorphic on $\abs z<2$, since its only pole is $z=3$. For $a=1/3$, $\abs{1-az}^2-\abs{z-a}^2=(1-a^2)(1-\abs z^2)$, so the rational factor has modulus $1$ on $\abs z=1$ and at most $1$ on $\abs z\le1$. Hence $\abs f=1$ on $\abs z=1$, and for $0<r=\abs z\le1/2$, $\abs{f(z)}\le r^{100}\le(\log(1/r))^{100}$, because $\log(1/r)\ge\log2>1/2\ge r$. Finally $f(1/3)=0$, while $\alpha z^n$ with $\abs\alpha=1$ has no zero other than $0$.
 :::
 
 <1>4. Q.E.D.
+
 ::: {.proof}
-<1>3 (a), <1>5 (b), <1>3 (c).
+Steps <1>1, <1>2 and <1>3 answer parts (a), (b) and (c).
 :::
 :::
