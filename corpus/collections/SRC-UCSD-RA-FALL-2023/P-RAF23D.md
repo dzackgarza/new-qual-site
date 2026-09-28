@@ -35,7 +35,7 @@ Then $\mathcal{H}_a$ is a Hilbert space and $\{\sqrt{2a}\operatorname{sinc}(2ax 
 :::
 
 ::: {.solution}
-<1>1. Compute the Fourier transform of the interval indicator.
+<1>1. (i) $\widehat{\chi_{[-a,a]}}=\check\chi_{[-a,a]}=2a\operatorname{sinc}(2ax)$.
 ::: {.proof}
 For $x\ne0$,
 \[
@@ -54,7 +54,7 @@ At $x=0$ both sides equal $2a$, so the identity holds everywhere. Since $\chi_{[
 \]
 :::
 
-<1>2. Identify $\mathcal H_a$ with $L^2([-a,a])$.
+<1>2. (ii) $\mathcal H_a$ is a closed subspace of $L^2(\mathbb R)$, and $\phi_k(x)\coloneqq\sqrt{2a}\operatorname{sinc}(2ax-k)$, $k\in\mathbb Z$, form an orthonormal basis of it.
 ::: {.proof}
 By Plancherel, the Fourier transform is unitary on $L^2(\mathbb R)$. Therefore
 \[
@@ -68,7 +68,7 @@ For $k\in\mathbb Z$, put
 \phi_k(x):=\sqrt{2a}\operatorname{sinc}(2ax-k)
 =\sqrt{2a}\operatorname{sinc}\!\left(2a\left(x-\frac{k}{2a}\right)\right).
 \]
-From Step 1 and the translation rule,
+From step <1>1 and the translation rule,
 \[
 \widehat{\phi_k}(\xi)
 =\frac1{\sqrt{2a}}
@@ -85,7 +85,7 @@ form the standard orthonormal basis of $L^2([-a,a])$. Since the Fourier transfor
 \]
 :::
 
-<1>3. Show that every bandlimited $f$ is continuous and vanishes at infinity.
+<1>3. (iii) Every $f\in\mathcal H_a$ has a representative in $C_0(\mathbb R)$.
 ::: {.proof}
 If $f\in\mathcal H_a$, then $\widehat f\in L^2([-a,a])$. Since the interval has finite measure, Cauchy--Schwarz gives
 \[
@@ -102,7 +102,7 @@ f\in C_0(\mathbb R).
 \]
 :::
 
-<1>4. Compute the orthonormal-basis coefficients.
+<1>4. (iii) For $f\in\mathcal H_a$, $\langle f,\phi_k\rangle=(2a)^{-1/2}f(k/2a)$, and $f=\sum_k f(k/2a)\operatorname{sinc}(2ax-k)$ in $L^2$.
 ::: {.proof}
 By Plancherel,
 \[
