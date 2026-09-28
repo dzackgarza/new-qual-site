@@ -36,7 +36,7 @@ audit:
 
 ::: {.problem}
 Suppose $\left( f _ { n } \right)$ is a sequence of functions which are entire (=analytic throughout the complex plane).
-Suppose $\left( f _ { n } \right)$ converges pointwise to a function $g : \mathbb { C } \to \mathbb { C }$ and the convergence is uniform on each line segment in C. Show that $g$ is entire and that $f _ { n } \to g$ uniformly on each compact subset of $\mathbb { C }$
+Suppose $\left( f _ { n } \right)$ converges pointwise to a function $g : \mathbb { C } \to \mathbb { C }$ and the convergence is uniform on each line segment in $\CC$. Show that $g$ is entire and that $f _ { n } \to g$ uniformly on each compact subset of $\mathbb { C }$
 :::
 
 ::: {.solution}
