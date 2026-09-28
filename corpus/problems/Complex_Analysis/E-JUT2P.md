@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JUT2P
 kind: problem
-title: Removable singularities for derivatives
+title: A singularity is removable for $f$ if and only if it is removable for $f'$
 classification:
   areas:
   - complex-analysis
