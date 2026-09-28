@@ -2126,15 +2126,23 @@ copies of the card.
 
 **Reading task:** read both complete statements, including hypotheses and roles in collections.
 Identical wording is evidence to read, not a merge decision, and different wording does not
-make two statements different. Two cards whose hypotheses differ (uniform against locally
-uniform convergence) state different mathematics and both stay.
+make two statements different.
+
+A near-duplicate that differs only by a minor change of hypotheses or conclusion (uniform
+against locally uniform convergence, a closed against an open disc, one extra constant to
+compute) is the same card too. The main statement is the version whose proof is the most
+thorough or difficult, and the others are its variations.
 
 **Repair:** when reading proves the same mathematics, merge in the same commit. Keep one
 survivor with the clearest source-faithful statement and the complete solution; a correct
-alternative method from the other card may become a `remark` on the survivor. Repoint every
-collection appearance, wiki reference and guide reference to the survivor, delete the other
-card and any asset only it used, and do not keep the retired id as an alias, a
-`duplicate-of` relation, or a record that both exist. Do not stop to ask whether to merge.
+alternative method from the other card may become a `remark` on the survivor. For a
+near-duplicate, the survivor carries a `::: {.remark title="Variations"}` block that states
+each variation and gives only the change its proof needs: that the main proof applies
+unchanged, the steps that differ, or the simpler proof a stronger hypothesis allows, citing
+steps of the main proof rather than repeating them. Repoint every collection appearance,
+wiki reference and guide reference to the survivor, delete the other card and any asset only
+it used, and do not keep the retired id as an alias, a `duplicate-of` relation, or a record
+that both exist. Do not stop to ask whether to merge.
 **Origin:** [#70](https://github.com/dzackgarza/new-qual-site/issues/70), [#61](https://github.com/dzackgarza/new-qual-site/issues/61).
 
 ### `CARD-05`: Source appearance label treated as an intrinsic problem kind
