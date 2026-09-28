@@ -51,16 +51,13 @@ d_Y(h(x),f(x))<\delta+\varepsilon/2<\varepsilon.
 \]
 Taking the supremum gives $\|h-f\|_\infty<\varepsilon$. Thus $g^{-1}$ is continuous at $G_f$.
 
-(c) Take $X=Y=\mathbb R$, $f(x)=x^2$, and $h_n(x)=(x+1/n)^2$. The graph $G_{h_n}$ is the horizontal translate of $G_f$ by $-1/n$, so
+(c) Take $X=\{1/k: k\in\mathbb Z_+\}\subset\mathbb R$ and $Y=\mathbb R$, with the usual metrics. Every function on the discrete space $X$ is continuous. Let $f(1/k)=(-1)^k$, and for $n\ge1$ let $h_n(1/k)=(-1)^k$ for $k\le n$ and $h_n(1/k)=(-1)^{k+1}$ for $k>n$. The graphs lie in $(0,1]\times[-1,1]$, so they are bounded, and they are closed because the functions are continuous.
+
+For $k>n$, the point $(1/k,h_n(1/k))=(1/k,f(1/(k+1)))$ of $G_{h_n}$ lies within $1/k-1/(k+1)<1/n^2$ of the point $(1/(k+1),f(1/(k+1)))$ of $G_f$. Likewise $(1/k,f(1/k))=(1/k,h_n(1/(k+1)))$ lies within $1/n^2$ of $G_{h_n}$. The points with $k\le n$ are common to both graphs. Hence
 \[
-d_H(G_f,G_{h_n})\le 1/n\longrightarrow0.
+d_H(G_f,G_{h_n})\le 1/n^2\longrightarrow0.
 \]
-But
-\[
-\sup_{x\in\mathbb R}|h_n(x)-f(x)|
-=\sup_x|2x/n+1/n^2|=\infty.
-\]
-Thus $g^{-1}$ is not continuous at $G_f$. (Here $f$ is not uniformly continuous, exactly as part (b) suggests.)
+But $|h_n(1/(n+1))-f(1/(n+1))|=2$, so $\|h_n-f\|_\infty=2$ for every $n$. Thus $g^{-1}$ is not continuous at $G_f$. Here $f$ is not uniformly continuous, since $|f(1/k)-f(1/(k+1))|=2$ while $1/k-1/(k+1)\to0$.
 
 (d) If $X$ is compact, every continuous $f:X\to Y$ is uniformly continuous. By (b), the inverse from the image $\mathcal H_0$ to $C(X,Y)$ is continuous at every graph. Together with (a), $\operatorname{gr}$ is a homeomorphism onto its image, hence an embedding.
 :::
