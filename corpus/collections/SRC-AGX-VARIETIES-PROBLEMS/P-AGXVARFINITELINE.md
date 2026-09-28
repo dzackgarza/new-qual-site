@@ -46,8 +46,9 @@ $\AA^1\smz\to \AA^1\smz$ is finite.
 :::
 
 ::: {.solution}
-Let $k$ be the algebraically closed ground field of the source. We use the
-standard definition [[D-MORFIN|of a finite morphism]].
+Let $k$ be the algebraically closed ground field. A morphism of affine
+varieties is [[D-MORFIN|finite]] when the coordinate ring of the source is a
+finite module over the coordinate ring of the target via the comorphism.
 
 <1>1. Every non-constant morphism
 $$
