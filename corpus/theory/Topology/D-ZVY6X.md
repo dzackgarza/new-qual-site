@@ -26,7 +26,8 @@ This integer is the \dfn{local degree} $\deg f\vert_{x_i}$ of $f$ at $x_i$.
 :::
 
 ::: {.proposition}
-In the setting of the definition, $\deg f = \sum_{i=1}^m \deg f\vert_{x_i}$, where $\deg f$ is the [[D-XC53X|degree]] of $f$.
+Let $n\geq 1$, let $f\colon S^n\to S^n$ be a continuous map, and let $y\in S^n$ be a point with finite preimage $f\inv(y) = \ts{x_1, \ldots, x_m}$.
+Then $\deg f = \sum_{i=1}^m \deg f\vert_{x_i}$, where $\deg f$ is the [[D-XC53X|degree]] of $f$.
 :::
 
 ::: {.concept}
