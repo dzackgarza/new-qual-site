@@ -29,6 +29,4 @@ has two asymptotes. Identify these lines.
 (C) $x = -\frac{1}{2}$ and $y = x$
 (D) $x = -\frac{1}{2}$ and $y = x + 1$
 (E) $x = \frac{1}{2}$ and $y = 1 - x$
-
-CALCULUS |
 :::
