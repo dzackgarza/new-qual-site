@@ -22,15 +22,18 @@ prompts:
 
 ::: {.definition title="$\OO_X$-modules"}
 An \dfn{$\OO_X$-module} is a sheaf $\mcf$ on $X$ with each $\mcf(U)$ an $\OO_X(U)$-module, compatibly with restriction: $\ro{(rm)}{V} = \ro{r}{V}\ro{m}{V}$.
-The **tensor product** $\mcf \tensor_{\OO_X} \mcg$ is the sheafification of $U \mapsto \mcf(U) \tensor_{\OO_X(U)} \mcg(U)$.
-The **sheaf hom** $\sheafhom_{\OO_X}(\mcf, \mcg)$ is $U \mapsto \Hom_{\ro{\OO_X}{U}}(\ro{\mcf}{U}, \ro{\mcg}{U})$.
-A **sheaf of ideals** is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
+The \dfn{tensor product} $\mcf \tensor_{\OO_X} \mcg$ is the sheafification of $U \mapsto \mcf(U) \tensor_{\OO_X(U)} \mcg(U)$.
+The \dfn{sheaf hom} $\sheafhom_{\OO_X}(\mcf, \mcg)$ is $U \mapsto \Hom_{\ro{\OO_X}{U}}(\ro{\mcf}{U}, \ro{\mcg}{U})$.
+A \dfn{sheaf of ideals} is a subsheaf $\mci \subseteq \OO_X$ of $\OO_X$-modules.
 :::
 
 ::: {.remark}
-Tensor product and sheaf Hom differ in how locality enters their construction.
-Tensor needs sheafifying because a tensor product of sections is not determined locally; sheaf hom does not, because a morphism of sheaves is already a local object and the assignment is a sheaf on the nose.
-So $\tensor$ is right exact and $\sheafhom$ is left exact, and the stalk formula $(\mcf \tensor \mcg)_x = \mcf_x \tensor \mcg_x$ holds while $\sheafhom(\mcf,\mcg)_x = \Hom(\mcf_x, \mcg_x)$ can fail without finiteness on $\mcf$.
+The presheaf $U \mapsto \mcf(U) \tensor_{\OO_X(U)} \mcg(U)$ need not be a sheaf: on $X=\PP^1_k$, its value on $X$ for $\mcf=\OO(1)$ and $\mcg=\OO(-1)$ is $H^0(\OO(1))\tensor_kH^0(\OO(-1))=0$, while $\OO(1)\tensor\OO(-1)\cong\OO_X$ has the global section $1$.
+Morphisms of sheaves defined on the members of an open cover and agreeing on overlaps glue uniquely, so $U\mapsto\Hom_{\ro{\OO_X}{U}}(\ro{\mcf}{U}, \ro{\mcg}{U})$ is already a sheaf.
+
+The functor $\wait\tensor_{\OO_X}\mcg$ is right exact, and $\sheafhom_{\OO_X}(\mcf,\wait)$ is left exact.
+For every $x\in X$, $(\mcf \tensor \mcg)_x \cong \mcf_x \tensor_{\OO_{X,x}} \mcg_x$.
+If $X$ is Noetherian and $\mcf$ is coherent, then $\sheafhom(\mcf,\mcg)_x \cong \Hom_{\OO_{X,x}}(\mcf_x, \mcg_x)$ [@Har10a, Proposition III.6.8].
 
 $\mods{\OO_X}$ has enough injectives [@Har10a, Proposition III.2.2], but it need not have enough projectives.
 On $\PP_k^1$ over an infinite field, no projective object surjects onto $\OO_X$, as proved in [[P-AGH362NOPROJECTIVES]].
