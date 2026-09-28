@@ -10,7 +10,7 @@ topics:
 
 Let $(X,\mathcal M,\mu)$ be a measure space.
 Countable additivity gives continuity of measure: if $E_1\subseteq E_2\subseteq\cdots$ then $\mu\qty{\bigcup_n E_n} = \lim_n\mu(E_n)$, and if $E_1\supseteq E_2\supseteq\cdots$ with $\mu(E_1)<\infty$ then $\mu\qty{\bigcap_n E_n}=\lim_n\mu(E_n)$.
-For arbitrary $E_n\in\mathcal M$, the sets $F_n\coloneqq E_n\setminus\bigcup_{k<n}E_k$ are disjoint with the same union, which reduces statements about $\bigcup_nE_n$ to countable additivity.
+For arbitrary $E_n\in\mathcal M$, the sets $F_n\coloneqq E_n\setminus\bigcup_{k<n}E_k$ are disjoint with the same union, so countable additivity gives countable subadditivity $\mu\qty{\bigcup_nE_n}=\sum_n\mu(F_n)\leq\sum_n\mu(E_n)$.
 
 [[D-QYLPH]]
 
@@ -64,7 +64,7 @@ For measurable $E_n$, the set $\limsup_n E_n$ of points lying in infinitely many
 
 ::: {.remark}
 A $\sigma$-finite measure space is a countable union of sets of finite measure, so theorems proved for finite measures, such as the Tonelli and Fubini theorems for product measures, extend to $\sigma$-finite measures by exhaustion.
-For Lebesgue measure, every measurable set of finite measure $E$ also contains a compact $K$ with $m(E\setminus K)<\varepsilon$, which relates measurable sets to compact sets in topological arguments.
+For Lebesgue measure, every measurable set of finite measure $E$ also contains a compact $K$ with $m(E\setminus K)<\varepsilon$.
 
 :::
 
