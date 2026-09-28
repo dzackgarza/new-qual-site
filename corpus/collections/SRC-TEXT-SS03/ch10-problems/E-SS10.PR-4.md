@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.PR-4
 kind: problem
-title: "Invariant bounded holomorphic functions on the upper half plane are constant"
+title: Bounded holomorphic functions invariant under the theta group are constant
 classification:
   areas:
   - complex-analysis
@@ -34,131 +34,33 @@ Prove that $f \equiv 0$.
 :::
 
 ::: {.solution}
-<1>1. Proof of (a): <2>1. Map the upper half-plane $\mathbb{H}$ conformally to the unit disk $\mathbb{D}$ via the Cayley transform $\Phi(z) = \frac{z - i}{z + i}$.
+<1>1. (a) If $f$ is bounded and holomorphic on $\mathbb H$ and vanishes at points $\tau_k=x_k+iy_k$ with $\abs{x_k}\le1$, $0<y_k\le1$, and $\sum y_k=\infty$, then $f\equiv0$.
+
 ::: {.proof}
-standard biholomorphism between $\mathbb{H}$ and $\mathbb{D}$.
-:::
-<2>2. Define $g(w) = (f \circ \Phi^{-1})(w)$ for $w \in \mathbb{D}$.
-Then $g: \mathbb{D} \to \mathbb{C}$ is a bounded holomorphic function.
-::: {.proof}
-composition of holomorphic and bounded maps.
-:::
-<2>3. The zeros of $g$ in $\mathbb{D}$ are $\alpha_k = \Phi(\tau_k) = \frac{\tau_k - i}{\tau_k + i}$.
-Compute $1 - |\alpha_k|^2$:
-\[
-1 - |\alpha_k|^2 = 1 - \left|\frac{x_k + i(y_k - 1)}{x_k + i(y_k + 1)}\right|^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}.
-\]
-::: {.proof}
-modulus calculation.
-:::
-<2>4. Since $|x_k| \le 1$ and $0 < y_k \le 1$, the denominator satisfies $x_k^2 + (y_k + 1)^2 \le 1^2 + 2^2 = 5$.
-::: {.proof}
-bounds on $x_k, y_k$.
-:::
-<2>5. Therefore $1 - |\alpha_k| \ge \frac{1}{2}(1 - |\alpha_k|^2) \ge \frac{2}{5} y_k$.
-::: {.proof}
-$1 - r \ge \frac{1}{2}(1 - r^2)$ for $r \in [0, 1)$.
-:::
-<2>6. Summing over $k$:
-\[
-\sum_{k=1}^\infty (1 - |\alpha_k|) \ge \frac{2}{5} \sum_{k=1}^\infty y_k = \infty.
-\]
-::: {.proof}
-hypothesis $\sum y_k = \infty$.
-:::
-<2>7. By the Blaschke condition for bounded holomorphic functions on $\mathbb{D}$, a bounded holomorphic function whose zeros satisfy $\sum (1 - |\alpha_k|) = \infty$ must be identically zero.
-Thus $g \equiv 0 \implies f \equiv 0$.
-::: {.proof}
-Jensen's formula / Blaschke product theorem for bounded analytic functions.
+Let $\Phi(z) = \frac{z - i}{z + i}$ be the Cayley transform $\mathbb H\to\mathbb D$ and $g=f\circ\Phi^{-1}$, a bounded holomorphic function on $\mathbb D$ vanishing at $\alpha_k = \Phi(\tau_k)$. Then
+$$1 - |\alpha_k|^2 = \frac{(x_k^2 + (y_k+1)^2) - (x_k^2 + (y_k-1)^2)}{x_k^2 + (y_k+1)^2} = \frac{4 y_k}{x_k^2 + (y_k + 1)^2}\ge\frac{4y_k}{5},$$
+since $x_k^2 + (y_k + 1)^2 \le 1 + 4$. Using $1 - r \ge \frac{1}{2}(1 - r^2)$ for $0\le r<1$, $\sum_k (1 - |\alpha_k|) \ge \frac{2}{5} \sum_k y_k = \infty$. By [[E-SS5.PR-1]], the zeros of a bounded holomorphic function on $\mathbb D$ that is not identically zero satisfy $\sum(1-\abs{\alpha_k})<\infty$. Hence $g \equiv 0$ and $f \equiv 0$.
 :::
 
-<1>2. Proof of (b): <2>1. Since $\gcd(c, d) = 1$, by Bézout’s Identity there exist integers $a_0, b_0$ such that $a_0 d - b_0 c = 1$.
+<1>2. (b) If $\gcd(c,d)=1$ and $c\not\equiv d\pmod2$, there are $a,b\in\ZZ$ with $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
+
 ::: {.proof}
-Euclidean algorithm in $\mathbb{Z}$.
-:::
-<2>2. The general integer solutions to $x d - y c = 1$ are $a = a_0 + c t$ and $b = b_0 + d t$ for $t \in \mathbb{Z}$.
-::: {.proof}
-parameterization of solutions to linear Diophantine equation.
-:::
-<2>3. A matrix $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in \operatorname{SL}_2(\mathbb{Z})$ belongs to $G = \Gamma_\theta$ if and only if $a \equiv d \pmod 2$ and $b \equiv c \pmod 2$.
-::: {.proof}
-characterization of the theta group $\Gamma_\theta$.
-:::
-<2>4. **Case $c$ even, $d$ odd:** Since $a d - b c = 1$ with $c$ even, $a d$ is odd, so $a_0 \equiv 1 \pmod 2$ and $a = a_0 + ct \equiv 1 \pmod 2$ for all $t$.
-To make $b = b_0 + dt$ even, since $d$ is odd, choose $t \equiv -b_0 \pmod 2$.
-Then $a \equiv d \equiv 1 \pmod 2$ and $b \equiv c \equiv 0 \pmod 2$, so $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
-::: {.proof}
-parity check.
-:::
-<2>5. **Case $c$ odd, $d$ even:** Since $a d - b c = 1$ with $d$ even, $b c$ is odd, so $b_0 \equiv 1 \pmod 2$ and $b = b_0 + dt \equiv 1 \pmod 2$ for all $t$.
-To make $a = a_0 + ct$ even, since $c$ is odd, choose $t \equiv -a_0 \pmod 2$.
-Then $a \equiv d \equiv 0 \pmod 2$ and $b \equiv c \equiv 1 \pmod 2$, so $\begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$.
-::: {.proof}
-parity check.
+By Bézout's identity there are $a_0, b_0$ with $a_0 d - b_0 c = 1$, and $a = a_0 + c t$, $b = b_0 + d t$ also satisfy $ad-bc=1$ for every $t \in \ZZ$. A matrix of $\operatorname{SL}_2(\ZZ)$ lies in $G$ if and only if $a \equiv d$ and $b \equiv c \pmod 2$. If $c$ is even and $d$ odd, then $ad$ is odd, so $a$ is odd for every $t$, and $t \equiv b_0 \pmod 2$ makes $b$ even. If $c$ is odd and $d$ even, then $bc$ is odd, so $b$ is odd for every $t$, and $t \equiv a_0 \pmod 2$ makes $a$ even.
 :::
 
-<1>3. Proof of (c): <2>1. Suppose for contradiction that $\sum_{\gcd(c,d)=1, c \not\equiv d (2)} \frac{1}{c^2 + d^2} < \infty$.
+<1>3. (c) $\sum \frac{1}{c^2 + d^2} = \infty$ over coprime pairs $(c,d)$ of opposite parity.
+
 ::: {.proof}
-proof by contradiction setup.
-:::
-<2>2. If $a, b$ are coprime and both odd, then $c = \frac{a+b}{2}$ and $d = \frac{a-b}{2}$ are coprime integers of opposite parity, and $c^2 + d^2 = \frac{a^2 + b^2}{2}$.
-::: {.proof}
-change of variables for odd coprime pairs.
-:::
-<2>3. Thus $\sum_{\gcd(a,b)=1} \frac{1}{a^2 + b^2} < \infty$.
-::: {.proof}
-splitting into parity classes.
-:::
-<2>4. Multiplying by $\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6} < \infty$ gives:
-\[
-\sum_{(k, \ell) \in \mathbb{Z}^2 \setminus \{(0, 0)\}} \frac{1}{k^2 + \ell^2} = \left(\sum_{n=1}^\infty \frac{1}{n^2}\right) \left(\sum_{\gcd(a, b)=1} \frac{1}{a^2 + b^2}\right) < \infty.
-\]
-::: {.proof}
-every non-zero pair $(k, \ell) = n(a, b)$ with $n = \gcd(k, \ell) \ge 1$ and $\gcd(a, b) = 1$.
-:::
-<2>5. However, by integral comparison with polar coordinates on $\mathbb{R}^2$:
-\[
-\sum_{(k, \ell) \neq (0, 0)} \frac{1}{k^2 + \ell^2} \ge \int_{|x| \ge 1} \frac{dx\,dy}{x^2 + y^2} = \int_1^\infty \int_0^{2\pi} \frac{r\,dr\,d\theta}{r^2} = 2\pi \int_1^\infty \frac{dr}{r} = \infty.
-\]
-::: {.proof}
-integral test on lattice sums.
-:::
-<2>6. This contradiction proves that $\sum_{\gcd(c, d)=1, c \not\equiv d (2)} \frac{1}{c^2 + d^2} = \infty$.
-::: {.proof}
-<2>4 contradicts <2>5.
+A coprime pair $(a,b)$ either has opposite parity or has both entries odd. For $a,b$ coprime and odd, $c = \frac{a+b}{2}$ and $d = \frac{a-b}{2}$ are coprime of opposite parity with $c^2 + d^2 = \frac{a^2 + b^2}{2}$, and $(a,b)\mapsto(c,d)$ is injective. So if the sum in (c) were finite, $\sum_{\gcd(a,b)=1} \frac{1}{a^2 + b^2}$ would be finite. Writing each nonzero $(k,\ell)$ as $n(a,b)$ with $n=\gcd(k,\ell)$,
+$$\sum_{(k, \ell) \neq (0, 0)} \frac{1}{k^2 + \ell^2} = \Bigl(\sum_{n=1}^\infty \frac{1}{n^2}\Bigr) \Bigl(\sum_{\gcd(a, b)=1} \frac{1}{a^2 + b^2}\Bigr)$$
+would be finite. But comparison with $\int_{\abs{(x,y)} \ge 1} \frac{dx\,dy}{x^2 + y^2} = 2\pi \int_1^\infty \frac{dr}{r} = \infty$ shows the left side diverges.
 :::
 
-<1>4. Proof of (d): <2>1. Replace $F(\tau)$ by $F_0(\tau) = F(\tau) - F(i)$.
-Then $F_0$ is holomorphic, bounded on $\mathbb{H}$, $G$-invariant, and satisfies $F_0(i) = 0$.
-::: {.proof}
-constants are $G$-invariant.
-:::
-<2>2. For each pair $(c, d)$ of coprime integers with opposite parity, choose $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$ by (b).
-::: {.proof}
-<1>2. <2>3. Compute $g(i) = \frac{ai + b}{ci + d} = \frac{(ai+b)(-ci+d)}{c^2 + d^2} = \frac{ac+bd}{c^2+d^2} + i \frac{ad-bc}{c^2+d^2} = \frac{ac+bd}{c^2+d^2} + i \frac{1}{c^2+d^2}$.
-:::
-::: {.proof}
-algebraic calculation with $ad - bc = 1$.
-:::
-<2>4. By applying an appropriate power of $T^2 = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix} \in G$, we obtain points $\tau_{c,d} = x_{c,d} + i y_{c,d}$ in the $G$-orbit of $i$ such that $|x_{c,d}| \le 1$ and $y_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$.
-::: {.proof}
-translation by $2\mathbb{Z}$.
-:::
-<2>5. Since $F_0$ is $G$-invariant, $F_0(\tau_{c,d}) = F_0(i) = 0$.
-::: {.proof}
-$G$-invariance of $F_0$.
-:::
-<2>6. By (c), $\sum y_{c,d} = \sum \frac{1}{c^2 + d^2} = \infty$.
-::: {.proof}
-<1>3. <2>7. By (a), $F_0 \equiv 0$, which implies $F(\tau) = F(i)$ is identically constant on $\mathbb{H}$.
-:::
-::: {.proof}
-<1>1 applied to $F_0$.
-:::
+<1>4. (d) A bounded holomorphic $G$-invariant $F$ on $\mathbb H$ is constant.
 
-<1>5. Conclusion: Every bounded $G$-invariant holomorphic function on $\mathbb{H}$ is constant.
 ::: {.proof}
-<1>4.
+Put $F_0 = F - F(i)$, which is bounded, holomorphic, $G$-invariant, and vanishes at $i$. For each coprime pair $(c,d)$ of opposite parity, step <1>2 gives $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \in G$, and since $ad - bc = 1$,
+$$g(i) = \frac{(ai+b)(-ci+d)}{c^2 + d^2} = \frac{ac+bd}{c^2+d^2} + \frac{i}{c^2+d^2}.$$
+Applying a power of $T^2\in G$ gives a point $\tau_{c,d}$ of the $G$-orbit of $i$ with $\abs{\Re\tau_{c,d}} \le 1$ and $\Im\tau_{c,d} = \frac{1}{c^2 + d^2} \in (0, 1]$, and $F_0(\tau_{c,d}) = F_0(i) = 0$ by invariance. By step <1>3, $\sum \Im\tau_{c,d}=\infty$, so step <1>1 gives $F_0 \equiv 0$, that is, $F\equiv F(i)$.
 :::
-Q.E.D.
 :::
