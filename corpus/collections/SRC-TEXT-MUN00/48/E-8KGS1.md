@@ -23,8 +23,6 @@ Show that if every point $x$ of $X$ has a neighborhood that is a Baire space, th
 :::
 
 ::: {.solution}
-**Goal:** Prove that if every point $x \in X$ has a neighborhood that is a Baire space, then the topological space $X$ is a Baire space.
-
 <1>1. Reduction to an open cover by Baire open sets:
     *Proof:*
     <2>1. If a point $x \in X$ has a neighborhood $N$ that is a Baire space, there exists an open neighborhood $U_x \subseteq N$ containing $x$.
@@ -49,7 +47,6 @@ Show that if every point $x$ of $X$ has a neighborhood that is a Baire space, th
     <2>9. Because $y \in V \subseteq U$, $y \notin F_n \implies y \notin A_n$ for all $n \ge 1$.
     <2>10. Since $y \in V \subseteq W$, we have $y \in W \setminus \bigcup_{n=1}^\infty A_n$.
 
-<1>4. Conclusion:
-    $W \not\subseteq \bigcup_{n=1}^\infty A_n$, so $\operatorname{Int}_X(\bigcup_{n=1}^\infty A_n) = \varnothing$.
-    Thus $X$ is a Baire space. Q.E.D.
+<1>4. Q.E.D.
+    By step <1>3, $W \not\subseteq \bigcup_{n=1}^\infty A_n$ for every nonempty open $W$, so $X$ is a Baire space by step <1>2.
 :::
