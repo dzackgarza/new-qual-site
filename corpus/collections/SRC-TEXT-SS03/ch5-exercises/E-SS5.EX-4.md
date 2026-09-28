@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-4
 kind: problem
-title: "SS 5.4: Growth and zeros of a product with geometrically spaced zeros"
+title: Growth and zeros of $\prod_n(1-e^{-2\pi nt}e^{2\pi iz})$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Entire Functions
+  - Infinite Products
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-14
 kind: problem
-title: "Deduce from Hadamard’s theorem that if  is entire and of growth order  that is n"
+title: An entire function of non-integral order has infinitely many zeros
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Hadamard Factorization
+  - Zeros
 relations: []
 review: draft
 audit:

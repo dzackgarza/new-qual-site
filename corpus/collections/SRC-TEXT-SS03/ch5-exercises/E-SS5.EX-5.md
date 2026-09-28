@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-5
 kind: problem
-title: "SS 5.5: The Fourier transform of exp(-|t|^alpha) has order alpha/(alpha-1)"
+title: $\int_\RR e^{-\abs t^\alpha}e^{2\pi izt}\,dt$ has order $\alpha/(\alpha-1)$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Entire Functions
+  - Fourier Transform
 relations: []
 review: draft
 audit:

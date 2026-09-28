@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS5.EX-2
 kind: problem
-title: "SS 5.2: Orders of growth of standard entire functions"
+title: Orders of growth of $p(z)$, $e^{bz^n}$ and $e^{e^z}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Entire Functions
 relations: []
 review: draft
 audit:

@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: E-SS5.EX-6
 kind: problem
-title: "SS 5.6: Wallis's product formula"
+title: Wallis's product formula
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Infinite Products
 relations: []
 review: draft
 audit:

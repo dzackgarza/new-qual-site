@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-1
 kind: problem
-title: Jensen’s formula via Blaschke factors
+title: Jensen's formula via Blaschke factors
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Jensen's Formula
+  - Blaschke Factors
 relations: []
 review: draft
 audit:

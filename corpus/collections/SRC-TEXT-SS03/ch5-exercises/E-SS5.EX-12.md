@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-12
 kind: problem
-title: "Entire functions with no vanishing derivative are exponentials"
+title: A zero-free entire function of finite order with zero-free derivatives is $e^{az+b}$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Hadamard Factorization
+  - Entire Functions
 relations: []
 review: draft
 audit:

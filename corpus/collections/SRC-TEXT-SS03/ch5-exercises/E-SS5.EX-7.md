@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-7
 kind: problem
-title: "SS 5.7: Convergence criteria and counterexamples for infinite products"
+title: Convergence of $\prod(1+a_n)$ compared with $\sum a_n$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Infinite Products
+  - Convergence Tests
 relations: []
 review: draft
 audit:

@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-9
 kind: problem
-title: "SS 5.9: A binary product expansion of 1/(1-z)"
+title: $\prod_{k\ge0}(1+z^{2^k})=\frac1{1-z}$ for $\abs z<1$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Infinite Products
+  - Power Series
 relations: []
 review: draft
 audit:

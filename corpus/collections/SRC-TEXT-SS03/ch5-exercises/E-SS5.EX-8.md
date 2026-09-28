@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-8
 kind: problem
-title: 'SS 5.8: $\prod_{k=1}^\infty\cos(z/2^k)=\sin z/z$'
+title: $\prod_{k\ge1}\cos(z/2^k)=\sin z/z$
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Infinite Products
+  - Trigonometry
 relations: []
 review: draft
 audit:

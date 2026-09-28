@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: E-SS5.EX-11
 kind: problem
-title: "Picard's little theorem for entire functions of finite order"
+title: Picard's little theorem for entire functions of finite order
 classification:
   areas:
   - complex-analysis
-  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+  topics:
+  - Hadamard Factorization
+  - Entire Functions
 relations: []
 review: draft
 audit:
