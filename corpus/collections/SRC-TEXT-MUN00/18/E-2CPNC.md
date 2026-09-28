@@ -30,37 +30,47 @@ Show that if the family $\ts{A_\alpha}$ is locally finite and each $A_\alpha$ is
 :::
 
 ::: {.solution}
-**Goal:** Prove the Pasting Lemma for finite closed covers and locally finite closed covers, and provide a counterexample for infinite non-locally finite closed covers.
+For a closed set $C\subseteq Y$ put $F_\alpha=(f|_{A_\alpha})^{-1}(C)=f^{-1}(C)\cap A_\alpha$, so that $f^{-1}(C)=\bigcup_\alpha F_\alpha$ because the $A_\alpha$ cover $X$.
 
-<1>1. Part (a): Pasting over a finite closed cover.
-    *Proof:*
-    <2>1. Let $\{A_1, \dots, A_n\}$ be a finite closed cover of $X$, and let $C \subseteq Y$ be an arbitrary closed set.
-    <2>2. The preimage is:
-        $$f^{-1}(C) = f^{-1}(C) \cap \left(\bigcup_{i=1}^n A_i\right) = \bigcup_{i=1}^n \left(f^{-1}(C) \cap A_i\right) = \bigcup_{i=1}^n (f|_{A_i})^{-1}(C).$$
-    <2>3. Since $f|_{A_i}: A_i \to Y$ is continuous and $C$ is closed in $Y$, each set $(f|_{A_i})^{-1}(C)$ is closed in the subspace topology of $A_i$.
-    <2>4. Since each $A_i$ is closed in $X$, each $(f|_{A_i})^{-1}(C)$ is closed in $X$.
-    <2>5. A finite union of closed sets in $X$ is closed, so $f^{-1}(C)$ is closed in $X$.
-    <2>6. Therefore $f: X \to Y$ is continuous.
+<1>1. If $A_\alpha$ is closed in $X$, then $F_\alpha$ is closed in $X$ and $F_\alpha\subseteq A_\alpha$.
 
-<1>2. Part (b): Counterexample for a countable closed cover.
-    *Proof:*
-    <2>1. Let $X = \mathbb{R}$, $Y = \mathbb{R}$, and define the countable collection of closed sets:
-        $$A_0 = (-\infty, 0], \quad A_n = \left[\frac{1}{n}, \infty\right) \quad \text{for } n \in \mathbb{Z}_+.$$
-    <2>2. Then $\bigcup_{n=0}^\infty A_n = (-\infty, 0] \cup (0, \infty) = \mathbb{R}$, and each $A_n$ is closed in $\mathbb{R}$.
-    <2>3. Define $f: \mathbb{R} \to \mathbb{R}$ by $f(x) = 0$ for $x \le 0$ and $f(x) = 1$ for $x > 0$.
-    <2>4. On $A_0$, $f|_{A_0} \equiv 0$ is constant (hence continuous). For each $n \ge 1$, $f|_{A_n} \equiv 1$ is constant (hence continuous).
-    <2>5. However, $f$ is discontinuous at $x = 0$ because $\lim_{x \to 0^+} f(x) = 1 \neq 0 = f(0)$.
+::: {.proof}
+Since $f|_{A_\alpha}$ is continuous, $F_\alpha$ is closed in the subspace $A_\alpha$, and a closed subset of a closed subspace is closed in $X$.
+:::
 
-<1>3. Part (c): Pasting over a locally finite closed cover.
-    *Proof:*
-    <2>1. Let $\{A_\alpha\}_{\alpha \in J}$ be a locally finite collection of closed subsets covering $X$.
-    <2>2. Let $C \subseteq Y$ be closed. As in <1>1, $f^{-1}(C) = \bigcup_{\alpha \in J} F_\alpha$, where $F_\alpha = (f|_{A_\alpha})^{-1}(C)$ is closed in $X$ and $F_\alpha \subseteq A_\alpha$.
-    <2>3. Since $\{A_\alpha\}$ is locally finite and $F_\alpha \subseteq A_\alpha$, the family $\{F_\alpha\}_{\alpha \in J}$ is locally finite.
-    <2>4. Lemma: The union of any locally finite family of closed sets is closed.
-        - Let $F = \bigcup_{\alpha \in J} F_\alpha$, and let $x \in \overline{F}$.
-        - By local finiteness, there exists an open neighborhood $U$ of $x$ intersecting only finitely many members $F_{\alpha_1}, \dots, F_{\alpha_k}$.
-        - Then $U \cap F = U \cap \left(\bigcup_{i=1}^k F_{\alpha_i}\right)$.
-        - Since $x \in \overline{F}$, $x \in \overline{U \cap F} \subseteq \overline{\bigcup_{i=1}^k F_{\alpha_i}} = \bigcup_{i=1}^k \overline{F_{\alpha_i}} = \bigcup_{i=1}^k F_{\alpha_i} \subseteq F$.
-        - Thus $\overline{F} = F$, so $F$ is closed in $X$.
-    <2>5. Hence $f^{-1}(C) = F$ is closed in $X$, which proves that $f$ is continuous. Q.E.D.
+<1>2. (a) If the $A_\alpha$ are finitely many closed sets, $f$ is continuous.
+
+::: {.proof}
+By step <1>1, $f^{-1}(C)$ is a finite union of closed sets for every closed $C\subseteq Y$.
+:::
+
+<1>3. (b) For the closed sets $A_0=(-\infty,0]$ and $A_n=[\frac1n,\infty)$, $n\in\mathbb Z_+$, covering $\mathbb R$, the function $f\colon\mathbb R\to\mathbb R$ with $f(x)=0$ for $x\le0$ and $f(x)=1$ for $x>0$ is continuous on each $A_n$ but not continuous.
+
+::: {.proof}
+The sets cover $\mathbb R$, since every $x>0$ exceeds some $\frac1n$.
+The restriction of $f$ to $A_0$ is constant $0$ and to each $A_n$, $n\ge1$, is constant $1$.
+The set $f^{-1}(\{0\})=(-\infty,0]$ is closed, but $f^{-1}(\{1\})=(0,\infty)$ is not closed, although $\{1\}$ is closed.
+:::
+
+<1>4. The union of a locally finite family $\{F_\alpha\}$ of closed sets is closed.
+
+::: {.proof}
+Let $F=\bigcup_\alpha F_\alpha$ and $x\in\overline F$.
+Choose an open $U\ni x$ meeting only $F_{\alpha_1},\ldots,F_{\alpha_k}$.
+Then $U\cap F\subseteq F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}$, and $x\in\overline{U\cap F}$ because $U$ is an open neighborhood of $x$.
+Hence $x\in\overline{F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}}=F_{\alpha_1}\cup\cdots\cup F_{\alpha_k}\subseteq F$.
+:::
+
+<1>5. (c) If $\{A_\alpha\}$ is locally finite and each $A_\alpha$ is closed, $f$ is continuous.
+
+::: {.proof}
+By step <1>1, each $F_\alpha$ is closed and $F_\alpha\subseteq A_\alpha$, so $\{F_\alpha\}$ is locally finite.
+By step <1>4, $f^{-1}(C)=\bigcup_\alpha F_\alpha$ is closed for every closed $C\subseteq Y$.
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>2, <1>3, and <1>5 answer (a), (b), and (c).
+:::
 :::
