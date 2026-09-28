@@ -36,7 +36,7 @@ Then $\int_{\gamma_1}f(z)\dz \to I$ for $f(z) \da {\log(z) \over 1+z^a}$, so com
 \int_{\gamma_2}f(z) \dz 
 &=\int_R^\eps f(\zeta_a t) \zeta_a \dt \\
 &= -\zeta_a \int_\eps^R {\log(\zeta_a t) \over (\zeta_a t)^a + 1}\dt \\
-&= -\zeta_a \int_{\eps}^R {\log(z) + {2\pi i \over a} \over  t^a+1}\dt \\
+&= -\zeta_a \int_{\eps}^R {\log(t) + {2\pi i \over a} \over  t^a+1}\dt \\
 &\to -\zeta_a I - \zeta_a {2\pi i \over a} \int_0^\infty {1\over t^a + 1 }\dt \\
 &\da -\zeta_a I - {2\pi i\over a}\zeta_a I'
 .\]
@@ -54,7 +54,7 @@ Write $g(z) \da {1\over z^a+1}$.
 
 The contributions from the contours:
 \[
-\qty{ \int_{\gamma_1} + \int_{\gamma_2}} g(z) \to (1-e^{2\pi i })I' = -2i\sin\qty{\pi\over a}e^{i\pi\over a}
+\qty{ \int_{\gamma_1} + \int_{\gamma_2}} g(z) \to (1-\zeta_a)I' = -2i\sin\qty{\pi\over a}e^{i\pi\over a}I'
 ,\]
 using $1-e^{2i\theta}=-2i\sin(\theta)e^{i\theta}$.
 
