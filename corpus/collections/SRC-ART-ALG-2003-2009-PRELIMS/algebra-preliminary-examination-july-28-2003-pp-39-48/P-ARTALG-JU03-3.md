@@ -25,67 +25,46 @@ Justify your answer.
 :::
 
 ::: {.solution}
-**(a).**
+Let $R=\{f\in\QQ[x]: \text{the coefficient of } x \text{ in } f \text{ is } 0\}$.
+It is a subring of $\QQ[x]$: for $f=\sum f_ix^i$ and $g=\sum g_ix^i$, the coefficient of $x$ in $fg$ is $f_0g_1+f_1g_0=0$.
+Its units are the nonzero constants, since these are the units of $\QQ[x]$ and they lie in $R$.
 
-<1>1. $R$ is the subring of $\mathbb{Q}[x]$ consisting of polynomials with no $x$-term.
+<1>1. For $n\ge0$, an element $d\in R$ divides $x^n$ in $R$ if and only if $d=cx^k$ with $c\in\QQ^\times$, $0\le k\le n$, $k\ne1$, and $n-k\ne1$.
+
 ::: {.proof}
-definition.
+If $de=x^n$ with $d,e\in R$, unique factorization in $\QQ[x]$ gives $d=cx^k$ and $e=c^{-1}x^{n-k}$ with $c\in\QQ^\times$ and $0\le k\le n$.
+A monomial $x^j$ lies in $R$ exactly when $j\ne1$, so $d,e\in R$ forces $k\ne1$ and $n-k\ne1$.
+Conversely, under these conditions $e=c^{-1}x^{n-k}\in R$ and $de=x^n$.
 :::
 
-<1>2. In $\mathbb{Q}[x]$, $\gcd(x^5, x^6) = x^5$.
+<1>2. The common divisors of $x^5$ and $x^6$ in $R$ are the elements $cx^k$ with $c\in\QQ^\times$ and $k\in\{0,2,3\}$.
+
 ::: {.proof}
-standard GCD in the polynomial ring.
+By step <1>1, the divisors of $x^5$ are the $cx^k$ with $k\in\{0,2,3,5\}$, and the divisors of $x^6$ are the $cx^k$ with $k\in\{0,2,3,4,6\}$.
+The common exponents are $0,2,3$.
 :::
 
-<1>3. $x^5\in R$, since it has no $x$-term.
+<1>3. For part (a), $x^5$ and $x^6$ have no greatest common divisor in $R$.
+
 ::: {.proof}
-$x^5$ has no $x$-term, so $x^5 \in R$.
+A greatest common divisor $g$ would be a common divisor divisible in $R$ by every common divisor, in particular by $x^2$ and by $x^3$.
+By step <1>2, $g=cx^k$ with $k\in\{0,2,3\}$, and $x^3\mid g$ forces $k=3$.
+Then $x^2\mid cx^3$ in $R$ would give $cx^3=x^2e$ with $e\in R$, so $e=cx\notin R$.
+This contradiction shows that no such $g$ exists.
 :::
 
-<1>4. The common divisors of $x^5$ and $x^6$ in $R$ are the polynomials in $R$ dividing both, i.e. $x^k$ for $k \le 5$ with no $x$-term, so $k \in \{0, 2, 3, 4, 5\}$ (excluding $k = 1$ since $x$ has an $x$-term).
+<1>4. For part (b), the answer is no: $T=R$ is a subring of the Euclidean domain $S=\QQ[x]$ that is not a Euclidean domain.
+
 ::: {.proof}
-the divisors of $x^5$ in $R$ are $x^k$ for $k \in \{0, 2, 3, 4, 5\}$ (and $k = 1$ is excluded).
+The ring $\QQ[x]$ is Euclidean with the degree function.
+A Euclidean domain is a principal ideal domain [@DF04].
+In a principal ideal domain, a generator $d$ of the ideal $(a,b)$ is a greatest common divisor of $a$ and $b$: it divides $a$ and $b$, and writing $d=ua+vb$ shows that every common divisor of $a$ and $b$ divides $d$.
+By step <1>3, $x^5$ and $x^6$ have no greatest common divisor in $R$, so $R$ is not a principal ideal domain and hence not Euclidean.
 :::
 
-<1>5. The maximal common divisors are $x^5$ and $x^4$ (both divide $x^5$ and $x^6$, and neither divides the other in $R$... $x^5$ does not divide $x^4$).
-::: {.proof}
-<1>4 (both $x^4$ and $x^5$ are common divisors, and neither is a multiple of the other in $R$).
-:::
+<1>5. Q.E.D.
 
-<1>6. Hence there is no greatest common divisor (no common divisor that is a multiple of all others).
 ::: {.proof}
-<1>5.
-:::
-
-**(b).**
-
-<1>1. No, a subring of a Euclidean domain need not be a Euclidean domain.
-::: {.proof}
-answer.
-:::
-
-<1>2. Counterexample: $S = \mathbb{Q}[x]$ (a Euclidean domain) and $T = \mathbb{Q}[x^2, x^3]$ (a subring).
-::: {.proof}
-choose the example.
-:::
-
-<1>3. $T = \mathbb{Q}[x^2, x^3]$ is not a UFD: $x^6 = (x^2)^3 = (x^3)^2$ are two distinct factorizations into irreducibles.
-::: {.proof}
-$x^2$ and $x^3$ are irreducible in $T$, and $x^6$ has two factorizations.
-:::
-
-<1>4. A Euclidean domain is a UFD, so $T$ is not a Euclidean domain.
-::: {.proof}
-<1>3.
-:::
-
-<1>5. Hence a subring of a Euclidean domain need not be Euclidean.
-::: {.proof}
-<1>2 and <1>4.
-:::
-
-<1>6. Q.E.D.
-::: {.proof}
-<1>6 (a) and <1>5 (b).
+Step <1>3 answers part (a) and step <1>4 answers part (b).
 :::
 :::
