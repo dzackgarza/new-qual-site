@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-11
 kind: problem
-title: "SS 3.11: The mean value of log of 1 minus a e^(i-theta)"
+title: $\int_0^{2\pi}\log\abs{1-ae^{i\theta}}\,d\theta=0$ for $\abs a\le1$
 classification:
   areas:
   - complex-analysis
@@ -49,9 +49,9 @@ For $0<r<1$, the already-proved case gives
 \[
 \int_0^{2\pi}\log|1-re^{i\theta}|\,d\theta=0.
 \]
-As $r\uparrow1$, these functions converge pointwise off $\theta=0,2\pi$ to the boundary integrand. Moreover, splitting off a small neighborhood of $0$ and using
+As $r\uparrow1$, these functions converge pointwise off $\theta=0,2\pi$ to $\log\abs{1-e^{i\theta}}$. For $\frac12\le r<1$,
 \[
-|1-re^{i\theta}|^2=(1-r)^2+2r(1-\cos\theta)\asymp (1-r)^2+\theta^2,
+|1-re^{i\theta}|^2=(1-r)^2+4r\sin^2\frac\theta2,
 \]
-shows the logarithms are uniformly integrable there; away from $0$ convergence is uniform. Hence the integrals converge to the boundary integral, which is therefore also $0$.
+which lies between $2\sin^2\frac\theta2$ and $4$. Hence $\abs{\log|1-re^{i\theta}|}\le\log2+\abs{\log\bigl(\sqrt2\,\abs{\sin\frac\theta2}\bigr)}$, an integrable function of $\theta$ on $[0,2\pi]$. By dominated convergence, the integrals converge to the boundary integral, which is therefore also $0$.
 :::
