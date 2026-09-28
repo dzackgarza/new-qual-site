@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-QBEEJKCX
 kind: problem
-title: The nilradical is the intersection of all prime ideals, i.e.
+title: The nilradical is the intersection of all prime ideals
 classification:
   areas:
   - algebra
