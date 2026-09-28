@@ -24,9 +24,7 @@ Which one?
 
 ::: {.solution}
 For $f\colon A\to\prod_{\alpha\in J}X_\alpha$ with coordinate functions $f_\alpha=\pi_\alpha\circ f$, the theorem states that $f$ is continuous if and only if every $f_\alpha$ is continuous.
-The implication $\boxed{f\text{ continuous}\Rightarrow\text{every }f_\alpha\text{ continuous}}$ holds for the box topology, and its converse fails.
-
-<1>1. In the box topology, each projection $\pi_\alpha$ is continuous, so continuity of $f$ implies continuity of every $f_\alpha=\pi_\alpha\circ f$.
+<1>1. In the box topology, each projection $\pi_\alpha$ is continuous, so $\boxed{f\text{ continuous}\Rightarrow\text{every }f_\alpha\text{ continuous}}$.
 
 ::: {.proof}
 For $U$ open in $X_\alpha$, $\pi_\alpha^{-1}(U)=U\times\prod_{\beta\ne\alpha}X_\beta$ is a product of open sets, hence box-open.
