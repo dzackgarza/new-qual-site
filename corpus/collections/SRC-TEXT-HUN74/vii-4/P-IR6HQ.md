@@ -22,23 +22,17 @@ Show that if $q$ is the minimal polynomial of a linear transformation $\phi: E\t
 :::
 
 ::: {.solution}
-**Goal:** Prove that the minimal polynomial $q(x) \in k[x]$ of an endomorphism $\phi \in \operatorname{End}_k(E)$ on an $n$-dimensional vector space $E$ has degree at most $n$.
+Choose an ordered basis of $E$, let $A \in M_n(k)$ be the matrix of $\phi$, and let $p(x) = \det(x I_n - A) \in k[x]$ be the characteristic polynomial.
 
-<1>1. Characteristic polynomial and the Cayley–Hamilton Theorem:
-    *Proof:*
-    <2>1. Choose an ordered basis $\mathcal{B}$ for $E$ over $k$, and let $A = [\phi]_\mathcal{B} \in M_n(k)$ be the matrix representing $\phi$.
-    <2>2. The characteristic polynomial of $\phi$ is defined by $p(x) = \det(x I_n - A) \in k[x]$.
-    <2>3. By properties of the determinant, $p(x)$ is a monic polynomial of degree $\deg p = n = \dim_k E$.
-    <2>4. By the Cayley–Hamilton Theorem, $p(A) = 0$ in $M_n(k)$, which implies $p(\phi) = 0$ in $\operatorname{End}_k(E)$.
+<1>1. $p$ is monic of degree $n$ and $p(\phi) = 0$.
 
-<1>2. Divisibility by the minimal polynomial:
-    *Proof:*
-    <2>1. The minimal polynomial $q(x) \in k[x]$ of $\phi$ is the unique monic generator of the evaluation ideal $I = \{f \in k[x] : f(\phi) = 0\} \subseteq k[x]$.
-    <2>2. Since $p(\phi) = 0$, $p(x) \in I = (q(x))$, so $q(x)$ divides $p(x)$ in $k[x]$.
-    <2>3. Since $p(x) \neq 0$ and $q(x) \mid p(x)$, the degree of $q$ is bounded by the degree of $p$:
-    $$\deg q \le \deg p = n.$$
+::: {.proof}
+Expanding the determinant, the only term of degree $n$ in $x$ is the product of the diagonal entries, so $p$ is monic of degree $n$. By the Cayley--Hamilton theorem $p(A) = 0$, hence $p(\phi) = 0$.
+:::
 
-<1>3. Conclusion:
-    *Proof:*
-    The degree of the minimal polynomial $q$ satisfies $\deg q \le \dim_k E = n$.
+<1>2. Q.E.D.
+
+::: {.proof}
+The minimal polynomial $q$ is the monic generator of the ideal $\{f \in k[x] : f(\phi) = 0\}$. By step <1>1, $p$ lies in this ideal, so $q \mid p$. Since $p \neq 0$, $\deg q \le \deg p = n$.
+:::
 :::
