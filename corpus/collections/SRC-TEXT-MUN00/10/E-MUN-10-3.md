@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-3
 kind: problem
-title: Order types of $\{1,2\} \times \mathbb{Z}_+$ and $\mathbb{Z}_+ \times \{1,2\}$
+title: Order types of $\{1,2\} \times \ZZ_+$ and $\ZZ_+ \times \{1,2\}$
 classification:
   areas:
   - topology
