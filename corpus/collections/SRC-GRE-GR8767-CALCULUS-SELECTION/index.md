@@ -48,6 +48,6 @@ source:
 ---
 
 ::: {.remark}
-Twenty-six calculus questions selected from the GRE Mathematics Test, Form GR8767, in the form's numbering and order; each card's ID carries its question number on the form.
-The selection is followed by the form's answer key and percentage worksheet, which is not carded.
+Twenty-six calculus questions selected from the GRE Mathematics Test, Form GR8767, in the form's numbering and order.
+The document ends with the form's answer key and percentage worksheet.
 :::
