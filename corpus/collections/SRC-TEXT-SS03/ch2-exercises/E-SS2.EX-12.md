@@ -47,41 +47,27 @@ $$
 :::
 
 ::: {.solution}
-**Part (a).**
+<1>1. (a) There is a holomorphic $f$ on $\mathbb D$ with $\Re f = u$, and $\Im f$ is unique up to an additive real constant.
 
-<1>1. Define $g(z) = 2\frac{\partial u}{\partial z} = u_x - i u_y$.
+<2>1. $g = 2\frac{\partial u}{\partial z} = u_x - i u_y$ is holomorphic on $\mathbb D$.
+
 ::: {.proof}
-$\frac{\partial u}{\partial z} = \frac{1}{2}(u_x - i u_y)$.
+Since $u$ is $C^2$, $g$ is $C^1$ and $\frac{\partial g}{\partial \bar z} = 2\frac{\partial^2 u}{\partial \bar z \partial z} = \frac{1}{2}\Delta u = 0$.
 :::
 
-<1>2. $g$ is holomorphic.
+<2>2. There is a holomorphic $f$ on $\mathbb D$ with $\Re f = u$.
+
 ::: {.proof}
-$\frac{\partial g}{\partial \bar z} = 2\frac{\partial^2 u}{\partial \bar z \partial z} = \frac{1}{2}\Delta u = 0$ (since $u$ is harmonic), so $g$ satisfies the Cauchy–Riemann equations.
+A holomorphic function on a disc has a primitive, so there is $F$ with $F' = g$. Then $\partial_x\Re F = \Re F' = \Re g = u_x$ and $\partial_y\Re F = \Re(iF') = \Re(ig) = u_y$, so $\Re F - u$ has zero gradient on the connected set $\mathbb D$ and equals a real constant $c$. Put $f = F - c$.
 :::
 
-<1>3. Since $\DD$ is simply connected, $g$ has a primitive $F$ with $F' = g$.
+<2>3. Q.E.D.
+
 ::: {.proof}
-a holomorphic function on a simply connected domain has a primitive.
+Step <2>2 gives existence. If $\Re f_1 = \Re f_2 = u$, then $f_1 - f_2$ is holomorphic with zero real part, hence constant by [[E-SS1.EX-13]], so $f_1 - f_2 = ic$ with $c$ real.
 :::
 
-<1>4. $\operatorname{Re} F$ differs from $u$ by a real constant.
-::: {.proof}
-$\frac{\partial}{\partial x}\operatorname{Re} F = \operatorname{Re} F' = \operatorname{Re} g = u_x$, and $\frac{\partial}{\partial y}\operatorname{Re} F = \operatorname{Re}(iF') = \operatorname{Re}(ig) = u_y$; hence $\operatorname{Re} F$ and $u$ have the same gradient, so they differ by a constant.
-:::
-
-<1>5. Hence $f = F - c$ (for a suitable real constant $c$) is holomorphic with $\operatorname{Re} f = u$.
-::: {.proof}
-<1>4.
-:::
-
-<1>6. The imaginary part is unique up to an additive real constant.
-::: {.proof}
-if $\operatorname{Re} f_1 = \operatorname{Re} f_2 = u$, then $f_1 - f_2$ is holomorphic with zero real part, hence constant (purely imaginary), so $f_1 - f_2 = ic$ for a real constant $c$.
-:::
-
-**Part (b).**
-
-<1>1. By part (a), $u = \operatorname{Re} f$ for a holomorphic $f$ on $\DD$, continuous on $\overline{\DD}$.
+<1>2. By part (a), $u = \operatorname{Re} f$ for a holomorphic $f$ on $\DD$, continuous on $\overline{\DD}$.
 ::: {.proof}
 part (a) and the hypothesis that $u$ is continuous on the closure.
 :::
