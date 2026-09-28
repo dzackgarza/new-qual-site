@@ -113,7 +113,7 @@ A[t]/(tf-1)\cong A_f.
 $$
 
 Since $A$ is a domain, its localization $A_f$ is a domain. Thus $(tf-1)$ is
-prime and $Y$ is an affine variety in the source's irreducible convention.
+prime and $Y$ is an irreducible affine variety.
 :::
 
 <1>2. Projection onto the first $n$ coordinates restricts to an isomorphism
@@ -169,9 +169,8 @@ $$
 D(f)\cong Y.
 $$
 Step <1>1 shows that $Y$ is affine and computes its coordinate ring as
-$A_f$. Transporting this structure across the isomorphism gives the result.
-This is the graph construction recorded in
-[[PR-WZGOQ|hypersurface complements are affine]].
+$A_f$. Transporting this structure across the isomorphism gives the result;
+see also [[PR-WZGOQ]].
 :::
 
 <1>4. Q.E.D.
