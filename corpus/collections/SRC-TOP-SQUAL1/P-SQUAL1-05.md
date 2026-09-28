@@ -15,7 +15,5 @@ audit:
 ::: {.problem}
 Let $x,y,z$ be three distinct points of the $2$-torus $T^2$.
 Compute
-\[
-\pi_1\bigl(T^2\setminus\{x,y,z\}\bigr).
-\]
+$$\pi_1\bigl(T^2\setminus\{x,y,z\}\bigr).$$
 :::
