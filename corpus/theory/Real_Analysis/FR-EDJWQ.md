@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FR-EDJWQ
 kind: proof
-title: Relationship between continuity and differentiability
+title: Differentiability implies continuity
 classification:
   areas:
   - real-analysis
