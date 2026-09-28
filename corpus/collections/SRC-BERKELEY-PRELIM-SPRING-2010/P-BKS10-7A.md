@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-7A
 kind: problem
-title: A residue integral with x sine two x
+title: Evaluation of $\int_0^\infty\frac{x\sin 2x}{x^2+3}\,dx$ by residues
 classification:
   areas:
   - prelim
@@ -25,9 +25,9 @@ audit:
 
 ::: {.problem}
 Use residues to compute
-\[
+$$
 \int_0^\infty \frac{x\sin(2x)}{x^2+3}\,dx.
-\]
+$$
 :::
 
 ::: {.solution}
