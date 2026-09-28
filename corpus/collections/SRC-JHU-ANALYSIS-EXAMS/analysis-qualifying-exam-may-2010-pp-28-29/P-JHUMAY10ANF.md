@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANF
 kind: problem
-title: 'Convolution with a compactly supported kernel maps $L^p$ to $L^q$ exactly in the expected direction'
+title: 'Convolution with a compactly supported kernel maps $L^p$ to $L^q$ exactly when $p\le q$'
 classification:
   areas:
   - real-analysis
