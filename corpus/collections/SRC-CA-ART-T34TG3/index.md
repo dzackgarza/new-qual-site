@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-CA-ART-T34TG3
 kind: collection
-title: Spring 2020 HW 3 (complex-analysis)
+title: Complex analysis homework 3, Spring 2020
 classification:
   areas:
   - complex-analysis
