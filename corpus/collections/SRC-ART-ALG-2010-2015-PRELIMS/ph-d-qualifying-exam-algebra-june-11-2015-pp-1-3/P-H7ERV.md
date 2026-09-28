@@ -24,8 +24,6 @@ Prove that there are at most two fields $M \subseteq \overline{F}$ conjugate to 
 :::
 
 ::: {.solution}
-**Goal.** For $[K:F] = 2$ and $L/K$ finite Galois, show there are at most two fields conjugate to $L$ over $F$.
-
 <1>1. The $F$-conjugates of $L$ are the images $\sigma(L)$ for $\sigma \in \operatorname{Aut}_F(\overline F)$.
 ::: {.proof}
 an $F$-isomorphism $L \to M$ extends to an automorphism of $\overline F$ fixing $F$, so $M = \sigma(L)$ for some $\sigma$.
@@ -67,11 +65,11 @@ $\sigma|_K \in \operatorname{Aut}_F(K)$, which has two elements.
 
 <1>6. Hence there are at most two $F$-conjugates of $L$.
 ::: {.proof}
-by <1>4.3, $\sigma(L)$ is determined by $\sigma|_K$, and by <1>5.2 there are at most two such restrictions.
+By step <1>4, $\sigma(L)$ is determined by $\sigma|_K$, and by step <1>5 there are at most two such restrictions.
 :::
 
 <1>7. Q.E.D.
 ::: {.proof}
-<1>6 is the claim.
+Step <1>6 is the claim.
 :::
 :::
