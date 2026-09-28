@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GPFKM
 kind: problem
-title: Estimating and conformal maps
+title: Bound on $\abs{f(2i)}$ for $f:\HH\to\DD$ with $f(i)=0$
 classification:
   areas:
   - complex-analysis
