@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK90S-10
 kind: problem
-title: Exhibit two nonisomorphic nonabelian groups of orders $24$, $30$, and $40$
+title: Two nonisomorphic nonabelian groups of each of the orders $24$, $30$, and $40$
 classification:
   areas: [prelim]
   topics: []
