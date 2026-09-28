@@ -22,68 +22,49 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The case $U = \RR^n$ is handled directly: the unit cubes $\prod_{i=1}^n [m_i, m_i+1]$ ($m_i \in \ZZ$) are closed, countable, cover $\RR^n$, and have pairwise disjoint interiors (almost disjoint).
-Henceforth assume $U \neq \RR^n$.
+A \dfn{dyadic cube} of level $k \geq 0$ is a cube $\prod_{i=1}^n [m_i 2^{-k}, (m_i+1)2^{-k}]$ with $m_i \in \ZZ$. Its \dfn{parent} is the unique dyadic cube of level $k-1$ containing it, for $k \geq 1$. Closed cubes are \dfn{almost disjoint} if their interiors are pairwise disjoint. Let $U \subseteq \RR^n$ be open.
 
-<1>2. Call a cube *dyadic* if it has the form $\prod_{i=1}^n [m_i 2^{-k}, (m_i+1)2^{-k}]$ for integers $m_i$ and $k \ge 0$.
-<2>1. The dyadic cubes of a fixed level $k$ have pairwise disjoint interiors and cover $\RR^n$.
+<1>1. The dyadic cubes of a fixed level are countably many, are almost disjoint, and cover $\RR^n$. Two dyadic cubes are either almost disjoint or one contains the other.
+
 ::: {.proof}
-they form the standard grid of side $2^{-k}$.
-:::
-<2>2. Any two dyadic cubes have either disjoint interiors or a containment relation.
-::: {.proof}
-each dyadic cube is contained in exactly one dyadic cube of the next coarser level (its parent), so two cubes of the same level have disjoint interiors, while two cubes of different levels are disjoint or nested.
+The cubes of level $k$ are indexed by $\ZZ^n$ and form the grid of side $2^{-k}$. If $Q$ has level $k$ and $Q'$ has level $k' \leq k$, then $Q$ lies in exactly one cube of level $k'$, its ancestor; either that ancestor is $Q'$, or it is almost disjoint from $Q'$ and hence so is $Q$.
 :::
 
-<1>3. Every point $x \in U$ lies in a dyadic cube contained in $U$.
-<2>1. There is an open ball $B(x,r) \subseteq U$.
+<1>2. If $U = \RR^n$, the level-$0$ dyadic cubes give the required union.
+
 ::: {.proof}
-$U$ is open.
-:::
-<2>2. Any dyadic cube containing $x$ with side length $s < r/\sqrt n$ is contained in $B(x,r)$, hence in $U$.
-::: {.proof}
-a cube of side $s$ containing $x$ lies inside the ball of radius $\sqrt n\, s$ about $x$ (its diameter is $\sqrt n \, s$). <2>3. Q.E.D. Proof: <2>1 and <2>2.
+Step <1>1.
 :::
 
-<1>4. Every point $x \in U$ lies in a *maximal* dyadic cube contained in $U$ (one whose parent is not contained in $U$). <2>1. Let $Q_k(x)$ be the unique dyadic cube of side $2^{-k}$ containing $x$.
-Then $\bigcup_{k \ge 0} Q_k(x) = \RR^n$.
+<1>3. Assume $U \neq \RR^n$, and let $\mathcal F$ be the set of dyadic cubes $Q \subseteq U$ that are of level $0$ or whose parent is not contained in $U$. Then $U = \bigcup_{Q \in \mathcal F} Q$.
+
+<2>1. Every $x \in U$ lies in some dyadic cube contained in $U$.
+
 ::: {.proof}
-the cubes $Q_k(x)$ are nested and grow with decreasing $k$: given $z \in \RR^n$, once $2^{-k} > \max_i |x_i - z_i|$, the point $z$ shares a dyadic cube of level $k$ with $x$.
-:::
-<2>2. Since $U \ne \RR^n$, some $Q_k(x)$ is not contained in $U$.
-::: {.proof}
-otherwise $U \supseteq \bigcup_k Q_k(x) = \RR^n$ by <2>1. <2>3. The set $\{k : Q_k(x) \subseteq U\}$ is nonempty and finite, hence has a largest element $k_0$.
-:::
-::: {.proof}
-nonempty by <1>3; finite by <2>2. <2>4. $Q_{k_0}(x)$ is a dyadic cube contained in $U$ whose parent is not contained in $U$.
-:::
-::: {.proof}
-maximality of $k_0$ in <2>3. <2>5. Q.E.D. Proof: <2>3 and <2>4.
+Choose $r > 0$ with $B(x,r) \subseteq U$. A dyadic cube containing $x$ of side $2^{-k} < r/\sqrt n$ has diameter less than $r$, so it lies in $B(x,r)$.
 :::
 
-<1>5. Let $\mathcal F$ be the family of all dyadic cubes contained in $U$ whose parent is not contained in $U$.
-Then $U = \bigcup_{Q \in \mathcal F} Q$.
+<2>2. Every $x \in U$ lies in some $Q \in \mathcal F$.
+
 ::: {.proof}
-$\bigcup \mathcal F \subseteq U$ by definition; conversely, every $x \in U$ lies in such a cube by <1>4.
+For each $k$ choose a dyadic cube $Q_k(x) \ni x$ of level $k$ with $Q_{k+1}(x) \subseteq Q_k(x)$, starting from a level-$0$ cube containing $x$ and descending by children. By step <2>1 some $Q_k(x) \subseteq U$ for large $k$, since every level-$k$ cube containing $x$ has diameter $\sqrt n\,2^{-k}$. Let $k_0$ be the least $k$ with $Q_k(x) \subseteq U$. Then either $k_0 = 0$, or the parent $Q_{k_0-1}(x)$ is not contained in $U$; in both cases $Q_{k_0}(x) \in \mathcal F$.
 :::
 
-<1>6. The family $\mathcal F$ is countable and almost disjoint.
-<2>1. $\mathcal F$ is countable.
-::: {.proof}
-level $k$ has exactly $2^{nk}$ dyadic cubes, so $\mathcal F$ is a subset of a countable union of finite sets.
-:::
-<2>2. The members of $\mathcal F$ have pairwise disjoint interiors.
-::: {.proof}
-by <1>2<2>2, two distinct dyadic cubes have disjoint interiors or one strictly contains the other.
-:::
-Strict containment $Q \subsetneq Q'$ is impossible in $\mathcal F$: then $Q'$ contains the parent of $Q$, and since the parent is not contained in $U$ (by maximality of $Q$), neither is $Q'$, contradicting $Q' \in \mathcal F$.
 <2>3. Q.E.D.
+
 ::: {.proof}
-<2>1 and <2>2.
+Each $Q \in \mathcal F$ lies in $U$, and step <2>2 gives the reverse inclusion.
 :::
 
-<1>7. Q.E.D.
+<1>4. $\mathcal F$ is countable and almost disjoint.
+
 ::: {.proof}
-<1>5 gives the covering, <1>6 gives countability and almost disjointness, and <1>1 handles $U = \RR^n$.
+$\mathcal F$ is a subset of the countable set of all dyadic cubes. Let $Q \neq Q'$ be in $\mathcal F$. By step <1>1 they are almost disjoint or one contains the other, say $Q \subsetneq Q'$. Then $Q$ has level at least $1$, and $Q'$ contains the parent of $Q$ by step <1>1. The parent is not contained in $U$ because $Q \in \mathcal F$, so $Q' \not\subseteq U$, a contradiction.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+Step <1>2 handles $U = \RR^n$; otherwise steps <1>3 and <1>4 write $U$ as the countable almost disjoint union of the cubes in $\mathcal F$.
 :::
 :::
