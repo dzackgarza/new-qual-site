@@ -45,15 +45,6 @@ e. A field extension $K/F$ which is finite dimensional but not separable.
 f. An irreducible fifth degree polynomial over $\mathbb{Q}$ which is solvable by radicals.
 :::
 
-::: {.remark}
-With the prescribed inclusions $F\subset E\subset K$,
-the expressions $F/E$ and $E/K$ reverse the field-extension
-directions and do not define extensions via these inclusions.
-Parts (a) and (b) use the meaningful directions $E/F$ and
-$K/E$, respectively. No finiteness assumption on $K/F$
-is needed in part (b).
-:::
-
 ::: {.solution}
 <1>1. In part (a), take $F=\mathbb Q$,
 $E=\mathbb Q(a)$, and $K=\mathbb Q(a,\zeta)$, where
@@ -85,8 +76,7 @@ Its divisor $q_a$ therefore does the same.
 Thus every element of $K$ is separable over $E$, and
 every irreducible polynomial over $E$ with a root in
 $K$ splits over $K$. This proves that $K/E$ is algebraic,
-normal, and separable, hence Galois, without assuming
-that its degree is finite.
+normal, and separable, hence Galois.
 :::
 
 <1>3. In part (c), take $\mathbb F_2[T]/(T^3+T+1)$.
@@ -147,4 +137,10 @@ power in the preceding field. Thus every root of the
 irreducible fifth-degree polynomial lies in a radical
 extension, which is exactly solvability by radicals.
 :::
+:::
+
+::: {.remark}
+The source writes the extensions in parts (a) and (b) as $F/E$
+and $E/K$. With $F\subset E\subset K$ these are the extensions
+$E/F$ and $K/E$, as stated here.
 :::
