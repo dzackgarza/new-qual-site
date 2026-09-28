@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-8A
 kind: problem
-title: A group of order forty-eight has a large normal 2-subgroup
+title: A group of order $48$ has a normal subgroup of order $16$ or $8$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(G\) be a group of order \(48\). Show that \(G\) contains a normal subgroup of order \(16\) or \(8\).
+Let $G$ be a group of order $48$. Show that $G$ contains a normal subgroup of order $16$ or $8$.
 :::
 
 ::: {.solution}
