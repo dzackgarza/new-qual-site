@@ -13,7 +13,8 @@ topics:
 
 [[FE-SCHREPFUNCTORS]]
 
-$\PP^n$ is not described by tuples of functions but by line bundles with generating sections, so its functor is checked to be representable by covering it with the subfunctors on which one section generates.
+The functor of $\PP^n$ sends a scheme $T$ to the set of isomorphism classes of pairs $(\mcl;s_0,\ldots,s_n)$ of an invertible sheaf $\mcl$ on $T$ and global sections generating it.
+It is covered by the open subfunctors on which $s_i$ generates $\mcl$, each represented by $\AA^n$, and gluing these gives its representability.
 
 [[D-OPENSUBFUNCTOR]]
 
