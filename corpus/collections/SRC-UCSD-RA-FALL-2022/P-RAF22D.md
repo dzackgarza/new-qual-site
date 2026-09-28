@@ -38,12 +38,12 @@ Let $(X, d)$ be a compact metric space.
 :::
 
 ::: {.solution}
-<1>1. Recall the definitions.
+<1>1. (1) A metric space is \dfn{separable} if it contains a countable dense subset. A topological space is \dfn{second countable} if its topology has a countable base.
 ::: {.proof}
-A metric space is **separable** if it contains a countable dense subset. A topological space is **second countable** if its topology has a countable base.
+These are the definitions.
 :::
 
-<1>2. Construct a countable base for $X$.
+<1>2. (2) $X$ is second countable.
 ::: {.proof}
 For every $n\ge1$, compactness gives a finite set
 \[
@@ -74,7 +74,7 @@ x\in B(q,r)\subset B(x,\varepsilon)\subset U.
 Hence $X$ is second countable.
 :::
 
-<1>3. Build a countable dense subset of $C(X,\mathbb R)$.
+<1>3. (3) $C(X,\mathbb R)$ is separable in the uniform norm.
 ::: {.proof}
 For each $q\in D$, define
 \[
