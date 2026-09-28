@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let $d _ { k } : = \operatorname { L C M } \{ 1 , 2 , \dots , k \}$ (the least common multiple) and $\begin{array} { r } { I _ { m } = \int _ { 0 } ^ { 1 } x ^ { m } ( 1 - } \end{array}$ $x ) ^ { m } \mathrm { d } x$ . Show $d _ { 2 m + 1 } I _ { m }$ is an integer, and use this to show that $d _ { 2 m + 1 } \geq 2 ^ { 2 m }$
+Let $d _ { k } : = \operatorname { L C M } \{ 1 , 2 , \dots , k \}$ (the least common multiple) and $I _ { m } = \int _ { 0 } ^ { 1 } x ^ { m } ( 1 - x ) ^ { m } \mathrm { d } x$ . Show $d _ { 2 m + 1 } I _ { m }$ is an integer, and use this to show that $d _ { 2 m + 1 } \geq 2 ^ { 2 m }$
 :::
 
 ::: {.solution}
