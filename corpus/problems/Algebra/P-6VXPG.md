@@ -46,13 +46,13 @@ Every polynomial relation over \(\mathbb Q\) among the ordered roots is transpor
 P(\alpha_{\sigma(1)},\dots,\alpha_{\sigma(n)})=0
 \quad(\sigma\in S_n).
 \]
-This symmetry does **not** mean that all relations are symmetric polynomials; it says only that the set of rational relations is \(S_n\)-stable.
+Thus the ideal of polynomials \(P\in\mathbb Q[x_1,\dots,x_n]\) with \(P(\alpha_1,\dots,\alpha_n)=0\) is stable under permuting the variables.
 
 The discriminant \(\Delta(f)\) is not a square in \(\mathbb Q\), because otherwise the Galois group would lie in \(A_n\). For \(n\ge3\), the unique index-two subgroup of \(S_n\) is \(A_n\), so the unique quadratic intermediate field is
 \[
 \mathbb Q(\sqrt{\Delta(f)}).
 \]
-(For \(n=2\), this statement is the same quadratic extension itself.)
+For \(n=2\), \(K=\mathbb Q(\sqrt{\Delta(f)})\).
 
 Finally, complex conjugation is an element of \(G\); as a permutation of the roots it fixes the real roots and swaps each nonreal conjugate pair. Thus its cycle type records exactly the number of real and nonreal roots.
 :::
