@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF91-4
 kind: problem
-title: Decompose a real matrix into skew, traceless symmetric, and scalar parts
+title: Decomposition of a real matrix into antisymmetric, traceless symmetric, and scalar parts
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
