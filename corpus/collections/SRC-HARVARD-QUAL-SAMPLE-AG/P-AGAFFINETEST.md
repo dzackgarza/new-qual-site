@@ -110,9 +110,9 @@ X_{f_i}\xrightarrow{\sim}D(f_i).
 The equation $\sum_i a_if_i=1$ also says that the distinguished opens $D(f_i)$ cover $\operatorname{Spec}A$.  Thus $\eta_X$ is an isomorphism on open covers of source and target, hence globally.  Apply <1>1.
 :::
 
-<1>4. These criteria distinguish affineness from merely having many global functions.
+<1>4. The projective line and the punctured affine plane are not affine: for both, the map $\eta_X$ of <1>1 is not an isomorphism.
 ::: {.proof}
-For example,
+For the projective line,
 \[
 \Gamma(\mathbb P^1_k,\mathcal O)=k,
 \]
@@ -122,7 +122,11 @@ so the canonical map in <1>1 is
 \]
 which is not an isomorphism.  Thus $\mathbb P^1$ is not affine.
 
-Likewise, having a ring of global functions that happens to be an affine coordinate ring is not enough: the comparison morphism itself must recover the scheme.
+For $X=\mathbb A^2_k\setminus\{0\}$, Hartogs extension gives
+\[
+\Gamma(X,\mathcal O_X)=k[x,y],
+\]
+so $\eta_X$ is the open immersion $X\hookrightarrow\mathbb A^2_k$, which misses the origin and is not an isomorphism.  Thus $X$ is not affine, although its ring of global functions is the coordinate ring of an affine scheme.
 :::
 
 <1>5. Q.E.D.
