@@ -11,7 +11,7 @@ review: draft
 ---
 
 ::: {.problem}
-Let $D = \{ z \in \mathbb { C } : | z | < 1 \}$ . Let $f \colon D  \mathbb { C }$ be holomorphic, and suppose that the restriction of $f$ to $D - \{ 0 \}$ is injective.
+Let $D = \{ z \in \mathbb { C } : | z | < 1 \}$ . Let $f \colon D \to \mathbb { C }$ be holomorphic, and suppose that the restriction of $f$ to $D - \{ 0 \}$ is injective.
 Prove that $f$ is injective.
 :::
 
