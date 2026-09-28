@@ -23,40 +23,35 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Rewrite the difference: $f \ast \phi_t(x) - f(x) = \int \phi(y)\big(f(x - ty) - f(x)\big)\,dy$.
+Let $f \in L^1(\RR^n)$, let $\phi \in L^1(\RR^n)$ with $\int \phi = 1$, and put $\phi_t(x) = t^{-n}\phi(x/t)$. For $h \in \RR^n$ let $\omega(h) \coloneqq \int \abs{f(x - h) - f(x)}\,dx$.
+
+<1>1. $f \ast \phi_t(x) - f(x) = \int \phi(y)\big(f(x - ty) - f(x)\big)\,dy$ for a.e. $x$.
+
 ::: {.proof}
-substitute $u = ty$ in $f \ast \phi_t(x) = \int f(x - ty)\phi(y)\,dy$, and use $\int \phi = 1$ to write $f(x) = f(x)\int\phi(y)\,dy$.
+Substituting $u = ty$ in $f \ast \phi_t(x) = \int f(x - u)\phi_t(u)\,du$ gives $\int f(x - ty)\phi(y)\,dy$, and $f(x) = \int f(x)\phi(y)\,dy$ because $\int \phi = 1$.
 :::
 
-<1>2. $\|f \ast \phi_t - f\|_1 \le \int |\phi(y)|\,\|\tau_{-ty}f - f\|_1\,dy$.
+<1>2. $\|f \ast \phi_t - f\|_1 \le \int |\phi(y)|\,\omega(ty)\,dy$.
+
 ::: {.proof}
-take $L^1$ norms in $x$ in <1>1 and use Minkowski's inequality for integrals: the $L^1$ norm of the integral is at most the integral of the $L^1$ norms.
+Take absolute values in step <1>1, integrate in $x$, and exchange the order of integration by Tonelli's theorem.
 :::
 
-<1>3. For each fixed $y$, $\|\tau_{-ty}f - f\|_1 \to 0$ as $t \to 0$.
+<1>3. $\omega(h) \le 2\|f\|_1$ for every $h$, and $\omega(h) \to 0$ as $h \to 0$.
+
 ::: {.proof}
-strong continuity of translation in $L^1(\RR^n)$.
+The bound is the triangle inequality with translation invariance of the integral. The limit is continuity of translation in $L^1$.
 :::
 
-<1>4. Given $\eps > 0$, the integral in <1>2 is $< \eps$ for all sufficiently small $t$.
-<2>1. Choose $M$ with $2\|f\|_1\int_{|y| > M}|\phi(y)|\,dy < \eps/2$.
+<1>4. $\int |\phi(y)|\,\omega(ty)\,dy \to 0$ as $t \to 0$.
+
 ::: {.proof}
-$\phi \in L^1$, so the tail integral tends to $0$ as $M \to \infty$; also $\|\tau_{-ty}f - f\|_1 \le 2\|f\|_1$.
-:::
-<2>2. $\sup_{|y| \le M}\|\tau_{-ty}f - f\|_1 \to 0$ as $t \to 0$.
-::: {.proof}
-the translates $\{-ty : |y| \le M\}$ lie in the ball of radius $tM$ about $0$, and $\|\tau_h f - f\|_1 \to 0$ as $h \to 0$ by <1>3. <2>3. For small $t$, $\int_{|y| \le M}|\phi(y)|\,\|\tau_{-ty}f - f\|_1\,dy \le \|\phi\|_1 \sup_{|y|\le M}\|\tau_{-ty}f - f\|_1 < \eps/2$.
-:::
-::: {.proof}
-<2>2 and $\phi \in L^1$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-<2>1 bounds the tail by $\eps/2$ and <2>3 bounds the main part by $\eps/2$, so the whole integral in <1>2 is $< \eps$.
+For each $y$, $\omega(ty) \to 0$ as $t \to 0$ by step <1>3, and $|\phi(y)|\,\omega(ty) \le 2\|f\|_1|\phi(y)|$, which is integrable. The dominated convergence theorem applies along every sequence $t_k \to 0$.
 :::
 
 <1>5. Q.E.D.
+
 ::: {.proof}
-<1>2 and <1>4 give $\|f \ast \phi_t - f\|_1 \to 0$ as $t \to 0$.
+Steps <1>2 and <1>4.
 :::
 :::
