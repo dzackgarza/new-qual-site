@@ -31,23 +31,31 @@ L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
 .\]
 :::
 ::: {.solution}
-For counting measure, the inclusions are $\ell^1 \subset \ell^2 \subset \ell^\infty$. Let $E \subseteq \RR^n$ with $\mu(E) < \infty$ and $f \in L^p(E)$.
+<1>1. If $0 < \mu(E) < \infty$ and $f$ is measurable on $E$, then $\norm{f}_p \to \norm{f}_\infty$ as $p \to \infty$.
 
-<1>1. $\norm{f}_{L^p} \to \norm{f}_\infty$ as $p \to \infty$.
-    ::: {.proof}
-    for $p > q \ge 1$ with $f \in L^p \cap L^q$, Hölder gives $\norm{f}_p \le \norm{f}_\infty \mu(E)^{1/p}$, so $\limsup \norm{f}_p \le \norm{f}_\infty$. Conversely, if $\norm{f}_\infty > M$, then $\mu\{|f| > M\} > 0$ and $\norm{f}_p \ge M\,\mu\{|f|>M\}^{1/p}$, so $\liminf \norm{f}_p \ge M$; letting $M \nearrow \norm{f}_\infty$ gives $\liminf \norm{f}_p \ge \norm{f}_\infty$.
-    :::
-<1>2. The converse of the DCT fails.
-    ::: {.proof}
-    take $f_n = n\chi_{[1/(n+1),\,1/n)}$ on $[0,1]$; then $\int f_n = n/(n(n+1)) = 1/(n+1) \to 0 = \int 0$, but $\sup_n f_n$ is not integrable ($\int \sup_n f_n = \sum_n \frac{1}{n+1} = \infty$), so no dominating $g \in L^p$ exists.
-    :::
-<1>3. Continuity in $L^p$: if $f$ is uniformly continuous, then $\norm{\tau_h f - f}_p \to 0$ as $h \to 0$.
-    ::: {.proof}
-    $\tau_h f(x) = f(x-h)$. For uniformly continuous $f$: first for $f \in L^p$ with compact support, uniform continuity makes $\norm{\tau_h f - f}_\infty \to 0$, hence $\norm{\tau_h f - f}_p \le \mu(\supp)^{1/p}\norm{\tau_h f - f}_\infty \to 0$; for general $f \in L^p$, truncate to a large set where the $L^p$ tail is small ($\eps/3$ argument), using that the truncation is uniformly continuous and the tail is controlled by $L^p$-continuity of translation on a finite-measure set.
-    :::
-<1>4. $L^\infty(E) \subset L^2(E) \subset L^1(E)$ when $\mu(E) < \infty$.
-    ::: {.proof}
-    $\norm{f}_1 \le \mu(E)^{1/2}\norm{f}_2$ and $\norm{f}_2 \le \mu(E)^{1/2}\norm{f}_\infty$ by Hölder; so $f \in L^\infty \Rightarrow f \in L^2 \Rightarrow f \in L^1$. The discrete analogues (counting measure) run the other way: $\norm{a}_{\ell^2} \le \norm{a}_{\ell^1}$ and $\norm{a}_{\ell^\infty} \le \norm{a}_{\ell^2}$, i.e. $\ell^1(\ZZ) \subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)$ (the card's line has the first inclusion reversed); a counterexample to $\ell^2 \subset \ell^1$ is $a_n = 1/n$.
-    :::
-<1>5. Q.E.D.
+::: {.proof}
+$\norm{f}_p \le \norm{f}_\infty\,\mu(E)^{1/p}$, so $\limsup_p \norm{f}_p \le \norm{f}_\infty$. If $0 < M < \norm{f}_\infty$, then $\mu\theset{|f| > M} > 0$ and $\norm{f}_p \ge M\,\mu\theset{|f|>M}^{1/p} \to M$, so $\liminf_p \norm{f}_p \ge M$. See [[E-TVBUC]].
+:::
+
+<1>2. The converse of the dominated convergence theorem fails.
+
+::: {.proof}
+On $[0,1]$, $f_n = n\chi_{[1/(n+1),\,1/n)}$ satisfies $f_n \to 0$ pointwise and $\int f_n = \frac{1}{n+1} \to 0$. Any $g$ with $f_n \le g$ a.e. for all $n$ has $g \ge \sup_n f_n$, and $\int (\sup_n f_n)^p = \sum_n \frac{n^{p-1}}{n+1} = \infty$ for $1 \le p < \infty$. See [[E-PUNDP]].
+:::
+
+<1>3. If $f\colon \RR^n \to \CC$ is uniformly continuous, then $\norm{\tau_h f - f}_\infty \to 0$, and if moreover $f \in L^p$ with $1 \le p < \infty$, then $\norm{\tau_h f - f}_p \to 0$.
+
+::: {.proof}
+Let $\tau_h f(x) = f(x - h)$ and $\omega(r) = \sup\theset{|f(x) - f(y)| : |x - y| \le r}$, which tends to $0$ with $r$. Then $\norm{\tau_h f - f}_\infty \le \omega(|h|)$. For $p < \infty$ and $\eps > 0$, choose $R$ with $\int_{|x| > R}|f|^p < \eps$; for $|h| \le 1$, the integral of $|\tau_h f - f|^p$ over $|x| > R + 1$ is less than $2^p\eps$, and over $|x| \le R + 1$ it is at most $\omega(|h|)^p\, m(B(0, R+1))$. See [[E-KO5PK]].
+:::
+
+<1>4. If $\mu(X) < \infty$, then $L^\infty(X) \subseteq L^2(X) \subseteq L^1(X)$; for counting measure on $\ZZ$, $\ell^1(\ZZ) \subseteq \ell^2(\ZZ) \subseteq \ell^\infty(\ZZ)$.
+
+::: {.proof}
+The Cauchy--Schwarz inequality gives $\norm{f}_1 \le \mu(X)^{1/2}\norm{f}_2$, and $\norm{f}_2 \le \mu(X)^{1/2}\norm{f}_\infty$. For sequences, $|a_n| \le \norm{a}_{\ell^2}$ for each $n$, and $\sum|a_n|^2 \le \left(\sup_n|a_n|\right)\sum_n|a_n| \le \norm{a}_{\ell^1}^2$. The sequence $a_n = 1/n$ for $n \ge 1$, $a_n = 0$ otherwise, lies in $\ell^2 \setminus \ell^1$. See [[E-SDQ4U]].
+:::
+:::
+
+::: {.remark}
+Erratum: the second line of the displayed inclusions should read $\ell^1(\ZZ) \subset \ell^2(\ZZ) \subset \ell^\infty(\ZZ)$. In the first part, $X$ is the set $E$.
 :::
