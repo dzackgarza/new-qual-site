@@ -108,7 +108,7 @@ $$
 Hence the inside definition $F=f$ and the outside reciprocal-reflection have
 the same continuous boundary values on the unit circle.
 
-Here is an explicit local gluing argument. Fix $p$ on
+Fix $p$ on
 the unit circle and use the fractional coordinate
 $$
 w=i\frac{1-z/p}{1+z/p},\qquad z=p\frac{i-w}{i+w}.
