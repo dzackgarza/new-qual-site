@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-FBMYQ
 kind: theorem
 title: Excision
-slogan: 'Removing a suitably interior subspace does not change relative homology.'
+slogan: 'For $Z\subseteq A\subseteq X$ with $\cl_X(Z)\subseteq A^\circ$, removing $Z$ from $X$ and $A$ does not change $H_*(X, A)$.'
 classification:
   areas:
   - topology
