@@ -53,12 +53,12 @@ Since $1 < x < 3$, $0 < x - 1 < 2$, which implies $0 < \text{Im}(\phi_1(z)) < \p
 
 ### Step 3: Conformal map from the upper half-plane to the upper half unit disk
 
-<1>3. **The inverse Joukowsky map $\phi_3(u) = -u + \sqrt{u^2 - 1}$ (with principal square root) maps $\mathbb{H}$ conformally onto the upper half unit disk $\mathbb{D}^+$.** <2>1. Recall that the Joukowsky map $J(w) = -\frac{1}{2}(w + 1/w)$ maps $\mathbb{D}^+$ biholomorphically onto $\mathbb{H}$.
+<1>3. **The inverse Joukowsky map $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ (each factor the principal square root) maps $\mathbb{H}$ conformally onto the upper half unit disk $\mathbb{D}^+$.** <2>1. Recall that the Joukowsky map $J(w) = -\frac{1}{2}(w + 1/w)$ maps $\mathbb{D}^+$ biholomorphically onto $\mathbb{H}$.
 *Proof:* For $w = r e^{i\theta} \in \mathbb{D}^+$ ($0 < r < 1, 0 < \theta < \pi$), $\text{Im}(J(w)) = \frac{1}{2}(1/r - r)\sin\theta > 0$.
 <2>2. Solving $J(w) = u \iff -\frac{1}{2}(w + 1/w) = u \iff w^2 + 2u w + 1 = 0$ yields two roots $w = -u \pm \sqrt{u^2 - 1}$.
 *Proof:* Quadratic formula.
-<2>3. The branch $\phi_3(u) = -u + \sqrt{u^2 - 1}$ that takes values with $|w| < 1$ and $\text{Im}(w) > 0$ for $u \in \mathbb{H}$ provides the biholomorphic inverse $J^{-1}: \mathbb{H} \to \mathbb{D}^+$.
-*Proof:* Product of the two roots is $1$, and exactly one root lies in $\mathbb{D}^+$ when $u \in \mathbb{H}$.
+<2>3. The function $\phi_3(u) = -u + \sqrt{u - 1}\,\sqrt{u + 1}$ is the biholomorphic inverse $J^{-1}: \mathbb{H} \to \mathbb{D}^+$.
+*Proof:* For $u \in \mathbb{H}$, both $u - 1$ and $u + 1$ lie in $\mathbb{H}$, so the principal square roots are holomorphic there and $s(u) = \sqrt{u - 1}\,\sqrt{u + 1}$ is a holomorphic function with $s(u)^2 = u^2 - 1$. Hence $\phi_3(u)$ is a root of $w^2 + 2uw + 1 = 0$. The product of the two roots is $1$, and neither root lies on $|w| = 1$ because $J$ is real there; so exactly one root lies in the open unit disk, and it lies in $\mathbb{D}^+$ because $J$ maps the lower half-disk into the lower half-plane. At $u = it$ with $t > 0$ the arguments of $\sqrt{u-1}$ and $\sqrt{u+1}$ sum to $\pi/2$, so $\phi_3(it) = i\big(\sqrt{t^2+1} - t\big) \in \mathbb{D}^+$. The set of $u \in \mathbb{H}$ with $\phi_3(u) \in \mathbb{D}^+$ is open and closed in the connected set $\mathbb{H}$ and nonempty, so it is all of $\mathbb{H}$. The single-valued principal branch of $\sqrt{u^2-1}$ is not usable here: it is discontinuous on the imaginary axis, where $u^2 - 1 < -1$.
 <2>4. Q.E.D.
 
 * * *
@@ -67,7 +67,7 @@ Since $1 < x < 3$, $0 < x - 1 < 2$, which implies $0 < \text{Im}(\phi_1(z)) < \p
 
 <1>4. **Conclusion: The composite map $F = \phi_3 \circ \phi_2 \circ \phi_1$ is an analytic isomorphism from $\Omega$ to $\mathbb{D}^+$.** <2>1. Explicitly, let $u(z) = \phi_2(\phi_1(z)) = \exp\left(\frac{i\pi}{2}(z - 1)\right) = -i \exp\left(\frac{i\pi z}{2}\right)$.
 *Proof:* $\phi_1(z) = \frac{i\pi(z-1)}{2}$ and $e^{-i\pi/2} = -i$.
-<2>2. Then $F(z) = \phi_3(u(z)) = -u(z) + \sqrt{u(z)^2 - 1}$, where $u(z) = \exp\left(\frac{i\pi(z-1)}{2}\right)$.
+<2>2. Then $F(z) = \phi_3(u(z)) = -u(z) + \sqrt{u(z) - 1}\,\sqrt{u(z) + 1}$, where $u(z) = \exp\left(\frac{i\pi(z-1)}{2}\right)$.
 *Proof:* Composition of the maps.
 <2>3. As a composition of biholomorphic maps $\Omega \xrightarrow{\phi_1} S \xrightarrow{\phi_2} \mathbb{H} \xrightarrow{\phi_3} \mathbb{D}^+$, $F$ is an analytic isomorphism from $\Omega$ to $\mathbb{D}^+$.
 *Proof:* Composition of biholomorphisms is a biholomorphism.
