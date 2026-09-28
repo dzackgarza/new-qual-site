@@ -27,5 +27,5 @@ Let $f(x,y)$ be a function that is differentiable everywhere. At a certain point
 :::
 
 ::: {.remark}
-Choice (C) is illegible in both extractions, which read the digits $4$ and $3$ before $\sqrt{2}$ without indicating whether they form a fraction.
+The source prints choice (C) as the digits $4$ and $3$ followed by $\sqrt{2}$, with no fraction bar.
 :::
