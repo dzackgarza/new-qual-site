@@ -25,12 +25,7 @@ audit:
 
 ::: {.problem}
 Prove that the sequence of functions $f _ { n } ( x ) = \sin n x$ has no pointwise convergent subsequence.
-(Hint: show that given any subsequence and any interval of positive length there is a subinterval such that some element of the subsequence is at least $1 / 2$ on this subinterval, and another element is at most $- 1 / 2 . )$ )
-
-Remark.
-This is an example from Ch. 7 of W. Rudin’s Principles of Mathematical Analysis, which is treated by the author using a result from the more advanced chapter on Lebesgue measure, namely the bounded convergence theorem.
-According to it, if a sequence of bounded continuous functions $g _ { k } \ ( = ( \sin n _ { k } x - \sin n _ { k + 1 } x ) ^ { 2 }$ in this example) tends to 0 pointwise, then $\textstyle \int g _ { k } ( t ) d t$ tend to 0 too.
-(In the example, the integral over the period $[ 0 , 2 \pi ]$ is equal to 2π regardless of k.) Below, an elementary proof is given; it is due to Evan O’Dorney (a high-school student taking Givental’s H104 class).
+(Hint: show that given any subsequence and any interval of positive length there is a subinterval such that some element of the subsequence is at least $1 / 2$ on this subinterval, and another element is at most $- 1 / 2$.)
 :::
 
 ::: {.solution}
@@ -201,5 +196,42 @@ that the arbitrary subsequence is not pointwise convergent.
 
 ::: {.proof}
 Step <1>5 proves the required assertion.
+:::
+:::
+
+::: {.solution}
+<1>1. If $n\neq m$ are positive integers, then
+$$
+\int_0^{2\pi}(\sin nx-\sin mx)^2\,dx=2\pi.
+$$
+
+::: {.proof}
+Expanding the square,
+$$
+\int_0^{2\pi}\sin^2 nx\,dx=\int_0^{2\pi}\sin^2 mx\,dx=\pi
+\qquad\text{and}\qquad
+\int_0^{2\pi}\sin nx\,\sin mx\,dx=0
+$$
+for $n\neq m$.
+:::
+
+<1>2. For $n_1<n_2<\cdots$, the sequence $\sin(n_kx)$ does not converge
+pointwise on $[0,2\pi]$.
+
+::: {.proof}
+Suppose it does. Then
+$$
+g_k(x)\coloneqq(\sin n_kx-\sin n_{k+1}x)^2
+$$
+tends to $0$ for every $x\in[0,2\pi]$, and $0\leq g_k\leq4$. By the
+bounded convergence theorem on $[0,2\pi]$,
+$\int_0^{2\pi}g_k\,dx\to0$. Since $n_k\neq n_{k+1}$, step <1>1 gives
+$\int_0^{2\pi}g_k\,dx=2\pi$ for every $k$, a contradiction.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Every subsequence of $f_n$ has the form in step <1>2.
 :::
 :::
