@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UGASAMP-08
 kind: problem
-title: Diagonalize $\begin{pmatrix}2&1\\1&2\end{pmatrix}$
+title: Diagonalization of $\begin{pmatrix}2&1\\1&2\end{pmatrix}$
 classification:
   areas: [prelim]
   topics: []
