@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-03
 kind: problem
-title: Is $\mathbb Q$ a countable intersection of open subsets of $\mathbb R$?
+title: $\QQ$ is not a countable intersection of open subsets of $\RR$
 classification:
   areas: [prelim]
   topics: []
