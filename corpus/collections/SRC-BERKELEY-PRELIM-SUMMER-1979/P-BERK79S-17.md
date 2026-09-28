@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-17
 kind: problem
-title: A spherical zero set need not force a nonnegative Laplacian point
+title: A function vanishing exactly on the unit sphere can have negative Laplacian on the closed ball
 classification:
   areas: [prelim]
   topics: []
