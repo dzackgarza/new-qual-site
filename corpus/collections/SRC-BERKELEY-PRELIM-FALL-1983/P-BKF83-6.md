@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF83-6
 kind: problem
-title: Count zeros of $z^5+z^3+5z^2+2$ in $1<|z|<2$
+title: Zeros of $z^5+z^3+5z^2+2$ in $1<|z|<2$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
