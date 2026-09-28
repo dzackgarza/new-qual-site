@@ -28,9 +28,7 @@ corresponding definitions and results (without proofs).
 :::
 
 ::: {.solution}
-**Goal:** Describe the Carathéodory Extension process extending a pre-measure (measure) on an algebra $\mathcal A \subseteq \mathcal P(X)$ to a complete measure on a $\sigma$-algebra $\mathcal B \supseteq \mathcal A$, stating the precise definitions and main results.
-
-<1>1. **Fundamental Definitions.**
+<1>1. **Definitions.**
   <2>1. **Algebra:** A collection $\mathcal A \subseteq \mathcal P(X)$ of subsets of $X$ is an *algebra* on $X$ if:
     1. $\emptyset, X \in \mathcal A$;
     2. $A \in \mathcal A \implies A^c = X \setminus A \in \mathcal A$;
