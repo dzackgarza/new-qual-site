@@ -15,7 +15,7 @@ The [[D-TMME3|alternating group]] $A_4$ has order $12$ and no subgroup of order 
 **Groups of order $p^3$.** A group of order $p^3$ need not be abelian: the [[D-4R2Z5|dihedral group]] $D_4$ and the [[D-KRKV7|quaternion group]] $Q_8$ have order $8$.
 Every group of order $p^2$ is abelian.
 
-**Groups whose proper subgroups are abelian.** $A_4$ is nonabelian, and each of its proper subgroups has order $1$, $2$, $3$, or $4$, hence is abelian.
+**Groups whose proper subgroups are abelian.** A group all of whose proper subgroups are abelian need not be abelian: $A_4$ is nonabelian, and each of its proper subgroups has order $1$, $2$, $3$, or $4$, hence is abelian.
 
 **Transitivity of normality.** In $A_4$, $\langle (1\,2)(3\,4)\rangle \normal V_4$ and $V_4 \normal A_4$, but $\langle (1\,2)(3\,4)\rangle$ is not a [[D-EKE4Q|normal subgroup]] of $A_4$.
 
