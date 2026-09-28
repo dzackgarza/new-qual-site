@@ -9,45 +9,44 @@ topics:
 
 # Blowups and the classification of surfaces
 
-Surfaces are classified up to birational equivalence rather than isomorphism, and the reason is a single theorem: every birational map of smooth projective surfaces is a sequence of blowups and blowdowns.
-So the invariants that matter are the ones a blowup does not change.
+By the factorization theorem ([[T-SRFZMT]]), every birational map between smooth projective surfaces is a composite of blowups at points and their inverses.
+A quantity unchanged by one blowup at a point is therefore a birational invariant of smooth projective surfaces.
 
 [[FE-SRFBLOW]]
 
-The formulas are organized around $E^2=-1$.
-Under a blowup, $K^2$ drops by one and $\rho$ rises by one, while $\chi(\OO)$, $p_g$, and $q$ are unchanged.
+Under a blowup at a point, $K^2$ drops by one and $\rho$ rises by one, while $\chi(\OO)$, $p_g$, and $q$ are unchanged.
 
-The strict transform formulas are the tool for resolving plane curve singularities, since blowing up an ordinary $m$-fold point removes $\binom{m}{2}$ from the arithmetic genus — exactly the delta invariant.
+For a curve $C$ with an ordinary $m$-fold point at the centre of the blowup, the strict transform has $p_a(\tilde C)=p_a(C)-\binom m2$, and $\binom m2$ is the $\delta$-invariant of an ordinary $m$-fold point.
 
 [[T-CRVMINMOD]]
 
 [[T-SRFCAST]]
 
-Contractibility is the converse, and it turns a numerical condition into a morphism.
-Contracting $(-1)$-curves until none remain produces a minimal surface, and the process terminates because $K^2$ rises each time.
+Contracting $(-1)$-curves on a smooth projective surface one at a time lowers $\rho$ by one at each step, so after finitely many steps the result is a minimal surface.
 
-A surface need not have finitely many $(-1)$-curves: $\Bl_n \PP^2$ for $n \geq 9$ has infinitely many.
+A surface need not have finitely many $(-1)$-curves: the blowup of $\PP^2$ at $n\ge9$ points in general position has infinitely many.
 
 [[T-SRFZMT]]
 
-Zariski's theorem is the connectedness statement; the factorization of birational maps is what it is used for.
+In the factorization theorem, Zariski's connectedness theorem makes each positive-dimensional fibre of a birational morphism of smooth projective surfaces a connected curve, which is contracted to a point.
 
 ## The surfaces themselves
 
 [[D-SRFRULED]]
 
 Rational and ruled surfaces are the $\kappa = -\infty$ case.
-The rationality criterion requires more than $p_g=q=0$: Enriques surfaces satisfy those equalities but are not rational, and $P_2$ distinguishes them.
+Enriques surfaces have $p_g=q=0$ and $P_2=1$, so by Castelnuovo's criterion they are not rational.
 
 [[FE-SRFCUBIC]]
 
-The cubic surface is the example that ties the chapter together: a blowup of $\PP^2$ at six points, anticanonically embedded, with its $27$ lines counted by solving $L^2 = L \cdot K = -1$ in $\Pic$.
-Each line is a $(-1)$-curve, so each can be contracted, and the many ways of doing so are the symmetry in the configuration.
+A smooth cubic surface is the blowup of $\PP^2$ at six points in general position, embedded by $\abs{-K}$.
+Its lines are the classes $L\in\Pic$ with $L^2=L\cdot K=-1$, and there are $27$ of them.
+Each line is a $(-1)$-curve; each of the $72$ sets of six pairwise disjoint lines contracts to give a morphism onto $\PP^2$.
 
 [[T-SRFKOD]]
 
-The classification then reads as the two-dimensional version of the trichotomy $g = 0$, $g = 1$, $g \geq 2$ for curves.
-For $\kappa=0$, the pairs $(p_g,q)$ separate the standard classes: K3 at $(1,0)$, Enriques at $(0,0)$, abelian at $(1,2)$, and bielliptic at $(0,1)$.
+A curve of genus $g$ has $\kappa=-\infty$, $0$, or $1$ according as $g=0$, $g=1$, or $g\ge2$.
+For minimal surfaces with $\kappa=0$, the pair $(p_g,q)$ is $(1,0)$ for K3, $(0,0)$ for Enriques, $(1,2)$ for abelian, and $(0,1)$ for bielliptic surfaces.
 
 ## Birational invariants
 
