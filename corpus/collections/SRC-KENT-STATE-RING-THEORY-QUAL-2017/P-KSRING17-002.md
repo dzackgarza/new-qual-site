@@ -16,9 +16,9 @@ audit:
 ---
 
 ::: {.problem}
-(a) How many units does the ring Z/60Z have?
+(a) How many units does the ring $\mathbb Z/60\mathbb Z$ have?
 Explain your answer.
 
-(b) How many ideals does the ring Z/60Z have?
+(b) How many ideals does the ring $\mathbb Z/60\mathbb Z$ have?
 Explain your answer.
 :::
