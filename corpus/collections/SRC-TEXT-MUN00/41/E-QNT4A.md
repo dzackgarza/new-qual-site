@@ -52,7 +52,7 @@ is open, contains \(y\), and satisfies \(p^{-1}(V_y)\subset O_y\). Choose a loca
 \]
 This is an open refinement of \(\mathcal U\) and covers \(X\). It is locally finite: if a neighborhood \(N\) of \(p(x)\) meets only finitely many \(W\)'s, then \(p^{-1}(N)\) meets only the finitely many corresponding finite families in \(\mathcal R\). Hence \(X\) is paracompact.
 
-(b) Assume \(X\) is paracompact Hausdorff. By the perfect-map separation results of §31, \(Y\) is regular. Let \(\mathcal U\) be an open cover of \(Y\). The pullback cover \(\{p^{-1}(U):U\in\mathcal U\}\) of \(X\) has a locally finite closed refinement \(\mathcal F\) covering \(X\) (the closed-refinement form of paracompactness).
+(b) Assume \(X\) is paracompact Hausdorff. A paracompact Hausdorff space is regular, and a perfect map carries regularity of \(X\) to \(Y\) by [[E-Y4MFU]], so \(Y\) is regular. Let \(\mathcal U\) be an open cover of \(Y\). The pullback cover \(\{p^{-1}(U):U\in\mathcal U\}\) of \(X\) has a locally finite closed refinement \(\mathcal F\) covering \(X\) (the closed-refinement form of paracompactness).
 
 For each \(F\in\mathcal F\), choose \(U(F)\in\mathcal U\) with
 \[
