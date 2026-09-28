@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS07-1B
 kind: problem
-title: UC Berkeley Spring 2007 prelim 1B
+title: Continuous functions with integer periods form a vector space; prime minimal periods give independence
 classification:
   areas: [prelim]
   topics: []
