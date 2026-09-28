@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-JSPEB
 kind: problem
-title: Using the estimates
+title: Bound on $\abs{f(\frac{1+i}{2})}$ for a self-map of $\DD$ with $\abs{f}\le\abs{e^z}$ on
+  $\abs z=1$
 classification:
   areas:
   - complex-analysis
