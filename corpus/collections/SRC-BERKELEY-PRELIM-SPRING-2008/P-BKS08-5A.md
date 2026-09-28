@@ -27,15 +27,15 @@ audit:
 ---
 
 ::: {.problem}
-Let \(M\) be an \(n\times n\) nilpotent matrix over \(\mathbb C\). Let
-\[
+Let $M$ be an $n\times n$ nilpotent matrix over $\mathbb C$. Let
+$$
 C(M)=\{A\in M_n(\mathbb C):AM=MA\}.
-\]
+$$
 Show that
-\[
+$$
 C(M)=\mathbb C[M]
-\]
-if and only if the null space of \(M\) has dimension one.
+$$
+if and only if the null space of $M$ has dimension one.
 :::
 
 ::: {.solution}
@@ -121,7 +121,7 @@ $$
 because $M$ vanishes on $\ker M$. The restriction of $P$ to
 $\ker M$ is not scalar: it is the identity on the kernel line from
 the selected block and zero on the kernel lines from the other blocks.
-Thus $P\notin\CC[M]$, proving the strict inequality.
+Thus $P\in C(M)\setminus\CC[M]$.
 :::
 
 <1>6. Therefore
