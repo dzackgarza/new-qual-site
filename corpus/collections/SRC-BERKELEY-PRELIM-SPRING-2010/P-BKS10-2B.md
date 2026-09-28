@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Show that the ring of all \(n\times n\) matrices over a field has no two-sided ideals other than \(0\) and the whole ring.
+Show that the ring of all $n\times n$ matrices over a field has no two-sided ideals other than $0$ and the whole ring.
 :::
 
 ::: {.solution}
