@@ -14,8 +14,6 @@ audit:
 
 ::: {.problem}
 Use covering-space theory to find two nonconjugate subgroups of index $4$ in the free group
-\[
-F(a,b)
-\]
+$$F(a,b)$$
 on two generators.
 :::
