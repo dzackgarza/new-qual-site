@@ -29,76 +29,39 @@ audit:
 ---
 
 ::: {.problem}
-If $(X,d)$ is a metric space, and $A, B \subseteq X$ are non-empty, then we define the *distance between $A$ and $B$* by $$d(A,B) = \inf\{d(a,b) : a \in A, b \in B\}$$ where $d : X \times X \to \mathbb{R}$ is the metric.
+If $(X,d)$ is a metric space, and $A, B \subseteq X$ are non-empty, then we define the *distance between $A$ and $B$* by $$d(A,B) = \inf\{d(a,b) : a \in A, b \in B\}$$ where $d : X \times X \to \RR$ is the metric.
 Show that if $A$ and $B$ are both compact and non-empty, then there are $a_0 \in A$ and $b_0 \in B$ so that $$d(A,B) = d(a_0,b_0).$$
 :::
 
 ::: {.solution}
-Define
-\[
-F:A\times B\longrightarrow\mathbb R,
-\qquad
-F(a,b)=d(a,b).
-\]
+Define $F\colon A\times B\to\RR$ by $F(a,b)=d(a,b)$.
 
-<1>1. The function $F$ is continuous.
+<1>1. $F$ is continuous.
+
 ::: {.proof}
-For $(a,b),(a',b')\in A\times B$, the triangle inequality gives
-\[
-d(a,b)
-\le d(a,a')+d(a',b')+d(b',b),
-\]
-so
-\[
-d(a,b)-d(a',b')
-\le d(a,a')+d(b,b').
-\]
-Interchanging $(a,b)$ and $(a',b')$ yields the reverse inequality, hence
-\[
-\bigl|d(a,b)-d(a',b')\bigr|
-\le d(a,a')+d(b,b').
-\]
-Thus, if both $d(a,a')<\varepsilon/2$ and $d(b,b')<\varepsilon/2$, then
-\[
-|F(a,b)-F(a',b')|<\varepsilon.
-\]
-This proves continuity in the product topology on $A\times B$.
+For $(a,b),(a',b')\in A\times B$, the triangle inequality gives $d(a,b)\le d(a,a')+d(a',b')+d(b',b)$, so $d(a,b)-d(a',b')\le d(a,a')+d(b,b')$.
+Interchanging $(a,b)$ and $(a',b')$ gives the reverse inequality, hence
+$$\abs{d(a,b)-d(a',b')}\le d(a,a')+d(b,b').$$
+Thus, if $d(a,a')<\varepsilon/2$ and $d(b,b')<\varepsilon/2$, then $\abs{F(a,b)-F(a',b')}<\varepsilon$, which is continuity in the product topology on $A\times B$.
 :::
 
-<1>2. The space $A\times B$ is compact and nonempty.
+<1>2. $A\times B$ is compact and nonempty.
+
 ::: {.proof}
-Both $A$ and $B$ are compact by hypothesis, and a finite product of compact spaces is compact.
-They are both nonempty, so their product is nonempty as well.
+A finite product of compact spaces is compact, and a product of nonempty sets is nonempty.
 :::
 
-<1>3. The function $F$ attains a minimum at some $(a_0,b_0)\in A\times B$.
+<1>3. $F$ attains a minimum at some $(a_0,b_0)\in A\times B$.
+
 ::: {.proof}
-By <1>1 and <1>2, the image
-\[
-F(A\times B)
-\]
-is a nonempty compact subset of $\mathbb R$.
-Every nonempty compact subset of $\mathbb R$ has a least element.
-Choose $(a_0,b_0)\in A\times B$ mapping to this least element.
-Then
-\[
-d(a_0,b_0)
-=F(a_0,b_0)
-=\min F(A\times B).
-\]
+By steps <1>1 and <1>2, $F(A\times B)$ is a nonempty compact subset of $\RR$, so it has a least element.
+Choose $(a_0,b_0)\in A\times B$ with $F(a_0,b_0)=\min F(A\times B)$.
 :::
 
-<1>4. Therefore
-\[
-d(A,B)=d(a_0,b_0).
-\]
+<1>4. Q.E.D.
+
 ::: {.proof}
-By definition,
-\[
-d(A,B)
-=\inf\{d(a,b):a\in A,\ b\in B\}
-=\inf F(A\times B).
-\]
-By <1>3 the set $F(A\times B)$ has minimum $d(a_0,b_0)$, and the infimum of a set with a minimum equals that minimum.
+By definition, $d(A,B)=\inf\{d(a,b):a\in A,\ b\in B\}=\inf F(A\times B)$.
+By step <1>3 this set has minimum $d(a_0,b_0)$, and the infimum of a set with a minimum equals that minimum, so $d(A,B)=d(a_0,b_0)$.
 :::
 :::
