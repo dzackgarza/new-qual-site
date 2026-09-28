@@ -328,9 +328,6 @@ $$
 By step <1>3, every point other than $\bar0$ lies in $D(z_0)$ or $D(z_n)$.
 Steps <1>4--<1>5 show that both opens are smooth. Step <1>6 shows that
 $\bar0$ is singular. Hence it is the unique singular point.
-
-Step <1>2 proves at the same time that $X$ is normal, so $(X,\bar0)$ is the
-cyclic quotient singularity described in the source.
 :::
 
 <1>8. Q.E.D.
