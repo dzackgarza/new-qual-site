@@ -28,33 +28,33 @@ prompts:
 Let $X$ be a variety and $U \subseteq X$ open.
 A function $\phi: U \to k$ is \dfn{regular} if for every $p \in U$ there is an open $U_p \ni p$ and polynomials $f, g$ with $g$ nowhere zero on $U_p$ and $\restrictionof{\phi}{U_p} = f/g$.
 These form a sheaf of rings $\OO_X$, with restriction of functions: regularity is a local condition, and a function that is zero on each set of an open cover is zero.
-The stalk $\OO_{X,p}$ is the **local ring at $p$**, with maximal ideal $\mfm_p$ the regular functions vanishing at $p$, and the stalk at the generic point is the **function field** $k(X)$.
+The stalk $\OO_{X,p}$ is the \dfn{local ring at $p$}, with maximal ideal $\mfm_p$ the regular functions vanishing at $p$, and the stalk at the generic point is the \dfn{function field} $k(X)$.
 :::
 
-::: {.proposition title="What the sections are, affinely"}
+::: {.proposition title="Sections on an affine variety"}
 For $X$ affine with coordinate ring $A(X) = k[X] = k[x_1,\ldots,x_n]/I(X)$ and $D(f) \da X \sm V(f)$,
-\[
+$$
 \OO_X(D(f)) = A(X)\invert{f}, \qquad \OO_X(X) = A(X), \qquad \OO_{X,p} = A(X)_{\mfm_p}, \qquad k(X) = \operatorname{Frac} A(X) .
-\]
+$$
 :::
 
 ::: {.proposition title="Sections as an intersection in the function field"}
 Let $X$ be a variety.
 For every nonempty open $U \subseteq X$, restriction identifies $\OO_X(U)$ with a subring of $k(X)$, and if $U = \bigcup_i U_i$ with each $U_i$ nonempty and open, then
-\[
+$$
 \OO_X(U) = \bigcap_i \OO_X(U_i) \quad \text{inside } k(X) .
-\]
+$$
 In particular, for an ideal $\mfa \neq 0$ of $k[x_1,\ldots,x_n]$, the open set $\AA^n \sm V(\mfa) = \bigcup_{0 \neq f \in \mfa} D(f)$ has
-\[
+$$
 \OO_{\AA^n}(\AA^n \sm V(\mfa)) = \bigcap_{0 \neq f \in \mfa} k[x_1,\ldots,x_n]\invert{f} \subseteq k(x_1,\ldots,x_n) .
-\]
+$$
 [@Har10a, §I.3]
 :::
 
 ::: {.definition title="Rational and birational maps"}
 A \dfn{rational map} $\varphi \colon X \dashrightarrow Y$ of varieties is an equivalence class of pairs $(U, \varphi_U)$ with $U \subseteq X$ nonempty open and $\varphi_U \colon U \to Y$ a morphism, where $(U, \varphi_U) \sim (V, \varphi_V)$ if $\varphi_U$ and $\varphi_V$ agree on $U \cap V$.
-It is **dominant** if some, hence every, $\varphi_U$ has dense image.
-A \dfn{birational map} is a rational map with a rational inverse, and $X$ and $Y$ are **birational** if one exists.
+It is \dfn{dominant} if some, hence every, $\varphi_U$ has dense image.
+A \dfn{birational map} is a rational map with a rational inverse, and $X$ and $Y$ are \dfn{birational} if one exists.
 :::
 
 ::: {.proposition title="Rational maps and function fields"}
@@ -66,5 +66,5 @@ In particular $X$ and $Y$ are birational if and only if $k(X) \cong k(Y)$ over $
 ::: {.remark}
 Regularity requires a quotient presentation only locally, not globally. On $\PP^n$ every regular function is locally a ratio of forms of equal degree although there are no nonconstant global regular functions; on $X=V(xw-yz)\subseteq\AA^4$, the function $x/y=z/w$ is regular on a union of two opens without being represented there by one global quotient.
 
-The definition is stated so that it transports verbatim to $\Spec A$ — replace $k$ by $\coprod_{\mfp} A_\mfp$ and "polynomial" by "element of $A$" — rather than depending on an ambient polynomial presentation.
+On $\Spec A$, the structure sheaf is defined in the same way: its sections over $U$ are the functions $s\colon U\to\coprod_{\mfp\in U}A_\mfp$ that are locally of the form $a/f$ with $a,f\in A$ [@Har10a, §II.2].
 :::
