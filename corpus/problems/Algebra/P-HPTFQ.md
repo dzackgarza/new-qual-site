@@ -30,41 +30,29 @@ audit:
 :::
 
 ::: {.solution}
-**Theorem.**  
-Let $G$ be a finite group and let $p$ be a prime dividing $|G|$.
-Then there exists $x\in G$ with order $p$.
+Cauchy's theorem: if $G$ is a finite group and $p$ is a prime dividing $|G|$, then $G$ has an element of order $p$.
 
-*Proof.* Set
-$$
-X=\{(g_1,\dots,g_p)\in G^p\mid g_1g_2\cdots g_p=1_G\}.
-$$
-Define a cyclic shift action of $C_p=\langle \sigma\rangle$ on $X$ by
-$$
-\sigma(g_1,\dots,g_p)=(g_2,\dots,g_p,g_1).
-$$
+Let $X=\{(g_1,\dots,g_p)\in G^p: g_1g_2\cdots g_p=1\}$, and let $C_p=\langle\sigma\rangle$ act on $X$ by $\sigma(g_1,\dots,g_p)=(g_2,\dots,g_p,g_1)$.
 
-**Lemma 1.**  
-The cardinality $|X|=|G|^{p-1}$ is divisible by $p$.
+<1>1. $|X|=|G|^{p-1}$, so $p\mid|X|$.
 
-*Proof.* The condition determines $(g_1,\dots,g_{p-1})\in G^{p-1}$ and then $g_p$ uniquely.
-Hence $|X|=|G|^{p-1}$, and $p\mid |G|$ implies $p\mid |X|$. ∎
+::: {.proof}
+$g_1,\dots,g_{p-1}$ are arbitrary and determine $g_p=(g_1\cdots g_{p-1})^{-1}$.
+The cyclic shift preserves $X$, since $g_2\cdots g_pg_1=g_1^{-1}(g_1\cdots g_p)g_1=1$.
+:::
 
-**Lemma 2.**  
-Any $C_p$-orbit in $X$ has size either $1$ or $p$.
+<1>2. Every $C_p$-orbit in $X$ has size $1$ or $p$, and the orbits of size $1$ are the tuples $(g,\dots,g)$ with $g^p=1$.
 
-*Proof.* The acting group has size $p$. Orbit size equals the index of the stabilizer and hence divides $p$. ∎
+::: {.proof}
+Orbit sizes divide $|C_p|=p$.
+A tuple is fixed by $\sigma$ exactly when all its entries are equal, and $(g,\dots,g)\in X$ exactly when $g^p=1$.
+:::
 
-**Lemma 3.**  
-There is a fixed point of the action outside
-$\{(g,\dots,g): g^p\neq 1_G\}$.
+<1>3. Q.E.D.
 
-*Proof.* Let $F$ be the fixed point set. By Lemma 2 and Lemma 1, $|X|-|F|$ is a multiple of $p$.
-Since $|X|$ is a multiple of $p$, so is $|F|$. The trivial fixed points are exactly tuples $(g,\dots,g)$.
-At least the tuple $(1,\dots,1)$ lies in $F$, so $|F|\ge p$. Therefore some
-nontrivial tuple $(g,\dots,g)$ belongs to $F$ with $g\neq1$.  
-Because fixedness gives $\sigma(g,\dots,g)=(g,\dots,g)$ and also
-$(g,\dots,g)$ is in $X$, we have $g^p=1$. Hence $g$ has order $p$. ∎
-
-Lemma 1 gives $p$ divisibility, Lemma 2 gives decomposition into orbits of sizes $1,p$,
-and Lemma 3 gives a nontrivial fixed point, so $\operatorname{ord}(g)=p$. ∎
+::: {.proof}
+Let $F$ be the set of fixed tuples.
+By steps <1>1 and <1>2, $|F|\equiv|X|\equiv0\pmod p$, and $(1,\dots,1)\in F$, so $|F|\ge p\ge2$.
+Hence some $(g,\dots,g)\in F$ has $g\neq1$ and $g^p=1$, and $g$ has order $p$.
+:::
 :::
