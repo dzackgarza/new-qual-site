@@ -33,28 +33,23 @@ If $q\notin\cl_X(\ts{p})$, some open $U\ni q$ omits $p$; then $\iota_p(A)(U)=0$,
 
 **Equality with the pushforward.** The sheaf $\iota_p A \da (U\mapsto A \chi_{p\in U})$ is equal to $\iota_* \underline{A}$:
 
-- The sheaf $\underline{A}$ on $\ts{p}$ is given by
+- Let $Z\da\cl_X(\ts{p})$ with the subspace topology. An open $U\subseteq X$ meets $Z$ if and only if $p\in U$. Every nonempty open subset $V$ of $Z$ contains $p$, which is dense in $Z$, so $V$ is irreducible and hence connected. The constant sheaf $\underline{A}(V)\da\Top(V,A)$ of locally constant functions is therefore
 \[
-\underline{A}(U) \da \Top(U, A) =
+\underline{A}(V) =
 \begin{cases}
-A & U = \ts{p} \\
-0 & U = \emptyset.
+A & V \neq \emptyset \\
+0 & V = \emptyset,
 \end{cases}
 \]
+with identity restriction maps between nonempty opens.
 
 - Hence
 \[
-\iota_* \underline{A}(U) \da \underline{A} (\iota^{-1}(U))
-&=
+\iota_* \underline{A}(U) \da \underline{A} (U\cap Z)
+=
 \begin{cases}
-A & \iota^{-1}(U) = p  \\
-0 & \iota^{-1}(U) = \emptyset
-\end{cases}
-\\
-&=
-\begin{cases}
-A & U \ni \iota(p) = p \\
-0 & U\not\ni \iota(p) = p.
+A & p\in U \\
+0 & p\notin U.
 \end{cases}
 \]
 
