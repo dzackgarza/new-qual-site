@@ -23,7 +23,7 @@ order: 5
 
 - **Add and subtract.** For example, $\norm{T_nx_n - Tx}\leq\norm{T_nx_n - Tx_n} + \norm{Tx_n - Tx}\leq\norm{T_n-T}\norm{x_n}+\norm T\norm{x_n-x}$.
 
-- **Reduction to nice sets and functions.** A statement about measurable sets can often be proved for bounded or compact sets, or for finite unions of rectangles, and extended using regularity and continuity of measure; for unbounded $E$, $E = \bigcup_{n\geq1}(E\cap B_n(0))$. A statement continuous in $f\in L^p$, $1\leq p<\infty$, can be proved on a dense class, such as simple functions or $C_c$, and extended by approximation in norm.
+- **Reduction to nice sets and functions.** For Lebesgue measurable $E\subseteq\RR^n$, $m(E) = \lim_n m(E\cap B_n(0))$ by continuity from below; if $m(E)<\infty$, then for every $\varepsilon>0$ there are a compact $K\subseteq E$ with $m(E\setminus K)<\varepsilon$ and a finite union of rectangles $R$ with $m(E\,\triangle\,R)<\varepsilon$. For $1\leq p<\infty$, two continuous maps on $L^p$ that agree on simple functions, or on $C_c(\RR^n)$, agree on $L^p$.
 
 - **Subsequences.** A sequence converging in $L^p$ has an almost everywhere convergent subsequence, and a bounded sequence in $\RR^n$ has a convergent subsequence.
 
@@ -43,7 +43,7 @@ order: 5
 
 - If $\mu(X)<\infty$ and $1\leq p<q\leq\infty$, then $L^q(\mu)\subseteq L^p(\mu)$, by Hölder's inequality. For counting measure on $\ZZ$, $\ell^p\subseteq\ell^q$. For Lebesgue measure on $\RR$, neither inclusion holds.
 
-- A function fails to be in $L^p(\RR^n)$ because of a local singularity, such as $\abs x^{-n/p}$ near $0$, or a slowly decaying tail, such as $\abs x^{-n/p}$ near $\infty$.
+- For $a>0$ and $1\leq p<\infty$, $\abs x^{-a}\chi_{\theset{\abs x\leq1}}\in L^p(\RR^n)$ if and only if $ap<n$, and $\abs x^{-a}\chi_{\theset{\abs x>1}}\in L^p(\RR^n)$ if and only if $ap>n$; so $\abs x^{-n/p}$ fails to be in $L^p$ both near $0$ and near $\infty$.
 
 - Every Lebesgue measurable set $E\subseteq\RR^n$ is $H\sqcup N$ with $H$ an $F_\sigma$ set and $N$ null.
 
