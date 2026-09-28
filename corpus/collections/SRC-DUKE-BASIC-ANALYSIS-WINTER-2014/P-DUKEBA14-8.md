@@ -68,7 +68,7 @@ Each summand
 \[
 f_k(x)=\frac{\cos(kx)}{k^3+k^2+1}
 \]
-is continuously differentiable. Step 1 gives uniform convergence of $\sum f_k'$, and Step 2 gives convergence of $\sum f_k$ at one point. Therefore the standard theorem on differentiating a series of $C^1$ functions implies that $\sum f_k$ converges to a differentiable function and
+is continuously differentiable. Step <1>1 gives uniform convergence of $\sum f_k'$, and step <1>2 gives convergence of $\sum f_k$ at one point. By the theorem on termwise differentiation of a series of $C^1$ functions, $\sum f_k$ converges to a differentiable function and
 \[
 f'(x)=\sum_{k=0}^\infty f_k'(x)
 =\sum_{k=0}^\infty
