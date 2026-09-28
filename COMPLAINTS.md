@@ -734,10 +734,6 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Object and need:** the cards below. Each line is a reader's report made
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
-  - Proof gaps: P-AGXHWDISTINGOPEN mixes the directions of the
-    sheaf map on $D(f)$. P-AGXHWREDUCED solves part (a) only.
-    P-AGXVARSMOOTHMFLD step <1>4 proves one inclusion of
-    $T_pX=\ker dF_p$.
   - `STYLE-08` layout (fragment proofs, *Goal*, *Proof:*): P-JHUFA07ANE,
     P-4KTFN, P-PGDJ2, P-YBT6I, P-JHUMAY06ANH, P-JHUMAY06ANI, P-JHUMAY06ANK,
     P-JHUMAY11ANF, P-JHUFA05ANC, P-JHUFA06ANB, P-JHUSP05AND, P-JHUSP05ANE,

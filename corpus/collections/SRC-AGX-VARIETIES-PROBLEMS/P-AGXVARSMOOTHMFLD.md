@@ -131,58 +131,45 @@ $$
 $$
 near $p$.
 
-The Jacobian criterion at a smooth point says precisely that these
-$n-d$ independent equations form a local defining system for the reduced
-variety $X$. Equivalently, the holomorphic Implicit Function Theorem
-identifies a neighborhood of $p$ in $X$ with an open subset of $\CC^d$.
-Thus $X$ itself is a real smooth submanifold of dimension $2d$ near $p$.
+The holomorphic Implicit Function Theorem makes $G^{-1}(0)$, near $p$, a
+connected complex submanifold $M$ of dimension $d$. It contains $X$ near $p$,
+since the components of $G$ are among the $f_i$. A closed analytic subset of
+dimension $d$ of a connected $d$-dimensional complex manifold is the whole
+manifold, so $X=M$ near $p$, and $X$ is a smooth real submanifold of
+dimension $2d$ there.
 :::
 
-<1>4. Conversely, if $X$ is a smooth real submanifold of dimension $2d$
-near $p$, then
-$$
-\rank_\RR dF_\RR(p)=2(n-d).
-$$
+<1>4. If $X$ is a smooth real submanifold $M$ of dimension $2d$ near $p$,
+then $X$ is a complex submanifold of dimension $d$ near $p$.
 
 ::: {.proof}
-For a reduced complex analytic set which is a smooth submanifold near a
-point, the tangent-space form of the Implicit Function Theorem identifies
-its real tangent space with the common kernel of the differentials of its
-local defining ideal:
-$$
-T_p^\RR X
-=
-\ker dF_\RR(p).
-$$
-By hypothesis,
-$$
-\dim_\RR T_p^\RR X=2d.
-$$
-Rank-nullity therefore gives
-$$
-\rank_\RR dF_\RR(p)
-=
-2n-2d
-=
-2(n-d).
-$$
+The smooth points of $X$ are dense in $X$. At a smooth point $q$ near $p$,
+step <1>3 makes $X$ a complex submanifold of dimension $d$ equal to $M$ near
+$q$, so $T_qM$ is a complex subspace of $\CC^n$. Complex subspaces of real
+dimension $2d$ form a closed set, and $T_qM$ depends continuously on $q$, so
+$T_pM$ is a complex subspace too.
+
+Let $\pi$ be the complex-linear projection of $\CC^n$ onto $T_pM$ along a
+complex complement $N$. Then $d\pi$ is the identity on $T_pM$, so near $p$,
+$M$ is the graph of a smooth map $\varphi$ from an open set of $T_pM\cong\CC^d$
+to $N$. At a smooth point $q$ of $X$ near $p$, $M$ is a complex submanifold
+whose tangent space projects isomorphically to $T_pM$, so $\varphi$ is
+holomorphic near $\pi(q)$ by the holomorphic Inverse Function Theorem. So the
+derivative of $\varphi$ is complex linear on a dense set, hence everywhere by
+continuity, and $\varphi$ is holomorphic. Its graph $M$ is a complex
+submanifold of dimension $d$.
 :::
 
 <1>5. Under the hypothesis of step <1>4, the point $p$ is algebraically
 smooth.
 
 ::: {.proof}
-By step <1>2 and step <1>4,
-$$
-2\rank_\CC J_\CC(p)
-=
-2(n-d).
-$$
-Hence
-$$
-\rank_\CC J_\CC(p)=n-d.
-$$
-Step <1>1 now gives that $p$ is smooth.
+By step <1>4 the analytic local ring of $X$ at $p$ is the ring of convergent
+power series in $d$ variables. The algebraic local ring $\OO_{X,p}$ and the
+analytic local ring have isomorphic completions [@Mum94, §I.10], so
+$\widehat{\OO_{X,p}}\cong\CC[[z_1,\ldots,z_d]]$ is regular. A noetherian local
+ring is regular exactly when its completion is, so $\OO_{X,p}$ is regular of
+dimension $d$, and $p$ is smooth.
 :::
 
 <1>6. Therefore
