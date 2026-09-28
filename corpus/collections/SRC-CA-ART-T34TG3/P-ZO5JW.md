@@ -26,43 +26,35 @@ Prove that all entire functions that are injective are of the form $f(z) = az + 
 :::
 
 ::: {.solution}
-Let $f: \CC \to \CC$ be an injective entire function.
+Let $f: \CC \to \CC$ be an injective entire function, with Taylor series $f(w)=\sum_{n\ge0}b_nw^n$, and let $g(z) = f(1/z)$ on the punctured disc $\DD^* = \{z \in \CC : 0 < \abs{z} < 1\}$. Then $g(z)=\sum_{n\ge0}b_nz^{-n}$ on $\DD^*$, and $z = 0$ is an isolated singularity of $g$.
 
-1. **Behavior at infinity:** Consider the function $g(z) = f(1/z)$ on the punctured disk $\DD^* = \DD \setminus \{0\} = \{z \in \CC : 0 < |z| < 1\}$.
-   The origin $z = 0$ is an isolated singularity of $g$.
+<1>1. $z=0$ is not an essential singularity of $g$.
 
-2. **Classification of the singularity at $z = 0$:**
+::: {.proof}
+Suppose it were. By the Casorati--Weierstrass theorem, $g(\DD^*) = f(\CC \setminus \overline{\DD})$ is dense in $\CC$. Since $f$ is injective, it is nonconstant, so by the open mapping theorem $f(\DD)$ is a nonempty open set. Hence $f(\DD)$ meets $f(\CC \setminus \overline{\DD})$: there are $z_1 \in \DD$ and $z_2 \in \CC \setminus \overline{\DD}$ with $f(z_1) = f(z_2)$. Since $\abs{z_1} < 1 < \abs{z_2}$, $z_1 \neq z_2$, contradicting injectivity.
+:::
 
-   - **Case 1: Essential singularity.** Suppose $z = 0$ is an essential singularity of $g(z) = f(1/z)$.
-     By the **Casorati-Weierstrass Theorem**, the image $g(\DD^*) = f(\CC \setminus \overline{\DD})$ is dense in $\CC$.
-     On the other hand, the unit disk $\DD = \{z \in \CC : |z| < 1\}$ is open and non-empty.
-     Since $f$ is non-constant (being injective) and entire, by the **Open Mapping Theorem**, $f(\DD)$ is an open, non-empty subset of $\CC$.
-     Since $f(\CC \setminus \overline{\DD})$ is dense in $\CC$ and $f(\DD)$ is open and non-empty, their intersection must be non-empty:
-     $$
-     f(\DD) \cap f(\CC \setminus \overline{\DD}) \neq \emptyset.
-     $$
-     This means there exist $z_1 \in \DD$ and $z_2 \in \CC \setminus \overline{\DD}$ such that $f(z_1) = f(z_2)$.
-     Since $|z_1| < 1 < |z_2|$, $z_1 \neq z_2$, which directly contradicts the injectivity of $f$.
-     Thus, $z = 0$ cannot be an essential singularity.
+<1>2. $z=0$ is not a removable singularity of $g$.
 
-   - **Case 2: Removable singularity.** If $z = 0$ is a removable singularity, then $\lim_{z \to 0} g(z) = \lim_{w \to \infty} f(w) = L \in \CC$.
-     This implies $f(z)$ is bounded on $\CC$.
-     By **Liouville's Theorem**, $f$ must be constant, contradicting injectivity.
+::: {.proof}
+If it were, $g$ would be bounded near $0$, so $f$ would be bounded on $\abs w>R$ for some $R$, hence bounded on $\CC$. By Liouville's theorem $f$ would be constant, contradicting injectivity.
+:::
 
-   - **Case 3: Pole.** Therefore, $z = 0$ must be a pole of order $m \geq 1$ for $g(z) = f(1/z)$.
-     This means the Laurent expansion of $g(z)$ at $z = 0$ terminates:
-     $$
-     g(z) = \frac{a_m}{z^m} + \frac{a_{m-1}}{z^{m-1}} + \cdots + a_0 + \sum_{n=1}^\infty c_n z^n.
-     $$
-     Since $f(w) = g(1/w)$ is entire, there are no positive powers of $z$ in $g(z)$, so $f(w)$ is a polynomial of degree $m \geq 1$:
-     $$
-     f(z) = a_m z^m + a_{m-1} z^{m-1} + \cdots + a_1 z + a_0, \qquad (a_m \neq 0).
-     $$
+<1>3. $f$ is a polynomial of degree $m\ge1$.
 
-3. **Determining the degree $m$:** By the Fundamental Theorem of Algebra, for any $c \in \CC$, the equation $f(z) = c$ has exactly $m$ roots in $\CC$ (counted with multiplicity).
-   If $m \geq 2$, by choosing $c$ not equal to any critical value of $f$, the equation $f(z) = c$ has $m \geq 2$ distinct solutions in $\CC$.
-   This violates injectivity of $f$.
-   Thus, we must have $m = 1$.
+::: {.proof}
+By steps <1>1 and <1>2, $z=0$ is a pole of $g$, of some order $m\ge1$. The Laurent expansion $g(z)=\sum_{n\ge0}b_nz^{-n}$ then has $b_n=0$ for $n>m$ and $b_m\neq0$, so $f(w)=\sum_{n=0}^m b_nw^n$ has degree $m$.
+:::
 
-Therefore, $f(z) = az + b$ with $a, b \in \CC$ and $a \neq 0$.
+<1>4. $m = 1$.
+
+::: {.proof}
+Suppose $m\ge2$. The critical values of $f$ are the finitely many values $f(c)$ with $f'(c)=0$. Choose $c_0\in\CC$ not among them. By the fundamental theorem of algebra, $f(z) = c_0$ has $m$ roots counted with multiplicity, and each is simple because $f'$ does not vanish there. So $f$ takes the value $c_0$ at $m\ge2$ distinct points, contradicting injectivity.
+:::
+
+<1>5. Q.E.D.
+
+::: {.proof}
+By steps <1>3 and <1>4, $f(z) = \boxed{az + b}$ with $a=b_1\neq0$ and $b=b_0$.
+:::
 :::
