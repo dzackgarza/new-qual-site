@@ -22,24 +22,19 @@ Show that this is an iff.
 :::
 
 ::: {.solution}
-$\implies$:
-Suppose the first $m-1$ derivatives vanish.
+Write $f(z) = \sum_{k\geq 0} c_k (z-a)^k$ on $\DD_r(a)$, where $c_k = f^{(k)}(a)/k!$.
+Recall that $a$ is a zero of multiplicity $m$ when $f(z)=(z-a)^mg(z)$ with $g$ holomorphic near $a$ and $g(a)\neq0$.
+
+$\impliedby$:
+Suppose $f^{(k)}(a)=0$ for $k\le m-1$ and $f^{(m)}(a)\ne0$, so $c_k=0$ for $k\le m-1$ and $c_m\ne0$.
 Then
 \[
-f(z) = \sum_{k\geq 0} c_k (z-a)^k = \sum_{k\geq m+1} c_k (z-a)^k = (z-a)^m \sum_{k\geq m+1} c_k (z-a)^{k-m} = (z-a)^m (c_m + c_{m+1}(z-a) + \cdots) \da (z-a)^m g(z)
+f(z) = \sum_{k\geq m} c_k (z-a)^k = (z-a)^m \sum_{k\geq m} c_k (z-a)^{k-m} \da (z-a)^m g(z)
 ,\]
-using that $c_k \approx f^{(k)}(a)$.
-Noting that $g(a) = c_m \neq 0$, we have $f(z) = (z-a)^m g(z)$ where $g$ is nonvanishing in a neighborhood of $a$, making $a$ a zero of $f$ of order $m$.
+where $g$ is holomorphic on $\DD_r(a)$ with $g(a) = c_m \neq 0$, making $a$ a zero of $f$ of multiplicity $m$.
 
-Conversely, if $a$ is an order $m$ zero, then $f(z) = (z-a)^m h(z)$ for $h$ nonvanishing near $a$.
-So as above, writing 
-\[
-f(z) = \sum_{k\geq 0} c_k (z-a)^k = \sum_{k\leq m} c_k (z-a)^k + (z-a)^m g(z)
-,\]
-we have
-\[
-0 = f(z) - (z-a)^m h(z) = \sum_{k \leq m} c_k (z-a)^k + (z-a)^m(g(z) - h(z))
-.\]
-But this is a power series expansion of the zero function, and by uniqueness of power series we have $c_k = 0$ for $k\leq m-1$ and $g(z) = h(z)$.
-In particular, $g(a) = c_{m}$ by definition, and $g(a) = h(a) \neq 0$.
+$\implies$:
+If $a$ is a zero of multiplicity $m$, write $f(z) = (z-a)^m h(z)$ with $h$ holomorphic near $a$ and $h(a)\neq0$, and expand $h(z)=\sum_{j\ge0}d_j(z-a)^j$ with $d_0=h(a)$.
+Then $f(z)=\sum_{j\geq0}d_j(z-a)^{j+m}$, and by uniqueness of power series coefficients, $c_k=0$ for $k\le m-1$ and $c_m=d_0\neq0$.
+That is, $f^{(k)}(a)=0$ for $k\le m-1$ and $f^{(m)}(a)=m!\,h(a)\neq0$.
 :::
