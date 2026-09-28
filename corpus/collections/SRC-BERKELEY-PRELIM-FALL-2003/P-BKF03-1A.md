@@ -89,21 +89,26 @@ Thus both subseries converge absolutely for every $z$, and the third subseries i
 Hence the full series has infinite radius of convergence and defines an entire function.
 :::
 
-<1>3. The entire function defined in <1>2 solves the differential equation and initial conditions.
+<1>3. The entire function defined in step <1>2 solves the differential equation and initial conditions.
 ::: {.proof}
 Because its radius of convergence is infinite, the series may be differentiated termwise twice on all of $\mathbb C$.
-The coefficient identities from <1>1 then give $f''(z)=zf(z)$ coefficient by coefficient.
+The coefficient identities from step <1>1 then give $f''(z)=zf(z)$ coefficient by coefficient.
 The values $a_0=a_1=1$ give $f(0)=f'(0)=1$.
 :::
 
 <1>4. The entire solution is unique.
 ::: {.proof}
 Let $g$ be any entire solution, with Taylor expansion $g(z)=\sum b_nz^n$ at $0$.
-Repeating the coefficient comparison in <1>1 forces
+Repeating the coefficient comparison in step <1>1 forces
 \[
 b_0=1,\qquad b_1=1,\qquad b_2=0,\qquad b_k=\frac{b_{k-3}}{k(k-1)}\quad(k\ge3).
 \]
 Thus $b_n=a_n$ for every $n$ by induction.
 Therefore $g=f$ on $\mathbb C$.
+:::
+
+<1>5. Q.E.D.
+::: {.proof}
+Steps <1>2 and <1>3 give an entire solution, and step <1>4 proves that it is unique.
 :::
 :::
