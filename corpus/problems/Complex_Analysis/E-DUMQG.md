@@ -56,9 +56,9 @@ On each region, combine the expansions of the two terms that converge there:
 \[
 0 \leq \abs{z} < 1 
 \qquad & f(z) = {1\over 2}\sum_{k\geq 0}z^k - {1\over 6}\sum_{k\geq 0} 3^{-k}z^k \\
-1 \leq \abs{z} < 3 
+1 < \abs{z} < 3 
 \qquad & f(z) = -{1\over 2}\sum_{k\geq 0}z^{-k-1} - {1\over 6}\sum_{k\geq 0} 3^{-k}z^k \\
-3 \leq \abs{z} < \infty 
+3 < \abs{z} < \infty 
 \qquad & f(z) = - {1\over 2}\sum_{k\geq 0}z^{-k-1} + {1\over 2}\sum_{k\geq 0} 3^{k}z^{-k-1}
 .\]
 :::
