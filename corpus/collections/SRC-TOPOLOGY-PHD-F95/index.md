@@ -37,5 +37,5 @@ source:
 ---
 
 ::: {.remark}
-Topology Ph.D. qualifying exam by K. Lesh and G. Thompson, 23 September 1995. Section I.2 is the same connected-fibre quotient problem as June 2008 Question A2.
+Topology Ph.D. qualifying exam by K. Lesh and G. Thompson, 23 September 1995.
 :::
