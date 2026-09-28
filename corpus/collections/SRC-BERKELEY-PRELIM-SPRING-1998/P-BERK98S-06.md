@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-06
 kind: problem
-title: Unique cyclic subgroups of each finite order in $\mathbb Q/\mathbb Z$
+title: Unique cyclic subgroups of each finite order in $\QQ/\ZZ$
 classification:
   areas:
   - prelim
