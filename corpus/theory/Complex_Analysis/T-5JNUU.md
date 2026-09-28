@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-5JNUU
 kind: theorem
 title: Rouché's theorem
-slogan: 'A smaller boundary perturbation cannot change the winding number, so it preserves zeros minus poles inside.'
+slogan: 'If $\abs{g}<\abs{f}$ on $\gamma$, then $f\circ\gamma$ and $(f+g)\circ\gamma$ have the same winding number about $0$, so $f$ and $f+g$ have the same number of zeros minus poles inside $\gamma$.'
 classification:
   areas:
   - complex-analysis
