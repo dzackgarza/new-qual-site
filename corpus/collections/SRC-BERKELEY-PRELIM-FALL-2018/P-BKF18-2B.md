@@ -24,5 +24,5 @@ Prove that $p$ has at least one nonreal zero.
 ::: {.solution}
 Observe that if $q ( z )$ is a real-rooted polynomial with distinct roots, then by Rolle’s theorem $q ^ { \prime } ( z )$ is also real-rooted (since it has degree one less than the degree of $q )$ and has the property that between every two roots of $q ^ { \prime }$ there is a root of q. Since polynomials with distinct roots are dense in the set of real-rooted polynomials, this implies that if $q$ is any real-rooted polynomial and $q ^ { \prime } ( z )$ has a double root at z then $q ( z ) = 0$
 
-For the given polynomial $p ^ { \prime } ( z )$ has a double root at $^ { a , }$ but $\boldsymbol { p } ( \boldsymbol { a } ) \neq 0$ , so $p$ cannot be real-rooted.
+For the given polynomial, $p ^ { \prime } ( z )$ has a double root at $a$, but $p ( a ) \neq 0$ , so $p$ cannot be real-rooted.
 :::
