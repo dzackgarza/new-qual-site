@@ -47,9 +47,7 @@ Over $k = \FF_p$, the morphism $\Spec k[x]/(x^p) \to \Spec k$ is flat and of fin
 :::
 
 ::: {.remark}
-The three conditions play distinct roles.
-Flatness makes it a family rather than a union of unrelated fibres; finite presentation makes it algebraic; geometric regularity of the fibres is the smoothness itself, and *geometrically* is not decoration.
-Over a non-perfect field the fibre can be regular and not geometrically regular: $\Spec k[x]/(x^p - t)$ over $k = \FF_p(t)$ is a regular point that becomes non-reduced after base change to $\kbar$, so it is a regular fibre of a non-smooth morphism.
+Over a non-perfect field a fibre can be regular and not geometrically regular: $\Spec k[x]/(x^p - t)\to\Spec k$ over $k = \FF_p(t)$ is flat and of finite presentation, its source is a regular point, and it becomes non-reduced after base change to $\kbar$; so this morphism is not smooth.
 
 For a smooth morphism of relative dimension $n$, $\Omega_{X/Y}$ is the relative cotangent bundle and $\bigwedge^n\Omega_{X/Y}$ is the relative canonical sheaf. Smooth morphisms are stable under base change and composition.
 Smooth morphisms of relative dimension $0$ are étale. A smooth morphism of relative dimension $n$ locally factors as an étale map to $\AA^n_Y$ followed by the projection.
