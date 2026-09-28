@@ -63,7 +63,8 @@ The restriction of $\pi$ induces an isomorphism
 G_i/G_{i+1}\cong
 \overline G_i/\overline G_{i+1}
 \]
-by the correspondence/isomorphism theorem. The quotient on the right is simple
+by the third isomorphism theorem, since $\overline G_i=G_i/N$ and
+$\overline G_{i+1}=G_{i+1}/N$. The quotient on the right is simple
 because the given series of $G/N$ is a composition series.
 :::
 
