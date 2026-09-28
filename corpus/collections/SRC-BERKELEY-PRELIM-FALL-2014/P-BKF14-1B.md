@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Using induction or otherwise, show that the polynomial $P _ { n } ( x ) = 1 + x ^ { 1 } / 1 ! + . . . + x ^ { n } / n !$ has exactly 1 real zero if n is odd and none if n is even.
+Using induction or otherwise, show that the polynomial $P_n(x)=1+x^1/1!+\cdots+x^n/n!$ has exactly 1 real zero if $n$ is odd and none if $n$ is even.
 :::
 
 ::: {.solution}
