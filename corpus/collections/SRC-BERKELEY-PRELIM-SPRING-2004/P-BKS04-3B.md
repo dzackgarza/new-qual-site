@@ -31,7 +31,7 @@ for all $n\geq1$ and $x\in\CC^d$. Here $\norm{x}\coloneqq(\abs{x_1}^2+\cdots+\ab
 :::
 
 ::: {.solution}
-We may use $\abs{x}_\infty\coloneqq\max\{\abs{x_1},\ldots,\abs{x_n}\}$ instead of $\norm{x}$, since different norms on a finite-dimensional vector space are bounded by positive constants times each other.
+We may use $\abs{x}_\infty\coloneqq\max\{\abs{x_1},\ldots,\abs{x_d}\}$ instead of $\norm{x}$, since different norms on a finite-dimensional vector space are bounded by positive constants times each other.
 Then it suffices to show that the entries of $A^n$ are $O(n^{d-1})$ as $n\to\infty$. This property is unchanged if we conjugate all the $A^n$ by a fixed invertible matrix.
 Thus we may assume that $A$ is in Jordan canonical form.
 Thus $A=D+N$ where $D$ is diagonal, $N$ is nilpotent, and $D$ and $N$ commute.
