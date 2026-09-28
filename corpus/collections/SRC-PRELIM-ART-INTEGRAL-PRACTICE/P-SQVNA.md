@@ -52,7 +52,7 @@ audit:
 :::
 
 ::: {.solution}
-**Goal.** Derive the antiderivative $\int x^n \ln x\,dx$ for $n \neq -1$.
+Take $n \neq -1$ and $x > 0$.
 
 <1>1. Integrate by parts with $u = \ln x$ and $dv = x^n\,dx$.
 <2>1. $du = \frac{1}{x}\,dx$ and $v = \frac{x^{n+1}}{n+1}$.
@@ -72,9 +72,9 @@ $\frac{x^{n+1}}{x} = x^n$.
 $\int x^n\,dx = \frac{x^{n+1}}{n+1}$.
 :::
 
-<1>2. Hence $\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\qty(\ln x - \frac{1}{n+1}) + C$.
+<1>2. $\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\left(\ln x - \frac{1}{n+1}\right) + C$.
 ::: {.proof}
-factor out $\frac{x^{n+1}}{n+1}$ from <1>1.4.
+Factor out $\frac{x^{n+1}}{n+1}$ in step <2>4 of step <1>1.
 :::
 
 <1>3. Q.E.D.
