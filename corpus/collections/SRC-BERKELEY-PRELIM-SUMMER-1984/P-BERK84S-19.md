@@ -96,7 +96,7 @@ Therefore
 \]
 :::
 
-<1>3. Write the steady-state term in amplitude-phase form.
+<1>3. With $\alpha=\sqrt{10}/40$ and $\delta=\arctan(1/3)$, one has $x_p(t)=\alpha\cos(t-\delta)$.
 ::: {.proof}
 Choose
 \[
