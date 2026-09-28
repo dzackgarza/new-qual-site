@@ -50,7 +50,7 @@ in this field without splitting there, so the extension
 is not normal. Every splitting field over a field is
 a normal extension [@DF04]. Consequently $\mathbb Q(a)$
 cannot be the splitting field of any polynomial over
-$\mathbb Q$, not just of $T^3-2$.
+$\mathbb Q$.
 :::
 
 <1>2. The field $\mathbb Q(\sqrt2+\sqrt5)$ is the splitting
