@@ -109,9 +109,15 @@ p_a=\frac{(d-1)(d-2)}2
 at $d=3$.
 :::
 
-<1>5. The singularity of this cubic does not alter the arithmetic genus.
+<1>5. The curve $C$ is rational, so its geometric genus is $0$, while $p_a(C)=1$.
 ::: {.proof}
-Arithmetic genus is computed from $\chi(\mathcal O_C)$, equivalently from the Hilbert polynomial of the projective scheme.  Singularities lower the geometric genus of the normalization, not the plane cubic's arithmetic genus.
+The map
+\[
+\mathbb P^1\longrightarrow C,
+\qquad
+[s:t]\longmapsto[t^3:t^2s:s^3]
+\]
+lands in $C$, since $(t^2s)^3=t^6s^3=(t^3)^2s^3$.  It is bijective: the point of $C$ with $z=0$ is $[1:0:0]$, the image of $[0:1]$, and the points with $z=1$ are $(x,y)=(u^3,u^2)$, the images of $[1:u]$.  It is an isomorphism away from the cusp $[0:0:1]$, so it is the normalization of $C$ and the geometric genus is $0$.  The difference $p_a(C)-0=1$ is the $\delta$-invariant of the cusp.
 :::
 
 <1>6. Q.E.D.
