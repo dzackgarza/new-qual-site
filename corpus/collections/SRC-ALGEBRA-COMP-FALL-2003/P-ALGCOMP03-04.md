@@ -29,7 +29,7 @@ Show that every element of $K$ has a unique $p$th root in $K$.
 
 
 ::: {.solution}
-<1>1. Determine all intermediate fields of \(L=\mathbb Q(\alpha,i)\) over \(\mathbb Q\).
+<1>1. The extension \(L=\mathbb Q(\alpha,i)\) of \(\mathbb Q\) has exactly ten intermediate fields, listed in the box at the end of this step.
 ::: {.proof}
 The polynomial \(x^4-2\) is irreducible over \(\mathbb Q\) by Eisenstein at \(2\), so
 \[
