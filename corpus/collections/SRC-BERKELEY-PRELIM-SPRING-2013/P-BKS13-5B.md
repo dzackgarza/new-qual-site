@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Which of the following domains are biholomorphically equivalent to each other: the complex plane $\mathbb { C } .$ , the unit disk $D \subset \mathbb { C }$ , the upper halfplane $\mathbb { H } \subset \mathbb { C } ?$ Write explicit biholomorphisms or prove they cannot exist.
+Which of the following domains are biholomorphically equivalent to each other: the complex plane $\CC$, the unit disk $D \subset \CC$, the upper halfplane $\HH \subset \CC$? Write explicit biholomorphisms or prove they cannot exist.
 :::
 
 ::: {.solution}
