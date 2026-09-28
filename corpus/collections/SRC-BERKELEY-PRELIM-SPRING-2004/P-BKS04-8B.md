@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-8B
 kind: problem
-title: UC Berkeley Spring 2004 prelim 8B
+title: Limit of $n((1+x/n)^n-e^x)$
 classification:
   areas: [prelim]
   topics: []
@@ -20,10 +20,10 @@ audit:
 ---
 
 ::: {.problem}
-For each real number x, compute
+For each real number $x$, compute
 
 $$
-\operatorname* { l i m } _ { n \to \infty } n \left( \left( 1 + { \frac { x } { n } } \right) ^ { n } - e ^ { x } \right) .
+\lim_{n\to\infty}n\left(\left(1+\frac xn\right)^n-e^x\right).
 $$
 :::
 
@@ -31,26 +31,29 @@ $$
 We have
 
 $$
-\begin{array} { c } { { n \left( \left( 1 + \displaystyle \frac { x } { n } \right) ^ { n } - e ^ { x } \right) = n \left( e ^ { n \log ( 1 + x / n ) } - e ^ { x } \right) } } \\ { { = n e ^ { x } \left( e ^ { n \log ( 1 + x / n ) - x } - 1 \right) . } } \end{array}
+\begin{aligned}
+n\left(\left(1+\frac xn\right)^n-e^x\right)&=n\left(e^{n\log(1+x/n)}-e^x\right)\\
+&=ne^x\left(e^{n\log(1+x/n)-x}-1\right).
+\end{aligned}
 $$
 
-Taylor’s Theorem with Remainder gives
+Taylor's theorem with remainder gives
 
 $$
-\log \left( 1 + { \frac { x } { n } } \right) = { \frac { x } { n } } - { \frac { 1 } { 2 } } \left( { \frac { x ^ { 2 } } { n ^ { 2 } } } \right) + O \left( { \frac { 1 } { n ^ { 3 } } } \right)
+\log\left(1+\frac xn\right)=\frac xn-\frac12\left(\frac{x^2}{n^2}\right)+O\left(\frac1{n^3}\right)
 $$
 
-where the constant in the big-O depends on x, but not on n. Substituting, we get
+where the constant in the big-O depends on $x$, but not on $n$. Substituting, we get
 
 $$
-n e ^ { x } \left( e ^ { - \frac { x ^ { 2 } } { 2 n } + O \left( \frac { 1 } { n ^ { 2 } } \right) } - 1 \right) .
+ne^x\left(e^{-\frac{x^2}{2n}+O\left(\frac1{n^2}\right)}-1\right).
 $$
 
-Since $e ^ { y } = 1 + y + O ( y ^ { 2 } )$ as $y  0$ , this becomes
+Since $e^y=1+y+O(y^2)$ as $y\to0$, this becomes
 
 $$
-n e ^ { x } \left( - \frac { x ^ { 2 } } { 2 n } + O \left( \frac { 1 } { n ^ { 2 } } \right) \right) = - \frac { 1 } { 2 } x ^ { 2 } e ^ { x } + O \left( \frac { 1 } { n } \right) ,
+ne^x\left(-\frac{x^2}{2n}+O\left(\frac1{n^2}\right)\right)=-\frac12x^2e^x+O\left(\frac1n\right),
 $$
 
-so the limit is $- { \textstyle \frac { 1 } { 2 } } x ^ { 2 } e ^ { x }$
+so the limit is $-\frac12x^2e^x$.
 :::
