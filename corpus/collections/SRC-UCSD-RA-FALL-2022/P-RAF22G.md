@@ -40,7 +40,7 @@ $$
 :::
 
 ::: {.solution}
-<1>1. A distribution supported at the origin has finite order.
+<1>1. (1) There are $N\in\mathbb N$ and $C>0$ with $|\langle F,\varphi\rangle|\le C\sum_{|\alpha|\le N}\sup_x|\partial^\alpha\varphi(x)|$ for every $\varphi\in C_c^\infty$.
 ::: {.proof}
 Choose $\chi\in C_c^\infty(\mathbb R^n)$ with $\chi=1$ on a neighborhood of $0$, and let $K=\operatorname{supp}\chi$. Since
 \[
@@ -73,7 +73,7 @@ Applying this to $\psi=\chi\varphi$ and using Leibniz's rule gives, after absorb
 \]
 :::
 
-<1>2. Vanishing of the $N$-jet at the origin forces annihilation.
+<1>2. (2) If $\partial^\alpha\varphi(0)=0$ for all $|\alpha|\le N$, then $\langle F,\varphi\rangle=0$.
 ::: {.proof}
 Suppose
 \[
@@ -107,7 +107,7 @@ Therefore Leibniz's rule gives, for every $|\alpha|\le N$,
 \le C_\alpha\varepsilon^{N+1-|\alpha|}
 \le C_\alpha\varepsilon.
 \]
-Using the estimate from Step 1,
+Using the estimate of step <1>1,
 \[
 |\langle F,\varphi\rangle|
 =|\langle F,\eta_\varepsilon\varphi\rangle|
@@ -119,7 +119,7 @@ Letting $\varepsilon\downarrow0$ yields
 \]
 :::
 
-<1>3. Identify $F$ with a finite linear combination of derivatives of $\delta$.
+<1>3. (3) There are constants $c_\alpha$ with $F=\sum_{|\alpha|\le N}c_\alpha\partial^\alpha\delta$.
 ::: {.proof}
 Choose $\rho\in C_c^\infty(\mathbb R^n)$ with $\rho=1$ near $0$. For $|\alpha|\le N$, set
 \[
@@ -136,7 +136,7 @@ be its Taylor polynomial of degree $N$ at $0$. The function
 \[
 \varphi-\rho P_N\varphi
 \]
-has all derivatives of order at most $N$ equal to zero at $0$. By Step 2,
+has all derivatives of order at most $N$ equal to zero at $0$. By step <1>2,
 \[
 \langle F,\varphi\rangle
 =\langle F,\rho P_N\varphi\rangle
