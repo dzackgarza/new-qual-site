@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BEYZ5
 kind: problem
-title: Proving functions are harmonic using components of holomorphic functions
+title: $u^2-v^2$, $uv$ and $u_x$ are harmonic for harmonic conjugates $u,v$
 classification:
   areas:
   - complex-analysis
@@ -28,12 +28,11 @@ Write $f=u+iv$, which is analytic.
 
 - $f^2$ is analytic, and $f^2 = (u+iv)^2 = u^2 - v^2 + i (2uv)$, which necessarily has harmonic components.
 
-- Covered by the first case.
+- The imaginary part of $f^2$ is $2uv$, so $uv$ is harmonic.
 
-- $f'$ is analytic and one can write $f' = u_x + iv_x$, which has harmonic components.
+- $f'$ is analytic and $f' = u_x + iv_x$, which has harmonic components.
 
-As an alternative to show that $uv$ is harmonic directly by showing it's in the kernel of the Laplacian.
-A computation:
+Alternatively, $uv$ is in the kernel of the Laplacian:
 \[
 \laplacian(uv) 
 &= (uv)_{xx} + (uv)_{yy} \\
