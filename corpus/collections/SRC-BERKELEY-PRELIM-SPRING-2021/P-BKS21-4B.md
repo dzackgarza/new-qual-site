@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS21-4B
 kind: problem
-title: A real formula for a cosine geometric series
+title: The sum $\sum_{k\ge0} r^k\cos(k\theta)$ for $0<r<1$
 classification:
   areas:
   - prelim
@@ -18,8 +18,8 @@ audit:
 
 ::: {.problem}
 If $0<r<1$, find
-\[
+$$
 \sum_{k=0}^{\infty}r^k\cos(k\theta).
-\]
+$$
 Your final answer should not involve complex numbers.
 :::
