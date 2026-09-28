@@ -55,7 +55,7 @@ $$
 which tends to $0$ as $R\to\infty$.
 :::
 
-<1>2. Compute the residues in the upper half-plane.
+<1>2. With $a=1/\sqrt2$, $c=\cos a$, $s=\sin a$, the residues of $F$ in the upper half-plane sum to $-\frac{i e^{-a}}{2\sqrt2}(c+s)$.
 ::: {.proof}
 The poles there are
 $$
@@ -101,7 +101,7 @@ $$
 $$
 :::
 
-<1>3. Apply the residue theorem and take real parts.
+<1>3. $\int_{-\infty}^{\infty}\frac{\cos x}{1+x^4}\,dx=\frac{\pi}{\sqrt2}e^{-1/\sqrt2}\left(\cos\frac1{\sqrt2}+\sin\frac1{\sqrt2}\right)$.
 ::: {.proof}
 Letting $R\to\infty$, step <1>1 and the residue theorem yield
 $$
