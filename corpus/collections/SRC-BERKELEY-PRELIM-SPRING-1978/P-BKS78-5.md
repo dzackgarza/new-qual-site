@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS78-5
 kind: problem
-title: Moduli $n$ for which $mathbb Z_n[x]/(x^2+x+1)$ is a field
+title: Moduli $n$ for which $\mathbb Z_n[x]/(x^2+x+1)$ is a field
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
