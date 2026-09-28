@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCAO16
 kind: problem
-title: Define a Dedekind domain
+title: Definition of a Dedekind domain
 classification:
   areas:
   - algebra
@@ -42,6 +42,6 @@ For a Dedekind domain that is not a field, the third condition is equivalent to
 \dim R=1.
 \]
 Some conventions exclude fields by requiring Krull dimension exactly $1$;
-others allow fields, in which case the formulation using nonzero prime ideals
-is convenient.
+others allow fields, which satisfy the three conditions because a field has no
+nonzero prime ideal.
 :::
