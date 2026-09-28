@@ -16,7 +16,7 @@ Prove that $X/\!\sim$, endowed with the quotient topology, is also a discrete sp
 :::
 
 ::: {.solution}
-Let p : $X  X / \sim$ be the quotient map.
-By definition of quotient topology, a subset U of $X / \sim$ is open if and only if $p ^ { - 1 } ( U )$ is an open subset of X. But every subset of X is open (since X has the discrete topology).
-Hence, every subset of $X / \sim$ is open; that is to say, $X / \sim$ is discrete.
+Let $p\colon X \to X/\!\sim$ be the quotient map.
+By definition of the quotient topology, a subset $U$ of $X/\!\sim$ is open if and only if $p^{-1}(U)$ is an open subset of $X$. Every subset of $X$ is open, since $X$ has the discrete topology.
+Hence every subset of $X/\!\sim$ is open; that is to say, $X/\!\sim$ is discrete.
 :::
