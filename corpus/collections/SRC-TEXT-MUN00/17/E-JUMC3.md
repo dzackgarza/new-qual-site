@@ -22,24 +22,21 @@ Show that if $U$ is open in $X$ and $A$ is closed in $X$, then $U - A$ is open i
 :::
 
 ::: {.solution}
-<1>1. Proof that $U \setminus A$ is open in $X$:
-<2>1. By definition of set difference:
-\[
-U \setminus A = U \cap (X \setminus A).
-\]
-<2>2. Since $A$ is closed in $X$, its complement $X \setminus A$ is open in $X$.
-<2>3. Because both $U$ and $X \setminus A$ are open in $X$, their finite intersection $U \cap (X \setminus A)$ is open in $X$.
-Therefore $U \setminus A$ is open in $X$.
+<1>1. $U-A$ is open in $X$.
 
-<1>2. Proof that $A \setminus U$ is closed in $X$:
-<2>1. By definition of set difference:
-\[
-A \setminus U = A \cap (X \setminus U).
-\]
-<2>2. Since $U$ is open in $X$, its complement $X \setminus U$ is closed in $X$.
-<2>3. Because both $A$ and $X \setminus U$ are closed in $X$, their intersection $A \cap (X \setminus U)$ is closed in $X$.
-Therefore $A \setminus U$ is closed in $X$.
+::: {.proof}
+$U-A=U\cap(X-A)$, and $X-A$ is open because $A$ is closed; a finite intersection of open sets is open.
+:::
 
-<1>3. Conclusion:
-$U \setminus A$ is open and $A \setminus U$ is closed in $X$. Q.E.D.
+<1>2. $A-U$ is closed in $X$.
+
+::: {.proof}
+$A-U=A\cap(X-U)$, and $X-U$ is closed because $U$ is open; an intersection of closed sets is closed.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2.
+:::
 :::
