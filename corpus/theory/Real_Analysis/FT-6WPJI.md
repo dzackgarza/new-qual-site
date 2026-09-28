@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FT-6WPJI
 kind: theorem
 title: Baire category theorem
-slogan: 'Complete metric and locally compact Hausdorff spaces cannot be exhausted by countably many nowhere-dense defects.'
+slogan: 'In a complete metric space or a locally compact Hausdorff space, every countable intersection of dense open sets is dense.'
 prompts:
 - State the Baire category theorem.
 classification:
