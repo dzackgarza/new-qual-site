@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-LDJNS
 kind: theorem
 title: Fatou's lemma and reverse Fatou's lemma
-slogan: 'Fatou sends liminf below the integral; domination reverses the inequality for limsup.'
+slogan: '$\int\liminf f_n\le\liminf\int f_n$; if $f_n\le g$ with $g\in L^1$, then $\limsup\int f_n\le\int\limsup f_n$.'
 classification:
   areas:
   - real-analysis
