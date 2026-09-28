@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK79S-20
 kind: problem
-title: A bounded transform of a damped oscillator attains its maximum
+title: $x^2/(1+x^4)$ attains its maximum along a solution of $5x''+10x'+6x=0$
 classification:
   areas: [prelim]
   topics: []
