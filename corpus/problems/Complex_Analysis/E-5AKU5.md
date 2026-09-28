@@ -21,12 +21,11 @@ Show that if $f_n\to f$ locally uniformly and each $f_n$ is holomorphic then $f$
 :::
 
 ::: {.solution}
-This is S&S Theorem 5.2.
-Statement: if $f_n\to f$ uniformly locally uniformly on $\Omega$ then $f$ is holomorphic on $\Omega$.
+This is [@SS03, Chapter 2, Theorem 5.2].
 
 \envlist
 
-- Let $D \subset \Omega$ with $\bar\DD \subset \Omega$ and $\Delta \subset D$ be a triangle.
+- Let $D \subset \Omega$ be a disk with $\bar D \subset \Omega$ and $\Delta \subset D$ be a triangle.
 - Apply Cauchy-Goursat: 
 \[
 \int_\Delta f_n = 0
