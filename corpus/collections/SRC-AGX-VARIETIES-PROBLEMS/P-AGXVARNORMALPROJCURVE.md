@@ -58,8 +58,8 @@ The nonempty $X_i$ form an affine open cover of $X$.
 <1>1. Every nonempty chart $X_i$ is a normal affine curve over $\CC$.
 
 ::: {.proof}
-By the projective normality definition in the source, each affine chart
-$X_i$ is normal.
+A projective variety is normal when each of its affine charts is normal, so
+each $X_i$ is normal.
 
 Since $X$ is an irreducible projective curve, every nonempty open subset of
 $X$ is irreducible and has the same dimension as $X$. Hence every nonempty
@@ -70,9 +70,8 @@ $\CC$.
 <1>2. Every nonempty chart $X_i$ is smooth.
 
 ::: {.proof}
-Step <1>1 shows that $X_i$ is a normal affine curve over $\CC$. Therefore
-[[P-AGXVARNORMALCURVE|the affine normal-curve result]] gives that $X_i$ is
-smooth.
+Step <1>1 shows that $X_i$ is a normal affine curve over $\CC$. Every normal affine curve over $\CC$ is smooth
+[[P-AGXVARNORMALCURVE]], so $X_i$ is smooth.
 :::
 
 <1>3. The projective curve $X$ is smooth.
