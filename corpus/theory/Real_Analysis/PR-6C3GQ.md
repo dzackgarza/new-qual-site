@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-6C3GQ
 kind: proposition
 title: Geometric series
-slogan: 'Inside the unit disk, the geometric series sums to $1/(1-x)$; outside it does not converge.'
+slogan: 'The geometric series $\sum x^k$ converges exactly for $\abs{x}<1$, with sum $1/(1-x)$.'
 classification:
   areas:
   - real-analysis
