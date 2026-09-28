@@ -113,7 +113,7 @@ By <1>3,
 \[
 \deg f=\deg A.
 \]
-The problem allows the standard fact that the antipodal map on the even-dimensional sphere $S^{2n}$ has degree $-1$.
+The antipodal map on $S^{m}$ is the composite of $m+1$ reflections, each of degree $-1$, so it has degree $(-1)^{m+1}$; for $m=2n$ this is $-1$.
 Thus
 \[
 \deg f=-1.
