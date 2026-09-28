@@ -15,9 +15,9 @@ Let $S = \{ ( x _ { 1 } , \ldots , x _ { n } ) \in \mathbb { R } ^ { n } \mid x 
 :::
 
 ::: {.solution}
-The orthogonal complement of S is one-dimensional, and spanned by the unit vector $\begin{array} { r } { w = \frac { 1 } { \sqrt { n } } ( 1 , \dots , 1 ) } \end{array}$ , because $v \in S \Leftrightarrow \langle v , w \rangle = 0$ . So the orthogonal projection is given by $\begin{array} { r } { P v = v \dot { - } \langle v , w \rangle w = v - \frac { v _ { 1 } + \dots + v _ { n } } { n } ( 1 , \dots , 1 ) } \end{array}$ . Therefore
+The orthogonal complement of S is one-dimensional, and spanned by the unit vector $\begin{array} { r } { w = \frac { 1 } { \sqrt { n } } ( 1 , \dots , 1 ) } \end{array}$ , because $v \in S \Leftrightarrow \langle v , w \rangle = 0$ . So the orthogonal projection is given by $\begin{array} { r } { P v = v - \langle v , w \rangle w = v - \frac { v _ { 1 } + \dots + v _ { n } } { n } ( 1 , \dots , 1 ) } \end{array}$ . Therefore
 
 $$
-P = \operatorname { I d } - w ^ { T } w = \left( \begin{array} { c c c c } { \frac { n - 1 } { n } } & { \frac { - 1 } { n } } & { \cdot \cdot } & { \frac { - 1 } { n } } \\ { \frac { - 1 } { n } } & { \frac { n - 1 } { n } } & { \cdot \cdot } & { \frac { - 1 } { n } } \\ { \vdots } & { \cdot } & { \vdots } \\ { \frac { - 1 } { n } } & { \frac { - 1 } { n } } & { \cdot \cdot } & { \frac { n - 1 } { n } } \end{array} \right) .
+P = \operatorname { I d } - w ^ { T } w = \begin{pmatrix} \frac { n - 1 } { n } & \frac { - 1 } { n } & \cdots & \frac { - 1 } { n } \\ \frac { - 1 } { n } & \frac { n - 1 } { n } & \cdots & \frac { - 1 } { n } \\ \vdots & \vdots & \ddots & \vdots \\ \frac { - 1 } { n } & \frac { - 1 } { n } & \cdots & \frac { n - 1 } { n } \end{pmatrix} .
 $$
 :::
