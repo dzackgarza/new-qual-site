@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-V4TJA
 kind: problem
-title: Five points in general position and K5 in space
+title: Five points in general position and a linear $K_5$ in $\RR^3$
 classification:
   areas:
   - topology
