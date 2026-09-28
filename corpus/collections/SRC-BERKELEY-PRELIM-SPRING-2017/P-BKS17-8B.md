@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS17-8B
 kind: problem
-title: Structure of $(\mathbb Z/1000000\mathbb Z)^\times$
+title: Structure of $(\ZZ/1000000\ZZ)^\times$
 classification:
   areas:
   - prelim
@@ -17,5 +17,5 @@ audit:
 ---
 
 ::: {.problem}
-Find a product of cyclic groups of prime power order isomorphic to $(\mathbb{Z}/1000000\mathbb{Z})^*$ (the group of units of the ring of integers mod $1000000$).
+Find a product of cyclic groups of prime power order isomorphic to $(\ZZ/1000000\ZZ)^*$ (the group of units of the ring of integers mod $1000000$).
 :::
