@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS1-P6
 kind: problem
-title: Residually finite group yields a finite-sheeted cover killing any nontrivial loop
+title: For residually finite $\pi_1$, every nontrivial loop fails to lift to a loop in some finite-sheeted cover
 classification:
   areas:
   - topology
