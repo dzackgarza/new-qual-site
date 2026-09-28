@@ -43,7 +43,7 @@ The blocks of the rational canonical form of $A$ are in bijection with the nonco
 ::: {.proof title="Derivation of the rational canonical form"}
 \envlist
 
-- Let $k[x]$ act on $V$ by $p(x)\actson \vector v \da p(T)\vector v$.
+- Let $T\colon V\to V$ be the linear map given by $A$, and let $k[x]$ act on $V$ by $p(x)\actson \vector v \da p(T)\vector v$.
   This makes $V$ a finitely generated torsion $k[x]$-module whose submodules are the $T$-invariant subspaces.
 
 - Since $k[x]$ is a PID, the structure theorem gives the invariant factor decomposition
