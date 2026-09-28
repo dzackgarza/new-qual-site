@@ -199,9 +199,8 @@ $$
 ::: {.proof}
 Steps <1>2--<1>4 show that every surjective ring homomorphism has the
 displayed form, and step <1>5 shows that every map of that form works.
-If one adds the extra requirement of $\CC$-linearity, then necessarily
-$\sigma=\operatorname{id}_{\CC}$, leaving only the coordinate
-projections; that extra hypothesis is not present in the problem.
+Such a map is $\CC$-linear exactly when $\sigma=\operatorname{id}_{\CC}$,
+so the $\CC$-linear ones are the coordinate projections.
 :::
 
 <1>7. Q.E.D.
