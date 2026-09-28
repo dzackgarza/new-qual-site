@@ -29,7 +29,7 @@ audit:
 ---
 
 ::: {.problem}
-(a) By counting the number of pairs $( g , x )$ with $g \in G , x \in X , g ( x ) = x$ , show that the number of orbits of a finite group G acting on a finite set X is the average number of fixed points of elements of the group.
+(a) By counting the number of pairs $(g,x)$ with $g\in G$, $x\in X$, $g(x)=x$, show that the number of orbits of a finite group $G$ acting on a finite set $X$ is the average number of fixed points of elements of the group.
 
 (b) In how many ways (up to symmetries of the hexagon) can one color the vertices of a regular hexagon using 4 colors?
 :::
