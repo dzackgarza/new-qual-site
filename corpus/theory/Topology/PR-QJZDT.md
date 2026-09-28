@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-QJZDT
 kind: proposition
 title: Product CW structure
-slogan: 'Product CW chains are the graded tensor product, with the usual signed Leibniz boundary.'
+slogan: 'Cellular chains of $X\times Y$ are the graded tensor product of cellular chains, with boundary $d(e^i\times e^j) = de^i\times e^j + (-1)^i e^i\times de^j$.'
 classification:
   areas:
   - topology
