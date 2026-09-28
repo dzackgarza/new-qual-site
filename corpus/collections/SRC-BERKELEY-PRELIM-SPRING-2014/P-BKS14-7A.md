@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-7A
 kind: problem
-title: Count complete flags over a finite field at q equals one
+title: Number of complete flags in $\FF_q^n$ as $q\to1$
 classification:
   areas:
   - prelim
@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let \(F\) be a finite field with \(q\) elements.
-A complete flag in \(F^n\) is a nested sequence
-\[
+Let $F$ be a finite field with $q$ elements.
+A complete flag in $F^n$ is a nested sequence
+$$
 V^1\subset V^2\subset\cdots\subset V^{n-1}
-\]
-with \(\dim V^j=j\). Let \(f_n(q)\) be the number of complete flags in \(F^n\). Find
-\[
+$$
+with $\dim V^j=j$. Let $f_n(q)$ be the number of complete flags in $F^n$. Find
+$$
 \lim_{q\to1} f_n(q).
-\]
+$$
 :::
 
 ::: {.solution}
