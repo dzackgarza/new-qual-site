@@ -23,8 +23,6 @@ Give an example of a collection of sets $\mathcal{A}$ that is not locally finite
 :::
 
 ::: {.solution}
-**Goal:** Provide an explicit example of a collection of subsets $\mathcal{A}$ of a topological space $X$ that is not locally finite, but whose collection of closures $\mathcal{B} = \{\overline{A} \mid A \in \mathcal{A}\}$ is locally finite.
-
 <1>1. Definition of local finiteness:
     A collection $\mathcal{F}$ of subsets of $X$ is locally finite if every point $x \in X$ has an open neighborhood that intersects only finitely many members of $\mathcal{F}$.
 
@@ -54,6 +52,6 @@ Give an example of a collection of sets $\mathcal{A}$ that is not locally finite
     <2>3. Since $\mathcal{B}$ is a finite collection (consisting of exactly $1$ set), every open neighborhood of any point $x \in \mathbb{R}$ intersects at most $1$ member of $\mathcal{B}$.
     <2>4. Therefore $\mathcal{B}$ is locally finite.
 
-<1>5. Conclusion:
-    $\mathcal{A} = \{(0, 1) \setminus \{1/n\} \mid n \ge 2\}$ is an infinite collection of sets that is not locally finite, but whose collection of closures $\mathcal{B} = \{[0, 1]\}$ is locally finite. Q.E.D.
+<1>5. Q.E.D.
+    By steps <1>3 and <1>4, $\mathcal{A} = \{(0, 1) \setminus \{1/n\} \mid n \ge 2\}$ is not locally finite and $\mathcal{B} = \{[0, 1]\}$ is locally finite.
 :::
