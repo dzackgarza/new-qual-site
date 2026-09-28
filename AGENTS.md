@@ -856,8 +856,9 @@ done. Do not run or wait on builds, test suites, renders, screenshots, broad for
 regeneration for content work: repairs to copy, prose, mathematics, and solutions are checked by
 eye until they are pushed. The content-specific gates — the extraction detector, which rejects
 untranscribed extractor output in a problem block, and the regeneration of
-`queues/C-unsolved-cards.md` — run at push, together with the build, crawl, and test suite.
-Builds, renders, and rendered-page inspection belong to the push and deployment phase.
+`queues/C-unsolved-cards.md` — run at push, together with the test suite. The site is never
+built locally: `.github/workflows/pages.yml` builds, crawls and deploys it on every push to
+`main`, and `gh run download <run-id> -n github-pages` fetches a built site.
 
 Code, renderer, schema, executable configuration, and mixed code/content changes use the normal
 commit and push gates. Use focused checks while investigating a specific defect; let those gates
