@@ -17,14 +17,14 @@ Show that g is continuous.
 :::
 
 ::: {.solution}
-It is enough to show: For every closed subset $F \subset Z$ , the subset $g ^ { - 1 } ( F ) \subset$ Y is closed.
+It is enough to show that for every closed subset $F \subset Z$, the subset $g^{-1}(F) \subset Y$ is closed.
 
-Now, by continuity of $g \circ f$ , we know that $( g \circ f ) ^ { - 1 } ( F ) = f ^ { - 1 } ( g ^ { - 1 } ( F ) )$ is a closed subset of X. Since f is a closed map, it takes this closed subset of X to a closed subset of Y . But
+By continuity of $g \circ f$, the set $(g \circ f)^{-1}(F) = f^{-1}(g^{-1}(F))$ is a closed subset of $X$. Since $f$ is a closed map, it takes this closed subset of $X$ to a closed subset of $Y$. But
 
 $$
-f ( ( g \circ f ) ^ { - 1 } ( F ) ) = f ( f ^ { - 1 } ( g ^ { - 1 } ( F ) ) ) = g ^ { - 1 } ( F ) ,
+f((g \circ f)^{-1}(F)) = f(f^{-1}(g^{-1}(F))) = g^{-1}(F),
 $$
 
-since f is surjective.
-Hence, $g ^ { - 1 } ( F )$ is closed.
+since $f$ is surjective.
+Hence $g^{-1}(F)$ is closed.
 :::
