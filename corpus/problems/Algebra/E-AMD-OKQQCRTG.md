@@ -21,9 +21,11 @@ audit:
 Show that p-groups $\implies$ nilpotent
 :::
 
-::: {.solution}
-**Goal:** the upper central series of a finite $p$-group cannot stop below $G$, because the obstruction to continuing is a $p$-group with trivial center.
+::: {.hint}
+A nontrivial finite $p$-group has nontrivial center, so each term $Z_m\neq G$ of the upper central series is strictly smaller than $Z_{m+1}$.
+:::
 
+::: {.solution}
 <1>1. A nontrivial finite $p$-group has nontrivial center.
 ::: {.proof}
 <2>1. Let $P$ be a group of order $p^n$ with $n \geq 1$, and take the class equation $$\abs P = \abs{Z(P)} + \sum_i [P : C_P(x_i)]$$ over representatives $x_i$ of the conjugacy classes of size greater than $1$.
