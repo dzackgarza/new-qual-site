@@ -42,7 +42,7 @@ Then the section
 \[
 A_{<s^{(n)}}=\{x\in A:x<s^{(n)}\}
 \]
-is exactly \(A_n\). Indeed, if \(x<s^{(n)}\), at the largest coordinate where the two sequences differ one cannot be beyond \(n+1\), since there \(s^{(n)}\) has value \(1\); at coordinate \(n+1\) the inequality forces \(x_{n+1}=1<2\), and all later coordinates are \(1\). Conversely every element of \(A_n\) is \(<s^{(n)}\).
+is exactly \(A_n\). Indeed, if \(x<s^{(n)}\), let \(m\) be the largest coordinate at which \(x\) and \(s^{(n)}\) differ, so \(x_m<s^{(n)}_m\). Since \(s^{(n)}_i=1\) for \(i\ne n+1\) and no positive integer is less than \(1\), \(m=n+1\); hence \(x_{n+1}=1\) and \(x_i=s^{(n)}_i=1\) for \(i>n+1\), so \(x\in A_n\). Conversely, every \(x\in A_n\) differs from \(s^{(n)}\) last at coordinate \(n+1\), where \(x_{n+1}=1<2\), so \(x<s^{(n)}\).
 
 Define
 \[
