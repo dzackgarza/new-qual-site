@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-DDKSS
 kind: problem
-title: Polynomial growth
+title: An entire function with $\abs{f(z)}\le M\abs z^n$ for large $\abs z$ is a polynomial
+  of degree at most $n$
 classification:
   areas:
   - complex-analysis
