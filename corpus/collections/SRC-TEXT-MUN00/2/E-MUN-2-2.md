@@ -25,9 +25,7 @@ audit:
 
 ::: {.exercise}
 
-Let $f: A \to B$ and let $A_i \subset A$ and $B_i \subset B$ for $i = 0$ and $i = 1$ . Show that $f^-$
-
-preserves inclusions, unions, intersections, and differences of sets:
+Let $f: A \to B$ and let $A_i \subset A$ and $B_i \subset B$ for $i = 0$ and $i = 1$ . Show that $f^{-1}$ preserves inclusions, unions, intersections, and differences of sets:
 
 (a) $B_0 \subset B_1 \Rightarrow f^{-1}(B_0) \subset f^{-1}(B_1)$ .
 
@@ -64,7 +62,7 @@ x\in f^{-1}(B_0\cup B_1)
 \iff x\in f^{-1}(B_0)\cup f^{-1}(B_1).
 \]
 
-(c) The same argument with ``and'' gives
+(c) The same argument with "and" gives
 \[
 f^{-1}(B_0\cap B_1)=f^{-1}(B_0)\cap f^{-1}(B_1).
 \]
