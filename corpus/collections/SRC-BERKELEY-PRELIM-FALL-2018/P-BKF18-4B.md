@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF18-4B
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}(x-\sin x)/x^3\,dx$
+title: The integral $int_{-infty}^{infty}(x-sin x)/x^3,dx$
 classification:
   areas:
   - prelim
