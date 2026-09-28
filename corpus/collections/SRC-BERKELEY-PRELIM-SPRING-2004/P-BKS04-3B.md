@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-3B
 kind: problem
-title: UC Berkeley Spring 2004 prelim 3B
+title: $\|A^n\|=O(n^{d-1})$ when every eigenvalue of $A$ has modulus $1$
 classification:
   areas: [prelim]
   topics: []
