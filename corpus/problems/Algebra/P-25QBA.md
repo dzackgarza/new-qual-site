@@ -94,8 +94,7 @@ For non-discrete locally compact abelian groups, spectral synthesis fails in gen
 distinct closed ideals can have the same hull.
 :::
 
-<1>6. The correct \(L^2\) relation is module-theoretic rather than algebraic. If
-\(a\in L^1(\mathbb R)\) and \(h\in L^2(\mathbb R)\), then
+<1>6. If \(a\in L^1(\mathbb R)\) and \(h\in L^2(\mathbb R)\), then
 \[
 \|a*h\|_2\le \|a\|_1\|h\|_2,
 \]
@@ -104,7 +103,7 @@ so \(L^2(\mathbb R)\) is a Banach module over \(L^1(\mathbb R)\).
 This is Young's convolution inequality in the \(L^1*L^2\to L^2\) case.
 :::
 
-<1>7. In contrast, \(L^2(\mathbb R)\) is not a convolution algebra in general.
+<1>7. \(L^2(\mathbb R)\) is not closed under convolution.
 ::: {.proof}
 Let \(u(x)=(1+|x|)^{-2/3}\). Then \(u\in L^2(\mathbb R)\). For \(x\ge 3\), restricting
 the convolution integral to \(y\in[x/3,2x/3]\) gives
@@ -140,12 +139,9 @@ multiplication by an idempotent \(L^\infty\)-function, necessarily \(1_E\) for a
 measurable set \(E\). Therefore \(\mathcal F(V)=L^2(E)\).
 :::
 
-<1>10. Thus the three viewpoints fit together as follows: translation invariance in
-\(L^1\) is the same as closed-ideal behavior under convolution; Wiener detects cyclicity
-through Fourier zeros; and on \(L^2\), convolution by \(L^1\)-functions becomes bounded
-multiplication under Plancherel, with translation-invariant closed subspaces classified
-by measurable spectral support.
+<1>10. Q.E.D.
 ::: {.proof}
-Combine <1>2--<1>9.
+Part (1) is step <1>2; the Fourier transform and Wiener's theorem in part (2) are steps
+<1>3--<1>5; the \(L^2\) statements in part (3) are steps <1>6--<1>9.
 :::
 :::
