@@ -10,12 +10,14 @@ topics:
 ## Hartshorne
 
 [@Har10a] covers classical varieties, schemes, cohomology, curves, and surfaces, with exercises throughout.
-The portions used most heavily by this guide are II.1--II.8, III.1--III.6 and III.9, and IV.1--IV.3.
-Chapter I supplies the classical variety theory used by the later scheme-theoretic chapters.
+Chapter I treats affine and projective varieties, morphisms, rational maps, nonsingular varieties, nonsingular curves, and intersections in projective space.
+II.1--II.8 treat sheaves, schemes and their first properties, separated and proper morphisms, sheaves of modules, divisors, projective morphisms, and differentials.
+III.1--III.6 treat derived functors, sheaf cohomology, cohomology of noetherian affine schemes, Čech cohomology, the cohomology of projective space, and Ext; III.7 proves Serre duality and III.9 treats flat morphisms.
+IV.1--IV.3 treat the Riemann--Roch theorem, Hurwitz's theorem, and embeddings of curves in projective space.
 
 ## Introductory and supplementary texts
 
-[@Gat21] develops classical and scheme-theoretic algebraic geometry together with motivating examples and proofs.
+[@Gat21] develops classical and scheme-theoretic algebraic geometry together with motivating examples.
 
 [@Vak25] gives extended treatments of sheaves, $\Proj$, affine-local arguments, and related constructions used in [@Har10a].
 
@@ -25,7 +27,7 @@ Chapter I supplies the classical variety theory used by the later scheme-theoret
 
 [@Har10b] collects concrete projective examples including rational normal curves, Veronese and Segre embeddings, determinantal varieties, secant and tangent varieties, and Grassmannians.
 
-[@Sha13] gives a systematic treatment of classical algebraic geometry.
+[@Sha13] treats varieties in projective space: basic notions, local properties such as tangent spaces and singular points, divisors and differential forms, and intersection numbers.
 
 [@Mum94] develops the geometry of $\Spec$, including generic points, examples such as $\Spec \ZZ[x]$, and nilpotent structure.
 [@EH00] includes worked $\Spec$ and $\Proj$ computations and further geometric examples.
@@ -54,9 +56,7 @@ The coherent-sheaf formalism used in Chapter III of [@Har10a] is developed in [@
 [@Bor12] assigns a selected sequence of exercises from [@Har10a] and includes written solutions to the first several assignments.
 [@PA12] is a written solution set for a scheme-theory course, including computations with $\Spec$ and Čech cohomology.
 
-The Hartshorne solution collections listed below cover overlapping selections of exercises; each entry records its scope where that information is available.
-
-## Recommended exercises from Hartshorne
+## Exercise selections from Hartshorne
 
 A selection of exercises from [@Har10a] recommended by Elham Izadi, by chapter and section:
 
@@ -85,11 +85,9 @@ The [course page](https://math.berkeley.edu/~reb/courses/256A/) has solutions to
 
 ## Reference documents
 
-The following reference documents and solution collections are available from this page:
-
 ### Solution collections for Hartshorne
 
-- [Andrew Egbert](/assets/algebraic-geometry/resources/Andrew%20Egbert.pdf): complete exercises for Chapters I–V (2013).
+- [Andrew Egbert](/assets/algebraic-geometry/resources/Andrew%20Egbert.pdf): solutions to exercises from Chapters I–V (2013).
 
 - [Bryden R. Cais](/assets/algebraic-geometry/resources/Bryden%20R%20Cais.pdf): selected solutions for Chapters II–IV (2004).
 
