@@ -60,7 +60,7 @@ Since $a_n=s_n-s_{n-1}$ with $s_0=0$,
 &=s_Nr^N+(1-r)\sum_{n=1}^{N-1}s_nr^n.
 \end{aligned}
 \]
-This is the summation-by-parts identity specialized to $a_n=r^n$.
+This is the summation-by-parts formula of [[E-SS1.EX-14]] with the sequences $r^n$ and $a_n$ in the roles of $a_n$ and $b_n$.
 :::
 
 <1>3. For every $0\le r<1$,
