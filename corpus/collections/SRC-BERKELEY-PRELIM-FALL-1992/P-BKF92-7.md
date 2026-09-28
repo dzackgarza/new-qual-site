@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF92-7
 kind: problem
-title: Evaluate $\int_{|z|=1} e^z/[z(2z+1)^2]\,dz$
+title: The integral $\int_{|z|=1} e^z/[z(2z+1)^2]\,dz$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
