@@ -36,7 +36,7 @@ the quotient collapsing the boundary to a point and the union of two discs glued
 <!--\node at (5.9, -5.5) {$\SS^2$};-->
 <!--\end{tikzpicture}-->
 
-![Low Dimensional Discs/Balls vs Spheres](../../../assets/Topology/figures/image_2021-01-10-23-20-27.png)
+![The discs $\DD^1,\DD^2,\DD^3$ and their boundary spheres $\SS^0,\SS^1,\SS^2$](../../../assets/Topology/figures/image_2021-01-10-23-20-27.png)
 
 :::
 
