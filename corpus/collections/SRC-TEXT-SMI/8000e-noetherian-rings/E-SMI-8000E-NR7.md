@@ -49,8 +49,8 @@ The ideal $I$ itself belongs to $\mathcal P$.
 
 <1>2. Every chain in $\mathcal P$ has an upper bound in $\mathcal P$.
 ::: {.proof}
-Let $\mathcal C\subseteq\mathcal P$ be a chain. By
-[[E-SMI-8000E-NR6]],
+Let $\mathcal C\subseteq\mathcal P$ be a chain. If $\mathcal C$ is empty,
+$I$ is an upper bound. Otherwise, by [[E-SMI-8000E-NR6]],
 $$
 J_{\mathcal C}=\bigcup_{J\in\mathcal C}J
 $$
