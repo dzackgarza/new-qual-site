@@ -42,7 +42,7 @@ Write the nine topologies from §12 Example 1 as
 \mathcal T_9&=\mathcal P(X).
 \end{aligned}
 \]
-Comparison means inclusion of these collections. The strict inclusions are generated transitively by
+Write $\mathcal T<\mathcal T'$ when $\mathcal T\subsetneq\mathcal T'$, that is, when $\mathcal T'$ is strictly finer than $\mathcal T$. The strict inclusions are generated transitively by
 \[
 \mathcal T_1<\mathcal T_4<\mathcal T_3<\mathcal T_6<\mathcal T_9,
 \]
@@ -58,5 +58,20 @@ and
 \]
 In addition, $\mathcal T_7<\mathcal T_3$ and hence $\mathcal T_7<\mathcal T_6$. These inclusions and their transitive consequences are all the comparable pairs.
 
-To see that no others occur, for each alleged missing inclusion one can exhibit an open set present in the first topology and absent from the second. For example, $\{a\}$ separates $\mathcal T_2$ from $\mathcal T_3$, while $\{b\}$ separates $\mathcal T_3$ from $\mathcal T_2$; similarly $\mathcal T_5$ is incomparable with every $\mathcal T_i$ for $i=2,3,4,6,7,8$ because it contains $\{a\}$ and $\{b,c\}$, whereas each of those topologies omits at least one of these, and conversely each contains a set not in $\mathcal T_5$. Thus the displayed relations give the complete comparison poset.
+Every other pair is incomparable. For each such pair $(\mathcal T,\mathcal T')$, the table gives a set in $\mathcal T$ but not in $\mathcal T'$, and a set in $\mathcal T'$ but not in $\mathcal T$:
+
+| Pair | In the first only | In the second only |
+| --- | --- | --- |
+| $\mathcal T_2,\mathcal T_3$ | $\{a\}$ | $\{b\}$ |
+| $\mathcal T_2,\mathcal T_4$ | $\{a\}$ | $\{b\}$ |
+| $\mathcal T_2,\mathcal T_6$ | $\{a\}$ | $\{b\}$ |
+| $\mathcal T_3,\mathcal T_8$ | $\{b,c\}$ | $\{a\}$ |
+| $\mathcal T_4,\mathcal T_7$ | $\{b\}$ | $\{a,b\}$ |
+| $\mathcal T_6,\mathcal T_8$ | $\{c\}$ | $\{a\}$ |
+| $\mathcal T_5,\mathcal T_2$ | $\{b,c\}$ | $\{a,b\}$ |
+| $\mathcal T_5,\mathcal T_3$ | $\{a\}$ | $\{b\}$ |
+| $\mathcal T_5,\mathcal T_4$ | $\{a\}$ | $\{b\}$ |
+| $\mathcal T_5,\mathcal T_6$ | $\{a\}$ | $\{b\}$ |
+| $\mathcal T_5,\mathcal T_7$ | $\{a\}$ | $\{a,b\}$ |
+| $\mathcal T_5,\mathcal T_8$ | $\{b,c\}$ | $\{b\}$ |
 :::
