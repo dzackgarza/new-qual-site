@@ -39,87 +39,52 @@ Let $b = \sup B$ ; show that $b^2 = a$ .
 :::
 
 ::: {.solution}
-<1>1. Part (a): Quadratic inequalities for $x > 0$ and $0 \le h < 1$: <2>1. Expand $(x + h)^2$:
-\[
-(x + h)^2 = x^2 + 2xh + h^2.
-\]
-Because $0 \le h < 1$, we have $h^2 \le h$.
-Therefore:
-\[
-(x + h)^2 = x^2 + 2xh + h^2 \le x^2 + 2xh + h = x^2 + h(2x + 1).
-\]
+<1>1. For $x > 0$ and $0 \le h < 1$, $(x + h)^2 \le x^2 + h(2x + 1)$ and $(x - h)^2 \ge x^2 - h(2x)$.
+
 ::: {.proof}
-$0 \le h < 1 \implies h^2 \le h$.
-:::
-<2>2. Expand $(x - h)^2$:
-\[
-(x - h)^2 = x^2 - 2xh + h^2 \ge x^2 - 2xh = x^2 - h(2x),
-\]
-since $h^2 \ge 0$.
-::: {.proof}
-square of any real number is non-negative.
+Since $0 \le h < 1$, $h^2 \le h$, so
+$$(x + h)^2 = x^2 + 2xh + h^2 \le x^2 + 2xh + h = x^2 + h(2x + 1).$$
+Since $h^2 \ge 0$,
+$$(x - h)^2 = x^2 - 2xh + h^2 \ge x^2 - h(2x).$$
 :::
 
-<1>2. Part (b): Stepping inequalities: <2>1. Suppose $x^2 < a$.
-Then $a - x^2 > 0$.
-Choose $h = \min\left( \frac{a - x^2}{2x + 1}, \, \frac{1}{2} \right) > 0$.
-Then $0 < h < 1$, so by Part (a):
-\[
-(x + h)^2 \le x^2 + h(2x + 1) \le x^2 + \left(\frac{a - x^2}{2x + 1}\right)(2x + 1) = x^2 + a - x^2 = a.
-\]
-Since $h \le \frac{1}{2} < \frac{a - x^2}{2x + 1}$ or $h = \frac{a - x^2}{2x + 1}$, choosing $h' = \frac{h}{2} > 0$ yields $(x + h')^2 < a$.
+<1>2. Let $x > 0$. If $x^2 < a$, then $(x + h)^2 < a$ for some $h > 0$; if $x^2 > a$, then $(x - h)^2 > a$ for some $h$ with $0 < h < x$.
+
 ::: {.proof}
-Part (a) and choice of $h$.
-:::
-<2>2. Suppose $x^2 > a$.
-Then $x^2 - a > 0$.
-Choose $h = \min\left( \frac{x^2 - a}{2x}, \, \frac{x}{2} \right) > 0$.
-Then $x - h > 0$, and by Part (a):
-\[
-(x - h)^2 \ge x^2 - h(2x) \ge x^2 - \left(\frac{x^2 - a}{2x}\right)(2x) = x^2 - (x^2 - a) = a.
-\]
-Choosing $h' = \frac{h}{2} > 0$ yields $(x - h')^2 > a$.
-::: {.proof}
-Part (a) and choice of $h$.
+Suppose $x^2 < a$. Put $h = \min\left(\frac{a - x^2}{2x + 1}, \frac12\right) > 0$ and $h' = h/2$. Then $0 < h' < h < 1$, and step <1>1 gives
+$$(x + h')^2 \le x^2 + h'(2x + 1) < x^2 + h(2x + 1) \le x^2 + (a - x^2) = a.$$
+
+Suppose $x^2 > a$. Put $h = \min\left(\frac{x^2 - a}{2x}, \frac{x}{2}\right) > 0$ and $h' = h/2$. Then $0 < h' < x$, and step <1>1 gives
+$$(x - h')^2 \ge x^2 - h'(2x) > x^2 - h(2x) \ge x^2 - (x^2 - a) = a.$$
 :::
 
-<1>3. Part (c): Existence of $\sup B$ and proof that $b^2 = a$: <2>1. Let $B = \{x \in \mathbb{R} \mid x^2 < a\}$.
-For $x_0 = \min(1, \frac{a}{2}) > 0$, $x_0^2 \le x_0 < a$, so $x_0 \in B$, meaning $B$ contains a positive number and is non-empty.
-If $x > 1 + a$, then $x^2 > (1 + a)^2 = 1 + 2a + a^2 > a$, so $x \notin B$.
-Thus $1 + a$ is an upper bound for $B$.
-By the Least Upper Bound Property of $\mathbb{R}$, $b = \sup B$ exists and $b \ge x_0 > 0$.
+<1>3. The set $B = \{x \in \RR \mid x^2 < a\}$ contains a positive number and is bounded above by $1 + a$.
+
 ::: {.proof}
-completeness of $\mathbb{R}$.
-:::
-<2>2. Suppose for contradiction that $b^2 < a$.
-By Part (b), there exists $h > 0$ such that $(b + h)^2 < a$.
-Then $b + h \in B$, which contradicts that $b$ is an upper bound of $B$ (since $b + h > b$).
-::: {.proof}
-definition of upper bound.
-:::
-<2>3. Suppose for contradiction that $b^2 > a$.
-By Part (b), there exists $h \in (0, b)$ such that $(b - h)^2 > a$.
-For any $x \in B$, $x^2 < a < (b - h)^2$, which implies $x < b - h$.
-Thus $b - h$ is an upper bound of $B$, contradicting that $b = \sup B$ is the least upper bound (since $b - h < b$).
-::: {.proof}
-definition of supremum.
-:::
-<2>4. By trichotomy of real numbers, we must have $b^2 = a$.
-::: {.proof}
-exclusion of $b^2 < a$ and $b^2 > a$.
+Put $x_0 = \min(1, a/2) > 0$. Then $x_0^2 \le x_0 < a$, so $x_0 \in B$. If $x > 1 + a$, then $x^2 > (1 + a)^2 = 1 + 2a + a^2 > a$, so $x \notin B$.
 :::
 
-<1>4. Part (d): Uniqueness of positive square roots: <2>1. Let $b, c > 0$ such that $b^2 = c^2$.
-Then $b^2 - c^2 = 0 \implies (b - c)(b + c) = 0$.
-Since $b > 0$ and $c > 0$, $b + c > 0$.
-Dividing by $b + c$ yields $b - c = 0$, so $b = c$.
+<1>4. $b = \sup B$ exists, $b > 0$, and $b^2 = a$.
+
 ::: {.proof}
-factorization of difference of squares and non-zero sum of positive numbers.
+By step <1>3 and the least upper bound property of $\RR$, $b = \sup B$ exists and $b \ge x_0 > 0$.
+
+If $b^2 < a$, step <1>2 gives $h > 0$ with $(b + h)^2 < a$. Then $b + h \in B$ and $b + h > b$, which contradicts that $b$ is an upper bound of $B$.
+
+If $b^2 > a$, step <1>2 gives $h$ with $0 < h < b$ and $(b - h)^2 > a$. Let $x \in B$. If $x \le 0$, then $x < b - h$. If $x > 0$, then $x^2 < a < (b - h)^2$ with $x, b - h > 0$, so $x < b - h$. Hence $b - h$ is an upper bound of $B$ smaller than $b$, which contradicts that $b$ is the least upper bound.
+
+By trichotomy, $b^2 = a$.
 :::
 
-<1>5. Conclusion: Every positive number $a > 0$ has a unique positive square root $b = \sup \{x \in \mathbb{R} \mid x^2 < a\}$.
+<1>5. If $b, c > 0$ and $b^2 = c^2$, then $b = c$.
+
 ::: {.proof}
-<1>1 through <1>4.
+$(b - c)(b + c) = b^2 - c^2 = 0$ and $b + c > 0$, so $b - c = 0$.
 :::
-Q.E.D.
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1, <1>2, <1>3 with <1>4, and <1>5 prove parts (a), (b), (c), and (d). By step <1>4, $\sup\{x \in \RR \mid x^2 < a\}$ is a positive square root of $a$, and by step <1>5 it is the only one.
+:::
 :::
