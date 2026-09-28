@@ -18,13 +18,17 @@ prompts:
 - What is a prime divisor? A reduced divisor?
 - For a prime divisor $D$ and $p \in \supp D$, what is the multiplicity of $D$ at $p$?
 - What is the pullback of a divisor?
-- What are the minimal requirements on a scheme for a theory of Weil divisors?
+- Which hypotheses on a scheme define Weil divisors and the principal divisor of a rational function?
 ---
 
 ::: {.definition title="Prime and reduced divisors"}
 On a Noetherian integral separated scheme $X$ regular in codimension one, a \dfn{prime divisor} is a closed integral subscheme of codimension one.
-These hypotheses are what the theory of Weil divisors needs: integrality supplies a function field, and regularity in codimension one makes each local ring at a prime divisor a discrete valuation ring, so every rational function has an order along it.
 A Weil divisor $D = \sum_i n_i D_i$ with the $D_i$ distinct prime divisors is \dfn{effective} if all $n_i \geq 0$, and \dfn{reduced} if every $n_i \in \{0, 1\}$.
+:::
+
+::: {.remark}
+Integrality of $X$ gives the function field $K(X)$.
+Regularity in codimension one makes the local ring $\OO_{X,\eta_Y}$ at the generic point of each prime divisor $Y$ a discrete valuation ring, so every $f\in K(X)^\times$ has an order $v_Y(f)$ along $Y$, which defines $\operatorname{div}(f)$ ([[D-5PQ5W]]).
 :::
 
 ::: {.definition title="Multiplicity at a point"}
