@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-07
 kind: problem
-title: A finite-order real operator on $\mathbb R^6$ splits into invariant planes
+title: A finite-order real operator on $\RR^6$ splits into invariant planes
 classification:
   areas:
   - prelim
