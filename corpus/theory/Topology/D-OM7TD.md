@@ -18,7 +18,7 @@ review: draft
 
 ::: {.definition}
 Let $X$ be a topological space.
-Separating two sets by neighborhoods means finding disjoint open sets containing them.
+Two subsets $S, T\subseteq X$ are \dfn{separated by neighborhoods} if there exist disjoint open sets $U\supseteq S$ and $V\supseteq T$.
 
 - $X$ is \dfn{$T_0$} if for all $x_1\neq x_2$ in $X$ some open set contains exactly one of $x_1,x_2$.
 
