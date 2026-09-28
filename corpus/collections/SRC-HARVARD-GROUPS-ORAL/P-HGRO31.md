@@ -26,33 +26,19 @@ State the Sylow theorems.
 :::
 
 ::: {.solution}
-Let $G$ be a finite group and write
-\[
-|G|=p^n m,
-\qquad p\nmid m,
-\]
-for a prime $p$.
+Let $G$ be a finite group, let $p$ be a prime, and write $\abs{G}=p^nm$ with
+$p\nmid m$. A \dfn{Sylow $p$-subgroup} of $G$ is a subgroup of order $p^n$.
 
-<1>1. Existence.
-::: {.proof}
-There exists a subgroup $P\le G$ of order $p^n$. Such a subgroup is called a
-Sylow $p$-subgroup.
-:::
+**Existence.** $G$ has a Sylow $p$-subgroup.
 
-<1>2. Containment and conjugacy.
-::: {.proof}
-Every $p$-subgroup of $G$ is contained in a Sylow $p$-subgroup, and any two
-Sylow $p$-subgroups of $G$ are conjugate in $G$.
-:::
+**Containment and conjugacy.** Every $p$-subgroup of $G$ is contained in a
+Sylow $p$-subgroup, and any two Sylow $p$-subgroups of $G$ are conjugate in
+$G$.
 
-<1>3. Number of Sylow subgroups.
-::: {.proof}
-If $n_p$ denotes the number of Sylow $p$-subgroups, then
-\[
-n_p\equiv1\pmod p
-\qquad\text{and}\qquad
-n_p\mid m.
-\]
-In particular, a Sylow $p$-subgroup is normal if and only if it is unique.
-:::
+**Number.** The number $n_p$ of Sylow $p$-subgroups satisfies
+$$
+n_p\equiv1\pmod p\qquad\text{and}\qquad n_p\mid m.
+$$
+Since the Sylow $p$-subgroups form one conjugacy class, a Sylow $p$-subgroup
+is normal if and only if $n_p=1$.
 :::
