@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5CS9C
 kind: problem
-title: R^omega in the uniform topology
+title: Connectedness of $\RR^\omega$ in the uniform topology
 classification:
   areas:
   - topology
@@ -23,34 +23,24 @@ Determine whether or not $\mathbb{R}^\omega$ is connected in the uniform topolog
 :::
 
 ::: {.solution}
-**Goal:** Prove that $\mathbb{R}^\omega$ is **not connected** (is disconnected) in the uniform topology by constructing a non-trivial clopen subset.
+The uniform metric is $\bar\rho(\mathbf x,\mathbf y)=\sup_n\min\{\abs{x_n-y_n},1\}$. Let $\mathcal B$ be the set of bounded sequences.
 
-<1>1. Definition of the uniform metric:
-    The uniform topology on $\mathbb{R}^\omega$ is induced by the metric:
-    $$\bar{\rho}(\mathbf{x}, \mathbf{y}) = \sup_{n \in \mathbb{Z}_+} \bar{d}(x_n, y_n), \quad \text{where } \bar{d}(a, b) = \min\{|a - b|, 1\}.$$
+<1>1. If $\bar\rho(\mathbf x,\mathbf y)<\frac12$, then $\mathbf x$ is bounded if and only if $\mathbf y$ is bounded.
 
-<1>2. Candidate clopen subset:
-    Let $\mathcal{B} \subset \mathbb{R}^\omega$ be the subspace of all bounded sequences:
-    $$\mathcal{B} = \left\{ \mathbf{x} = (x_n)_{n=1}^\infty \in \mathbb{R}^\omega \;\middle|\; \sup_{n \in \mathbb{Z}_+} |x_n| < \infty \right\}.$$
+::: {.proof}
+$\bar\rho(\mathbf x,\mathbf y)<\frac12$ forces $\abs{x_n-y_n}<\frac12$ for every $n$, so $\sup_n\abs{y_n}\le\sup_n\abs{x_n}+\frac12$ and symmetrically.
+:::
 
-<1>3. $\mathcal{B}$ is an open subset of $\mathbb{R}^\omega$:
-    *Proof:*
-    <2>1. Let $\mathbf{x} \in \mathcal{B}$, so there exists $M < \infty$ with $|x_n| \le M$ for all $n \in \mathbb{Z}_+$.
-    <2>2. Consider the open ball $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$.
-    <2>3. For any $\mathbf{y} \in B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2})$, we have $\sup_{n} \bar{d}(x_n, y_n) < \frac{1}{2} < 1$, which forces $|x_n - y_n| < \frac{1}{2}$ for all $n \in \mathbb{Z}_+$.
-    <2>4. By the triangle inequality, $|y_n| \le |x_n| + |y_n - x_n| < M + \frac{1}{2}$ for all $n \in \mathbb{Z}_+$.
-    <2>5. Thus $\sup_n |y_n| \le M + \frac{1}{2} < \infty$, which means $\mathbf{y} \in \mathcal{B}$.
-    <2>6. Hence $B_{\bar{\rho}}(\mathbf{x}, \frac{1}{2}) \subseteq \mathcal{B}$, so $\mathcal{B}$ is open in the uniform topology.
+<1>2. $\mathcal B$ is open and closed in the uniform topology, and $\mathcal B\ne\varnothing,\RR^\omega$.
 
-<1>4. $\mathcal{B}$ is a closed subset of $\mathbb{R}^\omega$:
-    *Proof:*
-    <2>1. Two sequences $\mathbf{x}, \mathbf{y} \in \mathbb{R}^\omega$ are equivalent ($\mathbf{x} \sim \mathbf{y}$) if $\sup_n |x_n - y_n| < \infty$.
-    <2>2. By the same reasoning as in <1>3, for any $\mathbf{x} \in \mathbb{R}^\omega$, the equivalence class $[\mathbf{x}] = \{\mathbf{y} \in \mathbb{R}^\omega \mid \mathbf{x} \sim \mathbf{y}\}$ is an open subset of $\mathbb{R}^\omega$.
-    <2>3. The complement $\mathbb{R}^\omega \setminus \mathcal{B} = \bigcup_{[\mathbf{x}] \neq \mathcal{B}} [\mathbf{x}]$ is a union of open equivalence classes, hence open.
-    <2>4. Thus $\mathcal{B}$ is closed in the uniform topology.
+::: {.proof}
+By step <1>1, the ball $B_{\bar\rho}(\mathbf x,\frac12)$ lies in $\mathcal B$ when $\mathbf x\in\mathcal B$ and in $\RR^\omega-\mathcal B$ when $\mathbf x\notin\mathcal B$, so both sets are open.
+$\mathbf 0\in\mathcal B$ and $(1,2,3,\ldots)\notin\mathcal B$.
+:::
 
-<1>5. Conclusion:
-    - $\mathcal{B}$ is non-empty (since $\mathbf{0} \in \mathcal{B}$).
-    - $\mathbb{R}^\omega \setminus \mathcal{B}$ is non-empty (since the sequence $(1, 2, 3, \dots) \in \mathbb{R}^\omega \setminus \mathcal{B}$).
-    - Thus $\mathcal{B}$ is a non-trivial clopen subset of $\mathbb{R}^\omega$, proving that $\mathbb{R}^\omega$ is **not connected** in the uniform topology. Q.E.D.
+<1>3. Q.E.D.
+
+::: {.proof}
+By step <1>2, $\mathcal B$ and its complement separate $\RR^\omega$, so $\RR^\omega$ is $\boxed{\text{not connected}}$ in the uniform topology.
+:::
 :::
