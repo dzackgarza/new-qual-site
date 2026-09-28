@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-0SYCY
 kind: definition
-title: Smooth and singular points, and the two criteria
+title: Smooth and singular points; Jacobian and regularity criteria
 classification:
   areas:
   - algebraic-geometry
@@ -17,28 +17,30 @@ review: draft
 prompts:
 - Give two criteria for a variety to be nonsingular at a point.
 - What is the Zariski tangent space?
-- Why does the Jacobian criterion need the right codimension?
+- In the Jacobian criterion, which polynomials are differentiated, and what rank is required?
 ---
 
 ::: {.definition title="Zariski tangent space"}
 For $p \in X$ with local ring $\OO_{X,p}$ and maximal ideal $\mfm_p$, the \dfn{Zariski tangent space} is
-\[
+$$
 T_p X \da (\mfm_p / \mfm_p^2)\dual .
-\]
-The point $p$ is **smooth** if $\dim_k T_p X = \dim_p X$, and **singular** otherwise, where the inequality $\geq$ always holds.
+$$
+The point $p$ is \dfn{smooth} if $\dim_k T_p X = \dim_p X$, and \dfn{singular} otherwise.
 :::
 
 ::: {.proposition title="Jacobian criterion"}
-Let $I(X) = \gens{f_1,\ldots,f_r} \subseteq k[x_1,\ldots,x_n]$ with $X$ of pure codimension $r$, and let $J_X(p) = \left[ \partial f_i / \partial x_j (p) \right]$.
-Then $p$ is a smooth point exactly when $\rank J_X(p) = r$.
+Let $X\subseteq\AA^n$ be an affine variety of dimension $d$, let $I(X) = \gens{f_1,\ldots,f_t} \subseteq k[x_1,\ldots,x_n]$, and let $J_X(p) = \left[ \partial f_i / \partial x_j (p) \right]$.
+Then $\rank J_X(p)\le n-d$ for every $p\in X$, and $p$ is a smooth point if and only if $\rank J_X(p) = n-d$ [@Har10a, Theorem I.5.1].
 :::
 
 ::: {.remark}
-There are two complementary criteria for nonsingularity: the extrinsic Jacobian-rank computation and the intrinsic condition that $\OO_{X,p}$ be a regular local ring, which extends to schemes and non-closed points.
+For every $p\in X$, $\dim_k T_pX\ge\dim_pX$.
+The point $p$ is smooth if and only if $\OO_{X,p}$ is a regular local ring, and regularity of the local ring is defined at every point of a scheme, closed or not.
 
-The rank condition is stated for a *complete intersection* presentation.
-If $X$ is cut out by more equations than its codimension, the rank of $J_X$ drops everywhere and the criterion reports singularities that are not there.
-The two criteria are equivalent over a perfect field and part company over an imperfect one: the Jacobian condition is smoothness, which is geometric and survives base change to $\bar{k}$, while regularity of $\OO_{X,p}$ does not.
-Over $k = \FF_p(t)$ the closed subscheme $V(x^p - t) \subseteq \AA^1$ is the spectrum of a field, hence regular, but it is not smooth: after base change to $k(t^{1/p})$ it becomes $V((x - t^{1/p})^p)$, which is not even reduced.
-Thus perfectness is exactly what makes regularity agree with geometric smoothness in this criterion.
+The $f_i$ in the Jacobian criterion generate the ideal $I(X)$.
+Equations that cut out $X$ only as a set do not suffice: $V(x^2)=\{0\}\subseteq\AA^1$ has $J(0)=(0)$, of rank $0\ne1$, although $0$ is a smooth point of $\{0\}=V(x)$.
+
+Over a perfect field, the Jacobian condition at $p$ is equivalent to regularity of $\OO_{X,p}$.
+Over an imperfect field, the Jacobian condition is smoothness, which is preserved by base change to $\bar{k}$; regularity of $\OO_{X,p}$ is not.
+Over $k = \FF_p(t)$ the closed subscheme $V(x^p - t) \subseteq \AA^1$ is the spectrum of a field, hence regular, but it is not smooth: after base change to $k(t^{1/p})$ it becomes $V((x - t^{1/p})^p)$, which is not reduced.
 :::
