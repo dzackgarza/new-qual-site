@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-2CZUM
 kind: proposition
 title: Continuity and differentiation under the integral sign
-slogan: 'A dominating function in $L^1$ for $f$ makes $F(t)=\int f(x,t)\,d\mu$ continuous; one for $\partial_t f$ gives $F^\prime=\int\partial_t f\,d\mu$.'
+slogan: 'If $f$ is continuous in $t$ and $\abs{f}\le g\in L^1$, then $F(t)=\int f(x,t)\,d\mu$ is continuous; if $\abs{\partial_t f}\le g\in L^1$, then $F^\prime=\int\partial_t f\,d\mu$.'
 classification:
   areas:
   - real-analysis
