@@ -111,10 +111,3 @@ for nonzero $\alpha,\beta$, that condition follows from
 multiplicativity and $\delta(\beta)\geq1$.
 :::
 :::
-
-::: {.remark}
-The signed field norm is $N(a+b\sqrt2)=a^2-2b^2$; the Euclidean
-function is its absolute value. The signed values
-$N(n\sqrt2)=-2n^2$ are unbounded below and cannot serve as the
-nonnegative integer size in the Euclidean algorithm.
-:::
