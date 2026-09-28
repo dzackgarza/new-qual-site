@@ -24,38 +24,24 @@ Does the converse hold?
 :::
 
 ::: {.solution}
-**Goal.** Show a discrete space is totally disconnected, and decide the converse.
+<1>1. A discrete space $X$ is totally disconnected.
 
-<1>1. A discrete space is totally disconnected.
-<2>1. In the discrete topology, every subset is open (and closed).
 ::: {.proof}
-definition of the discrete topology.
-:::
-<2>2. A connected subspace with more than one point would be disconnected.
-::: {.proof}
-if $C \subseteq X$ has two distinct points $x, y$, then $\theset{x}$ and $C \sm \theset{x}$ are both open in $C$ (since every subset is open), nonempty, and disjoint, so $C$ is disconnected.
-:::
-<2>3. Hence the only connected subspaces are singletons (and the empty set).
-::: {.proof}
-<1>1.2.
-:::
-<2>4. Hence $X$ is totally disconnected.
-::: {.proof}
-definition.
+Let $C\subseteq X$ contain distinct points $x$ and $y$.
+Every subset of $C$ is open in $C$, so $\theset{x}$ and $C\sm\theset{x}$ are disjoint nonempty open subsets of $C$ with union $C$, and $C$ is not connected.
 :::
 
-<1>2. The converse is false.
-<2>1. Counterexample: $\QQ$ with the usual (subspace) topology.
+<1>2. The converse is false: $\QQ$ with the subspace topology from $\RR$ is totally disconnected but not discrete.
+
 ::: {.proof}
-$\QQ$ is totally disconnected (its only connected subspaces are singletons).
-:::
-<2>2. But $\QQ$ is not discrete.
-::: {.proof}
-no singleton $\theset{q}$ is open in $\QQ$ (every open set contains infinitely many rationals).
+Let $C\subseteq\QQ$ contain rationals $p<q$, and choose an irrational $r$ with $p<r<q$.
+Then $C\cap(-\infty,r)$ and $C\cap(r,\infty)$ are disjoint nonempty open subsets of $C$ with union $C$, so $C$ is not connected.
+No singleton $\theset{q}$ is open in $\QQ$, since every open interval about $q$ contains other rationals.
 :::
 
 <1>3. Q.E.D.
+
 ::: {.proof}
-<1>1 proves the forward direction; <1>2 shows the converse fails.
+Step <1>1 proves the statement, and step <1>2 answers the question about the converse.
 :::
 :::
