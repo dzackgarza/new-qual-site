@@ -26,10 +26,10 @@ audit:
 ---
 
 ::: {.problem}
-For \(n\ge1\), let \(f(n)\) be the maximum order of an element of \(S_n\). Show that
-\[
+For $n\ge1$, let $f(n)$ be the maximum order of an element of $S_n$. Show that
+$$
 \liminf_{n\to\infty}\frac{n}{f(n)}=0.
-\]
+$$
 :::
 
 ::: {.solution}
