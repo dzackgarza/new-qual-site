@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5QAVX
 kind: problem
-title: Using derivatives
+title: $\abs{f''(0)}\le2$ for a self-map of $\DD$ with $f(0)=f'(0)=0$
 classification:
   areas:
   - complex-analysis
