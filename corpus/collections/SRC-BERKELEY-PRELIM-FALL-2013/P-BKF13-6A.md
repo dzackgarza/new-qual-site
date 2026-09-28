@@ -28,7 +28,7 @@ audit:
 ---
 
 ::: {.problem}
-Let V be the complex vector space of complex $2 \times 2$ matrices X. Find all quadratic forms $Q$ on V such that $Q ( X ) = Q ( A X A ^ { - 1 } )$ for any complex invertible $2 \times 2$ matrix A.
+Let $V$ be the complex vector space of complex $2\times2$ matrices $X$. Find all quadratic forms $Q$ on $V$ such that $Q(X)=Q(AXA^{-1})$ for any complex invertible $2\times2$ matrix $A$.
 :::
 
 ::: {.solution}
