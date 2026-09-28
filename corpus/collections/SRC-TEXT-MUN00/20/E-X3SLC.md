@@ -29,41 +29,36 @@ is a bounded metric that gives the topology of $X$.
 :::
 
 ::: {.solution}
-<1>1. $d'$ is a metric.
-<2>1. $d'(x,y) \ge 0$ and $d'(x,y) = 0$ iff $x = y$.
+Let $f(t)=t/(1+t)=1-1/(1+t)$ for $t\ge0$, so that $d'=f\circ d$; $f$ is increasing, $f(0)=0$, and $0\le f<1$.
+
+<1>1. $f(a+b)\le f(a)+f(b)$ for $a,b\ge0$.
+
 ::: {.proof}
-$d(x,y) \ge 0$ and $d(x,y) = 0$ iff $x = y$, and $d/(1+d) = 0$ iff $d = 0$.
-:::
-<2>2. $d'(x,y) = d'(y,x)$.
-::: {.proof}
-$d$ is symmetric.
-:::
-<2>3. Triangle inequality: $d'(x,z) \le d'(x,y) + d'(y,z)$.
-::: {.proof}
-let $f(t) = t/(1+t)$; $f$ is increasing and concave, and $f(a+b) \le f(a) + f(b)$ for $a, b \ge 0$ (by the hint, $f(a+b) - f(b) \le f(a)$). Hence $d'(x,z) = f(d(x,z)) \le f(d(x,y) + d(y,z)) \le f(d(x,y)) + f(d(y,z)) = d'(x,y) + d'(y,z)$.
+$$
+f(a+b)=\frac a{1+a+b}+\frac b{1+a+b}\le\frac a{1+a}+\frac b{1+b}.
+$$
 :::
 
-<1>2. $d'$ is bounded.
+<1>2. $d'$ is a metric bounded by $1$.
+
 ::: {.proof}
-$d'(x,y) = \frac{d(x,y)}{1+d(x,y)} < 1$ for all $x, y$.
+$d'\ge0$, with $d'(x,y)=0$ if and only if $d(x,y)=0$, that is, $x=y$; $d'$ is symmetric because $d$ is; and $d'<1$ because $f<1$.
+Since $f$ is increasing, step <1>1 gives
+$$
+d'(x,z)=f(d(x,z))\le f(d(x,y)+d(y,z))\le d'(x,y)+d'(y,z).
+$$
 :::
 
-<1>3. $d'$ gives the same topology as $d$.
-<2>1. $d'(x,y) \le d(x,y)$.
+<1>3. For $0<r\le\frac12$ and every $x$, $B_d(x,r)\subseteq B_{d'}(x,r)$ and $B_{d'}(x,r)\subseteq B_d(x,2r)$.
+
 ::: {.proof}
-$\frac{d}{1+d} \le d$ since $1 + d \ge 1$.
-:::
-<2>2. For $d(x,y) < 1$, $d(x,y) \le 2d'(x,y)$.
-::: {.proof}
-$d' = \frac{d}{1+d} \ge \frac{d}{2}$ when $d < 1$ (since $1 + d < 2$).
-:::
-<2>3. Hence the $d$-balls and $d'$-balls are mutually cofinal, so the topologies coincide.
-::: {.proof}
-<2>1 and <2>2 show that every $d'$-ball contains a $d$-ball and every small $d$-ball contains a $d'$-ball.
+$d'\le d$ gives the first inclusion.
+If $d'(x,y)<r\le\frac12$, then $d(x,y)=d'(x,y)/(1-d'(x,y))<r/(1-r)\le2r$.
 :::
 
 <1>4. Q.E.D.
+
 ::: {.proof}
-<1>1, <1>2, and <1>3.
+By step <1>3, every ball of either metric about a point contains a ball of the other metric about that point, so $d$ and $d'$ have the same open sets; step <1>2 shows that $d'$ is a bounded metric.
 :::
 :::
