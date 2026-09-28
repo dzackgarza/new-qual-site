@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK98S-01
 kind: problem
-title: Count the roots of $z^4+z^3+1$ in the first quadrant
+title: $z^4+z^3+1$ has exactly one root in the first quadrant
 classification:
   areas:
   - prelim
