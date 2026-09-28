@@ -29,8 +29,8 @@ audit:
 ---
 
 ::: {.problem}
-Find a linear fractional transformation T which maps the open upper half plane onto the open unit disk.
-Then explicitly describe the image of the first quadrant of the unit disk under T .
+Find a linear fractional transformation $T$ which maps the open upper half plane onto the open unit disk.
+Then explicitly describe the image of the first quadrant of the unit disk under $T$.
 :::
 
 ::: {.solution}
