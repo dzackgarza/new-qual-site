@@ -32,7 +32,7 @@ audit:
 :::
 
 ::: {.solution}
-**Goal:** Evaluate the indefinite integral $\int \frac{\sqrt{x^2-a^2}}{x} \, dx$ for $a > 0$ and $x > a$.
+Take $a > 0$ and $x > a$.
 
 <1>1. Substitute $x = a \sec(\theta)$ with $\theta \in (0, \pi/2)$.
 ::: {.proof}
