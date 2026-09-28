@@ -23,7 +23,7 @@ audit:
 
 - Prove that the minimal polynomial divides the characteristic polynomial.
 
-- Prove that the cokernel of $A\in \mat(n\times n, \ZZ)$ is finite $\iff \det A \neq 0$, and show that in this case $\abs{\coker(A)} = \abs{\det(A)}$.
+- Prove that the cokernel of $A\in \Mat(n\times n, \ZZ)$ is finite $\iff \det A \neq 0$, and show that in this case $\abs{\coker(A)} = \abs{\det(A)}$.
 
 - Show that a nilpotent operator is diagonalizable.
 
@@ -50,9 +50,7 @@ Throughout, $A\in M_n(F)$ for a field $F$, with characteristic polynomial $p(t)=
 
 ::: {.proof}
 Write $\operatorname{adj}(tI-A)=\sum_{j=0}^{n-1}B_jt^j$ with $B_j\in M_n(F)$.
-The adjugate identity $(tI-A)\operatorname{adj}(tI-A)=p(t)I$ gives, on comparing coefficients of $t^j$,
-$$B_{n-1}=c_nI,\qquad B_{j-1}-AB_j=c_jI\ (1\le j\le n-1),\qquad -AB_0=c_0I .$$
-Multiplying the equation for $t^j$ on the left by $A^j$ and summing over $j$, the right sides sum to $p(A)$ and the left sides telescope to $0$.
+The adjugate identity $(tI-A)\operatorname{adj}(tI-A)=p(t)I$ gives, on comparing coefficients of $t^j$, $$B_{n-1}=c_nI,\qquad B_{j-1}-AB_j=c_jI\ (1\le j\le n-1),\qquad -AB_0=c_0I .$$ Multiplying the equation for $t^j$ on the left by $A^j$ and summing over $j$, the right sides sum to $p(A)$ and the left sides telescope to $0$.
 :::
 
 <1>2. The minimal polynomial $m_A$ divides $p$.

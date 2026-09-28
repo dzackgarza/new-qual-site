@@ -67,7 +67,7 @@ $$
 $$
 and if $\det A$ is invertible, the adjugate gives the inverse:
 $$
-A\inv = {1\over \det A} \adj(A), \qquad \adj(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
+A\inv = {1\over \det A} \operatorname{adj}(A), \qquad \operatorname{adj}(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i).
 $$
 :::
 

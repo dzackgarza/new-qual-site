@@ -33,7 +33,7 @@ Gamelin describes this process in detail, see Ch.2 Section 5 on Harmonic functio
 \[
 v(x, y)
 = \int_{y_{0}}^{y} \frac{\partial u}{\partial x}(x, t) \dt 
--\int_{x_{0}}^{x} \frac{\partial u}{\partial y}\left(s, y_{0}\right) \ds + C 
+-\int_{x_{0}}^{x} \frac{\partial u}{\partial y}\left(s, y_{0}\right) \,ds + C 
 .\]
 
 :::

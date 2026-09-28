@@ -53,15 +53,15 @@ u_{xx} + u_{yy} = 0, \qquad v_{xx} + v_{yy} = 0
 ::: {.proof}
 Define
 $$
-F(r) \coloneqq {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} u\ds = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it} ) \dt
+F(r) \coloneqq {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} u\,ds = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it} ) \dt
 ,$$
 and differentiate:
 $$
 \begin{aligned}
 F'(r)
 &= {1\over 2 \pi} \int_{[-\pi, \pi]} \cos(t) u_x(z_0 +re^{it} ) + \sin(t) u_y(z_0 + re^{it}) \dt \\
-&= {1\over 2\pi r} \oint_{\bd \DD_r(z_0)}\qty{x-x_0\over r} u_x(x, y) + \qty{y-y_0\over r}u_y(x, y) \ds \\
-&= {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} \dd{u}{n} \ds \qquad n = \tv{{x-x_0\over r}, {y-y_0\over r}} \\
+&= {1\over 2\pi r} \oint_{\bd \DD_r(z_0)}\qty{x-x_0\over r} u_x(x, y) + \qty{y-y_0\over r}u_y(x, y) \,ds \\
+&= {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} \dd{u}{n} \,ds \qquad n = \tv{{x-x_0\over r}, {y-y_0\over r}} \\
 &= {1\over 2\pi r} \iint_{\DD_r(z_0)} \laplacian u \dx \dy \\
 &= 0
 \end{aligned},$$

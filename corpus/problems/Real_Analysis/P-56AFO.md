@@ -16,8 +16,8 @@ review: draft
 ::: {.problem}
 Let $n\geq 1$ and $p\in\RR$. Show that
 \[
-\int_{\BB^n} {1 \over \abs{x}^p } \dx &< \infty \iff p < n \\ \\ \\ 
-\int_{\RR^n\sm \BB^n} {1 \over \abs{x}^p } \dx &< \infty \iff p > n 
+\int_{\bB^n} {1 \over \abs{x}^p } \dx &< \infty \iff p < n \\ \\ \\ 
+\int_{\RR^n\sm \bB^n} {1 \over \abs{x}^p } \dx &< \infty \iff p > n 
 .\]
 :::
 

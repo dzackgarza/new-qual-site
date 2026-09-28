@@ -62,8 +62,8 @@ C_2 = \ts{s + i\eps \st x\in [-R, -1-\eps]}
 which implies
 \[
 \int_{C_2}f(z)\dz 
-&= \int_{-\infty}^{-1} {1\over s\sqrt{s^2-1}}\ds \\
-&= - \int_{\infty}^{1} {1\over (-x) \sqrt{(-x)^2-1}}\dx,\qquad x=-s,\, \dx = -\ds \\
+&= \int_{-\infty}^{-1} {1\over s\sqrt{s^2-1}}\,ds \\
+&= - \int_{\infty}^{1} {1\over (-x) \sqrt{(-x)^2-1}}\dx,\qquad x=-s,\, \dx = -\,ds \\
 &= \int_\infty^1 {1\over (-x) \sqrt{ (-x)^2 - 1} }\dx \\
 &= - \int_\infty^1 {1\over x \sqrt{ x^2 - 1} }\dx \\
 &= \int_1^\infty {1\over x \sqrt{ x^2 - 1} }\dx \\
