@@ -734,8 +734,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Object and need:** the cards below. Each line is a reader's report made
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
-  - Proof gaps: E-SS1.EX-13 proves part (3) only. E-SS10.PR-2 (b) asserts the
-    $\abs c=1$ corner cases. P-AGXHWDISTINGOPEN mixes the directions of the
+  - Proof gaps: P-AGXHWDISTINGOPEN mixes the directions of the
     sheaf map on $D(f)$. P-AGXHWREDUCED solves part (a) only.
     P-AGXVARSMOOTHMFLD step <1>4 proves one inclusion of
     $T_pX=\ker dF_p$. P-B2P3P (b)(i) does not exclude the other partitions

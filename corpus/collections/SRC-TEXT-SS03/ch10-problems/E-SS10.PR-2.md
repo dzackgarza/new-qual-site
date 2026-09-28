@@ -119,11 +119,21 @@ or
 \Re\tau=-\frac12,\quad \tau'=\tau+1.
 \]
 
-Now suppose \(|c|=1\). Then (2) says \(|\tau+k|\le1\) for some integer \(k\). Because \(|\tau|\ge1\) and \(|\Re\tau|\le1/2\), this is possible only on the circular boundary; hence \(|\tau|=1\). The only nontrivial identification of that boundary inside the fundamental domain is
+Now suppose \(|c|=1\). Since \(g\) and \(-g\) act identically, take \(c=1\); then \(ad-b=1\), and
 \[
-\tau'=-\frac1\tau=S(\tau),
+\tau'=\frac{a\tau+b}{\tau+d}=a-\frac{1}{\tau+d},
 \]
-with the corner cases already included in the vertical-boundary identifications. Thus distinct congruent points of \(\mathcal F_1\) occur exactly as stated.
+while (2) says \(|\tau+d|\le1\). If \(|d|\ge2\), then \(|\tau+d|\ge|d|-|x|\ge\frac32\), which is impossible. If \(d=\pm1\), then
+\[
+|\tau\pm1|^2=|\tau|^2\pm2x+1\ge2\pm2x\ge1,
+\]
+with equality only for \(|\tau|=1\) and \(x=\mp\frac12\). If \(d=0\), then \(|\tau|\le1\), so \(|\tau|=1\). In every case \(|\tau|=1\), so \(1/\tau=\bar\tau\).
+
+If \(d=0\), then \(\tau'=a-\bar\tau=a-x+iy\). This lies in \(\mathcal F_1\) only if \(|a-x|\le\frac12\): either \(a=0\) and \(\tau'=-1/\tau\), or \(x=\pm\frac12\), \(a=\pm1\), and \(\tau'=\tau\).
+
+If \(d=1\), then \(\tau=e^{2\pi i/3}\), \(\tau+1=e^{i\pi/3}\), and \(\tau'=a-e^{-i\pi/3}=a-\frac12+\frac{\sqrt3}2i\). This lies in \(\mathcal F_1\) only for \(a=0\), where \(\tau'=\tau\), or \(a=1\), where \(\tau'=\tau+1=-1/\tau\). The case \(d=-1\) is the reflection \(\tau\mapsto-\bar\tau\) of this one: \(\tau=e^{i\pi/3}\) and \(\tau'\in\{\tau,\tau-1\}\), with \(\tau-1=-1/\tau\).
+
+Thus a point \(\tau'\ne\tau\) with \(|c|=1\) has \(|\tau|=1\) and \(\tau'=-1/\tau\), and distinct congruent points of \(\mathcal F_1\) occur exactly as stated.
 
 For part (c), let \(G\in\operatorname{SL}_2(\mathbb Z)\). By part (a), there is \(h\in\Gamma\) such that
 \[
