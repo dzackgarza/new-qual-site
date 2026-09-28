@@ -23,7 +23,7 @@ topics:
 
 The first four are quotients of a square by the edge identifications in the following pasting diagrams:
 
-![Pasting Diagrams for Surfaces](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
+![Pasting diagrams for $\SS^2$, $\TT^2$, $\RP^2$, and $\KK$](../../../../assets/assets/Topology/figures/PastingDiagrams.png)
 
 :::
 
