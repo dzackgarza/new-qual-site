@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF04-9A
 kind: problem
-title: UC Berkeley Fall 2004 prelim 9A
+title: $\int_0^1 f(x)e^{inx^3}\,dx\to0$ for continuous $f$
 classification:
   areas: [prelim]
   topics: []
@@ -11,39 +11,43 @@ review: draft
 ---
 
 ::: {.problem}
-Let $f \colon [ 0 , 1 ] \to \mathbb { R }$ be a continuous function. Show that
+Let $f\colon[0,1]\to\mathbb{R}$ be a continuous function. Show that
 
 $$
-\operatorname* { l i m } _ { n \to \infty } \int _ { 0 } ^ { 1 } f ( x ) e ^ { i n x ^ { 3 } } d x = 0 .
+\lim_{n\to\infty}\int_0^1 f(x)e^{inx^3}\,dx=0.
 $$
 :::
 
 ::: {.solution}
-We can approximate f uniformly by smooth functions in [0, 1], so it suffices to prove the statement when f is smooth.
+Every continuous function on $[0,1]$ is a uniform limit of smooth functions, and $\abs{\int_0^1(f-g)e^{inx^3}\,dx}\leq\sup\abs{f-g}$ for every $n$, so it suffices to prove the statement when $f$ is smooth.
 
-Choose M such that $| f ( x ) | < M$ for all $x \in [ 0 , 1 ]$ . Let $\epsilon > 0$ . Then
-
-$$
-\left| \int _ { 0 } ^ { \epsilon } f ( x ) e ^ { i n x ^ { 3 } } d x \right| \le \epsilon M
-$$
-
-On the remaining interval we integrate by parts:
+Choose $M$ such that $\abs{f(x)}<M$ for all $x\in[0,1]$. Let $\varepsilon>0$. Then
 
 $$
-\begin{array} { r c l } { { \displaystyle \int _ { \epsilon } ^ { 1 } f ( x ) e ^ { i n x ^ { 3 } } d x } } & { { = } } & { { \displaystyle \int _ { \epsilon } ^ { 1 } \frac { f ( x ) } { x ^ { 2 } } x ^ { 2 } e ^ { i n x ^ { 3 } } d x } } \\ { { } } & { { = } } & { { \displaystyle \frac { 1 } { i n } \left( f ( 1 ) e ^ { i n } - \frac { f ( \epsilon ) } { \epsilon ^ { 2 } } e ^ { i n \epsilon ^ { 3 } } - \int _ { \epsilon } ^ { 1 } \frac { d } { d x } \left( \frac { f ( x ) } { x ^ { 2 } } \right) e ^ { i n x ^ { 3 } } d x \right) } } \end{array}
+\abs{\int_0^\varepsilon f(x)e^{inx^3}\,dx}\le\varepsilon M.
 $$
 
-Letting n tend to infinity, we obtain
+On the remaining interval, integrate by parts:
 
 $$
-\operatorname* { l i m } _ { n \to \infty } \int _ { \epsilon } ^ { 1 } f ( x ) e ^ { i n x ^ { 3 } } d x = 0
+\begin{aligned}
+\int_\varepsilon^1 f(x)e^{inx^3}\,dx
+&=\int_\varepsilon^1\frac{f(x)}{x^2}\,x^2e^{inx^3}\,dx\\
+&=\frac1{in}\left(f(1)e^{in}-\frac{f(\varepsilon)}{\varepsilon^2}e^{in\varepsilon^3}-\int_\varepsilon^1\frac{d}{dx}\left(\frac{f(x)}{x^2}\right)e^{inx^3}\,dx\right).
+\end{aligned}
 $$
 
-Adding to this the bound on $[ 0 , \epsilon ]$ , we get
+Letting $n$ tend to infinity,
 
 $$
-\operatorname* { l i m } _ { n \to \infty } \left| \int _ { 0 } ^ { 1 } f ( x ) e ^ { i n x ^ { 3 } } d x \right| \le \epsilon M
+\lim_{n\to\infty}\int_\varepsilon^1 f(x)e^{inx^3}\,dx=0.
 $$
 
-The conclusion follows if we let  tend to 0.
+Adding to this the bound on $[0,\varepsilon]$,
+
+$$
+\lim_{n\to\infty}\abs{\int_0^1 f(x)e^{inx^3}\,dx}\le\varepsilon M.
+$$
+
+The conclusion follows by letting $\varepsilon$ tend to $0$.
 :::
