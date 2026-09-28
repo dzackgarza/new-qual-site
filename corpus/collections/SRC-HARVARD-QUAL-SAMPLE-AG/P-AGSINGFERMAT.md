@@ -30,7 +30,7 @@ X^3 + Y^3 + Z^3 = 3CXYZ .
 :::
 
 ::: {.solution}
-Work over an algebraically closed field $k$ of characteristic different from $3$; in particular this covers the source's characteristic-zero setting.  Write
+Work over an algebraically closed field $k$ of characteristic different from $3$, for instance of characteristic $0$.  Write
 \[
 c=C\in k
 \]
@@ -184,5 +184,5 @@ In characteristic $3$, the equation becomes
 \[
 X^3+Y^3+Z^3=(X+Y+Z)^3,
 \]
-independently of $c$, so the curve is a nonreduced triple line; this is why the characteristic assumption matters.
+independently of $c$, so the curve is the line $X+Y+Z=0$ with multiplicity three, and every point of it is singular.
 :::
