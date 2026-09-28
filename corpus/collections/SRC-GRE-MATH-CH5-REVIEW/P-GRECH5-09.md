@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH5-09
 kind: problem
-title: Parameter making a 4-by-4 matrix singular
+title: Parameter making a $4\times4$ matrix singular
 classification:
   areas:
   - applied-algebra
