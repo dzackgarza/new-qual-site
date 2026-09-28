@@ -11,8 +11,6 @@ topics:
 
 Fans, the orbit-cone correspondence, and toric resolution of singularities.
 
-Toric geometry turns divisors, cohomology, singularities, resolutions, and many examples into finite computations on a fan.
-
 - [[algebraic-geometry/toric/the-dictionary|The fan dictionary]], the construction, the orbit-cone correspondence, smoothness and resolution, and a table of which fan supplies which counterexample.
 
 - [[algebraic-geometry/toric/affine-computations|Affine toric computations]], dualising a cone by hand, the equations of $X_\sigma$, the cone over the rational normal curve, and minimal resolution by convex hull.
