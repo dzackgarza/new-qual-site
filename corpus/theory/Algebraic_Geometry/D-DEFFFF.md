@@ -23,17 +23,17 @@ prompts:
 
 ::: {.definition title="full, faithful, fully faithful"}
 A covariant functor $F: \mca \to \mcb$ is \dfn{faithful} if for all objects $A, A'$ the induced map
-\[
+$$
 \Mor_{\mca}(A, A') \to \Mor_{\mcb}(F(A), F(A'))
-\]
-is injective, **full** if that map is surjective, and **fully faithful** if it is bijective.
+$$
+is injective, \dfn{full} if that map is surjective, and \dfn{fully faithful} if it is bijective.
 
-A subcategory $\mca'$ of $\mca$ is called **full** if its inclusion functor is full: it may have fewer objects, but it never loses morphisms between the objects it keeps.
+A subcategory $\mca'$ of $\mca$ is a \dfn{full subcategory} if its inclusion functor is full, that is, $\Mor_{\mca'}(A,A')=\Mor_{\mca}(A,A')$ for all objects $A,A'$ of $\mca'$.
 :::
 
 ::: {.remark}
 The forgetful functor from groups to sets is faithful and not full, since not every map of underlying sets is a homomorphism.
 
-A fully faithful functor is an equivalence of categories exactly when it is additionally essentially surjective, and it then reflects isomorphisms.
-That criterion is the one actually used: it is how one states that $\Spec$ is an anti-equivalence from rings to affine schemes, and how one recognises $\QCoh(\Spec A) \simeq \mods{A}$.
+A fully faithful functor reflects isomorphisms, and it is an equivalence of categories if and only if it is essentially surjective.
+Examples: $\Spec$ is fully faithful from the opposite of the category of rings to schemes, with essential image the affine schemes; and $M\mapsto\widetilde M$ is an equivalence $\mods{A}\simeq\QCoh(\Spec A)$.
 :::
