@@ -6,13 +6,19 @@ title: The generating function of the Fibonacci numbers
 classification:
   areas:
   - complex-analysis
-  topics: ['Theta Functions', 'Modular Forms', 'Partitions']
+  topics:
+  - Power Series
+  - Generating Functions
 relations: []
 review: draft
 audit:
 - event: solution-written
   by: gpt-5.6-sol
   date: 2026-09-11
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-09-28
+  note: Restored the proportion and the closing paragraph after the page break, and Figure 2, cropped from the page image of Stein-Shakarchi, Complex Analysis, p. 311.
 ---
 
 ::: {.exercise}
@@ -55,6 +61,14 @@ $$
 so that $A = 1 / \sqrt { 5 }$ and $B = - 1 / \sqrt { 5 } .$
 
 The number $1 / \alpha = ( \sqrt { 5 } - 1 ) / 2$ , which is known as the golden mean, satisfies the following property: given a line segment $\left[ A C \right]$ of unit length (Figure 2), there exists a unique point B on this segment so that the following proportion holds
+
+$$
+{\frac {A C}{A B}} = {\frac {A B}{B C}}.
+$$
+
+If $\ell = A B$ , this reduces to the equation $\ell ^ { 2 } + \ell - 1 = 0$ , whose only positive solution is the golden mean. This ratio arises also in the construction of the regular pentagon. It has played a role in architecture and art, going back to the time of ancient Greece.
+
+![Figure 2. Appearance of the golden mean](../../../../assets/Complex_Analysis/990_Exercises/figures/ss03-ch10-golden-mean.png)
 :::
 
 ::: {.solution}
