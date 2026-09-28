@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-For $p \textrm { a }$ prime show that the number of non-singular $n \times n$ matrices with entries in the field with p elements has the form $p ^ { r } s$ where $s \equiv ( - 1 ) ^ { n }$ (mod p), and find r.
+For $p$ a prime show that the number of non-singular $n \times n$ matrices with entries in the field with p elements has the form $p ^ { r } s$ where $s \equiv ( - 1 ) ^ { n }$ (mod p), and find r.
 :::
 
 ::: {.solution}
