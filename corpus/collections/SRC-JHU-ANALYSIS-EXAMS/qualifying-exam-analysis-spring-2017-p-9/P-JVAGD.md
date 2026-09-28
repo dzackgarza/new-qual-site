@@ -69,5 +69,5 @@ The integrand is nonnegative and measurable on $\mathbb R\times[0,\infty)$, so T
 m(\{x:f(x)>t\})\varphi'(t)\,dt.
 \end{aligned}
 \]
-The equality is valid in $[0,\infty]$, so no separate integrability assumption is needed.
+Both sides may be $+\infty$; Tonelli's theorem gives the equality in $[0,\infty]$.
 :::
