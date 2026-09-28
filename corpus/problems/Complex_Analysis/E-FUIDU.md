@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FUIDU
 kind: problem
-title: Using the estimates
+title: A self-map of $\DD$ with $f(1/2)=3/4$ and $f'(1/2)=2/3$
 classification:
   areas:
   - complex-analysis
