@@ -33,5 +33,5 @@ The hypothesis that $f$ has no zeros is needed: $f(z)=z$ on $\DD$ has $\min_{\ov
 :::
 
 ::: {.remark}
-Stein--Shakarchi, *Complex Analysis*, Chapter 3, Theorem 4.5 and Corollary 4.6.
+See [@SS03, Chapter 3, Theorem 4.5 and Corollary 4.6].
 :::
