@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-H64WF
 kind: problem
-title: Line to circle
+title: A fractional linear map sending $i\RR$ onto $\abs{z-\frac12}=\frac12$
 classification:
   areas:
   - complex-analysis
@@ -27,14 +27,12 @@ Find a conformal map that sends $i\RR$ to $\abs{z-{1\over 2}} = {1\over 2}$.
 \sin(2t) = {2\tan(t) \over 1+\tan^2(t)} && \cos(2t) = {1-\tan^2(2t) \over 1+\tan^2(t)}
 .\]
 - Parameterize a line by $x=\tan(t)$ for $t\in (-\pi/2, \pi/2)$
-- The methods in SS Theorem 1.2: particularly the boundary behavior of $F(z) \da {i-z\over i+z}$, where $F(\RR) = \ts{\cos(2t)+i\sin(2t) = e^{2it} \st t\in (-\pi/2, \pi/2)}$.
-
-- Nyquist plots: a common applied problem, essentially computing the image $F(i\RR)$.
+- The boundary behavior of $F(z) \da {i-z\over i+z}$ from [@SS03, Chapter 8, Theorem 1.2]: with $x=\tan(t)$, $F(\RR) = \ts{\cos(2t)+i\sin(2t) = e^{2it} \st t\in (-\pi/2, \pi/2)}$.
 
 :::
 
 ::: {.solution}
-Idea: need the line $-i\infty\to 0 \to i\infty$ to get mapped to a circle $0\to 1\to 0$:
+The line $-i\infty\to 0 \to i\infty$ is to be mapped to the circle traversed $0\to 1\to 0$:
 
 ![](../../assets/Complex_Analysis/050_Conformal_Maps/figures/2021-12-18_22-01-30.png)
 
