@@ -29,8 +29,8 @@ Alternatively, fixing $N$, take the right derived functors of the contravariant 
 
 ::: {.remark}
 $\Ext^0_A(M,N) = \Hom_A(M,N)$, and $\Ext^i_A(M,N) = 0$ for $i>0$ whenever $M$ is projective or $N$ is injective.
-Balancing the two definitions is what lets you compute in whichever variable has the convenient resolution: over $\ZZ$, resolving by $0 \to \ZZ \mapsvia{n} \ZZ \to \ZZ/n \to 0$ gives $\Ext^1_\ZZ(\ZZ/n, N) = N/nN$.
+Since the two definitions agree, $\Ext$ can be computed from a projective resolution of $M$ or from an injective resolution of $N$: over $\ZZ$, the resolution $0 \to \ZZ \mapsvia{n} \ZZ \to \ZZ/n \to 0$ gives $\Ext^1_\ZZ(\ZZ/n, N) = N/nN$.
 
 $\Ext^1(M,N)$ classifies extensions $0 \to N \to E \to M \to 0$ up to equivalence, with the split extension as the zero class.
-The sheaf version is what appears in Serre duality, where $\Ext^i(\mcf, \omega_X)$ is dual to $H^{n-i}(X;\mcf)$.
+For $X$ projective, Cohen--Macaulay, and equidimensional of dimension $n$ over an algebraically closed field $k$, with dualizing sheaf $\omega_X$, and for $\mcf$ coherent, Serre duality gives $\Ext^i(\mcf, \omega_X)\cong H^{n-i}(X,\mcf)^\vee$ [@Har10a, Theorem III.7.6].
 :::
