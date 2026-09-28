@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-The source shows a regular pentagram: a five-pointed star drawn by joining each vertex of a regular pentagon to the two vertices not adjacent to it.
+The figure is a regular pentagram: the five-pointed star drawn by joining each vertex of a regular pentagon to the two vertices not adjacent to it.
 
 The group of symmetries of the regular pentagram shown above is isomorphic to the
 
@@ -42,7 +42,7 @@ The group of symmetries of the regular pentagram shown above is isomorphic to th
 ::: {.solution}
 The symmetry group is the dihedral group of order $10$, so the answer is $\boxed{\text{(E)}}$.
 
-<1>1. Determine the symmetries.
+<1>1. The symmetry group of the regular pentagram is the dihedral group $D_5$ of order $10$.
 ::: {.proof}
 There are five rotations of the regular pentagram, through multiples of $2\pi/5$, and five reflections through axes passing through a vertex and the center.
 These ten symmetries preserve adjacency in the star and exhaust the Euclidean symmetries of its five vertices.
