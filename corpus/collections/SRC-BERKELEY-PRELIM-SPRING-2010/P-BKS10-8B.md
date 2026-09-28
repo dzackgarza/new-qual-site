@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-8B
 kind: problem
-title: A Hermitian solution of a fifth-degree matrix equation
+title: A Hermitian matrix with $A^5+A=2I$ is the identity
 classification:
   areas:
   - prelim
@@ -24,11 +24,11 @@ audit:
 ---
 
 ::: {.problem}
-If \(A\) is Hermitian and satisfies
-\[
+If $A$ is Hermitian and satisfies
+$$
 A^5+A=2I,
-\]
-prove that \(A=I\).
+$$
+prove that $A=I$.
 :::
 
 ::: {.solution}
