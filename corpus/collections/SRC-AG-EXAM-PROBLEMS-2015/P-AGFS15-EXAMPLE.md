@@ -182,7 +182,7 @@ Then
 \[
 y=ux=u^3.
 \]
-Thus this chart of the strict transform is simply \(\mathbb A^1_u\).
+Thus this chart of the strict transform is \(\mathbb A^1_u\).
 
 On the \(y\)-chart, writing \(x=vy\) gives
 \[
