@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO32
 kind: problem
-title: Define a free group
+title: Free group on a set and its universal property
 classification:
   areas: [algebra]
   topics: [Free Groups]
@@ -26,7 +26,7 @@ Define a free group and state its universal property.
 :::
 
 ::: {.solution}
-Let $X$ be a set. A **free group on $X$** is a group $F(X)$ together with a map
+Let $X$ be a set. A \dfn{free group on $X$} is a group $F(X)$ together with a map
 \[
 i:X\to F(X)
 \]
