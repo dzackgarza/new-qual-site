@@ -41,10 +41,10 @@ By the Cauchy--Schwarz inequality, $\int|f| = \int |f|\cdot 1 \le \|f\|_2\|1\|_2
 $\int|f|^2 \le \|f\|_\infty^2\, m(X)$.
 :::
 
-<2>3. On $[0,1]$ with Lebesgue measure, $x^{-1/3} \in L^1 \setminus L^2$ and $\log x \in L^2 \setminus L^\infty$.
+<2>3. On $[0,1]$ with Lebesgue measure, $x^{-1/2} \in L^1 \setminus L^2$ and $\log x \in L^2 \setminus L^\infty$.
 
 ::: {.proof}
-$\int_0^1 (\log x)^2\,dx = 2$ and $\log x$ is unbounded near $0$.
+$\int_0^1 x^{-1/2}\,dx = 2$ and $\int_0^1 x^{-1}\,dx = \infty$. Also $\int_0^1 (\log x)^2\,dx = 2$ and $\log x$ is unbounded near $0$.
 :::
 
 <2>4. Q.E.D.
