@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KS2BT
 kind: problem
-title: Completeness of the compact convergence topology over sigma-compact domains
+title: Completeness of the compact convergence topology over $\sigma$-compact domains
 classification:
   areas:
   - topology
@@ -42,5 +42,5 @@ The restriction map
 \[
 R:Y^X\to\prod_iY_i,\qquad f\mapsto(f|_{A_i})
 \]
-identifies $Y^X$ with the closed compatibility subspace $u_{i+1}|_{A_i}=u_i$. If $Y$ is complete, each uniform function space $Y_i$ is complete (pointwise limits of uniform Cauchy families exist and convergence is uniform), and the standard weighted product metric is complete. A closed subspace is complete, so $(Y^X,\rho)$ is complete.
+identifies $Y^X$ with the closed compatibility subspace $u_{i+1}|_{A_i}=u_i$. If $Y$ is complete, each uniform function space $Y_i$ is complete (pointwise limits of uniform Cauchy families exist and convergence is uniform), so the metric $\sum_i 2^{-i}\rho_i$ on $\prod_iY_i$ is complete, and $R$ is an isometry from $(Y^X,\rho)$ onto the compatibility subspace. A closed subspace is complete, so $(Y^X,\rho)$ is complete.
 :::
