@@ -32,7 +32,8 @@ $$
 :::
 
 ::: {.theorem}
-In the situation of the definition, $\del$ is well defined and the Mayer--Vietoris sequence is exact [@Hat02].
+Let $X$ be a topological space and $A, B\subseteq X$ subspaces with $X = A^\circ\cup B^\circ$.
+Then $\del\colon H_n(X)\to H_{n-1}(A\cap B)$ is well defined and the Mayer--Vietoris sequence of $(A, B)$ is exact [@Hat02].
 :::
 
 ::: {.remark}
