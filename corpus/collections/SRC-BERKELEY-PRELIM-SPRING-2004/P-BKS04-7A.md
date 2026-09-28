@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS04-7A
 kind: problem
-title: UC Berkeley Spring 2004 prelim 7A
+title: The Dirichlet integral $\int_0^\infty\sin x/x\,dx$
 classification:
   areas: [prelim]
   topics: []
