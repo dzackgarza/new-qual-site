@@ -113,7 +113,7 @@ $$
 $$
 
 ::: {.proof}
-Combine steps <1>1--<1>3 with the standard real Fourier expansion
+Combine steps <1>1--<1>3 with the real Fourier expansion
 $$
 \frac{a_0}{2}
 +
