@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HGRO2
 kind: problem
-title: Count abelian groups of orders 35 and 27
+title: Number of abelian groups of orders $35$ and $27$
 classification:
   areas: [algebra]
   topics: [Abelian Groups]
