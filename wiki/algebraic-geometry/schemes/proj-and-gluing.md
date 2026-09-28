@@ -9,14 +9,13 @@ topics:
 
 # Proj and gluing
 
-Affine schemes are all the local information there is, so every scheme that is not affine arrives by gluing, and $\Proj$ is the one gluing done often enough to deserve a name.
+Every scheme is glued from affine open subschemes along open subschemes of their pairwise intersections.
 
 ## Gluing
 
 [[D-SCHGLUE]]
 
-The geometry depends on the chosen overlap isomorphism.
-Two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ give either $\PP^1$ or a pathology, according to which isomorphism you use on the overlap.
+Gluing two copies of $\AA^1_k=\Spec k[t]$ along $\AA^1_k\sm\ts{0}$ by $t\mapsto t^{-1}$ gives $\PP^1_k$; gluing them by the identity gives the line with doubled origin, which is not separated.
 
 [[FE-SCHLINE]]
 
@@ -24,13 +23,14 @@ Two copies of $\AA^1$ along $\AA^1 \sm \ts{0}$ give either $\PP^1$ or a patholog
 
 [[D-SCHPROJ]]
 
-$\Proj$ is the gluing in the previous section done uniformly: the charts are the loci $D_+(f)$ where a homogeneous $f$ is invertible, and the transition maps are the ratios.
-A single graded ring determines both the charts and their gluing, so a graded ideal produces a closed subscheme of $\Proj S$ directly.
+$\Proj S$ is covered by the affine opens $D_+(f)=\Spec S_{(f)}$ for homogeneous $f$ of positive degree, glued along $D_+(fg)$.
+For $S=k[x_0,\ldots,x_n]$, the charts $D_+(x_i)$ with transition functions $x_j/x_i$ give $\PP^n_k$.
+A homogeneous ideal $I\subseteq S$ gives the closed subscheme $\Proj(S/I)\subseteq\Proj S$.
 
 [[T-SCHPRJC]]
 
-Defining $\PP^n$ over $\ZZ$ and then base changing packages the construction uniformly over every base; properties such as properness and the behavior of $\OO(d)$ are compatible with this change of base.
-Base change is the subject of [[algebraic-geometry/schemes/fibre-products-and-base-change|the next page]].
+For a ring $A$, $\PP^n_A=\PP^n_\ZZ\times_{\Spec\ZZ}\Spec A$, and $\OO_{\PP^n_A}(d)$ is the pullback of $\OO_{\PP^n_\ZZ}(d)$.
+Since $\PP^n_\ZZ\to\Spec\ZZ$ is proper and properness is stable under [[algebraic-geometry/schemes/fibre-products-and-base-change|base change]], $\PP^n_A\to\Spec A$ is proper.
 
 ## Quotients by group actions
 
