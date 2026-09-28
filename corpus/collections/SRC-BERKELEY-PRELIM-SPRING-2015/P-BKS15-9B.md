@@ -28,15 +28,15 @@ Let $p$ be a prime.
 Let $p^{a(n)}$ be the largest power of $p$ dividing $n!$, and let $b(n)$ be the sum of the digits of $n$ in base $p$.
 
 (a) Show that
-\[
+$$
 a(n)=\left\lfloor\frac np\right\rfloor+\left\lfloor\frac n{p^2}\right\rfloor+\left\lfloor\frac n{p^3}\right\rfloor+\cdots.
-\]
+$$
 
 (b) Express $a(n)$ in terms of the digits $d_k$ in the base-$p$ expansion
-\[
+$$
 n=\sum_k d_kp^k,
 \qquad 0\le d_k<p.
-\]
+$$
 
 (c) Find a nontrivial linear relation between $n$, $a(n)$, and $b(n)$, with coefficients allowed to depend on $p$ but not on $n$.
 :::
