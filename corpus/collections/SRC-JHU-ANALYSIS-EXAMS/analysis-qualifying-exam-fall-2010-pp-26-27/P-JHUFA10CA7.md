@@ -62,8 +62,8 @@ $$
 $$
 Under the first inequality, $Q_{a,b}'$ has degree seven,
 so this requires checking at most seven real numbers.
-Thus (3) is a necessary-and-sufficient specification of
-all coefficients, not merely a growth restriction on the degree.
+Thus (3) is a necessary and sufficient condition on the
+coefficients $a,b$.
 
 <1>1. Every solution is affine.
 
