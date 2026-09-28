@@ -31,14 +31,13 @@ List all isomorphism classes of groups of size $72$.
 ::: {.solution}
 There are exactly $50$ classes. The list consists of the $42$ semidirect
 products in step <1>1, the four groups in step <1>3, and the four groups
-in step <1>4. In particular, restricting to abelian groups would not
-answer the question.
+in step <1>4.
 
 Write $C_m=\mathbb Z/m\mathbb Z$, and use $D_{2m}$ for the dihedral
 group of order $2m$. For an action $\phi:H\to\operatorname{Aut}(N)$,
 $N\rtimes_\phi H$ has multiplication
 $(n,h)(n',h')=(n\phi(h)(n'),hh')$, with additive notation when $N$
-is a vector space. Every action used below is specified on generators.
+is a vector space.
 
 <1>1. The groups with normal Sylow $3$-subgroup are precisely the
 following $42$ groups $N\rtimes H$.
@@ -54,7 +53,7 @@ B=\begin{pmatrix}1&1\\1&-1\end{pmatrix},\quad
 C=\begin{pmatrix}0&1\\1&1\end{pmatrix}.
 $$
 Each tuple in a table entry gives the images of the ordered generators
-of $H$ and specifies one group, not an unspecified semidirect product.
+of $H$ and specifies one group.
 
 | $H$ and generators | Actions on $C_9$ | Actions on $C_3^2$ |
 | --- | --- | --- |
@@ -108,8 +107,9 @@ order $4$ induces all automorphisms of this quotient, giving two
 orbits. This proves completeness and distinctness in the $C_9$ column.
 
 For $C_3^2$, the automorphism group is $\operatorname{GL}_2(\mathbb F_3)$.
-Step <1>2 gives an exhaustive, executable verification of precisely
-the action orbits in the third column. Together with the preceding
+Step <1>2 verifies that the third column lists each
+$\operatorname{Aut}(H)\times\operatorname{GL}_2(\mathbb F_3)$-orbit of
+homomorphisms $H\to\operatorname{GL}_2(\mathbb F_3)$ exactly once. Together with the preceding
 isomorphism criterion, this proves all assertions about the $42$ groups.
 :::
 
@@ -121,7 +121,7 @@ the invertible matrices in the finite set $\{0,1,2\}^4$ to check.
 A tuple determines a homomorphism from a presented group exactly
 when it satisfies all the defining relations. The function `valid`
 below tests those relations; `candidates` therefore contains every
-homomorphism, not just selected examples.
+homomorphism.
 
 The function `changes` enumerates every change of generators induced
 by an automorphism of the source. For the cyclic group these are the
@@ -140,9 +140,7 @@ in the code. Thus `orbit` enumerates the entire
 $\operatorname{Aut}(H)\times\operatorname{GL}_2(\mathbb F_3)$-orbit.
 
 The calculation checks that the listed orbits are disjoint and that
-their union equals `candidates`. All arithmetic is exact modulo $3$;
-no finite-group catalogue, probabilistic test, or precomputed
-classification is used.
+their union equals `candidates`. All arithmetic is exact modulo $3$.
 
 ```python
 from itertools import product, combinations
