@@ -57,9 +57,7 @@ $\operatorname{Re}H=\widetilde h$ [@SS03]. Explicitly,
 the Cauchy–Riemann equations show that
 $\widetilde h_s-i\widetilde h_t$ is holomorphic for
 $w=s+it$. Its primitive on $L$, after addition of a
-real constant, has real part $\widetilde h$. This proves
-the required global existence on the half-plane rather
-than assuming a conjugate on the punctured disk.
+real constant, has real part $\widetilde h$.
 :::
 
 <1>2. A real linear term removes the period of this conjugate.
@@ -96,8 +94,7 @@ $$
 =\operatorname{Re}H(w)+c\operatorname{Re}w
 =h(z)+c\log|z|.
 $$
-The constant $c$ is real by construction. This establishes
-the required representation without any boundedness
-assumption near the puncture.
+The constant $c$ is real by construction, which establishes
+the required representation.
 :::
 :::
