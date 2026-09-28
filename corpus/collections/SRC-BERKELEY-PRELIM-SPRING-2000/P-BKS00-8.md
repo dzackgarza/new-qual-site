@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS00-8
 kind: problem
-title: Cardinality of the set of subrings of $\mathbb Q$
+title: Cardinality of the set of subrings of $\QQ$
 classification:
   areas: [prelim]
   topics: []
