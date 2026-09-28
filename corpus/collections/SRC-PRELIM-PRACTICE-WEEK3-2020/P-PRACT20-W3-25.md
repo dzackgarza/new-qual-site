@@ -31,7 +31,7 @@ Evaluate $I _ { 1 } ( a , b )$ explicitly and use this to evaluate $I _ { 2 } ( 
 Differentiating under the integral (legal by Leibniz rule), we find
 
 $$
-\frac { \partial I _ { n } } { \partial a } ( a , b ) = - \int _ { 0 } ^ { \pi / 2 } \frac { n \cos ^ { 2 } ( \theta ) d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } } , \quad \frac { \partial I _ { n } } { \partial b } ( a , b ) = - \int _ { 0 } ^ { \pi / 2 } \frac { n \sin ^ { 2 } ( \theta ) d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } }
+\frac { \partial I _ { n } } { \partial a } ( a , b ) = - \int _ { 0 } ^ { \pi / 2 } \frac { n \cos ^ { 2 } ( x ) d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } } , \quad \frac { \partial I _ { n } } { \partial b } ( a , b ) = - \int _ { 0 } ^ { \pi / 2 } \frac { n \sin ^ { 2 } ( x ) d x } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } }
 $$
 
 and so
@@ -40,11 +40,17 @@ $$
 \frac { \partial I _ { n } } { \partial a } + \frac { \partial I _ { n } } { \partial b } = - n \int _ { 0 } ^ { \pi / 2 } \frac { \cos ^ { 2 } ( x ) + \sin ^ { 2 } ( x ) } { ( a \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) ) ^ { n + 1 } } d x = - n I _ { n + 1 } .
 $$
 
-We can evaluate $I _ { 1 } ( a , b )$ using a u-substitution and trig.
-substitution:
+To evaluate $I_1(a,b)$, divide numerator and denominator by $\cos^2(x)$ and substitute $u = \tan(x)$:
 
 $$
-\begin{array} { r l } & { I _ { 1 } ( a , b ) = \displaystyle \int _ { 0 } ^ { \pi / 2 } \frac { d u } { \alpha \cos ^ { 2 } ( x ) + b \sin ^ { 2 } ( x ) } } \\ & { \quad \quad \quad - \displaystyle \int _ { 0 } ^ { \pi / 2 } \frac { \sec ^ { 2 } ( x ) d x } { \alpha + b \tan ^ { 2 } ( x ) } } \\ & { \quad \quad \quad - \displaystyle \int _ { 0 } ^ { \infty } \frac { d u } { \alpha + b u ^ { 2 } } \qquad [ u - \tan ( x ) ] } \\ & { \quad \quad \quad \quad = \displaystyle \frac { 1 } { \alpha } \int _ { 0 } ^ { \infty } \frac { d u } { 1 + \frac { b } { \alpha } n ^ { 2 } } } \\ & { \quad \quad \quad = \displaystyle \frac { 1 } { \alpha } \cdot \left( \sqrt { \frac { d } { \alpha } } \right) \arctan \left( u \sqrt { \frac { b } { \alpha } } \right) \Big | _ { u = 0 } ^ { n > \infty } } \\ & { \quad \quad \quad = \displaystyle \frac { \pi } { 2 \sqrt { \alpha \delta } } . } \end{array}
+\begin{aligned}
+I_1(a,b) &= \int_0^{\pi/2} \frac{dx}{a\cos^2(x) + b\sin^2(x)}
+= \int_0^{\pi/2} \frac{\sec^2(x)\,dx}{a + b\tan^2(x)}
+= \int_0^\infty \frac{du}{a + bu^2} \\
+&= \frac{1}{a}\int_0^\infty \frac{du}{1 + \frac{b}{a}u^2}
+= \frac{1}{a}\sqrt{\frac{a}{b}}\,\arctan\left(u\sqrt{\frac{b}{a}}\right)\Big|_{u=0}^{u\to\infty}
+= \frac{\pi}{2\sqrt{ab}}.
+\end{aligned}
 $$
 
 Then
