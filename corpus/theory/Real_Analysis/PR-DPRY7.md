@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-DPRY7
 kind: proposition
 title: The Gaussian is an eigenfunction of the Fourier transform
-slogan: 'The standard Gaussian is fixed by the Fourier transform, and dilation becomes reciprocal frequency scaling.'
+slogan: 'The Gaussian $e^{-\pi\abs{x}^2}$ is its own Fourier transform, and its dilation $g_t$ has transform $g(t\xi)$.'
 classification:
   areas:
   - real-analysis
