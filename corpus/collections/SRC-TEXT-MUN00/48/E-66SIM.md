@@ -23,12 +23,10 @@ Show that every locally compact Hausdorff space is a Baire space.
 :::
 
 ::: {.solution}
-**Goal:** Prove the Baire Category Theorem for locally compact Hausdorff spaces: the intersection of any countable family of open dense sets is dense.
-
-<1>1. Setting and reduction:
+<1>1. Reduction:
     Let $X$ be a locally compact Hausdorff space, and let $\{U_n\}_{n=1}^\infty$ be a countable collection of open dense subsets of $X$.
     Let $W \subseteq X$ be an arbitrary non-empty open set.
-    We must show that $W \cap \left( \bigcap_{n=1}^\infty U_n \right) \neq \varnothing$.
+    It suffices to show that $W \cap \left( \bigcap_{n=1}^\infty U_n \right) \neq \varnothing$.
 
 <1>2. Regularity and compact neighborhood property:
     In a locally compact Hausdorff space, for every point $x$ and every open neighborhood $V$ of $x$, there exists an open neighborhood $U$ of $x$ such that $\overline{U}$ is compact and $\overline{U} \subseteq V$.
@@ -53,6 +51,6 @@ Show that every locally compact Hausdorff space is a Baire space.
     <2>5. Furthermore, $x \in \overline{V_1} \subseteq W$.
     <2>6. Thus $x \in W \cap \left( \bigcap_{n=1}^\infty U_n \right)$.
 
-<1>5. Conclusion:
-    $W \cap \left( \bigcap_{n=1}^\infty U_n \right)$ is non-empty for every non-empty open set $W$, so $\bigcap_{n=1}^\infty U_n$ is dense in $X$. Hence $X$ is a Baire space. Q.E.D.
+<1>5. Q.E.D.
+    By step <1>4, $W \cap \left( \bigcap_{n=1}^\infty U_n \right)$ is non-empty for every non-empty open set $W$, so $\bigcap_{n=1}^\infty U_n$ is dense in $X$. Hence $X$ is a Baire space.
 :::
