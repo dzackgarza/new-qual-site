@@ -27,19 +27,16 @@ Show that $f$ is a polynomial of degree $\leq 2$.
 :::
 
 ::: {.solution}
-**Goal:** Let $f: \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f(z)| \leq A |z|^2$ for all $z \in \mathbb{C}$ and some constant $A \geq 0$.
-Prove that $f(z) = c_2 z^2$ for some constant $c_2 \in \mathbb{C}$ (in particular, a polynomial of degree $\leq 2$ with $f(0) = f'(0) = 0$).
-
-* * *
+We prove the stronger statement $f(z)=c_2z^2$ for a constant $c_2\in\mathbb C$.
 
 ### Step 1: Taylor Series and Cauchy's Estimates
 
 <1>1. **$f$ is represented by its Taylor series centered at the origin for all $z \in \mathbb{C}$.** <2>1. Since $f$ is entire, $f(z) = \sum_{n=0}^\infty c_n z^n$ converges everywhere on $\mathbb{C}$, with coefficients given by $c_n = \frac{f^{(n)}(0)}{n!}$.
-*Proof:* Fundamental property of entire functions.
+*Proof:* The Taylor series of a holomorphic function at $0$ converges to it on every open disk centered at $0$ contained in its domain, here $\mathbb C$.
 <2>2. For any $R > 0$ and any $n \geq 0$, Cauchy's coefficient formula gives: $$c_n = \frac{1}{2\pi i} \oint_{|z|=R} \frac{f(z)}{z^{n+1}} \, dz.$$ *Proof:* Cauchy integral formula for derivatives.
 <2>3. Q.E.D.
 
-<1>2. **Apply Cauchy's Estimates for each coefficient $c_n$.** <2>1. By the $ML$-inequality on the circle $|z| = R$: $$|c_n| \leq \frac{1}{2\pi} \cdot \left( \sup_{|z|=R} \frac{|f(z)|}{|z|^{n+1}} \right) \cdot (2\pi R) = \frac{\sup_{|z|=R} |f(z)|}{R^n}.$$ *Proof:* Standard derivation of Cauchy's estimates.
+<1>2. **Apply Cauchy's Estimates for each coefficient $c_n$.** <2>1. By the $ML$-inequality on the circle $|z| = R$: $$|c_n| \leq \frac{1}{2\pi} \cdot \left( \sup_{|z|=R} \frac{|f(z)|}{|z|^{n+1}} \right) \cdot (2\pi R) = \frac{\sup_{|z|=R} |f(z)|}{R^n}.$$ *Proof:* On $|z|=R$ the integrand of step <2>2 has modulus at most $\sup_{|z|=R}|f(z)|/R^{n+1}$, and the circle has length $2\pi R$.
 <2>2. By the growth hypothesis, on $|z| = R$, $|f(z)| \leq A R^2$.
 *Proof:* Given assumption $|f(z)| \leq A|z|^2$.
 <2>3. Substituting <2>2 into <2>1 yields the bound: $$|c_n| \leq \frac{A R^2}{R^n} = A R^{2-n} \quad \text{for all } R > 0.$$ *Proof:* Algebra.
