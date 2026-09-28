@@ -21,7 +21,7 @@ Let $(X,\mathcal M,\mu)$ be a measure space, and let $p,q\in[1,\infty]$ be conju
 - **Minkowski's integral inequality.** For $\sigma$-finite measure spaces, measurable $f$ on $X\times Y$, and $1\leq p<\infty$, $\norm{\int_Y f(\cdot, y)\dy}_p \leq \int_Y \norm{f(\cdot,y)}_p \dy$.
 
 - **Jensen.** If $\mu(X)=1$, $f\in L^1(\mu)$ is real-valued, and $\varphi\colon\RR\to\RR$ is convex, then $\varphi\qty(\int f\,d\mu) \leq \int\varphi\circ f\,d\mu$.
-  For $\mu$ twice Lebesgue measure on $[0,1]$, $f\equiv1$, and $\varphi(t)=t^2$, the left side is $4$ and the right side is $2$.
+  The inequality fails when $\mu(X)\neq1$: for $\mu$ twice Lebesgue measure on $[0,1]$, $f\equiv1$, and $\varphi(t)=t^2$, the left side is $4$ and the right side is $2$.
 
 - **Young.** For $f\in L^p(\RR^n)$, $g\in L^q(\RR^n)$ with $1\leq p,q,r\leq\infty$ and $\frac1r = \frac1p+\frac1q-1$, $\norm{f*g}_r \leq \norm f_p\norm g_q$.
 
