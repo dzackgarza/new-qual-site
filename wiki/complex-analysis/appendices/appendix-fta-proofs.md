@@ -103,8 +103,6 @@ Since $\PP^1(\CC)$ is compact, $P$ is surjective by [[L-ZXBBI]], so $P(z_0) = 0$
 
 ## Singularities and omitted values
 
-The following results are developed on [[complex-analysis/singularities/index|Singularities]].
-
 [[T-ISZP3]]
 
 [[T-HWBWI]]
@@ -123,6 +121,8 @@ So $g\equiv 0$ by the identity principle again.
 
 ## A Banach space of holomorphic functions
 
-The following exercise is solved using Morera's theorem.
+Let $\Omega\subseteq\CC$ be open.
+If $f_n\to f$ uniformly on $\Omega$ with each $f_n$ holomorphic, then $\int_{\partial T}f=\lim_n\int_{\partial T}f_n=0$ for every closed triangle $T\subseteq\Omega$, so $f$ is holomorphic by [[T-LHSMY|Morera's theorem]].
+This gives completeness of the bounded holomorphic functions under the supremum norm.
 
 [[E-QO2S7]]
