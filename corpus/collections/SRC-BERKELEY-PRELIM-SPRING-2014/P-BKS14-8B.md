@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS14-8B
 kind: problem
-title: An integral power of a rational conjugate
+title: Some power of $C^{-1}AC$ is integral when $A$ is an integer matrix with $\det A=1$
 classification:
   areas:
   - prelim
@@ -24,7 +24,7 @@ audit:
 ---
 
 ::: {.problem}
-Let \(B=C^{-1}AC\), where \(A\) and \(C\) are \(n\times n\) matrices with integer entries, \(\det A=1\), and \(\det C\ne0\). Prove that there exists a positive integer \(m\) such that every entry of \(B^m\) is an integer.
+Let $B=C^{-1}AC$, where $A$ and $C$ are $n\times n$ matrices with integer entries, $\det A=1$, and $\det C\ne0$. Prove that there exists a positive integer $m$ such that every entry of $B^m$ is an integer.
 :::
 
 ::: {.solution}
