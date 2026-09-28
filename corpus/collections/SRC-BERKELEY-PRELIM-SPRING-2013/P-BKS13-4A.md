@@ -30,7 +30,7 @@ $$
 \int _ { C } { \frac { \cosh ( \pi z ) } { z ( z ^ { 2 } + 1 ) } } d z
 $$
 
-when C is the circle $| z | = 2 ,$ , described in the positive sense.
+when $C$ is the circle $\abs{z} = 2$, described in the positive sense.
 :::
 
 ::: {.solution}
