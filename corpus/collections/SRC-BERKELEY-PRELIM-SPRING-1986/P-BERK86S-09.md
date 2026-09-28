@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK86S-09
 kind: problem
-title: Compare two quotient groups of $\mathbb Z^2$ from their lattice generators
+title: Isomorphism of two quotients of $\mathbb Z^2$ by rank-two sublattices
 classification:
   areas: [prelim]
   topics: []
