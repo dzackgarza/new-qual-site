@@ -2,11 +2,14 @@
 schema: qual/card@1
 id: E-SS7.EX-2
 kind: problem
-title: "The following links the multiplication of Dirichlet series with the divisibility"
+title: Products of Dirichlet series and Dirichlet convolution
 classification:
   areas:
   - complex-analysis
-  topics: ['Zeta Function', 'Prime Number Theorem', 'Dirichlet Series']
+  topics:
+  - Zeta Function
+  - Prime Number Theorem
+  - Dirichlet Series
 relations: []
 review: draft
 audit:

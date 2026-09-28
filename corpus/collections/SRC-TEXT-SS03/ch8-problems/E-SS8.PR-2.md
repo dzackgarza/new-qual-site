@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-SS8.PR-2
 kind: problem
-title: "The angle between two non-zero complex numbers z and  (taken in that order) is s"
+title: Holomorphic maps with $f'(z_0)\ne0$ preserve angles, and angle-preserving maps are holomorphic
 classification:
   areas:
   - complex-analysis
   topics:
   - Conformal Maps
-  - Schwarz Lemma
+  - Cauchy-Riemann
 relations: []
 review: draft
 audit:
@@ -41,26 +41,6 @@ $$
 $$
 
 (b) Conversely, prove the following: suppose $f : \Omega \to \mathbb { C }$ is a complex-valued function, that is real-diferentiable at $z _ { 0 } \in \Omega$ , and $J _ { f } ( z _ { 0 } ) \ne 0$ . If f preserves angles at $z _ { \mathrm { 0 } }$ , then $f$ is holomorphic at $z _ { \mathrm { 0 } }$ with $f ^ { \prime } ( z _ { 0 } ) \neq 0$
-
-$\mathbf { 3 . ^ { * } }$ The Schwarz-Pick lemma (see Exercise 13) is the infinitesimal version of an important observation in complex analysis and geometry.
-
-For complex numbers $w \in \mathbb { C }$ and $z \in \mathbb { D }$ we define the hyperbolic length of $w$ at $z$ by
-
-$$
-\| w \| _ {z} = \frac {| w |}{1 - | z | ^ {2}},
-$$
-
-where $| w |$ and $| z |$ denote the usual absolute values.
-This length is sometimes referred to as the Poincar´e metric, and as a Riemann metric it is written as
-
-$$
-d s ^ {2} = \frac {| d z | ^ {2}}{(1 - | z | ^ {2}) ^ {2}}.
-$$
-
-The idea is to think of $w$ as a vector lying in the tangent space at $z .$ . Observe that for a fixed $w ,$ its hyperbolic length grows to infinity as z approaches the boundary of the disc.
-We pass from the infinitesimal hyperbolic length of tangent vectors to the global hyperbolic distance between two points by integration.
-
-(a) Given two complex numbers $z _ { 1 }$ and $z _ { 2 }$ in the disc, we define the hyperbolic distance between them by
 :::
 
 ::: {.solution}
