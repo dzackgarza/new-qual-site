@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-B7YTE
 kind: theorem
 title: Abel's theorem
-slogan: 'A convergent boundary series is recovered by approaching the boundary radially from inside the unit disc.'
+slogan: 'If $\sum c_k$ converges, then $\sum c_kr^k\to\sum c_k$ as $r\to1^-$.'
 classification:
   areas:
   - complex-analysis
