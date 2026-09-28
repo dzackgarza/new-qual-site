@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-02
 kind: problem
-title: Which listed subsets of the reals are subfields
+title: Subfields of $\RR$ among $\ZZ_{(2)}$, $\ZZ[\sqrt2]$, $\QQ(\sqrt2)$, and $\QQ+\QQ\sqrt[4]2$
 classification:
   areas:
   - algebra
