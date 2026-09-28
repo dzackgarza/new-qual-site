@@ -36,21 +36,18 @@ Prove that
 
 - For $f\in L^1(X)$, $\norm{f}_1 \da \int_X \abs{f(x)} \dx < \infty$.
 
-- Small tails in $L_1$: if $f\in L^1(\RR^n)$, then for every $\eps>0$ exists some radius $R$ such that
+- Small tails in $L^1$: if $f\in L^1(\RR^n)$, then for every $\eps>0$ there exists a radius $R$ such that
 \[
 \norm{f}_{L^1(B_R^c)} < \eps
 .\]
 
-- Shift $g$ to the right far enough so that the two densities are mostly disjoint:
+- For $n>2R$, the truncations $f\mathbf{1}_{[-R,R]}$ and $g_n\mathbf{1}_{[n-R,n+R]}$ have disjoint supports:
 
 ![Shifting density](../../assets/figures/densities.png)
 
-- Any integral $\int_a^b f$ can be written as $\norm{f}_1 - O(\text{err})$.
+- For $R>0$, $\norm{f}_1-\norm{f\mathbf{1}_{[-R,R]}}_1=\norm{f}_{L^1([-R,R]^c)}$.
 
-- Bounding technique: 
-\[
-a-\eps \leq b \leq a+\eps \implies b=a
-.\]
+- If $a,b\in\RR$ and $a-\eps \leq b \leq a+\eps$ for every $\eps>0$, then $b=a$.
 
 :::
 
