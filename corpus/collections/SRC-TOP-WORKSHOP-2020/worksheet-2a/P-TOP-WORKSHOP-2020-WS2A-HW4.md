@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW4
 kind: problem
-title: Relate paths to connected components (warm-up)
+title: Points joined by a path lie in the same connected component
 classification:
   areas:
   - topology
