@@ -112,7 +112,7 @@ For (vi), choose $c$ with
 and set $a_n=n^{-c}$ for $n\ge1$ and $a_n=0$ for $n\le0$. Then $a\in\ell^q$ but $a\notin\ell^p$.
 :::
 
-<1>3. Determine the exponents $s$ in part (vii).
+<1>3. $L^p(\mathbb R)\cap L^q(\mathbb R)\subset L^s(\mathbb R)$ exactly when $p\le s\le q$.
 ::: {.proof}
 If $p\le s\le q$, choose $\theta\in[0,1]$ such that
 \[
