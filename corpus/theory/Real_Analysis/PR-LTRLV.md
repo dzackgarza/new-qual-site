@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-LTRLV
 kind: proposition
 title: A differentiable function on an interval is Lipschitz if and only if its derivative is bounded
-slogan: 'On an interval, differentiability plus bounded derivative is exactly Lipschitz continuity.'
+slogan: 'A differentiable function on an interval is Lipschitz exactly when its derivative is bounded, and the best constant is $\sup\abs{f^\prime}$.'
 classification:
   areas:
   - real-analysis
