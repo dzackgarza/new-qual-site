@@ -29,19 +29,19 @@ audit:
 ---
 
 ::: {.problem}
-Let g be 2π-periodic, continuous on $[ - \pi , \pi ]$ and have Fourier series
+Let $g$ be $2\pi$-periodic, continuous on $[ - \pi , \pi ]$ and have Fourier series
 
 $$
 { \frac { a _ { 0 } } { 2 } } + \sum _ { n = 1 } ^ { \infty } ( a _ { n } \cos n x + b _ { n } \sin n x ) .
 $$
 
-Let f be 2π-periodic and satisfy the differential equation
+Let $f$ be $2\pi$-periodic and satisfy the differential equation
 
 $$
 f ^ { \prime \prime } ( x ) + k f ( x ) = g ( x )
 $$
 
-where $k \neq n ^ { 2 } , n = 1 , 2 , 3 , . . . .$ Find the Fourier series of f and prove that it converges everywhere.
+where $k \neq n^2$, $n = 1, 2, 3, \ldots$. Find the Fourier series of $f$ and prove that it converges everywhere.
 :::
 
 ::: {.solution}
@@ -264,9 +264,9 @@ to $f$.
 
 ::: {.proof}
 Step <1>7 gives uniform absolute convergence of the nonconstant part.
-Moreover $f$ is $C^2$ and $2\pi$-periodic, so the standard Fourier
-convergence theorem applies: its Fourier series converges at every point
-to $f(x)$. Hence the series identified in steps <1>8 and <1>9 converge
+Moreover $f$ is $C^2$ and $2\pi$-periodic, so by Dirichlet's theorem
+for piecewise $C^1$ periodic functions its Fourier series converges at
+every point to $f(x)$. Hence the series identified in steps <1>8 and <1>9 converge
 everywhere to the given solution.
 :::
 
