@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SMI-8000E-GG1
 kind: problem
-title: The field of four elements, its Galois group, and the radical-extension issue
+title: The field of four elements is a radical extension of $\mathbf F_2$ with Galois group $C_2$
 classification:
   areas:
   - algebra
@@ -28,15 +28,6 @@ audit:
 (i) Prove that the polynomial $f(X) = X^2 + X + 1$ is irreducible over $k = \ZZ/2$, and hence that the quotient $k[X]/(f)$ defines a field of 4 elements.
 
 (ii) Prove that the splitting field of $X^2 + X + 1$ over $\ZZ/2$ has dimension 2, hence the Galois group is $\ZZ/2$, a solvable group. Then determine whether the root field is a radical extension under the standard definition.
-:::
-
-::: {.remark}
-The printed exercise asks one to prove that the root field is **not** a
-radical extension. Under the standard definition this is false: if $\alpha$
-is a nontrivial root, then $\alpha^3=1\in\mathbf F_2$. Thus
-$\mathbf F_4=\mathbf F_2(\alpha)$ is a one-step radical extension. The local
-packet does not record a different convention that would change this
-conclusion.
 :::
 
 ::: {.solution}
@@ -156,7 +147,12 @@ in the base field. Hence, under the standard definition,
 $$
 \boxed{K/k\text{ is a radical extension}.}
 $$
-This directly contradicts the final sentence of the printed problem, which
-is why that sentence has been corrected on this card.
 :::
+:::
+
+::: {.remark}
+The source asks for a proof that the root field is not a radical extension.
+Under the standard definition that claim is false: a root $\alpha$ of
+$X^2+X+1$ satisfies $\alpha^3=1\in\mathbf F_2$, so
+$\mathbf F_4=\mathbf F_2(\alpha)$ is a one-step radical extension.
 :::
