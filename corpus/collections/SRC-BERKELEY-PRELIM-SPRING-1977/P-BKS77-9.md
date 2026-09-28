@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS77-9
 kind: problem
-title: Solve $y''-2y'+y=0$ with repeated initial data
+title: Initial value problem $y''-2y'+y=0$, $y(0)=y'(0)=1$
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
