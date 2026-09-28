@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-5
 kind: problem
-title: "SS 10.5: Logarithmic asymptotics of the partition generating function"
+title: Logarithmic asymptotics of the partition generating function
 classification:
   areas:
   - complex-analysis
