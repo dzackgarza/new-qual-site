@@ -38,7 +38,7 @@ because the left side is a subfield containing every nonzero power of $\alpha$, 
 \]
 So irreducible polynomials of degrees $7$ and $14$ exist.
 
-For completeness, the number $N_p(n)$ of monic irreducible polynomials of degree $n$ is
+The number $N_p(n)$ of monic irreducible polynomials of degree $n$ is
 \[
 N_p(n)=\frac1n\sum_{d\mid n}\mu(d)p^{n/d}.
 \]
