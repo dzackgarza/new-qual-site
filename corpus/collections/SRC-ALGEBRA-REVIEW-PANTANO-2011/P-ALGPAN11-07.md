@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-07
 kind: problem
-title: Properties of the operation a star b equals ab plus a plus b
+title: Properties of the operation $a*b=ab+a+b$ on $\QQ$
 classification:
   areas:
   - algebra
