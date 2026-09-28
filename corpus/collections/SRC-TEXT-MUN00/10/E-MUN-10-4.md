@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-10-4
 kind: problem
-title: Characterizing non-well-ordered sets via $\mathbb{Z}_{-}$
+title: Characterizing non-well-ordered sets via $\ZZ_{-}$
 classification:
   areas:
   - topology
@@ -38,7 +38,7 @@ Conversely, suppose \(A\) is not well-ordered. Then some nonempty subset \(B\sub
 \[
 b_{n+1}<b_n.
 \]
-(The choice axiom, already available in this section of the text, justifies these successive choices.) Then
+By the axiom of choice, these successive choices define a sequence \((b_n)_{n\ge1}\) in \(B\). Then
 \[
 \cdots<b_3<b_2<b_1,
 \]
