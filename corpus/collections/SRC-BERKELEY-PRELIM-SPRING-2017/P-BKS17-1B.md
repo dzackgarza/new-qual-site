@@ -17,11 +17,11 @@ audit:
 ---
 
 ::: {.problem}
-Find all differentiable functions $f : \mathbb{R} \to \mathbb{R}$ with the property that
+Find all differentiable functions $f : \RR \to \RR$ with the property that
 
 $$
 f'(x) = \frac{f(x + h) - f(x - h)}{2h}
 $$
 
-for all $x \in \mathbb{R}$ and all $h \neq 0$. (Hint: multiply both sides by $2h$.)
+for all $x \in \RR$ and all $h \neq 0$. (Hint: multiply both sides by $2h$.)
 :::
