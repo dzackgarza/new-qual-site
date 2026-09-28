@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW2
 kind: problem
-title: Separate consecutive separation axioms by examples (warm-up)
+title: A $T_n$ space that is not $T_{n+1}$
 classification:
   areas:
   - topology
