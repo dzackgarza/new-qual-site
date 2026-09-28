@@ -81,8 +81,8 @@ The series
 $$
 \sum_{n\in\ZZ\setminus\{0\}}\frac1{n^2}
 $$
-converges. The finitely many remaining values of $n$ cause no problem,
-so the Weierstrass M-test gives uniform absolute convergence on $K$.
+converges. For the finitely many $n$ with $\abs{n}<2R+1$, the term
+$\abs{f(x+n)}$ is bounded by $C$ on $K$, so the Weierstrass M-test gives uniform absolute convergence on $K$.
 :::
 
 <1>2. The function
