@@ -79,9 +79,8 @@ Thus $X$ is nilpotent.
 
 ::: {.proof}
 Every nilpotent endomorphism of a four-dimensional complex vector
-space satisfies $X^4=0$; for example this follows from the
-Cayley--Hamilton theorem, since its characteristic polynomial is
-$t^4$. By step <1>2, any putative solution $X$ is nilpotent. Hence for
+space has characteristic polynomial $t^4$, so the Cayley--Hamilton
+theorem gives $X^4=0$. By step <1>2, any putative solution $X$ is nilpotent. Hence for
 $n\ge4$,
 $$
 X^n=0,
