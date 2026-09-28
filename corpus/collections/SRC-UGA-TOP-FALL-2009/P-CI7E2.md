@@ -26,9 +26,14 @@ audit:
   by: gpt-5.6-sol
   date: 2026-09-05
   note: Replaced the unproved closed-surjection theorem by a direct saturated-neighborhood proof and verified the Hausdorff clause for both A and X/A.
+- event: source-corrected
+  by: Claude Opus 5.5
+  date: 2026-09-28
+  note: Restored the definition of normal space that opens Problem 2 of the UGA Fall 2009 topology exam.
 ---
 
 ::: {.problem}
+A topological space $X$ is normal if it is Hausdorff, and, for any pair of disjoint closed sets $A,B\subset X$, there are disjoint open sets $U,V\subset X$ with $A\subset U$ and $B\subset V$.
 Let $A$ be a closed subset of a normal topological space $X$.
 Show that both $A$ and the quotient $X/A$ are normal.
 :::

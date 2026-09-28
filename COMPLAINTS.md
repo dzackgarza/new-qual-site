@@ -734,8 +734,7 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
 - **Object and need:** the cards below. Each line is a reader's report made
   while repairing copy; the reader did not change the mathematics named here.
 - **Observed evidence:** the report text, one line per card.
-  - Statements that lost source text: P-CI7E2 cites a definition of normality that
-    its statement does not contain. P-AGXVARPROJIRR and P-ALGFINAL11-02
+  - Statements that lost source text: P-AGXVARPROJIRR and P-ALGFINAL11-02
     carry extraction or agent wording inside the statement.
   - Card structure: E-AXBZQ holds two problems. E-SS2.PR-1 holds
     Stein--Shakarchi Chapter 2 Problems 1 and 2. SRC-TEXT-SS03 lists section
