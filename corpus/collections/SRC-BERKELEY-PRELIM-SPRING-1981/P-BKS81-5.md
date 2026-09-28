@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS81-5
 kind: problem
-title: Factor $x^4-4$ and $x^3-2$ over three coefficient rings
+title: Irreducible factorizations of $x^4-4$ and $x^3-2$ over $\mathbb R$, $\mathbb Z$, and $\mathbb Z/3\mathbb Z$
 classification:
   areas: [prelim]
   topics: []
