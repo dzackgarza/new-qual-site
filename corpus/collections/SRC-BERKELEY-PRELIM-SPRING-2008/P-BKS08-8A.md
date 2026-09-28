@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS08-8A
 kind: problem
-title: Decompose a commutative ring of characteristic pq
+title: A commutative ring of characteristic $pq$ is a product of rings of characteristics $p$ and $q$
 classification:
   areas:
   - prelim
@@ -27,10 +27,10 @@ audit:
 ---
 
 ::: {.problem}
-Let \(p\) and \(q\) be distinct primes, and let \(R\) be a commutative ring with identity of characteristic \(pq\). Show that there are rings \(S,T\) of characteristics \(p,q\), respectively, such that
-\[
+Let $p$ and $q$ be distinct primes, and let $R$ be a commutative ring with identity of characteristic $pq$. Show that there are rings $S,T$ of characteristics $p,q$, respectively, such that
+$$
 R\cong S\times T.
-\]
+$$
 :::
 
 ::: {.solution}
