@@ -70,7 +70,7 @@ function: every polynomial times every derivative of $f$
 is bounded, as all derivatives have compact support.
 Fourier inversion for Schwartz functions applies pointwise
 and gives $f(x)=\int_{\mathbb R}\widehat f(\xi)e^{2\pi i x\xi}\,d\xi=0$
-[@Ste03].
+[@SS03a].
 :::
 
 <1>5. This contradicts $f$ being nonzero.

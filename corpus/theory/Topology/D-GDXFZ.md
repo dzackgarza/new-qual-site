@@ -30,5 +30,5 @@ Let $f\colon X\to Y$ be a continuous map.
 :::
 
 ::: {.concept}
-[@Lee12].
+[@Lee13].
 :::
