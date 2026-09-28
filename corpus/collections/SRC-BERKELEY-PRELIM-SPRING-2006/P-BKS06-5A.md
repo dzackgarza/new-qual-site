@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS06-5A
 kind: problem
-title: UC Berkeley Spring 2006 prelim 5A
+title: Nonzero prime ideals that are not maximal in $\ZZ$, $\ZZ[x]$, $\RR[x]$, $\RR[x,y]$
 classification:
   areas: [prelim]
   topics: []
