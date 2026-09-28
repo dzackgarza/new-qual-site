@@ -91,6 +91,6 @@ K/F\text{ is normal}
 \operatorname{Gal}(E/K)\trianglelefteq\operatorname{Gal}(E/F).
 \]
 ::: {.proof}
-Combine <1>2 and <1>4.
+Steps <1>2 and <1>4 give the two implications.
 :::
 :::
