@@ -33,7 +33,7 @@ p\mid |Z(G)|,
 \]
 so $|Z(G)|=p$ or $p^2$.
 
-If $|Z(G)|=p$, then $G/Z(G)$ has order $p$ and is cyclic. A standard lemma says that if $G/Z(G)$ is cyclic, then $G$ is abelian: if $G/Z(G)=\langle gZ(G)\rangle$, every element has the form $g^az$ with $z\in Z(G)$, and any two such elements commute. This would imply $Z(G)=G$, contradicting $|Z(G)|=p$. Hence
+If $|Z(G)|=p$, then $G/Z(G)$ has order $p$ and is cyclic. If $G/Z(G)$ is cyclic, then $G$ is abelian: if $G/Z(G)=\langle gZ(G)\rangle$, every element has the form $g^az$ with $z\in Z(G)$, and any two such elements commute. This would imply $Z(G)=G$, contradicting $|Z(G)|=p$. Hence
 \[
 Z(G)=G,
 \]
