@@ -69,8 +69,8 @@ $A[p]$. Images and kernels of module homomorphisms are submodules.
 \]
 makes $A/pA$ into an $R/(p)$-vector space.
 ::: {.proof}
-By <1>2, $pA$ is a submodule. Since $(p)A=pA$, the quotient-module construction
-for a two-sided ideal gives an $R/(p)$-module structure on $A/pA$ by the stated
+By <1>2, $pA$ is a submodule. Since $(p)A=pA$, part (2) of [[P-457V6]], applied
+to the two-sided ideal $(p)$, gives an $R/(p)$-module structure on $A/pA$ by the stated
 formula. By <1>1 the scalar ring $R/(p)$ is a field, so this module is a vector
 space.
 :::
@@ -88,12 +88,12 @@ $r-r'=tp$. For $a\in A[p]$,
 \]
 so $ra=r'a$.
 
-The usual module axioms descend from the $R$-module structure on $A$; for
-example, if $a\in A[p]$, then
+For $a\in A[p]$ and $r\in R$,
 \[
 p(ra)=r(pa)=0,
 \]
-so scalar multiplication stays inside $A[p]$. Thus $A[p]$ is an $R/(p)$-module,
+so $ra\in A[p]$. Each module axiom for $A[p]$ over $R/(p)$, evaluated on
+coset representatives, is the corresponding axiom for $A$ over $R$. Thus $A[p]$ is an $R/(p)$-module,
 and hence, by <1>1, an $R/(p)$-vector space.
 :::
 :::
