@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS15-8B
 kind: problem
-title: Exponent-$p$ groups are abelian for $p=2$ but not for odd $p$
+title: Groups of exponent $2$ are abelian; groups of odd prime exponent need not be
 classification:
   areas:
   - prelim
