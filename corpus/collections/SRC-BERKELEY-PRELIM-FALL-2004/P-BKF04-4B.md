@@ -27,16 +27,24 @@ $$
 \abs{f(u)}=e^{\operatorname{Re}(iwu^2)}=e^{-w\operatorname{Im}(u^2)}=e^{-wR^2\sin(2t)}\le e^{-wR^2(2(2t)/\pi)},
 $$
 
-where the last step comes from the inequality $\sin x\leq2x/\pi$ for $x\in[0,\pi/2]$ (concavity of $\sin x$ on this interval). Therefore
+where the last step comes from the inequality $\sin x\geq2x/\pi$ for $x\in[0,\pi/2]$ (concavity of $\sin x$ on this interval). Since $\abs{du}=R\,dt$ on $\gamma_2$,
 
 $$
-\abs{\int_{\gamma_2}f(u)\,du}\leq\int_0^\infty e^{-wR^2(2(2t)/\pi)}\,dt=\frac{\pi}{4wR^2},
+\abs{\int_{\gamma_2}f(u)\,du}\leq R\int_0^\infty e^{-wR^2(2(2t)/\pi)}\,dt=\frac{\pi}{4wR},
 $$
 
-which goes to $0$ as $R\to\infty$. Hence
+which goes to $0$ as $R\to\infty$. On $\gamma_3$, write $u=se^{i\pi/4}$ with $s$ running from $R$ to $0$; then $u^2=is^2$ and $f(u)=e^{-ws^2}$. Letting $R\to\infty$ in Cauchy's theorem therefore gives
 
 $$
-\begin{array} { r l } { \iota ( w ) - 2 \displaystyle \operatorname* { l i m } _ { m \to \infty } \int _ { \gamma } \langle w | \hat { \sigma } \rangle \ : d w } \\ { } & { = - 2 \displaystyle \operatorname* { l i m } _ { m \to \infty } \int _ { - \infty } ^ { \infty } \int _ { \gamma } \langle i ( \lambda ) ^ { m } \rangle } \\ { } & { = 2 \displaystyle \int _ { \gamma } \eta _ { \varepsilon } \langle i ( \lambda ) ^ { m } | \hat { \sigma } \rangle \ : d w } \\ { } & { = - 2 \displaystyle \int _ { \gamma } \int _ { \gamma } \langle i ( \lambda ^ { m } ) ^ { m } \rangle \ : \theta \ : \mathrm { d } w } \\ { } & { = - \theta ^ { \mathrm { d i d } } \displaystyle \int _ { - \infty } ^ { \infty } \theta ^ { \mathrm { d i d } } \int _ { \gamma } \theta ^ { \mathrm { d i d } } } \\ { } & { = \theta ^ { \mathrm { d i d } } \displaystyle \int _ { - \infty } ^ { \infty } \theta ^ { \mathrm { d i d } } \int _ { \gamma } \theta ^ { \mathrm { d i d } } } \\ { } & { = \frac { 1 + \frac { 1 } { 2 } } { \sqrt { 2 } } \displaystyle \int _ { - \infty } ^ { \infty } \theta ^ { \mathrm { d i d } } \int _ { \gamma } \theta ^ { \mathrm { d i d } } } \\ { } & { = ( 1 + \lambda ) \displaystyle \frac { 1 } { \sqrt { 2 } } \frac { 1 } { \omega ^ { m } } . } \end{array}
+\int_0^\infty f(u)\,du
+=e^{i\pi/4}\int_0^\infty e^{-ws^2}\,ds
+=e^{i\pi/4}\cdot\frac12\sqrt{\frac{\pi}{w}},
+$$
+
+where the last integral follows from $\int_{-\infty}^{\infty}e^{-x^2}\,dx=\sqrt\pi$ with $x=\sqrt w\,s$. Hence, for $w>0$,
+
+$$
+I(w)=e^{i\pi/4}\sqrt{\frac{\pi}{w}}=(1+i)\sqrt{\frac{\pi}{2w}}.
 $$
 
 Also, $I(-w)$ is the complex conjugate of $I(w)$. Therefore, for every $w\neq0$,
