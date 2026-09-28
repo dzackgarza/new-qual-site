@@ -33,7 +33,7 @@ audit:
 ---
 
 ::: {.problem}
-[April 1999 Problem $\# 7 ]$ Let $S : = \{ z \in \mathbb { D } : \operatorname { I m } ( z ) \geq 0 \}$ . Suppose $f : S \to \mathbb { C }$ is continuous on S, real on $S \cap \mathbb { R }$ , and holomorphic on the interior of S. Prove that f is the restriction of a holomorphic function on the open unit disk.
+[April 1999 Problem $\# 7 ]$ Let $S : = \{ z \in \mathbb { D } : \operatorname { I m } ( z ) \geq 0 \}$ . Suppose $f : S \to \mathbb { C }$ is continuous on $S$, real on $S \cap \RR$, and holomorphic on the interior of $S$. Prove that $f$ is the restriction of a holomorphic function on the open unit disk.
 :::
 
 ::: {.solution}
