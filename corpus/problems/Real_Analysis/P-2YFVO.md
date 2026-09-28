@@ -39,51 +39,57 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. If $f, g$ are continuous and compactly supported, then so is $f \ast g$.
-<2>1. $f \ast g$ is continuous: $|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)| \to 0$.
+<1>1. If $f, g$ are continuous and compactly supported, then $f \ast g$ is continuous and compactly supported.
+
 ::: {.proof}
-$f$ is uniformly continuous (continuous with compact support); triangle inequality on the defining integral.
-:::
-<2>2. $f \ast g$ is compactly supported: $\supp(f\ast g) \subseteq \overline{\supp f + \supp g}$, compact.
-::: {.proof}
-if $x \notin \overline{\supp f + \supp g}$, then $f(x - y) = 0$ for all $y \in \supp g$; and $\supp f + \supp g$ is compact (continuous image of $\supp f \times \supp g$).
+$|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)|$, which tends to $0$ because $f$ is uniformly continuous. $f\ast g$ vanishes off the compact set $\supp f + \supp g$, the image of $\supp f \times \supp g$ under addition. The steps are written out in [[E-Y4GZM]].
 :::
 
-<1>2. If $f \in L^1$ and $g$ is bounded, then $f \ast g$ is bounded and uniformly continuous.
-<2>1. $|f \ast g(x)| \le \|g\|_\infty\|f\|_1$ for all $x$.
+<1>2. If $f \in L^1$ and $|g| \leq M$, then $|f \ast g| \le M\|f\|_1$ and $f\ast g$ is uniformly continuous.
+
 ::: {.proof}
-$|f\ast g(x)| \le \int |f(x-y)||g(y)|\,dy \le \|g\|_\infty\|f\|_1$.
-:::
-<2>2. $|f \ast g(x + h) - f \ast g(x)| \le \|g\|_\infty\int|f(u + h) - f(u)|\,du \to 0$ as $h \to 0$, uniformly in $x$.
-::: {.proof}
-substitute $u = x - y$; the integral is $\|\tau_h f - f\|_1 \to 0$ (strong continuity of translation in $L^1$).
+$|f\ast g(x)| \le \int |f(x-y)||g(y)|\,dy \le M\|f\|_1$. Substituting $u = x - y$ gives $|f \ast g(x + h) - f \ast g(x)| \le M\int|f(u + h) - f(u)|\,du$, which does not depend on $x$ and tends to $0$ as $h \to 0$ by continuity of translation in $L^1$. The steps are written out in [[E-E4H2J]].
 :::
 
-<1>3. If $f, g$ are compactly supported, then $f \ast g$ is compactly supported — yes.
+<1>3. If $f, g$ are compactly supported, then $f \ast g$ is compactly supported.
+
 ::: {.proof}
-<1>2 of <1>1 applies without any continuity hypothesis: $\supp(f\ast g) \subseteq \overline{\supp f + \supp g}$, compact.
+The argument of step <1>1 uses no continuity: $f\ast g(x) = 0$ for $x \notin \supp f + \supp g$, which is compact.
 :::
 
-<1>4. Vanishing at infinity under each of the four assumptions.
-<2>1. $f, g \in L^1$ both bounded: $|f\ast g(x)| \le \|g\|_\infty\int_{|x-y| \ge |x|/2}|f| + \|f\|_\infty\int_{|y| > |x|/2}|g| \to 0$.
-::: {.proof}
-split the defining integral at $|y| = |x|/2$; both $L^1$ tails tend to $0$.
-:::
-<2>2. $f, g \in L^1$ with only $g$ bounded: approximate $f$ by bounded truncations $f_M = f\chi_{|f|\le M}$; $\|(f - f_M)\ast g\|_\infty \le \|f - f_M\|_1\|g\|_\infty \to 0$, and $f_M \ast g$ vanishes at infinity by <2>1.
-::: {.proof}
-$\eps/2 + \eps/2$ with $M$ large then $|x|$ large.
-:::
-<2>3. $f, g$ smooth and compactly supported: $f \ast g$ is smooth and compactly supported (by <1>1), hence vanishes at infinity.
-::: {.proof}
-smoothness by differentiation under the integral; compact support by <1>1. <2>4. $f \in L^1$, $g$ smooth and compactly supported: $f \ast g$ is smooth and vanishes at infinity.
-:::
-::: {.proof}
-smoothness by differentiation under the integral ($D^\alpha g$ bounded).
-:::
-For vanishing: let $R$ bound $|y|$ on $\supp g$; for $|x| \ge 2R$ the integration range $\{y : |x - y| \le R\}$ satisfies $|y| \ge |x| - R \ge |x|/2$, so $|f\ast g(x)| \le \|g\|_\infty\int_{|x-y| \le R}|f(x-y)|\,dy = \|g\|_\infty\int_{|u| \ge |x|/2}|f(u)|\,du \to 0$ as $|x| \to \infty$ (the $L^1$ tail of $f$).
+<1>4. $f \ast g$ vanishes at infinity under each of the four listed assumptions.
 
-<1>5. If $f \in L^1$ and $g$ is differentiable with bounded partial derivatives $\dd{g}{x_i}$, then $\dd{}{x_i}(f \ast g) = f \ast \dd{g}{x_i}$.
+<2>1. The cases $f, g \in L^1$ both bounded, $f, g \in L^1$ with $g$ bounded, and $f, g$ smooth and compactly supported.
+
 ::: {.proof}
-difference quotient under the integral; the quotient of $g$ is bounded by $\sup|\dd{g}{\cdot_i}|$ (mean value theorem) and converges pointwise, so dominated convergence applies with $|f| \in L^1$.
+These are proved in [[E-LYXHE]]: in the first case split $\int f(x-y)g(y)\,dy$ at $|y| = |x|/2$ and bound each piece by an $L^1$ tail; in the second, truncate $f$ at height $M$ and use the first case; in the third, $f\ast g$ has compact support by step <1>3.
+:::
+
+<2>2. If $f \in L^1$ and $g$ is smooth with compact support, then $f\ast g$ is smooth and vanishes at infinity.
+
+::: {.proof}
+Every $D^\alpha g$ is bounded, so step <1>5 applied repeatedly gives $D^\alpha(f\ast g) = f\ast D^\alpha g$, which is continuous by step <1>2. Choose $R$ with $\supp g \subseteq \theset{|y| \le R}$. For $|x| \ge 2R$ and $|y| \le R$, $|x - y| \ge |x|/2$, so
+$$
+|f\ast g(x)| \le \|g\|_\infty\int_{|y| \le R}|f(x-y)|\,dy \le \|g\|_\infty\int_{|u| \ge |x|/2}|f(u)|\,du,
+$$
+which tends to $0$ as $|x| \to \infty$ because $f \in L^1$.
+:::
+
+<2>3. Q.E.D.
+
+::: {.proof}
+Steps <2>1 and <2>2.
+:::
+
+<1>5. If $f \in L^1$ and $g$ is differentiable with $\dd{g}{x_i}$ bounded, then $\dd{}{x_i}(f \ast g) = f \ast \dd{g}{x_i}$.
+
+::: {.proof}
+The difference quotient of $f\ast g$ in the direction $e_i$ is $\int f(x-y)\,\frac{g(y + h e_i) - g(y)}{h}\,dy$. By the mean value theorem the quotient of $g$ is bounded by $\sup|\dd{g}{x_i}|$, and it converges pointwise to $\dd{g}{x_i}$, so dominated convergence with dominating function $\sup|\dd{g}{x_i}|\,|f(x-\cdot)|$ applies. The steps are written out in [[E-GQEMZ]].
+:::
+
+<1>6. Q.E.D.
+
+::: {.proof}
+Steps <1>1--<1>5 treat the parts in order.
 :::
 :::
