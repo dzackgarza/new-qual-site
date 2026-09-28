@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK97S-07
 kind: problem
-title: Compare eigenvectors and eigenvalues of $AB$ and $BA$
+title: $AB$ and $BA$ have the same eigenvalues but not the same eigenvectors
 classification:
   areas:
   - prelim
