@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-17
 kind: problem
-title: When does $\log_a x=x^b$ have a positive solution?
+title: Positive solutions of $\log_a x=x^b$
 classification:
   areas:
   - prelim
