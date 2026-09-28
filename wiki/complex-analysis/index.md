@@ -5,9 +5,7 @@ order: 30
 
 # Complex Analysis
 
-## Recurring questions
-
-The questions below recur on the exam papers in this corpus; each links to the page that treats it.
+## Problem types
 
 | Question | Page |
 | --- | --- |
@@ -17,9 +15,6 @@ The questions below recur on the exam papers in this corpus; each links to the p
 | Evaluate this real integral | [[complex-analysis/residues-and-contours/which-contour-do-i-close\|Which contour do I close?]] |
 | How many zeros are in this region? | [[complex-analysis/counting-zeros/how-many-zeros-in-this-region\|How many zeros in this region?]] |
 | Find a conformal map from here to there | [[complex-analysis/conformal-maps/build-me-a-map\|Build me a map]] |
-
-Each of those pages is a decision procedure keyed on the form of the problem.
-The chapter containing it states and proves the results the procedure uses.
 
 ## Chapters
 
@@ -39,7 +34,7 @@ Three pages collect material from several chapters:
 
 - [[complex-analysis/review|Review sheet]] -- the statements of the chapters' theorems, on one page.
 
-- [[complex-analysis/counterexamples|Counterexamples]] -- functions showing that a theorem fails when one of its hypotheses is dropped, grouped by hypothesis.
+- [[complex-analysis/counterexamples|Counterexamples]] -- functions showing that a theorem fails when one of its hypotheses is dropped, grouped by theorem.
 
 - [[complex-analysis/standard-integrals|Standard integrals]] -- real integrals evaluated by residues, with their contours and arc estimates.
 
