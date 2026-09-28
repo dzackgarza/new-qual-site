@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK81S-06
 kind: problem
-title: Symmetric nonidentity rotations in $SO(3)$ form a projective plane
+title: The symmetric nonidentity elements of $SO(3)$ form a space homeomorphic to $\mathbb{RP}^2$
 classification:
   areas: [prelim]
   topics: []
