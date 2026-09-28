@@ -237,18 +237,9 @@ Steps <2>1--<2>5 derive every assertion of step <1>1 from the inverse
 function theorem.
 :::
 
-<1>2. This is the real implicit function theorem in arbitrary finite
-dimensions and for any differentiability order $1\leq r\leq\infty$.
+<1>2. Q.E.D.
 
 ::: {.proof}
-Step <1>1 states the theorem and its substeps derive it from the corresponding
-inverse function theorem.
-:::
-
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>2 answers both requested parts: the general statement and the proof
-outline from the inverse function theorem.
+Step <1>1 states the theorem for all finite $n,m$ and every order $1\leq r\leq\infty$, and its substeps derive it from the inverse function theorem.
 :::
 :::
