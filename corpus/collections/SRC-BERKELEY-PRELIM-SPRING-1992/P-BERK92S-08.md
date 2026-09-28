@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK92S-08
 kind: problem
-title: Evaluate $\int_{-\infty}^{\infty}\sin^3x/x^3\,dx$
+title: The integral $\int_{-\infty}^{\infty}\sin^3x/x^3\,dx$
 classification:
   areas:
   - prelim
