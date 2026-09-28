@@ -29,9 +29,11 @@ $$
 $$
 :::
 
-::: {.solution}
-**Goal:** Evaluate the limit using the Dominated Convergence Theorem with dominating function $g(x) = \frac{1}{1 + x^2}$, and compute the resulting Gaussian integral.
+::: {.hint}
+Bernoulli's inequality gives $\left(1+\frac{x^2}{n}\right)^{n+1}\ge 1+x^2$, so $\frac{1}{1+x^2}$ dominates the integrands; the pointwise limit is $e^{-x^2}$.
+:::
 
+::: {.solution}
 <1>1. Pointwise limit of the integrands:
 ::: {.proof}
     <2>1. Define the sequence of functions $f_n: [0, \infty) \to \mathbb{R}$ by
