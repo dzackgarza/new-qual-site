@@ -24,19 +24,19 @@ prompts:
 
 ::: {.definition title="Projective"}
 $f : X \to Y$ is \dfn{projective} if it factors as a closed immersion followed by the projection,
-\[
+$$
 X \injects \PP^N_Y \to Y, \qquad \PP^N_Y \da \fiberprod{\PP^N_\ZZ}{\Spec \ZZ}{Y} ,
-\]
+$$
 for some $N$.
-It is **quasi-projective** if it factors as an open immersion into a scheme projective over $Y$.
+It is \dfn{quasi-projective} if it factors as an open immersion into a scheme projective over $Y$.
 :::
 
 ::: {.remark}
 For $Y$ Noetherian, projective implies proper.
 The proof combines properness of closed immersions, stability of properness under composition, and universal closedness of $\PP^N_\ZZ \to \Spec \ZZ$ via elimination.
 
-The relative $\Proj$ supplies the examples: for a graded ring $S$ with $S_0 = A$ and $S$ generated in degree one by finitely many elements, $\Proj S \to \Spec A$ is projective.
-Blowups are projective for the same reason, and that is why a blowup of a projective variety stays projective.
+For a graded ring $S$ with $S_0 = A$ and $S$ generated in degree one by finitely many elements, $\Proj S \to \Spec A$ is projective.
+The blowup of a Noetherian scheme $X$ along a closed subscheme is the relative $\Proj$ of the Rees algebra $\bigoplus_{d\ge0}\mci^d$, and the blowup morphism is projective [@Har10a, Proposition II.7.13]; for $X$ a projective variety, the blowup is again a projective variety.
 :::
 
 ::: {.example}
