@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK85SU-06
 kind: problem
-title: Evaluate $\int_0^\infty x^{a-1}/(1+x)\,dx$ and determine its domain of convergence
+title: The integral $\int_0^\infty x^{a-1}/(1+x)\,dx$ and its domain of convergence
 classification: {areas: [prelim], topics: []}
 relations: []
 review: draft
