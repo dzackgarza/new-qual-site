@@ -66,16 +66,15 @@ equivalence class meets \(S\).
 by all \(j\times j\) minors of \(A\). Then \(\Delta_j(A)\) is invariant under
 matrix equivalence.
 ::: {.proof}
-It is enough to check left or right multiplication by an invertible elementary
-matrix. Each \(j\times j\) minor after an elementary row operation is an
-\(R\)-linear combination of the original \(j\times j\) minors, so
+Let \(P\) be any \(n\times n\) matrix over \(R\). By the Cauchy--Binet formula,
+each \(j\times j\) minor of \(PA\) is an \(R\)-linear combination of
+\(j\times j\) minors of \(A\), so
 \[
-\Delta_j(EA)\subseteq\Delta_j(A).
+\Delta_j(PA)\subseteq\Delta_j(A).
 \]
-Applying the inverse elementary operation gives the reverse inclusion. The same
-argument applies to column operations. Since invertible matrices over a PID are
-products of elementary matrices together with unit row/column scalings, the
-ideal is unchanged under equivalence.
+If \(P\) is invertible, applying this to \(P^{-1}\) and \(PA\) gives the reverse
+inclusion. The same argument applies to right multiplication by an invertible
+\(m\times m\) matrix \(Q\). Hence \(\Delta_j(PAQ)=\Delta_j(A)\).
 :::
 
 <1>3. If
