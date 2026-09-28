@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK78S-14
 kind: problem
-title: Classify finite multiplicative groups of two-by-two integer matrices
+title: Finite subgroups of $\operatorname{GL}_2(\ZZ)$
 classification:
   areas:
   - prelim
