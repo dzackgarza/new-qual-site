@@ -19,11 +19,11 @@ audit:
 ::: {.problem}
 Let $c_0,c_1,\ldots,c_{n-1}$ be complex numbers.
 Prove that all the zeroes of the polynomial
-\[
+$$
 z^n+c_{n-1}z^{n-1}+\cdots+c_1z+c_0
-\]
+$$
 lie in the open disc with center $0$ and radius
-\[
+$$
 1+|c_{n-1}|+\cdots+|c_1|+|c_0|.
-\]
+$$
 :::
