@@ -70,7 +70,8 @@ $\mathbf F_3$: one subgroup of order $1$, thirteen of order $3$, thirteen of
 order $9$, and one of order $27$.
 ::: {.proof}
 View $V=C_3^3$ as a three-dimensional vector space over $\mathbf F_3$.
-Its group subgroups are exactly its linear subspaces. The number of
+Its subgroups are exactly its linear subspaces, since a subgroup is closed
+under multiplication by every scalar $n\in\mathbf F_3=\ZZ/3\ZZ$. The number of
 one-dimensional subspaces is
 \[
 \frac{3^3-1}{3-1}=13.
