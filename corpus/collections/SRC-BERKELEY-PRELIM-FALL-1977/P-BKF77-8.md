@@ -32,7 +32,7 @@ subject to $x(0)=1$ and $x'(0)=0$.
 :::
 
 ::: {.solution}
-<1>1. Solve the homogeneous equation.
+<1>1. The solutions of $x''-2x'+x=0$ are $x_h(t)=(C_1+C_2t)e^t$.
 ::: {.proof}
 The characteristic polynomial of
 $$
@@ -48,7 +48,7 @@ x_h(t)=(C_1+C_2t)e^t.
 $$
 :::
 
-<1>2. Find a particular solution.
+<1>2. $x_p(t)=\frac12\cos t$ is a particular solution.
 ::: {.proof}
 Try
 $$
@@ -79,7 +79,7 @@ x_p(t)=\frac12\cos t.
 $$
 :::
 
-<1>3. Impose the initial conditions.
+<1>3. The unique solution with $x(0)=1$, $x'(0)=0$ is $x(t)=\frac{(1-t)e^t+\cos t}{2}$.
 ::: {.proof}
 The general solution is
 $$
