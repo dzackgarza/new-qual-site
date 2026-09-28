@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XIKRI
 kind: problem
-title: Evaluate $\int\frac{4x^3+2x}{x^4+1}\,dx$
+title: $\int\frac{4x^3+2x}{x^4+1}\,dx$
 classification:
   areas:
   - prelim
