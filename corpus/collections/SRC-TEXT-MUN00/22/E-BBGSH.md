@@ -69,7 +69,7 @@ Its fibers are the circles centered at the origin, with the origin as the radius
 \[
 r(x,y)=\sqrt{x^2+y^2}:\mathbb R^2\to[0,\infty)
 \]
-is open onto $[0,\infty)$: if $B_\varepsilon(z)$ is a small disk about a point of radius $r_0$, its set of radii contains a relative interval about $r_0$. Hence $r$ is quotient. Squaring is a homeomorphism $[0,\infty)\to[0,\infty)$, so $h=r^2$ is quotient. Consequently the induced map identifies the quotient with
+is continuous, surjective, and open onto $[0,\infty)$: for $z$ with $\abs z=r_0$, the disk $B_\varepsilon(z)$ contains the points $z+tu$ with $\abs t<\varepsilon$, where $u=z/r_0$ if $r_0>0$ and $u$ is any unit vector if $r_0=0$, and their norms $\abs{r_0+t}$ cover $(r_0-\varepsilon,r_0+\varepsilon)\cap[0,\infty)$. Hence $r$ is quotient. Squaring is a homeomorphism $[0,\infty)\to[0,\infty)$, so $h=r^2$ is quotient. Consequently the induced map identifies the quotient with
 \[
 [0,\infty).
 \]
