@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DUK6M
 kind: problem
-title: $xe^{2ix}/x^2-1$
+title: $\int_\RR\frac{xe^{2ix}}{x^2-1}\,dx$
 classification:
   areas:
   - complex-analysis
