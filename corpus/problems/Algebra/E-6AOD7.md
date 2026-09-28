@@ -33,8 +33,8 @@ $p\dash$groups have nontrivial centers:
 
 $p^2$ groups are abelian:
 
-- $Z(G) = 1,p,p^2$, and by above we know $Z(G)\neq 1$.
-  If $Z(G) = p^2$ we're done, so assume $Z(G) = p$.
+- $Z(G) = 1,p,p^2$, and by the first part $Z(G)\neq 1$.
+  If $Z(G) = p^2$ then $G = Z(G)$ is abelian, so assume $Z(G) = p$.
 
-- Then $G/Z(G) = p$ and groups of order $p$ are cyclic, so the $G/Z(G)$ theorem applies and $G$ is abelian.
+- Then $G/Z(G) = p$ and groups of order $p$ are cyclic. If $G/Z(G)$ is cyclic then $G$ is abelian, so $G$ is abelian.
 :::
