@@ -144,7 +144,7 @@ which is the closed circular unit disk.
 $C[0,1]$ whose intersection with the unit cube is a circular disk.
 
 ::: {.proof}
-The subspace $W$ constructed above has dimension $2$ by step <1>1 and
+The subspace $W$ has dimension $2$ by step <1>1 and
 has the required section by step <1>4.
 :::
 
