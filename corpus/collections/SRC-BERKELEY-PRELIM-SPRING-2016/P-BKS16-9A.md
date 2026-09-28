@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS16-9A
 kind: problem
-title: Galois group of the normal closure of $\mathbb Q(\sqrt3+\sqrt5)$
+title: Galois group of the normal closure of $\QQ(\sqrt3+\sqrt5)$
 classification:
   areas:
   - prelim
@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Compute the Galois group of the normal closure of the field
-\[
-K=\mathbb Q\!\left(\sqrt3+\sqrt5\right)
-\]
-over $\mathbb Q$.
+$$
+K=\QQ\!\left(\sqrt3+\sqrt5\right)
+$$
+over $\QQ$.
 :::
 
 ::: {.solution}
