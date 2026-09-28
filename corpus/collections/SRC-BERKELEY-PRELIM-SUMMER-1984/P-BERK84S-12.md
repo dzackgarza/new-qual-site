@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-12
 kind: problem
-title: Orders of finite vector spaces, GLn, and SLn
+title: Orders of $\FF_q^n$, $\GL_n(\FF_q)$, and $\SL_n(\FF_q)$
 classification:
   areas:
   - prelim
