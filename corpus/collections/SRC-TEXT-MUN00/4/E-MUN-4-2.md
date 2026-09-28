@@ -100,7 +100,7 @@ xy=(-x)(-y)>0.
 \]
 Conversely suppose \(xy>0\). Neither factor is zero. If \(x>0\) and \(y<0\), then applying part (e) to \(x>0\) and the negative multiplier \(y\) gives \(xy<0\), a contradiction. Hence \(y>0\). Similarly, if \(x<0\), then \(y<0\). Thus \(xy>0\) exactly when the two factors have the same sign.
 
-(i) Let \(x>0\). By Exercise 1(p), \(1/x\ne0\). If \(1/x<0\), then a positive number times a negative number is negative, so
+(i) Let \(x>0\). By [[E-MUN-4-1]](p), \(1/x\ne0\). If \(1/x<0\), then a positive number times a negative number is negative, so
 \[
 1=x(1/x)<0,
 \]
