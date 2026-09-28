@@ -41,7 +41,3 @@ source:
     term: summer
     year: 1979
 ---
-
-::: {.remark}
-The paper, titled *Preliminary Exam - Summer 1979*, does not name its institution; it belongs to the Berkeley preliminary exam sequence.
-:::
