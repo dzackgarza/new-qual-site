@@ -78,6 +78,6 @@ By <1>2, each $u_i$ is an eigenvector with eigenvalue $1$ and each $v_j$ is an e
 
 <1>5. Equivalently, the minimal polynomial of $A$ divides $x(x-1)$, which has distinct roots, so $A$ is diagonalizable.
 ::: {.proof}
-The equation $A^2=A$ gives $A(A-I)=0$, hence $m_A(x)\mid x(x-1)$. A matrix whose minimal polynomial splits into distinct linear factors is diagonalizable, consistent with the explicit basis above.
+The equation $A^2=A$ gives $A(A-I)=0$, hence $m_A(x)\mid x(x-1)$. A matrix whose minimal polynomial splits into distinct linear factors is diagonalizable.
 :::
 :::
