@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKF05-7A
 kind: problem
-title: Count zeros of a quintic in a closed annulus
+title: Zeros of a quintic in a closed annulus
 classification:
   areas:
   - prelim
@@ -139,9 +139,8 @@ $$
 
 ::: {.proof}
 Steps <1>2 and <1>4 show that the number of zeros in
-$1\le\abs z<2$ is $3-3=0$, except that the inner boundary must be
-checked separately. Step <1>5 shows that neither boundary circle
-contains a zero. Hence the closed annulus contains no zeros.
+$1\le\abs z<2$ is $3-3=0$. Step <1>5 shows that the circle
+$\abs z=2$ contains no zero. Hence the closed annulus contains no zeros.
 :::
 
 <1>7. Q.E.D.
