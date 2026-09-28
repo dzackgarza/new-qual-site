@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HFGO13
 kind: problem
-title: Define a splitting field
+title: Splitting field of a polynomial
 classification:
   areas: [algebra]
   topics: [Field Theory]
@@ -26,7 +26,7 @@ Define the splitting field of a polynomial over a field.
 :::
 
 ::: {.solution}
-Let $f(x)\in F[x]$. A **splitting field** of $f$ over $F$ is an extension
+Let $f(x)\in F[x]$. A \dfn{splitting field} of $f$ over $F$ is an extension
 $K/F$ such that
 
 1. $f$ splits completely into linear factors over $K$, and
