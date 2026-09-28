@@ -3,7 +3,7 @@ schema: qual/card@1
 id: FF-UQZNR
 kind: fact
 title: Laurent series of $1/\sin z$ at $0$
-slogan: '$\csc z$ starts with the simple pole $z^{-1}$, followed by the odd regular terms $z/6+7z^3/360+O(z^5)$.'
+slogan: '$\csc z$ has principal part $1/z$ at $0$, and $\csc z-1/z=z/6+7z^3/360+O(z^5)$ is odd and holomorphic on $\abs{z}<\pi$.'
 prompts:
 - What is the Laurent expansion of $1/\sin(z)$ at the origin?
 classification:
