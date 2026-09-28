@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK77S-09
 kind: problem
-title: Every orientation-preserving orthogonal map of $\mathbb R^3$ has an axis
+title: Every orientation-preserving orthogonal map of $\RR^3$ has an axis
 classification:
   areas:
   - prelim
