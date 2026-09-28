@@ -5,8 +5,6 @@ order: 11
 
 # Resources
 
-Books, topic lists, problem sheets, and solutions for the algebra qual.
-
 ## General
 
 - [[algebra/resources/books-notes|Books and notes]] -- textbooks, lecture notes, and review notes.
