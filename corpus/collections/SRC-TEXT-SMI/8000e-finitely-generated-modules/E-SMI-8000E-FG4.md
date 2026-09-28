@@ -67,9 +67,10 @@ r_1=X^3+X+1,
 \qquad
 r_2=X^3+X^2+1.
 $$
-These cubics have no roots in $\mathbb F_2$, so they are irreducible; every
-reducible cubic over a field has a linear factor, and the standard count of
-monic irreducible cubics over $\mathbb F_2$ gives exactly two.
+A cubic over a field is reducible exactly when it has a root. A monic cubic
+$X^3+aX^2+bX+c$ over $\mathbb F_2$ has no root at $0$ exactly when $c=1$, and
+then no root at $1$ exactly when $1+a+b+1=a+b=1$. This leaves exactly $r_1$
+and $r_2$.
 :::
 
 <1>2. List the six classes supported at a single linear irreducible.
