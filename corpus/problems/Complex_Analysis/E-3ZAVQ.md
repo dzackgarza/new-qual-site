@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3ZAVQ
 kind: problem
-title: Applying Jordan's lemma
+title: $\int_\RR\frac{\sin x}{x}\,dx=\pi$ by an indented semicircle and Jordan's lemma
 classification:
   areas:
   - complex-analysis
