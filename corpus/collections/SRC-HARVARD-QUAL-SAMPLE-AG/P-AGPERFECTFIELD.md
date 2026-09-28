@@ -61,7 +61,7 @@ be the normalization.  The scheme $\widetilde C$ is normal by definition.  Since
 Thus in dimension one the normalization itself is a resolution of singularities: it is a finite birational morphism from a smooth curve.
 :::
 
-<1>4. Perfectness is essential for the implication "regular implies smooth."
+<1>4. Over an imperfect field, a regular scheme of finite type need not be smooth.
 ::: {.proof}
 Let
 \[
@@ -84,7 +84,7 @@ which is nonreduced.  Thus $X$ is not geometrically regular and hence is not smo
 The same phenomenon is what perfectness excludes for curves: over a perfect base, regularity cannot be destroyed by a purely inseparable residue-field extension.
 :::
 
-<1>5. Hence the practical answer for curves is
+<1>5. Hence
 \[
 \boxed{
 \text{over a perfect field, normal }\Longleftrightarrow
