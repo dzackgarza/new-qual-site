@@ -32,7 +32,7 @@ audit:
 Compute
 
 $$
-\operatorname* { l i m } _ { N \to \infty } \int _ { - N } ^ { N } { \frac { x \sin ( x ) } { x ^ { 2 } + 1 } } d x .
+\lim_{N\to\infty}\int_{-N}^{N}\frac{x\sin(x)}{x^2+1}\,dx.
 $$
 :::
 
