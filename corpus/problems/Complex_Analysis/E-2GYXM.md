@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2GYXM
 kind: problem
-title: 'Sum formulas: 1/(n-a)^2'
+title: $\sum_{k\in\ZZ}(z-k)^{-2}=\pi^2/\sin^2(\pi z)$
 classification:
   areas:
   - complex-analysis
