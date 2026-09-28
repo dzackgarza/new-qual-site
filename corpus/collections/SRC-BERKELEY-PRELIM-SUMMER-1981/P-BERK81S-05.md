@@ -134,19 +134,19 @@ $$
 Complexify the real vector space and the operator. The matrix of the
 complexified operator is still $A$, so its determinant is unchanged.
 
-Over $\CC$, choose a basis in which $A$ is upper triangular with diagonal
-entries
+Over $\CC$, choose a basis $f_1,\ldots,f_n$ of $\CC^n$ in which $A$ is
+upper triangular with diagonal entries
 $$
 \lambda_1,\ldots,\lambda_n.
 $$
 In the induced wedge basis
 $$
-e_i\wedge e_j,
+f_i\wedge f_j,
 \qquad
 i<j,
 $$
-the operator $\bigwedge^2A$ is triangular, and its diagonal entry
-corresponding to $e_i\wedge e_j$ is
+ordered lexicographically, the operator $\bigwedge^2A$ is triangular, and
+its diagonal entry corresponding to $f_i\wedge f_j$ is
 $$
 \lambda_i\lambda_j.
 $$
