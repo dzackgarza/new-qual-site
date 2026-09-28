@@ -36,7 +36,7 @@ We prove the stronger statement $f(z)=c_2z^2$ for a constant $c_2\in\mathbb C$.
 <2>2. For any $R > 0$ and any $n \geq 0$, Cauchy's coefficient formula gives: $$c_n = \frac{1}{2\pi i} \oint_{|z|=R} \frac{f(z)}{z^{n+1}} \, dz.$$ *Proof:* Cauchy integral formula for derivatives.
 <2>3. Q.E.D.
 
-<1>2. **Apply Cauchy's Estimates for each coefficient $c_n$.** <2>1. By the $ML$-inequality on the circle $|z| = R$: $$|c_n| \leq \frac{1}{2\pi} \cdot \left( \sup_{|z|=R} \frac{|f(z)|}{|z|^{n+1}} \right) \cdot (2\pi R) = \frac{\sup_{|z|=R} |f(z)|}{R^n}.$$ *Proof:* On $|z|=R$ the integrand of step <2>2 has modulus at most $\sup_{|z|=R}|f(z)|/R^{n+1}$, and the circle has length $2\pi R$.
+<1>2. **Apply Cauchy's Estimates for each coefficient $c_n$.** <2>1. By the $ML$-inequality on the circle $|z| = R$: $$|c_n| \leq \frac{1}{2\pi} \cdot \left( \sup_{|z|=R} \frac{|f(z)|}{|z|^{n+1}} \right) \cdot (2\pi R) = \frac{\sup_{|z|=R} |f(z)|}{R^n}.$$ *Proof:* On $|z|=R$ the integrand of step <1>1.<2>2 has modulus at most $\sup_{|z|=R}|f(z)|/R^{n+1}$, and the circle has length $2\pi R$.
 <2>2. By the growth hypothesis, on $|z| = R$, $|f(z)| \leq A R^2$.
 *Proof:* Given assumption $|f(z)| \leq A|z|^2$.
 <2>3. Substituting <2>2 into <2>1 yields the bound: $$|c_n| \leq \frac{A R^2}{R^n} = A R^{2-n} \quad \text{for all } R > 0.$$ *Proof:* Algebra.
