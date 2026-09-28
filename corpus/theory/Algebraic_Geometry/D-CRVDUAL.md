@@ -35,5 +35,5 @@ In particular a smooth plane curve of degree $d \geq 2$ has class $d(d-1)$.
 ::: {.example}
 The dual of a smooth conic is a smooth conic.
 The dual of a smooth plane cubic has degree $6$; its $9$ cusps correspond to the $9$ flexes of the cubic, and it has no nodes because a smooth cubic has no bitangents.
-Its genus is $\binom{5}{2} - 9 = 1$, the genus of the cubic, as it must be for a birational image.
+Its geometric genus is $\binom{5}{2} - 9 = 1$, equal to the genus of the cubic, since the Gauss map $C\to C^\vee$ is birational.
 :::
