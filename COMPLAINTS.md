@@ -741,8 +741,13 @@ Put durable mathematical errata on the owning card and durable policy in CONTRIB
     had chapter-level topics on a Fibonacci exercise and has been
     reclassified. A shared list is correct when the section has one subject;
     each card must be read.
-  - Duplicate candidates under `CARD-04`: E-BXDQY / E-EUGUZ, E-ENWYG /
-    E-EOMTI, E-22P3T / E-2HIKG, E-AKNDW / E-CFHC4, E-2DPQC / E-5AKU5.
+  - Duplicates under `CARD-04`, read in full: E-BXDQY / E-EUGUZ,
+    E-ENWYG / E-EOMTI, E-22P3T / E-2HIKG and E-AKNDW / E-CFHC4 state the same
+    mathematics, each pair inside SRC-UNSORTED-COMPLEX-ANALYSIS. E-2DPQC
+    (uniform convergence) and E-5AKU5 (locally uniform) differ and stay.
+    Merging retires an `E-*` address, which `AGENTS.md` makes permanent, and
+    the schema has no duplicate relation; the retirement mechanism is the
+    owner's decision.
 - **Impact and owner:** statement and structure lines are data defects of
   urgency 1 in `AGENTS.md`; proof gaps and layout are authoring work.
 - **Uncertainty:** every line is an unverified reader report. None is a
