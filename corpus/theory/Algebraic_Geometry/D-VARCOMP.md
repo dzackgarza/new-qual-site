@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-VARCOMP
 kind: definition
-title: Complete varieties, and how completeness sits against projectivity
+title: Complete varieties and projectivity
 classification:
   areas:
   - algebraic-geometry
@@ -21,18 +21,18 @@ prompts:
 ---
 
 ::: {.definition title="Complete"}
-A variety $X$ over $k$ is \dfn{complete}, equivalently **proper**, if the structure morphism $X \to \Spec k$ is proper: separated and universally closed.
-Finite type is automatic for varieties, so only the two substantive conditions are being asserted.
+A variety $X$ over $k$ is \dfn{complete}, equivalently \dfn{proper}, if the structure morphism $X \to \Spec k$ is proper: separated, of finite type, and universally closed.
 :::
 
-::: {.proposition title="What completeness buys"}
-If $X$ is complete then $\OO_X(X) = k$, the image of $X$ under any morphism is closed, and any morphism from $X$ to an affine variety is constant.
-Every projective variety is complete; over $\CC$, completeness is compactness in the Euclidean topology.
+::: {.proposition title="Consequences of completeness"}
+Let $k$ be algebraically closed and $X$ a complete variety over $k$.
+Then $\OO_X(X) = k$, the image of $X$ under any morphism of varieties is closed, and any morphism from $X$ to an affine variety is constant.
+Every projective variety is complete; over $\CC$, a variety is complete if and only if it is compact in the Euclidean topology.
 :::
 
 ::: {.remark}
-The standard non-example is $\AA^1$, and the witness must be a base change, not a closed-map check on $\AA^1$ itself: the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \ts{0}$, which is not closed.
+$\AA^1$ is not complete, although $\AA^1\to\Spec k$ is a closed map: after base change, the projection $\AA^1 \times \AA^1 \to \AA^1$ sends the closed hyperbola $V(xy-1)$ to $\AA^1 \sm \ts{0}$, which is not closed.
 
-The converse of "projective implies complete" is false: Nagata and Hironaka produced complete non-projective varieties, all of dimension at least three, since a complete curve or normal complete surface is projective.
-The function-count consequence $\OO_X(X) = k$ is the same argument that appears for projective varieties, run one level up.
+Complete varieties need not be projective: Hironaka constructed a nonsingular complete threefold that is not projective.
+Every complete curve and every nonsingular complete surface is projective, while there are complete normal surfaces that are not projective.
 :::
