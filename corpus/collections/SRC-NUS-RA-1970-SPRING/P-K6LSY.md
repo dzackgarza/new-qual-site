@@ -30,11 +30,7 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-**Goal:** Prove or disprove the two statements:
-(f) Whether the finite-interval covering infimum $\mu(E)$ coincides with the Lebesgue outer measure $m^*(E)$ for all $E \subset \RR$;
-(g) Whether $f^{-1}(E)$ is measurable whenever $E \subset \RR$ is Borel and $f: \RR \to \RR$ is (Lebesgue) measurable.
-
-<1>1. **Statement (f) is FALSE (Disproved).**
+<1>1. Statement (f) is false.
   <2>1. Definition of $\mu(E)$ and Lebesgue outer measure $m^*(E)$:
     For $E \subseteq \RR$,
     $$
@@ -65,11 +61,11 @@ Prove or disprove each of the following statements.
     <3>7. Thus $\mu(E) = 1$.
   <2>5. Since $\mu(E) = 1 \neq 0 = m^*(E)$, $\mu$ does not coincide with the outer measure of $E$. Hence statement (f) is false.
 
-<1>2. **Statement (g) is TRUE (Proved).**
+<1>2. Statement (g) is true.
   <2>1. Let $(\RR, \mathcal L, m)$ be the Lebesgue measure space and $(\RR, \mathcal B)$ be the Borel measurable space on $\RR$.
   <2>2. A function $f: \RR \to \RR$ is (Lebesgue) measurable if and only if for every open set $U \subseteq \RR$, $f^{-1}(U) \in \mathcal L$.
     ::: {.proof}
-    This is the standard definition of Lebesgue measurability of a real-valued function (equivalent to $f^{-1}((a, \infty)) \in \mathcal L$ for all $a \in \RR$).
+    This is the definition of Lebesgue measurability of a real-valued function; it is equivalent to $f^{-1}((a, \infty)) \in \mathcal L$ for all $a \in \RR$.
     :::
   <2>3. Define the family of sets $\mathcal S \definedas \{A \subseteq \RR : f^{-1}(A) \in \mathcal L\}$.
   <2>4. $\mathcal S$ is a $\sigma$-algebra on $\RR$.
@@ -89,6 +85,6 @@ Prove or disprove each of the following statements.
     Since $E \in \mathcal B \subseteq \mathcal S$, by definition of $\mathcal S$ we have $f^{-1}(E) \in \mathcal L$.
     :::
 
-<1>3. **Conclusion.**
-  Statement (f) is false (disproved by counterexample $\mathbb Q \cap [0, 1]$), and Statement (g) is true (proved by the preimage $\sigma$-algebra argument). Q.E.D.
+<1>3. Q.E.D.
+  Step <1>1 disproves (f) with $E = \mathbb Q \cap [0, 1]$, and step <1>2 proves (g).
 :::
