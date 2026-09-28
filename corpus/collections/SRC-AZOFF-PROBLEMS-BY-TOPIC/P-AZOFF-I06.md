@@ -34,7 +34,7 @@ audit:
 ---
 
 ::: {.problem}
-[January 2008, Problem $\# 5 \mathrm { b } ]$ Suppose $f : \mathbb { D } \to \mathbb { D }$ is analytic, has a zero of order k at the origin, has no other zeros, and satisfies $\begin{array} { r } { \operatorname* { l i m } _ { | z | \to 1 } | f ( z ) | = 1 } \end{array}$ . Give, with proof, a formula for f (z).
+[January 2008, Problem $\# 5 \mathrm { b } ]$ Suppose $f : \mathbb { D } \to \mathbb { D }$ is analytic, has a zero of order $k$ at the origin, has no other zeros, and satisfies $\lim_{\abs{z} \to 1} \abs{f(z)} = 1$. Give, with proof, a formula for $f(z)$.
 :::
 
 ::: {.solution}
