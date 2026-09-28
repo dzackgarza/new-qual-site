@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BERK84S-13
 kind: problem
-title: Centralizer of a nonscalar 2-by-2 complex matrix
+title: Centralizer of a nonscalar $2\times2$ complex matrix
 classification:
   areas:
   - prelim
