@@ -3,7 +3,7 @@ schema: qual/card@1
 id: PR-QNDSD
 kind: proposition
 title: Power series are smooth on their disc of convergence
-slogan: 'Inside its convergence disk, a power series is holomorphic, differentiates term by term, and remembers its coefficients as derivatives.'
+slogan: 'On its open disc of convergence, a power series is holomorphic, differentiates term by term, and has coefficients $c_k=f^{(k)}(z_0)/k!$.'
 classification:
   areas:
   - complex-analysis
