@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-1B
 kind: problem
-title: Uniform convergence and the mean value of an oscillatory series
+title: Uniform convergence and mean value of $\sum_{n\ge0} e^{i\sqrt n\,x}/(n^2+1)$
 classification:
   areas:
   - prelim
@@ -25,13 +25,13 @@ audit:
 
 ::: {.problem}
 Show that
-\[
+$$
 f(x)=\sum_{n=0}^\infty \frac{e^{i\sqrt n\,x}}{n^2+1}
-\]
-converges uniformly for real \(x\). Prove that
-\[
+$$
+converges uniformly for real $x$. Prove that
+$$
 \lim_{R\to+\infty}\frac1{2R}\int_{-R}^{R}f(x)\,dx
-\]
+$$
 exists and calculate it.
 :::
 
