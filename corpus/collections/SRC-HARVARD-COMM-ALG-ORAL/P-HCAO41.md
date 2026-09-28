@@ -33,8 +33,7 @@ Show that $A$ is a discrete valuation ring.
 
 ::: {.solution}
 Let \(\mathfrak m\) be the maximal ideal of the valuation ring \(A\). Since \(A\)
-is not a field, \(\mathfrak m
-e0\).
+is not a field, \(\mathfrak m\ne0\).
 
 <1>1. The maximal ideal \(\mathfrak m\) is principal.
 ::: {.proof}
@@ -53,8 +52,7 @@ Set \(\pi=a_j\).
 
 <1>2. Every nonzero ideal of \(A\) is a power of \(\mathfrak m=(\pi)\).
 ::: {.proof}
-Let \(0
-e I\subseteq A\). Since \(A\) is Noetherian, \(I\) is finitely
+Let \(0\ne I\subseteq A\). Since \(A\) is Noetherian, \(I\) is finitely
 generated, hence principal by the same total-order argument: \(I=(x)\).
 If \(x\) is a unit then \(I=A=\mathfrak m^0\). Otherwise \(x\in\mathfrak m\),
 so \(x=\pi x_1\). If \(x_1\) is not a unit, repeat.
