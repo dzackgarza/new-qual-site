@@ -30,5 +30,6 @@ The class of $a$ lies in the group $(\ZZ/n\ZZ)^\times$ of order $\phi(n)$, so it
 :::
 
 ::: {.example}
-The coprimality hypothesis is used: for $a=2$ and $n=4$, $\gcd(2,4)=2$ and $2^{\phi(4)}=2^2=4\equiv0\not\equiv1\pmod4$.
+If $n>1$ and $d=\gcd(a,n)>1$, then $a^k\not\equiv1\pmod n$ for every $k\ge1$, since $d$ divides both $a^k$ and $n$ but not $1$.
+For $a=2$ and $n=4$, $2^{\phi(4)}=2^2=4\equiv0\pmod4$.
 :::
