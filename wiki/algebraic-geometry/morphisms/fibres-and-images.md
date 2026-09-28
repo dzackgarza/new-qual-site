@@ -9,19 +9,16 @@ topics:
 
 # Fibres and images
 
-Three theorems state what a morphism can do to dimension and to connectedness.
-They are the ones quoted rather than proved, so the useful content is which hypothesis each one needs and which direction each inequality runs.
-
 ## Dimension
 
 [[T-MORFIBDIM]]
 
-Fibres jump up over special points and never down, and the blowup of a point in $\AA^2$ is the example to reach for in either direction.
-The generic equality is the counting tool: fibre a parameter space over something known and add the dimensions.
+For the blowup $\Bl_0\AA^2\to\AA^2$, the fibre over $0$ is $\PP^1$ and every other fibre is a point.
+For a dominant morphism $f\colon X\to Y$ of varieties, $\dim X=\dim Y+\dim X_y$ for $y$ in a dense open subset of $Y$.
 
 [[T-MORMIRACLE]]
 
-Miracle flatness runs the implication the other way, turning the expected fibre dimension into flatness, and it is the practical criterion for checking a family is flat.
+If $X$ is Cohen--Macaulay, $Y$ is regular, and $\dim_xX_{f(x)}=\dim\OO_{X,x}-\dim\OO_{Y,f(x)}$ at every point $x$, then $f$ is flat.
 
 ## Images
 
@@ -29,9 +26,10 @@ Miracle flatness runs the implication the other way, turning the expected fibre 
 
 [[T-MORSTEIN]]
 
-Stein factorisation is the general structure theorem: every proper morphism is a contraction with connected fibres followed by a finite cover.
-Zariski's main theorem is the case where the finite part is trivial, and normality of the target is what forces that.
-The nodal cubic and its normalisation are the standard witness that dropping normality breaks it, and they are the same example that shows a normalisation is not flat.
+A proper morphism $f\colon X\to Y$ of noetherian schemes factors as $X\xrightarrow{f'}Y'\xrightarrow{g}Y$ with $Y'=\underline{\Spec}_Y f_*\OO_X$, $g$ finite, and $f'_*\OO_X=\OO_{Y'}$, so every fibre of $f'$ is connected.
+For $X$ integral, $f$ birational, and $Y$ normal, $g$ is finite and birational onto a normal scheme, hence an isomorphism, and every fibre of $f$ is connected.
+The normalization of the nodal cubic is finite and birational, and its fibre over the node is two points.
+The same map is not flat: its fibre over the node has length $2$ and every other fibre has length $1$.
 
 ## Connected fibres and integral closure
 
