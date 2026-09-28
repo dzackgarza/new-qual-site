@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALGPAN11-11
 kind: problem
-title: When x maps to a x a^{-2} is a homomorphism
+title: $x\mapsto axa^{-2}$ is a homomorphism only for $a=e$
 classification:
   areas:
   - algebra
@@ -42,7 +42,7 @@ But
 Hence $a^{-1}=e$, so $a=e$.
 :::
 
-<1>2. The condition is sufficient.
+<1>2. If $a=e$, then $\varphi$ is a homomorphism.
 ::: {.proof}
 If $a=e$, then $\varphi(x)=x$ for all $x$, so $\varphi$ is the identity homomorphism.
 :::
