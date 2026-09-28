@@ -20,7 +20,11 @@ The \dfn{characteristic polynomial} of $A$ is
 $$
 \chi_A(x) \coloneqq \det(xI - A)\in k[x].
 $$
-It is monic of degree $n$; some texts use $\det(A-xI)=(-1)^n\chi_A(x)$ instead.
+:::
+
+::: {.remark}
+$\chi_A$ is monic of degree $n$.
+Some texts define the characteristic polynomial as $\det(A-xI)=(-1)^n\chi_A(x)$.
 :::
 
 ::: {.remark}
