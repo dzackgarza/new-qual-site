@@ -31,7 +31,7 @@ Given $A \in M _ { 2 } ( \mathbb { C } )$ , define $C ( A ) = \{ B \in M _ { 2 }
 
 (b) Determine, with proof, all possible values of the dimension dim $C ( A )$
 
-(c) Formulate a simple and explicit rule to find dim $C ( A )$ , given A. “Simple” means the rule should yield the answer with hardly any computational effort.
+(c) Formulate a simple and explicit rule to find dim $C ( A )$ , given A. "Simple" means the rule should yield the answer with hardly any computational effort.
 :::
 
 ::: {.solution}
