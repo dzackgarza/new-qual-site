@@ -24,40 +24,41 @@ audit:
 - Show that if $\theset{f_n}$ is in $L^1$ and $\sum \int \abs{f_n} < \infty$ then $\sum f_n$ converges to an $L^1$ function and $$\int \sum f_n = \sum \int f_n.$$
 :::
 ::: {.solution}
-<1>1. (Fatou via MCT) For measurable $f_n \ge 0$: $\int \liminf_n f_n \le \liminf_n \int f_n$.
-<2>1. Define $g_k = \inf_{n \ge k} f_n$; then $g_k \uparrow \liminf_n f_n$ pointwise.
+<1>1. For measurable $f_n \ge 0$, $\int \liminf_n f_n \le \liminf_n \int f_n$.
+
+<2>1. $g_k = \inf_{n \ge k} f_n$ is measurable, and $g_k \uparrow \liminf_n f_n$ pointwise.
+
 ::: {.proof}
-$g_k$ is measurable (infimum of a countable family), nondecreasing in $k$, and $\sup_k g_k = \liminf_n f_n$ by definition.
+$g_k$ is an infimum of countably many measurable functions, $g_k \le g_{k+1}$, and $\sup_k g_k = \liminf_n f_n$ by definition.
 :::
-<2>2. $\int g_k \le \int f_n$ for every $n \ge k$, so $\int g_k \le \inf_{n \ge k}\int f_n$.
+
+<2>2. $\int g_k \le \inf_{n \ge k}\int f_n$.
+
 ::: {.proof}
-$g_k \le f_n$ pointwise for $n \ge k$, and the integral is monotone.
+$g_k \le f_n$ for $n \ge k$, and the integral is monotone.
 :::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-monotone convergence: $\int \liminf_n f_n = \lim_k \int g_k \le \lim_k \inf_{n \ge k}\int f_n = \liminf_n \int f_n$.
+By the monotone convergence theorem and steps <2>1 and <2>2, $\int \liminf_n f_n = \lim_k \int g_k \le \lim_k \inf_{n \ge k}\int f_n = \liminf_n \int f_n$.
 :::
 
-<1>2. (Sum of $L^1$ functions) If $f_n \in L^1$ and $\sum \int |f_n| < \infty$, then $\sum_n f_n$ converges a.e. to an $L^1$ function and $\int \sum_n f_n = \sum_n \int f_n$.
-<2>1. Let $g = \sum_n |f_n|$ (extended-valued); by MCT, $\int g = \sum_n \int |f_n| < \infty$.
+<1>2. If $f_n \in L^1$ and $\sum_n \int |f_n| < \infty$, then $\sum_n f_n$ converges a.e. to an $L^1$ function $F$ and $\int F = \sum_n \int f_n$.
+
+<2>1. $g = \sum_n |f_n|$ satisfies $\int g = \sum_n \int |f_n| < \infty$, so $g < \infty$ a.e.
+
 ::: {.proof}
-monotone convergence applied to the partial sums of $|f_n|$.
-:::
-<2>2. $g(x) < \infty$ for a.e. $x$, so $\sum_n f_n(x)$ converges absolutely (hence converges) for a.e. $x$.
-::: {.proof}
-$g \in L^1$ forces $g < \infty$ a.e.; absolute convergence implies convergence.
-:::
-<2>3. $\sum_{n=1}^N f_n \to \sum_{n=1}^\infty f_n$ in $L^1$.
-::: {.proof}
-$\int \left|\sum_{n>N} f_n\right| \le \int g_N := \int\sum_{n>N}|f_n| = \sum_{n>N}\int|f_n| \to 0$ (tail of a convergent series), by MCT for the tail.
-:::
-<2>4. $\int \sum_{n=1}^\infty f_n = \sum_{n=1}^\infty \int f_n$.
-::: {.proof}
-$\left|\int\sum_{n=1}^N f_n - \int\sum_{n=1}^\infty f_n\right| \le \int\left|\sum_{n>N} f_n\right| \to 0$ by <2>3, and $\int\sum_{n=1}^N f_n = \sum_{n=1}^N \int f_n$ (finite additivity), whose limit is the infinite sum.
+The first equality is the monotone convergence theorem for the partial sums. A nonnegative function with finite integral is finite a.e.
 :::
 
-<1>3. Q.E.D.
+<2>2. Q.E.D.
+
 ::: {.proof}
-<1>1 and <1>2 establish both claims.
+Where $g(x) < \infty$ the series $\sum_n f_n(x)$ converges absolutely; let $F(x)$ be its sum there and $F = 0$ elsewhere. Then $|F| \le g$, so $F \in L^1$. For every $N$,
+$$
+\left|\int F - \sum_{n=1}^N \int f_n\right| \le \int \Big|\sum_{n>N} f_n\Big| \le \int \sum_{n>N}|f_n| = \sum_{n>N}\int|f_n|,
+$$
+using the monotone convergence theorem in the last step. The right side tends to $0$.
 :::
 :::
