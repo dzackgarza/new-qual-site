@@ -87,6 +87,6 @@ source:
 ---
 
 ::: {.remark}
-The 65 questions of the rescaled practice test in Chapter 9 of *Cracking the GRE Mathematics Subject Test*.
+The sixty-five questions of the rescaled practice test in Chapter 9.
 The test states its conventions: every logarithm with an unspecified base is natural, $[a,b]$ is the closed interval, and $\ZZ$, $\QQ$, $\RR$, $\CC$ are the integers, rationals, reals and complex numbers.
 :::
