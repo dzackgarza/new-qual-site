@@ -19,14 +19,17 @@ prompts:
 ::: {.definition title="total quotient ring"}
 Let $A$ be a ring and $S$ the multiplicative set of elements which are not zero divisors.
 The \dfn{total quotient ring} of $A$ is the localisation $S\inv A$.
-This is the closest thing to a field of fractions when $A$ is not a domain.
+:::
+
+::: {.definition title="Sheaf of total quotient rings"}
+For $X$ a scheme and $U$ open, let $S(U) \subseteq \Gamma(U,\OO_X)$ be the set of sections whose germ at every $p \in U$ is not a zero divisor in $\OO_{X,p}$.
+The sheafification $\mck_X$ of $U \mapsto S(U)\inv\Gamma(U,\OO_X)$ is the \dfn{sheaf of total quotient rings} of $X$.
 :::
 
 ::: {.remark}
-One cannot simply invert all nonzero elements when zero divisors are present, since doing so collapses the ring; excluding the zero divisors is the largest choice for which $A \to S\inv A$ stays injective.
-When $A$ is a domain, $S = A \smz$ and this is the fraction field.
+For a multiplicative subset $T\subseteq A$, the map $A\to T\inv A$ is injective if and only if $T$ contains no zero divisors; so $S$ is the largest multiplicative subset with $A\to S\inv A$ injective.
+When $A$ is a domain, $S = A \smz$ and $S\inv A$ is the fraction field.
 
-The sheaf version is what Cartier divisors are defined against.
-For $X$ a scheme and $U$ open, let $S(U) \subseteq \Gamma(U,\OO_X)$ be the elements which are not zero divisors in $\OO_{X,p}$ for all $p \in U$; the sheafification of $U \mapsto S(U)\inv\Gamma(U,\OO_X)$ is the **sheaf of total quotient rings** $\mck_X$, the analogue of the function field for a non-integral scheme.
-A Cartier divisor is then a global section of $\mck_X\units/\OO_X\units$.
+For $X$ integral with function field $K(X)$, $\mck_X$ is the constant sheaf $K(X)$.
+A Cartier divisor on $X$ is a global section of $\mck_X\units/\OO_X\units$ ([[D-5PQ5W]]).
 :::
