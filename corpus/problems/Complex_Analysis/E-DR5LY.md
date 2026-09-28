@@ -29,7 +29,7 @@ So one can write
 Determine $e^b = \pi$ by considering $\sin(\pi z)/z$ as $z\to 0$, and use that $\sin(\pi z)$ is odd and the product factor is even to conclude $e^{az}$ is even and thus equal to 1.
 This yields
 \[
-\sin(\pi z) = \pi z \prod_{k\geq 1}{1- {z^2\over k^2}}
+\sin(\pi z) = \pi z \prod_{k\geq 1}\qty{1- {z^2\over k^2}}
 .\]
 
 
