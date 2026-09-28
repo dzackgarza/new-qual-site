@@ -107,8 +107,7 @@ Since
 $$
 \trace(f)=\sum_{i=1}^n a_{ii},
 $$
-expanding its square gives the formula. It is an identity in $F$, including
-when $\operatorname{char}F=2$.
+expanding its square gives the formula.
 :::
 
 <1>4. The trace of $f^2$ is
@@ -160,8 +159,7 @@ $$
 2\sum_{i<j}a_{ij}a_{ji}.
 $$
 Adding the formulas from steps <1>3 and <1>4 gives exactly the same
-expression. No division by $2$ occurs, so the argument is valid over every
-field.
+expression.
 :::
 
 <1>6. Q.E.D.
