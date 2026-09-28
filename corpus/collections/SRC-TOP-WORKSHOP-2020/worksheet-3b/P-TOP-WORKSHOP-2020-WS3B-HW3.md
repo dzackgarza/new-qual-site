@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW3
 kind: problem
-title: 'Galois correspondence for universal covers'
+title: 'Galois correspondence for covering spaces'
 classification:
   areas:
   - topology
@@ -27,7 +27,7 @@ State the Galois Correspondence Theorem for a path-connected, locally path-conne
 ::: {.solution}
 Let \(X\) be path connected, locally path connected, and semilocally simply connected, with basepoint \(x_0\). Then:
 
-- Isomorphism classes of **based connected covering spaces**
+- Isomorphism classes of based connected covering spaces
 \[
 (p:E\to X,e_0),\qquad p(e_0)=x_0,
 \]
