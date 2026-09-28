@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-16
 kind: problem
-title: Idempotents modulo 20
+title: Idempotents in $\ZZ_{20}$
 classification:
   areas:
   - algebra
