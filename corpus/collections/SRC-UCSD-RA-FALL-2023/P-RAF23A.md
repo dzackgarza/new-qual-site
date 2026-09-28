@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF23A
 kind: problem
-title: "True/false on distributional derivative of monotone function and countable sets"
+title: "Distributional derivative of a monotone function, and finite interval covers of countable subsets of $[0,1]$"
 classification:
   areas:
   - real-analysis
@@ -30,41 +30,55 @@ $$
 :::
 
 ::: {.solution}
-**Goal:** Determine the truth value of each statement with complete mathematical proofs.
+<1>1. Statement (i) is true: $f'=-\mu$ for a positive Radon measure $\mu$ on $\mathbb R$.
 
-<1>1. Statement (i) is TRUE.
-    ::: {.proof}
-    <2>1. A locally integrable function $f \in L_{\text{loc}}^1(\mathbb{R})$ defines a distribution whose derivative $f' \in \mathcal{D}'(\mathbb{R})$ acts on test functions $\phi \in C_c^\infty(\mathbb{R})$ by
-    $$\langle f', \phi \rangle = -\int_{-\infty}^\infty f(t) \phi'(t)\,dt.$$
-    <2>2. We claim that $-f'$ is a positive distribution: for any test function $\phi \in C_c^\infty(\mathbb{R})$ with $\phi(t) \ge 0$ for all $t$, $\langle -f', \phi \rangle = \int_{-\infty}^\infty f(t) \phi'(t)\,dt \ge 0$.
-    <2>3. Let $\eta \in C_c^\infty(\mathbb{R})$ be a standard non-negative mollifier with $\int \eta = 1$, and let $\eta_\varepsilon(t) = \frac{1}{\varepsilon}\eta(t/\varepsilon)$.
-    For $\varepsilon > 0$, the mollified function $f_\varepsilon = f * \eta_\varepsilon$ is smooth. Since $f$ is monotone non-increasing, for any $h > 0$:
-    $$f_\varepsilon(t + h) - f_\varepsilon(t) = \int_{-\infty}^\infty (f(t + h - s) - f(t - s)) \eta_\varepsilon(s)\,ds \le 0,$$
-    which implies $f_\varepsilon'(t) \le 0$ for all $t \in \mathbb{R}$.
-    <2>4. Integrating by parts on the smooth functions:
-    $$\int_{-\infty}^\infty f_\varepsilon(t) \phi'(t)\,dt = -\int_{-\infty}^\infty f_\varepsilon'(t) \phi(t)\,dt \ge 0,$$
-    because $-f_\varepsilon'(t) \ge 0$ and $\phi(t) \ge 0$.
-    <2>5. Since $f \in L_{\text{loc}}^1(\mathbb{R})$, $f_\varepsilon \to f$ in $L_{\text{loc}}^1(\mathbb{R})$ as $\varepsilon \to 0^+$. Because $\phi'$ is smooth and compactly supported:
-    $$\langle -f', \phi \rangle = \int_{-\infty}^\infty f(t) \phi'(t)\,dt = \lim_{\varepsilon \to 0^+} \int_{-\infty}^\infty f_\varepsilon(t) \phi'(t)\,dt \ge 0.$$
-    <2>6. By the Riesz–Markov–Kakutani / Schwartz Representation Theorem for positive distributions, every positive distribution on $\mathbb{R}$ is represented by a unique positive Radon measure $\mu \ge 0$ on $\mathbb{R}$, so $\langle -f', \phi \rangle = \int_\mathbb{R} \phi\,d\mu$.
-    <2>7. Thus $f' = -\mu$ is a non-positive Radon measure on $\mathbb{R}$.
+<2>1. $f\in L^1_{\text{loc}}(\mathbb R)$, and its distributional derivative is $\langle f',\phi\rangle=-\int_{\mathbb R}f\phi'\,dt$ for $\phi\in C_c^\infty(\mathbb R)$.
 
+::: {.proof}
+A monotone function is bounded on every bounded interval and Borel measurable, so it is locally integrable. The formula is the definition of the distributional derivative.
 :::
-<1>2. Statement (ii) is FALSE.
-    ::: {.proof}
-    <2>1. Consider the set $E = \mathbb{Q} \cap [0, 1]$. The set $E$ is countable and satisfies $E \subset [0, 1]$.
-    <2>2. Suppose $\{I_k\}_{k=1}^n$ is any finite cover of $E$ by open intervals $I_k = (a_k, b_k)$. Then $E \subseteq \bigcup_{k=1}^n I_k$.
-    <2>3. Taking topological closures in $\mathbb{R}$ of both sides:
-    $$[0, 1] = \overline{\mathbb{Q} \cap [0, 1]} = \overline{E} \subseteq \overline{\bigcup_{k=1}^n I_k} = \bigcup_{k=1}^n \overline{I_k} = \bigcup_{k=1}^n [a_k, b_k].$$
-    <2>4. The Lebesgue measure of a closed interval is $m([a_k, b_k]) = b_k - a_k = m(I_k)$.
-    <2>5. By the monotonicity and subadditivity of Lebesgue measure:
-    $$1 = m([0, 1]) \le m\left( \bigcup_{k=1}^n [a_k, b_k] \right) \le \sum_{k=1}^n m([a_k, b_k]) = \sum_{k=1}^n m(I_k).$$
-    <2>6. Thus the sum of lengths $\sum_{k=1}^n m(I_k)$ is at least 1 for any finite open cover of $E$.
-    <2>7. Choosing $\epsilon \in (0, 1)$ shows that no such finite cover can satisfy $\sum_{k=1}^n m(I_k) < \epsilon$.
 
+<2>2. $\int_{\mathbb R}f\phi'\,dt\ge0$ for every $\phi\in C_c^\infty(\mathbb R)$ with $\phi\ge0$.
+
+::: {.proof}
+Let $\eta\in C_c^\infty(\mathbb R)$ be nonnegative with $\int\eta=1$, put $\eta_\varepsilon(t)=\varepsilon^{-1}\eta(t/\varepsilon)$, and let $f_\varepsilon=f*\eta_\varepsilon$, a smooth function.
+For $h>0$,
+$$
+f_\varepsilon(t+h)-f_\varepsilon(t)=\int_{\mathbb R}\bigl(f(t+h-s)-f(t-s)\bigr)\eta_\varepsilon(s)\,ds\le0,
+$$
+because $f$ is non-increasing; hence $f_\varepsilon'\le0$.
+Integration by parts gives
+$$
+\int_{\mathbb R}f_\varepsilon\phi'\,dt=-\int_{\mathbb R}f_\varepsilon'\phi\,dt\ge0.
+$$
+Since $f_\varepsilon\to f$ in $L^1_{\text{loc}}(\mathbb R)$ and $\phi'$ is bounded with compact support, $\int f\phi'=\lim_{\varepsilon\to0^+}\int f_\varepsilon\phi'\ge0$.
 :::
-<1>3. Conclusion:
-    ::: {.proof}
-    Statement (i) is TRUE, and statement (ii) is FALSE.
+
+<2>3. Q.E.D.
+
+::: {.proof}
+By steps <2>1 and <2>2, $-f'$ is a positive distribution. A positive distribution on $\mathbb R$ is given by a unique positive Radon measure $\mu$, $\langle -f',\phi\rangle=\int\phi\,d\mu$ (Riesz–Markov–Kakutani representation theorem applied to $C_c(\mathbb R)$). Hence $f'=-\mu$ is a Radon measure.
+:::
+
+<1>2. Statement (ii) is false: for $E=\mathbb Q\cap[0,1]$, every finite cover of $E$ by open intervals $I_k=(a_k,b_k)$ has $\sum_k m(I_k)\ge1$.
+
+::: {.proof}
+The set $E$ is countable and contained in $[0,1]$.
+If $E\subseteq\bigcup_{k=1}^n I_k$, taking closures gives
+$$
+[0,1]=\overline{E}\subseteq\overline{\bigcup_{k=1}^n I_k}=\bigcup_{k=1}^n[a_k,b_k],
+$$
+because a finite union of closed sets is closed.
+By monotonicity and subadditivity of Lebesgue measure,
+$$
+1=m([0,1])\le\sum_{k=1}^n m([a_k,b_k])=\sum_{k=1}^n m(I_k).
+$$
+So no such cover has total length less than any $\epsilon\in(0,1)$.
+:::
+
+<1>3. Q.E.D.
+
+::: {.proof}
+Steps <1>1 and <1>2 decide statements (i) and (ii).
 :::
 :::
