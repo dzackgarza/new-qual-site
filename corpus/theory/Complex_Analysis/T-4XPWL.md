@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-4XPWL
 kind: theorem
 title: Laurent expansion on an annulus
-slogan: 'Holomorphic on an annulus means a unique two-sided power series there; the negative tail records the isolated singularity.'
+slogan: 'A function holomorphic on an annulus has a unique Laurent expansion there; on a punctured disc, the number of nonzero negative-index terms determines the type of the isolated singularity.'
 classification:
   areas:
   - complex-analysis
@@ -35,5 +35,5 @@ If $r=0$, so that $z_0$ is an [[D-IWIA5|isolated singularity]] of $f$, then the 
 :::
 
 ::: {.concept}
-See Ahlfors, *Complex Analysis*, ch. 5 §1.3, p. 184.
+See [@Ahl79, Chapter 5, Section 1.3, p. 184].
 :::
