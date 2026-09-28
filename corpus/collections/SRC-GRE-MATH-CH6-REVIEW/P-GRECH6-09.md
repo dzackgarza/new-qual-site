@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRECH6-09
 kind: problem
-title: Number of subgroups of Z3 direct sum Z16
+title: Number of subgroups of $\ZZ_3\oplus\ZZ_{16}$
 classification:
   areas:
   - algebra
