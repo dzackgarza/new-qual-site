@@ -23,6 +23,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
 from qualc.diagnostics import DiagnosticCode
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -65,6 +66,20 @@ def fixture_repo(tmp_path: Path, cards: dict[str, str] | None = None) -> Path:
     return work
 
 
+@pytest.fixture(scope="session")
+def built_fixture(tmp_path_factory: pytest.TempPathFactory) -> Path:
+    """The unmodified fixture repo, built once for every test that only reads the output.
+
+    A test that changes the corpus or wiki before building needs its own repo;
+    one that only inspects what the fixtures render shares this build. Reading
+    it must not write into it.
+    """
+    work = fixture_repo(tmp_path_factory.mktemp("built"))
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    return work
+
+
 def run_qualc(command: str, root: Path) -> subprocess.CompletedProcess[str]:
     """The CLI as a reader runs it: diagnostics on stderr in human wording."""
     return _run_qualc(command, root)
@@ -76,7 +91,7 @@ def run_qualc_json(command: str, root: Path) -> subprocess.CompletedProcess[str]
 
 
 def _run_qualc(command: str, root: Path, *flags: str) -> subprocess.CompletedProcess[str]:
-    return subprocess.run([sys.executable, "-m", "qualc", command, "--root", str(root), *flags], capture_output=True, text=True)
+    return subprocess.run([sys.executable, "-m", "qualc", command, "--root", str(root), *flags], capture_output=True, text=True, check=False)
 
 
 def diagnostic_codes(root: Path) -> list[DiagnosticCode]:

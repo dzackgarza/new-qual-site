@@ -19,7 +19,14 @@ from typing import get_args, get_type_hints
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from qualc.diagnostics import DiagnosticCode
-from qualc.model import AuditEvent, Card, CollectionCard, CompilationSource, ProblemCard, TheoremCard
+from qualc.model import (
+    AuditEvent,
+    Card,
+    CollectionCard,
+    CompilationSource,
+    ProblemCard,
+    TheoremCard,
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -291,18 +298,13 @@ def test_unknown_textbook_is_rejected(tmp_path: Path) -> None:
     assert diagnostic_codes(work) == [DiagnosticCode.UNKNOWN_TEXTBOOK]
 
 
-def test_every_card_reaches_a_page(tmp_path: Path) -> None:
+def test_every_card_reaches_a_page(built_fixture: Path) -> None:
     """A kind that indexes but never renders is data the reader cannot get to.
 
     Appearances on a problem page come from collection `problems:` / `sections:`
     lists.
     """
-    work = fixture_repo(tmp_path)
-    subprocess.run(
-        [sys.executable, "-m", "qualc", "build", "--root", str(work)],
-        check=True,
-        capture_output=True,
-    )
+    work = built_fixture
     rendered = {p.stem for p in (work / "build" / "quarto").rglob("*.qmd")}
     rendered_html = {p.stem for p in (work / "build" / "quarto" / "_site").rglob("*.html")}
     ids = {line.split(": ", 1)[1].strip() for p in FIXTURES.glob("*.md") for line in p.read_text().splitlines() if line.startswith("id: ")}
@@ -394,12 +396,11 @@ def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
     assert list(con.execute("select href from collection_provenance where collection_id='SRC-DUMMIT'")) == []
 
 
-def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
+def test_each_source_variant_lands_in_its_own_table(built_fixture: Path) -> None:
     """The collection source is a discriminated union and the catalog mirrors it
     rather than flattening it into one row with columns null for other kinds.
     """
-    work = fixture_repo(tmp_path)
-    assert run_qualc("build", work).returncode == 0
+    work = built_fixture
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
 
     tables = {

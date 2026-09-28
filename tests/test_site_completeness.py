@@ -14,11 +14,14 @@ import json
 import sqlite3
 from pathlib import Path
 
+import pytest
 from conftest import fixture_repo, run_qualc
 
 
-def built(tmp_path: Path) -> tuple[Path, sqlite3.Connection]:
-    work = fixture_repo(tmp_path, {"P-EXTRA.md": PROBLEM, "SRC-SHEET.md": COLLECTION})
+@pytest.fixture(scope="module")
+def built(tmp_path_factory: pytest.TempPathFactory) -> tuple[Path, sqlite3.Connection]:
+    """One build of the fixtures plus an extra problem and sheet, shared by this module."""
+    work = fixture_repo(tmp_path_factory.mktemp("completeness"), {"P-EXTRA.md": PROBLEM, "SRC-SHEET.md": COLLECTION})
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
@@ -73,7 +76,7 @@ A sheet exists to list the problems it set.
 """
 
 
-def test_the_index_holds_exactly_the_problems_the_catalog_has(tmp_path: Path) -> None:
+def test_the_index_holds_exactly_the_problems_the_catalog_has(built: tuple[Path, sqlite3.Connection]) -> None:
     """The canonical problem browser asks the shared index, so it offers exactly what the catalog holds.
 
     Each used to carry its own copy of the problem set -- the browser as rows,
@@ -82,7 +85,7 @@ def test_the_index_holds_exactly_the_problems_the_catalog_has(tmp_path: Path) ->
     it right is that every problem's page is a document filed under `problem`
     and no other page is.
     """
-    site, con = built(tmp_path)
+    site, con = built
     catalog = {r["id"] for r in con.execute("select id from cards where kind='problem'")}
     assert catalog, "the fixture must carry problems for this to mean anything"
 
@@ -104,11 +107,9 @@ def test_the_index_holds_exactly_the_problems_the_catalog_has(tmp_path: Path) ->
     assert 'new URL("problems.html",document.baseURI)' in legacy
 
 
-def test_every_authored_page_is_emitted_once(tmp_path: Path) -> None:
+def test_every_authored_page_is_emitted_once(built_fixture: Path) -> None:
     """A page the wiki holds and the site does not is a page a reader cannot reach."""
-    work = fixture_repo(tmp_path)
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = built_fixture
 
     authored = {p.relative_to(work / "wiki").with_suffix(".html").as_posix() for p in (work / "wiki").rglob("*.md")}
     emitted = {p.relative_to(work / "build" / "quarto" / "_site" / "wiki").as_posix() for p in (work / "build" / "quarto" / "_site" / "wiki").rglob("*.html")}
@@ -118,9 +119,9 @@ def test_every_authored_page_is_emitted_once(tmp_path: Path) -> None:
     assert len(manifest) == len(authored), f"{len(authored)} pages, {len(manifest)} in the manifest"
 
 
-def test_every_collection_problem_is_exposed_by_the_central_source_order_index(tmp_path: Path) -> None:
+def test_every_collection_problem_is_exposed_by_the_central_source_order_index(built: tuple[Path, sqlite3.Connection]) -> None:
     """Every authored collection problem is visible on its source page and in the browser index."""
-    site, con = built(tmp_path)
+    site, con = built
     listed = {
         row[0]
         for row in con.execute(
@@ -145,9 +146,9 @@ def test_every_collection_problem_is_exposed_by_the_central_source_order_index(t
             assert f"tag/{item['id']}.html" in page, "source pages must enumerate their authored problem contents"
 
 
-def test_the_filters_offer_every_value_problem_appearances_carry(tmp_path: Path) -> None:
+def test_the_filters_offer_every_value_problem_appearances_carry(built: tuple[Path, sqlite3.Connection]) -> None:
     """A facet value a problem appearance carries and the browser omits hides that problem."""
-    site, con = built(tmp_path)
+    site, con = built
     payload = json.loads((site / "problems.json").read_text())
     rows = payload["rows"]
 

@@ -124,10 +124,8 @@ def test_every_page_carries_generation_and_repository_footer(tmp_path: Path, mon
     assert source[0].find_all("svg") != []
 
 
-def test_random_problem_topic_selector_is_in_the_shared_header(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+def test_random_problem_topic_selector_is_in_the_shared_header(built_fixture: Path) -> None:
+    work = built_fixture
 
     site = work / "build" / "quarto" / "_site"
     routes = (
@@ -301,9 +299,7 @@ def test_every_internal_card_or_asset_link_resolves_in_the_built_site(tmp_path: 
     assert dead == []
 
 
-def test_the_not_found_page_resolves_its_links_from_the_site_root(
-    tmp_path: Path,
-) -> None:
+def test_the_not_found_page_resolves_its_links_from_the_site_root(built_fixture: Path) -> None:
     """404.html is served for a request at any depth, so `../` cannot be used.
 
     It installs a `<base>` naming the site root instead. The stylesheet and the
@@ -311,10 +307,7 @@ def test_the_not_found_page_resolves_its_links_from_the_site_root(
     them against the address the reader asked for before any script runs, and
     the page arrives unstyled. The same script that sets the base creates them.
     """
-    work = fixture_repo(tmp_path)
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = built_fixture
 
     page = (work / "build" / "quarto" / "_site" / "404.html").read_text()
     head = page.split("</head>", 1)[0]
@@ -442,7 +435,7 @@ def test_the_problem_browser_groups_by_area_and_leads_with_prose_titles(
     assert keyed["P-PACKET-2"] == formula
 
 
-def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) -> None:
+def test_the_source_index_lists_every_collection_under_its_kind(built_fixture: Path) -> None:
     """The listing held only the 338 sittings.
 
     Munkres, 586 problems and the largest collection on the site, was one of the
@@ -450,10 +443,7 @@ def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) 
     or not at all. The index now answers the listing, so what puts a collection
     on it is the filter its own page carries.
     """
-    work = fixture_repo(tmp_path)
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = built_fixture
 
     site = work / "build" / "quarto" / "_site"
     # A sitting is under `exam/`. A compilation, a homework sheet and a textbook
@@ -478,11 +468,8 @@ def test_the_source_index_lists_every_collection_under_its_kind(tmp_path: Path) 
     }
 
 
-def test_problem_browser_uses_datatables_searchpanes(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+def test_problem_browser_uses_datatables_searchpanes(built_fixture: Path) -> None:
+    work = built_fixture
 
     page = read_html(work / "build" / "quarto" / "_site" / "problems.html")
     assert len(page.root.find_all("table", id="problem-table")) == 1
@@ -548,10 +535,8 @@ def test_solution_issue_form_exposes_every_prefilled_card_field() -> None:
     assert {"card-id", "card-title", "source-appearance", "card-url", "solution"} <= fields
 
 
-def test_result_slogan_renders_with_prefilled_suggestion_link(tmp_path: Path) -> None:
-    work = fixture_repo(tmp_path)
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+def test_result_slogan_renders_with_prefilled_suggestion_link(built_fixture: Path) -> None:
+    work = built_fixture
 
     site = work / "build" / "quarto" / "_site"
     page = (site / "tag" / "THM-SYLOW.html").read_text()
@@ -573,11 +558,9 @@ def test_slogan_issue_form_exposes_every_prefilled_card_field() -> None:
     assert {"card-id", "card-title", "card-url", "slogan"} <= fields
 
 
-def test_problem_pagination_is_library_owned(tmp_path: Path) -> None:
+def test_problem_pagination_is_library_owned(built_fixture: Path) -> None:
     """There is no bespoke Show-more implementation beside DataTables paging."""
-    work = fixture_repo(tmp_path)
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
+    work = built_fixture
 
     app = (work / "build" / "quarto" / "_site" / "app.js").read_text()
     table_script = (work / "build" / "quarto" / "_site" / "assets" / "scripts" / "catalog-tables.js").read_text()
