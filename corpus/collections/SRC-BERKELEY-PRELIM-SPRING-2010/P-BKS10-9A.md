@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKS10-9A
 kind: problem
-title: Solve a first-order linear differential equation
+title: Solutions of $xy'+y=x$ for $x>0$
 classification:
   areas:
   - prelim
@@ -25,10 +25,10 @@ audit:
 
 ::: {.problem}
 Find all solutions of
-\[
+$$
 xy'+y=x
-\]
-for \(x>0\).
+$$
+for $x>0$.
 :::
 
 ::: {.solution}
