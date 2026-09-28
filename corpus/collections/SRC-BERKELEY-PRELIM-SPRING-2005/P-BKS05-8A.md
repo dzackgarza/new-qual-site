@@ -27,7 +27,7 @@ audit:
 ---
 
 ::: {.problem}
-Let C and D be two $n \times n$ positive definite Hermitian matrices over C and let $A = C D$ Prove that all eigenvalues of A are positive real numbers.
+Let $C$ and $D$ be two $n\times n$ positive definite Hermitian matrices over $\CC$ and let $A=CD$. Prove that all eigenvalues of $A$ are positive real numbers.
 :::
 
 ::: {.solution}
