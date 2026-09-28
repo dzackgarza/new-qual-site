@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-10
 kind: problem
-title: 'SS 3.10: $\int_0^\infty\frac{\log x}{x^2+a^2}\,dx$'
+title: $\int_0^\infty\frac{\log x}{x^2+a^2}\,dx=\frac{\pi}{2a}\log a$
 classification:
   areas:
   - complex-analysis
