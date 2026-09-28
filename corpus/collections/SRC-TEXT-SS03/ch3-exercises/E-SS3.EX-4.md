@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-4
 kind: problem
-title: 'SS 3.4: $\int_{-\infty}^\infty\frac{x\sin x}{x^2+a^2}\,dx$'
+title: $\int_{-\infty}^\infty\frac{x\sin x}{x^2+a^2}\,dx=\pi e^{-a}$
 classification:
   areas:
   - complex-analysis
