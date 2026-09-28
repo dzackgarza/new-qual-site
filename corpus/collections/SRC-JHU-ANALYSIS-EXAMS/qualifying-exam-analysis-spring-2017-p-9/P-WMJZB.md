@@ -116,7 +116,7 @@ Set
 \[
 u_k:=f_k-f.
 \]
-Then $u_k\rightharpoonup0$. By the allowed boundedness fact, there is $M<\infty$ such that
+Then $u_k\rightharpoonup0$. A weakly convergent sequence is bounded, so there is $M<\infty$ such that
 \[
 \|u_k\|\le M
 \qquad\text{for all }k.
