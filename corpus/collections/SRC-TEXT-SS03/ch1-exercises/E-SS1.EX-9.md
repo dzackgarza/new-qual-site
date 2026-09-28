@@ -82,5 +82,5 @@ so the polar Cauchy--Riemann equations hold throughout
 \[
 r>0,\qquad -\pi<\theta<\pi.
 \]
-Therefore the principal branch $\log z=\log r+i\theta$ is holomorphic on that region.
+These partial derivatives are continuous there, and $(r,\theta)\mapsto re^{i\theta}$ is a $C^1$ diffeomorphism onto the slit plane, so $u$ and $v$ are $C^1$ functions of $(x,y)$ satisfying the Cartesian Cauchy--Riemann equations. A $C^1$ function satisfying the Cauchy--Riemann equations is holomorphic. Therefore the principal branch $\log z=\log r+i\theta$ is holomorphic on that region.
 :::
