@@ -24,15 +24,15 @@ audit:
 ---
 
 ::: {.problem}
-Let \(R\) be a finite ring with identity and characteristic \(p\). For a subring \(S\subseteq R\), not necessarily containing an identity, regard \(S\) as an \(\mathbb F_p\)-vector space.
-For \(a\in S\), let
-\[
+Let $R$ be a finite ring with identity and characteristic $p$. For a subring $S\subseteq R$, not necessarily containing an identity, regard $S$ as an $\FF_p$-vector space.
+For $a\in S$, let
+$$
 T_a^S:S\to S,\qquad T_a^S(x)=ax.
-\]
+$$
 
-(a) Show that if \(1\in S\), then the minimal polynomial of \(T_a^S\) equals the minimal polynomial of \(T_a^R\).
+(a) Show that if $1\in S$, then the minimal polynomial of $T_a^S$ equals the minimal polynomial of $T_a^R$.
 
-(b) Give an example of \(p,R,S,a\) for which the conclusion in (a) is false.
+(b) Give an example of $p,R,S,a$ for which the conclusion in (a) is false.
 :::
 
 ::: {.solution}
