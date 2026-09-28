@@ -3,7 +3,7 @@ schema: qual/card@1
 id: T-CJCKL
 kind: theorem
 title: Rouché's theorem
-slogan: 'A boundary perturbation smaller than the dominant term cannot change the winding number, hence cannot change zeros minus poles inside.'
+slogan: 'If $\abs{m}<\abs{M}$ on $\gamma$, then $M\circ\gamma$ and $(M+m)\circ\gamma$ have the same winding number about $0$, so $M$ and $M+m$ have the same number of zeros minus poles inside $\gamma$.'
 classification:
   areas:
   - complex-analysis
