@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAF21G
 kind: problem
-title: "Heisenberg-type uncertainty inequality via Fourier analysis"
+title: "Heisenberg uncertainty inequality $\\|xf\\|_2\\,\\|\\xi\\hat f\\|_2\\ge\\|f\\|_2^2/(4\\pi)$"
 classification:
   areas:
   - real-analysis
@@ -35,9 +35,9 @@ Here $\hat{f}$ is the Fourier transform of $f$ and $dx, d\xi$ represent the Lebe
 :::
 
 ::: {.solution}
-<1>1. Reduce to the case in which both second moments are finite.
+<1>1. We may assume $f\ne0$ and $\int x^2|f|^2,\int\xi^2|\widehat f|^2<\infty$; then $\|f'\|_2=2\pi\|\xi\widehat f\|_2$.
 ::: {.proof}
-If $f=0$ almost everywhere, the inequality is immediate. For nonzero $f$, if either
+If $f=0$ almost everywhere, both sides are $0$. For nonzero $f$, both second moments are positive; if either
 \[
 \int_{\mathbb R}x^2|f(x)|^2\,dx
 \]
@@ -45,9 +45,9 @@ or
 \[
 \int_{\mathbb R}\xi^2|\widehat f(\xi)|^2\,d\xi
 \]
-is infinite, the desired inequality is automatic. Hence assume both are finite.
+is infinite, the left side is $+\infty$. Hence assume both are finite.
 
-With the Fourier convention used in the exam,
+With the convention $\widehat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi ix\xi}\,dx$,
 \[
 \widehat{f'}(\xi)=2\pi i\xi\widehat f(\xi)
 \]
@@ -57,7 +57,7 @@ in the distributional sense. Plancherel therefore gives
 \]
 :::
 
-<1>2. Establish the basic integration-by-parts inequality.
+<1>2. $\|f\|_2^2\le2\|xf\|_2\|f'\|_2$.
 ::: {.proof}
 Choose $\chi\in C_c^\infty(\mathbb R)$ with $0\le\chi\le1$, $\chi=1$ on $[-1,1]$, and $\operatorname{supp}\chi\subset[-2,2]$. Put
 \[
@@ -106,13 +106,9 @@ Taking absolute values and applying Cauchy--Schwarz yields
 \]
 :::
 
-<1>3. Substitute the Fourier derivative identity.
+<1>3. Q.E.D.
 ::: {.proof}
-Using
-\[
-\|f'\|_2=2\pi\|\xi\widehat f\|_2,
-\]
-Step 2 gives
+Substituting $\|f'\|_2=2\pi\|\xi\widehat f\|_2$ from step <1>1 into step <1>2 gives
 \[
 \|xf\|_2\,\|\xi\widehat f\|_2
 \ge \frac1{4\pi}\|f\|_2^2.
