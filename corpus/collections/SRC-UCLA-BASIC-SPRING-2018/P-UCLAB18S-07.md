@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCLAB18S-07
 kind: problem
-title: Convergence of a sine-over-n series
+title: Convergence of $\sum_n \sin(\pi n/p)/n$
 classification:
   areas:
   - prelim
