@@ -113,6 +113,6 @@ title: "Algebra qual prep week 2: finite group theory"
 
 [[P-DXHST]]
 
-The following problem uses the Sylow theorems.
+### Using the Sylow theorems
 
 [[P-VI6QM]]
