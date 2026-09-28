@@ -97,9 +97,10 @@ fixed and $\sigma=e$.
 
 <1>6. The groups $S_3$ and $S_4$ are not nilpotent.
 ::: {.proof}
-Every nontrivial nilpotent group has nontrivial center: if its upper central
-series reaches the whole group, the first nontrivial term is contained in the
-center. By <1>4 and <1>5, both $S_3$ and $S_4$ are nontrivial with trivial
+Every nontrivial nilpotent group has nontrivial center. Indeed, the upper
+central series is defined by $Z_0=\{e\}$ and $Z_{i+1}/Z_i=Z(G/Z_i)$; if
+$Z(G)=Z_1$ is trivial, induction gives $Z_i=\{e\}$ for all $i$, so the series
+never reaches a nontrivial $G$. By <1>4 and <1>5, both $S_3$ and $S_4$ are nontrivial with trivial
 center. Therefore neither is nilpotent.
 :::
 :::
