@@ -23,36 +23,43 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. $f \ast g$ is continuous.
-<2>1. $|f \ast g(x + h) - f \ast g(x)| \le \|g\|_1 \sup_{z}|f(z + h) - f(z)|$.
+<1>1. $f \ast g$ is uniformly continuous.
+
+<2>1. $|f \ast g(x + h) - f \ast g(x)| \le \|g\|_1 \sup_{z}|f(z + h) - f(z)|$ for all $x, h$.
+
 ::: {.proof}
-$|f\ast g(x+h) - f\ast g(x)| = \left|\int (f(x + h - y) - f(x - y))g(y)\,dy\right| \le \int |f(x+h-y) - f(x-y)|\,|g(y)|\,dy \le \|g\|_1 \sup_z|f(z+h) - f(z)|$.
+$|f\ast g(x+h) - f\ast g(x)| = \left|\int (f(x + h - y) - f(x - y))g(y)\,dy\right| \le \int |f(x+h-y) - f(x-y)|\,|g(y)|\,dy$, and the first factor of the integrand is at most $\sup_z|f(z+h) - f(z)|$.
 :::
+
 <2>2. $\sup_z|f(z + h) - f(z)| \to 0$ as $h \to 0$.
+
 ::: {.proof}
-$f$ is continuous with compact support, hence uniformly continuous.
+A continuous function with compact support is uniformly continuous.
 :::
+
 <2>3. Q.E.D.
+
 ::: {.proof}
-<2>1 and <2>2 give $\|f\ast g(\cdot + h) - f\ast g(\cdot)\|_\infty \to 0$, i.e. uniform, hence pointwise, continuity.
+Steps <2>1 and <2>2 give $\sup_x|f\ast g(x + h) - f\ast g(x)| \to 0$ as $h \to 0$.
 :::
 
 <1>2. $f \ast g$ is compactly supported.
-<2>1. $\supp(f \ast g) \subseteq \overline{\supp f + \supp g}$.
+
+<2>1. $\supp f + \supp g$ is compact.
+
 ::: {.proof}
-if $x \notin \overline{\supp f + \supp g}$, then $(x - \supp g) \cap \supp f = \emptyset$, so $f(x - y) = 0$ for every $y \in \supp g$ and $f\ast g(x) = 0$.
+It is the image of the compact set $\supp f \times \supp g$ under the continuous map $(a,b) \mapsto a + b$.
 :::
-<2>2. $\overline{\supp f + \supp g}$ is compact.
+
+<2>2. Q.E.D.
+
 ::: {.proof}
-$\supp f + \supp g$ is the image of the compact set $\supp f \times \supp g$ under the continuous map $(a,b) \mapsto a + b$, hence compact (and closed).
-:::
-<2>3. Q.E.D.
-::: {.proof}
-<2>1 and <2>2.
+If $x \notin \supp f + \supp g$, then $(x - \supp g) \cap \supp f = \emptyset$, so $f(x - y)g(y) = 0$ for every $y$ and $f\ast g(x) = 0$. So $\theset{f\ast g \neq 0}$ lies in the closed set $\supp f + \supp g$, and so does its closure $\supp(f\ast g)$, which is compact by step <2>1.
 :::
 
 <1>3. Q.E.D.
+
 ::: {.proof}
-<1>1 and <1>2.
+Steps <1>1 and <1>2.
 :::
 :::
