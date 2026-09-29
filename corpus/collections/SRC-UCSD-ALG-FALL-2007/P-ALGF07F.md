@@ -39,7 +39,7 @@ Let $F \geq K$ be an extension field of degree 2.
 
 ::: pf
 
-::: {.pf-step #char-neq-2-galois}
+::: pf-step
 If $\operatorname{char}K\neq2$, every degree-$2$ extension $F/K$ is Galois.
 
 ::: pf-proof
@@ -78,7 +78,7 @@ So $F/K$ is normal and separable, hence Galois.
 
 :::
 
-::: {.pf-step #char-2-galois-example}
+::: pf-step
 There are quadratic Galois extensions in characteristic $2$.
 
 ::: pf-proof
@@ -123,7 +123,7 @@ x\longmapsto x^2.
 
 :::
 
-::: {.pf-step #char-2-not-galois-example}
+::: pf-step
 There are quadratic extensions in characteristic $2$ which are not Galois.
 
 ::: pf-proof
@@ -168,10 +168,6 @@ Hence the minimal polynomial of $u$ is inseparable.
 Therefore $F/K$ is not separable and consequently is not Galois.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#char-neq-2-galois){.pf-ref}, [](#char-2-galois-example){.pf-ref}, and [](#char-2-not-galois-example){.pf-ref} answer parts (a), (b), and (c).
 :::
 
 :::

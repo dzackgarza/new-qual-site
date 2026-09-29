@@ -222,7 +222,7 @@ The two finite sets have the same cardinality, so every ordered pair occurs.
 
 :::
 
-::: {.pf-step #part-ii-all-sums}
+::: pf-step
 For all \(i\neq j\),
 \[
 g(\alpha_i+\alpha_j)=0.
@@ -243,10 +243,6 @@ and \(g\in F[x]\), applying \(\sigma_{ij}\) gives
 In particular this holds for every \(1\le i<j\le n\), as required.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-i-irreducibility){.pf-ref} answers part (i), and step [](#part-ii-all-sums){.pf-ref} answers part (ii).
 :::
 
 :::

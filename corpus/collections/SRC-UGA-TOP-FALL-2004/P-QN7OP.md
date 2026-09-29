@@ -84,7 +84,7 @@ be continuous and nonconstant. Then $g^{-1}(0)$ and $g^{-1}(1)$ are disjoint non
 
 :::
 
-::: {.pf-step #part-a}
+::: pf-step
 Part (a) follows.
 
 ::: pf-proof
@@ -113,7 +113,7 @@ If $f(A)$ and $f(B)$ were disjoint, each would be the complement of the other an
 
 :::
 
-::: {.pf-step #part-b}
+::: pf-step
 Under the hypotheses of part (b), $X$ is connected.
 
 ::: pf-proof
@@ -134,7 +134,7 @@ and both intersections are open in the subspace $F$, because $A$ and $B$ are ope
 
 :::
 
-::: {.pf-step #part-c}
+::: pf-step
 Compactness of $X$ cannot be omitted in part (b).
 
 ::: pf-proof
@@ -149,10 +149,6 @@ It is also bijective, so every fiber is a singleton and hence connected.
 However, the two summands are disjoint nonempty open-and-closed subsets of $X$, so $X$ is disconnected. It is noncompact, since the second summand $(0,\infty)$ is a closed subspace of $X$ and is not compact. Thus compactness in (b) cannot be omitted.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref} and [](#part-c){.pf-ref} answer parts (a), (b) and (c).
 :::
 
 :::

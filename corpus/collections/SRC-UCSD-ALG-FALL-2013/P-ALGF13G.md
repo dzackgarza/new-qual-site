@@ -161,7 +161,7 @@ Since \(\alpha^{-1}\in E\), it follows that
 
 :::
 
-::: {.pf-step #part-b-subfield}
+::: pf-step
 Therefore \(K^{\mathrm{ab}}\) is a subfield of \(L\).
 
 ::: pf-proof
@@ -170,10 +170,6 @@ By step [](#kab-closed-under-arithmetic){.pf-ref} it contains \(K\) and is close
 Hence it is a subfield of \(L\).
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-e-subset-kab){.pf-ref} answers part (a), and step [](#part-b-subfield){.pf-ref} answers part (b).
 :::
 
 :::

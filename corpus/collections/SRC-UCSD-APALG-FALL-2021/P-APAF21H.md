@@ -41,7 +41,7 @@ D_4=\langle r,s\mid r^4=s^2=1,\ srs=r^{-1}\rangle.
 
 ::: pf
 
-::: {.pf-step #d4-conjugacy-classes}
+::: pf-step
 The conjugacy classes are
 \[
 \{1\},\quad\{r^2\},\quad\{r,r^3\},\quad\{s,r^2s\},\quad\{rs,r^3s\}.
@@ -57,7 +57,7 @@ so they are all conjugacy classes.
 
 :::
 
-::: {.pf-step #d4-linear-characters}
+::: pf-step
 There are four one-dimensional characters, determined independently by the choices
 \[
 r\longmapsto\pm1,
@@ -81,7 +81,7 @@ In a one-dimensional representation the relation $srs=r^{-1}$ becomes $r=r^{-1}$
 
 :::
 
-::: {.pf-step #d4-two-dim-character}
+::: pf-step
 The geometric representation of $D_4$ on $\mathbb R^2\subset\mathbb C^2$ has character
 \[
 \chi_2=(2,-2,0,0,0).
@@ -104,7 +104,7 @@ so the representation is irreducible.
 
 :::
 
-::: {.pf-step #d4-character-table}
+::: pf-step
 Hence the complete character table is
 \[
 \begin{array}{c|rrrrr}
@@ -165,7 +165,7 @@ Apply this to the multiplicities $1,1,1,1,2$ from step [](#regular-representatio
 
 :::
 
-::: {.pf-step #artin-wedderburn-decomposition}
+::: pf-step
 Therefore
 \[
 \boxed{\mathbb C[D_4]\cong
@@ -186,10 +186,6 @@ Right multiplication identifies
 The inversion map $g\mapsto g^{-1}$ identifies the group algebra with its opposite algebra. Hence the decomposition in step [](#endomorphism-ring-decomposition){.pf-ref} is also the Artin--Wedderburn decomposition of $\mathbb C[D_4]$ itself.
 :::
 
-:::
-
-::: pf-qed
-Step [](#d4-character-table){.pf-ref} gives the character table of $D_4$; step [](#artin-wedderburn-decomposition){.pf-ref} gives $r$ and $n_1,\ldots,n_r$.
 :::
 
 :::

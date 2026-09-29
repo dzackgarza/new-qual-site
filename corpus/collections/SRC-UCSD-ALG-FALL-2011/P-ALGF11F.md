@@ -74,7 +74,7 @@ Thus \(M\) has at least \([M:K]\) distinct \(K\)-automorphisms.
 
 :::
 
-::: {.pf-step #part-a-galois}
+::: pf-step
 The extension \(M/K\) is Galois.
 
 ::: pf-proof
@@ -136,7 +136,7 @@ Therefore \(M/L\) is Galois.
 
 :::
 
-::: {.pf-step #part-b-mk-not-galois}
+::: pf-step
 The extension \(M/K\) in step [](#part-b-tower-galois){.pf-ref} is not Galois.
 
 ::: pf-proof
@@ -158,10 +158,6 @@ Hence the minimal polynomial \(x^4-2\) does not split over \(M\).
 Thus \(M/\mathbb Q\) is not normal, and therefore is not Galois.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-galois){.pf-ref} answers part (a), and step [](#part-b-mk-not-galois){.pf-ref} answers part (b).
 :::
 
 :::

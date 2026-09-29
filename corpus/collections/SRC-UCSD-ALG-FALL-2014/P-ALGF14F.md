@@ -65,7 +65,7 @@ so \(P\cong s(P)\) is a submodule, indeed a direct summand, of the finite free m
 
 :::
 
-::: {.pf-step #part-i-projective-free}
+::: pf-step
 Every finitely generated projective \(A\)-module is free.
 
 ::: pf-proof
@@ -112,7 +112,7 @@ Since this holds for every nonzero \(a\in A\), the module \(M\) is torsion-free.
 
 :::
 
-::: {.pf-step #part-ii-flat-free}
+::: pf-step
 Every finitely generated flat \(A\)-module is free.
 
 ::: pf-proof
@@ -134,10 +134,6 @@ M\cong A^r,
 so \(M\) is free.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-i-projective-free){.pf-ref} answers part (i), and step [](#part-ii-flat-free){.pf-ref} answers part (ii).
 :::
 
 :::

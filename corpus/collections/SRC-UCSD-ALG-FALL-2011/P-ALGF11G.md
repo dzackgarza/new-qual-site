@@ -98,7 +98,7 @@ Thus \(\Phi\) and \(\Psi\) are inverse isomorphisms.
 
 :::
 
-::: {.pf-step #dimension-elementary-divisors}
+::: pf-step
 Let \(I=(\pi)\) with \(\pi\) irreducible, and write the elementary-divisor decomposition
 \[
 M\cong R^r\oplus
@@ -151,7 +151,7 @@ Summing the contributions proves the formula.
 
 :::
 
-::: {.pf-step #dimension-invariant-factors}
+::: pf-step
 In invariant-factor form, if
 \[
 M\cong R^r\oplus\bigoplus_{j=1}^sR/(d_j),
@@ -173,10 +173,6 @@ This is \(K\) exactly when \(d_j\in I\), equivalently \(\pi\mid d_j\), and is ze
 Adding the free contribution gives the stated formula.
 :::
 
-:::
-
-::: pf-qed
-Step [](#tensor-quotient-iso){.pf-ref} answers part (a); steps [](#dimension-elementary-divisors){.pf-ref} and [](#dimension-invariant-factors){.pf-ref} answer part (b) in elementary-divisor and invariant-factor form.
 :::
 
 :::

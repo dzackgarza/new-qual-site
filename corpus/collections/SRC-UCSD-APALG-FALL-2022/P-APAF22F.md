@@ -55,7 +55,7 @@ By linearity, $\sigma g=g\sigma$ on all of $V\otimes V$.
 
 :::
 
-::: {.pf-step #s2v-is-subrepresentation}
+::: pf-step
 Hence
 \[
 S^2(V)=\ker(\sigma-I)
@@ -121,7 +121,7 @@ Taking the trace gives the stated sum.
 
 :::
 
-::: {.pf-step #chi2-formula}
+::: pf-step
 Therefore
 \[
 \boxed{\chi_2(g)=\frac12\bigl(\chi(g)^2+\chi(g^2)\bigr)}.
@@ -148,10 +148,6 @@ Thus
 by step [](#eigenvalues-on-s2v){.pf-ref}. This proves part (b).
 :::
 
-:::
-
-::: pf-qed
-Step [](#s2v-is-subrepresentation){.pf-ref} answers part (a); step [](#chi2-formula){.pf-ref} answers part (b).
 :::
 
 :::

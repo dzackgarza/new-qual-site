@@ -79,7 +79,7 @@ Hence $\operatorname{im}\partial_1=A\cong\ZZ^4$.
 
 :::
 
-::: {.pf-step #h0-computation}
+::: pf-step
 One has
 \[
 H_0(K_5;\ZZ)\cong\ZZ.
@@ -102,7 +102,7 @@ The first isomorphism theorem therefore gives $\ZZ^5/A\cong\ZZ$.
 
 :::
 
-::: {.pf-step #h1-computation}
+::: pf-step
 One has
 \[
 H_1(K_5;\ZZ)\cong\ZZ^6.
@@ -133,10 +133,6 @@ H_1(K_5;\ZZ)\cong\ZZ^6.
 \]
 :::
 
-:::
-
-::: pf-qed
-Step [](#h0-computation){.pf-ref} and step [](#h1-computation){.pf-ref} compute $H_0(K_5;\ZZ)$ and $H_1(K_5;\ZZ)$.
 :::
 
 :::

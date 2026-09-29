@@ -33,7 +33,7 @@ The first homology group is the abelianization of the fundamental group.
 
 :::
 
-::: {.pf-step #h3-zero}
+::: pf-step
 The manifold is orientable and
 $$
 H_3(M;\mathbb Z)=0.
@@ -77,17 +77,13 @@ The first term is zero by step [](#h1-zero){.pf-ref}, so $H^2(M)$ is isomorphic 
 
 :::
 
-::: {.pf-step #h2-free}
+::: pf-step
 Therefore $H_2(M;\mathbb Z)$ is free abelian.
 
 ::: pf-proof
 Combine the isomorphism in step [](#h2-cohomology-iso){.pf-ref} with step [](#h2-cohomology-free){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#h1-zero){.pf-ref}, [](#h3-zero){.pf-ref} and [](#h2-free){.pf-ref} give $H_1(M;\mathbb Z)=H_3(M;\mathbb Z)=0$ with $H_2(M;\mathbb Z)$ free abelian.
 :::
 
 :::

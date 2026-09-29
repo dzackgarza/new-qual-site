@@ -132,7 +132,7 @@ Thus \(2\) divides a product without dividing either factor, so it is not prime.
 
 :::
 
-::: {.pf-step #not-ufd}
+::: pf-step
 The ring \(A\) is not a UFD.
 
 ::: pf-proof
@@ -141,10 +141,6 @@ By step [](#two-irreducible){.pf-ref}, \(2\) is irreducible in \(A\), while by s
 Therefore \(A\) cannot be a unique factorization domain.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#two-irreducible){.pf-ref}, [](#two-not-prime){.pf-ref}, and [](#not-ufd){.pf-ref} answer parts (i), (ii), and (iii).
 :::
 
 :::

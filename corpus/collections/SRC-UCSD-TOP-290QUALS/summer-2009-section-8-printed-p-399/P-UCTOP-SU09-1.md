@@ -41,7 +41,7 @@ with all other reduced homology zero.
 
 :::
 
-::: {.pf-step #constructed-space}
+::: pf-step
 Set
 $$
 X=M_1\vee M_2\vee S^3.
@@ -62,7 +62,7 @@ Reduced homology of a finite wedge is the direct sum of the reduced homologies o
 
 :::
 
-::: {.pf-step #no-manifold-exists}
+::: pf-step
 No closed orientable $3$-manifold can have these homology groups.
 
 ::: pf-proof
@@ -77,10 +77,6 @@ $$
 because $H_0(M)$ is free. If $H_1(M)\cong\mathbb Z/5$, this Hom group is zero. Thus $H_2(M)=0$, contradicting the required $H_2(M)\cong\mathbb Z/5$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#constructed-space){.pf-ref} answers the first question, and step [](#no-manifold-exists){.pf-ref} answers the second.
 :::
 
 :::

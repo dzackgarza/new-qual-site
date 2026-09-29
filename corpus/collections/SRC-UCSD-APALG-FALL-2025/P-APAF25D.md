@@ -31,7 +31,7 @@ Here \(xe_1^H\in M_n(\mathbb C)\) is the matrix whose first column is \(x\) and 
 
 ::: pf
 
-::: {.pf-step #norm0-is-a-norm}
+::: pf-step
 The function \(\|\cdot\|_0\) is a vector norm on \(\mathbb C^n\).
 
 ::: pf-proof
@@ -75,7 +75,7 @@ This proves part (a).
 
 :::
 
-::: {.pf-step #eigenvalue-bound}
+::: pf-step
 Every eigenvalue \(\lambda\) of \(A\) satisfies
 \[
 |\lambda|\le \|A\|.
@@ -96,10 +96,6 @@ Since \(x\ne0\), one has \(\|x\|_0>0\). Dividing by \(\|x\|_0\) yields
 This proves part (b).
 :::
 
-:::
-
-::: pf-qed
-Steps [](#norm0-is-a-norm){.pf-ref} and [](#norm0-is-compatible){.pf-ref} answer part (a); step [](#eigenvalue-bound){.pf-ref} answers part (b).
 :::
 
 :::

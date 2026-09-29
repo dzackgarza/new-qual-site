@@ -44,7 +44,7 @@ Assume $f_k\to f$ almost everywhere. Prove that $f\in L^2([0,1])$, that $\|f\|_2
 
 ::: pf
 
-::: {.pf-step #limit-in-l2}
+::: pf-step
 The limit belongs to $L^2$ with the same bound.
 
 ::: pf-proof
@@ -106,7 +106,7 @@ f_k\to f\quad\text{in }L^1([0,1]).
 
 :::
 
-::: {.pf-step #integral-convergence}
+::: pf-step
 Conclude convergence of the integrals.
 
 ::: pf-proof
@@ -123,10 +123,6 @@ Step [](#l1-convergence){.pf-ref} yields
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#limit-in-l2){.pf-ref}, [](#l1-convergence){.pf-ref} and [](#integral-convergence){.pf-ref} establish that $f\in L^2([0,1])$, that $\|f\|_2\le M$, and that $\int_0^1 f_k\to\int_0^1 f$.
 :::
 
 :::

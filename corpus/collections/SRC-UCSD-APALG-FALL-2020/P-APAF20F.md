@@ -72,7 +72,7 @@ Since $e_r=s_{(1^r)}$, the first identity is immediate. The other two follow fro
 
 :::
 
-::: {.pf-step #e4-doubled-schur-expansion}
+::: pf-step
 Therefore
 \[
 \boxed{
@@ -172,7 +172,7 @@ The displayed formula is the Weyl dimension formula for the irreducible polynomi
 
 :::
 
-::: {.pf-step #coefficient-value-63}
+::: pf-step
 Hence the coefficient of $s_{(3,2)}(x_1,x_2,x_3)$ in $s_{(5,4,1)}(x_1,x_2,x_3,1,1,1)$ is
 \[
 \boxed{63}.
@@ -185,10 +185,6 @@ By steps [](#coefficient-as-skew-schur){.pf-ref}, [](#skew-schur-541-32-expansio
 \]
 :::
 
-:::
-
-::: pf-qed
-Step [](#e4-doubled-schur-expansion){.pf-ref} answers part (a); step [](#coefficient-value-63){.pf-ref} answers part (b).
 :::
 
 :::

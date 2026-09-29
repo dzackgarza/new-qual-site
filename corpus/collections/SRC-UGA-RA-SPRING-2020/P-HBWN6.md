@@ -51,7 +51,7 @@ Fubini's theorem applied to $H$ then shows that $f\ast g$ is defined almost ever
 
 ::: pf
 
-::: {.pf-step #h-measurable}
+::: pf-step
 Prove that $H$ is measurable.
 
 ::: pf-proof
@@ -76,7 +76,7 @@ is therefore measurable on $\mathbb R^2$.
 
 :::
 
-::: {.pf-step #h-in-l1}
+::: pf-step
 Prove that $H\in L^1(\mathbb R^2)$.
 
 ::: pf-proof
@@ -95,7 +95,7 @@ Hence $H\in L^1(\mathbb R^2)$.
 
 :::
 
-::: {.pf-step #convolution-bound}
+::: pf-step
 Deduce the $L^1$ convolution bound.
 
 ::: pf-proof
@@ -123,10 +123,6 @@ Thus
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#h-measurable){.pf-ref} and [](#h-in-l1){.pf-ref} show $H\in L^1(\mathbb R^2)$, and step [](#convolution-bound){.pf-ref} deduces that $f*g\in L^1(\mathbb R)$ with $\|f*g\|_1\le\|f\|_1\|g\|_1$.
 :::
 
 :::

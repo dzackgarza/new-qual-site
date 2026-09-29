@@ -117,7 +117,7 @@ A=\operatorname{diag}(\lambda_1,\ldots,\lambda_n).
 
 :::
 
-::: {.pf-step #phi-is-normal}
+::: pf-step
 Therefore $\phi$ is normal.
 
 ::: pf-proof
@@ -132,10 +132,6 @@ Normality is invariant under unitary change of orthonormal basis, so
 Hence $\phi$ is normal.
 :::
 
-:::
-
-::: pf-qed
-Step [](#eigenvalue-singular-value-inequality){.pf-ref} answers part (a); step [](#phi-is-normal){.pf-ref} answers part (b).
 :::
 
 :::

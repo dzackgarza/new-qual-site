@@ -102,7 +102,7 @@ Therefore $H$ is unique and hence normal in $G$.
 
 :::
 
-::: {.pf-step #semidirect-decomposition}
+::: pf-step
 One has
 \[
 G\cong H\rtimes\mathbb Z_p.
@@ -164,7 +164,7 @@ Hence $p\nmid |C_G(x)|$.
 
 :::
 
-::: {.pf-step #h-abelian}
+::: pf-step
 The subgroup $H$ is abelian.
 
 ::: pf-proof
@@ -199,10 +199,6 @@ H=Z(H),
 so $H$ is abelian.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#unique-sylow2-normal){.pf-ref} and [](#semidirect-decomposition){.pf-ref} answer part (a), and step [](#h-abelian){.pf-ref} answers part (b).
 :::
 
 :::

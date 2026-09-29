@@ -166,7 +166,7 @@ Therefore $I$ is not principal.
 
 :::
 
-::: {.pf-step #part-a-not-free}
+::: pf-step
 The ideal $I$ is not a free $R$-module.
 
 ::: pf-proof
@@ -225,7 +225,7 @@ Hence
 
 :::
 
-::: {.pf-step #part-b-projective}
+::: pf-step
 The ideal $I$ is projective.
 
 ::: pf-proof
@@ -242,10 +242,6 @@ Thus $I$ is a direct summand of the free module $R^2$, and hence is projective.
 This proves part (b).
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-not-free){.pf-ref} answers part (a), and step [](#part-b-projective){.pf-ref} answers part (b).
 :::
 
 :::

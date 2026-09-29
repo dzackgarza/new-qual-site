@@ -31,7 +31,7 @@ We say that $A \in \mathcal{A}$ is normal if $A$ and $A^*$ commute (example: nor
 
 ::: pf
 
-::: {.pf-step #commutative-implies-normal}
+::: pf-step
 If $\mathcal A$ is commutative, then every element of $\mathcal A$ is normal.
 
 ::: pf-proof
@@ -87,7 +87,7 @@ Adding and subtracting gives $A=B=0$.
 
 :::
 
-::: {.pf-step #algebra-is-commutative}
+::: pf-step
 The algebra $\mathcal A$ is commutative.
 
 ::: pf-proof
@@ -97,10 +97,6 @@ By step [](#commutator-vanishes){.pf-ref}, $[x,z]=[x,y^*]=0$ for every $x,z\in\m
 Hence all elements commute.
 :::
 
-:::
-
-::: pf-qed
-Step [](#commutative-implies-normal){.pf-ref} and step [](#algebra-is-commutative){.pf-ref} give the two directions of the equivalence.
 :::
 
 :::

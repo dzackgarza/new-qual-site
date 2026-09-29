@@ -33,7 +33,7 @@ Let $L:V_1\to V_2$ be a linear map between normed vector spaces. Prove that $L$ 
 
 ::: pf
 
-::: {.pf-step #bound-implies-continuous}
+::: pf-step
 A global linear bound implies continuity.
 
 ::: pf-proof
@@ -52,7 +52,7 @@ Thus $L$ is Lipschitz, hence continuous.
 
 :::
 
-::: {.pf-step #continuity-implies-bound}
+::: pf-step
 Continuity at the origin implies a global bound.
 
 ::: pf-proof
@@ -77,10 +77,6 @@ and therefore
 For $v=0$ both sides of $\|L(v)\|\le\frac2\delta\|v\|$ are $0$. Hence $\|L(v)\|\le c\|v\|$ for every $v\in V_1$, with $c=2/\delta$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#bound-implies-continuous){.pf-ref} and [](#continuity-implies-bound){.pf-ref} give both directions of the equivalence.
 :::
 
 :::

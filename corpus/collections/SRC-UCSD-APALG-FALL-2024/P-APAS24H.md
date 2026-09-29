@@ -112,7 +112,7 @@ Using steps [](#character-formula){.pf-ref}, [](#sum-of-fixed-points){.pf-ref} a
 
 :::
 
-::: {.pf-step #standard-rep-irreducible}
+::: pf-step
 Therefore the standard representation of \(S_n\) is irreducible for \(n\ge2\).
 
 ::: pf-proof
@@ -121,10 +121,6 @@ For a finite group over \(\mathbb C\), a character is irreducible if and only if
 For \(n=1\), the sum-zero subspace is \(0\), so the usual nonzero irreducibility statement is vacuous only after excluding this degenerate case.
 :::
 
-:::
-
-::: pf-qed
-Step [](#character-formula){.pf-ref} computes the character; step [](#standard-rep-irreducible){.pf-ref} proves irreducibility.
 :::
 
 :::

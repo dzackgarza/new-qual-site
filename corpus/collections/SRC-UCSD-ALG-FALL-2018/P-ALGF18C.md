@@ -135,7 +135,7 @@ Thus its kernel, and hence $K_{\mathfrak m}$, is zero.
 
 :::
 
-::: {.pf-step #part-b-m-flat}
+::: pf-step
 The module $M$ is flat over $A$.
 
 ::: pf-proof
@@ -156,10 +156,6 @@ is injective.
 This is precisely the defining flatness condition, proving part (b).
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-m-zero){.pf-ref} answers part (a), and step [](#part-b-m-flat){.pf-ref} answers part (b).
 :::
 
 :::

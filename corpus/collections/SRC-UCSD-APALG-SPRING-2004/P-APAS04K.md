@@ -113,7 +113,7 @@ Hence $G$ is a Gröbner basis.
 
 :::
 
-::: {.pf-step #grobner-basis-elimination}
+::: pf-step
 A Gröbner basis for the elimination ideal $I\cap\mathbb C[x]$ is
 \[
 \boxed{\left\{x^3-\frac43x\right\}.}
@@ -125,7 +125,7 @@ For lex order $y>x$, the elimination theorem says that the elements of a Gröbne
 
 :::
 
-::: {.pf-step #solution-set}
+::: pf-step
 The solution set in $\mathbb C^2$ is
 \[
 \boxed{
@@ -156,7 +156,7 @@ with matching signs. Each listed point satisfies $g_1,g_2,g_3$, hence the origin
 
 :::
 
-::: {.pf-step #quotient-basis}
+::: pf-step
 A vector-space basis of $\mathbb C[x,y]/I$ is
 \[
 \boxed{\{1,x,x^2,y\}.}
@@ -174,10 +174,6 @@ The monomials not divisible by any of these are exactly
 Therefore their residue classes form a basis.
 :::
 
-:::
-
-::: pf-qed
-Step [](#grobner-basis-i){.pf-ref} answers part (a); step [](#grobner-basis-elimination){.pf-ref} answers part (b); step [](#solution-set){.pf-ref} answers part (c); step [](#quotient-basis){.pf-ref} answers part (d).
 :::
 
 :::

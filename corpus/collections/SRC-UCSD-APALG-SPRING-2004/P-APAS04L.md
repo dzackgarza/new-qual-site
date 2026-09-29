@@ -34,7 +34,7 @@ Let $I$ and $J$ be ideals in the polynomial ring $R = k[x_1, \dots, x_n]$ where 
 
 ::: pf
 
-::: {.pf-step #sqrt-sqrt-identity}
+::: pf-step
 One has $\sqrt{\sqrt I}=\sqrt I$.
 
 ::: pf-proof
@@ -44,7 +44,7 @@ Conversely, if $f\in\sqrt{\sqrt I}$, then $f^m\in\sqrt I$ for some $m\ge1$. Henc
 
 :::
 
-::: {.pf-step #sqrt-intersection-product}
+::: pf-step
 One has
 \[
 \sqrt{I\cap J}=\sqrt{IJ}=\sqrt I\cap\sqrt J.
@@ -65,7 +65,7 @@ so $f\in\sqrt{IJ}$. The three containments give equality.
 
 :::
 
-::: {.pf-step #part-c-membership}
+::: pf-step
 For
 \[
 I_1=\langle x^2+x,\ x^2-y\rangle,
@@ -86,7 +86,7 @@ so the class of $x^2-y^2$ in $R/I_1$ is zero. Equivalently, $x^2-y^2\in I_1$.
 
 :::
 
-::: {.pf-step #part-d-membership}
+::: pf-step
 For
 \[
 I_2=\langle x+y,\ x^2-y\rangle,
@@ -119,10 +119,6 @@ x^2+y^2\notin I_2=\sqrt{I_2}.
 \]
 :::
 
-:::
-
-::: pf-qed
-Step [](#sqrt-sqrt-identity){.pf-ref} answers part (a); step [](#sqrt-intersection-product){.pf-ref} answers part (b); step [](#part-c-membership){.pf-ref} answers part (c); step [](#part-d-membership){.pf-ref} answers part (d).
 :::
 
 :::

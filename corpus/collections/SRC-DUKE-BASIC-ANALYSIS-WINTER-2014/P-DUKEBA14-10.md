@@ -32,7 +32,7 @@ f(x)=\frac1{1066}\int_0^x e^{-s^2x^2}f(s)^2\,ds+\sin(2013x).
 
 ::: pf
 
-::: {.pf-step #fixed-point-map}
+::: pf-step
 Define the fixed-point map on a closed ball.
 
 ::: pf-proof
@@ -49,7 +49,7 @@ For $f\in B$, the integrand is continuous, so $Tf\in X$.
 
 :::
 
-::: {.pf-step #maps-into-itself}
+::: pf-step
 Show that $T$ maps $B$ into itself.
 
 ::: pf-proof
@@ -64,7 +64,7 @@ Thus $T(B)\subset B$.
 
 :::
 
-::: {.pf-step #contraction}
+::: pf-step
 Prove that $T$ is a contraction on $B$.
 
 ::: pf-proof
@@ -92,17 +92,13 @@ and $4/1066<1$.
 
 :::
 
-::: {.pf-step #banach-fixed-point}
+::: pf-step
 Apply Banach's fixed-point theorem.
 
 ::: pf-proof
 Since $T$ is a contraction of the complete metric space $B$ into itself, Banach's fixed-point theorem gives a unique $f\in B$ with $Tf=f$. This $f$ is continuous and satisfies the required integral equation.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#fixed-point-map){.pf-ref}, [](#maps-into-itself){.pf-ref}, [](#contraction){.pf-ref} and [](#banach-fixed-point){.pf-ref} produce the required $f$.
 :::
 
 :::

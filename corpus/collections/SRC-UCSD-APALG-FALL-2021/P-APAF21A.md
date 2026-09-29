@@ -39,7 +39,7 @@ Give an example for which $x^TAx=x^TBx$ for all $x\in\mathbb{C}^n$ but $A\neq B$
 
 ::: pf
 
-::: {.pf-step #schur-decomposition-statement}
+::: pf-step
 **Schur decomposition theorem.** For every $A\in M_n(\mathbb C)$ there is a unitary matrix $U$ such that
 \[
 U^HAU=T
@@ -83,7 +83,7 @@ Thus every entry of $C$ vanishes.
 
 :::
 
-::: {.pf-step #hermitian-form-determines-matrix}
+::: pf-step
 Hence, if
 \[
 x^HAx=x^HBx
@@ -101,7 +101,7 @@ for every $x$, so $A-B=0$.
 
 :::
 
-::: {.pf-step #transpose-counterexample}
+::: pf-step
 The analogous assertion with transpose in place of Hermitian transpose is false.
 
 ::: pf-proof
@@ -204,7 +204,7 @@ so the projection is orthogonal.
 
 :::
 
-::: {.pf-step #orthogonal-projection-iff-hermitian}
+::: pf-step
 Thus, among projections $A^2=A$,
 \[
 \boxed{A\text{ is orthogonal}\iff A=A^H}.
@@ -214,10 +214,6 @@ Thus, among projections $A^2=A$,
 Combine steps [](#orthogonal-implies-hermitian){.pf-ref} and [](#hermitian-implies-orthogonal){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Step [](#schur-decomposition-statement){.pf-ref} answers part (a); steps [](#hermitian-form-determines-matrix){.pf-ref} and [](#transpose-counterexample){.pf-ref} answer part (b); step [](#orthogonal-projection-iff-hermitian){.pf-ref} answers part (c).
 :::
 
 :::

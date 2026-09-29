@@ -180,7 +180,7 @@ f^\lambda
 
 :::
 
-::: {.pf-step #scalar-formula-for-d-cycles}
+::: pf-step
 Hence for the class of $d$-cycles,
 \[
 \boxed{
@@ -201,10 +201,6 @@ For $\lambda=(d-r,1^r)$, combine steps [](#scalar-formula-general){.pf-ref}, [](
 \]
 :::
 
-:::
-
-::: pf-qed
-Step [](#scalar-formula-general){.pf-ref} answers part (a); step [](#scalar-formula-for-d-cycles){.pf-ref} answers part (b).
 :::
 
 :::

@@ -73,7 +73,7 @@ Using this relation, every word in $a,b$ can be moved into the form $b^ka^\varep
 
 :::
 
-::: {.pf-step #h-normal-quotient}
+::: pf-step
 The subgroup
 \[
 H=\{1,b^2\}
@@ -99,7 +99,7 @@ G/H\cong C_2\times C_2.
 
 :::
 
-::: {.pf-step #lifted-linear-characters}
+::: pf-step
 The four linear characters lifted from $G/H$ have the following values on the five conjugacy classes:
 \[
 \begin{array}{c|rrrrr}
@@ -118,7 +118,7 @@ The classes $C_3,C_4,C_5$ map respectively to $bH,aH,baH$, giving exactly the fo
 
 :::
 
-::: {.pf-step #two-dim-rep-character}
+::: pf-step
 There is a two-dimensional representation $\rho$ of $G$ given by
 \[
 \rho(a)=
@@ -163,7 +163,7 @@ and each of $\rho(a),\rho(b),\rho(ba)$ has trace $0$. Since character values are
 
 :::
 
-::: {.pf-step #complete-character-table}
+::: pf-step
 The representation $\rho$ is irreducible, and the complete character table of $G$ is
 \[
 \boxed{
@@ -192,10 +192,6 @@ The four linear characters are irreducible automatically. Their degree squares s
 so these five irreducibles exhaust all irreducible representations of $G$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#relation-and-normal-form){.pf-ref} answers part (a); step [](#h-normal-quotient){.pf-ref} answers part (b)(i); step [](#lifted-linear-characters){.pf-ref} answers part (b)(ii); step [](#complete-character-table){.pf-ref} answers part (b)(iii).
 :::
 
 :::

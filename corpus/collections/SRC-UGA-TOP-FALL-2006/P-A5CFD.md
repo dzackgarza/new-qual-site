@@ -55,7 +55,7 @@ b. Prove that if $G$ is closed and $Y$ is compact, then $f$ is continuous.
 
 ::: pf
 
-::: {.pf-step #graph-closed-if-continuous}
+::: pf-step
 If $f:X\to Y$ is continuous and $Y$ is Hausdorff, then its graph $G$ is closed in $X\times Y$.
 
 ::: pf-proof
@@ -156,7 +156,7 @@ Hence $X\setminus\pi_X(F)$ is open and $\pi_X(F)$ is closed.
 
 :::
 
-::: {.pf-step #f-continuous-if-graph-closed}
+::: pf-step
 If $G$ is closed and $Y$ is compact, then $f$ is continuous.
 
 ::: pf-proof
@@ -195,10 +195,6 @@ is closed, so $f^{-1}(W)$ is open.
 This is exactly continuity of $f$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#graph-closed-if-continuous){.pf-ref} answers part (a), and step [](#f-continuous-if-graph-closed){.pf-ref} answers part (b).
 :::
 
 :::

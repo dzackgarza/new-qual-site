@@ -44,7 +44,7 @@ The truth values are
 
 ::: pf
 
-::: {.pf-step #statement-1-false}
+::: pf-step
 Statement 1 is false.
 
 ::: pf-proof
@@ -63,7 +63,7 @@ is the natural inclusion, so it is injective, but \(j\) is not surjective becaus
 
 :::
 
-::: {.pf-step #statement-2-false}
+::: pf-step
 Statement 2 is false.
 
 ::: pf-proof
@@ -82,7 +82,7 @@ is not surjective because \(t^{-1}\) is not in its image.
 
 :::
 
-::: {.pf-step #statement-3-true}
+::: pf-step
 Statement 3 is true.
 
 ::: pf-proof
@@ -107,7 +107,7 @@ with \(a\ne0\), and therefore \(f(x)=ax+b\).
 
 :::
 
-::: {.pf-step #statement-4-false}
+::: pf-step
 Statement 4 is false.
 
 ::: pf-proof
@@ -124,10 +124,6 @@ F^{-1}(u,v)=(u,v-u^2),
 so \(F\) is an isomorphism. But \(F\) is not affine linear because its second coordinate contains the quadratic term \(x^2\).
 :::
 
-:::
-
-::: pf-qed
-Steps [](#statement-1-false){.pf-ref}, [](#statement-2-false){.pf-ref}, [](#statement-3-true){.pf-ref} and [](#statement-4-false){.pf-ref} give the truth values of statements 1 through 4.
 :::
 
 :::

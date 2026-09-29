@@ -103,7 +103,7 @@ Thus $R_1$ has exactly one maximal ideal, namely $(f)/(f^3)$, and is local.
 
 :::
 
-::: {.pf-step #r2-not-local}
+::: pf-step
 The ring
 \[
 R_2=\mathbb Q[X,Y]/(f^3)
@@ -159,7 +159,7 @@ Thus $R_2$ is not local.
 
 :::
 
-::: {.pf-step #prime-not-maximal-in-r2}
+::: pf-step
 The ideal
 \[
 \mathfrak p:=(f)/(f^3)\subset R_2
@@ -187,7 +187,7 @@ It is not a field, so $\mathfrak p$ is not maximal.
 
 :::
 
-::: {.pf-step #no-nonmaximal-primes-in-r1}
+::: pf-step
 There are no prime ideals of $R_1$ which are not maximal.
 
 ::: pf-proof
@@ -202,10 +202,6 @@ But step [](#r1-local){.pf-ref} shows that $\mathfrak m_1$ is maximal.
 Therefore every prime ideal equals $\mathfrak m_1$, so every prime ideal of $R_1$ is maximal.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#r1-local){.pf-ref}, [](#r2-not-local){.pf-ref}, [](#prime-not-maximal-in-r2){.pf-ref}, and [](#no-nonmaximal-primes-in-r1){.pf-ref} answer parts (a), (b), and (c).
 :::
 
 :::

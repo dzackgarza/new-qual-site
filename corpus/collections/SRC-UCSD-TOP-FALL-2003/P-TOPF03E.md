@@ -43,7 +43,7 @@ The orientation character is a homomorphism $\pi_1(M)\to\{\pm1\}$, hence is triv
 
 :::
 
-::: {.pf-step #h3-zero}
+::: pf-step
 Poincaré duality gives
 $$
 H_3(M;\mathbb Z)\cong H^1(M;\mathbb Z)=0.
@@ -77,17 +77,13 @@ has zero left term by step [](#h1-zero){.pf-ref}.
 
 :::
 
-::: {.pf-step #h2-free}
+::: pf-step
 Hence $H_2(M;\mathbb Z)$ is free abelian.
 
 ::: pf-proof
 Because $M$ is compact, $H_2(M)$ is finitely generated. The group $\operatorname{Hom}(H_2(M),\mathbb Z)$ is free abelian, so the isomorphic group $H_2(M)$ is free abelian as well.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#h1-zero){.pf-ref}, [](#h3-zero){.pf-ref} and [](#h2-free){.pf-ref} give $H_1(M;\mathbb Z)=H_3(M;\mathbb Z)=0$ with $H_2(M;\mathbb Z)$ free abelian.
 :::
 
 :::

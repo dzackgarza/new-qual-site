@@ -83,7 +83,7 @@ Thus $\phi$ and $\psi$ are inverse isomorphisms.
 
 :::
 
-::: {.pf-step #r-flat}
+::: pf-step
 The $\mathbb Z$-module $R$ is flat.
 
 ::: pf-proof
@@ -111,7 +111,7 @@ Therefore $R$ is flat over $\mathbb Z$.
 
 :::
 
-::: {.pf-step #r-not-projective}
+::: pf-step
 The $\mathbb Z$-module $R$ is not projective.
 
 ::: pf-proof
@@ -129,7 +129,7 @@ This contradiction shows that $R$ is not projective over $\mathbb Z$.
 
 :::
 
-::: {.pf-step #r-not-injective}
+::: pf-step
 The $\mathbb Z$-module $R$ is not injective.
 
 ::: pf-proof
@@ -155,10 +155,6 @@ But no element of $\mathbb Z[1/2]$ satisfies $3u=1$: if $u=a/2^k$, then $3a=2^k$
 Therefore the required extension does not exist, so $R$ is not injective.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#r-iso-localization){.pf-ref}, [](#r-flat){.pf-ref}, [](#r-not-projective){.pf-ref}, and [](#r-not-injective){.pf-ref} answer parts (a), (b), (c), and (d).
 :::
 
 :::

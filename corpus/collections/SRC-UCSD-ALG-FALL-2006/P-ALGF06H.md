@@ -110,7 +110,7 @@ They generate all six automorphisms, giving the standard presentation of $S_3$.
 
 :::
 
-::: {.pf-step #part-b}
+::: pf-step
 For
 \[
 f_b(x)=(x^2-3)(x^3-7),
@@ -171,7 +171,7 @@ Restriction therefore gives an isomorphism
 
 :::
 
-::: {.pf-step #part-c}
+::: pf-step
 For
 \[
 f_c(x)=x^{15}-2,
@@ -264,7 +264,7 @@ By the Chinese remainder theorem,
 
 :::
 
-::: {.pf-step #part-d}
+::: pf-step
 For
 \[
 f_d(x)=x^3+2x^2+1,
@@ -315,10 +315,6 @@ Hence
 This degree-$6$ field lies inside the degree-$6$ splitting field, so they are equal.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, [](#part-c){.pf-ref} and [](#part-d){.pf-ref} give the splitting fields and Galois groups of (a), (b), (c) and (d).
 :::
 
 :::

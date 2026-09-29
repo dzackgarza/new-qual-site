@@ -63,7 +63,7 @@ By step [](#squarefree-vanishing-polynomials){.pf-ref}, $f,g\in I(\mathrm V(I))$
 
 :::
 
-::: {.pf-step #quotient-finite-dimensional}
+::: pf-step
 The quotient $\mathbb C[x,y]/I$ is finite-dimensional over $\mathbb C$.
 
 ::: pf-proof
@@ -90,7 +90,7 @@ span $\mathbb C[x,y]/I$. Hence
 
 :::
 
-::: {.pf-step #real-counterexample-infinite-dimensional}
+::: pf-step
 The analogous statement over $\mathbb R$ is false.
 
 ::: pf-proof
@@ -136,10 +136,6 @@ Hence the classes of
 are linearly independent in $\mathbb R[x,y]/J$, so this quotient is infinite-dimensional over $\mathbb R$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#quotient-finite-dimensional){.pf-ref} and [](#real-counterexample-infinite-dimensional){.pf-ref} answer parts (a) and (b).
 :::
 
 :::

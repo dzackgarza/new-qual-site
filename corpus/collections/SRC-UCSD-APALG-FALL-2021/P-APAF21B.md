@@ -83,7 +83,7 @@ a convex combination of the eigenvalues. It therefore lies between the smallest 
 
 :::
 
-::: {.pf-step #rayleigh-quotient-minimum}
+::: pf-step
 The minimum of the Rayleigh quotient is
 \[
 \boxed{\lambda_n=\min_{x\ne0}\frac{x^HAx}{x^Hx}}.
@@ -132,7 +132,7 @@ S+iT
 
 :::
 
-::: {.pf-step #hermitian-splitting-unique}
+::: pf-step
 The decomposition in step [](#hermitian-splitting-exists){.pf-ref} is unique.
 
 ::: pf-proof
@@ -180,7 +180,7 @@ Because $S$ and $T$ are Hermitian, the two Rayleigh quotients on the right are r
 
 :::
 
-::: {.pf-step #eigenvalue-bounds-from-splitting}
+::: pf-step
 Therefore every eigenvalue $\lambda$ of $A$ satisfies
 \[
 \boxed{\lambda_n(S)\le\operatorname{Re}\lambda\le\lambda_1(S)}
@@ -194,10 +194,6 @@ and
 Apply the two-sided Rayleigh quotient bound from step [](#rayleigh-quotient-two-sided-bound){.pf-ref} first to the Hermitian matrix $S$ and the vector $v$, then to $T$ and $v$. Substitute the identities from step [](#eigenvalue-real-imag-as-rayleigh-quotients){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Step [](#rayleigh-quotient-minimum){.pf-ref} answers part (a); steps [](#hermitian-splitting-exists){.pf-ref} and [](#hermitian-splitting-unique){.pf-ref} answer part (b); step [](#eigenvalue-bounds-from-splitting){.pf-ref} answers part (c).
 :::
 
 :::

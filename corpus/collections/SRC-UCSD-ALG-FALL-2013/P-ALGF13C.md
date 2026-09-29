@@ -133,7 +133,7 @@ P_i=\mathfrak p.
 
 :::
 
-::: {.pf-step #finitely-many-minimal-primes}
+::: pf-step
 Hence \(A\) has only finitely many minimal prime ideals.
 
 ::: pf-proof
@@ -144,10 +144,6 @@ By step [](#minimal-prime-is-pi){.pf-ref}, every minimal prime belongs to the fi
 Thus there are only finitely many minimal primes.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-every-ideal){.pf-ref} answers part (a), and step [](#finitely-many-minimal-primes){.pf-ref} answers part (b).
 :::
 
 :::

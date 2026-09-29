@@ -166,7 +166,7 @@ setting, proving the final assertion of the remark.
 
 ::: pf
 
-::: {.pf-step #embedding-forces-divisibility}
+::: pf-step
 An embedding forces the stated characteristic and divisibility.
 
 ::: pf-proof
@@ -218,7 +218,7 @@ of $L$, of the claimed cardinality.
 
 :::
 
-::: {.pf-step #k-embeds-in-subfield}
+::: pf-step
 The field $K$ embeds in this subfield $K'$.
 
 ::: pf-proof
@@ -238,10 +238,6 @@ others. Thus in that setting $K=K'$, which proves
 the literal-containment assertion of the remark.
 :::
 
-:::
-
-::: pf-qed
-Step [](#embedding-forces-divisibility){.pf-ref} proves the only-if direction, and step [](#k-embeds-in-subfield){.pf-ref} proves the if direction.
 :::
 
 :::

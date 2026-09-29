@@ -59,7 +59,7 @@ In particular, after decreasing the neighborhood of $0$ if necessary,
 
 :::
 
-::: {.pf-step #divergence-of-first-series}
+::: pf-step
 Prove divergence of the first series.
 
 ::: pf-proof
@@ -76,7 +76,7 @@ Since $\sum k^{-2/3}$ diverges, the comparison test gives
 
 :::
 
-::: {.pf-step #convergence-after-subtracting-linear-term}
+::: pf-step
 Prove convergence after subtracting the linear term.
 
 ::: pf-proof
@@ -99,10 +99,6 @@ for some constant $C'$. Therefore
 Since $\sum k^{-4/3}$ converges, the second series converges absolutely.
 :::
 
-:::
-
-::: pf-qed
-Step [](#divergence-of-first-series){.pf-ref} proves the first series diverges, and step [](#convergence-after-subtracting-linear-term){.pf-ref} proves the second series converges.
 :::
 
 :::

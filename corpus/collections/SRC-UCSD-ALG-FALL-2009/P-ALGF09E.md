@@ -169,7 +169,7 @@ srs=r^{-1}.
 
 :::
 
-::: {.pf-step #galois-group-dihedral}
+::: pf-step
 With the roots labeled
 \[
 1:\alpha,
@@ -213,10 +213,6 @@ Therefore, as a subgroup of $S_4$,
 \]
 :::
 
-:::
-
-::: pf-qed
-Step [](#degree-eight){.pf-ref} answers part (a), and step [](#galois-group-dihedral){.pf-ref} answers part (b).
 :::
 
 :::

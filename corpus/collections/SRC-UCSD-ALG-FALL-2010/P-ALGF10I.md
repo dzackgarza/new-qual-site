@@ -36,7 +36,7 @@ audit:
 
 ::: pf
 
-::: {.pf-step #right-not-left-noetherian}
+::: pf-step
 A right Noetherian ring which is not left Noetherian is
 \[
 R=
@@ -112,7 +112,7 @@ Hence \(R\) is not left Noetherian.
 
 :::
 
-::: {.pf-step #dcc-not-acc}
+::: pf-step
 A module satisfying DCC but not ACC is the Prüfer \(p\)-group
 \[
 C_{p^\infty}:=\bigcup_{n\ge1}\mu_{p^n}\subset\mathbb C^\times,
@@ -150,10 +150,6 @@ Otherwise, after the first proper term, every subsequent term lies inside a fini
 Thus \(C_{p^\infty}\) satisfies DCC but not ACC.
 :::
 
-:::
-
-::: pf-qed
-Step [](#right-not-left-noetherian){.pf-ref} answers part (a), and step [](#dcc-not-acc){.pf-ref} answers part (b).
 :::
 
 :::

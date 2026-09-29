@@ -78,7 +78,7 @@ Subtracting the trivial character gives the displayed row.
 
 :::
 
-::: {.pf-step #standard-sign-twist-character}
+::: pf-step
 Tensoring the standard representation with sign gives
 \[
 \chi^{(2,1,1)}=(3,-1,-1,0,1).
@@ -157,7 +157,7 @@ The character value is the number of $2$-subsets fixed setwise by a representati
 
 :::
 
-::: {.pf-step #decomposition-of-cx}
+::: pf-step
 The decomposition is
 \[
 \boxed{\mathbb C[X]\cong S^{(4)}\oplus S^{(3,1)}\oplus S^{(2,2)}.}
@@ -172,10 +172,6 @@ Adding the corresponding character rows from step [](#s4-character-table){.pf-re
 which is exactly the permutation character from step [](#permutation-character-of-2-subsets){.pf-ref}. Equality of characters over $\mathbb C$ implies isomorphism of representations.
 :::
 
-:::
-
-::: pf-qed
-Step [](#s4-character-table){.pf-ref} gives the character table of $S_4$; step [](#decomposition-of-cx){.pf-ref} gives the decomposition of $\mathbb C[X]$.
 :::
 
 :::

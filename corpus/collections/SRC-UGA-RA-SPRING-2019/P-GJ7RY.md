@@ -44,7 +44,7 @@ Let $C([0,1])$ be the space of continuous real-valued functions on $[0,1]$.
 
 ::: pf
 
-::: {.pf-step #uniform-norm-complete}
+::: pf-step
 Completeness in the uniform norm.
 
 ::: pf-proof
@@ -70,7 +70,7 @@ Thus $f_n\to f$ uniformly. A uniform limit of continuous functions is continuous
 
 :::
 
-::: {.pf-step #l1-norm-not-complete}
+::: pf-step
 Failure of completeness in the $L^1$ norm.
 
 ::: pf-proof
@@ -102,10 +102,6 @@ But limits in $L^1$ are unique up to almost-everywhere equality, so $h=g$ almost
 Therefore $C([0,1])$ is not complete under $\|\cdot\|_1$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#uniform-norm-complete){.pf-ref} and [](#l1-norm-not-complete){.pf-ref} answer parts 1 and 2.
 :::
 
 :::

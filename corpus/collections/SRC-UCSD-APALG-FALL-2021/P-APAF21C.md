@@ -51,7 +51,7 @@ Then $A^{1/2}$ is positive semidefinite and $(A^{1/2})^2=A$. Uniqueness follows 
 
 :::
 
-::: {.pf-step #modulus-definition}
+::: pf-step
 For $A\in M_{m,n}(\mathbb C)$, define
 \[
 |A|=(A^HA)^{1/2}\in M_n(\mathbb C).
@@ -67,7 +67,7 @@ Hence step [](#psd-square-root-definition){.pf-ref} applies.
 
 :::
 
-::: {.pf-step #eigenvalues-of-modulus-are-singular-values}
+::: pf-step
 The eigenvalues of $|A|$ are exactly the singular values of $A$, with multiplicity.
 
 ::: pf-proof
@@ -76,7 +76,7 @@ If the eigenvalues of $A^HA$ are $\mu_1,\ldots,\mu_n\ge0$, then by definition th
 
 :::
 
-::: {.pf-step #psd-iff-modulus-equals-self}
+::: pf-step
 For square $A$, one has
 \[
 A\ge0\iff |A|=A.
@@ -118,7 +118,7 @@ The matrices $\Sigma^H\Sigma$ and $\Sigma\Sigma^H$ are diagonal, with diagonal e
 
 :::
 
-::: {.pf-step #modulus-and-adjoint-modulus-similar}
+::: pf-step
 Therefore $|A|$ and $|A^H|$ have the same nonzero eigenvalues with the same multiplicities, and they are unitarily similar after adjoining zero blocks to equalize sizes.
 
 ::: pf-proof
@@ -141,10 +141,6 @@ If $n\ge m$, similarly
 In particular, when $m=n$, the two matrices are unitarily similar without adding any zero block.
 :::
 
-:::
-
-::: pf-qed
-Step [](#psd-square-root-definition){.pf-ref} answers part (a); step [](#modulus-definition){.pf-ref} answers part (b); step [](#eigenvalues-of-modulus-are-singular-values){.pf-ref} answers part (c); step [](#psd-iff-modulus-equals-self){.pf-ref} answers part (d); step [](#modulus-and-adjoint-modulus-similar){.pf-ref} answers part (e).
 :::
 
 :::

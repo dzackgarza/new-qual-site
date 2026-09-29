@@ -30,7 +30,7 @@ T(X) = \frac12\bigl(X - X^T\bigr).
 
 ::: pf
 
-::: {.pf-step #t-is-linear}
+::: pf-step
 The map $T$ is linear.
 
 ::: pf-proof
@@ -47,7 +47,7 @@ T(aX+bY)
 
 :::
 
-::: {.pf-step #kernel-dimension}
+::: pf-step
 The null space is the space of symmetric matrices:
 \[
 \ker T=\{X\in M_n(\mathbb R):X^T=X\}.
@@ -72,7 +72,7 @@ A symmetric matrix is determined freely by its $n$ diagonal entries and its $n(n
 
 :::
 
-::: {.pf-step #matrix-representation}
+::: pf-step
 For $M_3(\mathbb R)$, use the ordered standard basis
 \[
 \mathcal B=(E_{11},E_{12},E_{13},E_{21},E_{22},E_{23},E_{31},E_{32},E_{33}).
@@ -112,10 +112,6 @@ T(E_{21})=\frac12(E_{21}-E_{12}),
 and similarly for the pairs $(1,3)$ and $(2,3)$. Writing these coordinate vectors as the columns of the matrix in the ordered basis $\mathcal B$ gives exactly the displayed matrix.
 :::
 
-:::
-
-::: pf-qed
-Step [](#t-is-linear){.pf-ref} answers part (a); step [](#kernel-dimension){.pf-ref} answers part (b); step [](#matrix-representation){.pf-ref} answers part (c).
 :::
 
 :::

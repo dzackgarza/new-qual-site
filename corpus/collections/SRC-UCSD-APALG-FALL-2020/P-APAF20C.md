@@ -37,7 +37,7 @@ We write $\alpha^{1/2}$ to denote the unique positive definite square-root of $\
 
 ::: pf
 
-::: {.pf-step #counterexample-product-not-self-adjoint}
+::: pf-step
 The product of two positive definite self-adjoint maps need not be self-adjoint.
 
 ::: pf-proof
@@ -125,7 +125,7 @@ Since $\alpha^{1/2}$ is invertible,
 
 :::
 
-::: {.pf-step #alpha-beta-diagonalizable-positive-eigenvalues}
+::: pf-step
 Therefore $\alpha\beta$ is diagonalizable and all of its eigenvalues are positive real numbers.
 
 ::: pf-proof
@@ -138,10 +138,6 @@ for a corresponding nonzero eigenvector $v$. Thus every eigenvalue of $\gamma$ i
 By step [](#alpha-beta-similar-to-gamma){.pf-ref}, $\alpha\beta$ is similar to $\gamma$. Similar matrices have the same eigenvalues and diagonalizability. Hence $\alpha\beta$ is diagonalizable and all of its eigenvalues are positive real numbers.
 :::
 
-:::
-
-::: pf-qed
-Step [](#counterexample-product-not-self-adjoint){.pf-ref} answers part (a); steps [](#gamma-self-adjoint){.pf-ref} and [](#gamma-positive-definite){.pf-ref} answer part (b); step [](#alpha-beta-diagonalizable-positive-eigenvalues){.pf-ref} answers part (c).
 :::
 
 :::

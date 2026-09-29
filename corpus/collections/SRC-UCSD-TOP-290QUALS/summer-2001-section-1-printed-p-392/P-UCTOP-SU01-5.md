@@ -101,7 +101,7 @@ Since there is one vertex, $\partial_1=0$. The cellular boundary of a $2$-cell r
 
 :::
 
-::: {.pf-step #homology-groups}
+::: pf-step
 Thus
 $$
 H_0(X;\mathbb Z)\cong\mathbb Z,\qquad
@@ -138,7 +138,7 @@ For a closed connected orientable surface, $\chi=2-2g$, so $g=2$.
 
 :::
 
-::: {.pf-step #surface-group-presentation}
+::: pf-step
 Consequently
 $$
 \pi_1(X)\cong
@@ -149,10 +149,6 @@ $$
 By steps [](#is-2-manifold){.pf-ref} and [](#orientable-genus-2){.pf-ref}, $X$ is homeomorphic to the closed orientable genus-$2$ surface. The displayed presentation is its standard surface-group presentation and is therefore isomorphic to the presentation in step [](#pi1-presentation){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#pi1-presentation){.pf-ref} and [](#surface-group-presentation){.pf-ref} give $\pi_1(X)$, step [](#homology-groups){.pf-ref} gives $H_*(X)$, and steps [](#is-2-manifold){.pf-ref} and [](#orientable-genus-2){.pf-ref} show $X$ is an orientable genus-$2$ manifold.
 :::
 
 :::

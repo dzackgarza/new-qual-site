@@ -47,7 +47,7 @@ audit:
 
 ::: pf
 
-::: {.pf-step #l2-dense-in-l1}
+::: pf-step
 Inclusion and density.
 
 ::: pf-proof
@@ -65,7 +65,7 @@ Bounded measurable functions lie in $L^2([0,1])$, and bounded simple functions a
 
 :::
 
-::: {.pf-step #riesz-on-l2}
+::: pf-step
 Restrict $\Lambda$ to $L^2$ and apply Riesz.
 
 ::: pf-proof
@@ -117,7 +117,7 @@ so $g\in L^\infty$ and
 
 :::
 
-::: {.pf-step #extend-to-l1}
+::: pf-step
 Extend the representation to every $L^1$ function.
 
 ::: pf-proof
@@ -143,7 +143,7 @@ for every $f\in L^1$.
 
 :::
 
-::: {.pf-step #norms-equal}
+::: pf-step
 Prove equality of the norms.
 
 ::: pf-proof
@@ -165,10 +165,6 @@ we obtain
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#l2-dense-in-l1){.pf-ref}, [](#riesz-on-l2){.pf-ref}, [](#g-in-linfty){.pf-ref}, [](#extend-to-l1){.pf-ref} and [](#norms-equal){.pf-ref} answer parts 1 and 2.
 :::
 
 :::

@@ -51,7 +51,7 @@ In particular, \(X\) is an affine variety. Moreover, \(X\) is irreducible and
 
 ::: pf
 
-::: {.pf-step #rank-one-equations}
+::: pf-step
 The displayed equations cut out exactly the matrices of rank at most one.
 
 ::: pf-proof
@@ -68,7 +68,7 @@ Thus the displayed zero set is exactly \(X\), so \(X\subseteq\mathbb A^6\) is Za
 
 :::
 
-::: {.pf-step #irreducible}
+::: pf-step
 \(X\) is irreducible.
 
 ::: pf-proof
@@ -91,7 +91,7 @@ Equivalently, \(X\) is the affine cone over the Segre embedding
 
 :::
 
-::: {.pf-step #dimension-four}
+::: pf-step
 \(\dim X=4\).
 
 ::: pf-proof
@@ -119,10 +119,6 @@ The set \(U\) is nonempty and open in the irreducible variety \(X\), hence it is
 This also agrees with the cone description: the Segre variety \(\mathbf P^1\times\mathbf P^2\) has dimension \(1+2=3\), and its affine cone has dimension \(3+1=4\).
 :::
 
-:::
-
-::: pf-qed
-Steps [](#rank-one-equations){.pf-ref}, [](#irreducible){.pf-ref} and [](#dimension-four){.pf-ref} establish that \(X\) is an affine variety, that it is irreducible, and that \(\dim X = 4\).
 :::
 
 :::

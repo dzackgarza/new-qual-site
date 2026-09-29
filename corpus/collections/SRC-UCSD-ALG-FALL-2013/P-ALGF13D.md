@@ -118,7 +118,7 @@ Hence \(P\oplus Q\) is injective.
 
 :::
 
-::: {.pf-step #part-a-iff}
+::: pf-step
 Therefore \(P\oplus Q\) is injective if and only if both summands are injective.
 
 ::: pf-proof
@@ -127,7 +127,7 @@ The forward implication is step [](#sum-injective-implies-summands){.pf-ref} and
 
 :::
 
-::: {.pf-step #part-b-projective}
+::: pf-step
 If \(P\) is projective over \(A\), then \(P\otimes_A B\) is projective over \(B\).
 
 ::: pf-proof
@@ -158,10 +158,6 @@ which is a free \(B\)-module.
 Therefore \(P\otimes_A B\) is a direct summand of a free \(B\)-module, hence is projective as a \(B\)-module.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-iff){.pf-ref} answers part (a), and step [](#part-b-projective){.pf-ref} answers part (b).
 :::
 
 :::

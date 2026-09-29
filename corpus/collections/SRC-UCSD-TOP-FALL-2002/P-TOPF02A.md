@@ -56,7 +56,7 @@ For every lattice point $(m,n)\in\mathbb Z^2$, the component of $p^{-1}(U)$ cont
 
 :::
 
-::: {.pf-step #p-is-covering-map}
+::: pf-step
 Hence $p$ is a covering map.
 
 ::: pf-proof
@@ -99,17 +99,13 @@ The space $E$ is a graph with vertices $\mathbb Z^2$ and unit horizontal and ver
 
 :::
 
-::: {.pf-step #s1vs1-nonabelian}
+::: pf-step
 Thus $\pi_1(S^1\vee S^1)$ is nonabelian.
 
 ::: pf-proof
 By steps [](#p-star-injective){.pf-ref} and [](#sigma-nontrivial){.pf-ref}, $p_*[\sigma]\ne1$. By step [](#commutator-identity){.pf-ref} this element is the commutator $aba^{-1}b^{-1}$. In an abelian group every commutator is trivial, so the fundamental group cannot be abelian.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#p-is-covering-map){.pf-ref}, [](#commutator-identity){.pf-ref} and [](#s1vs1-nonabelian){.pf-ref} answer parts (a), (b) and (c).
 :::
 
 :::

@@ -48,7 +48,7 @@ Passing to the relative cellular complex quotients out all cells of $Y$, leaving
 
 :::
 
-::: {.pf-step #relative-homology}
+::: pf-step
 Therefore
 $$
 H_k(T,Y;\mathbb Z)\cong
@@ -64,7 +64,7 @@ The only nonzero relative chain group is $C_2(T,Y)\cong\mathbb Z$, so all relati
 
 :::
 
-::: {.pf-step #inclusion-map}
+::: pf-step
 The inclusion map satisfies
 $$
 i_*:H_0(Y)\xrightarrow{\cong}H_0(T),
@@ -79,7 +79,7 @@ Both spaces are connected, so $H_0\cong\mathbb Z$ and inclusion induces the iden
 
 :::
 
-::: {.pf-step #homology-iso}
+::: pf-step
 The wedge
 $$
 Z=S^1\vee S^1\vee S^2
@@ -96,7 +96,7 @@ with all higher groups zero, exactly as for the torus.
 
 :::
 
-::: {.pf-step #not-homotopy-equivalent}
+::: pf-step
 Nevertheless $Z$ and $T$ are not homotopy equivalent.
 
 ::: pf-proof
@@ -109,10 +109,6 @@ $$
 The first is nonabelian and the second abelian, so they are not isomorphic. A homotopy equivalence would induce an isomorphism on fundamental groups.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#relative-homology){.pf-ref} and [](#inclusion-map){.pf-ref} answer part (a), and steps [](#homology-iso){.pf-ref} and [](#not-homotopy-equivalent){.pf-ref} answer part (b).
 :::
 
 :::

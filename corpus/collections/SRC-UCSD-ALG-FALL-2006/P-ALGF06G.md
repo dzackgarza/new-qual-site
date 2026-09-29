@@ -55,7 +55,7 @@ u^{-1}=\frac{\bar u}{N(u)}\in R.
 
 ::: pf
 
-::: {.pf-step #unit-group-infinite}
+::: pf-step
 The unit group $R^\times$ is infinite.
 
 ::: pf-proof
@@ -157,7 +157,7 @@ Thus $2$ divides a product without dividing either factor, so $2$ is not prime.
 
 :::
 
-::: {.pf-step #r-is-atomic}
+::: pf-step
 Every nonzero nonunit of $R$ is a finite product of irreducibles.
 
 ::: pf-proof
@@ -192,7 +192,7 @@ Thus $R$ is atomic. As usual, the assertion concerns nonzero nonunits; units are
 
 :::
 
-::: {.pf-step #r-not-ufd}
+::: pf-step
 The ring $R$ is not a unique factorization domain.
 
 ::: pf-proof
@@ -203,10 +203,6 @@ By step [](#two-irreducible){.pf-ref}, the element $2$ is irreducible in $R$, wh
 Therefore $R$ cannot be a unique factorization domain.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#unit-group-infinite){.pf-ref}, [](#two-irreducible){.pf-ref}, [](#two-not-prime){.pf-ref}, [](#r-is-atomic){.pf-ref}, and [](#r-not-ufd){.pf-ref} answer parts (a), (b), (c), (d), and (e).
 :::
 
 :::

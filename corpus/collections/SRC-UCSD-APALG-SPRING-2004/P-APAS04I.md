@@ -26,7 +26,7 @@ Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\mathbb{C})$ 
 
 ::: pf
 
-::: {.pf-step #frobenius-reciprocity}
+::: pf-step
 For any character $\phi$ of $G$,
 \[
 (\chi^{A\uparrow_H^G},\phi)_G
@@ -69,7 +69,7 @@ This is Frobenius reciprocity.
 
 :::
 
-::: {.pf-step #irreducible-induces-reducible-example}
+::: pf-step
 An irreducible representation can induce to a reducible representation.
 
 ::: pf-proof
@@ -90,7 +90,7 @@ Hence $A\uparrow_H^G$ is reducible.
 
 :::
 
-::: {.pf-step #induction-transitivity}
+::: pf-step
 If $K\le H\le G$ and $B$ is a representation of $K$, then
 \[
 B\uparrow_K^G
@@ -138,10 +138,6 @@ This is well-defined over $\mathbb C[K]$: for $k\in K$,
 The maps $\Phi$ and $\Psi$ are inverse to one another and commute with the left $G$-action. Therefore they give an isomorphism of $G$-representations, proving transitivity of induction.
 :::
 
-:::
-
-::: pf-qed
-Step [](#frobenius-reciprocity){.pf-ref} answers part (a); step [](#irreducible-induces-reducible-example){.pf-ref} answers part (b); step [](#induction-transitivity){.pf-ref} answers part (c).
 :::
 
 :::

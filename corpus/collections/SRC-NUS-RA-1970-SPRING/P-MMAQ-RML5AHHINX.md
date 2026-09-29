@@ -33,7 +33,7 @@ In part (a) the interval is $(-1, 1)$.
 
 ::: pf
 
-::: {.pf-step #proof-of-a}
+::: pf-step
 Proof of (a).
 
 ::: pf-proof
@@ -82,7 +82,7 @@ This proves (a).
 
 :::
 
-::: {.pf-step #proof-of-b}
+::: pf-step
 Proof of (b).
 
 ::: pf-proof
@@ -129,10 +129,6 @@ Divide steps [](#mvt-positive-side){.pf-ref} and [](#mvt-negative-side){.pf-ref}
 The two-sided limit $\lim_{x \to 0} (f(x) - f(0))/x$ exists and equals $L$, so $f$ is differentiable at $0$ with $f'(0) = L$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#proof-of-a){.pf-ref} and [](#proof-of-b){.pf-ref} answer parts (a) and (b).
 :::
 
 :::

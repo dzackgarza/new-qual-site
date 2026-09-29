@@ -53,7 +53,7 @@ Since this holds at every $x\in C$, the component $C$ is open.
 
 :::
 
-::: {.pf-step #connected-lpc-path-connected}
+::: pf-step
 If $X$ is connected and locally path connected, then $X$ is path connected.
 
 ::: pf-proof
@@ -119,17 +119,13 @@ Therefore $U$ contains no path-connected neighborhood of $p$, so $X$ is not loca
 
 :::
 
-::: {.pf-step #converse-false}
+::: pf-step
 The converse in part (b) is false.
 
 ::: pf-proof
 By step [](#comb-space-path-connected){.pf-ref} the comb space is path connected, while by step [](#comb-space-not-lpc){.pf-ref} it is not locally path connected.
 :::
 
-:::
-
-::: pf-qed
-Step [](#connected-lpc-path-connected){.pf-ref} answers part (a), and step [](#converse-false){.pf-ref} answers part (b).
 :::
 
 :::

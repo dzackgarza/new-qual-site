@@ -33,7 +33,7 @@ Let $V$ be the subspace spanned by $\{x_i x_j x_k\mid 1\le i<j<k\le 6\}$.
 
 ::: pf
 
-::: {.pf-step #v-is-permutation-module-on-3-subsets}
+::: pf-step
 The $S_6$-module $V$ is the permutation representation on the $3$-element subsets of $\{1,\ldots,6\}$.
 
 ::: pf-proof
@@ -50,7 +50,7 @@ V\cong\operatorname{Ind}_{S_3\times S_3}^{S_6}\mathbf 1.
 
 :::
 
-::: {.pf-step #frobenius-characteristic-of-v}
+::: pf-step
 The Frobenius characteristic of $V$ is
 \[
 \operatorname{ch}(V)=s_{(3)}s_{(3)}.
@@ -62,7 +62,7 @@ Under Frobenius characteristic, induction from $S_3\times S_3$ corresponds to mu
 
 :::
 
-::: {.pf-step #irreducible-decomposition-of-v}
+::: pf-step
 By the Pieri rule,
 \[
 s_{(3)}s_{(3)}
@@ -109,7 +109,7 @@ A subset is fixed by $\sigma$ exactly when it is a union of cycles of $\sigma$. 
 
 :::
 
-::: {.pf-step #character-of-restricted-v}
+::: pf-step
 Thus the character of $V\downarrow_{S_5}^{S_6}$ is
 \[
 \begin{array}{c|rrrrrrr}
@@ -135,10 +135,6 @@ By step [](#restriction-splits-into-3-and-2-subsets){.pf-ref}, the character val
 for the polynomial $\prod_j(1+t^{d_j})$. This gives the displayed row.
 :::
 
-:::
-
-::: pf-qed
-Step [](#irreducible-decomposition-of-v){.pf-ref} answers part (a); step [](#character-of-restricted-v){.pf-ref} answers part (b).
 :::
 
 :::

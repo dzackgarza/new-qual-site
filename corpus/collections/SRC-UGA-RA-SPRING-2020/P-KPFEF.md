@@ -47,7 +47,7 @@ c. If $f: [1, \infty) \to [0, \infty)$ is decreasing with $\lim_{x\to \infty} xf
 
 ::: pf
 
-::: {.pf-step #tails-vanish}
+::: pf-step
 Prove the $L^1$ tails vanish, and give a counterexample to pointwise decay.
 
 ::: pf-proof
@@ -77,7 +77,7 @@ so $f\in L^1(\mathbb R)$. But $f(k)=1$ for every positive integer $k$, hence $f(
 
 :::
 
-::: {.pf-step #decreasing-l1-decay}
+::: pf-step
 If $f$ is decreasing and integrable on $[1,\infty)$, prove $f(x)\to0$ and $xf(x)\to0$.
 
 ::: pf-proof
@@ -112,7 +112,7 @@ and the already established $f(x)\to0$ follows as well.
 
 :::
 
-::: {.pf-step #decay-not-sufficient}
+::: pf-step
 Show that $xf(x)\to0$ does not imply integrability.
 
 ::: pf-proof
@@ -137,10 +137,6 @@ However,
 Hence the condition $xf(x)\to0$ does not imply $f\in L^1([1,\infty))$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#tails-vanish){.pf-ref}, [](#decreasing-l1-decay){.pf-ref} and [](#decay-not-sufficient){.pf-ref} answer parts a, b and c.
 :::
 
 :::

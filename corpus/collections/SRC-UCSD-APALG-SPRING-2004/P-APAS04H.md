@@ -49,7 +49,7 @@ A transitive permutation representation on $G/H$ is the induced representation $
 
 :::
 
-::: {.pf-step #frobenius-image}
+::: pf-step
 The Frobenius image of $\chi^{(2,4)}$ is
 \[
 \boxed{\operatorname{ch}\chi^{(2,4)}=h_2h_2=s_{(2)}s_{(2)}.}
@@ -70,7 +70,7 @@ By step [](#a24-as-induced-trivial){.pf-ref}, this is the Frobenius image of $\c
 
 :::
 
-::: {.pf-step #irreducible-decomposition}
+::: pf-step
 By the Pieri rule,
 \[
 h_2s_{(2)}=s_{(4)}+s_{(3,1)}+s_{(2,2)}.
@@ -88,10 +88,6 @@ Multiplication by $h_2$ adds a horizontal $2$-strip to the Young diagram $(2)$. 
 each with coefficient $1$. Applying the inverse Frobenius characteristic map yields the stated irreducible-character decomposition.
 :::
 
-:::
-
-::: pf-qed
-Step [](#frobenius-image){.pf-ref} answers part (a); step [](#irreducible-decomposition){.pf-ref} answers part (b).
 :::
 
 :::

@@ -58,7 +58,7 @@ Write \(K=k(z)=k(\mathbb P^1)\).
 
 ::: pf
 
-::: {.pf-step #extension-to-p1}
+::: pf-step
 Every Laurent polynomial extends uniquely to \(\mathbb P^1\).
 
 ::: pf-proof
@@ -72,7 +72,7 @@ The punctured affine line is a dense open subset of \(\mathbb P^1\). Since \(\ma
 
 :::
 
-::: {.pf-step #automorphisms-of-gm}
+::: pf-step
 The automorphisms of \(\mathbb G_m\) are \(z\mapsto az^{\pm1}\).
 
 ::: pf-proof
@@ -97,7 +97,7 @@ Each such map has an inverse of the same form, so these and only these are autom
 
 :::
 
-::: {.pf-step #pullback-isomorphism-classification}
+::: pf-step
 Classify when pullback on rational differentials is bijective.
 
 ::: pf-proof
@@ -132,10 +132,6 @@ f(z)=az^{-1}+b,
 with \(a\ne0\). Conversely, each of these functions has degree one, so its pullback on rational differentials is bijective.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#extension-to-p1){.pf-ref}, [](#automorphisms-of-gm){.pf-ref} and [](#pullback-isomorphism-classification){.pf-ref} answer parts 1, 2 and 3.
 :::
 
 :::

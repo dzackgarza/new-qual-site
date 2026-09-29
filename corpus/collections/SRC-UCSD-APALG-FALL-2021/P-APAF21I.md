@@ -39,7 +39,7 @@ Let
 
 ::: pf
 
-::: {.pf-step #dual-group-of-cd}
+::: pf-step
 The dual group $\widehat{C(d)}$ consists of the $d$ characters
 \[
 \chi_j:C(d)\to\mathbb C^\times,
@@ -66,7 +66,7 @@ so $\chi_1$ generates the dual group and has order $d$.
 
 :::
 
-::: {.pf-step #cayley-graph-definition}
+::: pf-step
 A Cayley graph of $C(d)$ requires a connection set $S\subseteq C(d)$. For a simple undirected Cayley graph one assumes
 \[
 1\notin S,
@@ -108,7 +108,7 @@ Thus $\chi_j$ is an eigenvector with the displayed eigenvalue.
 
 :::
 
-::: {.pf-step #character-basis-gives-full-spectrum}
+::: pf-step
 The $d$ character vectors form a basis of the function space $\mathbb C^{C(d)}$, so step [](#character-eigenvector-formula){.pf-ref} gives the full adjacency spectrum.
 
 ::: pf-proof
@@ -126,7 +126,7 @@ Hence the $d$ character vectors are pairwise orthogonal and nonzero. Since the f
 
 :::
 
-::: {.pf-step #cycle-graph-eigenvalues}
+::: pf-step
 For the standard cycle graph, take
 \[
 S=\{\gamma,\gamma^{-1}\}.
@@ -158,7 +158,7 @@ Then the coordinate vector of $\chi_j$ is exactly $v_j$. By step [](#character-e
 
 :::
 
-::: {.pf-step #directed-cycle-eigenvalues}
+::: pf-step
 If instead the intended convention is the directed Cayley graph with the single generator $S=\{\gamma\}$, the same eigenvectors $v_j$ have eigenvalues
 \[
 \lambda_j=\zeta^j.
@@ -168,10 +168,6 @@ If instead the intended convention is the directed Cayley graph with the single 
 This is the formula of step [](#character-eigenvector-formula){.pf-ref} with $S=\{\gamma\}$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#dual-group-of-cd){.pf-ref} answers part (a); steps [](#cayley-graph-definition){.pf-ref}, [](#character-eigenvector-formula){.pf-ref}, [](#character-basis-gives-full-spectrum){.pf-ref}, [](#cycle-graph-eigenvalues){.pf-ref} and [](#directed-cycle-eigenvalues){.pf-ref} answer part (b).
 :::
 
 :::

@@ -96,7 +96,7 @@ m_A(t)=t^3-1.
 
 :::
 
-::: {.pf-step #jordan-form-c}
+::: pf-step
 Over \(\mathbb C\), the Jordan canonical form is
 \[
 \operatorname{diag}(1,\omega,\omega^2),
@@ -152,7 +152,7 @@ m_A(t)=(t-1)^3.
 
 :::
 
-::: {.pf-step #jordan-form-f3}
+::: pf-step
 Over \(\overline{\mathbb F}_3\), the Jordan canonical form is one size-3 block
 \[
 J_3(1)=
@@ -169,10 +169,6 @@ Since the whole vector space has dimension \(3\), there must be exactly one Jord
 Thus the Jordan form is \(J_3(1)\).
 :::
 
-:::
-
-::: pf-qed
-Step [](#jordan-form-c){.pf-ref} answers part (a), and step [](#jordan-form-f3){.pf-ref} answers part (b).
 :::
 
 :::

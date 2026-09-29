@@ -44,7 +44,7 @@ Write \(\chi=\chi^{(4,1)}\).
 
 ::: pf
 
-::: {.pf-step #character-values}
+::: pf-step
 The values of \(\chi\) on the conjugacy classes of \(S_5\), ordered by cycle type
 \[
 (1^5),\ (2,1^3),\ (2^2,1),\ (3,1^2),\ (3,2),\ (4,1),\ (5),
@@ -70,7 +70,7 @@ This agrees with the Murnaghan--Nakayama rule: removing rim hooks from the hook 
 
 :::
 
-::: {.pf-step #restriction-decomposition}
+::: pf-step
 The restriction of \(S^{(4,1)}\) to the Young subgroup \(S_3\times S_2\) decomposes as
 \[
 \boxed{
@@ -116,10 +116,6 @@ Finally,
 and the restricted trivial representation \(S^{(5)}\) is one copy of \(S^{(3)}\boxtimes S^{(2)}\). Subtracting that copy gives the asserted decomposition.
 :::
 
-:::
-
-::: pf-qed
-Step [](#character-values){.pf-ref} answers part (a); step [](#restriction-decomposition){.pf-ref} answers part (b).
 :::
 
 :::

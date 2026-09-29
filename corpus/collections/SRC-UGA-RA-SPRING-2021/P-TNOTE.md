@@ -39,7 +39,7 @@ b. $f_n(x) \converges{n\to\infty}\to 1$ for almost every $x$ \( \iff \)
 
 ::: pf
 
-::: {.pf-step #uniform-conv-eventual-equality}
+::: pf-step
 Uniform convergence is equivalent to eventual equality $E_n=X$.
 
 ::: pf-proof
@@ -54,7 +54,7 @@ Conversely, if $E_n=X$ for every $n\ge N$, then $\chi_{E_n}\equiv1$ for $n\ge N$
 
 :::
 
-::: {.pf-step #ae-convergence-characterization}
+::: pf-step
 Identify the exceptional set for pointwise convergence.
 
 ::: pf-proof
@@ -75,10 +75,6 @@ Therefore $\chi_{E_n}(x)\to1$ for almost every $x$ if and only if
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#uniform-conv-eventual-equality){.pf-ref} and [](#ae-convergence-characterization){.pf-ref} answer parts a and b.
 :::
 
 :::

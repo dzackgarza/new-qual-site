@@ -31,7 +31,7 @@ Prove or disprove each of the following statements.
 
 ::: pf
 
-::: {.pf-step #a-is-true}
+::: pf-step
 (a) is true.
 
 ::: pf-proof
@@ -53,7 +53,7 @@ Step [](#lusin-theorem-application){.pf-ref} is precisely the assertion of (a).
 
 :::
 
-::: {.pf-step #b-is-true}
+::: pf-step
 (b) is true.
 
 ::: pf-proof
@@ -86,7 +86,7 @@ By step [](#ginv-U-is-section){.pf-ref} the preimage of every open set is Borel,
 
 :::
 
-::: {.pf-step #c-is-true}
+::: pf-step
 (c) is true.
 
 ::: pf-proof
@@ -117,10 +117,6 @@ For every $n$, $E \setminus F \subseteq G_n \setminus F_n$, so $m^*(E \setminus 
 Steps [](#forward-direction){.pf-ref} and [](#backward-direction){.pf-ref} give both implications.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#a-is-true){.pf-ref}, [](#b-is-true){.pf-ref}, and [](#c-is-true){.pf-ref} settle parts (a), (b), and (c).
 :::
 
 :::

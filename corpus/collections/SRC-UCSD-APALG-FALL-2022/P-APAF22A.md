@@ -162,7 +162,7 @@ so the nilpotency index is at least $9$. Hence the largest Jordan block has size
 
 :::
 
-::: {.pf-step #jordan-normal-form}
+::: pf-step
 Therefore the Jordan normal form is
 \[
 \boxed{J_9(0)\oplus J_1(0)}.
@@ -176,10 +176,6 @@ By step [](#two-jordan-blocks){.pf-ref} there are exactly two Jordan blocks, and
 Thus the Jordan normal form is $J_9(0)\oplus J_1(0)$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#kernel-dimension-two){.pf-ref} and [](#phi8-e10-nonzero){.pf-ref} answer part (a); step [](#jordan-normal-form){.pf-ref} answers part (b).
 :::
 
 :::

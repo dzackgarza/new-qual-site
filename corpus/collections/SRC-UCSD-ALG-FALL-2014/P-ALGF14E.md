@@ -59,7 +59,7 @@ Thus zero is the only eigenvalue of \(x\).
 
 :::
 
-::: {.pf-step #part-i-xn-zero}
+::: pf-step
 The characteristic polynomial of \(x\) is \(t^n\), and therefore \(x^n=0\).
 
 ::: pf-proof
@@ -94,7 +94,7 @@ Thus a similarity class is determined exactly by a partition of the dimension \(
 
 :::
 
-::: {.pf-step #part-ii-five-classes}
+::: pf-step
 There are exactly five nilpotent similarity classes in \(M_4(\mathbb C)\).
 
 ::: pf-proof
@@ -134,10 +134,6 @@ Therefore there are
 similarity classes of nilpotent matrices in \(M_4(\mathbb C)\).
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-i-xn-zero){.pf-ref} answers part (i), and step [](#part-ii-five-classes){.pf-ref} answers part (ii).
 :::
 
 :::

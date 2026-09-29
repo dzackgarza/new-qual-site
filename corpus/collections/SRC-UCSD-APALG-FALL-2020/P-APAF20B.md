@@ -37,7 +37,7 @@ Prove that $\lambda\in\{-3,-2,-1,1,2,3\}$.
 
 ::: pf
 
-::: {.pf-step #operator-norm-value}
+::: pf-step
 The operator norm is
 \[
 \boxed{\|\psi\|_{\mathrm{op}}=3}.
@@ -49,7 +49,7 @@ For a linear map on a finite-dimensional Hermitian space, the operator norm indu
 
 :::
 
-::: {.pf-step #frobenius-norm-value}
+::: pf-step
 The Frobenius norm is
 \[
 \boxed{\|\psi\|_{\mathrm{Frob}}=\sqrt{14}}.
@@ -95,7 +95,7 @@ Because $\|w\|=\|v\|$, taking square roots yields the claimed inequalities.
 
 :::
 
-::: {.pf-step #eigenvalue-modulus-bound}
+::: pf-step
 If $\lambda$ is an eigenvalue of $\psi$, then
 \[
 \boxed{1\le|\lambda|\le3}.
@@ -115,7 +115,7 @@ Since $v\ne0$, divide by $\|v\|$ to obtain the result.
 
 :::
 
-::: {.pf-step #self-adjoint-eigenvalue-set}
+::: pf-step
 If $\psi$ is self-adjoint, then every eigenvalue belongs to
 \[
 \boxed{\{-3,-2,-1,1,2,3\}}.
@@ -139,10 +139,6 @@ Thus the singular values of $\psi$, which are the nonnegative square roots of th
 Their multiset is $\{3,2,1\}$ by hypothesis. Hence each real eigenvalue has absolute value $1$, $2$, or $3$, so each lies in the displayed set.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#operator-norm-value){.pf-ref} and [](#frobenius-norm-value){.pf-ref} answer part (a); step [](#eigenvalue-modulus-bound){.pf-ref} answers part (b); step [](#self-adjoint-eigenvalue-set){.pf-ref} answers part (c).
 :::
 
 :::

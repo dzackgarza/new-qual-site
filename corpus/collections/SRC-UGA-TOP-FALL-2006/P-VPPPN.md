@@ -267,7 +267,7 @@ The same exact sequence in degree zero says that $H_0(X)$ is the cokernel of the
 
 :::
 
-::: {.pf-step #homology-summary}
+::: pf-step
 Therefore
 \[
 H_k(X;\ZZ)
@@ -284,10 +284,6 @@ Steps [](#h3-h2-computation){.pf-ref} and [](#h1-h0-computation){.pf-ref} give t
 For $k>3$, all adjacent homology groups of $A$, $B$, and $T^2$ in the Mayer--Vietoris sequence vanish by step [](#pieces-homology){.pf-ref}, so $H_k(X)=0$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#mv-theorem){.pf-ref} answers part (a), and step [](#homology-summary){.pf-ref} answers part (b).
 :::
 
 :::

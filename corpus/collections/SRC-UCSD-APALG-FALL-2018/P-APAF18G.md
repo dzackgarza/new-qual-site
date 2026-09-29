@@ -37,7 +37,7 @@ Prove or give a counterexample.
 
 ::: pf
 
-::: {.pf-step #gb-standard-monomials-independent}
+::: pf-step
 The cosets of the monomials not divisible by any $\operatorname{LM}(g_i)$ are linearly independent in $k[x_1,\ldots,x_n]/I$.
 
 ::: pf-proof
@@ -63,7 +63,7 @@ Therefore no nontrivial linear relation among the displayed cosets exists.
 
 :::
 
-::: {.pf-step #non-grobner-counterexample}
+::: pf-step
 The conclusion is false for an arbitrary generating set of $I$ that is not a Gröbner basis.
 
 ::: pf-proof
@@ -99,10 +99,6 @@ in the quotient. A collection containing the zero vector is not linearly indepen
 Indeed, this also shows directly that $G$ is not a Gröbner basis: the polynomial $y\in I$ has leading monomial $y$, which is not divisible by the leading monomial $x$ of either element of $G$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#gb-standard-monomials-independent){.pf-ref} and [](#non-grobner-counterexample){.pf-ref} answer parts (a) and (b).
 :::
 
 :::

@@ -102,7 +102,7 @@ As a set, the semidirect product is $A\times B$, so
 
 :::
 
-::: {.pf-step #g-is-nonabelian}
+::: pf-step
 The group $G$ is nonabelian.
 
 ::: pf-proof
@@ -117,7 +117,7 @@ Hence $ba\ne ab$, so $G$ is nonabelian.
 
 :::
 
-::: {.pf-step #presentation}
+::: pf-step
 The group constructed above has the presentation
 \[
 G\cong
@@ -135,10 +135,6 @@ Thus the presented group has at most $p^3$ elements, while the semidirect produc
 The induced surjection from the presented group onto $G$ is therefore an isomorphism.
 :::
 
-:::
-
-::: pf-qed
-Step [](#order-of-1-plus-p){.pf-ref} answers part (a); steps [](#g-has-order-p3){.pf-ref} and [](#g-is-nonabelian){.pf-ref} answer part (b); step [](#presentation){.pf-ref} answers part (c).
 :::
 
 :::

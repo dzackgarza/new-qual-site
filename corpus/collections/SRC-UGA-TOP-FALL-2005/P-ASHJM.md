@@ -38,7 +38,7 @@ Also, explain briefly how the 2-holed torus and the connected sum $\RP^2 \# \RP^
 
 ::: pf
 
-::: {.pf-step #classification-theorem}
+::: pf-step
 Every compact connected surface without boundary is homeomorphic to exactly one surface of one of the following two types:
 \[
 M_g=\mathop{\#}_{i=1}^{g}T^2
@@ -140,7 +140,7 @@ The CW structure has one $0$-cell, $k$ $1$-cells, and one $2$-cell, so
 
 :::
 
-::: {.pf-step #two-holed-torus}
+::: pf-step
 The 2-holed torus is the orientable genus-two surface
 \[
 M_2=T^2\#T^2,
@@ -159,7 +159,7 @@ The displayed invariants follow from step [](#orientable-invariants){.pf-ref} wi
 
 :::
 
-::: {.pf-step #rp2-connect-sum}
+::: pf-step
 The connected sum
 \[
 \RP^2\#\RP^2
@@ -180,10 +180,6 @@ The standard polygon presentations show that $N_2$ is homeomorphic to the Klein 
 The displayed invariants are the case $k=2$ of step [](#nonorientable-invariants){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Step [](#classification-theorem){.pf-ref} states the classification; steps [](#orientable-invariants){.pf-ref} and [](#nonorientable-invariants){.pf-ref} give the invariants; and steps [](#two-holed-torus){.pf-ref} and [](#rp2-connect-sum){.pf-ref} place the two named surfaces.
 :::
 
 :::

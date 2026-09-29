@@ -76,7 +76,7 @@ for every $i\neq j$, all entries of $A$ vanish.
 
 :::
 
-::: {.pf-step #part-b-example}
+::: pf-step
 For part (b), the matrix
 \[
 A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}
@@ -93,7 +93,7 @@ The matrix is visibly nonzero.
 
 :::
 
-::: {.pf-step #normal-implies-norm-equal}
+::: pf-step
 If $A$ is normal, then $\|Ax\|_2=\|A^Hx\|_2$ for every $x\in\mathbb C^n$.
 
 ::: pf-proof
@@ -124,7 +124,7 @@ Thus $A$ is normal.
 
 :::
 
-::: {.pf-step #normal-implies-inner-product-equal}
+::: pf-step
 If $A$ is normal, then $(Ax,Ay)=(A^Hx,A^Hy)$ for every $x,y\in\mathbb C^n$.
 
 ::: pf-proof
@@ -136,7 +136,7 @@ Using the standard Hermitian inner product $(u,v)=u^Hv$ and $A^HA=AA^H$,
 
 :::
 
-::: {.pf-step #inner-product-equal-implies-normal}
+::: pf-step
 Conversely, if $(Ax,Ay)=(A^Hx,A^Hy)$ for all $x,y$, then $A$ is normal.
 
 ::: pf-proof
@@ -147,10 +147,6 @@ Setting $y=x$ gives
 for every $x$. By step [](#norm-equal-implies-normal){.pf-ref}, $A$ is normal.
 :::
 
-:::
-
-::: pf-qed
-Step [](#a-is-zero){.pf-ref} answers part (a); step [](#part-b-example){.pf-ref} answers part (b); steps [](#normal-implies-norm-equal){.pf-ref} and [](#norm-equal-implies-normal){.pf-ref} answer part (c); steps [](#normal-implies-inner-product-equal){.pf-ref} and [](#inner-product-equal-implies-normal){.pf-ref} answer part (d).
 :::
 
 :::

@@ -67,7 +67,7 @@ Expanding the determinant along the first row gives
 
 :::
 
-::: {.pf-step #part-a-irreducible}
+::: pf-step
 The polynomial $x^3+y$ is irreducible in $\mathbb Q(y)[x]$.
 
 ::: pf-proof
@@ -117,7 +117,7 @@ m_A(x)=x^3+y.
 
 :::
 
-::: {.pf-step #part-b-diagonalizable}
+::: pf-step
 The matrix $A$ is diagonalizable over the algebraic closure of $\mathbb Q(y)$.
 
 ::: pf-proof
@@ -156,7 +156,7 @@ m_A(x)=x^3+y.
 
 :::
 
-::: {.pf-step #part-c-not-diagonalizable}
+::: pf-step
 The matrix $A$ is not diagonalizable over the algebraic closure of $\mathbb F_3(y)$.
 
 ::: pf-proof
@@ -178,10 +178,6 @@ Therefore $A$ is not diagonalizable over $\overline F$.
 This proves part (c).
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-irreducible){.pf-ref} answers part (a); step [](#part-b-diagonalizable){.pf-ref} answers part (b); and step [](#part-c-not-diagonalizable){.pf-ref} answers part (c).
 :::
 
 :::

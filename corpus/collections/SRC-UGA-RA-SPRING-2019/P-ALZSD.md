@@ -46,7 +46,7 @@ for every Borel set $E$.
 
 ::: pf
 
-::: {.pf-step #continuity-from-above}
+::: pf-step
 Continuity from above.
 
 ::: pf-proof
@@ -80,7 +80,7 @@ The tail of the convergent series tends to $0$, hence
 
 :::
 
-::: {.pf-step #eps-delta-absolute-continuity}
+::: pf-step
 Absolute continuity in the epsilon--delta sense.
 
 ::: pf-proof
@@ -123,10 +123,6 @@ for every $N$. Therefore
 a contradiction. Thus the desired $\delta$ exists.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#continuity-from-above){.pf-ref} and [](#eps-delta-absolute-continuity){.pf-ref} answer parts 1 and 2.
 :::
 
 :::

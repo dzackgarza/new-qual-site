@@ -44,7 +44,7 @@ This is exactly the conclusion of the multivariate division algorithm with divis
 
 :::
 
-::: {.pf-step #monomials-span-quotient}
+::: pf-step
 The images of the monomials in \(\mathcal M\) span \(k[x_1,\ldots,x_n]/I\).
 
 ::: pf-proof
@@ -76,17 +76,13 @@ What can fail without the Gröbner hypothesis is **linear independence** (and un
 
 :::
 
-::: {.pf-step #answer-to-part-b}
+::: pf-step
 Hence the answer to part (b) is yes: Gröbnerness is not required for the spanning assertion.
 
 ::: pf-proof
 This is precisely step [](#spanning-holds-without-grobner){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Step [](#monomials-span-quotient){.pf-ref} answers part (a); step [](#answer-to-part-b){.pf-ref} answers part (b).
 :::
 
 :::

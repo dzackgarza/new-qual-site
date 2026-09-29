@@ -57,7 +57,7 @@ so $C$ is closed under multiplication and is therefore a subring of $R$.
 
 :::
 
-::: {.pf-step #phi-is-surjective-homomorphism}
+::: pf-step
 The map
 \[
 \phi:\mathbb Z\to C,
@@ -80,7 +80,7 @@ Also $\phi(1)=1$. By step [](#c-equals-integer-multiples){.pf-ref}, every elemen
 
 :::
 
-::: {.pf-step #c-is-z-or-zp}
+::: pf-step
 Either
 \[
 C\cong\mathbb Z
@@ -113,10 +113,6 @@ C\cong\mathbb Z/\ker\phi.
 Therefore either $C\cong\mathbb Z$, or $C\cong\mathbb Z/p\mathbb Z=\mathbb Z_p$ for some prime $p$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#c-equals-integer-multiples){.pf-ref} answers part (a); step [](#phi-is-surjective-homomorphism){.pf-ref} answers part (b); step [](#c-is-z-or-zp){.pf-ref} answers part (c).
 :::
 
 :::

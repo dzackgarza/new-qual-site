@@ -119,7 +119,7 @@ Hence $X=\overline G$.
 
 :::
 
-::: {.pf-step #x-connected}
+::: pf-step
 The space $X$ is connected.
 
 ::: pf-proof
@@ -205,7 +205,7 @@ Therefore no such path exists.
 
 :::
 
-::: {.pf-step #x-not-path-connected}
+::: pf-step
 Hence $X$ is not path connected.
 
 ::: pf-proof
@@ -214,10 +214,6 @@ By step [](#no-path-joins){.pf-ref}, no point of $L$ can be joined by a path in 
 Therefore $X$ is not path connected.
 :::
 
-:::
-
-::: pf-qed
-Step [](#x-connected){.pf-ref} and step [](#x-not-path-connected){.pf-ref} show that $X$ is connected but not path connected.
 :::
 
 :::

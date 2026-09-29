@@ -100,7 +100,7 @@ Combine steps [](#frobenius-characteristic-of-induction){.pf-ref}, [](#pieri-pro
 
 :::
 
-::: {.pf-step #dimension-of-endomorphism-ring}
+::: pf-step
 The endomorphism algebra has dimension
 \[
 \boxed{\dim_{\mathbb C}\operatorname{End}_{S_7}(V)=8}.
@@ -126,10 +126,6 @@ By step [](#decomposition-of-v){.pf-ref} the multiplicities are $1,1,2,1,1$, hen
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#decomposition-of-v){.pf-ref} and [](#dimension-of-endomorphism-ring){.pf-ref} answer parts (a) and (b).
 :::
 
 :::

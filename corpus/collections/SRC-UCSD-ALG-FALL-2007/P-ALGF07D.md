@@ -36,7 +36,7 @@ audit:
 
 ::: pf
 
-::: {.pf-step #part-a-example}
+::: pf-step
 Part (a) holds with
 \[
 M=\mathbb Z,
@@ -139,7 +139,7 @@ has free rank $r$, the same elementary divisors $(x-a)^e$ with multiplicities $m
 
 :::
 
-::: {.pf-step #complexification-determines-isomorphism}
+::: pf-step
 The isomorphism type of a finitely generated $\mathbb R[x]$-module is determined by its complexification.
 
 ::: pf-proof
@@ -167,10 +167,6 @@ M\cong N.
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#part-a-example){.pf-ref}, [](#complexification-decomposition){.pf-ref}, and [](#complexification-determines-isomorphism){.pf-ref} answer parts (a), (b), and (c).
 :::
 
 :::

@@ -73,7 +73,7 @@ is a well-defined bijective homomorphism $(\mathbb Z/n\mathbb Z)^\times\to\opera
 
 :::
 
-::: {.pf-step #aut-abelian}
+::: pf-step
 The group $\operatorname{Aut}(G)$ is abelian.
 
 ::: pf-proof
@@ -83,7 +83,7 @@ By step [](#aut-iso-to-units){.pf-ref}, $\operatorname{Aut}(G)$ is isomorphic to
 
 :::
 
-::: {.pf-step #aut-order-phi-n}
+::: pf-step
 The group $\operatorname{Aut}(G)$ has order $\varphi(n)$.
 
 ::: pf-proof
@@ -102,10 +102,6 @@ Using step [](#aut-iso-to-units){.pf-ref},
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#aut-abelian){.pf-ref} and [](#aut-order-phi-n){.pf-ref} show that $\operatorname{Aut}(G)$ is abelian of order $\varphi(n)$.
 :::
 
 :::

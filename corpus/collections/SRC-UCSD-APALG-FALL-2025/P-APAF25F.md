@@ -37,7 +37,7 @@ If \(\lambda\) is an eigenvalue of \(\varphi(g)\), then \(\lambda^m=1\), so \(|\
 
 :::
 
-::: {.pf-step #character-bound}
+::: pf-step
 For every \(g\in G\),
 \[
 |\chi(g)|\le d.
@@ -58,7 +58,7 @@ By step [](#eigenvalues-modulus-one){.pf-ref}, \(|\lambda_j|=1\) for every \(j\)
 
 :::
 
-::: {.pf-step #bound-is-sharp}
+::: pf-step
 The bound is sharp.
 
 ::: pf-proof
@@ -77,10 +77,6 @@ Hence
 showing that equality can occur.
 :::
 
-:::
-
-::: pf-qed
-Step [](#character-bound){.pf-ref} proves the bound; step [](#bound-is-sharp){.pf-ref} shows it is sharp.
 :::
 
 :::

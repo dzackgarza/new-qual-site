@@ -224,7 +224,7 @@ Thus $\widehat X$ is compact.
 
 :::
 
-::: {.pf-step #x-dense-in-xhat}
+::: pf-step
 The subspace $X$ is dense in $\widehat X$.
 
 ::: pf-proof
@@ -270,7 +270,7 @@ Thus $\widehat X$ is Hausdorff.
 
 :::
 
-::: {.pf-step #printed-part-b-false}
+::: pf-step
 Under the usual convention that compact spaces need not be Hausdorff, part (b) is false as printed.
 
 ::: pf-proof
@@ -353,7 +353,7 @@ Thus part (b) is correct after adding the missing Hausdorff hypothesis on $Y$.
 
 :::
 
-::: {.pf-step #compactify-open-interval}
+::: pf-step
 The one-point compactification of $(0,1)$ is homeomorphic to $S^1$.
 
 ::: pf-proof
@@ -375,7 +375,7 @@ By step [](#corrected-uniqueness){.pf-ref}, its one-point compactification is th
 
 :::
 
-::: {.pf-step #compactify-r2}
+::: pf-step
 The one-point compactification of $\RR^2$ is homeomorphic to $S^2$.
 
 ::: pf-proof
@@ -391,10 +391,6 @@ Applying step [](#corrected-uniqueness){.pf-ref} gives
 This proves part (c).
 :::
 
-:::
-
-::: pf-qed
-Step [](#x-dense-in-xhat){.pf-ref} answers part (a), steps [](#printed-part-b-false){.pf-ref} and [](#corrected-uniqueness){.pf-ref} answer part (b), and steps [](#compactify-open-interval){.pf-ref} and [](#compactify-r2){.pf-ref} answer part (c).
 :::
 
 :::

@@ -2364,7 +2364,7 @@ The source states structure only. The filter assigns the step numbers, prints th
 - A step is a `::: pf-step` block. Its first paragraph is the claim.
 - A step proved directly holds one `::: pf-proof` block written in complete sentences.
 - A step proved by substeps holds one `::: pf-proof` block that contains those substeps.
-- The last step at each level is a `::: pf-qed` block. It holds the proof that the steps of that level establish its goal and cites them. It has no claim of its own.
+- The filter labels the last step at each level QED: that step proves the level's goal. When the goal needs an argument but no claim of its own, write the last step as a `::: pf-qed` block holding that argument. Never write a `pf-qed` sentence that only says the earlier steps answer the question.
 - Give a step an identifier, `::: {.pf-step #kebab-case-name}`, only when another step cites it. The name says what the step claims.
 - Cite a step as `step [](#name){.pf-ref}`; the filter fills in the number. Never write “above” or “the previous step” (`PROSE-03`).
 - Put a blank line before and after every fence line.
@@ -2396,17 +2396,13 @@ This is the double-angle identity.
 
 :::
 
-::: {.pf-step #value}
+::: pf-step
 $u(0) = \boxed{1/2}$.
 
 ::: pf-proof
 By the mean value property, $u(0)$ is the average of $\cos^2\theta$ over $[0,2\pi]$, which step [](#double-angle){.pf-ref} evaluates.
 :::
 
-:::
-
-::: pf-qed
-Step [](#value){.pf-ref} gives the requested value.
 :::
 
 :::

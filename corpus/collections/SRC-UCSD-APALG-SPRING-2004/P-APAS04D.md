@@ -36,7 +36,7 @@ Let $G$ and $H$ be a finite groups, $A:G\to GL(n,\mathbb{C})$ be a representatio
 
 ::: pf
 
-::: {.pf-step #define-a-times-b}
+::: pf-step
 Let $V=\mathbb C^n$ and $W=\mathbb C^m$ be the representation spaces of $A$ and $B$.
 Define
 \[
@@ -121,7 +121,7 @@ By step [](#inner-product-of-external-products){.pf-ref} and orthogonality of ir
 
 :::
 
-::: {.pf-step #external-products-exhaust-irr}
+::: pf-step
 These external products exhaust all irreducible representations of $G\times H$.
 
 ::: pf-proof
@@ -143,10 +143,6 @@ By step [](#external-products-pairwise-noniso){.pf-ref} we already have exactly 
 Thus every irreducible representation of $G\times H$ is of the form $A\times B$.
 :::
 
-:::
-
-::: pf-qed
-Step [](#define-a-times-b){.pf-ref} answers part (a); step [](#a-times-b-irreducible){.pf-ref} answers part (b); step [](#external-products-exhaust-irr){.pf-ref} answers part (c).
 :::
 
 :::

@@ -42,7 +42,7 @@ Part (b) is false as stated. A counterexample satisfying all printed hypotheses 
 
 ::: pf
 
-::: {.pf-step #part-a-nilpotent}
+::: pf-step
 The matrix $g-I$ is nilpotent.
 
 ::: pf-proof
@@ -63,7 +63,7 @@ Hence $g-I$ is nilpotent, proving part (a).
 
 :::
 
-::: {.pf-step #part-b-counterexample}
+::: pf-step
 The conclusion $g^p=I$ in part (b) does not follow from the stated hypotheses.
 
 ::: pf-proof
@@ -117,10 +117,6 @@ p=2\le3=n.
 This disproves part (b) as printed.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-nilpotent){.pf-ref} answers part (a), and step [](#part-b-counterexample){.pf-ref} answers part (b).
 :::
 
 :::

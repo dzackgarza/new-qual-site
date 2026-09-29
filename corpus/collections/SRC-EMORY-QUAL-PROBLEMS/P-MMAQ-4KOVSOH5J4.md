@@ -112,7 +112,7 @@ $G_{gx} = g G_x g^{-1}$.
 
 :::
 
-::: {.pf-step #g-is-union-of-conjugates-of-gx}
+::: pf-step
 Hence $G$ is a union of conjugates of the proper subgroup $G_x$ (proper since $|X| > 1$ and the action is transitive).
 
 ::: pf-proof
@@ -128,10 +128,6 @@ This contradicts step [](#no-union-of-conjugates){.pf-ref}.
 Step [](#no-union-of-conjugates){.pf-ref} says $G$ is not a union of conjugates of a proper subgroup.
 :::
 
-:::
-
-::: pf-qed
-Step [](#g-is-union-of-conjugates-of-gx){.pf-ref} contradicts step [](#no-union-of-conjugates){.pf-ref}, so the assumption fails and some element of $G$ has no fixed point in $X$.
 :::
 
 :::

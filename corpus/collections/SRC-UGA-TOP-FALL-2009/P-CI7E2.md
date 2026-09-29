@@ -76,7 +76,7 @@ are disjoint open subsets of $A$ containing $C$ and $D$, respectively.
 
 :::
 
-::: {.pf-step #a-normal}
+::: pf-step
 Hence $A$ is normal.
 
 ::: pf-proof
@@ -188,7 +188,7 @@ Thus $X/A$ is Hausdorff.
 
 :::
 
-::: {.pf-step #xa-normal}
+::: pf-step
 Therefore $X/A$ is normal.
 
 ::: pf-proof
@@ -196,10 +196,6 @@ Step [](#xa-hausdorff){.pf-ref} verifies the Hausdorff requirement, while step [
 These are the two conditions defining normality.
 :::
 
-:::
-
-::: pf-qed
-Step [](#a-normal){.pf-ref} shows $A$ is normal, and step [](#xa-normal){.pf-ref} shows $X/A$ is normal.
 :::
 
 :::

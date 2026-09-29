@@ -62,7 +62,7 @@ S+iT
 
 :::
 
-::: {.pf-step #hermitian-splitting-unique}
+::: pf-step
 The decomposition in step [](#hermitian-splitting-exists){.pf-ref} is unique.
 
 ::: pf-proof
@@ -126,7 +126,7 @@ which is a convex combination of the real eigenvalues $\mu_j$. Hence it lies bet
 
 :::
 
-::: {.pf-step #eigenvalue-bounds}
+::: pf-step
 Therefore every eigenvalue $\lambda$ of $A$ satisfies
 \[
 \boxed{
@@ -139,10 +139,6 @@ Therefore every eigenvalue $\lambda$ of $A$ satisfies
 Apply step [](#rayleigh-quotient-bound){.pf-ref} first to $C=S$ and then to $C=T$, and use the identities in step [](#eigenvalue-real-imag-as-rayleigh){.pf-ref}. This proves part (b).
 :::
 
-:::
-
-::: pf-qed
-Step [](#hermitian-splitting-unique){.pf-ref} answers part (a); step [](#eigenvalue-bounds){.pf-ref} answers part (b).
 :::
 
 :::

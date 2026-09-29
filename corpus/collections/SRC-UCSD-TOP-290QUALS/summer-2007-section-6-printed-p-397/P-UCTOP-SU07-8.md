@@ -99,7 +99,7 @@ It is an isomorphism on $H_4$ by construction and on $H_0$ because both spaces a
 
 :::
 
-::: {.pf-step #suspension-equiv-s4}
+::: pf-step
 Therefore
 $$
 \boxed{\Sigma M\simeq S^4}.
@@ -109,10 +109,6 @@ $$
 Both spaces are simply connected CW complexes: $M$ is a closed manifold and hence has CW type, and suspension preserves CW type. By the homological Whitehead theorem, a homology equivalence between simply connected CW complexes is a homotopy equivalence. Apply this to $f$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#x-simply-connected){.pf-ref} and [](#homology-of-x){.pf-ref} give $\pi_1(X)$ and $H_*(X)$, and step [](#suspension-equiv-s4){.pf-ref} shows $X\simeq S^4$.
 :::
 
 :::

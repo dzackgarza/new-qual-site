@@ -96,7 +96,7 @@ The second statement is the Young--Jucys--Murphy eigenvalue theorem for Specht m
 
 :::
 
-::: {.pf-step #transposition-scalar-as-content-sum}
+::: pf-step
 Therefore the transposition class sum acts on $V^\lambda$ by
 \[
 \omega_{(2,1^{d-2})}^\lambda
@@ -163,10 +163,6 @@ Combining steps [](#scalar-formula-general){.pf-ref} and [](#transposition-scala
 The transposition class has size $\binom d2$. Substitute this and the scalar from step [](#transposition-scalar-explicit){.pf-ref} into the general formula of step [](#scalar-formula-general){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Step [](#scalar-formula-general){.pf-ref} identifies $C_\alpha$ and gives $\omega_\alpha^\lambda$ in general; step [](#transposition-scalar-explicit){.pf-ref} gives $\omega_{(2,1^{d-2})}^\lambda$ explicitly.
 :::
 
 :::

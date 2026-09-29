@@ -69,7 +69,7 @@ G=Z(G).
 
 :::
 
-::: {.pf-step #order-p3-center-order-p}
+::: pf-step
 If $|G|=p^3$ and $G$ is noncommutative, then $|Z(G)|=p$.
 
 ::: pf-proof
@@ -111,7 +111,7 @@ Therefore the only possibility is
 
 :::
 
-::: {.pf-step #order-16-noncyclic-center-example}
+::: pf-step
 There is a noncommutative group of order $16$ whose center is not cyclic.
 
 ::: pf-proof
@@ -166,10 +166,6 @@ Z(G)
 The group $C_2\times C_2$ is not cyclic, so this $G$ has all the required properties.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#cyclic-quotient-forces-equality){.pf-ref}, [](#order-p3-center-order-p){.pf-ref}, and [](#order-16-noncyclic-center-example){.pf-ref} answer parts (a), (b), and (c).
 :::
 
 :::

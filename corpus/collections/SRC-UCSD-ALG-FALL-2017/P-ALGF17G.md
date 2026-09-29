@@ -138,7 +138,7 @@ Consequently
 
 :::
 
-::: {.pf-step #part-b-degree-bound}
+::: pf-step
 Every finite intermediate field $B$ as in part (b) satisfies
 \[
 [B:K]\le[L:M].
@@ -170,7 +170,7 @@ This proves part (b).
 
 :::
 
-::: {.pf-step #part-c-final-bound}
+::: pf-step
 The whole algebraic extension $A/K$ satisfies
 \[
 [A:K]\le[L:M].
@@ -211,10 +211,6 @@ Therefore
 This proves part (c).
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-f-in-k){.pf-ref} answers part (a); step [](#part-b-degree-bound){.pf-ref} answers part (b); and step [](#part-c-final-bound){.pf-ref} answers part (c).
 :::
 
 :::

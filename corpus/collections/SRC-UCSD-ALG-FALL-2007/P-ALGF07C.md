@@ -36,7 +36,7 @@ Let $\phi: \mathbb{C}[x] \to F$ be a ring homomorphism where $F$ is a field and 
 
 ::: pf
 
-::: {.pf-step #nonsurjective-example}
+::: pf-step
 There is a non-surjective example.
 
 ::: pf-proof
@@ -83,7 +83,7 @@ Its kernel is therefore the zero ideal, so it is injective.
 
 :::
 
-::: {.pf-step #onto-implies-c}
+::: pf-step
 If $\phi$ is surjective, then $F\cong\mathbb C$.
 
 ::: pf-proof
@@ -105,10 +105,6 @@ F\cong\mathbb C[x]/(x-a)\cong\mathbb C,
 where the last isomorphism is evaluation at $a$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#nonsurjective-example){.pf-ref} and [](#onto-implies-c){.pf-ref} answer parts (a) and (b).
 :::
 
 :::

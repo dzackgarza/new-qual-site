@@ -59,7 +59,7 @@ The coefficient by which $f^*$ multiplies the top cohomology generator is the de
 
 :::
 
-::: {.pf-step #even-case-degree-one}
+::: pf-step
 For $m=2n$, every self-homotopy equivalence has degree $+1$.
 
 ::: pf-proof
@@ -72,7 +72,7 @@ Thus every homotopy equivalence of $\mathbb{CP}^{2n}$ preserves orientation.
 
 :::
 
-::: {.pf-step #odd-case-counterexample}
+::: pf-step
 The analogous statement is false for $\mathbb{CP}^{2n+1}$.
 
 ::: pf-proof
@@ -87,10 +87,6 @@ $$
 So it reverses orientation.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#even-case-degree-one){.pf-ref} and [](#odd-case-counterexample){.pf-ref} show every self-homotopy equivalence of $\mathbb{CP}^{2n}$ has degree $+1$, while the analogous statement fails for $\mathbb{CP}^{2n+1}$.
 :::
 
 :::

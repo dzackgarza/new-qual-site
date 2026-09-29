@@ -68,7 +68,7 @@ Recall that \(\mathbb P^2=(k^3\setminus\{0\})/k^\times\).
 
 ::: pf
 
-::: {.pf-step #coordinate-ring-irreducible}
+::: pf-step
 The coordinate ring is \(k[t^2,t^3]\), and \(Z\) is irreducible.
 
 ::: pf-proof
@@ -93,7 +93,7 @@ Since \(k[t]\) is a domain, so is \(A(Z)\). Therefore \(Z\) is irreducible.
 
 :::
 
-::: {.pf-step #projective-closure}
+::: pf-step
 The projective closure is the cuspidal cubic \(Y^2Z=X^3\), with one point at infinity.
 
 ::: pf-proof
@@ -110,7 +110,7 @@ Geometrically, \(\overline Z\) is the projective cuspidal cubic: its affine part
 
 :::
 
-::: {.pf-step #no-extension-at-cusp}
+::: pf-step
 The map \(f:Z\setminus\{0\}\to\mathbb P^1\) does not extend to a morphism on \(Z\).
 
 ::: pf-proof
@@ -142,7 +142,7 @@ and \(t\notin\mathcal O_{Z,0}\). Indeed, if \(t=a/b\) with \(a,b\in k[t^2,t^3]\)
 
 :::
 
-::: {.pf-step #f-properties}
+::: pf-step
 The displayed \(f\) is neither bijective nor an isomorphism onto \(\mathbb P^1\), but it is birational.
 
 ::: pf-proof
@@ -166,7 +166,7 @@ As shown below, \(k(Z)=k(t)=k(\mathbb P^1)\). Therefore \(f\) is a birational eq
 
 :::
 
-::: {.pf-step #function-field}
+::: pf-step
 The function field is \(k(t)\).
 
 ::: pf-proof
@@ -186,7 +186,7 @@ belongs to this fraction field, it contains \(k(t)\); the reverse inclusion is i
 
 :::
 
-::: {.pf-step #blowup-of-cusp}
+::: pf-step
 Blowing up the cusp produces \(\mathbb A^1\), with map \(t\mapsto(t^2,t^3)\).
 
 ::: pf-proof
@@ -225,7 +225,7 @@ The exceptional fiber over the cusp is the single point \(u=0\).
 
 :::
 
-::: {.pf-step #singular-locus}
+::: pf-step
 The only singular point of \(Z\) is the cusp \((0,0)\).
 
 ::: pf-proof
@@ -247,7 +247,7 @@ Z_{\mathrm{sm}}=Z\setminus\{(0,0)\}.
 
 :::
 
-::: {.pf-step #integral-closure}
+::: pf-step
 The integral closure is \(k[t]\), and the normalization is \(\mathbb A^1\to Z\), \(t\mapsto(t^2,t^3)\).
 
 ::: pf-proof
@@ -267,10 +267,6 @@ Consequently the normalization is
 \]
 :::
 
-:::
-
-::: pf-qed
-Steps [](#coordinate-ring-irreducible){.pf-ref} through [](#integral-closure){.pf-ref} answer parts 1 through 8.
 :::
 
 :::

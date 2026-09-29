@@ -37,7 +37,7 @@ If $\{f_n\}$ converges uniformly to a function $f$ on $I$, then $f$ is also unif
 
 ::: pf
 
-::: {.pf-step #a-is-false}
+::: pf-step
 Statement (a) is false.
 
 ::: pf-proof
@@ -72,7 +72,7 @@ This disproves (a).
 
 :::
 
-::: {.pf-step #b-is-true}
+::: pf-step
 Statement (b) is true.
 
 ::: pf-proof
@@ -103,7 +103,7 @@ This proves (b).
 
 :::
 
-::: {.pf-step #c-is-true}
+::: pf-step
 Statement (c) is true.
 
 ::: pf-proof
@@ -153,7 +153,7 @@ This proves (c).
 
 :::
 
-::: {.pf-step #d-is-false}
+::: pf-step
 Statement (d) is false.
 
 ::: pf-proof
@@ -210,10 +210,6 @@ Substitute $x - y = (2, 0)$ and use step [](#partial1-f-zero){.pf-ref}.
 By step [](#fx-minus-fy-equals-one){.pf-ref} the left side of $f(x) - f(y) = \nabla f(z)(x - y)$ is $1$, and by step [](#gradient-dot-difference-zero){.pf-ref} the right side is $0$ for every $z \in E$. So no $z \in E$ satisfies the equation, and (d) is false.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#a-is-false){.pf-ref}, [](#b-is-true){.pf-ref}, [](#c-is-true){.pf-ref}, and [](#d-is-false){.pf-ref} settle parts (a), (b), (c), and (d).
 :::
 
 :::

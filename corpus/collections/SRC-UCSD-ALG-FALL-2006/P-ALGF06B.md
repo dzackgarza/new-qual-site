@@ -60,7 +60,7 @@ Thus $C=\sqrt\mu I$ on each eigenspace of $B$, so $C=B^{1/2}$.
 
 :::
 
-::: {.pf-step #h-unique}
+::: pf-step
 In every factorization $A=UH$ with $U^*U=I_n$ and $H\ge0$, one has
 \[
 H=(A^*A)^{1/2}.
@@ -135,7 +135,7 @@ Thus $A=UH$.
 
 :::
 
-::: {.pf-step #u-unique-iff-full-rank}
+::: pf-step
 The factor $U$ is unique exactly when $A$ has full column rank.
 
 ::: pf-proof
@@ -153,7 +153,7 @@ Therefore $U$ is not unique.
 
 :::
 
-::: {.pf-step #a-zero-counterexample}
+::: pf-step
 In particular, the statement in the problem fails already for $A=0$.
 
 ::: pf-proof
@@ -173,10 +173,6 @@ A=0=U_1H=U_2H.
 Thus the unconditional uniqueness of $U$ requested by the sourced problem is false.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#h-unique){.pf-ref}, [](#existence){.pf-ref}, [](#u-unique-iff-full-rank){.pf-ref}, and [](#a-zero-counterexample){.pf-ref} establish the corrected result and show that the problem's unconditional uniqueness claim is false.
 :::
 
 :::

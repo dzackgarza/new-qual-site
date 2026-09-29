@@ -34,7 +34,7 @@ At each vertex there is exactly one incoming and one outgoing edge of each label
 
 :::
 
-::: {.pf-step #cover-is-x5}
+::: pf-step
 This covering graph is homeomorphic to $X_5$.
 
 ::: pf-proof
@@ -47,7 +47,7 @@ Collapsing a maximal tree therefore identifies it up to homeomorphism type as a 
 
 :::
 
-::: {.pf-step #subgroup-h}
+::: pf-step
 With basepoint $v_0$, the corresponding subgroup of
 $$
 F_3=\langle a,b,c\rangle
@@ -76,7 +76,7 @@ Apply Reidemeister--Schreier to the index-$2$ subgroup using transversal $\{1,a\
 
 :::
 
-::: {.pf-step #x4-not-cover-x3}
+::: pf-step
 There is no covering map $X_4\to X_3$.
 
 ::: pf-proof
@@ -91,10 +91,6 @@ $$
 so one would need $-3=-2d$, impossible for an integer $d$.
 :::
 
-:::
-
-::: pf-qed
-Steps [](#cover-is-x5){.pf-ref} and [](#subgroup-h){.pf-ref} answer part (a), and step [](#x4-not-cover-x3){.pf-ref} answers part (b).
 :::
 
 :::

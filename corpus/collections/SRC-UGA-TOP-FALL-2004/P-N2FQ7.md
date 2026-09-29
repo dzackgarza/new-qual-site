@@ -107,7 +107,7 @@ If the chosen gluing reverses one orientation, the relation is $a=c^{-2}$ instea
 
 :::
 
-::: {.pf-step #pi1-presentation}
+::: pf-step
 Eliminating $a$ gives
 \[
 \boxed{\pi_1(X)\cong\langle b,c\mid [c^2,b]=1\rangle}.
@@ -266,7 +266,7 @@ so exactness gives $H_k(X)=0$.
 
 :::
 
-::: {.pf-step #homology-summary}
+::: pf-step
 Therefore
 \[
 \boxed{
@@ -284,10 +284,6 @@ H_k(X;\ZZ)
 Combine step [](#h2-computation){.pf-ref}, step [](#h1-computation){.pf-ref}, and step [](#remaining-homology){.pf-ref}.
 :::
 
-:::
-
-::: pf-qed
-Step [](#pi1-presentation){.pf-ref} computes $\pi_1(X)$, and step [](#homology-summary){.pf-ref} computes $H_*(X)$.
 :::
 
 :::

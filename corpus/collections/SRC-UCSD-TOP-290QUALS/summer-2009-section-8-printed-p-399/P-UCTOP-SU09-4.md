@@ -44,7 +44,7 @@ so it contributes exactly the edge $v_3\xrightarrow a v_2$. No further fold is p
 
 :::
 
-::: {.pf-step #covering-part-a-constructed}
+::: pf-step
 Complete this core to a covering of $X_3$ by attaching trees along every missing $a$-, $b$-, and $c$-direction, so that at every vertex there is exactly one incoming and one outgoing edge of each label $a,b,c$.
 
 ::: pf-proof
@@ -98,10 +98,6 @@ $$
 Thus $K$ is free of rank $1+4(2-1)=5$ with the displayed basis.
 :::
 
-:::
-
-::: pf-qed
-Step [](#covering-part-a-constructed){.pf-ref} answers part (a), and step [](#subgroup-k){.pf-ref} answers part (b).
 :::
 
 :::

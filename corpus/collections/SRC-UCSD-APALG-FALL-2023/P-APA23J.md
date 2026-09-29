@@ -50,7 +50,7 @@ A monomial lies in $I$ exactly when it is divisible by $x_i^2$ for some $i\ge2$.
 
 :::
 
-::: {.pf-step #hilbert-series-of-quotient}
+::: pf-step
 The Hilbert series of the quotient is
 \[
 \operatorname{Hilb}_{R/I}(t)
@@ -81,7 +81,7 @@ A basis monomial of total degree $d$ is determined by choosing a subset of $\{x_
 
 :::
 
-::: {.pf-step #hilbert-function-of-ideal-literal}
+::: pf-step
 If “the Hilbert function of the ideal $I$” is interpreted literally as
 \[
 H_I(d)=\dim_{\mathbb C} I_d,
@@ -113,7 +113,7 @@ This also records the answer if the source intended the more common convention o
 
 :::
 
-::: {.pf-step #the-variety-v-of-i}
+::: pf-step
 The affine variety is
 \[
 \boxed{V(I)=\{(a,0,\ldots,0):a\in\mathbb C\}.}
@@ -129,7 +129,7 @@ Over the field $\mathbb C$, this is equivalent to $a_i=0$ for every $i\ge2$, whi
 
 :::
 
-::: {.pf-step #variety-is-irreducible}
+::: pf-step
 The variety $V(I)$ is irreducible.
 
 ::: pf-proof
@@ -150,10 +150,6 @@ R/\sqrt I\cong\mathbb C[x_1]
 is an integral domain. Hence $V(I)$ is irreducible.
 :::
 
-:::
-
-::: pf-qed
-Step [](#quotient-basis){.pf-ref} answers part (a); steps [](#hilbert-function-of-quotient){.pf-ref} and [](#hilbert-function-of-ideal-literal){.pf-ref} answer part (b); steps [](#the-variety-v-of-i){.pf-ref} and [](#variety-is-irreducible){.pf-ref} answer part (c).
 :::
 
 :::

@@ -38,7 +38,7 @@ Show that $R$ has an ideal $I$ which is a maximal element of the collection of t
 
 ::: pf
 
-::: {.pf-step #zorns-lemma-statement}
+::: pf-step
 Zorn's Lemma states: if every chain in a nonempty partially ordered set has an upper bound in that partially ordered set, then the partially ordered set has a maximal element.
 
 ::: pf-proof
@@ -94,7 +94,7 @@ so $J\in\mathcal P$. It contains every member of $\mathcal C$, hence is an upper
 
 :::
 
-::: {.pf-step #part-b-maximal-ideal}
+::: pf-step
 There is an ideal $I$ maximal among the ideals disjoint from $X$.
 
 ::: pf-proof
@@ -175,7 +175,7 @@ a contradiction.
 
 :::
 
-::: {.pf-step #part-c-i-prime}
+::: pf-step
 The ideal $I$ is prime.
 
 ::: pf-proof
@@ -188,10 +188,6 @@ a\in I\quad\text{or}\quad b\in I.
 Thus $I$ is prime, proving part (c).
 :::
 
-:::
-
-::: pf-qed
-Step [](#zorns-lemma-statement){.pf-ref} answers part (a); step [](#part-b-maximal-ideal){.pf-ref} answers part (b); and step [](#part-c-i-prime){.pf-ref} answers part (c).
 :::
 
 :::

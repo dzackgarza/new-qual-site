@@ -160,7 +160,7 @@ Thus there are at most two isomorphism types: the trivial action and the nontriv
 
 :::
 
-::: {.pf-step #part-b-two-groups}
+::: pf-step
 The two actions yield nonisomorphic groups, so there are exactly two groups of order $231$ up to isomorphism.
 
 ::: pf-proof
@@ -175,10 +175,6 @@ By steps [](#part-a-semidirect){.pf-ref} and [](#two-actions){.pf-ref}, every gr
 Thus there are precisely two isomorphism classes.
 :::
 
-:::
-
-::: pf-qed
-Step [](#part-a-semidirect){.pf-ref} answers part (a), and step [](#part-b-two-groups){.pf-ref} answers part (b).
 :::
 
 :::
