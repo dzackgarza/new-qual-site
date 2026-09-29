@@ -55,9 +55,12 @@ $$
 \binom{-q}{m}=(-1)^m\binom{q+m-1}{m}.
 $$
 
-<1>1. The arithmetic genus of projective space is zero.
+::: pf
 
-::: {.proof}
+::: {.pf-step #pn-genus-zero}
+The arithmetic genus of projective space is zero.
+
+::: pf-proof
 The Hilbert polynomial of $\PP^n$ is
 $$
 P_{\PP^n}(t)=\binom{t+n}{n}.
@@ -69,12 +72,15 @@ $$
 This proves part (a).
 :::
 
-<1>2. If $H\subseteq\PP^n$ is a hypersurface of degree $d$, then
+:::
+
+::: {.pf-step #hypersurface-hilbert-poly}
+If $H\subseteq\PP^n$ is a hypersurface of degree $d$, then
 $$
 P_H(t)=\binom{t+n}{n}-\binom{t-d+n}{n}.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $S=k[x_0,\ldots,x_n]$ and let $F\in S_d$ be an irreducible homogeneous equation for $H$.
 Multiplication by $F$ gives an exact sequence of graded $S$-modules
 $$
@@ -87,14 +93,17 @@ P_H(t)=P_S(t)-P_S(t-d)
 $$
 :::
 
-<1>3. A degree-$d$ hypersurface in $\PP^n$ has
+:::
+
+::: {.pf-step #hypersurface-genus}
+A degree-$d$ hypersurface in $\PP^n$ has
 $$
 \boxed{p_a(H)=\binom{d-1}{n}}.
 $$
 
-::: {.proof}
+::: pf-proof
 The hypersurface has dimension $n-1$.
-By step <1>2,
+By step [](#hypersurface-hilbert-poly){.pf-ref},
 $$
 P_H(0)-1=-\binom{n-d}{n}.
 $$
@@ -112,21 +121,27 @@ $$
 This proves part (c).
 :::
 
-<1>4. A plane curve of degree $d$ has
+:::
+
+::: {.pf-step #plane-curve-genus}
+A plane curve of degree $d$ has
 $$
 \boxed{p_a(Y)=\frac{(d-1)(d-2)}2}.
 $$
 
-::: {.proof}
+::: pf-proof
 A plane curve is a degree-$d$ hypersurface in $\PP^2$.
-Apply step <1>3 with $n=2$:
+Apply step [](#hypersurface-genus){.pf-ref} with $n=2$:
 $$
 p_a(Y)=\binom{d-1}{2}=\frac{(d-1)(d-2)}2.
 $$
 This proves part (b).
 :::
 
-<1>5. If $Y\subseteq\PP^3$ is the complete intersection of surfaces $F=0$ and $G=0$ of degrees $a$ and $b$, then
+:::
+
+::: {.pf-step #complete-intersection-hilbert-poly}
+If $Y\subseteq\PP^3$ is the complete intersection of surfaces $F=0$ and $G=0$ of degrees $a$ and $b$, then
 $$
 P_Y(t)
 =\binom{t+3}{3}
@@ -135,7 +150,7 @@ P_Y(t)
 +\binom{t-a-b+3}{3}.
 $$
 
-::: {.proof}
+::: pf-proof
 Because $F,G$ define a complete intersection, they form a homogeneous regular sequence in $S=k[x_0,x_1,x_2,x_3]$.
 The Koszul resolution of $S/(F,G)$ is
 $$
@@ -148,17 +163,20 @@ $$
 Taking Hilbert polynomials and using $P_S(t)=\binom{t+3}{3}$ gives the displayed formula.
 :::
 
-<1>6. The complete-intersection curve of step <1>5 has
+:::
+
+::: {.pf-step #complete-intersection-genus}
+The complete-intersection curve of step [](#complete-intersection-hilbert-poly){.pf-ref} has
 $$
 \boxed{p_a(Y)=1+\frac12ab(a+b-4)}.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $Y$ has dimension one,
 $$
 p_a(Y)=1-P_Y(0).
 $$
-Substitute $t=0$ into step <1>5:
+Substitute $t=0$ into step [](#complete-intersection-hilbert-poly){.pf-ref}:
 $$
 P_Y(0)
 =1-\binom{3-a}{3}-\binom{3-b}{3}+\binom{3-a-b}{3}.
@@ -179,12 +197,15 @@ where the last equality follows by expanding the three cubic polynomials and can
 This proves part (d).
 :::
 
-<1>7. For the Segre embedding of $Y\times Z$, the Hilbert polynomial is
+:::
+
+::: {.pf-step #segre-hilbert-poly-product}
+For the Segre embedding of $Y\times Z$, the Hilbert polynomial is
 $$
 P_{Y\times Z}(t)=P_Y(t)P_Z(t).
 $$
 
-::: {.proof}
+::: pf-proof
 Let $R_Y$ and $R_Z$ be the homogeneous coordinate rings of the given embeddings.
 The Segre coordinate ring has degree-$q$ piece
 $$
@@ -199,14 +220,17 @@ $$
 Two polynomials agreeing for all sufficiently large integers are equal, so the Hilbert polynomial is the product as claimed.
 :::
 
-<1>8. The arithmetic genus of the product satisfies
+:::
+
+::: {.pf-step #product-genus-formula}
+The arithmetic genus of the product satisfies
 $$
 \boxed{
 p_a(Y\times Z)
 =p_a(Y)p_a(Z)+(-1)^s p_a(Y)+(-1)^r p_a(Z)}.
 $$
 
-::: {.proof}
+::: pf-proof
 Put $A=p_a(Y)$ and $B=p_a(Z)$.
 By definition,
 $$
@@ -214,7 +238,7 @@ P_Y(0)=1+(-1)^rA,
 \qquad
 P_Z(0)=1+(-1)^sB.
 $$
-Step <1>7 and $\dim(Y\times Z)=r+s$ give
+Step [](#segre-hilbert-poly-product){.pf-ref} and $\dim(Y\times Z)=r+s$ give
 $$
 \begin{aligned}
 p_a(Y\times Z)
@@ -226,9 +250,11 @@ $$
 This proves part (e).
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part (a), step <1>4 proves part (b), step <1>3 proves part (c), steps <1>5--<1>6 prove part (d), and steps <1>7--<1>8 prove part (e).
+::: pf-qed
+Step [](#pn-genus-zero){.pf-ref} proves part (a), step [](#plane-curve-genus){.pf-ref} proves part (b), step [](#hypersurface-genus){.pf-ref} proves part (c), steps [](#complete-intersection-hilbert-poly){.pf-ref} and [](#complete-intersection-genus){.pf-ref} prove part (d), and steps [](#segre-hilbert-poly-product){.pf-ref} and [](#product-genus-formula){.pf-ref} prove part (e).
+:::
+
 :::
 :::

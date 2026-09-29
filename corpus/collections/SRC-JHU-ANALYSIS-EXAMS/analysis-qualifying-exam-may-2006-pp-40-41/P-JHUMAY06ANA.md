@@ -30,9 +30,13 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. The logarithmic derivative has a nonzero integral around the pole.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #logarithmic-derivative-nonzero-integral}
+The logarithmic derivative has a nonzero integral around the pole.
+
+::: pf-proof
 Let $m\geq1$ be the pole order. Locally,
 $$
 f(z)=(z-P)^{-m}h(z),
@@ -52,16 +56,23 @@ $$
 with counterclockwise orientation [@SS03].
 :::
 
-<1>2. A holomorphic logarithm would make the same integral zero.
+:::
 
-::: {.proof}
+::: pf-step
+A holomorphic logarithm would make the same integral zero.
+
+::: pf-proof
 If the asserted $g$ existed, differentiating $e^g=f$
 on this punctured disk would give $g'=f'/f$.
 The integral of $g'$ around a closed parametrized circle
 is zero: it is the integral of the derivative of
 $g(\gamma(t))$, and the endpoint values agree.
-This contradicts step <1>1. The primitive is the
+This contradicts step [](#logarithmic-derivative-nonzero-integral){.pf-ref}. The primitive is the
 single-valued function $g$ itself; no simple-connectedness
 assumption on $U\setminus\{P\}$ is used.
+:::
+
+:::
+
 :::
 :::

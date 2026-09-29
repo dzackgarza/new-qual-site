@@ -28,51 +28,111 @@ Prove or disprove each of the following statements.
 :::
 
 ::: {.solution}
-<1>1. (b) is false.
-<2>1. Let $f_k \definedas \frac{1}{k} \chi_{[0,k]}$ on $\RR$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #b-is-false}
+(b) is false.
+
+::: pf-proof
+
+::: {.pf-step #fk-definition}
+Let $f_k \definedas \frac{1}{k} \chi_{[0,k]}$ on $\RR$.
+
+::: pf-proof
 Each $f_k$ is measurable (indicator of an interval), and $\int_\RR f_k = \frac{1}{k} \cdot k = 1$ for every $k$.
 :::
-<2>2. $f_k \to 0$ uniformly on $\RR$.
-::: {.proof}
+
+:::
+
+::: pf-step
+$f_k \to 0$ uniformly on $\RR$.
+
+::: pf-proof
 $\sup_{x \in \RR} \abs{f_k(x) - 0} = \frac{1}{k} \to 0$.
 :::
-<2>3. $\lim_k \int f_k = 1 \neq 0 = \int 0$.
-::: {.proof}
-Each integral $\int f_k$ is $1$ by step <2>1, while the uniform limit $f = 0$ has integral $0$.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-The counterexample of <2>1 satisfies the hypotheses but not the conclusion, so (b) is false.
+
 :::
 
-<1>2. (c) is true: convergence in $L_p$ implies a.e.\ convergence along a subsequence (for $1 \leq p < \infty$). <2>1. Choose a subsequence $\theset{f_{k_j}}$ with $\norm{f_{k_j} - f}_p \leq 2^{-j}$.
-::: {.proof}
+::: pf-step
+$\lim_k \int f_k = 1 \neq 0 = \int 0$.
+
+::: pf-proof
+Each integral $\int f_k$ is $1$ by step [](#fk-definition){.pf-ref}, while the uniform limit $f = 0$ has integral $0$.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+The counterexample of step [](#fk-definition){.pf-ref} satisfies the hypotheses but not the conclusion, so (b) is false.
+:::
+
+:::
+
+::: {.pf-step #c-is-true}
+(c) is true: convergence in $L_p$ implies a.e.\ convergence along a subsequence (for $1 \leq p < \infty$).
+
+::: pf-proof
+
+::: pf-step
+Choose a subsequence $\theset{f_{k_j}}$ with $\norm{f_{k_j} - f}_p \leq 2^{-j}$.
+
+::: pf-proof
 Since $\norm{f_k - f}_p \to 0$ by hypothesis, pick $k_j$ recursively so the $L_p$ distance is $\leq 2^{-j}$.
 :::
-<2>2. For each $j$, $\mu\theset{x : \abs{f_{k_j}(x) - f(x)} > 2^{-j/2}} \leq \left(2^{-j/2}\right)^{-p} \norm{f_{k_j} - f}_p^p \leq 2^{jp/2} 2^{-jp} = 2^{-jp/2}$.
-::: {.proof}
-Chebyshev's (Markov's) inequality applied to $\abs{f_{k_j} - f}^p$ with threshold $2^{-jp/2}$.
-:::
-<2>3. $\sum_j \mu\theset{x : \abs{f_{k_j}(x) - f(x)} > 2^{-j/2}} \leq \sum_j 2^{-jp/2} < \infty$.
-::: {.proof}
-Geometric series, since $p \geq 1$ implies $p/2 > 0$.
-:::
-<2>4. By Borel–Cantelli, for almost every $x$, $\abs{f_{k_j}(x) - f(x)} \leq 2^{-j/2}$ for all but finitely many $j$.
-::: {.proof}
-The sets in <2>3 have summable measure, so almost every $x$ lies in only finitely many of them.
-:::
-<2>5. For such $x$, $f_{k_j}(x) \to f(x)$.
-::: {.proof}
-$2^{-j/2} \to 0$.
-:::
-<2>6. Q.E.D.
-::: {.proof}
-By <2>4 and <2>5, the subsequence $f_{k_j}$ converges to $f$ almost everywhere.
+
 :::
 
-<1>3. Conclusion: (b) is false and (c) is true.
-::: {.proof}
-By <1>1 and <1>2.
+::: pf-step
+For each $j$, $\mu\theset{x : \abs{f_{k_j}(x) - f(x)} > 2^{-j/2}} \leq \left(2^{-j/2}\right)^{-p} \norm{f_{k_j} - f}_p^p \leq 2^{jp/2} 2^{-jp} = 2^{-jp/2}$.
+
+::: pf-proof
+Chebyshev's (Markov's) inequality applied to $\abs{f_{k_j} - f}^p$ with threshold $2^{-jp/2}$.
 :::
+
+:::
+
+::: {.pf-step #measure-sum-finite}
+$\sum_j \mu\theset{x : \abs{f_{k_j}(x) - f(x)} > 2^{-j/2}} \leq \sum_j 2^{-jp/2} < \infty$.
+
+::: pf-proof
+Geometric series, since $p \geq 1$ implies $p/2 > 0$.
+:::
+
+:::
+
+::: {.pf-step #ae-bound-holds}
+By Borel–Cantelli, for almost every $x$, $\abs{f_{k_j}(x) - f(x)} \leq 2^{-j/2}$ for all but finitely many $j$.
+
+::: pf-proof
+The sets in step [](#measure-sum-finite){.pf-ref} have summable measure, so almost every $x$ lies in only finitely many of them.
+:::
+
+:::
+
+::: {.pf-step #fkj-converges-pointwise}
+For such $x$, $f_{k_j}(x) \to f(x)$.
+
+::: pf-proof
+$2^{-j/2} \to 0$.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+By steps [](#ae-bound-holds){.pf-ref} and [](#fkj-converges-pointwise){.pf-ref}, the subsequence $f_{k_j}$ converges to $f$ almost everywhere.
+:::
+
+:::
+
+::: pf-qed
+Conclusion: (b) is false and (c) is true.
+
+By steps [](#b-is-false){.pf-ref} and [](#c-is-true){.pf-ref}.
+:::
+
 :::

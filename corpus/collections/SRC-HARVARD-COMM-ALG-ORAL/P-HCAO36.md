@@ -35,9 +35,14 @@ b. Give a hypothesis on the extension $A \subseteq B$ which ensures that $IB=JB$
 :::
 
 ::: {.solution}
-<1>1. In general, equality after extension does not imply equality before
+
+::: pf
+
+::: pf-step
+In general, equality after extension does not imply equality before
 extension.
-::: {.proof}
+
+::: pf-proof
 Take
 \[
 A=\mathbb Z,
@@ -54,8 +59,12 @@ IB=2\mathbb Q=\mathbb Q=JB.
 \]
 :::
 
-<1>2. If $B$ is faithfully flat over $A$, then $IB=JB$ implies $I=J$.
-::: {.proof}
+:::
+
+::: {.pf-step #faithfully-flat-injective-on-ideals}
+If $B$ is faithfully flat over $A$, then $IB=JB$ implies $I=J$.
+
+::: pf-proof
 Because $I\subseteq J$, there is an exact sequence
 \[
 0\longrightarrow I\longrightarrow J\longrightarrow J/I\longrightarrow0.
@@ -68,14 +77,22 @@ If $IB=JB$, the right-hand side is zero. Faithful flatness detects zero
 modules, so $J/I=0$. Hence $I=J$.
 :::
 
-<1>3. If $B$ is faithfully flat over $A$, then every ideal is contracted from
+:::
+
+::: pf-step
+If $B$ is faithfully flat over $A$, then every ideal is contracted from
 its extension:
 \[
 IB\cap A=I
 \]
 for every ideal $I\subseteq A$.
-::: {.proof}
-Apply <1>2 to $I\subseteq IB\cap A$. Extending both ideals to $B$ gives $IB$
+
+::: pf-proof
+Apply step [](#faithfully-flat-injective-on-ideals){.pf-ref} to $I\subseteq IB\cap A$. Extending both ideals to $B$ gives $IB$
 in each case, hence they are equal.
+:::
+
+:::
+
 :::
 :::

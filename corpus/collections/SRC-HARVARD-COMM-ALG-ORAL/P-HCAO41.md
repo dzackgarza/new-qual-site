@@ -35,8 +35,12 @@ Show that $A$ is a discrete valuation ring.
 Let \(\mathfrak m\) be the maximal ideal of the valuation ring \(A\). Since \(A\)
 is not a field, \(\mathfrak m\ne0\).
 
-<1>1. The maximal ideal \(\mathfrak m\) is principal.
-::: {.proof}
+::: pf
+
+::: {.pf-step #maximal-ideal-principal}
+The maximal ideal \(\mathfrak m\) is principal.
+
+::: pf-proof
 Because \(A\) is Noetherian, write
 \[
 \mathfrak m=(a_1,\ldots,a_r).
@@ -50,8 +54,12 @@ principal ideals \((a_i)\) there is a largest one, say \((a_j)\). Then every
 Set \(\pi=a_j\).
 :::
 
-<1>2. Every nonzero ideal of \(A\) is a power of \(\mathfrak m=(\pi)\).
-::: {.proof}
+:::
+
+::: {.pf-step #every-ideal-is-power-of-m}
+Every nonzero ideal of \(A\) is a power of \(\mathfrak m=(\pi)\).
+
+::: pf-proof
 Let \(0\ne I\subseteq A\). Since \(A\) is Noetherian, \(I\) is finitely
 generated, hence principal by the same total-order argument: \(I=(x)\).
 If \(x\) is a unit then \(I=A=\mathfrak m^0\). Otherwise \(x\in\mathfrak m\),
@@ -71,11 +79,19 @@ I=(\pi^n)=\mathfrak m^n.
 \]
 :::
 
-<1>3. \(A\) is a discrete valuation ring.
-::: {.proof}
+:::
+
+::: pf-step
+\(A\) is a discrete valuation ring.
+
+::: pf-proof
 A Noetherian local domain that is not a field is a DVR precisely when its
 nonzero maximal ideal is principal; equivalently, every nonzero ideal is a
-power of that maximal ideal. Both conditions were established in <1>1 and
-<1>2. Thus \(A\) is a DVR with uniformizer \(\pi\).
+power of that maximal ideal. Both conditions were established in step [](#maximal-ideal-principal){.pf-ref} and
+step [](#every-ideal-is-power-of-m){.pf-ref}. Thus \(A\) is a DVR with uniformizer \(\pi\).
+:::
+
+:::
+
 :::
 :::

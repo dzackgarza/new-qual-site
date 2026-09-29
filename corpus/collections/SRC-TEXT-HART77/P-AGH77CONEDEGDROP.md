@@ -42,9 +42,12 @@ $$
 for the join of $P$ with $W$.
 Thus the variety in the problem is $X=J_P(Y)$.
 
-<1>1. The join $X$ is irreducible and has dimension at most $r+1$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #join-irreducible-dim-bound}
+The join $X$ is irreducible and has dimension at most $r+1$.
+
+::: pf-proof
 Consider the incidence set
 $$
 I^\circ
@@ -62,9 +65,12 @@ $$
 $$
 :::
 
-<1>2. The equality $X=Y$ would force $Y$ to be a linear variety.
+:::
 
-::: {.proof}
+::: {.pf-step #join-equals-y-forces-linear}
+The equality $X=Y$ would force $Y$ to be a linear variety.
+
+::: pf-proof
 Assume $X=Y$.
 Then for every $Q\in Y\setminus\{P\}$ the whole line $\overline{PQ}$ lies in $Y$.
 Its tangent direction at $P$ is therefore contained in the projective tangent space $T_PY$.
@@ -79,25 +85,31 @@ Both are irreducible closed subsets of dimension $r$, so $Y=T_PY$.
 Hence $Y$ is linear.
 :::
 
-<1>3. The variety $X$ has dimension
+:::
+
+::: {.pf-step #join-dimension-r-plus-one}
+The variety $X$ has dimension
 $$
 \boxed{\dim X=r+1}.
 $$
 
-::: {.proof}
+::: pf-proof
 We have $Y\subseteq X$, so $\dim X\ge r$.
 If equality held, irreducibility of both $Y$ and $X$ and the inclusion $Y\subseteq X$ would imply $X=Y$.
-Step <1>2 would then make $Y$ linear, hence of degree one by [[P-AGH76DEGONELINEAR|Exercise I.7.6]], contradicting $d>1$.
+Step [](#join-equals-y-forces-linear){.pf-ref} would then make $Y$ linear, hence of degree one by [[P-AGH76DEGONELINEAR|Exercise I.7.6]], contradicting $d>1$.
 Therefore $\dim X>r$.
-Together with step <1>1 this gives $\dim X=r+1$, proving part (a).
+Together with step [](#join-irreducible-dim-bound){.pf-ref} this gives $\dim X=r+1$, proving part (a).
 :::
 
-<1>4. Projection from $P$ exhibits $X$ as the cone over an $r$-dimensional projective variety $Z$, and
+:::
+
+::: {.pf-step #cone-degree-equals-projection-degree}
+Projection from $P$ exhibits $X$ as the cone over an $r$-dimensional projective variety $Z$, and
 $$
 \deg X=\deg Z.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose homogeneous coordinates with
 $$
 P=[1:0:\cdots:0]
@@ -111,7 +123,7 @@ $$
 $$
 Let $Z$ be the closure of its image.
 Every line through $P$ and a point of $Y\setminus\{P\}$ meets $H_0$ at the corresponding projected point, so $X$ is exactly the projective cone over $Z$ with vertex $P$.
-Step <1>3 gives $\dim X=r+1$, hence $\dim Z=r$.
+Step [](#join-dimension-r-plus-one){.pf-ref} gives $\dim X=r+1$, hence $\dim Z=r$.
 
 Let $B$ be the homogeneous coordinate ring of $Z$ in $H_0$.
 The homogeneous ideal of the cone $X$ is the same ideal, viewed in the larger polynomial ring with the extra variable $x_0$.
@@ -132,7 +144,10 @@ $$
 Therefore $\deg X=\deg Z$.
 :::
 
-<1>5. Blowing up the smooth point $P$ resolves the projection $\rho$ to a generically finite morphism
+:::
+
+::: {.pf-step #blowup-resolves-projection}
+Blowing up the smooth point $P$ resolves the projection $\rho$ to a generically finite morphism
 $$
 \widetilde\rho:\widetilde Y=\Bl_PY\longrightarrow Z.
 $$
@@ -142,7 +157,7 @@ $$
 $$
 where $\beta:\widetilde Y\to Y$ is the blowup map.
 
-::: {.proof}
+::: pf-proof
 The rational projection is defined by the $n$ linear forms $x_1,\ldots,x_n$, all of which vanish at $P$ to order one.
 The [[D-SCHBLOWUP|blowup]] makes the inverse image of the ideal $(x_1,\ldots,x_n)$ invertible, so by its universal property the rational map extends to a morphism
 $$
@@ -159,12 +174,15 @@ Such a strict transform has divisor class $\beta^*H-E$, because the original hyp
 This gives the displayed line-bundle identity.
 :::
 
-<1>6. The top self-intersection of the divisor $\beta^*H-E$ is
+:::
+
+::: {.pf-step #exceptional-self-intersection}
+The top self-intersection of the divisor $\beta^*H-E$ is
 $$
 (\beta^*H-E)^r=d-1.
 $$
 
-::: {.proof}
+::: pf-proof
 The top self-intersection of $H$ on the projective variety $Y$ is its degree:
 $$
 H^r=d.
@@ -195,12 +213,15 @@ $$
 $$
 :::
 
-<1>7. The projection degree satisfies
+:::
+
+::: {.pf-step #projection-degree-formula}
+The projection degree satisfies
 $$
 \delta\deg Z=d-1.
 $$
 
-::: {.proof}
+::: pf-proof
 For a generically finite morphism of degree $\delta$ between $r$-dimensional projective varieties, the top self-intersection of the pullback of a hyperplane is $\delta$ times the degree of the target.
 Indeed, intersect $Z$ with $r$ sufficiently general hyperplanes.
 The resulting zero-dimensional intersection has total length $\deg Z$.
@@ -209,29 +230,34 @@ Therefore
 $$
 (\widetilde\rho^*\OO_Z(1))^r=\delta\deg Z.
 $$
-Step <1>5 identifies the left side with $(\beta^*H-E)^r$, which step <1>6 evaluates as $d-1$.
+Step [](#blowup-resolves-projection){.pf-ref} identifies the left side with $(\beta^*H-E)^r$, which step [](#exceptional-self-intersection){.pf-ref} evaluates as $d-1$.
 Hence
 $$
 \delta\deg Z=d-1.
 $$
 :::
 
-<1>8. The degree of the variety in the problem satisfies
+:::
+
+::: {.pf-step #degree-drop-conclusion}
+The degree of the variety in the problem satisfies
 $$
 \boxed{\deg X<d}.
 $$
 
-::: {.proof}
-By steps <1>4 and <1>7,
+::: pf-proof
+By steps [](#cone-degree-equals-projection-degree){.pf-ref} and [](#projection-degree-formula){.pf-ref},
 $$
 \deg X=\deg Z=\frac{d-1}{\delta}\le d-1<d,
 $$
 proving part (b).
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), and steps <1>4--<1>8 prove part (b).
+::: pf-qed
+Steps [](#join-irreducible-dim-bound){.pf-ref}, [](#join-equals-y-forces-linear){.pf-ref} and [](#join-dimension-r-plus-one){.pf-ref} prove part (a), and steps [](#cone-degree-equals-projection-degree){.pf-ref}, [](#blowup-resolves-projection){.pf-ref}, [](#exceptional-self-intersection){.pf-ref}, [](#projection-degree-formula){.pf-ref} and [](#degree-drop-conclusion){.pf-ref} prove part (b).
+:::
+
 :::
 :::

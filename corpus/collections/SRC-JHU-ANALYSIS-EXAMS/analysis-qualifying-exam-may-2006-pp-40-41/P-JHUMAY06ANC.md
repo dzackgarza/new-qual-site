@@ -36,8 +36,12 @@ $$
 \boxed{f(z)=az+b,\qquad a,b\in\mathbb C,\quad |a|+|b|\leq1.}
 $$
 
-<1>1. Every solution is affine.
-::: {.proof}
+::: pf
+
+::: {.pf-step #every-solution-affine}
+Every solution is affine.
+
+::: pf-proof
 Write the entire Taylor expansion as $f(z)=\sum_{k\geq0}c_kz^k$.
 For each $R\geq1$, the hypothesis gives
 $\max_{|z|=R}|f(z)|\leq R^{3/2}$. Cauchy's coefficient
@@ -50,8 +54,12 @@ to zero as $R\to\infty$, so $c_k=0$. Consequently
 $f(z)=az+b$ for $a=c_1$ and $b=c_0$.
 :::
 
-<1>2. The unit-circle bound is equivalent to $|a|+|b|\leq1$.
-::: {.proof}
+:::
+
+::: {.pf-step #unit-circle-bound}
+The unit-circle bound is equivalent to $|a|+|b|\leq1$.
+
+::: pf-proof
 The triangle inequality gives $|az+b|\leq|a|+|b|$ on
 $|z|=1$. Equality is attained: if $a$ and $b$ are nonzero,
 take $z=(b/|b|)(\overline a/|a|)$, so $az$ and $b$
@@ -64,14 +72,22 @@ The given bound at $|z|=1$ implies that this sum is at
 most one.
 :::
 
-<1>3. Every stated affine function obeys the original exterior bound.
-::: {.proof}
+:::
+
+::: pf-step
+Every stated affine function obeys the original exterior bound.
+
+::: pf-proof
 If $r=|z|\geq1$ and $|a|+|b|\leq1$, then
 $$
 |az+b|\leq |a|r+|b|\leq r(|a|+|b|)\leq r\leq r^{3/2}.
 $$
 Thus every displayed function satisfies the inequality
-for every required $z$. Together with steps <1>1 and
-<1>2, this proves the exhaustive classification.
+for every required $z$. Together with steps [](#every-solution-affine){.pf-ref} and
+[](#unit-circle-bound){.pf-ref}, this proves the exhaustive classification.
+:::
+
+:::
+
 :::
 :::

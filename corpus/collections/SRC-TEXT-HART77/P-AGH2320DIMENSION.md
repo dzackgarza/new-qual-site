@@ -65,7 +65,10 @@ every maximal localization $A_{\mathfrak m}$ has this same dimension, and for ev
 \]
 The first two assertions follow from Noether normalization and going up; the last is the dimension formula for finite-type algebras over a field.  These are Stacks Project, Tags 00P0 and 00P1.
 
-<1>1. Every nonempty affine open
+::: pf
+
+::: {.pf-step #affine-open-dim-equals-trdeg}
+Every nonempty affine open
 \[
 U=\Spec A\subseteq X
 \]
@@ -75,7 +78,8 @@ has
 =
 \operatorname{trdeg}_kK(X).
 \]
-::: {.proof}
+
+::: pf-proof
 Since $X$ is integral, $A$ is a domain.  Since $X$ is of finite type over $k$, Hartshorne II.3.3(c) shows that $A$ is a finitely generated $k$-algebra.
 
 By Hartshorne II.3.6,
@@ -88,7 +92,10 @@ The affine dimension theorem therefore gives
 \]
 :::
 
-<1>2. Put
+:::
+
+::: {.pf-step #dimx-leq-r}
+Put
 \[
 r=\operatorname{trdeg}_kK(X).
 \]
@@ -96,7 +103,8 @@ Then
 \[
 \dim X\le r.
 \]
-::: {.proof}
+
+::: pf-proof
 Take any strict chain of irreducible closed subsets
 \[
 Z_0\subsetneq Z_1\subsetneq\cdots\subsetneq Z_n
@@ -123,39 +131,51 @@ Thus
 \[
 Z_0\cap U\subsetneq\cdots\subsetneq Z_n\cap U
 \]
-is a chain of length $n$ in $U$.  By <1>1,
+is a chain of length $n$ in $U$.  By step [](#affine-open-dim-equals-trdeg){.pf-ref},
 \[
 n\le\dim U=r.
 \]
 Taking the supremum over all chains gives $\dim X\le r$.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #dimx-geq-r}
+One has
 \[
 \dim X\ge r.
 \]
-::: {.proof}
+
+::: pf-proof
 Any nonempty affine open $U\subseteq X$ is a subspace of $X$, so every chain of irreducible closed subsets in $U$ gives a chain of the same length in $X$ after taking closures in $X$.  Hence
 \[
 \dim U\le\dim X.
 \]
-By <1>1, $\dim U=r$.
+By step [](#affine-open-dim-equals-trdeg){.pf-ref}, $\dim U=r$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #dimx-equals-trdeg}
+Therefore
 \[
 \boxed{
 \dim X=\operatorname{trdeg}_kK(X).}
 \]
-::: {.proof}
-Combine <1>2 and <1>3.  This proves part (b).
+
+::: pf-proof
+Combine steps [](#dimx-leq-r){.pf-ref} and [](#dimx-geq-r){.pf-ref}.  This proves part (b).
 :::
 
-<1>5. Let $P\in X$ be a closed point.  Then
+:::
+
+::: {.pf-step #dim-op-equals-dimx-closed-point}
+Let $P\in X$ be a closed point.  Then
 \[
 \boxed{\dim\mathcal O_{X,P}=\dim X.}
 \]
-::: {.proof}
+
+::: pf-proof
 Choose an affine neighborhood
 \[
 U=\Spec A
@@ -164,7 +184,7 @@ of $P$, and let $\mathfrak m\subseteq A$ be the corresponding maximal ideal.  Th
 \[
 \mathcal O_{X,P}=A_{\mathfrak m}.
 \]
-By <1>1, the fraction field of $A$ is $K(X)$ and
+By step [](#affine-open-dim-equals-trdeg){.pf-ref}, the fraction field of $A$ is $K(X)$ and
 \[
 \operatorname{trdeg}_kK(X)=\dim X.
 \]
@@ -179,7 +199,10 @@ The maximal-localization part of the affine dimension theorem gives
 This proves part (a).
 :::
 
-<1>6. If $P\in X$ and
+:::
+
+::: {.pf-step #codim-z-equals-dim-op}
+If $P\in X$ and
 \[
 Z=\overline{\{P\}},
 \]
@@ -188,7 +211,8 @@ then
 \boxed{
 \codim(Z,X)=\dim\mathcal O_{X,P}.}
 \]
-::: {.proof}
+
+::: pf-proof
 The point $P$ is the generic point of the irreducible closed subset $Z$.  By the definition of codimension in a scheme, chains of irreducible closed subsets from $Z$ up to an irreducible component of $X$ correspond in an affine neighborhood of $P$ to chains of prime ideals contained in the prime representing $P$.  Their supremal length is the height of that prime, namely
 \[
 \dim\mathcal O_{X,P}.
@@ -196,14 +220,18 @@ The point $P$ is the generic point of the irreducible closed subset $Z$.  By the
 Since $X$ is integral it has one irreducible component, so this is exactly $\codim(Z,X)$.
 :::
 
-<1>7. For every closed subset $Y\subseteq X$,
+:::
+
+::: {.pf-step #codim-y-equals-inf-dim-op}
+For every closed subset $Y\subseteq X$,
 \[
 \boxed{
 \codim(Y,X)
 =
 \inf_{P\in Y}\dim\mathcal O_{X,P}.}
 \]
-::: {.proof}
+
+::: pf-proof
 By definition,
 \[
 \codim(Y,X)
@@ -214,7 +242,7 @@ Every point $P\in Y$ gives such an irreducible closed subset
 \[
 \overline{\{P\}}\subseteq Y,
 \]
-and <1>6 identifies its codimension with $\dim\mathcal O_{X,P}$.
+and step [](#codim-z-equals-dim-op){.pf-ref} identifies its codimension with $\dim\mathcal O_{X,P}$.
 
 Conversely every irreducible closed $Z\subseteq Y$ has a generic point $P\in Y$, and
 \[
@@ -223,21 +251,25 @@ Z=\overline{\{P\}}.
 Thus the two sets of numbers over which the infima are taken are identical.  This proves part (c).
 :::
 
-<1>8. Let $Z\subseteq X$ be irreducible closed with generic point $\zeta$.  Then
+:::
+
+::: {.pf-step #dimz-plus-codimz-equals-dimx}
+Let $Z\subseteq X$ be irreducible closed with generic point $\zeta$.  Then
 \[
 \boxed{
 \dim Z+\codim(Z,X)=\dim X.}
 \]
-::: {.proof}
+
+::: pf-proof
 Give $Z$ its reduced induced structure.  It is an integral scheme of finite type over $k$, with function field
 \[
 K(Z)=\kappa(\zeta).
 \]
-By <1>4 applied to $Z$,
+By step [](#dimx-equals-trdeg){.pf-ref} applied to $Z$,
 \[
 \dim Z=\operatorname{trdeg}_k\kappa(\zeta).
 \]
-By <1>6,
+By step [](#codim-z-equals-dim-op){.pf-ref},
 \[
 \codim(Z,X)=\dim\mathcal O_{X,\zeta}.
 \]
@@ -248,15 +280,19 @@ Choose an affine neighborhood $\Spec A$ of $\zeta$, corresponding to a prime $\m
 +\operatorname{trdeg}_k\kappa(\mathfrak p)
 =\operatorname{trdeg}_kK(X).
 \]
-Using <1>4 for $X$ converts this exactly into the displayed identity.
+Using step [](#dimx-equals-trdeg){.pf-ref} for $X$ converts this exactly into the displayed identity.
 :::
 
-<1>9. For every closed subset $Y\subseteq X$,
+:::
+
+::: {.pf-step #dimy-plus-codimy-equals-dimx}
+For every closed subset $Y\subseteq X$,
 \[
 \boxed{
 \dim Y+\codim(Y,X)=\dim X.}
 \]
-::: {.proof}
+
+::: pf-proof
 Let
 \[
 Y_1,\ldots,Y_m
@@ -266,11 +302,11 @@ be the irreducible components of $Y$.  Then
 \dim Y=\max_i\dim Y_i.
 \]
 
-By <1>8,
+By step [](#dimz-plus-codimz-equals-dimx){.pf-ref},
 \[
 \codim(Y_i,X)=\dim X-\dim Y_i.
 \]
-Any irreducible closed subset of $Y$ is contained in some $Y_i$, and its dimension is at most $\dim Y_i$, so <1>8 shows that its codimension is at least $\codim(Y_i,X)$.  Hence
+Any irreducible closed subset of $Y$ is contained in some $Y_i$, and its dimension is at most $\dim Y_i$, so step [](#dimz-plus-codimz-equals-dimx){.pf-ref} shows that its codimension is at least $\codim(Y_i,X)$.  Hence
 \[
 \codim(Y,X)
 =
@@ -281,16 +317,20 @@ Any irreducible closed subset of $Y$ is contained in some $Y_i$, and its dimensi
 This proves part (d).
 :::
 
-<1>10. If $U\subseteq X$ is nonempty open, then
+:::
+
+::: {.pf-step #dimu-equals-dimx}
+If $U\subseteq X$ is nonempty open, then
 \[
 \boxed{\dim U=\dim X.}
 \]
-::: {.proof}
+
+::: pf-proof
 Choose a nonempty affine open
 \[
 V\subseteq U.
 \]
-Since $V$ is also a nonempty affine open of $X$, <1>1 and <1>4 give
+Since $V$ is also a nonempty affine open of $X$, steps [](#affine-open-dim-equals-trdeg){.pf-ref} and [](#dimx-equals-trdeg){.pf-ref} give
 \[
 \dim V=\dim X.
 \]
@@ -305,12 +345,16 @@ so
 Therefore all three dimensions are equal.  This proves part (e).
 :::
 
-<1>11. Let $k\subseteq k'$ be a field extension and put
+:::
+
+::: {.pf-step #component-dominates-x}
+Let $k\subseteq k'$ be a field extension and put
 \[
 X'=X\times_k k'.
 \]
 Every irreducible component of $X'$ maps dominantly to $X$.
-::: {.proof}
+
+::: pf-proof
 The projection
 \[
 \pi:X'\to X
@@ -330,7 +374,10 @@ the generic point of $C$ is represented by a minimal prime $\mathfrak q$.  Flatn
 Thus $\xi_C$ maps to the generic point of $X$, and $C\to X$ is dominant.
 :::
 
-<1>12. Choose a nonempty affine open
+:::
+
+::: {.pf-step #noether-normalization-base-change}
+Choose a nonempty affine open
 \[
 U=\Spec A\subseteq X
 \]
@@ -349,8 +396,9 @@ k'[t_1,\ldots,t_d]
 A'=A\otimes_k k'
 \]
 is again finite and injective.
-::: {.proof}
-By <1>4,
+
+::: pf-proof
+By step [](#dimx-equals-trdeg){.pf-ref},
 \[
 d=\operatorname{trdeg}_kK(X)=\operatorname{trdeg}_k\operatorname{Frac}(A).
 \]
@@ -359,17 +407,21 @@ Noether normalization gives algebraically independent elements $t_1,\ldots,t_d\i
 Tensoring with the flat $k$-module $k'$ preserves injectivity, and tensoring a finite module with $k'$ remains finite.  This gives the asserted map.
 :::
 
-<1>13. Every irreducible component of
+:::
+
+::: {.pf-step #component-of-uprime-dim-d}
+Every irreducible component of
 \[
 U'=U\times_k k'=\Spec A'
 \]
 has dimension $d$.
-::: {.proof}
+
+::: pf-proof
 Let $\mathfrak q$ be a minimal prime of $A'$.  The ring $A'$ is integral over
 \[
 R=k'[t_1,\ldots,t_d]
 \]
-by <1>12.  The contraction
+by step [](#noether-normalization-base-change){.pf-ref}.  The contraction
 \[
 \mathfrak q\cap R
 \]
@@ -392,27 +444,35 @@ is an integral finite extension.  Integral extensions preserve Krull dimension, 
 This is the dimension of the irreducible component $V(\mathfrak q)$.
 :::
 
-<1>14. Every irreducible component $C$ of $X'$ has dimension $d=\dim X$.
-::: {.proof}
-By <1>11, $C$ contains a point mapping to the generic point of $X$, so it meets the inverse image $U'$ of every nonempty open $U\subseteq X$.  Hence
+:::
+
+::: {.pf-step #component-of-xprime-dim-d}
+Every irreducible component $C$ of $X'$ has dimension $d=\dim X$.
+
+::: pf-proof
+By step [](#component-dominates-x){.pf-ref}, $C$ contains a point mapping to the generic point of $X$, so it meets the inverse image $U'$ of every nonempty open $U\subseteq X$.  Hence
 \[
 C\cap U'
 \]
 is a nonempty open subset of $C$.  It is an irreducible component of $U'$: if it were properly contained in a larger irreducible closed subset of $U'$, its closure in $X'$ would be an irreducible closed subset properly containing the component $C$.
 
-By <1>13,
+By step [](#component-of-uprime-dim-d){.pf-ref},
 \[
 \dim(C\cap U')=d.
 \]
-Give $C$ its reduced induced structure.  It is an integral scheme of finite type over $k'$.  Part (e), already proved in <1>10, gives
+Give $C$ its reduced induced structure.  It is an integral scheme of finite type over $k'$.  Part (e), already proved in step [](#dimu-equals-dimx){.pf-ref}, gives
 \[
 \dim C=\dim(C\cap U')=d.
 \]
 This proves part (f).
 :::
 
-<1>15. Q.E.D.
-::: {.proof}
-Step <1>5 proves part (a), <1>4 proves part (b), <1>7 proves part (c), <1>9 proves part (d), <1>10 proves part (e), and <1>14 proves part (f).
 :::
+
+::: pf-qed
+Step [](#dim-op-equals-dimx-closed-point){.pf-ref} proves part (a), step [](#dimx-equals-trdeg){.pf-ref} proves part (b), step [](#codim-y-equals-inf-dim-op){.pf-ref} proves part (c), step [](#dimy-plus-codimy-equals-dimx){.pf-ref} proves part (d), step [](#dimu-equals-dimx){.pf-ref} proves part (e), and step [](#component-of-xprime-dim-d){.pf-ref} proves part (f).
+:::
+
+:::
+
 :::

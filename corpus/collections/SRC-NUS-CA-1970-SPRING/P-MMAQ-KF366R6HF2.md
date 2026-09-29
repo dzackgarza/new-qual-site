@@ -148,9 +148,13 @@ Step [](#pole-residue-conclusion){.pf-ref}.
 
 :::
 
+:::
+
 * * *
 
 ### Step 2: Cauchy's theorem on the region with small disks removed
+
+::: pf
 
 ::: pf-step
 **Finiteness of zeros and poles inside $\gamma$.**
@@ -232,9 +236,13 @@ Step [](#cauchy-contour-integral-decomposition){.pf-ref}.
 
 :::
 
+:::
+
 * * *
 
 ### Step 3: The integrals over the small circles
+
+::: pf
 
 ::: pf-step
 **Evaluate the small circle integrals.**

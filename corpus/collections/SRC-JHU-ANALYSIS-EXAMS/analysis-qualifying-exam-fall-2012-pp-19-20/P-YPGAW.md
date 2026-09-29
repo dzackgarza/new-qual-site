@@ -36,8 +36,13 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Choose a subsequence with summable $L^1$ errors.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Choose a subsequence with summable $L^1$ errors.
+
+::: pf-proof
 Since
 \[
 \|f_n-f\|_1\longrightarrow0,
@@ -53,8 +58,12 @@ such that
 for every $j$.
 :::
 
-<1>2. Prove almost-everywhere convergence of that subsequence.
-::: {.proof}
+:::
+
+::: pf-step
+Prove almost-everywhere convergence of that subsequence.
+
+::: pf-proof
 By Tonelli's theorem,
 \[
 \begin{aligned}
@@ -75,8 +84,12 @@ for almost every $x$. Therefore
 for almost every $x$, proving part (a).
 :::
 
-<1>3. Give a counterexample to uniform convergence.
-::: {.proof}
+:::
+
+::: pf-step
+Give a counterexample to uniform convergence.
+
+::: pf-proof
 Let
 \[
 f_n=\mathbf1_{(0,1/n)},
@@ -94,5 +107,9 @@ However,
 for every $n$. The same is true for every subsequence, so no subsequence can converge uniformly to $f$.
 
 Thus the almost-everywhere conclusion cannot be replaced by uniform convergence.
+:::
+
+:::
+
 :::
 :::

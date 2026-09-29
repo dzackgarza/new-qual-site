@@ -38,12 +38,16 @@ be a uniformizer and let
 K=\operatorname{Frac}(R).
 \]
 
-<1>1. The scheme
+::: pf
+
+::: {.pf-step #x-has-dimension-two}
+The scheme
 \[
 X=\Spec R[t]
 \]
 has dimension $2$.
-::: {.proof}
+
+::: pf-proof
 The DVR $R$ is a noetherian ring of dimension $1$.  For a noetherian ring,
 \[
 \dim R[t]=\dim R+1=2.
@@ -55,12 +59,16 @@ Concretely, the chain
 already shows that the dimension is at least $2$.
 :::
 
-<1>2. The ideal
+:::
+
+::: {.pf-step #m-is-maximal}
+The ideal
 \[
 \mathfrak m=(\pi t-1)\subseteq R[t]
 \]
 is maximal.
-::: {.proof}
+
+::: pf-proof
 In the quotient, the relation
 \[
 \pi t=1
@@ -79,9 +87,13 @@ P\in X
 is closed.
 :::
 
-<1>3. The maximal ideal $\mathfrak m=(\pi t-1)$ has height $1$.
-::: {.proof}
-The ring $R[t]$ is a noetherian domain and $\pi t-1$ is a nonzero nonunit.  Since the principal ideal it generates is prime by <1>2, Krull's principal ideal theorem gives
+:::
+
+::: {.pf-step #m-has-height-one}
+The maximal ideal $\mathfrak m=(\pi t-1)$ has height $1$.
+
+::: pf-proof
+The ring $R[t]$ is a noetherian domain and $\pi t-1$ is a nonzero nonunit.  Since the principal ideal it generates is prime by step [](#m-is-maximal){.pf-ref}, Krull's principal ideal theorem gives
 \[
 \operatorname{ht}(\mathfrak m)\le1.
 \]
@@ -95,9 +107,13 @@ its height is at least $1$.  Hence
 \]
 :::
 
-<1>4. Hartshorne II.3.20(a) fails for $X$.
-::: {.proof}
-At the closed point $P$ from <1>2,
+:::
+
+::: {.pf-step #disproves-3-20a}
+Hartshorne II.3.20(a) fails for $X$.
+
+::: pf-proof
+At the closed point $P$ from step [](#m-is-maximal){.pf-ref},
 \[
 \mathcal O_{X,P}=R[t]_{\mathfrak m}.
 \]
@@ -108,15 +124,19 @@ Therefore
 \operatorname{ht}(\mathfrak m)
 =1
 \]
-by <1>3, whereas
+by step [](#m-has-height-one){.pf-ref}, whereas
 \[
 \dim X=2
 \]
-by <1>1.  Thus the equality asserted in II.3.20(a) is false here.
+by step [](#x-has-dimension-two){.pf-ref}.  Thus the equality asserted in II.3.20(a) is false here.
 :::
 
-<1>5. Hartshorne II.3.20(d) also fails for $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #disproves-3-20d}
+Hartshorne II.3.20(d) also fails for $X$.
+
+::: pf-proof
 Take the closed subset
 \[
 Y=\{P\}=V(\mathfrak m).
@@ -135,12 +155,16 @@ Thus
 \]
 :::
 
-<1>6. The nonempty open subset
+:::
+
+::: {.pf-step #dpi-has-dimension-one}
+The nonempty open subset
 \[
 D(\pi)\subseteq X
 \]
 has dimension $1$.
-::: {.proof}
+
+::: pf-proof
 Localizing at $\pi$ gives
 \[
 D(\pi)
@@ -152,21 +176,29 @@ D(\pi)
 The polynomial ring in one variable over the field $K$ has dimension $1$.
 :::
 
-<1>7. Hartshorne II.3.20(e) fails for $X$.
-::: {.proof}
-The open $D(\pi)$ is nonempty, but by <1>6
+:::
+
+::: {.pf-step #disproves-3-20e}
+Hartshorne II.3.20(e) fails for $X$.
+
+::: pf-proof
+The open $D(\pi)$ is nonempty, but by step [](#dpi-has-dimension-one){.pf-ref}
 \[
 \dim D(\pi)=1,
 \]
-while by <1>1
+while by step [](#x-has-dimension-two){.pf-ref}
 \[
 \dim X=2.
 \]
 Thus a nonempty open subset need not have the same dimension once the base is no longer a field.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-Step <1>4 disproves II.3.20(a), <1>5 disproves II.3.20(d), and <1>7 disproves II.3.20(e).
 :::
+
+::: pf-qed
+Step [](#disproves-3-20a){.pf-ref} disproves II.3.20(a), step [](#disproves-3-20d){.pf-ref} disproves II.3.20(d), and step [](#disproves-3-20e){.pf-ref} disproves II.3.20(e).
+:::
+
+:::
+
 :::

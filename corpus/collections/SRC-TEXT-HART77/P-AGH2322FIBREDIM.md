@@ -59,7 +59,10 @@ If a prime $\mathfrak q\subseteq S$ lies over $\mathfrak p\subseteq R$, then
 \]
 This is Stacks Project, Tag 00OM.
 
-<1>1. In part (a), the assertion is local around the generic points of $Y'$ and $Z$.
+::: pf
+
+::: {.pf-step #contraction-and-minimality-setup}
+In part (a), the assertion is local around the generic points of $Y'$ and $Z$.
 Choose affine neighborhoods
 \[
 Y_0=\Spec B\subseteq Y,
@@ -77,7 +80,7 @@ Then
 \]
 and $\mathfrak q$ is minimal over $\mathfrak pA$.
 
-::: {.proof}
+::: pf-proof
 The equality of contractions says exactly that $f(\zeta)=\eta'$.
 
 The inverse image of $Y'$ in $X_0$ is cut out set-theoretically by $\mathfrak pA$.
@@ -85,12 +88,15 @@ Since $Z$ is an irreducible component of $f^{-1}(Y')$, its intersection with $X_
 Thus its generic prime $\mathfrak q$ is minimal over $\mathfrak pA$.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #fibre-dim-zero-quotient}
+One has
 \[
 \dim\bigl(A_{\mathfrak q}/\mathfrak pA_{\mathfrak q}\bigr)=0.
 \]
 
-::: {.proof}
+::: pf-proof
 Primes of this quotient correspond to primes
 \[
 \mathfrak r\subseteq A
@@ -106,17 +112,20 @@ Minimality of $\mathfrak q$ over $\mathfrak pA$ forces
 Hence the quotient has one prime ideal and dimension $0$.
 :::
 
-<1>3. Therefore
+:::
+
+::: {.pf-step #codim-z-leq-codim-yprime}
+Therefore
 \[
 \boxed{\codim(Z,X)\le\codim(Y',Y).}
 \]
 
-::: {.proof}
+::: pf-proof
 Apply the local dimension inequality to
 \[
 B_{\mathfrak p}\longrightarrow A_{\mathfrak q}.
 \]
-By <1>2,
+By step [](#fibre-dim-zero-quotient){.pf-ref},
 \[
 \dim A_{\mathfrak q}\le\dim B_{\mathfrak p}.
 \]
@@ -129,7 +138,10 @@ Hartshorne II.3.20(c) identifies these local dimensions with the codimensions of
 This proves part (a).
 :::
 
-<1>4. Let $y\in f(X)$ and let $W$ be an irreducible component of the fibre $X_y$.
+:::
+
+::: {.pf-step #z-is-component-with-generic-point-over-y}
+Let $y\in f(X)$ and let $W$ be an irreducible component of the fibre $X_y$.
 If
 \[
 Y'=\overline{\{y\}}
@@ -140,7 +152,7 @@ Z=\overline W\subseteq X,
 \]
 then $Z$ is an irreducible component of $f^{-1}(Y')$, and its generic point maps to $y$, the generic point of $Y'$.
 
-::: {.proof}
+::: pf-proof
 Work on affine neighborhoods
 \[
 Y_0=\Spec B\ni y,
@@ -170,12 +182,15 @@ Hence $\mathfrak q$ is minimal over $\mathfrak pA$.
 Thus $V(\mathfrak q)$ is an irreducible component of the inverse image of $V(\mathfrak p)=Y'\cap Y_0$.  Taking its closure in $X$ gives the asserted component $Z$ of $f^{-1}(Y')$.  Its generic point is the same point represented by $\mathfrak q$, and its image is $y$.
 :::
 
-<1>5. With the notation of <1>4,
+:::
+
+::: {.pf-step #dimw-equals-dimz-minus-dimyprime}
+With the notation of step [](#z-is-component-with-generic-point-over-y){.pf-ref},
 \[
 \boxed{\dim W=\dim Z-\dim Y'.}
 \]
 
-::: {.proof}
+::: pf-proof
 Let $w$ be the generic point of $W$, equivalently of $Z$.
 Since $w$ maps to the generic point $y$ of $Y'$, there is an inclusion of function fields
 \[
@@ -199,13 +214,16 @@ By additivity of transcendence degree,
 Applying II.3.20(b) to $Z$ and $Y'$ gives the displayed equality.
 :::
 
-<1>6. Every irreducible component of every nonempty fibre has dimension at least
+:::
+
+::: {.pf-step #fibre-components-dim-geq-e}
+Every irreducible component of every nonempty fibre has dimension at least
 \[
 e=\dim X-\dim Y.
 \]
 
-::: {.proof}
-Let $W,Z,Y'$ be as in <1>4.  Part (a) gives
+::: pf-proof
+Let $W,Z,Y'$ be as in step [](#z-is-component-with-generic-point-over-y){.pf-ref}.  Part (a) gives
 \[
 \codim(Z,X)\le\codim(Y',Y).
 \]
@@ -221,14 +239,17 @@ Rearranging,
 \ge
 \dim X-\dim Y=e.
 \]
-Now apply <1>5:
+Now apply step [](#dimw-equals-dimz-minus-dimyprime){.pf-ref}:
 \[
 \dim W\ge e.
 \]
 This proves part (b).
 :::
 
-<1>7. For part (c), after replacing $X$ and $Y$ by dense affine opens, we may assume
+:::
+
+::: {.pf-step #reduce-to-affine-finitely-generated}
+For part (c), after replacing $X$ and $Y$ by dense affine opens, we may assume
 \[
 X=\Spec A,
 \qquad
@@ -236,11 +257,14 @@ Y=\Spec B,
 \]
 with $B\hookrightarrow A$ a finitely generated inclusion of domains.
 
-::: {.proof}
+::: pf-proof
 Choose an affine open neighborhood of the generic point of $Y$, and then an affine open neighborhood of the generic point of $X$ contained in its inverse image.  Both replacements are nonempty open subsets of integral finite-type schemes, so Hartshorne II.3.20(e) preserves their dimensions.  Their function fields are unchanged by II.3.6, so the relative dimension $e$ is unchanged as well.
 :::
 
-<1>8. There exist elements
+:::
+
+::: {.pf-step #transcendence-basis-generically-finite}
+There exist elements
 \[
 t_1,\ldots,t_e\in A
 \]
@@ -257,7 +281,7 @@ defines a dominant generically finite morphism
 g:X\longrightarrow X_1:=\Spec B[t_1,\ldots,t_e]\cong\mathbb A^e_Y.
 \]
 
-::: {.proof}
+::: pf-proof
 By II.3.20(b),
 \[
 e
@@ -280,7 +304,10 @@ K(X)/K(Y)(t_1,\ldots,t_e)
 is algebraic and finitely generated as a field extension, hence finite.  Thus the generic fibre of $g$ is finite, so $g$ is generically finite.
 :::
 
-<1>9. There is a dense open subset
+:::
+
+::: {.pf-step #dense-open-w-finite-surjective}
+There is a dense open subset
 \[
 W\subseteq X_1
 \]
@@ -290,18 +317,21 @@ U:=g^{-1}(W)\longrightarrow W
 \]
 is finite and surjective.
 
-::: {.proof}
+::: pf-proof
 Hartshorne II.3.7 applied to the generically finite morphism $g$ gives a dense open $W$ such that $U\to W$ is finite.
 
 The restriction remains dominant because $U$ and $W$ contain the generic points.  A finite morphism is closed, so its image is both closed and dense in the irreducible space $W$.  Hence its image is all of $W$.
 :::
 
-<1>10. For every $y\in f(U)$,
+:::
+
+::: {.pf-step #dim-uy-equals-e}
+For every $y\in f(U)$,
 \[
 \boxed{\dim U_y=e.}
 \]
 
-::: {.proof}
+::: pf-proof
 The morphism $X_1\to Y$ is affine $e$-space.
 Its fibre at $y$ is
 \[
@@ -325,18 +355,24 @@ Integral finite extensions preserve Krull dimension, so
 This proves part (c).
 :::
 
-<1>11. For the original morphism $f:X\to Y$, one has
+:::
+
+::: {.pf-step #ee-equals-x}
+For the original morphism $f:X\to Y$, one has
 \[
 \boxed{E_e=X.}
 \]
 
-::: {.proof}
+::: pf-proof
 Given $x\in X$, put $y=f(x)$ and choose an irreducible component of $X_y$ containing $x$.  By part (b), every such component has dimension at least $e$.  Hence $x\in E_e$.
 :::
 
-<1>12. If $h>e$, then $E_h$ is not dense in $X$.
+:::
 
-::: {.proof}
+::: {.pf-step #eh-not-dense-for-h-gt-e}
+If $h>e$, then $E_h$ is not dense in $X$.
+
+::: pf-proof
 Let $U\subseteq X$ be the dense open subset from part (c). We claim
 \[
 E_h\cap U=\varnothing.
@@ -362,9 +398,12 @@ Thus no point of $U$ lies in $E_h$ for $h>e$.
 Since $U$ is nonempty open, $E_h$ cannot be dense.
 :::
 
-<1>13. We prove by induction on $\dim X$ that every $E_h$ is closed.
+:::
 
-::: {.proof}
+::: {.pf-step #eh-closed-induction-setup}
+We prove by induction on $\dim X$ that every $E_h$ is closed.
+
+::: pf-proof
 If $\dim X=0$, every nonempty fibre component has dimension $0$, so each $E_h$ is either $X$ or $\varnothing$.
 
 Assume the assertion for dominant morphisms whose integral source has dimension $<\dim X$.
@@ -375,7 +414,7 @@ E_h=X,
 \]
 which is closed.
 Now suppose $h>e$.
-Let $U$ be the dense open from part (c). By <1>12,
+Let $U$ be the dense open from part (c). By step [](#eh-not-dense-for-h-gt-e){.pf-ref},
 \[
 E_h\subseteq F:=X\setminus U,
 \]
@@ -400,12 +439,15 @@ is a dominant finite type morphism of integral schemes.  Indeed, the composite $
 Thus the induction hypothesis applies to every $f_i$.
 :::
 
-<1>14. With the notation of <1>13,
+:::
+
+::: {.pf-step #eh-f-union-eh-fi}
+With the notation of step [](#eh-closed-induction-setup){.pf-ref},
 \[
 E_h(f)=\bigcup_{i=1}^r E_h(f_i).
 \]
 
-::: {.proof}
+::: pf-proof
 Let $x\in E_h(f)$.
 Choose an irreducible component
 \[
@@ -432,20 +474,26 @@ Conversely, if $x\in E_h(f_i)$, an irreducible component $W$ of $(F_i)_{f(x)}$ t
 Hence $x\in E_h(f)$.
 :::
 
-<1>15. Every set $E_h$ is closed.
+:::
 
-::: {.proof}
-For $h\le e$ this was already observed in <1>13. For $h>e$, the induction hypothesis makes each
+::: {.pf-step #every-eh-closed}
+Every set $E_h$ is closed.
+
+::: pf-proof
+For $h\le e$ this was already observed in step [](#eh-closed-induction-setup){.pf-ref}. For $h>e$, the induction hypothesis makes each
 \[
 E_h(f_i)
 \]
 closed in $F_i$, hence closed in $X$.
-Step <1>14 expresses $E_h(f)$ as their finite union, so it is closed.
+Step [](#eh-f-union-eh-fi){.pf-ref} expresses $E_h(f)$ as their finite union, so it is closed.
 
-This completes the induction and proves the closedness assertion in part (d), together with <1>11--<1>12.
+This completes the induction and proves the closedness assertion in part (d), together with steps [](#ee-equals-x){.pf-ref} and [](#eh-not-dense-for-h-gt-e){.pf-ref}.
 :::
 
-<1>16. For any integer $h\ge0$, let
+:::
+
+::: {.pf-step #dh-equals-f-of-eh}
+For any integer $h\ge0$, let
 \[
 D_h=\{y\in Y:\dim X_y\ge h\}.
 \]
@@ -454,15 +502,18 @@ Then
 \boxed{D_h=f(E_h).}
 \]
 
-::: {.proof}
+::: pf-proof
 If $y\in D_h$, some irreducible component of $X_y$ has dimension at least $h$; any point on that component belongs to $E_h$ and maps to $y$.
 
 Conversely, if $y=f(x)$ for some $x\in E_h$, the component witnessing $x\in E_h$ has dimension at least $h$, so $\dim X_y\ge h$.
 :::
 
-<1>17. Every $D_h$ is constructible.
+:::
 
-::: {.proof}
+::: {.pf-step #dh-constructible}
+Every $D_h$ is constructible.
+
+::: pf-proof
 By part (d), $E_h$ is closed in the noetherian finite-type scheme $X$.  Give it the reduced induced closed subscheme structure.  The restricted morphism
 \[
 E_h\longrightarrow Y
@@ -474,13 +525,16 @@ f(E_h)=D_h
 is constructible.
 :::
 
-<1>18. For every integer $h\ge0$,
+:::
+
+::: {.pf-step #ch-equals-dh-minus-dh1}
+For every integer $h\ge0$,
 \[
 \boxed{C_h=D_h\setminus D_{h+1}}
 \]
 and hence $C_h$ is constructible.
 
-::: {.proof}
+::: pf-proof
 A nonempty fibre has dimension exactly $h$ if and only if its dimension is at least $h$ but not at least $h+1$.
 For $h\ge0$, an empty fibre belongs to neither side.
 Thus the displayed equality holds.
@@ -494,9 +548,12 @@ C_{-1}=Y\setminus f(X),
 which is constructible because $f(X)$ is constructible by Hartshorne II.3.19.  For $h<-1$, $C_h=\varnothing$.  Hence $C_h$ is constructible for every integer $h$.
 :::
 
-<1>19. The generic fibre $X_\eta$, where $\eta$ is the generic point of $Y$, is integral and has dimension $e$.
+:::
 
-::: {.proof}
+::: {.pf-step #generic-fibre-integral-dim-e}
+The generic fibre $X_\eta$, where $\eta$ is the generic point of $Y$, is integral and has dimension $e$.
+
+::: pf-proof
 Work on affine neighborhoods
 \[
 Y_0=\Spec B,
@@ -531,18 +588,24 @@ Additivity of transcendence degree and II.3.20(b) for $X$ and $Y$ give
 \]
 :::
 
-<1>20. The constructible subset $C_e\subseteq Y$ contains a dense open subset of $Y$.
+:::
 
-::: {.proof}
-By <1>19, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.
-Step <1>18 shows that $C_e$ is constructible.
+::: {.pf-step #ce-contains-dense-open}
+The constructible subset $C_e\subseteq Y$ contains a dense open subset of $Y$.
+
+::: pf-proof
+By step [](#generic-fibre-integral-dim-e){.pf-ref}, the generic point $\eta$ of the irreducible space $Y$ belongs to $C_e$.
+Step [](#ch-equals-dh-minus-dh1){.pf-ref} shows that $C_e$ is constructible.
 
 Hartshorne II.3.18(b) says that a constructible subset of an irreducible Zariski space which contains the generic point is dense and contains a nonempty open subset.  Thus $C_e$ contains an open dense subset of $Y$.
 :::
 
-<1>21. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), <1>4--<1>6 prove part (b), <1>7--<1>10 prove part (c), <1>11--<1>15 prove part (d), and <1>16--<1>20 prove part (e).
 :::
+
+::: pf-qed
+Steps [](#contraction-and-minimality-setup){.pf-ref}, [](#fibre-dim-zero-quotient){.pf-ref} and [](#codim-z-leq-codim-yprime){.pf-ref} prove part (a), steps [](#z-is-component-with-generic-point-over-y){.pf-ref}, [](#dimw-equals-dimz-minus-dimyprime){.pf-ref} and [](#fibre-components-dim-geq-e){.pf-ref} prove part (b), steps [](#reduce-to-affine-finitely-generated){.pf-ref}, [](#transcendence-basis-generically-finite){.pf-ref}, [](#dense-open-w-finite-surjective){.pf-ref} and [](#dim-uy-equals-e){.pf-ref} prove part (c), steps [](#ee-equals-x){.pf-ref}, [](#eh-not-dense-for-h-gt-e){.pf-ref}, [](#eh-closed-induction-setup){.pf-ref}, [](#eh-f-union-eh-fi){.pf-ref} and [](#every-eh-closed){.pf-ref} prove part (d), and steps [](#dh-equals-f-of-eh){.pf-ref}, [](#dh-constructible){.pf-ref}, [](#ch-equals-dh-minus-dh1){.pf-ref}, [](#generic-fibre-integral-dim-e){.pf-ref} and [](#ce-contains-dense-open){.pf-ref} prove part (e).
+:::
+
+:::
+
 :::

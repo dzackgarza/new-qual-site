@@ -39,16 +39,22 @@ f(x,y)=F(x,y,1)=f_0+f_1+\cdots+f_d
 $$
 with each $f_i$ homogeneous of degree $i$ in $x,y$.
 
-<1>1. The multiplicity of $Y$ at $P$ is at most $d$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #multiplicity-at-most-d}
+The multiplicity of $Y$ at $P$ is at most $d$.
+
+::: pf-proof
 By Exercise I.5.3, the multiplicity is the least index $m$ for which $f_m\ne0$.
 Since $f$ has degree at most $d$ and is nonzero, such an index satisfies $m\le d$.
 :::
 
-<1>2. If the multiplicity at $P$ were $d$, then $F$ would be reducible for $d>1$.
+:::
 
-::: {.proof}
+::: {.pf-step #multiplicity-d-reducible}
+If the multiplicity at $P$ were $d$, then $F$ would be reducible for $d>1$.
+
+::: pf-proof
 Multiplicity $d$ means
 $$
 f_0=f_1=\cdots=f_{d-1}=0,
@@ -62,20 +68,23 @@ which is independent of $z$.
 Over the algebraically closed field $k$, the binary homogeneous form $f_d(x,y)$ factors into $d$ linear forms, counted with multiplicity.
 For $d>1$ this contradicts irreducibility of $F$.
 
-Together with step <1>1, this proves
+Together with step [](#multiplicity-at-most-d){.pf-ref}, this proves
 $$
 \boxed{\mu_P(Y)\le d-1}
 $$
 for every point of an irreducible plane curve of degree $d>1$, proving part (a).
 :::
 
-<1>3. If $\mu_P(Y)=d-1$, then the equation of $Y$ has the form
+:::
+
+::: {.pf-step #equation-form-mult-d-minus-1}
+If $\mu_P(Y)=d-1$, then the equation of $Y$ has the form
 $$
 F(x,y,z)=z f_{d-1}(x,y)+f_d(x,y),
 $$
 with $f_{d-1}\ne0$.
 
-::: {.proof}
+::: pf-proof
 The multiplicity hypothesis gives
 $$
 f_0=\cdots=f_{d-2}=0,
@@ -85,17 +94,20 @@ Since $F$ is homogeneous of total degree $d$, the degree-$(d-1)$ affine term acq
 This is exactly the displayed equation.
 :::
 
-<1>4. Projection from $P$ gives a birational map
+:::
+
+::: {.pf-step #projection-birational}
+Projection from $P$ gives a birational map
 $$
 \pi:Y\dashrightarrow\PP^1,
 \qquad
 [x:y:z]\longmapsto[x:y].
 $$
 
-::: {.proof}
+::: pf-proof
 The map is defined away from $P$.
 For a direction $[u:v]\in\PP^1$, the corresponding line through $P$ consists of points with $[x:y]=[u:v]$.
-Substituting $x=u$, $y=v$ into step <1>3 gives
+Substituting $x=u$, $y=v$ into step [](#equation-form-mult-d-minus-1){.pf-ref} gives
 $$
 z f_{d-1}(u,v)+f_d(u,v)=0.
 $$
@@ -126,16 +138,21 @@ Thus $\rho\pi$ is the identity there.
 Hence $Y$ and $\PP^1$ are birational.
 :::
 
-<1>5. The curve $Y$ is rational.
-
-::: {.proof}
-By definition, an irreducible curve is rational precisely when it is birationally equivalent to $\PP^1$.
-Step <1>4 supplies such a birational equivalence, proving part (b).
 :::
 
-<1>6. Q.E.D.
+::: {.pf-step #curve-is-rational}
+The curve $Y$ is rational.
 
-::: {.proof}
-Steps <1>1--<1>2 prove part (a), and steps <1>3--<1>5 prove part (b).
+::: pf-proof
+By definition, an irreducible curve is rational precisely when it is birationally equivalent to $\PP^1$.
+Step [](#projection-birational){.pf-ref} supplies such a birational equivalence, proving part (b).
+:::
+
+:::
+
+::: pf-qed
+Steps [](#multiplicity-at-most-d){.pf-ref} and [](#multiplicity-d-reducible){.pf-ref} prove part (a), and steps [](#equation-form-mult-d-minus-1){.pf-ref}, [](#projection-birational){.pf-ref} and [](#curve-is-rational){.pf-ref} prove part (b).
+:::
+
 :::
 :::

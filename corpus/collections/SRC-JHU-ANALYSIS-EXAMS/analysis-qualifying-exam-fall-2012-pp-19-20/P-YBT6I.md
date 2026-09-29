@@ -36,27 +36,38 @@ Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \
 ::: {.solution}
 Write $\tau_hg(y)\da g(y-h)$ and $\norm\cdot_p$ for the $L^p(\RR)$ norm.
 
-<1>1. (a) For $f,g\in L^2$, $\abs{(f\ast g)(x)}\le\norm f_2\norm g_2$ for every $x$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #convolution-bounded}
+(a) For $f,g\in L^2$, $\abs{(f\ast g)(x)}\le\norm f_2\norm g_2$ for every $x$.
+
+::: pf-proof
 By the Cauchy--Schwarz inequality, $\abs{\int f(y)g(x-y)\,dy}\le\norm f_2\norm{g(x-\cdot)}_2=\norm f_2\norm g_2$.
 :::
 
-<1>2. (a) $f\ast g$ is continuous.
+:::
 
-::: {.proof}
+::: {.pf-step #convolution-continuous}
+(a) $f\ast g$ is continuous.
+
+::: pf-proof
 By the Cauchy--Schwarz inequality, $\abs{(f\ast g)(x+h)-(f\ast g)(x)}\le\norm f_2\norm{\tau_{-h}g-g}_2$, which tends to $0$ as $h\to0$ by continuity of translation in $L^2$ [@Fol13].
 :::
 
-<1>3. (b) For $f,h\in L^1$, $\norm{f\ast h}_1\le\norm f_1\norm h_1$, so $A$ is a bounded operator on $L^1$ with $\norm A\le\norm h_1$.
+:::
 
-::: {.proof}
+::: {.pf-step #convolution-operator-bounded}
+(b) For $f,h\in L^1$, $\norm{f\ast h}_1\le\norm f_1\norm h_1$, so $A$ is a bounded operator on $L^1$ with $\norm A\le\norm h_1$.
+
+::: pf-proof
 By Tonelli's theorem, $\int\abs{(f\ast h)(x)}\,dx\le\iint\abs{f(y)}\abs{h(x-y)}\,dy\,dx=\norm f_1\norm h_1$. The map $A$ is linear, so this bound makes it bounded.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1 and <1>2 prove part (a), and step <1>3 proves part (b).
+::: pf-qed
+Steps [](#convolution-bounded){.pf-ref} and [](#convolution-continuous){.pf-ref} prove part (a), and step [](#convolution-operator-bounded){.pf-ref} proves part (b).
+:::
+
 :::
 :::

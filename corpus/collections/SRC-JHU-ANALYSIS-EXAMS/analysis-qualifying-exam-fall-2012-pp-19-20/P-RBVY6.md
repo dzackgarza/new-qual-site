@@ -38,8 +38,12 @@ F_t(z)=\frac{e^{-itz}}{z^2+1}.
 \]
 Its poles are simple, at $z=i$ and $z=-i$.
 
-<1>1. The case $t>0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The case $t>0$.
+
+::: pf-proof
 Close the contour by the lower semicircle of radius $R>1$, oriented clockwise. If $z=x+iy$ lies in the lower half-plane, then
 \[
 |e^{-itz}|=e^{ty}\le1.
@@ -66,8 +70,12 @@ Because the contour is clockwise, the residue theorem gives
 \]
 :::
 
-<1>2. The case $t<0$.
-::: {.proof}
+:::
+
+::: pf-step
+The case $t<0$.
+
+::: pf-proof
 Now close the contour by the upper semicircle. Since $t<0$ and $y\ge0$,
 \[
 |e^{-itz}|=e^{ty}\le1,
@@ -87,8 +95,12 @@ Thus
 \]
 :::
 
-<1>3. The case $t=0$ and the final formula.
-::: {.proof}
+:::
+
+::: pf-step
+The case $t=0$ and the final formula.
+
+::: pf-proof
 At $t=0$,
 \[
 \widehat f(0)=\int_{-\infty}^{\infty}\frac{dx}{1+x^2}=\pi.
@@ -97,5 +109,9 @@ Combining the three cases,
 \[
 \boxed{\widehat f(t)=\pi e^{-|t|}}.
 \]
+:::
+
+:::
+
 :::
 :::

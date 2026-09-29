@@ -33,13 +33,17 @@ Give an example of a ring and a nonzero ideal which satisfy its hypotheses.
 ::: {.solution}
 One standard form of Nakayama's lemma is the following.
 
-<1>1. Let $R$ be a commutative ring, let $M$ be a finitely generated
+::: pf
+
+::: {.pf-step #nakayama-im-equals-m}
+Let $R$ be a commutative ring, let $M$ be a finitely generated
 $R$-module, and let $I\subseteq\operatorname{Jac}(R)$. If
 \[
 IM=M,
 \]
 then $M=0$.
-::: {.proof}
+
+::: pf-proof
 Choose a minimal generating set $m_1,\ldots,m_r$ for $M$. If $r>0$, the
 equality $IM=M$ gives
 \[
@@ -54,24 +58,36 @@ the span of the preceding generators, contradicting minimality. Therefore
 $r=0$ and $M=0$.
 :::
 
-<1>2. Equivalently, if $N\subseteq M$ and
+:::
+
+::: pf-step
+Equivalently, if $N\subseteq M$ and
 \[
 M=N+IM,
 \]
 with $M$ finitely generated and $I\subseteq\operatorname{Jac}(R)$, then
 $M=N$.
-::: {.proof}
-Apply <1>1 to the finitely generated quotient $M/N$.
+
+::: pf-proof
+Apply step [](#nakayama-im-equals-m){.pf-ref} to the finitely generated quotient $M/N$.
 :::
 
-<1>3. A concrete nonzero ideal satisfying the hypotheses is
+:::
+
+::: pf-step
+A concrete nonzero ideal satisfying the hypotheses is
 \[
 I=(x)\subset R=k[x]_{(x)}.
 \]
-::: {.proof}
+
+::: pf-proof
 The localization $R=k[x]_{(x)}$ is a local ring with maximal ideal $(x)$.
 For every local ring, its maximal ideal is the Jacobson radical. Thus the
 nonzero ideal $I=(x)$ lies in $\operatorname{Jac}(R)$, as required in
 Nakayama's lemma.
+:::
+
+:::
+
 :::
 :::

@@ -29,9 +29,12 @@ Thus $Y$ is isomorphic to a quadric hypersurface in $\PP^{r+1}$.
 :::
 
 ::: {.solution}
-<1>1. The variety $Y$ has a nonsingular point.
+::: pf
 
-::: {.proof}
+::: pf-step
+The variety $Y$ has a nonsingular point.
+
+::: pf-proof
 By Theorem I.5.3, the singular locus of a variety is a proper closed subset.
 Hence its complement is a nonempty open subset of $Y$.
 Choose
@@ -40,14 +43,17 @@ P\in\Reg Y.
 $$
 :::
 
-<1>2. Let $X$ be the join of $P$ with $Y$ from Exercise I.7.7. Then
+:::
+
+::: {.pf-step #join-degree-one}
+Let $X$ be the join of $P$ with $Y$ from Exercise I.7.7. Then
 $$
 \dim X=r+1,
 \qquad
 \deg X=1.
 $$
 
-::: {.proof}
+::: pf-proof
 Apply [[P-AGH77CONEDEGDROP|Exercise I.7.7]] to the degree-two variety $Y$ and the nonsingular point $P$.
 It gives
 $$
@@ -63,24 +69,30 @@ $$
 $$
 :::
 
-<1>3. The variety $X$ is a linear subspace
+:::
+
+::: {.pf-step #join-is-linear-span}
+The variety $X$ is a linear subspace
 $$
 \boxed{L\cong\PP^{r+1}\subseteq\PP^n}
 $$
 containing $Y$.
 
-::: {.proof}
+::: pf-proof
 By definition of the join, $Y\subseteq X$.
-Step <1>2 makes $X$ a projective variety of degree one.
+Step [](#join-degree-one){.pf-ref} makes $X$ a projective variety of degree one.
 By [[P-AGH76DEGONELINEAR|Exercise I.7.6]], every pure-dimensional degree-one projective algebraic set is linear.
 Thus $X$ is a linear subspace $L\subseteq\PP^n$.
-Its dimension is $r+1$ by step <1>2, and it contains $Y$.
+Its dimension is $r+1$ by step [](#join-degree-one){.pf-ref}, and it contains $Y$.
 This proves the first assertion.
 :::
 
-<1>4. Inside $L\cong\PP^{r+1}$, the variety $Y$ is a quadric hypersurface.
+:::
 
-::: {.proof}
+::: {.pf-step #y-is-quadric-hypersurface}
+Inside $L\cong\PP^{r+1}$, the variety $Y$ is a quadric hypersurface.
+
+::: pf-proof
 The inclusion
 $$
 Y^r\subseteq L^{r+1}
@@ -101,9 +113,11 @@ $$
 Thus $Y$ is a quadric hypersurface in $L\cong\PP^{r+1}$.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 gives the required linear span of dimension $r+1$, and step <1>4 identifies $Y$ inside that span as a quadric hypersurface.
+::: pf-qed
+Step [](#join-is-linear-span){.pf-ref} gives the required linear span of dimension $r+1$, and step [](#y-is-quadric-hypersurface){.pf-ref} identifies $Y$ inside that span as a quadric hypersurface.
+:::
+
 :::
 :::

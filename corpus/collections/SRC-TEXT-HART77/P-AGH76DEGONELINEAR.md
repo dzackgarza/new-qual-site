@@ -30,9 +30,12 @@ Then do the general case by cutting with a hyperplane and using induction.
 :::
 
 ::: {.solution}
-<1>1. A pure-dimensional algebraic set of degree one is irreducible.
+::: pf
 
-::: {.proof}
+::: {.pf-step #pure-dim-degree-one-irreducible}
+A pure-dimensional algebraic set of degree one is irreducible.
+
+::: pf-proof
 Write the irreducible decomposition
 $$
 Y=Y_1\cup\cdots\cup Y_m.
@@ -47,17 +50,23 @@ If $\deg Y=1$, this forces $m=1$ and $\deg Y_1=1$.
 Thus $Y$ is a variety.
 :::
 
-<1>2. A zero-dimensional algebraic set of degree one is a point, hence a linear variety.
+:::
 
-::: {.proof}
-By step <1>1 it is irreducible.
+::: {.pf-step #degree-one-point-is-linear}
+A zero-dimensional algebraic set of degree one is a point, hence a linear variety.
+
+::: pf-proof
+By step [](#pure-dim-degree-one-irreducible){.pf-ref} it is irreducible.
 An irreducible zero-dimensional projective variety over the algebraically closed field $k$ is a single closed point.
 A point is a projective linear subspace of dimension zero.
 :::
 
-<1>3. An irreducible projective curve of degree one is a line.
+:::
 
-::: {.proof}
+::: {.pf-step #degree-one-curve-is-line}
+An irreducible projective curve of degree one is a line.
+
+::: pf-proof
 Let $Y\subseteq\PP^n$ be an irreducible curve with $\deg Y=1$.
 If $n=1$, then the only one-dimensional closed irreducible subset is $\PP^1$ itself, so the result is immediate.
 
@@ -79,9 +88,12 @@ Thus $Y\subseteq L$.
 Since both are irreducible closed subsets of dimension one, $Y=L$.
 :::
 
-<1>4. Assume inductively that every degree-one variety of dimension $r-1$ is linear. Then every degree-one variety $Y$ of dimension $r\ge2$ is linear.
+:::
 
-::: {.proof}
+::: {.pf-step #degree-one-induction-step}
+Assume inductively that every degree-one variety of dimension $r-1$ is linear. Then every degree-one variety $Y$ of dimension $r\ge2$ is linear.
+
+::: pf-proof
 If $Y=\PP^n$, then it is already linear, so assume $r<n$.
 Choose a hyperplane $H$ not containing $Y$.
 The irreducible components $Z_j$ of $Y\cap H$ all have dimension $r-1$ by the projective dimension theorem.
@@ -124,9 +136,12 @@ $$
 Thus $Y$ is linear.
 :::
 
-<1>5. Every linear variety has degree one.
+:::
 
-::: {.proof}
+::: {.pf-step #linear-variety-has-degree-one}
+Every linear variety has degree one.
+
+::: pf-proof
 A projective linear variety of dimension $r$ is projectively equivalent to the standard coordinate subspace $\PP^r\subseteq\PP^n$.
 Its homogeneous coordinate ring is a polynomial ring in $r+1$ variables, so its Hilbert polynomial is
 $$
@@ -139,9 +154,11 @@ r!\cdot\frac1{r!}=1.
 $$
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove that every pure-dimensional degree-one algebraic set is a linear variety, and step <1>5 proves the converse.
+::: pf-qed
+Steps [](#pure-dim-degree-one-irreducible){.pf-ref}, [](#degree-one-point-is-linear){.pf-ref}, [](#degree-one-curve-is-line){.pf-ref} and [](#degree-one-induction-step){.pf-ref} prove that every pure-dimensional degree-one algebraic set is a linear variety, and step [](#linear-variety-has-degree-one){.pf-ref} proves the converse.
+:::
+
 :::
 :::

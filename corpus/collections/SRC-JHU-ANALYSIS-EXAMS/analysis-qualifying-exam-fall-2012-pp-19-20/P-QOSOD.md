@@ -42,9 +42,12 @@ $$
 \qquad |\lambda|=1.}
 $$
 
-<1>1. Disk automorphisms reduce the derivative estimate to the origin.
+::: pf
 
-::: {.proof}
+::: {.pf-step #disk-automorphism-reduction}
+Disk automorphisms reduce the derivative estimate to the origin.
+
+::: pf-proof
 For $c\in D$, set
 $$
 \phi_c(z)=\frac{z-c}{1-\overline c z},
@@ -74,9 +77,12 @@ Schwarz's lemma gives $|G'(0)|\leq1$ [@SS03]. Therefore
 $|f'(1/2)|\leq7/12$.
 :::
 
-<1>2. Equality holds exactly for the displayed functions.
+:::
 
-::: {.proof}
+::: pf-step
+Equality holds exactly for the displayed functions.
+
+::: pf-proof
 Schwarz's lemma also gives $|G(w)|\leq|w|$. Thus
 $H(w)=G(w)/w$ extends holomorphically across zero, with
 $H(0)=G'(0)$, and satisfies $|H|\leq1$ on $D$.
@@ -89,9 +95,13 @@ $f=\phi_b^{-1}\circ(\lambda\phi_a)$, the stated formula.
 Conversely, for every $|\lambda|=1$ this composition is
 a holomorphic disk automorphism, sends $a$ to $b$, and
 has $G'(0)=\lambda$. The derivative calculation in
-step <1>1 therefore gives $|f_\lambda'(1/2)|=7/12$.
+step [](#disk-automorphism-reduction){.pf-ref} therefore gives $|f_\lambda'(1/2)|=7/12$.
 The explicit denominator cannot vanish since
 $|\frac34\lambda\phi_a(z)|<3/4$ on $D$.
 This proves attainment and exhausts all equality cases.
+:::
+
+:::
+
 :::
 :::

@@ -22,9 +22,13 @@ Give an example of a commutative ring with identity that has a prime ideal which
 :::
 
 ::: {.solution}
-<1>1. In $\ZZ$, the zero ideal is prime and not maximal.
 
-::: {.proof}
+::: pf
+
+::: pf-step
+In $\ZZ$, the zero ideal is prime and not maximal.
+
+::: pf-proof
 The quotient $\ZZ/\langle0\rangle\cong\ZZ$ is an integral domain, because the
 product of two nonzero integers is nonzero, so $\langle0\rangle$ is prime. The
 chain $\langle0\rangle\subsetneq\langle2\rangle\subsetneq\ZZ$ shows that
@@ -32,10 +36,13 @@ $\langle0\rangle$ is not maximal; equivalently, $2$ is not invertible in the
 quotient $\ZZ$, which is therefore not a field.
 :::
 
-<1>2. For a field $k$, the ideal $\langle x\rangle\subseteq k[x,y]$ is prime
+:::
+
+::: pf-step
+For a field $k$, the ideal $\langle x\rangle\subseteq k[x,y]$ is prime
 and not maximal.
 
-::: {.proof}
+::: pf-proof
 The quotient $k[x,y]/\langle x\rangle\cong k[y]$ is an integral domain, so
 $\langle x\rangle$ is prime. In $k[y]$ the nonzero element $y$ is not a unit,
 so $k[y]$ is not a field. Equivalently,
@@ -44,5 +51,9 @@ $$
 $$
 where $\langle x,y\rangle$ is maximal because
 $k[x,y]/\langle x,y\rangle\cong k$.
+:::
+
+:::
+
 :::
 :::

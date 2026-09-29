@@ -33,8 +33,12 @@ audit:
 Put $u_n=1-f_n$. Each $u_n$ is positive and harmonic on
 $D=\{|z|<1\}$, and $u_n(0)\to0$.
 
-<1>1. Values of a positive harmonic function on an interior disk are bounded by its central value.
-::: {.proof}
+::: pf
+
+::: {.pf-step #interior-disk-bound}
+Values of a positive harmonic function on an interior disk are bounded by its central value.
+
+::: pf-proof
 Let $u>0$ be harmonic on $D$, and fix $0\leq r<R<1$.
 The Poisson representation on the radius-$R$ disk gives,
 for $|z|\leq r$,
@@ -57,10 +61,14 @@ $$
 $$
 :::
 
-<1>2. Apply the common bound to the sequence.
-::: {.proof}
+:::
+
+::: pf-step
+Apply the common bound to the sequence.
+
+::: pf-proof
 For fixed $r<1$, choose any $R$ with $r<R<1$. Step
-<1>1 applied separately to $u_n$ yields
+[](#interior-disk-bound){.pf-ref} applied separately to $u_n$ yields
 $$
 \sup_{|z|\leq r}|1-f_n(z)|
 =\sup_{|z|\leq r}u_n(z)
@@ -72,5 +80,9 @@ estimate also proves uniform convergence on compact
 subsets. Monotonicity is compatible with the proof but
 is not needed once positivity of $1-f_n$ and its central
 limit are known.
+:::
+
+:::
+
 :::
 :::

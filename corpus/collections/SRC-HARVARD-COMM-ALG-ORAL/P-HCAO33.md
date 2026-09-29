@@ -33,7 +33,10 @@ Define an integral ring extension and state its principal properties.
 ::: {.solution}
 Let \(A\subseteq B\) be rings.
 
-<1>1. An element \(b\in B\) is \dfn{integral over \(A\)} if it satisfies a monic
+::: pf
+
+::: pf-step
+An element \(b\in B\) is \dfn{integral over \(A\)} if it satisfies a monic
 polynomial
 \[
 b^n+a_{n-1}b^{n-1}+\cdots+a_0=0,
@@ -41,17 +44,22 @@ b^n+a_{n-1}b^{n-1}+\cdots+a_0=0,
 \]
 The extension \(B/A\) is \dfn{integral} if every element of \(B\) is integral
 over \(A\).
-::: {.proof}
+
+::: pf-proof
 This is the definition.
 :::
 
-<1>2. For \(b\in B\), the following are equivalent:
+:::
+
+::: {.pf-step #integral-equivalent-conditions}
+For \(b\in B\), the following are equivalent:
 
 - \(b\) is integral over \(A\);
 - \(A[b]\) is a finitely generated \(A\)-module;
 - there is a faithful finitely generated \(A[b]\)-submodule of \(B\) that is
   finitely generated over \(A\).
-::: {.proof}
+
+::: pf-proof
 If \(b\) satisfies a monic equation of degree \(n\), every power \(b^m\) with
 \(m\ge n\) reduces to an \(A\)-linear combination of
 \(1,b,\ldots,b^{n-1}\), so \(A[b]\) is finite over \(A\).
@@ -65,38 +73,49 @@ monic polynomial \(p\in A[x]\) with \(p(b)M=0\). Faithfulness as an
 \(A[b]\)-module forces \(p(b)=0\), so \(b\) is integral.
 :::
 
-<1>3. Integral elements are stable under addition and multiplication, and
+:::
+
+::: pf-step
+Integral elements are stable under addition and multiplication, and
 integrality is transitive.
-::: {.proof}
-If \(b_1,\ldots,b_r\) are integral over \(A\), repeated use of <1>2 shows
+
+::: pf-proof
+If \(b_1,\ldots,b_r\) are integral over \(A\), repeated use of step [](#integral-equivalent-conditions){.pf-ref} shows
 \[
 A[b_1,\ldots,b_r]
 \]
 is a finite \(A\)-module. Every element of this ring, in particular sums and
-products of the \(b_i\), acts on this finite module, so <1>2 shows it is
+products of the \(b_i\), acts on this finite module, so step [](#integral-equivalent-conditions){.pf-ref} shows it is
 integral over \(A\). Thus the elements of \(B\) integral over \(A\) form a
 subring.
 
 If \(A\subseteq B\subseteq C\), with \(B\) integral over \(A\) and \(c\in C\)
 integral over \(B\), the coefficients of a monic equation for \(c\) involve
 only finitely many elements \(b_1,\ldots,b_r\in B\). The ring
-\(A[b_1,\ldots,b_r,c]\) is finite over \(A\), so <1>2 implies that \(c\) is
+\(A[b_1,\ldots,b_r,c]\) is finite over \(A\), so step [](#integral-equivalent-conditions){.pf-ref} implies that \(c\) is
 integral over \(A\).
 :::
 
-<1>4. Integrality is preserved by localization and quotient, and a finite-type
+:::
+
+::: pf-step
+Integrality is preserved by localization and quotient, and a finite-type
 integral algebra is module-finite.
-::: {.proof}
+
+::: pf-proof
 A monic equation remains monic after applying a quotient map or localization,
 which proves the first assertion. If
 \[
 B=A[b_1,\ldots,b_r]
 \]
-with each \(b_i\) integral, then repeated use of <1>2 shows \(B\) is a finite
+with each \(b_i\) integral, then repeated use of step [](#integral-equivalent-conditions){.pf-ref} shows \(B\) is a finite
 \(A\)-module.
 :::
 
-<1>5. If \(B\) is integral over \(A\), then the map
+:::
+
+::: pf-step
+If \(B\) is integral over \(A\), then the map
 \[
 \operatorname{Spec}B\longrightarrow\operatorname{Spec}A,
 \qquad \mathfrak q\longmapsto\mathfrak q\cap A,
@@ -112,7 +131,8 @@ has the following principal properties:
 - consequently, a prime \(\mathfrak q\subseteq B\) is maximal if and only if
   \(\mathfrak q\cap A\) is maximal, and
   \(\dim B=\dim A\).
-::: {.proof}
+
+::: pf-proof
 For lying over, quotient by \(\mathfrak p\subseteq A\) and localize at
 \(A\setminus\mathfrak p\). This reduces to an integral extension of a field
 \(k\) by a nonzero ring \(C\). A maximal ideal of \(C\) contracts to \(0\),
@@ -137,5 +157,9 @@ The maximal-ideal assertion follows from lying over and incomparability.
 Going up lifts chains of primes from \(A\) to \(B\), while incomparability shows
 that contraction cannot shorten a chain in \(B\); hence the Krull dimensions
 are equal.
+:::
+
+:::
+
 :::
 :::

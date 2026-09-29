@@ -40,9 +40,12 @@ The closure of the image of this morphism is called the *dual curve* $\dualof{Y}
 Let $F(x_0,x_1,x_2)$ be an irreducible homogeneous equation of degree $d$ for $Y$.
 Write $F_i=\partial F/\partial x_i$.
 
-<1>1. At a nonsingular point $P\in Y$, there is a unique tangent direction in the affine tangent plane.
+::: pf
 
-::: {.proof}
+::: {.pf-step #unique-tangent-direction}
+At a nonsingular point $P\in Y$, there is a unique tangent direction in the affine tangent plane.
+
+::: pf-proof
 Choose an affine chart containing $P$, translate $P$ to the origin, and let
 $$
 f(x,y)=f_1(x,y)+f_2(x,y)+\cdots
@@ -56,9 +59,12 @@ Thus the linear equation $f_1=0$ defines a unique line through the origin.
 This is the unique tangent direction at $P$.
 :::
 
-<1>2. A line $L$ through a nonsingular point $P$ has intersection multiplicity $(L.Y)_P>1$ if and only if its local linear equation is proportional to $f_1$.
+:::
 
-::: {.proof}
+::: {.pf-step #line-multiplicity-tangent-iff}
+A line $L$ through a nonsingular point $P$ has intersection multiplicity $(L.Y)_P>1$ if and only if its local linear equation is proportional to $f_1$.
+
+::: pf-proof
 Choose affine linear coordinates $(u,v)$ centered at $P$ with $L$ given by $v=0$.
 Because $L$ is not a component of the irreducible curve $Y$ unless $Y=L$, the local intersection multiplicity is the order of vanishing of the restricted equation
 $$
@@ -72,16 +78,19 @@ This length is greater than one exactly when $f(u,0)$ has no nonzero linear term
 
 The linear term of $f(u,0)$ is the restriction of $f_1$ to $L$.
 It vanishes identically exactly when $f_1$ is a scalar multiple of the equation $v$ of $L$.
-Thus $(L.Y)_P>1$ exactly for the unique line $f_1=0$ from step <1>1.
+Thus $(L.Y)_P>1$ exactly for the unique line $f_1=0$ from step [](#unique-tangent-direction){.pf-ref}.
 :::
 
-<1>3. For $P=[p_0:p_1:p_2]\in\Reg Y$, the unique line of step <1>2 is
+:::
+
+::: {.pf-step #tangent-line-formula}
+For $P=[p_0:p_1:p_2]\in\Reg Y$, the unique line of step [](#line-multiplicity-tangent-iff){.pf-ref} is
 $$
 \boxed{
 T_P(Y):F_0(P)x_0+F_1(P)x_1+F_2(P)x_2=0}.
 $$
 
-::: {.proof}
+::: pf-proof
 At least one $F_i(P)$ is nonzero because $P$ is nonsingular, so the displayed equation defines a line.
 Euler's identity for the homogeneous form $F$ gives
 $$
@@ -91,42 +100,50 @@ so the line passes through $P$; this remains valid when $d=0$ in $k$ because $F(
 
 On any affine chart, the linear part of the translated local equation of $Y$ at $P$ is obtained by evaluating the first derivatives of $F$ at $P$.
 Hence the displayed line is precisely the line defined by that nonzero linear part.
-Step <1>2 therefore shows that it is the unique line whose intersection multiplicity with $Y$ at $P$ is greater than one.
+Step [](#line-multiplicity-tangent-iff){.pf-ref} therefore shows that it is the unique line whose intersection multiplicity with $Y$ at $P$ is greater than one.
 :::
 
-<1>4. The assignment $P\mapsto T_P(Y)$ is a morphism
+:::
+
+::: {.pf-step #gauss-map-morphism}
+The assignment $P\mapsto T_P(Y)$ is a morphism
 $$
 \gamma:\Reg Y\dualof{\longrightarrow(\PP^2)}.
 $$
 
-::: {.proof}
-In dual homogeneous coordinates, step <1>3 gives
+::: pf-proof
+In dual homogeneous coordinates, step [](#tangent-line-formula){.pf-ref} gives
 $$
 \gamma(P)=[F_0(P):F_1(P):F_2(P)].
 $$
 The three $F_i$ are homogeneous polynomials of the same degree $d-1$.
 They have no common zero on $\Reg Y$, by the Jacobian criterion for nonsingularity.
 Therefore these three homogeneous forms define a morphism from $\Reg Y$ to the dual projective plane.
-Its value at each point is exactly the tangent line from step <1>3.
+Its value at each point is exactly the tangent line from step [](#tangent-line-formula){.pf-ref}.
 :::
 
-<1>5. The closure of $\gamma(\Reg Y)$ is the dual algebraic set $\dualof{Y}$.
+:::
 
-::: {.proof}
+::: {.pf-step #dual-curve-closure}
+The closure of $\gamma(\Reg Y)$ is the dual algebraic set $\dualof{Y}$.
+
+::: pf-proof
 The image of the irreducible open subset $\Reg Y$ is irreducible, and its closure in the projective plane $\dualof{(\PP^2)}$ is therefore an irreducible closed subset.
 By definition this closure is the dual curve $\dualof{Y}$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove existence and uniqueness of the tangent line by intersection multiplicity, and step <1>4 proves that the tangent-line assignment is a morphism.
-Step <1>5 identifies its closure with the dual curve.
+::: pf-qed
+Steps [](#unique-tangent-direction){.pf-ref}, [](#line-multiplicity-tangent-iff){.pf-ref} and [](#tangent-line-formula){.pf-ref} prove existence and uniqueness of the tangent line by intersection multiplicity, and step [](#gauss-map-morphism){.pf-ref} proves that the tangent-line assignment is a morphism.
+Step [](#dual-curve-closure){.pf-ref} identifies its closure with the dual curve.
+:::
+
 :::
 :::
 
 ::: {.remark title="The line case"}
 Exercise I.7.3 is stated for an arbitrary plane curve, but its reference to the intersection multiplicity of Exercise I.5.4 requires the two curves to be distinct.
-If $Y$ is a line, its tangent line at every point is $Y$ itself, so $(Y.Y)_P$ is not defined by I.5.4. The gradient formula in step <1>4 still defines the constant tangent map, whose image is the single point of $\dualof{(\PP^2)}$ representing $Y$.
+If $Y$ is a line, its tangent line at every point is $Y$ itself, so $(Y.Y)_P$ is not defined by I.5.4. The gradient formula in step [](#gauss-map-morphism){.pf-ref} still defines the constant tangent map, whose image is the single point of $\dualof{(\PP^2)}$ representing $Y$.
 The degree-greater-than-one hypothesis above is therefore exactly what is needed for the exercise's literal intersection-multiplicity formulation.
 :::

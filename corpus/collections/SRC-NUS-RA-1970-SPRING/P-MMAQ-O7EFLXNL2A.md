@@ -24,28 +24,40 @@ If $f$ is a nonnegative measurable function on $\mathbb{R}$ and $p > 0$, show th
 ::: {.solution}
 Both sides may equal $+\infty$. Write $\abs{\cdot}$ for Lebesgue measure and $\chi_{\{t < f(x)\}}$ for the indicator of $\{(x,t) \in \RR \times (0,\infty) : t < f(x)\}$.
 
-<1>1. For every $x$, $f(x)^p = \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #pointwise-layer-cake-identity}
+For every $x$, $f(x)^p = \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt$.
+
+::: pf-proof
 For $a \geq 0$, $\int_0^a p t^{p-1} ~dt = \left[t^p\right]_0^a = a^p$ for every $p > 0$; when $0 < p < 1$ the integrand $t^{p-1}$ is integrable on $(0,a)$. Take $a = f(x)$ and write $\int_0^{f(x)}$ as $\int_0^\infty$ against $\chi_{\{t < f(x)\}}$.
 :::
 
-<1>2. The integrand $(x,t) \mapsto p t^{p-1} \chi_{\{t < f(x)\}}$ is nonnegative and measurable on $\RR \times (0,\infty)$.
+:::
 
-::: {.proof}
+::: {.pf-step #integrand-nonneg-measurable}
+The integrand $(x,t) \mapsto p t^{p-1} \chi_{\{t < f(x)\}}$ is nonnegative and measurable on $\RR \times (0,\infty)$.
+
+::: pf-proof
 The maps $(x,t) \mapsto f(x)$ and $(x,t) \mapsto t$ are measurable on $\RR \times (0,\infty)$, so their difference $F(x,t) = f(x) - t$ is measurable and $\{(x,t) : t < f(x)\} = F^{-1}((0,\infty))$ is a measurable subset of $\RR^2$. The factor $t^{p-1}$ is continuous on $(0,\infty)$.
 :::
 
-<1>3. For each $t > 0$, $\int_\RR \chi_{\{t < f(x)\}} ~dx = \abs{\{x : f(x) > t\}}$.
+:::
 
-::: {.proof}
+::: {.pf-step #x-integral-gives-measure}
+For each $t > 0$, $\int_\RR \chi_{\{t < f(x)\}} ~dx = \abs{\{x : f(x) > t\}}$.
+
+::: pf-proof
 For fixed $t$ the indicator is $1$ exactly on $\{x : f(x) > t\}$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>1, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step <1>2, Tonelli's theorem allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step <1>3 the inner $x$-integral is $\abs{\{f > t\}}$, so
+::: pf-qed
+By step [](#pointwise-layer-cake-identity){.pf-ref}, $\int f^p ~dx = \int_\RR \int_0^\infty p t^{p-1} \chi_{\{t < f(x)\}} ~dt ~dx$. By step [](#integrand-nonneg-measurable){.pf-ref}, Tonelli's theorem allows the order of integration to be exchanged, with both sides possibly $+\infty$. By step [](#x-integral-gives-measure){.pf-ref} the inner $x$-integral is $\abs{\{f > t\}}$, so
 $$\int f^p ~dx = \int_0^\infty p t^{p-1} \abs{\{x : f(x) > t\}} ~dt.$$
 :::
+
+:::
+
 :::
