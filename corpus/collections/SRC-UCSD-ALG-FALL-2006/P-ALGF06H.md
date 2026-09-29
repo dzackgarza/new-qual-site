@@ -44,7 +44,10 @@ A cubic over $\mathbb Q$ is reducible if and only if it has a rational root.
 For an irreducible cubic, the Galois group of its splitting field is the transitive subgroup $A_3$ of $S_3$ when its discriminant is a square in $\mathbb Q$, and is $S_3$ otherwise.
 Indeed, the square root of the discriminant is, up to sign, the product of the three pairwise differences of the roots, so it is fixed precisely by the even permutations.
 
-<1>1. For
+::: pf
+
+::: {.pf-step #part-a}
+For
 \[
 f_a(x)=(x^2+3)(x^3-5),
 \]
@@ -57,7 +60,7 @@ and
 \[
 \operatorname{Gal}(L_a/\mathbb Q)\cong S_3.
 \]
-::: {.proof}
+::: pf-proof
 Let
 \[
 \alpha=\sqrt[3]{5}
@@ -105,7 +108,10 @@ satisfy
 They generate all six automorphisms, giving the standard presentation of $S_3$.
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #part-b}
+For
 \[
 f_b(x)=(x^2-3)(x^3-7),
 \]
@@ -117,14 +123,14 @@ and
 \[
 \operatorname{Gal}(L_b/\mathbb Q)\cong S_3\times C_2.
 \]
-::: {.proof}
+::: pf-proof
 Put
 \[
 \beta=\sqrt[3]{7},
 \qquad
 K=\mathbb Q(\beta,\zeta_3).
 \]
-Exactly as in <1>1, $K$ is the splitting field of $x^3-7$ and
+Exactly as in step [](#part-a){.pf-ref}, $K$ is the splitting field of $x^3-7$ and
 \[
 [K:\mathbb Q]=6,
 \qquad
@@ -163,7 +169,10 @@ Restriction therefore gives an isomorphism
 \]
 :::
 
-<1>3. For
+:::
+
+::: {.pf-step #part-c}
+For
 \[
 f_c(x)=x^{15}-2,
 \]
@@ -182,7 +191,7 @@ In particular,
 \[
 |\operatorname{Gal}(L_c/\mathbb Q)|=120.
 \]
-::: {.proof}
+::: pf-proof
 Let
 \[
 \alpha=2^{1/15}
@@ -253,7 +262,10 @@ By the Chinese remainder theorem,
 \]
 :::
 
-<1>4. For
+:::
+
+::: {.pf-step #part-d}
+For
 \[
 f_d(x)=x^3+2x^2+1,
 \]
@@ -265,7 +277,7 @@ and
 \[
 \operatorname{Gal}(L_d/\mathbb Q)\cong S_3.
 \]
-::: {.proof}
+::: pf-proof
 The only possible rational roots are $\pm1$, and
 \[
 f_d(1)=4,
@@ -301,5 +313,13 @@ Hence
 [\mathbb Q(\theta,\sqrt{-59}):\mathbb Q]=6.
 \]
 This degree-$6$ field lies inside the degree-$6$ splitting field, so they are equal.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref}, [](#part-c){.pf-ref} and [](#part-d){.pf-ref} give the splitting fields and Galois groups of (a), (b), (c) and (d).
+:::
+
 :::
 :::

@@ -41,8 +41,13 @@ Prove that for every continuous map $f: S^{2n} \to S^{2n}$ there is a point $x\i
 :::
 
 ::: {.solution}
-<1>1. The conclusion is immediate when $n=0$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The conclusion is immediate when $n=0$.
+
+::: pf-proof
 The sphere $S^0$ consists of two antipodal points.
 For either $x\in S^0$, the value $f(x)$ is necessarily one of those two points, hence
 \[
@@ -53,8 +58,12 @@ f(x)=-x.
 Thus assume from now on that $n\ge1$.
 :::
 
-<1>2. Suppose, for contradiction, that $f$ has neither a fixed point nor an antipodal point.
-::: {.proof}
+:::
+
+::: {.pf-step #no-fixed-or-antipodal}
+Suppose, for contradiction, that $f$ has neither a fixed point nor an antipodal point.
+
+::: pf-proof
 Assume that for every $x\in S^{2n}$,
 \[
 f(x)\ne x
@@ -64,11 +73,15 @@ f(x)\ne -x.
 We will derive two incompatible values for $\deg f$.
 :::
 
-<1>3. Since $f$ has no fixed point, it is homotopic to the antipodal map
+:::
+
+::: {.pf-step #homotopic-to-antipodal}
+Since $f$ has no fixed point, it is homotopic to the antipodal map
 \[
 A(x)=-x.
 \]
-::: {.proof}
+
+::: pf-proof
 Define
 \[
 H:S^{2n}\times[0,1]\longrightarrow S^{2n}
@@ -93,7 +106,7 @@ Taking norms and using $\|f(x)\|=\|x\|=1$ gives
 \[
 1-t=t,
 \]
-so $t=\tfrac12$, and then $f(x)=x$, contrary to <1>2. At $t=0$ and $t=1$ the numerator is respectively $f(x)$ and $-x$, both nonzero.
+so $t=\tfrac12$, and then $f(x)=x$, contrary to step [](#no-fixed-or-antipodal){.pf-ref}. At $t=0$ and $t=1$ the numerator is respectively $f(x)$ and $-x$, both nonzero.
 Thus $H$ is well defined and continuous, with
 \[
 H(x,0)=f(x),
@@ -103,13 +116,17 @@ H(x,1)=-x=A(x).
 Hence $f\simeq A$.
 :::
 
-<1>4. Therefore
+:::
+
+::: {.pf-step #degree-neg-one}
+Therefore
 \[
 \deg f=-1.
 \]
-::: {.proof}
+
+::: pf-proof
 Degree is invariant under homotopy.
-By <1>3,
+By step [](#homotopic-to-antipodal){.pf-ref},
 \[
 \deg f=\deg A.
 \]
@@ -120,8 +137,12 @@ Thus
 \]
 :::
 
-<1>5. Since $f$ has no antipodal point, it is homotopic to the identity map.
-::: {.proof}
+:::
+
+::: {.pf-step #homotopic-to-identity}
+Since $f$ has no antipodal point, it is homotopic to the identity map.
+
+::: pf-proof
 Define
 \[
 K:S^{2n}\times[0,1]\longrightarrow S^{2n}
@@ -141,7 +162,7 @@ Taking norms again forces $t=\tfrac12$, and then
 \[
 f(x)=-x,
 \]
-contrary to <1>2. The endpoint numerators are nonzero as well.
+contrary to step [](#no-fixed-or-antipodal){.pf-ref}. The endpoint numerators are nonzero as well.
 Hence $K$ is a well-defined homotopy satisfying
 \[
 K(x,0)=f(x),
@@ -151,12 +172,16 @@ K(x,1)=x.
 Thus $f\simeq\operatorname{id}_{S^{2n}}$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #degree-one}
+Therefore
 \[
 \deg f=1.
 \]
-::: {.proof}
-By <1>5 and homotopy invariance of degree,
+
+::: pf-proof
+By step [](#homotopic-to-identity){.pf-ref} and homotopy invariance of degree,
 \[
 \deg f
 =\deg\operatorname{id}_{S^{2n}}
@@ -164,9 +189,13 @@ By <1>5 and homotopy invariance of degree,
 \]
 :::
 
-<1>7. The assumption in <1>2 is impossible.
-::: {.proof}
-Steps <1>4 and <1>6 give simultaneously
+:::
+
+::: pf-step
+The assumption in step [](#no-fixed-or-antipodal){.pf-ref} is impossible.
+
+::: pf-proof
+Steps [](#degree-neg-one){.pf-ref} and [](#degree-one){.pf-ref} give simultaneously
 \[
 \deg f=-1
 \qquad\text{and}\qquad
@@ -177,5 +206,9 @@ Therefore there is some $x\in S^{2n}$ such that
 \[
 \boxed{f(x)=x\quad\text{or}\quad f(x)=-x}.
 \]
+:::
+
+:::
+
 :::
 :::

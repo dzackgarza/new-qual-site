@@ -25,31 +25,43 @@ Is this fact true if one uses the box topology instead of the product topology?
 :::
 
 ::: {.solution}
-<1>1. In the product topology, if $\mathbf x_n\to\mathbf x$, then $\pi_\alpha(\mathbf x_n)\to\pi_\alpha(\mathbf x)$ for every $\alpha$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #coord-convergence-forward}
+In the product topology, if $\mathbf x_n\to\mathbf x$, then $\pi_\alpha(\mathbf x_n)\to\pi_\alpha(\mathbf x)$ for every $\alpha$.
+
+::: pf-proof
 Each projection $\pi_\alpha$ is continuous, and a continuous map carries a convergent sequence to a sequence converging to the image of the limit.
 :::
 
-<1>2. In the product topology, if $\pi_\alpha(\mathbf x_n)\to\pi_\alpha(\mathbf x)$ for every $\alpha$, then $\mathbf x_n\to\mathbf x$.
+:::
 
-::: {.proof}
+::: {.pf-step #coord-convergence-converse}
+In the product topology, if $\pi_\alpha(\mathbf x_n)\to\pi_\alpha(\mathbf x)$ for every $\alpha$, then $\mathbf x_n\to\mathbf x$.
+
+::: pf-proof
 A basic neighborhood of $\mathbf x$ is $\prod_\alpha U_\alpha$ with $U_\alpha$ open and $U_\alpha=X_\alpha$ except for $\alpha$ in a finite set $F$.
 For each $\alpha\in F$ choose $N_\alpha$ with $\pi_\alpha(\mathbf x_n)\in U_\alpha$ for $n\ge N_\alpha$.
 For $n\ge\max_{\alpha\in F}N_\alpha$, every coordinate of $\mathbf x_n$ lies in the corresponding $U_\alpha$, so $\mathbf x_n\in\prod_\alpha U_\alpha$.
 :::
 
-<1>3. In the box topology the equivalence fails: in $\RR^\omega$ the sequence $\mathbf x_n=(\frac1n,\frac1n,\frac1n,\ldots)$ converges to $0$ in every coordinate but does not converge to $\mathbf 0$.
-
-::: {.proof}
-The set $B=\prod_{k\ge1}(-\frac1k,\frac1k)$ is a box neighborhood of $\mathbf 0$.
-The $n$-th coordinate of $\mathbf x_n$ is $\frac1n\notin(-\frac1n,\frac1n)$, so $\mathbf x_n\notin B$ for every $n$.
-The implication of step <1>1 still holds, since projections are continuous in the box topology.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #box-topology-counterexample}
+In the box topology the equivalence fails: in $\RR^\omega$ the sequence $\mathbf x_n=(\frac1n,\frac1n,\frac1n,\ldots)$ converges to $0$ in every coordinate but does not converge to $\mathbf 0$.
 
-::: {.proof}
-Steps <1>1 and <1>2 prove the equivalence for the product topology, and step <1>3 answers the question for the box topology.
+::: pf-proof
+The set $B=\prod_{k\ge1}(-\frac1k,\frac1k)$ is a box neighborhood of $\mathbf 0$.
+The $n$-th coordinate of $\mathbf x_n$ is $\frac1n\notin(-\frac1n,\frac1n)$, so $\mathbf x_n\notin B$ for every $n$.
+The implication of step [](#coord-convergence-forward){.pf-ref} still holds, since projections are continuous in the box topology.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#coord-convergence-forward){.pf-ref} and [](#coord-convergence-converse){.pf-ref} prove the equivalence for the product topology, and step [](#box-topology-counterexample){.pf-ref} answers the question for the box topology.
+:::
+
 :::
 :::

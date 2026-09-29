@@ -39,12 +39,15 @@ The linear factors of $f_r$ are called the *tangent directions* at $P$.
 Translate coordinates so that the point under consideration is the origin, as in the statement.
 Then $P\in Y$ means $f_0=0$.
 
-<1>1. The linear homogeneous part of the translated equation is
+::: pf
+
+::: {.pf-step #linear-part-formula}
+The linear homogeneous part of the translated equation is
 $$
 f_1=f_x(P)x+f_y(P)y.
 $$
 
-::: {.proof}
+::: pf-proof
 Write the original coordinates as $X=a+x$ and $Y=b+y$.
 For a monomial $X^iY^j$, the terms of total degree one after substitution are
 $$
@@ -54,14 +57,17 @@ Summing over the monomials of $f$ gives exactly the displayed expression.
 This computation is polynomial and is valid in every characteristic.
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #multiplicity-one-criterion}
+One has
 $$
 \boxed{\mu_P(Y)=1\quad\Longleftrightarrow\quad P\text{ is nonsingular on }Y.}
 $$
 
-::: {.proof}
+::: pf-proof
 Because $P\in Y$, the multiplicity is one exactly when $f_1\ne0$.
-By step <1>1 this is equivalent to
+By step [](#linear-part-formula){.pf-ref} this is equivalent to
 $$
 (f_x(P),f_y(P))\ne(0,0).
 $$
@@ -69,13 +75,16 @@ For a plane hypersurface, the Jacobian criterion says precisely that $P$ is nons
 This proves part (1).
 :::
 
-<1>3. At the origin, the multiplicities of the four curves from Exercise I.5.1 are
+:::
+
+::: {.pf-step #origin-multiplicities}
+At the origin, the multiplicities of the four curves from Exercise I.5.1 are
 $$
 \boxed{2,\quad2,\quad2,\quad3}
 $$
 in the order listed.
 
-::: {.proof}
+::: pf-proof
 The defining polynomials, grouped by degree, begin as
 $$
 \begin{aligned}
@@ -94,9 +103,12 @@ $$
 agreeing with the tacnode, node, cusp, and ordinary triple point identified in [[P-AGH51PLANECURVESING]].
 :::
 
-<1>4. In characteristics $7$ and $13$, the two additional singular points of the third curve also have multiplicity $2$.
+:::
 
-::: {.proof}
+::: {.pf-step #char-7-13-multiplicity}
+In characteristics $7$ and $13$, the two additional singular points of the third curve also have multiplicity $2$.
+
+::: pf-proof
 By [[P-AGH51PLANECURVESING]], these points are
 $$
 P_\pm=\left(\frac34,\ \pm\sqrt{-\frac12}\right).
@@ -120,9 +132,12 @@ These values are nonzero in characteristics $7$ and $13$.
 Hence the translated equation has a nonzero quadratic part and no nonzero term of lower degree, so its multiplicity is $2$.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Steps <1>1--<1>2 prove the nonsingularity criterion, while steps <1>3--<1>4 give the multiplicity of every singular point occurring under the characteristic hypothesis of Exercise I.5.1.
 :::
+
+::: pf-qed
+Steps [](#linear-part-formula){.pf-ref} and [](#multiplicity-one-criterion){.pf-ref} prove the nonsingularity criterion, while steps [](#origin-multiplicities){.pf-ref} and [](#char-7-13-multiplicity){.pf-ref} give the multiplicity of every singular point occurring under the characteristic hypothesis of Exercise I.5.1.
+:::
+
+:::
+
 :::

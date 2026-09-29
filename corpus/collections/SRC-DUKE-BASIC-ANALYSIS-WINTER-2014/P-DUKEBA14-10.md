@@ -29,8 +29,13 @@ f(x)=\frac1{1066}\int_0^x e^{-s^2x^2}f(s)^2\,ds+\sin(2013x).
 :::
 
 ::: {.solution}
-<1>1. Define the fixed-point map on a closed ball.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #fixed-point-map}
+Define the fixed-point map on a closed ball.
+
+::: pf-proof
 Let $X=C([0,1])$ with the sup norm and set
 \[
 B=\{f\in X:\|f\|_\infty\le2\}.
@@ -42,8 +47,12 @@ The set $B$ is complete because it is closed in the Banach space $X$. Define
 For $f\in B$, the integrand is continuous, so $Tf\in X$.
 :::
 
-<1>2. Show that $T$ maps $B$ into itself.
-::: {.proof}
+:::
+
+::: {.pf-step #maps-into-itself}
+Show that $T$ maps $B$ into itself.
+
+::: pf-proof
 If $f\in B$, then for $0\le x\le1$,
 \[
 |Tf(x)|
@@ -53,8 +62,12 @@ If $f\in B$, then for $0\le x\le1$,
 Thus $T(B)\subset B$.
 :::
 
-<1>3. Prove that $T$ is a contraction on $B$.
-::: {.proof}
+:::
+
+::: {.pf-step #contraction}
+Prove that $T$ is a contraction on $B$.
+
+::: pf-proof
 For $f,g\in B$,
 \[
 |f(s)^2-g(s)^2|
@@ -77,8 +90,21 @@ Taking the supremum over $x$ gives
 and $4/1066<1$.
 :::
 
-<1>4. Apply Banach's fixed-point theorem.
-::: {.proof}
+:::
+
+::: {.pf-step #banach-fixed-point}
+Apply Banach's fixed-point theorem.
+
+::: pf-proof
 Since $T$ is a contraction of the complete metric space $B$ into itself, Banach's fixed-point theorem gives a unique $f\in B$ with $Tf=f$. This $f$ is continuous and satisfies the required integral equation.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#fixed-point-map){.pf-ref}, [](#maps-into-itself){.pf-ref}, [](#contraction){.pf-ref} and [](#banach-fixed-point){.pf-ref} produce the required $f$.
+:::
+
+:::
+
 :::

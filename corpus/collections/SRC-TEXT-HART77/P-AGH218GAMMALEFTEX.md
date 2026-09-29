@@ -42,13 +42,16 @@ $$
 $$
 be an exact sequence of sheaves on $X$, and fix an open subset $U\subseteq X$.
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #injective-on-sections}
+The map
 $$
 \Gamma(U,\mcf')\xrightarrow{\Gamma(U,i)}\Gamma(U,\mcf)
 $$
 is injective.
 
-::: {.proof}
+::: pf-proof
 Exactness at $\mcf'$ says that $i$ is an injective morphism of sheaves.
 By definition of injectivity for sheaf morphisms, for every open set $V\subseteq X$ the map
 $$
@@ -58,14 +61,17 @@ is injective.
 Taking $V=U$ gives the claim.
 :::
 
-<1>2. After identifying $\mcf'$ with the kernel subsheaf $\ker p\subseteq\mcf$, one has
+:::
+
+::: {.pf-step #kernel-identification}
+After identifying $\mcf'$ with the kernel subsheaf $\ker p\subseteq\mcf$, one has
 $$
 \Gamma(U,\mcf')
 =
 \ker\bigl(\Gamma(U,\mcf)\to\Gamma(U,\mcf'')\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 Exactness at $\mcf$ gives
 $$
 \operatorname{im}i=\ker p.
@@ -86,7 +92,10 @@ $$
 $$
 :::
 
-<1>3. The sequence
+:::
+
+::: {.pf-step #exact-sequence}
+The sequence
 $$
 \boxed{
 0\longrightarrow\Gamma(U,\mcf')
@@ -95,17 +104,20 @@ $$
 $$
 is exact.
 
-::: {.proof}
-Step <1>1 gives exactness at the first nonzero term.
-Step <1>2 identifies the image of the first map with the kernel of the second map, giving exactness at $\Gamma(U,\mcf)$.
+::: pf-proof
+Step [](#injective-on-sections){.pf-ref} gives exactness at the first nonzero term.
+Step [](#kernel-identification){.pf-ref} identifies the image of the first map with the kernel of the second map, giving exactness at $\Gamma(U,\mcf)$.
 This is precisely left exactness of the global-sections functor $\Gamma(U,\wait)$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-Step <1>3 is the required left-exact sequence.
 :::
+
+::: pf-qed
+Step [](#exact-sequence){.pf-ref} is the required left-exact sequence.
+:::
+
+:::
+
 :::
 
 ::: {.remark}

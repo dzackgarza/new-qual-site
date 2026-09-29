@@ -22,22 +22,47 @@ Show that the center of $S_n$ for $n\geq 4$ is trivial.
 :::
 
 ::: {.solution}
-<1>1. Let $\sigma \in S_n$ with $\sigma \neq \id$, and fix $i$ with $\sigma(i) = j \neq i$.
 
-<1>2. There is a point $k \notin \ts{i, j}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #fix-nonidentity-element}
+Let $\sigma \in S_n$ with $\sigma \neq \id$, and fix $i$ with $\sigma(i) = j \neq i$.
+
+:::
+
+::: {.pf-step #exists-third-point}
+There is a point $k \notin \ts{i, j}$.
+
+::: pf-proof
 $\ts{1, \dots, n}$ has $n \geq 4$ elements and $\ts{i,j}$ has two.
 :::
 
-<1>3. $\sigma$ does not commute with the transposition $\tau = (j\, k)$.
-::: {.proof}
-<2>1. $(\sigma\tau)(i) = \sigma(\tau(i)) = \sigma(i) = j$, since $i \notin \ts{j,k}$ and so $\tau$ fixes $i$.
-<2>2. $(\tau\sigma)(i) = \tau(\sigma(i)) = \tau(j) = k$.
-<2>3. $j \neq k$ by the choice of $k$, so $\sigma\tau \neq \tau\sigma$.
+:::
+
+::: {.pf-step #sigma-noncommutes-with-tau}
+$\sigma$ does not commute with the transposition $\tau = (j\, k)$.
+
+::: pf-proof
+
+::: pf-step
+$(\sigma\tau)(i) = \sigma(\tau(i)) = \sigma(i) = j$, since $i \notin \ts{j,k}$ and so $\tau$ fixes $i$.
+:::
+
+::: pf-step
+$(\tau\sigma)(i) = \tau(\sigma(i)) = \tau(j) = k$.
+:::
+
+::: pf-step
+$j \neq k$ by the choice of $k$, so $\sigma\tau \neq \tau\sigma$.
+:::
 
 :::
-<1>4. Q.E.D.
-::: {.proof}
-Steps <1>1 through <1>3 show that no $\sigma \neq \id$ is central, so $Z(S_n) = 1$.
+
+:::
+
+::: pf-qed
+Steps [](#fix-nonidentity-element){.pf-ref} through [](#sigma-noncommutes-with-tau){.pf-ref} show that no $\sigma \neq \id$ is central, so $Z(S_n) = 1$.
+:::
+
 :::
 :::

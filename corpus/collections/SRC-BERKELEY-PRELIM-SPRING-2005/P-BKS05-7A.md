@@ -40,12 +40,15 @@ $$
 For $c\in U\setminus P$, let $g_c$ denote the holomorphic function
 defined on $D(c,R(c))$ by the Taylor series of $f$ at $c$.
 
-<1>1. For every $c\in U\setminus P$, one has
+::: pf
+
+::: pf-step
+For every $c\in U\setminus P$, one has
 $$
 0<R(c)<\infty.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $f$ is holomorphic near $c$, its Taylor series has positive
 radius, so $R(c)>0$.
 
@@ -60,9 +63,12 @@ This would make every pole of $f$ removable, contradicting the
 hypothesis that $f$ has at least one pole. Hence $R(c)<\infty$.
 :::
 
-<1>2. The function $R$ is locally $1$-Lipschitz on $U\setminus P$.
+:::
 
-::: {.proof}
+::: {.pf-step #locally-lipschitz}
+The function $R$ is locally $1$-Lipschitz on $U\setminus P$.
+
+::: pf-proof
 Fix $c\in U\setminus P$. Choose $\varepsilon>0$ such that
 $$
 D(c,\varepsilon)\subseteq U\setminus P.
@@ -97,13 +103,16 @@ $$
 for every $c'$ sufficiently close to $c$.
 :::
 
-<1>3. If $p\in P$, then for all nonpoles $c$ sufficiently close to
+:::
+
+::: {.pf-step #radius-equals-distance-to-pole}
+If $p\in P$, then for all nonpoles $c$ sufficiently close to
 $p$,
 $$
 R(c)=|c-p|.
 $$
 
-::: {.proof}
+::: pf-proof
 Because poles are isolated and $U$ is open, choose $\varepsilon>0$
 such that
 $$
@@ -144,7 +153,10 @@ $$
 Together with the opposite inequality, this gives $R(c)=|c-p|$.
 :::
 
-<1>4. Define
+:::
+
+::: {.pf-step #continuous-at-poles}
+Define
 $$
 \widetilde R(c)
 \coloneqq
@@ -155,8 +167,8 @@ R(c),&c\in U\setminus P,\\
 $$
 Then $\widetilde R$ is continuous at every pole.
 
-::: {.proof}
-Fix $p\in P$. By step <1>3, for all $c\in U\setminus P$ sufficiently
+::: pf-proof
+Fix $p\in P$. By step [](#radius-equals-distance-to-pole){.pf-ref}, for all $c\in U\setminus P$ sufficiently
 close to $p$,
 $$
 \widetilde R(c)=R(c)=|c-p|\longrightarrow0=\widetilde R(p).
@@ -165,18 +177,24 @@ The poles are isolated, so this also controls every approach to $p$
 inside $U$.
 :::
 
-<1>5. The function $\widetilde R$ is a continuous extension of $R$ to
+:::
+
+::: {.pf-step #continuous-extension}
+The function $\widetilde R$ is a continuous extension of $R$ to
 all of $U$.
 
-::: {.proof}
-Step <1>2 gives continuity at every point of $U\setminus P$, and step
-<1>4 gives continuity at every point of $P$. By definition,
+::: pf-proof
+Step [](#locally-lipschitz){.pf-ref} gives continuity at every point of $U\setminus P$, and step
+[](#continuous-at-poles){.pf-ref} gives continuity at every point of $P$. By definition,
 $\widetilde R=R$ on $U\setminus P$.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is exactly the required extension.
 :::
+
+::: pf-qed
+Step [](#continuous-extension){.pf-ref} is exactly the required extension.
+:::
+
+:::
+
 :::

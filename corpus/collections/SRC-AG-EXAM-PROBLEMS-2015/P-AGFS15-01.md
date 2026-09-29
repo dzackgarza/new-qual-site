@@ -49,8 +49,12 @@ In particular, \(X\) is an affine variety. Moreover, \(X\) is irreducible and
 \boxed{\dim X=4}.
 \]
 
-<1>1. The displayed equations cut out exactly the matrices of rank at most one.
-::: {.proof}
+::: pf
+
+::: {.pf-step #rank-one-equations}
+The displayed equations cut out exactly the matrices of rank at most one.
+
+::: pf-proof
 A \(2\times3\) matrix has rank at most one if and only if every \(2\times2\) minor vanishes. The three \(2\times2\) minors of \(M\) are precisely
 \[
 x_1y_2-x_2y_1,
@@ -62,8 +66,12 @@ x_2y_3-x_3y_2.
 Thus the displayed zero set is exactly \(X\), so \(X\subseteq\mathbb A^6\) is Zariski closed.
 :::
 
-<1>2. \(X\) is irreducible.
-::: {.proof}
+:::
+
+::: {.pf-step #irreducible}
+\(X\) is irreducible.
+
+::: pf-proof
 Consider
 \[
 \phi:\mathbb A^2\times\mathbb A^3\longrightarrow\mathbb A^6,
@@ -81,8 +89,12 @@ Equivalently, \(X\) is the affine cone over the Segre embedding
 \]
 :::
 
-<1>3. \(\dim X=4\).
-::: {.proof}
+:::
+
+::: {.pf-step #dimension-four}
+\(\dim X=4\).
+
+::: pf-proof
 Use the affine chart
 \[
 U=X\cap D(x_1).
@@ -106,4 +118,13 @@ The set \(U\) is nonempty and open in the irreducible variety \(X\), hence it is
 \]
 This also agrees with the cone description: the Segre variety \(\mathbf P^1\times\mathbf P^2\) has dimension \(1+2=3\), and its affine cone has dimension \(3+1=4\).
 :::
+
+:::
+
+::: pf-qed
+Steps [](#rank-one-equations){.pf-ref}, [](#irreducible){.pf-ref} and [](#dimension-four){.pf-ref} establish that \(X\) is an affine variety, that it is irreducible, and that \(\dim X = 4\).
+:::
+
+:::
+
 :::
