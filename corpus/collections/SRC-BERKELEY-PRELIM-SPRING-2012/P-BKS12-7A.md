@@ -41,13 +41,16 @@ $$
 \DD\coloneqq\{z\in\CC:\abs{z}<1\}.
 $$
 
-<1>1. The series
+::: pf
+
+::: pf-step
+The series
 $$
 f(z)=\sum_{n=0}^{\infty}z^{2^n}
 $$
 defines a holomorphic function on $\DD$.
 
-::: {.proof}
+::: pf-proof
 Fix $0<r<1$. If $\abs{z}\leq r$, then
 $$
 \abs{z^{2^n}}
@@ -65,12 +68,15 @@ closed disk $\abs{z}\leq r<1$. Its terms are holomorphic, so its locally
 uniform limit $f$ is holomorphic on $\DD$.
 :::
 
-<1>2. On $\DD$ one has the functional equation
+:::
+
+::: {.pf-step #functional-equation}
+On $\DD$ one has the functional equation
 $$
 f(z)=z+f(z^2).
 $$
 
-::: {.proof}
+::: pf-proof
 Absolute convergence permits reindexing:
 $$
 \begin{aligned}
@@ -85,13 +91,16 @@ z+f(z^2).
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #real-blowup}
+One has
 $$
 f(r)\longrightarrow+\infty
 $$
 as $r\to1^-$ through real numbers.
 
-::: {.proof}
+::: pf-proof
 Let $M>0$. Choose an integer $N>M$. For $0<r<1$,
 $$
 f(r)
@@ -106,7 +115,10 @@ $$
 Since $M$ was arbitrary, the claim follows.
 :::
 
-<1>4. For every integer $m\geq1$,
+:::
+
+::: {.pf-step #iterated-equation}
+For every integer $m\geq1$,
 $$
 f(z)
 =
@@ -116,8 +128,8 @@ f(z^{2^m})
 $$
 for every $z\in\DD$.
 
-::: {.proof}
-Iterate the functional equation in step <1>2. After $m$ iterations, the
+::: pf-proof
+Iterate the functional equation in step [](#functional-equation){.pf-ref}. After $m$ iterations, the
 successive polynomial terms are
 $$
 z,z^2,z^4,\ldots,z^{2^{m-1}},
@@ -125,19 +137,22 @@ $$
 and the remaining term is $f(z^{2^m})$.
 :::
 
-<1>5. If $\zeta$ is a $2^m$th root of unity, then
+:::
+
+::: {.pf-step #root-of-unity-blowup}
+If $\zeta$ is a $2^m$th root of unity, then
 $$
 \abs{f(r\zeta)}
 \longrightarrow\infty
 $$
 as $r\to1^-$.
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 \zeta^{2^m}=1,
 $$
-step <1>4 gives
+step [](#iterated-equation){.pf-ref} gives
 $$
 f(r\zeta)
 =
@@ -155,7 +170,7 @@ r^{2^j}\zeta^{2^j}
 \leq
 m.
 $$
-By step <1>3,
+By step [](#real-blowup){.pf-ref},
 $$
 f(r^{2^m})\longrightarrow+\infty.
 $$
@@ -168,7 +183,10 @@ f(r^{2^m})-m
 $$
 :::
 
-<1>6. The set
+:::
+
+::: {.pf-step #dyadic-dense}
+The set
 $$
 E
 \coloneqq
@@ -180,7 +198,7 @@ m\geq1,\ k\in\ZZ
 $$
 is dense in the unit circle.
 
-::: {.proof}
+::: pf-proof
 For each $m$, the arguments of the $2^m$th roots of unity are spaced by
 $$
 \frac{2\pi}{2^m}.
@@ -190,10 +208,13 @@ this spacing is smaller than the angular length of the arc. At least one
 $2^m$th root of unity then lies in that arc.
 :::
 
-<1>7. The function $f$ cannot extend holomorphically to any open
+:::
+
+::: {.pf-step #no-local-extension}
+The function $f$ cannot extend holomorphically to any open
 neighborhood of any point of the unit circle.
 
-::: {.proof}
+::: pf-proof
 Suppose that a holomorphic extension existed on an open neighborhood
 $U$ of some
 $$
@@ -205,7 +226,7 @@ Choose $\delta>0$ such that
 $$
 B(\xi,\delta)\subseteq U.
 $$
-By step <1>6, choose a dyadic root of unity
+By step [](#dyadic-dense){.pf-ref}, choose a dyadic root of unity
 $$
 \zeta\in E\cap B(\xi,\delta/2).
 $$
@@ -220,13 +241,16 @@ There the extension equals $f$. This contradicts the blowup
 $$
 \abs{f(r\zeta)}\longrightarrow\infty
 $$
-from step <1>5.
+from step [](#root-of-unity-blowup){.pf-ref}.
 :::
 
-<1>8. The unit circle is a natural boundary of $f$ in the sense stated in
+:::
+
+::: {.pf-step #natural-boundary}
+The unit circle is a natural boundary of $f$ in the sense stated in
 the problem.
 
-::: {.proof}
+::: pf-proof
 Suppose there were a connected open set $\Omega$ strictly larger than
 $\DD$ and a holomorphic function on $\Omega$ extending $f$. Because
 $\Omega$ is open and connected in the plane, it is path-connected. Choose
@@ -234,18 +258,21 @@ $$
 w\in\Omega\setminus\DD.
 $$
 If $\abs{w}=1$, then $\Omega$ is already an open neighborhood of a unit
-circle point, contradicting step <1>7. If $\abs{w}>1$, a path in $\Omega$
+circle point, contradicting step [](#no-local-extension){.pf-ref}. If $\abs{w}>1$, a path in $\Omega$
 from $0$ to $w$ has, by continuity of its modulus, a point
 $$
 \xi\in\Omega
 $$
 with $\abs{\xi}=1$. Since $\Omega$ is open, it contains a neighborhood of
-$\xi$, again contradicting step <1>7.
+$\xi$, again contradicting step [](#no-local-extension){.pf-ref}.
 :::
 
-<1>9. Q.E.D.
-
-::: {.proof}
-Step <1>8 proves exactly the asserted natural-boundary property.
 :::
+
+::: pf-qed
+Step [](#natural-boundary){.pf-ref} proves exactly the asserted natural-boundary property.
+:::
+
+:::
+
 :::

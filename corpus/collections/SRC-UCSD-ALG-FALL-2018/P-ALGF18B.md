@@ -39,8 +39,13 @@ Part (b) is false as stated. A counterexample satisfying all printed hypotheses 
 :::
 
 ::: {.solution}
-<1>1. The matrix $g-I$ is nilpotent.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #part-a-nilpotent}
+The matrix $g-I$ is nilpotent.
+
+::: pf-proof
 In characteristic $p$, commuting elements satisfy
 \[
 (X-Y)^p=X^p-Y^p.
@@ -56,8 +61,12 @@ The hypothesis $g^{p^m}=I$ therefore yields
 Hence $g-I$ is nilpotent, proving part (a).
 :::
 
-<1>2. The conclusion $g^p=I$ in part (b) does not follow from the stated hypotheses.
-::: {.proof}
+:::
+
+::: {.pf-step #part-b-counterexample}
+The conclusion $g^p=I$ in part (b) does not follow from the stated hypotheses.
+
+::: pf-proof
 Take
 \[
 p=2,
@@ -106,5 +115,13 @@ Thus $g^{2^2}=I$ while $g^2\neq I$, and the hypotheses hold because
 p=2\le3=n.
 \]
 This disproves part (b) as printed.
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-nilpotent){.pf-ref} answers part (a), and step [](#part-b-counterexample){.pf-ref} answers part (b).
+:::
+
 :::
 :::

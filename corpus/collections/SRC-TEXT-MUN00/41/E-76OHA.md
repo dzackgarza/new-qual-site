@@ -24,23 +24,83 @@ audit:
 :::
 
 ::: {.solution}
-<1>1. Part (a): Discrete spaces are paracompact.
-    *Proof:*
-    <2>1. In the discrete topology on $X$, every singleton $\{x\}$ is open and closed, so $X$ is Hausdorff.
-    <2>2. Let $\mathcal{U} = \{U_\alpha\}_{\alpha \in J}$ be an arbitrary open cover of $X$.
-    <2>3. Consider the singleton collection $\mathcal{V} = \{\{x\} \mid x \in X\}$.
-    <2>4. In the discrete topology, each $\{x\}$ is open, and $\bigcup_{x \in X} \{x\} = X$, so $\mathcal{V}$ is an open cover of $X$.
-    <2>5. For each $x \in X$, since $\mathcal{U}$ covers $X$, there exists an index $\alpha \in J$ such that $x \in U_\alpha$. Thus $\{x\} \subseteq U_\alpha$, so $\mathcal{V}$ refines $\mathcal{U}$.
-    <2>6. For any point $p \in X$, the open neighborhood $W = \{p\}$ intersects only one member of $\mathcal{V}$ (namely $\{p\}$ itself).
-    <2>7. Thus $\mathcal{V}$ is a locally finite open refinement of $\mathcal{U}$, proving $X$ is paracompact.
 
-<1>2. Part (b): Continuous images of paracompact spaces need not be paracompact.
-    *Proof:*
-    <2>1. Let $Y = [0, \omega_1)$ be the space of countable ordinals equipped with the order topology.
-    <2>2. The space $Y$ is Hausdorff and countably compact, but not compact (the open cover $\{[0, \alpha)\}_{\alpha < \omega_1}$ has no finite subcover).
-    <2>3. Since every paracompact and countably compact Hausdorff space is compact, $Y$ is not paracompact.
-    <2>4. Let $X = Y_d$ denote the set $[0, \omega_1)$ equipped with the discrete topology.
-    <2>5. By <1>1, $X$ is paracompact.
-    <2>6. The identity map $f: X \to Y$ defined by $f(x) = x$ is continuous because the domain $X$ is discrete, and $f(X) = Y$ is surjective.
-    <2>7. Thus $f(X) = Y$ is a continuous image of the paracompact space $X$ that fails to be paracompact. Q.E.D.
+::: pf
+
+::: {.pf-step #discrete-spaces-paracompact}
+Part (a): Discrete spaces are paracompact.
+
+::: pf-proof
+
+::: pf-step
+In the discrete topology on $X$, every singleton $\{x\}$ is open and closed, so $X$ is Hausdorff.
+:::
+
+::: pf-step
+Let $\mathcal{U} = \{U_\alpha\}_{\alpha \in J}$ be an arbitrary open cover of $X$.
+:::
+
+::: pf-step
+Consider the singleton collection $\mathcal{V} = \{\{x\} \mid x \in X\}$.
+:::
+
+::: pf-step
+In the discrete topology, each $\{x\}$ is open, and $\bigcup_{x \in X} \{x\} = X$, so $\mathcal{V}$ is an open cover of $X$.
+:::
+
+::: pf-step
+For each $x \in X$, since $\mathcal{U}$ covers $X$, there exists an index $\alpha \in J$ such that $x \in U_\alpha$. Thus $\{x\} \subseteq U_\alpha$, so $\mathcal{V}$ refines $\mathcal{U}$.
+:::
+
+::: pf-step
+For any point $p \in X$, the open neighborhood $W = \{p\}$ intersects only one member of $\mathcal{V}$ (namely $\{p\}$ itself).
+:::
+
+::: pf-step
+Thus $\mathcal{V}$ is a locally finite open refinement of $\mathcal{U}$, proving $X$ is paracompact.
+:::
+
+:::
+
+:::
+
+::: pf-step
+Part (b): Continuous images of paracompact spaces need not be paracompact.
+
+::: pf-proof
+
+::: pf-step
+Let $Y = [0, \omega_1)$ be the space of countable ordinals equipped with the order topology.
+:::
+
+::: pf-step
+The space $Y$ is Hausdorff and countably compact, but not compact (the open cover $\{[0, \alpha)\}_{\alpha < \omega_1}$ has no finite subcover).
+:::
+
+::: pf-step
+Since every paracompact and countably compact Hausdorff space is compact, $Y$ is not paracompact.
+:::
+
+::: pf-step
+Let $X = Y_d$ denote the set $[0, \omega_1)$ equipped with the discrete topology.
+:::
+
+::: pf-step
+By step [](#discrete-spaces-paracompact){.pf-ref}, $X$ is paracompact.
+:::
+
+::: pf-step
+The identity map $f: X \to Y$ defined by $f(x) = x$ is continuous because the domain $X$ is discrete, and $f(X) = Y$ is surjective.
+:::
+
+::: pf-step
+Thus $f(X) = Y$ is a continuous image of the paracompact space $X$ that fails to be paracompact. Q.E.D.
+:::
+
+:::
+
+:::
+
+:::
+
 :::

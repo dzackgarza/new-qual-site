@@ -35,8 +35,13 @@ Suppose $A$ is a commutative unital ring, and $M$ is an $A$-module.
 :::
 
 ::: {.solution}
-<1>1. If $M\neq0$, then $M_{\mathfrak m}\neq0$ for some maximal ideal $\mathfrak m$ of $A$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #nonzero-gives-local-nonzero}
+If $M\neq0$, then $M_{\mathfrak m}\neq0$ for some maximal ideal $\mathfrak m$ of $A$.
+
+::: pf-proof
 Choose a nonzero element
 \[
 x\in M.
@@ -69,12 +74,19 @@ x/1\neq0
 in $M_{\mathfrak m}$, so $M_{\mathfrak m}\neq0$.
 :::
 
-<1>2. If $M_{\mathfrak m}=0$ for every maximal ideal $\mathfrak m$ of $A$, then $M=0$.
-::: {.proof}
-This is the contrapositive of <1>1, proving part (a).
 :::
 
-<1>3. Let $f:N\to P$ be an injective $A$-linear map and set
+::: {.pf-step #part-a-m-zero}
+If $M_{\mathfrak m}=0$ for every maximal ideal $\mathfrak m$ of $A$, then $M=0$.
+
+::: pf-proof
+This is the contrapositive of step [](#nonzero-gives-local-nonzero){.pf-ref}, proving part (a).
+:::
+
+:::
+
+::: {.pf-step #kernel-locally-zero}
+Let $f:N\to P$ be an injective $A$-linear map and set
 \[
 K:=\ker\bigl(M\otimes_A N\xrightarrow{\,1_M\otimes f\,}M\otimes_A P\bigr).
 \]
@@ -83,7 +95,8 @@ Then
 K_{\mathfrak m}=0
 \]
 for every maximal ideal $\mathfrak m$ of $A$.
-::: {.proof}
+
+::: pf-proof
 Fix a maximal ideal $\mathfrak m$.
 Localization is exact, so $f$ induces an injection
 \[
@@ -120,14 +133,18 @@ Since $f_{\mathfrak m}$ is injective, this tensor-induced map is injective.
 Thus its kernel, and hence $K_{\mathfrak m}$, is zero.
 :::
 
-<1>4. The module $M$ is flat over $A$.
-::: {.proof}
-By <1>3,
+:::
+
+::: {.pf-step #part-b-m-flat}
+The module $M$ is flat over $A$.
+
+::: pf-proof
+By step [](#kernel-locally-zero){.pf-ref},
 \[
 K_{\mathfrak m}=0
 \]
 for every maximal ideal $\mathfrak m$.
-Applying part (a), proved in <1>2, to the $A$-module $K$ gives
+Applying part (a), proved in step [](#part-a-m-zero){.pf-ref}, to the $A$-module $K$ gives
 \[
 K=0.
 \]
@@ -137,5 +154,13 @@ M\otimes_A N\longrightarrow M\otimes_A P
 \]
 is injective.
 This is precisely the defining flatness condition, proving part (b).
+:::
+
+:::
+
+::: pf-qed
+Step [](#part-a-m-zero){.pf-ref} answers part (a), and step [](#part-b-m-flat){.pf-ref} answers part (b).
+:::
+
 :::
 :::

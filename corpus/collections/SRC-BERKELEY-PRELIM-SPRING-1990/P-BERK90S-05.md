@@ -41,9 +41,12 @@ s_n\coloneqq\sum_{k=1}^{n-1}\frac1{k^2},
 $$
 with $s_1=0$.
 
-<1>1. The sequence $(s_n)$ converges to a finite real number $S\leq2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s-converges}
+The sequence $(s_n)$ converges to a finite real number $S\leq2$.
+
+::: pf-proof
 The sequence is nondecreasing because $s_{n+1}-s_n=1/n^2>0$. For $k\geq2$,
 $$
 \frac1{k^2}\leq\frac1{k(k-1)}=\frac1{k-1}-\frac1k.
@@ -58,15 +61,18 @@ The bound also holds for $s_1=0$. By the monotone convergence theorem for
 real sequences, $(s_n)$ has a finite limit $S\leq2$.
 :::
 
-<1>2. The sequence $(y_n)$ converges to a finite real number $L$.
+:::
 
-::: {.proof}
+::: {.pf-step #y-converges}
+The sequence $(y_n)$ converges to a finite real number $L$.
+
+::: pf-proof
 The hypothesis on $(x_n)$ gives
 $$
 y_{n+1}-y_n
 =x_{n+1}-x_n-\frac1{n^2}\leq0.
 $$
-Also, $x_n\geq0$ and step <1>1 give $y_n=x_n-s_n\geq-2$.
+Also, $x_n\geq0$ and step [](#s-converges){.pf-ref} give $y_n=x_n-s_n\geq-2$.
 Let $L\coloneqq\inf_{n\geq1}y_n$. For every $\varepsilon>0$, the defining
 property of the infimum gives an index $N$ with $y_N<L+\varepsilon$.
 For all $n\geq N$, monotonicity gives
@@ -76,13 +82,15 @@ $$
 Hence $y_n\to L$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-The identity $x_n=y_n+s_n$ and steps <1>1--<1>2 imply
+::: pf-qed
+The identity $x_n=y_n+s_n$ and steps [](#s-converges){.pf-ref} and [](#y-converges){.pf-ref} imply
 $$
 \lim_{n\to\infty}x_n=L+S.
 $$
 Both terms on the right are finite, so the required limit exists.
+:::
+
 :::
 :::
