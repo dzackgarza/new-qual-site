@@ -2354,22 +2354,29 @@ A problem card's body is the `::: {.problem}` block, then any `::: {.hint}` bloc
 Hint-level guidance is a hint block before the solution, not the opening of the solution (`MODEL-02`). Remarks, examples, and proofs are fenced blocks, never paragraphs opening with a run-in label such as “**Remark.**” or “Proof.”
 (`PR-10`).
 
-### `STYLE-08`: Solutions are Lamport structured proofs in one layout
+### `STYLE-08`: Solutions are Lamport structured proofs in the filter's syntax
 
-A solution is a hierarchically numbered structured proof.
-Declare any notation used throughout before the first step.
-Each step is a paragraph opening with its number, `<1>1.`, `<1>2.`, …, followed by its claim.
-A step proved directly is followed by a `::: {.proof}` block written in complete sentences; a step proved by substeps is followed by those substeps, numbered `<2>1.`, `<2>2.`, … one level down.
-The last step at each level is `Q.E.D.`, and its proof cites the steps that establish the goal of that level.
-Refer to another step as `step <1>2`, never as “above” or “the previous step” (`PROSE-03`). Do not restate the problem as a “**Goal.**” paragraph: the statement is on the same card.
-A requested value or object is written once in `\boxed{…}` in the claim of the step that establishes it.
+A solution is a structured proof written in the syntax of pandoc-config's `lamport_proof.lua` filter.
+The source states structure only. The filter assigns the step numbers, prints them, indents each level, and writes the number into each step reference. Never type a step number or indent a step by hand.
+
+- Declare any notation used throughout in prose before the proof.
+- The proof is one `::: pf` block. It holds only steps.
+- A step is a `::: pf-step` block. Its first paragraph is the claim.
+- A step proved directly holds one `::: pf-proof` block written in complete sentences.
+- A step proved by substeps holds one `::: pf-proof` block that contains those substeps.
+- The last step at each level is a `::: pf-qed` block. It holds the proof that the steps of that level establish its goal and cites them. It has no claim of its own.
+- Give a step an identifier, `::: {.pf-step #kebab-case-name}`, only when another step cites it. The name says what the step claims.
+- Cite a step as `step [](#name){.pf-ref}`; the filter fills in the number. Never write “above” or “the previous step” (`PROSE-03`).
+- Put a blank line before and after every fence line.
+- Do not restate the problem as a “**Goal.**” paragraph: the statement is on the same card.
+- Write a requested value or object once, in `\boxed{…}`, in the claim of the step that establishes it.
 
 **Bad:**
 
 ```markdown
 **Goal.** Compute $u(0)$.
 
-<2>1. $\cos^2\theta = \frac{1 + \cos 2\theta}{2}$.
+<1>1. $\cos^2\theta = \frac{1 + \cos 2\theta}{2}$.
 ::: {.proof}
 the double-angle identity.
 :::
@@ -2378,22 +2385,30 @@ the double-angle identity.
 **Good:**
 
 ```markdown
-<1>1. $\cos^2\theta = \frac{1 + \cos 2\theta}{2}$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #double-angle}
+$\cos^2\theta = \frac{1 + \cos 2\theta}{2}$.
+
+::: pf-proof
 This is the double-angle identity.
 :::
 
-<1>2. $u(0) = \boxed{1/2}$.
-
-::: {.proof}
-By the mean value property, $u(0)$ is the average of $\cos^2\theta$ over $[0,2\pi]$, which step <1>1 evaluates.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #value}
+$u(0) = \boxed{1/2}$.
 
-::: {.proof}
-Step <1>2 gives the requested value.
+::: pf-proof
+By the mean value property, $u(0)$ is the average of $\cos^2\theta$ over $[0,2\pi]$, which step [](#double-angle){.pf-ref} evaluates.
+:::
+
+:::
+
+::: pf-qed
+Step [](#value){.pf-ref} gives the requested value.
+:::
+
 :::
 ```
 
