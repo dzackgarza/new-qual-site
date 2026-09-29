@@ -151,10 +151,15 @@ Therefore
 -1=2-k,
 \]
 so $k=3$.
-For part (ii), a finite polygon can only produce a compact quotient, so the polygon classification applies to compact connected surfaces without boundary.
 :::
 
 :::
+
+:::
+
+For part (ii), a finite polygon can only produce a compact quotient, so the polygon classification applies to compact connected surfaces without boundary.
+
+::: pf
 
 ::: {.pf-step #polygon-presentation-exists}
 Every compact connected surface without boundary can be represented by a polygon with an even number of sides whose sides are identified in pairs.

@@ -29,9 +29,13 @@ Show that $f$ is quasi-compact if and only if for every open affine subset $V \s
 :::
 
 ::: {.solution}
-<1>1. If $f^{-1}(V)$ is quasi-compact for every affine open $V\subseteq Y$, then $f$ is quasi-compact.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #preimage-qc-implies-f-qc}
+If $f^{-1}(V)$ is quasi-compact for every affine open $V\subseteq Y$, then $f$ is quasi-compact.
+
+::: pf-proof
 Choose any affine open cover
 \[
 Y=\bigcup_iV_i.
@@ -39,7 +43,10 @@ Y=\bigcup_iV_i.
 The hypothesis says that every $f^{-1}(V_i)$ is quasi-compact, which is exactly the definition given in the problem.
 :::
 
-<1>2. Conversely, suppose $f$ is quasi-compact in the stated sense.  Thus there is an affine open cover
+:::
+
+::: {.pf-step #choose-distinguished-neighborhoods}
+Conversely, suppose $f$ is quasi-compact in the stated sense.  Thus there is an affine open cover
 \[
 Y=\bigcup_iV_i
 \]
@@ -56,17 +63,20 @@ such that
 y\in W_y\subseteq V\cap V_i.
 \]
 
-::: {.proof}
+::: pf-proof
 Choose $i$ with $y\in V_i$.  Then $V\cap V_i$ is an open neighborhood of $y$ in the affine scheme $V_i$.  Distinguished opens form a basis of an affine scheme, so there is some $g_y\in\Gamma(V_i,\mathcal O_Y)$ with the asserted property.
 :::
 
-<1>3. For each $y\in V$, the inverse image
+:::
+
+::: {.pf-step #preimage-wy-qc}
+For each $y\in V$, the inverse image
 \[
 f^{-1}(W_y)
 \]
 is quasi-compact.
 
-::: {.proof}
+::: pf-proof
 Fix $y$ and write $W_y=D(g_y)\subseteq V_i$.
 Since $f^{-1}(V_i)$ is quasi-compact, choose a finite affine open cover
 \[
@@ -88,9 +98,12 @@ f^{-1}(W_y)
 is a finite union of quasi-compact open subsets and is quasi-compact.
 :::
 
-<1>4. Finitely many of the opens $W_y$ cover $V$.
+:::
 
-::: {.proof}
+::: {.pf-step #finite-subcover-of-v}
+Finitely many of the opens $W_y$ cover $V$.
+
+::: pf-proof
 The sets $W_y$ form an open cover of $V$.  Since $V$ is affine, its underlying topological space is quasi-compact.  Hence there are points
 \[
 y_1,\ldots,y_m\in V
@@ -101,27 +114,36 @@ V=W_{y_1}\cup\cdots\cup W_{y_m}.
 \]
 :::
 
-<1>5. The inverse image $f^{-1}(V)$ is quasi-compact.
+:::
 
-::: {.proof}
-By <1>4,
+::: {.pf-step #preimage-v-qc}
+The inverse image $f^{-1}(V)$ is quasi-compact.
+
+::: pf-proof
+By step [](#finite-subcover-of-v){.pf-ref},
 \[
 f^{-1}(V)
 =
 f^{-1}(W_{y_1})\cup\cdots\cup f^{-1}(W_{y_m}).
 \]
-Each term is quasi-compact by <1>3, so their finite union is quasi-compact.
+Each term is quasi-compact by step [](#preimage-wy-qc){.pf-ref}, so their finite union is quasi-compact.
 :::
 
-<1>6. Hence the two formulations of quasi-compactness are equivalent.
-
-::: {.proof}
-Step <1>1 proves one implication and steps <1>2--<1>5 prove the converse.
 :::
 
-<1>7. Q.E.D.
+::: {.pf-step #two-formulations-equivalent}
+Hence the two formulations of quasi-compactness are equivalent.
 
-::: {.proof}
-Step <1>6 is the required equivalence.
+::: pf-proof
+Step [](#preimage-qc-implies-f-qc){.pf-ref} proves one implication and steps [](#choose-distinguished-neighborhoods){.pf-ref}, [](#preimage-wy-qc){.pf-ref}, [](#finite-subcover-of-v){.pf-ref} and [](#preimage-v-qc){.pf-ref} prove the converse.
 :::
+
+:::
+
+::: pf-qed
+Step [](#two-formulations-equivalent){.pf-ref} is the required equivalence.
+:::
+
+:::
+
 :::

@@ -31,12 +31,15 @@ Give an example of an irreducible polynomial $f \in \RR[x,y]$ whose zero set $Z(
 ::: {.solution}
 Here $Z(f)$ is the set of real solutions in $\RR^2$, with the Zariski topology whose closed sets are common zero sets of real polynomials.
 
-<1>1. An irreducible polynomial with the required property is
+::: pf
+
+::: {.pf-step #f-irreducible}
+An irreducible polynomial with the required property is
 $$
 \boxed{f(x,y)=x^2+(y^2-1)^2.}
 $$
 
-::: {.proof}
+::: pf-proof
 Regard $f$ as a monic polynomial of degree two in $x$ over the domain $\RR[y]$.
 Suppose $f=gh$ with neither factor a unit in $\RR[y][x]$.
 The $x$-degrees add, and the leading coefficients in $x$ multiply to $1$.
@@ -52,9 +55,12 @@ Evaluating this polynomial identity at $y=0$ gives $-a(0)^2=1$, impossible over 
 Thus no nontrivial factorization exists, proving irreducibility.
 :::
 
-<1>2. The real zero set is $Z(f)=\{(0,1),(0,-1)\}$ and is reducible.
+:::
 
-::: {.proof}
+::: {.pf-step #zero-set-reducible}
+The real zero set is $Z(f)=\{(0,1),(0,-1)\}$ and is reducible.
+
+::: pf-proof
 At a real point, both summands $x^2$ and $(y^2-1)^2$ are nonnegative.
 Their sum is zero exactly when $x=0$ and $y^2-1=0$.
 This gives the two stated points.
@@ -63,10 +69,12 @@ Each is a proper nonempty closed subset of $Z(f)$, and their union is all of $Z(
 This is a decomposition showing that $Z(f)$ is not irreducible.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves that the displayed polynomial is irreducible in $\RR[x,y]$, and step <1>2 proves that its real zero set is reducible.
+::: pf-qed
+Step [](#f-irreducible){.pf-ref} proves that the displayed polynomial is irreducible in $\RR[x,y]$, and step [](#zero-set-reducible){.pf-ref} proves that its real zero set is reducible.
+:::
+
 :::
 :::
 

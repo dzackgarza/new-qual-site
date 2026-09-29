@@ -41,13 +41,21 @@ Define
 m+\mathfrak mM\longmapsto m/1+\mathfrak mM_{\mathfrak m}.
 \]
 
-<1>1. The map $\phi$ is well-defined.
-::: {.proof}
+::: pf
+
+::: pf-step
+The map $\phi$ is well-defined.
+
+::: pf-proof
 If $m-m'\in\mathfrak mM$, then $(m-m')/1\in\mathfrak mM_{\mathfrak m}$.
 :::
 
-<1>2. The map $\phi$ is surjective.
-::: {.proof}
+:::
+
+::: pf-step
+The map $\phi$ is surjective.
+
+::: pf-proof
 Every class on the right is represented by $m/s$ with $s\notin\mathfrak m$.
 Since $\mathfrak m$ is maximal, the image of $s$ in $A/\mathfrak m$ is a unit;
 choose $a\in A$ with $as\equiv1\pmod{\mathfrak m}$. Then
@@ -57,15 +65,23 @@ choose $a\in A$ with $as\equiv1\pmod{\mathfrak m}$. Then
 Thus the class of $m/s$ is $\phi(am+\mathfrak mM)$.
 :::
 
-<1>3. The map $\phi$ is injective.
-::: {.proof}
+:::
+
+::: pf-step
+The map $\phi$ is injective.
+
+::: pf-proof
 Suppose $m/1\in\mathfrak mM_{\mathfrak m}$. Then for some $s\notin\mathfrak m$,
 $s m\in\mathfrak mM$. Choose $a$ with $as\equiv1\pmod{\mathfrak m}$. Then
 \[
 m=asm+(1-as)m\in\mathfrak mM.
 \]
 Hence $m+\mathfrak mM=0$.
-:::
 
 Therefore $\phi$ is an isomorphism.
+:::
+
+:::
+
+:::
 :::

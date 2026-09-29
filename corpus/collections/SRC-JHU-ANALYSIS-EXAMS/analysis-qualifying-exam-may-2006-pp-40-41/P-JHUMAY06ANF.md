@@ -41,8 +41,12 @@ $$
 \operatorname{Res}_{-i}f=\frac{\pi-i}{4}.}
 $$
 
-<1>1. Factoring the denominator identifies all poles and their orders.
-::: {.proof}
+::: pf
+
+::: pf-step
+Factoring the denominator identifies all poles and their orders.
+
+::: pf-proof
 The denominator is $(z-i)^2(z+i)^2$, and the numerator
 $e^{\pi z}$ is entire and never zero. Thus the quotient
 is holomorphic away from $\pm i$, and at either point
@@ -51,8 +55,12 @@ nonzero. Both are genuine double poles; there are no
 other finite poles.
 :::
 
-<1>2. Differentiate the holomorphic factors to compute the residues.
-::: {.proof}
+:::
+
+::: pf-step
+Differentiate the holomorphic factors to compute the residues.
+
+::: pf-proof
 For a double pole at $a$, the residue of $H(z)/(z-a)^2$
 is $H'(a)$, by the Taylor expansion of the holomorphic
 factor $H$ [@SS03]. At $i$, this gives
@@ -75,5 +83,9 @@ $$
 $$
 Here $e^{\pi i}=e^{-\pi i}=-1$, $(2i)^3=-8i$ and
 $(-2i)^3=8i$. These are the residues at all the poles.
+:::
+
+:::
+
 :::
 :::

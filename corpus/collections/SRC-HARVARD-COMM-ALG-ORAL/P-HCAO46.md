@@ -40,8 +40,12 @@ Q=M/N.
 \]
 The quotient $Q$ is finitely generated.
 
-<1>1. For every maximal ideal $\mathfrak m$ of $A$, one has $Q_{\mathfrak m}=0$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #q-localizes-to-zero}
+For every maximal ideal $\mathfrak m$ of $A$, one has $Q_{\mathfrak m}=0$.
+
+::: pf-proof
 Localization is exact, so
 \[
 Q_{\mathfrak m}\cong M_{\mathfrak m}/N_{\mathfrak m}.
@@ -50,14 +54,22 @@ By hypothesis the images of $x_1,\ldots,x_n$ generate $M_{\mathfrak m}$, hence
 $N_{\mathfrak m}=M_{\mathfrak m}$.
 :::
 
-<1>2. Therefore $Q=0$.
-::: {.proof}
+:::
+
+::: pf-step
+Therefore $Q=0$.
+
+::: pf-proof
 If $Q\ne0$, choose $0\ne q\in Q$. The ideal $\operatorname{Ann}(q)$ is proper,
 so it lies in a maximal ideal $\mathfrak m$. If $q/1=0$ in $Q_{\mathfrak m}$,
 some $s\notin\mathfrak m$ would satisfy $sq=0$, so
 $s\in\operatorname{Ann}(q)\subseteq\mathfrak m$, a contradiction. Hence
-$Q_{\mathfrak m}\ne0$, contradicting <1>1.
-:::
+$Q_{\mathfrak m}\ne0$, contradicting step [](#q-localizes-to-zero){.pf-ref}.
 
 Thus $M=N$, so $x_1,\ldots,x_n$ generate $M$.
+:::
+
+:::
+
+:::
 :::

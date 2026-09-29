@@ -69,13 +69,18 @@ For a strong deformation retract one additionally requires
 H(a,t)=a
 \]
 for every $a\in A$ and $t\in I$.
+:::
+
+:::
+
+:::
+
 Let
 \[
 C=\{(x,y,z)\in\mathbb R^3:x^2+y^2=1,\ z=0\}.
 \]
-:::
 
-:::
+::: pf
 
 ::: {.pf-step #circle-becomes-great-circle}
 Under inverse stereographic projection

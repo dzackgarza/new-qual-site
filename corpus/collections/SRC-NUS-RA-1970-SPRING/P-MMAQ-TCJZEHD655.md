@@ -23,29 +23,39 @@ If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that $\limsup_{n\rightarrow \
 ::: {.solution}
 Write $\sigma_n = \frac{1}{n}\sum_{i=1}^n a_i$.
 
-<1>1. If $K \in \RR$ and $a_n < K$ for all $n \geq N$, then $\limsup_n \sigma_n \leq K$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #tail-bound-limsup}
+If $K \in \RR$ and $a_n < K$ for all $n \geq N$, then $\limsup_n \sigma_n \leq K$.
+
+::: pf-proof
 With $C = \sum_{i=1}^{N-1} a_i$, for $n \geq N$
 $$\sigma_n = \frac{C}{n} + \frac{1}{n}\sum_{i=N}^{n} a_i \leq \frac{C}{n} + \frac{n - N + 1}{n} K.$$
 The right side converges to $K$ because $C/n \to 0$ and $(n - N + 1)/n \to 1$, and $x_n \leq y_n$ implies $\limsup x_n \leq \limsup y_n$.
 :::
 
-<1>2. If $l \in \RR$, then $\limsup_n \sigma_n \leq l$.
-
-::: {.proof}
-For $\eps > 0$, $\limsup_n a_n \leq l < l + \eps$, so $a_n < l + \eps$ for all large $n$. Step <1>1 with $K = l + \eps$ gives $\limsup_n \sigma_n \leq l + \eps$ for every $\eps > 0$.
 :::
 
-<1>3. If $l = -\infty$, then $\limsup_n \sigma_n = -\infty$.
+::: {.pf-step #l-real-case}
+If $l \in \RR$, then $\limsup_n \sigma_n \leq l$.
 
-::: {.proof}
-For every $K \in \RR$, $\limsup_n a_n = -\infty < K$, so $a_n < K$ for all large $n$, and step <1>1 gives $\limsup_n \sigma_n \leq K$.
+::: pf-proof
+For $\eps > 0$, $\limsup_n a_n \leq l < l + \eps$, so $a_n < l + \eps$ for all large $n$. Step [](#tail-bound-limsup){.pf-ref} with $K = l + \eps$ gives $\limsup_n \sigma_n \leq l + \eps$ for every $\eps > 0$.
 :::
 
-<1>4. Q.E.D.
-
-::: {.proof}
-For $l = +\infty$ the inequality $\limsup_n \sigma_n \leq +\infty$ holds for every real sequence. Steps <1>2 and <1>3 cover the remaining cases.
 :::
+
+::: {.pf-step #l-minus-infinity-case}
+If $l = -\infty$, then $\limsup_n \sigma_n = -\infty$.
+
+::: pf-proof
+For every $K \in \RR$, $\limsup_n a_n = -\infty < K$, so $a_n < K$ for all large $n$, and step [](#tail-bound-limsup){.pf-ref} gives $\limsup_n \sigma_n \leq K$.
+:::
+
+:::
+
+::: pf-qed
+For $l = +\infty$ the inequality $\limsup_n \sigma_n \leq +\infty$ holds for every real sequence. Steps [](#l-real-case){.pf-ref} and [](#l-minus-infinity-case){.pf-ref} cover the remaining cases.
+:::
+
 :::

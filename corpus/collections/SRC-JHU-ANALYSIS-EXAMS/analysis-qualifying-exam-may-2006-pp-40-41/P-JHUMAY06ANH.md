@@ -31,15 +31,20 @@ Prove that any function $f \in L^1(I) \cap L^2(I)$ on an interval $I \subset \ma
 ::: {.solution}
 Fix $p\in[1,2]$ and let $E_1=\{x\in I:\abs{f(x)}\le1\}$ and $E_2=\{x\in I:\abs{f(x)}>1\}$.
 
-<1>1. $\abs f^p\le\abs f$ on $E_1$ and $\abs f^p\le\abs f^2$ on $E_2$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #pointwise-power-bound}
+$\abs f^p\le\abs f$ on $E_1$ and $\abs f^p\le\abs f^2$ on $E_2$.
+
+::: pf-proof
 For $0\le t\le1$ and $p\ge1$, $t^p\le t$; for $t>1$ and $p\le2$, $t^p\le t^2$.
 :::
 
-<1>2. Q.E.D.
+:::
 
-::: {.proof}
-By step <1>1, $\int_I\abs f^p\le\int_{E_1}\abs f+\int_{E_2}\abs f^2\le\norm f_{L^1(I)}+\norm f_{L^2(I)}^2<\infty$, so $f\in L^p(I)$.
+::: pf-qed
+By step [](#pointwise-power-bound){.pf-ref}, $\int_I\abs f^p\le\int_{E_1}\abs f+\int_{E_2}\abs f^2\le\norm f_{L^1(I)}+\norm f_{L^2(I)}^2<\infty$, so $f\in L^p(I)$.
+:::
+
 :::
 :::

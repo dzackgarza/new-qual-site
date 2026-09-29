@@ -38,31 +38,42 @@ is uniformly continuous and ${ \widehat { f } } ( t ) \to 0 { \mathrm { ~ a s ~ 
 ::: {.solution}
 Write $\norm f_1=\int_\RR\abs f$. The integral defining $\widehat f(t)$ converges absolutely, since its integrand has modulus $\abs{f(x)}$.
 
-<1>1. $\widehat f$ is uniformly continuous.
+::: pf
 
-::: {.proof}
+::: {.pf-step #uniformly-continuous}
+$\widehat f$ is uniformly continuous.
+
+::: pf-proof
 Let $\eps>0$; we may assume $\norm f_1>0$, since otherwise $\widehat f=0$. Choose $R\ge1$ with $\int_{\abs x>R}\abs f<\eps/4$. Since $\abs{e^{iu}-1}\le\abs u$ for real $u$, and $\abs{e^{-ixt}-e^{-ixs}}\le2$,
 $$\abs{\widehat f(t)-\widehat f(s)}\le\int_{\abs x\le R}\abs x\abs{t-s}\abs{f(x)}\,dx+2\int_{\abs x>R}\abs f\le R\abs{t-s}\norm f_1+\frac\eps2.$$
 So $\abs{t-s}<\eps/(2R\norm f_1)$ implies $\abs{\widehat f(t)-\widehat f(s)}<\eps$, with a bound independent of $t$ and $s$.
 :::
 
-<1>2. $\norm{f(\cdot+h)-f}_1\to0$ as $h\to0$.
+:::
 
-::: {.proof}
+::: {.pf-step #translation-l1-continuity}
+$\norm{f(\cdot+h)-f}_1\to0$ as $h\to0$.
+
+::: pf-proof
 Given $\eta>0$, choose $\varphi\in C_c(\RR)$ with $\norm{f-\varphi}_1<\eta$ [@Fol13]. Translation invariance of the integral gives $\norm{f(\cdot+h)-f}_1\le2\eta+\norm{\varphi(\cdot+h)-\varphi}_1$. For $\abs h\le1$ both functions on the right vanish outside one bounded interval, and uniform continuity of $\varphi$ makes their difference tend uniformly to $0$, so its integral tends to $0$. Letting $h\to0$ and then $\eta\to0$ proves the claim.
 :::
 
-<1>3. $\widehat f(t)\to0$ as $\abs t\to\infty$.
-
-::: {.proof}
-For $t\ne0$, the substitution $x=u+\pi/t$ and $e^{-i\pi}=-1$ give $\widehat f(t)=-\int e^{-iut}f(u+\pi/t)\,du$. Averaging with the definition,
-$$\abs{\widehat f(t)}=\frac12\abs{\int e^{-ixt}\bigl(f(x)-f(x+\pi/t)\bigr)\,dx}\le\frac12\norm{f(\cdot+\pi/t)-f}_1,$$
-which tends to $0$ by step <1>2.
 :::
 
-<1>4. Q.E.D.
+::: {.pf-step #decay-at-infinity}
+$\widehat f(t)\to0$ as $\abs t\to\infty$.
 
-::: {.proof}
-Steps <1>1 and <1>3 are the two claims.
+::: pf-proof
+For $t\ne0$, the substitution $x=u+\pi/t$ and $e^{-i\pi}=-1$ give $\widehat f(t)=-\int e^{-iut}f(u+\pi/t)\,du$. Averaging with the definition,
+$$\abs{\widehat f(t)}=\frac12\abs{\int e^{-ixt}\bigl(f(x)-f(x+\pi/t)\bigr)\,dx}\le\frac12\norm{f(\cdot+\pi/t)-f}_1,$$
+which tends to $0$ by step [](#translation-l1-continuity){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Steps [](#uniformly-continuous){.pf-ref} and [](#decay-at-infinity){.pf-ref} are the two claims.
+:::
+
 :::
 :::

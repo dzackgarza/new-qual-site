@@ -28,23 +28,39 @@ If $f$ is a nonnegative measurable function on $[0, \pi]$ and $\int_0^\pi f(x)^3
 ::: {.solution}
 Let $\alpha > 0$.
 
-<1>1. On the set $\theset{x : f(x) > \alpha}$, the pointwise bound $f^2 \leq \frac{1}{\alpha} f^3$ holds.
-::: {.proof}
+::: pf
+
+::: {.pf-step #pointwise-bound}
+On the set $\theset{x : f(x) > \alpha}$, the pointwise bound $f^2 \leq \frac{1}{\alpha} f^3$ holds.
+
+::: pf-proof
 where $f > \alpha$ we have $\frac{f^2}{f^3} = \frac{1}{f} < \frac{1}{\alpha}$, so $f^2 < \frac{f^3}{\alpha}$.
 :::
 
-<1>2. $\int_{\theset{f > \alpha}} f^2 \leq \frac{1}{\alpha} \int_{\theset{f > \alpha}} f^3 \leq \frac{1}{\alpha} \int_0^\pi f^3$.
-::: {.proof}
-integrate the bound of <1>1 over $\theset{f > \alpha}$; then use $\theset{f > \alpha} \subseteq [0, \pi]$ and $f^3 \geq 0$ to bound the restricted integral by the full one.
 :::
 
-<1>3. The upper bound in <1>2 tends to $0$ as $\alpha \to \infty$.
-::: {.proof}
+::: {.pf-step #integral-bound}
+$\int_{\theset{f > \alpha}} f^2 \leq \frac{1}{\alpha} \int_{\theset{f > \alpha}} f^3 \leq \frac{1}{\alpha} \int_0^\pi f^3$.
+
+::: pf-proof
+integrate the bound of step [](#pointwise-bound){.pf-ref} over $\theset{f > \alpha}$; then use $\theset{f > \alpha} \subseteq [0, \pi]$ and $f^3 \geq 0$ to bound the restricted integral by the full one.
+:::
+
+:::
+
+::: pf-step
+The upper bound in step [](#integral-bound){.pf-ref} tends to $0$ as $\alpha \to \infty$.
+
+::: pf-proof
 $\int_0^\pi f^3$ is a fixed finite constant, and $\frac{1}{\alpha} \to 0$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
+:::
+
+:::
+
+::: pf-qed
 the integrals in question are nonnegative ($f^2\geq0$) and squeezed between $0$ and a quantity tending to $0$, so the limit is $0$.
 :::
+
 :::

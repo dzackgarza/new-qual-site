@@ -32,8 +32,13 @@ Consider $x_i'=F_i(x_1,\dots,x_n)$ with $F:\mathbb R^n\to\mathbb R^n$ of class $
 :::
 
 ::: {.solution}
-<1>1. Express the difference $F(U)-F(V)$ by integrating the derivative of $F$ along a segment.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #integral-representation}
+Express the difference $F(U)-F(V)$ by integrating the derivative of $F$ along a segment.
+
+::: pf-proof
 Fix a time at which two solutions $U,V$ are defined, and put
 $$
 Z=U-V.
@@ -50,13 +55,17 @@ F(U)-F(V)
 $$
 :::
 
-<1>2. Under the hypothesis of part (a), the squared distance between two solutions is nonincreasing.
-::: {.proof}
+:::
+
+::: pf-step
+Under the hypothesis of part (a), the squared distance between two solutions is nonincreasing.
+
+::: pf-proof
 Since
 $$
 Z'=U'-V'=F(U)-F(V),
 $$
-step <1>1 gives
+step [](#integral-representation){.pf-ref} gives
 $$
 \begin{aligned}
 \frac d{dt}\|Z\|^2
@@ -76,8 +85,12 @@ $$
 Thus $\|U(t)-V(t)\|^2$ is nonincreasing, proving part (a).
 :::
 
-<1>3. Under the stronger hypothesis, the velocity of a solution decays exponentially.
-::: {.proof}
+:::
+
+::: {.pf-step #velocity-decay}
+Under the stronger hypothesis, the velocity of a solution decays exponentially.
+
+::: pf-proof
 Assume now
 $$
 \langle DF(x)z,z\rangle\le-\|z\|^2.
@@ -108,9 +121,13 @@ $$
 $$
 :::
 
-<1>4. The trajectory is Cauchy and therefore converges.
-::: {.proof}
-If $s>t\ge t_0$, then step <1>3 yields
+:::
+
+::: pf-step
+The trajectory is Cauchy and therefore converges.
+
+::: pf-proof
+If $s>t\ge t_0$, then step [](#velocity-decay){.pf-ref} yields
 $$
 \begin{aligned}
 \|W(s)-W(t)\|
@@ -129,5 +146,9 @@ such that
 $$
 \boxed{W(t)\longrightarrow C\qquad(t\to\infty).}
 $$
+:::
+
+:::
+
 :::
 :::

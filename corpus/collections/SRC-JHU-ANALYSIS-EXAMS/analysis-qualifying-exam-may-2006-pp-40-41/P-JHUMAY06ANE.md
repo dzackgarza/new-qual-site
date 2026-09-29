@@ -47,8 +47,12 @@ $$
 In particular $\max|f'(a)|=1$, and the largest possible
 real value of $f'(a)$ is also one, attained by $f(z)=z$.
 
-<1>1. Conjugation to the disk bounds the derivative.
-::: {.proof}
+::: pf
+
+::: pf-step
+Conjugation to the disk bounds the derivative.
+
+::: pf-proof
 The fractional map
 $$
 \phi(z)=\frac{z-a}{z-\overline a},\qquad
@@ -70,8 +74,12 @@ $(\phi^{-1})'(0)=1/\phi'(a)$ give $F'(0)=f'(a)$.
 Schwarz's lemma therefore gives $|f'(a)|\leq1$ [@SS03].
 :::
 
-<1>2. Every derivative in that disk is attained.
-::: {.proof}
+:::
+
+::: pf-step
+Every derivative in that disk is attained.
+
+::: pf-proof
 For any $|\lambda|\leq1$, the map $w\mapsto\lambda w$
 takes $D$ into $D$, including when $\lambda=0$. Thus
 $$
@@ -83,5 +91,9 @@ cancellation. This proves equality of the stated sets.
 For example $\lambda=i$ gives a nonreal derivative,
 while $\lambda=1$ gives the identity, which attains both
 $\max|f'(a)|=1$ and the largest real value $f'(a)=1$.
+:::
+
+:::
+
 :::
 :::
