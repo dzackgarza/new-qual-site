@@ -46,7 +46,11 @@ where the equivalence relation $\sim_n$ identifies a point $x$ on the boundary $
 :::
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: {.pf-step #meridian-longitude}
+Let
 \[
 \mu(s)=(e^{is},1),
 \qquad
@@ -61,7 +65,8 @@ Then
 \pi_1(T)\cong \mathbb Z\mu\oplus\mathbb Z\lambda.
 \]
 For either copy of the solid torus, the boundary inclusion kills \(\mu\) and sends \(\lambda\) to a generator of the fundamental group of the solid torus.
-::: {.proof}
+
+::: pf-proof
 The solid torus \(V=D^2\times S^1\) deformation retracts onto its core \(\{0\}\times S^1\), so
 \[
 \pi_1(V)\cong\mathbb Z.
@@ -69,13 +74,17 @@ The solid torus \(V=D^2\times S^1\) deformation retracts onto its core \(\{0\}\t
 The loop \(\mu\) bounds the disk \(D^2\times\{1\}\), while \(\lambda\) is homotopic to the core circle.
 :::
 
-<1>2. The gluing map acts on \(\pi_1(T)\) by
+:::
+
+::: {.pf-step #gluing-action}
+The gluing map acts on \(\pi_1(T)\) by
 \[
 \phi_{n*}(\mu)=\mu+n\lambda,
 \qquad
 \phi_{n*}(\lambda)=\lambda.
 \]
-::: {.proof}
+
+::: pf-proof
 Along the meridian,
 \[
 \phi_n(e^{is},1)=(e^{is},e^{ins}),

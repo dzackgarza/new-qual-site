@@ -48,11 +48,65 @@ A cold resume starts at **`copy-policy-repair`**, not at slogans, solution autho
   Readers can suggest a slogan for a result through the same prefilled GitHub issue-form mechanism `unsolved-contribution` builds.
   **Acceptance:** the slogan field exists in the card schema, renders as a badge on the built site, carries a working suggestion link, and every theorem, proposition, lemma, corollary, and fact card has an authored slogan read against its statement.
 
-- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed).
+- **`lamport-conversion`**. **Needs:** none.
+  A proof written with typed step numbers (`<1>2.`) violates `STYLE-08`. Convert every such proof to the syntax of pandoc-config's `lamport_proof.lua` filter. This is a syntax conversion: no mathematics and no prose changes.
+  On 2026-09-29 the conversion stood at 1,808 cards converted and committed; 5,140 cards remain.
+
+  **Batches.** The remaining cards are listed in 20 batch files, `queues/lamport-conversion/batch-00.tsv` through `batch-19.tsv`, 257 cards each, in path order.
+  Each row is `path<TAB>status<TAB>note`. The status is one of:
+
+  | Status | Meaning | Action |
+  | --- | --- | --- |
+  | `pending` | The card holds typed steps. A note `partly converted; finish it` marks a card that was stopped in the middle of its conversion. | Convert it. |
+  | `verify` | The conversion was written but never read back. | Read it back (step 3 below). |
+  | `skipped` | An earlier agent found the step structure uncertain. The note gives the reason. | Leave it. A person reads it at close. |
+  | `converted` | Done. | None. |
+
+  Give one batch to one Sonnet agent. The agent uses only Read, Edit and Write; it edits only the cards in its batch and its own batch file. It does not run commands, tests, `qualc`, git, builds or formatters, does not commit or push, and does not start other agents.
+  Twenty agents at one time hit the server rate limit and made no progress for hours, so run about five at one time and start the next batch when one finishes. An agent that stops continues from the first row of its batch that is still `pending` or `verify`.
+
+  **Before the first card**, the agent reads the `STYLE-08` section of [CONTRIBUTING.md](CONTRIBUTING.md) and the two finished conversions `corpus/collections/SRC-UGA-TOP-FALL-2004/P-QN7OP.md` and `corpus/problems/Algebra/E-AMD-O2OGRSJP.md` (nested substeps). It reads them again after any context compaction.
+
+  **Source layout.** A step is a line that starts with `<k>m.`, possibly indented: `k` is the level and `m` the number inside the level. A step proved directly is followed by a `::: {.proof}` or `::: proof` block. A step proved by substeps is followed by steps one level down. A step can have both. A `Q.E.D.` step closes a level. Prose cites steps as `<1>2`, `step <2>3`, `<1>1.4`, and ranges such as `<1>1--<1>3`.
+
+  **Target layout.**
+  - The whole proof becomes one `::: pf` block. Prose before the first step (notation, setup) stays before it, outside the block.
+  - Each step becomes `::: pf-step` with its claim as the first paragraph; the `<k>m.` marker is removed.
+  - The step's proof block becomes `::: pf-proof` inside the step, after the claim. Substeps go inside that pf-proof, after any proof prose, as nested pf-step blocks. A step with substeps but no proof block gets a pf-proof that holds only the substeps. A step with neither stays a bare pf-step.
+  - A `Q.E.D.` step becomes `::: pf-qed`. Its proof prose goes directly inside it, with no pf-proof, unless it has substeps; then it holds a pf-proof with them. Delete the words "Q.E.D."; the filter prints QED.
+  - If the last step of a level is not Q.E.D., add a pf-qed only if one sentence that cites the existing steps states it with no new mathematics (P-QN7OP does this). If the last step already carries the conclusion, add nothing.
+  - A step that another step cites gets an identifier, `::: {.pf-step #kebab-name}`. The name says what the step claims and is unique in the card. Replace each typed citation with `[](#kebab-name){.pf-ref}`, keeping or adding the word "step"/"steps" before it once. A range becomes the individual citations joined by commas and "and", or "… through …" if the source said "through". Resolve a hierarchical citation such as `<2>3` by reading which step it means. A step nobody cites gets no identifier.
+  - The only fence lines are `::: pf`, `::: pf-step`, `::: pf-proof`, `::: pf-qed`, `::: {.pf-step #name}` and the bare closer `:::`. Put a blank line before and after every fence line, openers and closers alike.
+  - Remove the hand indentation of step lines and proof bodies. Keep indentation inside display math, lists and code.
+  - A `::: pf` block holds only steps. A pf-proof that holds substeps holds only steps, except that it may open with proof prose before its first substep. Anything else between two sibling steps is not allowed there:
+    - A sentence that continues a step's proof goes to the end of that step's pf-proof. If that pf-proof holds substeps, the sentence becomes the content of a `::: pf-qed` as the last child of the pf-proof, with its words unchanged. Never move it before the substeps.
+    - For a heading or other section-level prose between top-level steps, close the `::: pf` block before it and open a new `::: pf` block after it. Identifiers stay unique across the card, so citations still resolve across blocks.
+  - Convert every typed proof in the card: solutions, hints and proofs of theorems. Independent typed proofs in one card (for example, one per part) each become their own `::: pf` block.
+
+  **Preserve.** Every other word and every character of mathematics stays as written: no rewording, typo fixes, reflowing, math changes, deleted prose or added explanation. The only words the agent may add are a pf-qed sentence as above and "step"/"steps"/"and" around citations. Front matter, the problem statement and all other sections stay unchanged. A stray sentence between a proof block's closer and the next step belongs to the preceding step.
+
+  **When not to convert.** If the step structure is not certain from reading (skipped levels, duplicate or out-of-order numbers, markers in the middle of a paragraph that could mean several trees, citations of steps that do not exist), leave the card byte-for-byte unchanged, set its status to `skipped`, and write the reason in the note.
+
+  **Per card.**
+  1. Read the card.
+  2. Convert it with Edit.
+  3. Read it again and confirm that every fence opens and closes, that the nesting matches the original numbering, that every pf-ref names an identifier in the card, and that no prose or mathematics changed.
+  4. Set the row's status to `converted` or `skipped` in the batch file, then go to the next row.
+
+  **Commits.** The orchestrator, not the agents, commits the cards whose rows say `converted`, together with their batch files, using `git commit --no-verify --pathspec-from-file=…`. It runs no check or build between commits.
+
+  **Close.**
+  1. When no batch row is `pending` or `verify`, run `uv run qualc check` once over the corpus and repair each `lamport-proof-invalid` diagnostic.
+  2. Read each `skipped` card, decide its step structure, and convert it.
+  3. Push; `pages.yml` builds the site.
+  4. Delete qualc's typed-step renderer (`_lamport_*` in `tools/qualc/emit.py`) and `normalize_fenced_divs`, make `qualc check` reject a fence line that Pandoc reads as paragraph text, and delete `queues/lamport-conversion/`.
+
+  **Acceptance:** `git grep -E '^[[:space:]]*<[0-9]+>[0-9]+\.' -- corpus wiki` finds no file, `qualc check` reports no `lamport-proof-invalid`, and the typed-step renderer is deleted.
+
+- **`copy-policy-repair`**. **Needs:** `policy-consolidation` (closed), `lamport-conversion`.
   Read every current reader-facing prose surface against the policies in [CONTRIBUTING.md](CONTRIBUTING.md#policy-families) and rewrite actual violations while preserving the mathematics.
   This includes the copy `unsolved-contribution` and `slogans` add.
-  A solution still written with typed `<n>m.` steps violates `STYLE-08` and is converted to the Lamport filter's syntax.
-  When no card holds a typed-step proof, delete qualc's typed-step renderer (`_lamport_*` in `emit.py`) and `normalize_fenced_divs`, and let `qualc check` reject a fence line Pandoc reads as paragraph text.
+  A solution still written with typed `<n>m.` steps is converted under [`lamport-conversion`](#lamport-conversion).
   Recompute the surface population when this pass is active; inventories and review-crawl candidates are leads, not semantic findings or acceptance evidence.
   **Acceptance:** every in-scope surface has been read against the policies and every violation found in that pass is repaired; no surface is closed by a receipt, inventory, lint count, or audit note.
 

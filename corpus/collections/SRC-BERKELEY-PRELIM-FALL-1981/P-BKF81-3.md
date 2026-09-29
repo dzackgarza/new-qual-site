@@ -34,8 +34,12 @@ $$
 X=\mathcal O_1\sqcup\cdots\sqcup\mathcal O_r.
 $$
 
-<1>1. Every orbit has cardinality a power of $p$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Every orbit has cardinality a power of $p$.
+
+::: pf-proof
 For $x\in X$, the orbit-stabilizer theorem gives
 $$
 |Gx|=[G:G_x].
@@ -51,8 +55,12 @@ $$
 for some $0\le j\le k$.
 :::
 
-<1>2. At least one orbit has size one.
-::: {.proof}
+:::
+
+::: pf-step
+At least one orbit has size one.
+
+::: pf-proof
 Suppose no point were fixed by all of $G$. Then no orbit would have size
 $1$, so every orbit size would be divisible by $p$. Therefore
 $$

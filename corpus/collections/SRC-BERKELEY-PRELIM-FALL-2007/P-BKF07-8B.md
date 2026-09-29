@@ -31,6 +31,7 @@ Show that for every positive integer \(n\), there exists an irreducible polynomi
 :::
 
 ::: {.solution}
+
 For $n\ge1$, define
 $$
 F_n(x)\coloneqq\prod_{k=1}^n(x-4k),
@@ -38,10 +39,13 @@ F_n(x)\coloneqq\prod_{k=1}^n(x-4k),
 G_n(x)\coloneqq F_n(x)+2.
 $$
 
-<1>1. The polynomial $G_n\in\ZZ[x]$ has degree $n$ and is
+::: pf
+
+::: {.pf-step #Gn-irreducible}
+The polynomial $G_n\in\ZZ[x]$ has degree $n$ and is
 irreducible over $\QQ$.
 
-::: {.proof}
+::: pf-proof
 The polynomial $F_n$ is monic of degree $n$. Every nonleading
 coefficient of $F_n$ is divisible by $4$, because every elementary
 symmetric polynomial of positive degree in $4,8,\ldots,4n$ is
@@ -58,9 +62,12 @@ divisible by $2$. Eisenstein's criterion at the prime $2$ shows that
 $G_n$ is irreducible over $\QQ$.
 :::
 
-<1>2. For $n=1$, the polynomial $G_1$ has one real root.
+:::
 
-::: {.proof}
+::: {.pf-step #G1-real-root}
+For $n=1$, the polynomial $G_1$ has one real root.
+
+::: pf-proof
 Here
 $$
 G_1(x)=2+(x-4)=x-2.
@@ -68,7 +75,10 @@ $$
 Its unique root is $2$.
 :::
 
-<1>3. Suppose $n\ge2$. For $1\le j\le n-1$, set
+:::
+
+::: {.pf-step #sign-at-xj}
+Suppose $n\ge2$. For $1\le j\le n-1$, set
 $$
 x_j\coloneqq4\left(j+\frac12\right)=4j+2.
 $$
@@ -77,7 +87,7 @@ $$
 \operatorname{sgn}G_n(x_j)=(-1)^{n-j}.
 $$
 
-::: {.proof}
+::: pf-proof
 Directly,
 $$
 F_n(x_j)
@@ -99,7 +109,10 @@ Since $G_n(x_j)=F_n(x_j)+2$, adding $2$ cannot change the sign, which
 proves the claim.
 :::
 
-<1>4. For $n\ge2$, the polynomial $G_n$ has at least one real root in
+:::
+
+::: {.pf-step #root-in-each-interval}
+For $n\ge2$, the polynomial $G_n$ has at least one real root in
 each of the $n$ disjoint intervals
 $$
 (-\infty,x_1),\quad
@@ -108,8 +121,8 @@ $$
 (x_{n-1},\infty).
 $$
 
-::: {.proof}
-Step <1>3 shows that the signs at consecutive $x_j$ alternate, so the
+::: pf-proof
+Step [](#sign-at-xj){.pf-ref} shows that the signs at consecutive $x_j$ alternate, so the
 intermediate value theorem gives a root in every interval
 $(x_j,x_{j+1})$.
 
@@ -120,35 +133,44 @@ $$
 \operatorname{sgn}G_n(x)=(-1)^n
 \quad\text{for all sufficiently negative }x.
 $$
-Step <1>3 gives
+Step [](#sign-at-xj){.pf-ref} gives
 $\operatorname{sgn}G_n(x_1)=(-1)^{n-1}$ and
 $\operatorname{sgn}G_n(x_{n-1})=-1$. Thus the intermediate value
 theorem also gives a root in $(-\infty,x_1)$ and a root in
 $(x_{n-1},\infty)$.
 :::
 
-<1>5. All $n$ roots of $G_n$ are real.
+:::
 
-::: {.proof}
-For $n=1$, this is step <1>2. For $n\ge2$, step <1>4 gives $n$
+::: {.pf-step #all-roots-real}
+All $n$ roots of $G_n$ are real.
+
+::: pf-proof
+For $n=1$, this is step [](#G1-real-root){.pf-ref}. For $n\ge2$, step [](#root-in-each-interval){.pf-ref} gives $n$
 distinct real roots because the listed intervals are disjoint. Since
 $G_n$ has degree $n$, it has no further roots over $\CC$.
 :::
 
-<1>6. For every positive integer $n$, the polynomial
+:::
+
+::: {.pf-step #final-polynomial}
+For every positive integer $n$, the polynomial
 $$
 \boxed{G_n(x)=2+\prod_{k=1}^n(x-4k)}
 $$
 is irreducible over $\QQ$, has degree $n$, and has only real roots.
 
-::: {.proof}
-Irreducibility and degree are step <1>1, and reality of all roots is
-step <1>5.
+::: pf-proof
+Irreducibility and degree are step [](#Gn-irreducible){.pf-ref}, and reality of all roots is
+step [](#all-roots-real){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-Step <1>6 supplies the required polynomial for every $n\ge1$.
 :::
+
+::: pf-qed
+Step [](#final-polynomial){.pf-ref} supplies the required polynomial for every $n\ge1$.
+:::
+
+:::
+
 :::

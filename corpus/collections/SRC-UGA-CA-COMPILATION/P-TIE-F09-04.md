@@ -55,12 +55,15 @@ $$
 \Gamma_R=\{Re^{i\theta}:0\leq\theta\leq\pi\}.
 $$
 
-<1>1. The only pole of $F$ inside $C_R$ is $z=ia$, and
+::: pf
+
+::: {.pf-step #residue-at-ia}
+The only pole of $F$ inside $C_R$ is $z=ia$, and
 $$
 \Res(F;ia)=\frac{e^{-a}}2.
 $$
 
-::: {.proof}
+::: pf-proof
 Since
 $$
 z^2+a^2=(z-ia)(z+ia),
@@ -81,13 +84,16 @@ $$
 $$
 :::
 
-<1>2. The integral over the semicircular arc tends to zero:
+:::
+
+::: {.pf-step #arc-integral-vanishes}
+The integral over the semicircular arc tends to zero:
 $$
 \int_{\Gamma_R}F(z)\,dz\longrightarrow0
 $$
 as $R\to\infty$.
 
-::: {.proof}
+::: pf-proof
 On $z=Re^{i\theta}$,
 $$
 \abs{e^{iz}}=e^{-R\sin\theta}.
@@ -143,7 +149,10 @@ $$
 $$
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #complex-integral-limit}
+One has
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}
@@ -152,8 +161,8 @@ $$
 \pi i e^{-a}.
 $$
 
-::: {.proof}
-By the residue theorem and step <1>1,
+::: pf-proof
+By the residue theorem and step [](#residue-at-ia){.pf-ref},
 $$
 \int_{C_R}F(z)\,dz
 =
@@ -169,10 +178,13 @@ $$
 =
 \pi i e^{-a}.
 $$
-Letting $R\to\infty$ and using step <1>2 gives the displayed limit.
+Letting $R\to\infty$ and using step [](#arc-integral-vanishes){.pf-ref} gives the displayed limit.
 :::
 
-<1>4. The symmetric sine integrals satisfy
+:::
+
+::: {.pf-step #sine-integral-limit}
+The symmetric sine integrals satisfy
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}
@@ -181,8 +193,8 @@ $$
 \pi e^{-a}.
 $$
 
-::: {.proof}
-Taking imaginary parts in step <1>3 gives
+::: pf-proof
+Taking imaginary parts in step [](#complex-integral-limit){.pf-ref} gives
 $$
 \lim_{R\to\infty}
 \int_{-R}^{R}
@@ -192,7 +204,10 @@ $$
 $$
 :::
 
-<1>5. The requested value is
+:::
+
+::: {.pf-step #half-line-value}
+The requested value is
 $$
 \boxed{
 \int_0^{\infty}
@@ -202,7 +217,7 @@ $$
 }
 $$
 
-::: {.proof}
+::: pf-proof
 The function
 $$
 x\longmapsto\frac{x\sin x}{x^2+a^2}
@@ -215,15 +230,18 @@ $$
 2\int_0^R
 \frac{x\sin x}{x^2+a^2}\,dx.
 $$
-Step <1>4 therefore proves that the half-line improper integral converges
+Step [](#sine-integral-limit){.pf-ref} therefore proves that the half-line improper integral converges
 and has the displayed value.
 :::
 
-<1>6. Q.E.D.
-
-::: {.proof}
-Step <1>5 is the requested value.
 :::
+
+::: pf-qed
+Step [](#half-line-value){.pf-ref} is the requested value.
+:::
+
+:::
+
 :::
 
 ::: {.remark}

@@ -46,13 +46,16 @@ $$
 S=\{w\in\CC:0<\operatorname{Re}w<1\}.
 $$
 
-<1>1. The map
+::: pf
+
+::: {.pf-step #m-conformal-bijection}
+The map
 $$
 M:D\longrightarrow S
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
 For $z\neq1$,
 $$
 \operatorname{Re}M(z)
@@ -106,7 +109,8 @@ $$
 on $D$, so $M$ is conformal.
 :::
 
-<1>2. The map
+::: {.pf-step #e-conformal-bijection}
+The map
 $$
 E:S\longrightarrow\mathcal H,
 \qquad
@@ -118,7 +122,7 @@ $$
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
 Write
 $$
 w=u+iv,

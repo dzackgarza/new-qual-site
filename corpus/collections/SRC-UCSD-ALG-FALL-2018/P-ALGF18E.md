@@ -41,11 +41,16 @@ A := \{ a_0 + a_2 T^2 + a_3 T^3 + \cdots + a_n T^n \mid n = 0,2,3,\ldots;\; a_0,
 :::
 
 ::: {.solution}
-<1>1. The field of fractions of $A$ is
+
+::: pf
+
+::: {.pf-step #part-a-fraction-field}
+The field of fractions of $A$ is
 \[
 \mathbb Q(T).
 \]
-::: {.proof}
+
+::: pf-proof
 Since
 \[
 A\subseteq\mathbb Z[T],
@@ -69,8 +74,12 @@ Thus $\mathbb Q(T)\subseteq\operatorname{Frac}(A)$, proving
 This answers part (a).
 :::
 
-<1>2. The element $T$ is integral over $A$ but does not belong to $A$.
-::: {.proof}
+:::
+
+::: {.pf-step #part-b-integral-not-in-a}
+The element $T$ is integral over $A$ but does not belong to $A$.
+
+::: pf-proof
 The polynomial
 \[
 x^2-T^2\in A[x]

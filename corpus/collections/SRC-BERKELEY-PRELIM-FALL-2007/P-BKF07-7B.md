@@ -36,44 +36,54 @@ Give a proof or a counterexample.
 :::
 
 ::: {.solution}
+
 Let
 $$
 L\coloneqq\lim_{x\to\infty}f(x).
 $$
 
-<1>1. For every $\varepsilon>0$, there is $M\ge0$ such that
+::: pf
+
+::: {.pf-step #finite-limit-tail-bound}
+For every $\varepsilon>0$, there is $M\ge0$ such that
 $$
 x\ge M
 \quad\Longrightarrow\quad
 \abs{f(x)-L}<\frac{\varepsilon}{3}.
 $$
 
-::: {.proof}
+::: pf-proof
 This is the definition of the finite limit $L$ at infinity.
 :::
 
-<1>2. For the $M$ from step <1>1, there is
+:::
+
+::: {.pf-step #compact-interval-delta}
+For the $M$ from step [](#finite-limit-tail-bound){.pf-ref}, there is
 $\delta\in(0,1]$ such that whenever
 $x,y\in[0,M+1]$ and $\abs{x-y}<\delta$, one has
 $$
 \abs{f(x)-f(y)}<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
 The function $f$ is continuous on the compact interval $[0,M+1]$.
 Hence it is uniformly continuous there. Choose a corresponding
 positive modulus and decrease it if necessary so that $\delta\le1$.
 :::
 
-<1>3. If $x,y\ge0$ and $\abs{x-y}<\delta$, then
+:::
+
+::: {.pf-step #single-delta-works}
+If $x,y\ge0$ and $\abs{x-y}<\delta$, then
 $$
 \abs{f(x)-f(y)}<\varepsilon.
 $$
 
-::: {.proof}
+::: pf-proof
 Interchange $x$ and $y$ if necessary so that $x\le y$.
 
-If $x\ge M$, then also $y\ge M$, and step <1>1 gives
+If $x\ge M$, then also $y\ge M$, and step [](#finite-limit-tail-bound){.pf-ref} gives
 $$
 \begin{aligned}
 \abs{f(x)-f(y)}
@@ -87,22 +97,28 @@ If $x<M$, then
 $$
 y<x+\delta\le M+1.
 $$
-Thus $x,y\in[0,M+1]$, and step <1>2 gives
+Thus $x,y\in[0,M+1]$, and step [](#compact-interval-delta){.pf-ref} gives
 $\abs{f(x)-f(y)}<\varepsilon$.
 :::
 
-<1>4. The answer is $\boxed{\text{yes}}$: the function $f$ is
+:::
+
+::: {.pf-step #answer-yes}
+The answer is $\boxed{\text{yes}}$: the function $f$ is
 uniformly continuous on $[0,\infty)$.
 
-::: {.proof}
-Given any $\varepsilon>0$, steps <1>1--<1>3 produce a single
+::: pf-proof
+Given any $\varepsilon>0$, steps [](#finite-limit-tail-bound){.pf-ref}, [](#compact-interval-delta){.pf-ref} and [](#single-delta-works){.pf-ref} produce a single
 $\delta>0$ that works for every $x,y\ge0$. This is uniform
 continuity.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 gives the required answer and proof.
 :::
+
+::: pf-qed
+Step [](#answer-yes){.pf-ref} gives the required answer and proof.
+:::
+
+:::
+
 :::

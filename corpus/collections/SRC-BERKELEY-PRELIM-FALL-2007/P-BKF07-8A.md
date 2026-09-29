@@ -46,6 +46,7 @@ Give a proof or counterexample.
 :::
 
 ::: {.solution}
+
 Yes.
 
 For each $n\ge1$, set
@@ -53,17 +54,23 @@ $$
 c_n=\sqrt{n b_n}.
 $$
 
-<1>1. One has
+::: pf
+
+::: {.pf-step #cn-to-infinity}
+One has
 $$
 c_n\longrightarrow\infty.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $b_n\to\infty$ and $n\to\infty$, their product $nb_n\to\infty$.
 Taking positive square roots gives the claim.
 :::
 
-<1>2. There exists a strictly increasing sequence of indices
+:::
+
+::: {.pf-step #nk-selection}
+There exists a strictly increasing sequence of indices
 $$
 n_1<n_2<\cdots
 $$
@@ -72,17 +79,20 @@ $$
 c_{n_k}\ge\sum_{j=1}^{k-1}c_{n_j}.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose $n_1$ arbitrarily.
 Suppose $n_1<\cdots<n_{k-1}$ have been chosen.
 The finite number
 $$
 \sum_{j=1}^{k-1}c_{n_j}
 $$
-is fixed, while $c_n\to\infty$ by step <1>1. Hence some $n_k>n_{k-1}$ satisfies the required inequality.
+is fixed, while $c_n\to\infty$ by step [](#cn-to-infinity){.pf-ref}. Hence some $n_k>n_{k-1}$ satisfies the required inequality.
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #partial-sum-bound}
+Define
 $$
 a_n=
 \begin{cases}
@@ -95,9 +105,9 @@ $$
 \sum_{j=1}^{k}c_{n_j}\le2c_{n_k}.
 $$
 
-::: {.proof}
+::: pf-proof
 For $k=1$ the inequality is immediate.
-If $k\ge2$, step <1>2 gives
+If $k\ge2$, step [](#nk-selection){.pf-ref} gives
 $$
 \sum_{j=1}^{k}c_{n_j}
 =
@@ -107,15 +117,18 @@ $$
 $$
 :::
 
-<1>4. The Cesàro means of $(a_n)$ converge to zero:
+:::
+
+::: {.pf-step #cesaro-zero}
+The Cesàro means of $(a_n)$ converge to zero:
 $$
 \boxed{
 \frac{a_1+\cdots+a_n}{n}\longrightarrow0
 }.
 $$
 
-::: {.proof}
-If $n_k\le n<n_{k+1}$, then by step <1>3,
+::: pf-proof
+If $n_k\le n<n_{k+1}$, then by step [](#partial-sum-bound){.pf-ref},
 $$
 \begin{aligned}
 0
@@ -135,7 +148,10 @@ Since $b_n/n\to0$, the right-hand side tends to zero as $k\to\infty$.
 Also $k\to\infty$ whenever $n\to\infty$, so the Cesàro means tend to zero.
 :::
 
-<1>5. Along the indices $n_k$,
+:::
+
+::: {.pf-step #ratio-along-nk}
+Along the indices $n_k$,
 $$
 \frac{a_{n_k}}{b_{n_k}}
 =
@@ -143,7 +159,7 @@ $$
 \longrightarrow\infty.
 $$
 
-::: {.proof}
+::: pf-proof
 By definition,
 $$
 a_{n_k}=c_{n_k}=\sqrt{n_kb_{n_k}},
@@ -156,21 +172,27 @@ $$
 and all terms are positive, its reciprocal square root tends to $\infty$.
 :::
 
-<1>6. Therefore
+:::
+
+::: {.pf-step #limsup-infinity}
+Therefore
 $$
 \boxed{
 \limsup_{n\to\infty}\frac{a_n}{b_n}=\infty
 }.
 $$
 
-::: {.proof}
-Step <1>5 shows that the ratio tends to infinity along the subsequence $n=n_k$.
+::: pf-proof
+Step [](#ratio-along-nk){.pf-ref} shows that the ratio tends to infinity along the subsequence $n=n_k$.
 Hence its limsup is infinite.
 :::
 
-<1>7. Q.E.D.
-
-::: {.proof}
-The sequence constructed in step <1>3 satisfies both required properties by steps <1>4 and <1>6.
 :::
+
+::: pf-qed
+The sequence constructed in step [](#partial-sum-bound){.pf-ref} satisfies both required properties by steps [](#cesaro-zero){.pf-ref} and [](#limsup-infinity){.pf-ref}.
+:::
+
+:::
+
 :::

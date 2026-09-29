@@ -42,6 +42,7 @@ f(z)=z.
 :::
 
 ::: {.solution}
+
 For each integer $m\ge1$, set
 $$
 \alpha_m\coloneqq1+\frac1m
@@ -51,13 +52,16 @@ $$
 g_m(z)\coloneqq f(z)-\alpha_m z.
 $$
 
-<1>1. For every $m\ge1$, there exists $z_m$ with
+::: pf
+
+::: {.pf-step #zm-exists}
+For every $m\ge1$, there exists $z_m$ with
 $\abs{z_m}<1$ such that
 $$
 f(z_m)=\alpha_m z_m.
 $$
 
-::: {.proof}
+::: pf-proof
 On the unit circle,
 $$
 \abs{f(z)}\le1<\alpha_m=\abs{\alpha_m z}.
@@ -70,27 +74,33 @@ $\abs{z_m}<1$, and $g_m(z_m)=0$ is exactly
 $f(z_m)=\alpha_m z_m$.
 :::
 
-<1>2. There are a subsequence $(z_{m_k})$ and a point $z$ with
+:::
+
+::: {.pf-step #subsequence-converges}
+There are a subsequence $(z_{m_k})$ and a point $z$ with
 $\abs{z}\le1$ such that
 $$
 z_{m_k}\longrightarrow z.
 $$
 
-::: {.proof}
+::: pf-proof
 Every $z_m$ lies in the closed unit disk, which is compact. Thus the
 sequence $(z_m)$ has a convergent subsequence whose limit remains in
 the closed unit disk.
 :::
 
-<1>3. The limit point $z$ from step <1>2 satisfies
+:::
+
+::: {.pf-step #limit-fixed-point}
+The limit point $z$ from step [](#subsequence-converges){.pf-ref} satisfies
 $$
 f(z)=z.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $f$ is holomorphic on a neighborhood of the closed unit disk, it
-is continuous there. Using step <1>1 along the subsequence from
-step <1>2,
+is continuous there. Using step [](#zm-exists){.pf-ref} along the subsequence from
+step [](#subsequence-converges){.pf-ref},
 $$
 \begin{aligned}
 f(z)
@@ -102,19 +112,25 @@ $$
 because $\alpha_m\to1$.
 :::
 
-<1>4. There exists $z$ with $\abs{z}\le1$ and
+:::
+
+::: {.pf-step #fixed-point-exists}
+There exists $z$ with $\abs{z}\le1$ and
 $$
 \boxed{f(z)=z}.
 $$
 
-::: {.proof}
-Step <1>2 gives $\abs{z}\le1$, and step <1>3 gives the fixed-point
+::: pf-proof
+Step [](#subsequence-converges){.pf-ref} gives $\abs{z}\le1$, and step [](#limit-fixed-point){.pf-ref} gives the fixed-point
 identity.
 :::
 
-<1>5. Q.E.D.
-
-::: {.proof}
-Step <1>4 is the required conclusion.
 :::
+
+::: pf-qed
+Step [](#fixed-point-exists){.pf-ref} is the required conclusion.
+:::
+
+:::
+
 :::

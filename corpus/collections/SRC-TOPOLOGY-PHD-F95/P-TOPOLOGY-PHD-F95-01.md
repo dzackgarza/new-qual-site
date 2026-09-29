@@ -45,8 +45,13 @@ Discuss.
 :::
 
 ::: {.solution}
-<1>1. The formula defining $h$ is well defined.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The formula defining $h$ is well defined.
+
+::: pf-proof
 If $x\in A\setminus B$, only the value $f(x)$ is prescribed, and if $x\in B\setminus A$, only the value $g(x)$ is prescribed.
 If $x\in A\cap B$, the two prescriptions agree by hypothesis:
 \[
@@ -55,8 +60,12 @@ f(x)=g(x).
 Since $X=A\cup B$, this defines one value $h(x)$ for every $x\in X$.
 :::
 
-<1>2. The map $h:X\to Y$ is continuous.
-::: {.proof}
+:::
+
+::: pf-step
+The map $h:X\to Y$ is continuous.
+
+::: pf-proof
 It is enough to show that the inverse image under $h$ of every closed subset of $Y$ is closed in $X$.
 Let $C\subseteq Y$ be closed.
 Then
@@ -75,8 +84,12 @@ Therefore their finite union $h^{-1}(C)$ is closed in $X$.
 Hence $h$ is continuous.
 :::
 
-<1>3. It is not necessary that both $A$ and $B$ be closed.
-::: {.proof}
+:::
+
+::: pf-step
+It is not necessary that both $A$ and $B$ be closed.
+
+::: pf-proof
 A parallel pasting lemma holds when $A$ and $B$ are both open.
 Indeed, suppose $A$ and $B$ are open in $X$, still cover $X$, and $f$ and $g$ are continuous and agree on $A\cap B$.
 For every open set $U\subseteq Y$,
@@ -98,8 +111,12 @@ Both $A$ and $B$ are open and nonclosed, yet every pair of continuous maps on th
 Therefore closedness of both pieces is sufficient, not necessary.
 :::
 
-<1>4. On the other hand, without a common open-cover or closed-cover hypothesis, agreement on the overlap does not force the pasted map to be continuous.
-::: {.proof}
+:::
+
+::: pf-step
+On the other hand, without a common open-cover or closed-cover hypothesis, agreement on the overlap does not force the pasted map to be continuous.
+
+::: pf-proof
 Take
 \[
 X=\RR,
@@ -129,4 +146,9 @@ h(x)=
 which is not continuous at $0$.
 Thus, for this general pasting assertion, merely requiring one member of the cover to be closed is not enough.
 :::
+
+:::
+
+:::
+
 :::

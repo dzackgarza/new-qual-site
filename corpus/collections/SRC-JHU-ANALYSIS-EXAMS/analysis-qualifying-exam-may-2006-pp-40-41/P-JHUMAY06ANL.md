@@ -48,8 +48,12 @@ Because the $f_j$ are orthonormal,
 =\frac1n.
 \]
 
-<1>1. The square subsequence converges to $0$ almost everywhere.
-::: {.proof}
+::: pf
+
+::: {.pf-step #square-subsequence-converges}
+The square subsequence converges to $0$ almost everywhere.
+
+::: pf-proof
 For $n=k^2$,
 \[
 \sum_{k=1}^\infty \|S_{k^2}\|_2^2
@@ -67,8 +71,12 @@ is exceeded only finitely often. Therefore
 $S_{k^2}(x)\to0$ for almost every $x$.
 :::
 
-<1>2. The oscillation between consecutive squares tends to $0$ almost everywhere.
-::: {.proof}
+:::
+
+::: {.pf-step #oscillation-tends-to-zero}
+The oscillation between consecutive squares tends to $0$ almost everywhere.
+
+::: pf-proof
 Fix $k$ and put $m=k^2$. For $m<n\le(k+1)^2$, orthogonality gives
 \[
 S_n-S_m
@@ -106,9 +114,13 @@ countable union of the resulting null exceptional sets gives
 for almost every $x$.
 :::
 
-<1>3. Conclude for the full sequence.
-::: {.proof}
-Outside the union of the two null exceptional sets from <1>1 and <1>2, if $k^2<n\le(k+1)^2$, then
+:::
+
+::: pf-step
+Conclude for the full sequence.
+
+::: pf-proof
+Outside the union of the two null exceptional sets from steps [](#square-subsequence-converges){.pf-ref} and [](#oscillation-tends-to-zero){.pf-ref}, if $k^2<n\le(k+1)^2$, then
 \[
 |S_n(x)|
 \le |S_{k^2}(x)|+|S_n(x)-S_{k^2}(x)|.
@@ -118,5 +130,9 @@ Both terms tend to $0$ as $k\to\infty$. Hence
 S_n(x)\longrightarrow0
 \]
 for almost every $x\in[0,1]$.
+:::
+
+:::
+
 :::
 :::

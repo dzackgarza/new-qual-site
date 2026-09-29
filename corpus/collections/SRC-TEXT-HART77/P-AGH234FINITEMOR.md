@@ -27,9 +27,13 @@ Show that a morphism $f: X \to Y$ is finite if and only if for every open affine
 :::
 
 ::: {.solution}
-<1>1. If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is finite.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #condition-implies-finite}
+If the stated condition holds for every affine open $V\subseteq Y$, then $f$ is finite.
+
+::: pf-proof
 Choose any affine open cover of $Y$.
 On every member $V=\Spec B$ of that cover, the hypothesis says
 \[
@@ -39,7 +43,10 @@ with $A$ finite as a $B$-module.
 This is exactly the definition of a finite morphism.
 :::
 
-<1>2. Conversely, suppose $f$ is finite and fix an arbitrary affine open
+:::
+
+::: {.pf-step #finite-cover-witness}
+Conversely, suppose $f$ is finite and fix an arbitrary affine open
 \[
 V=\Spec B\subseteq Y.
 \]
@@ -55,17 +62,20 @@ f^{-1}(V_i)=\Spec A_i
 \]
 with $A_i$ a finite $B_i$-module.
 
-::: {.proof}
+::: pf-proof
 This is the defining affine-cover condition for a finite morphism.
 :::
 
-<1>3. Every point $y\in V$ has an open neighborhood
+:::
+
+::: {.pf-step #common-distinguished-neighborhood}
+Every point $y\in V$ has an open neighborhood
 \[
 W_y\subseteq V\cap V_i
 \]
 for some $i$ which is distinguished in both $V$ and $V_i$.
 
-::: {.proof}
+::: pf-proof
 Choose $i$ with $y\in V_i$.  Inside the affine $V$, choose
 \[
 y\in D_V(b)\subseteq V\cap V_i.
@@ -86,9 +96,12 @@ D_{V_i}(c)=D_V(b)\cap D_V(d)=D_V(bd).
 Thus this neighborhood is distinguished in both affines.  Denote it by $W_y$.
 :::
 
-<1>4. For every neighborhood $W_y$ from <1>3, the inverse image $f^{-1}(W_y)$ is affine and finite over $W_y$.
+:::
 
-::: {.proof}
+::: {.pf-step #preimage-wy-finite-affine}
+For every neighborhood $W_y$ from step [](#common-distinguished-neighborhood){.pf-ref}, the inverse image $f^{-1}(W_y)$ is affine and finite over $W_y$.
+
+::: pf-proof
 Write $W_y=D_{V_i}(c)$ inside the witnessing affine $V_i=\Spec B_i$.
 Then
 \[
@@ -105,19 +118,25 @@ Since $A_i$ is a finite $B_i$-module, localization gives $(A_i)_c$ as a finite $
 Thus $f^{-1}(W_y)$ is affine and finite over $W_y$.
 :::
 
-<1>5. There are finitely many such common distinguished opens
+:::
+
+::: {.pf-step #finite-subcover-of-v}
+There are finitely many such common distinguished opens
 \[
 W_j=D_V(b_j)
 \]
 which cover $V$.
 
-::: {.proof}
-The neighborhoods from <1>3 cover $V$.  Since $V$ is affine, it is quasi-compact, so a finite subcover suffices.  Express each chosen member in its distinguished form inside $V$.
+::: pf-proof
+The neighborhoods from step [](#common-distinguished-neighborhood){.pf-ref} cover $V$.  Since $V$ is affine, it is quasi-compact, so a finite subcover suffices.  Express each chosen member in its distinguished form inside $V$.
 :::
 
-<1>6. The elements $b_1,\ldots,b_r\in B$ generate the unit ideal.
+:::
 
-::: {.proof}
+::: {.pf-step #bj-generate-unit-ideal}
+The elements $b_1,\ldots,b_r\in B$ generate the unit ideal.
+
+::: pf-proof
 The distinguished opens $D(b_j)$ cover $\Spec B$, so
 \[
 V(b_1,\ldots,b_r)=\varnothing.
@@ -128,7 +147,10 @@ Hence
 \]
 :::
 
-<1>7. Put
+:::
+
+::: {.pf-step #aj-generate-unit-ideal-and-affine-loci}
+Put
 \[
 X_V=f^{-1}(V),
 \qquad
@@ -145,7 +167,7 @@ and
 \]
 is affine for every $j$.
 
-::: {.proof}
+::: pf-proof
 Choose $d_j\in B$ with
 \[
 \sum_jd_jb_j=1.

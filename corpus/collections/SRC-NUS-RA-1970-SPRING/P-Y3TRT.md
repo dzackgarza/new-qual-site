@@ -32,34 +32,73 @@ for all $x \in [0, 1]$.
 :::
 
 ::: {.solution}
-<1>1. The sequence $\{f_n\}$ is well defined, and $0 \leq f_n(x) \leq 1$ for all $n$ and all $x \in [0,1]$.
-<2>1. Each $f_n$ is well defined and continuous.
-::: {.proof}
+::: pf
+
+::: {.pf-step #fn-well-defined-bounded}
+The sequence $\{f_n\}$ is well defined, and $0 \leq f_n(x) \leq 1$ for all $n$ and all $x \in [0,1]$.
+
+::: pf-proof
+
+::: {.pf-step #fn-well-defined-continuous}
+Each $f_n$ is well defined and continuous.
+
+::: pf-proof
 On $[0, 1/n]$, $f_n \equiv 0$.
 On $[j/n, (j+1)/n]$ the integrand $g(t, f_n(t))$ is evaluated only at $t \leq x - 1/n \leq j/n$, that is, at values of $f_n$ already defined on $[0, j/n]$. So the recursion defines $f_n$ piece by piece; each piece is continuous as an integral of a continuous function, and consecutive pieces agree at the common endpoint.
 :::
-<2>2. $0 \leq f_n(x) \leq x - \frac1n \leq 1$ for $x \geq \frac1n$; hence $0 \leq f_n \leq 1$ everywhere.
-::: {.proof}
-$g \geq 0$ gives $f_n \geq 0$; $g \leq 1$ gives $f_n(x) = \int_0^{x - 1/n} g \leq \int_0^{x - 1/n} 1 = x - \frac1n \leq 1$.
-:::
-<2>3. Q.E.D.
-::: {.proof}
-Steps <2>1 and <2>2.
+
 :::
 
-<1>2. Each $f_n$ is $1$-Lipschitz: $|f_n(x_1) - f_n(x_2)| \leq |x_1 - x_2|$.
-<2>1. For $1/n \leq x_1 \leq x_2$: $|f_n(x_2) - f_n(x_1)| = \left|\int_{x_1 - 1/n}^{x_2 - 1/n} g(t, f_n(t)) \, dt\right| \leq x_2 - x_1$.
-::: {.proof}
+::: {.pf-step #fn-bounded-by-x-minus-1n}
+$0 \leq f_n(x) \leq x - \frac1n \leq 1$ for $x \geq \frac1n$; hence $0 \leq f_n \leq 1$ everywhere.
+
+::: pf-proof
+$g \geq 0$ gives $f_n \geq 0$; $g \leq 1$ gives $f_n(x) = \int_0^{x - 1/n} g \leq \int_0^{x - 1/n} 1 = x - \frac1n \leq 1$.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Steps [](#fn-well-defined-continuous){.pf-ref} and [](#fn-bounded-by-x-minus-1n){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #fn-lipschitz}
+Each $f_n$ is $1$-Lipschitz: $|f_n(x_1) - f_n(x_2)| \leq |x_1 - x_2|$.
+
+::: pf-proof
+
+::: {.pf-step #lipschitz-case-both-above}
+For $1/n \leq x_1 \leq x_2$: $|f_n(x_2) - f_n(x_1)| = \left|\int_{x_1 - 1/n}^{x_2 - 1/n} g(t, f_n(t)) \, dt\right| \leq x_2 - x_1$.
+
+::: pf-proof
 $|g| \leq 1$, and the interval of integration has length $x_2 - x_1$.
 :::
-<2>2. For $x_1 < 1/n \leq x_2$: $|f_n(x_2) - f_n(x_1)| = |f_n(x_2)| \leq x_2 - \frac1n \leq x_2 - x_1$.
-::: {.proof}
-$f_n(x_1) = 0$ by definition on $[0, 1/n]$, and $|f_n(x_2)| \leq x_2 - 1/n$ by step <1>1.
+
 :::
-<2>3. For $x_1 \leq x_2 < 1/n$, both values are $0$.
-<2>4. Q.E.D.
-::: {.proof}
-Taking $x_1 \leq x_2$, steps <2>1–<2>3 cover the three possible positions of $x_1, x_2$ relative to $1/n$.
+
+::: {.pf-step #lipschitz-case-straddle}
+For $x_1 < 1/n \leq x_2$: $|f_n(x_2) - f_n(x_1)| = |f_n(x_2)| \leq x_2 - \frac1n \leq x_2 - x_1$.
+
+::: pf-proof
+$f_n(x_1) = 0$ by definition on $[0, 1/n]$, and $|f_n(x_2)| \leq x_2 - 1/n$ by step [](#fn-well-defined-bounded){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #lipschitz-case-both-below}
+For $x_1 \leq x_2 < 1/n$, both values are $0$.
+:::
+
+:::
+
+::: pf-qed
+Taking $x_1 \leq x_2$, steps [](#lipschitz-case-both-above){.pf-ref}, [](#lipschitz-case-straddle){.pf-ref}, and [](#lipschitz-case-both-below){.pf-ref} cover the three possible positions of $x_1, x_2$ relative to $1/n$.
+:::
+
 :::
 
 <1>3. Arzelà–Ascoli gives a subsequence $f_{n_k} \to f$ uniformly on $[0,1]$, with $f$ continuous.

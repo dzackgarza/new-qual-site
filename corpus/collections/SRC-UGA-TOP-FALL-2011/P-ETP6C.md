@@ -30,7 +30,11 @@ Find, for all $k$, the relative homology $H_k (S^n , E)$.
 :::
 
 ::: {.solution}
-<1>1. The equator is
+
+::: pf
+
+::: {.pf-step #cw-structure}
+The equator is
 \[
 E=S^n\cap\{x_n=0\}\cong S^{n-1}.
 \]
@@ -40,7 +44,8 @@ e_+^n=\{x\in S^n:x_n>0\},
 \qquad
 e_-^n=\{x\in S^n:x_n<0\}.
 \]
-::: {.proof}
+
+::: pf-proof
 The closed upper and lower hemispheres
 \[
 D_+^n=\{x\in S^n:x_n\ge0\},
@@ -50,7 +55,10 @@ D_-^n=\{x\in S^n:x_n\le0\}
 are each homeomorphic to \(D^n\), and both have boundary \(E\cong S^{n-1}\). Choose any CW structure on \(E\). Attaching the interiors of these two hemispheres to \(E\) gives the stated CW structure on \(S^n\). For \(n=1\), the equator is \(S^0\), and the same description says that the two open semicircles are the two relative \(1\)-cells.
 :::
 
-<1>2. The relative cellular chain groups are
+:::
+
+::: {.pf-step #relative-chain-groups}
+The relative cellular chain groups are
 \[
 C_k(S^n,E)
 \cong
@@ -59,12 +67,17 @@ C_k(S^n,E)
 0,&k\ne n.
 \end{cases}
 \]
-::: {.proof}
-For a CW pair \((X,A)\), the relative cellular chain group \(C_k(X,A)\) is free abelian on the \(k\)-cells of \(X\) that are not cells of \(A\). By <1>1, exactly two cells of \(S^n\) lie outside the subcomplex \(E\), and both have dimension \(n\). They are \(e_+^n\) and \(e_-^n\). Therefore the relative cellular chain group is \(\mathbb Z^2\) in degree \(n\) and zero in every other degree.
+
+::: pf-proof
+For a CW pair \((X,A)\), the relative cellular chain group \(C_k(X,A)\) is free abelian on the \(k\)-cells of \(X\) that are not cells of \(A\). By step [](#cw-structure){.pf-ref}, exactly two cells of \(S^n\) lie outside the subcomplex \(E\), and both have dimension \(n\). They are \(e_+^n\) and \(e_-^n\). Therefore the relative cellular chain group is \(\mathbb Z^2\) in degree \(n\) and zero in every other degree.
 :::
 
-<1>3. Every differential in the relative cellular chain complex is zero.
-::: {.proof}
+:::
+
+::: {.pf-step #differentials-vanish}
+Every differential in the relative cellular chain complex is zero.
+
+::: pf-proof
 The only nonzero relative chain group is \(C_n(S^n,E)\). Its target under the boundary map is
 \[
 C_{n-1}(S^n,E)=0,
@@ -72,7 +85,10 @@ C_{n-1}(S^n,E)=0,
 so \(\partial_n=0\). All other differentials have zero domain.
 :::
 
-<1>4. Hence, for every \(n\ge1\),
+:::
+
+::: pf-step
+Hence, for every \(n\ge1\),
 \[
 \boxed{
 H_k(S^n,E;\mathbb Z)
@@ -82,9 +98,13 @@ H_k(S^n,E;\mathbb Z)
 0,&k\ne n.
 \end{cases}}
 \]
-::: {.proof}
+
+::: pf-proof
 Relative cellular homology computes the singular relative homology of a CW pair.
-By <1>2--<1>3, its chain complex has \(\mathbb Z^2\) in degree \(n\), zero elsewhere, and zero differentials.
+By step [](#relative-chain-groups){.pf-ref} and step [](#differentials-vanish){.pf-ref}, its chain complex has \(\mathbb Z^2\) in degree \(n\), zero elsewhere, and zero differentials.
 Its homology is therefore exactly the displayed group.
 :::
+
+:::
+
 :::
