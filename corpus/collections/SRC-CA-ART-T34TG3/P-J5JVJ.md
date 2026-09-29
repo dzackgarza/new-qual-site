@@ -30,41 +30,59 @@ Show that
 :::
 
 ::: {.solution}
-<1>1. $\int_0^1 \log(\sin \pi x)\,dx = \frac{1}{\pi}\int_0^{\pi} \log(\sin t)\,dt$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #rescale-to-0-pi}
+$\int_0^1 \log(\sin \pi x)\,dx = \frac{1}{\pi}\int_0^{\pi} \log(\sin t)\,dt$.
+
+::: pf-proof
 Substitute $t = \pi x$.
 :::
 
-<1>2. $\int_0^{\pi} \log(\sin t)\,dt = 2\int_0^{\pi/2} \log(\sin t)\,dt$.
+:::
 
-::: {.proof}
+::: {.pf-step #symmetric-about-half}
+$\int_0^{\pi} \log(\sin t)\,dt = 2\int_0^{\pi/2} \log(\sin t)\,dt$.
+
+::: pf-proof
 The substitution $t\mapsto\pi-t$ maps $[\pi/2,\pi]$ onto $[0,\pi/2]$ and $\sin(\pi-t)=\sin t$.
 :::
 
-<1>3. $\int_0^{\pi/2} \log(\sin t)\,dt = -\frac{\pi}{2}\log 2$.
+:::
 
-::: {.proof}
+::: {.pf-step #half-integral-value}
+$\int_0^{\pi/2} \log(\sin t)\,dt = -\frac{\pi}{2}\log 2$.
+
+::: pf-proof
 Let $J=\int_0^{\pi/2} \log(\sin t)\,dt$, which converges because $\log(\sin t)\sim\log t$ as $t\to0^+$. The substitution $t \mapsto \pi/2 - t$ gives $J=\int_0^{\pi/2} \log(\cos t)\,dt$. Adding and using $\sin t\cos t = \frac12\sin 2t$,
 $$2J = \int_0^{\pi/2} \log\left(\tfrac12\sin 2t\right)dt = -\frac{\pi}{2}\log 2 + \frac12\int_0^{\pi} \log(\sin u)\,du = -\frac{\pi}{2}\log 2 + J,$$
-where the last equality is step <1>2. Hence $J = -\frac{\pi}{2}\log 2$.
+where the last equality is step [](#symmetric-about-half){.pf-ref}. Hence $J = -\frac{\pi}{2}\log 2$.
 :::
 
-<1>4. $\int_0^{\pi} \log(\sin t)\,dt = -\pi \log 2$.
-
-::: {.proof}
-Steps <1>2 and <1>3 give $2 \cdot (-\frac{\pi}{2}\log 2)$.
 :::
 
-<1>5. $\int_0^1 \log(\sin \pi x)\,dx = \boxed{-\log 2}$.
+::: {.pf-step #full-integral-value}
+$\int_0^{\pi} \log(\sin t)\,dt = -\pi \log 2$.
 
-::: {.proof}
-Steps <1>1 and <1>4 give $\frac{1}{\pi}(-\pi \log 2)$.
+::: pf-proof
+Steps [](#symmetric-about-half){.pf-ref} and [](#half-integral-value){.pf-ref} give $2 \cdot (-\frac{\pi}{2}\log 2)$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>5 is the required identity.
+::: {.pf-step #final-value}
+$\int_0^1 \log(\sin \pi x)\,dx = \boxed{-\log 2}$.
+
+::: pf-proof
+Steps [](#rescale-to-0-pi){.pf-ref} and [](#full-integral-value){.pf-ref} give $\frac{1}{\pi}(-\pi \log 2)$.
+:::
+
+:::
+
+::: pf-qed
+Step [](#final-value){.pf-ref} is the required identity.
+:::
+
 :::
 :::
