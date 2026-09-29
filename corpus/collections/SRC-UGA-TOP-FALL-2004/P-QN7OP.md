@@ -45,9 +45,13 @@ Give an example showing that the conclusion of (b) may be false if $X$ is not co
 :::
 
 ::: {.solution}
-<1>1. If $X$ is disconnected, there is a continuous nonconstant map $X\to\{0,1\}$.
 
-::: {.proof}
+::: pf
+
+::: {.pf-step #disconnected-gives-map}
+If $X$ is disconnected, there is a continuous nonconstant map $X\to\{0,1\}$.
+
+::: pf-proof
 Choose a separation
 \[
 X=U\disjoint V
@@ -65,9 +69,12 @@ Since $\{0,1\}$ is discrete, the inverse images of its open subsets are unions o
 It is nonconstant.
 :::
 
-<1>2. If there is a continuous nonconstant map $X\to\{0,1\}$, then $X$ is disconnected.
+:::
 
-::: {.proof}
+::: {.pf-step #map-gives-disconnected}
+If there is a continuous nonconstant map $X\to\{0,1\}$, then $X$ is disconnected.
+
+::: pf-proof
 Let
 \[
 g:X\to\{0,1\}
@@ -75,19 +82,25 @@ g:X\to\{0,1\}
 be continuous and nonconstant. Then $g^{-1}(0)$ and $g^{-1}(1)$ are disjoint nonempty open subsets of $X$ whose union is $X$. Thus they form a separation.
 :::
 
-<1>3. Part (a) follows.
-
-::: {.proof}
-The two implications are <1>1 and <1>2.
 :::
 
-<1>4. Under the hypotheses of part (b), if
+::: {.pf-step #part-a}
+Part (a) follows.
+
+::: pf-proof
+The two implications are steps [](#disconnected-gives-map){.pf-ref} and [](#map-gives-disconnected){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #fibers-meet}
+Under the hypotheses of part (b), if
 \[
 X=A\disjoint B
 \]
 is a separation, then $f(A)\cap f(B)\neq\emptyset$.
 
-::: {.proof}
+::: pf-proof
 The sets $A$ and $B$ are closed subsets of the compact space $X$, hence compact.
 Therefore $f(A)$ and $f(B)$ are compact, and since $Y$ is Hausdorff they are closed in $Y$.
 
@@ -98,10 +111,13 @@ Y=f(A)\cup f(B).
 If $f(A)$ and $f(B)$ were disjoint, each would be the complement of the other and hence both would be nonempty open subsets separating the connected space $Y$. Thus they intersect.
 :::
 
-<1>5. Under the hypotheses of part (b), $X$ is connected.
+:::
 
-::: {.proof}
-Suppose toward a contradiction that $X=A\disjoint B$ is a separation. By <1>4 choose
+::: {.pf-step #part-b}
+Under the hypotheses of part (b), $X$ is connected.
+
+::: pf-proof
+Suppose toward a contradiction that $X=A\disjoint B$ is a separation. By step [](#fibers-meet){.pf-ref} choose
 \[
 y\in f(A)\cap f(B).
 \]
@@ -116,9 +132,12 @@ F=(F\cap A)\disjoint(F\cap B),
 and both intersections are open in the subspace $F$, because $A$ and $B$ are open in $X$. This separates $F$, contradicting the hypothesis that every fiber is connected. Hence $X$ is connected.
 :::
 
-<1>6. Compactness of $X$ cannot be omitted in part (b).
+:::
 
-::: {.proof}
+::: {.pf-step #part-c}
+Compactness of $X$ cannot be omitted in part (b).
+
+::: pf-proof
 Let
 \[
 X=(-\infty,0]\ \amalg\ (0,\infty)
@@ -129,4 +148,13 @@ It is also bijective, so every fiber is a singleton and hence connected.
 
 However, the two summands are disjoint nonempty open-and-closed subsets of $X$, so $X$ is disconnected. It is noncompact, since the second summand $(0,\infty)$ is a closed subspace of $X$ and is not compact. Thus compactness in (b) cannot be omitted.
 :::
+
+:::
+
+::: pf-qed
+Steps [](#part-a){.pf-ref}, [](#part-b){.pf-ref} and [](#part-c){.pf-ref} answer parts (a), (b) and (c).
+:::
+
+:::
+
 :::
