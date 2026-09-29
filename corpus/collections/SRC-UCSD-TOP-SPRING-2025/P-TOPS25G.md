@@ -23,63 +23,146 @@ Prove that there is no compact 4-manifold $M$ (with or without boundary) which i
 ::: {.solution}
 **Goal.** Show no compact $4$-manifold is homotopy equivalent to $\Sigma \RP^3$.
 
-<1>1. Compute the homology of $\Sigma \RP^3$.
-<2>1. $\tilde H_i(\Sigma X) \cong \tilde H_{i-1}(X)$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Compute the homology of $\Sigma \RP^3$.
+
+::: pf-proof
+
+::: pf-step
+$\tilde H_i(\Sigma X) \cong \tilde H_{i-1}(X)$.
+
+::: pf-proof
 the suspension isomorphism for reduced homology.
 :::
-<2>2. $H_*(\RP^3) = \ZZ, \ZZ/2, 0, \ZZ$ in degrees $0, 1, 2, 3$.
-::: {.proof}
+
+:::
+
+::: pf-step
+$H_*(\RP^3) = \ZZ, \ZZ/2, 0, \ZZ$ in degrees $0, 1, 2, 3$.
+
+::: pf-proof
 standard homology of $\RP^3$.
 :::
-<2>3. Hence $H_*(\Sigma \RP^3) = \ZZ, 0, \ZZ/2, 0, \ZZ$ in degrees $0, 1, 2, 3, 4$.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s1-3}
+Hence $H_*(\Sigma \RP^3) = \ZZ, 0, \ZZ/2, 0, \ZZ$ in degrees $0, 1, 2, 3, 4$.
+
+::: pf-proof
 apply the suspension isomorphism: $H_1 = \tilde H_0(\RP^3) = 0$, $H_2 = \tilde H_1(\RP^3) = \ZZ/2$, $H_3 = \tilde H_2(\RP^3) = 0$, $H_4 = \tilde H_3(\RP^3) = \ZZ$.
 :::
 
-<1>2. A compact $4$-manifold homotopy equivalent to $\Sigma \RP^3$ would have $H_2(M;\ZZ) = \ZZ/2$ and $H_4(M;\ZZ) = \ZZ$.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: pf-step
+A compact $4$-manifold homotopy equivalent to $\Sigma \RP^3$ would have $H_2(M;\ZZ) = \ZZ/2$ and $H_4(M;\ZZ) = \ZZ$.
+
+::: pf-proof
 homotopy equivalence preserves homology.
 :::
 
-<1>3. $H_4(M;\ZZ) = \ZZ$ forces $M$ to be closed and orientable.
-<2>1. If $M$ has nonempty boundary, then $H_4(M;\ZZ) = 0$.
-::: {.proof}
+:::
+
+::: pf-step
+$H_4(M;\ZZ) = \ZZ$ forces $M$ to be closed and orientable.
+
+::: pf-proof
+
+::: pf-step
+If $M$ has nonempty boundary, then $H_4(M;\ZZ) = 0$.
+
+::: pf-proof
 for a connected compact $4$-manifold with nonempty boundary, absolute top homology vanishes. For example, in the orientable case the relative fundamental class $[M,\partial M]\in H_4(M,\partial M;\mathbb Z)$ has nonzero boundary $[\partial M]$, so exactness of the pair sequence forces $H_4(M;\mathbb Z)=0$; in the nonorientable case absolute top homology is already zero.
 :::
-<2>2. Hence $M$ is closed.
-::: {.proof}
+
+:::
+
+::: pf-step
+Hence $M$ is closed.
+
+::: pf-proof
 $H_4(M) = \ZZ \neq 0$ forces no boundary.
 :::
-<2>3. $H_4(M;\ZZ) = \ZZ$ forces $M$ orientable.
-::: {.proof}
+
+:::
+
+::: pf-step
+$H_4(M;\ZZ) = \ZZ$ forces $M$ orientable.
+
+::: pf-proof
 for a connected closed manifold, integral top homology is $\ZZ$ exactly in the orientable case and is $0$ in the nonorientable case.
 :::
 
-<1>4. Contradiction via Poincaré duality.
-<2>1. For a closed orientable $4$-manifold, $H_2(M;\ZZ) \cong H^2(M;\ZZ)$.
-::: {.proof}
-Poincaré duality.
-:::
-<2>2. $H^2(M;\ZZ) \cong \operatorname{Hom}(H_2(M;\ZZ), \ZZ) \oplus \operatorname{Ext}(H_1(M;\ZZ), \ZZ)$.
-::: {.proof}
-universal coefficient theorem.
-:::
-<2>3. $H_2(M;\ZZ) = \ZZ/2$ and $H_1(M;\ZZ) = 0$ (from <1>2.3).
-::: {.proof}
-$H_1(\Sigma \RP^3) = 0$.
-:::
-<2>4. Hence $H^2(M;\ZZ) = \operatorname{Hom}(\ZZ/2, \ZZ) \oplus \operatorname{Ext}(0, \ZZ) = 0$.
-::: {.proof}
-$\operatorname{Hom}(\ZZ/2, \ZZ) = 0$ (no nonzero homomorphism from a torsion group to $\ZZ$).
-:::
-<2>5. But $H_2(M;\ZZ) = \ZZ/2 \neq 0$, contradicting $H_2(M;\ZZ) \cong H^2(M;\ZZ) = 0$.
-::: {.proof}
-Poincaré duality (<1>4.1) would force $H_2 \cong H^2$, but $H_2 = \ZZ/2$ and $H^2 = 0$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>4.5 gives the contradiction, so no such $M$ exists.
+:::
+
+:::
+
+::: pf-step
+Contradiction via Poincaré duality.
+
+::: pf-proof
+
+::: {.pf-step #s4-1}
+For a closed orientable $4$-manifold, $H_2(M;\ZZ) \cong H^2(M;\ZZ)$.
+
+::: pf-proof
+Poincaré duality.
+:::
+
+:::
+
+::: pf-step
+$H^2(M;\ZZ) \cong \operatorname{Hom}(H_2(M;\ZZ), \ZZ) \oplus \operatorname{Ext}(H_1(M;\ZZ), \ZZ)$.
+
+::: pf-proof
+universal coefficient theorem.
+:::
+
+:::
+
+::: pf-step
+$H_2(M;\ZZ) = \ZZ/2$ and $H_1(M;\ZZ) = 0$ (from step [](#s1-3){.pf-ref}).
+
+::: pf-proof
+$H_1(\Sigma \RP^3) = 0$.
+:::
+
+:::
+
+::: pf-step
+Hence $H^2(M;\ZZ) = \operatorname{Hom}(\ZZ/2, \ZZ) \oplus \operatorname{Ext}(0, \ZZ) = 0$.
+
+::: pf-proof
+$\operatorname{Hom}(\ZZ/2, \ZZ) = 0$ (no nonzero homomorphism from a torsion group to $\ZZ$).
+:::
+
+:::
+
+::: {.pf-step #s4-5}
+But $H_2(M;\ZZ) = \ZZ/2 \neq 0$, contradicting $H_2(M;\ZZ) \cong H^2(M;\ZZ) = 0$.
+
+::: pf-proof
+Poincaré duality (step [](#s4-1){.pf-ref}) would force $H_2 \cong H^2$, but $H_2 = \ZZ/2$ and $H^2 = 0$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#s4-5){.pf-ref} gives the contradiction, so no such $M$ exists.
+:::
+
 :::
 :::

@@ -150,7 +150,7 @@ $$
 the map $\rho_g$ is exactly a copy of the permutation $\lambda_g$ from
 step [](#lambda-bijective){.pf-ref}. Hence it is bijective.
 
-The same multiplication calculation as in step <1>2 gives
+The same multiplication calculation as in step [](#lambda-injective-hom){.pf-ref} gives
 $$
 \rho_g\rho_h=\rho_{gh},
 $$

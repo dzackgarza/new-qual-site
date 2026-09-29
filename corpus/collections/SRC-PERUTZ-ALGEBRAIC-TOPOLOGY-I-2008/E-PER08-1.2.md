@@ -46,8 +46,12 @@ r_x:X\to\{x\}
 \]
 be the unique map.
 
-<1>1. For a fixed $x\in X$, $i_x$ is a homotopy equivalence if and only if $c_x\simeq\operatorname{id}_X$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+For a fixed $x\in X$, $i_x$ is a homotopy equivalence if and only if $c_x\simeq\operatorname{id}_X$.
+
+::: pf-proof
 We always have
 \[
 r_xi_x=\operatorname{id}_{\{x\}}
@@ -62,18 +66,30 @@ c_x=i_xr_x\simeq\operatorname{id}_X.
 \]
 :::
 
-<1>2. Condition 3 is equivalent to condition 4.
-::: {.proof}
-This is immediate from <1>1 after choosing the point whose existence is asserted in either condition.
 :::
 
-<1>3. Condition 3 implies condition 1.
-::: {.proof}
+::: pf-step
+Condition 3 is equivalent to condition 4.
+
+::: pf-proof
+This is immediate from step [](#s1){.pf-ref} after choosing the point whose existence is asserted in either condition.
+:::
+
+:::
+
+::: {.pf-step #s3}
+Condition 3 implies condition 1.
+
+::: pf-proof
 If $i_x:\{x\}\to X$ is a homotopy equivalence, then $X$ is homotopy equivalent to the one-point space $\{x\}$.
 :::
 
-<1>4. Condition 1 implies condition 4.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+Condition 1 implies condition 4.
+
+::: pf-proof
 Let $\ast$ be a one-point space and suppose
 \[
 f:X\to\ast
@@ -97,8 +113,12 @@ c_{x_0}\simeq\operatorname{id}_X.
 Thus condition 4 holds.
 :::
 
-<1>5. Condition 4 implies condition 2.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+Condition 4 implies condition 2.
+
+::: pf-proof
 Assume that for some $x_0\in X$ there is a homotopy
 \[
 H:[0,1]\times X\to X
@@ -117,17 +137,25 @@ defines a homotopy from $c_{x_0}$ to $c_x$. Therefore
 \[
 c_x\simeq c_{x_0}\simeq\operatorname{id}_X.
 \]
-By <1>1, the inclusion $i_x:\{x\}\hookrightarrow X$ is a homotopy equivalence. Since $x$ was arbitrary, condition 2 holds.
+By step [](#s1){.pf-ref}, the inclusion $i_x:\{x\}\hookrightarrow X$ is a homotopy equivalence. Since $x$ was arbitrary, condition 2 holds.
 :::
 
-<1>6. Condition 2 implies condition 3.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+Condition 2 implies condition 3.
+
+::: pf-proof
 Because $X$ is nonempty, choose $x\in X$. Condition 2 says in particular that $i_x$ is a homotopy equivalence, which is condition 3.
+:::
+
+:::
+
 :::
 
 The implications
 \[
 (1)\Rightarrow(4)\Rightarrow(2)\Rightarrow(3)\Rightarrow(1)
 \]
-from <1>3--<1>6 show that all four conditions are equivalent.
+from steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, and [](#s6){.pf-ref} show that all four conditions are equivalent.
 :::

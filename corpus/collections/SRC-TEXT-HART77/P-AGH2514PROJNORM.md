@@ -61,9 +61,12 @@ Use the [[P-AGH2510SATIDEAL|saturated nonnegative section ideal]] in the definit
 The natural map $S(X)\to R(X,L)$ is injective in every degree, since the kernel of restriction from the polynomial ring is precisely that ideal.
 The section ring here uses nonnegative degrees, whereas the [[D-MODGRMOD|graded module $\Gamma_*$]] uses all integer degrees.
 
-<1>1. The scheme $X$ in parts (a)--(c) is integral.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+The scheme $X$ in parts (a)--(c) is integral.
+
+::: pf-proof
 It is noetherian because it is closed in projective space over $k$.
 A [[D-QJ5M9|normal]] scheme is reduced, since all its local rings are domains.
 Distinct irreducible components cannot meet: at a point of intersection, their distinct minimal primes would give distinct minimal primes of the local ring, contradicting that it is a domain.
@@ -73,12 +76,15 @@ Nonemptiness and connectedness force there to be exactly one component.
 Hence $X$ is reduced and irreducible, so integral.
 :::
 
-<1>2. For an integral closed subscheme $X\subseteq\PP_A^r$ over any ring $A$, both $S=S(X)$ and $R=R(X,L)$ are domains, with
+:::
+
+::: {.pf-step #s2}
+For an integral closed subscheme $X\subseteq\PP_A^r$ over any ring $A$, both $S=S(X)$ and $R=R(X,L)$ are domains, with
 $$
 S\subseteq R\subseteq\operatorname{Frac}S.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $\eta$ be the generic point of $X$ and put $K=\OO_{X,\eta}$.
 Choose a nonzero element $\tau\in L_\eta$ and an indeterminate $t$ over $K$.
 Restriction to $\eta$ embeds each $\Gamma(X,L^{\otimes n})$ into the one-dimensional space $L_\eta^{\otimes n}$.
@@ -98,9 +104,12 @@ Its generic value therefore lies in $\operatorname{Frac}S$ under this same ident
 Changing $\tau$ rescales $t$ by an element of $K^\times$ and does not change the inclusion of $S$ in its section ring.
 :::
 
-<1>3. Under the hypotheses of step <1>2, the extension $S\subseteq R$ is integral, with no noetherian hypothesis on $A$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+Under the hypotheses of step [](#s2){.pf-ref}, the extension $S\subseteq R$ is integral, with no noetherian hypothesis on $A$.
+
+::: pf-proof
 Fix a homogeneous $u\in R_e$, with $e\ge0$.
 Let $\ell_0,\ldots,\ell_r\in S_1$ be the coordinate sections.
 For each nonzero $\ell_i$, the restriction of $u$ to $D_+(\ell_i)$ belongs to $(S_{\ell_i})_e$.
@@ -128,17 +137,20 @@ The same determinant argument for multiplication on that finite module makes eve
 Thus every element of $R$ is integral over $S$.
 :::
 
-<1>4. If the integral scheme in step <1>2 is also [[D-QJ5M9|normal]], then $R$ is integrally closed in $\operatorname{Frac}S$.
+:::
+
+::: {.pf-step #s4}
+If the integral scheme in step [](#s2){.pf-ref} is also [[D-QJ5M9|normal]], then $R$ is integrally closed in $\operatorname{Frac}S$.
 Consequently $R$ is the integral closure of $S$, proving part (a).
 
-::: {.proof}
+::: pf-proof
 Let $\mathscr R=\bigoplus_{n\ge0}L^{\otimes n}$ be the sheaf of graded algebras on $X$.
 At a point $x$, a local frame of $L$ identifies
 $$
 \mathscr R_x\cong\OO_{X,x}[T].
 $$
 The local ring $\OO_{X,x}$ is a normal domain, so its polynomial ring is a normal domain by the [polynomial normality lemma](https://stacks.math.columbia.edu/tag/030A).
-All these stalks embed in the field $K(t)=\operatorname{Frac}S$ from step <1>2 and have this fraction field.
+All these stalks embed in the field $K(t)=\operatorname{Frac}S$ from step [](#s2){.pf-ref} and have this fraction field.
 
 Inside $K(t)$,
 $$
@@ -150,15 +162,18 @@ Their generic values agree in $K(t)$, so they agree on overlaps and glue.
 An element of $K(t)$ integral over $R$ is integral over each $\mathscr R_x$ and thus lies in each of them.
 The intersection formula gives that it lies in $R$.
 
-By step <1>3, $R$ is integral over $S$.
+By step [](#s3){.pf-ref}, $R$ is integral over $S$.
 Conversely, an element of $\operatorname{Frac}S$ integral over $S$ is also integral over $R$, hence belongs to $R$ by the preceding argument.
 Thus $R$ is exactly the integral closure of $S$.
-For parts (a)--(c), step <1>1 supplies the integral scheme and $R=S'$.
+For parts (a)--(c), step [](#s1){.pf-ref} supplies the integral scheme and $R=S'$.
 :::
 
-<1>5. There is an integer $n_0$ such that $S_n=S'_n$ for every $n\ge n_0$, proving part (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+There is an integer $n_0$ such that $S_n=S'_n$ for every $n\ge n_0$, proving part (b).
+
+::: pf-proof
 Here $S$ is a finitely generated graded $k$-algebra generated in degree one.
 Apply [[P-AGH259GAMMASTAR]], part (b), with graded module $M=S$.
 Its canonical comparison map is the inclusion
@@ -168,14 +183,17 @@ $$
 That result makes this map an isomorphism for all sufficiently large $n$, proving equality under the given inclusions.
 :::
 
-<1>6. For every sufficiently large $d>0$, the ring $S^{(d)}$ is normal and is the homogeneous coordinate ring of the $d$-uple embedding, proving part (c).
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+For every sufficiently large $d>0$, the ring $S^{(d)}$ is normal and is the homogeneous coordinate ring of the $d$-uple embedding, proving part (c).
+
+::: pf-proof
 The ring $\Gamma(X,\OO_X)$ is a finite-dimensional $k$-vector space by [[T-COHFIN|finiteness of coherent cohomology]] [@Har10a, Theorem III.5.2].
-It is a domain by step <1>2, so multiplication by a nonzero element is an injective endomorphism of a finite-dimensional vector space, hence surjective.
+It is a domain by step [](#s2){.pf-ref}, so multiplication by a nonzero element is an injective endomorphism of a finite-dimensional vector space, hence surjective.
 Thus it is a field finite over the algebraically closed field $k$, and equals $k$.
 Therefore $S_0=S'_0=k$.
-For $d\ge\max(1,n_0)$, step <1>5 now gives
+For $d\ge\max(1,n_0)$, step [](#s5){.pf-ref} now gives
 $$
 S^{(d)}=(S')^{(d)}.
 $$
@@ -197,11 +215,17 @@ Hence the kernel is saturated, so its quotient $S^{(d)}$ is the homogeneous coor
 It is normal, proving projective normality.
 :::
 
-<1>7. The corrected criterion in part (d) holds over every ring $A$.
+:::
 
-<2>1. Projective normality implies the integral and normal assertions and the surjectivity of every restriction map.
+::: {.pf-step #s7}
+The corrected criterion in part (d) holds over every ring $A$.
 
-::: {.proof}
+::: pf-proof
+
+::: {.pf-step #s7-1}
+Projective normality implies the integral and normal assertions and the surjectivity of every restriction map.
+
+::: pf-proof
 Suppose $S=S(X)$ is a normal domain.
 The scheme $X$ is nonempty, since the section ideal of the empty subscheme is the entire polynomial ring and its coordinate ring is zero.
 The homogeneous prime $(0)$ is a generic point of $\Proj S$, and all its nonempty standard affine charts are domains.
@@ -214,7 +238,7 @@ Writing $bz=a$ with $a,b\in C$ and $b\ne0$, the graded decomposition shows that 
 Thus $z\in C$.
 Each such chart is normal, and its localizations are normal as well, so $X$ is [[D-QJ5M9|normal]].
 
-Step <1>3 makes the section ring $R(X,L)$ integral over $S$ inside $\operatorname{Frac}S$.
+Step [](#s3){.pf-ref} makes the section ring $R(X,L)$ integral over $S$ inside $\operatorname{Frac}S$.
 Normality of $S$ forces $R(X,L)=S$.
 For every $n\ge0$, the canonical map
 $$
@@ -224,25 +248,32 @@ is the isomorphism established in [[P-AGH2510SATIDEAL]], including $r=0$.
 The restriction map has image $S_n=R(X,L)_n$, so it is surjective.
 :::
 
-<2>2. Conversely, integrality and normality of $X$, together with these surjections, imply projective normality.
+:::
 
-::: {.proof}
+::: {.pf-step #s7-2}
+Conversely, integrality and normality of $X$, together with these surjections, imply projective normality.
+
+::: pf-proof
 The surjections identify every graded component of $S(X)$ with that of $R(X,L)$, since the kernels are the components of the defining section ideal.
 They respect multiplication, giving $S(X)\cong R(X,L)$ as graded rings.
-Steps <1>2 and <1>4 make the latter an integrally closed domain for every normal integral $X\subseteq\PP_A^r$.
+Steps [](#s2){.pf-ref} and [](#s4){.pf-ref} make the latter an integrally closed domain for every normal integral $X\subseteq\PP_A^r$.
 Therefore $S(X)$ is an integrally closed domain.
 :::
 
-<2>3. Q.E.D.
-
-::: {.proof}
-Steps <2>1 and <2>2 establish both implications without restricting the base ring.
 :::
 
-<1>8. Q.E.D.
+::: pf-qed
+Steps [](#s7-1){.pf-ref} and [](#s7-2){.pf-ref} establish both implications without restricting the base ring.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 prove part (a), step <1>5 proves part (b), step <1>6 proves part (c), and step <1>7 proves part (d).
+:::
+
+:::
+
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} prove part (a), step [](#s5){.pf-ref} proves part (b), step [](#s6){.pf-ref} proves part (c), and step [](#s7){.pf-ref} proves part (d).
+:::
+
 :::
 :::
 
@@ -251,7 +282,7 @@ The source part (d) states only normality and the restriction-map surjections, o
 For a field $k$, take $A=k\times k$ and $X=\PP_A^1$.
 Then $X$ is the disjoint union of two normal projective lines, and every restriction map is the identity.
 Its homogeneous coordinate ring $A[x_0,x_1]$ is not a domain: the nonzero elements $(1,0)$ and $(0,1)$ have product zero.
-The added integrality condition excludes this counterexample and is necessary by step <1>7.
+The added integrality condition excludes this counterexample and is necessary by step [](#s7){.pf-ref}.
 
 The nonempty hypothesis in parts (a)--(c) excludes $X=\varnothing$, which is connected and normal under the usual definitions but has zero homogeneous coordinate ring.
 

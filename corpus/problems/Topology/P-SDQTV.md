@@ -33,18 +33,33 @@ d. Find the universal cover of $\mathbb{RP}^2 \times S^1$ and explicitly describ
 :::
 
 ::: {.solution}
-<1>1. A covering map is a surjective continuous map $p:\widetilde X\to X$ such that every $x\in X$ has an open neighborhood $U$ for which
+
+::: pf
+
+::: pf-step
+A covering map is a surjective continuous map $p:\widetilde X\to X$ such that every $x\in X$ has an open neighborhood $U$ for which
 \[
 p^{-1}(U)=\bigsqcup_{\alpha}U_\alpha
 \]
 and every restriction $p|_{U_\alpha}:U_\alpha\to U$ is a homeomorphism. A deck transformation is a homeomorphism $h:\widetilde X\to\widetilde X$ satisfying $p\circ h=p$.
 
-<1>2. For the Klein bottle, take $\widetilde K=\mathbb R^2$ and let
+:::
+
+::: pf-step
+For the Klein bottle, take $\widetilde K=\mathbb R^2$ and let
 \[
 T(x,y)=(x,y+1),\qquad R(x,y)=(x+1,-y).
 \]
-<2>1. The group $\Gamma=\langle R,T\rangle$ acts freely and properly discontinuously on $\mathbb R^2$, and a fundamental rectangle has the standard Klein-bottle edge identifications.
-<2>2. Moreover
+
+::: pf-proof
+
+::: pf-step
+The group $\Gamma=\langle R,T\rangle$ acts freely and properly discontinuously on $\mathbb R^2$, and a fundamental rectangle has the standard Klein-bottle edge identifications.
+
+:::
+
+::: pf-step
+Moreover
 \[
 RTR^{-1}=T^{-1},
 \]
@@ -54,7 +69,14 @@ so
 \]
 Hence $\mathbb R^2\to\mathbb R^2/\Gamma\cong K$ is the universal covering and $\Gamma$ is its deck group.
 
-<1>3. On $[-1,1]\times\mathbb R$, define
+:::
+
+:::
+
+:::
+
+::: pf-step
+On $[-1,1]\times\mathbb R$, define
 \[
 \tau(x,y)=(-x,y+1).
 \]
@@ -68,7 +90,10 @@ and $\langle\tau\rangle\cong\mathbb Z$ acts freely and properly discontinuously.
 \]
 so the quotient is a Möbius band.
 
-<1>4. The universal cover of $\mathbb{RP}^2\times S^1$ is
+:::
+
+::: pf-step
+The universal cover of $\mathbb{RP}^2\times S^1$ is
 \[
 S^2\times\mathbb R\longrightarrow\mathbb{RP}^2\times S^1,
 \qquad
@@ -85,4 +110,9 @@ Therefore
 \operatorname{Deck}(S^2\times\mathbb R/\mathbb{RP}^2\times S^1)
 \cong\mathbb Z/2\times\mathbb Z.
 \]
+
+:::
+
+:::
+
 :::

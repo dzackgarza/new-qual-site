@@ -25,28 +25,38 @@ Write the following statement in symbolic form, and then give (in symbolic form 
 
 
 ::: {.solution}
-<1>1. Let the universe be all animals, and let
+
+::: pf
+
+::: pf-step
+Let the universe be all animals, and let
 \[
 B(x),S(x),F(x),Y(x),W(x),K(x)
 \]
 mean respectively that $x$ is a bird, can swim, is a fish, can fly, is a whale, and can walk.
+
 :::
 
-<1>2. The original statement is
+::: {.pf-step #s2}
+The original statement is
 \[
 \left[(\forall x\,(B(x)\Rightarrow S(x)))\lor(\exists x\,(F(x)\land Y(x)))\right]
 \Rightarrow
 \left[\forall x\,(W(x)\Rightarrow \neg K(x))\right].
 \]
 
-<1>3. Its contrapositive is
+:::
+
+::: {.pf-step #s3}
+Its contrapositive is
 \[
 \left[\exists x\,(W(x)\land K(x))\right]
 \Rightarrow
 \left[(\exists x\,(B(x)\land\neg S(x)))\land
 (\forall x\,(F(x)\Rightarrow\neg Y(x)))\right].
 \]
-::: {.proof}
+
+::: pf-proof
 Write the original implication as $(A\lor C)\Rightarrow D$. Its contrapositive is
 \[
 \neg D\Rightarrow\neg(A\lor C),
@@ -67,16 +77,32 @@ and
 \]
 :::
 
-<1>4. In English, the contrapositive is: "If some whale can walk, then some bird cannot swim and no fish can fly."
+:::
 
-<1>5. The negation of the original statement is
+::: pf-step
+In English, the contrapositive is: "If some whale can walk, then some bird cannot swim and no fish can fly."
+
+:::
+
+::: pf-step
+The negation of the original statement is
 \[
 \left[(\forall x\,(B(x)\Rightarrow S(x)))\lor(\exists x\,(F(x)\land Y(x)))\right]
 \land
 \left[\exists x\,(W(x)\land K(x))\right].
 \]
-::: {.proof}
-The negation of an implication $P\Rightarrow Q$ is $P\land\neg Q$. Apply this with the antecedent and consequent from <1>2, and use the final equivalence in <1>3.
+
+::: pf-proof
+The negation of an implication $P\Rightarrow Q$ is $P\land\neg Q$. Apply this with the antecedent and consequent from step [](#s2){.pf-ref}, and use the final equivalence in step [](#s3){.pf-ref}.
 :::
 
-<1>6. In English, the negation is: "All birds can swim or some fish can fly, and some whale can walk."
+:::
+
+::: pf-step
+In English, the negation is: "All birds can swim or some fish can fly, and some whale can walk."
+
+:::
+
+:::
+
+:::

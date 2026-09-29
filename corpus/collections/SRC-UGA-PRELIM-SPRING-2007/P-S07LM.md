@@ -24,7 +24,11 @@ b) Using the definition and basic properties of $\ln(x)$, show that $\lim_{x \to
 
 
 ::: {.solution}
-<1>1. The statement
+
+::: pf
+
+::: {.pf-step #s1}
+The statement
 \[
 \lim_{x\to a^+}f(x)=L
 \]
@@ -32,19 +36,25 @@ means: for every $\varepsilon>0$ there exists $\delta>0$ such that
 \[
 0<x-a<\delta\implies |f(x)-L|<\varepsilon.
 \]
+
 :::
 
-<1>2. Let $\varepsilon>0$ and set
+::: pf-step
+Let $\varepsilon>0$ and set
 \[
 \delta=e^{-1/\varepsilon}.
 \]
 Then $0<\delta<1$.
 
-<1>3. If $0<x<\delta$, then
+:::
+
+::: {.pf-step #s3}
+If $0<x<\delta$, then
 \[
 \ln x<-\frac1\varepsilon<0.
 \]
-::: {.proof}
+
+::: pf-proof
 The logarithm is strictly increasing on $(0,\infty)$. Hence
 \[
 0<x<e^{-1/\varepsilon}
@@ -53,12 +63,16 @@ The logarithm is strictly increasing on $(0,\infty)$. Hence
 \]
 :::
 
-<1>4. Therefore, if $0<x<\delta$,
+:::
+
+::: {.pf-step #s4}
+Therefore, if $0<x<\delta$,
 \[
 \left|\frac1{\ln x}-0\right|<\varepsilon.
 \]
-::: {.proof}
-By <1>3, $\ln x<0$ and $|\ln x|>1/\varepsilon$. Thus
+
+::: pf-proof
+By step [](#s3){.pf-ref}, $\ln x<0$ and $|\ln x|>1/\varepsilon$. Thus
 \[
 \left|\frac1{\ln x}\right|
 =\frac1{|\ln x|}
@@ -66,10 +80,20 @@ By <1>3, $\ln x<0$ and $|\ln x|>1/\varepsilon$. Thus
 \]
 :::
 
-<1>5. Hence
+:::
+
+::: pf-step
+Hence
 \[
 \boxed{\lim_{x\to0^+}\frac1{\ln x}=0.}
 \]
-::: {.proof}
-The estimate in <1>4 holds for every $x$ satisfying $0<x-0<\delta$, so it is exactly the right-hand $\varepsilon$-$\delta$ condition from <1>1.
+
+::: pf-proof
+The estimate in step [](#s4){.pf-ref} holds for every $x$ satisfying $0<x-0<\delta$, so it is exactly the right-hand $\varepsilon$-$\delta$ condition from step [](#s1){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

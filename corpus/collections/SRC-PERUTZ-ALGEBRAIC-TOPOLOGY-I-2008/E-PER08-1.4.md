@@ -33,10 +33,14 @@ Regard a letter as a finite union of images of paths $[0,1]\to\mathbb R^2$, afte
 :::
 
 ::: {.solution}
-We use the following skeletal block typeface. Curved strokes are replaced by arcs, and crossings or stroke junctions are vertices. The resulting letters are finite topological graphs. In this typeface $I$ has top and bottom bars, and the letters have the graph-homeomorphism classes listed in <1>4 below.
+We use the following skeletal block typeface. Curved strokes are replaced by arcs, and crossings or stroke junctions are vertices. The resulting letters are finite topological graphs. In this typeface $I$ has top and bottom bars, and the letters have the graph-homeomorphism classes listed in step [](#s4){.pf-ref} below.
 
-<1>1. The letter $A$ is homotopy equivalent to $O$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The letter $A$ is homotopy equivalent to $O$.
+
+::: pf-proof
 Model $A$ as two sloping legs meeting at the apex, together with a crossbar joining the legs. Let $v_1,v_2$ be the two crossbar junctions. The two sloping segments above $v_1,v_2$, together with the crossbar, form a simple closed curve $C\subset A$, hence $C$ is homeomorphic to $S^1$ and therefore to $O$.
 
 The parts of the two legs below $v_1$ and $v_2$ are closed intervals attached to $C$ at one endpoint. Collapse each such interval linearly to its attaching point while fixing $C$ pointwise. Explicitly, if a lower leg is parametrized by $\ell:[0,1]\to A$ with $\ell(0)=v_i$, set
@@ -51,8 +55,12 @@ A\simeq C\cong O.
 \]
 :::
 
-<1>2. The letters $A$ and $O$ are not homeomorphic.
-::: {.proof}
+:::
+
+::: pf-step
+The letters $A$ and $O$ are not homeomorphic.
+
+::: pf-proof
 At either crossbar junction $v_i$ of $A$, a sufficiently small neighborhood in $A$ is a three-pronged star: deleting $v_i$ from that neighborhood leaves three connected components. Thus $v_i$ has local valence $3$.
 
 Every point of $O\cong S^1$ has a sufficiently small neighborhood homeomorphic to an open interval, and deleting its center leaves exactly two connected components. Hence every point of $O$ has local valence $2$.
@@ -60,8 +68,12 @@ Every point of $O\cong S^1$ has a sufficiently small neighborhood homeomorphic t
 Local valence is preserved by homeomorphisms. Therefore no homeomorphism $A\to O$ exists.
 :::
 
-<1>3. There are exactly three homotopy types among the letters in this typeface.
-::: {.proof}
+:::
+
+::: pf-step
+There are exactly three homotopy types among the letters in this typeface.
+
+::: pf-proof
 Suppressing degree-$2$ subdivision vertices does not change a graph's homeomorphism type, so we suppress them throughout.
 
 Every letter except
@@ -89,8 +101,12 @@ These three types are distinct. Their first homology groups are respectively
 and singular homology is invariant under homotopy equivalence. Therefore the letters have exactly three homotopy types.
 :::
 
-<1>4. In the chosen typeface there are exactly nine homeomorphism types.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+In the chosen typeface there are exactly nine homeomorphism types.
+
+::: pf-proof
 After suppressing degree-$2$ vertices, the classes are:
 
 1. **An interval:** $C,G,J,L,M,N,S,U,V,W,Z$.
@@ -112,6 +128,10 @@ Therefore this typeface has exactly
 \boxed{9}
 \]
 homeomorphism types.
+:::
+
+:::
+
 :::
 
 The numerical homeomorphism count depends on the chosen typeface, as the exercise allows; the count $9$ is for the explicit skeletal convention above. The three homotopy types are the point, $S^1$, and $S^1\vee S^1$.

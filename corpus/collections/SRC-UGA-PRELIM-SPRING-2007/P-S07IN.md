@@ -22,7 +22,11 @@ Using mathematical induction, show that for each positive integer $n$, $$1^2 - 2
 
 
 ::: {.solution}
-<1>1. Let
+
+::: pf
+
+::: pf-step
+Let
 \[
 S_n=1^2-2^2+3^2-\cdots+(-1)^{n-1}n^2.
 \]
@@ -31,19 +35,26 @@ We prove by induction that
 S_n=(-1)^{n-1}\frac{n(n+1)}2
 \]
 for every $n\ge1$.
+
 :::
 
-<1>2. The formula holds for $n=1$.
-::: {.proof}
+::: {.pf-step #s2}
+The formula holds for $n=1$.
+
+::: pf-proof
 We have
 \[
 S_1=1=(-1)^0\frac{1\cdot2}{2}.
 \]
 :::
 
-<1>3. Assume the formula holds for some $n\ge1$.
+:::
+
+::: {.pf-step #s3}
+Assume the formula holds for some $n\ge1$.
 Then it also holds for $n+1$.
-::: {.proof}
+
+::: pf-proof
 By the induction hypothesis,
 \[
 \begin{aligned}
@@ -57,12 +68,22 @@ S_{n+1}
 This is exactly the required formula with $n$ replaced by $n+1$.
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 1^2-2^2+\cdots+(-1)^{n-1}n^2
 =(-1)^{n-1}\frac{n(n+1)}2
 \]
 for every positive integer $n$.
-::: {.proof}
-This follows from <1>2 and <1>3 by mathematical induction.
+
+::: pf-proof
+This follows from steps [](#s2){.pf-ref} and [](#s3){.pf-ref} by mathematical induction.
+:::
+
+:::
+
+:::
+
 :::

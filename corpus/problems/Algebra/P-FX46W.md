@@ -32,17 +32,26 @@ Let $G$ be a finite group and work with finite-dimensional complex representatio
 
 
 ::: {.solution}
-<1>1. A representation of $G$ is a homomorphism
+
+::: pf
+
+::: pf-step
+A representation of $G$ is a homomorphism
 \[
 \rho:G\to\operatorname{GL}(V)
 \]
 for a finite-dimensional complex vector space $V$. It is irreducible if its only $G$-stable subspaces are $0$ and $V$.
-::: {.proof}
+
+::: pf-proof
 A subspace $W\subseteq V$ is $G$-stable when $\rho(g)W\subseteq W$ for every $g\in G$.
 :::
 
-<1>2. Every representation admits a $G$-invariant positive-definite Hermitian inner product.
-::: {.proof}
+:::
+
+::: pf-step
+Every representation admits a $G$-invariant positive-definite Hermitian inner product.
+
+::: pf-proof
 Start with any positive-definite Hermitian inner product $\langle-,-\rangle_0$ on $V$ and average it over $G$:
 \[
 \langle v,w\rangle_G
@@ -62,8 +71,12 @@ This remains Hermitian and positive definite. For $h\in G$,
 because $g\mapsto gh$ permutes $G$.
 :::
 
-<1>3. If $W\subseteq V$ is $G$-stable, then its orthogonal complement $W^\perp$ is also $G$-stable.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+If $W\subseteq V$ is $G$-stable, then its orthogonal complement $W^\perp$ is also $G$-stable.
+
+::: pf-proof
 For $v\in W^\perp$, $w\in W$, and $g\in G$, invariance of the inner product gives
 \[
 \langle\rho(g)v,w\rangle_G
@@ -73,14 +86,23 @@ For $v\in W^\perp$, $w\in W$, and $g\in G$, invariance of the inner product give
 since $\rho(g^{-1})w\in W$. Hence $\rho(g)v\in W^\perp$.
 :::
 
-<1>4. Every finite-dimensional complex representation of $G$ is completely reducible.
-::: {.proof}
-Induct on $\dim V$. If $V$ is irreducible, there is nothing to prove. Otherwise choose a nonzero proper invariant subspace $W$. By <1>3,
+:::
+
+::: {.pf-step #s4}
+Every finite-dimensional complex representation of $G$ is completely reducible.
+
+::: pf-proof
+Induct on $\dim V$. If $V$ is irreducible, there is nothing to prove. Otherwise choose a nonzero proper invariant subspace $W$. By step [](#s3){.pf-ref},
 \[
 V=W\oplus W^\perp
 \]
 as $G$-representations. Apply induction to the two lower-dimensional summands.
+
+Step [](#s4){.pf-ref} is Maschke's theorem over $\CC$.
 :::
 
-Step <1>4 is Maschke's theorem over $\CC$.
+:::
+
+:::
+
 :::

@@ -31,8 +31,12 @@ If $f$ is surjective, $f(I)$ is an ideal of $S$, and sending $I$ to $f(I)$ gives
 
 
 ::: {.solution}
-<1>1. Without surjectivity, $f(I)$ need not be an ideal of $S$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Without surjectivity, $f(I)$ need not be an ideal of $S$.
+
+::: pf-proof
 Take the inclusion
 $$
 f:\mathbb Z\hookrightarrow\mathbb Q
@@ -52,8 +56,12 @@ $$
 $$
 :::
 
-<1>2. If $f$ is surjective, then $f(I)$ is an ideal of $S$.
-::: {.proof}
+:::
+
+::: pf-step
+If $f$ is surjective, then $f(I)$ is an ideal of $S$.
+
+::: pf-proof
 The set $f(I)$ is an additive subgroup of $S$. Let
 $$
 y=f(a)\in f(I)
@@ -73,8 +81,12 @@ $$
 so $sy\in f(I)$. Thus $f(I)$ is an ideal of $S$.
 :::
 
-<1>3. Extension followed by contraction recovers every ideal containing $\ker f$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+Extension followed by contraction recovers every ideal containing $\ker f$.
+
+::: pf-proof
 Assume $f$ is surjective and let
 $$
 I\supseteq\ker f.
@@ -101,8 +113,12 @@ $$
 $$
 :::
 
-<1>4. Contraction followed by extension recovers every ideal of $S$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+Contraction followed by extension recovers every ideal of $S$.
+
+::: pf-proof
 Let $J\subseteq S$ be an ideal. One inclusion is immediate:
 $$
 f(f^{-1}(J))\subseteq J.
@@ -121,10 +137,16 @@ $$
 $$
 :::
 
-Steps <1>3--<1>4 show that extension and contraction are inverse bijections
+:::
+
+::: pf-step
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} show that extension and contraction are inverse bijections
 between
 $$
 \{I\triangleleft R:\ker f\subseteq I\}
 $$
 and the ideals of $S$.
+:::
+
+:::
 :::

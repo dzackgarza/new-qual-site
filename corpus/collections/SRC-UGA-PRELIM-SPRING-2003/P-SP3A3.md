@@ -23,14 +23,20 @@ Here $I_k$ is the $k \times k$ identity matrix.
 :::
 
 ::: {.solution}
-<1>1. No such matrix exists.
+
+::: pf
+
+::: pf-step
+No such matrix exists.
 :::
 
-<1>2. For every $3\times2$ matrix $A$,
+::: {.pf-step #s2}
+For every $3\times2$ matrix $A$,
 \[
 \operatorname{rank}(AA^t)\le \operatorname{rank}(A)\le 2.
 \]
-::: {.proof}
+
+::: pf-proof
 The image of the linear map represented by $AA^t$ is contained in the image of the linear map represented by $A$, because
 \[
 AA^t x=A(A^t x)
@@ -38,12 +44,25 @@ AA^t x=A(A^t x)
 for every $x\in\mathbb C^3$. Hence $\operatorname{rank}(AA^t)\le\operatorname{rank}(A)$. Since $A$ has only two columns, $\operatorname{rank}(A)\le2$.
 :::
 
-<1>3. Therefore $AA^t\ne I_3$.
-::: {.proof}
-The identity matrix $I_3$ has rank $3$, whereas <1>2 gives $\operatorname{rank}(AA^t)\le2$.
 :::
 
-<1>4. Consequently there is no $3\times2$ complex matrix satisfying both $A^tA=I_2$ and $AA^t=I_3$.
-::: {.proof}
-The second required equality is already impossible by <1>3.
+::: {.pf-step #s3}
+Therefore $AA^t\ne I_3$.
+
+::: pf-proof
+The identity matrix $I_3$ has rank $3$, whereas step [](#s2){.pf-ref} gives $\operatorname{rank}(AA^t)\le2$.
+:::
+
+:::
+
+::: pf-step
+Consequently there is no $3\times2$ complex matrix satisfying both $A^tA=I_2$ and $AA^t=I_3$.
+
+::: pf-proof
+The second required equality is already impossible by step [](#s3){.pf-ref}.
+:::
+
+:::
+
+:::
 :::

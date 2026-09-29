@@ -55,13 +55,16 @@ $$
 $$
 and fix $0<\varepsilon<\varepsilon_0$.
 
-<1>1. The polynomial $p$ has exactly two zeros, counted with multiplicity,
+::: pf
+
+::: {.pf-step #s1}
+The polynomial $p$ has exactly two zeros, counted with multiplicity,
 in
 $$
 \abs{z}<r\varepsilon^{-1/5}.
 $$
 
-::: {.proof}
+::: pf-proof
 On the circle
 $$
 \abs{z}=r\varepsilon^{-1/5},
@@ -95,13 +98,16 @@ and $z^2$ have the same number of zeros inside this circle. Hence $p$ has
 exactly two such zeros.
 :::
 
-<1>2. The polynomial $p$ has exactly seven zeros, counted with multiplicity,
+:::
+
+::: {.pf-step #s2}
+The polynomial $p$ has exactly seven zeros, counted with multiplicity,
 in
 $$
 \abs{z}<R\varepsilon^{-1/5}.
 $$
 
-::: {.proof}
+::: pf-proof
 On the circle
 $$
 \abs{z}=R\varepsilon^{-1/5},
@@ -135,7 +141,10 @@ and $\varepsilon z^7$ have the same number of zeros inside this circle,
 namely seven.
 :::
 
-<1>3. The annulus
+:::
+
+::: {.pf-step #s3}
+The annulus
 $$
 r\varepsilon^{-1/5}
 <
@@ -149,21 +158,23 @@ $$
 $$
 zeros of $p$, counted with multiplicity.
 
-::: {.proof}
-The strict inequalities in steps <1>1 and <1>2 show in particular that $p$
-has no zero on either boundary circle. By step <1>2 there are seven zeros
-inside the outer circle, while by step <1>1 exactly two lie inside the inner
+::: pf-proof
+The strict inequalities in steps [](#s1){.pf-ref} and [](#s2){.pf-ref} show in particular that $p$
+has no zero on either boundary circle. By step [](#s2){.pf-ref} there are seven zeros
+inside the outer circle, while by step [](#s1){.pf-ref} exactly two lie inside the inner
 circle. Therefore the number in the annulus is
 $$
 7-2=5.
 $$
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 proves the asserted root count for every
+::: pf-qed
+Step [](#s3){.pf-ref} proves the asserted root count for every
 $0<\varepsilon<\varepsilon_0$.
+:::
+
 :::
 :::
 
@@ -173,7 +184,7 @@ If $r\leq0$, choose $\varepsilon>0$ small enough that
 $$
 \varepsilon^{2/5}<R^7-R^2.
 $$
-Then the outer-circle argument in step <1>2 places all seven roots inside
+Then the outer-circle argument in step [](#s2){.pf-ref} places all seven roots inside
 $\abs{z}<R\varepsilon^{-1/5}$. Since $p(0)=1$, every root also satisfies
 $r\varepsilon^{-1/5}<\abs{z}$. Thus the printed hypotheses would put all
 seven roots, rather than five, in the displayed region.

@@ -38,8 +38,13 @@ Prove that $f$ is a bijection.
 :::
 
 ::: {.solution}
-<1>1. The map $f$ is injective.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+The map $f$ is injective.
+
+::: pf-proof
 Suppose
 \[
 f(x)=f(y).
@@ -52,7 +57,10 @@ Because $d$ is a metric, $x=y$.
 Thus $f$ is injective.
 :::
 
-<1>2. Assume for contradiction that $f$ is not surjective, and choose
+:::
+
+::: {.pf-step #s2}
+Assume for contradiction that $f$ is not surjective, and choose
 \[
 x_0\in X\setminus f(X).
 \]
@@ -61,7 +69,8 @@ Then there is a number $\delta>0$ such that
 d(x_0,y)\ge\delta
 \]
 for every $y\in f(X)$.
-::: {.proof}
+
+::: pf-proof
 An isometry is continuous, so $f(X)$ is compact as the continuous image of the compact space $X$.
 
 The function
@@ -76,7 +85,10 @@ Therefore
 \]
 :::
 
-<1>3. Define
+:::
+
+::: {.pf-step #s3}
+Define
 \[
 x_n=f^n(x_0)
 \qquad(n\ge0).
@@ -85,7 +97,8 @@ Then for every pair $n>m\ge0$,
 \[
 d(x_n,x_m)\ge\delta.
 \]
-::: {.proof}
+
+::: pf-proof
 Because $f$ is an isometry, every iterate $f^m$ is an isometry.
 Hence, for $n>m$,
 \[
@@ -99,15 +112,19 @@ Since $n-m\ge1$,
 \[
 f^{n-m}(x_0)=f(f^{n-m-1}(x_0))\in f(X).
 \]
-By the definition of $\delta$ in <1>2,
+By the definition of $\delta$ in step [](#s2){.pf-ref},
 \[
 d(f^{n-m}(x_0),x_0)\ge\delta.
 \]
 Thus $d(x_n,x_m)\ge\delta$.
 :::
 
-<1>4. The conclusion of <1>3 contradicts compactness of $X$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+The conclusion of step [](#s3){.pf-ref} contradicts compactness of $X$.
+
+::: pf-proof
 Every sequence in a compact metric space has a convergent subsequence.
 Thus the sequence $(x_n)_{n\ge0}$ has a convergent subsequence
 \[
@@ -117,15 +134,23 @@ Every convergent sequence is Cauchy, so for sufficiently large $k<\ell$ one must
 \[
 d(x_{n_k},x_{n_\ell})<\delta.
 \]
-This contradicts <1>3, which gives
+This contradicts step [](#s3){.pf-ref}, which gives
 \[
 d(x_{n_k},x_{n_\ell})\ge\delta.
 \]
 Therefore $f$ must be surjective.
 :::
 
-Combining <1>1 and <1>4,
+:::
+
+::: pf-step
+Combining step [](#s1){.pf-ref} and step [](#s4){.pf-ref},
 \[
 \boxed{f\text{ is bijective}.}
 \]
+
+:::
+
+:::
+
 :::

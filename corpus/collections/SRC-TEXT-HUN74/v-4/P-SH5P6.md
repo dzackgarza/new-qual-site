@@ -61,8 +61,12 @@ $$
 K\subseteq E\subseteq F.
 $$
 
-<1>1. $F$ is the splitting field of $g$ over $E$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+$F$ is the splitting field of $g$ over $E$.
+
+::: pf-proof
 The polynomial $g$ belongs to $E[x]$ by definition of $E$, and in $F[x]$ it
 splits as
 $$
@@ -83,18 +87,26 @@ Thus $F$ is generated over $E$ by the roots of $g$ and $g$ splits in $F$;
 therefore $F$ is the splitting field of $g$ over $E$.
 :::
 
-<1>2. The extension $F/E$ is Galois.
-::: {.proof}
+:::
+
+::: pf-step
+The extension $F/E$ is Galois.
+
+::: pf-proof
 The roots $u_1,\ldots,u_k$ of $g$ are pairwise distinct. Hence $g$ is
 separable over $E$: equivalently, every irreducible factor of $g$ has only
 simple roots in its splitting field.
 
-By step <1>1, $F$ is the splitting field over $E$ of the separable polynomial
+By step [](#s1){.pf-ref}, $F$ is the splitting field over $E$ of the separable polynomial
 $g$. Therefore $F/E$ is finite, normal, and separable, hence Galois.
 :::
 
-<1>3. Every $E$-automorphism of $F$ is a $K$-automorphism.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+Every $E$-automorphism of $F$ is a $K$-automorphism.
+
+::: pf-proof
 Since $K\subseteq E$, any automorphism fixing $E$ pointwise also fixes $K$
 pointwise. Thus
 $$
@@ -102,8 +114,12 @@ $$
 $$
 :::
 
-<1>4. Every $K$-automorphism of $F$ fixes $E$ pointwise.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+Every $K$-automorphism of $F$ fixes $E$ pointwise.
+
+::: pf-proof
 Let
 $$
 \sigma\in\operatorname{Aut}_K(F).
@@ -139,8 +155,13 @@ $$
 $$
 :::
 
-Combining steps <1>3 and <1>4,
+:::
+
+::: pf-step
+Combining steps [](#s3){.pf-ref} and [](#s4){.pf-ref},
 $$
 \boxed{\operatorname{Aut}_E(F)=\operatorname{Aut}_K(F).}
 $$
+:::
+
 :::

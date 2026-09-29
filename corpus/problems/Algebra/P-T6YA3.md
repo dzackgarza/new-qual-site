@@ -28,68 +28,137 @@ In particular, show that if $(p)$ is a maximal ideal, $A/pA$ is a vector space o
 :::
 
 ::: {.solution}
-<1>1. The scalar multiplication $(r + (p)) \cdot (a + pA) = ra + pA$ is well-defined.
-<2>1. Suppose $r + (p) = r' + (p)$ and $a + pA = a' + pA$.
-::: {.proof}
+
+::: pf
+
+::: {.pf-step #s1}
+The scalar multiplication $(r + (p)) \cdot (a + pA) = ra + pA$ is well-defined.
+
+::: pf-proof
+
+::: pf-step
+Suppose $r + (p) = r' + (p)$ and $a + pA = a' + pA$.
+
+::: pf-proof
 setup of coset representatives.
 :::
-<2>2. Then $r - r' = c p$ for some $c \in R$, and $a - a' \in pA$, so $a - a' = p u$ for some $u \in A$.
-::: {.proof}
+
+:::
+
+::: pf-step
+Then $r - r' = c p$ for some $c \in R$, and $a - a' \in pA$, so $a - a' = p u$ for some $u \in A$.
+
+::: pf-proof
 definition of ideals and submodules.
 :::
-<2>3. Compute the difference of the outputs:
+
+:::
+
+::: {.pf-step #s1-3}
+Compute the difference of the outputs:
 \[
 ra - r'a' = r(a - a') + (r - r')a' = r(pu) + (cp)a' = p(ru + ca').
 \]
-::: {.proof}
+
+::: pf-proof
 ring and module arithmetic.
 :::
-<2>4. Since $ru + ca' \in A$, $p(ru + ca') \in pA$.
-::: {.proof}
-definition of $pA = \{px : x \in A\}$.
-:::
-<2>5. Hence $ra + pA = r'a' + pA$, so the action is independent of the choice of coset representatives.
-::: {.proof}
-<2>3 and <2>4.
+
 :::
 
-<1>2. The action satisfies all module axioms: <2>1. Distributivity over module addition:
+::: {.pf-step #s1-4}
+Since $ru + ca' \in A$, $p(ru + ca') \in pA$.
+
+::: pf-proof
+definition of $pA = \{px : x \in A\}$.
+:::
+
+:::
+
+::: pf-step
+Hence $ra + pA = r'a' + pA$, so the action is independent of the choice of coset representatives.
+
+::: pf-proof
+step [](#s1-3){.pf-ref} and step [](#s1-4){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+The action satisfies all module axioms:
+
+::: pf-proof
+
+::: pf-step
+Distributivity over module addition:
 \[
 (r + (p)) \cdot \bigl((a + pA) + (b + pA)\bigr) = (r + (p)) \cdot (a + b + pA) = r(a+b) + pA = (ra + pA) + (rb + pA).
 \]
-::: {.proof}
+
+::: pf-proof
 distributivity in the $R$-module $A$: $r(a+b) = ra + rb$.
 :::
-<2>2. Distributivity over ring addition:
+
+:::
+
+::: pf-step
+Distributivity over ring addition:
 \[
 \bigl((r + (p)) + (s + (p))\bigr) \cdot (a + pA) = (r + s + (p)) \cdot (a + pA) = (r+s)a + pA = (ra + pA) + (sa + pA).
 \]
-::: {.proof}
+
+::: pf-proof
 module axiom $(r+s)a = ra + sa$.
 :::
-<2>3. Compatibility with ring multiplication:
+
+:::
+
+::: pf-step
+Compatibility with ring multiplication:
 \[
 \bigl((r + (p))(s + (p))\bigr) \cdot (a + pA) = (rs + (p)) \cdot (a + pA) = (rs)a + pA = r(sa) + pA = (r + (p)) \cdot (sa + pA).
 \]
-::: {.proof}
+
+::: pf-proof
 module axiom $(rs)a = r(sa)$.
 :::
-<2>4. Action of the ring identity:
+
+:::
+
+::: pf-step
+Action of the ring identity:
 \[
 (1_R + (p)) \cdot (a + pA) = 1_R a + pA = a + pA.
 \]
-::: {.proof}
+
+::: pf-proof
 module axiom $1_R a = a$.
 :::
 
-<1>3. If $(p)$ is a maximal ideal in $R$, then $R/(p)$ is a field, and any module over a field is a vector space.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+If $(p)$ is a maximal ideal in $R$, then $R/(p)$ is a field, and any module over a field is a vector space.
+
+::: pf-proof
 quotient of a commutative ring by a maximal ideal is a field.
 :::
 
-<1>4. Conclusion: $A/pA$ is an $R/(p)$-module, and is a vector space over $R/(p)$ when $(p)$ is maximal.
-::: {.proof}
-<1>1, <1>2, and <1>3.
 :::
-Q.E.D.
+
+::: pf-qed
+Conclusion: $A/pA$ is an $R/(p)$-module, and is a vector space over $R/(p)$ when $(p)$ is maximal.
+step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s3){.pf-ref}.
+:::
+
+:::
+
 :::

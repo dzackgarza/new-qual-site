@@ -109,14 +109,14 @@ y+\zeta^3z=0.
 $$
 Restricting the quartic equation to this line gives $x^4=0$, so the tangent
 section is $4P$.  Permuting the zero coordinate and choosing the four values
-of $\zeta$ gives $12$ hyperflexes.  Step <1>14 below shows that this quartic
+of $\zeta$ gives $12$ hyperflexes.  Step [](#s14){.pf-ref} below shows that this quartic
 therefore has $16$, not $28$, strict bitangents.
 
 The final parenthetical in the source is also incorrect: the dual germ of a
 four-fold contact is unibranch of multiplicity $3$, with local leading
 parametrization $(t^3,t^4)$ and $\delta=3$.  It is an $E_6$ cusp, not a
 tacnode.  A tacnode has two branches.  This local calculation is included in
-step <1>11.
+step [](#s11){.pf-ref}.
 :::
 
 ::: {.solution}
@@ -126,7 +126,10 @@ $$
 $$
 denote the Gauss map $P\mapsto T_P(X)$.
 
-<1>1. If $P\in X$ and
+::: pf
+
+::: {.pf-step #s1}
+If $P\in X$ and
 $$
 r=I_P\bigl(X,T_P(X)\bigr),
 $$
@@ -138,7 +141,7 @@ t\longmapsto
 h(t)=a_rt^r+O(t^{r+1}),\quad a_r\ne0.
 $$
 
-::: {.proof}
+::: pf-proof
 Choose affine coordinates with
 $$
 P=(0,0),
@@ -169,14 +172,17 @@ In the dual affine chart where the coefficient of $y$ is $1$, this is exactly
 the displayed parametrization of $\gamma$.
 :::
 
-<1>2. The morphism $\varphi:X\to L$ of part (a) is ramified at $P$ if and
+:::
+
+::: {.pf-step #s2}
+The morphism $\varphi:X\to L$ of part (a) is ramified at $P$ if and
 only if $P\in L$ or $P$ is an inflection point.
 
-::: {.proof}
-Keep the notation of step <1>1.
+::: pf-proof
+Keep the notation of step [](#s1){.pf-ref}.
 
 First suppose $P\notin L$.  Apply a projective change of coordinates sending
-$L$ to the line at infinity.  The tangent line in step <1>1 meets $L$ at
+$L$ to the line at infinity.  The tangent line in step [](#s1){.pf-ref} meets $L$ at
 $$
 [1:h'(t):0].
 $$
@@ -215,9 +221,12 @@ Thus every point of $X\cap L$ is ramified.  These two cases prove the stated
 criterion.
 :::
 
-<1>3. The curve $X$ has only finitely many inflection points.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+The curve $X$ has only finitely many inflection points.
+
+::: pf-proof
 The map $\varphi$ is nonconstant.  Indeed, if it were constant with value
 $Q\in L$, every tangent line to $X$ would pass through $Q$.  Projection from
 $Q$ gives a nonconstant map from $X$ to $\PP^1$: it has degree $d$ if
@@ -228,22 +237,25 @@ That would make the projection inseparable, which is impossible in
 characteristic $0$.
 
 Hence $\varphi$ is a nonconstant morphism of projective curves and therefore
-finite and separable.  Its ramification locus is finite.  By step <1>2 every
+finite and separable.  Its ramification locus is finite.  By step [](#s2){.pf-ref} every
 inflection point outside the finite set $X\cap L$ lies in that ramification
 locus, so the set of inflection points is finite.
 :::
 
-<1>4. If a line $M$ is tangent to $X$ at distinct non-inflection points
+:::
+
+::: {.pf-step #s4}
+If a line $M$ is tangent to $X$ at distinct non-inflection points
 $P_1,\ldots,P_s$, then the corresponding point $[M]\in X^*$ is an ordinary
 $s$-fold point.  Consequently $X$ has only finitely many multiple tangents.
 
-::: {.proof}
-At a non-inflection point, step <1>1 has $r=2$, so
+::: pf-proof
+At a non-inflection point, step [](#s1){.pf-ref} has $r=2$, so
 $$
 h(t)=a_2t^2+O(t^3),
 \qquad a_2\ne0.
 $$
-Writing the dual coordinates in step <1>1 as $(u,v)$ gives
+Writing the dual coordinates in step [](#s1){.pf-ref} as $(u,v)$ gives
 $$
 u=-2a_2t+O(t^2),
 \qquad
@@ -260,13 +272,16 @@ $[M]$ are smooth and have pairwise distinct tangent directions, which is
 exactly an ordinary $s$-fold point in the sense of
 [[P-AGH53MULTIPLICITY|Exercise I.5.3]].
 
-By step <1>3 there are only finitely many inflectional tangent lines.  Every
+By step [](#s3){.pf-ref} there are only finitely many inflectional tangent lines.  Every
 other multiple tangent gives a singular point of the projective curve $X^*$
 by the preceding paragraph.  A projective curve has only finitely many
 singular points, hence there are only finitely many multiple tangents.
 :::
 
-<1>5. Let $O\notin X$ lie on no inflectional or multiple tangent.  Projection
+:::
+
+::: {.pf-step #s5}
+Let $O\notin X$ lie on no inflectional or multiple tangent.  Projection
 from $O$ gives a degree-$d$ morphism
 $$
 \psi:X\longrightarrow\PP^1
@@ -274,7 +289,7 @@ $$
 whose ramification points are exactly the points $P$ for which $OP=T_P(X)$,
 and each has ramification index $2$.
 
-::: {.proof}
+::: pf-proof
 A fibre of the projection is the intersection of $X$ with a line through
 $O$.  At a point $P$, choose a local coordinate on the pencil of lines through
 $O$ whose value at $P$ corresponds to the line $OP$.  The difference from
@@ -292,13 +307,16 @@ Because $O\notin X$, a general line through $O$ meets $X$ in $d$ points,
 counted with multiplicity, so $\deg\psi=d$.
 :::
 
-<1>6. Exactly $d(d-1)$ tangent lines to $X$ pass through such a point $O$,
+:::
+
+::: {.pf-step #s6}
+Exactly $d(d-1)$ tangent lines to $X$ pass through such a point $O$,
 and
 $$
 \deg X^*=d(d-1).
 $$
 
-::: {.proof}
+::: pf-proof
 By [[P-AGH72ARITHGENUS|Exercise I.7.2]],
 $$
 g(X)=\frac{(d-1)(d-2)}2,
@@ -307,7 +325,7 @@ so
 $$
 2g(X)-2=d^2-3d.
 $$
-Apply Riemann--Hurwitz to the degree-$d$ map of step <1>5.  Its ramification
+Apply Riemann--Hurwitz to the degree-$d$ map of step [](#s5){.pf-ref}.  Its ramification
 divisor has degree
 $$
 \deg R_\psi
@@ -320,7 +338,7 @@ through $O$, so this is the desired number of tangents.
 
 In the dual plane, the lines through $O$ form a line $O^*$.  Its intersection
 with $X^*$ consists of the tangent lines to $X$ passing through $O$.  At each
-of the $d(d-1)$ points just found, $X^*$ is smooth by step <1>4, and its
+of the $d(d-1)$ points just found, $X^*$ is smooth by step [](#s4){.pf-ref}, and its
 tangent line is $P^*$ for the corresponding tangency point $P$.  Since
 $O\ne P$, the lines $O^*$ and $P^*$ are distinct, so the intersection is
 transverse.  Therefore
@@ -330,14 +348,17 @@ $$
 which is the degree of $X^*$.
 :::
 
-<1>7. For all but finitely many $O\in X$, exactly
+:::
+
+::: {.pf-step #s7}
+For all but finitely many $O\in X$, exactly
 $$
 (d+1)(d-2)
 $$
 tangent lines to $X$, other than $T_O(X)$, pass through $O$.
 
-::: {.proof}
-By steps <1>3--<1>4 there are only finitely many inflectional and multiple
+::: pf-proof
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref} there are only finitely many inflectional and multiple
 tangent lines.  Exclude from $X$ all inflection points and all points lying on
 one of those finitely many exceptional lines.  This removes only finitely
 many points.
@@ -357,7 +378,7 @@ $$
 $$
 which has order $1$.
 
-At a point $P\ne O$, the same argument as in step <1>5 shows that $\psi_O$
+At a point $P\ne O$, the same argument as in step [](#s5){.pf-ref} shows that $\psi_O$
 is ramified exactly when $OP=T_P(X)$.  By the choice of $O$, such a tangent
 is neither inflectional nor multiple, so every ramification index is $2$ and
 distinct ramification points give distinct tangent lines.  Riemann--Hurwitz
@@ -372,14 +393,17 @@ $$
 $$
 :::
 
-<1>8. The morphism $\varphi:X\to L$ of part (a) has degree
+:::
+
+::: {.pf-step #s8}
+The morphism $\varphi:X\to L$ of part (a) has degree
 $$
 d(d-1).
 $$
 
-::: {.proof}
+::: pf-proof
 Choose a general point $Q\in L$.  We may arrange that $Q\notin X$ and that
-$Q$ lies on no inflectional or multiple tangent.  By step <1>6 there are
+$Q$ lies on no inflectional or multiple tangent.  By step [](#s6){.pf-ref} there are
 exactly $d(d-1)$ tangent lines to $X$ through $Q$.
 
 The fibre $\varphi^{-1}(Q)$ consists exactly of their tangency points, since
@@ -395,7 +419,10 @@ $$
 $$
 :::
 
-<1>9. The inflection points of $X$, counted with weight
+:::
+
+::: {.pf-step #s9}
+The inflection points of $X$, counted with weight
 $$
 I_P(X,T_P(X))-2,
 $$
@@ -404,10 +431,10 @@ $$
 3d(d-2).
 $$
 
-::: {.proof}
+::: pf-proof
 Choose the line $L$ in part (a) generally enough that it contains no
 inflection point.  Since it is not tangent to $X$, it meets $X$ transversely
-in exactly $d$ points.  At each $P\in X\cap L$, step <1>2 gives
+in exactly $d$ points.  At each $P\in X\cap L$, step [](#s2){.pf-ref} gives
 $$
 e_P(\varphi)=2,
 $$
@@ -417,14 +444,14 @@ If $P\notin L$ is an inflection point with
 $$
 r=I_P(X,T_P(X))\geq3,
 $$
-step <1>2 gives
+step [](#s2){.pf-ref} gives
 $$
 e_P(\varphi)=r-1,
 $$
-so its ramification contribution is $r-2$.  Step <1>2 shows that there is no
+so its ramification contribution is $r-2$.  Step [](#s2){.pf-ref} shows that there is no
 other ramification.
 
-By step <1>8 and Riemann--Hurwitz,
+By step [](#s8){.pf-ref} and Riemann--Hurwitz,
 $$
 \begin{aligned}
 \deg R_\varphi
@@ -440,11 +467,14 @@ $$
 which is exactly the asserted weighted inflection count.
 :::
 
-<1>10. An ordinary inflection point of $X$ maps to an ordinary cusp of
+:::
+
+::: {.pf-step #s10}
+An ordinary inflection point of $X$ maps to an ordinary cusp of
 $X^*$.
 
-::: {.proof}
-At an ordinary inflection point, step <1>1 has
+::: pf-proof
+At an ordinary inflection point, step [](#s1){.pf-ref} has
 $$
 h(t)=a_3t^3+O(t^4),
 \qquad a_3\ne0.
@@ -460,13 +490,16 @@ multiplicity $3$.  Equivalently, after formal changes of local coordinates it
 has parametrization $(t^2,t^3)$, the ordinary cusp.
 :::
 
-<1>11. The Gauss map $\gamma:X\to X^*$ is the normalization of $X^*$.
+:::
+
+::: {.pf-step #s11}
+The Gauss map $\gamma:X\to X^*$ is the normalization of $X^*$.
 If $P$ is a hyperflex, then $\gamma(P)$ is a unibranch multiplicity-$3$
 singularity with $\delta=3$, not a tacnode.
 
-::: {.proof}
-The Gauss map is nonconstant by the argument of step <1>3, hence finite onto
-its image.  By step <1>4 there are only finitely many multiple tangents, so a
+::: pf-proof
+The Gauss map is nonconstant by the argument of step [](#s3){.pf-ref}, hence finite onto
+its image.  By step [](#s4){.pf-ref} there are only finitely many multiple tangents, so a
 general point of $X^*$ is the tangent line at exactly one point of $X$.
 Therefore $\gamma$ is generically one-to-one and hence birational.  Since
 $X$ is nonsingular and thus normal, the finite birational map
@@ -479,7 +512,7 @@ Now suppose
 $$
 I_P(X,T_P(X))=4.
 $$
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 h(t)=a_4t^4+O(t^5),
 \qquad a_4\ne0,
@@ -509,17 +542,20 @@ This is the $E_6$ cusp (characteristic parametrization $(t^3,t^4)$).  In
 particular it cannot be a tacnode, because a tacnode has two branches.
 :::
 
-<1>12. If $X^*$ has only nodes and ordinary cusps, then the number $b$ of
+:::
+
+::: {.pf-step #s12}
+If $X^*$ has only nodes and ordinary cusps, then the number $b$ of
 bitangents in the strict sense of part (b) is
 $$
 b=\frac12d(d-2)(d-3)(d+3).
 $$
 
-::: {.proof}
+::: pf-proof
 Under the stated hypothesis every inflection point is ordinary.  Indeed, if
-its tangent contact had order $r\geq4$, step <1>1 would give a dual branch of
+its tangent contact had order $r\geq4$, step [](#s1){.pf-ref} would give a dual branch of
 multiplicity $r-1\geq3$, which is neither a node nor an ordinary cusp.
-Therefore step <1>9 shows that the number of cusps of $X^*$ is
+Therefore step [](#s9){.pf-ref} shows that the number of cusps of $X^*$ is
 $$
 \kappa=3d(d-2).
 $$
@@ -528,11 +564,11 @@ Under the stated singularity hypothesis, a multiple tangent cannot contain
 an inflection point: otherwise the corresponding point of $X^*$ would have
 at least one singular branch together with another branch, hence would be
 neither a node nor an ordinary cusp.  It also cannot be tangent at three or
-more distinct points, because step <1>4 would give an ordinary multiple
+more distinct points, because step [](#s4){.pf-ref} would give an ordinary multiple
 point with at least three branches.  Thus every multiple tangent is tangent
 at exactly two non-inflection points, i.e. is a strict bitangent, and step
-<1>4 shows that it gives an ordinary node of $X^*$.  Conversely, by step
-<1>11 the two branches of a node lift under the normalization to two distinct
+[](#s4){.pf-ref} shows that it gives an ordinary node of $X^*$.  Conversely, by step
+[](#s11){.pf-ref} the two branches of a node lift under the normalization to two distinct
 points of $X$ having the same tangent line.  Hence the number of nodes is
 exactly $b$.
 
@@ -570,11 +606,14 @@ $$
 Dividing by $2$ proves part (f).
 :::
 
-<1>13. A plane cubic has exactly nine inflection points, all ordinary, and
+:::
+
+::: {.pf-step #s13}
+A plane cubic has exactly nine inflection points, all ordinary, and
 the line through any two of them meets the cubic in a third inflection point.
 
-::: {.proof}
-For $d=3$, step <1>9 gives total inflection weight
+::: pf-proof
+For $d=3$, step [](#s9){.pf-ref} gives total inflection weight
 $$
 3\cdot3\cdot(3-2)=9.
 $$
@@ -614,7 +653,10 @@ $|H|$.  Thus the effective divisor $3R\in|H|$ is cut out by a line, and that
 line has contact order $3$ at $R$.  Hence $R$ is also an inflection point.
 :::
 
-<1>14. For an arbitrary nonsingular plane quartic, if $h$ is the number of
+:::
+
+::: {.pf-step #s14}
+For an arbitrary nonsingular plane quartic, if $h$ is the number of
 hyperflex lines and $b$ the number of strict bitangents, then
 $$
 b=28-h.
@@ -622,15 +664,15 @@ $$
 Consequently there are always exactly $28$ generalized bitangent lines when
 hyperflexes are included.
 
-::: {.proof}
+::: pf-proof
 For a quartic, every tangent contact has order at most $4$.  Let $f$ be the
-number of ordinary flexes and $h$ the number of hyperflexes.  Step <1>9 gives
+number of ordinary flexes and $h$ the number of hyperflexes.  Step [](#s9){.pf-ref} gives
 the weighted relation
 $$
 f+2h=24.
 $$
 
-By step <1>6, the dual curve has degree
+By step [](#s6){.pf-ref}, the dual curve has degree
 $$
 4(4-1)=12,
 $$
@@ -638,17 +680,17 @@ so
 $$
 p_a(X^*)=\frac{(12-1)(12-2)}2=55.
 $$
-Its normalization is the genus-$3$ curve $X$ by step <1>11.  A singular
+Its normalization is the genus-$3$ curve $X$ by step [](#s11){.pf-ref}.  A singular
 point of $X^*$ with at least two normalization preimages is a line tangent
 to $X$ at at least two distinct points; Bézout forces the contact divisor to
 be $2P+2Q$, so it is a strict bitangent.  A singular point with one
 normalization preimage comes from a point where the local Gauss
-parametrization of step <1>1 is singular, hence from contact order $3$ or
+parametrization of step [](#s1){.pf-ref} is singular, hence from contact order $3$ or
 $4$.  Therefore the singularities of $X^*$ are exactly:
 
 - the $b$ nodes coming from strict bitangents, each with $\delta=1$;
 - the $f$ ordinary cusps coming from ordinary flexes, each with $\delta=1$;
-- the $h$ hyperflex cusps of step <1>11, each with $\delta=3$.
+- the $h$ hyperflex cusps of step [](#s11){.pf-ref}, each with $\delta=3$.
 
 The genus formula of [[P-AGH418ARITHGENUSSINGULAR|Exercise IV.1.8]] now gives
 $$
@@ -666,7 +708,7 @@ $$
 Thus $b+h=28$, proving the corrected form of part (h).
 
 For the Fermat quartic in the erratum, the $12$ displayed hyperflexes already
-contribute total inflection weight $24$, so step <1>9 shows there are no
+contribute total inflection weight $24$, so step [](#s9){.pf-ref} shows there are no
 others.  Hence $h=12$ and
 $$
 b=28-12=16,
@@ -674,13 +716,15 @@ $$
 which explicitly disproves the literal strict-bitangent reading of part (h).
 :::
 
-<1>15. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 prove part (a), step <1>4 proves part (b), steps <1>5--<1>6
-prove part (c), step <1>7 proves part (d), steps <1>8--<1>10 prove part (e),
-step <1>12 proves part (f), step <1>13 proves part (g), and step <1>14 proves
-the corrected form of part (h).  Step <1>11 supplies the local correction to
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} prove part (a), step [](#s4){.pf-ref} proves part (b), steps [](#s5){.pf-ref} and [](#s6){.pf-ref}
+prove part (c), step [](#s7){.pf-ref} proves part (d), steps [](#s8){.pf-ref}, [](#s9){.pf-ref}, and [](#s10){.pf-ref} prove part (e),
+step [](#s12){.pf-ref} proves part (f), step [](#s13){.pf-ref} proves part (g), and step [](#s14){.pf-ref} proves
+the corrected form of part (h).  Step [](#s11){.pf-ref} supplies the local correction to
 the source's four-fold-contact parenthetical.
+:::
+
 :::
 :::

@@ -54,31 +54,65 @@ audit:
 ::: {.solution}
 Take $n \neq -1$ and $x > 0$.
 
-<1>1. Integrate by parts with $u = \ln x$ and $dv = x^n\,dx$.
-<2>1. $du = \frac{1}{x}\,dx$ and $v = \frac{x^{n+1}}{n+1}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+Integrate by parts with $u = \ln x$ and $dv = x^n\,dx$.
+
+::: pf-proof
+
+::: pf-step
+$du = \frac{1}{x}\,dx$ and $v = \frac{x^{n+1}}{n+1}$.
+
+::: pf-proof
 differentiate $\ln x$ and integrate $x^n$.
 :::
-<2>2. $\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\ln x - \int \frac{x^{n+1}}{n+1}\cdot \frac{1}{x}\,dx$.
-::: {.proof}
+
+:::
+
+::: pf-step
+$\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\ln x - \int \frac{x^{n+1}}{n+1}\cdot \frac{1}{x}\,dx$.
+
+::: pf-proof
 integration by parts: $\int u\,dv = uv - \int v\,du$.
 :::
-<2>3. $= \frac{x^{n+1}}{n+1}\ln x - \frac{1}{n+1}\int x^n\,dx$.
-::: {.proof}
+
+:::
+
+::: pf-step
+$= \frac{x^{n+1}}{n+1}\ln x - \frac{1}{n+1}\int x^n\,dx$.
+
+::: pf-proof
 $\frac{x^{n+1}}{x} = x^n$.
 :::
-<2>4. $= \frac{x^{n+1}}{n+1}\ln x - \frac{x^{n+1}}{(n+1)^2} + C$.
-::: {.proof}
+
+:::
+
+::: {.pf-step #s1-4}
+$= \frac{x^{n+1}}{n+1}\ln x - \frac{x^{n+1}}{(n+1)^2} + C$.
+
+::: pf-proof
 $\int x^n\,dx = \frac{x^{n+1}}{n+1}$.
 :::
 
-<1>2. $\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\left(\ln x - \frac{1}{n+1}\right) + C$.
-::: {.proof}
-Factor out $\frac{x^{n+1}}{n+1}$ in step <2>4 of step <1>1.
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>2 is the general formula; the special case $n = -1$ is $\int \frac{\ln x}{x}\,dx = \frac12 \ln^2 x + C$ (substitute $u = \ln x$).
+:::
+
+:::
+
+::: {.pf-step #s2}
+$\int x^n \ln x\,dx = \frac{x^{n+1}}{n+1}\left(\ln x - \frac{1}{n+1}\right) + C$.
+
+::: pf-proof
+Factor out $\frac{x^{n+1}}{n+1}$ in step [](#s1-4){.pf-ref} of step [](#s1){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Step [](#s2){.pf-ref} is the general formula; the special case $n = -1$ is $\int \frac{\ln x}{x}\,dx = \frac12 \ln^2 x + C$ (substitute $u = \ln x$).
+:::
+
 :::
 :::

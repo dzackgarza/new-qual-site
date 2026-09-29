@@ -45,12 +45,15 @@ $$
 f(z)=\sum_{n=0}^{\infty}a_nz^n.
 $$
 
-<1>1. For every $R>10$ and every integer $n\geq1$,
+::: pf
+
+::: {.pf-step #s1}
+For every $R>10$ and every integer $n\geq1$,
 $$
 \abs{a_n}\leq R^{1/2-n}.
 $$
 
-::: {.proof}
+::: pf-proof
 By Cauchy's coefficient formula,
 $$
 a_n
@@ -78,13 +81,16 @@ R^{1/2-n}.
 $$
 :::
 
-<1>2. For every integer $n\geq1$,
+:::
+
+::: {.pf-step #s2}
+For every integer $n\geq1$,
 $$
 a_n=0.
 $$
 
-::: {.proof}
-Fix $n\geq1$. Step <1>1 holds for every $R>10$, while
+::: pf-proof
+Fix $n\geq1$. Step [](#s1){.pf-ref} holds for every $R>10$, while
 $$
 R^{1/2-n}\longrightarrow0
 $$
@@ -94,10 +100,13 @@ $$
 $$
 :::
 
-<1>3. The function $f$ is constant.
+:::
 
-::: {.proof}
-By step <1>2, every coefficient of positive degree in the Taylor expansion
+::: {.pf-step #s3}
+The function $f$ is constant.
+
+::: pf-proof
+By step [](#s2){.pf-ref}, every coefficient of positive degree in the Taylor expansion
 of $f$ vanishes. Thus
 $$
 f(z)=a_0
@@ -105,10 +114,12 @@ $$
 for every $z\in\CC$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 is the corrected conclusion.
+::: pf-qed
+Step [](#s3){.pf-ref} is the corrected conclusion.
+:::
+
 :::
 :::
 
@@ -123,5 +134,5 @@ $$
 1<\sqrt{10}<\abs{z}^{1/2}
 $$
 whenever $\abs{z}>10$. The printed growth bound forces constancy by
-step <1>3 of the solution, but it does not force the constant to be zero.
+step [](#s3){.pf-ref} of the solution, but it does not force the constant to be zero.
 :::

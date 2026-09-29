@@ -34,7 +34,11 @@ d) A power series $\sum_{n=0}^\infty a_n z^n \in \mathbb{C}[[z]]$ with radius of
 
 
 ::: {.solution}
-<1>1. For part (a), take
+
+::: pf
+
+::: pf-step
+For part (a), take
 \[
 f(x)=
 \begin{cases}
@@ -43,22 +47,36 @@ e^{-1/x},&x>0.
 \end{cases}
 \]
 This function is $C^\infty$ on $\mathbb R$, vanishes on $(-\infty,0]$, and is nonzero for every $x>0$.
+
 :::
 
-<1>2. For part (b), take the polynomial ring
+::: pf-step
+For part (b), take the polynomial ring
 \[
 (\mathbb Z/2\mathbb Z)[x]
 \]
 viewed as a vector space over $\mathbb Z/2\mathbb Z$. Its basis $1,x,x^2,\dots$ is infinite.
 
-<1>3. For part (c), take
+:::
+
+::: pf-step
+For part (c), take
 \[
 \begin{pmatrix}0&1\\0&0\end{pmatrix}.
 \]
 It is not diagonalizable over $\mathbb C$.
 
-<1>4. For part (d), take
+:::
+
+::: pf-step
+For part (d), take
 \[
 \sum_{n=0}^\infty n!\,z^n.
 \]
 Its radius of convergence is $0$.
+
+:::
+
+:::
+
+:::

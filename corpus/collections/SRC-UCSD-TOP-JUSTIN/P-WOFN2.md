@@ -31,21 +31,52 @@ Compute the homology groups of $X$.
 **Goal:** Let $U_1 = S^1 \times B^2$ and $U_2 = S^1 \times B^2$ be two solid tori, glued along their boundaries $\partial(S^1 \times B^2) = S^1 \times S^1 = T^2$ via the identity map $\operatorname{id}_{\partial}$.
 Compute the integral homology groups $H_*(M; \mathbb{Z})$ of the resulting closed 3-manifold $M = S^1 \times S^2$.
 
-<1>1. Topological identification of $M$.
-<2>1. $B^2$ is the 2-disk $D^2$, whose boundary is $S^1$.
-<2>2. Gluing two copies of the 2-disk $D^2$ along their common boundary via the identity map yields the 2-sphere $S^2$: $$D^2 \cup_{\operatorname{id}_{S^1}} D^2 \cong S^2.$$ <2>3. Since the gluing map on $S^1 \times \partial B^2$ is $\operatorname{id}_{S^1 \times \partial B^2} = \operatorname{id}_{S^1} \times \operatorname{id}_{S^1}$, the product structure factors through the gluing: $$M = (S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2.$$
-::: {.proof}
-<2>4. The gluing map is the identity on both the $S^1$ factor and the boundary $S^1$ of $B^2$, so the pushout distributes over the product: $(S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2$.
+::: pf
+
+::: pf-step
+Topological identification of $M$.
+
+::: pf-proof
+
+::: pf-step
+$B^2$ is the 2-disk $D^2$, whose boundary is $S^1$.
 :::
 
-<1>2. Compute $H_*(S^1 \times S^2; \mathbb{Z})$ using the Künneth formula.
-<2>1. The homology groups of the circle $S^1$ and the sphere $S^2$ are:
+::: pf-step
+Gluing two copies of the 2-disk $D^2$ along their common boundary via the identity map yields the 2-sphere $S^2$: $$D^2 \cup_{\operatorname{id}_{S^1}} D^2 \cong S^2.$$
+:::
+
+::: pf-step
+Since the gluing map on $S^1 \times \partial B^2$ is $\operatorname{id}_{S^1 \times \partial B^2} = \operatorname{id}_{S^1} \times \operatorname{id}_{S^1}$, the product structure factors through the gluing: $$M = (S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2.$$
+:::
+
+::: pf-qed
+The gluing map is the identity on both the $S^1$ factor and the boundary $S^1$ of $B^2$, so the pushout distributes over the product: $(S^1 \times B^2) \cup_{\operatorname{id}} (S^1 \times B^2) \cong S^1 \times (B^2 \cup_{\operatorname{id}} B^2) \cong S^1 \times S^2$.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+Compute $H_*(S^1 \times S^2; \mathbb{Z})$ using the Künneth formula.
+
+::: pf-proof
+
+::: pf-step
+The homology groups of the circle $S^1$ and the sphere $S^2$ are:
 
 - $H_0(S^1) \cong \mathbb{Z}$, $H_1(S^1) \cong \mathbb{Z}$, $H_k(S^1) = 0$ for $k \ge 2$.
 
 - $H_0(S^2) \cong \mathbb{Z}$, $H_2(S^2) \cong \mathbb{Z}$, $H_k(S^2) = 0$ for $k \neq 0, 2$.
-  <2>2. Since all homology groups of $S^1$ and $S^2$ are free abelian groups, all Tor terms $\operatorname{Tor}_1^\mathbb{Z}(H_i(S^1), H_j(S^2))$ vanish.
-  <2>3. The Künneth formula gives an isomorphism $H_k(M) \cong \bigoplus_{i+j=k} (H_i(S^1) \otimes_\mathbb{Z} H_j(S^2))$ for each $k \ge 0$:
+:::
+
+::: pf-step
+Since all homology groups of $S^1$ and $S^2$ are free abelian groups, all Tor terms $\operatorname{Tor}_1^\mathbb{Z}(H_i(S^1), H_j(S^2))$ vanish.
+:::
+
+::: {.pf-step #s2-3}
+The Künneth formula gives an isomorphism $H_k(M) \cong \bigoplus_{i+j=k} (H_i(S^1) \otimes_\mathbb{Z} H_j(S^2))$ for each $k \ge 0$:
 
 - $k = 0$: $H_0(S^1) \otimes H_0(S^2) = \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 
@@ -56,28 +87,71 @@ Compute the integral homology groups $H_*(M; \mathbb{Z})$ of the resulting close
 - $k = 3$: $(H_1(S^1) \otimes H_2(S^2)) = \mathbb{Z} \otimes \mathbb{Z} \cong \mathbb{Z}$.
 
 - $k \ge 4$: All terms are 0, so $H_k(M) = 0$.
-::: {.proof}
-<2>4. Since $H_i(S^1)$ and $H_j(S^2)$ are free abelian, all Tor terms vanish and the Künneth formula reduces to the direct sum of tensor products; evaluating these for each $k$ gives the groups in <2>3.
 :::
 
-<1>3. Alternative verification via the Mayer-Vietoris sequence.
-<2>1. Let $A = S^1 \times B^2$ and $B = S^1 \times B^2$.
-<2>2. $A \simeq S^1$, $B \simeq S^1$, and $A \cap B \cong S^1 \times S^1 = T^2$.
-<2>3. The Mayer-Vietoris long exact sequence is: $$0 \to H_3(M) \xrightarrow{\partial} H_2(T^2) \xrightarrow{(i_*, j_*)} H_2(A) \oplus H_2(B) \to H_2(M) \xrightarrow{\partial} H_1(T^2) \xrightarrow{(i_*, j_*)} H_1(A) \oplus H_1(B) \to H_1(M) \to \widetilde{H}_0(T^2) \to 0.$$ <2>4. $H_2(A) = H_2(B) = 0$, so $0 \to H_3(M) \xrightarrow{\partial} H_2(T^2) \cong \mathbb{Z} \to 0 \implies H_3(M) \cong \mathbb{Z}$.
-<2>5. The map $(i_*, j_*) \colon H_1(T^2) \cong \mathbb{Z}^2 \to H_1(A) \oplus H_1(B) \cong \mathbb{Z}^2$ maps the longitudinal circle generator $(1, 0) \mapsto (1, 1)$ and the meridian circle generator $(0, 1) \mapsto (0, 0)$.
+::: pf-qed
+Since $H_i(S^1)$ and $H_j(S^2)$ are free abelian, all Tor terms vanish and the Künneth formula reduces to the direct sum of tensor products; evaluating these for each $k$ gives the groups in step [](#s2-3){.pf-ref}.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+Alternative verification via the Mayer-Vietoris sequence.
+
+::: pf-proof
+
+::: pf-step
+Let $A = S^1 \times B^2$ and $B = S^1 \times B^2$.
+:::
+
+::: pf-step
+$A \simeq S^1$, $B \simeq S^1$, and $A \cap B \cong S^1 \times S^1 = T^2$.
+:::
+
+::: pf-step
+The Mayer-Vietoris long exact sequence is: $$0 \to H_3(M) \xrightarrow{\partial} H_2(T^2) \xrightarrow{(i_*, j_*)} H_2(A) \oplus H_2(B) \to H_2(M) \xrightarrow{\partial} H_1(T^2) \xrightarrow{(i_*, j_*)} H_1(A) \oplus H_1(B) \to H_1(M) \to \widetilde{H}_0(T^2) \to 0.$$
+:::
+
+::: pf-step
+$H_2(A) = H_2(B) = 0$, so $0 \to H_3(M) \xrightarrow{\partial} H_2(T^2) \cong \mathbb{Z} \to 0 \implies H_3(M) \cong \mathbb{Z}$.
+:::
+
+::: pf-step
+The map $(i_*, j_*) \colon H_1(T^2) \cong \mathbb{Z}^2 \to H_1(A) \oplus H_1(B) \cong \mathbb{Z}^2$ maps the longitudinal circle generator $(1, 0) \mapsto (1, 1)$ and the meridian circle generator $(0, 1) \mapsto (0, 0)$.
 
 - Thus $\ker(i_*, j_*) \cong \mathbb{Z}$ (generated by the meridian $(0, 1)$) and $\operatorname{coker}(i_*, j_*) \cong \mathbb{Z}$.
 
 - From $0 \to H_2(M) \xrightarrow{\partial} \ker(i_*, j_*) \to 0$, we get $H_2(M) \cong \mathbb{Z}$.
 
 - From $0 \to \operatorname{coker}(i_*, j_*) \to H_1(M) \to 0$, we get $H_1(M) \cong \mathbb{Z}$.
-::: {.proof}
-<2>6. The Mayer–Vietoris sequence, together with the vanishing of $H_2(A)$ and $H_2(B)$ and the explicit form of $(i_*, j_*)$ on $H_1(T^2)$, gives the short exact sequences that determine $H_3(M)$, $H_2(M)$, and $H_1(M)$.
 :::
 
-<1>4. Conclusion.
-<2>1. The homology groups of $M$ are: $$H_0(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_1(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_2(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_3(M; \mathbb{Z}) \cong \mathbb{Z},$$ and $H_k(M; \mathbb{Z}) = 0$ for all $k \ge 4$.
-::: {.proof}
-<2>2. The Künneth computation in <1>2 and the Mayer–Vietoris computation in <1>3 agree, giving the stated homology groups.
+::: pf-qed
+The Mayer–Vietoris sequence, together with the vanishing of $H_2(A)$ and $H_2(B)$ and the explicit form of $(i_*, j_*)$ on $H_1(T^2)$, gives the short exact sequences that determine $H_3(M)$, $H_2(M)$, and $H_1(M)$.
+:::
+
+:::
+
+:::
+
+::: pf-step
+Conclusion.
+
+::: pf-proof
+
+::: pf-step
+The homology groups of $M$ are: $$H_0(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_1(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_2(M; \mathbb{Z}) \cong \mathbb{Z}, \quad H_3(M; \mathbb{Z}) \cong \mathbb{Z},$$ and $H_k(M; \mathbb{Z}) = 0$ for all $k \ge 4$.
+:::
+
+::: pf-qed
+The Künneth computation in step [](#s2){.pf-ref} and the Mayer–Vietoris computation in step [](#s3){.pf-ref} agree, giving the stated homology groups.
+:::
+
+:::
+
+:::
+
 :::
 :::

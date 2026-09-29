@@ -33,7 +33,10 @@ Write
 where $M$ is a Möbius band and the attaching map identifies $\partial D^2$ with $\partial M$.
 Use Mayer--Vietoris for this excisive CW decomposition (equivalently, replace $M$ and $D^2$ by open neighborhoods deformation retracting onto them whose intersection deformation retracts onto the common boundary circle).
 
-<1>1. The relevant homology groups are
+::: pf
+
+::: pf-step
+The relevant homology groups are
 \[
 H_1(S^1)\cong\mathbb Z,
 \qquad
@@ -43,13 +46,19 @@ H_1(D^2)=0,
 \]
 and $H_2$ of all three pieces is zero.
 
-<1>2. Under a deformation retraction of $M$ onto its core circle, the boundary circle of the Möbius band winds twice around the core. Hence the inclusion
+:::
+
+::: pf-step
+Under a deformation retraction of $M$ onto its core circle, the boundary circle of the Möbius band winds twice around the core. Hence the inclusion
 \[
 i:S^1=\partial M\hookrightarrow M
 \]
 induces multiplication by $2$ on $H_1$. The inclusion into $D^2$ induces the zero map on $H_1$.
 
-<1>3. The Mayer--Vietoris sequence in degrees $2$ and $1$ is therefore
+:::
+
+::: pf-step
+The Mayer--Vietoris sequence in degrees $2$ and $1$ is therefore
 \[
 0\longrightarrow H_2(\mathbb{RP}^2)
 \longrightarrow \mathbb Z
@@ -58,18 +67,33 @@ induces multiplication by $2$ on $H_1$. The inclusion into $D^2$ induces the zer
 \longrightarrow \mathbb Z
 \xrightarrow{(1,-1)}\mathbb Z\oplus\mathbb Z.
 \]
-<2>1. Multiplication by $2$ is injective, so exactness gives
+
+::: pf-proof
+
+::: pf-step
+Multiplication by $2$ is injective, so exactness gives
 \[
 H_2(\mathbb{RP}^2)=0.
 \]
-<2>2. The map $(1,-1)$ is injective, so the preceding connecting map is zero. Hence
+
+:::
+
+::: pf-step
+The map $(1,-1)$ is injective, so the preceding connecting map is zero. Hence
 \[
 H_1(\mathbb{RP}^2)
 \cong\operatorname{coker}(\mathbb Z\xrightarrow{2}\mathbb Z)
 \cong\mathbb Z/2.
 \]
 
-<1>4. Since $\mathbb{RP}^2$ is connected,
+:::
+
+:::
+
+:::
+
+::: pf-step
+Since $\mathbb{RP}^2$ is connected,
 \[
 H_0(\mathbb{RP}^2)\cong\mathbb Z,
 \]
@@ -82,4 +106,9 @@ H_k(\mathbb{RP}^2;\mathbb Z)\cong
 0,&k\ge2.
 \end{cases}
 \]
+
+:::
+
+:::
+
 :::

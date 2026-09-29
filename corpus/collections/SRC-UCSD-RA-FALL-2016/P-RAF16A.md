@@ -32,43 +32,92 @@ Prove that $\mathcal{A}$ consists exactly of $\varnothing$, $X$, and all finite 
 :::
 
 ::: {.solution}
-<1>1. Definition of the candidate family $\mathcal{F}$:
-<2>1. Let $\mathcal{F}$ denote the collection of all arbitrary unions of members of the partition:
+
+::: pf
+
+::: pf-step
+Definition of the candidate family $\mathcal{F}$:
+
+::: pf-proof
+
+::: pf-step
+Let $\mathcal{F}$ denote the collection of all arbitrary unions of members of the partition:
 \[
 \mathcal{F} = \left\{ \bigcup_{j \in J} A_j \;\middle|\; J \subseteq \mathbb{N} \right\},
 \]
 with the conventions $\bigcup_{j \in \emptyset} A_j = \emptyset$ and $\bigcup_{j \in \mathbb{N}} A_j = X$.
+:::
 
-<1>2. Proof that $\mathcal{F}$ is a $\sigma$-algebra:
-<2>1. $\emptyset \in \mathcal{F}$ (for $J = \emptyset$) and $X \in \mathcal{F}$ (for $J = \mathbb{N}$).
-<2>2. Let $E = \bigcup_{j \in J} A_j \in \mathcal{F}$ for some $J \subseteq \mathbb{N}$.
+:::
+
+:::
+
+::: pf-step
+Proof that $\mathcal{F}$ is a $\sigma$-algebra:
+
+::: pf-proof
+
+::: pf-step
+$\emptyset \in \mathcal{F}$ (for $J = \emptyset$) and $X \in \mathcal{F}$ (for $J = \mathbb{N}$).
+:::
+
+::: pf-step
+Let $E = \bigcup_{j \in J} A_j \in \mathcal{F}$ for some $J \subseteq \mathbb{N}$.
 Because the sets $\{A_i\}_{i=1}^\infty$ form a partition of $X$ (pairwise disjoint and covering $X$), the complement in $X$ is:
 \[
 X \setminus E = X \setminus \left( \bigcup_{j \in J} A_j \right) = \bigcup_{j \in \mathbb{N} \setminus J} A_j.
 \]
 Since $\mathbb{N} \setminus J \subseteq \mathbb{N}$, $X \setminus E \in \mathcal{F}$.
-<2>3. Let $\{E_n\}_{n=1}^\infty \subseteq \mathcal{F}$ be a countable sequence, with $E_n = \bigcup_{j \in J_n} A_j$ where $J_n \subseteq \mathbb{N}$.
+:::
+
+::: pf-step
+Let $\{E_n\}_{n=1}^\infty \subseteq \mathcal{F}$ be a countable sequence, with $E_n = \bigcup_{j \in J_n} A_j$ where $J_n \subseteq \mathbb{N}$.
 Then:
 \[
 \bigcup_{n=1}^\infty E_n = \bigcup_{n=1}^\infty \left( \bigcup_{j \in J_n} A_j \right) = \bigcup_{j \in \bigcup_{n=1}^\infty J_n} A_j.
 \]
 Since $\bigcup_{n=1}^\infty J_n \subseteq \mathbb{N}$, the countable union belongs to $\mathcal{F}$.
-<2>4. Thus $\mathcal{F}$ is a $\sigma$-algebra on $X$.
+:::
 
-<1>3. Proof that $\mathcal{A} = \mathcal{F}$:
-<2>1. For each $k \in \mathbb{N}$, $A_k = \bigcup_{j \in \{k\}} A_j \in \mathcal{F}$, so $\mathcal{F}$ is a $\sigma$-algebra containing all $A_i$.
+::: pf-step
+Thus $\mathcal{F}$ is a $\sigma$-algebra on $X$.
+:::
+
+:::
+
+:::
+
+::: pf-step
+Proof that $\mathcal{A} = \mathcal{F}$:
+
+::: pf-proof
+
+::: pf-step
+For each $k \in \mathbb{N}$, $A_k = \bigcup_{j \in \{k\}} A_j \in \mathcal{F}$, so $\mathcal{F}$ is a $\sigma$-algebra containing all $A_i$.
 Since $\mathcal{A} = \sigma(A_1, A_2, \ldots)$ is the smallest $\sigma$-algebra containing all $A_i$, we have:
 \[
 \mathcal{A} \subseteq \mathcal{F}.
 \]
-<2>2. Conversely, let $E \in \mathcal{F}$, so $E = \bigcup_{j \in J} A_j$ for some $J \subseteq \mathbb{N}$.
+:::
+
+::: pf-step
+Conversely, let $E \in \mathcal{F}$, so $E = \bigcup_{j \in J} A_j$ for some $J \subseteq \mathbb{N}$.
 Since $J$ is a subset of $\mathbb{N}$, $J$ is at most countable.
 Because $\mathcal{A}$ contains each $A_j$ and is closed under countable unions:
 \[
 E = \bigcup_{j \in J} A_j \in \mathcal{A}.
 \]
 Thus $\mathcal{F} \subseteq \mathcal{A}$.
+:::
 
-<1>4. Conclusion:
-$\mathcal{A} = \mathcal{F} = \{ \bigcup_{j \in J} A_j \mid J \subseteq \mathbb{N} \}$, which consists of $\emptyset$, $X$, and all finite or countably infinite unions of the partition elements $A_j$. Q.E.D.
+:::
+
+:::
+
+::: pf-qed
+Conclusion:
+$\mathcal{A} = \mathcal{F} = \{ \bigcup_{j \in J} A_j \mid J \subseteq \mathbb{N} \}$, which consists of $\emptyset$, $X$, and all finite or countably infinite unions of the partition elements $A_j$.
+:::
+
+:::
 :::

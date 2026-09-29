@@ -45,9 +45,12 @@ M(d)_n=M_{n+d},\qquad
 $$
 All graded-module morphisms in this solution have degree zero.
 
-<1>1. The maps $\alpha_d$ form a natural graded $S$-linear homomorphism, proving part (a).
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+The maps $\alpha_d$ form a natural graded $S$-linear homomorphism, proving part (a).
+
+::: pf-proof
 For $m\in M_d$, the element $m/1$ lies in the degree-zero part of $M(d)_f$ for every homogeneous $f\in S$ of positive degree.
 These elements agree after further localization, so they define a global section of $\widetilde{M(d)}$.
 Since $S$ is generated in degree one, the opens $D_+(f)$ with $f\in S_1$ cover $X$.
@@ -62,9 +65,12 @@ Thus the direct sum $\alpha_M=\bigoplus_d\alpha_d$ is graded $S$-linear.
 The construction also commutes with every graded homomorphism $M\to N$, proving naturality.
 :::
 
-<1>2. Under the hypotheses of part (b), $\alpha_d$ is an isomorphism for every sufficiently large $d$.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+Under the hypotheses of part (b), $\alpha_d$ is an isomorphism for every sufficiently large $d$.
+
+::: pf-proof
 The rings $A$ and $S$ are noetherian by the Hilbert basis theorem.
 Choose a finite set of degree-one generators of $S$ over $A$, giving a graded surjection
 $$
@@ -101,12 +107,15 @@ $$
 is an isomorphism for $q\ge0$ [@Har10a, Theorem III.5.1].
 For $r=0$ this is the identification $Ax_0^q\cong A$ on $\Spec A$.
 Consequently $M_d$ and $\Gamma(X,\widetilde M(d))$ are cokernels of the same map $(F_1)_d\to(F_0)_d$.
-Naturality from step <1>1 identifies the induced isomorphism with $\alpha_d$.
+Naturality from step [](#s1){.pf-ref} identifies the induced isomorphism with $\alpha_d$.
 :::
 
-<1>3. The category in part (c) is realized by morphisms defined on sufficiently high truncations.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+The category in part (c) is realized by morphisms defined on sufficiently high truncations.
+
+::: pf-proof
 Let $\mathcal Q$ have quasi-finitely generated graded $S$-modules as objects and set
 $$
 \Hom_{\mathcal Q}(M,N)
@@ -131,9 +140,12 @@ Hence sheafification defines a functor $T:\mathcal Q\to\operatorname{Coh}(X)$.
 It takes values in [[D-QNTZY|coherent]] sheaves because an object of $\mathcal Q$ has a truncation isomorphic to a truncation of a finite module, and $S$ is noetherian.
 :::
 
-<1>4. For every [[D-QNTZY|coherent]] sheaf $\mcf$ on $X$, the graded module $\Gamma_*(\mcf)$ is quasi-finitely generated.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+For every [[D-QNTZY|coherent]] sheaf $\mcf$ on $X$, the graded module $\Gamma_*(\mcf)$ is quasi-finitely generated.
+
+::: pf-proof
 By [[T-MODSERRE|Serre generation]], choose a surjection
 $$
 \mathcal E=\bigoplus_{j=1}^t\OO_X(-a_j)\longrightarrow\mcf
@@ -142,17 +154,23 @@ with [[D-QNTZY|coherent]] kernel $\mathcal K$ [@Har10a, Theorem II.5.17].
 By [[T-COHSVAN|Serre vanishing]], $H^1(X,\mathcal K(d))=0$ for all sufficiently large $d$.
 Thus $\Gamma_*(\mathcal E)_{\ge d_0}\to\Gamma_*(\mcf)_{\ge d_0}$ is surjective for a suitable $d_0$.
 Set $F=\bigoplus_j S(-a_j)$.
-Step <1>2 identifies $\Gamma_*(\mathcal E)_{\ge d_0}$ with $F_{\ge d_0}$ after increasing $d_0$.
+Step [](#s2){.pf-ref} identifies $\Gamma_*(\mathcal E)_{\ge d_0}$ with $F_{\ge d_0}$ after increasing $d_0$.
 The latter is a finite $S$-module because it is a submodule of the finite module $F$ over the noetherian ring $S$.
 Its quotient $\Gamma_*(\mcf)_{\ge d_0}$ is finite as well.
 This is precisely quasi-finite generation.
 :::
 
-<1>5. The canonical evaluation morphism $\beta_{\mcf}:\widetilde{\Gamma_*(\mcf)}\to\mcf$ is a natural isomorphism for every [[D-QNTZY|coherent]] $\mcf$.
+:::
 
-<2>1. Evaluation defines a natural morphism, and it is an isomorphism for finite sums of twists of $\OO_X$.
+::: {.pf-step #s5}
+The canonical evaluation morphism $\beta_{\mcf}:\widetilde{\Gamma_*(\mcf)}\to\mcf$ is a natural isomorphism for every [[D-QNTZY|coherent]] $\mcf$.
 
-::: {.proof}
+::: pf-proof
+
+::: {.pf-step #s5-1}
+Evaluation defines a natural morphism, and it is an isomorphism for finite sums of twists of $\OO_X$.
+
+::: pf-proof
 On a standard affine open $D_+(f)$ with $f\in S_1$, define the evaluation map by
 $$
 s/f^n\longmapsto s|_{D_+(f)}\otimes f^{-n},
@@ -168,28 +186,34 @@ $$
 \widetilde{\Gamma_*(\widetilde N)}\xrightarrow{\beta_{\widetilde N}}\widetilde N
 $$
 is the identity, by evaluation on the same fractions.
-When $N$ is finite graded free, $\alpha_N$ is an isomorphism in high degrees by step <1>2, so $\widetilde{\alpha_N}$ is an isomorphism by step <1>3.
+When $N$ is finite graded free, $\alpha_N$ is an isomorphism in high degrees by step [](#s2){.pf-ref}, so $\widetilde{\alpha_N}$ is an isomorphism by step [](#s3){.pf-ref}.
 Hence $\beta_{\widetilde N}$ is its inverse.
 :::
 
-<2>2. Evaluation is surjective for every [[D-QNTZY|coherent]] sheaf.
+:::
 
-::: {.proof}
-Choose a surjection $\mathcal E\to\mcf$ with $\mathcal E$ a finite sum of twists, as in step <1>4.
+::: {.pf-step #s5-2}
+Evaluation is surjective for every [[D-QNTZY|coherent]] sheaf.
+
+::: pf-proof
+Choose a surjection $\mathcal E\to\mcf$ with $\mathcal E$ a finite sum of twists, as in step [](#s4){.pf-ref}.
 Naturality identifies the composite
 $$
 \widetilde{\Gamma_*(\mathcal E)}\longrightarrow
 \widetilde{\Gamma_*(\mcf)}\xrightarrow{\beta_{\mcf}}\mcf
 $$
 with $\widetilde{\Gamma_*(\mathcal E)}\xrightarrow{\beta_{\mathcal E}}\mathcal E\to\mcf$.
-The latter is surjective because $\beta_{\mathcal E}$ is an isomorphism by step <2>1.
+The latter is surjective because $\beta_{\mathcal E}$ is an isomorphism by step [](#s5-1){.pf-ref}.
 Thus $\beta_{\mcf}$ is surjective.
 :::
 
-<2>3. Evaluation is injective for every [[D-QNTZY|coherent]] sheaf.
+:::
 
-::: {.proof}
-Let $0\to\mathcal K\to\mathcal E\to\mcf\to0$ be the sequence from step <1>4.
+::: {.pf-step #s5-3}
+Evaluation is injective for every [[D-QNTZY|coherent]] sheaf.
+
+::: pf-proof
+Let $0\to\mathcal K\to\mathcal E\to\mcf\to0$ be the sequence from step [](#s4){.pf-ref}.
 The vanishing used there makes the sequence of graded section modules exact after sufficiently high truncation.
 Sheafification is exact and ignores those truncations, giving
 $$
@@ -199,39 +223,46 @@ $$
 $$
 At a stalk, lift an element of $\ker\beta_{\mcf}$ to $e$ in the middle term.
 Its image under $\beta_{\mathcal E}$ belongs to $\mathcal K$.
-By step <2>2, this element of $\mathcal K$ lifts under $\beta_{\mathcal K}$.
+By step [](#s5-2){.pf-ref}, this element of $\mathcal K$ lifts under $\beta_{\mathcal K}$.
 Subtract its image from $e$.
 The difference maps to zero under the isomorphism $\beta_{\mathcal E}$, so it is zero.
 Thus the original element of $\widetilde{\Gamma_*(\mcf)}$ was zero.
 Evaluation is injective on every stalk, hence injective.
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Step <2>1 constructs the natural morphism; steps <2>2 and <2>3 prove that it is an isomorphism.
 :::
 
-<1>6. The functors $T$ and $G:\mcf\mapsto\Gamma_*(\mcf)$ are inverse equivalences, proving part (c).
+::: pf-qed
+Step [](#s5-1){.pf-ref} constructs the natural morphism; steps [](#s5-2){.pf-ref} and [](#s5-3){.pf-ref} prove that it is an isomorphism.
+:::
 
-::: {.proof}
-Step <1>4 makes $G$ a functor from $\operatorname{Coh}(X)$ to $\mathcal Q$, and step <1>5 gives a natural isomorphism $TG\cong\operatorname{id}$.
+:::
+
+:::
+
+::: {.pf-step #s6}
+The functors $T$ and $G:\mcf\mapsto\Gamma_*(\mcf)$ are inverse equivalences, proving part (c).
+
+::: pf-proof
+Step [](#s4){.pf-ref} makes $G$ a functor from $\operatorname{Coh}(X)$ to $\mathcal Q$, and step [](#s5){.pf-ref} gives a natural isomorphism $TG\cong\operatorname{id}$.
 For $M\in\mathcal Q$, choose $e$ with $M_{\ge e}$ finite.
-Step <1>2 applied to $M_{\ge e}$, together with the naturality of $\alpha$ for $M_{\ge e}\to M$, shows that $\alpha_M$ is an isomorphism in all sufficiently large degrees.
+Step [](#s2){.pf-ref} applied to $M_{\ge e}$, together with the naturality of $\alpha$ for $M_{\ge e}\to M$, shows that $\alpha_M$ is an isomorphism in all sufficiently large degrees.
 Thus $\alpha$ gives a natural isomorphism $\operatorname{id}_{\mathcal Q}\cong GT$.
 
 Explicitly, a sheaf morphism $\theta:\widetilde M\to\widetilde N$ corresponds to the class represented in high degrees by
 $$
 (\alpha_N)^{-1}\circ\Gamma_*(\theta)\circ\alpha_M.
 $$
-Its sheafification is $\theta$ by the naturality of $\beta$ and the identity $\beta_{\widetilde M}\circ\widetilde{\alpha_M}=\operatorname{id}$ proved in step <2>1 of step <1>5.
+Its sheafification is $\theta$ by the naturality of $\beta$ and the identity $\beta_{\widetilde M}\circ\widetilde{\alpha_M}=\operatorname{id}$ proved in step [](#s5-1){.pf-ref} of step [](#s5){.pf-ref}.
 Conversely, naturality of $\alpha$ recovers any morphism between truncations from its sheafification by this formula after increasing the truncation degree.
 Therefore the correspondence also identifies all morphisms, not only objects.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves part (a), step <1>2 proves part (b), and steps <1>3--<1>6 construct and prove the equivalence in part (c).
+::: pf-qed
+Step [](#s1){.pf-ref} proves part (a), step [](#s2){.pf-ref} proves part (b), and steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, and [](#s6){.pf-ref} construct and prove the equivalence in part (c).
+:::
+
 :::
 :::

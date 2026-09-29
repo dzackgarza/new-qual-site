@@ -37,13 +37,16 @@ $$
 
 ::: {.solution}
 Take a finite-free $A$-module resolution $P_\bullet\to M$ and an injective resolution $\widetilde N\to I^\bullet$ in $\Mod(X)$.
-The first resolution exists because $M$ is finite and $A$ is noetherian, as in [[P-AGH363EXTCOHERENT]], step <1>1.
+The first resolution exists because $M$ is finite and $A$ is noetherian, as in [[P-AGH363EXTCOHERENT]], step 1.
 The second exists by [@Har10a, Proposition III.2.2].
 Write $L_p=\widetilde P_p$ and $b_p=\operatorname{rank}_A P_p$.
 
-<1>1. The sheaf-Ext comparison in the statement holds.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+The sheaf-Ext comparison in the statement holds.
+
+::: pf-proof
 The sheafified resolution $L_\bullet\to\widetilde M$ is exact and has finite-rank free terms.
 It computes sheaf Ext by [@Har10a, Proposition III.6.5].
 The natural identifications
@@ -58,17 +61,20 @@ $$
 \cong\widetilde{H^i(\Hom_A(P_\bullet,N))}
 =\widetilde{\Ext_A^i(M,N)},
 $$
-as proved in [[P-AGH363EXTCOHERENT]], step <1>2.
+as proved in [[P-AGH363EXTCOHERENT]], step 2.
 This applies to arbitrary $N$.
 :::
 
-<1>2. The first-quadrant double complex
+:::
+
+::: {.pf-step #s2}
+The first-quadrant double complex
 $$
 C^{p,q}=\Hom_X(L_p,I^q),\qquad p,q\ge0,
 $$
 has total cohomology $\Ext_X^i(\widetilde M,\widetilde N)$.
 
-::: {.proof}
+::: pf-proof
 Its horizontal differential is precomposition with the differential of $L_\bullet$, and its vertical differential is postcomposition with that of $I^\bullet$.
 Use total differential $d_h+(-1)^p d_v$ on $C^{p,q}$.
 The two component operations commute, so this total differential squares to zero.
@@ -89,9 +95,12 @@ The comparison is induced by the augmentation $L_\bullet\to\widetilde M$.
 Each total degree involves finitely many terms, so the first-quadrant comparison has no convergence or infinite-product qualification.
 :::
 
-<1>3. The same total complex has cohomology $\Ext_A^i(M,N)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+The same total complex has cohomology $\Ext_A^i(M,N)$.
+
+::: pf-proof
 For a fixed $p$, the vertical column is
 $$
 \Hom_X(L_p,I^\bullet)=\Gamma(X,I^\bullet)^{\oplus b_p}.
@@ -112,13 +121,15 @@ $$
 This comparison is induced by $\widetilde N\to I^\bullet$.
 :::
 
-<1>4. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves the sheaf formula, and steps <1>2--<1>3 identify global sheaf Ext with module Ext.
+::: pf-qed
+Step [](#s1){.pf-ref} proves the sheaf formula, and steps [](#s2){.pf-ref} and [](#s3){.pf-ref} identify global sheaf Ext with module Ext.
 All comparison maps arise from the augmentations and the natural Hom identifications.
 Maps of modules lift to comparison maps of their resolutions, uniquely up to chain homotopy [@Har10a, Chapter III, §1].
 Those comparison maps commute with these constructions, and homotopic choices induce the same maps on cohomology.
 Thus the isomorphisms are natural in $M$ and $N$ and independent of the chosen resolutions.
+:::
+
 :::
 :::

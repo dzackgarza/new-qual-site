@@ -40,8 +40,12 @@ Set
 Y=X\cup CA.
 \]
 
-<1>1. If there is a retraction $r:Y\to X$, then $A$ is contractible in $X$.
-::: {.proof}
+::: pf
+
+::: pf-step
+If there is a retraction $r:Y\to X$, then $A$ is contractible in $X$.
+
+::: pf-proof
 Parametrize the cone as
 \[
 CA=A\times[0,1]/(A\times\{1\}),
@@ -57,8 +61,12 @@ f_0(a)=a.
 At $t=1$ all points $[a,1]$ are the cone vertex, so $f_1$ is constant. Thus $f_t$ contracts the inclusion $A\hookrightarrow X$ to a constant map inside $X$.
 :::
 
-<1>2. Conversely, if the inclusion $A\hookrightarrow X$ is homotopic in $X$ to a constant map, then $X$ is a retract of $Y$.
-::: {.proof}
+:::
+
+::: pf-step
+Conversely, if the inclusion $A\hookrightarrow X$ is homotopic in $X$ to a constant map, then $X$ is a retract of $Y$.
+
+::: pf-proof
 Let
 \[
 f_t:A\to X,
@@ -73,15 +81,25 @@ r([a,t])=f_t(a)
 on $CA$. This is well defined at the cone vertex because $f_1$ is constant, and the two definitions agree along $A=A\times\{0\}$. Hence $r$ is a continuous retraction.
 :::
 
+:::
+
+::: pf-qed
 This proves part (a).
+:::
+
+:::
 
 Assume now that $A$ is contractible in $X$, so the retraction exists.
 
-<1>3. The pair $(Y,X)$ has
+::: pf
+
+::: {.pf-step #s3}
+The pair $(Y,X)$ has
 \[
 H_n(Y,X)\cong\widetilde H_n(Y/X)\cong\widetilde H_n(SA)\cong\widetilde H_{n-1}(A).
 \]
-::: {.proof}
+
+::: pf-proof
 Collapsing $X$ in $Y=X\cup CA$ leaves
 \[
 CA/A=SA.
@@ -89,12 +107,16 @@ CA/A=SA.
 The quotient theorem for relative homology and the suspension isomorphism give the displayed identifications.
 :::
 
-<1>4. The retraction splits the long exact sequence of $(Y,X)$, giving
+:::
+
+::: {.pf-step #s4}
+The retraction splits the long exact sequence of $(Y,X)$, giving
 \[
 \widetilde H_n(Y)\cong
 \widetilde H_n(X)\oplus\widetilde H_{n-1}(A).
 \]
-::: {.proof}
+
+::: pf-proof
 The inclusion $i:X\hookrightarrow Y$ has a left inverse $r$, so $i_*$ is injective in every degree. Hence the connecting map
 \[
 H_n(Y,X)\to H_{n-1}(X)
@@ -104,14 +126,18 @@ has zero image, and the long exact sequence breaks into short exact sequences
 0\to\widetilde H_n(X)\xrightarrow{i_*}\widetilde H_n(Y)
 \to H_n(Y,X)\to0.
 \]
-The map $r_*$ splits these sequences. Apply <1>3.
+The map $r_*$ splits these sequences. Apply step [](#s3){.pf-ref}.
 :::
 
-<1>5. There is a natural isomorphism
+:::
+
+::: {.pf-step #s5}
+There is a natural isomorphism
 \[
 H_n(X,A)\cong\widetilde H_n(Y).
 \]
-::: {.proof}
+
+::: pf-proof
 The cone $CA$ is contractible. Excision identifies
 \[
 H_n(X,A)\cong H_n(Y,CA).
@@ -123,8 +149,15 @@ H_n(Y,CA)\cong\widetilde H_n(Y)
 (with the standard reduced interpretation in degree $0$).
 :::
 
-Combining <1>4 and <1>5 yields
+:::
+
+::: pf-step
+Combining steps [](#s4){.pf-ref} and [](#s5){.pf-ref} yields
 \[
 \boxed{H_n(X,A)\cong\widetilde H_n(X)\oplus\widetilde H_{n-1}(A).}
 \]
+:::
+
+:::
+
 :::

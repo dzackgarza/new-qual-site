@@ -40,9 +40,12 @@ Show that $\inverseof{p} (U )$ is connected if and only if the homomorphism $i_\
 ::: {.solution}
 Fix $x_0\in U$ and $\widetilde x_0\in p^{-1}(x_0)$.
 
-<1>1. The set $U$ is path-connected, and $p^{-1}(U)$ is locally path-connected.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+The set $U$ is path-connected, and $p^{-1}(U)$ is locally path-connected.
+
+::: pf-proof
 Every surface is locally path-connected.
 Since $U$ is an open subset of a surface, it is locally path-connected as well.
 In a locally path-connected space, path components are open.
@@ -51,7 +54,10 @@ Because $U$ is connected, it therefore has only one path component.
 The set $p^{-1}(U)$ is open in the surface $\widetilde S$, hence is locally path-connected by the same argument.
 :::
 
-<1>2. Lifting loops from $x_0$ gives a bijection
+:::
+
+::: {.pf-step #s2}
+Lifting loops from $x_0$ gives a bijection
 \[
 \Phi:\pi_1(S,x_0)\longrightarrow p^{-1}(x_0),
 \qquad
@@ -59,7 +65,7 @@ The set $p^{-1}(U)$ is open in the surface $\widetilde S$, hence is locally path
 \]
 where $\widetilde\gamma$ is the lift of $\gamma$ beginning at $\widetilde x_0$.
 
-::: {.proof}
+::: pf-proof
 The endpoint depends only on the homotopy class of $\gamma$ by homotopy lifting.
 
 For surjectivity, let $\widetilde y\in p^{-1}(x_0)$.
@@ -80,12 +86,15 @@ Thus
 in $\pi_1(S,x_0)$.
 :::
 
-<1>3. For $g\in\pi_1(S,x_0)$, the fiber point $\Phi(g)$ lies in the same path component of $p^{-1}(U)$ as $\widetilde x_0$ if and only if
+:::
+
+::: {.pf-step #s3}
+For $g\in\pi_1(S,x_0)$, the fiber point $\Phi(g)$ lies in the same path component of $p^{-1}(U)$ as $\widetilde x_0$ if and only if
 \[
 g\in\operatorname{im} i_*.
 \]
 
-::: {.proof}
+::: pf-proof
 Suppose first that $g=i_*([\alpha])$ for a loop $\alpha$ in $U$ based at $x_0$.
 The lift of $\alpha$ from $\widetilde x_0$ stays in $p^{-1}(U)$ and ends at $\Phi(g)$.
 Hence $\Phi(g)$ and $\widetilde x_0$ lie in the same path component.
@@ -96,32 +105,38 @@ By construction,
 \[
 \Phi(i_*[\alpha])=\Phi(g).
 \]
-The injectivity in <1>2 gives
+The injectivity in step [](#s2){.pf-ref} gives
 \[
 i_*[\alpha]=g.
 \]
 Thus $g\in\operatorname{im}i_*$.
 :::
 
-<1>4. If $p^{-1}(U)$ is connected, then $i_*$ is surjective.
+:::
 
-::: {.proof}
-By <1>1, the locally path-connected space $p^{-1}(U)$ is path-connected whenever it is connected.
+::: {.pf-step #s4}
+If $p^{-1}(U)$ is connected, then $i_*$ is surjective.
+
+::: pf-proof
+By step [](#s1){.pf-ref}, the locally path-connected space $p^{-1}(U)$ is path-connected whenever it is connected.
 Hence every point of the fiber $p^{-1}(x_0)$ lies in the same path component as $\widetilde x_0$.
 
 Let $g\in\pi_1(S,x_0)$.
-By <1>2, $\Phi(g)$ is a point of this fiber, so <1>3 gives
+By step [](#s2){.pf-ref}, $\Phi(g)$ is a point of this fiber, so step [](#s3){.pf-ref} gives
 \[
 g\in\operatorname{im}i_*.
 \]
 Thus every element of $\pi_1(S,x_0)$ lies in the image of $i_*$.
 :::
 
-<1>5. If $i_*$ is surjective, then $p^{-1}(U)$ is path-connected, hence connected.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+If $i_*$ is surjective, then $p^{-1}(U)$ is path-connected, hence connected.
+
+::: pf-proof
 Let $\widetilde y\in p^{-1}(U)$ and set $y=p(\widetilde y)$.
-By <1>1, choose a path
+By step [](#s1){.pf-ref}, choose a path
 \[
 \alpha:[0,1]\to U
 \]
@@ -131,20 +146,28 @@ Its endpoint is some
 \[
 \widetilde z\in p^{-1}(x_0).
 \]
-By <1>2 there is a unique $g\in\pi_1(S,x_0)$ with $\Phi(g)=\widetilde z$.
+By step [](#s2){.pf-ref} there is a unique $g\in\pi_1(S,x_0)$ with $\Phi(g)=\widetilde z$.
 Surjectivity of $i_*$ gives a loop $\beta$ in $U$ based at $x_0$ such that
 \[
 i_*[\beta]=g.
 \]
-By <1>3, the lift of $\beta$ from $\widetilde x_0$ is a path in $p^{-1}(U)$ from $\widetilde x_0$ to $\widetilde z$.
+By step [](#s3){.pf-ref}, the lift of $\beta$ from $\widetilde x_0$ is a path in $p^{-1}(U)$ from $\widetilde x_0$ to $\widetilde z$.
 
 The reverse of the lifted path $\alpha$ joins $\widetilde z$ to $\widetilde y$ inside $p^{-1}(U)$.
 Concatenating these two paths gives a path from $\widetilde x_0$ to $\widetilde y$.
 Since $\widetilde y$ was arbitrary, $p^{-1}(U)$ is path-connected.
 :::
 
-Combining <1>4 and <1>5 proves
+:::
+
+::: pf-step
+Combining step [](#s4){.pf-ref} and step [](#s5){.pf-ref} proves
 \[
 \boxed{p^{-1}(U)\text{ is connected}\iff i_*:\pi_1(U,x_0)\to\pi_1(S,x_0)\text{ is surjective}.}
 \]
+
+:::
+
+:::
+
 :::

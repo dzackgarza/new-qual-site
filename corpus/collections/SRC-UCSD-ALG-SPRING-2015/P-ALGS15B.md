@@ -35,60 +35,107 @@ Show that $R$ is isomorphic as a ring to a direct product of finitely many field
 ::: {.solution}
 **(a).**
 
-<1>1. $A = F[x]/(f)$, so $K \otimes_F A = K \otimes_F (F[x]/(f))$.
-::: {.proof}
+::: pf
+
+::: pf-step
+$A = F[x]/(f)$, so $K \otimes_F A = K \otimes_F (F[x]/(f))$.
+
+::: pf-proof
 definition of $A$.
 :::
 
-<1>2. $K \otimes_F F[x] \cong K[x]$ (tensoring the polynomial ring with $K$ gives the polynomial ring over $K$).
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s2}
+$K \otimes_F F[x] \cong K[x]$ (tensoring the polynomial ring with $K$ gives the polynomial ring over $K$).
+
+::: pf-proof
 $K \otimes_F F[x] \cong K[x]$ via $k \otimes x^n \mapsto k x^n$.
 :::
 
-<1>3. $K \otimes_F (F[x]/(f)) \cong (K \otimes_F F[x])/(K \otimes_F (f)) \cong K[x]/(f)$.
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s3}
+$K \otimes_F (F[x]/(f)) \cong (K \otimes_F F[x])/(K \otimes_F (f)) \cong K[x]/(f)$.
+
+::: pf-proof
 tensor product is right-exact, so $K \otimes_F (F[x]/(f)) \cong (K \otimes_F F[x])/(\operatorname{im}(K \otimes_F (f)))$, and the image of $(f)$ is the ideal $(f)$ in $K[x]$.
 :::
 
-<1>4. Hence $K \otimes_F A \cong K[x]/(f)$ as $F$-algebras.
-::: {.proof}
-<1>2 and <1>3.
+:::
+
+::: {.pf-step #p1-s4}
+Hence $K \otimes_F A \cong K[x]/(f)$ as $F$-algebras.
+
+::: pf-proof
+step [](#p1-s2){.pf-ref} and step [](#p1-s3){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(b).**
 
-<1>1. $F_1 = F(\alpha) \cong F[x]/(m_\alpha)$ and $F_2 = F(\beta) \cong F[x]/(m_\beta)$, where $m_\alpha, m_\beta$ are the minimal polynomials.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p2-s1}
+$F_1 = F(\alpha) \cong F[x]/(m_\alpha)$ and $F_2 = F(\beta) \cong F[x]/(m_\beta)$, where $m_\alpha, m_\beta$ are the minimal polynomials.
+
+::: pf-proof
 simple algebraic extensions.
 :::
 
-<1>2. $R = F_1 \otimes_F F_2 \cong F[x]/(m_\alpha) \otimes_F F[x]/(m_\beta) \cong F_1[x]/(m_\beta)$.
-::: {.proof}
-<1>1 and part (a) (with $K = F_1$, $f = m_\beta$).
 :::
 
-<1>3. Over $F_1$, the polynomial $m_\beta$ factors as $m_\beta = p_1^{e_1} \cdots p_r^{e_r}$ into distinct irreducibles $p_i$ (with $e_i = 1$ since $\operatorname{char} F = 0$ implies separability).
-::: {.proof}
+::: pf-step
+$R = F_1 \otimes_F F_2 \cong F[x]/(m_\alpha) \otimes_F F[x]/(m_\beta) \cong F_1[x]/(m_\beta)$.
+
+::: pf-proof
+step [](#p2-s1){.pf-ref} and part (a) (with $K = F_1$, $f = m_\beta$).
+:::
+
+:::
+
+::: {.pf-step #p2-s3}
+Over $F_1$, the polynomial $m_\beta$ factors as $m_\beta = p_1^{e_1} \cdots p_r^{e_r}$ into distinct irreducibles $p_i$ (with $e_i = 1$ since $\operatorname{char} F = 0$ implies separability).
+
+::: pf-proof
 $m_\beta$ is separable (characteristic $0$), so it has no repeated irreducible factors.
 :::
 
-<1>4. By the Chinese remainder theorem, $F_1[x]/(m_\beta) \cong \prod_{i=1}^{r} F_1[x]/(p_i)$.
-::: {.proof}
-<1>3 (the $p_i$ are pairwise coprime).
 :::
 
-<1>5. Each $F_1[x]/(p_i)$ is a field (since $p_i$ is irreducible).
-::: {.proof}
+::: {.pf-step #p2-s4}
+By the Chinese remainder theorem, $F_1[x]/(m_\beta) \cong \prod_{i=1}^{r} F_1[x]/(p_i)$.
+
+::: pf-proof
+step [](#p2-s3){.pf-ref} (the $p_i$ are pairwise coprime).
+:::
+
+:::
+
+::: {.pf-step #p2-s5}
+Each $F_1[x]/(p_i)$ is a field (since $p_i$ is irreducible).
+
+::: pf-proof
 quotient of a polynomial ring by an irreducible polynomial is a field.
 :::
 
-<1>6. Hence $R \cong \prod_{i=1}^{r} F_1[x]/(p_i)$ is a direct product of finitely many fields.
-::: {.proof}
-<1>4 and <1>5.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>4 (a) and <1>6 (b).
+::: {.pf-step #p2-s6}
+Hence $R \cong \prod_{i=1}^{r} F_1[x]/(p_i)$ is a direct product of finitely many fields.
+
+::: pf-proof
+step [](#p2-s4){.pf-ref} and step [](#p2-s5){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+step [](#p1-s4){.pf-ref} (a) and step [](#p2-s6){.pf-ref} (b).
+:::
+
 :::
 :::

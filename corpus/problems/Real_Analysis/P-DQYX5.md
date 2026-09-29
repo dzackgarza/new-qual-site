@@ -41,44 +41,60 @@ c. In parts:
 
 (b)
 
-<1>1. Fix $\eps > 0$ and choose $R$ with $\int_{|y| \ge R}|f| < \eps$ and $\int_{|y| \ge R}|g| < \eps$. Then $\int_{|y| \ge R}|f(x-y)||g(y)|\,dy \le \|f\|_\infty\eps$ for every $x$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #p1-1}
+Fix $\eps > 0$ and choose $R$ with $\int_{|y| \ge R}|f| < \eps$ and $\int_{|y| \ge R}|g| < \eps$. Then $\int_{|y| \ge R}|f(x-y)||g(y)|\,dy \le \|f\|_\infty\eps$ for every $x$.
+
+::: pf-proof
 $R$ exists by dominated convergence, since $|f|\chi_{\theset{|y| \ge R}} \to 0$ pointwise as $R \to \infty$ with dominating function $|f|$, and likewise for $g$. The bound uses $|f| \le \|f\|_\infty$.
 :::
 
-<1>2. For $|x| \ge 2R$, $\int_{|y| < R}|f(x-y)||g(y)|\,dy \le \|g\|_\infty\eps$.
+:::
 
-::: {.proof}
+::: {.pf-step #p1-2}
+For $|x| \ge 2R$, $\int_{|y| < R}|f(x-y)||g(y)|\,dy \le \|g\|_\infty\eps$.
+
+::: pf-proof
 If $|y| < R$ and $|x| \ge 2R$, then $|x - y| \ge R$. Substituting $z = x - y$ gives $\int_{|y| < R}|f(x-y)||g(y)|\,dy \le \|g\|_\infty\int_{|z| \ge R}|f(z)|\,dz$.
 :::
 
-<1>3. Q.E.D.
+:::
 
-::: {.proof}
-By steps <1>1 and <1>2, $|(f\ast g)(x)| \le (\|f\|_\infty + \|g\|_\infty)\eps$ for $|x| \ge 2R$.
+::: pf-qed
+By steps [](#p1-1){.pf-ref} and [](#p1-2){.pf-ref}, $|(f\ast g)(x)| \le (\|f\|_\infty + \|g\|_\infty)\eps$ for $|x| \ge 2R$.
+:::
+
 :::
 
 (c)1. For $f \in L^1(\RR^n)$, $\hat f(\xi) = \int_{\RR^n} f(x)\,e^{-2\pi i x \cdot \xi}\,dx$. The integral converges absolutely because $|f(x)e^{-2\pi i x\cdot\xi}| = |f(x)|$.
 
 (c)2. Let $f \in L^1$ with $\hat f \in L^1$. Then $f(x) = \int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for a.e. $x$.
 
-<1>1. For $\phi(x) = e^{-\pi|x|^2}$ and $\phi_t(x) = t^{-n}\phi(x/t)$, $\widehat{\phi_t}(\xi) = e^{-\pi t^2|\xi|^2}$ and $\int \widehat{\phi_t}(\xi) e^{2\pi i x\cdot\xi}\,d\xi = \phi_t(x)$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #p2-1}
+For $\phi(x) = e^{-\pi|x|^2}$ and $\phi_t(x) = t^{-n}\phi(x/t)$, $\widehat{\phi_t}(\xi) = e^{-\pi t^2|\xi|^2}$ and $\int \widehat{\phi_t}(\xi) e^{2\pi i x\cdot\xi}\,d\xi = \phi_t(x)$.
+
+::: pf-proof
 In one variable, $\hat\phi$ and $\phi$ both solve $u' = -2\pi\xi u$ with $u(0) = 1$, the first by differentiating under the integral and integrating by parts; so $\hat\phi = \phi$. The $n$-variable case factors, and the formulas for $\phi_t$ follow by scaling.
 :::
 
-<1>2. $\int \hat f(\xi)\,\widehat{\phi_t}(\xi)\,e^{2\pi i x\cdot\xi}\,d\xi = (f \ast \phi_t)(x)$ for every $x$.
-
-::: {.proof}
-Insert $\hat f(\xi) = \int f(y)e^{-2\pi i y\cdot\xi}\,dy$. The double integral converges absolutely, so Fubini's theorem and step <1>1 give $\int f(y)\,\phi_t(x - y)\,dy$.
 :::
 
-<1>3. Q.E.D.
+::: {.pf-step #p2-2}
+$\int \hat f(\xi)\,\widehat{\phi_t}(\xi)\,e^{2\pi i x\cdot\xi}\,d\xi = (f \ast \phi_t)(x)$ for every $x$.
 
-::: {.proof}
-As $t \to 0$, the left side of step <1>2 tends to $\int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for every $x$, by dominated convergence with dominating function $|\hat f|$, since $\widehat{\phi_t} \to 1$ pointwise and $|\widehat{\phi_t}| \leq 1$. The right side tends to $f$ in $L^1$, because $\phi_t$ is an approximate identity; so a subsequence converges to $f$ a.e. The two limits agree a.e.
+::: pf-proof
+Insert $\hat f(\xi) = \int f(y)e^{-2\pi i y\cdot\xi}\,dy$. The double integral converges absolutely, so Fubini's theorem and step [](#p2-1){.pf-ref} give $\int f(y)\,\phi_t(x - y)\,dy$.
+:::
+
+:::
+
+::: pf-qed
+As $t \to 0$, the left side of step [](#p2-2){.pf-ref} tends to $\int \hat f(\xi) e^{2\pi i x\cdot\xi}\,d\xi$ for every $x$, by dominated convergence with dominating function $|\hat f|$, since $\widehat{\phi_t} \to 1$ pointwise and $|\widehat{\phi_t}| \leq 1$. The right side tends to $f$ in $L^1$, because $\phi_t$ is an approximate identity; so a subsequence converges to $f$ a.e. The two limits agree a.e.
+:::
+
 :::
 
 (c)3. For $n = 1$, $f = \chi_{[-1,1]}$ is in $L^1$ and $\hat f(\xi) = \frac{\sin 2\pi\xi}{\pi\xi} \notin L^1(\RR)$.

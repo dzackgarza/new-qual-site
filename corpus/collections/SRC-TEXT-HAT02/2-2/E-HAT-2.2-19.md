@@ -58,18 +58,29 @@ d_i=
 \]
 while $d_{m+1}=0$ because its target chain group has been collapsed away.
 
-<1>1. If $n=m+1$, then
+::: pf
+
+::: {.pf-step #s1}
+If $n=m+1$, then
 \[
 \widetilde H_n(Y)\cong\mathbb Z
 \]
 and all other reduced homology groups vanish.
-::: {.proof}
+
+::: pf-proof
 There is a single nonzero reduced cellular chain group, in degree $n$, and both adjacent boundary maps are zero.
+:::
+
+:::
+
 :::
 
 Assume henceforth that $n\ge m+2$.
 
-<1>2. In the bottom degree $m+1$,
+::: pf
+
+::: {.pf-step #s2}
+In the bottom degree $m+1$,
 \[
 \widetilde H_{m+1}(Y)\cong
 \begin{cases}
@@ -77,11 +88,15 @@ Assume henceforth that $n\ge m+2$.
 \mathbb Z_2,&m+1\text{ odd}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 The outgoing differential is zero. The incoming differential is $d_{m+2}$, which is zero when $m+2$ is odd and multiplication by $2$ when $m+2$ is even. These are exactly the two displayed cases.
 :::
 
-<1>3. For $m+1<i<n$,
+:::
+
+::: {.pf-step #s3}
+For $m+1<i<n$,
 \[
 \widetilde H_i(Y)\cong
 \begin{cases}
@@ -89,14 +104,18 @@ The outgoing differential is zero. The incoming differential is $d_{m+2}$, which
 0,&i\text{ even}.
 \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 If $i$ is even, $d_i=2$ is injective, so there are no cycles. If $i$ is odd, $d_i=0$ and $d_{i+1}=2$, giving
 \[
 H_i\cong\mathbb Z/2\mathbb Z.
 \]
 :::
 
-<1>4. In the top degree $n$,
+:::
+
+::: {.pf-step #s4}
+In the top degree $n$,
 \[
 \widetilde H_n(Y)\cong
 \begin{cases}
@@ -105,13 +124,21 @@ H_i\cong\mathbb Z/2\mathbb Z.
 \end{cases}
 \qquad(n>m+1).
 \]
-::: {.proof}
+
+::: pf-proof
 There is no incoming boundary from degree $n+1$. Thus top homology is $\ker d_n$, which is $\mathbb Z$ for odd $n$ and $0$ for even $n$.
 :::
 
+:::
+
+::: pf-step
 Finally $Y$ is connected, so
 \[
 H_0(Y)\cong\mathbb Z.
 \]
-Together <1>1--<1>4 give all homology groups of $\mathbb{RP}^n/\mathbb{RP}^m$.
+Together steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref} and [](#s4){.pf-ref} give all homology groups of $\mathbb{RP}^n/\mathbb{RP}^m$.
+:::
+
+:::
+
 :::

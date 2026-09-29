@@ -25,14 +25,19 @@ Find the standard matrix for the linear transformation $T : \mathbb{R}^2 \to \ma
 
 
 ::: {.solution}
-<1>1. The vectors
+
+::: pf
+
+::: pf-step
+The vectors
 \[
 \ell=\begin{pmatrix}1\\2\end{pmatrix},
 \qquad
 p=\begin{pmatrix}2\\-1\end{pmatrix}
 \]
 form a basis of $\mathbb R^2$, with $\ell\in L$ and $p\in P$.
-::: {.proof}
+
+::: pf-proof
 The vector $p$ satisfies $2+2(-1)=0$, so $p\in P$. Also
 \[
 \det\begin{pmatrix}1&2\\2&-1\end{pmatrix}=-5\ne0,
@@ -40,14 +45,18 @@ The vector $p$ satisfies $2+2(-1)=0$, so $p\in P$. Also
 so $\ell,p$ are linearly independent.
 :::
 
-<1>2. Every vector $(x,y)^t$ has a unique decomposition
+:::
+
+::: pf-step
+Every vector $(x,y)^t$ has a unique decomposition
 \[
 \begin{pmatrix}x\\y\end{pmatrix}
 =a\ell+bp,
 \qquad
 b=\frac{2x-y}{5}.
 \]
-::: {.proof}
+
+::: pf-proof
 The equations are
 \[
 x=a+2b,\qquad y=2a-b.
@@ -59,15 +68,20 @@ y=2x-5b,
 so $b=(2x-y)/5$.
 :::
 
-<1>3. Since $T$ vanishes on $L$ and is the identity on $P$,
+:::
+
+::: {.pf-step #s3}
+Since $T$ vanishes on $L$ and is the identity on $P$,
 \[
 T\begin{pmatrix}x\\y\end{pmatrix}
 =b p
 =\frac{2x-y}{5}\begin{pmatrix}2\\-1\end{pmatrix}.
 \]
+
 :::
 
-<1>4. Therefore the standard matrix of $T$ is
+::: pf-step
+Therefore the standard matrix of $T$ is
 \[
 \boxed{
 [T]=\frac15
@@ -76,10 +90,17 @@ T\begin{pmatrix}x\\y\end{pmatrix}
 -2&1
 \end{pmatrix}.}
 \]
-::: {.proof}
-Expanding <1>3 gives
+
+::: pf-proof
+Expanding step [](#s3){.pf-ref} gives
 \[
 T(x,y)=\left(\frac{4x-2y}{5},\frac{-2x+y}{5}\right),
 \]
 whose coefficient matrix is the displayed matrix.
+:::
+
+:::
+
+:::
+
 :::

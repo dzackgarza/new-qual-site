@@ -46,8 +46,12 @@ We treat the three polynomials separately.
 
 ## (i) $f(X)=X^3-3X+1$
 
-<1>1. The cubic is irreducible over $\mathbb Q$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The cubic is irreducible over $\mathbb Q$.
+
+::: pf-proof
 By the rational-root theorem, any rational root of the monic polynomial $f$
 must be $\pm1$. But
 $$
@@ -62,8 +66,12 @@ $$
 $$
 :::
 
-<1>2. All three roots are real, and the discriminant is a square.
-::: {.proof}
+:::
+
+::: pf-step
+All three roots are real, and the discriminant is a square.
+
+::: pf-proof
 The derivative is
 $$
 f'(x)=3(x^2-1).
@@ -94,8 +102,12 @@ $$
 $$
 :::
 
-<1>3. The splitting field has degree $3$ and Galois group $C_3$.
-::: {.proof}
+:::
+
+::: pf-step
+The splitting field has degree $3$ and Galois group $C_3$.
+
+::: pf-proof
 Because $f$ is irreducible of degree three, its Galois group is a transitive
 subgroup of $S_3$. The discriminant is a square in $\mathbb Q$, so the
 Galois group lies in $A_3$. The only transitive subgroup of $A_3$ is $A_3$
@@ -118,8 +130,12 @@ The group $C_3$ is abelian, hence solvable, so this Galois extension is
 solvable and the polynomial is solvable by radicals.
 :::
 
-<1>4. There are no nontrivial proper intermediate fields, hence no nontrivial proper normal ones.
-::: {.proof}
+:::
+
+::: pf-step
+There are no nontrivial proper intermediate fields, hence no nontrivial proper normal ones.
+
+::: pf-proof
 The Galois group $C_3$ has only the subgroups
 $$
 1
@@ -135,10 +151,18 @@ $$
 Both are normal over $\mathbb Q$.
 :::
 
+:::
+
+:::
+
 ## (ii) $g(X)=X^5-20X+4$
 
-<1>5. The quintic is irreducible over $\mathbb Q$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The quintic is irreducible over $\mathbb Q$.
+
+::: pf-proof
 Translate the variable by one:
 $$
 \begin{aligned}
@@ -156,8 +180,12 @@ $$
 $$
 :::
 
-<1>6. The polynomial has exactly three real roots.
-::: {.proof}
+:::
+
+::: {.pf-step #s6}
+The polynomial has exactly three real roots.
+
+::: pf-proof
 We have
 $$
 g'(x)=5x^4-20=5(x^4-4).
@@ -183,8 +211,12 @@ $$
 Hence it has exactly three real roots and one nonreal conjugate pair.
 :::
 
-<1>7. The Galois group is $S_5$.
-::: {.proof}
+:::
+
+::: pf-step
+The Galois group is $S_5$.
+
+::: pf-proof
 Irreducibility makes the Galois group
 $$
 G\le S_5
@@ -195,7 +227,7 @@ $$
 $$
 so Cauchy's theorem gives an element of order $5$, necessarily a $5$-cycle.
 
-Complex conjugation acts on the roots. By step <1>6 it fixes the three real
+Complex conjugation acts on the roots. By step [](#s6){.pf-ref} it fixes the three real
 roots and swaps the two nonreal roots, so its action is a transposition.
 Thus $G$ contains both a $5$-cycle and a transposition.
 
@@ -212,9 +244,13 @@ $$
 $$
 :::
 
-<1>8. This splitting field is neither real nor solvable.
-::: {.proof}
-The splitting field contains the nonreal roots from step <1>6, so
+:::
+
+::: pf-step
+This splitting field is neither real nor solvable.
+
+::: pf-proof
+The splitting field contains the nonreal roots from step [](#s6){.pf-ref}, so
 $$
 \boxed{E\not\subseteq\mathbb R.}
 $$
@@ -233,8 +269,12 @@ $$
 and the quintic is not solvable by radicals.
 :::
 
-<1>9. The only intermediate fields normal over $\mathbb Q$ are $\mathbb Q$, the quadratic discriminant field, and $E$.
-::: {.proof}
+:::
+
+::: pf-step
+The only intermediate fields normal over $\mathbb Q$ are $\mathbb Q$, the quadratic discriminant field, and $E$.
+
+::: pf-proof
 The normal subgroups of $S_5$ are
 $$
 1,
@@ -275,10 +315,18 @@ $$
 $$
 :::
 
+:::
+
+:::
+
 ## (iii) $h(X)=X^7-2$
 
-<1>10. The polynomial is irreducible over $\mathbb Q$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The polynomial is irreducible over $\mathbb Q$.
+
+::: pf-proof
 All nonleading coefficients of
 $$
 X^7-2
@@ -290,8 +338,12 @@ $$
 $$
 :::
 
-<1>11. Describe the splitting field and compute its degree.
-::: {.proof}
+:::
+
+::: {.pf-step #s11}
+Describe the splitting field and compute its degree.
+
+::: pf-proof
 Let
 $$
 \alpha=2^{1/7}>0
@@ -324,8 +376,12 @@ $$
 $$
 :::
 
-<1>12. The Galois group is the faithful semidirect product $C_7\rtimes C_6$.
-::: {.proof}
+:::
+
+::: pf-step
+The Galois group is the faithful semidirect product $C_7\rtimes C_6$.
+
+::: pf-proof
 Define
 $$
 \sigma(\alpha)=\zeta\alpha,
@@ -334,7 +390,7 @@ $$
 $$
 Then $\sigma$ has order $7$.
 
-Since the two subfields in step <1>11 have trivial intersection, the
+Since the two subfields in step [](#s11){.pf-ref} have trivial intersection, the
 automorphism of $\mathbb Q(\zeta)$ defined by
 $$
 \zeta\longmapsto\zeta^3
@@ -370,8 +426,12 @@ where a generator of $C_6$ acts on $C_7$ by multiplication by $3$ modulo
 $7$.
 :::
 
-<1>13. The extension is solvable but not contained in $\mathbb R$.
-::: {.proof}
+:::
+
+::: pf-step
+The extension is solvable but not contained in $\mathbb R$.
+
+::: pf-proof
 The normal subgroup
 $$
 \langle\sigma\rangle\cong C_7
@@ -390,8 +450,12 @@ $$
 $$
 :::
 
-<1>14. Classify all intermediate fields normal over $\mathbb Q$.
-::: {.proof}
+:::
+
+::: pf-step
+Classify all intermediate fields normal over $\mathbb Q$.
+
+::: pf-proof
 Put
 $$
 N=\langle\sigma\rangle\cong C_7.
@@ -459,4 +523,9 @@ The cubic field is the maximal real subfield of $\mathbb Q(\zeta_7)$, fixed
 by complex conjugation, and $\mathbb Q(\sqrt{-7})$ is its unique quadratic
 subfield.
 :::
+
+:::
+
+:::
+
 :::

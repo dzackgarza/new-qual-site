@@ -29,8 +29,12 @@ Show that homotopy equivalence defines an equivalence relation on spaces.
 ::: {.solution}
 Write $X\simeq Y$ when there is a homotopy equivalence $f:X\to Y$.
 
-<1>1. The relation is reflexive.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+The relation is reflexive.
+
+::: pf-proof
 For every space $X$, the identity map $\operatorname{id}_X:X\to X$ is a homotopy equivalence: it is its own inverse, and
 \[
 \operatorname{id}_X\circ \operatorname{id}_X=\operatorname{id}_X.
@@ -38,8 +42,12 @@ For every space $X$, the identity map $\operatorname{id}_X:X\to X$ is a homotopy
 Hence $X\simeq X$.
 :::
 
-<1>2. The relation is symmetric.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+The relation is symmetric.
+
+::: pf-proof
 Suppose $X\simeq Y$. Then there are maps
 \[
 f:X\to Y,
@@ -55,8 +63,12 @@ f\circ g\simeq \operatorname{id}_Y.
 The same two homotopies say precisely that $g$ is a homotopy equivalence with homotopy inverse $f$. Therefore $Y\simeq X$.
 :::
 
-<1>3. The relation is transitive.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+The relation is transitive.
+
+::: pf-proof
 Suppose $X\simeq Y$ and $Y\simeq Z$. Choose homotopy equivalences
 \[
 f:X\to Y,
@@ -97,5 +109,9 @@ Similarly,
 Therefore $h\circ f$ is a homotopy equivalence, so $X\simeq Z$.
 :::
 
-By <1>1--<1>3, homotopy equivalence is reflexive, symmetric, and transitive, hence an equivalence relation on spaces.
+:::
+
+:::
+
+By steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref}, homotopy equivalence is reflexive, symmetric, and transitive, hence an equivalence relation on spaces.
 :::

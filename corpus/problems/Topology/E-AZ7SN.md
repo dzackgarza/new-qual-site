@@ -24,41 +24,84 @@ Show that if $f:X\to \RR$ and $X$ is compact then $f$ is bounded and attains its
 ::: {.solution}
 **Goal:** Show that if $f: X \to \RR$ is continuous and $X$ is compact, then $f$ is bounded and attains its minimum and maximum.
 
-<1>1. $f(X)$ is compact in $\RR$.
-::: {.proof}
+::: pf
+
+::: pf-step
+$f(X)$ is compact in $\RR$.
+
+::: pf-proof
 Continuous image of the compact space $X$.
 :::
 
-<1>2. $f(X)$ is closed and bounded.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+$f(X)$ is closed and bounded.
+
+::: pf-proof
 Compact subsets of $\RR$ are closed and bounded (Heine--Borel).
 :::
 
-<1>3. $f$ is bounded.
-::: {.proof}
-$f(X)$ bounded (<1>2) means $f$ is bounded above and below.
 :::
 
-<1>4. $f$ attains its supremum.
-<2>1. $\sup f(X)$ is finite.
-::: {.proof}
-$f(X)$ is bounded above (<1>2). <2>2. $\sup f(X) \in f(X)$.
+::: {.pf-step #s3}
+$f$ is bounded.
+
+::: pf-proof
+$f(X)$ bounded (step [](#s2){.pf-ref}) means $f$ is bounded above and below.
 :::
-::: {.proof}
-$f(X)$ is closed (<1>2), and the supremum of a bounded set lies in its closure; since the set is closed, the supremum belongs to it.
+
 :::
-<2>3. Some $x_{\max} \in X$ satisfies $f(x_{\max}) = \max f$.
-::: {.proof}
+
+::: {.pf-step #s4}
+$f$ attains its supremum.
+
+::: pf-proof
+
+::: pf-step
+$\sup f(X)$ is finite.
+
+::: pf-proof
+$f(X)$ is bounded above (step [](#s2){.pf-ref}).
+:::
+
+:::
+
+::: pf-step
+$\sup f(X) \in f(X)$.
+
+::: pf-proof
+$f(X)$ is closed (step [](#s2){.pf-ref}), and the supremum of a bounded set lies in its closure; since the set is closed, the supremum belongs to it.
+:::
+
+:::
+
+::: pf-step
+Some $x_{\max} \in X$ satisfies $f(x_{\max}) = \max f$.
+
+::: pf-proof
 $\sup f(X) \in f(X)$ means $\sup f(X) = f(x_{\max})$ for some $x_{\max} \in X$.
 :::
 
-<1>5. $f$ attains its infimum.
-::: {.proof}
-Same argument as <1>4 with $\inf$ in place of $\sup$ (or apply <1>4 to $-f$).
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>3 gives boundedness; <1>4 and <1>5 give attainment of max and min.
 :::
+
+:::
+
+::: {.pf-step #s5}
+$f$ attains its infimum.
+
+::: pf-proof
+Same argument as step [](#s4){.pf-ref} with $\inf$ in place of $\sup$ (or apply step [](#s4){.pf-ref} to $-f$).
+:::
+
+:::
+
+::: pf-qed
+step [](#s3){.pf-ref} gives boundedness; step [](#s4){.pf-ref} and step [](#s5){.pf-ref} give attainment of max and min.
+:::
+
+:::
+
 :::

@@ -25,28 +25,57 @@ Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is a
 ::: {.solution}
 **Goal:** Prove that if $z \mapsto f(z)$ is analytic on a domain $\Omega$, then $z \mapsto \overline{f(\bar z)}$ is analytic on $\overline{\Omega} \definedas \theset{\bar z \suchthat z \in \Omega}$.
 
-<1>1. Fix $z_0 \in \Omega$; near $z_0$, $f$ has a convergent power series $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+Fix $z_0 \in \Omega$; near $z_0$, $f$ has a convergent power series $f(z) = \sum_{n=0}^{\infty} a_n (z - z_0)^n$.
+
+::: pf-proof
 Analytic functions are locally representable by power series (Taylor expansion).
 :::
 
-<1>2. Compute $\overline{f(\bar z)}$ for $z$ near $\bar z_0$.
-<2>1. $\overline{f(\bar z)} = \sum_{n=0}^{\infty} \bar a_n (z - \bar z_0)^n$.
-::: {.proof}
-Substitute $\bar z$ for $z$ in <1>1 and conjugate termwise: $\overline{a_n(\bar z - z_0)^n} = \bar a_n \overline{(\bar z - z_0)}^n = \bar a_n (z - \bar z_0)^n$.
-:::
-<2>2. The series $\sum \bar a_n (z - \bar z_0)^n$ converges for $\abs{z - \bar z_0} < r$, where $r$ is the radius of convergence of <1>1.
-::: {.proof}
-$\abs{z - \bar z_0} = \abs{\bar z - z_0}$, so the set of convergence is the mirror image of that of <1>1.
 :::
 
-<1>3. $g(z) := \overline{f(\bar z)}$ is analytic at $\bar z_0$.
-::: {.proof}
-<1>2.1 gives a power series representation of $g$ centered at $\bar z_0$ with positive radius of convergence, which characterizes analyticity.
+::: pf-step
+Compute $\overline{f(\bar z)}$ for $z$ near $\bar z_0$.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+$\overline{f(\bar z)} = \sum_{n=0}^{\infty} \bar a_n (z - \bar z_0)^n$.
+
+::: pf-proof
+Substitute $\bar z$ for $z$ in step [](#s1){.pf-ref} and conjugate termwise: $\overline{a_n(\bar z - z_0)^n} = \bar a_n \overline{(\bar z - z_0)}^n = \bar a_n (z - \bar z_0)^n$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
+:::
+
+::: pf-step
+The series $\sum \bar a_n (z - \bar z_0)^n$ converges for $\abs{z - \bar z_0} < r$, where $r$ is the radius of convergence of step [](#s1){.pf-ref}.
+
+::: pf-proof
+$\abs{z - \bar z_0} = \abs{\bar z - z_0}$, so the set of convergence is the mirror image of that of step [](#s1){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+$g(z) := \overline{f(\bar z)}$ is analytic at $\bar z_0$.
+
+::: pf-proof
+step [](#s2-1){.pf-ref} gives a power series representation of $g$ centered at $\bar z_0$ with positive radius of convergence, which characterizes analyticity.
+:::
+
+:::
+
+::: pf-qed
 $\bar z_0$ was an arbitrary point of $\overline{\Omega}$, so $g$ is analytic throughout $\overline{\Omega}$.
 :::
+
+:::
+
 :::

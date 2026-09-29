@@ -39,13 +39,16 @@ The [[D-5PQ5W|Cartier class group]] means Cartier divisors modulo principal Cart
 We construct its degree map and an explicit isomorphism $\operatorname{CaCl}^0(X)\cong k^\times$.
 We then identify the associated group variety with $\GG_m$.
 
-<1>1. The normalization of $X$ is $\PP_k^1$, with parameter $t=y/x$ and map
+::: pf
+
+::: {.pf-step #s1}
+The normalization of $X$ is $\PP_k^1$, with parameter $t=y/x$ and map
 $$
 \nu([u:v])=[v(u^2-v^2):u(u^2-v^2):v^3].
 $$
 The two points over $N$ are $t=1,-1$, and $\nu(\infty)=O$.
 
-::: {.proof}
+::: pf-proof
 On $z=1$ the equation is $y^2=x^2(x+1)$, and the parametrization is
 $$
 x=t^2-1,\qquad y=t(t^2-1).
@@ -72,10 +75,13 @@ The point $O$ is smooth since the $z$-derivative there is $1$.
 At $N$ the tangent cone is $(y-x)(y+x)$, with distinct factors, so it is a node.
 :::
 
-<1>2. A rational function $f\in k(t)$ is a unit at $N$ if and only if it is regular and nonzero at $t=\pm1$ and $f(1)=f(-1)$.
+:::
 
-::: {.proof}
-For the affine ring of step <1>1,
+::: {.pf-step #s2}
+A rational function $f\in k(t)$ is a unit at $N$ if and only if it is regular and nonzero at $t=\pm1$ and $f(1)=f(-1)$.
+
+::: pf-proof
+For the affine ring of step [](#s1){.pf-ref},
 $$
 A=k+(t^2-1)k[t]=\{a(t)\in k[t]:a(1)=a(-1)\}.
 $$
@@ -96,25 +102,31 @@ $$
 If the common value is nonzero, the same argument applies to $1/f$, proving the unit criterion.
 :::
 
-<1>3. Every Cartier class has a representative supported on $U$, and the sum of its point coefficients defines a degree homomorphism $\operatorname{CaCl}(X)\to\ZZ$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+Every Cartier class has a representative supported on $U$, and the sum of its point coefficients defines a degree homomorphism $\operatorname{CaCl}(X)\to\ZZ$.
+
+::: pf-proof
 For a Cartier divisor $D$, choose its rational local equation $f$ on a neighborhood of $N$.
 Subtracting the principal Cartier divisor of $f$ makes its local equation $1$ there.
 Since $U$ is smooth, the resulting divisor is a finite sum $\sum_P n_P[P]$ of points of $U$.
 Conversely, each point of $U$ defines a Cartier divisor on $X$, with local equation $1$ near $N$.
 
 Two such divisors represent the same Cartier class precisely when their difference is the divisor on $U$ of a rational function that is a unit at $N$.
-By step <1>2, this function has no zero or pole at either point over $N$.
+By step [](#s2){.pf-ref}, this function has no zero or pole at either point over $N$.
 Its divisor on $\PP^1$ is therefore supported on $U$ and has total degree zero.
 It follows that $\sum_P n_P$ depends only on the Cartier class and is additive.
 This degree map is surjective since $[O]$ has degree one.
 Its kernel is the stated group $\operatorname{CaCl}^0(X)$, as in [@Har10a, Example II.6.11.4].
 :::
 
-<1>4. Taking the ratio of the two branch values gives an isomorphism $\Phi:\operatorname{CaCl}^0(X)\to k^\times$.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+Taking the ratio of the two branch values gives an isomorphism $\Phi:\operatorname{CaCl}^0(X)\to k^\times$.
+
+::: pf-proof
 Represent a degree-zero Cartier class by a divisor $D$ supported on $U$ and regard $D$ as a divisor on $\PP^1$.
 There is a rational function $F_D$ with $\operatorname{div}_{\PP^1}(F_D)=D$.
 Explicitly, if the coefficients at finite parameters $a$ are $n_a$, take
@@ -129,9 +141,9 @@ $$
 $$
 
 Changing $F_D$ multiplies it by a nonzero constant, which does not change the ratio: a rational function on $\PP^1$ with zero divisor is constant by factoring its numerator and denominator.
-Changing $D$ by the divisor of a unit at $N$ also leaves the ratio unchanged, by step <1>2.
+Changing $D$ by the divisor of a unit at $N$ also leaves the ratio unchanged, by step [](#s2){.pf-ref}.
 Multiplication of the functions proves that $\Phi$ is a homomorphism.
-If $\Phi(\operatorname{cl}D)=1$, then $F_D$ has equal nonzero branch values and is a unit at $N$ by step <1>2.
+If $\Phi(\operatorname{cl}D)=1$, then $F_D$ has equal nonzero branch values and is a unit at $N$ by step [](#s2){.pf-ref}.
 Thus $D$ is principal as a Cartier divisor on $X$, proving injectivity.
 
 For the point $P_a=\nu(a)$, where $a\in k\setminus\{1,-1\}$, take $D=[P_a]-[O]$ and $F_D=t-a$.
@@ -144,10 +156,13 @@ The value $1$ is obtained from the zero class, represented by $[O]-[O]$.
 This proves surjectivity and the group isomorphism.
 :::
 
-<1>5. The multiplicative coordinate realizes the isomorphism as one of group varieties.
+:::
 
-::: {.proof}
-The map $P\mapsto\operatorname{cl}([P]-[O])$ from $U(k)$ to $\operatorname{CaCl}^0(X)$ is a bijection by step <1>4: its composite with $\Phi$ is
+::: {.pf-step #s5}
+The multiplicative coordinate realizes the isomorphism as one of group varieties.
+
+::: pf-proof
+The map $P\mapsto\operatorname{cl}([P]-[O])$ from $U(k)$ to $\operatorname{CaCl}^0(X)$ is a bijection by step [](#s4){.pf-ref}: its composite with $\Phi$ is
 $$
 \boxed{\lambda=\frac{t-1}{t+1},\qquad \lambda(O)=1}.
 $$
@@ -162,15 +177,17 @@ They transport multiplication on $\GG_m$ to the group law induced by Cartier cla
 In particular, the group law and inversion on $U$ are morphisms, and $\operatorname{CaCl}^0(X)$, realized by $U$ as in Example II.6.11.4, is the group variety $\GG_m$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>3 constructs the degree-zero Cartier class group, step <1>4 gives its branch-ratio isomorphism with $k^\times$, and step <1>5 gives the corresponding isomorphism of group varieties.
+::: pf-qed
+Step [](#s3){.pf-ref} constructs the degree-zero Cartier class group, step [](#s4){.pf-ref} gives its branch-ratio isomorphism with $k^\times$, and step [](#s5){.pf-ref} gives the corresponding isomorphism of group varieties.
+:::
+
 :::
 :::
 
 ::: {.remark}
-The distinction between divisors and divisor classes is essential: the relation imposed in step <1>3 is precisely the quotient by principal Cartier divisors.
+The distinction between divisors and divisor classes is essential: the relation imposed in step [](#s3){.pf-ref} is precisely the quotient by principal Cartier divisors.
 The two branches must also be distinct; in characteristic two the tangent cone is a repeated line, so this equation does not define a nodal cubic.
 Interchanging the two branches replaces $\lambda$ by $\lambda^{-1}$.
 :::

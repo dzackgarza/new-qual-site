@@ -58,80 +58,144 @@ $$
 ::: {.solution}
 **(a).**
 
-<1>1. The conformal map $G$ from the strip $\{0 < \operatorname{Im} z < 1\}$ to the unit disk sends $z = iy$ to $G(iy) = r e^{i\theta}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The conformal map $G$ from the strip $\{0 < \operatorname{Im} z < 1\}$ to the unit disk sends $z = iy$ to $G(iy) = r e^{i\theta}$.
+
+::: pf-proof
 setup from Section 1.3.
 :::
 
-<1>2. $G(iy) = i \frac{\cos \pi y}{1 + \sin \pi y}$.
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s2}
+$G(iy) = i \frac{\cos \pi y}{1 + \sin \pi y}$.
+
+::: pf-proof
 the explicit formula for the strip-to-disk map evaluated on the imaginary axis.
 :::
 
-<1>3. For $0 < y \le 1/2$, $\cos \pi y \ge 0$ and $1 + \sin \pi y > 0$, so $G(iy)$ is purely imaginary with positive imaginary part, giving $\theta = \pi/2$.
-::: {.proof}
-<1>2, reading off the argument.
 :::
 
-<1>4. For $1/2 \le y < 1$, $\cos \pi y \le 0$, so $G(iy)$ is purely imaginary with negative imaginary part, giving $\theta = -\pi/2$.
-::: {.proof}
-<1>2.
+::: pf-step
+For $0 < y \le 1/2$, $\cos \pi y \ge 0$ and $1 + \sin \pi y > 0$, so $G(iy)$ is purely imaginary with positive imaginary part, giving $\theta = \pi/2$.
+
+::: pf-proof
+Step [](#p1-s2){.pf-ref}, reading off the argument.
 :::
 
-<1>5. $r^2 = |G(iy)|^2 = \frac{\cos^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin \pi y}{1 + \sin \pi y}$.
-::: {.proof}
-<1>2 and $\cos^2 = 1 - \sin^2$.
 :::
 
-<1>6. The Poisson kernel is $P_r(\theta - \varphi) = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2}$.
-::: {.proof}
+::: pf-step
+For $1/2 \le y < 1$, $\cos \pi y \le 0$, so $G(iy)$ is purely imaginary with negative imaginary part, giving $\theta = -\pi/2$.
+
+::: pf-proof
+Step [](#p1-s2){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p1-s5}
+$r^2 = |G(iy)|^2 = \frac{\cos^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin^2 \pi y}{(1 + \sin \pi y)^2} = \frac{1 - \sin \pi y}{1 + \sin \pi y}$.
+
+::: pf-proof
+Step [](#p1-s2){.pf-ref} and $\cos^2 = 1 - \sin^2$.
+:::
+
+:::
+
+::: {.pf-step #p1-s6}
+The Poisson kernel is $P_r(\theta - \varphi) = \frac{1 - r^2}{1 - 2r\cos(\theta - \varphi) + r^2}$.
+
+::: pf-proof
 definition of the Poisson kernel.
 :::
 
-<1>7. Substituting $r^2 = \frac{1 - \sin \pi y}{1 + \sin \pi y}$ and $\theta = \pm \pi/2$ (so $\cos(\theta - \varphi) = \pm \sin \varphi$), one obtains
+:::
+
+::: {.pf-step #p1-s7}
+Substituting $r^2 = \frac{1 - \sin \pi y}{1 + \sin \pi y}$ and $\theta = \pm \pi/2$ (so $\cos(\theta - \varphi) = \pm \sin \varphi$), one obtains
 $$P_r(\theta - \varphi) = \frac{\sin \pi y}{1 - \cos \pi y \sin \varphi}.$$
-::: {.proof}
-<1>5 and <1>6, simplifying the resulting expression.
+
+::: pf-proof
+Step [](#p1-s5){.pf-ref} and step [](#p1-s6){.pf-ref}, simplifying the resulting expression.
+:::
+
+:::
+
 :::
 
 **(b).**
 
-<1>1. The change of variables is $t = F(e^{i\varphi})$, where $F$ is the inverse of the map $t \mapsto \frac{i - e^{\pi t}}{i + e^{\pi t}}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The change of variables is $t = F(e^{i\varphi})$, where $F$ is the inverse of the map $t \mapsto \frac{i - e^{\pi t}}{i + e^{\pi t}}$.
+
+::: pf-proof
 setup.
 :::
 
-<1>2. $e^{i\varphi} = \frac{i - e^{\pi t}}{i + e^{\pi t}}$.
-::: {.proof}
+:::
+
+::: {.pf-step #p2-s2}
+$e^{i\varphi} = \frac{i - e^{\pi t}}{i + e^{\pi t}}$.
+
+::: pf-proof
 given.
 :::
 
-<1>3. Taking imaginary parts: $\sin \varphi = \operatorname{Im}\left(\frac{i - e^{\pi t}}{i + e^{\pi t}}\right) = \frac{1}{\cosh \pi t}$.
-::: {.proof}
+:::
+
+::: {.pf-step #p2-s3}
+Taking imaginary parts: $\sin \varphi = \operatorname{Im}\left(\frac{i - e^{\pi t}}{i + e^{\pi t}}\right) = \frac{1}{\cosh \pi t}$.
+
+::: pf-proof
 rationalizing the denominator and using $\operatorname{Im}$.
 :::
 
-<1>4. Differentiating <1>2 with respect to $t$ and taking imaginary parts gives $\frac{d\varphi}{dt} = \frac{\pi}{\cosh \pi t}$.
-::: {.proof}
-implicit differentiation of the identity in <1>2.
 :::
 
-<1>5. Substituting <1>3 and <1>4 into the integral, and using $\tilde f_0(\varphi) = f_0(t)$,
+::: {.pf-step #p2-s4}
+Differentiating step [](#p2-s2){.pf-ref} with respect to $t$ and taking imaginary parts gives $\frac{d\varphi}{dt} = \frac{\pi}{\cosh \pi t}$.
+
+::: pf-proof
+implicit differentiation of the identity in step [](#p2-s2){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p2-s5}
+Substituting step [](#p2-s3){.pf-ref} and step [](#p2-s4){.pf-ref} into the integral, and using $\tilde f_0(\varphi) = f_0(t)$,
 $$\frac{1}{2\pi}\int_0^\pi P_r(\theta - \varphi)\tilde f_0(\varphi)\,d\varphi = \frac{\sin \pi y}{2}\int_{-\infty}^{\infty} \frac{f_0(t)}{\cosh \pi t - \cos \pi y}\,dt.$$
-::: {.proof}
-<1>7 (a), <1>3, <1>4, and the change of variables.
+
+::: pf-proof
+Step [](#p1-s7){.pf-ref} (a), step [](#p2-s3){.pf-ref}, step [](#p2-s4){.pf-ref}, and the change of variables.
+:::
+
+:::
+
 :::
 
 **(c).**
 
-<1>1. The same argument with $\theta = -\pi/2$ and $\tilde f_1$ in place of $\tilde f_0$ gives
+::: pf
+
+::: {.pf-step #p3-s1}
+The same argument with $\theta = -\pi/2$ and $\tilde f_1$ in place of $\tilde f_0$ gives
 $$\frac{1}{2\pi}\int_{-\pi}^0 P_r(\theta - \varphi)\tilde f_1(\varphi)\,d\varphi = \frac{\sin \pi y}{2}\int_{-\infty}^{\infty} \frac{f_1(t)}{\cosh \pi t - \cos \pi y}\,dt.$$
-::: {.proof}
+
+::: pf-proof
 identical computation to (b), with the lower half of the circle.
 :::
 
-<1>2. Q.E.D.
-::: {.proof}
-<1>5 (a), <1>5 (b), <1>1 (c).
 :::
+
+::: pf-qed
+Step [](#p1-s5){.pf-ref} (a), step [](#p2-s5){.pf-ref} (b), step [](#p3-s1){.pf-ref} (c).
+:::
+
+:::
+
 :::

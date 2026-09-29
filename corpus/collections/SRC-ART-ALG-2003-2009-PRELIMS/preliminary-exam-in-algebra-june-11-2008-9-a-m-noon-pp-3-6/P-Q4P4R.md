@@ -35,9 +35,12 @@ Hint: show that if $r$ is a root, then $r^2 - 2$ also is a root.
 :::
 
 ::: {.solution}
-<1>1. The Galois group of $x^4+4$ over $\mathbf Q$ is $C_2$.
+::: pf
 
-::: {.proof}
+::: pf-step
+The Galois group of $x^4+4$ over $\mathbf Q$ is $C_2$.
+
+::: pf-proof
 The factorization
 $$
 x^4+4=(x^2-2x+2)(x^2+2x+2)
@@ -50,16 +53,23 @@ $2$ over $\mathbf Q$. Its automorphisms are the identity and complex
 conjugation, giving $C_2$.
 :::
 
-<1>2. The Galois group of $h(x)=x^3+x^2-2x-1$ over $\mathbf Q$ is
+:::
+
+::: pf-step
+The Galois group of $h(x)=x^3+x^2-2x-1$ over $\mathbf Q$ is
 $C_3$, acting cyclically on its roots.
 
-::: {.proof}
-<2>1. The only possible rational roots are $\pm1$, but
+::: pf-proof
+
+::: pf-step
+The only possible rational roots are $\pm1$, but
 $h(1)=-1$ and $h(-1)=1$. A reducible cubic has a linear factor, so
 $h$ is irreducible. If $\alpha$ is any root, then
 $[\mathbf Q(\alpha):\mathbf Q]=3$.
+:::
 
-<2>2. Direct multiplication gives
+::: pf-step
+Direct multiplication gives
 $$
 \begin{aligned}
 h(x^2-2)&=x^6-5x^4+6x^2-1\\
@@ -78,8 +88,10 @@ by the coefficient of $x^2$ in $h$. All three roots are distinct,
 since an irreducible polynomial over a characteristic-zero field is
 separable. Therefore the splitting field is exactly
 $L=\mathbf Q(\alpha)$, of degree $3$ over $\mathbf Q$.
+:::
 
-<2>3. A splitting field in characteristic zero is Galois and its
+::: pf-step
+A splitting field in characteristic zero is Galois and its
 automorphism group has order equal to its degree [@DF04]. Hence
 $\operatorname{Gal}(L/\mathbf Q)$ has order $3$ and is cyclic.
 More explicitly, the isomorphism
@@ -95,5 +107,11 @@ $$
 Thus this automorphism sends $\alpha$ to $\beta$ and $\beta$ to
 $\gamma$; being a permutation of the three roots, it sends $\gamma$
 back to $\alpha$. It is the required generator of $C_3$.
+:::
+
+:::
+
+:::
+
 :::
 :::

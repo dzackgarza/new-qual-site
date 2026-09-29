@@ -23,59 +23,144 @@ Prove $|G| \leq 2$.
 :::
 
 ::: {.solution}
-<1>1. Homology of $S^{2n}$ and the degree map: <2>1. The rational homology groups of the even-dimensional sphere $S^{2n}$ ($n \ge 1$) are:
+
+::: pf
+
+::: {.pf-step #s1}
+Homology of $S^{2n}$ and the degree map:
+
+::: pf-proof
+
+::: pf-step
+The rational homology groups of the even-dimensional sphere $S^{2n}$ ($n \ge 1$) are:
 \[
 H_k(S^{2n}; \mathbb{Q}) \cong \begin{cases} \mathbb{Q} & k = 0, 2n \\ 0 & \text{otherwise}. \end{cases}
 \]
-::: {.proof}
+
+::: pf-proof
 homology of spheres.
 :::
-<2>2. For any homeomorphism $g: S^{2n} \to S^{2n}$, the induced map $g_*: H_0(S^{2n}; \mathbb{Q}) \to H_0(S^{2n}; \mathbb{Q})$ is the identity (trace $1$), and $g_*: H_{2n}(S^{2n}; \mathbb{Q}) \to H_{2n}(S^{2n}; \mathbb{Q})$ is multiplication by $\deg(g) \in \{\pm 1\}$.
-::: {.proof}
+
+:::
+
+::: pf-step
+For any homeomorphism $g: S^{2n} \to S^{2n}$, the induced map $g_*: H_0(S^{2n}; \mathbb{Q}) \to H_0(S^{2n}; \mathbb{Q})$ is the identity (trace $1$), and $g_*: H_{2n}(S^{2n}; \mathbb{Q}) \to H_{2n}(S^{2n}; \mathbb{Q})$ is multiplication by $\deg(g) \in \{\pm 1\}$.
+
+::: pf-proof
 $S^{2n}$ is connected and $g$ is a homeomorphism.
 :::
-<2>3. The map $d: G \to \{\pm 1\}$ given by $d(g) = \deg(g)$ is a group homomorphism.
-::: {.proof}
+
+:::
+
+::: pf-step
+The map $d: G \to \{\pm 1\}$ given by $d(g) = \deg(g)$ is a group homomorphism.
+
+::: pf-proof
 functoriality of induced maps $(g \circ h)_* = g_* \circ h_* \implies \deg(gh) = \deg(g)\deg(h)$.
 :::
 
-<1>2. Compute the Lefschetz number for fixed-point-free homeomorphisms: <2>1. The Lefschetz number of $g$ is defined as:
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+Compute the Lefschetz number for fixed-point-free homeomorphisms:
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+The Lefschetz number of $g$ is defined as:
 \[
 \Lambda(g) = \sum_{k=0}^{2n} (-1)^k \operatorname{tr}\left(g_*|_{H_k(S^{2n}; \mathbb{Q})}\right) = \operatorname{tr}\left(g_*|_{H_0}\right) + (-1)^{2n} \operatorname{tr}\left(g_*|_{H_{2n}}\right) = 1 + \deg(g),
 \]
 since $(-1)^{2n} = 1$ for even dimension $2n$.
-::: {.proof}
-definition of the Lefschetz number and <1>1. <2>2. By hypothesis, the action of $G$ is free, so for every $g \in G \setminus \{1\}$, $g(x) \neq x$ for all $x \in S^{2n}$.
-:::
-::: {.proof}
-freeness of the group action.
-:::
-<2>3. By the Lefschetz Fixed Point Theorem, if $g$ has no fixed points, then $\Lambda(g) = 0$.
-::: {.proof}
-Lefschetz Fixed Point Theorem.
-:::
-<2>4. Thus $1 + \deg(g) = 0 \implies \deg(g) = -1$ for every $g \in G \setminus \{1\}$.
-::: {.proof}
-<2>1 and <2>3.
+
+::: pf-proof
+definition of the Lefschetz number and step [](#s1){.pf-ref}.
 :::
 
-<1>3. Show that $|G| \le 2$: <2>1. By <1>1 and <1>2, the homomorphism $d: G \to \{\pm 1\}$ maps the identity $1 \mapsto 1$ and every non-identity element $g \neq 1 \mapsto -1$.
-::: {.proof}
-$\deg(\operatorname{id}) = 1$ and <2>4. <2>2. Thus $\ker(d) = \{1\}$, which means $d$ is an injective group homomorphism.
 :::
-::: {.proof}
+
+::: pf-step
+By hypothesis, the action of $G$ is free, so for every $g \in G \setminus \{1\}$, $g(x) \neq x$ for all $x \in S^{2n}$.
+
+::: pf-proof
+freeness of the group action.
+:::
+
+:::
+
+::: {.pf-step #s2-3}
+By the Lefschetz Fixed Point Theorem, if $g$ has no fixed points, then $\Lambda(g) = 0$.
+
+::: pf-proof
+Lefschetz Fixed Point Theorem.
+:::
+
+:::
+
+::: {.pf-step #s2-4}
+Thus $1 + \deg(g) = 0 \implies \deg(g) = -1$ for every $g \in G \setminus \{1\}$.
+
+::: pf-proof
+Steps [](#s2-1){.pf-ref} and [](#s2-3){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+Show that $|G| \le 2$:
+
+::: pf-proof
+
+::: pf-step
+By steps [](#s1){.pf-ref} and [](#s2){.pf-ref}, the homomorphism $d: G \to \{\pm 1\}$ maps the identity $1 \mapsto 1$ and every non-identity element $g \neq 1 \mapsto -1$.
+
+::: pf-proof
+$\deg(\operatorname{id}) = 1$ and step [](#s2-4){.pf-ref}.
+:::
+
+:::
+
+::: pf-step
+Thus $\ker(d) = \{1\}$, which means $d$ is an injective group homomorphism.
+
+::: pf-proof
 a homomorphism is injective if and only if its kernel is trivial.
 :::
-<2>3. Since the target group $\{\pm 1\}$ has order $2$, the subgroup $G \cong d(G) \le \{\pm 1\}$ must have order dividing $2$:
+
+:::
+
+::: pf-step
+Since the target group $\{\pm 1\}$ has order $2$, the subgroup $G \cong d(G) \le \{\pm 1\}$ must have order dividing $2$:
 \[
 |G| \le 2.
 \]
-::: {.proof}
+
+::: pf-proof
 Lagrange's Theorem on subgroups of order 2 groups.
 :::
 
-<1>4. Conclusion: $|G| \le 2$ (so $G \cong \{1\}$ or $G \cong \mathbb{Z}_2$). Q.E.D.
-::: {.proof}
-<1>3.
+:::
+
+:::
+
+:::
+
+::: pf-step
+Conclusion: $|G| \le 2$ (so $G \cong \{1\}$ or $G \cong \mathbb{Z}_2$).
+
+::: pf-proof
+Step [](#s3){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

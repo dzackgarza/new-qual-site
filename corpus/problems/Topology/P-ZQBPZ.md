@@ -27,55 +27,111 @@ Show that $A$ and $B$ are connected.
 ::: {.solution}
 **Goal.** For connected $X = A \cup B$ with $A, B$ closed and $A \cap B$ connected, show $A$ and $B$ are connected.
 
-<1>1. Suppose $A$ is disconnected.
-::: {.proof}
+::: pf
+
+::: pf-step
+Suppose $A$ is disconnected.
+
+::: pf-proof
 assume for contradiction.
 :::
 
-<1>2. Then $A = C \cup D$ with $C, D$ nonempty, disjoint, and closed in $A$ (hence closed in $X$, since $A$ is closed).
-::: {.proof}
+:::
+
+::: pf-step
+Then $A = C \cup D$ with $C, D$ nonempty, disjoint, and closed in $A$ (hence closed in $X$, since $A$ is closed).
+
+::: pf-proof
 a disconnected space is a union of two nonempty disjoint closed subsets.
 :::
 
-<1>3. $A \cap B$ is connected, so it lies entirely in $C$ or entirely in $D$.
-::: {.proof}
+:::
+
+::: pf-step
+$A \cap B$ is connected, so it lies entirely in $C$ or entirely in $D$.
+
+::: pf-proof
 $A \cap B = (C \cap B) \cup (D \cap B)$ is a union of two disjoint closed sets; since $A \cap B$ is connected, one of them is empty, so $A \cap B \subseteq C$ or $A \cap B \subseteq D$.
 :::
 
-<1>4. WLOG $A \cap B \subseteq C$.
-::: {.proof}
+:::
+
+::: pf-step
+WLOG $A \cap B \subseteq C$.
+
+::: pf-proof
 relabel if necessary.
 :::
 
-<1>5. Then $X = (C \cup B) \cup D$ is a union of two disjoint nonempty closed sets.
-<2>1. $C \cup B$ and $D$ are disjoint.
-::: {.proof}
-$C \cap D = \emptyset$ and $B \cap D = \emptyset$ (since $A \cap B \subseteq C$ and $D \subseteq A$). <2>2. $C \cup B$ and $D$ are closed.
 :::
-::: {.proof}
+
+::: pf-step
+Then $X = (C \cup B) \cup D$ is a union of two disjoint nonempty closed sets.
+
+::: pf-proof
+
+::: pf-step
+$C \cup B$ and $D$ are disjoint.
+
+::: pf-proof
+$C \cap D = \emptyset$ and $B \cap D = \emptyset$ (since $A \cap B \subseteq C$ and $D \subseteq A$).
+:::
+
+:::
+
+::: pf-step
+$C \cup B$ and $D$ are closed.
+
+::: pf-proof
 $C, D$ are closed in $X$, and $B$ is closed, so $C \cup B$ is closed.
 :::
-<2>3. Both are nonempty.
-::: {.proof}
+
+:::
+
+::: pf-step
+Both are nonempty.
+
+::: pf-proof
 $C \neq \emptyset$ and $D \neq \emptyset$.
 :::
-<2>4. $X = (C \cup B) \cup D$.
-::: {.proof}
+
+:::
+
+::: pf-step
+$X = (C \cup B) \cup D$.
+
+::: pf-proof
 $X = A \cup B = (C \cup D) \cup B = (C \cup B) \cup D$.
 :::
 
-<1>6. This contradicts $X$ being connected.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: pf-step
+This contradicts $X$ being connected.
+
+::: pf-proof
 $X$ is a union of two disjoint nonempty closed sets.
 :::
 
-<1>7. Hence $A$ is connected; by symmetry, $B$ is connected.
-::: {.proof}
+:::
+
+::: {.pf-step #s7}
+Hence $A$ is connected; by symmetry, $B$ is connected.
+
+::: pf-proof
 the same argument with $A$ and $B$ swapped.
 :::
 
-<1>8. Q.E.D.
-::: {.proof}
-<1>7 is the claim.
 :::
+
+::: pf-qed
+step [](#s7){.pf-ref} is the claim.
+:::
+
+:::
+
 :::

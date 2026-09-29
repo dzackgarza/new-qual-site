@@ -60,7 +60,7 @@ $$
 C=V\left(y^2z^3-x^3z^2+x^5+y^5\right)
 \subseteq\PP^2
 $$
-has an ordinary cusp at $[0:0:1]$ and no other singularity.  Step <1>9
+has an ordinary cusp at $[0:0:1]$ and no other singularity.  Step [](#s9){.pf-ref}
 checks that its normalization is a nonhyperelliptic trigonal curve of genus
 $5$ and, using the uniqueness proved below, cannot have a nodal plane
 quintic model.  Thus replacing "node" by "node or ordinary cusp" is
@@ -71,13 +71,16 @@ necessary, not merely a weakening of the proof.
 Let $K$ denote a canonical divisor on $X$.  We work over the algebraically
 closed ground field of Chapter IV.
 
-<1>1. Smooth complete intersections of three quadrics in $\PP^4$ form an
+::: pf
+
+::: {.pf-step #s1}
+Smooth complete intersections of three quadrics in $\PP^4$ form an
 irreducible family of canonically embedded genus-$5$ curves of dimension
 $$
 \boxed{12}.
 $$
 
-::: {.proof}
+::: pf-proof
 Put
 $$
 W_2=H^0\bigl(\PP^4,\OO_{\PP^4}(2)\bigr),
@@ -124,13 +127,16 @@ $$
 Irreducibility follows from that of $U$.
 :::
 
-<1>2. If $A$ is a $g^1_3$ on $X$, then $A$ is base-point-free and
+:::
+
+::: {.pf-step #s2}
+If $A$ is a $g^1_3$ on $X$, then $A$ is base-point-free and
 $$
 L:=K-A
 $$
 is a base-point-free $g^2_5$.
 
-::: {.proof}
+::: pf-proof
 If $A$ had a base point $P$, then
 $$
 h^0(A-P)=h^0(A)=2,
@@ -159,14 +165,17 @@ Therefore $L$ is base-point-free, and its degree and number of sections make
 it a $g^2_5$.
 :::
 
-<1>3. The morphism
+:::
+
+::: {.pf-step #s3}
+The morphism
 $$
 \phi_L:X\longrightarrow\PP^2
 $$
 is birational onto an integral plane quintic whose only singularity has
 delta invariant $1$.
 
-::: {.proof}
+::: pf-proof
 Because $|L|$ is complete and has dimension $2$, its image is not contained
 in a line.  If $e$ is the generic degree of $\phi_L$ and $d$ is the degree
 of its image, then
@@ -194,10 +203,13 @@ $1$.  Such a plane double point is either an ordinary node or an ordinary
 cusp.  This proves the corrected forward implication in part (b).
 :::
 
-<1>4. Conversely, the normalization of an integral plane quintic having
+:::
+
+::: {.pf-step #s4}
+Conversely, the normalization of an integral plane quintic having
 exactly one singularity of delta invariant $1$ carries a $g^1_3$.
 
-::: {.proof}
+::: pf-proof
 Let
 $$
 \nu:X\longrightarrow C\subseteq\PP^2
@@ -224,13 +236,16 @@ It has no base point on the blowup.  Hence it cuts out a base-point-free
 $g^1_3$ on $X$.  This proves the corrected converse in part (b).
 :::
 
-<1>5. The conics through the unique double point cut out the complete
+:::
+
+::: {.pf-step #s5}
+The conics through the unique double point cut out the complete
 canonical system on $X$, and they embed the blowup $S$ as a cubic scroll
 $$
 V\subseteq\PP^4.
 $$
 
-::: {.proof}
+::: pf-proof
 On $S$ one has
 $$
 K_S=-3H+E,
@@ -263,10 +278,13 @@ to $X$ is the canonical embedding, so the canonical curve lies on $V$.
 This argument applies equally to the nodal and cuspidal cases.
 :::
 
-<1>6. The surface $V$ is the union of the trisecant lines corresponding to
+:::
+
+::: {.pf-step #s6}
+The surface $V$ is the union of the trisecant lines corresponding to
 the $g^1_3$.
 
-::: {.proof}
+::: pf-proof
 The ruling of $S$ consists of the strict transforms of lines through $p$,
 each of class
 $$
@@ -276,24 +294,27 @@ Since
 $$
 (2H-E)\cdot F=1,
 $$
-the embedding of step <1>5 maps every ruling fibre to a line in $\PP^4$.
+the embedding of step [](#s5){.pf-ref} maps every ruling fibre to a line in $\PP^4$.
 Moreover
 $$
 \widetilde C\cdot F
 =(5H-2E)\cdot(H-E)=3.
 $$
 Thus each ruling line meets the canonical curve in a length-$3$ divisor,
-namely a member of the $g^1_3$ from step <1>4.  The ruling fibres cover
+namely a member of the $g^1_3$ from step [](#s4){.pf-ref}.  The ruling fibres cover
 $S$, so their image lines cover $V$.  Hence $V$ is exactly the union of
 these trisecants.
 :::
 
-<1>7. The common zero locus of all quadrics containing the canonical curve
+:::
+
+::: {.pf-step #s7}
+The common zero locus of all quadrics containing the canonical curve
 is exactly $V$.  Consequently both $V$ and the $g^1_3$ are unique.
 
-::: {.proof}
+::: pf-proof
 Let $Q\subseteq\PP^4$ be any quadric containing the canonical curve, and
-let $\ell$ be one of the ruling lines of step <1>6.  The restriction of the
+let $\ell$ be one of the ruling lines of step [](#s6){.pf-ref}.  The restriction of the
 equation of $Q$ to
 $$
 \ell\cong\PP^1
@@ -331,7 +352,7 @@ H^0(\PP^4,\mci_V(2)).
 $$
 Thus the intersection of all quadrics through $X$ is precisely $V$.
 
-Now start with any $g^1_3$ on $X$.  Steps <1>2--<1>6 construct from it a
+Now start with any $g^1_3$ on $X$.  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, [](#s4){.pf-ref}, [](#s5){.pf-ref}, and [](#s6){.pf-ref} construct from it a
 cubic scroll, and the argument just given identifies that scroll with the
 same intrinsic base locus of the quadrics through $X$.  Hence the scroll is
 unique.  A smooth cubic scroll $\operatorname{Bl}_p\PP^2$ has a unique
@@ -339,14 +360,17 @@ ruling by lines, and intersecting that ruling with $X$ recovers the
 $g^1_3$.  The $g^1_3$ is therefore unique as well.
 :::
 
-<1>8. The trigonal genus-$5$ curves form an irreducible family of dimension
+:::
+
+::: {.pf-step #s8}
+The trigonal genus-$5$ curves form an irreducible family of dimension
 $$
 \boxed{11}.
 $$
 The nodal plane-quintic models form a dense open subfamily; cuspidal models
 form a proper subfamily.
 
-::: {.proof}
+::: pf-proof
 Consider pairs
 $$
 (p,C),
@@ -374,8 +398,8 @@ $p$ is open, the cuspidal locus lies in the closure of the nodal locus.
 Therefore the locus of quintics having exactly one delta-one singularity is
 irreducible of dimension $19$.
 
-Steps <1>3--<1>4 identify its normalizations with the trigonal genus-$5$
-curves.  By step <1>7 the $g^1_3$ is unique, so the residual $g^2_5=|K-A|$
+Steps [](#s3){.pf-ref} and [](#s4){.pf-ref} identify its normalizations with the trigonal genus-$5$
+curves.  By step [](#s7){.pf-ref} the $g^1_3$ is unique, so the residual $g^2_5=|K-A|$
 is unique; choosing its three sections only changes coordinates in
 $\PP^2$.  Hence two such plane models represent the same curve exactly up
 to the action of $\PGL_3$.  Stabilizers are zero-dimensional because a
@@ -391,10 +415,13 @@ The nodal locus is the nonempty dense open described above; the cuspidal
 locus is its codimension-one specialization.
 :::
 
-<1>9. The cuspidal quintic displayed in the erratum gives a genuine
+:::
+
+::: {.pf-step #s9}
+The cuspidal quintic displayed in the erratum gives a genuine
 counterexample to the literal nodal assertion in part (b).
 
-::: {.proof}
+::: pf-proof
 Assume the ground field has characteristic zero and set
 $$
 F=y^2z^3-x^3z^2+x^5+y^5.
@@ -467,7 +494,7 @@ $$
 h^0(K-M)=h^0(M)-1\ge2,
 $$
 so $K-M$ is a degree-$3$ pencil.  Clifford's theorem forces $h^0(M)=3$,
-and step <1>7 says that this $g^1_3$ is the unique one.  Hence
+and step [](#s7){.pf-ref} says that this $g^1_3$ is the unique one.  Hence
 $$
 M=K-A
 $$
@@ -477,13 +504,17 @@ $X$ has no nodal plane quintic model.  This proves the erratum asserted
 above.
 :::
 
-<1>10. Q.E.D. for the corrected statement.
+:::
 
-::: {.proof}
-Step <1>1 proves part (a).  Steps <1>2--<1>4 prove the corrected equivalence
-in part (b), and step <1>8 proves its irreducibility and dimension claim.
-Steps <1>5--<1>7 prove all the cubic-scroll, trisecant, and uniqueness
-assertions in part (c).  Step <1>9 proves that the printed word "node"
+::: pf-qed
+for the corrected statement.
+
+Step [](#s1){.pf-ref} proves part (a).  Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} prove the corrected equivalence
+in part (b), and step [](#s8){.pf-ref} proves its irreducibility and dimension claim.
+Steps [](#s5){.pf-ref}, [](#s6){.pf-ref}, and [](#s7){.pf-ref} prove all the cubic-scroll, trisecant, and uniqueness
+assertions in part (c).  Step [](#s9){.pf-ref} proves that the printed word "node"
 cannot be retained in general.
+:::
+
 :::
 :::

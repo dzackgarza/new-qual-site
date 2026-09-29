@@ -25,29 +25,43 @@ audit:
 ::: {.solution}
 Let $f,g \in L^1(\RR)$.
 
-<1>1. $f \ast g$ is defined almost everywhere and belongs to $L^1(\RR)$.
+::: pf
 
-<2>1. $\int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1 < \infty$.
+::: {.pf-step #s1}
+$f \ast g$ is defined almost everywhere and belongs to $L^1(\RR)$.
 
-::: {.proof}
+::: pf-proof
+
+::: {.pf-step #s1-1}
+$\int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1 < \infty$.
+
+::: pf-proof
 The function $(x,y)\mapsto f(x-y)g(y)$ is measurable on $\RR^2$. By Tonelli's theorem, $\int\!\int |f(x-y)g(y)|\,dy\,dx = \int |g(y)| \int |f(x-y)|\,dx\,dy = \int |g(y)| \norm{f}_1\,dy = \norm{f}_1 \norm{g}_1$, since $\int |f(x-y)|\,dx = \norm{f}_1$ for each fixed $y$ by translation invariance of Lebesgue measure.
 :::
 
-<2>2. Q.E.D.
-
-::: {.proof}
-By step <2>1, $(x,y)\mapsto f(x-y)g(y)$ is in $L^1(\RR^2)$. By Fubini's theorem, $\int f(x-y)g(y)\,dy$ converges absolutely for a.e. $x$, and $x \mapsto \int f(x-y)g(y)\,dy$ is measurable and integrable.
 :::
 
-<1>2. $\norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1$.
-
-::: {.proof}
-$\norm{f\ast g}_1 = \int |f\ast g(x)|\,dx \leq \int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1$, where the last equality is step <2>1.
+::: pf-qed
+By step [](#s1-1){.pf-ref}, $(x,y)\mapsto f(x-y)g(y)$ is in $L^1(\RR^2)$. By Fubini's theorem, $\int f(x-y)g(y)\,dy$ converges absolutely for a.e. $x$, and $x \mapsto \int f(x-y)g(y)\,dy$ is measurable and integrable.
 :::
 
-<1>3. Q.E.D.
-
-::: {.proof}
-Step <1>1 gives $f\ast g \in L^1$ and step <1>2 gives the norm bound.
 :::
+
+:::
+
+::: {.pf-step #s2}
+$\norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1$.
+
+::: pf-proof
+$\norm{f\ast g}_1 = \int |f\ast g(x)|\,dx \leq \int\!\int |f(x-y)g(y)|\,dy\,dx = \norm{f}_1 \norm{g}_1$, where the last equality is step [](#s1-1){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+step [](#s1){.pf-ref} gives $f\ast g \in L^1$ and step [](#s2){.pf-ref} gives the norm bound.
+:::
+
+:::
+
 :::

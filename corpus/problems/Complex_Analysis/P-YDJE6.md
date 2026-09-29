@@ -27,36 +27,89 @@ Let $n\in \ZZ^{\geq 1}$ and $0<\theta<\pi$ and show that
 :::
 
 ::: {.solution}
-<1>1. Factorization of the quadratic denominator $P(z) = z^2 - 2z\cos\theta + 1$:
-<2>1. For $0 < \theta < \pi$, the quadratic $z^2 - 2z\cos\theta + 1$ factors over $\mathbb{C}$ as:
+
+::: pf
+
+::: pf-step
+Factorization of the quadratic denominator $P(z) = z^2 - 2z\cos\theta + 1$:
+
+::: pf-proof
+
+::: pf-step
+For $0 < \theta < \pi$, the quadratic $z^2 - 2z\cos\theta + 1$ factors over $\mathbb{C}$ as:
 \[
 z^2 - 2z\cos\theta + 1 = (z - e^{i\theta})(z - e^{-i\theta}).
 \]
-<2>2. The roots are $z_1 = e^{i\theta}$ and $z_2 = e^{-i\theta}$.
+
+:::
+
+::: pf-step
+The roots are $z_1 = e^{i\theta}$ and $z_2 = e^{-i\theta}$.
 Since $|z_1| = |z_2| = 1 < 2$, both poles lie strictly inside the circular contour $\gamma: |z| = 2$.
 Since $0 < \theta < \pi$, $\sin\theta \neq 0$, so $z_1 \neq z_2$, and both poles are simple poles.
 
-<1>2. Residue computation:
-<2>1. Let $g(z) = \frac{z^n}{(z - e^{i\theta})(z - e^{-i\theta})}$.
+:::
+
+:::
+
+:::
+
+::: pf-step
+Residue computation:
+
+::: pf-proof
+
+::: pf-step
+Let $g(z) = \frac{z^n}{(z - e^{i\theta})(z - e^{-i\theta})}$.
 At the simple pole $z_1 = e^{i\theta}$:
 \[
 \operatorname{Res}(g, e^{i\theta}) = \lim_{z \to e^{i\theta}} (z - e^{i\theta}) g(z) = \frac{(e^{i\theta})^n}{e^{i\theta} - e^{-i\theta}} = \frac{e^{in\theta}}{2i\sin\theta}.
 \]
-<2>2. At the simple pole $z_2 = e^{-i\theta}$:
+
+:::
+
+::: pf-step
+At the simple pole $z_2 = e^{-i\theta}$:
 \[
 \operatorname{Res}(g, e^{-i\theta}) = \lim_{z \to e^{-i\theta}} (z - e^{-i\theta}) g(z) = \frac{(e^{-i\theta})^n}{e^{-i\theta} - e^{i\theta}} = -\frac{e^{-in\theta}}{2i\sin\theta}.
 \]
-<2>3. Summing the residues:
+
+:::
+
+::: pf-step
+Summing the residues:
 \[
 \operatorname{Res}(g, e^{i\theta}) + \operatorname{Res}(g, e^{-i\theta}) = \frac{e^{in\theta} - e^{-in\theta}}{2i\sin\theta} = \frac{2i\sin(n\theta)}{2i\sin\theta} = \frac{\sin(n\theta)}{\sin\theta}.
 \]
 
-<1>3. Evaluation of the contour integral:
-<2>1. By the Cauchy Residue Theorem:
+:::
+
+:::
+
+:::
+
+::: pf-step
+Evaluation of the contour integral:
+
+::: pf-proof
+
+::: pf-step
+By the Cauchy Residue Theorem:
 \[
 \frac{1}{2\pi i} \oint_{|z|=2} \frac{z^n}{z^2 - 2z\cos\theta + 1} \, dz = \sum_{j=1}^2 \operatorname{Res}(g, z_j) = \frac{\sin(n\theta)}{\sin\theta}.
 \]
 
-<1>4. Conclusion:
-$\frac{1}{2\pi i} \int_{|z|=2} \frac{z^n}{1 - 2z\cos\theta + z^2} \, dz = \frac{\sin(n\theta)}{\sin\theta}$. Q.E.D.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Conclusion:
+$\frac{1}{2\pi i} \int_{|z|=2} \frac{z^n}{1 - 2z\cos\theta + z^2} \, dz = \frac{\sin(n\theta)}{\sin\theta}$.
+:::
+
+:::
+
 :::

@@ -46,8 +46,12 @@ Moreover, show that the sequence $(s_j)$ can be chosen to refine prescribed subd
 ::: {.solution}
 Regard $I\times I$ as the unit square with the Euclidean metric, with first coordinate $t$ and second coordinate $s$.
 
-<1>1. Pull back the cover $X=U\cup V$ to an open cover of the square.
-::: {.proof}
+::: pf
+
+::: pf-step
+Pull back the cover $X=U\cup V$ to an open cover of the square.
+
+::: pf-proof
 Since $\Gamma$ is continuous and $U,V\subseteq X$ are open,
 \[
 \Gamma^{-1}(U),
@@ -61,8 +65,12 @@ I^2=\Gamma^{-1}(U)\cup\Gamma^{-1}(V).
 Thus these two sets form an open cover of the compact metric space $I^2$.
 :::
 
-<1>2. Choose a Lebesgue number for this pullback cover.
-::: {.proof}
+:::
+
+::: pf-step
+Choose a Lebesgue number for this pullback cover.
+
+::: pf-proof
 By the Lebesgue-number lemma, there is a number
 \[
 \lambda>0
@@ -70,8 +78,12 @@ By the Lebesgue-number lemma, there is a number
 such that every subset of $I^2$ of diameter less than $\lambda$ lies entirely in either $\Gamma^{-1}(U)$ or $\Gamma^{-1}(V)$.
 :::
 
-<1>3. Choose the horizontal subdivision so that it refines the prescribed endpoint subdivisions.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+Choose the horizontal subdivision so that it refines the prescribed endpoint subdivisions.
+
+::: pf-proof
 Let
 \[
 P_0:0=u_0<\cdots<u_r=1
@@ -96,8 +108,12 @@ Denote the resulting common refinement by
 By construction, $(s_j)$ refines both prescribed subdivisions.
 :::
 
-<1>4. Choose the vertical subdivision with the same mesh bound.
-::: {.proof}
+:::
+
+::: pf-step
+Choose the vertical subdivision with the same mesh bound.
+
+::: pf-proof
 Choose any finite subdivision
 \[
 0=t_0<t_1<\cdots<t_m=1
@@ -109,8 +125,12 @@ t_{i+1}-t_i<\frac{\lambda}{\sqrt2}
 for every $i$. For example, an equally spaced subdivision with sufficiently many pieces has this property.
 :::
 
-<1>5. Every resulting rectangle maps wholly into $U$ or wholly into $V$.
-::: {.proof}
+:::
+
+::: pf-step
+Every resulting rectangle maps wholly into $U$ or wholly into $V$.
+
+::: pf-proof
 Fix $i,j$ and set
 \[
 R_{ij}=[t_i,t_{i+1}]\times[s_j,s_{j+1}].
@@ -141,5 +161,9 @@ or
 This holds for every rectangle.
 :::
 
-The sequences $(t_i)$ and $(s_j)$ therefore have the required property, and <1>3 proves the requested simultaneous refinement of the prescribed subdivisions of $\gamma_0$ and $\gamma_1$.
+:::
+
+:::
+
+The sequences $(t_i)$ and $(s_j)$ therefore have the required property, and step [](#s3){.pf-ref} proves the requested simultaneous refinement of the prescribed subdivisions of $\gamma_0$ and $\gamma_1$.
 :::

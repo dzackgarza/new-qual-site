@@ -93,8 +93,12 @@ T\notin A.
 This proves part (b).
 :::
 
-<1>3. Every UFD is integrally closed in its field of fractions.
-::: {.proof}
+:::
+
+::: {.pf-step #part-c-integrally-closed}
+Every UFD is integrally closed in its field of fractions.
+
+::: pf-proof
 Let $D$ be a UFD and suppose
 \[
 z=\frac ab\in\operatorname{Frac}(D)
@@ -119,24 +123,32 @@ Hence $z\in D$.
 Therefore $D$ is integrally closed.
 :::
 
-<1>4. The ring $A$ is not a UFD.
-::: {.proof}
+:::
+
+::: pf-step
+The ring $A$ is not a UFD.
+
+::: pf-proof
 The ring $A$ is a domain because it is a subring of the domain $\mathbb Z[T]$.
-By <1>1,
+By step [](#part-a-fraction-field){.pf-ref},
 \[
 T\in\operatorname{Frac}(A),
 \]
-and by <1>2, $T$ is integral over $A$ but $T\notin A$.
+and by step [](#part-b-integral-not-in-a){.pf-ref}, $T$ is integral over $A$ but $T\notin A$.
 Thus $A$ is not integrally closed.
-By <1>3, a UFD must be integrally closed, so $A$ is not a UFD.
+By step [](#part-c-integrally-closed){.pf-ref}, a UFD must be integrally closed, so $A$ is not a UFD.
 This answers part (c).
 :::
 
-<1>5. There is no polynomial $f(T)$ such that
+:::
+
+::: pf-step
+There is no polynomial $f(T)$ such that
 \[
 A=\mathbb Z[f(T)].
 \]
-::: {.proof}
+
+::: pf-proof
 Suppose that such an $f$ exists.
 It cannot be constant, because $T^2\in A$.
 Set
@@ -159,5 +171,9 @@ d=1.
 \]
 But $f(T)\in\mathbb Z[f(T)]=A$, while no element of $A$ has degree $1$.
 This contradiction proves that no such $f(T)$ exists, answering part (d).
+:::
+
+:::
+
 :::
 :::

@@ -26,39 +26,85 @@ Then $c - p/3c$ is a root of $x^3 + px + q$.
 :::
 
 ::: {.solution}
-<1>1. Identification of parameters:
-<2>1. For the cubic polynomial $x^3 - 3x + 2$, the coefficients are $p = -3$ and $q = 2$.
-<2>2. Compute the square root term $s$:
+
+::: pf
+
+::: pf-step
+Identification of parameters:
+
+::: pf-proof
+
+::: pf-step
+For the cubic polynomial $x^3 - 3x + 2$, the coefficients are $p = -3$ and $q = 2$.
+:::
+
+::: pf-step
+Compute the square root term $s$:
 \[
 s = \sqrt{\frac{q^2}{4} + \frac{p^3}{27}} = \sqrt{\frac{2^2}{4} + \frac{(-3)^3}{27}} = \sqrt{1 - 1} = 0.
 \]
-<2>3. Compute $A$:
+:::
+
+::: pf-step
+Compute $A$:
 \[
 A = -\frac{q}{2} + s = -\frac{2}{2} + 0 = -1.
 \]
+:::
 
-<1>2. The three complex cube roots of $A = -1$:
-<2>1. The solutions to $c^3 = -1 = e^{i\pi}$ in $\mathbb{C}$ are:
+:::
+
+:::
+
+::: pf-step
+The three complex cube roots of $A = -1$:
+
+::: pf-proof
+The solutions to $c^3 = -1 = e^{i\pi}$ in $\mathbb{C}$ are:
+
 - $c_1 = -1$,
 - $c_2 = e^{i\pi/3} = \frac{1 + i\sqrt{3}}{2}$,
 - $c_3 = e^{-i\pi/3} = \frac{1 - i\sqrt{3}}{2}$.
+:::
 
-<1>3. Computation of roots via $x = c - \frac{p}{3c} = c + \frac{1}{c}$:
-<2>1. **For $c_1 = -1$:**
+:::
+
+::: pf-step
+Computation of roots via $x = c - \frac{p}{3c} = c + \frac{1}{c}$:
+
+::: pf-proof
+
+::: pf-step
+**For $c_1 = -1$:**
 \[
 x_1 = c_1 + \frac{1}{c_1} = -1 + \frac{1}{-1} = -2.
 \]
-<2>2. **For $c_2 = \frac{1 + i\sqrt{3}}{2}$:**
+:::
+
+::: pf-step
+**For $c_2 = \frac{1 + i\sqrt{3}}{2}$:**
 Since $\frac{1}{c_2} = \overline{c_2} = \frac{1 - i\sqrt{3}}{2}$:
 \[
 x_2 = c_2 + \frac{1}{c_2} = \frac{1 + i\sqrt{3}}{2} + \frac{1 - i\sqrt{3}}{2} = 1.
 \]
-<2>3. **For $c_3 = \frac{1 - i\sqrt{3}}{2}$:**
+:::
+
+::: pf-step
+**For $c_3 = \frac{1 - i\sqrt{3}}{2}$:**
 Since $\frac{1}{c_3} = \overline{c_3} = \frac{1 + i\sqrt{3}}{2}$:
 \[
 x_3 = c_3 + \frac{1}{c_3} = \frac{1 - i\sqrt{3}}{2} + \frac{1 + i\sqrt{3}}{2} = 1.
 \]
+:::
 
-<1>4. Conclusion:
-The cubic formula yields the roots $x = -2, 1, 1$, giving the root $1$ with multiplicity $2$ and the root $-2$, which factors $(x-1)^2(x+2) = x^3 - 3x + 2$. Q.E.D.
+:::
+
+:::
+
+::: pf-step
+Conclusion:
+The cubic formula yields the roots $x = -2, 1, 1$, giving the root $1$ with multiplicity $2$ and the root $-2$, which factors $(x-1)^2(x+2) = x^3 - 3x + 2$.
+:::
+
+:::
 :::

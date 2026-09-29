@@ -35,7 +35,10 @@ G^{(n+1)}=[G^{(n)},G^{(n)}].
 \]
 A group is solvable exactly when $G^{(r)}=1$ for some $r$.
 
-<1>1. Homomorphisms preserve the derived series.
+::: pf
+
+::: {.pf-step #s1}
+Homomorphisms preserve the derived series.
 
 If $\phi:G\to H$ is a group homomorphism, then
 \[
@@ -58,7 +61,10 @@ In particular, every $G^{(n)}$ is characteristic in $G$: for an automorphism $\p
 \phi(G^{(n)})=G^{(n)}.
 \]
 
-<1>2. Solvability is closed under extensions.
+:::
+
+::: pf-step
+Solvability is closed under extensions.
 
 Let $N\trianglelefteq G$. If both $N$ and $G/N$ are solvable, then $G$ is solvable.
 
@@ -66,7 +72,7 @@ Suppose
 \[
 (G/N)^{(r)}=1.
 \]
-By the quotient map and <1>1,
+By the quotient map and step [](#s1){.pf-ref},
 \[
 G^{(r)}N/N=1,
 \]
@@ -83,4 +89,9 @@ for every $j\ge0$. Hence
 G^{(r+s)}\le N^{(s)}=1.
 \]
 Therefore $G$ is solvable.
+
+:::
+
+:::
+
 :::

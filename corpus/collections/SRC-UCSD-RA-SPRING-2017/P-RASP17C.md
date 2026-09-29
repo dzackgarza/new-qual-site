@@ -39,72 +39,131 @@ Let $(H, \langle \cdot | \cdot \rangle)$ be a Hilbert space, $\{e_n\}_{n=1}^\inf
 ::: {.solution}
 **Part 1.**
 
-<1>1. For $h \in H$, $\sum_n |\langle h | e_n \rangle|^2 = \|h\|^2 < \infty$ (Parseval).
-::: {.proof}
+::: pf
+
+::: {.pf-step #p1-s1}
+For $h \in H$, $\sum_n |\langle h | e_n \rangle|^2 = \|h\|^2 < \infty$ (Parseval).
+
+::: pf-proof
 $\{e_n\}$ is an orthonormal basis.
 :::
 
-<1>2. The series $\sum_n \lambda_n \langle h | e_n \rangle u_n$ converges in $H$ iff $\sum_n |\lambda_n \langle h | e_n \rangle|^2 < \infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s2}
+The series $\sum_n \lambda_n \langle h | e_n \rangle u_n$ converges in $H$ iff $\sum_n |\lambda_n \langle h | e_n \rangle|^2 < \infty$.
+
+::: pf-proof
 $\{u_n\}$ is orthonormal, so the series converges iff the sum of squares of coefficients converges.
 :::
 
-<1>3. $\sum_n |\lambda_n \langle h | e_n \rangle|^2 \le M^2 \sum_n |\langle h | e_n \rangle|^2 = M^2 \|h\|^2 < \infty$.
-::: {.proof}
-<1>1 and $|\lambda_n| \le M$.
 :::
 
-<1>4. Hence $Th = \sum_n \lambda_n \langle h | e_n \rangle u_n$ exists in $H$ for all $h$.
-::: {.proof}
-<1>2 and <1>3.
+::: {.pf-step #p1-s3}
+$\sum_n |\lambda_n \langle h | e_n \rangle|^2 \le M^2 \sum_n |\langle h | e_n \rangle|^2 = M^2 \|h\|^2 < \infty$.
+
+::: pf-proof
+step [](#p1-s1){.pf-ref} and $|\lambda_n| \le M$.
+:::
+
+:::
+
+::: {.pf-step #p1-s4}
+Hence $Th = \sum_n \lambda_n \langle h | e_n \rangle u_n$ exists in $H$ for all $h$.
+
+::: pf-proof
+step [](#p1-s2){.pf-ref} and step [](#p1-s3){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part 2.**
 
-<1>1. $\|Th\|^2 = \sum_n |\lambda_n \langle h | e_n \rangle|^2 \le M^2 \sum_n |\langle h | e_n \rangle|^2 = M^2 \|h\|^2$.
-::: {.proof}
-<1>3 (part 1) and Parseval.
+::: pf
+
+::: {.pf-step #p2-s1}
+$\|Th\|^2 = \sum_n |\lambda_n \langle h | e_n \rangle|^2 \le M^2 \sum_n |\langle h | e_n \rangle|^2 = M^2 \|h\|^2$.
+
+::: pf-proof
+step [](#p1-s3){.pf-ref} (part 1) and Parseval.
 :::
 
-<1>2. Hence $\|T\|_{op} \le M < \infty$.
-::: {.proof}
-<1>1.
+:::
+
+::: {.pf-step #p2-s2}
+Hence $\|T\|_{op} \le M < \infty$.
+
+::: pf-proof
+step [](#p2-s1){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part 3.**
 
-<1>1. Define $T_N h = \sum_{n=1}^{N} \lambda_n \langle h | e_n \rangle u_n$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p3-s1}
+Define $T_N h = \sum_{n=1}^{N} \lambda_n \langle h | e_n \rangle u_n$.
+
+::: pf-proof
 the finite-rank truncation.
 :::
 
-<1>2. $T_N$ is a finite-rank operator (its range is spanned by $u_1, \ldots, u_N$).
-::: {.proof}
-<1>1.
 :::
 
-<1>3. $\|T - T_N\|_{op} \le \sup_{n > N} |\lambda_n|$.
-::: {.proof}
+::: pf-step
+$T_N$ is a finite-rank operator (its range is spanned by $u_1, \ldots, u_N$).
+
+::: pf-proof
+step [](#p3-s1){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p3-s3}
+$\|T - T_N\|_{op} \le \sup_{n > N} |\lambda_n|$.
+
+::: pf-proof
 $T - T_N$ is the diagonal operator with coefficients $\lambda_n$ for $n > N$ and $0$ for $n \le N$, so its operator norm is $\sup_{n > N} |\lambda_n|$ (by part 2).
 :::
 
-<1>4. Since $\lambda_n \to 0$, $\sup_{n > N} |\lambda_n| \to 0$ as $N \to \infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #p3-s4}
+Since $\lambda_n \to 0$, $\sup_{n > N} |\lambda_n| \to 0$ as $N \to \infty$.
+
+::: pf-proof
 hypothesis.
 :::
 
-<1>5. Hence $\|T - T_N\|_{op} \to 0$, so $T$ is the norm limit of finite-rank operators.
-::: {.proof}
-<1>3 and <1>4.
 :::
 
-<1>6. Therefore $T$ is compact.
-::: {.proof}
-<1>5 (a norm limit of finite-rank operators is compact).
+::: {.pf-step #p3-s5}
+Hence $\|T - T_N\|_{op} \to 0$, so $T$ is the norm limit of finite-rank operators.
+
+::: pf-proof
+step [](#p3-s3){.pf-ref} and step [](#p3-s4){.pf-ref}.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-<1>4 (1), <1>2 (2), <1>6 (3).
+:::
+
+::: {.pf-step #p3-s6}
+Therefore $T$ is compact.
+
+::: pf-proof
+step [](#p3-s5){.pf-ref} (a norm limit of finite-rank operators is compact).
+:::
+
+:::
+
+::: pf-qed
+step [](#p1-s4){.pf-ref} (1), step [](#p2-s2){.pf-ref} (2), step [](#p3-s6){.pf-ref} (3).
+:::
+
 :::
 :::

@@ -30,8 +30,8 @@ List all isomorphism classes of groups of size $72$.
 
 ::: {.solution}
 There are exactly $50$ classes. The list consists of the $42$ semidirect
-products in step <1>1, the four groups in step <1>3, and the four groups
-in step <1>4.
+products in step [](#s1){.pf-ref}, the four groups in step [](#s3){.pf-ref}, and the four groups
+in step [](#s4){.pf-ref}.
 
 Write $C_m=\mathbb Z/m\mathbb Z$, and use $D_{2m}$ for the dihedral
 group of order $2m$. For an action $\phi:H\to\operatorname{Aut}(N)$,
@@ -39,7 +39,10 @@ $N\rtimes_\phi H$ has multiplication
 $(n,h)(n',h')=(n\phi(h)(n'),hh')$, with additive notation when $N$
 is a vector space.
 
-<1>1. The groups with normal Sylow $3$-subgroup are precisely the
+::: pf
+
+::: {.pf-step #s1}
+The groups with normal Sylow $3$-subgroup are precisely the
 following $42$ groups $N\rtimes H$.
 
 For $N=C_9$, the symbol $+$ denotes the identity automorphism and $-$
@@ -66,7 +69,7 @@ of $H$ and specifies one group.
 There are $2+3+2+3+2=12$ groups in the second column and
 $5+8+4+8+5=30$ in the third.
 
-::: {.proof}
+::: pf-proof
 A group of order $9$ is abelian: its center is nontrivial by the
 class equation; if its center had order $3$, its quotient by the
 center would be cyclic, which forces the whole group to be abelian.
@@ -107,15 +110,18 @@ order $4$ induces all automorphisms of this quotient, giving two
 orbits. This proves completeness and distinctness in the $C_9$ column.
 
 For $C_3^2$, the automorphism group is $\operatorname{GL}_2(\mathbb F_3)$.
-Step <1>2 verifies that the third column lists each
+Step [](#s2){.pf-ref} verifies that the third column lists each
 $\operatorname{Aut}(H)\times\operatorname{GL}_2(\mathbb F_3)$-orbit of
 homomorphisms $H\to\operatorname{GL}_2(\mathbb F_3)$ exactly once. Together with the preceding
 isomorphism criterion, this proves all assertions about the $42$ groups.
 :::
 
-<1>2. The matrix-action column is exhaustive and has no repeated orbit.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+The matrix-action column is exhaustive and has no repeated orbit.
+
+::: pf-proof
 Represent a matrix by its four row-major entries. There are exactly
 the invertible matrices in the finite set $\{0,1,2\}^4$ to check.
 A tuple determines a homomorphism from a presented group exactly
@@ -126,7 +132,7 @@ homomorphism.
 The function `changes` enumerates every change of generators induced
 by an automorphism of the source. For the cyclic group these are the
 odd powers. The formulas for $C_4\times C_2$ and $D_8$ were given
-in step <1>1. In $C_4\times C_2$, the image of $r$ can be any
+in step [](#s1){.pf-ref}. In $C_4\times C_2$, the image of $r$ can be any
 of its four elements of order $4$, and the image of $s$ must be
 one of the two involutions outside that cyclic subgroup, giving
 exactly the stated formula. In $D_8$, the unique cyclic subgroup
@@ -271,7 +277,10 @@ Q8 100 5
 ```
 :::
 
-<1>3. Exactly four further groups have a normal Sylow $2$-subgroup.
+:::
+
+::: {.pf-step #s3}
+Exactly four further groups have a normal Sylow $2$-subgroup.
 
 Let $V=C_2^3=\mathbb F_2\oplus\mathbb F_2^2$, and let $\tau_V$
 fix the first coordinate and act on the second summand by
@@ -286,7 +295,7 @@ $$
 where a generator of $C_9$ acts by the indicated $\tau$, or the
 first $C_3$ factor acts by $\tau$ and the second acts trivially.
 
-::: {.proof}
+::: pf-proof
 Let $T$ be a normal Sylow $2$-subgroup and $P$ a Sylow $3$-subgroup.
 Then $G=T\rtimes P$, with $P=C_9$ or $C_3^2$. For the five possible
 types of $T$, the respective automorphism-group orders are
@@ -297,14 +306,14 @@ T&C_8&C_4\times C_2&C_2^3&D_8&Q_8\\\hline
 \end{array}
 $$
 The cyclic case counts odd generator powers; the generator formulas
-in step <1>1 give the two orders $8$; the order $168=(8-1)(8-2)(8-4)$
+in step [](#s1){.pf-ref} give the two orders $8$; the order $168=(8-1)(8-2)(8-4)$
 counts ordered bases; and the quaternion count is $6\cdot4=24$ as
-in step <1>2.
+in step [](#s2){.pf-ref}.
 
 For $C_8,C_4\times C_2,D_8$, a homomorphism from the order-$9$
 group to this automorphism group is trivial. For $V,Q_8$, its image
 has order $1$ or $3$. A trivial action gives a direct product
-already in step <1>1. Every subgroup of order $3$ in either
+already in step [](#s1){.pf-ref}. Every subgroup of order $3$ in either
 automorphism group is Sylow, so all such subgroups are conjugate.
 The displayed $\tau_V,\tau_Q$ show that nontrivial actions exist.
 Changing a generator of $C_9$, or changing a basis of $C_3^2$,
@@ -313,12 +322,15 @@ four displayed nontrivial actions remain.
 
 They are distinct: their Sylow $2$-subgroups distinguish $V$ from
 $Q_8$, and their Sylow $3$-subgroups distinguish $C_9$ from $C_3^2$.
-None belongs to step <1>1. If both Sylow subgroups were normal,
+None belongs to step [](#s1){.pf-ref}. If both Sylow subgroups were normal,
 their commutators would lie in their trivial intersection, forcing
 the action to be trivial.
 :::
 
-<1>4. The remaining four groups are
+:::
+
+::: {.pf-step #s4}
+The remaining four groups are
 $$
 S_3\times A_4,\qquad C_3\times S_4,\qquad
 C_3\rtimes_{\mathrm{sgn}}S_4,\qquad
@@ -340,8 +352,10 @@ $$
 with coordinatewise multiplication. Both maps are onto, so this
 group has order $18\cdot24/6=72$.
 
-::: {.proof}
-<2>1. Suppose neither Sylow subgroup of $G$ is normal. There are
+::: pf-proof
+
+::: pf-step
+Suppose neither Sylow subgroup of $G$ is normal. There are
 four Sylow $3$-subgroups, since their number divides $8$ and is
 $1$ modulo $3$. Let $K$ be the kernel of conjugation on these
 four subgroups. The image is transitive in $S_4$, so its order
@@ -362,8 +376,10 @@ $[(123),(124)]=(12)(34)$, using $[x,y]=xyx^{-1}y^{-1}$.
 Its conjugates in $A_4$ generate $V_4$. This proves
 both equalities. In particular the only nontrivial map $S_4\to C_2$
 is sign, and there is no nontrivial map $A_4\to C_2$.
+:::
 
-<2>2. Consider $|K|=6$. A group of order $6$ is $C_6$ or $S_3$:
+::: {.pf-step #s4-2}
+Consider $|K|=6$. A group of order $6$ is $C_6$ or $S_3$:
 its normal Sylow $3$-subgroup has an order-two complement, which
 acts either trivially or by inversion.
 
@@ -385,12 +401,14 @@ same conjugation action on $K$. Then $k^{-1}g\in C_G(K)$, so
 $G=K C_G(K)$. The intersection is $Z(K)=1$, and the two factors
 commute. Consequently
 $G\cong K\times C_G(K)\cong S_3\times A_4$.
+:::
 
-<2>3. Consider $K=N=C_3$, with $G/N\cong S_4$. Conjugation on
+::: pf-step
+Consider $K=N=C_3$, with $G/N\cong S_4$. Conjugation on
 $N$ factors through $S_4$ and is trivial or sign. In particular
 the inverse image $U$ of $V_4$ centralizes $N$. It has order $12$;
 choosing a Sylow $2$-subgroup $V$ gives $U=N\times V$, just as
-in <2>2. Thus $V\cong V_4$ is characteristic in $U$, hence
+in step [](#s4-2){.pf-ref}. Thus $V\cong V_4$ is characteristic in $U$, hence
 normal in $G$.
 
 Set $H=G/V$. Then $|H|=18$ and the induced map $q_H:H\to S_3$
@@ -402,8 +420,10 @@ $$
 is injective because $V\cap N=1$, and its image lies in the
 fiber product of $q_H$ and $\pi$. That fiber product has order
 $18\cdot24/6=72$, so the map is an isomorphism onto it.
+:::
 
-<2>4. There are exactly three possibilities for the pair $(H,\ker q_H)$.
+::: pf-step
+There are exactly three possibilities for the pair $(H,\ker q_H)$.
 Let $P$ be its unique Sylow $3$-subgroup of order $9$ and let $t$
 be an involution, so $H=P\rtimes\langle t\rangle$. The quotient
 $P/\ker q_H=C_3$ is inverted by $t$, since $H/\ker q_H=S_3$.
@@ -430,9 +450,11 @@ The first case gives $D_{18}\times_{S_3}S_4$. The second gives
 $C_3\times S_4$. In the last case split $C_3^2$ as the kernel
 line plus another line. Both are inverted by $t$, so the pullback
 is $C_3\rtimes_{\mathrm{sgn}}S_4$. This proves exhaustiveness.
+:::
 
-<2>5. All four groups exist and are distinct, and none belongs to
-steps <1>1 or <1>3. For each of the three groups projecting onto
+::: pf-step
+All four groups exist and are distinct, and none belongs to
+steps [](#s1){.pf-ref} or [](#s3){.pf-ref}. For each of the three groups projecting onto
 $S_4$ with kernel $C_3$, inverse images of its four Sylow
 $3$-subgroups are precisely the four Sylow $3$-subgroups of the
 order-$72$ group. A normal Sylow $2$-subgroup would project to a
@@ -463,12 +485,21 @@ $3$-subgroup is $C_3\times C_3$, since a $3$-cycle acts trivially
 on the kernel. This distinguishes the last two groups.
 :::
 
-<1>5. The list has exactly $50$ isomorphism classes and omits none.
+:::
 
-::: {.proof}
+:::
+
+::: pf-step
+The list has exactly $50$ isomorphism classes and omits none.
+
+::: pf-proof
 Every group has either a normal Sylow $3$-subgroup, a normal Sylow
 $2$-subgroup but not a normal Sylow $3$-subgroup, or neither.
-Steps <1>1, <1>3, and <1>4 classify these disjoint cases, with
+Steps [](#s1){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} classify these disjoint cases, with
 $42$, $4$, and $4$ distinct classes respectively. Their sum is $50$.
+:::
+
+:::
+
 :::
 :::

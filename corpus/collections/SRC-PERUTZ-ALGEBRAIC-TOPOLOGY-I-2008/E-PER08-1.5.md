@@ -37,8 +37,12 @@ A=\{a_1,\dots,a_p\}\subset\mathbb R^n,
 X=\mathbb R^n\setminus A.
 \]
 
-<1>1. The assertion holds for $n=1$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+The assertion holds for $n=1$.
+
+::: pf-proof
 After ordering the punctures as
 \[
 a_1<a_2<\cdots<a_p,
@@ -55,10 +59,18 @@ Now $S^0$ is a two-point space. Wedge together $p$ copies of $S^0$ by identifyin
 \]
 :::
 
+:::
+
+:::
+
 Assume henceforth that $n\ge2$.
 
-<1>2. Replace the punctures by small spherical boundary components and truncate infinity.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s2}
+Replace the punctures by small spherical boundary components and truncate infinity.
+
+::: pf-proof
 Choose pairwise disjoint closed balls
 \[
 B_i=\overline B(a_i,\varepsilon_i),
@@ -80,8 +92,12 @@ X\simeq M.
 \]
 :::
 
-<1>3. The punctured ball $M$ has a spine consisting of the inner spheres joined by a tree.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+The punctured ball $M$ has a spine consisting of the inner spheres joined by a tree.
+
+::: pf-proof
 Choose points $q_i\in\partial B_i$. Because $n\ge2$ and $M$ is connected, one can choose embedded arcs in $M$ joining the $q_i$ so that their union is a finite tree $T$ and
 \[
 T\cap\partial B_i=\{q_i\}
@@ -99,8 +115,12 @@ M\simeq K.
 Equivalently, this is the usual spine of an $n$-ball with $p$ holes.
 :::
 
-<1>4. The spine $K$ is homotopy equivalent to a wedge of $p$ copies of $S^{n-1}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+The spine $K$ is homotopy equivalent to a wedge of $p$ copies of $S^{n-1}$.
+
+::: pf-proof
 The tree $T$ is a contractible subcomplex of the finite CW complex $K$. Collapsing a contractible subcomplex that is included as a CW subcomplex is a homotopy equivalence: collapse the edges of the tree one at a time, starting with terminal edges, using the homotopy extension property for the adjacent cells.
 
 After all of $T$ is collapsed to one point, each sphere $\partial B_i\cong S^{n-1}$ meets all the others only at that common point. Thus
@@ -113,12 +133,16 @@ K\simeq\bigvee_{i=1}^p S^{n-1}.
 \]
 :::
 
-Combining <1>2--<1>4 gives, for $n\ge2$,
+:::
+
+:::
+
+Combining steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} gives, for $n\ge2$,
 \[
 \mathbb R^n\setminus\{a_1,\dots,a_p\}
 \simeq M
 \simeq K
 \simeq\bigvee_{i=1}^p S^{n-1}.
 \]
-Together with <1>1, this proves the result for every $n\ge1$.
+Together with step [](#s1){.pf-ref}, this proves the result for every $n\ge1$.
 :::

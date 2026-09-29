@@ -58,10 +58,11 @@ $g \geq 0$ gives $f_n \geq 0$; $g \leq 1$ gives $f_n(x) = \int_0^{x - 1/n} g \le
 
 :::
 
-:::
 
 ::: pf-qed
 Steps [](#fn-well-defined-continuous){.pf-ref} and [](#fn-bounded-by-x-minus-1n){.pf-ref}.
+:::
+
 :::
 
 :::
@@ -93,7 +94,6 @@ $f_n(x_1) = 0$ by definition on $[0, 1/n]$, and $|f_n(x_2)| \leq x_2 - 1/n$ by s
 For $x_1 \leq x_2 < 1/n$, both values are $0$.
 :::
 
-:::
 
 ::: pf-qed
 Taking $x_1 \leq x_2$, steps [](#lipschitz-case-both-above){.pf-ref}, [](#lipschitz-case-straddle){.pf-ref}, and [](#lipschitz-case-both-below){.pf-ref} cover the three possible positions of $x_1, x_2$ relative to $1/n$.
@@ -101,31 +101,60 @@ Taking $x_1 \leq x_2$, steps [](#lipschitz-case-both-above){.pf-ref}, [](#lipsch
 
 :::
 
-<1>3. Arzelà–Ascoli gives a subsequence $f_{n_k} \to f$ uniformly on $[0,1]$, with $f$ continuous.
-::: {.proof}
-$\{f_n\}$ is uniformly bounded by $1$ (<1>1) and equicontinuous (<1>2: a common Lipschitz constant), so Arzelà–Ascoli applies on the compact interval $[0,1]$.
 :::
 
-<1>4. The limit $f$ satisfies $f(x) = \int_0^x g(t, f(t)) \, dt$ for every $x$.
-<2>1. $g(t, f_{n_k}(t)) \to g(t, f(t))$ uniformly in $t$.
-::: {.proof}
-$g$ is uniformly continuous on the compact square $[0,1]^2$, and $f_{n_k} \to f$ uniformly (<1>3).
-:::
-<2>2. For each fixed $x \in (0,1]$: $\int_0^{x - 1/n_k} g(t, f_{n_k}(t)) \, dt \to \int_0^x g(t, f(t)) \, dt$.
-::: {.proof}
-For $k$ large, $1/n_k \leq x$, and then $\left|\int_0^{x - 1/n_k} g(t, f_{n_k}(t))\,dt - \int_0^x g(t, f(t))\,dt\right| \leq \int_0^{x - 1/n_k} |g(t, f_{n_k}(t)) - g(t, f(t))|\,dt + \int_{x - 1/n_k}^x |g(t, f(t))|\,dt \leq \sup_t |g(t, f_{n_k}(t)) - g(t, f(t))| + \frac1{n_k}$, which tends to $0$ by <2>1 and the width $\frac1{n_k} \to 0$.
-:::
-<2>3. For $x = 0$: $f(0) = 0 = \int_0^0 g(t, f(t))\,dt$.
-::: {.proof}
-$f_{n_k}(0) = 0$ by definition, and $f(0) = \lim_k f_{n_k}(0)$ by <1>3.
-:::
-<2>4. Q.E.D.
-::: {.proof}
-For $x > 0$ and $k$ large, $f_{n_k}(x) = \int_0^{x - 1/n_k} g(t, f_{n_k}(t))\,dt$ converges to $f(x)$ by uniform convergence and to $\int_0^x g(t, f(t))\,dt$ by <2>2, so the two limits agree. Step <2>3 covers $x = 0$.
+::: {.pf-step #ascoli-subsequence}
+Arzelà–Ascoli gives a subsequence $f_{n_k} \to f$ uniformly on $[0,1]$, with $f$ continuous.
+
+::: pf-proof
+$\{f_n\}$ is uniformly bounded by $1$ (step [](#fn-well-defined-bounded){.pf-ref}) and equicontinuous (step [](#fn-lipschitz){.pf-ref}: a common Lipschitz constant), so Arzelà–Ascoli applies on the compact interval $[0,1]$.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-Step <1>3 gives continuity of $f$, and step <1>4 gives the integral equation.
+:::
+
+::: {.pf-step #limit-satisfies-equation}
+The limit $f$ satisfies $f(x) = \int_0^x g(t, f(t)) \, dt$ for every $x$.
+
+::: pf-proof
+
+::: {.pf-step #g-converges-uniformly}
+$g(t, f_{n_k}(t)) \to g(t, f(t))$ uniformly in $t$.
+
+::: pf-proof
+$g$ is uniformly continuous on the compact square $[0,1]^2$, and $f_{n_k} \to f$ uniformly (step [](#ascoli-subsequence){.pf-ref}).
+:::
+
+:::
+
+::: {.pf-step #integral-converges}
+For each fixed $x \in (0,1]$: $\int_0^{x - 1/n_k} g(t, f_{n_k}(t)) \, dt \to \int_0^x g(t, f(t)) \, dt$.
+
+::: pf-proof
+For $k$ large, $1/n_k \leq x$, and then $\left|\int_0^{x - 1/n_k} g(t, f_{n_k}(t))\,dt - \int_0^x g(t, f(t))\,dt\right| \leq \int_0^{x - 1/n_k} |g(t, f_{n_k}(t)) - g(t, f(t))|\,dt + \int_{x - 1/n_k}^x |g(t, f(t))|\,dt \leq \sup_t |g(t, f_{n_k}(t)) - g(t, f(t))| + \frac1{n_k}$, which tends to $0$ by step [](#g-converges-uniformly){.pf-ref} and the width $\frac1{n_k} \to 0$.
+:::
+
+:::
+
+::: {.pf-step #base-case-x-zero}
+For $x = 0$: $f(0) = 0 = \int_0^0 g(t, f(t))\,dt$.
+
+::: pf-proof
+$f_{n_k}(0) = 0$ by definition, and $f(0) = \lim_k f_{n_k}(0)$ by step [](#ascoli-subsequence){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+For $x > 0$ and $k$ large, $f_{n_k}(x) = \int_0^{x - 1/n_k} g(t, f_{n_k}(t))\,dt$ converges to $f(x)$ by uniform convergence and to $\int_0^x g(t, f(t))\,dt$ by step [](#integral-converges){.pf-ref}, so the two limits agree. Step [](#base-case-x-zero){.pf-ref} covers $x = 0$.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Step [](#ascoli-subsequence){.pf-ref} gives continuity of $f$, and step [](#limit-satisfies-equation){.pf-ref} gives the integral equation.
+:::
+
 :::
 :::

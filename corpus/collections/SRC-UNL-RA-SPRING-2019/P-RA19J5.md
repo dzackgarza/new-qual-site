@@ -34,7 +34,7 @@ Compute the value of the Riemann--Stieltjes integral
 $$\int_0^4 f(x)\,d\alpha.$$
 :::
 
-:::: {.solution}
+::: {.solution}
 The key point is that the integrator is not continuous at $2$:
 \[
 \alpha(2)=3,
@@ -43,8 +43,12 @@ The key point is that the integrator is not continuous at $2$:
 \]
 Thus there is a jump of size $1$ immediately to the right of $2$.
 
-<1>1. Verify the Riemann--Stieltjes condition.
-::: {.proof}
+::: pf
+
+::: pf-step
+Verify the Riemann--Stieltjes condition.
+
+::: pf-proof
 The function $\alpha$ is increasing on $[0,4]$. Let $P$ be a partition containing $2$. On intervals not adjacent to $2$, the increment of $\alpha$ is either $\Delta x$ or $3\Delta x$. On the interval $[2,x_i]$ immediately to the right of $2$,
 \[
 \alpha(x_i)-\alpha(2)=1+3(x_i-2).
@@ -62,8 +66,12 @@ f\in\mathcal R_\alpha[0,4].
 \]
 :::
 
-<1>2. Separate the jump from the absolutely continuous pieces.
-::: {.proof}
+:::
+
+::: pf-step
+Separate the jump from the absolutely continuous pieces.
+
+::: pf-proof
 Define
 \[
 \beta(x)=
@@ -95,8 +103,12 @@ Therefore
 \]
 :::
 
-<1>3. Compute the value.
-::: {.proof}
+:::
+
+::: pf-step
+Compute the value.
+
+::: pf-proof
 With $f(x)=e^{2x}$,
 \[
 \begin{aligned}
@@ -106,4 +118,9 @@ With $f(x)=e^{2x}$,
 \end{aligned}
 \]
 :::
-::::
+
+:::
+
+:::
+
+:::

@@ -32,15 +32,23 @@ b) By using Green's theorem or the general Stokes' theorem.
 
 
 ::: {.solution}
-<1>1. The path $\gamma$ is the positively oriented boundary of the quarter disk
+
+::: pf
+
+::: pf-step
+The path $\gamma$ is the positively oriented boundary of the quarter disk
 \[
 D=\{(x,y):x\ge0,\ y\ge0,\ x^2+y^2\le4\}.
 \]
-::: {.proof}
+
+::: pf-proof
 The circular arc runs counterclockwise from $(2,0)$ to $(0,2)$, then the path follows the positive $y$-axis down to the origin and the positive $x$-axis back to $(2,0)$. Thus the enclosed region lies to the left of the traversal.
 :::
 
-<1>2. Write the integrand as
+:::
+
+::: pf-step
+Write the integrand as
 \[
 P\,dx+Q\,dy
 \quad\text{with}\quad
@@ -50,22 +58,34 @@ Then
 \[
 \frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}=2-1=1.
 \]
+
 :::
 
-<1>3. By Green's theorem,
+::: {.pf-step #s3}
+By Green's theorem,
 \[
 \int_\gamma y\,dx+2x\,dy
 =\iint_D 1\,dA.
 \]
 
-<1>4. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{\int_\gamma y\,dx+2x\,dy=\pi}.
 \]
-::: {.proof}
+
+::: pf-proof
 The region $D$ is one quarter of a disk of radius $2$, so
 \[
 \operatorname{area}(D)=\frac14\pi(2)^2=\pi.
 \]
-Combining this with <1>3 gives the result.
+Combining this with step [](#s3){.pf-ref} gives the result.
+:::
+
+:::
+
+:::
+
 :::

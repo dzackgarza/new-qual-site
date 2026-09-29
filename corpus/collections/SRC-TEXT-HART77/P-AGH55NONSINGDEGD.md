@@ -110,7 +110,7 @@ In either case the nonsingular hypersurface is a curve, i.e. a geometrically irr
 ::: pf-proof
 Each displayed equation is a nonzero homogeneous polynomial of positive degree in $\PP^2$, so every irreducible component has dimension one.
 If the polynomial became reducible over an algebraic closure, write it as $AB$ with $A,B$ nonconstant homogeneous polynomials.
-The positive-degree plane curves $A=0$ and $B=0$ meet by the projective-plane intersection argument in [[P-AGH31CONICS]], step <1>5.
+The positive-degree plane curves $A=0$ and $B=0$ meet by the projective-plane intersection argument in [[P-AGH31CONICS]], step 5.
 At a point of intersection, every first partial derivative
 $$
 \partial(AB)=A\,\partial B+B\,\partial A

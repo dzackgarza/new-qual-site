@@ -24,34 +24,98 @@ Consider the maps $g, h: S^1 \to S^1$ given by $g(z) = z^n$ and $h(z) = 1/z^n$.
 :::
 
 ::: {.solution}
-<1>1. Identification of $\pi_1(S^1, 1)$ with $\mathbb{Z}$:
-    *Proof:*
-    <2>1. Take the basepoint $b_0 = 1 = e^{i \cdot 0} \in S^1$.
-    <2>2. The standard fundamental loop generating $\pi_1(S^1, 1) \cong \mathbb{Z}$ is:
-        $$\gamma(s) = e^{2\pi i s} = \cos(2\pi s) + i \sin(2\pi s) \quad \text{for } s \in [0, 1].$$
-    <2>3. Under the standard covering map $p: \mathbb{R} \to S^1$ with $p(t) = e^{2\pi i t}$, the unique lift $\tilde{\gamma}: [0, 1] \to \mathbb{R}$ starting at $0$ is $\tilde{\gamma}(s) = s$, with terminal point $\tilde{\gamma}(1) = 1$.
-    <2>4. Thus the isomorphism $\operatorname{deg}: \pi_1(S^1, 1) \xrightarrow{\cong} \mathbb{Z}$ sends $[\gamma] \mapsto 1$.
+::: pf
 
-<1>2. Computation of $g_*$:
-    *Proof:*
-    <2>1. The composition $g \circ \gamma: [0, 1] \to S^1$ is:
-        $$(g \circ \gamma)(s) = g(e^{2\pi i s}) = (e^{2\pi i s})^n = e^{2\pi i n s} = \cos(2\pi n s) + i \sin(2\pi n s).$$
-    <2>2. The unique lift of $g \circ \gamma$ to $\mathbb{R}$ starting at $0$ is $\widetilde{g \circ \gamma}(s) = n s$.
-    <2>3. The endpoint is $\widetilde{g \circ \gamma}(1) = n$.
-    <2>4. Thus $g_*([\gamma]) = [g \circ \gamma] = [\gamma]^n$.
-    <2>5. Expressing $\pi_1(S^1, 1) \cong \mathbb{Z}$ additively, $g_*$ is multiplication by $n$:
-        $$g_*(k) = n k \quad \text{for all } k \in \mathbb{Z}.$$
+::: {.pf-step #s1}
+Identification of $\pi_1(S^1, 1)$ with $\mathbb{Z}$:
 
-<1>3. Computation of $h_*$:
-    *Proof:*
-    <2>1. The composition $h \circ \gamma: [0, 1] \to S^1$ is:
-        $$(h \circ \gamma)(s) = h(e^{2\pi i s}) = (e^{2\pi i s})^{-n} = e^{-2\pi i n s} = \cos(-2\pi n s) + i \sin(-2\pi n s).$$
-    <2>2. The unique lift of $h \circ \gamma$ to $\mathbb{R}$ starting at $0$ is $\widetilde{h \circ \gamma}(s) = -n s$.
-    <2>3. The endpoint is $\widetilde{h \circ \gamma}(1) = -n$.
-    <2>4. Thus $h_*([\gamma]) = [h \circ \gamma] = [\gamma]^{-n}$.
-    <2>5. Expressing $\pi_1(S^1, 1) \cong \mathbb{Z}$ additively, $h_*$ is multiplication by $-n$:
-        $$h_*(k) = -n k \quad \text{for all } k \in \mathbb{Z}.$$
+::: pf-proof
 
-<1>4. Q.E.D.
-    By steps <1>2 and <1>3, under the identification $\pi_1(S^1, 1) \cong \mathbb{Z}$ of step <1>1, $\boxed{g_*(k) = n k \text{ and } h_*(k) = -n k}$.
+::: pf-step
+Take the basepoint $b_0 = 1 = e^{i \cdot 0} \in S^1$.
+:::
+
+::: pf-step
+The standard fundamental loop generating $\pi_1(S^1, 1) \cong \mathbb{Z}$ is:
+$$\gamma(s) = e^{2\pi i s} = \cos(2\pi s) + i \sin(2\pi s) \quad \text{for } s \in [0, 1].$$
+:::
+
+::: pf-step
+Under the standard covering map $p: \mathbb{R} \to S^1$ with $p(t) = e^{2\pi i t}$, the unique lift $\tilde{\gamma}: [0, 1] \to \mathbb{R}$ starting at $0$ is $\tilde{\gamma}(s) = s$, with terminal point $\tilde{\gamma}(1) = 1$.
+:::
+
+::: pf-step
+Thus the isomorphism $\operatorname{deg}: \pi_1(S^1, 1) \xrightarrow{\cong} \mathbb{Z}$ sends $[\gamma] \mapsto 1$.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+Computation of $g_*$:
+
+::: pf-proof
+
+::: pf-step
+The composition $g \circ \gamma: [0, 1] \to S^1$ is:
+$$(g \circ \gamma)(s) = g(e^{2\pi i s}) = (e^{2\pi i s})^n = e^{2\pi i n s} = \cos(2\pi n s) + i \sin(2\pi n s).$$
+:::
+
+::: pf-step
+The unique lift of $g \circ \gamma$ to $\mathbb{R}$ starting at $0$ is $\widetilde{g \circ \gamma}(s) = n s$.
+:::
+
+::: pf-step
+The endpoint is $\widetilde{g \circ \gamma}(1) = n$.
+:::
+
+::: pf-step
+Thus $g_*([\gamma]) = [g \circ \gamma] = [\gamma]^n$.
+:::
+
+::: pf-step
+Expressing $\pi_1(S^1, 1) \cong \mathbb{Z}$ additively, $g_*$ is multiplication by $n$:
+$$g_*(k) = n k \quad \text{for all } k \in \mathbb{Z}.$$
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+Computation of $h_*$:
+
+::: pf-proof
+
+::: pf-step
+The composition $h \circ \gamma: [0, 1] \to S^1$ is:
+$$(h \circ \gamma)(s) = h(e^{2\pi i s}) = (e^{2\pi i s})^{-n} = e^{-2\pi i n s} = \cos(-2\pi n s) + i \sin(-2\pi n s).$$
+:::
+
+::: pf-step
+The unique lift of $h \circ \gamma$ to $\mathbb{R}$ starting at $0$ is $\widetilde{h \circ \gamma}(s) = -n s$.
+:::
+
+::: pf-step
+The endpoint is $\widetilde{h \circ \gamma}(1) = -n$.
+:::
+
+::: pf-step
+Thus $h_*([\gamma]) = [h \circ \gamma] = [\gamma]^{-n}$.
+:::
+
+::: pf-step
+Expressing $\pi_1(S^1, 1) \cong \mathbb{Z}$ additively, $h_*$ is multiplication by $-n$:
+$$h_*(k) = -n k \quad \text{for all } k \in \mathbb{Z}.$$
+:::
+
+:::
+
+:::
+
+::: pf-qed
+By steps [](#s2){.pf-ref} and [](#s3){.pf-ref}, under the identification $\pi_1(S^1, 1) \cong \mathbb{Z}$ of step [](#s1){.pf-ref}, $\boxed{g_*(k) = n k \text{ and } h_*(k) = -n k}$.
+:::
+
 :::

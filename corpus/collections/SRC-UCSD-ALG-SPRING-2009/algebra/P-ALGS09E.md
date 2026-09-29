@@ -32,36 +32,83 @@ Show that $K$ and $L$ are $F$-isomorphic (i.e.\ there exists an isomorphism from
 ::: {.solution}
 **Goal.** Show $K \cong_F L$ iff the corresponding subgroups $H = \Gal(E/K)$ and $H' = \Gal(E/L)$ are conjugate in $G$.
 
-<1>1. ($\Rightarrow$) Suppose $\sigma: K \to L$ is an $F$-isomorphism.
-<2>1. Extend $\sigma$ to an automorphism $\tilde\sigma \in G = \Gal(E/F)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+($\Rightarrow$) Suppose $\sigma: K \to L$ is an $F$-isomorphism.
+
+::: pf-proof
+
+::: pf-step
+Extend $\sigma$ to an automorphism $\tilde\sigma \in G = \Gal(E/F)$.
+
+::: pf-proof
 $E/F$ is Galois, so any $F$-embedding $K \to E$ extends to an automorphism of $E$ (extend $\sigma$ to an $F$-embedding $K \to E$ and use normality).
 :::
-<2>2. $\tilde\sigma(K) = L$.
-::: {.proof}
-$\tilde\sigma$ extends $\sigma$, and $\sigma(K) = L$.
-:::
-<2>3. Hence $\Gal(E/L) = \Gal(E/\tilde\sigma(K)) = \tilde\sigma \Gal(E/K) \tilde\sigma^{-1}$.
-::: {.proof}
-the Galois group of $\tilde\sigma(K)$ is the conjugate of the Galois group of $K$ by $\tilde\sigma$.
-:::
-<2>4. Hence $H' = \tilde\sigma H \tilde\sigma^{-1}$, so $H$ and $H'$ are conjugate.
-::: {.proof}
-<1>2.3.
+
 :::
 
-<1>2. ($\Leftarrow$) Suppose $H' = g H g^{-1}$ for some $g \in G$.
-<2>1. $L = E^{H'} = E^{gHg^{-1}} = g(E^H) = g(K)$.
-::: {.proof}
+::: pf-step
+$\tilde\sigma(K) = L$.
+
+::: pf-proof
+$\tilde\sigma$ extends $\sigma$, and $\sigma(K) = L$.
+:::
+
+:::
+
+::: {.pf-step #s1-3}
+Hence $\Gal(E/L) = \Gal(E/\tilde\sigma(K)) = \tilde\sigma \Gal(E/K) \tilde\sigma^{-1}$.
+
+::: pf-proof
+the Galois group of $\tilde\sigma(K)$ is the conjugate of the Galois group of $K$ by $\tilde\sigma$.
+:::
+
+:::
+
+::: pf-step
+Hence $H' = \tilde\sigma H \tilde\sigma^{-1}$, so $H$ and $H'$ are conjugate.
+
+::: pf-proof
+step [](#s1-3){.pf-ref}.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+($\Leftarrow$) Suppose $H' = g H g^{-1}$ for some $g \in G$.
+
+::: pf-proof
+
+::: pf-step
+$L = E^{H'} = E^{gHg^{-1}} = g(E^H) = g(K)$.
+
+::: pf-proof
 the fixed field of $gHg^{-1}$ is $g$ applied to the fixed field of $H$.
 :::
-<2>2. Hence $g|_K: K \to L$ is an $F$-isomorphism.
-::: {.proof}
+
+:::
+
+::: pf-step
+Hence $g|_K: K \to L$ is an $F$-isomorphism.
+
+::: pf-proof
 $g$ fixes $F$ (it is in $\Gal(E/F)$) and maps $K$ onto $L$.
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>1 and <1>2 give both directions.
+:::
+
+:::
+
+:::
+
+::: pf-qed
+step [](#s1){.pf-ref} and step [](#s2){.pf-ref} give both directions.
+:::
+
 :::
 :::

@@ -38,8 +38,12 @@ Let
 \]
 be the sectionwise direct-limit presheaf.  We assume, as usual for a direct system, that the index set is directed.
 
-<1>1. Every open subset of a noetherian topological space is quasicompact.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+Every open subset of a noetherian topological space is quasicompact.
+
+::: pf-proof
 Let $U\subseteq X$ be open and suppose
 \[
 U=\bigcup_{\alpha\in A}U_\alpha
@@ -66,8 +70,12 @@ U_{\alpha_1}\cup U_{\alpha_2}
 form a strictly ascending chain.  A noetherian topological space satisfies the ascending-chain condition on open subsets, contradiction.  Thus a finite subcover exists.
 :::
 
-<1>2. The presheaf $\mcp$ satisfies uniqueness for a finite open cover.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+The presheaf $\mcp$ satisfies uniqueness for a finite open cover.
+
+::: pf-proof
 Let
 \[
 U=U_1\cup\cdots\cup U_r
@@ -105,8 +113,12 @@ s_j=t_j.
 Hence $s=t$ in $\mcp(U)$.
 :::
 
-<1>3. The presheaf $\mcp$ satisfies gluing for a finite open cover.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+The presheaf $\mcp$ satisfies gluing for a finite open cover.
+
+::: pf-proof
 Let
 \[
 U=U_1\cup\cdots\cup U_r
@@ -146,24 +158,28 @@ s\in\mcp(U)
 restricts to the original sections $s_a$.
 :::
 
-<1>4. The presheaf $\mcp$ is a sheaf for arbitrary open covers.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+The presheaf $\mcp$ is a sheaf for arbitrary open covers.
+
+::: pf-proof
 Let
 \[
 U=\bigcup_{\alpha\in A}U_\alpha
 \]
-be any open cover.  By <1>1, choose a finite subcover
+be any open cover.  By step [](#s1){.pf-ref}, choose a finite subcover
 \[
 U=U_{\alpha_1}\cup\cdots\cup U_{\alpha_r}.
 \]
 
-Uniqueness for the original cover follows immediately from uniqueness for this finite subcover, proved in <1>2.
+Uniqueness for the original cover follows immediately from uniqueness for this finite subcover, proved in step [](#s2){.pf-ref}.
 
 Now suppose a compatible family
 \[
 s_\alpha\in\mcp(U_\alpha)
 \]
-is given.  By <1>3, the finite subfamily indexed by $\alpha_1,\ldots,\alpha_r$ glues to a section
+is given.  By step [](#s3){.pf-ref}, the finite subfamily indexed by $\alpha_1,\ldots,\alpha_r$ glues to a section
 \[
 s\in\mcp(U).
 \]
@@ -178,7 +194,7 @@ restrict to the same section on each open
 U_\alpha\cap U_{\alpha_a},
 \qquad 1\le a\le r,
 \]
-because the original family was compatible.  These finitely many intersections cover $U_\alpha$, so <1>2 gives
+because the original family was compatible.  These finitely many intersections cover $U_\alpha$, so step [](#s2){.pf-ref} gives
 \[
 s|_{U_\alpha}=s_\alpha.
 \]
@@ -187,26 +203,34 @@ Thus $s$ glues the entire family.
 Hence $\mcp$ satisfies both sheaf axioms for every cover.
 :::
 
-<1>5. Therefore no sheafification is needed:
+:::
+
+::: {.pf-step #s5}
+Therefore no sheafification is needed:
 \[
 \boxed{
 \varinjlim_i\mcf_i
 =\left(U\longmapsto\varinjlim_i\mcf_i(U)\right).
 }
 \]
-::: {.proof}
-Hartshorne II.1.10 defines the direct limit sheaf as the sheafification of $\mcp$.  By <1>4, $\mcp$ is already a sheaf, so its sheafification map is an isomorphism.
+
+::: pf-proof
+Hartshorne II.1.10 defines the direct limit sheaf as the sheafification of $\mcp$.  By step [](#s4){.pf-ref}, $\mcp$ is already a sheaf, so its sheafification map is an isomorphism.
 :::
 
-<1>6. In particular,
+:::
+
+::: {.pf-step #s6}
+In particular,
 \[
 \boxed{
 \Gamma\!\left(X,\varinjlim_i\mcf_i\right)
 =\varinjlim_i\Gamma(X,\mcf_i).
 }
 \]
-::: {.proof}
-Evaluate the equality of sheaves in <1>5 on the open set $X$:
+
+::: pf-proof
+Evaluate the equality of sheaves in step [](#s5){.pf-ref} on the open set $X$:
 \[
 \left(\varinjlim_i\mcf_i\right)(X)
 =\mcp(X)
@@ -215,8 +239,11 @@ Evaluate the equality of sheaves in <1>5 on the open set $X$:
 By definition, these are the two sides of the displayed identity.
 :::
 
-<1>7. Q.E.D.
-::: {.proof}
-Step <1>5 proves that the sectionwise direct limit is already a sheaf, and <1>6 gives the stated consequence for global sections.
+:::
+
+::: pf-qed
+Step [](#s5){.pf-ref} proves that the sectionwise direct limit is already a sheaf, and step [](#s6){.pf-ref} gives the stated consequence for global sections.
+:::
+
 :::
 :::

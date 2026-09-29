@@ -37,23 +37,39 @@ In each case below find $L$ (allowing for values of $\pm\infty$) and justify the
 ::: {.solution}
 **(a).**
 
-<1>1. On $[0, \sqrt{\pi}]$, $\cos(x^2) \ge 0$ for $x^2 \le \pi/2$ and $\cos(x^2) < 0$ for $x^2 > \pi/2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p1-s1}
+On $[0, \sqrt{\pi}]$, $\cos(x^2) \ge 0$ for $x^2 \le \pi/2$ and $\cos(x^2) < 0$ for $x^2 > \pi/2$.
+
+::: pf-proof
 $\cos$ is positive on $[0, \pi/2)$ and negative on $(\pi/2, \pi]$.
 :::
 
-<1>2. Hence $e^{-n\cos(x^2)} \to 0$ pointwise on $\{x : \cos(x^2) > 0\}$ and $\to \infty$ on $\{x : \cos(x^2) < 0\}$.
-::: {.proof}
-<1>1.
 :::
 
-<1>3. The integrand is dominated by $1$ on $\{x : \cos(x^2) \ge 0\}$ (where $e^{-n\cos} \le 1$), and on $\{x : \cos(x^2) < 0\}$ it grows.
-::: {.proof}
-<1>2.
+::: {.pf-step #p1-s2}
+Hence $e^{-n\cos(x^2)} \to 0$ pointwise on $\{x : \cos(x^2) > 0\}$ and $\to \infty$ on $\{x : \cos(x^2) < 0\}$.
+
+::: pf-proof
+step [](#p1-s1){.pf-ref}.
 :::
 
-<1>4. The contribution from the region where $\cos(x^2)\ge0$ tends to $0$, while the contribution from the region where $\cos(x^2)<0$ tends to $+\infty$.
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s3}
+The integrand is dominated by $1$ on $\{x : \cos(x^2) \ge 0\}$ (where $e^{-n\cos} \le 1$), and on $\{x : \cos(x^2) < 0\}$ it grows.
+
+::: pf-proof
+step [](#p1-s2){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p1-s4}
+The contribution from the region where $\cos(x^2)\ge0$ tends to $0$, while the contribution from the region where $\cos(x^2)<0$ tends to $+\infty$.
+
+::: pf-proof
 On the first region, dominated convergence applies with dominating function $1$. On the second region, which has positive measure, Fatou's lemma gives
 \[
 \liminf_{n\to\infty}\int_{\{\cos(x^2)<0\}}e^{-n\cos(x^2)}\,dx
@@ -63,25 +79,45 @@ On the first region, dominated convergence applies with dominating function $1$.
 \]
 :::
 
-<1>5. Hence $L = +\infty$.
-::: {.proof}
-<1>4.
+:::
+
+::: {.pf-step #p1-s5}
+Hence $L = +\infty$.
+
+::: pf-proof
+step [](#p1-s4){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(b).**
 
-<1>1. $\sum_{k=0}^{N} \frac{x^k}{k!} \to e^x$ as $N \to \infty$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p2-s1}
+$\sum_{k=0}^{N} \frac{x^k}{k!} \to e^x$ as $N \to \infty$.
+
+::: pf-proof
 power series of the exponential.
 :::
 
-<1>2. Hence $\sum_{k=0}^{N} \int_0^N \frac{x^k}{k!} e^{-2x}\,dx = \int_0^N \left(\sum_{k=0}^{N} \frac{x^k}{k!}\right) e^{-2x}\,dx$.
-::: {.proof}
-<1>1 and linearity.
 :::
 
-<1>3. As $N \to \infty$, this tends to $\int_0^\infty e^x e^{-2x}\,dx = \int_0^\infty e^{-x}\,dx = 1$.
-::: {.proof}
+::: pf-step
+Hence $\sum_{k=0}^{N} \int_0^N \frac{x^k}{k!} e^{-2x}\,dx = \int_0^N \left(\sum_{k=0}^{N} \frac{x^k}{k!}\right) e^{-2x}\,dx$.
+
+::: pf-proof
+step [](#p2-s1){.pf-ref} and linearity.
+:::
+
+:::
+
+::: {.pf-step #p2-s3}
+As $N \to \infty$, this tends to $\int_0^\infty e^x e^{-2x}\,dx = \int_0^\infty e^{-x}\,dx = 1$.
+
+::: pf-proof
 Define
 \[
 h_N(x)=\mathbf1_{[0,N]}(x)e^{-2x}\sum_{k=0}^N\frac{x^k}{k!}.
@@ -89,35 +125,62 @@ h_N(x)=\mathbf1_{[0,N]}(x)e^{-2x}\sum_{k=0}^N\frac{x^k}{k!}.
 Then $h_N\uparrow e^{-x}$ pointwise on $[0,\infty)$, so the Monotone Convergence Theorem gives the claimed limit.
 :::
 
-<1>4. Hence $L = 1$.
-::: {.proof}
-<1>3.
+:::
+
+::: {.pf-step #p2-s4}
+Hence $L = 1$.
+
+::: pf-proof
+step [](#p2-s3){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(c).**
 
-<1>1. Tonelli's theorem permits reversing the order of integration, and $\int_0^\infty e^{-y/x}\,dy=x$ for fixed $x>0$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p3-s1}
+Tonelli's theorem permits reversing the order of integration, and $\int_0^\infty e^{-y/x}\,dy=x$ for fixed $x>0$.
+
+::: pf-proof
 The integrand is nonnegative, so Tonelli applies without any prior integrability assumption. The inner integral equals $x$ by the change of variables $u=y/x$.
 :::
 
-<1>2. Hence $L = \int_0^\infty x e^{-x^2/2}\,dx$.
-::: {.proof}
-<1>1.
 :::
 
-<1>3. $\int_0^\infty x e^{-x^2/2}\,dx = 1$ (substituting $u = x^2/2$, $du = x\,dx$).
-::: {.proof}
+::: {.pf-step #p3-s2}
+Hence $L = \int_0^\infty x e^{-x^2/2}\,dx$.
+
+::: pf-proof
+step [](#p3-s1){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p3-s3}
+$\int_0^\infty x e^{-x^2/2}\,dx = 1$ (substituting $u = x^2/2$, $du = x\,dx$).
+
+::: pf-proof
 $\int_0^\infty x e^{-x^2/2}\,dx = \int_0^\infty e^{-u}\,du = 1$.
 :::
 
-<1>4. Hence $L = 1$.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>5 (a), <1>4 (b), <1>4 (c).
+::: {.pf-step #p3-s4}
+Hence $L = 1$.
+
+::: pf-proof
+step [](#p3-s2){.pf-ref} and step [](#p3-s3){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+step [](#p1-s5){.pf-ref} (a), step [](#p2-s4){.pf-ref} (b), step [](#p3-s4){.pf-ref} (c).
+:::
+
 :::
 :::

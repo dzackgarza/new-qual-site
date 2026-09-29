@@ -29,19 +29,35 @@ On any closed orientable surface $\Sigma_g$ of genus $g \geq 1$, it is possible 
 :::
 
 ::: {.solution}
-<1>1. Choose oriented simple closed curves $\alpha,\beta\subset\Sigma_g$ meeting transversely in one point. By hypothesis their algebraic intersection number is
+
+::: pf
+
+::: pf-step
+Choose oriented simple closed curves $\alpha,\beta\subset\Sigma_g$ meeting transversely in one point. By hypothesis their algebraic intersection number is
 $$
 I(\alpha,\beta)=\pm1.
 $$
+:::
 
-<1>2. Let $a,b\in H^1(\Sigma_g;\mathbb Z)$ be the Poincaré duals of $[\alpha]$ and $[\beta]$.
-<2>1. The cup-product interpretation of intersection number gives
+::: pf-step
+Let $a,b\in H^1(\Sigma_g;\mathbb Z)$ be the Poincaré duals of $[\alpha]$ and $[\beta]$.
+
+::: pf-proof
+
+::: pf-step
+The cup-product interpretation of intersection number gives
 $$
 \langle a\smile b,[\Sigma_g]\rangle=I(\alpha,\beta)=\pm1.
 $$
 Thus $a\smile b$ is a generator of $H^2(\Sigma_g;\mathbb Z)$ up to sign.
+:::
 
-<1>3. Let $f:S^2\to\Sigma_g$ be continuous. Since $H^1(S^2;\mathbb Z)=0$,
+:::
+
+:::
+
+::: {.pf-step #s3}
+Let $f:S^2\to\Sigma_g$ be continuous. Since $H^1(S^2;\mathbb Z)=0$,
 $$
 f^*a=f^*b=0.
 $$
@@ -49,12 +65,17 @@ Hence, by naturality of the cup product,
 $$
 f^*(a\smile b)=f^*a\smile f^*b=0.
 $$
+:::
 
-<1>4. On the other hand, the definition of degree gives
+::: pf-step
+On the other hand, the definition of degree gives
 $$
 \langle f^*(a\smile b),[S^2]\rangle
 =\deg(f)\,\langle a\smile b,[\Sigma_g]\rangle
 =\pm\deg(f).
 $$
-The left-hand side is zero by <1>3, so $\deg(f)=0$.
+The left-hand side is zero by step [](#s3){.pf-ref}, so $\deg(f)=0$.
+:::
+
+:::
 :::

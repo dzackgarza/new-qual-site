@@ -46,13 +46,16 @@ Over an arbitrary field, this ruling means a $\PP^1$-bundle over $\PP_k^1$ whose
 The maps in parts (a) and (b) are defined everywhere because the sections $x^2,y^2,z^2$ have no common zero.
 In part (c), choose projective coordinates with $P=[0:0:1]$; this is possible because $P$ is $k$-rational.
 
-<1>1. The complete conic system defines the closed immersion
+::: pf
+
+::: {.pf-step #s1}
+The complete conic system defines the closed immersion
 $$
 v_2:\PP_k^2\longrightarrow\PP_k^5,\qquad
 [x:y:z]\longmapsto[x^2:y^2:z^2:xy:xz:yz].
 $$
 
-::: {.proof}
+::: pf-proof
 These six sections form the complete degree-two monomial basis, so the map is the second Veronese map [@Har10a, Exercises I.2.13 and I.3.4].
 Its local embedding property is explicit: on the target chart where the coordinate $x^2$ is nonzero, the inverse image is $x\ne0$.
 The coordinate functions $y/x$ and $z/x$ are the pullbacks of $xy/x^2$ and $xz/x^2$, so the map on coordinate rings is surjective.
@@ -61,14 +64,17 @@ The morphism is proper because its source is projective and its target is separa
 A proper immersion is a closed immersion, proving (a) in every characteristic.
 :::
 
-<1>2. If $\operatorname{char}k\ne2$, the morphism
+:::
+
+::: {.pf-step #s2}
+If $\operatorname{char}k\ne2$, the morphism
 $$
 f:\PP_k^2\longrightarrow\PP_k^4,\qquad
 [x:y:z]\longmapsto[x^2:y^2:z^2:xy-yz:xz-yz]
 $$
 is a closed immersion.
 
-::: {.proof}
+::: pf-proof
 Write target coordinates as $[a:b:c:d:e]$.
 On $a\ne0$, use the same letters $b,c,d,e$ for their ratios to $a$.
 The inverse image is $x\ne0$, with coordinates $u=y/x$ and $v=z/x$, and the map on coordinate rings is
@@ -98,12 +104,15 @@ $$
 This is an invertible linear change of the five target coordinates.
 It transfers the same affine-ring calculation to the charts $b\ne0$ and $c\ne0$.
 These three target charts contain the image, so $f$ is an immersion there.
-As in step <1>1, properness makes it a closed immersion into $\PP^4$.
+As in step [](#s1){.pf-ref}, properness makes it a closed immersion into $\PP^4$.
 :::
 
-<1>3. In characteristic two, the map in step <1>2 is not an immersion.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+In characteristic two, the map in step [](#s2){.pf-ref} is not an immersion.
+
+::: pf-proof
 Let $R=k[\varepsilon]/(\varepsilon^2)$.
 The $R$-point $[1:1+\varepsilon:\varepsilon]$ is a nonconstant tangent vector at $[1:1:0]$.
 In characteristic two its five coordinates under $f$ are
@@ -117,13 +126,16 @@ An immersion is a monomorphism and cannot identify these two morphisms $\Spec R\
 Equivalently, this is a nonzero vector in the kernel of the tangent map.
 :::
 
-<1>4. The blowup at $P$ is the incidence surface
+:::
+
+::: {.pf-step #s4}
+The blowup at $P$ is the incidence surface
 $$
 B=\{([x:y:z],[s:t])\in\PP_k^2\times_k\PP_k^1:xt=ys\}.
 $$
 Its first projection $\pi:B\to\PP^2$ is an isomorphism away from $P$, and its exceptional curve is $E=\{P\}\times\PP^1$.
 
-::: {.proof}
+::: pf-proof
 Away from $P$, the equation forces $[s:t]=[x:y]$, giving an inverse to the first projection.
 On the affine chart $z=1$, the incidence equation gives exactly the [[D-SCHBLOWUP|Rees-algebra construction]] of the blowup of the ideal $(x,y)$.
 It therefore agrees with the blowup over the open cover consisting of $z\ne0$ and $\PP^2\setminus\{P\}$, and the identifications agree on their overlap.
@@ -135,12 +147,15 @@ On $t\ne0$, put $v=s/t$ and obtain coordinates $(v,[y:z])$ with $x=vy$.
 These charts show that $B$ is a smooth projective integral surface.
 :::
 
-<1>5. The conics through $P$ give a morphism $j:B\to\PP^4$ extending the map from $U=\PP^2\setminus\{P\}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+The conics through $P$ give a morphism $j:B\to\PP^4$ extending the map from $U=\PP^2\setminus\{P\}$.
+
+::: pf-proof
 The conics vanishing at $P$ have basis $x^2,xy,y^2,xz,yz$.
 Their common zero locus on $\PP^2$ is just $P$, so they define the required map on $U$.
-On the two charts of step <1>4, define
+On the two charts of step [](#s4){.pf-ref}, define
 $$
 \begin{aligned}
 j_s(u,[x:z])&=[x:ux:u^2x:z:uz],\\
@@ -154,14 +169,17 @@ Where $x\ne0$, its first formula is the list $[x^2:xy:y^2:xz:yz]$ divided by $x$
 Hence it extends the original map on $U$.
 :::
 
-<1>6. The morphism $j$ is a closed immersion with image
+:::
+
+::: {.pf-step #s6}
+The morphism $j$ is a closed immersion with image
 $$
 \Sigma=V_+(ac-b^2,\ ae-bd,\ be-cd)\subseteq\PP_k^4,
 $$
-where $[a:b:c:d:e]$ are the target coordinates in step <1>5.
+where $[a:b:c:d:e]$ are the target coordinates in step [](#s5){.pf-ref}.
 
-::: {.proof}
-Substitution of either local formula in step <1>5 makes the three equations vanish, so $j$ factors through $\Sigma$ as a scheme.
+::: pf-proof
+Substitution of either local formula in step [](#s5){.pf-ref} makes the three equations vanish, so $j$ factors through $\Sigma$ as a scheme.
 The affine opens $a\ne0$, $c\ne0$, $d\ne0$, and $e\ne0$ cover $\Sigma$: if these four coordinates vanish at a point, $ac=b^2$ forces $b=0$ as well.
 
 On $a\ne0$, set $a=1$.
@@ -179,11 +197,14 @@ Since $\Sigma$ is a closed subscheme of $\PP^4$, $j$ is a closed immersion.
 Its restriction to $B\setminus E\cong U$ is an immersion, proving both embedding assertions in (c).
 :::
 
-<1>7. The surface $\Sigma$ has degree $\boxed{3}$.
+:::
 
-::: {.proof}
+::: {.pf-step #s7}
+The surface $\Sigma$ has degree $\boxed{3}$.
+
+::: pf-proof
 Consider its hyperplane section $C=\Sigma\cap V_+(d-c)$.
-On the chart $a=1$, the calculation in step <1>6 reduces to
+On the chart $a=1$, the calculation in step [](#s6){.pf-ref} reduces to
 $$
 [a:b:c:d:e]=[1:u:u^2:u^2:u^3].
 $$
@@ -210,33 +231,38 @@ The leading term of the Hilbert polynomial of a surface is $(\deg\Sigma)n^2/2$; 
 Comparing with $3n+1$ proves the degree claim.
 :::
 
-<1>8. The strict transforms of the lines through $P$ are disjoint straight lines on $\Sigma$, and they form a ruling of the surface.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+The strict transforms of the lines through $P$ are disjoint straight lines on $\Sigma$, and they form a ruling of the surface.
+
+::: pf-proof
 The second projection $\rho:B\to\PP^1$ sends $([x:y:z],[s:t])$ to $[s:t]$.
 Over any extension field $K/k$, its fibre over a $K$-point $[1:u]$ is the strict transform of $y=ux$, parametrized by $[x:z]$.
-Step <1>5 sends this fibre to
+Step [](#s5){.pf-ref} sends this fibre to
 $$
 [x:ux:u^2x:z:uz],
 $$
 the projective line spanned by the independent vectors $(1,u,u^2,0,0)$ and $(0,0,0,1,u)$.
 The fibre over $[0:1]$ is treated on the other chart and maps to the line $[0:0:y:0:z]$.
 Distinct fibres are disjoint on $B$, and their images remain disjoint because $j$ is an embedding.
-The charts in step <1>4 identify $\rho$ locally with the projection $\AA^1\times\PP^1\to\AA^1$; thus they form a $\PP^1$-bundle covering the whole surface.
+The charts in step [](#s4){.pf-ref} identify $\rho$ locally with the projection $\AA^1\times\PP^1\to\AA^1$; thus they form a $\PP^1$-bundle covering the whole surface.
 This proves the ruling assertion in every characteristic.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>1 proves (a).
-Steps <1>2--<1>3 prove the characteristic-dependent assertion (b).
-Steps <1>4--<1>8 give the immersion from $U$, its extension to the blowup, the degree, and the ruling required in (c).
+::: pf-qed
+Step [](#s1){.pf-ref} proves (a).
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove the characteristic-dependent assertion (b).
+Steps [](#s4){.pf-ref}, [](#s5){.pf-ref}, [](#s6){.pf-ref}, [](#s7){.pf-ref}, and [](#s8){.pf-ref} give the immersion from $U$, its extension to the blowup, the degree, and the ruling required in (c).
+:::
+
 :::
 :::
 
 ::: {.remark title="Characteristic and the fixed point"}
-The specified five conics in the retained statement of part (b) do not give an immersion in characteristic two; step <1>3 gives an explicit counterexample.
+The specified five conics in the retained statement of part (b) do not give an immersion in characteristic two; step [](#s3){.pf-ref} gives an explicit counterexample.
 The characteristic restriction is unnecessary in (a) and (c).
 For a field not assumed algebraically closed, the point in (c) is required to be $k$-rational so that its conics form the stated five-dimensional system; over an algebraically closed field every closed point has this property.
 :::

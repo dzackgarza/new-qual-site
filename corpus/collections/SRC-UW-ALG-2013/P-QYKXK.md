@@ -31,14 +31,21 @@ This question concerns the polynomial ring $R=\mathbb Z[x,y]$ and the ideal $I=(
 
 
 ::: {.solution}
-<1>1. There is an isomorphism
+
+::: pf
+
+::: pf-step
+There is an isomorphism
 \[
 R/I\cong \mathbb F_5[x,y]/(x^2+2).
 \]
+
 :::
 
-<1>2. The polynomial \(x^2+2\in\mathbb F_5[x]\) is irreducible.
-::: {.proof}
+::: {.pf-step #s2}
+The polynomial \(x^2+2\in\mathbb F_5[x]\) is irreducible.
+
+::: pf-proof
 The squares in \(\mathbb F_5\) are
 \[
 0,1,4.
@@ -46,13 +53,17 @@ The squares in \(\mathbb F_5\) are
 Thus \(-2\equiv3\pmod5\) is not a square, so \(x^2+2\) has no root in \(\mathbb F_5\). Since it has degree \(2\), it is irreducible.
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+Hence
 \[
 R/I\cong \mathbb F_{25}[y].
 \]
 In particular, \(I\) is prime and \(R/I\) is a PID.
-::: {.proof}
-By <1>2,
+
+::: pf-proof
+By step [](#s2){.pf-ref},
 \[
 \mathbb F_5[x]/(x^2+2)
 \]
@@ -66,12 +77,16 @@ is a field with \(5^2=25\) elements. Therefore
 A polynomial ring in one variable over a field is a PID and an integral domain. Therefore \(R/I\) is a domain, so \(I\) is prime.
 :::
 
-<1>4. The ideal
+:::
+
+::: pf-step
+The ideal
 \[
 \mathfrak m=(5,x^2+2,y)
 \]
 is a maximal ideal of \(R\) containing \(I\).
-::: {.proof}
+
+::: pf-proof
 We have
 \[
 R/\mathfrak m
@@ -81,8 +96,12 @@ R/\mathfrak m
 which is a field. Hence \(\mathfrak m\) is maximal.
 :::
 
-<1>5. The ring \(\mathbb F_{25}[y]\) has infinitely many monic irreducible polynomials.
-::: {.proof}
+:::
+
+::: {.pf-step #s5}
+The ring \(\mathbb F_{25}[y]\) has infinitely many monic irreducible polynomials.
+
+::: pf-proof
 Suppose instead that the monic irreducible polynomials were exactly
 \[
 q_1(y),\dots,q_r(y).
@@ -98,11 +117,21 @@ Q\equiv1\pmod{q_i}.
 Thus \(q\) is a monic irreducible not on the list, a contradiction.
 :::
 
-<1>6. There are infinitely many distinct maximal ideals of \(R\) containing \(I\).
-::: {.proof}
+:::
+
+::: pf-step
+There are infinitely many distinct maximal ideals of \(R\) containing \(I\).
+
+::: pf-proof
 By the correspondence theorem, maximal ideals of \(R\) containing \(I\) are in bijection with maximal ideals of
 \[
 R/I\cong\mathbb F_{25}[y].
 \]
-Since this is a PID, each monic irreducible \(q(y)\in\mathbb F_{25}[y]\) generates a maximal ideal \((q)\), and distinct monic irreducibles give distinct maximal ideals. By <1>5 there are infinitely many of them. Their inverse images under the quotient map \(R\to R/I\) are therefore infinitely many distinct maximal ideals of \(R\) containing \(I\).
+Since this is a PID, each monic irreducible \(q(y)\in\mathbb F_{25}[y]\) generates a maximal ideal \((q)\), and distinct monic irreducibles give distinct maximal ideals. By step [](#s5){.pf-ref} there are infinitely many of them. Their inverse images under the quotient map \(R\to R/I\) are therefore infinitely many distinct maximal ideals of \(R\) containing \(I\).
+:::
+
+:::
+
+:::
+
 :::

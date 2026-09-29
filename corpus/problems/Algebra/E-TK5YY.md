@@ -78,7 +78,7 @@ Since $\det P,\det Q=\pm1$, $|\det A|=|\det D|=\prod_id_i$.
 
 :::
 
-::: pf-step
+::: {.pf-step #s4}
 A nilpotent operator $N$ is diagonalizable only if $N=0$.
 
 ::: pf-proof
@@ -148,6 +148,6 @@ $T$-invariant subspaces are exactly the $E$-subspaces, and an $E$-linear complem
 :::
 
 ::: {.remark}
-The fourth part states that a nilpotent operator is diagonalizable; by step <1>4 this holds only for the zero operator.
+The fourth part states that a nilpotent operator is diagonalizable; by step [](#s4){.pf-ref} this holds only for the zero operator.
 The tenth part holds over $\CC$, or over any field in which $x^n-1$ has $n$ distinct roots.
 :::

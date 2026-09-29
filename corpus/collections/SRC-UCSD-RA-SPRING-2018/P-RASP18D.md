@@ -39,36 +39,69 @@ $$
 :::
 
 ::: {.solution}
-<1>1. Part 1: Bound for $f \in C_c^1(\mathbb{R})$ via integration by parts:
-<2>1. Since $f \in C_c^1(\mathbb{R})$, $f$ and $f'$ have compact support contained in some interval $[-R, R]$.
+
+::: pf
+
+::: pf-step
+Part 1: Bound for $f \in C_c^1(\mathbb{R})$ via integration by parts:
+
+::: pf-proof
+
+::: pf-step
+Since $f \in C_c^1(\mathbb{R})$, $f$ and $f'$ have compact support contained in some interval $[-R, R]$.
 Using integration by parts with $u = f(x)$ and $dv = \varphi'(\lambda x)\,dx$ (so $v = \frac{1}{\lambda} \varphi(\lambda x)$):
 \[
 \int_{-\infty}^\infty f(x) \varphi'(\lambda x) \, dx = \left[ \frac{1}{\lambda} f(x) \varphi(\lambda x) \right]_{-\infty}^\infty - \frac{1}{\lambda} \int_{-\infty}^\infty f'(x) \varphi(\lambda x) \, dx.
 \]
-<2>2. The boundary term vanishes because $f(x) = 0$ outside $[-R, R]$ and $\varphi$ is bounded:
+:::
+
+::: pf-step
+The boundary term vanishes because $f(x) = 0$ outside $[-R, R]$ and $\varphi$ is bounded:
 \[
 \left[ \frac{1}{\lambda} f(x) \varphi(\lambda x) \right]_{-\infty}^\infty = 0.
 \]
-<2>3. Taking absolute values and using $|\varphi(y)| \le M$:
+:::
+
+::: pf-step
+Taking absolute values and using $|\varphi(y)| \le M$:
 \[
 \left| \int_{-\infty}^\infty f(x) \varphi'(\lambda x) \, dx \right| \le \frac{1}{\lambda} \int_{-\infty}^\infty |f'(x)| |\varphi(\lambda x)| \, dx \le \frac{M}{\lambda} \int_{-\infty}^\infty |f'(x)| \, dx = M \|f'\|_{L^1(\mathbb{R})} \lambda^{-1}.
 \]
+:::
 
-<1>2. Part 2: Limit for $f \in L^1(\mathbb{R})$ via density of $C_c^1(\mathbb{R})$:
-<2>1. Let $\varepsilon > 0$ be given.
+:::
+
+:::
+
+::: pf-step
+Part 2: Limit for $f \in L^1(\mathbb{R})$ via density of $C_c^1(\mathbb{R})$:
+
+::: pf-proof
+
+::: pf-step
+Let $\varepsilon > 0$ be given.
 By the density of $C_c^1(\mathbb{R})$ in $L^1(\mathbb{R})$, there exists a function $g \in C_c^1(\mathbb{R})$ such that:
 \[
 \|f - g\|_{L^1(\mathbb{R})} < \frac{\varepsilon}{2M}.
 \]
-<2>2. For any $\lambda > 0$, decompose the integral:
+:::
+
+::: pf-step
+For any $\lambda > 0$, decompose the integral:
 \[
 \int_\mathbb{R} f(x) \varphi'(\lambda x) \, dx = \int_\mathbb{R} (f(x) - g(x)) \varphi'(\lambda x) \, dx + \int_\mathbb{R} g(x) \varphi'(\lambda x) \, dx.
 \]
-<2>3. Bound the approximation error:
+:::
+
+::: pf-step
+Bound the approximation error:
 \[
 \left| \int_\mathbb{R} (f(x) - g(x)) \varphi'(\lambda x) \, dx \right| \le \sup_{y \in \mathbb{R}} |\varphi'(y)| \|f - g\|_{L^1} \le M \cdot \frac{\varepsilon}{2M} = \frac{\varepsilon}{2}.
 \]
-<2>4. By Part 1, for the $C_c^1$ function $g$:
+:::
+
+::: pf-step
+By Part 1, for the $C_c^1$ function $g$:
 \[
 \left| \int_\mathbb{R} g(x) \varphi'(\lambda x) \, dx \right| \le \frac{M \|g'\|_{L^1}}{\lambda}.
 \]
@@ -76,12 +109,24 @@ Choosing $\Lambda = \frac{2 M \|g'\|_{L^1}}{\varepsilon}$, for all $\lambda > \L
 \[
 \left| \int_\mathbb{R} g(x) \varphi'(\lambda x) \, dx \right| < \frac{\varepsilon}{2}.
 \]
-<2>5. Combining bounds for all $\lambda > \Lambda$:
+:::
+
+::: pf-step
+Combining bounds for all $\lambda > \Lambda$:
 \[
 \left| \int_\mathbb{R} f(x) \varphi'(\lambda x) \, dx \right| \le \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.
 \]
 Since $\varepsilon > 0$ was arbitrary, $\lim_{\lambda \to \infty} \int_\mathbb{R} f(x) \varphi'(\lambda x) \, dx = 0$.
+:::
 
-<1>3. Conclusion:
-Both parts 1 and 2 are proven. Q.E.D.
+:::
+
+:::
+
+::: pf-qed
+Conclusion:
+Both parts 1 and 2 are proven.
+:::
+
+:::
 :::

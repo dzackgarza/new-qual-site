@@ -23,18 +23,38 @@ Find a holomorphic function that maps the upper half-plane $\mathbb{C}_+$ onto t
 ::: {.solution}
 **Goal.** Find a holomorphic map from the upper half-plane $\CC_+$ onto the punctured unit disk $\DD \sm \theset{0}$.
 
-<1>1. The exponential maps a horizontal strip onto the punctured disk.
-<2>1. $z \mapsto e^{iz}$ maps the strip $\theset{z : 0 < \Im z < \infty}$ onto $\DD \sm \theset{0}$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The exponential maps a horizontal strip onto the punctured disk.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+$z \mapsto e^{iz}$ maps the strip $\theset{z : 0 < \Im z < \infty}$ onto $\DD \sm \theset{0}$.
+
+::: pf-proof
 for $z = x + iy$ with $y > 0$, $e^{iz} = e^{-y} e^{ix}$ has modulus $e^{-y} \in (0, 1)$ and arbitrary argument, so the image is $\theset{w : 0 < \abs w < 1} = \DD \sm \theset{0}$.
 :::
-<2>2. The map is holomorphic and surjective onto $\DD \sm \theset{0}$.
-::: {.proof}
-$e^{iz}$ is entire; by <1>2.1 its restriction to the upper half-plane has image exactly the punctured disk.
+
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
+::: pf-step
+The map is holomorphic and surjective onto $\DD \sm \theset{0}$.
+
+::: pf-proof
+$e^{iz}$ is entire; by step [](#s1-1){.pf-ref} its restriction to the upper half-plane has image exactly the punctured disk.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
 $f(z) = e^{iz}$ is the required map.
+:::
+
 :::
 :::

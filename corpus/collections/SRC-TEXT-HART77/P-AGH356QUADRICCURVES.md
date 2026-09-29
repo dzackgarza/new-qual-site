@@ -69,7 +69,10 @@ $$
 by the Segre twisting formula [@Har10a, Exercise II.5.11].
 Let $v(t)=\max(t+1,0)$ and $w(t)=\max(-t-1,0)$ for integers $t$.
 
-<1>1. For all integers $a,b$, the cohomology dimensions and Euler characteristic are
+::: pf
+
+::: {.pf-step #s1}
+For all integers $a,b$, the cohomology dimensions and Euler characteristic are
 $$
 \begin{aligned}
 h^0(Q,\OO_Q(a,b))&=v(a)v(b),\\
@@ -79,7 +82,7 @@ h^2(Q,\OO_Q(a,b))&=w(a)w(b),\\
 \end{aligned}
 $$
 
-::: {.proof}
+::: pf-proof
 On $\PP_k^1$, the cohomology of $\OO(t)$ has dimensions $v(t)$ in degree zero and $w(t)$ in degree one, and vanishes in higher degrees [@Har10a, Theorem III.5.1].
 Apply the [Künneth formula over a field](https://stacks.math.columbia.edu/tag/0BEC) to the two projective lines and these invertible sheaves.
 It gives
@@ -105,47 +108,59 @@ since $H^0(Q,\OO_Q(-q,0))=0$.
 Also $\chi(\OO_D)=q$ and $\chi(\OO_Q(-q,0))=1-q$.
 The other ruling gives the symmetric calculation.
 When $k$ has too few rational points for this choice, make it over an infinite extension field.
-The cohomology base-extension comparison proved in [[P-AGH352HILBPOLY]], step <1>1, preserves these dimensions, so the numerical formulas remain valid over the original field.
+The cohomology base-extension comparison proved in [[P-AGH352HILBPOLY]], step 1, preserves these dimensions, so the numerical formulas remain valid over the original field.
 :::
 
-<1>2. All three assertions in (a) hold.
+:::
 
-::: {.proof}
-The expression for $h^1$ in step <1>1 is nonzero exactly when one index is at most $-2$ and the other is at least zero.
+::: {.pf-step #s2}
+All three assertions in (a) hold.
+
+::: pf-proof
+The expression for $h^1$ in step [](#s1){.pf-ref} is nonzero exactly when one index is at most $-2$ and the other is at least zero.
 This follows because $w(t)>0$ exactly for $t\le-2$ and $v(t)>0$ exactly for $t\ge0$.
 Such indices differ by at least two, proving (a)(i).
 When both indices are negative, both $v$ terms vanish, proving (a)(ii).
 For $a\le-2$ and $b=0$, the formula is $h^1=-a-1>0$, proving (a)(iii).
 :::
 
-<1>3. If $a,b>0$, every divisor $Y$ in (b)(i) is connected.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+If $a,b>0$, every divisor $Y$ in (b)(i) is connected.
+
+::: pf-proof
 The defining effective Cartier divisor gives
 $$
 0\longrightarrow\OO_Q(-a,-b)\longrightarrow\OO_Q\longrightarrow\OO_Y\longrightarrow0.
 $$
-Step <1>1 gives $H^0(Q,\OO_Q(-a,-b))=0$, and (a)(ii) gives $H^1(Q,\OO_Q(-a,-b))=0$.
+Step [](#s1){.pf-ref} gives $H^0(Q,\OO_Q(-a,-b))=0$, and (a)(ii) gives $H^1(Q,\OO_Q(-a,-b))=0$.
 The long exact sequence therefore identifies $H^0(Y,\OO_Y)$ with $H^0(Q,\OO_Q)=k$.
 A disconnected scheme has a nontrivial idempotent global function, obtained by taking values zero and one on two nonempty open-and-closed pieces.
 No such idempotent exists in $k$, so $Y$ is connected, even if it is nonreduced.
 :::
 
-<1>4. Over an algebraically closed field, nonsingular irreducible divisors of every type $(a,b)$ with $a,b>0$ exist.
+:::
 
-::: {.proof}
+::: {.pf-step #s4}
+Over an algebraically closed field, nonsingular irreducible divisors of every type $(a,b)$ with $a,b>0$ exist.
+
+::: pf-proof
 The product of the degree-$a$ and degree-$b$ Veronese embeddings of the two projective lines, followed by a Segre embedding, is a closed immersion whose pullback of $\OO(1)$ is $\OO_Q(a,b)$.
 Thus this sheaf is very ample, as in [@Har10a, Example II.7.6.2].
 Bertini's hyperplane theorem for this embedding gives a nonempty nonsingular divisor $Y$ of the required type [@Har10a, Theorem II.8.18].
-Step <1>3 makes it connected.
+Step [](#s3){.pf-ref} makes it connected.
 Its regular local rings are domains, so distinct irreducible components cannot meet; the finitely many components would consequently be open and closed.
 Connectedness forces only one component, and nonsingularity gives reducedness.
 Hence $Y$ is irreducible and nonsingular, proving (b)(ii).
 :::
 
-<1>5. For the curve in (b)(iii), projective normality holds exactly when $\abs{a-b}\le1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+For the curve in (b)(iii), projective normality holds exactly when $\abs{a-b}\le1$.
+
+::: pf-proof
 The quadric is a positive-dimensional complete intersection, so [[P-AGH355COMPINT]] makes $H^0(\PP^3,\OO(n))\to H^0(Q,\OO_Q(n,n))$ surjective for all $n$.
 For each $n\ge0$, twisting the divisor sequence gives
 $$
@@ -164,14 +179,17 @@ Interchanging the factors treats $b\ge a+2$.
 This proves both implications in (b)(iii).
 :::
 
-<1>6. For every divisor in (c),
+:::
+
+::: {.pf-step #s6}
+For every divisor in (c),
 $$
 \boxed{P_Y(n)=(a+b)(n+1)-ab,\qquad p_a(Y)=ab-a-b+1.}
 $$
 
-::: {.proof}
+::: pf-proof
 Twist the effective Cartier divisor sequence by $\OO_Q(n,n)$ and use Euler additivity.
-Step <1>1 gives, for every integer $n$,
+Step [](#s1){.pf-ref} gives, for every integer $n$,
 $$
 \chi(\OO_Y(n))=(n+1)^2-(n-a+1)(n-b+1)
 =(a+b)(n+1)-ab.
@@ -183,10 +201,13 @@ For $q$ disjoint ruling lines it gives $P_Y(n)=q(n+1)$ and $p_a(Y)=1-q$, agreein
 This proof does not require $Y$ to be integral or nonsingular.
 :::
 
-<1>7. A nonsingular irreducible curve of type $(1,3)$ over an algebraically closed field is a rational quartic and is not projectively normal.
+:::
 
-::: {.proof}
-Step <1>6 gives degree four.
+::: {.pf-step #s7}
+A nonsingular irreducible curve of type $(1,3)$ over an algebraically closed field is a rational quartic and is not projectively normal.
+
+::: pf-proof
+Step [](#s6){.pf-ref} gives degree four.
 Consider its projection to the second projective line.
 A fibre of this projection on $Q$ is a line on which $\OO_Q(1,3)$ has degree one.
 No such line is a component of this integral curve of positive type in both coordinates, so its equation restricts to a nonzero linear form on the fibre.
@@ -194,17 +215,19 @@ Thus each fibre of the restricted projection is a zero-dimensional scheme of len
 The projection is proper and quasi-finite and hence finite [@Har10a, Exercise III.11.2]; it is nonconstant and has degree one.
 A finite birational morphism onto the normal curve $\PP^1$ is an isomorphism, by integral closedness on its affine charts.
 Hence the curve is isomorphic to $\PP^1$ and is rational.
-Step <1>5 excludes projective normality because the two type indices differ by two.
+Step [](#s5){.pf-ref} excludes projective normality because the two type indices differ by two.
 :::
 
-<1>8. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>2 prove (a), steps <1>3--<1>5 prove (b), step <1>6 proves (c), and step <1>7 verifies the stated rational-quartic example.
+::: pf-qed
+Steps [](#s1){.pf-ref} and [](#s2){.pf-ref} prove (a), steps [](#s3){.pf-ref}, [](#s4){.pf-ref}, and [](#s5){.pf-ref} prove (b), step [](#s6){.pf-ref} proves (c), and step [](#s7){.pf-ref} verifies the stated rational-quartic example.
+:::
+
 :::
 :::
 
 ::: {.remark title="The field in the ruling-line model"}
 Over a finite field with $s$ elements, each ruling has only $s+1$ $k$-rational fibres, so arbitrarily many distinct lines isomorphic over $k$ to $\PP_k^1$ cannot be chosen in that ruling.
-The split-quadric cohomology formulas hold over every field; the field-extension comparison in step <1>1 makes the disjoint-line model a valid computation of their numerical values in all cases.
+The split-quadric cohomology formulas hold over every field; the field-extension comparison in step [](#s1){.pf-ref} makes the disjoint-line model a valid computation of their numerical values in all cases.
 :::

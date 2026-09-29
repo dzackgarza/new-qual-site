@@ -50,7 +50,11 @@ Au_j=\lambda_j(A)u_j,
 \]
 Fix $k$ with $1\le k\le n-2$.
 
-<1>1. Let
+::: pf
+
+::: pf-step
+
+Let
 \[
 E:=\operatorname{span}\{u_k,u_{k+1},\ldots,u_n\}.
 \]
@@ -58,7 +62,9 @@ Then $\dim E=n-k+1$, and every nonzero $x\in E$ satisfies
 \[
 \frac{x^HAx}{x^Hx}\le\lambda_k(A).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Write
 \[
 x=\sum_{j=k}^n c_j u_j.
@@ -69,9 +75,14 @@ Then
 =\frac{\sum_{j=k}^n\lambda_j(A)|c_j|^2}{\sum_{j=k}^n|c_j|^2}.
 \]
 Every eigenvalue appearing in this convex combination is at most $\lambda_k(A)$, so the quotient is at most $\lambda_k(A)$.
+
 :::
 
-<1>2. Let
+:::
+
+::: pf-step
+
+Let
 \[
 K:=\ker B^H.
 \]
@@ -80,19 +91,28 @@ Since $\operatorname{rank}B=2$, one has $\dim K=n-2$, and
 BB^Hx=0
 \]
 for every $x\in K$.
-::: {.proof}
+
+::: pf-proof
+
 Because $\operatorname{rank}B^H=\operatorname{rank}B=2$, rank-nullity gives
 \[
 \dim\ker B^H=n-2.
 \]
 If $x\in K$, then $B^Hx=0$, so $BB^Hx=B(0)=0$.
+
 :::
 
-<1>3. The desired inequality follows from the codimension form of the Courant--Fischer theorem:
+:::
+
+::: pf-step
+
+The desired inequality follows from the codimension form of the Courant--Fischer theorem:
 \[
 \lambda_j(M)=\min_{\operatorname{codim}S=j-1}\ \max_{0\ne x\in S}R_M(x).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose a subspace $S_A$ of codimension $k-1$ such that
 \[
 \max_{0\ne x\in S_A}R_A(x)=\lambda_k(A).
@@ -125,7 +145,13 @@ Therefore
 \boxed{\lambda_{k+2}(C)\le \lambda_k(A)}
 \qquad(1\le k\le n-2).
 \]
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
@@ -214,7 +240,11 @@ R_M(x)=\frac{x^H Mx}{x^Hx}
 \]
 be the Rayleigh quotient of a Hermitian matrix $M$.
 
-<1>1. The subspace
+::: pf
+
+::: pf-step
+
+The subspace
 \[
 K:=\ker B^H
 \]
@@ -222,7 +252,9 @@ has codimension at most $2$, and $C$ agrees with $A$ on $K$ in the sense that
 \[
 x^HCx=x^HAx\qquad(x\in K).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $\operatorname{rank}B=2$, also $\operatorname{rank}B^H=2$, so
 \[
 \dim K=n-2.
@@ -235,26 +267,41 @@ Therefore
 \[
 x^HCx=x^H(A+BB^H)x=x^HAx.
 \]
+
 :::
 
-<1>2. For every subspace $S\subseteq\mathbb C^n$ of dimension $k+2$,
+:::
+
+::: pf-step
+
+For every subspace $S\subseteq\mathbb C^n$ of dimension $k+2$,
 \[
 \dim(S\cap K)\ge k.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Using the dimension inequality,
 \[
 \dim(S\cap K)
 \ge \dim S+\dim K-n
 =(k+2)+(n-2)-n=k.
 \]
+
 :::
 
-<1>3. By the Courant--Fischer min--max principle,
+:::
+
+::: pf-step
+
+By the Courant--Fischer min--max principle,
 \[
 \lambda_{k+2}(C)
 =\min_{\dim S=k+2}\ \max_{0\ne x\in S}R_C(x).
 \]
+
+::: pf-proof
+
 For each such $S$, choose a $k$-dimensional subspace $T\subseteq S\cap K$. Then
 \[
 \max_{0\ne x\in S}R_C(x)
@@ -268,13 +315,20 @@ This inequality is in the wrong direction for the desired conclusion, so instead
 =\max_{\dim L=k+2}\ \min_{0\ne x\in L}R_C(x),
 \]
 which still does not directly compare with $A$. We therefore use the equivalent codimension form below.
+
 :::
 
-<1>4. The desired inequality follows from the codimension form of Courant--Fischer:
+:::
+
+::: pf-step
+
+The desired inequality follows from the codimension form of Courant--Fischer:
 \[
 \lambda_j(M)=\min_{\operatorname{codim}S=j-1}\ \max_{0\ne x\in S}R_M(x).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Fix a subspace $S_A$ of codimension $k-1$ for which
 \[
 \max_{0\ne x\in S_A}R_A(x)=\lambda_k(A).
@@ -303,6 +357,13 @@ Hence
 \boxed{\lambda_{k+2}(C)\le \lambda_k(A)}
 \qquad(1\le k\le n-2).
 \]
+
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
@@ -312,16 +373,29 @@ R_M(x)=\frac{x^HMx}{x^Hx}
 \]
 denote the Rayleigh quotient of a Hermitian matrix $M$.
 
-<1>1. The kernel of $B^H$ has codimension $2$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p3-s1}
+
+The kernel of $B^H$ has codimension $2$.
+
+::: pf-proof
+
 Since $\operatorname{rank}B=2$, also $\operatorname{rank}B^H=2$. Hence by rank-nullity,
 \[
 \dim\ker B^H=n-2.
 \]
+
 :::
 
-<1>2. On $\ker B^H$, the quadratic forms of $A$ and $C$ agree.
-::: {.proof}
+:::
+
+::: {.pf-step #p3-s2}
+
+On $\ker B^H$, the quadratic forms of $A$ and $C$ agree.
+
+::: pf-proof
+
 If $x\in\ker B^H$, then
 \[
 BB^Hx=0,
@@ -335,13 +409,20 @@ Therefore
 R_C(x)=R_A(x)
 \]
 for every nonzero $x\in\ker B^H$.
+
 :::
 
-<1>3. For every $1\le k\le n-2$,
+:::
+
+::: pf-step
+
+For every $1\le k\le n-2$,
 \[
 \lambda_{k+2}(C)\le \lambda_k(A).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By the Courant--Fischer min-max principle,
 \[
 \lambda_{k+2}(C)
@@ -365,7 +446,7 @@ Now set
 \[
 L=E_k\cap\ker B^H.
 \]
-Using <1>1,
+Using step [](#p3-s1){.pf-ref},
 \[
 \dim L
 \ge \dim E_k+\dim\ker B^H-n
@@ -373,7 +454,7 @@ Using <1>1,
 =n-k-1.
 \]
 Choose an $(n-k-1)$-dimensional subspace $L_0\subseteq L$.
-For every nonzero $x\in L_0$, <1>2 gives
+For every nonzero $x\in L_0$, step [](#p3-s2){.pf-ref} gives
 \[
 R_C(x)=R_A(x)\le \lambda_k(A).
 \]
@@ -389,7 +470,13 @@ Applying Courant--Fischer to the particular admissible subspace $L_0$ yields
 \le \lambda_k(A).
 \]
 This is the desired two-step interlacing inequality.
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
@@ -406,17 +493,28 @@ Moreover, for every \(x\in K\),
 x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
 \]
 
-<1>1. For every \(1\le k\le n-2\),
+::: pf
+
+::: {.pf-step #p4-s1}
+
+For every \(1\le k\le n-2\),
 \[
 \lambda_{k+2}(C)
 =\min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-k-1}}
 \ \max_{0\ne x\in L}\frac{x^HCx}{x^Hx}.
 \]
-::: {.proof}
+
+::: pf-proof
+
 This is the Courant--Fischer min--max theorem applied to the \((k+2)\)-nd largest eigenvalue of the Hermitian matrix \(C\).
+
 :::
 
-<1>2. Let \(E\) be the span of eigenvectors of \(A\) corresponding to
+:::
+
+::: {.pf-step #p4-s2}
+
+Let \(E\) be the span of eigenvectors of \(A\) corresponding to
 \[
 \lambda_k(A),\lambda_{k+1}(A),\ldots,\lambda_n(A).
 \]
@@ -428,7 +526,9 @@ and, for every nonzero \(x\in E\),
 \[
 \frac{x^HAx}{x^Hx}\le \lambda_k(A).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Choose an orthonormal eigenbasis \(u_1,\ldots,u_n\) of \(A\) with
 \[
 Au_j=\lambda_j(A)u_j.
@@ -443,14 +543,21 @@ For \(x=\sum_{j=k}^n c_ju_j\neq0\),
 =\frac{\sum_{j=k}^n |c_j|^2\lambda_j(A)}{\sum_{j=k}^n |c_j|^2}
 \le \lambda_k(A).
 \]
+
 :::
 
-<1>3. The subspace
+:::
+
+::: {.pf-step #p4-s3}
+
+The subspace
 \[
 L:=E\cap K
 \]
 has dimension at least \(n-k-1\).
-::: {.proof}
+
+::: pf-proof
+
 Using \(\dim(E\cap K)\ge \dim E+\dim K-n\),
 \[
 \dim(E\cap K)
@@ -458,31 +565,51 @@ Using \(\dim(E\cap K)\ge \dim E+\dim K-n\),
 =n-k-1.
 \]
 Thus \(L\) contains a subspace \(L_0\) of dimension exactly \(n-k-1\).
+
 :::
 
-<1>4. For every nonzero \(x\in L_0\),
+:::
+
+::: {.pf-step #p4-s4}
+
+For every nonzero \(x\in L_0\),
 \[
 \frac{x^HCx}{x^Hx}
 =\frac{x^HAx}{x^Hx}
 \le \lambda_k(A).
 \]
-::: {.proof}
-Because \(L_0\subseteq K=\ker B^H\), we have \(x^HCx=x^HAx\). Because \(L_0\subseteq E\), <1>2 gives the inequality.
+
+::: pf-proof
+
+Because \(L_0\subseteq K=\ker B^H\), we have \(x^HCx=x^HAx\). Because \(L_0\subseteq E\), step [](#p4-s2){.pf-ref} gives the inequality.
+
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lambda_{k+2}(C)\le \lambda_k(A)
 \qquad(1\le k\le n-2).
 \]
-::: {.proof}
-By <1>1, \(\lambda_{k+2}(C)\) is the minimum, over all subspaces of dimension \(n-k-1\), of the maximal Rayleigh quotient of \(C\) on that subspace. Choosing the particular subspace \(L_0\) from <1>3 and using <1>4 gives
+
+::: pf-proof
+
+By step [](#p4-s1){.pf-ref}, \(\lambda_{k+2}(C)\) is the minimum, over all subspaces of dimension \(n-k-1\), of the maximal Rayleigh quotient of \(C\) on that subspace. Choosing the particular subspace \(L_0\) from step [](#p4-s3){.pf-ref} and using step [](#p4-s4){.pf-ref} gives
 \[
 \lambda_{k+2}(C)
 \le \max_{0\ne x\in L_0}\frac{x^HCx}{x^Hx}
 \le \lambda_k(A).
 \]
+
 :::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
@@ -492,7 +619,11 @@ R_M(x)=\frac{x^HMx}{x^Hx}
 \]
 be the Rayleigh quotient of a Hermitian matrix $M$.
 
-<1>1. Since $\operatorname{rank}B=2$, the subspace
+::: pf
+
+::: {.pf-step #p5-s1}
+
+Since $\operatorname{rank}B=2$, the subspace
 \[
 K:=\ker B^H\subseteq\mathbb C^n
 \]
@@ -501,7 +632,9 @@ Moreover, for every $x\in K$,
 \[
 R_C(x)=R_A(x).
 \]
-::: {.proof}
+
+::: pf-proof
+
 By rank-nullity applied to $B^H$, whose rank is also $2$,
 \[
 \dim K=n-2.
@@ -511,9 +644,14 @@ If $x\in K$, then $B^Hx=0$, and therefore
 x^HCx=x^HAx+x^HBB^Hx=x^HAx+\|B^Hx\|^2=x^HAx.
 \]
 Dividing by $x^Hx$ gives the equality of Rayleigh quotients.
+
 :::
 
-<1>2. For a Hermitian matrix $M$ with eigenvalues
+:::
+
+::: pf-step
+
+For a Hermitian matrix $M$ with eigenvalues
 \[
 \lambda_1(M)\ge\cdots\ge\lambda_n(M),
 \]
@@ -524,9 +662,12 @@ the Courant--Fischer min--max formula is
 \min_{\substack{L\subseteq\mathbb C^n\\ \dim L=n-j+1}}
 \ \max_{0\ne x\in L} R_M(x).
 \]
+
 :::
 
-<1>3. Fix $1\le k\le n-2$ and let $L\subseteq\mathbb C^n$ be any subspace of dimension
+::: {.pf-step #p5-s3}
+
+Fix $1\le k\le n-2$ and let $L\subseteq\mathbb C^n$ be any subspace of dimension
 \[
 \dim L=n-k+1.
 \]
@@ -534,7 +675,9 @@ Then
 \[
 \dim(L\cap K)\ge n-k-1.
 \]
-::: {.proof}
+
+::: pf-proof
+
 Using
 \[
 \dim(L\cap K)\ge \dim L+\dim K-n,
@@ -545,18 +688,25 @@ we obtain
 \ge (n-k+1)+(n-2)-n
 =n-k-1.
 \]
+
 :::
 
-<1>4. We have
+:::
+
+::: pf-step
+
+We have
 \[
 \lambda_{k+2}(C)\le\lambda_k(A).
 \]
-::: {.proof}
-Let $L$ be an arbitrary $(n-k+1)$-dimensional subspace. By <1>3, choose a subspace
+
+::: pf-proof
+
+Let $L$ be an arbitrary $(n-k+1)$-dimensional subspace. By step [](#p5-s3){.pf-ref}, choose a subspace
 \[
 L'\subseteq L\cap K
 \]
-of dimension exactly $n-k-1$. Then <1>1 gives
+of dimension exactly $n-k-1$. Then step [](#p5-s1){.pf-ref} gives
 \[
 \max_{0\ne x\in L'}R_C(x)
 =
@@ -583,6 +733,13 @@ Since this holds for every $(n-k+1)$-dimensional subspace $L$, taking the minimu
 \lambda_k(A).
 \]
 This is exactly the desired interlacing inequality.
+
+:::
+
+:::
+
+:::
+
 :::
 
 ::: {.solution}
@@ -592,8 +749,14 @@ R_M(x)=\frac{x^H Mx}{x^Hx}
 \]
 denote the Rayleigh quotient of a Hermitian matrix $M$.
 
-<1>1. The subspace $K:=\ker B^H$ has codimension $2$, and on $K$ the quadratic forms of $A$ and $C$ agree.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p6-s1}
+
+The subspace $K:=\ker B^H$ has codimension $2$, and on $K$ the quadratic forms of $A$ and $C$ agree.
+
+::: pf-proof
+
 Because $B$ has rank $2$, so does $B^H$, hence by rank-nullity
 \[
 \dim K=n-2.
@@ -607,9 +770,14 @@ In particular,
 R_C(x)=R_A(x)
 \]
 for every nonzero $x\in K$.
+
 :::
 
-<1>2. Fix $1\le k\le n-2$, and let $E\subseteq\mathbb C^n$ be the span of eigenvectors of $C$ corresponding to the eigenvalues
+:::
+
+::: {.pf-step #p6-s2}
+
+Fix $1\le k\le n-2$, and let $E\subseteq\mathbb C^n$ be the span of eigenvectors of $C$ corresponding to the eigenvalues
 \[
 \lambda_1(C),\ldots,\lambda_{k+2}(C).
 \]
@@ -617,7 +785,9 @@ Then $\dim E=k+2$, and every nonzero $x\in E$ satisfies
 \[
 R_C(x)\ge \lambda_{k+2}(C).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Since $C$ is Hermitian, choose an orthonormal eigenbasis $u_1,\ldots,u_n$ with
 \[
 Cu_i=\lambda_i(C)u_i.
@@ -632,10 +802,17 @@ R_C(x)
 =\frac{\sum_{i=1}^{k+2}|a_i|^2\lambda_i(C)}{\sum_{i=1}^{k+2}|a_i|^2}
 \ge \lambda_{k+2}(C).
 \]
+
 :::
 
-<1>3. The intersection $E\cap K$ has dimension at least $k$.
-::: {.proof}
+:::
+
+::: pf-step
+
+The intersection $E\cap K$ has dimension at least $k$.
+
+::: pf-proof
+
 Using
 \[
 \dim(E\cap K)\ge \dim E+\dim K-n,
@@ -645,15 +822,22 @@ we obtain
 \dim(E\cap K)
 \ge (k+2)+(n-2)-n=k.
 \]
+
 :::
 
-<1>4. Therefore
+:::
+
+::: pf-step
+
+Therefore
 \[
 \lambda_{k+2}(C)\le \lambda_k(A).
 \]
-::: {.proof}
+
+::: pf-proof
+
 Let $F$ be any $k$-dimensional subspace of $E\cap K$.
-For every nonzero $x\in F$, <1>1 and <1>2 give
+For every nonzero $x\in F$, steps [](#p6-s1){.pf-ref} and [](#p6-s2){.pf-ref} give
 \[
 R_A(x)=R_C(x)\ge \lambda_{k+2}(C).
 \]
@@ -677,5 +861,11 @@ Thus, for every $1\le k\le n-2$,
 \[
 \boxed{\lambda_{k+2}(C)\le \lambda_k(A)}.
 \]
+
 :::
+
+:::
+
+:::
+
 :::

@@ -97,7 +97,10 @@ Along the longitude,
 so \(\lambda\) is fixed.
 :::
 
-<1>3. Let \(a\) and \(b\) denote the core generators of the first and second copies of \(V\), respectively. Van Kampen gives
+:::
+
+::: {.pf-step #s3}
+Let \(a\) and \(b\) denote the core generators of the first and second copies of \(V\), respectively. Van Kampen gives
 \[
 \pi_1(X_n)
 \cong
@@ -106,11 +109,15 @@ so \(\lambda\) is fixed.
  i_{1*}(\lambda)=i_{2*}\phi_{n*}(\lambda)
 \right\rangle.
 \]
-::: {.proof}
+
+::: pf-proof
 Use collar neighborhoods of the common boundary torus after gluing. They give an open cover whose two pieces deformation retract onto the two solid tori and whose intersection deformation retracts onto \(T\). The displayed presentation is the resulting pushout presentation from Seifert--van Kampen.
 :::
 
-<1>4. The meridian relation is
+:::
+
+::: {.pf-step #s4}
+The meridian relation is
 \[
 1=b^n,
 \]
@@ -118,8 +125,9 @@ and the longitude relation is
 \[
 a=b.
 \]
-::: {.proof}
-By <1>1,
+
+::: pf-proof
+By step [](#meridian-longitude){.pf-ref},
 \[
 i_{1*}(\mu)=1,
 \qquad
@@ -131,7 +139,7 @@ i_{2*}(\mu)=1,
 \qquad
  i_{2*}(\lambda)=b.
 \]
-Using <1>2,
+Using step [](#gluing-action){.pf-ref},
 \[
 i_{2*}\phi_{n*}(\mu)
 =i_{2*}(\mu+n\lambda)=b^n,
@@ -140,10 +148,13 @@ while
 \[
 i_{2*}\phi_{n*}(\lambda)=b.
 \]
-Substitute these into <1>3.
+Substitute these into step [](#s3){.pf-ref}.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 \boxed{\pi_1(X_n)\cong \mathbb Z/n\mathbb Z}.
 \]
@@ -155,8 +166,9 @@ Equivalently,
 \mathbb Z/|n|\mathbb Z,&n\ne0.
 \end{cases}
 \]
-::: {.proof}
-By <1>4,
+
+::: pf-proof
+By step [](#s4){.pf-ref},
 \[
 \pi_1(X_n)
 \cong
@@ -166,4 +178,9 @@ By <1>4,
 \]
 For \(n=0\), the relation \(a^0=1\) is vacuous, giving \(\mathbb Z\). For \(n\ne0\), the relation has order \(|n|\), giving \(\mathbb Z/|n|\mathbb Z\).
 :::
+
+:::
+
+:::
+
 :::

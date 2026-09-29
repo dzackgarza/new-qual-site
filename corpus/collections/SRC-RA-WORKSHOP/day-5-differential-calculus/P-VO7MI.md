@@ -20,16 +20,34 @@ audit:
 Use the definition of the derivative to prove that if $f$ and $g$ are differentiable at $x$, then $fg$ is differentiable at $x$.
 :::
 ::: {.solution}
-<1>1. Write the difference quotient of $fg$.
-::: {.proof}
-for $h \neq 0$, \[ \frac{(fg)(x+h) - (fg)(x)}{h} = \frac{f(x+h)g(x+h) - f(x)g(x)}{h} = \frac{f(x+h) - f(x)}{h}\,g(x+h) + f(x)\,\frac{g(x+h) - g(x)}{h}. \] <1>2. $g$ is continuous at $x$.
+::: pf
+
+::: {.pf-step #s1}
+Write the difference quotient of $fg$.
+
+::: pf-proof
+for $h \neq 0$, \[ \frac{(fg)(x+h) - (fg)(x)}{h} = \frac{f(x+h)g(x+h) - f(x)g(x)}{h} = \frac{f(x+h) - f(x)}{h}\,g(x+h) + f(x)\,\frac{g(x+h) - g(x)}{h}. \]
 :::
-::: {.proof}
+
+:::
+
+::: {.pf-step #s2}
+$g$ is continuous at $x$.
+
+::: pf-proof
 $g$ is differentiable at $x$, hence continuous at $x$: $g(x+h) \to g(x)$ as $h \to 0$.
 :::
-<1>3. Pass to the limit.
-::: {.proof}
-as $h \to 0$, $\frac{f(x+h)-f(x)}{h} \to f'(x)$, $g(x+h) \to g(x)$ (<1>2), and $\frac{g(x+h)-g(x)}{h} \to g'(x)$; substituting into <1>1, \[ \lim_{h\to 0}\frac{(fg)(x+h)-(fg)(x)}{h} = f'(x)g(x) + f(x)g'(x), \] so $fg$ is differentiable at $x$ with derivative $f'(x)g(x) + f(x)g'(x)$.
+
 :::
-<1>4. Q.E.D.
+
+::: pf-step
+Pass to the limit.
+
+::: pf-proof
+as $h \to 0$, $\frac{f(x+h)-f(x)}{h} \to f'(x)$, $g(x+h) \to g(x)$ (step [](#s2){.pf-ref}), and $\frac{g(x+h)-g(x)}{h} \to g'(x)$; substituting into step [](#s1){.pf-ref}, \[ \lim_{h\to 0}\frac{(fg)(x+h)-(fg)(x)}{h} = f'(x)g(x) + f(x)g'(x), \] so $fg$ is differentiable at $x$ with derivative $f'(x)g(x) + f(x)g'(x)$.
+:::
+
+:::
+
+:::
 :::

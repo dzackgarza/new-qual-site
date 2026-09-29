@@ -40,11 +40,15 @@ P_n=X\times S^n,
 A_n=X\times\{x_0\}.
 \]
 
-<1>1. The long exact sequence of $(P_n,A_n)$ splits and gives
+::: pf
+
+::: {.pf-step #s1}
+The long exact sequence of $(P_n,A_n)$ splits and gives
 \[
 H_i(P_n)\cong H_i(X)\oplus H_i(P_n,A_n).
 \]
-::: {.proof}
+
+::: pf-proof
 The inclusion
 \[
 A_n\cong X\hookrightarrow X\times S^n
@@ -55,11 +59,15 @@ has the projection $X\times S^n\to X$ as a retraction. Hence its induced map on 
 \]
 :::
 
-<1>2. For $n\ge1$ there are natural isomorphisms
+:::
+
+::: {.pf-step #s2}
+For $n\ge1$ there are natural isomorphisms
 \[
 H_i(P_n,A_n)\cong H_{i-1}(P_{n-1},A_{n-1}).
 \]
-::: {.proof}
+
+::: pf-proof
 Decompose $S^n$ into upper and lower hemispheres $D_+^n$ and $D_-^n$, meeting in $S^{n-1}$, and choose $x_0$ on the equator. Apply relative Mayer--Vietoris to the pair
 \[
 (X\times S^n,\,X\times\{x_0\}).
@@ -75,12 +83,16 @@ deformation retract to $(X,X)$ and hence have zero relative homology. Their inte
 Thus the connecting homomorphism in the relative Mayer--Vietoris sequence is an isomorphism shifting degree by one.
 :::
 
-<1>3. One has
+:::
+
+::: {.pf-step #s3}
+One has
 \[
 H_i(P_n,A_n)\cong H_{i-n}(X).
 \]
-::: {.proof}
-Iterate <1>2 until $n=0$. Since $S^0$ consists of two points and $A_0$ is one copy of $X$,
+
+::: pf-proof
+Iterate step [](#s2){.pf-ref} until $n=0$. Since $S^0$ consists of two points and $A_0$ is one copy of $X$,
 \[
 H_j(X\times S^0,\,X\times\{x_0\})\cong H_j(X).
 \]
@@ -91,8 +103,13 @@ H_i(P_n,A_n)\cong H_{i-n}(X),
 where the latter is zero for negative indices.
 :::
 
-Combining <1>1 and <1>3 gives
+:::
+
+::: pf-step
+Combining steps [](#s1){.pf-ref} and [](#s3){.pf-ref} gives
 \[
 \boxed{H_i(X\times S^n)\cong H_i(X)\oplus H_{i-n}(X).}
 \]
+:::
+
 :::

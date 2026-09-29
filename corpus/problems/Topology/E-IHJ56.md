@@ -24,32 +24,66 @@ Show that if $X$ is Hausdorff and $A\subseteq X$ is compact then $A$ is closed.
 ::: {.solution}
 **Goal:** Show that if $X$ is Hausdorff and $A \subseteq X$ is compact, then $A$ is closed.
 
-<1>1. Fix $x \in X \setminus A$; it suffices to find an open neighborhood of $x$ disjoint from $A$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+Fix $x \in X \setminus A$; it suffices to find an open neighborhood of $x$ disjoint from $A$.
+
+::: pf-proof
 Then $X \setminus A$ is a union of open sets, hence open, so $A$ is closed.
 :::
 
-<1>2. For each $a \in A$, choose disjoint open sets $U_a \ni a$ and $V_a \ni x$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+For each $a \in A$, choose disjoint open sets $U_a \ni a$ and $V_a \ni x$.
+
+::: pf-proof
 $X$ is Hausdorff, and $a \neq x$ since $x \notin A$.
 :::
 
-<1>3. $\theset{U_a}_{a \in A}$ is an open cover of $A$, so it has a finite subcover $U_{a_1}, \ldots, U_{a_n}$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+$\theset{U_a}_{a \in A}$ is an open cover of $A$, so it has a finite subcover $U_{a_1}, \ldots, U_{a_n}$.
+
+::: pf-proof
 $A$ is compact.
 :::
 
-<1>4. Define $V := V_{a_1} \cap \cdots \cap V_{a_n}$; then $V$ is open, contains $x$, and is disjoint from $A$.
-<2>1. $V$ is open and $x \in V$.
-::: {.proof}
-Finite intersection of open sets, each containing $x$ (<1>2). <2>2. $V \cap A = \emptyset$.
-:::
-::: {.proof}
-If $y \in V \cap A$, then $y \in U_{a_j}$ for some $j$ (<1>3), but $y \in V \subseteq V_{a_j}$ contradicts $U_{a_j} \cap V_{a_j} = \emptyset$ (<1>2).
 :::
 
-<1>5. Q.E.D.
-::: {.proof}
-<1>1 and <1>4 show every $x \notin A$ has a neighborhood avoiding $A$; hence $A$ is closed.
+::: {.pf-step #s4}
+Define $V := V_{a_1} \cap \cdots \cap V_{a_n}$; then $V$ is open, contains $x$, and is disjoint from $A$.
+
+::: pf-proof
+
+::: pf-step
+$V$ is open and $x \in V$.
+
+::: pf-proof
+Finite intersection of open sets, each containing $x$ (step [](#s2){.pf-ref}).
 :::
+
+:::
+
+::: pf-step
+$V \cap A = \emptyset$.
+
+::: pf-proof
+If $y \in V \cap A$, then $y \in U_{a_j}$ for some $j$ (step [](#s3){.pf-ref}), but $y \in V \subseteq V_{a_j}$ contradicts $U_{a_j} \cap V_{a_j} = \emptyset$ (step [](#s2){.pf-ref}).
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+step [](#s1){.pf-ref} and step [](#s4){.pf-ref} show every $x \notin A$ has a neighborhood avoiding $A$; hence $A$ is closed.
+:::
+
+:::
+
 :::

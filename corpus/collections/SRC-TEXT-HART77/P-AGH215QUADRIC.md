@@ -57,12 +57,12 @@ $$
 \begin{pmatrix}x&z\\w&y\end{pmatrix}
 $$
 whose determinant is zero.
-The nonzero-entry calculation in [[P-AGH214SEGRE]], step <1>2, expresses this matrix as a nonzero column $(a,b)^t$ times a nonzero row $(c,d)$.
+The nonzero-entry calculation in [[P-AGH214SEGRE]], step 2, expresses this matrix as a nonzero column $(a,b)^t$ times a nonzero row $(c,d)$.
 It therefore has the four coordinates displayed for $\psi$.
-Step <1>3 of that card proves uniqueness of the two projective factors, so $\psi$ is a bijection onto $Q$.
+Step 3 of that card proves uniqueness of the two projective factors, so $\psi$ is a bijection onto $Q$.
 Its image is a projective variety by the same card.
 The chart $x\ne0$ on $Q$ has coordinates $z/x,w/x$, with $y/x=(z/x)(w/x)$, and is an affine plane.
-The other nonzero-entry charts have the same form, so $\dim Q=2$ by [[P-AGH27DIMPN]], step <1>1.
+The other nonzero-entry charts have the same form, so $\dim Q=2$ by [[P-AGH27DIMPN]], step 1.
 This proves (a).
 :::
 

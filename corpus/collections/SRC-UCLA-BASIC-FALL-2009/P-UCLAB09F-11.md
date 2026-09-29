@@ -17,10 +17,10 @@ audit:
 ---
 
 ::: {.problem}
-<1>1. State the Cayley--Hamilton theorem for matrices $A\in M_n(\mathbb C)$.
+(a) State the Cayley--Hamilton theorem for matrices $A\in M_n(\mathbb C)$.
 
-<1>2. Prove the theorem directly for diagonalizable matrices.
+(b) Prove the theorem directly for diagonalizable matrices.
 
-<1>3. Identify $M_n(\mathbb C)$ with $\mathbb C^{n^2}$ via a fixed linear isomorphism and give it the Euclidean metric.
-Using the fact that the diagonalizable matrices are dense in $M_n(\mathbb C)$, together with <1>2, prove the Cayley--Hamilton theorem for arbitrary complex matrices.
+(c) Identify $M_n(\mathbb C)$ with $\mathbb C^{n^2}$ via a fixed linear isomorphism and give it the Euclidean metric.
+Using the fact that the diagonalizable matrices are dense in $M_n(\mathbb C)$, together with part (b), prove the Cayley--Hamilton theorem for arbitrary complex matrices.
 :::

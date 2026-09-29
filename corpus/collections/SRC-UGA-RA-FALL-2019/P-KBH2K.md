@@ -40,51 +40,148 @@ $$
 ::: {.solution}
 **Goal:** Prove the Cesàro limit theorem for null sequences in (a), and deduce Kronecker's Lemma via summation by parts in (b).
 
-<1>1. Part (a): Cesàro mean of a null sequence converges to 0.
-::: {.proof}
-    <2>1. Let $\varepsilon > 0$ be given.
-    <2>2. Since $\lim_{n \to \infty} a_n = 0$, there exists an integer $N_0 \in \mathbb{N}$ such that
-    $$|a_k| < \frac{\varepsilon}{2} \quad \text{for all } k > N_0.$$
-    <2>3. For any $n > N_0$, split the sum into the initial segment and the tail:
-    $$\left| \frac{1}{n} \sum_{k=1}^n a_k \right| \le \frac{1}{n} \sum_{k=1}^{N_0} |a_k| + \frac{1}{n} \sum_{k=N_0+1}^n |a_k|.$$
-    <2>4. Bound the second term:
-    $$\frac{1}{n} \sum_{k=N_0+1}^n |a_k| < \frac{1}{n} \sum_{k=N_0+1}^n \frac{\varepsilon}{2} = \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2}.$$
-    <2>5. For the first term, the sum $C = \sum_{k=1}^{N_0} |a_k|$ is a fixed constant independent of $n$. Choose $N_1 > N_0$ such that for all $n > N_1$:
-    $$\frac{C}{n} = \frac{1}{n} \sum_{k=1}^{N_0} |a_k| < \frac{\varepsilon}{2}.$$
-    <2>6. For all $n > N_1$:
-    $$\left| \frac{1}{n} \sum_{k=1}^n a_k \right| \le \frac{C}{n} + \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
-    <2>7. Since $\varepsilon > 0$ was arbitrary, $\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n a_k = 0$.
+::: pf
+
+::: pf-step
+Part (a): Cesàro mean of a null sequence converges to 0.
+
+::: pf-proof
+
+::: pf-step
+Let $\varepsilon > 0$ be given.
 
 :::
 
-<1>2. Generalization of Cesàro mean: If $x_n \to L$, then $\frac{1}{n} \sum_{k=1}^n x_k \to L$.
-::: {.proof}
-    <2>1. Let $y_n = x_n - L$. Then $y_n \to 0$.
-    <2>2. By Part (a), $\frac{1}{n} \sum_{k=1}^n y_k \to 0$.
-    <2>3. Then $\frac{1}{n} \sum_{k=1}^n x_k = \frac{1}{n} \sum_{k=1}^n (y_k + L) = \frac{1}{n} \sum_{k=1}^n y_k + L \to 0 + L = L$.
+::: pf-step
+Since $\lim_{n \to \infty} a_n = 0$, there exists an integer $N_0 \in \mathbb{N}$ such that
+$$|a_k| < \frac{\varepsilon}{2} \quad \text{for all } k > N_0.$$
 
 :::
 
-<1>3. Part (b): Convergence of $\sum \frac{a_n}{n} \implies \lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n a_k = 0$ (Kronecker's Lemma).
-::: {.proof}
-    <2>1. Let $S_n = \sum_{k=1}^n \frac{a_k}{k}$ for $n \ge 1$, and set $S_0 = 0$.
-    <2>2. By hypothesis, the series converges, so $\lim_{n \to \infty} S_n = S \in \mathbb{R}$.
-    <2>3. Note that $\frac{a_k}{k} = S_k - S_{k-1}$, so $a_k = k(S_k - S_{k-1})$ for each $k \ge 1$.
-    <2>4. Summation by parts:
-    $$\sum_{k=1}^n a_k = \sum_{k=1}^n k(S_k - S_{k-1}) = \sum_{k=1}^n k S_k - \sum_{k=1}^n k S_{k-1} = \sum_{k=1}^n k S_k - \sum_{j=0}^{n-1} (j + 1) S_j.$$
-    <2>5. Group like terms:
-    $$\sum_{k=1}^n a_k = n S_n + \sum_{k=1}^{n-1} k S_k - \sum_{j=1}^{n-1} j S_j - \sum_{j=0}^{n-1} S_j = n S_n - \sum_{j=0}^{n-1} S_j.$$
-    <2>6. Divide by $n$:
-    $$\frac{1}{n} \sum_{k=1}^n a_k = S_n - \frac{1}{n} \sum_{j=0}^{n-1} S_j.$$
-    <2>7. Since $\lim_{n \to \infty} S_n = S$, the sequence $(S_j)_{j=0}^\infty$ converges to $S$.
-    <2>8. By <1>2, the Cesàro average satisfies $\lim_{n \to \infty} \frac{1}{n} \sum_{j=0}^{n-1} S_j = S$.
-    <2>9. Therefore:
-    $$\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n a_k = \lim_{n \to \infty} S_n - \lim_{n \to \infty} \frac{1}{n} \sum_{j=0}^{n-1} S_j = S - S = 0.$$
+::: pf-step
+For any $n > N_0$, split the sum into the initial segment and the tail:
+$$\left| \frac{1}{n} \sum_{k=1}^n a_k \right| \le \frac{1}{n} \sum_{k=1}^{N_0} |a_k| + \frac{1}{n} \sum_{k=N_0+1}^n |a_k|.$$
 
 :::
 
-<1>4. Conclusion:
-::: {.proof}
-    Both conditions imply that the arithmetic mean $\frac{1}{n} \sum_{k=1}^n a_k$ converges to 0.
+::: pf-step
+Bound the second term:
+$$\frac{1}{n} \sum_{k=N_0+1}^n |a_k| < \frac{1}{n} \sum_{k=N_0+1}^n \frac{\varepsilon}{2} = \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2}.$$
+
 :::
+
+::: pf-step
+For the first term, the sum $C = \sum_{k=1}^{N_0} |a_k|$ is a fixed constant independent of $n$. Choose $N_1 > N_0$ such that for all $n > N_1$:
+$$\frac{C}{n} = \frac{1}{n} \sum_{k=1}^{N_0} |a_k| < \frac{\varepsilon}{2}.$$
+
+:::
+
+::: pf-step
+For all $n > N_1$:
+$$\left| \frac{1}{n} \sum_{k=1}^n a_k \right| \le \frac{C}{n} + \frac{n - N_0}{n} \frac{\varepsilon}{2} < \frac{\varepsilon}{2} + \frac{\varepsilon}{2} = \varepsilon.$$
+
+:::
+
+::: pf-step
+Since $\varepsilon > 0$ was arbitrary, $\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n a_k = 0$.
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+Generalization of Cesàro mean: If $x_n \to L$, then $\frac{1}{n} \sum_{k=1}^n x_k \to L$.
+
+::: pf-proof
+
+::: pf-step
+Let $y_n = x_n - L$. Then $y_n \to 0$.
+
+:::
+
+::: pf-step
+By Part (a), $\frac{1}{n} \sum_{k=1}^n y_k \to 0$.
+
+:::
+
+::: pf-step
+Then $\frac{1}{n} \sum_{k=1}^n x_k = \frac{1}{n} \sum_{k=1}^n (y_k + L) = \frac{1}{n} \sum_{k=1}^n y_k + L \to 0 + L = L$.
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+Part (b): Convergence of $\sum \frac{a_n}{n} \implies \lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n a_k = 0$ (Kronecker's Lemma).
+
+::: pf-proof
+
+::: pf-step
+Let $S_n = \sum_{k=1}^n \frac{a_k}{k}$ for $n \ge 1$, and set $S_0 = 0$.
+
+:::
+
+::: pf-step
+By hypothesis, the series converges, so $\lim_{n \to \infty} S_n = S \in \mathbb{R}$.
+
+:::
+
+::: pf-step
+Note that $\frac{a_k}{k} = S_k - S_{k-1}$, so $a_k = k(S_k - S_{k-1})$ for each $k \ge 1$.
+
+:::
+
+::: pf-step
+Summation by parts:
+$$\sum_{k=1}^n a_k = \sum_{k=1}^n k(S_k - S_{k-1}) = \sum_{k=1}^n k S_k - \sum_{k=1}^n k S_{k-1} = \sum_{k=1}^n k S_k - \sum_{j=0}^{n-1} (j + 1) S_j.$$
+
+:::
+
+::: pf-step
+Group like terms:
+$$\sum_{k=1}^n a_k = n S_n + \sum_{k=1}^{n-1} k S_k - \sum_{j=1}^{n-1} j S_j - \sum_{j=0}^{n-1} S_j = n S_n - \sum_{j=0}^{n-1} S_j.$$
+
+:::
+
+::: pf-step
+Divide by $n$:
+$$\frac{1}{n} \sum_{k=1}^n a_k = S_n - \frac{1}{n} \sum_{j=0}^{n-1} S_j.$$
+
+:::
+
+::: pf-step
+Since $\lim_{n \to \infty} S_n = S$, the sequence $(S_j)_{j=0}^\infty$ converges to $S$.
+
+:::
+
+::: pf-step
+By step [](#s2){.pf-ref}, the Cesàro average satisfies $\lim_{n \to \infty} \frac{1}{n} \sum_{j=0}^{n-1} S_j = S$.
+
+:::
+
+::: pf-step
+Therefore:
+$$\lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n a_k = \lim_{n \to \infty} S_n - \lim_{n \to \infty} \frac{1}{n} \sum_{j=0}^{n-1} S_j = S - S = 0.$$
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+Conclusion:
+
+::: pf-proof
+Both conditions imply that the arithmetic mean $\frac{1}{n} \sum_{k=1}^n a_k$ converges to 0.
+:::
+
+:::
+
+:::
+
 :::

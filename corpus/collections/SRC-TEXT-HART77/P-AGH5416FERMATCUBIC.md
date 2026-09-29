@@ -72,7 +72,7 @@ F=(x_0+x_1+x_2+x_3)^3,
 $$
 so the displayed scheme is a nonreduced triple plane, not the nonsingular
 cubic surface to which the 27-line theory applies. We therefore assume
-through step <1>8 that
+through step [](#incidence-count-ten-sixteen){.pf-ref} that
 $$
 \operatorname{char}k\ne3.
 $$

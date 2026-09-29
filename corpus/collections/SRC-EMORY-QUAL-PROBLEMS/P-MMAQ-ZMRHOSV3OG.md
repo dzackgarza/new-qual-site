@@ -42,31 +42,227 @@ If $g: \mathbb{D} \to \mathbb{D}$ is a holomorphic function satisfying $g(0) = 0
 
 ### Part 2: Proof of the Schwarz-Pick Derivative Inequality
 
-<1>1. **Define the disk automorphisms $\phi_a$ and $\psi_{f(a)}$.** <2>1. For any $w \in \mathbb{D}$, define the Möbius transformation $\phi_w(z) = \frac{w - z}{1 - \bar{w} z}$.
-*Proof:* This is a definition; the denominator does not vanish for $|z|<1$ because $|\bar w z|<1$.
-<2>2. $\phi_w$ is a biholomorphic map from $\mathbb{D}$ onto $\mathbb{D}$ with $\phi_w(w) = 0$, $\phi_w(0) = w$, and $\phi_w^{-1} = \phi_w$.
-*Proof:* Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z$. The identity $1-|\phi_w(z)|^2=\frac{(1-|w|^2)(1-|z|^2)}{|1-\bar wz|^2}$ shows that $\phi_w$ maps $\mathbb D$ into $\mathbb D$; being its own inverse, it is a biholomorphism of $\mathbb D$.
-<2>3. Compute the derivative of $\phi_w(z)$: $$\phi_w'(z) = \frac{-(1 - \bar{w}z) - (w - z)(-\bar{w})}{(1 - \bar{w}z)^2} = \frac{-1 + \bar{w}z + |w|^2 - \bar{w}z}{(1 - \bar{w}z)^2} = \frac{-(1 - |w|^2)}{(1 - \bar{w}z)^2}.$$ *Proof:* Quotient rule.
-<2>4. Evaluating $\phi_w'$ at $z = 0$ and $z = w$: $$\phi_w'(0) = -(1 - |w|^2), \qquad \phi_w'(w) = \frac{-(1 - |w|^2)}{(1 - |w|^2)^2} = -\frac{1}{1 - |w|^2}.$$ *Proof:* Substitution into derivative formula.
-<2>5. Q.E.D.
+::: pf
 
-<1>2. **Construct the normalized map $g: \mathbb{D} \to \mathbb{D}$.** <2>1. Set $b = f(a) \in \mathbb{D}$.
-Define $g: \mathbb{D} \to \mathbb{D}$ by: $$g(z) = (\phi_b \circ f \circ \phi_a)(z) = \phi_b(f(\phi_a(z))).$$ *Proof:* Composition of holomorphic maps.
-<2>2. Since $\phi_a(\mathbb{D}) = \mathbb{D}$, $f(\mathbb{D}) \subseteq \mathbb{D}$, and $\phi_b(\mathbb{D}) = \mathbb{D}$, $g$ maps $\mathbb{D}$ into $\mathbb{D}$.
-*Proof:* Image containment under composition.
-<2>3. Evaluate $g(0)$: $$g(0) = \phi_b(f(\phi_a(0))) = \phi_b(f(a)) = \phi_b(b) = 0.$$ *Proof:* $\phi_a(0) = a$, $f(a) = b$, $\phi_b(b) = 0$.
-<2>4. Q.E.D.
+::: pf-step
 
-<1>3. **Apply the Schwarz Lemma to $g$.** <2>1. By Part 1, since $g$ is holomorphic on $\mathbb{D}$, $g(\mathbb{D}) \subseteq \mathbb{D}$, and $g(0) = 0$, we have: $$|g'(0)| \leq 1.$$ *Proof:* Schwarz Lemma derivative bound.
-<2>2. Q.E.D.
+**Define the disk automorphisms $\phi_a$ and $\psi_{f(a)}$.**
 
-<1>4. **Compute $g'(0)$ via the Chain Rule.** <2>1. By the chain rule applied to $g(z) = \phi_b(f(\phi_a(z)))$: $$g'(z) = \phi_b'(f(\phi_a(z))) \cdot f'(\phi_a(z)) \cdot \phi_a'(z).$$ *Proof:* Chain rule for holomorphic functions.
-<2>2. Evaluating at $z = 0$: $$g'(0) = \phi_b'(f(\phi_a(0))) \cdot f'(\phi_a(0)) \cdot \phi_a'(0) = \phi_b'(f(a)) \cdot f'(a) \cdot \phi_a'(0) = \phi_b'(b) \cdot f'(a) \cdot \phi_a'(0).$$ *Proof:* $\phi_a(0) = a$ and $f(a) = b$.
-<2>3. Substitute $\phi_b'(b) = -\frac{1}{1 - |b|^2} = -\frac{1}{1 - |f(a)|^2}$ and $\phi_a'(0) = -(1 - |a|^2)$ from <1>1.<2>4: $$g'(0) = \left(-\frac{1}{1 - |f(a)|^2}\right) \cdot f'(a) \cdot \big(-(1 - |a|^2)\big) = \frac{1 - |a|^2}{1 - |f(a)|^2} f'(a).$$ *Proof:* Product of the derivative values.
-<2>4. Taking the absolute value: $$|g'(0)| = \frac{1 - |a|^2}{1 - |f(a)|^2} |f'(a)|.$$ *Proof:* $1 - |a|^2 > 0$ and $1 - |f(a)|^2 > 0$.
-<2>5. Q.E.D.
+::: pf-proof
 
-<1>5. **Conclusion.** <2>1. From <1>3.<2>1 and <1>4.<2>4: $$\frac{1 - |a|^2}{1 - |f(a)|^2} |f'(a)| \leq 1.$$ *Proof:* $|g'(0)| \leq 1$.
-<2>2. Dividing both sides by $1 - |a|^2 > 0$: $$\frac{|f'(a)|}{1 - |f(a)|^2} \leq \frac{1}{1 - |a|^2}.$$ *Proof:* Division by positive real number.
-<2>3. Q.E.D.
+::: pf-step
+
+For any $w \in \mathbb{D}$, define the Möbius transformation $\phi_w(z) = \frac{w - z}{1 - \bar{w} z}$.
+
+::: pf-proof
+
+This is a definition; the denominator does not vanish for $|z|<1$ because $|\bar w z|<1$.
+
+:::
+
+:::
+
+::: pf-step
+
+$\phi_w$ is a biholomorphic map from $\mathbb{D}$ onto $\mathbb{D}$ with $\phi_w(w) = 0$, $\phi_w(0) = w$, and $\phi_w^{-1} = \phi_w$.
+
+::: pf-proof
+
+Direct substitution gives $\phi_w(w)=0$, $\phi_w(0)=w$, and $\phi_w(\phi_w(z))=z$. The identity $1-|\phi_w(z)|^2=\frac{(1-|w|^2)(1-|z|^2)}{|1-\bar wz|^2}$ shows that $\phi_w$ maps $\mathbb D$ into $\mathbb D$; being its own inverse, it is a biholomorphism of $\mathbb D$.
+
+:::
+
+:::
+
+::: pf-step
+
+Compute the derivative of $\phi_w(z)$: $$\phi_w'(z) = \frac{-(1 - \bar{w}z) - (w - z)(-\bar{w})}{(1 - \bar{w}z)^2} = \frac{-1 + \bar{w}z + |w|^2 - \bar{w}z}{(1 - \bar{w}z)^2} = \frac{-(1 - |w|^2)}{(1 - \bar{w}z)^2}.$$
+
+::: pf-proof
+
+Quotient rule.
+
+:::
+
+:::
+
+::: {.pf-step #s1-4}
+
+Evaluating $\phi_w'$ at $z = 0$ and $z = w$: $$\phi_w'(0) = -(1 - |w|^2), \qquad \phi_w'(w) = \frac{-(1 - |w|^2)}{(1 - |w|^2)^2} = -\frac{1}{1 - |w|^2}.$$
+
+::: pf-proof
+
+Substitution into derivative formula.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+**Construct the normalized map $g: \mathbb{D} \to \mathbb{D}$.**
+
+::: pf-proof
+
+::: pf-step
+
+Set $b = f(a) \in \mathbb{D}$.
+Define $g: \mathbb{D} \to \mathbb{D}$ by: $$g(z) = (\phi_b \circ f \circ \phi_a)(z) = \phi_b(f(\phi_a(z))).$$
+
+::: pf-proof
+
+Composition of holomorphic maps.
+
+:::
+
+:::
+
+::: pf-step
+
+Since $\phi_a(\mathbb{D}) = \mathbb{D}$, $f(\mathbb{D}) \subseteq \mathbb{D}$, and $\phi_b(\mathbb{D}) = \mathbb{D}$, $g$ maps $\mathbb{D}$ into $\mathbb{D}$.
+
+::: pf-proof
+
+Image containment under composition.
+
+:::
+
+:::
+
+::: pf-step
+
+Evaluate $g(0)$: $$g(0) = \phi_b(f(\phi_a(0))) = \phi_b(f(a)) = \phi_b(b) = 0.$$
+
+::: pf-proof
+
+$\phi_a(0) = a$, $f(a) = b$, $\phi_b(b) = 0$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+**Apply the Schwarz Lemma to $g$.**
+
+::: pf-proof
+
+::: {.pf-step #s3-1}
+
+By Part 1, since $g$ is holomorphic on $\mathbb{D}$, $g(\mathbb{D}) \subseteq \mathbb{D}$, and $g(0) = 0$, we have: $$|g'(0)| \leq 1.$$
+
+::: pf-proof
+
+Schwarz Lemma derivative bound.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+**Compute $g'(0)$ via the Chain Rule.**
+
+::: pf-proof
+
+::: pf-step
+
+By the chain rule applied to $g(z) = \phi_b(f(\phi_a(z)))$: $$g'(z) = \phi_b'(f(\phi_a(z))) \cdot f'(\phi_a(z)) \cdot \phi_a'(z).$$
+
+::: pf-proof
+
+Chain rule for holomorphic functions.
+
+:::
+
+:::
+
+::: pf-step
+
+Evaluating at $z = 0$: $$g'(0) = \phi_b'(f(\phi_a(0))) \cdot f'(\phi_a(0)) \cdot \phi_a'(0) = \phi_b'(f(a)) \cdot f'(a) \cdot \phi_a'(0) = \phi_b'(b) \cdot f'(a) \cdot \phi_a'(0).$$
+
+::: pf-proof
+
+$\phi_a(0) = a$ and $f(a) = b$.
+
+:::
+
+:::
+
+::: pf-step
+
+Substitute $\phi_b'(b) = -\frac{1}{1 - |b|^2} = -\frac{1}{1 - |f(a)|^2}$ and $\phi_a'(0) = -(1 - |a|^2)$ from step [](#s1-4){.pf-ref}: $$g'(0) = \left(-\frac{1}{1 - |f(a)|^2}\right) \cdot f'(a) \cdot \big(-(1 - |a|^2)\big) = \frac{1 - |a|^2}{1 - |f(a)|^2} f'(a).$$
+
+::: pf-proof
+
+Product of the derivative values.
+
+:::
+
+:::
+
+::: {.pf-step #s4-4}
+
+Taking the absolute value: $$|g'(0)| = \frac{1 - |a|^2}{1 - |f(a)|^2} |f'(a)|.$$
+
+::: pf-proof
+
+$1 - |a|^2 > 0$ and $1 - |f(a)|^2 > 0$.
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-step
+
+**Conclusion.**
+
+::: pf-proof
+
+::: pf-step
+
+From steps [](#s3-1){.pf-ref} and [](#s4-4){.pf-ref}: $$\frac{1 - |a|^2}{1 - |f(a)|^2} |f'(a)| \leq 1.$$
+
+::: pf-proof
+
+$|g'(0)| \leq 1$.
+
+:::
+
+:::
+
+::: pf-step
+
+Dividing both sides by $1 - |a|^2 > 0$: $$\frac{|f'(a)|}{1 - |f(a)|^2} \leq \frac{1}{1 - |a|^2}.$$
+
+::: pf-proof
+
+Division by positive real number.
+
+:::
+
+:::
+
+:::
+
+:::
+
+:::
+
 :::

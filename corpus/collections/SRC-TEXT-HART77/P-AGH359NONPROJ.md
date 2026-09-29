@@ -48,9 +48,12 @@ Write $\Omega^1=\Omega_{X/k}$, $\omega=\bigwedge^2\Omega^1$, and $\mathcal T=(\O
 On $U_0$ use $u=x_1/x_0$, $v=x_2/x_0$, and the frame $\eta=du\wedge dv$ of $\omega$.
 The extension and all its local splittings retain the specified quotient $X$ and the specified kernel $\omega$, as in [[P-AGH3410INFEXT]].
 
-<1>1. Contraction gives an isomorphism $\omega\otimes\mathcal T\cong\Omega^1$, under which a one-form $\alpha$ corresponds to the derivation $D_\alpha(f)=df\wedge\alpha$ with values in $\omega$.
+::: pf
 
-::: {.proof}
+::: {.pf-step #s1}
+Contraction gives an isomorphism $\omega\otimes\mathcal T\cong\Omega^1$, under which a one-form $\alpha$ corresponds to the derivation $D_\alpha(f)=df\wedge\alpha$ with values in $\omega$.
+
+::: pf-proof
 The contraction map sends $\eta\otimes(A\partial_u+B\partial_v)$ to $A\,dv-B\,du$.
 It is an isomorphism on this local basis and is defined intrinsically by contraction, so the local maps agree on overlaps.
 The identity
@@ -62,23 +65,29 @@ The latter satisfies the Leibniz rule and annihilates $k$, so it is the associat
 This fixes the sign of the identification used below.
 :::
 
-<1>2. The forms $\xi_{ij}=d\log(x_i/x_j)$ form a cocycle, and they define the extension by gluing the split rings with transitions
+:::
+
+::: {.pf-step #s2}
+The forms $\xi_{ij}=d\log(x_i/x_j)$ form a cocycle, and they define the extension by gluing the split rings with transitions
 $$
 G_{ij}(a,z)=(a,z+D_{ij}(a)),\qquad D_{ij}(a)=da\wedge\xi_{ij}.
 $$
 
-::: {.proof}
+::: pf-proof
 The logarithmic identity $d\log(ab)=d\log a+d\log b$ gives $\xi_{ij}+\xi_{jh}=\xi_{ih}$ on every triple intersection.
-Thus the corresponding derivations satisfy the same cocycle identity by step <1>1.
+Thus the corresponding derivations satisfy the same cocycle identity by step [](#s1){.pf-ref}.
 On each $U_i$, take $\OO_{U_i}\oplus\omega|_{U_i}$ with multiplication $(a,z)(b,w)=(ab,aw+bz)$.
 By [[P-AGH3410INFEXT]], the map $G_{ij}$ from chart $j$ to chart $i$ is an automorphism of identified square-zero extensions, its inverse is $G_{ji}$, and the cocycle identity makes these maps valid gluing data.
 The glued scheme is the extension $X'$ associated to $\xi$.
 In particular the kernel and the quotient glue by their identity maps.
 :::
 
-<1>3. The extension $X'$ is a proper noetherian scheme of dimension two over $k$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+The extension $X'$ is a proper noetherian scheme of dimension two over $k$.
+
+::: pf-proof
 On each affine chart its ring is $A\oplus M$, where $A$ is a finite-type $k$-algebra and $M$ is the finite $A$-module corresponding to $\omega$.
 This ring is finite over $A$ through its split inclusion, so is noetherian and of finite type over $k$.
 The finitely many charts make $X'$ a noetherian finite-type scheme.
@@ -90,12 +99,15 @@ Every extension to $X'$ must itself factor through $X$, since $R$ is reduced, so
 The valuative criterion, applied to the finite-type morphism $X'\to\Spec k$, proves properness [@Har10a, Theorem II.4.7].
 :::
 
-<1>4. In the Čech complex for $\omega$, the obstruction to lifting $\OO_X(1)$ is represented on $U_0\cap U_1\cap U_2$ by
+:::
+
+::: {.pf-step #s4}
+In the Čech complex for $\omega$, the obstruction to lifting $\OO_X(1)$ is represented on $U_0\cap U_1\cap U_2$ by
 $$
 \boxed{\delta([\OO_X(1)])=\left[\frac{du\wedge dv}{uv}\right].}
 $$
 
-::: {.proof}
+::: pf-proof
 Use the frame $e_i=x_i$ of $\OO_X(1)$ on $U_i$, with $e_j=g_{ij}e_i$ and $g_{ij}=x_j/x_i$.
 Lift the transition unit $g_{ij}$ in the $i$th split ring to $(g_{ij},0)$.
 On a triple overlap, the lift of $g_{jh}$ must first be expressed in the $i$th splitting using $G_{ij}$.
@@ -109,7 +121,7 @@ By the construction of the connecting homomorphism for the unit sequence in [[P-
 Changing the chosen lifts adds a coboundary to this additive cocycle.
 
 For $(i,j,h)=(0,1,2)$, one has $\xi_{01}=-du/u$ and $g_{12}=v/u$.
-The derivation in step <1>1 gives
+The derivation in step [](#s1){.pf-ref} gives
 $$
 D_{01}(u)=0,\qquad D_{01}(v)=\frac{\eta}{u},\qquad
 D_{01}(v/u)=\frac{\eta}{u^2}.
@@ -117,9 +129,12 @@ $$
 Dividing the last expression by $g_{12}=v/u$ gives $\eta/(uv)$, proving the claimed formula.
 :::
 
-<1>5. The class in step <1>4 is nonzero and generates the one-dimensional $k$-space $H^2(X,\omega)$.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+The class in step [](#s4){.pf-ref} is nonzero and generates the one-dimensional $k$-space $H^2(X,\omega)$.
+
+::: pf-proof
 The canonical-sheaf computation gives $\omega\cong\OO_X(-3)$ [@Har10a, Example II.8.20.1].
 Normalize this isomorphism so that the local frame $\eta$ on $U_0$ corresponds to $x_0^{-3}$.
 Then $\eta/(uv)$ corresponds to the degree-$-3$ homogeneous fraction $1/(x_0x_1x_2)$.
@@ -132,11 +147,14 @@ Uniqueness of Laurent coefficients makes its class nonzero and a basis of this q
 The asserted nonvanishing and dimension follow.
 :::
 
-<1>6. One has $\Pic X'=0$, and $X'$ has no ample invertible sheaf.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+One has $\Pic X'=0$, and $X'$ has no ample invertible sheaf.
+
+::: pf-proof
 The group $\Pic X$ is $\ZZ$ with generator $[\OO(1)]$ [@Har10a, Proposition II.6.4 and Corollary II.6.16].
-The map $\delta$ is a group homomorphism, so step <1>5 sends its integer $n$ to $n$ times a nonzero vector of the one-dimensional additive $k$-space.
+The map $\delta$ is a group homomorphism, so step [](#s5){.pf-ref} sends its integer $n$ to $n$ times a nonzero vector of the one-dimensional additive $k$-space.
 Characteristic zero makes this map injective.
 Furthermore, $H^1(X,\omega)=H^1(\PP^2,\OO(-3))=0$ by [@Har10a, Theorem III.5.1].
 The exact Picard sequence in the statement now makes $\Pic X'$ inject into $\Pic X$ with image $\ker\delta=0$.
@@ -147,10 +165,12 @@ If an invertible sheaf on $X'$ were ample, its restriction to the closed subsche
 Thus $X'$ has no ample invertible sheaf and is not projective.
 :::
 
-<1>7. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>3 construct the stated proper two-dimensional extension, steps <1>4--<1>5 compute its nonzero obstruction, and step <1>6 proves injectivity of $\delta$, the trivial Picard group, and nonprojectivity.
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} construct the stated proper two-dimensional extension, steps [](#s4){.pf-ref} and [](#s5){.pf-ref} compute its nonzero obstruction, and step [](#s6){.pf-ref} proves injectivity of $\delta$, the trivial Picard group, and nonprojectivity.
+:::
+
 :::
 :::
 
@@ -158,8 +178,8 @@ Steps <1>1--<1>3 construct the stated proper two-dimensional extension, steps <1
 Let $S$ be a nonsingular projective integral surface over an algebraically closed field of characteristic zero, and let $D$ be an ample divisor.
 Use the logarithmic convention $c_1(D)=[d\log h_{ij}]$, where $h_{ij}$ are the transitions from frame $j$ to frame $i$ of $\OO_S(D)$.
 The [logarithmic Chern-class construction](https://stacks.math.columbia.edu/tag/0FLE) places this class in $H^1(S,\Omega^1_S)$.
-Under the contraction convention of step <1>1 it defines an extension by $\omega_S$.
-For transitions $g_{ij}$ of $\OO_S(E)$, the calculation in step <1>4 gives obstruction cocycle
+Under the contraction convention of step [](#s1){.pf-ref} it defines an extension by $\omega_S$.
+For transitions $g_{ij}$ of $\OO_S(E)$, the calculation in step [](#s4){.pf-ref} gives obstruction cocycle
 $$
 d\log g_{jh}\wedge d\log h_{ij}
 =-d\log h_{ij}\wedge d\log g_{jh}.
@@ -176,7 +196,7 @@ $$
 $$
 For ample $E$ this is a positive integer, hence is nonzero in characteristic zero [@Har10a, Chapter V, §1].
 No ample sheaf on $S$ can therefore lift to the extension, and restriction of an ample sheaf would be ample.
-The extension has no ample invertible sheaf and is not projective; it is proper by the valuation-ring argument in step <1>3.
+The extension has no ample invertible sheaf and is not projective; it is proper by the valuation-ring argument in step [](#s3){.pf-ref}.
 The specified cocycle for $\PP^2$ in the problem is the negative of this logarithmic $c_1(\OO(1))$ convention; it changes the sign of the obstruction, not its kernel or the nonprojectivity conclusion.
 :::
 

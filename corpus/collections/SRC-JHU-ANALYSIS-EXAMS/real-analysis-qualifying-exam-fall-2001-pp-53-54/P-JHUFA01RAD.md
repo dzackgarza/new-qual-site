@@ -35,8 +35,12 @@ Show that $f_k\to f$ in $L^1([0,1])$ as $k\to\infty$.
 ::: {.solution}
 Let $A_k:L^1([0,1])\to L^1([0,1])$ denote the averaging operator $A_k f=f_k$.
 
-<1>1. $A_k$ is an $L^1$ contraction.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+$A_k$ is an $L^1$ contraction.
+
+::: pf-proof
 On each interval
 \[
 I_{j,k}=\left[\frac jk,\frac{j+1}{k}\right),
@@ -59,8 +63,12 @@ Summing over $j$ gives
 \]
 :::
 
-<1>2. $A_k g\to g$ uniformly for every continuous $g$.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+$A_k g\to g$ uniformly for every continuous $g$.
+
+::: pf-proof
 Let $g\in C([0,1])$. Since $g$ is uniformly continuous, its modulus of continuity
 \[
 \omega_g(\delta)=\sup_{|x-y|\le\delta}|g(x)-g(y)|
@@ -81,17 +89,21 @@ Hence
 and therefore also $\|A_k g-g\|_1\to0$.
 :::
 
-<1>3. Approximate an arbitrary $L^1$ function by continuous functions.
-::: {.proof}
+:::
+
+::: pf-step
+Approximate an arbitrary $L^1$ function by continuous functions.
+
+::: pf-proof
 Fix $\varepsilon>0$. Choose $g\in C([0,1])$ with
 \[
 \|f-g\|_1<\frac\varepsilon3,
 \]
-using density of $C([0,1])$ in $L^1([0,1])$. By <1>2, for all sufficiently large $k$,
+using density of $C([0,1])$ in $L^1([0,1])$. By step [](#s2){.pf-ref}, for all sufficiently large $k$,
 \[
 \|A_k g-g\|_1<\frac\varepsilon3.
 \]
-Then the contraction estimate from <1>1 gives
+Then the contraction estimate from step [](#s1){.pf-ref} gives
 \[
 \begin{aligned}
 \|A_k f-f\|_1
@@ -101,5 +113,9 @@ Then the contraction estimate from <1>1 gives
 \end{aligned}
 \]
 Thus $f_k=A_kf\to f$ in $L^1$.
+:::
+
+:::
+
 :::
 :::

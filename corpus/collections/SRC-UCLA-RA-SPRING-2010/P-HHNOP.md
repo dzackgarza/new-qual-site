@@ -40,8 +40,12 @@ Show that $A:X\to Y$ is compact if and only if for every bounded sequence $\{x_n
 ::: {.solution}
 We first record the sequential compactness consequence of the hypotheses on $X$.
 
-<1>1. Every bounded sequence in $X$ has a weakly convergent subsequence.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+Every bounded sequence in $X$ has a weakly convergent subsequence.
+
+::: pf-proof
 Let $\{x_n\}$ be bounded, say
 \[
 \|x_n\|\le M
@@ -112,8 +116,12 @@ Therefore $M B_X$ is a compact metrizable space in its weak topology, hence sequ
 The bounded sequence $\{x_n\}\subseteq M B_X$ consequently has a weakly convergent subsequence.
 :::
 
-<1>2. If every bounded sequence has a subsequence of the stated form, then $A$ is compact.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+If every bounded sequence has a subsequence of the stated form, then $A$ is compact.
+
+::: pf-proof
 Let $\{x_n\}$ be a bounded sequence in $X$.
 By hypothesis there are a subsequence $\{x_{n_j}\}$, a vector $\phi\in X$, and vectors $r_{n_j}$ such that
 \[
@@ -132,9 +140,13 @@ Ax_{n_j}=A\phi+Ar_{n_j}\longrightarrow A\phi
 Thus every bounded sequence in $X$ has a subsequence whose image converges in $Y$, which is exactly compactness of $A$.
 :::
 
-<1>3. Suppose $A$ is compact and $x_{n_j}\rightharpoonup\phi$ weakly in $X$.
+:::
+
+::: {.pf-step #s3}
+Suppose $A$ is compact and $x_{n_j}\rightharpoonup\phi$ weakly in $X$.
 Then every norm-convergent subsequence of $\{Ax_{n_j}\}$ converges to $A\phi$.
-::: {.proof}
+
+::: pf-proof
 A bounded linear map is weak-to-weak continuous.
 Indeed, for every $y^*\in Y^*$,
 \[
@@ -163,17 +175,21 @@ y=A\phi.
 \]
 :::
 
-<1>4. If $A$ is compact, then every bounded sequence has a subsequence of the required form.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+If $A$ is compact, then every bounded sequence has a subsequence of the required form.
+
+::: pf-proof
 Let $\{x_n\}$ be bounded.
-By <1>1, pass to a subsequence, still denoted $\{x_{n_j}\}$, such that
+By step [](#s1){.pf-ref}, pass to a subsequence, still denoted $\{x_{n_j}\}$, such that
 \[
 x_{n_j}\rightharpoonup\phi
 \qquad\text{for some }\phi\in X.
 \]
 Since $A$ is compact, the image sequence $\{Ax_{n_j}\}$ has a norm-convergent subsequence.
 Pass to that subsubsequence and relabel it again as $\{x_{n_j}\}$.
-By <1>3, its image must converge to $A\phi$:
+By step [](#s3){.pf-ref}, its image must converge to $A\phi$:
 \[
 Ax_{n_j}\longrightarrow A\phi.
 \]
@@ -195,5 +211,11 @@ Ar_{n_j}
 This is the required decomposition.
 :::
 
-Combining <1>2 and <1>4 proves the equivalence.
+:::
+
+::: pf-qed
+Combining step [](#s2){.pf-ref} and step [](#s4){.pf-ref} proves the equivalence.
+:::
+
+:::
 :::

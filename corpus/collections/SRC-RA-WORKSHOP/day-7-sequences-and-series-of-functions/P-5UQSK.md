@@ -25,26 +25,56 @@ Prove that $\mathcal{F}$ is equicontinuous on $[a,b]$.
 :::
 
 ::: {.solution}
-<1>1. Every $f \in \mathcal F$ is Lipschitz with constant $M$: $|f(x) - f(y)| \le M|x - y|$ for all $x, y \in [a,b]$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+Every $f \in \mathcal F$ is Lipschitz with constant $M$: $|f(x) - f(y)| \le M|x - y|$ for all $x, y \in [a,b]$.
+
+::: pf-proof
 mean value theorem — for $x \ne y$, $f(x) - f(y) = f'(c)(x - y)$ for some $c$ between $x$ and $y$, and $|f'(c)| \le M$.
 :::
 
-<1>2. $\mathcal F$ is equicontinuous on $[a,b]$.
-<2>1. Given $\eps > 0$, set $\delta = \eps/M$.
-::: {.proof}
-$M < \infty$ by hypothesis.
-:::
-<2>2. For $|x - y| < \delta$: $|f(x) - f(y)| \le M|x - y| < \eps$ for every $f \in \mathcal F$.
-::: {.proof}
-<1>1 and <2>1. <2>3. Q.E.D.
-::: {.proof}
-<2>2 is exactly the definition of equicontinuity ($\delta$ independent of $x, y$, and $f$).
-:::
 :::
 
-<1>3. (Remark) each $f \in \mathcal F$ is also uniformly bounded: $|f(x)| \le M + M(b - a)$.
-::: {.proof}
-$|f(x)| \le |f(a)| + |f(x) - f(a)| \le M + M|x - a| \le M + M(b - a)$ by <1>1.
+::: pf-step
+$\mathcal F$ is equicontinuous on $[a,b]$.
+
+::: pf-proof
+
+::: {.pf-step #s2-1}
+Given $\eps > 0$, set $\delta = \eps/M$.
+
+::: pf-proof
+$M < \infty$ by hypothesis.
+:::
+
+:::
+
+::: {.pf-step #s2-2}
+For $|x - y| < \delta$: $|f(x) - f(y)| \le M|x - y| < \eps$ for every $f \in \mathcal F$.
+
+::: pf-proof
+Steps [](#s1){.pf-ref} and [](#s2-1){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+Step [](#s2-2){.pf-ref} is exactly the definition of equicontinuity ($\delta$ independent of $x, y$, and $f$).
+:::
+
+:::
+
+:::
+
+::: pf-step
+(Remark) each $f \in \mathcal F$ is also uniformly bounded: $|f(x)| \le M + M(b - a)$.
+
+::: pf-proof
+$|f(x)| \le |f(a)| + |f(x) - f(a)| \le M + M|x - a| \le M + M(b - a)$ by step [](#s1){.pf-ref}.
+:::
+
+:::
+
 :::
 :::

@@ -42,12 +42,15 @@ given by restriction along $\mfa^{n+1}\subseteq\mfa^n$.
 Including $n=0$ would give the same direct limit.
 No finiteness hypothesis is imposed on $M$.
 
-<1>1. There is a natural $A$-linear map
+::: pf
+
+::: {.pf-step #s1}
+There is a natural $A$-linear map
 $$
 \Phi:\varinjlim_n\Hom_A(\mfa^n,M)\longrightarrow\Gamma(U,\widetilde M).
 $$
 
-::: {.proof}
+::: pf-proof
 For every $n$, the inclusion $\widetilde{\mfa^n}\hookrightarrow\OO_X$ becomes an isomorphism on $U$.
 Indeed, a prime outside $V(\mfa)$ omits some element of $\mfa$, which becomes a unit after localization, so $\mfa^nA_{\mathfrak p}=A_{\mathfrak p}$.
 A homomorphism $h:\mfa^n\to M$ therefore gives, by sheafification and restriction, a map $\OO_U\to\widetilde M|_U$.
@@ -62,9 +65,12 @@ Thus the maps $\Phi_n$ are compatible and induce $\Phi$.
 Their construction commutes with homomorphisms of $M$ and preserves scalar multiplication.
 :::
 
-<1>2. The map $\Phi$ is injective.
+:::
 
-::: {.proof}
+::: {.pf-step #s2}
+The map $\Phi$ is injective.
+
+::: pf-proof
 Suppose $h:\mfa^n\to M$ gives the zero section on $U$.
 Then the image module $N=\im h$ has $\widetilde N|_U=0$, because the restriction of the entire sheaf map is zero.
 The module $N$ is finite: it is a quotient of the finite ideal $\mfa^n$.
@@ -78,9 +84,12 @@ Thus the class of $h$ becomes zero at a later stage of the direct system and is 
 This proves injectivity.
 :::
 
-<1>3. Every section $s\in\Gamma(U,\widetilde M)$ is obtained from a homomorphism $\mfa^q\to M$ for some $q\ge1$.
+:::
 
-::: {.proof}
+::: {.pf-step #s3}
+Every section $s\in\Gamma(U,\widetilde M)$ is obtained from a homomorphism $\mfa^q\to M$ for some $q\ge1$.
+
+::: pf-proof
 If $U=\varnothing$, its only section is represented by the zero homomorphism, so assume $U\ne\varnothing$.
 The graph of the section is the coherent subsheaf
 $$
@@ -95,7 +104,7 @@ Write $p:F\to A$ and $v:F\to M$ for the two coordinate projections, and put $K=\
 On $U$, the first projection is an isomorphism from the graph onto $\OO_U$.
 Thus $\widetilde K|_U=0$ and $\widetilde{A/\mathfrak b}|_U=0$.
 Both modules are finite over the noetherian ring $A$.
-The same support argument as in step <1>2 supplies integers $e,d\ge1$ with
+The same support argument as in step [](#s2){.pf-ref} supplies integers $e,d\ge1$ with
 $$
 \mfa^eK=0,\qquad\mfa^d\subseteq\mathfrak b.
 $$
@@ -117,7 +126,7 @@ Since $\mfa^{N+d}\subseteq\mfa^N\mathfrak b$, restrict $h$ to this ideal power.
 On $U$, the ideal $\mfa$ is the unit ideal, so $\widetilde{\mfa^NF}|_U=\mathcal H_U$.
 Under the first projection, the second projection of this graph is multiplication by the original section $s$.
 The homomorphism $h$ therefore restricts to the map $a\mapsto as$ on $U$.
-The inclusion of $\mfa^{N+d}$ also becomes the identity of $\OO_U$, so step <1>1 gives
+The inclusion of $\mfa^{N+d}$ also becomes the identity of $\OO_U$, so step [](#s1){.pf-ref} gives
 $$
 \Phi_{N+d}(h|_{\mfa^{N+d}})=s.
 $$
@@ -125,34 +134,42 @@ This proves surjectivity without assigning potentially inconsistent values to mo
 The only module to which Artin--Rees was applied was the finite graph extension $F$, not the arbitrary module $M$.
 :::
 
-<1>4. The formula in (a) is the natural isomorphism
+:::
+
+::: {.pf-step #s4}
+The formula in (a) is the natural isomorphism
 $$
 \boxed{\varinjlim_{n\ge1}\Hom_A(\mfa^n,M)\xrightarrow{\cong}\Gamma(U,\widetilde M),}
 $$
-with the map described in step <1>1.
+with the map described in step [](#s1){.pf-ref}.
 
-::: {.proof}
-Steps <1>2 and <1>3 prove bijectivity, and step <1>1 supplies linearity and naturality.
+::: pf-proof
+Steps [](#s2){.pf-ref} and [](#s3){.pf-ref} prove bijectivity, and step [](#s1){.pf-ref} supplies linearity and naturality.
 Thus the inverse has those properties as well.
 :::
 
-<1>5. For an injective $A$-module $I$, the associated sheaf $\widetilde I$ is flasque, proving (b).
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+For an injective $A$-module $I$, the associated sheaf $\widetilde I$ is flasque, proving (b).
+
+::: pf-proof
 Let $W\subseteq X$ be any open subset.
 Write its closed complement as $V(\mathfrak b)$ for an ideal $\mathfrak b$ of $A$.
-By step <1>4, a section on $W$ is represented by a homomorphism $h:\mathfrak b^n\to I$ for some $n$.
+By step [](#s4){.pf-ref}, a section on $W$ is represented by a homomorphism $h:\mathfrak b^n\to I$ for some $n$.
 Injectivity of $I$ extends $h$ along $\mathfrak b^n\hookrightarrow A$ to $\widetilde h:A\to I$.
-The element $\widetilde h(1)\in I=\Gamma(X,\widetilde I)$ restricts to the given section, because the ideal inclusion becomes an isomorphism on $W$ and step <1>1 describes exactly that restriction.
+The element $\widetilde h(1)\in I=\Gamma(X,\widetilde I)$ restricts to the given section, because the ideal inclusion becomes an isomorphism on $W$ and step [](#s1){.pf-ref} describes exactly that restriction.
 Hence every section on every open subset extends to all of $X$.
 For opens $W\subseteq V\subseteq X$, restricting such a global extension to $V$ gives surjectivity of $\widetilde I(V)\to\widetilde I(W)$.
 This is flasqueness and gives the asserted alternative proof of [@Har10a, Proposition III.3.4].
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 establish (a), and step <1>5 proves (b).
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} establish (a), and step [](#s5){.pf-ref} proves (b).
+:::
+
 :::
 :::
 
@@ -160,5 +177,5 @@ Steps <1>1--<1>4 establish (a), and step <1>5 proves (b).
 For $A=k[x,y]/(xy)$ and $\mfa=(x,y)$, the open set $U=D(x)\cup D(y)$ is nonempty, but $xy=0$ in $A$.
 Multiplication by any positive power of $xy$ therefore sends the nonzero section $1\in\Gamma(U,\OO_U)$ to zero.
 Thus a denominator correction using a product of all generators need not preserve a section on their union of distinguished opens.
-Step <1>3 instead restricts a homomorphism to a power of the whole ideal, which is the unit ideal everywhere on $U$.
+Step [](#s3){.pf-ref} instead restricts a homomorphism to a power of the whole ideal, which is the unit ideal everywhere on $U$.
 :::

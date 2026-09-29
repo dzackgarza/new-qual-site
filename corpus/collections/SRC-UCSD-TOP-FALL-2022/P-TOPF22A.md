@@ -31,9 +31,15 @@ Show that $H$ is a **free group**.
 :::
 
 ::: {.solution}
-<1>1. Since $G=F(a,b)$ is a free group and $H\le G$, the Nielsen--Schreier theorem already implies that $H$ is free.
 
-<1>2. In fact the displayed generators form a free basis. Define
+::: pf
+
+::: pf-step
+Since $G=F(a,b)$ is a free group and $H\le G$, the Nielsen--Schreier theorem already implies that $H$ is free.
+:::
+
+::: pf-step
+In fact the displayed generators form a free basis. Define
 $$
 \varphi:F(a,b)\longrightarrow\mathbb Z,
 \qquad
@@ -44,30 +50,51 @@ $$
 \varphi(x_i)=i-1+(1-i)=0,
 $$
 so $H\le K:=\ker\varphi$.
+:::
 
-<1>3. Apply the Reidemeister--Schreier procedure to $K$ using the Schreier transversal
+::: pf-step
+Apply the Reidemeister--Schreier procedure to $K$ using the Schreier transversal
 $$
 T=\{a^i:i\in\mathbb Z\}
 $$
 for the cosets of $K$ in $G$.
-<2>1. The Schreier generators coming from the letter $a$ are trivial, because
+
+::: pf-proof
+
+::: pf-step
+The Schreier generators coming from the letter $a$ are trivial, because
 $$
 a^i a\,\overline{a^ia}^{-1}=a^{i+1}a^{-(i+1)}=1.
 $$
-<2>2. The generators coming from the letter $b$ are
+:::
+
+::: pf-step
+The generators coming from the letter $b$ are
 $$
 y_i=a^i b a^{-(i+1)}.
 $$
 The Reidemeister--Schreier theorem says that the nontrivial $y_i$ freely generate $K$.
-<2>3. But
+:::
+
+::: pf-step
+But
 $$
 y_i^{-1}=a^{i+1}b^{-1}a^{-i}=x_{i+1}.
 $$
 Hence $\{x_i:i\in\mathbb Z\}$ is also a free basis of $K$.
+:::
 
-<1>4. Therefore $H=K$ and
+:::
+
+:::
+
+::: pf-step
+Therefore $H=K$ and
 $$
 H\cong F(\{x_i\}_{i\in\mathbb Z}),
 $$
 so in particular $H$ is free.
+:::
+
+:::
 :::

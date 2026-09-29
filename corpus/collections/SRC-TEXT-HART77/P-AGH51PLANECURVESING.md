@@ -47,13 +47,16 @@ $$
 at that point [@Har10a, Chapter I, §5].
 The lowest-degree nonzero homogeneous part of the translated equation is the tangent cone; its linear factors give the tangent directions.
 
-<1>1. For
+::: pf
+
+::: {.pf-step #s1}
+For
 $$
 f_1=x^2-x^4-y^4,
 $$
 the only singular point is $(0,0)$.
 
-::: {.proof}
+::: pf-proof
 The partial derivatives are
 $$
 (f_1)_x=2x-4x^3=2x(1-2x^2),\qquad
@@ -74,13 +77,16 @@ The two smooth branches have the same tangent.
 Thus the origin is a tacnode.
 :::
 
-<1>2. For
+:::
+
+::: {.pf-step #s2}
+For
 $$
 f_2=xy-x^6-y^6,
 $$
 the only singular point is $(0,0)$, and it is a node.
 
-::: {.proof}
+::: pf-proof
 One has
 $$
 (f_2)_x=y-6x^5,\qquad (f_2)_y=x-6y^5.
@@ -102,7 +108,10 @@ The tangent cone is $xy$, the union of the two distinct lines $x=0$ and $y=0$.
 Hence the singularity is an ordinary double point, or node.
 :::
 
-<1>3. For
+:::
+
+::: {.pf-step #s3}
+For
 $$
 f_3=x^3-y^2-x^4-y^4,
 $$
@@ -111,7 +120,7 @@ $$
 \boxed{\left(\frac34,\ \pm\sqrt{-\frac12}\right).}
 $$
 
-::: {.proof}
+::: pf-proof
 The derivatives are
 $$
 (f_3)_x=x^2(3-4x),\qquad
@@ -150,13 +159,16 @@ This is the standard cusp type $y^2=x^3$ up to higher-order terms.
 Thus the origin is the cusp shown in the source figure.
 :::
 
-<1>4. For
+:::
+
+::: {.pf-step #s4}
+For
 $$
 f_4=x^2y+xy^2-x^4-y^4,
 $$
 the only singular point is $(0,0)$, and it is an ordinary triple point.
 
-::: {.proof}
+::: pf-proof
 The derivatives are
 $$
 (f_4)_x=2xy+y^2-4x^3,\qquad
@@ -184,26 +196,31 @@ the union of three distinct lines.
 Therefore the origin is an ordinary triple point.
 :::
 
-<1>5. The four origin singularities in the figure are, respectively,
+:::
+
+::: {.pf-step #s5}
+The four origin singularities in the figure are, respectively,
 $$
 \boxed{\text{(1) tacnode,\quad (2) node,\quad (3) cusp,\quad (4) ordinary triple point}.}
 $$
 
-::: {.proof}
-This is exactly the tangent-cone and branch analysis in steps <1>1--<1>4.
+::: pf-proof
+This is exactly the tangent-cone and branch analysis in steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}.
 The displayed source figure represents the characteristic-zero, equivalently the generic-characteristic, picture.
-In characteristics $7$ and $13$, part (3) has the two additional singular points found in step <1>3, so that figure does not depict the entire singular locus under only the source's stated assumption $\operatorname{char}k\ne2$.
+In characteristics $7$ and $13$, part (3) has the two additional singular points found in step [](#s3){.pf-ref}, so that figure does not depict the entire singular locus under only the source's stated assumption $\operatorname{char}k\ne2$.
 :::
 
-<1>6. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>1--<1>4 locate every singular point and identify the local shapes at the origin; step <1>5 matches them with the four sketches.
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} locate every singular point and identify the local shapes at the origin; step [](#s5){.pf-ref} matches them with the four sketches.
+:::
+
 :::
 :::
 
 ::: {.remark title="Characteristic exceptions in part (3)"}
 The source assumes only $\operatorname{char}k\ne2$.
-That hypothesis is sufficient for parts (1), (2), and (4), but part (3) acquires the two additional singular points displayed in step <1>3 when $\operatorname{char}k=7$ or $13$.
+That hypothesis is sufficient for parts (1), (2), and (4), but part (3) acquires the two additional singular points displayed in step [](#s3){.pf-ref} when $\operatorname{char}k=7$ or $13$.
 Thus the four-singularity picture is literally correct, without further points, for characteristic zero and for $\operatorname{char}k\notin\{2,7,13\}$.
 :::

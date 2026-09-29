@@ -39,35 +39,63 @@ For $t > 0$, let $A_t = \begin{pmatrix} t & 0 \\ 0 & t^{-1} \end{pmatrix}$ and f
 ::: {.solution}
 **Part 1.**
 
-<1>1. $\det A_t = t \cdot t^{-1} = 1$.
-::: {.proof}
+::: pf
+
+::: pf-step
+$\det A_t = t \cdot t^{-1} = 1$.
+
+::: pf-proof
 compute the determinant.
 :::
 
-<1>2. Hence $\|T_t f\|_2^2 = \int |f(A_t x)|^2\,dx = \int |f(y)|^2 |\det A_t^{-1}|\,dy = \int |f(y)|^2\,dy = \|f\|_2^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #p1-s2}
+Hence $\|T_t f\|_2^2 = \int |f(A_t x)|^2\,dx = \int |f(y)|^2 |\det A_t^{-1}|\,dy = \int |f(y)|^2\,dy = \|f\|_2^2$.
+
+::: pf-proof
 change of variables $y = A_t x$, with Jacobian $|\det A_t| = 1$.
 :::
 
-<1>3. Hence $\|T_t f\|_2 = \|f\|_2$.
-::: {.proof}
-<1>2.
+:::
+
+::: {.pf-step #p1-s3}
+Hence $\|T_t f\|_2 = \|f\|_2$.
+
+::: pf-proof
+step [](#p1-s2){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **Part 2.**
 
-<1>1. For $f \in C_c(\mathbb{R}^2)$, $f$ is uniformly continuous.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p2-s1}
+For $f \in C_c(\mathbb{R}^2)$, $f$ is uniformly continuous.
+
+::: pf-proof
 continuous functions with compact support are uniformly continuous.
 :::
 
-<1>2. As $t \to 1$, $A_t \to I$, so $A_t x \to x$ uniformly on compact sets.
-::: {.proof}
-<1>1.
 :::
 
-<1>3. Hence $T_t f(x) = f(A_t x) \to f(x)$ uniformly, with all differences supported in one fixed compact set for $t$ near $1$; therefore $\|T_t f-f\|_2\to0$.
-::: {.proof}
+::: pf-step
+As $t \to 1$, $A_t \to I$, so $A_t x \to x$ uniformly on compact sets.
+
+::: pf-proof
+step [](#p2-s1){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p2-s3}
+Hence $T_t f(x) = f(A_t x) \to f(x)$ uniformly, with all differences supported in one fixed compact set for $t$ near $1$; therefore $\|T_t f-f\|_2\to0$.
+
+::: pf-proof
 Let $K=\operatorname{supp}f$. For $t\in[1/2,2]$, the support of $T_tf$ is $A_t^{-1}K$, and the union of these sets is contained in a fixed compact set $K'$. On $K'$, $A_tx\to x$ uniformly as $t\to1$, so uniform continuity of $f$ gives
 \[
 \sup_{x\in\mathbb R^2}|f(A_tx)-f(x)|\to0.
@@ -79,35 +107,62 @@ Since $T_tf-f$ vanishes outside $K'\cup K$ for $t$ near $1$,
 \]
 :::
 
+:::
+
+:::
+
 **Part 3.**
 
-<1>1. $C_c(\mathbb{R}^2)$ is dense in $L^2(\mathbb{R}^2)$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p3-s1}
+$C_c(\mathbb{R}^2)$ is dense in $L^2(\mathbb{R}^2)$.
+
+::: pf-proof
 standard density result.
 :::
 
-<1>2. For $f \in L^2$ and $\varepsilon > 0$, choose $g \in C_c$ with $\|f - g\|_2 < \varepsilon/3$.
-::: {.proof}
-<1>1.
 :::
 
-<1>3. $\|T_t f - f\|_2 \le \|T_t(f - g)\|_2 + \|T_t g - g\|_2 + \|g - f\|_2 = \|f - g\|_2 + \|T_t g - g\|_2 + \|g - f\|_2$.
-::: {.proof}
+::: {.pf-step #p3-s2}
+For $f \in L^2$ and $\varepsilon > 0$, choose $g \in C_c$ with $\|f - g\|_2 < \varepsilon/3$.
+
+::: pf-proof
+step [](#p3-s1){.pf-ref}.
+:::
+
+:::
+
+::: {.pf-step #p3-s3}
+$\|T_t f - f\|_2 \le \|T_t(f - g)\|_2 + \|T_t g - g\|_2 + \|g - f\|_2 = \|f - g\|_2 + \|T_t g - g\|_2 + \|g - f\|_2$.
+
+::: pf-proof
 triangle inequality and part 1 (isometry).
 :::
 
-<1>4. For $t$ close to $1$, $\|T_t g - g\|_2 < \varepsilon/3$ (by part 2), so $\|T_t f - f\|_2 < \varepsilon$.
-::: {.proof}
-<1>2 and <1>3.
 :::
 
-<1>5. Hence $\lim_{t \to 1} \|T_t f - f\|_2 = 0$.
-::: {.proof}
-<1>4.
+::: {.pf-step #p3-s4}
+For $t$ close to $1$, $\|T_t g - g\|_2 < \varepsilon/3$ (by part 2), so $\|T_t f - f\|_2 < \varepsilon$.
+
+::: pf-proof
+step [](#p3-s2){.pf-ref} and step [](#p3-s3){.pf-ref}.
 :::
 
-<1>6. Q.E.D.
-::: {.proof}
-<1>3 (1), <1>3 (2), <1>5 (3).
+:::
+
+::: {.pf-step #p3-s5}
+Hence $\lim_{t \to 1} \|T_t f - f\|_2 = 0$.
+
+::: pf-proof
+step [](#p3-s4){.pf-ref}.
+:::
+
+:::
+
+::: pf-qed
+step [](#p1-s3){.pf-ref} (1), step [](#p2-s3){.pf-ref} (2), step [](#p3-s5){.pf-ref} (3).
+:::
+
 :::
 :::

@@ -30,30 +30,93 @@ Compute what happens when $dx_1$ is replaced with an arbitrary non-zero element 
 
 2. Compute the cohomology of $(\Lambda^*, d_\omega)$ for an arbitrary non-zero element $\omega \in \Lambda^1$.
 
-<1>1. Verify that $d_\omega \circ d_\omega = 0$ for any $\omega \in \Lambda^1$.
-<2>1. For any $\alpha \in \Lambda^p$, $d_\omega(d_\omega(\alpha)) = (\alpha \wedge \omega) \wedge \omega = \alpha \wedge (\omega \wedge \omega)$.
-<2>2. Since $\omega \in \Lambda^1$, $\omega \wedge \omega = -\omega \wedge \omega = 0$ in the exterior algebra (in characteristic 2, $\omega \wedge \omega = 0$ by definition of exterior algebra alternating product).
-<2>3. Thus $d_\omega^2 = 0$, so $(\Lambda^*, d_\omega)$ is a cochain complex (chain complex indexed cohomologically).
-::: {.proof}
-<2>4. The computation $d_\omega(d_\omega(\alpha)) = \alpha \wedge (\omega \wedge \omega) = 0$ uses associativity of the wedge product and the fact that $\omega \wedge \omega = 0$ for $\omega \in \Lambda^1$; hence $d_\omega^2 = 0$.
+::: pf
+
+::: {.pf-step #s1}
+Verify that $d_\omega \circ d_\omega = 0$ for any $\omega \in \Lambda^1$.
+
+::: pf-proof
+
+::: pf-step
+For any $\alpha \in \Lambda^p$, $d_\omega(d_\omega(\alpha)) = (\alpha \wedge \omega) \wedge \omega = \alpha \wedge (\omega \wedge \omega)$.
 :::
 
-<1>2. Show that $(\Lambda^*, d_{dx_1})$ has trivial homology / cohomology ($H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$). <2>1. Write $W=k\cdot dx_1\oplus W'$, where $W'=\operatorname{span}_k\{dx_2,\dots,dx_n\}$.
-<2>2. The exterior algebra decomposes as $\Lambda^*W\cong\Lambda^*(k\cdot dx_1)\otimes_k\Lambda^*W'$.
-<2>3. $\Lambda^*(k \cdot dx_1)$ is 2-dimensional, with $\Lambda^0(k \cdot dx_1) = k \cdot 1$ and $\Lambda^1(k \cdot dx_1) = k \cdot dx_1$.
-<2>4. The differential $d_{dx_1}$ on $\Lambda^*(k \cdot dx_1)$ maps $1 \mapsto dx_1$ (isomorphism) and $dx_1 \mapsto 0$.
-<2>5. Thus the complex $0 \to \Lambda^0(k \cdot dx_1) \xrightarrow{d_{dx_1}} \Lambda^1(k \cdot dx_1) \to 0$ is the exact sequence $0 \to k \xrightarrow{\cdot 1} k \to 0$, which has $H^0 = 0$ and $H^1 = 0$.
-<2>6. By the Künneth formula for complexes of vector spaces over $k$, $$H^*(\Lambda^*W,d_{dx_1})\cong H^*(\Lambda^*(k\cdot dx_1),d_{dx_1})\otimes_k\Lambda^*W'=0.$$ <2>7. Alternatively, every element is uniquely $\alpha+\beta\wedge dx_1$ with $\alpha,\beta\in\Lambda^*W'$. Define $h:\Lambda^p\to\Lambda^{p-1}$ by $h(\alpha+\beta\wedge dx_1)=\beta$.
+::: pf-step
+Since $\omega \in \Lambda^1$, $\omega \wedge \omega = -\omega \wedge \omega = 0$ in the exterior algebra (in characteristic 2, $\omega \wedge \omega = 0$ by definition of exterior algebra alternating product).
+:::
+
+::: pf-step
+Thus $d_\omega^2 = 0$, so $(\Lambda^*, d_\omega)$ is a cochain complex (chain complex indexed cohomologically).
+
+::: pf-proof
+The computation $d_\omega(d_\omega(\alpha)) = \alpha \wedge (\omega \wedge \omega) = 0$ uses associativity of the wedge product and the fact that $\omega \wedge \omega = 0$ for $\omega \in \Lambda^1$; hence $d_\omega^2 = 0$.
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+Show that $(\Lambda^*, d_{dx_1})$ has trivial homology / cohomology ($H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$).
+
+::: pf-proof
+
+::: pf-step
+Write $W=k\cdot dx_1\oplus W'$, where $W'=\operatorname{span}_k\{dx_2,\dots,dx_n\}$.
+:::
+
+::: pf-step
+The exterior algebra decomposes as $\Lambda^*W\cong\Lambda^*(k\cdot dx_1)\otimes_k\Lambda^*W'$.
+:::
+
+::: pf-step
+$\Lambda^*(k \cdot dx_1)$ is 2-dimensional, with $\Lambda^0(k \cdot dx_1) = k \cdot 1$ and $\Lambda^1(k \cdot dx_1) = k \cdot dx_1$.
+:::
+
+::: pf-step
+The differential $d_{dx_1}$ on $\Lambda^*(k \cdot dx_1)$ maps $1 \mapsto dx_1$ (isomorphism) and $dx_1 \mapsto 0$.
+:::
+
+::: pf-step
+Thus the complex $0 \to \Lambda^0(k \cdot dx_1) \xrightarrow{d_{dx_1}} \Lambda^1(k \cdot dx_1) \to 0$ is the exact sequence $0 \to k \xrightarrow{\cdot 1} k \to 0$, which has $H^0 = 0$ and $H^1 = 0$.
+:::
+
+::: {.pf-step #s2-6}
+By the Künneth formula for complexes of vector spaces over $k$, $$H^*(\Lambda^*W,d_{dx_1})\cong H^*(\Lambda^*(k\cdot dx_1),d_{dx_1})\otimes_k\Lambda^*W'=0.$$
+:::
+
+::: {.pf-step #s2-7}
+Alternatively, every element is uniquely $\alpha+\beta\wedge dx_1$ with $\alpha,\beta\in\Lambda^*W'$. Define $h:\Lambda^p\to\Lambda^{p-1}$ by $h(\alpha+\beta\wedge dx_1)=\beta$.
 Then $(d h + h d)(\alpha + \beta \wedge dx_1) = d(\beta) + h(\alpha \wedge dx_1) = \beta \wedge dx_1 + \alpha = \alpha + \beta \wedge dx_1 = \operatorname{id}$.
 Since $\operatorname{id}$ is chain homotopic to 0, all homology groups vanish: $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p \in \{0, \dots, n\}$.
-::: {.proof}
-<2>8. The Künneth formula (<2>6) and the explicit contracting homotopy (<2>7) are two independent arguments; each shows $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$.
+
+::: pf-proof
+The Künneth formula (step [](#s2-6){.pf-ref}) and the explicit contracting homotopy (step [](#s2-7){.pf-ref}) are two independent arguments; each shows $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$.
 :::
 
-<1>3. Compute the homology when $dx_1$ is replaced with an arbitrary nonzero $\omega\in\Lambda^1=W$.
-<2>1. Write $\omega=\sum_{i=1}^n c_i dx_i$ with some $c_j\ne0$. Since $k$ is a field, extend $\omega$ to a basis of $W$ and choose an automorphism $T:W\to W$ with $T(dx_1)=\omega$.
-<2>2. Functoriality of the exterior algebra gives a graded algebra automorphism $\bigwedge T:\Lambda^*W\to\Lambda^*W$ satisfying $(\bigwedge T)(dx_1)=\omega$.
-<2>3. For every $\alpha\in\Lambda^*W$,
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+Compute the homology when $dx_1$ is replaced with an arbitrary nonzero $\omega\in\Lambda^1=W$.
+
+::: pf-proof
+
+::: pf-step
+Write $\omega=\sum_{i=1}^n c_i dx_i$ with some $c_j\ne0$. Since $k$ is a field, extend $\omega$ to a basis of $W$ and choose an automorphism $T:W\to W$ with $T(dx_1)=\omega$.
+:::
+
+::: pf-step
+Functoriality of the exterior algebra gives a graded algebra automorphism $\bigwedge T:\Lambda^*W\to\Lambda^*W$ satisfying $(\bigwedge T)(dx_1)=\omega$.
+:::
+
+::: {.pf-step #s3-3}
+For every $\alpha\in\Lambda^*W$,
 $$
 (\bigwedge T)(d_{dx_1}\alpha)=(\bigwedge T)(\alpha\wedge dx_1)=(\bigwedge T\alpha)\wedge\omega=d_\omega((\bigwedge T)\alpha).
 $$
@@ -61,13 +124,24 @@ Thus $\bigwedge T$ is an isomorphism of cochain complexes
 $$
 (\Lambda^*W,d_{dx_1})\xrightarrow{\cong}(\Lambda^*W,d_\omega).
 $$
-<2>4. Therefore $H^p(\Lambda^*,d_\omega)=0$ for every $p$.
-::: {.proof}
-By <1>2 the source complex is acyclic, and <2>3 gives an isomorphism of complexes, so the target complex is acyclic as well.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<2>1. Steps <1>1–<1>3 show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
+::: pf-step
+Therefore $H^p(\Lambda^*,d_\omega)=0$ for every $p$.
+
+::: pf-proof
+By step [](#s2){.pf-ref} the source complex is acyclic, and step [](#s3-3){.pf-ref} gives an isomorphism of complexes, so the target complex is acyclic as well.
+:::
+
+:::
+
+:::
+
+:::
+
+::: pf-qed
+Steps [](#s1){.pf-ref}, [](#s2){.pf-ref}, and [](#s3){.pf-ref} show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
+:::
+
 :::
 :::

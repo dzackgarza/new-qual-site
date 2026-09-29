@@ -29,8 +29,13 @@ Let $F$ be a field of characteristic not equal to 2.
 
 
 ::: {.solution}
-<1>1. Let $K/F$ be an extension of degree $2$. Then $K=F(\sqrt D)$ for some nonsquare $D\in F$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+Let $K/F$ be an extension of degree $2$. Then $K=F(\sqrt D)$ for some nonsquare $D\in F$.
+
+::: pf-proof
 Choose $\alpha\in K\setminus F$. Since $[K:F]=2$, its minimal polynomial over $F$ has degree $2$, say
 \[
 m_\alpha(x)=x^2+bx+c.
@@ -46,26 +51,36 @@ Then
 Also $F(\beta)=F(\alpha)=K$. If $D$ were a square in $F$, then $\beta\in F$, hence $\alpha\in F$, contradiction. Thus $D$ is not a square and $K=F(\sqrt D)$.
 :::
 
-<1>2. Conversely, if $D\in F$ is not a square, then $[F(\sqrt D):F]=2$.
-::: {.proof}
+:::
+
+::: pf-step
+Conversely, if $D\in F$ is not a square, then $[F(\sqrt D):F]=2$.
+
+::: pf-proof
 The polynomial $x^2-D$ has no root in $F$, so as a quadratic it is irreducible. Hence it is the minimal polynomial of $\sqrt D$ and the extension degree is $2$.
 :::
 
-<1>3. Let $D_1,D_2$ be nonsquares. Then
+:::
+
+::: {.pf-step #s3}
+Let $D_1,D_2$ be nonsquares. Then
 \[
 [F(\sqrt{D_1},\sqrt{D_2}):F]
 =[F(\sqrt{D_1},\sqrt{D_2}):F(\sqrt{D_1})]\cdot2.
 \]
 Thus the degree is $2$ or $4$ according as $\sqrt{D_2}$ does or does not lie in $F(\sqrt{D_1})$.
+
 :::
 
-<1>4. One has
+::: {.pf-step #s4}
+One has
 \[
 \sqrt{D_2}\in F(\sqrt{D_1})
 \quad\Longleftrightarrow\quad
 D_1D_2\text{ is a square in }F.
 \]
-::: {.proof}
+
+::: pf-proof
 Suppose first that $\sqrt{D_2}=a+b\sqrt{D_1}$ with $a,b\in F$. Squaring gives
 \[
 D_2=a^2+b^2D_1+2ab\sqrt{D_1}.
@@ -87,7 +102,10 @@ so
 for a suitable choice of square root inside an algebraic closure. Hence $F(\sqrt{D_2})\subseteq F(\sqrt{D_1})$.
 :::
 
-<1>5. Therefore
+:::
+
+::: pf-step
+Therefore
 \[
 [F(\sqrt{D_1},\sqrt{D_2}):F]
 =\begin{cases}
@@ -95,6 +113,13 @@ for a suitable choice of square root inside an algebraic closure. Hence $F(\sqrt
 2,&D_1D_2\text{ is a square in }F.
 \end{cases}
 \]
-::: {.proof}
-Combine <1>3 and <1>4.
+
+::: pf-proof
+Combine step [](#s3){.pf-ref} and step [](#s4){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

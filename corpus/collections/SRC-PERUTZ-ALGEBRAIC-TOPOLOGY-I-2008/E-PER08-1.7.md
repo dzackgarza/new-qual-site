@@ -33,8 +33,12 @@ is simply connected.
 ::: {.solution}
 We prove that $S^2$ is path-connected and that every based loop is null-homotopic.
 
-<1>1. The sphere $S^2$ is path-connected.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+The sphere $S^2$ is path-connected.
+
+::: pf-proof
 If $x,y\in S^2$ are not antipodal, the normalized straight-line path
 \[
 \gamma(t)=\frac{(1-t)x+ty}{\lVert(1-t)x+ty\rVert}
@@ -42,8 +46,12 @@ If $x,y\in S^2$ are not antipodal, the normalized straight-line path
 joins $x$ to $y$. If $y=-x$, choose $z\in S^2$ with $z\neq\pm x$ and concatenate a path from $x$ to $z$ with one from $z$ to $-x$.
 :::
 
-<1>2. Every loop in $S^2$ is based-homotopic to a finite piecewise-geodesic loop.
-::: {.proof}
+:::
+
+::: {.pf-step #s2}
+Every loop in $S^2$ is based-homotopic to a finite piecewise-geodesic loop.
+
+::: pf-proof
 Let
 \[
 f:(I,\partial I)\to(S^2,x_0)
@@ -65,8 +73,12 @@ Inside $U_j$, replace the path $f|_{[t_{j-1},t_j]}$ by the unique short geodesic
 The endpoint-fixing homotopies on adjacent subintervals agree at the subdivision points, so they glue to a based homotopy of $f$ to a loop $g$ which is a finite concatenation of great-circle arcs.
 :::
 
-<1>3. The piecewise-geodesic loop $g$ misses some point of $S^2$.
-::: {.proof}
+:::
+
+::: {.pf-step #s3}
+The piecewise-geodesic loop $g$ misses some point of $S^2$.
+
+::: pf-proof
 Each geodesic segment in $g(I)$ lies in a great circle, and each great circle is the intersection of $S^2$ with a two-dimensional linear subspace of $\mathbb R^3$. Since $g$ has only finitely many segments, there are finitely many proper linear subspaces
 \[
 P_1,\dots,P_m\subsetneq\mathbb R^3
@@ -84,13 +96,17 @@ q=\frac{v}{\lVert v\rVert}\in S^2.
 Then $q\notin g(I)$.
 :::
 
-<1>4. The loop $g$ is null-homotopic rel basepoint.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+The loop $g$ is null-homotopic rel basepoint.
+
+::: pf-proof
 Stereographic projection from $q$ is a homeomorphism
 \[
 \sigma:S^2\setminus\{q\}\xrightarrow{\cong}\mathbb R^2.
 \]
-By <1>3, $g(I)\subset S^2\setminus\{q\}$. Let
+By step [](#s3){.pf-ref}, $g(I)\subset S^2\setminus\{q\}$. Let
 \[
 p=\sigma(x_0).
 \]
@@ -105,7 +121,11 @@ H(t,0)=H(t,1)=p.
 Composing with $\sigma^{-1}$ gives a based null-homotopy of $g$ in $S^2\setminus\{q\}$, hence in $S^2$.
 :::
 
-By <1>2, the original loop $f$ is based-homotopic to $g$, and by <1>4, $g$ is null-homotopic. Thus every element of $\pi_1(S^2,x_0)$ is trivial. Together with path-connectedness from <1>1,
+:::
+
+:::
+
+By step [](#s2){.pf-ref}, the original loop $f$ is based-homotopic to $g$, and by step [](#s4){.pf-ref}, $g$ is null-homotopic. Thus every element of $\pi_1(S^2,x_0)$ is trivial. Together with path-connectedness from step [](#s1){.pf-ref},
 \[
 \pi_1(S^2,x_0)=0,
 \]

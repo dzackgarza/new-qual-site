@@ -60,15 +60,18 @@ Thus $X_1=Y$ and $\hat X=\varprojlim_rX_r$.
 
 There is one characteristic issue in part (a). The successive kernels below are always finite-dimensional $k$-vector spaces, and they make the kernel of $\Pic\hat X\to\Pic Y$ an infinite-dimensional filtered formal group.
 If $\operatorname{char}k=0$, the $I$-adic logarithm identifies that formal group with an additive $k$-vector space, giving the assertion in the source literally.
-In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step <1>6 gives an explicit counterexample.
+In positive characteristic the assertion that the *group itself* is a $k$-vector space is false; step [](#s6){.pf-ref} gives an explicit counterexample.
 The surjectivity in (a), and all of (b)--(c), hold in every characteristic.
 
-<1>1. For every $r\ge1$,
+::: pf
+
+::: {.pf-step #s1}
+For every $r\ge1$,
 $$
 H^0(X_r,\mco_{X_r})=k.
 $$
 
-::: {.proof}
+::: pf-proof
 Since $Y$ is an integral projective curve over the algebraically closed field $k$,
 $$
 H^0(Y,\mco_Y)=k.
@@ -104,7 +107,10 @@ $$
 The constants give a copy of $k$ in every term, so induction from $X_1=Y$ forces equality with $k$ at every stage.
 :::
 
-<1>2. For every $r\ge1$ there is a short exact sequence of abelian groups
+:::
+
+::: {.pf-step #s2}
+For every $r\ge1$ there is a short exact sequence of abelian groups
 $$
 0
 \longrightarrow
@@ -118,7 +124,7 @@ V_r
 V_r\coloneqq H^1\bigl(Y,\mco_Y(-rd)\bigr).
 $$
 
-::: {.proof}
+::: pf-proof
 The immersion
 $$
 X_r\hookrightarrow X_{r+1}
@@ -145,7 +151,7 @@ $$
 \longrightarrow
 H^2\bigl(Y,\mco_Y(-rd)\bigr).
 $$
-By step <1>1 the first two groups of units are both $k^\times$, and their map is the identity.
+By step [](#s1){.pf-ref} the first two groups of units are both $k^\times$, and their map is the identity.
 Since $Y$ has dimension $1$,
 $$
 H^2\bigl(Y,\mco_Y(-rd)\bigr)=0.
@@ -153,7 +159,10 @@ $$
 Exactness therefore gives the displayed short exact sequence.
 :::
 
-<1>3. The natural map
+:::
+
+::: {.pf-step #s3}
+The natural map
 $$
 \Pic\hat X\longrightarrow\Pic Y
 $$
@@ -175,12 +184,12 @@ $$
 K_r/K_{r+1}\cong V_r.
 $$
 
-::: {.proof}
+::: pf-proof
 As in [[P-AGH3115PICFORMAL|Exercise III.11.5]], Exercise II.9.6 gives
 $$
 \Pic\hat X\cong\varprojlim_r\Pic X_r.
 $$
-Every transition map in this inverse system is surjective by step <1>2. Starting with any class in
+Every transition map in this inverse system is surjective by step [](#s2){.pf-ref}. Starting with any class in
 $$
 \Pic X_1=\Pic Y,
 $$
@@ -197,13 +206,16 @@ $$
 K_r\longrightarrow V_r.
 $$
 Its kernel is exactly $K_{r+1}$.
-It is surjective because a class in $V_r$ can first be regarded as a class on $X_{r+1}$ trivial on $X_r$, and then lifted successively through all higher $X_s$ using the surjectivity from step <1>2. Thus
+It is surjective because a class in $V_r$ can first be regarded as a class on $X_{r+1}$ trivial on $X_r$, and then lifted successively through all higher $X_s$ using the surjectivity from step [](#s2){.pf-ref}. Thus
 $$
 K_r/K_{r+1}\cong V_r.
 $$
 :::
 
-<1>4. The dimensions $\dim_kV_r$ are unbounded.
+:::
+
+::: {.pf-step #s4}
+The dimensions $\dim_kV_r$ are unbounded.
 More precisely, for $r\gg0$,
 $$
 \dim_kV_r
@@ -211,7 +223,7 @@ $$
 rd^2+\frac{d(d-3)}2.
 $$
 
-::: {.proof}
+::: pf-proof
 Let $F$ be the homogeneous equation of $Y$.
 Twisting the hypersurface sequence by $-rd$ gives
 $$
@@ -259,12 +271,15 @@ rd^2+\frac{d(d-3)}2.
 \end{aligned}
 $$
 This tends to infinity with $r$.
-In particular $V_r\ne0$ for all sufficiently large $r$, so the filtration in step <1>3 has infinitely many strict inclusions.
+In particular $V_r\ne0$ for all sufficiently large $r$, so the filtration in step [](#s3){.pf-ref} has infinitely many strict inclusions.
 :::
 
-<1>5. If $\operatorname{char}k=0$, then $K$ is an infinite-dimensional $k$-vector space.
+:::
 
-::: {.proof}
+::: {.pf-step #s5}
+If $\operatorname{char}k=0$, then $K$ is an infinite-dimensional $k$-vector space.
+
+::: pf-proof
 Let
 $$
 \hat\mci=\ker(\mco_{\hat X}\to\mco_Y).
@@ -297,7 +312,7 @@ $$
 $$
 Because the right-hand side is a sheaf of $k$-vector spaces, this transports a $k$-vector-space structure to $1+\hat\mci$ and hence to its cohomology.
 
-Step <1>1 gives
+Step [](#s1){.pf-ref} gives
 $$
 H^0(\hat X,\mco_{\hat X})=k,
 $$
@@ -333,16 +348,19 @@ If this vector space were finite-dimensional, it could not contain the infinite 
 $$
 K=K_1\supsetneq K_2\supsetneq\cdots
 $$
-obtained in steps <1>3--<1>4. Hence
+obtained in steps [](#s3){.pf-ref} and [](#s4){.pf-ref}. Hence
 $$
 \boxed{\dim_kK=\infty}.
 $$
 This proves the vector-space assertion in part (a) when $\operatorname{char}k=0$.
 :::
 
-<1>6. In characteristic $p>0$, the assertion that $K$ itself is a $k$-vector space is false in general.
+:::
 
-::: {.proof}
+::: {.pf-step #s6}
+In characteristic $p>0$, the assertion that $K$ itself is a $k$-vector space is false in general.
+
+::: pf-proof
 Take
 $$
 Y=\{z=0\}\subseteq\PP_k^2.
@@ -390,13 +408,16 @@ $$
 
 The additive group of a $k$-vector space in characteristic $p$ is killed by $p$.
 Since $K$ contains the class of $\mathfrak L$ and that class is not killed by $p$, the Picard-group law on $K$ cannot make it a $k$-vector space.
-The correct characteristic-free statement is the filtered statement of steps <1>2--<1>4.
+The correct characteristic-free statement is the filtered statement of steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref}.
 :::
 
-<1>7. There is a nonalgebraizable invertible sheaf on $\hat X$.
+:::
 
-::: {.proof}
-By steps <1>3--<1>4, $K$ is nonzero in every characteristic.
+::: {.pf-step #s7}
+There is a nonalgebraizable invertible sheaf on $\hat X$.
+
+::: pf-proof
+By steps [](#s3){.pf-ref} and [](#s4){.pf-ref}, $K$ is nonzero in every characteristic.
 Choose a nontrivial class
 $$
 [\mathfrak L]\in K.
@@ -411,7 +432,7 @@ $$
 \hat\mcg\cong\mathfrak L.
 $$
 
-The local argument in [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6, steps <1>7--<1>8]] applies to this single algebraization: faithfully flat completion shows that $\mcg$ is locally free of rank one on a neighbourhood of $Y$, and its reflexive hull
+The local argument in [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6, steps 7--8]] applies to this single algebraization: faithfully flat completion shows that $\mcg$ is locally free of rank one on a neighbourhood of $Y$, and its reflexive hull
 $$
 \mcl=\mcg^{\vee\vee}
 $$
@@ -456,11 +477,14 @@ contrary to the choice of $[\mathfrak L]\ne0$.
 Thus $\mathfrak L$ is not algebraizable, proving (b).
 :::
 
-<1>8. There is a locally free sheaf $\mathfrak F$ on $\hat X$ such that no twist $\mathfrak F(n)$ is generated by global sections.
+:::
 
-::: {.proof}
+::: {.pf-step #s8}
+There is a locally free sheaf $\mathfrak F$ on $\hat X$ such that no twist $\mathfrak F(n)$ is generated by global sections.
+
+::: pf-proof
 Condition (i) of [[P-AGH3116ALGEBRAIZABLE|Exercise III.11.6(b)]] says that *every* locally free sheaf on $\hat X$ is algebraizable.
-Step <1>7 gives an invertible, hence locally free, counterexample.
+Step [](#s7){.pf-ref} gives an invertible, hence locally free, counterexample.
 Therefore condition (i) is false.
 
 Exercise III.11.6(b) proves that condition (i) is equivalent to condition (ii).
@@ -494,10 +518,12 @@ $$
 This is the phenomenon announced in Hartshorne II.9.9.1.
 :::
 
-<1>9. Q.E.D.
+:::
 
-::: {.proof}
-Steps <1>2--<1>4 prove the characteristic-free surjectivity and infinite filtered kernel in (a), step <1>5 gives the stated infinite-dimensional vector-space conclusion in characteristic zero, and step <1>6 records the necessary correction in positive characteristic.
-Step <1>7 proves (b), and step <1>8 proves (c).
+::: pf-qed
+Steps [](#s2){.pf-ref}, [](#s3){.pf-ref}, and [](#s4){.pf-ref} prove the characteristic-free surjectivity and infinite filtered kernel in (a), step [](#s5){.pf-ref} gives the stated infinite-dimensional vector-space conclusion in characteristic zero, and step [](#s6){.pf-ref} records the necessary correction in positive characteristic.
+Step [](#s7){.pf-ref} proves (b), and step [](#s8){.pf-ref} proves (c).
+:::
+
 :::
 :::

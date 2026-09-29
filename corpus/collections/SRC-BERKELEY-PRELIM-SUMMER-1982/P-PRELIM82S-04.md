@@ -38,12 +38,15 @@ Is $G$ trivial?
 :::
 
 ::: {.solution}
-<1>1. For every integer $m$,
+::: pf
+
+::: {.pf-step #s1}
+For every integer $m$,
 $$
 b^{-1}a^{2m}b=a^{3m}.
 $$
 
-::: {.proof}
+::: pf-proof
 The second defining relation gives
 $$
 b^{-1}a^2b=a^3.
@@ -58,64 +61,81 @@ a^{3m}.
 $$
 :::
 
-<1>2. One has
+:::
+
+::: {.pf-step #s2}
+One has
 $$
 b^{-3}a^8b^3=a^{27}.
 $$
 
-<2>1. One has
+::: pf-proof
+
+::: {.pf-step #s2-1}
+One has
 $$
 b^{-1}a^8b=a^{12}.
 $$
 
-::: {.proof}
-Apply step <1>1 with $m=4$.
+::: pf-proof
+Apply step [](#s1){.pf-ref} with $m=4$.
 :::
 
-<2>2. One has
+:::
+
+::: {.pf-step #s2-2}
+One has
 $$
 b^{-2}a^8b^2=a^{18}.
 $$
 
-::: {.proof}
-By step <2>1,
+::: pf-proof
+By step [](#s2-1){.pf-ref},
 $$
 b^{-2}a^8b^2
 =
 b^{-1}a^{12}b.
 $$
-Apply step <1>1 with $m=6$.
+Apply step [](#s1){.pf-ref} with $m=6$.
 :::
 
-<2>3. One has
+:::
+
+::: {.pf-step #s2-3}
+One has
 $$
 b^{-3}a^8b^3=a^{27}.
 $$
 
-::: {.proof}
-By step <2>2,
+::: pf-proof
+By step [](#s2-2){.pf-ref},
 $$
 b^{-3}a^8b^3
 =
 b^{-1}a^{18}b.
 $$
-Apply step <1>1 with $m=9$.
+Apply step [](#s1){.pf-ref} with $m=9$.
 :::
 
-<2>4. Q.E.D.
-
-::: {.proof}
-Step <2>3 is the claim of step <1>2.
 :::
 
-<1>3. The first defining relation implies
+::: pf-qed
+Step [](#s2-3){.pf-ref} is the claim of step [](#s2){.pf-ref}.
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+The first defining relation implies
 $$
 ab^3=b^2a
 \qquad\text{and}\qquad
 b^{-3}a^{-1}=a^{-1}b^{-2}.
 $$
 
-::: {.proof}
+::: pf-proof
 Multiplying
 $$
 a^{-1}b^2a=b^3
@@ -130,13 +150,16 @@ b^{-3}a^{-1}=a^{-1}b^{-2}.
 $$
 :::
 
-<1>4. One has
+:::
+
+::: {.pf-step #s4}
+One has
 $$
 a^{27}=b^{-2}a^8b^2.
 $$
 
-::: {.proof}
-By step <1>2,
+::: pf-proof
+By step [](#s2){.pf-ref},
 $$
 \begin{aligned}
 a^{27}
@@ -145,37 +168,43 @@ a^{27}
 &=a^{-1}b^{-2}a^8b^2a,
 \end{aligned}
 $$
-where the last equality uses step <1>3. Multiplying on the left by $a$
+where the last equality uses step [](#s3){.pf-ref}. Multiplying on the left by $a$
 and on the right by $a^{-1}$ yields
 $$
 a^{27}=b^{-2}a^8b^2.
 $$
 :::
 
-<1>5. One has
+:::
+
+::: {.pf-step #s5}
+One has
 $$
 a^9=1.
 $$
 
-::: {.proof}
-Step <2>2 gives
+::: pf-proof
+Step [](#s2-2){.pf-ref} gives
 $$
 b^{-2}a^8b^2=a^{18}.
 $$
-Together with step <1>4 this gives
+Together with step [](#s4){.pf-ref} this gives
 $$
 a^{27}=a^{18}.
 $$
 Cancelling $a^{18}$ yields $a^9=1$.
 :::
 
-<1>6. One has
+:::
+
+::: {.pf-step #s6}
+One has
 $$
 a^4=1.
 $$
 
-::: {.proof}
-By step <1>1 with $m=2$,
+::: pf-proof
+By step [](#s1){.pf-ref} with $m=2$,
 $$
 b^{-1}a^4b=a^6.
 $$
@@ -187,7 +216,7 @@ b^{-2}a^4b^2
 &=a^9,
 \end{aligned}
 $$
-where the last equality is step <1>1 with $m=3$. Step <1>5 gives
+where the last equality is step [](#s1){.pf-ref} with $m=3$. Step [](#s5){.pf-ref} gives
 $a^9=1$, so
 $$
 b^{-2}a^4b^2=1.
@@ -195,13 +224,16 @@ $$
 Conjugating by $b^2$ gives $a^4=1$.
 :::
 
-<1>7. One has
+:::
+
+::: {.pf-step #s7}
+One has
 $$
 a=1.
 $$
 
-::: {.proof}
-Steps <1>5 and <1>6 give $a^9=a^4=1$. Since
+::: pf-proof
+Steps [](#s5){.pf-ref} and [](#s6){.pf-ref} give $a^9=a^4=1$. Since
 $$
 1=9-2\cdot4,
 $$
@@ -211,32 +243,40 @@ a=a^9(a^4)^{-2}=1.
 $$
 :::
 
-<1>8. One has
+:::
+
+::: {.pf-step #s8}
+One has
 $$
 b=1.
 $$
 
-::: {.proof}
-Substituting step <1>7 into
+::: pf-proof
+Substituting step [](#s7){.pf-ref} into
 $$
 a^{-1}b^2a=b^3
 $$
 gives $b^2=b^3$. Cancelling $b^2$ yields $b=1$.
 :::
 
-<1>9. Therefore
+:::
+
+::: {.pf-step #s9}
+Therefore
 $$
 \boxed{G=\{1\}}.
 $$
 
-::: {.proof}
-By steps <1>7 and <1>8, both generators $a$ and $b$ are the identity.
+::: pf-proof
+By steps [](#s7){.pf-ref} and [](#s8){.pf-ref}, both generators $a$ and $b$ are the identity.
 Hence the group they generate is trivial.
 :::
 
-<1>10. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>9 answers the question.
+::: pf-qed
+Step [](#s9){.pf-ref} answers the question.
+:::
+
 :::
 :::

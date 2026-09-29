@@ -44,61 +44,142 @@ audit:
 ::: {.solution}
 **Goal.** Compute the induced maps on $\pi_1(S^1) \cong \ZZ$ for the three maps $z \mapsto z^n$, the antipodal map, and $z \mapsto e^{2\pi i \sin(\arg z)}$.
 
-<1>1. $f(z) = z^n$ induces $f_*: \ZZ \to \ZZ$, $a \mapsto na$.
-<2>1. The generator $[\alpha]$ of $\pi_1(S^1)$ is the loop $\alpha(t) = e^{2\pi i t}$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #s1}
+$f(z) = z^n$ induces $f_*: \ZZ \to \ZZ$, $a \mapsto na$.
+
+::: pf-proof
+
+::: pf-step
+The generator $[\alpha]$ of $\pi_1(S^1)$ is the loop $\alpha(t) = e^{2\pi i t}$.
+
+::: pf-proof
 this loop winds once around $S^1$.
 :::
-<2>2. $f \circ \alpha$ is the loop $t \mapsto e^{2\pi i n t}$, which winds $n$ times.
-::: {.proof}
+
+:::
+
+::: pf-step
+$f \circ \alpha$ is the loop $t \mapsto e^{2\pi i n t}$, which winds $n$ times.
+
+::: pf-proof
 $f(\alpha(t)) = (e^{2\pi i t})^n = e^{2\pi i n t}$.
 :::
-<2>3. Hence $f_*([\alpha]) = n[\alpha]$, so $f_*(a) = na$.
-::: {.proof}
+
+:::
+
+::: pf-step
+Hence $f_*([\alpha]) = n[\alpha]$, so $f_*(a) = na$.
+
+::: pf-proof
 the winding number of $f \circ \alpha$ is $n$.
 :::
 
-<1>2. The antipodal map $f(z) = -z$ induces the identity on $\pi_1(S^1)$.
-<2>1. $f(z) = -z = e^{i\pi} z$ is rotation by $\pi$.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s2}
+The antipodal map $f(z) = -z$ induces the identity on $\pi_1(S^1)$.
+
+::: pf-proof
+
+::: pf-step
+$f(z) = -z = e^{i\pi} z$ is rotation by $\pi$.
+
+::: pf-proof
 multiplication by $-1$ on the unit circle is rotation through angle $\pi$.
 :::
-<2>2. Rotation by $\pi$ is homotopic to the identity.
-::: {.proof}
-rotate continuously from angle $\pi$ back to angle $0$ (the family $z \mapsto e^{i(1-s)\pi} z$). <2>3. Hence $f_* = \id$, i.e. $f_*(a) = a$.
+
 :::
-::: {.proof}
+
+::: pf-step
+Rotation by $\pi$ is homotopic to the identity.
+
+::: pf-proof
+rotate continuously from angle $\pi$ back to angle $0$ (the family $z \mapsto e^{i(1-s)\pi} z$).
+:::
+
+:::
+
+::: pf-step
+Hence $f_* = \id$, i.e. $f_*(a) = a$.
+
+::: pf-proof
 homotopic maps induce the same homomorphism on $\pi_1$.
 :::
 
-<1>3. $f(e^{it}) = e^{2\pi i \sin t}$ induces the zero map on $\pi_1(S^1)$.
-<2>1. As $t$ runs $0 \to \pi/2$, $\sin t$ runs $0 \to 1$, so $f \circ \alpha$ traces the generator $\alpha$ once.
-::: {.proof}
+:::
+
+:::
+
+:::
+
+::: {.pf-step #s3}
+$f(e^{it}) = e^{2\pi i \sin t}$ induces the zero map on $\pi_1(S^1)$.
+
+::: pf-proof
+
+::: pf-step
+As $t$ runs $0 \to \pi/2$, $\sin t$ runs $0 \to 1$, so $f \circ \alpha$ traces the generator $\alpha$ once.
+
+::: pf-proof
 $e^{2\pi i \sin t}$ winds once counterclockwise.
 :::
-<2>2. As $t$ runs $\pi/2 \to \pi$, $\sin t$ runs $1 \to 0$, so $f \circ \alpha$ traces $\bar\alpha$ (the reverse loop).
-::: {.proof}
+
+:::
+
+::: pf-step
+As $t$ runs $\pi/2 \to \pi$, $\sin t$ runs $1 \to 0$, so $f \circ \alpha$ traces $\bar\alpha$ (the reverse loop).
+
+::: pf-proof
 the argument decreases from $2\pi$ to $0$.
 :::
-<2>3. On $[\pi,3\pi/2]$, $\sin t$ decreases from $0$ to $-1$, so the image again winds once clockwise; on $[3\pi/2,2\pi]$, $\sin t$ increases from $-1$ to $0$, so the image winds once counterclockwise. Thus the four quadrants contribute winding numbers $+1,-1,-1,+1$.
-::: {.proof}
+
+:::
+
+::: pf-step
+On $[\pi,3\pi/2]$, $\sin t$ decreases from $0$ to $-1$, so the image again winds once clockwise; on $[3\pi/2,2\pi]$, $\sin t$ increases from $-1$ to $0$, so the image winds once counterclockwise. Thus the four quadrants contribute winding numbers $+1,-1,-1,+1$.
+
+::: pf-proof
 The argument $2\pi\sin t$ changes respectively by $+2\pi,-2\pi,-2\pi,+2\pi$ on the four quarter-intervals.
 :::
-<2>4. Hence the total winding number is
+
+:::
+
+::: pf-step
+Hence the total winding number is
 $$
 1-1-1+1=0,
 $$
 so $f\circ\alpha$ is null-homotopic.
-::: {.proof}
+
+::: pf-proof
 Homotopy classes of loops in $S^1$ are classified by winding number.
 :::
-<2>5. Hence $f_*([\alpha]) = 0$, so $f_*(a) = 0$ for all $a$.
-::: {.proof}
+
+:::
+
+::: pf-step
+Hence $f_*([\alpha]) = 0$, so $f_*(a) = 0$ for all $a$.
+
+::: pf-proof
 the generator maps to the identity element $0 \in \ZZ$.
 :::
 
-<1>4. Q.E.D.
-::: {.proof}
-<1>1, <1>2, and <1>3 give the three induced maps.
 :::
+
+:::
+
+:::
+
+::: pf-qed
+step [](#s1){.pf-ref}, step [](#s2){.pf-ref}, and step [](#s3){.pf-ref} give the three induced maps.
+:::
+
+:::
+
 :::

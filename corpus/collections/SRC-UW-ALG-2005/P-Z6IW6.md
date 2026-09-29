@@ -32,8 +32,13 @@ Let $K$ be the kernel of $f$.
 :::
 
 ::: {.solution}
-<1>1. The subgroup $K\le \mathbb Z^m$ is a free abelian group of rank at most $m$.
-::: {.proof}
+
+::: pf
+
+::: pf-step
+The subgroup $K\le \mathbb Z^m$ is a free abelian group of rank at most $m$.
+
+::: pf-proof
 Every subgroup of a finitely generated free abelian group is free abelian of rank at most the rank of the ambient group. Thus
 \[
 K\cong \mathbb Z^r
@@ -41,8 +46,12 @@ K\cong \mathbb Z^r
 for some $0\le r\le m$.
 :::
 
-<1>2. In fact $r=m$.
-::: {.proof}
+:::
+
+::: pf-step
+In fact $r=m$.
+
+::: pf-proof
 The first isomorphism theorem gives
 \[
 \mathbb Z^m/K\cong G.
@@ -62,13 +71,18 @@ K\otimes_{\mathbb Z}\mathbb Q\cong\mathbb Q^r.
 Therefore $r=m$.
 :::
 
-<1>3. Hence
+:::
+
+::: pf-step
+Hence
 \[
 K\cong\mathbb Z^m.
 \]
+
 :::
 
-<1>4. After choosing a basis of $K$, let
+::: {.pf-step #s4}
+After choosing a basis of $K$, let
 \[
 A:\mathbb Z^m\longrightarrow\mathbb Z^m
 \]
@@ -76,7 +90,8 @@ be the integer matrix representing the inclusion $K\hookrightarrow\mathbb Z^m$. 
 \[
 \mathbb Z^m/A\mathbb Z^m\cong G.
 \]
-::: {.proof}
+
+::: pf-proof
 Under the chosen identification $K\cong\mathbb Z^m$, the image of $A$ is precisely the subgroup $K$. Hence
 \[
 \mathbb Z^m/A\mathbb Z^m
@@ -86,7 +101,10 @@ Under the chosen identification $K\cong\mathbb Z^m$, the image of $A$ is precise
 \]
 :::
 
-<1>5. Let
+:::
+
+::: {.pf-step #s5}
+Let
 \[
 UAV=\operatorname{diag}(d_1,\dots,d_m)
 \]
@@ -95,8 +113,9 @@ Then
 \[
 |G|=d_1\cdots d_m.
 \]
-::: {.proof}
-The quotient in <1>4 is finite, so $A$ has full rank and all Smith invariants $d_i$ are nonzero. Multiplication by the unimodular matrices $U$ and $V$ does not change the isomorphism type of the cokernel, so
+
+::: pf-proof
+The quotient in step [](#s4){.pf-ref} is finite, so $A$ has full rank and all Smith invariants $d_i$ are nonzero. Multiplication by the unimodular matrices $U$ and $V$ does not change the isomorphism type of the cokernel, so
 \[
 G\cong \mathbb Z^m/A\mathbb Z^m
 \cong
@@ -108,11 +127,15 @@ Therefore
 \]
 :::
 
-<1>6. Finally,
+:::
+
+::: pf-step
+Finally,
 \[
 |\det A|=|G|.
 \]
-::: {.proof}
+
+::: pf-proof
 Since $U$ and $V$ are unimodular,
 \[
 |\det U|=|\det V|=1.
@@ -124,5 +147,11 @@ Thus
 =\prod_{i=1}^m d_i
 =|G|
 \]
-by <1>5.
+by step [](#s5){.pf-ref}.
+:::
+
+:::
+
+:::
+
 :::

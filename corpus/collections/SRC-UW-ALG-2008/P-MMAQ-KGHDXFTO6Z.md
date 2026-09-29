@@ -23,19 +23,26 @@ Show for any positive integer $n$ that there are irreducible polynomials of degr
 :::
 
 ::: {.solution}
-<1>1. Write
+
+::: pf
+
+::: pf-step
+Write
 \[
 |F|=q.
 \]
 For $n=1$, an irreducible polynomial of degree $1$ is immediate, for example $x-a$ with $a\in F$.
+
 :::
 
-<1>2. Assume $n\ge2$, and let $\overline F$ be an algebraic closure of $F$. Define
+::: pf-step
+Assume $n\ge2$, and let $\overline F$ be an algebraic closure of $F$. Define
 \[
 E=\{\alpha\in\overline F:\alpha^{q^n}=\alpha\}.
 \]
 Then $E$ is a field containing $F$.
-::: {.proof}
+
+::: pf-proof
 The field $F$ has characteristic $p$ for some prime $p$, and $q$ is a power of $p$. If $a,b\in E$, then Frobenius gives
 \[
 (a+b)^{q^n}=a^{q^n}+b^{q^n}=a+b,
@@ -53,8 +60,12 @@ Hence $E$ is a subfield of $\overline F$.
 For every $a\in F$, we have $a^q=a$, and therefore $a^{q^n}=a$. Thus $F\subseteq E$.
 :::
 
-<1>3. The field $E$ has exactly $q^n$ elements.
-::: {.proof}
+:::
+
+::: pf-step
+The field $E$ has exactly $q^n$ elements.
+
+::: pf-proof
 The polynomial
 \[
 P(x)=x^{q^n}-x
@@ -69,8 +80,12 @@ in characteristic $p$, because $p\mid q^n$. Thus $P$ has no repeated roots. Sinc
 \]
 :::
 
-<1>4. For each divisor $d$ of $n$, there is at most one subfield of $E$ having $q^d$ elements.
-::: {.proof}
+:::
+
+::: {.pf-step #s4}
+For each divisor $d$ of $n$, there is at most one subfield of $E$ having $q^d$ elements.
+
+::: pf-proof
 Let $K\subseteq E$ be a subfield with $|K|=q^d$. Every element $a\in K$ satisfies
 \[
 a^{q^d}=a.
@@ -82,12 +97,16 @@ x^{q^d}-x.
 That polynomial has at most $q^d$ roots, while $K$ already has exactly $q^d$ elements. Hence $K$ is exactly its root set. Thus any subfield of $E$ with $q^d$ elements is uniquely determined.
 :::
 
-<1>5. Every proper intermediate field
+:::
+
+::: {.pf-step #s5}
+Every proper intermediate field
 \[
 F\subseteq K\subsetneq E
 \]
 has $q^d$ elements for some proper divisor $d<n$ of $n$.
-::: {.proof}
+
+::: pf-proof
 Since $E/F$ is a finite extension with
 \[
 [E:F]=n,
@@ -106,9 +125,13 @@ divides $n$. Because $K\ne E$, we have $d<n$. Since $|F|=q$, a $d$-dimensional v
 \]
 :::
 
-<1>6. The union of all proper intermediate fields between $F$ and $E$ has fewer than $q^n$ elements.
-::: {.proof}
-By <1>4 and <1>5, there is at most one proper intermediate field for each proper divisor $d$ of $n$, and such a field has $q^d$ elements. Every proper divisor of $n$ is at most $n/2$. Hence the union has cardinality at most
+:::
+
+::: pf-step
+The union of all proper intermediate fields between $F$ and $E$ has fewer than $q^n$ elements.
+
+::: pf-proof
+By step [](#s4){.pf-ref} and step [](#s5){.pf-ref}, there is at most one proper intermediate field for each proper divisor $d$ of $n$, and such a field has $q^d$ elements. Every proper divisor of $n$ is at most $n/2$. Hence the union has cardinality at most
 \[
 \sum_{\substack{d\mid n\\ d<n}}q^d
 \le
@@ -125,7 +148,10 @@ Indeed, the left side is less than the full geometric sum
 and this is at most $q^n-1<q^n$. Thus the proper intermediate fields cannot cover $E$.
 :::
 
-<1>7. Choose
+:::
+
+::: {.pf-step #s7}
+Choose
 \[
 \alpha\in E
 \]
@@ -133,13 +159,18 @@ outside every proper intermediate field. Then
 \[
 F(\alpha)=E.
 \]
-::: {.proof}
+
+::: pf-proof
 The field $F(\alpha)$ is an intermediate field between $F$ and $E$. By the choice of $\alpha$, it cannot be proper. Hence it equals $E$.
 :::
 
-<1>8. The minimal polynomial of $\alpha$ over $F$ is irreducible of degree $n$.
-::: {.proof}
-By <1>7,
+:::
+
+::: pf-step
+The minimal polynomial of $\alpha$ over $F$ is irreducible of degree $n$.
+
+::: pf-proof
+By step [](#s7){.pf-ref},
 \[
 F(\alpha)=E.
 \]
@@ -151,4 +182,10 @@ Therefore
 =n.
 \]
 By definition, the minimal polynomial $m_{\alpha,F}$ is irreducible in $F[x]$. Thus $F[x]$ contains an irreducible polynomial of degree $n$.
+:::
+
+:::
+
+:::
+
 :::

@@ -109,6 +109,8 @@ $$
 on $D$, so $M$ is conformal.
 :::
 
+:::
+
 ::: {.pf-step #e-conformal-bijection}
 The map
 $$
@@ -164,7 +166,10 @@ $$
 the map is conformal.
 :::
 
-<1>3. The map
+:::
+
+::: {.pf-step #c-conformal-bijection}
+The map
 $$
 C:\mathcal H\longrightarrow\DD,
 \qquad
@@ -172,7 +177,7 @@ C(\zeta)=\frac{\zeta-i}{\zeta+i},
 $$
 is a conformal bijection.
 
-::: {.proof}
+::: pf-proof
 For $\zeta=x+iy$ with $y>0$,
 $$
 \abs{\zeta+i}^2-\abs{\zeta-i}^2=4y>0,
@@ -193,7 +198,10 @@ $$
 never vanishes on $\mathcal H$, so $C$ is conformal.
 :::
 
-<1>4. A conformal bijection from the given domain onto the unit disk is
+:::
+
+::: {.pf-step #f-conformal-bijection}
+A conformal bijection from the given domain onto the unit disk is
 $$
 \boxed{
 F(z)
@@ -206,8 +214,8 @@ F(z)
 }
 $$
 
-::: {.proof}
-By steps <1>1--<1>3,
+::: pf-proof
+By steps [](#m-conformal-bijection){.pf-ref}, [](#e-conformal-bijection){.pf-ref} and [](#c-conformal-bijection){.pf-ref},
 $$
 F=C\circ E\circ M
 $$
@@ -218,9 +226,11 @@ $$
 Therefore $F$ is a conformal bijection from $D$ onto the unit disk.
 :::
 
-<1>5. Q.E.D.
+:::
 
-::: {.proof}
-Step <1>4 gives the requested map.
+::: pf-qed
+Step [](#f-conformal-bijection){.pf-ref} gives the requested map.
+:::
+
 :::
 :::

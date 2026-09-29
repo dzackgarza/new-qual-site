@@ -31,52 +31,95 @@ Show:
 ::: {.solution}
 **(a).**
 
-<1>1. Let $p : Y \to X/G$ be a path-connected covering space, and choose a basepoint $y_0 \in Y$ with $p(y_0) = x_0$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Let $p : Y \to X/G$ be a path-connected covering space, and choose a basepoint $y_0 \in Y$ with $p(y_0) = x_0$.
+
+::: pf-proof
 setup.
 :::
 
-<1>2. Since $X \to X/G$ is the universal cover (a covering space action of $G$ on a simply-connected $X$), there is a lift $\tilde p : X \to Y$ of the covering $X \to X/G$ through $p$.
-::: {.proof}
+:::
+
+::: pf-step
+Since $X \to X/G$ is the universal cover (a covering space action of $G$ on a simply-connected $X$), there is a lift $\tilde p : X \to Y$ of the covering $X \to X/G$ through $p$.
+
+::: pf-proof
 the universal property of the universal cover (lifting criterion).
 :::
 
-<1>3. The deck transformation group of $X \to X/G$ is $G$, and the subgroup $H = p_*(\pi_1(Y))$ (or equivalently the stabilizer of the lift) acts on $X$ with quotient $Y$.
-::: {.proof}
+:::
+
+::: {.pf-step #p1-3}
+The deck transformation group of $X \to X/G$ is $G$, and the subgroup $H = p_*(\pi_1(Y))$ (or equivalently the stabilizer of the lift) acts on $X$ with quotient $Y$.
+
+::: pf-proof
 covering space theory; $Y \cong X/H$ where $H$ is the subgroup of $G$ corresponding to the subgroup $p_*(\pi_1(Y)) \le \pi_1(X/G) = G$.
 :::
 
-<1>4. Hence $Y \cong X/H$ for some subgroup $H \le G$.
-::: {.proof}
-<1>3.
+:::
+
+::: {.pf-step #p1-4}
+Hence $Y \cong X/H$ for some subgroup $H \le G$.
+
+::: pf-proof
+step [](#p1-3){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(b).**
 
-<1>1. $X/H_1$ and $X/H_2$ are isomorphic as covering spaces of $X/G$ iff $H_1$ and $H_2$ are conjugate in $G$.
-::: {.proof}
+::: pf
+
+::: {.pf-step #p2-1}
+$X/H_1$ and $X/H_2$ are isomorphic as covering spaces of $X/G$ iff $H_1$ and $H_2$ are conjugate in $G$.
+
+::: pf-proof
 two subgroups give isomorphic covers iff they are conjugate (the isomorphism is induced by a deck transformation of $X$ conjugating one subgroup to the other).
 :::
 
-<1>2. Hence the claim.
-::: {.proof}
-<1>1.
+:::
+
+::: {.pf-step #p2-2}
+Hence the claim.
+
+::: pf-proof
+step [](#p2-1){.pf-ref}.
+:::
+
+:::
+
 :::
 
 **(c).**
 
-<1>1. The cover $X/H \to X/G$ is normal iff $H$ is normal in $G$.
-::: {.proof}
+::: pf
+
+::: pf-step
+The cover $X/H \to X/G$ is normal iff $H$ is normal in $G$.
+
+::: pf-proof
 a covering is normal iff the corresponding subgroup is normal in the fundamental group.
 :::
 
-<1>2. If $H \trianglelefteq G$, the deck transformation group of $X/H \to X/G$ is $N_G(H)/H = G/H$.
-::: {.proof}
+:::
+
+::: {.pf-step #p3-2}
+If $H \trianglelefteq G$, the deck transformation group of $X/H \to X/G$ is $N_G(H)/H = G/H$.
+
+::: pf-proof
 the deck transformations of $X/H \to X/G$ are the elements of $G$ normalizing $H$, modulo $H$; when $H$ is normal, $N_G(H) = G$.
 :::
 
-<1>3. Q.E.D.
-::: {.proof}
-<1>4 (a), <1>2 (b), <1>2 (c).
+:::
+
+::: pf-qed
+step [](#p1-4){.pf-ref} (a), step [](#p2-2){.pf-ref} (b), step [](#p3-2){.pf-ref} (c).
+:::
+
 :::
 :::

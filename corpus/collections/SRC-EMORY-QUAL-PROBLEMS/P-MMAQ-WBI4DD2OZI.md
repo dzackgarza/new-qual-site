@@ -29,22 +29,51 @@ State and prove Fatou's Lemma on a general measurable space.
 **Fatou's lemma.** Let $(X, \mathcal M, \mu)$ be a measure space and $\{f_n\}$ a sequence of measurable functions with $f_n \geq 0$ for all $n$.
 Then $$\int_X \liminf_{n \to \infty} f_n ~d\mu \leq \liminf_{n \to \infty} \int_X f_n ~d\mu,$$ where both sides may be $+\infty$.
 
-<1>1. Proof of Fatou's lemma.
-<2>1. Define $g_k \definedas \inf_{n \geq k} f_n$; then $g_k$ is measurable, $0 \leq g_k \leq f_n$ for all $n \geq k$, and $g_k$ increases to $\liminf_n f_n$ as $k \to \infty$.
-::: {.proof}
+::: pf
+
+::: pf-step
+Proof of Fatou's lemma.
+
+::: pf-proof
+
+::: {.pf-step #s1-1}
+Define $g_k \definedas \inf_{n \geq k} f_n$; then $g_k$ is measurable, $0 \leq g_k \leq f_n$ for all $n \geq k$, and $g_k$ increases to $\liminf_n f_n$ as $k \to \infty$.
+
+::: pf-proof
 Each $g_k$ is a countable infimum of measurable functions, hence measurable; $g_k \leq f_n$ for $n \geq k$ by definition; the sequence $(g_k)$ is nondecreasing; and $\lim_k g_k = \lim_k \inf_{n \geq k} f_n = \liminf_n f_n$ by definition of $\liminf$.
 :::
-<2>2. Monotone convergence: $\int_X g_k ~d\mu \uparrow \int_X \liminf_n f_n ~d\mu$.
-::: {.proof}
-$g_k \uparrow \liminf f_n$ pointwise (<2>1) and the $g_k$ are nonnegative, so the monotone convergence theorem applies.
+
 :::
-<2>3. For each fixed $k$, $\int_X g_k ~d\mu \leq \int_X f_n ~d\mu$ for every $n \geq k$, hence $\int_X g_k ~d\mu \leq \inf_{n \geq k} \int_X f_n ~d\mu$.
-::: {.proof}
-$g_k \leq f_n$ pointwise for $n \geq k$ (<2>1) and both are nonnegative, so monotonicity of the integral gives the inequality; taking the infimum over $n \geq k$ gives the second.
+
+::: {.pf-step #s1-2}
+Monotone convergence: $\int_X g_k ~d\mu \uparrow \int_X \liminf_n f_n ~d\mu$.
+
+::: pf-proof
+$g_k \uparrow \liminf f_n$ pointwise (step [](#s1-1){.pf-ref}) and the $g_k$ are nonnegative, so the monotone convergence theorem applies.
 :::
-<2>4. Take the limit as $k \to \infty$: $$\int_X \liminf_n f_n ~d\mu = \lim_k \int_X g_k ~d\mu \leq \lim_k \inf_{n \geq k} \int_X f_n ~d\mu = \liminf_n \int_X f_n ~d\mu.$$ Proof: Left equality by <2>2; inequality by <2>3 (passing to the limit); right equality by definition of $\liminf$ applied to the sequence $\int_X f_n$.
-<2>5. Q.E.D.
-::: {.proof}
-The inequality of step <2>4 is the conclusion of Fatou's lemma.
+
+:::
+
+::: {.pf-step #s1-3}
+For each fixed $k$, $\int_X g_k ~d\mu \leq \int_X f_n ~d\mu$ for every $n \geq k$, hence $\int_X g_k ~d\mu \leq \inf_{n \geq k} \int_X f_n ~d\mu$.
+
+::: pf-proof
+$g_k \leq f_n$ pointwise for $n \geq k$ (step [](#s1-1){.pf-ref}) and both are nonnegative, so monotonicity of the integral gives the inequality; taking the infimum over $n \geq k$ gives the second.
+:::
+
+:::
+
+::: {.pf-step #s1-4}
+Take the limit as $k \to \infty$: $$\int_X \liminf_n f_n ~d\mu = \lim_k \int_X g_k ~d\mu \leq \lim_k \inf_{n \geq k} \int_X f_n ~d\mu = \liminf_n \int_X f_n ~d\mu.$$ Proof: Left equality by step [](#s1-2){.pf-ref}; inequality by step [](#s1-3){.pf-ref} (passing to the limit); right equality by definition of $\liminf$ applied to the sequence $\int_X f_n$.
+:::
+
+::: pf-qed
+The inequality of step [](#s1-4){.pf-ref} is the conclusion of Fatou's lemma.
+:::
+
+:::
+
+:::
+
 :::
 :::

@@ -37,67 +37,175 @@ $$
 ::: {.solution}
 **Goal:** Prove lattice containment $\Lambda \subseteq \Lambda^\vee$, establish invertibility of the Gram matrix $M$, and compute the index $|\Lambda^\vee/\Lambda|$ using the Smith normal form of $M$.
 
-<1>1. Part (a): $\Lambda \subseteq \Lambda^\vee$.
-::: {.proof}
-    <2>1. Let $v \in \Lambda$, so $v = \sum_{i=1}^n r_i e_i$ with $r_i \in \mathbb{Z}$.
-    <2>2. Let $x \in \Lambda$, so $x = \sum_{j=1}^n s_j e_j$ with $s_j \in \mathbb{Z}$.
-    <2>3. Compute the bilinear product:
-    $$v \cdot x = \left( \sum_{i=1}^n r_i e_i \right) \cdot \left( \sum_{j=1}^n s_j e_j \right) = \sum_{i=1}^n \sum_{j=1}^n r_i s_j (e_i \cdot e_j) = \sum_{i=1}^n \sum_{j=1}^n r_i s_j M_{ij}.$$
-    <2>4. By hypothesis, $M_{ij} \in \mathbb{Z}$ for all $i, j$, and $r_i, s_j \in \mathbb{Z}$.
-    <2>5. The sum of products of integers is an integer, so $v \cdot x \in \mathbb{Z}$.
-    <2>6. Since $x \in \Lambda$ was arbitrary, $v \in \Lambda^\vee$.
-    <2>7. Thus $\Lambda \subseteq \Lambda^\vee$.
+::: pf
+
+::: pf-step
+Part (a): $\Lambda \subseteq \Lambda^\vee$.
+
+::: pf-proof
+
+::: pf-step
+Let $v \in \Lambda$, so $v = \sum_{i=1}^n r_i e_i$ with $r_i \in \mathbb{Z}$.
+:::
+
+::: pf-step
+Let $x \in \Lambda$, so $x = \sum_{j=1}^n s_j e_j$ with $s_j \in \mathbb{Z}$.
+:::
+
+::: pf-step
+Compute the bilinear product:
+$$v \cdot x = \left( \sum_{i=1}^n r_i e_i \right) \cdot \left( \sum_{j=1}^n s_j e_j \right) = \sum_{i=1}^n \sum_{j=1}^n r_i s_j (e_i \cdot e_j) = \sum_{i=1}^n \sum_{j=1}^n r_i s_j M_{ij}.$$
+:::
+
+::: pf-step
+By hypothesis, $M_{ij} \in \mathbb{Z}$ for all $i, j$, and $r_i, s_j \in \mathbb{Z}$.
+:::
+
+::: pf-step
+The sum of products of integers is an integer, so $v \cdot x \in \mathbb{Z}$.
+:::
+
+::: pf-step
+Since $x \in \Lambda$ was arbitrary, $v \in \Lambda^\vee$.
+:::
+
+::: pf-step
+Thus $\Lambda \subseteq \Lambda^\vee$.
+:::
 
 :::
 
-<1>2. Part (b): $\det M \ne 0$.
-::: {.proof}
-    <2>1. Suppose $c = (c_1, \dots, c_n)^T \in \mathbb{R}^n$ satisfies $M c = 0$.
-    <2>2. Define the vector $v = \sum_{j=1}^n c_j e_j \in V$.
-    <2>3. For each basis vector $e_i$ ($1 \le i \le n$):
-    $$e_i \cdot v = e_i \cdot \left( \sum_{j=1}^n c_j e_j \right) = \sum_{j=1}^n c_j (e_i \cdot e_j) = \sum_{j=1}^n M_{ij} c_j = (M c)_i = 0.$$
-    <2>4. For any $w \in V$, write $w = \sum_{i=1}^n a_i e_i$. Then
-    $$w \cdot v = \sum_{i=1}^n a_i (e_i \cdot v) = \sum_{i=1}^n a_i \cdot 0 = 0.$$
-    <2>5. Since the form $(\cdot)$ is non-degenerate, $w \cdot v = 0$ for all $w \in V$ implies $v = 0$.
-    <2>6. Since $\{e_1, \dots, e_n\}$ is a basis of $V$, $v = \sum c_j e_j = 0 \implies c_j = 0$ for all $j$.
-    <2>7. Thus $\ker M = \{0\}$, so $M$ is invertible in $M_n(\mathbb{R})$, which proves $\det M \ne 0$.
+:::
+
+::: pf-step
+Part (b): $\det M \ne 0$.
+
+::: pf-proof
+
+::: pf-step
+Suppose $c = (c_1, \dots, c_n)^T \in \mathbb{R}^n$ satisfies $M c = 0$.
+:::
+
+::: pf-step
+Define the vector $v = \sum_{j=1}^n c_j e_j \in V$.
+:::
+
+::: pf-step
+For each basis vector $e_i$ ($1 \le i \le n$):
+$$e_i \cdot v = e_i \cdot \left( \sum_{j=1}^n c_j e_j \right) = \sum_{j=1}^n c_j (e_i \cdot e_j) = \sum_{j=1}^n M_{ij} c_j = (M c)_i = 0.$$
+:::
+
+::: pf-step
+For any $w \in V$, write $w = \sum_{i=1}^n a_i e_i$. Then
+$$w \cdot v = \sum_{i=1}^n a_i (e_i \cdot v) = \sum_{i=1}^n a_i \cdot 0 = 0.$$
+:::
+
+::: pf-step
+Since the form $(\cdot)$ is non-degenerate, $w \cdot v = 0$ for all $w \in V$ implies $v = 0$.
+:::
+
+::: pf-step
+Since $\{e_1, \dots, e_n\}$ is a basis of $V$, $v = \sum c_j e_j = 0 \implies c_j = 0$ for all $j$.
+:::
+
+::: pf-step
+Thus $\ker M = \{0\}$, so $M$ is invertible in $M_n(\mathbb{R})$, which proves $\det M \ne 0$.
+:::
 
 :::
 
-<1>3. Part (b): $\Lambda^\vee = \bigoplus_{i=1}^n \mathbb{Z} e_i^*$.
-::: {.proof}
-    <2>1. For each $i \in \{1, \dots, n\}$, define $e_i^* = \sum_{j=1}^n (M^{-1})_{ji} e_j \in V$.
-    <2>2. Compute $e_k \cdot e_i^*$:
-    $$e_k \cdot e_i^* = \sum_{j=1}^n (M^{-1})_{ji} (e_k \cdot e_j) = \sum_{j=1}^n M_{kj} (M^{-1})_{ji} = (M M^{-1})_{ki} = \delta_{ki}.$$
-    <2>3. Let $v = \sum_{j=1}^n y_j e_j \in V$.
-    <2>4. $v \in \Lambda^\vee \iff e_i \cdot v \in \mathbb{Z}$ for all $i \in \{1, \dots, n\}$ (since $\{e_i\}$ spans $\Lambda$ over $\mathbb{Z}$).
-    <2>5. Compute $e_i \cdot v = (M y)_i$.
-    <2>6. Thus $v \in \Lambda^\vee \iff M y = z \in \mathbb{Z}^n \iff y = M^{-1} z$ for some $z \in \mathbb{Z}^n$.
-    <2>7. In terms of vectors in $V$:
-    $$v = \sum_{j=1}^n y_j e_j = \sum_{j=1}^n \left( \sum_{i=1}^n (M^{-1})_{ji} z_i \right) e_j = \sum_{i=1}^n z_i \left( \sum_{j=1}^n (M^{-1})_{ji} e_j \right) = \sum_{i=1}^n z_i e_i^*.$$
-    <2>8. Thus $\Lambda^\vee = \left\{ \sum_{i=1}^n z_i e_i^* \;\middle|\; z_i \in \mathbb{Z} \right\} = \bigoplus_{i=1}^n \mathbb{Z} e_i^*$.
+:::
+
+::: pf-step
+Part (b): $\Lambda^\vee = \bigoplus_{i=1}^n \mathbb{Z} e_i^*$.
+
+::: pf-proof
+
+::: pf-step
+For each $i \in \{1, \dots, n\}$, define $e_i^* = \sum_{j=1}^n (M^{-1})_{ji} e_j \in V$.
+:::
+
+::: pf-step
+Compute $e_k \cdot e_i^*$:
+$$e_k \cdot e_i^* = \sum_{j=1}^n (M^{-1})_{ji} (e_k \cdot e_j) = \sum_{j=1}^n M_{kj} (M^{-1})_{ji} = (M M^{-1})_{ki} = \delta_{ki}.$$
+:::
+
+::: pf-step
+Let $v = \sum_{j=1}^n y_j e_j \in V$.
+:::
+
+::: pf-step
+$v \in \Lambda^\vee \iff e_i \cdot v \in \mathbb{Z}$ for all $i \in \{1, \dots, n\}$ (since $\{e_i\}$ spans $\Lambda$ over $\mathbb{Z}$).
+:::
+
+::: pf-step
+Compute $e_i \cdot v = (M y)_i$.
+:::
+
+::: pf-step
+Thus $v \in \Lambda^\vee \iff M y = z \in \mathbb{Z}^n \iff y = M^{-1} z$ for some $z \in \mathbb{Z}^n$.
+:::
+
+::: pf-step
+In terms of vectors in $V$:
+$$v = \sum_{j=1}^n y_j e_j = \sum_{j=1}^n \left( \sum_{i=1}^n (M^{-1})_{ji} z_i \right) e_j = \sum_{i=1}^n z_i \left( \sum_{j=1}^n (M^{-1})_{ji} e_j \right) = \sum_{i=1}^n z_i e_i^*.$$
+:::
+
+::: pf-step
+Thus $\Lambda^\vee = \left\{ \sum_{i=1}^n z_i e_i^* \;\middle|\; z_i \in \mathbb{Z} \right\} = \bigoplus_{i=1}^n \mathbb{Z} e_i^*$.
+:::
 
 :::
 
-<1>4. Part (c): $|\Lambda^\vee / \Lambda| = |\det M|$.
-::: {.proof}
-    <2>1. Express the basis $\{e_j\}$ of $\Lambda$ in terms of the basis $\{e_i^*\}$ of $\Lambda^\vee$:
-    $$e_j = \sum_{i=1}^n (e_i \cdot e_j) e_i^* = \sum_{i=1}^n M_{ij} e_i^*.$$
-    <2>2. Thus $\Lambda$ is the image of the $\mathbb{Z}$-linear map $M: \Lambda^\vee \to \Lambda^\vee$, so
-    $$\Lambda^\vee / \Lambda \cong \mathbb{Z}^n / M \mathbb{Z}^n.$$
-    <2>3. By the Smith Normal Form theorem for integer matrices, there exist unimodular matrices $P, Q \in \operatorname{GL}_n(\mathbb{Z})$ ($\det P, \det Q \in \{\pm 1\}$) such that
-    $$P M Q = D = \operatorname{diag}(d_1, d_2, \dots, d_n), \quad d_i \in \mathbb{Z}_{>0}.$$
-    <2>4. The quotient group is isomorphic to:
-    $$\mathbb{Z}^n / M \mathbb{Z}^n \cong \mathbb{Z}^n / D \mathbb{Z}^n \cong \bigoplus_{i=1}^n \mathbb{Z} / d_i \mathbb{Z}.$$
-    <2>5. The cardinality of the quotient group is:
-    $$|\Lambda^\vee / \Lambda| = \prod_{i=1}^n d_i = \det D.$$
-    <2>6. Taking determinants:
-    $$\det D = |\det(P M Q)| = |\det P| \cdot |\det M| \cdot |\det Q| = 1 \cdot |\det M| \cdot 1 = |\det M|.$$
+:::
+
+::: pf-step
+Part (c): $|\Lambda^\vee / \Lambda| = |\det M|$.
+
+::: pf-proof
+
+::: pf-step
+Express the basis $\{e_j\}$ of $\Lambda$ in terms of the basis $\{e_i^*\}$ of $\Lambda^\vee$:
+$$e_j = \sum_{i=1}^n (e_i \cdot e_j) e_i^* = \sum_{i=1}^n M_{ij} e_i^*.$$
+:::
+
+::: pf-step
+Thus $\Lambda$ is the image of the $\mathbb{Z}$-linear map $M: \Lambda^\vee \to \Lambda^\vee$, so
+$$\Lambda^\vee / \Lambda \cong \mathbb{Z}^n / M \mathbb{Z}^n.$$
+:::
+
+::: pf-step
+By the Smith Normal Form theorem for integer matrices, there exist unimodular matrices $P, Q \in \operatorname{GL}_n(\mathbb{Z})$ ($\det P, \det Q \in \{\pm 1\}$) such that
+$$P M Q = D = \operatorname{diag}(d_1, d_2, \dots, d_n), \quad d_i \in \mathbb{Z}_{>0}.$$
+:::
+
+::: pf-step
+The quotient group is isomorphic to:
+$$\mathbb{Z}^n / M \mathbb{Z}^n \cong \mathbb{Z}^n / D \mathbb{Z}^n \cong \bigoplus_{i=1}^n \mathbb{Z} / d_i \mathbb{Z}.$$
+:::
+
+::: pf-step
+The cardinality of the quotient group is:
+$$|\Lambda^\vee / \Lambda| = \prod_{i=1}^n d_i = \det D.$$
+:::
+
+::: pf-step
+Taking determinants:
+$$\det D = |\det(P M Q)| = |\det P| \cdot |\det M| \cdot |\det Q| = 1 \cdot |\det M| \cdot 1 = |\det M|.$$
+:::
 
 :::
 
-<1>5. Conclusion:
-::: {.proof}
-    $\Lambda \subseteq \Lambda^\vee$, $\det M \ne 0$, the dual basis vectors $e_i^*$ span $\Lambda^\vee$, and $|\Lambda^\vee / \Lambda| = |\det M|$.
+:::
+
+::: pf-step
+Conclusion:
+
+::: pf-proof
+$\Lambda \subseteq \Lambda^\vee$, $\det M \ne 0$, the dual basis vectors $e_i^*$ span $\Lambda^\vee$, and $|\Lambda^\vee / \Lambda| = |\det M|$.
+:::
+
+:::
+
 :::
 :::
